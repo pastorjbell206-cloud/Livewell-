@@ -70,7 +70,7 @@ export default function PropheticTopic({ config }: { config: SectionConfig }) {
       </Layout>
     );
   }
-  if (!t) return <Layout><section style={{ ...section, padding: "var(--s-7) var(--s-4)" }}><p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }}>Loading…</p></section></Layout>;
+  if (!t) return <Layout><section style={{ ...section, padding: "var(--s-7) var(--s-4)" }}><p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }} role="status">Loading…</p></section></Layout>;
 
   return (
     <Layout>

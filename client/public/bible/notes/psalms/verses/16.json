@@ -1,0 +1,180 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The psalm opens with a one-line prayer and its reason: keep me, because I have taken refuge in you. Everything that follows unfolds what that refuge means. It picks up the last line of Psalm 2, which blessed all who take refuge in God.",
+      "grammar": "Miktam, the heading's term, is of uncertain meaning; it also heads Psalms 56 to 60. The Septuagint rendered it stelographia, ‘an inscription on a pillar’, suggesting a poem worth engraving; others connect it with ketem, ‘gold’, or with a word meaning ‘to cover’ (as in atonement). Shomreni El, ‘guard me, O God’, uses shamar, the verb of keeping and protecting (Psalm 121:7-8), and the short divine name El. Chasiti vakh, ‘I have taken refuge in you’, is a perfect: the trust is already settled, and the prayer rests on it.",
+      "words": ["H8104H", "H0410G", "H2620"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The prayer is grounded not in the psalmist's merit but in where he has put his trust. Taking refuge in God is the Psalter's basic description of faith."
+        }
+      ],
+      "refs": ["Psalm 2:12", "Psalm 17:8", "Psalm 121:7-8", "Psalm 56:1"]
+    },
+    {
+      "v": "2",
+      "context": "The psalmist states his confession: the LORD is his Lord, and he has no good apart from him. The verse sets the theme of the whole psalm, God himself as the believer's good.",
+      "grammar": "The Masoretic Text reads amart, ‘you (feminine) said’, which some take as the psalmist addressing his own soul (as in Lamentations 3:24). Most translations, following several Hebrew manuscripts, the Septuagint, and the Syriac, read amarti, ‘I said’. Adonai attah, ‘you are my Lord’, is a confession of allegiance to a master. Tovati bal aleykha is compressed: literally ‘my good, not beyond you’. The sense is that the psalmist's good does not exist above or beside God. Bal is a poetic negative.",
+      "words": ["H0559", "H0136", "H2896C", "H1077"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "God is confessed not only as the source of good things but as the good itself. The psalm's later joys (verses 5-11) all follow from this identification."
+        }
+      ],
+      "refs": ["Psalm 73:25-26", "Lamentations 3:24", "Philippians 3:8", "Psalm 4:6-7"]
+    },
+    {
+      "v": "3",
+      "context": "The psalmist turns to the people around him. On the most common reading he names the faithful in the land, the saints, as those in whom he delights, the company of God's people over against the worshipers of other gods in verse 4.",
+      "grammar": "This verse and the next are among the hardest to translate in the Psalter. Liqdoshim asher baarets hemmah, ‘as for the holy ones who are in the land, they’, and veaddire kol cheftsi vam, ‘and the majestic ones, all my delight is in them’. Qedoshim can mean faithful people (Psalm 34:9) or heavenly or divine beings (Psalm 89:5-7). The BSB and most translations take it as God's people. Other interpreters take the ‘holy ones’ and ‘majestic ones’ as the gods of Canaan, in which case verses 3 and 4 describe the psalmist turning away from gods others honored, or from gods he once delighted in. The Hebrew allows both, and the translations differ accordingly.",
+      "words": ["H6918H", "H0117", "H2656"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "On the usual reading, love for God overflows into delight in God's people. The faithful community is the first sphere where devotion to God shows itself."
+        }
+      ],
+      "refs": ["Psalm 34:9", "Psalm 119:63", "Psalm 89:5-7", "1 John 4:20"]
+    },
+    {
+      "v": "4",
+      "context": "Those who chase other gods multiply their sorrows. The psalmist refuses to share their offerings or even speak the names of their gods. The refusal is the negative side of the confession in verse 2.",
+      "grammar": "Yirbu atstsevotam, ‘their sorrows will multiply’. The noun atstsevet, ‘pain, sorrow’, shares its consonants with atsabbim, ‘idols’, so the line carries a pun: their idols are their sorrows. Acher maharu, ‘another they hasten after’, may instead be read from mahar, ‘to pay a bride-price’: ‘they acquire another god’, as a man pays for a bride. Nisk'hem middam, ‘their drink offerings of blood’, may mean libations that include blood or offerings from bloodstained hands. Bal essa et shemotam, ‘I will not lift their names on my lips’, applies the command of Exodus 23:13 not to invoke other gods' names.",
+      "words": ["H7235A", "H6094", "H0312", "H4116A", "H5262", "H5375G"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Other gods promise more and deliver sorrow. The verse's wordplay turns the idols into the pains they produce, the same verdict Jeremiah gives on those who forsake the spring of living water for broken cisterns (Jeremiah 2:13)."
+        }
+      ],
+      "refs": ["Exodus 23:13", "Joshua 23:7", "Jeremiah 2:13", "Hosea 2:16-17"]
+    },
+    {
+      "v": "5",
+      "context": "The center of the psalm. The LORD is the psalmist's portion and his cup, and God himself holds his lot. The language comes from the division of the land and from the priestly privilege of having God, not land, as one's share.",
+      "grammar": "YHWH menat chelqi vekhosi, ‘the LORD is the portion of my share and my cup’. Menat and cheleq are two words for an allotted share, stacked for emphasis. Cheleq is the word God used to Aaron: ‘I am your portion’ (Numbers 18:20). Kos, ‘cup’, is the portion assigned to a guest at a meal, and elsewhere a person's destiny, for good (Psalm 23:5) or for judgment (Psalm 11:6). Attah tomikh gorali, ‘you hold my lot’, uses a participle of tamakh, ‘to grasp, uphold’; goral is the lot cast to assign land (Joshua 18:6-10).",
+      "words": ["H4490", "H2506A", "H3563A", "H8551", "H1486"],
+      "history": "When Israel divided Canaan, the land was assigned to tribes and clans by lot at Shiloh (Joshua 18:6-10), and each allotment became a family's inheritance. The Levites received none, because the LORD was their inheritance (Numbers 18:20; Deuteronomy 18:1-2). The psalmist, whom the heading names as David of the tribe of Judah, claims the Levites' privilege for himself.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "God is enjoyed as a possession, not only obeyed as a master. The Levites' status becomes a model for every believer, as in Psalm 73:26 and Lamentations 3:24."
+        }
+      ],
+      "refs": ["Numbers 18:20", "Deuteronomy 18:1-2", "Psalm 73:26", "Psalm 23:5", "Joshua 18:10"]
+    },
+    {
+      "v": "6",
+      "context": "The image of the allotted land continues. The measuring lines have fallen in pleasant places, and the psalmist's inheritance delights him. His share is God, and he could not have drawn a better lot.",
+      "grammar": "Chavalim naflu li, ‘lines have fallen for me’: chevel is a measuring cord, and ‘falling’ is the language of the lot (Joshua 17:5 uses chavalim for allotted portions). Banneimim, ‘in pleasant places’, uses naim, ‘pleasant, lovely’, the same root as neimot in verse 11, framing the second half of the psalm. Af nachalat shaferah alay, ‘yes, the inheritance is beautiful to me’: shafar, ‘to be beautiful, pleasing’, occurs only here as a verb.",
+      "words": ["H2256M", "H5307G", "H5273A", "H5159", "H8231"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The psalmist sees his whole allotted life as falling within God's good provision. Contentment rests on what God is, not on the size of the plot."
+        }
+      ],
+      "refs": ["Joshua 17:5", "Psalm 37:18", "1 Peter 1:3-4", "Philippians 4:11-13"]
+    },
+    {
+      "v": "7",
+      "context": "The psalmist blesses the LORD who counsels him. God's guidance is not only external; even at night his inner self instructs him, having absorbed God's counsel.",
+      "grammar": "Avarekh, ‘I will bless’, a Piel imperfect of barakh: to bless God is to praise him. Asher yeatsani, ‘who has counseled me’, uses yaats, the verb behind the royal title ‘Wonderful Counselor’ (Isaiah 9:6). Af leylot yisseruni khilyotay, ‘even at night my kidneys instruct me’: kilyot, ‘kidneys’, stand for the innermost self, the seat of conscience and emotion (Jeremiah 17:10 pairs heart and kidneys). The plural leylot, ‘nights’, suggests night after night. Yissar, ‘instruct’ or ‘discipline’, is the verb of Psalm 2:10.",
+      "words": ["H1288", "H3289", "H3915", "H3256", "H3629"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Wisdom begins with God's counsel and becomes internal, so that the believer's own reflection carries it. Night, a time of fear elsewhere in the Psalms (Psalm 6:6), becomes a time of instruction."
+        }
+      ],
+      "refs": ["Psalm 73:24", "Jeremiah 17:10", "Psalm 63:6", "Psalm 32:8"]
+    },
+    {
+      "v": "8",
+      "context": "The turning point of the psalm. The psalmist has set the LORD continually before him, and because God is at his right hand, he will not be shaken. Peter's quotation in Acts 2 begins here.",
+      "grammar": "Shivviti YHWH lenegdi tamid, ‘I have set the LORD before me always’: shivviti is a Piel perfect of shavah, ‘to place, set’, describing a deliberate act of attention. Ki miymini, ‘because at my right hand’, has no verb in Hebrew: God is simply there, in the place of a defender (Psalm 109:31; 121:5). Bal emmot, ‘I will not be shaken’, is a Niphal of mot, the promise that closed Psalm 15 (15:5), so Psalm 16 shows the person Psalm 15 described.",
+      "words": ["H7737B", "H5048", "H8548", "H3225G", "H4131"],
+      "history": "In Jewish synagogues and homes a plaque or card bearing this verse, called a shiviti after its first word, is often placed before the one who prays, as a reminder of God's presence. Rabbi Moses Isserles opened his glosses on the Shulchan Arukh, the standard code of Jewish law (Orach Chayim 1:1), with this verse, calling constant awareness of God's presence a great principle of the Torah.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Stability comes from attention. The psalmist is unshaken not because nothing threatens him but because he keeps God before him, a discipline as much as a feeling."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Acts 2:25",
+          "note": "Peter introduces verses 8 to 11 with ‘David says about him’, quoting the Septuagint word for word. He reads the psalm as the voice of the Messiah, who kept the Lord before him through death itself."
+        }
+      ],
+      "refs": ["Psalm 15:5", "Psalm 121:5", "Psalm 109:31", "Acts 2:25"]
+    },
+    {
+      "v": "9",
+      "context": "Because God is at his right hand, the psalmist's whole being rejoices: heart, inner glory, and body. The mention of the body prepares for verse 10: even the flesh will rest secure.",
+      "grammar": "Samach libbi, ‘my heart is glad’, and vayyagel kevodi, literally ‘and my glory rejoices’. Kavod, ‘glory’, sometimes stands for the self or soul in poetry (Genesis 49:6; Psalm 57:8); some scholars revocalize it as kaved, ‘liver’, another word for the inner self. Af besari yishkon lavetach, ‘also my flesh will dwell securely’: shakhan is the verb of settled dwelling, and betach, ‘security, confidence’, the state of one who has nothing to fear. Heart, soul, and flesh together make up the whole person.",
+      "words": ["H8055", "H3820A", "H1523", "H3519", "H1320", "H7931", "H0983"],
+      "text": "The BSB's \"my tongue rejoices\" follows the Septuagint, which rendered kevodi with glossa, ‘tongue’, perhaps understanding ‘glory’ as the faculty of praise. The Septuagint also rendered lavetach as ‘in hope’, so that Acts 2:26 reads that the flesh will rest in hope. The Hebrew ‘securely’ and the Greek ‘in hope’ describe the same confidence from two sides.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Joy in God is not only inward; it includes the body. The psalm's hope is for the whole person, and the mention of flesh anticipates the bodily resurrection the New Testament will proclaim."
+        }
+      ],
+      "refs": ["Psalm 57:8", "Psalm 4:8", "Psalm 84:2", "Acts 2:26"]
+    },
+    {
+      "v": "10",
+      "context": "The reason for the psalmist's confidence: God will not abandon him to Sheol or let his faithful one see the pit. The verse is the center of the apostles' argument for the resurrection in Acts 2 and 13.",
+      "grammar": "Lo taazov nafshi lishol, ‘you will not abandon my life to Sheol’: azav le, ‘to leave to’, means handing over into another's power. Sheol is the realm of the dead, pictured as a pit under the earth. Chasidekha, ‘your faithful one’, from chesed, describes someone bound to God in covenant loyalty. Lirot shachat, ‘to see the pit’: shachat can mean ‘pit’ (from a root meaning ‘to sink’) or ‘corruption, decay’ (from a root meaning ‘to destroy’). The Hebrew parallel with Sheol favors ‘pit’; the Septuagint's diaphthora, ‘corruption’, takes the other sense.",
+      "words": ["H5800A", "H5315G", "H7585", "H2623", "H7845G"],
+      "text": "The consonantal Hebrew text writes chasidekha with a letter that makes it plural, ‘your faithful ones’, but the scribal tradition directs readers to read it as singular, ‘your faithful one’. This is a standard case of a written form (Ketiv) corrected by a reading form (Qere). The singular matches the first person of the rest of the psalm and is supported by the ancient versions; Acts reads the singular.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Peter argues that David died and his tomb was still in Jerusalem, so the words point beyond him to the Messiah whose body did not decay (Acts 2:29-31). The church's confession of the bodily resurrection gives the verse its fullest sense."
+        },
+        {
+          "id": "messiah",
+          "note": "Peter links the verse to God's oath to seat one of David's descendants on his throne (Acts 2:30), reading the ‘faithful one’ as the Messiah. The title chasid, the one bound to God by covenant love, fits the son of David to whom God promised that his chesed would never be removed (2 Samuel 7:15)."
+        },
+        {
+          "id": "intermediate",
+          "note": "Whatever its original horizon, the verse refuses to treat Sheol as the last word for one who belongs to God. Interpreters differ on whether David hoped for rescue from an early death or for life beyond death; the psalm's language opens toward the second."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Acts 2:27",
+          "note": "Peter quotes the verse in the Septuagint's form, \"nor will You let Your Holy One see decay\". His argument depends on the Greek sense of shachat as bodily decay: David's body decayed, so the promise must refer to the descendant God swore to seat on his throne (2 Samuel 7:12), whom God raised."
+        },
+        {
+          "ref": "Acts 13:35-37",
+          "note": "Paul makes the same argument at Pisidian Antioch, pairing the verse with Isaiah 55:3. David served his generation, died, and saw decay; the one God raised did not."
+        }
+      ],
+      "refs": ["Acts 2:27-31", "Acts 13:35-37", "Psalm 49:15", "Psalm 30:3", "Job 19:25-27"]
+    },
+    {
+      "v": "11",
+      "context": "The psalm ends with the path of life, fullness of joy in God's presence, and pleasures at his right hand forever. The right hand that stood by the psalmist in verse 8 now holds pleasures that do not end.",
+      "grammar": "Todieni orach chayyim, ‘you will make known to me the path of life’: the imperfect of yada in the Hiphil points to what God will show. Proverbs 15:24 uses the same phrase for the path of life that leads upward, away from Sheol below. Sova semachot et panekha, ‘fullness of joys with your face’, uses sova, ‘satisfaction, plenty’, and the plural semachot, ‘joys’. Neimot biminekha netsach, ‘pleasures at your right hand forever’: netsach, ‘perpetuity’, is the last word of the psalm, and neimot repeats the root of ‘pleasant places’ in verse 6.",
+      "words": ["H3045", "H0734", "H2416E", "H7648", "H8057", "H5273A", "H5331"],
+      "text": "The BSB's past tense, \"You have made known\", follows the Septuagint and its quotation in Acts 2:28. The Hebrew imperfect is usually read as future, ‘you will make known’, which fits the forward look of verse 10.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The last word of the psalm is ‘forever’. The joy it describes is the presence of God himself, the same good confessed in verse 2, now enjoyed without end."
+        },
+        {
+          "id": "exaltation",
+          "note": "Peter moves from this verse to Christ exalted to the right hand of God (Acts 2:33-34), connecting the psalm's ‘right hand’ with Psalm 110:1. The one not abandoned to Sheol now sits in the place of pleasures forever."
+        }
+      ],
+      "refs": ["Proverbs 15:24", "Acts 2:28", "Acts 2:33-34", "Psalm 36:8-9", "Revelation 21:3-4"]
+    }
+  ]
+}

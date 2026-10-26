@@ -1,0 +1,351 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The teaching turns back to the disciples. After warning the Pharisees in chapter 16, Jesus warns his own followers first: stumbling blocks will come, but woe to the one who causes a vulnerable believer to fall. The sayings in verses 1-10 are about life inside the community of disciples.",
+      "grammar": "Anendekton estin tou mē elthein ta skandala is compressed Greek, literally ‘it is inadmissible that the stumbling blocks not come’, meaning they are bound to come. Anendektos occurs only here in the New Testament. Plēn (\"but\") turns sharply from what is inevitable to who is responsible: inevitability does not excuse the person through whom harm comes. In verse 2 lusitelei (‘it is better’, literally ‘it pays’), also found only here, is a commercial word, and the two perfects, perikeitai (‘has been hung’) and erriptai (‘has been thrown’), picture the drowning as already done. Hena tōn mikrōn toutōn, ‘one of these little ones’, uses a demonstrative that suggests people present: the lowly disciples, perhaps the tax collectors and sinners of 15:1.",
+      "words": ["G0418", "G4625", "G4133", "G3759", "G3081", "G3037", "G3457", "G4496", "G4624", "G3398"],
+      "parallels": ["Matthew 18:6-7", "Mark 9:42"],
+      "history": "Drowning with a weight was a known form of execution in the Roman world; Suetonius reports that Augustus had men who had abused their positions in a province thrown into a river with heavy weights around their necks (Augustus 67). Luke's lithos mulikos, ‘a millstone’, is less specific than the ‘donkey's millstone’ of Mark and Matthew, the heavy upper stone of a mill turned by an animal.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse holds two truths together: sin's occasions are inevitable in this age, and the one who causes another to fall is fully responsible. Jesus directs the warning at his disciples, so the church cannot hear it as aimed only at outsiders."
+        }
+      ],
+      "refs": ["Matthew 18:6-7", "Mark 9:42", "Romans 14:13", "1 Corinthians 8:9-13", "Leviticus 19:14"]
+    },
+    {
+      "v": "3",
+      "context": "‘Watch yourselves’ can close the warning of verses 1-2 or open the teaching on forgiveness; it probably does both. Jesus sets out an order: when a brother sins, rebuke him, and when he repents, forgive him.",
+      "grammar": "Prosechete heautois (\"Watch yourselves\") is a present imperative, a standing alertness Luke uses again at 12:1 and 21:34. The two conditions use ean with the aorist subjunctive (hamartē, ‘if he sins’; metanoēsē, ‘if he repents’), and each is followed by a short aorist imperative: epitimēson (\"rebuke him\") and aphes (\"forgive him\"). Epitimaō is the same verb Luke uses for Jesus rebuking demons and fever (4:35, 4:39) and for the disciples wrongly rebuking parents and a blind man (18:15, 18:39): it can be right or wrong depending on its object. Aphiēmi means to release or let go, the ordinary word for forgiving a debt.",
+      "words": ["G4337", "G0264", "G0080", "G2008", "G3340", "G0863H"],
+      "parallels": ["Matthew 18:15"],
+      "ot": [
+        {
+          "ref": "Leviticus 19:17",
+          "note": "The command to rebuke a brother goes back to Leviticus 19:17, where the Hebrew hokheach tokhiach, ‘you shall surely rebuke’, uses an emphatic doubled verb, and the Septuagint renders it elegmō elenxeis, with the same doubling. In Leviticus the rebuke is an alternative to hatred in the heart and comes right before ‘love your neighbor as yourself’ (19:18). Jesus uses a different verb, epitimaō, but keeps the order of the Law: honest confrontation rather than silent grudge, and then restoration."
+        }
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Rebuke aims at repentance, and repentance opens the way to forgiveness. The verse does not ask the wronged person to pretend nothing happened; it asks for truth first and then generous release."
+        }
+      ],
+      "refs": ["Leviticus 19:17-18", "Matthew 18:15", "Galatians 6:1", "James 5:19-20"]
+    },
+    {
+      "v": "4",
+      "context": "The command is pressed to its limit. Even seven sins and seven returns in one day must be met with forgiveness. The number is not a new ceiling but a way of saying there is none, which is why the apostles immediately ask for more faith.",
+      "grammar": "Heptakis tēs hēmeras, ‘seven times in the day’, is repeated with the returning: seven sins, seven turnings. Epistrepsē (\"returns\") is the verb of turning back, the physical movement that expresses repentance, and the brother's word metanoō (\"I repent\") is a present tense, a spoken confession. The main verb aphēseis (\"you must forgive\") is a future indicative used as a command, the form the Septuagint uses for the commandments (‘you shall’). The obligation does not wait on the sincerity test the listener might want to apply; the repeated statement is enough.",
+      "words": ["G2034", "G2250", "G1994", "G3340", "G0863H"],
+      "parallels": ["Matthew 18:21-22"],
+      "history": "Jewish teachers discussed how often a repeated sin could be forgiven. A tradition in the Babylonian Talmud (b. Yoma 86b), in the name of Rabbi Yose bar Judah, reasons from Amos's refrain ‘for three transgressions and for four’ that God forgives a repeated sin three times but not the fourth. In Matthew's form Peter proposes seven, and Jesus answers with ‘seventy-seven times’, echoing Lamech's boast of seventy-sevenfold vengeance (Genesis 4:24). Luke's version makes the same point within a single day.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance and forgiveness are both repeatable. The verse assumes disciples will sin against each other often and will need to turn back often, and it forbids the wronged party from closing the door. Forgiveness releases the debt; it is not the same as restoring trust, which may take time and, where there has been abuse, safety and accountability first."
+        }
+      ],
+      "refs": ["Matthew 18:21-22", "Genesis 4:24", "Colossians 3:13", "Ephesians 4:32"]
+    },
+    {
+      "v": "5-6",
+      "context": "The apostles, faced with a command they cannot meet, ask the Lord to add to their faith. Jesus answers that the issue is not quantity: faith the size of a mustard seed could command a deep-rooted tree to be planted in the sea.",
+      "grammar": "Luke calls the speakers hoi apostoloi and Jesus ho kurios, ‘the Lord’, a title Luke's narrative gives Jesus far more often than Mark or Matthew. Prosthes hēmin pistin (\"Increase our faith\"), literally ‘add faith to us’, is an aorist imperative. Jesus' reply is a mixed conditional: the protasis ei echete (‘if you have’) uses a present indicative, a condition assumed real, while the apodosis elegete an... kai hupēkousen an (‘you would say... and it would obey’) is the form of a contrary-to-fact statement. Grammarians read the mix differently: some hear an implied rebuke (‘if you had faith, as you do not’), others a gentle assurance (‘you have faith; even that much would do’). The two aorist passive imperatives, ekrizōthēti and phuteuthēti (\"Be uprooted and planted\"), are addressed to the tree.",
+      "words": ["G0652", "G2962G", "G4369", "G4102G", "G2848", "G4615", "G4807", "G1610", "G5452", "G5219"],
+      "parallels": ["Matthew 17:20", "Mark 11:22-23"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus shifts the question from how much faith to what faith rests on. The smallest faith is enough because its power lies in God. The saying stands against any teaching that treats faith as a force the believer must build up to obtain results."
+        }
+      ],
+      "refs": ["Matthew 17:20", "Mark 11:22-23", "Luke 13:18-19", "Luke 22:32"]
+    },
+    {
+      "v": "7-9",
+      "context": "A short parable from ordinary life. No farmer tells his slave, just in from the field, to sit down and eat first; he expects his dinner served. The slave has done what was expected and is not thanked for it as for a favor.",
+      "grammar": "Tis ex humōn (\"Which of you\") opens a rhetorical question expecting the answer ‘none of you’, the same form as the lost sheep (15:4). The slave is doing two jobs, arotriōnta ē poimainonta (\"plowing or shepherding\"), the work of a small farm with one servant. In verse 8, ouchi erei (‘will he not say?’) expects yes. Perizōsamenos diakonei (\"dress yourself to serve\") uses the verb of girding up one's clothes for work, the same word Jesus used in 12:37 of the master who will gird himself and serve his watching slaves. Verse 9 is introduced by mē, which expects the answer no: the master does not have charin (‘thanks’, or ‘favor owed’) to the slave for doing what he was ordered (ta diatachthenta).",
+      "words": ["G1401", "G0722", "G4165", "G0377", "G4024", "G1247", "G5485", "G1299"],
+      "text": "At the end of verse 9 the King James Version adds ‘I trow not’ (‘I think not’), from later manuscripts. The earliest copies lack it, and modern versions omit it.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The picture removes any thought that obedience puts God in a person's debt. It belongs with Jesus' reversal of the same picture in 12:37, where the returning master serves his slaves: what God gives is grace, never wages."
+        }
+      ],
+      "refs": ["Luke 12:37", "Luke 22:27", "Luke 15:4", "Romans 4:4-5"]
+    },
+    {
+      "v": "10",
+      "context": "The application: when disciples have done everything they were commanded, they should call themselves unworthy slaves who have only done their duty. The saying targets the thought of merit, especially in the apostles who have just asked for more faith.",
+      "grammar": "Hotan poiēsēte panta (\"when you have done everything\") is an aorist subjunctive; the case imagined is complete obedience, and even then there is no claim. Legete (\"should say\") is a present imperative, a habit of speech. Achreioi (\"unworthy\") literally means ‘useless’ or ‘without profit’, but it cannot mean that here, since the servants have done all they were told; it means that nothing is owed them. The last clause, ho ōpheilomen poiēsai pepoiēkamen, ‘what we were obliged to do, we have done’, uses opheilō, the verb of owing a debt, with a perfect tense of completed action.",
+      "words": ["G4160G", "G1299", "G1401", "G0888", "G3784"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse became a standard text in debates over merit. Protestant readers cited it against any claim to deserve reward; Catholic readers, following Augustine's teaching that God crowns his own gifts when he rewards human merits (Letter 194), read it as excluding proud claims. Both read it as ruling out a relationship with God built on what he owes."
+        }
+      ],
+      "refs": ["Matthew 25:30", "1 Corinthians 9:16", "Ephesians 2:8-10", "Luke 18:11-12"]
+    },
+    {
+      "v": "11",
+      "context": "Luke reminds the reader that Jesus is on the road to Jerusalem, the second of three such notes in the central section (13:22, 17:11, 18:31). The frontier between Samaria and Galilee is the setting for the story that follows, in which a Samaritan and Jews suffer together.",
+      "grammar": "Kai egeneto en tō poreuesthai, ‘and it happened as he was going’, is Luke's Septuagint-style narrative opening. Autos diērcheto (\"He was passing\") is imperfect: he was in the course of passing through. Dia meson Samareias kai Galilaias, literally ‘through the middle of Samaria and Galilee’, is an unusual phrase; most translations take it as ‘along the border between’, and the BSB has \"between Samaria and Galilee\".",
+      "words": ["G4198", "G2419", "G1330", "G3319", "G4540", "G1056G"],
+      "text": "The earliest manuscripts read dia meson (the accusative, an unusual construction), which later copyists smoothed to dia mesou (‘through the midst of’), the reading of the Byzantine text and the Textus Receptus. The King James Version has ‘through the midst of Samaria and Galilee’. The harder reading, dia meson, is probably original, and the sense ‘between’ or ‘along the border of’ is widely accepted.",
+      "refs": ["Luke 9:51-56", "Luke 13:22", "Luke 18:31", "John 4:4"]
+    },
+    {
+      "v": "12-13",
+      "context": "As Jesus enters a village, ten men with leprosy meet him but stop at a distance, as the Law required. They call out together for mercy, using a title Luke's disciples use.",
+      "grammar": "Hoi estēsan porrōthen (\"They stood at a distance\") uses porrōthen, ‘from far off’, the distance the Law's separation imposed. Ēran phōnēn (\"raised their voices\"), literally ‘they lifted a voice’, is singular: ten men with one cry. Epistata (\"Master\") is a title found only in Luke, always elsewhere on the lips of disciples (5:5, 8:24, 9:33). Eleēson hēmas (\"have mercy on us\") is an aorist imperative, the cry of the Psalms (Psalm 6:2, 41:4), heard again from the blind man in 18:38.",
+      "words": ["G2968", "G0528", "G3015", "G4207", "G0142", "G5456G", "G1988", "G1653"],
+      "history": "The Law required a person with a defiling skin disease to live alone outside the camp and to cry ‘Unclean’ (Leviticus 13:45-46; Numbers 5:2-3). The Mishnah extends this to walled towns, which had to send out those with the disease (m. Kelim 1:7), which fits men meeting Jesus as he enters a village. Excluded sufferers often lived together; 2 Kings 7:3 tells of four men with leprosy at the gate of Samaria. Shared exclusion explains how a Samaritan could be found among Jews.",
+      "ot": [
+        {
+          "ref": "Leviticus 13:45-46",
+          "note": "The ten men keep the distance Leviticus imposed: the Hebrew requires the sufferer to live badad, ‘alone’, outside the camp, and the Septuagint says kechōrismenos, ‘separated’. Luke does not quote the law, but the men's position and loud cry follow it. The same law is in the background of 5:12-14, where Jesus touches a leper before sending him to the priest."
+        }
+      ],
+      "refs": ["Leviticus 13:45-46", "Numbers 5:2-3", "2 Kings 7:3", "Luke 5:12-13", "Psalm 6:2"]
+    },
+    {
+      "v": "14",
+      "context": "Jesus neither touches nor declares them clean. He sends all ten to the priests, and they are cleansed on the way. Their obedience comes before any sign of healing.",
+      "grammar": "Idōn (\"When Jesus saw them\"), an aorist participle, makes Jesus' seeing the first response to their cry. The command poreuthentes epideixate heautous, ‘go and show yourselves’, has the plural hiereusin (\"to the priests\"), since each man would go to a priest where he could. En tō hupagein autous, ‘in their going’, a Lukan construction with the articular infinitive, places the healing on the road, and ekatharisthēsan (\"they were cleansed\") is an aorist passive, with God as the implied actor. Luke uses ‘cleanse’ here and ‘heal’ in verse 15: cleansing is the ritual status, healing the bodily fact.",
+      "words": ["G1492H", "G1925", "G2409", "G5217", "G2511"],
+      "ot": [
+        {
+          "ref": "Leviticus 14:2-3",
+          "note": "Leviticus 14 lays out the ritual for a person whose disease has been healed: the priest goes outside the camp to examine him, and then a series of rites with birds, washing, and offerings over eight days restores him to the community. Jesus' command sends the ten into that process, as he sent the leper in 5:14. The Law does not heal; it recognizes healing. By sending the men before they are healed, Jesus stakes his word on the priests' confirmation."
+        }
+      ],
+      "history": "A Samaritan would presumably have gone to the Samaritan priesthood at Mount Gerizim rather than to the Jerusalem temple. Luke does not stop to say where each man went; the point is that nine continue to the priests and one turns back to Jesus.",
+      "refs": ["Leviticus 14:2-32", "Luke 5:14", "2 Kings 5:10-14"]
+    },
+    {
+      "v": "15-16",
+      "context": "One man sees that he is healed and turns back, praising God aloud, and falls at Jesus' feet in thanksgiving. Luke saves the surprise for the last words: he was a Samaritan.",
+      "grammar": "Idōn hoti iathē (\"saw that he was healed\") makes the seeing the turning point; all ten were healed, but only one ‘saw’ it in this sense. Hupestrepsen (\"he came back\") is Luke's favorite verb for returning. Two present participles describe his manner: doxazōn ton theon (\"praising God\") and eucharistōn autō (\"in thanksgiving to Him\"). He gives glory to God and thanks to Jesus in the same act. Epesen epi prosōpon (\"fell facedown\") is the posture of worship and supplication. The closing clause kai autos ēn Samaritēs puts autos first for emphasis: ‘and he, of all people, was a Samaritan’.",
+      "words": ["G1492H", "G2390", "G5290", "G1392", "G4098", "G4383", "G2168", "G4541"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Worship in this verse is gratitude that turns back to its source. The man praises God and thanks Jesus with the same act of return, which Jesus in verse 18 calls giving glory to God. Luke lets the reader see that thanksgiving directed to Jesus is received as glory to God."
+        }
+      ],
+      "refs": ["2 Kings 5:15", "Luke 5:12", "Luke 10:33", "Psalm 107:19-22"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus asks three questions that no one present answers: were not ten cleansed, where are the nine, was no one found to return except this foreigner. The questions press the story's point on its hearers.",
+      "grammar": "Ouchi (\"Were not\") expects the answer yes: all ten were cleansed. Hoi de ennea pou, literally ‘and the nine, where?’, has no verb, which makes the question more pointed. Verse 18 uses ouch heurethēsan, ‘were they not found’, an aorist passive that pictures a search coming up empty. Dounai doxan tō theō (\"give glory to God\") is an Old Testament phrase for acknowledging God's work (Joshua 7:19, Jeremiah 13:16). Allogenēs (\"foreigner\"), found only here in the New Testament, is the word the Septuagint uses for the outsider barred from holy things (Exodus 12:43) and the word on the temple warning inscriptions the chapter note describes.",
+      "words": ["G2511", "G1767", "G2147", "G5290", "G1391", "G0241"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The one who returns is the one the temple barrier would have kept out. The story anticipates the gospel's movement to Samaria and beyond (Acts 1:8, 8:4-8), and it recalls Jesus' own reminder at Nazareth that Naaman the Syrian was the one leper cleansed in Elisha's day (4:27)."
+        }
+      ],
+      "refs": ["Luke 4:27", "Acts 8:4-8", "Acts 1:8", "Joshua 7:19"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus sends the Samaritan on with words spoken to no one else in the story: his faith has made him well. All ten were cleansed; to the one who returned Jesus speaks of faith and salvation.",
+      "grammar": "Anastas poreuou (\"Rise and go\") pairs an aorist participle of anistēmi with a present imperative: get up and be on your way. Hē pistis sou sesōken se (\"your faith has made you well\") uses sōzō, which means both to heal and to save, in the perfect tense, a completed act with a lasting result. Luke repeats the formula four times (7:50, 8:48, 17:19, 18:42), once for forgiveness and three times for healing, so the reader learns to hear both senses together.",
+      "words": ["G0450", "G4198", "G4102G", "G4982"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The faith Jesus commends is not only trust that obeyed on the road but trust that returned to him. The verse shows faith as a relationship with the healer, not simply a means to a cure."
+        },
+        {
+          "id": "salvation",
+          "note": "Because sōzō covers both healing and salvation, the word to the Samaritan points beyond cleansed skin to wholeness before God. The nine received the healing; the one who returned also received the word of salvation."
+        }
+      ],
+      "refs": ["Luke 7:50", "Luke 8:48", "Luke 18:42", "Acts 4:12"]
+    },
+    {
+      "v": "20",
+      "context": "The Pharisees ask when the kingdom of God is coming. Jesus answers that it does not come in a way that can be tracked by watching for signs, the first half of a reply completed in verse 21.",
+      "grammar": "Eperōtētheis (\"When asked\") is an aorist passive participle, and pote (\"when\") asks for a date. Jesus answers with a present tense, ouk erchetai (‘it is not coming’), describing the manner of its coming rather than its time. Meta paratērēseōs (\"with observable signs\") uses paratērēsis, ‘close watching’, found only here in the New Testament; related words describe watching the heavens or watching a person for evidence (the verb paratēreō is used of scribes watching Jesus in 6:7 and 14:1). The phrase rules out a kingdom that can be predicted by observation.",
+      "words": ["G1905", "G5330", "G4219", "G2064", "G0932", "G3907"],
+      "history": "The period produced many attempts to read the signs of the end, from Daniel's numbered weeks (Daniel 9:24-27) to the sectarian calculations at Qumran. The rabbis later warned sharply against calculating the end; a saying in the Babylonian Talmud curses those who reckon the time of the Messiah's coming (b. Sanhedrin 97b). Jesus' answer to the Pharisees refuses the same kind of calculation.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is not the kind of thing that arrives on a timetable readable by observation. The verse turns the question from ‘when’ to ‘where’ and ‘who’, which verse 21 answers."
+        }
+      ],
+      "refs": ["Luke 6:7", "Acts 1:6-7", "Luke 19:11", "Mark 13:32"]
+    },
+    {
+      "v": "21",
+      "context": "No one will be able to point and say ‘here’ or ‘there’, because the kingdom of God is already entos humōn, ‘within you’ or ‘among you’. The saying to the Pharisees about the kingdom's present reality is followed at once by teaching to the disciples about its future completion.",
+      "grammar": "Oude erousin (\"Nor will people say\") rules out pointing to a location, with the repeated interjection idou (‘look’). The decisive clause is idou gar hē basileia tou theou entos humōn estin. Estin is present: the kingdom ‘is’, not ‘will be’. Entos with the genitive most naturally means ‘inside’, as in its only other New Testament use (Matthew 23:26), which supports ‘within you’: the King James Version, following the Latin intra vos. But humōn is plural and addressed to Pharisees, and in the papyri entos humōn can mean ‘in your midst’ or ‘within your reach’, the reading C. H. Roberts argued for (Harvard Theological Review 41, 1948). Most modern translations prefer ‘among you’ or \"in your midst\", taking the kingdom as present in Jesus himself. The Greek of Gospel of Thomas saying 3, preserved in Oxyrhynchus Papyrus 654, uses the same phrase in an inward sense, which shows how early the ‘within’ reading circulated.",
+      "words": ["G4483", "G2400", "G5602", "G1563", "G0932", "G1787"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "On either translation the verse teaches that God's reign is present now, before any cosmic sign. ‘Among you’ locates it in the person and works of Jesus (11:20); ‘within you’ stresses that it is received and ruled in the heart. Many readers hold the two together, but neither allows the kingdom to be reduced to human potential without the king."
+        }
+      ],
+      "refs": ["Luke 11:20", "Matthew 23:26", "Luke 10:9-11", "Romans 14:17"]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus turns to the disciples and speaks of a time when they will long for the days of the Son of Man and not see them. False claims will follow ‘look there, look here’, echoing verse 21; the disciples must not chase them.",
+      "grammar": "Eleusontai hēmerai (\"The time is coming\"), literally ‘days will come’, is prophetic language (Amos 8:11, Jeremiah 31:31). Mian tōn hēmerōn tou huiou tou anthrōpou, ‘one of the days of the Son of Man’, is unusual and debated: it may mean one day of his presence as they knew it on earth, or the first day of the Son of Man's revealed reign, which they will long to see arrive. The two aorist subjunctives with mē, mē apelthēte mēde diōxēte (\"Do not go out or chase after them\"), forbid running after rumors.",
+      "words": ["G2064", "G2250", "G1937", "G5207", "G0444", "G3700G", "G0565", "G1377"],
+      "parallels": ["Matthew 24:23-26", "Mark 13:21-23"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The verse is honest about the ache of waiting. Disciples will long for the Son of Man's presence and not see it. Hope in Luke includes that longing, and it is guarded from misdirection by refusing every claim that he has appeared somewhere in secret."
+        }
+      ],
+      "refs": ["Luke 21:8", "Matthew 24:23-26", "Luke 5:35", "Amos 8:11"]
+    },
+    {
+      "v": "24",
+      "context": "The reason not to chase rumors: the Son of Man's day will be as unmistakable as lightning across the whole sky. It will not need to be announced.",
+      "grammar": "Hē astrapē astraptousa, ‘the lightning lightning’, pairs the noun with its cognate participle, a vivid Semitic-style emphasis. Ek tēs hupo ton ouranon eis tēn hup' ouranon, literally ‘from the (region) under heaven to the (region) under heaven’, means from one horizon to the other. Houtōs estai (\"so will be\") is future. The Son of Man's coming is compared to lightning not for its speed alone but for its visibility everywhere at once.",
+      "words": ["G0796", "G0797", "G3772", "G2989", "G5207", "G2250"],
+      "parallels": ["Matthew 24:27"],
+      "text": "The words ‘in His day’ (en tē hēmera autou) are missing from P75, Codex Vaticanus, and Codex Bezae, and editors print them in brackets. Without them the verse reads ‘so will the Son of Man be’. The sense is not affected.",
+      "theology": [
+        {
+          "id": "return",
+          "note": "The Son of Man's coming will be public and universal, not local or hidden. The verse is the basis for the church's confession that Christ will come again visibly, and it warns against any claim of a secret return."
+        }
+      ],
+      "refs": ["Matthew 24:27", "Acts 1:11", "Revelation 1:7", "Daniel 7:13-14"]
+    },
+    {
+      "v": "25",
+      "context": "Before that day comes, the Son of Man must suffer and be rejected. The verse, found only in Luke's version of this discourse, sets the cross between the present and the glory.",
+      "grammar": "Prōton dei, ‘first it is necessary’, uses dei, Luke's word for what God's plan requires (9:22, 22:37, 24:7, 24:26). Polla pathein (\"suffer many things\") and apodokimasthēnai (\"be rejected\") are aorist infinitives, the second a passive of apodokimazō, the verb of Psalm 118:22 in the Septuagint, where builders ‘rejected’ the stone. Apo tēs geneas tautēs (\"by this generation\") names the people of Jesus' own time.",
+      "words": ["G4413G", "G1163", "G3958", "G0593", "G1074"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse places the Son of Man's suffering as a divine necessity that must come before his revealing in glory. Luke will have the risen Jesus explain the same order: \"Was it not necessary for the Christ to suffer these things and then to enter His glory?\" (24:26)."
+        }
+      ],
+      "refs": ["Luke 9:22", "Luke 24:26", "Psalm 118:22", "Luke 20:17"]
+    },
+    {
+      "v": "26-27",
+      "context": "The first comparison: the days of Noah. People went about ordinary life until the day Noah entered the ark, and then the flood destroyed them all. The point is not their wickedness, though Genesis names it, but their absorption.",
+      "grammar": "The four imperfects, ēsthion, epinon, egamoun, egamizonto (\"eating and drinking, marrying and being given in marriage\"), describe continuing, habitual activity, set without conjunctions to make a rapid list. Achri hēs hēmeras, ‘until the day that’, marks the sudden end, and the aorists that follow (eisēlthen, ēlthen, apōlesen) mark single decisive events. Kataklusmos (\"the flood\") is the Septuagint's word for Noah's flood.",
+      "words": ["G2068", "G4095", "G1060", "G1061", "G1525", "G3575", "G2787H", "G2627", "G0622"],
+      "parallels": ["Matthew 24:37-39"],
+      "ot": [
+        {
+          "ref": "Genesis 7:6-7",
+          "note": "Jesus alludes to Genesis 7:7, where Noah and his family enter the ark ‘because of the waters of the flood’. The Hebrew mabbul is rendered kataklusmos in the Septuagint, the word Luke uses. Genesis stresses the violence and corruption of the earth (6:11-13); Jesus stresses that the people were caught unaware in the middle of ordinary life. The same pairing of the flood with sudden judgment appears in 2 Peter 2:5 and 3:6."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment falls on a world absorbed in good and ordinary things: meals and weddings. The verse locates the danger not in these things but in living as if nothing else will ever interrupt them."
+        }
+      ],
+      "refs": ["Genesis 6:11-13", "Genesis 7:7", "2 Peter 2:5", "Hebrews 11:7", "1 Peter 3:20"]
+    },
+    {
+      "v": "28-30",
+      "context": "The second comparison, found only in Luke: the days of Lot. The list of activities grows to commerce, farming, and building, and again destruction comes on the day of departure. So will it be on the day the Son of Man is revealed.",
+      "grammar": "Verse 28 extends the imperfects to six, in pairs: eating and drinking, buying and selling (ēgorazon, epōloun), planting and building (ephuteuon, ōkodomoun). These are the settled works of a prosperous town. Verse 29 answers with aorists: exēlthen (\"left\"), ebrexen (\"rained down\"), apōlesen (\"destroyed\"). In verse 30 apokaluptetai (\"is revealed\") is a present passive used of a future event, and apokaluptō gives the New Testament its word for Christ's appearing (1 Corinthians 1:7, 2 Thessalonians 1:7, 1 Peter 1:7).",
+      "words": ["G3091", "G0059", "G4453", "G5452", "G3618", "G1831", "G4670", "G1026", "G4442", "G2303", "G0601"],
+      "ot": [
+        {
+          "ref": "Genesis 19:24",
+          "note": "The wording of verse 29 follows the Septuagint of Genesis 19:24, which says the Lord ebrexen, ‘rained’, theion kai pur, ‘sulfur and fire’, from heaven on Sodom and Gomorrah; Luke gives the pair in the order ‘fire and sulfur’. The Hebrew has the same image of raining sulfur and fire (gofrit va'esh). In Genesis the fire falls on the day Lot is brought out, which is exactly the point Jesus takes: the rescue of the righteous and the judgment of the rest happen on the same day."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The Son of Man's coming is called a revealing: he is not absent but hidden, and that day will unveil him. The verse gives the church its vocabulary for the second coming as apokalypsis, the unveiling of the one who already reigns."
+        },
+        {
+          "id": "judgment",
+          "note": "In both examples judgment and rescue happen on the same day. Jesus does not describe Sodom's particular sins here; the warning falls on the ordinary economy of any town that assumes tomorrow will be like today."
+        }
+      ],
+      "refs": ["Genesis 19:24", "2 Peter 2:6-9", "Jude 1:7", "2 Thessalonians 1:7"]
+    },
+    {
+      "v": "31-32",
+      "context": "On that day no one should go back for possessions, from the roof or from the field. The warning is sealed with three words: remember Lot's wife.",
+      "grammar": "The two prohibitions, mē katabatō (‘let him not come down’) and mē epistrepsatō eis ta opisō (‘let him not turn back to the things behind’), are third person aorist imperatives. Ta skeuē (\"his possessions\") means household goods. ‘Turn back to the things behind’ prepares for Lot's wife, who looked back. Mnēmoneuete (\"Remember\") is a present imperative: keep her in mind. Luke's two-word sentence, mnēmoneuete tēs gunaikos Lōt, is found in no other Gospel.",
+      "words": ["G1430", "G4632", "G2597", "G0068G", "G1994", "G3694", "G3421", "G1135H"],
+      "parallels": ["Mark 13:15-16", "Matthew 24:17-18"],
+      "ot": [
+        {
+          "ref": "Genesis 19:26",
+          "note": "In Genesis 19:17 the angels tell Lot not to look back, and in 19:26 his wife looks back and becomes a pillar of salt. The Hebrew says she looked ‘from behind him’, and the Septuagint uses eis ta opisō, ‘to the things behind’, the phrase Jesus uses in verse 31. Jewish tradition treated the pillar as a warning monument (Wisdom of Solomon 10:7). Jesus uses her as the example of someone rescued from judgment who still perished because her heart turned back to what she was leaving."
+        }
+      ],
+      "history": "In Mark and Matthew the sayings about the housetop and the field belong to the warning to flee Judea when Jerusalem is threatened. Luke uses them here for the day of the Son of Man and gives a different form of the Jerusalem warning in 21:21. The flat roofs of Palestinian houses, reached by outside stairs, made it possible to flee without going inside.",
+      "refs": ["Genesis 19:17", "Genesis 19:26", "Luke 9:62", "Luke 21:21", "Philippians 3:13-14"]
+    },
+    {
+      "v": "33",
+      "context": "The principle behind Lot's wife: whoever seeks to keep his life will lose it, and whoever loses it will keep it alive. Jesus said it earlier about taking up the cross (9:24); here it is applied to the day of the Son of Man.",
+      "grammar": "Peripoiēsasthai (\"to save\") is an aorist middle infinitive of peripoieō, ‘to secure or preserve for oneself’, a different verb from the sōsai of 9:24 (and the reading of later manuscripts here). The paradox turns on apollumi, ‘lose’ or ‘destroy’, used twice. Zōogonēsei (\"will preserve it\"), from zōogoneō, ‘to keep alive’, is the verb the Septuagint uses when the Hebrew midwives kept the boys alive in Egypt (Exodus 1:17), and Acts 7:19 uses it of the same story. Psuchē here means the person's life or self, not a detachable soul.",
+      "words": ["G2212", "G5590H", "G4046", "G0622", "G2225"],
+      "parallels": ["Luke 9:24", "Matthew 10:39", "Mark 8:35", "John 12:25"],
+      "text": "Critical editions read peripoiēsasthai, ‘to preserve’; the Byzantine text and the Textus Receptus read sōsai, ‘to save’, bringing the verse into line with 9:24. The meaning is the same.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The verse describes the shape of discipleship: life is kept by being given up. Clinging to one's life, like Lot's wife clinging to what she left, is the way to lose it."
+        }
+      ],
+      "refs": ["Luke 9:24", "Luke 14:26-27", "John 12:25", "Acts 7:19"]
+    },
+    {
+      "v": "34-35",
+      "context": "Two pictures of sudden separation: two people in one bed, two women grinding at one mill. In each pair one is taken and the other left. People who shared the same life are divided in a moment.",
+      "grammar": "Tautē tē nukti, ‘on this night’, is striking after so much talk of ‘the day’: the event reaches people asleep at night and working by day, which may be a way of saying it reaches everyone at once. In verse 34 the masculine heis and heteros are the grammatical default and need not mean two men; the BSB has \"two people\". In verse 35 alēthousai (\"grinding\") is a feminine participle. Paralēmphthēsetai (\"will be taken\") and aphethēsetai (\"left\") are future passives. Paralambanō often means taking someone along into one's company (9:10, 18:31), and aphiēmi can mean leaving behind or abandoning; which fate is rescue and which is judgment is decided by context, not by the verbs alone, as the chapter note's hard question explains.",
+      "words": ["G3571", "G2825", "G1520", "G2087", "G3880", "G0863G", "G0229"],
+      "parallels": ["Matthew 24:40-41"],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The Son of Man's coming separates people who seemed to share the same situation. Readers who see a rapture here and readers who see the taken as swept away in judgment agree on the verse's point: readiness cannot be borrowed from the person next to you."
+        }
+      ],
+      "refs": ["Matthew 24:40-41", "1 Thessalonians 4:16-17", "Matthew 13:30", "Exodus 11:5"]
+    },
+    {
+      "v": "36",
+      "context": "Most modern Bibles skip from verse 35 to verse 37 or place verse 36 in a footnote. The verse, ‘Two men will be in the field; one will be taken and the other left’, stands in the King James Version and other translations based on the Textus Receptus.",
+      "text": "The verse is absent from P75, Codex Sinaiticus, Codex Alexandrinus, Codex Vaticanus, and most later Greek manuscripts. It appears in Codex Bezae, the family 13 minuscules, and some Latin and Syriac witnesses, and from there it entered the printed Textus Receptus. Bruce Metzger's Textual Commentary explains the editors' judgment that it was copied in from Matthew 24:40, where the field saying stands, while allowing that it could have dropped out by accident. The verse number is kept so that references match older Bibles. Nothing in the passage's teaching depends on it.",
+      "refs": ["Matthew 24:40"]
+    },
+    {
+      "v": "37",
+      "context": "The disciples ask ‘Where, Lord?’, where the separation happens or where the taken are taken. Jesus answers with a proverb instead of a place: where the body is, the vultures gather. The discourse ends on an image, not a timetable.",
+      "grammar": "Pou, kurie (\"Where, Lord\") asks for a location, the kind of question verse 20 already refused. Sōma (\"carcass\") is literally ‘body’; Matthew's form has ptōma, ‘corpse’ (Matthew 24:28). Aetoi can mean eagles or vultures; eagles do not usually gather in flocks over carrion, so most translations choose \"vultures\". Episunachthēsontai (\"will gather\") is a future passive. The saying probably means that judgment will be as obvious and inescapable as the circling of birds over a dead body.",
+      "words": ["G4226", "G2962G", "G4983", "G0105", "G1996"],
+      "parallels": ["Matthew 24:28"],
+      "history": "The image of birds gathering over the slain is an old one in Scripture (Job 39:27-30, Habakkuk 1:8). Some interpreters, reading Matthew's context of Jerusalem's fall, have seen an allusion to the eagle standards of the Roman legions, though the Greek word does not require it and Luke does not develop it.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus answers a question about location with a picture of inevitability: where death is, judgment gathers. The disciples are given readiness, not coordinates."
+        }
+      ],
+      "refs": ["Job 39:27-30", "Habakkuk 1:8", "Matthew 24:28", "Revelation 19:17-18"]
+    }
+  ]
+}

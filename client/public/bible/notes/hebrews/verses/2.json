@@ -1,0 +1,476 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "“Therefore” draws the first practical conclusion from chapter 1: if God has spoken finally in the Son, the hearers must pay closer attention so that they do not drift. This is the first of the letter's five warning passages (2:1-4; 3:7-4:13; 5:11-6:12; 10:26-39; 12:14-29).",
+      "grammar": "Dia touto (‘for this reason’) ties the warning to the Son's superiority. Dei (‘it is necessary’) expresses obligation. Perissoterōs is a comparative adverb, ‘more abundantly’ or ‘all the more’. Prosechein (‘to pay attention’) was used of holding a ship toward port, and pararuōmen (‘we drift away’) of something flowing past or slipping away, so some interpreters hear a nautical picture: a ship carried past its harbor by the current. The words do not require the image, but they suit it. The subjunctive with mēpote (‘lest’) states a real danger. The author says ‘we’, including himself.",
+      "words": [
+        "G1163",
+        "G4056",
+        "G4337",
+        "G0191",
+        "G3901"
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The first danger named in Hebrews is not open rebellion but slow drift. The warning presupposes that hearers of the gospel can move away from it by inattention, and it places responsibility on the whole community, the author included."
+        }
+      ],
+      "refs": [
+        "Hebrews 3:12-13",
+        "Hebrews 10:23",
+        "1 Corinthians 15:1-2",
+        "2 Peter 3:17"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The argument runs from lesser to greater. If the message spoken through angels (the law at Sinai) was binding, and every violation was punished, how much more will neglect of the salvation announced by the Lord himself bring judgment. Verse 3 also describes how the message reached the readers: from the Lord, through those who heard him.",
+      "grammar": "Ei gar (‘for if’) introduces a condition assumed true. Ho di' angelōn lalētheis logos, ‘the word spoken through angels’, is the law. Bebaios (‘firm’, ‘valid’) was a legal term for a guaranteed contract, and ebebaiōthē (‘was confirmed’) in verse 3 uses the same root: the new message has been as firmly guaranteed. Parabasis (‘transgression’, stepping over a line) and parakoē (‘disobedience’, literally ‘hearing amiss’) cover active and passive failures. Misthapodosia (‘recompense’) appears only in Hebrews (2:2, 10:35, 11:26). Pōs hēmeis ekpheuxometha, ‘how shall we escape’, is a future question expecting ‘we will not’. Amelēsantes (‘having neglected’) is the sin, not outright rejection. Archēn labousa laleisthai dia tou kuriou, ‘having received a beginning to be spoken through the Lord’, makes Jesus' own preaching the origin of the message.",
+      "words": [
+        "G0032G",
+        "G0949",
+        "G3847",
+        "G3876",
+        "G3405",
+        "G1628",
+        "G0272",
+        "G0950"
+      ],
+      "history": "Exodus does not mention angels at Sinai, but the idea that the law was mediated by angels was widespread. The Septuagint of Deuteronomy 33:2 says angels were with God at his right hand; Jubilees (1:27-2:1) has the angel of the presence dictate the law to Moses; Josephus (Antiquities 15.136) has Herod say that the Jews learned the holiest parts of their laws from God through angels; and Acts 7:53 and Galatians 3:19 both refer to it. The argument from lesser to greater (in rabbinic terms qal vachomer, ‘light and heavy’) was the first of the seven rules of interpretation traditionally ascribed to Hillel (t. Sanhedrin 7:11).",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The certainty of judgment under the law becomes the measure of greater accountability under the gospel. Greater revelation brings greater responsibility, a principle Jesus also taught (Luke 12:48)."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation is called ‘so great’ because of who announced it. The verse also shows how the gospel was handed on: from the Lord, through eyewitnesses, to the next generation."
+        }
+      ],
+      "refs": [
+        "Acts 7:53",
+        "Galatians 3:19",
+        "Deuteronomy 33:2",
+        "Hebrews 10:28-29",
+        "Hebrews 12:25"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "God himself added his testimony to the eyewitnesses' message with signs, wonders, various miracles, and distributions of the Holy Spirit according to his will. The verse describes the early preaching as Acts portrays it.",
+      "grammar": "Sunepimarturountos tou theou, ‘God bearing witness with them’, is a genitive absolute with a double compound verb (sun, ‘with’, and epi, ‘in addition’), found only here in the New Testament: God added his witness alongside theirs. Sēmeia (‘signs’) point beyond themselves, terata (‘wonders’) astonish, and dunameis (‘powers’, ‘miracles’) display power; the triad occurs also in Acts 2:22 and 2 Corinthians 12:12. Merismois (‘distributions’) is the word that returns in 4:12 for the word's ‘dividing’. Kata tēn autou thelēsin, ‘according to his will’, may refer to God's will or to the Spirit's, as in 1 Corinthians 12:11.",
+      "words": [
+        "G4901",
+        "G4592",
+        "G5059",
+        "G1411",
+        "G3311",
+        "G2308"
+      ],
+      "theology": [
+        {
+          "id": "gifts",
+          "note": "The gifts of the Spirit are distributed by God's will, not earned or demanded. Churches differ on whether such signs continue today in the same form (continuationists) or chiefly accompanied the apostolic foundation (cessationists), and this verse, which speaks of confirmation of the first witnesses, is cited on both sides."
+        }
+      ],
+      "refs": [
+        "Acts 2:22",
+        "Acts 14:3",
+        "2 Corinthians 12:12",
+        "1 Corinthians 12:11",
+        "Mark 16:20"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The argument returns to angels. God has not subjected the world to come to angels. This verse introduces the exposition of Psalm 8 that runs to verse 9 and names the subject: ‘the world to come, about which we are speaking’.",
+      "grammar": "Ou gar angelois, ‘for not to angels’, puts ‘angels’ first for contrast. Hupetaxen (‘he subjected’) anticipates the psalm's ‘you put all things in subjection’. Tēn oikoumenēn tēn mellousan, ‘the inhabited world that is coming’, recalls the oikoumenē of 1:6 and points to the renewed creation over which the Son now reigns in principle. Some Jewish traditions assigned the nations to angelic rulers (the Septuagint of Deuteronomy 32:8 says God fixed the boundaries of the nations according to the number of the angels of God), which may explain the stress: this age may have angelic overseers, but the age to come belongs to a human being.",
+      "words": [
+        "G0032G",
+        "G5293",
+        "G3625",
+        "G3195"
+      ],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "The world to come is the goal of the argument. It will be ruled not by angels but by humanity in the person of Jesus, a restoration and fulfillment of the rule given to Adam."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 32:8",
+        "Hebrews 6:5",
+        "Hebrews 13:14",
+        "Daniel 7:13-14",
+        "1 Corinthians 6:3"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The author introduces Psalm 8 with an unusually vague formula, ‘somewhere someone testified’. The psalm asks what a human being is, that God should remember and care for him.",
+      "grammar": "Diemarturato de pou tis legōn, ‘someone somewhere testified, saying’, is not ignorance of the source; Hebrews is concerned with who speaks through Scripture (God, the Spirit, the Son) rather than with its human authors, and Philo uses a similar indefinite formula. Anthrōpos (‘man’) and huios anthrōpou (‘son of man’) are parallel in the Hebrew poetry, both meaning a human being. Mimnēskē (‘you remember’) and episkeptē (‘you care for’, ‘you visit’) are present tenses of God's attentive care; episkeptomai is the verb for God visiting his people in blessing (Luke 1:68).",
+      "words": [
+        "G1263",
+        "G0444",
+        "G5207",
+        "G3403",
+        "G1980"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 8:4",
+          "note": "The Hebrew reads mah-enosh ki-tizkerennu uven-adam ki tifqedennu: ‘what is man that you remember him, and the son of man that you visit him’. The Septuagint (Psalm 8:5) translates literally, and Hebrews quotes it. In the psalm, the question marvels at the frailty of humans set against the heavens (8:3) and at the honor God gives them anyway. ‘Son of man’ is a poetic synonym for a human being. Readers who knew Jesus' use of ‘the Son of Man’ as a title would have heard more, but Hebrews never builds on the title directly; its argument turns on the psalm's description of humanity's destiny."
+        }
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The psalm's question sets the dignity of humanity inside a frank recognition of its smallness. Humanity's worth is located in God's attention, not in size or power."
+        }
+      ],
+      "refs": [
+        "Psalm 8:3-6",
+        "Psalm 144:3-4",
+        "Job 7:17-18",
+        "Genesis 1:26-28"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The psalm continues: God made humanity a little lower than the angels and crowned it with glory and honor. Hebrews will read ‘a little’ in a new way in verse 9.",
+      "grammar": "Ēlattōsas (‘you made lower’) is aorist. Brachu ti, ‘a little’, can mean a little in degree or for a little while in time. In the psalm it means degree; Hebrews exploits the temporal sense in verse 9, where Jesus is made lower ‘for a little while’. Par' angelous (‘than the angels’) follows the Septuagint. Doxē kai timē (‘glory and honor’) are royal terms, and estephanōsas (‘you crowned’) completes the royal picture.",
+      "words": [
+        "G1642",
+        "G1024",
+        "G0032G",
+        "G1391",
+        "G5092",
+        "G4737"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 8:5",
+          "note": "The Hebrew says God made man a little lower than elohim (me'at me'elohim), which can mean ‘than God’ or ‘than heavenly beings’; many modern translations prefer ‘than God’. The Septuagint (Psalm 8:6) chose ‘than angels’ (par' angelous), which is essential to Hebrews' argument, since chapter 1 compared the Son with angels. The psalm then says God crowned humanity with glory and majesty and set it over the works of his hands."
+        }
+      ],
+      "text": "Many manuscripts, including the codices Sinaiticus and Alexandrinus, add the psalm's next line, ‘and you set him over the works of your hands’, which the King James Version includes. Papyrus 46 and Codex Vaticanus lack it, and most editions omit it, judging that scribes completed the quotation from the Septuagint. Its absence may be deliberate: Hebrews stresses what is ‘not yet’ subject to humanity.",
+      "refs": [
+        "Psalm 8:5",
+        "Genesis 1:26",
+        "Psalm 21:5",
+        "Hebrews 1:4"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The quotation ends with ‘everything under his feet’, and the author comments: if all things were subjected, nothing was left out; but we do not yet see everything subjected to him. The gap between promise and present is the hinge of the chapter.",
+      "grammar": "Panta hupetaxas, ‘you subjected all things’, is aorist, God's intention declared. The author's comment turns on the article in en tō gar hupotaxai, ‘for in the subjecting’, and on ouden aphēken autō anupotakton, ‘he left nothing unsubjected to him’: the scope is total. Then comes the pivot, nun de oupō horōmen, ‘but now not yet do we see’. Oupō (‘not yet’) implies ‘but one day’. The pronoun autō (‘to him’) is ambiguous: it may mean humanity in general, which does not yet rule creation, or Jesus, whose rule is not yet visible. Most read verse 8 of humanity, which makes verse 9 the answer: what we do see is Jesus.",
+      "words": [
+        "G5293",
+        "G5270",
+        "G0863G",
+        "G0506",
+        "G3768",
+        "G3708"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The vocation of Genesis 1:28 and Psalm 8, to rule over creation, has not failed but is unfinished. The author is realistic about the present: human beings do not now rule the world as the psalm describes."
+        },
+        {
+          "id": "hope",
+          "note": "‘Not yet’ is the grammar of Christian hope. The promise stands, and the present disorder is not its denial but its unfinished state."
+        }
+      ],
+      "refs": [
+        "Psalm 8:6",
+        "1 Corinthians 15:25-27",
+        "Ephesians 1:22",
+        "Romans 8:19-23"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "What we do see is Jesus. He was made lower than the angels for a little while, and he is now crowned with glory and honor because he suffered death, so that by God's grace he might taste death for everyone. The psalm's description of humanity has come true first in him.",
+      "grammar": "The word order withholds the name: ton de brachu ti par' angelous ēlattōmenon blepomen Iēsoun, ‘but the one made a little lower than angels we see, Jesus’. The name comes last, for effect; it is the first time Hebrews uses it. Ēlattōmenon and estephanōmenon (‘made lower’, ‘crowned’) are perfect participles, each a lasting state. Dia to pathēma tou thanatou (‘because of the suffering of death’) gives the ground of the crowning. Hopōs ... geusētai thanatou, ‘so that he might taste death’, is a Semitic idiom for actually dying (Mark 9:1). Huper pantos may be masculine (‘for everyone’) or neuter (‘for everything’); most take it as masculine, and the next verses speak of ‘many sons’.",
+      "words": [
+        "G1642",
+        "G0991",
+        "G2424G",
+        "G3804",
+        "G4737",
+        "G5485",
+        "G1089",
+        "G3956"
+      ],
+      "text": "A few Greek manuscripts and several early writers, including Origen and Theodore of Mopsuestia, knew the reading chōris theou, ‘apart from God’, instead of chariti theou, ‘by the grace of God’. The words differ by a few letters. ‘Apart from God’ could mean that Jesus died forsaken (compare Mark 15:34) or that he died for everything except God. Bart Ehrman (The Orthodox Corruption of Scripture, 1993) argued it is original and was changed for theological reasons; most textual critics keep ‘by the grace of God’, which has the overwhelming manuscript support.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus tasted death ‘for’ (huper, on behalf of) everyone. Christians differ on the extent this implies: Arminian and many Lutheran readers see a death offered for all people, while Reformed readers such as John Owen (The Death of Death in the Death of Christ, 1647) read ‘everyone’ in the light of the ‘many sons’ of verse 10. All agree it was a substitutionary death undertaken by God's grace."
+        },
+        {
+          "id": "exaltation",
+          "note": "The crowning follows the suffering. Jesus is the first human being to receive the glory and honor Psalm 8 promised, and he received it by way of death."
+        },
+        {
+          "id": "messiah",
+          "note": "Psalm 8 speaks of humanity, not of a coming king, yet Hebrews finds its promise fulfilled first in Jesus. The Messiah is presented here as the true human being, the one in whom Adam's lost dominion is restored and through whom his brothers will share it."
+        }
+      ],
+      "refs": [
+        "Philippians 2:8-9",
+        "Mark 9:1",
+        "John 3:16",
+        "1 Timothy 2:6",
+        "2 Corinthians 5:14-15"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "It was fitting for God, the source and goal of all things, to make the pioneer of salvation perfect through suffering as he brought many sons to glory. The author defends the cross as worthy of God, answering the objection that suffering is unfitting for a divine Savior.",
+      "grammar": "Eprepen (‘it was fitting’) is a word Greek philosophers used for what befits the gods; the author turns it around: suffering was fitting. Di' hon ta panta kai di' hou ta panta, ‘for whom are all things and through whom are all things’, uses the same preposition with two cases (accusative, ‘for the sake of’; genitive, ‘through’), a formula for God as goal and cause. Agagonta (‘bringing’) is an aorist participle in the accusative; grammarians debate whether it modifies God (the one bringing) or the pioneer (who brings), and the grammar slightly favors God. Archēgos (‘pioneer’, ‘author’) means one who goes first and leads others. Teleiōsai (‘to perfect’) means to bring to completion; in the Septuagint the phrase ‘fill the hands’ for consecrating priests is rendered with teleioō (Exodus 29:9 and Leviticus 8:33), so the word may carry the sense of qualifying a priest.",
+      "words": [
+        "G4241",
+        "G4183",
+        "G5207",
+        "G1391",
+        "G0071",
+        "G0747",
+        "G4991",
+        "G3804",
+        "G5048"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Suffering was the road by which the Son was fully qualified to save. The verse gives the suffering of believers a place too: the many sons are led to glory along the same road as their pioneer (12:2)."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation is described as being brought to glory, the destiny Psalm 8 described. Jesus is the pioneer who leads a family into it, not a solitary hero."
+        }
+      ],
+      "refs": [
+        "Hebrews 5:8-9",
+        "Hebrews 12:2",
+        "Romans 11:36",
+        "Luke 24:26",
+        "Acts 3:15"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The one who makes holy and those made holy share one origin, so Jesus is not ashamed to call them brothers. The next two verses prove it from Scripture.",
+      "grammar": "Ho hagiazōn (‘the one who sanctifies’) and hoi hagiazomenoi (‘those being sanctified’) are present participles; the present tense of the second suggests a process, though Hebrews also speaks of believers as sanctified once for all (10:10, 10:14). Ex henos pantes, ‘all from one’, does not say ‘one’ what. The BSB supplies ‘family’. Interpreters have proposed God (they have one Father), Adam (one human ancestor), or Abraham (verse 16); many think God is meant, as the source of both the Son and the sons. Epaischunetai (‘he is ashamed’) is present tense: he is not ashamed now, exalted as he is.",
+      "words": [
+        "G0037",
+        "G1520",
+        "G1870",
+        "G0080"
+      ],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Holiness is given by Jesus to those who belong to him. The verse makes sanctification both his work and the basis of a family bond: the Holy One and the made-holy belong together."
+        },
+        {
+          "id": "family",
+          "note": "The exalted Son calls his people brothers. The church is described as a family whose older brother is not embarrassed by them."
+        }
+      ],
+      "refs": [
+        "Hebrews 10:10",
+        "Hebrews 10:14",
+        "John 17:19",
+        "Romans 8:29",
+        "Matthew 28:10"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The first proof: in Psalm 22 the speaker declares God's name to his brothers and praises him in the assembly. Hebrews hears these words in Jesus' mouth.",
+      "grammar": "Legōn (‘saying’) makes Jesus the speaker of the psalm. Apangelō (‘I will announce’) and humnēsō (‘I will sing hymns’) are futures. En mesō ekklēsias, ‘in the midst of the assembly’, uses ekklēsia, the word the Septuagint uses for Israel's gathered congregation and the New Testament for the church.",
+      "words": [
+        "G0518",
+        "G3686",
+        "G0080",
+        "G1577",
+        "G5214"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 22:22",
+          "note": "The Hebrew, asapperah shimkha le'echai betokh qahal ahalleleka, stands at the turn of the psalm, where the sufferer who began ‘My God, my God, why have you forsaken me?’ vows to praise God among his brothers after rescue. The Septuagint (Psalm 21:23) reads diēgēsomai (‘I will recount’); Hebrews has apangelō (‘I will announce’), a synonym. The Gospels place the psalm's first line on Jesus' lips at the cross (Mark 15:34). Hebrews quotes the turning point, so that the one who suffered now praises God among the brothers his suffering won."
+        }
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The risen Jesus leads his people's praise. Christian worship is pictured as the Son singing to the Father in the midst of his brothers and sisters, not merely as people singing about him."
+        }
+      ],
+      "refs": [
+        "Psalm 22:22",
+        "Mark 15:34",
+        "Romans 15:9",
+        "Hebrews 12:23",
+        "Psalm 22:1"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Two more proofs, both from Isaiah 8: the speaker puts his trust in God, and he stands with the children God has given him. Trusting God is something Jesus shares with his people, and the children are his.",
+      "grammar": "Kai palin (‘and again’) introduces each quotation, splitting one continuous passage into two. Egō esomai pepoithōs ep' autō, ‘I will be trusting in him’, is a periphrastic future (future of ‘to be’ with a perfect participle), stressing a settled state of trust. Idou (‘behold’) presents Jesus and his children together. Ta paidia ha moi edōken ho theos, ‘the children whom God gave me’, echoes Jesus' own words about those the Father gave him (John 17:6).",
+      "words": [
+        "G3825",
+        "G3982",
+        "G2400",
+        "G3813",
+        "G1325"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 8:17-18",
+          "note": "In Isaiah, the prophet, rejected by king and people during the Syro-Ephraimite crisis about 734 BC, resolves to wait for the LORD. The Hebrew veqivveti lo means ‘I will hope in him’; the Septuagint renders it ‘I will trust in him’ (pepoithōs esomai ep' autō), words also found in the Septuagint of 2 Samuel 22:3 and Isaiah 12:2, and Hebrews follows the Greek. Isaiah then presents himself and the children the LORD gave him (his sons, whose names were signs) as signs to Israel. Hebrews reads the faithful prophet with his small circle as a pattern of Jesus with his people, and the Septuagint's ‘God gave’ (for the Hebrew ‘the LORD gave’) fits the Father giving children to the Son."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus himself trusts God. Hebrews will later call him the pioneer and perfecter of faith (12:2): the life of faith is not only asked of believers but lived by their leader."
+        }
+      ],
+      "refs": [
+        "Isaiah 8:17-18",
+        "2 Samuel 22:3",
+        "John 17:6",
+        "Hebrews 12:2",
+        "Isaiah 12:2"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Because the children share flesh and blood, the Son also took part in the same, so that through death he might destroy the one who holds the power of death, the devil, and free those enslaved all their lives by the fear of death. The incarnation is explained by its purpose.",
+      "grammar": "The two verbs are chosen with care. Kekoinōnēken (‘have shared’) is perfect tense: the children share flesh and blood as a lasting condition of their nature. Meteschen (‘he partook’) is aorist: the Son entered into that condition at a point in time, from outside. Haimatos kai sarkos (‘blood and flesh’) reverses the usual order. Paraplēsiōs (‘likewise’, ‘in just the same way’) rules out a merely apparent humanity. Katargēsē (‘he might render powerless’) does not mean annihilate but deprive of effect. To kratos echonta tou thanatou, ‘the one holding the power of death’, describes the devil's hold through sin, accusation, and fear. Phobō thanatou (‘by fear of death’) and douleias (‘slavery’) name the bondage, and apallaxē (‘he might free’) the release.",
+      "words": [
+        "G2841",
+        "G0129G",
+        "G4561",
+        "G3898",
+        "G3348",
+        "G2673",
+        "G2904",
+        "G1228",
+        "G5401",
+        "G1397",
+        "G0525"
+      ],
+      "text": "The Textus Receptus reads ‘flesh and blood’ in the familiar order; the earlier manuscripts and modern editions read ‘blood and flesh’.",
+      "history": "Fear of death was a central subject of ancient philosophy. Epicurus, in his Letter to Menoeceus, argued that death is nothing to us because where death is we are not, and his Roman follower Lucretius (On the Nature of Things, book 3) aimed to free readers from dread of it. Jewish tradition traced death's power to the devil: the Wisdom of Solomon (2:24) says death entered the world through the devil's envy. Gustaf Aulén's Christus Victor (English translation 1931) argued that this theme, Christ's victory over the powers of sin, death, and the devil, was the dominant view of the atonement in the early church.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son took real flesh and blood, entering the human condition he had not shared before. The purpose of the incarnation was death, and through death, victory."
+        },
+        {
+          "id": "atonement",
+          "note": "Christ's death disarms the devil and frees people from fear of death. This is the victory theme of the atonement, which Hebrews sets beside the priestly theme of verse 17 without choosing between them."
+        }
+      ],
+      "refs": [
+        "John 1:14",
+        "1 John 3:8",
+        "1 Corinthians 15:54-57",
+        "Romans 8:15",
+        "Colossians 2:15"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The Son's help is not aimed at angels but at Abraham's descendants. The verse summarizes why he became human rather than angelic, and why he is compared with angels in chapter 1.",
+      "grammar": "Ou gar dēpou, ‘for surely not’, appeals to what the readers already know. Epilambanetai means ‘to take hold of’, often to help or rescue someone by the hand (Mark 8:23, Acts 23:19). Many church fathers, including John Chrysostom, took it as ‘take on (the nature of)’, and the King James Version followed them with ‘he took not on him the nature of angels’, printing the added words in italics. Modern translators prefer ‘he helps’, since the verb is present tense and describes his continuing aid. Spermatos Abraam (‘the seed of Abraham’) may mean Israel or all who share Abraham's faith (Galatians 3:29).",
+      "words": [
+        "G1211",
+        "G0032G",
+        "G1949",
+        "G4690G",
+        "G0011"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 41:8-10",
+          "note": "The LORD addresses Israel as the seed of Abraham his friend, whom he took hold of from the ends of the earth, promising to strengthen and help them. The Septuagint uses antilambanomai (‘take hold of’), a close relative of Hebrews' verb, and ‘seed of Abraham’. Hebrews appears to echo the passage: the Son is God's hand taking hold of Abraham's children."
+        }
+      ],
+      "refs": [
+        "Isaiah 41:8-10",
+        "Galatians 3:29",
+        "Luke 1:54-55",
+        "Hebrews 6:13-15"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The purpose of becoming like his brothers in every way: to become a merciful and faithful high priest before God, making atonement for the people's sins. This is the letter's first use of ‘high priest’, the theme that will dominate chapters 4 to 10.",
+      "grammar": "Hothen (‘therefore’) is a favorite connective of Hebrews. Ōpheilen (‘he was obligated’) presents the incarnation as necessary for the priestly work, not optional. Kata panta ... homoiōthēnai, ‘to be made like in all respects’, qualified in 4:15 by ‘without sin’. Eleēmōn kai pistos (‘merciful and faithful’) are the two qualities 4:15 and 3:1-6 will develop in reverse order. Ta pros ton theon (‘the things pertaining to God’) is a Septuagint phrase for priestly duties (Exodus 4:16). Eis to hilaskesthai tas hamartias, ‘to make atonement for the sins’, uses a present infinitive. Since C. H. Dodd (The Bible and the Greeks, 1935) argued that the hilaskomai word group in biblical Greek means expiation (removing sin) rather than propitiation (turning away wrath), and Leon Morris (The Apostolic Preaching of the Cross, 1955) replied that the idea of averting wrath remains, scholars have debated the sense. Here the object is sins, which fits expiation, though the two ideas are not exclusive.",
+      "words": [
+        "G3606",
+        "G3784",
+        "G3666",
+        "G1655",
+        "G4103",
+        "G0749",
+        "G2433",
+        "G2992"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Atonement is a priestly act performed by one who shares the nature of those he represents. The verse joins incarnation and atonement: the priest had to be one of the people."
+        },
+        {
+          "id": "offices",
+          "note": "Jesus' office as high priest is introduced here. The Reformers spoke of Christ's threefold office as prophet, priest, and king, and Hebrews supplies more of the priestly part than any other book."
+        }
+      ],
+      "refs": [
+        "Hebrews 4:15",
+        "Hebrews 5:1-2",
+        "Romans 3:25",
+        "1 John 2:2",
+        "Leviticus 16:15-16"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Because he himself suffered when tested, he is able to help those who are being tested. The chapter ends on the practical consequence of the Son's humanity, which 4:15-16 will develop.",
+      "grammar": "En hō gar can mean ‘for in that’ (‘because’) or ‘in the area in which’: either he helps because he suffered, or he helps in the kinds of testing he himself endured. Peponthen (‘he has suffered’) is a perfect tense, a past experience with lasting effect. Peirastheis (‘having been tested’) can mean tempted or tried; peirazō covers both. Tois peirazomenois (‘those being tested’) is present, the readers' ongoing situation. Boēthēsai (‘to help’) is the verb used of running to someone's aid when they cry out.",
+      "words": [
+        "G3958",
+        "G3985G",
+        "G1410",
+        "G0997"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus' own suffering under testing is the basis of his ability to help. The verse does not promise the removal of testing but the help of one who knows it from inside."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Son's experience of testing was real. The church has confessed both that he was truly tempted and that he did not sin (4:15), holding together his genuine humanity and his holiness."
+        }
+      ],
+      "refs": [
+        "Hebrews 4:15-16",
+        "Hebrews 5:7-8",
+        "Matthew 4:1-11",
+        "1 Corinthians 10:13"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The ambush that closed chapter 11 is followed by an enormous crowd pressing in. Jesus speaks first to his disciples and warns them against the leaven of the Pharisees, which he names as hypocrisy. The warning sets the theme for verses 1 to 12: what is hidden will be exposed, so disciples must live and speak openly before God.",
+      "grammar": "En hois, ‘in these circumstances’ or ‘meanwhile’, ties the scene to the plotting of 11:53-54. Tōn muriadōn tou ochlou, ‘the tens of thousands of the crowd’, uses murias, a unit of ten thousand, here as a hyperbole for a vast crowd, and hōste katapatein allēlous, ‘so that they trampled one another’, is a result clause. Prōton, ‘first’, can go either with what precedes, ‘he began to speak to his disciples first’, or with what follows, ‘first of all, beware’. Prosechete heautois apo, ‘beware for yourselves of’, is a present imperative of steady vigilance. Hētis estin hupokrisis, ‘which is hypocrisy’, uses the relative hētis to define the leaven.",
+      "words": ["G3461", "G3793", "G2662", "G0240", "G3101", "G4413G", "G4337", "G2219", "G5272", "G5330"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Hypocrisy works like leaven: small, hidden, and pervasive. Jesus warns his own disciples against it first, which makes the danger not the Pharisees' alone but a temptation of every religious community, the church included."
+        }
+      ],
+      "parallels": ["Matthew 16:6", "Mark 8:15"],
+      "refs": ["1 Corinthians 5:6-8", "Galatians 5:9", "Luke 11:39-44", "Luke 20:20"]
+    },
+    {
+      "v": "2-3",
+      "context": "Hypocrisy is futile because nothing stays hidden. What the disciples say in the dark will be heard in daylight, and what they whisper in storerooms will be proclaimed from the rooftops.",
+      "grammar": "Ouden de sugkekalummenon estin, ‘nothing is covered up’, uses a perfect passive participle of sugkaluptō, found only here in the New Testament, for something concealed and kept concealed. The two futures apokaluphthēsetai and gnōsthēsetai, ‘will be revealed’ and ‘will be known’, are divine passives: God will do the uncovering. Verse 3 opens with anth' hōn, ‘therefore’ or ‘because’, a Lukan connective (1:20, 19:44). Luke's form differs pointedly from Matthew 10:27, where Jesus tells the disciples to proclaim from the housetops what he tells them in the dark; in Luke it is the disciples' own words, spoken in secret, that will be broadcast.",
+      "words": ["G4780", "G0601", "G2927", "G1097", "G0473", "G4653", "G5457", "G0191", "G3775", "G5009", "G2784", "G1430"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God will bring every hidden thing into the open. The verse makes the final judgment a disclosure: what people really said and meant will be known, which is both a warning to hypocrites and a comfort to the falsely accused."
+        }
+      ],
+      "parallels": ["Matthew 10:26-27", "Mark 4:22", "Luke 8:17"],
+      "refs": ["Luke 8:17", "1 Corinthians 4:5", "Ecclesiastes 12:14", "Romans 2:16"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus calls his disciples friends and tells them not to fear those whose power ends at death. The one to fear is God, who has authority beyond death. Right fear of God drives out the fear of people.",
+      "grammar": "Tois philois mou, ‘to my friends’, is the only place in the first three Gospels where Jesus calls his disciples his friends (compare John 15:14-15). Mē phobēthēte apo, ‘do not be afraid of’, uses apo with the verb of fearing, a construction that reflects the Hebrew yare min, ‘to be afraid from’. The persecutors are those mē echontōn perissoteron ti poiēsai, ‘not having anything more to do’. Hupodeixō, ‘I will show you’, introduces the positive command, and the verb phobēthēte is used three times in verse 5, with nai legō humin, ‘yes, I tell you’, pressing it home. The one to fear is described with an aorist infinitive, meta to apokteinai, ‘after killing’, and a present participle, echonta exousian, ‘having authority’, to cast into Gehenna. Some older interpreters thought the one to fear was the devil, but only God holds authority over final destiny, and verses 6 and 7 name God.",
+      "words": ["G5384", "G5399", "G0615", "G4983", "G4055", "G5263", "G1849", "G1685", "G1067", "G3483"],
+      "history": "Jewish martyr literature voiced the same conviction. In 4 Maccabees, a first-century Jewish work, the seven brothers encourage one another not to fear the one who thinks he is killing them, because a greater struggle and danger of eternal torment await those who break God's command (4 Maccabees 13:14-15). The chapter note explains Gehenna and the Valley of Hinnom.",
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The fear of God is reverent awe before the one who holds life and death. Jesus uses it not to terrify his friends but to free them: whoever fears God rightly need not fear any human power."
+        },
+        {
+          "id": "hell",
+          "note": "The verse speaks of a judgment after death that exceeds anything persecutors can do. Jesus names Gehenna as a real destiny under God's authority, the reason the martyrs of every age have been able to face death without denying him."
+        }
+      ],
+      "parallels": ["Matthew 10:28"],
+      "refs": ["John 15:14-15", "Isaiah 51:12-13", "Hebrews 10:31", "1 Peter 3:14", "Revelation 2:10"]
+    },
+    {
+      "v": "6-7",
+      "context": "The God to be feared is also the Father who forgets not one sparrow and numbers every hair. The same God whose authority is final attends to the smallest detail of his creatures' lives, so disciples need not be afraid.",
+      "grammar": "Ouchi, ‘not?’, introduces a question expecting ‘yes’. Pōlountai assariōn duo, ‘are sold for two assaria’, uses a genitive of price. Hen ex autōn ouk estin epilelēsmenon enōpion tou theou, ‘not one of them has been forgotten before God’, is a periphrastic perfect passive: no sparrow ever falls out of God's memory. Verse 7 opens with alla kai, ‘but even’, and ērithmēntai, ‘have been numbered’, is a perfect passive: every hair is already counted. Mē phobeisthe, ‘do not be afraid’, is a present imperative, forbidding fear as a continuing state, and diapherete, ‘you are worth more’, draws the lesser-to-greater conclusion.",
+      "words": ["G3780", "G4002", "G4765", "G4453", "G0787", "G1950", "G2359", "G2776", "G0705", "G5399", "G1308"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's care is exhaustive and personal. The one who keeps count of cheap birds and single hairs is not distracted from any of his children, which is why Jesus can command fearlessness in the face of persecution."
+        }
+      ],
+      "parallels": ["Matthew 10:29-31"],
+      "refs": ["Matthew 10:29-31", "Luke 21:18", "1 Samuel 14:45", "Psalm 139:1-4", "Acts 27:34"]
+    },
+    {
+      "v": "8-9",
+      "context": "Public loyalty to Jesus now has an answer at the heavenly court. The Son of Man will acknowledge before God's angels those who acknowledge him before people, and those who deny him will be denied.",
+      "grammar": "Pas hos an homologēsē en emoi, ‘everyone who confesses in me’, uses en with homologeō, a construction that reflects an Aramaic idiom for acknowledging someone; Matthew 10:32 has the same. The response is kai ho huios tou anthrōpou homologēsei en autō, ‘the Son of Man will also confess him’, so the same verb describes both sides. Emprosthen tōn angelōn tou theou, ‘before the angels of God’, is a reverent way of saying before God and his court (compare 15:10). In verse 9 ho de arnēsamenos, ‘the one who denied’, is an aorist participle, and aparnēthēsetai, ‘will be denied’, a future passive of the compound verb. Luke uses these same verbs for Peter's denial (22:34, 22:57, 22:61), which makes Peter's later restoration (22:32, 24:34) a commentary on this warning.",
+      "words": ["G3670", "G1715", "G0444", "G5207", "G0032G", "G0720", "G0533", "G1799"],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The Son of Man acts as advocate or witness at the final judgment. What a person does with Jesus before others now has its counterpart when he comes in glory (9:26), the scene of Daniel 7:9-14, where the court sits before the Ancient of Days."
+        },
+        {
+          "id": "faith",
+          "note": "Faith is not only private trust but public confession. Paul joins the two when he says that one believes with the heart and confesses with the mouth (Romans 10:9-10)."
+        }
+      ],
+      "parallels": ["Matthew 10:32-33", "Mark 8:38", "Luke 9:26"],
+      "refs": ["Daniel 7:9-14", "Romans 10:9-10", "2 Timothy 2:12", "Revelation 3:5", "Luke 22:61"]
+    },
+    {
+      "v": "10",
+      "context": "A saying about unforgivable blasphemy follows the saying about denial. A word spoken against the Son of Man can be forgiven, but blasphemy against the Holy Spirit cannot. The chapter note sets out the main interpretations.",
+      "grammar": "Pas hos erei logon eis ton huion tou anthrōpou, ‘everyone who will speak a word against the Son of Man’, uses the future erei in a general relative clause. The contrast is tō de eis to hagion pneuma blasphēmēsanti, ‘but to the one who blasphemed against the Holy Spirit’, a dative aorist participle. Both halves end with the same future passive, aphethēsetai, ‘it will be forgiven’, the second negated with ouk. The change from logos, ‘word’, to blasphēmeō, ‘to slander, to revile’, marks a difference in kind: not a careless word but settled defiance.",
+      "words": ["G3956", "G4483", "G3056", "G5207", "G0444", "G0863H", "G0040G", "G4151G", "G0987"],
+      "history": "The saying was known early and applied in the churches. The Didache (11.7) forbids testing or judging a prophet who speaks in the Spirit, adding that every sin will be forgiven but this sin will not be forgiven, which shows how the first Christians connected the saying with resisting the Spirit's present work.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Holy Spirit's testimony to Jesus is the means by which people come to repentance and forgiveness. Settled, deliberate rejection of that testimony cuts a person off from the very gift that brings forgiveness, which is why the sin is described as unforgivable."
+        }
+      ],
+      "parallels": ["Matthew 12:31-32", "Mark 3:28-29"],
+      "refs": ["Mark 3:28-30", "Luke 11:15", "Acts 7:51", "Hebrews 6:4-6", "1 John 5:16"]
+    },
+    {
+      "v": "11-12",
+      "context": "When disciples are hauled before synagogue courts and civil authorities, they are not to worry about their defense. The Holy Spirit will teach them what to say at that very hour.",
+      "grammar": "Hotan de eispherōsin humas, ‘whenever they bring you in’, uses eispherō, the verb of the Lord's Prayer's ‘lead us not into temptation’ (11:4): the trial the disciples pray to be spared may still come, and when it does the Spirit is present. Epi tas sunagōgas kai tas archas kai tas exousias, ‘before synagogues, rulers, and authorities’, names Jewish and Gentile tribunals. Mē merimnēsēte, ‘do not become anxious’, is an aorist subjunctive prohibition, and apologēsēsthe, ‘you will make your defense’, uses the verb for a formal legal defense, which Luke uses of Paul's speeches in Acts (Acts 24:10, 26:1-2). To gar hagion pneuma didaxei, ‘for the Holy Spirit will teach’, gives the reason, and en autē tē hōra, ‘in that very hour’, stresses the timing.",
+      "words": ["G1533", "G4864", "G0746", "G1849", "G3309", "G0626", "G0040G", "G4151G", "G1321", "G5610", "G1163"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is the disciples' helper when they bear witness under pressure. Acts shows the promise kept when Peter, filled with the Holy Spirit, answers the Sanhedrin (Acts 4:8) and when Stephen's opponents cannot withstand the Spirit by whom he speaks (Acts 6:10)."
+        },
+        {
+          "id": "suffering",
+          "note": "Jesus assumes that his followers will be put on trial. He does not promise that they will be spared, but that they will not be left alone or speechless."
+        }
+      ],
+      "parallels": ["Matthew 10:19-20", "Mark 13:11", "Luke 21:12-15"],
+      "refs": ["Luke 21:14-15", "Acts 4:8", "Acts 6:10", "Exodus 4:12", "1 Peter 3:15"]
+    },
+    {
+      "v": "13-14",
+      "context": "A man in the crowd asks Jesus to order his brother to share the inheritance. Jesus refuses the role of arbiter. The interruption turns the chapter from fear of persecutors to the subtler danger of possessions.",
+      "grammar": "Eipe tō adelphō mou merisasthai met' emou tēn klēronomian, ‘tell my brother to divide the inheritance with me’, uses the aorist middle infinitive merisasthai, ‘to share out’. The man assumes the outcome; he wants Jesus' authority behind his claim, not his judgment. Jesus answers anthrōpe, ‘man’, a vocative that keeps distance (Peter uses it in denial, 22:58, 22:60). Tis me katestēsen kritēn ē meristēn eph' humas, ‘who appointed me judge or divider over you?’, uses meristēs, ‘one who divides’, found only here in the New Testament, a word formed from the man's own verb.",
+      "words": ["G1320", "G0080", "G3307", "G2817", "G0444", "G2525", "G2923", "G3312"],
+      "ot": [
+        {
+          "ref": "Exodus 2:14",
+          "note": "When Moses intervenes in a fight between two Hebrews, the one in the wrong retorts, mi samkha le'ish sar veshofet aleinu, ‘who made you a prince and a judge over us?’ The Septuagint reads tis se katestēsen archonta kai dikastēn eph' hēmōn, and Jesus' question uses the same verb, the same shape, and the same ‘over’. Stephen quotes the Exodus line twice (Acts 7:27, 7:35) as an example of Israel rejecting its deliverer. In Exodus the question is a hostile challenge to Moses; on Jesus' lips it is his own refusal of a role he did not come to fill. The echo invites the reader to see the man's request as a misunderstanding of what kind of deliverer Jesus is."
+        }
+      ],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jesus declines to settle a property dispute, not because justice in inheritance does not matter, but because the request itself exposes the deeper problem he goes on to name: the grasping that divides brothers."
+        }
+      ],
+      "refs": ["Exodus 2:14", "Acts 7:27", "Numbers 27:8-11", "Deuteronomy 21:17", "1 Corinthians 6:5-7"]
+    },
+    {
+      "v": "15",
+      "context": "Jesus turns from the man to everyone listening and names the danger: greed in every form. A person's life does not consist in what he owns, however much of it he has.",
+      "grammar": "Horate kai phulassesthe, ‘watch and guard yourselves’, are two present imperatives, the second a middle voice, ‘keep yourselves’. Apo pasēs pleonexias, ‘from every kind of greed’, uses pasēs to include greed that looks respectable, such as a just claim pursued in the wrong spirit. The reason clause is famously compressed: hoti ouk en tō perisseuein tini hē zōē autou estin ek tōn huparchontōn autō, literally ‘because not in someone's abounding is his life from the things belonging to him’. The sense is that even when a person has more than enough, his life does not come from his possessions. Zōē here is life itself, and the parable that follows will speak instead of the psuchē, the soul or self.",
+      "words": ["G3708", "G5442I", "G3956", "G4124", "G4052", "G2222", "G5225"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Possessions cannot supply life. The verse does not despise property but denies it the power people most want from it, security and meaning, which belong to God alone."
+        },
+        {
+          "id": "idolatry",
+          "note": "Paul calls greed idolatry (Colossians 3:5) because it looks to possessions for what only God gives. Jesus' warning against every form of greed is a warning against the most respectable idol."
+        }
+      ],
+      "refs": ["Colossians 3:5", "1 Timothy 6:6-10", "Hebrews 13:5", "Exodus 20:17", "Deuteronomy 8:3"]
+    },
+    {
+      "v": "16-17",
+      "context": "The parable begins with a gift. A rich man's land yields a bumper crop, and his first response is a private conversation about where to put it. He speaks only to himself.",
+      "grammar": "Anthrōpou tinos plousiou euphorēsen hē chōra, ‘the land of a certain rich man produced abundantly’, makes the land the subject: euphoreō, ‘to bear well’, found only here in the New Testament, credits the harvest to the soil and, behind it, to God, not to the man's labor. Dielogizeto en heautō, ‘he was reasoning within himself’, uses the imperfect of dialogizomai, a verb Luke often uses for inward reasoning that goes wrong (5:21-22) and for the tenants of the vineyard who reason about killing the heir (20:14). Ti poiēsō, ‘what shall I do?’, is a deliberative subjunctive, the question the lawyer asked about eternal life (10:25) and the dishonest manager will ask (16:3). Hoti ouk echō pou sunaxō tous karpous mou, ‘since I have nowhere to gather my crops’, introduces the first ‘my’.",
+      "words": ["G3850", "G0444", "G4145", "G2164", "G5561", "G1260", "G1438", "G4160G", "G4863", "G2590"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The harvest is a gift of the land God made fruitful. The man's problem is not his prosperity but that he receives it without thanks, as though the fruit were simply his."
+        },
+        {
+          "id": "wealth",
+          "note": "Abundance raises a question, what to do with it, and the man answers it alone. The parable locates the danger of wealth in the heart's conversation with itself."
+        }
+      ],
+      "refs": ["Deuteronomy 8:17-18", "Genesis 41:47-49", "Luke 16:3", "Luke 20:13-14", "Acts 14:17"]
+    },
+    {
+      "v": "18-19",
+      "context": "The man settles on his plan: tear down the barns, build bigger ones, store everything, and tell his soul to relax and enjoy itself for many years. The monologue is full of I and my.",
+      "grammar": "Touto poiēsō, ‘this I will do’, answers his own question with a future indicative, and the plan follows in a run of first-person futures: kathelō, ‘I will tear down’, oikodomēsō, ‘I will build’, sunaxō, ‘I will gather’, erō, ‘I will say’. Mou, ‘my’, recurs with barns, grain, goods, and soul. In verse 19 he addresses himself as psuchē, ‘soul’, a vocative of self-address familiar from the Psalms (Psalm 42:5, 103:1), but where the psalmist summons his soul to hope in God, this man summons his to ease. Keimena eis etē polla, ‘laid up for many years’, uses a present participle of keimai. The four imperatives anapauou, phage, pie, euphrainou, ‘rest, eat, drink, celebrate’, stand without connectives. Euphrainō is the verb of the father's feast for the lost son (15:23-24) and of the rich man who feasted every day while Lazarus lay at his gate (16:19).",
+      "words": ["G4160G", "G2507", "G0596", "G3173", "G3618", "G4863", "G4621", "G0018", "G4483", "G5590G", "G2749", "G2094", "G0373", "G5315", "G4095", "G2165"],
+      "ot": [
+        {
+          "ref": "Isaiah 22:13",
+          "note": "When Jerusalem is under threat and the Lord calls for weeping and sackcloth, the people instead feast and say, ‘let us eat and drink, for tomorrow we die’. The Septuagint reads phagōmen kai piōmen, aurion gar apothnēskomen, and Paul quotes it in 1 Corinthians 15:32. The rich fool's phage, pie, euphrainou sounds the same note of self-indulgence at the wrong moment, and the parable turns Isaiah's ‘tomorrow we die’ into ‘this very night’. Ecclesiastes 8:15, which commends eating, drinking, and joy as God's gift in a life under the sun, uses the same three verbs in the Septuagint; the difference is that the Preacher receives joy from God, while the fool plans it for himself."
+        }
+      ],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The fool's plan treats surplus as private security. He builds for himself, speaks to himself, and plans pleasure for himself; nowhere does he think of God or of the hungry, which the church fathers, Basil of Caesarea above all, made the heart of their preaching on this text."
+        }
+      ],
+      "refs": ["Isaiah 22:13", "Ecclesiastes 8:15", "Luke 16:19", "James 4:13-16", "Proverbs 27:1"]
+    },
+    {
+      "v": "20",
+      "context": "God interrupts the monologue. The man is a fool, his life will be demanded back that very night, and everything he prepared will belong to someone else.",
+      "grammar": "Eipen de autō ho theos, ‘but God said to him’, is one of the very few places in Jesus' parables where God himself speaks. Aphrōn, ‘fool’, is the Psalms' word for the one who lives as though there were no God (Psalm 14:1 in the Septuagint). Tautē tē nukti, ‘this very night’, puts the time first for emphasis. Tēn psuchēn sou apaitousin apo sou, ‘they are demanding your soul from you’, uses apaiteō, ‘to demand back’, the verb Jesus uses for asking back what was lent or taken (6:30). The man spoke to his psuchē as if it belonged to him; it was on loan. The Nestle-Aland and SBL texts read apaitousin, while Westcott and Hort, Tregelles, and the Tyndale House edition read aitousin, ‘they ask’; the sense is the same. Ha de hētoimasas, tini estai, ‘and what you prepared, whose will it be?’, uses hetoimazō, which returns in verses 40 and 47 for the readiness that matters.",
+      "words": ["G2316", "G0878", "G3571", "G5590G", "G0523", "G2090", "G5101"],
+      "ot": [
+        {
+          "ref": "Psalm 39:6",
+          "note": "The psalmist sees human life as a breath: each person goes about like a shadow, bustles in vain, heaps up wealth, and does not know who will gather it. The Septuagint (Psalm 38:7) reads thēsaurizei kai ou ginōskei tini sunaxei auta, ‘he stores up treasure and does not know for whom he will gather it’. Two of the parable's key verbs, sunagō (verses 17-18) and thēsaurizō (verse 21), and its closing question, ‘whose will it be?’, all stand in this one line. The Wisdom of Solomon makes the related point that a human being returns to the earth when the debt of his soul is demanded back (Wisdom 15:8)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Death is not an accident that ends the man's plans but God's summons to account. The verse makes the question of a life's meaning a question God asks, and asks without warning."
+        },
+        {
+          "id": "humanity",
+          "note": "A human life is held on loan from God. The man spoke to his soul as if he owned it, but God demands it back, which is the biblical picture of human creatureliness: life is received, not possessed."
+        }
+      ],
+      "text": "The BSB's ‘your life will be required of you’ smooths a plural active verb, literally ‘they are demanding your soul’, which the chapter note explains. The KJV's ‘thy soul shall be required of thee’ renders it as a passive in the same way.",
+      "refs": ["Psalm 39:6", "Psalm 49:10-17", "Ecclesiastes 2:18-19", "Job 27:8", "Luke 6:30"]
+    },
+    {
+      "v": "21",
+      "context": "Jesus draws the lesson. The fate of the fool awaits everyone who stores up treasure for himself and is not rich toward God. The verse hands the listener the choice the parable dramatized.",
+      "grammar": "Houtōs, ‘so’, applies the parable. Ho thēsaurizōn heautō, ‘the one storing up for himself’, and mē eis theon ploutōn, ‘not being rich toward God’, are present participles describing a settled way of life. Heautō, ‘for himself’, a dative of advantage, is the heart of the charge. Eis theon, ‘toward God’ or ‘in relation to God’, is not explained here, but verses 33 and 34 supply the meaning: giving to the poor and so having treasure in heaven.",
+      "words": ["G3779", "G2343", "G1438", "G2316", "G4147"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Being rich toward God means using wealth in God's direction, above all in generosity to the poor (verse 33). The verse does not condemn saving as such; it condemns a life whose treasure has only one beneficiary."
+        },
+        {
+          "id": "justice-poor",
+          "note": "The opposite of storing up for oneself is giving to those in need. Luke's Gospel repeatedly makes care for the poor the measure of a rich person's heart (16:19-31, 18:22, 19:8)."
+        }
+      ],
+      "refs": ["1 Timothy 6:17-19", "James 5:1-3", "2 Corinthians 8:9", "Matthew 6:19-20", "Revelation 3:17-18"]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus turns back to his disciples with a ‘therefore’. The rich fool was anxious to secure too much; disciples may be anxious about securing enough. Both are answered by trust in the Father.",
+      "grammar": "Dia touto legō humin, ‘for this reason I tell you’, links the teaching on anxiety to the parable. Mē merimnate, ‘do not be anxious’, is a present imperative forbidding a continuing habit. Tē psuchē ti phagēte, ‘about your life, what you will eat’, uses a dative of respect, and mēde tō sōmati ti endusēsthe, ‘nor about your body, what you will wear’, pairs the two basic needs. Psuchē is the same word the fool addressed as his ‘soul’ (verse 19); here it means life. Verse 23 gives the reason with gar: hē psuchē pleion estin tēs trophēs, ‘life is more than food’. Matthew 6:25 adds ‘or what you will drink’ and phrases verse 23 as a question.",
+      "words": ["G3101", "G3309", "G5590H", "G5315", "G4983", "G1746", "G4119", "G5160", "G1742"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The God who gave life and body will not fail to supply food and clothing. The argument runs from the greater gift already given to the lesser gifts still needed."
+        }
+      ],
+      "parallels": ["Matthew 6:25"],
+      "refs": ["Matthew 6:25", "Philippians 4:6-7", "1 Peter 5:7", "Luke 10:41", "Luke 8:14"]
+    },
+    {
+      "v": "24",
+      "context": "The first witness against anxiety is the raven. It neither sows nor reaps, it has no storeroom or barn, and still God feeds it. Disciples are worth far more than birds.",
+      "grammar": "Katanoēsate, ‘consider carefully’, is an aorist imperative of katanoeō, a verb of close observation (6:41, 20:23), where Matthew 6:26 has emblepsate, ‘look at’. Tous korakas, ‘the ravens’, replaces Matthew's ‘birds of the air’. The negatives ou speirousin oude therizousin, ‘they do not sow or reap’, and hois ouk estin tameion oude apothēkē, ‘they have no storeroom or barn’, echo the parable: apothēkē is the fool's barn (verse 18) and tameion the inner room of verse 3. Ho theos trephei autous, ‘God feeds them’, has theos where Matthew has ‘your heavenly Father’. Posō mallon, ‘how much more’, draws the lesser-to-greater conclusion.",
+      "words": ["G2657", "G2876", "G4687", "G2325", "G5009", "G0596", "G2316", "G5142", "G4214", "G1308", "G4071"],
+      "ot": [
+        {
+          "ref": "Psalm 147:9",
+          "note": "The psalmist praises God who gives the beasts their food and the young ravens that cry. The Septuagint (Psalm 146:9) reads that God gives the cattle their trophē, ‘food’, and the young ravens that call on him, and trophē is the word of Luke 12:23. Job 38:41 makes the same point in God's speech from the whirlwind. Ravens were unclean under the Law (Leviticus 11:15), yet God feeds them; the Old Testament's picture of God's care for even the least attractive of his creatures becomes Jesus' argument against anxiety."
+        }
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God feeds creatures that cannot plan or store. The verse does not forbid sowing and reaping for humans, who are commanded to work, but denies that security comes from barns rather than from God."
+        }
+      ],
+      "parallels": ["Matthew 6:26"],
+      "refs": ["Psalm 147:9", "Job 38:41", "Psalm 104:27-28", "Leviticus 11:15", "1 Kings 17:4-6"]
+    },
+    {
+      "v": "25-26",
+      "context": "Worry cannot add even a small span to a life. If anxiety cannot do the least thing, it is pointless to be anxious about the rest.",
+      "grammar": "Tis de ex humōn merimnōn dunatai, ‘which of you by being anxious is able’, uses a present participle of means. Epi tēn hēlikian autou prostheinai pēchun, ‘to add a cubit to his hēlikia’, is discussed in the chapter note: hēlikia can mean stature or span of life, and a cubit applied to time is a figure like the psalmist's ‘you have made my days a few handbreadths’ (Psalm 39:5). Prostheinai, ‘to add’, anticipates verse 31, where God adds (prostethēsetai) what anxiety cannot. Verse 26 is found only in Luke: ei oun oude elachiston dunasthe, ‘if then you cannot do even the least thing’, uses the superlative elachiston, and ti peri tōn loipōn merimnate, ‘why are you anxious about the rest?’, closes the argument.",
+      "words": ["G3309", "G1410", "G2244", "G4369", "G4083", "G1646", "G3062"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The length of a life is in God's hands, not ours. Anxiety grasps at control it does not have; trust leaves to God what only God can do."
+        }
+      ],
+      "parallels": ["Matthew 6:27"],
+      "refs": ["Psalm 39:4-5", "Psalm 90:12", "James 4:14", "Job 14:5"]
+    },
+    {
+      "v": "27-28",
+      "context": "The second witness is the lilies. They do no work, yet Solomon in all his splendor was not dressed like one of them. If God clothes grass that is burned tomorrow, he will clothe his people.",
+      "grammar": "Katanoēsate ta krina pōs auxanei, ‘consider the lilies, how they grow’, uses a neuter plural subject with singular verbs (auxanei, kopia, nēthei), normal Greek for neuter plurals. Oude Solomōn en pasē tē doxē autou periebaleto hōs hen toutōn, ‘not even Solomon in all his glory clothed himself like one of these’, uses the aorist middle of periballō. Verse 28 is a real condition, ei de ... ho theos houtōs amphiezei, ‘if God so clothes’, with the rare verb amphiezō where Matthew 6:30 has amphiennumi. Ton chorton onta sēmeron kai aurion eis klibanon ballomenon, ‘the grass that is today and tomorrow is thrown into an oven’, uses present participles for the short life of the grass. Oligopistoi, ‘you of little faith’, is Luke's only use of a word Matthew uses four times (6:30, 8:26, 14:31, 16:8).",
+      "words": ["G2657", "G2918", "G0837", "G2872", "G3514", "G4672G", "G1391", "G4016", "G5528", "G4594", "G0839", "G2823", "G6005", "G3640"],
+      "text": "A few witnesses, notably Codex Bezae with some Syriac and Latin manuscripts, read that the lilies ‘neither spin nor weave’ instead of ‘do not labor or spin’. The chapter note records the variant, which some scholars have argued is original; most editions keep the usual reading.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God lavishes beauty even on what lasts a day. His care is not grudging maintenance but generous clothing, and the verse makes that generosity the ground of disciples' trust."
+        },
+        {
+          "id": "faith",
+          "note": "Anxiety about clothing is called little faith: not no faith, but faith that has not yet reckoned with the Father's care. Jesus' rebuke is an invitation to trust more, not a condemnation."
+        }
+      ],
+      "parallels": ["Matthew 6:28-30"],
+      "refs": ["Isaiah 40:6-8", "Psalm 103:15-16", "1 Kings 10:4-7", "James 1:10-11", "1 Peter 1:24"]
+    },
+    {
+      "v": "29-30",
+      "context": "Disciples are not to set their hearts on food and drink or live suspended in worry. Seeking these things is what the nations do; the disciples' Father already knows their needs.",
+      "grammar": "Kai humeis mē zēteite, ‘and you, do not seek’, puts the emphatic humeis first and uses zēteō, ‘seek’, which verse 31 will redirect to the kingdom. Mē meteōrizesthe, ‘do not be unsettled’, a present middle imperative, is found only here in the New Testament. The verb means to be raised up high, and so either to be lifted up in pride (the Septuagint of Psalm 131:1 uses it of eyes not raised too high) or to be suspended and tossed, as a ship at sea or a mind in suspense; here the second sense fits. Verse 30 gives the reason: tauta gar panta ta ethnē tou kosmou epizētousin, ‘for all the nations of the world strive after these things’. Humōn de ho patēr oiden, ‘but your Father knows’, uses a perfect of oida with present meaning.",
+      "words": ["G2212", "G5315", "G4095", "G3349", "G1484", "G2889", "G1934", "G3962", "G6063", "G5535"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The Father knows his children's needs before they ask. Providence here is not a general order of nature but the attentive knowledge of a Father, which frees disciples from living as though everything depended on their grasping."
+        },
+        {
+          "id": "prayer",
+          "note": "Knowing that the Father already knows does not make prayer for bread pointless (11:3). It changes its tone, from anxious pleading to trusting request."
+        }
+      ],
+      "parallels": ["Matthew 6:31-32"],
+      "refs": ["Matthew 6:8", "Luke 11:3", "Psalm 131:1-2", "Philippians 4:19"]
+    },
+    {
+      "v": "31",
+      "context": "Instead of seeking food and clothing, disciples are to seek God's kingdom, and the rest will be added. The verse is the positive center of the passage on anxiety.",
+      "grammar": "Plēn, ‘rather’, turns from what not to do. Zēteite tēn basileian autou, ‘seek his kingdom’, is a present imperative, a continuing pursuit. Luke lacks Matthew 6:33's ‘first’ and ‘and his righteousness’; in Luke the kingdom is not first among many pursuits but the pursuit that replaces anxious seeking. Kai tauta prostethēsetai humin, ‘and these things will be added to you’, is a divine passive of prostithēmi, the verb of verse 25: anxiety cannot add a cubit, but God adds what is needed.",
+      "words": ["G4133", "G2212", "G0932", "G4369"],
+      "text": "The earliest manuscripts read ‘His kingdom’, referring to the Father of verse 30. Later manuscripts, followed by the King James Version, read ‘the kingdom of God’, matching Matthew 6:33.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is the object of the disciples' seeking, not an add-on to ordinary life. Those who seek God's reign are given what they need along the way, as Solomon, who asked for wisdom rather than riches, was given riches as well (1 Kings 3:11-13)."
+        }
+      ],
+      "parallels": ["Matthew 6:33"],
+      "refs": ["Matthew 6:33", "1 Kings 3:11-13", "Psalm 37:4", "Romans 14:17"]
+    },
+    {
+      "v": "32",
+      "context": "The command not to fear is grounded in a gift. The disciples are a small and vulnerable flock, but the Father has chosen to give them the kingdom. What they seek (verse 31) is what he delights to give.",
+      "grammar": "Mē phobou, ‘do not fear’, is singular, addressing the flock as one body. To mikron poimnion, ‘little flock’, is a neuter vocative using poimnion, the word for the church as God's flock in Acts 20:28-29 and 1 Peter 5:2-3. Hoti eudokēsen ho patēr humōn dounai humin tēn basileian, ‘because your Father was pleased to give you the kingdom’, uses an aorist of eudokeō, the verb of the Father's pleasure in the Son at his baptism (3:22). The aorist presents the Father's decision as already made.",
+      "words": ["G5399", "G3398", "G4168", "G2106", "G3962", "G1325", "G0932"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is the Father's gift, not the disciples' achievement. Jesus later confers it on the apostles as the Father conferred it on him (22:29), fulfilling the vision in which the kingdom is given to the holy people of the Most High (Daniel 7:27)."
+        },
+        {
+          "id": "church",
+          "note": "The disciples are a little flock, few and exposed, yet the heirs of God's kingdom. The image of the flock connects them with Israel under God the shepherd (Isaiah 40:11, Ezekiel 34) and anticipates the church of Acts."
+        },
+        {
+          "id": "election",
+          "note": "The Father's good pleasure lies behind the gift of the kingdom. The verse grounds the disciples' security in God's decision rather than their strength; Christian traditions differ on how that decision relates to human response, but all hear it as comfort to the fearful."
+        }
+      ],
+      "refs": ["Daniel 7:27", "Luke 22:29", "Isaiah 40:11", "Acts 20:28", "Ezekiel 34:11-16"]
+    },
+    {
+      "v": "33-34",
+      "context": "The practical consequence follows. Sell possessions, give alms, and so gain purses that do not wear out and treasure in heaven no thief can reach. Where the treasure is, the heart will be.",
+      "grammar": "Pōlēsate ta huparchonta humōn kai dote eleēmosunēn, ‘sell your possessions and give alms’, uses aorist imperatives, decisive actions rather than a slow habit. Poiēsate heautois ballantia mē palaioumena, ‘make for yourselves purses that do not grow old’, turns the purse the messengers were told not to carry (10:4) into an image of heavenly security. Thēsauron anekleipton, ‘an unfailing treasure’, uses an adjective found only here in the New Testament. Hopou kleptēs ouk engizei oude sēs diaphtheirei, ‘where no thief comes near and no moth destroys’, names the two threats to ancient wealth, which was often kept as coins or fine cloth. Verse 34 uses the plural humōn, ‘your’, where Matthew 6:21 has the singular sou, so Luke addresses the community of disciples together.",
+      "words": ["G4453", "G5225", "G1654", "G0905", "G3822", "G2344", "G0413", "G3772", "G2812", "G4597", "G1311", "G2588"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Possessions become heavenly treasure when they are given away. The verse turns the rich fool's barns inside out and explains what it means to be rich toward God (verse 21)."
+        },
+        {
+          "id": "justice-poor",
+          "note": "Almsgiving is the concrete form of trust in God. Luke's church shows the command lived out when believers sell property and share with anyone in need (Acts 2:45, 4:34-35), and the chapter note gives the range of ways Christians have obeyed it."
+        }
+      ],
+      "parallels": ["Matthew 6:19-21"],
+      "refs": ["Luke 18:22", "Acts 2:44-45", "1 Timothy 6:18-19", "Luke 10:4", "Matthew 19:21"]
+    },
+    {
+      "v": "35-36",
+      "context": "The teaching turns from possessions to readiness. Disciples must be dressed for work with lamps burning, like servants waiting through the night for their master to return from a wedding, ready to open the moment he knocks.",
+      "grammar": "Estōsan humōn hai osphues periezōsmenai, ‘let your waists be girded’, combines a third-person imperative of eimi with a perfect passive participle: be in a state of readiness and stay in it. Kai hoi luchnoi kaiomenoi, ‘and the lamps burning’, uses a present participle for continued burning. Verse 36 compares them to anthrōpois prosdechomenois ton kurion heautōn, ‘people waiting for their master’, using prosdechomai, Luke's verb for those who waited for God's redemption: Simeon (2:25), the people Anna spoke to (2:38), and Joseph of Arimathea (23:51). Pote analusē ek tōn gamōn, ‘whenever he returns from the wedding’, uses analuō, found elsewhere in the New Testament only in Philippians 1:23, where Paul longs to depart. Elthontos kai krousantos, ‘when he comes and knocks’, is a genitive absolute; here it is the master who knocks (compare 11:9-10, Revelation 3:20).",
+      "words": ["G1510", "G3751", "G4024", "G3088", "G2545", "G3664", "G4327", "G2962H", "G0360", "G1062", "G2925", "G0455"],
+      "ot": [
+        {
+          "ref": "Exodus 12:11",
+          "note": "Israel is told to eat the Passover with belts fastened, sandals on, and staff in hand, ready to leave in haste. The Septuagint reads hai osphues humōn periezōsmenai, ‘your waists girded’, the very words of Luke 12:35. The echo casts the disciples as a people living on the night of deliverance, dressed for departure. Jewish expectation linked Passover night with future redemption, and the parable carries that readiness forward to the master's return."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "Waiting for the Lord's return is active: dressed for work, lamps trimmed, ears open for the knock. Luke's verb for waiting links the church's hope to Israel's faithful who waited for the consolation of Israel."
+        }
+      ],
+      "parallels": ["Matthew 25:1-13", "Mark 13:33-37"],
+      "refs": ["Exodus 12:11", "1 Peter 1:13", "Luke 2:25", "Revelation 3:20", "Matthew 25:1-13"]
+    },
+    {
+      "v": "37-38",
+      "context": "The servants whom the master finds awake are blessed, and the master does the unthinkable: he dresses to serve, seats them at table, and waits on them himself. Even if he comes in the dead middle of the night, those found ready are blessed.",
+      "grammar": "Makarioi hoi douloi ekeinoi, ‘blessed are those servants’, is the first of three beatitudes in this section (verses 37, 38, 43). Grēgorountas, ‘staying awake’, is a present participle, the verb used for watchfulness in the New Testament (Mark 13:35, 1 Thessalonians 5:6). Amēn legō humin, ‘truly I tell you’, introduces a solemn assertion. Three futures follow: perizōsetai, ‘he will gird himself’, the same verb as verse 35, so the master takes the servants' posture; anaklinei autous, ‘he will make them recline’; and parelthōn diakonēsei autois, ‘coming alongside, he will serve them’. Verse 38 uses kan ... kan, ‘even if ... even if’, for the second and third watches.",
+      "words": ["G3107", "G1401", "G2962H", "G2147", "G1127", "G0281", "G4024", "G0347", "G3928", "G1247", "G1208", "G5154", "G5438H"],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The returning master serves his servants. Luke's picture of the second coming is not only of judgment but of the Lord's astonishing humility, which he showed at the Last Supper (22:27) and will show at the banquet of his kingdom (22:30)."
+        },
+        {
+          "id": "hope",
+          "note": "The reward of watchful servants is table fellowship with their Lord, served by him. Christian hope looks forward not merely to rest but to a feast in which the host is Christ himself."
+        }
+      ],
+      "refs": ["Luke 22:27", "John 13:4-5", "Luke 17:7-10", "Revelation 19:9", "Mark 13:35"]
+    },
+    {
+      "v": "39-40",
+      "context": "A second picture makes the point about timing. A householder who knew when the thief was coming would not let his house be broken into. Since no one knows the hour of the Son of Man's coming, disciples must be ready at all times.",
+      "grammar": "Touto de ginōskete, ‘know this’, can be read as an imperative or an indicative, ‘you know this’; the forms are identical. Ei ēdei ho oikodespotēs, ‘if the householder had known’, uses the pluperfect of oida in a contrary-to-fact condition, completed by ouk an aphēken, ‘he would not have allowed’. Dioruchthēnai, ‘to be dug through’, uses the verb of breaking through a mud-brick wall (compare Matthew 6:19-20). Verse 40 applies it: kai humeis ginesthe hetoimoi, ‘you also be ready’, a present imperative of continuing readiness. Hē hōra ou dokeite, ‘at an hour you do not think’, and erchetai, ‘comes’, a present tense that makes the coming certain.",
+      "words": ["G1097", "G1492I", "G3617", "G4169", "G5610", "G2812", "G0863G", "G1358", "G2092", "G1380", "G5207", "G2064"],
+      "text": "Later manuscripts, followed by the King James Version, add ‘he would have watched, and’ before ‘would not have allowed’, borrowed from Matthew 24:43. The chapter note records the witnesses.",
+      "theology": [
+        {
+          "id": "return",
+          "note": "The Son of Man's coming is certain but its hour unknown. The early church took up this image of the thief in the night to describe the Lord's return (1 Thessalonians 5:2, 2 Peter 3:10, Revelation 3:3, 16:15), so the saying stands at the root of the New Testament's teaching on readiness."
+        }
+      ],
+      "parallels": ["Matthew 24:43-44"],
+      "refs": ["1 Thessalonians 5:2-6", "2 Peter 3:10", "Revelation 16:15", "Revelation 3:3", "Luke 21:34-36"]
+    },
+    {
+      "v": "41-42",
+      "context": "Peter asks whether the parable is meant for the disciples or for everyone. Jesus answers with another question and a new parable aimed at those put in charge of others: the faithful and wise manager.",
+      "grammar": "Pros hēmas tēn parabolēn tautēn legeis ē kai pros pantas, ‘are you speaking this parable to us or also to all?’, is Peter's question. Jesus does not answer it directly but asks tis ara estin ho pistos oikonomos ho phronimos, ‘who then is the faithful manager, the wise one?’, which implies that the parable applies to anyone in charge, and especially to the leaders Peter represents. Hon katastēsei ho kurios, ‘whom the master will set’, is a future: the appointment looks to the time of waiting. Epi tēs therapeias autou, ‘over his household servants’, uses therapeia as a collective noun. Didonai en kairō to sitometrion, ‘to give the food ration at the right time’, uses sitometrion, a word found only here in the New Testament. Luke's oikonomos, ‘manager’, replaces Matthew 24:45's doulos, ‘slave’, though verse 43 returns to doulos.",
+      "words": ["G4074G", "G3850", "G4103", "G3623", "G5429", "G2525", "G2322", "G2540", "G4620"],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Those entrusted with others are servants set over servants, charged to feed them faithfully while the master is away. The parable defines church leadership as stewardship on behalf of an absent Lord, not ownership."
+        }
+      ],
+      "parallels": ["Matthew 24:45"],
+      "refs": ["1 Corinthians 4:1-2", "Titus 1:7", "1 Peter 4:10", "1 Peter 5:2-4", "John 21:15-17"]
+    },
+    {
+      "v": "43-44",
+      "context": "The faithful manager whom the master finds at work when he returns is blessed and promoted: he will be set over all the master's possessions. Faithfulness in a small charge leads to a larger one.",
+      "grammar": "Makarios ho doulos ekeinos, ‘blessed is that servant’, is the third beatitude. Hon elthōn ho kurios autou heurēsei poiounta houtōs, ‘whom his master on coming will find doing so’, uses a present participle: the reward goes to one caught in the act of faithful service. Alēthōs legō humin, ‘truly I tell you’, is Luke's Greek variant of amēn (compare 9:27, 21:3). Epi pasin tois huparchousin autou katastēsei auton, ‘he will set him over all his possessions’, repeats katastēsei from verse 42 with a far larger sphere.",
+      "words": ["G3107", "G1401", "G2147", "G4160G", "G3779", "G0230", "G5225", "G2525"],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The master's return brings reward as well as reckoning. The reward for faithful service is greater responsibility, as in the parable of the minas (19:17), which suggests that the age to come is a life of service, not idleness."
+        }
+      ],
+      "parallels": ["Matthew 24:46-47"],
+      "refs": ["Luke 19:17", "Luke 16:10", "Matthew 25:21", "Revelation 2:26"]
+    },
+    {
+      "v": "45-46",
+      "context": "The opposite case. A manager who tells himself the master is delayed begins to beat the other servants and to eat, drink, and get drunk. The master comes when he least expects and punishes him severely, giving him a place with the unfaithful.",
+      "grammar": "Ean de eipē ho doulos ekeinos en tē kardia autou, ‘but if that servant says in his heart’, puts the danger in an inner monologue, like the rich fool's (verse 17). Chronizei ho kurios mou erchesthai, ‘my master delays in coming’, uses chronizō, ‘to take time, delay’. Arxētai tuptein, ‘he begins to beat’, and esthiein te kai pinein kai methuskesthai, ‘to eat and drink and get drunk’, describe abuse of power and self-indulgence. In verse 46 hēxei, ‘will come’, is a future of hēkō, ‘to arrive’. Dichotomēsei, literally ‘he will cut in two’, may describe a literal execution or be a vivid way of saying ‘cut off’ or ‘punish with utmost severity’; the fact that the man is then given a meros, ‘portion’, has led many to prefer the second reading. Meta tōn apistōn, ‘with the unfaithful’, plays on pistos, ‘faithful’, in verse 42; Matthew 24:51 has ‘with the hypocrites’.",
+      "words": ["G1401", "G2588", "G5549", "G2962H", "G5180", "G3816", "G3814", "G3182", "G2240", "G4328", "G1371", "G3313", "G0571"],
+      "ot": [
+        {
+          "ref": "Habakkuk 2:3",
+          "note": "God tells the prophet that the vision awaits its appointed time: if it seems slow, wait for it, for it will surely come and will not delay. The Hebrew im-yitmahmah chakkeh-lo ki-vo yavo lo ye'acher is rendered in the Septuagint erchomenos hēxei kai ou mē chronisē, ‘coming, he will come and will not delay’, which reads the vision as a person. Hebrews 10:37 quotes that form of the verse of Christ's return. The servant's chronizei and the master's hēxei use the same two verbs, and whether or not Jesus alludes to the verse, the parable voices its warning: the one who seems to delay will arrive."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The delay of the Lord's coming is a test, and the servant fails it by assuming he has time. The New Testament answers the problem of delay the same way: the Lord is not slow, but patient, and his day will come unexpectedly (2 Peter 3:8-10)."
+        },
+        {
+          "id": "leadership",
+          "note": "The failed manager abuses those in his care and indulges himself. The warning is aimed at anyone with authority in the household of God, whose treatment of others is judged by the returning Lord."
+        }
+      ],
+      "parallels": ["Matthew 24:48-51"],
+      "refs": ["Habakkuk 2:3", "Hebrews 10:37", "2 Peter 3:3-10", "Luke 21:34", "Ezekiel 34:2-4"]
+    },
+    {
+      "v": "47-48",
+      "context": "Judgment is proportioned to knowledge. The servant who knew the master's will and ignored it receives many blows; the one who did not know receives few. The principle is general: much is required of those given much.",
+      "grammar": "Ekeinos de ho doulos ho gnous to thelēma tou kuriou autou, ‘that servant who knew his master's will’, uses an aorist participle for knowledge he had. Mē hetoimasas ē poiēsas, ‘not having prepared or done’, takes up hetoimazō, the verb of the rich fool's preparations (verse 20) and of the readiness required in verse 40. Darēsetai pollas, ‘he will be beaten many’, leaves out the noun plēgas, ‘blows’, which is supplied from context by the feminine adjectives pollas and oligas. The ignorant servant did axia plēgōn, ‘things worthy of blows’, and is still punished, but lightly. The proverb that closes verse 48 uses divine passives, edothē, ‘was given’, and zētēthēsetai, ‘will be required’, and then an impersonal plural, aitēsousin, ‘they will ask’, a reverent way of speaking of God.",
+      "words": ["G1401", "G1097", "G2307", "G2090", "G4160G", "G1194", "G4183", "G0514", "G4127", "G3641", "G1325", "G2212", "G3908", "G4055", "G0154"],
+      "history": "Israel's law distinguished sins done unintentionally from sins done defiantly. Numbers 15:27-31 provides atonement for one who sins unwittingly but says that one who sins with a high hand despises the LORD's word. Deuteronomy 25:2-3 limits a judicial beating to forty blows, and Paul reports receiving forty less one five times (2 Corinthians 11:24). The parable's numbers reflect that world of graded penalties.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God judges with perfect fairness, taking account of what each person knew. Ignorance does not make wrong right, but it lessens guilt; knowledge increases responsibility, a principle Paul applies to Jew and Gentile alike (Romans 2:12-16)."
+        },
+        {
+          "id": "leadership",
+          "note": "The closing proverb falls hardest on those given much, including those entrusted with teaching and leading. James applies the same principle to teachers, who will be judged more strictly (James 3:1)."
+        }
+      ],
+      "refs": ["Numbers 15:27-31", "Deuteronomy 25:2-3", "James 3:1", "Romans 2:12-16", "Amos 3:2"]
+    },
+    {
+      "v": "49",
+      "context": "Jesus speaks of his own mission. He came to cast fire on the earth, and he longs for it to be already burning. The saying opens a short, intensely personal section (verses 49-53) on what his coming costs him and others.",
+      "grammar": "Pur ēlthon balein epi tēn gēn, ‘fire I came to cast upon the earth’, puts pur, ‘fire’, first for emphasis, and ēlthon with an infinitive is one of the ‘I came to’ sayings that state the purpose of Jesus' mission (5:32, 19:10). The second clause, kai ti thelō ei ēdē anēphthē, is difficult Greek. The BSB takes ti as an exclamation, ‘how’, and ei as expressing a wish, ‘how I wish it were already kindled’, a sense that may reflect a Semitic idiom. Other renderings are ‘what do I desire? that it were already kindled’, or ‘what more do I want, if it is already kindled?’ Anēphthē is an aorist passive of anaptō, ‘to kindle’.",
+      "words": ["G4442", "G2064", "G0906G", "G1093G", "G2309", "G2235", "G0381"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Many interpreters connect the fire with John's promise that the coming one would baptize with the Holy Spirit and fire (3:16), fulfilled when tongues as of fire rest on the disciples at Pentecost (Acts 2:3). On this reading Jesus longs for the Spirit's outpouring, which his own baptism of death must first make possible (verse 50)."
+        },
+        {
+          "id": "judgment",
+          "note": "Fire in Luke also means judgment (3:9, 3:17, 17:29), and the division of verses 51-53 fits that sense. Interpreters have also read the fire as the purifying word (Jeremiah 23:29); the meanings are not exclusive, since the Spirit who purifies also judges."
+        }
+      ],
+      "refs": ["Luke 3:16-17", "Acts 2:3", "Jeremiah 23:29", "Malachi 3:2-3", "Luke 17:29"]
+    },
+    {
+      "v": "50",
+      "context": "Before the fire can be kindled, Jesus must undergo a baptism, his death, and he confesses his distress until it is completed. It is one of the few places before Gethsemane where Luke lets us hear Jesus' own inner anguish.",
+      "grammar": "Baptisma de echō baptisthēnai, ‘I have a baptism to be baptized with’, uses a cognate construction, noun and verb from the same root, and echō with an infinitive for something that awaits him. The image of baptism as being overwhelmed recalls the psalmist's floods (Psalm 69:1-2); Mark 10:38-39 pairs it with the cup. Kai pōs sunechomai, ‘and how I am pressed’, uses an exclamatory pōs and the present passive of sunechō, a verb Luke uses for being gripped by fever or fear (4:38, 8:37) and Paul for being hard pressed between two desires (Philippians 1:23) or constrained by Christ's love (2 Corinthians 5:14). Heōs hotou telesthē, ‘until it is accomplished’, uses an aorist passive subjunctive of teleō, the verb of 18:31, where everything written about the Son of Man will be accomplished, and of 22:37, where Jesus says the Scripture must be fulfilled in him.",
+      "words": ["G0908", "G2192", "G0907", "G4459", "G4912", "G2193", "G5055"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus speaks of his death as a baptism he must undergo, an overwhelming he goes toward willingly and with anguish. The verse shows that the cross was not an accident that befell him but the goal of his mission, which must be accomplished before the fire of the Spirit can be cast."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Son feels real distress as his death approaches. Luke does not present a Jesus untouched by fear, but one whose full humanity feels the weight of what he has come to do, as in Gethsemane (22:44)."
+        }
+      ],
+      "parallels": ["Mark 10:38-39"],
+      "refs": ["Mark 10:38-39", "Psalm 69:1-2", "Luke 18:31", "Luke 22:37", "John 19:30"]
+    },
+    {
+      "v": "51-53",
+      "context": "Jesus denies that he came to bring peace to the earth. His coming brings division, running through the closest bonds of a household. The prophet's picture of a society turned against itself describes what allegiance to Jesus will do in some homes.",
+      "grammar": "Dokeite hoti eirēnēn paregenomēn dounai en tē gē, ‘do you think that I came to give peace on earth?’, sets up a sharp denial: ouchi, legō humin, all' ē diamerismon, ‘no, I tell you, but rather division’. Diamerismos, ‘division’, is found only here in the New Testament, where Matthew 10:34 has ‘sword’. Esontai gar apo tou nun, ‘for from now on there will be’, uses Luke's phrase for the beginning of a new era (1:48, 5:10, 22:69). Pente en heni oikō diamemerismenoi, ‘five in one house divided’, is a periphrastic future perfect, a division that will take hold and remain. Verse 53 sets out the pairs in both directions, father against son and son against father, mother against daughter and daughter against mother, mother-in-law against daughter-in-law and back. The five are father, mother, son, daughter, and the son's wife, the mother serving also as mother-in-law.",
+      "words": ["G1380", "G1515", "G3854", "G1325", "G1093G", "G3780", "G1267", "G3568", "G4002", "G3624H", "G1266", "G3962", "G5207", "G3384", "G2364", "G3994", "G3565"],
+      "ot": [
+        {
+          "ref": "Micah 7:6",
+          "note": "Micah laments a society so corrupt that no one can be trusted: the son dishonors the father, the daughter rises against her mother, the daughter-in-law against her mother-in-law, and a man's enemies are the men of his own house. The Septuagint follows the Hebrew closely. Micah's lines run one way, the younger against the elder; Luke's run both ways, making the division mutual. In Micah it is a sign of social collapse, and the next verse turns to waiting for God (7:7); Jesus uses the words to describe what will happen when households divide over him. The Mishnah also cites Micah 7:6 in its picture of the time before the Messiah (m. Sotah 9:15)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Loyalty to Jesus can cut across the strongest human loyalties. The verse does not commend family conflict; it describes the cost when faith is opposed, and it relativizes the family by placing Christ above it (14:26), while Luke also shows households coming to faith together (Acts 16:31-34)."
+        },
+        {
+          "id": "suffering",
+          "note": "Division within the family is one of the sufferings disciples may bear. Simeon foretold that the child would be a sign opposed and that a sword would pierce his mother's own soul (2:34-35)."
+        }
+      ],
+      "parallels": ["Matthew 10:34-36"],
+      "refs": ["Micah 7:6", "Luke 2:34-35", "Luke 14:26", "Luke 21:16", "Luke 1:17"]
+    },
+    {
+      "v": "54-56",
+      "context": "Jesus turns to the crowds. They can forecast rain from a western cloud and heat from a southern wind, yet they cannot read the meaning of the present moment, the time of God's visitation in Jesus.",
+      "grammar": "Elegen de kai tois ochlois, ‘and he was also saying to the crowds’, marks the change of audience. Hotan idēte nephelēn anatellousan epi dusmōn, ‘whenever you see a cloud rising in the west’, uses a present participle for the cloud's rise, and ombros, ‘rainstorm’, is found only here in the New Testament. Kausōn, ‘scorching heat’, is the heat of the day in Matthew 20:12 and James 1:11. In verse 56, hupokritai, ‘hypocrites’, ties the crowd's failure to the leaven of verse 1. To prosōpon tēs gēs kai tou ouranou oidate dokimazein, ‘you know how to test the face of earth and sky’, uses dokimazō, ‘to test, assay, discern’, the verb for testing metals. Ton kairon de touton pōs ouk oidate dokimazein, ‘but this time, how do you not know how to test?’, uses kairos, the decisive moment, the word Jesus uses when he weeps that Jerusalem did not recognize the time of its visitation (19:44).",
+      "words": ["G3004G", "G3793", "G1492H", "G3507", "G0393", "G1424", "G3655", "G3558G", "G4154", "G2742", "G5273", "G4383", "G1381", "G2540"],
+      "text": "The parallel in Matthew 16:2-3, about a red sky at evening and morning, is itself uncertain: it is absent from Codex Sinaiticus, Codex Vaticanus, and other early witnesses, and many editors print it in brackets. Luke's weather signs are different ones, rain from the west and heat from the south, suited to Palestine's geography.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's action in history can be discerned by those willing to read it. The crowds' failure is not a lack of intelligence, which they use well on the weather, but an unwillingness to see what Jesus' presence means."
+        },
+        {
+          "id": "judgment",
+          "note": "The present is a kairos, a moment of opportunity that will not last. Failing to recognize it brings the grief Jesus voices over Jerusalem (19:41-44)."
+        }
+      ],
+      "parallels": ["Matthew 16:2-3"],
+      "refs": ["Luke 19:41-44", "1 Kings 18:44", "Romans 13:11-12", "2 Corinthians 6:2", "Luke 21:29-31"]
+    },
+    {
+      "v": "57-59",
+      "context": "The chapter ends with a small parable of crisis. A person on the way to court with an accuser should settle while there is still time, or face judge, officer, and prison, with no release until the last coin is paid. The crowds are in exactly that position before God.",
+      "grammar": "Ti de kai aph' heautōn ou krinete to dikaion, ‘and why do you not judge for yourselves what is right?’, calls for judgment without waiting to be told. Hōs gar hupageis meta tou antidikou sou ep' archonta, ‘for as you go with your accuser to the magistrate’, sets the scene on the road. En tē hodō dos ergasian apēllachthai ap' autou, ‘on the way give effort to be released from him’, uses dos ergasian, often identified as a Latinism (da operam, ‘make an effort’), and apēllachthai, a perfect passive infinitive of apallassō, ‘to be set free, to settle’, the verb Hebrews 2:15 uses for deliverance from the fear of death. Mēpote katasurē se, ‘lest he drag you’, uses a verb found only here. The chain kritēs, praktōr, phulakē, ‘judge, officer, prison’, moves step by step to confinement. Verse 59 closes with ou mē, the emphatic negative, and to eschaton lepton, ‘the last lepton’, the coin of the widow's offering (21:2).",
+      "words": ["G2919", "G1342", "G5217", "G0476", "G0758", "G3598", "G2039", "G0525", "G2694", "G2923", "G4233", "G5438G", "G3016", "G0591"],
+      "history": "Matthew 5:25-26 places a similar saying in the Sermon on the Mount as teaching on reconciliation with a brother, with the quadrans as the last coin; Luke makes it an eschatological warning. Tertullian (On the Soul 58) read the prison of Matthew's saying as the realm of the dead and the last coin as small offenses paid for before the resurrection, a reading later cited in discussions of purgatory. Most commentators, Catholic and Protestant alike, now read the saying as a parable urging reconciliation before judgment rather than a description of the afterlife. The chapter note explains the officer and the practice of imprisonment for debt.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The time to be reconciled is now, on the road, before the case reaches the judge. Applied to God, the parable urges repentance while there is still time, the call Luke sounds again in 13:1-9."
+        },
+        {
+          "id": "intermediate",
+          "note": "The saying has been drawn into debates about the state of the dead, especially purgatory. Roman Catholic tradition has seen in it a support for purification after death; Protestant and many other interpreters read it only as a parable of urgent reconciliation. The verse itself stresses the urgency of settling accounts, and the wider teaching of Scripture must decide the rest."
+        }
+      ],
+      "parallels": ["Matthew 5:25-26"],
+      "refs": ["Matthew 5:25-26", "Luke 13:1-5", "Luke 18:3", "2 Corinthians 5:20", "Hebrews 2:15"]
+    }
+  ]
+}

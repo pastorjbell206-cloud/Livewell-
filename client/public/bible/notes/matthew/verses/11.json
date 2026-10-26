@@ -1,0 +1,374 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The formula that closes each of Matthew's five discourses ends the mission speech (compare 7:28, 13:53, 19:1, 26:1). Matthew does not narrate the twelve going out; instead Jesus himself goes on teaching and preaching, and the scene shifts at once to John in prison.",
+      "grammar": "Kai egeneto hote etelesen, ‘and it came about when he finished’, uses the Septuagint's storytelling formula, and the wording has reminded commentators of Moses finishing his words to Israel (Deuteronomy 31:24, 32:45 in the Greek use a compound of the same verb). Etelesen diatassōn, ‘finished giving instructions’: diatassō means to arrange or give orders, a fitting verb for a commissioning. Metebē ekeithen, ‘he moved on from there’, and the articular infinitives tou didaskein kai kērussein, ‘to teach and to preach’, give the purpose. En tais polesin autōn, ‘in their towns’, has no clear antecedent; like ‘their synagogues’ (4:23, 9:35), it most likely means the towns of Galilee's people.",
+      "words": ["G1096", "G5055", "G1299", "G3101", "G3327", "G1321", "G2784", "G4172"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The sending of the twelve does not end Jesus' own work. He keeps teaching and preaching while they go, a reminder that the church's mission extends his and never replaces it."
+        }
+      ],
+      "refs": ["Matthew 7:28-29", "Matthew 13:53", "Matthew 26:1", "Deuteronomy 31:24"]
+    },
+    {
+      "v": "2-3",
+      "context": "John, who announced a coming one with a winnowing fork and fire (3:11-12), hears in prison of works of healing and mercy and sends to ask whether Jesus is really the one. The question opens the Gospel's long section on how Jesus is received, and it comes from the man who knew him best.",
+      "grammar": "Ta erga tou Christou, ‘the works of the Christ’: Matthew the narrator uses ‘the Christ’ as a title here for the first time since the birth story (1:17-18), so the reader knows the answer to John's question before John asks it. Pempsas dia tōn mathētōn autou, ‘sending through his disciples’, uses dia for the agents who carry the message. Su ei ho erchomenos, ‘are you the coming one?’: su, ‘you’, is emphatic, and the present participle ho erchomenos serves as a title, taking up John's own words, ‘after me will come One more powerful than I’ (3:11). Heteron prosdokōmen can be read as a present indicative, ‘are we waiting for another?’, or as a deliberative subjunctive, ‘should we wait for another?’; the forms are identical in this verb. Heteros, ‘another’, is Matthew's word where Luke has allos (Luke 7:19).",
+      "words": ["G0191", "G1201", "G2041", "G5547", "G3992", "G3101", "G2064", "G2087", "G4328"],
+      "text": "The earliest manuscripts say that John sent ‘through’ (dia) his disciples. Later manuscripts, followed by the King James Version, read ‘two’ (duo), which differs by one letter in Greek and matches Luke 7:19, where John sends two.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "John's question shows that the Messiah Jesus is does not match every expectation, even a prophet's. Matthew records the question openly, and the rest of the scene lets Jesus define his messiahship by his works rather than by the picture John had formed."
+        },
+        {
+          "id": "faith",
+          "note": "The greatest of the prophets brings his uncertainty straight to Jesus. The verse gives the church a model for honest doubt: not silence or departure, but a question addressed to the one it concerns."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 3:1",
+          "note": "‘The coming one’ was not a fixed title, but it gathered several texts. Malachi 3:1 says of the Lord and the messenger of the covenant, hinneh-va, ‘behold, he is coming’; Psalm 118:26 blesses ‘he who comes in the name of the LORD’; and the Septuagint of Habakkuk 2:3 speaks of one who is coming and will not delay (ho erchomenos hēxei), a line Hebrews 10:37 applies to Christ. John's phrase draws on this hope of God's arrival or his agent's."
+        }
+      ],
+      "parallels": ["Luke 7:18-20"],
+      "refs": ["Matthew 3:11-12", "Matthew 14:3-5", "Psalm 118:26", "Hebrews 10:37"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus answers with evidence rather than a title. Every item on the list has already happened in Matthew's story: the blind see (9:27-31), the lame walk (9:2-8), a leper is cleansed (8:1-4), the mute speak (9:32-33), a dead girl is raised (9:18-26), and the poor hear good news (5:3). John's disciples are to report what they hear, the teaching of chapters 5 to 7, and what they see, the deeds of chapters 8 and 9.",
+      "grammar": "Poreuthentes apangeilate, ‘going, report’: an aorist participle with an aorist imperative, a common Greek way of saying ‘go and tell’. Ha akouete kai blepete, ‘what you are hearing and seeing’, uses present tenses: the evidence is still happening. The six clauses of verse 5 each set a subject before a present verb, and the last, ptōchoi euangelizontai, is a passive, ‘the poor are given the good news’. The list climbs toward its end: the raising of the dead might seem the greatest wonder, but the proclamation to the poor comes last, as it does in Isaiah 61:1.",
+      "words": ["G0518", "G0191", "G0991", "G5185", "G0308", "G5560", "G4043", "G3015", "G2511", "G2974", "G3498", "G1453", "G4434", "G2097"],
+      "history": "The Dead Sea fragment 4Q521, the so-called Messianic Apocalypse, gives the closest parallel to this list in ancient Jewish literature. Its second fragment says that heaven and earth will listen to God's anointed, and that the Lord will free captives, give sight to the blind, raise up those bowed down (language from Psalm 146:7-8), heal the wounded, give life to the dead, and bring good news to the poor. Scholars debate whether the anointed one does these works as God's agent or only announces them; John J. Collins (The Scepter and the Star, 1995) argued that the figure is a prophet like Elijah. Either way, the text shows that a Jew of Jesus' time could expect the raising of the dead and good news to the poor as marks of the anointed one's day.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus identifies himself as Messiah by fulfilling the prophets' promises of God's saving visit. By leaving out Isaiah's day of vengeance (Isaiah 35:4, 61:2) he also shows the order of his work: mercy now, with the judgment John preached still to come."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 35:5-6",
+          "note": "Isaiah 35 describes the desert blooming when God comes to save his people (35:4), and then the eyes of the blind opened, the ears of the deaf unstopped, the lame leaping, and the mute singing. The Septuagint uses tuphloi, kōphoi, and chōloi, the words of Matthew 11:5. Isaiah's context is God's own coming; Jesus answers the question about ‘the coming one’ with the signs of that coming."
+        },
+        {
+          "ref": "Isaiah 61:1",
+          "note": "The Hebrew speaks of one anointed by the Spirit of the Lord ‘to bring good news to the poor’ (levasser anavim), which the Septuagint renders euangelisasthai ptōchois, the verb and noun Jesus uses. The chapter's other lines, liberty for captives and release for prisoners, are not echoed, which John in Herod's prison would have noticed."
+        },
+        {
+          "ref": "Isaiah 26:19",
+          "note": "‘Your dead will live’ is one of the Old Testament's clearest hopes of resurrection, and Isaiah 29:18-19 adds the deaf hearing and the blind seeing while the poor rejoice in the Holy One of Israel. Lepers are named in none of these passages, so Jesus' list goes beyond Isaiah as well as fulfilling him."
+        }
+      ],
+      "parallels": ["Luke 7:21-22"],
+      "refs": ["Isaiah 29:18-19", "Matthew 5:3", "Matthew 9:18-33", "Luke 4:18-21"]
+    },
+    {
+      "v": "6",
+      "context": "A beatitude ends the reply. It is addressed to anyone, John included, whose picture of the Messiah does not fit the Messiah who came, and it gently warns without accusing.",
+      "grammar": "Makarios estin hos ean mē skandalisthē en emoi, ‘blessed is whoever is not caused to stumble in me’. Hos ean with the aorist subjunctive makes a general statement that covers everyone. Skandalizō in the passive means to be tripped up, to take offense so as to fall away; a skandalon was the trigger of a trap or a stone in the path. En emoi, ‘in me’ or ‘over me’, makes Jesus himself the possible stumbling stone, the image of Isaiah 8:14, which the early church applied to him (Romans 9:33, 1 Peter 2:8).",
+      "words": ["G3107", "G4624"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is the refusal to stumble over Jesus as he actually is. The blessing belongs not to those who never question but to those who keep trusting him when he does not match their expectations."
+        }
+      ],
+      "parallels": ["Luke 7:23"],
+      "refs": ["Isaiah 8:14-15", "1 Corinthians 1:23", "Matthew 13:57", "Matthew 26:31"]
+    },
+    {
+      "v": "7-8",
+      "context": "As John's messengers leave, Jesus turns to the crowds and defends John in public. His questions remind them what drew them to the wilderness: not a man who bends with every wind, and not a courtier in soft clothes, but a prophet whose firmness has landed him in a king's prison.",
+      "grammar": "Toutōn de poreuomenōn, ‘as these were going’, is a genitive absolute that times Jesus' words to the messengers' departure, so the praise of John is not carried back to him. Ti exēlthate eis tēn erēmon theasasthai, ‘what did you go out into the wilderness to look at?’: theaomai suggests spectators at a show. Ti can mean ‘what’ or ‘why’, so the questions can also be punctuated ‘Why did you go out? To see a reed?’, and English versions differ. Kalamon hupo anemou saleuomenon, ‘a reed being shaken by the wind’, uses a present passive participle for continual swaying. En malakois ēmphiesmenon, ‘clothed in soft things’: the perfect participle describes a settled way of dressing, and malakos, ‘soft’, describes fine cloth. En tois oikois tōn basileōn, ‘in the houses of kings’, is Matthew's plain phrase where Luke has ‘palaces’.",
+      "words": ["G4198", "G0757", "G3793", "G1831", "G2048", "G2300", "G2563", "G0417", "G4531", "G3120", "G0294", "G5409", "G3624G", "G0935"],
+      "history": "Herod Antipas, who held John, lived in palaces at Sepphoris, at his new capital Tiberias, and at the fortress of Machaerus east of the Dead Sea, where Josephus places John's imprisonment and death (Antiquities 18.119). Gerd Theissen's suggestion that the reed recalls the emblem on Antipas's first coins, noted in the chapter note, would make the first question a veiled contrast between John and the king who jailed him.",
+      "parallels": ["Luke 7:24-25"],
+      "refs": ["Matthew 3:1-6", "Matthew 3:4", "Matthew 14:3-4", "Ephesians 4:14"]
+    },
+    {
+      "v": "9-10",
+      "context": "John is a prophet and more than a prophet, because he is himself the subject of prophecy. Jesus quotes the promise of a messenger sent ahead, and the change of pronouns in the quotation makes the Lord whose way John prepares none other than Jesus.",
+      "grammar": "Nai, legō humin, kai perissoteron prophētou, ‘yes, I tell you, and more than a prophet’: perissoteron is a neuter comparative, ‘something more than a prophet’, which stresses John's role more than his rank. Houtos estin peri hou gegraptai, ‘this is the one about whom it stands written’: gegraptai is a perfect passive, the standard formula for Scripture as a standing authority. In the quotation, apostellō is a present with future sense, ‘I am sending’, and the relative clause hos kataskeuasei tēn hodon sou emprosthen sou, ‘who will prepare your way before you’, uses the second person twice. In Malachi God speaks of the way ‘before me’; here God addresses someone else, ‘before you’.",
+      "words": ["G1831", "G1492H", "G4396", "G3483", "G4054", "G1125", "G2400", "G0649", "G0032H", "G4383", "G2680", "G3598", "G1715"],
+      "text": "In verse 9 some early manuscripts order the words differently, ‘Why then did you go out? To see a prophet?’, and Westcott and Hort and the SBL edition follow them; most manuscripts read ‘What then did you go out to see? A prophet?’. The difference turns on whether ti means ‘why’ or ‘what’, and the sense of Jesus' answer is the same.",
+      "ot": [
+        {
+          "ref": "Malachi 3:1",
+          "note": "The Hebrew reads hineni sholeach mal'akhi ufinnah-derekh lefanai, ‘behold, I am sending my messenger, and he will clear the way before me’, and continues that the Lord will suddenly come to his temple. The Septuagint has epiblepsetai hodon pro prosōpou mou, ‘he will survey the way before my face’. Matthew's kataskeuasei, ‘will prepare’, is closer to the Hebrew sense than to the Greek. The decisive change is the pronoun: ‘before me’ becomes ‘before you’, so the coming of God in Malachi is the coming of Jesus. Malachi 4:5 then names the messenger as Elijah, which Jesus takes up in verse 14."
+        },
+        {
+          "ref": "Exodus 23:20",
+          "note": "The first line matches the Septuagint of Exodus 23:20 almost word for word: idou egō apostellō ton angelon mou pro prosōpou sou, ‘behold, I send my messenger before your face’, God's promise of an angel to guide Israel to the land. Mark 1:2 and Luke 7:27 have the same combination of the two texts, which casts John as the guide of a new exodus."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "John stands inside prophecy as well as speaking it. The verse shows the New Testament reading of Malachi in which God's own coming is fulfilled in Jesus, and so it becomes one of the passages the church used to confess Jesus as the Lord whose way was prepared."
+        }
+      ],
+      "parallels": ["Luke 7:26-27", "Mark 1:2"],
+      "refs": ["Malachi 3:1-2", "Exodus 23:20", "Luke 1:76", "Mark 1:2-4"]
+    },
+    {
+      "v": "11",
+      "context": "The highest praise Jesus gives any human being is followed at once by a surprising comparison. John has no superior among those born of women, yet the least in the kingdom of heaven is greater. The contrast is between two ages, promise and fulfillment, not between two kinds of holiness.",
+      "grammar": "Ouk egēgertai, ‘there has not been raised up’, is a perfect passive of egeirō, the verb God uses in the Septuagint for raising up a prophet (Deuteronomy 18:15, 18 use the related anistēmi); God is the implied agent. En gennētois gunaikōn, ‘among those born of women’, is a Semitic way of saying ‘among all human beings’ (compare Job 14:1). Ho de mikroteros, ‘the lesser’, is a comparative used where English expects the superlative ‘least’, a common Koine usage. John Chrysostom and some other early interpreters took ‘the lesser’ as Jesus himself, younger than John and thought less of, but the phrase ‘in the kingdom of heaven’ fits the usual reading better: any member of the kingdom now arriving.",
+      "words": ["G0281", "G1453", "G1084", "G1135G", "G3173", "G0910", "G3398", "G0932"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The verse marks a turn in the ages. John stood at the threshold of the kingdom and pointed to it; the least disciple stands inside it and sees what John announced. Greatness in the kingdom is a matter of where God's history has placed a person, not of personal merit."
+        }
+      ],
+      "parallels": ["Luke 7:28"],
+      "refs": ["Matthew 13:16-17", "Matthew 18:1-4", "Job 14:1", "Luke 7:28"]
+    },
+    {
+      "v": "12",
+      "context": "One of the hardest sayings in the Gospels describes the kingdom's history since John began to preach. The chapter note sets out the three main readings; the grammar below shows why they are possible.",
+      "grammar": "Biazetai can be passive, ‘is subjected to force’, or middle, ‘exercises force, presses in’; the form is the same, and the BSB's “has been subject to violence” takes it as passive. Biastai, ‘violent people’ or ‘forceful people’, occurs nowhere else in the Greek Bible. Harpazousin autēn, ‘they seize it’, uses harpazō, ‘to snatch, carry off by force’. Matthew's own use of this verb weighs on the question: in 12:29 it describes plundering a strong man's goods, and in 13:19 the evil one ‘snatches away’ the word sown in the heart, both hostile. John 10:12 uses it of a wolf seizing sheep. That leans toward the hostile reading, but defenders of the favorable reading point to Luke 16:16, where everyone ‘is forcing his way into’ the kingdom, and the question stays open. Apo de tōn hēmerōn Iōannou heōs arti, ‘from the days of John until now’, measures a stretch of time that is already past for Jesus' hearers, since John's ministry has ended in prison.",
+      "words": ["G2250", "G0910", "G0737", "G0932", "G0971", "G0973", "G0726"],
+      "text": "English versions differ here more than at almost any other verse in Matthew. The King James Version reads ‘the kingdom of heaven suffereth violence, and the violent take it by force’; the 1984 NIV read that it ‘has been forcefully advancing, and forceful men lay hold of it’; the 2011 NIV and the BSB take the hostile sense, with the other reading in a note. The Greek text is not in dispute; the translations reflect the grammatical choice described above.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "On any reading, the kingdom's arrival provokes a response of force. If hostile, the verse explains John's prison and anticipates Jesus' death: God's reign advances through suffering. If favorable, it describes the urgency of those who press in. Either way, the kingdom is not a quiet idea but a power that divides."
+        }
+      ],
+      "parallels": ["Luke 16:16"],
+      "refs": ["Luke 16:16", "Matthew 12:29", "Matthew 13:19", "Matthew 14:3-10"]
+    },
+    {
+      "v": "13",
+      "context": "‘For’ gives the reason John marks a turning point: all the Scriptures pointed forward until him. With John the time of promise gives way to the time of fulfillment, which is why the least in the kingdom stands where John could not.",
+      "grammar": "Pantes gar hoi prophētai kai ho nomos, ‘for all the Prophets and the Law’: this is the only place in the New Testament where the prophets are named before the law. Elsewhere, including Luke's parallel (Luke 16:16) and Matthew 5:17, 7:12, and 22:40, the order is ‘the Law and the Prophets’. The reversal, together with the verb eprophēteusan, ‘prophesied’, presents the whole of Israel's Scripture, the law included, as prophecy pointing forward. Heōs Iōannou, ‘until John’, leaves open whether John belongs to the old period or the new; Hans Conzelmann (The Theology of St. Luke, German 1954) famously argued that Luke places John in the age of Israel, while Matthew, who gives John and Jesus the same message (3:2, 4:17), sets him at the hinge between the two.",
+      "words": ["G4396", "G3551", "G4395"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The verse treats the law not only as command but as prophecy, a word that looked ahead to its fulfillment. That reading stands behind 5:17, where Jesus says he came not to abolish the Law and the Prophets but to fulfill them."
+        }
+      ],
+      "parallels": ["Luke 16:16"],
+      "refs": ["Matthew 5:17-18", "Luke 24:27", "Romans 3:21", "Luke 16:16"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus names John as the Elijah whom Malachi promised before the day of the Lord, but only for those willing to receive it. The call to hear, used again after the parables (13:9, 13:43), marks the saying as one that demands understanding, not just attention.",
+      "grammar": "Kai ei thelete dexasthai, ‘and if you are willing to receive it’: the condition acknowledges that the identification is not self-evident, since John himself denied being Elijah in person (John 1:21). Autos estin Ēlias ho mellōn erchesthai, ‘he himself is Elijah, the one who is to come’: mellō with the infinitive describes what is destined to happen. Ho echōn ōta akouetō, ‘the one who has ears, let him hear’, uses a third-person present imperative, an appeal to go on listening.",
+      "words": ["G2309", "G1209", "G2243", "G3195", "G2064", "G2192", "G3775", "G0191"],
+      "text": "Many manuscripts, followed by the King James Version, read ‘ears to hear’ (adding akouein), the fuller form found in Mark 4:9. Some early witnesses, including Codex Vaticanus, have the shorter ‘ears’, which modern editions print. The Elijah prophecy is Malachi 4:5 in English Bibles and 3:23 in the Hebrew.",
+      "history": "Jewish expectation about Elijah's return took several forms. Ben Sira, around 180 BC, expected him to calm God's wrath, turn the hearts of fathers to their sons, and restore the tribes of Jacob (Sirach 48:10). The Mishnah records a debate about his task: Rabbi Joshua held that he would set right families wrongly included or excluded, Rabbi Simeon that he would settle disputes, and the Sages that he would come to make peace in the world (m. Eduyot 8:7). Jesus' identification of John with Elijah matches Luke 1:17, where John goes ‘in the spirit and power of Elijah’, rather than a return of the prophet in person.",
+      "ot": [
+        {
+          "ref": "Malachi 4:5-6",
+          "note": "The Hebrew reads hinneh anokhi sholeach lakhem et eliyyah hannavi, ‘behold, I am sending you Elijah the prophet’, before the great and terrible day of the Lord, to turn the hearts of fathers to children and children to fathers. The Septuagint calls him ‘Elijah the Tishbite’. Malachi's closing promise links back to the messenger of 3:1, which is why Jesus can quote the one text in verse 10 and name Elijah here: the forerunner prepares for the Lord's own coming."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Prophecy is fulfilled here in a person who comes in Elijah's role and spirit, not in a literal return. The verse teaches that recognizing fulfillment requires willingness, since the fulfillment may not look as expected."
+        }
+      ],
+      "parallels": ["Matthew 17:10-13", "Mark 9:11-13"],
+      "refs": ["Malachi 4:5-6", "Luke 1:17", "John 1:21", "Matthew 17:10-13", "Matthew 13:9"]
+    },
+    {
+      "v": "16-17",
+      "context": "Jesus compares ‘this generation’ to children who complain that the others would not play either of their games. The phrase ‘this generation’ becomes a key term in Matthew for the people who reject Jesus (12:39-45, 23:36, 24:34), and the parable prepares for the charges quoted in the next two verses.",
+      "grammar": "Tini de homoiōsō tēn genean tautēn, ‘to what shall I compare this generation?’, is a traditional opening for a comparison. Homoia estin paidiois kathēmenois en tais agorais, ‘it is like children sitting in the marketplaces’: as in the parables of chapter 13 (‘the kingdom of heaven is like a merchant’, 13:45), the comparison is with the whole scene, not with the first noun alone. The children's complaint is built in two rhyming lines: ēulēsamen ... kai ouk ōrchēsasthe, ‘we piped ... and you did not dance’, and ethrēnēsamen kai ouk ekopsasthe, ‘we sang a dirge and you did not beat your breasts’. The endings -samen and -sasthe echo each other in Greek, giving the taunt a sing-song ring. Koptō in the middle means to strike oneself in mourning.",
+      "words": ["G3666", "G1074", "G3664", "G3813", "G2521", "G0058", "G4377", "G2087", "G3004G", "G0832", "G3738", "G2354", "G2875"],
+      "history": "Weddings and funerals were the two great public events of village life, and music marked both. The Mishnah rules that even the poorest man in Israel must provide at least two flute players and one wailing woman for his wife's funeral (m. Ketubot 4:4), which shows how fixed the customs of mourning were. Children in a town square imitating a wedding or a funeral was a scene every hearer knew.",
+      "text": "Where most modern editions read that the children call out ‘to the others’ (tois heterois), the Textus Receptus and many later manuscripts read ‘to their companions’ (tois hetairois autōn), which the King James Version renders ‘unto their fellows’. The two Greek words differ only in one vowel, and they sounded alike in later Greek pronunciation.",
+      "parallels": ["Luke 7:31-32"],
+      "refs": ["Matthew 12:39-45", "Matthew 23:36", "Jeremiah 9:17-18", "Ecclesiastes 3:4"]
+    },
+    {
+      "v": "18-19",
+      "context": "Jesus applies the parable. John fasted and was called demon-possessed; the Son of Man eats and drinks and is called a glutton and a drunkard. The generation that rejects both austerity and celebration is not really seeking God. The last line answers them: wisdom is shown to be right by what she does.",
+      "grammar": "Ēlthen, ‘came’, in both verses describes John's and Jesus' missions as comings from God. Mēte esthiōn mēte pinōn, ‘neither eating nor drinking’, is hyperbole for John's ascetic diet (3:4). The charge against Jesus stacks nouns: idou anthrōpos phagos kai oinopotēs, telōnōn philos kai hamartōlōn, ‘look, a man, a glutton and a drunkard, a friend of tax collectors and sinners’; phagos and oinopotēs occur in the New Testament only here and in Luke's parallel. Kai edikaiōthē hē sophia apo tōn ergōn autēs, ‘and wisdom was justified by her works’: kai is adversative, ‘and yet’; the aorist passive is gnomic, stating what is always true; and apo marks the agent or source, so that wisdom's own deeds prove her right.",
+      "words": ["G2064", "G2068", "G4095", "G1140", "G2192", "G5207", "G5314", "G3630", "G5057", "G5384", "G0268", "G1344", "G4678", "G2041"],
+      "text": "Codex Sinaiticus, Codex Vaticanus, and Codex Washingtonianus read ‘by her works’ (ergōn); most manuscripts, followed by the King James Version, read ‘by her children’ (teknōn), the wording of Luke 7:35. Editors generally judge ‘works’ original and ‘children’ an assimilation to Luke, and ‘works’ links the saying to ‘the works of Christ’ in verse 2.",
+      "ot": [
+        {
+          "ref": "Deuteronomy 21:20",
+          "note": "The parents of a stubborn and rebellious son are to tell the elders that he is ‘a glutton and a drunkard’ (Hebrew zolel wesove), and the town is to stone him. The Septuagint renders the pair with different Greek words, so the insult against Jesus alludes to the charge rather than quoting it. If the accusers meant the allusion, they were labeling him with the rebellious son's capital offense."
+        }
+      ],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Wisdom is personified here as in Proverbs 8 and 9, and her ‘works’ are the works of Christ (verse 2). Matthew suggests that God's Wisdom is at work in Jesus, so that his deeds, not his critics' verdict, show where wisdom is."
+        },
+        {
+          "id": "incarnation",
+          "note": "‘The Son of Man came eating and drinking’ is a plain statement of Jesus' full humanity, sharing ordinary meals and ordinary company. The table fellowship his critics despised is itself part of how he came near to sinners."
+        }
+      ],
+      "parallels": ["Luke 7:33-35"],
+      "refs": ["Matthew 9:10-13", "Matthew 3:4", "Proverbs 8:32-36", "Luke 15:1-2"]
+    },
+    {
+      "v": "20",
+      "context": "Matthew introduces the woes with his own explanation: the towns saw most of Jesus' miracles and did not repent. The verse turns the chapter from the rejection of John and Jesus by ‘this generation’ in general to particular places.",
+      "grammar": "Tote ērxato oneidizein, ‘then he began to reproach’: oneidizō means to reproach or insult, and Matthew uses it again for the bandits who mock Jesus on the cross (27:44), so the same verb names Jesus' rebuke of the towns and the world's contempt for him. Hais egenonto hai pleistai dunameis autou, ‘in which most of his mighty works had taken place’: pleistai is a superlative, and dunameis, literally ‘powers’, is the Synoptic word for miracles as acts of God's power. Hoti ou metenoēsan, ‘because they did not repent’, gives the reason in the aorist, a verdict on their response as a whole.",
+      "words": ["G0757", "G3679", "G4172", "G1096", "G4118", "G1411", "G3340"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The miracles were meant to lead to repentance, a turning of mind and life to God. The towns enjoyed the healings but did not turn, and the verse shows that wonder and gratitude fall short of repentance when they leave a life unchanged."
+        }
+      ],
+      "refs": ["Matthew 4:17", "Matthew 27:44", "Romans 2:4", "Luke 10:13"]
+    },
+    {
+      "v": "21-22",
+      "context": "The first stanza of the woes addresses Chorazin and Bethsaida. Pagan Tyre and Sidon, the proverbial proud cities of the prophets, would have repented long ago at what these Jewish towns saw, so their judgment will be lighter. Jesus himself will go to the region of Tyre and Sidon in 15:21, where a Canaanite woman shows the faith these towns lacked.",
+      "grammar": "Ouai soi, ‘woe to you’, is a prophet's cry of lament and warning, not a curse. The sentence is a contrary-to-fact condition: ei with the aorist egenēthēsan, ‘if they had taken place’, and an with the aorist metenoēsan, ‘they would have repented’. Palai, ‘long ago’, stresses how quickly the Phoenician cities would have responded. En sakkō kai spodō, ‘in sackcloth and ashes’, names the outward signs of repentance. Plēn legō humin, ‘but I tell you’, introduces the conclusion, and anektoteron, ‘more bearable’, repeats the comparative of 10:15.",
+      "words": ["G3759", "G5523", "G0966", "G5184", "G4605", "G1411", "G3819", "G4526", "G4700", "G3340", "G0414", "G2920"],
+      "history": "Chorazin is generally identified with the ruins of Khirbet Karazeh in the basalt hills north of Capernaum. Bethsaida, the home of Peter, Andrew, and Philip, was raised to the rank of a city by Herod Philip and renamed Julias, after a woman of the emperor's family (Josephus, Antiquities 18.28); Josephus says she was the emperor's daughter, though many historians think Augustus's wife Livia, later called Julia, is more likely. The Gospels record no miracle at Chorazin at all, a reminder that they tell only part of what Jesus did (compare John 21:25).",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The comparison makes privilege the measure of responsibility. People who witnessed God's works and did not turn are judged more strictly than pagans who never saw them, which presses hardest on those, including churches, who have heard the most."
+        },
+        {
+          "id": "judgment",
+          "note": "‘More bearable’ implies degrees in the final judgment, measured by what each people received. Christian traditions differ on how the saying relates to God's foreknowledge and grace (the chapter note sets out Augustine's and Molina's readings), but all agree that the judge is just."
+        }
+      ],
+      "parallels": ["Luke 10:13-14"],
+      "refs": ["Isaiah 23:1-9", "Ezekiel 28:1-10", "Jonah 3:5-6", "Matthew 15:21-28", "John 21:25"]
+    },
+    {
+      "v": "23-24",
+      "context": "The second stanza turns on Capernaum, Jesus' own base (4:13), with the same structure and a harsher image. The town that thinks itself raised to heaven by its privilege will be brought down to Hades, and Sodom itself would still be standing if it had seen what Capernaum saw.",
+      "grammar": "Kai su, Kapharnaoum, ‘and you, Capernaum’, addresses the town as a person. Mē heōs ouranou hupsōthēsē, ‘will you be lifted up to heaven?’: mē introduces a question expecting the answer no. Heōs hadou katabēsē, ‘you will go down to Hades’, uses a future middle; Hadēs is the realm of the dead, the Greek equivalent of Sheol, distinct from Gehenna (10:28). Emeinen an mechri tēs sēmeron, ‘it would have remained until today’, is again contrary to fact, and ‘until today’ is a phrase Matthew uses elsewhere of what still stands in his own time (27:8, 28:15).",
+      "words": ["G2584", "G5312", "G3772", "G0086", "G2597", "G4670", "G1411", "G3306", "G4594", "G0414"],
+      "text": "The earliest manuscripts ask the question with mē; the later text behind the King James Version makes a statement, ‘which art exalted unto heaven’. The editions also divide over the second verb: Nestle-Aland and the SBL edition read katabēsē, ‘you will go down’, while the Tyndale House edition, the Textus Receptus, and the Byzantine text read katabibasthēsē, ‘you will be brought down’, which matches the BSB's English.",
+      "ot": [
+        {
+          "ref": "Isaiah 14:13-15",
+          "note": "Isaiah taunts the king of Babylon, who said in his heart, ‘I will ascend to the heavens’, and answers that he will be brought down to Sheol, to the depths of the pit. The Hebrew contrasts hashamayim e'eleh, ‘to the heavens I will go up’, with el-sheol turad, ‘to Sheol you will be brought down’; the Septuagint has eis hadou katabēsē, the words most editions print here. Jesus applies to a Jewish town the doom the prophet pronounced on a pagan tyrant: Capernaum's pride in its privilege is the same pride."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The one who spoke these woes had made Capernaum his home. Judgment falls hardest where grace came closest, and the verse warns that nearness to Jesus is a danger, not a safety, when it produces no repentance."
+        }
+      ],
+      "parallels": ["Luke 10:15", "Luke 10:12"],
+      "refs": ["Isaiah 14:13-15", "Matthew 4:13", "Genesis 19:24-25", "Matthew 10:15"]
+    },
+    {
+      "v": "25-26",
+      "context": "The mood changes from rebuke to prayer. ‘At that time’, in the setting of rejection, Jesus thanks the Father that what the wise and learned have missed has been given to little children. The prayer interprets the woes: the towns' blindness and the disciples' sight both lie within the Father's good pleasure.",
+      "grammar": "Apokritheis ho Iēsous eipen, ‘Jesus answered and said’, though no one has asked a question: the Semitic idiom means responding to a situation. Exomologoumai soi, ‘I praise you’ or ‘I acknowledge you’, is the verb the Septuagint Psalms use for giving thanks to God (for Hebrew hodah). Pater, kurie tou ouranou kai tēs gēs, ‘Father, Lord of heaven and earth’, joins intimacy with sovereignty. Hoti ekrupsas tauta ... kai apekalupsas auta nēpiois, ‘that you hid these things ... and revealed them to little children’: the two clauses are joined by a simple ‘and’, and grammarians debate whether Jesus gives thanks for both acts or, in a Semitic way of speaking, for the revealing that stands against the hiding (‘that though you hid ... you revealed’). Verse 26 repeats ‘Father’ and gives the ground: houtōs eudokia egeneto emprosthen sou, ‘thus it was well-pleasing before you’. Eudokia is the noun of the verb used at Jesus' baptism (3:17) and in the Servant quotation (12:18).",
+      "words": ["G2540", "G0611", "G1843", "G3962", "G2962G", "G2928", "G4680", "G4908", "G0601", "G3516", "G3483", "G2107"],
+      "ot": [
+        {
+          "ref": "Isaiah 29:14",
+          "note": "Isaiah warns a people who honor God with their lips that the wisdom of their wise will perish and the understanding of their discerning will be hidden. The Septuagint uses the same pair of words, sophoi and sunetoi, and the verb kruptō, ‘hide’, the terms of Jesus' prayer. Paul quotes the verse in 1 Corinthians 1:19 to make the same point about the cross. Jesus' prayer stands in this prophetic pattern, in which God overturns human estimates of who is wise."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Knowledge of God's saving purpose is a gift the Father gives, not an achievement of the learned. The ‘little children’ are the disciples and the humble, who receive rather than grasp."
+        },
+        {
+          "id": "election",
+          "note": "The prayer grounds both hiding and revealing in the Father's good pleasure. Augustinian and Reformed readers, following Calvin's commentary, see here God's sovereign choice of those to whom he gives understanding; others read the verse as God's choice of a kind of person, the humble, over the proud, while insisting that human refusal is real. All agree that the prayer is praise, not complaint."
+        }
+      ],
+      "parallels": ["Luke 10:21"],
+      "refs": ["Isaiah 29:14", "1 Corinthians 1:19-29", "Matthew 18:3-4", "Matthew 21:16", "Genesis 14:19"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus explains how the Father's revealing works: through the Son. All things have been handed over to him, and the Father and the Son know each other in a way no one else does, so that knowing the Father depends on the Son's choice to make him known. The verse sounds so much like John's Gospel that it has long been called ‘the Johannine thunderbolt’.",
+      "grammar": "Panta moi paredothē hupo tou patros mou, ‘all things were handed over to me by my Father’: paredothē is an aorist passive of paradidōmi, a verb used both for handing over authority and for passing on teaching. In context ‘all things’ may mean the knowledge of ‘these things’ just revealed (verse 25), or authority in general, as in 28:18, where the risen Jesus says all authority has been given him. The two knowledge clauses are exactly balanced: oudeis epiginōskei ton huion ei mē ho patēr, oude ton patera tis epiginōskei ei mē ho huios, ‘no one knows the Son except the Father, nor does anyone know the Father except the Son’. Epiginōskō, a compound of ginōskō, means to know or recognize; Luke's parallel has the simple verb, and the uniqueness comes from the ‘no one ... except’ structure, not the prefix. Hō ean boulētai ho huios apokalupsai, ‘to whomever the Son wills to reveal him’, matches the Son's will with the Father's good pleasure in verse 26.",
+      "words": ["G3956", "G3860", "G3962", "G3762", "G1921", "G5207", "G1014", "G0601"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father and the Son are here equal partners in a mutual knowledge that belongs to no creature. Knowledge of this kind presupposes a shared nature, which is why Athanasius and the church after him read the verse as a witness to the Son's full deity, and why Arians who stressed ‘handed over’ were answered that the gift concerns the Son's saving work, not a lack in his being."
+        },
+        {
+          "id": "revelation",
+          "note": "The verse makes the Son the one mediator of the knowledge of God. No one reaches the Father by learning or piety alone; the Father is known where the Son makes him known, which is the ground of the invitation that follows."
+        }
+      ],
+      "parallels": ["Luke 10:22"],
+      "refs": ["John 10:15", "John 17:2-3", "John 1:18", "Matthew 28:18", "John 3:35"]
+    },
+    {
+      "v": "28",
+      "context": "The invitation found only in Matthew follows directly from verse 27. The Son who alone knows the Father now calls everyone worn out by their load to come to him, and he promises rest, which in Israel's Scriptures was God's gift to give.",
+      "grammar": "Deute pros me, ‘come to me’: deute is an adverb used as a plural imperative, ‘come here’. Matthew uses it at the first call of the disciples (4:19), in the parable of the wedding feast (22:4), and in the king's welcome at the judgment (25:34), so the word runs from the first call to the last. Pantes hoi kopiōntes kai pephortismenoi, ‘all who are toiling and burdened’: the present participle describes continual hard labor, and the perfect passive pephortismenoi describes people who have been loaded down by someone else and remain so. Phortizō is the verb Jesus uses in Luke 11:46 of lawyers who load people with burdens hard to carry. Kagō anapausō humas, ‘and I myself will give you rest’: kagō is emphatic, and the future anapausō makes a promise in Jesus' own name.",
+      "words": ["G1205", "G3956", "G2872", "G5412", "G1473", "G0373"],
+      "ot": [
+        {
+          "ref": "Exodus 33:14",
+          "note": "When Moses pleads that God himself go with Israel, the LORD answers, “My Presence will go with you, and I will give you rest.” The Hebrew is wahanichoti lakh, and the Septuagint reads katapausō se, a compound of the same verb as Matthew's anapausō. Jeremiah 31:25 similarly has God refresh the weary. In Israel's Scriptures giving rest is God's work; Jesus promises it as his own."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The promised rest prepares for the Sabbath disputes that begin in the next verse of the Gospel (12:1). What the Sabbath signified, rest given by God, Jesus offers in person, which is why he can claim in 12:8 to be Lord of the Sabbath."
+        },
+        {
+          "id": "salvation",
+          "note": "The invitation is open to all who are weary, with no condition but coming. Salvation appears here as relief given by a person, not a program laid on the already exhausted."
+        }
+      ],
+      "refs": ["Exodus 33:14", "Jeremiah 31:25", "Isaiah 55:1-3", "Hebrews 4:9-11", "Matthew 25:34"]
+    },
+    {
+      "v": "29",
+      "context": "Rest comes by taking a yoke, not by throwing one off. Jesus invites the weary to become his disciples, learning from a teacher who is gentle and humble, and he promises in the words of Jeremiah that they will find rest for their souls.",
+      "grammar": "Arate ton zugon mou eph' humas kai mathete ap' emou, ‘take my yoke on you and learn from me’: two aorist imperatives, and manthanō, ‘learn’, is the verb from which mathētēs, ‘disciple’, comes, so ‘learn from me’ means ‘become my disciple’. Hoti praus eimi kai tapeinos tē kardia can mean ‘because I am gentle and humble in heart’ or ‘that I am gentle and humble’, the content of what is learned; most translations take it as the reason. Tē kardia is a dative of respect, ‘in heart’, describing his inner disposition. Heurēsete anapausin tais psuchais humōn, ‘you will find rest for your souls’, is a quotation of Jeremiah 6:16.",
+      "words": ["G0142", "G2218", "G3129", "G4235", "G5011", "G2588", "G2147", "G0372", "G5590G"],
+      "history": "Ben Sira's book closes with a poem in which Wisdom's teacher calls the uneducated to his school: put your neck under the yoke, he says, and see that I labored little and found for myself much rest (Sirach 51:23-27, compare 6:24-31). The book was written in Hebrew around 180 BC and translated into Greek by the author's grandson, who says in his prologue that he came to Egypt in the thirty-eighth year of King Euergetes, 132 BC. A Hebrew copy of part of the closing poem was found in the Psalms Scroll from Qumran Cave 11, so the poem circulated in both languages before Jesus. Matthew's hearers could hear in Jesus' words the voice of Wisdom's invitation, spoken now in the first person by Jesus himself.",
+      "ot": [
+        {
+          "ref": "Jeremiah 6:16",
+          "note": "Jeremiah tells Judah to stand at the crossroads, ask for the ancient paths, where the good way is, and walk in it, u-mits'u margoa lenafshekhem, ‘and you will find rest for your souls’; but the people answered that they would not walk in it. The Septuagint renders margoa as hagnismon, ‘purification’. Matthew's anapausin follows the Hebrew sense, not the Greek. In Jeremiah the good way was the covenant path Israel refused; Jesus offers himself as that way, to a generation that is refusing him (verses 16 to 24)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Jesus speaks as Wisdom speaks, but he points to himself rather than to Wisdom or the Torah. Matthew presents him as the one in whom God's Wisdom is present, so that learning from him is learning the wisdom Israel's sages sought."
+        },
+        {
+          "id": "law",
+          "note": "Jewish teachers spoke of the yoke of the Torah and the yoke of the kingdom of heaven. Interpreters differ on how Jesus' yoke relates to them: many read it as the Torah as he interprets and fulfills it (5:17-20), others as his own person and teaching taking the Torah's central place. Either way, the yoke is received from a gentle teacher rather than imposed by heavy-handed ones (23:4)."
+        }
+      ],
+      "refs": ["Jeremiah 6:16", "Matthew 21:5", "Numbers 12:3", "Philippians 2:5-8", "Matthew 23:4"]
+    },
+    {
+      "v": "30",
+      "context": "‘For’ gives the reason the rest is real: Jesus' yoke is kind and his load is light. The saying does not deny that following him has a cost, which chapter 10 made plain; it contrasts his burden with the heavy loads others lay on people's shoulders.",
+      "grammar": "Ho gar zugos mou chrēstos, ‘for my yoke is kind’: chrēstos means good, kind, or pleasant, used of God's kindness to the ungrateful in Luke 6:35 and of the Lord's goodness in 1 Peter 2:3; the BSB renders it “easy”. Kai to phortion mou elaphron, ‘and my burden is light’: phortion, ‘load, burden’, is set against the phortia barea, ‘heavy burdens’, that the scribes and Pharisees tie on people's shoulders in 23:4. The paradox is deliberate: a yoke and a burden are still named, but their character is changed by whose they are.",
+      "words": ["G2218", "G5543", "G5413", "G1645"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Jesus does not remove obedience but changes its character. The life he calls disciples to is still a yoke, yet it is borne with him and under a kind master, which is why 1 John 5:3 can say that God's commands are not burdensome."
+        }
+      ],
+      "refs": ["1 John 5:3", "Matthew 23:4", "Acts 15:10", "Galatians 5:1", "Luke 6:35"]
+    }
+  ]
+}

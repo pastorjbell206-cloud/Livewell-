@@ -61,11 +61,11 @@ export default function TheReliabilityOfScripture() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "26px", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 28px" }}>
-            She left the church. Not because the evidence was overwhelming, but because the silence in the room was.
+            When someone leaves the church over the Bible, it is rarely because the evidence was overwhelming. More often it is because the silence in the room was.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
             <p style={{ margin: "0 0 1.2em" }}>Too many believers were handed a Bible and told it was true, but never shown the case. So when the hard questions came — about manuscripts, contradictions, the canon, the difference between what inerrancy claims and what its critics attack — the room went quiet, and people walked away from the silence rather than the evidence. James Bell refuses that silence.</p>
-            <p style={{ margin: "0 0 1.2em" }}>This is a walk through the manuscript rooms, the archaeology, and the canonization history, written for the believer with real questions and the skeptic who suspects the Bible cannot survive an honest examination. Faith built on fear collapses under pressure. Faith built on evidence does not.</p>
+            <p style={{ margin: "0 0 1.2em" }}>This is a walk through the manuscript rooms, the archaeology, and the canonization history, written for the believer with real questions and the skeptic who suspects the Bible cannot survive an honest examination. A faith that was never shown its own evidence tends to collapse the first time it is pressed. A faith that has looked at the evidence can at least stand there and answer.</p>
             <p style={{ margin: 0, fontWeight: 600 }}>It does not ask you to stop asking. It asks you to ask harder.</p>
           </div>
         </div>

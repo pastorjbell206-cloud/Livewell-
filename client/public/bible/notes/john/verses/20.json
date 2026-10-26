@@ -1,0 +1,664 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "On the first day of the week, while it is still dark, Mary Magdalene comes to the tomb and sees that the stone has been taken away. John tells of one woman where the other Gospels name several, and he begins the day of resurrection in darkness, the Gospel's image for the world without the light (1:5, 3:2, 13:30).",
+      "grammar": "Tē de mia tōn sabbatōn, literally ‘on the one of the sabbaths’, is a Semitic idiom: sabbata, plural, means ‘week’, and the cardinal mia, ‘one’, stands for the ordinal ‘first’, as the Hebrew echad does in Genesis 1:5 (‘day one’). Prōi skotias eti ousēs, ‘early, darkness still being’, is a genitive absolute; Mark says the sun had risen (Mark 16:2), a difference of a few minutes or of emphasis. Blepei, ‘she sees’, is a historical present that makes the moment vivid. Ton lithon ērmenon ek tou mnēmeiou, ‘the stone taken away from the tomb’, uses the perfect passive participle of airō: the stone has been removed and stays removed, and John does not say by whom.",
+      "words": [
+        "G1520",
+        "G4521",
+        "G3137I",
+        "G3094",
+        "G4404",
+        "G4653",
+        "G0991",
+        "G3037",
+        "G0142",
+        "G3419"
+      ],
+      "history": "Mary Magdalene appears in every Gospel's account of the empty tomb and is always named first, or alone, among the women (Mark 16:1, Matthew 28:1, Luke 24:10). Luke says Jesus had freed her from seven demons and that she supported his ministry from her means (Luke 8:2-3). Her town, Magdala, on the western shore of the Sea of Galilee, has been excavated since 2009, uncovering a first-century synagogue and a harbor. The later Western identification of her with the sinful woman of Luke 7 has no basis in the Gospels.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "John begins the resurrection on ‘day one’ of the week, in the dark, in a garden. The echo of Genesis 1, where God's first word brought light out of darkness, makes the rising of Jesus the first morning of a new creation."
+        }
+      ],
+      "parallels": [
+        "Mark 16:1-4",
+        "Matthew 28:1-2",
+        "Luke 24:1-2"
+      ],
+      "refs": [
+        "Genesis 1:5",
+        "John 1:5",
+        "John 19:41-42",
+        "Luke 8:2-3"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Mary runs to Simon Peter and the disciple Jesus loved and reports what she concludes: the body has been taken, and no one knows where. Her first thought is not resurrection but grave robbery, and her report sends the two disciples running.",
+      "grammar": "Trechei oun kai erchetai, ‘so she runs and comes’, are historical presents that keep the pace urgent. The beloved disciple is here described as hon ephilei ho Iēsous, ‘whom Jesus loved’, with phileō, where elsewhere the phrase uses agapaō (13:23, 19:26, 21:7, 21:20). John evidently uses the two verbs for the same love, which matters for reading 21:15-17. Ēran ton kurion, ‘they have taken the Lord’, has an indefinite ‘they’. Ouk oidamen pou ethēkan auton, ‘we do not know where they have laid him’, is plural: Mary speaks as one of a group, which fits the other Gospels' account of several women at the tomb, though John names only her.",
+      "words": [
+        "G5143",
+        "G4613O",
+        "G4074G",
+        "G0243",
+        "G3101",
+        "G5368",
+        "G0142",
+        "G2962G",
+        "G6063",
+        "G5087"
+      ],
+      "parallels": [
+        "Luke 24:9-11",
+        "Matthew 28:8"
+      ],
+      "refs": [
+        "John 13:23",
+        "John 19:26",
+        "John 21:7",
+        "Matthew 28:13"
+      ]
+    },
+    {
+      "v": "3-5",
+      "context": "Peter and the other disciple set out, running. The other disciple arrives first, stoops, and sees the linen cloths lying there, but does not go in. The race is told in detail, as though remembered by someone who ran it.",
+      "grammar": "Exēlthen... kai ērchonto, ‘went out... and were coming’, moves from a singular verb (agreeing with Peter, named first) to a plural imperfect, the two in motion together. Etrechon hoi duo homou, ‘the two were running together’, then proedramen tachion tou Petrou, ‘ran ahead more quickly than Peter’, a comparative adverb with a genitive of comparison. Parakupsas, ‘having stooped to look in’, is the verb for bending to see through a low opening; it is used again of Mary in verse 11 and of Peter in Luke 24:12. Blepei keimena ta othonia, ‘he sees the linen cloths lying’, uses the present participle keimena: the cloths are lying there, not scattered. Ou mentoi eisēlthen, ‘he did not, however, go in’, uses mentoi, ‘however’, to mark the hesitation.",
+      "words": [
+        "G1831",
+        "G4074G",
+        "G0243",
+        "G2064",
+        "G5143",
+        "G3674",
+        "G4390",
+        "G5032",
+        "G4413G",
+        "G3879",
+        "G0991",
+        "G2749",
+        "G3608",
+        "G3305"
+      ],
+      "text": "Luke 24:12 tells that Peter ran to the tomb, stooped, and saw the linen cloths by themselves, using the same verbs as John. Codex Bezae and some Old Latin manuscripts lack that verse, and Westcott and Hort treated it as a later addition drawn from John. The discovery of P75, a papyrus of about AD 200 that contains it, persuaded most textual critics that Luke 24:12 is original, which makes it an independent witness to the tradition John tells here.",
+      "parallels": [
+        "Luke 24:12"
+      ],
+      "refs": [
+        "Luke 24:12",
+        "John 18:15-16",
+        "John 21:7",
+        "John 21:20-23"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "Peter arrives, goes straight in, and looks carefully at what is there: the linen cloths lying, and the head cloth not with them but rolled up in a place by itself. The scene is orderly. A thief would not have unwrapped a body and left the cloths neatly behind.",
+      "grammar": "Akolouthōn autō, ‘following him’, uses the Gospel's verb for discipleship in a plain sense: Peter comes behind. Eisēlthen eis to mnēmeion, ‘he went into the tomb’, contrasts with the other disciple's pause. Theōrei, ‘he looks at’ or ‘observes’, is a verb of attentive watching. The soudarion, from the Latin sudarium, a cloth for wiping sweat, is the face cloth also used of Lazarus (11:44). It lies ou meta tōn othoniōn keimenon alla chōris entetuligmenon eis hena topon, ‘not lying with the linen cloths but apart, rolled up in one place’. Entetuligmenon, a perfect passive participle of entulissō, ‘to roll up’ or ‘wrap’, may mean folded, rolled, or still holding the shape in which it had been wrapped around the head; the Greek does not settle which, but any of them suggests deliberate order.",
+      "words": [
+        "G0190",
+        "G1525",
+        "G2334",
+        "G3608",
+        "G2749",
+        "G4676",
+        "G2776",
+        "G5565",
+        "G1794",
+        "G5117"
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Lazarus came out of his tomb still bound, his face wrapped in a cloth, and had to be set free (11:44); he returned to a life that would end again in death. Jesus leaves the grave clothes behind. The contrast is John's quiet way of saying that this is not resuscitation but resurrection, life that death cannot bind again (Romans 6:9)."
+        }
+      ],
+      "refs": [
+        "John 11:44",
+        "Romans 6:9",
+        "Luke 24:12"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "The other disciple now goes in; he sees and believes. The narrator explains that they did not yet understand the Scripture that Jesus had to rise from the dead. The beloved disciple believes on the evidence of the tomb itself, before any appearance and before understanding Scripture.",
+      "grammar": "Eiden kai episteusen, ‘he saw and believed’, uses two aorists, the plainest possible statement of a moment of faith. What he believed is not stated; the verb pisteuō used absolutely in John normally means coming to faith in Jesus, and here it must mean believing that Jesus had been raised. Augustine argued that he only believed Mary's report that the body had been taken, since the next verse says they did not yet understand (Tractates on John 120); most modern commentators think verse 9 explains why faith came from the sight of the tomb and not from Scripture. Oudepō gar ēdeisan tēn graphēn, ‘for they did not yet know the Scripture’, uses the pluperfect of oida, and hoti dei auton ek nekrōn anastēnai, ‘that he must rise from the dead’, uses dei, the word of divine necessity (3:14, 12:34).",
+      "words": [
+        "G1525",
+        "G0243",
+        "G3101",
+        "G1492H",
+        "G4100",
+        "G3764",
+        "G1492I",
+        "G1124",
+        "G1163",
+        "G3498",
+        "G0450"
+      ],
+      "history": "John does not say which Scripture he means. The early church's preaching cited Psalm 16:10, where God will not let his holy one see decay (Acts 2:27-31, 13:35), Isaiah 53:10-12, where the servant who was cut off will see his offspring and prolong his days, and the pattern of the third day in Hosea 6:2 and Jonah 1:17 (Matthew 12:40). Paul's early summary says Christ was raised on the third day according to the Scriptures (1 Corinthians 15:4), naming no single text.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The first Easter faith in John comes from seeing the evidence of the empty tomb, before the risen Lord appears and before Scripture is understood. Faith here is a response to what God has done, and understanding of Scripture follows (2:22, 12:16)."
+        },
+        {
+          "id": "resurrection",
+          "note": "The word dei makes the resurrection a necessity of God's purpose, not a surprising accident. The Scriptures, rightly read, required that the Messiah rise, as Jesus tells the disciples on the road to Emmaus (Luke 24:25-27, 24:44-46)."
+        }
+      ],
+      "refs": [
+        "Psalm 16:10",
+        "Acts 2:27-31",
+        "1 Corinthians 15:4",
+        "Luke 24:25-27",
+        "John 2:22"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "The two disciples go home. Mary stays, standing outside the tomb and weeping. As she weeps she stoops to look in. The narrator turns from the disciples who saw evidence to the woman who will meet the Lord.",
+      "grammar": "Apēlthon oun palin pros hautous hoi mathētai, ‘so the disciples went away again to their own’, uses pros hautous, ‘to themselves’, an idiom for going home (compare 19:27, eis ta idia). Maria de heistēkei pros tō mnēmeiō exō klaiousa, ‘but Mary had been standing at the tomb outside, weeping’, uses the pluperfect of histēmi for her persistent position and de to contrast her with the departing men. Klaiousa and eklaien, a present participle and then an imperfect, repeat the weeping: she weeps, and as she weeps she looks. Klaiō is loud grief, the word for the mourners at Lazarus's tomb (11:31, 11:33) and for the grief Jesus promised would turn to joy (16:20).",
+      "words": [
+        "G0565",
+        "G3825",
+        "G3101",
+        "G3137I",
+        "G2476",
+        "G3419",
+        "G1854",
+        "G2799",
+        "G3879"
+      ],
+      "refs": [
+        "John 11:31-33",
+        "John 16:20-22",
+        "Luke 24:12",
+        "Psalm 30:5"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "Inside Mary sees two angels in white sitting where the body had been, one at the head and one at the feet. They ask why she is weeping, and she repeats her fear: they have taken away her Lord. John's angels give no announcement; they only ask a question and leave the revelation to Jesus himself.",
+      "grammar": "Theōrei duo angelous en leukois kathezomenous, ‘she sees two angels in white, sitting’, uses en leukois, ‘in white (garments)’, a standard way of describing heavenly figures (Mark 16:5, Acts 1:10). Hena pros tē kephalē kai hena pros tois posin, ‘one at the head and one at the feet’, marks the exact place where to sōma tou Iēsou, ‘the body of Jesus’, had lain, with the imperfect ekeito. Their question, gunai, ti klaieis; ‘Woman, why are you weeping?’, uses the same address Jesus used to his mother (2:4, 19:26). Mary's answer changes her earlier words in verse 2 from ‘the Lord’ and ‘we’ to ton kurion mou, ‘my Lord’, and ouk oida, ‘I do not know’: her grief is personal.",
+      "words": [
+        "G2334",
+        "G0032G",
+        "G3022",
+        "G2516",
+        "G2776",
+        "G4228",
+        "G2749",
+        "G4983",
+        "G1135G",
+        "G2799",
+        "G2962G"
+      ],
+      "history": "The Gospels differ over the heavenly figures: Mark has a young man in white sitting inside the tomb (Mark 16:5), Matthew an angel who rolled back the stone and sat on it (Matthew 28:2-5), Luke two men in dazzling clothes (Luke 24:4), and John two angels. Some interpreters have noted the image of the two cherubim facing each other at either end of the mercy seat on the ark of the covenant (Exodus 25:18-22), the place of God's presence, and asked whether John intends it. John himself makes no comment.",
+      "parallels": [
+        "Mark 16:5-6",
+        "Matthew 28:2-5",
+        "Luke 24:3-5"
+      ],
+      "refs": [
+        "Exodus 25:18-22",
+        "Acts 1:10-11",
+        "John 2:4",
+        "John 19:26"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Turning around, Mary sees Jesus standing there but does not know him. He asks the angels' question and adds another, whom she is looking for. Taking him for the gardener, she asks him to tell her where he has put the body so that she can take it away. Grief and expectation keep her from recognizing the one she seeks.",
+      "grammar": "Estraphē eis ta opisō, ‘she turned backward’, uses the aorist passive of strephō with a middle sense, ‘she turned herself’. Theōrei ton Iēsoun hestōta, ‘she sees Jesus standing’, with a perfect participle of histēmi: he is simply there. Kai ouk ēdei hoti Iēsous estin, ‘and she did not know that it was Jesus’, uses the pluperfect of oida as a past; the risen Jesus is not recognized at first in several accounts (Luke 24:16, John 21:4). Tina zēteis; ‘Whom are you seeking?’, repeats his first words in the Gospel (1:38, ti zēteite) and his question to the arresting party (18:4, 18:7). Dokousa hoti ho kēpouros estin, ‘thinking that he was the gardener’, and ei su ebastasas auton, ‘if you carried him off’, use bastazō, the verb for Jesus carrying the cross (19:17).",
+      "words": [
+        "G4762",
+        "G3694",
+        "G2334",
+        "G2476",
+        "G1492I",
+        "G1135G",
+        "G2799",
+        "G2212",
+        "G1380",
+        "G2780",
+        "G2962H",
+        "G0941",
+        "G5087",
+        "G0142"
+      ],
+      "history": "Tertullian, in a passage mocking pagan critics, imagines them saying that the gardener removed the body so that his lettuces would not be trampled by visitors (On the Spectacles 30), which suggests that stories blaming a gardener were already known around AD 200. The medieval Jewish parody Toledot Yeshu also has a gardener hide the body. Mary's mistake in verse 15 may lie behind both.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "Mary's mistake contains a truth. In a Gospel that began with ‘In the beginning’ and ends the passion in a garden, the risen Jesus is found in a garden on the first day, and many readers from the fathers onward have seen in him the true gardener, the new Adam in a restored Eden."
+        }
+      ],
+      "parallels": [
+        "Matthew 28:9",
+        "Mark 16:9"
+      ],
+      "refs": [
+        "John 1:38",
+        "John 18:4",
+        "Luke 24:16",
+        "Genesis 2:15",
+        "1 Corinthians 15:45"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "Jesus says her name, and she knows him. She turns and answers in her own language, “Rabboni!” John translates it for his readers. Recognition comes not by sight but by the voice that calls her by name.",
+      "grammar": "Legei autē Iēsous, Mariam, ‘Jesus says to her, Mariam’, uses the Semitic form of the name, Mariam, which the narrator also uses in verse 18, while verses 1 and 11 have the Greek form Maria; the single word is the whole of Jesus' self-disclosure. Strapheisa ekeinē, ‘she, having turned’, is odd, since she had already turned in verse 14; it may mean she turned fully toward him, or turned from the tomb to face him. Hebraisti, ‘in Hebrew’, as elsewhere in John means Aramaic. Rabbouni, ‘my master’ or ‘my teacher’, is a heightened form of rabbi, found also in Mark 10:51 on the lips of Bartimaeus; the ending -i means ‘my’. John translates it didaskale, ‘Teacher’.",
+      "words": [
+        "G3137I",
+        "G4762",
+        "G1447",
+        "G4462",
+        "G1320"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The good shepherd ‘calls his own sheep by name’ and they know his voice (10:3-4, 10:14). Mary's recognition is the fulfillment of that saying: the risen Lord knows his own personally, and faith is born in hearing him speak one's name."
+        }
+      ],
+      "refs": [
+        "John 10:3-4",
+        "John 10:14",
+        "Isaiah 43:1",
+        "Mark 10:51"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "Jesus tells Mary not to cling to him, because he has not yet ascended to the Father, and sends her instead with a message to his brothers: he is ascending to his Father and their Father, his God and their God. The first commission of the risen Lord is given to a woman, and the first word it carries is about the new relationship his death and rising have opened.",
+      "grammar": "Mē mou haptou is a present imperative with mē, which ordinarily forbids an action in progress: ‘stop holding on to me’, not ‘do not touch me at all’. The reason, oupō gar anabebēka pros ton patera, ‘for I have not yet ascended to the Father’, uses a perfect, and its logic is disputed: it may mean that there is no need to cling because he has not yet gone, or that the relationship she must now learn belongs to the time after his ascension, when he will be present through the Spirit (16:7). The message uses the present anabainō, ‘I am ascending’, as though the return to the Father has already begun. Pros ton patera mou kai patera humōn kai theon mou kai theon humōn repeats the possessive in each phrase: ‘my Father and your Father, my God and your God’, not ‘our Father’.",
+      "words": [
+        "G0681",
+        "G3768",
+        "G0305",
+        "G3962",
+        "G4198",
+        "G0080",
+        "G2036",
+        "G2316"
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "In John the resurrection is the beginning of Jesus' return to the Father, which is his exaltation (13:1, 16:28). The present ‘I am ascending’ joins Easter to the ascension as one movement of the Son going back to the glory he had before the world began (17:5)."
+        },
+        {
+          "id": "union",
+          "note": "For the first time Jesus calls the disciples ‘my brothers’. Through his death and rising they share his relationship to the Father, which fulfills 1:12, those who receive him become children of God. The repeated possessives keep a distinction: he is Son by nature and they are children by grace (Hebrews 2:11-12)."
+        }
+      ],
+      "parallels": [
+        "Matthew 28:9-10"
+      ],
+      "refs": [
+        "John 16:7",
+        "John 1:12",
+        "Hebrews 2:11-12",
+        "Romans 8:29",
+        "John 17:5"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Mary goes and announces to the disciples that she has seen the Lord, and reports what he said. She is the first witness of the risen Jesus in John's account and the first to announce it.",
+      "grammar": "Erchetai Mariam hē Magdalēnē angellousa, ‘Mary Magdalene comes announcing’, uses angellō, ‘to announce’, from the same root as angelos, ‘messenger’. The content of her announcement is heōraka ton kurion, ‘I have seen the Lord’, a perfect tense that presents her seeing as a lasting fact, the same form the disciples use to Thomas in verse 25 and that John uses for eyewitness testimony (1:34, 19:35). She calls him ho kurios, ‘the Lord’, the title the chapter moves toward throughout. Kai tauta eipen autē, ‘and that he had said these things to her’, shifts from direct speech to indirect report within one sentence.",
+      "words": [
+        "G2064",
+        "G3137I",
+        "G3094",
+        "G6000",
+        "G3101",
+        "G3708",
+        "G2962G"
+      ],
+      "text": "The Byzantine manuscripts behind the King James Version read apangellousa for angellousa, with the same meaning, and turn her words into indirect speech, ‘that she had seen the Lord’, using the third person heōrake. The earliest manuscripts have the direct first person, heōraka, ‘I have seen the Lord’, which modern versions follow.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first person the risen Jesus sends is Mary, to the apostles themselves. The later title ‘apostle to the apostles’, given her by writers such as Thomas Aquinas, names what the text shows: the church's witness to the resurrection begins with a woman's testimony, ‘I have seen the Lord’."
+        }
+      ],
+      "parallels": [
+        "Mark 16:10",
+        "Luke 24:10",
+        "Matthew 28:8"
+      ],
+      "refs": [
+        "John 1:34",
+        "1 Corinthians 9:1",
+        "Luke 24:10-11",
+        "John 20:25"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "On the evening of the same day the disciples are gathered behind locked doors for fear of the authorities. Jesus comes and stands among them and greets them with peace. The one who was killed stands among those who abandoned him, and his first word is not reproach.",
+      "grammar": "Ousēs oun opsias tē hēmera ekeinē tē mia sabbatōn, ‘it being evening on that day, the first of the week’, is a genitive absolute that stresses the same day. Tōn thurōn kekleismenōn, ‘the doors having been shut’, is another genitive absolute with a perfect participle: the doors were locked and stayed locked. John does not say how Jesus entered, only ēlthen ho Iēsous kai estē eis to meson, ‘Jesus came and stood in the middle’, and the aorist estē, ‘he stood’, is used again in verse 26 and in 21:4. Eirēnē humin, ‘peace to you’, has no verb; it is the ordinary greeting shalom aleikhem, but after 14:27 and 16:33 it is a gift.",
+      "words": [
+        "G3798",
+        "G2250",
+        "G4521",
+        "G2374",
+        "G2808",
+        "G5401",
+        "G2453",
+        "G2476",
+        "G3319",
+        "G1515"
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The risen Jesus is not bound by locked doors, yet he will show wounds that can be touched (verses 20 and 27). His body is real and continuous with the one that was crucified, and it is also transformed, what Paul calls a spiritual body (1 Corinthians 15:44), not a ghost and not a resuscitated corpse."
+        }
+      ],
+      "parallels": [
+        "Luke 24:36",
+        "Mark 16:14"
+      ],
+      "refs": [
+        "John 14:27",
+        "John 16:33",
+        "Luke 24:36-37",
+        "1 Corinthians 15:44",
+        "Romans 5:1"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Jesus shows them his hands and his side, and the disciples rejoice at seeing the Lord. The wounds identify him: the one who stands among them is the one who was crucified and pierced. His promise that their grief would turn to joy when they saw him again is kept (16:20-22).",
+      "grammar": "Edeixen tas cheiras kai tēn pleuran autois, ‘he showed them his hands and his side’, uses deiknumi, ‘to show’, and names the side because only John has told of the spear (19:34); Luke has hands and feet (Luke 24:39-40). Echarēsan oun hoi mathētai idontes ton kurion, ‘so the disciples rejoiced when they saw the Lord’, uses an aorist passive form of chairō with active meaning and an aorist participle of horaō for the seeing that caused the joy. Jesus had said, ‘I will see you again and you will rejoice’ (16:22, charēsetai), with the same verb.",
+      "words": [
+        "G1166",
+        "G5495",
+        "G4125",
+        "G5463",
+        "G3101",
+        "G1492H",
+        "G2962G"
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The risen body keeps the marks of the cross. Resurrection does not erase the history of suffering; it transfigures it, so that the wounds become the signs by which the Lord is known (Revelation 5:6, the Lamb standing as though slain)."
+        }
+      ],
+      "parallels": [
+        "Luke 24:39-41"
+      ],
+      "refs": [
+        "John 16:20-22",
+        "John 19:34",
+        "Luke 24:39-40",
+        "Revelation 5:6"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Jesus repeats his greeting of peace and gives the disciples their commission: as the Father sent him, so he sends them. The mission of the church takes its pattern and its authority from the mission of the Son.",
+      "grammar": "Kathōs apestalken me ho patēr, kagō pempō humas, ‘as the Father has sent me, I also send you’, pairs a perfect, apestalken, with a present, pempō. The perfect presents the Son's sending as a completed act whose effect continues: he remains the one sent. The present pempō, ‘I am sending’, begins the disciples' mission now. John uses apostellō and pempō largely interchangeably (compare 5:36-38), so the change of verb is stylistic. Kathōs, ‘just as’, sets out both a pattern and a ground: the disciples are sent in the manner of the Son and because of his sending. Jesus had already said the same in prayer (17:18).",
+      "words": [
+        "G3825",
+        "G1515",
+        "G2531",
+        "G0649",
+        "G3962",
+        "G3992"
+      ],
+      "history": "Jewish law had a developed idea of the agent, the shaliach, who acted with the authority of the one who sent him. The Mishnah states the principle that a man's agent is like the man himself (m. Berakhot 5:5). The same idea underlies Jesus' sayings that whoever receives the one he sends receives him (13:20), and it helps explain why the Greek word for one sent, apostolos, became the title of the Twelve.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The church does not invent its mission; it receives it from the Son, who received his from the Father. Its manner must match his: sent into the world in love, bearing witness to the truth, and willing to suffer for it (15:18-20, 17:18)."
+        }
+      ],
+      "parallels": [
+        "Luke 24:47-48",
+        "Matthew 28:19-20"
+      ],
+      "refs": [
+        "John 17:18",
+        "John 13:20",
+        "Matthew 28:18-20",
+        "Acts 1:8"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Jesus breathes on the disciples and says, “Receive the Holy Spirit.” The promise of the Advocate (14:16-17, 16:7) begins to be fulfilled, and the act recalls the breath of life given to the first human being. The mission of verse 21 is empowered by the Spirit of verse 22.",
+      "grammar": "Enephusēsen, ‘he breathed on’ or ‘into’, is from emphusaō, which occurs only here in the New Testament. It has no stated object in the Greek (the BSB supplies ‘them’). Labete pneuma hagion, ‘receive Holy Spirit’, is an aorist imperative with no article before pneuma hagion. Some older commentators took the lack of the article to mean a gift or power of the Spirit rather than the Spirit in person; others note that the Holy Spirit is often named without the article in Greek, especially after verbs of giving and receiving (Acts 2:4, 8:15-17), so the grammar does not settle the question.",
+      "words": [
+        "G1720",
+        "G2983",
+        "G4151G",
+        "G0040G"
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 2:7",
+          "note": "In the Hebrew the LORD God formed the man from the dust and breathed into his nostrils the breath of life, and the man became a living being. The Septuagint renders the verb enephusēsen, the same form John uses here, found nowhere else in the New Testament. The Greek of Ezekiel 37:9 uses the same verb when the prophet calls the breath to breathe into the slain so that they live. John does not quote either passage, but the rare verb connects the risen Jesus breathing on his disciples with God's first breath of life and with the prophetic hope of Israel raised from death by the Spirit: a new creation on the first day of the week."
+        }
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is given by the risen Jesus himself, as he promised: the Spirit could not be given until Jesus was glorified (7:39), and the Son sends him from the Father (15:26). How this Easter gift relates to Pentecost in Acts 2 is debated; John's point is that the Spirit is the breath of the new life Christ gives."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father sends the Son (verse 21), and the Son gives the Spirit (verse 22). Augustine cited this verse in his argument that the Spirit proceeds from the Son as well as from the Father (On the Trinity, book 4), a text that became part of the Western case for the filioque; Eastern theologians read it as the Son's giving of the Spirit in time, not as his eternal procession."
+        }
+      ],
+      "refs": [
+        "Genesis 2:7",
+        "Ezekiel 37:9",
+        "John 7:39",
+        "John 16:7",
+        "Acts 2:1-4"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Jesus gives the disciples authority concerning sins: those they forgive are forgiven, and those they retain are retained. The saying belongs with the mission and the Spirit of verses 21 and 22: the church, sent and empowered, declares God's forgiveness or its refusal.",
+      "grammar": "The verse has two conditional sentences, each with an aorist or present subjunctive and a perfect passive. An tinōn aphēte tas hamartias, apheōntai autois, ‘if you forgive the sins of any, they have been forgiven them’; an tinōn kratēte, kekratēntai, ‘if you retain (the sins) of any, they have been retained’. The passives are divine passives: God is the one who forgives. The perfect tense has been debated. J. R. Mantey argued in 1939 (Journal of Biblical Literature) that it means the disciples declare on earth what has already been decided in heaven; Henry Cadbury replied in the same journal that the perfect in the apodosis of such conditions expresses the certain result, not a prior decision. The verb krateō, ‘to hold fast’, is used for sins only here in the New Testament.",
+      "words": [
+        "G0863H",
+        "G0266",
+        "G2902"
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The risen Christ entrusts his church with declaring forgiveness. Traditions differ on how this is exercised: Catholic and Orthodox teaching connects it with priestly absolution in the sacrament of penance (Council of Trent, session 14), Lutheran teaching with the office of the keys in preaching and absolution (Augsburg Confession 28), and many Protestants with the proclamation of the gospel to which all believers bear witness. All agree that the authority is Christ's and the forgiveness is God's."
+        },
+        {
+          "id": "salvation",
+          "note": "Forgiveness of sins is at the center of what the church is sent to announce. Luke's account of the same evening says repentance for the forgiveness of sins is to be proclaimed in his name to all nations (Luke 24:47)."
+        }
+      ],
+      "text": "The manuscripts vary between the perfect apheōntai, ‘they have been forgiven’, which the modern editions print, the present aphientai, ‘they are forgiven’, found in many later manuscripts and in the Textus Receptus behind the King James Version. The meaning is not greatly changed: in each case the disciples' declaration and God's forgiveness correspond.",
+      "parallels": [
+        "Matthew 16:19",
+        "Matthew 18:18",
+        "Luke 24:47"
+      ],
+      "refs": [
+        "Matthew 16:19",
+        "Matthew 18:18",
+        "Luke 24:47",
+        "2 Corinthians 5:18-20",
+        "Acts 2:38"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "Thomas was absent on Easter evening. When the others tell him they have seen the Lord, he refuses to believe unless he sees the nail marks, puts his finger in them, and puts his hand into Jesus' side. His demand is the strongest statement of unbelief in the Gospel, and it is precise: he wants to know that the risen one is the crucified one.",
+      "grammar": "Thōmas de, heis ek tōn dōdeka, ho legomenos Didumos, ‘but Thomas, one of the Twelve, called Didymus’, introduces him as in 11:16 and 21:2. Elegon oun autō, ‘they kept telling him’, is an imperfect: the report was repeated. Heōrakamen ton kurion, ‘we have seen the Lord’, repeats Mary's words in the plural. Thomas's answer is a conditional with ean mē, ‘unless’, followed by three subjunctives (idō, balō, balō), and it ends with ou mē pisteusō, the strongest form of negation in Greek, ‘I will certainly not believe’. Ton tupon tōn hēlōn, ‘the mark of the nails’, uses tupos, the impression left by a blow; this verse is the only place in the Gospels that says Jesus was nailed, though Luke 24:39 implies it and Colossians 2:14 uses the image.",
+      "words": [
+        "G2381",
+        "G1427",
+        "G1324",
+        "G3708",
+        "G2962G",
+        "G5495",
+        "G5179",
+        "G2247",
+        "G0906H",
+        "G1147",
+        "G4125",
+        "G4100"
+      ],
+      "history": "Thomas's name is the Aramaic word for twin, and Didymus is its Greek equivalent. Early Christian tradition connected him with mission to the east: the Acts of Thomas, probably composed in Syriac in the third century, tells of his preaching and martyrdom in India, and the Christians of Kerala in southern India, the Saint Thomas Christians, trace their church to him. Edessa in Syria claimed to hold his relics from the fourth century onward.",
+      "refs": [
+        "John 11:16",
+        "John 14:5",
+        "Luke 24:39",
+        "Colossians 2:14",
+        "John 20:18"
+      ]
+    },
+    {
+      "v": "26-27",
+      "context": "Eight days later, on the next first day of the week, the disciples are together again with Thomas present. Jesus comes through the locked doors, greets them with peace, and turns to Thomas, offering him exactly what he demanded. Jesus knows the words Thomas said when he was not there.",
+      "grammar": "Meth' hēmeras oktō, ‘after eight days’, counts inclusively, so it means the following Sunday. Jesus' words echo Thomas's conditions almost word for word: phere ton daktulon sou hōde, ‘bring your finger here’, and phere tēn cheira sou kai bale eis tēn pleuran mou, ‘bring your hand and put it into my side’. The closing command, mē ginou apistos alla pistos, uses the present imperative of ginomai, ‘become’, with mē: ‘stop becoming unbelieving, but be believing’, or ‘do not be faithless but faithful’. The pair apistos and pistos is a word play that the King James Version kept (‘be not faithless, but believing’) and the BSB paraphrases as ‘Stop doubting and believe’.",
+      "words": [
+        "G2250",
+        "G3638",
+        "G2080",
+        "G2381",
+        "G2374",
+        "G2808",
+        "G3319",
+        "G1515",
+        "G5342",
+        "G1147",
+        "G1492H",
+        "G5495",
+        "G0906H",
+        "G4125",
+        "G1096",
+        "G0571",
+        "G4103"
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus offers his wounds to be touched. The risen body is tangible, the same body that was crucified, which is why the church has always confessed a bodily resurrection. The text never says Thomas actually touched him; the offer is enough."
+        }
+      ],
+      "refs": [
+        "John 20:19",
+        "John 20:25",
+        "Luke 24:39",
+        "1 John 1:1",
+        "Mark 9:24"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "Thomas answers with the highest confession in the Gospel: “My Lord and my God!” The disciple who demanded the most proof makes the fullest confession, and Jesus accepts it. The Gospel that began by saying the Word was God (1:1) ends its account of the risen Lord with a Jewish disciple calling Jesus God.",
+      "grammar": "Apekrithē Thōmas kai eipen autō, ‘Thomas answered and said to him’, makes clear that the words are addressed to Jesus. The confession, ho kurios mou kai ho theos mou, uses the nominative with the article as a form of address, a common construction in New Testament Greek and in the Septuagint (Psalm 35:23 in the Greek reads ho theos mou kai ho kurios mou). The repeated possessive mou, ‘my’, makes it a personal confession, not a general statement. Theodore of Mopsuestia read the words as an exclamation of praise to the Father, prompted by amazement, rather than a confession addressed to Jesus; that reading was among those condemned at the Second Council of Constantinople in 553, and the phrase eipen autō, ‘he said to him’, tells against it on grammatical grounds.",
+      "words": [
+        "G0611",
+        "G2381",
+        "G2036",
+        "G2962G",
+        "G2316"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 35:23",
+          "note": "The Hebrew prays, ‘Awake and rise to my defense, to my cause, my God and my Lord’ (Elohai va'Adonai). The Septuagint (Psalm 34:23) renders the pairing ho theos mou kai ho kurios mou, ‘my God and my Lord’. Thomas's words reverse the order but join the same two titles with the same possessives, the language of Israel's prayer addressed to Israel's God. John does not mark an allusion, but a Jewish reader would hear the Psalter's address to the LORD on the lips of a disciple speaking to the risen Jesus."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Thomas confesses as God the one whose wounds he has just been invited to touch. The confession holds together what the prologue declared: the Word who was God became flesh (1:1, 1:14). The risen Jesus is fully human, bearing the marks of the cross, and he is Lord and God."
+        },
+        {
+          "id": "trinity",
+          "note": "John calls Jesus God while distinguishing him from the Father, whom Jesus has just called ‘my God’ (verse 17). The Gospel's framing statements (1:1, 1:18, 20:28) are among the texts from which the church learned to confess one God in Father, Son, and Spirit."
+        }
+      ],
+      "refs": [
+        "John 1:1",
+        "John 1:18",
+        "Psalm 35:23",
+        "Romans 9:5",
+        "Titus 2:13"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "Jesus answers Thomas with a blessing on those who have not seen and yet have believed. The saying reaches beyond the room to every later reader of the Gospel, who must believe on the testimony of those who saw. It is the last word of Jesus in the body of the book.",
+      "grammar": "Hoti heōrakas me pepisteukas can be punctuated as a statement, ‘because you have seen me, you have believed’, or as a question, ‘have you believed because you have seen me?’; ancient manuscripts had little punctuation, and translations divide. Both verbs are perfects, presenting Thomas's seeing and believing as settled. Makarioi, ‘blessed’, introduces a beatitude, one of only two in John (the other is 13:17). Hoi mē idontes kai pisteusantes, ‘those who have not seen and have believed’, uses aorist participles; seen from the time of writing, it describes those who have already come to faith without sight, and it applies to every future believer.",
+      "words": [
+        "G3708",
+        "G4100",
+        "G3107",
+        "G1492H"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus does not despise Thomas's faith, but he pronounces a blessing on faith that rests on testimony rather than sight. That is the faith the Gospel is written to create (verse 31), and it is not second-class: 1 Peter 1:8 speaks of believers who love him without having seen him and rejoice with inexpressible joy."
+        }
+      ],
+      "refs": [
+        "1 Peter 1:8",
+        "2 Corinthians 5:7",
+        "Hebrews 11:1",
+        "John 17:20",
+        "John 13:17"
+      ]
+    },
+    {
+      "v": "30-31",
+      "context": "The narrator steps forward to say that Jesus did many other signs, not written in this book, and that these were written so that the reader may believe that Jesus is the Christ, the Son of God, and have life in his name. These two verses read like the conclusion of the Gospel, and many think they were its original ending, with chapter 21 added as an epilogue.",
+      "grammar": "Polla men oun kai alla sēmeia, ‘so then, many other signs’, uses men oun to sum up, answered by tauta de gegraptai, ‘but these have been written’. The perfect gegraptai presents the writing as a completed record that stands. Sēmeia, ‘signs’, is the Gospel's word for Jesus' miracles as revelations (2:11, 12:37), and the phrase ‘in the presence of his disciples’ presents them as witnessed. The purpose clause has two parts: hina pisteuēte hoti Iēsous estin ho christos ho huios tou theou, ‘so that you may believe that Jesus is the Christ, the Son of God’, and hina pisteuontes zōēn echēte en tō onomati autou, ‘so that believing you may have life in his name’. D. A. Carson (Journal of Biblical Literature, 1987) argued that the first clause should be read ‘that the Christ, the Son of God, is Jesus’, answering the question who the Messiah is, which would suit readers who already expected a Messiah; others keep the traditional order.",
+      "words": [
+        "G4183",
+        "G3303",
+        "G0243",
+        "G4592",
+        "G4160G",
+        "G1799",
+        "G1125",
+        "G0975",
+        "G4100",
+        "G5547",
+        "G5207",
+        "G2222",
+        "G3686"
+      ],
+      "text": "The manuscripts divide between pisteuēte, a present subjunctive, ‘that you may continue to believe’ (found in the first hand of Sinaiticus, in Vaticanus, and probably in P66), and pisteusēte, an aorist, ‘that you may come to believe’ (in a corrector of Sinaiticus, Alexandrinus, Bezae, and most later manuscripts). The Nestle-Aland edition prints the aorist with the sigma in brackets, and Westcott and Hort and the SBL edition print the present. The present suits a book written to strengthen believers, the aorist one written to win new ones, but in this period both forms could be used for beginning and continuing in faith.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The Gospel states its own purpose: faith in Jesus as Messiah and Son of God, leading to life. Everything in it, signs, discourses, passion, and resurrection, was selected for that end. Believing here is not only assent to a proposition but the trust through which life is received ‘in his name’, that is, through his person and authority."
+        },
+        {
+          "id": "messiah",
+          "note": "The two titles, the Christ and the Son of God, sum up the Gospel's portrait of Jesus. He is Israel's promised anointed king, and he is the Son who shares the Father's life and name; John joins the two confessions made by Nathanael (1:49) and Martha (11:27)."
+        }
+      ],
+      "refs": [
+        "John 21:25",
+        "John 1:49",
+        "John 11:27",
+        "1 John 5:13",
+        "John 2:11"
+      ]
+    }
+  ]
+}

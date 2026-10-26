@@ -1,0 +1,378 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jesus names the purpose of the warnings of 15:18-25 and of those still to come: he has told them in advance so that they will not fall away. The chapter is framed by this formula, which returns in its last verse.",
+      "grammar": "Tauta lelalēka humin, ‘these things I have spoken to you’, uses the perfect of laleō, as at 14:25 and 15:11. Hina mē skandalisthēte, ‘so that you may not be caused to stumble’, is an aorist passive subjunctive of skandalizō, from skandalon, a trap or stumbling block. The verb names the collapse of faith under pressure. John used it when many disciples took offense at the bread of life discourse and turned back (6:61, 6:66), and Mark uses it for what the disciples will do this very night: you will all fall away (Mark 14:27).",
+      "words": ["G2980", "G4624"],
+      "parallels": ["Mark 14:27", "Matthew 26:31"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Jesus guards his disciples' faith by telling them the truth in advance. Forewarning is one of the means by which he keeps them: when the trouble comes, it will confirm his word rather than refute it (verse 4). Even their desertion that night, which he also foretells (verse 32), does not end their discipleship."
+        }
+      ],
+      "refs": ["John 6:61", "John 13:19", "John 14:29", "Mark 14:27", "Matthew 13:21"]
+    },
+    {
+      "v": "2",
+      "context": "Jesus names the two forms the world's hatred will take: exclusion from the synagogue and death at the hands of people who believe they are serving God. The chapter note sets out the historical debate over the first and the grim later history of the second.",
+      "grammar": "Aposynagōgous poiēsousin humas, ‘they will make you excluded from the synagogue’, uses the adjective aposynagōgos, found only in John (9:22, 12:42), as a predicate: they will make you synagogue-less. All' erchetai hōra, ‘indeed, an hour is coming’, uses alla not as a contrast but to heighten, ‘and more than that’. Hina pas ho apokteinas humas doxē latreian prospherein tō theō, ‘when everyone who kills you will think he is offering service to God’, uses hina after hōra in the sense of ‘when’, a Johannine habit (12:23, 13:1). Doxē, ‘he will think’, from dokeō, names a sincere but mistaken conviction. Latreian prospherein, ‘to offer worship’, joins the noun for the temple's service to the verb for offering a sacrifice (Matthew 5:23-24): the killing is imagined as an act of worship.",
+      "words": ["G0656", "G4160G", "G5610", "G0615", "G1380", "G2999", "G4374"],
+      "parallels": ["Matthew 10:17", "Mark 13:9", "Luke 21:12"],
+      "text": "The Synoptic Gospels place the warning of trials in synagogues and before governors in the mission charge (Matthew 10:17-18) or in the discourse on the last days (Mark 13:9, Luke 21:12). John alone uses the word for exclusion from the synagogue and alone adds that the killers will think they serve God.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The most dangerous persecution comes from religious sincerity. Jesus does not say his followers will be killed by people who know they are doing wrong, but by people convinced they are pleasing God, a warning that applies to every religious community, including the church, which has at times been the persecutor."
+        }
+      ],
+      "refs": ["John 9:22", "John 12:42", "Acts 26:9-11", "Galatians 1:13-14", "Romans 10:2"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus traces the persecution to its root, that its agents have not known the Father or him. He tells them now so that they will remember when the hour comes, and explains why he did not say this earlier: he was with them.",
+      "grammar": "Hoti ouk egnōsan ton patera oude eme, ‘because they did not know the Father or me’, uses the aorist of ginōskō, looking at their failure to know as a whole. Hotan elthē hē hōra autōn, ‘when their hour comes’, uses autōn, ‘their’, in the best text: the hour belongs to the persecutors, as Jesus says to his captors in Luke, this is your hour and the power of darkness (Luke 22:53). Jesus' hour and theirs coincide at the cross. Mnēmoneuēte autōn hoti egō eipon humin, ‘you may remember them, that I told you’, recalls the purpose of 13:19 and 14:29. Tauta de humin ex archēs ouk eipon, hoti meth' humōn ēmēn, ‘these things I did not tell you from the beginning, because I was with you’, uses the imperfect ēmēn, ‘I was’, for his presence during the ministry.",
+      "words": ["G1097", "G5610", "G3421", "G0746", "G1510"],
+      "text": "The Synoptic Gospels record warnings of persecution early in the ministry (Matthew 5:10-12, 10:16-23). Commentators reconcile this with verse 4 in different ways. Some note that the earlier sayings spoke of persecution in general, while here Jesus speaks of the hatred that will fall on them precisely because he is gone; others, such as Brown, see the difference as one of the places where John's discourse stands apart from the Synoptic tradition. While Jesus was with them, the hostility fell on him.",
+      "refs": ["Luke 22:53", "John 13:19", "John 8:19", "Matthew 10:16-23", "1 John 3:1"]
+    },
+    {
+      "v": "5-6",
+      "context": "Jesus is going to the one who sent him, yet none of them asks where he is going. Their grief has filled them so completely that they are thinking of their loss rather than of his destination.",
+      "grammar": "Nun de hupagō pros ton pempsanta me, ‘but now I am going to the one who sent me’, uses John's verb for the departure and names the Father by his sending. Kai oudeis ex humōn erōta me, pou hupageis, ‘and none of you asks me, where are you going?’, has puzzled readers, since Peter asked exactly that in 13:36 and Thomas in effect in 14:5. Many commentators, among them Carson, stress the present tense erōta, ‘is asking’: none of them is now asking, because they are absorbed in what his going means for them. Others, such as Bultmann and Brown, take the tension as a sign that the discourse gathers material from more than one setting. Verse 6 gives the reason: hē lupē peplērōken humōn tēn kardian, ‘grief has filled your heart’, a perfect of plēroō with the singular heart shared by all, as in 14:1.",
+      "words": ["G5217", "G3992", "G2065", "G4226", "G3077", "G4137", "G2588"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus does not rebuke their grief but its narrowness. Sorrow that fills the heart can keep a person from asking the question that would comfort: where is he going? The answer, to the Father, is the ground of everything he goes on to promise."
+        }
+      ],
+      "refs": ["John 13:36", "John 14:5", "John 7:33", "John 14:28"]
+    },
+    {
+      "v": "7",
+      "context": "The fourth Advocate saying opens with a solemn assurance that turns the disciples' grief upside down: it is to their advantage that Jesus goes, because otherwise the Advocate will not come.",
+      "grammar": "All' egō tēn alētheian legō humin, ‘but I tell you the truth’, sets the emphatic egō against their sorrow. Sumpherei humin hina egō apelthō, ‘it is to your advantage that I go away’, uses sumpherō with a hina clause, the exact construction of Caiaphas's counsel that it was expedient for one man to die for the people (11:50, repeated at 18:14). John lets the high priest's cynical calculation and Jesus' loving explanation use the same words about the same death. Ean gar mē apelthō, ho paraklētos ouk eleusetai pros humas, ‘for if I do not go away, the Advocate will not come to you’; ean de poreuthō, pempsō auton pros humas, ‘but if I go, I will send him to you’. The two verbs of going, aperchomai and poreuomai, are used interchangeably.",
+      "words": ["G0225", "G4851", "G0565", "G3875", "G2064", "G4198", "G3992"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit's coming depends on Jesus' departure. John had already said that the Spirit was not yet given because Jesus was not yet glorified (7:39). The gift of the Spirit belongs to the new situation created by the cross, resurrection, and ascension, which is why Peter at Pentecost says that the exalted Jesus has received the Spirit from the Father and poured him out (Acts 2:33)."
+        },
+        {
+          "id": "exaltation",
+          "note": "Jesus' going to the Father is gain, not loss. The disciples will have him in a new way, through the Spirit, everywhere and at once, rather than bodily in one place, which is the sense in which the church has understood his departure to be to their advantage."
+        }
+      ],
+      "refs": ["John 7:39", "John 11:50", "John 20:22", "Acts 2:33", "John 14:16"]
+    },
+    {
+      "v": "8",
+      "context": "When the Advocate comes he will turn the tables on the world, convicting it concerning sin, righteousness, and judgment. Verses 9 to 11 explain each of the three.",
+      "grammar": "Kai elthōn ekeinos elenxei ton kosmon, ‘and having come, that one will convict the world’, uses the future of elenchō, a verb of exposing and proving wrong, often in a legal setting. The three objects are each introduced by peri, ‘concerning’: peri hamartias kai peri dikaiosunēs kai peri kriseōs, ‘concerning sin and concerning righteousness and concerning judgment’. Dikaiosunē, ‘righteousness’, appears in John's Gospel only here and in verse 10. The question interpreters argue over is whether elenchō means to convince the world (so that it comes to see the truth), to convict it (proving its guilt whether or not it accepts the verdict), or both; the three explanatory clauses that follow each begin with hoti, which may be causal (‘because’) or explanatory (‘in that’).",
+      "words": ["G2064", "G1651", "G2889", "G0266", "G1343", "G2920"],
+      "history": "Modern study has set this verse within the trial motif that runs through the whole Gospel. Andrew Lincoln (Truth on Trial: The Lawsuit Motif in the Fourth Gospel, 2000) argued that John presents Jesus' ministry as a cosmic lawsuit in which the world puts Jesus on trial and is itself tried; here the Advocate reopens the case after the world's verdict and reverses it. D. A. Carson's article in the Journal of Biblical Literature (1979) argued that each clause convicts the world of its own sin, its own false righteousness, and its own false judgment. The fulfillment in Acts is a crowd cut to the heart by Peter's Spirit-filled preaching, asking what they must do (Acts 2:37).",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The world that judged Jesus is itself judged. The Spirit's work toward the world is not first comfort but exposure, bringing to light the world's guilt as the necessary first step toward its repentance and faith."
+        }
+      ],
+      "refs": ["John 3:18-21", "Acts 2:36-37", "1 Corinthians 14:24-25", "John 12:31", "Acts 24:25"]
+    },
+    {
+      "v": "9",
+      "context": "The first charge: the Spirit will expose the world's sin, and its sin is that it does not believe in Jesus.",
+      "grammar": "Peri hamartias men, hoti ou pisteuousin eis eme, ‘concerning sin, on the one hand, because they do not believe in me’. The particle men begins a series answered by de in verses 10 and 11, binding the three charges together. The hoti clause can give the cause of the conviction (the Spirit convicts because they do not believe) or define the sin (the sin in question is that they do not believe). Either way the verse names unbelief as the root sin, as Jesus told his opponents that unless they believed that I am, they would die in their sins (8:24).",
+      "words": ["G0266", "G4100"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "In John, sin is at bottom a refusal of the light that has come (3:19). Other sins are not denied, but the sin the Spirit presses on the world is the rejection of the Son, because it is the rejection of God's remedy for every other sin."
+        },
+        {
+          "id": "faith",
+          "note": "If unbelief is the root sin, faith is not one virtue among many but the turning of the whole person to God's Son. The verse makes believing in Jesus the dividing line on which the Spirit's conviction turns."
+        }
+      ],
+      "refs": ["John 8:24", "John 3:18-19", "John 15:22", "Hebrews 3:12"]
+    },
+    {
+      "v": "10",
+      "context": "The second charge: the Spirit will expose the world concerning righteousness, because Jesus is going to the Father and the disciples will see him no more.",
+      "grammar": "Peri dikaiosunēs de, hoti pros ton patera hupagō kai ouketi theōreite me, ‘concerning righteousness, because I am going to the Father and you no longer see me’. The link between righteousness and Jesus' departure is the hardest point in the passage. On one reading, the righteousness is Jesus' own: the world condemned him as a sinner (9:24) and a criminal (18:30), but the Father's receiving him shows that he was righteous, as the early preaching called him the Righteous One (Acts 3:14) and a hymn said he was vindicated by the Spirit (1 Timothy 3:16). On another, argued by Carson, the righteousness is the world's false righteousness, which Jesus exposed while he was present and which the Spirit must expose once he is gone. The shift to the second person, ‘you no longer see me’, is unexpected in a charge against the world, and it reminds the disciples that his absence is the condition of the Spirit's work.",
+      "words": ["G1343", "G3962", "G5217", "G2334"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The ascension is God's verdict on the crucified. Jesus' going to the Father overturns the world's judgment and declares him righteous, which is why the apostles preached the resurrection and exaltation as God's reversal of what the rulers had done (Acts 2:23-24, 2:36)."
+        },
+        {
+          "id": "justification",
+          "note": "Luther and other Reformers heard in the verse the righteousness of Christ that avails for believers: the Spirit convinces consciences that righteousness is found not in their works but in the one who has gone to the Father on their behalf. The reading goes beyond the verse's immediate sense but draws on Paul's teaching that Christ was raised for our justification (Romans 4:25)."
+        }
+      ],
+      "refs": ["Acts 3:14-15", "1 Timothy 3:16", "Romans 4:25", "John 9:24", "Isaiah 53:11"]
+    },
+    {
+      "v": "11",
+      "context": "The third charge: the Spirit will expose the world concerning judgment, because the ruler of this world has been judged. The one who seemed to judge Jesus at the cross is himself condemned.",
+      "grammar": "Peri de kriseōs, hoti ho archōn tou kosmou toutou kekritai, ‘concerning judgment, because the ruler of this world has been judged’. Kekritai is a perfect passive of krinō: the judgment is complete and its verdict stands. Jesus spoke of it in the future in 12:31 (now the ruler of this world will be cast out) and as imminent in 14:30. From the Spirit's point of view, after the cross, it is accomplished. The world's judgment of Jesus is shown to be the judgment of the world's own ruler.",
+      "words": ["G2920", "G0758", "G2889", "G2919"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment in John is already under way at the cross, where the devil is defeated in the act that seemed to be his victory. Paul describes the same reversal when he says God disarmed the rulers and authorities and triumphed over them in the cross (Colossians 2:15)."
+        }
+      ],
+      "refs": ["John 12:31", "John 14:30", "Colossians 2:15", "Hebrews 2:14", "1 John 3:8"]
+    },
+    {
+      "v": "12",
+      "context": "Jesus has much more to say, but they cannot bear it now. The verse introduces the fifth Advocate saying: what the disciples cannot carry tonight, the Spirit will lead them into later.",
+      "grammar": "Eti polla echō humin legein, ‘I still have many things to say to you’. All' ou dunasthe bastazein arti, ‘but you cannot bear them now’, uses bastazō, ‘carry’ or ‘bear a load’. John uses the same verb when Jesus goes out carrying his own cross (19:17). The word pictures truth as a weight that needs strength to carry, and arti, ‘now’, limits the inability to the present hour: after the resurrection and the gift of the Spirit they will be able to bear what they cannot bear tonight.",
+      "words": ["G2089", "G4183", "G3004G", "G1410", "G0941", "G0737"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Revelation is given in measure to what hearers can receive. The verse does not suggest that Jesus' teaching was incomplete in content but that the disciples' understanding of it was, and that the Spirit would bring them to understand what he had said and done. Augustine (Tractates on John 96-97) warned against those who used the verse to claim secret teachings the apostles never gave."
+        }
+      ],
+      "refs": ["John 19:17", "Mark 4:33", "1 Corinthians 3:1-2", "Hebrews 5:11-14", "John 14:26"]
+    },
+    {
+      "v": "13",
+      "context": "The fifth Advocate saying. The Spirit of truth will guide the disciples into all the truth. He will speak what he hears, as Jesus spoke what he heard from the Father, and he will declare what is to come.",
+      "grammar": "Hotan de elthē ekeinos, to pneuma tēs alētheias, ‘but when that one comes, the Spirit of truth’, uses the masculine ekeinos with the neuter pneuma in apposition; the pronoun refers back to the paraklētos of verse 7. Hodēgēsei humas, ‘he will guide you’, is the verb of leading someone along a road (see the chapter note on the variant ‘into’ or ‘in’ all the truth). Ou gar lalēsei aph' heautou, all' hosa akousei lalēsei, ‘for he will not speak from himself, but whatever he hears he will speak’, describes the Spirit exactly as Jesus described himself (7:17, 12:49). Ta erchomena anangelei humin, ‘he will declare to you the things to come’, uses anangellō, the verb the Samaritan woman used of what the Messiah would do (4:25) and the Septuagint's verb in Isaiah when the LORD challenges the idols to declare what is to come (Isaiah 41:22-23).",
+      "words": ["G2064", "G4151G", "G0225", "G3594", "G2980", "G0191", "G0312"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit's teaching is received, not invented: he speaks what he hears. As the Son does not speak on his own authority but the Father's, the Spirit speaks what belongs to the Father and the Son. His guidance is into the truth that Jesus is (14:6), not away from him."
+        },
+        {
+          "id": "prophecy",
+          "note": "The things to come have been read as the events of the passion and resurrection about to unfold, as the church's future and the end of history (Revelation has been cited as an example), or as the whole new order that Jesus' going inaugurates. The verse does not specify, and each reading has able defenders; what it makes clear is that the Spirit's foresight serves the same revelation."
+        }
+      ],
+      "refs": ["John 4:25", "John 12:49", "John 14:6", "Psalm 25:5", "1 Corinthians 2:10-13"]
+    },
+    {
+      "v": "14-15",
+      "context": "The Spirit's aim is to glorify Jesus. He will take what is Jesus' and declare it to the disciples, and what is Jesus' is everything the Father has. The chain from Father to Son to Spirit to disciples is complete.",
+      "grammar": "Ekeinos eme doxasei, ‘that one will glorify me’, puts eme, ‘me’, before the verb for emphasis. Hoti ek tou emou lēmpsetai kai anangelei humin, ‘because he will take from what is mine and declare it to you’, uses ek tou emou, ‘from what is mine’, a neuter possessive. Verse 15 gives the ground: panta hosa echei ho patēr ema estin, ‘all things that the Father has are mine’. The saying echoes the father's words to the elder son in Luke's parable, all that is mine is yours (Luke 15:31), and Jesus will say it to the Father in 17:10, in both directions. Dia touto eipon hoti ek tou emou lambanei, ‘that is why I said that he takes from what is mine’, has the present lambanei in the Nestle-Aland text, where later manuscripts repeat the future lēmpsetai.",
+      "words": ["G1392", "G2983", "G0312", "G3956", "G2192", "G3962"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Spirit receives from the Son what the Son has from the Father. Cyril of Alexandria used these verses to argue that the Spirit belongs to the Son's own being, and Western theologians cited them in support of the filioque; Eastern theologians have answered that the verses concern what the Spirit makes known, not the origin of his being. Both readings agree that the Father, the Son, and the Spirit share one life, since all the Father has is the Son's and the Spirit declares it."
+        },
+        {
+          "id": "glory",
+          "note": "The Spirit glorifies not himself but Jesus. This gives the church its surest test of any claim to the Spirit's work: whether it makes Christ known and honored (1 John 4:2-3, 1 Corinthians 12:3)."
+        }
+      ],
+      "refs": ["John 17:10", "Luke 15:31", "Matthew 11:27", "1 Corinthians 12:3", "1 John 4:2-3"]
+    },
+    {
+      "v": "16-18",
+      "context": "Jesus speaks a riddle: in a little while they will not see him, and again in a little while they will. The disciples turn to one another in bewilderment, repeating his words and the earlier saying about going to the Father. John slows the scene to let their confusion be felt.",
+      "grammar": "Mikron kai ouketi theōreite me, kai palin mikron kai opsesthe me, ‘a little while and you no longer see me, and again a little while and you will see me’, balances two clauses around mikron, ‘a little’. The verbs differ, theōreō in the first and the future of horaō in the second. Some older commentators found a contrast between physical and spiritual sight, but John uses the verbs of seeing largely interchangeably, and most modern interpreters treat the change as variation. Verse 17 reports the disciples talking pros allēlous, ‘to one another’, and quoting both sayings; verse 18 uses the imperfect elegon, ‘they kept saying’, and to mikron, with the article, ‘this “little while”’, as if quoting a puzzling phrase. Ouk oidamen ti lalei, ‘we do not know what he is saying’.",
+      "words": ["G3398", "G2334", "G3700G", "G3101", "G0240", "G3004G", "G6063"],
+      "history": "The two little whiles have been read in three main ways. Most interpreters take the first as the time until Jesus' death and the second as the time until the resurrection appearances, when the disciples saw the Lord (20:20). Others extend the second to the coming of the Spirit at Pentecost. Augustine (Tractates on John 101) applied the second little while to the whole period of the church before Christ's return, short in God's reckoning though long to those who wait. The three readings overlap, as the coming of Jesus in chapter 14 does.",
+      "text": "At the end of verse 16 the King James Version adds ‘because I go to the Father’, which the earliest manuscripts lack; scribes probably supplied it from the disciples' quotation in verse 17, where it is original and refers back to verse 10.",
+      "refs": ["John 14:19", "John 7:33", "John 13:33", "John 20:20", "Hebrews 10:37"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus knows what they want to ask before they ask it, and he names their question himself. The narrator's note prepares for the disciples' confession in verse 30 that he has no need for anyone to question him.",
+      "grammar": "Egnō ho Iēsous hoti ēthelon auton erōtan, ‘Jesus knew that they wanted to ask him’, uses the aorist egnō for his perception and the imperfect ēthelon, ‘they were wanting’, for their unspoken desire. Peri toutou zēteite met' allēlōn, ‘are you inquiring about this with one another?’, uses zēteō in the sense of discussing or debating. John has several times noted Jesus' knowledge of what is in people (2:24-25, 6:61, 6:64, 13:11).",
+      "words": ["G1097", "G2309", "G2065", "G2212", "G3398"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus knows his disciples' hearts and meets their questions before they can put them into words. The Gospel presents this knowledge as one of the signs of who he is, without denying the real human limits it also records (11:34)."
+        }
+      ],
+      "refs": ["John 2:24-25", "John 6:61", "John 16:30", "John 21:17", "Psalm 139:4"]
+    },
+    {
+      "v": "20",
+      "context": "With a solemn double amen, Jesus answers the riddle with a reversal: they will weep and lament while the world rejoices; they will grieve, but their grief will become joy.",
+      "grammar": "Klausete kai thrēnēsete humeis, ‘you will weep and wail’, joins klaiō, the ordinary word for weeping (Mary at the tomb, 20:11), with thrēneō, the word for singing a dirge over the dead (Luke 23:27). Ho de kosmos charēsetai, ‘but the world will rejoice’, sets the two responses to the cross side by side. Humeis lupēthēsesthe, ‘you will be grieved’, is a future passive. All' hē lupē humōn eis charan genēsetai, ‘but your grief will become joy’, uses ginomai with eis, ‘turn into’: the grief is not replaced by joy from outside but is itself transformed, as the next verse's image of labor shows.",
+      "words": ["G0281", "G2799", "G2354", "G2889", "G5463", "G3076", "G3077", "G5479"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus does not forbid grief or promise that it will be brief in feeling. He promises that it will be turned. Christian hope does not deny sorrow but gives it a direction, as in the Beatitude of those who weep now and will laugh (Luke 6:21)."
+        }
+      ],
+      "refs": ["Luke 6:21", "Psalm 30:5", "Psalm 126:5-6", "John 20:11", "John 20:20"]
+    },
+    {
+      "v": "21",
+      "context": "Jesus explains the reversal with an image every listener knew. A woman in labor has pain because her hour has come; when the child is born she no longer remembers the anguish, for joy that a human being has been born into the world.",
+      "grammar": "Hē gunē hotan tiktē lupēn echei, ‘the woman, when she gives birth, has pain’, uses the generic article, a woman as such. Hoti ēlthen hē hōra autēs, ‘because her hour has come’, uses hōra, the word John has used throughout the Gospel for Jesus' own hour (2:4, 12:23, 17:1): the image of labor is set within the vocabulary of the passion. Ouketi mnēmoneuei tēs thlipseōs, ‘she no longer remembers the affliction’, uses thlipsis, the pressure or anguish that returns in verse 33. Hoti egennēthē anthrōpos eis ton kosmon, ‘that a human being has been born into the world’, uses anthrōpos, not the more usual word for a child. Some interpreters hear an echo of Eve's words at the birth of Cain, I have gotten a man (Genesis 4:1).",
+      "words": ["G1135G", "G5088", "G3077", "G5610", "G1080", "G3813", "G2347", "G0444"],
+      "ot": [
+        {
+          "ref": "Isaiah 26:16-19",
+          "note": "In the Hebrew, Israel confesses that like a pregnant woman about to give birth, who writhes and cries out in her pangs, so were they before the LORD; they were pregnant and writhed, but gave birth to wind and brought no deliverance. The very next verse promises that the LORD's dead will live and their bodies rise, and those who dwell in the dust will awake and sing. The Septuagint keeps the image (hōs hē ōdinousa engizei tou tekein, ‘as the one in labor draws near to give birth’). Isaiah 66:7-9 pictures Zion giving birth to a son and a nation in a single day. Jesus does not quote either passage, but the prophets' image of labor that ends in new life, and in Isaiah 26 in resurrection, lies behind his words on the night before the cross."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The labor of the cross ends in the birth of new life. The image suits John's account of Easter, where the disciples' grief becomes joy when they see the Lord (20:20), and Paul's picture of the whole creation groaning in labor pains until the redemption of the body (Romans 8:22-23)."
+        }
+      ],
+      "refs": ["Isaiah 26:17-19", "Isaiah 66:7-9", "Romans 8:22-23", "Genesis 4:1", "Micah 4:10"]
+    },
+    {
+      "v": "22",
+      "context": "Jesus applies the image: they have sorrow now, but he will see them again, their hearts will rejoice, and no one will take their joy away.",
+      "grammar": "Kai humeis oun nun men lupēn echete, ‘so you also now have sorrow’, uses men, answered by de in the next clause. Palin de opsomai humas, ‘but I will see you again’, reverses the direction of verse 16. There they would see him; here he will see them, and the initiative is his. Kai charēsetai humōn hē kardia, ‘and your heart will rejoice’, is a word-for-word phrase from Isaiah (see below). Kai tēn charan humōn oudeis airei aph' humōn, ‘and your joy no one takes from you’, has the present airei in the Nestle-Aland text; other manuscripts have the future arei, ‘will take’. The present makes the promise a settled fact.",
+      "words": ["G3568", "G3077", "G3708", "G5463", "G2588", "G5479", "G0142"],
+      "ot": [
+        {
+          "ref": "Isaiah 66:14",
+          "note": "At the end of Isaiah, after the image of Zion in labor (66:7-9), the LORD comforts Jerusalem as a mother comforts her child and promises, ‘you will see, and your heart will rejoice’ (Hebrew ure'item ve-sas libbekhem). The Septuagint reads kai opsesthe, kai charēsetai humōn hē kardia, and John 16:22 has exactly kai charēsetai humōn hē kardia. The move from labor (16:21) to a rejoicing heart (16:22) follows Isaiah's own sequence. John changes one thing: in Isaiah the people will see; in John, Jesus will see them."
+        }
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The joy Jesus promises cannot be taken because its source cannot be taken: it rests on his risen life, not on circumstances. Its first fulfillment is Easter evening, when the disciples rejoiced at seeing the Lord (20:20)."
+        }
+      ],
+      "refs": ["Isaiah 66:14", "John 20:20", "1 Peter 1:8", "Romans 8:35-39", "Luke 24:41"]
+    },
+    {
+      "v": "23",
+      "context": "In that day, after the resurrection, the disciples will no longer need to ask Jesus questions, and whatever they ask the Father in his name he will give them.",
+      "grammar": "Kai en ekeinē tē hēmera eme ouk erōtēsete ouden, ‘and in that day you will ask me nothing’, uses erōtaō, which can mean to ask a question or to make a request. Many commentators, among them Brown, take it here as asking questions, since the disciples have just wanted to question him (verse 19) and in that day their questions will be answered; the second half of the verse then turns to requests with aiteō. Others hold that the two verbs are near synonyms here and that the point is a change in prayer: they will ask the Father directly. Amēn amēn legō humin, an ti aitēsēte ton patera en tō onomati mou dōsei humin, ‘whatever you ask the Father in my name he will give you’ (the manuscripts differ over where in my name stands; see the chapter note).",
+      "words": ["G2250", "G2065", "G0154", "G3686", "G1325"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "After Easter the disciples stand before the Father in the Son's name, with the access that belongs to him. The promise does not bypass Jesus; it is because they come in his name that they may ask the Father directly."
+        }
+      ],
+      "refs": ["John 14:13-14", "John 15:16", "John 16:19", "Ephesians 2:18", "Hebrews 4:16"]
+    },
+    {
+      "v": "24",
+      "context": "Until now they have asked nothing in his name. Jesus urges them to ask and receive, so that their joy may be complete.",
+      "grammar": "Heōs arti ouk ētēsate ouden en tō onomati mou, ‘until now you have asked nothing in my name’, uses the aorist to sum up the time of the ministry: prayer in Jesus' name belongs to the time after his glorification. Aiteite kai lēmpsesthe, ‘ask and you will receive’, is a present imperative, suggesting continued asking, followed by a future promise. Hina hē chara humōn ē peplērōmenē, ‘so that your joy may be made full’, is a periphrastic perfect (the verb to be with a perfect participle), describing a state of fullness that lasts; the same phrase returns in 17:13 and 1 John 1:4.",
+      "words": ["G0737", "G0154", "G3686", "G2983", "G5479", "G4137"],
+      "parallels": ["Matthew 7:7-8", "Luke 11:9-10"],
+      "history": "The Sunday before the Ascension took its Latin name, Rogate, ‘ask’, from the Gospel reading that included this verse in the historic Western lectionary, and the Rogation days that followed were days of prayer and procession for the crops. The custom of beating the bounds of the parish on those days survived in English villages long after the Reformation.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The goal of prayer in Jesus' name is joy, and joy in its fullness. The Synoptic promise, ask and it will be given you (Matthew 7:7), is here tied to the new access the disciples will have after the resurrection."
+        }
+      ],
+      "refs": ["Matthew 7:7-8", "James 4:2-3", "John 15:11", "John 17:13", "1 John 1:4"]
+    },
+    {
+      "v": "25",
+      "context": "Jesus admits that he has spoken in figures, and promises an hour when he will speak plainly about the Father. The saying prepares for the plain summary of verse 28 and for the disciples' premature claim in verse 29.",
+      "grammar": "Tauta en paroimiais lelalēka humin, ‘these things I have spoken to you in figures’, uses paroimia, the word for the shepherd discourse in 10:6. Erchetai hōra hote ouketi en paroimiais lalēsō humin, ‘an hour is coming when I will no longer speak to you in figures’, alla parrēsia peri tou patros apangelō humin, ‘but I will tell you plainly about the Father’. Parrēsia, ‘openness’ or ‘plainness’, runs through the Gospel: the crowds want Jesus to speak openly (10:24), he tells the disciples plainly that Lazarus is dead (11:14), and before the high priest he says he has spoken openly to the world (18:20). The hour of plain speech is most naturally the time after the resurrection, when the Spirit teaches (14:26), though verses 26-28 already give a foretaste.",
+      "words": ["G3942", "G2980", "G5610", "G3954", "G0518"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' figures were not meant to hide the truth permanently but to wait for the hour when it could be grasped. The fullness of revelation comes with the cross, the resurrection, and the Spirit, in whose light the figures become plain."
+        }
+      ],
+      "refs": ["John 10:6", "John 10:24", "John 11:14", "John 18:20", "Mark 4:33-34"]
+    },
+    {
+      "v": "26-27",
+      "context": "In that day they will ask in Jesus' name, and he does not need to ask the Father on their behalf, because the Father himself loves them. The reason is their love for Jesus and their faith that he came from God.",
+      "grammar": "En ekeinē tē hēmera en tō onomati mou aitēsesthe, ‘in that day you will ask in my name’, uses the future middle of aiteō. Kai ou legō humin hoti egō erōtēsō ton patera peri humōn, ‘and I do not say to you that I will ask the Father for you’, does not deny that Jesus prays for his people, which he does in the next chapter (17:9, 17:20) and which the New Testament says he continues to do (Romans 8:34, Hebrews 7:25). It denies that the Father must be persuaded. Verse 27 gives the reason with autos gar ho patēr philei humas, ‘for the Father himself loves you’, putting autos, ‘himself’, first. Hoti humeis eme pephilēkate kai pepisteukate, ‘because you have loved me and have believed’, uses two perfects for a love and faith that have taken hold. The verb is phileō, the verb of friendship (15:14-15), used here of both the Father's love and the disciples'.",
+      "words": ["G2250", "G0154", "G2065", "G5368", "G4100", "G1831"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus' intercession is not the persuasion of an unwilling Father. The Father already loves those who love his Son; the Son's intercession and the Father's love are one will for their good, and prayer in his name is the privilege of children, not the petition of strangers."
+        },
+        {
+          "id": "love",
+          "note": "The Father loves the disciples himself. The verse removes any picture of a loving Son standing between his people and a distant Father: the love that sent the Son (3:16) is the love that receives those who come in his name."
+        }
+      ],
+      "refs": ["John 17:9", "Romans 8:34", "Hebrews 7:25", "John 14:21", "1 John 4:19"]
+    },
+    {
+      "v": "28",
+      "context": "Jesus sums up his whole mission in one sentence: he came from the Father into the world, and he is leaving the world to go to the Father. It is the plainest statement yet, and the disciples seize on it.",
+      "grammar": "The verse has four verbs in two matching pairs. Exēlthon para tou patros kai elēlutha eis ton kosmon, ‘I came out from the Father and have come into the world’, uses the aorist exēlthon for the event of his coming and the perfect elēlutha for its lasting result, that he is here. Palin aphiēmi ton kosmon kai poreuomai pros ton patera, ‘again I am leaving the world and going to the Father’, uses two presents for what is under way. The pattern is a descent and an ascent, from the Father, into the world, out of the world, to the Father, and it gathers the Gospel's christology into a single line.",
+      "words": ["G1831", "G3962", "G2064", "G2889", "G0863G", "G4198"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus' origin is with the Father, and his coming into the world is a coming from God, not the rise of a human being to divine favor. The verse is a compact form of what the prologue says of the Word who was with God and became flesh (1:1, 1:14)."
+        },
+        {
+          "id": "exaltation",
+          "note": "The return to the Father completes the movement the incarnation began. Paul's hymn describes the same shape, the one in the form of God emptying himself and being highly exalted (Philippians 2:6-11)."
+        }
+      ],
+      "refs": ["John 13:3", "John 3:13", "John 1:14", "Ephesians 4:9-10", "Philippians 2:6-11"]
+    },
+    {
+      "v": "29-30",
+      "context": "The disciples seize on the plain words: now at last he is speaking plainly, now they know he knows everything, now they believe he came from God. Their confession is true, but their confidence is premature, as the next verses show.",
+      "grammar": "Ide nun en parrēsia laleis kai paroimian oudemian legeis, ‘look, now you are speaking plainly and speaking no figure’, repeats the terms of verse 25, as if the promised hour had already arrived. Nun oidamen hoti oidas panta, ‘now we know that you know all things’, and kai ou chreian echeis hina tis se erōta, ‘and you have no need that anyone should question you’, answer verse 19, where Jesus anticipated their question. En toutō pisteuomen hoti apo theou exēlthes, ‘by this we believe that you came from God’, echoes his own words in verse 28 and verse 27. The repeated nun, ‘now’, carries their eagerness.",
+      "words": ["G3568", "G3954", "G3942", "G6063", "G5532", "G2065", "G4100", "G1831"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The disciples' confession is right in content: Jesus did come from God. What they lack is not the right words but the strength that comes only after the cross and the Spirit. The Gospel treats their faith as real but immature, and does not despise it."
+        }
+      ],
+      "refs": ["John 16:19", "John 16:25", "John 21:17", "John 17:8", "Mark 9:24"]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus answers their confidence with a question and a prediction: the hour has come when they will be scattered, each to his own, and will leave him alone. Yet he is not alone, because the Father is with him.",
+      "grammar": "Arti pisteuete, ‘now you believe’, can be punctuated as a question (‘do you now believe?’) or a statement with an edge (see the chapter note); arti, ‘just now’, sets their momentary confidence against what is coming. Idou erchetai hōra kai elēluthen, ‘look, an hour is coming and has come’, pairs a present with a perfect, as at 4:23 and 5:25. Hina skorpisthēte hekastos eis ta idia, ‘when you will be scattered, each to his own’, uses skorpizō, the verb for the wolf scattering the sheep (10:12), and ta idia, ‘his own things’ or ‘his own home’, the phrase of 1:11 and 19:27. Kame monon aphēte, ‘and you will leave me alone’, is followed by the reply kai ouk eimi monos, hoti ho patēr met' emou estin, ‘and I am not alone, because the Father is with me’, which repeats 8:29.",
+      "words": ["G0737", "G4100", "G5610", "G2064", "G4650", "G2398", "G3441", "G0863G"],
+      "parallels": ["Mark 14:27", "Matthew 26:31"],
+      "ot": [
+        {
+          "ref": "Zechariah 13:7",
+          "note": "The Hebrew reads, ‘strike the shepherd, and the sheep will be scattered’ (hakh et-haro'eh u-tefutsena hatso'n), part of a prophecy in which God refines a remnant through the striking of his shepherd. The main Septuagint text differs, reading ‘strike the shepherds and draw out the sheep’, while Mark 14:27 and Matthew 26:31 quote a form closer to the Hebrew, with diaskorpizō, ‘scatter’. John does not quote the verse, but his skorpisthēte, ‘you will be scattered’, and the context of the shepherd who lays down his life (10:11-15) point in the same direction."
+        }
+      ],
+      "text": "In Mark and Matthew Jesus quotes Zechariah on the way to the Mount of Olives and adds the promise that after he is raised he will go before them to Galilee (Mark 14:27-28). John has no quotation but adds what the others do not: that even when the disciples leave him, the Father does not. Mark alone records the young man who fled naked (Mark 14:51-52), a vivid picture of the scattering.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Son's communion with the Father holds when every human companion fails. John's I am not alone stands beside Mark's cry from the cross, my God, my God, why have you forsaken me? (Mark 15:34), and the church has held both: the Son truly bore abandonment and was never separated from the Father's love."
+        }
+      ],
+      "refs": ["John 8:29", "John 10:12", "Mark 14:50", "Zechariah 13:7", "2 Timothy 4:16-17"]
+    },
+    {
+      "v": "33",
+      "context": "The discourse ends with a summary and a victory. Jesus has spoken so that in him they may have peace. In the world they will have trouble, but they are to take courage: he has overcome the world. The next words he speaks are to the Father.",
+      "grammar": "Tauta lelalēka humin hina en emoi eirēnēn echēte, ‘I have told you these things so that in me you may have peace’, closes the chapter with the formula that opened it (verse 1). The two spheres stand in contrast: en emoi, ‘in me’, peace; en tō kosmō, ‘in the world’, thlipsin echete, ‘you have tribulation’. Alla tharseite, ‘but take courage’, is a present imperative of tharseō, used only here in John; in the Synoptic Gospels it is Jesus' word to the paralyzed man (Matthew 9:2) and to the frightened disciples on the lake (Mark 6:50). Egō nenikēka ton kosmon, ‘I have overcome the world’, is a perfect spoken before the cross, presenting the victory as accomplished and standing.",
+      "words": ["G2980", "G1515", "G2889", "G2347", "G2293", "G3528"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus speaks of his death as a victory over the world. Gustaf Aulén (Christus Victor, 1931) argued that this theme of Christ's triumph over the powers of sin, death, and the devil was the classic view of the atonement in the early church, and the verse is one of its texts. Other accounts of the atonement, which stress sacrifice and substitution, do not deny the victory but explain it by what the cross accomplished for sinners."
+        },
+        {
+          "id": "suffering",
+          "note": "Tribulation is promised, not excluded. The peace Jesus gives is found in him, not in the world's conditions, and courage rests not on the disciples' strength but on a victory already won, the confidence 1 John 5:4-5 names as the faith that overcomes the world."
+        }
+      ],
+      "refs": ["John 14:27", "1 John 5:4-5", "Romans 8:37", "Revelation 5:5", "Acts 14:22"]
+    }
+  ]
+}

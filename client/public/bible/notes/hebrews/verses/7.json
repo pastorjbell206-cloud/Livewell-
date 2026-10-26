@@ -1,0 +1,235 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The author finally takes up the subject he postponed in 5:11. A single long sentence (verses 1-3) retells Genesis 14:17-20 in compressed form and then interprets two names: Melchizedek means king of righteousness, and king of Salem means king of peace.",
+      "grammar": "Houtos gar ho Melchisedek, ‘for this Melchizedek’, picks up the name that closed 6:20, and the “for” shows that chapter 7 explains the Psalm 110 quotation. Tou theou tou hupsistou, ‘of God the Most High’, reproduces the Septuagint's rendering of El Elyon. Sunantēsas and eulogēsas are aorist participles describing the encounter; kopē, ‘the slaughter’ (of the kings), is the Septuagint's word in Genesis 14:17. In verse 2 prōton men hermēneuomenos, ‘first, being translated’, introduces the interpretation of the name, and epeita de kai, ‘and then also’, the second. The author reads malki-tsedeq as melekh (‘king’) plus tsedeq (‘righteousness’) and Salem as related to shalom (‘peace’). Josephus (Antiquities 1.180) and Philo (Allegorical Interpretation 3.79) give the same meanings, so the author uses a common Jewish reading rather than inventing one.",
+      "words": ["G3198", "G0935", "G4532", "G2409", "G5310", "G4876", "G2871", "G2127", "G1182", "G2059", "G1343", "G1515"],
+      "ot": [
+        {
+          "ref": "Genesis 14:17-20",
+          "note": "In the Hebrew, Melchizedek king of Shalem brings out bread and wine, is ‘priest of El Elyon’, blesses Abram by El Elyon, ‘Creator of heaven and earth’, and blesses El Elyon for delivering Abram's enemies; then ‘he gave him a tenth of everything’, a clause whose subject the Hebrew leaves unstated. The Septuagint renders it closely. Hebrews reads Abraham as the giver, as Josephus also does (Antiquities 1.181), and as the next verse in Genesis supports, since Abram then speaks of what he will and will not keep. Hebrews leaves out the bread and wine entirely. Later Christian writers, such as Cyprian (Letter 63), saw in them a type of the Eucharist, but the author's argument rests only on the blessing, the tithe, the names, and what Genesis does not say."
+        }
+      ],
+      "history": "Salem is identified with Jerusalem by Psalm 76:2 (where Salem stands parallel to Zion), by the Genesis Apocryphon from Qumran (1QapGen 22:13), and by Josephus (Antiquities 1.180; Jewish War 6.438). A later king of Jerusalem bore a name of the same pattern, Adoni-zedek, ‘my lord is righteous’ (Joshua 10:1), which suggests that tsedeq names were at home in the city's royal house.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Righteousness and peace are the marks the prophets expected of the messianic king (Isaiah 9:6-7, Psalm 72:1-7). Melchizedek's names foreshadow the character of the priest-king Hebrews proclaims, who brings righteousness and peace together."
+        }
+      ],
+      "refs": ["Genesis 14:18-20", "Psalm 76:2", "Isaiah 9:6-7", "Psalm 85:10"]
+    },
+    {
+      "v": "3",
+      "context": "The most debated verse of the chapter describes Melchizedek by what Genesis does not say: no father, mother, or genealogy, no beginning of days or end of life. In this he has been made like the Son of God, and he remains a priest continually.",
+      "grammar": "Apatōr, amētōr, agenealogētos, ‘fatherless, motherless, without genealogy’, are three alpha-privative adjectives in a row, a rhetorical cadence. Apatōr and amētōr were used in Greek for orphans and foundlings and also for gods said to have no father or no mother; agenealogētos is very rare and may have been coined for this context, answering genealogoumenos in verse 6: he has no recorded pedigree. The phrase ‘having neither beginning of days nor end of life’ is set up with mēte… mēte. Then the key participle: aphōmoiōmenos de tō huiō tou theou, ‘but having been made like the Son of God’, a perfect passive. The comparison runs from the Son to Melchizedek, not the reverse: the Genesis portrait was shaped to resemble the Son. Menei hiereus eis to diēnekes, ‘he remains a priest continually’, uses eis to diēnekes, a phrase that means ‘without interruption’ (10:1, 12, 14) and is not quite the eis ton aiōna of the psalm.",
+      "words": ["G0540", "G0282", "G0035", "G0746", "G2250", "G2222", "G5056", "G0871", "G5207", "G3306", "G2409", "G1336"],
+      "history": "Jewish readers of the period filled Melchizedek's silence in different ways. The Qumran text 11QMelchizedek (11Q13), published by A. S. van der Woude in 1965, portrays him as a heavenly figure who proclaims liberty in the last jubilee, brings atonement on a final Day of Atonement, and executes God's judgment on Belial, applying to him the elohim of Psalm 82:1. Philo made him an allegory of the divine Logos as priest (Allegorical Interpretation 3.79-82). The rabbis, by contrast, identified him with Shem son of Noah and said the priesthood passed from him to Abraham (b. Nedarim 32b; the Targums Neofiti and Pseudo-Jonathan on Genesis 14:18 also call him Shem), which gives him a genealogy after all. Later Christian sects made him greater than Christ (Epiphanius, Panarion 55).",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Most interpreters read the verse typologically: Scripture presents Melchizedek without recorded origin or end so that his priesthood would picture the eternal priesthood of the Son. Others, ancient and modern, have taken him as an appearance of the preincarnate Son or as an angelic figure. The verse's own wording, ‘made like the Son of God’, keeps the two distinct and makes the Son the original."
+        },
+        {
+          "id": "offices",
+          "note": "A priesthood that does not depend on descent is the author's point. The Son's priesthood rests on who he is and on God's oath, not on a family tree, which is why it cannot pass to another."
+        }
+      ],
+      "refs": ["Hebrews 7:16", "Hebrews 1:2", "John 8:58", "Psalm 110:4"]
+    },
+    {
+      "v": "4-6",
+      "context": "The argument for Melchizedek's greatness begins with the tithe. Even Abraham the patriarch gave him a tenth of the best spoils. The Levitical priests collect tithes by the law from their own brothers, fellow descendants of Abraham; Melchizedek, who has no Levite genealogy, collected a tithe from Abraham himself and blessed the man who had the promises.",
+      "grammar": "Theōreite (‘consider’) is a present imperative, an invitation to look closely. Pēlikos houtos, ‘how great this one is’. Akrothinia (literally ‘top of the heap’) was the word for the choicest part of the spoils, which Greeks dedicated to the gods after a victory. Ho patriarchēs, ‘the patriarch’, stands last in its clause for emphasis. In verse 6 two perfects appear: dedekatōken (‘he has tithed’) and eulogēken (‘he has blessed’). Hebrews often uses the perfect for what stands on record in Scripture, so the events of Genesis are treated as permanently significant. Ho mē genealogoumenos ex autōn, ‘the one not tracing his descent from them’, answers agenealogētos in verse 3.",
+      "words": ["G2334", "G4080", "G1182", "G0205", "G3966", "G3017J", "G2405", "G0586", "G1075", "G1183", "G2127", "G1860"],
+      "history": "The law assigned Israel's tithes to the Levites, who in turn gave a tenth of what they received to the priests (Numbers 18:21-28); Nehemiah 10:37-38 shows priests supervising the collection. In the first century the tithe was a point of conflict: Josephus reports that the servants of the high priests seized the tithes at the threshing floors so that poorer priests went hungry (Antiquities 20.181, 20.206-207).",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Tithe and blessing both mark rank. By receiving a tithe from Abraham and blessing him, Melchizedek shows himself greater than the ancestor of every Levitical priest, and so his kind of priesthood outranks theirs."
+        }
+      ],
+      "refs": ["Genesis 14:20", "Numbers 18:21-26", "Nehemiah 10:37-38", "Hebrews 11:17"]
+    },
+    {
+      "v": "7-8",
+      "context": "Two more observations follow. The lesser is blessed by the greater, beyond dispute. And whereas the Levites who collect tithes die, Scripture testifies of Melchizedek only that he lives.",
+      "grammar": "Chōris pasēs antilogias, ‘without any dispute’, echoes antilogia in 6:16. To elatton, ‘the lesser’, is neuter: a general principle, not a statement about a person. Verse 8 is built with hōde men… ekei de, ‘here… there’, contrasting the Levitical system (‘here’, in the law) with the Genesis account (‘there’). Apothnēskontes anthrōpoi, ‘dying men’, is a present participle: mortality is their permanent condition. Marturoumenos hoti zē, ‘being testified that he lives’, uses the passive of martureō for the witness of Scripture (as in 7:17 and 11:2-5). The argument is from the silence of Genesis, which records no death for him.",
+      "words": ["G0485", "G1640", "G2908", "G2127", "G5602", "G1182", "G0599", "G0444", "G1563", "G3140", "G2198"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The contrast between dying priests and the one who ‘lives’ prepares for verse 16. Melchizedek lives only in the sense that Scripture records no death; Jesus lives in fact, by the power of an indestructible life, because he rose."
+        }
+      ],
+      "refs": ["Hebrews 7:16", "Hebrews 7:23-25", "Genesis 27:27-29", "Revelation 1:18"]
+    },
+    {
+      "v": "9-10",
+      "context": "The last and boldest step: in a sense Levi himself, the receiver of tithes, paid tithes through Abraham, since he was still in his ancestor's body when Melchizedek met him. The author signals that the argument is figurative.",
+      "grammar": "Hōs epos eipein, ‘so to speak’, is a classical idiom that occurs only here in the New Testament. It marks what follows as a manner of speaking, not a literal claim. Dedekatōtai (‘has been tithed’) is a perfect passive: Levi stands on record as a tithe payer. Eti gar en tē osphui tou patros ēn, ‘for he was still in the loin of his father’, uses the Hebrew way of speaking of descendants as present in an ancestor's body (compare Genesis 35:11 and 46:26, where offspring ‘come from the loins’).",
+      "words": ["G2031", "G2036", "G3017J", "G1183", "G3751", "G3962"],
+      "history": "Ancient Israel thought in terms of family solidarity: an ancestor's acts could bind or benefit his descendants (Genesis 9:25-27, Malachi 1:2-3). The author draws on that assumption, but his qualifying phrase shows he knows the argument is a figure, meant to sharpen the conclusion rather than bear its weight alone.",
+      "refs": ["Genesis 46:26", "Genesis 35:11", "Romans 5:12", "Romans 9:11-13"]
+    },
+    {
+      "v": "11",
+      "context": "The argument turns from Genesis 14 to Psalm 110:4. If perfection were possible through the Levitical priesthood, why would God speak, centuries after Aaron, of another priest of a different order? The psalm itself shows the old priesthood was not final.",
+      "grammar": "Ei men oun… ēn, ‘if then there were’, is the protasis of a contrary-to-fact condition: perfection was not attainable that way. Teleiōsis (‘perfection’) is the noun of teleioō, the letter's word for bringing people to their intended goal, access to God with a cleansed conscience (9:9, 10:1, 10:14). The parenthesis ho laos gar ep' autēs nenomothetētai, ‘for the people had the law given on the basis of it’, makes the priesthood the base on which the law was built: the Sinai legislation assumed and centered on the priestly system. Heteron (‘another’) often means another of a different kind. Anistasthai (‘to arise’) is the verb of verse 15 and is also the ordinary word for rising from the dead, which may be intended.",
+      "words": ["G5050", "G3020", "G2420", "G3549", "G2087", "G0450", "G2409", "G5010", "G3198", "G0002"],
+      "text": "Most editions read ep' autēs nenomothetētai, a genitive and a perfect (‘has been given the law on the basis of it’). The Textus Receptus reads ep' autē and the pluperfect nenomothetēto. The meaning is the same.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The Mosaic law and the Levitical priesthood stand together. The verse does not call the law evil; it says the law's priesthood could not bring the people to perfection, and Scripture itself (Psalm 110) looked beyond it."
+        }
+      ],
+      "refs": ["Psalm 110:4", "Hebrews 10:1", "Galatians 3:21", "Hebrews 8:7"]
+    },
+    {
+      "v": "12-14",
+      "context": "A change of priesthood necessarily brings a change of law. The priest of the psalm is Jesus, and Jesus came from Judah, a tribe Moses never connected with the priesthood. The fact of his descent, taken for granted by the readers, proves that the law's priestly arrangement has been replaced.",
+      "grammar": "Metatithemenēs gar tēs hierōsunēs is a genitive absolute: ‘when the priesthood is changed’. Ex anagkēs, ‘of necessity’, makes the link binding. Metathesis (‘change’) can mean alteration or removal and transfer; Hebrews uses it for Enoch's being taken away (11:5) and for the removal of what is shaken (12:27). Meteschēken (‘has belonged to’) and proseschēken (‘has attended’, served at the altar) are perfects. In verse 14 prodēlon, ‘evident’, shows that Jesus' Judahite descent was common knowledge. The verb anatetalken, ‘has sprung up’ or ‘has risen’, is used of the sun rising and of plants sprouting; the Septuagint uses it and its noun for messianic hope (Numbers 24:17, ‘a star will rise out of Jacob’; Zechariah 6:12, where the Branch is called Anatolē).",
+      "words": ["G3346", "G2420", "G0318", "G3551", "G3331", "G5443", "G3348", "G4337", "G2379", "G4271", "G2455N", "G0393", "G2962G", "G3475"],
+      "history": "The New Testament consistently places Jesus in the line of David and Judah (Matthew 1:1-16, Luke 3:23-33, Romans 1:3, Revelation 5:5). Some Jewish groups in the period expected two messiahs, a priestly one from Aaron and a royal one from Israel (1QS 9:11 speaks of ‘the messiahs of Aaron and Israel’). Hebrews answers that expectation differently: one person from Judah holds both offices, by the word of Psalm 110.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law and the priesthood cannot be separated. If the priest now comes from Judah, the arrangement of Sinai that tied priesthood to Levi has been set aside, and the law that governs God's people must be understood anew in light of the new priest."
+        },
+        {
+          "id": "offices",
+          "note": "In Israel king and priest were separate offices, and kings who seized priestly functions were judged (2 Chronicles 26:16-21). In Jesus, from the royal tribe, the two offices are united by God's appointment, as Zechariah 6:13 had pictured a priest on the throne."
+        }
+      ],
+      "refs": ["Genesis 49:10", "Romans 1:3", "Revelation 5:5", "Zechariah 6:12-13", "2 Chronicles 26:18"]
+    },
+    {
+      "v": "15-17",
+      "context": "The point becomes even clearer from the psalm's wording. The new priest is like Melchizedek, and he became priest not by a legal requirement about physical descent but by the power of an indestructible life. The psalm's ‘forever’ is the proof.",
+      "grammar": "Perissoteron eti katadēlon, ‘still more abundantly evident’, heightens prodēlon of verse 14. Kata tēn homoiotēta Melchisedek, ‘according to the likeness of Melchizedek’, is the author's own gloss on ‘order’ in the psalm. Verse 16 sets two kata phrases against each other: kata nomon entolēs sarkinēs, ‘according to a law of a fleshly commandment’, and kata dunamin zōēs akatalutou, ‘according to the power of an indestructible life’. Sarkinos (‘made of flesh’) refers to physical descent, not to sinfulness. Akatalutos occurs only here in the New Testament; it is from kataluō, the verb used for destroying the temple in Mark 14:58, and means a life that cannot be dissolved, even by death. Martureitai (‘it is testified’) introduces the psalm as Scripture's witness.",
+      "words": ["G2612", "G3665", "G3198", "G0450", "G2409", "G3551", "G1785", "G4560", "G1411", "G2222", "G0179", "G3140", "G0165H", "G5010"],
+      "text": "Most editions read sarkinēs, ‘made of flesh’; the Textus Receptus and Byzantine text read sarkikēs, ‘fleshly’, which the King James Version renders ‘carnal commandment’. The words were easily confused in copying, and the sense in context is the same: a rule based on bodily descent.",
+      "ot": [
+        {
+          "ref": "Psalm 110:4",
+          "note": "The psalm is quoted a third time (after 5:6 and 6:20), now with the emphasis on eis ton aiōna, ‘forever’. The Septuagint (Psalm 109:4) supplies the wording. The author's reasoning is that a priest appointed ‘forever’ must have a life that does not end; the resurrection of Jesus is what makes the psalm's word literally true of him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus holds his priesthood by the power of an indestructible life. The resurrection is not only vindication; it is the ground of his continuing office, since only a living priest can serve ‘forever’."
+        },
+        {
+          "id": "messiah",
+          "note": "Psalm 110 finds its fulfillment in the risen Jesus. The psalm's king is also its priest, and his priesthood depends on the kind of life he has, not on the family he came from."
+        }
+      ],
+      "refs": ["Hebrews 5:6", "Romans 6:9", "Revelation 1:18", "Acts 2:24"]
+    },
+    {
+      "v": "18-19",
+      "context": "The consequence is spelled out with a men… de contrast: on one side the former commandment is annulled because of its weakness and uselessness, for the law perfected nothing; on the other a better hope is brought in, through which we draw near to God.",
+      "grammar": "Athetēsis (‘setting aside’) was a legal term in the papyri for the annulment of a document or decree; Hebrews uses it again in 9:26 for Christ's putting away of sin. Proagousēs entolēs, ‘a preceding commandment’, refers to the rule about priestly descent. Dia to autēs asthenes kai anōpheles, ‘because of its weakness and uselessness’, uses neuter adjectives as nouns. The parenthesis ouden gar eteleiōsen ho nomos, ‘for the law perfected nothing’, uses the verb of perfection again. Epeisagōgē, ‘a bringing in besides’, implies something introduced on top of what was there. Engizomen tō theō, ‘we draw near to God’, is cultic language: in the law, drawing near was the priest's privilege (Leviticus 10:3, Ezekiel 44:13), now shared by all who hope in Christ.",
+      "words": ["G0115", "G4254", "G1785", "G0772G", "G0512", "G5048", "G3551", "G1898", "G2908", "G1680", "G1448", "G2316"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "‘The law made nothing perfect.’ The law could command and regulate, but it could not bring worshipers into God's presence with a clean conscience. Hebrews honors the law as God's gift while insisting that its purpose was preparatory."
+        },
+        {
+          "id": "hope",
+          "note": "The better hope is the confidence of drawing near to God, which the law's priests alone had on behalf of others. Through Christ it belongs to all his people (4:16, 10:19-22)."
+        }
+      ],
+      "refs": ["Romans 8:3", "Galatians 3:21-24", "Hebrews 4:16", "Hebrews 10:19-22", "James 4:8"]
+    },
+    {
+      "v": "20-22",
+      "context": "A further contrast: the Levitical priests were installed without an oath, but Jesus with an oath, the one Psalm 110:4 records. By so much, Jesus has become the guarantor of a better covenant. Verse 22 is the letter's first use of the word covenant, which will dominate chapters 8-10.",
+      "grammar": "Kath' hoson… kata tosouto (verses 20 and 22) form a correlative frame, ‘in so far as… by so much’, which ties the oath to the superiority of the covenant. Horkōmosia (‘oath-taking’) is a rare compound, in the New Testament only in this chapter. The quotation includes the first half of Psalm 110:4 for the first time: ōmosen kurios kai ou metamelēthēsetai, ‘the Lord has sworn and will not change his mind’. Metamelomai means to regret or reconsider; God binds himself irrevocably. Enguos (‘guarantor’, ‘surety’) appears only here in the New Testament; in the papyri it names a person who pledges himself, and sometimes his property, to make good another's obligation. Diathēkē, ‘covenant’, is introduced as if the readers should already expect it.",
+      "words": ["G3728", "G2409", "G1096", "G3660", "G3338", "G0165H", "G2908", "G1242", "G1450", "G2424G"],
+      "text": "At the end of verse 21 the Textus Receptus and the Byzantine text add ‘according to the order of Melchizedek’, completing the psalm verse; the King James Version includes it. The earliest manuscripts end with ‘forever’, and the addition is best explained as a scribe filling out a familiar quotation.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Jesus is the ‘guarantee of a better covenant’. He personally stands behind the covenant's promises, as a surety stands behind a debt, so that the covenant rests on the person who guarantees it."
+        },
+        {
+          "id": "attributes",
+          "note": "God ‘will not change His mind’. The oath of Psalm 110 is, like the oath to Abraham (6:17), a pledge of God's own constancy, and the whole new covenant rests on it."
+        }
+      ],
+      "refs": ["Psalm 110:4", "Hebrews 6:17-18", "Hebrews 8:6", "Numbers 23:19"]
+    },
+    {
+      "v": "23-25",
+      "context": "The final contrast of the argument: many Levitical priests, because death cut each one off; one priest, Jesus, because he remains forever. Therefore he can save completely those who approach God through him, since he always lives to intercede for them.",
+      "grammar": "Pleiones… gegonotes, ‘many have become’, a perfect participle, sums up a long line of succession. Dia to thanatō kōluesthai paramenein, ‘because they were prevented by death from continuing’, uses an articular infinitive for cause. Aparabatos (‘permanent’) is a rare word with two possible senses: ‘unchangeable’, or ‘not passing to another’, ‘non-transferable’. Both fit, and the context of succession favors the second. Eis to panteles can mean ‘completely’ (in extent) or ‘for all time’ (in duration); interpreters divide, and the author may intend both. Tous proserchomenous, ‘those who approach’, is a present participle: those who keep coming. Pantote zōn eis to entugchanein, ‘always living to intercede’, uses an articular infinitive of purpose: his continuing life has intercession as its aim.",
+      "words": ["G4119", "G2409", "G2288", "G2967", "G3887", "G3306", "G0165H", "G0531", "G2420", "G4982", "G3838", "G4334", "G3842", "G2198", "G1793"],
+      "history": "Josephus reckons the high priests from Aaron to the destruction of the temple as eighty-three (Antiquities 20.227), a vivid picture of the ‘many priests’ of verse 23. Under Herod and the Roman governors, tenure grew short; some high priests served only a year or less.",
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The security of those who come to God through Christ rests on his permanent life and ceaseless intercession. Their perseverance is anchored not in their own constancy but in his: as long as he lives, and he lives forever, he pleads for them."
+        },
+        {
+          "id": "salvation",
+          "note": "Christ saves ‘completely’, and his saving work is not only past. His present intercession is part of salvation, as Romans 8:34 and 1 John 2:1 also teach."
+        }
+      ],
+      "refs": ["Romans 8:34", "1 John 2:1", "Isaiah 53:12", "John 17:9-11", "Hebrews 4:14-16"]
+    },
+    {
+      "v": "26",
+      "context": "The chapter's climax takes the form of a portrait, almost a hymn: such a high priest was fitting for us, holy, innocent, undefiled, separated from sinners, and raised above the heavens.",
+      "grammar": "Eprepen, ‘it was fitting’, is the verb used in 2:10 for what befits God's saving design. Three adjectives describe Jesus' character: hosios (‘holy’, devout, pleasing to God), akakos (‘innocent’, without malice), amiantos (‘undefiled’, a word for ritual and moral purity). Kechōrismenos apo tōn hamartōlōn, ‘having been separated from sinners’, is a perfect passive participle. It may describe his sinless character, but the perfect and the following phrase suggest his exaltation: he has been removed from the sphere of sinners into heaven, while remaining their priest. Hupsēloteros tōn ouranōn genomenos, ‘having become higher than the heavens’, echoes 4:14, where he ‘passed through the heavens’.",
+      "words": ["G5108", "G4241", "G0749", "G3741", "G0172", "G0283", "G5563", "G0268", "G5308", "G3772"],
+      "history": "The law demanded exceptional purity of the high priest (Leviticus 21:10-15). Before the Day of Atonement, the Mishnah says, he was separated from his house for seven days and kept in a chamber of the temple so that no impurity would disqualify him (m. Yoma 1:1). Hebrews describes a high priest whose separation from sinners is not a week of ritual quarantine but a permanent state.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The exalted Christ is the priest believers need: holy in character and raised above every created height, so that nothing stands between him and God's presence."
+        },
+        {
+          "id": "holiness",
+          "note": "The holiness the law demanded of the high priest and could only approximate is found fully in Jesus. His sinlessness (4:15) is not an abstraction but the qualification for his office."
+        }
+      ],
+      "refs": ["Hebrews 4:14-15", "Leviticus 21:10-15", "1 Peter 2:22", "2 Corinthians 5:21", "Ephesians 4:10"]
+    },
+    {
+      "v": "27",
+      "context": "Unlike the other high priests, Jesus has no need to offer sacrifices daily, first for his own sins and then for the people's. He did this once for all when he offered himself. For the first time the letter says outright that the priest and the offering are the same.",
+      "grammar": "Kath' hēmeran (‘daily’) has puzzled readers, since the high priest's great sacrifice for himself and the people came once a year, on the Day of Atonement. The author may be combining the annual rite with the high priest's daily offerings, or speaking of the whole priestly system in which sacrifice never stopped. Proteron… epeita, ‘first… then’, follows the order of Leviticus 16:6 and 15. Touto gar epoiēsen ephapax heauton anenegkas, ‘for this he did once for all, having offered up himself’: ephapax (‘once for all’) is one of the letter's key words (9:12, 10:10), and anenegkas is an aorist participle of anapherō, the verb for bringing a sacrifice up onto the altar.",
+      "words": ["G2250", "G0318", "G0749", "G4386", "G2398", "G0266", "G2378", "G0399", "G1899", "G2992", "G2178", "G1438"],
+      "history": "The law did prescribe a daily offering for the high priest: a grain offering of fine flour, half in the morning and half in the evening, on the day of his anointing and regularly thereafter (Leviticus 6:19-23). The Mishnah regulates these griddle cakes (m. Menahot 4:5), and Ben Sira says of Aaron that his sacrifices were burned whole twice every day (Sirach 45:14). These texts explain how the author could speak of the high priest's sacrifices as daily.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Christ is both priest and victim. Because he had no sins of his own, his offering could be wholly for others, and because he offered himself, not an animal, it needed no repeating."
+        }
+      ],
+      "refs": ["Leviticus 16:6", "Leviticus 16:15", "Leviticus 6:19-23", "Hebrews 9:12", "Hebrews 10:10"]
+    },
+    {
+      "v": "28",
+      "context": "The summary closes the chapter by setting two appointments side by side. The law appoints as high priests men who have weakness; the word of the oath, which came after the law, appoints a Son made perfect forever. The next chapter will draw out the ‘main point’.",
+      "grammar": "The sentence is built as a precise contrast: ho nomos… anthrōpous… echontas astheneian, ‘the law… men… having weakness’, against ho logos tēs horkōmosias… huion… teteleiōmenon, ‘the word of the oath… a Son… perfected’. The phrase tēs meta ton nomon, ‘which came after the law’, is a chronological argument: David's psalm came centuries after Moses, so God's later oath supersedes the earlier arrangement, the same kind of reasoning Paul uses in Galatians 3:17. Teteleiōmenon is a perfect passive participle: his perfection, reached through suffering (2:10, 5:9), is a permanent state. Eis ton aiōna modifies it: made perfect forever.",
+      "words": ["G3551", "G0444", "G2525", "G0749", "G0769G", "G3056", "G3728", "G5207", "G0165H", "G5048"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The chapter ends by naming Jesus simply ‘the Son’. The priesthood rests finally on his Sonship, the note on which the letter began (1:2), joined to the human weakness and suffering through which he was perfected."
+        },
+        {
+          "id": "offices",
+          "note": "The law's priests were weak men; God's oath installed a perfected Son. The verse compresses the letter's whole case for the superiority of Christ's priesthood into one sentence."
+        }
+      ],
+      "refs": ["Hebrews 5:1-10", "Hebrews 2:10", "Galatians 3:17", "Hebrews 1:2"]
+    }
+  ]
+}

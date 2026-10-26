@@ -1,0 +1,289 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Moses introduces the body of teaching that runs from here to chapter 26. He has just recalled how the people asked him to receive God's words on their behalf (5:27-31), and now he begins to deliver them, with the land across the Jordan as their setting.",
+      "grammar": "The verse opens vezot hammitsvah, ‘and this is the commandment’, with mitsvah in the singular, followed by the plural ‘statutes and ordinances’. Many interpreters take the singular as a heading for the whole: the one great commandment of loyalty, which the detailed laws then spell out. Norbert Lohfink's study of Deuteronomy 5 to 11, Das Hauptgebot (‘The Main Commandment’, 1963), built on this observation. Lelammed, ‘to teach’, is a Piel infinitive of lamad, the root behind talmid (disciple) and Talmud. Deuteronomy presents Moses above all as a teacher, and the book's law as something to be learned, not only obeyed.",
+      "words": ["H4687", "H2706G", "H4941G", "H3925G"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law is given to be taught and lived in a particular land. It is not an abstract code but instruction for a people's life in the place God is giving them."
+        }
+      ],
+      "refs": ["Deuteronomy 5:31", "Deuteronomy 4:1", "Deuteronomy 4:14"]
+    },
+    {
+      "v": "2",
+      "context": "The purpose of the teaching is reverence that lasts across generations: ‘you, your son, and your son's son’. Long life in the land is the promised fruit. The verse anticipates the chapter's closing scene, where a child asks what the commands mean (verse 20).",
+      "grammar": "Tira, ‘you may fear’, is singular, addressed to Israel as one person, while verse 1 used the plural ‘you’. This alternation between singular and plural address runs through Deuteronomy. Older critics used it to separate literary layers; many recent commentators treat it as rhetoric, with the singular stressing Israel's unity before God. The Hebrew lists three generations, ‘you and your son and your son's son’, which the BSB renders \"your children and grandchildren\". The final verb, yaarikhun, carries an extra final nun (a ‘paragogic nun’), a fuller, often emphatic form common in Deuteronomy's exhortations.",
+      "words": ["H3372H", "H1121A", "H0748"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "Fear of the LORD here is not terror but reverent loyalty, and it is the goal of the teaching. Keeping the statutes is the way that reverence shows itself over a lifetime."
+        }
+      ],
+      "refs": ["Deuteronomy 4:9-10", "Deuteronomy 5:29", "Proverbs 1:7"]
+    },
+    {
+      "v": "3",
+      "context": "A first call to hear, which is repeated at once in verse 4. The promise attached to obedience is the one first given at the burning bush: a land flowing with milk and honey (Exodus 3:8).",
+      "grammar": "Veshamata Yisrael, ‘and you shall hear, O Israel’, uses a consecutive perfect continuing the purpose of verse 2, while verse 4 opens with the plain imperative shema. The verb shama joined to shamar (‘be careful’) and asah (‘do’) gives Deuteronomy's standard chain: hear, keep, do. ‘Flowing’ is a participle of zuv, pictured as a land that brims over with milk from flocks and honey, probably including the syrup of dates and figs as well as bees' honey.",
+      "words": ["H8085G", "H8104J", "H2100G", "H1706"],
+      "history": "‘Milk and honey’ describes a land good for herding and for fruit, not for grain alone. The Egyptian Story of Sinuhe, from the early second millennium BC, describes the land of Retjenu (Syria-Palestine) as rich in figs, grapes, honey, and oil, which shows the region had this reputation well before Israel.",
+      "refs": ["Exodus 3:8", "Deuteronomy 11:9", "Numbers 13:27"]
+    },
+    {
+      "v": "4",
+      "context": "The Shema, the confession Israel has recited morning and evening for more than two thousand years. It stands at the head of the laws as their foundation: before Israel is told what to do, it is told who its God is.",
+      "grammar": "The Hebrew is six words with no verb: YHWH eloheinu YHWH echad. Hebrew often omits ‘is’, so the words can be grouped in at least four ways: ‘The LORD our God, the LORD is one’ (the BSB and KJV tradition); ‘The LORD is our God, the LORD is one’; ‘The LORD our God is one LORD’; and ‘The LORD is our God, the LORD alone’ (the 1985 Jewish Publication Society version and the NRSV). The last reading takes echad in the sense of ‘alone, only’, a statement of exclusive loyalty that fits verses 13 to 15. The others emphasize God's unity or uniqueness. Echad is the ordinary numeral ‘one’. Christian writers sometimes argue that it implies a compound unity because it is used of the ‘one flesh’ of marriage (Genesis 2:24), but that rests on a single context of a common word, and the verse's own weight falls on Israel's God being the only God and wholly theirs. In Hebrew scrolls and printed Bibles, the last letter of shema (ayin) and of echad (dalet) are written large; together they spell ed, ‘witness’, and the tradition explains that reciting the Shema bears witness.",
+      "words": ["H8085G", "H3068G", "H0430G", "H0259"],
+      "history": "The Mishnah opens with rules for reciting the Shema (m. Berakhot 1:1-4), and m. Berakhot 2:2 explains its first paragraph as ‘receiving the yoke of the kingdom of heaven’. The Babylonian Talmud (Berakhot 61b) tells that Rabbi Akiva died under Roman torture after the Bar Kokhba revolt (AD 132 to 135) reciting the Shema, prolonging the word echad until he died. Rashi read the verse in light of Zechariah 14:9: the LORD is now our God, Israel's alone, but he will one day be acknowledged as the one LORD by all nations.",
+      "text": "The Septuagint, and the Nash Papyrus from Egypt (around the second or first century BC), place a short heading before the Shema, ‘these are the statutes and judgments which were commanded to the Israelites in the wilderness when they came out of Egypt’, which the Hebrew lacks. The Greek renders the confession kyrios ho theos hemon kyrios heis estin, ‘the Lord our God is one Lord’, the wording Jesus quotes in Mark 12:29.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "The verse defines Israel's God by name (YHWH) and by relationship (‘our God’) before any attribute. Whatever the exact grouping of the words, it excludes every rival and claims Israel wholly for him."
+        },
+        {
+          "id": "trinity",
+          "note": "The New Testament writers keep the Shema and confess Jesus within it. Paul's ‘one God, the Father’ and ‘one Lord, Jesus Christ’ (1 Corinthians 8:6) divides the Shema's own words between Father and Son. The church's doctrine of the Trinity is a confession of the one God of this verse, not a departure from it."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Mark 12:29",
+          "note": "Asked for the first commandment, Jesus begins with the Shema itself, in the Septuagint's wording, before the command to love. Only Mark includes the confession; Matthew 22:37 and Luke 10:27 go straight to the command. The scribe's reply in Mark 12:32 restates it: God is one and there is no other."
+        },
+        {
+          "ref": "James 2:19",
+          "note": "James assumes the Shema as the common confession of his readers and warns that assent to it, without the loyalty the Shema demands, is something even demons can manage."
+        }
+      ],
+      "refs": ["Zechariah 14:9", "Mark 12:29-32", "1 Corinthians 8:4-6", "James 2:19", "Isaiah 45:5-6"]
+    },
+    {
+      "v": "5",
+      "context": "The confession becomes a command. Because the LORD is Israel's God alone, Israel is to love him with the whole self. Jesus called this the first and greatest commandment and paired it with Leviticus 19:18.",
+      "grammar": "Veahavta, ‘and you shall love’, is a consecutive perfect functioning as a command that follows from verse 4: the love is the answer to the confession. The three phrases each begin with bekhol, ‘with all’. Levav (heart) is the seat of thought and will; nefesh is the living self, one's very life; meod, normally the adverb ‘very’, is used here as a noun for one's full capacity. The Mishnah read the three with striking concreteness (m. Berakhot 9:5): ‘with all your heart’ means with both the good and the evil inclination; ‘with all your soul’ means even if he takes your life; ‘with all your might’ means with all your wealth. The Targums likewise render meod with a word for property.",
+      "words": ["H0157G", "H3824", "H5315G", "H3966"],
+      "history": "In 1963 William L. Moran showed in an article in the Catholic Biblical Quarterly that ‘love’ in ancient Near Eastern treaties meant loyal service to a sovereign. The Succession Treaty of the Assyrian king Esarhaddon (672 BC) required vassals to love the crown prince Ashurbanipal as themselves. Deuteronomy uses the same covenant vocabulary, but it grounds Israel's love in God's prior love for their ancestors (4:37; 7:7-8), which no treaty did.",
+      "text": "The Gospels quote the command with four terms (Mark 12:30: heart, soul, mind, strength) or three (Matthew 22:37: heart, soul, mind). Manuscripts of the Septuagint differ over the first term, some reading kardia (‘heart’) and others dianoia (‘mind’), and the Gospel forms may reflect a tradition that kept both as renderings of levav, which covers heart and mind together.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love for God is commanded, which shows it is first a matter of loyalty and will, not of feelings that come and go. The threefold ‘all’ leaves no part of a person, including possessions, outside it."
+        },
+        {
+          "id": "law",
+          "note": "Every other law in Deuteronomy serves this one. Jesus draws out what is already implied when he says the whole Law and the Prophets hang on it and the command to love one's neighbor (Matthew 22:40)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 22:37-40",
+          "note": "Jesus quotes this verse as the greatest commandment and joins it to Leviticus 19:18, love of neighbor. The pairing was not unknown in Judaism of the time (Luke 10:27 puts it in a lawyer's mouth), but Jesus makes it the key to the whole law."
+        }
+      ],
+      "refs": ["Matthew 22:37-40", "Mark 12:30", "Luke 10:27", "Deuteronomy 10:12", "Deuteronomy 30:6"]
+    },
+    {
+      "v": "6",
+      "context": "The words are first to be on the heart. Before they are taught to children or written on doorposts, they must be internal, a person's own. The following verses move outward from here.",
+      "grammar": "Vehayu hadevarim haelleh, ‘and these words shall be’, with al levavekha, ‘upon your heart’. The preposition al, ‘on’, pictures the words inscribed on the heart as on a tablet. Hayyom, ‘today’, is one of Deuteronomy's favorite words: each generation is addressed as if standing at Moab on the day the covenant is renewed.",
+      "words": ["H1697G", "H3824", "H3117G"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The law is meant to be inward from the start. Jeremiah's promise of a new covenant with the law written on the heart (Jeremiah 31:33) does not introduce a new idea; it promises that God will do what Israel could not do for itself (compare Deuteronomy 30:6)."
+        }
+      ],
+      "refs": ["Jeremiah 31:33", "Deuteronomy 30:6", "Deuteronomy 11:18", "Proverbs 3:3"]
+    },
+    {
+      "v": "7",
+      "context": "From the heart the words move to the children and then to every part of the day. The paired phrases cover home and road, night and morning: all of life, wherever one is and whatever one is doing.",
+      "grammar": "Veshinnantam, \"you shall teach them diligently\", is a Piel of shanan, whose basic sense is ‘to sharpen’ (used of swords and arrows in Deuteronomy 32:41 and Psalm 45:5). This is its only use for teaching. Rashi, following the early midrash Sifre, took it to mean the words should be sharp in your mouth, ready for an immediate answer; others relate it to the verb shanah, ‘to repeat’, the root of Mishnah, and render ‘impress’ or ‘recite’. The four infinitives (sitting, walking, lying down, rising) form two merisms, figures in which paired extremes stand for the whole.",
+      "words": ["H8150", "H3427", "H1980I", "H7901G", "H6965B"],
+      "history": "The Mishnah took ‘when you lie down and when you get up’ as the times for reciting the Shema, evening and morning (m. Berakhot 1:1-2). It also records a dispute (m. Berakhot 1:3): the school of Shammai held that one should recline to recite it in the evening and stand in the morning, reading the words literally, while the school of Hillel held that any posture will do, since the verse also says ‘when you walk along the road’. The law followed Hillel.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The primary school of faith is the household. Teaching happens in structured repetition and in ordinary conversation as life goes on, and the text expects both."
+        }
+      ],
+      "refs": ["Deuteronomy 11:19", "Proverbs 22:6", "Psalm 78:4-7", "Ephesians 6:4"]
+    },
+    {
+      "v": "8",
+      "context": "The words are to be bound on the hand and set between the eyes, the parts of the body that act and that see. Whether the command is literal or figurative has been debated for over two thousand years.",
+      "grammar": "Uqshartam leot, ‘bind them as a sign’, and totafot, ‘frontlets’ or ‘bands’ (the BSB paraphrases the verse). Totafot occurs only here, in 11:18, and in Exodus 13:16, and its origin is unknown. The Babylonian Talmud (Menachot 34b) explained it as two foreign words for ‘two’, together making four, the number of compartments in the head tefillin; modern lexicons suggest a headband or a mark on the forehead. The literal phrase bein einekha, ‘between your eyes’, the forehead, is where Exodus 13:9 puts a ‘reminder’ of the exodus.",
+      "words": ["H7194", "H0226H", "H2903", "H5869A"],
+      "history": "Tefillin (phylacteries), leather cases holding handwritten passages including the Shema, were found at Qumran, so by the first century BC some Jews kept this verse literally. Jesus criticizes those who make their phylacteries broad for show (Matthew 23:5), assuming the practice without condemning it. Karaite Jews, who reject rabbinic tradition, read the verse figuratively and do not wear tefillin. The figurative reading draws on Proverbs, which tells the student to bind wisdom around the neck and write it on the tablet of the heart (Proverbs 3:3; 7:3).",
+      "refs": ["Exodus 13:9", "Exodus 13:16", "Deuteronomy 11:18", "Proverbs 7:3", "Matthew 23:5"]
+    },
+    {
+      "v": "9",
+      "context": "Finally the words go on the house and the town, the doorposts of the private home and the gates where the community did business and held court. The movement from heart (verse 6) to gate is complete.",
+      "grammar": "Mezuzot is the plural of mezuzah, ‘doorpost’. The word gave its name to the small case holding a parchment of verses 4 to 9 and 11:13 to 21 that Jews fix to the doorframe. The same word appears in Exodus 12:7, where the blood of the Passover lamb is put on the doorposts, so the doorpost already marked a house belonging to the LORD. Shearim, ‘gates’, are the city gates, the public square of an ancient town (Ruth 4:1).",
+      "words": ["H3789", "H4201", "H8179G"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "God's words mark both private and public space. The home and the town gate, where justice was done, are equally to be governed by what God has said."
+        }
+      ],
+      "refs": ["Exodus 12:7", "Deuteronomy 11:20", "Ruth 4:1", "Isaiah 57:8"]
+    },
+    {
+      "v": "10-11",
+      "context": "The warning begins with one long conditional sentence. When God gives Israel a land already built, filled, dug, and planted by others, and they eat their fill, the danger comes. The sentence reaches its point only in verse 12.",
+      "grammar": "Four relative clauses repeat the pattern asher lo, ‘which you did not’: cities you did not build (baniyta), houses you did not fill (milleta), cisterns you did not hew (chatsavta), vineyards and olive trees you did not plant (nataeta). The hammering repetition makes the point before it is stated: everything is gift. ‘Wells’ is borot chatsuvim, literally ‘hewn cisterns’, pits cut into rock to store rainwater. The sentence ends with veakhalta vesavata, ‘and you eat and are satisfied’, the phrase that in Deuteronomy 8:10-12 is both an occasion for blessing God and the moment of greatest danger.",
+      "words": ["H1129", "H4390", "H0953A", "H2672", "H5193", "H7646"],
+      "history": "The hill country of Canaan had few springs, and settlement there depended on rock-cut cisterns to store the winter rains. Joshua 24:13 echoes these verses when God reminds Israel that it lives in cities it did not build and eats from vineyards it did not plant.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Israel will inherit the labor of others by God's gift. The land is received, not earned, and the list forbids Israel to imagine otherwise."
+        }
+      ],
+      "refs": ["Joshua 24:13", "Deuteronomy 8:10-14", "Nehemiah 9:25", "Deuteronomy 11:15-16"]
+    },
+    {
+      "v": "12",
+      "context": "The main clause the long sentence has been building toward: be careful not to forget the LORD. The one who gives the land is the one who brought them out of slavery, and forgetting him would mean forgetting who they are.",
+      "grammar": "Hishamer lekha, ‘guard yourself’, is a Niphal imperative with a reflexive ‘for yourself’, and pen, ‘lest’, introduces the danger. Shakach, ‘forget’, is a key word in Deuteronomy (compare 4:9, 4:23, 8:11-19); in Hebrew, to forget is not a lapse of memory but a failure of loyalty, as to ‘remember’ is to act on what one knows. ‘The house of slavery’, mibbet avadim, echoes the prologue of the Ten Commandments (5:6).",
+      "words": ["H8104J", "H6435", "H7911", "H5650"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The first step toward other gods is not choosing them but forgetting the true one. Prosperity makes forgetting easy because it hides the giver behind the gift."
+        }
+      ],
+      "refs": ["Deuteronomy 8:11-18", "Deuteronomy 5:6", "Hosea 13:6", "Psalm 103:2"]
+    },
+    {
+      "v": "13",
+      "context": "The positive command set against forgetting: fear the LORD, serve him, and swear by his name. Oaths were sworn by the god one trusted to enforce them, so swearing by the LORD alone meant acknowledging him alone as judge.",
+      "grammar": "Both objects are placed first for emphasis: et YHWH elohekha tira, ‘the LORD your God you shall fear’, and veoto taavod, ‘and him you shall serve’. Hebrew word order puts the object first to mark exclusivity, ‘him and no other’, which is why the BSB can supply \"serve Him only\". Uvishmo tishshavea, ‘and by his name you shall swear’, uses the Niphal of shava, the ordinary form for taking an oath.",
+      "words": ["H3372H", "H5647G", "H8034", "H7650"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Fear, service, and oath cover the inward stance, the outward practice, and the public commitment of worship. All three are reserved for the LORD."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 4:10",
+          "note": "When Satan offers Jesus the kingdoms of the world for an act of worship, Jesus answers with this verse. The Septuagint already had ‘him only you shall serve’ (making explicit what the Hebrew word order implies), and Matthew and Luke (4:8) read ‘worship’ where the Septuagint has ‘fear’, fitting the answer to the demand Satan made."
+        }
+      ],
+      "refs": ["Matthew 4:10", "Luke 4:8", "Deuteronomy 10:20", "Joshua 24:14"]
+    },
+    {
+      "v": "14-15",
+      "context": "The negative side and its reason. Israel must not follow the gods of the surrounding peoples, because the LORD who lives among them is jealous. His presence, which is their blessing, would become their danger.",
+      "grammar": "Lo telekhun acharei, ‘you shall not walk after’, pictures following another god like a servant walking behind a master; the verb again has the emphatic final nun. El qanna, ‘a jealous God’, uses qanna, an adjective reserved in the Bible for God (Exodus 20:5; 34:14). Its sense is the rightful zeal of a husband or covenant lord who will not share what is his, not petty envy. Beqirbekha, ‘in your midst’, is the phrase used for God's dwelling among his people; here it explains why unfaithfulness is so serious.",
+      "words": ["H1980N", "H0312", "H7067H", "H7130G", "H8045"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's jealousy is the other face of his covenant love. A God indifferent to his people's unfaithfulness would not love them in the way the Shema requires them to love him."
+        },
+        {
+          "id": "judgment",
+          "note": "The threat to destroy Israel ‘from the face of the earth’ is stated plainly. The covenant's blessings in the land carry covenant consequences, which the curses of Deuteronomy 28 will spell out."
+        }
+      ],
+      "refs": ["Exodus 34:14", "Deuteronomy 4:24", "Deuteronomy 5:9", "Joshua 24:19-20"]
+    },
+    {
+      "v": "16",
+      "context": "A specific warning from Israel's own past: do not test God as you did at Massah, where the people demanded water and asked whether the LORD was among them or not (Exodus 17:1-7). The question at Massah is the direct opposite of the confidence of verse 15 that God is in their midst.",
+      "grammar": "Lo tenassu, ‘you shall not test’, is a Piel of nasah, the verb for God testing Abraham (Genesis 22:1) and here for people testing God, demanding that he prove himself on their terms. The verb is plural, addressed to the whole people. Massah is itself a noun from the same root, ‘testing’, so the sentence has a wordplay: do not test him as you tested him at Testing.",
+      "words": ["H5254G", "H4532"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "To test God is to make trust conditional on proof. The verse treats that as rebellion, not honest questioning, because it sets the terms God must meet."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 4:7",
+          "note": "When Satan quotes Psalm 91 and urges Jesus to throw himself from the temple, Jesus answers with this verse. The Septuagint turns the Hebrew plural into a singular, ‘you shall not test the Lord your God’, and Matthew and Luke (4:12) quote that form. Where Israel tested God in the wilderness, Jesus, in his own wilderness, refuses to."
+        }
+      ],
+      "refs": ["Exodus 17:1-7", "Psalm 95:8-9", "Matthew 4:7", "1 Corinthians 10:9"]
+    },
+    {
+      "v": "17-19",
+      "context": "The warning section closes with a summary. Keep the commands, do what is right and good in the LORD's sight, and God will give the land and drive out its enemies as he promised.",
+      "grammar": "Verse 17 opens with shamor tishmerun, an infinitive absolute before the finite verb of the same root, literally ‘keeping, you shall keep’. The construction intensifies the command, hence \"diligently keep\". Verse 18's hayyashar vehattov beeine YHWH, ‘the right and the good in the eyes of the LORD’, sets the standard outside the people themselves. The book of Judges later describes Israel's decline with the opposite phrase, each doing what was right in his own eyes (Judges 17:6; 21:25).",
+      "words": ["H8104J", "H8104G", "H5713B", "H3477G", "H2896A"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Possession of the land is tied both to God's oath to the fathers and to Israel's faithfulness. Deuteronomy holds the two together without resolving them into either unconditional promise or earned reward."
+        }
+      ],
+      "refs": ["Deuteronomy 12:28", "Judges 21:25", "Exodus 23:27-30"]
+    },
+    {
+      "v": "20",
+      "context": "The chapter's last section is a catechism. A child asks what the laws mean, and the parent is given the answer. The question assumes the child has seen the laws being kept and wants to know why.",
+      "grammar": "Machar, ‘tomorrow’, is used idiomatically for the future (as in Exodus 13:14 and Joshua 4:6). The child lists three kinds of law, edot (testimonies), chuqqim (statutes), and mishpatim (judgments), and asks mah, ‘what are they?’, meaning ‘what do they signify?’. The question refers to the laws the LORD commanded ‘you’, addressing the parent's generation.",
+      "words": ["H7592", "H4279", "H5713B"],
+      "history": "The Passover Haggadah, the text read at the Jewish Passover meal, builds its section on the four sons partly from this verse: the question of the wise son is taken from Deuteronomy 6:20, and the other sons' questions from passages in Exodus. Similar child-and-parent questions occur in Exodus 12:26-27 and 13:14 and in Joshua 4:6-7, always tied to a rite or a memorial that prompts the question.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The text expects children to ask and wants their questions answered, not silenced. Faith is handed on by explanation, and the explanation begins with a story."
+        }
+      ],
+      "refs": ["Exodus 12:26-27", "Exodus 13:14", "Joshua 4:6-7"]
+    },
+    {
+      "v": "21-23",
+      "context": "The answer is a story, not a rule. We were slaves, the LORD brought us out with signs and wonders, and he brought us out in order to bring us in. The parent speaks as ‘we’, including himself and the child in an event neither of them saw.",
+      "grammar": "The answer begins avadim hayinu, ‘slaves we were’, with ‘slaves’ placed first. The verbs then move in a pair: hotsi, ‘he brought out’, and in verse 23 lemaan havi, ‘in order to bring in’. The exodus was never meant to end in the wilderness; its purpose clause points to the land. In verse 22 the signs and wonders are called gedolim veraim, ‘great and harmful’, harmful, that is, to Egypt.",
+      "words": ["H5650", "H3318H", "H0935P", "H0226G", "H4159", "H7451A"],
+      "history": "The Passover Haggadah answers the children's questions with the words of verse 21, avadim hayinu, ‘we were slaves’. In 1938 Gerhard von Rad identified verses 20 to 24, with Deuteronomy 26:5-9 and Joshua 24:2-13, as a ‘short historical creed’, a confession of faith in the form of a story of God's acts. His theory about how these creeds shaped the Pentateuch is now widely doubted, but his observation that Israel confessed its faith by retelling events has endured.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Rescue comes before command. The law's meaning is explained by redemption: God freed a people of slaves and gave them a way to live as free people."
+        }
+      ],
+      "refs": ["Exodus 13:14", "Deuteronomy 26:5-9", "Joshua 24:2-13", "Exodus 20:2"]
+    },
+    {
+      "v": "24",
+      "context": "The answer continues: the statutes themselves are part of God's goodness. He gave them for Israel's good and to keep them alive, as the present generation can see.",
+      "grammar": "Letov lanu, ‘for our good’, and lechayyotenu, ‘to keep us alive’, a Piel infinitive of chayah, give the purpose of the commands. The law is presented as the means of life, not a burden laid on top of it. Kehayyom hazzeh, ‘as at this day’, points to the living generation as evidence.",
+      "words": ["H2896B", "H2421", "H3372H"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The commands are a gift given for Israel's good. This is the Old Testament's own answer to the idea that God's law is arbitrary: it is the shape of a life that flourishes."
+        }
+      ],
+      "refs": ["Deuteronomy 10:12-13", "Leviticus 18:5", "Psalm 19:7-11"]
+    },
+    {
+      "v": "25",
+      "context": "The catechism ends by calling careful obedience Israel's righteousness. The chapter note discusses how this verse relates to grace and to Paul; the verse note adds how the phrase works in Deuteronomy itself.",
+      "grammar": "Utsedaqah tihyeh lanu, ‘and it will be righteousness for us’. The same construction occurs in Deuteronomy 24:13, where returning a poor man's cloak at night ‘will be righteousness for you before the LORD’: an act recognized by God as faithful covenant conduct, not a payment toward salvation. Lifne YHWH, ‘before the LORD’, places that recognition in God's judgment. The object is again the singular kol hammitsvah hazzot, ‘all this commandment’, returning to the singular of verse 1 and closing the chapter as it began.",
+      "words": ["H6666", "H8104J", "H4687"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "In Deuteronomy, righteousness names the right standing of a redeemed people who live faithfully in the covenant. Christians read Paul in different ways against this background. Some, including many Lutheran and Reformed readers, see a standard of law-righteousness that only Christ fulfilled; others, including advocates of the ‘new perspective’ such as E. P. Sanders and N. T. Wright, stress that Israel's obedience was always a response within grace."
+        }
+      ],
+      "refs": ["Deuteronomy 24:13", "Genesis 15:6", "Romans 10:3-5", "Philippians 3:9"]
+    }
+  ]
+}

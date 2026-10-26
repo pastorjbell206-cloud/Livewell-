@@ -57,7 +57,7 @@ export const SUBJECTS: Subject[] = [
   {
     id: "theology",
     title: "Theology",
-    blurb: "The doctrines the church has confessed, and why they carry the weight of a Tuesday.",
+    blurb: "The doctrines the church has confessed, and why they carry the weight of everyday life.",
     match: /\btheolog|doctrine|trinity|christolog|atonement|salvation|justification|sanctif|eschat|sovereign|providence|incarnation|resurrection|covenant theology|image of god\b/i,
   },
   {

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
@@ -6,65 +7,66 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { CardGrid } from "@/components/editorial/CardGrid";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
+import { getReadEssays } from "@/lib/readProgress";
+import { filterPublicPosts } from "@/lib/shelf";
 
 export default function Marriage() {
+  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
 
   const FEATURED_ARTICLES = [
     {
       title: "Covenant vs. Contract: What Marriage Actually Is",
       slug: "covenant-vs-contract-what-marriage-is",
-      topic: "Marriage",
-      readTime: "18 min read"
+      topic: "Marriage"
     },
     {
       title: "Communication That Actually Works",
       slug: "marriage-communication-that-works",
-      topic: "Marriage",
-      readTime: "9 min read"
+      topic: "Marriage"
     },
     {
       title: "Fighting Fair: Conflict Without Casualties",
       slug: "marriage-fighting-fair",
-      topic: "Marriage",
-      readTime: "9 min read"
+      topic: "Marriage"
     },
     {
       title: "Forgiveness in Marriage: How to Actually Do It",
       slug: "forgiveness-in-marriage",
-      topic: "Marriage",
-      readTime: "11 min read"
+      topic: "Marriage"
     },
     {
       title: "Money and Marriage",
       slug: "marriage-money-and-marriage",
-      topic: "Marriage",
-      readTime: "9 min read"
+      topic: "Marriage"
     },
     {
       title: "Protecting Your Marriage From the Demands of Work",
       slug: "protecting-your-marriage-from-work",
-      topic: "Marriage",
-      readTime: "12 min read"
+      topic: "Marriage"
     }
   ];
+  const featured = filterPublicPosts(FEATURED_ARTICLES);
 
   const READING_PATHS = [
     {
-      title: "Marriage: Covenant & Roles",
-      description: "What covenant means, what you promised, and how two people lead and serve when love feels impossible.",
-      href: "/writing?q=covenant"
+      title: "Marriage: The Long Covenant",
+      description: "What covenant means, what you promised, and why marriages drift apart and how to stop it.",
+      href: "/life/marriage-the-long-covenant"
     },
     {
       title: "Marriage: Communication & Conflict",
-      description: "How to fight fair, have the conversations you've been avoiding, and repair after rupture.",
-      href: "/writing?q=conflict"
+      description: "Eight weeks of small daily practices: hearing before answering, the fight that keeps coming back, confession, and turning toward each other again.",
+      href: "/plans/marriage"
     },
     {
       title: "Marriage: Crisis & Rebuilding",
-      description: "Affairs, addiction, divorce, and the long work of starting again when the marriage nearly ended.",
-      href: "/writing?q=marriage"
+      description: "When the marriage is falling apart: betrayal, addiction, the question of divorce, safety first if you are afraid, and what to do this week.",
+      href: "/help/marriage"
     }
   ];
 
@@ -81,7 +83,7 @@ export default function Marriage() {
       <MinimalNav />
 
       {/* HERO SECTION */}
-      <section style={{ background: "var(--ink)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "80px 20px", minHeight: "600px", display: "flex", alignItems: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
           <h1 style={{ fontSize: "clamp(36px, 5vw, 56px)", fontWeight: "bold", lineHeight: "1.2", marginBottom: "24px", fontFamily: "var(--F)" }}>
             When Your Marriage Needs More Than Advice
@@ -91,7 +93,7 @@ export default function Marriage() {
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
             <button style={{ background: "var(--gold)", color: "var(--ink)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Marriage Health Assessment
+              Marriage Health Self-Check
             </button>
           </Link>
         </div>
@@ -109,31 +111,23 @@ export default function Marriage() {
           </div>
       </section>
 
-      {/* FEATURED ARTICLES */}
-      <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "48px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Essential Reading
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {FEATURED_ARTICLES.map((article, i) => (
-              <Link key={i} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", padding: "32px", borderRadius: "8px", border: "1px solid var(--bone-muted)", cursor: "pointer", height: "100%", display: "flex", flexDirection: "column", transition: "all 0.3s ease" }}>
-                  <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "12px", textTransform: "uppercase" }}>
-                    {article.topic}
-                  </div>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "16px", color: "var(--ink)", flex: 1, lineHeight: "1.4" }}>
-                    {article.title}
-                  </h3>
-                  <div style={{ fontSize: "12px", color: "var(--ink3)" }}>
-                    {article.readTime}
-                  </div>
-                </div>
-              </Link>
-            ))}
+      {/* FEATURED ARTICLES: only those on the public shelf (lib/shelf.ts);
+          the section steps aside while none of them is. */}
+      {featured.length > 0 && (
+        <section style={{ background: "var(--bone)", padding: "80px 20px" }}>
+          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+            <SectionHead title="Essential Reading" />
+            <EditorialIndex
+              label="Essential Reading"
+              items={featured.map((article) => ({
+                href: `/writing/${article.slug}`,
+                title: article.title,
+                read: readSlugs.has(article.slug),
+              }))}
+            />
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <StatementBand tone="dark" eyebrow="Covenant, not contract">
         A covenant is kept on the days the feeling is gone.
@@ -141,31 +135,16 @@ export default function Marriage() {
 
       {/* READING PATHS */}
       <section style={{ background: "var(--paper2)", padding: "80px 20px" }}>
-        <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "12px", fontFamily: "var(--F)", color: "var(--ink)" }}>
-            Curated Reading Paths
-          </h2>
-          <p style={{ fontSize: "16px", color: "var(--ink3)", marginBottom: "48px" }}>
-            Thematic collections to go deeper on specific areas of your marriage.
-          </p>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <SectionHead
+            title="Curated Reading Paths"
+            intro="Thematic collections to go deeper on specific areas of your marriage."
+          />
           <SectionArt seed="marriage-paths" />
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "32px" }}>
-            {READING_PATHS.map((path, i) => (
-              <Link key={i} href={path.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: "var(--card)", borderRadius: "8px", overflow: "hidden", border: "1px solid var(--bone-muted)", borderLeft: "3px solid var(--gold)", padding: "28px", height: "100%", cursor: "pointer" }}>
-                  <h3 style={{ fontSize: "18px", fontWeight: "bold", marginBottom: "12px", color: "var(--ink)" }}>
-                    {path.title}
-                  </h3>
-                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "var(--ink3)", marginBottom: "16px" }}>
-                    {path.description}
-                  </p>
-                  <div style={{ fontSize: "12px", fontWeight: "bold", color: "var(--gold)" }}>
-                    Read the essays →
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <CardGrid
+            label="Curated Reading Paths"
+            items={READING_PATHS.map((path) => ({ href: path.href, title: path.title, dek: path.description }))}
+          />
         </div>
       </section>
 
@@ -198,18 +177,18 @@ export default function Marriage() {
             Start with an honest reading of where you are.
           </h2>
           <p style={{ fontSize: "16px", lineHeight: "1.8", marginBottom: "32px", color: "var(--ink3)" }}>
-            Start with the Marriage Health Assessment. It takes 10 minutes and will show you exactly where your marriage is strongest and where repair work begins.
+            Start with the Marriage Health Self-Check. It takes about ten minutes and will show you where your marriage is strongest and where the repair work begins. If what you are carrying is heavier than a questionnaire can hold, a pastor or a counselor is the right next door, and there is no shame in walking through it.
           </p>
           <Link href="/tools/marriage-assessment" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
-              Take the Assessment
+            <button style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", border: "none", padding: "16px 40px", fontSize: "16px", fontWeight: "bold", borderRadius: "4px", cursor: "pointer" }}>
+              Take the Self-Check
             </button>
           </Link>
           <div style={{ marginTop: "20px" }}>
             <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>Or read the deep guide: Marriage, the Long Covenant</Link>
           </div>
           <div style={{ marginTop: "12px" }}>
-            <Link href="/diagnostic" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>If the trouble is bigger than the marriage: take the Life Diagnostic</Link>
+            <Link href="/diagnostic" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "none" }}>If the trouble is bigger than the marriage: eight questions on where you are with God</Link>
           </div>
         </div>
       </section>

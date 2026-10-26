@@ -3,6 +3,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -14,7 +15,7 @@ const COMPARISONS = [
   },
   {
     category: "Salvation",
-    catholic: "Faith formed by love, expressed through the sacraments. Justification is a process — initial grace received at baptism, sustained through the Eucharist, restored through confession. Works cooperate with grace (Council of Trent, 1545).",
+    catholic: "Faith formed by love, expressed through the sacraments. Justification is a process — initial grace received at baptism, sustained through the Eucharist, restored through confession. Works cooperate with grace (Council of Trent, 1545-1563).",
     protestant: "Sola Fide. Faith alone, received as a gift, not earned. Justification is a declaration — God counts the sinner righteous because of Christ's finished work. Good works are the fruit of salvation, not its cause (Luther, Calvin, the Reformers).",
   },
   {
@@ -55,6 +56,8 @@ const RELATED_ARTICLES = [
   { title: "The Enlightenment and the Crisis of Authority", href: "/writing/authority-we-traded-for-authenticity" },
   { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
+const RELATED_ON_SHELF = RELATED_ARTICLES.filter((a) => isPublicEssayHref(a.href));
+
 
 const FAQ_ITEMS = [
   {
@@ -136,7 +139,7 @@ export default function CatholicVsProtestant() {
         <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
         <h1 style={S.h1}>Catholic vs. Protestant</h1>
         <p style={S.heroSub}>
-          The division that split Western Christianity in 1517 and never healed. Not because the differences are trivial — because they are not. And not because reconciliation is impossible — because the shared ground runs deeper than most people on either side admit.
+          The division that split Western Christianity in 1517 and never healed. The differences are real, and no honest account pretends otherwise. The shared ground still runs deeper than most people on either side admit.
         </p>
       </section>
 
@@ -243,31 +246,33 @@ export default function CatholicVsProtestant() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section style={S.sectionBone}>
-        <div style={S.wrapNarrow}>
-          <p style={S.eyebrow}>KEEP READING</p>
-          <h2 style={S.h2}>Go deeper</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {RELATED_ARTICLES.map((a) => (
-              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
+      {/* Related Articles: only those on the public shelf (lib/shelf.ts). */}
+      {RELATED_ON_SHELF.length > 0 && (
+        <section style={S.sectionBone}>
+          <div style={S.wrapNarrow}>
+            <p style={S.eyebrow}>KEEP READING</p>
+            <h2 style={S.h2}>Go deeper</h2>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {RELATED_ON_SHELF.map((a) => (
+                <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
+                  <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={S.sectionDark}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={S.h2White}>The full post-Christian series</h2>
-          <p style={S.bodyTextWhite}>Sixty essays on the traditions, fractures, and questions that define Christianity today. This comparison is one piece. The series is the whole picture.</p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Explore the Series</button>
+          <h2 style={S.h2White}>After Christendom</h2>
+          <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
           </Link>
         </div>
       </section>

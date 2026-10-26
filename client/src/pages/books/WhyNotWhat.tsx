@@ -85,8 +85,7 @@ export default function WhyNotWhat() {
             then what, every time, in every place it matters.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" }}>
-            By James Bell, who came to faith from atheism when someone finally stopped answering his whats and let him
-            feel the weight of the why. Read the opening below, free.
+            By James Bell, who came to faith from atheism. Read the opening below, free.
           </p>
         </div>
       </section>
@@ -94,7 +93,7 @@ export default function WhyNotWhat() {
       {/* FREE SAMPLE */}
       <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
         <div style={prose} className="book-prose">
-          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the opening…</p>}
+          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the opening…</p>}
         </div>
       </section>
 

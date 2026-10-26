@@ -1,0 +1,440 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "As Laban goes home, Jacob goes on toward his, and angels of God meet him. The scene mirrors his departure twenty years earlier, when angels filled his dream at Bethel (28:12). Heaven's presence marks both edges of the land: leaving it and coming back.",
+      "grammar": "Vayyifge'u-vo mal'akhe Elohim, ‘and the angels of God met him’, uses paga, ‘to meet, encounter’, the verb used when Jacob ‘reached’ the place that became Bethel (28:11). Mal'akh means ‘messenger’, human or heavenly; in verse 3 Jacob sends mal'akhim of his own to Esau, and the repetition sets God's messengers beside Jacob's. Machaneh Elohim zeh, \"This is the camp of God\", leads to the name Machanayim (\"Mahanaim\"), a dual form, ‘two camps’. The dual will echo when Jacob divides his people into ‘two camps’ (verses 7, 10).",
+      "words": [
+        "H6293",
+        "H4397H",
+        "H4264",
+        "H4266"
+      ],
+      "text": "Hebrew Bibles number this chapter one verse higher throughout, because they count the last verse of chapter 31 as 32:1. The BSB's 32:1-32 is 32:2-33 in a Hebrew text, which matters when a reader follows a commentary that uses the Hebrew numbering.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angels say nothing and do nothing but meet Jacob. Their presence is itself the message: the God who promised at Bethel to keep him on the way out is keeping him on the way back, and Jacob names the place for God's camp before he names anything for his own fear."
+        }
+      ],
+      "refs": [
+        "Genesis 28:11-12",
+        "Psalm 34:7",
+        "2 Kings 6:16-17",
+        "Hebrews 1:14"
+      ]
+    },
+    {
+      "v": "3-5",
+      "context": "Jacob sends messengers ahead to Esau with a carefully worded greeting. He calls Esau his lord and himself Esau's servant, explains his long absence, lists his wealth, and asks for favor. It is the first contact between the brothers in twenty years.",
+      "grammar": "\"The land of Seir, the country of Edom\" (artsah Se'ir sedeh Edom) carries two wordplays from Esau's birth: Seir sounds like se'ar, ‘hair’, for the hairy newborn (25:25), and Edom like adom, ‘red’, the name Esau earned over the red stew (25:30). Jacob's message opens with koh amar avdekha Ya'aqov, ‘thus says your servant Jacob’, the formula of an official message, and calls Esau adoni, ‘my lord’. Garti, ‘I have sojourned’, is from gur, the verb for living as a resident foreigner. \"I have oxen, donkeys, flocks\" uses singular nouns as collectives (shor, chamor, tson), a common Hebrew idiom for a class of animals.",
+      "words": [
+        "H8165A",
+        "H0123G",
+        "H0113",
+        "H5650",
+        "H1481A",
+        "H0309",
+        "H2580"
+      ],
+      "refs": [
+        "Genesis 25:25",
+        "Genesis 25:30",
+        "Genesis 27:29",
+        "Genesis 33:8"
+      ]
+    },
+    {
+      "v": "6-8",
+      "context": "The messengers return with alarming news: Esau is coming with four hundred men. Jacob is terrified and divides everything into two groups, reasoning that if Esau attacks one, the other might escape.",
+      "grammar": "Vegam holekh likratekha, ‘and also he is coming to meet you’, uses a participle for an approach already under way. Vayyira Ya'aqov me'od vayyetser lo, ‘Jacob was greatly afraid and it was distressing to him’, pairs fear with tsarar, ‘to be narrow, distressed’. Jacob will later remember God as the one ‘who answered me in my day of distress’ (35:3), using the related noun. Hammachaneh hannish'ar lifletah, ‘the remaining camp will become an escape’, uses peletah, the word for a surviving remnant that God preserves (45:7, ‘a great deliverance’).",
+      "words": [
+        "H1980H",
+        "H7122G",
+        "H3372G",
+        "H3334",
+        "H2673",
+        "H4264",
+        "H6413"
+      ],
+      "history": "Four hundred men was the size of a strong armed band. David's force in his outlaw years numbered about four hundred (1 Samuel 22:2, 25:13), and four hundred young Amalekites escaped his attack on their camp (1 Samuel 30:17). Jacob had reason to read the number as a war party, even though the next chapter shows Esau's intent was otherwise.",
+      "refs": [
+        "Genesis 27:41",
+        "1 Samuel 22:2",
+        "Genesis 35:3",
+        "Genesis 33:1"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Jacob's prayer begins by naming the God he is praying to. He calls on the God of his grandfather and father, and then on the LORD who told him to return, so that his plea rests on God's own command.",
+      "grammar": "Jacob addresses God three ways: Elohe avi Avraham, ‘God of my father Abraham’, velohe avi Yitschaq, ‘God of my father Isaac’, and YHWH ha'omer elai, ‘the LORD who said to me’. The last uses a participle with the article, ‘the one who said’, identifying God by his word. Jacob quotes the command of 31:3 but changes the promise: God said ‘I will be with you’, and Jacob recalls it as ve'etivah immakh, \"and I will make you prosper\", literally ‘and let me do good with you’. He hears God's presence as God's goodness.",
+      "words": [
+        "H0430G",
+        "H3068G",
+        "H7725G",
+        "H4138",
+        "H3190"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jacob prays by reminding God of what God has said. The same pattern runs through Scripture's great prayers, such as Moses interceding after the golden calf (Exodus 32:13) and David after Nathan's promise (2 Samuel 7:25). Prayer in this form takes hold of God's word and asks him to keep it."
+        }
+      ],
+      "refs": [
+        "Genesis 31:3",
+        "Genesis 31:13",
+        "Exodus 32:13",
+        "2 Samuel 7:25"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The center of Jacob's prayer is a confession. He owns that he is too small for the faithful love God has shown him, and he measures that love by comparing what he carried across the Jordan twenty years ago, a staff, with what he has now, two camps.",
+      "grammar": "Qatonti mikkol hachasadim umikkol ha'emet, ‘I am too small for all the loving acts and all the faithfulness’, uses the stative verb qaton, ‘to be small’, the same root as haqqatan, ‘the younger’ (27:15). The younger son confesses he is too small for God's kindness. Chesed (plural here, ‘acts of steadfast love’) and emet (‘faithfulness, reliability’) form a pair that describes God's covenant character, the pair of Exodus 34:6, \"abounding in loving devotion and faithfulness\", and the pair Abraham's servant praised in 24:27. Maqli, \"my staff\", is the same word (maqqel) as the peeled branches of 30:37: the stick that once stood for Jacob's cleverness now stands for his poverty.",
+      "words": [
+        "H6994",
+        "H2617A",
+        "H0571G",
+        "H4731",
+        "H3383",
+        "H4264"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Jacob names God's covenant love (chesed) and faithfulness (emet) as the explanation of his whole life. They are the qualities God will proclaim as his name at Sinai (Exodus 34:6), and Jacob confesses them here as things he has received, not earned."
+        }
+      ],
+      "refs": [
+        "Exodus 34:6",
+        "Genesis 24:27",
+        "Genesis 30:37",
+        "2 Samuel 7:18"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Jacob asks plainly for rescue from his brother and names his fear: that Esau will come and strike down everyone, mothers and children alike.",
+      "grammar": "Hatsileni na, \"Please deliver me\", is a Hiphil imperative of natsal, ‘rescue, snatch away’, softened by na, ‘please’. The phrase miyyad achi miyyad Esav, ‘from the hand of my brother, from the hand of Esau’, repeats ‘hand’ and names Esau twice, first as brother and then by name, as if the relationship itself is the danger. Em al-banim, ‘mother upon children’, is an idiom for slaughter without mercy (compare Hosea 10:14, \"mothers were dashed to pieces along with their children\"). The same verb natsal returns in verse 30, when Jacob marvels that his life ‘was delivered’ after seeing God.",
+      "words": [
+        "H5337",
+        "H4994",
+        "H3027H",
+        "H3373",
+        "H5221",
+        "H0517"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The prayer is honest about fear. Jacob does not dress up his request; he names the danger and asks for rescue. Scripture treats such plain asking as fitting (Psalm 34:4, Philippians 4:6)."
+        }
+      ],
+      "refs": [
+        "Hosea 10:14",
+        "Genesis 32:30",
+        "Psalm 34:4",
+        "Philippians 4:6"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Jacob closes his prayer by quoting God's promise back to him. If Esau wipes out his family, God's promise of countless descendants cannot be kept, and Jacob rests his case there.",
+      "grammar": "Hetev etiv immakh, \"I will surely make you prosper\", intensifies the verb of verse 9 with an infinitive absolute, ‘doing good, I will do good’. \"Like the sand of the sea\" (kechol hayyam) is not what God said to Jacob at Bethel, where the image was ‘the dust of the earth’ (28:14); it is the image God gave Abraham after Moriah (22:17). Jacob gathers the promises made to his family and pleads them as his own.",
+      "words": [
+        "H0559",
+        "H3190",
+        "H2233H",
+        "H2344",
+        "H5608A"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Jacob treats the promises given to Abraham as binding on God for Abraham's heirs. That is what a covenant promise is: a commitment that runs down the generations and can be pleaded by those who inherit it."
+        },
+        {
+          "id": "faith",
+          "note": "Faith here takes the form of argument from God's word against present danger. Jacob does not deny the threat; he sets God's promise against it."
+        }
+      ],
+      "refs": [
+        "Genesis 22:17",
+        "Genesis 28:14",
+        "Genesis 28:13-14",
+        "Romans 4:20-21"
+      ]
+    },
+    {
+      "v": "13-15",
+      "context": "After praying, Jacob plans. He selects a lavish gift for Esau from his flocks and herds: goats, sheep, camels with their young, cattle, and donkeys, five hundred and fifty animals in all.",
+      "grammar": "Minchah (\"a gift\") is chosen from hab-ba veyado, \"what he had brought with him\", literally ‘that which had come into his hand’. The list is precise and orderly, with each kind of animal given in females and males. The numbers are 200 female goats to 20 males, 200 ewes to 20 rams, 40 cows to 10 bulls, and 20 female donkeys to 10 males, plus 30 nursing camels (gemalim menikot) with their calves. The emphasis on females and on nursing animals makes the gift not only valuable but productive: this is breeding stock that would go on multiplying in Esau's hands.",
+      "words": [
+        "H3885A",
+        "H4503H",
+        "H5795",
+        "H7353",
+        "H1581",
+        "H3243H",
+        "H6510"
+      ],
+      "refs": [
+        "Genesis 33:10-11",
+        "Proverbs 18:16",
+        "Proverbs 21:14"
+      ]
+    },
+    {
+      "v": "16-19",
+      "context": "Jacob sends the animals ahead in separate droves with spaces between them and gives each drover the same script. When Esau asks whose they are, each is to answer that they belong to his servant Jacob, are a gift for his lord Esau, and that Jacob himself is coming behind.",
+      "grammar": "Eder eder levaddo, ‘drove by drove by itself’, uses repetition to express distribution, each herd separate. Verav tasimu, ‘put a space’, uses revach, a breathing room between groups, so that Esau meets gift after gift. Esau's expected questions come in three short clauses: lemi-attah, ‘to whom do you belong?’, ve'anah telekh, ‘where are you going?’, and ulemi elleh, ‘whose are these?’. The script answers with Jacob's new vocabulary: le'avdekha leYa'aqov, ‘to your servant, to Jacob’, and la'doni le'Esav, ‘to my lord, to Esau’. The refrain gam hu achareinu, ‘he too is behind us’, keeps Jacob always one step back.",
+      "words": [
+        "H5739",
+        "H0905H",
+        "H7305",
+        "H4310",
+        "H5650",
+        "H0113",
+        "H0310A"
+      ],
+      "refs": [
+        "Genesis 33:8",
+        "1 Samuel 25:18-19",
+        "Proverbs 15:1"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "The narrator lets us hear Jacob's reasoning: the gift will appease Esau, and then Jacob can face him. The gift goes on ahead, and Jacob spends the night in the camp.",
+      "grammar": "Akhapperah fanav, \"I will appease\" him, is literally ‘I will cover his face’ or ‘wipe his face’. The verb is kipper, the word later used for atonement in Israel's sacrifices. Scholars debate its basic sense: some relate it to ‘cover’, others to an Akkadian verb meaning ‘wipe clean’, and in this verse it clearly means to pacify anger by a payment. Ulai yissa fanai, \"perhaps he will accept me\", is literally ‘perhaps he will lift my face’, an idiom for showing favor or accepting someone, used when the angel tells Lot ‘I will grant this request’ (19:21) and when God says he will ‘accept’ Job's prayer (Job 42:8). Verse 21 continues the face words: the gift passed ‘before his face’ (al-panav).",
+      "words": [
+        "H3722A",
+        "H6440L",
+        "H4503H",
+        "H6440H",
+        "H0194",
+        "H5375Q",
+        "H6440N"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse uses the vocabulary of atonement in its everyday sense: turning away a wronged party's anger by a costly gift. Israel's sacrifices would later use the same word, with the difference that God himself provides the means by which his face is turned toward his people (Leviticus 17:11)."
+        }
+      ],
+      "refs": [
+        "Leviticus 17:11",
+        "Proverbs 16:14",
+        "Genesis 19:21",
+        "Job 42:8"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "In the night Jacob takes his wives, their servants, and his eleven sons across the ford of the Jabbok, then sends everything he owns across as well. The verbs of crossing pile up, and by the end everyone and everything is on the other side except Jacob.",
+      "grammar": "The verb avar, ‘to cross, pass over’, is the key word of the chapter: Jacob crossed the Jordan with only his staff (verse 10), the droves ‘pass on’ ahead (verses 16, 21), and here vayya'avor, ‘he crossed’, is followed by the Hiphil vayya'avirem, ‘he made them cross’, and vayya'aver, ‘he sent across’. Ma'avar Yabboq, \"the ford of the Jabbok\", is a crossing place, from the same root. Verse 22 seems to say Jacob crossed, and verse 24 has him alone, so many interpreters read verse 22 as a summary of the whole operation, with verse 23 filling in the details and Jacob finally left on the near bank. The count of \"eleven sons\" leaves out Dinah and anticipates Benjamin, not yet born.",
+      "words": [
+        "H6965B",
+        "H3206",
+        "H5674A",
+        "H4569A",
+        "H2999",
+        "H5158A"
+      ],
+      "refs": [
+        "Genesis 32:10",
+        "Deuteronomy 3:16",
+        "Joshua 12:2"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Jacob is left alone, and a man wrestles with him until dawn. The narrator gives no warning, no description, and no explanation. The man who always kept something between himself and danger, whether a disguise, a herd, or a river, now has nothing between himself and his opponent.",
+      "grammar": "Vayyivvater Ya'aqov levaddo, ‘and Jacob was left over by himself’, uses a Niphal of yatar, ‘to remain, be left over’. The wrestling verb, vaye'aveq, is discussed in the chapter note; it is a Niphal, a stem that here expresses a mutual action, ‘grappled with each other’. The attacker is simply ish, ‘a man’, with no article. Ad alot hashshachar, \"until daybreak\", literally ‘until the going up of the dawn’, marks the length of the struggle and prepares for the man's request in verse 26.",
+      "words": [
+        "H3498",
+        "H0905H",
+        "H0079",
+        "H0376G",
+        "H7837"
+      ],
+      "refs": [
+        "Hosea 12:3-4",
+        "Genesis 18:1-2",
+        "Joshua 5:13-14"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "When the man sees he cannot overpower Jacob, he touches the socket of Jacob's hip and wrenches it out of joint. The struggle is not ended but changed: from here on Jacob is holding on, not winning.",
+      "grammar": "Ki lo yakhol lo, ‘that he could not prevail against him’, uses yakhol, the verb of Rachel's boast (30:8) and of the name-giving in verse 28. Vayyigga bekhaf-yerekho, ‘he touched the hollow of his thigh’, uses naga, ‘to touch’; the BSB's \"struck\" gives the effect, but the Hebrew stresses how little effort it took. Yerekh, ‘thigh’, is not a casual body part in Genesis. It is where a hand is placed to swear a solemn oath (24:2, 47:29) and the source of descendants: Jacob's family in Egypt is literally ‘those who came out of his thigh’ (46:26). Vatteqa, ‘it was dislocated’, is from a rare verb, yaqa.",
+      "words": [
+        "H3201",
+        "H5060",
+        "H3709I",
+        "H3409",
+        "H3363",
+        "H0079"
+      ],
+      "text": "The verb naga means ‘touch’, and translations differ over how to render it here. Some keep ‘touched’ to stress the ease of the act; others, like the BSB, use \"struck\" to convey the force needed to dislocate a hip.",
+      "refs": [
+        "Genesis 24:2",
+        "Genesis 47:29",
+        "Genesis 46:26",
+        "2 Corinthians 12:7-9"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The man asks to be let go because dawn is breaking. Jacob, disabled and clinging, refuses unless the man blesses him. The one who once took a blessing by deception now asks for one outright.",
+      "grammar": "Shalleheni, \"Let me go\", is the same Piel imperative Jacob used to Laban, ‘Send me on my way’ (30:25). Then Jacob was the one asking for release; now he holds another and will not release him. Lo ashallechakha ki im-berakhtani, \"I will not let you go unless you bless me\", uses a perfect after ki im, ‘unless you have blessed me’, a Hebrew way of setting a condition that must be completed first. Why the man must leave at dawn is not explained. Some interpreters connect it with the danger of seeing God's face in full light (Exodus 33:20); others think the text simply marks the end of the night's encounter.",
+      "words": [
+        "H7971H",
+        "H7837",
+        "H3588B",
+        "H0518B",
+        "H1288"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Hosea reads this moment as prayer: Jacob \"wept and sought His favor\" (Hosea 12:4). The blessing is not seized by strength but asked for by one who can no longer fight, which is the posture of faith throughout Scripture."
+        }
+      ],
+      "refs": [
+        "Hosea 12:4",
+        "Genesis 30:25",
+        "Genesis 27:19",
+        "Luke 18:1-8"
+      ]
+    },
+    {
+      "v": "27-28",
+      "context": "The man asks Jacob his name, and Jacob must say it. Then the man gives him a new one, Israel, because he has struggled with God and with men and prevailed. The blessing Jacob asked for begins with a new identity.",
+      "grammar": "Mah-shemekha, \"What is your name?\", recalls the last time Jacob was asked who he was. When blind Isaac asked \"Which one are you, my son?\" (27:18), Jacob answered \"I am Esau\" (27:19). Now he answers Ya'aqov, the name Esau said suited him because he had cheated twice (27:36). The new name is explained by sarita, ‘you have struggled’, from sarah, which Hosea uses of the same event (Hosea 12:3). Vattukhal, ‘and you have prevailed’, is the verb of verse 25, when the man could not prevail. \"With God and with men\" covers Jacob's life: Esau and Laban among men, and now God himself.",
+      "words": [
+        "H8034",
+        "H0559",
+        "H3478",
+        "H8280",
+        "H0430G",
+        "H3201"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The name that God gives Jacob becomes the name of the chosen people. Election in Genesis is not a reward for good character; it is God's commitment to a flawed man, marked by a name that describes his struggle rather than his virtue."
+        },
+        {
+          "id": "israel",
+          "note": "From this point ‘Israel’ is both a man and, soon, a people (verse 32). The nation's identity is rooted in this night: a people named for wrestling with God and surviving by his blessing."
+        }
+      ],
+      "text": "Unlike Abraham, whom Genesis never again calls Abram after 17:5, Jacob continues to be called Jacob as well as Israel for the rest of Genesis, and God confirms the new name again at Bethel (35:10). Interpreters have seen in the double name a sign that Jacob's transformation is real but incomplete, or simply a sign that the two names came to be used side by side.",
+      "refs": [
+        "Genesis 27:18-19",
+        "Genesis 27:36",
+        "Genesis 35:10",
+        "Hosea 12:3"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "Jacob asks the man's name in return, and the man refuses with a question. Then he blesses Jacob, and the narrator does not tell us what the blessing said.",
+      "grammar": "Haggidah-na shemekha, \"Please tell me your name\", uses the lengthened imperative and na, a polite request. The reply, lammah zeh tish'al lishmi, \"Why do you ask my name?\", is echoed almost exactly when the angel of the LORD answers Manoah's request with the same question and adds, \"since it is beyond comprehension\" (Judges 13:18). The man keeps the authority that comes with naming: he has renamed Jacob, and Jacob may not name him. Vayvarekh oto sham, ‘and he blessed him there’, reports the blessing without its words.",
+      "words": [
+        "H7592",
+        "H5046",
+        "H8034",
+        "H1288"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God gives what Jacob needs, a blessing and a name, but withholds what Jacob would control, his own name. Revelation in Scripture is always given at God's initiative and on his terms (Exodus 3:13-14)."
+        }
+      ],
+      "refs": [
+        "Judges 13:17-18",
+        "Exodus 3:13-14",
+        "Genesis 35:9-10"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "Jacob names the place Peniel, ‘face of God’, because he has seen God face to face and survived. His prayer was for deliverance from Esau; before that prayer is answered, he has been delivered from something far more dangerous.",
+      "grammar": "Ra'iti Elohim panim el-panim, \"I have seen God face to face\", uses the phrase later said of Moses, with whom the LORD spoke ‘face to face’ (Exodus 33:11), and of Gideon's terror in Judges 6:22. Vattinnatsel nafshi, \"and yet my life was spared\", is a Niphal of natsal, the verb of Jacob's prayer, hatsileni, ‘deliver me’ (verse 11). He asked to be delivered from his brother's hand, and the first deliverance he receives is from the face of God.",
+      "words": [
+        "H7200G",
+        "H6440H",
+        "H6439G",
+        "H5337",
+        "H5315H"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Scripture holds together two truths: no one can see God's face and live (Exodus 33:20), and yet God does let himself be seen, in measure, by those he chooses. Jacob's amazement belongs with Gideon's and Manoah's (Judges 6:22-23, 13:22), and the New Testament says God is finally made known in the Son (John 1:18)."
+        },
+        {
+          "id": "salvation",
+          "note": "Jacob's survival is a gift, not an achievement. He lives because God chose not to destroy him, which is the logic of every deliverance Scripture calls salvation."
+        }
+      ],
+      "refs": [
+        "Exodus 33:11",
+        "Exodus 33:20",
+        "Judges 6:22-23",
+        "Judges 13:22",
+        "John 1:18"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "The sun rises as Jacob passes Penuel, and he is limping. The night that began in fear ends in light, and Jacob walks away marked for the rest of his life.",
+      "grammar": "Vayyizrach-lo hashshemesh, ‘and the sun rose for him’, answers 28:11, where Jacob stopped at Bethel ‘because the sun had set’. His flight from the land began at sunset; his return begins at sunrise. Tsolea al-yerekho, \"limping because of his hip\", is a participle, a continuing condition. The same root describes ‘the lame’ whom God promises to gather and make a remnant (Micah 4:6-7, Zephaniah 3:19), a picture of Israel's future drawn from its ancestor's walk.",
+      "words": [
+        "H2224",
+        "H8121",
+        "H5674A",
+        "H6439G",
+        "H6760",
+        "H3409"
+      ],
+      "text": "The place is Peniel in verse 30 and Penuel in verse 31. Both are forms of the same name, ‘face of God’, differing only in a connecting vowel; Penuel is the spelling used elsewhere in the Old Testament (Judges 8:8-9, 1 Kings 12:25).",
+      "refs": [
+        "Genesis 28:11",
+        "Micah 4:6-7",
+        "Zephaniah 3:19",
+        "Judges 8:8-9"
+      ]
+    },
+    {
+      "v": "32",
+      "context": "The narrator steps out of the story to explain a custom: to this day the Israelites do not eat the tendon at the hip socket, because that is where Jacob was touched. The night at the Jabbok is remembered at the table.",
+      "grammar": "Al-ken, \"Therefore\", with ad hayyom hazzeh, \"to this day\", is the standard formula in Genesis for linking a story to something still known in the narrator's time. Bene Yisra'el, \"the Israelites\", literally ‘the sons of Israel’, appears here immediately after the name Israel is given, and the phrase that first means Jacob's sons becomes the name of the whole people. Gid hannasheh, ‘the sinew of the nasheh’, is usually identified with the sciatic nerve; the word nasheh occurs only here.",
+      "words": [
+        "H3651C",
+        "H1121G",
+        "H3478",
+        "H1517",
+        "H5384",
+        "H3709I"
+      ],
+      "history": "The custom is not among the laws of Moses, and it is not mentioned again in the Old Testament, but it was kept. The Mishnah, the collection of Jewish legal tradition compiled around AD 200, devotes a chapter of its tractate Hullin to the prohibition of the sinew of the hip, which shows the practice was well established by then.",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The nation carries its ancestor's wound in its daily life. A meal becomes a small act of memory that Israel's identity began with a man who was blessed and lamed by God on the same night."
+        }
+      ],
+      "refs": [
+        "Genesis 32:25",
+        "Genesis 26:33",
+        "Joshua 4:9"
+      ]
+    }
+  ]
+}

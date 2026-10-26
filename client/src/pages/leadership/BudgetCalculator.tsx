@@ -79,7 +79,7 @@ export default function BudgetCalculator() {
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}><Link href="/leadership" style={{ color: "inherit" }}>Leadership Formation</Link> · The budget calculator</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 4.6vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>A budget is a theology in numbers.</h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "58ch" }}>Show a church its budget and it will tell you what that church actually worships. Allocate the giving here and watch the dollars land. The ranges are guides drawn from healthy churches, not commandments.</p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "58ch" }}>Show a church its budget and it will tell you what that church actually worships. Allocate the giving here and watch the dollars land. The ranges are guides, not commandments, and none of this is financial advice; take the numbers to your treasurer and your elders before you take them to a vote.</p>
         </div>
       </section>
 

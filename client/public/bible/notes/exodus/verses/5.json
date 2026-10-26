@@ -1,0 +1,259 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Moses and Aaron deliver God's demand to Pharaoh in the form of a royal message: thus says the LORD, let my people go. The elders who were to accompany them (3:18) are not mentioned, and the request is for a feast in the wilderness.",
+      "grammar": "Koh amar YHWH, ‘thus says the LORD’, is the messenger formula, the way an ancient envoy delivered his master's words; it becomes the prophets' standard opening. Shallach et-ammi, ‘let my people go’, is a Piel imperative of shalach, and the possessive ‘my people’ is the heart of the claim: Israel belongs to the LORD, not to Pharaoh. Veyachoggu li, ‘that they may hold a feast to me’, uses chagag, the verb for keeping a pilgrimage festival (chag); the Arabic word hajj, the pilgrimage to Mecca, comes from the same Semitic root.",
+      "words": [
+        "H0175",
+        "H3541",
+        "H7971H",
+        "H5971A",
+        "H2287",
+        "H4057B"
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "‘My people’ is covenant language: God claims Israel as his own before the exodus, the law, or the land. The New Testament uses the same language of the church, a people belonging to God (1 Peter 2:9-10)."
+        }
+      ],
+      "refs": [
+        "Exodus 4:22-23",
+        "Exodus 23:14-17",
+        "1 Peter 2:9-10"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Pharaoh's reply sets the terms for the whole plague narrative. He does not know the LORD, sees no reason to obey him, and will not let Israel go. The rest of the story answers his question, ‘Who is the LORD?’",
+      "grammar": "Mi YHWH, ‘who is the LORD?’, is a dismissive question, not a request for information. Asher eshma beqolo, ‘that I should listen to his voice’, uses the idiom for obedience that Moses feared the Israelites would not give (4:1). Lo yada'ti et-YHWH, ‘I do not know the LORD’, uses yada in the sense of acknowledging authority. The phrase sets up the refrain of the chapters that follow, where God acts so that Egypt ‘will know that I am the LORD’ (7:5, 17; 14:4, 18).",
+      "words": [
+        "H4310",
+        "H3068G",
+        "H8085H",
+        "H6963A",
+        "H3045",
+        "H7971H"
+      ],
+      "theology": [
+        {
+          "id": "god",
+          "note": "Pharaoh's refusal to know the LORD is the question the plagues answer. God makes himself known not by argument but by acts in history, and the goal is that both Israel and Egypt will know who he is."
+        }
+      ],
+      "refs": [
+        "Exodus 7:5",
+        "Exodus 7:17",
+        "Exodus 14:18",
+        "Exodus 1:8"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Moses and Aaron restate the request more modestly: a three-day trip to sacrifice, lest God strike them. They now speak of ‘the God of the Hebrews’, a name an Egyptian would place.",
+      "grammar": "Niqra alenu, ‘he has met with us’, is spelled here with the letter aleph, where 3:18 used he (niqrah); the two spellings reflect closely related verbs meaning to meet or happen upon. Pen-yifga'enu, ‘lest he fall upon us’, uses paga', to strike or encounter violently. The two threats are dever, ‘pestilence’, the word used for the fifth plague on Egypt's livestock (9:3), and cherev, ‘sword’. The foremen will use cherev in verse 21, accusing Moses of putting a sword in Pharaoh's hand.",
+      "words": [
+        "H5680",
+        "H7122G",
+        "H2076",
+        "H6435",
+        "H6293",
+        "H1698",
+        "H2719"
+      ],
+      "refs": [
+        "Exodus 3:18",
+        "Exodus 8:26-27",
+        "Exodus 9:3"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "Pharaoh treats the request as a labor dispute. He accuses Moses and Aaron of taking the people from their work and notes how many workers are now idle because of them.",
+      "grammar": "Tafri'u, ‘you are drawing away’, is a causative of para', ‘to let loose’ or ‘let go unrestrained’; the same root describes the people running wild at the golden calf (32:25). Lekhu lesivlotekhem, ‘get to your burdens’, uses sivlot, the forced labor of 1:11 and 6:6. In verse 5 Pharaoh says vehishbattem otam, ‘you are making them rest’, a causative of shavat, the root of shabbat, Sabbath. Pharaoh complains that Moses is giving his slaves a sabbath; the law will later command exactly that and ground it in the memory of Egypt (Deuteronomy 5:15).",
+      "words": [
+        "H6544B",
+        "H4639G",
+        "H5450",
+        "H7227A",
+        "H7673A"
+      ],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "In Egypt rest is a threat to productivity. In Israel rest is commanded for everyone, including servants and foreigners, because Israel was once a slave in Egypt (Deuteronomy 5:14-15). The Sabbath is God's answer to Pharaoh's economy."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 5:14-15",
+        "Exodus 32:25",
+        "Exodus 1:11"
+      ]
+    },
+    {
+      "v": "6-9",
+      "context": "That same day Pharaoh orders the straw withheld and the quota kept, and he explains his reasoning: the people are lazy, and heavier work will stop them listening to lies. The request to worship is answered with more slavery.",
+      "grammar": "Two groups of officials receive the order: the nogesim (‘taskmasters’, Egyptians who drove the work) and the shoterim (‘foremen’, Israelites who kept the count; see the chapter note). Kitmol shilshom, ‘as yesterday and the day before’, means ‘as before’. Matkonet, ‘quota’, is a measured amount. Nirpim hem, ‘they are slack’, is a Niphal participle of rafah, ‘to sink, grow slack’, the verb used in 4:26 when God ‘let him alone’. In verse 9 tikhbad ha'avodah, ‘let the work be heavy’, uses kaved, the root the plague narratives use for Pharaoh's heavy heart. Divre-shaqer, ‘lying words’, is Pharaoh's name for God's message.",
+      "words": [
+        "H5065",
+        "H7860",
+        "H8401",
+        "H7197A",
+        "H4971",
+        "H7503",
+        "H3513H",
+        "H8267"
+      ],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Pharaoh treats human beings as units of production and treats the desire to worship as idleness. The Bible's critique of Egypt is not only that it worships other gods but that it makes the state and its output into something absolute, to which every life must be sacrificed."
+        }
+      ],
+      "refs": [
+        "Exodus 1:13-14",
+        "Exodus 7:14",
+        "Proverbs 29:12"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "The taskmasters and foremen go out and announce the new order in Pharaoh's name. The quota stays; the straw stops.",
+      "grammar": "Koh amar par'oh, ‘thus says Pharaoh’, deliberately mirrors ‘thus says the LORD’ in verse 1: two kings, two messenger formulas. Enenni noten lakhem teven, ‘I am not giving you straw’, uses a participle for a standing policy. Verse 11 opens with an emphatic attem, ‘you yourselves’, go and take straw wherever you can find it. The closing clause, ki ein nigra me'avodatkhem davar, ‘for not a thing will be reduced from your work’, uses gara', ‘to diminish, take away’, the same verb as the order in verse 8.",
+      "words": [
+        "H5065",
+        "H7860",
+        "H3541",
+        "H8401",
+        "H4672",
+        "H1639"
+      ],
+      "refs": [
+        "Exodus 5:1",
+        "1 Kings 12:10-14"
+      ]
+    },
+    {
+      "v": "12-14",
+      "context": "The people scatter through Egypt gathering stubble for straw. The taskmasters press for the daily quota, and when it is not met, the Israelite foremen are beaten.",
+      "grammar": "Vayyafets, ‘they scattered’, describes the people spread across the land, the opposite of the gathered, assembled people of 4:29. The stubble is qash, a word that returns in the Song of the Sea, where God's anger consumes Egypt's army like stubble (15:7). Devar-yom beyomo, ‘the matter of a day in its day’, the daily quota, is the phrase later used for gathering manna, each day's portion (16:4): the same measure of a day's work reappears as a measure of God's daily provision. Vayyukku, ‘were beaten’, is a passive (Hophal) of nakah, the verb for the Egyptian beating a Hebrew in 2:11. The quota in verse 14 is chuqqekhem, ‘your prescribed amount’, from choq, a word usually translated ‘statute’.",
+      "words": [
+        "H6327A",
+        "H7179",
+        "H0213",
+        "H3117J",
+        "H5221",
+        "H2706G"
+      ],
+      "history": "Stubble, qash, is the part of the grain stalk left standing after the harvest. Gathering it was slow work compared with receiving chopped straw from the state, and it required walking across farmland far from the building sites. The verse pictures a labor force spread through the countryside, with no reduction in the count of bricks demanded at the end of each day.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The first result of Moses' obedience is that things get worse. The text does not hide it: obeying God's call can bring more suffering in the short run, and the chapter holds that tension without explaining it away."
+        }
+      ],
+      "refs": [
+        "Exodus 15:7",
+        "Exodus 16:4",
+        "Exodus 2:11"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "The Israelite foremen go directly to Pharaoh and appeal as his servants. They lay the fault on his people, not on the workers.",
+      "grammar": "Vayyits'aqu el-par'oh, ‘they cried out to Pharaoh’, uses tsa'aq, the verb for the cry that went up to God in 2:23 and 3:7, 9. The foremen take their cry to the wrong king. They call themselves avadekha, ‘your servants’, three times in two verses, the word from the same root as the ‘work’ that crushes them. The last clause, vechatat ammekha, is grammatically difficult. The BSB's “the fault is with your own people” takes it as ‘your people (the Egyptians) are at fault’; others read it, with slight changes, as ‘you are sinning against your own people’, the Israelites as Pharaoh's subjects.",
+      "words": [
+        "H6817",
+        "H5650",
+        "H8401",
+        "H5221",
+        "H2398"
+      ],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The foremen appeal to Pharaoh's justice and find none. The scene shows why Israel's cry must finally go to God: those who hold unjust power do not correct themselves, and the oppressed need a judge above the king."
+        }
+      ],
+      "refs": [
+        "Exodus 2:23",
+        "Exodus 3:9",
+        "Psalm 146:7-9"
+      ]
+    },
+    {
+      "v": "17-19",
+      "context": "Pharaoh repeats his charge of laziness and dismisses them with the command to get back to work. The foremen see that they are in trouble.",
+      "grammar": "Nirpim attem nirpim, literally ‘slack you are, slack’, repeats the word for emphasis, and the BSB keeps the repetition with “Slackers”. Ve'attah lekhu ivdu, “Now get to work”, uses avad, the verb Israel wanted to use for serving God (3:12; 4:23): Pharaoh commands the service they owe him. Tokhen levenim, ‘the measured amount of bricks’, uses a word for a fixed measure. In verse 19 the foremen see otam bera', ‘themselves in evil’, that is, in serious trouble; ra' (‘evil, harm’) is the word Moses will throw at God in verses 22 and 23.",
+      "words": [
+        "H7503",
+        "H5647G",
+        "H8506",
+        "H7200G",
+        "H7451B"
+      ],
+      "refs": [
+        "Exodus 3:12",
+        "Exodus 4:23",
+        "Exodus 5:8"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "Coming out from Pharaoh, the foremen find Moses and Aaron waiting and turn on them. They call on the LORD to judge the two men who have made Israel hateful to Pharaoh.",
+      "grammar": "Vayyifge'u, ‘they met’ or ‘they confronted’, is paga', the verb used in verse 3 for God falling upon Israel with plague or sword; the meeting is hostile. Moses and Aaron are nitsavim liqratam, ‘stationed to meet them’. The foremen's curse, yere YHWH alekhem veyishpot, ‘may the LORD see you and judge’, calls on the God who has already said he has seen Israel's affliction (3:7). Hiv'ashtem et-rechenu is literally ‘you have made our smell stink’; the verb ba'ash reappears when the Nile's fish die and the river stinks (7:18, 21). The foremen feel the stench now; Egypt will smell it in the plagues.",
+      "words": [
+        "H6293",
+        "H5324",
+        "H7200G",
+        "H8199",
+        "H0887",
+        "H7381",
+        "H2719"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The foremen appeal to God as judge, but against the wrong party. The scene shows how suffering can turn the oppressed against the very people God has sent to help them, a pattern that recurs in the wilderness (14:11-12; 16:3)."
+        }
+      ],
+      "refs": [
+        "Genesis 34:30",
+        "Exodus 7:18",
+        "Exodus 14:11-12",
+        "Exodus 16:3"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "Moses takes the accusation to God. He asks why God has brought trouble on this people and why he sent Moses at all, and he states flatly that God has not delivered them. The chapter ends on the question.",
+      "grammar": "Vayyashov Moshe el-YHWH, ‘Moses returned to the LORD’, describes going back to God with the problem. Lamah hare'otah, ‘why have you done harm’, is a causative of ra'a', ‘to be evil, bad’, from the same root as the ‘trouble’ the foremen saw in verse 19. Verse 23 ends with vehatsel lo-hitsalta et-ammekha, ‘and delivering you have not delivered your people’, the infinitive absolute with a negative, meaning ‘you have not delivered them at all’. It throws back at God the very verb (natsal) he used when he promised to come down to deliver them (3:8). Moses also says ‘your people’, reminding God of his own claim in verse 1.",
+      "words": [
+        "H7725G",
+        "H0136",
+        "H7489A",
+        "H7971G",
+        "H8034",
+        "H5337"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Moses' prayer is a complaint, and Scripture records it without rebuke. The lament psalms pray the same way (Psalm 13:1-2; 44:23-26), holding God to his own promises. God answers Moses not with a reprimand but with a renewed promise in 6:1."
+        },
+        {
+          "id": "suffering",
+          "note": "The chapter ends in the gap between promise and fulfillment, where obedience has made things worse. The Bible does not treat that gap as proof that God has failed; it treats it as the place where faith has to speak honestly to God."
+        }
+      ],
+      "refs": [
+        "Exodus 3:8",
+        "Exodus 6:1",
+        "Psalm 13:1-2",
+        "Psalm 44:23-26",
+        "Habakkuk 1:2-3"
+      ]
+    }
+  ]
+}

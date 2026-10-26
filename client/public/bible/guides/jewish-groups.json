@@ -1,0 +1,181 @@
+{
+  "id": "jewish-groups",
+  "title": "Pharisees, Sadducees, and Others",
+  "summary": "The Jewish groups and institutions of Jesus' day: the temple and its priests, Sadducees, Pharisees, scribes, Essenes and Qumran, Zealots and popular movements, Samaritans, the Sanhedrin, the synagogue, and the ordinary people, proselytes, and God-fearers around them.",
+  "sections": [
+    {
+      "h": "One people, many parties",
+      "body": "The Gospels and Acts introduce a crowd of groups and titles that the Old Testament never mentions: Pharisees, Sadducees, scribes, Herodians, Zealots, the Sanhedrin, the synagogue. All of them took shape in the centuries between the testaments, and all of them were part of one people who worshiped one God, read one Scripture, and looked to one temple. The disagreements among them were real and sometimes violent, but they were arguments within Judaism about how to be faithful to the God of Israel under foreign rule.\n\nThe Jewish historian Josephus, writing in the last decades of the first century, describes three ‘schools of thought’ among the Jews: the Pharisees, the Sadducees, and the Essenes (Jewish War 2.119-166; Antiquities 13.171-173; 18.11-22). He adds a ‘fourth philosophy’ founded by Judas the Galilean, whose followers held that God alone should be Israel's ruler (Antiquities 18.23-25). He presents them to Greek and Roman readers as something like philosophical schools, which makes them sound more like debating societies than they were. He also gives numbers: more than six thousand Pharisees and about four thousand Essenes (Antiquities 17.42; 18.20), and the Sadducees were fewer still. In a population of perhaps a million or more in the land, most Jews belonged to no party.\n\nE. P. Sanders (Judaism: Practice and Belief, 63 BCE to 66 CE, 1992) called what most of them shared ‘common Judaism’: belief in the one God and his covenant with Israel, the Scriptures, the temple and its sacrifices, the Sabbath, circumcision, the food laws, the festivals, and prayer. The parties disagreed about the edges of that common life, about how strictly and in what way to keep it, and about who had the authority to say. When reading the New Testament, it helps to remember that the sources for these groups are all partial. Josephus had his own loyalties (he claimed to follow the Pharisees in public life); the Gospels record conflicts, not a neutral survey; the rabbinic writings that preserve Pharisaic tradition were compiled from about AD 200 onward; and the Dead Sea Scrolls represent one community's point of view.",
+      "table": {
+        "caption": "The main Jewish groups of the New Testament period",
+        "columns": [
+          "Group",
+          "Who they were",
+          "Distinctive beliefs and practice",
+          "Where in the New Testament"
+        ],
+        "rows": [
+          [
+            "Sadducees",
+            "Priestly and lay aristocracy of Jerusalem",
+            "Only the written Law binding; no resurrection, angels, or spirits; human freedom",
+            "Mark 12:18-27; Acts 4:1-2; 5:17; 23:6-8"
+          ],
+          [
+            "Pharisees",
+            "A lay movement of devout, learned Jews, popular with the people",
+            "The traditions of the elders alongside the written Law; resurrection; careful tithing, purity, and Sabbath",
+            "Throughout the Gospels; Acts 5:34; 15:5; 23:6; Philippians 3:5"
+          ],
+          [
+            "Scribes",
+            "Professional experts in the Law, from several parties",
+            "Interpretation and teaching of the Law; legal documents",
+            "Throughout the Gospels, often with Pharisees or chief priests"
+          ],
+          [
+            "Essenes",
+            "A strict movement, including the community at Qumran",
+            "Shared property, rigorous purity, their own calendar, rejection of the temple's priesthood",
+            "Not named"
+          ],
+          [
+            "Zealots and the ‘fourth philosophy’",
+            "Those committed to resisting Roman rule, eventually by force",
+            "God alone is Israel's master; paying tribute is disloyalty to God",
+            "Luke 6:15; Acts 1:13; 5:37; 21:38"
+          ],
+          [
+            "Herodians",
+            "Supporters of the Herodian dynasty",
+            "Political rather than religious; little is known",
+            "Mark 3:6; 12:13; Matthew 22:16"
+          ],
+          [
+            "Samaritans",
+            "Descendants of northern Israelites and settlers, with their own temple and Torah",
+            "Mount Gerizim as the chosen place; the five books of Moses only",
+            "Luke 10:30-37; 17:11-19; John 4; Acts 8:4-25"
+          ]
+        ]
+      },
+      "refs": [
+        "Acts 23:6-8",
+        "Acts 5:34-39",
+        "Mark 12:13",
+        "Luke 6:15",
+        "John 4:9"
+      ]
+    },
+    {
+      "h": "The temple and the priests",
+      "body": "The temple in Jerusalem was the center of Jewish life. Herod the Great began rebuilding it around 20 BC, doubling the size of the platform around it, and the work on its courts continued until the 60s AD, only a few years before the Romans destroyed it in AD 70. The platform, roughly 144,000 square meters, was the largest of its kind in the ancient world. Gentiles could enter its outer court, but a stone barrier with warning notices in Greek and Latin kept them from the inner courts on pain of death. One of these notices was found in Jerusalem in 1871 by Charles Clermont-Ganneau, and part of another in 1935. The charge that Paul had brought a Greek past that barrier nearly got him killed (Acts 21:28-29), and many readers hear an echo of it in Paul's words about Christ tearing down “the dividing wall of hostility” between Jew and gentile (Ephesians 2:14).\n\nThe temple was served by thousands of priests, descendants of Aaron, organized into twenty-four divisions that came up to Jerusalem in turn for a week of service (compare Luke 1:5-9), and by Levites who sang, kept the gates, and policed the courts. Most priests were ordinary men who lived in the towns and villages of Judea and Galilee and served only a few weeks a year. Above them stood the ‘chief priests’, a phrase the Gospels use for the high priest and the small circle of wealthy families from which high priests were chosen, together with the temple's senior officers, such as the captain of the temple (Acts 4:1). Since Herod's time, high priests had been appointed and removed by kings and Roman governors, and the office had become as political as it was sacred. The family of Annas held it longer than any other, which explains why Annas still carried great weight when his son-in-law Caiaphas was high priest (John 18:13).\n\nThe temple was also an economy. Every Jewish man paid the half-shekel tax each year, pilgrims bought animals for sacrifice and changed money, tithes and offerings flowed in, and the treasury held deposits for widows and orphans. Its destruction in AD 70 ended the power of the priestly aristocracy and reshaped every Jewish group that survived.",
+      "refs": [
+        "Acts 21:27-30",
+        "Ephesians 2:14",
+        "Luke 1:8-10",
+        "John 18:13",
+        "Mark 11:15-18"
+      ]
+    },
+    {
+      "h": "Sadducees",
+      "body": "The Sadducees were the party of the priestly aristocracy and the wealthy lay families allied with it. Their name probably comes from Zadok, the high priest of Solomon's time whose descendants had held the high priesthood for centuries, though not every Sadducee was a priest and not every priest a Sadducee. Josephus says they had the confidence of the wealthy but no following among the people, and that when in office they often had to accept the Pharisees' rulings to keep the public on their side (Antiquities 18.17). In Acts the high priest and his associates are “the party of the Sadducees” (Acts 5:17).\n\nTheir beliefs are known almost entirely from their opponents, which calls for caution. Josephus says they held that only the written laws were binding, rejecting the traditions the Pharisees had received from earlier generations (Antiquities 13.297). Some church fathers said the Sadducees accepted only the five books of Moses as Scripture; that is possible but uncertain, since Josephus says only that they rejected unwritten tradition. They denied the resurrection of the dead: “For the Sadducees say that there is neither a resurrection, nor angels, nor spirits, but the Pharisees acknowledge them all.” (Acts 23:8). This is the background to their question about the woman married to seven brothers (Mark 12:18-27), and Jesus' answer, which argues for resurrection from a text in Exodus, meets them on the ground of the Law they accepted. Josephus also says they denied fate and stressed human free choice.\n\nPolitically, the Sadducees were the Jewish leaders with the most to lose from unrest, since their position depended on Roman favor and on the temple's continued operation. John's Gospel has the high priest Caiaphas reason that it was better for one man to die than for the whole nation to be destroyed by the Romans (John 11:47-50). The Sadducees disappeared as a group with the temple in AD 70, and later rabbinic literature remembers them only as opponents.",
+      "refs": [
+        "Acts 5:17",
+        "Acts 23:6-8",
+        "Mark 12:18-27",
+        "Acts 4:1-2",
+        "John 11:47-50"
+      ]
+    },
+    {
+      "h": "Pharisees",
+      "body": "The Pharisees first appear in the time of the Hasmonean rulers in the second century BC. Their name probably means ‘the separated ones’ (Hebrew perushim), though whether they separated themselves from impurity, from the common people, or from the Hasmonean establishment, or were so named by opponents, is uncertain. They were mostly laymen, not priests, and Josephus says they had great influence with ordinary people, who respected them for their precise knowledge of the Law and their simple way of life.\n\nTheir defining feature was the ‘tradition of the elders’ (Mark 7:3, 5), a body of interpretation and practice handed down from earlier teachers that applied the written Law to the details of daily life: how to keep the Sabbath, what to tithe, how to eat in a state of purity, how to write a valid divorce document. Later rabbinic Judaism called this the oral Torah and held that it went back to Moses. The Pharisees believed in the resurrection of the dead, in angels and spirits, and in God's providence working together with human responsibility. Within the movement there were schools that disagreed, most famously those of Hillel and Shammai, who flourished around the turn of the era. The Mishnah records their dispute over the grounds for divorce, with Shammai's school allowing it only for sexual immorality and Hillel's for almost any fault (Gittin 9:10), which is the debate behind the question put to Jesus, “Is it lawful for a man to divorce his wife for any reason?” (Matthew 19:3).\n\nThe Gospels record sharp conflict between Jesus and Pharisees over the Sabbath, purity, table fellowship with sinners, and his own authority, and Matthew 23 contains his severest words against ‘scribes and Pharisees’. Those words stand in the tradition of Israel's prophets criticizing Israel's own leaders from within, and they are aimed at hypocrisy, not at seriousness about the Law, since Jesus also says, “practice and observe everything they tell you. But do not do what they do” (Matthew 23:3). The New Testament also shows Pharisees who warned Jesus of danger (Luke 13:31), Nicodemus who came to him by night and helped bury him (John 3:1; 19:39), Gamaliel who counseled restraint toward the apostles (Acts 5:34-39), believers from the party of the Pharisees in the Jerusalem church (Acts 15:5), and Paul, who described himself as “as to the law, a Pharisee” (Philippians 3:5). The English word ‘pharisee’ as a byword for a self-righteous hypocrite is unfair to the movement as a whole, and Christian caricature of the Pharisees has fed contempt for Jews through the centuries.\n\nHow far the Pharisees controlled public religious life before AD 70 is debated. Jacob Neusner argued from the rabbinic traditions that before 70 they were chiefly a table-fellowship group concerned with eating ordinary food in purity; E. P. Sanders and others have argued that they were more publicly influential than that, but did not run the temple or the courts. After the temple fell, the rabbis who gathered at Yavneh under Yohanan ben Zakkai carried much of the Pharisaic tradition forward, and rabbinic Judaism, the ancestor of nearly all Judaism today, grew from it.",
+      "refs": [
+        "Mark 7:1-13",
+        "Matthew 19:3-9",
+        "Matthew 23:1-12",
+        "Luke 13:31",
+        "Philippians 3:4-6"
+      ]
+    },
+    {
+      "h": "Scribes and teachers of the Law",
+      "body": "In the ancient world a scribe was anyone who could write professionally, from a village clerk drafting contracts to a royal secretary. In Israel the title came to mean above all an expert in the Law of Moses. Ezra is the model, “a scribe skilled in the Law of Moses” (Ezra 7:6), who read and explained the Law to the returned exiles. The Wisdom of Ben Sira, written around 180 BC, praises the scribe who has leisure to study the Law, the prophets, and the sayings of the wise, and contrasts him with farmers and craftsmen whose work leaves no time for it (Sirach 38:24 to 39:11).\n\nIn the Gospels the scribes (Greek grammateis; Luke also calls them ‘lawyers’ or ‘teachers of the law’) are the recognized experts who interpret Scripture, decide legal questions, and teach. They were not a party but a profession, and they could belong to any group: Mark speaks of “the scribes who were Pharisees” (Mark 2:16), and the scribes who appear with the chief priests in Jerusalem probably served the priestly establishment. They were addressed as ‘rabbi’ (‘my master’), a respectful title that became a formal one only later. The crowds' astonishment that Jesus “taught as one who had authority, and not as the scribes” (Mark 1:22) reflects the scribal habit of grounding a ruling in Scripture and in earlier teachers, while Jesus spoke on his own authority: ‘but I tell you’.",
+      "refs": [
+        "Ezra 7:6",
+        "Ezra 7:10",
+        "Mark 1:22",
+        "Mark 2:16",
+        "Matthew 13:52"
+      ]
+    },
+    {
+      "h": "Essenes and the Qumran community",
+      "body": "The Essenes are not mentioned in the New Testament, but three ancient writers describe them. Philo of Alexandria (Every Good Man Is Free 75-91) and Josephus (Jewish War 2.119-161) portray a disciplined movement living in communities in many towns, sharing property, working the land, eating common meals in purity, bathing before meals, keeping the Sabbath with extreme strictness, and admitting members only after years of probation. Most were celibate, though Josephus mentions a branch that married. The Roman writer Pliny the Elder (Natural History 5.73) places a community of Essenes on the western shore of the Dead Sea, above En-gedi.\n\nIn 1947 Bedouin shepherds found the first of the Dead Sea Scrolls in a cave near a ruin called Khirbet Qumran, on the northwestern shore of the Dead Sea. By 1956 eleven caves had produced the remains of about 900 manuscripts, and the French archaeologist Roland de Vaux excavated the site between 1951 and 1956. About a quarter of the manuscripts are copies of biblical books; many others are the writings of a sectarian community: the Community Rule (1QS), the Damascus Document, the War Scroll, hymns, and commentaries that read the prophets as speaking of the community's own history. They describe a group led by priests who regarded the Jerusalem priesthood as illegitimate, followed a 364-day solar calendar, practiced rigorous purity, and awaited a final war between the sons of light and the sons of darkness and the coming of two messiahs, one priestly and one royal. Their founder, called the Teacher of Righteousness, had been persecuted by a ‘Wicked Priest’ in Jerusalem.\n\nMost scholars identify the Qumran community as Essene, or as one branch of the Essene movement, because Pliny's location and the ancient descriptions fit the scrolls closely. Others have challenged the identification: Norman Golb argued that the scrolls came from Jerusalem libraries hidden during the war with Rome, and Lawrence Schiffman has pointed to legal positions in the scrolls, especially the letter known as 4QMMT, that match views the rabbis attributed to the Sadducees, suggesting the sect's roots lay in a priestly group. The site was destroyed by the Romans around AD 68. Some have suggested that John the Baptist, who preached and baptized in the same wilderness, had contact with the community; the suggestion is possible but unproven.",
+      "refs": [
+        "Mark 1:4-6",
+        "Luke 1:80",
+        "Luke 3:2-3",
+        "Matthew 3:1-3",
+        "Isaiah 40:3"
+      ]
+    },
+    {
+      "h": "Zealots, the ‘fourth philosophy’, and popular movements",
+      "body": "In AD 6, when Judea became a Roman province and the governor of Syria, Quirinius, held a census to assess it for tribute, a man named Judas the Galilean led a revolt, teaching that to pay tribute to Rome was to accept a mortal master in place of God. Josephus calls his teaching a ‘fourth philosophy’, agreeing with the Pharisees in everything except an unbending passion for liberty under God alone (Antiquities 18.23-25). Gamaliel mentions him in Acts: “Judas the Galilean appeared in the days of the census and drew away people after him. He too perished” (Acts 5:37). Two of his sons were crucified in the 40s, and a descendant, Eleazar son of Jair, led the defenders of Masada in the last stand of the war against Rome in 73 or 74.\n\nThe Zealots proper were a faction that emerged in Jerusalem during the revolt of 66 to 70. The word ‘zealot’ recalls Phinehas (Numbers 25:7-13) and Elijah, whose zeal for God's honor was remembered with admiration, and it could also be used of anyone zealous for the Law. Scholars disagree about how continuous the resistance was. Martin Hengel (Die Zeloten, 1961) argued for a single movement running from Judas the Galilean to the war, and older writers often used ‘Zealots’ for all armed resistance throughout the century. Richard Horsley, with John S. Hanson (Bandits, Prophets, and Messiahs, 1985), argued that the Zealot party as such formed only during the war, and that earlier resistance took several different forms. Because of this debate, it is uncertain whether ‘Simon the Zealot’ among the Twelve (Luke 6:15; Acts 1:13) had belonged to an armed movement or was simply known for zeal for the Law.\n\nThe Gospels and Acts show several such movements. Barabbas had been imprisoned “with the rebels who had committed murder during the insurrection” (Mark 15:7). The sicarii (‘dagger-men’), who assassinated opponents in crowded festival courts in the 50s, appear in Acts 21:38, where the BSB calls them the ‘Assassins’. Popular prophets gathered followers with promises of signs from God: Theudas, who said the Jordan would part (Acts 5:36; Antiquities 20.97-98), and an Egyptian who led a crowd to the Mount of Olives to watch Jerusalem's walls fall (Acts 21:38). Jesus' refusal of armed kingship, and his arrest as a would-be ‘king of the Jews’, are set against this background.",
+      "refs": [
+        "Acts 5:36-37",
+        "Numbers 25:7-13",
+        "Luke 6:15",
+        "Mark 15:7",
+        "John 18:36"
+      ]
+    },
+    {
+      "h": "Samaritans",
+      "body": "The Samaritans lived in the hill country between Judea and Galilee, around Shechem and Mount Gerizim. The books of Kings trace their origin to the Assyrian conquest of 722 BC, when foreign peoples were settled in the territory of the northern tribes and learned to worship the LORD alongside their own gods (2 Kings 17:24-41). The Samaritans themselves have always told their history differently, as the faithful remnant of the northern tribes who kept the original worship at Gerizim. Modern historians see a mixed origin and a long, gradual parting of the ways rather than a single break.\n\nThe Samaritans built a temple on Mount Gerizim in the fifth century BC, and the Hasmonean ruler John Hyrcanus destroyed it around 111 or 110 BC, a wound neither side forgot. Their Scripture is the five books of Moses in their own edition, the Samaritan Pentateuch, which differs from the Jewish text in a few thousand small points and in a handful of deliberate ones, chiefly an added commandment to build an altar on Mount Gerizim and readings that name Gerizim as the place God chose. They looked for a coming prophet like Moses (Deuteronomy 18:15-18), whom they called the Taheb (‘the one who returns’ or ‘restores’), which lies behind the Samaritan woman's words, “I know that Messiah” is coming, “When He comes, He will explain everything to us.” (John 4:25).\n\nBy Jesus' day the hostility between Jews and Samaritans was bitter; Galilean pilgrims passing through Samaria could be refused hospitality (Luke 9:52-53), and John remarks that “Jews do not associate with Samaritans” (John 4:9). This makes the Samaritans in the Gospels pointed: the Samaritan in Jesus' parable is the one who shows mercy (Luke 10:30-37), the only healed leper to return and give thanks is a Samaritan (Luke 17:16), and in Acts the gospel crosses into Samaria before it goes to the gentiles (Acts 1:8; 8:4-25). A small Samaritan community survives today, fewer than a thousand people, who still keep Passover with sacrifice on Mount Gerizim.",
+      "refs": [
+        "2 Kings 17:24-41",
+        "John 4:19-26",
+        "Luke 9:51-56",
+        "Luke 10:30-37",
+        "Acts 8:4-25"
+      ]
+    },
+    {
+      "h": "The Sanhedrin",
+      "body": "Sanhedrin is a Hebrew form of the Greek synedrion, ‘a sitting together’, a council. The New Testament uses the word for the supreme Jewish council in Jerusalem, made up, in the Gospels' recurring phrase, of the chief priests, the elders (heads of leading lay families), and the scribes (Mark 14:53; 15:1), with the high priest presiding. It tried Jesus, and later Peter and John (Acts 4 to 5), Stephen (Acts 6 to 7), and Paul (Acts 22:30 to 23:10). It could also mean a local council; Jesus warns that his followers will be handed over to ‘councils’ and flogged in synagogues (Matthew 10:17).\n\nThe Mishnah's tractate Sanhedrin describes a great court of seventy-one members sitting in the temple (Sanhedrin 1:6), lesser courts of twenty-three, and detailed rules for capital trials, including that a verdict of guilt could not be given on the same day as the trial. Many older studies measured the trial of Jesus against these rules and found it illegal. But the Mishnah was compiled around AD 200 and describes an idealized rabbinic court, not necessarily the council led by the high priest before AD 70. Historians today are more cautious; some, like E. P. Sanders, think the high priest summoned councils of advisers as needed rather than presiding over a fixed body with fixed procedures.\n\nUnder Roman rule the council handled Jewish religious and civil matters but, according to John 18:31, could not carry out the death penalty: “We are not permitted to execute anyone.” There were exceptions or evasions. Gentiles who entered the temple's inner courts could be executed, as the warning notices said. The stoning of Stephen (Acts 7) looks like mob action. And in AD 62, in the interval between two governors, the high priest Ananus convened a council and had James the brother of Jesus stoned, for which he was removed from office (Josephus, Antiquities 20.200-203).",
+      "refs": [
+        "Mark 14:53-65",
+        "John 18:31",
+        "Acts 4:5-7",
+        "Acts 5:27-40",
+        "Acts 23:1-10"
+      ]
+    },
+    {
+      "h": "The synagogue",
+      "body": "The synagogue (Greek synagoge, ‘gathering’) was the local assembly of Jews for reading and studying the Law, for prayer, and for community business, and by extension the building where they met. Its origins are unknown. Some scholars look to the exile, when there was no temple; the earliest firm evidence comes from Egypt in the third century BC, where inscriptions dedicate ‘prayer houses’ (proseuchai) to the Ptolemaic kings. By the first century AD there were synagogues across the Diaspora and throughout the land of Israel.\n\nArchaeology has found first-century synagogue buildings at Gamla in the Golan, at Masada and Herodium, and at Magdala on the Sea of Galilee, where excavations in 2009 uncovered a synagogue with a carved stone block showing a seven-branched lampstand. In Jerusalem, a Greek inscription found in 1913 on the Ophel records that a priest and synagogue leader named Theodotus built a synagogue for reading the Law and teaching the commandments, with a guest house and water installations for visitors from abroad, which recalls the synagogues of Diaspora Jews in Jerusalem mentioned in Acts 6:9.\n\nThe Gospels and Acts give a clear picture of a Sabbath meeting. The Scriptures were read, first from the Law and then from the Prophets; someone might then be invited to teach. At Nazareth Jesus stood to read from Isaiah, handed the scroll back “to the attendant,” and sat down to teach (Luke 4:16-21). At Pisidian Antioch, “After the reading from the Law and the Prophets, the synagogue leaders sent word” inviting Paul to speak (Acts 13:15). The ‘synagogue leader’ (archisynagogos), like Jairus in Galilee (Mark 5:22) or Crispus in Corinth (Acts 18:8), arranged the services. The synagogue also administered discipline: Paul received “the forty lashes minus one” five times (2 Corinthians 11:24), and John's Gospel speaks of believers being put out of the synagogue (John 9:22). Because the synagogue did not depend on the temple, it survived the temple's destruction and became the center of Jewish life thereafter, and its pattern of reading, prayer, and teaching shaped early Christian worship.",
+      "refs": [
+        "Luke 4:16-21",
+        "Acts 13:14-16",
+        "Acts 15:21",
+        "Mark 5:22",
+        "Acts 6:9"
+      ]
+    },
+    {
+      "h": "Herodians, tax collectors, and the people of the land",
+      "body": "A few other groups appear in the Gospels. The Herodians join Pharisees in plotting against Jesus in Galilee (Mark 3:6) and in the question about paying tribute to Caesar (Mark 12:13). Little is known of them beyond the Gospels; they were probably supporters or officials of Herod Antipas and his family rather than a religious party; their alliance with Pharisees over the tribute question would have been politically awkward for both, which may have been the point of the trap.\n\nTax collectors (Greek telonai) collected tolls and customs, and in some places taxes, on contract for Herod Antipas in Galilee or for the Roman administration in Judea. The contractor paid in advance and made his profit from what he could collect above that, so the system invited extortion. Jews who took the work were widely regarded as collaborators and cheats, and the Gospels pair them with ‘sinners’ and prostitutes. Jesus called one, Levi or Matthew, as a disciple (Mark 2:14), ate with them, and stayed in the house of Zacchaeus, “a chief tax collector, who was very wealthy” (Luke 19:2), at Jericho, a major customs post.\n\nMost people belonged to none of these groups. They were farmers, fishermen, craftsmen, and laborers who kept the Sabbath, went up to the festivals when they could, and had little time for the fine points of the Law. Rabbinic writings call them the ‘people of the land’ (am ha-aretz), sometimes with contempt; John records the Pharisees saying, “this crowd that does not know the law, they are under a curse” (John 7:49). These were the crowds Jesus fed, healed, and taught.\n\nFinally, the Jewish world included many gentiles drawn to it. Proselytes were converts who accepted circumcision and the whole Law (Acts 2:10; 6:5). Many more gentiles, whom Acts calls ‘God-fearers’ or ‘worshipers of God’, attended synagogues, kept some Jewish practices, and prayed to Israel's God without converting, like the centurion Cornelius, who was “devout and God-fearing” (Acts 10:2), or Lydia in Philippi (Acts 16:14). They were among the first to believe when Paul preached in the synagogues of the Diaspora, and their place between Israel and the nations lies behind much of the argument of Acts and Paul's letters.",
+      "refs": [
+        "Mark 3:6",
+        "Mark 2:14-17",
+        "Luke 19:1-10",
+        "Acts 10:1-2",
+        "Acts 13:16"
+      ]
+    }
+  ]
+}

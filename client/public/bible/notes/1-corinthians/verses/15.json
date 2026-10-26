@@ -1,0 +1,589 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Paul opens the last major section of the letter by going back to the beginning: the gospel he preached when he founded the church. Before he answers those who deny the resurrection (verse 12), he fixes the common ground both sides already stand on, and he warns that the Corinthians' own faith depends on holding to it.",
+      "grammar": "The verbs trace a history in four steps: euēngelisamēn, ‘I preached’ (aorist); parelabete, ‘you received’ (aorist); hestēkate, ‘you have taken your stand’ (perfect, a settled present position); and sōzesthe, ‘you are being saved’ (present passive, salvation as something in progress). Gnōrizō, literally ‘I make known’, is a formal opening that Paul also uses in Galatians 1:11 and 2 Corinthians 8:1; here it means ‘I remind you’ of what they already know. Verse 2 is compressed Greek: tini logō, ‘with what word’, is set forward for emphasis before the if-clause, and ektos ei mē eikē episteusate, ‘unless you believed in vain’, uses a doubled idiom (‘except unless’) found in Paul's letters (14:5, 1 Timothy 5:19). Eikē can mean ‘without result’ or ‘without careful thought’. Many commentators take it in the first sense and read it forward to verses 14 and 17: if Christ has not been raised, their believing was empty.",
+      "words": ["G1107", "G2097", "G3880", "G2476", "G4982", "G1500"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Paul joins assurance and warning in one sentence: they stand in the gospel and are being saved by it, if they hold it fast. Reformed readers take the condition as the means by which God keeps his people; Wesleyan and Arminian readers take it as a real possibility of falling away. Both agree the warning is meant to be heard, not explained away."
+        }
+      ],
+      "refs": ["Galatians 1:11", "Colossians 1:23", "Hebrews 3:14", "1 Corinthians 2:1-2"]
+    },
+    {
+      "v": "3",
+      "context": "The ‘for’ explains what the gospel of verse 1 contains. Paul quotes a summary he himself was handed, the oldest statement of Christian belief that survives in writing, and he calls it the matter of first importance. Its first clause is Christ's death and its meaning.",
+      "grammar": "Paredōka, ‘I handed on’, and parelabon, ‘I received’, are the Greek equivalents of the Hebrew terms rabbis used for passing down tradition (masar and qibbel; compare m. Avot 1:1, where Moses ‘received’ the Torah and ‘handed it on’). Paul uses the same pair for the Lord's Supper tradition in 11:23. En prōtois can mean ‘first in time’ or ‘first in importance’; most translations and commentators take the second. The formula is built from four clauses each introduced by hoti, ‘that’ (verses 3, 4 twice, 5), which is why many scholars regard verses 3b-5 as a fixed unit. Huper tōn hamartiōn hēmōn, ‘for our sins’, uses huper, ‘on behalf of’, with sins as the object: his death dealt with them.",
+      "words": ["G3860", "G3880", "G4413G", "G3754G", "G5228", "G0266"],
+      "history": "Paul wrote this letter from Ephesus (16:8) around AD 53 to 55, but he says he delivered the formula when he founded the church about AD 50 and that he had received it earlier. Scholars across the spectrum, including the skeptical German scholar Gerd Lüdemann, date its formation to within a few years of the crucifixion. Joachim Jeremias argued that its wording betrays an Aramaic original (the name Cephas, the unusual placing of words); Hans Conzelmann replied that the Greek reads naturally as Greek. Either way, it takes us back to the first Jerusalem community. The most likely occasion for Paul's receiving it is his two-week visit with Cephas three years after his conversion (Galatians 1:18).",
+      "ot": [
+        {
+          "ref": "Isaiah 53:4-12",
+          "note": "The formula says Christ died for sins ‘according to the Scriptures’ without naming a passage. The Old Testament text that speaks most directly of one who suffers and dies for the sins of others is the Servant song of Isaiah 52:13-53:12. The Hebrew says the servant was pierced for our transgressions (53:5) and bore the sin of many (53:12); the Septuagint of 53:12 says he was handed over because of their sins (dia tas hamartias autōn paredothē). Jesus applies 53:12 to himself in Luke 22:37, and Acts 8:32-35 reads the chapter of him. Because Paul's formula gives no citation, the link is probable rather than certain; the phrase ‘according to the Scriptures’ claims that the whole Old Testament story, not one proof-text, has come to its point in this death."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The first article of the earliest creed is not only that Christ died but that he died ‘for our sins’. His death is interpreted from the start as dealing with sin, and interpreted by Scripture, not invented after the fact to explain a disaster."
+        },
+        {
+          "id": "revelation",
+          "note": "The apostle calls what he preaches something received and handed on. The gospel is a given message, guarded and transmitted, not the creation of any one teacher, which is why Paul can appeal to it against the Corinthians' innovations."
+        }
+      ],
+      "refs": ["1 Corinthians 11:23", "Galatians 1:18-19", "Isaiah 53:5-6", "Romans 4:25", "Luke 24:25-27"]
+    },
+    {
+      "v": "4",
+      "context": "Three more facts follow: he was buried, he was raised on the third day, and all of this according to the Scriptures. The burial seals the reality of the death, and it prepares for the claim that the body in the grave is the body that was raised.",
+      "grammar": "Etaphē, ‘he was buried’, is aorist like apethanen, ‘he died’, in verse 3, but egēgertai, ‘he has been raised’, is perfect passive. The perfect views the raising together with its lasting result: he was raised and remains the risen one. Paul keeps this perfect six more times in the chapter (verses 12, 13, 14, 16, 17, 20). The passive implies God as the one who raised him, as verse 15 says outright. A burial clause makes sense only if a body was laid in a tomb; the formula does not mention the empty tomb, but the sequence died, buried, raised assumes that the one buried is the one raised.",
+      "words": ["G2290", "G1453", "G5154", "G2250"],
+      "ot": [
+        {
+          "ref": "Hosea 6:2",
+          "note": "No Old Testament text predicts in plain words a resurrection on the third day. Interpreters point to Hosea 6:2, where Israel says the LORD will revive us after two days and raise us up on the third day (the Septuagint has anastēsometha, ‘we shall rise’), and to Jonah's three days in the fish, which Jesus himself applies to his burial (Matthew 12:40). Later rabbinic tradition (Genesis Rabbah 56:1) collected third-day texts as moments of divine deliverance. ‘According to the Scriptures’ may attach to the resurrection itself rather than to the third day; either way the claim is that the resurrection fulfills Israel's hope rather than breaking from it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The creed places burial between death and raising. That order is why the church has confessed a bodily resurrection: what was raised is what was buried, not a spirit that survived apart from the body."
+        }
+      ],
+      "refs": ["Hosea 6:2", "Jonah 1:17", "Matthew 12:40", "Acts 2:24-32", "Mark 15:46"]
+    },
+    {
+      "v": "5",
+      "context": "The formula's last clause names the first witnesses: Cephas and then the Twelve. From here the list grows, in order of time, until it reaches Paul in verse 8.",
+      "grammar": "Ōphthē is the aorist passive of horaō, ‘to see’, used with a dative: literally ‘he was seen by Cephas’, idiomatically ‘he appeared to’. It is the word the Septuagint uses when God appears to the patriarchs (Genesis 12:7, ‘the LORD appeared to Abram’), and Luke uses it for the same appearance to Peter (Luke 24:34). The word itself does not decide whether the seeing was physical or visionary; the list's point is that particular people, named and numbered, saw him. Eita, ‘then’, marks sequence.",
+      "words": ["G3700H", "G2786", "G1427"],
+      "history": "Cephas is the Greek spelling of the Aramaic kepha, ‘rock’, the name Jesus gave Simon (John 1:42), translated into Greek as Petros. Paul uses the Aramaic form in this letter (1:12, 3:22, 9:5) and usually in Galatians, perhaps because it was the name used in the Jerusalem circles from which the formula came. Luke 24:34 independently reports that the Lord appeared to Simon, but no Gospel narrates the scene. ‘The Twelve’ is a title for the circle Jesus appointed; by then Judas was dead, and the formula keeps the name of the group rather than its exact count (compare John 20:24, where Thomas is ‘one of the Twelve’).",
+      "parallels": ["Luke 24:34", "Luke 24:36-43", "John 20:19-29"],
+      "refs": ["Luke 24:34", "John 1:42", "Mark 16:7", "Acts 10:40-41"]
+    },
+    {
+      "v": "6",
+      "context": "Paul adds an appearance no Gospel records by that number: to more than five hundred brothers at one time. He adds that most are still alive, inviting anyone in doubt to ask them, and that some have died, which introduces the language of sleep that runs through the chapter.",
+      "grammar": "Epanō pentakosiois, ‘to more than five hundred’, uses epanō as an adverb of number. Ephapax here means ‘at one time’, all together, not ‘once for all’ as in Romans 6:10; the point is a group sighting, not a series of private experiences. Hoi pleiones menousin heōs arti, ‘the majority remain until now’, uses the present tense: they are available witnesses. Ekoimēthēsan, ‘they fell asleep’, is aorist passive of koimaō; sleep as a picture of death was common in Judaism and among Greeks, but Christians used it with a sharpened sense because sleep implies waking.",
+      "words": ["G4001", "G2178", "G4119", "G3306", "G2837"],
+      "history": "Where and when this appearance happened is unknown. Some identify it with the meeting on a mountain in Galilee in Matthew 28:16-20, where Jesus had told the disciples to go, and where a large number of followers might gather; others have suggested a link with Pentecost, though Acts 2 describes the coming of the Spirit, not an appearance of Jesus. Writing about AD 54, twenty-odd years after the event, Paul could expect many of the five hundred to be living.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Paul treats the resurrection as an event with public witnesses who could be questioned, not a private conviction. The Christian claim is historical in form, and the apostle invites scrutiny rather than avoiding it."
+        }
+      ],
+      "refs": ["Matthew 28:16-17", "Acts 1:3", "1 Thessalonians 4:13-14", "John 11:11-14"]
+    },
+    {
+      "v": "7",
+      "context": "Two more appearances: to James and then to all the apostles. The second ‘then’ sequence (‘then to James, then to all the apostles’) mirrors verse 5 (‘to Cephas, then to the Twelve’), which is why some scholars think Paul has joined two lists of witnesses.",
+      "history": "This James is the Lord's brother (Galatians 1:19), who with his brothers did not believe in Jesus during his ministry (John 7:5; Mark 3:21) and later led the Jerusalem church (Galatians 2:9, Acts 15:13, 21:18). No canonical Gospel narrates Jesus appearing to him; a fragment of the lost Gospel of the Hebrews preserved by Jerome (On Illustrious Men 2) tells a story of it. Josephus (Antiquities 20.200) records that James was stoned in Jerusalem about AD 62 at the instigation of the high priest Ananus. Adolf von Harnack proposed that verses 5 and 7 reflect two rival lists, one centered on Peter and one on James; others think Paul simply extends the list in time order. ‘All the apostles’ is a wider group than the Twelve, since Paul uses ‘apostle’ of James and Barnabas as well (Galatians 1:19, 1 Corinthians 9:5-6).",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The appearance to James is a strong piece of evidence in the historical case for the resurrection: a skeptical brother became a leader of the movement and died for it. Paul does not argue this, but the list places him among those who saw."
+        }
+      ],
+      "refs": ["John 7:5", "Galatians 1:19", "Acts 15:13", "Acts 1:14", "1 Corinthians 9:5"]
+    },
+    {
+      "v": "8",
+      "context": "Paul adds himself, last of all, and describes himself with a jarring image. His appearance was of the same kind as the others, which grounds his apostleship (9:1), but it came late and out of order.",
+      "grammar": "Ektrōma means a premature or stillborn birth, a miscarriage; it is the word the Septuagint uses in Numbers 12:12 (a stillborn child whose flesh is half eaten away), Job 3:16, and Ecclesiastes 6:3. The article in Greek (tō ektrōmati, ‘the untimely birth’) may point to a label others used of him, a taunt that he was a misbirth among the apostles, which he now accepts. Hōsperei, ‘as if’, softens it into a comparison. Scholars read the image in two ways: he was ‘born’ as an apostle abruptly and violently, or he was not properly formed, spiritually lifeless, when Christ met him. Eschaton pantōn, ‘last of all’, closes the list: Paul assumes there were no further resurrection appearances of this kind after his.",
+      "words": ["G2078", "G5619", "G1626", "G3700H"],
+      "refs": ["1 Corinthians 9:1", "Acts 9:3-6", "Galatians 1:15-16", "Numbers 12:12"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The last witness is the least likely one, and Paul presents his own calling as the clearest case of undeserved favor. The way he names himself anticipates verse 10."
+        }
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "The word ‘least’ explains ‘untimely birth’: Paul persecuted the church of God, and so he is unfit to be called an apostle. Verse 10 turns on grace, used three times: grace made him what he is, grace was not wasted on him, and grace worked through his labor.",
+      "grammar": "Elachistos is a superlative, ‘least’; in Ephesians 3:8 Paul will go further with a comparative formed on the superlative, ‘less than the least’. Chariti theou eimi ho eimi, ‘by the grace of God I am what I am’, puts ‘by grace’ first for emphasis. Kenē, ‘empty’, repeats the idea of ‘in vain’ from verse 2 and anticipates verses 14 and 58. The final clause has no verb in Greek: ouk egō de all' hē charis tou theou [hē] sun emoi, ‘not I, but the grace of God with me’. Whether the article hē stands before sun is a textual question (see below), and it affects the nuance: with the article, the grace that was with me did the work; without it, grace is pictured almost as a fellow worker alongside Paul.",
+      "words": ["G1646", "G2425", "G1377", "G5485", "G2756", "G2872"],
+      "text": "Some important manuscripts, including the first hand of Sinaiticus and Vaticanus, read ‘the grace of God with me’ without the second article; others read ‘the grace of God that was with me’. The Nestle-Aland and SBL editions print the article, and Westcott and Hort, Tregelles, and the Tyndale House edition leave it out. English Bibles vary accordingly.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Paul claims to have worked harder than all the others and in the same breath gives the credit to grace. Augustine appealed to this verse repeatedly in his writings against Pelagius: grace does not replace human effort but produces it, and the effort remains grace's fruit."
+        }
+      ],
+      "refs": ["Ephesians 3:8", "1 Timothy 1:12-16", "Galatians 1:13-16", "Philippians 2:12-13", "2 Corinthians 11:23"]
+    },
+    {
+      "v": "11",
+      "context": "Paul closes the first movement and returns to the point of verse 1: whoever the preacher was, the message is one. The resurrection is not Paul's private theory; it is what every apostle preaches and what the Corinthians believed.",
+      "grammar": "Eite oun egō eite ekeinoi, ‘whether then I or they’, gathers up the list; oun resumes after the digression of verses 9 and 10. The two present and aorist verbs, kērussomen, ‘we preach’ (still, now), and episteusate, ‘you believed’ (when you came to faith), set the apostles' continuing message beside the Corinthians' past decision.",
+      "words": ["G3767", "G2784", "G4100"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "Given the factions of chapters 1 to 4, where Corinthians rallied behind Paul, Apollos, or Cephas, Paul's insistence that all the apostles preach the same thing is pointed. The church's unity rests on one received gospel, not on loyalty to a favorite teacher."
+        }
+      ],
+      "refs": ["1 Corinthians 1:12-13", "1 Corinthians 3:5-9", "Galatians 2:7-9"]
+    },
+    {
+      "v": "12",
+      "context": "Now the problem is named: some in the church say there is no resurrection of the dead. Paul frames it as a contradiction with what they have just agreed. If Christ's resurrection is preached, how can anyone deny resurrection as such?",
+      "grammar": "Ei de Christos kērussetai hoti ek nekrōn egēgertai, ‘if Christ is preached that he has been raised’, is a first-class condition assuming the premise as true. Anastasis nekrōn, ‘resurrection of dead people’, has no article: the denial is of the category itself. Pōs, ‘how?’, is incredulous. Tines, ‘some’, marks a group inside the church, not outsiders.",
+      "words": ["G2784", "G1453", "G4459", "G5100", "G0386", "G3498"],
+      "history": "What exactly the ‘some’ believed is debated. Three main proposals are held: that they denied any life after death, as Epicureans did (Paul's reply in verse 32 would fit); that, like many Greeks shaped by Plato, they accepted the soul's survival but found a bodily resurrection unthinkable or repellent; or that they believed the resurrection had already happened spiritually (compare 4:8 and the teaching condemned in 2 Timothy 2:18). Most commentators favor the second or a combination of the second and third, since Paul spends verses 35 to 49 on the kind of body raised.",
+      "refs": ["Acts 17:31-32", "2 Timothy 2:17-18", "1 Corinthians 4:8", "Acts 23:6-8"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Paul will not let Christ's resurrection be treated as a unique exception. The resurrection of Jesus is the first instance of a general resurrection, so to deny the general is to deny the particular."
+        }
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The chain of consequences begins. If there is no resurrection at all, then Christ has not been raised; and if Christ has not been raised, apostolic preaching and Corinthian faith are both empty.",
+      "grammar": "The argument is a string of conditionals in which each conclusion becomes the next premise. Kenon, ‘empty’, placed first in its clause, is the word used of Paul's grace in verse 10 and the Corinthians' labor in verse 58: a thing with nothing in it. Kērugma is the content of the preaching, the proclaimed message, not the act of preaching.",
+      "words": ["G0386", "G1453", "G2756", "G2782", "G4102G"],
+      "text": "Most manuscripts read ‘your faith’ (humōn) in verse 14; a minority read ‘our faith’ (hēmōn), and Westcott and Hort printed that reading. The editions also differ over whether a small ‘also’ (kai) stands before ‘your faith’. The meaning is hardly affected.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Paul does not value faith as a sincere attitude apart from its object. If what faith trusts did not happen, the faith is empty however deeply held. Christian faith is trust in an event."
+        }
+      ],
+      "refs": ["1 Corinthians 2:4-5", "Acts 17:31", "Romans 10:9"]
+    },
+    {
+      "v": "15-16",
+      "context": "The consequence widens to the apostles' honesty. If the dead are not raised, the apostles have testified falsely about God himself, since their message is that God raised Christ. Verse 16 restates verse 13 to drive the logic home.",
+      "grammar": "Pseudomartures tou theou, ‘false witnesses of God’, could mean witnesses who misrepresent God or witnesses who testify against God; the following clause, emarturēsamen kata tou theou, ‘we testified against (or concerning) God’, plays on kata. Taken strictly, kata with the genitive means ‘against’, and Paul may intend the sharper sense: to say God did what he did not do is to bear witness against him. Eiper ara, ‘if indeed, as they say’, adopts the opponents' premise for argument's sake.",
+      "words": ["G5575", "G3140", "G2596", "G1487G", "G1453"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection is presented as an act of God: ‘He raised Christ from the dead.’ The New Testament regularly credits the raising to the Father (Acts 2:24, Romans 10:9, Galatians 1:1), and the resurrection is his public vindication of Jesus."
+        }
+      ],
+      "refs": ["Acts 2:24", "Acts 2:32", "Galatians 1:1", "Exodus 20:16"]
+    },
+    {
+      "v": "17-19",
+      "context": "The chain reaches the Corinthians' own condition. Without the resurrection their faith is futile, they remain in their sins, the Christian dead are simply gone, and believers are the most pitiable people alive. Verse 20 will answer all of this at once.",
+      "grammar": "Mataia, ‘futile’, differs slightly from kenē in verse 14: kenē is empty of content, mataia is without effect. Eti este en tais hamartiais humōn, ‘you are still in your sins’, assumes that forgiveness depends on the resurrection as well as on the death. Apōlonto, ‘they perished’, is aorist middle of apollumi, the verb for final ruin (1:18). In verse 19 the word monon, ‘only’, comes at the end of the clause, and grammarians disagree about what it modifies: ‘if in this life only we have hoped’ (the King James order) or ‘if we are people who have merely hoped in Christ in this life’, that is, if hope is all we have. Ēlpikotes esmen is a periphrastic perfect, ‘we are people who have set our hope’.",
+      "words": ["G3152", "G0266", "G0622", "G1679", "G3441", "G1652"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Verse 17 ties forgiveness to the resurrection. The cross is not effective as a bare event; the resurrection is God's declaration that the death for sins succeeded (compare Romans 4:25, ‘raised to life for our justification’)."
+        },
+        {
+          "id": "hope",
+          "note": "Paul refuses a Christianity that is only useful for this life. If the hope ends at death, the self-denial, persecution, and risk believers accept are simply losses."
+        }
+      ],
+      "refs": ["Romans 4:25", "1 Peter 1:3", "1 Thessalonians 4:13", "Hebrews 11:13-16"]
+    },
+    {
+      "v": "20",
+      "context": "The turning point of the chapter. After six verses of conditionals, Paul states the fact: Christ has been raised. The ‘firstfruits’ image tells what his resurrection means for everyone else.",
+      "grammar": "Nuni de, ‘but now’, is logical rather than temporal: ‘but as it is’. It marks the move from the hypothetical to the real, as in Romans 3:21 and 1 Corinthians 13:13. Egēgertai repeats the perfect of verse 4. Aparchē, ‘firstfruits’, stands in apposition to Christ, and tōn kekoimēmenōn, ‘of those who have fallen asleep’, is a perfect participle, the dead in their present state. The firstfruits are the same crop as the harvest: Christ's resurrection is of the same kind as theirs, only earlier.",
+      "words": ["G3570", "G1453", "G0536", "G2837"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Christ's resurrection is not a private exception but the first part of the one resurrection of the dead. The end-time event Israel hoped for (Daniel 12:2) has begun in the middle of history with one man."
+        },
+        {
+          "id": "union",
+          "note": "Those who belong to Christ share his destiny because they share his life. The image of firstfruits and harvest makes the bond organic: the rest of the crop follows because it is the same crop."
+        }
+      ],
+      "refs": ["Leviticus 23:10-11", "Romans 8:23", "Colossians 1:18", "Revelation 1:5", "Daniel 12:2"]
+    },
+    {
+      "v": "21-22",
+      "context": "Paul explains why one man's resurrection can guarantee others'. Death came through a man, Adam; resurrection comes through a man, Christ. Each stands at the head of a humanity and determines its outcome.",
+      "grammar": "Verse 21 has no verbs at all in Greek, only two balanced phrases: di' anthrōpou thanatos, kai di' anthrōpou anastasis nekrōn, ‘through a man death, and through a man resurrection of the dead’. The terse parallelism sounds like a formula. Verse 22 fills it out with hōsper... houtōs, ‘just as... so’. ‘In Adam’ and ‘in Christ’ are parallel phrases of incorporation. Zōopoiēthēsontai, ‘will be made alive’, is a future passive: God is the one who gives life. The ‘all’ in both halves is disputed. Most interpreters take the second ‘all’ as all who are in Christ, as verse 23 specifies; universalist readers from Origen and Gregory of Nyssa onward have taken it to mean every human being.",
+      "words": ["G0444", "G2288", "G0386", "G0076", "G0599", "G2227"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Paul thinks of humanity as bound up with its representatives: Adam's act brought death to all his descendants, and Christ's resurrection brings life to all who belong to him. The fuller development of the pattern is Romans 5:12-21."
+        },
+        {
+          "id": "sin",
+          "note": "Death entered through Adam. Paul reads Genesis 3 as the origin of human mortality, not only as an example of it, and treats death as an enemy (verse 26), not as a natural part of things."
+        }
+      ],
+      "refs": ["Romans 5:12-19", "Genesis 3:17-19", "Genesis 2:17", "John 5:25-29"]
+    },
+    {
+      "v": "23-24",
+      "context": "Resurrection happens in an order: Christ first, then his people at his coming, then the end, when he hands the kingdom to the Father after destroying every hostile power.",
+      "grammar": "Tagma, ‘order’, was a military word for a unit or rank, suggesting troops arriving in sequence. The sequence words, epeita, ‘then’ (verse 23), and eita, ‘then’ (verse 24), are the heart of a long debate. Historic premillennial readers take eita to imply an interval between Christ's coming and ‘the end’, room for the thousand-year reign of Revelation 20. Amillennial and postmillennial readers note that eita can mean ‘next’ without any stated gap and take ‘the end’ as coming with the parousia. To telos is usually ‘the end’; a minority has read it as ‘the rest’, the remaining dead, but the ordinary sense is the more natural. Hotan paradidō, ‘when he hands over’, is a present subjunctive, and hotan katargēsē, ‘when he has abolished’, an aorist subjunctive: the destruction of the powers comes before the handing over. Katargeō, ‘render powerless, abolish’, is one of Paul's characteristic verbs; nearly all its New Testament uses are in his letters.",
+      "words": ["G5001", "G1899", "G1534", "G5056", "G3860", "G2673", "G3952"],
+      "history": "Parousia, ‘presence, arrival’, was used in Greek for the official visit of a king or emperor to a city, with welcome processions and celebrations. Paul uses it of Christ's return here and in 1 Thessalonians 2:19, 4:15, and 5:23. Archē, exousia, and dunamis, ‘rule, authority, power’, are the terms Paul uses elsewhere for superhuman powers (Romans 8:38, Ephesians 1:21, Colossians 2:15).",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Christ reigns now, and his reign is aimed at an end: every opposing power abolished and the kingdom handed to the Father. The kingdom has a present and a future, and verse 24 describes the future's completion."
+        },
+        {
+          "id": "return",
+          "note": "The resurrection of believers takes place ‘at His coming’. Paul ties the general resurrection to Christ's return, not to each believer's death."
+        }
+      ],
+      "refs": ["1 Thessalonians 4:15-17", "Revelation 20:4-6", "Ephesians 1:20-22", "Colossians 2:15", "Daniel 7:13-14"]
+    },
+    {
+      "v": "25-26",
+      "context": "Paul grounds the order of verse 24 in Scripture: Christ must reign until all enemies are under his feet, an echo of Psalm 110:1. Death is named as the last enemy, which is why the resurrection comes at the end.",
+      "grammar": "Dei, ‘it is necessary’, signals divine necessity, what must happen because God has said it. Achri hou thē, ‘until he has put’, sets a limit on the present phase of the reign, not on the reign itself. Who ‘he’ is in thē is debated: the Psalm has God put the enemies under the king's feet, but Paul's sentence most naturally makes Christ the subject. Katargeitai in verse 26 is present passive, ‘is being abolished’, used with future sense; placed first with eschatos echthros, ‘the last enemy’, it makes death a person-like power that Christ defeats last.",
+      "words": ["G1163", "G0936", "G0891", "G2190", "G2078", "G2673", "G2288"],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "The Hebrew reads: the LORD said to my lord, sit at my right hand until I make your enemies a footstool for your feet. The Septuagint (Psalm 109:1) renders it closely. Paul does not quote it but reshapes it: he adds ‘all’ (pantas) to ‘enemies’, drops the footstool image for ‘under his feet’, which he takes from Psalm 8:6 in the next verse, and makes the reigning Christ the one who subdues. Psalm 110 is the Old Testament text the New Testament cites most often (Mark 12:36, Acts 2:34-35, Hebrews 1:13). In its first setting it is a royal oracle, a promise to David's king of victory from God's side; Paul reads the present age as the time of that session and conquest."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The risen Christ reigns now, seated in the place Psalm 110 promised. His reign is not postponed to the future; it is the present age, and it will go on until the last enemy is destroyed."
+        },
+        {
+          "id": "new-creation",
+          "note": "Death is an enemy, not a friend or a natural release. Its abolition is the last act before God is all in all, which is why Christian hope looks for a renewed creation rather than an escape from the body."
+        }
+      ],
+      "refs": ["Psalm 110:1", "Hebrews 10:12-13", "Revelation 20:14", "Revelation 21:4", "Hebrews 2:14-15"]
+    },
+    {
+      "v": "27",
+      "context": "A second psalm supports the first: God has put all things under his feet (Psalm 8:6). Paul then adds a clarification: ‘all things’ obviously does not include God himself, who did the subjecting.",
+      "grammar": "Panta gar hupetaxen hupo tous podas autou, ‘for he has put all things under his feet’, uses hupotassō, ‘to subject, to arrange under’, which then recurs five more times in verses 27 and 28. The verb dominates the paragraph. Hotan de eipē, ‘but when it says’, introduces Paul's comment on the quotation. Dēlon hoti ektos, ‘it is plain that (he is) excepted’, uses ektos, ‘outside’, with a genitive participle, tou hupotaxantos, ‘the one who subjected’. The perfect hupotetaktai, ‘has been subjected’, treats the psalm's statement as already true in principle.",
+      "words": ["G5293", "G4228", "G2036", "G1212", "G1622"],
+      "ot": [
+        {
+          "ref": "Psalm 8:6",
+          "note": "Psalm 8 (verse 7 in Hebrew and Greek numbering) marvels that God has made frail humanity ruler over his works and put all things under its feet, an echo of Genesis 1:26-28. The Septuagint reads panta hupetaxas hupokatō tōn podōn autou, ‘you put all things beneath his feet’. Paul changes the second person to the third (‘he put’) and the preposition to hupo. In the psalm ‘him’ is humanity; Paul reads it of Christ as the true human, the last Adam (verse 45), in whom humanity's lost rule is restored. Hebrews 2:6-9 and Ephesians 1:22 use the psalm the same way."
+        }
+      ],
+      "theology": [
+        {
+          "id": "image",
+          "note": "Psalm 8 is a meditation on Genesis 1: humanity crowned to rule. By applying it to Christ, Paul shows that the vocation given to humanity at creation is fulfilled in him and, through him, in those who bear his likeness (verse 49)."
+        }
+      ],
+      "refs": ["Psalm 8:4-6", "Hebrews 2:6-9", "Ephesians 1:22", "Philippians 3:21", "Genesis 1:28"]
+    },
+    {
+      "v": "28",
+      "context": "The paragraph reaches its goal. When everything is subjected to the Son, the Son himself will be subjected to the Father, so that God may be all in all. The reign of Christ serves the purpose of the whole plan: God's unchallenged presence in everything.",
+      "grammar": "Tote kai autos ho huios hupotagēsetai, ‘then the Son himself will also be subjected’, uses the future passive of hupotassō, which can mean ‘will be subjected’ or, with middle force, ‘will subject himself’; many interpreters prefer the second, since no one forces the Son. This is Paul's only absolute use of ‘the Son’, without ‘of God’. Hina ē ho theos panta en pasin, ‘so that God may be all in all’, is a purpose clause, and the phrase panta en pasin (the article ta before the first panta is printed by some editions and not others) could mean God fully present in everything, or God supreme over everyone. It is not a statement that creatures dissolve into God, since the subjection of verse 27 keeps God distinct from what he rules.",
+      "words": ["G5293", "G5207", "G2443", "G2316", "G3956"],
+      "history": "The verse became a battleground in the fourth century. Arian writers cited it for the Son's inferiority to the Father. Marcellus of Ancyra, a defender of Nicaea, taught that the Son's distinct reign would end when he handed back the kingdom, and the clause ‘whose kingdom shall have no end’ (from Luke 1:33) entered the creed of Constantinople in 381 to exclude that view. Augustine (On the Trinity, book 1) read the subjection in terms of Christ's human nature, the ‘form of a servant’, and as his bringing the redeemed to the Father's presence. Gregory of Nyssa wrote a short treatise on this verse, reading the Son's subjection as the subjection of his body, the church, and ‘God all in all’ as the final removal of evil.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The church confesses the Son as equal with the Father and his kingdom as without end. Within that confession, the main readings of this verse are that it concerns the incarnate Son's mediatorial work, completed and handed over, or the eternal order between Father and Son in which the Son is from the Father without being less. What the church has rejected is a reading that ends the Son's reign or makes him a creature."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom's final shape is God all in all. Christ's reign is not a rival kingdom to the Father's but the means by which the Father's rule is restored to the whole creation."
+        }
+      ],
+      "refs": ["Luke 1:33", "Philippians 2:9-11", "John 17:4-5", "Ephesians 1:10", "Colossians 3:11"]
+    },
+    {
+      "v": "29",
+      "context": "Paul turns from doctrine to practice with two arguments from behavior. The first is the obscure practice of baptism for the dead: if the dead are not raised at all, why do people do it? The logic is ad hominem, pointing out a practice that makes sense only if resurrection is real.",
+      "grammar": "Epei, ‘otherwise’, refers back to the whole argument: if the dead are not raised. Hoi baptizomenoi huper tōn nekrōn, ‘those being baptized for the dead’, is a present participle, describing a group that does this regularly, and Paul says ‘they’, not ‘we’. The key is huper with the genitive. Its normal sense is ‘on behalf of’, which supports the vicarious reading; it can also mean ‘for the sake of’ or ‘with reference to’. Nekrōn has an article, ‘the dead’, suggesting particular dead people. Ti poiēsousin, ‘what will they do?’, may mean ‘what will they accomplish?’. Holōs, ‘at all’, echoes the total denial of verse 12.",
+      "words": ["G1893", "G4160G", "G0907", "G5228", "G3498", "G3654"],
+      "history": "Interpreters have counted dozens of explanations. The three with the widest support are these. First, the vicarious reading: some Corinthians underwent baptism on behalf of believers who died unbaptized, and Paul mentions it without approval; most modern commentators, including Hans Conzelmann and Gordon Fee, lean this way. Second, the ‘for the sake of’ reading, argued by Maria Raeder in 1955 and taken up by Joachim Jeremias: people became believers and were baptized in order to be reunited with Christian loved ones at the resurrection. Third, John Chrysostom (Homilies on 1 Corinthians 40) took ‘the dead’ to mean the believer's own mortal body, baptized in hope of the resurrection confessed at baptism. Chrysostom and Tertullian report vicarious baptism among heretical groups (Chrysostom names the Marcionites); Epiphanius attributes it to the followers of Cerinthus (Panarion 28). Joseph Smith taught the practice at a funeral in Nauvoo, Illinois, on August 15, 1840, citing this chapter, and The Church of Jesus Christ of Latter-day Saints performs proxy baptisms for the dead in its temples; historic Christian churches have not adopted the practice or that reading.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Paul's argument uses the practice without endorsing or teaching it, and no other text in Scripture supports it. The verse shows how closely early Christians linked baptism with resurrection hope (compare Romans 6:4-5), but it is too uncertain to found any doctrine or rite."
+        }
+      ],
+      "refs": ["Romans 6:3-5", "Colossians 2:12", "1 Corinthians 1:13-17"]
+    },
+    {
+      "v": "30-31",
+      "context": "The second argument from behavior is Paul's own life. Why would he risk danger every hour if there were nothing beyond death? He swears by his pride in the Corinthians that he faces death daily.",
+      "grammar": "Kinduneuomen, ‘we are in danger’, and apothnēskō, ‘I die’, are present tenses of habitual action. ‘I die daily’ is hyperbole for constant mortal risk (2 Corinthians 4:10-11, 11:23). Nē is a particle of oath, ‘by’, used with the accusative, found only here in the New Testament: ‘by my boasting in you’. Humeteran kauchēsin, ‘your boasting’, is objective, the pride Paul takes in them, not their boasting.",
+      "words": ["G2793", "G0599", "G3513", "G2746"],
+      "text": "The word adelphoi, ‘brothers’, in verse 31 is in some manuscripts and not others; the Nestle-Aland edition prints it, the SBL edition and the Byzantine text do not. The meaning is unaffected.",
+      "refs": ["2 Corinthians 4:8-11", "2 Corinthians 11:23-27", "Romans 8:36", "2 Corinthians 1:8-10"]
+    },
+    {
+      "v": "32",
+      "context": "Paul names a specific danger, fighting wild beasts at Ephesus, and then concludes with the logic of the denial. If the dead are not raised, the sensible philosophy is the one Isaiah condemned: eat and drink, for tomorrow we die.",
+      "grammar": "Ei kata anthrōpon ethēriomachēsa, ‘if, humanly speaking, I fought with beasts’: kata anthrōpon, ‘according to man’, can mean ‘from merely human motives’ (the BSB's sense) or ‘to use a human figure of speech’, a signal that the beasts are metaphorical. Thēriomacheō is a rare verb, literally ‘to fight beasts’. The quotation uses hortatory subjunctives, phagōmen kai piōmen, ‘let us eat and let us drink’.",
+      "words": ["G0444", "G2341", "G2181", "G3786", "G5315", "G4095", "G0839"],
+      "history": "Most scholars take the beasts as a figure for violent opponents, since a Roman citizen was not normally condemned to the arena and a survivor of it would be remarkable; Ignatius of Antioch (Romans 5:1), about AD 110, uses the same verb of the soldiers guarding him on the road to Rome. Acts 19:23-41 records the riot of the silversmiths in Ephesus, and 2 Corinthians 1:8-10 speaks of a deadly affliction in Asia. The late second century Acts of Paul tells a story of Paul facing a lion in the Ephesian arena, but it is legend built on this verse.",
+      "ot": [
+        {
+          "ref": "Isaiah 22:13",
+          "note": "Paul quotes the Septuagint word for word: phagōmen kai piōmen, aurion gar apothnēskomen. The Hebrew has infinitives (‘eating and drinking’) followed by ‘let us eat and drink, for tomorrow we die’. In Isaiah the words belong to the people of Jerusalem feasting under threat of siege, when the Lord called for weeping and sackcloth; Isaiah answers that this iniquity will not be forgiven them until they die (22:14). Paul uses the line as the natural creed of a world with no resurrection, and by borrowing Isaiah's setting he marks it as the attitude of people under judgment."
+        }
+      ],
+      "refs": ["Isaiah 22:12-14", "Acts 19:23-31", "2 Corinthians 1:8-9", "Luke 12:19-20", "Ecclesiastes 2:24"]
+    },
+    {
+      "v": "33-34",
+      "context": "Paul warns the Corinthians not to be deceived by the company they keep: those who deny the resurrection are corrupting the church's conduct. He calls them to wake up and stop sinning, and he says some have no knowledge of God.",
+      "grammar": "Mē planasthe, ‘stop being deceived’, is a present imperative with mē, often forbidding something already happening. The quotation, phtheirousin ēthē chrēsta homiliai kakai, forms a line of Greek iambic verse. Eknēpsate, ‘sober up’, is an aorist imperative for a decisive change; dikaiōs, ‘as is right’, qualifies it. Mē hamartanete, a present imperative, means ‘stop sinning’ or ‘do not go on sinning’. Agnōsian theou, ‘ignorance of God’, uses a strong noun: not a lack of information but failure to know God, the phrase used of idolaters in Wisdom of Solomon 13:1.",
+      "words": ["G4105", "G5351", "G2239", "G3657", "G1594", "G0264", "G0056", "G1791"],
+      "history": "The line in verse 33 is from the comedy Thais by the Athenian playwright Menander (about 342 to 290 BC). By Paul's day it circulated as a proverb, and he need not have read the play. Church writers later credited it to Euripides as well, and whether Menander borrowed an older line is uncertain. In 6:5 Paul used the same phrase ‘I say this to your shame’, pros entropēn humin.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Paul connects belief about the body's future with conduct in the body now, as he did in 6:13-14. Denial of the resurrection is not treated as a harmless opinion; it loosens moral seriousness because it empties the body of lasting significance."
+        }
+      ],
+      "refs": ["1 Corinthians 6:13-14", "1 Corinthians 6:9", "Romans 13:11-14", "1 Thessalonians 5:6-8", "Proverbs 13:20"]
+    },
+    {
+      "v": "35-36",
+      "context": "Paul turns to the objection behind the denial: how can the dead be raised, and with what kind of body? He answers with an image from farming. A seed does not come to life unless it dies.",
+      "grammar": "Erei tis, ‘someone will say’, introduces an imaginary questioner, a technique of the diatribe, a teaching style of Greek moral philosophers. The two questions, pōs, ‘how?’, and poiō sōmati, ‘with what sort of body?’, are likely scornful rather than curious. Aphrōn, ‘fool’, is not an insult of temper but the Old Testament label for one who disregards God (Psalm 14:1). The Greek adds emphasis: su ho speireis, ‘what you yourself sow’, drawing the answer from the questioner's own experience. Zōopoieitai, ‘is made alive’, is passive, as in verse 22.",
+      "words": ["G4483", "G4459", "G4169", "G4983", "G0878", "G4687", "G2227", "G0599"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The seed image holds together continuity and change: what is sown is the same thing that grows, and yet what grows is far greater. Death is not an obstacle to resurrection but the condition through which it comes."
+        }
+      ],
+      "refs": ["John 12:24", "Psalm 14:1", "Romans 4:17", "Mark 12:24-27"]
+    },
+    {
+      "v": "37-38",
+      "context": "The seed image is pressed further. What is sown is a bare kernel, not the body it will become; God gives each seed the body he has chosen. The body raised will be continuous with the one sown and yet as different as a stalk of wheat from a grain.",
+      "grammar": "Gumnon kokkon, ‘a bare grain’, a naked seed with no stalk or leaf. Ei tuchoi, ‘it may be’, an optative, is the rare Greek mood of possibility, here fixed in an idiom: ‘perhaps of wheat’. Ho theos didōsin, ‘God gives’, is present tense for God's continuing action, but kathōs ēthelēsen, ‘as he willed’, is aorist, and many commentators think it points back to creation, when God gave each seed its kind (Genesis 1:11-12). Idion sōma, ‘its own body’, keeps the individuality of each.",
+      "words": ["G1131", "G2848", "G5177", "G4621", "G1325", "G2309", "G4690H", "G2398"],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The God who raises the dead is the God who gave each seed its body at creation. Paul grounds resurrection in creation: the power that made bodies in the first place can remake them, and the variety of bodies he already made shows that he is not limited to the present kind."
+        }
+      ],
+      "refs": ["Genesis 1:11-12", "Romans 4:17", "Philippians 3:21", "2 Corinthians 5:1-4"]
+    },
+    {
+      "v": "39-41",
+      "context": "Paul widens the point: God has already made many kinds of flesh and many kinds of bodies, earthly and heavenly, each with its own glory. It should not be hard to believe he can make a resurrection body different from the present one.",
+      "grammar": "Allē... allē... allē, ‘another... another... another’, is repeated in both lists for a rhythmic effect. The order of flesh in verse 39 (humans, animals, birds, fish) is the reverse of the order of their making in Genesis 1 (fish and birds, then land animals, then humans). Verse 40 switches from allē to hetera, ‘different’, for the two classes of bodies. Doxa here means ‘splendor’ or ‘brightness’, the visible radiance of a thing; the stars differ from one another en doxē, in splendor. Some Christian readers from the church fathers onward read verse 41 as teaching degrees of glory among the redeemed, but in context Paul is illustrating variety among bodies, not ranking believers.",
+      "words": ["G4561", "G0243", "G2934", "G4421", "G2486", "G2032", "G1919", "G2087", "G1391"],
+      "text": "The word ‘flesh’ before ‘of birds’ in verse 39 appears in some editions and not others, and the Textus Receptus puts fish before birds. English Bibles follow different orders, but the sense is the same.",
+      "refs": ["Genesis 1:20-26", "Psalm 19:1-6", "Daniel 12:3", "Matthew 13:43"]
+    },
+    {
+      "v": "42-43",
+      "context": "Paul applies the analogies: so it is with the resurrection of the dead. Four contrasts follow: perishable and imperishable (verse 42), dishonor and glory, weakness and power (verse 43), natural and spiritual (verse 44). The body sown is the subject of both halves each time.",
+      "grammar": "Each line pairs speiretai, ‘it is sown’, with egeiretai, ‘it is raised’, both present passive, with no stated subject. That silence is significant: ‘it’ is the same thing in both clauses, the body. Interpreters disagree whether ‘is sown’ means burial (the body laid in the ground like seed) or the whole present life (the body lived in weakness from birth); the four descriptions (decay, dishonor, weakness) fit both. The nouns are datives of manner: en phthora, ‘in perishability’, en aphtharsia, ‘in imperishability’. The rhythm is poetic: short, matching lines, easily remembered.",
+      "words": ["G4687", "G1453", "G5356", "G0861", "G0819", "G1391", "G0769G", "G1411"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The same body is sown and raised, and yet it is raised in a new condition: incorruptible, glorious, powerful. Christian teaching on the resurrection holds both identity (it is this body) and transformation (it is not this body as it is now)."
+        },
+        {
+          "id": "glory",
+          "note": "The body sown in dishonor, whether in burial or in the humiliations of aging and illness, is raised in glory. Glory is not reserved for the soul; the body shares in it."
+        }
+      ],
+      "refs": ["Philippians 3:20-21", "Romans 8:18-23", "2 Corinthians 4:16-18", "Colossians 3:4"]
+    },
+    {
+      "v": "44",
+      "context": "The fourth contrast is the most important and most misunderstood: sown a natural body, raised a spiritual body. Paul then insists that the spiritual body is as real as the natural one.",
+      "grammar": "The two adjectives are psuchikos, ‘soulish’, from psuchē, ‘soul, life’, and pneumatikos, ‘spiritual’, from pneuma, ‘spirit’. Paul has already used the same pair in 2:14-15, where the psuchikos person is one without the Spirit and the pneumatikos person one led by the Spirit. Greek adjectives in -ikos usually describe what something is characterized by, not what it is made of. N. T. Wright (The Resurrection of the Son of God, 2003) argued on this basis that the natural body is animated by ordinary human life and the spiritual body by God's Spirit, so neither phrase means immaterial. Dale Martin (The Corinthian Body, 1995) and Troels Engberg-Pedersen argued instead that in ancient physics pneuma was a fine, luminous substance, so Paul pictures a body made of a higher kind of matter. Either way, the body remains a body: sōma is repeated in both halves, and verse 44b insists that the one is as real as the other.",
+      "words": ["G4983", "G5591", "G4152", "G1510"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "A ‘spiritual body’ is not a spirit instead of a body. The contrast is between the present body, suited to ordinary mortal life, and the resurrection body, wholly suited to and animated by the Spirit of God. The church has rejected readings that make the resurrection body a mere phantom."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit who now lives in believers (6:19) will fully give life to their bodies at the resurrection (Romans 8:11). The resurrection body is the Spirit's work completed."
+        }
+      ],
+      "refs": ["1 Corinthians 2:14-15", "Romans 8:11", "Luke 24:39", "1 Corinthians 6:19"]
+    },
+    {
+      "v": "45",
+      "context": "Paul proves the two kinds of body from Genesis 2:7: the first Adam became a living being. Then he adds, in his own words, the second half: the last Adam became a life-giving spirit. The first Adam received life; the last Adam gives it.",
+      "grammar": "Houtōs kai gegraptai, ‘so also it is written’, introduces the quotation, but only the first half is Genesis. Egeneto, ‘became’, governs both halves: the first man became psuchēn zōsan, ‘a living soul’, a creature with life; the last Adam became pneuma zōopoioun, ‘a life-giving spirit’, one who gives life. Psuchē here is the noun behind psuchikos in verse 44, and pneuma the noun behind pneumatikos, so the quotation grounds the adjectives. The present participle zōopoioun picks up the verb of verses 22 and 36.",
+      "words": ["G1125", "G1096", "G4413G", "G0076", "G5590G", "G2198", "G2078", "G4151G", "G2227"],
+      "ot": [
+        {
+          "ref": "Genesis 2:7",
+          "note": "The Hebrew says the man (haadam) became lenefesh chayyah, ‘a living being’, when God breathed into his nostrils the breath of life. The Septuagint reads kai egeneto ho anthrōpos eis psuchēn zōsan. Paul adds two words, prōtos, ‘first’, and Adam, to set up the contrast with the ‘last Adam’, and he adds the second line as interpretation, not as quotation. Genesis describes a living creature given life by God's breath; Paul describes a man who has himself become the source of life by the Spirit, which fits John 20:22, where the risen Jesus breathes on the disciples and gives the Spirit."
+        }
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Paul reads human history as two beginnings, each headed by one man. Adam's life was given and could be lost; Christ's risen life is life that gives life to others. Believers belong first to the one and then to the other."
+        },
+        {
+          "id": "spirit",
+          "note": "The risen Christ ‘became a life-giving spirit’: not that he became a spirit without a body, but that in his resurrection he is so joined to the Spirit's work that he gives the Spirit's life to his people (compare 2 Corinthians 3:17-18)."
+        }
+      ],
+      "refs": ["Genesis 2:7", "John 5:21", "John 20:22", "Romans 5:14", "2 Corinthians 3:17-18"]
+    },
+    {
+      "v": "46-47",
+      "context": "Paul insists on the order: the natural comes first, then the spiritual. The first man is from the earth, made of dust; the second man is from heaven. The present body is the starting point, not a fall from a higher existence.",
+      "grammar": "All' ou prōton to pneumatikon, ‘but not first the spiritual’, uses neuter adjectives, speaking of the principle, not only of persons. Choikos, ‘made of dust’, comes from chous, ‘dust’, the Septuagint word in Genesis 2:7, and appears only in this paragraph in the New Testament. Ek gēs, ‘from the earth’, and ex ouranou, ‘from heaven’, describe origin and character. ‘The second man from heaven’ in context most naturally refers to the risen Christ as he will come again from heaven, not only to his original coming at the incarnation, since the whole paragraph is about the resurrection body.",
+      "words": ["G4413G", "G4152", "G5591", "G1899", "G5517", "G1093G", "G1208", "G3772"],
+      "history": "Philo of Alexandria, Paul's older contemporary, read Genesis 1:27 and 2:7 as two creations: first a heavenly, ideal man made in God's image, and then an earthly man formed from dust (On the Creation 134; Allegorical Interpretation 1.31). Many scholars think Paul's insistence that the spiritual is not first answers a Corinthian scheme like Philo's, in which spiritual people return to their true, heavenly origin. For Paul the heavenly man is not an ideal original but the risen Christ who comes at the end.",
+      "text": "The Textus Receptus reads ‘the second man is the Lord from heaven’, which the King James Version follows. The earliest manuscripts lack ‘the Lord’, and modern critical editions omit it.",
+      "refs": ["Genesis 2:7", "Genesis 3:19", "John 3:31", "Philippians 3:20-21"]
+    },
+    {
+      "v": "48-49",
+      "context": "Each head shapes its people. As the earthly man was, so are the earthly; as the heavenly man is, so are the heavenly. Believers have borne the image of Adam and will bear the image of Christ.",
+      "grammar": "Hoios... toioutoi, ‘of what sort... of that sort’, is a correlative construction: the people match the head. Ephoresamen, ‘we have borne’, is aorist of phoreō, a verb used of wearing clothing habitually, which prepares for the clothing image of verses 53 and 54. Eikona, ‘image’, echoes Genesis 1:26-27 and 5:3, where Adam fathered a son in his own likeness, after his image. The debated form is the second verb (see the text note): future indicative phoresomen, ‘we shall bear’, or aorist subjunctive phoresōmen, ‘let us bear’. The two words differed by one vowel, and by the Roman period the long and short o sounded alike, so the difference would disappear in dictation.",
+      "words": ["G3634", "G5108", "G5517", "G2032", "G5409", "G1504"],
+      "text": "The reading ‘let us bear the image of the heavenly man’ is found in most of the oldest witnesses, including P46, Sinaiticus, and Alexandrinus; ‘we shall bear’ has much less support, chiefly Codex Vaticanus. The Nestle-Aland and SBL editions print the future, judging that Paul is teaching what will happen rather than urging a way of life, and that scribes easily turned a statement into an exhortation. Westcott and Hort, the Tyndale House edition, and the Byzantine text print the subjunctive, holding that the external evidence should decide. The subjunctive would make the line an appeal to live now as those who will bear Christ's image, echoing the ethical warning of verses 33 and 34.",
+      "theology": [
+        {
+          "id": "image",
+          "note": "Humanity bears the image of God (Genesis 1:26-27) but, as descendants of Adam, also bears Adam's image (Genesis 5:3). Paul says believers will bear the image of the heavenly man: the image of God, marred in Adam, will be fully restored in the likeness of the risen Christ."
+        },
+        {
+          "id": "union",
+          "note": "Belonging to Christ means taking on his likeness, begun now (2 Corinthians 3:18) and completed in the resurrection body (Philippians 3:21, 1 John 3:2)."
+        }
+      ],
+      "refs": ["Genesis 5:3", "Romans 8:29", "2 Corinthians 3:18", "Philippians 3:21", "1 John 3:2"]
+    },
+    {
+      "v": "50",
+      "context": "Paul states the conclusion of verses 35 to 49 and opens the final section: flesh and blood cannot inherit God's kingdom, and the perishable cannot inherit the imperishable. The body must be changed, which is what verses 51 to 54 describe.",
+      "grammar": "Touto de phēmi, ‘this I say’, is a solemn summary. Sarx kai haima, ‘flesh and blood’, is a Jewish idiom for mortal human nature in its weakness (Matthew 16:17, Galatians 1:16, Hebrews 2:14), not a statement that the resurrection body has no flesh. The second line restates the first in parallel. Joachim Jeremias argued in a well-known article that the two lines refer to two groups, the living (flesh and blood) and the dead (the perishable), both of whom must be changed, anticipating verse 51; many commentators prefer to read them as synonymous parallelism.",
+      "words": ["G5346", "G4561", "G0129G", "G0932", "G2816", "G5356", "G0861"],
+      "history": "In the second century, Gnostic teachers used this verse to argue that the body has no share in salvation. Irenaeus devoted part of book 5 of Against Heresies (chapters 9 to 14) to answering them, arguing that flesh cannot inherit by its own power but can be inherited, taken up by the Spirit into the kingdom. Tertullian's On the Resurrection of the Flesh makes a similar argument.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom of God in its fullness is something inherited, received as a gift, and it requires a new kind of existence that mortal nature cannot supply. The kingdom's coming involves the remaking of the people who enter it."
+        }
+      ],
+      "refs": ["Matthew 16:17", "Galatians 1:16", "John 3:3-6", "Hebrews 2:14", "1 Corinthians 6:9-10"]
+    },
+    {
+      "v": "51-52",
+      "context": "Paul reveals a mystery, a truth made known by God: not every believer will die, but all will be changed. At the last trumpet, in an instant, the dead will be raised and the living transformed together.",
+      "grammar": "Idou, ‘look’, and mustērion, ‘mystery’, mark a disclosure. In Paul a mystery is not a riddle but God's plan, once hidden and now revealed (2:7, Romans 11:25). Pantes ou koimēthēsometha, ‘we shall not all sleep’, places the negative so that it could grammatically deny ‘all’ (not all will sleep) rather than the verb; context makes clear the meaning is that some will be alive at the end. Allagēsometha, ‘we will be changed’, is a future passive with God as agent. En atomō, ‘in an instant’, uses atomos, ‘uncuttable’, the word from which ‘atom’ comes: a moment too short to divide. En rhipē ophthalmou, ‘in the twinkling of an eye’, is literally ‘in the flick of an eye’.",
+      "words": ["G2400", "G3466", "G2837", "G0236", "G0823", "G4493", "G3788", "G4536", "G4537"],
+      "text": "The Greek manuscripts disagree here more than anywhere else in the chapter, because the idea that some believers would not die troubled later copyists. Most read ‘we shall not all sleep, but we shall all be changed’. Sinaiticus and Ephraemi Rescriptus read ‘we shall all sleep, but we shall not all be changed’. The Latin Vulgate follows another reading, ‘we shall all rise again, but we shall not all be changed’, and the Catholic Douay-Rheims Bible translated it; the modern Nova Vulgata conformed the Latin to the majority Greek.",
+      "history": "The trumpet (salpinx, the Greek word for the shofar or ram's horn and for the military trumpet) signals God's action in the Old Testament: at Sinai (Exodus 19:16), for the gathering of the exiles (Isaiah 27:13), and on the Day of the Lord (Joel 2:1, Zephaniah 1:16). The ‘last’ trumpet is the final signal. Pretribulation readers distinguish this trumpet from the seventh trumpet of Revelation 11:15; posttribulation readers identify them. Paul does not number trumpets; ‘last’ means the one that closes history.",
+      "theology": [
+        {
+          "id": "return",
+          "note": "Christ's return brings both resurrection for the dead and transformation for the living, at the same instant. Paul's parallel description in 1 Thessalonians 4:15-17 adds that the living will not go before the dead."
+        }
+      ],
+      "refs": ["1 Thessalonians 4:15-17", "Matthew 24:31", "Isaiah 27:13", "Philippians 3:20-21", "Romans 11:25"]
+    },
+    {
+      "v": "53",
+      "context": "The change is necessary: the perishable must put on imperishability, and the mortal must put on immortality. Paul now uses the image of clothing, which he developed further in 2 Corinthians 5.",
+      "grammar": "Dei, ‘it is necessary’, returns from verse 25: the change belongs to God's plan. Enedusasthai, ‘to put on’, is an aorist middle infinitive of enduō, the ordinary verb for putting on clothing. The demonstrative touto, ‘this’, is repeated: to phtharton touto, ‘this perishable thing’, to thnēton touto, ‘this mortal thing’. Paul seems to point to his own body; what puts on immortality is this body, not a replacement. Athanasia, ‘immortality’, occurs in the New Testament only here, in verse 54, and in 1 Timothy 6:16, where God alone has it.",
+      "words": ["G1163", "G5349", "G1746", "G0861", "G2349", "G0110"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Immortality in Paul is not a property the soul already has but a garment God gives at the resurrection. God alone has immortality by nature (1 Timothy 6:16); humans receive it as a gift, and they receive it in the body."
+        }
+      ],
+      "refs": ["2 Corinthians 5:2-4", "1 Timothy 6:16", "2 Timothy 1:10", "Romans 2:7"]
+    },
+    {
+      "v": "54",
+      "context": "When the change happens, Scripture's word will be fulfilled: death swallowed up in victory. Paul reaches for Isaiah's picture of God's great feast on his mountain, where he destroys death for all peoples.",
+      "grammar": "Hotan... tote, ‘when... then’, links the resurrection to the fulfillment. Genēsetai ho logos ho gegrammenos, ‘the saying that is written will come to pass’, uses the future of ginomai: the prophecy is not yet fulfilled but will be at the resurrection. Katepothē, ‘was swallowed up’, is an aorist passive, a prophetic past, treating the future as done. Eis nikos, ‘into victory’, the phrase that links to verse 55.",
+      "words": ["G3752", "G5349", "G1746", "G1096", "G1125", "G2666", "G2288", "G3534"],
+      "ot": [
+        {
+          "ref": "Isaiah 25:8",
+          "note": "The Hebrew reads billa hammavet lanetsach, ‘he has swallowed up death forever’, with God as subject. The Septuagint reads very differently, katepien ho thanatos ischusas, ‘death, having prevailed, swallowed up’, apparently reading the verb with death as subject. Paul's wording, katepothē ho thanatos eis nikos, agrees with the later Greek version of Theodotion. It takes the Hebrew lanetsach, ‘forever’, in the sense of the related Aramaic word netsach, ‘victory’, which prepares for the next verse. In Isaiah the line belongs to the great banquet on Mount Zion (25:6-8), where God removes the shroud over all nations, swallows death, and wipes tears from every face. Paul sees the resurrection as the day that feast is served. Revelation 21:4 echoes the same passage."
+        }
+      ],
+      "text": "Some manuscripts, among them 0121a, 0243, and 1739, lack the first clause, ‘When the perishable has been clothed with the imperishable’, most likely because a copyist's eye skipped from one ‘has been clothed’ to the next. Westcott and Hort omitted it; the other editions print it.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "The resurrection is the fulfillment of Isaiah's vision of a world where death is swallowed and tears are wiped away. The hope is cosmic as well as personal: death is not escaped by individuals one by one but abolished."
+        }
+      ],
+      "refs": ["Isaiah 25:6-8", "Revelation 21:4", "2 Corinthians 5:4", "Hebrews 2:14-15"]
+    },
+    {
+      "v": "55-56",
+      "context": "Paul taunts death with words from Hosea, then explains in a compressed line: death stings through sin, and sin draws its power from the law. The line is a one-sentence summary of the argument of Romans 5 to 7.",
+      "grammar": "Pou sou, thanate, to nikos, ‘where, O death, is your victory?’, uses the vocative thanate, addressing death as a person. Kentron, ‘sting’, is the point of a goad or the stinger of a scorpion or bee (Revelation 9:10). Verse 56 has no verbs: to de kentron tou thanatou hē hamartia, hē de dunamis tēs hamartias ho nomos, ‘and the sting of death, sin; and the power of sin, the law’. Sin gives death its deadly force, and the law, by defining and condemning sin, gives sin its power to condemn (Romans 7:8-11). The line comes without preparation in this letter, which is why a few scholars have wondered if it is a later addition, though no manuscript lacks it.",
+      "words": ["G4226", "G2288", "G3534", "G2759", "G0266", "G1411", "G3551"],
+      "ot": [
+        {
+          "ref": "Hosea 13:14",
+          "note": "The Hebrew reads ehi devarekha mavet, ehi qatavkha sheol, ‘where are your plagues, O death? where is your destruction, O Sheol?’ (ehi is often taken as ‘where’; some read ‘I will be’). In context the lines may be God summoning death against unrepentant Ephraim, since the next line says compassion is hidden from his eyes, though many read the verse as a promise of rescue. The Septuagint reads pou hē dikē sou, thanate; pou to kentron sou, hade, ‘where is your penalty, O death? where is your sting, O Hades?’. Paul changes dikē to nikos, ‘victory’, linking to Isaiah 25:8, and replaces Hades with a second ‘death’. Whatever the lines meant in Hosea's setting, Paul reads them as a taunt that has become true in Christ."
+        }
+      ],
+      "text": "Critical editions read ‘Where, O death, is your victory? Where, O death, is your sting?’. The Textus Receptus and the Byzantine text reverse the two nouns and read ‘Hades’ in the second line, following the Septuagint of Hosea, which is why the King James Version reads ‘O death, where is thy sting? O grave, where is thy victory?’.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law is good (Romans 7:12), but it cannot give life; it defines sin and so gives sin a legal power to condemn. Paul places the law on the side of the problem Christ solves, not because the law is evil but because sinners under it are condemned by it."
+        },
+        {
+          "id": "sin",
+          "note": "Death's sting is sin. Death is not simply a biological end but the consequence of sin, and so its defeat requires sin's removal, which is why the cross and resurrection belong together (verses 3 and 17)."
+        }
+      ],
+      "refs": ["Hosea 13:14", "Romans 7:7-13", "Romans 5:12-14", "Romans 6:23", "Hebrews 2:14-15"]
+    },
+    {
+      "v": "57",
+      "context": "The taunt turns to thanksgiving. The victory death lost is the victory God gives, through Christ. Paul's argument ends in worship.",
+      "grammar": "Tō de theō charis, ‘but thanks to God’, a formula of thanksgiving Paul uses at climactic turns (Romans 7:25, 2 Corinthians 2:14). Didonti, ‘who gives’, is a present participle: God is giving the victory now, not only at the end, which fits Paul's view that the resurrection life has already begun for believers. Nikos, ‘victory’, is the third use in four verses, the catchword that stitches the Isaiah and Hosea quotations to this praise.",
+      "words": ["G5485", "G1325", "G3534", "G2962G"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Paul's teaching on the resurrection ends in thanks, not speculation. The proper response to doctrine is praise to the God who gives what we could never achieve."
+        }
+      ],
+      "refs": ["Romans 7:24-25", "Romans 8:37", "1 John 5:4-5", "2 Corinthians 2:14"]
+    },
+    {
+      "v": "58",
+      "context": "The practical conclusion. Because the resurrection is certain, believers are to be steadfast and immovable and give themselves to the Lord's work, knowing their labor is not in vain. The chapter that began with the fear of believing in vain (verse 2) ends with the assurance that nothing done in the Lord is in vain.",
+      "grammar": "Hōste, ‘so then’, draws the conclusion from the whole chapter. Hedraioi, ‘firmly seated’, and ametakinētoi, ‘immovable’ (found only here in the New Testament), are predicate adjectives with the imperative ginesthe, ‘become, be’. Perisseuontes, ‘abounding’, a present participle, adds the positive side. Eidotes hoti, ‘knowing that’, gives the reason. Kopos, ‘labor, toil’, the word for wearying work, is picked up from Paul's own ekopiasa, ‘I toiled’, in verse 10. Kenos, ‘empty, in vain’, closes the ring begun in verses 2, 10, and 14.",
+      "words": ["G5620", "G0027", "G1476", "G0277", "G4052", "G2041", "G2873", "G2756"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Resurrection hope does not make present work pointless; it makes it lasting. Because the body and the world are to be raised and renewed, what is done in the Lord in this life carries into the life to come."
+        },
+        {
+          "id": "work",
+          "note": "‘The work of the Lord’ is not limited to church ministry. Everything done in the Lord shares the assurance of this verse, because the resurrection gives lasting worth to labor in the body."
+        }
+      ],
+      "refs": ["1 Corinthians 3:10-15", "Colossians 1:23", "Galatians 6:9", "Philippians 1:27", "Revelation 14:13"]
+    }
+  ]
+}

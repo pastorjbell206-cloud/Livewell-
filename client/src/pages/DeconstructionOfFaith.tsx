@@ -86,7 +86,7 @@ export default function DeconstructionOfFaith() {
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
             <p style={{ margin: "0 0 1.2em" }}>Across the country, people who once filled the pews are walking out — and the church keeps misreading why. The Deconstruction of Faith is an honest reckoning with what the church has lost, what it owes the people who left, and where faith goes from here. James Bell refuses both the defensive crouch and the easy surrender.</p>
             <p style={{ margin: "0 0 1.2em" }}>He names the wounds without excusing them — purity culture, political captivity, spiritual abuse, the prosperity gospel, the Jesus who got edited out — and he takes the critics' best case seriously enough to answer it. This is not a book that tells you deconstruction is a phase, or a sin, or a trophy. It is a book that tells the truth, and then shows the way through.</p>
-            <p style={{ margin: 0, fontWeight: 600 }}>Not a defense. Not a surrender. A reckoning.</p>
+            <p style={{ margin: 0, fontWeight: 600 }}>Deconstruction is not the end of the story, and this book is about what it would take to tell the rest of it honestly.</p>
           </div>
         </div>
       </section>

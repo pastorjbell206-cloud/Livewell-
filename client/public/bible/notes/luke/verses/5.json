@@ -1,0 +1,823 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Luke opens the call of the first disciples with a crowd pressing to hear ‘the word of God’. Where Mark and Matthew begin with Jesus walking by the shore and calling fishermen, Luke first shows why anyone would follow: the word Jesus teaches and, next, the power that backs it.",
+      "grammar": "Egeneto de en tō ... kai autos ēn hestōs, ‘and it happened, while ... that he was standing’, is a Septuagintal narrative opening (imitating the Hebrew vayehi, ‘and it came to pass’) that Luke uses often. Epikeisthai, ‘to press upon’, is a vivid infinitive of crowding. Ton logon tou theou, ‘the word of God’, is Luke's phrase for the message Jesus preaches (8:11, 8:21, 11:28) and later for the apostles' preaching (Acts 4:31, 6:2).",
+      "words": [
+        "G1096",
+        "G3793",
+        "G1945",
+        "G3056",
+        "G2316",
+        "G3041",
+        "G1082"
+      ],
+      "history": "Luke alone calls the Sea of Galilee a limnē, ‘lake’, the more accurate Greek word for a freshwater body some 21 kilometers long; Mark and Matthew use thalassa, ‘sea’, reflecting the Hebrew yam, which covers both. Gennesaret is the name of the fertile plain on the northwest shore (Mark 6:53), which Josephus praises for its abundance of crops (Jewish War 3.516-521) and after which he names the lake (Gennēsar). In the Old Testament it is the Sea of Kinnereth (Numbers 34:11).",
+      "refs": [
+        "Luke 8:11",
+        "Luke 8:21",
+        "Luke 11:28",
+        "Numbers 34:11",
+        "Acts 6:2"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The boats are beached and the fishermen are washing their nets after a failed night. Jesus borrows Simon's boat as a floating pulpit, which puts Simon at close range to his teaching before the miracle.",
+      "grammar": "Eplunon ta diktua, ‘they were washing the nets’, is an imperfect, work in progress when Jesus arrives. Embas eis hen tōn ploiōn, ‘getting into one of the boats’, and ērōtēsen auton, ‘he asked him’, are courteous: Jesus requests before he commands (verse 4). Kathisas, ‘sitting down’, is again the teacher's posture (4:20).",
+      "words": [
+        "G4143",
+        "G0231",
+        "G4150",
+        "G1350",
+        "G1684",
+        "G2065",
+        "G1877",
+        "G2523",
+        "G1321"
+      ],
+      "history": "Fishermen on the lake worked mostly at night with trammel nets, three-layered nets that fish could not see in the dark, and then washed, dried, and mended them in the morning. The fisherman and historian Mendel Nun of Kibbutz Ein Gev reconstructed these methods from local practice and ancient sources, and the Galilee Boat, a first-century fishing boat found near Kibbutz Ginosar in 1986, shows a vessel large enough for a crew of several and a heavy catch.",
+      "parallels": [
+        "Mark 4:1",
+        "Matthew 13:2"
+      ],
+      "refs": [
+        "Mark 1:16-20",
+        "Mark 1:19",
+        "Luke 4:20"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus, a carpenter's son from the hills, tells a professional fisherman to fish in deep water by day. Simon objects from experience and obeys anyway, on the strength of Jesus' word.",
+      "grammar": "Epanagage is singular (addressed to Simon, the boat's master), but chalasate, ‘let down’, is plural (addressed to the crew). Epistata, ‘Master’, is a title only Luke uses in the New Testament (seven times, always from disciples or petitioners), meaning an overseer or one in charge; it is not ‘teacher’ (didaskalos) but it is less than the ‘Lord’ Simon uses in verse 8. Kopiasantes is ‘having toiled to weariness’. Epi de tō rhēmati sou, ‘but on your word’, makes the word of verse 1 the ground of obedience.",
+      "words": [
+        "G1877",
+        "G0899",
+        "G5465",
+        "G1350",
+        "G0061",
+        "G1988",
+        "G2872",
+        "G3571",
+        "G4487"
+      ],
+      "text": "The earlier manuscripts have the plural ‘nets’ in verses 4-6; the Byzantine text and the King James Version have the singular ‘net’ in verses 5 and 6.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Simon's faith at this stage is thin but real: he doubts the plan and obeys the person. Luke shows faith beginning as obedience to Jesus' word before it understands."
+        }
+      ],
+      "refs": [
+        "Luke 8:24",
+        "Luke 9:33",
+        "Luke 17:13",
+        "John 2:5"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "The catch is so great that the nets begin to tear and two boats begin to sink. The miracle is excess, more than the fishermen can handle, and it pulls in their partners.",
+      "grammar": "Sunekleisan, ‘they enclosed’, describes a net closing around a shoal. Dierrēsseto is an imperfect, ‘the nets were beginning to tear’; likewise buthizesthai, ‘to be sinking’, is a present infinitive of an action under way. Neither disaster happens, but both threaten. Metochois, ‘partners’, is a word for sharers in an enterprise; verse 10 uses its near-synonym koinōnoi.",
+      "words": [
+        "G4788",
+        "G4128",
+        "G2486",
+        "G1284",
+        "G2656",
+        "G3353",
+        "G4815",
+        "G4130",
+        "G1036"
+      ],
+      "parallels": [
+        "John 21:6"
+      ],
+      "refs": [
+        "John 21:1-11",
+        "Malachi 3:10",
+        "Luke 6:38"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "Simon falls at Jesus' knees and asks him to leave, because he is a sinful man. The miracle exposes not his poor fishing but his unworthiness before holiness. Luke calls him ‘Simon Peter’ for the first time.",
+      "grammar": "Prosepesen tois gonasin Iēsou, ‘he fell at Jesus' knees’, is the posture of a suppliant. Exelthe ap’ emou, an aorist imperative, ‘go away from me’, is a plea, not an order. Anēr hamartōlos eimi, ‘a sinful man I am’, puts the confession in the adjective hamartōlos, a word Luke uses more than any other Gospel writer, and which the Pharisees will soon use as an accusation (5:30). The address changes from ‘Master’ (verse 5) to Kurie, ‘Lord’, which in this setting carries more than courtesy.",
+      "words": [
+        "G4074G",
+        "G4363",
+        "G1119",
+        "G1831",
+        "G0268",
+        "G2962G"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 6:5",
+          "note": "Isaiah, seeing the LORD in the temple, cries that he is undone, a man of unclean lips. The pattern of divine presence, confession of sinfulness, reassurance, and commission is the same in Isaiah 6:1-8 and Luke 5:8-10, though Luke does not quote the chapter. Similar responses appear in Judges 13:22 and Job 42:5-6."
+        }
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Nearness to Jesus' power makes Simon aware of the distance between himself and holiness. The fitting response to God's presence is not pride at being near it but confession."
+        },
+        {
+          "id": "sin",
+          "note": "Simon names himself, not a particular act, as sinful. The confession prepares for the chapter's theme: Jesus came for sinners (5:32), and the man who asks him to leave is the one he keeps."
+        }
+      ],
+      "refs": [
+        "Judges 13:22",
+        "Job 42:5-6",
+        "Luke 18:13",
+        "1 Timothy 1:15",
+        "John 21:7"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "Awe grips all the fishermen, including James and John, the sons of Zebedee. Jesus answers Simon's fear with reassurance and a new vocation: he will catch people.",
+      "grammar": "Thambos gar perieschen auton, ‘amazement seized him’, gives the reason (gar) for verse 8. Mē phobou, a present imperative with mē, ‘stop being afraid’, is the heavenly messenger's word of reassurance in Luke (1:13, 1:30, 2:10). Apo tou nun, ‘from now on’, is a Lukan marker of a new era (1:48, 12:52, 22:69). Anthrōpous esē zōgrōn is a periphrastic future, ‘you will be catching people’, using zōgreō, literally ‘to take alive’ (zōos, ‘alive’, and agreō, ‘catch’). In the Septuagint it describes sparing captives alive in war (Numbers 31:15, 18; Joshua 6:25 of Rahab). Mark's phrase is ‘fishers of men’; Luke's verb shifts the image from catching for death to catching for life.",
+      "words": [
+        "G2285",
+        "G4023",
+        "G0061",
+        "G2844",
+        "G5399",
+        "G3568",
+        "G0444",
+        "G2221"
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 16:16",
+          "note": "In Jeremiah God sends ‘many fishermen’ and hunters to catch Israel for judgment, so that no one escapes. Jesus reverses the image: Simon's catch is for rescue, which Luke's choice of zōgreō, ‘take alive’, reinforces. Whether Jesus intended an allusion to Jeremiah is uncertain; the contrast is instructive either way."
+        }
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first disciple is called not only to follow but to gather others. The miracle of fish becomes a sign of the mission Luke narrates in Acts, where Peter's first sermon brings in about three thousand (Acts 2:41)."
+        }
+      ],
+      "parallels": [
+        "Mark 1:17",
+        "Matthew 4:19"
+      ],
+      "refs": [
+        "Luke 1:30",
+        "Acts 2:41",
+        "2 Timothy 2:26",
+        "Matthew 13:47-48"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "They bring the boats ashore, leave everything, and follow Jesus. The moment of greatest profit is the moment they walk away from the business.",
+      "grammar": "Aphentes panta, ‘leaving everything’, uses panta (‘all things’), which Luke adds here and in Levi's call (5:28) against Mark's simpler accounts. Renunciation of possessions is a recurring Lukan emphasis (14:33, 18:22, 18:28). Ēkolouthēsan autō, ‘they followed him’, uses the verb that becomes the technical term for discipleship.",
+      "words": [
+        "G2609",
+        "G4143",
+        "G0863G",
+        "G3956",
+        "G0190"
+      ],
+      "history": "John 1:35-42 records an earlier meeting between Jesus and Andrew and Simon near the Jordan, which may explain why fishermen were ready to leave their work. Luke does not mention Andrew in this scene, though he names him among the Twelve (6:14).",
+      "parallels": [
+        "Mark 1:16-20",
+        "Matthew 4:18-22",
+        "John 21:1-19"
+      ],
+      "text": "The comparison with John 21:1-14 is close: a fruitless night, a command to let down the net, an enormous catch, and a response centered on Simon Peter. John's setting is after the resurrection, the net does not tear (21:11), and Peter leaps into the sea rather than asking Jesus to leave. Raymond E. Brown, in his Anchor Bible commentary on John (1970), argued that both go back to one tradition originally set after the resurrection. Darrell Bock (Luke 1:1-9:50, 1994) holds that the different settings and details point to two events, the second deliberately recalling the first when Peter is restored.",
+      "refs": [
+        "Luke 14:33",
+        "Luke 18:28",
+        "John 1:35-42",
+        "Luke 9:23"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "A man ‘covered with leprosy’ approaches Jesus in a town, falls on his face, and appeals to Jesus' will: the question is not whether Jesus can but whether he wants to.",
+      "grammar": "Plērēs lepras, ‘full of leprosy’, is Luke's intensification of Mark's simple ‘a leper’; the disease is advanced, visible everywhere. The condition ean thelēs, dunasai, ‘if you are willing, you are able’, uses the subjunctive for the uncertain will and the indicative for the certain power. Katharisai, ‘to cleanse’, is the language of purity: the man asks to be made clean, not only well.",
+      "words": [
+        "G4134",
+        "G3014",
+        "G4098",
+        "G4383",
+        "G1189",
+        "G2962G",
+        "G2309",
+        "G1410",
+        "G2511"
+      ],
+      "history": "The Hebrew tsaraʿat, rendered lepra in the Septuagint, covers a range of skin conditions (and even mold on garments and houses, Leviticus 13:47-59, 14:33-53) that made a person ritually unclean. Leviticus 13:45-46 required the sufferer to wear torn clothes, leave the hair unkempt, cover the upper lip, cry out ‘Unclean’, and live outside the camp; Josephus says those with the disease could not live in a city or village (Against Apion 1.281). A man in a town may have been violating that rule or living at its edge. Hansen's disease (true leprosy) did exist in the region by Jesus' day: DNA of the leprosy bacterium was identified in a first-century burial in the ‘Tomb of the Shroud’ at Akeldama in Jerusalem, published in 2009.",
+      "parallels": [
+        "Mark 1:40",
+        "Matthew 8:2"
+      ],
+      "refs": [
+        "Leviticus 13:45-46",
+        "Numbers 12:10-12",
+        "2 Kings 5:7",
+        "Luke 17:12-14"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Jesus touches the man before he speaks. The touch that should make Jesus unclean makes the leper clean, and the cure is immediate.",
+      "grammar": "Ekteinas tēn cheira hēpsato autou, ‘stretching out his hand he touched him’, uses a phrase the Septuagint often uses for God's powerful acts through Moses (Exodus 4:4, 14:16). Thelō, katharisthēti answers the man's ean thelēs word for word: ‘I will; be cleansed’, an aorist passive imperative. Eutheōs, ‘immediately’, marks a cure that needs no priestly waiting period.",
+      "words": [
+        "G1614",
+        "G5495",
+        "G0681",
+        "G2309",
+        "G2511",
+        "G2112",
+        "G3014"
+      ],
+      "history": "Rabbinic tradition treated a leper as like one dead (b. Nedarim 64b, reflecting Numbers 12:12, where Aaron pleads that Miriam not be like a stillborn child), and the cure of the disease was counted among God's own works, as the king of Israel's cry in 2 Kings 5:7 shows. The Mishnah devotes a whole tractate, Negaim, to the diagnosis of these conditions.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Under the Law uncleanness spreads by contact. Here holiness spreads instead: Jesus' touch communicates cleanness, reversing the direction of contagion and showing a holiness that heals what it touches."
+        },
+        {
+          "id": "salvation",
+          "note": "The man's plea about Jesus' will is answered with ‘I am willing’. Luke shows salvation rooted in Jesus' desire to restore, not in reluctant concession."
+        }
+      ],
+      "parallels": [
+        "Mark 1:41-42",
+        "Matthew 8:3"
+      ],
+      "refs": [
+        "Luke 7:22",
+        "Luke 17:14",
+        "Numbers 12:12",
+        "Exodus 4:6-7"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "Jesus sends the man to the priest with the offering Moses required. The healing is completed by the Law's own process, which restores him to worship and community.",
+      "grammar": "Parēngeilen, ‘he ordered’, introduces indirect speech (‘to tell no one’) that shifts into direct speech (‘but go, show yourself’), a change of construction that Luke keeps from his source. Deixon seauton tō hierei, ‘show yourself to the priest’, echoes Leviticus 14:2-3. Eis marturion autois, ‘for a testimony to them’, is ambiguous: a certificate to the priests that the man is clean, a testimony to the people that he may be received, or a witness to Jesus' identity. Some take it as a testimony against those who reject him, as in 9:5.",
+      "words": [
+        "G3853",
+        "G1166",
+        "G2409",
+        "G4374",
+        "G2512",
+        "G3475",
+        "G3142"
+      ],
+      "ot": [
+        {
+          "ref": "Leviticus 14:2-32",
+          "note": "The law of the leper's cleansing has two stages. First the priest goes outside the camp to examine him and performs a rite with two birds, cedarwood, scarlet yarn, and hyssop; after seven days of washing and shaving comes the eighth-day sacrifice of two male lambs and a ewe lamb, a guilt offering, a sin offering, and a burnt offering, with lesser offerings allowed for the poor (14:21-22). The priest puts blood on the man's right ear, thumb, and big toe, and ‘makes atonement’ for him (14:18-20). Jesus sends the man into this process, affirming the Law's role while doing what the Law could only certify."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus does not bypass the Law; he honors its procedures and sends the man to the priest. The Law declares clean; Jesus makes clean."
+        },
+        {
+          "id": "atonement",
+          "note": "The offerings Jesus sends the man to present include sin and guilt offerings by which the priest ‘makes atonement’. Luke's readers see in the one who cleanses the reality those sacrifices pointed toward."
+        }
+      ],
+      "parallels": [
+        "Mark 1:43-44",
+        "Matthew 8:4"
+      ],
+      "refs": [
+        "Leviticus 14:2-3",
+        "Luke 17:14",
+        "Luke 2:22-24",
+        "Luke 9:5"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "Despite the command to silence, the news spreads and crowds gather. Jesus responds by withdrawing regularly to pray. Luke places the growth of the ministry and the habit of prayer side by side.",
+      "grammar": "Diērcheto de mallon ho logos, ‘the word went about all the more’, uses logos again, now for the report about Jesus. In verse 16, ēn hupochōrōn ... kai proseuchomenos is a periphrastic imperfect, ‘he was withdrawing ... and praying’, describing a habit, not a single occasion. En tais erēmois, ‘in the lonely places’, is plural: Jesus had several places of retreat.",
+      "words": [
+        "G1330",
+        "G3123G",
+        "G3056",
+        "G4905",
+        "G2323",
+        "G0769H",
+        "G5298",
+        "G2048",
+        "G4336"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Luke more than any Gospel shows Jesus praying at turning points (3:21, 6:12, 9:18, 9:28-29, 22:41). Here prayer is a regular rhythm set against popularity: the more the crowds come, the more he withdraws."
+        }
+      ],
+      "parallels": [
+        "Mark 1:45"
+      ],
+      "refs": [
+        "Luke 3:21",
+        "Luke 6:12",
+        "Luke 9:18",
+        "Luke 22:41",
+        "Mark 1:35"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "A new scene sets up the first controversy. Pharisees and teachers of the law from every region sit listening, and Luke says the power of the Lord was present for Jesus to heal.",
+      "grammar": "Nomodidaskaloi, ‘teachers of the law’, is a rare word, used elsewhere only of Gamaliel (Acts 5:34) and of false teachers (1 Timothy 1:7). Kathēmenoi, ‘sitting’, suggests they came to observe. Dunamis kuriou ēn eis to iasthai auton, ‘the power of the Lord was there for him to heal’: kuriou here means God, and auton is the subject of the infinitive (‘for him to heal’). Luke thus attributes Jesus' healing power to God's presence with him.",
+      "words": [
+        "G1321",
+        "G5330",
+        "G3547",
+        "G2968",
+        "G1056G",
+        "G2449",
+        "G2419",
+        "G1411",
+        "G2962G",
+        "G2390"
+      ],
+      "history": "The Pharisees appear here for the first time in Luke. Josephus describes them as the most accurate interpreters of the laws, holding to traditions of the fathers not written in the law of Moses, and as highly influential with the people (Antiquities 13.297-298, 18.12-15). They numbered about six thousand in Herod the Great's time (Antiquities 17.42). Luke's picture is mixed: they oppose Jesus here, but some dine with him (7:36, 11:37, 14:1), some warn him of Herod (13:31), and Gamaliel defends the apostles (Acts 5:34-39).",
+      "text": "The Byzantine text reads autous (‘to heal them’) in place of auton (‘for him to heal’); the sense changes little.",
+      "parallels": [
+        "Mark 2:1-2",
+        "Matthew 9:1"
+      ],
+      "refs": [
+        "Acts 5:34",
+        "Luke 6:19",
+        "Luke 8:46",
+        "Acts 10:38"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "Friends carry a paralyzed man to Jesus and, blocked by the crowd, lower him through the roof. Their persistence is the picture of faith that Jesus is about to name.",
+      "grammar": "Ezētoun, ‘they were seeking’, is imperfect: they tried repeatedly. Mē heurontes poias eisenegkōsin, ‘not finding by what way they might bring him in’, is an indirect deliberative question with the subjunctive. Dia tōn keramōn, ‘through the tiles’, is Luke's detail; Mark 2:4 says they ‘uncovered the roof’ and ‘dug through’, the mud-and-branch roof of a Galilean house. Luke calls the mat first klinē (‘bed’) and then klinidion (‘little bed, pallet’).",
+      "words": [
+        "G2825",
+        "G3886",
+        "G2212",
+        "G1533",
+        "G4169",
+        "G3793",
+        "G1430",
+        "G2766",
+        "G2524",
+        "G2826"
+      ],
+      "history": "Most Galilean village houses had flat roofs of wooden beams covered with branches and packed clay, reached by an outside stair and used for work and sleeping. Luke's tiles would be familiar to readers elsewhere in the Roman world; whether he is adapting the scene for them or some Galilean houses had tiled roofs, the point is the same.",
+      "parallels": [
+        "Mark 2:3-4",
+        "Matthew 9:2"
+      ],
+      "refs": [
+        "Luke 5:12",
+        "Luke 7:9",
+        "Luke 18:39"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Jesus sees their faith and pronounces forgiveness, not healing. The man's first need, in Jesus' eyes, is not the one his friends brought him for.",
+      "grammar": "Idōn tēn pistin autōn, ‘seeing their faith’: the plural includes the friends, and faith is visible in action. Anthrōpe (‘Man’, which the BSB renders ‘Friend’) is a plain address; Mark has teknon, ‘child’. Apheōntai is an unusual perfect passive form of aphiēmi (found also in 7:47-48 and 1 John 2:12): ‘your sins have been forgiven and stand forgiven’. The passive leaves the forgiver unnamed, which is the question verse 21 raises.",
+      "words": [
+        "G4102G",
+        "G0444",
+        "G0863H",
+        "G0266"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here belongs to a group and shows itself in costly effort. Jesus responds to it on behalf of the man, which shows that the faith of others can bring a person to where grace is given."
+        },
+        {
+          "id": "salvation",
+          "note": "Forgiveness comes before healing. Luke's Jesus treats sin as the deeper paralysis and its remission (aphesis, 4:18) as the heart of salvation (1:77)."
+        }
+      ],
+      "parallels": [
+        "Mark 2:5",
+        "Matthew 9:2"
+      ],
+      "refs": [
+        "Luke 7:48-50",
+        "Luke 1:77",
+        "James 5:15",
+        "Psalm 103:3"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "The scribes and Pharisees reason that only God can forgive sins, so this man must be blaspheming. Their logic is sound; their conclusion depends on who Jesus is.",
+      "grammar": "Ērxanto dialogizesthai, ‘they began to reason’, uses a verb Luke often applies to inward, doubting deliberation (1:29, 3:15, 12:17). Blasphēmias, ‘blasphemies’, is plural. Ei mē monos ho theos, ‘except God alone’, recalls the Shema (‘the LORD is one’) in its insistence on God's uniqueness.",
+      "words": [
+        "G1260",
+        "G1122",
+        "G5330",
+        "G2980",
+        "G0988",
+        "G0863H",
+        "G3441",
+        "G2316"
+      ],
+      "history": "The Mishnah defines blasphemy narrowly as pronouncing the divine Name (m. Sanhedrin 7:5), but the Gospels reflect a wider sense of insulting or usurping God's prerogatives. Israel's Scriptures reserve forgiveness to God (Exodus 34:6-7; Isaiah 43:25; Psalm 130:4). A fragment from Qumran, the Prayer of Nabonidus (4Q242), speaks of a Jewish diviner who ‘forgave’ the Babylonian king's sin, but the reading and meaning of the line are disputed, and it offers no real precedent for a man declaring sins forgiven on his own authority.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The objection states the premise that the rest of the scene answers: only God can forgive sins. Jesus does not deny it; he forgives. Luke lets the reader draw the conclusion the critics would not."
+        }
+      ],
+      "parallels": [
+        "Mark 2:6-7",
+        "Matthew 9:3"
+      ],
+      "refs": [
+        "Isaiah 43:25",
+        "Exodus 34:6-7",
+        "Psalm 130:4",
+        "Luke 7:49",
+        "Leviticus 24:16"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus reads their thoughts and poses a riddle: which is easier to say? Forgiveness is easy to claim because it cannot be checked; healing can be checked on the spot.",
+      "grammar": "Epignous, ‘perceiving fully’, uses the compound epiginōskō: Jesus knows their thoughts, fulfilling Simeon's word that through him the thoughts of many hearts would be revealed (2:35, where dialogismoi, ‘thoughts’, is the same noun as here). Eukopōteron, ‘easier’, is a comparative from eu (‘well’) and kopos (‘labor’): less toilsome. Egeire kai peripatei are present imperatives, ‘get up and walk’, commands that begin a continuing action.",
+      "words": [
+        "G1921",
+        "G1261",
+        "G1260",
+        "G2588",
+        "G2123",
+        "G0863H",
+        "G1453",
+        "G4043"
+      ],
+      "parallels": [
+        "Mark 2:8-9",
+        "Matthew 9:4-5"
+      ],
+      "refs": [
+        "Luke 2:35",
+        "Luke 6:8",
+        "Luke 9:47",
+        "John 2:25"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Jesus heals the man to prove what cannot be seen by what can. He calls himself the Son of Man for the first time in Luke and claims authority on earth to forgive sins.",
+      "grammar": "The sentence breaks off: ‘so that you may know that the Son of Man has authority ... ’, then a narrative aside, ‘He said to the paralytic’, then the command. This same broken construction (anacoluthon) appears in Mark 2:10 and Matthew 9:6, one of the clearest signs that the Synoptic Gospels are literarily related. Ho huios tou anthrōpou, ‘the Son of Man’, is Jesus' preferred self-designation, almost never used of him by others. Exousian echei epi tēs gēs, ‘has authority on earth’, locates on earth an authority normally exercised in heaven.",
+      "words": [
+        "G2443",
+        "G6063",
+        "G5207",
+        "G0444",
+        "G1849",
+        "G1093G",
+        "G0863H",
+        "G3886",
+        "G1453",
+        "G2826"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's vision, ‘one like a son of man’ comes with the clouds to the Ancient of Days and is given dominion, glory, and a kingdom; the Septuagint says ‘authority (exousia) was given to him’. The phrase ‘son of man’ can mean simply ‘a human being’ (Psalm 8:4; Ezekiel's title throughout his book), and scholars debate how much of Daniel is heard in each Gospel use. Here the pairing of ‘Son of Man’ with ‘authority’ points toward Daniel's figure, now acting on earth."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Son of Man exercises a divine prerogative. The healing is offered as evidence that his claim to forgive is not empty words."
+        },
+        {
+          "id": "atonement",
+          "note": "Jesus forgives before the cross, on his own authority. Luke will show that the same Son of Man must suffer (9:22) and that forgiveness is preached in his name because he suffered and rose (24:46-47): the authority and the atonement belong together."
+        }
+      ],
+      "parallels": [
+        "Mark 2:10-11",
+        "Matthew 9:6"
+      ],
+      "refs": [
+        "Luke 9:22",
+        "Luke 24:46-47",
+        "Luke 22:69",
+        "Psalm 8:4",
+        "John 5:27"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "The man obeys at once, carries home what had carried him, and glorifies God, and the whole crowd is seized with amazement and awe.",
+      "grammar": "Parachrēma, ‘immediately’, is a favorite Lukan adverb (ten of its eighteen New Testament uses are in Luke's Gospel). Doxazōn ton theon, ‘glorifying God’, is the fitting response Luke repeatedly records (2:20, 7:16, 13:13, 17:15, 18:43). Ekstasis, ‘ecstasy, astonishment’, literally ‘standing outside oneself’. Paradoxa, ‘things beyond expectation’, occurs only here in the New Testament and gave English the word ‘paradox’. Sēmeron, ‘today’, recalls 4:21.",
+      "words": [
+        "G3916",
+        "G0450",
+        "G2621",
+        "G1392",
+        "G1611",
+        "G5401",
+        "G3861",
+        "G4594"
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The healed man and the crowd give glory to God, not merely to Jesus. Luke presents Jesus' works as acts of God that rightly end in praise of God."
+        }
+      ],
+      "parallels": [
+        "Mark 2:12",
+        "Matthew 9:7-8"
+      ],
+      "refs": [
+        "Luke 2:20",
+        "Luke 7:16",
+        "Luke 13:13",
+        "Luke 18:43",
+        "Luke 4:21"
+      ]
+    },
+    {
+      "v": "27-28",
+      "context": "Jesus calls a tax collector named Levi from his booth, and Levi leaves everything and follows. The call of a fisherman in verses 1-11 is now matched by the call of a man whom many considered a collaborator and a sinner.",
+      "grammar": "Etheasato, ‘he looked attentively at’, is stronger than ‘saw’. Akolouthei moi is a present imperative, ‘keep following me’. In verse 28 katalipōn panta, ‘having left everything’, is an aorist participle of a decisive act, and ēkolouthei autō, in the best manuscripts, is an imperfect: ‘he began to follow him’ and kept on doing so.",
+      "words": [
+        "G2300",
+        "G5057",
+        "G3017I",
+        "G5058",
+        "G0190",
+        "G2641",
+        "G3956",
+        "G0450"
+      ],
+      "history": "Galilee under Herod Antipas levied tolls on goods moving along roads and across borders, and the right to collect them was farmed out to contractors who hired local collectors. Capernaum lay near the boundary with Philip's territory, a natural place for a toll booth. Collectors were widely despised for handling Gentile money and for extortion; the Mishnah treats a house entered by tax collectors as unclean (m. Tohorot 7:6) and permits making false vows to evade murderers, robbers, and tax collectors (m. Nedarim 3:4). Mark 2:14 calls him ‘Levi son of Alphaeus’; Matthew 9:9 names the same man Matthew. Luke lists Matthew among the Twelve (6:15) without identifying him with Levi.",
+      "parallels": [
+        "Mark 2:13-14",
+        "Matthew 9:9"
+      ],
+      "refs": [
+        "Luke 3:12-13",
+        "Luke 19:2-8",
+        "Luke 5:11",
+        "Luke 18:22"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "Levi throws a great banquet for Jesus, and his world comes: a crowd of tax collectors and others. The new disciple's first act is to introduce his friends to Jesus.",
+      "grammar": "Dochēn megalēn, ‘a great reception’, is a formal banquet word (dochē, from dechomai, ‘to receive’), used again in 14:13. Katakeimenoi, ‘reclining’, describes the Greco-Roman banquet posture on couches, which Jews of the period also used at festive meals. Luke writes that the others were reclining ‘with them’, softening Mark's blunter ‘tax collectors and sinners’.",
+      "words": [
+        "G4160G",
+        "G1403",
+        "G3173",
+        "G3017I",
+        "G3614G",
+        "G3793",
+        "G5057",
+        "G2621"
+      ],
+      "history": "Shared meals in the ancient Mediterranean expressed acceptance and belonging, and the guest list said who counted. Pharisaic concern for purity and tithes made eating with those who were careless of them a serious matter, since their food might not have been tithed or kept clean.",
+      "refs": [
+        "Luke 14:13",
+        "Luke 15:1-2",
+        "Luke 19:5-7",
+        "Luke 7:34"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "The Pharisees and their scribes complain, not to Jesus but to his disciples, about eating and drinking with tax collectors and sinners. The first complaint about Jesus' table company begins a theme that runs through Luke (7:34, 15:2, 19:7).",
+      "grammar": "Egonguzon, ‘they were grumbling’, is the verb of Israel's murmuring in the wilderness in the Septuagint (Exodus 16:7-8; Numbers 14:27), a pointed echo: the complainers take the part of the rebellious generation. Hoi grammateis autōn, ‘their scribes’, means scribes who belonged to the Pharisaic party. Luke's question is addressed to the disciples in the plural (‘why do you eat’), where Mark asks why Jesus eats.",
+      "words": [
+        "G1111",
+        "G5330",
+        "G1122",
+        "G3101",
+        "G5057",
+        "G0268",
+        "G2068",
+        "G4095"
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 16:7-8",
+          "note": "Moses tells Israel, grumbling for food in the wilderness, that their murmurings are not against Moses and Aaron but against the LORD. The Septuagint's gonguzō and diagonguzō are Luke's verbs here and in 15:2 and 19:7. The echo casts the critics of Jesus' table as the complainers of the wilderness."
+        }
+      ],
+      "parallels": [
+        "Mark 2:16",
+        "Matthew 9:11"
+      ],
+      "refs": [
+        "Luke 15:2",
+        "Luke 19:7",
+        "Luke 7:34",
+        "Numbers 14:27"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus answers with a proverb about doctors and a statement of purpose. He came to call sinners to repentance. Luke alone adds the last words, which make clear that the call is not an acceptance of sin but an invitation out of it.",
+      "grammar": "Hoi hugiainontes, ‘those who are healthy’, and hoi kakōs echontes, ‘those who are sick’ (literally ‘having it badly’), set up the analogy. Elēlutha, a perfect, ‘I have come’, states the purpose of his coming as a standing fact (compare 19:10). Eis metanoian, ‘to repentance’, is found in Luke but not in Mark 2:17 or Matthew 9:13 (later manuscripts add it there from Luke). Whether ‘the righteous’ is ironic (those who think themselves righteous, 18:9) or a real category (15:7) is debated; either way the call is addressed to those who know they need it.",
+      "words": [
+        "G5532",
+        "G5198",
+        "G2395",
+        "G2560",
+        "G2064",
+        "G2564G",
+        "G1342",
+        "G0268",
+        "G3341"
+      ],
+      "history": "Diogenes Laertius (Lives of the Philosophers 6.6) attributes to the Cynic Antisthenes a similar reply when he was criticized for keeping bad company: physicians spend their time among the sick without catching fever. The image was common coin; Jesus applies it to his mission to sinners.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Luke's Jesus welcomes sinners and calls them to repentance in one act. Table fellowship is the setting of the call, not its replacement."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation is described as healing. The physician goes to the sick because they need him, and the only people beyond his help are those who deny they are ill."
+        }
+      ],
+      "parallels": [
+        "Mark 2:17",
+        "Matthew 9:12-13"
+      ],
+      "refs": [
+        "Luke 19:10",
+        "Luke 15:7",
+        "Luke 18:9-14",
+        "1 Timothy 1:15",
+        "Jeremiah 8:22"
+      ]
+    },
+    {
+      "v": "33",
+      "context": "The critics change subject from company to piety: John's disciples and the Pharisees fast often and pray, but Jesus' disciples eat and drink.",
+      "grammar": "Nēsteuousin pukna, ‘they fast often’, and deēseis poiountai, ‘they make prayers’: Luke adds prayers to Mark's fasting, matching his interest in prayer and the later note that John taught his disciples to pray (11:1). Esthiousin kai pinousin, ‘they eat and drink’, repeats the words of verse 30, tying the two complaints together.",
+      "words": [
+        "G3101",
+        "G2491G",
+        "G3522",
+        "G4437",
+        "G1162",
+        "G5330",
+        "G2068",
+        "G4095"
+      ],
+      "history": "The Law commands only one fast, on the Day of Atonement (Leviticus 16:29-31, where ‘afflict yourselves’ was understood as fasting). After the exile further fasts marked the fall of Jerusalem (Zechariah 8:19). Pious individuals fasted more: the Pharisee in 18:12 fasts twice a week, and the Didache (8:1), an early Christian manual of about AD 100, tells believers not to fast with the ‘hypocrites’ on Mondays and Thursdays but on Wednesdays and Fridays.",
+      "parallels": [
+        "Mark 2:18",
+        "Matthew 9:14"
+      ],
+      "refs": [
+        "Luke 18:12",
+        "Luke 11:1",
+        "Luke 7:33-34",
+        "Zechariah 8:19",
+        "Leviticus 16:29"
+      ]
+    },
+    {
+      "v": "34-35",
+      "context": "Jesus answers with the image of a wedding. His presence is a time of celebration, as absurd for fasting as a wedding feast, but a day is coming when the bridegroom will be taken away, and then his disciples will fast.",
+      "grammar": "Mē dunasthe ... poiēsai nēsteusai, ‘you cannot make them fast, can you?’, uses mē to expect a ‘no’. Huious tou numphōnos, ‘sons of the bridal chamber’, is a Semitic idiom for the bridegroom's attendants or wedding guests. Eleusontai de hēmerai, ‘but days will come’, is prophetic language (compare Jeremiah 31:31, Amos 8:11). Hotan aparthē, ‘when he is taken away’, uses an aorist passive subjunctive of apairō, which appears in the New Testament only in this saying and its parallels. The passive and the verb of removal are the first hint in Luke of Jesus' violent death. Some interpreters hear an echo of Isaiah 53:8, where the Septuagint says his life is taken (airetai) from the earth, using the simple verb from the same root; others think the link too slight.",
+      "words": [
+        "G1410",
+        "G5207",
+        "G3567",
+        "G3566",
+        "G3522",
+        "G2250",
+        "G0522"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 62:5",
+          "note": "The prophets describe God's joy over his people as a bridegroom's joy over his bride (Isaiah 62:5; compare Hosea 2:19-20). John the Baptist uses the same figure of Jesus in John 3:29. By calling himself the bridegroom, Jesus takes a role Israel's Scriptures reserve for God, and he makes his presence the reason for joy."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The bridegroom will be ‘taken away’. In a scene about feasting, Jesus quietly announces that his presence will end in violent removal, the first shadow of the cross in Luke."
+        }
+      ],
+      "parallels": [
+        "Mark 2:19-20",
+        "Matthew 9:15"
+      ],
+      "refs": [
+        "John 3:29",
+        "Hosea 2:19-20",
+        "Isaiah 53:8",
+        "Acts 13:2-3",
+        "Revelation 19:7"
+      ]
+    },
+    {
+      "v": "36",
+      "context": "Luke calls the sayings that follow a parable. The patch image makes the point that the new cannot simply be sewn onto the old without damaging both.",
+      "grammar": "Luke's version differs from Mark's. In Mark 2:21 an unshrunk patch sewn on an old garment pulls away and makes the tear worse. In Luke, someone tears a piece from a new garment (schisas, ‘having torn’) to patch an old one, so the new is ruined (to kainon schisei, ‘he will tear the new’) and the patch ‘will not match’ the old (ou sumphōnēsei, the verb behind ‘symphony’). Ei de mē ge, ‘otherwise’, is a compact idiom. Kainos, ‘new’, is used for the garment and neos for the wine in verse 37.",
+      "words": [
+        "G3850",
+        "G1915",
+        "G2440",
+        "G2537",
+        "G4977",
+        "G1911",
+        "G3820",
+        "G1065",
+        "G4856"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The new thing Jesus brings cannot be treated as a patch on the old order. Luke's Last Supper names it the new covenant in Jesus' blood (22:20), and the patch parable prepares for that newness without despising the old garment."
+        }
+      ],
+      "parallels": [
+        "Mark 2:21",
+        "Matthew 9:16"
+      ],
+      "refs": [
+        "Luke 22:20",
+        "Jeremiah 31:31",
+        "2 Corinthians 5:17",
+        "Hebrews 8:13"
+      ]
+    },
+    {
+      "v": "37-38",
+      "context": "The second image is wine and wineskins. New wine, still fermenting, will burst old, stiff skins, and both are lost; new wine requires new skins.",
+      "grammar": "Rhēxei, ‘it will burst’, and ekchuthēsetai, ‘it will be spilled’, are futures describing sure results. In verse 38 blēteon, ‘must be put’, is a verbal adjective in -teon, expressing necessity; it is the only such form in the New Testament, a mark of Luke's more literary Greek. Neos (‘new, young’) describes wine not yet aged; kainos (‘new, fresh’) describes the skins.",
+      "words": [
+        "G3631",
+        "G3501",
+        "G0779",
+        "G3820",
+        "G4486",
+        "G1632",
+        "G0622",
+        "G2537",
+        "G0992"
+      ],
+      "text": "The Byzantine text and the King James Version add ‘and both are preserved’ at the end of verse 38, taken from Matthew 9:17. The earliest manuscripts of Luke lack it.",
+      "history": "Wineskins were made from whole goat or sheep hides, sewn and sealed. As new wine fermented it released gas and stretched the skin; an old skin that had already been stretched and dried out could not give further and would split.",
+      "parallels": [
+        "Mark 2:22",
+        "Matthew 9:17"
+      ],
+      "refs": [
+        "Job 32:19",
+        "Joshua 9:13",
+        "Psalm 119:83"
+      ]
+    },
+    {
+      "v": "39",
+      "context": "Luke alone adds a closing remark: people who have drunk the old wine do not want the new, because they say the old is good. It explains the resistance just described with a wry observation about taste.",
+      "grammar": "Palaios chrēstos estin, ‘the old is good’, is the reading of the earliest manuscripts, among them Codex Sinaiticus and Codex Vaticanus. The Byzantine text reads the comparative chrēstoteros, ‘better’, which the BSB and King James Version translate. The positive ‘good’ is the harder and likely original reading: the drinker is so content with the old that he does not even consider comparing. Thelei, a present, ‘wants’, describes a settled preference.",
+      "words": [
+        "G4095",
+        "G3820",
+        "G2309",
+        "G3501",
+        "G5543"
+      ],
+      "text": "Codex Bezae and several Old Latin manuscripts omit verse 39 entirely, perhaps because it seemed to praise the old against Jesus' new wine. On chrēstos versus chrēstoteros, see the grammar note.",
+      "history": "Ancient taste generally preferred aged wine. Ben Sira, writing in the early second century BC, compares a new friend to new wine that one drinks with pleasure only when it has aged (Sirach 9:10).",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The saying names the difficulty of turning: comfort with the familiar keeps people from tasting what is new. It explains why religious people can resist the very renewal their Scriptures promised."
+        }
+      ],
+      "refs": [
+        "Luke 7:30-35",
+        "John 2:10",
+        "Acts 13:45-46"
+      ]
+    }
+  ]
+}

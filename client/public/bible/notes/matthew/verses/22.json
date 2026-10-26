@@ -1,0 +1,441 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Jesus is still answering the chief priests and Pharisees who understood that the parable of the tenants was about them (21:45-46). This third parable in the series is the fullest: a king gives a wedding feast for his son. The phrase “the kingdom of heaven is like” marks it as a kingdom parable, and the son at the center tells the reader, after 21:37-38, who the feast is for.",
+      "grammar": "Apokritheis, ‘answering’, opens the verse although no one has asked a question; the parable answers the leaders' hostile intent in 21:45-46. Hōmoiōthē, ‘has been made like’ or ‘may be compared’, is an aorist passive. Matthew introduces some parables with this aorist (13:24, 18:23) and others with the future homoiōthēsetai (7:24, 25:1). D. A. Carson (New Testament Studies, 1985) argued that the aorist marks parables describing the kingdom already at work in the present age, while the future looks to the consummation; others think the tenses are simply stylistic variants. The odd phrase anthrōpō basilei, literally ‘to a man, a king’, is a Semitic way of saying ‘a human king’. Gamous, ‘wedding feast’, is plural, as often for the celebration that lasted several days.",
+      "words": ["G0611", "G3666", "G0444", "G0935", "G1062", "G5207"],
+      "history": "Rabbinic literature is full of king parables. A common opening in the midrashim is ‘a parable: to what may the matter be compared? To a king of flesh and blood who...’, and the king in such stories usually stands for God. Jesus' hearers would recognize the form at once, and Matthew's version, with a king rather than Luke's private host (Luke 14:16), stands closer to it.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is pictured not as a territory or a program but as a feast a father gives in honor of his son. To be in the kingdom is to share the king's joy in the son, which is why the refusal that follows is so serious."
+        }
+      ],
+      "parallels": ["Luke 14:15-16"],
+      "refs": ["Isaiah 25:6-8", "Matthew 9:15", "Matthew 21:37-38", "Revelation 19:7-9"]
+    },
+    {
+      "v": "3",
+      "context": "The first sending. The guests had already been invited; now, as custom required, the servants summon them when the feast is ready. They simply will not come.",
+      "grammar": "Kalesai tous keklēmenous, ‘to call those who had been called’, plays on one verb. The perfect participle keklēmenous describes guests who stand under an invitation already given, so the servants bring the second, final summons. The refusal is stated with an imperfect, ouk ēthelon elthein, ‘they were not willing to come’, a settled unwillingness rather than a single excuse. The same verb for willing returns at the end of the next chapter, where Jesus says of Jerusalem, ēthelēsa ... kai ouk ēthelēsate, ‘I longed ... but you were unwilling’ (23:37).",
+      "words": ["G0649", "G1401", "G2564G", "G2309", "G2064"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "In Matthew's setting the invited guests stand first for Jerusalem's leaders, who have just rejected John and Jesus (21:23-32, 21:45). The servants sent to them recall the prophets God sent to Israel ‘again and again’ (Jeremiah 7:25). The refusal is the leaders' own, not a verdict on a people, since the first servants and the first guests gathered in (verses 9 and 10) were themselves Jews."
+        }
+      ],
+      "parallels": ["Luke 14:17"],
+      "refs": ["Jeremiah 7:25-26", "Esther 6:14", "Matthew 21:34-36", "Matthew 23:37"]
+    },
+    {
+      "v": "4",
+      "context": "The second sending is more urgent and more generous. The king describes the meal to persuade the guests: the dinner is prepared, the animals slaughtered, everything ready. The patience of the host is the point of the repetition.",
+      "grammar": "Three perfects stress that the work is finished: hētoimaka, ‘I have prepared’, tethumena, ‘have been slaughtered’, and the adjective hetoima, ‘ready’. Idou, ‘look’, draws attention to the preparations. The invitation ends with deute, ‘come’, the same word Jesus used in his own invitation, ‘Come to Me, all you who are weary’ (11:28). Ariston, ‘dinner’, was ordinarily the first main meal of the day, and the sitista, ‘fattened animals’, were the most costly food a host could offer.",
+      "words": ["G2400", "G0712", "G2090", "G5022", "G4619", "G2380", "G2092", "G1205"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Everything is ready before the guests are asked to do anything. The verse pictures salvation as a feast prepared entirely by the host, to which the only fitting response is to come. The refusals that follow are not a failure of provision."
+        }
+      ],
+      "parallels": ["Luke 14:17"],
+      "refs": ["Proverbs 9:1-5", "Isaiah 55:1-3", "Matthew 11:28", "Luke 15:23"]
+    },
+    {
+      "v": "5-6",
+      "context": "Two responses. Some shrug and go back to their fields and their trade. The rest seize the servants, abuse them, and kill them. The parable moves from indifference to violence, the same path the tenants took in 21:35-39.",
+      "grammar": "Amelēsantes, ‘paying no attention’, means to treat something as not worth one's care; Hebrews 2:3 uses the same verb for neglecting a great salvation. The contrast hos men ... hos de, ‘one ... another’, divides the indifferent into a farmer and a merchant, two ordinary lives. Hubrisan, ‘they mistreated’, belongs to the word family of hubris, insolent outrage, the verb Paul uses of his shameful treatment at Philippi (1 Thessalonians 2:2).",
+      "words": ["G0272", "G0068G", "G1711", "G2902", "G5195", "G0615"],
+      "history": "Insulting a king's envoys was an act of war in the ancient world. When the Ammonite king Hanun shaved half the beards of David's messengers and cut their garments, David's army marched against him (2 Samuel 10:1-14). A first hearer would know that a king whose servants had been killed could not let it pass.",
+      "parallels": ["Luke 14:18-20"],
+      "refs": ["2 Samuel 10:1-7", "2 Chronicles 36:15-16", "Matthew 21:35-36", "Hebrews 2:3"]
+    },
+    {
+      "v": "7",
+      "context": "The king's anger brings war: he sends his troops, destroys the murderers, and burns their city. The verse is the story's most striking break with realism, since the wedding meal waits, still ready, while a military campaign is fought (verse 8). It is the point where the allegory presses through the story.",
+      "grammar": "Ōrgisthē, ‘was angry’, is an aorist passive of the verb used of the master in the parable of the unforgiving servant (18:34), another king who stands for God. Pempsas ta strateumata autou, ‘sending his armies’, uses the plural: this is a campaign, not a police action. Apōlesen ... kai ... eneprēsen, ‘he destroyed ... and burned’, are aorists that report the whole operation as done. Emprēthō, ‘to set on fire’, occurs only here in the New Testament. Tous phoneis ekeinous, ‘those murderers’, names the guests by what they did in verse 6.",
+      "words": ["G3710", "G3992", "G4753", "G0622", "G5406", "G4172", "G1714"],
+      "history": "Two readings of the verse are held. Many scholars, including W. D. Davies and Dale Allison and Ulrich Luz, see a reference to AD 70, when the soldiers of Titus burned the temple and then the lower city (Josephus, Jewish War 6.249-266, 6.353-355); on this view Matthew wrote after the event and let it shape the parable, and the verse is a main support for dating the Gospel after 70. Others, following Karl Heinrich Rengstorf's 1960 essay, observe that sending troops to destroy rebels and burn their city was stock language for a king's punitive expedition in the Old Testament and the ancient Near East (Judges 1:8, 2 Kings 25:9), so the verse does not require knowledge of 70. John A. T. Robinson (Redating the New Testament, 1976), who dated all the Gospels before the war, drew on this argument. On either reading, a reader after 70 would think of Jerusalem.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The prophets had called foreign armies God's instruments against his own unfaithful city (Isaiah 10:5-6, Jeremiah 25:9), and the verse speaks in that tradition: the armies are ‘his’. Judgment falls on the murderers, the leaders who reject God's messengers, and it does not license treating Jerusalem's suffering as a verdict on the Jewish people, a use the church has repudiated (Nostra Aetate, 1965)."
+        }
+      ],
+      "refs": ["Matthew 21:41", "Isaiah 10:5-6", "Jeremiah 25:9", "Luke 19:43-44", "Matthew 24:2"]
+    },
+    {
+      "v": "8-9",
+      "context": "The feast is still ready, but the invited have shown themselves unworthy. The king sends his servants to the places where city streets run out into the country roads, to invite anyone they find. The guest list is replaced, not the feast.",
+      "grammar": "Ho men gamos hetoimos estin, hoi de keklēmenoi ouk ēsan axioi, ‘the feast is ready, but those invited were not worthy’, is a balanced men ... de contrast. Axios, ‘worthy’, is the word of Jesus' mission instructions, where the disciples look for a worthy house (10:11-13); worthiness here is shown by response, not status. Diexodous tōn hodōn, ‘the outlets of the roads’, names the edge of town where roads leave the city, and hosous ean heurēte, ‘as many as you find’, sets no limit on the guests. Poreuesthe oun, ‘go therefore’, anticipates the risen Jesus' poreuthentes oun, ‘go therefore’, in 28:19.",
+      "words": ["G5119", "G2092", "G0514", "G4198", "G1327", "G3598", "G2147"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The refusal of the first guests becomes the occasion for a wider invitation. Matthew's readers would see the pattern of the church's mission, which went from Jerusalem to the nations (28:19, Acts 13:46), and the verse makes the scope of the invitation as wide as the roads."
+        }
+      ],
+      "parallels": ["Luke 14:21-23"],
+      "refs": ["Matthew 10:11-13", "Matthew 28:19", "Acts 13:46", "Luke 14:21-23"]
+    },
+    {
+      "v": "10",
+      "context": "The servants gather everyone, ‘both evil and good’, and the hall is full. The first half of the parable ends in success: the king's son has his guests. The mixed company prepares for the inspection that follows.",
+      "grammar": "Sunēgagon pantas hous heuron, ‘they gathered all whom they found’, repeats the language of verse 9 and uses the verb of gathering that Matthew uses for the harvest and the net (13:30, 13:47). Ponērous te kai agathous, ‘both evil and good’, puts the evil first, a surprising order that makes the point that no one was screened at the door. Eplēsthē ... anakeimenōn, ‘was filled with those reclining’, reminds the reader that guests reclined on couches at a formal meal.",
+      "words": ["G4863", "G2147", "G4190", "G0018", "G4130", "G0345"],
+      "text": "Where most manuscripts read gamos, ‘wedding’, Codex Sinaiticus, the first hand of Codex Vaticanus, and a few others read numphōn, ‘wedding hall’, the word Matthew used for the ‘sons of the bridechamber’ in 9:15. Editors divide, and English versions render either reading as ‘wedding hall’.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The gathered company is mixed until the king examines it, as the field has wheat and weeds and the net good and bad fish until the end of the age (13:30, 13:47-50). The church is not a society of the already good; it is filled from the roads, and the sorting belongs to the king."
+        }
+      ],
+      "refs": ["Matthew 13:30", "Matthew 13:47-50", "Matthew 9:15", "1 Corinthians 1:26-29"]
+    },
+    {
+      "v": "11-12",
+      "context": "The scene changes. The king enters to see the guests and notices one man without wedding clothes. He addresses him courteously and asks how he came in so dressed. The man says nothing. The warning now turns from those who refused to come to those who came.",
+      "grammar": "Theasasthai, ‘to look at’ or ‘to view’, is the verb for seeing something with attention, and here it has the sense of an inspection. Ouk endedumenon enduma gamou, ‘not clothed with wedding clothing’, uses a cognate pair (enduō and enduma) and a perfect participle for a state: he was not dressed for the occasion. Hetaire, ‘friend’ or ‘comrade’, is an address only Matthew uses, and always with an edge: to the grumbling laborer (20:13) and to Judas in Gethsemane (26:50). Pōs, ‘how’, asks for an explanation, and ephimōthē, ‘he was muzzled’, a vivid passive, says he had none; the same verb is used when Jesus silences the Sadducees in verse 34.",
+      "words": ["G1525", "G0935", "G2300", "G0345", "G1746", "G1742", "G2083", "G4459", "G5392"],
+      "history": "Guests were expected to come washed and in clean or festive clothing. The closest Jewish parallel is the parable ascribed to Yohanan ben Zakkai (b. Shabbat 153a), in which the servants who dressed and waited were seated and those who came in soiled work clothes had to stand and watch. The idea that hosts supplied garments rests on 2 Kings 10:22 and is not attested for weddings. Old Testament images of clothing stand nearby: the high priest Joshua's filthy garments replaced with clean ones (Zechariah 3:3-5) and the garments of salvation in Isaiah 61:10.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The garment has been read as works of righteousness (Irenaeus), as charity (Augustine, Gregory the Great), as the righteousness of Christ given to the believer, and as the fruit of repentance. Calvin refused to separate faith from a holy life here. What the story itself requires is that the one who accepts the king's invitation comes changed by it, and the man's silence shows he knew it. Revelation 19:8 describes the bride's fine linen as the righteous acts of the saints, given to her to wear."
+        }
+      ],
+      "refs": ["Zechariah 3:3-5", "Isaiah 61:10", "Revelation 19:7-8", "Galatians 3:27", "Colossians 3:12"]
+    },
+    {
+      "v": "13",
+      "context": "The king orders the man bound and thrown out into the darkness, the place of weeping and gnashing of teeth. The language has left the banquet hall for the last judgment, as Matthew's parables often do at their end.",
+      "grammar": "The king now speaks to diakonoi, ‘attendants’, not to the douloi, ‘servants’, who carried the invitations in verses 3 to 10. Many interpreters see here the angels who carry out the final judgment in Matthew's other parables (13:41-42, 13:49-50). Dēsantes, ‘binding’, is an aorist participle before the imperative ekbalete, ‘throw out’. To skotos to exōteron, ‘the darkness outside’, uses a comparative adjective, ‘the outer’, in contrast to the lighted hall, and Matthew's refrain ho klauthmos kai ho brugmos tōn odontōn, ‘the weeping and the gnashing of teeth’, has the article, marking a known place.",
+      "words": ["G1249", "G1210", "G1544", "G4655", "G1857", "G2805", "G1030"],
+      "text": "The King James Version reads ‘Bind him hand and foot, and take him away, and cast him into outer darkness’. The words ‘take him away’ come from later manuscripts; the earliest have only binding and casting out.",
+      "theology": [
+        {
+          "id": "hell",
+          "note": "The outer darkness is Matthew's picture of exclusion from the kingdom's feast (8:11-12, 25:30). The verse warns that final loss can fall on one who was inside the hall, not only on those who never came. Christians have read the image as literal darkness, as the loss of God's presence, or both; the text's own stress is exclusion and grief."
+        }
+      ],
+      "refs": ["Matthew 8:11-12", "Matthew 13:41-42", "Matthew 25:30", "Jude 1:13"]
+    },
+    {
+      "v": "14",
+      "context": "The parable ends with a proverb that explains both halves of the story: many were invited, first the refusing guests and then the crowd from the roads, but only those found fit for the feast are chosen. The saying looks back to the whole parable.",
+      "grammar": "Gar, ‘for’, makes the saying the reason behind the story. Klētoi and eklektoi, ‘called’ and ‘chosen’, are verbal adjectives from kaleō and eklegomai, the same roots as the calling verbs of verses 3 to 9. Polloi ... oligoi de, ‘many ... but few’, is a sharp contrast. Some interpreters, noting that ‘many’ in Semitic speech can include everyone (as in Isaiah 53:11-12), read the saying as contrasting all who are invited with the smaller number who stand at the end; others take the words in their plain comparative sense. The saying makes no count; it warns against presuming on an invitation.",
+      "words": ["G4183", "G2822", "G3641", "G1588"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Reformed interpreters read the chosen as those God has elected, whose election shows in their response; Arminian, Wesleyan, and many Catholic and Orthodox readers take ‘chosen’ as those who accept the call and are found fit. Revelation 17:14 joins the three words ‘called and chosen and faithful’. Both readings agree that the verse is aimed at those already in the hall, who must not treat the invitation as a guarantee while ignoring what it asks."
+        }
+      ],
+      "refs": ["Matthew 7:13-14", "Matthew 20:16", "2 Peter 1:10", "Revelation 17:14"]
+    },
+    {
+      "v": "15",
+      "context": "The Pharisees withdraw to plan a trap. Having lost the exchange of parables, they will try to catch Jesus in his own words. The verse opens a series of three test questions that runs to verse 40.",
+      "grammar": "Sumboulion elabon, ‘they took counsel’, is a phrase Matthew uses five times for plotting against Jesus (12:14, 22:15, 27:1, 27:7, 28:12); it resembles the Latin consilium capere and may be a Latinism. Pagideusōsin, ‘they might trap’, from pagis, ‘snare’, is a hunter's word found only here in the New Testament; Mark uses a different hunting verb, agreuō (Mark 12:13). En logō, ‘in a word’ or ‘in his talk’, names the snare: something he might say.",
+      "words": ["G5119", "G5330", "G4824", "G2983", "G3802", "G3056"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The opponents treat truth as a trap to be set. Jesus' answers in the following scenes show the wisdom of one who cannot be caught because he is not trying to protect himself, only to speak what is true about God."
+        }
+      ],
+      "parallels": ["Mark 12:13", "Luke 20:20"],
+      "refs": ["Matthew 12:14", "Matthew 27:1", "Psalm 64:5-6", "Jeremiah 5:26"]
+    },
+    {
+      "v": "16",
+      "context": "The Pharisees send their students with the Herodians, supporters of the Herod family, a pairing of groups who agreed on little. Their compliment is designed to make evasion impossible: a teacher who fears no one must answer plainly.",
+      "grammar": "Oidamen hoti alēthēs ei, ‘we know that you are true’, and tēn hodon tou theou en alētheia didaskeis, ‘you teach the way of God in truth’, both turn on truth. Ou melei soi peri oudenos, ‘it is not a concern to you about anyone’, means he is not swayed by anyone's standing, and ou gar blepeis eis prosōpon anthrōpōn, ‘for you do not look at the face of men’, is the Old Testament idiom for partiality (Leviticus 19:15). Every word is true, which is what makes the flattery a trap.",
+      "words": ["G0649", "G3101", "G2265", "G1320", "G6063", "G0227", "G3598", "G0225", "G3199", "G0991", "G4383"],
+      "history": "The Herodians appear by that name only in Mark and Matthew (Mark 3:6, 12:13), and scholars understand them as partisans of the Herodian dynasty, whose rule depended on Rome. Herod Antipas governed Galilee and Perea at this time, while Judea had been under Roman prefects since AD 6. The Pharisees, many of whom resented foreign rule, and the Herodians, who profited from it, would have given opposite answers to the question they now ask together.",
+      "parallels": ["Mark 12:14", "Luke 20:21"],
+      "refs": ["Mark 3:6", "Leviticus 19:15", "Deuteronomy 10:17", "Acts 10:34"]
+    },
+    {
+      "v": "17",
+      "context": "The question itself: is it lawful to pay the census tax to Caesar or not? A yes would lose the crowd that resented Rome; a no could be reported to the governor as sedition.",
+      "grammar": "Ti soi dokei, ‘what does it seem to you’, is Matthew's formula for asking an opinion, which Jesus himself uses in verse 42. Exestin, ‘is it permitted’, is the language of legal debate about the Torah (12:2, 19:3), so the question is framed as a matter of God's law, not of prudence. Dounai kēnson, ‘to give the census tax’, uses the Latin loanword census, and the closing ē ou, ‘or not’, demands a yes or no.",
+      "words": ["G2036", "G1380", "G1832", "G1325", "G2778", "G2541J"],
+      "history": "The kēnsos was the head tax levied on the province of Judea after the census of Quirinius in AD 6, the census Judas the Galilean resisted, teaching that paying tribute meant accepting mortal masters in place of God (Josephus, Jewish War 2.118; Antiquities 18.1-10; Acts 5:37). Galilee, under Antipas, paid its taxes to him, so the tax had its sharpest edge in Jerusalem.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "The question assumes that God's law speaks to political duty, and Jesus' answer will agree. The verse gives no support to the idea that obedience to rulers is a neutral matter outside God's claim."
+        }
+      ],
+      "parallels": ["Mark 12:14", "Luke 20:22"],
+      "refs": ["Acts 5:37", "Luke 2:1-2", "Matthew 17:24-27", "Luke 23:2"]
+    },
+    {
+      "v": "18-19",
+      "context": "Jesus sees the malice behind the question, names his questioners hypocrites, and asks to see the coin used for the tax. They bring him a denarius. By producing it, they show that they already use Caesar's money.",
+      "grammar": "Gnous tēn ponērian autōn, ‘knowing their wickedness’: Mark has ‘hypocrisy’ and Luke ‘craftiness’; Matthew names the evil intent and then adds the vocative hupokritai, ‘hypocrites’, which Mark lacks. Ti me peirazete, ‘why are you testing me’, uses the verb of the devil's temptations in the wilderness (4:1-3). Epideixate moi to nomisma tou kēnsou, ‘show me the coin of the tax’, is Matthew's precise phrase; nomisma, ‘legal coin’, occurs only here in the New Testament.",
+      "words": ["G1097", "G4189", "G3985H", "G5273", "G1925", "G3546", "G2778", "G1220"],
+      "history": "The denarius was the Roman silver coin, about a laborer's daily wage (20:2). The coin usually identified as the one in this scene is the denarius of Tiberius, with his laureate head and the legend calling him son of the divine Augustus; the identification is traditional and likely, though denarii of earlier emperors also circulated. The prefects' own bronze coins for Judea carried no portrait, in deference to Jewish scruples about images, so the questioners could have avoided carrying such a coin into the temple courts.",
+      "parallels": ["Mark 12:15", "Luke 20:23-24"],
+      "refs": ["Matthew 20:2", "Exodus 20:4", "Matthew 4:1-3", "Matthew 23:28"]
+    },
+    {
+      "v": "20-21",
+      "context": "Jesus asks whose image and inscription the coin bears, and they answer, Caesar's. His reply escapes the trap and reaches past it: give back to Caesar what belongs to Caesar, and to God what belongs to God. The unspoken question is what bears God's image.",
+      "grammar": "Tinos hē eikōn hautē kai hē epigraphē, ‘whose is this image and the inscription’, uses eikōn, the word of the Greek Genesis for humanity made according to God's image. Apodote oun, ‘therefore give back’, answers the questioners' dounai, ‘give’ (verse 17), with the verb of paying a debt: the coin already belongs to the one whose name it bears. The two halves are balanced in form, ta Kaisaros Kaisari kai ta tou theou tō theō, ‘the things of Caesar to Caesar and the things of God to God’, but not in scope, since Caesar himself belongs to God. Paul uses the same imperative, apodote, when he tells believers to pay taxes to whom taxes are due (Romans 13:7).",
+      "words": ["G5101", "G1504", "G1923", "G2541J", "G0591", "G2316"],
+      "ot": [
+        {
+          "ref": "Genesis 1:26-27",
+          "note": "The Hebrew says God made humankind betsalmenu, ‘in our image’ (tselem), and the Septuagint renders it kat' eikona, ‘according to the image’, with the same noun eikōn that Jesus uses of the coin. Jesus does not quote Genesis, but his hearers knew that the coin's eikōn declared Caesar's ownership, and that the eikōn every person carries declares God's. The allusion is drawn out explicitly by Tertullian (On Idolatry 15)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "state",
+          "note": "Rulers have a real claim, since what belongs to Caesar is to be given back to him, but the claim is bounded by God's prior and total claim. The verse refuses both the Zealot refusal of all tribute and the imperial claim to divine honor that the coin itself made. When the two claims collide, the apostles answer that they must obey God rather than men (Acts 5:29)."
+        },
+        {
+          "id": "image",
+          "note": "What bears God's image belongs to God. The verse implies that the human person, not the coin, is what God claims, so that no ruler may take the whole of a person's loyalty."
+        }
+      ],
+      "parallels": ["Mark 12:16-17", "Luke 20:24-25"],
+      "refs": ["Genesis 1:27", "Romans 13:6-7", "Acts 5:29", "1 Peter 2:17"]
+    },
+    {
+      "v": "22",
+      "context": "The questioners are amazed, leave him, and go away. The trap has failed in public. Their departure closes the first of the three tests.",
+      "grammar": "Ethaumasan, ‘they marveled’, an aorist, records their reaction. Aphentes auton apēlthan, ‘leaving him they went away’, echoes the end of the wilderness temptations, where the devil ‘left Him’ (4:11, aphiēsin auton). The verb of testing in verse 18 and the verb of leaving here frame the scene as another temptation met and ended.",
+      "words": ["G0191", "G2296", "G0863G", "G0565"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Jesus' answer shows a wisdom that exposes the false choice behind a question. His opponents will later report him to Pilate as forbidding the tax (Luke 23:2), which shows how a true answer can still be twisted by those set on accusing."
+        }
+      ],
+      "parallels": ["Mark 12:17", "Luke 20:26"],
+      "refs": ["Matthew 4:11", "Luke 23:2", "Colossians 4:6"]
+    },
+    {
+      "v": "23",
+      "context": "On the same day a second group comes: the Sadducees, identified by their denial of the resurrection. Their question will be doctrinal rather than political, and it is built to make belief in resurrection look absurd.",
+      "grammar": "Saddoukaioi legontes mē einai anastasin, ‘Sadducees saying there is no resurrection’: the infinitive einai with mē reports their claim in indirect speech. Without an article, the participle legontes could mean that they came asserting their view, but English Bibles take it as describing the group, which is what the sentence plainly intends.",
+      "words": ["G2250", "G4334", "G4523", "G3004G", "G1511", "G0386", "G1905"],
+      "text": "Most later manuscripts, followed by the King James Version, read hoi legontes, ‘who say’, with the article. Codex Sinaiticus, Codex Vaticanus, Codex Bezae, and others lack it. Bruce Metzger's Textual Commentary notes that the article could have been lost after the similar ending of Saddoukaioi, but the committee printed the shorter text. The meaning is the same either way.",
+      "history": "The Sadducees are named in Matthew alongside the Pharisees at John's baptism (3:7) and in the demand for a sign (16:1-12), but only here do they question him on their own. Josephus says they held that the soul perishes with the body (Antiquities 18.16), and Acts 4:1-2 shows them annoyed that the apostles proclaimed resurrection in Jesus. They drew their strength from the priestly aristocracy and disappear from the record after AD 70.",
+      "parallels": ["Mark 12:18", "Luke 20:27"],
+      "refs": ["Matthew 3:7", "Matthew 16:1", "Acts 4:1-2", "Acts 23:8"]
+    },
+    {
+      "v": "24",
+      "context": "The Sadducees begin with Moses, whose law they accepted, and summarize the law of levirate marriage: a man whose brother dies childless is to marry the widow and raise up offspring for him. They appeal to the Law to undermine a belief they thought the Law did not teach.",
+      "grammar": "Epigambreusei, ‘he shall marry as brother-in-law’, is a rare verb that the Greek Old Testament uses for the levirate duty in Genesis 38:8; Matthew alone of the Gospels uses it, bringing the wording closer to the Greek Bible. The future indicatives epigambreusei and anastēsei, ‘he shall raise up’, function as commands, in the style of Old Testament law. Anastēsei sperma, ‘raise up seed’, uses anistēmi, the verb from which anastasis, ‘resurrection’, is formed, a play the questioners may have intended.",
+      "words": ["G1320", "G3475", "G0599", "G5043", "G1918", "G0080", "G1135H", "G0450", "G4690G"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 25:5-6",
+          "note": "The Hebrew law of yibbum requires that when brothers live together and one dies without a son, a surviving brother take the widow, and her firstborn carry the dead man's name so that it is not blotted out of Israel. The Sadducees paraphrase rather than quote. Their wording, especially ‘raise up offspring for his brother’, is closer to Judah's command to Onan in Genesis 38:8, which the Septuagint renders with epigambreuson and anastēson sperma. The law's purpose was to keep a man's name alive after death, which is why it served as a test case about life after death."
+        }
+      ],
+      "parallels": ["Mark 12:19", "Luke 20:28"],
+      "refs": ["Deuteronomy 25:5-10", "Genesis 38:8", "Ruth 4:5-10"]
+    },
+    {
+      "v": "25-28",
+      "context": "The case: seven brothers each marry the widow in turn and die childless, and then she dies. In the resurrection, whose wife will she be? The story assumes that if there is a resurrection, the next life must reproduce the arrangements of this one, and so resurrection produces an absurdity.",
+      "grammar": "Ēsan de par' hēmin, ‘now there were among us’, presents the case as if it happened in their own circle, though it is plainly constructed. Matthew abbreviates the middle brothers with homoiōs, ‘likewise’, and heōs tōn hepta, ‘up to the seven’. Husteron de pantōn, ‘last of all’, and the future estai gunē, ‘will she be wife’, project the question into the age to come. The closing pantes gar eschon autēn, ‘for all had her’, states the supposed impossibility.",
+      "words": ["G3844", "G2033", "G0080", "G4413G", "G1060", "G5053", "G0863G", "G1208", "G5154", "G5306", "G0599", "G0386", "G2192"],
+      "history": "Seven brothers recall the martyrs of 2 Maccabees 7, who died under Antiochus IV confessing that God would raise them, and Sarah in Tobit, who lost seven husbands (Tobit 3:8). The Sadducees' premise, that resurrection life must copy this one, was not held by all their opponents: a saying of Rav in the Babylonian Talmud teaches that in the world to come there is no eating, drinking, or procreation, and the righteous sit with crowns on their heads enjoying the radiance of the divine presence (b. Berakhot 17a).",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The riddle only works if resurrection means this life resumed. Jesus will reject that premise, not the resurrection. The case shows how easily the hope of resurrection can be made to look foolish by imagining it too small."
+        }
+      ],
+      "parallels": ["Mark 12:20-23", "Luke 20:29-33"],
+      "refs": ["Deuteronomy 25:5", "Hebrews 11:35", "1 Corinthians 15:35-36"]
+    },
+    {
+      "v": "29-30",
+      "context": "Jesus answers that they are wrong because they know neither the Scriptures nor the power of God. He takes the power first: in the resurrection people do not marry but are like the angels in heaven. The Scriptures follow in verses 31 and 32.",
+      "grammar": "Planasthe, ‘you are deceived’ or ‘you are going astray’, is a present passive: they are being led astray, and the cause follows in the participle mē eidotes, ‘not knowing’. Tas graphas mēde tēn dunamin tou theou, ‘the Scriptures nor the power of God’, sets up the answer in reverse order, the power (verse 30) and then the Scriptures (31 to 32). Oute gamousin oute gamizontai, ‘they neither marry nor are given in marriage’, names the man's and the woman's roles in an ancient wedding. Hōs angeloi, ‘like angels’, is a comparison, not an identity.",
+      "words": ["G4105", "G6063", "G1124", "G1411", "G1060", "G1061", "G0032G", "G3772"],
+      "text": "The King James Version reads ‘as the angels of God in heaven’, following manuscripts that add ‘of God’; the critical editions print ‘like angels in heaven’. Mark's parallel has no ‘of God’ (Mark 12:25), and scribes may have supplied the familiar phrase ‘angels of God’ (Luke 12:8-9, John 1:51). The meaning is unchanged.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection is the work of God's power, a new kind of life and not a return to the old. Marriage, bound up in this age with death and the need for heirs, belongs to the present order; the verse says the raised will be like angels in not marrying, not that they become angels or cease to be human."
+        },
+        {
+          "id": "family",
+          "note": "Jesus places marriage within this age without devaluing it; he has defended it from Genesis (19:4-6). The verse gives no support to the idea that love between spouses is erased, only that the institution with its duties of heirs and inheritance does not continue into a life without death."
+        }
+      ],
+      "parallels": ["Mark 12:24-25", "Luke 20:34-36"],
+      "refs": ["1 Corinthians 15:42-44", "Philippians 3:21", "Matthew 19:4-6", "Acts 23:8"]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus turns to Scripture, and to the Torah the Sadducees held highest. God said to Moses at the bush, ‘I am the God of Abraham, Isaac, and Jacob’, long after they had died. He is not the God of the dead but of the living.",
+      "grammar": "Ouk anegnōte to rhēthen humin hupo tou theou, ‘have you not read what was spoken to you by God’: Matthew's humin, ‘to you’, where Mark has ‘how God spoke to him’ (Mark 12:26), treats the words at the bush as addressed to Jesus' hearers now. The quotation in Matthew has egō eimi, ‘I am’, though the Hebrew has no verb; the argument therefore rests not on a present tense but on the relationship the words name. Ouk estin ho theos nekrōn alla zōntōn, ‘he is not God of dead ones but of living ones’, uses a present participle, zōntōn.",
+      "words": ["G0386", "G3498", "G0314", "G2046", "G2316", "G1473", "G1510", "G0011", "G2464", "G2384H", "G2198"],
+      "ot": [
+        {
+          "ref": "Exodus 3:6",
+          "note": "At the burning bush God says in Hebrew anokhi elohei avikha, elohei avraham, elohei yitschaq velohei ya'aqov, ‘I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob’, and in 3:15 he calls this his name forever. The Hebrew sentence has no verb; the Septuagint supplies eimi, which Matthew keeps. In Exodus the words identify the God who now rescues Israel as the one who bound himself by promise to the fathers. Jesus argues that such a God does not leave his covenant partners in death. The rabbis also argued for resurrection from the Torah (b. Sanhedrin 90b-92a), and 4 Maccabees says that the patriarchs live to God (4 Maccabees 7:19, 16:25)."
+        }
+      ],
+      "text": "The King James Version's ‘God is not the God of the dead’ follows the Textus Receptus, which repeats theos; modern editions read ‘He is not the God of the dead’.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The hope of resurrection rests on the character of God. Interpreters differ on how the argument works, some seeing it prove that the patriarchs live now with God, which requires a future bodily resurrection to complete their life, others seeing a direct argument that covenant love must defeat death. Both ground the hope in God's faithfulness."
+        },
+        {
+          "id": "covenant",
+          "note": "God's name at the bush binds him to particular people. A covenant partner who simply ceased to exist would make God the God of the dead, and Jesus says he is not."
+        }
+      ],
+      "parallels": ["Mark 12:26-27", "Luke 20:37-38"],
+      "refs": ["Exodus 3:6", "Exodus 3:15", "Hebrews 11:13-16", "Romans 4:17"]
+    },
+    {
+      "v": "33-34",
+      "context": "The crowds are astonished at his teaching. The Pharisees hear that he has silenced the Sadducees, their own opponents on this question, and gather again. Their gathering sets up the third test.",
+      "grammar": "Exeplēssonto epi tē didachē autou, ‘they were astonished at his teaching’, an imperfect, repeats the crowd's reaction at the end of the Sermon on the Mount (7:28). Ephimōsen, ‘he silenced’ or ‘muzzled’, is the verb used of the speechless guest in verse 12. Sunēchthēsan epi to auto, ‘they gathered together’, repeats word for word a phrase of the Greek Psalm 2:2, where the rulers gather together against the Lord and his anointed, and Acts 4:26 quotes that psalm of the plot against Jesus.",
+      "words": ["G3793", "G1605", "G1322", "G5330", "G5392", "G4523", "G4863"],
+      "ot": [
+        {
+          "ref": "Psalm 2:2",
+          "note": "The Hebrew says the rulers nosdu yachad, ‘take counsel together’ or ‘gather together’, against the LORD and against his anointed. The Septuagint renders it sunēchthēsan epi to auto, the exact phrase of Matthew 22:34. Matthew does not mark a quotation, but the echo suits his story: the leaders of Israel gather against the Messiah, as the psalm's kings did, and Jesus is about to ask them about the Messiah's identity. The early church read the same psalm of the alliance against Jesus (Acts 4:25-27)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The echo of Psalm 2 places the plotting of Jesus' opponents within the psalm's drama of the nations against the LORD's anointed. The one they test is the anointed king the psalm calls God's Son (Psalm 2:7), the title spoken over Jesus at his baptism (3:17)."
+        }
+      ],
+      "parallels": ["Mark 12:28", "Luke 20:39-40"],
+      "refs": ["Matthew 7:28", "Psalm 2:1-2", "Acts 4:25-27", "Matthew 3:17"]
+    },
+    {
+      "v": "35-36",
+      "context": "One of them, an expert in the law, tests Jesus with a question debated among Jewish teachers: which commandment is great in the Law? In Mark the questioner is sympathetic; in Matthew he comes to test.",
+      "grammar": "Nomikos, ‘lawyer’, means an expert in the Torah, a scribe by another name. Peirazōn, ‘testing’, a present participle, puts him with the tempters of 16:1 and 19:3. Poia entolē megalē, ‘what sort of commandment is great’, uses the positive adjective megalē where English expects a superlative; Hebrew and Aramaic lack a separate superlative form, and Greek influenced by them often uses ‘great’ for ‘greatest’. Poia can ask ‘which’ or ‘what kind’, and some interpreters think the lawyer asks what kind of commandment counts as great.",
+      "words": ["G1520", "G3544", "G3985H", "G1320", "G4169", "G1785", "G3173", "G3551"],
+      "text": "The word nomikos is absent from minuscule 1, the Old Latin manuscript e, the Sinaitic Syriac, the Armenian, and Origen. Since Matthew uses the word nowhere else and Luke uses it often (including Luke 10:25 in a similar scene), some scholars think it was added from Luke; the critical editions keep it on the strength of the rest of the tradition.",
+      "history": "The rabbis distinguished weighty and light commandments. The Mishnah has Rabbi Judah the Prince say that one should be as careful with a light commandment as with a weighty one, since one does not know the reward of each (m. Avot 2:1), and the later tradition of Rabbi Simlai counted 613 commandments and described the prophets summarizing them in fewer and fewer (b. Makkot 23b-24a). The question could be a real one or a trap to make Jesus seem to set aside part of the Law.",
+      "parallels": ["Mark 12:28", "Luke 10:25"],
+      "refs": ["Luke 10:25-28", "Matthew 19:16-19", "Matthew 23:23", "Micah 6:8"]
+    },
+    {
+      "v": "37-38",
+      "context": "Jesus answers with the Shema's command to love the Lord your God with all one's heart, soul, and mind, and calls it the great and first commandment. He does not choose a rule from a list; he names the love that all the rules serve.",
+      "grammar": "Agapēseis, ‘you shall love’, is a future indicative used as a command, the Septuagint's way of rendering the Hebrew. Matthew writes en holē tē kardia, ‘with all the heart’, using en, which corresponds to the Hebrew preposition b- in bekhol, where the Septuagint and Mark have ex holēs, ‘out of all’. His three terms are kardia, ‘heart’, psuchē, ‘soul’ or ‘life’, and dianoia, ‘mind’. Hautē estin hē megalē kai prōtē entolē, ‘this is the great and first commandment’, uses both adjectives, rank and priority.",
+      "words": ["G5346", "G0025", "G2962G", "G2316", "G3650", "G2588", "G5590G", "G1271", "G3173", "G4413G", "G1785"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:5",
+          "note": "The Hebrew reads ve'ahavta et YHWH elohekha bekhol levavkha uvekhol nafshekha uvekhol me'odekha, ‘with all your heart, all your soul, and all your might’. The Septuagint manuscripts divide over the first term, some reading kardia, ‘heart’, and others dianoia, ‘mind’, which may explain how ‘mind’ entered the Gospel sayings. Matthew has three terms, heart, soul, and mind, and no ‘strength’, where Mark has four (Mark 12:30). In Deuteronomy the command follows the confession that the LORD is one (6:4) and stands at the head of the laws that follow, the love that the whole covenant asks."
+        }
+      ],
+      "text": "The critical editions read hē megalē kai prōtē, ‘the great and first’; the Textus Receptus reverses the order, prōtē kai megalē, which is the King James Version's ‘the first and great commandment’. In verse 37 the critical text has ephē, ‘he said’, where later manuscripts have eipen; there is no difference in meaning.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love for God is commanded, so it is more than a feeling: it is the devotion of the whole person, heart, life, and mind. Placing it first means that every other commandment is a way of loving God, and that obedience without love has missed the Law's center."
+        }
+      ],
+      "parallels": ["Mark 12:29-30", "Luke 10:27"],
+      "refs": ["Deuteronomy 6:4-9", "Deuteronomy 10:12", "2 Kings 23:25", "1 John 5:3"]
+    },
+    {
+      "v": "39",
+      "context": "Without being asked, Jesus adds a second commandment and says it is like the first: love your neighbor as yourself. He joins two texts that stand far apart in the Torah, Deuteronomy 6 and Leviticus 19.",
+      "grammar": "Deutera homoia autē, ‘a second is like it’: homoia means of the same kind or equal in weight, so the second is not a lesser appendix to the first. Agapēseis ton plēsion sou hōs seauton, ‘you shall love your neighbor as yourself’, is verbatim from the Septuagint. Both commandments begin in Hebrew with ve'ahavta, ‘and you shall love’, and linking passages by a shared word was a recognized method of Jewish interpretation, later called gezerah shavah.",
+      "words": ["G1208", "G3664", "G0025", "G4139", "G5613", "G4771"],
+      "ot": [
+        {
+          "ref": "Leviticus 19:18",
+          "note": "The Hebrew reads ve'ahavta lere'akha kamokha, ani YHWH, ‘love your neighbor as yourself; I am the LORD’, following a ban on revenge and grudges against one's own people. In Leviticus the neighbor is first the fellow Israelite, but 19:34 extends the same love to the foreigner living among Israel. The Septuagint is Matthew's wording exactly. Rabbi Akiva called the verse a great principle of the Torah (Sifra on Leviticus 19:18). Matthew's Jesus quotes it three times (5:43, 19:19, 22:39), more than any other Gospel."
+        }
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love for neighbor is ‘like’ love for God: it flows from it and tests it (1 John 4:20). The verse assumes that people already care for themselves and turns that same care outward. It does not command self-love as a first step; it takes self-regard as the measure of the love owed to others."
+        }
+      ],
+      "parallels": ["Mark 12:31", "Luke 10:27"],
+      "refs": ["Leviticus 19:18", "Leviticus 19:34", "Matthew 19:19", "Romans 13:9", "1 John 4:20-21"]
+    },
+    {
+      "v": "40",
+      "context": "Jesus' own summary, found only in Matthew: the whole Law and the Prophets hang on these two commandments. The two loves are not the Law's replacement but its hinge.",
+      "grammar": "En tautais tais dusin entolais, ‘on these two commandments’, comes first in the Greek for emphasis. Krematai, ‘hangs’, a present passive in the singular, agrees with holos ho nomos, ‘the whole Law’, and kai hoi prophētai, ‘and the Prophets’, is added after the verb; later manuscripts make the verb plural to include both. The picture is of everything suspended from a single peg. ‘The Law and the Prophets’ is Matthew's phrase for the whole of Scripture as Jesus fulfills it (5:17, 7:12).",
+      "words": ["G1417", "G1785", "G3650", "G3551", "G2910", "G4396"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The double commandment does not abolish the other commandments; they hang on it. Every command is to be read as a form of love for God or neighbor, which is how Jesus has read the Sabbath and purity laws (12:1-14, 15:1-20). Paul says the same when he calls love the fulfillment of the Law (Romans 13:8-10)."
+        }
+      ],
+      "refs": ["Matthew 7:12", "Matthew 5:17", "Romans 13:8-10", "Galatians 5:14"]
+    },
+    {
+      "v": "41-42",
+      "context": "With the Pharisees still gathered, Jesus turns questioner. What do they think about the Christ? Whose son is he? They answer at once: David's. The answer is right as far as it goes.",
+      "grammar": "Sunēgmenōn de tōn Pharisaiōn, ‘while the Pharisees were gathered’, is a genitive absolute with a perfect participle, picking up their gathering in verse 34. Ti humin dokei peri tou christou, ‘what do you think about the Christ’, turns their own question form (verse 17) back on them. Tinos huios estin, ‘whose son is he’, asks about descent, and their one-word answer, tou Dauid, ‘David's’, is the standard expectation.",
+      "words": ["G4863", "G5330", "G1905", "G1380", "G5547", "G5101", "G5207", "G1138"],
+      "history": "The hope of a Davidic Messiah rested on God's promise of an everlasting house for David (2 Samuel 7:12-16) and on prophecies of a shoot from Jesse (Isaiah 11:1). The Psalms of Solomon, from the first century BC, pray for God to raise up the son of David to rule Israel (Psalms of Solomon 17:21), and a Qumran text reads 2 Samuel 7 of the Branch of David who will arise at the end of days (4Q174). Matthew has called Jesus son of David from his first verse (1:1), and the title has been cried out by the blind, a Canaanite mother, and the crowds at his entry (9:27, 15:22, 21:9).",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus accepts that the Christ is David's son; Matthew has taught it from the genealogy on. His question is whether the title says enough, and the psalm he quotes will show that David's son is also David's Lord."
+        }
+      ],
+      "parallels": ["Mark 12:35", "Luke 20:41"],
+      "refs": ["2 Samuel 7:12-16", "Isaiah 11:1", "Matthew 1:1", "Matthew 21:9"]
+    },
+    {
+      "v": "43-44",
+      "context": "Jesus quotes Psalm 110:1, which David spoke by the Spirit: the Lord said to my Lord, sit at my right hand until I put your enemies under your feet. If David calls this figure ‘my Lord’, the Messiah must be more than David's descendant.",
+      "grammar": "Pōs oun Dauid en pneumati kalei auton kurion, ‘how then does David in the Spirit call him Lord’: en pneumati, ‘in the Spirit’, claims inspiration for the psalm, as David claims in 2 Samuel 23:2. Eipen kurios tō kuriō mou, ‘the Lord said to my Lord’, uses kurios twice. Kathou ek dexiōn mou, ‘sit at my right hand’, is a present imperative, a continuing session, and heōs an thō, ‘until I put’, an aorist subjunctive for an event still to come. Hupokatō tōn podōn sou, ‘under your feet’, is the critical text's wording.",
+      "words": ["G4459", "G1138", "G4151G", "G2564G", "G2962G", "G2521", "G1188", "G2193", "G5087", "G2190", "G5270", "G4228"],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "The Masoretic Text reads ne'um YHWH ladoni, ‘the declaration of YHWH to my lord’, then ‘sit at my right hand until I make your enemies a footstool for your feet’. The first ‘Lord’ is the divine name; the second, adoni, is pointed by the Masoretes as the ordinary word for a human lord or king. The Septuagint (Psalm 109:1) renders both with kurios, which hides the distinction but keeps the point that David's God addresses David's lord. Matthew follows the Septuagint except at the end, where the earliest manuscripts read hupokatō, ‘under’, probably under the influence of Psalm 8:6, for the Septuagint's hupopodion, ‘footstool’. The argument assumes Davidic authorship, as the heading claims and Jesus' hearers believed; many modern scholars read the psalm as a court oracle for a king of Judah. Justin Martyr reports Jewish teachers who applied it to Hezekiah (Dialogue with Trypho 33, 83), and the Talmud applies it to Abraham (b. Nedarim 32b). The New Testament cites or echoes it more than any other Old Testament verse."
+        }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, read hupopodion, ‘till I make thine enemies thy footstool’, matching the Greek Psalm. The earliest witnesses read hupokatō, ‘under your feet’, as in Mark 12:36.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The Messiah is seated at God's right hand, sharing God's rule while God subdues his enemies. The apostles read the verse as fulfilled when the risen Jesus was exalted (Acts 2:34-36, Hebrews 1:13), and Jesus himself joins it to Daniel 7:13 before the high priest (26:64). The creeds' confession that he is seated at the right hand of the Father grows from this psalm."
+        }
+      ],
+      "parallels": ["Mark 12:36", "Luke 20:42-43"],
+      "refs": ["2 Samuel 23:2", "Acts 2:34-36", "Hebrews 1:13", "1 Corinthians 15:25", "Matthew 26:64"]
+    },
+    {
+      "v": "45-46",
+      "context": "Jesus presses the logic: if David calls him Lord, how is he his son? No one can answer a word, and from that day no one dares to question him again. Matthew moves Mark's note of silence to this point, so that every party in Jerusalem is silenced in turn.",
+      "grammar": "Ei oun Dauid kalei auton kurion, pōs huios autou estin, ‘if then David calls him Lord, how is he his son’, is a real condition whose premise the psalm has just established. Pōs, ‘how’, asks not whether but in what way both can be true. Oudeis edunato apokrithēnai autō logon, ‘no one was able to answer him a word’, uses an imperfect of inability, and oude etolmēsen tis ... eperōtēsai auton ouketi, ‘nor did anyone dare to question him any longer’, piles up negatives. The questioners of verse 15 end speechless, like the guest of verse 12.",
+      "words": ["G1487G", "G1138", "G2564G", "G2962G", "G4459", "G5207", "G3762", "G1410", "G0611", "G3056", "G5111", "G2250", "G1905"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The riddle has an answer the Gospel supplies: the Christ is David's son by descent (1:1-17) and David's Lord as the Son of God (3:17, 16:16). Paul states the same double identity, descended from David according to the flesh and declared Son of God in power (Romans 1:3-4), and the church's confession of one Christ, truly human and truly God, is the fullest answer to Jesus' question."
+        }
+      ],
+      "parallels": ["Mark 12:37", "Mark 12:34", "Luke 20:44", "Luke 20:40"],
+      "refs": ["Romans 1:3-4", "Matthew 16:16", "Matthew 26:63-64", "Revelation 22:16"]
+    }
+  ]
+}

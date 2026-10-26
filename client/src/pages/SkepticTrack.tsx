@@ -18,7 +18,7 @@ import PillarLeadMagnet from "@/components/PillarLeadMagnet";
 import { trpc } from "@/lib/trpc";
 import { SITE_URL } from "@/lib/site";
 import { NEWSLETTER_PITCH_SKEPTIC } from "@/lib/positioning";
-import { SKEPTIC_STOPS } from "@/lib/skepticTrack";
+import { SKEPTIC_STOPS, SKEPTIC_TRACK_LIVE, isStopReadable } from "@/lib/skepticTrack";
 
 export default function SkepticTrack() {
   const { data: articles } = trpc.posts.listForIndex.useQuery();
@@ -36,18 +36,20 @@ export default function SkepticTrack() {
       "@type": "ListItem",
       position: i + 1,
       name: s.title,
-      url: s.slug ? `${SITE_URL}/writing/${s.slug}` : trackUrl,
+      url: s.slug && isStopReadable(s) ? `${SITE_URL}/writing/${s.slug}` : trackUrl,
     })),
   };
 
   return (
     <Layout>
+      {/* Kept out of search until every stop is on the public shelf. */}
       <SEOMeta
         title="The Skeptic's Track — Start here"
         description="Seven essays in argument order. Written for skeptics first by a pastor who came to faith from atheism. No conversion bait."
         url={trackUrl}
         type="website"
         structuredData={schema}
+        noindex={!SKEPTIC_TRACK_LIVE}
       />
 
       {/* HERO */}
@@ -99,7 +101,7 @@ export default function SkepticTrack() {
               letterSpacing: "0.05em",
             }}
           >
-            — James Bell, who came to faith from atheism at 24.
+            — James Bell, who came to faith from atheism.
           </p>
         </div>
       </section>
@@ -108,7 +110,9 @@ export default function SkepticTrack() {
       <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           {SKEPTIC_STOPS.map(stop => {
-            const post = stop.slug ? bySlug.get(stop.slug) : undefined;
+            // A stop whose essay is off the public shelf reads "Essay in progress"
+            // and links nowhere, rather than opening a retired notice.
+            const post = stop.slug && isStopReadable(stop) ? bySlug.get(stop.slug) : undefined;
             // The body of a stop: the title, pitch, and status line. Rendered
             // inside a <Link> when the essay is live, and inside a plain <div>
             // (no href, not clickable) when it is still in progress, so an

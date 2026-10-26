@@ -1,0 +1,431 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "“That same day” ties the parables to the day of chapter 12, when Pharisees said Jesus cast out demons by Beelzebul and his family stood outside asking for him (12:24, 12:46-50). The parables are Jesus' answer to a day of division. He leaves the house for the shore and teaches from a boat; at verse 36 he will go back into the house to explain things to his disciples, so the sea and the house frame the public and private halves of the discourse.",
+      "grammar": "Ekathēto, ‘he was sitting’, is an imperfect, and the infinitive kathēsthai repeats the idea in verse 2: Jesus sits, the posture of a Jewish teacher that Matthew notes at the start of the Sermon on the Mount (5:1), on the mountain of 15:29, and before the last discourse (24:3). The crowd, by contrast, heistēkei, a pluperfect of histēmi that in this verb works as a simple past state, ‘was standing’ on the aigialos, the beach. Matthew writes ochloi polloi, ‘many crowds’, in the plural, a habit of his (4:25, 8:1) that pictures people gathered from many places rather than one mass.",
+      "words": ["G2521", "G2476", "G3793", "G0123"],
+      "parallels": ["Mark 4:1-2", "Luke 8:4"],
+      "refs": ["Matthew 12:46-50", "Matthew 5:1", "Matthew 23:2", "Matthew 24:3"]
+    },
+    {
+      "v": "3-4",
+      "context": "The word parable appears for the first time in Matthew, and it will occur twelve times in this chapter. The first story is of an ordinary farmer, and the first portion of seed is lost at once to the birds on the hard path. The parable does not yet say what the seed is; the hearer is left to ask, which is the point of verse 10.",
+      "grammar": "Idou, ‘behold’, calls for attention before the story begins. Matthew writes exēlthen ho speirōn tou speirein, ‘the sower went out to sow’, where tou with the infinitive expresses purpose, a construction Matthew likes (2:13, 3:13, 11:1). The present participle ho speirōn, ‘the one sowing’, makes the sower a type, ‘the farmer’, rather than a particular man. En tō speirein auton, literally ‘in his sowing’, is a temporal articular infinitive, ‘while he was sowing’. Matthew then shifts to the plural relative ha men, ‘some seeds’, where Mark has a singular portion, and he answers it with alla de, ‘others’, in verses 5, 7, and 8: the story is built as a list of four outcomes. Katephagen, ‘devoured’, is a compound whose prefix kata gives the sense of eating up completely.",
+      "words": ["G2400", "G4687", "G3739", "G4071", "G2719"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The seed is God's word, as verse 19 will say, and the parable begins by admitting that much of it seems wasted. Isaiah had promised that the word going out from God's mouth will not return to him empty (Isaiah 55:10-11); the sower's story holds both truths together, real loss on the path and a harvest that more than makes up for it in verse 8."
+        }
+      ],
+      "parallels": ["Mark 4:3-4", "Luke 8:5"],
+      "refs": ["Isaiah 55:10-11", "Jeremiah 4:3", "Matthew 13:19"]
+    },
+    {
+      "v": "5-7",
+      "context": "Two more losses. On rocky ground the seed springs up fast and dies fast; among thorns it is choked. The heat of the sun in verse 6 will become ‘trouble or persecution’ in the explanation (verse 21), and the thorns will become worry and wealth (verse 22).",
+      "grammar": "Eutheōs exaneteilen, ‘at once it sprang up’, is answered by the genitive absolute hēliou de anateilantos, ‘but when the sun had risen’: the two verbs share the root for rising (anatellō), so the seed's quick rise meets the sun's rise and loses. Matthew gives two causal clauses of the same shape, dia to mē echein bathos gēs, ‘because of not having depth of soil’, and dia to mē echein rhizan, ‘because of not having root’; dia with an articular infinitive gives the reason, and the repeated form binds shallowness and rootlessness into one cause. The two passives in verse 6, ekaumatisthē, ‘it was scorched’, and exēranthē, ‘it was dried up’, describe what is done to a plant with no reserves. In verse 7 anebēsan hai akanthai, ‘the thorns came up’, uses the same verb for the thorns' growth that the good seed never achieves on the rock.",
+      "words": ["G2112", "G1816", "G2246", "G0393", "G2739", "G3583", "G4491", "G4155"],
+      "text": "In verse 7 the editions divide between epnixan, ‘choked’ (the Nestle-Aland and SBL texts), and the compound apepnixan, ‘choked off’, printed by Westcott and Hort and found in the Byzantine text. The compound is the form Luke uses (8:7), and scribes often harmonized one Gospel to another. The meaning is the same either way.",
+      "parallels": ["Mark 4:5-7", "Luke 8:6-7"],
+      "refs": ["Jeremiah 4:3", "Jeremiah 17:5-8", "Hebrews 6:7-8"]
+    },
+    {
+      "v": "8-9",
+      "context": "The fourth portion falls on good soil and yields a crop that dwarfs the losses. Matthew counts down, a hundred, sixty, thirty, where Mark counts up. The call to hear closes the parable, and it will close the explanation of the weeds too (verse 43), framing all the public teaching.",
+      "grammar": "Edidou karpon, ‘it kept giving fruit’, is an imperfect, the only continuous verb in the parable; every failure was told in aorists. The distributive relatives ho men ... ho de ... ho de, ‘one ... another ... another’, split the good portion into three yields, and Matthew's descending order means the list ends with the smallest, as if to say that even thirtyfold belongs to the harvest. Verse 9 uses a third person present imperative, akouetō, ‘let him hear’, a form English can only paraphrase. Its present tense asks for continued listening, and its third person throws the responsibility onto each hearer, since having ears (ho echōn ōta) is something every person in the crowd could claim.",
+      "words": ["G2570G", "G1325", "G2590", "G1540", "G1835", "G5144", "G3775", "G0191"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The parable is a word about the kingdom's outcome before it is a word about hearers. In spite of path, rock, and thorns, the harvest comes. Jesus has already called the crowds a harvest waiting for workers (9:37-38), and the image of harvest belongs to the end of the age (verse 39). The disciples, discouraged by the rejection of chapters 11 and 12, are told that the sowing is not failing."
+        }
+      ],
+      "parallels": ["Mark 4:8-9", "Luke 8:8"],
+      "refs": ["Genesis 26:12", "Matthew 9:37-38", "Matthew 11:15", "Revelation 2:7"]
+    },
+    {
+      "v": "10-11",
+      "context": "The disciples come to Jesus and ask, not what this parable means (as in Luke), but why he speaks to the crowd this way at all. Jesus answers with a contrast: the knowledge of the mysteries has been given to the disciples and not to the others. Verses 12 to 17 unfold that answer.",
+      "grammar": "Proselthontes, ‘having come to him’, is Matthew's favorite verb for approaching Jesus (it occurs over fifty times in the Gospel), and it marks the disciples as those who come near. The answer turns on dedotai, a perfect passive, ‘it has been given’, used twice: humin dedotai ... ekeinois de ou dedotai, ‘to you it has been given ... but to them it has not been given’. The unnamed giver is God, and the perfect presents the gift as standing. Matthew and Luke both write gnōnai ta mustēria, ‘to know the mysteries’, plural, where Mark has ‘the mystery’ without the verb (Mark 4:11). This is one of the best-known minor agreements of Matthew and Luke against Mark, the small shared changes that Austin Farrer and, more recently, Mark Goodacre (The Case Against Q, 2002) use to argue that Luke knew Matthew, while defenders of the two-source hypothesis explain them as independent improvements of Mark or as overlap with another source.",
+      "words": ["G4334", "G1325", "G1097", "G3466", "G1565"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Knowing the kingdom's mysteries is described as a gift, not an achievement. The disciples are no cleverer than the crowd; they are those to whom God has given it, and in the story's own terms they receive it by coming to Jesus and asking. Jesus has just thanked the Father for hiding these things from the wise and revealing them to little children (11:25-27)."
+        }
+      ],
+      "parallels": ["Mark 4:10-11", "Luke 8:9-10"],
+      "refs": ["Matthew 11:25-27", "Daniel 2:27-28", "1 Corinthians 2:7-10", "Colossians 1:26-27"]
+    },
+    {
+      "v": "12",
+      "context": "Matthew places here a saying that Mark gives later (Mark 4:25), so that it explains verse 11: the gift already received grows, and the one who has refused loses even what he seemed to have. Jesus will repeat it at the end of the parable of the talents (25:29).",
+      "grammar": "The verse opens with gar, ‘for’, which the BSB leaves untranslated; it grounds the contrast of verse 11 in a general rule. Hostis echei, ‘whoever has’, is set against hostis ouk echei, ‘whoever does not have’. The three verbs of consequence are future passives, dothēsetai, ‘it will be given’, perisseuthēsetai, ‘he will be made to abound’, and arthēsetai, ‘it will be taken away’, with God as the implied actor. Only Matthew adds perisseuthēsetai, here and in 25:29, stressing overflow. In context what one ‘has’ is the understanding received from Jesus, so the rule describes hearing: a word welcomed opens the way to more, and a word refused leaves the hearer poorer than before.",
+      "words": ["G3748", "G2192", "G1325", "G4052", "G0142"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Loss of understanding is itself a form of judgment already at work in the present, before the harvest at the end of the age. The verse does not say that God takes from those who never had a chance; it says that refusing what is given leads to losing it, as the talent buried in the ground is taken away (25:28-29)."
+        }
+      ],
+      "parallels": ["Mark 4:25", "Luke 8:18"],
+      "refs": ["Matthew 25:29", "Luke 19:26", "Mark 4:24-25"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus gives his reason for speaking in parables. Where Mark writes that the outsiders receive everything in parables ‘so that’ they may see and not perceive (Mark 4:12), Matthew's Jesus says he speaks this way ‘because’ they see without seeing. The chapter note sets out the long debate this difference has raised; the verse's own wording locates the blindness in the hearers.",
+      "grammar": "Dia touto ... hoti, ‘for this reason ... because’, is a causal construction: the parables respond to a condition already present. Mark's hina, ‘in order that’, and mēpote, ‘lest’, are missing here, though the fuller quotation in verse 15 will bring mēpote back. The paradox is built from participle and finite verb of the same root, blepontes ou blepousin, ‘seeing, they do not see’, and akouontes ouk akouousin, ‘hearing, they do not hear’, and Matthew adds oude suniousin, ‘nor do they understand’. Suniēmi is the chapter's key verb for real hearing (verses 14, 15, 19, 23, and 51), so the verse names the difference between the crowd and the disciples in the very word that the good soil will have.",
+      "words": ["G1223", "G3754H", "G0991", "G0191", "G4920"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Matthew's ‘because’ stresses human responsibility: the parables meet a refusal already shown in chapters 11 and 12. Yet verse 11 has just said that understanding is God's gift. Augustinian and Reformed readers hold the two together as Isaiah did, God's sovereign giving and the hearers' real refusal; others, following John Chrysostom, stress that the blindness is self-chosen and the parables an invitation to come and ask."
+        }
+      ],
+      "parallels": ["Mark 4:11-12", "Luke 8:10"],
+      "refs": ["Jeremiah 5:21", "Ezekiel 12:2", "Deuteronomy 29:4", "Matthew 11:20-24"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus himself declares that Isaiah's prophecy is being fulfilled in the crowds, and quotes it at length. Isaiah was told, at his call, that his preaching would meet a people already hardened; Jesus finds the same pattern in the reception of his own ministry. The quotation ends with the promise withheld from those who refuse: ‘and I would heal them’.",
+      "grammar": "Anaplēroutai, ‘is being fulfilled’ or ‘is being filled up’, is a present passive and occurs nowhere else in Matthew, whose other fulfillment quotations use plēroō. The present tense makes the fulfillment ongoing, happening ‘in them’. The quotation reproduces two Hebrew idioms in Greek dress: akoē akousete, literally ‘with hearing you will hear’, and blepontes blepsete, ‘seeing you will see’, render the Hebrew habit of doubling a verb with its own infinitive for emphasis. Each is followed by ou mē with an aorist subjunctive, the strongest negation Greek has: ‘you will certainly not understand ... not perceive’. In verse 15 epachunthē, an aorist passive, ‘has grown fat’, describes a heart (the seat of thought in biblical idiom) grown insensitive, and ekammusan, ‘they have shut’, makes the closing of the eyes their own act. After mēpote, ‘otherwise’ or ‘lest’, come subjunctives and then a future indicative, iasomai, ‘I will heal’; a future after mēpote was ordinary in the Greek of the period and continues the ‘lest’ clause, so the sense is ‘lest they turn and I heal them’.",
+      "words": ["G0378", "G0189", "G4920", "G3975", "G2576", "G1994", "G2390"],
+      "ot": [
+        {
+          "ref": "Isaiah 6:9-10",
+          "note": "Isaiah's vision came in the year King Uzziah died, around 740 BC. The Hebrew gives the prophet commands: ‘hear indeed, but do not understand; see indeed, but do not perceive’ (shimu shamoa ... ureu raoh), and then tells him to make the people's heart fat, their ears heavy, and their eyes smeared shut, ‘lest they see ... and turn, and one heal them’ (weshav werafa lo). The Septuagint turns the commands into predictions (‘you will hear and not understand’) and the causative verbs into descriptions of the people (‘the heart of this people has grown fat ... they have shut their eyes’), and it ends with God speaking in the first person, ‘and I will heal them’. Matthew's quotation follows the Septuagint word for word. Mark gives a short form close to the Aramaic Targum, ending ‘and be forgiven’ (Mark 4:12); Luke shortens it (Luke 8:10) and saves the full Septuagint form for Paul in Rome (Acts 28:26-27); John quotes it differently again (John 12:40). The same prophecy thus explains, across the New Testament, why so many in Israel did not receive the Messiah, without closing the door, since Isaiah's own chapter ends with a holy seed left in the stump (Isaiah 6:13)."
+        }
+      ],
+      "text": "No manuscript lacks verses 14 and 15, but their features are unusual for Matthew: the only fulfillment quotation spoken by Jesus himself, the only one introduced with anaplēroō, and a word-for-word agreement with the Septuagint unlike Matthew's freer quotations elsewhere. W. D. Davies and Dale Allison (International Critical Commentary on Matthew, volume 2, 1991) observed that the passage reads smoothly without them and weighed the suggestion that they are an early addition modeled on Acts 28:26-27. Most commentators keep them as Matthew's, noting that he quotes the Septuagint closely elsewhere when it suits his point and that verse 13 already paraphrases the same prophecy.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Isaiah's commission shows God's hand in hardening as judgment on a people already turned away, and Matthew applies it to those who reject Jesus. The Greek form Matthew quotes places the fattening of the heart and the shutting of the eyes on the people themselves, so the verse keeps divine judgment and human refusal side by side without resolving them into one."
+        }
+      ],
+      "parallels": ["Mark 4:12", "Luke 8:10"],
+      "refs": ["Isaiah 6:9-13", "Acts 28:25-28", "John 12:37-41", "Romans 11:7-8"]
+    },
+    {
+      "v": "16-17",
+      "context": "Jesus turns from the crowd to the disciples with a blessing. What they see and hear is what prophets and righteous people longed for and never saw. Luke gives the saying in a different setting, after the return of the seventy-two (Luke 10:23-24), with ‘prophets and kings’ in place of Matthew's ‘prophets and righteous men’.",
+      "grammar": "Humōn de makarioi hoi ophthalmoi, literally ‘but of you blessed are the eyes’, puts ‘your’ first and joins it with de, ‘but’, setting the disciples sharply against ‘them’ in verses 13 to 15. The two hoti clauses are causal: blessed because they see, because they hear. Verse 17 opens with amēn legō humin, ‘truly I tell you’, Jesus' solemn formula, and gar, ‘for’, grounds the blessing. Epethumēsan idein, ‘they longed to see’, uses the verb of strong desire (epithumeō) for the prophets' yearning. The aorists ouk eidan and ouk ēkousan, ‘they did not see, they did not hear’, close the lives of the prophets as completed, against the present tenses blepete and akouete, ‘you see, you hear’, of the disciples now.",
+      "words": ["G3107", "G3788", "G0281", "G1937", "G4396", "G1342"],
+      "history": "The longing Jesus describes can be seen in Jewish writing of the period. The Psalms of Solomon, composed in the first century BC after Pompey took Jerusalem, pray for the coming of a son of David and close their seventeenth psalm by calling blessed those born in those days to see the good fortune of Israel that God will bring about (Psalms of Solomon 17:44). Jesus tells his disciples that they are those people.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The verse marks the turn of the ages. What the prophets saw from a distance, the disciples see in Jesus, which means the kingdom is not only future; its arrival is visible now in his words and deeds (11:4-6, 12:28). Peter later says the prophets searched for the time of the Messiah's sufferings and glories (1 Peter 1:10-12)."
+        }
+      ],
+      "parallels": ["Luke 10:23-24"],
+      "refs": ["1 Peter 1:10-12", "Hebrews 11:13", "John 8:56", "Matthew 11:4-6"]
+    },
+    {
+      "v": "18-19",
+      "context": "Jesus explains the sower to the disciples. The first hearer hears ‘the message of the kingdom’ (a phrase only Matthew uses) without understanding, and the evil one snatches it away. The images slide, as ancient explanations often did: the word is sown in the heart, and the hearer is then called the seed sown on the path.",
+      "grammar": "Humeis oun akousate, ‘you, then, hear’, puts the pronoun first to set the disciples against the crowd of verse 13, and akousate is an aorist imperative. Tou speirantos, ‘of the one who sowed’, is an aorist participle. Verse 19 opens with a genitive absolute, pantos akouontos ... kai mē sunientos, ‘when anyone hears ... and does not understand’, a loose construction that leaves the sentence to restart with erchetai ho ponēros, ‘the evil one comes’. Ho ponēros is Matthew's name for Satan (5:37 and 13:38, and possibly 6:13), where Mark says Satan and Luke the devil. Harpazei, ‘he snatches’, is the verb for seizing by force (11:12, 12:29). To esparmenon, a perfect passive participle, is ‘what has been sown’, and then houtos estin ho para tēn hodon spareis, ‘this is the one sown along the path’, identifies the person with the seed.",
+      "words": ["G0191", "G4687", "G3056", "G0932", "G4920", "G4190", "G0726"],
+      "text": "The Nestle-Aland and other modern editions read tou speirantos, the aorist, ‘of the one who sowed’; the later manuscripts behind the King James Version read the present speirontos, ‘of the sower’. The difference does not change the sense. The KJV's ‘the wicked one’ and the BSB's “the evil one” translate the same Greek.",
+      "parallels": ["Mark 4:13-15", "Luke 8:11-12"],
+      "refs": ["Matthew 5:37", "Matthew 6:13", "2 Corinthians 4:4", "1 John 5:18-19"]
+    },
+    {
+      "v": "20-21",
+      "context": "The rocky ground is the hearer who welcomes the word with instant joy but has no root, and when trouble or persecution comes because of the word, falls away. Matthew's readers had seen this happen, and Jesus will predict it of many at the end (24:9-10) and of the Twelve themselves on the night of his arrest (26:31).",
+      "grammar": "Euthus, ‘at once’, appears in both verses: the shallow hearer receives the word at once (verse 20) and falls away at once (verse 21), echoing the seed that sprang up eutheōs in verse 5. Meta charas lambanōn, ‘receiving it with joy’, is a present participle; joy here is real but not deep. Ouk echei de rhizan en heautō, ‘he has no root in himself’, uses a reflexive: the lack is internal. Proskairos, ‘temporary’, is built on kairos, ‘season’: he lasts for a season. The genitive absolute genomenēs de thlipseōs ē diōgmou dia ton logon, ‘when trouble or persecution comes on account of the word’, makes the pressure the cost of the word itself. Skandalizetai, a present passive, ‘he is caused to stumble’, is the verb the chapter will use of Nazareth (verse 57) and Jesus will use of the disciples (26:31).",
+      "words": ["G2112", "G5479", "G2983", "G4491", "G4340", "G2347", "G1375", "G4624"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The verse distinguishes an initial, joyful reception from rooted faith that endures pressure. Christians read it in two ways. The Reformed tradition, which confesses the perseverance of the saints, takes such hearers as never truly regenerate, however real their joy seemed. Wesleyan, Arminian, and many Orthodox and Catholic readers take them as real beginners who fell away. Both agree on the warning the parable gives: joy is not the same as root, and the word's cost exposes the difference."
+        }
+      ],
+      "parallels": ["Mark 4:16-17", "Luke 8:13"],
+      "refs": ["Matthew 24:9-13", "Matthew 26:31-35", "Colossians 2:6-7", "Hebrews 3:14"]
+    },
+    {
+      "v": "22-23",
+      "context": "The thorny ground is the hearer in whom worry and wealth choke the word. The good soil is the one who hears and understands, and bears fruit. Matthew names the good hearer by understanding, where Mark says they welcome the word and Luke that they hold it fast (Mark 4:20, Luke 8:15).",
+      "grammar": "Hē merimna tou aiōnos, ‘the anxiety of the age’, is singular: the worry that belongs to the present order, which Jesus has forbidden his disciples (6:25-34 uses the verb merimnaō six times). Hē apatē tou ploutou, ‘the deceitfulness of wealth’, makes riches an active deceiver. The two subjects share one singular verb, sumpnigei, ‘chokes’, as if worry and wealth were one force, and akarpos ginetai, ‘it becomes fruitless’, describes a gradual process. In verse 23 the good hearer is ho ... akouōn kai sunieis, ‘the one hearing and understanding’, both present participles. Hos dē karpophorei, ‘who indeed bears fruit’, uses the particle dē, rare in the New Testament, to press home the result: understanding is known by fruit.",
+      "words": ["G3308", "G0165G", "G0539", "G4149", "G4846", "G0175", "G4920", "G1211", "G2592"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Matthew names wealth as a deceiver that strangles the word slowly, not by open hostility. The rich young man of 19:16-22 will show the same thorns at work in a single life. The verse does not condemn possessions as such but warns that the pull of money and the anxiety of the age can leave a hearer who still hears but bears nothing."
+        }
+      ],
+      "parallels": ["Mark 4:18-20", "Luke 8:14-15"],
+      "refs": ["Matthew 6:19-34", "Matthew 19:21-22", "1 Timothy 6:9-10", "John 15:5"]
+    },
+    {
+      "v": "24-26",
+      "context": "The second parable, the weeds among the wheat, is found only in Matthew and stands where Mark has the seed growing secretly (Mark 4:26-29). A man sows good seed; while people sleep an enemy oversows darnel; the problem shows only when the grain forms. Its explanation comes in verses 36 to 43.",
+      "grammar": "Parethēken, ‘he set before’, is the verb for setting food on a table (Luke 10:8), used here and in verse 31 for setting a parable before hearers. Hōmoiōthē, an aorist passive of homoioō, ‘has been likened’ or ‘has become like’, is Matthew's form here and in 18:23 and 22:2, where he uses the future homoiōthēsetai in 7:24, 26 and 25:1. D. A. Carson (New Testament Studies 31, 1985) argued that the aorist marks parables about the kingdom already at work and the future those about the final judgment; others take the aorist as timeless, equal to homoia estin, ‘is like’, in verse 31. En de tō katheudein tous anthrōpous, ‘while the men were sleeping’, is a temporal articular infinitive; it blames no one, since people sleep at night. Epespeiren, ‘sowed over’, is a compound found only here in the New Testament. Ephanē, ‘appeared’, an aorist passive, notes that the weeds became visible only when the heads formed.",
+      "words": ["G3908", "G3666", "G2518", "G2190", "G6037", "G2215", "G5316"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The parable describes the kingdom in the present as a field where good seed and bad grow together. God's reign has begun, but it has not yet removed evil from the world, and the parable warns against expecting it to look pure before the harvest."
+        }
+      ],
+      "refs": ["Mark 4:26-29", "Matthew 13:36-43", "1 Corinthians 3:6-9"]
+    },
+    {
+      "v": "27-28",
+      "context": "The servants ask the owner where the weeds came from, and he answers that an enemy did it. They offer to pull them up. The owner's refusal comes in the next verses.",
+      "grammar": "Ouchi kalon sperma espeiras, ‘did you not sow good seed?’, uses ouchi, a question expecting ‘yes’. Pothen oun echei zizania, ‘from where, then, does it have weeds?’, introduces the chapter's first ‘from where’; the second and third are Nazareth's questions about Jesus, pothen toutō, ‘from where did this man get these things?’ (verses 54 and 56). The chapter thus asks the origin of evil in the field and the origin of Jesus' wisdom with the same word. Echthros anthrōpos, literally ‘an enemy man’, is a Semitic-style pairing that means simply ‘an enemy’. Theleis ... sullexōmen, ‘do you want us to gather?’, joins thelō to a deliberative subjunctive without a linking particle, an idiom of spoken Greek. The owner is called oikodespotēs, ‘master of the house’, the title that returns in verse 52.",
+      "words": ["G3617", "G2570G", "G4159", "G2190", "G2309", "G4816"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The owner neither sowed the weeds nor is surprised by them: ‘an enemy did this’. The verse refuses to trace evil in the world to God, yet it leaves the enemy's work inside a field the owner still governs, whose harvest he will decide. It gives no full explanation of why evil is permitted, only the assurance of who is responsible for it and who will judge it."
+        }
+      ],
+      "refs": ["Genesis 3:1-5", "James 1:13-17", "1 Peter 5:8"]
+    },
+    {
+      "v": "29-30",
+      "context": "The owner forbids the servants to uproot the weeds, because the wheat would be lost with them, and orders both to grow until harvest, when the reapers will gather the weeds for burning and the wheat into his barn. The picture repeats John the Baptist's words about the wheat gathered and the chaff burned (3:12), now with the judgment deferred.",
+      "grammar": "Mēpote sullegontes ta zizania ekrizōsēte hama autois ton siton, ‘lest while gathering the weeds you uproot the wheat with them’, is a negative purpose clause giving the reason for the refusal: the danger is to the wheat, not to the weeds. Aphete sunauxanesthai, ‘let them grow together’, pairs an aorist imperative of permission with a present infinitive of continuing growth, and heōs tou therismou, ‘until the harvest’, sets its limit. At harvest the orders are aorist imperatives, sullexate, dēsate, sunagagete, ‘gather, bind, gather’. The weeds are gathered first, the reverse of the net in verse 48, and eis desmas, ‘into bundles’, prepares them to burn. Hē apothēkē mou, ‘my barn’, is the word John used in 3:12.",
+      "words": ["G4816", "G1610", "G0863I", "G4885", "G2326", "G1210", "G2618", "G0596"],
+      "history": "In a land short of timber, dried plants were fuel for household ovens, as Jesus assumes when he speaks of grass that is here today and tomorrow is thrown into the oven (6:30). Binding the weeds in bundles for burning was therefore ordinary farm practice as well as an image of judgment. Separating darnel from wheat was usually left until harvest or threshing, when the heads could be told apart.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Whether the field is taken as the world (verse 38) or, with Augustine and Calvin, also as the visible church, the command forbids the servants to do the final sorting themselves. It has been read as a charter against persecuting dissenters (Roger Williams) and against demanding a church of the pure (Augustine against the Donatists). It does not cancel the limited discipline Jesus gives the church in 18:15-17, but it puts final separation beyond the servants' reach."
+        },
+        {
+          "id": "judgment",
+          "note": "Judgment is certain and it has a set time. The owner's patience is not indifference: the harvest will come, and the weeds will burn. Paul uses the same logic when he tells the Corinthians to judge nothing before the time, until the Lord comes (1 Corinthians 4:5)."
+        }
+      ],
+      "refs": ["Matthew 3:12", "Matthew 6:30", "Matthew 18:15-17", "1 Corinthians 4:5", "2 Peter 3:9"]
+    },
+    {
+      "v": "31-32",
+      "context": "The mustard seed, sown in a field (Mark has the ground, Luke a garden), grows from the smallest of seeds into a tree where birds nest. Paired with the leaven that follows, it answers the question why the kingdom looks so small: its beginning is no measure of its end.",
+      "grammar": "Homoia estin, ‘is like’, introduces the comparison, and the kingdom is likened to the whole story, not to the seed alone. Ho mikroteron men estin pantōn tōn spermatōn, ‘which is smaller than all the seeds’, uses a comparative with a genitive of comparison in the sense of a superlative, as the Greek of the period often did; men ... de sets up the contrast with hotan de auxēthē, ‘but when it has grown’. Meizon tōn lachanōn, ‘greater than the garden plants’, keeps Mark's wording, and kai ginetai dendron, ‘and becomes a tree’, adds what Luke also has, another minor agreement against Mark. The result clause hōste elthein ... kai kataskēnoun, ‘so that the birds come and nest’, uses infinitives, and kataskēnoō is the verb the Greek versions of Daniel 4 use for the birds in Nebuchadnezzar's tree.",
+      "words": ["G3664", "G2848", "G4615", "G3398", "G0837", "G3173", "G3001", "G1186", "G2681"],
+      "ot": [
+        {
+          "ref": "Daniel 4:12",
+          "note": "In Nebuchadnezzar's dream the great tree shelters beasts in its shade, and in its branches the birds of the air nest (Aramaic tsipparei shemayya, ‘birds of the heavens’); the tree is the king and his empire (Daniel 4:20-22). Ezekiel 17:23 uses the same picture for the sprig God plants on Israel's mountain, which becomes a cedar where birds of every kind nest, and Ezekiel 31:6 for Assyria. Matthew's ‘the birds of the air’ and the verb kataskēnoō match the Greek of Daniel. By saying a mustard plant ‘becomes a tree’, Matthew and Luke bring the garden shrub into this company of great trees, with irony: God's kingdom, which will shelter the nations, begins as a seed a farmer can barely see. Mark's fuller note on the image is at Mark 4:30-32."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom that seemed so small in Jesus' Galilean ministry will grow to a size no one could predict from its seed. The contrast between beginning and end, not a slow evolution, is the parable's point."
+        },
+        {
+          "id": "mission",
+          "note": "In the prophets the birds that nest in the great tree are the peoples who find shelter under a kingdom. Matthew, whose Gospel ends with the command to make disciples of all nations (28:19), lets the image hint that the nations will find refuge in God's reign."
+        }
+      ],
+      "parallels": ["Mark 4:30-32", "Luke 13:18-19"],
+      "refs": ["Ezekiel 17:22-24", "Daniel 4:10-12", "Matthew 17:20", "Matthew 28:18-20"]
+    },
+    {
+      "v": "33",
+      "context": "The leaven, a woman's work beside the man's sowing, makes the same point from the kitchen. A little sourdough hidden in a vast quantity of flour works through all of it. Scripture usually uses leaven as a picture of corruption, but here Jesus says the kingdom itself is like leaven.",
+      "grammar": "Enekrupsen, literally ‘hid in’, is the word the BSB renders “mixed”: the Greek chooses a verb of concealment, which links this parable to the hidden treasure (verse 44) and the things hidden since the foundation of the world (verse 35). Aleurou sata tria, ‘three measures of flour’, uses saton, a Greek form of the Aramaic word for the seah. Heōs hou ezumōthē holon, ‘until the whole was leavened’, uses an aorist passive for the completed result: nothing in the batch is left untouched. The kingdom is compared to the leaven (zumē) in the dative, and the whole event of hiding and rising makes the comparison.",
+      "words": ["G2219", "G2983", "G1135G", "G1470", "G0224", "G4568", "G5140", "G2220", "G3650"],
+      "history": "Josephus reckoned a seah at one and a half Roman modii (Antiquities 9.85), which would make three seahs close to forty liters of flour; estimates based on a smaller ephah give about twenty-two. Either way it is far more than a household's daily bread and suits a feast. An ephah of flour is the quantity Gideon baked for his divine visitor (Judges 6:19) and Hannah brought to Shiloh (1 Samuel 1:24). Leaven is not always negative in the law: the loaves offered at the Feast of Weeks were baked with it (Leviticus 23:17).",
+      "ot": [
+        {
+          "ref": "Genesis 18:6",
+          "note": "Abraham tells Sarah to prepare “three seahs of fine flour” for the three visitors at Mamre. The Hebrew is shalosh seim qemach solet; the Septuagint renders it tria metra semidaleōs, ‘three measures of fine flour’. Matthew and Luke do not use the Septuagint's word; their sata reflects the Aramaic name of the measure. So the parable does not quote Genesis, but the quantity is the same, and some interpreters hear an echo of the meal prepared when the LORD visited Abraham with the promise of a son. The link is possible rather than certain; the plainer point is the size of the batch."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom works from within and out of sight, until everything is changed. Jesus uses the same image for the Pharisees' teaching as a corrupting influence (16:6, 11-12), and Paul for sin in the church (1 Corinthians 5:6-8), which shows that the image carries no fixed moral value; here it pictures the hidden power of God's reign."
+        }
+      ],
+      "parallels": ["Luke 13:20-21"],
+      "refs": ["Genesis 18:6", "Leviticus 23:17", "Matthew 16:6", "1 Corinthians 5:6-8"]
+    },
+    {
+      "v": "34-35",
+      "context": "Matthew closes the public teaching with a summary and a fulfillment quotation. Jesus spoke to the crowds only in parables, and this fulfilled Psalm 78:2, where the psalmist opens his mouth in a parable to tell Israel's history as a lesson.",
+      "grammar": "Chōris parabolēs ouden elalei autois, ‘without a parable he was saying nothing to them’, uses an imperfect for this phase of the ministry, not for all time; Jesus has taught the crowds plainly in chapters 5 to 7. Hopōs plērōthē to rhēthen dia tou prophētou legontos, ‘so that what was spoken through the prophet might be fulfilled’, is Matthew's standard formula (compare 8:17, 12:17). The first line of the quotation, anoixō en parabolais to stoma mou, ‘I will open my mouth in parables’, matches the Septuagint exactly. The second, ereuxomai kekrummena apo katabolēs kosmou, ‘I will pour out things hidden since the foundation of the world’, is Matthew's own: ereugomai means to pour forth or blurt out, kekrummena is a perfect passive participle, ‘things that have been hidden’, and katabolē, ‘laying down’, is the word for the world's foundation (25:34).",
+      "words": ["G3850", "G2980", "G4137", "G4396", "G0455", "G4750", "G2044", "G2928", "G2602"],
+      "ot": [
+        {
+          "ref": "Psalm 78:2",
+          "note": "Psalm 78, titled a maskil of Asaph, rehearses Israel's history from the exodus to David as a warning to the next generation. Its second verse reads in Hebrew eftechah bemashal pi, abbiah chidot minni-qedem, ‘I will open my mouth in a parable; I will pour out riddles from of old’. The Septuagint (Psalm 77:2) renders the second line ‘I will utter problems from the beginning’. Matthew keeps the Septuagint's first line and translates the second afresh from the Hebrew: his ereuxomai renders abbiah from the verb naba, ‘to bubble up, pour forth’, which the Septuagint itself renders with ereugomai in Psalm 19:2 (18:3 in the Greek), and his ‘things hidden since the foundation of the world’ interprets the psalm's ‘riddles from of old’. Matthew calls the psalmist ‘the prophet’, and Scripture calls Asaph a seer (2 Chronicles 29:30) and says his sons prophesied (1 Chronicles 25:2). The psalmist drew hidden lessons from Israel's past; Matthew sees Jesus revealing what God had hidden from creation itself. The connection is a pattern fulfilled, not a prediction."
+        }
+      ],
+      "text": "A few witnesses read ‘through Isaiah the prophet’: the first hand of Codex Sinaiticus, Codex Koridethi, the minuscule families 1 and 13, and minuscule 33, and the pagan critic Porphyry used the reading, as Jerome reports, to accuse Matthew of error. As the harder reading it deserves a hearing, since a scribe was more likely to remove an error than to create one, but nearly all editors judge it a scribal slip, perhaps prompted by Matthew's many quotations of Isaiah. Jerome suggested that Asaph once stood there. The words ‘of the world’ are absent from Codex Vaticanus and some other witnesses and are printed in brackets in the Nestle-Aland text.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Parables are not only a veil; Matthew calls them the uttering of hidden things. The same speech that conceals from those who refuse reveals to those who come, and what it reveals is God's purpose kept since the world's foundation and now spoken by Jesus (compare Romans 16:25-26)."
+        }
+      ],
+      "parallels": ["Mark 4:33-34"],
+      "refs": ["Psalm 78:1-4", "2 Chronicles 29:30", "Romans 16:25-26", "Colossians 1:26", "Matthew 25:34"]
+    },
+    {
+      "v": "36-39",
+      "context": "Jesus sends the crowds away and goes into the house; the disciples ask him to explain the weeds. His answer is a list of seven identifications: sower, field, good seed, weeds, enemy, harvest, harvesters. From here to verse 52 Jesus speaks only to the disciples.",
+      "grammar": "Diasaphēson, an aorist imperative, ‘make clear’, is a strong request for explanation; Matthew uses the same verb in 18:31 for reporting fully. The explanation is built as a string of equations with estin and eisin, ‘is’ and ‘are’. Huioi tēs basileias, ‘sons of the kingdom’, and huioi tou ponērou, ‘sons of the evil one’, use the Semitic idiom in which ‘son of’ means one who belongs to or shares the character of something. The phrase ‘sons of the kingdom’ is pointed, since in 8:12 Jesus used it of those who assumed a place at Abraham's table and were thrown out: belonging is not by birth. Hē sunteleia aiōnos, ‘the completion of the age’, is Matthew's term for the end (verses 40 and 49, 24:3, 28:20). The Son of Man, the title from Daniel 7:13 that Jesus uses of himself, is the sower.",
+      "words": ["G1285", "G5207", "G2889", "G0932", "G4190", "G1228", "G4930", "G0032G"],
+      "text": "Most modern editions read diasaphēson, ‘explain clearly’; the later manuscripts behind the King James Version read phrason, ‘declare’, the verb Peter uses in 15:15. The KJV's ‘Declare unto us the parable of the tares of the field’ reflects that reading. The sense is unaffected.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Jesus says outright that the field is the world, which is why the Donatists and later Roger Williams read the parable as being about society at large. Augustine replied that the kingdom of verse 41, from which the angels gather offenses, must be the church as it now exists, since no offenses can be gathered from the kingdom in its final glory (City of God 20.9). The verse can carry both readings: the good seed are sons of the kingdom scattered through the world, and the visible community of Jesus' followers is not exempt from the mixture."
+        },
+        {
+          "id": "angels",
+          "note": "The harvesters are angels. Throughout Matthew the angels serve the Son of Man at the end, gathering the elect and separating the wicked (13:49, 16:27, 24:31, 25:31). The verse gives the final sorting to them, not to the disciples."
+        }
+      ],
+      "refs": ["Matthew 8:11-12", "Daniel 7:13-14", "John 8:44", "1 John 3:10", "Matthew 28:20"]
+    },
+    {
+      "v": "40-43",
+      "context": "The explanation turns to the end of the age. The Son of Man sends his angels, who remove from his kingdom every cause of sin and all who do lawlessness and throw them into the fiery furnace, and the righteous shine like the sun in their Father's kingdom. The refrain “He who has ears, let him hear” closes the teaching begun in verse 9.",
+      "grammar": "Hōsper oun ... houtōs estai, ‘just as ... so it will be’, draws the comparison. The Son of Man sends tous angelous autou, ‘his angels’, and they gather ek tēs basileias autou, ‘out of his kingdom’; both pronouns claim for Jesus what the Old Testament says belongs to God. Panta ta skandala, ‘all causes of stumbling’, are things, and tous poiountas tēn anomian, ‘those doing lawlessness’, are people; anomia is Matthew's word for the lawless life (7:23, 23:28, 24:12). Kaminos tou puros, ‘the furnace of fire’, is the phrase of Daniel 3:6. Ho klauthmos kai ho brugmos tōn odontōn, ‘the weeping and the gnashing of teeth’, occurs six times in Matthew and once in Luke. Eklampsousin, ‘they will shine forth’, is a compound future, and en tē basileia tou patros autōn, ‘in the kingdom of their Father’, sets the final kingdom beside the Son of Man's kingdom of verse 41.",
+      "words": ["G2618", "G4930", "G0649", "G0032G", "G4625", "G0458", "G2575", "G1030", "G1584", "G3962"],
+      "ot": [
+        {
+          "ref": "Daniel 12:3",
+          "note": "In the Hebrew, Daniel is told that at the resurrection hammaskilim yazhiru, ‘the wise will shine like the brightness of the expanse’, and those who lead many to righteousness like the stars forever. The Greek version known as Theodotion's renders ‘the wise’ as hoi sunientes, ‘those who understand’, and the verb as eklampsousin, the very verb of Matthew 13:43. Matthew speaks of ‘the righteous’ and ‘like the sun’, but a reader of the Greek Daniel would hear the promise to those who understand, the quality this chapter has pressed from verse 13 onward. The furnace of verses 42 and 50 recalls Daniel 3:6, the blazing furnace of Nebuchadnezzar. The pairing of causes of stumbling with evildoers may echo Zephaniah 1:3, whose Hebrew speaks of sweeping away ‘the stumbling blocks with the wicked’, though the phrase there is obscure and English versions render it differently."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verses state final judgment plainly: a separation carried out at the Son of Man's command, with the wicked removed and the righteous revealed. The one who judges is the one who sowed the good seed (verse 37)."
+        },
+        {
+          "id": "hell",
+          "note": "The fiery furnace and the weeping and gnashing of teeth are Matthew's standard images of final loss. Christians have read them as describing conscious punishment (the historic majority view), as figures of final destruction (the view called conditional immortality), or as pictures whose reality exceeds their imagery; the verse's own weight falls on the certainty and seriousness of exclusion from the Father's kingdom."
+        },
+        {
+          "id": "kingdom",
+          "note": "The Son of Man's kingdom (verse 41) and the Father's kingdom (verse 43) are one reign seen at two moments: the present rule of the risen Son, in which good and evil are mixed, and its completion when the Son hands the kingdom to the Father (1 Corinthians 15:24-28)."
+        }
+      ],
+      "refs": ["Daniel 12:2-3", "Daniel 3:6", "Matthew 25:31-46", "1 Corinthians 15:24-28", "Matthew 24:31"]
+    },
+    {
+      "v": "44",
+      "context": "The first of three parables spoken only to the disciples. A man finds treasure hidden in a field, hides it again, and in his joy sells everything to buy the field. The stress falls on the finding, the joy, and the total cost gladly paid.",
+      "grammar": "Thēsaurō kekrummenō, ‘treasure that has been hidden’, is a perfect passive participle: it has lain concealed for a long time. The man finds it (heurōn, aorist participle) and ekrupsen, ‘hid it’, the same root as enekrupsen in verse 33 and kekrummena in verse 35. Apo tēs charas autou can be read ‘from his joy’ or ‘from joy over it’, since autou may refer to the man or to the treasure; most translations take it as his joy. Then the verbs shift into the present, hupagei, pōlei, agorazei, ‘he goes, sells, buys’, a vivid present that makes the decisive action happen before the hearer's eyes. Panta hosa echei, ‘everything he has’, leaves nothing held back.",
+      "words": ["G2344", "G2928", "G0068G", "G2147", "G5479", "G5217", "G4453", "G0059"],
+      "history": "Whether the man dealt fairly by hiding the treasure and buying the field without telling the owner has been asked since antiquity. J. Duncan M. Derrett (Law in the New Testament, 1970) examined the case against Jewish law on finds and on the purchase of land. The parable, like the story of the dishonest manager (Luke 16:1-8), does not stop to commend the man's ethics; it uses his single-minded action to show what the kingdom is worth. Buried hoards were real, as the chapter note shows from Josephus and the Copper Scroll.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is worth more than everything else a person has, and the one who sees that gives up everything with joy, not grief. The man finds the treasure unexpectedly, which fits the gift language of verse 11: the kingdom is found, not manufactured."
+        }
+      ],
+      "refs": ["Proverbs 2:4", "Philippians 3:7-8", "Matthew 19:27-29", "Colossians 2:2-3"]
+    },
+    {
+      "v": "45-46",
+      "context": "The merchant, unlike the man in the field, is searching. He deals in fine pearls, finds one of great value, and sells everything to buy it. Treasure and pearl make one point from two directions: found by surprise or after long search, the kingdom is worth all.",
+      "grammar": "Anthrōpō emporō, ‘a man, a merchant’, pairs two nouns in apposition. Zētounti, a present participle, ‘seeking’, makes him a man in the middle of a search, and kalous margaritas, ‘fine pearls’, plural, gives way to hena polutimon margaritēn, ‘one very costly pearl’, where hena, ‘one’, stands first for emphasis. Among the aorists stands pepraken, a perfect, ‘he has sold’; grammarians describe such a perfect in narrative as vivid or dramatic, fixing the sale as a done deal that stands. Eichen, an imperfect, ‘he was having’, sums up his whole stock and fortune.",
+      "words": ["G0444", "G1713", "G2212", "G3135", "G1520", "G4186", "G4097", "G0059"],
+      "text": "Westcott and Hort omit anthrōpō, ‘a man’, and read simply ‘a merchant’; most editions print it. The sense does not change.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The merchant's selling all he has anticipates Jesus' call to the rich young man to sell his possessions and follow him (19:21). The kingdom relativizes every other treasure. The verse teaches not contempt for good things (the merchant was seeking fine pearls) but the recognition of one thing worth all of them."
+        }
+      ],
+      "refs": ["Matthew 19:21", "Matthew 6:19-21", "Revelation 21:21", "Philippians 3:8"]
+    },
+    {
+      "v": "47-50",
+      "context": "The seventh parable returns to the separation at the end. A dragnet catches fish of every kind; on shore the fishermen sit, keep the good, and throw out the bad. Jesus explains it at once: the angels will separate the evil from the righteous and throw them into the furnace. The disciples, several of them fishermen called to fish for people (4:19), know this work from the inside.",
+      "grammar": "Sagēnē blētheisē eis tēn thalassan, ‘a dragnet cast into the sea’, uses an aorist passive participle, and ek pantos genous sunagagousē, ‘gathering from every kind’, stresses the indiscriminate catch. Hote eplērōthē, ‘when it was filled’, gives the moment of decision: sorting waits for a full net. Kathisantes, ‘having sat down’, pictures an unhurried, careful sorting. Ta kala ... ta de sapra, ‘the good ... but the bad’, uses sapros, ‘rotten, worthless’, the word for the bad tree and its fruit in 7:17-18. In verse 49 aphoriousin, ‘they will separate’, is the verb of the sheep and goats in 25:32, and ek mesou tōn dikaiōn, ‘from the midst of the righteous’, implies that the evil lived among them until then. Verse 50 repeats verse 42 word for word.",
+      "words": ["G4522", "G0906G", "G1085H", "G4137", "G2523", "G4550", "G0873", "G2575"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Like the weeds, the net places separation at the end of the age and in the angels' hands. Its distinct note is the net's reach: it gathers every kind, and only the full catch is sorted. The verses warn those inside the net that being gathered is not the same as being kept."
+        },
+        {
+          "id": "church",
+          "note": "Calvin (Institutes 4.1.13) used the net, with the weeds, to argue that the visible church contains the good and the bad until the end, against those who sought a church of the perfect. The image fits the church's mission as fishing (4:19), which gathers widely and does not sort its catch before the time."
+        }
+      ],
+      "refs": ["Matthew 4:18-19", "Matthew 25:31-33", "Matthew 22:9-14", "Ezekiel 47:10", "Matthew 7:17-19"]
+    },
+    {
+      "v": "51-52",
+      "context": "Jesus asks if they have understood, and they say yes, a notable change from Mark, where the disciples' understanding is regularly in doubt. He then describes the disciple who understands as a scribe trained for the kingdom, a householder bringing new and old things out of his storeroom. The saying closes the discourse by turning from the kingdom to its teachers.",
+      "grammar": "Sunēkate tauta panta, ‘did you understand all these things?’, uses suniēmi one last time; the disciples' nai, ‘yes’, places them on the good soil of verse 23. Dia touto, ‘therefore’, links understanding to the scribe's task. Grammateus mathēteutheis tē basileia tōn ouranōn uses mathēteuō, ‘to make a disciple’, as an aorist passive participle, ‘a scribe who has been discipled’; the dative may give the sphere (‘in the kingdom’) or the goal (‘for the kingdom’). Oikodespotēs, ‘master of the house’, is the owner of the field in verse 27. Ekballei, literally ‘throws out’, is a vigorous verb for bringing things out. Kaina kai palaia, ‘new and old’, puts the new first, which some read as the gospel given priority and others as simply idiomatic order.",
+      "words": ["G4920", "G3483", "G1122", "G3100", "G3617", "G1544", "G2344", "G2537", "G3820"],
+      "history": "The scribe in Jewish tradition was a trained interpreter of the law. Ben Sira, writing in Jerusalem around 180 BC, describes the ideal scribe as one who devotes himself to the law of the Most High, seeks out the wisdom of the ancients, and is at home with the hidden meanings and obscurities of parables (Sirach 39:1-3). Jesus claims the title for disciples formed by his teaching, and he later speaks of sending prophets, wise men, and scribes of his own (23:34).",
+      "text": "The later manuscripts behind the King James Version read eis tēn basileian, ‘into the kingdom’, hence the KJV's ‘instructed unto the kingdom of heaven’; the earliest witnesses and modern editions have the plain dative, which modern versions render ‘trained for the kingdom’ (ESV) or “discipled in the kingdom” (BSB).",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The storeroom holds old and new together: Israel's Scriptures and the new light Jesus sheds on them. The verse describes a teacher who does not discard the old for the new or refuse the new for the sake of the old, which is how Matthew himself reads the law and the prophets as fulfilled in Jesus (5:17)."
+        }
+      ],
+      "refs": ["Matthew 23:34", "Matthew 5:17-19", "Matthew 9:16-17", "Ezra 7:6", "Ezra 7:10"]
+    },
+    {
+      "v": "53",
+      "context": "The discourse closes with Matthew's formula. The same words end each of the five great discourses, and here they carry the reader from teaching by the sea to rejection in Jesus' hometown.",
+      "grammar": "Kai egeneto hote etelesen ho Iēsous, ‘and it happened when Jesus had finished’, is the formula of 7:28, 11:1, 19:1, and 26:1. Egeneto is the Septuagint's narrative ‘and it came to pass’, and etelesen, from teleō, ‘to complete’, marks each discourse as a finished whole. Metēren ekeithen, ‘he moved away from there’, uses metairō, a verb found in the New Testament only here and in 19:1, both times right after the closing formula.",
+      "words": ["G1096", "G5055", "G3850", "G3332"],
+      "refs": ["Matthew 7:28-29", "Matthew 11:1", "Matthew 19:1", "Matthew 26:1"]
+    },
+    {
+      "v": "54",
+      "context": "Jesus comes to his hometown and teaches in its synagogue, and the people are astonished. Their astonishment turns at once into a question about the source of his wisdom and powers, the question the whole section from here to 16:20 will keep asking in different forms.",
+      "grammar": "Patris, ‘fatherland’, here means his home town; Matthew has already named it Nazareth (2:23). Edidasken, an imperfect, ‘he was teaching’, suggests more than one occasion. En tē sunagōgē autōn, ‘in their synagogue’, is Matthew's usual phrasing (4:23, 9:35, 12:9), which quietly distances the synagogue from his own community. Hōste ekplēssesthai, ‘so that they were astounded’, uses the verb of the crowds' response to the Sermon on the Mount (7:28), but here astonishment does not lead to faith. Pothen toutō hē sophia hautē kai hai dunameis, ‘from where does this man have this wisdom and these powers?’, uses the dative toutō, ‘to this one’, with a note of contempt.",
+      "words": ["G3968", "G1321", "G4864", "G1605", "G4159", "G4678", "G1411"],
+      "history": "In 2009 the Israel Antiquities Authority archaeologist Yardenna Alexandre excavated a modest dwelling of the first century near the Church of the Annunciation, the first house of that period found in Nazareth, with finds suggesting a small Jewish village. The discovery fits the picture of a village where everyone knew everyone's family. The synagogue of such a place may have been a modest building or a room used for assembly.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Nazareth asks where Jesus got his wisdom, and Matthew has already answered: wisdom is vindicated by her deeds (11:19), and one greater than Solomon is here (12:42). The villagers see the wisdom and cannot accept its source."
+        }
+      ],
+      "parallels": ["Mark 6:1-2", "Luke 4:16-22"],
+      "refs": ["Matthew 2:23", "Matthew 7:28-29", "Matthew 11:19", "Matthew 12:42", "John 7:15"]
+    },
+    {
+      "v": "55-56",
+      "context": "The townspeople list what they know: his father's trade, his mother's name, his four brothers, his sisters. Everything familiar about him becomes a reason not to believe. Matthew has them call him ‘the carpenter's son’, where Mark has ‘the carpenter’ (Mark 6:3).",
+      "grammar": "Ouch houtos estin ho tou tektonos huios, ‘is not this the carpenter's son?’, uses ouch, which expects ‘yes’. Tektōn is a builder or craftsman in wood or stone; Justin Martyr later said Jesus made ploughs and yokes. Hē mētēr autou legetai Mariam, ‘his mother is called Mary’, uses the Semitic form Mariam. The brothers are named Iakōbos, Iōsēph, Simōn, and Ioudas, James, Joseph, Simon, and Judas, all names of Israel's patriarchs and heroes. Adelphos and adelphē first mean full brother and sister but in biblical usage stretch to wider kin, which is why the verse has been read in three ways. Hai adelphai autou ouchi pasai pros hēmas eisin, ‘are not all his sisters with us?’, again expects ‘yes’, and pothen oun toutō tauta panta, ‘from where then does this man have all these things?’, repeats the question of verse 54 as a conclusion.",
+      "words": ["G5045", "G5207", "G3137G", "G0080", "G2385I", "G2501H", "G4613H", "G2455I", "G0079"],
+      "history": "James became the leader of the Jerusalem church (Galatians 1:19, Acts 15:13) and was stoned in AD 62 (Josephus, Antiquities 20.200), and Judas is traditionally the author of the Letter of Jude. Christians have understood the brothers in three ways since the fourth century: as later children of Mary and Joseph (the view Helvidius argued and most Protestants hold), as Joseph's sons by an earlier marriage (Epiphanius and the Orthodox churches), or as cousins (Jerome, Against Helvidius, and much of Western Catholic teaching). Jerome pointed out that Matthew later names another Mary as ‘the mother of James and Joseph’ at the cross (27:56). Each view has an account of the texts the others cite, and all three confess the virgin birth that Matthew 1 teaches.",
+      "text": "Modern editions read Iōsēph, ‘Joseph’, as the second brother's name; the later manuscripts behind the King James Version read Iōsēs, ‘Joses’, the form in Mark 6:3. The two are forms of the same name.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of God grew up with a trade, a named mother, brothers, and sisters in a village that knew him. The offense of Nazareth is the offense of the incarnation itself: God come in a life so ordinary that his neighbors could not see past it."
+        }
+      ],
+      "parallels": ["Mark 6:3", "Luke 4:22", "John 6:42"],
+      "refs": ["Matthew 12:46-50", "Matthew 27:56", "Galatians 1:19", "John 7:5", "Jude 1:1"]
+    },
+    {
+      "v": "57-58",
+      "context": "The village takes offense, and Jesus answers with a proverb about the prophet without honor at home. Matthew says he did not do many miracles there because of their unbelief. Nazareth becomes the rocky ground of the parable, where familiarity kept the word from taking root.",
+      "grammar": "Eskandalizonto en autō, ‘they were taking offense at him’, is an imperfect, a settled attitude rather than a moment; it is the verb of the rocky-ground hearer in verse 21 and of the blessing in 11:6 on the one who does not take offense. Ouk estin prophētēs atimos ei mē en tē patridi kai en tē oikia autou, ‘a prophet is not without honor except in his hometown and in his household’, is a double negative that states the rule by its exception. In verse 58 Matthew writes ouk epoiēsen ekei dunameis pollas, ‘he did not do many mighty works there’, where Mark says ‘he could not do any mighty work there, except’ (Mark 6:5). Dia tēn apistian autōn, ‘because of their unbelief’, gives the reason; apistia, unbelief, stands against the ‘little faith’ Jesus will rebuke in the disciples (14:31).",
+      "words": ["G4624", "G4396", "G0820", "G3968", "G3614H", "G1411", "G0570"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Matthew's wording does not make Jesus' power dependent on faith; he ‘did not’ do many miracles, not that he could not. Unbelief closes people to what Jesus gives, and Matthew consistently links his mighty works to people who come in trust (8:10, 9:22, 9:29, 15:28)."
+        }
+      ],
+      "parallels": ["Mark 6:4-6", "Luke 4:24", "John 4:44"],
+      "refs": ["Matthew 11:6", "Jeremiah 11:21", "John 1:11", "Matthew 9:29"]
+    }
+  ]
+}

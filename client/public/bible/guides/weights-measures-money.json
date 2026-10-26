@@ -1,0 +1,356 @@
+{
+  "id": "weights-measures-money",
+  "title": "Weights, Measures, and Money",
+  "summary": "Cubits, ephahs, shekels, talents, denarii, and the rest: what each unit was, its approximate modern equivalent, how archaeology recovered them, and what the sums meant in a laborer's daily life.",
+  "sections": [
+    {
+      "h": "Reading the numbers",
+      "body": "The Bible measures things constantly: the ark and the tabernacle in cubits, grain in ephahs, silver in shekels, a laborer's pay in denarii. Most of these units fell out of use long ago, and a modern reader can pass over them without any sense of how big, heavy, or valuable something was. Yet the numbers often carry the point of a story. Ruth gleaned about an ephah of barley in one day (Ruth 2:17), which is a remarkable haul for a single gleaner and a sign of Boaz's quiet generosity. The servant in Jesus' parable who owed ten thousand talents (Matthew 18:24) owed a sum no worker could repay in a hundred lifetimes, and the debt he refused to forgive was about four months' wages. The widow's two coins were the smallest money in circulation.\n\nThree cautions apply to every figure in this guide. First, ancient units were never fully standardized. A cubit or a shekel varied from place to place and from period to period, and the Bible itself mentions different standards: a ‘long’ or ‘old’ cubit (2 Chronicles 3:3; Ezekiel 40:5), a ‘sanctuary shekel’ (Exodus 30:13), a shekel by ‘the royal standard’ (2 Samuel 14:26), and silver weighed by ‘the standard of the merchants’ (Genesis 23:16). Second, modern equivalents come from archaeology: inscribed stone weights, jars marked with their capacity, and measured structures such as Hezekiah's tunnel. These give good approximations, not exact values, and every figure below is approximate. Third, money cannot be meaningfully converted into dollars or pounds, because prices and wages relate differently in an ancient farming economy. It is far more useful to compare a sum with a day's wage.\n\nEnglish translations handle the units in different ways. Some, like the ESV and NASB, keep the ancient names (cubits, ephahs, denarii) and explain them in footnotes. Others convert them into modern units in the text. The Berean Standard Bible, quoted in this Study Bible, keeps most Old Testament units but often converts in the New Testament: Emmaus is “about seven miles from Jerusalem” (Luke 24:13) where the Greek says sixty stadia; the stone jars at Cana hold “from twenty to thirty gallons” (John 2:6) where the Greek says two or three measures; the widow puts in coins “which amounted to a small fraction of a denarius” (Mark 12:42) where the Greek names a specific Roman coin, the quadrans. Both approaches are legitimate; a reader comparing translations should know why the numbers look different.\n\nScripture takes honest measurement seriously as a matter of justice. The Law forbids keeping “two differing weights in your bag, one heavy and one light” (Deuteronomy 25:13), and the prophets condemned merchants who shrank the ephah (the measure of grain the buyer received) and enlarged the shekel (the weight of silver the buyer paid), a double cheat Amos exposes in a single line (Amos 8:5). “Dishonest scales are an abomination to the LORD, but an accurate weight is His delight.” (Proverbs 11:1). Archaeologists have found sets of stone weights in Judah whose values do not quite agree, some perhaps from wear and some, very likely, from fraud.",
+      "refs": [
+        "Ruth 2:17",
+        "Matthew 18:24-28",
+        "Deuteronomy 25:13-16",
+        "Amos 8:5",
+        "Proverbs 11:1"
+      ]
+    },
+    {
+      "h": "Length and distance",
+      "body": "Israel, like its neighbors, measured length by the human body. The basic unit was the cubit (Hebrew ammah), the distance from the elbow to the tip of the middle finger. It was divided into two spans (the width of the outstretched hand from thumb to little finger), six handbreadths (the width of the palm at the base of the four fingers), and twenty-four fingers. The best evidence for the common cubit comes from the Siloam inscription, cut into the wall of Hezekiah's water tunnel in Jerusalem around 700 BC and found in 1880: it gives the tunnel's length as 1,200 cubits, and the tunnel measures about 533 meters, which gives a cubit of about 44.4 centimeters, or roughly 17.5 inches. Many reference works round this to 18 inches.\n\nA longer cubit, a handbreadth longer than the common one, was used for sacred buildings. Ezekiel's measuring rod was “six long cubits (each measuring a cubit and a handbreadth)” (Ezekiel 40:5), and the Chronicler notes that Solomon's temple was measured “according to the old standard” (2 Chronicles 3:3). This long or royal cubit was about 52 centimeters (20.5 inches), close to the Egyptian royal cubit.\n\nThe numbers matter in several well-known passages. Noah's ark, at 300 by 50 by 30 cubits (Genesis 6:15), was about 135 meters long, 22 wide, and 13.5 high (roughly 450 by 75 by 45 feet), a long, box-like vessel built to float rather than to sail. Solomon's temple building, 60 by 20 by 30 cubits (1 Kings 6:2), was about 27 meters long, 9 wide, and 13.5 high, smaller than many modern churches; its grandeur lay in its materials and its courts. Goliath's height shows how manuscripts can differ: the Masoretic Hebrew text gives “six cubits and a span” (1 Samuel 17:4), about 2.9 meters or nine and a half feet, while the Septuagint, Josephus, and the Samuel scroll from Qumran (4QSam-a) read four cubits and a span, about 2 meters or six feet nine inches. Either reading makes him a giant among the Israelite soldiers facing him.\n\nThe New Testament uses Greek and Roman distances. The stadion (plural stadia) was about 185 meters (607 feet), the length of a Greek racetrack, so sixty stadia to Emmaus is about 11 kilometers. The Roman mile of a thousand paces was about 1,480 meters (0.92 of an English mile); when Jesus said “if someone forces you to go one mile, go with him two miles” (Matthew 5:41), he used the word for a Roman mile and alluded to the right of Roman soldiers to press civilians into carrying their gear. The ‘Sabbath day's’ distance of Acts 1:12 was the limit the rabbis set for walking on the Sabbath, 2,000 cubits (about 900 meters, a little over half a mile), a figure drawn from passages such as Numbers 35:5 and Joshua 3:4. The fathom, used in Paul's shipwreck (Acts 27:28), was the span of a man's outstretched arms, about 1.85 meters or six feet.",
+      "table": {
+        "caption": "Units of length (all modern values approximate)",
+        "columns": [
+          "Unit",
+          "Relation",
+          "Modern equivalent",
+          "Where it appears"
+        ],
+        "rows": [
+          [
+            "Finger (etsba)",
+            "1/4 handbreadth",
+            "about 1.85 cm (3/4 in)",
+            "Jeremiah 52:21"
+          ],
+          [
+            "Handbreadth (tefach)",
+            "4 fingers; 1/6 cubit",
+            "about 7.4 cm (3 in)",
+            "Exodus 25:25; 1 Kings 7:26"
+          ],
+          [
+            "Span (zeret)",
+            "1/2 cubit",
+            "about 22 cm (9 in)",
+            "Exodus 28:16; 1 Samuel 17:4"
+          ],
+          [
+            "Cubit (ammah)",
+            "2 spans; 6 handbreadths",
+            "about 44.5 cm (17.5 in; often rounded to 18 in)",
+            "Genesis 6:15; Exodus 25:10"
+          ],
+          [
+            "Long or royal cubit",
+            "7 handbreadths",
+            "about 52 cm (20.5 in)",
+            "2 Chronicles 3:3; Ezekiel 40:5"
+          ],
+          [
+            "Reed or rod (qaneh)",
+            "6 long cubits",
+            "about 3.1 m (10 ft)",
+            "Ezekiel 40:5; Revelation 21:15"
+          ],
+          [
+            "Fathom (orguia)",
+            "Span of outstretched arms",
+            "about 1.85 m (6 ft)",
+            "Acts 27:28"
+          ],
+          [
+            "Stadion",
+            "600 Greek feet",
+            "about 185 m (607 ft)",
+            "Luke 24:13; John 11:18; Revelation 21:16"
+          ],
+          [
+            "Roman mile (milion)",
+            "1,000 paces; about 8 stadia",
+            "about 1,480 m (0.92 mi)",
+            "Matthew 5:41"
+          ],
+          [
+            "Sabbath limit",
+            "2,000 cubits (rabbinic)",
+            "about 900 m (0.56 mi)",
+            "Acts 1:12"
+          ]
+        ]
+      },
+      "refs": [
+        "Ezekiel 40:5",
+        "2 Chronicles 3:3",
+        "Genesis 6:15",
+        "1 Samuel 17:4",
+        "Matthew 5:41"
+      ]
+    },
+    {
+      "h": "Dry and liquid measures",
+      "body": "Grain, flour, oil, and wine were measured by volume in standard containers. The central dry measure was the ephah, and the central liquid measure was the bath; Ezekiel says the two were equal, each a tenth of a homer (Ezekiel 45:11). The best archaeological evidence for their size comes from fragments of large storage jars from Lachish and Tell Beit Mirsim inscribed with the word bath, one of them ‘bath of the king’, which suggest a capacity of about 22 liters (about 5.8 US gallons, or a little over half a bushel). This is the figure most modern reference works give, though estimates vary and some older ones run considerably higher.\n\nFrom the ephah the other measures follow. The homer, whose name is related to the Hebrew word for donkey and may originally have meant a donkey-load, held ten ephahs, about 220 liters; the kor was the same size and is used for large quantities, such as the wheat Solomon sent to Hiram (1 Kings 5:11). Half a homer was a lethech (Hosea 3:2). The seah was a third of an ephah, about 7.3 liters: when Abraham told Sarah to bake bread from three seahs of fine flour (Genesis 18:6), and when the woman in Jesus' parable hid leaven in “three measures of flour” (Matthew 13:33, where the Greek word is the seah), the quantity is about 22 liters of flour, enough bread for a hundred people or more. The omer, a tenth of an ephah (Exodus 16:36), about 2.2 liters, was one person's daily ration of manna. For liquids, the hin was a sixth of a bath, about 3.7 liters (roughly a gallon), and the log, used for oil in the cleansing of a healed person (Leviticus 14:10), was a twelfth of a hin, about a third of a liter.\n\nSeveral passages turn on these figures. Isaiah's judgment that “ten acres of vineyard will yield but a bath of wine, and a homer of seed only an ephah of grain” (Isaiah 5:10) describes a harvest that returns a tenth of the seed sown. Ezekiel's siege rations, twenty shekels of food a day and a sixth of a hin of water (Ezekiel 4:10-11), are about 230 grams of food and 0.6 liters of water, a starvation diet. In the New Testament, the six stone jars at Cana held two or three metretes each (about 39 liters apiece), so Jesus made roughly 470 to 700 liters of wine (120 to 180 gallons) for a village wedding. In the parable of the shrewd manager, the debts of a hundred baths of oil and a hundred kors of wheat (Luke 16:6-7) were large commercial quantities, about 2,200 liters of oil and 22,000 liters of wheat. And the rider of Revelation 6:6 announces famine prices: a choinix of wheat, about a liter, a single day's ration for one person, costs a whole denarius, a day's wage.",
+      "table": {
+        "caption": "Measures of capacity (all modern values approximate)",
+        "columns": [
+          "Unit",
+          "Relation",
+          "Modern equivalent",
+          "Where it appears"
+        ],
+        "rows": [
+          [
+            "Homer (dry) or kor (dry and liquid)",
+            "10 ephahs or baths",
+            "about 220 L (6 bushels; 58 US gal)",
+            "Leviticus 27:16; 1 Kings 5:11; Ezekiel 45:14"
+          ],
+          [
+            "Lethech (dry)",
+            "1/2 homer",
+            "about 110 L",
+            "Hosea 3:2"
+          ],
+          [
+            "Ephah (dry)",
+            "1/10 homer",
+            "about 22 L (3/5 bushel)",
+            "Exodus 16:36; Ruth 2:17; Ezekiel 45:11"
+          ],
+          [
+            "Bath (liquid)",
+            "Same as the ephah",
+            "about 22 L (5.8 US gal)",
+            "1 Kings 7:26; Isaiah 5:10; Ezekiel 45:11"
+          ],
+          [
+            "Seah (dry)",
+            "1/3 ephah",
+            "about 7.3 L (2 US gal dry)",
+            "Genesis 18:6; 2 Kings 7:1; Matthew 13:33"
+          ],
+          [
+            "Hin (liquid)",
+            "1/6 bath",
+            "about 3.7 L (1 US gal)",
+            "Exodus 29:40; Ezekiel 4:11"
+          ],
+          [
+            "Omer or tenth (dry)",
+            "1/10 ephah",
+            "about 2.2 L (2 US qt)",
+            "Exodus 16:16, 36"
+          ],
+          [
+            "Kab (dry)",
+            "1/18 ephah",
+            "about 1.2 L",
+            "2 Kings 6:25"
+          ],
+          [
+            "Log (liquid)",
+            "1/12 hin",
+            "about 0.3 L (2/3 US pint)",
+            "Leviticus 14:10"
+          ],
+          [
+            "Metretes (liquid, Greek)",
+            "Greek jar measure",
+            "about 39 L (10 US gal)",
+            "John 2:6"
+          ],
+          [
+            "Modios (dry, Roman)",
+            "Roman peck",
+            "about 8.7 L",
+            "Matthew 5:15 (the ‘basket’)"
+          ],
+          [
+            "Choinix (dry, Greek)",
+            "One day's ration",
+            "about 1.1 L (1 US qt)",
+            "Revelation 6:6"
+          ]
+        ]
+      },
+      "refs": [
+        "Ezekiel 45:10-11",
+        "Genesis 18:6",
+        "Matthew 13:33",
+        "Isaiah 5:10",
+        "John 2:6"
+      ]
+    },
+    {
+      "h": "Weights",
+      "body": "Before coins, weight and money were the same thing: silver and gold were weighed on a balance against stone or metal weights. The basic unit was the shekel, from the Hebrew verb shaqal, ‘to weigh’. Inscribed stone weights from the kingdom of Judah in the eighth and seventh centuries BC, marked with a special sign and numerals in Egyptian hieratic script, show a shekel of about 11.3 to 11.5 grams (about 0.4 ounce), with weights of 2, 4, 8, 16, 24, and 40 shekels.\n\nThe shekel was divided into twenty gerahs (Exodus 30:13; Ezekiel 45:12), so a gerah was a little over half a gram. Two fractions have been found inscribed on actual weights. The beka, half a shekel (Exodus 38:26), is the amount each Israelite man paid for the tabernacle; weights inscribed bq' average about 6 grams. The pim is the most striking case. It occurs once in the Bible, in the list of what the Philistines charged Israel's farmers to sharpen their tools (1 Samuel 13:21), and older translators did not know what it meant; the King James Version guessed ‘a file’. Early in the twentieth century small stone weights inscribed pym began to turn up in excavations, weighing about 7.6 to 7.8 grams, roughly two-thirds of a shekel. The verse turned out to be a price list, and a rare word forgotten for centuries was recovered from the ground.\n\nLarger sums used the mina and the talent. The mina was normally fifty shekels, about 570 grams (1.25 pounds), though Ezekiel defines a mina of sixty (Ezekiel 45:12), the Mesopotamian standard. The talent, originally the load a man could carry, was 3,000 shekels: the tabernacle census of 603,550 men paying half a shekel each produced 100 talents and 1,775 shekels (Exodus 38:25-26), which works out exactly to that ratio. A talent weighed about 34 kilograms (75 pounds). Solomon's annual income of 666 talents of gold (1 Kings 10:14) would have been about 23 metric tons. The Greek and Roman world had its own talent, somewhat lighter, and its own pound, the litra (the Roman libra), about 327 grams (11.5 ounces); Mary anointed Jesus with a litra of nard (John 12:3), and Nicodemus brought a hundred litrai of myrrh and aloes (John 19:39), about 33 kilograms, a quantity fit for a king's burial.",
+      "table": {
+        "caption": "Units of weight (all modern values approximate)",
+        "columns": [
+          "Unit",
+          "Relation",
+          "Modern equivalent",
+          "Where it appears"
+        ],
+        "rows": [
+          [
+            "Gerah",
+            "1/20 shekel",
+            "about 0.57 g",
+            "Exodus 30:13; Leviticus 27:25"
+          ],
+          [
+            "Beka",
+            "1/2 shekel",
+            "about 5.7 to 6 g",
+            "Genesis 24:22; Exodus 38:26"
+          ],
+          [
+            "Pim",
+            "About 2/3 shekel",
+            "about 7.8 g",
+            "1 Samuel 13:21"
+          ],
+          [
+            "Shekel",
+            "20 gerahs",
+            "about 11.4 g (0.4 oz)",
+            "Genesis 23:16; Exodus 30:13"
+          ],
+          [
+            "Mina (maneh)",
+            "50 shekels (60 in Ezekiel)",
+            "about 570 g (1.25 lb)",
+            "1 Kings 10:17; Ezra 2:69; Ezekiel 45:12"
+          ],
+          [
+            "Talent (kikkar)",
+            "60 minas; 3,000 shekels",
+            "about 34 kg (75 lb)",
+            "Exodus 38:25-27; 1 Kings 10:14"
+          ],
+          [
+            "Litra (Roman pound)",
+            "12 Roman ounces",
+            "about 327 g (11.5 oz)",
+            "John 12:3; 19:39"
+          ]
+        ]
+      },
+      "refs": [
+        "Exodus 30:13",
+        "Exodus 38:25-26",
+        "1 Samuel 13:21",
+        "1 Kings 10:14",
+        "John 19:39"
+      ]
+    },
+    {
+      "h": "Money before coins",
+      "body": "For most of the Old Testament period there were no coins. Payment meant weighing out silver, usually in the form of scraps, rings, or small ingots, which archaeologists call hacksilber (‘chopped silver’) and find in hoards at sites across the region. When Abraham bought the cave of Machpelah, he “weighed out for him the price he had named in the hearing of the Hittites: four hundred shekels of silver, according to the standard of the merchants” (Genesis 23:16). Jeremiah, buying his cousin's field, likewise “weighed out seventeen shekels of silver” (Jeremiah 32:9) and had the deed signed and sealed before witnesses. When English Bibles speak of ‘pieces of silver’ in these periods, they mean weights of silver, usually shekels.\n\nSome prices give a sense of scale. Joseph was sold for twenty shekels (Genesis 37:28), the same figure Leviticus 27:5 sets as the valuation of a boy or young man dedicated to the LORD by a vow. The compensation for a slave killed by a goring ox was thirty shekels (Exodus 21:32), and when the prophet Zechariah was paid off with “thirty pieces of silver” he calls it with bitter irony “this magnificent price at which they valued me” (Zechariah 11:12-13); Matthew sees that passage echoed when the priests pay Judas the same sum (Matthew 26:15; 27:9-10). During the siege of Samaria, a donkey's head sold for eighty shekels (2 Kings 6:25), a detail that tells the reader how desperate the famine had become.\n\nCoins were invented in Lydia, in western Asia Minor, in the late seventh century BC, and spread through the Persian Empire. The Persian gold daric, named after Darius I, appears in Ezra 2:69 and Nehemiah 7:70, and the Chronicler uses the term for gifts in David's time (1 Chronicles 29:7), translating the value into the currency of his own day. In the fourth century the Persian province of Judah struck its own tiny silver coins inscribed Yehud. The Hasmonean rulers of the second and first centuries BC minted small bronze coins (the prutah), and Herod and his sons followed them. Jewish coins of this period avoided human portraits out of respect for the command against images, using symbols such as anchors, cornucopias, palm branches, and wreaths instead. During the revolt against Rome (AD 66 to 70), the rebels struck their own silver shekels inscribed ‘Shekel of Israel’ and ‘Jerusalem the holy’, a declaration of independence in metal.",
+      "refs": [
+        "Genesis 23:16",
+        "Jeremiah 32:9-10",
+        "Exodus 21:32",
+        "Zechariah 11:12-13",
+        "Ezra 2:69"
+      ]
+    },
+    {
+      "h": "Money in the New Testament",
+      "body": "In Jesus' day three systems of coinage circulated in Judea and Galilee side by side: Roman imperial coins, Greek coins minted by the cities of the eastern Mediterranean (above all Tyre), and local bronze coins struck by the Herodian rulers and the Roman governors. The Gospels mention coins from all three, and money-changers existed because people arriving from different places needed to convert between them.\n\nThe basic silver coin of the Roman world was the denarius, about 3.8 grams of silver, and it was the usual pay for a day's labor: the landowner in Jesus' parable “agreed to pay them a denarius for the day” (Matthew 20:2). The Greek drachma was valued roughly equal to it; the woman who lost one of her ten drachmas (Luke 15:8) had lost about a day's wage. Below the denarius stood the bronze coins. The Roman as (Greek assarion) was a sixteenth of a denarius; two sparrows sold for one (Matthew 10:29). The quadrans (Greek kodrantes) was a quarter of an as, a sixty-fourth of a denarius. The lepton, the smallest local bronze coin, was half a quadrans. The widow's offering of two lepta (Mark 12:42) was thus about one sixty-fourth of a day's pay, which Jesus said was more than all the rest because it was all she had.\n\nAbove the denarius were larger units. The didrachma (two drachmas) equaled the half-shekel that every Jewish man paid yearly for the temple (Exodus 30:13), which is why Matthew calls the collectors those “of the two-drachma tax” (Matthew 17:24). The coin Peter found in the fish's mouth was a stater or tetradrachm, four drachmas, exactly enough for Jesus and Peter together (Matthew 17:27). The mina was a hundred drachmas, so each servant in Luke's parable received about a hundred days' wages (Luke 19:13). The talent, a unit of account rather than a coin, was 6,000 denarii, about twenty years' wages for a laborer.\n\nWith the day's wage as a measure, familiar passages come into focus. The Samaritan left two denarii with the innkeeper (Luke 10:35), two days' pay, enough for a stay of some days. The disciples reckoned two hundred denarii, most of a year's wages, would not buy bread for the five thousand (Mark 6:37; John 6:7). The nard Mary poured on Jesus was worth more than three hundred denarii (Mark 14:5), a laborer's pay for a year. The servant forgiven ten thousand talents (Matthew 18:24) had been released from a debt of about sixty million denarii, and then choked a fellow servant over a hundred denarii (Matthew 18:28). And in the parable of the talents, even the servant given one talent (Matthew 25:15) had received a fortune; the English word ‘talent’ for a natural gift comes from this parable, not the other way around.",
+      "table": {
+        "caption": "Coins and units of account in the New Testament (values approximate)",
+        "columns": [
+          "Coin or unit",
+          "Metal and origin",
+          "Value",
+          "Where it appears"
+        ],
+        "rows": [
+          [
+            "Lepton",
+            "Bronze; local Jewish",
+            "1/2 quadrans; 1/128 denarius",
+            "Mark 12:42; Luke 12:59; 21:2"
+          ],
+          [
+            "Quadrans (kodrantes)",
+            "Bronze; Roman",
+            "1/4 as; 1/64 denarius",
+            "Matthew 5:26; Mark 12:42"
+          ],
+          [
+            "As (assarion)",
+            "Bronze; Roman",
+            "1/16 denarius",
+            "Matthew 10:29; Luke 12:6"
+          ],
+          [
+            "Denarius",
+            "Silver; Roman, about 3.8 g",
+            "A laborer's day's wage",
+            "Matthew 20:2; 22:19; Luke 10:35; Revelation 6:6"
+          ],
+          [
+            "Drachma",
+            "Silver; Greek",
+            "About 1 denarius",
+            "Luke 15:8-9"
+          ],
+          [
+            "Didrachma",
+            "Silver; Greek",
+            "2 drachmas; the half-shekel temple tax",
+            "Matthew 17:24"
+          ],
+          [
+            "Stater or tetradrachm (the Tyrian shekel)",
+            "Silver; Tyre and other Greek cities, about 14 g",
+            "4 drachmas; 1 shekel",
+            "Matthew 17:27; probably Matthew 26:15"
+          ],
+          [
+            "Mina",
+            "Unit of account",
+            "100 drachmas; about 100 days' wages",
+            "Luke 19:13-25"
+          ],
+          [
+            "Talent",
+            "Unit of account",
+            "6,000 denarii; about 20 years' wages",
+            "Matthew 18:24; 25:14-30"
+          ]
+        ]
+      },
+      "refs": [
+        "Matthew 20:2",
+        "Mark 12:42-44",
+        "Matthew 17:24-27",
+        "Luke 19:13",
+        "Matthew 18:23-35"
+      ]
+    },
+    {
+      "h": "Coins, images, and the temple",
+      "body": "Two scenes in the Gospels turn on the pictures on coins. When Jesus was asked whether it was lawful to pay the Roman tribute, he asked for “the coin used for the tax,” and they brought him a denarius. “Whose image is this,” He asked, “and whose inscription?” (Matthew 22:19-20). The denarius commonly identified with this scene is one of Tiberius, bearing his portrait and a Latin inscription naming him son of the divine Augustus, a claim no observant Jew could accept. Jesus' answer, to give to Caesar what is Caesar's and to God what is God's, turned on the image: the coin bore Caesar's image, and the human being bears God's (Genesis 1:27), a connection many interpreters since the early church have drawn. That his questioners produced the coin in the temple courts was itself telling.\n\nThe temple tax raised the opposite problem. According to the Mishnah (Bekhorot 8:7), the half-shekel and other sums owed to the sanctuary were to be paid in the coinage of Tyre. The Tyrian shekel was prized for its high silver content, around 90 percent or better, and its stable weight, but it bore the head of the Phoenician god Melqart (identified with Heracles) and an eagle. The priests evidently preferred reliable silver to the scruple about images. The Mishnah also says that the money-changers set up their tables in the provinces on the fifteenth of Adar and in the temple on the twenty-fifth, ahead of the tax that fell due in the month of Nisan (Shekalim 1:3). These are the tables Jesus overturned (Mark 11:15). The numismatist Ya'akov Meshorer argued that from about 18 BC these shekels were struck in Jerusalem itself on the Tyrian pattern, a proposal other scholars dispute.\n\nThe thirty pieces of silver paid to Judas are usually thought to have been Tyrian shekels or tetradrachms, the silver coins the temple treasury held, though the Gospel does not name the coin. Thirty shekels was the old price of a slave (Exodus 21:32), and Matthew hears in it Zechariah's thirty pieces thrown to the potter in the house of the LORD (Matthew 27:3-10). The money of the Bible, in the end, keeps pointing past itself: to what a person is worth, and to the cost at which God valued his people.",
+      "refs": [
+        "Matthew 22:15-22",
+        "Genesis 1:27",
+        "Mark 11:15-17",
+        "Matthew 27:3-10",
+        "Exodus 21:32"
+      ]
+    }
+  ]
+}

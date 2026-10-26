@@ -182,7 +182,7 @@ export default function ForPastors() {
                 marginBottom: "var(--s-5)",
               }}
             >
-              The essays pastors keep coming back to.
+              The essays to start with.
             </h2>
             <div
               style={{

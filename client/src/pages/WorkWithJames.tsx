@@ -31,7 +31,7 @@ export default function WorkWithJames() {
     <Layout>
       <SEOMeta
         title="Work With James"
-        description="Connect with James Bell for speaking engagements, consulting, pastoral coaching, and ministry collaboration."
+        description="Speaking, preaching, pastoral coaching, church consulting, and writing with James Bell, pastor of First Baptist Church of Fenton."
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
@@ -66,8 +66,8 @@ export default function WorkWithJames() {
               </h2>
               {[
                 { title: "Speaking & Preaching", desc: "Conferences, retreats, revivals, and pulpit supply. Serious theology, preached like it matters on a Tuesday." },
-                { title: "Pastoral Coaching", desc: "One-on-one coaching for pastors facing burnout, church conflict, leadership development, or personal growth." },
-                { title: "Church Consulting", desc: "Strategic planning, revitalization assessment, leadership team development, and ministry audit." },
+                { title: "Pastoral Coaching", desc: "One-on-one with a pastor who is still doing the work. Burnout, a church in conflict, an elder board that has stopped trusting you, the doubts you cannot say from the pulpit." },
+                { title: "Church Consulting", desc: "For a church that has stalled, or is quietly dying and has not said so. An honest reading of where it actually is, what has to change, and how to change it without losing the people you are there to serve. Fifteen years in one pulpit, and a network of pastors who have been through the same." },
                 { title: "Writing & Ghostwriting", desc: "Book development, sermon series resources, curriculum writing, and collaborative projects." },
               ].map((s) => (
                 <div key={s.title} style={{ marginBottom: "24px", paddingLeft: "16px", borderLeft: "3px solid var(--gold)" }}>
@@ -98,7 +98,7 @@ export default function WorkWithJames() {
                 <div role="status" style={{ padding: "40px 24px", textAlign: "center", background: "var(--ok-bg)", borderRadius: "8px" }}>
                   <CheckCircle size={48} style={{ color: "var(--ok)", margin: "0 auto 16px" }} />
                   <h3 style={{ fontSize: "20px", fontWeight: 600, color: "var(--ok)", fontFamily: "var(--F)", marginBottom: "8px" }}>Message Sent</h3>
-                  <p style={{ fontSize: "15px", color: "var(--ok)", fontFamily: "var(--B)" }}>Thank you for reaching out. I read everything and reply as soon as I can.</p>
+                  <p style={{ fontSize: "15px", color: "var(--ok)", fontFamily: "var(--B)" }}>Thank you for writing. I read everything and reply as soon as I can.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>

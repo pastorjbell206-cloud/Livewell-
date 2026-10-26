@@ -1,0 +1,354 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "John introduces a new person, Lazarus of Bethany, by way of his sisters, and then identifies Mary by an act he has not yet narrated: the anointing of 12:1-8. The chapter's opening already points to the next one, where the dinner in Bethany will be the prelude to Jesus' burial.",
+      "grammar": "Verse 1 names the village twice, apo Bēthanias, ‘from Bethany’, and ek tēs kōmēs Marias kai Marthas, ‘from the village of Mary and Martha’, with two prepositions that are near synonyms here; the second tells the reader which Bethany is meant (there was another beyond the Jordan, 1:28). Verse 2 uses aorist participles, hē aleipsasa ... kai ekmaxasa, ‘the one who anointed ... and wiped’, as a title for Mary, though the act comes only in 12:3. The narrator speaks from after the event and assumes his readers already know the story, which Mark 14:9 says would be told wherever the gospel went. The imperfect ēsthenei, ‘was sick’, and the present participle asthenōn in verse 1 describe an illness in progress.",
+      "words": ["G0963", "G2968", "G0218", "G1591", "G0770H"],
+      "history": "Richard Bauckham, in his essay John for Readers of Mark (in The Gospels for All Christians, 1998), pointed to this verse as evidence that John wrote for readers who already knew Mark's Gospel: Mark tells of an anonymous woman anointing Jesus at Bethany, and John's parenthesis names her before he tells the story. Luke 10:38-42 knows the sisters Martha and Mary but does not name their village or mention a brother.",
+      "refs": ["John 12:1-3", "Mark 14:3-9", "Luke 10:38-42", "John 1:28"]
+    },
+    {
+      "v": "3",
+      "context": "The sisters send Jesus a message that describes the need and makes no request. Like his mother at Cana (2:3), they state the situation and leave the response to him.",
+      "grammar": "The message is three words in Greek after the address: ide hon phileis asthenei, ‘look, the one you love is sick’. Ide is an interjection that calls attention, and the relative clause hon phileis, ‘whom you love’, stands in place of Lazarus's name, as if his claim on Jesus were his friendship rather than his identity. The verb is phileō, the love of friendship and affection; the narrator will use agapaō in verse 5 for the same relationship, which shows that John treats the two verbs as overlapping.",
+      "words": ["G2396", "G5368", "G0770H"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The sisters pray by describing their need and naming Jesus' love, without telling him what to do. The rest of the chapter shows that such prayer is heard, though not answered on the petitioner's schedule."
+        }
+      ],
+      "refs": ["John 2:3", "John 11:5", "John 11:36", "Psalm 38:9"]
+    },
+    {
+      "v": "4",
+      "context": "Jesus' first word on the illness sets the frame for the whole chapter: its outcome is not death but the glory of God and of the Son. The saying echoes his words about the man born blind (9:3), and it is fulfilled twice, at the tomb (verse 40) and at the cross, which this sign sets in motion (verse 53).",
+      "grammar": "Ouk estin pros thanaton, literally ‘is not toward death’, describes where the sickness is heading, its end, rather than whether Lazarus will die; he does die (verse 14). The same phrase appears in 1 John 5:16-17 of sin that does or does not lead to death. The positive clause is huper tēs doxēs tou theou, ‘for the sake of the glory of God’, followed by a purpose clause with an aorist passive subjunctive, hina doxasthē ho huios tou theou di' autēs, ‘so that the Son of God may be glorified through it’. The ‘it’ is the sickness. John's readers will soon see that the Son is glorified by what the sign leads to, his death, since in this Gospel glorification and the cross are one event (12:23, 13:31).",
+      "words": ["G2288", "G5228", "G1391", "G1392"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The verse ties the glory of God to the glory of the Son: what reveals the one reveals the other. It also shows that glory in John is not the absence of suffering; it comes through sickness, death, and grief."
+        }
+      ],
+      "refs": ["John 9:3", "John 11:40", "John 12:23", "1 John 5:16-17"]
+    },
+    {
+      "v": "5-6",
+      "context": "The narrator states that Jesus loved all three members of the family and, in the next breath, that he stayed where he was for two days. John does not soften the collision; he places the love first so that the delay is read in its light.",
+      "grammar": "Verse 5 uses the imperfect ēgapa, ‘he was loving’, of an ongoing attachment, and the verb agapaō where the sisters used phileō. Verse 6 begins with oun, ‘so’ or ‘therefore’, which makes the delay the consequence of the love rather than a contradiction of it, and hōs ... ēkousen, ‘when he heard’. The particle men in tote men emeinen, ‘then indeed he stayed’, sets up the epeita, ‘then after this’, of verse 7: the two days and the departure belong to one deliberate sequence. The aorist emeinen, ‘he remained’, is a plain statement, with no hint of hesitation or struggle.",
+      "words": ["G0025", "G3767", "G3303", "G3306"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "John asks the reader to hold together Jesus' love and his delay, and to read the delay by the love. The verse does not explain every delay in a believer's life, but it rules out the conclusion that waiting means indifference."
+        },
+        {
+          "id": "suffering",
+          "note": "The sisters' grief is real and the delay contributes to it. The text does not deny their pain; it sets it inside a love that is already at work before they can see it."
+        }
+      ],
+      "refs": ["John 2:4", "John 7:6-10", "Psalm 13:1-2", "2 Peter 3:9"]
+    },
+    {
+      "v": "7-8",
+      "context": "Jesus proposes going back to Judea, and the disciples object that the Judean authorities had only just tried to stone him (10:31). Their fear is well founded; the chapter ends with the plot to kill him (verse 53).",
+      "grammar": "Agōmen, ‘let us go’, is a hortatory subjunctive, and the adverb palin, ‘again’, stresses a return to danger. The disciples answer with nun ezētoun se lithasai, literally ‘just now they were seeking to stone you’. The imperfect describes an attempt, not an accomplished act, and nun, ‘now’, means ‘only recently’. Their question kai palin hupageis ekei, ‘and you are going there again?’, echoes his palin with alarm.",
+      "words": ["G0071", "G3825", "G3568", "G2212", "G3034"],
+      "history": "Stoning was the penalty the Law prescribed for blasphemy (Leviticus 24:16), and the Mishnah lists the blasphemer among those to be stoned (m. Sanhedrin 7:4). The attempts in John 8:59 and 10:31-33 were mob actions in the temple, not court sentences; under Roman rule the Jewish authorities did not have the right to carry out capital sentences on their own (18:31), though a crowd could still act, as with Stephen (Acts 7:57-58).",
+      "refs": ["John 8:59", "John 10:31-33", "John 18:31", "Leviticus 24:16"]
+    },
+    {
+      "v": "9-10",
+      "context": "Jesus answers the disciples' fear with a saying about daylight. His appointed time is still running, so he can walk without stumbling; the night will come soon enough (9:4-5, 13:30).",
+      "grammar": "Ouchi dōdeka hōrai eisin tēs hēmeras, ‘are there not twelve hours of the day?’, uses ouchi, which expects the answer yes. The two conditions are parallel: ean tis peripatē en tē hēmera ... ean de tis peripatē en tē nukti, ‘if anyone walks in the day ... but if anyone walks in the night’, with present subjunctives for walking as a way of life. The explanation shifts subtly. In verse 9 the walker sees by to phōs tou kosmou toutou, ‘the light of this world’, the sun; in verse 10 he stumbles because to phōs ouk estin en autō, ‘the light is not in him’. The image moves from daylight outside to light within, which prepares for 12:35-36 and for Jesus as the light of the world (8:12).",
+      "words": ["G3780", "G5610", "G4043", "G4350", "G5457"],
+      "history": "Jews, like Greeks and Romans, divided the daylight into twelve hours from sunrise to sunset, so that an hour was longer in summer than in winter. The parable of the vineyard workers counts the day this way, from the third to the eleventh hour (Matthew 20:3-9).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jesus measures his safety not by the danger in Judea but by the Father's appointed day. The hour of his death is fixed by God, not by his enemies, which is why he can go back."
+        }
+      ],
+      "refs": ["John 9:4-5", "John 12:35-36", "John 8:12", "1 John 2:10-11"]
+    },
+    {
+      "v": "11-13",
+      "context": "Jesus speaks of Lazarus's death as sleep and of his own trip as going to wake him. The disciples take the words literally, a typical Johannine misunderstanding, and the narrator explains.",
+      "grammar": "Kekoimētai, ‘has fallen asleep’, is a perfect: Lazarus is in the state of sleep. The verb koimaomai was a common euphemism for death in Greek and in the Greek Old Testament (for example, of kings who ‘slept with their fathers’, 1 Kings 2:10), and the early church made it its ordinary word for the death of believers. Exupnisō, ‘that I may wake him’, occurs only here in the New Testament. The disciples' reply, sōthēsetai, ‘he will get better’, is literally ‘he will be saved’; sōzō covers physical recovery, but John's readers would hear the second sense. Verse 13 contrasts peri tou thanatou, ‘about his death’, with peri tēs koimēseōs tou hupnou, ‘about the rest of sleep’, a deliberately redundant phrase for ordinary sleep.",
+      "words": ["G2837", "G1852", "G4982", "G2838", "G5258"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Calling death sleep is not a denial that Lazarus is dead (verse 14). It names death from the side of the one who can wake the sleeper, which is how the New Testament teaches believers to speak of their dead (1 Thessalonians 4:13-14)."
+        }
+      ],
+      "refs": ["Mark 5:39", "Daniel 12:2", "1 Thessalonians 4:13-14", "Acts 7:60"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus now speaks plainly: Lazarus is dead. He adds, startlingly, that he is glad he was not there, for the disciples' sake, because what they are about to see will bring them to faith.",
+      "grammar": "Parrēsia, ‘plainly’ or ‘openly’, marks the end of the figure of speech; the same word describes Jesus' public speech elsewhere (7:26, 10:24, 18:20). Chairō di' humas, ‘I rejoice because of you’, is followed by a purpose clause, hina pisteusēte, ‘so that you may believe’. The aorist subjunctive is addressed to disciples who already believe (2:11); in John faith is not a single moment but something that grows and is renewed at each new revelation. Hoti ouk ēmēn ekei, ‘that I was not there’, gives the content of the gladness.",
+      "words": ["G3954", "G5463", "G4100"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus values the disciples' faith more than their comfort, and even more than preventing a friend's death. The verse shows that faith is the aim of the signs, which is the stated aim of the whole Gospel (20:31)."
+        }
+      ],
+      "refs": ["John 2:11", "John 20:31", "John 14:29", "John 16:25"]
+    },
+    {
+      "v": "16",
+      "context": "Thomas speaks for the first time, urging his fellow disciples to go and die with Jesus. His loyalty is sincere and his courage real, though he expects death rather than resurrection, and the Gospel will later show the same man demanding evidence (20:24-28).",
+      "grammar": "Didumos, ‘twin’, translates the name Thomas, from the Aramaic word for a twin; John gives the Greek equivalent here and at 20:24 and 21:2. Agōmen kai hēmeis, ‘let us also go’, repeats Jesus' agōmen of verse 15. The purpose clause hina apothanōmen met' autou, ‘that we may die with him’, most naturally means with Jesus, though a few interpreters have taken it of Lazarus. Summathētais, ‘fellow disciples’, occurs only here in the New Testament.",
+      "words": ["G2381", "G1324", "G4827", "G0071", "G0599"],
+      "history": "Later Syriac-speaking Christianity knew this apostle as Judas Thomas, and the third-century Acts of Thomas, written in Syriac in Edessa, tells of his mission to India, a tradition the Saint Thomas Christians of Kerala still hold. The Gospels give nothing about him beyond the name and these scenes in John.",
+      "refs": ["John 14:5", "John 20:24-28", "John 21:2", "Mark 14:31"]
+    },
+    {
+      "v": "17-19",
+      "context": "When Jesus arrives, Lazarus has been in the tomb four days. The narrator adds the distance from Jerusalem, which explains why so many Judeans have come to comfort the sisters and prepares for the report that reaches the Pharisees (verse 46).",
+      "grammar": "Tessaras ēdē hēmeras echonta en tō mnēmeiō, literally ‘having already four days in the tomb’, uses echō with a time phrase, an idiom for how long someone has been in a condition (compare 5:5, ‘having thirty-eight years in his sickness’). The pluperfect elēlutheisan, ‘had come’, in verse 19 shows the mourners already in the house when Jesus arrives. Hina paramuthēsōntai, ‘in order to console them’, uses the verb for comforting mourners, found also in 1 Thessalonians 2:12 and 5:14.",
+      "words": ["G5064", "G2192", "G3419", "G4712", "G3888"],
+      "history": "A stadion was about 185 to 192 meters, so fifteen stadia is roughly 2.8 kilometers or a little under two miles, which is why the BSB gives the distance in miles. Comforting mourners was an old duty in Israel: Jacob's children rose to comfort him (Genesis 37:35), and Ephraim's brothers came to comfort him when he mourned his sons (1 Chronicles 7:22).",
+      "refs": ["Genesis 37:35", "1 Chronicles 7:22", "John 5:5", "Job 2:11"]
+    },
+    {
+      "v": "20-22",
+      "context": "Martha goes out to meet Jesus while Mary stays seated in the house, a contrast that fits the sisters of Luke 10:38-42. Martha's first words are grief and reproach, and her second are a surprising statement of confidence.",
+      "grammar": "Ei ēs hōde, ouk an apethanen ho adelphos mou, ‘if you had been here, my brother would not have died’, is a condition contrary to fact, with past tenses in both halves and an in the conclusion: it states what did not happen. Verse 22 turns with alla kai nun oida, ‘but even now I know’, and hosa an aitēsē ton theon dōsei soi ho theos, ‘whatever you ask God, God will give you’. Martha uses aiteō, the ordinary word for a request, of Jesus' asking; when Jesus himself speaks of asking the Father he uses erōtaō (14:16, 16:26, 17:9). Whether she hopes for a raising is unclear, and her protest at the stone in verse 39 suggests she does not.",
+      "words": ["G5221", "G2516", "G0302", "G0599", "G6063", "G0154"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Martha believes that Jesus' prayers are heard by God, a belief the chapter confirms (verses 41-42). Her faith is real and incomplete at the same time, and Jesus meets it where it is."
+        }
+      ],
+      "refs": ["Luke 10:38-42", "John 11:32", "John 11:41-42", "John 9:31"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus tells Martha that her brother will rise, and she hears it as the conventional comfort of the Pharisees' creed: he will rise at the last day. She is right, and Jesus is about to show that she has not said enough.",
+      "grammar": "Anastēsetai, ‘he will rise’, is a future middle, and Jesus leaves it open whether he means soon or at the end. Martha resolves the ambiguity toward the end: en tē anastasei en tē eschatē hēmera, ‘in the resurrection at the last day’. The phrase ‘the last day’ is peculiar to John in the New Testament; Jesus uses it four times in 6:39-54 of raising those the Father has given him, and in 12:48 of judgment. Her oida, ‘I know’, is a perfect with present meaning: this is settled conviction, not a guess.",
+      "words": ["G0450", "G0386", "G2078", "G6063"],
+      "history": "Martha's hope was the Pharisees' hope. Daniel 12:2 speaks of many who sleep in the dust awaking, some to everlasting life, and the martyr brothers of 2 Maccabees 7:9 and 7:14 die trusting that the King of the universe will raise them. Josephus, describing the Pharisees for Greek readers, says they held every soul to be imperishable and that the souls of the good pass into another body (Jewish War 2.163; compare Antiquities 18.14), while the Sadducees denied any survival (Antiquities 18.16; Acts 23:8). Mark 12:18-27 shows Jesus siding with the Pharisaic hope against the Sadducees, as he does here with Martha.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus does not correct Martha's belief in a final resurrection; John's Gospel affirms it (5:28-29, 6:40). What he corrects is its distance: the hope she places at the end of history stands before her in person."
+        }
+      ],
+      "refs": ["Daniel 12:2", "John 5:28-29", "John 6:39-40", "Acts 23:6-8"]
+    },
+    {
+      "v": "25-26",
+      "context": "The center of the chapter. Jesus draws Martha's future hope into the present by identifying himself with it: he does not only bring the resurrection, he is it. Two promises follow, one for believers who die and one for believers who live, and then a direct question to Martha.",
+      "grammar": "Egō eimi hē anastasis kai hē zōē, ‘I am the resurrection and the life’, is one of the seven ‘I am’ sayings with a predicate. The articles make each noun definite: not a resurrection but the one resurrection Martha has just named. The two promises form a pair. In verse 25, ho pisteuōn eis eme kan apothanē zēsetai, ‘the one believing in me, even if he dies, will live’, speaks of physical death followed by life. In verse 26, pas ho zōn kai pisteuōn eis eme ou mē apothanē eis ton aiōna, ‘everyone living and believing in me will certainly not die forever’, uses ou mē with the aorist subjunctive, the strongest negation in Greek, together with eis ton aiōna, ‘to the age’, that is, ever. Since believers plainly do die physically, the death denied in verse 26 is death as final loss, the death that separates from God; the living in verse 26 may be those alive in the body or those who have received eternal life. The question pisteueis touto, ‘do you believe this?’, turns doctrine into a personal demand.",
+      "words": ["G1473", "G1510", "G0386", "G2222", "G2198", "G3361", "G0165H", "G4100"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection of the last day is anchored in a person already present. Because life is found in union with Jesus, the believer's future resurrection is certain, and death has lost its power to end the relationship now."
+        },
+        {
+          "id": "union",
+          "note": "Both promises depend on believing eis eme, ‘into me’. Life is not a benefit Jesus hands over at a distance; it is shared by those joined to him, which is why he can promise that the believer will never finally die."
+        }
+      ],
+      "refs": ["John 5:24-29", "John 6:40", "John 14:19", "1 Corinthians 15:20-22", "Romans 8:10-11"]
+    },
+    {
+      "v": "27",
+      "context": "Martha answers with the fullest confession of faith in the Gospel so far. She does not repeat Jesus' words about resurrection; she confesses who he is, which is what makes those words believable.",
+      "grammar": "Egō pepisteuka, ‘I have believed’, is a perfect: a faith that began in the past and holds now, so the BSB rightly renders it ‘I believe’. The confession has three titles in apposition, su ei ho christos ho huios tou theou ho eis ton kosmon erchomenos, ‘you are the Christ, the Son of God, the one coming into the world’. The last is a present participle used as a title, ‘the Coming One’, which gathered messianic hope from Psalm 118:26 and Malachi 3:1 and which John uses of the Prophet in 6:14 and of the Light in 1:9.",
+      "words": ["G4100", "G5547", "G5207", "G2889", "G2064"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Martha's words anticipate almost exactly the purpose of the Gospel, that readers may believe that Jesus is the Christ, the Son of God (20:31). Raymond Brown, in his essay on the roles of women in the Fourth Gospel (1975), observed that in John this confession, which Matthew gives to Peter (Matthew 16:16), is spoken by a woman."
+        }
+      ],
+      "refs": ["John 20:31", "Matthew 16:16", "John 6:14", "John 1:49", "Malachi 3:1"]
+    },
+    {
+      "v": "28-31",
+      "context": "Martha returns and tells Mary privately that the Teacher is calling her. Mary rises at once, and the mourners, assuming she is going to weep at the tomb, follow her, which brings a crowd of witnesses to the tomb without anyone planning it.",
+      "grammar": "Lathra, ‘secretly’ or ‘quietly’, explains why the mourners do not know where Mary is going. Ho didaskalos parestin kai phōnei se, ‘the Teacher is here and is calling you’, uses phōneō, the verb of the shepherd who calls his own sheep by name (10:3); the same verb returns when Jesus calls Lazarus (12:17). Mary rises tachu, ‘quickly’, with an aorist passive, ēgerthē, the verb that elsewhere means ‘was raised’. Verse 30 pauses the action with a pluperfect, oupō elēluthei, ‘he had not yet come’: Jesus has stayed outside the village, perhaps to meet the sisters away from the crowd. The mourners suppose hina klausē ekei, ‘that she will wail there’; klaiō is loud weeping, the word used again in verse 33.",
+      "words": ["G2977", "G1320", "G5455", "G1453", "G2799"],
+      "text": "In verse 31 the earliest manuscripts, including Papyri 66 and 75 and Codex Vaticanus, read doxantes, ‘supposing’; the later majority text reads legontes, ‘saying’, which the King James Version follows (‘saying, She goeth unto the grave’). The difference is whether the mourners said it aloud or only assumed it.",
+      "refs": ["John 10:3", "John 20:16", "John 12:17"]
+    },
+    {
+      "v": "32",
+      "context": "Mary falls at Jesus' feet and repeats Martha's words exactly. The repetition suggests the sisters have said this to each other many times in the four days of waiting. Mary adds no statement of confidence, and Jesus answers her not with teaching but with his own grief.",
+      "grammar": "Epesen autou pros tous podas, ‘she fell at his feet’, is the posture of a suppliant, and Mary is found at Jesus' feet each time she appears (Luke 10:39, John 12:3). Her words differ from Martha's in one detail of order. Martha said ouk an apethanen ho adelphos mou, with ‘my’ at the end; Mary says ouk an mou apethanen ho adelphos, bringing mou, ‘my’, forward. Greek word order can mark emphasis, and the shift may carry the more personal weight of her grief, though the difference is small and should not be pressed.",
+      "words": ["G4098", "G4228", "G3165", "G0599"],
+      "refs": ["John 11:21", "Luke 10:39", "John 12:3", "Mark 5:22"]
+    },
+    {
+      "v": "33",
+      "context": "Seeing Mary and the mourners weeping, Jesus is deeply moved and troubled. This verse, with verses 35 and 38, is the fullest picture of Jesus' emotions in the Gospels, and its first verb is one of the most debated words in John.",
+      "grammar": "Enebrimēsato tō pneumati, ‘he was deeply moved in spirit’, uses embrimaomai. In Greek generally the verb means to snort, as Aeschylus uses it of warhorses (Seven against Thebes 461), and so to be indignant or to rebuke sternly. Its other New Testament uses are stern: Jesus sternly charges healed men (Mark 1:43, Matthew 9:30), and bystanders scold the woman who anointed him (Mark 14:5). Its one use in the Greek Old Testament, at Daniel 11:30, belongs to a scene of hostile rebuke. Tō pneumati, ‘in spirit’, locates the emotion in Jesus' own human spirit. The second verb, etaraxen heauton, ‘he troubled himself’, is an aorist active with a reflexive pronoun, an unusual construction; elsewhere John uses the passive (12:27, 13:21). Taken together, the verbs describe an inner upheaval of indignation and distress, not quiet sympathy. Interpreters disagree about its object. Rudolf Schnackenburg's commentary insisted the verb means an outburst of anger and saw it aimed at the unbelief of the mourners; B. B. Warfield (The Emotional Life of Our Lord, 1912) saw anger at death itself, the enemy; many recent commentators, noting that Jesus weeps a moment later, see anger at death mixed with deep grief. Some English versions render the verb ‘deeply moved’, which softens the Greek.",
+      "words": ["G1690", "G4151G", "G5015", "G1438", "G2799"],
+      "history": "Augustine, preaching on this verse (Tractates on John 49.18), fastened on the reflexive pronoun: no one could trouble Christ but Christ himself. Other people are troubled against their will, he said, but Christ was troubled because he willed it, taking up human weakness by his own power. The reading became a classic way of holding Jesus' real emotion together with his divine freedom.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of God has a human spirit that can be stirred to indignation and distress. John, who has the highest view of Jesus' divinity in the Gospels, is also the one who shows most plainly that his emotions were real, not a performance."
+        }
+      ],
+      "refs": ["Mark 1:43", "Mark 3:5", "John 12:27", "John 13:21", "Hebrews 4:15"]
+    },
+    {
+      "v": "34-35",
+      "context": "Jesus asks where Lazarus has been laid, and the mourners answer with the words of invitation that opened the Gospel's first call to discipleship, ‘come and see’ (1:39, 1:46). Then comes the shortest sentence in the chapter: “Jesus wept.”",
+      "grammar": "Pou tetheikate auton, ‘where have you laid him?’, uses the perfect of tithēmi, the ordinary word for laying a body in a tomb (compare 19:41-42, 20:2). Erchou kai ide, ‘come and see’, is the phrase of 1:39 and 1:46, now spoken to Jesus. Edakrusen, ‘he shed tears’, is the aorist of dakruō, found only here in the New Testament. It differs from klaiō, the loud wailing of Mary and the mourners in verse 33: dakruō describes tears, not public lament. Some grammarians read the aorist as ingressive, ‘he burst into tears’, which fits the context but is not required by the tense.",
+      "words": ["G5087", "G2064", "G1492H", "G1145"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus weeps at the grave of a man he is about to raise. His tears are not despair and not a lack of faith; they are love's response to death, which remains an enemy even when resurrection is certain (1 Corinthians 15:26). The verse gives grieving believers permission to weep without being told their tears are unbelief, and it shows a God who does not stand apart from human sorrow. Grief that overwhelms, or that brings thoughts of not wanting to live, is not a failure of faith and should not be carried alone: a pastor, a doctor, or a crisis line (in the United States, call or text 988) can help."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Word who became flesh (1:14) sheds human tears. Hebrews remembers the same Jesus offering prayers with loud cries and tears (Hebrews 5:7): the one who shares the Father's glory also shares the grief of the people he came to save."
+        }
+      ],
+      "refs": ["John 1:39", "Luke 19:41", "Hebrews 5:7", "Romans 12:15", "Isaiah 25:8"]
+    },
+    {
+      "v": "36-37",
+      "context": "The bystanders divide. Some see love in Jesus' tears; others see a failure of power, recalling the blind man healed in chapter 9. Both groups say more than they know: his love is real, and he could have prevented the death, which is why the delay was deliberate.",
+      "grammar": "Ide pōs ephilei auton, ‘see how he loved him’, uses the imperfect of phileō for continuing affection. The skeptical question, ouk edunato houtos ... poiēsai hina kai houtos mē apothanē, ‘could not this man ... have made it so that this man also did not die?’, begins with ouk, which expects the answer yes: surely he could have. The repeated houtos, ‘this man’, can carry a note of disdain. Ho anoixas tous ophthalmous tou tuphlou, ‘who opened the eyes of the blind man’, points back to 9:1-7, one of the few times John has characters refer to an earlier sign.",
+      "words": ["G5368", "G1410", "G0455", "G3788", "G5185"],
+      "refs": ["John 9:6-7", "John 10:21", "Mark 15:31", "John 11:21"]
+    },
+    {
+      "v": "38",
+      "context": "Jesus comes to the tomb, again deeply moved. John describes the tomb briefly, a cave with a stone, the details that will recur at Jesus' own tomb (20:1).",
+      "grammar": "Embrimōmenos en heautō, ‘being deeply moved within himself’, repeats the verb of verse 33 as a present participle; the indignation has not passed. En heautō, ‘in himself’, keeps it inward. The tomb is spēlaion, ‘a cave’, and lithos epekeito ep' autō, ‘a stone was lying on or against it’. The preposition epi with the dative can mean ‘upon’ or ‘against’, so the phrase fits either a stone laid over a vertical shaft or a stone set against a horizontal entrance; the rock-cut tombs around Jerusalem were usually of the second kind.",
+      "words": ["G1690", "G1438", "G4693", "G3037", "G1945"],
+      "refs": ["John 20:1", "Matthew 27:60", "Mark 16:3-4", "Genesis 23:19"]
+    },
+    {
+      "v": "39-40",
+      "context": "Jesus orders the stone removed, and Martha, the practical sister, objects that after four days the body will smell. Jesus reminds her of his promise: belief will see the glory of God.",
+      "grammar": "Arate ton lithon, ‘take away the stone’, is an aorist imperative addressed to the bystanders; Jesus involves others in the sign, as he will again in verse 44. Martha's reply uses ozei, ‘he smells’, found only here in the New Testament, and tetartaios gar estin, literally ‘for he is a fourth-day man’. Greek could use an adjective of this kind to say how many days something had been happening (compare deuteraioi, ‘on the second day’, in Acts 28:13). Jesus answers with a question expecting yes, ouk eipon soi, ‘did I not tell you?’, and a condition, ean pisteusēs opsē tēn doxan tou theou, ‘if you believe you will see the glory of God’. The saying gathers verse 4 and verses 25-26; John does not record these exact words spoken to Martha, so Jesus is summarizing what he has said.",
+      "words": ["G0142", "G3037", "G3605", "G5066", "G4100", "G3708", "G1391"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is the condition for seeing what God is doing, not the power that makes it happen. Martha's objection does not stop the sign; Jesus asks her to trust him past what her senses tell her."
+        },
+        {
+          "id": "glory",
+          "note": "The glory of God promised in verse 4 is about to be seen in the defeat of death. In John glory is God's presence made visible in the Son's works (1:14, 2:11)."
+        }
+      ],
+      "refs": ["John 11:4", "John 1:14", "John 2:11", "John 20:29"]
+    },
+    {
+      "v": "41-42",
+      "context": "With the stone removed, Jesus lifts his eyes and thanks the Father for having heard him. He explains that he prays aloud for the crowd's sake, so that they may believe the Father sent him. The prayer comes before the miracle, not after it.",
+      "grammar": "Ēren tous ophthalmous anō, ‘he lifted his eyes upward’, is the posture of prayer (17:1). Eucharistō soi hoti ēkousas mou, ‘I thank you that you heard me’, puts the answer in the aorist, as already given. Verse 42 adds with a pluperfect of past knowledge, egō de ēdein hoti pantote mou akoueis, ‘and I knew that you always hear me’, so the thanksgiving is not surprise at an answered prayer but the expression of a settled relationship. The purpose clause hina pisteusōsin hoti su me apesteilas, ‘that they may believe that you sent me’, names the point of the sign: Jesus acts as the Father's envoy.",
+      "words": ["G0142", "G3788", "G2168", "G0191", "G1492I", "G3842", "G0649"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus' prayer is thanksgiving grounded in unbroken communion with the Father, not an appeal for power he lacks. Elijah before the fire at Carmel also prayed aloud so that the people would know the LORD was God (1 Kings 18:36-37); Jesus prays so they will know the Father sent him."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son does the work, the Father hears and sends, and the whole action is presented as the Father's work through the Son (5:19-21). The sign reveals a relationship, not an independent wonder-worker."
+        }
+      ],
+      "refs": ["John 17:1", "1 Kings 18:36-37", "Matthew 11:25", "John 12:30", "John 5:19-21"]
+    },
+    {
+      "v": "43-44",
+      "context": "Jesus calls Lazarus by name in a loud voice, and the dead man comes out, still bound hand and foot, his face wrapped. Jesus tells the bystanders to unbind him and let him go. The raising is told in the fewest possible words.",
+      "grammar": "Phōnē megalē ekraugasen, ‘he cried out with a loud voice’, uses kraugazō, a strong verb for shouting, used later of the crowds crying for crucifixion (19:6, 19:15). The command has no verb: Lazare, deuro exō, literally ‘Lazarus, here, out’. It fulfills 5:28-29, where Jesus said all who are in the tombs will hear his voice and come out. Verse 44 piles up perfect participles, ho tethnēkōs, ‘the man who had died’, and dedemenos, ‘bound’, with a pluperfect, periededeto, ‘had been wrapped around’: he comes out in the state in which he was buried. Keiriai, ‘bands’, was used in the Greek of Proverbs 7:16 for bed straps. The final commands, lusate auton kai aphete auton hupagein, ‘unbind him and let him go’, use luō and aphiēmi, verbs that can also mean ‘release’ and ‘forgive’, though the plain sense here is physical.",
+      "words": ["G5456G", "G2905", "G1204", "G1854", "G2348", "G1210", "G2750", "G4676", "G3089"],
+      "history": "The Mishnah permits the body of someone who has died on the Sabbath to be anointed and washed, and allows its jaw to be tied up so that it does not sink further (m. Shabbat 23:5). The soudarion, a cloth from the Latin sudarium, may have served that purpose or covered the face. John names the same cloth in Jesus' tomb (20:7), where it lies folded apart because he did not need to be unbound.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Lazarus returns to ordinary mortal life and will die again, so this is a restoration rather than the resurrection of the last day. The contrast with Jesus' tomb, where the grave clothes are left behind (20:5-7), marks the difference: Jesus rises into a life death can no longer touch (Romans 6:9)."
+        }
+      ],
+      "refs": ["John 5:28-29", "John 20:5-7", "1 Kings 17:21-22", "Romans 6:9", "Ezekiel 37:12-13"]
+    },
+    {
+      "v": "45-46",
+      "context": "The sign divides its witnesses, as Jesus' words and works have throughout the Gospel (7:43, 9:16, 10:19). Many of the mourners believe; some go to the Pharisees and report.",
+      "grammar": "Theasamenoi, ‘having seen’, is from theaomai, a verb John uses for attentive seeing (1:14, 1:32). Episteusan eis auton, ‘they believed in him’, is John's full expression for trusting faith. The informers' motive is not given: apēlthon pros tous Pharisaious kai eipan autois ha epoiēsen Iēsous, ‘they went to the Pharisees and told them what Jesus had done’. Some may have acted in good faith, expecting the religious authorities to investigate, but the result is the council of verse 47.",
+      "words": ["G2300", "G4100", "G5330", "G4160G"],
+      "text": "In verse 45 some important manuscripts, followed by Westcott and Hort, read the singular ho, ‘what he did’, where most read the plural ha, ‘the things he did’. The singular points to the one sign at the tomb; the plural may take in the whole sequence. The meaning is not affected.",
+      "refs": ["John 7:43", "John 9:16", "John 10:19-21", "John 12:11"]
+    },
+    {
+      "v": "47-48",
+      "context": "The chief priests and Pharisees convene the council. They do not dispute the signs; they fear their political consequences. If Jesus continues, everyone will believe, and Rome will destroy both the temple and the nation.",
+      "grammar": "Sunēgagon ... sunedrion, ‘they gathered a council’, has no article, and scholars debate whether John means a formal session of the Sanhedrin or an ad hoc meeting of its leaders. Ti poioumen, literally ‘what are we doing?’, is a present indicative rather than the deliberative subjunctive; it can be a self-reproach, ‘what are we doing about this?’, or simply ‘what are we to do?’ In verse 48, ean aphōmen auton houtōs, ‘if we let him go on thus’, uses aphiēmi, ‘leave alone’. Hēmōn kai ton topon kai to ethnos, ‘both our place and our nation’, puts ‘our’ first, before both nouns; ho topos, ‘the place’, was a common way of referring to the temple (compare 4:20, Acts 6:13-14, 2 Maccabees 5:19).",
+      "words": ["G4863", "G4892", "G4160G", "G4592", "G0863G", "G4514", "G5117", "G1484"],
+      "history": "The fear was grounded in experience. Josephus reports how the Roman governors dealt with popular figures who drew crowds with promises of signs: Theudas, whose followers were killed or scattered by the governor Fadus around AD 45 (Antiquities 20.97-98), and a prophet from Egypt whose followers were attacked by the governor Felix in the 50s (Jewish War 2.261-263). These events are later than Jesus, but they show the pattern the council expected. In AD 70 Rome did take away both the place and the nation, as John's first readers knew.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The council acts to save the temple, the place where God's presence dwelt, from the one John has presented as the true temple (2:19-21). Their effort to preserve the building leads to the destruction of the body in which God's presence was truly found, and to its raising."
+        }
+      ],
+      "refs": ["John 2:19-21", "John 12:19", "Acts 6:13-14", "Acts 5:34-39"]
+    },
+    {
+      "v": "49-50",
+      "context": "Caiaphas, the high priest, cuts through the debate with contempt and cold calculation: better one man die than the whole nation perish. His words are political expedience, and John is about to show that they are also prophecy.",
+      "grammar": "Humeis ouk oidate ouden, ‘you know nothing’, uses a double negative that strengthens the insult, and the emphatic humeis, ‘you’. Sumpherei humin, ‘it is to your advantage’, uses the verb of profit and expedience (compare 16:7, 18:14). The contrast is between heis anthrōpos, ‘one man’, who dies huper tou laou, ‘for the people’, and holon to ethnos, ‘the whole nation’, which would otherwise apolētai, ‘perish’. Caiaphas uses two words: laos, the people as God's covenant people, and ethnos, the nation as a political body. Huper with the genitive, ‘on behalf of’ or ‘instead of’, is the preposition of substitution used across the New Testament for Christ's death (6:51, 10:11, 1 Corinthians 15:3).",
+      "words": ["G2533G", "G0749", "G1763", "G6063", "G4851", "G5228", "G2992", "G1484", "G0622"],
+      "history": "Josephus describes how the Roman prefect Valerius Gratus changed the high priest four times in quick succession, deposing Annas (Ananus son of Seth) and then Ishmael son of Phabi, Eleazar son of Ananus, and Simon son of Camithus, before appointing Joseph called Caiaphas (Antiquities 18.33-35). Caiaphas then held the office for about eighteen years, until the Syrian legate Vitellius removed him in about AD 36 or 37 (Antiquities 18.95), around the time Pilate was sent to Rome. Josephus tells us nothing of his character, but his long tenure under Pilate says much about his skill with Rome. The phrase ‘high priest that year’ (also verse 51, 18:13) means high priest in that decisive year; it does not imply an annual office, though some older critics took it that way. The rudeness of his reply fits Josephus's remark that the Sadducees, the party of the leading priests (Acts 5:17), were boorish even toward one another (Jewish War 2.166).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Caiaphas states, without meaning it, the logic of substitution: one dies so that many do not perish. The same words that express political expedience express God's purpose, which is why John can call them prophecy in the next verse."
+        }
+      ],
+      "refs": ["John 18:13-14", "John 10:11", "John 3:16", "Acts 5:17"]
+    },
+    {
+      "v": "51-52",
+      "context": "John explains that Caiaphas spoke better than he knew. As high priest he prophesied that Jesus would die for the nation, and John extends the prophecy beyond Israel to the scattered children of God, whom Jesus' death will gather into one.",
+      "grammar": "Aph' heautou ouk eipen, ‘he did not say this from himself’, is the phrase John uses for speech whose source is God (compare 5:19, 7:18, 16:13). Eprophēteusen, ‘he prophesied’, is the only use of the verb in John. Emellen Iēsous apothnēskein, ‘Jesus was going to die’, uses mellō for what is certain to happen. Verse 52 adds that the death was also hina kai ta tekna tou theou ta dieskorpismena sunagagē eis hen, ‘so that he might gather into one the children of God who are scattered’. Dieskorpismena is a perfect passive participle, describing a condition of being scattered. John calls them God's children already, before they are gathered, which fits 10:16, where Jesus has other sheep not yet in this fold.",
+      "words": ["G1438", "G4395", "G3195", "G5043", "G1287", "G4863", "G1520"],
+      "history": "The idea that God could speak through a high priest by virtue of his office had roots in the Urim and Thummim (Numbers 27:21), and Josephus says that the Hasmonean high priest John Hyrcanus heard a divine voice in the temple and possessed the gift of prophecy (Antiquities 13.282-283, 13.299). Early Christians took up John's language of gathering. The Didache, a church manual from about AD 100, prays at the Eucharist that as the bread once scattered on the mountains was gathered into one loaf, so the church may be gathered from the ends of the earth into God's kingdom (Didache 9:4).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus' death is ‘for’ (huper) the nation and for the scattered children of God. Its purpose is not only to rescue individuals but to gather a people, which makes the cross the foundation of the church's unity."
+        },
+        {
+          "id": "church",
+          "note": "The phrase ‘into one’ anticipates Jesus' prayer that his followers may be one (17:21) and his saying about one flock and one shepherd (10:16). The unity of Jews and Gentiles in one people is a result of the cross, not of human agreement."
+        }
+      ],
+      "refs": ["John 10:16", "John 17:21", "Ezekiel 37:21-22", "Isaiah 11:12", "Ephesians 2:14-16"]
+    },
+    {
+      "v": "53-54",
+      "context": "From that day the council's intention is fixed. Jesus stops moving openly among the Judeans and withdraws with his disciples to Ephraim, near the wilderness, until the time he himself chooses to return.",
+      "grammar": "Ap' ekeinēs oun tēs hēmeras ebouleusanto, ‘from that day they took counsel’, marks a turning point: what had been sporadic hostility becomes a settled plan. Hina apokteinōsin auton, ‘that they might kill him’, gives its content. Ouketi parrēsia periepatei, ‘he no longer walked openly’, uses an imperfect for his customary movement and parrēsia, the word that described his public speech. His withdrawal is not flight from the hour but timing: he will return for Passover on his own terms (12:1, 12:12).",
+      "words": ["G1011", "G0615", "G3954", "G4043", "G2187", "G2048"],
+      "text": "At the end of verse 54 the earliest manuscripts and modern editions read emeinen, ‘he stayed’; the later majority text reads dietriben, ‘he spent time’, which the King James Version renders ‘there continued’. Both mean the same.",
+      "refs": ["John 7:1", "John 10:39-40", "John 12:1", "Matthew 26:3-5"]
+    },
+    {
+      "v": "55-57",
+      "context": "The last Passover of the Gospel approaches. Pilgrims arrive early to be purified, and in the temple courts they speculate about whether Jesus will dare to come. Meanwhile the authorities have issued orders to report him. The stage is set for chapter 12.",
+      "grammar": "Ēn de engus to pascha tōn Ioudaiōn, ‘now the Passover of the Jews was near’, is John's third notice of a Passover (2:13, 6:4), the basis for the traditional reckoning of a ministry of more than two years. Hina hagnisōsin heautous, ‘so that they might purify themselves’, uses hagnizō, the verb for ritual purification (Acts 21:24, 26). In verse 56 the pilgrims' question, ti dokei humin; hoti ou mē elthē eis tēn heortēn, ‘what do you think? that he will surely not come to the feast?’, uses ou mē with the subjunctive: they expect that he will not come. The pluperfect dedōkeisan in verse 57, ‘they had given orders’, shows the order already in force, and mēnusē, ‘report’, is a verb of informing.",
+      "words": ["G3957", "G0048", "G1380", "G3361", "G1859", "G1785", "G3377"],
+      "history": "A baraita in the Babylonian Talmud (b. Sanhedrin 43a) says that Yeshu was hanged on the eve of Passover and that for forty days beforehand a herald went out asking anyone who knew anything in his favor to come forward. Peter Schäfer (Jesus in the Talmud, 2007) reads the passage as a late rabbinic response to the Gospel stories rather than independent history, but its placement of the death on the eve of Passover agrees with John's chronology, and its public herald offers a mirror image of the orders to report him here.",
+      "refs": ["Numbers 9:6-12", "John 18:28", "2 Chronicles 30:17-18", "John 7:11"]
+    }
+  ]
+}

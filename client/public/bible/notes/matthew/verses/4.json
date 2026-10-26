@@ -1,0 +1,614 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "“Then” fastens the testing to the baptism: the Son whom the Father has just named (3:17) is led at once by the Spirit who has just come upon him (3:16). The verse states the purpose of the whole scene before it begins, and verses 2 to 11 carry it out.",
+      "grammar": "Tote (‘then’) is Matthew's favorite connective, used some ninety times, far more than in any other Gospel, and it usually marks the next step in a sequence God is directing. Anēchthē is an aorist passive of anagō, ‘he was led up’: the road runs up from the Jordan valley, far below sea level, into the Judean hills. The sentence then names two agents with the same preposition, hypo tou pneumatos (‘by the Spirit’) and hypo tou diabolou (‘by the devil’), joined by the purpose infinitive peirasthēnai (‘to be tested’ or ‘to be tempted’). The one event is the Spirit's purpose and the devil's attack at once, which is why peirazō has to carry both senses here: God proves his Son while the devil tries to make him fall, as in Job 1 and 2. Mark 1:12 is harsher (the Spirit ‘drives him out’), and Luke 4:1 has an imperfect, ‘he was being led’ in the wilderness throughout the forty days.",
+      "words": [
+        "G5119",
+        "G0321",
+        "G4151G",
+        "G3985G",
+        "G1228"
+      ],
+      "history": "The wilderness (erēmos) here is almost certainly the Judean desert, the bare hills that fall east from Jerusalem to the Jordan and the Dead Sea. It was the place of Israel's forty years, of Elijah's flight (1 Kings 19:4), and, in Jesus' own century, of renewal movements: the community at Qumran justified its withdrawal to the desert by Isaiah 40:3, the verse Matthew applied to John (1QS 8:12-16; Matthew 3:3). A later Christian tradition locates the fast on the cliffs above Jericho, at a mountain whose Arabic name, Jebel Quruntul, preserves the Latin quarantena, ‘forty days’.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit who anointed Jesus at the Jordan does not shield him from conflict but leads him into it. The verse teaches that being filled and led by the Spirit and being tested are not opposites, a pattern the church later recognized in its own life (Romans 8:14, 1 Peter 4:12-14)."
+        },
+        {
+          "id": "israel",
+          "note": "Moses told Israel that the LORD had led them in the wilderness forty years to humble and test them (Deuteronomy 8:2). Matthew uses the same shape: the Son is led, into the wilderness, to be tested. Jesus enters Israel's own story at the point where Israel's failure was most exposed."
+        }
+      ],
+      "parallels": [
+        "Mark 1:12",
+        "Luke 4:1"
+      ],
+      "refs": [
+        "Deuteronomy 8:2",
+        "Matthew 3:16-17",
+        "Matthew 6:13",
+        "Hebrews 4:15",
+        "Job 1:8-12"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The fast comes first and the hunger after it, so the tempter arrives when the need is at its sharpest. Only Matthew calls the forty days a fast and adds ‘forty nights’, wording that matches Moses on Sinai (Exodus 34:28) and Elijah's march to Horeb (1 Kings 19:8).",
+      "grammar": "Nēsteusas is an aorist participle, so the fasting is complete before the main verb: ‘having fasted forty days and forty nights, afterward he hungered’. Hysteron (‘afterward’) sharpens the sequence. Matthew thereby places the three temptations at the end of the forty days, where Luke's present participle (‘being tempted’, Luke 4:2) spreads the testing across the whole period. Epeinasen is an ingressive aorist, ‘he became hungry’, a plain statement of bodily need that sets up the first test.",
+      "words": [
+        "G3522",
+        "G5062",
+        "G3571",
+        "G5306",
+        "G3983"
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "“He was hungry” is one of the plainest statements of Jesus' full humanity in the Gospels. The Son of God is tested in a real body with real needs, which is why Hebrews can say he was made like his brothers in every way and is able to help those who are tempted (Hebrews 2:17-18)."
+        },
+        {
+          "id": "israel",
+          "note": "Forty days answers to Israel's forty years. Numbers 14:34 had already linked the two numbers, when the forty days of the spies became the nation's forty years, “a year for each day”; Jesus takes up the number of Israel's judgment and turns it into a time of faithfulness."
+        }
+      ],
+      "parallels": [
+        "Mark 1:13",
+        "Luke 4:2"
+      ],
+      "refs": [
+        "Exodus 34:28",
+        "Deuteronomy 9:9",
+        "1 Kings 19:8",
+        "Numbers 14:34",
+        "Hebrews 2:17-18"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "The first test. The tempter takes up the title the Father has just spoken and invites Jesus to prove it by feeding himself. Jesus answers from Moses' sermon about the manna, the lesson Israel was meant to learn in its own hunger.",
+      "grammar": "Ho peirazōn is a present participle used as a title, ‘the one who tests’, which names the devil by what he does. Ei huios ei tou theou is a first-class condition, which assumes the premise for argument's sake: the force is closer to ‘since you are the Son of God’ than to a doubting ‘if’. The devil does not deny the sonship; he proposes a use for it. Eipe hina, ‘speak so that’, is a command with a purpose clause, and Matthew has the plurals ‘these stones’ and ‘loaves’, where Luke has a single stone and bread. Jesus' reply opens with gegraptai, a perfect passive, ‘it stands written’. In the quotation, zēsetai (‘will live’) is a future used of what is always true, and the two phrases with epi (‘on’, ‘on the basis of’) set bread against every rhēma, every spoken word, that goes out through God's mouth.",
+      "words": [
+        "G3985G",
+        "G1487G",
+        "G5207",
+        "G3037",
+        "G0740",
+        "G1125",
+        "G2198",
+        "G4487"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 8:3",
+          "note": "The Hebrew says that man does not live on bread alone but on kol-motsa fi-YHWH, literally ‘everything that goes out of the mouth of the LORD’. There is no noun for ‘word’ in the Hebrew, and in context the phrase includes the manna itself, food that existed only because God commanded it. The Septuagint supplies rhēma, ‘every word that goes out through the mouth of God’, and Matthew follows that Greek almost exactly, dropping only an article and the repeated ‘man shall live’. Luke 4:4 quotes only the first half. The setting is Moses' explanation of the wilderness years: God let Israel hunger and then fed it with manna to teach dependence on his word. Israel met hunger with grumbling (Exodus 16:3); the Son meets it with trust, and waits for bread God gives rather than making his own."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus treats what is written as what God speaks: the answer to the tempter is not an argument but a quotation, and life itself is said to depend on the words from God's mouth. The verse ranks Scripture above bodily need without despising the need."
+        }
+      ],
+      "parallels": [
+        "Luke 4:3-4"
+      ],
+      "refs": [
+        "Exodus 16:2-4",
+        "John 4:34",
+        "John 6:31-35",
+        "Matthew 14:19-20",
+        "Matthew 27:40"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "The second test moves from the wilderness to the center of Israel's worship. Since Jesus has answered with Scripture, the devil now quotes Scripture too, a psalm of trust turned into a dare.",
+      "grammar": "Paralambanei (‘takes’) is a historic present, the first of a run of present-tense verbs in the scene (legei, deiknysin, aphiēsin) that make the narrative vivid. ‘The holy city’ is Matthew's name for Jerusalem here and at 27:53; no other Gospel uses it. Hieron is the whole temple precinct, courts and porticoes, not the sanctuary building (naos). Bale seauton katō is an aorist imperative, a call for one decisive act. The devil then borrows Jesus' own formula, gegraptai gar (‘for it is written’), so that Scripture is offered as the ground for the leap: God has promised, so make him keep it.",
+      "words": [
+        "G3880",
+        "G0040G",
+        "G4172",
+        "G4419",
+        "G2411",
+        "G0906G",
+        "G1125"
+      ],
+      "history": "Jerusalem is called the holy city in Isaiah 52:1 and Nehemiah 11:1, and the silver shekels struck during the Jewish revolt against Rome (AD 66 to 70) carry the inscription ‘Jerusalem the holy’. A much later midrash, Pesiqta Rabbati 36, compiled centuries after the Gospels, says that when the King Messiah is revealed he will stand on the roof of the temple and announce redemption to Israel. Whether any such expectation existed in Jesus' day cannot be shown, but if it did, the devil's setting is a messianic stage: a public leap and rescue would announce the Messiah in the way the crowd might want.",
+      "ot": [
+        {
+          "ref": "Psalm 91:11-12",
+          "note": "The Hebrew promises that God will command his angels to guard the one who trusts him ‘in all your ways’, and that on their palms they will lift him lest he strike his foot on a stone. The Septuagint (Psalm 90) renders it closely, and Matthew's wording matches that Greek word for word except that it leaves out ‘to guard you in all your ways’ and joins the two verses with ‘and’. The omission matters: the psalm's ‘ways’ are the paths of an obedient life, not a fall chosen to force God's hand. The psalm also had a known use in Jesus' day. The Qumran scroll 11Q11, copied in the first century AD, places Psalm 91 after three otherwise unknown psalms against demons, which suggests that Jews prayed it for protection from evil spirits. The devil, in other words, quotes a psalm people sang against him."
+        }
+      ],
+      "parallels": [
+        "Luke 4:9-11"
+      ],
+      "refs": [
+        "Isaiah 52:1",
+        "Matthew 27:53",
+        "Psalm 91:13",
+        "Matthew 26:53",
+        "Matthew 27:40-42"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "Jesus answers Scripture misused with Scripture rightly read. The command about Massah exposes the leap as what it is: a demand that God prove his presence on terms set by the one who doubts it.",
+      "grammar": "Ephē is an imperfect of the verb ‘to say’, a common way of introducing a reply. Palin gegraptai, ‘again it is written’ or ‘on the other hand it is written’, sets one text beside another: the psalm is not denied, but it is read under the command. Ekpeiraseis is the intensive compound of peirazō, ‘put to the test’, and the future indicative with ouk is the Septuagint's form for a standing prohibition, ‘you shall not’. Some readers hear Jesus telling the devil not to test him, the Lord; most take the words as Jesus applying Israel's command to himself, as he does in the other two answers.",
+      "words": [
+        "G5346",
+        "G3825",
+        "G1125",
+        "G1598",
+        "G2962G"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:16",
+          "note": "The Hebrew is plural, lo tenassu, ‘you (all) shall not test the LORD your God as you tested him at Massah’. The Septuagint turns it into the singular, ouk ekpeiraseis, and translates the place name Massah by its meaning, ‘at the Testing’. Matthew quotes the first clause of the Greek exactly, and its singular makes the command a word to one person. The reference is to Exodus 17:1-7, where thirsty Israel quarreled with Moses and tested the LORD, saying, “Is the LORD among us or not?” To jump and wait for angels would be to ask the same question with one's life. Psalm 95:8-9 and Hebrews 3:8-9 keep Massah as the byword for faith that demands proof."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith takes God at his word without staging tests to make him prove it. Jesus will be kept by his Father, but through the cross and the resurrection, not by being spared a fall; the same refusal returns when he is challenged to come down from the cross (27:40-43)."
+        }
+      ],
+      "parallels": [
+        "Luke 4:12"
+      ],
+      "refs": [
+        "Exodus 17:1-7",
+        "Psalm 95:8-9",
+        "Matthew 16:1-4",
+        "1 Corinthians 10:9"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "The third test reaches the highest place and the highest stakes. The devil no longer says ‘If You are the Son of God’; he offers everything for one act of homage.",
+      "grammar": "Oros hypsēlon lian, ‘a mountain exceedingly high’, uses an adverb of degree that Matthew likes. Deiknysin (‘shows’) is another historic present, and the verb echoes the Septuagint of Deuteronomy 34:1, where the LORD ‘showed’ Moses all the land from Mount Nebo. Pasas tas basileias tou kosmou kai tēn doxan autōn joins the kingdoms with their glory, their splendor and wealth. In verse 9 tauta soi panta dōsō puts ‘these things’ and ‘to you’ first: everything in view is offered. The condition is ean with the aorist subjunctive, ‘if you will fall and worship’, a single act on which the gift depends. Pesōn proskynēsēs describes the physical gesture of prostration that proskyneō names. Matthew does not include the claim in Luke 4:6 that the kingdoms have been handed over to the devil.",
+      "words": [
+        "G3735",
+        "G5308",
+        "G3029",
+        "G1166",
+        "G0932",
+        "G2889",
+        "G1391",
+        "G1325",
+        "G4098",
+        "G4352"
+      ],
+      "history": "Prostration before a ruler was the defining gesture of the Persian court, and for Greeks it marked a line between a man and a god. Arrian (Anabasis 4.10-12) tells how Alexander the Great tried to introduce it among his Macedonians in 327 BC and how the historian Callisthenes refused. By the first century the gesture had passed into the ruler cult of the eastern Roman provinces. The devil's price is not a feeling but an act, the same act by which subject peoples acknowledged their masters.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The offer is real power for the price of misplaced worship. The verse shows idolatry at its root: not a statue but the willingness to bow to whatever will deliver the world on easier terms than God's."
+        },
+        {
+          "id": "kingdom",
+          "note": "What the devil offers from a high mountain, the Father gives on a mountain in Galilee after the cross: “All authority in heaven and on earth has been given to Me” (28:18). The kingdom Jesus will announce in verse 17 is not taken by bargain but received from God."
+        }
+      ],
+      "parallels": [
+        "Luke 4:5-7"
+      ],
+      "refs": [
+        "Deuteronomy 34:1-4",
+        "Daniel 7:14",
+        "Matthew 28:16-18",
+        "John 12:31",
+        "Revelation 11:15"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Jesus dismisses the tempter by name and answers from the chapter of the Shema. The contest ends where it began, with what is written, and with worship as the question beneath the other two.",
+      "grammar": "Hypage is a present imperative, ‘go away’, and Satana is the vocative of the Aramaic-derived name, used here for the first time in Matthew. The quotation begins kyrion ton theon sou, putting ‘the Lord your God’ first for emphasis. Proskynēseis and latreuseis are futures used as commands, the form the Septuagint uses for law. Proskyneō is the gesture of homage; latreuō is religious service, the verb used in the Septuagint for Israel's worship of the LORD and for serving other gods. Monō (‘only’) stands at the point of emphasis.",
+      "words": [
+        "G5217",
+        "G4567",
+        "G2962G",
+        "G4352",
+        "G3441",
+        "G3000"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:13",
+          "note": "The Hebrew reads ‘the LORD your God you shall fear, and him you shall serve, and by his name you shall swear’. It stands in Moses' warning that when Israel enters a land of houses it did not build and eats its fill, it must not forget the LORD and follow the gods of the peoples around it (6:10-15). The Septuagint keeps ‘fear’ and adds monō, ‘him only’, which the Hebrew implies. Matthew, like Luke 4:8, reads proskynēseis, ‘you shall worship’, in place of ‘fear’, answering the devil's demand in its own word, and keeps the Septuagint's ‘only’. The verse written against the gods of Canaan now guards the Son against the tempter who offers him the nations."
+        }
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Worship and service belong to God alone, and the two verbs cannot be divided: to bow is to serve. Jesus refuses proskynēsis to any creature, yet in Matthew he receives it from the Magi, the disciples in the boat, and the women and the Eleven after the resurrection (2:11, 14:33, 28:9, 28:17), a silent claim about who he is."
+        }
+      ],
+      "text": "Some later manuscripts read ‘Get behind me, Satan’ (hypage opisō mou), almost certainly borrowed from Jesus' rebuke of Peter in 16:23. Codex Sinaiticus and Codex Vaticanus, the two oldest complete Greek manuscripts of Matthew, have only hypage, Satana, and modern editions follow them; the King James Version's ‘Get thee hence, Satan’ also reflects the shorter text.",
+      "parallels": [
+        "Luke 4:8"
+      ],
+      "refs": [
+        "Deuteronomy 10:20",
+        "Matthew 16:23",
+        "Exodus 20:3-5",
+        "Revelation 22:8-9",
+        "Matthew 28:17"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The devil leaves, and the care Jesus refused to force arrives unasked. Mark 1:13 mentions the wild beasts and the angels; Luke 4:13 says the devil left ‘until an opportune time’; Matthew alone describes the departure and the angels' coming as one movement.",
+      "grammar": "Aphiēsin (‘leaves’) is the last historic present of the scene. Idou (‘behold’), a word Matthew uses more than sixty times, draws attention to the reversal. Prosēlthon is the same verb used of the tempter ‘coming’ in verse 3: the tempter came, and now angels come. Diēkonoun is an imperfect, ‘they were serving him’, an ongoing ministry. Diakoneō often means waiting at table (8:15, where Peter's mother-in-law serves), and many commentators think it means the angels brought food to the fasting Jesus, as an angel fed Elijah on his way to Horeb (1 Kings 19:5-8).",
+      "words": [
+        "G0863G",
+        "G2400",
+        "G0032G",
+        "G4334",
+        "G1247"
+      ],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angels the devil wanted Jesus to summon by a leap come on the Father's initiative once the test is over. The verse presents angels as servants of the Son, ready at his Father's command (26:53), and it answers Psalm 91's promise in the psalm's own way: protection given, not extracted."
+        }
+      ],
+      "parallels": [
+        "Mark 1:13",
+        "Luke 4:13"
+      ],
+      "refs": [
+        "1 Kings 19:5-8",
+        "Hebrews 1:14",
+        "Matthew 26:53",
+        "Matthew 8:15",
+        "Luke 22:43"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The scene jumps to John's arrest, which Matthew narrates only later (14:3-12). The forerunner's silencing is the signal for Jesus' public work to begin, and Galilee, not Jerusalem, is where it begins.",
+      "grammar": "Akousas (‘having heard’) makes John's arrest the occasion of the move. Paredothē, an aorist passive of paradidōmi, ‘was handed over’, names no agent. It is the verb Matthew uses of Judas's betrayal (10:4, 26:15) and of the Son of Man being delivered into human hands (17:22, 20:18-19), so John's fate already sketches Jesus' own. Anechōrēsen, ‘he withdrew’, is Matthew's word for moving away from a threat into the place God has appointed (2:14, 2:22).",
+      "words": [
+        "G0191",
+        "G2491G",
+        "G3860",
+        "G0402",
+        "G1056G"
+      ],
+      "history": "Galilee belonged to Herod Antipas, the ruler who arrested John, so the move did not take Jesus beyond his reach. Antipas had rebuilt Sepphoris, a few miles north of Nazareth, and founded a new capital on the lakeshore, Tiberias, named for the emperor, around AD 20. The Gospels never show Jesus entering either city: Sepphoris is not named in the New Testament at all, and Tiberias appears only as a place boats came from (John 6:23). His work lay in the villages and lakeside towns. John's Gospel adds that before John's arrest Jesus had spent a period baptizing in Judea alongside him (John 3:22-24) and then left for Galilee (John 4:1-3), so the Synoptic Gospels begin their account of the ministry at a later point.",
+      "parallels": [
+        "Mark 1:14",
+        "Luke 4:14",
+        "John 4:1-3"
+      ],
+      "refs": [
+        "John 3:24",
+        "Matthew 14:3-5",
+        "Matthew 17:22",
+        "Matthew 2:22"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Jesus leaves the town where he grew up and settles in Capernaum on the lake. Matthew gives no reason for the move; Luke places a rejection at Nazareth before it (Luke 4:16-31). Matthew's interest is the location, which he names in Isaiah's terms to prepare the quotation that follows.",
+      "grammar": "Elthōn katōkēsen (‘having come, he settled’) repeats word for word the phrase of 2:23, where the family ‘came and settled’ in Nazareth to fulfill what the prophets said. Now Jesus comes and settles in Capernaum, and again a prophecy is fulfilled: Matthew marks each move of Jesus' life as directed. Katoikeō means to take up residence, not to pass through, and 9:1 calls Capernaum ‘his own town’. Parathalassian, ‘beside the sea’, occurs only here in the New Testament. En horiois Zaboulōn kai Nephthalim, ‘in the territory of Zebulun and Naphtali’, names the old tribal allotments, which had long ceased to be administrative units. The spelling Nazara appears in the earliest manuscripts, as in Luke 4:16.",
+      "words": [
+        "G2641",
+        "G3478",
+        "G2064",
+        "G2730",
+        "G2584",
+        "G3864",
+        "G3725",
+        "G2194",
+        "G3508"
+      ],
+      "history": "Capernaum is the Greek form of Kefar Nahum, ‘village of Nahum’. It lay on the northwest shore, a short distance from the Jordan's inflow, which was the boundary with Philip's territory, and so it had a toll station for traffic between the two (9:9). Franciscan excavations led by Virgilio Corbo and Stanislao Loffreda from 1968 uncovered a town of basalt houses, a white limestone synagogue of the late Roman period built on older foundations, and a house beneath an octagonal fifth-century church that early Christians venerated as Peter's.",
+      "parallels": [
+        "Luke 4:16",
+        "Luke 4:31",
+        "Mark 1:21"
+      ],
+      "refs": [
+        "Matthew 2:23",
+        "Matthew 9:1",
+        "Matthew 11:23",
+        "John 2:12"
+      ]
+    },
+    {
+      "v": "14-16",
+      "context": "The fifth of Matthew's formula quotations reads the move to Capernaum through Isaiah's promise that the northern lands first overrun by Assyria would be first to see the light. The quotation names places in verse 15 and gives the promise in verse 16.",
+      "grammar": "Hina plērōthē to rhēthen dia Ēsaiou, ‘so that what was spoken through Isaiah might be fulfilled’, is the formula Matthew uses throughout: the preposition dia (‘through’) makes the prophet the channel of the speaker, who in 1:22 and 2:15 is named as the Lord. Verse 15 is a string of nominatives with no verb, a heading of places, and hodon thalassēs (‘the Way of the Sea’) stays in the accusative, carried over from the Septuagint, which reflects a Hebrew phrase used adverbially, ‘toward the sea’. In verse 16 kathēmenos, ‘sitting’ (BSB “living”), appears twice. Eiden (‘saw’) is an aorist indicative, and aneteilen (‘has dawned’, literally ‘rose’) is the verb for the sun rising (5:45) and, in the Septuagint of Numbers 24:17, for the star that rises out of Jacob.",
+      "words": [
+        "G2443",
+        "G4137",
+        "G2046",
+        "G2268",
+        "G3598",
+        "G1056G",
+        "G1484",
+        "G2521",
+        "G5457",
+        "G0393"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 9:1-2",
+          "note": "In Hebrew Bibles these verses are 8:23 and 9:1. The Hebrew contrasts a former time, when God brought the land of Zebulun and the land of Naphtali into contempt, with a latter time, when he will make glorious the Way of the Sea, beyond the Jordan, gelil haggoyim, ‘the district of the nations’. Then: ‘the people walking in darkness have seen (ra'u) a great light; those dwelling (yoshve) in the land of deep shadow, light has shone on them’. The Septuagint diverges: its first verse is reworded and adds those who live along the coast, and it turns the promise into a command and a future, ‘see (idete) a great light’ and ‘light will shine on you’. Matthew follows neither closely. His indicative ‘saw’ matches the Hebrew (and the great Isaiah scroll from Qumran), his ‘sitting’ may render the Hebrew yoshve, which can mean both dwelling and sitting, in both lines, and it recalls Psalm 107:10, “Some sat in darkness”. His ‘has dawned’ turns Isaiah's ‘shone’ into a rising. The original setting is the darkness of Isaiah 8:21-22 and the Assyrian conquest of the north (2 Kings 15:29), and the promise continues in 9:6-7 with the child who will sit on David's throne. Matthew quotes the opening and expects the reader to know the rest."
+        }
+      ],
+      "history": "The Latin Vulgate renders ‘the Way of the Sea’ as via maris, and modern scholars borrowed that phrase as a name, the Via Maris, for the great trunk road from Egypt through the coastal plain and Galilee to Damascus. No ancient writer uses the name for the road, and in Isaiah the phrase probably meant the district toward the sea, but the connection is apt: Capernaum lay near that road, where Galilee met the traffic of the nations.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Matthew keeps the phrase ‘Galilee of the Gentiles’ though the region was by then largely Jewish, because it points where his Gospel is going. The light rises first on Israel's most humiliated corner, and the nations are named at the start of a ministry that will end with the command to disciple them all (28:19)."
+        },
+        {
+          "id": "messiah",
+          "note": "By quoting Isaiah 9, Matthew claims that the light of the Davidic child's reign has begun to rise with Jesus' coming to Galilee. The verse teaches fulfillment as the arrival of a promised person, not only the matching of a place name."
+        }
+      ],
+      "text": "In verse 16 the Nestle-Aland text reads skotei, ‘darkness’; Westcott and Hort and some other editions print the synonym skotia, following a different group of early manuscripts. The sense is identical.",
+      "refs": [
+        "2 Kings 15:29",
+        "Isaiah 9:6-7",
+        "Isaiah 42:6-7",
+        "Luke 1:78-79",
+        "John 8:12"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The public ministry begins with a sentence of proclamation. Jesus' first recorded message is word for word what John preached (3:2), and the disciples will be sent with it (10:7). Mark 1:15 gives a fuller form: the time is fulfilled, the kingdom of God has come near, repent and believe in the gospel.",
+      "grammar": "Apo tote ērxato, ‘from then he began’, recurs only at 16:21, and Jack Dean Kingsbury built his three-part outline of the Gospel on the pair. Kēryssein, ‘to proclaim’, is the verb of a herald announcing news. Metanoeite is a present imperative plural: repentance is an ongoing turning of the whole community, not a single moment. Ēngiken is the perfect of engizō, ‘draw near’, and the tense points to a present result, ‘has drawn near and is now at hand’. C. H. Dodd (The Parables of the Kingdom, 1935) argued that it meant ‘has arrived’, the same as ephthasen in 12:28; Werner Georg Kümmel and most later scholars replied that it means very near but not yet fully come. The conjunction gar (‘for’) makes the kingdom's nearness the reason to repent: repentance responds to the kingdom, it does not bring it. Basileia tōn ouranōn is literally ‘the kingdom of the heavens’, plural like the Hebrew shamayim.",
+      "words": [
+        "G5119",
+        "G0757",
+        "G2784",
+        "G3340",
+        "G1448",
+        "G0932",
+        "G3772"
+      ],
+      "history": "Matthew alone in the New Testament says ‘kingdom of heaven’, some thirty-two times, and uses ‘kingdom of God’ only four times (12:28, 19:24, 21:31, 21:43). The phrase is Jewish: the Mishnah calls reciting the Shema accepting ‘the yoke of the kingdom of heaven’ (m. Berakhot 2:2). Gustaf Dalman (Die Worte Jesu, 1898) explained Matthew's usage as reverent avoidance of the word God, and that became the standard view. Jonathan Pennington (Heaven and Earth in the Gospel of Matthew, 2007) points out that Matthew uses ‘God’ freely and argues that ‘heaven’ is part of a deliberate contrast between heaven and earth: God's reign from heaven set against the kingdoms of the earth, the very kingdoms the devil has just offered. The two explanations can stand together.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The first thing Jesus proclaims is not himself but God's reign drawing near. The perfect tense holds together what the rest of Matthew holds together: the kingdom is already pressing into the present in Jesus' words and works, and still to come in fullness."
+        },
+        {
+          "id": "repentance",
+          "note": "Repentance here is the right response to news, not a price paid to earn it. The present imperative describes a continuing turning of mind and life toward God, which the next scene shows in the fishermen who leave their nets."
+        }
+      ],
+      "parallels": [
+        "Mark 1:14-15",
+        "Luke 4:14-15"
+      ],
+      "refs": [
+        "Matthew 3:2",
+        "Matthew 10:7",
+        "Matthew 16:21",
+        "Matthew 12:28",
+        "Daniel 2:44"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "The first call scene begins with Jesus seeing. The fishermen are at work, and the narrator's explanation, ‘for they were fishermen’, sets up the wordplay of the next verse.",
+      "grammar": "Peripatōn, a present participle, catches Jesus in motion along the shore. Eiden (‘he saw’) puts the initiative with him: disciples in the Jewish world usually chose a teacher, but here the teacher chooses. Simōna ton legomenon Petron, ‘Simon, the one called Peter’, uses the name Jesus will give him in 16:18, and 10:2 lists him ‘first’ among the Twelve. Ballontas amphiblēstron (‘casting a throw net’) uses a noun built from amphi, ‘around’, the circular net cast by hand. The clause ēsan gar halieis gives the reason and plants halieis, ‘fishermen’, which Jesus will take up.",
+      "words": [
+        "G4043",
+        "G1492H",
+        "G4613O",
+        "G3004H",
+        "G4074G",
+        "G0406",
+        "G0906G",
+        "G0293",
+        "G0231"
+      ],
+      "history": "The lake has several names in Scripture: Kinnereth in the Old Testament (Numbers 34:11), the lake of Gennesaret (Luke 5:1), and the Sea of Tiberias (John 6:1, 21:1), from Antipas's new city. It is a freshwater lake lying about 210 meters (some 700 feet) below sea level. Andrew is a Greek name and Simon a Greek form common among Jews for Shimon; John 1:44 says the brothers came from Bethsaida, just across the Jordan in Philip's territory, and Matthew 8:14 later places Peter's house in Capernaum.",
+      "parallels": [
+        "Mark 1:16",
+        "Luke 5:1-3",
+        "John 1:40-42"
+      ],
+      "refs": [
+        "Matthew 10:2",
+        "Matthew 16:18",
+        "John 1:44",
+        "Matthew 8:14"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "The call is a command and a promise, and the answer is immediate. No miracle and no explanation precede it in Matthew; Luke 5:1-11 attaches a miraculous catch, and John 1:35-42 tells of an earlier meeting through John the Baptist.",
+      "grammar": "Deute opisō mou is literally ‘come, after me’: deute is a plural interjection, ‘come on’, and opisō mou is the position of a follower walking behind a master, the phrase of 16:24. Poiēsō hymas halieis anthrōpōn is a future, ‘I will make you fishers of people’, which makes discipleship Jesus' work in them before it is theirs; Mark 1:17 adds genesthai, ‘to become’, stressing the process. Anthrōpōn is generic, ‘human beings’. In verse 20 eutheōs (‘at once’) and the aorist participle aphentes (‘having left’) make the response a single, decisive movement, and ēkolouthēsan (‘they followed’) is the verb of discipleship throughout Matthew.",
+      "words": [
+        "G1205",
+        "G3694",
+        "G4160G",
+        "G0231",
+        "G0444",
+        "G2112",
+        "G0863G",
+        "G1350",
+        "G0190"
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 16:16",
+          "note": "The LORD says, “I will send for many fishermen”, dayyagim in Hebrew and halieis in the Septuagint, the word Matthew uses. In Jeremiah the image is double: just before it God promises to bring Israel back from the lands of exile in a new exodus (16:14-15), and the fishermen and hunters then gather the people for judgment (16:16-18). Amos 4:2 uses fishhooks for judgment too, while Ezekiel 47:10 pictures fishermen spreading nets along a healed Dead Sea when the river flows from the temple. Jesus takes the prophets' image of God's final gathering and gives it to men who fish for a living: the gathering has begun, and it now means calling people into the kingdom."
+        },
+        {
+          "ref": "1 Kings 19:19-21",
+          "note": "The closest Old Testament pattern for a call is Elijah throwing his cloak over Elisha at the plough. Elisha answers, “Please let me kiss my father and mother goodbye”, and is allowed to go and hold a farewell feast before following. Matthew's call is sharper: the brothers leave at once, and in 8:21-22 Jesus refuses even the delay to bury a father. The authority to call belongs to Jesus as it belonged to God, not to a prophet."
+        }
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first words Jesus speaks to future apostles already contain the mission: they are called to follow and to become gatherers of people. Discipleship and mission are one call from the start, and 28:19 completes what this verse begins."
+        }
+      ],
+      "parallels": [
+        "Mark 1:17-18",
+        "Luke 5:10-11"
+      ],
+      "refs": [
+        "Ezekiel 47:10",
+        "Matthew 8:21-22",
+        "Matthew 16:24",
+        "Matthew 13:47-48",
+        "Matthew 28:19"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "The second call repeats the first, step for step, with one addition that raises the cost: this pair leaves not only the tools of the trade but the boat and their father. Mark 1:20 adds that Zebedee was left with the hired men.",
+      "grammar": "Probas ekeithen, ‘going on from there’, links the scenes. Iakōbon ton tou Zebedaiou uses the article with a genitive name, the Greek idiom for ‘the son of’. Katartizontas, ‘putting in order’, is the ordinary word for mending nets, but its range runs to restoring and equipping (Galatians 6:1, Hebrews 13:21). Ekalesen, ‘he called’, is the first use in Matthew of kaleō for Jesus summoning a person. Verse 22 matches verse 20 with eutheōs and aphentes, but the objects climb: to ploion kai ton patera, ‘the boat and the father’, livelihood and family together.",
+      "words": [
+        "G4260",
+        "G2385G",
+        "G2199G",
+        "G2491H",
+        "G4143",
+        "G2675",
+        "G1350",
+        "G2564G",
+        "G2112",
+        "G3962"
+      ],
+      "history": "A fishing boat of the period was found in 1986, when drought lowered the lake and two brothers from Kibbutz Ginosar spotted its outline in the mud. It is about 8.2 meters (27 feet) long, built of many kinds of wood and much repaired, and it has been dated to between about the first century BC and the first century AD; it is now displayed at Ginosar. K. C. Hanson (Biblical Theology Bulletin 27, 1997) has described the fishing economy of Antipas's Galilee as a controlled trade in which families like Zebedee's worked in partnerships (Luke 5:10), paid for fishing rights and tolls, and sold to processors, so that the business these brothers left was a family enterprise of some substance.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Leaving a father in the middle of the working day broke the strongest duty a son knew. Matthew does not treat family as unimportant (15:4-6 condemns those who evade caring for parents), but this verse shows that the call of Jesus reorders every loyalty beneath it, as he says in 10:37 and promises to repay in 19:29."
+        }
+      ],
+      "parallels": [
+        "Mark 1:19-20",
+        "Luke 5:10-11"
+      ],
+      "refs": [
+        "Matthew 10:37",
+        "Matthew 19:27-29",
+        "Matthew 20:20-21",
+        "Matthew 27:56"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "A summary of the whole Galilean ministry in one sentence. It is repeated almost exactly at 9:35, and the two verses frame the Sermon on the Mount (chapters 5 to 7) and the mighty works (chapters 8 and 9): teaching and preaching first, healing after.",
+      "grammar": "Periēgen is an imperfect, ‘he kept going around’, the habitual activity of a period. Three present participles define it: didaskōn (‘teaching’), kēryssōn (‘proclaiming’), and therapeuōn (‘healing’). Teaching explains Scripture and the life it requires, proclaiming announces news, and healing shows it; the Sermon on the Mount will be called teaching (5:2, 7:29). Tais synagōgais autōn, ‘their synagogues’, is a phrase Matthew repeats (9:35, 10:17, 12:9, 13:54), and Graham Stanton (A Gospel for a New People, 1992) and others read it as reflecting a painful separation between Matthew's community and the synagogues of its own day. The double pasan, ‘every disease and every sickness’, stresses completeness; nosos is disease and malakia weakness or infirmity. Euangelion tēs basileias, ‘the good news of the kingdom’, is Matthew's own phrase.",
+      "words": [
+        "G4013",
+        "G1321",
+        "G4864",
+        "G2784",
+        "G2098",
+        "G0932",
+        "G2323",
+        "G3554",
+        "G3119"
+      ],
+      "history": "A synagogue (synagōgē, ‘gathering’) was first the assembly of a town and then the building where it met on the Sabbath to read and explain the Law and the Prophets. Buildings from Jesus' time have been excavated in Galilee and nearby, at Magdala on the lakeshore (found in 2009) and at Gamla in the Golan, which gives a concrete picture of the rooms in which Jesus taught: benches along the walls facing a central floor.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom comes as word and deed together. Jesus announces God's reign and then shows its presence by undoing sickness, which is why his answer to John the Baptist points to both (11:4-5) and why the disciples receive authority to do the same (10:1, 10:7-8)."
+        }
+      ],
+      "text": "The Byzantine text, followed by the King James Version, reads ‘Jesus went about all Galilee’, adding the name Jesus and using a different construction for ‘throughout all Galilee’. The earliest manuscripts have the shorter wording. The meaning is unchanged.",
+      "parallels": [
+        "Mark 1:39",
+        "Luke 4:44"
+      ],
+      "refs": [
+        "Matthew 9:35",
+        "Matthew 10:1",
+        "Matthew 11:4-5",
+        "Matthew 24:14",
+        "Acts 10:38"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The news carries north into Syria, and the sick are brought in every category the ancient world knew. The verse widens the circle of the ministry and shows the need that met Jesus wherever he went.",
+      "grammar": "Apēlthen hē akoē autou, ‘the report of him went out’, uses akoē, ‘hearing’, for what is heard about someone. Tous kakōs echontas, literally ‘those having it badly’, is the ordinary idiom for the sick. Poikilais nosois kai basanois synechomenous, ‘held fast by various diseases and torments’, uses synechō, ‘to grip, hold in’, and basanos, a word first used for a touchstone that tests metal and then for torture and severe pain. Daimonizomenous, selēniazomenous, and paralytikous name three further groups: the demonized, those with seizures, and the paralyzed. The distinct terms keep possession and illness apart. Etherapeusen autous, ‘he healed them’, is a flat aorist summary without exception.",
+      "words": [
+        "G0189",
+        "G4947",
+        "G4374",
+        "G2560",
+        "G4164",
+        "G3554",
+        "G0931",
+        "G4912",
+        "G1139",
+        "G4583",
+        "G3885",
+        "G2323"
+      ],
+      "history": "Syria was the Roman province governed from Antioch by a legate of consular rank, and its governor had oversight of the region around Judea. Only Matthew says the news reached Syria, and many scholars connect that with where the Gospel was written. The earliest clear users of Matthew point the same way: Ignatius, bishop of Antioch, writing around 110, echoes Matthew 3:15 when he says Jesus was baptized by John so that all righteousness might be fulfilled (To the Smyrnaeans 1.1), and the Didache, a church manual often placed in Syria, gives the Lord's Prayer in Matthew's form.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "Healing every kind of affliction is a sign of the world God will remake, the day Isaiah pictured when the eyes of the blind are opened and the lame leap (Isaiah 35:5-6). The verse shows that the kingdom's arrival touches bodies as well as souls; it does not promise that every sickness will be healed before the resurrection."
+        }
+      ],
+      "parallels": [
+        "Mark 1:28",
+        "Mark 3:10-11",
+        "Luke 6:18"
+      ],
+      "refs": [
+        "Matthew 8:16-17",
+        "Matthew 17:15",
+        "Isaiah 35:5-6",
+        "Matthew 15:30-31"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "The crowds gather from every quarter of the land, and they are the audience for the sermon that begins in the next verse (5:1). Matthew's list covers the historic land of Israel on both sides of the Jordan plus the Gentile cities of the Decapolis; Mark 3:7-8 includes Idumea and the region of Tyre and Sidon, and Luke 6:17 names the coast of Tyre and Sidon.",
+      "grammar": "Ēkolouthēsan autō ochloi polloi, ‘many crowds followed him’, uses the same verb as the disciples' following in verses 20 and 22. Matthew lets the ambiguity stand: the crowds walk behind Jesus, but whether they will follow as disciples remains open, and the crowd will finally call for his death (27:20-25). Dekapoleōs is a singular noun, ‘the Ten Cities’, treated as the name of a region. Peran tou Iordanou, ‘beyond the Jordan’, is Perea, east of the river, ruled like Galilee by Antipas.",
+      "words": [
+        "G0190",
+        "G3793",
+        "G1179",
+        "G2414",
+        "G2449",
+        "G4008",
+        "G2446"
+      ],
+      "history": "The cities of the Decapolis, among them Scythopolis (Beth Shean), Hippos, Gadara, Pella, and Gerasa, were Greek cities with temples, theaters, and colonnaded streets. Most had been conquered by the Hasmonean kings and were freed from Jewish rule when Pompey took the region for Rome in 63 BC, and several counted their years from that liberation in the dates on their coins. They were a Gentile world a few hours' walk from Capernaum, and Matthew will take Jesus into it in 8:28-34.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Before Jesus has given a single discourse, people from Gentile cities are among those who come to hear him. The verse anticipates, in the crowd around the mountain, the nations to whom the risen Jesus will send his disciples."
+        }
+      ],
+      "parallels": [
+        "Mark 3:7-8",
+        "Luke 6:17"
+      ],
+      "refs": [
+        "Matthew 5:1",
+        "Matthew 8:28",
+        "Mark 5:20",
+        "Mark 7:31",
+        "Matthew 27:20-25"
+      ]
+    }
+  ]
+}

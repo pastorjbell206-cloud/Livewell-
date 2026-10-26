@@ -1,0 +1,343 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Luke opens John's ministry with a six-part date, from the emperor down to the local rulers. It is the most elaborate dating in the New Testament and deliberately places the gospel inside world history, as the census did in 2:1-2.",
+      "grammar": "The verse is a chain of genitive absolutes: hēgemoneuontos Pontiou Pilatou (‘while Pontius Pilate was governing’) and tetraarchountos (‘while ... was tetrarch’) three times over. Hēgemonia (‘rule, reign’) is used of Tiberius, and the related verb hēgemoneuō of Pilate, the same general verb Luke used of Quirinius (2:2). Tetraarchountos comes from tetraarchēs, originally ‘ruler of a fourth part’, by this period a title for a minor dependent ruler below a king.",
+      "words": ["G2094", "G4003", "G2231", "G5086", "G2230", "G4091", "G5075", "G2264H", "G5376I", "G2484", "G5139", "G3078", "G0009"],
+      "history": "Tiberius succeeded Augustus in August AD 14. Counted from then, his fifteenth year runs from late AD 28 into 29 (depending on whether Luke used the Roman or a Syrian calendar); counted from AD 12, when Tiberius began sharing provincial authority with Augustus (Velleius Paterculus 2.121), it would be about AD 26-27. Pilate governed Judea from about AD 26 to 36; an inscription found at Caesarea in 1961 gives his title as praefectus. Herod Antipas ruled Galilee and Perea from 4 BC to AD 39, and Philip the northeastern territories until his death in the twentieth year of Tiberius, AD 33-34 (Josephus, Antiquities 18.106). A Lysanias ruling Chalcis was executed at Mark Antony's order in the 30s BC, and David Friedrich Strauss accused Luke of confusing him with a later ruler. But Josephus speaks of ‘Abila of Lysanias’ (Antiquities 19.275), and an inscription from Abila set up for the safety of ‘the lords Augusti’ (Tiberius and his mother Livia, so between AD 14 and 29) names a freedman of ‘Lysanias the tetrarch’, which supports a later Lysanias in Luke's period.",
+      "parallels": ["Matthew 3:1", "Mark 1:4"],
+      "refs": ["Luke 2:1-2", "Luke 23:1-7", "Luke 13:31-32", "Acts 4:27"]
+    },
+    {
+      "v": "2",
+      "context": "The date ends with the high priests, and then the event: the word of God comes to John in the wilderness. After two chapters of angels and songs, Luke introduces the adult John in the words used for Israel's prophets.",
+      "grammar": "Epi archiereōs Hanna kai Kaiapha uses the singular ‘high priest’ with two names, as if the office were shared. Egeneto rhēma theou epi Iōannēn, ‘the word of God came upon John’, is the prophetic call formula. Luke uses rhēma, as the Septuagint does in Jeremiah 1:1, rather than logos. En tē erēmō (‘in the wilderness’) picks up 1:80.",
+      "words": ["G0749", "G0452", "G2533G", "G4487", "G2316", "G2491G", "G2197H", "G2048"],
+      "history": "Annas was appointed high priest by Quirinius in AD 6 and removed by the prefect Valerius Gratus about AD 15 (Josephus, Antiquities 18.26, 18.34); five of his sons later held the office (Antiquities 20.198). His son-in-law Joseph Caiaphas served from about AD 18 to 36. In 1990 a family tomb was found south of Jerusalem's Old City with an ornate ossuary (bone box) inscribed ‘Yehosef bar Qayafa’, which many scholars take to belong to Caiaphas's family, though the identification is debated. John 18:13 and Acts 4:6 also show Annas still acting with high-priestly authority.",
+      "text": "The Byzantine manuscripts read the plural archiereōn, ‘the high priests’ (so the King James Version), smoothing the singular with two names.",
+      "ot": [
+        {
+          "ref": "Jeremiah 1:1-3",
+          "note": "Jeremiah's book opens by naming the prophet, his father, his priestly family, and the kings in whose reigns the word of the LORD came to him. The Septuagint begins to rhēma tou theou ho egeneto epi Ieremian, ‘the word of God which came upon Jeremiah’, nearly Luke's phrase. Luke's dating by rulers and his ‘son of Zechariah’ follow that pattern, and so present John as a prophet in the line of Jeremiah, himself a priest's son."
+        }
+      ],
+      "refs": ["Hosea 1:1", "John 18:13", "Acts 4:6", "Luke 1:80"]
+    },
+    {
+      "v": "3",
+      "context": "John moves through the Jordan region preaching a baptism of repentance for the forgiveness of sins. Luke describes John as a preacher who travels, not only a baptizer who waits for crowds.",
+      "grammar": "Kērussōn (‘preaching’) is a present participle of continuing activity. Baptisma metanoias, ‘a baptism of repentance’, uses a descriptive genitive: a baptism that expresses and seals repentance. Eis aphesin hamartiōn (‘for the forgiveness of sins’) states the goal. Grammarians debate whether eis here marks purpose (‘with a view to forgiveness’) or result; the same phrase appears in Acts 2:38, and the debate there is well known. Perichōron tou Iordanou, ‘the region around the Jordan’, is the phrase the Septuagint uses for the plain Lot chose (Genesis 13:10-11).",
+      "words": ["G4066", "G2446", "G2784", "G0908", "G3341", "G0859", "G0266"],
+      "history": "Josephus (Antiquities 18.116-119) describes John as a good man who urged Jews to practice virtue, justice toward one another, and piety toward God, and to come to baptism. He adds that the washing was not to gain pardon for sins but to purify the body when the soul had already been cleansed by righteousness. Scholars debate whether Josephus is correcting a Christian claim or simply describing John for a Roman audience; both accounts agree that John's baptism required a changed life.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "John's baptism joins repentance and forgiveness. The verse defines the forgiveness God offers as received by turning, and the rest of John's preaching (verses 8-14) shows what the turning must include."
+        }
+      ],
+      "parallels": ["Mark 1:4-5", "Matthew 3:5-6"],
+      "refs": ["Acts 2:38", "Acts 13:24", "Acts 19:4", "Genesis 13:10-11"]
+    },
+    {
+      "v": "4-6",
+      "context": "Luke explains John by Isaiah and quotes further than Matthew or Mark, through the leveling of the land to the promise that all humanity will see God's salvation. The universal line is the reason for the longer quotation.",
+      "grammar": "Phōnē boōntos en tē erēmō, ‘a voice of one crying in the wilderness’, follows the Septuagint's word order, in which ‘in the wilderness’ goes with the crier. The imperatives hetoimasate (‘prepare’, aorist) and poieite (‘make’, present) call for road-building. The futures of verse 5 (plērōthēsetai, tapeinōthēsetai, estai) describe the result. Pasa sarx, literally ‘all flesh’, is the Hebrew idiom for every human being, and to sōtērion tou theou (‘the salvation of God’) is the neuter noun Simeon used (2:30).",
+      "words": ["G5456G", "G0994", "G2048", "G2090", "G3598", "G2117", "G5147", "G5327", "G4137", "G5013", "G4646", "G5138", "G4561", "G4991"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Luke extends Isaiah's quotation to reach ‘all humanity’. From the start of Jesus' public story, the promise is universal, and Luke's two volumes end with Paul announcing that God's salvation has been sent to the Gentiles (Acts 28:28)."
+        },
+        {
+          "id": "salvation",
+          "note": "The road is prepared so that salvation can be seen. John's ministry is preparation; the salvation itself is God's to show."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 40:3-5",
+          "note": "Isaiah 40 announces comfort to exiles in Babylon: a road through the desert on which the LORD will lead his people home, with valleys raised and mountains lowered. In the Hebrew, ‘in the wilderness’ goes with ‘prepare’ (‘in the wilderness prepare the way’), and verse 5 says the glory of the LORD will be revealed and all flesh will see it together. The Septuagint attaches ‘in the wilderness’ to the voice and ends ‘all flesh will see the salvation of God’. Luke follows the Septuagint, changes ‘the paths of our God’ to ‘His paths’ so the Lord can be Jesus, and omits the line about the glory being revealed. The Qumran community applied Isaiah 40:3 to its own withdrawal to study the Law in the desert (1QS 8:12-16); Luke applies it to a preacher who calls all Israel to repent."
+        }
+      ],
+      "parallels": ["Matthew 3:3", "Mark 1:2-3", "John 1:23"],
+      "refs": ["Luke 2:30-32", "Acts 28:28", "Isaiah 52:10", "Luke 1:76"]
+    },
+    {
+      "v": "7-8",
+      "context": "John's preaching begins with an insult and a warning. The crowds come to be baptized, and he demands to know whether they have repented or only want protection. Inherited status, descent from Abraham, is swept aside.",
+      "grammar": "Elegen oun (‘so he was saying’) is an imperfect, summarizing what John said repeatedly. Gennēmata echidnōn, ‘offspring of vipers’, may picture snakes fleeing a field fire; it also stands in grim contrast to ‘children of Abraham’. Tis hupedeixen humin phugein, ‘who warned you to flee?’, is rhetorical. Poiēsate oun karpous axious tēs metanoias uses an aorist imperative with oun (‘therefore’): the fruit follows from the repentance claimed. Mē arxēsthe legein (‘do not begin to say’) forbids even starting the excuse. John may also be playing on the sound of the Hebrew or Aramaic words for ‘stones’ (avanim) and ‘children’ (banim).",
+      "words": ["G3793", "G0907", "G1081G", "G2191", "G5263", "G5343", "G3709", "G2590", "G0514", "G3341", "G3037", "G1453", "G0011"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance is proven by fruit. John will not accept a baptism that changes a person's status but not their conduct."
+        },
+        {
+          "id": "election",
+          "note": "Descent from Abraham does not guarantee a place among his children. God can raise children for Abraham from stones, which anticipates the inclusion of the Gentiles and Paul's argument that Abraham's true children are those who share his faith (Romans 4:16, Galatians 3:7)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 51:1-2",
+          "note": "Isaiah calls Israel to look to the rock from which they were cut, to Abraham their father and Sarah who bore them, whom God called when he was one and made many. The image of Abraham as the quarry of Israel lies behind John's stones: the God who made a nation from one old man can make children of Abraham from the stones of the Jordan."
+        }
+      ],
+      "parallels": ["Matthew 3:7-9"],
+      "refs": ["John 8:33-39", "Romans 4:16", "Galatians 3:7", "Acts 26:20"]
+    },
+    {
+      "v": "9",
+      "context": "The warning ends with an image of imminent judgment. The axe is already placed at the roots; the cutting is about to begin.",
+      "grammar": "Ēdē de kai (‘and already even’) stresses how near the judgment is. Keitai (‘lies’) pictures the axe set at the base of the trunk, ready. Ekkoptetai and balletai (‘is cut down’ and ‘is thrown’) are present passives with a future sense, describing what is sure to happen. The oun (‘therefore’) ties the axe to the call for fruit in verse 8.",
+      "words": ["G2235", "G0513", "G4491", "G2749", "G2590", "G2570G", "G1581", "G4442", "G0906G"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment is near and falls on fruitlessness. John does not threaten the trees that bear fruit; the warning is meant to produce the fruit that avoids the axe."
+        }
+      ],
+      "parallels": ["Matthew 3:10"],
+      "refs": ["Isaiah 10:33-34", "Matthew 7:19", "Luke 13:6-9", "John 15:2"]
+    },
+    {
+      "v": "10-11",
+      "context": "The crowds ask what they should do, and John's answer is concrete. The instruction in verses 10-14 is found only in Luke, and it begins with sharing the most basic goods: clothing and food.",
+      "grammar": "Ti oun poiēsōmen, ‘what then should we do?’, is a deliberative subjunctive, the question of people ready to act; the same question comes from the crowd at Pentecost (Acts 2:37) and the Philippian jailer (Acts 16:30). Chitōn is the inner tunic worn next to the skin; a person with two had a spare. Metadotō (‘let him share’) is an aorist imperative in the third person. Brōmata means food in general.",
+      "words": ["G1905", "G3793", "G4160G", "G5509", "G3330", "G1033"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The first fruit of repentance John names is giving to someone who has nothing. Repentance is turned outward, toward the neighbor in need."
+        }
+      ],
+      "refs": ["Acts 2:37", "Isaiah 58:7", "James 2:15-16", "1 John 3:17", "Acts 2:44-45"]
+    },
+    {
+      "v": "12-13",
+      "context": "Tax collectors come for baptism and address John as ‘Teacher’. He does not tell them to quit; he tells them to stop cheating.",
+      "grammar": "Didaskale (‘Teacher’) is a respectful address. Mēden pleon para to diatetagmenon humin prassete, ‘collect nothing more than what has been ordered for you’, uses diatetagmenon, a perfect passive participle of diatassō, ‘prescribe’, for the fixed schedule of tolls. Prassō here has its technical sense, ‘to exact payment’, as in the parable of the minas (19:23).",
+      "words": ["G5057", "G0907", "G1320", "G4119", "G1299", "G4238"],
+      "history": "In Judea and Galilee the telōnai (‘tax collectors’) Luke mentions mostly collected tolls and customs on goods, working under contractors who bid for the right to collect in a district and profited from the surplus. The system invited overcharging, and Jewish collectors were despised as extortioners and as collaborators with foreign or Herodian rule. Luke will show Jesus eating with them (5:29-30, 15:1-2) and Zacchaeus, a chief tax collector, promising restitution (19:8).",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Repentance for a tax collector means honesty in the very work that tempts him. John addresses money at the point where a person earns it."
+        }
+      ],
+      "refs": ["Luke 19:8", "Luke 5:27-30", "Luke 7:29", "Luke 18:10-14"]
+    },
+    {
+      "v": "14",
+      "context": "Soldiers ask the same question, and John again answers within their work: no extortion, no false charges, contentment with pay. Three groups, three answers, one pattern.",
+      "grammar": "Strateuomenoi is a present participle, ‘those serving as soldiers’, not the ordinary noun for soldiers. Diaseiō (‘extort’, literally ‘shake thoroughly’) is the slang of the shakedown, and sukophanteō (‘accuse falsely’) means to extort by threat of informing; Zacchaeus uses the same verb when he promises fourfold restitution (19:8). Arkeisthe (‘be content’) is a present imperative, a settled attitude. Opsōnion (‘wages’) originally meant a soldier's ration allowance and is the word Paul uses in ‘the wages of sin’ (Romans 6:23).",
+      "words": ["G4754", "G1286", "G4811", "G0714", "G3800"],
+      "history": "These soldiers were probably not Roman legionaries, since no legion was stationed in Judea or Galilee before AD 66. They were more likely troops of Herod Antipas or auxiliaries recruited locally and in neighboring regions to support the prefect and the tax system. Living off the population was a standing temptation for ill-paid troops.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "John does not tell the soldiers to leave their service but to stop abusing its power. Repentance is specific to one's position: each group hears the temptation of its own trade named."
+        }
+      ],
+      "refs": ["Luke 19:8", "Romans 6:23", "1 Timothy 6:6-8", "Hebrews 13:5"]
+    },
+    {
+      "v": "15",
+      "context": "John's preaching raises the question whether he himself is the Messiah. Luke frames what follows as John's answer to that expectation.",
+      "grammar": "Prosdokōntos tou laou and dialogizomenōn pantōn are genitive absolutes: ‘while the people were waiting and all were debating’. Prosdokaō is Luke's word for Israel's expectancy (1:21, 7:19-20). Mēpote autos eiē ho christos uses mēpote with the optative in indirect question, ‘whether perhaps he might be the Christ’, a cautious, tentative question.",
+      "words": ["G4328", "G1260", "G2588", "G3361", "G1510", "G5547"],
+      "history": "Some circles continued to revere John after his death. Acts 18:25 and 19:1-7 mention people who knew only John's baptism, and the Pseudo-Clementine Recognitions (1.54, 1.60), a later Christian work, describe disciples of John who claimed he was the Christ. The Gospels take care to record John's own denial (John 1:19-20, 3:28).",
+      "refs": ["John 1:19-20", "John 3:28", "Acts 13:25", "Acts 19:1-4"]
+    },
+    {
+      "v": "16",
+      "context": "John answers everyone. His water baptism points beyond itself to the coming one, stronger than he, whose baptism will be in the Holy Spirit and fire.",
+      "grammar": "Egō men hudati ... erchetai de ho ischuroteros, ‘I on the one hand with water ... but the stronger one is coming’, uses the men ... de contrast to set the two baptizers side by side. Ischuroteros is a comparative, ‘stronger’. Ouk eimi hikanos lusai ton himanta, ‘I am not worthy to untie the strap’, uses hikanos, ‘sufficient, fit’. In baptisei en pneumati hagiō kai puri a single preposition governs both nouns, which suggests one baptism of Spirit-and-fire. James Dunn (Baptism in the Holy Spirit, 1970) argued it is one baptism that purifies the repentant and destroys the unrepentant. Others take the fire as the tongues of fire at Pentecost (Acts 2:3), or distinguish two baptisms for two groups, the Spirit for the righteous and fire for the wicked, as verse 17 might suggest.",
+      "words": ["G0611", "G5204", "G0907", "G2478", "G2425", "G3089", "G2438", "G5266", "G4151G", "G4442"],
+      "history": "Loosening sandals was a slave's task. The Babylonian Talmud records a saying attributed to Rabbi Joshua ben Levi that a disciple should do for his teacher every service a slave does for his master except untying his sandal (b. Ketubot 96a). John says he is not fit even for that.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Messiah's work is to give the Spirit, something no prophet could do. The promise is fulfilled when the risen Jesus pours out the Spirit at Pentecost (Acts 1:5, 2:33)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 3:2-3",
+          "note": "Malachi asks who can endure the day of the Lord's coming, for he will be like a refiner's fire, purifying the sons of Levi like gold and silver. Isaiah 4:4 speaks of the Lord washing away Zion's filth by a spirit of judgment and a spirit of burning. Both join spirit and fire in a cleansing that is also judgment, the combination John announces. The Qumran Community Rule looks for a time when God will cleanse a person by a holy spirit, sprinkling a spirit of truth like purifying water (1QS 4:20-21)."
+        }
+      ],
+      "parallels": ["Matthew 3:11", "Mark 1:7-8", "John 1:26-27"],
+      "refs": ["Acts 1:5", "Acts 2:3-4", "Acts 11:16", "Isaiah 4:4", "Joel 2:28"]
+    },
+    {
+      "v": "17",
+      "context": "John pictures the coming one at the harvest. The threshing floor is being cleared, the grain gathered, the chaff burned. The same person who baptizes with the Spirit sorts the harvest.",
+      "grammar": "Ptuon (‘winnowing fork’) is a wooden fork or shovel used to toss threshed grain into the wind. Diakatharai (‘to clear thoroughly’) and sunagagein (‘to gather’) are aorist infinitives of purpose. Achuron is the chaff, the husks and broken straw. Asbestō (‘unquenchable’) is the word behind English ‘asbestos’, used of fire that is not put out.",
+      "words": ["G4425", "G5495", "G6016", "G0257", "G4863", "G4621", "G0596", "G0892", "G2618", "G0762"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The coming one divides. John's picture of judgment is agricultural and final: what has substance is gathered, what has none is burned."
+        },
+        {
+          "id": "hell",
+          "note": "‘Unquenchable fire’ is Scripture's language for final judgment, taken from Isaiah's last verse (66:24) and used by Jesus in Mark 9:43-48. Christians have understood its duration and nature in different ways, but the image is of a judgment that cannot be escaped or undone."
+        }
+      ],
+      "parallels": ["Matthew 3:12"],
+      "refs": ["Isaiah 66:24", "Psalm 1:4", "Matthew 13:30", "Mark 9:43-48"]
+    },
+    {
+      "v": "18",
+      "context": "Luke summarizes John's preaching, warnings and all, as ‘good news’. The announcement of judgment and the call to repent are part of the gospel, because the coming one is near.",
+      "grammar": "Polla men oun kai hetera, ‘many other things also’, marks this as a selection. Parakalōn (‘exhorting’) is a present participle, and euēngelizeto (‘he proclaimed good news’) an imperfect of continuing ministry. Luke's use of euangelizomai for a message that includes axes and fire shows that ‘good news’ in his vocabulary means the announcement that God is acting, which includes warning.",
+      "words": ["G4183", "G2087", "G3870", "G2097", "G2992"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The call to repent is itself good news, because it comes before the judgment, not after. John's warning is the last opportunity offered as a gift."
+        }
+      ],
+      "refs": ["Luke 16:16", "Luke 1:19", "Luke 2:10", "Acts 13:24-25"]
+    },
+    {
+      "v": "19-20",
+      "context": "Luke finishes John's story before Jesus' baptism by reporting his imprisonment. He rebuked Antipas for taking his brother's wife and for his other evils, and Antipas added imprisoning John to them all. The arrest actually came later, as Mark and Matthew show, but Luke clears the stage for Jesus.",
+      "grammar": "Elegchomenos (‘being rebuked’, present passive) describes John's rebuke as exposure of wrong. Prosethēken kai touto epi pasin, ‘he added this also to them all’, is a bitter summary: imprisoning the prophet is the crowning evil. Katekleisen (‘he shut up’) is the verb Paul uses of imprisoning believers (Acts 26:10).",
+      "words": ["G5076", "G1651", "G2266G", "G1135H", "G4190", "G4369", "G2623", "G5438G"],
+      "history": "Josephus says Herodias was first married to a half-brother of Antipas whom he calls Herod, the son of Mariamne II (Antiquities 18.109-110, 18.136); Mark 6:17 calls him Philip. Antipas divorced his first wife, a daughter of the Nabatean king Aretas IV, to marry her, and Aretas later defeated Antipas in battle (AD 36), which some Jews regarded as God's punishment for killing John. Josephus says John was imprisoned and executed at the fortress of Machaerus, east of the Dead Sea (Antiquities 18.116-119), and attributes it to Antipas's fear of an uprising; the Gospels give the moral reason. Leviticus 18:16 and 20:21 forbid marrying a brother's wife while he lives.",
+      "text": "The Byzantine manuscripts add ‘Philip’ (‘Herodias his brother Philip's wife’ in the King James Version), probably from Mark 6:17. The earliest manuscripts read simply ‘his brother's wife’.",
+      "parallels": ["Mark 6:17-18", "Matthew 14:3-4"],
+      "refs": ["Leviticus 18:16", "Mark 6:17-29", "Luke 9:7-9", "Luke 7:18-19"]
+    },
+    {
+      "v": "21",
+      "context": "Luke tells Jesus' baptism in a subordinate clause and puts the weight on what happened afterward, while Jesus was praying. John is not named, since Luke has just removed him from the story.",
+      "grammar": "Egeneto de en tō baptisthēnai hapanta ton laon, ‘it happened when all the people had been baptized’, sets the scene. Iēsou baptisthentos kai proseuchomenou pairs two genitive participles: an aorist (‘having been baptized’) for the completed baptism and a present (‘while praying’) for the ongoing prayer. The main event is the infinitive aneōchthēnai ton ouranon (‘heaven was opened’). Only Luke mentions that Jesus was praying, the first of many such notes (5:16, 6:12, 9:18, 9:28-29).",
+      "words": ["G0907", "G0537", "G2992", "G4336", "G0455", "G3772"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Heaven opens while Jesus prays. Luke presents the Son's life as lived in communion with the Father, and the decisive revelations of his identity come in prayer (9:28-35)."
+        },
+        {
+          "id": "atonement",
+          "note": "The sinless one receives a baptism of repentance among ‘all the people’. The church has read this as his first act of standing with sinners, the solidarity that leads to the cross, where he is counted among the lawless (22:37)."
+        }
+      ],
+      "parallels": ["Matthew 3:13-16", "Mark 1:9-10", "John 1:32-33"],
+      "refs": ["Isaiah 64:1", "Luke 9:28-29", "Luke 22:37", "2 Corinthians 5:21"]
+    },
+    {
+      "v": "22",
+      "context": "The Spirit descends in bodily form like a dove, and the Father's voice names Jesus as his beloved Son. The scene answers Gabriel's promise (1:35) and sets up the devil's challenge ‘If You are the Son of God’ (4:3).",
+      "grammar": "Sōmatikō eidei, ‘in bodily form’, is Luke's alone and stresses that the descent was visible, not only an inner experience. Hōs peristeran (‘like a dove’) can modify the form or the manner of descent. Su ei ho huios mou ho agapētos is a direct address; ho agapētos can mean ‘beloved’ or, in Septuagint usage, ‘only’ (Genesis 22:2). En soi eudokēsa (‘in you I am well pleased’) uses an aorist that grammarians describe as timeless or as summing up a pleasure already settled.",
+      "words": ["G2597", "G4984", "G1491", "G4058", "G5456G", "G5207", "G0027", "G2106"],
+      "text": "Codex Bezae and several Old Latin manuscripts read Psalm 2:7 in full: ‘You are my Son; today I have begotten you’. Justin Martyr (Dialogue with Trypho 88, 103) knew this wording. Bart Ehrman (The Orthodox Corruption of Scripture, 1993) argued it is original and was changed because it could sound as if Jesus became God's Son at his baptism; most editors keep the reading of the great majority of manuscripts, which agrees with Mark 1:11.",
+      "history": "The dove has been explained in several ways. The Babylonian Talmud reports Ben Zoma comparing the Spirit hovering over the waters in Genesis 1:2 to a dove hovering over its young (b. Hagigah 15a), which would make the baptism a new creation. Others recall Noah's dove announcing a renewed earth (Genesis 8:8-12). Luke does not explain the image.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Son is baptized and praying, the Spirit descends, and the Father speaks. The church fathers cited this scene constantly as a revelation of the three persons of the one God acting together and distinctly."
+        },
+        {
+          "id": "messiah",
+          "note": "The voice joins the royal Son of Psalm 2 with the Servant of Isaiah 42. Jesus is anointed with the Spirit for his work (4:18, Acts 10:38), king and servant in one person."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "In Psalm 2 God installs his king on Zion and declares, You are my Son; today I have become your Father, a coronation formula for David's heir. ‘You are My ... Son’ takes up its first line. ‘Beloved’ recalls Genesis 22:2, where the Septuagint calls Isaac ton agapēton, Abraham's beloved or only son. ‘In You I am well pleased’ echoes Isaiah 42:1, where God's chosen servant is the one in whom his soul delights and on whom he puts his Spirit. The single sentence gathers king, beloved son, and Spirit-anointed servant."
+        },
+        {
+          "ref": "Isaiah 42:1",
+          "note": "Isaiah introduces the servant whom God upholds, his chosen one in whom he delights, on whom he has put his Spirit, who will bring justice to the nations. The Hebrew ratsetah nafshi (‘my soul delights’) is closer to ‘well pleased’ than the Septuagint's wording, which identifies the servant as Jacob and Israel; the Gospel form looks like an independent rendering of the Hebrew. Matthew 12:18-21 quotes the passage of Jesus."
+        }
+      ],
+      "parallels": ["Matthew 3:16-17", "Mark 1:10-11", "John 1:32-34"],
+      "refs": ["Genesis 22:2", "Luke 9:35", "Luke 4:3", "Luke 4:18", "Acts 10:38"]
+    },
+    {
+      "v": "23",
+      "context": "Luke gives Jesus' age as he begins and then his genealogy, set here rather than at his birth. The genealogy's first words qualify Joseph's fatherhood, and its last word will be God (verse 38).",
+      "grammar": "Archomenos hōsei etōn triakonta, ‘beginning, about thirty years old’, uses hōsei (‘about’), so the age is approximate. Hōs enomizeto, ‘as was supposed’ or ‘as was legally reckoned’ (nomizō can mean either), acknowledges the virginal conception. In the Greek every name after Joseph carries the genitive article tou (‘the son of’), but Joseph's name has none. Frédéric Godet, in his commentary on Luke, argued that the missing article sets Joseph outside the list, so that Jesus is ‘son (as was supposed, of Joseph) of Heli’, making Heli Mary's father; others reply that Joseph's name simply begins the list and would not need the article.",
+      "words": ["G0757", "G5616", "G5144", "G3543", "G2501G", "G2242"],
+      "history": "The conflict with Matthew, who names Jacob as Joseph's father (Matthew 1:16), was noticed early. Julius Africanus, in a letter to Aristides preserved by Eusebius (Church History 1.7), explained it by levirate marriage: Jacob and Heli were half-brothers with the same mother; Heli died childless, and Jacob married his widow and raised up Joseph in Heli's name, so Joseph was Jacob's son by nature and Heli's by law. Africanus said the account came from Jesus' relatives. About 1490, Annius of Viterbo proposed that Luke gives Mary's line through her father Heli, a view that spread in the sixteenth century. J. Gresham Machen (The Virgin Birth of Christ, 1930) argued that Matthew gives the legal heirs to David's throne and Luke the actual line to which Joseph belonged. Many critical scholars hold that the lists come from different traditions and cannot be fully harmonized.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "‘As was supposed’ holds together two truths: Jesus was legally Joseph's son and heir, and he was not conceived by Joseph. The genealogy places the Son of God within a human family without denying his origin in God."
+        }
+      ],
+      "parallels": ["Matthew 1:16"],
+      "refs": ["Matthew 1:16", "Luke 4:22", "Genesis 41:46", "2 Samuel 5:4", "Numbers 4:3"]
+    },
+    {
+      "v": "24-27",
+      "context": "The first stretch of the list, from Heli back to Shealtiel and Neri, names people otherwise unknown. At Zerubbabel and Shealtiel the list briefly touches Matthew's, then parts from it again.",
+      "grammar": "Each link is a bare genitive article, tou Maththat, tou Leui, literally ‘the one of Matthat’, understood as ‘the son of’. The names mix Hebrew forms (Mattathias, Joseph, Joanan) with shortened ones (Jannai, Naggai). Rhēsa (verse 27) is otherwise unknown as a name; it has been suggested that it is the Aramaic resha, ‘head’ or ‘prince’, a title of Zerubbabel that a copyist of an earlier list took as a personal name. The suggestion cannot be proved.",
+      "words": ["G3158G", "G3161G", "G6044", "G6043", "G2490", "G4488", "G2216G", "G4528G", "G3518"],
+      "history": "Zerubbabel, who led returned exiles and rebuilt the temple (Ezra 3:2, Haggai 1:1), is called son of Shealtiel in most texts, but 1 Chronicles 3:19 makes him son of Pedaiah, Shealtiel's brother, perhaps through levirate marriage. Matthew 1:12 and 1 Chronicles 3:17 make Shealtiel the son of Jeconiah, the exiled king; Luke makes him the son of Neri. Explanations include adoption or levirate marriage, and different men with the same names. Defenders of the view that Luke traces Mary's line note that Jeremiah 22:30 says none of Jeconiah's offspring will prosper on David's throne, and that Luke's line avoids him.",
+      "parallels": ["Matthew 1:12-16"],
+      "refs": ["Ezra 3:2", "Haggai 1:1", "Haggai 2:23", "1 Chronicles 3:17-19", "Jeremiah 22:30"]
+    },
+    {
+      "v": "28-31",
+      "context": "The list continues through more unknown names to Nathan and David. Luke's line runs through Nathan rather than Solomon, avoiding the kings of Judah altogether.",
+      "grammar": "The genitive chain continues. The name Iēsou in verse 29 is ‘Joshua’, the same Greek name as ‘Jesus’, so a Jesus appears in Jesus' own ancestry.",
+      "words": ["G3197H", "G2424K", "G1663", "G2497", "G3158H", "G4826H", "G2455J", "G2501L", "G1662H", "G3481", "G1138"],
+      "history": "Nathan was a son of David born in Jerusalem, a full brother of Solomon by Bathsheba (2 Samuel 5:14, 1 Chronicles 3:5). Zechariah 12:12 names ‘the house of Nathan’ among the clans who will mourn in Jerusalem, which suggests a known family line. Nothing else in the Old Testament traces Nathan's descendants. In Matthew, the line runs through Solomon and the kings; Luke's line is a private branch of the royal house.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Both Gospels agree that Jesus is David's descendant, the claim the promise requires (2 Samuel 7:12). Luke's list reaches David without passing through a single reigning king after him, a quiet fit with a Messiah born in a feeding trough."
+        }
+      ],
+      "parallels": ["Matthew 1:6-7"],
+      "refs": ["2 Samuel 5:14", "1 Chronicles 3:5", "Zechariah 12:12", "Romans 1:3", "2 Timothy 2:8"]
+    },
+    {
+      "v": "32-34",
+      "context": "From David to Abraham and beyond, Luke's list runs close to Matthew's and to the Old Testament genealogies of Ruth and Chronicles. The line passes Judah, whose tribe was promised the scepter, and Abraham, to whom the promise was given.",
+      "grammar": "The names follow the Septuagint's spelling: Boos for Boaz, Naassōn for Nahshon, Phares for Perez, Thara for Terah. The chain of genitive articles continues unbroken. The names in verses 32-33 are where the manuscripts differ most.",
+      "words": ["G2421", "G5601", "G1003", "G4527G", "G3476", "G0284", "G6002", "G6095", "G2074", "G5329", "G2455N", "G0011", "G2291"],
+      "text": "In verse 32 the earliest manuscripts read Sala, where others read Salmon, the form in Ruth 4:20-21 and Matthew 1:4-5. Verse 33 survives in a bewildering number of variant forms. The critical editions print ‘Amminadab, Admin, Arni’, following early witnesses; the Byzantine text reads ‘Aminadab, Aram’, matching Ram in Ruth 4:19 and 1 Chronicles 2:9-10 and Matthew 1:3-4 (the King James Version). The confusion probably arose from similar-looking names copied from different Old Testament forms.",
+      "ot": [
+        {
+          "ref": "Ruth 4:18-22",
+          "note": "The book of Ruth ends with the line from Perez to David: Hezron, Ram, Amminadab, Nahshon, Salmon, Boaz, Obed, Jesse. The list in 1 Chronicles 2:1-15 gives the same names. Luke, reading backward, uses this list, which ties Jesus to Ruth the Moabite, a foreigner in David's own line, as Matthew makes explicit by naming her (Matthew 1:5)."
+        }
+      ],
+      "parallels": ["Matthew 1:2-6"],
+      "refs": ["1 Chronicles 2:1-15", "Genesis 49:10", "Genesis 11:26", "Matthew 1:1-6"]
+    },
+    {
+      "v": "35-38",
+      "context": "Luke carries the line past Abraham, where Matthew stops, through Noah and Enoch to Adam, and ends with ‘the son of God’. The Jesus the Father has just called ‘My beloved Son’ belongs to the whole human race, descended from the one whom God made.",
+      "grammar": "The final link, tou Adam tou theou, uses the same genitive as every other link, but its meaning shifts: Adam is ‘of God’ by creation, not by birth. Luke does not claim Jesus' divine sonship comes through Adam; he places the true Son of God (3:22) at the end of a line that begins with the first ‘son of God’, whose failure the next scene (4:1-13) reverses when Jesus resists temptation as Adam did not.",
+      "words": ["G1443", "G2536G", "G0742", "G3575", "G1802", "G2536H", "G1800", "G0076", "G2316"],
+      "text": "The second Cainan (verse 36), between Arphaxad and Shelah, is not in the Hebrew text of Genesis 11:12-13 or 1 Chronicles 1:18, but it is in the Septuagint of Genesis 11 and in the book of Jubilees (8:1). Luke followed his Greek Bible.",
+      "history": "Counting Adam as first, Enoch stands seventh, Abraham twenty-first, David thirty-fifth, and Jesus seventy-seventh, all multiples of seven, a pattern that depends on the text of verses 32-33 printed in modern editions. Richard Bauckham (Jude and the Relatives of Jesus in the Early Church, 1990) linked the seventy-seven generations to 1 Enoch 10:12, where the fallen watchers are bound for seventy generations until the judgment, counted from Enoch, the seventh from Adam (compare Jude 14). On that reading, Jesus arrives at the end of the appointed generations.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Luke traces Jesus not only to Israel's fathers but to Adam, so that he belongs to every human being. The Son of God comes as a son of Adam, sharing the nature he came to save."
+        },
+        {
+          "id": "image",
+          "note": "Adam is called ‘son of God’ because he was made in God's image and likeness (Genesis 5:1-3). The genealogy prepares for the New Testament's teaching that Jesus is the last Adam and the true image of God (1 Corinthians 15:45, Colossians 1:15)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 5:1-3",
+          "note": "Genesis 5 opens the line from Adam to Noah by recalling that God made humanity in his likeness, and then says Adam fathered a son in his own likeness, after his image. The parallel between God making Adam and Adam fathering Seth is the Old Testament's own hint that Adam is God's ‘son’ in a derived sense. Luke's list follows Genesis 5 and 11 in reverse, with the Septuagint's form of the names."
+        }
+      ],
+      "refs": ["Genesis 11:10-26", "Romans 5:14", "1 Corinthians 15:45", "Luke 4:3", "Acts 17:26"]
+    }
+  ]
+}

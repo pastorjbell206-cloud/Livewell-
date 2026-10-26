@@ -1,0 +1,625 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The farewell discourses and the prayer of chapter 17 are over, and Jesus leaves the city with his disciples. The opening phrase, “After Jesus had spoken these words”, ties the arrest to the prayer: the one who has just given his disciples into the Father's keeping now goes out to meet those who will take him. John names the valley and the garden but not Gethsemane, and he says nothing of the agony in prayer the other Gospels describe.",
+      "grammar": "Tauta eipōn, ‘having said these things’, is an aorist participle that closes the long speech and turns the story to action. Exēlthen, ‘he went out’, is the verb John uses for Jesus going out of the city and, in verse 4, for his stepping out to meet the soldiers. The valley is described as a cheimarros, literally a ‘winter-flowing’ stream, a ravine that carried water only in the rainy season. Kēpos is an ordinary word for a cultivated plot or orchard; John uses it only here, in verse 26, and at the burial (19:41), so the passion is framed by two gardens.",
+      "words": [
+        "G3778",
+        "G1831",
+        "G5493",
+        "G2748",
+        "G2779"
+      ],
+      "history": "The Kidron runs along the eastern side of Jerusalem between the temple mount and the Mount of Olives. The Old Testament remembers it as the valley King David crossed on foot and weeping when his son Absalom rebelled and his trusted counselor Ahithophel went over to the enemy (2 Samuel 15:23, 15:30-31); Ahithophel later hanged himself (2 Samuel 17:23). John draws no line between the two scenes, but many readers since the fathers have noticed that the son of David crosses the same ravine, betrayed by a companion who will also die by his own hand (Matthew 27:5). Kings Asa and Josiah burned idols in the Kidron (1 Kings 15:13, 2 Kings 23:4-6), so it was also a place where impurity was carried out of the holy city.",
+      "parallels": [
+        "Mark 14:26",
+        "Mark 14:32",
+        "Matthew 26:30",
+        "Matthew 26:36",
+        "Luke 22:39"
+      ],
+      "refs": [
+        "2 Samuel 15:23",
+        "John 14:31",
+        "John 19:41"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The narrator explains how Judas found Jesus: the garden was a regular meeting place, which fits Luke's note that Jesus went to the Mount of Olives ‘as was His custom’ (Luke 22:39). Judas arrives with a large party: Roman soldiers and the temple police sent by the chief priests and Pharisees. John does not mention the kiss that Mark and Matthew record; in his account Jesus identifies himself.",
+      "grammar": "Ēidei, ‘knew’, is the pluperfect of oida, which in practice serves as a simple past. Judas is named with a present participle used as a title, ho paradidous auton, ‘the one handing him over’, the same phrase that returns in verse 5; the betrayal is presented as already under way. Labōn, ‘having taken’ or ‘having procured’, suggests that Judas obtained the troops through the authorities rather than commanding them. The speira is set beside hupēretas, the ‘officers’ or attendants of the temple, and the party comes with three kinds of equipment, phanōn, lampadōn, and hoplōn, ‘lanterns, torches, and weapons’. John alone pairs ‘chief priests and Pharisees’ as acting together in the moves against Jesus (7:32, 7:45, 11:47, 11:57); the Synoptic arrest accounts name chief priests, scribes, and elders.",
+      "words": [
+        "G1492I",
+        "G3860",
+        "G2983",
+        "G4686",
+        "G5257",
+        "G5322",
+        "G2985",
+        "G3696"
+      ],
+      "history": "Mark says the crowd came from the chief priests, the scribes, and the elders (Mark 14:43); only John says Roman soldiers took part. Some historians doubt this, arguing that Rome would not have sent troops at the priests' request; others reply that the authorities had every reason to involve the garrison at a festival when a crowd might riot, and that Pilate's readiness to receive the prisoner at dawn (verse 28) suggests he knew of the arrest in advance. Raymond Brown (The Death of the Messiah, 1994) judged that John's speira probably means a detachment rather than a full cohort, whatever the exact numbers were.",
+      "parallels": [
+        "Mark 14:43",
+        "Matthew 26:47",
+        "Luke 22:47"
+      ],
+      "refs": [
+        "Luke 22:39",
+        "John 7:32",
+        "John 11:57",
+        "John 8:12"
+      ]
+    },
+    {
+      "v": "4-6",
+      "context": "Jesus does not wait to be found. Knowing everything that is about to happen, he steps forward and asks whom they want. When he answers “I am He,” the whole party draws back and falls to the ground. The narrator notes that Judas stood with them, so the betrayer is among those who fall.",
+      "grammar": "Eidōs panta ta erchomena ep' auton, ‘knowing all the things coming upon him’, uses a perfect participle of oida: Jesus acts with full knowledge, as in 13:1-3. His answer is egō eimi, two words that can be the ordinary way to say ‘I am the one’, since Greek needs no ‘he’. But John has used the same words absolutely, with no predicate, in 8:24, 8:28, 8:58, and 13:19, where they echo God's self-declaration in the Greek of Isaiah. The narrator repeats the words in verse 6, hōs oun eipen autois, egō eimi, ‘when he said to them, I am’, and then records the effect: apēlthon eis ta opisō kai epesan chamai, ‘they went backward and fell to the ground’. The phrasing recalls the Psalms, where the enemies of the righteous ‘turn back’ and ‘stumble and fall’ (Psalm 56:9, Psalm 27:2, Psalm 35:4 in the Greek). The double sense is the point: to the soldiers it is an identification, to the reader a revelation.",
+      "words": [
+        "G6063",
+        "G3956",
+        "G2064",
+        "G1473",
+        "G1510",
+        "G0565",
+        "G3694",
+        "G4098",
+        "G5476"
+      ],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "The words by which Israel's God names himself in Isaiah, ‘I am He’, are spoken by Jesus at the moment of his arrest, and armed men fall before them. John presents the one being arrested as the bearer of the divine name (17:6, 17:11), who nonetheless lets himself be taken."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Jesus knows all that is coming and walks toward it. The arrest is not a trap closing on an unwilling victim; it is the Son's free acceptance of his hour (10:17-18), carried out through the choices of others."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 43:10",
+          "note": "In the Hebrew the LORD says that Israel is his witness so that they may know and believe that ani hu, ‘I am He’; before him no god was formed and none will be after him. The Septuagint renders ani hu as egō eimi, and in Isaiah 43:25 it doubles the phrase. John does not quote the verse, but the absolute egō eimi in his Gospel (8:24, 8:28, 13:19) repeatedly borrows its setting of witness and belief, and 13:19 almost reproduces its purpose clause. Here the phrase is set in a scene of power: those who come to seize Jesus recoil when he speaks it."
+        }
+      ],
+      "parallels": [
+        "Mark 14:43-46",
+        "Matthew 26:47-50",
+        "Luke 22:47-48"
+      ],
+      "refs": [
+        "John 8:58",
+        "John 13:19",
+        "John 10:17-18",
+        "Psalm 27:2",
+        "Exodus 3:14"
+      ]
+    },
+    {
+      "v": "7-9",
+      "context": "Jesus asks the question a second time, and when they give the same answer he bargains for his disciples: if he is the one they want, they must let the others go. The narrator says this fulfilled Jesus' own word that he would lose none of those the Father had given him (6:39, 17:12). The shepherd places himself between the wolves and the sheep (10:11-12).",
+      "grammar": "Ei oun eme zēteite, ‘if therefore you are seeking me’, is a real condition (the soldiers have just said so), and the emphatic eme, ‘me’, sets Jesus apart from the others. Aphete toutous hupagein is an aorist imperative, ‘let these men go’; the verb aphiēmi is the one used for forgiving and releasing in 20:23. Verse 9 introduces a word of Jesus with the formula hina plērōthē ho logos, ‘so that the word might be fulfilled’, the same formula John uses for Scripture (12:38, 13:18). The quotation is a free summary of 6:39 and 17:12, with the aorist apōlesa, ‘I lost’, looking back on the whole of his care for them.",
+      "words": [
+        "G2212",
+        "G0863I",
+        "G5217",
+        "G4137",
+        "G3056",
+        "G0622"
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "John applies Jesus' promise that he would lose none of those the Father gave him to the physical safety of the disciples in the garden. The same promise in 6:39 and 10:28 concerns their eternal life; here it is shown in a concrete act, as the shepherd hands himself over so that they go free."
+        },
+        {
+          "id": "atonement",
+          "note": "The pattern of the cross appears in miniature: the one is taken and the many are released. John does not explain the atonement by this scene, but he places it at the start of the passion so that the reader sees the shape of what follows."
+        }
+      ],
+      "refs": [
+        "John 6:39",
+        "John 17:12",
+        "John 10:11-12",
+        "John 10:28"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "Peter draws a sword and cuts off the right ear of the high priest's slave. Only John names both men. Jesus orders Peter to sheathe the sword and gives the reason in a question: the cup the Father has given him is to be drunk, not fought off. John has no scene of prayer in the garden, but this one sentence carries its substance.",
+      "grammar": "Echōn machairan, ‘having a sword’, uses machaira, a short sword or long knife, the word used in Luke 22:38 when the disciples produce two swords. Eilkusen, ‘drew’, is the verb John uses in 6:44 and 12:32 for the Father and the Son drawing people to Christ; here it describes a man drawing a weapon. The ear is the ōtarion, a diminutive form that had largely lost its diminutive force in Koine Greek (verse 26 uses ōtion). Jesus' question is emphatic: ou mē piō auto, with the double negative ou mē and an aorist subjunctive, is literally ‘shall I by no means drink it?’, expecting the answer that of course he shall. The perfect dedōken, ‘has given’, presents the cup as the Father's settled gift.",
+      "words": [
+        "G3162",
+        "G1670",
+        "G6090",
+        "G1188",
+        "G3124",
+        "G4221",
+        "G1325",
+        "G4095"
+      ],
+      "history": "The name Malchus corresponds to the Semitic name Malik or Malichus, common among the Nabataean Arabs (two of their kings bore it) and found among Jews as well: Josephus tells of a Jewish Malichus who poisoned Antipater, the father of Herod the Great, in 43 BC (Antiquities 14.277-284). John's naming of the slave, and in verse 26 of a relative of his, is one of several details that suggest a source familiar with the high priest's household (compare verse 15).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The cup in the prophets is often God's judgment poured out for the nations and for Jerusalem to drink (Isaiah 51:17, Jeremiah 25:15). Jesus calls it the cup the Father has given him and refuses to let Peter's sword stand between him and it: he goes to drink what others deserved."
+        }
+      ],
+      "parallels": [
+        "Mark 14:47",
+        "Matthew 26:51-54",
+        "Luke 22:49-51"
+      ],
+      "refs": [
+        "Mark 14:36",
+        "Isaiah 51:17",
+        "Matthew 26:52",
+        "Luke 22:51"
+      ]
+    },
+    {
+      "v": "12-14",
+      "context": "The arrest itself is told in a sentence: the soldiers, their commander, and the temple officers seize and bind Jesus. They take him first to Annas, and the narrator reminds the reader who Caiaphas is by recalling his counsel in 11:49-52 that one man should die for the people. The first stop is not a court but the house of the old power behind the office.",
+      "grammar": "Sunelabon, ‘they seized’, and edēsan, ‘they bound’, are plain aorists; the binding returns in verse 24 as a perfect participle, dedemenon, ‘still bound’. Prōton, ‘first’, implies a sequence and prepares for verse 24. Archiereus tou eniautou ekeinou, ‘high priest that year’, repeats 11:49 and 11:51. Some nineteenth-century critics took it to mean that John thought the high priesthood changed hands yearly, as some Gentile priesthoods did; most interpreters now read it as ‘in that fateful year’, since Caiaphas held office for about eighteen years. Caiaphas's counsel is recalled in the words sumpherei hena anthrōpon apothanein huper tou laou, ‘it is better for one man to die on behalf of the people’; huper, ‘for’ or ‘on behalf of’, is the preposition John uses for the good shepherd who dies for the sheep (10:11).",
+      "words": [
+        "G4686",
+        "G5506",
+        "G1210",
+        "G0452",
+        "G4413G",
+        "G1763",
+        "G4851",
+        "G5228",
+        "G2992"
+      ],
+      "history": "The chiliarchos (verse 12) is literally a commander of a thousand, the Greek title for a Roman tribune, the officer who commanded a cohort. Acts 21:31-33 shows the tribune of the Jerusalem garrison acting in a similar way when he arrests Paul. On the family of Annas, Josephus says that Sadducees were harsher in judgment than other Jews (Antiquities 20.199), in the passage where he tells of Annas's son Ananus. A lament preserved in the Babylonian Talmud (b. Pesachim 57a) groans over several high-priestly families of the late Second Temple period, among them the house of Hanin, the Hebrew form of Annas, and their whisperings.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Caiaphas meant a political calculation: sacrifice one troublemaker to protect the nation from Rome. John reads his words as unwitting prophecy (11:51-52). One man does die for the people, and the preposition huper carries the Gospel's language of substitution."
+        }
+      ],
+      "parallels": [
+        "Mark 14:53",
+        "Matthew 26:57",
+        "Luke 22:54"
+      ],
+      "refs": [
+        "John 11:49-52",
+        "John 10:11",
+        "Luke 3:2",
+        "Acts 4:6"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "Two disciples follow: Simon Peter and ‘another disciple’ who knew the high priest and could enter the courtyard. That disciple speaks to the woman at the door and brings Peter in. The small act of access sets up Peter's first denial.",
+      "grammar": "Ēkolouthei, ‘was following’, is singular though two subjects follow (a common Greek agreement with the nearer subject), and it is the Gospel's verb for discipleship (1:37-43, 21:19-22), used here with irony for a following that will collapse. Allos mathētēs, ‘another disciple’, has no article, so the narrator introduces him as if for the first time, though the same phrase with the article, ho allos mathētēs, will name the beloved disciple in 20:2-4. Gnōstos tō archierei means ‘known to the high priest’ and can describe an acquaintance or someone with standing in the household. Heistēkei pros tē thura exō, ‘had been standing at the door outside’, uses the pluperfect for a state: Peter is left outside until the other disciple acts.",
+      "words": [
+        "G0190",
+        "G0243",
+        "G3101",
+        "G1110",
+        "G0833",
+        "G2476",
+        "G2377",
+        "G1521"
+      ],
+      "history": "Who the other disciple was is not said. Many identify him with the beloved disciple, who is paired with Peter elsewhere (13:23-24, 20:2-8, 21:20-23); others think of a Jerusalem disciple such as Nicodemus or Joseph of Arimathea. His acquaintance with the high priest's household has seemed strange for a Galilean fisherman, and it has been used both against and for the identification with John son of Zebedee. A tradition reported by Polycrates, bishop of Ephesus about AD 190, says that John who leaned on the Lord's breast had been a priest who wore the petalon, the high priest's gold plate (Eusebius, Church History 5.24.3); what Polycrates meant is itself debated.",
+      "parallels": [
+        "Mark 14:54",
+        "Matthew 26:58",
+        "Luke 22:54-55"
+      ],
+      "refs": [
+        "John 20:2-4",
+        "John 13:23-24",
+        "John 19:35"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The first denial comes before the least threatening person in the story, the slave girl at the door, and to a question that expects a no. Peter gives it. Twice in the garden Jesus said “I am He”; Peter now says “I am not.”",
+      "grammar": "The girl's question begins with mē, the Greek particle that signals a question expecting a negative answer: ‘You are not also one of this man's disciples, are you?’ Mē kai su, ‘not you too’, may hint that she knows the other disciple is one of them. The phrase tou anthrōpou toutou, ‘this man’, is dismissive. Peter's answer is two words, ouk eimi, ‘I am not’. John's arrangement puts it directly against Jesus' egō eimi in verses 5, 6, and 8, and Peter will repeat it in verse 25. Paidiskē, ‘servant girl’, is the diminutive of pais and names a young female slave; thurōros, ‘doorkeeper’, is here feminine, a role also given to a slave girl in Acts 12:13.",
+      "words": [
+        "G3814",
+        "G2377",
+        "G3361",
+        "G4771",
+        "G0444",
+        "G3756",
+        "G1510"
+      ],
+      "parallels": [
+        "Mark 14:66-68",
+        "Matthew 26:69-70",
+        "Luke 22:56-57"
+      ],
+      "refs": [
+        "John 13:37-38",
+        "Acts 12:13",
+        "Matthew 10:33"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "The scene pauses outside on a cold night. The slaves and the officers who made the arrest stand around a charcoal fire, and Peter stands with them, warming himself. The narrator leaves him there while the scene moves inside.",
+      "grammar": "Heistēkeisan, ‘had been standing’, is a pluperfect describing the scene already in place when Peter enters. Pepoiēkotes, ‘having made’, is a perfect participle: the fire was already burning. The last clause, ēn de kai ho Petros met' autōn hestōs kai thermainomenos, ‘and Peter too was with them, standing and warming himself’, uses the imperfect of eimi with two participles, a periphrastic construction that holds the picture still. Met' autōn, ‘with them’, places Peter among the hupēretai, the very officers who had come with lanterns and weapons to take Jesus. The same participle hestōs and the same verb for warming return in verse 25, so the frame of the scene is exact.",
+      "words": [
+        "G2476",
+        "G1401",
+        "G5257",
+        "G0439",
+        "G4160G",
+        "G5592",
+        "G2328"
+      ],
+      "refs": [
+        "John 21:9",
+        "Mark 14:54",
+        "Luke 22:55"
+      ]
+    },
+    {
+      "v": "19-21",
+      "context": "Inside, the high priest (in context Annas, a former high priest who kept the title) questions Jesus about his disciples and his teaching. Jesus refuses to be treated as the leader of a secret society. He has taught openly in synagogue and temple; witnesses are available, and the court should call them. The questioning of the disciples comes to nothing, while outside the chief disciple is denying he is one.",
+      "grammar": "Egō parrēsia lelalēka tō kosmō, ‘I have spoken openly to the world’, puts the emphatic egō first and uses the perfect lelalēka: his teaching stands on the public record. Parrēsia, ‘openly’ or ‘boldly’, is a key word in John (7:4, 7:26, 10:24, 11:14, 16:25, 16:29), where people have demanded that Jesus speak plainly; here he says he always did. En kruptō elalēsa ouden, ‘I spoke nothing in secret’, echoes the Greek of Isaiah 45:19 and 48:16, where God says he has not spoken in secret. Ti me erōtas; erōtēson tous akēkootas, ‘Why do you ask me? Ask those who have heard’, sets a present tense against an aorist imperative, and ide houtoi oidasin, ‘look, these know’, points to witnesses.",
+      "words": [
+        "G2065",
+        "G1322",
+        "G3954",
+        "G2980",
+        "G2889",
+        "G2927",
+        "G0191",
+        "G6063"
+      ],
+      "history": "Jesus' reply assumes the principle of Deuteronomy 19:15 that a matter is established by witnesses. Later rabbinic law went further and held that a person's own testimony cannot make him guilty, a rule stated in the Babylonian Talmud in the name of the fourth-century teacher Rava (b. Sanhedrin 9b). That rule is later than the Gospel, but it shows that the instinct Jesus appeals to, that the court must prove its case rather than extract it from the accused, ran deep in Jewish law.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' teaching was public, given to the world in the places where all Israel gathered. Christian revelation is not an esoteric doctrine for initiates; the one who is the truth spoke openly, and his words can be checked by those who heard them."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 45:19",
+          "note": "In the Hebrew the LORD says that he did not speak in secret, in a land of darkness, and did not tell Jacob's offspring to seek him in vain; he speaks what is right. The Septuagint renders the first clause ouk en kruphē lelalēka, ‘I have not spoken in secret’, very close to Jesus' en kruptō elalēsa ouden. John does not mark a quotation, and the words are natural in any defense, but for readers who know Isaiah the prisoner's reply sounds like the voice of the God who speaks openly to his people (compare Isaiah 48:16)."
+        }
+      ],
+      "parallels": [
+        "Mark 14:49",
+        "Matthew 26:55",
+        "Luke 22:53"
+      ],
+      "refs": [
+        "Deuteronomy 19:15",
+        "John 7:26",
+        "John 10:24",
+        "Proverbs 8:1-4"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "An officer slaps Jesus for his answer. Jesus does not retaliate, and he does not stay silent either. He asks for testimony: if he spoke wrongly, let the wrong be shown; if rightly, why the blow? The prisoner asks for justice from the court that is supposed to administer it.",
+      "grammar": "Parestēkōs, ‘standing by’, is a perfect participle. Edōken rhapisma, ‘gave a slap’, uses rhapisma, a blow with the open hand or a rod; the same word appears in the Greek of Isaiah 50:6, where the servant gives his cheeks to rhapismata. Houtōs apokrinē tō archierei, ‘Is this how you answer the high priest?’, is a present tense question of indignation. Jesus' reply is a balanced pair of conditions: ei kakōs elalēsa, marturēson peri tou kakou; ei de kalōs, ti me dereis, ‘if I spoke badly, testify about the bad; but if well, why do you strike me?’ The imperative marturēson, ‘testify’, returns the scene to the Gospel's language of witness, and dereis, ‘you beat’, is the verb for a flogging or thrashing.",
+      "words": [
+        "G3936",
+        "G5257",
+        "G4475",
+        "G0611",
+        "G2560",
+        "G3140",
+        "G2573",
+        "G1194"
+      ],
+      "history": "The officer's rebuke assumes the command not to curse a ruler of the people (Exodus 22:28), which Paul cites when he is struck at the high priest's order in Acts 23:2-5. Augustine, answering critics who said Christians could not obey Jesus' command to turn the other cheek (Matthew 5:39), pointed to this scene: Jesus, when struck, did not offer the other cheek but answered with a reasoned protest, which shows that the command concerns readiness of heart more than a fixed gesture (Letter 138).",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus suffers the blow without returning it, and yet protests the injustice. The Gospel does not present silent endurance and honest protest as opposites; the innocent sufferer may name the wrong done to him while refusing to answer it with violence (compare 1 Peter 2:23)."
+        }
+      ],
+      "refs": [
+        "Isaiah 50:6",
+        "Exodus 22:28",
+        "Acts 23:2-5",
+        "Matthew 5:39",
+        "1 Peter 2:23"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Annas sends Jesus, still bound, to Caiaphas, the ruling high priest. John reports nothing of what happened before Caiaphas; the Synoptic Gospels' night session before the council would fit here, but John moves straight on to Peter and then to Pilate.",
+      "grammar": "Apesteilen oun auton ho Hannas, ‘so Annas sent him’, uses oun, ‘so’ or ‘then’, the usual connective of John's narrative, which marks the next step in sequence. The perfect participle dedemenon, ‘bound’, describes a state that continues from verse 12: Jesus was not released during the questioning. The King James Version rendered the aorist as a pluperfect, ‘Now Annas had sent him’, to make Caiaphas the questioner of verses 19 to 23; the Greek aorist can occasionally stand where English would use a pluperfect, but the connective oun points forward, and most modern versions read it as the next event.",
+      "words": [
+        "G0649",
+        "G0452",
+        "G1210",
+        "G2533G",
+        "G0749"
+      ],
+      "text": "The manuscripts vary slightly at the connective, reading oun, de, or no connective at all, and the Sinaitic Syriac moves the whole verse to follow verse 13. These differences are best explained as attempts to deal with the same puzzle about who questioned Jesus in verses 19 to 23. The printed Greek editions keep the verse in its place with oun.",
+      "parallels": [
+        "Mark 14:53",
+        "Matthew 26:57"
+      ],
+      "refs": [
+        "John 11:49",
+        "Luke 3:2",
+        "Acts 4:6"
+      ]
+    },
+    {
+      "v": "25-27",
+      "context": "The narrative returns to the fire, and Peter is still standing and warming himself. He is asked again and denies again. Then a relative of Malchus, who had been in the garden, asks whether he saw Peter there, and Peter denies a third time. The rooster crows at once. John records no oaths, no curses, and no weeping; the crow of the rooster fulfills 13:38 and ends the scene.",
+      "grammar": "The second question uses mē again, ‘You are not one of his disciples too, are you?’, and Peter repeats ouk eimi. The third question changes the particle: ouk egō se eidon en tō kēpō met' autou; begins with ouk, which expects a yes, ‘Did I not see you in the garden with him?’ The pressure has shifted from suspicion to identification by an eyewitness. Ērnēsato, ‘he denied’, from arneomai, is used for the second and third answers, and palin, ‘again’, in verse 27 counts the third. Sungenēs, ‘relative’, and the reminder hou apekopsen Petros to ōtion, ‘whose ear Peter cut off’, tie the denial to the sword stroke in the garden: Peter is recognized by the consequence of his own act.",
+      "words": [
+        "G2476",
+        "G2328",
+        "G3361",
+        "G0720",
+        "G4773",
+        "G5621",
+        "G3756",
+        "G2779",
+        "G0220",
+        "G5455"
+      ],
+      "history": "The Mishnah says that chickens were not raised in Jerusalem because of the holy things (m. Bava Kamma 7:7), which some have taken as a problem for the rooster's crow. The rule may express an ideal of the rabbis rather than the practice of the city in Jesus' day, and a rooster belonging to someone outside the rule, or heard from outside the walls, would still be heard. Others take ‘cockcrow’ as the name of the watch of the night that ended about three in the morning (Mark 13:35), which the Romans called gallicinium; in John, the rooster simply crows.",
+      "parallels": [
+        "Mark 14:69-72",
+        "Matthew 26:71-75",
+        "Luke 22:58-62"
+      ],
+      "refs": [
+        "John 13:38",
+        "John 21:15-17",
+        "Mark 13:35",
+        "Matthew 10:33"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "At early morning Jesus is taken from Caiaphas to the Praetorium, the governor's headquarters. The accusers will not go in, to avoid ritual defilement that would keep them from eating the Passover. The scene sets up the rest of the trial, which alternates between Pilate outside with the accusers and inside with Jesus.",
+      "grammar": "Agousin, ‘they lead’, is a historical present that opens the new scene. Prōi, ‘early’, is the word Mark uses for the last watch of the night (Mark 13:35), roughly three to six in the morning. The purpose clause hina mē mianthōsin all' phagōsin to pascha, ‘so that they might not be defiled but might eat the Passover’, is the center of the chronology debate. In the Synoptics phagein to pascha means eating the Passover meal (Mark 14:12, 14:14), which would place John's scene before that meal. Scholars who harmonize John with the Synoptics argue that pascha here can refer to the week of festival meals, including the chagigah offering eaten on the fifteenth of Nisan; others reply that John elsewhere uses pascha for the feast and its lamb in the ordinary way (2:13, 6:4, 11:55). See 19:14.",
+      "words": [
+        "G0071",
+        "G4232",
+        "G4404",
+        "G3392",
+        "G5315",
+        "G3957"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The accusers guard their ceremonial purity in order to eat the Passover while handing over the one John called the Lamb of God (1:29). The irony is John's way of saying that the true Passover is being prepared in the very act they think is incidental to it."
+        }
+      ],
+      "parallels": [
+        "Mark 15:1",
+        "Matthew 27:1-2",
+        "Luke 23:1"
+      ],
+      "refs": [
+        "John 1:29",
+        "John 11:55",
+        "John 19:14",
+        "Numbers 9:6",
+        "1 Corinthians 5:7"
+      ]
+    },
+    {
+      "v": "29-30",
+      "context": "Pilate enters the story without introduction, as if John's readers knew who he was. He comes out to the accusers, as Roman procedure required, and asks what charge they bring. They do not name one; they answer that they would not have handed Jesus over if he were not an evildoer. The exchange shows mistrust on both sides.",
+      "grammar": "Katēgoria, ‘accusation’, is a formal legal term for a charge brought before a magistrate, and Pilate's tina katēgorian pherete, ‘what charge do you bring?’, is the opening question of a Roman trial. The accusers answer with a contrary-to-fact condition: ei mē ēn houtos kakon poiōn, ouk an soi paredōkamen auton, ‘if this man were not doing evil, we would not have handed him over to you’. The periphrastic ēn... poiōn, ‘was doing’, presents his wrongdoing as a habit. Paredōkamen, ‘we handed over’, continues the chain of paradidōmi that runs from Judas (verse 2) to Pilate (19:16).",
+      "words": [
+        "G4091",
+        "G2724",
+        "G5342",
+        "G2556G",
+        "G4160G",
+        "G3860"
+      ],
+      "history": "Pontius Pilate governed Judea from about AD 26 to 36. In 1961 an Italian expedition led by Antonio Frova, excavating the theater at Caesarea Maritima, found a limestone block reused in a later rebuilding of the theater. Its Latin inscription, partly broken, names [Pon]tius Pilatus as [praef]ectus Iuda[ea]e, prefect of Judea, and refers to a Tiberieum, a building honoring the emperor Tiberius. The inscription settled that his title was prefect, a military governor's rank; Tacitus, writing later, calls him procurator (Annals 15.44), the title used for governors of Judea after AD 44. Pilate's bronze coins, struck in Jerusalem between about AD 29 and 32, carried the lituus (an augur's staff) and the simpulum (a ladle for libations), implements of Roman religion, a choice no earlier governor had made. Philo (Embassy to Gaius 299-305) and Josephus (Jewish War 2.169-177; Antiquities 18.55-62, 18.85-89) describe him as provocative and severe.",
+      "parallels": [
+        "Mark 15:2-3",
+        "Matthew 27:11-12",
+        "Luke 23:2"
+      ],
+      "refs": [
+        "Luke 13:1",
+        "Acts 4:27",
+        "1 Timothy 6:13"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Pilate tries to hand the case back to the Jewish authorities. They reply that they are not permitted to put anyone to death. The narrator explains that this fulfilled Jesus' word about the kind of death he would die: not stoning, the Jewish penalty for blasphemy, but being ‘lifted up’ on a Roman cross (3:14, 12:32-33).",
+      "grammar": "Labete auton humeis, ‘you take him’, puts the emphatic humeis, ‘you yourselves’, after the imperative: Pilate pushes the case away. Kata ton nomon humōn krinate auton, ‘judge him by your own law’, may be sarcastic, since he knows what they want. Their reply, hēmin ouk exestin apokteinai oudena, uses exestin, the word for what is legally permitted (it is the word in the question about paying taxes to Caesar, Mark 12:14), with an aorist infinitive of apokteinō, ‘to put to death’. The statement concerns legal authority, not religious scruple about killing. In verse 32 sēmainōn poiō thanatō ēmellen apothnēskein, ‘signifying by what kind of death he was going to die’, repeats word for word the narrator's comment in 12:33, which followed Jesus' saying about being lifted up.",
+      "words": [
+        "G2983",
+        "G2919",
+        "G3551",
+        "G1832",
+        "G0615",
+        "G3762",
+        "G4591",
+        "G4169",
+        "G2288"
+      ],
+      "history": "Whether the Jewish council could carry out executions under Roman rule is debated. Jean Juster (Les Juifs dans l'Empire romain, 1914) and Hans Lietzmann (1931) argued that it could, pointing to the temple inscription threatening Gentiles with death, the stoning of Stephen (Acts 7:58), and the execution of James in AD 62; on that view John's statement is inaccurate. A. N. Sherwin-White, a historian of Roman law (Roman Society and Roman Law in the New Testament, 1963), argued that Rome jealously reserved capital power to its governors in provinces like Judea, that the cases cited were irregular or exceptional (Ananus was deposed for the execution of James, Antiquities 20.200-203), and that John's statement fits what is known. Augustine offered a third reading (Tractates on John 114): the leaders meant that it was not lawful for them to execute anyone during the sacred days of the festival.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "The Roman state holds the power of the sword, and the accusers must go through it. John shows both powers, religious and political, cooperating in an unjust death, and neither can escape responsibility by pointing to the other."
+        }
+      ],
+      "refs": [
+        "John 12:32-33",
+        "John 3:14",
+        "Deuteronomy 21:22-23",
+        "Galatians 3:13",
+        "Acts 7:58"
+      ]
+    },
+    {
+      "v": "33-35",
+      "context": "Pilate goes inside and questions Jesus directly: is he the king of the Jews? Jesus answers with a question: is Pilate asking for himself, or repeating what others have said? Pilate's retort is scornful. He is not a Jew; Jesus' own nation and its chief priests have handed him over. What has he done?",
+      "grammar": "Su ei ho basileus tōn Ioudaiōn; ‘Are you the King of the Jews?’ puts the pronoun su first, as in all four Gospels, which may express incredulity at the bound prisoner. The title is a Gentile's phrase; Jews spoke of ‘the king of Israel’ (1:49, 12:13). Jesus' reply, apo seautou su touto legeis, ‘are you saying this from yourself?’, asks whether the question is Pilate's own concern (a charge of rebellion against Rome) or a report of what the priests mean by ‘Messiah’. Pilate's answer begins mēti egō Ioudaios eimi; the particle mēti expects a firm no and carries contempt: ‘I am not a Jew, am I?’ To ethnos to son, ‘your own nation’, and paredōkan se emoi, ‘they handed you over to me’, lay the responsibility on Jesus' own people.",
+      "words": [
+        "G4232",
+        "G5455",
+        "G4771",
+        "G0935",
+        "G2453",
+        "G3385",
+        "G1484",
+        "G3860"
+      ],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The one title Pilate cares about is ‘king’, and the whole Roman trial turns on it. Jesus' question forces the distinction between kingship as Rome understood it (a rival to Caesar) and kingship as Israel's Scriptures promised it (the Messiah, God's anointed). He will accept the title only after redefining it (verses 36 and 37)."
+        }
+      ],
+      "parallels": [
+        "Mark 15:2",
+        "Matthew 27:11",
+        "Luke 23:3"
+      ],
+      "refs": [
+        "John 1:49",
+        "John 12:13",
+        "John 1:11",
+        "John 19:12"
+      ]
+    },
+    {
+      "v": "36",
+      "context": "Jesus defines his kingdom by its source. It is not from this world; the proof is that his attendants are not fighting to prevent his being handed over. Rome has nothing to fear from the kind of rebellion Pilate has in mind, and at the same time Pilate is facing a kingship more fundamental than Caesar's.",
+      "grammar": "Hē basileia hē emē, ‘my kingdom’, uses the possessive adjective with a repeated article, which is emphatic: ‘the kingdom that is mine’. Ouk estin ek tou kosmou toutou uses ek, ‘from’ or ‘out of’, for origin, the same way John says the disciples are not ek tou kosmou (15:19, 17:14, 17:16). The middle sentence is a contrary-to-fact condition: ei ek tou kosmou toutou ēn... hoi hupēretai hoi emoi ēgōnizonto an, ‘if it were from this world, my attendants would be fighting’. Hupēretai is the word the chapter has used for the temple officers (verses 3, 12, 18, 22); Jesus has attendants too, but they do not carry weapons. The closing nun de, ‘but as it is’, and enteuthen, ‘from here’, restate the point: his kingdom does not derive from this place.",
+      "words": [
+        "G0932",
+        "G1537",
+        "G2889",
+        "G5257",
+        "G0075",
+        "G3860",
+        "G3568",
+        "G1782"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The verse contrasts sources, not locations. Christ's reign does not arise from the world's power and does not defend itself by the world's weapons, which is why his servants do not fight. It is nonetheless present in the world, standing before Pilate and claiming him."
+        },
+        {
+          "id": "state",
+          "note": "Jesus neither denies Pilate's authority nor bows to Rome's definition of rule. The verse has been cited on every side of Christian debates over church and state: by Augustine and Calvin to distinguish the spiritual kingdom from civil government, and by Anabaptist and Mennonite writers in refusing the sword. Its own point is that Christ's kingdom does not advance by coercion."
+        }
+      ],
+      "refs": [
+        "John 17:14-16",
+        "Matthew 26:52-53",
+        "2 Corinthians 10:3-4",
+        "Daniel 2:44",
+        "Daniel 7:14"
+      ]
+    },
+    {
+      "v": "37",
+      "context": "Pilate seizes on the word: so he is a king. Jesus' answer neither rejects the title nor accepts Pilate's meaning of it, and then he states the purpose of his coming: to bear witness to the truth. Those who are of the truth hear his voice, as the sheep hear the shepherd (10:3-4, 10:27).",
+      "grammar": "Oukoun basileus ei su; is a question introduced by oukoun, ‘so then’, drawing an inference: ‘So you are a king?’ Jesus replies su legeis hoti basileus eimi, ‘you say that I am a king’. The expression is a qualified yes: Jesus does not disown the word, but the word is Pilate's, and Jesus immediately fills it with other content. Two perfects follow, eis touto gegennēmai kai eis touto elēlutha eis ton kosmon, ‘for this I have been born and for this I have come into the world’. The first speaks of a human birth, the second of a coming from elsewhere, the Gospel's language for the Son sent from the Father (3:19, 12:46, 16:28). Ho ōn ek tēs alētheias, ‘the one who is of the truth’, uses ek for origin, as in verse 36: those who belong to the truth recognize his voice.",
+      "words": [
+        "G3766",
+        "G0935",
+        "G4771",
+        "G3004G",
+        "G1080",
+        "G2064",
+        "G2889",
+        "G3140",
+        "G0225",
+        "G0191",
+        "G5456G"
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "In one sentence Jesus speaks of being born and of coming into the world. The pairing holds together what the Gospel says in 1:14: the eternal Word came from the Father and was truly born as a man, and his purpose in both is to make the truth known."
+        },
+        {
+          "id": "revelation",
+          "note": "Jesus defines his kingship as testimony. He rules by bearing witness to the truth, and people come under his rule by hearing his voice, not by being compelled. 1 Timothy 6:13 remembers this confession before Pilate as the pattern for Christian witness."
+        }
+      ],
+      "refs": [
+        "1 Timothy 6:13",
+        "John 10:27",
+        "John 3:31-32",
+        "John 14:6",
+        "Revelation 1:5"
+      ]
+    },
+    {
+      "v": "38",
+      "context": "Pilate's question, “What is truth?”, closes the conversation; he does not wait for an answer. He goes out and gives his first verdict: he finds no case against Jesus. He will say it three times (18:38, 19:4, 19:6), as Luke's Pilate also does (Luke 23:4, 23:14, 23:22), and still hand him over.",
+      "grammar": "Ti estin alētheia; has no article before alētheia, where Jesus in verse 37 spoke of tē alētheia, ‘the truth’, with the article. The shift may be small, but it fits the sense: Jesus speaks of a particular truth to which he bears witness, and Pilate asks about truth in general. Touto eipōn, ‘having said this’, marks the question as the last word of the exchange, and palin exēlthen, ‘he went out again’, turns his back on the answer. Egō oudemian heuriskō en autō aitian, ‘I find no basis for a charge against him’, uses aitia, the legal word for a ground of accusation (the same word describes the charge over the cross in Mark 15:26), with the emphatic egō: Pilate speaks as the judge.",
+      "words": [
+        "G0225",
+        "G1831",
+        "G2453",
+        "G2147",
+        "G0156"
+      ],
+      "history": "Pilate's question has been read as philosophical skepticism, political cynicism, or impatience. Nothing in the text suggests a considered theory; Roman magistrates were practical men, and Pilate's next act is to try to solve the problem politically. Francis Bacon's essay Of Truth (1625) made the phrase proverbial with its image of jesting Pilate who would not stay for an answer.",
+      "parallels": [
+        "Luke 23:4",
+        "Matthew 27:23-24",
+        "Mark 15:14"
+      ],
+      "refs": [
+        "John 14:6",
+        "John 19:4",
+        "John 19:6",
+        "Luke 23:14"
+      ]
+    },
+    {
+      "v": "39-40",
+      "context": "Pilate proposes a way out: the custom of releasing a prisoner at Passover. He offers them ‘the King of the Jews’, a title that mocks both the prisoner and the accusers. They shout for Barabbas instead. The narrator adds four Greek words that close the chapter: Barabbas was a lēstēs, a bandit or insurrectionist.",
+      "grammar": "Estin de sunētheia humin, ‘you have a custom’, uses sunētheia, ‘habit’ or ‘custom’, and puts it on the people's side: ‘your custom’. Apolusō, ‘I should release’, is an aorist subjunctive in both clauses, with boulesthe, ‘do you want?’, taking a deliberative subjunctive without a connecting word. Ekraugasan oun palin, ‘they shouted again’, is strange in John, since no shouting has been reported; the same difficulty appears with palin in Mark 15:13, and it may mean simply ‘in reply’. Lēstēs is the word Jesus used in 10:1 and 10:8 for the thieves and robbers who climb into the sheepfold; the crowd chooses one of them over the shepherd.",
+      "words": [
+        "G4914",
+        "G0630G",
+        "G3957",
+        "G0935",
+        "G2905",
+        "G3825",
+        "G0912",
+        "G3027"
+      ],
+      "history": "Mark says Barabbas was held with rebels who had committed murder in ‘the insurrection’ (Mark 15:7), and Josephus uses lēstēs throughout his histories for the armed bands who fought Roman rule, not simply for highway robbers (for example, Jewish War 2.253-254). Some manuscripts of Matthew give his full name as Jesus Barabbas (Matthew 27:16-17), a reading Origen knew; if original, Pilate's choice was between two men called Jesus. The name Barabbas is Aramaic bar Abba, ‘son of the father’, and Abba was also in use as a personal name.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "A man guilty of violence goes free and the innocent one remains bound. John does not comment, but the exchange enacts on the human level what the cross does: the guilty released because another is condemned in his place."
+        }
+      ],
+      "parallels": [
+        "Mark 15:6-15",
+        "Matthew 27:15-21",
+        "Luke 23:18-19"
+      ],
+      "refs": [
+        "John 10:1",
+        "John 10:8",
+        "Acts 3:14",
+        "Isaiah 53:12"
+      ]
+    }
+  ]
+}

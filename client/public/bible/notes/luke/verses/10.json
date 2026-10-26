@@ -1,0 +1,488 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A new sending opens the chapter. After the Twelve (9:1-6) and the messengers who went ahead into Samaria (9:52), the Lord now appoints a larger company and sends them in pairs along the road he himself is about to take toward Jerusalem. Everything in verses 2 to 16 is his briefing to them, and verses 17 to 20 report their return.",
+      "grammar": "Anedeixen, ‘he appointed’ or ‘designated publicly’, is a rare verb, found in the New Testament only here and in Acts 1:24, where the apostles ask the Lord to show which man he has chosen to replace Judas; in both places the choice of messengers belongs to the Lord. Heterous, ‘others’, sets this group beside the Twelve of 9:1. Hebdomēkonta [duo], ‘seventy [two]’, is where the editions divide: the Nestle-Aland text, the SBL Greek New Testament, and Westcott and Hort print seventy-two (Nestle-Aland with the second numeral in brackets), while the Tyndale House Greek New Testament, Tregelles, and the Byzantine text print seventy. Ana duo [duo], ‘two by two’, is a distributive; the doubled numeral, like Mark 6:7's duo duo, reflects a Semitic way of expressing ‘in pairs’. Pro prosōpou autou, literally ‘before his face’, is the Septuagint phrase of Malachi 3:1 that Luke has already used of John the Baptist (7:27) and of the messengers to Samaria (9:52). Ēmellen erchesthai, ‘he was about to come’, makes the whole mission a preparation for his own arrival.",
+      "words": ["G0322", "G2087", "G1440", "G1417", "G0649", "G4383", "G3195"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The mission is defined by the one who follows it. The seventy-two go only where Jesus himself is coming, so the church's sending is always preparatory: it announces a Lord who is on his way and does not replace him."
+        }
+      ],
+      "text": "English Bibles differ because the manuscripts do: the ESV, NIV, CSB, NRSV, and BSB read seventy-two, the KJV, NKJV, and NASB seventy. The same choice recurs in verse 17. Two pairs of witnesses stand behind each number (see the chapter note), and the evidence is close enough that most versions print the other number in a footnote.",
+      "parallels": ["Luke 9:1-6", "Mark 6:7", "Matthew 10:1-5"],
+      "refs": ["Numbers 11:16-17", "Genesis 10:32", "Malachi 3:1", "Acts 1:24", "Luke 9:52"]
+    },
+    {
+      "v": "2",
+      "context": "Before the workers go anywhere, they are told to pray for more workers. The saying explains why the seventy-two are sent at all: the field is larger than any number of laborers, and the owner of the field is the one who sends.",
+      "grammar": "Ho men therismos polus, hoi de ergatai oligoi sets two clauses against each other with the paired particles men and de, ‘on the one hand the harvest is great, on the other the workers few’. Deēthēte, ‘ask’, is an aorist imperative of deomai, the verb Luke uses for earnest petition (5:12, 21:36, 22:32). The oun, ‘therefore’, makes prayer the logical response to the shortage, before any strategy. The verb for sending is ekbalē, from ekballō, which Luke uses most often for driving out demons; here it has the weaker sense ‘send out’, though some commentators hear in it the urgency of workers thrust into a field that cannot wait.",
+      "words": ["G2326", "G2040", "G3641", "G1189", "G3767", "G1544"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Mission begins as petition. The disciples are told to ask the Lord of the harvest for laborers, and in the next breath Jesus sends them, so those who pray become the answer to their own request."
+        },
+        {
+          "id": "mission",
+          "note": "The harvest belongs to its Lord, not to the workers. The verse keeps the church from treating mission as its own project: God owns the field, sends the workers, and gathers the crop."
+        }
+      ],
+      "parallels": ["Matthew 9:37-38"],
+      "refs": ["John 4:35-38", "Joel 3:13", "Isaiah 27:12", "2 Thessalonians 3:1"]
+    },
+    {
+      "v": "3-4",
+      "context": "The workers go out defenseless and unprovided. Verse 3 names the danger, lambs among wolves, and verse 4 strips away the means of self-protection and self-support: no purse, no traveler's bag, no sandals, and no lingering on the road.",
+      "grammar": "Hupagete is a present imperative, ‘go on your way’, and idou apostellō, ‘look, I am sending’, uses the present tense for an action happening as he speaks. The comparison hōs arnas en mesō lukōn, ‘as lambs in the midst of wolves’, is sharper than Matthew 10:16, which has sheep. The prohibitions in verse 4 use mē with present imperatives (mē bastazete, ‘do not carry’), forbidding a practice, while the last uses mēdena with an aorist subjunctive (aspasēsthe), the usual Greek form for forbidding an action before it starts: ‘do not greet anyone at all’. Ballantion, ‘money bag’ or purse, is a word only Luke uses in the New Testament (here, 12:33, 22:35, 22:36).",
+      "words": ["G5217", "G0649", "G0704", "G3074", "G0941", "G0905", "G4082", "G5266", "G0782"],
+      "history": "Travel on Judean and Galilean roads was dangerous enough that Josephus notes the Essenes carried nothing on their travels except weapons against robbers (Jewish War 2.125). Jesus' messengers carry not even that. The wolf and lamb pairing was a stock image for the weak among predators; Isaiah uses it for the peace of the coming age (Isaiah 11:6, 65:25), and the Animal Apocalypse of 1 Enoch (chapters 85 to 90) pictures Israel as sheep beset by wolves and other beasts. The command not to greet anyone echoes Elisha's instruction to Gehazi (2 Kings 4:29).",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Jesus does not promise his messengers safety. He sends them into danger on purpose, without the means to protect themselves, so that their dependence on God is visible. Luke 22:35-36 later looks back on this mission and marks a change of season as the Passion begins."
+        }
+      ],
+      "parallels": ["Matthew 10:9-10", "Matthew 10:16", "Luke 9:3"],
+      "refs": ["Isaiah 11:6", "2 Kings 4:29", "Luke 22:35-36", "Acts 20:29"]
+    },
+    {
+      "v": "5-6",
+      "context": "The first word in any house is peace. Verse 6 treats that greeting as something real that either finds a resting place or comes back to the one who spoke it, so the messengers need not fear wasting it.",
+      "grammar": "Prōton legete, ‘first say’, gives the greeting priority over everything else. Huios eirēnēs, literally ‘a son of peace’ (the BSB's \"a man of peace\"), is a Hebrew idiom in which ‘son of’ marks a person's character or destiny, as in ‘sons of the resurrection’ (20:36) or ‘son of hell’ (Matthew 23:15). Epanapaēsetai, a future passive of epanapauomai, ‘it will come to rest upon’, occurs in the New Testament only here and in Romans 2:17. In the Septuagint the same verb describes the Spirit resting on the seventy elders so that they prophesied (Numbers 11:25), which gives the image weight: peace settles on a person as the Spirit settled on Moses' helpers. Ei de mē ge, ‘but if not’, is a compressed conditional, and anakampsei, ‘it will turn back’, completes the picture of a blessing that is never lost.",
+      "words": ["G4413G", "G1515", "G5207", "G1879", "G0344", "G1065"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The messengers bring peace before they bring anything else, and they leave the result with God. A household's response does not diminish the gift, which returns to the giver; the disciples are responsible for offering it, not for its reception."
+        }
+      ],
+      "parallels": ["Matthew 10:12-13"],
+      "refs": ["Luke 2:14", "Luke 19:42", "Acts 10:36", "Numbers 11:25"]
+    },
+    {
+      "v": "7",
+      "context": "The messengers are to settle in one house and accept its hospitality as payment, without apology and without trading up. The wage saying explains why receiving food is no shame, and the ban on moving from house to house protects both the host's honor and the mission's integrity.",
+      "grammar": "Menete, ‘remain’, and metabainete, ‘move’, are both present imperatives, one commanding a settled practice and the other forbidding its opposite. The saying axios gar ho ergatēs tou misthou autou, ‘for the worker is worthy of his wages’, uses misthos, ‘wage’, where Matthew 10:10 has trophē, ‘food’. Luke's wording matches exactly the form quoted in 1 Timothy 5:18, where it stands beside Deuteronomy 25:4 and is introduced with the words ‘the Scripture says’. Ta par' autōn, literally ‘the things from them’, means whatever the hosts provide.",
+      "words": ["G3306", "G2068", "G4095", "G0514", "G2040", "G3408", "G3327"],
+      "history": "The citation of this saying in 1 Timothy 5:18 is one of the earliest places where a saying of Jesus in its Lukan form is set beside the Law as authoritative. Paul makes the same point without quoting the words when he says the Lord commanded that those who proclaim the gospel should get their living by the gospel (1 Corinthians 9:14). The Didache, a church manual from around AD 100, reflects the same instruction and its abuse: a traveling apostle may stay a day or two, but one who stays three days or asks for money is a false prophet (Didache 11.4-6).",
+      "parallels": ["Matthew 10:10-11"],
+      "refs": ["1 Timothy 5:18", "1 Corinthians 9:14", "Deuteronomy 24:15", "Luke 9:4"]
+    },
+    {
+      "v": "8-9",
+      "context": "When a town welcomes them, the messengers eat what is served, heal the sick, and announce that God's reign has come near. The deeds and the word go together: the healings show what kind of kingdom is arriving.",
+      "grammar": "Esthiete ta paratithemena humin, ‘eat what is set before you’, uses the same participle Paul uses when he tells the Corinthians to eat whatever is set before them in an unbeliever's house without raising questions of conscience (1 Corinthians 10:27); the instruction frees the mission from scruples about food. Ēngiken is a perfect of engizō, ‘it has come near’, the same word as in Mark 1:15. Scholars have argued over whether it means ‘has arrived’ or ‘is at hand’. C. H. Dodd (The Parables of the Kingdom, 1935) took it to mean the kingdom had come, while others, Werner Georg Kümmel among them, held that it means the kingdom has drawn near without yet having fully arrived. Luke's eph' humas, ‘upon you’ or ‘to you’, adds that it has come near to these particular people.",
+      "words": ["G2068", "G3908", "G2323", "G0772H", "G1448", "G0932"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom of God is announced as having drawn near to a town through the presence of Jesus' messengers and the healing of its sick. God's reign is not an abstraction but arrives in bodies made well and in a message that calls for response."
+        }
+      ],
+      "parallels": ["Matthew 10:7-8", "Luke 9:2"],
+      "refs": ["Mark 1:15", "1 Corinthians 10:27", "Acts 10:28", "Luke 11:20"]
+    },
+    {
+      "v": "10-11",
+      "context": "When a town refuses them, the messengers go out into its streets and make their departure a public warning. Yet the announcement is repeated even there: the kingdom has come near, whether it is received or not.",
+      "grammar": "Kai ton koniorton, ‘even the dust’, stresses that they take nothing of the town with them, not even what clings to their feet. Apomassometha, ‘we wipe off’, a present middle found only here in the New Testament, describes the gesture as it is performed. Humin is a dative of disadvantage, ‘against you’. The phrase plēn touto ginōskete, ‘nevertheless know this’, introduces the same announcement as verse 9, but the words eph' humas, ‘to you’, are now missing: the kingdom has come near, but this town has refused its share in it.",
+      "words": ["G2868", "G2853", "G0631", "G4133", "G1097", "G1448"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The gesture is a warning, not a curse. Rejection does not cancel the fact that God's reign has come near; it turns the same announcement from an offer into an accusation, which verse 12 makes explicit."
+        }
+      ],
+      "parallels": ["Matthew 10:14", "Luke 9:5"],
+      "refs": ["Acts 13:51", "Acts 18:6", "Nehemiah 5:13"]
+    },
+    {
+      "v": "12",
+      "context": "The saying closes the instructions with a comparison. Sodom, the Bible's standing example of a city destroyed for its wickedness, will fare better on the day of judgment than a town that refused Jesus' messengers.",
+      "grammar": "Anektoteron, ‘more bearable’ or ‘more tolerable’, is a comparative adjective used with estai, ‘it will be’, and the dative of the one affected: ‘for Sodom it will be more tolerable’. Luke uses it again in verse 14. En tē hēmera ekeinē, ‘on that day’, takes up the prophets' phrase for the day of the Lord (Isaiah 2:11, Zechariah 14:4). Matthew 10:15 names Sodom and Gomorrah; Luke names only Sodom.",
+      "words": ["G4670", "G2250", "G1565", "G0414"],
+      "history": "Sodom's destruction (Genesis 19:24-28) became proverbial for sudden judgment in the prophets (Isaiah 1:9-10, Lamentations 4:6) and in Jesus' own teaching (Luke 17:28-29). Ezekiel 16:49 names Sodom's sin as pride, excess of food, and ease, with no help for the poor and needy, and Jewish tradition remembered its cruelty to strangers. A town that shuts its door on messengers of peace stands in the same line.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment is measured by light received. Sodom never heard the messengers of the kingdom; a Galilean town that turns them away has refused more, and so faces a heavier verdict."
+        }
+      ],
+      "parallels": ["Matthew 10:15", "Matthew 11:24"],
+      "refs": ["Genesis 19:24-25", "Ezekiel 16:49", "Luke 17:28-29", "Jude 1:7"]
+    },
+    {
+      "v": "13-14",
+      "context": "The warning turns from hypothetical towns to real ones. Chorazin and Bethsaida, where Jesus had done many of his mighty works, are compared unfavorably with Tyre and Sidon, the Gentile ports the prophets had condemned.",
+      "grammar": "Ouai, ‘woe’, is a cry of lament and warning in the manner of the prophets, not a curse. The sentence is a contrary-to-fact condition: ei with the aorist egenēthēsan in the ‘if’ clause and an with the aorist metenoēsan in the result, ‘if the miracles had happened in Tyre and Sidon, they would long ago have repented’. Dunameis, ‘mighty works’, is Luke's usual word for Jesus' miracles as acts of power. Palai, ‘long ago’, and the participle kathēmenoi, ‘sitting’, in sackcloth (sakkos, rough goat-hair cloth) and ashes (spodos), sketch the full ritual of mourning repentance that Nineveh performed (Jonah 3:6).",
+      "words": ["G3759", "G5523", "G0966", "G5184", "G4605", "G1411", "G3819", "G4526", "G4700", "G3340"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The saying assumes that God knows what would have happened under other circumstances. Luis de Molina (Concordia, 1588) cited the parallel in Matthew 11:21 for his doctrine of middle knowledge, God's knowledge of what free creatures would do in any situation; Dominican and Reformed theologians answered that such knowledge depends on God's decree or that the saying is prophetic hyperbole. The verse itself uses the comparison to measure Galilee's guilt, not to settle that debate."
+        },
+        {
+          "id": "repentance",
+          "note": "Miracles do not produce repentance automatically. The towns that saw the most failed to turn, which shows that repentance is a response of the heart to God, not a reflex to evidence."
+        }
+      ],
+      "parallels": ["Matthew 11:21-22"],
+      "refs": ["Jonah 3:5-6", "Isaiah 23:1", "Ezekiel 28:20-23", "Luke 4:25-27"]
+    },
+    {
+      "v": "15",
+      "context": "Capernaum, Jesus' base in Galilee (4:31, 7:1), receives the sharpest word. Its privilege has made it proud, and its pride will be answered with a fall as deep as the height it imagined.",
+      "grammar": "Kai su, Kapharnaoum, ‘and you, Capernaum’, turns to address the town directly. The question mē heōs ouranou hupsōthēsē, ‘will you be lifted up to heaven?’, is introduced by mē, which in Greek signals that the expected answer is no. Katabēsē, ‘you will go down’, is a future middle; several editions (the SBL and Tyndale House texts among them) read the passive katabibasthēsē, ‘you will be brought down’, with Matthew 11:23. Both readings describe descent to Hadēs, the realm of the dead, the Greek word the Septuagint uses for Sheol.",
+      "words": ["G2584", "G3772", "G5312", "G0086", "G2597"],
+      "ot": [
+        {
+          "ref": "Isaiah 14:13-15",
+          "note": "Isaiah taunts the king of Babylon, who said in his heart that he would ascend to heaven and set his throne above the stars, and announces that he will instead be brought down to Sheol, to the depths of the pit. The Hebrew contrasts hashamayim e'eleh, ‘to the heavens I will go up’, with el-sheol turad, ‘to Sheol you will be brought down’. The Septuagint renders the second line eis hadou katabēsē, the very words Luke uses. Jesus applies to a Jewish town the doom the prophet pronounced on a pagan tyrant: Capernaum's pride in its privilege is the same pride."
+        }
+      ],
+      "text": "The Byzantine text, followed by the King James Version, reads ‘which art exalted unto heaven’, a statement, where the earliest manuscripts read the question with mē. The question fits the echo of Isaiah 14 better, since Capernaum's exaltation is its own presumption, not a fact.",
+      "parallels": ["Matthew 11:23"],
+      "refs": ["Isaiah 14:13-15", "Luke 4:31", "Luke 14:11", "Ezekiel 26:20"]
+    },
+    {
+      "v": "16",
+      "context": "The briefing ends with the principle that gives the messengers their authority. They stand in for Jesus, and he stands in for the Father, so the response they meet is a response to God.",
+      "grammar": "The verse is a chain of three present participles with the article, ho akouōn, ho athetōn, ho de eme athetōn, ‘the one who hears’, ‘the one who rejects’, ‘and the one who rejects me’, each followed by a present indicative. The pronouns are emphatic: emou and eme, ‘me’, are the stressed forms. Atheteō, ‘set aside, reject, treat as invalid’, is the verb Paul uses in 1 Thessalonians 4:8, where whoever rejects his instruction rejects not a man but God. Ton aposteilanta me, ‘the one who sent me’, is an aorist participle of apostellō, the verb that gives ‘apostle’ its name.",
+      "words": ["G0191", "G0114", "G0649"],
+      "history": "Jewish law had a developed idea of agency: the Mishnah states that a person's agent is like the person himself (m. Berakhot 5:5), and a duly appointed messenger, a shaliach, could act with his sender's authority. Jesus' words work within that framework but extend it upward: the chain of sending runs from the Father through the Son to the disciples.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "To hear the messengers is to hear Jesus, and to reject them is to reject the Father. The verse grounds the authority of the church's witness not in the messengers' gifts but in the one who sends them, and it warns that refusing the message is never merely refusing a human opinion."
+        },
+        {
+          "id": "trinity",
+          "note": "The sending runs from the Father to the Son and from the Son to the disciples. Luke's Christology here is functional but high: the Son's authority is so bound up with the Father's that rejecting him is rejecting the one who sent him."
+        }
+      ],
+      "parallels": ["Matthew 10:40", "Mark 9:37"],
+      "refs": ["John 13:20", "1 Thessalonians 4:8", "Luke 9:48", "John 20:21"]
+    },
+    {
+      "v": "17-18",
+      "context": "The seventy-two come back overjoyed that even the demons obeyed them in Jesus' name. Jesus answers with a vision: Satan falling from heaven like lightning. The mission's small victories in Galilean villages are the visible edge of a defeat in the unseen world.",
+      "grammar": "Hupotassetai, ‘are subject’, is a present passive with a neuter plural subject (ta daimonia) and a singular verb, normal Greek for neuter plurals; it pictures the demons ranked under an authority. En tō onomati sou, ‘in your name’, credits Jesus, not the disciples. In verse 18 etheōroun, ‘I was watching’, is an imperfect, the tense of a scene observed over time, while pesonta, ‘having fallen’, is an aorist participle that presents the fall as a single event. Hōs astrapēn, ‘like lightning’, stresses suddenness and visibility. When Jesus saw this is debated: during the mission itself, in a vision at his baptism or temptation, or in a prophetic glimpse of Satan's final defeat. The imperfect fits best with something he was seeing while they were at work.",
+      "words": ["G5290", "G5479", "G1140", "G5293", "G3686", "G2334", "G4567", "G0796", "G4098"],
+      "ot": [
+        {
+          "ref": "Isaiah 14:12",
+          "note": "The Hebrew mourns in mockery, eikh nafalta mishamayim helel ben-shachar, ‘how you have fallen from heaven, shining one, son of the dawn’, a taunt against the king of Babylon. The Septuagint renders helel as heōsphoros, ‘the dawn-bringer’ or morning star, and has exepesen ek tou ouranou, ‘fell out of heaven’, close to Luke's ek tou ouranou pesonta. Jesus has already applied the chapter to Capernaum (verse 15); now he uses its image of a heavenly fall for Satan. Origen (On First Principles 1.5.5) read Isaiah 14 itself as describing the devil's fall, a reading that gave the name Lucifer (the Latin for heōsphoros) to Satan. Jesus' own saying is about the present defeat of Satan's power through the kingdom's arrival, not about his origin."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The exorcisms by Jesus' messengers are signs that Satan's power is being broken. God's reign advances at the expense of the kingdom of evil, a conflict Luke develops in 11:20-22 and brings to its climax in the cross and resurrection."
+        },
+        {
+          "id": "angels",
+          "note": "Satan appears as a real power with a position that can be lost. The New Testament speaks of his defeat as begun in Jesus' ministry, decisive at the cross (John 12:31), and final at the end (Revelation 20:10)."
+        }
+      ],
+      "refs": ["John 12:31", "Revelation 12:7-10", "Luke 11:20-22", "Isaiah 14:12"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus confirms the authority the disciples have exercised and extends its promise: they may trample the enemy's creatures and powers without harm. Verse 20 will immediately set this power in its place.",
+      "grammar": "Dedōka, ‘I have given’, is a perfect: the authority was granted and remains in force. Tēn exousian tou patein, ‘the authority to tread’, uses the genitive article with an infinitive to define the authority's content. Opheōn kai skorpiōn, ‘snakes and scorpions’, are the dangers of the wilderness, and epi pasan tēn dunamin tou echthrou, ‘over all the power of the enemy’, shows that they stand for the hostile powers behind them. The closing clause ouden humas ou mē adikēsē uses the double negative ou mē with the aorist subjunctive, the strongest way Greek has to deny a future possibility: ‘nothing will by any means harm you’.",
+      "words": ["G1325", "G1849", "G3961", "G3789", "G4651", "G1411", "G2190", "G0091"],
+      "ot": [
+        {
+          "ref": "Psalm 91:13",
+          "note": "The psalm promises the one who shelters in the Most High that he will tread on the lion and the cobra and trample the young lion and the serpent. The Septuagint (Psalm 90:13) renders it with asp and basilisk, lion and dragon. In Luke 4:10-11 the devil quoted the two verses just before this one to tempt Jesus to throw himself from the temple. Here Jesus gives his disciples the promise that follows, the trampling of serpents. The pairing of snakes and scorpions also recalls Deuteronomy 8:15, where the Septuagint names ophis and skorpios among the terrors of the wilderness through which God led Israel."
+        }
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The promise that nothing will harm them does not exempt disciples from suffering, since Jesus has just sent them as lambs among wolves (verse 3) and will speak of those who kill the body (12:4). It promises that no power of the enemy can finally undo those whom God keeps."
+        }
+      ],
+      "refs": ["Psalm 91:13", "Deuteronomy 8:15", "Genesis 3:15", "Acts 28:3-6", "Romans 16:20"]
+    },
+    {
+      "v": "20",
+      "context": "Jesus redirects the disciples' joy. Power over spirits is real, but it is not the ground of their security or their happiness. That ground is what God has done for them: their names stand written in heaven.",
+      "grammar": "Plēn, ‘nevertheless’, marks a strong correction. The two imperatives mē chairete and chairete de, ‘do not rejoice’ and ‘but rejoice’, are both present tense, governing an ongoing disposition, not a single moment. Engegraptai is a perfect passive, ‘have been written and stand written’: the tense stresses the permanent result, and the passive leaves God as the unnamed writer.",
+      "words": ["G4133", "G5463", "G4151G", "G5293", "G3686", "G1449"],
+      "history": "The image of a heavenly register goes back to Moses, who asked to be blotted out of the book God had written (Exodus 32:32-33), and to the psalmist's prayer that the wicked be blotted out of the book of the living (Psalm 69:28). Daniel 12:1 speaks of everyone found written in the book being delivered, and the image returns in Philippians 4:3 and Revelation 20:12-15. Ancient cities kept citizen rolls, and Paul says believers' citizenship is in heaven (Philippians 3:20).",
+      "theology": [
+        {
+          "id": "election",
+          "note": "The disciples' deepest joy is to be known and enrolled by God, not to accomplish things for him. The perfect passive places the initiative with God, and Christian traditions differ on how this enrollment relates to human perseverance (compare Revelation 3:5), but all read the verse as moving joy from performance to grace."
+        }
+      ],
+      "refs": ["Exodus 32:32-33", "Daniel 12:1", "Philippians 4:3", "Revelation 20:12", "Hebrews 12:23"]
+    },
+    {
+      "v": "21",
+      "context": "At the same hour Jesus himself rejoices, the only place in the Gospels where he is said to exult, and his joy becomes praise to the Father. He thanks God for the pattern the mission has revealed: the truth of the kingdom is hidden from the self-sufficient and given to the childlike.",
+      "grammar": "Ēgalliasato, ‘he rejoiced exultantly’, is the verb of Mary's song, where her spirit exults in God her Savior (1:47). The phrase ‘in the Holy Spirit’ ties Jesus' joy to the Spirit who came on him at his baptism (3:22) and led him (4:1, 14). Exomologoumai soi, ‘I praise you’ or ‘I acknowledge you’, is the Septuagint's regular verb for confessing God's praise in the Psalms. Apekrupsas and apekalupsas, ‘you hid’ and ‘you revealed’, are matching aorists that frame the sentence with a sound play. Nēpiois, ‘to infants’, means those too young to speak or reason, set against sophōn kai sunetōn, ‘the wise and understanding’. Hoti houtōs eudokia egeneto emprosthen sou is literally ‘for thus it was good pleasure before you’, a reverent way of saying that God willed it; eudokia is the word the angels used of God's favor in 2:14.",
+      "words": ["G0021", "G4151G", "G0040G", "G1843", "G3962", "G0613", "G4680", "G4908", "G0601", "G3516", "G2107"],
+      "ot": [
+        {
+          "ref": "Isaiah 29:14",
+          "note": "Isaiah warns a people who honor God with their lips that the wisdom of their wise men will perish and the understanding of their discerning men will be hidden. The Septuagint renders the second line tēn sunesin tōn sunetōn krupsō, ‘I will hide the understanding of the understanding’, using the same pair of words, sophoi and sunetoi, and the same idea of hiding that Jesus uses. Paul quotes the verse in 1 Corinthians 1:19 to make the same point about the cross. Whether Jesus consciously echoes the verse or simply speaks in its idiom, the prophetic pattern is the same: God's action overturns human estimates of who is wise."
+        }
+      ],
+      "text": "The earliest manuscripts, followed by modern versions, read that Jesus rejoiced ‘in the Holy Spirit’. The Byzantine text, followed by the King James Version, reads ‘in spirit’, which can be taken of Jesus' own human spirit. The editions also differ over whether the preposition en stands before the phrase.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Knowledge of God's saving work is a gift God gives, not a prize intellect earns. The verse does not despise learning; it says that God reveals himself to those who receive as children and hides himself from those who trust their own wisdom."
+        },
+        {
+          "id": "trinity",
+          "note": "In one sentence the Son rejoices in the Holy Spirit and praises the Father. Luke shows the three persons at work in a moment of prayer, each in his own role, well before the church framed the doctrine."
+        }
+      ],
+      "parallels": ["Matthew 11:25-26"],
+      "refs": ["Luke 1:47", "1 Corinthians 1:19-29", "Luke 18:17", "Psalm 8:2", "Isaiah 29:14"]
+    },
+    {
+      "v": "22",
+      "context": "The prayer turns into a declaration about the Son. All things have been handed over to him by the Father, and knowledge of the Father comes only through him. The verse explains how the little children of verse 21 come to know: the Son chooses to reveal the Father to them.",
+      "grammar": "Paredothē, ‘was handed over’, is an aorist passive of paradidōmi, the verb used both for passing on a tradition and for handing a person over; here the Father entrusts everything to the Son. The two clauses are exactly balanced, oudeis ginōskei tis estin ho huios ei mē ho patēr, kai tis estin ho patēr ei mē ho huios, ‘no one knows who the Son is except the Father, and who the Father is except the Son’. Luke's tis estin, ‘who he is’, stresses identity, where Matthew 11:27 has the verb epiginōskei with a direct object, ‘knows the Son’. Hō ean boulētai ho huios apokalupsai, ‘to whomever the Son wills to reveal him’, uses a present subjunctive of boulomai, ‘to will, to decide’: revelation rests on the Son's free choice.",
+      "words": ["G3860", "G3962", "G1097", "G5207", "G1014", "G0601"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father and the Son know one another with a knowledge no creature shares, and the Son alone can open that knowledge to others. The church later expressed this mutual knowledge in the confession of the Son as one in being with the Father (Nicaea, 325)."
+        },
+        {
+          "id": "revelation",
+          "note": "The Father is known only through the Son. The verse makes Jesus not one teacher about God among others but the one through whom God is known at all, which is why the Gospels treat hearing him as hearing God (verse 16)."
+        },
+        {
+          "id": "incarnation",
+          "note": "The one who speaks as a traveling teacher on the road to Jerusalem claims a relation to the Father that belongs to God alone. Luke sets this claim in the middle of a human scene of prayer and joy, the pattern the church confessed as one person, truly God and truly man."
+        }
+      ],
+      "parallels": ["Matthew 11:27"],
+      "refs": ["John 10:15", "John 3:35", "John 1:18", "Matthew 28:18", "Daniel 7:14"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus turns privately to the disciples with a beatitude. What they are seeing, the kingdom breaking in through the Messiah, is what generations of prophets and kings longed to see and died without seeing.",
+      "grammar": "Strapheis, ‘having turned’, is an aorist passive participle used with an active sense; Luke often marks a significant word with Jesus turning (7:9, 7:44, 22:61). Kat' idian, ‘privately’, separates what follows from the prayer. Makarioi hoi ophthalmoi hoi blepontes ha blepete, ‘blessed the eyes seeing what you see’, is a beatitude addressed to the disciples' eyes, a vivid way of saying their experience is a gift. In verse 24 ēthelēsan idein, ‘they wished to see’, is an aorist of thelō, and the pairs of seeing and hearing are each denied with ouk eidan and ouk ēkousan: they longed but did not receive.",
+      "words": ["G4762", "G3101", "G2398", "G3107", "G3788", "G0991", "G4396", "G0935", "G2309", "G1492H", "G0191"],
+      "history": "Jewish writings of the period voiced exactly this longing. The Psalms of Solomon, a collection of Jewish psalms from the first century BC, pronounce blessed those who will be born in the days of the Lord's Messiah to see the good things God will do for Israel (Psalms of Solomon 17:44, 18:6). Matthew 13:17 has prophets and righteous people; Luke's kings recalls David and the royal line who waited for the promised son.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Revelation is progressive in history. The prophets saw from afar and searched out what they did not fully grasp (1 Peter 1:10-12); the disciples see its fulfillment in the person and works of Jesus."
+        },
+        {
+          "id": "messiah",
+          "note": "The hope that prophets and kings carried was not abstract but a person and a time. By saying the disciples see it, Jesus identifies his ministry as the long-awaited messianic age."
+        }
+      ],
+      "parallels": ["Matthew 13:16-17"],
+      "refs": ["1 Peter 1:10-12", "Hebrews 11:13", "John 8:56", "Luke 2:29-32"]
+    },
+    {
+      "v": "25",
+      "context": "An expert in the Law stands to put Jesus to the test with the largest question there is. The scene shifts from the returning messengers to a debate, but it continues the theme of who truly knows God: the learned man comes testing, while the little children have received.",
+      "grammar": "Kai idou, ‘and behold’, introduces a new scene in Luke's Septuagint style. Nomikos tis, ‘a certain lawyer’, is Luke's usual term for an expert in the Torah. Anestē, ‘stood up’, may reflect the custom of standing to address a teacher. Ekpeirazōn, ‘testing’, is the verb Jesus used against the devil when he quoted Deuteronomy 6:16, ‘you shall not put the Lord your God to the test’ (4:12). The question ti poiēsas zōēn aiōnion klēronomēsō is literally ‘having done what will I inherit eternal life?’: the aorist participle poiēsas assumes that some deed is the condition, while klēronomēsō, ‘inherit’, is a word of gift received by an heir.",
+      "words": ["G2400", "G3544", "G0450", "G1598", "G1320", "G4160G", "G2222", "G0166", "G2816"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The question of eternal life is framed as an inheritance, which is a gift, yet also as something one does. The rest of Luke holds both ideas together: the same question from a rich ruler (18:18) ends with the saying that what is impossible for people is possible with God (18:27)."
+        }
+      ],
+      "parallels": ["Mark 12:28", "Matthew 22:35-36"],
+      "refs": ["Luke 18:18", "Luke 4:12", "Daniel 12:2", "Luke 7:30"]
+    },
+    {
+      "v": "26-27",
+      "context": "Jesus answers the lawyer's question with a question and sends him to the Law he professes to know. The lawyer replies by joining two commandments from different books, love for God with the whole self and love for the neighbor as oneself.",
+      "grammar": "En tō nomō ti gegraptai, ‘in the Law what stands written?’, uses the perfect passive gegraptai, the standard formula for authoritative Scripture. Pōs anaginōskeis, ‘how do you read?’, can mean ‘how do you interpret it?’ or ‘what do you recite?’, since the Shema was read aloud morning and evening. The lawyer's answer uses the future indicative agapēseis, ‘you shall love’, which the Septuagint uses for commands. The list of four faculties changes preposition: ex holēs tēs kardias, ‘out of all the heart’, and then en holē, ‘with all’, for soul, strength, and mind. Plēsion, ‘neighbor’, is an adverb, ‘near’, used with the article as a noun, ‘the one near’; the second command is joined to the first with a simple kai, as if they formed a single sentence.",
+      "words": ["G3551", "G1125", "G0314", "G0025", "G2588", "G5590G", "G2479", "G1271", "G4139"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 6:5",
+          "note": "The Shema's command names three things in Hebrew: levav (heart, the seat of thought and will), nefesh (soul or life), and me'od, literally ‘muchness’, meaning all one's capacity and resources. The Septuagint renders them with kardia or dianoia (the manuscripts divide, and Codex Vaticanus has dianoia, ‘mind’), psuchē, and dunamis, ‘power’. Luke's list has four terms, heart, soul, strength (ischus), and mind (dianoia), as does Mark 12:30 in a different order, while Matthew 22:37 has three. Adding mind alongside heart draws out what the Hebrew heart already included. The command follows directly on the confession that the LORD is one (Deuteronomy 6:4) and stands at the center of Israel's daily prayer."
+        },
+        {
+          "ref": "Leviticus 19:18",
+          "note": "The Hebrew ve'ahavta lere'akha kamokha, ‘and you shall love your neighbor as yourself’, closes a verse that forbids vengeance and grudges against ‘the sons of your people’. The Septuagint reads agapēseis ton plēsion sou hōs seauton, and Luke's wording matches it exactly. Leviticus 19:34 applies the same command to the resident foreigner: ‘you shall love him as yourself’. The two commands were paired in Jewish writings before Jesus: the Testaments of the Twelve Patriarchs urge love of the Lord and of the neighbor together (Testament of Issachar 5:2, Testament of Dan 5:3), and Philo arranged the Law under two heads, duties toward God and toward human beings (On the Special Laws 2.63). In Mark and Matthew Jesus himself joins the two; here the lawyer does, and Jesus approves."
+        }
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The Law's summary is love, first for God with every capacity a person has and then for the neighbor as oneself. The order matters: love for neighbor is not a substitute for love for God but its overflow, and the scene that follows with Mary (verses 38-42) supplies the first half as the parable supplies the second."
+        },
+        {
+          "id": "law",
+          "note": "Jesus directs the lawyer to Scripture, not to a new teaching of his own. The two commands already stood in the Torah, and the verse shows Jesus upholding the Law's authority while he presses on its meaning."
+        }
+      ],
+      "parallels": ["Mark 12:29-31", "Matthew 22:37-39"],
+      "refs": ["Deuteronomy 6:4-5", "Leviticus 19:18", "Leviticus 19:34", "Romans 13:9-10", "Galatians 5:14"]
+    },
+    {
+      "v": "28",
+      "context": "Jesus approves the answer and turns it into a command. The lawyer knows the right words; the question is whether he will live them.",
+      "grammar": "Orthōs apekrithēs, ‘you answered correctly’, commends his knowledge. Touto poiei, ‘do this’, is a present imperative, ‘keep doing this’, not a single act. Zēsē, ‘you will live’, is a future middle of zaō and answers the question about eternal life with the simple verb ‘live’, as the Law itself did.",
+      "words": ["G3723", "G0611", "G4160G", "G2198"],
+      "ot": [
+        {
+          "ref": "Leviticus 18:5",
+          "note": "God tells Israel to keep his statutes and rules, which if a person does, he shall live by them. The Septuagint reads ha poiēsas anthrōpos zēsetai en autois, ‘which a person doing shall live by them’, and Jesus' touto poiei kai zēsē uses the same two verbs. In Leviticus the promise is covenant life in the land with God. Ezekiel 20:11 and Nehemiah 9:29 repeat the phrase, and Paul quotes it twice (Galatians 3:12, Romans 10:5) to describe the principle of the Law in contrast with the righteousness that comes by faith. How Jesus' use relates to Paul's is taken up in the chapter note's hard question."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus does not lower the Law's demand to make it manageable. By answering in the Law's own words, he affirms that love for God and neighbor is the way of life, and the lawyer's next move (verse 29) shows how quickly the command becomes a matter for self-defense."
+        }
+      ],
+      "refs": ["Leviticus 18:5", "Ezekiel 20:11", "Romans 10:5", "Galatians 3:12", "James 1:22"]
+    },
+    {
+      "v": "29",
+      "context": "The lawyer, having been told to do what he already knows, looks for a boundary. If the neighbor can be defined, the command can be kept within limits, and so he asks who his neighbor is.",
+      "grammar": "Thelōn dikaiōsai heauton, ‘wanting to justify himself’, uses the aorist infinitive of dikaioō, the verb Paul uses for God's declaring sinners righteous. Luke uses it for self-justification in 16:15, where Jesus tells the Pharisees that they justify themselves before others but God knows their hearts, and in 18:14 the tax collector, not the self-assured Pharisee, goes home justified. Kai tis estin mou plēsion, ‘and who is my neighbor?’, puts mou, ‘my’, before the noun for emphasis: whom must I count?",
+      "words": ["G2309", "G1344", "G1438", "G4139"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The lawyer seeks to justify himself by defining the command so that he can meet it. Luke sets this beside the tax collector who is justified by asking for mercy (18:13-14), and the contrast shapes the Christian conviction that no one is made right with God by narrowing God's law to fit his own performance."
+        }
+      ],
+      "refs": ["Luke 16:15", "Luke 18:9-14", "Romans 3:20", "Leviticus 19:34"]
+    },
+    {
+      "v": "30",
+      "context": "Jesus answers with a story. An unnamed man goes down from Jerusalem to Jericho, falls among robbers, and is left stripped and half dead. The victim is described only by what has been done to him, so that the hearer cannot identify his people, class, or worth.",
+      "grammar": "Hupolabōn, ‘taking up’ the question, is an aorist participle that suggests Jesus took the question in a new direction. Anthrōpos tis, ‘a certain man’, is deliberately anonymous. Katebainen, ‘was going down’, is an imperfect, the man on his way when the attack came. Lēstais periepesen, ‘he fell among robbers’, uses a verb that means to fall into the middle of something (Acts 27:41, James 1:2). The robbers' actions come in a string of participles, ekdusantes, plēgas epithentes, aphentes, ‘stripping, laying on blows, leaving’, ending in hēmithanē, ‘half dead’, a word found only here in the New Testament.",
+      "words": ["G5274", "G0444", "G2597", "G2419", "G2410", "G3027", "G4045", "G1562", "G4127", "G2007", "G2253"],
+      "history": "The Greek lēstēs covers ordinary highwaymen and the armed bandits Josephus often describes, some of whom he also treats as insurgents; Jesus is arrested as though he were one (22:52). The Jericho road descended steeply through empty wilderness, which made it a natural place for ambush. Josephus notes that the Essenes carried arms on their travels against robbers (Jewish War 2.125), which shows how ordinary the danger was.",
+      "refs": ["Luke 22:52", "Joshua 15:7", "2 Chronicles 28:15", "Luke 19:1"]
+    },
+    {
+      "v": "31-32",
+      "context": "Two men of the temple come by. The priest sees the man and passes on the far side; the Levite comes to the spot, sees him, and does the same. The story gives no reason for either, and the parallel wording makes their conduct one pattern.",
+      "grammar": "Kata sugkurian, ‘by coincidence’, uses a noun found only here in the New Testament: the priest's arrival looks like providence, the chance for rescue. Antiparēlthen, ‘he passed by on the opposite side’, is a compound verb (anti, ‘opposite’, para, ‘beside’, erchomai, ‘go’) found only in these two verses: he goes past but keeps the width of the road between them. The same participle idōn, ‘having seen’, appears for each man, and verse 32 opens with homoiōs, ‘likewise’. In verse 32 some editions add genomenos, ‘coming to be’, to elthōn, ‘coming’, which makes the Levite come right up to the spot before withdrawing.",
+      "words": ["G4795", "G2409", "G2597", "G1492H", "G0492", "G3668", "G3019", "G5117"],
+      "history": "Priests served in the temple in rotating courses, and the chapter note records the tradition that many lived in Jericho. Levites were the tribe of Levi apart from the priestly family of Aaron; in Jesus' day they served as temple assistants, gatekeepers, and singers. The prohibition on touching a corpse in Leviticus 21:1-3 applies to priests, not to Levites, so whatever reason the priest might have claimed, the Levite had even less. The story's silence about motive leaves every hearer to supply his own excuse and to hear it condemned.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Seeing is not the same as loving. Both men see the wounded man, as the Samaritan will, and both choose distance. Love in Scripture is measured by what the eyes lead the hands and feet to do (1 John 3:17)."
+        }
+      ],
+      "refs": ["1 John 3:17", "Leviticus 21:1-3", "Numbers 3:5-9", "Proverbs 24:11-12"]
+    },
+    {
+      "v": "33",
+      "context": "The third traveler is the one the lawyer would least expect: a Samaritan. He sees the same man and is moved in his depths. The turn of the story comes on a single verb.",
+      "grammar": "Samaritēs de tis, ‘but a certain Samaritan’, puts the word Samaritan first in its clause for shock. Hodeuōn, ‘traveling’, a present participle found only here in the New Testament, marks him as a man away from home on his own business, like the others. Ēlthen kat' auton, ‘came to him’ or ‘came down upon him’, has him arrive at the very place. The sequence idōn esplagchnisthē, ‘seeing, he was moved with compassion’, repeats the priest's and Levite's participle idōn and then diverges. Esplagchnisthē is an aorist passive in form with an active sense, from splagchnizomai, the verb Luke uses of Jesus at Nain (7:13) and of the father of the lost son (15:20).",
+      "words": ["G4541", "G3593", "G2064", "G1492H", "G4697"],
+      "history": "The Samaritans accepted the five books of Moses as their Scripture and worshiped at Mount Gerizim, so the commands of Deuteronomy 6:5 and Leviticus 19:18 were his Law as much as the lawyer's. Luke's other Samaritans are a village that refused Jesus (9:52-53) and a healed leper who alone came back to give thanks (17:15-18); in Acts, Samaria is the first region beyond Judea to receive the gospel (Acts 1:8, 8:5-25). John 4:9 records that Jews did not associate with Samaritans, and in John 8:48 Jesus' opponents call him a Samaritan as an insult.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Compassion crosses the boundary the lawyer's question tried to fix. The man who acts as neighbor belongs to the people the lawyer would place outside the command, which answers the question of who counts by showing who loves."
+        }
+      ],
+      "refs": ["Luke 7:13", "Luke 15:20", "Luke 17:15-18", "John 4:9", "Acts 8:5"]
+    },
+    {
+      "v": "34",
+      "context": "Compassion becomes a rush of action. The Samaritan goes to the man, binds his wounds, treats them with oil and wine, puts him on his own animal, brings him to an inn, and takes care of him through the night.",
+      "grammar": "The verse strings verbs together: proselthōn, ‘going to him’, katedēsen, ‘he bound up’, epicheōn, ‘pouring on’, epibibasas, ‘setting him on’, ēgagen, ‘he brought’, and epemelēthē, ‘he took care of’. The participle epicheōn is present, describing oil and wine poured while the binding went on. To idion ktēnos, ‘his own animal’, uses idios, ‘his own’, so the Samaritan now walks. Pandocheion, ‘inn’, literally a place that receives all comers, is found only here in the New Testament, unlike the kataluma, the guest room, that had no space at Jesus' birth (2:7).",
+      "words": ["G4334", "G2611", "G5134", "G2022", "G1637", "G3631", "G1913", "G2398", "G2934", "G0071", "G3829", "G1959"],
+      "history": "Oil and wine were the ordinary first aid of the ancient world, oil to soften and soothe and wine, with its alcohol, to clean. Isaiah 1:6 describes Judah as a body of wounds, bruises, and raw sores not pressed out, bound up, or softened with oil; the Septuagint's katadesmos, ‘bandage’, is from the same root as the Samaritan's verb katedēsen. The prophets used binding up the injured as a picture of what Israel's shepherds had failed to do and what God himself would do (Ezekiel 34:4, 34:16, Hosea 6:1).",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love here is practical and costly: time, supplies, the use of his animal, and his own labor. The parable defines loving one's neighbor not as a feeling but as the full care a person would want for himself."
+        }
+      ],
+      "refs": ["Isaiah 1:6", "Ezekiel 34:16", "Hosea 6:1", "2 Chronicles 28:15"]
+    },
+    {
+      "v": "35",
+      "context": "The care continues past the night. The Samaritan pays the innkeeper in advance, commits the man to his care, and promises to cover any further cost when he comes back. He takes on open-ended responsibility for a stranger.",
+      "grammar": "Ekbalōn, ‘taking out’, is the same verb used for casting out demons and sending out workers (verse 2), here of drawing coins from a purse. Epimelēthēti autou, ‘take care of him’, repeats the verb of verse 34, so the innkeeper continues what the Samaritan began. Ho ti an prosdapanēsēs, ‘whatever you spend in addition’, uses a verb found only here in the New Testament. Egō en tō epanerchesthai me apodōsō soi puts the emphatic egō, ‘I myself’, first: the debt is his. Epanerchomai, ‘to return’, occurs in the New Testament only here and in 19:15, where the nobleman comes back to settle accounts with his servants.",
+      "words": ["G0839", "G1544", "G1417", "G1220", "G3830", "G1959", "G4325", "G1473", "G1880", "G0591"],
+      "history": "The two denarii were a laborer's pay for two days (Matthew 20:2), and the chapter note sets them against what inns charged. The promise to repay on his return also matters: debt could lead to imprisonment (12:58-59), and a man left at an inn with no means could be held for his bill. The Samaritan closes that danger in advance.",
+      "refs": ["Matthew 20:2", "Luke 19:15", "Luke 12:58-59", "Philemon 1:18-19"]
+    },
+    {
+      "v": "36-37",
+      "context": "Jesus returns the question transformed. The lawyer asked whom he must love; Jesus asks who became a neighbor. The lawyer cannot bring himself to say ‘the Samaritan’ but names the deed, and Jesus sends him to do the same.",
+      "grammar": "Plēsion dokei soi gegonenai, ‘seems to you to have become a neighbor’, uses gegonenai, the perfect infinitive of ginomai, ‘to become’: a neighbor is something one becomes by acting, not a category one belongs to. The victim is now tou empesontos eis tous lēstas, ‘the one who fell among the robbers’. The answer ho poiēsas to eleos met' autou, literally ‘the one who did mercy with him’, renders the Hebrew idiom asah chesed im, ‘to do loyal kindness with’, found in the Septuagint (Genesis 24:12, Joshua 2:12, Ruth 1:8) and in Zechariah's song (1:72). Poreuou kai su poiei homoiōs, ‘go, and you do likewise’, uses two present imperatives and the emphatic su, ‘you yourself’, and echoes the ‘do this’ of verse 28.",
+      "words": ["G5140", "G4139", "G1380", "G1096", "G1706", "G3027", "G4160G", "G1656", "G4198", "G3668"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The verse moves the question from the object of love to its subject. Jesus does not deny that the lawyer has obligations to particular people; he refuses to let the definition of neighbor become a way of limiting love, and he makes mercy the mark of the neighbor."
+        },
+        {
+          "id": "law",
+          "note": "The command ends where verse 28 did, with doing. The parable does not replace the Law with a feeling; it shows what the Law's own command of love requires when it meets a wounded man on the road."
+        }
+      ],
+      "refs": ["Luke 6:36", "Hosea 6:6", "Micah 6:8", "James 2:13", "Luke 1:72"]
+    },
+    {
+      "v": "38-39",
+      "context": "On the road, Jesus enters a village and is welcomed by a woman named Martha. Her sister Mary sits at the Lord's feet listening to his word. Coming straight after the parable of active love for a neighbor, the scene turns to love for God as attention to his word.",
+      "grammar": "En de tō poreuesthai autous, ‘as they were going’, is one of Luke's travel notices for the long road to Jerusalem (9:51, 13:22, 17:11). Hupedexato, ‘welcomed as a guest’, is the verb used of Zacchaeus receiving Jesus (19:6) and of Rahab receiving the spies (James 2:25). In verse 39 Mariam is the Semitic form of Mary. Parakathestheisa, ‘having sat down beside’, is a participle found only here in the New Testament, and pros tous podas, ‘at the feet’, is the posture of a disciple. Ēkouen ton logon autou, ‘she was listening to his word’, uses the imperfect for continuous listening, and ho logos, ‘the word’, is Luke's term for the message of the kingdom in the parable of the sower (8:11-15). The editions differ over whether the verse says the Lord's feet (kuriou) or Jesus' feet (Iēsou).",
+      "words": ["G4198", "G2968", "G1135G", "G3136", "G5264", "G0079", "G3137J", "G3869", "G4228", "G0191", "G3056"],
+      "history": "John's Gospel places Martha and Mary, with their brother Lazarus, at Bethany, about two miles from Jerusalem (John 11:1, 11:18), and there too Martha serves at a meal (John 12:2, using the same verb diakoneō as verse 40). Luke names no village and sets the visit early in the travel narrative, far from Jerusalem, perhaps because his travel section is arranged by theme rather than by strict itinerary. Luke also knows women disciples who traveled with Jesus (8:1-3).",
+      "text": "The phrase ‘into her house’ in the BSB and most English versions is absent from P45, P75, and Codex Vaticanus but present in Codex Sinaiticus, Codex Alexandrinus, and most later manuscripts, in slightly different forms. The Nestle-Aland text omits it; the chapter note records the argument that it is original.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Mary's listening supplies the first half of the great commandment that the lawyer quoted. Loving God with heart, soul, strength, and mind takes the form, in this scene, of receiving Jesus' word."
+        }
+      ],
+      "parallels": ["John 11:1-2", "John 12:1-3"],
+      "refs": ["Acts 22:3", "Luke 8:35", "Luke 8:11-15", "Luke 19:6"]
+    },
+    {
+      "v": "40",
+      "context": "Martha is pulled in many directions by the work of hospitality. She comes to Jesus and complains, first against him for not caring and then against her sister for leaving her alone, and asks him to send Mary back to help.",
+      "grammar": "Periespato, ‘she was being pulled away, distracted’, is an imperfect passive of perispaō, found only here in the New Testament; its root sense is being dragged around. Peri pollēn diakonian, ‘about much serving’, names her work with the noun for service. Epistasa, ‘coming up to him’, suggests she stands over him. Kurie, ou melei soi, ‘Lord, is it no concern to you?’, is exactly the disciples' question in the storm (Mark 4:38), expecting the answer ‘surely it is’. Katelipen, ‘left’, is aorist in the Nestle-Aland text, while several editions read the imperfect kateleipen, ‘was leaving’. The request eipe oun autē hina moi sunantilabētai, ‘tell her then to help me’, uses a verb of taking hold together with someone, used elsewhere only of the Spirit who helps us in our weakness (Romans 8:26).",
+      "words": ["G3136", "G4049", "G4183", "G1248", "G2186", "G3199", "G0079", "G3441", "G2641", "G1247", "G4878"],
+      "theology": [
+        {
+          "id": "work",
+          "note": "Martha's work is hospitality, good and needed, and Luke honors serving throughout (4:39, 8:3, 22:26-27). The verse shows how good work, once it becomes anxious and resentful, turns against others and even against the Lord it was meant to serve."
+        }
+      ],
+      "refs": ["Mark 4:38", "Romans 8:26", "Luke 22:27", "Luke 4:39", "John 12:2"]
+    },
+    {
+      "v": "41-42",
+      "context": "Jesus answers Martha gently but firmly. He names her anxiety, names what is needed, and refuses to take from Mary what she has chosen. The scene ends not with a rebuke of service but with a defense of listening.",
+      "grammar": "The doubled vocative Martha, Martha is Luke's mark of tender urgency (22:31, Acts 9:4), with Old Testament precedent in God's calls to Abraham (Genesis 22:11) and Samuel (1 Samuel 3:10). Merimnas kai thorubazē, ‘you are anxious and troubled’, pairs the verb Jesus later forbids his disciples (12:22-26) with a rare word for inner turmoil found only here in the New Testament (the Byzantine text reads turbazē). Henos de estin chreia, ‘but of one thing there is need’, uses a genitive with chreia. In verse 42 tēn agathēn merida exelexato, ‘she chose the good portion’, puts the verb in the aorist middle, ‘chose for herself’. Agathēn is the positive adjective ‘good’, though English versions often render it ‘better’. Hētis ouk aphairethēsetai autēs, ‘which will not be taken from her’, is a future passive with God implied as the protector.",
+      "words": ["G2962G", "G3136", "G3309", "G2350", "G4183", "G1520", "G5532", "G0018", "G3310", "G1586", "G0851"],
+      "text": "The Greek editions divide at verse 42. The Nestle-Aland text, the Tyndale House edition, and the Byzantine text read ‘one thing is needed’, the reading of P45, P75, and Codex Alexandrinus. Westcott and Hort and the SBL Greek New Testament print ‘few things are needed, or one’, with P3, Codex Sinaiticus, and Codex Vaticanus. Codex Bezae and some Old Latin copies omit the words about many things and the one thing, leaving ‘Martha, Martha, you are troubled; Mary has chosen the good portion’. The first gives a spiritual sense, the second moves from a simple meal to the one thing, and the third shortens the rebuke. The chapter note gives the fuller evidence.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "The one thing necessary is attention to the Lord himself. Love for God does not compete with love for neighbor, but it must come first, or service becomes the anxious and resentful labor Martha describes."
+        },
+        {
+          "id": "worship",
+          "note": "Mary's portion is to sit before the Lord and receive his word, the posture of worship. The psalmists' confession that the Lord is their portion (Psalm 16:5, 73:26) stands behind the promise that this portion will not be taken away."
+        }
+      ],
+      "refs": ["Psalm 16:5", "Psalm 27:4", "Luke 12:22-31", "Philippians 3:13-14", "Luke 8:14"]
+    }
+  ]
+}

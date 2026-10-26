@@ -1,0 +1,422 @@
+{
+  "verses": [
+    {
+      "v": "1-3",
+      "context": "Jesus leaves Judea because the Pharisees have heard that his following is outgrowing John's. The report looks back to 3:22-30, where John's disciples complained that everyone was going to Jesus, and it explains why the scene now moves north. The narrator's aside in verse 2 corrects a possible misunderstanding of 3:22.",
+      "grammar": "Verse 1 is one long sentence with a clause nested inside a clause: Jesus knew (egnō) that the Pharisees had heard (ēkousan) that Jesus was making and baptizing (poiei kai baptizei) more disciples than John. The present tenses inside the report keep the Pharisees' words as they heard them. Verse 2 opens with kaitoige, a strong particle meaning ‘and yet’ or ‘although in fact’, and uses the imperfect ebaptizen for Jesus' customary practice: he himself was not the one baptizing. Aphēken, ‘he left’, in verse 3 is the same verb John uses when the woman ‘left’ her water jar in verse 28.",
+      "words": ["G1097", "G5330", "G3101", "G0907", "G2491G", "G0863G"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Baptism in Jesus' name was administered by his disciples, not by his own hand, yet it counts as his: the report says Jesus was making and baptizing disciples. The church has drawn from this that the one who baptizes is Christ, whoever pours the water, as Augustine argued against the Donatists, who held that baptism depended on the worthiness of the minister: whether Peter or Judas baptizes, he said, it is Christ who baptizes (Tractates on John 6)."
+        }
+      ],
+      "text": "Manuscripts divide between ‘Jesus knew’ and ‘the Lord knew’ in verse 1; the chapter note gives the witnesses. The critical editions include palin, ‘again’, in verse 3 (he returned again to Galilee), which the Byzantine text lacks; it looks back to 1:43 and 2:1.",
+      "refs": ["John 3:22-26", "John 3:30", "1 Corinthians 1:14-17"]
+    },
+    {
+      "v": "4",
+      "context": "A short sentence gives the reason for the route: Jesus had to pass through Samaria. Geography explains part of it, since the ridge road through Samaria was the shortest way north, but John's word for necessity points further.",
+      "grammar": "Edei, the imperfect of dei, ‘it is necessary’, is the word John uses for divine necessity: the Son of Man ‘must’ be lifted up (3:14), he ‘must’ increase (3:30), and later he ‘must’ gather other sheep (10:16). The same impersonal verb returns twice in this chapter, in the woman's words about the place where one ‘must’ worship (verse 20) and in Jesus' reply that worshipers ‘must’ worship in spirit and truth (verse 24). The three uses tie the route, the dispute, and its answer together. Dierchesthai, ‘to pass through’, is a present infinitive describing the passage as a process.",
+      "words": ["G1163", "G1330", "G4540"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The travel necessity and the divine necessity are the same road. John presents an ordinary choice of route as part of the Father's purpose, so that the meeting at the well is neither accident nor coincidence."
+        }
+      ],
+      "refs": ["John 3:14", "John 10:16", "Luke 9:51-53", "Acts 1:8"]
+    },
+    {
+      "v": "5",
+      "context": "Jesus comes to Sychar, near the land Jacob gave to Joseph. The narrator frames the scene with patriarchal history before any conversation begins, and the woman will soon appeal to that history (verse 12).",
+      "grammar": "Legomenēn Suchar, ‘called Sychar’, uses the participle John often uses when introducing a local name (compare 11:54, 19:13, 19:17). Plēsion tou chōriou, ‘near the plot’, uses chōrion, a small piece of land or field, a different word from the chōrai, the ‘fields’ white for harvest, in verse 35.",
+      "words": ["G4172", "G4540", "G4965", "G5564G", "G2384H", "G2501N"],
+      "history": "Genesis says that Jacob bought a plot at Shechem from the sons of Hamor for a hundred pieces of silver and pitched his tent there (Genesis 33:18-19), and that Joseph's bones, carried up from Egypt, were buried in that plot, which became the inheritance of Joseph's descendants (Joshua 24:32). A tomb of Joseph is still venerated at the foot of Mount Ebal near Nablus. Sychar is usually located at the village of Askar, as the chapter note explains; Tell Balata, the mound of ancient Shechem, was excavated by Ernst Sellin in the early twentieth century and by an American expedition under G. Ernest Wright from 1956.",
+      "ot": [
+        {
+          "ref": "Genesis 48:22",
+          "note": "On his deathbed Jacob gives Joseph shekem echad, ‘one shoulder’ or ‘one ridge’ more than his brothers, which he says he took from the Amorites with sword and bow. The word shekem is also the name of the town Shechem, and the Septuagint takes it as the place name, rendering it Sikima exaireton, ‘Shechem as a special portion’. John's phrase, the plot ‘that Jacob had given to his son Joseph’, follows this reading of the verse, which is why he can place the gift near Sychar."
+        }
+      ],
+      "refs": ["Genesis 33:18-19", "Joshua 24:32", "Genesis 12:6-7"]
+    },
+    {
+      "v": "6",
+      "context": "The well is Jacob's; the traveler is tired; the time is the sixth hour. Jesus sits down on the edge of the well while his disciples go to buy food, and the scene is set for the conversation.",
+      "grammar": "Kekopiakōs is a perfect participle of kopiaō, ‘to labor to exhaustion’: Jesus is worn out, a state resulting from the walk. Ekathezeto, imperfect, pictures him sitting there. The adverb houtōs, ‘thus’, is debated: it can mean ‘just as he was’, tired and without ceremony, or ‘so then’, resuming the narrative. Epi tē pēgē can mean ‘at’ or ‘on’ the well, that is, on its low stone curb. Hōs hektē, ‘about the sixth hour’, is about noon on Jewish reckoning; the chapter note sets out the alternatives.",
+      "words": ["G4077", "G2872", "G3597", "G2516", "G3779", "G5610", "G1623"],
+      "history": "The well at the foot of Mount Gerizim was already shown to Christian pilgrims in the fourth century; the Bordeaux Pilgrim, who visited in AD 333, mentions it. It remains deep today, with modern measurements reported at around forty meters. By the seventh century pilgrims described a cross-shaped church built over it, with the well at its center.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "This is the only place in John where Jesus is said to be tired. The Gospel that begins with the Word who was God (1:1) shows him sitting down exhausted at noon and asking a stranger for water. The church confesses both natures in one person, and verses like this keep the humanity from being a disguise."
+        }
+      ],
+      "refs": ["John 1:14", "John 19:28", "Hebrews 4:15", "Matthew 8:24"]
+    },
+    {
+      "v": "7-8",
+      "context": "A Samaritan woman comes to draw water, and Jesus asks her for a drink. The narrator explains why he is alone: the disciples have gone into the town to buy food, which means buying from Samaritans, a detail that already bends the boundary verse 9 will name.",
+      "grammar": "Dos moi pein, ‘give me to drink’, is an aorist imperative with an infinitive (pein is a short form of piein). It is a request, but grammatically blunt, the way a thirsty traveler would ask. Antlēsai hudōr, ‘to draw water’, uses the same verb as the servants at Cana (2:8-9). In verse 8 apelēlutheisan, a pluperfect, means the disciples had already gone and were away. Hina trophas agorasōsin, ‘in order to buy food’, is a purpose clause.",
+      "words": ["G0501", "G5204", "G1325", "G4095", "G5160", "G0059"],
+      "ot": [
+        {
+          "ref": "Genesis 24:17",
+          "note": "Abraham's servant, sent to find a wife for Isaac, runs to Rebekah at the spring outside Nahor's town and asks her to let him drink a little water from her jar. The Septuagint uses the verb potizō, ‘give to drink’, and hudria, ‘water jar’, the word for the jar the Samaritan woman will leave behind (verse 28). John does not quote Genesis, but a request for water from a woman at a well in a foreign land, with her jar at hand, puts the reader in the world of the patriarchal well scenes discussed in the chapter note."
+        }
+      ],
+      "refs": ["Genesis 24:17", "Genesis 29:9-11", "Exodus 2:15-17", "John 19:28"]
+    },
+    {
+      "v": "9",
+      "context": "The woman answers the request with a question that names the barrier: a Jew asking a Samaritan woman for a drink. The narrator adds a note for readers who would not know the tension. The chapter note discusses David Daube's reading of the verb.",
+      "grammar": "Pōs su Ioudaios ōn par' emou pein aiteis, ‘how is it that you, being a Jew, ask to drink from me?’, sets su, ‘you’, and emou, ‘me’, in contrast, and adds a participle to each: Ioudaios ōn for him and gunaikos Samaritidos ousēs, ‘being a Samaritan woman’, for her. Two differences are named at once, nationality and sex. Sunchrōntai is a present middle verb found only here in the New Testament; its root chraomai, ‘to use’, supports Daube's proposal that it concerns shared vessels, though ‘associate’ is also well attested.",
+      "words": ["G4542", "G2453", "G0154", "G4798", "G4541"],
+      "history": "The Samaritans' self-designation shows how they saw the divide. Two Greek inscriptions from the island of Delos, found in 1979 and 1980 and published by Philippe Bruneau in 1982, were set up by ‘the Israelites who make offerings to holy Argarizein’, that is, to Mount Gerizim. The earlier dates to roughly 250 to 175 BC. The Samaritans called themselves Israelites and defined themselves by their holy mountain, as Jews defined themselves by Jerusalem, which is exactly the dispute the woman will raise in verse 20.",
+      "refs": ["Luke 9:52-54", "Luke 10:33", "Luke 17:16-18", "John 8:48"]
+    },
+    {
+      "v": "10",
+      "context": "Jesus turns the request around. If she knew God's gift and the identity of the one asking, she would be the one asking, and he would give her living water. The conversation now moves from well water to what only God gives.",
+      "grammar": "The sentence is a contrary-to-fact condition: ei ēdeis, ‘if you knew’ (a pluperfect with present sense), followed by su an ētēsas ... kai edōken an, ‘you would have asked ... and he would have given’. The grammar says that she does not know, and invites her to find out. Su, ‘you’, is emphatic: the roles are reversed, and the thirsty Jew becomes the giver. Hudōr zōn, ‘living water’, is a present participle; in ordinary speech it meant running spring water, and the double meaning drives the misunderstanding that follows.",
+      "words": ["G1492I", "G1431", "G2316", "G0154", "G2198", "G5204"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "John later identifies the living water as the Spirit, whom believers would receive after Jesus was glorified (7:37-39). Here the gift is offered on the sole condition of asking, which makes the Spirit a gift of grace, not a reward for purity or pedigree."
+        },
+        {
+          "id": "salvation",
+          "note": "Dōrea, ‘gift’, sets salvation on the footing of free giving. The one who can give it is the one asking for water, so the offer of life begins with Jesus' willingness to be in need."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 2:13",
+          "note": "Through Jeremiah the LORD charges his people with two evils: they have forsaken him, meqor mayim chayyim, ‘the spring of living water’, and dug for themselves cracked cisterns that cannot hold water. The Septuagint renders it pēgēn hudatos zōēs, ‘a spring of water of life’. John joins the same two words, pēgē (verses 6 and 14) and living water, and puts the offer of the spring in Jesus' mouth. What the LORD called himself, Jesus offers to give."
+        }
+      ],
+      "refs": ["John 7:37-39", "Jeremiah 17:13", "Isaiah 44:3", "Revelation 22:17"]
+    },
+    {
+      "v": "11-12",
+      "context": "The woman takes Jesus literally: he has no bucket and the well is deep. Then she asks whether he claims to be greater than Jacob, who gave the well and drank from it with his sons and flocks. The question is ironic, since the reader knows the answer.",
+      "grammar": "Kurie, the vocative of kurios, means ‘sir’ in polite address and ‘Lord’ in worship; the woman means the first, the reader hears the second. Antlēma, ‘something to draw with’, a leather bucket on a rope that travelers carried, occurs only here in the New Testament, as does thremmata, ‘livestock’. She calls the well a phrear, a shaft or cistern, where the narrator called it a pēgē (verse 6). Her question begins with mē: mē su meizōn ei, which expects a negative answer, ‘You are not greater than our father Jacob, are you?’ The Jews ask Jesus the same question about Abraham in 8:53.",
+      "words": ["G2962H", "G0502", "G5421", "G0901", "G3173", "G2353"],
+      "history": "Jewish tradition told of wells and Jacob. The Palestinian Targums, Aramaic paraphrases of the Torah, expand Genesis 28:10 and 29:10 to say that when Jacob lifted the stone from the well at Haran the water rose up and overflowed, and continued to overflow for the years he lived there. Jerome Neyrey (Catholic Biblical Quarterly 41, 1979) argued that traditions like these stand behind the woman's question: a man who offers water without drawing it is claiming to surpass the patriarch whose well overflowed. The Targums are later than the Gospel in their written form, so the link is a probability, not a proof.",
+      "refs": ["John 8:53", "Genesis 29:10", "Genesis 33:20", "Hebrews 3:3"]
+    },
+    {
+      "v": "13-14",
+      "context": "Jesus contrasts two waters. Whoever drinks from the well will thirst again; whoever drinks the water he gives will never thirst, because it becomes an inner spring rising to eternal life. This is the center of the first half of the conversation.",
+      "grammar": "Pas ho pinōn, ‘everyone who drinks’, is a present participle for continual drinking, while hos d' an piē uses an aorist subjunctive, ‘whoever drinks’ even once. Ou mē dipsēsei eis ton aiōna, ‘will never thirst’, is the strongest negation Greek has, ou mē with the future, reinforced by ‘to the age’. Hallomenou, ‘springing up’, means literally ‘leaping’. The Septuagint uses this verb and its compounds for the Spirit rushing upon Saul and David (1 Samuel 10:10, 16:13) and for the lame leaping like a deer in the age of salvation (Isaiah 35:6), so the image is lively rather than placid. Eis zōēn aiōnion can mean that the water wells up ‘into’ eternal life or ‘for’ eternal life; both senses fit.",
+      "words": ["G4095", "G1372", "G0165H", "G4077", "G0242", "G2222", "G0166"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The water Jesus gives does not stay outside the believer. It becomes a spring within, a source that keeps rising. John's picture of the Spirit is of God's own life taking up residence in a person and continuing to give life from inside."
+        },
+        {
+          "id": "hope",
+          "note": "Eternal life in John begins now and has its goal in the age to come. The spring rises ‘to eternal life’, pointing the present gift toward its completion."
+        }
+      ],
+      "text": "The critical editions print the future indicative dipsēsei after ou mē; many manuscripts, followed by the Textus Receptus, have the aorist subjunctive dipsēsē. Both are normal with ou mē, and the meaning does not change.",
+      "refs": ["John 6:35", "John 7:38", "Isaiah 12:3", "Isaiah 55:1", "Revelation 21:6"]
+    },
+    {
+      "v": "15-16",
+      "context": "The woman asks for the water, still thinking of relief from daily trips to the well. Jesus answers by telling her to call her husband. The request seems to change the subject, but it moves the conversation from her thirst to her life.",
+      "grammar": "Dos moi touto to hudōr, ‘give me this water’, echoes Jesus' dos moi pein in verse 7: the one who was asked now is asked. Hina mē dipsō mēde dierchōmai enthade antlein gives two purposes: not to thirst, and not to keep coming here to draw. In verse 16 three imperatives follow quickly, hupage, phōnēson, elthe, ‘go, call, come’. The present hupage and the aorists phōnēson and elthe give a brisk sequence.",
+      "words": ["G1325", "G5204", "G1372", "G1330", "G1759", "G0501", "G5217", "G5455", "G0435H"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Jesus does not answer the request for water with a lecture, but he does not give the gift while leaving the woman's life untouched. The command to call her husband brings the truth of her circumstances into the light as part of receiving what he offers."
+        }
+      ],
+      "text": "The critical editions read dierchōmai, ‘keep coming all the way here’, which suggests the length of the walk; the Textus Receptus has the simple erchōmai, ‘come’, which the King James Version renders ‘come hither’.",
+      "refs": ["John 4:7", "John 3:20-21", "Hebrews 4:13"]
+    },
+    {
+      "v": "17-18",
+      "context": "The woman answers truthfully and minimally: she has no husband. Jesus confirms her words and supplies what she left out, five husbands and a present partner who is not her husband. He twice commends her for speaking truly. The chapter note sets out the readings of her history.",
+      "grammar": "Kalōs eipas, ‘you have said well’, and touto alēthes eirēkas, ‘this you have spoken truly’, frame Jesus' statement; the second puts alēthes first for emphasis and uses the perfect eirēkas, ‘what you have said stands’. Pente andras esches is an aorist, ‘you have had five husbands’, summing up a past series; hon echeis, ‘the one you have’, is present. The contrast of tenses is the whole story in miniature. Anēr means both ‘man’ and ‘husband’, and Jesus plays on the ambiguity: the man she has is not her anēr.",
+      "words": ["G0435H", "G2192", "G2573", "G4002", "G0227", "G2046"],
+      "history": "Remarriage after widowhood or divorce was common and lawful, but repeated loss could bring suspicion. The Babylonian Talmud records a later debate about a woman whose husbands had died: Rabbi Judah the Prince held that after two such deaths she should not marry again, and Rabban Simeon ben Gamaliel said after three (b. Yevamot 64b). The ruling is later than the Gospel and assumes the husbands died, but it illustrates how a woman with five former husbands might be viewed as unlucky or dangerous rather than simply immoral, whatever the cause of her losses.",
+      "refs": ["John 1:47-48", "John 2:25", "Luke 7:39", "Deuteronomy 24:1-4"]
+    },
+    {
+      "v": "19",
+      "context": "The woman concludes that Jesus is a prophet, since he knows what he could not have been told. For a Samaritan, whose Scripture was only the five books of Moses, the prophet above all was the one like Moses whom Deuteronomy promised.",
+      "grammar": "Theōrō, ‘I perceive’ or ‘I see’, is a verb of seeing used for coming to realize (compare 12:45, 14:19). Prophētēs ei su has no article, so it is usually rendered ‘you are a prophet’. Because a predicate noun placed before its verb may lack the article and still be definite, some interpreters suggest she may already be thinking of ‘the prophet’, the one expected; the grammar allows but does not require it.",
+      "words": ["G2962H", "G2334", "G4396"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The first title the woman gives Jesus is prophet, and it is not wrong, only incomplete. John shows Jesus fulfilling the prophetic office of speaking God's word and knowing hearts, on the way to the fuller confessions of Messiah (verse 26) and Savior (verse 42)."
+        }
+      ],
+      "refs": ["John 6:14", "John 7:40", "John 9:17", "Luke 7:16", "Deuteronomy 18:15"]
+    },
+    {
+      "v": "20",
+      "context": "The woman raises the question that divided Samaritans from Jews: where God must be worshiped. ‘This mountain’ is Gerizim, rising above the well. Whether she is deflecting or asking the prophet to settle a real dispute, the question is the right one to put to a prophet, and Jesus answers it.",
+      "grammar": "Hoi pateres hēmōn en tō orei toutō prosekunēsan, ‘our fathers worshiped on this mountain’, uses an aorist summarizing generations of worship. Humeis legete, ‘you (plural) say’, sets Jews against Samaritans. Ho topos, ‘the place’, is the technical term of Deuteronomy 12 for the sanctuary God would choose. Hopou proskunein dei, ‘where one must worship’, uses dei again (see verse 4), making it a question of divine obligation.",
+      "words": ["G3962", "G3735", "G4352", "G2414", "G5117", "G1163"],
+      "history": "The Samaritans traced worship on Gerizim to the patriarchs: Abraham built his first altar in the land at Shechem (Genesis 12:6-7), and Jacob built one there (Genesis 33:20). Moses ordered the blessing to be spoken from Gerizim (Deuteronomy 11:29, 27:12). Under the Seleucid king Antiochus IV the Gerizim temple was dedicated to Zeus, according to 2 Maccabees 6:2 as Zeus the Friend of Strangers; Josephus says the Samaritans themselves asked that it be named for Zeus Hellenios (Antiquities 12.257-264), an account shaped by his hostility to them. John Hyrcanus destroyed the temple about 111 or 110 BC (see the chapter note), so in Jesus' day the Samaritans worshiped on the mountain without a temple, as their descendants still gather on its summit for Passover.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The question assumes that true worship depends on the right place. It was a serious and biblical question, since Deuteronomy tied sacrifice to the place God would choose, and Jesus does not mock it. He answers by showing that the place is being redefined by the hour that has come."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 12:5",
+          "note": "Deuteronomy commands Israel to seek the place the LORD their God will choose from all their tribes to put his name there, and to bring their offerings there. The Masoretic Text uses the future, yivchar, ‘will choose’, leaving the place unnamed until Jerusalem is chosen in the time of David and Solomon. The Samaritan Pentateuch reads the past tense in this formula, ‘has chosen’, and in Deuteronomy 27:4 it names Gerizim where the Masoretic Text has Ebal. The woman's ‘the place where one must worship’ is the language of this chapter, and the rival readings of the same Torah are the dispute she puts to Jesus."
+        }
+      ],
+      "refs": ["Deuteronomy 11:29", "Deuteronomy 27:12", "Genesis 12:6-7", "2 Kings 17:33", "Ezra 4:1-3"]
+    },
+    {
+      "v": "21",
+      "context": "Jesus answers with a prophecy: an hour is coming when the Father will be worshiped neither on Gerizim nor in Jerusalem. He does not first say who is right; he says the question itself will be overtaken.",
+      "grammar": "Pisteue moi, gunai, ‘believe me, woman’, is a present imperative and an unusual formula; in John Jesus usually introduces a solemn saying with ‘truly, truly’. Erchetai hōra, ‘an hour is coming’, uses the Gospel's key word for the time of Jesus' glorification (see 2:4). Proskunēsete, ‘you (plural) will worship’, is future: Samaritans will worship the Father. The title ‘the Father’ appears here for the first time in the conversation and governs the rest of it (verses 23 twice).",
+      "words": ["G4100", "G1135G", "G5610", "G3735", "G2414", "G4352", "G3962"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Neither mountain will be the place. John's readers knew that the Gerizim temple had been destroyed long before and the Jerusalem temple in AD 70. The verse does not predict ruins for their own sake; it says that the meeting place of God and his people is now the Son, whose body is the true temple (2:21)."
+        }
+      ],
+      "refs": ["John 2:19-21", "Malachi 1:11", "John 16:2", "John 16:32"]
+    },
+    {
+      "v": "22",
+      "context": "Before looking ahead, Jesus answers the woman's question as it stands: Samaritan worship lacks knowledge, Jewish worship has it, because salvation comes from the Jews. The saying keeps the future from erasing the past. Israel's history is the channel of God's salvation, even as the hour moves beyond Jerusalem.",
+      "grammar": "Ho ouk oidate, ‘what you do not know’, uses the neuter ho, ‘what’, not ‘whom’: Jesus speaks of the content of worship, the revelation behind it. Proskunoumen, ‘we worship’, is first person plural: Jesus counts himself among the Jews. Hoti hē sōtēria ek tōn Ioudaiōn estin has the article, ‘the salvation’, the salvation God promised, and ek, ‘from’ or ‘out of’, names its origin. The hoti clause gives the ground for the claim to know.",
+      "words": ["G4352", "G6063", "G4991", "G2453"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Jesus affirms that God's saving purpose came through Israel, its Scriptures, prophets, and promised Messiah. Samaritans accepted only the five books of Moses; Jews had the whole witness. The verse rules out any Christian reading of John that treats Israel as incidental to salvation."
+        }
+      ],
+      "refs": ["Romans 9:4-5", "Romans 3:1-2", "Isaiah 2:3", "Psalm 147:19-20"]
+    },
+    {
+      "v": "23",
+      "context": "The hour that is coming has also now come. True worshipers will worship the Father in spirit and in truth, and the reason is that the Father is looking for such worshipers. The verse moves the initiative from the worshiper to God.",
+      "grammar": "Alla erchetai hōra kai nun estin, ‘but an hour is coming, and now is’, joins future and present, a pattern John repeats in 5:25. The hour belongs to the future of Jesus' death and glorification, and it is already present in the one speaking. En pneumati kai alētheia has a single preposition governing both nouns, which many grammarians take as presenting one idea, worship that is Spirit-given and true, rather than two separate conditions. Alēthinoi, ‘true’, means genuine, the real thing as opposed to its shadow, as in ‘the true light’ (1:9) and ‘the true vine’ (15:1). Kai gar ho patēr toioutous zētei, ‘for indeed the Father seeks such’, uses zēteō, the verb for searching (compare 20:15).",
+      "words": ["G5610", "G3568", "G0228", "G4353", "G4151G", "G0225", "G2212"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "True worship is defined by its object (the Father), its medium (spirit), and its content (truth), not its location. And it begins with the Father's search: God seeks worshipers before worshipers seek God, the same movement as the shepherd seeking the lost (Luke 15:4) and the Son who came to seek and save (Luke 19:10)."
+        },
+        {
+          "id": "spirit",
+          "note": "‘In spirit’ refers first to the Holy Spirit whom Jesus gives (verses 10 and 14, 7:39), not to human sincerity. The Spirit makes worship possible in any place, because the Spirit unites worshipers to the Son, who is the truth (14:6)."
+        }
+      ],
+      "refs": ["John 5:25", "John 14:6", "Philippians 3:3", "Luke 19:10", "Romans 12:1"]
+    },
+    {
+      "v": "24",
+      "context": "Jesus gives the ground of verse 23 in God's own nature: God is spirit, so those who worship him must worship in spirit and truth. It is one of the few sentences in the Bible that states what God is.",
+      "grammar": "Pneuma ho theos puts pneuma first, without the article, and ho theos, with the article, as the subject: ‘God is spirit’. The anarthrous predicate before the verb is qualitative, describing God's nature, like ‘God is light’ (1 John 1:5) and ‘God is love’ (1 John 4:8), not ‘God is a spirit’ among others. There is no verb ‘is’ in the Greek; the short nominal sentence has the weight of a definition. Dei, ‘must’, appears for the third time in the chapter (see verse 4): the necessity is no longer a mountain but a manner that corresponds to who God is.",
+      "words": ["G4151G", "G2316", "G4352", "G0225", "G1163"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God is not bound to a body or a place. The church's teaching that God is spirit, without body, parts, or location, rests heavily on this verse, and it does not make God abstract: the spirit God is the Father who seeks worshipers."
+        }
+      ],
+      "refs": ["1 John 1:5", "1 John 4:8", "2 Corinthians 3:17", "Acts 17:24-25", "1 Kings 8:27"]
+    },
+    {
+      "v": "25",
+      "context": "The woman defers the matter to the coming one: when Messiah comes, he will explain everything. She speaks of a figure who will settle disputes like the one she has raised, and her words set up Jesus' reply.",
+      "grammar": "Oida, ‘I know’, is a perfect with present meaning. Messias erchetai, ‘Messiah is coming’, uses a present tense for a sure future. The narrator explains the Aramaic loanword, ho legomenos Christos, ‘the one called Christ’, as he did in 1:41. Anangelei hēmin hapanta, ‘he will announce everything to us’, uses anangellō, to report or declare; in the Greek of Isaiah it describes God announcing what is to come (Isaiah 41:22-23, 44:7), and the Samaritan hope was for a figure who would declare God's will.",
+      "words": ["G6063", "G3323", "G2064", "G5547", "G0312", "G0537"],
+      "history": "Samaritan expectation centered on the prophet like Moses. The Samaritan Pentateuch adds the promise of Deuteronomy 18:18-22 to its account of Sinai in Exodus 20, making the coming prophet part of the Sinai revelation itself. In later Samaritan writings, from the fourth-century teacher Marqah onward, the figure is called the Taheb, ‘the one who returns’ or ‘restores’. The Qumran collection 4QTestimonia (4Q175) also places Deuteronomy 18:18-19 among its messianic texts, which shows that the prophet like Moses was part of Jewish hope in the period too.",
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:18",
+          "note": "The LORD promises Moses to raise up a prophet like him from among the people's brothers, to put his words in the prophet's mouth, and says that he will speak to them everything God commands. The Septuagint reads lalēsei autois kathoti an enteilōmai autō, ‘he will speak to them just as I command him’. The woman's ‘he will explain everything to us’ matches the Hebrew and Greek promise that the prophet will speak all that God commands, and Jesus' reply takes up the same verb of speaking (lalōn, verse 26)."
+        }
+      ],
+      "refs": ["John 1:41", "Deuteronomy 18:15", "Acts 3:22", "John 6:14"]
+    },
+    {
+      "v": "26",
+      "context": "Jesus answers plainly. The one speaking to her is the one she is waiting for. It is his most direct self-disclosure as Messiah before the passion, made not to a teacher of Israel but to a Samaritan woman at noon.",
+      "grammar": "Egō eimi, ho lalōn soi, literally ‘I am, the one speaking to you’. In context egō eimi has an implied predicate, ‘I am he’, the Messiah she has named, as ordinary Greek allows (compare the blind man's ‘I am he’ in 9:9). But John uses the same words absolutely elsewhere, with no predicate at all (8:24, 8:28, 8:58, 13:19, 18:5-6), echoing God's self-identification in Isaiah, and many interpreters think this first use prepares for those. Catrin Williams (I Am He, 2000) traced the background of these sayings in the Hebrew ani hu, ‘I am he’, of Isaiah and its Greek rendering. Ho lalōn, ‘the one speaking’, answers the woman's expectation of a figure who will announce everything: the one who announces is already speaking.",
+      "words": ["G1473", "G1510", "G2980"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus accepts the title Messiah outright, which he avoids in public elsewhere in the Gospels, perhaps because in Samaria the title carried less political charge than in Judea. His messiahship is revealed by his speaking and his knowledge, not by force."
+        },
+        {
+          "id": "names-of-god",
+          "note": "The words egō eimi recall the name God gives himself in Isaiah. Here they are chiefly messianic, but John lets the reader hear an overtone that will become explicit in 8:58, where ‘before Abraham was born, I am’ draws an attempt to stone him."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 52:6",
+          "note": "God promises that his people will know his name, that in that day they will know ki ani hu hamedabber, ‘that I am he who speaks’, and adds ‘here I am’. The Septuagint renders it egō eimi autos ho lalōn, ‘I am he, the one speaking’. John 4:26 has the same three elements, egō eimi, the article, and the participle of laleō. The Greek of Isaiah 45:19 also joins egō eimi with lalōn and anangellōn, the verb the woman has just used. The parallels are close enough that many commentators, Williams among them, see Isaiah's language behind the saying, though John does not signal a quotation."
+        }
+      ],
+      "refs": ["John 8:24", "John 8:58", "John 9:37", "Isaiah 43:10", "Mark 14:61-62"]
+    },
+    {
+      "v": "27",
+      "context": "The disciples return at the moment of revelation and are astonished that Jesus is talking with a woman. They keep their questions to themselves. The narrator lets their unspoken questions show what they assumed.",
+      "grammar": "Epi toutō, ‘at this point’, marks the timing precisely. Ethaumazon, imperfect, ‘they were marveling’, describes a continuing reaction. Meta gunaikos has no article: ‘with a woman’, any woman, which is the point of their surprise. The two questions they did not ask, ti zēteis and ti laleis, are introduced by oudeis mentoi eipen, ‘yet no one said’; mentoi is a stronger ‘however’ that John uses more than any other New Testament writer.",
+      "words": ["G2296", "G1135G", "G2980", "G2212"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Jesus holds a theological conversation with a woman as a serious partner and reveals himself to her first. The disciples' surprise measures the custom he sets aside, and the Gospel records it without comment, letting the act speak."
+        }
+      ],
+      "refs": ["Luke 10:38-42", "John 20:15-18", "Galatians 3:28"]
+    },
+    {
+      "v": "28-30",
+      "context": "The woman leaves her jar, goes back to the town, and invites the people to come and see a man who told her everything she ever did. Her question is tentative, but it works: the townspeople start out toward Jesus. The scene stays open while the disciples talk with Jesus about food.",
+      "grammar": "Deute idete, ‘come, see’, echoes Jesus' ‘come and you will see’ (1:39) and Philip's ‘come and see’ (1:46). Her question, mēti houtos estin ho Christos, begins with mēti, which normally expects a negative or hesitant answer: ‘This couldn't be the Christ, could it?’ The hesitancy is part of its appeal; she invites them to judge for themselves (compare verse 42). In verse 30 exēlthon, aorist, ‘they went out’, is followed by the imperfect ērchonto, ‘they were coming’, which keeps them on the road during verses 31 to 38.",
+      "words": ["G0863G", "G5201", "G1205", "G1492H", "G0444", "G5547", "G2064"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first witness in this chapter carries no credentials and makes no argument, only an invitation and an honest question. John treats her testimony as real witness (verse 39), the same word used for John the Baptist's testimony in chapter 1."
+        }
+      ],
+      "refs": ["John 1:39", "John 1:46", "John 4:39", "Mark 5:19-20"]
+    },
+    {
+      "v": "31-34",
+      "context": "While the townspeople are on their way, the disciples urge Jesus to eat. He replies that he has food they don't know about, and they take him literally, as the woman took living water. He explains: his food is to do the will of the one who sent him and to finish his work.",
+      "grammar": "Ērōtōn, imperfect, ‘they kept urging’, suggests persistence. Phage, an aorist imperative, ‘eat’, is plain. Jesus uses brōsis in verse 32 and brōma in verse 34, two words for food, without a clear difference. The disciples' question in verse 33 begins with mē, expecting ‘no’: ‘No one brought him anything to eat, did they?’ In verse 34 hina poiēsō ... kai teleiōsō is a hina clause standing where a noun would be: ‘my food is that I should do ... and complete’. Teleiōsō, ‘complete’, belongs to the same family as tetelestai, ‘it is finished’, at the cross (19:30).",
+      "words": ["G2065", "G4461", "G5315", "G1035", "G1033", "G2307", "G3992", "G5048", "G2041"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The tired and hungry man of verse 6 says that doing the Father's will sustains him. The Son's human life is lived entirely from the Father's will, the pattern of the obedience that culminates at the cross."
+        },
+        {
+          "id": "mission",
+          "note": "Jesus calls himself the one sent and his task a work to be completed. Mission in John begins with the Father sending the Son, and the disciples' sending (verse 38, 20:21) is drawn into that first sending."
+        }
+      ],
+      "refs": ["Deuteronomy 8:3", "John 5:36", "John 6:38", "John 17:4", "John 19:30"]
+    },
+    {
+      "v": "35",
+      "context": "Jesus quotes a saying, ‘four months more and then the harvest’, and overturns it. The fields are already white for harvest. Looking up, the disciples could see the Samaritans coming across the fields toward them.",
+      "grammar": "Ouch humeis legete, ‘do you not say?’, introduces a proverb, and eti tetramēnos estin, ‘it is still four months’, uses tetramēnos, ‘a four-month period’. Eparate tous ophthalmous humōn kai theasasthe, ‘lift up your eyes and look’, are aorist imperatives; the phrase lift up your eyes is biblical (Genesis 13:14, Isaiah 49:18). In Isaiah 49:18 Zion is told to lift up her eyes and see her children gathering to her, which suits the Samaritans streaming out. Leukai, ‘white’, describes grain ripening to a pale color. The placement of ēdē, ‘already’, is discussed in the chapter note.",
+      "words": ["G2089", "G5072", "G2326", "G1869", "G3788", "G2300", "G5561", "G3022", "G2235"],
+      "history": "The farming year behind the proverb is illustrated by the Gezer Calendar, a small limestone tablet of the tenth century BC found at Gezer in 1908 by R. A. S. Macalister. It lists the months of agricultural work: ingathering, sowing, late planting, hoeing flax, barley harvest, the harvest and measuring, pruning, and summer fruit. From the sowing of grain in late autumn to the barley harvest in spring was roughly four months, which is why ‘four months until harvest’ could serve as a saying for patient waiting.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The harvest is not only future. Jesus teaches the disciples to see people already turning to God where they expected nothing, and among a people they had learned to avoid."
+        }
+      ],
+      "refs": ["Matthew 9:37-38", "Luke 10:2", "Isaiah 49:18", "Joel 3:13"]
+    },
+    {
+      "v": "36-38",
+      "context": "The reaper is already receiving wages and gathering fruit for eternal life, so that sower and reaper rejoice together. The proverb ‘one sows, another reaps’ proves true: the disciples are sent to reap where others have labored. The saying explains the disciples' place in a work that began before them.",
+      "grammar": "Ho therizōn misthon lambanei, ‘the reaper receives wages’, and sunagei karpon, ‘gathers fruit’, are present tenses: the harvest is happening. Hina ho speirōn homou chairē kai ho therizōn, ‘so that the sower may rejoice together with the reaper’, uses homou, ‘together’, and a singular verb for both. In verse 38 apesteila, an aorist, ‘I sent’, looks back on the disciples' commission as already given, and kekopiakasin, a perfect, ‘others have labored’, together with eis ton kopon autōn eiselēluthate, ‘you have entered into their labor’, uses two perfects to describe a finished labor whose results the disciples now inherit.",
+      "words": ["G2325", "G3408", "G4863", "G2590", "G4687", "G3674", "G5463", "G0649", "G2872", "G2873"],
+      "history": "Interpreters have identified the ‘others’ in several ways: the prophets and John the Baptist, who prepared the way; Jesus himself, with the woman whose witness brings the town; or, reading the verse from the later church's viewpoint, the Hellenist missionaries of Acts 8, led by Philip, into whose work Peter and John entered in Samaria (Acts 8:14-17). The last view was argued by Oscar Cullmann in a 1956 essay on Samaria and the origins of the Christian mission. The text itself names no one.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "No one owns the work. Those who sow and those who reap belong to one harvest and share its joy, which excludes both envy of predecessors and pride in results."
+        }
+      ],
+      "refs": ["Amos 9:13", "Micah 6:15", "1 Corinthians 3:6-9", "Acts 8:5-17"]
+    },
+    {
+      "v": "39-42",
+      "context": "Many Samaritans believe because of the woman's testimony. They invite Jesus to stay, he stays two days, and many more believe because of his own word. They tell the woman that their faith now rests on what they have heard themselves, and they confess him as the Savior of the world.",
+      "grammar": "Dia ton logon tēs gunaikos marturousēs, ‘because of the word of the woman testifying’, calls her words testimony (marturia), John's term for witness that leads to faith. In verse 41 dia ton logon autou, ‘because of his word’, sets his word beside hers. In verse 42 tēn sēn lalian, ‘your speech’, uses lalia, ‘talk’ or ‘what one says’, which is not dismissive (Jesus uses it of his own speech in 8:43). Akēkoamen and oidamen are perfects: ‘we have heard, and we know’. Alēthōs, ‘truly’, qualifies the confession: this is really the Savior. Emeinen, ‘he stayed’, is the verb menō, which John uses for abiding (15:4).",
+      "words": ["G4541", "G4100", "G3056", "G3140", "G3306", "G2981", "G0191", "G6063", "G0230", "G4990", "G2889"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The Samaritans move from believing because of a witness to believing because of Jesus' own word. Testimony brings people to Jesus; faith that lasts rests on hearing him."
+        },
+        {
+          "id": "salvation",
+          "note": "Samaritans, not Judeans, give Jesus the widest title in the chapter: Savior of the world. The salvation that is ‘from the Jews’ (verse 22) is for the whole world, and 1 John 4:14 repeats the confession."
+        }
+      ],
+      "text": "In verse 42 the Textus Receptus, followed by the King James Version, reads ‘this is indeed the Christ, the Savior of the world’. The words ‘the Christ’ are absent from P66, P75, Codex Sinaiticus, and Codex Vaticanus and are omitted by modern editions as an addition that echoes verse 29.",
+      "refs": ["1 John 4:14", "John 1:29", "John 3:17", "John 20:31", "Acts 8:25"]
+    },
+    {
+      "v": "43-45",
+      "context": "After two days Jesus goes on to Galilee. The narrator adds that Jesus himself had said that a prophet has no honor in his own country, and then that the Galileans welcomed him because they had seen what he did in Jerusalem at the feast. The logic of the three verses is famously hard to follow.",
+      "grammar": "Autos gar Iēsous emarturēsen, ‘for Jesus himself testified’, gives the reason (gar) for something, but for what? If patris, ‘homeland’, means Galilee, the welcome of verse 45 is either ironic (they honor him only for his Jerusalem signs, compare 2:23-25) or a contrast with a rejection John does not narrate. If patris means Judea, where Jesus was born and where his claims were rejected, the proverb explains why he left for Galilee. Both readings have defenders; the first is more common because the Synoptic form of the saying refers to Nazareth. Edexanto, ‘they welcomed’, is aorist, and he'ōrakotes, a perfect participle, gives its ground: ‘having seen’.",
+      "words": ["G3140", "G4396", "G2398", "G3968", "G5092", "G1209", "G1057", "G1859"],
+      "history": "The saying about a prophet without honor at home appears in all four Gospels, in different settings. It also appears in the Gospel of Thomas, a collection of sayings attributed to Jesus probably compiled in the second century, which speaks of a prophet not accepted in his own village and adds that a physician does not heal those who know him (Gospel of Thomas 31); the same saying survives in Greek in Oxyrhynchus Papyrus 1. Its wide attestation suggests a proverb Jesus applied to himself.",
+      "parallels": ["Mark 6:4", "Matthew 13:57", "Luke 4:24"],
+      "refs": ["John 2:23-25", "John 1:11", "John 7:1-5"]
+    },
+    {
+      "v": "46-47",
+      "context": "Jesus returns to Cana, and the narrator reminds the reader of the water made wine. A royal official from Capernaum, whose son is dying, hears that Jesus is back and comes to beg him to come down and heal the boy. The request is urgent: the son is about to die.",
+      "grammar": "Basilikos is an adjective used as a noun, ‘a royal one’, meaning a person in the king's service, whether an officer, courtier, or official. In verse 47 ērōta, imperfect, ‘he kept asking’, and hina katabē kai iasētai, ‘that he would come down and heal’, give the content of his plea; katabē, ‘come down’, fits the descent from the hills of Cana to the lakeside town. Ēmellen apothnēskein, ‘he was about to die’, uses mellō with the infinitive for something on the point of happening.",
+      "words": ["G2580", "G0937", "G0770H", "G2584", "G2065", "G2597", "G2390", "G3195"],
+      "history": "The official was probably in the service of Herod Antipas, tetrarch of Galilee and Perea from 4 BC to AD 39, whom Mark calls ‘king’ (Mark 6:14) though Rome never granted him the title. Capernaum lay near the border between Antipas's territory and that of his brother Philip, which may explain the presence of officials and of the customs post where Levi sat (Mark 2:14). Chuza, the steward of Herod's household, whose wife Joanna followed Jesus (Luke 8:3), shows that the gospel reached this class of people early.",
+      "parallels": ["Matthew 8:5-13", "Luke 7:1-10"],
+      "text": "Readers since antiquity have compared this story with the healing of the centurion's servant in Matthew and Luke. Both are set in Capernaum, both involve a man in authority, and in both Jesus heals at a distance by a word. The differences are also clear: John's man is a royal official, not a centurion, the sick one is his son, not his servant (though Matthew's pais can mean either), he begs Jesus to come, where the centurion says Jesus need not come, and Jesus speaks from Cana, not near Capernaum. Some scholars take them as two tellings of one event, others as two events; the point of each is the authority of Jesus' word.",
+      "refs": ["John 2:1-11", "Mark 6:14", "Luke 8:3", "John 11:21"]
+    },
+    {
+      "v": "48-50",
+      "context": "Jesus' first reply sounds like a rebuff aimed at more than the man: ‘you people’ want signs and wonders before believing. The father does not argue; he repeats his plea. Jesus tells him to go, his son lives, and the man believes the word and goes. His faith is shown by walking away without Jesus.",
+      "grammar": "In verse 48 idēte and pisteusēte are second person plural: Jesus addresses Galileans in general, and ou mē pisteusēte, ‘you will surely not believe’, is the emphatic negative. Sēmeia kai terata, ‘signs and wonders’, is a phrase from the exodus (Deuteronomy 6:22, Exodus 7:3), used only here in John. The father's paidion in verse 49 is a diminutive, ‘my little boy’. Jesus' reply in verse 50 is poreuou, ho huios sou zē, ‘go, your son lives’, a present tense that states a fact rather than a promise. Episteusen tō logō, ‘he believed the word’, uses the dative: he trusted what was said.",
+      "words": ["G4592", "G5059", "G4100", "G0937", "G2962H", "G2597", "G3813", "G4198", "G2198", "G3056"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The father's faith passes from wanting Jesus present to trusting his word in his absence. John's readers, who would never see Jesus, are shown that his word is enough (20:29)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "1 Kings 17:23",
+          "note": "When Elijah raises the widow's son at Zarephath, he carries him down from the upper room, gives him to his mother, and says, in the Hebrew, re'i chai benekh, ‘see, your son lives’. The Septuagint renders it blepe, zē ho huios sou. Jesus' words to the official, ho huios sou zē, are nearly identical, but Jesus speaks them before the healing is seen and from miles away. The parallel presents Jesus as a prophet like Elijah and greater, since he gives life by word alone."
+        }
+      ],
+      "refs": ["John 20:29", "Deuteronomy 6:22", "Matthew 8:8", "Acts 2:22"]
+    },
+    {
+      "v": "51-54",
+      "context": "On the road the next day, the man's servants meet him with the news that the boy is alive. He asks the hour of the recovery, learns it was the seventh hour of the previous day, and recognizes it as the hour Jesus spoke. He and his whole household believe. The narrator numbers it the second sign, closing the section that began at Cana in chapter 2.",
+      "grammar": "Ēdē de autou katabainontos, a genitive absolute, ‘as he was already going down’, sets the scene on the road. Kompsoteron eschen, literally ‘he had it more finely’, is a colloquial idiom for a patient's turning for the better. Echthes hōran hebdomēn, ‘yesterday at the seventh hour’, uses an accusative of time, about one in the afternoon by Jewish reckoning. En ekeinē tē hōra, ‘at that very hour’, makes the coincidence explicit. Episteusen autos kai hē oikia autou holē, ‘he himself believed, and his whole household’, uses the absolute ‘believed’, faith in its full Johannine sense. Palin deuteron sēmeion, ‘again a second sign’, is emphatic.",
+      "words": ["G2597", "G1401", "G2198", "G5610", "G2866", "G5504", "G1442", "G4446", "G3614H", "G4592", "G1208"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Jesus' word acted across the distance at the moment he spoke. The narrative's attention to the hour shows that the healing was not a coincidence but the effect of his command, the same authority the Gospel ascribes to the Word through whom all things were made (1:3)."
+        },
+        {
+          "id": "family",
+          "note": "The whole household believes, as later in Acts (Acts 10:44-48, 16:31-34). Faith spreads through the relationships of a home, not as a substitute for each person's trust but as the natural path by which the news reaches them."
+        }
+      ],
+      "text": "In verse 51 the critical editions read ‘his boy lives’; the Textus Receptus, followed by the King James Version, has ‘your son lives’, making the servants quote Jesus' words exactly.",
+      "refs": ["John 2:11", "John 1:3", "Acts 16:31-34", "Psalm 107:20"]
+    }
+  ]
+}

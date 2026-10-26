@@ -1,0 +1,278 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The narrator tells the reader who the visitor is before Abraham knows it: the LORD appeared. The scene is set at Mamre, at midday, with Abraham resting at the tent door, the ordinary setting of a herdsman's life.",
+      "grammar": "The Hebrew says only vayyera elav YHWH, ‘the LORD appeared to him’. The pronoun joins this chapter directly to the end of chapter 17, and the BSB supplies the name Abraham. Vayyera is the same Niphal ‘let himself be seen’ as in 17:1. Vehu yoshev, ‘while he was sitting’, is a participle clause that paints the background. Kechom hayyom, ‘in the heat of the day’, contrasts with the evening arrival at Sodom (19:1): the visit to Abraham happens in full light.",
+      "words": ["H7200G", "H0436H", "H3427", "H2527"],
+      "refs": ["Genesis 17:1", "Genesis 13:18", "Genesis 19:1"]
+    },
+    {
+      "v": "2",
+      "context": "Abraham sees three men, runs to meet them, and bows to the ground. Whether he recognizes anything unusual about them is left unsaid; his behavior is that of a generous host.",
+      "grammar": "Vayyissa einav vayyar vehinneh, ‘he lifted his eyes and saw, and behold’, shifts to Abraham's point of view; he sees ‘three men’, while the reader knows the LORD is among them. Nitsavim alav, ‘standing over him’ or ‘near him’, suggests they were suddenly there. Vayyishtachu, ‘he bowed down’, is the verb for prostration before a superior or before God; grammarians debate whether its stem is a rare Hishtaphel or a form of a verb meaning ‘to bow’. Here it is the courtesy of a host and need not mean worship.",
+      "words": ["H5375M", "H5324", "H7323G", "H7812"],
+      "refs": ["Hebrews 13:2", "Genesis 19:1", "Judges 13:16"]
+    },
+    {
+      "v": "3",
+      "context": "Abraham addresses one of the three and asks him not to pass by. The request is framed in the most deferential terms a host could use.",
+      "grammar": "Im-na matsati chen be'eineykha, ‘if I have found favor in your eyes’, is the standard courteous formula of a petition. Abraham speaks to one person (the verbs and suffixes are singular) and calls him adonay. Pointed one way this is ‘my lord’, a polite address; the Masoretes, the scribes who added vowels to the text, pointed it as the divine title Adonai, ‘Lord’. From verse 4 Abraham switches to the plural, addressing all three.",
+      "words": ["H0113", "H4672", "H2580", "H5674A"],
+      "text": "The shift from singular (verse 3) to plural (verses 4-5) has puzzled readers since antiquity. Some take the singular as addressed to the leader of the group, others as evidence that Abraham senses the LORD among them. The vowel pointing of adonay reflects the Jewish scribal view that Abraham addressed God.",
+      "refs": ["Genesis 19:2", "Judges 6:17", "Genesis 32:5"]
+    },
+    {
+      "v": "4-5",
+      "context": "Abraham offers water, rest, and ‘a bit of bread’, understating what he is about to provide. The guests accept.",
+      "grammar": "Yuqqach-na, ‘let there be brought’, is a Hophal (passive) with the polite particle na: Abraham avoids commanding his guests even indirectly. Pat-lechem, ‘a morsel of bread’, is deliberate modesty. Sa'adu libbekhem, ‘sustain your hearts’, is an idiom for taking refreshment (Judges 19:5, Psalm 104:15). Ki al-ken avartem, ‘since this is why you have passed by’, courteously treats the visit as providential: they came this way so that he could serve them. Their answer, ken ta'aseh, ‘so you shall do’, is brief and grants permission.",
+      "words": ["H3947J", "H7364", "H6595A", "H5582", "H3820A"],
+      "history": "Washing a traveler's feet was a basic act of welcome among people who walked dusty roads in sandals (19:2, 24:32, 43:24). The New Testament keeps the custom as a mark of humble service (Luke 7:44, John 13:5, 1 Timothy 5:10).",
+      "refs": ["Genesis 24:32", "Judges 19:5", "Psalm 104:15", "Luke 7:44", "John 13:5"]
+    },
+    {
+      "v": "6-7",
+      "context": "The pace quickens. Abraham hurries to Sarah, runs to the herd, and has a servant hurry with the calf. The ‘bit of bread’ becomes a feast.",
+      "grammar": "The verb mahar, ‘to hurry’, occurs three times in two verses (vaymaher, mahari, vaymaher), and ruts, ‘to run’, appears again (verses 2, 7). The piled-up verbs show an elderly man's eagerness. Qemach solet is ‘flour, fine flour’: solet is the fine grade used later for grain offerings (Leviticus 2:1). Ugot are round cakes baked on hot stones. Ben-baqar rakh vatov, ‘a young one of the herd, tender and good’, marks the best animal.",
+      "words": ["H4116A", "H5429", "H5560", "H5692", "H7390"],
+      "history": "Three seahs made an ephah, perhaps around twenty liters of flour by common estimates. Gideon prepares bread from an ephah of flour for the angel of the LORD (Judges 6:19), and Hannah brings an ephah to Shiloh (1 Samuel 1:24). Jesus's parable of the woman who hides yeast in ‘three measures of flour’ (Matthew 13:33) uses the same quantity.",
+      "refs": ["Judges 6:19", "Matthew 13:33", "Leviticus 2:1", "1 Samuel 1:24"]
+    },
+    {
+      "v": "8",
+      "context": "Abraham serves the meal himself and stands by while the guests eat. The visitors eat real food, and the narrator records it plainly.",
+      "grammar": "Chem'ah vechalav, ‘curds and milk’: chem'ah is thickened milk, something like yogurt or soft butter, a staple of herding peoples (Judges 5:25). Vehu omed aleihem, ‘and he was standing by them’, echoes nitsavim alav in verse 2, ‘standing by him’. The guests who stood over their host now sit while their host stands over them as a servant.",
+      "words": ["H2529A", "H2461", "H5975G", "H0398"],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Two of the visitors are called angels in 19:1, and they eat. Scripture does not explain how heavenly messengers take human form and share a meal. It simply shows God stooping to meet Abraham at his own table, which is why Hebrews 13:2 can urge hospitality as a place where heavenly visitors may be met."
+        }
+      ],
+      "refs": ["Judges 5:25", "Hebrews 13:2", "Luke 24:42-43", "Luke 12:37"]
+    },
+    {
+      "v": "9",
+      "context": "The guests ask where Sarah is, using the new name God gave her in 17:15. Abraham says she is in the tent. The question turns the meal into the setting for the promise.",
+      "grammar": "Ayyeh Sarah ishtekha, ‘where is Sarah your wife’, is one of a series of divine ‘where’ questions in Genesis (3:9, 4:9, 16:8) that are not requests for information. The visitors know her name and her new name, a sign that they are not ordinary travelers.",
+      "words": ["H0346", "H8283", "H0168G"],
+      "text": "In the standard Hebrew text, three letters of the word elav, ‘to him’, carry special dots placed by the scribes, one of about ten such dotted places in the Torah. Their purpose is not certain; rabbinic interpretation drew lessons from them. The translation is not affected.",
+      "refs": ["Genesis 3:9", "Genesis 17:15"]
+    },
+    {
+      "v": "10",
+      "context": "The LORD speaks and promises that Sarah will have a son by the time he returns next year. Sarah is listening at the tent door behind him, so the promise reaches her directly for the first time.",
+      "grammar": "Shov ashuv, ‘returning I will return’, is the infinitive absolute with a finite verb, giving emphasis: \"I will surely return.\" Ka'et chayyah is literally ‘at the time of life’ or ‘when the season revives’, meaning at this time next year. Elisha uses the same phrase in promising a son to the Shunammite woman (2 Kings 4:16-17). The final clause, vehu acharav, can mean ‘and it (the entrance) was behind him’ or ‘and she was behind him’; either way Sarah is out of sight but in earshot.",
+      "words": ["H7725G", "H6256", "H2416A", "H8085G"],
+      "refs": ["2 Kings 4:16-17", "Romans 9:9", "Genesis 21:1-2"]
+    },
+    {
+      "v": "11",
+      "context": "The narrator pauses to explain why the promise is impossible: both are old, and Sarah is past menopause. The aside makes Sarah's laughter in the next verse understandable.",
+      "grammar": "Ba'im bayyamim, ‘come into the days’, is a Hebrew idiom for advanced age (24:1, Joshua 13:1). Chadal lihyot leSarah orach kannashim, ‘the way of women had ceased to be for Sarah’, is a euphemism for menstruation, the same phrase Rachel uses in 31:35.",
+      "words": ["H2205H", "H0935J", "H2308", "H0734"],
+      "refs": ["Genesis 24:1", "Genesis 31:35", "Romans 4:19", "Hebrews 11:11"]
+    },
+    {
+      "v": "12",
+      "context": "Sarah laughs to herself. Her words show why: she is worn out, her husband is old, and pleasure is long past.",
+      "grammar": "Beqirbah, ‘within herself’, matches Abraham's laughing ‘in his heart’ in 17:17: both laugh inwardly. Acharei beloti, ‘after I am worn out’, uses balah, the verb for clothes that wear out (Deuteronomy 8:4, Joshua 9:13). Ednah, ‘pleasure’ or ‘delight’, comes from the same root as Eden. Sarah calls Abraham adoni, ‘my lord’, the ordinary respectful term for a husband.",
+      "words": ["H6711", "H7130G", "H1086", "H5730B", "H0113"],
+      "history": "1 Peter 3:6 draws on this verse when it describes Sarah obeying Abraham and calling him lord. The letter uses a private, half-humorous remark as a picture of respect.",
+      "refs": ["Genesis 17:17", "1 Peter 3:6", "Deuteronomy 8:4"]
+    },
+    {
+      "v": "13",
+      "context": "The LORD asks Abraham why Sarah laughed, revealing that he heard a laugh no one else could have heard. His quotation of her words differs from what she said.",
+      "grammar": "Sarah said ‘my lord is old’; the LORD reports her as saying \"Can I really bear a child when I am old?\" He omits her remark about Abraham and puts the emphasis on her own age. Jewish interpreters since antiquity have seen in this a divine example of tact that keeps peace between husband and wife. Ha'af umnam, ‘shall I truly’, combines two particles of doubt and sharpens the question.",
+      "words": ["H6711", "H0637", "H0552", "H2204"],
+      "refs": ["Genesis 18:12", "Psalm 139:4", "Hebrews 4:13"]
+    },
+    {
+      "v": "14",
+      "context": "The LORD answers the laugh with a question and restates the promise. The question is the theological center of the first half of the chapter.",
+      "grammar": "Hayippale meYHWH davar, ‘is anything too wonderful for the LORD’, uses the Niphal of pala, ‘to be extraordinary’ or ‘beyond reach’. Jeremiah hears the same question from God as he buys a field on the eve of Jerusalem's fall: \"Is anything too difficult for Me?\" (Jeremiah 32:27). Lammo'ed, ‘at the appointed time’, repeats 17:21 and anticipates 21:2.",
+      "words": ["H6381", "H1697I", "H4150G", "H6256"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "The question ties God's power to his promise. God is not described as able to do anything at all in the abstract, but as able to do what he has said, even when nature says otherwise."
+        }
+      ],
+      "refs": ["Jeremiah 32:17", "Jeremiah 32:27", "Luke 1:37", "Zechariah 8:6", "Genesis 21:2"]
+    },
+    {
+      "v": "15",
+      "context": "Sarah, afraid, denies that she laughed. The LORD answers in two words: you did laugh. The scene ends on the laugh that will become Isaac's name.",
+      "grammar": "Vattekhachesh, ‘she denied’, is the Piel of kachash, ‘to deny’ or ‘to deceive’. The narrator gives the reason in a ki clause: ki yare'ah, ‘for she was afraid’. The LORD's reply, lo ki tsachaqt, ‘no, for you laughed’, contradicts her with her own verb. The story does not record a rebuke beyond this; the promise stands.",
+      "words": ["H3584", "H3372G", "H6711"],
+      "refs": ["Genesis 21:6", "Hebrews 11:11", "Genesis 3:10"]
+    },
+    {
+      "v": "16",
+      "context": "The men set out and look down on Sodom, and Abraham walks with them to see them off. The chapter's second half begins with the view from the hills above the valley.",
+      "grammar": "Vayyashqifu al-penei Sedom, ‘they looked down upon Sodom’, uses the Hiphil of shaqaf, the verb used of God looking down from heaven (Psalm 14:2, Deuteronomy 26:15); Abraham will look down on the same scene the morning after its destruction (19:28). Leshallecham, ‘to send them off’, is the Piel of shalach, the host's duty of escorting departing guests.",
+      "words": ["H8259", "H5467", "H7971G"],
+      "refs": ["Genesis 19:28", "Psalm 14:2", "Deuteronomy 26:15"]
+    },
+    {
+      "v": "17",
+      "context": "The LORD deliberates aloud, in words the reader overhears: should he hide from Abraham what he is about to do? The question implies a relationship in which God shares his purposes.",
+      "grammar": "The verse begins with the subject, vaYHWH amar, a word order that marks a pause in the action for an inner speech. Hamkhasseh ani, ‘am I concealing’, is a participle with the pronoun, asking about God's present intention. Asher ani oseh, ‘what I am about to do’, is also a participle, of action already imminent.",
+      "words": ["H3680", "H0589", "H6213A"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God chooses to disclose his intentions to Abraham before acting. Amos 3:7 states the principle, and Jesus calls his disciples friends because he has made known to them what he heard from the Father (John 15:15). Abraham is called God's friend (2 Chronicles 20:7, Isaiah 41:8, James 2:23)."
+        }
+      ],
+      "refs": ["Amos 3:7", "John 15:15", "2 Chronicles 20:7", "Isaiah 41:8", "James 2:23"]
+    },
+    {
+      "v": "18",
+      "context": "God gives his first reason for telling Abraham: Abraham will become a great nation, and all nations will be blessed through him. A man with this calling needs to understand God's ways with the nations.",
+      "grammar": "Hayo yihyeh, ‘he will surely become’, uses the emphatic infinitive absolute. Venivrekhu vo, ‘and they will be blessed in him’, uses the Niphal of barakh, as in 12:3 and 28:14; the parallel promises in 22:18 and 26:4 use the Hithpael. Grammarians debate whether these forms are passive (‘be blessed’) or reflexive (‘bless themselves’, that is, use Abraham's name when invoking blessing).",
+      "words": ["H1961", "H6099", "H1288", "H1471A"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The promise that the nations will be blessed through Abraham is the reason God reveals his judgment on Sodom. Abraham's calling concerns the nations, so he is brought into God's dealings with a Canaanite city, and his first response is to pray for it."
+        }
+      ],
+      "text": "Translations differ on the verb: most, following the Septuagint and Paul's use in Galatians 3:8, read ‘will be blessed’; some modern versions and commentators prefer ‘will bless themselves’ or ‘will pray to be blessed as he is’. The passive reading makes Abraham a channel of blessing; the reflexive makes him the model of blessing. Both place the nations inside the promise.",
+      "refs": ["Genesis 12:3", "Galatians 3:8", "Genesis 22:18", "Genesis 28:14"]
+    },
+    {
+      "v": "19",
+      "context": "God's second reason: he chose Abraham so that Abraham would teach his household to keep the way of the LORD by doing righteousness and justice. The fulfillment of the promise is tied to that way of life.",
+      "grammar": "Yeda'tiv, ‘I have known him’, is the verb yada, used here as it is in Amos 3:2 (‘you only have I known’) for God's choosing and personal commitment; hence the BSB's ‘chosen’. Two purpose clauses follow, each with lema'an, ‘so that’: God chose him so that he would command his children, and so that the LORD would bring about what he promised. Tsedaqah umishpat, ‘righteousness and justice’, is a pair that together means just conduct, especially toward the weak (Jeremiah 22:3, Psalm 33:5).",
+      "words": ["H3045", "H4616", "H6680", "H1870G", "H6666"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The verse is one of the clearest statements of election's purpose in the Old Testament. God's choice of Abraham is a free act of personal commitment, and it aims at a people who do righteousness and justice. Election is for a task, not for privilege alone."
+        },
+        {
+          "id": "family",
+          "note": "Abraham's calling includes teaching his children and household the way of the LORD. Deuteronomy 6:6-7 makes this the duty of every Israelite parent."
+        },
+        {
+          "id": "justice-poor",
+          "note": "The chosen family is marked by righteousness and justice, the very things absent from Sodom (Ezekiel 16:49). The contrast between Abraham's household and Sodom is set up in God's own words."
+        }
+      ],
+      "refs": ["Amos 3:2", "Deuteronomy 6:6-7", "Jeremiah 22:3", "Ezekiel 16:49"]
+    },
+    {
+      "v": "20-21",
+      "context": "The LORD tells Abraham of the outcry against Sodom and Gomorrah and says he will go down to see whether their deeds match it. Nothing is yet said about destruction; the language is that of an investigation.",
+      "grammar": "Za'aqat Sedom, ‘the outcry of Sodom’, can mean the cry of Sodom's victims against the city or the outcry the city's sin raises; the BSB reads ‘against’. The two ki clauses, ki rabbah... ki khavedah, ‘indeed it is great... indeed it is heavy’, are emphatic. Kaved, ‘heavy’, pictures sin as a weight. Eradah-na, ‘let me go down’, recalls God going down to see Babel (11:5, 7). The end of verse 21, asu kalah, can mean ‘they have done completely’ (as the BSB takes it) or can be read with kalah as ‘destruction’: ‘if they have done according to the outcry, destruction’. Ve'im lo eda'ah, ‘and if not, I will know’, uses the verb of verse 19: God ‘knows’ Abraham in choosing, and ‘will know’ Sodom in judging.",
+      "words": ["H2201", "H3513H", "H3381", "H6818", "H3617"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's judgment answers a cry. The outcry language is that of victims crying for help (Exodus 3:7-9), so the coming judgment on Sodom is presented as God's response to the oppressed, and he examines the evidence before he acts."
+        }
+      ],
+      "refs": ["Genesis 11:5", "Exodus 3:7-9", "Genesis 19:13", "Ezekiel 16:49-50"]
+    },
+    {
+      "v": "22",
+      "context": "The two men go on toward Sodom, while Abraham remains standing before the LORD. The scene is set for the intercession.",
+      "grammar": "Odennu omed, ‘he was still standing’, is a participle with od, ‘still’: Abraham does not leave. ‘Standing before’ someone is the posture of a servant ready to serve or of a petitioner ready to plead (1 Kings 17:1, Jeremiah 15:1).",
+      "words": ["H6437G", "H5750", "H5975G"],
+      "text": "Ancient Jewish tradition lists this verse among the ‘corrections of the scribes’, places where scribes are said to have altered the wording out of reverence. According to that tradition the original read ‘the LORD remained standing before Abraham’, which would picture God waiting for Abraham to speak, and it was changed because standing before someone suggests serving him. Whether such changes were actually made, or the list reflects later interpretation, is debated; all surviving Hebrew manuscripts read as the BSB does.",
+      "refs": ["Jeremiah 15:1", "1 Kings 17:1", "Genesis 19:27"]
+    },
+    {
+      "v": "23",
+      "context": "Abraham draws near and asks the question at the heart of his intercession: will God sweep away the righteous with the wicked?",
+      "grammar": "Vayyiggash, ‘he drew near’, is the verb used for approaching someone to make a case (Judah approaching Joseph in 44:18) or approaching God. Ha'af tispeh, ‘will you indeed sweep away’, uses safah, the verb the angels use when they warn Lot not to be ‘swept away’ (19:15, 17). Tsaddiq and rasha, ‘righteous’ and ‘wicked’, are also legal terms for the innocent and the guilty in a court case (Deuteronomy 25:1).",
+      "words": ["H5066G", "H5595", "H6662", "H7563"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Abraham's prayer is an argument from God's own justice. He does not ask God to be less just but to act consistently with his justice, which makes this chapter a model for prayer that appeals to God's character."
+        }
+      ],
+      "refs": ["Genesis 44:18", "Deuteronomy 25:1", "Genesis 19:15"]
+    },
+    {
+      "v": "24",
+      "context": "Abraham proposes fifty righteous people and asks not only that they be spared but that the whole city be spared for their sake. His request goes beyond protecting the innocent to mercy for the guilty.",
+      "grammar": "Ulai, ‘perhaps’, introduces each of Abraham's proposals (verses 24, 28, 29, 30, 31, 32). Tissa lammaqom, ‘will you bear with the place’, uses nasa, ‘to lift’ or ‘to carry’, which with God as subject often means to forgive (Exodus 34:7, Numbers 14:19). The BSB's ‘spare’ is right; the word opens toward pardon.",
+      "words": ["H0194", "H5375H", "H4725", "H6662"],
+      "refs": ["Exodus 34:7", "Numbers 14:19", "Jeremiah 5:1"]
+    },
+    {
+      "v": "25",
+      "context": "Abraham presses the point with the strongest words he can find: it would be unthinkable for God to treat the righteous and the wicked alike. He ends with the question that grounds all his pleading.",
+      "grammar": "Chalilah lekha, ‘far be it from you’, comes from chalal, ‘to profane’: such an act would be a desecration, unthinkable for God. Abraham says it twice. Hashofet kol-ha'arets, ‘the Judge of all the earth’, uses a participle as a title. Lo ya'aseh mishpat, ‘will he not do justice’, is a rhetorical question expecting yes.",
+      "words": ["H2486", "H8199", "H4941H", "H6662", "H7563"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The title Judge of all the earth makes Sodom's fate a matter for the God who judges every nation, not a local deity's grudge. Paul makes a similar argument when he asks how, if God were unjust, he could judge the world (Romans 3:5-6)."
+        },
+        {
+          "id": "attributes",
+          "note": "Abraham's argument assumes that God's justice is not arbitrary but recognizable: humans made in his image can appeal to it. Deuteronomy 32:4 confesses the same conviction."
+        }
+      ],
+      "refs": ["Deuteronomy 32:4", "Romans 3:5-6", "Psalm 94:2", "Job 34:10-12"]
+    },
+    {
+      "v": "26",
+      "context": "The LORD agrees at once: for fifty righteous people he will spare the whole place. God's answer grants more than a narrow reading of Abraham's first question required.",
+      "grammar": "Venasati lekhol-hammaqom ba'avuram, ‘I will bear with the whole place for their sake’, repeats Abraham's verb nasa from verse 24 in the first person. Ba'avur, ‘for the sake of’, becomes the refrain of God's answers (verses 29, 31, 32).",
+      "words": ["H4672", "H5375H", "H5668", "H4725"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The few righteous can be the reason for sparing the many. Jeremiah 5:1 later offers pardon to Jerusalem if one just person can be found, and the principle points toward the one righteous man whose obedience brings life to many (Romans 5:19)."
+        }
+      ],
+      "refs": ["Jeremiah 5:1", "Ezekiel 22:30", "Romans 5:19"]
+    },
+    {
+      "v": "27-28",
+      "context": "Abraham continues, with a confession of his own smallness, and lowers the number to forty-five. God agrees.",
+      "grammar": "Ho'alti ledabber, ‘I have ventured to speak’, uses the Hiphil of ya'al, ‘to be willing’ or ‘to dare’. Afar va'efer, ‘dust and ashes’, is a rhyming pair: Abraham remembers he is dust (2:7, 3:19), and Job uses the same pair of himself (Job 30:19, 42:6). In verse 28 Abraham cleverly frames forty-five as ‘fifty lacking five’ and asks whether God will destroy the city ‘for five’. Yachserun has an extra final nun, a form often found at pauses and in emphatic speech. Hatashchit, ‘will you destroy’, is the Hiphil of shachat, the verb of the flood (6:13, 17) and of the angels' mission in 19:13.",
+      "words": ["H2974", "H6083", "H0665", "H2637", "H7843"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Boldness and humility grow together in Abraham's prayer. He dares more precisely because he confesses that he is dust, and God does not rebuke him for it."
+        }
+      ],
+      "refs": ["Job 42:6", "Genesis 3:19", "Genesis 6:13", "Genesis 19:13"]
+    },
+    {
+      "v": "29-30",
+      "context": "Abraham lowers the number to forty, then to thirty, asking the Lord not to be angry. Each time God agrees without argument.",
+      "grammar": "Vayyosef od ledabber, ‘he again added to speak’, uses yasaf, ‘to add’, a Hebrew way of saying ‘spoke again’. In verse 30, al-na yichar la'donay, literally ‘let it not burn for the Lord’, uses charah, ‘to burn’, the regular idiom for anger. Va'adabberah, ‘let me speak’, is a cohortative, a request for permission.",
+      "words": ["H3254G", "H2734", "H1696G", "H0705", "H7970"],
+      "refs": ["Exodus 32:11-14", "Numbers 14:17-20"]
+    },
+    {
+      "v": "31-32",
+      "context": "Abraham asks twice more, for twenty and finally for ten, and God agrees each time. Abraham stops at ten; the text gives no reason, and God sets no limit.",
+      "grammar": "Verse 31 repeats the ‘I have ventured’ of verse 27, and verse 32 repeats the ‘let the Lord not be angry’ of verse 30, so the last two requests echo the earlier ones in reverse order. Akh-happa'am, ‘just this once’, signals the final request. Gideon uses almost the same words when he asks God for one more sign with the fleece (Judges 6:39).",
+      "words": ["H0389", "H6471", "H6235", "H7843", "H5668"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "God grants every request Abraham makes. The limit of the conversation is set by Abraham's asking, not by God's willingness, which is why many readers take the chapter as an invitation to pray for more than one dares."
+        }
+      ],
+      "refs": ["Judges 6:39", "Ezekiel 14:14", "Luke 18:1"]
+    },
+    {
+      "v": "33",
+      "context": "The LORD finishes speaking and goes his way, and Abraham returns home. The reader does not yet know whether ten righteous people will be found in Sodom.",
+      "grammar": "Ka'asher killah ledabber, ‘when he had finished speaking’, echoes 17:22. Shav limqomo, ‘returned to his place’, uses maqom, the word for ‘place’ that has run through the intercession (verses 24, 26), where it meant Sodom. Abraham returns to his place to wait. In 19:27 he goes back early in the morning to ‘the place where he had stood before the LORD’.",
+      "words": ["H3615G", "H1980M", "H4725"],
+      "refs": ["Genesis 17:22", "Genesis 19:27-29"]
+    }
+  ]
+}

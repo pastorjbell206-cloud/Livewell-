@@ -1,0 +1,171 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "A new block of law begins with the standard formula of divine speech, but the audience is wider than in the chapters before. Moses is to speak to Aaron, his sons, and all the Israelites together, a combination that recurs only a few times in Leviticus (22:18 is the closest parallel). What follows concerns priests and laypeople equally, because it governs every animal an Israelite household kills.",
+      "grammar": "Verse 2 closes with a solemn formula, zeh haddavar asher tsivvah YHWH, literally ‘this is the word (or thing) that the LORD commanded’. Tsivvah is a Piel perfect of the verb for commanding, the verb from which mitsvah (commandment) comes. The same formula introduces authoritative instructions at Leviticus 8:5 and 9:6 and in Exodus 16:16 and 35:4. It marks what follows as a command already settled by God, which Moses relays, not a priestly custom open to adjustment.",
+      "words": ["H6680", "H1697I"],
+      "history": "Leviticus 17 is usually taken as the first chapter of the Holiness Code (chapters 17 to 26). Some scholars, noting that it shares its concern for sacrifice and blood with chapters 1 to 16, treat it instead as a hinge chapter belonging to both halves. Jacob Milgrom, in the second volume of his Anchor Bible commentary (Leviticus 17-22, 2000), counted it as the opening of the Holiness material and read it as the work of a priestly circle revising earlier priestly law.",
+      "refs": ["Leviticus 22:18", "Leviticus 8:5", "Leviticus 21:24"]
+    },
+    {
+      "v": "3-4",
+      "context": "The first law: any Israelite who slaughters one of the three sacrificial domestic animals, whether inside the camp or outside it, and does not bring it to the Tent of Meeting as an offering has shed blood. The sentence is long and conditional, piling up the case before the verdict falls in verse 4, and the verdict treats a butcher's act as a killing.",
+      "grammar": "The case opens with ish ish, ‘a man, a man’, the Hebrew distributive idiom for ‘any man at all’ (compare Leviticus 15:2 and 18:6). The verb shachat is the technical term for slaughtering an animal by cutting its throat, the same verb used for sacrificial slaughter in Leviticus 1:5. The verdict in verse 4 is striking: dam yechashev laish hahu, ‘blood shall be reckoned to that man’. Yechashev is a Niphal imperfect of chashav, ‘to count, reckon, credit’, the verb of Genesis 15:6 and of Leviticus 7:18, where a sacrifice eaten on the wrong day is not ‘credited’. Here the reckoning runs the other way: a slaughter that should have counted as an offering is booked as bloodshed. The next clause, dam shafakh, ‘he has shed blood’, is the language of homicide used in Genesis 9:6.",
+      "words": ["H0376G", "H7819A", "H2803H", "H8210H", "H1818"],
+      "history": "Interpreters have long disputed how far the law reaches. The Babylonian Talmud (Chullin 16b-17a) records a disagreement between Rabbi Ishmael and Rabbi Akiva. Rabbi Ishmael held that in the wilderness Israel could eat meat only as part of a sacrifice, and that Deuteronomy 12:20 later granted permission for ordinary meat, which the rabbis called basar taavah, ‘meat of desire’. Rabbi Akiva held that ordinary meat had been permitted in the wilderness too, reading the change in Deuteronomy differently. Milgrom sided broadly with Ishmael's reading of Leviticus 17: in his view the Holiness writers regarded any slaughter of a sacrificial animal away from the altar as murder, because only the altar ritual could make the taking of the animal's life legitimate.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The law refuses a category of ordinary, neutral killing for these animals. Taking an animal's life for food is brought inside the sphere of worship, so that even the family meal is answerable to God."
+        },
+        {
+          "id": "creation",
+          "note": "Calling unauthorized slaughter bloodshed echoes the covenant with Noah, where God permitted meat but reserved the blood (Genesis 9:3-6). Animal life is given to humanity for use, but it is not humanity's to take as if it were nothing."
+        }
+      ],
+      "refs": ["Genesis 9:3-6", "Deuteronomy 12:15-16", "Deuteronomy 12:20-21", "Leviticus 7:18"]
+    },
+    {
+      "v": "5-6",
+      "context": "The law states its purpose. Sacrifices Israelites have been making out in the open country are to be redirected to the priest at the sanctuary and offered as peace offerings, the kind of sacrifice the worshiper shares in eating (Leviticus 3; 7:11-21). The priest handles the blood and burns the fat, the two parts that belong to God.",
+      "grammar": "Verse 5 opens with lemaan asher, ‘in order that’, a purpose clause: the command of verses 3 and 4 exists so that the sacrifices come to the right place. The description of current practice uses a participle, hem zovchim, ‘they are sacrificing’, which presents open-field sacrifice as an ongoing habit, not a hypothetical. In verse 6 the priest's action is zaraq, which means to toss or dash liquid from a bowl. English Bibles often say ‘sprinkle’, but Leviticus has a different verb (hizzah) for sprinkling with a finger (Leviticus 4:6); zaraq describes the larger action of splashing the blood against the altar's sides, as in Leviticus 3:2. The fat is turned to smoke (hiqtir) as a reach nichoach, \"a pleasing aroma\", the phrase first used of Noah's sacrifice in Genesis 8:21.",
+      "words": ["H4616", "H2076", "H2236", "H8002", "H6999A", "H5207"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The remedy for private, unregulated sacrifice is not to forbid eating meat but to bring it to God's house as a peace offering. Worship is gathered to the place and the mediation God appoints, and the meal itself becomes fellowship with him."
+        }
+      ],
+      "refs": ["Leviticus 3:1-5", "Leviticus 7:11-15", "Genesis 8:21", "Deuteronomy 12:13-14"]
+    },
+    {
+      "v": "7",
+      "context": "The purpose clause reaches its point. The open-field sacrifices were going to the goat demons, and the law names the practice for what it is. The verse closes by making the rule a permanent statute, which raises the question the chapter note discusses: how this law relates to Deuteronomy's later permission to slaughter at home.",
+      "grammar": "Laseirim, ‘to the goat demons’, uses the plural of sair, literally ‘hairy one’, the common word for a male goat (it names the two goats of Leviticus 16). The context makes clear these are spirits, not livestock. The verb zonim, a participle of zanah, ‘to act as a prostitute’, followed by acharehem, ‘after them’, is the idiom of spiritual infidelity found also in Exodus 34:15-16 and Leviticus 20:5-6: Israel is pictured as a wife chasing other lovers. Chuqqat olam, \"a permanent statute\", uses olam, a word for long or unending duration, and the chuqqah (fixed statute) formula.",
+      "words": ["H8163C", "H2181", "H2708", "H5769G"],
+      "history": "The word seirim appears for wilderness spirits in Isaiah 13:21 and 34:14 and in 2 Chronicles 11:15, where Jeroboam appoints priests for them. Deuteronomy 32:17 uses a different word, shedim, for the demons Israel sacrificed to, and Psalm 106:37 applies it to child sacrifice. Some interpreters connect the goat demons with Azazel, the name associated with the goat sent into the wilderness in Leviticus 16:8-10, since both belong to the desert. The link is possible but not stated in the text, and the chapter's own interest is simply that sacrifice must not go anywhere but to the LORD.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The verse treats sacrifice in the wrong place as sacrifice to the wrong god. Paul makes a similar judgment when he says that what pagans sacrifice they offer to demons, and that believers cannot share both the Lord's table and theirs (1 Corinthians 10:20-21)."
+        }
+      ],
+      "refs": ["Isaiah 34:14", "2 Chronicles 11:15", "Deuteronomy 32:17", "1 Corinthians 10:20-21"]
+    },
+    {
+      "v": "8-9",
+      "context": "The second law widens the first in two directions. It covers every burnt offering and sacrifice, not only slaughter of domestic animals, and it binds the resident foreigner as well as the native Israelite. Anyone who offers anywhere but at the entrance of the Tent is cut off.",
+      "grammar": "The ger (\"foreigner\" in the BSB, often ‘sojourner’ or ‘resident alien’) is described with a relative clause built on the related verb: haggar asher yagur betokham, ‘the sojourner who sojourns among them’. The repetition of the root gur stresses that this is someone living within Israel on a lasting basis, not a traveler passing through. The verb for offering, yaaleh, a Hiphil of alah (‘to go up’), shares its root with olah, the burnt offering, the sacrifice that ‘goes up’ entirely in smoke.",
+      "words": ["H1616", "H1481A", "H5927I", "H5930A"],
+      "history": "The ger was a foreigner who had settled in Israel, usually without owning land, and so depended on Israelite households for work and protection. The laws of Leviticus 17 and 18 are among those that apply explicitly to the ger. Several scholars, including Richard Bauckham, have argued that the four requirements the Jerusalem council laid on Gentile believers in Acts 15:20 and 29 (abstaining from food offered to idols, from sexual immorality, from what is strangled, and from blood) correspond to the laws in Leviticus 17 and 18 that bind the resident foreigner.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Some laws of the Torah bind Israel alone, but these bind anyone who lives among God's people. Their inclusion of the foreigner shows that the one altar is not an ethnic privilege but the only legitimate place for anyone in the land to approach God."
+        }
+      ],
+      "refs": ["Leviticus 18:26", "Acts 15:19-21", "Acts 15:28-29", "Numbers 15:14-16"]
+    },
+    {
+      "v": "10",
+      "context": "The third law turns from where animals are killed to what may be eaten: no blood, for Israelite or foreigner. The penalty is stated in the first person, as a threat from God himself, which is rare in Leviticus and prepares for the first-person explanation in verse 11.",
+      "grammar": "Venatatti panay, ‘I will set my face’, uses the verb natan (‘give, set’) with panim (‘face’): God turns his attention against the person as an adversary. The phrase appears elsewhere in the Holiness Code only in Leviticus 20:3-6 and 26:17. The penalty also shifts voice: in verses 4 and 9 the offender ‘will be cut off’ (Niphal, passive), but here God says vehikhratti, ‘and I will cut off’ (Hiphil, active), naming himself as the agent. The offender is called hannefesh haokhelet, ‘the nefesh that eats’, with a feminine participle agreeing with nefesh. The chapter is about to call the blood itself the nefesh (verse 11), so the wording sets a living nefesh against the nefesh it consumes.",
+      "words": ["H5414H", "H6440H", "H3772I", "H5315J"],
+      "history": "The Mishnah lists the offenses that carry karet, the penalty of being cut off, and eating blood is among them (m. Keritot 1:1). The rabbis generally understood karet as a punishment carried out by God, not by a human court, which fits the first-person wording of this verse.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God does not delegate this sentence. Eating blood is treated as an offense against God's own claim on life, and so God himself answers it."
+        }
+      ],
+      "refs": ["Genesis 9:4", "Leviticus 3:17", "Leviticus 7:26-27", "Leviticus 20:3-6", "1 Samuel 14:32-34"]
+    },
+    {
+      "v": "11",
+      "context": "The reason for the blood prohibition, and the theological center of Leviticus. The verse gives three linked statements: the life of a creature is in its blood; God has given that blood to Israel on the altar for atonement; and it is the blood, as or because of the life, that atones. Since blood has been assigned this purpose, it cannot be eaten.",
+      "grammar": "Three points in the Hebrew carry the argument. First, vaani netattiv lakhem, ‘and I, I have given it to you’, adds the independent pronoun ani to a verb that already marks the first person. The emphasis falls on God as the giver: atonement is his provision, not a human device. Second, lekhapper al nafshotekhem, ‘to make atonement for your lives’, uses the Piel of kafar, the central verb of Israel's sacrificial system. Whether kipper basically means ‘to ransom’ (from the related noun kofer, a ransom price, as in Exodus 30:12) or ‘to purge, wipe clean’ is debated, and Milgrom argued that in this verse it carries the ransom sense. Third, the closing clause ki haddam hu bannefesh yekhapper can be read two ways depending on the preposition be. As a ‘beth of price’ it means the blood atones ‘in exchange for the life’, a life given for a life. As a ‘beth of means’ it means the blood atones ‘by means of the life’ that is in it. Both are good Hebrew. The ancient Greek translation, the Septuagint, rendered the phrase with anti tes psyches, ‘in place of the life’, taking the first view; the BSB's \"makes atonement for the soul\" also leans that way. Note too the word nefesh appearing three times in one verse, once for the animal's life, once for the worshipers' lives, once for the life in the blood.",
+      "words": ["H5315H", "H0589", "H5414G", "H3722A", "H4196"],
+      "history": "The verse became foundational in both Jewish and Christian thought. The Babylonian Talmud cites it for the principle that there is no atonement except through blood (b. Yoma 5a; also b. Zevachim 6a and Menachot 93b), a principle stated about the sacrificial rites of the temple. After the temple's destruction in AD 70, rabbinic tradition taught that repentance, prayer, and acts of kindness atone: Avot de-Rabbi Natan 4 tells how Yochanan ben Zakkai consoled a disciple at the ruins by citing Hosea 6:6. Christian readers, following Hebrews 9:22, took the verse as the key to the meaning of Christ's death. German scholars Hartmut Gese and Bernd Janowski developed a reading of atonement in Leviticus as the offerer's life given to God through identification with the victim, while evangelical commentators such as Gordon Wenham (Leviticus, 1979) read the verse as teaching substitution, a life for a life.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse explains why blood atones rather than simply asserting that it does: blood is life, and God has appointed life given up on the altar to cover the worshipers' lives. Whether that is best described as substitution, ransom, purification, or identification is debated among Christian and Jewish readers, but all agree the means of atonement is God's gift."
+        },
+        {
+          "id": "salvation",
+          "note": "The emphatic ‘I have given’ makes atonement something God provides before it is something Israel performs. Sacrifice is not a bribe offered upward but a provision handed down."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 9:22",
+          "note": "Hebrews draws on the logic of this verse when it says that under the law almost everything is purified with blood and that there is no forgiveness without the shedding of blood. The writer then argues that animal blood could only point toward the cleansing accomplished by Christ, who entered God's presence by his own blood (Hebrews 9:11-14)."
+        },
+        {
+          "ref": "Romans 3:25",
+          "note": "Paul says God presented Christ as an atoning sacrifice (hilasterion, the Greek word the Septuagint uses for the mercy seat) through faith in his blood. Like Leviticus 17:11, the stress falls on God as the one who provides the means of atonement."
+        }
+      ],
+      "refs": ["Hebrews 9:22", "Romans 3:25", "1 Peter 1:18-19", "Exodus 30:12-16", "Mark 10:45"]
+    },
+    {
+      "v": "12",
+      "context": "The conclusion is drawn from verse 11: because blood has been given for atonement, no one, Israelite or foreigner, may eat it. The verse restates verse 10 as a direct quotation of what God has said, framing the prohibition with its reason on either side.",
+      "grammar": "Al ken, ‘therefore’, links the ban directly to the explanation in verse 11. The verb amarti, ‘I have said’, is a perfect that points back to commands already given (Genesis 9:4; Leviticus 3:17; 7:26-27), so God presents this as a restatement, not a new rule. The ban is phrased with kol nefesh mikkem, ‘any nefesh among you’, one more play on the word that dominates the chapter.",
+      "words": ["H3651C", "H0559", "H5315J", "H1616"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The prohibition protects the meaning of the altar. What God has set apart as the means of atonement cannot also be ordinary food, just as holy things in Leviticus cannot be used for common purposes."
+        }
+      ],
+      "refs": ["Genesis 9:4", "Leviticus 7:26-27", "Deuteronomy 12:23-25"]
+    },
+    {
+      "v": "13",
+      "context": "Wild game cannot be brought to the altar, so the law provides a substitute rite. The hunter must pour out the blood and cover it with earth. The same respect for life that governs the domestic animal at the altar governs the deer in the field.",
+      "grammar": "The hunter's act is described with shafakh, ‘to pour out’, the same verb used in verse 4, where the man who killed away from the altar ‘has shed blood’ (dam shafakh). The repetition is deliberate: in one case the pouring is bloodguilt, in the other it is obedience. Kissahu beafar, ‘he shall cover it with dust’, uses the Piel of kasah. The hunting vocabulary, yatsud tsed, ‘hunts game’, is the word family used of Esau the hunter (Genesis 25:27-28).",
+      "words": ["H6679A", "H6718A", "H8210G", "H3680", "H6083"],
+      "history": "Covering the blood became a commandment in its own right in Jewish law, known as kisui hadam, discussed in the sixth chapter of Mishnah Chullin. Elsewhere in the Bible uncovered blood cries out for justice: Abel's blood cries from the ground (Genesis 4:10), Job asks the earth not to cover his blood (Job 16:18), and Ezekiel condemns Jerusalem for leaving blood exposed on bare rock rather than pouring it on the ground to be covered (Ezekiel 24:7-8).",
+      "theology": [
+        {
+          "id": "creation",
+          "note": "Even outside the sanctuary, life belongs to God. Returning the blood to the ground treats the animal's life as something given back, not simply discarded."
+        }
+      ],
+      "refs": ["Deuteronomy 12:16", "Ezekiel 24:7-8", "Genesis 4:10", "Job 16:18"]
+    },
+    {
+      "v": "14",
+      "context": "The reason is repeated a third time, now as a general statement about all flesh, wild or domestic, and the prohibition is repeated with its penalty. The repetition fixes the principle: whatever the animal and wherever it dies, its blood is its life.",
+      "grammar": "The opening clause is awkward in Hebrew: nefesh kol basar damo venafsho hu, literally ‘the life of all flesh, its blood, in its life it is’. Many grammarians explain the preposition be here as a ‘beth of essence’, a construction in which be marks what something is, giving ‘its blood is its life’; the BSB's \"is its blood\" follows that sense. The second half of the verse states it plainly with no preposition: nefesh kol basar damo hi, ‘the life of all flesh is its blood’. The penalty closes with yikkaret, ‘he shall be cut off’, a Niphal imperfect, returning to the passive form of verses 4 and 9.",
+      "words": ["H5315H", "H1320", "H1818", "H3772I"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The equation of blood and life belongs to Scripture's wider view of living beings as embodied. Life is not treated as a separate spark hidden inside the body but as bound up with the flesh and blood God made."
+        }
+      ],
+      "refs": ["Genesis 9:4", "Deuteronomy 12:23", "Acts 15:29"]
+    },
+    {
+      "v": "15-16",
+      "context": "The last law covers meat from an animal that was not slaughtered at all: one found dead or killed by a predator. Its blood was never drained, so eating it brings impurity. Unlike the earlier laws, the penalty is ritual washing and a day's impurity, and only refusing to wash brings guilt. The chapter ends on a lesser note than it began, distinguishing a defilement that can be washed away from the sins that cut a person off.",
+      "grammar": "Nevelah is a carcass, an animal that died of itself; terefah is an animal torn by a beast. Terefah became the rabbinic term for meat that is ritually unfit, and through Yiddish it gives the word treif for non-kosher food generally. The consequence clause venasa avono, ‘he shall bear his iniquity’, is a formula for carrying the liability for a wrong (Leviticus 5:1; 20:17). The same verb nasa, ‘to bear, carry’, describes the goat carrying Israel's iniquities in Leviticus 16:22.",
+      "words": ["H5038", "H2966", "H0249", "H5375J", "H5771G"],
+      "text": "Deuteronomy 14:21 says Israelites may give an animal that died of itself to the resident foreigner to eat, or sell it to a foreigner, because Israel is a people holy to the LORD. Leviticus 17:15 instead treats the ger like the native, requiring washing if he eats it. Traditional readers harmonize the two by noting that Leviticus prescribes purification, not a ban, and that the laws address different situations; critical scholars generally see different legal traditions with different views of the ger's obligations.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Impurity is not the same as sin. Eating a carcass defiles, but washing and waiting until evening restore cleanness; only refusing the remedy turns impurity into guilt."
+        },
+        {
+          "id": "sin",
+          "note": "‘Bearing iniquity’ describes guilt as a weight the guilty carry. The same language will later describe the servant of Isaiah 53, who bears the iniquities of others (Isaiah 53:11-12)."
+        }
+      ],
+      "refs": ["Exodus 22:31", "Deuteronomy 14:21", "Leviticus 11:39-40", "Leviticus 22:8", "Isaiah 53:11-12"]
+    }
+  ]
+}

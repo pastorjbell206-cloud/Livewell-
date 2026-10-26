@@ -64,9 +64,9 @@ export default function IsCriticalRaceTheoryBiblical() {
             The church did not have a race problem because CRT arrived. CRT simply exposed it.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ margin: "0 0 1.2em" }}>One side saw critical race theory as a Marxist assault and mobilized against it. The other adopted it wholesale and demanded the church confess and dismantle itself. Both responses were panic. Neither was thinking. James Bell refuses both — neither a defense of CRT nor a dismissal of it, but a careful account of what its architects actually claimed and where Scripture both meets and exceeds them.</p>
+            <p style={{ margin: "0 0 1.2em" }}>When critical race theory reached the church, one side saw a Marxist assault on the gospel and mobilized against it. The other adopted it wholesale and asked the church to confess and dismantle itself. Each had a real reason. The first was guarding the sufficiency of Scripture against a framework that seemed built to replace it; the second had watched the church stay quiet about racial injustice for generations and could not bear one more year of the silence. But both reactions were also a kind of panic, and panic does not read carefully. James Bell refuses both. He offers neither a defense of CRT nor a dismissal of it, but a careful account of what its architects actually claimed and where Scripture both meets and exceeds them.</p>
             <p style={{ margin: "0 0 1.2em" }}>The book asks what the Bible actually teaches about race, ethnicity, justice, and the image of God, and how a church built on the gospel of reconciliation became the institution that defended slavery and maintained segregation. It argues the Bible's vision of justice is more searching than CRT, not less.</p>
-            <p style={{ margin: 0, fontWeight: 600 }}>Most people who attack CRT have never read it. This book asks you to think before you choose a side.</p>
+            <p style={{ margin: 0, fontWeight: 600 }}>Read what was actually claimed. Then let Scripture, which asks more of us than any theory does, have the last word.</p>
           </div>
         </div>
       </section>

@@ -1,0 +1,411 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "God speaks for the first time since Jacob returned to Canaan, and he speaks into the wreckage of chapter 34. The command sends Jacob back to the place of his vow (28:20-22) and names God by what he did there: he appeared to a fugitive.",
+      "grammar": "Qum aleh, ‘arise, go up’, is a pair of imperatives that turns a command into urgent action. The verb alah, ‘go up’, fits the geography (Bethel stands higher in the hill country than Shechem) and is also the ordinary verb for going up to worship. God describes himself in the third person as haEl hannireh elekha, ‘the God who appeared to you’, a Niphal participle of raah, ‘see’, which in the Niphal means ‘let oneself be seen’. Bevorchakha, ‘when you were fleeing’, uses barach, the verb Hosea later uses when he recalls that Jacob fled to Aram (Hosea 12:12).",
+      "words": [
+        "H6965B",
+        "H5927G",
+        "H7200G",
+        "H1272"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God does not wait for Jacob to remember his vow; he reminds him of it. The initiative in keeping the covenant relationship alive is God's, even when the human partner has settled for less than he promised."
+        }
+      ],
+      "refs": [
+        "Genesis 28:18-22",
+        "Genesis 31:13",
+        "Hosea 12:12"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Jacob speaks to his whole household, including the servants and perhaps the captives taken at Shechem, and gives three commands. It is the first time Genesis shows Jacob leading his family in worship.",
+      "grammar": "The three imperatives build a single act of preparation. Hasiru, ‘remove’, is a Hiphil (causative) of sur, ‘turn aside’: make the gods turn aside from you. Hittaharu, ‘purify yourselves’, is a reflexive Hithpael of taher, the root of Israel's later purity laws. Hachalifu simlotekhem, ‘change your garments’, marks a new state outwardly. Elohe hannekhar, ‘the gods of foreignness’, is the exact phrase that returns when Joshua (Joshua 24:23) and Samuel (1 Samuel 7:3) call Israel to renew its loyalty.",
+      "words": [
+        "H5493G",
+        "H5236",
+        "H2891",
+        "H2498"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance here is concrete and communal. The household does not only feel differently about other gods; it hands them over, washes, and dresses differently. The same shape recurs at Sinai (Exodus 19:10) and in Israel's later renewals."
+        },
+        {
+          "id": "idolatry",
+          "note": "Jacob's own household has carried foreign gods since Rachel took her father's household gods (31:19). The family of promise needs to be purged of idols before it can meet God, a pattern that runs through Israel's story."
+        }
+      ],
+      "refs": [
+        "Joshua 24:23",
+        "1 Samuel 7:3",
+        "Exodus 19:10",
+        "Genesis 31:19"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Jacob gives the reason for the move in a short confession. The God he is going to worship is the one who answered him in distress and was with him on the road, words that answer the conditions of his vow at Bethel almost point by point.",
+      "grammar": "Venaqumah venaaleh, ‘let us arise and let us go up’, turns God's singular commands of verse 1 into first person plural cohortatives: Jacob takes the whole household with him. HaEl haoneh oti beyom tsarati, ‘the God who answers me in the day of my distress’, uses a participle, describing God by what he characteristically does. The phrase ‘day of distress’ becomes a fixed expression in Israel's prayers (Psalm 20:1, where the parallel line names \"the God of Jacob\"). Vayhi immadi baderekh, ‘and he was with me on the road’, repeats the words of the vow in 28:20.",
+      "words": [
+        "H6030B",
+        "H6869B",
+        "H5978",
+        "H1870L"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jacob's summary of his twenty years is that God answered him when he was in trouble. The prayer of 32:9-12 was heard, and the first thing the answered man does is lead others to worship."
+        }
+      ],
+      "refs": [
+        "Genesis 28:20-21",
+        "Genesis 32:9-12",
+        "Psalm 20:1",
+        "Psalm 46:1"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The household gives up its gods and its earrings, and Jacob buries them under the great tree at Shechem. The city that was the scene of the family's worst deeds becomes the place where its idols are left behind.",
+      "grammar": "Hannezamim asher beoznehem, ‘the rings that were in their ears’, names jewelry that could carry religious meaning; Aaron made the golden calf from the people's earrings (Exodus 32:2-4). Vayyitmon, ‘and he hid’, is taman, a verb for concealing something in the ground, used of Achan hiding the stolen goods in his tent (Joshua 7:21). The idols are not destroyed here but buried out of use. Haelah, ‘the oak’ or ‘the terebinth’, is one of several related words for large trees, and interpreters are not certain which species is meant.",
+      "words": [
+        "H5141",
+        "H0241G",
+        "H2934",
+        "H0424"
+      ],
+      "history": "Shechem had a famous sacred tree. Abraham camped at the great tree of Moreh there (12:6), Joshua set up a covenant stone \"under the oak that was near the sanctuary of the LORD\" at Shechem (Joshua 24:26), and Abimelech was crowned at the oak of the pillar there (Judges 9:6). Whether all these refer to the same tree cannot be known, but Shechem's tree was clearly a landmark for generations.",
+      "refs": [
+        "Genesis 12:6",
+        "Joshua 24:23-26",
+        "Judges 9:6",
+        "Exodus 32:2-4"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The fear Jacob voiced in 34:30 is answered here, without Jacob doing anything. As the family moves, a terror from God keeps the surrounding towns from pursuing.",
+      "grammar": "Chittat Elohim, ‘a terror of God’, uses a noun, chittah, found only here in the Bible, from a root meaning to be shattered or dismayed. The construction ‘terror of God’ may mean a terror that God sends or a very great terror (Hebrew sometimes uses ‘of God’ for the superlative), but in context the first reading is clearly in view. The towns are not said to be friendly; they are simply unable to act.",
+      "words": [
+        "H2847",
+        "H7291",
+        "H5439G"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God protects Jacob's family in spite of what his sons have done, not because of it. Later Israel would meet this divine terror falling on its enemies in the conquest (Exodus 23:27); here it first appears."
+        }
+      ],
+      "refs": [
+        "Genesis 34:30",
+        "Exodus 23:27",
+        "Exodus 15:16",
+        "Joshua 2:9"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "Jacob arrives at Luz, the older name of Bethel, builds the altar he was told to build, and names the place El-bethel. The narrator connects it explicitly to what happened there when he fled.",
+      "grammar": "Verse 7 has a famous grammatical oddity: nigleu elav haElohim, ‘God revealed himself to him’, uses a plural verb (nigleu, ‘they were revealed’) with Elohim as subject. Elohim, when it refers to Israel's God, almost always takes a singular verb. Some interpreters think the plural recalls the angels who were seen ascending and descending at Bethel (28:12); others treat it as an occasional plural agreement, found also in 20:13 and 2 Samuel 7:23. The name El-bethel, ‘the God of Bethel’, names God by the place of meeting, as he named himself in 31:13.",
+      "words": [
+        "H3870H",
+        "H0416",
+        "H1540H",
+        "H0430G"
+      ],
+      "history": "Bethel is usually identified with the village of Beitin, north of Jerusalem on the main ridge road, though some scholars prefer a site at nearby el-Bireh. Bethel later became a royal sanctuary of the northern kingdom, where Jeroboam set up a golden calf (1 Kings 12:28-29), and the prophets condemned the worship there (Amos 4:4, Hosea 10:5).",
+      "refs": [
+        "Genesis 28:12",
+        "Genesis 28:19",
+        "Genesis 31:13",
+        "1 Kings 12:28-29"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "In the middle of the Bethel scene, a burial. Deborah, Rebekah's nurse, who left Haran with Rebekah (24:59), dies and is buried beneath an oak that is named for the weeping.",
+      "grammar": "Meneqet Rivqah, ‘Rebekah's nurse’, is a Hiphil participle of yanaq, ‘to suckle’: a wet nurse who had cared for Rebekah from infancy. Allon Bakhut means ‘oak of weeping’, from bakhah, ‘to weep’. The tree word here is allon, related to elah in verse 4, so the chapter's first movement opens and closes beneath great trees.",
+      "words": [
+        "H3243I",
+        "H0437",
+        "H0439",
+        "H6912"
+      ],
+      "text": "Genesis never records the death of Rebekah herself, and Deborah's death is the only hint of it. Some ancient Jewish interpreters suggested that the weeping included grief for Rebekah; 49:31 later mentions only that she was buried at Machpelah. Deborah appears unnamed in 24:59, and her presence with Jacob here is not explained.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Genesis gives a servant woman a name, a burial, and a place of mourning. The weeping for her is remembered in the name of the place, and the chapter's grief begins here, before the greater losses of Rachel and Isaac."
+        }
+      ],
+      "refs": [
+        "Genesis 24:59",
+        "Genesis 49:31"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "God appears to Jacob ‘again’, recalling the first appearance at Bethel, and blesses him. He then confirms the name given at the Jabbok (32:28), this time without a struggle and without Jacob asking.",
+      "grammar": "Vayyera Elohim el Yaaqov od, ‘and God appeared to Jacob again’: the adverb od, ‘again’, ties this scene to chapter 28. In verse 10 the construction lo yiqqare shimkha od Yaaqov ki im Yisrael, ‘your name will no longer be called Jacob, but rather Israel’, uses the strong contrastive ki im, ‘but rather’. Unlike Abram, who is never called Abram after 17:5, Jacob is still called Jacob throughout the rest of Genesis (even in 35:14). Many commentators think the two names are used deliberately, Israel often appearing where Jacob acts as the head of the future nation.",
+      "words": [
+        "H5750",
+        "H1288",
+        "H7121G",
+        "H3478"
+      ],
+      "text": "Some scholars treat the two namings (32:28 and 35:10) as parallel versions of one tradition preserved side by side; others read the second as God's deliberate confirmation of the first, spoken in daylight at the place of the vow. The narrative as it stands presents it as confirmation.",
+      "refs": [
+        "Genesis 32:28",
+        "Genesis 17:5",
+        "Genesis 28:13-15",
+        "Hosea 12:4"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "God names himself and gives the blessing. It gathers into one sentence the creation blessing (1:28), the promise of nations and kings to Abraham (17:6), and the words Isaac spoke over Jacob as he left (28:3).",
+      "grammar": "Ani El Shaddai, ‘I am God Almighty’, is the self-introduction God used to Abraham in 17:1. The meaning of Shaddai is debated: some connect it with an Akkadian word for mountain, others with the Hebrew word for breast, since the name often stands beside blessings of fertility (as here and in 49:25), and older Jewish tradition read it as ‘the one who is sufficient’. The traditional rendering ‘Almighty’ goes back to ancient Greek and Latin translations. Pereh ureveh, ‘be fruitful and multiply’, is singular here, spoken to one man, where 1:28 is plural. Qehal goyim, ‘an assembly of nations’, uses qahal, the word later used for Israel gathered as a worshiping congregation.",
+      "words": [
+        "H7706",
+        "H6509",
+        "H6951",
+        "H4428G"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The promise of kings, first given to Abraham and Sarah (17:6, 17:16), is now given to Jacob. It narrows the royal hope to his line, and the rest of the Old Testament follows it through Saul of Benjamin and David of Judah."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El Shaddai is the name tied to the patriarchs' promises of offspring (17:1, 28:3, 48:3). Exodus 6:3 says God was known to the fathers by this name, which frames the patriarchal period as a time of promise awaiting the fuller self-revelation of the exodus."
+        }
+      ],
+      "refs": [
+        "Genesis 17:1-6",
+        "Genesis 28:3",
+        "Genesis 48:3-4",
+        "Exodus 6:3"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "The land promise completes God's speech, and then God ‘goes up’ from the place, the same wording used when he finished speaking with Abraham (17:22).",
+      "grammar": "Verse 12 is framed by haarets, ‘the land’, at its start and end. God says the land is one asher natatti, ‘which I gave’, to Abraham and Isaac, a perfect verb for a gift already settled in God's word although neither owned more than a grave and a field, and then promises etnennah, ‘I will give it’, to Jacob and to his offspring. Vayyaal mealav Elohim, ‘and God went up from him’, marks the end of the encounter, as in 17:22.",
+      "words": [
+        "H5414G",
+        "H2233H",
+        "H5927G"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "God speaks of the land as given before it is possessed. Hebrews 11:13 says the patriarchs died without receiving what was promised, having seen it from a distance, and this verse shows why they could live that way."
+        }
+      ],
+      "refs": [
+        "Genesis 17:22",
+        "Genesis 13:15",
+        "Genesis 26:3",
+        "Hebrews 11:13"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Jacob sets up a pillar, pours out a drink offering and oil, and names the place Bethel. The acts repeat those of 28:18-19, now with a drink offering added, as the vow reaches its completion.",
+      "grammar": "Matsevah, ‘a standing stone’, is from the same root as the verb vayyatsev, ‘he set up’. The phrase matsevet aven, ‘a pillar of stone’, adds the material, perhaps to distinguish it from the grave pillar of verse 20. Vayyassekh alehah nesekh, ‘he poured on it a drink offering’, combines a verb and noun from the same root. The phrase ‘the place where God had spoken with him’ is repeated three times in verses 13-15, stressing that this is the place of God's word.",
+      "words": [
+        "H4676",
+        "H5262",
+        "H5258A",
+        "H8081"
+      ],
+      "history": "Standing stones were a common feature of worship in Canaan, and archaeologists have found them at many sites, including the small Iron Age sanctuary at Arad in the Negev. Israel's law later forbade them (Deuteronomy 16:22) because of their place in Canaanite religion. Genesis reports the patriarchs' practice without applying the later law to it, and Jacob's four pillars (28:18, 31:45, 35:14, 35:20) all mark meetings, covenants, or graves.",
+      "refs": [
+        "Genesis 28:18-19",
+        "Genesis 31:45",
+        "Deuteronomy 16:22",
+        "Philippians 2:17"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "On the road south from Bethel, Rachel goes into hard labor. The midwife's words of comfort, ‘another son’, answer the prayer Rachel spoke when Joseph was born (30:24).",
+      "grammar": "Kivrat haarets, ‘a stretch of the land’, is a measure of distance whose length is unknown; it recurs in 48:7 and 2 Kings 5:19. Vatteqash belidtah, ‘she had hard labor’, is a Piel of qashah, ‘to be hard’, and verse 17 repeats the root in the Hiphil. Hammeyalledet, ‘the midwife’, is a Piel participle of yalad, ‘one who helps bring to birth’. Her words, gam zeh lakh ben, ‘this also is a son for you’, pick up Rachel's naming of Joseph: ‘May the LORD add to me another son’.",
+      "words": [
+        "H3530",
+        "H7185",
+        "H3205",
+        "H3372G"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Rachel once cried, \"Give me children, or I will die\" (30:1). She is given the son she asked for, and she dies bearing him. Genesis does not explain the grief; it records the answered prayer and the loss side by side."
+        }
+      ],
+      "refs": [
+        "Genesis 30:1",
+        "Genesis 30:24",
+        "1 Samuel 4:19-20",
+        "Genesis 3:16"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Dying, Rachel names her son Ben-oni; Jacob renames him Benjamin. The father's name overrides the mother's, and the last son of Jacob enters the world between a death and a new name.",
+      "grammar": "Betset nafshah, ‘as her life was going out’, uses nefesh, here meaning life or breath, as the explanatory clause ki metah, ‘for she was dying’, makes clear. Ben-oni can mean ‘son of my sorrow’ (from aven, trouble or grief) or ‘son of my strength’ (from on, vigor), the second being the sense of the same word in 49:3, where Reuben is reshit oni, \"the beginning of my strength\". Binyamin means ‘son of the right hand’, the hand of favor and strength, though since Hebrew orientation faced east, ‘right’ can also mean ‘south’.",
+      "words": [
+        "H5315G",
+        "H1126",
+        "H1144G",
+        "H4191"
+      ],
+      "history": "Letters from Mari, on the Euphrates, in the eighteenth century BC mention a tribal group whose name means ‘sons of the right’, that is, of the south, alongside a group called ‘sons of the left’ or north. The parallel shows that such a name was natural in the ancient Semitic world; it does not connect Benjamin's tribe to that group.",
+      "refs": [
+        "Genesis 49:3",
+        "Genesis 49:27",
+        "Psalm 80:17",
+        "Philippians 3:5"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "Rachel is buried by the road to Ephrath, and Jacob marks the grave with a pillar. The chapter note discusses where that grave lay; the verse itself stresses that it was known and visited in the narrator's own day.",
+      "grammar": "Vattiqqaver, ‘and she was buried’, is a Niphal, the same form used of Deborah in verse 8. Matsevet qevurat Rachel, ‘the pillar of Rachel's grave’, uses a chain of construct nouns. Ad hayyom, ‘to this day’, is a narrator's formula that speaks from a later time, telling first readers that the marker could still be seen.",
+      "words": [
+        "H6912",
+        "H1035G",
+        "H4678",
+        "H6900"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Rachel's tomb became a place where Israel remembered her as a mother weeping for her children. Jeremiah hears her weeping at the exile and hears God promise that her children will come back (Jeremiah 31:15-17); Matthew applies the lament to the grief at Bethlehem (Matthew 2:18)."
+        }
+      ],
+      "refs": [
+        "Genesis 48:7",
+        "1 Samuel 10:2",
+        "Jeremiah 31:15-17",
+        "Matthew 2:18"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "The family moves on and camps beyond Migdal Eder. For the first time the narrator calls Jacob ‘Israel’ in his own voice, and he will do so often from here on.",
+      "grammar": "Vayyissa Yisrael, ‘and Israel set out’, is the first place where the narrator, rather than God or a character, calls Jacob by his new name. Migdal Eder means ‘tower of the flock’, a watchtower for guarding sheep. Mehalah, ‘beyond’, is an adverb of direction meaning farther on from a point.",
+      "words": [
+        "H3478",
+        "H4029",
+        "H1973",
+        "H5186"
+      ],
+      "history": "The location of Migdal Eder is unknown, though the narrative places it between Bethlehem and Hebron. Micah 4:8 addresses Jerusalem as \"watchtower of the flock\", using the same Hebrew phrase, and the Aramaic Targum Pseudo-Jonathan, a later Jewish paraphrase, identifies Migdal Eder in this verse as the place where the Messiah would be revealed at the end of days.",
+      "refs": [
+        "Micah 4:8"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Reuben lies with Bilhah, his father's concubine and the mother of two of his brothers. Israel hears, and the narrative says nothing more. The same verse then begins the list of the twelve sons.",
+      "grammar": "Vayyelekh Reuven vayyishkav et Bilhah, ‘Reuben went and lay with Bilhah’, uses the same verb shakhav as 34:2, with the object marker instead of the usual ‘with’. Pilegesh, ‘concubine’, is a secondary wife of lower status. Vayyishma Yisrael, ‘and Israel heard’, ends the report abruptly. The closing clause, vayyihyu vene Yaaqov shenem asar, ‘and the sons of Jacob were twelve’, uses the name Jacob again for the list.",
+      "words": [
+        "H7901I",
+        "H6370",
+        "H8085G",
+        "H1090A"
+      ],
+      "text": "Hebrew manuscripts mark a paragraph break in the middle of this verse, after ‘Israel heard’, while the verse division runs on. The Septuagint adds a clause after ‘Israel heard’, saying the matter seemed evil in his sight, which spells out the reaction the Hebrew leaves unstated.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The firstborn's act is recorded in a single line and judged decades later: Jacob's last words strip Reuben of preeminence (49:4), and Chronicles notes that his birthright passed to Joseph's sons (1 Chronicles 5:1). Scripture's silence is not approval."
+        }
+      ],
+      "refs": [
+        "Genesis 49:3-4",
+        "1 Chronicles 5:1",
+        "2 Samuel 16:21-22",
+        "Leviticus 18:8"
+      ]
+    },
+    {
+      "v": "23-26",
+      "context": "The twelve sons are listed by their mothers: Leah's six, Rachel's two, Bilhah's two, Zilpah's two. The list closes Jacob's family story and sets the tribal framework for the rest of the Bible.",
+      "grammar": "The list groups the sons by mother, not by birth order, so that Rachel's two sons stand together after Leah's six and the maidservants' sons come last. Reuben is still called bekhor Yaaqov, ‘Jacob's firstborn’, one verse after his sin: the title is a fact of birth, and its privileges will be lost later. The summary asher yullad lo beFaddan Aram, ‘who were born to him in Paddan-aram’, uses a Pual (passive) verb and covers the group as a whole, although Benjamin has just been born in Canaan.",
+      "words": [
+        "H1060",
+        "H8198",
+        "H3205",
+        "H6307"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The twelve are named as a set, children of four mothers and of a divided household, and every one becomes a tribe of Israel. God's choosing does not wait for a tidy family; it forms a people out of the one that exists."
+        }
+      ],
+      "refs": [
+        "Genesis 29:31-30:24",
+        "Exodus 1:1-5",
+        "Revelation 21:12"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "Jacob comes home to his father Isaac at Mamre near Hebron, where Abraham and Isaac had lived. The son who left under threat returns to the father he deceived.",
+      "grammar": "Kiryat haArba, ‘Kiriath-arba’, is glossed by the narrator as Hebron, one of several places in this chapter given an old and a current name (Luz and Bethel, Ephrath and Bethlehem). Gar, ‘sojourned’, is from the verb that gives ger, ‘resident alien’: Abraham and Isaac lived there as foreigners without full rights to the land, even at the family's center.",
+      "words": [
+        "H7153",
+        "H2275A",
+        "H1481A",
+        "H4471G"
+      ],
+      "history": "Hebron lies in the Judean hills south of Jerusalem. Joshua 14:15 explains the older name as the city of Arba, a great man among the Anakim. The cave of Machpelah, where Abraham buried Sarah (chapter 23), was near Mamre, and Isaac will be buried there.",
+      "refs": [
+        "Genesis 23:2",
+        "Genesis 13:18",
+        "Joshua 14:15",
+        "Hebrews 11:9"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "Isaac dies at 180, and Esau and Jacob bury him together, as Isaac and Ishmael buried Abraham (25:9). The brothers' last scene together is a graveside, and the rivalry that began in the womb ends in a shared duty.",
+      "grammar": "The death formula echoes Abraham's in 25:8. Vayyigva, ‘he breathed his last’, vayyamot, ‘and he died’, and vayyeasef el ammav, ‘and he was gathered to his people’. Zaqen useva yamim, ‘old and full of days’, uses the adjective for being satisfied, a phrase used of a completed life (Job 42:17, 1 Chronicles 29:28). Esau is named before Jacob as the burying sons, in the natural order of their birth.",
+      "words": [
+        "H1478",
+        "H0622",
+        "H7649",
+        "H6912"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Being ‘gathered to his people’ is a different act from burial, which follows it, and the phrase is used even of those buried far from their fathers. Many interpreters see in it an early sign of belief in continued existence with the ancestors, which Jesus draws on when he calls God the God of Abraham, Isaac, and Jacob, the God of the living (Matthew 22:32)."
+        },
+        {
+          "id": "family",
+          "note": "The brothers who were rivals from birth stand together at their father's grave. It is not a full reconciliation of their lines, which will stay at odds for centuries, but it is peace enough to bury a father together."
+        }
+      ],
+      "refs": [
+        "Genesis 25:8-9",
+        "Genesis 49:29-31",
+        "Matthew 22:31-32",
+        "Job 42:17"
+      ]
+    }
+  ]
+}

@@ -2,6 +2,9 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { isPublicEssay } from "@/lib/shelf";
+
+const FULL_ESSAY = "silence-abuse-church";
 
 const FAQ_ITEMS = [
   {
@@ -17,12 +20,12 @@ const FAQ_ITEMS = [
   {
     question: "What causes religious trauma?",
     answer:
-      "Religious trauma is caused by the misuse of religious authority and the structural features of high-control religious environments. The most common causes include authoritarian leadership -- systems where the pastor or religious leader claims divine authority for personal decisions, demands unquestioning obedience, and treats disagreement as rebellion against God. Purity culture -- the framework that reduces human sexuality to a binary of purity and defilement, ties personal worth to sexual behavior, and produces devastating shame in people who fail to meet impossible standards. Fear-based theology -- the systematic use of hell, divine punishment, and apocalyptic terror to enforce compliance, particularly when directed at children. Spiritual abuse -- the manipulation of people through their faith, including the misuse of confession, the weaponization of forgiveness (telling abuse survivors they must forgive their abusers in order to be right with God), and the silencing of victims to protect institutional reputation. Social isolation and shunning -- the practice of cutting off relationships with people who leave, question, or are expelled from the community, which produces a form of grief without death. Information control -- the restriction of outside perspectives, the demonization of secular education, and the treatment of intellectual curiosity as spiritual danger. These are not fringe experiences. They are structural features of certain religious systems, and they produce predictable, measurable harm. The church did not intend to create trauma. But intention does not determine impact.",
+      "Religious trauma is caused by the misuse of religious authority and the structural features of high-control religious environments. The most common causes include authoritarian leadership -- systems where the pastor or religious leader claims divine authority for personal decisions, demands unquestioning obedience, and treats disagreement as rebellion against God. Purity culture -- the framework that reduces human sexuality to a binary of purity and defilement, ties personal worth to sexual behavior, and produces devastating shame in people who fail to meet impossible standards. Fear-based theology -- the systematic use of hell, divine punishment, and apocalyptic terror to enforce compliance, particularly when directed at children. Spiritual abuse -- the manipulation of people through their faith, including the misuse of confession, the weaponization of forgiveness (telling abuse survivors they must forgive their abusers in order to be right with God), and the silencing of victims to protect institutional reputation. Social isolation and shunning -- the practice of cutting off relationships with people who leave, question, or are expelled from the community, which produces a form of grief without death. Information control -- the restriction of outside perspectives, the demonization of secular education, and the treatment of intellectual curiosity as spiritual danger. These are not fringe experiences. They are structural features of certain religious systems, and they produce predictable, measurable harm. Most of the people who built these systems did not set out to wound anyone. The wounds are real regardless, and they are counted by what was done to the person, not by what the leaders meant.",
   },
   {
     question: "Is religious trauma a real psychological condition?",
     answer:
-      "Religious Trauma Syndrome is not currently a standalone diagnosis in the DSM-5 (the Diagnostic and Statistical Manual of Mental Disorders), which is the standard classification system used by mental health professionals. However, this does not mean it is not real. Many forms of recognized suffering -- burnout, moral injury, complex grief -- existed long before they received formal diagnostic categories. The symptoms of religious trauma are well-documented in clinical literature and are typically diagnosed under existing categories: post-traumatic stress disorder (PTSD), complex PTSD (C-PTSD), anxiety disorders, depression, and adjustment disorders. Research by psychologists including Marlene Winell, Laura Anderson, and Darrel Ray has documented the specific characteristics that distinguish religious trauma from other forms of psychological harm. The American Psychological Association has published materials acknowledging the psychological impact of authoritarian religious environments. Therapists who specialize in religious trauma report consistent patterns across clients from different religious backgrounds -- evangelical, Catholic, fundamentalist Protestant, Jehovah's Witness, Mormon, ultra-Orthodox Jewish, and others. The consistency of the pattern across traditions suggests that the trauma is produced by structural features of high-control religion rather than by any specific theology. The question of whether religious trauma is \"real\" is usually asked by people who have never experienced it. For those who have, the question answers itself. The clinical evidence supports what survivors already know: this is real, it is measurable, and it requires specialized treatment.",
+      "Religious Trauma Syndrome is not currently a standalone diagnosis in the DSM-5 (the Diagnostic and Statistical Manual of Mental Disorders), which is the standard classification system used by mental health professionals. However, this does not mean it is not real. Many forms of recognized suffering -- burnout, moral injury, complex grief -- existed long before they received formal diagnostic categories. The symptoms of religious trauma are well-documented in clinical literature and are typically diagnosed under existing categories: post-traumatic stress disorder (PTSD), complex PTSD (C-PTSD), anxiety disorders, depression, and adjustment disorders. Research by psychologists including Marlene Winell, Laura Anderson, and Darrel Ray has documented the specific characteristics that distinguish religious trauma from other forms of psychological harm. The American Psychological Association has published materials acknowledging the psychological impact of authoritarian religious environments. Therapists who specialize in religious trauma report consistent patterns across clients from different religious backgrounds -- evangelical, Catholic, fundamentalist Protestant, Jehovah's Witness, Mormon, ultra-Orthodox Jewish, and others. The consistency of the pattern across traditions suggests that the trauma is produced by structural features of high-control religion rather than by any specific theology. The question of whether religious trauma is \"real\" is a fair one, and it deserves a straight answer rather than a dismissal. A careful person is right to ask whether a term that sits outside the diagnostic manual names something clinicians can actually observe, or whether it dresses ordinary disappointment in a heavier word. The clinical evidence answers the question, and it supports what survivors already know: this is real, it is measurable, and it requires specialized treatment.",
   },
   {
     question: "How do you heal from religious trauma?",
@@ -94,7 +97,7 @@ export default function WhatIsReligiousTrauma() {
           What is religious trauma?
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          The church caused this. A pastor names it, examines it, and refuses to look away.
+          Churches did this. Not every church, but the systems that did it are not rare, and a pastor who loves the church has to say so. This page names it, examines it, and refuses to look away.
         </p>
       </section>
 
@@ -119,20 +122,23 @@ export default function WhatIsReligiousTrauma() {
         </div>
       </section>
 
-      <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
-        <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>GO DEEPER</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Read the full essay</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
-            The full article examines what the church did, why it happened, and what repair looks like -- without minimizing the damage or letting the institution off the hook.
-          </p>
-          <Link href="/writing/silence-abuse-church" style={{ textDecoration: "none" }}>
-            <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
-              Read the full article
-            </span>
-          </Link>
-        </div>
-      </section>
+      {/* The full essay, shown only while it is on the public shelf (lib/shelf.ts). */}
+      {isPublicEssay(FULL_ESSAY) && (
+        <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
+          <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>GO DEEPER</p>
+            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Read the full essay</h2>
+            <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
+              The full article examines what the church did, why it happened, and what repair looks like -- without minimizing the damage or letting the institution off the hook.
+            </p>
+            <Link href={`/writing/${FULL_ESSAY}`} style={{ textDecoration: "none" }}>
+              <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
+                Read the full article
+              </span>
+            </Link>
+          </div>
+        </section>
+      )}
 
       <section style={{ background: "var(--bone-warm)", padding: "64px 24px" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto" }}>

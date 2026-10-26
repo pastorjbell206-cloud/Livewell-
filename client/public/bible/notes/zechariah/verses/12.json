@@ -1,0 +1,121 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The second ‘burden’ of Zechariah 9-14 begins, matching 9:1. Before any promise is made, the speaker is identified as the creator of heaven, earth, and the human spirit. Everything that follows about Jerusalem's rescue and its people's grief rests on that identity.",
+      "grammar": "The three descriptions of God are participles: noteh, ‘stretching out’, yosed, ‘founding’, yotser, ‘forming’. Hebrew participles describe characteristic or ongoing action, so God is presented as the one who stretches, founds, and forms, not merely as the one who once did. Yotser is the verb of Genesis 2:7, where God forms the man, and ruach adam beqirbo, ‘the spirit of man within him’, reaches into the inner life that verse 10 will show God changing. Ne'um YHWH, ‘declaration of the LORD’, is the prophets' standard formula of divine speech.",
+      "words": ["H4853B", "H5002", "H5186", "H3245", "H3335G", "H7307G"],
+      "theology": [
+        { "id": "creation", "note": "God's creative work includes the human spirit. The one who formed it is able to renew it, which is exactly what verse 10 promises: a new spirit poured out on the house of David and Jerusalem." }
+      ],
+      "refs": ["Isaiah 42:5", "Isaiah 44:24", "Genesis 2:7", "Zechariah 9:1"]
+    },
+    {
+      "v": "2",
+      "context": "God will make Jerusalem a cup that sends the surrounding nations reeling. The siege is real, but those who try to drink Jerusalem down will stagger.",
+      "grammar": "Hinneh anokhi sam, ‘behold, I am making’, is a participle of imminent action, God's own announcement of what he is about to do. Saf ra'al is ‘a basin of reeling’: saf can mean a bowl or basin (Exodus 12:22) and also a threshold (Isaiah 6:4), though ‘cup’ fits the image of intoxication. The last clause, vegam al Yehudah yihyeh vamatsor al Yerushalayim, is ambiguous. The BSB takes it as ‘Judah too will be besieged’. It can also mean ‘and it will be against Judah too, in the siege against Jerusalem’, which some ancient and medieval Jewish readers understood as Judah being forced to join the besiegers. Zechariah 14:14 has the same ambiguity.",
+      "words": ["H2009", "H7760A", "H5592A", "H7478", "H4692"],
+      "theology": [
+        { "id": "judgment", "note": "The cup of reeling is the prophets' image for God's judgment (Isaiah 51:17-23; Jeremiah 25:15-29). Once Jerusalem drank it; now the nations that attack Jerusalem will. God's judgment is not reserved for his people alone." }
+      ],
+      "refs": ["Isaiah 51:17-23", "Jeremiah 25:15-17", "Zechariah 14:14", "Psalm 75:8"]
+    },
+    {
+      "v": "3",
+      "context": "A second image: Jerusalem as a heavy stone. When all the nations gather against the city, whoever tries to heave it away will be torn by it. The phrase ‘on that day’, which runs through the chapter, appears here for the first time.",
+      "grammar": "Even ma'amasah, ‘a stone of burden’, uses a noun that occurs only here, from amas, ‘to load, carry’. Kol omeseha sarot yissaretu, ‘all who lift it will surely gash themselves’, pairs an infinitive absolute with a finite verb of the same root (sarat), the Hebrew way of intensifying: they will be badly cut. Sarat means to scratch or gash; Leviticus 21:5 uses it for cuts in the flesh.",
+      "words": ["H0068G", "H4614", "H6006", "H8295", "H0622"],
+      "history": "Jerome, in his commentary on Zechariah (about AD 406), explained the image from a custom he knew in Judea: large round stones lay in the towns and villages, and young men tested their strength by lifting them as high as they could. He adds that he had seen a heavy bronze ball used for the same purpose at Athens. Whether or not the prophet had such a contest in mind, the picture is of a weight that injures those who try to lift it.",
+      "refs": ["Zechariah 14:2", "Joel 3:2", "Ezekiel 38:8-9", "Isaiah 8:14-15"]
+    },
+    {
+      "v": "4",
+      "context": "God strikes the enemy's cavalry with panic, madness, and blindness, while he opens his own eyes on Judah. The nations' military strength is disabled at its source.",
+      "grammar": "The three nouns timmahon, ‘panic’, shigga'on, ‘madness’, and 'ivvaron, ‘blindness’, are exactly the three curses of Deuteronomy 28:28, which threatened Israel with “madness, blindness, and confusion of mind” if it broke the covenant. Zechariah turns the covenant curses away from Israel and onto its attackers. The contrast within the verse is deliberate: God strikes the horses with blindness ('ivvaron) but opens (efqach) his own eyes on the house of Judah.",
+      "words": ["H8541", "H7697", "H5788A", "H6491", "H5483M"],
+      "theology": [
+        { "id": "covenant", "note": "The curses Moses warned would fall on a disobedient Israel now fall on the nations that attack it. The reversal assumes that the covenant's judgment on Israel has run its course and that God now acts as its defender." }
+      ],
+      "refs": ["Deuteronomy 28:28", "2 Kings 6:18", "Exodus 14:24-25", "Zechariah 14:13"]
+    },
+    {
+      "v": "5-6",
+      "context": "The clan leaders of Judah recognize that Jerusalem's strength comes from the LORD, and God makes them like fire among wood and sheaves, consuming the surrounding peoples, while Jerusalem stays secure in its place.",
+      "grammar": "Allufei Yehudah, ‘the leaders (or clans) of Judah’, is the same word discussed at 9:7. The phrase amtsah li yoshvei Yerushalayim is difficult Hebrew, literally ‘strength to me are the inhabitants of Jerusalem’; the BSB follows it, and some scholars adjust one letter to read ‘I have found strength for the inhabitants of Jerusalem’. Either way the reason is the same: the strength comes ‘by the LORD of Hosts their God’. Kiyyor esh, ‘a pot of fire’, uses the word for the bronze laver of the tabernacle (Exodus 30:18), here a pan of live coals; lappid esh be'amir, ‘a torch of fire among sheaves’, recalls Samson's torches in the Philistines' grain (Judges 15:4-5).",
+      "words": ["H0441B", "H0556", "H3595", "H3940", "H5995"],
+      "theology": [
+        { "id": "faith", "note": "The leaders' confession is that the city's strength lies in its God. Military success is credited not to Judah's fighters or Jerusalem's walls but to the LORD of Hosts, the point of the whole chapter." }
+      ],
+      "refs": ["Judges 15:4-5", "Obadiah 1:18", "Zechariah 14:10-11", "Psalm 46:5"]
+    },
+    {
+      "v": "7",
+      "context": "God will save the tents of Judah first, so that neither the royal house nor the capital can boast over the countryside. The rescue itself is arranged to prevent pride.",
+      "grammar": "Barishonah, ‘at the first’, fixes the order of salvation. The purpose clause lema'an lo tigdal tif'eret... al Yehudah, ‘so that the splendor... will not be great over Judah’, uses tif'eret, ‘glory, splendor, pride’, which can be good (beauty) or bad (boasting). ‘The tents of Judah’ is a poetic term for the unwalled towns and villages, contrasted with walled Jerusalem.",
+      "words": ["H3467", "H0168G", "H7223G", "H8597", "H1004M"],
+      "history": "Tension between Jerusalem's leading families and the rural population of Judah runs through Israel's history, from Absalom's appeal to the countryside (2 Samuel 15:1-6) to the complaints Nehemiah heard about nobles and officials exploiting the poor (Nehemiah 5:1-13). Micah, a man from the country town of Moresheth, had spoken against Jerusalem's rulers in the same spirit (Micah 3:9-12).",
+      "theology": [
+        { "id": "salvation", "note": "God orders his rescue so that the least protected are saved first and the privileged cannot claim the glory. Paul describes the same pattern when he says God chose what is weak so that no one may boast before him (1 Corinthians 1:27-29)." }
+      ],
+      "refs": ["1 Corinthians 1:27-29", "Micah 3:9-12", "Nehemiah 5:1-5", "Luke 1:52"]
+    },
+    {
+      "v": "8",
+      "context": "God shields Jerusalem so completely that its weakest becomes like David the warrior and the house of David becomes like God, like the angel of the LORD going before them. The verse escalates each step.",
+      "grammar": "Hannikhshal, ‘the one who stumbles’, is a Niphal participle: the feeble, the one whose feet give way. He will be kedavid, ‘like David’, the giant-killer. The house of David will be ke'lohim, ‘like God’, and then, as if the prophet draws back from so bold a claim, kemal'akh YHWH lifneihem, ‘like the angel of the LORD before them’. The angel of the LORD went before Israel in the exodus (Exodus 14:19; 23:20). The comparison also recalls courtiers who praised David as being like the angel of God in wisdom and discernment (1 Samuel 29:9; 2 Samuel 14:17, 20; 19:27).",
+      "words": ["H1598", "H3782", "H1732", "H0430G", "H4397H"],
+      "theology": [
+        { "id": "messiah", "note": "The promise that the house of David will be ‘like God, like the angel of the LORD’ is the highest thing said of David's line in the prophets. Christians have read it in light of the Son of David who is God with us (Matthew 1:23), while the verse itself speaks of the dynasty's restored strength." }
+      ],
+      "refs": ["Exodus 23:20", "Exodus 14:19", "2 Samuel 14:17", "Isaiah 40:29-31", "Joel 3:10"]
+    },
+    {
+      "v": "9",
+      "context": "A summary of the first half: on that day God will set out to destroy every nation that comes against Jerusalem. The military deliverance is complete, and the chapter is ready to turn inward.",
+      "grammar": "Avaqqesh lehashmid, literally ‘I will seek to destroy’, uses biqqesh, ‘to seek’, in the sense of setting oneself to do something, as when Pharaoh ‘sought’ to kill Moses (Exodus 2:15). With God as subject it expresses purpose and determination rather than uncertain effort.",
+      "words": ["H1245", "H8045", "H1471A"],
+      "theology": [
+        { "id": "judgment", "note": "God's defense of Jerusalem is framed as judgment on nations that attack it. The deliverance of verses 1-9, however, is only the outward half of the chapter; the inward rescue of verse 10, grief and cleansing, is what the victory is for." }
+      ],
+      "refs": ["Zechariah 14:3", "Haggai 2:22", "Isaiah 29:7-8"]
+    },
+    {
+      "v": "10",
+      "context": "The hinge of the chapter and one of the most discussed verses in the prophets. God pours on the royal house and the city a spirit of grace and supplication; they look to him, the one they pierced, and they mourn for him as for an only child and a firstborn. Victory over the nations turns into grief over what Jerusalem itself has done.",
+      "grammar": "Veshafakhti, ‘I will pour out’, is the verb of Joel 2:28 and Ezekiel 39:29 for pouring out God's Spirit. Ruach chen vetachanunim, ‘a spirit of grace and supplication’, joins two nouns from the same root, chanan, ‘to be gracious’: grace received produces pleading for grace. Ruach may mean the Holy Spirit or a disposition God creates; both readings have wide support. The central clause, vehibbitu elai et asher-daqaru, is literally ‘and they will look to me, the one whom they pierced’. Et asher can mark the object (‘the one whom’) or mean ‘concerning the one whom’, which allows ‘they will look to me concerning him whom they pierced’. Daqar is a violent verb, used of running someone through with a spear or sword (Numbers 25:8; 1 Samuel 31:4). Then the pronoun shifts: vesafdu alav, ‘and they will mourn for him’. The movement from ‘me’ to ‘him’ is the crux. Yachid, ‘only child’, is the word for Isaac in Genesis 22:2, and bekhor, ‘firstborn’, the child whose death ends a family's hope (Amos 8:10; Jeremiah 6:26).",
+      "words": ["H8210G", "H7307G", "H2580", "H8469", "H5027", "H1856", "H5594", "H3173", "H1060"],
+      "text": "The standard Hebrew text reads ‘to me’ (elai). Some medieval Hebrew manuscripts read ‘to him’ (elav), probably an attempt to smooth the shift in person, and most scholars accept ‘to me’ as original because it is both better attested and harder. The Septuagint reads ‘they will look to me because they danced in triumph’ (katōrchēsanto), apparently reading raqadu, ‘they danced’, for daqaru, ‘they pierced’, with two letters transposed; this also avoids saying that God was pierced. John's Gospel (19:37), Revelation (1:7), and later Greek revisions of the Septuagint (Symmachus among them) use verbs meaning ‘pierce’, agreeing with the Hebrew. The Jewish Publication Society's translation (1985) renders the clause ‘they shall lament to Me about those who are slain’.",
+      "history": "Jewish tradition has read the pierced one in several ways. The Babylonian Talmud (b. Sukkah 52a) records a dispute: one view applies the mourning to the Messiah son of Joseph, a figure who dies in the final battle before the victory of the Messiah son of David; the other applies it to the evil inclination, slain in the age to come. The same passage uses verse 12 to argue that men and women should be kept apart at festive gatherings, since they are separate even in mourning. Rashi (eleventh century) explains the verse as Israel looking to God in lament over those the nations killed, and mentions the Messiah son of Joseph in his comment on Sukkah. Christian readers from the Gospel of John onward have read it as a prophecy of Jesus, God come in the flesh, pierced on the cross, which accounts for the move from ‘me’ to ‘him’.",
+      "nt": [
+        { "ref": "John 19:37", "note": "When the soldier pierces Jesus' side instead of breaking his legs, John cites two Scriptures: no bone broken (Exodus 12:46; Psalm 34:20) and “They will look on the One they have pierced.” John's Greek, opsontai eis hon exekentēsan, follows the Hebrew daqar (‘pierce’) against the Septuagint's ‘danced’, and turns the first person ‘me’ into ‘the One’, the third person the Hebrew itself uses in the next clause. In context the lookers are the witnesses at the cross, and John's remark that the eyewitness testifies ‘so that you also may believe’ (19:35) suggests he sees the looking as the beginning of faith." },
+        { "ref": "Revelation 1:7", "note": "Revelation combines Daniel 7:13 with this verse: “Behold, He is coming with the clouds, and every eye will see Him—even those who pierced Him. And all the tribes of the earth will mourn because of Him.” Zechariah's families of the land become ‘all the tribes of the earth’, and the mourning is placed at Christ's return. Jesus had already joined the same two texts in Matthew 24:30: “all the tribes of the earth will mourn. They will see the Son of Man coming on the clouds of heaven”. Interpreters differ on whether the mourning is repentance, as in Zechariah, or the grief of judgment, or both." }
+      ],
+      "theology": [
+        { "id": "spirit", "note": "The grief that leads to cleansing (13:1) does not begin with the people; it begins when God pours out his Spirit. Repentance is presented as God's gift before it is the people's act, the pattern of Acts 2, where Peter's hearers are cut to the heart after the Spirit is poured out." },
+        { "id": "incarnation", "note": "God speaks of himself as the one pierced and then of ‘him’ for whom they mourn. Christians have seen in this shift a glimpse of one who is identified with God and yet distinct, pierced in a human body, a reading made possible, though not proven, by the text's own grammar." },
+        { "id": "repentance", "note": "The people's repentance takes the form of grief over the one they wounded, as intense as a parent's grief for an only child. Biblical repentance here is sorrow directed toward a person, not merely regret for consequences." }
+      ],
+      "refs": ["Joel 2:28", "Ezekiel 39:29", "Genesis 22:2", "Acts 2:36-37", "Zechariah 13:1"]
+    },
+    {
+      "v": "11",
+      "context": "The mourning in Jerusalem will be as great as the mourning of Hadad-rimmon in the plain of Megiddo, the greatest lament the land remembered.",
+      "grammar": "Yigdal hammisped, ‘the mourning will be great’, uses misped, the word for formal lament with wailing and beating the breast, three times in verses 10-11. Bevik'at Megiddon, ‘in the plain of Megiddo’, uses a longer spelling of Megiddo found only here.",
+      "words": ["H4553", "H1910", "H1237K", "H4023"],
+      "history": "The reference is obscure. The Aramaic Targum of the Prophets explains it as two mournings: for Ahab, killed at Ramoth-gilead (the Targum names his killer Hadadrimmon son of Tabrimmon), and for Josiah, killed at Megiddo by Pharaoh Neco in 609 BC (2 Kings 23:29-30). The Talmud (b. Megillah 3a; b. Moed Qatan 28b) cites that Targum and remarks that without it the verse would not be understood. Many modern scholars take Josiah's death as the reference, since Chronicles says all Judah mourned him and the singers lamented him to that day (2 Chronicles 35:24-25). Jerome identified Hadad-rimmon as a town near Jezreel called Maximianopolis in his day. Others suggest a ritual lament for the storm god Hadad, also called Rimmon (2 Kings 5:18), though no such rite is known at Megiddo.",
+      "refs": ["2 Chronicles 35:22-25", "2 Kings 23:29-30", "2 Kings 5:18", "Revelation 16:16"]
+    },
+    {
+      "v": "12-14",
+      "context": "The mourning reaches every clan, each family apart and the women apart from the men: the royal house of David and its branch through Nathan, the priestly house of Levi and its branch through Shimei, and all the rest. Royal and priestly leadership lead the grief, and no one mourns by proxy.",
+      "grammar": "The word levad, ‘alone, apart’, occurs eleven times in three verses, and mishpachot mishpachot, ‘clans, clans’, repeats the noun to mean ‘clan by clan’. The repetition makes the grief individual: each family carries its own. The pairing of David with Nathan and Levi with Shimei moves from the head of a line to a branch within it, so that both the main houses and their subordinate families are included.",
+      "words": ["H5594", "H4940", "H0905H", "H5416G", "H3878", "H8097", "H0802H"],
+      "history": "Nathan was a son of David born in Jerusalem (2 Samuel 5:14), and Luke traces Jesus' genealogy through him (Luke 3:31). Shimei was a son of Gershon and grandson of Levi, head of a Levitical clan (Numbers 3:17-21). The separation of men and women in mourning matches ancient practice in which women had their own role as lamenters (Jeremiah 9:17-20).",
+      "theology": [
+        { "id": "repentance", "note": "Repentance is corporate and personal at once: the whole land mourns, yet each family mourns apart. The leaders are named first, so those most responsible for the nation's direction lead the confession." },
+        { "id": "atonement", "note": "The mourning of chapter 12 opens directly onto the promise of 13:1, a fountain opened for the house of David and Jerusalem to cleanse them from sin and impurity. Grief over the pierced one and cleansing from sin belong to the same day." }
+      ],
+      "refs": ["2 Samuel 5:14", "Luke 3:31", "Numbers 3:17-21", "Zechariah 13:1", "Jeremiah 9:17-20"]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The narrator leaves Joseph on his way to Egypt (37:36) and follows Judah, the brother who proposed the sale. The chapter opens with Judah separating himself from his family, and the next chapter opens with Joseph separated from his by force. Both brothers go down, and the story will ask what each becomes away from home.",
+      "grammar": "The verb is vayyered, ‘and he went down’, from yarad. It is a geographical term (from the hill country toward the lower Shephelah), but in this stretch of Genesis it is also a thematic one: Jacob has just said he will ‘go down’ to Sheol mourning (37:35), and 39:1 begins with Joseph ‘brought down’ to Egypt, a passive (Hophal) form of the same verb. The second verb, vayyet, ‘he turned aside’ (natah), returns in verse 16 when Judah turns aside to the woman by the road, so the chapter's first and decisive moves are described with the same word.",
+      "words": ["H3381", "H5186"],
+      "history": "Adullam was a town in the Shephelah, the foothills west of the Judean highlands; Joshua 15:35 lists it among the towns of Judah's foothill district, and it later gave its name to the cave where David hid from Saul (1 Samuel 22:1). Hirah is known only from this chapter. His description as an Adullamite marks him as a local, not a member of Jacob's clan.",
+      "refs": ["Genesis 37:35", "Genesis 39:1", "Joshua 15:35", "1 Samuel 22:1"]
+    },
+    {
+      "v": "2",
+      "context": "Judah marries the daughter of a Canaanite. The brief sequence of saw, took, and went in to her gives the marriage no courtship and no blessing, and it sets Judah against the family pattern: Abraham made his servant swear not to take a Canaanite wife for Isaac (24:3), and Isaac sent Jacob away rather than let him marry one (28:1).",
+      "grammar": "The verbs vayyar (‘he saw’) and vayyiqqacheha (‘he took her’) are the same pair that describe the sons of God in 6:2 and Shechem with Dinah in 34:2. Genesis often uses seeing and taking to mark desire acting without restraint. The woman herself is never named; she is only ‘the daughter of Shua’ (verse 12), and the Chronicler turns that description into a name, Bath-shua, which means ‘daughter of Shua’ (1 Chronicles 2:3).",
+      "words": ["H7200G", "H3947I", "H3669A"],
+      "refs": ["Genesis 24:3", "Genesis 28:1", "Genesis 34:2", "1 Chronicles 2:3"]
+    },
+    {
+      "v": "3-5",
+      "context": "Three sons are born in quick succession, the first named by Judah and the next two by their mother. The note that the third was born at Chezib closes the family's founding and, like many small place notes in Genesis, may carry more weight than it first seems.",
+      "grammar": "In verse 3 the verb for naming is masculine (vayyiqra, ‘he called’), while in verses 4 and 5 it is feminine (vattiqra, ‘she called’). Genesis lets either parent name a child, but the shift quietly moves Judah to the edge of his own household. Verse 5 opens with vattosef, ‘she again’, a Hiphil of yasaf used idiomatically for doing something once more. The final clause, vehayah bikhziv, is unusual Hebrew for ‘and he was at Chezib’, a background comment set off from the main line of the story.",
+      "words": ["H7121H", "H3254G", "H3580"],
+      "history": "Chezib is usually identified with Achzib in the Shephelah, listed among Judah's towns in Joshua 15:44 near Keilah and Mareshah. The name comes from a root meaning to lie or disappoint, and Micah later plays on it: “the houses of Achzib will prove deceptive” (Micah 1:14). Many commentators hear a hint of that meaning here, since Shelah, born at Chezib, is the son Judah will falsely promise to Tamar. Shelah's descendants later included ‘the men of Cozeba’ (1 Chronicles 4:21-22), probably the same place.",
+      "refs": ["Joshua 15:44", "Micah 1:14", "1 Chronicles 4:21-22", "Numbers 26:20"]
+    },
+    {
+      "v": "6-7",
+      "context": "Judah arranges a marriage for his firstborn with Tamar, whose family is not given. Er's death follows immediately and is stated without explanation: the narrator reports the LORD's verdict and its execution, but not the offense.",
+      "grammar": "Er's name (ער) and the word ‘evil’ (ra, רע) are made of the same two Hebrew letters in reverse order, a wordplay most commentators accept as deliberate: Er was ra. The phrase bee'ene YHWH, ‘in the eyes of the LORD’, measures the evil by God's sight rather than by public reputation. The verb for his death is a Hiphil of mut, ‘caused to die’, with the LORD as the explicit subject.",
+      "words": ["H6147G", "H7451H", "H4191"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "This is the first time Genesis attributes the death of a single named person directly to the LORD. The God who seems absent from the rest of the chapter is present as judge at its start, and the chapter's later turns happen under his sight even when he is not named."
+        },
+        {
+          "id": "judgment",
+          "note": "The text does not say what Er did. It is enough for the narrator that God saw it and judged it, which leaves the reader with a God who evaluates what no human court has examined."
+        }
+      ],
+      "refs": ["1 Chronicles 2:3", "Genesis 6:5", "Genesis 13:13"]
+    },
+    {
+      "v": "8",
+      "context": "Judah commands his second son to take up the levirate duty, the custom by which a brother fathered a son to carry the dead man's name and inheritance. The command states its purpose plainly: offspring for his brother, not for himself.",
+      "grammar": "Judah gives three imperatives: bo (‘go in’), yabbem (‘perform the brother-in-law's duty’), and haqem (‘raise up’). Yabbem is a Piel of a verb formed from the noun yabam, ‘husband's brother’, so the verb itself names the family role. Zera, ‘offspring’ or ‘seed’, is one of the key words of Genesis, carrying the promise from 3:15 through 12:7 and 22:17-18. Here the promise language is at stake in a single household: will this line have a seed or not.",
+      "words": ["H2992", "H6965I", "H2233H"],
+      "history": "The later law of Deuteronomy 25:5-10 describes the same obligation and its purpose, that the firstborn “will carry on the name of the dead brother” (Deuteronomy 25:6), and it provides a public ceremony of shame for a brother who refuses. Ruth 4 shows a broader form of the duty passing to a more distant relative. Genesis 38 is the Bible's earliest narrative of the custom, before any written law regulated it.",
+      "refs": ["Deuteronomy 25:5-10", "Ruth 4:5", "Ruth 4:10", "Matthew 22:24"]
+    },
+    {
+      "v": "9-10",
+      "context": "Onan goes through the motions of the duty while making sure it will never succeed. The narrator gives his reason, that the child would not be his, and the LORD judges what he did as evil, exactly as he judged Er.",
+      "grammar": "The construction vehayah im ba, ‘and it would be, whenever he went in’, uses a consecutive perfect with a conditional to describe repeated action, which is why the BSB says “whenever”. This was not a single lapse but a settled pattern. The verb for what he did, shichet, is a Piel of shachat, ‘to ruin’ or ‘to destroy’, the verb used when all flesh “had corrupted” its way before the flood (6:12). Verse 10 opens with vayyera, ‘and it was evil’, from the same root as ra in verse 7, binding the two deaths together.",
+      "words": ["H7843", "H1961", "H7489A"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The text names Onan's motive: he knew the offspring would not belong to him. His sin combines greed (a son for Er would reduce his own inheritance), deception (he appeared to fulfill the duty), and contempt for a widow's claim. It is a sin committed in the privacy of a household and judged by God as fully as public violence."
+        },
+        {
+          "id": "judgment",
+          "note": "The phrase “He put Onan to death as well” sets the two sons side by side. The chapter's first lesson is that the LORD takes the family's obligations to a vulnerable widow seriously enough to judge their violation with death."
+        }
+      ],
+      "refs": ["Genesis 6:12", "Deuteronomy 25:7-10", "Exodus 22:22-24"]
+    },
+    {
+      "v": "11",
+      "context": "Judah sends Tamar home to her father with a promise about Shelah, and the narrator immediately lets us hear what Judah is really thinking. The reader knows from verses 7 and 10 that the LORD killed the sons for their own evil; Judah privately blames her.",
+      "grammar": "The clause ki amar, literally ‘for he said’, introduces inner speech, rendered “For he thought”. Hebrew narrative often reports thought as speech to oneself, and here it exposes the gap between Judah's public promise and his private intention. The conjunction pen, ‘lest’, expresses fear of a consequence to be avoided. The command shevi almanah, ‘remain a widow’, puts her status in the imperative: she is ordered to stay in a condition, not simply in a place.",
+      "words": ["H0559", "H6435", "H0490"],
+      "history": "A widow returning to her father's house appears elsewhere in the Old Testament as an ordinary course (Leviticus 22:13 assumes it for a priest's widowed daughter, and Naomi urges her daughters-in-law to go home in Ruth 1:8). Tamar's position is different: she is sent home while still bound to Judah's family by the promise of Shelah, so she cannot remarry, yet she has no husband in the house that owes her one.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The law repeatedly names the widow among those God defends (Exodus 22:22, Deuteronomy 10:18). Judah's delay leaves Tamar with neither support nor freedom, and the rest of the chapter turns on the question of who will do right by her."
+        }
+      ],
+      "refs": ["Leviticus 22:13", "Ruth 1:8", "Deuteronomy 10:18", "Exodus 22:22"]
+    },
+    {
+      "v": "12",
+      "context": "Time passes, Judah's wife dies, and Judah finishes mourning. The trip to the shearing at Timnah sets up the scene by the road; the note that he had been comforted also tells the reader that Shelah has grown up and the promise is still unkept.",
+      "grammar": "Vayyirbu hayyamim, ‘and the days became many’, is an idiom for a long time. Vayyinnachem, ‘and he was comforted’, is a Niphal of nacham. The contrast with 37:35 is sharp: when his sons tried to comfort Jacob, he ‘refused to be comforted’ over Joseph, using the same root. Judah, who helped cause his father's endless grief, is comforted within the span of a verse.",
+      "words": ["H7235A", "H5162G"],
+      "history": "Sheep-shearing was a working festival with feasting and drink, which is why Nabal's shearing in 1 Samuel 25 includes a feast, and why Absalom chooses his shearing festival to have Amnon killed (2 Samuel 13:23-29). There was more than one Timnah in Judah: one in the hill country (Joshua 15:57) and one on the northern border near the Sorek valley (Joshua 15:10), the town of Samson's wife in Judges 14. Which one is meant here is uncertain.",
+      "refs": ["Genesis 37:35", "1 Samuel 25:2-8", "2 Samuel 13:23", "Joshua 15:57"]
+    },
+    {
+      "v": "13-14",
+      "context": "Tamar hears the news and acts at once. The narrator slows to list what she does, then stops to give her reason: Shelah has grown up, and she has not been given to him. The reason turns what follows from lust or trickery into a claim of justice she cannot press any other way.",
+      "grammar": "Four quick verbs in sequence describe her action: vattasar (‘she removed’, Hiphil of sur), vattekhas (‘she covered’, Piel of kasah), vattitallaf (‘she wrapped herself’, a Hithpael, the reflexive stem), and vatteshev (‘she sat’). The reflexive underlines that she is the one acting. The word for veil, tsaif, appears in Genesis only here, in verse 19, and when Rebekah covers herself on meeting Isaac (24:65). The place name, Enaim, means ‘two springs’ or ‘two eyes’, so ‘the entrance of Enaim’ can also be heard as ‘the opening of the eyes’, an irony in a scene where Judah does not see who is in front of him.",
+      "words": ["H5493G", "H5968", "H6809", "H5879G"],
+      "history": "Enaim is probably the Enam listed in Joshua 15:34 among the towns of the Shephelah, in the same district as Adullam (15:35), which fits a road from Adullam up toward Timnah.",
+      "refs": ["Genesis 24:65", "Joshua 15:34", "Genesis 38:26"]
+    },
+    {
+      "v": "15",
+      "context": "Judah sees a veiled woman at a roadside and takes her for a prostitute. The verse gives his reasoning in his own terms, and the reader, who knows who she is, watches his eyes fail.",
+      "grammar": "Vayyachshevehah lezonah, ‘he reckoned her as a prostitute’, uses chashav, the verb that in 15:6 describes God reckoning Abraham's faith as righteousness. The same verb here describes a human misjudgment. Zonah is a Qal participle of zanah, the ordinary word for a woman who sells sex, and it is the word the narrator uses in Judah's thoughts.",
+      "words": ["H2803J", "H2181", "H3680"],
+      "history": "The link between the veil and prostitution is not simple. A Middle Assyrian law collection from the late second millennium BC required married women to be veiled in public and forbade prostitutes to veil. If similar customs held in Canaan, the veil hid Tamar's identity rather than advertising her trade, and it was her place by the road that suggested what she was. Interpreters differ on this, and customs varied from region to region.",
+      "refs": ["Genesis 15:6", "Proverbs 7:10-12"]
+    },
+    {
+      "v": "16",
+      "context": "Judah turns aside and asks for her, and she answers with a question about payment. The verse is almost entirely dialogue, and the narrator inserts one clause between the speakers: he did not know she was his daughter-in-law.",
+      "grammar": "Judah's opening word, havah, is an imperative of yahav, ‘give’, used idiomatically as ‘come’. It is the same expression that begins ‘Come, let us build’ at Babel (11:3-4). The narrator's aside, ki lo yada, ‘for he did not know’, uses yada, which in verse 26 will describe Judah not knowing her sexually again. The chapter opens and closes Judah's contact with Tamar with the verb of knowing.",
+      "words": ["H3051", "H3045"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Judah's sin here is his own, whatever Tamar's plan. The narrator does not excuse him for not recognizing her; he intended to use a woman he took to be a stranger, and he is the one who initiates."
+        }
+      ],
+      "refs": ["Genesis 11:3-4", "Proverbs 6:26"]
+    },
+    {
+      "v": "17-18",
+      "context": "Judah offers a young goat. Tamar asks for a pledge until it arrives and names the items: his seal, its cord, and his staff. He hands over, without thinking, the things that identify him, and she conceives.",
+      "grammar": "The word for pledge, eravon, occurs in the Old Testament only in this chapter. It comes from arav, ‘to stand surety’, the verb Judah will use of himself when he offers to guarantee Benjamin's safety: “I will guarantee his safety” (43:9) and “your servant guaranteed the boy's safety” (44:32). The man who here hands over a pledge he means to reclaim later offers himself as the pledge. The Greek translation of the Old Testament, the Septuagint, renders eravon with arrabon, the same word Paul uses for the Spirit as God's ‘pledge’ or down payment on what he has promised (2 Corinthians 1:22, Ephesians 1:14).",
+      "words": ["H6162", "H2368", "H6616", "H4294G"],
+      "history": "Seals were common across the ancient Near East. A cylinder or stamp seal was carved with its owner's design and impressed in clay to sign documents and mark property; many have been found in excavations in Israel and its neighbors. A seal worn on a cord could hang at the neck. Handing it over was like surrendering a signature, which is why a royal seal later passes from Pharaoh to Joseph (41:42).",
+      "refs": ["Genesis 43:9", "Genesis 44:32", "2 Corinthians 1:22", "Ephesians 1:14", "Genesis 41:42"]
+    },
+    {
+      "v": "19",
+      "context": "Tamar leaves, takes off the veil, and puts her widow's clothes back on. The verse reverses verse 14 action by action, and the effect is that she vanishes: the woman at Enaim no longer exists.",
+      "grammar": "The chiastic reversal is visible in the vocabulary. In verse 14 she ‘removed’ (sur) the garments of widowhood and put on the veil; here she ‘removed’ (sur) the veil and ‘put on’ (lavash) the garments of widowhood. The phrase bigde almenutah, ‘the garments of her widowhood’, frames the whole episode.",
+      "words": ["H5493G", "H3847", "H0491"],
+      "refs": ["Genesis 38:14", "Genesis 37:34"]
+    },
+    {
+      "v": "20-21",
+      "context": "Judah sends his friend with the goat to recover the pledge, but the woman cannot be found. Hirah asks the local men using a different word for her, and they answer that no such woman has been there.",
+      "grammar": "The goat is sent beyad reehu, ‘by the hand of his friend’, to take the pledge miyyad haishah, ‘from the hand of the woman’. The hands keep passing things back and forth, and the pledge is still in the wrong one. Hirah's term is qedeshah, from the root qadash, ‘holy’ or ‘set apart’, where the narrator and Judah's thoughts used zonah. Hirah may be choosing a word he thinks more respectable in public.",
+      "words": ["H3027G", "H6948"],
+      "history": "Deuteronomy 23:17-18 uses qadesh and qedeshah alongside zonah in a law forbidding such practices in Israel and the offering of a prostitute's wages at the temple, and Hosea 4:14 pairs the words in parallel lines. What exactly a qedeshah was is debated: older scholarship assumed ritual prostitution at shrines, while many recent scholars think the evidence for that institution is thin and that the word designates a woman of a certain religious or social status whose connection with prostitution is unclear.",
+      "refs": ["Deuteronomy 23:17-18", "Hosea 4:14"]
+    },
+    {
+      "v": "22-23",
+      "context": "Hirah reports failure, quoting the men of the place word for word. Judah decides to let the matter drop, because pressing the search would make him look foolish. His concern is his reputation, not what he has done.",
+      "grammar": "Judah's reason is pen nihyeh lavuz, ‘lest we become a contempt’. Buz is public scorn, the kind of ridicule that follows a man who has been swindled by a roadside woman. His self-justification begins with hinneh, ‘look’: “After all, I did send her this young goat”, and he sets his own action against Hirah's with an emphatic pronoun, veattah, ‘but you’, as though the failure were someone else's. The irony is that his debt to Tamar in the matter of Shelah has not been paid.",
+      "words": ["H0937", "H2009", "H7971G"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Judah treats the goat as the only obligation that matters, and he treats being laughed at as the only danger. The verse shows how sin tends to concern itself with image and to overlook the wrong done to another person."
+        }
+      ],
+      "refs": ["Genesis 37:31", "Proverbs 20:25"]
+    },
+    {
+      "v": "24",
+      "context": "Three months on, Tamar's pregnancy becomes known, and Judah is told she has been unfaithful. His verdict is immediate and absolute. The man who could not find a prostitute a few verses ago has no hesitation in condemning one.",
+      "grammar": "The report uses the verb zanetah, ‘she has played the harlot’, and adds hareh liznunim, ‘pregnant by harlotry’. The accusation repeats the root zanah twice. Judah answers in two words in Hebrew: hotsiuha (‘bring her out’, a Hiphil plural imperative) and vetissaref (‘and let her be burned’, a Niphal). There is no inquiry, no witness, no question about the father.",
+      "words": ["H2181", "H2183", "H3318H", "H8313"],
+      "history": "The law of Moses prescribes burning in only a few cases, among them a priest's daughter who “defiles herself by prostituting herself” (Leviticus 21:9) and a man who marries both a woman and her mother (Leviticus 20:14). The penalty for adultery by a betrothed woman in Deuteronomy 22:23-24 is stoning. Judah's sentence assumes Tamar is still bound to his family as Shelah's promised wife, and that he, as head of the clan, holds judicial authority over her.",
+      "refs": ["Leviticus 21:9", "Leviticus 20:14", "Deuteronomy 22:23-24", "John 8:3-7"]
+    },
+    {
+      "v": "25",
+      "context": "As she is being led out, Tamar sends the pledge to Judah with a message. She does not name him; she names the objects and asks him to examine them. The decision about whether to confess is left to him.",
+      "grammar": "The verse begins with a noun clause, hi mutset, ‘she was being brought out’, a Hophal participle: the action is already under way when her message arrives. Her words haker na, ‘please examine’, are a Hiphil imperative of nakar, exactly the words the brothers used when they sent Jacob Joseph's bloodied robe (37:32). The seal here is chotemet, a feminine form of the noun used in verse 18, and the cord has become plural (petilim), small variations within a deliberate echo.",
+      "words": ["H3318H", "H5234A", "H2858", "H6616"],
+      "history": "Jewish tradition drew a lesson from Tamar's choice to speak privately rather than accuse Judah before the crowd. The Babylonian Talmud cites her as the source of the teaching that one should accept even death by fire rather than shame another person in public.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The pledge Judah handed over carelessly becomes the evidence that saves three lives, Tamar's and the twins she carries. God's purposes work here through a detail Judah forgot and a woman he had written off."
+        }
+      ],
+      "refs": ["Genesis 37:32-33", "Genesis 42:7-8", "Matthew 18:15"]
+    },
+    {
+      "v": "26",
+      "context": "Judah recognizes his belongings and speaks against himself. It is the first time in Genesis that one of Jacob's sons openly confesses a wrong against someone else, and it is the hinge on which Judah's story turns.",
+      "grammar": "Tsadeqah mimmenni is a Qal perfect of tsadaq with the preposition min. Min can be comparative (‘more righteous than I’) or exclusive (‘she is in the right, not I’), and translators divide between the two; either way the verdict clears her and convicts him. The reason follows with ki al ken, ‘for, because’, and names the specific failure: not giving her to Shelah. The closing clause, velo yasaf od ledatah, ‘he did not again know her’, uses yada for sexual relations and shows that the confession is accompanied by a change in conduct.",
+      "words": ["H6663", "H4480A", "H5234A", "H3045"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Judah's confession has the elements the Bible later looks for in repentance: he admits the fault publicly, names the specific wrong, and stops the behavior. The same man will later offer himself as a slave for Benjamin (44:33), which shows the confession was not a single moment of embarrassment."
+        },
+        {
+          "id": "justification",
+          "note": "The verb tsadaq here is a courtroom word: to be in the right in a dispute. Judah declares Tamar in the right with respect to her claim on his family. Genesis thus uses ‘righteous’ for faithfulness to a relationship's obligations, a sense the rest of Scripture builds on."
+        }
+      ],
+      "refs": ["Genesis 44:18-34", "1 Samuel 24:17", "Psalm 51:3-4", "Luke 18:13-14"]
+    },
+    {
+      "v": "27",
+      "context": "The birth scene begins with a surprise: twins. The verse echoes, almost word for word, the birth of Jacob and Esau, and the reader is prepared for another contest between brothers.",
+      "grammar": "Vehinneh teomim bevitnah, ‘and behold, twins in her womb’, repeats the phrasing of 25:24, where the BSB renders it “there were indeed twins in her womb.” The particle hinneh moves the reader into the moment of discovery. Scribal tradition preserves a small difference: the word for twins is spelled more fully here than in 25:24.",
+      "words": ["H2009", "H8380", "H0990H"],
+      "refs": ["Genesis 25:24-26"]
+    },
+    {
+      "v": "28",
+      "context": "One child puts out a hand first, and the midwife marks it with a scarlet thread to settle the question of the firstborn. In a family where the rights of the firstborn have been contested from Cain to Jacob, she tries to make the matter certain.",
+      "grammar": "The midwife is hameyalledet, a Piel participle of yalad, ‘the one who helps birth’, the same term used at Rachel's death in labor (35:17). Shani, ‘scarlet’, names a dye made from insects, used for costly cloth; it will recur in the tabernacle fabrics (Exodus 26:1) and in the cord Rahab ties in her window (Joshua 2:18). The verb yatsa rishonah, ‘he came out first’, is the midwife's formal declaration.",
+      "words": ["H3205", "H8144", "H7223G"],
+      "refs": ["Genesis 35:17", "Genesis 25:25", "Joshua 2:18"]
+    },
+    {
+      "v": "29-30",
+      "context": "The marked child pulls his hand back, and his brother breaks out ahead of him. The one who was declared first is born second. The chapter ends with two names, and the story returns to Joseph in Egypt.",
+      "grammar": "The midwife's exclamation, mah paratsta alekha parets, is literally ‘What a breach you have breached for yourself’, the verb and the noun from the same root. The name Perez, ‘breach’, comes straight from it. Zerah is usually connected with zarach, ‘to rise’ or ‘to shine’, as the sun does at dawn, and some interpreters link it with the bright scarlet on his wrist. The naming verb vayyiqra, ‘one called’, has no named subject in either verse.",
+      "words": ["H6555", "H6556", "H6557", "H2226I"],
+      "history": "Both sons founded clans of Judah (Numbers 26:20). The Perezites became the dominant line, through Hezron to Boaz and David (Ruth 4:18-22, 1 Chronicles 2:4-15). Zerah's line appears later in a darker light: Achan, whose theft brought disaster on Israel at Ai, was “the son of Zerah, of the tribe of Judah” (Joshua 7:1).",
+      "theology": [
+        {
+          "id": "election",
+          "note": "Again the younger comes before the older, as with Jacob and Esau and later Ephraim and Manasseh (48:14). God's choice of the line runs past the arrangements people make to secure the firstborn's place, even the thread tied on a wrist."
+        },
+        {
+          "id": "messiah",
+          "note": "Perez stands in the royal line that leads to David, and Matthew names him in the genealogy of Jesus (Matthew 1:3). The Messiah's line passes through this breach."
+        }
+      ],
+      "refs": ["Ruth 4:18-22", "1 Chronicles 2:4-5", "Joshua 7:1", "Matthew 1:3", "Genesis 48:14"]
+    }
+  ]
+}

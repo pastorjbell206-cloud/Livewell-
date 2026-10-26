@@ -1,0 +1,1057 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The first of two Sabbath controversies. Walking through grainfields, the disciples pluck heads of grain, rub them between their hands, and eat. Luke alone mentions the rubbing, the detail that makes the act look like threshing.",
+      "grammar": "Etillon, ‘they were plucking’, and ēsthion, ‘they were eating’, are imperfects of ongoing action as they walked. Psōchontes tais chersin, ‘rubbing with their hands’, uses psōchō, found only here in the New Testament, for rubbing husks off kernels. Sporimōn, ‘sown fields’, is a general word; the season of ripe grain places the scene in late spring, between the barley harvest near Passover and the wheat harvest near Pentecost.",
+      "words": [
+        "G4521",
+        "G1279",
+        "G4702",
+        "G5089",
+        "G3101",
+        "G2068",
+        "G4719",
+        "G5597",
+        "G5495"
+      ],
+      "text": "Where modern editions read simply ‘on a Sabbath’, Codex Alexandrinus, Codex Bezae, and the Byzantine text read en sabbatō deuteroprōtō, ‘on the second-first Sabbath’ (so the King James Version: ‘the second sabbath after the first’). The word occurs nowhere else in Greek literature, and the earliest manuscripts, including Papyrus 75, Codex Sinaiticus, and Codex Vaticanus, lack it. Its meaning baffled the ancient church: Jerome (Letter 52.8) tells how he asked his teacher Gregory of Nazianzus to explain it, and Gregory joked that he would explain it in church, where the congregation's applause would force Jerome to understand. Suggested meanings include the first Sabbath after the second day of Passover, when the counting of the fifty days to Pentecost began with the offering of the first sheaf (Leviticus 23:10-16). Bruce Metzger's Textual Commentary suggests instead that it arose from copyists' marginal notes counting the Sabbaths in these chapters (4:31 and 6:6), later merged into one word. Since the omission has the earlier support and the addition is so hard to explain as original, most editors omit it.",
+      "parallels": [
+        "Mark 2:23",
+        "Matthew 12:1"
+      ],
+      "refs": [
+        "Deuteronomy 23:25",
+        "Leviticus 23:10-16",
+        "Exodus 34:21"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Some Pharisees challenge the disciples directly. The charge is not theft, since the Law allowed a traveler to pluck grain by hand from a neighbor's field, but Sabbath-breaking: the plucking and rubbing count as harvest work.",
+      "grammar": "Ti poieite ho ouk exestin, ‘why are you doing what is not lawful?’, addresses the disciples in the plural; in Mark 2:24 the Pharisees ask Jesus about his disciples. Exestin, ‘it is permitted’, is the legal term that becomes the keyword of both controversies (verses 2, 4, 9). Tines tōn Pharisaiōn, ‘some of the Pharisees’, is a small but fair qualification: Luke does not make the whole party the accuser.",
+      "words": [
+        "G5100",
+        "G5330",
+        "G4160G",
+        "G1832",
+        "G4521"
+      ],
+      "history": "Deuteronomy 23:25 permits plucking ears of grain by hand in a neighbor's field but not putting a sickle to it. The Sabbath command forbade work, and Exodus 34:21 applies it even in plowing and harvest. The Mishnah's list of thirty-nine categories of forbidden work includes reaping, threshing, and winnowing (m. Shabbat 7:2), and plucking and rubbing could be classed under them. The Damascus Document from Qumran (CD 10:22-23) was stricter still: on the Sabbath one should eat only food prepared beforehand and not eat what is lying in the field.",
+      "parallels": [
+        "Mark 2:24",
+        "Matthew 12:2"
+      ],
+      "refs": [
+        "Deuteronomy 23:25",
+        "Exodus 20:8-11",
+        "Exodus 34:21",
+        "Luke 13:14"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus answers from Scripture with the story of David eating the consecrated bread. If David and his men could eat what was reserved for priests when they were hungry, the rule of holy things bends to human need, and to the one greater than David.",
+      "grammar": "Oude touto anegnōte, ‘have you not even read this?’, is a sharp question to experts in the text. Hōs, ‘how’, introduces the retelling. Artous tēs protheseōs, ‘loaves of the setting-out’, is the Septuagint's phrase for the bread of the Presence, the twelve loaves set before the LORD. Labōn, ‘taking’, is in the best manuscripts and stresses David's action. Ho ouk exestin phagein ei mē monous tous hiereis repeats exestin from verse 2: David did what was ‘not lawful’, and Scripture records it without condemnation.",
+      "words": [
+        "G0314",
+        "G1138",
+        "G3983",
+        "G3624G",
+        "G0740",
+        "G4286",
+        "G2983",
+        "G1832",
+        "G2409"
+      ],
+      "ot": [
+        {
+          "ref": "1 Samuel 21:1-6",
+          "note": "Fleeing Saul, David comes to Ahimelech the priest at Nob and asks for bread; the only bread is the holy bread, and the priest gives it on condition that the young men have kept themselves from women. First Samuel 21:6 says the bread had just been removed from before the LORD and replaced with hot bread. Since Leviticus 24:8 required the loaves to be replaced every Sabbath, later rabbinic tradition inferred that David's visit fell on a Sabbath. Luke, like Matthew, omits Mark's reference to Abiathar as high priest (Mark 2:26), which does not match 1 Samuel's Ahimelech."
+        },
+        {
+          "ref": "Leviticus 24:5-9",
+          "note": "Twelve loaves of fine flour were set in two rows on the golden table before the LORD every Sabbath as an everlasting covenant, and then eaten by Aaron and his sons in a holy place, as most holy. The loaves are called ‘bread of the Presence’ (Exodus 25:30) and in the Septuagint artoi tēs protheseōs. Jesus' argument does not deny their holiness; it shows that Scripture itself honored David's exception."
+        }
+      ],
+      "text": "Codex Bezae, a Greek and Latin manuscript copied about AD 400, moves verse 5 to follow verse 10 and puts in its place a saying found in no other manuscript. On the same day, it reports, Jesus saw a man working on the Sabbath and told him that if he knew what he was doing he was blessed, but if he did not know, he was cursed and a transgressor of the law. The saying makes knowledge the dividing line: the one who works on the Sabbath out of true understanding of its Lord is free, the careless one is guilty. It is universally regarded as an addition to Luke. Some have thought it might preserve an old independent tradition, while Jason Robert Combs (Journal for the Study of the New Testament, 2019) argued that it arose in later Christian polemic over Sabbath observance.",
+      "parallels": [
+        "Mark 2:25-26",
+        "Matthew 12:3-4"
+      ],
+      "refs": [
+        "1 Samuel 21:1-6",
+        "Leviticus 24:5-9",
+        "Exodus 25:30",
+        "Matthew 12:5-7",
+        "Hosea 6:6"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The saying that closes the scene moves from precedent to person. The Son of Man is Lord of the Sabbath: the one who gave the day has authority to interpret it.",
+      "grammar": "Kurios estin tou sabbatou ho huios tou anthrōpou places kurios, ‘Lord’, first for emphasis: ‘Lord of the Sabbath is the Son of Man’. Elegen, an imperfect, ‘he was saying’, often introduces a climactic saying in Luke. Luke, like Matthew, omits Mark's preceding saying that the Sabbath was made for man and not man for the Sabbath (Mark 2:27), so the argument rests entirely on Jesus' authority.",
+      "words": [
+        "G3004G",
+        "G2962G",
+        "G4521",
+        "G5207",
+        "G0444"
+      ],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The Sabbath is not abolished but placed under its Lord. Luke's Jesus keeps the Sabbath in the synagogue (4:16) and claims the right to say what it is for."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Sabbath was God's own day (‘a Sabbath to the LORD your God’, Exodus 20:10). To call himself its Lord is to claim a place Israel's Scriptures reserve for God."
+        }
+      ],
+      "parallels": [
+        "Mark 2:27-28",
+        "Matthew 12:8"
+      ],
+      "refs": [
+        "Exodus 20:10",
+        "Genesis 2:2-3",
+        "Luke 5:24",
+        "Mark 2:27",
+        "Hebrews 4:9-10"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "On another Sabbath, in a synagogue, a man with a withered right hand is present. Luke alone specifies the right hand, the hand of work and of greeting.",
+      "grammar": "Egeneto de en heterō sabbatō, ‘on another Sabbath’, sets up a paired scene. Hē cheir autou hē dexia ēn xēra, ‘his right hand was dry’: xēros means dry or withered, describing a hand wasted or paralyzed.",
+      "words": [
+        "G2087",
+        "G4521",
+        "G4864",
+        "G1321",
+        "G5495",
+        "G1188",
+        "G3584"
+      ],
+      "history": "Jerome, commenting on Matthew 12:13, reports that the gospel used by the Nazarenes and Ebionites described this man as a mason, who asked Jesus to restore his hand so that he would not have to beg for his food. The detail is legendary, but it captures what a withered right hand meant for a laborer.",
+      "ot": [
+        {
+          "ref": "1 Kings 13:4-6",
+          "note": "When King Jeroboam stretched out his hand against the man of God at Bethel, it withered (the Septuagint uses xērainō, the verb related to Luke's xēra) so that he could not draw it back, and it was restored when the prophet prayed. The story shows the power to wither and to restore as belonging to God; Luke does not cite it, but a reader of the Greek Bible would recognize the vocabulary."
+        }
+      ],
+      "parallels": [
+        "Mark 3:1",
+        "Matthew 12:9-10"
+      ],
+      "refs": [
+        "1 Kings 13:4-6",
+        "Luke 13:10-11",
+        "Luke 14:1-2"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The scribes and Pharisees watch Jesus to see whether he will heal on the Sabbath, so that they can accuse him. The man's need is incidental to them; Jesus is the target.",
+      "grammar": "Paretērounto, an imperfect middle, ‘they were watching closely for themselves’, carries a hostile sense of lying in wait; Luke uses the same verb when Jesus is watched at a Pharisee's meal (14:1) and when spies are sent (20:20). Ei ... therapeuei, ‘whether he heals’, uses a present indicative in an indirect question, as if the habit were already known. Hina heurōsin katēgorein, ‘so that they might find grounds to accuse’, states their purpose.",
+      "words": [
+        "G3906",
+        "G1122",
+        "G5330",
+        "G2323",
+        "G2147",
+        "G2723"
+      ],
+      "parallels": [
+        "Mark 3:2",
+        "Matthew 12:10"
+      ],
+      "refs": [
+        "Luke 14:1",
+        "Luke 20:20",
+        "Luke 11:53-54",
+        "Luke 23:2"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "Jesus knows their thoughts and brings the man into the middle of the room. The healing will not happen in a corner; the question will be faced in public.",
+      "grammar": "Ēdei tous dialogismous autōn, ‘he knew their reasonings’, echoes 5:22 and Simeon's prophecy (2:35). Egeire kai stēthi eis to meson, ‘get up and stand in the middle’, uses a present imperative (‘rise’) and an aorist (‘stand’). Luke repeats the man's obedience in the same words (anastas estē, ‘rising he stood’), a simple act of faith before a hostile audience.",
+      "words": [
+        "G1492I",
+        "G1261",
+        "G0435G",
+        "G3584",
+        "G5495",
+        "G1453",
+        "G2476",
+        "G3319",
+        "G0450"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Luke again shows Jesus knowing hidden thoughts (5:22, 9:47, 11:17), a knowledge the Old Testament ascribes to God, who searches the heart (1 Samuel 16:7; Jeremiah 17:10)."
+        }
+      ],
+      "refs": [
+        "Luke 5:22",
+        "Luke 2:35",
+        "Jeremiah 17:10",
+        "1 Samuel 16:7"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Jesus turns the accusation into a question: is it lawful on the Sabbath to do good or to do harm, to save a life or to destroy it? Failing to heal when one can is presented as doing harm.",
+      "grammar": "Eperōtō humas, ‘I ask you’, puts Jesus in the role of questioner. The paired infinitives agathopoiēsai ē kakopoiēsai, ‘to do good or to do evil’, and psuchēn sōsai ē apolesai, ‘to save a life or to destroy it’, leave no neutral option. Sōzō, ‘save’, is also Luke's word for salvation, so the question hints at more than physical rescue. Exestin, ‘it is lawful’, picks up the keyword of verses 2 and 4.",
+      "words": [
+        "G1905",
+        "G1832",
+        "G4521",
+        "G0015",
+        "G2554",
+        "G5590H",
+        "G4982",
+        "G0622"
+      ],
+      "history": "Jewish law agreed that danger to life overrides the Sabbath. The Mishnah states that any doubt whether life is in danger sets aside the Sabbath (m. Yoma 8:6), and 1 Maccabees 2:39-41 records the decision of Mattathias and his friends to fight in self-defense on the Sabbath after pious Jews were slaughtered without resisting. A withered hand was not an emergency, and the debate was over whether healing a non-urgent condition was permitted work. Jesus reframes the question from what may be done to what ought to be done.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus reads the Sabbath law by its purpose. A day given for rest and for remembering God's deliverance (Deuteronomy 5:15) is a fitting day for deliverance, and refusing to do good is not neutral obedience."
+        }
+      ],
+      "parallels": [
+        "Mark 3:4",
+        "Matthew 12:11-12"
+      ],
+      "refs": [
+        "Deuteronomy 5:15",
+        "Luke 13:15-16",
+        "Luke 14:3-5",
+        "Luke 19:10",
+        "Micah 6:8"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "Jesus looks around at them all and tells the man to stretch out his hand, and it is restored. His opponents are filled with fury and begin discussing what they might do to him.",
+      "grammar": "Periblepsamenos, ‘looking around’, is an aorist middle; Luke omits Mark's ‘with anger’ (Mark 3:5). Apekatestathē, ‘it was restored’, has a double augment (apo-ka-te-stathē), a common irregularity in this verb. The same word family describes Israel's hoped-for restoration (Acts 1:6, 3:21). In verse 11, anoias, ‘of senselessness, fury’, is a word for mindless rage. Ti an poiēsaien, ‘what they might do’, uses the optative with an in an indirect question, a mark of Luke's more literary Greek; Luke is the main user of the optative in the New Testament. Luke's ending is milder than Mark 3:6, where Pharisees and Herodians plot to destroy him.",
+      "words": [
+        "G4017",
+        "G1614",
+        "G5495",
+        "G0600",
+        "G4130",
+        "G0454",
+        "G1255",
+        "G4160G"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The restored hand is a small instance of the restoration the prophets promised. The kingdom comes as healing, and the Sabbath, the day of rest, becomes the day of restoration."
+        }
+      ],
+      "parallels": [
+        "Mark 3:5-6",
+        "Matthew 12:13-14"
+      ],
+      "refs": [
+        "Acts 3:21",
+        "Acts 1:6",
+        "Luke 13:17",
+        "John 5:16-18"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Before choosing the Twelve, Jesus goes to the mountain and spends the whole night in prayer. Luke alone records this, and the placement makes the choice of apostles an answer to prayer.",
+      "grammar": "Dianuktereuōn, ‘spending the whole night’, is a present participle of a verb used only here in the New Testament. Ēn dianuktereuōn is periphrastic, stressing duration. En tē proseuchē tou theou, literally ‘in the prayer of God’, is an objective genitive, ‘prayer to God’, an expression found only here in the New Testament. To oros, ‘the mountain’, with the article, may simply mean ‘the hill country’ or evoke the mountain as the place of revelation.",
+      "words": [
+        "G2250",
+        "G1831",
+        "G3735",
+        "G4336",
+        "G1273",
+        "G4335",
+        "G2316"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Luke shows Jesus praying before decisive acts: at the baptism (3:21), before choosing the Twelve (6:12), before Peter's confession (9:18), at the transfiguration (9:28-29), and on the Mount of Olives (22:41-44). The church in Acts follows the pattern, praying before choosing Matthias and before sending Barnabas and Saul (Acts 1:24, 13:2-3)."
+        }
+      ],
+      "refs": [
+        "Luke 3:21",
+        "Luke 9:18",
+        "Luke 22:41-44",
+        "Acts 1:24",
+        "Acts 13:2-3"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "At daybreak Jesus calls his disciples and chooses twelve from among them, whom he names apostles. There is a wider circle of disciples; the Twelve are a smaller group within it.",
+      "grammar": "Prosephōnēsen tous mathētas, ‘he called his disciples to him’, then eklexamenos ap’ autōn dōdeka, ‘choosing from them twelve’: the aorist middle of eklegomai stresses choice for himself. Hous kai apostolous ōnomasen, ‘whom he also named apostles’, gives the title from the verb apostellō, ‘to send’. Luke uses apostolos six times in the Gospel and twenty-eight times in Acts, far more than Matthew (once) or Mark (once or twice).",
+      "words": [
+        "G3101",
+        "G1586",
+        "G1427",
+        "G0652",
+        "G3687"
+      ],
+      "history": "The number twelve deliberately recalls the twelve tribes of Israel; Jesus later promises the Twelve that they will sit on thrones judging the twelve tribes (22:30), and the church replaces Judas to keep the number (Acts 1:15-26). The Jewish institution of the authorized agent (shaliach) may lie behind the title apostle: the Mishnah says a man's agent is as himself (m. Berakhot 5:5).",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Jesus forms a new leadership for a renewed Israel. The Twelve are both the foundation of the church and a sign that Jesus is regathering the people of God."
+        },
+        {
+          "id": "election",
+          "note": "Jesus chooses; the Twelve do not volunteer. Luke uses the same verb when he recalls the apostles ‘whom He had chosen’ in Acts 1:2."
+        }
+      ],
+      "parallels": [
+        "Mark 3:13-15",
+        "Matthew 10:1-2"
+      ],
+      "refs": [
+        "Luke 22:30",
+        "Acts 1:2",
+        "Acts 1:15-26",
+        "Luke 9:1-2",
+        "Ephesians 2:20"
+      ]
+    },
+    {
+      "v": "14-16",
+      "context": "The list of the Twelve. Simon Peter stands first and Judas Iscariot last, as in every list. The names include fishermen, a tax collector, a Zealot, and a traitor.",
+      "grammar": "Simōna hon kai ōnomasen Petron, ‘Simon whom he also named Peter’, repeats the verb ōnomasen from verse 13: Jesus names the Twelve and renames their leader. Petros is the Greek form of Aramaic Kepha, ‘rock’ (John 1:42). Zēlōtēs, ‘zealot’, is Luke's translation of the Aramaic qan'ana, which Mark 3:18 and Matthew 10:4 transliterate as Kananaios, ‘the Cananaean’ (not ‘Canaanite’). Hos egeneto prodotēs, ‘who became a traitor’: egeneto marks a change, not a nature he always had. Luke uses prodotēs again in Stephen's speech for those who betrayed the Righteous One (Acts 7:52).",
+      "words": [
+        "G4613O",
+        "G3687",
+        "G4074G",
+        "G0406",
+        "G2385G",
+        "G2491H",
+        "G5376G",
+        "G0918",
+        "G3156",
+        "G2381",
+        "G0256",
+        "G2208",
+        "G2455G",
+        "G2385J",
+        "G2469",
+        "G4273"
+      ],
+      "history": "The four lists (Mark 3:16-19, Matthew 10:2-4, Luke 6:14-16, Acts 1:13) fall into three groups of four, each always headed by the same name: Peter, Philip, and James son of Alphaeus. Bartholomew is a patronymic (‘son of Talmai’), and many since the Middle Ages have identified him with Nathanael (John 1:45). Luke's Judas son of James, who appears again in Acts 1:13 and probably in John 14:22 (‘Judas, not Iscariot’), stands where Mark and Matthew have Thaddaeus. Iscariot is often explained as ‘man of Kerioth’, a town in southern Judah (Joshua 15:25), which would make Judas the only Judean in the group; other proposals derive it from sicarius, ‘dagger man’, or from a word for ‘false’, and none is certain.",
+      "parallels": [
+        "Mark 3:16-19",
+        "Matthew 10:2-4",
+        "Acts 1:13"
+      ],
+      "refs": [
+        "John 1:42",
+        "John 1:45",
+        "John 14:22",
+        "Acts 7:52",
+        "Luke 22:3"
+      ]
+    },
+    {
+      "v": "17-19",
+      "context": "Jesus comes down with the Twelve to a level place, where a great crowd of disciples and people from Judea, Jerusalem, and the Gentile coast of Tyre and Sidon gather to hear him and be healed. The setting of the sermon is a descent to the crowd, and power goes out from him to heal all.",
+      "grammar": "Katabas met’ autōn estē epi topou pedinou, ‘coming down with them he stood on a level place’: pedinos, ‘level, flat’, occurs only here in the New Testament. Matthew 5:1 has Jesus go up the mountain and sit to teach. In verse 19, dunamis par’ autou exērcheto kai iato pantas, ‘power was going out from him and healing all’, uses two imperfects of continuing action; the same description returns when the woman touches his garment (8:46).",
+      "words": [
+        "G2597",
+        "G2476",
+        "G5117",
+        "G3977",
+        "G3793",
+        "G3101",
+        "G4128",
+        "G2992",
+        "G3882",
+        "G5184",
+        "G4605",
+        "G1776",
+        "G0169",
+        "G2323",
+        "G0681",
+        "G1411",
+        "G2390"
+      ],
+      "history": "Harmonizers have long reconciled Matthew's mountain with Luke's plain: Augustine (Harmony of the Gospels 2.19) suggested a level area on the mountainside. Others take the two sermons as different occasions or as two evangelists' arrangements of shared material. Tyre and Sidon, Phoenician cities on the coast to the northwest, were Gentile territory; their presence anticipates the Gentile hearers of Acts. Some commentators see in Jesus' descending from the mountain to address the people a Mosaic echo (Exodus 19:14, 34:29), though Luke does not make the link explicit.",
+      "parallels": [
+        "Matthew 4:24-5:1",
+        "Mark 3:7-12"
+      ],
+      "refs": [
+        "Luke 8:46",
+        "Luke 5:17",
+        "Luke 10:13-14",
+        "Exodus 34:29"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Jesus looks at his disciples and begins with a blessing on the poor. Luke's beatitudes are in the second person, spoken to the listeners: ‘you who are poor’, not ‘the poor’.",
+      "grammar": "Eparas tous ophthalmous autou, ‘lifting up his eyes’, is a Semitic phrase for looking at someone deliberately. Makarioi, ‘blessed, fortunate’, is the Septuagint's word for the Hebrew ashrei (Psalm 1:1), a declaration of a person's good standing before God, not a wish. Ptōchoi means the destitute, those who must beg, stronger than penēs (‘poor, working poor’). Hoti humetera estin hē basileia tou theou, ‘because yours is the kingdom of God’, is present tense, while the following promises are future.",
+      "words": [
+        "G1869",
+        "G3788",
+        "G3101",
+        "G3107",
+        "G4434",
+        "G0932"
+      ],
+      "history": "In the Psalms and prophets the poor (anavim, aniyyim) are often the afflicted faithful who have no protector but God (Psalm 34:6, 86:1; Isaiah 61:1). The Qumran community called itself ‘the congregation of the poor’ in its commentary on Psalm 37 (4Q171), and the Psalms of Solomon (first century BC) speak of the pious poor who will see God's mercy. Luke's second-person address to disciples who have left everything (5:11, 5:28) joins economic poverty with this biblical sense of dependence on God.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom belongs now to the poor. Luke's first beatitude fulfills Jesus' program to ‘preach good news to the poor’ (4:18) and reverses the world's order before explaining it."
+        },
+        {
+          "id": "justice-poor",
+          "note": "Luke refuses to spiritualize poverty away. The blessing is spoken to the poor as poor, and the matching woe (6:24) to the rich as rich."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:1-3"
+      ],
+      "refs": [
+        "Luke 4:18",
+        "Luke 1:52-53",
+        "James 2:5",
+        "Psalm 34:6",
+        "Isaiah 61:1"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "The second and third blessings go to the hungry and the weeping, each with ‘now’ and each with a future reversal: filled, laughing.",
+      "grammar": "Hoi peinōntes nun and hoi klaiontes nun, ‘you who hunger now’ and ‘you who weep now’, use present participles with nun, ‘now’, which Luke alone includes and which sets present suffering against future reversal. Chortasthēsesthe, ‘you will be filled’, is a future passive of chortazō, originally used of feeding animals to fullness; Luke uses it of the feeding of the five thousand (9:17). Gelasete, ‘you will laugh’, uses gelaō, found in the New Testament only here and in verse 25. The passives and futures point to God as the one who will act.",
+      "words": [
+        "G3107",
+        "G3983",
+        "G3568",
+        "G5526",
+        "G2799",
+        "G1070"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 126:2-6",
+          "note": "The returning exiles' mouths were filled with laughter, and those who sow in tears reap with shouts of joy. Isaiah 61:2-3, the passage Jesus read in Nazareth, promises comfort for all who mourn. Luke's third beatitude echoes both. Matthew 5:4 and 5:6 have ‘those who mourn’ will be comforted and those who ‘hunger and thirst for righteousness’ will be filled."
+        }
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The beatitudes place the fulfillment in the future, ‘you will be filled’, ‘you will laugh’, so that present suffering is borne in hope. The reversal is certain because God has promised it, not because the present condition is good."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:4",
+        "Matthew 5:6"
+      ],
+      "refs": [
+        "Isaiah 61:2-3",
+        "Luke 9:17",
+        "Luke 16:25",
+        "Revelation 7:16-17",
+        "Luke 1:53"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "The fourth blessing is for those hated, excluded, insulted, and slandered because of the Son of Man. Jesus tells them to rejoice and leap for joy, because their reward in heaven is great and the prophets were treated the same way.",
+      "grammar": "The four verbs escalate: misēsōsin (hate), aphorisōsin (exclude, separate from a community), oneidisōsin (insult), ekbalōsin to onoma humōn hōs ponēron (cast out your name as evil). The last resembles the Septuagint idiom of bringing out an evil name against someone (Deuteronomy 22:14, 19). Heneka tou huiou tou anthrōpou, ‘because of the Son of Man’, makes loyalty to Jesus the cause. Skirtēsate, ‘leap for joy’, is the verb Luke used of John the Baptist leaping in Elizabeth's womb (1:41, 44). Kata ta auta gar epoioun, ‘for in the same way they used to do’, uses an imperfect for a habitual pattern.",
+      "words": [
+        "G3404",
+        "G0873",
+        "G3679",
+        "G1544",
+        "G4190",
+        "G5207",
+        "G5463",
+        "G4640",
+        "G3408",
+        "G3772",
+        "G4396",
+        "G3962"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Persecution for Jesus' sake is a cause for joy, not because suffering is good in itself but because it places the disciple in the company of the prophets and secures a reward with God. The apostles later rejoice in exactly this way (Acts 5:41)."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:11-12"
+      ],
+      "refs": [
+        "Acts 5:41",
+        "Luke 11:47-51",
+        "Luke 13:34",
+        "1 Peter 4:13-14",
+        "Acts 7:52"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The first of four woes, each the mirror of a blessing. The rich have already received their comfort. The woes are addressed as if to the rich directly, though the audience is disciples and crowd.",
+      "grammar": "Plēn, ‘but, however’, is a strong adversative that turns the sermon. Ouai, ‘woe’, is an interjection of lament and warning, the Septuagint's word for the Hebrew hoy, used by the prophets (Isaiah 5:8-22; Amos 6:1). Apechete tēn paraklēsin humōn, ‘you have received your comfort’, uses apechō, a verb that appears in Greek papyri on receipts in the sense ‘paid in full’, as Adolf Deissmann showed in Light from the Ancient East: nothing more is owed. Paraklēsis, ‘comfort, consolation’, recalls Simeon, who waited for ‘the consolation of Israel’ (2:25).",
+      "words": [
+        "G4133",
+        "G3759",
+        "G4145",
+        "G0568",
+        "G3874"
+      ],
+      "history": "Series of woes against the rich appear in Jewish writings near the time of Jesus: 1 Enoch 94-99 pronounces woe on those who trust in their riches and forget the Most High in the days of their wealth (1 Enoch 94:8). Luke's woes stand in that prophetic tradition. Matthew has no woes in the Sermon on the Mount; his seven woes are directed at scribes and Pharisees (Matthew 23).",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Wealth is dangerous because it can become a person's whole consolation. Luke's parable of the rich man and Lazarus uses the same language: the rich man received his good things in life, and Lazarus is now comforted (16:25)."
+        },
+        {
+          "id": "judgment",
+          "note": "The woes are warnings of reversal at the judgment, spoken in time for the hearers to change. The rich man in 16:25 and the rich ruler in 18:23-25 show what they mean."
+        }
+      ],
+      "refs": [
+        "Luke 16:25",
+        "Luke 2:25",
+        "Luke 12:19-21",
+        "James 5:1-5",
+        "Amos 6:1"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "Woe to the well fed and to those who laugh now. Their present satisfaction will turn to hunger and mourning, the exact reverse of the blessings in verse 21.",
+      "grammar": "Hoi empeplēsmenoi nun, ‘you who have been filled up now’, is a perfect passive participle describing a state of fullness. Peinasete, ‘you will hunger’, and penthēsete kai klausete, ‘you will mourn and weep’, are futures matching the blessings of verse 21 word for word in reverse. Hoi gelōntes nun, ‘you who laugh now’, repeats gelaō from verse 21.",
+      "words": [
+        "G3759",
+        "G1705",
+        "G3568",
+        "G3983",
+        "G1070",
+        "G3996",
+        "G2799"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The reversal cuts both ways. The same God who fills the hungry sends the rich away empty (1:53), and Mary's song is here turned into Jesus' teaching."
+        }
+      ],
+      "refs": [
+        "Luke 1:53",
+        "Luke 12:19",
+        "James 4:9",
+        "Isaiah 65:13-14"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The last woe answers the last blessing: woe when everyone speaks well of you, because that is how the ancestors treated the false prophets. Universal praise is a warning sign.",
+      "grammar": "Hotan kalōs humas eipōsin pantes hoi anthrōpoi, ‘when all people speak well of you’, uses an aorist subjunctive for a general condition. Pseudoprophētais, ‘false prophets’, balances ‘the prophets’ of verse 23, with the same frame kata ta auta gar epoioun hoi pateres autōn, ‘for their fathers did the same’.",
+      "words": [
+        "G3759",
+        "G2573",
+        "G3956",
+        "G0444",
+        "G5578",
+        "G3962"
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 6:14",
+          "note": "Jeremiah condemns prophets who heal the wound of the people lightly, saying ‘Peace, peace’ when there is no peace, and 5:31 complains that the people love it so. In 1 Kings 22:13 the four hundred prophets speak favorably to Ahab with one voice, while Micaiah, who speaks the truth, is struck and imprisoned. Popularity was the mark of the false prophet, and rejection the lot of the true one."
+        }
+      ],
+      "refs": [
+        "Jeremiah 5:31",
+        "1 Kings 22:13",
+        "Micah 2:11",
+        "2 Timothy 4:3",
+        "John 15:19"
+      ]
+    },
+    {
+      "v": "27-28",
+      "context": "The sermon turns to its center: love for enemies. Four commands, love, do good, bless, pray, each aimed at a harder form of hostility, hatred, cursing, and mistreatment.",
+      "grammar": "Alla humin legō tois akouousin, ‘but I say to you who are listening’, marks a new section and addresses those willing to hear. Agapate, poieite, eulogeite, and proseuchesthe are present imperatives, calling for continuing practice rather than a single act. Epēreazontōn, ‘those who mistreat’, is a word for abusive treatment and insult. Luke has no antithesis (‘you have heard it said’) of the kind in Matthew 5:43-44; his command stands on its own.",
+      "words": [
+        "G0191",
+        "G0025",
+        "G2190",
+        "G2573",
+        "G4160G",
+        "G3404",
+        "G2127",
+        "G2672",
+        "G4336",
+        "G1908"
+      ],
+      "history": "The Old Testament commands love of neighbor (Leviticus 19:18) and help for an enemy's straying ox or donkey (Exodus 23:4-5), and Proverbs 25:21-22 tells the reader to feed a hungry enemy. No text commands hatred of enemies, but the Qumran Community Rule commits its members to love all the sons of light and hate all the sons of darkness (1QS 1:9-10). The Didache (1:3) repeats Jesus' command to bless those who curse you and pray for your enemies, showing how early it shaped Christian teaching.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love here is defined by action toward those who do not deserve it: doing good, blessing, praying. Jesus prays for his executioners (23:34) and Stephen for his (Acts 7:60), so the command is fulfilled first by its teacher."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:43-44"
+      ],
+      "refs": [
+        "Luke 23:34",
+        "Acts 7:60",
+        "Romans 12:14",
+        "Romans 12:20",
+        "Exodus 23:4-5"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "Two concrete cases of refusing to retaliate: offering the other cheek to one who strikes, and not withholding the tunic from one who takes the cloak. Luke's order (cloak first, then tunic) pictures robbery, where Matthew's (tunic, then cloak) pictures a lawsuit.",
+      "grammar": "Tō tuptonti se epi tēn siagona, ‘to the one striking you on the cheek’: siagōn is the jaw or cheek, and Luke does not specify ‘the right’ as Matthew 5:39 does. Pareche kai tēn allēn, ‘offer the other also’, is a present imperative. Himation is the outer cloak and chitōn the inner tunic; mē kōlusēs, ‘do not withhold’, is an aorist subjunctive of prohibition.",
+      "words": [
+        "G5180",
+        "G4600",
+        "G3930",
+        "G0243",
+        "G0142",
+        "G2440",
+        "G5509",
+        "G2967"
+      ],
+      "history": "A slap on the face was primarily an insult. The Mishnah fixes compensation for slapping at two hundred zuz and for a backhanded slap at four hundred (m. Bava Qamma 8:6), because the humiliation was greater. Some interpreters, notably Walter Wink, built on Matthew's ‘right cheek’ (implying a backhanded blow) to read the saying as a nonviolent assertion of dignity; Luke's wording lacks that detail. The Law required a creditor to return a poor man's cloak by nightfall because it was his only covering (Exodus 22:26-27).",
+      "ot": [
+        {
+          "ref": "Isaiah 50:6",
+          "note": "The Servant says he gave his back to those who struck him and his cheeks (the Septuagint has siagonas, Luke's word) to those who pulled out his beard, and did not hide his face from shame and spitting. Lamentations 3:30 also counsels giving one's cheek to the smiter. Jesus' command asks disciples to take the Servant's path, which he himself walks in the passion (22:63-64)."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:39-40"
+      ],
+      "refs": [
+        "Lamentations 3:30",
+        "Luke 22:63-64",
+        "John 18:22-23",
+        "Exodus 22:26-27",
+        "1 Corinthians 6:7"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "Two more commands about possessions: give to everyone who asks, and do not demand back what is taken. Generosity is to be as unconditional as the non-retaliation of verse 29.",
+      "grammar": "Panti aitounti se didou, ‘to everyone asking you, keep giving’, uses the present imperative of didōmi for habitual generosity. Mē apaitei, ‘do not demand back’, is also a present imperative; apaiteō is used of reclaiming loans or property (12:20 uses it of a life ‘demanded’ back by God).",
+      "words": [
+        "G3956",
+        "G0154",
+        "G1325",
+        "G0142",
+        "G0523"
+      ],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Disciples hold possessions loosely because they trust the Father who gives (12:30-32). The command does not describe a legal system but a character free from the grip of ownership."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:42"
+      ],
+      "refs": [
+        "Luke 12:20",
+        "Luke 12:32-34",
+        "Deuteronomy 15:7-11",
+        "Acts 20:35",
+        "Proverbs 19:17"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "The Golden Rule. In Luke it stands in the middle of the teaching on enemies, as a positive principle that goes beyond fairness.",
+      "grammar": "Kathōs thelete hina poiōsin humin hoi anthrōpoi, poieite autois homoiōs, ‘just as you want people to do to you, do likewise to them’: the hina clause gives the content of the wish, and the present imperative poieite makes it a standing rule. Matthew 7:12 adds that this is the Law and the Prophets.",
+      "words": [
+        "G2531",
+        "G2309",
+        "G2443",
+        "G4160G",
+        "G0444",
+        "G3668"
+      ],
+      "history": "The rule was known in negative form in Judaism and elsewhere. Tobit 4:15 says what you hate, do not do to anyone, and the Babylonian Talmud (b. Shabbat 31a) tells how Hillel summarized the Torah to a prospective convert: what is hateful to you, do not do to your neighbor; the rest is commentary. Jesus' positive form requires initiative, not only restraint.",
+      "parallels": [
+        "Matthew 7:12"
+      ],
+      "refs": [
+        "Leviticus 19:18",
+        "Romans 13:8-10",
+        "Galatians 5:14",
+        "Luke 10:27"
+      ]
+    },
+    {
+      "v": "32-34",
+      "context": "Three rhetorical questions show why ordinary reciprocity is not enough. Loving those who love you, doing good to those who do good, lending to those who will repay: even sinners do that.",
+      "grammar": "Poia humin charis estin, ‘what credit is that to you?’, is repeated three times; charis here means favor or thanks owed, the currency of the ancient system of benefaction and return. Matthew 5:46-47 has ‘reward’ (misthos) and speaks of tax collectors and Gentiles, where Luke has ‘sinners’. In verse 34, hina apolabōsin ta isa, ‘so that they may receive back the equal amount’, describes lending for repayment in full.",
+      "words": [
+        "G0025",
+        "G5485",
+        "G0268",
+        "G0015",
+        "G1155",
+        "G1679",
+        "G0618",
+        "G2470"
+      ],
+      "history": "Greco-Roman social life ran on reciprocity: benefits created obligations, and gifts were given with an expectation of return in goods, honor, or loyalty. Seneca devoted a whole treatise, On Benefits, to its rules. Deuteronomy 15:7-11 had already commanded Israel to lend freely to the poor even as the seventh year of release approached, when the debt would be canceled; the Septuagint calls that release aphesis, the word of Jesus' Nazareth reading (4:18).",
+      "parallels": [
+        "Matthew 5:46-47"
+      ],
+      "refs": [
+        "Deuteronomy 15:7-11",
+        "Luke 14:12-14",
+        "Proverbs 19:17",
+        "Matthew 5:46-47"
+      ]
+    },
+    {
+      "v": "35",
+      "context": "The command to love enemies is repeated with its reason: God is kind to the ungrateful and wicked, and those who act the same way show themselves to be his children.",
+      "grammar": "Plēn, ‘but’, returns to the command of verse 27. Mēden apelpizontes is the key phrase. In ordinary Greek apelpizō means ‘to despair’, but here the context requires ‘expecting nothing back’ (apo-, ‘back’, with elpizō, ‘hope’). Codex Sinaiticus, Codex Washingtonianus, and the Sinaitic Syriac read mēdena, ‘despairing of no one’, which Metzger explains as an accidental repetition of a letter by a copyist. Esesthe huioi hupsistou, ‘you will be sons of the Most High’, echoes Gabriel's title for Jesus, ‘Son of the Most High’ (1:32). Chrēstos, ‘kind’, is the adjective of 5:39.",
+      "words": [
+        "G4133",
+        "G0025",
+        "G2190",
+        "G0015",
+        "G1155",
+        "G3367",
+        "G0560",
+        "G3408",
+        "G5207",
+        "G5310",
+        "G5543",
+        "G0884",
+        "G4190"
+      ],
+      "history": "The Latin Vulgate rendered the phrase mutuum date nihil inde sperantes, ‘lend, hoping for nothing from it’, and medieval canon law used the verse as a proof-text against charging interest on loans; Pope Urban III cited it in the decretal Consuluit (about 1185-1187). Ben Sira (Sirach 4:10) promises that one who is a father to orphans will be like a son of the Most High.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love of enemies is grounded in God's own character, not in its effectiveness. Children resemble their Father, and the Father is kind to those who are ungrateful to him."
+        },
+        {
+          "id": "god",
+          "note": "The verse reveals God as the Most High who is kind to the evil. His goodness is not a reward for merit but the ground of all grace (compare Romans 2:4; Matthew 5:45)."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:44-45"
+      ],
+      "refs": [
+        "Luke 1:32",
+        "Romans 2:4",
+        "Matthew 5:45",
+        "Titus 3:4-5",
+        "Romans 5:10"
+      ]
+    },
+    {
+      "v": "36",
+      "context": "A single sentence summarizes the ethic: be merciful as your Father is merciful. Where Matthew 5:48 has ‘perfect’, Luke has ‘merciful’.",
+      "grammar": "Ginesthe oiktirmones, a present imperative, ‘become merciful’ or ‘keep being merciful’. Oiktirmōn, ‘compassionate, merciful’, is used in the Septuagint of God's self-description to Moses (Exodus 34:6, oiktirmōn kai eleēmōn). Kathōs ho patēr humōn, ‘just as your Father’, makes God's mercy the standard. This is the first time Luke's Jesus calls God the disciples' Father.",
+      "words": [
+        "G1096",
+        "G3629",
+        "G2531",
+        "G3962"
+      ],
+      "history": "The Aramaic Targum Pseudo-Jonathan, in a comment on Leviticus 22:28, says in words very close to Luke's that as the Father is merciful in heaven, so Israel should be merciful on earth. The Targum was compiled much later, but it may preserve an older homiletic saying; the Levitical holiness command (‘Be holy, because I am holy’, Leviticus 19:2) is the model for both.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Leviticus says ‘Be holy, for I am holy’; Jesus says ‘Be merciful, as your Father is merciful’. In Luke, mercy is the shape holiness takes toward sinners and enemies."
+        }
+      ],
+      "parallels": [
+        "Matthew 5:48"
+      ],
+      "refs": [
+        "Exodus 34:6",
+        "Leviticus 19:2",
+        "Luke 10:37",
+        "Luke 15:20",
+        "Ephesians 4:32"
+      ]
+    },
+    {
+      "v": "37",
+      "context": "Three paired commands and promises: do not judge, do not condemn, forgive. The passives point to God's response to the way disciples treat others.",
+      "grammar": "Mē krinete and mē katadikazete are present imperatives with mē, ‘stop judging’, ‘stop condemning’, or ‘do not make a habit of it’. The promises ou mē krithēte and ou mē katadikasthēte use ou mē with the aorist subjunctive, the strongest negation in Greek: ‘you will certainly not be judged’. These are divine passives, with God as the implied judge. Apoluete, ‘release’, is the ordinary verb for setting free (used of Barabbas in 23:18-25) and here means forgiving; the future passive apoluthēsesthe promises God's release in return.",
+      "words": [
+        "G2919",
+        "G2613",
+        "G0630G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus forbids the judging that condemns, not all moral discernment (6:43-45 require it). God's judgment of the disciple will correspond to the mercy or severity the disciple shows (compare 11:4)."
+        },
+        {
+          "id": "justification",
+          "note": "The verse does not make forgiveness a wage earned by forgiving others; Luke grounds forgiveness in God's grace (7:42, 15:20). It shows instead that those who have received mercy and refuse to extend it reveal that they have not understood it (Matthew 18:23-35)."
+        }
+      ],
+      "parallels": [
+        "Matthew 7:1-2"
+      ],
+      "refs": [
+        "Luke 11:4",
+        "Matthew 18:23-35",
+        "Romans 2:1",
+        "James 2:13",
+        "Luke 23:18-25"
+      ]
+    },
+    {
+      "v": "38",
+      "context": "Give, and it will be given. Jesus pictures a grain merchant filling a buyer's measure generously, pressing it down, shaking it, until it overflows into the fold of the robe. The last line states the principle: the measure you use is the measure you receive.",
+      "grammar": "Four participles describe the measure: kalon (‘good’), pepiesmenon (‘pressed down’), sesaleumenon (‘shaken’), and huperekchunnomenon (‘pouring over’), the first two perfect passives, the last a present passive of continuing overflow. Dōsousin, ‘they will give’, is an impersonal third plural, a Semitic way of referring to God without naming him (compare 12:20). Antimetrēthēsetai, ‘it will be measured back’, is a rare compound, emphasizing correspondence.",
+      "words": [
+        "G1325",
+        "G3358",
+        "G2570G",
+        "G4085",
+        "G4531",
+        "G5240",
+        "G2859",
+        "G3354",
+        "G0488"
+      ],
+      "history": "The Mishnah states the same principle of correspondence: by the measure with which a person measures, it is measured to him (m. Sotah 1:7), and illustrates it from Scripture. The kolpos, the fold of the robe above the belt, was used to carry grain and goods (compare Ruth 3:15 with Boaz's measure of barley in Ruth's shawl).",
+      "parallels": [
+        "Matthew 7:2",
+        "Mark 4:24"
+      ],
+      "refs": [
+        "Ruth 3:15",
+        "Proverbs 11:24-25",
+        "2 Corinthians 9:6",
+        "Psalm 79:12",
+        "Luke 12:20"
+      ]
+    },
+    {
+      "v": "39-40",
+      "context": "A short parable about blind guides and a saying about disciples and teachers. A disciple becomes like his teacher, so the teacher had better see.",
+      "grammar": "Mēti dunatai tuphlos tuphlon hodēgein expects the answer ‘no’ (mēti), and ouchi amphoteroi eis bothunon empesountai expects ‘yes’ (ouchi): two questions, opposite expectations. Katērtismenos, ‘fully trained’, is a perfect passive participle of katartizō, a verb used of mending nets (Mark 1:19) and restoring someone (Galatians 6:1): a completed equipping. Estai hōs ho didaskalos autou, ‘he will be like his teacher’, states the goal and the risk of discipleship.",
+      "words": [
+        "G3850",
+        "G3385",
+        "G5185",
+        "G3594",
+        "G3780",
+        "G0999",
+        "G3101",
+        "G1320",
+        "G2675"
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Those who teach others reproduce themselves in their followers. In Matthew 15:14 the blind guides are the Pharisees; in Luke the saying falls on the disciples, who will become teachers and must first be taught."
+        }
+      ],
+      "parallels": [
+        "Matthew 15:14",
+        "Matthew 10:24-25"
+      ],
+      "refs": [
+        "Romans 2:19-21",
+        "John 13:16",
+        "Galatians 6:1",
+        "James 3:1"
+      ]
+    },
+    {
+      "v": "41-42",
+      "context": "The speck and the beam. The critic who strains to see a splinter in another's eye cannot see the plank in his own. The hyperbole is comic and the point serious: self-examination must come before correction.",
+      "grammar": "Karphos is a speck of straw or wood, dokos a beam or rafter, a carpenter's contrast. Aphes ekbalō, ‘let me take out’, combines the imperative aphes (‘allow’) with a hortatory subjunctive. Hupokrita, ‘hypocrite’, originally meant a stage actor, one who plays a part. Ekbale prōton, ‘first take out’, uses an aorist imperative and makes the order the point; diablepseis, ‘you will see clearly’, promises that the corrected person can then really help.",
+      "words": [
+        "G0991",
+        "G2595",
+        "G3788",
+        "G0080",
+        "G1385",
+        "G2657",
+        "G0863I",
+        "G1544",
+        "G5273",
+        "G4413G",
+        "G1227"
+      ],
+      "history": "The same image appears in the Babylonian Talmud, where Rabbi Tarfon laments that his generation cannot accept rebuke: if one says ‘remove the splinter from between your eyes’, the other answers ‘remove the beam from between your eyes’ (b. Arakhin 16b). The saying was proverbial in Jewish teaching.",
+      "parallels": [
+        "Matthew 7:3-5"
+      ],
+      "refs": [
+        "Romans 2:1",
+        "Galatians 6:1",
+        "Luke 18:9-14",
+        "2 Samuel 12:1-7"
+      ]
+    },
+    {
+      "v": "43-45",
+      "context": "Trees and fruit: a good tree does not produce bad fruit, nor a bad tree good fruit. The image moves inward to the heart as the storehouse from which speech and action come.",
+      "grammar": "Sapros means rotten or worthless, the opposite of kalos (‘good, fine’). Ginōsketai, ‘is known’, is a present passive of recognition. Thēsaurou tēs kardias, ‘treasure of the heart’, pictures the heart as a storehouse, and ek gar perisseumatos kardias lalei to stoma autou, ‘for out of the overflow of the heart his mouth speaks’, uses perisseuma, ‘abundance, what spills over’. Gar (‘for’) links each step: the tree explains the fruit, the heart explains the words.",
+      "words": [
+        "G1186",
+        "G2570G",
+        "G4550",
+        "G2590",
+        "G1097",
+        "G0173",
+        "G4810",
+        "G0942",
+        "G4718",
+        "G0018",
+        "G2344",
+        "G2588",
+        "G4051",
+        "G4750"
+      ],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "Behavior flows from what a person is. The verse implies that changing fruit requires changing the tree, the renewal of the heart that the prophets promised (Ezekiel 36:26)."
+        }
+      ],
+      "parallels": [
+        "Matthew 7:16-18",
+        "Matthew 12:33-35"
+      ],
+      "refs": [
+        "Luke 3:8-9",
+        "Ezekiel 36:26",
+        "James 3:11-12",
+        "Proverbs 4:23",
+        "Galatians 5:22-23"
+      ]
+    },
+    {
+      "v": "46",
+      "context": "Jesus asks why people call him ‘Lord, Lord’ and do not do what he says. The question bridges the sermon to its closing parable.",
+      "grammar": "Ti de me kaleite kurie kurie, ‘why do you call me Lord, Lord?’: the doubled vocative expresses fervency. Kai ou poieite ha legō, ‘and do not do what I say’, sets title against obedience. The present tenses describe a habit of calling and a habit of not doing.",
+      "words": [
+        "G2564G",
+        "G2962G",
+        "G4160G",
+        "G3004G"
+      ],
+      "ot": [
+        {
+          "ref": "Malachi 1:6",
+          "note": "The LORD asks through Malachi: if I am a father, where is my honor, and if I am a master, where is my fear? The complaint against those who give God titles without obedience is an old one; Jesus makes the same complaint in his own name, taking the place of the master whose words must be done."
+        }
+      ],
+      "parallels": [
+        "Matthew 7:21-23"
+      ],
+      "refs": [
+        "Malachi 1:6",
+        "Matthew 7:21",
+        "James 1:22",
+        "Luke 8:21",
+        "Luke 11:28"
+      ]
+    },
+    {
+      "v": "47-48",
+      "context": "The one who comes, hears, and does is like a man who dug deep and laid his foundation on rock. When the flood came, the torrent could not shake the house, because it was well built.",
+      "grammar": "Three present participles describe the disciple: erchomenos, akouōn, poiōn, ‘coming, hearing, doing’. Hos eskapsen kai ebathunen, ‘who dug and went deep’, is almost a hendiadys, ‘dug deep’. Plēmmurēs genomenēs, ‘when a flood came’, is a genitive absolute with plēmmura, used only here in the New Testament. Proserēxen ho potamos, ‘the river burst against’, pictures a stream in spate. Dia to kalōs oikodomēsthai autēn, ‘because it had been well built’, uses a perfect passive infinitive of a lasting result.",
+      "words": [
+        "G2064",
+        "G0191",
+        "G3056",
+        "G4160G",
+        "G5263",
+        "G3664",
+        "G3618",
+        "G4626",
+        "G0900",
+        "G2310",
+        "G4073",
+        "G4132",
+        "G4366",
+        "G4215",
+        "G4531"
+      ],
+      "text": "The Byzantine text and the King James Version read ‘for it was founded upon a rock’, taken from Matthew 7:25; the earlier manuscripts read ‘because it was well built’.",
+      "ot": [
+        {
+          "ref": "Isaiah 28:16-17",
+          "note": "God lays in Zion a tested stone, a precious cornerstone, a sure foundation, and hail and waters will sweep away the refuge of lies. Proverbs 10:25 says that when the storm passes the wicked are gone but the righteous stand firm forever. Jesus places the sure foundation in hearing and doing his words."
+        }
+      ],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Wisdom is obedience. The parable joins the sermon to Israel's wisdom tradition, where the wise build and endure and fools are swept away, and makes Jesus' words the foundation."
+        }
+      ],
+      "parallels": [
+        "Matthew 7:24-25"
+      ],
+      "refs": [
+        "Proverbs 10:25",
+        "Isaiah 28:16-17",
+        "1 Corinthians 3:10-11",
+        "James 1:25",
+        "Ezekiel 13:10-14"
+      ]
+    },
+    {
+      "v": "49",
+      "context": "The one who hears and does not act is like a man who built without a foundation. The torrent struck, the house collapsed at once, and its ruin was great. The sermon ends on a warning, not a comfort.",
+      "grammar": "Ho de akousas kai mē poiēsas, ‘the one who heard and did not do’, uses aorist participles, perhaps viewing the whole response as complete. Chōris themeliou, ‘without a foundation’, is Luke's contrast; Matthew has the house built on sand. Sunepesen, ‘it fell together, collapsed’, is the reading of the earliest manuscripts; the Byzantine text has the simple epese, ‘it fell’. To rhēgma, ‘the ruin, the breach’, is found only here in the New Testament. Kai egeneto to rhēgma tēs oikias ekeinēs mega, ‘and the ruin of that house was great’, puts ‘great’ last for emphasis.",
+      "words": [
+        "G0191",
+        "G4160G",
+        "G3618",
+        "G3614G",
+        "G1093I",
+        "G5565",
+        "G2310",
+        "G4366",
+        "G4215",
+        "G2112",
+        "G6081",
+        "G4485",
+        "G3173"
+      ],
+      "history": "In the land of Israel, dry stream beds (wadis) could fill suddenly with winter rain and sweep away anything built on their sandy floors. Luke's river and foundation describe the same danger in terms familiar to builders throughout the Mediterranean, where houses were set on dug foundations.",
+      "parallels": [
+        "Matthew 7:26-27"
+      ],
+      "refs": [
+        "Ezekiel 13:10-14",
+        "Proverbs 14:11",
+        "Luke 13:6-9",
+        "Hebrews 2:1-3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens like a royal annal, with four kings named by their lands. After the family quarrel of chapter 13, the story suddenly widens to the politics of empires, and the reader learns that Lot's choice of the plain has placed him inside a war he knows nothing about.",
+      "grammar": "The opening vayehi bimei, ‘and it came about in the days of’, is the formula Hebrew narrative uses to set a story against a named reign (compare Ruth 1:1 and Esther 1:1). Here it dates Abram's story by foreign kings, as if the writer were quoting an outside record. The first king named is Amraphel, though verse 4 makes Chedorlaomer the real overlord; the order of names changes in verse 9, where Chedorlaomer stands first.",
+      "words": ["H1961", "H3117G", "H3540"],
+      "history": "Shinar is the Bible's name for the land of Babylon (Genesis 10:10, 11:2), and Elam lay east of the Tigris in what is now southwestern Iran. Goiim is simply the Hebrew word for ‘nations’, so Tidal's kingdom may have been a coalition of peoples rather than a single city. Ellasar has not been identified with certainty. None of the four kings appears in any surviving record outside Genesis, and the old identification of Amraphel with Hammurabi of Babylon has been abandoned.",
+      "refs": ["Genesis 10:10", "Genesis 11:2", "Isaiah 11:11"]
+    },
+    {
+      "v": "2-3",
+      "context": "The eastern kings attack five kings of the Jordan plain, the region Lot chose in 13:10-12. The five cities named here will reappear in chapters 18 and 19, so the reader meets Sodom and Gomorrah first as victims of invasion before meeting them as objects of judgment.",
+      "grammar": "Verse 3 uses chaveru, ‘they joined together’ or ‘allied themselves’, from the root that gives chaver, a companion. The note hu yam hammelach, ‘that is, the Salt Sea’, is one of several glosses in this chapter (see also verses 2, 7, 8, 17) that translate an old name into the name later readers knew. Some interpreters take it to mean the valley now lies under the waters of the Dead Sea; others take it only as a location, ‘the valley at the Salt Sea’.",
+      "words": ["H2266", "H7708", "H3220G", "H4417G"],
+      "history": "Admah and Zeboiim are remembered with Sodom and Gomorrah as cities the LORD overthrew (Deuteronomy 29:23, Hosea 11:8). Bela, renamed Zoar, is the one city of the five that survives, because Lot pleads for it in 19:20-22. The kings' names (Bera, Birsha, Shinab, Shemeber) are otherwise unknown, and the king of Bela is not named at all.",
+      "refs": ["Genesis 13:10-12", "Deuteronomy 29:23", "Hosea 11:8", "Genesis 19:20-22"]
+    },
+    {
+      "v": "4",
+      "context": "The verse supplies the cause of the war: twelve years of vassalage, then revolt. Punitive campaigns against rebel vassals were a regular feature of ancient imperial politics, and the next verses describe exactly such a campaign.",
+      "grammar": "The verb avedu, ‘they served’, is the ordinary word for serving a master, here in its political sense of paying tribute to an overlord. Maradu, ‘they rebelled’, is the verb later used of Hezekiah's revolt against Assyria (2 Kings 18:7). The three numbers (twelve, thirteenth, fourteenth in verse 5) give the account the precise, dated feel of a chronicle.",
+      "words": ["H5647G", "H4775"],
+      "refs": ["2 Kings 18:7", "2 Kings 24:1"]
+    },
+    {
+      "v": "5-6",
+      "context": "Chedorlaomer's army sweeps south through the highlands east of the Jordan, defeating one people after another. The list prepares for the confrontation in verse 8 by showing how formidable the invaders are: they have beaten peoples later remembered as giants.",
+      "history": "Each of these peoples returns in Moses' review of the conquest east of the Jordan. The Rephaim are linked with Bashan, and Og, king of Bashan, lived at Ashtaroth (Deuteronomy 1:4, 3:11). The Emim were the older inhabitants of Moab (Deuteronomy 2:10-11), and the Horites lived in Seir before Esau's descendants displaced them (Deuteronomy 2:12, 22). Many scholars think the Zuzim are the people Deuteronomy 2:20 calls Zamzummim, in the later land of Ammon. Ashteroth-karnaim was a town in Bashan, and Kiriathaim was later a town of Moab (Numbers 32:37, Jeremiah 48:1). The route follows the north to south line of the Transjordan highlands, the corridor Numbers 20:17 calls the King's Highway.",
+      "grammar": "Vayyaku, ‘and they struck’, is the Hiphil of nakah, the standard verb for defeating in battle; it repeats in verse 7 and returns in verse 15 when Abram strikes the strikers. The repetition quietly sets up the reversal.",
+      "words": ["H5221", "H7497B", "H0368", "H2752"],
+      "refs": ["Deuteronomy 2:10-12", "Deuteronomy 2:20-22", "Deuteronomy 3:11", "Numbers 20:17"]
+    },
+    {
+      "v": "7",
+      "context": "The army turns back northwest through the desert, to Kadesh, and then toward the Dead Sea, conquering as it goes. It is now approaching the five cities from the south, the direction from which they least expected attack.",
+      "history": "En-mishpat means ‘spring of judgment’, and Kadesh (from the root for ‘holy’) is the oasis where Israel later camps for much of the wilderness period (Numbers 20:1, Deuteronomy 1:46). The Amalekites descend from Esau (Genesis 36:12), so ‘the territory of the Amalekites’ names the region by the people who later lived there, another update for later readers. Hazazon-tamar is identified with En-gedi on the western shore of the Dead Sea (2 Chronicles 20:2).",
+      "words": ["H5880", "H6946G", "H6003", "H2688"],
+      "grammar": "The two verbs vayyashuvu vayyavo'u, ‘they turned and came’, form a common Hebrew pairing in which the first verb gives the change of direction and the second the arrival. The BSB's ‘turned back to invade’ captures the sense.",
+      "refs": ["Numbers 20:1", "Genesis 36:12", "2 Chronicles 20:2"]
+    },
+    {
+      "v": "8-9",
+      "context": "The five kings of the plain finally march out to fight in the Valley of Siddim. The narrator lists all nine kings again and closes with a tally, four kings against five, as if the numbers ought to favor the defenders.",
+      "grammar": "Vayya'arkhu, ‘they arrayed themselves’, is the technical verb for drawing up a battle line (1 Samuel 17:2, 8). The closing phrase arba'ah melakhim et hachamishah, ‘four kings with the five’, is a terse summary without a verb. Its irony becomes plain in verse 10: the larger coalition collapses at once.",
+      "words": ["H6186A", "H0702", "H2568"],
+      "refs": ["1 Samuel 17:2", "1 Samuel 17:8"]
+    },
+    {
+      "v": "10",
+      "context": "The battle is over in a sentence. The kings of Sodom and Gomorrah flee, some men fall into the tar pits, and the rest escape to the hills. The ground Lot chose because it was well watered turns out to be full of traps.",
+      "grammar": "The Hebrew doubles the noun: be'erot be'erot chemar, literally ‘pits, pits of bitumen’. Repeating a noun is a Hebrew way of saying ‘full of’ or ‘one after another’. Chemar is the same word used for the bitumen that served as mortar at Babel (11:3) and the tar that sealed the basket of the infant Moses (Exodus 2:3). The phrase vayyippelu shammah, ‘they fell there’, is ambiguous: since the king of Sodom is alive in verse 17, some read it as ‘they threw themselves down there’ to hide, while others take it of men from the armies in general.",
+      "words": ["H0875", "H2564", "H5307G"],
+      "history": "The Dead Sea has been known since antiquity for the lumps of bitumen that rise to its surface; Greek and Roman writers called it the Asphalt Lake for this reason. The detail fits the region well.",
+      "refs": ["Genesis 11:3", "Exodus 2:3", "Genesis 13:10"]
+    },
+    {
+      "v": "11-12",
+      "context": "The victors strip Sodom and Gomorrah of goods and food and take Lot with his possessions. Verse 12 is the hinge of the chapter: until now Abram's family has been absent, and this sentence brings the war into his story.",
+      "grammar": "Verse 12 identifies Lot formally as ben achi Avram, ‘the son of Abram's brother’, and then adds a participial clause, vehu yoshev bisdom, ‘and he was living in Sodom’. In 13:12 Lot ‘pitched his tent toward Sodom’; now he is ‘living in’ it. The same word rekhush, ‘possessions’, that caused the quarrel between Abram and Lot in 13:6 is now carried off, possessions and all.",
+      "words": ["H7399", "H3427", "H5467"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Lot chose land by what his eyes saw (13:10), and the wealth he gathered there is the first thing he loses. The verse shows, without comment, how exposed a life becomes when its choices are made for gain."
+        }
+      ],
+      "refs": ["Genesis 13:6", "Genesis 13:12", "Genesis 19:1", "2 Peter 2:7-8"]
+    },
+    {
+      "v": "13",
+      "context": "A fugitive brings the news to Abram, who is living at Mamre near Hebron (13:18). The verse introduces Abram's allies, Mamre, Eshcol, and Aner, who will share the campaign and the spoils (verse 24).",
+      "grammar": "Ha'ivri, ‘the Hebrew’, is the word's first appearance in the Bible. Grammatically it is a gentilic, a word naming someone by people or origin, and it is often connected with Eber (10:21). In the Old Testament it is usually used by foreigners about Israelites or by Israelites speaking to foreigners (39:14, Exodus 2:6, Jonah 1:9). Mamre and his brothers are ba'alei berit Avram, literally ‘lords of Abram's covenant’: partners bound by a treaty. The word berit, ‘covenant’, is used here of a human alliance, a reminder that God's covenant with Abram in the next chapter borrows a form people already knew.",
+      "words": ["H5680", "H1285", "H4471H", "H0812G"],
+      "history": "Mamre is both a person and a place in Genesis (13:18, 23:17). Eshcol means ‘cluster’, and the Valley of Eshcol near Hebron is where Israel's spies later cut a cluster of grapes (Numbers 13:23-24).",
+      "refs": ["Genesis 13:18", "Genesis 39:14", "Jonah 1:9", "Numbers 13:23-24"]
+    },
+    {
+      "v": "14",
+      "context": "Abram hears that his relative has been taken and acts at once, calling out 318 men from his own household and pursuing the invaders far to the north. The man who had given Lot first choice in chapter 13 now risks his life for him.",
+      "grammar": "Vayyareq, ‘he drew out’, is the Hiphil of a verb meaning ‘to empty’; it is used of unsheathing a sword (Exodus 15:9) and pictures Abram emptying his camp of fighting men. Chanikhav, ‘his trained men’, occurs only here in the Old Testament; it comes from the root chanakh, which elsewhere means to dedicate (a house, Deuteronomy 20:5) or to train (a child, Proverbs 22:6). These are men born in his household, yelidei veito, not hired soldiers. Lot is called achiv, ‘his brother’, the broad Hebrew word for a kinsman that Abram himself used in 13:8.",
+      "words": ["H7324", "H2593", "H3211", "H0251H"],
+      "history": "Dan lies at the northern edge of the land, well over a hundred miles from Hebron. The city was called Laish until the tribe of Dan took it (Judges 18:29), so the name here is the one later readers knew. Later Jewish interpreters noticed that the letters of the name Eliezer, Abram's servant (15:2), add up to 318, and read the verse as saying Abram went with Eliezer alone; the early Christian Epistle of Barnabas read the Greek numerals for 318 as pointing to the cross and to Jesus. Both are ancient curiosities, not what the text means.",
+      "refs": ["Genesis 13:8", "Judges 18:29", "Proverbs 22:6", "Genesis 17:12"]
+    },
+    {
+      "v": "15",
+      "context": "Abram divides his force, attacks by night, and chases the invaders past Damascus. A household militia routs the army that had beaten every people from Bashan to Kadesh.",
+      "grammar": "Vayyechaleq aleihem laylah is literally ‘and he divided himself against them by night’, a Niphal of chalaq, ‘to divide’. The reflexive sense suggests Abram split his own band into companies. Hobah lies mismol leDammaseq, literally ‘on the left of Damascus’: a Hebrew speaker oriented himself facing east, so the left hand is the north.",
+      "words": ["H2505A", "H8040H", "H1834", "H5221"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The narrative gives no miracle, only tactics, surprise, and a small force. Melchizedek's blessing in verse 20 will name the true cause of the victory, so the chapter teaches that God works through ordinary means as surely as through signs."
+        }
+      ],
+      "refs": ["Judges 7:16-22", "Genesis 15:2", "1 Samuel 30:17"]
+    },
+    {
+      "v": "16",
+      "context": "Abram recovers everything: the goods, Lot and his possessions, the women, and the rest of the captives. The list reverses verses 11-12 item by item.",
+      "grammar": "The verse begins and ends with the same verb, vayyashev and heshiv, ‘he brought back’, both Hiphil forms of shuv, ‘to return’. The repeated gam, ‘also’, stacks up the recovered people and goods. The effect is a sentence framed by restoration.",
+      "words": ["H7725G", "H1571", "H0802G"],
+      "refs": ["1 Samuel 30:18-19"]
+    },
+    {
+      "v": "17",
+      "context": "The king of Sodom comes out to meet the returning victor. The narrator then interrupts him with Melchizedek (verses 18-20), so that the king of Sodom's words are delayed until verse 21 and the two kings are set side by side.",
+      "grammar": "The phrase ‘went out to meet him’ uses liqrato, an infinitive of qara, ‘to meet’, with a suffix. The time clause acharei shuvo mehakkot, ‘after his returning from striking’, uses two infinitives, a compact way of summing up the whole campaign in a phrase.",
+      "words": ["H7122G", "H6010O", "H7740"],
+      "history": "The Valley of Shaveh, ‘the King's Valley’, is where Absalom later set up a pillar to himself (2 Samuel 18:18). That link places the meeting near Jerusalem, which fits Melchizedek's coming out from Salem in the next verse.",
+      "refs": ["2 Samuel 18:18"]
+    },
+    {
+      "v": "18",
+      "context": "Melchizedek, king of Salem, enters without introduction, brings out bread and wine, and is identified as priest of God Most High. He meets Abram with provision where the king of Sodom will meet him with a bargain.",
+      "grammar": "Hotsi, ‘he brought out’, is a Hiphil perfect placed after the subject, a word order that marks a new participant and sets his action off from the king of Sodom's. The clause vehu khohen, ‘and he was a priest’, is circumstantial: it explains who Melchizedek is. Interpreters differ on what it explains. Some connect it with the bread and wine and see a priestly act; many take the bread and wine as hospitality to weary troops (compare Deuteronomy 23:4) and connect the priesthood with the blessing that follows. Kohen, ‘priest’, appears here for the first time in Scripture.",
+      "words": ["H4442", "H3318H", "H3548", "H0410J", "H5945H"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "A king who is also a priest appears in Jerusalem long before Israel has either. Psalm 110:4 takes up this single verse to describe a coming king who is \"a priest forever in the order of Melchizedek\", and Hebrews 5 to 7 reads that promise as fulfilled in Jesus."
+        },
+        {
+          "id": "offices",
+          "note": "In Israel the offices of king and priest were kept apart, and kings who took priestly roles were rebuked (2 Chronicles 26:16-18). Melchizedek holds both at once, which is why Scripture can use him to describe the Messiah's joined kingship and priesthood."
+        }
+      ],
+      "refs": ["Psalm 110:4", "Psalm 76:2", "Hebrews 7:1-3", "Deuteronomy 23:4"]
+    },
+    {
+      "v": "19",
+      "context": "Melchizedek blesses Abram in two short poetic lines, the first blessing Abram by God Most High and the second (verse 20) blessing God himself. The first line identifies the God who blesses as the maker or owner of everything.",
+      "grammar": "Barukh, ‘blessed’, is a passive participle, a form that states a condition rather than a wish: ‘blessed is (or be) Abram’. The title qoneh shamayim va'arets uses the participle of qanah, a verb that usually means ‘to acquire’ or ‘to possess’ but in a few poetic texts means ‘to create’ or ‘to bring into being’ (Deuteronomy 32:6). That is why older English versions read ‘possessor of heaven and earth’ and most modern ones ‘Creator of heaven and earth’. Either sense makes God the one to whom all things belong.",
+      "words": ["H1288", "H7069", "H8064", "H0776G"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The one who blesses Abram is the owner of heaven and earth, not the patron of one city. The victory over four kings is set inside the rule of the God to whom every land and king already belongs."
+        }
+      ],
+      "text": "English versions divide over qoneh. The King James Version and some others read ‘possessor’, following the verb's ordinary sense; the BSB, ESV, and NIV read ‘Creator’, following its sense in texts such as Deuteronomy 32:6. The underlying Hebrew is not in doubt, only its meaning.",
+      "refs": ["Deuteronomy 32:6", "Psalm 24:1", "Genesis 12:2-3"]
+    },
+    {
+      "v": "20",
+      "context": "The second line of the blessing turns to praise God for the victory. Abram answers the blessing with a tenth of everything, acknowledging Melchizedek as God's priest and the victory as God's gift.",
+      "grammar": "The verb miggen, ‘he delivered’, is a rare Piel of a root related to magen, ‘shield’. In the very next chapter God says to Abram, \"I am your shield\" (15:1), using magen, and many commentators see the echo as deliberate. The final clause, vayyitten lo ma'aser mikkol, ‘and he gave him a tenth of everything’, does not name the subject; the context implies Abram, and Hebrews 7:4 reads it that way.",
+      "words": ["H4042", "H6862C", "H4643", "H5414G"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Melchizedek says God \"has delivered your enemies into your hand\". The battle of verse 15 was Abram's fight, but the verse credits the outcome to God, a pattern that runs through Israel's holy war accounts."
+        },
+        {
+          "id": "wealth",
+          "note": "Abram's tenth is the Bible's first tithe, given freely before any law required it. It is a confession that the spoils came from God; Jacob will make a similar vow in 28:22."
+        }
+      ],
+      "refs": ["Genesis 15:1", "Hebrews 7:4-7", "Genesis 28:22", "Deuteronomy 14:22"]
+    },
+    {
+      "v": "21",
+      "context": "The king of Sodom finally speaks. Where Melchizedek gave food and blessing, he offers a transaction: the people for himself, the goods for Abram.",
+      "grammar": "His speech is two blunt imperatives, ten li, ‘give me’, and qach lakh, ‘take for yourself’, with no greeting, no blessing, and no mention of God. Hannefesh, ‘the persons’, uses nefesh in its common sense of a living person. The king has lost everything and been rescued by Abram, yet he speaks first of what he wants.",
+      "words": ["H5414G", "H5315J", "H3947G", "H7399"],
+      "refs": ["Genesis 12:16", "Genesis 13:13"]
+    },
+    {
+      "v": "22",
+      "context": "Abram answers with an oath, and in doing so he takes up Melchizedek's title for God (verse 19) and puts the divine name the LORD in front of it. God Most High, he says, is the LORD who called him.",
+      "grammar": "Harimoti yadi, ‘I have raised my hand’, is a perfect that functions performatively, as grammarians call it: the saying is the swearing, ‘I hereby lift my hand’. Raising the hand is the gesture of an oath, and Scripture even uses it of God swearing (Deuteronomy 32:40). By adding YHWH, the LORD, to El Elyon, Abram identifies the God of Melchizedek's blessing with the God who spoke to him in 12:1.",
+      "words": ["H7311A", "H3027G", "H3068G", "H0410J"],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "The verse joins two names: El Elyon, a title a Canaanite priest-king could use, and the LORD, the personal name of Abram's God. Abram does not reject the title; he claims it for the LORD, declaring that the Most High is not an unknown deity but the God who made promises to him."
+        }
+      ],
+      "text": "The standard Hebrew text has \"the LORD\" before God Most High. The Septuagint, the ancient Greek translation, lacks it and reads only ‘God Most High’. Some scholars think the name was added to make Abram's confession explicit; others think the Greek translator harmonized Abram's words with Melchizedek's in verse 19.",
+      "refs": ["Deuteronomy 32:40", "Daniel 12:7", "Revelation 10:5-6", "Genesis 12:1"]
+    },
+    {
+      "v": "23",
+      "context": "Abram refuses to keep so much as a thread or a sandal strap of Sodom's goods, so that the king of Sodom can never claim to have made him rich. After accepting gifts from Pharaoh in 12:16, he now turns down wealth he had arguably earned.",
+      "grammar": "The verse is an oath formula with its curse left unspoken. Hebrew swears by saying ‘if I take...’ and leaving the penalty implied (‘may God punish me’), so im... im, ‘if... if’, means ‘I will certainly not’. The range ‘from a thread to a sandal strap’ is a merism, naming the smallest items to include everything. In the king's imagined boast, the pronoun ani, ‘I’, is added for emphasis: ‘it was I who made Abram rich’.",
+      "words": ["H0518H", "H2339", "H8288", "H6238"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abram's refusal is faith in action. God had promised to bless him (12:2), and he will not let anyone else, least of all Sodom, take the credit. The next chapter answers him at once, with God promising to be his very great reward (15:1)."
+        }
+      ],
+      "refs": ["Genesis 12:2", "Genesis 15:1", "2 Kings 5:15-16", "1 Samuel 12:3"]
+    },
+    {
+      "v": "24",
+      "context": "Abram limits his own refusal. What the young men have already eaten stands, and his allies Aner, Eshcol, and Mamre are free to take their share. His vow binds himself, not others.",
+      "grammar": "Bil'aday, ‘apart from me’ or ‘not for me’, puts Abram's own claim first and sets it to zero. Hanne'arim, ‘the young men’, is the ordinary word for fighting men or servants. The closing jussive-like imperfect yiqchu chelqam, ‘let them take their share’, grants the allies what is rightfully theirs.",
+      "words": ["H1107", "H5288", "H2506A", "H3947G"],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Abram's scruple does not become a burden he lays on others. As the leader of the expedition he treats his treaty partners fairly, giving them their due share, a principle David later makes law for those who stay behind with the baggage (1 Samuel 30:24-25)."
+        }
+      ],
+      "refs": ["1 Samuel 30:24-25", "Numbers 31:27"]
+    }
+  ]
+}

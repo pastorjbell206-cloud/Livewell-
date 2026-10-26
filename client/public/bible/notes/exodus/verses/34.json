@@ -1,0 +1,315 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After the golden calf and Moses' intercession in chapters 32 and 33, God tells Moses to prepare two new stone tablets like the ones he broke. God will write the same words again. The covenant is not replaced with a different one; it is restored in its original terms.",
+      "grammar": "Pesol-lekha, ‘cut for yourself’, is the verb pasal, to hew or carve stone. It is the root of pesel, ‘carved image’, the object forbidden in 20:4. After Israel's forbidden image, the only carving God commands is the carving of tablets to receive his word. The first tablets were ‘the work of God’ and their writing ‘the writing of God’ (32:16); now Moses supplies the stone and God supplies the writing (vekhatavti, ‘and I will write’). Shibbarta, ‘you broke’, is a Piel of shavar, ‘smash’, recalling 32:19. God names the breaking without reproach.",
+      "words": ["H6458", "H3871", "H3789", "H7665", "H7223G"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The renewed covenant has the same words as the broken one. God does not lower the terms to fit Israel's failure; he restores the relationship on the original terms and supplies again what was lost."
+        }
+      ],
+      "refs": ["Exodus 32:15-19", "Deuteronomy 10:1-4", "Exodus 24:12", "Jeremiah 31:31-33"]
+    },
+    {
+      "v": "2-3",
+      "context": "Moses is to be ready in the morning and to stand before God on the summit, alone. No one else may go up, no one may be seen anywhere on the mountain, and even the flocks may not graze near it. The restrictions are stricter than in chapter 24, when Aaron, his sons, and the elders went part of the way (24:9-11).",
+      "grammar": "Veheyeh nakhon, ‘and be ready’, uses a Niphal participle of kun, to be firm or established, the same word used when the people were to be ‘ready’ for the third day in 19:11, 15. Venitsavta li sham, ‘and station yourself for Me there’, is the Niphal of natsav, the verb God used in 33:21 when he told Moses to stand on the rock. The restrictions in verse 3 use al with the jussive twice (al-yera, ‘let no one be seen’; al-yir'u, ‘let them not graze’), a negative of immediate prohibition.",
+      "words": ["H3559A", "H5324", "H7200G", "H7462B", "H4136"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "After the calf, the approach to God is narrowed to one mediator. The people's sin has made the distance greater than before, and even their animals are kept away from the holy mountain."
+        }
+      ],
+      "refs": ["Exodus 19:11-13", "Exodus 24:9-11", "Exodus 33:21", "Hebrews 12:20"]
+    },
+    {
+      "v": "4",
+      "context": "Moses obeys exactly: he cuts the tablets, rises early, and climbs Sinai carrying them. The narrator uses the compliance formula, ‘as the LORD had commanded him’, a small sign that the covenant is being rebuilt on obedience after the disobedience of the calf.",
+      "grammar": "Vayyashkem babboqer, ‘and he rose early in the morning’, uses a Hiphil of shakham that describes early rising for a purpose. It is used of Abraham on the morning he set out for Moriah (Genesis 22:3) and, bitterly, of the people rising early to sacrifice to the calf (32:6). The narrator repeats sheney luchot avanim, ‘two stone tablets’, twice in the verse, keeping the reader's eye on what Moses carries: blank stone that God will fill.",
+      "words": ["H6458", "H7925", "H3871", "H6680"],
+      "refs": ["Exodus 32:6", "Genesis 22:3", "Deuteronomy 10:3"]
+    },
+    {
+      "v": "5",
+      "context": "God descends in the cloud, stands with Moses, and proclaims the name of the LORD. The verse fulfills the promise of 33:19, where God told Moses he would proclaim his name before him when his goodness passed by.",
+      "grammar": "The verse's subjects are ambiguous in Hebrew. Vayyered YHWH be'anan, ‘and the LORD descended in the cloud’, is clear, but the next two verbs, vayyityatsev immo sham, ‘and he stationed himself with him there’, and vayyiqra veshem YHWH, ‘and he called on (or proclaimed) the name of the LORD’, could have Moses as subject. The phrase qara beshem YHWH is the usual idiom for a worshiper calling on God's name (Genesis 4:26; 12:8), which leads some interpreters to read Moses as the one who calls on the name while God stands with him. But 33:19 has God promising, veqarati veshem YHWH lefanekha, ‘I will proclaim the name of the LORD before you’, with the same construction, so most translations, including the BSB, take God as the one proclaiming. The Hithpael vayyityatsev, ‘he took his stand’, echoes Moses' own stationing in verse 2.",
+      "words": ["H3381", "H6051", "H3320", "H7121I", "H8034"],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "When God proclaims his name, he explains it. The name YHWH, first given at the bush (3:14-15), is now unfolded as a description of his character in verses 6 and 7. In Scripture God's name is his revealed identity, not a label."
+        }
+      ],
+      "refs": ["Exodus 33:18-23", "Exodus 3:14-15", "Genesis 12:8", "Exodus 19:9", "Numbers 11:25"]
+    },
+    {
+      "v": "6",
+      "context": "The LORD passes before Moses, as he promised in 33:22, and proclaims his character in the most quoted self-description in the Old Testament. It begins with mercy: compassion, grace, patience, loyal love, and faithfulness.",
+      "grammar": "YHWH YHWH, the name repeated, can be read as the object of ‘proclaimed’ (‘and proclaimed: The LORD, the LORD’) or with the first as the subject of the verb (‘the LORD passed before him, and the LORD proclaimed: The LORD, a God compassionate’). The list that follows is a series of adjectives piled onto El, ‘God’. Rachum, ‘compassionate’, is related to rechem, ‘womb’ (the word that returns in verse 19), and some writers, notably Phyllis Trible, have drawn out the image of a mother's feeling for the child of her womb, though a shared root does not by itself prove that every use carries the image. Channun, ‘gracious’, describes favor that is freely given. Erekh appayim, ‘slow to anger’, is literally ‘long of nostrils’: in Hebrew anger is pictured as hot breath from the nose, and a long nose takes a long time to heat. Rav-chesed ve'emet, ‘great in loyal love and faithfulness’, joins God's covenant love to his reliability.",
+      "words": ["H5674A", "H0410G", "H7349", "H2587", "H0750", "H0639G", "H2617A", "H0571G"],
+      "history": "Jewish tradition counts verses 6 and 7 as the Thirteen Attributes of Mercy and recites them in the penitential prayers (Selichot) before and during the High Holy Days, on fast days, and when the ark is opened on festivals. The Talmud (b. Rosh Hashanah 17b) pictures God wrapping himself like a prayer leader and teaching Moses this order of prayer, promising that when Israel recites it, it will not return empty. The same Talmudic passage reads the repeated name as meaning that God is the same merciful God before a person sins and after a person sins and repents.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God describes himself, and mercy comes first and at length. Every term but the last is a form of love or grace, and the list became Israel's creed about God's character, quoted by psalmists and prophets across centuries."
+        },
+        {
+          "id": "glory",
+          "note": "Moses asked to see God's glory (33:18) and was answered with a proclamation of God's goodness and name. In this chapter God's glory is revealed chiefly as his character, heard more than seen, which is the pattern John's Gospel follows when it speaks of glory ‘full of grace and truth’ (John 1:14)."
+        }
+      ],
+      "refs": ["Exodus 33:19", "Numbers 14:18", "Psalm 103:8", "Joel 2:13", "Jonah 4:2"]
+    },
+    {
+      "v": "7",
+      "context": "The proclamation continues with God's keeping of loyal love to thousands and his forgiveness of every kind of wrong, and then turns to justice: he will not leave the guilty unpunished, and he visits iniquity to the third and fourth generation. The order reverses 20:5-6, where judgment came first.",
+      "grammar": "Notser chesed la'alafim, ‘keeping loyal love for thousands’, uses natsar, to guard or preserve. Nose avon vafesha vechatta'ah, ‘forgiving iniquity, transgression, and sin’, uses nasa, ‘lift’ or ‘carry’: to forgive is to bear the weight of wrong away. It is the same verb as in the third commandment (20:7) and in Leviticus 16:22, where the goat ‘will carry on itself all their iniquities’. The three nouns cover the Old Testament's vocabulary of wrong: avon, crookedness and its guilt; pesha, rebellion against authority; and chatta'ah, missing the mark. Venaqqeh lo yenaqqeh, ‘and clearing He will not clear’, joins an infinitive absolute to a finite verb, a Hebrew construction of emphasis: ‘He will certainly not acquit’. Jewish liturgy recites the verse only as far as venaqqeh, ‘and clearing’, so that it ends on acquittal; the Talmud (b. Yoma 86a) explains that God clears those who repent and does not clear those who do not.",
+      "words": ["H5341", "H2617A", "H5375I", "H5771G", "H6588", "H2403A", "H5352", "H6485I"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Forgiveness and justice stand in the same sentence without canceling each other. The verse leaves the tension unresolved; the rest of Scripture, and for Christians the cross above all (Romans 3:25-26), shows how God can be both the one who forgives and the one who does not declare the guilty innocent."
+        },
+        {
+          "id": "sin",
+          "note": "Three words for wrongdoing name its different faces: guilt, rebellion, and failure. The same three appear together in the Day of Atonement confession (Leviticus 16:21), and here God names himself as the one who carries all three away."
+        }
+      ],
+      "refs": ["Exodus 20:5-6", "Leviticus 16:21-22", "Numbers 14:18-19", "Nahum 1:3", "Romans 3:25-26"]
+    },
+    {
+      "v": "8-9",
+      "context": "Moses bows at once and worships, then turns the revelation into a prayer. He asks God to go with the people, names them as stiff-necked, and asks God to forgive them and take them as his own inheritance. The request answers God's refusal in 33:3, 5 to go up among them.",
+      "grammar": "Vaymaher, ‘and he hurried’, a Piel of mahar, stresses the speed of Moses' response. Yelekh-na Adonay beqirbenu, ‘let the Lord go, please, in our midst’, uses the particle na, which softens a request. The key clause is ki am-qesheh-oref hu, ‘for it is a stiff-necked people’. The BSB takes ki as concessive, ‘although’. But ki is usually causal, ‘because’, and some interpreters, among them R. W. L. Moberly in At the Mountain of God (1983), read it so: the very stubbornness that made God say he could not go among them (33:3, 5) is the reason they need him in their midst. Moberly compared the logic with Genesis 8:21, where God's promise not to curse the ground again is also grounded in human evil. Vesalachta, ‘and forgive’, uses salach, a verb whose subject in the Old Testament is always God. Unechaltanu, ‘and take us as Your inheritance’, uses nachal, the verb for receiving an inheritance.",
+      "words": ["H4116A", "H7812", "H0136", "H7130G", "H7186", "H6203", "H5545", "H5157"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Moses prays God's own words back to him. Having heard that God is forgiving and abounding in loyal love, he asks for exactly that. Scripture's intercession often works this way, appealing to what God has revealed about himself."
+        },
+        {
+          "id": "repentance",
+          "note": "Moses does not excuse the people; he names their stubbornness and includes himself (‘our iniquity’). The plea for forgiveness rests entirely on God's character, not on any promise of improvement."
+        }
+      ],
+      "refs": ["Exodus 33:3-5", "Exodus 33:15-16", "Genesis 8:21", "Numbers 14:17-20", "Daniel 9:18-19"]
+    },
+    {
+      "v": "10",
+      "context": "God answers by making a covenant and promising wonders never before done in any nation. All the peoples around Israel will see the LORD's work. The rest of the chapter gives the terms.",
+      "grammar": "Hinneh anokhi koret berit, ‘behold, I am making a covenant’, uses a participle, koret, for an action already underway. Karat berit, ‘cut a covenant’, is the standard idiom, perhaps from the ritual of cutting animals (Genesis 15:10, 17-18; Jeremiah 34:18). The wonders are niflaot, from pala, to be extraordinary, and the relative clause asher lo-nivre'u, ‘which have not been created’, uses bara, the verb of Genesis 1:1 whose subject is always God. The wonders God will do for Israel are described as new creation. Nora hu, ‘it is awesome’, is a Niphal participle of yare, to fear: something that inspires awe.",
+      "words": ["H2009", "H0595", "H3772H", "H1285", "H6381", "H1254A", "H3372H"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The covenant is renewed at God's initiative, immediately after Moses' plea for forgiveness. Its renewal is itself one of the wonders it promises: a holy God binding himself again to a people who have just broken faith."
+        }
+      ],
+      "refs": ["Deuteronomy 4:32-34", "Psalm 77:14", "Joshua 3:5", "Isaiah 64:3-4"]
+    },
+    {
+      "v": "11-13",
+      "context": "The covenant terms begin with the land. God will drive out its peoples, and Israel must not make a covenant with them, because their worship would become a snare. Israel is to tear down their altars, smash their standing stones, and cut down their Asherah poles.",
+      "grammar": "Shemor-lekha, ‘keep for yourself’, and in verse 12 hishamer lekha, ‘guard yourself’, a Niphal imperative, frame the command with vigilance. Goresh, ‘driving out’, is a participle again: God's action is already in motion. Moqesh, ‘snare’, is a fowler's trap, used for anything that lures and holds. The three verbs in verse 13 (tittotsun, ‘tear down’; teshabberun, ‘smash’; tikhrotun, ‘cut down’) each carry a paragogic nun, a fuller and emphatic form of the verb ending. Matsevot, ‘sacred stones’, were upright stones set up as memorials or as cult objects, and asherim are the wooden cult symbols of the goddess Asherah.",
+      "words": ["H8104J", "H1644G", "H3772H", "H4170", "H5422", "H4676", "H0842"],
+      "history": "The six peoples listed are the Bible's standard roll of Canaan's inhabitants. The Jebusites held Jerusalem until David's time (2 Samuel 5:6-9); Hivites lived at Gibeon (Joshua 9:7); the Hittites of Canaan are probably groups related to or named after the great Anatolian empire, though the connection is debated. Standing stones have been found at many sites in Israel and Canaan; the shrine in the Israelite fortress at Arad, in the Negev, had a standing stone in its inner niche. Inscriptions from Kuntillet Ajrud and Khirbet el-Qom (eighth century BC) speak of the LORD and ‘his asherah’, showing the syncretism this command forbids.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The danger named is not military but religious: shared worship would draw Israel away from the LORD. The command targets the objects and places of worship, not the people as such, which is why foreigners who turned to the LORD, like Rahab, could be received."
+        }
+      ],
+      "refs": ["Deuteronomy 7:1-5", "Exodus 23:23-24", "Judges 2:1-3", "2 Kings 18:4", "Joshua 9:7"]
+    },
+    {
+      "v": "14",
+      "context": "The reason for the demolitions is stated as the heart of the covenant: Israel must worship no other god, because the LORD's name is Jealous. The verse restates the first commandment in the setting of renewal.",
+      "grammar": "Ki lo tishtachaveh le'el acher, ‘for you shall not bow down to another god’, uses the singular el acher, ‘another god’. Then comes a striking double: YHWH qanna shemo, el qanna hu, ‘the LORD, Jealous is His name; a jealous God is He’. The adjective qanna, used only of God, is here treated as a name. In Hebrew thought a name expresses what someone is, so the phrase says jealousy for his people belongs to God's very identity. The chiastic order (name, Jealous; jealous, God) closes the thought on itself.",
+      "words": ["H7812", "H0410K", "H0312", "H7067G", "H8034", "H7067H"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "The same God who has just proclaimed himself compassionate and gracious now calls himself Jealous. The two belong together: God's jealousy is the exclusive devotion of love, which refuses to share the beloved with rivals who would destroy her."
+        }
+      ],
+      "refs": ["Exodus 20:5", "Deuteronomy 4:24", "Deuteronomy 6:14-15", "Joshua 24:19", "2 Corinthians 11:2"]
+    },
+    {
+      "v": "15-16",
+      "context": "A treaty with Canaan's peoples would lead to shared sacrificial meals and then to intermarriage, and intermarriage to the worship of other gods. The warning traces a slide from social invitation to religious betrayal.",
+      "grammar": "Vezanu acharey eloheyhem, ‘and they will prostitute themselves after their gods’, uses zanah, to act as a prostitute, as a metaphor for idolatry. The metaphor assumes the covenant is a marriage in which the LORD is the husband, the image the prophets develop at length (Hosea 1-3; Jeremiah 3; Ezekiel 16). In verse 16 the Qal zanu, ‘they will prostitute themselves’, is followed by the Hiphil vehiznu, ‘they will cause to prostitute’: the sin of the daughters becomes the sin they lead the sons into. Veqara lekha, ‘and one will invite you’, and ve'akhalta mizzivcho, ‘and you will eat of his sacrifice’, describe a sacrificial feast at which the god was honored, which is how idolatry actually spread.",
+      "words": ["H3772H", "H1285", "H2181", "H2076", "H7121G", "H2077", "H1323G"],
+      "history": "Numbers 25:1-3 tells how this warning came true at Baal Peor: Israelite men were invited by Moabite women to the sacrifices of their gods, ate, and bowed down. The historians later trace Solomon's decline to his foreign wives who turned his heart to their gods (1 Kings 11:1-8), and Nehemiah appeals to Solomon's example (Nehemiah 13:26). The concern is religious rather than ethnic, as Ruth the Moabite, who took Israel's God as her own (Ruth 1:16), shows.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Idolatry is pictured as unfaithfulness within a marriage. The verse shows that turning from God rarely begins with a decision to worship another god; it begins at a table and in a household."
+        }
+      ],
+      "refs": ["Numbers 25:1-3", "1 Kings 11:1-8", "Hosea 4:12-13", "Deuteronomy 7:3-4", "2 Corinthians 6:14-16"]
+    },
+    {
+      "v": "17",
+      "context": "One short command forbids molten gods. Placed in the covenant renewal immediately after the golden calf, it needs no explanation.",
+      "grammar": "Elohey massekhah, ‘gods of cast metal’, uses massekhah, from nasakh, to pour. It is exactly the word used of the calf, egel massekhah, ‘a molten calf’ (32:4, 8). The command is phrased in the singular, lo ta'aseh-lakh, ‘you shall not make for yourself’, addressing each Israelite as the Decalogue does.",
+      "words": ["H0430J", "H4541A", "H6213H"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The renewed covenant names the specific sin that broke the first one. Forgiveness in verse 9 does not make the sin less serious; it makes Israel's renewed obedience possible."
+        }
+      ],
+      "refs": ["Exodus 32:4", "Exodus 20:23", "Leviticus 19:4", "Deuteronomy 27:15"]
+    },
+    {
+      "v": "18",
+      "context": "The calendar of worship follows, beginning with the Feast of Unleavened Bread in the month of Abib. The terms repeat 23:15 almost word for word, placing the exodus at the head of Israel's year as in 12:2.",
+      "grammar": "Chag hammatsot tishmor, ‘the feast of unleavened bread you shall keep’, puts the object first for emphasis. Lemo'ed chodesh ha'aviv, ‘at the appointed time of the month of Abib’, uses mo'ed, appointed time, the word for Israel's festival seasons (Genesis 1:14). Aviv means fresh ears of grain, barley in the milky stage, so the month is named for the moment of the barley harvest. The reason clause ki... yatsata mimmitsrayim, ‘for... you came out of Egypt’, ties the feast to history, not to the agricultural cycle alone.",
+      "words": ["H2282", "H4682", "H8104G", "H4150G", "H0024", "H3318G"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The feasts gather harvest and history into one act of worship. Israel's thanksgiving for grain is also a remembrance of rescue, so that the rhythm of the farming year keeps the exodus in view."
+        }
+      ],
+      "refs": ["Exodus 12:15-20", "Exodus 23:15", "Deuteronomy 16:1-8", "Leviticus 23:6-8"]
+    },
+    {
+      "v": "19-20",
+      "context": "Every firstborn belongs to God, human and animal. Firstborn cattle and sheep are given; a firstborn donkey, which could not be sacrificed, is redeemed with a lamb or else killed; firstborn sons are redeemed. And no one may appear before God empty-handed.",
+      "grammar": "Kol-peter rechem li, ‘every opener of the womb is Mine’, uses peter, the firstborn described as the one that opens the womb. Rechem is the word from which rachum, ‘compassionate’ (verse 6), is formed. Tifdeh, ‘you shall redeem’, is padah, to ransom by payment, the verb used for God's ransom of Israel from Egypt (Deuteronomy 7:8). Va'araphto, ‘then you shall break its neck’, uses araph, from oref, ‘neck’, the same noun as in ‘stiff-necked’ (verse 9). Velo-yera'u fanay reqam, ‘and none shall appear before My face empty’, uses reqam, empty-handed, the word Jacob used of how Laban would have sent him away (Genesis 31:42).",
+      "words": ["H6363A", "H7358", "H6299", "H6202", "H7387", "H2543", "H2142"],
+      "text": "The Hebrew consonants in verse 19 are pointed in the Masoretic Text as tizzakhar, a verb meaning ‘it shall be remembered’, which makes poor sense in context. Most modern translations, the BSB included, read the same consonants as a form of zakhar, ‘male’ (‘all the firstborn males among your livestock’), as the Septuagint also understood it. The change affects only the vowels and brings the verse into line with 13:12.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The firstborn son is redeemed by a substitute. The law keeps alive the memory of the Passover night, when Israel's firstborn were spared (13:14-15), and establishes that a life claimed by God may be ransomed by a price he accepts."
+        }
+      ],
+      "refs": ["Exodus 13:11-15", "Numbers 18:15-17", "Luke 2:22-24", "Exodus 23:15", "Deuteronomy 16:16-17"]
+    },
+    {
+      "v": "21",
+      "context": "The Sabbath command appears in the covenant renewal with a new clause: rest even in plowing time and harvest. The two seasons when every hour counted on a farm are the seasons in which the Sabbath is most tested.",
+      "grammar": "Tishbot, ‘you shall rest’, is the verb shavat, from which Sabbath comes, repeated at the end: becharish uvaqatsir tishbot, ‘in plowing and in harvest you shall rest’. The object-first word order and the repeated verb put the weight on the seasons named. Charish, ‘plowing’, and qatsir, ‘harvest’, frame the agricultural year from its beginning to its end.",
+      "words": ["H5647I", "H7673A", "H2758", "H7105A"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The Sabbath is not suspended when work is most pressing. By keeping it in the busiest seasons, Israel confessed that its harvest depended on God and not only on its own labor."
+        }
+      ],
+      "refs": ["Exodus 20:8-11", "Exodus 23:12", "Exodus 16:23-29", "Nehemiah 13:15-18"]
+    },
+    {
+      "v": "22",
+      "context": "The other two harvest feasts are named: the Feast of Weeks at the first wheat harvest, and the Feast of Ingathering at the turn of the year. With Unleavened Bread (verse 18) they make up Israel's three pilgrimage feasts.",
+      "grammar": "Chag shavu'ot, ‘the feast of weeks’, is named for the seven weeks counted from the barley harvest (Leviticus 23:15-16; Deuteronomy 16:9-10). Bikkurey qetsir chittim, ‘the firstfruits of the wheat harvest’, uses bikkurim, the first ripe produce. Chag ha'asif, ‘the feast of ingathering’, is the autumn harvest festival later called Booths (Leviticus 23:34). Tequfat hashanah, ‘the turn of the year’, uses a word for a circuit or cycle, placing the feast at the year's autumn turning point.",
+      "words": ["H2282", "H7620G", "H1061", "H2406", "H0614", "H8622"],
+      "history": "The Feast of Weeks is known in Greek as Pentecost, from pentēkostē, ‘fiftieth’, because it fell on the fiftieth day of the count. It was on this feast, with Jews from many nations gathered in Jerusalem, that the Spirit came on the disciples (Acts 2:1-11). Later Jewish tradition connected Shavuot with the giving of the law at Sinai, since Exodus 19:1 places Israel's arrival at Sinai in the third month.",
+      "refs": ["Leviticus 23:15-21", "Deuteronomy 16:9-15", "Acts 2:1", "Exodus 23:16", "Numbers 28:26"]
+    },
+    {
+      "v": "23-24",
+      "context": "Three times a year every male is to appear before the Lord. Verse 24 answers the obvious fear: while the men are away, no one will covet their land, because God will enlarge their borders and protect them.",
+      "grammar": "Yera'eh kol-zekhurekha et-peney ha'adon YHWH, ‘every male of yours shall appear before the Lord YHWH’, uses the Niphal (passive) of ra'ah, ‘be seen’, with ‘the face of the Lord’ as its object. Ha'adon, ‘the Lord’ or ‘the Master’, with the article is a title of sovereignty, rare with the divine name. In verse 24, lo-yachmod ish et-artsekha, ‘no one will covet your land’, uses chamad, the verb of the tenth commandment (20:17): God himself will restrain the desire of Israel's neighbors.",
+      "words": ["H7200G", "H2138", "H0113", "H3423H", "H7337", "H2530A"],
+      "text": "Some scholars have suggested that the Niphal pointing of ‘appear’ (yera'eh, ‘be seen’) here and in 23:15, 17 and 34:20 replaced an original active reading, ‘see the face of the Lord’, which the same consonants allow. On this view scribes chose the passive vowels out of reverence, in keeping with 33:20. The suggestion is plausible but unprovable, since the Masoretic vowels are consistent in every such passage.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Obedience left the land exposed, and God promised to guard it. Pilgrimage was an act of trust that the God being worshiped was also keeping watch over the fields and homes left behind."
+        }
+      ],
+      "refs": ["Exodus 23:14-17", "Deuteronomy 16:16", "Psalm 42:2", "Psalm 84:5-7", "Luke 2:41-42"]
+    },
+    {
+      "v": "25-26",
+      "context": "The calendar closes with rules for sacrifice and firstfruits: no leaven with the blood of the sacrifice, no Passover meat left till morning, the best firstfruits brought to God's house, and no kid cooked in its mother's milk. The same four rules close the calendar in 23:18-19.",
+      "grammar": "Lo-tishchat al-chamets dam-zivchi, ‘you shall not slaughter the blood of My sacrifice with leaven’, joins the Passover rules of chapter 12 (no leaven) to sacrifice generally. Velo-yalin, ‘it shall not lodge overnight’, echoes 12:10. Reshit bikkurey admatekha, ‘the first of the firstfruits of your ground’, uses reshit, which can mean ‘first’ in time or ‘best’ in quality; the BSB takes it as ‘best’. The last rule, lo-tevashel gedi bachalev immo, ‘you shall not boil a kid in its mother's milk’, uses a Piel of bashal, to cook or boil.",
+      "words": ["H7819A", "H2557A", "H2077", "H3885A", "H7225H", "H1061", "H1310", "H1423", "H2461"],
+      "history": "The purpose of the milk law has been explained in several ways. Philo, in On the Virtues, read it as a lesson in humaneness, like the laws that forbid taking a mother bird with her young (Deuteronomy 22:6-7). Maimonides, in the Guide of the Perplexed (3.48), suggested that it forbade a pagan practice. The Talmud (b. Chullin 115b) took the threefold repetition of the law (23:19; 34:26; Deuteronomy 14:21) as forbidding cooking, eating, and deriving benefit from meat and milk together, the basis of the Jewish separation of meat and dairy.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The renewed covenant ends with the ordinary details of offering: the right bread, the right timing, the best of the harvest. Faithfulness to God is expressed in small acts of worship repeated every year."
+        }
+      ],
+      "refs": ["Exodus 23:18-19", "Exodus 12:10", "Deuteronomy 14:21", "Deuteronomy 26:1-11", "Proverbs 3:9-10"]
+    },
+    {
+      "v": "27-28",
+      "context": "God tells Moses to write these words as the basis of the covenant with him and with Israel. Moses stays on the mountain forty days and nights without food or water, and ‘he’ writes on the tablets the words of the covenant, the Ten Commandments.",
+      "grammar": "Ketov-lekha, ‘write for yourself’, is addressed to Moses. Al-pi haddevarim ha'elleh, literally ‘upon the mouth of these words’, means ‘in accordance with these words’. Karati, ‘I have made’, is a perfect with performative force, ‘I hereby make’. In verse 28 the subject of vayyikhtov, ‘and he wrote’, is not named. The nearest subject is Moses, who is told to write in verse 27, but verse 1 has God promising, ‘I will write’, and Deuteronomy 10:4 says the LORD wrote the Ten Commandments on the tablets. Many interpreters therefore take God as the subject in verse 28 and the words Moses writes in verse 27 as the covenant terms of verses 10 to 26. Aseret haddevarim, ‘the ten words’, is the first time the Bible uses this name.",
+      "words": ["H3789", "H6310K", "H3772H", "H1285", "H0705", "H6235", "H1697G"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The covenant is put in writing. God's words at Sinai are not left to memory but fixed on stone and scroll, the beginning of Scripture as a written witness that each generation could read."
+        }
+      ],
+      "refs": ["Exodus 34:1", "Deuteronomy 10:1-4", "Deuteronomy 9:9-18", "1 Kings 19:8", "Matthew 4:2"]
+    },
+    {
+      "v": "29-30",
+      "context": "Moses comes down with the two tablets, not knowing that the skin of his face is shining because he had been speaking with God. When Aaron and the people see it, they are afraid to come near him. The man who asked to see God's glory now reflects it without realizing it.",
+      "grammar": "Umosheh lo-yada, ‘and Moses did not know’, uses a disjunctive clause, subject first, to pause the narrative on Moses' unawareness. Karan or panav, ‘the skin of his face shone’, uses qaran, a verb formed from qeren, ‘horn’, and found only in this passage (verses 29, 30, 35). Horns and rays share an image of something projecting outward, as Habakkuk 3:4 speaks of rays (qarnayim) from God's hand. The Septuagint rendered it as the appearance of his face ‘glorified’ (dedoxastai), and the Latin Vulgate as cornuta, ‘horned’, and Jerome indicates that the second-century Greek version of Aquila had already taken it that way. Bedabbero itto, ‘because of his speaking with Him’, gives the cause: the radiance came from conversation with God.",
+      "words": ["H3381", "H5715", "H3045", "H7160", "H5785", "H3372G", "H5066G"],
+      "nt": [
+        {
+          "ref": "2 Corinthians 3:7",
+          "note": "Paul takes up the Septuagint's language of glory (doxa) for Moses' face and argues from the lesser to the greater: if the ministry of the law, engraved on stone, came with such glory that Israel could not gaze at Moses' face, the ministry of the Spirit comes with greater glory. He then contrasts Moses' veil with the unveiled faces of believers who reflect the Lord's glory (3:18). Paul's description of the glory as ‘fading’ (katargoumenēn) is not in Exodus; interpreters take it as Paul's inference from the covenant's temporary role, or from the need to renew the radiance in God's presence."
+        }
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "God's glory changes the one who is near it. Moses reflects light he does not generate and does not notice, a picture the New Testament takes up for the transformation of believers who behold the Lord (2 Corinthians 3:18) and sees fulfilled in the transfigured Christ (Matthew 17:2)."
+        }
+      ],
+      "refs": ["2 Corinthians 3:7-18", "Matthew 17:2", "Habakkuk 3:4", "Psalm 34:5", "Acts 6:15"]
+    },
+    {
+      "v": "31-32",
+      "context": "Moses calls them back. Aaron and the leaders return first, and then all Israel comes near, and Moses gives them everything the LORD had said on Sinai. The fear of verse 30 is overcome by Moses' summons.",
+      "grammar": "Vayyashuvu, ‘and they returned’, uses shuv, the verb for turning back, and the same verb names repentance elsewhere; after the calf, the people's physical return toward Moses carries that overtone. Hannesi'im ba'edah, ‘the leaders in the congregation’, uses nasi, a chief or prince, from nasa, ‘lift up’: one raised above others. Niggeshu, ‘they drew near’, is the Niphal of nagash, the verb used of Moses approaching the thick darkness in 20:21.",
+      "words": ["H7121G", "H7725G", "H5387A", "H5712", "H5066G", "H6680"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Moses mediates God's words to the people as he did at the first giving of the law. The fear his face provokes is the same fear the people felt at God's voice (20:19), and it is answered the same way: God's word comes to them through the mediator."
+        }
+      ],
+      "refs": ["Exodus 20:19-21", "Exodus 24:3", "Deuteronomy 5:27", "Numbers 1:16"]
+    },
+    {
+      "v": "33",
+      "context": "When Moses finishes speaking to the people, he puts a veil over his face. The order is important: the people receive God's words from Moses' unveiled, shining face, and he covers it afterward.",
+      "grammar": "Vaykhal midabber, ‘and he finished speaking’, is a Piel of kalah, to complete, followed by min with an infinitive. Masveh, ‘veil’, occurs only in this passage (verses 33, 34, 35), and its exact form is unknown. The verse sets the veil after the speaking, not during it.",
+      "words": ["H3615G", "H1696G", "H5414H", "H4533"],
+      "text": "The King James Version reads, ‘till Moses had done speaking with them, he put a vail on his face’, which suggests Moses wore the veil while he spoke. Modern translations read ‘when Moses had finished speaking’, which is the more natural sense of the Hebrew and fits verses 34 and 35: Moses spoke with the people unveiled and put on the veil afterward.",
+      "refs": ["2 Corinthians 3:13", "Exodus 34:35"]
+    },
+    {
+      "v": "34-35",
+      "context": "The practice becomes regular. Whenever Moses goes in before the LORD, he removes the veil; when he comes out, he speaks God's commands to the people unveiled, and they see his radiant face; then he puts the veil back until he goes in again. The chapter ends with this repeated rhythm of presence, speech, and covering.",
+      "grammar": "The verbs describe habitual action. Yasir, ‘he would remove’, is an imperfect, and veyatsa vedibber, ‘and he would come out and speak’, are consecutive perfects, the Hebrew forms used for repeated past action (English ‘would’). Yetsuvveh, ‘he was commanded’, is a Pual (passive) imperfect of tsavah. Veheshiv, ‘and he would return’ the veil, is a Hiphil of shuv. The setting is most likely the tent of meeting, where 33:7-11 has Moses speaking with God ‘face to face’.",
+      "words": ["H5493G", "H3318G", "H1696G", "H6680", "H7725J", "H4533", "H7160"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's word reaches the people through a man whose face shows where he has been. The radiance authenticates Moses' words as coming from God's presence, and the veil marks the difference between that presence and ordinary life in the camp."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "The people's fear at Moses' face is a reflected form of their fear of God. The veil lets them live near the mediator without being overwhelmed, while the unveiled speaking keeps God's word before them."
+        }
+      ],
+      "refs": ["Exodus 33:7-11", "Numbers 12:6-8", "2 Corinthians 3:12-18", "Deuteronomy 34:10"]
+    }
+  ]
+}

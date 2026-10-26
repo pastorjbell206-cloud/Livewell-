@@ -1,0 +1,391 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Joseph's first response to his father's death is grief, not arrangements. He falls on his father's face, weeps, and kisses him, fulfilling God's promise at Beersheba that Joseph's own hands would close Jacob's eyes (46:4).",
+      "grammar": "Three quick narrative verbs, vayyippol ... vayyevk ... vayyishshaq, ‘he fell ... he wept ... he kissed’, give the scene without comment. Joseph ‘falls on’ his father's face (al-penei aviv), as he fell on his neck at their reunion (46:29). The weeping here is the last of Joseph's many tears in the story; the next time he weeps (v. 17) it will be over his brothers.",
+      "words": [
+        "H5307G",
+        "H1058",
+        "H5401A"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The man who has spoken most clearly of God's providence (45:5-8) still weeps openly at his father's death. Trust in God's purpose does not require the suppression of grief."
+        }
+      ],
+      "refs": [
+        "Genesis 46:4",
+        "Genesis 46:29",
+        "John 11:35"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "Joseph has his father embalmed in the Egyptian manner, by the physicians of his own household, and Egypt mourns Jacob for seventy days. The patriarch receives the honors of an Egyptian noble.",
+      "grammar": "Lachanot, \"to embalm\", is from chanat, a verb found in this sense only in this chapter (vv. 2, 26). The same consonants describe figs ripening in Song of Solomon 2:13, though a shared spelling does not settle a shared meaning. The narrator adds an explanation for readers, ki ken yimle'u yemei hachanutim, ‘for so the days of embalming are completed’, forty days. Verse 3 then reports vayyivku oto mitsrayim, ‘Egypt wept for him’, using the country's name for its people.",
+      "words": [
+        "H2590A",
+        "H7495",
+        "H1058",
+        "H7657"
+      ],
+      "history": "Joseph uses rofe'im, \"physicians\", rather than the specialist embalmers attached to Egyptian temples; some interpreters suggest he did so to keep his father's body from the religious rites that accompanied Egyptian embalming. The Greek historian Herodotus, writing in the fifth century BC, describes the body lying in natron for seventy days, and the seventy days of mourning here may include the forty of embalming. Israel's own mourning for Aaron and Moses lasted thirty days (Numbers 20:29, Deuteronomy 34:8).",
+      "refs": [
+        "Numbers 20:29",
+        "Deuteronomy 34:8",
+        "Song of Solomon 2:13",
+        "John 19:39-40"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "After the mourning, Joseph asks leave to bury his father in Canaan. He does not go to Pharaoh directly but through Pharaoh's household, and he frames the request around the oath he swore.",
+      "grammar": "Joseph speaks as a petitioner, with the particle na (‘please’) twice and the courtesy im-na matsati chen be'eineikhem, \"If I have found favor in your eyes\", the words Jacob used to him (47:29). Hishbi'ani, \"made me swear\", is the Hiphil of shava, and it is Joseph's strongest argument: an oath binds even Pharaoh's highest official. Joseph quotes his father in a form suited to Egyptian ears, leaving out ‘do not bury me in Egypt’ (47:29) and speaking only of \"the tomb that I dug for myself\". Kariti, ‘I dug’, may instead mean ‘I bought’, since a verb with the same letters means to purchase (Hosea 3:2); either sense fits a family tomb.",
+      "words": [
+        "H7650",
+        "H6913",
+        "H3738B",
+        "H4994"
+      ],
+      "history": "Why Joseph uses intermediaries is not stated. Many commentators suggest that a man in mourning, unshaven and in mourning dress, could not appear before the king; Esther 4:2 records a similar rule at the Persian court, where no one in sackcloth could enter the king's gate.",
+      "refs": [
+        "Genesis 47:29-31",
+        "Esther 4:2",
+        "Hosea 3:2",
+        "Genesis 49:29-32"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "Pharaoh grants the request briefly and on the ground Joseph gave him: the oath. Even the king of Egypt honors a promise made to a dead Hebrew herdsman.",
+      "grammar": "Pharaoh's answer is two imperatives, aleh uqevor, ‘go up and bury’, followed by the reason, ka'asher hishbi'ekha, \"as he made you swear to do\". The verb alah, to go up, is the direction of return to the promised land, the word God used at Beersheba (46:4, ‘I will bring you up’).",
+      "words": [
+        "H5927G",
+        "H6912",
+        "H7650"
+      ],
+      "refs": [
+        "Genesis 46:4",
+        "Genesis 47:31"
+      ]
+    },
+    {
+      "v": "7-9",
+      "context": "A great procession goes up to Canaan: Pharaoh's officials, the elders of Egypt, Joseph's household, his brothers, and chariots and horsemen. Only the children and the flocks stay behind in Goshen. The detail anticipates Exodus, where Pharaoh will offer to let Israel go only if the children, and later the flocks, stay behind (Exodus 10:9-11, 24); here the family leaves both freely, as a pledge of return.",
+      "grammar": "The verb alah (\"went up\") is used three times in verses 7 and 9, for Joseph, for the Egyptian dignitaries, and for the chariots. The procession is called hammachaneh, \"procession\", a word that usually means a camp or an army, and it is kaved me'od, ‘very heavy’, that is, very large. Rekhev and parashim, \"chariots and horsemen\", are the forces that will later pursue Israel to the sea (Exodus 14:9).",
+      "words": [
+        "H5927G",
+        "H4264",
+        "H7393G",
+        "H6571B"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Egypt's elders escort the patriarch of Israel to his grave in the promised land. It is a small picture of the nations honoring the family of Abraham, though the same chariots will soon be turned against it."
+        }
+      ],
+      "refs": [
+        "Exodus 14:9",
+        "Exodus 10:9-11",
+        "Exodus 10:24"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "At the threshing floor of Atad the procession stops for a great lament, and Joseph mourns his father for seven more days. The location is described as \"across the Jordan\", discussed in the chapter note.",
+      "grammar": "Goren ha'atad, \"the threshing floor of Atad\", could be read as a proper name or as ‘the threshing floor of the thornbush’, since atad is the word for a bramble (the thornbush of Jotham's fable, Judges 9:14-15). The lament is described with an internal object and two adjectives, vayyispedu-sham misped gadol vekhaved me'od, ‘they lamented there a lament great and very heavy’. Evel shiv'at yamim, ‘a mourning of seven days’, uses evel, the formal mourning period.",
+      "words": [
+        "H1637",
+        "H0329G",
+        "H4553",
+        "H0060"
+      ],
+      "history": "Threshing floors were open, level public spaces outside towns, used for gatherings as well as for threshing (Ruth 3, 2 Samuel 24:18-25). A seven-day period of mourning appears again at Saul's burial (1 Samuel 31:13) and among Job's friends (Job 2:13), and it survives in the Jewish custom of shiva, from the Hebrew word for seven.",
+      "refs": [
+        "1 Samuel 31:13",
+        "Job 2:13",
+        "Judges 9:14-15",
+        "2 Samuel 24:18"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The Canaanites see the mourning and name the place for it: Abel-mizraim. The people of the land take note of the Egyptians' grief for a Hebrew.",
+      "grammar": "The Canaanites' words are evel-kaved zeh lemitsrayim, ‘this is a heavy mourning for Egypt’. The place name, Avel mitsrayim, sounds like evel mitsrayim, ‘mourning of Egypt’, though the first word as written, avel, means a meadow or watercourse and appears in other place names (Abel-meholah, Abel-shittim). The word kaved, ‘heavy’, has now been used in three straight verses, of the procession (v. 9), the lament (v. 10), and the mourning (v. 11).",
+      "words": [
+        "H0060",
+        "H0067",
+        "H3515",
+        "H3669A"
+      ],
+      "refs": [
+        "Judges 7:22",
+        "Numbers 33:49",
+        "Genesis 35:8"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "Jacob's sons do exactly what he commanded. They carry him to Canaan and bury him at Machpelah, and the narrator repeats the legal description of the site from 23:17-20 and 49:29-30.",
+      "grammar": "Vayya'asu vanav lo ken ka'asher tsivvam, \"So Jacob's sons did as he had charged them\", uses the formula of exact obedience found later for Moses and Israel (Exodus 39:32, 40:16). Vayyis'u oto vanav, \"They carried him\", uses nasa, the verb of 46:5, when his sons carried him down into Egypt, and 47:30, when he asked to be carried out. The phrase la'achuzzat-qever, \"as a burial site\", returns to the legal language of Abraham's purchase.",
+      "words": [
+        "H6680",
+        "H5375H",
+        "H4375",
+        "H0272"
+      ],
+      "nt": [
+        {
+          "ref": "Acts 7:15-16",
+          "note": "Stephen says Jacob and \"our fathers\" died in Egypt and that their bones were carried back to Shechem, to a tomb Abraham bought from the sons of Hamor. Genesis has Jacob buried at Machpelah near Hebron, in the field Abraham bought from Ephron, while Jacob bought land at Shechem from Hamor's sons (33:19), where Joseph was buried (Joshua 24:32). Interpreters explain Stephen's words as a compressed summary that joins the two purchases and the two burial places, as his speech often compresses history, or as referring mainly to the burial of Jacob's sons at Shechem, a tradition not recorded in the Old Testament. The difficulty has been recognized since the early church."
+        }
+      ],
+      "refs": [
+        "Genesis 23:17-20",
+        "Genesis 49:29-32",
+        "Acts 7:15-16",
+        "Exodus 39:32"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "After the burial Joseph and his brothers return to Egypt. The family has shown its claim on Canaan, but its life, for now, is in Egypt.",
+      "grammar": "Vayyashov yosef mitsraymah, ‘Joseph returned to Egypt’, uses shuv, the verb of return, now pointing away from the land. The sentence names three groups (Joseph, his brothers, and all who went up with him) and then repeats the purpose of the trip at the end, acharei qovro et-aviv, ‘after he had buried his father’, framing the whole trip around the burial.",
+      "words": [
+        "H7725G",
+        "H6912",
+        "H5927G"
+      ],
+      "theology": [
+        {
+          "id": "exile",
+          "note": "The return to Egypt is a reminder that the promise is not yet fulfilled. The family has a grave in Canaan and a home in Egypt, and God's word of 15:13-14 still stands: they will be strangers in a land not their own until God brings them out."
+        }
+      ],
+      "refs": [
+        "Genesis 15:13-14",
+        "Hebrews 11:13"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "With their father dead, the brothers fear that Joseph's kindness was only for Jacob's sake. They expect him now to pay them back for what they did.",
+      "grammar": "Lu yistemenu yosef, \"What if Joseph bears a grudge?\", uses lu, usually a particle of wish (‘if only’), here in a fearful ‘what if’. Satam, to bear a grudge, is Esau's verb (27:41): the brothers expect Joseph to act as Esau intended to act once Isaac died. Hashev yashiv, \"he will surely repay\", is an infinitive absolute with the finite verb, stressing certainty. Gamalnu, \"we did\", from gamal, to deal out or repay, frames their deed as an act that invites repayment.",
+      "words": [
+        "H3863",
+        "H7852",
+        "H7725K",
+        "H1580"
+      ],
+      "refs": [
+        "Genesis 27:41",
+        "Genesis 49:23",
+        "Genesis 45:3-5"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "The brothers send Joseph a message said to be from their father, asking him to forgive. They add their own plea, calling themselves servants of the God of his father. Joseph weeps when he hears it. The chapter note's hard question discusses whether Jacob actually said this.",
+      "grammar": "Vaytsavvu el-yosef, \"they sent word to Joseph\", is literally ‘they commanded to Joseph’, using the verb tsavah as their father had used it (49:29, 33). The plea sa na, \"please forgive\", uses nasa, to lift or carry: to forgive is to lift away a guilt. Two words name the wrong: pesha (\"transgression\", a deliberate breach of a relationship) and chatta't (\"sin\", a failure or offense). Both words, with the verb nasa, reappear in God's self-description in Exodus 34:7, where he forgives iniquity, transgression, and sin. The appeal to \"the servants of the God of your father\" asks Joseph to see them as fellow members of the covenant family.",
+      "words": [
+        "H6680",
+        "H5375I",
+        "H6588",
+        "H2403B"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "For the first time the brothers name what they did to Joseph as pesha and chatta't, transgression and sin, and ask directly for forgiveness. Their confession in 42:21 was to one another; this one is made to the man they wronged."
+        }
+      ],
+      "refs": [
+        "Exodus 34:7",
+        "Genesis 42:21",
+        "Genesis 31:36",
+        "Psalm 32:1"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "The brothers come in person, fall before Joseph, and offer themselves as his slaves. The dreams of Genesis 37, where their sheaves bowed to his, reach their last and fullest fulfillment.",
+      "grammar": "Hinnenu lekha la'avadim, \"We are your slaves\", is literally ‘look, we are yours as slaves’. Hinneh with a first person plural suffix presents themselves for his decision. The same offer came from Judah in 44:16 (\"We are now my lord's slaves\"), when the brothers still did not know who Joseph was. Vayyippelu lefanav, ‘they fell before him’, echoes the bowing of 37:7-10 and 42:6.",
+      "words": [
+        "H2009",
+        "H5650",
+        "H5307G"
+      ],
+      "refs": [
+        "Genesis 37:7-10",
+        "Genesis 44:16",
+        "Genesis 42:6"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Joseph's first words answer their fear. His question, \"Am I in the place of God?\", refuses the role of judge that their bowing offers him.",
+      "grammar": "Al-tira'u, \"Do not be afraid\", is the same prohibition God spoke to Jacob before the descent (46:3). The question hatachat elohim ani, \"Am I in the place of God?\", uses the interrogative ha on tachat, ‘in place of’. Jacob asked Rachel the same words in anger (30:2), and the king of Israel asks a similar question in 2 Kings 5:7. Joseph asks it in humility: it is God's place to judge and to repay, not his.",
+      "words": [
+        "H3372G",
+        "H8478H",
+        "H0430G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Joseph does not deny that a wrong was done or that it deserves judgment. He denies that judgment is his to carry out. Paul makes the same move when he tells believers to leave room for God's wrath (Romans 12:19)."
+        }
+      ],
+      "refs": [
+        "Genesis 30:2",
+        "2 Kings 5:7",
+        "Romans 12:19",
+        "Genesis 46:3"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "The center of the chapter and a summary of the whole Joseph story: the brothers intended evil, God intended good, and the result is that many lives have been kept alive.",
+      "grammar": "The sentence sets two subjects in parallel. Ve'attem chashavtem alai ra'ah, ‘and you, you planned against me evil’, begins with an emphatic pronoun; elohim chashavah letovah, ‘God planned it for good’. The suffix on chashavah is feminine, ‘it’, and its nearest antecedent is ra'ah, ‘evil’ (a feminine noun): God planned the same deed for good. The verse therefore speaks of one act with two intentions, not of God repairing afterward what the brothers did. Lehachayot am-rav, \"to preserve the lives of many people\", repeats Joseph's word of 45:5-7 and the Egyptians' thanks in 47:25 (hecheyitanu).",
+      "words": [
+        "H2803I",
+        "H7451I",
+        "H2896C",
+        "H2421"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The verse holds together two things: the brothers are fully responsible for their evil intention, and God's intention governs the outcome. Christian traditions explain how these fit in different ways. Reformed theologians speak of God's concurrence, ordaining the event without being the author of the sin; Arminian and Wesleyan theologians speak of God permitting the evil and overruling it for good. Both read the verse as showing that no evil escapes God's purpose."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Acts 2:23 speaks of the cross in the same double way: Jesus was delivered up by God's set plan and put to death by lawless hands. Genesis 50:20 is the Old Testament pattern for that confession."
+        }
+      ],
+      "refs": [
+        "Genesis 45:5-8",
+        "Acts 2:23",
+        "Acts 4:27-28",
+        "Romans 8:28",
+        "Psalm 76:10"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Joseph repeats his reassurance and adds a promise to provide for them and their children. The narrator says he comforted them and spoke to their hearts.",
+      "grammar": "Anokhi akhalkel etkhem, ‘I myself will provide for you’, uses the emphatic pronoun and the Pilpel of kul, the verb of 45:11 and 47:12. The closing phrase, vaydabber al-libbam, \"spoke kindly to them\", is literally ‘spoke to their heart’, an idiom for tender, persuasive speech that wins trust. It is used of Shechem speaking to Dinah (34:3), of Boaz to Ruth (Ruth 2:13), and of God's word to his exiled people, \"Speak tenderly to Jerusalem\" (Isaiah 40:2).",
+      "words": [
+        "H0595",
+        "H3557",
+        "H5162G",
+        "H3820A"
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Joseph's forgiveness is not only a refusal to punish but a positive commitment to his brothers' good and their children's. Forgiveness in Scripture moves beyond cancelling a debt to seeking the welfare of those forgiven (compare Luke 6:27-28)."
+        }
+      ],
+      "refs": [
+        "Genesis 45:11",
+        "Isaiah 40:2",
+        "Ruth 2:13",
+        "Luke 6:27-28"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "Joseph lives on in Egypt with his father's household to the age of 110 and sees his great-grandchildren. Machir's sons are received on his knees.",
+      "grammar": "Benei shilleshim, \"to the third generation\", is literally ‘sons of third-generation ones’. It may mean Ephraim's great-grandchildren or his grandchildren counted as the third generation from Joseph; interpreters differ. Yulledu al-birkei yosef, \"were brought up on Joseph's knees\", is literally ‘were born on Joseph's knees’, the gesture of acknowledgment Jacob used in 48:12 and Rachel in 30:3. Some take it as a formal adoption of Machir's sons by Joseph; others as simply receiving them into the family.",
+      "words": [
+        "H8029",
+        "H4353G",
+        "H1290",
+        "H3205"
+      ],
+      "history": "Machir became the leading clan of Manasseh, \"the father of Gilead\" (Numbers 26:29). His descendants settled the land of Gilead east of the Jordan (Numbers 32:39-40), and Deborah's song names Machir among the tribes that answered her call (Judges 5:14).",
+      "refs": [
+        "Numbers 26:29",
+        "Numbers 32:39-40",
+        "Judges 5:14",
+        "Genesis 48:12",
+        "Psalm 128:6"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "Near death, Joseph passes on the promise his father gave him: God will visit the family and bring them up to the land sworn to Abraham, Isaac, and Jacob. Genesis names the three patriarchs together here, as the recipients of the sworn promise, a formula that runs through the rest of the Torah.",
+      "grammar": "Anokhi met, \"I am about to die\", is the participle Jacob used in 48:21, and the promise that follows repeats his father's. Vehe'elah etkhem, ‘and he will bring you up’, uses the Hiphil of alah, the verb of 46:4 and the reverse of yarad, going down. Nishba, \"promised on oath\", is a Niphal of shava, referring to God's oath to Abraham (22:16) and Isaac (26:3). The doubled paqod yifqod is discussed in the chapter note.",
+      "words": [
+        "H6485I",
+        "H5927H",
+        "H7650",
+        "H4191"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The last speech in Genesis is a restatement of God's sworn covenant. Joseph has governed Egypt, but he rests the future of his people entirely on the oath God made to their fathers."
+        },
+        {
+          "id": "hope",
+          "note": "Joseph speaks of a visitation he will not live to see. Exodus 3:16 and 4:31 use the same verb when the promise begins to be kept, and the people who hear it believe and worship."
+        }
+      ],
+      "refs": [
+        "Genesis 48:21",
+        "Exodus 3:16",
+        "Exodus 6:8",
+        "Deuteronomy 1:8"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "Joseph binds the sons of Israel by oath to carry his bones up from Egypt when God visits them. Unlike his father, he does not ask to be buried in Canaan at once; his coffin will wait for the exodus.",
+      "grammar": "Vayyashba, ‘he made them swear’, is the Hiphil of shava, the form Jacob used of Joseph (v. 5). Veha'alitem et-atsmotai mizzeh, \"you must carry my bones up from this place\", uses the Hiphil of alah again: the verb of God bringing Israel up becomes the verb of Israel carrying Joseph up. Exodus 13:19 quotes this verse almost word for word when Moses takes the bones.",
+      "words": [
+        "H7650",
+        "H6106G",
+        "H5927H"
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 11:22",
+          "note": "Hebrews counts this charge as faith: \"By faith Joseph, when his end was near, spoke about the exodus of the Israelites and gave instructions about his bones.\" The writer's point is that Joseph, at the height of Egyptian honor, treated the promised departure as certain enough to plan his remains around it. His bones became a pledge the whole people carried through the wilderness (Exodus 13:19) and buried at Shechem (Joshua 24:32)."
+        }
+      ],
+      "refs": [
+        "Exodus 13:19",
+        "Joshua 24:32",
+        "Hebrews 11:22"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "Joseph dies at 110, is embalmed, and is placed in a coffin in Egypt. The book that began with the heavens and the earth ends with a coffin waiting in a foreign land.",
+      "grammar": "Ben-me'ah va'eser shanim, ‘a son of a hundred and ten years’, is the Hebrew idiom for age. Vayyisem ba'aron, \"placed it in a coffin\", uses an unusual verb form, best taken as impersonal, ‘one placed him’. Aron is the word that elsewhere names the ark of the covenant. The last word of Genesis in Hebrew is bemitsrayim, ‘in Egypt’.",
+      "words": [
+        "H0727",
+        "H3455",
+        "H2590A",
+        "H4714G"
+      ],
+      "history": "Wealthy Egyptians were buried in wooden or stone coffins, often shaped to the body, after embalming. A rabbinic tradition (Babylonian Talmud, Sotah 13a) observes that Israel carried two arks through the wilderness, the chest of Joseph's bones and the ark of the covenant, side by side.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Genesis ends without resolution. The promise of land stands, the family is fruitful, and the one who saved them lies unburied in Egypt, waiting. The book leaves its reader waiting too, for the God who visits."
+        }
+      ],
+      "refs": [
+        "Exodus 1:6-8",
+        "Exodus 25:10",
+        "Joshua 24:29"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "A delegation from Jerusalem arrives in Galilee, the second time Mark has scribes come down from the capital to inspect Jesus (3:22). They notice one small thing, that some of his disciples eat bread without the customary washing, and that detail becomes the door into the longest teaching on purity in the Gospels. The scene follows directly on the summary of 6:53-56, where people touched even the fringe of Jesus' cloak and were healed: contact with him cleanses rather than defiles.",
+      "grammar": "Mark describes the disciples' hands as koinais, literally ‘common’, and then stops to translate for his readers: tout' estin aniptois, ‘that is, unwashed’. Koinos in ordinary Greek means shared or public, but in Jewish usage it became the word for what is profane or ritually unfit, the opposite of hagios, ‘holy’ (1 Maccabees 1:47 and 62 use it of forbidden food, and Peter uses it in Acts 10:14). The gloss is one of several places where Mark explains Jewish custom and Semitic words, which is a main reason most scholars think he wrote for readers outside Judea. The present indicative esthiousin, ‘they are eating’, puts the reader at the table as the critics watch.",
+      "words": ["G2839G", "G0449", "G1122", "G2414"],
+      "history": "Handwashing before ordinary meals was not a command of the law of Moses, which required washing of priests before they served (Exodus 30:17-21). The Mishnah records that hands were washed for ordinary food, tithe, and priestly portions (m. Hagigah 2:5), devotes a whole tractate, Yadayim (‘Hands’), to the subject, and preserves a dispute between the schools of Shammai and Hillel over whether one washes the hands before or after mixing the cup at a meal (m. Berakhot 8:2), which shows the practice was already being debated before AD 70. The Letter of Aristeas (305) describes Jewish translators in Egypt washing their hands in the sea before prayer. Yair Furstenberg (New Testament Studies 54, 2008) has argued that handwashing for common food was a recent Pharisaic development rather than an old priestly rule, which would explain why it drew Jesus' fire.",
+      "parallels": ["Matthew 15:1-2"],
+      "refs": ["Mark 3:22", "Acts 10:14", "Exodus 30:17-21", "Luke 11:37-41"]
+    },
+    {
+      "v": "3-4",
+      "context": "Mark interrupts the story with a parenthesis for readers who did not know these customs: the Pharisees, and in Mark's broad phrase all the Jews, wash before eating, wash after the market, and keep many other washings of vessels. The aside explains the complaint of verse 5 and sets up Jesus' charge that tradition has multiplied beyond the command.",
+      "grammar": "Two words in these verses have puzzled readers since antiquity. Pugmē (dative of pugmē, ‘fist’) says they wash ‘with a fist’, and no one is certain what that means: a cupped handful of water, rubbing one fist in the other palm, washing up to the wrist, or, idiomatically, ‘thoroughly’. Codex Sinaiticus and Codex Washingtonianus read pukna, ‘often’, and the Latin Vulgate's crebro (‘frequently’) follows that sense; most editors keep pugmē as the harder reading that scribes tried to smooth. In verse 4 the verb for washing after the market is baptisōntai, ‘immerse themselves’, while Codex Vaticanus and Codex Sinaiticus read rhantisōntai, ‘sprinkle themselves’; the noun baptismous, ‘washings’, follows for the vessels. Xestōn, ‘pitchers’, is a Greek form of the Latin sextarius, a measure of about a pint, one of several Latin loanwords in Mark. The participle kratountes, ‘holding fast’, describes the tradition as something gripped.",
+      "words": ["G4435", "G0907", "G0909", "G3582", "G2902", "G3862", "G4245G"],
+      "text": "Besides the variants in the washing verbs, the words ‘and couches for dining’ at the end of verse 4 are missing from several of the oldest manuscripts, including Sinaiticus and Vaticanus, and are included in most later ones. Editors are divided: a scribe may have added them from ritual lists, or dropped them because washing a dining couch seemed odd. The BSB includes them; the NIV and ESV mention the question in a footnote.",
+      "history": "Josephus says the Pharisees had passed on to the people certain regulations handed down from the fathers that were not written in the laws of Moses, and that the Sadducees rejected these (Antiquities 13.297). That is exactly the tradition of the elders Mark names here. Mark's phrase all the Jews is a generalization for Gentile readers; how widely ordinary Jews outside Pharisaic circles kept these washings is debated.",
+      "refs": ["Matthew 23:25-26", "Galatians 1:14", "Hebrews 9:10", "Colossians 2:20-22"]
+    },
+    {
+      "v": "5",
+      "context": "The critics put their question to Jesus about his disciples, since a teacher was held responsible for his students' conduct. They name the real issue as the tradition of the elders, and the rest of the scene turns on that phrase.",
+      "grammar": "The question uses peripatousin, ‘walk’, for how the disciples live: ‘Why do your disciples not walk according to the tradition?’ This is a Hebraism. The Hebrew verb halakh, ‘to walk’, stands behind the rabbinic word halakhah, the body of rulings for how to live, and the Old Testament often speaks of walking in God's statutes (Leviticus 18:4, Psalm 119:1). The critics frame the question as one of conduct in the law, not of manners. The phrase paradosin tōn presbuterōn, ‘tradition of the elders’, uses presbuteroi for past teachers, not the town elders of the synagogue.",
+      "words": ["G4043", "G3862", "G4245G", "G5330"],
+      "refs": ["Leviticus 18:4", "Psalm 119:1", "Mark 2:18", "Mark 2:24"]
+    },
+    {
+      "v": "6-7",
+      "context": "Jesus does not answer the question about hands. He answers the claim behind it by quoting Isaiah, and turns the charge back on his accusers: their worship honors God with the lips while the heart is elsewhere. The quotation sets up the two words that govern the whole chapter, lips and heart, outside and inside.",
+      "grammar": "Kalōs, ‘well’ or ‘rightly’, is edged with irony here and again in verse 9. Hupokritōn, ‘hypocrites’, is the only time the noun appears in Mark; in ordinary Greek a hupokritēs was a stage actor, and the word came to mean someone whose outward part does not match the person underneath. Gegraptai, ‘it stands written’, is a perfect, the usual formula for Scripture that remains in force. Matēn, ‘in vain’, is the adverb on which Jesus' use of Isaiah turns; it is not in the Hebrew text (see the Old Testament note).",
+      "words": ["G2573", "G5273", "G1125", "G3155", "G4576", "G1778", "G2588"],
+      "ot": [
+        {
+          "ref": "Isaiah 29:13",
+          "note": "In Isaiah the LORD complains that Jerusalem draws near with its mouth and honors him with its lips while its heart is far from him, and the Hebrew ends, literally, ‘their fear of me is a commandment of men learned by rote’. The Septuagint renders that last line ‘in vain do they worship me, teaching commandments of men and teachings’, perhaps reading the Hebrew watehi (‘and it is’) as watohu (‘and in vain’). Mark follows the Greek closely, with the order of the last words changed. The Hebrew already says the people's reverence has been reduced to human instruction; the Greek sharpens it into a verdict on worship built on human precepts. Isaiah spoke to Jerusalem's leaders in the late eighth century BC, whose religion went on while their policy ignored God (Isaiah 29:14-15). Jesus applies the pattern to the teachers of his own day."
+        }
+      ],
+      "parallels": ["Matthew 15:7-9"],
+      "text": "Matthew places the Isaiah quotation after the Corban example (15:3-9), so that it comes as the verdict on the case. Mark puts it first, so that the case illustrates the quotation.",
+      "refs": ["Isaiah 29:13", "Jeremiah 12:2", "Ezekiel 33:31", "Matthew 23:27-28"]
+    },
+    {
+      "v": "8-9",
+      "context": "Jesus states the charge twice, first plainly and then with sarcasm: they have let go of God's command and grip human tradition. The next verses give the example that proves it.",
+      "grammar": "The verbs are chosen to match. Aphentes, ‘letting go’ (aorist participle of aphiēmi), is set against krateite, ‘you hold fast’, the same verb Mark used for the Pharisees ‘holding’ the tradition in verse 3; the grip has moved from God's command to the human rule. In verse 9 kalōs atheteite, ‘you neatly set aside’, is heavy irony: atheteō means to annul or treat as void, a legal word (Galatians 3:15 uses it of a covenant). The contrast between entolē tou theou, ‘the command of God’, and paradosis tōn anthrōpōn, ‘the tradition of men’, is the axis of the passage.",
+      "words": ["G0863G", "G2902", "G0114", "G1785", "G3862", "G2476"],
+      "text": "At the end of verse 9 some manuscripts read stēsēte, ‘so that you may establish’ your tradition, and others tērēsēte, ‘so that you may keep’ it. The Nestle-Aland 27th edition printed the first; the 28th edition and most other modern editions print the second. The BSB's ‘maintain’ fits either.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus distinguishes two authorities that his critics treated as one: the written command of God and the interpretive tradition built around it. He does not reject interpretation as such, but he insists that the command judges the tradition and never the reverse."
+        }
+      ],
+      "refs": ["Deuteronomy 4:2", "Galatians 3:15", "Colossians 2:8"]
+    },
+    {
+      "v": "10",
+      "context": "The example begins with Moses. Jesus quotes the fifth commandment and the law's penalty for cursing parents, establishing the duty that the Corban vow will be shown to evade.",
+      "grammar": "Mōusēs gar eipen, ‘for Moses said’: Matthew's parallel reads ‘for God said’ (Matthew 15:4), and the two ways of speaking are equivalent for both Gospels, since what Moses commands in the law is God's word. The second quotation ends thanatō teleutatō, literally ‘let him end in death’, which renders the Hebrew idiom mot yumat, ‘he shall surely be put to death’, where the doubled verb intensifies. Kakologōn, ‘speaking evil of’, is the Septuagint's word for cursing parents; Mark will use the same verb in 9:39.",
+      "words": ["G3475", "G5091", "G2551", "G2288", "G5053"],
+      "ot": [
+        {
+          "ref": "Exodus 20:12",
+          "note": "The fifth commandment, which Mark gives in the Septuagint's words. In the Hebrew the verb kabbed, ‘honor’, comes from the root for weight: to honor parents is to give them weight in one's life. In Israel the command included material support for parents in old age, which is the point at issue here. Deuteronomy 5:16 repeats it with a promise attached, and Paul cites it in Ephesians 6:2."
+        },
+        {
+          "ref": "Exodus 21:17",
+          "note": "The penalty clause, also in Leviticus 20:9. The Septuagint (where it stands as Exodus 21:16) uses kakologeō, ‘speak evil of’, for the Hebrew meqallel, ‘one who treats with contempt’ or ‘curses’. Jesus cites it to show how seriously the law takes the parents' claim: a son who dishonors them stands under the law's heaviest sentence, and a tradition that lets him withhold support has made light of something God made weighty."
+        }
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus treats care for aging parents as a command of God that no religious act can cancel. Devotion to God that costs one's parents their support is not devotion he accepts, a principle Paul restates when he calls neglect of one's own family a denial of the faith (1 Timothy 5:8)."
+        }
+      ],
+      "parallels": ["Matthew 15:4"],
+      "refs": ["Deuteronomy 5:16", "Leviticus 20:9", "Ephesians 6:2-3", "1 Timothy 5:4-8"]
+    },
+    {
+      "v": "11-12",
+      "context": "Here is the case. A son declares his property Corban, dedicated to God, with respect to his parents, and the tradition then holds him to his vow even when it leaves them without help. The problem Jesus names is not the vow itself but the ruling that a vow outranks the fifth commandment.",
+      "grammar": "Korban is a Hebrew or Aramaic word in Greek letters, which Mark translates as dōron, ‘gift’, that is, an offering to God. The sentence is built as a vow formula quoted inside a legal ruling: ‘whatever you might have been helped by from me (ōphelēthēs, aorist passive subjunctive) is Corban’. Then the grammar breaks off. Verse 11 begins a condition (ean eipē, ‘if a man says’) that never gets its conclusion; verse 12 starts afresh with ouketi aphiete, ‘you no longer permit’. Grammarians call this an anacoluthon, and it reproduces the way a ruling would be summarized aloud. The present tense of aphiete makes the scribes the ones who do the forbidding: it is their ruling, not merely the son's choice, that keeps the parents from help.",
+      "words": ["G2878", "G1435", "G5623", "G0863I"],
+      "history": "Vows of this kind are well attested. The Mishnah's tractate Nedarim (‘Vows’) treats substitute formulas such as konam, and tells of a man in Beth Horon whose father was forbidden by vow to benefit from him and who tried to get around it by giving a wedding feast as a gift to a friend (m. Nedarim 5:6). The same tractate records a debate over whether a sage may release a vow by pointing to the honor owed to father and mother: Rabbi Eliezer said yes, the other sages said no in general, but they agreed that where the vow concerned the man and his parents it could be opened on that ground (m. Nedarim 9:1). So later rabbinic law moved toward Jesus' position. Josephus explains korban to Greek readers as meaning ‘a gift’ (Antiquities 4.73) and says it was known abroad as a Jewish oath (Against Apion 1.167). An ossuary lid from Jebel Hallet et-Turi near Jerusalem, published by Joseph Fitzmyer (Journal of Biblical Literature 78, 1959), bears an Aramaic inscription declaring whatever a person might find of profit in the ossuary to be qorban to God, the same formula in stone.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The verses show how a religious act can be turned into an escape from love of neighbor. Jesus reads the law by its weightier matters: a vow to God that injures one's parents fails the command it claims to honor."
+        }
+      ],
+      "parallels": ["Matthew 15:5-6"],
+      "refs": ["Numbers 30:1-2", "Deuteronomy 23:21-23", "Proverbs 28:24", "Matthew 23:16-22"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus pronounces the verdict on the Corban practice and then widens it: this is one example of many. The verse closes the dispute with the Pharisees; from verse 14 Jesus turns to the crowd.",
+      "grammar": "Akurountes, ‘making void’, is a legal term used of cancelling a contract or will (Galatians 3:17 uses it of a later law that cannot annul the promise). What is voided is ton logon tou theou, ‘the word of God’, now used of the written command just quoted. The cognate pair paradosei ... paredōkate, ‘the tradition that you handed on’, repeats the root of handing over, as if to say the only thing guaranteed by this handing on is the tradition itself.",
+      "words": ["G0208", "G3056", "G3862", "G3860"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus calls the commandment of Exodus the word of God and sets it above the most respected teaching of his day. Christians have drawn different conclusions from this for their own traditions: Protestants have often cited it for Scripture's authority over church tradition, while Catholic and Orthodox readers note that Jesus condemns a tradition that contradicts God's word, not tradition that faithfully hands it on (Paul commends the latter in 2 Thessalonians 2:15)."
+        }
+      ],
+      "refs": ["Galatians 3:17", "2 Thessalonians 2:15", "1 Corinthians 11:2", "Mark 12:24"]
+    },
+    {
+      "v": "14-16",
+      "context": "Jesus calls the crowd back and gives them a one-sentence riddle that goes beyond handwashing to the purity system itself: nothing entering a person from outside can defile; what comes out defiles. The disciples will need the explanation of verses 18 to 23 to understand it.",
+      "grammar": "The two imperatives akousate, ‘hear’, and sunete, ‘understand’, echo the call to hear in the parable of the sower (4:3, 4:9) and the language of Isaiah 6:9 that Mark quoted in 4:12. The saying is built on two matching participles, eisporeuomenon, ‘going in’, and ekporeuomena, ‘coming out’, with koinōsai, ‘to make common’ or defile, in each half. Its form is absolute (‘nothing ... can’), and interpreters differ over whether it is a flat denial that food can defile or a Semitic ‘not so much this as that’ comparison stressing the inner source of impurity. Furstenberg reads it as aimed specifically at the Pharisaic idea that impure hands pass impurity into the body through food.",
+      "words": ["G0191", "G4920", "G1531", "G1607", "G2840"],
+      "text": "Verse 16, ‘If anyone has ears to hear, let him hear’, is absent from Codex Sinaiticus, Codex Vaticanus, and other early witnesses, and critical editions omit it; it appears in most later manuscripts and in the King James Version. It probably entered the text from 4:9 and 4:23. The BSB leaves the verse number empty.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The saying moves the source of defilement from the world outside to the person within. What makes someone unfit for God's presence is not first what touches him but what comes out of him, which no ritual washing can reach."
+        }
+      ],
+      "parallels": ["Matthew 15:10-11"],
+      "refs": ["Mark 4:9", "Mark 4:12", "Romans 14:14", "Titus 1:15"]
+    },
+    {
+      "v": "17-18",
+      "context": "In the house the disciples ask about the parable, a pattern Mark repeats: public saying, private explanation (4:10, 9:28, 10:10). Jesus answers with a rebuke. They have seen two miracles of bread and a walk on the sea, and they still do not understand what he says about bread.",
+      "grammar": "Mark calls the riddle a parabolē, which translates the Hebrew mashal, a word that covers proverbs, riddles, and figurative sayings as well as stories. Houtōs kai humeis asunetoi este, ‘are you too so without understanding?’: the kai, ‘also’, puts the disciples alongside the critics and the crowd, and asunetos is the negative of the understanding Jesus called for in verse 14. The question ou noeite, ‘do you not perceive?’, will return in 8:17 when their dullness reaches its peak.",
+      "words": ["G3850", "G0801", "G3539", "G2840"],
+      "parallels": ["Matthew 15:12-17"],
+      "text": "Matthew inserts an exchange here that Mark lacks: the disciples report that the Pharisees were offended, Jesus calls them blind guides, and Peter asks for the explanation (Matthew 15:12-15). Mark keeps only the rebuke to the disciples as a group.",
+      "refs": ["Mark 4:10-13", "Mark 6:52", "Mark 8:17-18"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus explains the riddle in bluntly physical terms: food goes into the stomach, not the heart, and passes out of the body. Then comes a short clause that most modern Bibles set in parentheses as Mark's own comment to his readers, drawing the conclusion that all foods are clean.",
+      "grammar": "The argument sets kardia, ‘heart’, against koilia, ‘belly’, and ends with aphedrōn, ‘latrine’, a coarse word chosen for effect. The key is the participle katharizōn, ‘cleansing’ or ‘declaring clean’. It is masculine and nominative, so it cannot agree with any noun in the sentence about food; it most naturally attaches to the subject of legei, ‘he says’, in verse 18, that is, to Jesus. Hence the reading most translations adopt: Jesus said this, thereby declaring all foods clean, an aside by the evangelist. The Byzantine text reads the neuter katharizon instead, which attaches to the process of elimination and gave the King James Version's ‘purging all meats’. Daniel Boyarin (The Jewish Gospels, 2012) and James Crossley have argued, from different angles, that even the masculine can be read as describing digestion purging the food, and that the saying addresses only food defiled by unwashed hands, not the Levitical food laws. Most commentators, including Robert Gundry and Joel Marcus, take the clause as Mark's comment extending Jesus' words to the food laws, while agreeing that the church came to that conclusion only gradually.",
+      "words": ["G2588", "G2836", "G0856", "G2511", "G1033"],
+      "text": "The difference between katharizōn (masculine, the reading of the oldest manuscripts and all modern critical editions) and katharizon (neuter, the Byzantine text) is one letter, an omega against an omicron, but it decides whether the clause is Jesus' or Mark's pronouncement or a description of the body. That is why the KJV and modern versions read so differently here.",
+      "history": "Mark's readers would know how contested this conclusion had been. Acts tells how Peter, who by early tradition stands behind Mark's Gospel (Papias, in Eusebius, Church History 3.39.15), insisted he had never eaten anything common or unclean until a vision taught him otherwise (Acts 10:9-16), and Paul records the conflict at Antioch over table fellowship with Gentiles (Galatians 2:11-14).",
+      "theology": [
+        {
+          "id": "law",
+          "note": "For Mark, Jesus' teaching settles what the food laws were for: they marked Israel as holy, and the holiness they pointed to is a clean heart. The church read this as fulfillment rather than contempt, the law's intention met in Christ (compare Romans 14:14, Hebrews 9:10). Jewish readers such as Boyarin dispute that Jesus meant it so, which is why the grammar of this clause matters."
+        }
+      ],
+      "refs": ["Acts 10:9-16", "Romans 14:14", "Galatians 2:11-14", "1 Timothy 4:4"]
+    },
+    {
+      "v": "20-23",
+      "context": "Jesus names what does come out of the heart: evil thoughts and a catalogue of twelve evils, deeds first and then dispositions. The list closes the teaching by restating the principle of verse 15, now with its content filled in. It is one of the fullest descriptions of the human heart in the Gospels.",
+      "grammar": "Hoi dialogismoi hoi kakoi, ‘the evil reasonings’, stands at the head as the source of what follows. The list itself is carefully built: six plural nouns, porneiai, klopai, phonoi, moicheiai, pleonexiai, ponēriai (‘sexual immoralities, thefts, murders, adulteries, acts of greed, wickednesses’), naming repeated acts, then six singular nouns naming vices of character: dolos (‘deceit’), aselgeia (‘debauchery’, unrestrained indecency), ophthalmos ponēros, blasphēmia, huperēphania (‘arrogance’), and aphrosunē (‘folly’, the fool of Proverbs who ignores God). Ophthalmos ponēros, literally ‘an evil eye’, is a Hebrew idiom for envy or stinginess (Deuteronomy 15:9, Proverbs 28:22), which is why the BSB has ‘envy’. Blasphēmia can mean slander against people or against God. Pleonexia is the grasping desire for more that Paul calls idolatry (Colossians 3:5).",
+      "words": ["G1261", "G4202", "G4124", "G0766", "G3788", "G4190", "G0988", "G5243", "G0877"],
+      "text": "Manuscripts arrange the first items in different orders. Matthew's shorter list of seven follows the order of the Ten Commandments (murder, adultery, sexual immorality, theft, false witness, slander), where Mark's has no such pattern.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is traced to the heart, the center of thought and will in biblical language. The list includes attitudes (envy, arrogance, folly) alongside acts, so that no one who has avoided murder and theft can count himself clean. The prophets' hope for a new heart (Ezekiel 36:26) is the only remedy that matches this diagnosis."
+        }
+      ],
+      "parallels": ["Matthew 15:18-20"],
+      "refs": ["Genesis 6:5", "Jeremiah 17:9", "Ezekiel 36:26", "Galatians 5:19-21", "Romans 1:29-31"]
+    },
+    {
+      "v": "24",
+      "context": "Right after teaching that food does not defile, Jesus crosses into Gentile territory, the region of Tyre. He wants privacy, perhaps rest with the disciples, but his reputation has gone ahead of him (people from Tyre and Sidon had come to him in 3:8).",
+      "grammar": "Ouk ēdunēthē lathein, ‘he was not able to escape notice’, is a striking statement: in Mark, Jesus' power is never in doubt, yet he cannot stay hidden. Mark uses the same verb dunamai of Jesus in 6:5, where he could do no mighty work in Nazareth. Ta horia Turou, ‘the region of Tyre’, means the territory belonging to the city, which reached inland toward upper Galilee.",
+      "words": ["G5184", "G3725", "G1410", "G2990"],
+      "history": "Tyre was the leading city of Phoenicia, a free city under Roman rule, rich from trade and purple dye. Josephus, writing late in the first century, singles out the Tyrians as among the people most hostile to the Jews (Against Apion 1.70), and he records that Tyrians killed Jews living among them at the start of the war with Rome (Jewish War 2.478). The coastal cities depended on Galilean grain (Acts 12:20 shows Tyre and Sidon dependent on Herod's territory for food), which gave the woman's words about bread an edge.",
+      "text": "Many manuscripts, followed by the King James Version, read ‘the region of Tyre and Sidon’. The shorter ‘Tyre’ is found in early witnesses of several kinds, and most editors think ‘and Sidon’ was added from Matthew 15:21 and Mark 7:31.",
+      "parallels": ["Matthew 15:21"],
+      "refs": ["Mark 3:8", "Acts 12:20", "Ezekiel 26:1-6", "Luke 4:25-26"]
+    },
+    {
+      "v": "25-26",
+      "context": "A mother whose little daughter has an unclean spirit hears of Jesus, comes at once, and falls at his feet. Mark then identifies her with unusual precision: Greek by language and culture, Syrophoenician by birth. Everything about her marks her as an outsider, which is the point after the teaching on clean and unclean.",
+      "grammar": "Hellēnis, ‘Greek’, here means Gentile and Greek-speaking rather than born in Greece, and Surophoinikissa tō genei, ‘a Syrophoenician by race’, distinguishes Phoenicians of the Roman province of Syria from the Libyphoenicians of North Africa around Carthage. The diminutive thugatrion, ‘little daughter’, is the same word Jairus used in 5:23, which invites the reader to set the Jewish synagogue leader and the Gentile mother side by side. The imperfect ērōta, ‘she kept asking’, shows her persistence before Jesus has said a word.",
+      "words": ["G2365", "G0169", "G4363", "G1674", "G4949", "G1085G", "G2065"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first Gentile in Mark to ask Jesus for help is a woman, a foreigner, and the mother of a demonized child. The scene anticipates the church's mission to the nations and shows that the reach of Jesus' mercy is not decided by the categories the previous verses have just dismantled."
+        }
+      ],
+      "parallels": ["Matthew 15:22-25"],
+      "text": "Matthew calls her a Canaanite woman (Matthew 15:22), an old biblical name for Israel's ancient enemies that heightens the contrast, and adds that the disciples urged Jesus to send her away and that he said he was sent only to the lost sheep of Israel. Luke has no parallel; the whole section Mark 6:45 to 8:26 is absent from Luke.",
+      "refs": ["Mark 5:22-23", "1 Kings 17:8-16", "Matthew 8:5-13"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus answers with a proverb about a household meal: the children eat first, and their bread is not thrown to the dogs. The saying is harsh, and the chapter note discusses how to read it. Its setting in Mark's larger story also matters: the Twelve have just gathered twelve baskets of bread in Galilee (6:43), and Jesus has just declared all foods clean.",
+      "grammar": "Aphes prōton chortasthēnai ta tekna, ‘let the children first be satisfied’: the word prōton, ‘first’, found only in Mark's version, implies a second course. Chortazō, ‘to be filled’, is the verb used for the crowds in both feedings (6:42, 8:8), so the bread of the saying is the bread Jesus has been giving. Kunariois is the diminutive of kuōn, ‘dog’. Grammarians debate how much force the diminutive still carried in first-century Greek, where many diminutives had lost their sense of smallness, but the setting under the table (verse 28) clearly pictures house dogs rather than street scavengers.",
+      "words": ["G0863I", "G4413G", "G5526", "G5043", "G0740", "G2952"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The saying states an order in God's saving plan, Israel first and then the nations, which Paul will restate in Romans 1:16 and follow in Acts 13:46. The word first also means that the Gentiles' turn is coming; the question is only when."
+        }
+      ],
+      "parallels": ["Matthew 15:26"],
+      "refs": ["Romans 1:16", "Acts 13:46", "Romans 15:8-9", "Mark 6:42"]
+    },
+    {
+      "v": "28",
+      "context": "The woman accepts the picture and turns it. The dogs under the table are part of the household too, and they eat the crumbs the children drop. She asks not for the children's place but for what spills from their abundance, and she argues on Jesus' own terms.",
+      "grammar": "She addresses him as kurie. The word can mean ‘sir’ as well as ‘Lord’, but in the critical text of Mark she is the only person who addresses Jesus this way, a fact Mark's readers, who confessed Jesus as Lord, would not miss. Her reply begins kai, ‘even’: even the dogs eat. She changes his tekna, ‘children’, to paidiōn, a diminutive for young children, the kind who drop food, and psichiōn, ‘crumbs’ (another diminutive), completes the domestic scene. She wins the exchange by adopting the metaphor rather than contesting it.",
+      "words": ["G2962G", "G2952", "G5132", "G5589", "G3813"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Her faith is a humble persistence that takes Jesus' word seriously and still expects mercy from it. She does not claim a right to the bread; she trusts that there is enough of it to reach her. That combination of humility and bold expectation is what Jesus rewards."
+        }
+      ],
+      "parallels": ["Matthew 15:27"],
+      "refs": ["Luke 16:21", "Psalm 145:15-16", "Luke 18:1-8"]
+    },
+    {
+      "v": "29-30",
+      "context": "Jesus grants the request because of her answer, and she returns home to find the child lying on the bed, free. It is the only healing at a distance in Mark. The girl is never brought to Jesus; the word spoken to her mother is enough.",
+      "grammar": "Dia touton ton logon, ‘because of this word’: Mark credits the woman's reply itself, where Matthew has Jesus praise her great faith (Matthew 15:28). Two perfects carry the result: exelēluthen, ‘has gone out’, in Jesus' words, and in the narrative the girl is found beblēmenon, ‘laid’ (perfect passive participle), on the bed, and the demon exelēluthos, ‘having gone’. The perfect tense stresses a completed deliverance with lasting effect, and Mark lets the mother, not a crowd, confirm it.",
+      "words": ["G3056", "G1831", "G0906H", "G2825"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus' power works across distance and across the border between Jew and Gentile. Like the centurion's servant in Matthew 8:5-13, another Gentile healed at a distance, the healing depends on trusting his word rather than being near him."
+        }
+      ],
+      "parallels": ["Matthew 15:28"],
+      "refs": ["Matthew 8:13", "John 4:50-53", "Psalm 107:20"]
+    },
+    {
+      "v": "31",
+      "context": "Jesus goes north from Tyre to Sidon, then back to the Sea of Galilee into the Decapolis. The route stays in largely Gentile territory, where the next healing and the second feeding (8:1-10) take place.",
+      "grammar": "The prepositions trace the route: ek, ‘out of’, the region of Tyre, dia Sidōnos, ‘through Sidon’, eis, ‘to’, the Sea of Galilee, and ana meson tōn horiōn Dekapoleōs, ‘up through the middle of the region of the Decapolis’. The Byzantine text reads ‘from the region of Tyre and Sidon he came to the Sea’, which removes the detour.",
+      "words": ["G5184", "G4605", "G1179", "G3725"],
+      "history": "Sidon lies about twenty miles north of Tyre, so the route runs away from Galilee before circling back, a trip of many days. Some critics, pointing to this, have said Mark had little knowledge of the region's geography; others read the route as a deliberate extended withdrawal through Gentile lands, which fits Jesus' wish in verse 24 not to be found. The Decapolis was where the healed demoniac of Gerasa had proclaimed what Jesus had done (5:20), which may explain the welcome here.",
+      "parallels": ["Matthew 15:29"],
+      "refs": ["Mark 5:20", "Matthew 4:25", "Mark 3:8"]
+    },
+    {
+      "v": "32",
+      "context": "People bring a man who is deaf and speaks only with difficulty and ask Jesus to lay his hand on him. Matthew has only a summary of many healings here (Matthew 15:29-31); this story, like the blind man of 8:22-26, is Mark's alone.",
+      "grammar": "Mogilalon, ‘speaking with difficulty’, is an extremely rare word. It occurs nowhere else in the New Testament, and in the Greek Old Testament only in Isaiah 35:6. The rarity is the clue: Mark, or the tradition before him, chose a word that sends the reader straight to Isaiah's picture of God's coming. Kōphos can mean deaf, mute, or both; here it is paired with the speech defect.",
+      "words": ["G2974", "G3424", "G5342", "G3870", "G2007"],
+      "ot": [
+        {
+          "ref": "Isaiah 35:5-6",
+          "note": "Isaiah 35 pictures the desert blooming and the ransomed returning to Zion when God comes to save, and promises that the ears of the deaf will be unstopped and the tongue of the mute will sing. The Hebrew for the mute is illem; the Septuagint translates it with mogilalos, ‘speaking with difficulty’, the word Mark uses. The echo tells the reader what the healing means: the new exodus of Isaiah 35 is happening, and it is happening in Gentile territory."
+        }
+      ],
+      "refs": ["Isaiah 35:5-6", "Matthew 11:4-5", "Exodus 4:11"]
+    },
+    {
+      "v": "33-34",
+      "context": "Jesus takes the man aside, touches his ears and tongue, looks up to heaven, sighs, and speaks one Aramaic word. For a man who cannot hear, the gestures say what words cannot: this is where the healing is aimed, and it comes from heaven.",
+      "grammar": "Ephphatha is Aramaic, most likely the reflexive-passive imperative ethpatach (with the t assimilated), ‘be opened’, and Mark translates it with the Greek aorist passive imperative dianoichthēti. It is one of several Aramaic words Mark preserves on Jesus' lips (5:41, 14:36, 15:34). Estenaxen, ‘he sighed’ or ‘groaned’, is the verb Paul uses for creation and believers groaning for redemption (Romans 8:22-23); the sigh expresses grief at the brokenness he is about to heal. Anablepsas eis ton ouranon, ‘looking up to heaven’, is the gesture of prayer Jesus used at the first feeding (6:41).",
+      "words": ["G0618", "G1147", "G4429", "G0308", "G4727", "G2188", "G1272"],
+      "history": "Saliva was widely thought to have healing power in the ancient world. Tacitus (Histories 4.81) and Suetonius (Vespasian 7) tell how the emperor Vespasian, at Alexandria around AD 69, was asked to heal a blind man with his spittle. Mark's readers would have known such stories, and Mark keeps the physical details without any sense that they are magic: the healing comes through the word and the prayer to heaven. The early church in Rome adopted the gesture and the word in its baptismal rites; Ambrose of Milan describes the ‘opening’ of the ears and nostrils of candidates (On the Sacraments 1.2).",
+      "refs": ["Mark 8:23", "John 9:6", "Romans 8:22-26", "Mark 6:41"]
+    },
+    {
+      "v": "35-36",
+      "context": "The man's ears open, his tongue is released, and he speaks correctly. Jesus orders silence, and the more he orders it, the more the news spreads. The man who could not speak now speaks plainly, and the crowd that was told to be quiet cannot be.",
+      "grammar": "Elythē ho desmos tēs glōssēs autou, ‘the bond of his tongue was loosed’: desmos is a chain or fetter, and the phrase pictures the tongue as held captive. Adolf Deissmann (Light from the Ancient East) compared ancient curse tablets that speak of binding a person's tongue, and some interpreters see the healing as release from a hostile power, though Mark does not mention a spirit. Elalei orthōs, ‘he began speaking correctly’, uses an imperfect for the new capacity that continues. In verse 36 the correlative hoson ... mallon perissoteron, ‘the more he commanded ... the more abundantly’, sets two imperfects against each other, diestelleto and ekērusson, each continuing, each outrunning the other.",
+      "words": ["G0455", "G0189", "G1199", "G3723", "G1291", "G2784"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's power frees what was bound. Jesus' command to silence belongs to the pattern scholars since William Wrede (The Messianic Secret, 1901) have discussed: he will not have his identity proclaimed through wonders apart from the cross. Yet the kingdom cannot be kept quiet, and the news spreads in spite of him."
+        }
+      ],
+      "refs": ["Mark 1:44-45", "Luke 13:16", "Mark 5:19-20"]
+    },
+    {
+      "v": "37",
+      "context": "The chapter ends with the crowd's verdict, a chorus of astonishment that sums up everything Jesus has done and alludes to Isaiah 35. In a chapter that began with Jerusalem's authorities finding fault, Gentiles in the Decapolis find none.",
+      "grammar": "Huperperissōs exeplēssonto, ‘they were astonished beyond all measure’, piles an intensified adverb on an imperfect verb of amazement. Kalōs panta pepoiēken, ‘he has done all things well’: the perfect tense views Jesus' work as complete with results that stand. The kalōs here answers the ironic kalōs of verses 6 and 9: the critics were ‘rightly’ described by Isaiah and ‘neatly’ set God's command aside; Jesus does all things truly well. Some interpreters hear an echo of Genesis 1:31, where God saw all that he had made and it was very good, since the Septuagint there uses kala lian, but the verbal link is loose.",
+      "words": ["G1605", "G2573", "G4160G", "G2974", "G0216", "G2980"],
+      "ot": [
+        {
+          "ref": "Isaiah 35:5-6",
+          "note": "The crowd's words, the deaf hear and the mute speak, repeat the pairing of Isaiah 35:5-6, and the plural makes the verdict general: this is what Jesus does. The Septuagint's alaloi, ‘the mute’, in Isaiah 35:6 (‘the tongue of the mute will be clear’) is the adjective the crowd uses. Unknowingly they announce that the God of Isaiah 35 has come to save."
+        }
+      ],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "In Isaiah the healing of the deaf and mute belongs to the renewal of the whole creation, the desert blooming and the redeemed returning home. The crowd's praise places Jesus' healings inside that renewal: each restored body is a first sign of the world made new."
+        }
+      ],
+      "refs": ["Genesis 1:31", "Isaiah 35:5-6", "Matthew 15:31", "Mark 1:27"]
+    }
+  ]
+}

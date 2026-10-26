@@ -1,0 +1,178 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The famine does not lift, and the grain from the first trip runs out. Jacob speaks as though nothing had been said in 42:38: go back and buy \"a little more food.\" His request ignores the one condition that makes a return trip possible.",
+      "grammar": "\"Severe\" translates kaved, ‘heavy’, the same adjective used of the famines in 12:10 and 41:31; it comes from the root that gives kavod, ‘weight’ or ‘glory’. The verb killu, \"had eaten all\", is a Piel of kalah, ‘to finish’, marking the supply as exhausted. Meat okhel, ‘a little food’, is Jacob's understatement, and \"a little\" will return in his list of gifts (v. 11).",
+      "words": ["H3515", "H3615J", "H4592"],
+      "refs": ["Genesis 12:10", "Genesis 41:31", "Genesis 42:38"]
+    },
+    {
+      "v": "3-5",
+      "context": "Judah, not Reuben, now answers their father. He states the Egyptian's condition plainly, frames his speech with it at beginning and end, and sets out the only two options: send Benjamin and eat, or keep him and starve.",
+      "grammar": "\"Solemnly warned\" is haed heid, an infinitive absolute followed by a finite verb of the same root, a common Hebrew way of adding emphasis. The verb ud in the Hiphil means to testify against or warn with witnesses, the language of a formal charge. Judah's conditions use a participle with the particles yesh and ayin: im yeshkha meshalleach, ‘if you are sending’, and im enekha meshalleach, ‘if you are not sending’. The construction frames the choice as Jacob's present, ongoing decision.",
+      "words": ["H5749B", "H6440H", "H1115", "H7971G"],
+      "history": "In 42:15-20 Joseph required the youngest brother to come, but the narrative did not record the words \"You will not see my face again\". Judah's report supplies them. Genesis often gives fuller or different details when a character retells events, and in the Joseph story these retellings reveal the speaker as much as the events.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Judah begins to lead by telling his father an unwelcome truth. He does not flatter Jacob's grief or hide the terms; he names the cost of refusal. This is the first step in the change that will make Judah the family's spokesman in chapter 44."
+        }
+      ],
+      "refs": ["Genesis 42:15-20", "Genesis 44:23", "Exodus 19:21"]
+    },
+    {
+      "v": "6-7",
+      "context": "Jacob, called Israel here, blames his sons for telling the man about Benjamin. They defend themselves: the Egyptian asked direct questions, and they could not have guessed where the answers would lead.",
+      "grammar": "Hareotem li, \"Why did you bring this trouble upon me?\", is a Hiphil of raa, ‘to do harm’, literally ‘why did you do evil to me?’ The brothers answer with two more emphatic infinitive absolutes: shaol shaal, ‘he asked closely’, and hayadoa neda, ‘could we really have known?’ Moladtenu, \"our family\", means one's kindred or place of birth, the word God used when he called Abram out of his father's house (12:1).",
+      "words": ["H7489A", "H7592", "H4138", "H3045"],
+      "text": "In chapter 42 the brothers offered the information about their father and youngest brother on their own (42:13); here they say Joseph questioned them about it, and Judah says the same in 44:19. Some interpreters see the brothers shading the truth to defend themselves; others take the later accounts as filling in questions the shorter narrative left out. The narrative leaves both open.",
+      "refs": ["Genesis 42:13", "Genesis 44:19-20", "Genesis 12:1"]
+    },
+    {
+      "v": "8-10",
+      "context": "Judah makes his pledge. He appeals to the survival of the whole family, including the children, and binds himself to bring Benjamin back or bear the blame forever. He ends with a rebuke that is also an argument: the delay has already cost two trips.",
+      "grammar": "Judah's pronoun anokhi, ‘I myself’, stands first: ‘I will be surety for him.’ Miyyadi tevaqshennu, ‘from my hand you may seek him’, uses baqash in the sense of requiring what was entrusted, close to darash in 42:22 and 9:5. The last clause, vechatati lekha kol-hayyamim, is literally ‘I will have sinned against you all the days’: chata here means to stand guilty before the one wronged. Gam anachnu gam attah gam tappenu, ‘both we and you and our little ones’, repeats gam to widen the circle of those at risk. In verse 10, lule, ‘if not’, introduces a condition contrary to fact, and hitmahmahnu, \"delayed\", is the verb used of Lot lingering in Sodom (19:16).",
+      "words": ["H0595", "H6148", "H1245", "H2398", "H2945", "H4102"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Judah does not offer a substitute victim, as Reuben offered his sons (42:37). He puts himself under the liability. The verse is not a prophecy, but it is the first clear step toward the substitution of 44:33, where he asks to bear the penalty in Benjamin's place."
+        },
+        {
+          "id": "family",
+          "note": "Judah frames the decision around the whole household, fathers and children alike. The brother who once broke the family for twenty pieces of silver now speaks as its guardian."
+        }
+      ],
+      "refs": ["Genesis 37:26-27", "Genesis 42:37", "Genesis 44:32-33", "Hebrews 7:22"]
+    },
+    {
+      "v": "11-12",
+      "context": "Jacob yields and turns practical. He sends a gift of the land's best produce and double silver to repay what was returned, and offers the charitable explanation that the silver was a mistake.",
+      "grammar": "Im-ken efo, \"If it must be so, then\", is the language of reluctant consent. Zimrat haarets, \"the best products of the land\", is a phrase found only here. Zimrah elsewhere means song (Exodus 15:2), and scholars disagree whether the word here comes from the same root (the produce the land is praised for) or from a separate root meaning strength or choice produce. Minchah, \"gift\", is the word for the gift Jacob sent ahead to Esau (32:13) and later the word for the grain offering in Leviticus 2: something given to secure favor from a superior. Mishgeh, \"a mistake\", occurs only here and is related to the vocabulary Leviticus uses for unintentional sin.",
+      "words": ["H2173", "H4503H", "H6875", "H5219", "H3910", "H0992", "H4932H", "H4870"],
+      "history": "Balm, spices (nekhot, probably an aromatic gum), and myrrh are the three goods the Ishmaelite caravan was carrying to Egypt when the brothers sold Joseph (37:25). \"Honey\" may be bees' honey or a thick syrup of dates or grapes; the Hebrew word covers both. Pistachios (batnim, found only here) and almonds grow in the hill country of Canaan. These are durable luxury goods of a land with little grain to spare, fit for an Egyptian official.",
+      "refs": ["Genesis 32:13-20", "Genesis 37:25", "Proverbs 18:16", "Leviticus 2:1"]
+    },
+    {
+      "v": "13-14",
+      "context": "Jacob releases Benjamin with a prayer. He asks God Almighty to move the Egyptian to compassion so that both Simeon and Benjamin come home, and then gives the outcome over to God with words of bleak acceptance.",
+      "grammar": "El Shaddai, \"God Almighty\", is the name under which God gave the covenant promises to Abraham (17:1), under which Isaac blessed Jacob (28:3), and under which God renewed the promise of nations and kings to Jacob at Bethel (35:11). Jacob prays by the name attached to the promise of descendants at the moment his descendants are at risk. The closing clause, kaasher shakholti shakhalti, repeats one verb in the same form, ‘as I am bereaved, I am bereaved’. Esther's ‘if I perish, I perish’ (Esther 4:16) uses the same pattern of resignation.",
+      "words": ["H0410G", "H7706", "H7356B", "H7921A"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jacob does everything he can (gifts, double silver, the brother) and then prays for what he cannot do: that God would change the heart of a foreign ruler. His prayer is answered in the very man he fears, whose compassion, rachamim, will grow warm for Benjamin in verse 30."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El Shaddai in Genesis is the name of God attached to fruitfulness and promise. Invoking it here, Jacob appeals to God's own commitment to the family, not to his sons' cleverness."
+        }
+      ],
+      "refs": ["Genesis 17:1", "Genesis 28:3", "Genesis 35:11", "Esther 4:16", "Proverbs 21:1"]
+    },
+    {
+      "v": "15-17",
+      "context": "The brothers go down with the gift, the silver, and Benjamin, and stand before Joseph. When Joseph sees Benjamin, he orders his steward to prepare a noon meal at his house, and the steward obeys without explanation.",
+      "grammar": "The steward is described as asher al-beito, ‘the one over his house’. Joseph himself held this role in Potiphar's house (39:4-5). Utevoach tevach, \"slaughter an animal\", pairs a verb with a noun from the same root (literally ‘slaughter a slaughter’), and a meal with meat was a mark of special honor. Batsohorayim, \"at noon\", is a dual form, the double brightness of midday.",
+      "words": ["H4503H", "H4932H", "H2873", "H2874", "H6672A"],
+      "history": "The title ‘the one over the house’ is also used for high officials in Israel's royal court (1 Kings 4:6; Isaiah 22:15). In Egypt, great households employed stewards who managed property, provisions, and guests, which is the role this man plays throughout chapters 43 and 44.",
+      "refs": ["Genesis 39:4-5", "Genesis 44:1", "1 Kings 4:6", "Isaiah 22:15"]
+    },
+    {
+      "v": "18",
+      "context": "Being taken into Joseph's house terrifies the brothers. They assume the silver has been used as a pretext, and they imagine being seized as slaves. Their fear is exactly what they did to Joseph: they took a brother, sold him, and made him a slave.",
+      "grammar": "Muvaim, \"we have been brought\", is a Hophal participle, a passive: they are being moved by forces they cannot see. Their fear is expressed in two vivid infinitives: lehitgolel alenu, ‘to roll himself upon us’, and lehitnappel alenu, ‘to fall upon us’, both Hithpael forms picturing an attack. Batechillah, \"the first time\", looks back to the first trip.",
+      "words": ["H3372G", "H1556", "H5307G", "H5650"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "A guilty conscience reads kindness as a trap. The brothers expect to be treated as they once treated Joseph. The verse shows how buried guilt distorts the way people interpret the actions of others, including acts of grace."
+        }
+      ],
+      "refs": ["Genesis 37:27-28", "Genesis 42:21", "Proverbs 28:1"]
+    },
+    {
+      "v": "19-22",
+      "context": "Before anyone can accuse them, the brothers approach the steward at the door and explain the silver in full. Their speech is anxious, detailed, and honest about the facts, and it protests that they do not know who put the silver back.",
+      "grammar": "Bi adoni, \"Please, sir\", opens with a deferential particle used to begin a request to a superior; Judah uses the same opening in 44:18. Yarod yaradnu, ‘we surely came down’, is another infinitive absolute of emphasis. Bemishqalo, \"the full amount\", literally means ‘in its weight’: the silver was weighed, not counted. Mi-sam kaspenu, ‘who put our silver’, ends the speech with the question they cannot answer.",
+      "words": ["H0994", "H3381", "H4948", "H3701G"],
+      "text": "Verse 21 says that all the brothers found their silver at the lodging place, while 42:27 and 42:35 describe one brother finding his silver on the road and the rest finding theirs at home. The difference is discussed at 42:27-28.",
+      "refs": ["Genesis 42:27-28", "Genesis 42:35", "Genesis 44:18"]
+    },
+    {
+      "v": "23",
+      "context": "The steward's reply is the calmest voice in the chapter. He tells them not to fear, attributes the silver to their God, confirms that he received their payment, and brings Simeon out to them.",
+      "grammar": "\"It is fine\" is shalom lakhem, literally ‘peace to you’, a greeting and reassurance. Matmon, \"treasure\", usually means hidden treasure, something buried or stored away (Job 3:21; Proverbs 2:4). The phrase \"Your God, the God of your father\" speaks of the God of the family's covenant, and the steward uses it with surprising familiarity. Kaspekhem ba elai, ‘your silver came to me’, is the language of a receipt: their account is settled.",
+      "words": ["H7965G", "H4301", "H0430G", "H8095G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The steward's words are true on two levels. He likely means only that the silver was an unexplained blessing, but behind Joseph's order the family's God is indeed the giver. The first word the brothers hear in Joseph's house is ‘peace’, not accusation."
+        }
+      ],
+      "refs": ["Genesis 31:29", "Genesis 50:17", "Proverbs 2:4"]
+    },
+    {
+      "v": "24-25",
+      "context": "The steward gives the brothers a full welcome: water for washing their feet and fodder for their donkeys. Learning that they will eat with the lord of the land, they lay out their gift for his arrival at noon.",
+      "grammar": "Vayyirchatsu ragleihem, \"to wash their feet\", describes the first act of hospitality in the ancient Near East, after travel on dusty roads in sandals. Vayyakhinu, \"they prepared\", is the same verb Joseph used for preparing the meal (v. 16): host and guests are both getting ready.",
+      "words": ["H7364", "H7272", "H4554", "H3559A"],
+      "history": "Foot-washing for guests is part of the welcome Abraham gives his three visitors (18:4) and that Laban gives Abraham's servant (24:32). In a household like Joseph's, a servant would provide the water and the guests would wash, or be washed, before the meal.",
+      "refs": ["Genesis 18:4", "Genesis 24:32", "John 13:5", "1 Timothy 5:10"]
+    },
+    {
+      "v": "26-28",
+      "context": "Joseph comes home, and all eleven brothers bow before him with their gift. He asks after their welfare and then after their father, and they answer that their father is well and still alive, bowing again as they speak.",
+      "grammar": "The word shalom appears three times: Joseph asks about their shalom, asks whether their father has shalom, and they reply that he does. The brothers call their father ‘your servant’, an ordinary courtesy that also brings Jacob symbolically under Joseph, as in the dream of the sun and moon (37:9-10). Vayyiqqedu vayyishtachavu, \"they bowed down\", pairs two verbs of bowing, the first meaning to bow the head; Abraham's servant uses the same pair when he worships God at the well (24:26).",
+      "words": ["H7812", "H7965I", "H2205H", "H6915"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The dream of eleven stars bowing (37:9) is now fulfilled with all eleven brothers present. God keeps his word even through a family's worst act and twenty years of silence."
+        }
+      ],
+      "refs": ["Genesis 37:9-10", "Genesis 24:26", "Genesis 42:6"]
+    },
+    {
+      "v": "29-31",
+      "context": "Joseph sees Benjamin, his mother's son, for the first time in more than twenty years. He blesses him, then rushes out to weep in private before washing his face and returning in control. The scene shows the pressure building inside the disguise.",
+      "grammar": "Ben-immo, \"his own mother’s son\", sets Benjamin apart from the ten: he and Joseph are the only sons of Rachel. Joseph's blessing, Elohim yochnekha beni, uses chanan, ‘to be gracious’, the verb of the priestly blessing (Numbers 6:25) and the root of the word the brothers used for Joseph's pleading in 42:21. Nikhmeru rachamav, \"he was moved\", is literally ‘his compassion grew warm’, the idiom used of the true mother in Solomon's judgment (1 Kings 3:26). Vayyitappaq, ‘he restrained himself’, is a Hithpael of apaq, and the same verb returns in 45:1, when Joseph can restrain himself no longer.",
+      "words": ["H0517", "H2603A", "H3648", "H7356B", "H0662", "H2315"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Joseph's compassion for Benjamin answers Jacob's prayer in verse 14 that God would grant mercy, rachamim, before the man. The prayer did not change a ruler's policy; it was answered in a brother's heart."
+        }
+      ],
+      "refs": ["Numbers 6:25", "1 Kings 3:26", "Hosea 11:8", "Genesis 45:1-2"]
+    },
+    {
+      "v": "32",
+      "context": "The meal is served at three separate tables: Joseph alone, the brothers together, and the Egyptians who ate with him. The narrator explains the Egyptian refusal to eat with Hebrews, a detail that will matter when the family settles apart in Goshen.",
+      "grammar": "Levaddo ... levaddam ... levaddam, ‘by himself ... by themselves ... by themselves’, repeats the word for separateness three times. \"The Hebrews\" (haivrim) is the name outsiders use for Abraham's descendants in Genesis (14:13; 39:14, 17; 41:12). Yukhlun, ‘they were able’, carries an extra nun ending, an older or emphatic form of the imperfect.",
+      "words": ["H0905H", "H4713", "H5680", "H8441"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The social distance Egypt keeps from the Hebrews helps preserve Jacob's family as a distinct people. Separation that looks like contempt becomes part of how God keeps the family intact until it becomes a nation."
+        }
+      ],
+      "refs": ["Genesis 46:34", "Genesis 14:13", "Exodus 8:26", "Acts 10:28"]
+    },
+    {
+      "v": "33-34",
+      "context": "The brothers are seated in exact birth order, and they look at each other in amazement. Benjamin's portion is five times the others'. The chapter ends with the brothers eating and drinking freely, their fear gone and the hardest test still ahead.",
+      "grammar": "Habbekhor kivkhorato vehatsair kitsirato, \"from the firstborn to the youngest\", is a pair of rhyming phrases, literally ‘the firstborn according to his birthright and the youngest according to his youth’. Vayyitmehu, \"looked at one another in astonishment\", describes stunned amazement. Mas'ot, \"portions\", come from nasa, ‘to lift’, the dishes carried from the host's table. Chamesh yadot, \"five times\", is literally ‘five hands’. Vayyishkeru, \"drank freely\", is the verb used of Noah's drunkenness (9:21), though it can also mean to drink one's fill.",
+      "words": ["H1060", "H6810", "H8539", "H4864", "H3027L", "H7937"],
+      "text": "English Bibles translate the last verb differently: \"drank freely\" (BSB), ‘were merry’ (KJV), ‘drank their fill’ or ‘became drunk’ in others. The verb covers everything from satisfied drinking to intoxication, and the translations reflect how far each thinks it goes here.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Benjamin receives a favored son's portion, and the brothers do not resent it. The envy that once turned them against Rachel's firstborn seems to have lost its hold, and the next chapter will test whether that change is real."
+        }
+      ],
+      "refs": ["Genesis 37:3-4", "Genesis 9:21", "Genesis 45:22", "Haggai 1:6"]
+    }
+  ]
+}

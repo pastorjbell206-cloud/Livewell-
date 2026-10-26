@@ -1,8 +1,10 @@
+import type { CSSProperties } from "react";
 import { Link, useLocation } from "wouter";
-import { ArrowRight } from "lucide-react";
+import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
-import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { READING_PATHS as CANONICAL_PATHS, availableCount } from "@/lib/readingPaths";
+import { READING_PATHS as SERIES_PATHS } from "@/data/reading-paths-post-christian";
 
 interface PathArticle {
   title: string;
@@ -25,49 +27,35 @@ const READING_PATHS: ReadingPath[] = [
     title: "When Your Marriage Is Drifting",
     introduction:
       "This path is for the person who has not given up but who has noticed the distance — the silence at dinner, the resentment that calcified so slowly neither of you can name when it started. These essays will not fix your marriage. They will name what is actually happening, which is where repair begins.",
-    estimatedTime: "45 minutes of reading that could change the next 40 years",
+    estimatedTime: "45 minutes of reading, for the marriage you have not given up on",
     articles: [
       {
-        title: "Your Marriage Is a Ministry Too",
-        slug: "your-marriage-is-ministry-too",
+        title: "Why Do Married Couples Slowly Drift Apart?",
+        slug: "the-slow-drift-that-ends-marriages",
         description:
-          "Why the covenant you made before God is not secondary to the work you do for God.",
-        readTime: "7 min read",
+          "No one signs the divorce papers because of a single Tuesday.",
+        readTime: "10 min read",
       },
       {
-        title: "Protecting Your Marriage When Ministry Demands Everything",
-        slug: "protecting-marriage-ministry-demands",
+        title: "What Silence Actually Costs a Marriage",
+        slug: "what-silence-costs-a-marriage",
         description:
-          "The pastor's marriage is the first casualty of an unexamined theology of availability.",
-        readTime: "9 min read",
+          "The marriage rarely dies in the fight.",
+        readTime: "11 min read",
       },
       {
-        title: "What Your Spouse Wishes You Knew About Life in the Parsonage",
-        slug: "spouse-wishes-knew-parsonage",
+        title: "What the Resentment in Your Marriage Is Telling You",
+        slug: "the-resentment-in-your-marriage",
         description:
-          "The perspective your partner carries but rarely voices — and what they need from you.",
-        readTime: "8 min read",
+          "Resentment is not the rot in your marriage.",
+        readTime: "10 min read",
       },
       {
-        title: "How to Be Present at Home When Your Mind Never Leaves the Church",
-        slug: "present-at-home-mind-never-leaves",
+        title: "How Do You Forgive Without Pretending It Didn't Happen?",
+        slug: "forgiveness-without-pretending",
         description:
-          "The challenge of mental disengagement and practical rhythms for genuine presence.",
-        readTime: "8 min read",
-      },
-      {
-        title: "Conflict Is Not Failure",
-        slug: "conflict-is-not-failure",
-        description:
-          "What every couple misreads about disagreement — and what repair actually requires.",
-        readTime: "6 min read",
-      },
-      {
-        title: "The Examined Life",
-        slug: "the-examined-life",
-        description:
-          "Before you can be honest with another person, you must be honest with yourself.",
-        readTime: "7 min read",
+          "Most of what we call forgiveness in marriage is pretending.",
+        readTime: "10 min read",
       },
     ],
   },
@@ -79,46 +67,39 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "50 minutes that take the questions seriously",
     articles: [
       {
-        title: "The Monster in the Mirror",
-        slug: "the-monster-in-the-mirror",
+        title: "What If Christianity Is Wrong?",
+        slug: "what-if-we-are-wrong",
         description:
-          "Why every generation gets the Bible wrong, why yours is no different, and what to do about it.",
-        readTime: "9 min read",
+          "The question arrives uninvited, usually at night: what if the whole thing is a story we told ourselves?",
+        readTime: "10 min read",
       },
       {
-        title: "You Are Not the Exception",
-        slug: "you-are-not-the-exception",
+        title: "When God Stops Making Sense",
+        slug: "when-god-doesnt-make-sense",
         description:
-          "Understanding biblical interpretation — and the humility it demands of every reader.",
-        readTime: "9 min read",
+          "We were sold a God who would add up.",
+        readTime: "10 min read",
       },
       {
-        title: "Truth in a Post-Truth World",
+        title: "What to Do When God Feels Absent",
+        slug: "dark-night-god-feels-absent",
+        description:
+          "The silence is not punishment and it is not your failure.",
+        readTime: "10 min read",
+      },
+      {
+        title: "How Does the Church Tell the Truth in a Post-Truth Age?",
         slug: "truth-in-post-truth-world",
         description:
-          "What happens to faith when the culture no longer agrees that truth is even possible.",
-        readTime: "7 min read",
+          "Two members of the same church now carry two contradictory sets of facts about the same week.",
+        readTime: "11 min read",
       },
       {
-        title: "The Holy Spirit Is Not a Feeling",
-        slug: "holy-spirit-not-feeling",
+        title: "What Comes After Deconstruction of Your Faith?",
+        slug: "excavation-not-demolition",
         description:
-          "Separating the work of God from the emotional experiences we have confused with it.",
-        readTime: "8 min read",
-      },
-      {
-        title: "The Incarnation Changes Everything",
-        slug: "incarnation-changes-everything",
-        description:
-          "Why God became human — and why that fact remakes every category you thought you understood.",
-        readTime: "8 min read",
-      },
-      {
-        title: "The Hope of Resurrection",
-        slug: "hope-of-resurrection",
-        description:
-          "Not a metaphor. Not a feeling. The claim that makes Christianity either true or absurd.",
-        readTime: "8 min read",
+          "Demolition and excavation use the same tools, the pry bar, the shovel, the refusal to respect a wall just because it is standing.",
+        readTime: "16 min read",
       },
     ],
   },
@@ -130,39 +111,32 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "40 minutes for the shepherd who needs shepherding",
     articles: [
       {
-        title: "Why Pastors Quit (And How to Stay)",
-        slug: "why-pastors-quit-and-how-to-stay",
+        title: "Why Are Pastors So Lonely in a Full Church?",
+        slug: "the-loneliest-room-in-the-church",
         description:
-          "The real reasons pastors leave — and what structures keep them in ministry long-term.",
-        readTime: "9 min read",
+          "The fullest building in town has one room where a man sits alone with everything he is not allowed to say.",
+        readTime: "10 min read",
       },
       {
-        title: "The Slow Burn: How Ministry Exhaustion Sneaks Up on You",
-        slug: "slow-burn-ministry-exhaustion",
+        title: "Who Pastors the Pastor When No One Checks In?",
+        slug: "the-pastor-nobody-checks-on",
         description:
-          "Burnout is not a moment. It is a process — invisible, cumulative, and nearly always denied until too late.",
-        readTime: "9 min read",
+          "We built a vocation where the man who asks everyone how they are gets asked by no one.",
+        readTime: "10 min read",
       },
       {
-        title: "The Hidden Pain of the Successful Pastor",
-        slug: "hidden-pain-successful-pastor",
+        title: "Why Do Pastors Treat Exhaustion as Faithfulness?",
+        slug: "burnout-is-not-a-badge",
         description:
-          "Success in ministry creates a peculiar kind of isolation that no one warns you about.",
-        readTime: "8 min read",
+          "We turned exhaustion into a virtue and then wondered why our best men kept collapsing.",
+        readTime: "10 min read",
       },
       {
-        title: "The Danger of Pastoral Isolation",
-        slug: "danger-pastoral-isolation",
+        title: "When Ministry Is Quietly Killing Your Marriage",
+        slug: "protecting-marriage-in-ministry",
         description:
-          "What happens when the person everyone leans on has no one to lean on.",
-        readTime: "7 min read",
-      },
-      {
-        title: "It's Okay to See a Counselor",
-        slug: "okay-to-see-counselor",
-        description:
-          "Why professional help is not a failure of faith — and why pastors resist it anyway.",
-        readTime: "8 min read",
+          "The work that destroys a pastor's marriage looks exactly like faithfulness.",
+        readTime: "10 min read",
       },
     ],
   },
@@ -174,39 +148,32 @@ const READING_PATHS: ReadingPath[] = [
     estimatedTime: "35 minutes for the parent who prays more than they plan",
     articles: [
       {
-        title: "The Pastor's Kids Are Watching — What Are They Seeing?",
-        slug: "pastors-kids-watching-what-seeing",
+        title: "How Do You Raise Kids Who Think About Their Faith?",
+        slug: "raising-kids-who-think",
         description:
-          "Pastoral children inherit both the gifts and the wounds of their parent's calling.",
-        readTime: "8 min read",
+          "We trained a generation to give the right answer and called it faith.",
+        readTime: "10 min read",
       },
       {
-        title: "The Kingdom of God Is Not What You Think It Is",
-        slug: "kingdom-of-god-not-what-you-think",
+        title: "How Do You Talk to Your Kids About Doubt?",
+        slug: "teaching-kids-about-doubt",
         description:
-          "Teaching children a kingdom vision that outlasts the culture wars.",
-        readTime: "7 min read",
+          "You are waiting for your child to bring you their doubts.",
+        readTime: "10 min read",
       },
       {
-        title: "The Psalms as Prayer — Not Just Poetry",
-        slug: "psalms-as-prayer-not-poetry",
+        title: "When Your Teenager Says They Don't Believe Anymore",
+        slug: "teenager-losing-faith",
         description:
-          "How to give your children a prayer language that includes lament, rage, and wonder.",
-        readTime: "6 min read",
+          "Your first instinct will be to win the argument.",
+        readTime: "11 min read",
       },
       {
-        title: "Eschatology Matters — Why the End Shapes How We Live Now",
-        slug: "eschatology-matters-end-shapes-now",
+        title: "How a Father Shapes the Way a Child Sees God",
+        slug: "the-father-wound-and-the-god-question",
         description:
-          "What you believe about the future shapes the children you raise for it.",
-        readTime: "7 min read",
-      },
-      {
-        title: "Sabbath Is Resistance",
-        slug: "sabbath-is-resistance",
-        description:
-          "Teaching rest as a theological act in a culture that measures worth by productivity.",
-        readTime: "7 min read",
+          "Before your child can hear the word Father about God, they will have learned what the word means from you.",
+        readTime: "11 min read",
       },
     ],
   },
@@ -214,43 +181,43 @@ const READING_PATHS: ReadingPath[] = [
     id: 5,
     title: "Justice and the Kingdom — Where Faith Meets the World",
     introduction:
-      "The church has been silent. These essays name what the silence cost. They trace the prophetic tradition from Amos to the present and refuse to let justice remain an abstraction.",
-    estimatedTime: "55 minutes that will not let you look away",
+      "The church has never lacked the texts. Amos, Isaiah, and James were read aloud in the same sanctuaries that went quiet when justice started to cost something, and the few who broke the silence were often punished for it by the rest of us. These essays name what the silence cost. They trace the prophetic tradition from Amos to the present and refuse to let justice remain an abstraction.",
+    estimatedTime: "55 minutes, from Amos to the present",
     articles: [
       {
-        title: "Where the Church Was Silent",
-        slug: "where-church-was-silent",
+        title: "Complicity: How Good People Sustain Bad Systems",
+        slug: "complicity-how-good-people-sustain-bad-systems",
         description:
-          "A reckoning with the history the church would rather not own.",
-        readTime: "8 min read",
+          "The hardest case against the church is not an argument.",
+        readTime: "11 min read",
       },
       {
-        title: "Justice Is Not a Political Category: It Is a Theological One",
+        title: "Is Justice a Political Issue or a Theological One?",
         slug: "justice-not-political-theological",
         description:
-          "How the word that appears four hundred times in Scripture became a partisan signal.",
-        readTime: "7 min read",
+          "Say the word \"justice\" in a mixed room and both tribes reach for it before anyone thinks about God.",
+        readTime: "10 min read",
       },
       {
-        title: "Complicity Is Not Innocence",
-        slug: "complicity-not-innocence",
+        title: "What Does the Bible Say About the Church and the Poor?",
+        slug: "poor-not-ministry-category",
         description:
-          "What silence costs the witness — and the people the silence abandons.",
-        readTime: "6 min read",
+          "James grades the worship service at the door, Isaiah grades the fast by the hungry, and the one requirement Jerusalem attached to Paul's gospel was the poor.",
+        readTime: "12 min read",
       },
       {
-        title: "Mishpat and Tsedaqah",
-        slug: "mishpat-tsedaqah",
+        title: "Why Does Charity Treat Symptoms and Not Causes?",
+        slug: "symptoms-without-causes-charity",
         description:
-          "Two Hebrew words that capture the fullness of biblical justice. The church has flattened both.",
-        readTime: "5 min read",
+          "We are good at the Saturday.",
+        readTime: "12 min read",
       },
       {
-        title: "The Prophetic Pastor",
-        slug: "prophetic-pastor",
+        title: "Can a System Sin?",
+        slug: "individual-sin-systemic-sin-2",
         description:
-          "The pastor is called to name injustice and advocate for the vulnerable. This is not optional.",
-        readTime: "8 min read",
+          "Say \"systemic sin\" in a deacons' meeting and count to three.",
+        readTime: "12 min read",
       },
     ],
   },
@@ -262,7 +229,7 @@ export default function ReadingPaths() {
   const scrollToPath = (id: number) => {
     const el = document.getElementById(`path-${id}`);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     }
   };
 
@@ -270,7 +237,7 @@ export default function ReadingPaths() {
     <>
       <SEOMeta
         title="Reading Paths — LiveWell by James Bell"
-        description="Five curated reading paths through marriage, doubt, pastoral life, parenting, and prophetic justice. Start where the weight is heaviest."
+        description="Curated reading paths through marriage, doubt, pastoral life, parenting, justice, and the post-Christian reckoning. Start where the weight is heaviest."
         keywords="reading paths, curated essays, marriage, doubt, pastoral burnout, parenting, justice, theology"
       />
 
@@ -342,108 +309,34 @@ export default function ReadingPaths() {
           >
             Choose your path
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(min(340px, 100%), 1fr))",
-              gap: "1.25rem",
-            }}
-          >
+          {/* Doors to the five path sections below. Each card is one <button>
+              (the whole card is the control) that scrolls to its section, so
+              the .ed-card styling is composed by hand rather than through
+              CardGrid, which only renders links. Spans, not headings, inside
+              the button: a button may hold phrasing content only, and each
+              path's own section below carries its h2. */}
+          <ul className="ed-cards" style={{ "--ed-card-min": "340px" } as CSSProperties}>
             {READING_PATHS.map((path) => (
-              <button
-                key={path.id}
-                onClick={() => scrollToPath(path.id)}
-                style={{
-                  background: "var(--card)",
-                  border: "1px solid rgba(26, 26, 26, 0.08)",
-                  borderRadius: "2px",
-                  overflow: "hidden",
-                  padding: 0,
-                  cursor: "pointer",
-                  textAlign: "left",
-                  transition: "border-color 0.2s, box-shadow 0.2s",
-                  display: "flex",
-                  gap: "1.25rem",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "var(--mustard)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 16px rgba(26, 26, 26, 0.06)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor =
-                    "rgba(26, 26, 26, 0.08)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <div
-                  style={{
-                    width: "92px",
-                    flexShrink: 0,
-                    alignSelf: "flex-start",
-                    aspectRatio: "3 / 4",
-                    overflow: "hidden",
-                  }}
+              <li key={path.id}>
+                <button
+                  type="button"
+                  className="ed-card"
+                  onClick={() => scrollToPath(path.id)}
+                  style={{ width: "100%", font: "inherit", textAlign: "left", cursor: "pointer" }}
                 >
-                  <GeneratedCover
-                    title={path.title}
-                    eyebrow="Reading Path"
-                    variant={
-                      coverThemeFor(`${path.title} ${path.introduction}`)
-                        .variant
-                    }
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "0.75rem",
-                    padding: "1.75rem 1.75rem 1.75rem 0",
-                    flex: 1,
-                    minWidth: 0,
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "0.75rem",
-                      fontWeight: 500,
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      color: "var(--mustard-text)",
-                    }}
-                  >
-                    PATH {path.id}
-                  </div>
-                  <h3
-                    style={{
-                      fontFamily: "var(--F)",
-                      fontSize: "1.25rem",
-                      fontWeight: 400,
-                      color: "var(--ink)",
-                      lineHeight: 1.25,
-                      margin: 0,
-                    }}
-                  >
-                    {path.title}
-                  </h3>
-                  <p
-                    style={{
-                      fontFamily: "var(--U)",
-                      fontSize: "0.8rem",
-                      color: "var(--ink-muted)",
-                      lineHeight: 1.6,
-                      margin: 0,
-                    }}
-                  >
+                  <span className="ed-kicker" style={{ marginBottom: 0 }}>PATH {path.id}</span>
+                  <span className="ed-card-title" style={{ fontWeight: 400 }}>{path.title}</span>
+                  <span className="ed-card-dek">
                     {path.articles.length} essays &middot; {path.estimatedTime}
-                  </p>
-                </div>
-              </button>
+                  </span>
+                  <span className="ed-card-foot">
+                    <span />
+                    <span className="ed-arrow" aria-hidden style={{ transform: "none" }}>↓</span>
+                  </span>
+                </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
@@ -481,28 +374,20 @@ export default function ReadingPaths() {
           <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.7, maxWidth: "62ch", marginBottom: "2rem" }}>
             The themed collections below gather essays by subject. These six are different — each is a sequence, built to be read in order, tracing one pillar of the site's spine from diagnosis to formation.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "0.75rem" }}>
-            {CANONICAL_PATHS.map((p) => (
-              <Link
-                key={p.slug}
-                href={p.externalHref || `/reading-paths/${p.slug}`}
-                style={{
-                  display: "block",
-                  padding: "1.1rem 1.2rem",
-                  border: "1px solid rgba(244,241,234,0.16)",
-                  textDecoration: "none",
-                }}
-              >
-                <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.1rem", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "0.3rem" }}>
-                  {p.title}
-                  <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle", marginLeft: "0.45rem", color: "var(--mustard)" }} />
-                </span>
-                <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--charcoal-fg)", opacity: 0.55 }}>
-                  {p.externalHref ? "The book, in order" : `${availableCount(p)} essays in order`}
-                </span>
-              </Link>
-            ))}
-          </div>
+          {/* Each path's own one-paragraph framing (lib/readingPaths.ts, written
+              for the list card) is the dek; compact rows clamp it to two lines. */}
+          <EditorialIndex
+            tone="dark"
+            columns={2}
+            compact
+            label="The pillar paths"
+            items={CANONICAL_PATHS.map((p) => ({
+              href: p.externalHref || `/reading-paths/${p.slug}`,
+              title: p.title,
+              dek: p.description,
+              meta: p.externalHref ? "The book, in order" : `${availableCount(p)} essays in order`,
+            }))}
+          />
         </div>
       </section>
 
@@ -722,6 +607,48 @@ export default function ReadingPaths() {
       })}
 
       {/* CLOSING SECTION */}
+
+      {/* THE POST-CHRISTIAN SERIES — eight sequenced paths through the
+          60-essay series. Essay pages link here as /reading-paths#<slug>
+          (ArticleNextSteps), so each block carries id={path.slug}. */}
+      <section style={{ background: "var(--bone-warm)", padding: "4rem 1.5rem" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <div style={{ fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "1rem" }}>
+            The post-Christian series
+          </div>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.6rem, 3.5vw, 2.2rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "0.9rem" }}>
+            Eight paths through the reckoning
+          </h2>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "2.5rem" }}>
+            The sixty-essay series on Christianity after Christendom, sequenced for the reader you actually are: the historian, the doubter, the one the church hurt, the one still outside looking in.
+          </p>
+          {SERIES_PATHS.map((path) => (
+            <div key={path.slug} id={path.slug} style={{ borderTop: "1px solid var(--border)", padding: "2rem 0", scrollMarginTop: "90px" }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.4rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.4rem" }}>
+                {path.title}
+              </h3>
+              <p style={{ fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--mustard-text)", margin: "0 0 0.75rem" }}>
+                For: {path.audience} &middot; {path.articles.length} essays &middot; {path.estimatedTime}
+              </p>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 1.25rem" }}>
+                {path.introduction}
+              </p>
+              <ol style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
+                {path.articles.map((a, i) => (
+                  <li key={a.slug}>
+                    <Link href={`/writing/${a.slug}`} style={{ display: "flex", gap: "0.75rem", alignItems: "baseline", textDecoration: "none" }}>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)", flex: "0 0 1.4rem" }}>{i + 1}.</span>
+                      <span style={{ fontFamily: "var(--B)", fontSize: "0.95rem", color: "var(--ink)", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>{a.title}</span>
+                      <span style={{ fontFamily: "var(--U)", fontSize: "0.75rem", color: "var(--ink-muted)", marginLeft: "auto", flexShrink: 0 }}>{a.readTime}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section
         style={{
           background: "var(--charcoal)",

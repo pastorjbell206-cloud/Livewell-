@@ -22,6 +22,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
+import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 
 dotenv.config();
 
@@ -49,7 +50,8 @@ const STATIC_PAGES = [
   {
     path: "",
     title: "LiveWell by James Bell — Theology That Carries the Weight of Everyday Life",
-    description: FALLBACK_DESC,
+    // The same description the home page's SEOMeta declares.
+    description: positioningString("META_DESCRIPTION") || FALLBACK_DESC,
     type: "website",
     schemas: [orgSchema(), webSiteSchema()],
   },
@@ -62,8 +64,8 @@ const STATIC_PAGES = [
   },
   {
     path: "/writing",
-    title: "Writing — Essays by James Bell",
-    description: "Essays on faith, justice, marriage, parenting, and pastoral ministry. Read by skeptics, Christians, pastors, and people seeking to live well.",
+    title: "Essays by James Bell",
+    description: "A short shelf of essays by James Bell on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
     type: "website",
   },
   {
@@ -91,12 +93,6 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
-    path: "/work-with-james",
-    title: "Work with James Bell",
-    description: "Pulpit supply, pastoral consulting, revitalization, and church-board coaching. Get in touch.",
-    type: "website",
-  },
-  {
     path: "/skeptic-track",
     title: "The Skeptic's Track — Start here",
     description: "Seven essays in argument order. Written for skeptics first by a pastor who came to faith from atheism. No conversion bait.",
@@ -109,27 +105,9 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
-    path: "/library",
-    title: "The Library — A commonplace book",
-    description: "Curated quotes from Keller, Brueggemann, Peterson, Bonhoeffer, Newbigin, Taylor, Bellah, Haidt.",
-    type: "website",
-  },
-  {
     path: "/membership",
     title: "Membership — LiveWell by James Bell",
     description: "Full access to the essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life.",
-    type: "website",
-  },
-  {
-    path: "/justice",
-    title: "Prophetic Justice — Where the church went silent",
-    description: "Mishpat and tsedaqah — justice and right relationship — sit near the heart of God. The poor at the gate, the worker and the wage, the vulnerable, refusing capture by either political tribe.",
-    type: "website",
-  },
-  {
-    path: "/disruption",
-    title: "Prophetic Disruption — Truth that does not take a side",
-    description: "The church's captivity to its tribe, its nation, and its culture — and the indictment falls on the left and the right alike, the writer included.",
     type: "website",
   },
   {
@@ -140,8 +118,8 @@ const STATIC_PAGES = [
   },
   {
     path: "/diagnostic",
-    title: "Diagnostic — Where are you with God right now?",
-    description: "Eight questions across four dimensions. Honest answers. A specific essay, a book, and an email track for what to do next.",
+    title: "Where Are You With God Right Now? An Honest Self-Check",
+    description: "Eight questions in four areas, for reflection, not a test: how you treat people, handle doubt, work and rest, and pray. Your answers stay on your device.",
     type: "website",
   },
   // ── Shared-component routes (NationEssay slug=…, Prophetic* config=…,
@@ -149,51 +127,21 @@ const STATIC_PAGES = [
   // or fetched JSON, so the route-table extraction below cannot read it; the
   // copy here mirrors each page's actual title/subtitle content.
   {
-    path: "/disruption/posture",
-    title: "The Posture — Prophetic Disruption",
-    description: "Before any argument about justice, the ground rules first: biblical justice defined from the text up, and the binding command versus prudential policy.",
-    type: "website",
-  },
-  {
     path: "/disruption/consistency",
     title: "The Consistency Check — Prophetic Disruption",
     description: "A searching self-examination of whether you defend truth selectively, one standard for your side and another for your opponents. A mirror, not a weapon.",
     type: "website",
   },
   {
-    path: "/disruption/glossary",
-    title: "Glossary — Prophetic Disruption",
-    description: "The words of biblical justice, from mishpat and tsedaqah to jubilee and Christian nationalism — politically loaded ones included, defined even-handedly.",
-    type: "website",
-  },
-  {
-    path: "/disruption/questions",
-    title: "Hard Questions — Prophetic Disruption",
-    description: "Is the gospel political? Is Christianity left or right? What even is social justice? Honest answers that take the suspicion seriously from every direction.",
+    path: "/justice/witnesses",
+    title: "The Witnesses — Prophetic Justice",
+    description: "The people who told the church costly truth, or did justice at real cost, across history. Hopeful, concrete, and honest about their flaws.",
     type: "website",
   },
   {
     path: "/disruption/witnesses",
     title: "The Witnesses — Prophetic Disruption",
-    description: "The people across history who told the church and the powers costly truth and refused to be captured — hopeful, concrete, and honest about their flaws.",
-    type: "website",
-  },
-  {
-    path: "/justice/posture",
-    title: "The Call — Prophetic Justice",
-    description: "Justice is not the margin of the faith but near its middle: biblical justice defined from the text up, and God's lean toward the poor and the foreigner.",
-    type: "website",
-  },
-  {
-    path: "/justice/glossary",
-    title: "Glossary — Prophetic Justice",
-    description: "The words of biblical justice, from mishpat and tsedaqah to shalom and jubilee — including the politically loaded ones, defined even-handedly, text first.",
-    type: "website",
-  },
-  {
-    path: "/justice/witnesses",
-    title: "The Witnesses — Prophetic Justice",
-    description: "The people who did justice at real cost across history, from the abolitionists to the rescuers of the trafficked — hopeful, and honest about their flaws.",
+    description: "The people who told the church costly truth, or did justice at real cost, across history. Hopeful, concrete, and honest about their flaws.",
     type: "website",
   },
   {
@@ -423,6 +371,31 @@ function extractReadableText(obj, acc = [], depth = 0) {
   return acc;
 }
 
+/** Some essay bodies are stored as simple HTML (the post-Christian series;
+ *  the client converts them with client/src/lib/htmlToMarkdown.ts). Treated
+ *  as Markdown they would be escaped into one paragraph of visible tags, so
+ *  they pass through here instead, reduced to an allow-list of prose tags
+ *  with no attributes except a safe href. */
+const HTML_BODY_HINT = /<\/?(p|h[1-6]|em|strong|blockquote|ul|ol|li|br|a)\b[^>]*>/i;
+function isHtmlBody(s) {
+  return HTML_BODY_HINT.test(String(s ?? ""));
+}
+function safeProseHtml(html) {
+  const ALLOWED = new Set(["p", "h2", "h3", "h4", "em", "strong", "b", "i", "blockquote", "ul", "ol", "li", "a", "br", "hr"]);
+  return String(html)
+    .replace(/<(script|style|iframe|object|embed)\b[\s\S]*?<\/\1>/gi, "")
+    .replace(/<(\/?)([a-z0-9]+)\b([^>]*)>/gi, (m, close, tag, attrs) => {
+      const t = tag.toLowerCase();
+      const level = t === "h1" ? "h2" : t; // h1 is reserved for the title
+      if (!ALLOWED.has(level)) return "";
+      if (level === "a" && !close) {
+        const href = (attrs.match(/href="([^"]*)"/i) || [])[1] || "";
+        return /^(https?:|\/|#|mailto:)/i.test(href) ? `<a href="${href}">` : "<a>";
+      }
+      return `<${close}${level}>`;
+    });
+}
+
 /** Build the crawlable <article> body block for #root. */
 function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
   const parts = [
@@ -445,7 +418,7 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
 function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }) {
   let contentHtml = "";
   if (markdown) {
-    contentHtml = mdToHtml(markdown);
+    contentHtml = isHtmlBody(markdown) ? safeProseHtml(markdown) : mdToHtml(markdown);
   } else if (contentObj) {
     const paras = extractReadableText(contentObj);
     contentHtml = paras.map((p) => mdToHtml(p)).filter(Boolean).join("\n");
@@ -455,7 +428,7 @@ function bodyFromContent({ title, subtitle, sectionLabel, markdown, contentObj }
 }
 
 function articleSchema(post, url, image) {
-  const bodyText = markdownToPlainText(post.body);
+  const bodyText = markdownToPlainText(isHtmlBody(post.body) ? String(post.body).replace(/<[^>]+>/g, " ") : post.body);
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -528,6 +501,7 @@ const SECTION_BY_ROUTE = {
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
+  "/help/": { name: "Find Help", path: "/help" },
 };
 
 // ---------------------------------------------------------------------------
@@ -538,10 +512,13 @@ const SECTION_BY_ROUTE = {
 // Capped per hub: the sitemap carries the complete set, so a hub needs a
 // representative body, not every row.
 const HUB_LISTINGS = {
+  // The public essay shelf only (client/src/lib/shelf.json), in shelf order.
   "/writing": { label: "Essays", cap: 150, load: () => {
-    const lib = readJsonSafe("content/static-library.generated.json") || [];
-    return lib.filter((e) => e && e.slug && e.title)
-      .map((e) => ({ title: e.title, href: `/writing/${e.slug}`, blurb: e.excerpt || "" }));
+    const shelf = loadEssayShelf(REPO_ROOT);
+    return shelf.liveEssays().map((e) => {
+      const rewrite = shelf.overrideRecords.get(e.slug);
+      return { title: rewrite?.title || e.title, href: `/writing/${e.slug}`, blurb: rewrite ? rewrite.excerpt : e.blurb || "" };
+    });
   } },
   "/books": { label: "Books", cap: 10, load: () => [
     { title: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america", blurb: "A pastor's critique of political idolatry in the American church." },
@@ -552,9 +529,13 @@ const HUB_LISTINGS = {
     const d = readJsonSafe("client/public/studyguides/index.json");
     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
   } },
-  "/pathways": { label: "Guided pathways", cap: 40, load: () => {
-    const d = readJsonSafe("client/public/pathways/index.json") || [];
-    return d.map((x) => ({ title: x.title, href: `/pathways/${x.slug}`, blurb: x.subtitle || "" }));
+  // The Downloads shelf renders from the catalogue at runtime; give crawlers
+  // the same list as plain links (built by build-catalogue.mjs before this
+  // script runs). (/explore, the old Library, now 301s to /writing.)
+  "/downloads": { label: "Downloads", cap: 200, load: () => {
+    const c = readJsonSafe("client/public/catalogue/index.json");
+    return ((c && c.items) || []).filter((i) => i.files && i.files.length)
+      .map((i) => ({ title: i.title, href: i.files[0].href, blurb: i.summary || "" }));
   } },
 };
 
@@ -593,7 +574,7 @@ function escapeJson(s) {
 }
 
 // Build the head block for one route. Returns string of <meta>/<link>/<script>.
-function buildHead({ title, description, url, image, type, publishedDate, modifiedDate, schemas = [] }) {
+function buildHead({ title, description, url, image, type, publishedDate, modifiedDate, schemas = [], noindex = false }) {
   // Brand-once, mirroring SEOMeta.tsx.
   const fullTitle =
     title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${SITE_NAME}`;
@@ -601,7 +582,11 @@ function buildHead({ title, description, url, image, type, publishedDate, modifi
     `<title>${escapeHtml(fullTitle)}</title>`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
     `<meta name="author" content="${escapeHtml(AUTHOR_NAME)}" />`,
-    `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`,
+    // Retired essays (off the shelf) say noindex in the head itself: crawlers
+    // that never run JS see only this file, not the SPA's SEOMeta.
+    noindex
+      ? `<meta name="robots" content="noindex, follow" />`
+      : `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`,
   ];
   if (GOOGLE_VERIFICATION) lines.push(`<meta name="google-site-verification" content="${escapeHtml(GOOGLE_VERIFICATION)}" />`);
   if (BING_VERIFICATION) lines.push(`<meta name="msvalidate.01" content="${escapeHtml(BING_VERIFICATION)}" />`);
@@ -638,6 +623,9 @@ function rewriteIndexHtml(template, routeHead) {
   html = html.replace(/<title>[\s\S]*?<\/title>/i, "");
   html = html.replace(/<meta\s+name="description"[\s\S]*?>/gi, "");
   html = html.replace(/<meta\s+name="author"[\s\S]*?>/gi, "");
+  // buildHead always writes the route's own robots tag; drop the shell's, or
+  // a retired essay's noindex would sit beside the shell's "index, follow".
+  html = html.replace(/<meta\s+name="robots"[\s\S]*?>/gi, "");
   html = html.replace(/<link\s+rel="canonical"[\s\S]*?>/gi, "");
   html = html.replace(/<meta\s+property="og:[^"]+"[\s\S]*?>/gi, "");
   html = html.replace(/<meta\s+name="twitter:[^"]+"[\s\S]*?>/gi, "");
@@ -651,13 +639,67 @@ function rewriteIndexHtml(template, routeHead) {
   return html;
 }
 
+const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
+
+/**
+ * The front page's hero, as static HTML, from the same constants Home.tsx
+ * renders (client/src/lib/positioning.ts) and the same classes (index.css,
+ * .home-hero*), so the two cannot drift and React's mount moves nothing.
+ *
+ * Why: on the home page the largest contentful paint is the hero text. As a
+ * SPA it only existed after the JS bundle downloaded and ran, which under a
+ * throttled mobile connection put LCP near four seconds against a 90-score
+ * budget. Painting it from the HTML, inside the existing static shell, moves
+ * the largest paint to the first paint.
+ */
+function positioningString(name) {
+  const src = fs.readFileSync(
+    path.join(REPO_ROOT, "client/src/lib/positioning.ts"),
+    "utf8"
+  );
+  const m = src.match(
+    new RegExp(`export const ${name}\\s*=\\s*"((?:[^"\\\\]|\\\\.)*)"`)
+  );
+  return m ? m[1].replace(/\\"/g, '"') : "";
+}
+
+function homeHeroHtml() {
+  const esc = (s) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const headline = positioningString("HOME_HEADLINE");
+  const why = positioningString("HOME_WHY");
+  const who = positioningString("HOME_WHO");
+  const portrait = positioningString("PORTRAIT_URL");
+  if (!headline || !why || !who) return "";
+  return `
+        <section class="home-hero">
+          <div class="home-hero__inner">
+            <div class="home-hero__byline">
+              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async">` : ""}
+              <div>
+                <p class="home-hero__name">James Bell</p>
+                <a href="/about" class="home-hero__about">About James</a>
+              </div>
+            </div>
+            <div>
+              <h1 class="home-hero__title">${esc(headline)}</h1>
+              <p class="home-hero__text">${esc(why)}</p>
+              <p class="home-hero__text">${esc(who)}</p>
+            </div>
+          </div>
+        </section>`;
+}
+
 function writeRoute(template, route, head, bodyHtml = "") {
-  const target =
-    route.path === ""
-      ? path.join(DIST_DIR, "index.html")
-      : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
+  const isHome = route.path === "" || route.path === "/";
+  const target = isHome
+    ? path.join(DIST_DIR, "index.html")
+    : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
   let html = rewriteIndexHtml(template, head);
+  // The static hero paints from the HTML on the front page only; every other
+  // route drops the marker so a deep link never flashes the home hero.
+  html = html.replace(HOME_HERO_MARKER, isHome ? homeHeroHtml() : "");
   // Inject crawlable article content at the top of #root. The client mounts
   // with createRoot, which replaces #root entirely, so this is crawler-only.
   if (bodyHtml) {
@@ -665,6 +707,227 @@ function writeRoute(template, route, head, bodyHtml = "") {
   }
   fs.writeFileSync(target, html);
   return target;
+}
+
+/**
+ * The Study Bible (client/public/bible/*): every book, every chapter, the
+ * eleven acts of the story, and the doctrine pages are param routes, so the
+ * route-table pass cannot reach them. Each gets its own head and, for
+ * crawlers, its introduction or study notes and (for a chapter) the Berean
+ * Standard Bible text as plain HTML. The client replaces #root on mount.
+ */
+function prerenderStudyBible(template) {
+  const BIBLE = path.join(REPO_ROOT, "client/public/bible");
+  const read = (rel) => { try { return JSON.parse(fs.readFileSync(path.join(BIBLE, rel), "utf8")); } catch { return null; } };
+  const books = read("books.json");
+  if (!books) return 0;
+  const story = read("story.json");
+  const doctrines = read("doctrines.json")?.doctrines ?? [];
+  const index = read("notes-index.json") ?? { titles: {}, doctrines: {} };
+  let storyline = [];
+  try { storyline = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, "client/public/theology/biblical-theology-storyline.json"), "utf8")).acts; } catch { /* acts keep their ids */ }
+  const para = (t) => String(t ?? "").split(/\n\s*\n/).filter(Boolean).map((x) => `<p>${escapeHtml(x)}</p>`).join("\n");
+  const section = (h, body) => (body ? `<section><h2>${escapeHtml(h)}</h2>\n${body}</section>` : "");
+  const root = { name: "The Study Bible", path: "/study/bible" };
+  const trim = (t, n = 158) => { const x = String(t ?? "").replace(/\s+/g, " ").trim(); return x.length > n ? `${x.slice(0, n - 1).replace(/\s+\S*$/, "")}…` : x; };
+  const titleOf = (slug, c) => index.titles?.[slug]?.[c - 1] ?? null;
+  let n = 0;
+  const emit = (routePath, title, description, crumbs, body, type = "website") => {
+    const url = `${SITE_URL}${routePath}`;
+    const head = buildHead({ title, description, url, image: ogImageUrl(title), type, schemas: [breadcrumbSchema([{ name: "Home", path: "" }, ...crumbs])] });
+    writeRoute(template, { path: routePath }, head, `<article>\n${body}\n</article>`);
+    n++;
+  };
+
+  for (const b of books) {
+    const intro = read(`notes/${b.slug}/intro.json`);
+    const chapters = Array.from({ length: b.chapters }, (_, i) => i + 1)
+      .map((c) => `<li><a href="/study/bible/${b.slug}/${c}">${escapeHtml(`${b.name} ${c}`)}${titleOf(b.slug, c) ? `: ${escapeHtml(titleOf(b.slug, c))}` : ""}</a></li>`)
+      .join("\n");
+    const bookBody = [
+      `<h1>${escapeHtml(b.name)}</h1>`,
+      intro ? `<p>${escapeHtml(intro.tagline)}</p>` : "",
+      intro ? section("What this book is", para(intro.overview)) : "",
+      intro ? section("How it is built", `<ol>${intro.structure.map((x) => `<li><strong>${escapeHtml(`${b.name} ${x.range}: ${x.title}`)}</strong>. ${escapeHtml(x.summary)}</li>`).join("\n")}</ol>`) : "",
+      section("The chapters", `<ol>\n${chapters}\n</ol>`),
+      intro ? section("Who wrote it", para(intro.author)) : "",
+      intro ? section("When", para(intro.date)) : "",
+      intro ? section("The world it was written in", para(intro.setting)) : "",
+      intro ? section("Why it was written", para(intro.purpose)) : "",
+      intro ? section("Where it sits in the story", para(intro.story)) : "",
+      intro ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(intro.christ)) : "",
+      intro ? section("Themes to follow", intro.themes.map((t) => `<h3>${escapeHtml(t.title)}</h3><p>${escapeHtml(t.body)}</p>`).join("\n")) : "",
+      intro ? section("How to read it well", para(intro.reading)) : "",
+      intro?.text ? section(`The text of ${b.name}`, para(intro.text)) : "",
+      intro?.reception ? section(`How ${b.name} has been read`, para(intro.reception)) : "",
+      intro?.furtherReading?.length ? section("Further reading", `<ul>${intro.furtherReading.map((r) => `<li>${escapeHtml(`${r.author}, ${r.title}${r.series ? ` (${r.series}${r.year ? `, ${r.year}` : ""})` : r.year ? ` (${r.year})` : ""}. ${r.note}`)}</li>`).join("")}</ul>`) : "",
+    ].join("\n");
+    emit(
+      `/study/bible/${b.slug}`,
+      intro ? `${b.name}: Introduction, Outline, and Study Notes` : `${b.name}: Study Notes, Hebrew and Greek`,
+      intro ? trim(intro.tagline) : `Every chapter of ${b.name} with study notes and the original language beneath every word.`,
+      [root, { name: b.name, path: `/study/bible/${b.slug}` }],
+      bookBody
+    );
+
+    for (let c = 1; c <= b.chapters; c++) {
+      const note = read(`notes/${b.slug}/${c}.json`);
+      const vnotes = read(`notes/${b.slug}/verses/${c}.json`)?.verses ?? [];
+      const text = read(`ch/${b.slug}/${c}.json`);
+      const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<li value="${v.v}">${escapeHtml(v.t)}</li>`).join("\n");
+      const lang = b.testament === "OT" ? "Hebrew" : "Greek";
+      const body = [
+        `<h1>${escapeHtml(`${b.name} ${c}`)}${note ? `: ${escapeHtml(note.title)}` : ""}</h1>`,
+        note ? `<p>${escapeHtml(note.summary)}</p>` : "",
+        verses ? section(`${b.name} ${c} (Berean Standard Bible)`, `<ol>\n${verses}\n</ol>`) : "",
+        note ? section("Where we are in the story", para(note.story)) : "",
+        note ? section("The historical setting", para(note.historical)) : "",
+        note ? section("The world behind the text", para(note.cultural)) : "",
+        note ? section("How the chapter is built", `${para(note.literary)}\n<ol>${note.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>`) : "",
+        note ? section("What it teaches", note.doctrines.map((d) => `<p><a href="/study/bible/doctrines/${escapeHtml(d.id)}">${escapeHtml(doctrines.find((x) => x.id === d.id)?.name ?? d.id)}</a>. ${escapeHtml(d.note)}</p>`).join("\n")) : "",
+        note ? section(`Key ${lang} words`, note.words.map((w) => `<p>${escapeHtml(w.note)}</p>`).join("\n")) : "",
+        vnotes.length ? section("Verse by verse", vnotes.map((e) => [
+          `<h3>${escapeHtml(`${b.name} ${c}:${e.v}`)}</h3>`,
+          para(e.context),
+          e.grammar ? `<h4>The ${lang}</h4>\n${para(e.grammar)}` : "",
+          e.history ? `<h4>Background</h4>\n${para(e.history)}` : "",
+          (e.theology ?? []).map((t) => `<p><a href="/study/bible/doctrines/${escapeHtml(t.id)}">${escapeHtml(doctrines.find((x) => x.id === t.id)?.name ?? t.id)}</a>. ${escapeHtml(t.note)}</p>`).join("\n"),
+          e.text ? `<h4>The text</h4>\n${para(e.text)}` : "",
+          ...["ot", "nt"].flatMap((k) => (e[k] ?? []).map((x) => `<p><strong>${escapeHtml(x.ref)}</strong>. ${escapeHtml(x.note)}</p>`)),
+        ].filter(Boolean).join("\n")).join("\n")) : "",
+        note ? section(b.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", para(note.christ)) : "",
+        note?.interpretation ? section("How it has been read", para(note.interpretation)) : "",
+        note?.text ? section("The text and translations", para(note.text)) : "",
+        ...(note?.hard == null ? [] : Array.isArray(note.hard) ? note.hard : [note.hard]).map((h) => section("A hard question", `<p><em>${escapeHtml(h.q)}</em></p>\n${para(h.a)}`)),
+        note?.teach ? section("For teaching and preaching", `<p><strong>${escapeHtml(note.teach.big)}</strong></p>\n<ol>${note.teach.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>\n${para(note.teach.pitfalls)}${note.teach.pastoral ? `\n${para(note.teach.pastoral)}` : ""}`) : "",
+        note ? section("Questions for study or a group", `<ol>${(Array.isArray(note.questions) ? note.questions : [...note.questions.observe, ...note.questions.interpret, ...note.questions.apply]).map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
+        `<nav><a href="/study/bible/${b.slug}">${escapeHtml(b.name)}</a>${c > 1 ? ` · <a href="/study/bible/${b.slug}/${c - 1}">${escapeHtml(`${b.name} ${c - 1}`)}</a>` : ""}${c < b.chapters ? ` · <a href="/study/bible/${b.slug}/${c + 1}">${escapeHtml(`${b.name} ${c + 1}`)}</a>` : ""}</nav>`,
+      ].join("\n");
+      emit(
+        `/study/bible/${b.slug}/${c}`,
+        note ? `${b.name} ${c} Study Notes \u2013 ${note.title}` : `${b.name} ${c} Study Notes, Hebrew and Greek`,
+        note ? trim(note.summary) : `${b.name} ${c} with study notes, cross-references, and the ${lang} beneath every word.`,
+        [root, { name: b.name, path: `/study/bible/${b.slug}` }, { name: `${b.name} ${c}`, path: `/study/bible/${b.slug}/${c}` }],
+        body,
+        "article"
+      );
+    }
+  }
+
+  const bookName = (slug) => books.find((b) => b.slug === slug)?.name ?? slug;
+  for (const act of story?.acts ?? []) {
+    const line = storyline.find((l) => l.id === act.id) ?? {};
+    const links = act.path.flatMap((r) => Array.from({ length: r.to - r.from + 1 }, (_, k) => r.from + k).map((c) =>
+      `<li><a href="/study/bible/${r.book}/${c}">${escapeHtml(`${bookName(r.book)} ${c}`)}${titleOf(r.book, c) ? `: ${escapeHtml(titleOf(r.book, c))}` : ""}</a></li>`)).join("\n");
+    emit(
+      `/study/bible/story/${act.id}`,
+      `${line.title ?? act.id}: ${line.act ?? "The Story of the Bible"}`,
+      trim(line.turning ?? act.watch),
+      [root, { name: "The Story of the Bible", path: "/study/bible/story" }, { name: line.title ?? act.id, path: `/study/bible/story/${act.id}` }],
+      [`<h1>${escapeHtml(line.title ?? act.id)}</h1>`, `<p>${escapeHtml(act.dates)}</p>`, section("What happens", para(line.summary)), section("The world behind it", para(act.world)), section("What to watch for", para(act.watch)), section("Read it, chapter by chapter", `<ol>\n${links}\n</ol>`)].join("\n")
+    );
+  }
+
+  for (const d of doctrines) {
+    const keys = index.doctrines?.[d.id] ?? [];
+    const st = read(`doctrines/${d.id}.json`);
+    const studyBody = st ? [
+      section("What it is", para(st.definition)),
+      section("In the Old Testament", para(st.ot)),
+      section("In the New Testament", para(st.nt)),
+      section("Key texts", `<ol>${st.keyTexts.map((k) => `<li><strong>${escapeHtml(k.ref)}</strong>. ${escapeHtml(k.why)}</li>`).join("\n")}</ol>`),
+      section("How the church has confessed it", para(st.history)),
+      section("Where Christians differ", st.differ.map((x) => `<h3>${escapeHtml(x.view)}</h3>\n${para(x.body)}`).join("\n")),
+      section("Misunderstandings the church has rejected", para(st.errors)),
+      section("Why it matters", para(st.life)),
+    ].join("\n") : "";
+    const links = keys.map((k) => { const [slug, c] = k.split("/"); return `<li><a href="/study/bible/${slug}/${c}">${escapeHtml(`${bookName(slug)} ${c}`)}${titleOf(slug, +c) ? `: ${escapeHtml(titleOf(slug, +c))}` : ""}</a></li>`; }).join("\n");
+    emit(
+      `/study/bible/doctrines/${d.id}`,
+      `${d.name}: What the Bible Teaches`,
+      trim(d.summary),
+      [root, { name: "The Doctrines of the Bible", path: "/study/bible/doctrines" }, { name: d.name, path: `/study/bible/doctrines/${d.id}` }],
+      [`<h1>${escapeHtml(d.name)}</h1>`, para(d.summary), studyBody, links ? section("Chapters that teach it", `<ol>\n${links}\n</ol>`) : ""].join("\n")
+    );
+  }
+  const gi = read("guides/index.json");
+  for (const g of gi?.groups ?? [])
+    for (const x of g.guides) {
+      const gd = read(`guides/${x.id}.json`);
+      if (!gd) continue;
+      const body = [
+        `<h1>${escapeHtml(gd.title)}</h1>`,
+        `<p>${escapeHtml(gd.summary)}</p>`,
+        ...gd.sections.map((s) => section(s.h, `${para(s.body)}${s.table ? `\n<table>${s.table.caption ? `<caption>${escapeHtml(s.table.caption)}</caption>` : ""}<tr>${s.table.columns.map((c) => `<th>${escapeHtml(c)}</th>`).join("")}</tr>${s.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</table>` : ""}`)),
+      ].join("\n");
+      emit(`/study/bible/guides/${x.id}`, gd.title, trim(gd.summary), [root, { name: "Guides", path: "/study/bible/guides" }, { name: gd.title, path: `/study/bible/guides/${x.id}` }], body, "article");
+    }
+  return n;
+}
+
+/**
+ * A SELECT list of the wanted columns that the live table actually has, each
+ * aliased to the name the code reads. Production's tables have drifted from
+ * drizzle/schema.ts (no posts.coverImage, no posts.readingTimeMinutes), and a
+ * single unknown column used to abort the whole database pass.
+ */
+async function selectList(conn, table, wanted) {
+  const [cols] = await conn.query(`SHOW COLUMNS FROM \`${table}\``);
+  const actual = new Map(cols.map((c) => [String(c.Field).toLowerCase(), String(c.Field)]));
+  const missing = wanted.filter((c) => !actual.has(c.toLowerCase()));
+  if (missing.length) console.warn(`[prerender] ${table} has no column(s): ${missing.join(", ")} (skipped)`);
+  return wanted
+    .filter((c) => actual.has(c.toLowerCase()))
+    .map((c) => `\`${actual.get(c.toLowerCase())}\` AS \`${c}\``)
+    .join(", ");
+}
+
+// ---------------------------------------------------------------------------
+// The essay shelf (client/src/lib/shelf.json, read through scripts/lib/shelf.mjs).
+// A public essay gets its full head and crawlable body, from its rewrite when
+// one exists (client/public/essays/<slug>.json). A retired essay keeps its URL
+// but its file says noindex and carries only the notice the SPA shows: title,
+// one sentence, and the ways on. Static copies in api/index.ts's TAKEN_DOWN
+// are never written (when-fear-rewrites-theology's AI draft among them).
+const SHELF = loadEssayShelf(REPO_ROOT);
+const TAKEN_DOWN = loadTakenDown(REPO_ROOT);
+
+function writeRetiredEssay(template, { slug, title, pending }) {
+  const url = `${SITE_URL}/writing/${slug}`;
+  const sentence = pending ? PENDING_SENTENCE : RETIRED_SENTENCE;
+  const head = buildHead({ title, description: sentence, url, type: "website", noindex: true });
+  // The pending essay's own section, when that section has public essays
+  // (the same rule as nearestSection in client/src/lib/shelf.ts).
+  const own = pending ? SHELF.entries.get(slug) : null;
+  const liveSections = new Set(SHELF.liveEssays().map((e) => e.section));
+  const section = own && liveSections.has(own.section) ? SHELF.sections.find((x) => x.slug === own.section) : null;
+  const links = [
+    `<li><a href="/writing">Read the essays</a></li>`,
+    section ? `<li><a href="/writing?section=${escapeHtml(section.slug)}">Go to ${escapeHtml(section.name)}</a></li>` : "",
+    `<li><a href="/study/bible">Open the Study Bible</a></li>`,
+    `<li><a href="/help">Find Help</a></li>`,
+  ].filter(Boolean).join("\n");
+  const body = `<div class="prerender-content" style="max-width:68ch;margin:0 auto;padding:2rem 1.25rem;font-family:Georgia,serif;line-height:1.7"><article><h1>${escapeHtml(title)}</h1>\n<p>${escapeHtml(sentence)}</p>\n<ul>\n${links}\n</ul></article></div>`;
+  writeRoute(template, { path: `/writing/${slug}` }, head, body);
+}
+
+/** Every skeptic-track stop is an essay on the public shelf (the SKEPTIC_TRACK_LIVE rule). */
+function skepticTrackLive() {
+  try {
+    const src = fs.readFileSync(path.join(REPO_ROOT, "client/src/lib/skepticTrack.ts"), "utf8");
+    const slugs = [...src.matchAll(/slug:\s*(?:"([^"]+)"|null)/g)].map((m) => m[1] ?? null);
+    return slugs.length > 0 && slugs.every((slug) => slug !== null && SHELF.isPublic(slug));
+  } catch {
+    return false;
+  }
+}
+
+/** A public essay with its rewrite applied, when one exists. */
+function withRewrite(rec) {
+  const rewrite = SHELF.overrideRecords.get(rec.slug);
+  return rewrite
+    ? { ...rec, title: rewrite.title, excerpt: rewrite.excerpt, body: rewrite.body, updatedAt: rewrite.updated }
+    : rec;
 }
 
 async function loadDb() {
@@ -710,6 +973,9 @@ async function main() {
       image,
       type: page.type,
       schemas: page.schemas || [],
+      // The skeptic track says noindex while any stop is off the public shelf
+      // (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts), as its page does.
+      noindex: page.path === "/skeptic-track" && !skepticTrackLive(),
     });
     writeRoute(template, page, head, hubListingHtml(page.path));
     wrote++;
@@ -730,16 +996,14 @@ async function main() {
     { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
-    // The 50 contested-doctrine pages (/theology/doctrine/:slug) — manifest
+    // The contested-doctrine pages (/theology/doctrine/:slug) — manifest
     // from scripts/build-theology-index.mjs; subtitle is the description.
     { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle" },
     // Sermon series for all 66 books of the Bible. The manifest keys the entry
     // by `id`/`name` (not slug/title), so map them; content files are arrays of
     // markdown sermons, so the body injects at full depth.
-    // Prophetic Justice / Disruption per-topic pages. Indexes are generated from
-    // client/src/lib/prophetic.ts (ready topics only) by build-prophetic-indexes.mjs.
-    { file: "client/public/justice/topics-index.json", key: "topics", route: "/justice/topic/", ogPrefix: "justice-topic", contentDir: "client/public/justice/topics" },
-    { file: "client/public/disruption/topics-index.json", key: "topics", route: "/disruption/topic/", ogPrefix: "disruption-topic", contentDir: "client/public/disruption/topics" },
+    // (The Prophetic Justice / Disruption per-topic pages are folded into the
+    // essay shelf and 301 in vercel.json, so they get no head of their own.)
     // The 208 wisdom topics (/wisdom/:id). Manifest keys by id/label; the
     // framing is the description, and the title matches the page's own
     // "{label} — What the Bible Says" so scrapers see the same head.
@@ -749,6 +1013,17 @@ async function main() {
     // table extractor skips them by design and only a manifest pass reaches
     // them; the sitemap has listed both families all along.
     { file: "client/public/pathways/index.json", route: "/pathways/", ogPrefix: "pathways", desc: "subtitle" },
+    // Find Help care pages (/help/:slug) from the needs registry
+    // (scripts/build-needs-index.mjs). Only needs with a written page are
+    // routes; starter entries live on /help itself. The head carries the
+    // search title, not the reader's-words H1, plus the FAQ as structured
+    // data; registry and review fields stay out of the crawlable body.
+    {
+      file: "client/public/needs/index.json", key: "needs", route: "/help/", ogPrefix: "help", desc: "description",
+      contentDir: "client/public/needs", titleField: "seoTitle", preferTitleField: true, faq: true,
+      filter: (e) => e.page === true,
+      omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
+    },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {
@@ -759,10 +1034,11 @@ async function main() {
     // Most manifests are `{ key: [...] }`; a couple (pathways) are a bare array.
     const entries = Array.isArray(data) ? data : data[src.key] || [];
     for (const e of entries) {
+      if (src.filter && !src.filter(e)) continue;
       // Most manifests key by slug/title; a few (e.g. the whole-Bible sermons)
       // key by id/name, so allow a per-source field alias.
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
-      const rawTitle = e.title || (src.titleField ? e[src.titleField] : undefined);
+      const rawTitle = (src.preferTitleField && e[src.titleField]) || e.title || (src.titleField ? e[src.titleField] : undefined);
       if (!slug || !rawTitle) continue;
       const title = src.titleTemplate ? src.titleTemplate.replace(/\{title\}/g, rawTitle) : rawTitle;
       const url = `${SITE_URL}${src.route}${slug}`;
@@ -783,6 +1059,8 @@ async function main() {
           catch { /* leave head-only */ }
         }
       }
+      const faqEntries = src.faq && Array.isArray(contentObj?.faq) ? contentObj.faq : [];
+      if (contentObj && src.omitKeys) for (const k of src.omitKeys) delete contentObj[k];
       // Books get a subtitle-enriched <title> (matching the client SEOMeta) and
       // a Book JSON-LD carrying every chapter as a hasPart node, so search can
       // deep-link the exact chapter that answers a reader's question.
@@ -793,6 +1071,17 @@ async function main() {
       if (section) crumbs.push(section);
       crumbs.push({ name: title, path: `${src.route}${slug}` });
       const schemas = [breadcrumbSchema(crumbs)];
+      if (faqEntries.length) {
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqEntries.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: String(f.a).replace(/[*_]/g, "") },
+          })),
+        });
+      }
       if (src.type === "book") {
         const chapters = Array.isArray(contentObj?.chapters) ? contentObj.chapters : [];
         schemas.push({
@@ -830,6 +1119,10 @@ async function main() {
     }
   }
   console.log(`[prerender] injected crawlable body content into ${withBody} library pages`);
+
+  const studyBible = prerenderStudyBible(template);
+  wrote += studyBible;
+  console.log(`[prerender] wrote ${studyBible} Study Bible pages (books, chapters, acts, doctrines)`);
 
   // Route-table extraction: every static route whose component declares
   // <SEOMeta title="..." description="..." /> as string literals gets a real
@@ -871,6 +1164,9 @@ async function main() {
     if (routePath === "/404" || written.has(normalized)) continue;
     const rel = importMap[comp];
     if (!rel) {
+      // A redirect route (ToToolsRedirect, PastorsMovedRedirect, …) has no
+      // page of its own and needs no head; it is not an uncovered page.
+      if (/Redirect$/.test(comp)) continue;
       // Report rather than skip in silence. A component the import scanner
       // cannot resolve is exactly how /book-bundles and /article-collections
       // went un-prerendered without anything saying so.
@@ -938,14 +1234,32 @@ async function main() {
   // the static-library pass below doesn't double-write them.
   const writtenEssaySlugs = new Set();
 
+  // Slugs whose database row exists but is unpublished: the admin takedown.
+  // The API 404s them and never falls back to a static copy, so neither the
+  // static-library pass nor the shelf pass below may write them a head.
+  const unpublishedSlugs = new Set();
+
   // DB-driven pages
   const conn = await loadDb();
   if (conn) {
     try {
+      try {
+        const [hidden] = await conn.query("SELECT slug FROM posts WHERE published = false");
+        for (const r of hidden) if (r?.slug) unpublishedSlugs.add(r.slug);
+      } catch { /* legacy schema: nothing to hold back */ }
       const [posts] = await conn.query(
-        "SELECT slug, title, excerpt, pillar, body, coverImage, publishedAt, updatedAt, createdAt FROM posts WHERE published = true"
+        `SELECT ${await selectList(conn, "posts", ["slug", "title", "excerpt", "pillar", "body", "coverImage", "publishedAt", "updatedAt", "createdAt"])} FROM posts WHERE published = true`
       );
-      for (const post of posts) {
+      for (const row of posts) {
+        const visibility = SHELF.visibility(row.slug, essayDate(row));
+        if (visibility === "retired" || visibility === "pending") {
+          const pending = visibility === "pending";
+          writeRetiredEssay(template, { slug: row.slug, title: pending ? SHELF.entries.get(row.slug).title : row.title, pending });
+          wrote++;
+          writtenEssaySlugs.add(row.slug);
+          continue;
+        }
+        const post = withRewrite(row);
         const url = `${SITE_URL}/writing/${post.slug}`;
         // Use the essay's own cover when present; otherwise render a per-essay
         // branded card from its title (+ pillar) via the dynamic OG endpoint.
@@ -987,7 +1301,7 @@ async function main() {
       }
 
       const [books] = await conn.query(
-        "SELECT slug, title, description, author, coverImage FROM books WHERE published = true AND slug IS NOT NULL"
+        `SELECT ${await selectList(conn, "books", ["slug", "title", "description", "author", "coverImage"])} FROM books WHERE published = true AND slug IS NOT NULL`
       );
       for (const book of books) {
         const url = `${SITE_URL}/books/${book.slug}`;
@@ -1030,6 +1344,11 @@ async function main() {
       } catch {
         // table may not exist
       }
+    } catch (e) {
+      // A database problem costs the database pages only; the static essay
+      // library below must still be written (it used to be skipped entirely,
+      // leaving every essay with the homepage's title and description).
+      console.error(`[prerender] database pages skipped: ${e.message}`);
     } finally {
       await conn.end();
     }
@@ -1045,9 +1364,20 @@ async function main() {
       fs.readFileSync(path.join(REPO_ROOT, "content/static-library.generated.json"), "utf8")
     );
     let staticWrote = 0;
-    for (const rec of staticLib) {
-      if (!rec || !rec.slug || rec.published === false) continue;
-      if (writtenEssaySlugs.has(rec.slug)) continue;
+    let staticRetired = 0;
+    for (const raw of staticLib) {
+      if (!raw || !raw.slug || raw.published === false) continue;
+      if (writtenEssaySlugs.has(raw.slug) || TAKEN_DOWN.has(raw.slug) || unpublishedSlugs.has(raw.slug)) continue;
+      const visibility = SHELF.visibility(raw.slug, essayDate(raw));
+      if (visibility === "retired" || visibility === "pending") {
+        const pending = visibility === "pending";
+        writeRetiredEssay(template, { slug: raw.slug, title: pending ? SHELF.entries.get(raw.slug).title : raw.title, pending });
+        wrote++;
+        staticRetired++;
+        writtenEssaySlugs.add(raw.slug);
+        continue;
+      }
+      const rec = withRewrite(raw);
       const url = `${SITE_URL}/writing/${rec.slug}`;
       const image = rec.coverImage || ogImageUrl(rec.title, rec.pillar || undefined);
       const description = rec.excerpt || rec.title;
@@ -1076,10 +1406,43 @@ async function main() {
       staticWrote++;
       writtenEssaySlugs.add(rec.slug);
     }
-    console.log(`[prerender] static library: ${staticWrote} essays prerendered (of ${staticLib.length})`);
+    console.log(`[prerender] static library: ${staticWrote} essays prerendered, ${staticRetired} retired notices (of ${staticLib.length})`);
   } catch (e) {
     console.warn(`[prerender] static library skipped: ${e.message}`);
   }
+
+  // The shelf itself: a public shelf essay neither pass above wrote (a build
+  // with no database, or a rewrite with no row anywhere) still gets its own
+  // head, from its rewrite or the committed shelf, so it never unfurls as the
+  // home page.
+  let shelfWrote = 0;
+  for (const e of SHELF.liveEssays()) {
+    if (writtenEssaySlugs.has(e.slug) || unpublishedSlugs.has(e.slug)) continue;
+    const rewrite = SHELF.overrideRecords.get(e.slug);
+    const url = `${SITE_URL}/writing/${e.slug}`;
+    const title = rewrite?.title || e.title;
+    const description = (rewrite ? rewrite.excerpt : e.blurb) || title;
+    const image = ogImageUrl(title);
+    const rec = rewrite
+      ? { slug: e.slug, title, excerpt: rewrite.excerpt, body: rewrite.body, publishedAt: rewrite.updated, createdAt: rewrite.updated, updatedAt: rewrite.updated }
+      : null;
+    const head = buildHead({
+      title,
+      description,
+      url,
+      image,
+      type: "article",
+      publishedDate: rec ? new Date(rec.publishedAt).toISOString() : undefined,
+      modifiedDate: rec ? new Date(rec.updatedAt).toISOString() : undefined,
+      schemas: rec ? [articleSchema(rec, url, image)] : [],
+    });
+    const bodyHtml = rec ? bodyFromContent({ title, subtitle: rec.excerpt, sectionLabel: "", markdown: rec.body }) : "";
+    writeRoute(template, { path: `/writing/${e.slug}` }, head, bodyHtml);
+    wrote++;
+    shelfWrote++;
+    writtenEssaySlugs.add(e.slug);
+  }
+  if (shelfWrote) console.log(`[prerender] shelf: ${shelfWrote} essays written from the shelf (no database or static row)`);
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);
 }

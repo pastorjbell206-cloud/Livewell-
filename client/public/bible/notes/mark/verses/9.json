@@ -1,0 +1,411 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "This saying closes the teaching that began at 8:34 and opens the transfiguration. It answers 8:38: the Son of Man will come in glory at the end, but some standing here will see the kingdom come with power before they die. The chapter division, which goes back to Stephen Langton in the thirteenth century, separates it from the sayings it completes, but Mark's ordering puts it directly before the mountain.",
+      "grammar": "Two perfect participles carry the saying. Tines tōn hōde hestēkotōn, ‘some of those standing here’, uses the perfect of histēmi, which in this verb simply means ‘standing’. The key phrase is idōsin tēn basileian tou theou elēluthuian en dunamei, ‘they see the kingdom of God having come with power’. Elēluthuian is a perfect participle, so the object of their seeing is the kingdom as already arrived, not merely arriving. C. H. Dodd (The Parables of the Kingdom, 1935) pressed this form in support of his realized eschatology: they will come to see that the kingdom has come. Others reply that a perfect participle after a verb of seeing naturally describes a state the viewers will witness, whenever it begins. Geusōntai thanatou, ‘taste death’, is a Semitic idiom for dying, and the double negative ou mē gives the strongest form of denial in Greek, ‘will certainly not taste death’.",
+      "words": ["G0281", "G2476", "G1089", "G2288", "G0932", "G2064", "G1411"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The verse promises a visible arrival of the kingdom's power within the lifetime of some who heard it. The chapter note sets out the readings: the transfiguration, the resurrection and Pentecost, the fall of the temple in AD 70, or the final coming. Mark's placement makes the transfiguration at least a first fulfillment; John Chrysostom, among the fathers, read it that way (Homilies on Matthew 56), and 2 Peter 1:16-18 speaks of the mountain as the eyewitness sight of Christ's power and coming."
+        }
+      ],
+      "parallels": ["Matthew 16:28", "Luke 9:27"],
+      "text": "Each Gospel words the promise differently. Matthew has ‘before they see the Son of Man coming in his kingdom’ (Matthew 16:28), tying it more closely to 8:38. Luke has only ‘before they see the kingdom of God’ (Luke 9:27), without Mark's ‘with power’.",
+      "refs": ["Mark 8:38", "2 Peter 1:16-18", "Romans 1:4", "Mark 13:30", "Mark 13:32"]
+    },
+    {
+      "v": "2-3",
+      "context": "Six days later Jesus takes the three disciples who saw the raising of Jairus' daughter (5:37) up a high mountain, and there his appearance changes. Mark describes the change only through his clothes, which become whiter than any human process could make them.",
+      "grammar": "Metemorphōthē, ‘he was transfigured’, is an aorist passive with no agent named, which suggests God as the one acting. Meth' hēmeras hex, ‘after six days’, is Mark's only precise time note before the passion week, and it recalls Sinai (see the Old Testament note). The description of the clothes is Mark's alone: stilbonta, ‘gleaming’, leuka lian, ‘exceedingly white’, and hoia gnapheus epi tēs gēs ou dunatai houtōs leukanai, ‘such as no fuller on earth can whiten them’. A gnapheus was a fuller, the worker who cleaned and bleached new cloth. The homely comparison, with epi tēs gēs, ‘on earth’, sets the whiteness beyond anything earthly.",
+      "words": ["G1803", "G3880", "G0399", "G3735", "G5308", "G3339", "G4744", "G3022", "G1102", "G3021"],
+      "ot": [
+        {
+          "ref": "Exodus 24:15-16",
+          "note": "When Moses went up Mount Sinai, taking with him Joshua (24:13), the cloud covered the mountain for six days, and on the seventh day the LORD called to Moses from the cloud. The Septuagint uses hex hēmeras, ‘six days’, and nephelē, ‘cloud’. Mark's six days, a high mountain, a chosen few, a cloud, and a voice form a pattern that places Jesus' transfiguration in the line of Sinai. Exodus 34:29-35 adds that Moses' face shone after he spoke with God; Jesus' glory, unlike Moses', is not reflected but his own."
+        }
+      ],
+      "parallels": ["Matthew 17:1-2", "Luke 9:28-29"],
+      "text": "Matthew adds that Jesus' face shone like the sun (Matthew 17:2), recalling Moses' face. Luke has ‘about eight days’, says Jesus went up to pray, and describes the change of his face as he prayed (Luke 9:28-29).",
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The glory seen on the mountain is not given to Jesus from outside, as light reflected on Moses' face, but shown from within. The church has read the transfiguration as a brief unveiling of the divine glory the Son always had, the glory John says the disciples beheld (John 1:14)."
+        }
+      ],
+      "refs": ["Mark 5:37", "Exodus 34:29-35", "Daniel 7:9", "Revelation 1:13-16", "John 1:14"]
+    },
+    {
+      "v": "4",
+      "context": "Elijah and Moses appear and talk with Jesus. Both men met God on a mountain (Exodus 33:18-23, 1 Kings 19:8-13), both left the earth in unusual ways (Deuteronomy 34:5-6, 2 Kings 2:11), and both were expected in some form at the end (Deuteronomy 18:15, Malachi 4:5).",
+      "grammar": "Mark writes ōphthē autois Ēlias sun Mōusei, ‘there appeared to them Elijah with Moses’, with a singular verb and Elijah named first. Matthew and Luke both reverse the order to Moses and Elijah. Mark's order puts the figure of the coming conversation (verses 11 to 13) in front. Ōphthē, ‘appeared’, is the aorist passive of horaō used for appearances from God's side, the same form used of the risen Jesus appearing (Luke 24:34, 1 Corinthians 15:5). Ēsan sullalountes, ‘they were talking with’, is a periphrastic imperfect describing an ongoing conversation.",
+      "words": ["G3700H", "G2243", "G3475", "G4814"],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The Law and the Prophets appear in their greatest figures and speak with Jesus. Luke specifies the subject, his departure (exodos) to be fulfilled in Jerusalem (Luke 9:31); Mark leaves it unstated, but in context the cross just predicted in 8:31 is the natural topic."
+        }
+      ],
+      "parallels": ["Matthew 17:3", "Luke 9:30-31"],
+      "refs": ["Exodus 33:18-23", "1 Kings 19:8-13", "Deuteronomy 34:5-6", "2 Kings 2:11", "Luke 24:27"]
+    },
+    {
+      "v": "5-6",
+      "context": "Peter speaks, calling Jesus Rabbi and offering to build three shelters. Mark explains at once that Peter did not know what to say, because they were terrified. The offer puts Jesus on a level with Moses and Elijah, which the voice from the cloud will correct.",
+      "grammar": "Peter addresses Jesus as rhabbi, ‘my master’ or ‘teacher’, a respectful title that falls far short of the moment and of his own confession in 8:29. Kalon estin hēmas hōde einai can mean ‘it is good that we are here’ (so that we can help) or ‘it is good for us to be here’ (so let us stay). Skēnas, ‘tents’ or ‘booths’, is the word the Septuagint uses for the booths of the Feast of Tabernacles and for the tabernacle itself. Verse 6 uses the pluperfect ēdei, ‘he had not known’, with a deliberative subjunctive, ti apokrithē, ‘what he should answer’. Ekphoboi, ‘terrified’, is an intensive compound used elsewhere in the New Testament only in Hebrews 12:21, of Moses at Sinai.",
+      "words": ["G4074G", "G4461", "G2570G", "G4633", "G1492I", "G0611", "G1630"],
+      "parallels": ["Matthew 17:4", "Luke 9:32-33"],
+      "text": "Matthew has Peter say ‘Lord’ and ‘if you wish, I will make’ (Matthew 17:4), softening the impulsiveness. Luke adds that the three had been heavy with sleep and that Peter spoke not knowing what he said (Luke 9:32-33). Mark's frank remark about Peter's confusion fits the tradition that Peter's preaching stands behind the Gospel.",
+      "refs": ["Leviticus 23:42-43", "Zechariah 14:16", "Hebrews 12:21", "John 1:14"]
+    },
+    {
+      "v": "7",
+      "context": "A cloud overshadows them, and a voice from the cloud names Jesus as God's beloved Son and commands the disciples to listen to him. This is the second time the Father speaks in Mark; at the baptism the words were addressed to Jesus (1:11), here they are addressed to the disciples.",
+      "grammar": "Nephelē episkiazousa autois, ‘a cloud overshadowing them’: episkiazō is the verb the Septuagint uses when the cloud settled on the tent of meeting and the glory of the LORD filled the tabernacle (Exodus 40:35), and Luke uses it of the Spirit overshadowing Mary (Luke 1:35). Houtos estin ho huios mou ho agapētos, ‘this is my Son, the beloved’: the adjective agapētos is the Septuagint's word for Isaac, the only son, in Genesis 22:2. Akouete autou, ‘listen to him’, is a present imperative calling for continual hearing, and it echoes Deuteronomy 18:15.",
+      "words": ["G3507", "G1982", "G5456G", "G5207", "G0027", "G0191"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:15",
+          "note": "Moses promises that the LORD will raise up a prophet like him from among the people, and adds, in the Hebrew, ‘to him you shall listen’ (elav tishmaun); the Septuagint has autou akousesthe. The voice's autou akouete repeats it as a command. With Moses himself standing by, God names Jesus as the prophet Moses promised, and more than that prophet, since he is the Son."
+        },
+        {
+          "ref": "Psalm 2:7",
+          "note": "In the royal psalm the LORD says to his anointed king, ‘You are my Son’. The voice speaks in the third person here, ‘this is my Son’, but the words take up the psalm's enthronement language, as at the baptism, and join it to the beloved son of Genesis 22:2 and possibly to the chosen servant of Isaiah 42:1, which Luke's form (‘my Chosen One’) brings closer."
+        }
+      ],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father speaks from the cloud of his presence and names Jesus as his own Son. The verse distinguishes the Father who speaks from the Son who is named, and it grounds the Son's authority to be heard in his relation to the Father, not in his standing among the prophets."
+        }
+      ],
+      "parallels": ["Matthew 17:5", "Luke 9:34-35"],
+      "text": "Matthew's voice adds ‘with whom I am well pleased’, matching the baptism (Matthew 17:5). Luke's reads ‘my Son, my Chosen One’ (Luke 9:35), in most modern editions.",
+      "refs": ["Mark 1:11", "Exodus 40:34-35", "Genesis 22:2", "Isaiah 42:1", "2 Peter 1:17-18"]
+    },
+    {
+      "v": "8",
+      "context": "Suddenly the vision ends. Moses and Elijah are gone, and the disciples see only Jesus with them. The scene ends on the one to whom the voice told them to listen.",
+      "grammar": "Exapina, ‘suddenly’, occurs only here in the New Testament. Periblepsamenoi, ‘looking around’, is the searching look Mark usually gives to Jesus (3:5, 3:34, 5:32); here it is the disciples who look. The sentence ends with emphasis: ouketi oudena eidon alla ton Iēsoun monon meth' heautōn, ‘they no longer saw anyone, but Jesus alone with them’. Monon, ‘alone’, is the last word of weight in the scene.",
+      "words": ["G1819", "G4017", "G1492H", "G2424G", "G3441"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Moses and Elijah withdraw, and Jesus remains. The Law and the Prophets bear witness and then give place to the Son who fulfills them, as Hebrews 1:1-2 says God, having spoken by the prophets, has now spoken by his Son."
+        }
+      ],
+      "parallels": ["Matthew 17:6-8", "Luke 9:36"],
+      "refs": ["Hebrews 1:1-2", "John 3:30", "Mark 3:5"]
+    },
+    {
+      "v": "9-10",
+      "context": "On the way down, Jesus orders the three to tell no one what they saw until the Son of Man has risen from the dead. They keep the command but wonder what rising from the dead means. It is the only command to silence in Mark with an end date.",
+      "grammar": "Diesteilato autois hina mēdeni ha eidon diēgēsōntai, ‘he ordered them to tell no one what they had seen’, is limited by ei mē hotan, ‘except when’, the Son of Man should rise. The glory of the mountain can be understood only from the far side of the cross. Ton logon ekratēsan pros heautous can mean ‘they kept the matter to themselves’ or ‘they seized on the saying, discussing it among themselves’. Suzētountes ti estin to ek nekrōn anastēnai, ‘questioning what the rising from the dead is’: the article to turns the whole infinitive phrase into a noun, as if they were asking about a term they could not place.",
+      "words": ["G2597", "G1291", "G1334", "G0450", "G2902", "G4802", "G3498"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Most Jews in Jesus' day who hoped for resurrection expected all the righteous to rise together at the end (Daniel 12:2). The disciples' puzzlement is not over the idea of resurrection but over one man, the Son of Man, rising from the dead within history before that day. The verse marks the newness of what Easter would be."
+        }
+      ],
+      "parallels": ["Matthew 17:9"],
+      "refs": ["Daniel 12:2", "John 11:24", "Mark 8:31", "Acts 23:8"]
+    },
+    {
+      "v": "11-13",
+      "context": "The disciples ask about the scribes' teaching that Elijah must come first. If they have just seen Elijah, and the Messiah is here, how does that fit? Jesus answers that Elijah does come first, sets beside it the Scripture that the Son of Man must suffer, and says that Elijah has already come and suffered as they wished. The riddle points to John the Baptist without naming him.",
+      "grammar": "Dei elthein prōton, ‘must come first’, uses the same dei of divine necessity as 8:31, so that two necessities stand side by side: Elijah's coming and the Son of Man's suffering. Jesus' reply, Ēlias men elthōn prōton apokathistanei panta, ‘Elijah indeed, coming first, restores all things’, uses apokathistēmi, the Septuagint's verb in Malachi. The question pōs gegraptai, ‘how is it written?’, asks how the promise of restoration fits the Scripture of suffering, with exoudenēthē, ‘be treated with contempt’, a strong verb for being counted as nothing. Elēluthen, ‘has come’, a perfect, declares Elijah's coming complete.",
+      "words": ["G1905", "G1122", "G2243", "G1163", "G0600", "G1125", "G3958", "G1847", "G2064"],
+      "ot": [
+        {
+          "ref": "Malachi 4:5-6",
+          "note": "In English Bibles this is Malachi 4:5-6; in the Hebrew text it is Malachi 3:23-24, and in the Septuagint 3:22-23. God promises to send Elijah before the great and terrible day of the LORD to turn the hearts of fathers to children. The Septuagint renders ‘turn’ with apokatastēsei, ‘he will restore’, the verb Jesus uses. Sirach 48:10 (early second century BC) expands the task to restoring the tribes of Jacob. Jesus accepts the expectation and places John in that role."
+        }
+      ],
+      "history": "No Old Testament text says Elijah would suffer, so the phrase as it is written about him has puzzled interpreters. Many, including Joel Marcus, point to the story of Elijah in 1 Kings 19, where Jezebel sought his life: as the queen hunted Elijah, Herodias sought and obtained the death of John (Mark 6:19-28). Mark has already dressed John in Elijah's clothing (1:6, 2 Kings 1:8).",
+      "parallels": ["Matthew 17:10-13"],
+      "text": "Matthew adds that the disciples then understood he was speaking of John the Baptist (Matthew 17:13). Mark leaves the identification to the reader.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Jesus reads Scripture as fulfilled in unexpected forms: the promised Elijah came as a prophet in camel's hair who was executed by a petty king. The same pattern of fulfillment through rejection will hold for the Son of Man."
+        }
+      ],
+      "refs": ["Mark 1:6", "Mark 6:17-29", "1 Kings 19:1-2", "Matthew 11:14", "Luke 1:17"]
+    },
+    {
+      "v": "14-16",
+      "context": "Coming down, Jesus and the three find the other disciples surrounded by a crowd, arguing with scribes. The scene recalls Moses descending Sinai to find disorder in the camp (Exodus 32). The crowd is astonished at the sight of Jesus and runs to greet him, and Jesus asks what the dispute is about.",
+      "grammar": "Exethambēthēsan, ‘they were greatly amazed’, is a strong verb Mark alone uses in the New Testament (again in 14:33 and 16:5-6). Why the crowd is amazed is not stated. Some interpreters suggest that something of the mountain's glory still showed on Jesus, as Moses' face shone when he came down (Exodus 34:29-30), but Mark gives no such detail, and the amazement may simply be at his timely arrival. Suzētountas, ‘arguing’, repeats the verb of verse 10: arguments on the way down and at the bottom.",
+      "words": ["G1122", "G4802", "G1568", "G4370", "G0782"],
+      "parallels": ["Matthew 17:14", "Luke 9:37"],
+      "refs": ["Exodus 32:15-20", "Exodus 34:29-30", "Mark 9:10"]
+    },
+    {
+      "v": "17-18",
+      "context": "A father from the crowd answers. He brought his son, possessed by a spirit that makes him mute and throws him into seizures, and the disciples could not drive it out. The disciples who were given authority over unclean spirits (6:7, 6:13) have failed.",
+      "grammar": "The description is vivid and medical in its detail, all in present tenses of what happens whenever (hopou ean) the spirit seizes him: rhēssei, ‘it throws him down’; aphrizei, ‘he foams’; trizei tous odontas, ‘he grinds his teeth’; xērainetai, ‘he becomes rigid’, literally ‘is dried up’ or ‘withers’. Ouk ischusan, ‘they did not have the strength’, is pointed: the disciples' failure is described as a lack of power.",
+      "words": ["G1320", "G0216", "G2638", "G4486", "G0875", "G5149", "G3583", "G2480"],
+      "history": "The symptoms match what ancient writers called the sacred disease and we call epilepsy. The Hippocratic treatise On the Sacred Disease, from about the late fifth century BC, had argued that the condition has natural causes like other diseases. Matthew's parallel says the boy is selēniazetai, ‘moonstruck’, the popular term for seizures (Matthew 17:15). Mark tells the story as a case of possession and has Jesus address the spirit, while elsewhere the Gospels distinguish sickness from possession (Mark 1:32-34).",
+      "parallels": ["Matthew 17:15-16", "Luke 9:38-40"],
+      "refs": ["Mark 6:7", "Mark 6:13", "Mark 1:32-34", "Matthew 4:24"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus' answer is a lament over an unbelieving generation, spoken to all present: disciples, scribes, crowd, and father. Then he orders the boy brought to him.",
+      "grammar": "Ō genea apistos, ‘O unbelieving generation’, uses the interjection ō, rare in Mark, for a cry of exasperation. Two questions follow, heōs pote pros humas esomai, ‘how long will I be with you?’, and heōs pote anexomai humōn, ‘how long will I bear with you?’. Anechomai means to endure or put up with, and the ‘how long’ form is the language of the psalms of lament and of God's complaints against Israel in the wilderness.",
+      "words": ["G5599", "G1074", "G0571", "G0430", "G5342"],
+      "ot": [
+        {
+          "ref": "Numbers 14:27",
+          "note": "In the wilderness God asks how long he must bear with this evil congregation that grumbles against him (compare Numbers 14:11). Deuteronomy 32:5 and 32:20 call Israel a crooked generation and children in whom is no faithfulness. Jesus speaks as God spoke of the wilderness generation, which is another sign in Mark of who he is. The note is exasperation, but it ends in a command that brings the boy to him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Unbelief here is a condition of a whole generation, not only of outsiders. The disciples, who had cast out demons before, are included in it; faith is not a possession secured by past success."
+        }
+      ],
+      "parallels": ["Matthew 17:17", "Luke 9:41"],
+      "refs": ["Deuteronomy 32:5", "Deuteronomy 32:20", "Mark 6:6", "Mark 8:12"]
+    },
+    {
+      "v": "20-22",
+      "context": "When the spirit sees Jesus, it throws the boy into a convulsion. Jesus asks the father how long this has gone on, and the father tells of years of danger, fire and water, and ends with a plea that doubts: if you can do anything, help us.",
+      "grammar": "Sunesparaxen, ‘convulsed him violently’, and ekulieto, ‘he kept rolling’ (imperfect), make the scene physical. Jesus' question posos chronos estin hōs touto gegonen autō, ‘how long a time is it since this has happened to him?’, is found only in Mark, and the answer paidiothen, ‘from childhood’, stresses how long the father has suffered with the boy. The plea ei ti dunē, boēthēson hēmin splagchnistheis eph' hēmas, ‘if you can do anything, help us, having compassion on us’, uses the first person plural twice: the father counts himself in the need. Splagchnistheis is the verb of Jesus' own compassion in 8:2.",
+      "words": ["G4952", "G2947", "G0875", "G5550", "G3812", "G4442", "G5204", "G1410", "G0997", "G4697"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The father's account of a childhood of seizures, fire, and water is told without comment, and Jesus listens before he acts. The Gospel lets the full weight of a parent's long suffering be spoken to Jesus."
+        }
+      ],
+      "parallels": ["Luke 9:42"],
+      "refs": ["Mark 8:2", "Mark 5:25-26", "Psalm 88:15"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus takes up the father's ‘if you can’ and turns it back: the question is not his ability but the father's trust. The father cries out at once with a prayer that confesses faith and unbelief in the same breath. The exchange is the center of the story.",
+      "grammar": "To ei dunē, literally ‘the “if you can”’: the neuter article to quotes the father's words back to him, as English uses quotation marks. Jesus answers panta dunata tō pisteuonti, ‘all things are possible for the one who believes’. Most interpreters take the believer to be the father, invited to trust; some note that Jesus himself is the one whose trust in the Father makes all things possible, since Mark 10:27 and 14:36 say all things are possible for God. The father's reply, pisteuō; boēthei mou tē apistia, ‘I believe; help my unbelief’, uses the present imperative boēthei, where his earlier plea used the aorist boēthēson. Grammarians debate whether the dative tē apistia means ‘help me in my unbelief’ or ‘help me out of my unbelief’; either way, he brings his doubt to Jesus rather than hiding it.",
+      "words": ["G1410", "G1415", "G4100", "G2896", "G3962", "G0997", "G0570"],
+      "text": "Later manuscripts, followed by the King James Version, read ‘If thou canst believe, all things are possible’, adding pisteusai, ‘to believe’, which makes an easier sentence, and have the father cry out ‘with tears’ and address Jesus as ‘Lord’. The shorter text of Codex Sinaiticus and Codex Vaticanus is harder and almost certainly original.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The father's prayer shows that faith and doubt can coexist in one person, and that faith includes asking for more faith. Jesus heals in response to this mixed confession, which the church has long held up as a pattern for honest prayer."
+        }
+      ],
+      "refs": ["Mark 10:27", "Mark 14:36", "Mark 11:22-24", "Luke 17:5", "Hebrews 11:6"]
+    },
+    {
+      "v": "25-27",
+      "context": "Seeing a crowd gathering, Jesus commands the spirit to come out and never return. It shrieks, convulses the boy, and leaves him so still that many say he is dead. Jesus takes his hand and raises him, and he stands up. The account uses the language of death and resurrection only a few verses after the disciples puzzled over rising from the dead.",
+      "grammar": "Jesus addresses the spirit as to alalon kai kōphon pneuma, ‘you mute and deaf spirit’, and speaks with authority: egō epitassō soi, ‘I command you’, with the emphatic egō. Kai mēketi eiselthēs eis auton, ‘and never enter him again’, adds a prohibition found in no other exorcism in Mark. The boy becomes hōsei nekros, ‘like a corpse’, and many say apethanen, ‘he died’. Then Jesus kratēsas tēs cheiros autou ēgeiren auton, kai anestē, ‘taking his hand, raised him, and he arose’. Egeirō and anistēmi are the two verbs of resurrection in the New Testament, and both appear here, as they did for Jairus' daughter (5:41-42).",
+      "words": ["G1998", "G2008", "G2974", "G2004", "G1525", "G3498", "G0599", "G2902", "G1453", "G0450"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Mark tells the boy's recovery in the words he uses of resurrection, so that the healing becomes a sign of what Jesus will do and what will be done to him. The one who lifts a boy who looked dead will himself be raised."
+        }
+      ],
+      "parallels": ["Matthew 17:18", "Luke 9:42-43"],
+      "refs": ["Mark 5:41-42", "Mark 1:31", "Mark 16:6", "Acts 3:7"]
+    },
+    {
+      "v": "28-29",
+      "context": "In the house the disciples ask privately why they could not cast it out. Jesus answers that this kind can come out only by prayer. The disciples had authority and had used it before; what they lacked was dependence.",
+      "grammar": "Touto to genos, ‘this kind’, suggests that spirits differ, though Mark does not explain how. En oudeni dunatai exelthein ei mē en proseuchē, ‘it can come out by nothing except by prayer’. The phrase does not mean a special formula; Jesus himself prays no recorded prayer in this exorcism. It means the kind of reliance on God that the disciples' failure shows they had neglected.",
+      "words": ["G1525", "G2398", "G1410", "G1544", "G1085H", "G4335"],
+      "text": "Most later manuscripts add kai nēsteia, ‘and fasting’, which the King James Version translates. The words are absent from the original hand of Codex Sinaiticus and from Codex Vaticanus, and most editors think they were added in a period when the church placed growing emphasis on fasting (Matthew 17:21, which contains the same saying, is itself absent from the best manuscripts of Matthew).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The disciples' power had come from Jesus, and it did not become theirs to use apart from him. Prayer here is the posture of dependence on God that keeps authority from turning into technique."
+        }
+      ],
+      "parallels": ["Matthew 17:19-20"],
+      "refs": ["Mark 6:7", "Mark 11:22-24", "Mark 1:35", "James 5:16"]
+    },
+    {
+      "v": "30-32",
+      "context": "Jesus passes through Galilee in secret, because he is teaching his disciples, and he repeats the prediction of his death and resurrection. They do not understand and are afraid to ask. The second prediction is the briefest of the three.",
+      "grammar": "Edidasken ... kai elegen, ‘he was teaching ... and saying’, two imperfects, suggest repeated instruction. Paradidotai, ‘is being handed over’, is a present tense with future meaning, stating as certain what is about to happen. Paradidōmi runs through Mark's passion story: Judas hands him over (14:10), the council hands him to Pilate (15:1), Pilate hands him to be crucified (15:15). The passive without an agent leaves room for the deepest sense, that God hands him over. Eis cheiras anthrōpōn, ‘into the hands of men’, sets huios tou anthrōpou beside anthrōpōn, the Son of Man into the hands of men. Joachim Jeremias (New Testament Theology, 1971) argued that this wordplay, which works in Aramaic as well as Greek, marks the saying as the oldest core of the passion predictions. Ēgnooun, ‘they did not understand’, and ephobounto, ‘they were afraid’, are both imperfects: a lasting incomprehension and a lasting fear.",
+      "words": ["G1321", "G3860", "G5495", "G0444", "G0615", "G0450", "G0050", "G5399"],
+      "ot": [
+        {
+          "ref": "Isaiah 53:6",
+          "note": "In the Septuagint of Isaiah 53:6 the LORD handed him over (paredōken) for our sins, and 53:12 says he was handed over (paredothē) because of their sins. The Hebrew uses other verbs (the LORD laid on him the iniquity of us all; he was numbered with the transgressors). Paul uses the same language of Christ handed over for our trespasses (Romans 4:25). Jesus' prediction does not quote Isaiah, but the verb and the passive fit the servant who is given up by God."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The Son of Man is handed over, a word that in the passion story names human betrayal and in Isaiah and Paul names God's own giving of his Son. Mark lets both be heard: sinful men do their will, and God's purpose stands behind the handing over."
+        }
+      ],
+      "parallels": ["Matthew 17:22-23", "Luke 9:43-45"],
+      "text": "Matthew says the disciples were greatly distressed (Matthew 17:23). Luke says the saying was concealed from them so that they could not perceive it (Luke 9:45). Mark says simply that they did not understand and were afraid to ask.",
+      "refs": ["Mark 8:31", "Mark 10:33-34", "Romans 4:25", "Romans 8:32", "Mark 14:41"]
+    },
+    {
+      "v": "33-35",
+      "context": "In Capernaum, at home, Jesus asks what they were arguing about on the road. They are silent, ashamed, because they had argued about who was greatest. Jesus sits, calls the Twelve, and states the rule of the kingdom: the first must be last and servant of all.",
+      "grammar": "Dielogizesthe, ‘were you discussing?’, an imperfect, and en tē hodō, ‘on the way’, the road motif of 8:27: on the road to the cross, they are ranking themselves. Esiōpōn, ‘they kept silent’, is the silence of the Pharisees in 3:4. Tis meizōn, literally ‘who is greater’, uses the comparative for a superlative, which is common in Koine. Kathisas, ‘sitting down’, is the posture of a teacher delivering a formal teaching (Matthew 5:1, Luke 4:20). The saying ei tis thelei prōtos einai, estai pantōn eschatos kai pantōn diakonos, ‘if anyone wants to be first, he shall be last of all and servant of all’, uses a future that works as both command and outcome. Diakonos is the word for a table servant.",
+      "words": ["G2584", "G1260", "G3598", "G4623", "G3173", "G2523", "G1427", "G4413G", "G2078", "G1249"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom reverses the ordinary ladder of rank. Jesus does not forbid the desire to be first; he redirects it into service of all, which in 10:43-45 he grounds in his own coming not to be served but to serve."
+        }
+      ],
+      "parallels": ["Matthew 18:1-4", "Luke 9:46-48"],
+      "text": "Matthew turns the scene into a question the disciples put to Jesus, ‘Who is the greatest in the kingdom of heaven?’ (Matthew 18:1), sparing them the embarrassment Mark records. Luke says Jesus knew the reasoning of their hearts (Luke 9:47).",
+      "refs": ["Mark 10:43-45", "Luke 22:24-27", "Mark 3:4", "Philippians 2:3-8"]
+    },
+    {
+      "v": "36-37",
+      "context": "Jesus stands a child among them, takes the child in his arms, and says that whoever welcomes such a child in his name welcomes him, and whoever welcomes him welcomes the one who sent him. The lesson is acted before it is spoken.",
+      "grammar": "Enagkalisamenos, ‘taking in his arms’, is found in the New Testament only here and in 10:16, both times of Jesus with children, and only in Mark. Paidion, ‘little child’, is the word used of Jairus' daughter (5:39-41). Hos an hen tōn toioutōn paidiōn dexētai epi tō onomati mou, ‘whoever receives one of such children in my name’: epi tō onomati, ‘on the basis of my name’, means receiving the child because of Jesus. The saying climbs in three steps: the child, Jesus, and ton aposteilanta me, ‘the one who sent me’.",
+      "words": ["G3813", "G2476", "G3319", "G1723", "G1209", "G3686", "G0649"],
+      "history": "Children in the Greco-Roman world had little status; they were legal minors under their father's control and were valued mainly for what they would become. Welcoming a child meant giving time and honor to someone who could repay neither. The chain of sending reflects a principle stated in the Mishnah, that a man's agent is as the man himself (m. Berakhot 5:5): to receive the one sent is to receive the sender.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "Jesus speaks of himself as sent by the Father, so that receiving him is receiving the Father. The verse teaches both the Son's distinct mission and his unity with the one who sent him, a pattern John's Gospel develops at length (John 13:20)."
+        }
+      ],
+      "parallels": ["Matthew 18:2-5", "Luke 9:47-48"],
+      "refs": ["Mark 10:13-16", "Matthew 10:40", "John 13:20", "Matthew 25:40"]
+    },
+    {
+      "v": "38",
+      "context": "John reports that they saw a man casting out demons in Jesus' name and tried to stop him, because he was not one of them. The report comes right after Jesus spoke of receiving others in his name, and after the disciples themselves failed to cast out a demon.",
+      "grammar": "Ekōluomen auton, ‘we were trying to stop him’, is an imperfect of attempted action, which grammarians call conative: they tried and, presumably, failed. The reason is hoti ouk ēkolouthei hēmin, ‘because he was not following us’. John says us, not you. The complaint is that the man was not in their group, not that he opposed Jesus. The irony is plain: the outsider was succeeding where the insiders, in verse 18, had failed.",
+      "words": ["G2491H", "G1320", "G3686", "G1544", "G1140", "G2967", "G0190"],
+      "ot": [
+        {
+          "ref": "Numbers 11:26-29",
+          "note": "When Eldad and Medad prophesied in the camp without having gone out to the tent with the other elders, Joshua asked Moses to stop them (the Septuagint uses kōluson, from the same verb as Mark's ekōluomen). Moses answered that he wished all the LORD's people were prophets. John plays Joshua's part, and Jesus answers as Moses did. The parallel is not quoted, but the situation and the verb match closely."
+        }
+      ],
+      "history": "Exorcists used the names of powerful figures in their spells, and the name of Jesus was used even by those who did not follow him. Acts 19:13-16 tells of Jewish exorcists at Ephesus who tried it with disastrous results, and the great Paris magical papyrus (PGM IV, fourth century) includes an adjuration by Jesus as the god of the Hebrews.",
+      "parallels": ["Luke 9:49"],
+      "refs": ["Numbers 11:26-29", "Acts 19:13-16", "Mark 9:18", "Philippians 1:15-18"]
+    },
+    {
+      "v": "39-40",
+      "context": "Jesus forbids them to stop the man. Someone who does a mighty work in his name will not soon speak evil of him, and whoever is not against us is for us. The saying widens the circle of those who belong.",
+      "grammar": "Mē kōluete, ‘do not stop him’, is a present imperative with mē, which often means ‘stop doing what you are doing’. Tachu kakologēsai me, ‘quickly speak evil of me’, uses kakologeō, the verb of 7:10 for cursing father or mother: a man who calls on Jesus' name to heal will not soon curse it. The principle in verse 40, hos gar ouk estin kath' hēmōn, huper hēmōn estin, ‘whoever is not against us is for us’, uses kata, ‘against’, and huper, ‘on behalf of’. Jesus includes himself with the disciples in the us.",
+      "words": ["G2967", "G1411", "G3686", "G5035", "G2551"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "Jesus refuses to make belonging to the disciples' circle the test of belonging to him. The church has drawn on this saying to recognize the work of Christ beyond its own boundaries. Matthew 12:30, where whoever is not with Jesus is against him, is the other side of the same truth: toward Jesus himself there is no neutrality, but toward those who act in his name the disciples must be generous."
+        }
+      ],
+      "parallels": ["Luke 9:50"],
+      "refs": ["Matthew 12:30", "Luke 11:23", "Mark 7:10", "1 Corinthians 12:3"]
+    },
+    {
+      "v": "41",
+      "context": "Even the smallest help given to the disciples because they belong to Christ will be rewarded. The saying reverses the viewpoint of verse 38: the disciples who wanted to exclude an outsider may find themselves in need of an outsider's cup of water.",
+      "grammar": "Potērion hudatos, ‘a cup of water’, is the least a person could give. En onomati hoti Christou este, literally ‘in the name that you are Christ's’, is an unusual phrase: ‘because you belong to Christ’. Christou este sounds like the language of the early church (1 Corinthians 3:23, 2 Corinthians 10:7), and some scholars think Mark has phrased Jesus' saying in terms his readers used. Ou mē apolesē ton misthon autou, ‘he will certainly not lose his reward’, uses the emphatic double negative.",
+      "words": ["G4222", "G4221", "G5204", "G3686", "G5547", "G0281", "G0622", "G3408"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "God notices the smallest kindness done to Christ's people for Christ's sake. The verse gives weight to acts too small to be counted by anyone else."
+        }
+      ],
+      "parallels": ["Matthew 10:42"],
+      "refs": ["Matthew 10:42", "Matthew 25:35-40", "1 Corinthians 3:23", "Hebrews 6:10"]
+    },
+    {
+      "v": "42",
+      "context": "The positive promise turns to a warning. Whoever causes one of these little ones who believe to stumble would be better off drowned with a millstone around his neck. The little ones are both the children of verse 36 and the humble believers the disciples were tempted to exclude.",
+      "grammar": "Skandalisē, ‘causes to stumble’, comes from skandalon, the trigger of a trap and then anything that trips a person into sin or apostasy. It becomes the catchword of the next verses. Mulos onikos, ‘a donkey millstone’, is the upper stone of a large mill turned by a donkey, as opposed to a hand mill. Kalon estin autō mallon ei perikeitai ... kai beblētai, ‘it is better for him if a millstone is hung around his neck and he has been thrown into the sea’: the perfect beblētai pictures him already at the bottom.",
+      "words": ["G4624", "G3398", "G4100", "G3458", "G3684", "G5137", "G0906G", "G2281"],
+      "history": "Drowning with a weight tied to the neck was a known punishment. Suetonius records that Augustus had the tutor and attendants of his adopted son Gaius thrown into a river with heavy weights around their necks for abusing their positions during Gaius' illness (Augustus 67). Jesus' hearers on the shores of Galilee would picture a death with no burial.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The weight of the judgment is measured by the value of the one harmed. Jesus warns his own disciples that leading a humble believer into sin is worse than a violent death, a warning that has special force for those with authority over the young and the weak."
+        }
+      ],
+      "parallels": ["Matthew 18:6", "Luke 17:1-2"],
+      "refs": ["Matthew 18:6-7", "Luke 17:1-2", "Romans 14:13", "1 Corinthians 8:12-13"]
+    },
+    {
+      "v": "43-44",
+      "context": "Jesus turns from causing others to stumble to what causes oneself to stumble. If your hand leads you into sin, cut it off: better to enter life maimed than go with two hands into Gehenna. The hyperbole is deliberate; the chapter note explains that it is not an instruction to harm the body.",
+      "grammar": "Skandalizē se, ‘causes you to stumble’, is the verb of verse 42 turned inward. Apokopson, ‘cut it off’, is an aorist imperative. Kalon estin se kullon eiselthein eis tēn zōēn, ‘it is better for you to enter life maimed’: ‘life’ here is the life of the age to come, and in verse 47 the same place is called ‘the kingdom of God’. Geenna is Gehenna, and eis to pur to asbeston, ‘into the unquenchable fire’, adds an explanation. Asbestos, ‘not able to be put out’, is used of the judgment fire by John the Baptist too (Matthew 3:12).",
+      "words": ["G4624", "G5495", "G0609", "G2948", "G2222", "G1067", "G4442", "G0762"],
+      "text": "Verse 44, ‘where their worm does not die, and the fire is not quenched’, is not in Codex Sinaiticus, Codex Vaticanus, or several other early witnesses, and critical editions omit it; it is found in most later manuscripts and in the King James Version. It repeats verse 48 word for word and was probably added to make the three warnings end the same way. The BSB leaves the number empty.",
+      "history": "Gehenna comes from the Hebrew ge hinnom, the Valley of Hinnom, the ravine south and west of Jerusalem where kings of Judah burned children at the shrine called Topheth (2 Kings 23:10, Jeremiah 7:31-32). Jeremiah said the valley would be renamed the Valley of Slaughter. In Jewish writings of the centuries before Jesus, such as 1 Enoch 27, an accursed valley near Jerusalem became the place of final punishment. The common explanation that it was the city's perpetually burning rubbish dump is first found in the commentary of the Jewish scholar David Kimchi on Psalm 27, written about AD 1200, and has no ancient support.",
+      "theology": [
+        {
+          "id": "hell",
+          "note": "Jesus uses Gehenna as the opposite of life in the kingdom, and he speaks of it to his own disciples as a warning, not to outsiders as a threat. The saying assumes that sin tolerated in the body can cost the whole person."
+        }
+      ],
+      "parallels": ["Matthew 18:8", "Matthew 5:30"],
+      "refs": ["2 Kings 23:10", "Jeremiah 7:31-32", "Matthew 3:12", "Colossians 3:5"]
+    },
+    {
+      "v": "45-46",
+      "context": "The second warning concerns the foot. Better to enter life lame than to be thrown into Gehenna with two feet. The three members, hand, foot, and eye, stand for what a person does, where he goes, and what he looks at.",
+      "grammar": "The construction repeats verse 43 with small changes. Chōlon, ‘lame’, replaces kullon, ‘maimed’. Instead of apelthein, ‘to go away’ into Gehenna, Mark now writes blēthēnai, ‘to be thrown’, an aorist passive: in verse 43 the person goes, here he is cast, with God as the implied agent of judgment.",
+      "words": ["G4228", "G4624", "G0609", "G2222", "G5560", "G0906G", "G1067"],
+      "text": "Verse 46 repeats verse 48 and, like verse 44, is absent from the earliest manuscripts and omitted in critical editions. Some later manuscripts also add ‘into the unquenchable fire’ at the end of verse 45, again from verse 43.",
+      "refs": ["Matthew 18:8", "Proverbs 1:15-16", "Psalm 119:59"]
+    },
+    {
+      "v": "47-48",
+      "context": "The third warning, and the climax. Better to enter the kingdom of God with one eye than to be thrown into Gehenna, and Jesus describes Gehenna in the last words of Isaiah: where their worm does not die and the fire is not quenched.",
+      "grammar": "Ekbale auton, ‘throw it out’, is the verb Mark uses for casting out demons; the same decisive action is required against what causes sin. Monophthalmon, ‘one-eyed’, is a rare word, and eiselthein eis tēn basileian tou theou, ‘to enter the kingdom of God’, now replaces ‘enter life’, showing that the two phrases mean the same. The quotation in verse 48 has two present tenses, teleuta, ‘dies’, and sbennutai, ‘is quenched’; Isaiah has futures. The present describes Gehenna's condition as a standing fact.",
+      "words": ["G3788", "G1544", "G3442", "G0932", "G1067", "G4663", "G5053", "G4442", "G4570"],
+      "ot": [
+        {
+          "ref": "Isaiah 66:24",
+          "note": "The book of Isaiah ends with the new heavens and the new earth, all flesh coming to worship in Jerusalem, and then the worshipers going out to look on the corpses of those who rebelled against the LORD: ‘their worm shall not die, their fire shall not be quenched, and they shall be an abhorrence to all flesh’. The Hebrew for abhorrence, deraon, occurs elsewhere only in Daniel 12:2, of those who rise to everlasting contempt. The Septuagint reads ho gar skōlēx autōn ou teleutēsei kai to pur autōn ou sbesthēsetai, with future verbs. Mark keeps the wording but uses present tenses and drops ‘for’. The same imagery appears in Jewish writings just before Jesus: Judith 16:17 speaks of fire and worms given to the flesh of the nations that rise against Israel, and Sirach 7:17 of fire and worms as the punishment of the ungodly. Jesus takes Isaiah's picture of judgment on God's enemies outside the city and applies it to his own followers who refuse to deal with sin."
+        }
+      ],
+      "theology": [
+        {
+          "id": "hell",
+          "note": "The unending worm and fire are the Bible's strongest images of final judgment, and Christians have read them in different ways. The traditional view, held by Augustine (City of God 21) and most of the church, takes them to describe conscious punishment without end. Conditional immortality, argued by Edward Fudge (The Fire That Consumes, 1982) and tentatively by John Stott, reads the images as a destruction that is final and irreversible, noting that in Isaiah the worm and fire consume corpses. Both views take the warning with full seriousness; they differ over whether what is endless is the punishment or its result."
+        },
+        {
+          "id": "judgment",
+          "note": "Jesus places the stakes of discipleship at the final judgment. Refusing to cut off what leads to sin is not a small compromise but a choice between the kingdom of God and its loss."
+        }
+      ],
+      "parallels": ["Matthew 18:9", "Matthew 5:29"],
+      "refs": ["Isaiah 66:22-24", "Daniel 12:2", "Matthew 25:46", "Revelation 14:10-11", "Matthew 10:28"]
+    },
+    {
+      "v": "49-50",
+      "context": "The section ends with two linked sayings about salt. Everyone will be salted with fire, and salt that loses its saltiness is useless; so the disciples must have salt among themselves and be at peace with one another. The final command answers the argument about greatness that began at verse 33.",
+      "grammar": "Pas gar puri halisthēsetai, ‘for everyone will be salted with fire’, a future passive, is linked to verse 48 by the catchword fire and to verse 50 by the catchword salt. It is among the most obscure sayings in the Gospels. Readings include purification through trial and suffering, the fire of judgment that preserves the wicked (a patristic reading), and, following Leviticus 2:13, the disciples' lives as sacrifices salted for God. Ean de to halas analon genētai, ‘if the salt becomes unsalty’: analos, ‘saltless’, is found only here in the New Testament. Echete en heautois hala kai eirēneuete en allēlois, ‘have salt in yourselves and be at peace with one another’, joins two present imperatives: keep the salt, keep the peace.",
+      "words": ["G4442", "G0233", "G0217", "G0358", "G0741", "G1514"],
+      "ot": [
+        {
+          "ref": "Leviticus 2:13",
+          "note": "Every grain offering was to be seasoned with salt, called the salt of the covenant of your God, and salt was to be added to all offerings. The Septuagint uses halizō, the verb of Mark 9:49. Numbers 18:19 and 2 Chronicles 13:5 speak of a covenant of salt, a lasting covenant. If Jesus has this in view, the disciples themselves are the offering, salted by the fire of trial, as Paul calls believers a living sacrifice (Romans 12:1)."
+        }
+      ],
+      "text": "Many later manuscripts, followed by the King James Version, add ‘and every sacrifice shall be salted with salt’, drawn from Leviticus 2:13, and Codex Bezae has only that clause in place of Mark's. The addition shows that early copyists already understood the saying in light of the sacrificial law.",
+      "history": "In the ancient world salt preserved food, seasoned it, and was eaten together as a sign of shared loyalty (Ezra 4:14 speaks of eating the salt of the palace). Salt as pure sodium chloride cannot lose its taste, but salt gathered from the shores of the Dead Sea was mixed with other minerals, and if the salt dissolved out, what remained looked like salt and had none of its savor.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The disciples are to keep in themselves the salt that makes them useful and to live at peace with one another. After an argument about rank, Jesus names peace among his followers as a mark of the life the fire refines."
+        }
+      ],
+      "parallels": ["Matthew 5:13", "Luke 14:34-35"],
+      "refs": ["Leviticus 2:13", "Colossians 4:6", "Romans 12:1", "1 Peter 1:6-7", "Romans 12:18"]
+    }
+  ]
+}

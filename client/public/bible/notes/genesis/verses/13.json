@@ -1,0 +1,317 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Abram leaves Egypt the way he entered it, with his wife and his possessions, and the narrator adds that Lot was with him. Lot was absent from the Egypt episode; his reappearance here prepares for the conflict that follows.",
+      "grammar": "Vayyaal, “went up”, is the Qal of alah. Going to Egypt was ‘going down’ (12:10); returning to Canaan is ‘going up’, the same language the exodus uses when Israel ‘went up out of Egypt’ (Exodus 13:18). The word order in Hebrew puts Lot last, almost as an afterthought: ‘he and his wife and all that he had, and Lot with him’.",
+      "words": [
+        "H5927G",
+        "H3876",
+        "H5045G"
+      ],
+      "refs": [
+        "Genesis 12:9-10",
+        "Exodus 13:18",
+        "Genesis 12:4"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "A one-line note on Abram's wealth, which sets up the problem of the chapter. The riches from Egypt are about to create strife inside the family.",
+      "grammar": "Kaved meod, ‘very heavy’, is the idiom for great wealth, and it is the same adjective used for the famine that was ‘heavy’ (severe) in 12:10. The famine that drove Abram to Egypt was heavy; now Abram himself is heavy with livestock, silver, and gold. This is the first time silver and gold appear as personal wealth in Genesis.",
+      "words": [
+        "H3515",
+        "H4735",
+        "H3701G",
+        "H2091"
+      ],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Abram's wealth is real and is counted among God's blessings in later chapters (24:35), but this chapter shows at once that it brings pressure and conflict. Scripture treats possessions as gifts that must be held loosely, and the next verses show Abram doing exactly that."
+        }
+      ],
+      "refs": [
+        "Genesis 12:10",
+        "Genesis 24:35",
+        "Proverbs 10:22",
+        "1 Timothy 6:17-19"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "Abram retraces his route to the place between Bethel and Ai where he had first pitched his tent and built an altar (12:8), and there he calls on the LORD's name again. After the failure in Egypt, he returns to the place of worship he began from.",
+      "grammar": "Lemasaav, “from place to place”, is literally ‘by his stages’, a plural of massa, a noun from nasa, ‘to pull up stakes’: Abram moves camp by camp. Two phrases stress the return: battechillah, ‘at the beginning’, for the tent, and barishonah, ‘at the first’, for the altar. The narrator is marking a circle back to where the story in Canaan started.",
+      "words": [
+        "H4550",
+        "H8462",
+        "H7223G",
+        "H7121G"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The text records no altar and no calling on the LORD's name in Egypt. Its return here, at the same spot as before, suggests that Abram's life with God is being resumed after a lapse. Many interpreters read it as a return in the sense of repentance, though the text does not use that word."
+        }
+      ],
+      "refs": [
+        "Genesis 12:8",
+        "Genesis 4:26",
+        "Genesis 28:19",
+        "Psalm 116:17"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "Lot also has flocks, herds, and tents, and together the two households are more than the land can sustain. The problem is not hostility but abundance: they simply have too much to live side by side.",
+      "grammar": "Haholekh et avram, “who was traveling with Abram”, is a participle, describing Lot by his ongoing attachment to Abram, and it hints that Lot's wealth came through that association. Verse 6 says literally that ‘the land did not carry them’ (lo nasa), and it frames the reason with the same phrase twice: lashevet yachdav, ‘to dwell together’. The same wording describes Jacob and Esau separating in 36:7, where their possessions were too great for them to dwell together.",
+      "words": [
+        "H1980G",
+        "H5375K",
+        "H3162B",
+        "H7399"
+      ],
+      "refs": [
+        "Genesis 36:6-7",
+        "Genesis 12:5",
+        "Psalm 133:1"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The pressure breaks out among the herdsmen. The narrator adds that the Canaanites and Perizzites were living in the land at the time: the family of promise is quarreling in front of neighbors who hold the land it has been promised.",
+      "grammar": "“Discord” is riv, a word for a dispute or quarrel that is also used for a lawsuit, and in verse 8 Abram uses a related noun, merivah, ‘strife’. The same root gives the place name Meribah, where Israel quarreled with Moses over water (Exodus 17:7). The participle yoshev (‘were living’) is singular, agreeing with the collective ‘the Canaanite and the Perizzite’.",
+      "words": [
+        "H7379",
+        "H7462B",
+        "H6522",
+        "H3427"
+      ],
+      "history": "Disputes over grazing and water were a standing feature of herding life in the dry hill country and the Negev, and Genesis records others between Abraham's and Isaac's men and their neighbors over wells (21:25; 26:20-21). Large flocks had to move with the seasons, and two households grazing the same hills competed for the same springs.",
+      "refs": [
+        "Genesis 12:6",
+        "Genesis 21:25",
+        "Genesis 26:20-21",
+        "Exodus 17:7"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "Abram takes the initiative to end the conflict. He appeals to kinship rather than to his rank as the elder, and he wants peace between the two households and between their men.",
+      "grammar": "Al na tehi merivah, ‘please let there not be strife’, uses the negative al with a jussive, the Hebrew way of expressing a negative wish, softened again by na. The reason follows with ki: anashim achim anachnu, literally ‘for we are men, brothers’. Ach, ‘brother’, is used broadly for any close relative, and Lot is Abram's nephew (12:5). The appeal to brothers dwelling together recalls Psalm 133:1, which celebrates brothers dwelling in unity, using the same verb and adverb as verse 6.",
+      "words": [
+        "H0408",
+        "H4808",
+        "H0251H",
+        "H0582"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Abram treats the family bond as more important than his rights of precedence or the best land. The verse gives an early picture of the peacemaking Jesus blesses (Matthew 5:9), grounded in the recognition that those in conflict belong to one another."
+        }
+      ],
+      "refs": [
+        "Psalm 133:1",
+        "Matthew 5:9",
+        "Romans 12:18",
+        "1 Corinthians 6:7"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Abram offers Lot the choice. The elder, to whom custom would give first pick, lets the younger decide, and he binds himself to take whatever Lot leaves.",
+      "grammar": "Halo, ‘is not?’, introduces a question that expects the answer yes: the whole land lies open. Hippared, “separate”, is a Niphal imperative of parad, the verb used of the nations spreading apart (10:5, 32). The pair eiminah and asmeilah (‘I will go right’, ‘I will go left’) are Hiphil forms built from the nouns for right hand and left hand. Since Hebrew orientation faced east, right can mean south and left north, and Abram may be proposing a division of the hill country between north and south. Lot will choose neither and go east instead (verse 11).",
+      "words": [
+        "H6504",
+        "H8040G",
+        "H3231",
+        "H8041"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abram can afford to let Lot choose because the land is already promised to him by God (12:7). Trust in God's promise frees him from the need to secure the best portion for himself."
+        }
+      ],
+      "refs": [
+        "Genesis 12:7",
+        "Philippians 2:3-4",
+        "Hebrews 11:9-10"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Lot looks toward the Jordan valley and sees its abundance. The narrator compares it to Eden and to Egypt, and inserts a warning: all this was before the LORD destroyed Sodom and Gomorrah.",
+      "grammar": "Vayyissa lot et enav, ‘Lot lifted up his eyes’, is the same expression the LORD will use to Abram in verse 14. Mashqeh, “well watered”, describes irrigated land. In Hebrew the warning clause, lifne shachet YHWH, ‘before the LORD destroyed’, stands in the middle of the description, between ‘well watered’ and ‘like the garden of the LORD’; the BSB moves it to the end in parentheses. Shachet (‘destroy’) is the Piel infinitive of the verb used for the flood (6:13, 17; 9:11), so the reader hears a coming judgment inside the praise of the land.",
+      "words": [
+        "H5375M",
+        "H3603H",
+        "H4945B",
+        "H7843",
+        "H1588M"
+      ],
+      "history": "Zoar, the landmark at the edge of the plain, is usually located near the southeastern end of the Dead Sea; the sixth century AD mosaic map at Madaba in Jordan shows a town of that name there. Today the region around the Dead Sea is among the driest places on earth, which makes the comparison with Eden and the Nile all the more striking for readers who knew what the area later became (19:24-28).",
+      "refs": [
+        "Genesis 2:10",
+        "Genesis 3:6",
+        "Genesis 19:24-28",
+        "Deuteronomy 29:23"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Lot chooses the whole Jordan plain for himself and moves east. The two relatives part, and Abram is left in Canaan without the last member of his father's household who came with him.",
+      "grammar": "Vayyivchar lo, “chose ... for himself”, uses bachar with lo, ‘for himself’, which underlines Lot's self-interest. Miqqedem, ‘eastward’, is the word of 11:2, where the builders of Babel moved east. The parting is expressed with vayyipparedu ish meal achiv, literally ‘they separated, each from his brother’, repeating the word ‘brother’ from Abram's appeal in verse 8: the brothers part.",
+      "words": [
+        "H0977",
+        "H6924G",
+        "H6504",
+        "H0251G"
+      ],
+      "refs": [
+        "Genesis 11:2",
+        "Genesis 3:24",
+        "Genesis 4:16",
+        "Genesis 12:1"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The two men settle in different places. Abram stays in the land of Canaan; Lot lives among the cities of the plain and moves his tent toward Sodom. The contrast is stated in two parallel clauses.",
+      "grammar": "Both clauses begin with the subject and use the perfect yashav, ‘dwelt’, which sets Abram and Lot side by side for comparison. Vayyeehal, ‘moved his tent’, is a rare verb formed from ohel, ‘tent’, found only here, in verse 18, and in Isaiah 13:20. The word after it is ad sedom, which most naturally means ‘as far as Sodom’; the BSB's “toward Sodom” catches the drift, but the Hebrew suggests Lot's tents reached the city itself.",
+      "words": [
+        "H3427",
+        "H0167",
+        "H5467",
+        "H5892B"
+      ],
+      "text": "English versions differ over how close Lot came to Sodom. The King James Version and the BSB read ‘toward Sodom’, while others render ‘as far as Sodom’ or ‘near Sodom’. By 14:12 Lot is living in Sodom, and by 19:1 he sits in its gate.",
+      "refs": [
+        "Genesis 14:12",
+        "Genesis 19:1",
+        "Isaiah 13:20"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "The narrator's verdict on Sodom, placed right after Lot's move. The land looked like Eden; its people were wicked. The verse prepares for chapters 18 and 19.",
+      "grammar": "The Hebrew uses two adjectives, raim vechattaim, ‘evil and sinners’, followed by laYHWH meod, ‘against the LORD exceedingly’. The phrase ‘against the LORD’ defines their evil as sin against God, not only against people, and meod (‘greatly’) stands last for emphasis.",
+      "words": [
+        "H7451H",
+        "H2400",
+        "H3966",
+        "H0582"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse names Sodom's sin without detail, leaving the specifics for later texts. Ezekiel 16:49-50 describes Sodom's guilt as arrogance, plenty of food, and careless ease while they did not help the poor and needy, together with detestable acts; Genesis 19 shows violent sexual assault on strangers. The Bible's picture of Sodom joins pride, indulgence, and cruelty."
+        }
+      ],
+      "refs": [
+        "Genesis 18:20",
+        "Ezekiel 16:49-50",
+        "Isaiah 1:10",
+        "2 Peter 2:7-8",
+        "Jude 1:7"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "As soon as Lot has gone, the LORD speaks to Abram. He tells him to lift up his eyes, the gesture Lot made in verse 10, and look in every direction from where he stands.",
+      "grammar": "The verse opens with the subject first, vaYHWH amar, ‘And the LORD said’, a Hebrew way of marking a new scene; with acharei hippared lot, ‘after Lot had separated’, it ties the speech closely to Lot's departure. Sa na enekha ureeh, ‘lift up, please, your eyes and see’, repeats Lot's action as a command. The four directions each carry the directional ending -ah (tsafonah, negbah, qedmah, yammah), sweeping the whole horizon.",
+      "words": [
+        "H6504",
+        "H5375M",
+        "H5869A",
+        "H6828G"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Lot chose what he saw; Abram is given what he sees. The promise of the land is renewed not after Abram has seized anything but after he has let his claim go."
+        }
+      ],
+      "refs": [
+        "Genesis 13:10",
+        "Deuteronomy 3:27",
+        "Deuteronomy 34:1-4"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "God gives Abram all the land he can see, for him and his offspring forever, and promises descendants as countless as the dust of the earth. Both promises go beyond the earlier word of 12:7.",
+      "grammar": "In 12:7 the land was promised to Abram's offspring; here it is lekha ... ulzarakha, ‘to you and to your offspring’, and ad olam, “forever”. The comparison in verse 16 is built as a conditional: im yukhal ish limnot, ‘if anyone could count’ the dust, gam zarakha yimmaneh, ‘then also your offspring could be counted’. The Niphal yimmaneh (‘be counted’) and the infinitive limnot come from the same verb, manah, which tightens the comparison. The promise is made to a man whose wife is barren (11:30).",
+      "words": [
+        "H5414G",
+        "H5769G",
+        "H6083",
+        "H4487",
+        "H2233H"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The promise now includes Abram himself as heir, adds the word forever, and pictures numberless descendants. God will repeat the image with the stars (15:5) and the sand (22:17), and Balaam will later ask who can count the dust of Jacob (Numbers 23:10)."
+        }
+      ],
+      "refs": [
+        "Genesis 12:7",
+        "Genesis 15:5",
+        "Genesis 22:17",
+        "Numbers 23:10",
+        "Hebrews 11:12"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "God tells Abram to walk through the land's length and breadth, because he is giving it to him. Seeing the land in verse 14 becomes walking it here.",
+      "grammar": "Qum hithallekh, ‘arise, walk about’, pairs an imperative of qum with a Hithpael imperative of halakh. The Hithpael of this verb describes walking to and fro or living one's life, and it is the form used of God walking in the garden (3:8) and of Enoch and Noah walking with God (5:22; 6:9). The reason clause repeats the promise of verse 15 word for word: lekha ettenennah, ‘to you I will give it’.",
+      "words": [
+        "H6965B",
+        "H1980I",
+        "H0753",
+        "H7341"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Abram is told to walk through a land he does not own, among peoples who hold it, as though it were already his. Faith here means living on the ground of a promise before it is fulfilled, as Hebrews 11:9 describes."
+        }
+      ],
+      "refs": [
+        "Genesis 3:8",
+        "Genesis 5:22",
+        "Joshua 1:3",
+        "Hebrews 11:9"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Abram moves his tent south to the oaks of Mamre at Hebron and builds an altar. The chapter began with him calling on the LORD at an altar near Bethel and ends with a new altar at Hebron, which becomes his main home in the chapters that follow.",
+      "grammar": "Vayyeehal, “moved his tent”, is the rare verb of verse 12, now used of Abram. The two uses invite comparison: Lot moved his tent as far as Sodom; Abram moves his to Mamre and builds an altar. Elone mamre, ‘the great trees of Mamre’, is plural, and Mamre is the name of an Amorite ally of Abram (14:13), so the grove seems to have been named for him.",
+      "words": [
+        "H0167",
+        "H0436H",
+        "H4471G",
+        "H2275A",
+        "H4196"
+      ],
+      "history": "Hebron lies about 30 kilometers (19 miles) south of Jerusalem in the Judean hills; Genesis later gives its older name as Kiriath-arba (23:2). Mamre has traditionally been located at Ramat el-Khalil, a short distance north of Hebron, where the remains of a large Roman-period enclosure and of a church built under the emperor Constantine mark the place later honored as Abraham's oaks.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Abram answers the renewed promise the way he answered the first one (12:7): with an altar. At Hebron he will receive the covenant visit of chapter 18, and there he will buy the only piece of the land he owns in his lifetime, a burial cave (23:17-20)."
+        }
+      ],
+      "refs": [
+        "Genesis 14:13",
+        "Genesis 18:1",
+        "Genesis 23:2",
+        "Genesis 23:17-20",
+        "2 Samuel 2:1-4"
+      ]
+    }
+  ]
+}

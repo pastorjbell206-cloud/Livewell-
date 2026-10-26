@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -50,8 +51,8 @@ const CURRENT_SPLITS = [
   {
     tradition: "Methodist Divisions",
     items: [
-      "The United Methodist Church formally split in 2023-2024 over the ordination and marriage of LGBTQ+ persons. The Global Methodist Church formed as a traditionalist alternative.",
-      "The split was driven partly by the growing influence of African and Asian Methodists, who are theologically conservative and numerically dominant in the global denomination.",
+      "The United Methodist Church fractured over the ordination and marriage of LGBTQ+ persons. The Global Methodist Church launched in 2022 as a traditionalist alternative, and thousands of congregations disaffiliated from the UMC between 2019 and 2023.",
+      "The split was shaped partly by the growing voice of Methodists in Africa and Asia, who are largely conservative on these questions and whose share of the global denomination has been rising.",
       "The African Methodist Episcopal (AME) and AME Zion denominations remain separate, with roots in the racial segregation of American Methodism in the 18th and 19th centuries.",
     ],
   },
@@ -67,11 +68,13 @@ const SHARED_GROUND = [
 
 const RELATED_ARTICLES = [
   { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
   { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
   { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
+const RELATED_ON_SHELF = RELATED_ARTICLES.filter((a) => isPublicEssayHref(a.href));
+
 
 const FAQ_ITEMS = [
   {
@@ -199,7 +202,7 @@ export default function BaptistVsMethodist() {
         <div style={S.wrapNarrow}>
           <p style={S.eyebrow}>THE FRACTURES</p>
           <h2 style={S.h2}>The current splits in both traditions</h2>
-          <p style={S.bodyText}>Neither tradition is monolithic. Both are fracturing along lines of theology, race, politics, and sexuality. The splits are not signs of weakness. They are signs that the questions still matter enough to divide over.</p>
+          <p style={S.bodyText}>Neither tradition is monolithic. Both are fracturing along lines of theology, race, politics, and sexuality. It is tempting to read the splits as proof that the questions still matter, and they do. But a divided church is also a grief, and none of us gets to stand outside it.</p>
           {CURRENT_SPLITS.map((split, i) => (
             <div key={i} style={{ marginBottom: i < CURRENT_SPLITS.length - 1 ? "40px" : "0" }}>
               <h3 style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)", marginBottom: "16px" }}>{split.tradition}</h3>
@@ -271,31 +274,33 @@ export default function BaptistVsMethodist() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section style={S.sectionWarm}>
-        <div style={S.wrapNarrow}>
-          <p style={S.eyebrow}>KEEP READING</p>
-          <h2 style={S.h2}>Go deeper</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {RELATED_ARTICLES.map((a) => (
-              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
+      {/* Related Articles: only those on the public shelf (lib/shelf.ts). */}
+      {RELATED_ON_SHELF.length > 0 && (
+        <section style={S.sectionWarm}>
+          <div style={S.wrapNarrow}>
+            <p style={S.eyebrow}>KEEP READING</p>
+            <h2 style={S.h2}>Go deeper</h2>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {RELATED_ON_SHELF.map((a) => (
+                <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
+                  <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={S.sectionDark}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={S.h2White}>The full post-Christian series</h2>
-          <p style={S.bodyTextWhite}>Sixty essays on the traditions that shaped Western Christianity and the fractures reshaping it now. Baptist and Methodist are two branches. The series maps the whole tree.</p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Explore the Series</button>
+          <h2 style={S.h2White}>After Christendom</h2>
+          <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
           </Link>
         </div>
       </section>

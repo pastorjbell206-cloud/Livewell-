@@ -1,0 +1,334 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A one-line heading opens Esau's account. The name Edom is attached at once, because this chapter is less about a man than about the people who came from him and their place beside Israel.",
+      "grammar": "Veelleh toledot Esav, ‘and these are the generations of Esau’, uses the heading that divides Genesis into its main sections. The pronoun clause hu Edom, ‘he is Edom’, appears here and again in verses 8, 19, and 43, a refrain that keeps identifying the person with the nation. Edom sounds like adom, ‘red’, and Genesis tied the name to the red stew Esau bought with his birthright (25:30).",
+      "words": [
+        "H8435",
+        "H0123H",
+        "H6215G"
+      ],
+      "refs": [
+        "Genesis 25:25",
+        "Genesis 25:30",
+        "Genesis 25:12",
+        "1 Chronicles 1:35"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "Esau's three wives are named: two from the peoples of Canaan and one from Ishmael's family. The list recalls the grief his Canaanite marriages caused his parents (26:34-35) and his later attempt to please them by marrying into Ishmael's line (28:8-9).",
+      "grammar": "The verse describes Oholibamah as bat Anah bat Tsivon, literally ‘daughter of Anah, daughter of Zibeon’. Because verse 24 makes Anah a son of Zibeon, the BSB takes the second ‘daughter’ in the looser sense of descendant: \"granddaughter of Zibeon\". Oholibamah means something like ‘tent of the high place’. Basemath is called achot Nevayot, ‘sister of Nebaioth’, naming her through Ishmael's firstborn son (25:13), perhaps because a full brother mattered in marriage arrangements.",
+      "words": [
+        "H0173",
+        "H1323G",
+        "H6649G",
+        "H5032"
+      ],
+      "text": "The Septuagint and the Samaritan Pentateuch read ‘son of Zibeon’ in verse 2, making Anah the son and removing the difficulty. Zibeon is called a Hivite here but a Horite in verse 20; since the two names differ by a single letter in Hebrew, many scholars think ‘Horite’ was the original reading here. The wives' names also differ from 26:34 and 28:9, as the chapter note explains; the Hebrew preserves both lists without harmonizing them.",
+      "refs": [
+        "Genesis 26:34-35",
+        "Genesis 28:8-9",
+        "Genesis 25:13",
+        "Genesis 36:20"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "Esau's five sons are listed by their mothers, and the paragraph ends by placing their births in Canaan. That detail prepares for the move in verse 6: these sons were born in the land that will not be theirs.",
+      "grammar": "The births alternate between two verb forms: vatteled, ‘and she bore’, the ordinary narrative form, for Adah, and yaledah, ‘she bore’, a perfect with the subject placed first, for Basemath and Oholibamah. The shift creates a list with each mother in turn in the lead position. The closing verb yulledu, ‘were born’, is a Pual (passive) form, the same used for Jacob's sons in Paddan-aram (35:26), so the two brothers' families are summarized in matching words.",
+      "words": [
+        "H3205",
+        "H0464G",
+        "H7467G",
+        "H3667A"
+      ],
+      "history": "Reuel, ‘friend of God’, is also the name of Moses' Midianite father-in-law (Exodus 2:18), and Korah reappears centuries later as the name of a Levite who rebelled against Moses (Numbers 16:1). The same names circulated among the related peoples of the region, and they are different men.",
+      "refs": [
+        "Genesis 35:26",
+        "Exodus 2:18",
+        "1 Chronicles 1:35"
+      ]
+    },
+    {
+      "v": "6-8",
+      "context": "Esau takes his whole household and property and leaves Canaan to settle in Seir. The reason given is the same one that parted Abraham and Lot: too many flocks for one land. The one who leaves is the one without the promise.",
+      "grammar": "The list in verse 6 piles up objects with kol, ‘all’, as Genesis does when a whole household moves (12:5 and 31:18 use the same verb rakhash, ‘acquire’). The destination is left oddly open: vayyelekh el erets mippene Yaaqov, literally ‘and he went to a land away from the face of Jacob’, and translations supply a word such as ‘another’ or ‘far away’. Verse 7 uses rekhusham, ‘their possessions’, and lo yakhelah, ‘it was not able’, the vocabulary of 13:6. The land is called erets megurehem, ‘the land of their sojournings’, the phrase used for Canaan as the patriarchs' land of temporary residence (17:8, 28:4, 37:1).",
+      "words": [
+        "H7408",
+        "H7399",
+        "H3201",
+        "H4033"
+      ],
+      "history": "Genesis has already placed Esau in Seir when Jacob returned (32:3, 33:16). These verses describe the settled result, the household's permanent move, and do not need to mean that it happened only after Isaac's death. Deuteronomy says God gave Mount Seir to Esau as his possession, so that Israel was forbidden to take any of it (Deuteronomy 2:5).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Esau does not lose everything by losing the birthright. He leaves with wealth enough to need a country of his own, and Deuteronomy says God gave him that country. The line outside the covenant is still under God's care."
+        }
+      ],
+      "refs": [
+        "Genesis 13:6",
+        "Genesis 37:1",
+        "Genesis 32:3",
+        "Deuteronomy 2:5"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "A second heading begins the account of Esau as ‘the father of Edom in the hill country of Seir’. The first part of the chapter was a family in Canaan; from here on it is a people in its own land.",
+      "grammar": "The repeated heading, veelleh toledot Esav, is expanded with avi Edom behar Seir, ‘father of Edom in the hill country of Seir’. Here Edom (without the pronoun of verses 1 and 8) names the people, so avi, ‘father’, means ancestor, as Abraham is called the father of many nations (17:5). Verse 10 begins a new list with elleh shemot, ‘these are the names’, the phrase that opens the book of Exodus for Jacob's sons.",
+      "words": [
+        "H8435",
+        "H0001G",
+        "H2022H",
+        "H8034"
+      ],
+      "refs": [
+        "Genesis 17:5",
+        "Exodus 1:1",
+        "Deuteronomy 2:4-5"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "Eliphaz's sons are listed, followed by a son born to his concubine Timna: Amalek. Several of these names later belong to regions and clans that matter to Israel.",
+      "grammar": "Verse 12 interrupts the list with a circumstantial clause, veTimna hayetah filegesh, ‘and Timna was a concubine’, the verb in the perfect with the subject placed first, a Hebrew way of adding background. Pilegesh, ‘concubine’, marks her son's lower standing in the family. The closing formula, ‘these are the sons of Adah’, counts grandsons as sons, as Hebrew genealogies commonly do.",
+      "words": [
+        "H8555",
+        "H6370",
+        "H6002H",
+        "H8487G"
+      ],
+      "history": "Teman became a region of Edom, and Habakkuk's vision of God's coming begins, \"God came from Teman\" (Habakkuk 3:3), placing the LORD's approach from the south. Kenaz gave its name to the Kenizzites (15:19), and Caleb, one of the two faithful spies, is called a Kenizzite (Joshua 14:6), which suggests a clan with Edomite ties that was absorbed into Judah. Amalek's descendants attacked Israel after the exodus (Exodus 17:8-16) and remained enemies into Saul's and David's time (1 Samuel 15, 1 Samuel 30).",
+      "refs": [
+        "Habakkuk 3:3",
+        "Joshua 14:6",
+        "Exodus 17:8-16",
+        "Deuteronomy 25:17-19"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The sons of Reuel and of Oholibamah complete Esau's descendants by his three wives. The repetition of Oholibamah's ancestry from verse 2 marks her line as linking Esau's family with the older people of Seir.",
+      "grammar": "The formula elleh hayu bene, ‘these were the sons of’, alternates with plain elleh bene, ‘these are the sons of’, a small variation that keeps the list moving. Zerah (verse 13) reappears in verse 33 as the father of the Edomite king Jobab, one of several threads that tie the family lists to the king list later in the chapter.",
+      "words": [
+        "H7467G",
+        "H2226G",
+        "H0173",
+        "H1961"
+      ],
+      "refs": [
+        "Genesis 36:33",
+        "1 Chronicles 1:37"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "The same grandsons are now listed as alluf, ‘chiefs’, heads of clans. What were names in a family become titles in a political order, grouped under the wife from whom they descend.",
+      "grammar": "Alluf, ‘chief’, is repeated before each name, which is why the English repeats ‘Chief’ or lists ‘Chiefs’. Eliphaz is called bekhor Esav, ‘Esau's firstborn’, the same title given to Reuben among Jacob's sons (35:23). The word may be related to elef, ‘thousand’, a clan unit, but the connection is uncertain. The Song of the Sea uses the title for Edom's rulers (Exodus 15:15).",
+      "words": [
+        "H0441B",
+        "H1060",
+        "H7141H",
+        "H6002H"
+      ],
+      "text": "Chief Korah appears among Eliphaz's descendants in verse 16, though he is not among Eliphaz's sons in verse 11 and is a son of Oholibamah in verses 5, 14, and 18. The Samaritan Pentateuch omits him here, matching verse 11 and 1 Chronicles 1:36, and many scholars think the name was repeated by accident from verse 18. Others suggest that a Korahite clan came to be counted under Eliphaz.",
+      "refs": [
+        "Exodus 15:15",
+        "1 Chronicles 1:36",
+        "Genesis 35:23"
+      ]
+    },
+    {
+      "v": "17-19",
+      "context": "The chiefs from Reuel and from Oholibamah follow, and verse 19 summarizes: all these are Esau's sons and their chiefs. The list closes with the refrain, ‘he is Edom’.",
+      "grammar": "Verse 19 ends with the chapter's refrain in slightly different words: elleh vene Esav veelleh allufehem hu Edom, ‘these are the sons of Esau and these are their chiefs; he is Edom’. The pronoun hu, ‘he’, may refer to Esau (he is Edom) or to the whole group (that is, Edom). Either way the verse identifies a people with an ancestor, the way Israel is both a man and a nation.",
+      "words": [
+        "H0441B",
+        "H0123H",
+        "H1931"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Esau's family has an organized government of chiefs within a generation or two, while Jacob's sons are still herdsmen without land. Genesis records the contrast without resentment: the power the world sees first is not the kingdom God is building."
+        }
+      ],
+      "refs": [
+        "Genesis 36:8",
+        "Genesis 36:43",
+        "1 Chronicles 1:37"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "The chapter turns to the people who lived in Seir before Esau, the Horites, and lists the sons of Seir, their ancestor. Esau's line is placed alongside, and mixed with, the older population.",
+      "grammar": "Yoshve haarets, ‘the inhabitants of the land’, is a participle phrase that marks the Horites as the settled population when Esau came. Seir here is a person, the ancestor of the Horites, as well as the name of the region. Hachori, ‘the Horite’, is used as a clan name; interpreters debate whether it is related to chor, ‘hole’ or ‘cave’, or is a proper ethnic name with no meaning of its own.",
+      "words": [
+        "H2752",
+        "H8165B",
+        "H3427",
+        "H0441B"
+      ],
+      "history": "The Horites appear among the peoples defeated in Seir in the war of the kings (14:6), and Deuteronomy says Esau's descendants drove them out and settled in their place (Deuteronomy 2:12, 2:22). Older scholarship identified the Horites with the Hurrians, a people known from northern Mesopotamia and Syria in the second millennium BC. Many scholars now doubt the link for the Horites of Seir, whose names in this list are Semitic.",
+      "refs": [
+        "Genesis 14:6",
+        "Deuteronomy 2:12",
+        "Deuteronomy 2:22"
+      ]
+    },
+    {
+      "v": "22-24",
+      "context": "The Horite sub-clans are listed. Two names connect back to Esau's family: Timna, sister of Lotan, is the concubine of verse 12, and Anah is the father of Esau's wife Oholibamah. An aside remembers Anah for a discovery in the wilderness.",
+      "grammar": "Verse 24 contains a narrative comment, hu Anah asher matsa et hayyemim bammidbar, ‘that is the Anah who found the yemim in the wilderness’, the kind of identifying note used to distinguish people with the same name. Anah appears both as Zibeon's brother (verse 20) and as his son (verse 24), which may mean two men with one name or clan names used at more than one level. Yemim occurs only here, and its meaning is uncertain (see the chapter note). Birot, ‘while pasturing’, is an infinitive with a suffix, ‘in his pasturing’.",
+      "words": [
+        "H3222",
+        "H6034",
+        "H4672",
+        "H7462B"
+      ],
+      "refs": [
+        "Genesis 36:12",
+        "Genesis 36:2",
+        "1 Chronicles 1:38-40"
+      ]
+    },
+    {
+      "v": "25-28",
+      "context": "The last Horite families are listed: the children of Anah, Dishon, Ezer, and Dishan. Oholibamah is named again as Anah's daughter, and one of Dishan's sons, Uz, bears a name the Bible links to Edom elsewhere.",
+      "grammar": "Verse 25 uses bene Anah, ‘the sons of Anah’, for a son and a daughter, since bene can mean ‘children’ when the group is mixed. Dishon and Dishan (verses 21, 26, 28) are very close in Hebrew, and in verse 26 the Hebrew spells the name Dishan while the context and 1 Chronicles 1:41 point to Dishon, which the BSB reads. Easily confused names are a known hazard in copying lists like this one.",
+      "words": [
+        "H1787H",
+        "H1789H",
+        "H5780I",
+        "H0173"
+      ],
+      "history": "Uz is the name of Job's homeland (Job 1:1), and Lamentations addresses Edom as \"you who dwell in the land of Uz\" (Lamentations 4:21), so at least one tradition located Uz in or near Edom. Eliphaz, the first of Job's friends, is called a Temanite (Job 2:11), another Edomite name. The book of Job therefore seems to be set among the peoples this chapter lists.",
+      "refs": [
+        "Job 1:1",
+        "Lamentations 4:21",
+        "Job 2:11",
+        "1 Chronicles 1:41-42"
+      ]
+    },
+    {
+      "v": "29-30",
+      "context": "The Horite chiefs are listed in order, closing the Horite section just as verses 15-19 closed the section on Esau's chiefs. The two peoples' leaders stand side by side in the record.",
+      "grammar": "The closing phrase, allufe hachori leallufehem beerets Seir, ‘the chiefs of the Horites by their chiefs in the land of Seir’, repeats alluf in a way English smooths into \"according to their divisions\". The phrase probably means the chiefs listed by the clans they led, which fits the possible link with elef, ‘clan’ or ‘thousand’.",
+      "words": [
+        "H0441B",
+        "H2753H",
+        "H8165A"
+      ],
+      "refs": [
+        "Genesis 36:21",
+        "Genesis 36:40"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "The heading for the king list looks toward Israel's future. Edom has kings before any king reigns over the Israelites; the chapter note discusses what this says about when the verse was written.",
+      "grammar": "Lifne melokh melekh livne Yisrael, ‘before the reigning of a king for the sons of Israel’, uses an infinitive (melokh) with its subject noun from the same root, a compact clause. Malkhu, ‘they reigned’, is a perfect that summarizes the whole list before it begins. The verse sets Edom's kings against the promise just given to Jacob, ‘kings shall descend from you’ (35:11).",
+      "words": [
+        "H4427A",
+        "H4428G",
+        "H3478"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Edom's kings come first, but the order of events is not the order of God's purpose. Balaam's oracle foresees a scepter rising from Israel and Edom becoming a possession (Numbers 24:17-18), and Paul reads the whole Jacob and Esau story as a demonstration that God's purpose stands on his call, not on who arrives first (Romans 9:10-13)."
+        },
+        {
+          "id": "kingdom",
+          "note": "Israel's kingship is promised before it exists and arrives late. The Bible's hope for a king is shaped from this early point by waiting on God's timing rather than by imitating the nations (compare 1 Samuel 8:5)."
+        }
+      ],
+      "refs": [
+        "Genesis 35:11",
+        "Numbers 24:17-18",
+        "Romans 9:10-13",
+        "1 Chronicles 1:43"
+      ]
+    },
+    {
+      "v": "32-34",
+      "context": "The first three kings: Bela from Dinhabah, Jobab from Bozrah, and Husham from the land of the Temanites. No king is his predecessor's son, and each is tied to a different place.",
+      "grammar": "The list runs on a fixed formula: vayyamot X vayyimlokh tachtav Y, ‘and X died, and Y reigned in his place’. Tachtav, ‘in his place’, literally ‘under him’, is the ordinary way of saying one ruler succeeded another. The father's name is given for some kings and the home town for others. Bela son of Beor has the same father's name as the prophet Balaam son of Beor (Numbers 22:5), and some scholars have noticed the resemblance, but nothing in the text identifies the two.",
+      "words": [
+        "H1106G",
+        "H1160G",
+        "H3103H",
+        "H1224G"
+      ],
+      "history": "Bozrah, at modern Buseirah in southern Jordan, was later a leading Edomite city; the prophets name it when they speak of judgment on Edom (Isaiah 34:6, Amos 1:12), and Isaiah 63:1 pictures the LORD coming from Bozrah in bloodstained garments. The Septuagint's closing note to the book of Job identifies Job with Jobab, king of Edom, a tradition that reflects the link between Job's world and Edom.",
+      "refs": [
+        "Isaiah 63:1",
+        "Isaiah 34:6",
+        "Amos 1:12",
+        "Numbers 22:5"
+      ]
+    },
+    {
+      "v": "35-36",
+      "context": "Hadad son of Bedad is remembered for defeating Midian in the country of Moab, the only military deed recorded in the king list. Samlah of Masrekah succeeds him.",
+      "grammar": "Hammakkeh et Midyan, ‘the one who struck Midian’, is a Hiphil participle with the article, used like a title. It identifies this Hadad by his victory, as a surname might. Bisdeh Moav, ‘in the field of Moab’, is the phrase for Moab's open country used again in the book of Ruth (Ruth 1:1). Hadad was also the name of a storm god worshiped in Syria, and it became a common element in royal names.",
+      "words": [
+        "H5221",
+        "H1908G",
+        "H4080H",
+        "H7704G"
+      ],
+      "refs": [
+        "1 Kings 11:14-22",
+        "Numbers 22:4",
+        "Ruth 1:1"
+      ]
+    },
+    {
+      "v": "37-39",
+      "context": "The last three kings are Shaul, Baal-hanan, and Hadad. The final entry gives the king's city and his wife's name and family, and it does not record his death, as if the list stops with a king still reigning in its source.",
+      "grammar": "Rechovot hannahar, ‘Rehoboth of the river’, uses hannahar, ‘the river’, which in the Old Testament usually means the Euphrates, as it does for Balaam's home in Numbers 22:5; the BSB reads it that way. Some scholars think a local stream in Edom is meant instead, since a king of Edom from the distant Euphrates would be surprising. Baal-hanan means ‘Baal is gracious’, a name built on the Canaanite god's title. Mehetabel means ‘God does good’.",
+      "words": [
+        "H7344H",
+        "H5104G",
+        "H1177G",
+        "H4105G"
+      ],
+      "text": "In verse 39 the standard Hebrew text reads Hadar, while 1 Chronicles 1:50 reads Hadad, which the BSB follows here. In Hebrew script the letters d and r look very much alike, and copyists confused them often. The same kind of confusion may lie behind other small differences between this list and the one in Chronicles.",
+      "refs": [
+        "1 Chronicles 1:48-50",
+        "Numbers 22:5"
+      ]
+    },
+    {
+      "v": "40-43",
+      "context": "The chapter closes with a list of Edom's chiefs by clan and territory, a map as much as a genealogy, and ends where it began: Esau is the father of Edom. Chapter 37 will begin with Jacob living in the land of his father's sojourning.",
+      "grammar": "Verse 40 lists the chiefs lemishpechotam limqomotam bishmotam, ‘by their clans, by their places, by their names’, three phrases that show the list is organized by territory. Verse 43 closes with lemoshvotam beerets achuzzatam, ‘by their dwellings in the land of their possession’. Achuzzah, ‘possession’ or ‘holding’, is the word used for the land promised to Abraham as an everlasting possession (17:8) and for the only piece of Canaan he owned, the burial ground (23:20). Esau's line has a land of its possession now; Jacob, in the very next verse, lives in the land of his father's sojournings (37:1).",
+      "words": [
+        "H0441B",
+        "H4940",
+        "H4186",
+        "H0272"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The chapter ends with Esau's people settled, organized, and at home, while the covenant family remains sojourners. Genesis presents both as God's doing: a real portion for Esau, and for Jacob a promise that requires patience."
+        },
+        {
+          "id": "hope",
+          "note": "The contrast between achuzzah for Esau and sojourning for Jacob teaches what Hebrews later says of the patriarchs: they lived as foreigners in the land of promise, looking for a city with foundations (Hebrews 11:9-10)."
+        }
+      ],
+      "refs": [
+        "Genesis 17:8",
+        "Genesis 37:1",
+        "Hebrews 11:9-10",
+        "Deuteronomy 23:7"
+      ]
+    }
+  ]
+}

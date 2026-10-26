@@ -1,0 +1,168 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After the Judah episode the narrator picks up Joseph's story exactly where 37:36 left it, repeating the sale to Potiphar so the reader can reenter the thread. The verse sets the scene for everything that follows: Joseph in a foreign land, owned by a powerful man, with no family and no rights.",
+      "grammar": "The verse opens with the subject before the verb, veyosef hurad, ‘now Joseph had been brought down’. In Hebrew narrative that word order breaks the chain of consecutive verbs and signals a resumption or a background fact, which is why the BSB says “Meanwhile” and uses a past perfect. Hurad is a Hophal (passive causative) of yarad, and the verse ends with the active Hiphil of the same verb, horiduhu, ‘who had brought him down’. Joseph is the object of other people's actions at both ends of the sentence. Potiphar's title is sar hattabbachim, from a root meaning to slaughter; the same title is given to Nebuzaradan, Nebuchadnezzar's “captain of the guard” (2 Kings 25:8), and its Aramaic equivalent to Arioch in Daniel 2:14.",
+      "words": ["H3381", "H2876", "H5631"],
+      "history": "Potiphar is an Egyptian name, usually explained as Pa-di-pa-Ra, ‘the one whom Ra (the sun god) has given’. The same name, in a slightly different form, belongs to Joseph's father-in-law in 41:45. Names built on this pattern are best attested in later periods of Egyptian history, a point that enters the wider debate over when the Joseph story took its present form.",
+      "text": "Genesis 37:36 says the Midianites sold Joseph to Potiphar, while this verse says Potiphar bought him from the Ishmaelites. Many source critics take the two names as signs of two combined accounts. Others note that the terms overlap in the Bible itself: Judges 8:24 explains that the Midianites Gideon defeated wore gold earrings “because they were Ishmaelites”, so ‘Ishmaelite’ could describe a type of trader rather than a strict ancestry.",
+      "refs": ["Genesis 37:28", "Genesis 37:36", "Judges 8:24", "2 Kings 25:8", "Daniel 2:14"]
+    },
+    {
+      "v": "2",
+      "context": "The first statement of the chapter's refrain: the LORD was with Joseph. It comes before anything good has happened to him in Egypt and describes a slave still in his master's house. God's presence is the first fact of his new life, not a reward for success.",
+      "grammar": "Vayhi YHWH et yosef, ‘and the LORD was with Joseph’, uses et as a preposition of accompaniment. Genesis has used this promise of presence for Isaac (26:3, 26:24) and Jacob (28:15, 31:3); now the narrator states it as a fact about Joseph. The word for successful, matsliach, is a Hiphil participle of tsalach, and since the Hiphil is causative the form suggests one who is made to prosper or who brings things to success. Adonav, ‘his master’, is plural in form though it refers to one man, a common way of speaking of a master or lord in Hebrew.",
+      "words": ["H0854", "H6743B", "H0113"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The chapter's refrain first appears while Joseph is still a slave. God's presence does not remove him from bondage; it makes him fruitful within it. This is the shape of providence throughout the Joseph story: not exemption from hardship but God at work inside it."
+        }
+      ],
+      "refs": ["Genesis 26:24", "Genesis 28:15", "Acts 7:9", "Isaiah 43:2"]
+    },
+    {
+      "v": "3-4",
+      "context": "Potiphar sees that the LORD is with Joseph and promotes him from household slave to personal attendant and then to steward of the whole estate. The verses move in steps, each giving Joseph more of what his master owns.",
+      "grammar": "Verse 3 makes the LORD the explicit subject of the verb: YHWH matsliach beyado, ‘the LORD was making successful in his hand’. The Egyptian sees the result; the narrator names its cause. In verse 4 vayshaaret, a Piel of sharat, means to wait on or attend a superior. The same verb names Joshua as Moses' “attendant” (Exodus 24:13) and later the priests' ministry. Vayyafqidehu, a Hiphil of paqad, ‘he appointed him over’, is the verb of official appointment that will recur when Joseph is placed over the prisoners (40:4) and when Joseph advises Pharaoh to appoint overseers (41:34). The phrase ‘everything he had, he gave into his hand’ begins the chapter's play on the word ‘hand’.",
+      "words": ["H6743B", "H8334", "H6485J", "H2580"],
+      "history": "Large Egyptian households employed a steward, called in Egyptian ‘overseer of the house’, who ran the estate's stores, workers, and fields for its owner. Joseph's position corresponds to that role. It was unusual, though not impossible, for a foreign slave to reach it.",
+      "refs": ["Exodus 24:13", "Genesis 40:4", "Genesis 41:34", "Proverbs 22:29"]
+    },
+    {
+      "v": "5",
+      "context": "The narrator states that the LORD blessed the Egyptian's house because of Joseph, and that the blessing reached everything, the house and the field. The verse is the theological center of the chapter's first scene.",
+      "grammar": "Biglal yosef, ‘on account of Joseph’, uses the same preposition Laban used when he admitted “the LORD has blessed me because of you” (30:27), where Hebrew has biglalekha. The verb vayvarekh, a Piel of barakh, and the noun birkat, ‘blessing of’, appear together, doubling the point. The pairing ‘in the house and in the field’ is a merism, two opposites naming the whole.",
+      "words": ["H1558", "H1288", "H1293"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The promise to Abraham said that all the families of the earth would be blessed through him (12:3). Here a single Egyptian household tastes that blessing through one of Abraham's descendants, a slave. The promise works before Israel has any power at all."
+        },
+        {
+          "id": "mission",
+          "note": "Blessing flows outward from God's people to outsiders even when God's people are captives. The pattern returns in Jeremiah's instruction to the exiles to seek the welfare of the city where they have been carried (Jeremiah 29:7)."
+        }
+      ],
+      "refs": ["Genesis 12:3", "Genesis 30:27", "Jeremiah 29:7"]
+    },
+    {
+      "v": "6",
+      "context": "The first half of the verse summarizes Joseph's complete authority; the second half introduces his appearance, which will set off the temptation. The verse is a hinge between the scene of blessing and the scene of danger.",
+      "grammar": "The phrase velo yada itto meumah, literally ‘he did not know, with him, anything’, means Potiphar paid attention to nothing while Joseph was there. Joseph's description, yefeh toar vifeh mareh, ‘handsome in form and handsome in appearance’, is the masculine form of the exact words used of his mother Rachel, who was “shapely and beautiful” (29:17). Genesis rarely describes a man's looks, and the phrase here is placed where it will explain what follows.",
+      "words": ["H3045", "H3303", "H8389", "H4758"],
+      "history": "The note that Potiphar kept only ‘the food he ate’ may reflect Egyptian concern about ritual purity at the table, which Genesis mentions directly in 43:32, where Egyptians will not eat with Hebrews. It may also be an idiom for his private affairs. The text does not say which.",
+      "refs": ["Genesis 29:17", "Genesis 43:32", "1 Samuel 16:12"]
+    },
+    {
+      "v": "7",
+      "context": "Potiphar's wife looks at Joseph and propositions him in two words. The contrast between her brevity and his long, reasoned answer in the next verses is part of the story's design.",
+      "grammar": "Vattissa ... et eneha, ‘she lifted up her eyes’, is an idiom for looking with intent, here with desire. Her words are shikhvah immi, a Qal imperative with an added ending, ‘lie with me’. The formula acher haddevarim haelleh, ‘after these things’, marks a new episode and an interval of time, the same formula that opens the testing of Abraham in 22:1.",
+      "words": ["H5375H", "H7901I", "H1697I"],
+      "refs": ["Genesis 22:1", "Proverbs 7:13-18", "Proverbs 6:24-26"]
+    },
+    {
+      "v": "8-9",
+      "context": "Joseph refuses and gives his reasons in a rising order: his master's trust, his own position, the one exception his master made, and finally God. The speech ends by naming the deed for what it is before God, which is the heart of the chapter.",
+      "grammar": "Vaymaen, ‘and he refused’ (Piel of maan), carries in the Masoretic text a rare musical accent, the shalshelet, found only four times in the five books of Moses. Jewish interpreters have long read it as drawing out the word, a refusal stretched and repeated. In verse 9 the question veekh eeseh, ‘and how could I do’, is an imperfect of possibility, followed by a consecutive perfect, vechatati, ‘and so sin’. The object is harah haggedolah hazzot, ‘this great evil’. Joseph names the sin as lelohim, ‘against God’, using the general word Elohim. Joseph never speaks the name YHWH in Genesis, and many commentators connect that with a man speaking to Egyptians about his God.",
+      "words": ["H3985", "H2820", "H7451I", "H2398", "H0430G"],
+      "history": "Legal texts from Ugarit refer to adultery as ‘the great sin’, and Abimelech uses similar language when he protests that Abraham nearly brought ‘great sin’ on his kingdom through Sarah (20:9). Joseph's ‘great evil’ may echo a phrase that people across the region understood as a term for adultery.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Joseph's reasons begin with loyalty to Potiphar but end with God. A sin against a neighbor is first a sin against God, which is how David will later confess his adultery (Psalm 51:4). Holiness here is not ritual separation but faithfulness in a private room with no one watching."
+        },
+        {
+          "id": "sin",
+          "note": "Joseph calls the act by its name before he is tempted to rename it. The verse shows that resisting sin begins with seeing it clearly, including its effect on the person wronged and its offense to God."
+        }
+      ],
+      "refs": ["Genesis 20:9", "Psalm 51:4", "Exodus 20:14", "Hebrews 13:4"]
+    },
+    {
+      "v": "10",
+      "context": "The temptation is not a single moment but a daily pressure, and Joseph's refusal is equally daily. He avoids not only the act but her company.",
+      "grammar": "Yom yom, ‘day day’, is a Hebrew way of saying every day. The construction vayhi kedabberah, ‘and it was, as she spoke’, uses an infinitive with ke to describe repeated occasions. Joseph ‘did not listen to her’ (lo shama eleha), then two infinitives state the limits: lishkav etslah, ‘to lie beside her’, and lihyot immah, ‘to be with her’. The second is broader than the first: he refused even her presence.",
+      "words": ["H3117J", "H8085G", "H0681"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Joseph's faithfulness is a matter of repeated refusal over time, not a single heroic act. Scripture's counsel about sexual temptation follows the same line: keep distance from it and flee (Proverbs 5:8, 2 Timothy 2:22)."
+        }
+      ],
+      "refs": ["Proverbs 5:8", "2 Timothy 2:22", "1 Corinthians 6:18"]
+    },
+    {
+      "v": "11-12",
+      "context": "The day comes when no one else is in the house. She seizes Joseph by his garment and repeats her demand, and he leaves the garment in her hand and runs. His flight is his last free act before the accusation takes everything from him.",
+      "grammar": "Vattitpesehu, ‘she seized him’, from tafas, is a verb of grabbing and holding, used elsewhere for capturing a city or arresting a person. The narrator states the absence of witnesses emphatically: veen ish meanshe habbayit sham babbayit, ‘and there was no one of the men of the house there in the house’. Joseph's response is three quick verbs: vayyaazov (‘he left’), vayyanos (‘he fled’), vayyetse (‘he went out’). The word for his garment is beged, the general word for clothing, not the special robe (kuttonet) of chapter 37.",
+      "words": ["H8610", "H0899B", "H5800A", "H5127"],
+      "refs": ["Genesis 37:23", "1 Corinthians 6:18", "Proverbs 6:27-29"]
+    },
+    {
+      "v": "13-15",
+      "context": "The wife turns the garment into evidence. Speaking first to the household servants, she presents herself as the victim, Joseph as the aggressor, and her husband as the man responsible for bringing him. She changes one small detail: Joseph left the garment ‘beside me’, not ‘in her hand’.",
+      "grammar": "Her speech begins with reu, ‘see’, a plural imperative that draws the servants in, and then hevi lanu, ‘he has brought to us’, with the subject unnamed; everyone knows ‘he’ is Potiphar. The phrase letsacheq banu uses a Piel infinitive of tsachaq with ‘us’, so she casts the insult as done to the whole household. She calls Joseph ish ivri, ‘a Hebrew man’. Throughout the Old Testament ‘Hebrew’ is usually the name outsiders use for Abraham's family, as here and in the Philistines' mouths in 1 Samuel 4:6. In verse 15 her own account moves her scream before his flight (kishmo ki harimoti qoli, ‘when he heard that I raised my voice’), making his flight look like guilt.",
+      "words": ["H6711", "H5680", "H7311A", "H0681"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The accusation turns truth upside down: the one who refused becomes the attacker. False witness is forbidden in the Ten Commandments (Exodus 20:16), and this scene shows why. A lie told well, with a piece of physical evidence, can destroy an innocent man."
+        }
+      ],
+      "refs": ["Genesis 14:13", "1 Samuel 4:6", "Exodus 20:16", "Psalm 35:11"]
+    },
+    {
+      "v": "16-18",
+      "context": "She keeps the garment beside her until her husband comes home and tells him the story again. The second telling points the blame directly at him: it was the slave ‘you brought us’.",
+      "grammar": "Vattannach, a Hiphil of nuach, ‘she laid it’, describes a deliberate placing, the evidence arranged for her husband's arrival. In verse 17 she says haeved haivri asher heveta lanu, ‘the Hebrew slave whom you brought to us’. The verb is now second person (‘you’), and Joseph is now ‘the slave’, not ‘a man’. The object of the insult has also changed from ‘us’ to ‘me’ (bi). Her story narrows its blame and sharpens it with each telling.",
+      "words": ["H5117", "H5650", "H0935P"],
+      "refs": ["Genesis 37:31-33", "Proverbs 19:5"]
+    },
+    {
+      "v": "19",
+      "context": "Potiphar hears his wife's words and his anger burns. The verse does not say at whom, and the narrator leaves that silence in place.",
+      "grammar": "The clause vayyichar appo, ‘and his anger burned’, is the standard Hebrew idiom for anger (literally ‘his nose burned’). Hebrew usually states the object of anger with a preposition, as in 30:2 where Jacob's anger burns ‘against Rachel’. Here there is none. Many commentators think the omission is deliberate: Potiphar may be angry at Joseph, at his wife, or at the loss of his best servant, and his choice of prison rather than execution in the next verse leaves the question open.",
+      "words": ["H2734", "H0639G", "H1697O"],
+      "refs": ["Genesis 30:2", "Proverbs 18:17"]
+    },
+    {
+      "v": "20",
+      "context": "Joseph is put into the prison where the king's prisoners are held. He has gone from pit to slavery to prison, each a step lower than the last. The verse ends with a pause: ‘and he was there in the prison’.",
+      "grammar": "The word for prison here, beit hassohar, occurs only in Genesis 39 and 40. Its origin is uncertain; some connect sohar with a word meaning something round, which would suggest a round fortress or enclosure. Joseph himself later calls it a bor, a pit or dungeon (40:15), the same word used for the pit his brothers threw him into (37:24). The phrase asire hammelekh asurim, ‘the king's prisoners were imprisoned’, repeats one root twice and marks it as a royal prison, which is why Pharaoh's officials will be sent there in chapter 40.",
+      "words": ["H5470", "H0615", "H0631"],
+      "refs": ["Genesis 40:3", "Genesis 40:15", "Genesis 37:24", "Psalm 105:17-19"]
+    },
+    {
+      "v": "21",
+      "context": "In the prison the refrain returns: the LORD was with Joseph. The narrator adds a word not used in the first half of the chapter, chesed, and God gives Joseph favor with the prison's chief as he did with Potiphar.",
+      "grammar": "Vayyet elav chesed, ‘he extended kindness to him’, uses the verb natah, to stretch out or incline. In the previous chapter the same verb described Judah turning aside from his brothers and turning aside to the woman at the road (38:1, 38:16); here God is the one who turns, toward a prisoner. The phrase vayyitten chinno, ‘he gave his favor’, recalls verse 4, where Joseph ‘found favor’. There Joseph found it; here the LORD gives it.",
+      "words": ["H5186", "H2617A", "H2580"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The same statement of God's presence that marked Joseph's rise in Potiphar's house marks his fall into prison. God's favor is not measured by Joseph's circumstances, which have just collapsed, but by God's commitment to him."
+        },
+        {
+          "id": "covenant",
+          "note": "Chesed is the loyal love God shows within the relationships he has committed himself to. Its appearance here ties Joseph's prison to the promises God made to his fathers: God has not forgotten the family of Abraham even in its most hopeless member."
+        }
+      ],
+      "refs": ["Genesis 38:16", "Psalm 105:17-22", "Acts 7:9-10"]
+    },
+    {
+      "v": "22-23",
+      "context": "The prison chief hands everything over to Joseph just as Potiphar did, and the chapter closes as it opened: the LORD was with Joseph and made whatever he did succeed. The prisoner has become the prison's steward.",
+      "grammar": "Verse 22 ends with a periphrastic construction, hu hayah oseh, ‘he was the one doing’, putting the pronoun first: whatever was done there, Joseph did it. Verse 23 mirrors verse 6. Potiphar ‘did not know anything’; now the chief ‘was not seeing anything’ (en ... roeh), a participle describing a continuing state. The final words, YHWH matsliach, ‘the LORD was making successful’, repeat verse 3 almost exactly and close the frame.",
+      "words": ["H6213A", "H7200G", "H6743B"],
+      "theology": [
+        {
+          "id": "work",
+          "note": "Joseph works faithfully as a slave and as a prisoner, and God blesses the work in both places. Scripture does not wait for better circumstances before it calls work good; Paul later tells slaves to work heartily as for the Lord (Colossians 3:23)."
+        }
+      ],
+      "refs": ["Genesis 39:3-6", "Colossians 3:23", "1 Peter 2:19-20"]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jesus has just told Peter that he will deny him three times (13:38). He now turns to all of them, and the pronouns become plural. The first sentence of the chapter answers the fear his announcements have created, and the same command returns in verse 27 to close the section.",
+      "grammar": "Mē tarassesthō humōn hē kardia, ‘let your heart not be troubled’, is a present passive imperative in the third person with a singular noun: many disciples, one heart, a Semitic way of speaking of the group's inner life. Tarassō is the verb John used of Jesus himself at Lazarus's tomb (11:33), at the coming of the hour (12:27), and at the announcement of the betrayal (13:21), so the one who forbids a troubled heart has just been troubled himself. Pisteuete eis ton theon kai eis eme pisteuete can be read four ways, because pisteuete is the same form in the indicative (‘you believe’) and the imperative (‘believe’). The BSB takes the first as a statement and the second as a command; the ESV takes both as commands. Every reading sets eis eme, ‘in me’, in exactly the position of eis ton theon, ‘in God’, so that Jesus asks for the same trust directed to him that Israel directed to God.",
+      "words": ["G5015", "G2588", "G4100"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The remedy Jesus offers for fear is not information about the future but trust, and trust with a double object: God and Jesus together. The verse assumes what the Gospel argues from its first line (1:1), that faith in Jesus is not a second faith beside faith in God but the same faith."
+        }
+      ],
+      "refs": ["John 11:33", "John 12:27", "John 13:21", "Psalm 56:3-4", "John 20:31"]
+    },
+    {
+      "v": "2",
+      "context": "Jesus gives the first reason not to be troubled: his Father's house has room. His going away is not abandonment but preparation. The verse picks up his words to Peter in 13:36 that Peter cannot follow now but will follow later.",
+      "grammar": "En tē oikia tou patros mou, ‘in my Father's house’, uses oikia, where 2:16 had oikos for the temple as my Father's house; the two words overlap in meaning. The closest parallel is 8:35, where the slave does not remain (menei) in the house (oikia) forever but the son remains. Here the Son who belongs in the house makes room in it for others, and monai, ‘rooms’ or ‘dwelling places’, is the noun formed from that same verb menō. Topon, ‘a place’, is ordinary Greek, but John has used ho topos for the temple (4:20, 11:48), as Jewish speech called the sanctuary ha-maqom, the place. The middle sentence is disputed. With the conjunction hoti, which the best manuscripts include, it reads most naturally as a question, ‘If it were not so, would I have told you that I go to prepare a place for you?’, though the Gospel records no earlier saying in exactly those words, which is why some take hoti as causal, ‘for I am going’. Hetoimasai, ‘to prepare’, is an aorist infinitive of purpose: the going is for the sake of the preparing.",
+      "words": ["G3614G", "G3438", "G5117", "G2090"],
+      "history": "Jewish writing of the period also spoke of dwelling places for the righteous with God. In the Similitudes of Enoch (1 Enoch 37 to 71, usually dated around the turn of the era), the seer is shown the dwelling places of the holy and the resting places of the righteous (1 Enoch 39:4-5). Modern studies have read the verse in two further ways. Robert Gundry (Zeitschrift für die neutestamentliche Wissenschaft, 1967) argued that the monai are positions in Christ that believers enter now, linking the word to 14:23. James McCaffrey (The House with Many Rooms, 1988) read the Father's house against the temple and Jesus' body as the new temple (2:19-21), so that his death and return to the Father open a place for his people in God's presence.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The promise is framed by family language: a Father, a house, rooms enough for all. Christian hope, on this verse, is less about a location than about belonging in the household of God, where the Son already lives and has gone ahead."
+        }
+      ],
+      "refs": ["John 2:16", "John 8:35", "John 14:23", "Hebrews 11:16", "Revelation 21:3"]
+    },
+    {
+      "v": "3",
+      "context": "The preparation is followed by a return. Jesus promises to come back and take the disciples to himself, and he names the goal as a relationship: that they may be where he is.",
+      "grammar": "Ean poreuthō, ‘if I go’, uses ean with the aorist subjunctive, but the going is certain, so the clause has the force of ‘when I go’. Palin erchomai, ‘I am coming again’, is a present used for a certain future, the kind of present grammarians call futuristic. Paralēmpsomai humas pros emauton, ‘I will take you to myself’, uses paralambanō, ‘take along’ or ‘receive’, the verb Matthew uses of Joseph taking Mary into his home (Matthew 1:20, 1:24) and of the one taken when the Son of Man comes (Matthew 24:40-41). The purpose clause, hina hopou eimi egō kai humeis ēte, ‘so that where I am you also may be’, uses the present eimi: Jesus speaks of where he is, not merely where he will be, and the same wish returns in his prayer (17:24).",
+      "words": ["G2090", "G3825", "G2064", "G3880"],
+      "theology": [
+        {
+          "id": "return",
+          "note": "Most interpreters, among them D. A. Carson and Raymond Brown, hear in this verse Jesus' return at the end of the age, though the chapter also speaks of his coming in the resurrection (14:18-19) and through the Spirit (14:23). Dispensational writers such as John Walvoord (The Rapture Question, 1957) read it with 1 Thessalonians 4:16-17 as a promise that believers will be caught up to meet the Lord before a final tribulation; other Protestant, Catholic, and Orthodox readers take it of the one public return of Christ. All agree on what the verse itself stresses, that the end of the story is being with Jesus."
+        }
+      ],
+      "refs": ["John 12:26", "John 17:24", "1 Thessalonians 4:16-17", "Philippians 1:23", "Acts 1:11"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus tells them they know the way to where he is going, and Thomas says bluntly that they don't. He hears a route to a place; Jesus has been speaking of a return to the Father. The misunderstanding sets up the saying of verse 6.",
+      "grammar": "Hopou egō hupagō oidate tēn hodon, literally ‘where I am going, you know the way’, is the short form of the earliest manuscripts. Hupagō, ‘I am going away’, is John's recurring verb for Jesus' departure to the one who sent him (7:33, 8:21, 13:33, 16:5). Thomas's reply sets two uses of oida side by side: ouk oidamen pou hupageis, ‘we do not know where you are going’, and pōs dunametha tēn hodon eidenai, ‘how can we know the way?’ His logic is sound as far as it goes: without a destination there is no route. Jesus' answer removes the gap between the two, since the destination is the Father and the way is Jesus himself.",
+      "words": ["G5217", "G6063", "G3598"],
+      "history": "Thomas's realism here fits the other two scenes where he speaks: his grim readiness to go and die with Jesus (11:16) and his refusal to believe the resurrection without seeing the wounds (20:25), which ends in the Gospel's fullest confession (20:28). Later tradition made him the apostle of the East. The Acts of Thomas, a third-century Syriac work, sends him to India, and the Christians of Kerala known as Saint Thomas Christians trace their church to his mission; historians regard the tradition as ancient but cannot confirm it.",
+      "refs": ["John 11:16", "John 20:24-29", "John 13:36", "Hebrews 10:19-20"]
+    },
+    {
+      "v": "6",
+      "context": "The sixth of John's I am sayings answers Thomas: Jesus does not give directions to the Father; he is the way. The second sentence states the same claim negatively, and verse 7 draws out what it means for knowing God.",
+      "grammar": "Egō eimi hē hodos kai hē alētheia kai hē zōē has three predicate nouns, each with the article, joined by kai. Raymond Brown and Ignace de la Potterie argued that the way is the main predicate, since it answers Thomas's question, and that the truth and the life explain why Jesus is the way: he is the way because he is the truth and the life. Others have proposed a Semitic pattern meaning ‘the true and living way’, but the three articles give each noun its own weight, and truth (1:14, 1:17) and life (1:4, 11:25) are both already titles of Jesus in this Gospel. Oudeis erchetai pros ton patera ei mē di' emou, ‘no one comes to the Father except through me’, uses dia with the genitive, the preposition of means or agency. The goal named is pros ton patera, ‘to the Father’: the verse speaks of access to a person, not of reaching a place.",
+      "words": ["G3598", "G0225", "G2222", "G3962", "G1223"],
+      "history": "Way was an established word for a manner of life before it became a name for the church. The Community Rule from Qumran calls its members those who have chosen the way (1QS 9), and the Didache, a Christian manual from around AD 100, opens with two ways, one of life and one of death (Didache 1:1). In Acts the first believers are known simply as the Way (Acts 9:2, 19:9, 24:14). The claim that one person is the way stands against this background of ways that are sets of teachings.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Christian thinking about other religions has often been sorted, since Alan Race's Christians and Religious Pluralism (1983), into three positions, each of which reads this verse in its own way. Exclusivists, or particularists, such as Harold Netland (Dissonant Voices, 1991), hold that the verse means salvation comes only through Christ and ordinarily only through conscious faith in him. Inclusivists, such as Karl Rahner, and in imaginative form C. S. Lewis in The Last Battle (1956), agree that no one comes to the Father except through Christ but hold that Christ may save some who do not know his name. Pluralists, such as John Hick and Paul Knitter (No Other Name?, 1985), read the verse as the devotional language of a particular community rather than a claim about the world's religions. The first two positions both accept the verse's claim about the means of salvation and differ over what it requires of the one who is saved; the historic churches, Catholic, Orthodox, and Protestant, have generally judged that the third cannot be reconciled with the verse's plain claim."
+        },
+        {
+          "id": "revelation",
+          "note": "The verse does not say that Jesus shows the way or teaches the truth. It identifies the way, the truth, and the life with a person. For John, what God is like and how one comes to him are known in Jesus, not by a route that could be followed without him."
+        }
+      ],
+      "refs": ["Acts 4:12", "1 Timothy 2:5", "Hebrews 10:19-20", "John 10:9", "Psalm 86:11"]
+    },
+    {
+      "v": "7",
+      "context": "Jesus draws the conclusion of verse 6: to know him is to know the Father. Then he adds that from now on they do know the Father and have seen him, which provokes Philip's request in verse 8.",
+      "grammar": "The two halves of the verse turn on tense. The first half is a conditional whose wording the manuscripts transmit in two forms (see the chapter note): in the Nestle-Aland text, ei egnōkate me, kai ton patera mou gnōsesthe, ‘if you have come to know me, you will know my Father too’, uses the perfect egnōkate for a knowing that has taken hold and a future for its result. The second half is plain assertion: ap' arti ginōskete auton kai heōrakate auton, ‘from now on you know him and have seen him’. Ap' arti, ‘from now on’, marks the hour that has arrived (13:31), and the perfect heōrakate, ‘you have seen’, treats their seeing of Jesus as a seeing of the Father whose effect remains.",
+      "words": ["G1097", "G0737", "G3708"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Knowledge of the Father is not a second step after knowing Jesus. The verse makes them one act, which is why John can say that no one has ever seen God and yet that the only Son has made him known (1:18)."
+        }
+      ],
+      "refs": ["John 8:19", "John 1:18", "John 12:45", "1 John 2:23"]
+    },
+    {
+      "v": "8-9",
+      "context": "Philip asks for what Moses asked: show us the Father, and that will be enough. Jesus answers with sorrow that after all this time Philip still does not know him, and with the Gospel's boldest statement of revelation: whoever has seen him has seen the Father.",
+      "grammar": "Deixon hēmin ton patera, ‘show us the Father’, is an aorist imperative of deiknumi, ‘show’, and kai arkei hēmin, ‘and it is enough for us’, makes the sight a final satisfaction. Jesus' reply, tosoutō chronō meth' humōn eimi, uses a present tense with an expression of time for a state that has lasted up to now, ‘I have been with you so long’. The Nestle-Aland text has the dative tosoutō chronō; other editions have the accusative, with the same sense. Kai ouk egnōkas me, Philippe, singles Philip out by name and uses the singular. Ho heōrakōs eme heōraken ton patera, ‘the one who has seen me has seen the Father’, puts a perfect participle and a perfect indicative side by side, so that the seeing of Jesus and the seeing of the Father are one completed act. Pōs su legeis, ‘how can you say’, sharpens the rebuke with the emphatic su.",
+      "words": ["G1166", "G0714", "G5550", "G1097", "G3708"],
+      "ot": [
+        {
+          "ref": "Exodus 33:18-23",
+          "note": "After the golden calf, Moses asks the LORD, ‘show me your glory’ (Hebrew har'eni na et-kevodekha), and is told that he may see God's goodness pass by and his back, but not his face, for no one can see God and live. The Septuagint renders the request deixon moi tēn seautou doxan, with the same imperative Philip uses, and earlier in the chapter Moses asks God to reveal himself, emphanison moi seauton (Exodus 33:13), the verb Jesus uses in 14:21-22. John does not quote the passage, but the vocabulary points to it. Moses was refused the face of God; Philip is told that he has been looking at it. John prepared for this in his prologue, where the law came through Moses and grace and truth through Jesus Christ, and the only Son has made the unseen God known (1:17-18)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The longing to see God is answered in a human face. The verse does not say that Jesus resembles the Father or points to him, but that seeing him is seeing the Father, which is the incarnation stated in terms of sight: the Word who was God became flesh and was seen (1:14, 1 John 1:1-2)."
+        }
+      ],
+      "refs": ["John 12:45", "Colossians 1:15", "Hebrews 1:3", "2 Corinthians 4:6", "John 1:18"]
+    },
+    {
+      "v": "10-11",
+      "context": "Jesus explains how seeing him can be seeing the Father: he is in the Father and the Father is in him. His words and his works are the Father's. He then asks for faith, and offers the works as grounds for it if his word is not enough.",
+      "grammar": "Ou pisteueis hoti egō en tō patri kai ho patēr en emoi estin, ‘do you not believe that I am in the Father and the Father is in me?’, uses ou with a question that expects the answer yes. The formula of mutual indwelling appeared first in 10:38 and will return in 17:21. Ta rhēmata ha egō legō humin ap' emautou ou lalō, ‘the words I say to you I do not speak from myself’, is followed by a sentence that begins with words and ends with works: ho de patēr en emoi menōn poiei ta erga autou, ‘but the Father remaining in me does his works’. John treats Jesus' speech as one of his works. Verse 11 shifts from the dative to the plural imperative: pisteuete moi, ‘believe me’, trust my word, and ei de mē, dia ta erga auta pisteuete, ‘but if not, believe because of the works themselves’. Ei de mē, ‘otherwise’, allows a second, humbler ground of faith without despising it.",
+      "words": ["G4100", "G3306", "G2041", "G4487"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father and the Son are distinct (one is in the other) and yet each is in the other. Greek theology later named this mutual indwelling perichōrēsis, and John of Damascus used the term for the persons of the Trinity in his Exposition of the Orthodox Faith in the eighth century. The verse is one of the texts on which that teaching rests."
+        },
+        {
+          "id": "faith",
+          "note": "Jesus does not despise faith that needs reasons. He invites the disciples to trust his word, and failing that to consider his works, the same appeal he made to his opponents in 10:37-38."
+        }
+      ],
+      "refs": ["John 10:37-38", "John 5:36", "John 10:30", "John 17:21", "John 12:49-50"]
+    },
+    {
+      "v": "12",
+      "context": "With a solemn double amen, Jesus promises that the one who believes in him will do his works and greater ones, and gives the reason: he is going to the Father. His departure, which the disciples fear, is the condition of their work.",
+      "grammar": "Ho pisteuōn eis eme, ‘the one who believes in me’, is a present participle describing a settled believer, singular but general. Ta erga ha egō poiō kakeinos poiēsei, ‘the works that I do, that one also will do’, uses kakeinos, a contraction of kai ekeinos, ‘he too’. Kai meizona toutōn poiēsei, ‘and greater than these he will do’, uses the neuter plural of the comparative meizōn. The hoti clause that ends the verse, hoti egō pros ton patera poreuomai, ‘because I am going to the Father’, gives the ground: the greater works depend on his exaltation and on the Spirit he will send when he goes (16:7), and on his continuing to act when they ask (14:13).",
+      "words": ["G4100", "G2041", "G3173", "G4198"],
+      "history": "Augustine, in his Tractates on John (72.3), asked how any work could be greater than raising the dead, and answered that making a righteous person out of an ungodly one is a greater work than creating heaven and earth, since heaven and earth will pass away but the salvation of the justified will remain. Thomas Aquinas cited the saying in the Summa Theologiae (I-II, question 113, article 9). Most modern commentators, among them Brown and Carson, take the greater works to be greater in scope rather than in kind: after the resurrection the disciples will bring the life Jesus gave in Galilee and Judea to the nations, as when three thousand were added in a day (Acts 2:41).",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The church's work is Jesus' work continued, made possible by his going to the Father. The verse does not promise disciples a power of their own; it makes their mission the extension of his, carried on by his exaltation and his Spirit."
+        }
+      ],
+      "refs": ["John 16:7", "John 5:20", "Acts 2:41", "Acts 5:12-16", "Matthew 28:18-20"]
+    },
+    {
+      "v": "13-14",
+      "context": "Jesus joins the promise of work to a promise about prayer: he himself will do whatever they ask in his name, so that the Father is glorified in the Son. Verse 14 repeats the promise in shorter form.",
+      "grammar": "Ho ti an aitēsēte en tō onomati mou, ‘whatever you ask in my name’, uses the indefinite relative with an and the aorist subjunctive. Touto poiēsō, ‘this I will do’, makes Jesus the one who answers, where 15:16 and 16:23 say that the Father gives; John sees no rivalry between the two. The purpose clause hina doxasthē ho patēr en tō huiō, ‘so that the Father may be glorified in the Son’, sets the limit and the goal of the promise: prayer in his name serves the Father's glory as the Son's own work did. In verse 14, ean ti aitēsēte me en tō onomati mou, the pronoun me, ‘ask me’, is printed in the Nestle-Aland text and makes Jesus the one addressed in prayer as well as the one who answers.",
+      "words": ["G0154", "G3686", "G4160G", "G1392"],
+      "parallels": ["Matthew 7:7-8", "Matthew 21:22", "Mark 11:24"],
+      "text": "The Synoptic Gospels have promises about prayer in other settings, tied to faith rather than to Jesus' name: ask and it will be given you (Matthew 7:7), and whatever you ask in prayer, believing, you will receive (Matthew 21:22, Mark 11:24). John alone ties the promise to the name of Jesus and places it at the farewell, as a gift for the time after he has gone.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The earliest Christians prayed to Jesus as well as through him: Stephen commits his spirit to the Lord Jesus (Acts 7:59) and Paul addresses those who call on the name of the Lord Jesus Christ (1 Corinthians 1:2). Verse 14, with its ‘ask me’, belongs to that practice. Because the goal is the Father's glory in the Son, the promise is not a formula that secures any request, but an invitation to ask for what serves his purposes."
+        }
+      ],
+      "refs": ["John 15:16", "John 16:23-24", "1 John 5:14-15", "Acts 7:59", "1 Corinthians 1:2"]
+    },
+    {
+      "v": "15",
+      "context": "The second movement of the chapter begins, bound by the pairing of love and obedience that returns in verses 21, 23, and 24. Before the promise of the Spirit, Jesus describes the disciples who will receive him: those who love him and keep his commands.",
+      "grammar": "Ean agapate me, ‘if you love me’, uses ean with a present subjunctive of ongoing love. The main verb in the Nestle-Aland text is the future indicative tērēsete, ‘you will keep’, which describes what love does; the later majority text has the aorist imperative tērēsate, ‘keep’, which turns the sentence into a command. Tas entolas tas emas, ‘the commandments that are mine’, repeats the article with the possessive adjective for emphasis. The verse does not make obedience the condition of being loved; it describes obedience as the form love takes.",
+      "words": ["G0025", "G1785", "G5083G"],
+      "ot": [
+        {
+          "ref": "Exodus 20:6",
+          "note": "In the Ten Commandments the LORD shows steadfast love to thousands ‘of those who love me and keep my commandments’ (le'ohavay u-leshomrey mitsvotay), a phrase repeated in Deuteronomy 5:10 and 7:9. The Septuagint renders it with agapaō, ‘love’, and phulassō, ‘keep’, and the commands as prostagmata. Jesus uses the same pairing but with tēreō and entolai, and he speaks of my commandments where the Decalogue has the LORD's. Without quoting, he speaks of love and obedience toward himself in the words the law used of love and obedience toward God."
+        }
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love for Jesus is not measured by feeling alone but by keeping his word. The verse and its echoes in 14:21-24 make love and obedience inseparable without making either the price of the other, a theme 1 John 5:3 states plainly."
+        }
+      ],
+      "refs": ["Exodus 20:6", "Deuteronomy 7:9", "John 14:21", "John 15:10", "1 John 5:3"]
+    },
+    {
+      "v": "16",
+      "context": "The first of the five sayings about the Advocate. Jesus will ask the Father, and the Father will give another Advocate to be with them forever. Jesus' own presence was for a little while (13:33); this one will not leave.",
+      "grammar": "Kagō erōtēsō ton patera, ‘and I will ask the Father’. John uses erōtaō for Jesus' requests to the Father (16:26, 17:9, 17:15, 17:20) and more often aiteō for the disciples' asking, though in 16:23-26 the two verbs sit side by side, so the distinction should not be pressed. Allon paraklēton dōsei humin, ‘he will give you another Advocate’, implies that Jesus has been the first, as 1 John 2:1 calls him our paraklētos with the Father. Grammarians sometimes say that allos means another of the same kind and heteros another of a different kind, but the distinction is loose in the Greek of this period; the sense of likeness comes from the context, since the second Advocate will do for the disciples what Jesus did. Hina meth' humōn eis ton aiōna ē, ‘that he may be with you forever’, uses eis ton aiōna, ‘to the age’, the same phrase Peter used in his refusal in 13:8.",
+      "words": ["G2065", "G0243", "G3875", "G1325", "G0165H"],
+      "history": "The word paraklētos had a range that explains why English Bibles render it so differently. In Job 16:2, where Job calls his friends miserable comforters (Hebrew menachamim, from nacham, ‘comfort’), the Septuagint has paraklētores and the later Greek versions of Aquila and Theodotion have paraklētoi, the very word John uses. In the Aramaic Targum of Job, the interceding angel of Job 33:23, the Hebrew melits, ‘mediator’ or ‘interpreter’, is rendered with the loanword praqlit, the same word the Mishnah uses for an advocate before God (m. Avot 4:11). The comforter of Job and the advocate of the courtroom both stand in the background of Jesus' promise.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is given as another of the same kind as Jesus: a personal presence who stands beside the disciples, speaks for them, and strengthens them. His coming does not replace Jesus but continues his presence, and unlike Jesus' earthly presence it is forever."
+        },
+        {
+          "id": "trinity",
+          "note": "One sentence names three agents: the Son who asks, the Father who gives, and the Advocate who is given. The church's later confession that the Spirit is a distinct person, sent by the Father at the Son's request, rests on sayings like this one."
+        }
+      ],
+      "refs": ["1 John 2:1", "Job 16:2", "John 16:7", "Romans 8:26-27", "Acts 2:33"]
+    },
+    {
+      "v": "17",
+      "context": "The Advocate is named the Spirit of truth. The world cannot receive him, because it neither sees nor knows him, but the disciples know him, since he remains with them and will be in them. The verse introduces the contrast between the disciples and the world that runs through the rest of the discourse.",
+      "grammar": "To pneuma tēs alētheias, ‘the Spirit of truth’, is followed by neuter pronouns (ho, auto), because pneuma is a neuter noun. English translations rightly render them ‘whom’ and ‘him’, since the gender of a Greek noun is grammatical, not a statement about the Spirit's nature. Ho kosmos ou dunatai labein, ‘the world cannot receive’, uses dunatai of an inability rooted in the world's own condition: it does not see (theōrei) and does not know (ginōskei). Humeis ginōskete auto, ‘you know him’, sets the emphatic humeis against the world. Par' humin menei kai en humin estai, ‘he remains with you and will be in you’, moves from para, ‘beside’, to en, ‘in’. The early manuscripts had no accents, and menei can be read either as present (‘remains’) or as future (menei, ‘will remain’); the manuscripts also differ between estai, ‘will be’, and estin, ‘is’.",
+      "words": ["G4151G", "G0225", "G2889", "G2334", "G3306"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is known by those in whom he dwells and hidden from those who refuse the Son. The promise that he will be in the disciples fulfills the prophets' hope of God's Spirit within his people (Ezekiel 36:27), which the Old Testament speaks of as future."
+        },
+        {
+          "id": "sin",
+          "note": "In John the world (kosmos) most often means humanity organized in rejection of God. Its inability to receive the Spirit is not a lack of evidence but a lack of sight, the blindness chapter 9 dramatized, and 1 Corinthians 2:14 describes the same inability in Paul's terms."
+        }
+      ],
+      "refs": ["1 Corinthians 2:14", "John 1:10", "Ezekiel 36:27", "1 John 4:6", "John 16:13"]
+    },
+    {
+      "v": "18-19",
+      "context": "Jesus answers the fear of abandonment directly: he will not leave them orphaned; he is coming to them. In a little while the world will not see him, but they will, and his life will be the ground of theirs.",
+      "grammar": "Ouk aphēsō humas orphanous, ‘I will not leave you orphans’, uses the future of aphiēmi, ‘leave behind’, the verb for leaving dependents at death. Erchomai pros humas, ‘I am coming to you’, is another futuristic present. Eti mikron kai ho kosmos me ouketi theōrei, ‘yet a little while and the world no longer sees me’, introduces the phrase a little while (mikron), which will puzzle the disciples in 16:16-19. The last clause, hoti egō zō kai humeis zēsete, can be joined in two ways. The BSB, with most translations, reads it as a new sentence, ‘because I live, you also will live’. It can also be read with what precedes, ‘you will see me, because I live, and you also will live’. In either case the present zō, ‘I live’, is spoken on the eve of his death, and the future zēsete, ‘you will live’, depends on it.",
+      "words": ["G0863G", "G3737", "G2064", "G3398", "G2334", "G2198"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The coming Jesus promises here is first fulfilled on Easter evening, when he came and stood among them (20:19). His resurrection life is the source of theirs: believers live because he lives, the same logic Paul uses when he says our life is hidden with Christ (Colossians 3:3-4)."
+        }
+      ],
+      "refs": ["John 20:19-20", "John 16:16", "Colossians 3:3-4", "Romans 5:10", "Psalm 68:5"]
+    },
+    {
+      "v": "20",
+      "context": "On that day the disciples will understand the relationships Jesus has been describing. The verse extends the mutual indwelling of the Father and the Son (14:10-11) to include the disciples.",
+      "grammar": "En ekeinē tē hēmera, ‘in that day’, echoes the prophets' formula bayyom hahu, ‘on that day’, for the day of God's decisive action (Isaiah 2:11, Zechariah 14:9). In John it points to the time after the resurrection (16:23, 16:26). Gnōsesthe humeis, ‘you will know’, with the emphatic pronoun, is followed by three short clauses joined by kai: egō en tō patri mou, ‘I in my Father’; humeis en emoi, ‘you in me’; kagō en humin, ‘and I in you’. The chain moves from the Father to the Son to the disciples and back, with the Son at the center.",
+      "words": ["G2250", "G1097"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "The union of believers with Christ is patterned on the union of the Son with the Father, though it is not identical to it: the disciples are in the Son, and he in them, by grace and not by nature. The verse is one of the foundations of the doctrine that believers share Christ's life, which Paul expresses as Christ living in me (Galatians 2:20)."
+        }
+      ],
+      "refs": ["John 17:21-23", "John 16:23", "Galatians 2:20", "1 John 3:24", "Zechariah 14:9"]
+    },
+    {
+      "v": "21",
+      "context": "Jesus restates verse 15 from the other side: the one who has his commands and keeps them is the one who loves him, and that one will be loved by the Father and by Jesus, who will reveal himself to him. The promise of self-disclosure provokes Judas's question.",
+      "grammar": "Ho echōn tas entolas mou kai tērōn autas, ‘the one having my commands and keeping them’, joins two present participles under one article: having the commands (knowing them, receiving them) and keeping them describe one person. Ekeinos estin ho agapōn me, ‘that one is the one who loves me’, uses the demonstrative ekeinos for emphasis. Agapēthēsetai hupo tou patros mou, ‘he will be loved by my Father’, is a future passive; kagō agapēsō auton kai emphanisō autō emauton, ‘and I will love him and reveal myself to him’. Emphanizō is the verb Moses used in the Septuagint when he asked God, emphanison moi seauton, ‘show yourself to me’ (Exodus 33:13).",
+      "words": ["G2192", "G1785", "G5083G", "G0025", "G1718"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The love of the Father and the Son is not earned by obedience, since the Father loved the world before it loved him (3:16). But the verse speaks of a love that is known and enjoyed within a relationship of trust and obedience, and of a self-disclosure given to those who love him."
+        }
+      ],
+      "refs": ["Exodus 33:13", "John 14:15", "John 16:27", "1 John 2:5", "Proverbs 8:17"]
+    },
+    {
+      "v": "22-23",
+      "context": "Judas, not Iscariot, asks why Jesus will reveal himself to them and not to the world. Jesus does not answer the question as asked. He restates the condition, love that keeps his word, and enlarges the promise: the Father and he will come and make their home with such a person.",
+      "grammar": "Kai ti gegonen hoti hēmin melleis emphanizein seauton, ‘and what has happened that you are about to reveal yourself to us?’, uses the perfect gegonen, ‘what has come about’, as if something must have changed the plan. The question echoes Jesus' brothers in 7:4, who urged him to show himself to the world (phanerōson seauton tō kosmō). Jesus' answer in verse 23 has plural verbs: pros auton eleusometha kai monēn par' autō poiēsometha, ‘we will come to him and make our dwelling with him’. Monē, ‘dwelling’, is the singular of the word used for the many rooms of verse 2. The Father's house has rooms for the disciples, and the Father and the Son will make their room with the disciple now.",
+      "words": ["G1718", "G2889", "G0025", "G3056", "G5083G", "G3438"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "The future dwelling with God (verse 2) and the present dwelling of God with the believer (verse 23) use the same word. Union with Christ is not only the believer's place in God's house but God's home in the believer, which the rest of the New Testament describes as the dwelling of Christ in the heart by faith (Ephesians 3:17) and the church as God's temple (2 Corinthians 6:16)."
+        },
+        {
+          "id": "trinity",
+          "note": "‘We will come’ joins the Father and the Son in a single act, and verse 26 names the Spirit as the one sent in the Son's name. The Father and the Son dwell in the believer through the Spirit, so that the presence of one is the presence of all three."
+        }
+      ],
+      "refs": ["John 7:4", "Ezekiel 37:27", "Ephesians 3:17", "Revelation 3:20", "2 Corinthians 6:16"]
+    },
+    {
+      "v": "24-25",
+      "context": "The negative counterpart: whoever does not love Jesus does not keep his words, and the word they hear is the Father's. Verse 25 closes the thought and turns to what will happen after he has gone.",
+      "grammar": "Ho mē agapōn me tous logous mou ou tērei, ‘the one not loving me does not keep my words’, uses the plural logoi, ‘words’, after the singular logos, ‘word’, of verse 23; the next clause returns to the singular, ho logos hon akouete ouk estin emos, ‘the word you hear is not mine’, alla tou pempsantos me patros, ‘but the Father's who sent me’. Verse 25 begins tauta lelalēka humin, ‘these things I have spoken to you’, with the perfect of laleō, a formula that marks the discourse's pauses (15:11, 16:1, 16:25, 16:33). Par' humin menōn, ‘while remaining with you’, uses menō once more: Jesus has been remaining beside them; the Spirit will remain with them (14:17).",
+      "words": ["G3056", "G3992", "G2980", "G3306"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' words are not his own invention but the Father's word. To refuse them is not to disagree with a teacher but to refuse the one who sent him, the principle of the prophet like Moses in whose mouth God would put his words (Deuteronomy 18:18-19)."
+        }
+      ],
+      "refs": ["John 7:16", "John 12:49-50", "Deuteronomy 18:18-19", "John 15:11"]
+    },
+    {
+      "v": "26",
+      "context": "The second Advocate saying. The Father will send the Holy Spirit in Jesus' name, and he will teach the disciples everything and remind them of all Jesus said. The verse explains how the disciples' memory of Jesus, which this Gospel itself records, came about.",
+      "grammar": "Ho de paraklētos, to pneuma to hagion, ‘but the Advocate, the Holy Spirit’, is the only place in the Gospel where the title paraklētos and the full name the Holy Spirit stand together. The relative that follows is neuter, ho, agreeing with pneuma, and then the subject of the verbs is the masculine ekeinos, ‘that one’. Some older writers took the masculine as grammatical proof of the Spirit's personality; Daniel Wallace and others have pointed out that ekeinos here most likely agrees with the masculine paraklētos, so the argument from grammar is weaker than it looks. The Spirit's personality rests instead on what he does: he teaches, reminds, testifies, and speaks. Didaxei panta, ‘he will teach all things’, and hupomnēsei humas panta ha eipon humin egō, ‘he will remind you of all that I said to you’, name two works, new understanding and faithful memory.",
+      "words": ["G3875", "G4151G", "G0040G", "G3992", "G3686", "G1321", "G5279"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is sent in Jesus' name, that is, as his representative and with his authority, and his teaching is bound to what Jesus said. He does not bring a message independent of Jesus but brings Jesus' words back to mind and opens their meaning."
+        },
+        {
+          "id": "canon",
+          "note": "The church has read this promise as part of the ground of the New Testament's authority. The apostles' recollection and interpretation of Jesus was not left to unaided memory but was guided by the Spirit, which is why John can note that the disciples understood only after the resurrection what Jesus had said and done (2:22, 12:16)."
+        }
+      ],
+      "refs": ["John 2:22", "John 12:16", "John 16:13-14", "1 John 2:20", "1 John 2:27"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus leaves them his peace, a gift unlike anything the world gives, and repeats the command of verse 1, adding a second: do not be afraid. The repetition closes the section that began with a troubled heart.",
+      "grammar": "Eirēnēn aphiēmi humin, ‘peace I leave you’, puts the noun first and uses aphiēmi, ‘leave behind’, the verb for what a dying man leaves to his heirs (Mark 12:19-22 uses it of a man who dies leaving no children). The farewell greeting shalom becomes a bequest. Eirēnēn tēn emēn didōmi humin, ‘my peace I give you’, repeats the noun with the possessive. Ou kathōs ho kosmos didōsin egō didōmi humin, ‘not as the world gives do I give to you’, uses kathōs, ‘as’ or ‘in the way that’: the contrast is in the manner and the source of the giving. Mēde deiliatō, ‘nor let it be afraid’, uses deiliaō, found only here in the New Testament; its relatives name cowardice (Matthew 8:26, Revelation 21:8).",
+      "words": ["G1515", "G0863G", "G1325", "G2889", "G5015", "G1168"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The peace Jesus gives is his own, the wholeness of right relation with God that the priestly blessing asked for (Numbers 6:26) and the prophets promised in the messianic age (Isaiah 9:6-7). It is given in the middle of trouble, not in place of it (16:33), and the risen Jesus will give it again with his first word to the disciples (20:19)."
+        }
+      ],
+      "refs": ["Numbers 6:26", "Isaiah 9:6", "John 16:33", "John 20:19", "Philippians 4:7"]
+    },
+    {
+      "v": "28",
+      "context": "Jesus reminds them of what he said: he is going away and coming back. If they loved him they would rejoice that he is going to the Father, because the Father is greater than he is. The last clause became one of the most debated sentences of the fourth century.",
+      "grammar": "Ei ēgapate me, echarēte an, ‘if you were loving me, you would have rejoiced’, is a contrary-to-fact condition, with the imperfect in the if clause and the aorist with an in the result. The form implies a gentle rebuke: their love is still bound up with their own loss. Hoti ho patēr meizōn mou estin, ‘because the Father is greater than I’, uses meizōn, the comparative of megas, ‘great’, with the genitive of comparison mou. The logic of the sentence matters for its meaning. The disciples should rejoice because Jesus is going to one greater, that is, from his present lowliness, about to be betrayed and killed, to the Father's presence and the glory he had before the world existed (17:5).",
+      "words": ["G5217", "G2064", "G0025", "G5463", "G4198", "G3173"],
+      "history": "Arius of Alexandria and his supporters cited this verse to show that the Son is not God in the same sense as the Father. Athanasius, in his Orations against the Arians (1.58), answered by contrasting John's word with Hebrews 1:4, where the Son is said to have become better (kreittōn) than the angels: Jesus did not say the Father is better than I, a word that would imply a difference of nature, but greater, which Athanasius explained by the Son's generation from the Father. Two lines of Nicene reading followed. Athanasius and the Cappadocians, with Gregory of Nazianzus (Oration 30.7), took greater to refer to the Father as the source or cause of the Son, an order within the one divine nature; Augustine (On the Trinity 1.7.14) took it to refer to the form of a servant the Son assumed, in which he is less than the Father while equal in the form of God. Both readings were meant to hold together this verse and 10:30.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Nicene faith confesses the Son as of one being with the Father and yet not the Father, begotten of him. Read within that confession, the Father's greatness is either the priority of the source (the Father begets, the Son is begotten) or the Son's humility in the incarnation, and neither makes the Son a lesser god. How best to state the order within the Trinity is still discussed among theologians who share this confession."
+        },
+        {
+          "id": "exaltation",
+          "note": "Jesus is going to the Father, and the disciples are told to rejoice at it. The verse looks past the cross to the Son's return to the glory he had before creation, the movement Paul describes in Philippians 2:6-11."
+        }
+      ],
+      "refs": ["Philippians 2:6-9", "John 10:29-30", "John 5:18", "Hebrews 1:4", "John 17:5"]
+    },
+    {
+      "v": "29-30",
+      "context": "Jesus explains why he has told them in advance: so that when it happens they will believe. He will not say much more, because the ruler of this world is coming, and that ruler has no hold on him. The betrayer and the arresting party are about to arrive.",
+      "grammar": "Eirēka humin prin genesthai, hina hotan genētai pisteusēte, ‘I have told you before it happens, so that when it happens you may believe’, repeats the logic of 13:19: prediction becomes grounds for faith. Ouketi polla lalēsō meth' humōn, ‘I will no longer speak much with you’, is followed by three more chapters of teaching, which is one of the reasons scholars discuss the discourse's composition (see the chapter note). Erchetai gar ho tou kosmou archōn, ‘for the ruler of the world is coming’, uses a present for an imminent arrival, as the devil comes in the person of Judas and the soldiers (13:27, 18:3). Kai en emoi ouk echei ouden, literally ‘and in me he has nothing’, is an idiom for having no claim or hold on someone, with a legal sound: the accuser has no case.",
+      "words": ["G1096", "G4100", "G2980", "G0758", "G2889", "G2192"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The ruler of this world comes to take Jesus but has no claim on him. His power at the cross is real but not rightful, and in taking the one over whom he has no rights he is himself judged (12:31, 16:11)."
+        },
+        {
+          "id": "incarnation",
+          "note": "The devil finds nothing in Jesus, no sin and no guilt, to which his accusation can hold. The New Testament's confession of the sinless Son (Hebrews 4:15, 1 Peter 2:22) has its Johannine form here and in Jesus' challenge in 8:46."
+        }
+      ],
+      "refs": ["John 13:19", "John 12:31", "John 16:11", "John 8:46", "Hebrews 4:15"]
+    },
+    {
+      "v": "31",
+      "context": "Jesus goes to the cross not because the ruler of this world has any right over him but so that the world may know that he loves the Father and does what the Father commanded. Then he rises: get up, let us go from here.",
+      "grammar": "All' hina gnō ho kosmos, ‘but so that the world may know’, is elliptical, like 13:18 and 15:25; something such as ‘he comes’ or ‘this happens’ must be supplied, which the BSB smooths by reordering the sentence. Hoti agapō ton patera, ‘that I love the Father’, is the only place in the Gospels where Jesus says in so many words that he loves the Father. Kai kathōs eneteilato moi ho patēr, houtōs poiō, ‘and as the Father commanded me, so I do’, pairs kathōs and houtōs, ‘just as ... so’. Egeiresthe, agōmen enteuthen, ‘rise, let us go from here’, uses a present imperative and a hortatory subjunctive. Mark 14:42 and Matthew 26:46 have the same two words, egeiresthe agōmen, at the moment Judas arrives in Gethsemane.",
+      "words": ["G1097", "G2889", "G0025", "G1781", "G1453", "G0071"],
+      "parallels": ["Mark 14:42", "Matthew 26:46"],
+      "text": "In Mark and Matthew the words rise, let us go are spoken in the garden as the betrayer approaches; in John they are spoken at the table, and 18:1 is the next notice of movement. C. H. Dodd (The Interpretation of the Fourth Gospel, 1953) read them as no change of place at all but as Jesus' resolve to go and meet the ruler of this world. Others think the discourse continued on the way (Carson) or that chapters 15 to 17 were added at a later stage (Brown). The shared wording with the Synoptic garden scene suggests a remembered saying that each tradition placed at the threshold of the arrest.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "John presents Jesus' death as an act of love and obedience toward the Father, not a defeat forced on him. The world is meant to learn from the cross that the Son loves the Father, as it learns from the same cross that God loved the world (3:16)."
+        }
+      ],
+      "refs": ["John 10:18", "John 18:1", "Philippians 2:8", "Hebrews 10:7", "John 3:16"]
+    }
+  ]
+}

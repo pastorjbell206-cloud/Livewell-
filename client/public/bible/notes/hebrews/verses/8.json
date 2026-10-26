@@ -1,0 +1,207 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The author steps back to state the point of everything said so far: we have a high priest who sat down at God's right hand in heaven and serves in the true sanctuary, the tent the Lord pitched. Chapters 8-10 will unfold the two halves of that sentence, the heavenly sanctuary and the covenant it serves.",
+      "grammar": "Kephalaion de epi tois legomenois can mean ‘the main point of what is being said’ or ‘to sum up what has been said’; kephalaion was used both for the chief point of an argument and for a summary. Ekathisen en dexia, ‘he sat down at the right hand’, repeats the language of Psalm 110:1 already used in 1:3; Hebrews treats the sitting as a completed act (aorist), anticipating 10:11-12, where seated and standing priests are contrasted. Tēs megalōsunēs, ‘of the Majesty’, is a reverent way of naming God without saying ‘God’, as in 1:3. Tōn hagiōn leitourgos, ‘minister of the holy things’ or ‘of the sanctuary’: ta hagia in Hebrews usually means the sanctuary (9:8, 9:12, 10:19). Tēs skēnēs tēs alēthinēs, ‘the true tent’, uses alēthinos in the sense of real or original as opposed to copy, not true as opposed to false. Epēxen ho kurios, ‘the Lord pitched’, echoes the Septuagint of Numbers 24:6, where Balaam compares Israel's tents to tents the Lord has pitched.",
+      "words": ["G2774", "G0749", "G2523", "G1188", "G3172", "G0039G", "G3011", "G4633", "G0228", "G4078"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Christ's session at God's right hand is the ‘main point’. His priesthood is exercised from the throne, which means his sacrifice is complete and his authority is universal."
+        },
+        {
+          "id": "temple",
+          "note": "The sanctuary where Christ ministers is ‘true’ because God made it. Every earthly tabernacle and temple was a copy of the place where God is actually present, and Christ serves there."
+        }
+      ],
+      "refs": ["Psalm 110:1", "Hebrews 1:3", "Hebrews 9:11", "Hebrews 9:24", "Revelation 11:19"]
+    },
+    {
+      "v": "3",
+      "context": "Picking up the principle of 5:1, the author reasons that every high priest is appointed to offer gifts and sacrifices, so Christ too must have something to offer. He does not yet say what it is; 9:14 and 10:10 will name it: himself.",
+      "grammar": "Eis to prospherein, ‘for offering’, is an articular infinitive expressing purpose: offering is what high priests are for. Anagkaion (‘necessary’) makes the inference logical, not merely fitting. The last clause switches tense: ho prosenegkē is an aorist subjunctive, ‘something which he might offer’. Where verse 3a speaks of high priests offering in the present tense, as an ongoing duty, the aorist for Christ fits the letter's insistence that his offering happened once (7:27).",
+      "words": ["G0749", "G4374", "G1435", "G2378", "G2525", "G0316"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Christ's priesthood is not an honorary title. A priest must offer, and Christ's offering is the center of his priestly work, which the next two chapters identify as the gift of himself."
+        }
+      ],
+      "refs": ["Hebrews 5:1", "Hebrews 9:14", "Hebrews 10:10", "Ephesians 5:2"]
+    },
+    {
+      "v": "4-5",
+      "context": "If Christ were on earth he would not be a priest at all, since the law already has priests from Levi who offer gifts. Their service is a copy and shadow of the heavenly sanctuary, as God warned Moses when he told him to build everything according to the pattern shown him on the mountain.",
+      "grammar": "Ei men oun ēn epi gēs, oud' an ēn hiereus is a contrary-to-fact condition with the imperfect: ‘if he were on earth, he would not even be a priest’. The genitive absolute ontōn tōn prospherontōn, ‘since there are those who offer’, is present tense, which some take as evidence that the temple was still operating when Hebrews was written; others note that the author describes the system of the tabernacle as Scripture presents it. Hupodeigmati kai skia, ‘a copy and shadow’, is a pair: hupodeigma usually means an example or model, and here a derivative likeness, while skia is a shadow that presupposes a real object. Kechrēmatistai (‘he was warned’) is a perfect passive of chrēmatizō, used of divine instruction (11:7, Matthew 2:12). Hora gar phēsin, ‘for see, he says’, introduces the quotation with an imperative.",
+      "words": ["G1093G", "G2409", "G4374", "G1435", "G3551", "G5262", "G4639", "G3000", "G2032", "G5537", "G3475", "G2005", "G4633", "G3708", "G5179", "G1166", "G3735"],
+      "ot": [
+        {
+          "ref": "Exodus 25:40",
+          "note": "The Hebrew reads ur'eh vaaseh betavnitam asher attah mor'eh bahar, ‘see and make them according to their pattern that you are being shown on the mountain’. Tavnit (‘pattern’) is a model or plan; the same word names the model of the Damascus altar that King Ahaz sent to Jerusalem (2 Kings 16:10). The Septuagint renders it hora poiēseis kata ton tupon ton dedeigmenon soi en tō orei. Hebrews adds panta (‘everything’), which matches Exodus 25:9 (‘according to all that I show you’), and changes the participle to deichthenta. In Exodus the pattern governs the building of the tabernacle; Hebrews reads it as evidence that the earthly sanctuary was always derivative, pointing to the heavenly one."
+        }
+      ],
+      "history": "The idea that Israel's sanctuary copied a heavenly original appears in other Jewish writings of the period. The Wisdom of Solomon has Solomon call the temple a copy of the holy tent God prepared from the beginning (Wisdom 9:8). Scholars debate how far Hebrews shares the Platonic vocabulary of Philo of Alexandria, for whom the visible world copies eternal forms. Ceslas Spicq, in his two-volume commentary (1952-1953), argued for strong Philonic influence; Ronald Williamson, in Philo and the Epistle to the Hebrews (1970), argued that the resemblances are verbal and that Hebrews thinks in the historical and eschatological categories of Jewish apocalyptic, where the heavenly sanctuary is a real place and the shadow gives way in time to the reality.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The earthly sanctuary was real and commanded by God, yet it was a copy. Its whole meaning lay in what it pointed to, which is why its passing does not mean God's presence has been lost, only that the reality has arrived."
+        },
+        {
+          "id": "revelation",
+          "note": "God revealed the pattern to Moses and required faithful obedience to it. The tabernacle was itself a form of revelation, a visible teaching about access to God that Hebrews now reads in the light of Christ."
+        }
+      ],
+      "refs": ["Exodus 25:9", "Exodus 25:40", "Hebrews 9:23-24", "Hebrews 10:1", "Colossians 2:17"]
+    },
+    {
+      "v": "6",
+      "context": "The contrast turns with ‘but now’. Jesus has obtained a ministry as much more excellent as the covenant he mediates is better, a covenant legally established on better promises. Verse 6 names the three themes of chapters 8-10: ministry, covenant, and promise.",
+      "grammar": "Nuni de, ‘but now’, is logical and temporal at once: in the present order of things. Diaphorōteras tetuchen leitourgias, ‘he has obtained a more excellent ministry’, uses the comparative of diaphoros, the adjective used in 1:4 for the Son's more excellent name. Hosō kai… mesitēs, ‘by as much as he is also mediator’, is a correlative: the excellence of the ministry is measured by the excellence of the covenant. Mesitēs (‘mediator’) is the go-between who establishes and guarantees an agreement; Paul uses it of Moses at Sinai (Galatians 3:19). Nenomothetētai (‘has been enacted’) is the same perfect passive used in 7:11 for the law given on the basis of the Levitical priesthood; the author chooses legal vocabulary to say that the new covenant has its own legal foundation, the promises of Jeremiah 31.",
+      "words": ["G3570", "G1313", "G5177", "G3009", "G2908", "G1242", "G3316", "G1860", "G3549"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Christ is the mediator of the new covenant, the one through whom it is established. The better promises are those that follow in verses 10-12: an inward law, true knowledge of God, and sins forgiven and forgotten."
+        },
+        {
+          "id": "offices",
+          "note": "Priest and mediator coincide in Christ. The one who offers the sacrifice is the one who establishes the covenant it seals, which the old order divided between Aaron and Moses."
+        }
+      ],
+      "refs": ["Hebrews 7:22", "Hebrews 9:15", "Hebrews 12:24", "1 Timothy 2:5", "Galatians 3:19"]
+    },
+    {
+      "v": "7",
+      "context": "The logic is simple: if the first covenant had been faultless, there would have been no occasion to look for a second. The very fact that God promised a new covenant shows the old one was not final.",
+      "grammar": "Ei… ēn amemptos, ouk an… ezēteito topos is another contrary-to-fact condition, parallel to 7:11. Amemptos means blameless or faultless, the word Paul uses of his own former standing under the law (Philippians 3:6). Hē prōtē ekeinē, ‘that first one’, supplies ‘covenant’ from verse 6. The phrase deuteras ezēteito topos, ‘a place would be sought for a second’, uses the imperfect passive: God would not have been looking for room for another arrangement.",
+      "words": ["G4413G", "G0273", "G1208", "G2212", "G5117"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The weakness of the first covenant lay in its effect, not its origin. Verse 8 will locate the fault in the people who broke it; the covenant itself had no power to change the hearts of those bound by it."
+        }
+      ],
+      "refs": ["Hebrews 7:11", "Hebrews 7:18-19", "Romans 8:3", "Galatians 3:21"]
+    },
+    {
+      "v": "8",
+      "context": "God found fault and spoke through Jeremiah, and the author now gives the longest Old Testament quotation in the New Testament (verses 8-12). It opens with the promise of days to come in which God will make a new covenant with the house of Israel and the house of Judah.",
+      "grammar": "Memphomenos gar autous legei, ‘for finding fault with them he says’, is where the text and the grammar meet. Most editions read autous, accusative, the object of the participle: God finds fault ‘with them’, the people, which is how the BSB takes it. Many manuscripts read autois, dative, which can go either with the participle (‘finding fault with them’) or with legei (‘finding fault, he says to them’), in which case the fault would be with the first covenant. Suntelesō… diathēkēn kainēn, ‘I will accomplish a new covenant’, uses suntelesō, ‘I will bring to completion’, where the Septuagint has diathēsomai, ‘I will make’; the change may stress the covenant's fulfillment. Kainēn means new in character, though Hebrews also calls it neos in 12:24.",
+      "words": ["G3201", "G3004G", "G2250", "G2064", "G2962G", "G4931", "G3624H", "G2474", "G2455N", "G1242", "G2537"],
+      "text": "The Nestle-Aland and SBL editions and Westcott and Hort read autous (accusative); other editions, including the Textus Receptus, read autois (dative). The accusative makes the people the object of blame; the dative allows the blame to fall on the covenant, with ‘to them’ as the audience. Both fit the argument, since verse 9 says the people did not continue in the covenant.",
+      "ot": [
+        {
+          "ref": "Jeremiah 31:31",
+          "note": "The Hebrew hinneh yamim ba'im ne'um YHWH vekharatti et beit yisrael ve'et beit yehudah berit chadashah is the Bible's only explicit promise of a ‘new covenant’. In the Septuagint Jeremiah is arranged differently, with the oracles against the nations earlier in the book, so this passage stands in chapter 38 (38:31-34); the Greek Jeremiah is also about one-seventh shorter than the Hebrew, and fragments from Qumran (4QJer b and d) show that a shorter Hebrew text lay behind it. Hebrews follows the Septuagint closely, with small changes: legei kurios for phēsin kurios, and suntelesō epi ton oikon for diathēsomai tō oikō. In Jeremiah the promise comes in the Book of Consolation (chapters 30-33), spoken as Jerusalem fell to Babylon, and it looks to the reunion of north and south under one covenant."
+        }
+      ],
+      "history": "The Qumran community also claimed Jeremiah's promise: the Damascus Document speaks of those who entered ‘the new covenant in the land of Damascus’ (CD 6:19; 8:21; 20:12). Jesus at the Last Supper spoke of the cup as ‘the new covenant in My blood’ (Luke 22:20; 1 Corinthians 11:25), and Paul calls himself a minister of a new covenant (2 Corinthians 3:6).",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The new covenant is promised first to ‘the house of Israel and the house of Judah’. Hebrews claims its fulfillment in Christ without erasing its address; the promise's recipients are Israel, and those who belong to Christ enter it through Israel's Messiah."
+        }
+      ],
+      "refs": ["Jeremiah 31:31", "Luke 22:20", "1 Corinthians 11:25", "2 Corinthians 3:6", "Ezekiel 37:15-28"]
+    },
+    {
+      "v": "9",
+      "context": "The new covenant will not be like the one God made with the fathers when he led them out of Egypt, because they did not remain in it. The exodus covenant, sealed at Sinai, is the old covenant, and its failure lay with a people who did not continue in it.",
+      "grammar": "En hēmera epilabomenou mou tēs cheiros autōn, literally ‘in the day of my taking hold of their hand’, is a genitive absolute that keeps the Hebrew construction, a tender image of God leading Israel like a father with a child (Hosea 11:1-3). Hoti autoi ouk enemeinan, ‘because they did not continue’, uses the aorist of emmenō, ‘to abide in, stand by’, the verb of Deuteronomy 27:26 in the Septuagint (‘cursed is everyone who does not continue in all the words of this law’). Kagō ēmelēsa autōn, ‘and I disregarded them’, follows the Septuagint exactly.",
+      "words": ["G1242", "G4160G", "G3962", "G2250", "G1949", "G5495", "G1806", "G1093H", "G0125", "G1696", "G0272"],
+      "ot": [
+        {
+          "ref": "Jeremiah 31:32",
+          "note": "The Hebrew says asher hemmah heferu et beriti ve'anokhi baalti vam, ‘my covenant which they broke, though I was a husband to them’. The Septuagint reads ‘because they did not continue in my covenant, and I disregarded them (ēmelēsa autōn)’. The Greek translator may have read a different verb (ga'alti, ‘I loathed’, instead of ba'alti) or understood baal in the sense of ‘being master over’ and so rejecting. Hebrews follows the Greek. The two forms stress different sides of the same history: the Hebrew, God's faithful love despite Israel's unfaithfulness; the Greek, God's judgment on it. Hebrews also has epoiēsa (‘I made’) where the Septuagint has dietheman."
+        }
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The old covenant failed because the people broke it, not because God was unfaithful. The new covenant answers exactly this problem: it promises a people who will keep it because God writes his law on their hearts."
+        }
+      ],
+      "refs": ["Exodus 19:4-6", "Exodus 24:7-8", "Hosea 11:1-3", "Deuteronomy 27:26", "Jeremiah 11:10"]
+    },
+    {
+      "v": "10",
+      "context": "The first promise of the new covenant: God will put his laws in their minds and write them on their hearts, and the covenant formula will finally come true, ‘I will be their God, and they will be My people’.",
+      "grammar": "Hoti hautē hē diathēkē, ‘for this is the covenant’, introduces the content. Didous nomous mou, ‘giving my laws’, is a present participle standing where a finite verb would be expected, a construction the Septuagint uses to render the Hebrew. It is followed by the future epigrapsō (‘I will write on’). Nomous is plural; the Hebrew has the singular torati, ‘my law’ or ‘my instruction’. Eis tēn dianoian autōn kai epi kardias autōn, ‘into their mind and on their hearts’, pairs the thinking faculty with the heart as the center of will and desire. Esomai autois eis theon… esontai moi eis laon renders the Hebrew preposition le with the Greek eis, ‘I will be to them for a God’.",
+      "words": ["G1242", "G1303", "G3624H", "G2250", "G1325", "G3551", "G1271", "G2588", "G1924", "G2316", "G2992"],
+      "ot": [
+        {
+          "ref": "Jeremiah 31:33",
+          "note": "The Hebrew natatti et torati beqirbam ve'al libbam ekhtavennah, ‘I will put my law within them and on their heart I will write it’, contrasts with the tablets of stone written by God's finger at Sinai (Exodus 31:18). The Septuagint has didous dōsō nomous mou eis tēn dianoian autōn kai epi kardias autōn grapsō autous. Hebrews drops the doubled verb dōsō and changes grapsō to epigrapsō. The covenant formula, ‘I will be their God and they will be my people’, runs from Exodus 6:7 and Leviticus 26:12 through the prophets (Ezekiel 36:28) to Revelation 21:3."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The new covenant does not abolish God's law but relocates it, from stone tablets to human hearts. The obedience the old covenant commanded, the new one creates, which is how Ezekiel 36:26-27 describes the gift of the Spirit."
+        },
+        {
+          "id": "regeneration",
+          "note": "Writing the law on the heart is an inward renewal of desire and understanding. The promise describes what the New Testament calls new birth: God himself changes the heart from within."
+        }
+      ],
+      "refs": ["Ezekiel 36:26-27", "2 Corinthians 3:3", "Exodus 31:18", "Leviticus 26:12", "Revelation 21:3"]
+    },
+    {
+      "v": "11",
+      "context": "The second promise: knowledge of God will no longer depend on one person teaching another, for all will know the LORD, from least to greatest. Knowledge here means personal, covenantal acquaintance with God, not information about him.",
+      "grammar": "Ou mē didaxōsin, an aorist subjunctive with the double negative ou mē, is the strongest way to deny something in Greek: ‘they will certainly not teach’. Hekastos ton politēn autou kai hekastos ton adelphon autou, ‘each his fellow citizen and each his brother’, follows the Septuagint's politēn for the Hebrew rea (‘neighbor’). Gnōthi ton kurion (‘know the Lord’) is an aorist imperative. Pantes eidēsousin me, ‘all will know me’, uses the future of oida, and the phrase apo mikrou heōs megalou, ‘from small to great’, is a Hebrew way of saying ‘everyone’. The promise does not abolish teaching in the church, which Hebrews itself practices (5:12); it describes a people in which knowing God is no longer confined to a few mediators.",
+      "words": ["G1321", "G1538", "G4177", "G0080", "G1097", "G2962G", "G1492I", "G3398", "G3173"],
+      "text": "Most editions read politēn, ‘fellow citizen’, with the Septuagint; the Textus Receptus reads plēsion, ‘neighbor’, closer to the Hebrew, which the King James Version renders ‘his neighbour’.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Universal knowledge of God is what the prophets associated with the outpouring of the Spirit on all flesh, young and old, servant and free (Joel 2:28-29). In the new covenant access to God is not restricted to priests or prophets."
+        }
+      ],
+      "refs": ["Joel 2:28-29", "Isaiah 54:13", "John 6:45", "1 John 2:27", "Hosea 2:20"]
+    },
+    {
+      "v": "12",
+      "context": "The third promise is the foundation of the others: God will be merciful toward their wrongdoing and will remember their sins no more. Hebrews will return to this sentence in 10:17-18 to conclude that no further offering for sin is needed.",
+      "grammar": "Hileōs esomai, ‘I will be merciful’, uses hileōs, from the word family of hilaskomai (‘to make atonement’, 2:17) and hilastērion (‘mercy seat’, 9:5); the new covenant's mercy is atonement language. Tais adikiais autōn, ‘toward their unrighteousnesses’, is dative. Ou mē mnēsthō eti, ‘I will certainly not remember any longer’, again uses the emphatic double negative. In Scripture God's ‘remembering’ is action, not recall (Genesis 8:1, where God remembered Noah and sent the wind); not remembering sins means not acting on them in judgment.",
+      "words": ["G2436", "G0093", "G0266", "G3403"],
+      "text": "The Textus Receptus adds ‘and their lawless deeds’ (kai tōn anomiōn autōn), which the King James Version renders ‘their sins and their iniquities will I remember no more’. The addition is not in the earliest manuscripts and was probably borrowed from the wording of 10:17.",
+      "ot": [
+        {
+          "ref": "Jeremiah 31:34",
+          "note": "The Hebrew ki eslach laavonam ulechattatam lo ezkor od uses salach, the verb for divine forgiveness, which in the Old Testament is used only with God as subject. The Septuagint renders it hileōs esomai, ‘I will be merciful’, and Hebrews follows the Greek. In Jeremiah this promise is the ground (ki, ‘for’) of the others, and Hebrews keeps that order: forgiveness is the foundation on which the inward law and universal knowledge of God rest."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The new covenant's deepest promise is complete forgiveness, sins no longer held against the sinner. Hebrews will argue that only a final sacrifice could make such a promise true (10:14-18)."
+        },
+        {
+          "id": "justification",
+          "note": "God's not remembering sins is a judicial act: he does not bring them into account. The promise anticipates the settled standing before God that Paul calls justification (Romans 4:7-8)."
+        }
+      ],
+      "refs": ["Hebrews 10:17-18", "Isaiah 43:25", "Micah 7:18-19", "Romans 4:7-8", "Psalm 103:12"]
+    },
+    {
+      "v": "13",
+      "context": "The author draws his conclusion from one word in the prophecy: by calling the covenant ‘new’, God has made the first one old, and what is growing old and aging is near to disappearing.",
+      "grammar": "En tō legein kainēn, ‘in saying new’, is an articular infinitive: the very act of speaking the word ‘new’. Pepalaiōken (‘he has made old’) is a perfect active: the declaration has lasting effect. To palaioumenon kai gēraskon, ‘what is being made old and growing aged’, uses present participles for a process under way. Engus aphanismou, ‘near to disappearance’, uses aphanismos, a word for vanishing or destruction. The phrase has been read as evidence that the temple still stood when Hebrews was written, since the author does not mention its fall; others reply that he is interpreting the time of Jeremiah's prophecy, when the old covenant was declared aging, and that the argument would stand either way.",
+      "words": ["G3004G", "G2537", "G3822", "G4413G", "G1095", "G0854"],
+      "history": "If the letter was written before AD 70, as many scholars think, the author's ‘soon disappear’ was fulfilled within a few years, when Roman troops under Titus destroyed the temple and its sacrificial system ended. Those who date Hebrews later point out that 1 Clement (about AD 96) also describes temple offerings in the present tense (1 Clement 41:2), so present-tense language alone cannot settle the date.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God himself declared the first covenant old, through Israel's own prophet. The Christian claim is not that the church discarded Israel's covenant but that God announced its successor within Israel's Scriptures, centuries before Christ."
+        },
+        {
+          "id": "israel",
+          "note": "The verse concerns the covenant's institutions of priesthood and sacrifice, and that Paul, writing of the same covenants, insists that God's gifts and calling to Israel are irrevocable (Romans 11:29)."
+        }
+      ],
+      "refs": ["2 Corinthians 3:14", "Hebrews 10:9", "Romans 11:29", "Hebrews 12:27", "Mark 13:2"]
+    }
+  ]
+}

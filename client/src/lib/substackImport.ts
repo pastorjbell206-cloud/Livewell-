@@ -26,7 +26,6 @@ const BY_SLUG: Record<string, { sub: string; mode: ImportMode; series?: boolean 
   "jesus-is-lord": { sub: "Church & Empire", mode: "full" },
   "blind-spots": { sub: "Systemic Sin", mode: "full" },
   "the-monster-is-never-the-one-in-the": { sub: "Systemic Sin", mode: "full" },
-  "you-are-not-the-exception": { sub: "Systemic Sin", mode: "full" },
 };
 
 /** Extract the Substack post slug from its URL. */

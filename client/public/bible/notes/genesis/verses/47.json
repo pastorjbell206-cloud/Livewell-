@@ -1,0 +1,504 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Joseph carries out the plan he announced in 46:31-32, almost word for word. He tells Pharaoh the family has arrived and adds one fact that frames the whole request: they are already in Goshen.",
+      "grammar": "The report ends with vehinnam be'erets goshen, ‘and look, they are in the land of Goshen’. Hinneh with a suffix presents a situation as already in place. Joseph does not ask Pharaoh where his family should go; he states where they are and lets Pharaoh ratify it, which he does in verse 6.",
+      "words": [
+        "H2005",
+        "H1657G",
+        "H5046"
+      ],
+      "refs": [
+        "Genesis 46:31-32",
+        "Genesis 45:10"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Joseph chooses five brothers to present. The narrator does not name them or explain the number.",
+      "grammar": "Umiqtseh echav is literally ‘and from the end of his brothers’. Qatseh normally means an edge or extremity, and interpreters take the phrase in two ways: ‘from the whole number of his brothers’ (from end to end, that is, from among them all), which is how most translations read it, or ‘from the least of his brothers’, so that Joseph showed Pharaoh the less impressive ones to keep them from being drafted into royal service. The first is the more natural sense of the idiom; the second is the reading Rashi gives, following earlier rabbinic tradition. The verb vayyatsigem (\"presented them\") is a Hiphil, ‘caused them to stand’, the formal word for presenting someone at court.",
+      "words": [
+        "H7097A",
+        "H3322",
+        "H2568"
+      ],
+      "refs": [
+        "Genesis 46:34",
+        "Genesis 43:34"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Pharaoh asks exactly the question Joseph predicted (46:33), and the brothers answer with the plain word Joseph had avoided: they are shepherds. They add that their fathers were shepherds too, claiming a family trade rather than a temporary misfortune.",
+      "grammar": "The answer is ro'eh tson avadekha, literally ‘a shepherd of flock are your servants’: the participle is singular with a plural subject, treating the family's calling as one trade. \"Your servants\" (avadekha) is the ordinary polite self-description before a superior, not a statement of legal status, though the word will take on a harder meaning later in the chapter (vv. 19, 25).",
+      "words": [
+        "H7462B",
+        "H6629G",
+        "H5650"
+      ],
+      "refs": [
+        "Genesis 46:33-34",
+        "Genesis 4:2",
+        "Exodus 3:1"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The brothers go beyond their script and make the request themselves. They describe their stay as temporary and give a reason Pharaoh can verify: no pasture in Canaan because of the famine.",
+      "grammar": "Lagur ba'arets banu, \"We have come to live in the land for a time\", uses gur, the verb for living as a ger, a resident foreigner without ancestral land or full rights. It is the patriarchs' word for their own life in Canaan (17:8, 28:4) and the word God used for Israel's future in Egypt (15:13, where the noun ger is translated \"strangers\"). The request ends with the polite particle na (\"please\") on a jussive, yeshvu-na, ‘let them dwell, please’.",
+      "words": [
+        "H1481A",
+        "H4829",
+        "H4994"
+      ],
+      "theology": [
+        {
+          "id": "exile",
+          "note": "The brothers name themselves as sojourners, not settlers. Israel's law later bases its care for foreigners on this memory, since Israel had been a ger in Egypt (Exodus 22:21, Deuteronomy 10:19)."
+        }
+      ],
+      "refs": [
+        "Genesis 15:13",
+        "Genesis 17:8",
+        "Deuteronomy 10:19",
+        "Deuteronomy 26:5"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "Pharaoh answers Joseph, not the brothers, and grants more than was asked: the best of the land, Goshen, and posts over the royal herds for any capable brothers. The shepherds Egyptians despise are given charge of Pharaoh's own livestock.",
+      "grammar": "Eretz mitsrayim lefanekha hi, \"the land of Egypt is before you\", is the same generous formula Abimelech used to Abraham (20:15) and Hamor's people to Jacob's sons (34:10): you may settle where you choose. Anshei chayil (\"talented men\") are men of capacity or strength; the same phrase describes the \"capable men\" Jethro advises Moses to appoint (Exodus 18:21). Sarei miqneh, \"in charge of my own livestock\", is literally ‘officers of livestock’, using sar, the word for an official or prince.",
+      "words": [
+        "H6440G",
+        "H4315",
+        "H2428G",
+        "H8269"
+      ],
+      "history": "Egyptian kings and temples kept very large herds of cattle, and ‘overseer of cattle’ is a well attested title among Egyptian officials. Pharaoh's offer places Jacob's family, at least potentially, inside the royal administration that Joseph already leads.",
+      "refs": [
+        "Genesis 20:15",
+        "Genesis 34:10",
+        "Exodus 18:21",
+        "Genesis 45:18"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "Joseph brings his father in, and the first thing Jacob does before the most powerful man of his world is bless him. The narrator records no bow from Jacob.",
+      "grammar": "Vaya'amidehu (\"presented him\") is a Hiphil of amad, ‘he caused him to stand’ before Pharaoh, like the verb for the brothers in verse 2. Vayvarekh (\"blessed\") is the Piel of barakh, the regular form for pronouncing a blessing. Some translators and commentators take it here as a formal greeting, as the verb sometimes means (1 Samuel 13:10, 2 Kings 4:29); others hold that in Genesis, with its thread of blessing from 12:3 onward, the word carries its full weight. The context permits both, and they need not exclude each other.",
+      "words": [
+        "H5975G",
+        "H1288"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Abraham's family was to be the channel of blessing to \"all the families of the earth\" (12:3). Here that promise touches the head of the world's greatest state, and the one blessing is a landless old herdsman who has come to him for food."
+        }
+      ],
+      "refs": [
+        "Genesis 12:2-3",
+        "Hebrews 7:7",
+        "1 Samuel 13:10",
+        "2 Kings 4:29"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "Pharaoh's question about Jacob's age, natural toward a very old man, draws out Jacob's own verdict on his life. He calls it a sojourn, few in years compared with his fathers', and hard.",
+      "grammar": "Pharaoh asks, literally, ‘How many are the days of the years of your life?’ Jacob answers by changing one word: ‘the days of the years of my sojournings’ (megurai, from the same root gur as verse 4). He calls his years me'at vera'im, \"few and hard\". Ra'im is the ordinary word for bad or evil, and here it means painful, full of trouble, not morally wicked. The verb hissigu, ‘they have not reached’, is a Hiphil of nasag, to overtake or attain: his life has not caught up with his fathers'.",
+      "words": [
+        "H4033",
+        "H4592",
+        "H7451H",
+        "H5381"
+      ],
+      "history": "Abraham died at 175 (25:7) and Isaac at 180 (35:28). Jacob is 130 here and will die at 147 (v. 28). His troubles are the substance of Genesis 27 to 45: flight from Esau, twenty years under Laban, the loss of Rachel, the shame of Dinah, and the long grief over Joseph.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jacob's honesty about his hardships is part of what Hebrews finds admirable in the patriarchs: they \"acknowledged that they were strangers and exiles on the earth\" (Hebrews 11:13). Faith does not require calling a hard life easy."
+        }
+      ],
+      "refs": [
+        "Genesis 25:7",
+        "Genesis 35:28",
+        "Hebrews 11:13",
+        "Psalm 39:12",
+        "1 Chronicles 29:15"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The audience ends as it began, with Jacob blessing Pharaoh, and he leaves. The repetition frames the conversation about his hard life with two blessings on the king.",
+      "grammar": "The verse repeats vayvarekh ya'aqov et-par'oh from verse 7 word for word, then adds vayyetse millifnei par'oh, \"departed from his presence\". Those who read verse 7 as a greeting often read this as a farewell blessing, since leave-taking in the ancient Near East was also marked with a blessing (compare 31:55, where Laban blesses his daughters before leaving).",
+      "words": [
+        "H1288",
+        "H3318G"
+      ],
+      "refs": [
+        "Genesis 31:55",
+        "Genesis 47:7"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Joseph carries out Pharaoh's order and gives his family a holding in the best of the land, called here the land of Rameses. For the first time, the family of Abraham holds land by grant.",
+      "grammar": "Vayyitten lahem achuzzah, \"gave them property\", uses achuzzah, a legal term for a permanent landholding. In Canaan the only achuzzah Abraham ever held was a grave, the cave of Machpelah, called \"a burial site\" (achuzzat qever, 23:4, 23:20). In Egypt, strangers receive at once what they never held in the land of promise, a pointed irony the narrator leaves unspoken.",
+      "words": [
+        "H0272",
+        "H7486G",
+        "H3427"
+      ],
+      "history": "Rameses is the name of the district around the later city Pi-Ramesses, built by Ramesses II in the thirteenth century BC in the eastern Delta, from which Israel would set out in the exodus (Exodus 12:37). The chapter note discusses whether the name is an updating for later readers.",
+      "refs": [
+        "Genesis 23:4",
+        "Genesis 23:20",
+        "Exodus 1:11",
+        "Exodus 12:37"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Joseph feeds his whole family through the famine, fulfilling the promise he made in 45:11. The verse closes the story of the family's settlement before the narrative turns to Egypt as a whole.",
+      "grammar": "Vaykhalkel (\"provided\") is a Pilpel form of kul, to sustain; Joseph uses the same verb in his promise (45:11) and his reassurance after Jacob's death (50:21). The last phrase, lefi hattaf, is literally ‘according to the mouth of the little ones’: food measured to the number of dependents in each household, or, as some take it, even down to the children.",
+      "words": [
+        "H3557",
+        "H6310K",
+        "H2945"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "What Joseph said in 45:7, that God sent him ahead to preserve the family, is here carried out in daily bread. Providence in Genesis works through a faithful administrator's rations as much as through dreams."
+        }
+      ],
+      "refs": [
+        "Genesis 45:11",
+        "Genesis 50:21",
+        "Genesis 45:7"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "The story widens from Goshen to the whole region. The famine is at its worst, and Egypt and Canaan alike are exhausted. The Israelites have food (v. 12); everyone else is running out.",
+      "grammar": "The verse is built as a contrast with verse 12: lechem, food, is the first word of both, ‘food he provided’ and ‘food there was none’. Vattelah (\"had been exhausted\") comes from a rare verb, lahah, meaning to faint or languish, pictured here of the land itself.",
+      "words": [
+        "H3899G",
+        "H3856A",
+        "H7458"
+      ],
+      "refs": [
+        "Genesis 41:55-57",
+        "Genesis 43:1"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "The first stage: Joseph takes in all the money of Egypt and Canaan in payment for grain and deposits it in Pharaoh's house. The narrator stresses that the money went to the crown, not to Joseph.",
+      "grammar": "Shever (\"grain\") and the participle shoverim (\"buying\") are from the same root; the verb is formed from the noun, so that ‘to shever’ means to buy grain rations. The phrase \"Pharaoh's palace\" is simply ‘the house of Pharaoh’, here meaning the royal treasury. Kesef is literally silver, since money in this period meant weighed silver, not coins.",
+      "words": [
+        "H7668",
+        "H7666",
+        "H3701G",
+        "H3950"
+      ],
+      "history": "Coinage was not invented until around the seventh century BC in Lydia, in western Asia Minor. In Joseph's world payment was made in silver weighed on scales, as Abraham paid for Machpelah (23:16) and as the brothers' silver was weighed and returned in their sacks (43:21).",
+      "refs": [
+        "Genesis 23:16",
+        "Genesis 42:25",
+        "Genesis 43:21"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "When the money is gone, the Egyptians come to Joseph pleading for food. Their question, why should we die before you, is the first of three pleas that drive the rest of the account.",
+      "grammar": "Havah-lanu lechem (\"Give us food\") uses havah, an imperative used for urgent demands and proposals; Rachel uses it in \"Give me children, or I will die\" (30:1). Afes kasef, ‘silver has ceased’, uses a verb that means to come to an end, repeated by Joseph in verse 16 and echoed in the people's speech in verse 18 with another verb for ending (tam).",
+      "words": [
+        "H3051",
+        "H0656",
+        "H5048"
+      ],
+      "refs": [
+        "Genesis 30:1",
+        "Genesis 42:2",
+        "Genesis 43:8"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "The second stage: livestock for food. Joseph proposes it, and the people bring horses, flocks, herds, and donkeys, which carries them through a year.",
+      "grammar": "Vaynahalem (\"he provided them\") is the Piel of nahal, a verb of leading a flock to water and rest; Psalm 23:2 uses it of the shepherd who \"leads me beside quiet waters\". The word casts Joseph's provision in the language of a shepherd's care, even as the animals are passing into Pharaoh's hands. This is also the Bible's first mention of horses (susim).",
+      "words": [
+        "H5095",
+        "H5483M",
+        "H4735"
+      ],
+      "history": "Horses and horse-drawn chariots became common in Egypt from about the seventeenth and sixteenth centuries BC onward. Interpreters who place Joseph earlier than that take the horses here (and the chariots of 41:43 and 46:29) either as evidence for a later setting or as the narrator describing Egypt in terms familiar to later readers.",
+      "refs": [
+        "Psalm 23:2",
+        "Genesis 41:43",
+        "Exodus 9:3"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "The next year the people come back, having nothing left but their bodies and their land. They speak with a blunt honesty: nothing is hidden, nothing remains.",
+      "grammar": "Lo nekhached, \"We cannot hide\", uses the Piel of kachad, to conceal, as a formal admission. What remains is geviyyatenu ve'admatenu, \"our bodies and our land\". Geviyyah means a body, often a lifeless one (the corpse of Saul in 1 Samuel 31:10, the lion's carcass in Judges 14:8). The choice of word is grim: people who are all but corpses. The \"second year\" probably means the year after the first transaction, not the second year of the famine.",
+      "words": [
+        "H3582",
+        "H1472",
+        "H0127G",
+        "H8145"
+      ],
+      "refs": [
+        "1 Samuel 31:10",
+        "Judges 14:8",
+        "Genesis 45:6"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "The people propose the final exchange themselves: buy us and our land, and we will be Pharaoh's servants. Their request for seed shows they expect the famine to end and want to plant.",
+      "grammar": "The proposal moves from a question (lamah namut, ‘why should we die?’) to an imperative (qeneh otanu, ‘buy us’) to a result (venihyeh ... avadim, ‘and we will be slaves’). Qanah (\"purchase\") is the ordinary verb of buying, used of Abraham buying the field of Machpelah (25:10). Avadim here goes past the courtesy of verse 3: it is a status. The final clause pairs the people and their land: ‘that we may live and not die, and the land not become desolate’, so that the land's life and theirs depend on the same seed.",
+      "words": [
+        "H7069",
+        "H5650",
+        "H2233G",
+        "H3456"
+      ],
+      "theology": [
+        {
+          "id": "work",
+          "note": "The verse sees human life and the land's fruitfulness as bound together, as in 2:15 and 3:17-19. People do not only eat from the ground; without people to work it, the ground itself becomes desolate."
+        }
+      ],
+      "refs": [
+        "Genesis 3:17-19",
+        "Genesis 25:10",
+        "Nehemiah 5:2-5"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Joseph buys all the land of Egypt for Pharaoh. The narrator explains once more that the famine was severe, so that the sale reads as necessity rather than greed.",
+      "grammar": "Vayyiqen yosef (\"Joseph acquired\") takes up the people's verb from verse 19, qanah. The clause \"because the famine was so severe upon them\" uses chazaq, to be strong or overpowering, the same verb used of the famine in 41:56-57. The verse ends vattehi ha'arets lefar'oh, ‘and the land became Pharaoh's’, a short sentence that states the outcome of the whole policy.",
+      "words": [
+        "H7069",
+        "H4376",
+        "H2388G"
+      ],
+      "refs": [
+        "Genesis 41:56-57",
+        "1 Samuel 8:14-17"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "The verse states what became of the people. English Bibles differ sharply here, because the Hebrew and the ancient translations read differently.",
+      "text": "The traditional Hebrew text reads he'evir oto le'arim, ‘he moved them into the cities from one end of Egypt to the other’, which could describe relocating people to the grain stores in the cities (41:48). The Samaritan Pentateuch and the Septuagint read he'evid oto la'avadim, ‘he made them slaves’. In Hebrew script the letters d and r look very similar, and the two readings differ by little more than that, so one probably arose from the other by a copying error. The BSB, ESV, and NIV follow the ‘servitude’ reading, which fits verses 19 and 25; the KJV and NASB follow the traditional Hebrew. The chapter note's hard question takes up what either reading means for judging Joseph.",
+      "history": "Joseph had stored the grain of the good years in the cities, each city holding the food of its surrounding fields (41:48). If the Hebrew reading is original, moving the people to the cities would have brought them to where the food was.",
+      "refs": [
+        "Genesis 41:48",
+        "Genesis 47:19",
+        "Genesis 47:25"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "The priests are the exception. They receive a fixed allowance from Pharaoh, so they never had to sell their land. The verse matters because Joseph's father-in-law was a priest (41:45).",
+      "grammar": "The word for the priests' allowance is choq, a fixed portion or prescribed share. The same word returns in verse 26 in its other sense, a statute: the priests live on a choq, and Joseph turns the fifth into a choq. The small wordplay ties the priests' privilege to the new law.",
+      "words": [
+        "H2706H",
+        "H3548",
+        "H7069"
+      ],
+      "history": "Egyptian temples held great estates, and kings issued decrees exempting temple land and staff from state levies. Examples survive from the Old Kingdom (the royal decrees found at Coptos) and the New Kingdom (the Nauri decree of Seti I protecting the estates of the temple at Abydos). The verse fits that long pattern of temple privilege.",
+      "refs": [
+        "Genesis 41:45",
+        "Genesis 47:26",
+        "Ezra 7:24"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Joseph announces the new arrangement: Pharaoh now owns the people and the land, and he gives them seed to plant. The famine is ending, and the relationship between the people and the crown has changed.",
+      "grammar": "Two interjections open the two halves of the speech: hen qaniti etkhem, ‘look, I have bought you’, and he-lakhem zera, ‘here, seed for you’. He is a rare short form of the interjection. The pairing presents purchase and provision in one breath: the people are Pharaoh's, and Pharaoh feeds them.",
+      "words": [
+        "H2005",
+        "H7069",
+        "H1887",
+        "H2233G"
+      ],
+      "refs": [
+        "Genesis 47:19",
+        "Genesis 8:22"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The terms: a fifth of each harvest to Pharaoh, four-fifths kept for seed and food. The fifth recalls Joseph's first proposal to Pharaoh in the years of plenty (41:34).",
+      "grammar": "\"Four-fifths\" is literally ‘the four hands’ (arba hayyadot), yad (\"hand\") meaning a share or portion. The same idiom described Benjamin's portion, ‘five hands’, at Joseph's table (43:34). Chamishit, ‘a fifth’, is the ordinal of five used as a fraction.",
+      "words": [
+        "H3027L",
+        "H2549",
+        "H8393"
+      ],
+      "refs": [
+        "Genesis 41:34",
+        "Genesis 43:34",
+        "1 Samuel 8:15"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "The people respond with gratitude, not complaint: Joseph has kept them alive, and they accept being Pharaoh's servants. The narrator lets their words stand as the verdict of those most affected.",
+      "grammar": "Hecheyitanu (\"You have saved our lives\") is the Hiphil of chayah, to cause to live. It is the verb Joseph uses of God's purpose in 45:7 and 50:20 (\"to preserve the lives of many people\"). The second clause, nimtsa-chen be'einei adoni, is an imperfect that can be read as a statement or as a polite wish: \"We have found favor\" (BSB) or ‘may we find favor in my lord's eyes’, a courteous way of accepting terms.",
+      "words": [
+        "H2421",
+        "H4672",
+        "H2580"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The Egyptians' own words confirm Joseph's reading of his life: God sent him ahead to keep many alive (50:20). The blessing of Abraham's family reaches Egyptians who never hear the name of Abraham's God."
+        }
+      ],
+      "refs": [
+        "Genesis 45:7",
+        "Genesis 50:20",
+        "Genesis 41:57"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The narrator steps outside the story to say the law of the fifth remained in force \"to this day\", except for the priests' land. It is an explanation for later readers of an arrangement they knew about.",
+      "grammar": "Vayyasem otah yosef lechoq, ‘Joseph made it a statute’, uses choq in the sense of a fixed law, echoing the priests' choq in verse 22. The phrase ad hayyom hazzeh (\"to this day\") is a narrator's formula found throughout Genesis to Kings, pointing from the story to the time of the writer and first readers.",
+      "words": [
+        "H2706G",
+        "H2569",
+        "H3117L"
+      ],
+      "refs": [
+        "Genesis 32:32",
+        "Genesis 35:20",
+        "Deuteronomy 34:6"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The narrative returns to Israel with a sentence that reverses what just happened to Egypt. The Egyptians lost their land; the Israelites acquired property. The Egyptians became servants; the Israelites became fruitful and multiplied.",
+      "grammar": "The verse begins with a singular verb, vayyeshev yisra'el, ‘and Israel settled’, and then switches to plurals, vayye'achazu, vayyifru, vayyirbu, ‘they acquired property, were fruitful, and multiplied’. In one sentence Israel the man becomes Israel the people. Vayye'achazu is a Niphal of achaz, the root of achuzzah in verse 11. \"Fruitful and increased\" (parah and ravah) is the creation blessing of 1:28, repeated to Noah (9:1) and to Jacob himself (35:11).",
+      "words": [
+        "H3427",
+        "H0270",
+        "H6509",
+        "H7235A"
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The shift from singular to plural marks the moment the family begins to become the nation promised in 46:3. Exodus 1:7 picks up the same verbs to show that promise fulfilled."
+        },
+        {
+          "id": "covenant",
+          "note": "The creation blessing is fulfilled in Abraham's family even in a foreign land. God's promise to Jacob at Bethel (35:11) is kept in Goshen."
+        }
+      ],
+      "refs": [
+        "Genesis 1:28",
+        "Genesis 35:11",
+        "Exodus 1:7",
+        "Acts 7:17"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "A formal notice of Jacob's years, the kind Genesis gives at the close of a patriarch's life. He lived seventeen years in Egypt and died at 147.",
+      "history": "The seventeen years mirror the seventeen years Jacob had Joseph with him before the sale (37:2): Jacob cared for Joseph for seventeen years, and Joseph now cares for Jacob for seventeen. Some interpreters have also noticed a pattern in the patriarchs' ages: Abraham's 175 is 7 x 5 x 5, Isaac's 180 is 5 x 6 x 6, and Jacob's 147 is 3 x 7 x 7. Whether the pattern is intended is debated, but the numbers are exact.",
+      "grammar": "Vayechi ya'aqov (\"And Jacob lived\") uses the same verb as the Egyptians' cry in verse 25 (hecheyitanu, ‘you have kept us alive’) and the name of this section in Jewish reading, which begins here and runs to the end of Genesis. Jewish tradition calls the portion Vayechi, ‘and he lived’, though it tells of Jacob's death.",
+      "words": [
+        "H2421",
+        "H7651",
+        "H8141"
+      ],
+      "refs": [
+        "Genesis 37:2",
+        "Genesis 25:7",
+        "Genesis 35:28"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "Near death, Jacob summons Joseph, the son with power in Egypt, and makes him swear to bury him in Canaan. The request is made with deep courtesy, as though to a superior: \"If I have found favor in your eyes\".",
+      "grammar": "\"When the time drew near for Israel to die\" is the idiom used of David's last days (1 Kings 2:1). Jacob's request is heavy with the particle na, ‘please’, three times in one verse. The oath gesture, the hand under the thigh (yarekh), repeats Abraham's request to his servant (24:2), and the pair chesed ve'emet (\"kindness and faithfulness\") is the same pair used in that story (24:27, 24:49). Chesed is loyal love owed within a bond, and emet reliability; together they mean faithfulness that will actually be carried out.",
+      "words": [
+        "H3409",
+        "H2617A",
+        "H0571G",
+        "H4994"
+      ],
+      "history": "Burial in one's ancestral tomb mattered greatly in the ancient Near East, and Egypt in particular put great effort into burial. Jacob's request is not a preference about location but a refusal to be absorbed into Egypt in death.",
+      "refs": [
+        "Genesis 24:2-4",
+        "Genesis 24:49",
+        "1 Kings 2:1",
+        "Genesis 32:10"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "Jacob spells out the request: carry me out of Egypt and bury me with my fathers. Joseph promises, and verse 31 turns the promise into an oath.",
+      "grammar": "Veshakhavti im avotai, \"when I lie down with my fathers\", is an idiom for dying (compare 1 Kings 2:10, \"David rested with his fathers\"), distinct from the burial that follows. \"Carry me out\" (unesatani) uses nasa, the verb of 46:5, when his sons carried him into Egypt. Joseph's reply begins with the emphatic pronoun anokhi, ‘I myself will do as you say’.",
+      "words": [
+        "H7901G",
+        "H5375H",
+        "H6912",
+        "H0595"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Jacob's burial request looks to the land God promised, not to the comfort of Egypt. The carrying out of his body in chapter 50 is a small exodus that anticipates the great one."
+        }
+      ],
+      "refs": [
+        "Genesis 49:29-32",
+        "Genesis 50:5-13",
+        "1 Kings 2:10"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "Jacob insists on an oath, Joseph swears, and Israel bows in worship. The scene of the promised burial ends in worship, and Hebrews 11:21 counts it among the acts of faith.",
+      "grammar": "Hishave'ah li, \"Swear to me\", is a Niphal imperative with an added ending that strengthens the command. Vayyishtachu (\"bowed in worship\") is the standard verb for bowing down, parsed by many grammarians as a rare stem (called Hishtaphel) of the root chavah; others analyze it as a reflexive of shachah. Either way it means bowing low, in reverence to God or respect to a person. The object of Jacob's bow is unstated: most read it as worship of God, and 1 Kings 1:47 describes the dying David bowing in worship on his bed in the same way.",
+      "words": [
+        "H7650",
+        "H7812",
+        "H4296",
+        "H7218A"
+      ],
+      "text": "The Hebrew consonants mth can be read mittah, \"bed\" (the traditional Hebrew vowels), or matteh, ‘staff’ (the Septuagint). Hebrews 11:21 follows the Greek, \"leaned on the top of his staff\". Some older interpreters took the Greek to mean Jacob bowed toward Joseph's staff, the sign of his rule; most now read both as describing an old man worshiping from his bed or leaning on his staff.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jacob's faith is shown in two acts: requiring a binding promise that he will be buried in the land, and then worshiping. He trusts a promise he will not see fulfilled in his lifetime."
+        }
+      ],
+      "refs": [
+        "Hebrews 11:21",
+        "1 Kings 1:47",
+        "Genesis 48:2",
+        "Genesis 50:25"
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 11:21",
+          "note": "Hebrews names Jacob's worship among the acts of faith, combining this verse with the blessing of Joseph's sons in Genesis 48. Its wording, \"worshiped as he leaned on the top of his staff\", follows the Septuagint, which read the consonants of this verse as matteh, ‘staff’, where the Masoretic vowels read mittah, \"bed\". The writer's interest is not the posture but the faith: a dying man in Egypt who bound his son by oath to bury him in the promised land and then worshiped, trusting what he would not see."
+        }
+      ]
+    }
+  ]
+}

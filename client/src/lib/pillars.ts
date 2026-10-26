@@ -49,9 +49,6 @@ export const PILLARS: Pillar[] = [
       "six-verses-we-memorized",
       "when-the-pulpit-became-a-precinct",
       // Earlier live essays
-      "when-god-bless-america-replaces-thy-kingdom-come",
-      "not-persecuted-seduced-crisis-american-christianity",
-      "church-political-brand-step-back",
       // Blind Spots (reserved slugs — live once imported)
       "when-patriotism-becomes-a-gospel",
       "when-fear-becomes-theology",
@@ -76,7 +73,6 @@ export const PILLARS: Pillar[] = [
       "authority-we-traded-for-authenticity",
       "conscience-outsourced-to-party",
       // Earlier live essays
-      "justice-without-love-ideology",
       "racial-reconciliation-without-repentance",
       // Blind Spots (reserved slug — live once imported)
       "the-progressive-blind-spot",

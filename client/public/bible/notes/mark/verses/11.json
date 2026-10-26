@@ -1,0 +1,287 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The road from Jericho reaches the eastern slope of the Mount of Olives, and the last movement of Mark's Gospel begins. From here to the end, events are counted by days in and around Jerusalem. Jesus takes the initiative at once by sending two disciples ahead.",
+      "grammar": "Hote engizousin eis Hierosoluma, ‘when they draw near to Jerusalem’, and apostellei, ‘he sends’, are historical presents, which Mark uses to open a new scene vividly. The order of places is odd, since travelers from Jericho would reach Bethany before Bethphage; Mark may be naming the area as a whole, with Jerusalem first as the goal. Pros to oros tōn elaiōn, ‘at the Mount of Olives’, names the ridge by its trees.",
+      "words": ["G3753", "G1448", "G2414", "G0967", "G0963", "G3735", "G1638", "G0649"],
+      "history": "Bethany, about 3 kilometers (under 2 miles) east of Jerusalem, was the village of Mary, Martha, and Lazarus (John 11:1, 11:18) and of Simon the leper (Mark 14:3). The site of Bethphage is not certain; its name is usually explained from Aramaic as ‘house of unripe figs’, a small echo of the fig tree to come. The Mount of Olives rises about 80 meters (250 feet) above the temple mount across the Kidron Valley, and Zechariah 14:4 pictures the LORD's feet standing on it on the day of his coming.",
+      "parallels": ["Matthew 21:1", "Luke 19:28-29", "John 12:12"],
+      "refs": ["Zechariah 14:4", "John 11:18", "Mark 14:3", "Ezekiel 11:23"]
+    },
+    {
+      "v": "2-3",
+      "context": "Jesus tells the two to find a colt tied in the village, one no one has ever ridden, and to bring it, answering any question with the words ‘The Lord needs it’. The detail shows Jesus directing the event he is about to enact.",
+      "grammar": "Pōlon dedemenon, ‘a colt tied’, uses a perfect passive participle for its state. Eph' hon oudeis oupō anthrōpōn ekathisen, ‘on which no one of men has yet sat’, marks the animal as unused, fit for sacred purpose. Pōlos by itself can mean the young of any animal; Walter Bauer (The ‘Colt’ of Palm Sunday, 1953) argued that unqualified it meant a young horse, but most scholars reply that in the Septuagint and in this setting it means a donkey's colt, as Matthew 21:2 and John 12:14-15 make explicit. In verse 3, ho kurios chreian echei, ‘the Lord has need of it’, may mean Jesus, God, or the colt's owner; Mark's readers would hear Jesus. The clause kai euthus auton apostellei palin hōde, ‘and he will send it back here at once’, is a promise to return the animal.",
+      "words": ["G5217", "G2968", "G2713", "G4454", "G1210", "G2523", "G3089", "G5342", "G2962G", "G5532", "G2112", "G0649", "G3825"],
+      "ot": [
+        {
+          "ref": "Genesis 49:11",
+          "note": "Jacob's blessing on Judah pictures the ruler from Judah's line tying his donkey to the vine and his colt (Hebrew beni atono, ‘his donkey's son’; Septuagint ton pōlon tēs onou autou) to the choice branch. The verse follows the promise that the scepter will not depart from Judah (49:10). Mark's repeated ‘colt tied’ (verses 2 and 4) may echo the image; Justin Martyr later linked Genesis 49:11 with this scene (First Apology 32). The allusion is possible rather than certain, since Mark does not cite the text."
+        }
+      ],
+      "text": "The Textus Receptus reads a future without ‘back’, ‘and straightway he will send him hither’ (so the King James Version), which makes the owner the one who will send the colt. The critical text adds palin, ‘back’, making Jesus promise to return it.",
+      "parallels": ["Matthew 21:2-3", "Luke 19:30-31"],
+      "refs": ["Numbers 19:2", "1 Samuel 6:7", "Genesis 49:10-11", "Mark 14:13-16"]
+    },
+    {
+      "v": "4-6",
+      "context": "Everything happens as Jesus said: the colt is tied at a door on the street, bystanders ask, the disciples answer as instructed, and they are allowed to go. The same pattern returns when Jesus sends two disciples to find the room for the Passover (14:13-16).",
+      "grammar": "Pros thuran exō epi tou amphodou, ‘at a door, outside, on the street’: amphodon is a rare word for a street or the block around which a road runs. Luousin, ‘they untie’, is another historical present. Kathōs eipen ho Iēsous, ‘just as Jesus had said’, and aphēkan autous, ‘they let them go’, close the scene with the fulfillment.",
+      "words": ["G0565", "G2147", "G4454", "G1210", "G2374", "G1854", "G0296", "G3089", "G2476", "G2531", "G0863G"],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Whether Jesus had arranged the colt in advance or knew of it by prophetic insight, Mark tells the scene so that his word is fulfilled exactly, as Samuel's signs to Saul were fulfilled in order (1 Samuel 10:2-7). The reader learns that what Jesus says about the days ahead, including his death and rising, will come true in the same way."
+        }
+      ],
+      "parallels": ["Matthew 21:6", "Luke 19:32-34"],
+      "refs": ["1 Samuel 10:2-7", "Mark 14:13-16", "Mark 10:33-34"]
+    },
+    {
+      "v": "7-8",
+      "context": "The disciples put their cloaks on the colt and Jesus sits on it. The crowd spreads cloaks and leafy branches on the road. Jesus rides for the first and only time in the Gospels, into the city where he will be crowned with thorns.",
+      "grammar": "Pherousin, ‘they bring’, and epiballousin, ‘they throw on’, are historical presents; ekathisen ep' auton, ‘he sat on it’, is a plain aorist. Estrōsan, ‘they spread’, is from strōnnumi, used of spreading out coverings. Stibadas, ‘leafy branches’, means greenery or rushes cut for a bed or a mat; Mark says they came ek tōn agrōn, ‘from the fields’. John alone says the branches were palms (John 12:13), which is why the day is called Palm Sunday.",
+      "words": ["G5342", "G4454", "G1911", "G2440", "G2523", "G4766", "G3598", "G4746", "G2875", "G0068G"],
+      "ot": [
+        {
+          "ref": "Zechariah 9:9",
+          "note": "The Hebrew calls Zion to rejoice because her king comes, tsaddiq venosha, ‘righteous and saved (or victorious)’, ani, ‘humble’ or ‘afflicted’, riding al-chamor ve'al-ayir ben-atonot, ‘on a donkey, on a colt the foal of she-donkeys’; the next verse says he will cut off the war horse and speak peace to the nations. The Septuagint has praus, ‘gentle’, and epi hupozugion kai pōlon neon, ‘on a beast of burden and a young colt’. Mark never quotes the verse, but his repeated pōlos and the royal acclaim that follows make the allusion plain to readers who knew it. Matthew (21:4-5) and John (12:14-15) quote it outright. Matthew's quotation keeps both animals of the Hebrew parallelism, and he describes two animals, a donkey and a colt."
+        }
+      ],
+      "history": "Spreading garments before a new king appears in 2 Kings 9:13, when Jehu is proclaimed. When Simon the Maccabee entered the citadel of Jerusalem in 141 BC, the people came in with praise, palm branches, and songs (1 Maccabees 13:51), and branches were carried at the rededication of the temple (2 Maccabees 10:7). A crowd waving greenery before a leader entering Jerusalem would have recalled national deliverance.",
+      "parallels": ["Matthew 21:7-8", "Luke 19:35-36", "John 12:13-15"],
+      "refs": ["Zechariah 9:9-10", "2 Kings 9:13", "1 Kings 1:33", "John 12:13"]
+    },
+    {
+      "v": "9-10",
+      "context": "The crowd before and behind shouts the words of Psalm 118 and adds a blessing on the coming kingdom of our father David. It is a pilgrim welcome that has become a royal acclamation. Mark does not say the crowd understood what kind of king this was.",
+      "grammar": "Hōsanna transliterates the Hebrew hoshi'ah na, ‘save, please’, from Psalm 118:25; the Septuagint had translated it sōson dē. By Jesus' time the plea had become a shout of praise. Eulogēmenos ho erchomenos, ‘blessed is the one coming’, uses a perfect passive participle, ‘blessed’, and a present participle, ‘the one who comes’; ‘the coming one’ was becoming a messianic title (Matthew 11:3). Verse 10 repeats the form with a feminine participle for the kingdom, eulogēmenē hē erchomenē basileia. Hōsanna en tois hupsistois, ‘Hosanna in the highest’, calls on the heights of heaven to join the praise, as in Psalm 148:1.",
+      "words": ["G4254", "G0190", "G2896", "G5614", "G2127", "G2064", "G3686", "G2962G", "G0932", "G3962", "G1138", "G5310"],
+      "ot": [
+        {
+          "ref": "Psalm 118:25-26",
+          "note": "Psalm 118 closes the Hallel (Psalms 113 to 118), sung at the great feasts. At Passover it was sung as the lambs were slaughtered (m. Pesachim 5:7), and at Tabernacles worshipers waved the lulav, a bundle of branches, at the words ‘O LORD, save us’ (m. Sukkah 3:9). In the psalm the priests bless the pilgrim who enters the temple: ‘Blessed is he who comes in the name of the LORD; we bless you from the house of the LORD’. Mark's wording matches the Septuagint (Psalm 117:26) exactly. The crowd applies the pilgrims' blessing to Jesus as the one who comes, and the same psalm will return in 12:10-11, where its rejected stone becomes the cornerstone."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The crowd expects David's kingdom to come with Jesus, and Mark agrees that it does, though not as they imagine. The only title over Jesus in Mark's Jerusalem will be ‘the King of the Jews’ on his cross (15:26). The entry proclaims the Messiah, and the passion defines him."
+        }
+      ],
+      "parallels": ["Matthew 21:9", "Luke 19:37-38", "John 12:13"],
+      "text": "Each Gospel reports the shout differently. Matthew has ‘Hosanna to the Son of David’ (Matthew 21:9). Luke drops ‘Hosanna’, adds ‘the king’, and closes with ‘peace in heaven and glory in the highest’ (Luke 19:38). John has ‘the King of Israel’ (John 12:13). Mark alone speaks of the kingdom of ‘our father David’.",
+      "refs": ["Psalm 118:25-26", "2 Samuel 7:12-16", "Matthew 11:3", "Mark 15:26", "Psalm 148:1"]
+    },
+    {
+      "v": "11",
+      "context": "Jesus enters Jerusalem and the temple, looks around at everything, and, since it is late, leaves for Bethany with the Twelve. The anticlimax is deliberate. The king does not take a throne; he inspects the house of God and will act the next day.",
+      "grammar": "Eis to hieron, ‘into the temple’, uses hieron, the whole sacred precinct with its courts, rather than naos, the sanctuary building (which Mark uses at 14:58 and 15:38). Periblepsamenos panta, ‘having looked around at everything’, uses a verb Mark reserves almost entirely for Jesus' searching gaze (3:5, 3:34, 5:32, 10:23). Opsias ēdē ousēs tēs hōras, ‘the hour being already late’, is a genitive absolute.",
+      "words": ["G1525", "G2414", "G2411", "G4017", "G3956", "G3798", "G2235", "G5610", "G1831", "G0963", "G1427"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Malachi 3:1 promised that the Lord would suddenly come to his temple, and Mark opened his Gospel with the verse (1:2). Here the Lord arrives and looks. The inspection prepares for the judgment enacted on the following day."
+        }
+      ],
+      "parallels": ["Matthew 21:10-11", "Matthew 21:17"],
+      "text": "Matthew (21:12) and Luke (19:45) place the temple action on the day of the entry. Mark alone spreads the events over two days, with the fig tree between.",
+      "refs": ["Malachi 3:1-2", "Mark 1:2", "Mark 3:5", "Ezekiel 8:6"]
+    },
+    {
+      "v": "12-14",
+      "context": "The next morning Jesus is hungry, sees a fig tree in leaf, finds nothing but leaves, and pronounces that no one will ever eat fruit from it again. Mark adds that it was not the season for figs, a note that signals the act is a sign, not a fit of temper. The disciples hear it, which prepares for verse 20.",
+      "grammar": "Ei ara ti heurēsei en autē, ‘if perhaps he would find anything on it’, expresses uncertain expectation. Mark's explanation, ho gar kairos ouk ēn sukōn, ‘for it was not the season of figs’, is a gar clause giving the reason nothing was found. Verse 14 contains mēketi eis ton aiōna ek sou mēdeis karpon phagoi, ‘may no one ever again eat fruit from you’, with phagoi in the aorist optative, the mood of wish. It is one of very few optatives in Mark, and it makes the saying a solemn pronouncement over the tree. Apokritheis, ‘answering’, is used although the tree has said nothing: Jesus answers what the tree displays.",
+      "words": ["G1887", "G1831", "G3983", "G4808", "G3113", "G5444", "G0686", "G2147", "G2540", "G4810", "G3371", "G0165H", "G2590", "G5315", "G0191"],
+      "ot": [
+        {
+          "ref": "Jeremiah 8:13",
+          "note": "The Hebrew reads ein te'enim batte'enah vehe'aleh navel, ‘no figs on the fig tree, and the leaf withers’, in an oracle of judgment on Judah for rejecting the LORD's word. The Septuagint has ouk estin suka en tais sukais kai ta phulla katerruē, ‘there are no figs on the fig trees and the leaves have fallen’. In Hosea 9:10 God found Israel like the first fruit on the fig tree; in Micah 7:1 the prophet longs for an early fig and finds none. Jesus acts out the image the prophets had spoken, and Mark's placement ties it to the temple."
+        }
+      ],
+      "history": "Fig trees in the land put out leaves in spring, around Passover, with small unripe knobs that were sometimes eaten; the first ripe figs come in early summer and the main crop in late summer. A tree in full leaf at Passover could promise something, which makes its barrenness pointed. William Telford (The Barren Temple and the Withered Tree, 1980) showed how widely the fig tree served in Jewish writing as a symbol of Israel and of blessing or judgment.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The curse is an acted parable. Like the prophets' symbolic acts (Jeremiah 19, Ezekiel 4), it announces God's verdict in a deed. The leafy tree without fruit stands for a religious life that looks flourishing and gives God nothing."
+        }
+      ],
+      "parallels": ["Matthew 21:18-19"],
+      "text": "In Matthew the tree withers at once and the disciples marvel on the same day (Matthew 21:19-20). Mark separates the curse from the withering and places the temple action between them. Luke omits the fig tree and has instead a parable of a barren fig tree (Luke 13:6-9).",
+      "refs": ["Jeremiah 8:13", "Hosea 9:10", "Micah 7:1", "Luke 13:6-9", "Jeremiah 24:1-10"]
+    },
+    {
+      "v": "15",
+      "context": "In Jerusalem Jesus enters the temple courts and begins to drive out those buying and selling, overturning the tables of the money changers and the seats of the dove sellers. This is the center of Mark's sandwich, framed by the fig tree on either side.",
+      "grammar": "Ērxato ekballein, ‘he began to drive out’, uses ekballō, the verb Mark uses for casting out demons (1:34, 3:15). Tous pōlountas kai tous agorazontas, ‘those selling and those buying’, includes both sides of the trade, so the action is not aimed only at dishonest merchants. Kollubistōn, ‘money changers’, comes from kollubos, a small coin or the fee charged for exchange. Katestrepsen, ‘he overturned’, is a single forceful aorist.",
+      "words": ["G2414", "G1525", "G2411", "G0757", "G1544", "G4453", "G0059", "G5132", "G2855", "G2515", "G4058", "G2690"],
+      "history": "Every Jewish man owed a half-shekel temple tax each year (Exodus 30:13), and the Mishnah says money changers set up tables in the provinces on the fifteenth of Adar and in the temple on the twenty-fifth, about three weeks before Passover (m. Shekalim 1:3). The tax was paid in Tyrian silver, the high-quality coin of Tyre, despite its image of the god Melqart. Doves were the offering of the poor (Leviticus 5:7, 12:8). The Mishnah tells of Simeon ben Gamaliel forcing down the price of a pair of doves when it had risen to a gold denar (m. Keritot 1:7). The outer court where this trade stood was open to Gentiles; inscriptions on the balustrade beyond it, one found in 1871, warned foreigners not to go further on pain of death (Josephus, Jewish War 5.193-194).",
+      "parallels": ["Matthew 21:12", "Luke 19:45", "John 2:13-16"],
+      "text": "John places a temple action at the start of Jesus' ministry (John 2:13-22), the Synoptic Gospels at the end. Some interpreters hold there were two events; many think John moved the one event to the front of his Gospel for theological reasons.",
+      "refs": ["Exodus 30:13-16", "Leviticus 5:7", "Leviticus 12:8", "John 2:13-17", "Malachi 3:1-3"]
+    },
+    {
+      "v": "16",
+      "context": "Mark alone adds that Jesus would not let anyone carry a vessel through the temple. The court had become a thoroughfare as well as a market, and Jesus stops the traffic.",
+      "grammar": "Ouk ēphien hina tis dienegkē skeuos dia tou hierou, ‘he was not permitting anyone to carry a vessel through the temple’: the imperfect ēphien describes a continuing ban, and skeuos can mean any container or equipment, including goods for sale or vessels for the temple's use.",
+      "words": ["G0863I", "G5100", "G1308", "G4632", "G1223", "G2411"],
+      "history": "The Mishnah forbids entering the temple mount with a staff, sandals, a money belt, or dust on one's feet, and forbids using it as a shortcut (m. Berakhot 9:5). Jesus enforces a respect for the holy place that the temple's own rules required.",
+      "ot": [
+        {
+          "ref": "Zechariah 14:20-21",
+          "note": "Zechariah ends with a day when even the cooking pots in Jerusalem are holy to the LORD and there will no longer be a kena'ani in the house of the LORD. The Hebrew word means ‘Canaanite’ and also ‘trader’, since Canaanites were known as merchants (Proverbs 31:24); the Septuagint renders it Chananaios. Jesus' refusal to let vessels be carried through and his removal of traders from the court match that picture of a house wholly given to God. Mark does not cite the verse, so the link is an allusion many interpreters see, not a quotation."
+        }
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "The temple was set apart for God, and Jesus treats its courts, even the outermost, as holy ground that may not be used for convenience or gain."
+        }
+      ],
+      "refs": ["Zechariah 14:20-21", "Leviticus 19:30", "Ecclesiastes 5:1"]
+    },
+    {
+      "v": "17",
+      "context": "Jesus explains his action with two prophetic texts. God's house was meant to be a house of prayer for all the nations; its keepers have made it a den of robbers. Mark alone includes ‘for all the nations’, which matters because the trade stood in the court where Gentiles could pray.",
+      "grammar": "Edidasken kai elegen, ‘he was teaching and saying’, are imperfects: this was teaching, not only an outburst. Ou gegraptai hoti, ‘is it not written’, is a question expecting yes, and the perfect gegraptai means ‘stands written’. The contrast is marked by humeis de pepoiēkate, ‘but you have made it’: the emphatic ‘you’ and the perfect tense describe a condition that stands. Spēlaion lēstōn, ‘a den of robbers’: lēstēs means a bandit, and Josephus uses it for violent insurgents; a spēlaion is a cave or hideout where robbers retreat after their crimes.",
+      "words": ["G1321", "G3004G", "G1125", "G3624G", "G4335", "G2564G", "G3956", "G1484", "G4160G", "G4693", "G3027"],
+      "ot": [
+        {
+          "ref": "Isaiah 56:7",
+          "note": "The Hebrew promises that foreigners who join themselves to the LORD, keep the Sabbath, and hold his covenant will be brought to his holy mountain, ki veiti beit-tefillah yiqqare lekhol ha'ammim, ‘for my house will be called a house of prayer for all the peoples’. Mark's wording matches the Septuagint exactly, including pasin tois ethnesin, ‘for all the nations’. Matthew and Luke drop that phrase. In Isaiah the text looks to the day when outsiders are welcomed; Jesus charges that the space where they could come had been given over to commerce."
+        },
+        {
+          "ref": "Jeremiah 7:11",
+          "note": "Jeremiah stood in the temple gate and warned people who stole, murdered, and committed adultery and then came to the temple saying ‘we are safe’. The Hebrew asks, hamme'arat paritsim, ‘has this house become a cave of violent men in your eyes?’, and the Septuagint has spēlaion lēstōn, Mark's phrase. Jeremiah went on to say that God would do to this house what he did to Shiloh (7:12-14). Jesus' use carries that threat: the temple will not protect those who use it as a refuge."
+        }
+      ],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The verse names the temple's purpose, prayer for all nations, and indicts its use. E. P. Sanders (Jesus and Judaism, 1985) argued that the act was a symbolic announcement of the temple's destruction rather than a reform; others read it as a protest against exploitation or against the exclusion of Gentiles. Mark's framing with the fig tree and Jesus' later prophecy (13:2) support the reading that judgment is in view."
+        },
+        {
+          "id": "mission",
+          "note": "Only Mark keeps ‘for all the nations’. For his readers, many of them Gentiles, the verse showed that the God of Israel had always intended his house for them."
+        }
+      ],
+      "parallels": ["Matthew 21:13", "Luke 19:46", "John 2:16"],
+      "refs": ["Isaiah 56:6-8", "Jeremiah 7:9-14", "Mark 13:1-2", "1 Kings 8:41-43"]
+    },
+    {
+      "v": "18-19",
+      "context": "The chief priests and scribes hear and begin looking for a way to destroy Jesus, but they fear him, because the crowd is astonished at his teaching. At evening Jesus and the disciples leave the city. From this verse the temple authorities, not the Pharisees, lead the opposition.",
+      "grammar": "Ezētoun pōs auton apolesōsin, ‘they were seeking how they might destroy him’: the imperfect describes an ongoing search, and apollumi, ‘destroy’, is stronger than ‘arrest’. Ephobounto gar auton, ‘for they were afraid of him’, is followed by a second gar clause explaining the fear. In verse 19, hotan opse egeneto, ‘whenever evening came’, uses hotan with an aorist indicative, an unusual construction that may describe a habit on each day of that week.",
+      "words": ["G0191", "G0749", "G1122", "G2212", "G0622", "G5399", "G3793", "G1605", "G1322", "G3752", "G3796", "G1607", "G4172"],
+      "text": "Editions differ in verse 19 between exeporeuonto, ‘they went out’, printed in NA28 and the SBL edition, and exeporeueto, ‘he went out’, in the Textus Receptus and some other editions.",
+      "history": "The chief priests were the high priest and members of the leading priestly families who ran the temple. The high priest in these years was Joseph Caiaphas (about AD 18 to 36), son-in-law of Annas (John 18:13), whose family dominated the office through much of the first century.",
+      "parallels": ["Luke 19:47-48"],
+      "refs": ["Mark 3:6", "Mark 12:12", "Mark 14:1-2", "John 18:13"]
+    },
+    {
+      "v": "20-21",
+      "context": "The next morning the disciples see the fig tree withered from its roots. Peter remembers and points it out. The second half of the sandwich interprets the first and the middle: the tree's fate is the temple's.",
+      "grammar": "Exērammenēn ek rhizōn, ‘withered from the roots’: a perfect passive participle describing a finished state, and ‘from the roots’ means total and irreversible, not a few dead leaves. Peter says hēn katērasō, ‘which you cursed’, using the verb kataraomai for what Jesus did in verse 14. Exērantai, ‘has withered’, is a perfect.",
+      "words": ["G3899", "G4404", "G4808", "G3583", "G4491", "G0363", "G4074G", "G4461", "G2672"],
+      "ot": [
+        {
+          "ref": "Hosea 9:16",
+          "note": "The Hebrew says of Ephraim, shoresham yavesh peri bal-ya'asun, ‘their root is dried up, they will bear no fruit’. The Septuagint uses the same verb Mark does, tas rhizas autou exēranthē, ‘his roots were dried up’. Hosea's oracle is judgment on a people God had once found like the early fig (9:10). The withered root is the prophetic image of a judgment that reaches to the source."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The withering confirms that Jesus' word of judgment takes effect. Mark sets it beside the temple action so that the reader understands the temple's coming end (13:2) as the same kind of verdict: complete, from the roots."
+        }
+      ],
+      "parallels": ["Matthew 21:20"],
+      "refs": ["Hosea 9:16", "Job 18:16", "Malachi 4:1", "Mark 13:2"]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus answers not with an explanation of the tree but with a call to faith in God. Anyone who tells this mountain to be taken up and thrown into the sea, without doubting, will see it done. Spoken on the road over the Mount of Olives in sight of the temple mount, ‘this mountain’ is pointed.",
+      "grammar": "Echete pistin theou, ‘have faith of God’, uses a genitive that most grammarians take as objective, ‘faith in God’; a minority read it as ‘hold on to God's faithfulness’. In verse 23, tō orei toutō, ‘to this mountain’, uses a demonstrative that points to a particular mountain. Arthēti kai blēthēti, ‘be lifted up and be thrown’, are aorist passive imperatives. Mē diakrithē en tē kardia autou, ‘does not waver in his heart’: diakrinomai in this sense means to be divided in oneself. Pisteuē hoti ho lalei ginetai, ‘believes that what he says is happening’, uses a present tense for what the believer trusts is already under way.",
+      "words": ["G0611", "G2192", "G4102G", "G2316", "G0281", "G3735", "G0142", "G0906G", "G2281", "G1252", "G2588", "G4100", "G2980", "G1096"],
+      "text": "Some early manuscripts read ‘if you have faith in God’ (ei echete), making verse 22 a condition leading into verse 23. The critical editions print the command.",
+      "history": "Moving mountains was a Jewish figure for doing what seems impossible. The Babylonian Talmud calls a brilliant teacher an ‘uprooter of mountains’ (b. Berakhot 64a). The Mount of Olives also carried prophetic weight: Zechariah 14:4 pictures it split in two on the day of the LORD. Some interpreters think ‘this mountain’ refers to the temple mount, whose removal faith need not fear; others take the saying as a general proverb.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith is directed at God, not at the strength of one's own believing. The saying teaches that nothing God wills is too large for prayer, and in context it tells disciples that God's purposes do not depend on the temple that is about to fall."
+        }
+      ],
+      "parallels": ["Matthew 21:21", "Matthew 17:20", "Luke 17:6"],
+      "refs": ["Zechariah 4:7", "Zechariah 14:4", "James 1:6", "1 Corinthians 13:2"]
+    },
+    {
+      "v": "24",
+      "context": "Jesus generalizes the promise to prayer: whatever you ask in prayer, believe that you have received it, and it will be yours. The verse has been badly misused; the chapter note's hard question addresses that. Its setting, framed by faith in God and followed by forgiveness, is the guard against misuse.",
+      "grammar": "Dia touto, ‘therefore’, draws a conclusion from verse 23. Panta hosa proseuchesthe kai aiteisthe, ‘all things whatever you pray and ask for’, pairs two verbs. The striking tense comes next: pisteuete hoti elabete, ‘believe that you received’, with an aorist. Grammarians describe this as a proleptic aorist, speaking of what God will do as if already done. The Textus Receptus reads a present, lambanete, ‘you receive’, and some manuscripts a future, making the sentence smoother. Kai estai humin, ‘and it will be yours’, puts the fulfillment in the future after all.",
+      "words": ["G1223", "G4336", "G0154", "G4100", "G2983", "G1510"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus teaches bold and expectant prayer that rests on God's goodness and power. The New Testament qualifies this promise by God's will (1 John 5:14) and shows Jesus himself praying ‘not what I will’ (14:36), so the verse is an invitation to trust, not a technique for obtaining what one wants."
+        }
+      ],
+      "parallels": ["Matthew 21:22"],
+      "refs": ["Matthew 7:7-11", "1 John 5:14-15", "James 1:5-7", "Mark 14:36"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus adds a condition: when you stand praying, forgive anyone you hold something against, so that your Father in heaven may forgive you. Prayer that could move mountains cannot coexist with a grudge. The saying is close to the Lord's Prayer in Matthew 6:12-15.",
+      "grammar": "Hotan stēkete proseuchomenoi, ‘whenever you stand praying’, uses stēkō, ‘stand’, the normal posture of Jewish prayer. Aphiete is a present imperative, ‘forgive’. Ei ti echete kata tinos, ‘if you have anything against anyone’, is broad. Ho patēr humōn ho en tois ouranois, ‘your Father who is in heaven’, is the only occurrence of this phrase in Mark, and paraptōmata, ‘trespasses’, occurs only here in Mark; both are the language of Matthew's teaching on prayer.",
+      "words": ["G3752", "G4739", "G4336", "G0863H", "G2192", "G2596", "G3962", "G3772", "G3900"],
+      "text": "Verse 26, ‘But if you do not forgive, neither will your Father in heaven forgive your trespasses’, is absent from Codex Sinaiticus, Codex Vaticanus, and other early witnesses and is omitted in critical editions. It appears in the Textus Receptus, the Byzantine text, and the King James Version, and closely matches Matthew 6:15, from which it was probably added. The BSB leaves the number empty.",
+      "history": "Standing was the usual posture of prayer in Israel (1 Samuel 1:26, 1 Kings 8:22, Luke 18:11-13). The central prayer of the synagogue liturgy came to be called the Amidah, ‘the standing’ prayer, because it was said on one's feet.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Forgiving others is bound up with receiving God's forgiveness. Jesus does not make human forgiveness the price of God's, but he makes the unforgiving heart incompatible with the prayer that asks mercy for itself."
+        }
+      ],
+      "parallels": ["Matthew 6:14-15"],
+      "refs": ["Matthew 6:12-15", "Matthew 18:21-35", "Colossians 3:13", "1 Samuel 1:26"]
+    },
+    {
+      "v": "27-28",
+      "context": "Back in the temple, the chief priests, scribes, and elders confront Jesus: by what authority does he do these things, and who gave it to him? These are the three groups Jesus named in his first passion prediction (8:31), the leadership of the council. The question opens a series of controversies that fills chapter 12.",
+      "grammar": "En tō hierō peripatountos autou, ‘as he was walking in the temple’, is a genitive absolute. The question has two parts: en poia exousia tauta poieis, ‘by what kind of authority are you doing these things’, and tis soi edōken tēn exousian tautēn, ‘who gave you this authority’. Poios asks about the nature of the authority; tis asks about its source. ‘These things’ most naturally means the action in the temple, though it may include the entry and the teaching.",
+      "words": ["G2064", "G3825", "G2414", "G2411", "G4043", "G0749", "G1122", "G4245G", "G4169", "G1849", "G4160G", "G1325"],
+      "history": "The Sanhedrin in Jerusalem, the council that handled Jewish affairs under the Roman governor, was made up of the chief priests, the scribes (experts in the law), and the elders (heads of leading lay families), with the high priest presiding. That all three came together shows the question was an official challenge from the council's constituent groups.",
+      "parallels": ["Matthew 21:23", "Luke 20:1-2"],
+      "refs": ["Mark 8:31", "Mark 1:22", "Mark 2:10", "Mark 14:53"]
+    },
+    {
+      "v": "29-30",
+      "context": "Jesus answers with a counter-question, a recognized method of debate among Jewish teachers: was John's baptism from heaven or from men? The question is not an evasion. If John was sent by God, then the one John pointed to has his authority from God too.",
+      "grammar": "Eperōtēsō humas hena logon, ‘I will ask you one question’: logos here means a matter or question. Apokrithēte moi, ‘answer me’, is an aorist imperative, and Mark alone has Jesus repeat it at the end of verse 30. Ex ouranou, ‘from heaven’, is a reverent way of saying ‘from God’, as in Daniel 4:26, where ‘Heaven rules’ means God rules. Ex anthrōpōn, ‘from men’, means of merely human origin.",
+      "words": ["G2424G", "G1905", "G1520", "G3056", "G0611", "G4483", "G1849", "G0908", "G2491G", "G3772", "G0444"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The question makes the recognition of Jesus' authority depend on the recognition of God's earlier word through John. Mark began with John as the messenger preparing the Lord's way (1:2-8); to accept John is already to be pointed toward Jesus, and to refuse John is to refuse the sign God gave."
+        }
+      ],
+      "parallels": ["Matthew 21:24-25", "Luke 20:3-4"],
+      "refs": ["Mark 1:2-8", "Daniel 4:26", "John 1:6-8", "Luke 7:29-30"]
+    },
+    {
+      "v": "31-33",
+      "context": "The leaders reason among themselves. If they say ‘from heaven’, Jesus will ask why they didn't believe John; if they say ‘from men’, they fear the people, who all held John to be a prophet. They answer ‘we do not know’, and Jesus declines to tell them. Their silence is a verdict on themselves.",
+      "grammar": "Dielogizonto pros heautous, ‘they were reasoning among themselves’, lets the reader overhear their calculation. Verse 32 breaks off: all' eipōmen ex anthrōpōn, ‘but shall we say, from men?’, and Mark finishes the thought as narrator, a broken sentence (aposiopesis) that shows their paralysis. Hapantes gar eichon ton Iōannēn ontōs hoti prophētēs ēn, ‘for all held John really to have been a prophet’, lifts John to the front of the clause, a construction called prolepsis. Ouk oidamen, ‘we do not know’, is a perfect of the verb ‘know’; oude egō legō humin, ‘neither do I tell you’, uses an emphatic egō.",
+      "words": ["G1260", "G1438", "G3772", "G4483", "G4100", "G0444", "G5399", "G0537", "G2491G", "G3689", "G4396", "G6063", "G3761", "G1473"],
+      "history": "John's standing with the people is confirmed by Josephus, who says that when Herod Antipas's army was destroyed by the Nabatean king Aretas IV in AD 36, some Jews thought it God's just punishment for Herod's killing of John, a good man (Antiquities 18.116-119).",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The leaders refuse to decide in order to protect themselves, and the refusal becomes their answer. Jesus does not force revelation on those who will not follow the light already given; withholding the answer is itself a judgment."
+        }
+      ],
+      "parallels": ["Matthew 21:25-27", "Luke 20:5-8"],
+      "refs": ["Mark 6:20", "Matthew 21:32", "John 12:42-43", "Mark 12:12"]
+    }
+  ]
+}

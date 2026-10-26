@@ -1,0 +1,393 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Luke states the parable's point before telling it: the disciples must pray always and not lose heart. The setting is the end of chapter 17, where the day of the Son of Man may be long in coming; the parable is for the time of waiting.",
+      "grammar": "Pros to dein pantote proseuchesthai autous, literally ‘with reference to its being necessary for them always to pray’, uses dei, the word of divine necessity Luke used of the Son of Man's suffering (17:25): prayer is not optional for disciples. Proseuchesthai is a present infinitive, continuing action. Mē egkakein (\"not lose heart\") uses a verb that means to grow weary or give up, which Paul uses for not losing heart in ministry and in doing good (2 Corinthians 4:1, Galatians 6:9). Luke's habit of announcing a parable's purpose appears again in verse 9.",
+      "words": ["G3850", "G1163", "G3842", "G4336", "G1573"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The verse makes persistence the mark of Christian prayer and names its enemy: not unbelief first, but weariness. Prayer ‘at all times’ is set within the long wait for the Son of Man, so it is the ordinary breath of a people who hope."
+        }
+      ],
+      "refs": ["1 Thessalonians 5:17", "Luke 11:5-10", "Colossians 4:2", "Romans 12:12", "Galatians 6:9"]
+    },
+    {
+      "v": "2-3",
+      "context": "Two characters: a judge who fears neither God nor people, and a widow who keeps coming to him demanding justice against her opponent. The judge fails both duties the Law gave judges; the widow has only her persistence.",
+      "grammar": "Theon mē phoboumenos kai anthrōpon mē entrepomenos (\"neither feared God nor respected men\") uses two present participles for a settled character; entrepomai means to have regard for or feel shame before. In verse 3 ērcheto (\"kept appealing\"), literally ‘she kept coming’, is an imperfect of repeated action. Her plea ekdikēson me apo tou antidikou mou, ‘give me justice against my adversary’, uses ekdikeō, a legal verb for vindicating a wronged party, and antidikos, an opponent in a lawsuit (12:58).",
+      "words": ["G2923", "G5399", "G1788", "G5503", "G2064", "G1556", "G0476"],
+      "history": "The pairing of piety toward God with regard for people was a stock way of describing a person's whole character. Josephus describes King Jehoiakim in almost the same terms, as neither reverent toward God nor fair toward men (Antiquities 10.83). The widow's position draws on the Law's repeated care for widows and orphans (Exodus 22:22-24, Deuteronomy 24:17) and on stories like the widow of Tekoa, who brought her case before King David (2 Samuel 14:4-11).",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The widow is the Old Testament's standing test of justice, and a judge who will not hear her is the prophets' picture of a corrupt court (Isaiah 1:23). The parable assumes God's own commitment to her cause (Psalm 68:5) and builds its argument on it."
+        }
+      ],
+      "refs": ["Deuteronomy 10:18", "Isaiah 1:17", "Isaiah 1:23", "Psalm 68:5", "2 Chronicles 19:6-7"]
+    },
+    {
+      "v": "4-5",
+      "context": "The judge talks to himself, like the rich fool and the dishonest manager (12:17-19, 16:3-4). He admits his own character without embarrassment and decides to act, not out of justice, but to be rid of her.",
+      "grammar": "Ouk ēthelen epi chronon (\"For a while he refused\") is an imperfect: he kept refusing. His soliloquy begins with a concession, ei kai (‘even though’), in which he repeats the narrator's description of himself. Dia ge to parechein moi kopon, ‘yet because this widow is causing me trouble’, uses the emphatic particle ge. The purpose clause hina mē eis telos erchomenē hupōpiazē me has two debated phrases. Eis telos can mean ‘in the end’ or ‘continually’. Hupōpiazō is a boxing term, literally to strike under the eye, which Paul uses for disciplining his own body (1 Corinthians 9:27); the judge may fear a literal black eye, or public disgrace, or simply being worn out, as the BSB's \"wearing me out\" takes it.",
+      "words": ["G2309", "G5550", "G5399", "G1788", "G2873", "G1556", "G5056", "G5299"],
+      "refs": ["Luke 11:7-8", "Luke 12:17-19", "Luke 16:3-4", "1 Corinthians 9:27"]
+    },
+    {
+      "v": "6-7",
+      "context": "The Lord interprets. If a judge like that gives in, how much more will God give justice to his own chosen ones who cry to him day and night. The argument runs from the lesser to the greater, and by contrast: God is nothing like this judge.",
+      "grammar": "Ho kritēs tēs adikias, ‘the judge of unrighteousness’ (\"the unjust judge\"), uses the same Semitic genitive as ‘the manager of unrighteousness’ (16:8). Luke again calls Jesus ho kurios, ‘the Lord’. Ou mē poiēsē, the strongest form of negation in Greek (ou mē with the aorist subjunctive), here in a question, expects an emphatic yes. Tōn eklektōn autou (\"His elect\") uses eklektos, which appears in Luke only here and at 23:35, where the rulers mock Jesus as God's Chosen One. The last clause, kai makrothumei ep' autois, is one of the hardest in Luke. It may continue the question, ‘and will he delay long over them?’ (the BSB's \"Will He continue to defer their help?\"), or it may be a statement, ‘even if he is patient with them’, describing God's forbearance, possibly toward the oppressors.",
+      "words": ["G2923", "G0093", "G2962G", "G1557", "G1588", "G0994", "G3114"],
+      "history": "The wording closely echoes the Greek of Sirach 35:19 (35:22 in some English Bibles), where the Lord hears the cry of the orphan and the widow, will not delay, and will not be patient (makrothumēsei) with the merciless until he crushes them. Many commentators take that background to mean that ‘them’ in Luke may be the elect's oppressors, toward whom God will not be endlessly patient.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The verse grounds persistent prayer not in overcoming God's reluctance but in his character and his choice of his people. The cry ‘day and night’ is heard by one who is already committed to the ones crying."
+        },
+        {
+          "id": "election",
+          "note": "Those who pray are called God's elect. Luke uses the word here not to raise a question of who is chosen but to comfort the praying community: they belong to God, and he will not abandon their cause."
+        }
+      ],
+      "refs": ["Revelation 6:10", "Psalm 88:1", "2 Peter 3:9", "Luke 23:35", "Romans 8:33"]
+    },
+    {
+      "v": "8",
+      "context": "Jesus promises that God will act speedily, and then turns the question around: when the Son of Man comes, will he find faith on the earth? The real uncertainty is not God's faithfulness but the disciples'.",
+      "grammar": "En tachei can mean ‘quickly’ or ‘suddenly’. If ‘quickly’, the promise sits in tension with the delay the parable assumes; if ‘suddenly’, God's vindication may seem slow but will arrive without warning, like the day of 17:24-30. Plēn (\"Nevertheless\") turns the sentence. Ara, an interrogative particle that often signals doubt, makes the question uncertain in tone: ‘will he really find...?’ Tēn pistin has the article, ‘the faith’, probably meaning this kind of faith, the persevering trust of the widow.",
+      "words": ["G1557", "G5034", "G4133", "G5207", "G0687", "G2147", "G4102G"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith here is endurance: continuing to cry to God when his answer seems slow. The verse leaves the question open for each hearer, which is why the chapter goes on to show who in fact has faith."
+        },
+        {
+          "id": "return",
+          "note": "The parable is set within the expectation of the Son of Man's coming, and the vindication of God's people is tied to that day. Prayer is the posture of the church between the ascension and the return."
+        }
+      ],
+      "refs": ["Luke 17:24-30", "Luke 21:36", "Hebrews 10:36-39", "2 Peter 3:8-9"]
+    },
+    {
+      "v": "9",
+      "context": "Luke again states a parable's point in advance. This one is aimed at people who trust in themselves that they are righteous and treat everyone else as nothing. The two faults belong together: self-trust and contempt.",
+      "grammar": "Pepoithotas eph' heautois hoti eisin dikaioi, ‘who had been persuaded in themselves that they were righteous’, uses a perfect participle of peithō, a settled confidence. The phrasing is close to Ezekiel 33:13, where a righteous man \"trusts in his righteousness\". Exouthenountas (\"viewed others with contempt\"), a present participle, means to treat as nothing; Luke uses it again of Herod treating Jesus with contempt (23:11). Tous loipous, ‘the rest’, is sweeping: everyone else.",
+      "words": ["G3982", "G1342", "G1848", "G3062", "G3850"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse names a sin that thrives among the religious: confidence in one's own righteousness that shows itself as contempt for others. Luke does not identify it with any group; the parable that follows can indict anyone, including those who read it."
+        }
+      ],
+      "refs": ["Ezekiel 33:13", "Luke 16:15", "Romans 10:3", "Philippians 3:4-9", "Luke 10:29"]
+    },
+    {
+      "v": "10",
+      "context": "Two men go up to the temple to pray. One is a Pharisee, the model of admired piety; the other a tax collector, the model of collaboration and dishonesty. Jesus' hearers would have had their verdict ready before the story began.",
+      "grammar": "Anebēsan (\"went up\") is the ordinary verb for going up to Jerusalem and the temple mount, and verse 14 will close the scene with katebē, ‘went down’. The two verbs frame the story like the entrance and exit of a stage. Ho heis... ho heteros (‘the one... the other’) sets them side by side before any contrast is drawn. Hieron (\"temple\") is the whole temple precinct with its courts, where the people prayed.",
+      "words": ["G0305", "G2411", "G4336", "G5330", "G5057"],
+      "history": "Prayer at the temple was tied to the sacrifices. The morning and afternoon offerings (Exodus 29:38-42) were hours of prayer (Acts 3:1), and the incense offering that Zechariah performed at the start of Luke took place while the people prayed outside (1:10). Luke's Gospel begins and ends in the temple (1:9, 24:53), and this parable places God's verdict on two men there.",
+      "refs": ["Luke 1:9-10", "Acts 3:1", "Luke 24:53", "Psalm 122:1"]
+    },
+    {
+      "v": "11-12",
+      "context": "The Pharisee's prayer is a thanksgiving, a proper form of prayer, but its content is himself. He thanks God for what he is not, singles out the tax collector behind him, and lists practices that go beyond what the Law required.",
+      "grammar": "Statheis pros heauton can go with \"stood\" (‘stood by himself’, the BSB) or with ‘prayed’ (‘prayed to himself’ or ‘about himself’); the manuscripts vary the position of tauta, which affects the reading. Eucharistō soi (‘I thank You’) is the same verb the Samaritan used in thanks to Jesus (17:16), but here it introduces comparison. The Pharisee uses the first person five times in two verses. Hoi loipoi tōn anthrōpōn, ‘the rest of mankind’, takes up ‘the rest’ of verse 9. His list, harpages (‘swindlers’), adikoi (‘evildoers’, or ‘unjust’), moichoi (‘adulterers’), ends with hōs houtos ho telōnēs, ‘or even like this tax collector’, a dismissive demonstrative. Dis tou sabbatou, ‘twice of the week’, uses sabbaton in the sense of ‘week’. Ktōmai (\"acquire\") means what he gets or buys, not only what he produces.",
+      "words": ["G2476", "G1438", "G4336", "G2168", "G3062", "G0727", "G0094", "G3432", "G3522", "G1364", "G4521", "G0586", "G2932"],
+      "text": "Some manuscripts place tauta (‘these things’) before pros heauton, others after, and a few omit pros heauton. If the phrase goes with ‘prayed’, the King James Version's ‘prayed thus with himself’ results; if with ‘stood’, the modern ‘stood by himself’. The difference changes the picture slightly (a man praying inwardly, or a man standing apart), not the parable's point.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Thanksgiving is right and commanded; the Pharisee's fault is that his thanks become a report of his own merits and a verdict on another worshiper. The verse shows prayer that addresses God while measuring oneself against people."
+        }
+      ],
+      "refs": ["Psalm 17:3-5", "Luke 16:15", "Matthew 23:23", "Isaiah 65:5", "Luke 11:42"]
+    },
+    {
+      "v": "13",
+      "context": "The tax collector stands far off, will not lift his eyes, beats his breast, and prays a single sentence. He compares himself to no one and names himself ‘the sinner’.",
+      "grammar": "Makrothen hestōs (\"stood at a distance\") uses the same adverb as the rich man seeing Abraham ‘from afar’ (16:23). Etupten (\"he beat\") is an imperfect: he kept striking his breast. His prayer is theos, hilasthēti moi tō hamartōlō. Hilasthēti is an aorist passive imperative of hilaskomai, a verb of atonement: ‘be propitiated’, ‘be reconciled’, ‘make atonement’. It is not the usual verb for asking mercy, eleeō, which the lepers and the blind man use (17:13, 18:38). The Septuagint uses it in Psalm 79:9 for ‘atone for our sins’. Tō hamartōlō has the article, ‘the sinner’: not one sinner among many, but the sinner in view, which answers the Pharisee's ‘this tax collector’.",
+      "words": ["G5057", "G3113", "G2476", "G3788", "G5180", "G4738", "G2433", "G0268"],
+      "history": "The word family of hilaskomai belongs to the temple. In the Septuagint the gold lid of the ark, the kapporet, is called the hilastērion (Exodus 25:17, 25:22), usually translated \"mercy seat\". On the Day of Atonement the high priest sprinkled blood on it for the sins of the people (Leviticus 16:14-15). A man praying hilasthēti in the temple courts, within sight of the altar, is asking God to do for him what the sacrifices signified. Kenneth Bailey (Through Peasant Eyes, 1980) argued that the parable pictures the time of the atonement offering, though the text does not say so.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The prayer asks God to deal with sin by atonement, not by overlooking it. The New Testament answers it in Christ: Paul calls him the hilastērion \"through faith in His blood\" (Romans 3:25), and Hebrews uses this same verb of Christ making atonement for the sins of the people (Hebrews 2:17)."
+        },
+        {
+          "id": "repentance",
+          "note": "His repentance consists of true speech about himself before God: he brings no achievements, compares himself to no one, and asks only for what God alone can give."
+        }
+      ],
+      "refs": ["Psalm 51:1-4", "Psalm 79:9", "Leviticus 16:14-16", "Romans 3:25", "Hebrews 2:17"]
+    },
+    {
+      "v": "14",
+      "context": "Jesus gives the verdict: this man, not the other, went home justified. The saying that follows repeats 14:11 and states the rule of the kingdom's reversals.",
+      "grammar": "Katebē houtos dedikaiōmenos eis ton oikon autou, ‘this man went down to his house justified’: dedikaiōmenos is a perfect passive participle, a state resulting from God's act (a divine passive: God is the one who justifies). Par' ekeinon, ‘rather than that one’, is a comparative use of para that functions as an exclusion; the Pharisee is not justified at all. The closing saying uses two future passives, tapeinōthēsetai (‘will be humbled’) and hupsōthēsetai (‘will be exalted’), with God again the implied actor.",
+      "words": ["G2597", "G1344", "G3624G", "G3844", "G1565", "G5312", "G5013"],
+      "text": "The earliest manuscripts read par' ekeinon, ‘rather than that one’. Later manuscripts, followed by the Textus Receptus, read ē ekeinos, ‘than that one’. The sense is unchanged. Amy-Jill Levine has suggested that para might mean ‘alongside’ that one, so that both men are justified; most commentators judge that the reversal saying rules this out.",
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The verse is the Gospel's clearest statement that God declares in the right the one who pleads for mercy, not the one who presents his record. Protestant and Roman Catholic traditions differ over whether justification is God's verdict alone or also includes the renewal of the person, but both read this verse as God's gift to the humble, received without merit."
+        }
+      ],
+      "refs": ["Luke 14:11", "Romans 4:5", "1 Peter 5:5-6", "James 4:10", "Isaiah 57:15"]
+    },
+    {
+      "v": "15-16",
+      "context": "People bring even infants to Jesus for his touch; the disciples rebuke them; Jesus calls the children to himself and says the kingdom belongs to such as these. Luke here rejoins Mark's order, and the scene answers the parable just told: the kingdom goes to those who bring nothing.",
+      "grammar": "Prosepheron (\"were bringing\") is imperfect, a repeated scene. Kai ta brephē, ‘even the infants’, uses brephos, a baby, where Mark has paidia, ‘children’. Hina autōn haptētai (\"to place His hands on them\") is literally ‘that he might touch them’. Epetimōn (\"they rebuked\") is the same imperfect used of those who rebuke the blind man in verse 39. Jesus' command pairs aphete (\"Let\") with mē kōluete (\"do not hinder\"), a present imperative forbidding an action already under way. Tōn toioutōn (\"to such as these\") means those who are like them, not only children.",
+      "words": ["G4374", "G1025", "G0681", "G2008", "G4341", "G0863I", "G3813", "G2967", "G5108"],
+      "parallels": ["Mark 10:13-16", "Matthew 19:13-15"],
+      "history": "Parents brought children to respected figures for blessing, as Jacob blessed Joseph's sons with his hands on their heads (Genesis 48:14). Mark's account includes Jesus' indignation with the disciples and his taking the children in his arms (Mark 10:14, 10:16); Luke omits both, as Matthew does, keeping the focus on the saying.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom belongs to the helpless and dependent. The verse has been cited on both sides of the infant baptism debate (Calvin, Institutes 4.16.7, for it; Tertullian, On Baptism 18, counseling delay), and believer-baptist traditions reply that it speaks of blessing, not baptism. Its plain teaching is that no one is too small or too empty-handed to be welcome."
+        }
+      ],
+      "refs": ["Genesis 48:14", "Mark 10:13-16", "Matthew 18:3-4", "Psalm 131:2"]
+    },
+    {
+      "v": "17",
+      "context": "Jesus adds a solemn rule: whoever does not receive the kingdom like a little child will not enter it. The saying turns from the children to the adults who brought them and the disciples who tried to stop them.",
+      "grammar": "Amēn legō humin (\"Truly I tell you\") introduces a solemn declaration, a formula distinctive of Jesus. Hos an mē dexētai, ‘whoever does not receive’, uses the aorist subjunctive of dechomai, the verb of welcoming a guest. Hōs paidion (\"like a little child\") is ambiguous: most take it as ‘as a child receives it’, with trust and without claims, while some read ‘receive the kingdom as one receives a child’. Ou mē eiselthē is the emphatic double negative, ‘will never enter’.",
+      "words": ["G0281", "G1209", "G0932", "G3813", "G1525"],
+      "parallels": ["Mark 10:15", "Matthew 18:3"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The kingdom is received, not achieved. Placed after the tax collector and before the rich ruler, the verse states the chapter's theme: the only way in is with open, empty hands."
+        }
+      ],
+      "refs": ["Matthew 18:3", "John 3:3-5", "Luke 9:48", "Mark 10:15"]
+    },
+    {
+      "v": "18",
+      "context": "A ruler asks Jesus the question the lawyer asked in 10:25, nearly word for word: what must I do to inherit eternal life? He adds the address ‘Good Teacher’, which draws Jesus' first response.",
+      "grammar": "Tis... archōn (\"a certain ruler\"): only Luke calls him a ruler; Matthew says he was young (Matthew 19:20), and Mark says only ‘one’. Didaskale agathe (\"Good Teacher\") is vocative. Ti poiēsas zōēn aiōnion klēronomēsō, literally ‘having done what shall I inherit eternal life?’, pairs an aorist participle of doing with a future of inheriting. The Greek is identical to the lawyer's question in 10:25 except for the added ‘good’. The question assumes that eternal life is gained by some act, though ‘inherit’ is a family word: an inheritance is received, not earned.",
+      "words": ["G0758", "G1320", "G0018", "G4160G", "G2222", "G0166", "G2816"],
+      "parallels": ["Mark 10:17", "Matthew 19:16"],
+      "refs": ["Luke 10:25", "Mark 10:17", "Matthew 19:16", "John 3:16"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus answers the address before the question: why call him good, when no one is good but God alone? The reply forces the ruler to consider what he is saying about the one he addresses.",
+      "grammar": "Ti me legeis agathon, ‘why do you call me good?’, puts me (‘me’) early for emphasis. Oudeis agathos ei mē heis ho theos, ‘no one is good except one, God’, echoes the Shema of Deuteronomy 6:4, where the Septuagint says the Lord is heis, ‘one’. Mark 10:18 has the same wording. Matthew 19:17 reshapes it: ‘Why do you ask me about what is good? There is one who is good.’ Many interpreters think Matthew adjusted the wording to avoid the misunderstanding that Jesus denied his own goodness.",
+      "words": ["G5101", "G3004H", "G0018", "G3762", "G1520", "G2316"],
+      "parallels": ["Mark 10:18", "Matthew 19:17"],
+      "history": "In the fourth century Arian writers cited this verse to argue that the Son is not good in the way the Father is, and so not fully God. Ambrose answered them (Exposition of the Christian Faith, book 2) that Jesus said ‘God alone’, not ‘the Father alone’, and that the one God's goodness belongs to the Son as well. Many later readers add that Jesus was testing whether the ruler understood what he was saying: if only God is good and Jesus is good, the ruler was nearer the truth than he knew.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The verse does not deny Christ's goodness or deity; it sets the question before the ruler. Read with the whole Gospel, where Jesus forgives sins, receives thanks as glory to God (17:15-18), and calls people to follow him in place of their possessions, the church hears in it an invitation to recognize God present in the teacher."
+        },
+        {
+          "id": "attributes",
+          "note": "‘No one is good except God alone’ states God's goodness as underived and unique. Every other goodness is received from him, which is why the ruler's confidence in his own record is already in question."
+        }
+      ],
+      "refs": ["Deuteronomy 6:4", "Mark 10:18", "Matthew 19:17", "Psalm 119:68", "James 1:17"]
+    },
+    {
+      "v": "20-21",
+      "context": "Jesus points the ruler to the commandments of the second table of the Ten Commandments, those about the neighbor. The ruler answers that he has kept all of them since his youth. Jesus does not dispute the claim.",
+      "grammar": "Tas entolas oidas (\"You know the commandments\") uses oida, ‘you know’, with the commandments first for emphasis. The four prohibitions are mē with the aorist subjunctive (mē moicheusēs, mē phoneusēs, mē klepsēs, mē pseudomarturēsēs), a standard Greek form for forbidding, where the Septuagint's Decalogue uses ou with the future (‘you shall not’). The fifth commandment follows as a present imperative, tima (\"honor\"). The ruler's ephulaxa (\"I have kept\") is an aorist summarizing his life, and ek neotētos (\"from my youth\") probably means since he became responsible for the commandments.",
+      "words": ["G1785", "G6063", "G3431", "G5407", "G2813", "G5576", "G5091", "G5442G", "G3503"],
+      "parallels": ["Mark 10:19-20", "Matthew 19:18-20"],
+      "ot": [
+        {
+          "ref": "Exodus 20:12-16",
+          "note": "Jesus cites five of the Ten Commandments (Exodus 20:12-16, Deuteronomy 5:16-20). The Hebrew order is murder, adultery, theft, false witness; Luke's order, adultery first, matches the Nash Papyrus, some Septuagint manuscripts, and Romans 13:9, as the chapter note explains. Luke and Mark both place honoring parents last. Mark adds ‘do not defraud’ (Mark 10:19) and Matthew adds ‘love your neighbor as yourself’ (Matthew 19:19); Luke has neither. The commandments cited all concern the neighbor, which prepares for Jesus' next command, to give to the poor."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus sends the ruler first to the Law, taking it seriously as God's word. The Law is not dismissed as a path to life; it is shown to be unfinished in this man, who has kept its outward commands and not yet given his heart."
+        }
+      ],
+      "refs": ["Exodus 20:12-16", "Deuteronomy 5:16-20", "Romans 13:9", "Philippians 3:6"]
+    },
+    {
+      "v": "22",
+      "context": "Jesus names the one thing lacking. Sell everything, distribute to the poor, have treasure in heaven, and then come and follow. The last command is the heart of it: the ruler's wealth stands where Jesus should stand.",
+      "grammar": "Eti hen soi leipei (\"You still lack one thing\") uses leipō, ‘to be lacking’. Luke writes panta hosa echeis (‘everything you have’), where Mark has only hosa echeis (‘what you have’, Mark 10:21), making the demand total. Diados (‘distribute’), an aorist imperative of diadidōmi, is the verb Luke uses in Acts 4:35 for the distribution of goods in the Jerusalem church; Mark has the simpler dos, ‘give’. The aorists pōlēson and diados are one-time acts; the final akolouthei moi (\"follow Me\") is a present imperative, an ongoing way of life. Mark also notes that Jesus looked at him and loved him (Mark 10:21), which Luke omits.",
+      "words": ["G2089", "G3007", "G4453", "G1239", "G4434", "G2344", "G1204", "G0190"],
+      "parallels": ["Mark 10:21", "Matthew 19:21"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jesus locates the ruler's lack not in the commandments but in the grip of wealth, and he asks for its surrender as the way to follow him. Whether the command is binding on all disciples or aimed at what held this man is debated, as the chapter note sets out; what the verse makes plain is that possessions can occupy the place that belongs to Jesus."
+        },
+        {
+          "id": "justice-poor",
+          "note": "The wealth is not simply to be given up but given to the poor. Discipleship and care for the poor are joined in the same command, as in 12:33 and in the practice of the early church (Acts 4:34-35)."
+        }
+      ],
+      "refs": ["Luke 12:33", "Luke 14:33", "Acts 4:34-35", "Matthew 6:19-21", "Luke 19:8"]
+    },
+    {
+      "v": "23-25",
+      "context": "The ruler becomes very sad, for he is extremely rich. Unlike Mark and Matthew, Luke does not say he went away; Jesus speaks while looking at him. Then comes the saying about the camel and the needle.",
+      "grammar": "Perilupos (\"very sad\") is a strong word for deep grief, used of Jesus in Gethsemane in Mark 14:34. Ēn gar plousios sphodra (\"because he was extremely wealthy\") gives the reason with gar. Pōs duskolōs (\"How hard\") uses an exclamatory adverb, ‘with what difficulty’. The present eisporeuontai (‘are entering’) states a general truth. In verse 25 eukopōteron (\"easier\") introduces the same comparison form as 16:17. Luke's word for needle is belonē, a more literary word than Mark's and Matthew's rhaphis. W. K. Hobart (The Medical Language of St. Luke, 1882) counted it as a surgeon's term and evidence that Luke was a physician; Henry Cadbury (The Style and Literary Method of Luke, 1920) showed that such words were common in educated Greek and prove only that Luke wrote a good literary style.",
+      "words": ["G4036", "G4145", "G4970", "G1423", "G5536", "G2123", "G2574", "G6085", "G6011"],
+      "parallels": ["Mark 10:22-25", "Matthew 19:22-24"],
+      "text": "In verse 24 the words perilupon genomenon, ‘having become very sad’, are missing from Sinaiticus, Vaticanus, and a few other early witnesses, and some editions omit them; the BSB's \"Seeing the man's sadness\" reflects the longer text. In verse 25 a few late manuscripts read kamilon, ‘rope’, for kamēlon, ‘camel’, a change that softens the saying and is not original.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The saying makes entry into the kingdom for the rich humanly impossible, the largest animal through the smallest opening. The difficulty is not money itself but what it does to the heart, as the ruler's sadness shows. No softening of the image (a gate, a rope) survives the next verse, which admits the impossibility and turns to God."
+        }
+      ],
+      "refs": ["Mark 10:22-25", "Luke 6:24", "1 Timothy 6:9-10", "Mark 14:34"]
+    },
+    {
+      "v": "26-27",
+      "context": "The hearers ask, then who can be saved? If even the prosperous, whom they assumed God favored, cannot enter, what hope is there? Jesus answers that what is impossible with man is possible with God.",
+      "grammar": "Kai tis dunatai sōthēnai (\"Who then can be saved\") uses an aorist passive infinitive of sōzō: salvation is something done to a person. Jesus' answer is a balanced antithesis, ta adunata para anthrōpois dunata para tō theō estin, ‘the things impossible with people are possible with God’, with para in the sense of ‘in the sphere of’ or ‘in the power of’. Luke's form is shorter than Mark's, which includes ‘all things are possible with God’ (Mark 10:27).",
+      "words": ["G1410", "G4982", "G0102", "G1415", "G3844", "G2316"],
+      "parallels": ["Mark 10:26-27", "Matthew 19:25-26"],
+      "ot": [
+        {
+          "ref": "Genesis 18:14",
+          "note": "Jesus' answer echoes the Lord's question to Abraham when Sarah laughed at the promise of a son. The Hebrew asks hayippale mey'Yahweh davar, ‘is anything too wonderful (or too hard) for the LORD?’; the Septuagint renders it mē adunatei para tō theō rhēma, ‘is any word impossible with God?’, with the same adunat- root and the same para tō theō as Luke. Luke has already used the echo at the annunciation, when Gabriel tells Mary that no word from God will be impossible (1:37). The rich man's salvation is set alongside Isaac's birth and Jesus' conception as things only God can do."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse locates salvation entirely in God's power. It is impossible for the rich and, by implication, for anyone; it is possible because God does it. Zacchaeus, a rich man whom salvation reaches in the next chapter (19:9), is Luke's illustration."
+        }
+      ],
+      "refs": ["Genesis 18:14", "Luke 1:37", "Jeremiah 32:17", "Luke 19:9", "Zechariah 8:6"]
+    },
+    {
+      "v": "28-30",
+      "context": "Peter points out that the disciples have left their own things to follow Jesus. Jesus promises that no one who leaves home or family for the kingdom will fail to receive many times more now, and eternal life in the age to come. The ruler's question about eternal life is answered for those who did what he would not.",
+      "grammar": "Aphentes ta idia (\"we have left all we had\"), literally ‘having left our own things’, is an aorist participle, and ēkolouthēsamen (‘we followed’) an aorist: a decision made and a life begun. Jesus' answer opens with amēn legō humin and a double negative, hos ouchi mē apolabē (‘who will not receive’). Apolabē (‘receive back’) is the verb Abraham used of the rich man receiving his good things (16:25). Pollaplasiona, ‘many times as much’, is less specific than Mark's ‘a hundredfold’, and Luke omits Mark's ‘with persecutions’. Two phrases for time, en tō kairō toutō (‘in this time’) and en tō aiōni tō erchomenō (‘in the age to come’), set out the Jewish two-age scheme. Heneken tēs basileias tou theou (\"for the sake of the kingdom of God\") replaces Mark's ‘for my sake and for the gospel’.",
+      "words": ["G4074G", "G0863G", "G2398", "G0190", "G3614G", "G1135H", "G1118", "G0618", "G4179", "G2540", "G0165G", "G2222"],
+      "parallels": ["Mark 10:28-31", "Matthew 19:27-29"],
+      "text": "Critical editions read aphentes ta idia, ‘having left our own things’, in verse 28; the Byzantine text and the Textus Receptus read aphēkamen panta, ‘we have left all’, as in Mark 10:28, the source of the King James Version's ‘we have left all’. Verse 29 includes ‘wife’ in the list, which Mark lacks; the chapter note records how the word later entered some manuscripts of Matthew.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Jesus names family among the things disciples may leave for the kingdom, and he promises a greater family in return, the community of those who do God's will (8:21). The saying does not license abandoning one's responsibilities (1 Timothy 5:8); it ranks every loyalty below the kingdom."
+        },
+        {
+          "id": "hope",
+          "note": "The promise has two horizons: many times more in this age and eternal life in the age to come. What disciples give up is not lost but received back in a new form."
+        }
+      ],
+      "refs": ["Luke 5:11", "Luke 8:19-21", "Luke 14:26", "Mark 10:28-31", "1 Timothy 5:8"]
+    },
+    {
+      "v": "31",
+      "context": "Jesus takes the Twelve aside for the third and fullest prediction of his death. The third travel marker of the central section (13:22, 17:11) appears here in his own words: we are going up to Jerusalem. Only Luke adds that everything written by the prophets will be accomplished.",
+      "grammar": "Paralabōn (\"took aside\") is the verb of taking someone into one's company. Anabainomen (\"we are going up\") is present tense, the road already under way, and ‘we’ includes the disciples. Telesthēsetai panta ta gegrammena (‘all the things written will be accomplished’) pairs a future passive of teleō, ‘to bring to completion’, with a perfect passive participle, ‘the things that stand written’. Dia tōn prophētōn (‘through the prophets’) names the human writers; tō huiō tou anthrōpou is a dative that can mean ‘about the Son of Man’ or ‘for the Son of Man’, in the sense of what will be done to him.",
+      "words": ["G3880", "G1427", "G0305", "G2419", "G5055", "G1125", "G4396", "G5207"],
+      "parallels": ["Mark 10:32-34", "Matthew 20:17-19"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus reads his own death as the fulfillment of the prophets. Luke will make this his climax: the risen Christ explains everything written about him in Moses, the Prophets, and the Psalms (24:25-27, 24:44-46). The Messiah goes to Jerusalem not in spite of Scripture but because of it."
+        }
+      ],
+      "refs": ["Luke 9:22", "Luke 9:44", "Luke 22:37", "Luke 24:25-27", "Luke 24:44-46"]
+    },
+    {
+      "v": "32-33",
+      "context": "The prediction lists what will happen: handed over to the Gentiles, mocked, insulted, spit upon, flogged, killed, and on the third day raised. Luke's version names only the Gentiles, leaving out Mark's chief priests and scribes (Mark 10:33).",
+      "grammar": "Four future passives in verse 32 (paradothēsetai, empaichthēsetai, hubristhēsetai, emptusthēsetai) pile up what will be done to him: handed over, mocked, treated with insolence, spat on. In verse 33 the subject shifts: mastigōsantes apoktenousin, ‘having flogged him, they will kill him’, and then anastēsetai (\"He will rise\"), a future middle of anistēmi with Jesus as the subject of his own rising. Tē hēmera tē tritē (\"on the third day\") is the phrase the church's creed would keep (1 Corinthians 15:4).",
+      "words": ["G3860", "G1484", "G1702", "G5195", "G1716", "G3146", "G0615", "G5154", "G0450"],
+      "ot": [
+        {
+          "ref": "Isaiah 50:6",
+          "note": "The language of spitting and beating recalls the Servant of Isaiah 50:6, who gave his back to those who struck him and did not hide his face from spitting. The Hebrew has rok, ‘spittle’; the Septuagint has emptusmatōn, from the same root as Luke's emptusthēsetai. Luke does not quote Isaiah here, but verse 31 has just said that the prophets' writings will be fulfilled, and at the Last Supper Jesus quotes Isaiah 53:12 as written of himself (22:37)."
+        }
+      ],
+      "history": "Luke's own passion narrative records mockery (22:63, 23:11, 23:36, all with empaizō) but does not narrate the spitting or the Roman scourging that Mark describes (Mark 14:65, 15:15-20); Pilate twice offers to ‘punish’ Jesus and release him (23:16, 23:22). The prediction here is fuller than what Luke later narrates, which suggests he is not simply writing it back from his passion account.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The prediction ends not with death but with rising, and Jesus is its subject. The resurrection is part of the plan announced beforehand, not an unexpected reversal."
+        },
+        {
+          "id": "suffering",
+          "note": "The Messiah's path runs through humiliation at the hands of others. The verses tie the suffering of Jesus to the prophets' portrait of the Servant, giving his followers a pattern for suffering that is not meaningless."
+        }
+      ],
+      "refs": ["Isaiah 50:6", "Isaiah 53:3-5", "Luke 22:63", "Luke 23:11", "1 Corinthians 15:3-4"]
+    },
+    {
+      "v": "34",
+      "context": "Luke says three times, in three ways, that the disciples did not understand. The plainest prediction yet meets complete incomprehension, while the blind man in the next scene will see who Jesus is.",
+      "grammar": "The verse has three clauses: ouden toutōn sunēkan (‘they understood none of these things’), ēn to rhēma touto kekrummenon ap' autōn (‘this saying was hidden from them’), and ouk eginōskon ta legomena (‘they did not know what was being said’). Kekrummenon is a perfect passive participle: the meaning stood hidden. The passive suggests that God hid it for the time being, as Luke says after the second prediction (9:45) and on the Emmaus road (24:16), until the risen Christ opens their minds (24:45).",
+      "words": ["G4920", "G4487", "G2928", "G1097"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Understanding the cross is not a matter of clearer information; Jesus could hardly have spoken more plainly. The verse shows that grasping the meaning of his death and resurrection is given by God, as Luke 24 will show when the risen Lord opens the Scriptures and the disciples' minds."
+        }
+      ],
+      "refs": ["Luke 9:45", "Luke 24:16", "Luke 24:31", "Luke 24:45", "1 Corinthians 2:14"]
+    },
+    {
+      "v": "35-37",
+      "context": "Near Jericho a blind man sits begging by the road. Hearing a crowd, he asks what is happening and is told that Jesus of Nazareth is passing by. The healing that follows is the last miracle before Jerusalem.",
+      "grammar": "En tō engizein auton eis Ierichō, ‘as he drew near to Jericho’, uses Luke's articular infinitive; Mark and Matthew place the healing as Jesus was leaving the city. Epaitōn (\"begging\") is the verb the dishonest manager was too ashamed to take up (16:3). In verse 36 epunthaneto ti eiē touto (\"he asked what was happening\") has eiē, an optative in an indirect question. The optative had nearly disappeared from ordinary Greek, and in the New Testament this use of it is found almost only in Luke and Acts, one of the marks of Luke's literary style. Nazōraios (\"of Nazareth\") is the form Acts prefers; elsewhere in his Gospel Luke uses Nazarēnos (4:34, 24:19), which Mark uses here (Mark 10:47).",
+      "words": ["G1448", "G2410", "G5185", "G1871", "G3793", "G4441", "G1510", "G3480", "G3928"],
+      "parallels": ["Mark 10:46-47", "Matthew 20:29-30"],
+      "history": "Mark names the man Bartimaeus, son of Timaeus (Mark 10:46), and Matthew has two blind men (Matthew 20:30). Luke, like Matthew, does not give a name. The differences of place and number, and the harmonizations proposed since Calvin, are discussed in the chapter note. Blind beggars sat where the pilgrim road passed, and at Passover the Jericho road would have been crowded with Galileans heading up to Jerusalem.",
+      "refs": ["Mark 10:46-47", "Matthew 20:29-30", "Luke 16:3", "Luke 4:34"]
+    },
+    {
+      "v": "38-39",
+      "context": "The blind man calls Jesus Son of David and begs for mercy. Those at the front of the procession tell him to be quiet, as the disciples rebuked the parents of the infants (verse 15), and he cries out all the louder.",
+      "grammar": "Eboēsen (\"he called out\") is an aorist of boaō, the verb used of the elect who ‘cry out’ to God day and night in verse 7: the blind man is the widow's persistence in action. In verse 39 ekrazen (\"he cried out\") is an imperfect of krazō, a louder, rawer cry, kept up: he kept shouting. Pollō mallon (\"all the louder\") means ‘much more’. Huie Dauid (\"Son of David\") is vocative, a royal messianic title. Eleēson me (\"have mercy on me\") is the lepers' cry (17:13) in the singular. Proagontes (\"Those who led the way\") are people at the front of the crowd, and epetimōn is the same verb as the disciples' rebuke in verse 15.",
+      "words": ["G0994", "G2424G", "G5207", "G1138", "G1653", "G4254", "G2008", "G4601", "G2896"],
+      "parallels": ["Mark 10:47-48", "Matthew 20:30-31"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "A blind beggar gives Jesus the title of the promised king from David's line (2 Samuel 7:12-16), and Jesus does not silence him. The Son of David is about to enter Jerusalem (19:38), and he shows his kingship first by stopping for a beggar."
+        },
+        {
+          "id": "prayer",
+          "note": "The blind man's cry is the parable of verses 1-8 lived out: he will not be silenced, and he is heard. His words, joined to the tax collector's, stand behind the Jesus Prayer of Eastern Christianity."
+        }
+      ],
+      "refs": ["2 Samuel 7:12-16", "Isaiah 11:1", "Luke 1:32", "Luke 19:38", "Matthew 9:27"]
+    },
+    {
+      "v": "40-42",
+      "context": "Jesus stops, has the man brought to him, and asks what he wants. The man asks to see again, and Jesus grants it with a word, adding that his faith has saved him.",
+      "grammar": "Statheis (\"Jesus stopped\") is an aorist passive participle of histēmi: the procession halts for one man. Ekeleusen auton achthēnai (\"directed that the man be brought\") uses an aorist passive infinitive. Ti soi theleis poiēsō, ‘what do you want me to do for you?’, uses a deliberative aorist subjunctive. The man answers Kurie (\"Lord\"), where Mark has Rabbouni (Mark 10:51). Hina anablepsō, ‘that I may see again’, uses anablepō, which can mean to look up or to regain sight. Jesus' reply anablepson (\"Receive your sight\") is an aorist imperative: a word of command that does what it says. Hē pistis sou sesōken se repeats the perfect of 17:19: ‘your faith has saved you’.",
+      "words": ["G2476", "G2753", "G0071", "G2309", "G2962G", "G0308", "G4102G", "G4982"],
+      "parallels": ["Mark 10:49-52", "Matthew 20:32-34"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The man's faith is shown in his persistence and his confession of Jesus as Son of David and Lord. Jesus names that faith as the channel of his healing and salvation, which answers the question of verse 8: here, at least, the Son of Man finds faith on the earth."
+        }
+      ],
+      "refs": ["Luke 4:18", "Isaiah 35:5", "Luke 17:19", "Luke 7:22", "Isaiah 42:7"]
+    },
+    {
+      "v": "43",
+      "context": "The man sees at once, follows Jesus, and glorifies God, and all the people praise God. The chapter that began with a call to pray without losing heart ends with a healed man walking behind Jesus toward Jerusalem.",
+      "grammar": "Parachrēma (\"Immediately\") is a Lukan word: of its eighteen New Testament uses, sixteen are in Luke and Acts. Aneblepsen (\"he received his sight\") is an aorist, the healing done. Ēkolouthei (\"followed\") is imperfect, an ongoing following, the very thing the rich ruler would not do (verse 22). Doxazōn ton theon (\"glorifying God\") repeats the Samaritan's response (17:15). Pas ho laos (\"all the people\") uses laos, Luke's word for the people of Israel, and ainon (\"praise\") is a noun used in the Gospels only here and at Matthew 21:16.",
+      "words": ["G3916", "G0308", "G0190", "G1392", "G2992", "G0136"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Healing issues in following and in praise, both from the man and from the crowd. Luke closes the scene the way he closes many of Jesus' works, with God glorified (5:25-26, 7:16, 13:13), so that every healing becomes an occasion of worship directed to God."
+        }
+      ],
+      "refs": ["Luke 5:25-26", "Luke 7:16", "Luke 13:13", "Luke 17:15", "Acts 3:8-9"]
+    }
+  ]
+}

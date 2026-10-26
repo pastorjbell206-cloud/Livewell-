@@ -1,0 +1,394 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The verse is a hinge. It closes the storm oracle of 30:23-24 (“In the days to come you will understand this”) and opens the poems of chapter 31 with the covenant promise that governs everything after it. The phrase “all the families of Israel” reaches past Judah to the northern clans scattered by Assyria, which is why the next twenty verses speak so much to Ephraim and Samaria.",
+      "grammar": "The line is the covenant formula in its two halves, both built with the verb hayah plus the preposition le, ‘to become to someone as something’: ’ehyeh le’lohim, literally ‘I will become to them as God’, and yihyu li le‘am, ‘they will become to me as a people’. The imperfects look forward, and the two clauses are symmetrical, so the relationship is mutual even though God speaks first. The same formula returns word for word at the heart of the new covenant (verse 33). Mishpechot (\"families\") are clans, the middle level of Israel's kinship structure between the tribe and the household (Joshua 7:14 lays out the three levels).",
+      "words": ["H1961", "H4940", "H5971A"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Before any detail of return or rebuilding, the chapter states the goal: God belonging to his people and they to him. The formula first given at the exodus (Exodus 6:7) and in the covenant blessings (Leviticus 26:12) is here promised again to a people who had broken it, and to every clan of them."
+        }
+      ],
+      "text": "Printed Hebrew Bibles count this verse as 30:25, so through the rest of the chapter the Hebrew verse numbers run one lower than English ones: the new covenant is 31:30-33 in a Hebrew Bible and 31:31-34 in English. In the Septuagint, the ancient Greek translation, the whole chapter stands as chapter 38, because the Greek edition places the oracles against the nations earlier in the book.",
+      "refs": ["Jeremiah 30:22", "Exodus 6:7", "Leviticus 26:12", "Jeremiah 31:33"]
+    },
+    {
+      "v": "2",
+      "context": "The first poem opens by remembering the wilderness. A people who had escaped the sword (Pharaoh's army, or in the prophet's own day the Assyrian and Babylonian swords) found God's favor in the desert. The past becomes the pattern for the future: God met Israel once in a wilderness and will do it again.",
+      "grammar": "The verbs are perfects (matsa’ chen, ‘found favor’), and interpreters divide over their reference. Some read them as memory of the first exodus, when Israel came out of Egypt through the desert; others as a prophetic perfect describing the coming return as already done. The second half is hard Hebrew: halokh lehargi‘o is an infinitive absolute (‘going’) followed by ‘to give him rest’ with a causative (Hiphil) infinitive. The BSB takes Israel as the one who goes to find rest; others make God the subject, ‘when I went to give Israel rest’. Rest (the root raga‘) recalls the promised rest in the land (Deuteronomy 12:9) and the LORD's word to Moses, ‘my presence will go with you, and I will give you rest’ (Exodus 33:14).",
+      "words": ["H4672", "H2580", "H8300", "H1980H", "H7280B"],
+      "text": "The Septuagint reads differently: ‘I found him warm in the wilderness with those who perished by the sword; go, and do not destroy Israel.’ The Greek translator seems to have read the consonants of the Hebrew in another way (‘warm’ for ‘favor’) and divided the line differently. English Bibles follow the Hebrew.",
+      "refs": ["Exodus 33:14", "Deuteronomy 12:9", "Hosea 2:14-15", "Jeremiah 2:2"]
+    },
+    {
+      "v": "3",
+      "context": "The voice of the people speaks first (“The LORD appeared to us in the past”), and then God answers with the chapter's first declaration of love. The everlasting love is the reason for everything that follows: the rebuilding, the dancing, the return.",
+      "grammar": "Merachoq means ‘from afar’ and can be spatial or temporal. Read spatially, God appears to exiles far from Zion; read temporally, as the BSB does (“in the past”), it points back to the ancient covenant. The Hebrew says ‘to me’; the BSB's “to us” treats the speaker as the whole people, and the Septuagint reads ‘to him’. The declaration itself sets two perfects side by side: ’ahavat ‘olam ’ahavtikh, ‘with a love of perpetuity I have loved you’, and ‘al-ken meshakhtikh chesed, ‘therefore I have drawn you with loyal love’. The verb mashakh with chesed is an idiom also found in Psalm 36:10, where it means to prolong or continue steadfast love, so the line may mean ‘I have kept my loyal love going toward you’ as much as ‘I have drawn you’. Both senses fit the context. The ‘you’ is feminine singular, addressing Israel as the woman called “Virgin Israel” in the next verse.",
+      "words": ["H7350", "H7200G", "H0160", "H5769G", "H0157G", "H4900", "H2617A"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "God's love for Israel is ‘of perpetuity’, older than their sin and outlasting their exile. The verse grounds the promise of return not in Israel's repentance, which comes later in the chapter (verses 18-19), but in a love already in place."
+        },
+        {
+          "id": "election",
+          "note": "The love that chose Israel in the first place (Deuteronomy 7:7-8) is the same love that draws them back. Election in the Old Testament is God's persistent love for a people, and this verse shows it surviving judgment."
+        }
+      ],
+      "text": "Readers comparing English Bibles will notice “to us” (BSB, NIV) against ‘to me’ or ‘to him’ in others. The Hebrew has ‘to me’, the Greek ‘to him’; the difference affects who is speaking, not what is promised.",
+      "refs": ["Deuteronomy 7:7-8", "Hosea 11:4", "Psalm 36:10", "Malachi 1:2"]
+    },
+    {
+      "v": "4-5",
+      "context": "Three times the poem says “again” (Hebrew ‘od): again built, again the tambourines, again the vineyards. Each is a reversal of judgment. The farming picture in verse 5 is precise: the planters themselves will live to eat what they planted.",
+      "grammar": "“O Virgin Israel” is betulat Yisra’el. Amos had used the same title for the northern kingdom in a funeral song: ‘Fallen is Virgin Israel, never to rise again’ (Amos 5:2). Jeremiah, speaking largely to that same north, answers the lament with “you will be rebuilt” (a Niphal of banah, the passive of the verb in “I will build you”). In verse 5 the last verb, chillelu, is a Piel of chalal, ‘to make common’ or ‘to profane’, which the BSB rightly renders “enjoy the fruit”. The word comes from the law of first fruit: the fruit of a new planting was withheld for three years, given to God in the fourth, and brought into ordinary use only in the fifth (Leviticus 19:23-25; compare Deuteronomy 20:6, which uses the same verb for a man who has not yet ‘begun to enjoy’ his vineyard). The promise therefore means years of settled peace, long enough to see a vineyard through its waiting years.",
+      "words": ["H1129", "H1330", "H5193", "H2490I"],
+      "history": "Samaria was the capital of the northern kingdom until the Assyrians took it in 722 BC and deported much of the population (2 Kings 17:5-6). The hill country around it was vine country. Deuteronomy's list of covenant curses includes planting a vineyard and never using its fruit (Deuteronomy 28:30); these verses promise the curse lifted on the very hills where it had fallen. Tambourines and dancing were the women's celebration of victory and deliverance (Exodus 15:20, Judges 11:34, 1 Samuel 18:6).",
+      "refs": ["Amos 5:2", "Leviticus 19:23-25", "Deuteronomy 28:30", "Exodus 15:20", "Amos 9:14"]
+    },
+    {
+      "v": "6",
+      "context": "The poem's first movement ends with a call to worship. Watchmen on the hills of Ephraim, the north, summon the people to go up to Zion, the temple mountain in Jerusalem, in the south. The reunion of the divided kingdoms is imagined first as shared pilgrimage.",
+      "history": "After the kingdom split around 930 BC, Jeroboam set up golden calves at Bethel and Dan precisely so that northerners would stop going up to Jerusalem (1 Kings 12:26-30). Watchmen (notsrim, lookouts posted on high places) would normally give warning of attack; here they announce a festival. Hezekiah had once sent couriers through Ephraim inviting the north to Passover in Jerusalem, and most mocked them (2 Chronicles 30:1, 10-11). Jeremiah pictures that invitation finally accepted.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Restoration is not complete when people are back on their land; it is complete when they are gathered before God together. The first thing the reunited people do is go up to worship."
+        }
+      ],
+      "refs": ["1 Kings 12:26-30", "2 Chronicles 30:10-11", "Isaiah 2:3", "Psalm 122:1"]
+    },
+    {
+      "v": "7",
+      "context": "A new summons, now addressed to an unnamed crowd: sing for Jacob, shout for the head of the nations, and pray for the remnant. Joy and petition are mixed because the return is promised but not yet seen.",
+      "grammar": "Five plural imperatives (sing, shout, proclaim, praise, say) lead to a sixth, singular, addressed to God: hosha‘ YHWH, ‘Save, O LORD’. The Hiphil imperative of yasha‘ is the same verb, with the particle na’, as the cry hoshi‘ah na’ in Psalm 118:25, which became the ‘Hosanna’ of the Gospels. Rosh haggoyim (\"the foremost of the nations\") uses the phrase Amos had used sarcastically of Israel's complacent leaders (Amos 6:1); here the title is sincere.",
+      "words": ["H7442B", "H7218H", "H3467", "H7611"],
+      "text": "The Septuagint reads ‘The LORD has saved his people’, a statement of what God has done rather than a prayer, and a few English versions follow it. The Hebrew, followed by the BSB, keeps the prayer: “O LORD, save Your people.”",
+      "refs": ["Psalm 118:25", "Amos 6:1", "Isaiah 10:20-22", "Matthew 21:9"]
+    },
+    {
+      "v": "8-9",
+      "context": "God answers the prayer of verse 7 with “Behold, I will bring them.” The returning crowd includes the people least able to travel: the blind, the lame, pregnant women, women in labor. They come weeping, and God leads them by water on a road where no one falls. The reason given is family: God is Israel's father.",
+      "grammar": "Hini mevi’ is ‘here I am, bringing’, a participle with ‘behold’ that grammarians call the imminent future: the action is presented as already under way. In verse 9 bivkhi (\"with weeping\") and uvetachanunim (‘with pleas for mercy’) describe the returning people, and the tears may be grief, repentance, or joy; the text does not say which. Hayiti le’Yisra’el le’av, ‘I have become a father to Israel’, is a perfect stating an established relationship, and bekhori hu’, ‘he is my firstborn’, takes up God's words to Pharaoh, ‘Israel is my firstborn son’ (Exodus 4:22). Calling Ephraim the firstborn also recalls Jacob's crossing his hands to give Joseph's younger son the firstborn's blessing (Genesis 48:14-20).",
+      "words": ["H0935P", "H1065", "H8469", "H1961", "H0001G", "H1060"],
+      "text": "Where the Hebrew lists “the blind and the lame” (‘iwwer ufisseach), the Septuagint reads ‘at the feast of Passover’: the Greek translator read the consonants of pisseach (‘lame’) as pesach (‘Passover’). The Greek also makes the second half of verse 9 read ‘they went out with weeping, and with consolation I will bring them back’, which turns the weeping into the tears of the departure.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "The Old Testament rarely calls God Father, and when it does, as here, the word carries covenant commitment and care for the weak. The father who leads the blind and the lame on a level road is the background for the New Testament's confidence in God as Father."
+        }
+      ],
+      "refs": ["Exodus 4:22", "Genesis 48:14-20", "Isaiah 35:5-6", "Isaiah 49:10", "Micah 4:6-7"]
+    },
+    {
+      "v": "10-11",
+      "context": "The announcement goes out to the nations and the far coastlands. The same God who scattered Israel will gather them, and the reason is given in two verbs of redemption.",
+      "grammar": "Mezareh Yisra’el (\"The One who scattered Israel\") is a participle used as a title, so God is named by his act of judgment in the same breath as he is named shepherd. Verse 11 uses the two chief Hebrew verbs of redemption together. Padah (\"ransomed\") is release by payment, the verb used for redeeming a firstborn son or a donkey (Exodus 13:13). Ga’al (\"redeemed\") is the duty of the go’el, the next of kin who buys back family land or a family member sold into debt (Leviticus 25:25, 48-49; Ruth 4:4-6). Taken together they say God pays the price and does it as family. The enemy is chazaq mimmennu, ‘one too strong for him’, so the rescue is one Jacob could not have managed himself.",
+      "words": ["H2219", "H7462B", "H6299", "H1350A", "H2389"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Israel's return is described as redemption, not escape. God acts as kinsman-redeemer for a people held by a stronger power, the pattern the New Testament uses when it speaks of Christ's giving himself as a ransom (Mark 10:45)."
+        }
+      ],
+      "refs": ["Isaiah 40:11", "Ezekiel 34:12-13", "Leviticus 25:25", "Isaiah 43:1", "John 10:11"]
+    },
+    {
+      "v": "12-13",
+      "context": "Pilgrims arrive at Zion singing, and the land's goodness flows back: grain, new wine, oil, flocks, herds. Verse 13 turns from produce to people, from the harvest to the dancing of the young and old together, and names God as the one who turns mourning into joy.",
+      "grammar": "Venaharu (\"they will be radiant\") is from a verb meaning to shine or to stream; the same word describes Zion glowing as the nations' wealth streams in (Isaiah 60:5) and the faces of those who look to God (Psalm 34:5). The triad dagan, tirosh, yitshar (grain, new wine, oil) is the stock phrase for the land's blessing in Deuteronomy (Deuteronomy 7:13), and it is exactly what Hosea said Israel had credited to Baal instead of the LORD (Hosea 2:8). In verse 13 the verbs are consecutive perfects with God as subject: I will turn, I will comfort, I will make glad. The comfort verb, nicham, will return in verse 15, where Rachel refuses it.",
+      "words": ["H5102A", "H1715", "H8492", "H3323", "H2015", "H5162G"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The picture of hope is bodily and communal: food, drink, dancing, old and young together. Biblical hope does not float free of the earth; it restores the good things of creation to a forgiven people."
+        }
+      ],
+      "text": "The Septuagint renders “like a well-watered garden” as ‘like a fruitful tree’ and ends verse 12 with ‘they will not hunger any more’, a freer rendering of the Hebrew ‘they will not languish again’.",
+      "refs": ["Isaiah 58:11", "Hosea 2:8", "Psalm 30:11", "John 16:20", "Isaiah 61:3"]
+    },
+    {
+      "v": "14",
+      "context": "The first part of the chapter ends with God saturating priests and people alike. The priests are mentioned because a full temple means full altars, and full altars mean full portions for those who serve there.",
+      "grammar": "Rivveti (\"I will fill\") is a Piel of ravah, ‘to drench’ or ‘to saturate’, the verb of a well-watered field. The same root returns in verse 25 (hirveti, ‘I will refresh’) and in “well-watered” in verse 12, so the whole promise is told as the watering of dry ground. Deshen (\"abundantly\") means fat, and in sacrificial texts the fatty ash of the altar (Leviticus 6:10-11); it appears again at the chapter's end in ‘the valley of the dead bodies and ashes’ (verse 40, where the BSB has “the whole valley of the dead bodies and ashes”), where the same word names the ashes of Hinnom.",
+      "words": ["H7301", "H1880", "H5315G", "H3548", "H7646"],
+      "history": "Priests lived from the portions of the offerings brought to the altar (Leviticus 7:31-34; Numbers 18:8-19). When worship collapsed, so did their livelihood; Lamentations pictures priests groaning and dying in the ruined city (Lamentations 1:4, 19). Filling the priests with fat is a way of saying the sacrifices will flow again.",
+      "refs": ["Leviticus 7:31-34", "Numbers 18:8-19", "Psalm 36:8", "Lamentations 1:4"]
+    },
+    {
+      "v": "15",
+      "context": "The joy breaks off abruptly. From Ramah, a town north of Jerusalem, a mother's lament is heard: Rachel, ancestress of Joseph's tribes (Ephraim, Manasseh) and of Benjamin, weeps for children who are gone and refuses comfort. God does not rebuke her; he answers her in the next two verses.",
+      "grammar": "The verse stacks three words of grief: nehi (a lament song), bekhi (weeping), and tamrurim (bitterness). Rachel is mevakkah, a Piel participle, ‘weeping on and on’. Me’anah lehinnachem, “refusing to be comforted”, uses the same verb nicham as God's promise to comfort in verse 13. The last clause is literally ‘for he is not’: ’enennu is singular, though it refers to her many children. The singular treats the lost children as one loss, and it echoes the brothers' words about Joseph, ‘one is no more’ (Genesis 42:13, 36), Rachel's own firstborn.",
+      "words": ["H7414G", "H5092", "H1065", "H8563", "H7354", "H1058", "H3985", "H5162G", "H0369"],
+      "history": "Rachel died giving birth to Benjamin and was buried on the way to Ephrath (Genesis 35:16-20); 1 Samuel 10:2 puts her tomb at Zelzah in Benjamin's territory, near Ramah. Jeremiah 40:1 records that the Babylonians held Judah's captives in chains at Ramah before deporting them, so the town was literally a place of exile's departure. Later Jewish tradition developed the image: Rashi, commenting on Genesis 48:7, explains that Jacob buried Rachel by the road so that she could plead for her children when they were led past into exile, and he cites this verse. Midrash Lamentations Rabbah (Proem 24) tells of Rachel pleading for Israel when the patriarchs' pleas have failed, and God relenting for her sake.",
+      "nt": [
+        {
+          "ref": "Matthew 2:17-18",
+          "note": "Matthew quotes this verse after Herod's killing of Bethlehem's boys, introducing it as fulfilled. His Greek does not follow the Septuagint closely: the Greek of Jeremiah (38:15) has three nouns of lament and ‘would not cease’ over her ‘sons’, while Matthew reduces the lament to ‘weeping and great mourning’, speaks of her ‘children’, and has ‘would not be comforted’, which matches the Hebrew lehinnachem. In Jeremiah the verse stands at the edge of promised return, since verses 16-17 answer it at once. Matthew uses it the same way: Israel's old grief over exile is heard again at Jesus' birth, and the child who escapes is the one through whom the return promised to Rachel will come. The link is typological, a pattern of sorrow and answer, rather than a prediction of Herod's act."
+        }
+      ],
+      "refs": ["Genesis 35:16-20", "1 Samuel 10:2", "Jeremiah 40:1", "Genesis 42:36"]
+    },
+    {
+      "v": "16-17",
+      "context": "God speaks directly to Rachel. He does not dismiss her tears or tell her they were wrong; he gives her a reason to stop: her work has a reward, her children will come back, and there is hope for her future.",
+      "grammar": "Min‘i (\"Keep\", ‘restrain’) is a feminine singular imperative addressed to Rachel herself. The ground clause yesh sakhar lif‘ullatekh, ‘there is a reward for your work’, repeats almost word for word the prophet Azariah's encouragement to Asa (2 Chronicles 15:7). What her ‘work’ is, the text leaves open: her labor in bearing and raising children, or her weeping itself, heard as intercession. Verse 17 says yesh tiqvah le’acharitekh, ‘there is hope for your latter end’. ’Acharit means the outcome or future of something, and it pairs with tiqvah (\"hope\") in Jeremiah's letter to the exiles, ‘to give you a future and a hope’ (29:11). The repeated yesh, ‘there is’, answers the ’enennu, ‘he is not’, of verse 15.",
+      "words": ["H4513", "H7939", "H6468", "H3426", "H8615B", "H0319", "H7725G"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "God's answer to grief here is not a rebuke but a promise. The lament is heard as legitimate, and comfort comes by God's word about the future rather than by denying the loss. Scripture's pattern for consolation is set in these verses."
+        }
+      ],
+      "refs": ["2 Chronicles 15:7", "Jeremiah 29:11", "Proverbs 23:18", "Revelation 21:4"]
+    },
+    {
+      "v": "18-19",
+      "context": "Now God reports what he has overheard: Ephraim, the northern kingdom, mourning and confessing. The speech moves from complaint (you disciplined me) to prayer (bring me back) to confession (I repented, I was ashamed). God quotes it with evident tenderness.",
+      "grammar": "Shamoa‘ shama‘ti, ‘I have surely heard’, is an infinitive absolute before the finite verb, a Hebrew way of emphasizing certainty. Mitnoded (\"moaning\") is a Hithpael participle of a verb meaning to sway or rock, the motion of a mourner shaking his head. Yissartani va’iwwaser, ‘you disciplined me and I was disciplined’, puts the same root in active and passive forms: the discipline took effect. The prayer hashiveni ve’ashuvah is a wordplay on shuv, ‘turn’: the Hiphil ‘cause me to return’ followed by the Qal ‘and I will return’. The same pair, in the plural, closes the prayer of Lamentations (Lamentations 5:21). Verse 19 opens with ’acharei shuvi, ‘after my turning’, which can mean after I turned away (in sin) or after I turned back (in repentance); interpreters divide. Nichamti (\"I repented\") is the same verb as ‘comfort’ in verses 13 and 15, here in its sense of regret or change of mind.",
+      "words": ["H8085G", "H5110", "H3256", "H5695", "H7725G", "H7725H", "H5162H", "H3045", "H5606A", "H3409"],
+      "history": "Striking the thigh was a gesture of grief and alarm; Ezekiel is told to do the same when announcing the sword of Babylon (Ezekiel 21:12). The ‘untrained calf’ is a farming image Hosea had already used of Ephraim, a heifer that resists the yoke (Hosea 4:16; 10:11).",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Ephraim asks God to turn him so that he can turn. Repentance in this verse is both God's gift and the person's act, and Christian traditions that stress grace (Augustine, the Reformers) and those that stress human response have both appealed to it. The shame of verse 19 is not the end of the confession; it is the sign that the discipline has done its work."
+        }
+      ],
+      "refs": ["Lamentations 5:21", "Hosea 4:16", "Hosea 10:11", "Ezekiel 21:12", "Luke 15:17-19"]
+    },
+    {
+      "v": "20",
+      "context": "God answers Ephraim's confession not with terms but with a father's question: is not Ephraim my dear son? The verse admits the history of judgment (“I often speak against him”) and sets beside it a memory and a compassion that judgment did not cancel.",
+      "grammar": "The verse opens with a rhetorical question, haven yaqqir li ’Efrayim, ‘is Ephraim a precious son to me?’, expecting yes. Midei dabberi bo is ‘as often as I speak against him’, conceding that God's word has repeatedly condemned him. Then come two emphatic doublings, each an infinitive absolute before a finite verb: zakhor ’ezkerennu, ‘I surely remember him’, and rachem ’arachamennu, ‘I will surely have compassion on him’. Between them stands hamu me‘ai lo, literally ‘my inner parts are in turmoil for him’. Me‘im (inner organs) is the seat of deep feeling (Isaiah 16:11; 63:15; Song of Solomon 5:4). The verb racham belongs to the same root as rechem, ‘womb’, and in a poem that began with Rachel the mother (verse 15), the association with a mother's feeling is hard to miss, though the word's meaning rests on its use, not its etymology.",
+      "words": ["H1121A", "H3357", "H3206", "H8191", "H1696G", "H2142", "H1993", "H4578", "H7355"],
+      "history": "In synagogue use the opening of this chapter, through this verse, is the prophetic reading (haftarah) for the second day of Rosh Hashanah, the Jewish New Year, chosen for its theme of God remembering. The verse itself is also recited in the Remembrances (Zikhronot) section of the New Year's additional service.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "This verse is one of the Old Testament's clearest windows into God's heart. God speaks against sin and is still moved for the sinner; judgment and compassion are not two moods that alternate but two things true at once. Hosea 11:8 says the same of Ephraim, and Jesus' father running to his returning son (Luke 15:20) stands in this line."
+        }
+      ],
+      "refs": ["Hosea 11:8", "Isaiah 63:15", "Isaiah 49:15", "Luke 15:20"]
+    },
+    {
+      "v": "21",
+      "context": "After God's yearning, a string of commands to Virgin Israel: mark the road home, remember the way you went out, and come back to your cities. The road into exile becomes the road of return.",
+      "grammar": "All the imperatives are feminine singular, addressed to Israel as a woman. Tsiyyunim (\"roadmarks\") are stone markers, the word used for the grave marker in 2 Kings 23:17. Tamrurim (\"signposts\") is spelled exactly like tamrurim, ‘bitterness’, in verse 15 (the lexicons treat them as two different words), so the bitter weeping of Rachel and the signposts of return sound alike in Hebrew. Shiti libbekh lamsillah is literally ‘set your heart toward the highway’: remember it, pay attention to it. Then shuvi is repeated twice, ‘return, return’, the verb that will be turned into an accusation in the next line.",
+      "words": ["H5324", "H6725", "H8564", "H3820A", "H4546", "H7725G", "H1330"],
+      "text": "The Septuagint rendered tsiyyunim as ‘Zion’ (‘set yourself up, Zion’), reading the consonants as the name of the city; the Hebrew context of road markers makes the BSB's rendering the natural one.",
+      "refs": ["Isaiah 35:8", "Isaiah 40:3", "Jeremiah 6:16", "Jeremiah 50:5"]
+    },
+    {
+      "v": "22",
+      "context": "The poem ends with a question and a riddle. Israel is still hesitating (‘how long will you go this way and that?’), and God answers her hesitation with an announcement: he has created something new, and the new thing is “a woman will shelter a man.” The line closes the poems of 31:2-22, and its meaning is one of the most debated in the prophets.",
+      "grammar": "Titchammaqin is a Hithpael (reflexive) imperfect of a verb that means to turn away or slip aside; the form adds an old ending (a paragogic nun) that gives it weight: ‘how long will you keep dodging?’ Habbat hashovevah, ‘the faithless daughter’, is built on shuv, turned against her: after ‘return, return’ in verse 21, she is called the ‘turning-away’ daughter (the same word as Jeremiah 3:14, 22). Then comes the announcement. Bara’ (\"has created\") is the verb of Genesis 1, used in the Old Testament only with God as subject, and chadashah (‘a new thing’) signals something without precedent. The riddle itself is three words: neqevah tesovev gaver. Neqevah is ‘female’, the word of Genesis 1:27 (“male and female He created them”), not the usual word for woman and not a word for virgin. Tesovev is a Polel (intensive) imperfect of savav, ‘to go around, surround, encompass’, used elsewhere for encircling a city or protecting someone (Deuteronomy 32:10, ‘he encircled him’; Psalm 32:10). Gever is a man in his strength, often a warrior. Jeremiah 30:6 had used gever in the opposite picture: ‘why do I see every man with his hands on his stomach like a woman in labor?’ The strong man had become like a woman in terror; now a woman surrounds the strong man.",
+      "words": ["H2559", "H1323G", "H7728", "H1254A", "H2319H", "H5347", "H5437H", "H1397"],
+      "history": "The line's reading history is long. The Latin Vulgate rendered it femina circumdabit virum, ‘a woman will enclose a man’, and Jerome, in his commentary on Jeremiah, took it of the virgin conception: a woman enclosing in her womb a man complete in his manhood. Many medieval Christian readers followed him. Calvin, in his commentary on Jeremiah, rejected that reading on the grounds that neqevah names only sex, not virginity, and that a woman conceiving a male child would be nothing new; he took it as a reversal in which the weak prevail over the strong. Rashi offers two Jewish readings: Israel, weak as a woman, will prevail over mighty nations; or the woman will go seeking the man to court him, reading the verb as in Song of Solomon 3:2, where the bride goes around the city seeking her beloved, so that Israel will now seek her God. Modern scholars remain divided. Some develop the courting reading, faithless Israel now pursuing her husband; some take it as a proverb for the unheard of; Phyllis Trible, in God and the Rhetoric of Sexuality (1978), read it with the womb language of the whole poem (Rachel, the compassion of verse 20) as a picture of the female surrounding and bearing new life. Others think the text may be damaged.",
+      "text": "The Septuagint reads something entirely different: ‘for the Lord has created salvation for a new planting; in salvation people will go about’. The translator seems either to have had a different Hebrew text or to have despaired of the riddle and paraphrased the sense of rescue. The English range (“a woman will shelter a man” in the BSB, ‘a woman shall compass a man’ in the King James Version, and freer renderings elsewhere) reflects the interpretive choices above rather than any disagreement in the Hebrew.",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "Whatever the riddle means, the frame is clear: God will ‘create’ something new, using the verb of Genesis 1. Restoration is presented as an act of creation, not merely repair. Isaiah 43:19 and 65:17 speak the same way, and the New Testament takes up the idea in Paul's ‘new creation’ (2 Corinthians 5:17)."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Christological reading of Jerome and much of the medieval church saw here the virgin conception of Christ. Most modern interpreters, Catholic and Protestant, do not think the Hebrew requires or intends that, and the New Testament never cites the verse. It remains part of the church's history of reading, not a proof text for the doctrine, which rests on Matthew 1 and Luke 1."
+        }
+      ],
+      "refs": ["Jeremiah 30:6", "Jeremiah 3:14", "Isaiah 43:19", "Song of Solomon 3:2", "Genesis 1:27"]
+    },
+    {
+      "v": "23-24",
+      "context": "The prose oracles begin, and the focus moves from Ephraim to Judah. A blessing once spoken over Jerusalem will be heard again in Judah's towns, and farmers and shepherds will live side by side in the land.",
+      "grammar": "Beshuvi ’et-shevutam (\"When I restore them from captivity\") is a phrase Jeremiah uses often (it opens the whole Book of Consolation in 30:3). Its noun, shevut, has been derived either from shavah, ‘to take captive’, giving ‘bring back their captivity’, or from shuv, ‘to turn’, giving ‘restore their fortunes’. English Bibles divide accordingly; the BSB takes the first. Neveh-tsedeq, ‘pasture’ or ‘dwelling of righteousness’, is striking because Jeremiah 50:7 gives the same title to the LORD himself; here it names Zion. The blessing formula yevarekhekha YHWH, ‘May the LORD bless you’, is the opening of the priestly blessing (Numbers 6:24).",
+      "words": ["H7725H", "H7622", "H1288", "H5116A", "H6664G", "H6944G"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Jerusalem is called righteous and holy not because of what it had been, since Jeremiah's whole book indicts it, but because of what God will make it. Holiness here is a gift of restoration, as the chapter's last verse will say of the whole city (verse 40)."
+        }
+      ],
+      "refs": ["Jeremiah 50:7", "Numbers 6:24", "Psalm 128:5", "Zechariah 8:3"]
+    },
+    {
+      "v": "25-26",
+      "context": "God promises to refresh the weary and fill the faint. Then the prophet speaks in his own voice: he wakes, looks around, and finds that his sleep was sweet. The comment suggests that at least the preceding oracles came to Jeremiah in a dream or night vision, a rare admission from a prophet who elsewhere is suspicious of dreamers (23:25-28).",
+      "grammar": "Hirveti (‘I have given drink’) and mille’ti (‘I have filled’) are perfects used for a future act, a feature grammarians call the prophetic or performative perfect: God's promise is stated as if already done. Nefesh here is not ‘soul’ in a detached sense but the needy self, even the dry throat, so the BSB's “weary soul” means the whole exhausted person. In verse 26, ‘arevah li, ‘was sweet to me’, is the verb Proverbs 3:24 uses of the untroubled sleep of the wise, ‘your sleep will be sweet’.",
+      "words": ["H7301", "H5315G", "H5889", "H1669", "H4390", "H6974", "H6149"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jeremiah warns elsewhere against prophets who pass off their own dreams as God's word (23:25-32), yet here receives a message in sleep. The difference, in the book's own terms, is the source: the test of a prophecy is whether the LORD sent it, not the form in which it came."
+        }
+      ],
+      "refs": ["Matthew 11:28", "Isaiah 40:29-31", "Proverbs 3:24", "Zechariah 4:1", "Jeremiah 23:25-28"]
+    },
+    {
+      "v": "27-28",
+      "context": "The first of three oracles opening “The days are coming.” God will sow Israel and Judah with people and animals, and he restates his original commission to Jeremiah: the God who watched over the tearing down will now watch over the building.",
+      "grammar": "Zara‘ti (\"I will sow\") uses seed imagery for repopulating the land, the same image Hosea built on the name Jezreel, ‘God sows’ (Hosea 2:22-23). Verse 28 sets shaqadti (a perfect, ‘I watched’) against ’eshqod (an imperfect, ‘I will watch’). The verb shaqad recalls the almond branch of Jeremiah's call vision, where the almond (shaqed) is a pun on God ‘watching’ (shoqed) over his word (1:11-12). In 1:10 Jeremiah's mission had four destructive verbs and two constructive ones; here five destructive infinitives (uproot, tear down, demolish, destroy, bring disaster) are answered by the same two, to build and to plant.",
+      "words": ["H2232", "H2233G", "H8245", "H5428", "H5422", "H2040", "H0006", "H7489A", "H1129", "H5193"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The same watchfulness that carried out judgment now carries out restoration. God did not lose control when Jerusalem fell; the fall and the rebuilding are both under the eye of the one who watches over his word to perform it."
+        }
+      ],
+      "refs": ["Jeremiah 1:10-12", "Hosea 2:22-23", "Ezekiel 36:9-11", "Jeremiah 24:6"]
+    },
+    {
+      "v": "29-30",
+      "context": "The second “in those days” oracle retires a proverb. Exiles had said the fathers ate sour grapes and the children's teeth were set on edge: we are paying for our parents' sins. In the coming days each person will answer for his own iniquity. The saying clears ground for the new covenant, which is made with each member individually (“they will all know Me”).",
+      "grammar": "Boser is unripe fruit, sour grapes, and tiqhenah (\"are set on edge\") is from a rare verb meaning to be blunt or dull, the numb feeling of teeth after something sharply sour. The proverb uses a perfect for the fathers (’akhelu, ‘they ate’) and an imperfect for the children, as if the effect never stops. Verse 30 opens ki ’im, ‘but rather’, a strong adversative after a negative, and puts the individual first in its word order: ’ish ba‘awono yamut, ‘each one, for his own iniquity, will die’.",
+      "words": ["H1155", "H8127G", "H6949", "H0376I", "H5771G", "H4191"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jeremiah elsewhere confesses that God repays the fathers' iniquity to their children (32:18), and Lamentations 5:7 voices the same experience. These verses do not deny that sin's effects run through generations; they deny that anyone is condemned for another's sin without his own. Ezekiel 18 develops the principle at length, and it has deep roots in the law (Deuteronomy 24:16)."
+        }
+      ],
+      "refs": ["Ezekiel 18:2-4", "Deuteronomy 24:16", "Lamentations 5:7", "Jeremiah 32:18"]
+    },
+    {
+      "v": "31",
+      "context": "The summit of the chapter and one of the most important sentences in the Old Testament. God promises a new covenant with both houses, Israel and Judah, the divided kingdoms reunited in one covenant. The next three verses explain what makes it new.",
+      "grammar": "Vekharati (\"I will make\") is literally ‘I will cut’: the Hebrew idiom for making a covenant is karat berit, ‘to cut a covenant’, probably from the rite in which animals were cut in two and the parties passed between the pieces (Genesis 15:9-18). Jeremiah himself describes such a rite and its curse in 34:18-19. Berit chadashah, “a new covenant”, occurs only here in the Hebrew Bible. Chadash can mean new in kind or renewed (the new moon is chodesh, the same root), and interpreters have argued for both. The contrast of verse 32 (“It will not be like the covenant”) shows at least that this is no simple repetition of Sinai; the continuity of verse 33 (the same torah, the same covenant formula) shows that it is not a different God or a different goal.",
+      "words": ["H2009", "H3772H", "H1004M", "H1285", "H2319H"],
+      "history": "The Dead Sea Scrolls community took up the phrase for itself. The Damascus Document speaks of those who entered ‘the new covenant in the land of Damascus’ (CD 6:19; compare CD 20:12), meaning a renewed and stricter keeping of the Torah under their own teacher. It is the nearest Jewish use of the phrase in time to the New Testament, and it shows how naturally the promise could be read as renewal.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The Old Testament's covenants (with Noah, Abraham, Israel at Sinai, and David) find here a promise that none of them had made: a covenant God himself will make effective in the hearts of its members. Whether it is best described as the Sinai covenant renewed or as a covenant new in kind has been debated from the Qumran community and the rabbis to the Reformers and modern scholars. Hebrews 8:13 draws the stronger conclusion that calling it new makes the first one obsolete."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Luke 22:20",
+          "note": "At the Last Supper Jesus calls the cup ‘the new covenant in my blood’ (Luke 22:20; Paul's account in 1 Corinthians 11:25 has the same words). Mark 14:24 and Matthew 26:28 have ‘my blood of the covenant’, echoing Moses' ‘blood of the covenant’ at Sinai (Exodus 24:8); some later manuscripts of both add ‘new’. Jesus combines the two covenant texts: Sinai's blood ritual and Jeremiah's promise of forgiveness, fulfilled in his own death."
+        },
+        {
+          "ref": "Hebrews 8:8-12",
+          "note": "Hebrews quotes Jeremiah 31:31-34 in full, from the Greek, where it is Jeremiah 38:31-34. The quotation follows the Septuagint closely, with small changes: where the Greek has ‘I will covenant’ (diathēsomai), Hebrews 8:8 has ‘I will accomplish’ (syntelesō) a new covenant, and in verse 9 ‘which I made’ (epoiēsa) replaces ‘which I covenanted’; the Septuagint's ‘says (phēsin) the Lord’ becomes ‘says (legei) the Lord’. The author's argument, stated in 8:6-7 and 8:13, is that God's own promise of a new covenant shows the first was not faultless, and that Jesus is its mediator."
+        }
+      ],
+      "refs": ["Genesis 15:9-18", "Jeremiah 34:18-19", "Ezekiel 37:26", "2 Corinthians 3:6", "Hebrews 8:13"]
+    },
+    {
+      "v": "32",
+      "context": "The new covenant is defined first by what it is not. It will not be like the covenant made at the exodus, which Israel broke even though God had been a husband to them. The problem was never the covenant's maker; it was its other party.",
+      "grammar": "Hechaziqi veyadam, ‘when I took hold of their hand’, is the picture of a parent leading a small child, the same tenderness as Hosea 11:1-3. ’Asher hemmah heferu ’et-beriti, ‘which they, they broke’, puts an emphatic pronoun on Israel's side: they broke it. Heferu is the Hiphil of parar, ‘to break’ or ‘annul’, the verb used for breaking a covenant in Leviticus 26:15 and Deuteronomy 31:16. The last clause contrasts with it: ve’anokhi ba‘alti vam, ‘and I, I was husband over them’. Ba‘al as a verb means to marry or to be master, and as a noun it was also the name of the Canaanite god Israel went after. The wordplay is pointed: Israel pursued Baal while the LORD was her true ba‘al (Jeremiah 3:14 uses the same verb; compare Hosea 2:16).",
+      "words": ["H2388H", "H3027G", "H6565A", "H1285", "H1166I"],
+      "text": "For ‘I was a husband to them’ the Septuagint (Jeremiah 38:32) has ‘and I disregarded them’ (kagō ēmelēsa autōn), and says they ‘did not remain in my covenant’. The Greek translator may have read a similar Hebrew verb, ga‘alti, ‘I loathed’ (it differs from ba‘alti by one letter; the same verb appears in Jeremiah 14:19), or may have interpreted freely. Hebrews 8:9 quotes the Greek, so readers of Hebrews meet “and I disregarded them” (Hebrews 8:9), while readers of Jeremiah meet “I was a husband to them.”",
+      "nt": [
+        {
+          "ref": "Hebrews 8:9",
+          "note": "Hebrews follows the Septuagint here, including ‘they did not continue in my covenant’ and ‘I disregarded them’. The author is not correcting Jeremiah; he quotes the Bible his readers used. Both wordings make the same point: the first covenant failed on Israel's side, and God's response was judgment."
+        }
+      ],
+      "refs": ["Hosea 11:1-3", "Hosea 2:16", "Jeremiah 3:14", "Exodus 24:7-8", "Jeremiah 11:10"]
+    },
+    {
+      "v": "33",
+      "context": "Now the positive side: what the new covenant is. God will put his law within them and write it on their hearts, and the old covenant formula (“I will be their God, and they will be My people”) will finally hold. This is Jeremiah's answer to his own diagnosis that Judah's sin is ‘engraved on the tablet of their hearts’ (17:1).",
+      "grammar": "Natatti (\"I will put\") is a perfect, surrounded by imperfects, and grammarians describe it as a perfect of certainty: the gift is spoken of as settled. Torati, ‘my torah’, is singular and means God's instruction; it is the same word used for the law given at Sinai, and nothing in the verse suggests a different content. What changes is location. Beqirbam, ‘in their inner part’, and ‘al-libbam, ‘on their heart’, stand where the stone tablets once stood (Exodus 31:18). ’Ekhtavennah, ‘I will write it’, uses the verb of the tablets written by God's finger (Exodus 32:15-16). In the Old Testament the heart (lev) is the center of thought and will more than of feeling, so a law written there is a law understood and wanted, not only obeyed. Deuteronomy had already hoped for this (Deuteronomy 6:6; 30:6, 14), and Proverbs asked the learner to write wisdom ‘on the tablet of your heart’ (Proverbs 7:3); Jeremiah promises that God will do the writing.",
+      "words": ["H5414H", "H8451", "H7130G", "H3820A", "H3789", "H1961"],
+      "text": "The Septuagint has ‘laws’ (nomous) in the plural where the Hebrew has the singular torah, and ‘mind’ (dianoia) for ‘inner part’. Hebrews 8:10 and 10:16 follow the Greek, and Hebrews 10:16 reverses the order, ‘on their hearts... on their minds’.",
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "The verse promises an inward change done by God, not a new rule set before the old heart. Augustine built his argument in On the Spirit and the Letter (about 412) on this passage: the law written on stone commands, while the law written on the heart by God's Spirit gives the love that fulfills it."
+        },
+        {
+          "id": "spirit",
+          "note": "Jeremiah does not name the Spirit, but Ezekiel's parallel promise joins the new heart to God's Spirit within (Ezekiel 36:26-27), and Paul reads the two together when he calls the Corinthians a letter written ‘with the Spirit of the living God, not on tablets of stone but on tablets of human hearts’ (2 Corinthians 3:3)."
+        },
+        {
+          "id": "law",
+          "note": "Which law is written on the heart? Reformed interpreters, following Calvin, hold that it is the same moral law of God, now written inwardly by the Spirit. Lutheran and many Baptist and New Covenant theology interpreters stress that the law of Christ, not the Mosaic code as such, is what believers keep. Jewish interpreters such as David Kimchi (Radak) read it as the same Torah, finally kept. All agree the verse promises inward obedience, not lawlessness."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 10:15-17",
+          "note": "Hebrews returns to this verse and the next as the Holy Spirit's testimony, shortening and reshaping them: the covenant is made ‘with them’, the laws are placed on hearts and written on minds, and God will remember ‘their sins and lawless acts’ no more. The author's conclusion is that where forgiveness is given, no further offering for sin is needed (Hebrews 10:18)."
+        }
+      ],
+      "refs": ["Jeremiah 17:1", "Deuteronomy 30:6", "Proverbs 7:3", "Ezekiel 36:26-27", "2 Corinthians 3:3"]
+    },
+    {
+      "v": "34",
+      "context": "The new covenant's third mark is universal knowledge of God, and its ground is forgiveness. No member of this covenant will need to be told to know the LORD, because all will know him, the least and the greatest, and this is so because God will forgive and forget their sins.",
+      "grammar": "Da‘at, knowing, in the prophets means covenant acquaintance: knowing God as a wife knows her husband or a servant his master, shown in faithfulness and justice. Jeremiah 22:16 defines it as defending the cause of the poor. The phrase ‘from the least of them to the greatest’ (lemiqtannam ve‘ad-gedolam) reverses Jeremiah's earlier indictment, where the same words described universal greed (6:13; 8:10). The final clause begins with ki, ‘for’ or ‘because’, and most interpreters take it as grounding the whole promise, not just the last line: the covenant rests on forgiveness. ’Eslach (\"I will forgive\") is from salach, a verb that in the Old Testament always has God as its subject. Lo’ ’ezkor-‘od, ‘I will not remember any more’, is not divine forgetfulness in the sense of lost memory; to ‘remember’ sin in Hebrew is to act on it (1 Kings 17:18; Psalm 25:7), so God promises never again to bring it into account.",
+      "words": ["H3925G", "H7453", "H3045", "H6996A", "H1419A", "H5545", "H5771G", "H2403B", "H2142"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Everything in the new covenant stands on the final ‘for’: I will forgive. The inward law and the universal knowledge of God follow from a relationship God restores by pardon. Jeremiah 50:20 repeats the promise: in those days Israel's iniquity will be sought and not found."
+        },
+        {
+          "id": "church",
+          "note": "The phrase ‘they will all know Me’ is central to a long Christian disagreement. Baptist interpreters, for example Peter Gentry and Stephen Wellum in Kingdom through Covenant (2012), argue that the new covenant community consists only of those who know the Lord, which supports baptizing believers only. Paedobaptist interpreters (Presbyterian, Reformed, Anglican, Lutheran, and others) argue that the promise is fulfilled in stages, already and not yet, that Hebrews itself warns members of the covenant community against falling away, and that children of believers belong to the covenant as in Israel. Both sides read the same verse with care."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 8:11-12",
+          "note": "Hebrews follows the Septuagint, which has ‘fellow citizen’ (politēs) where the Hebrew has ‘neighbor’, and ‘I will be merciful (hileōs) to their iniquities’ for ‘I will forgive’. The word hileōs belongs to the family of hilastērion, the ‘mercy seat’ of Hebrews 9:5, which fits the letter's argument that Christ's sacrifice achieves the forgiveness the covenant promised."
+        },
+        {
+          "ref": "Romans 11:27",
+          "note": "Paul, speaking of Israel's future, quotes Isaiah 59:21 and adds a line close to Isaiah 27:9 with an echo of this verse: ‘this is My covenant with them when I take away their sins’. He applies the new covenant's promise of forgiveness to the Israel he expects to be saved (Romans 11:26)."
+        }
+      ],
+      "refs": ["Jeremiah 22:16", "Jeremiah 6:13", "Jeremiah 50:20", "Micah 7:18-19", "1 John 2:27"]
+    },
+    {
+      "v": "35-36",
+      "context": "God guarantees the promise by pointing to the created order. The one who gives the sun and orders the moon and stars and stirs the sea says that only if that order failed would Israel cease to be a nation before him.",
+      "grammar": "The LORD is described in a chain of participles (noten, ‘who gives’; roga‘, ‘who stirs up’), a hymn style that names God by his ongoing works. The line roga‘ hayyam vayyehemu gallav, ‘who stirs up the sea so that its waves roar’, appears word for word in Isaiah 51:15, and the title that closes it, YHWH tseva’ot shemo, ‘the LORD of Hosts is His name’, recurs in Jeremiah 10:16 and 46:18. The ‘fixed order’ of the sun and moon is chuqqot and chuqqim, the plural of choq, the same word the law uses for God's statutes. The laws of the sky and the laws of the covenant are the same kind of thing: decrees of the same God.",
+      "words": ["H5414G", "H2708", "H7280A", "H1993", "H2706G", "H7673A", "H1471A"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "God binds his faithfulness to Israel's descendants to the regularity of creation. Jeremiah 33:20-26 makes the same argument about the covenant with day and night. Paul's insistence that God has not rejected his people (Romans 11:1-2) stands on promises like this one, and Christian interpreters of every school have had to account for it."
+        },
+        {
+          "id": "providence",
+          "note": "The steady order of day, night, and sea is not self-running; it is God's continuing gift and ordering (Genesis 8:22). The chapter uses that daily regularity as evidence for God's faithfulness in history."
+        }
+      ],
+      "text": "The Septuagint puts verse 37 before verses 35-36, and its form of verse 37 is different: ‘if the sky is raised to the height and the floor of the earth lowered beneath, I will not reject the race of Israel’. The order of the Hebrew, followed by English Bibles, sets the creation hymn first and the impossible measurement second.",
+      "refs": ["Isaiah 51:15", "Jeremiah 33:20-26", "Genesis 8:22", "Psalm 89:36-37", "Romans 11:1-2"]
+    },
+    {
+      "v": "37",
+      "context": "A second oath in the same form. Only if the heavens could be measured and the earth's foundations explored would God reject Israel's descendants for all they have done. The ‘if’ names something no human could do, so the rejection will not happen.",
+      "grammar": "The sentence is a condition with an impossible protasis: ’im-yimmaddu shamayim, ‘if the heavens can be measured’, where the Niphal imperfects express possibility (‘could be measured’, ‘could be searched out’). The apodosis begins gam-’ani, ‘then I too’, and sets God's rejection on the same level as the impossible. ’Em’as (‘I will reject’, rendered “would I reject” in the BSB) is the verb Jeremiah uses in lament over whether God has utterly rejected Judah (14:19; Lamentations 5:22). The phrase ‘because of all they have done’ does not minimize Israel's sin; it acknowledges the full weight of it and says the promise holds anyway.",
+      "words": ["H0518A", "H4058", "H8064", "H2713", "H4144", "H3988A", "H2233H"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "God's choice of Israel does not finally depend on Israel's record. Paul draws the same conclusion when he says that God's gifts and calling are irrevocable and that Israel remains beloved for the patriarchs' sake (Romans 11:28-29). How that election is fulfilled, in the church or in a future turning of ethnic Israel or both, is a second-order question Christians answer differently."
+        }
+      ],
+      "refs": ["Isaiah 40:12", "Jeremiah 33:22", "Jeremiah 14:19", "Romans 11:28-29"]
+    },
+    {
+      "v": "38-40",
+      "context": "The last oracle maps the rebuilt Jerusalem from landmark to landmark: the Tower of Hananel on the north, the Corner Gate on the west, hills that can no longer be located, the valley of corpses and ashes, the Kidron, and the Horse Gate on the east. The surprising end is that the whole of it, including the unclean valley, will be “holy to the LORD” and never again uprooted.",
+      "grammar": "Qodesh laYHWH, “holy to the LORD”, is the phrase engraved on the gold plate of the high priest's turban (Exodus 28:36). Zechariah 14:20-21 will extend it to horses' bells and cooking pots. Here it is spread over a whole city and even its burial valley. The closing verbs, lo’-yinnatesh velo’-yehares, ‘it will not be uprooted and not torn down’, reuse two of the verbs of Jeremiah's call (1:10), now in the negative and forever (le‘olam).",
+      "words": ["H4026G", "H2606", "H8179G", "H6438G", "H6957B", "H6010R", "H6297", "H1880", "H6939", "H6944G", "H5428", "H2040"],
+      "history": "The Tower of Hananel and the Horse Gate appear in Nehemiah's rebuilding of the walls (Nehemiah 3:1, 28; 12:39); the Corner Gate is mentioned in 2 Kings 14:13 and 2 Chronicles 26:9; Zechariah 14:10 names the Tower of Hananel and the Corner Gate as the city's limits. The valley of corpses and ashes is almost certainly the Hinnom Valley, south of the city, where children had been burned to Molech and which Jeremiah had renamed the Valley of Slaughter (7:31-32; 19:6). The fields toward the Kidron recall 2 Kings 23:4, where Josiah burned the idolatrous objects from the temple ‘in the fields of the Kidron’. The places most defiled in Judah's history are the ones named as holy.",
+      "text": "Two notes in the Hebrew margin affect these verses. In verse 38 the word ‘coming’ (ba’im) is not written in the consonantal text but is supplied by the Masoretes as a ‘read but not written’ word (qere without ketiv), bringing it in line with the formula elsewhere; the Septuagint also has it. In verse 40 the consonants spell a word found nowhere else (sheremot), while the margin reads shedemot, ‘fields’, the word of 2 Kings 23:4; the Septuagint simply transliterates the written form. The Septuagint also lacks ‘the whole valley of the dead bodies and ashes’ and differs in naming Goah.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness spreads outward here, from the temple to the city to its unclean valley. In the law, contact with the unclean defiled the holy; in the promise, God's holiness overtakes the unclean. The vision of the new Jerusalem in Revelation, where nothing unclean enters and the whole city is God's dwelling (Revelation 21:22-27), develops the same hope."
+        }
+      ],
+      "refs": ["Nehemiah 3:1", "Zechariah 14:10", "Jeremiah 7:31-32", "Zechariah 14:20-21", "2 Kings 23:4"]
+    }
+  ]
+}

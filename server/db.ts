@@ -189,6 +189,16 @@ export async function getFeaturedPost() {
 export async function updatePost(id: number, data: Partial<InsertPost>) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
+  // Publishing a draft records when it went out (the essay shelf's Latest
+  // rule reads publishedAt, else createdAt). Only an unpublished row is
+  // stamped, so saving a live essay never moves its date. Mirrors posts.update
+  // in api/index.ts.
+  if (data.published === true && data.publishedAt === undefined) {
+    await db
+      .update(posts)
+      .set({ publishedAt: sql`COALESCE(${posts.publishedAt}, NOW())` })
+      .where(and(eq(posts.id, id), eq(posts.published, false)));
+  }
   await db.update(posts).set(data).where(eq(posts.id, id));
   return getPostById(id);
 }

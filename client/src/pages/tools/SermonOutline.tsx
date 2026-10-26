@@ -123,7 +123,7 @@ const OUTLINES: SermonOutline[] = [
         title: "The cross means God is not a spectator of suffering",
         scripture: "Hebrews 4:15-16",
         illustration:
-          "A hospital chaplain once said the most common thing people in crisis tell him is not 'I need answers.' It is 'I need someone who understands.' The incarnation means God entered the room. The cross means God entered the worst room in the building. He does not observe suffering from a safe distance. He absorbed it.",
+          "Sit with enough people in crisis and you learn that what they are asking for is not answers. It is someone who understands. The incarnation means God entered the room. The cross means God entered the worst room in the building. He does not observe suffering from a safe distance. He absorbed it.",
         applicationQuestion:
           "How does knowing that God has suffered -- not theoretically but physically, in a body -- change the way you bring your pain to Him?",
       },
@@ -227,7 +227,7 @@ const OUTLINES: SermonOutline[] = [
     bigIdea:
       "Biblical justice is not an ideology to adopt but a character to embody -- it begins with how a man treats the people who have no power to repay him.",
     openingHook:
-      "Micah 6:8 is eight words long in Hebrew. 'Do justice. Love mercy. Walk humbly with your God.' The prophet does not say understand justice or vote for justice or post about justice. He says do it. That verb changes everything. Justice is not a position. It is a practice. And the men who practice it are not the ones making noise. They are the ones in the room doing the work no one will applaud.",
+      "Micah 6:8 is short enough to carry in a pocket. 'Do justice. Love mercy. Walk humbly with your God.' The prophet does not say understand justice or vote for justice or post about justice. He says do it. That verb changes everything. Justice is not a position. It is a practice. And the men who practice it are not the ones making noise. They are the ones in the room doing the work no one will applaud.",
     points: [
       {
         title: "Justice starts in the household, not the culture war",
@@ -255,7 +255,7 @@ const OUTLINES: SermonOutline[] = [
       },
     ],
     closingChallenge:
-      "The world does not need more men who can articulate justice. It needs men who practice it when the cost is real and the audience is small. In your home. In your workplace. In the quiet decisions no one will ever write about. That is where justice lives or dies. Not in the argument. In the action. Be the man who does it.",
+      "The world does not need more men who can articulate justice. It needs men who practice it when the cost is real and the audience is small. In your home. In your workplace. In the quiet decisions no one will ever write about. That is where justice lives or dies, in the action rather than the argument, and most of it will be done where no one is keeping score except God.",
     estimatedMinutes: 30,
   },
   {
@@ -269,7 +269,7 @@ const OUTLINES: SermonOutline[] = [
     bigIdea:
       "Hope is not the belief that everything will turn out fine -- it is the conviction that God is present and working even when nothing looks fine.",
     openingHook:
-      "Here is what the world will tell you: stay positive. Think good thoughts. Everything happens for a reason. Here is what Scripture says: the world is broken, you will suffer, and the God who made you has not abandoned you in the wreckage. One of those is optimism. The other is hope. They are not the same thing. Optimism requires good circumstances. Hope survives the absence of them.",
+      "The world will tell you to stay positive, think good thoughts, and trust that everything happens for a reason. Scripture tells you something harder: the world is broken, you will suffer, and the God who made you has not abandoned you in the wreckage. One of those is optimism. The other is hope. They are not the same thing. Optimism requires good circumstances. Hope survives the absence of them.",
     points: [
       {
         title: "Hope is built on a person, not a prediction",
@@ -297,7 +297,7 @@ const OUTLINES: SermonOutline[] = [
       },
     ],
     closingChallenge:
-      "You are going to face things that feel like the end of the story. Relationships that break. Dreams that collapse. Seasons that feel like they will never end. Hope does not promise those things will not happen. Hope says: there is a God who is writing a longer story than the chapter you are in. And He has never lost the pen. Hold on to that. Not because it is easy. Because it is true.",
+      "You are going to face things that feel like the end of the story. Relationships that break. Dreams that collapse. Seasons that feel like they will never end. Hope does not promise those things will not happen. Hope says: there is a God who is writing a longer story than the chapter you are in. And He has never lost the pen. Hold on to that, not because it is easy but because it is true.",
     estimatedMinutes: 25,
   },
 ];

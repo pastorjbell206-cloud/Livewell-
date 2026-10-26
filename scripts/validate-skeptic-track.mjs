@@ -6,14 +6,16 @@
  * real, published essay in the static library, so a wired stop can never
  * quietly dead-end into "Essay in progress." Fails the build if one does not.
  *
- * It also reports whether the track is currently advertised (all stops filled)
- * so the state is visible in CI, not silent.
+ * It also reports whether the track is currently advertised (every stop filled
+ * and on the public essay shelf, the SKEPTIC_TRACK_LIVE rule) so the state is
+ * visible in CI, not silent.
  *
  *   node scripts/validate-skeptic-track.mjs
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadEssayShelf } from "./lib/shelf.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONFIG = path.join(ROOT, "client/src/lib/skepticTrack.ts");
@@ -33,7 +35,9 @@ const published = new Set(library.filter((r) => r && r.slug && r.published !== f
 
 const dangling = slugs.filter((s) => s !== null && !published.has(s));
 const stubs = slugs.filter((s) => s === null).length;
-const live = stubs === 0;
+const shelf = loadEssayShelf(ROOT);
+const offShelf = slugs.filter((s) => s !== null && !shelf.isPublic(s)).length;
+const live = stubs === 0 && offShelf === 0;
 
 if (dangling.length) {
   console.error(`[skeptic-track] ${dangling.length} wired stop(s) do not resolve to a published essay:`);
@@ -43,6 +47,7 @@ if (dangling.length) {
 }
 
 console.log(
-  `[skeptic-track] clean: ${slugs.length} stops, ${slugs.length - stubs} wired, ${stubs} in progress. ` +
-    `Track ${live ? "LIVE (entry points shown)" : "NOT advertised (entry points hidden until every stop is filled)"}.`
+  `[skeptic-track] clean: ${slugs.length} stops, ${slugs.length - stubs} wired, ${stubs} in progress, ` +
+    `${offShelf} off the public shelf. ` +
+    `Track ${live ? "LIVE (entry points shown)" : "NOT advertised (entry points hidden until every stop is filled and on the shelf)"}.`
 );

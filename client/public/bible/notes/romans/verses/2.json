@@ -1,0 +1,213 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The ‘therefore’ (dio) that opens the chapter reaches back to 1:32: people know God's verdict against evil. The reader who has been agreeing with the indictment of chapter 1 is suddenly addressed directly, and the same word Paul used of idolaters in 1:20, ‘without excuse’, is now applied to the one who judges them.",
+      "grammar": "Anapologētos ei, ‘you are without excuse’, repeats the adjective of 1:20 (anapologētous), a deliberate link: the judge is in the same position as the idolater. Ō anthrōpe, ‘O man’, is the vocative of the diatribe, the address to an imagined partner. The verse turns on three forms of the same verb: krineis, ‘you judge’, katakrineis, ‘you condemn’, and krinōn, ‘the one judging’. In the act of judging another (en hō, ‘in that in which’) the judge pronounces sentence on himself, because ta auta prasseis, ‘you practice the same things’. Paul does not say the judge commits every sin listed in 1:29-31, but that he stands within the same pattern of knowing the right and doing otherwise.",
+      "words": ["G1352", "G0379", "G0444", "G2919", "G2632", "G4238"],
+      "theology": [
+        { "id": "judgment", "note": "Condemning others does not place anyone above the judgment; it proves that the judge knows the standard. Paul's point echoes Jesus' warning that the measure used on others will be used on oneself (Matthew 7:1-2)." },
+        { "id": "sin", "note": "Moral indignation is not the same as righteousness. The verse closes the escape route of those who define themselves by the sins they do not commit." }
+      ],
+      "refs": ["Romans 1:20", "Romans 1:32", "Matthew 7:1-5", "Luke 6:37", "2 Samuel 12:5-7"]
+    },
+    {
+      "v": "2-3",
+      "context": "Paul states a principle both he and his conversation partner accept: God's judgment on such conduct is in accordance with truth. Then he asks the question that follows: does the one who does the same things really expect to escape? Verse 4 will name the false assumption behind that expectation.",
+      "grammar": "Oidamen, ‘we know’, introduces common ground, a conviction any Jewish reader would sign. Kata alētheian, ‘according to truth’, means that God's verdict matches reality, unlike human judgment, which can be deceived or biased. In verse 3 the verb logizē, ‘do you reckon’, is the word that will dominate chapter 4 (logizomai). The emphatic pronoun sy, ‘you yourself’, singles out the judge: ‘do you think that you will escape?’ The future ekpheuxē, ‘you will escape’, looks to the final judgment.",
+      "words": ["G6063", "G2917", "G0225", "G3049", "G1628"],
+      "theology": [
+        { "id": "judgment", "note": "God judges according to truth: his verdicts correspond to what people have actually done and known. This is both a warning, since nothing is hidden, and a comfort, since his judgment cannot be manipulated." }
+      ],
+      "refs": ["Hebrews 2:3", "Psalm 96:13", "1 Samuel 16:7"]
+    },
+    {
+      "v": "4",
+      "context": "The false assumption is exposed: the one who expects to escape has mistaken God's patience for leniency. God's kindness is not indifference to sin but time given for repentance. The next verse shows where contempt for that kindness leads.",
+      "grammar": "Ploutou, ‘riches’, governs three genitives: chrēstotētos, ‘kindness’, anochēs, ‘forbearance’ (the holding back of judgment; Paul uses it again in 3:26), and makrothymias, ‘patience’, the Septuagint's word for God's being slow to anger (Exodus 34:6). Kataphroneis, ‘do you despise’, means to think little of. Agnoōn, ‘not knowing’, describes a culpable ignorance. The verb agei, ‘leads’, is present tense and can be read as conative: God's kindness is trying to lead you, which does not force the outcome.",
+      "words": ["G4149", "G5544", "G0463", "G3115", "G2706", "G5543", "G3341", "G0071"],
+      "history": "Paul's imagined partner holds a view found in Jewish writings of the period. The Wisdom of Solomon, having condemned Gentile idolatry, tells God that he overlooks sins so that people may repent (Wisdom 11:23) and that even if Israel sins, they are still his (Wisdom 15:1-2). Many commentators think Romans 1:18-2:5 follows the pattern of Wisdom 13-15 deliberately and then refuses its conclusion: the kindness that is meant to lead to repentance is not a guarantee of exemption.",
+      "theology": [
+        { "id": "repentance", "note": "Repentance is God's gift before it is our act: his kindness leads to it. God's delay in judgment is purposeful, and to treat it as permission is to reject the purpose (2 Peter 3:9)." },
+        { "id": "attributes", "note": "God's kindness, forbearance, and patience are described as riches, an overflowing supply. These are the attributes God proclaimed to Moses (Exodus 34:6), and Paul holds them together with his justice rather than against it." }
+      ],
+      "refs": ["Exodus 34:6-7", "2 Peter 3:9", "Romans 3:25-26", "Romans 11:22"]
+    },
+    {
+      "v": "5",
+      "context": "The consequence of despising God's kindness: a hard and unrepentant heart stores up wrath for the day of judgment. The present wrath of 1:18 now has its future counterpart, and verse 6 will state the principle by which that day's verdicts are given.",
+      "grammar": "Kata tēn sklērotēta, ‘according to your hardness’, echoes the Old Testament's picture of stubborn Israel (Deuteronomy 9:27, where the Septuagint uses the same noun). Ametanoēton, ‘unrepentant’, occurs only here in the New Testament and is formed from the same root as metanoia in verse 4: the heart is exactly what God's kindness was calling to repentance. Thēsaurizeis seautō orgēn, ‘you are storing up wrath for yourself’, is bitter irony, since to store up treasure normally means saving something good (compare Matthew 6:19-20). Dikaiokrisia, ‘righteous judgment’, is also found only here in the New Testament.",
+      "words": ["G4643", "G0279", "G2343", "G3709", "G0602", "G1341"],
+      "theology": [
+        { "id": "judgment", "note": "The ‘day of wrath’ is the last judgment, when God's righteous verdict will be revealed publicly. What is now partly hidden (1:18) will then be fully disclosed." },
+        { "id": "repentance", "note": "Hardness of heart is not a fixed fate here but the refusal of an offer. Each day of unrepentance adds to what is stored, which makes the present an urgent time of mercy." }
+      ],
+      "refs": ["Zephaniah 1:14-15", "Deuteronomy 9:27", "Matthew 6:19-20", "Revelation 6:17", "Hebrews 3:13"]
+    },
+    {
+      "v": "6",
+      "context": "The principle of the final judgment is stated in words from Israel's Scriptures: God will repay each one according to his deeds. Verses 7-10 expand it in both directions, and verse 11 gives its ground, God's impartiality.",
+      "grammar": "Apodōsei, ‘he will give back’, is future, pointing to the last day. Hekastō, ‘to each’, individualizes the judgment: no one is judged by group membership. Kata ta erga autou, ‘according to his works’, uses the preposition kata, ‘in accordance with’; Paul says works are the measure by which the verdict corresponds to the life, and interpreters debate whether that differs from saying works are its ground.",
+      "words": ["G0591", "G1538", "G2041"],
+      "ot": [
+        { "ref": "Psalm 62:12", "note": "Psalm 62:12 ends David's song of trust with the confession that God repays each person according to what he has done; the Septuagint (61:13) renders it with apodōseis hekastō kata ta erga autou, addressed to God as ‘you’. Proverbs 24:12 has the same line in the third person, and its Septuagint form, hos apodidōsin hekastō kata ta erga autou, is almost exactly Paul's wording, with Paul putting the verb in the future. In Proverbs the warning is addressed to someone who claims not to have known about an injustice he could have stopped; the one who weighs hearts knows. Paul uses the shared biblical principle to show that the Jewish reader's own Scriptures promise an impartial judgment by deeds. The same principle appears in Jesus' teaching (Matthew 16:27) and at the end of the Bible (Revelation 22:12)." }
+      ],
+      "theology": [
+        { "id": "judgment", "note": "Judgment according to deeds runs through both Testaments and through Paul's letters (2 Corinthians 5:10). Paul does not see it as contradicting justification by faith, and how the two fit together is the question verses 7 and 13 press." }
+      ],
+      "refs": ["Proverbs 24:12", "Matthew 16:27", "2 Corinthians 5:10", "Revelation 22:12", "Jeremiah 17:10"]
+    },
+    {
+      "v": "7-8",
+      "context": "Two outcomes are set side by side. Those who persistently do good and seek the glory and immortality that only God can give receive eternal life; those who are self-seeking, disobey the truth, and obey wickedness meet wrath and fury. These two verses form the inner pair of the chiasm that runs from verse 6 to verse 11.",
+      "grammar": "In verse 7, kath' hypomonēn ergou agathou, ‘according to perseverance in good work’, describes a pattern of life, and zētousin, ‘seeking’, shows that what they pursue is a gift beyond themselves: glory, honor, and aphtharsia, ‘incorruption’, which belong to God (1:23 called him aphthartos). Zōēn aiōnion, ‘eternal life’, is the object of ‘he will give’ from verse 6. In verse 8 the grammar changes: the nouns orgē kai thymos, ‘wrath and fury’, are nominative, so the sentence no longer says God ‘will give’ wrath but that wrath ‘will be’, a shift some commentators think is deliberate. Eritheia, ‘self-seeking’ or ‘selfish ambition’, was used in earlier Greek for mercenary partisanship. Apeithousin... peithomenois is a wordplay: they disobey the truth and obey unrighteousness.",
+      "words": ["G5281", "G0861", "G2212", "G2222", "G0166", "G2052", "G0544", "G3982", "G3709", "G2372"],
+      "text": "The Textus Receptus and Byzantine manuscripts reverse the order of the last two nouns, ‘indignation and wrath’, as in the King James Version. The meaning is unaffected.",
+      "theology": [
+        { "id": "hope", "note": "Eternal life is described as the gift sought by those who look for glory, honor, and immortality from God. The goal of the good life is not self-made virtue but the incorruptible life God gives, which 1 Corinthians 15:53-54 identifies with the resurrection." }
+      ],
+      "refs": ["Galatians 6:8-9", "2 Timothy 1:10", "1 Corinthians 15:53-54", "Philippians 2:3", "James 3:16"]
+    },
+    {
+      "v": "9-11",
+      "context": "The two outcomes are restated in reverse order, closing the chiasm: trouble for everyone who does evil, glory, honor, and peace for everyone who does good. The phrase ‘first for the Jew, then for the Greek’ from 1:16 returns, now applied to judgment as well as salvation. Verse 11 gives the reason: God does not show favoritism.",
+      "grammar": "Thlipsis kai stenochōria, ‘trouble and distress’, is a pair Paul uses again in 8:35; the second word literally means narrowness, being hemmed in. Pasan psychēn anthrōpou, ‘every soul of man’, is a Hebraic way of saying every human being. The te... prōton kai, ‘first... and’, repeated from 1:16, means that Israel's priority in privilege brings priority in accountability. Verse 11 opens with gar, ‘for’, giving the ground of the whole unit: prosōpolēmpsia, ‘partiality’, a word formed from the Septuagint's idiom for favoritism, lambanein prosōpon, ‘to receive a face’.",
+      "words": ["G2347", "G4730", "G5590J", "G2716", "G1391", "G5092", "G1515", "G4382"],
+      "theology": [
+        { "id": "israel", "note": "Israel's election is real, and so is its greater accountability. The priority that 1:16 gave the Jew in salvation, Paul now gives in judgment, echoing Amos 3:2, where God's choice of Israel is the reason he will punish its sins." },
+        { "id": "judgment", "note": "Impartiality is the ground of the whole passage. God's judgment does not favor the privileged; it weighs each person's life, which is what makes it just for both Jew and Greek." }
+      ],
+      "refs": ["Amos 3:2", "Deuteronomy 10:17", "Acts 10:34-35", "Galatians 2:6", "1 Peter 1:17"]
+    },
+    {
+      "v": "12",
+      "context": "Paul explains how impartiality works when people have different knowledge: those who sinned without the law perish without it, and those who sinned under the law are judged by it. The distinction between Jew and Gentile is real, but it does not change the outcome for the sinner.",
+      "grammar": "Anomōs, ‘lawlessly’ or ‘apart from law’, is an adverb, and here it describes people outside the Mosaic law, not people who are immoral. Hēmarton, ‘they sinned’, is aorist, viewing a whole life from the standpoint of the judgment. The two main verbs differ: apolountai, ‘they will perish’, and krithēsontai, ‘they will be judged’. Paul does not say the Gentiles escape judgment; he says the Mosaic law will not be the instrument of it. Nomos here, as through most of Romans, means the law of Moses.",
+      "words": ["G0460", "G0264", "G0622", "G3551", "G2919"],
+      "theology": [
+        { "id": "law", "note": "The law of Moses is the standard for those who have it, but it does not create accountability where it is absent. Gentiles are accountable for what they knew (1:20, 2:15), and Jews for what they were given." },
+        { "id": "judgment", "note": "Judgment corresponds to knowledge: God does not hold people to a revelation they never received, but no one lacks all revelation." }
+      ],
+      "refs": ["Romans 3:19", "Romans 5:13", "Luke 12:47-48", "1 Corinthians 9:21"]
+    },
+    {
+      "v": "13",
+      "context": "Paul explains why having the law is no protection: it is not hearing but doing the law that counts before God. The verse is one of the most debated in the letter, since 3:20 will say that no one is justified by works of the law. Verses 14-15 give an example from the Gentile world.",
+      "grammar": "Akroatai, ‘hearers’, fits a culture in which Jews heard the law read aloud in the synagogue every Sabbath (Acts 15:21). The contrast with poiētai, ‘doers’, is a commonplace of Jewish teaching and of James 1:22-25. Dikaioi para tō theō, ‘righteous before God’, uses para with the dative for ‘in God's sight’, God as judge. Dikaiōthēsontai, ‘will be justified’, is future passive, the first use in Romans of the verb dikaioō, and it refers to the verdict of the last day. The future tense matters to every interpretation of the verse.",
+      "words": ["G0202", "G4163", "G3551", "G1342", "G1344"],
+      "theology": [
+        { "id": "justification", "note": "Interpreters read this verse in three main ways. Some, such as Douglas Moo (1996), take it as the law's principle in theory, which chapter 3 shows no one meets. Others, including C. E. B. Cranfield and Thomas Schreiner (1998), see the Spirit-produced obedience of believers, which will be acknowledged at the judgment. Others, such as N. T. Wright, speak of a future justification that accords with the whole life lived, while present justification is by faith. Kent Yinger (Paul, Judaism, and Judgment According to Deeds, 1999) showed how widely Jewish writers held together salvation by God's mercy and judgment according to deeds. All agree that Paul does not contradict 3:20-28." }
+      ],
+      "refs": ["James 1:22-25", "Romans 3:20", "Leviticus 18:5", "Matthew 7:21-24", "Galatians 5:6"]
+    },
+    {
+      "v": "14",
+      "context": "The ‘for’ of this verse gives an example supporting verse 13: some Gentiles, who do not possess the Mosaic law, nonetheless do what it requires, and so show that they are not without law. Verses 13-15 are often printed as a parenthesis, since verse 16 continues the thought of verse 12.",
+      "grammar": "The key question is what the dative physei, ‘by nature’, modifies. Most translations join it to the following verb, ‘do by nature the things of the law’, so that Gentiles act from an inborn moral sense. Grammatically it can also go with the preceding words, ‘Gentiles who do not have the law by nature’, that is, by birth, as Paul uses physei of birth in 2:27 and Galatians 2:15 (‘Jews by nature’). Simon Gathercole's article in the Journal for the Study of the New Testament (2002) argued for this second reading, which fits the view that Paul means Christian Gentiles. Heautois eisin nomos, ‘they are a law to themselves’, does not mean they make up their own rules; it means that the law's demands are present within them.",
+      "words": ["G1484", "G5449", "G3551", "G4160G", "G2192"],
+      "text": "The Textus Receptus reads the singular poiē, ‘does’, where the critical editions have the plural poiōsin, ‘they do’. The difference does not affect the sense.",
+      "theology": [
+        { "id": "law", "note": "Who are these Gentiles? One reading, found in Augustine's On the Spirit and the Letter and defended by Cranfield and Wright, sees Christian Gentiles in whom the new covenant promise of the law written on the heart has come true. Another, the older and still majority reading, sees pagans who at times do what the law requires, showing a moral knowledge that makes them accountable. Thomas Aquinas cited this verse as the scriptural warrant for natural law (Summa Theologiae I-II, question 91, article 2)." }
+      ],
+      "refs": ["Romans 2:27", "Galatians 2:15", "Acts 10:35", "Acts 14:16-17"]
+    },
+    {
+      "v": "15",
+      "context": "The Gentiles described in verse 14 demonstrate that the work of the law is written on their hearts. Conscience testifies alongside, and their inner reasoning argues the case, accusing or defending. The courtroom image anticipates the day of judgment in verse 16.",
+      "grammar": "Hoitines, ‘people who’, introduces the evidence. Endeiknyntai, ‘they show’ or ‘demonstrate’, is a legal word for proving a case. The phrase to ergon tou nomou, ‘the work of the law’, is singular, and it is debated whether it means the law's requirement or the conduct the law produces. Grapton en tais kardiais, ‘written on their hearts’, echoes Jeremiah 31:33. Symmartyrousēs... tēs syneidēseōs, ‘their conscience bearing witness with’, is a genitive absolute; syneidēsis was a Greek term for moral self-awareness that the Old Testament lacks as a word (the Hebrew Bible speaks of the heart). Metaxy allēlōn tōn logismōn, ‘between one another, their thoughts’, pictures an inner trial with prosecution (katēgorountōn) and defense (apologoumenōn).",
+      "words": ["G1731", "G2041", "G1123", "G2588", "G4828", "G4893", "G3053", "G2723", "G0626"],
+      "ot": [
+        { "ref": "Jeremiah 31:33", "note": "In the new covenant oracle, God says he will put his law within his people and write it on their hearts. The Hebrew has torati, ‘my law’, and ‘on their heart I will write it’; the Septuagint (Jeremiah 38:33 in its numbering) has plural ‘laws’ and grapsō, ‘I will write’. Paul's grapton en tais kardiais, ‘written in their hearts’, uses the same image. Those who read verses 14-15 of Christian Gentiles take the echo as deliberate: the new covenant promised to Israel is being fulfilled even among Gentiles, as 2:29 will suggest. Those who read the verses of pagans note that Paul speaks of ‘the work of the law’ rather than the law itself, and that conscience here accuses as well as defends, which fits a general moral awareness better than a transformed heart." }
+      ],
+      "history": "Greek thought had its own idea of an unwritten law. In Sophocles' Antigone (about 441 BC), Antigone defies the king's decree by appeal to the unwritten and unfailing laws of the gods, and Aristotle (Rhetoric 1.13) distinguishes the particular laws of each city from a common law according to nature, citing her. Hellenistic Jewish writers such as Philo described the patriarchs as living laws before Moses. Paul's Roman readers had categories ready for his claim.",
+      "theology": [
+        { "id": "humanity", "note": "Conscience is part of human nature as created: every person carries an inner witness that the moral law is real. Paul elsewhere shows it can be weak (1 Corinthians 8:7) or seared (1 Timothy 4:2), so it is a real but fallible witness." }
+      ],
+      "refs": ["Jeremiah 31:33", "Romans 9:1", "2 Corinthians 1:12", "1 Timothy 4:2", "Hebrews 8:10"]
+    },
+    {
+      "v": "16",
+      "context": "The judgment scene reaches its occasion: the day when God judges the hidden things of people through Christ Jesus. Paul adds that this is according to his gospel, so judgment is part of the good news he preaches, not an embarrassment to it. The verse connects back to verse 12 (or 15), and its mention of secrets prepares for the inward Jew of verse 29.",
+      "grammar": "Ta krypta tōn anthrōpōn, ‘the hidden things of people’, anticipates en tō kryptō, ‘inwardly’ or ‘in secret’, in verse 29: God judges what is hidden and praises what is hidden. Dia Christou Iēsou, ‘through Christ Jesus’, names Christ as the agent through whom God judges, as in Acts 17:31. Kata to euangelion mou, ‘according to my gospel’, recurs in 16:25 and 2 Timothy 2:8.",
+      "words": ["G2250", "G2919", "G2927", "G2098", "G5547"],
+      "text": "Earliest manuscripts had no accents, so the verb can be read as present krinei, ‘judges’ (Nestle-Aland, SBL, Westcott and Hort), or future krinei with a circumflex, ‘will judge’ (the Textus Receptus and Byzantine text, and most translations). Editions also differ on the order ‘Christ Jesus’ or ‘Jesus Christ’, and Westcott and Hort read ‘in the day in which’ rather than ‘when’. None of these changes the meaning.",
+      "theology": [
+        { "id": "return", "note": "The day of judgment is the day when Christ, who died and rose, acts as God's appointed judge. The one who will judge is the one the gospel offers as Savior, which is why Paul can call even the judgment ‘my gospel’." },
+        { "id": "judgment", "note": "Judgment reaches the secrets of the heart, not just outward acts. That is a terror to the hypocrite and a relief to the misunderstood (1 Corinthians 4:5)." }
+      ],
+      "refs": ["Acts 17:31", "1 Corinthians 4:5", "John 5:22", "Ecclesiastes 12:14", "2 Timothy 4:1"]
+    },
+    {
+      "v": "17-20",
+      "context": "Paul now names his conversation partner explicitly: one who calls himself a Jew. He lists the privileges that Jews rightly valued, each of them a real gift from God: the name, the law, the knowledge of God's will, and the calling to be a guide and light to the nations. The long list builds up to the questions of verses 21-24.",
+      "grammar": "Ei de sy, ‘but if you’, begins a conditional sentence that never reaches its main clause; after the list of verses 17-20, Paul breaks off and restarts with questions in verse 21 (oun, ‘then’). The grammar itself shows the gap between privilege and performance. Eponomazē, ‘you bear the name’, uses a middle or passive form: the name Jew is claimed as an honor. Epanapauē nomō, ‘you rest on the law’, uses the verb the Septuagint uses in Micah 3:11 of leaders who lean on the LORD while practicing injustice. Kauchasai en theō, ‘you boast in God’, is not wrong in itself (Jeremiah 9:24; Paul does it in 5:11). Dokimazeis ta diapheronta, ‘you approve what is excellent’, is the phrase of Philippians 1:10. Katēchoumenos, ‘being instructed’, is the word from which ‘catechism’ comes. Morphōsis in verse 20 means ‘embodiment’ or ‘form’: the law is the visible shape of knowledge and truth.",
+      "words": ["G2453", "G2028", "G1879", "G2744", "G1381", "G1308", "G2727", "G3595", "G5457", "G3446"],
+      "text": "The Textus Receptus reads ide, ‘behold’, instead of ei de, ‘but if’; the two sounded the same in later Greek pronunciation. That is why the King James Version has ‘Behold, thou art called a Jew’. The earliest manuscripts support ‘but if’.",
+      "theology": [
+        { "id": "israel", "note": "Israel's calling was real: to be a light to those in darkness (Isaiah 42:6-7, 49:6). Paul does not mock it; he honors it by showing what it demands. His complaint is not that Israel was chosen but that the chosen did not live the calling, which he will say in 3:1-2 was still an advantage." }
+      ],
+      "refs": ["Isaiah 42:6-7", "Isaiah 49:6", "Micah 3:11", "Jeremiah 9:23-24", "Matthew 15:14"]
+    },
+    {
+      "v": "21-22",
+      "context": "The questions strike: the teacher of others does not teach himself. Paul names stealing, adultery, and robbing temples, the eighth and seventh commandments and a violation of the first. He does not claim every Jew did these things; he asks whether the teacher's life matches his instruction, and the answer, supported by verse 24, is that Israel as a people had not.",
+      "grammar": "Each question follows the same pattern: a present participle naming the teacher's role (didaskōn, ‘teaching’, kēryssōn, ‘preaching’, legōn, ‘saying’, bdelyssomenos, ‘abhorring’) followed by the same verb turned on him. The repetition makes each question a small trap. Bdelyssomai, ‘to abhor’, is the Septuagint's word for what is abominable, especially idols. Hierosyleis, ‘do you rob temples’, contrasts with it: loathing idols in theory while profiting from their shrines.",
+      "words": ["G1321", "G2784", "G2813", "G3431", "G0948", "G1497", "G2416"],
+      "history": "Robbing temples was among the most serious crimes in the Greco-Roman world, and Jews were sometimes accused of it. Josephus reports that the law of Moses forbade Jews to rob foreign temples or take offerings dedicated to other gods (Antiquities 4.207; Against Apion 2.237), and Deuteronomy 7:25-26 forbids taking the gold and silver of idols. In Acts 19:37 the town clerk of Ephesus defends Paul's companions by saying they have not robbed temples. Paul may be thinking of Jews who traded in valuable objects taken from pagan shrines, reasoning that idols were nothing.",
+      "theology": [
+        { "id": "law", "note": "Teaching the law is not keeping it. Paul's questions apply the law's own commands to those who teach them, as Jesus did when he told the crowds to do what the scribes taught but not what they did (Matthew 23:3)." }
+      ],
+      "refs": ["Matthew 23:3", "Deuteronomy 7:25-26", "Acts 19:37", "Psalm 50:16-21", "James 3:1"]
+    },
+    {
+      "v": "23-24",
+      "context": "The final question gathers the others: the one who boasts in the law dishonors God by breaking it. Verse 24 supports the charge from Scripture itself. Israel's disobedience had caused the nations to speak contemptuously of Israel's God, which is the opposite of the light to the nations that verse 19 described.",
+      "grammar": "Verse 23 can be read as a question (most versions) or as a statement summarizing the preceding questions. Dia tēs parabaseōs tou nomou, ‘through the transgression of the law’, uses parabasis, a stepping over a known boundary, the word Paul will use of Adam in 5:14. Atimazeis, ‘you dishonor’, recalls 1:21-24, where the Gentiles did not glorify God and dishonored their own bodies. In verse 24 kathōs gegraptai, ‘just as it is written’, comes at the end, unusually, so that the citation is heard first as Paul's own accusation.",
+      "words": ["G2744", "G3847", "G0818", "G3686", "G0987", "G1125"],
+      "ot": [
+        { "ref": "Isaiah 52:5", "note": "In Isaiah the verse belongs to a promise of redemption. Israel has been sold into exile for nothing, and the Hebrew says that God's name is despised continually, all day long; the despising is done by Israel's oppressors, who mock the God whose people are in chains. The Septuagint adds the words that Paul quotes: di' hymas, ‘because of you’, and en tois ethnesin, ‘among the Gentiles’. Paul follows the Greek and changes the setting: the blasphemy now results not from Israel's suffering but from Israel's disobedience. Ezekiel 36:20-23 makes a similar point, that Israel profaned God's name among the nations by its conduct, which led to exile. In Isaiah the next verses announce the good news of God's reign (52:7), which Paul quotes in 10:15; the charge and the remedy stand in the same chapter." }
+      ],
+      "theology": [
+        { "id": "names-of-god", "note": "God's name is his reputation among the nations. The people who bear his name can bring it honor or contempt, which is why the first petition of the Lord's Prayer asks that it be hallowed." }
+      ],
+      "refs": ["Isaiah 52:5", "Ezekiel 36:20-23", "Isaiah 52:7", "2 Samuel 12:14", "1 Timothy 6:1"]
+    },
+    {
+      "v": "25",
+      "context": "Paul takes up circumcision, the most visible sign of Jewish identity. He grants that it has value, as he will insist again in 3:1-2, but only in connection with keeping the law; for a transgressor it has become the same as uncircumcision.",
+      "grammar": "Peritomē men gar ōphelei, ‘circumcision indeed profits’, uses the particle men, anticipating a ‘but’; the value is conceded, then qualified. The two conditions use ean with the subjunctive, ‘if you practice the law’ and ‘if you are a transgressor’, as live possibilities. Parabatēs, ‘transgressor’, is the person form of parabasis in verse 23. Gegonen, ‘has become’, is perfect: the circumcision of the transgressor has turned into uncircumcision, a status as well as an act. The paradox is sharpened by akrobystia, ‘foreskin’, a blunt word that in Jewish usage also served as a label for Gentiles.",
+      "words": ["G4061", "G5623", "G4238", "G3848", "G0203", "G1096"],
+      "history": "Circumcision was the mark by which outsiders identified Jews. Tacitus (Histories 5.5) says the Jews adopted it to distinguish themselves from others, and Roman satirists mocked it. The book of Jubilees, written in the second century BC, calls circumcision on the eighth day an eternal ordinance and says that any male not circumcised belongs to the children of destruction (Jubilees 15:25-26). Philo (On the Migration of Abraham 89-93) criticized Jews who so emphasized the symbolic meaning of circumcision that they neglected the practice. Paul's position, that the sign has value only with the reality it signifies, sits within Jewish debate even as it goes beyond it.",
+      "theology": [
+        { "id": "covenant", "note": "Circumcision was the sign God gave Abraham (Genesis 17:10-11), and signs have value because of the reality they point to. Detached from covenant faithfulness, the sign becomes empty, a principle Paul applies again in 4:11." }
+      ],
+      "refs": ["Genesis 17:10-14", "Jeremiah 9:25-26", "Galatians 5:3", "1 Corinthians 7:19"]
+    },
+    {
+      "v": "26-27",
+      "context": "The reverse also holds: an uncircumcised person who keeps the law's requirements will be counted as circumcised. Paul goes further, saying such a person will stand in judgment over the circumcised lawbreaker, echoing Jesus' saying that the people of Nineveh will rise up at the judgment against his generation.",
+      "grammar": "Logisthēsetai eis peritomēn, ‘will be reckoned as circumcision’, uses the passive of logizomai with eis, ‘counted as’, the exact construction of Genesis 15:6 that Paul expounds in chapter 4 (‘credited to him as righteousness’). Verse 26 is a preview of that argument. Dikaiōmata, ‘righteous requirements’, is plural here and singular in 8:4, where the Spirit fulfills the requirement in believers. In verse 27, hē ek physeōs akrobystia, ‘the uncircumcision by nature’, means physically uncircumcised, a use of physis as birth that bears on 2:14. Dia grammatos kai peritomēs, ‘with the letter and circumcision’, uses dia with the genitive for attendant circumstances: despite possessing them.",
+      "words": ["G1345", "G5442G", "G3049", "G5449", "G5055", "G1121", "G3848"],
+      "theology": [
+        { "id": "judgment", "note": "The Gentile who keeps the law will condemn the Jew who breaks it, not by sitting as judge but by the contrast his life provides (compare Matthew 12:41-42). The one who possesses more is judged more strictly." },
+        { "id": "law", "note": "Who keeps the law's requirements while uncircumcised? As in verse 14, some see Christian Gentiles in whom the Spirit fulfills the law (8:4), and others a hypothetical case that sharpens the point. Paul's argument works either way: the sign without the reality is empty." }
+      ],
+      "refs": ["Romans 8:4", "Matthew 12:41-42", "Galatians 6:15", "1 Corinthians 7:19"]
+    },
+    {
+      "v": "28-29",
+      "context": "The chapter's conclusion defines the true Jew and true circumcision by what is inward: the heart, circumcised by the Spirit, not the written code. Its praise comes from God, not from people. Paul immediately faces the objection this raises in 3:1: then what advantage does the Jew have?",
+      "grammar": "The Greek is elliptical, with verbs to be supplied: literally ‘for not the one in the outward is a Jew, nor the one in the outward in flesh circumcision, but the one in the hidden a Jew, and circumcision of heart, in spirit not letter’. The contrast en tō phanerō and en tō kryptō, ‘in the open’ and ‘in the hidden’, picks up verse 16: God judges the hidden things. Pneumati ou grammati, ‘by the Spirit, not the letter’, is a contrast Paul develops in 7:6 and 2 Corinthians 3:6; grammata is the law as written code, external to the heart. Pneuma could mean the human spirit, but the contrast with the letter and Paul's usage elsewhere favor the Holy Spirit, as the BSB takes it.",
+      "words": ["G5318", "G2453", "G2927", "G4061", "G2588", "G4151G", "G1121", "G1868"],
+      "ot": [
+        { "ref": "Deuteronomy 30:6", "note": "Moses calls Israel to circumcise their hearts (Deuteronomy 10:16) and then promises that God himself will do it: the LORD your God will circumcise your heart and the heart of your descendants, so that you love him. The Hebrew uses the ordinary verb for circumcision (mul); the Septuagint renders Deuteronomy 30:6 with perikathariei, ‘will cleanse around’. Jeremiah 4:4 repeats the call, and Jeremiah 9:25-26 warns that God will punish the circumcised who are uncircumcised in heart, listing Judah with the nations. Paul reads the promise as fulfilled by the Spirit, which fits Ezekiel 36:26-27, where God gives a new heart and puts his Spirit within. The heart-circumcision Paul describes is not his invention but Israel's own prophetic hope." }
+      ],
+      "history": "Inward circumcision was a live idea in Judaism. The Community Rule from Qumran (1QS 5:5) calls members to circumcise the foreskin of the evil inclination and of stiffness of neck, and Philo interprets circumcision as the cutting away of pleasures and passions while still insisting that the physical rite be kept. What is distinctive in Paul is the conclusion he draws: the inward reality, given by the Spirit, defines who belongs to God's people, even without the outward sign.",
+      "theology": [
+        { "id": "regeneration", "note": "True circumcision is an inward work of the Spirit on the heart. Paul points to what later theology calls regeneration, the renewal God promised in Deuteronomy 30:6 and Ezekiel 36:26-27, which no ritual can produce." },
+        { "id": "israel", "note": "Paul does not abolish the category ‘Jew’ but defines it by the inward reality the covenant always aimed at. Interpreters differ on whether he includes Gentile believers in the phrase here; 3:1-2 and chapters 9-11 show he still holds ethnic Israel's distinct privileges." }
+      ],
+      "refs": ["Deuteronomy 10:16", "Jeremiah 4:4", "Philippians 3:3", "Colossians 2:11", "2 Corinthians 3:6"]
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Verse 1 gives the conclusion the whole letter has been building to: for those in Christ Jesus there is now no condemnation. ‘Therefore’ reaches back past the struggle of 7:14-25 to the thanksgiving of 7:25 and, beyond it, to 5:12-21, where Adam's trespass brought condemnation and Christ's obedience brought life. The verse opens the chapter's frame, which closes with ‘no separation’ in verses 38-39.",
+      "grammar": "The Greek puts the negative first for emphasis: ouden ara nyn katakrima, ‘no, then, now, condemnation’. Ara (‘therefore’, ‘then’) draws a conclusion, and nyn (‘now’) is not merely temporal but eschatological, the ‘now’ of the new age that began with Christ (3:21, 5:9, 7:6). Katakrima means not only a verdict of guilt but the sentence and penalty that follow it; Paul used it only in 5:16 and 5:18, both of the condemnation that came through Adam. Tois en Christo Iesou, ‘for those in Christ Jesus’, names the new location of believers; the reason there is no condemnation is not their improvement but their being in him.",
+      "words": ["G3762", "G3568", "G2631", "G5547"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "‘No condemnation’ is the verdict of justification stated in its negative form: the sentence against sin is not reduced but removed. Paul grounds it in union with Christ, not in the believer's progress, which is why it can be stated in the present tense even after the struggle of chapter 7."
+        },
+        {
+          "id": "union",
+          "note": "‘In Christ Jesus’ is the reason for the verdict. The sentence that fell on Christ in his death (verse 3) cannot fall again on those who are joined to him."
+        }
+      ],
+      "text": "The King James Version adds ‘who walk not after the flesh, but after the Spirit’. Those words are missing in the earliest manuscripts, including the original hands of Codex Sinaiticus and Codex Vaticanus, and appear in later ones, first in a shorter form and then in full. Most scholars think a scribe copied them from verse 4, perhaps to guard against the verse being read as a license. Modern translations omit them.",
+      "refs": ["Romans 5:16-18", "Romans 8:34", "John 3:18", "John 5:24", "Romans 3:21-24"]
+    },
+    {
+      "v": "2",
+      "context": "‘For’ gives the reason for verse 1. A new law, the law of the Spirit of life, has freed the believer from the law of sin and death. The verse answers the captivity of 7:23 with liberation, using the same word ‘law’ in the same double sense.",
+      "grammar": "Ho nomos tou pneumatos tes zoes, ‘the law of the Spirit of life’, stands against ton nomon tes hamartias kai tou thanatou, ‘the law of sin and death’. Interpreters divide over nomos here. Many, including Douglas Moo, take it as ‘principle’ or ‘power’: the Spirit's life-giving rule defeats sin's deadly rule. Others, including James Dunn and N. T. Wright, argue that both phrases refer to the law of Moses seen from two sides, the Torah used by sin to kill (7:10-11) and the Torah fulfilled by the Spirit (verse 4). The phrase en Christo Iesou can go with ‘the Spirit of life’ or, as the BSB takes it, with ‘set you free’. Eleutherosen, an aorist, marks the liberation as done.",
+      "words": ["G3551", "G4151G", "G2222", "G1659", "G2288"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is ‘the Spirit of life’, the giver of life promised in Ezekiel 37:14, and the power that sets believers free. Freedom from sin's rule is the Spirit's work in those joined to Christ."
+        }
+      ],
+      "text": "Manuscripts differ on the pronoun: ‘set you free’ (se, singular) in the editions behind most modern translations, ‘set me free’ (me) in others and in the King James Version, and ‘set us free’ in a few. The singular ‘you’ is the harder reading, since ‘me’ would continue chapter 7's first person, and so it is probably original.",
+      "refs": ["Romans 7:23", "Romans 7:10", "2 Corinthians 3:6", "Ezekiel 37:14", "Galatians 5:1"]
+    },
+    {
+      "v": "3",
+      "context": "‘For’ explains how the freedom of verse 2 came. The law could not defeat sin because it worked through human flesh, which was too weak. God did what the law could not: he sent his own Son into the very condition of sinful humanity, as an offering for sin, and condemned sin there.",
+      "grammar": "The sentence opens without a verb: to gar adynaton tou nomou, literally ‘for the impossible thing of the law’, in which it was weak through the flesh. Grammarians call it a nominative or accusative absolute, a phrase that stands apart before the main clause; ‘God did’ must be supplied. En homoiomati sarkos hamartias, ‘in the likeness of sinful flesh’, is carefully worded. Paul does not say ‘in sinful flesh’, which would make Christ a sinner, nor ‘in the likeness of flesh’, which would deny his real humanity; homoioma (‘likeness’) asserts full participation in fallen human existence while leaving room for his sinlessness (2 Corinthians 5:21). Kai peri hamartias can mean ‘concerning sin’, but in the Septuagint peri hamartias is the standard phrase for the sin offering (Leviticus 5:6-11, 16:3), which is why the BSB reads ‘as an offering for sin’. Katekrinen ten hamartian en te sarki: God ‘condemned sin in the flesh’, the verdict of katakrima (verse 1) executed on sin itself in Christ's body.",
+      "words": ["G0102", "G0770G", "G4561", "G5207", "G3992", "G3667", "G0266", "G2632"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The verse is one of Paul's clearest statements that Christ's death was a sin offering in which God passed sentence on sin. The condemnation believers escape (verse 1) is the condemnation God executed on sin in Christ's flesh."
+        },
+        {
+          "id": "incarnation",
+          "note": "‘In the likeness of sinful man’ holds together the two truths the church later confessed at Chalcedon (451): the Son took real human nature, weak and mortal, and remained without sin. ‘His own Son’ implies that he was the Son before he was sent."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Leviticus 16:3",
+          "note": "The phrase peri hamartias (‘for sin’) is the Septuagint's regular rendering of the Hebrew chattat, the sin offering, as in Leviticus 16:3, where Aaron brings a bull ‘for a sin offering’ on the Day of Atonement, and throughout Leviticus 4-5. The Septuagint of Isaiah 53:10 uses the same phrase of the Servant's life given peri hamartias, where the Hebrew has asham, ‘guilt offering’. Paul does not quote either passage, but a reader of the Greek Bible would have heard sacrificial language in the phrase, and most modern translations follow that sense."
+        }
+      ],
+      "refs": ["2 Corinthians 5:21", "Galatians 4:4-5", "Philippians 2:7", "Hebrews 2:14-17", "Hebrews 4:15"]
+    },
+    {
+      "v": "4",
+      "context": "The purpose of God's act: that the righteous requirement of the law might be fulfilled in believers, who walk by the Spirit and not by the flesh. The law is not discarded; what it required is now brought about in a new way.",
+      "grammar": "To dikaioma tou nomou, ‘the righteous requirement of the law’, is singular, treating the law's demands as one whole. Pleirothe is an aorist passive subjunctive, ‘might be fulfilled’: the passive suggests that God brings about the fulfillment, not that believers achieve it on their own. En hemin, ‘in us’, rather than ‘by us’, supports this. Interpreters divide over whether the fulfillment is forensic (Christ's obedience counted to believers) or ethical (the Spirit producing obedience in their lives); the phrase ‘who walk... according to the Spirit’ leads most, including Moo and Thomas Schreiner, to see at least the ethical sense, with the forensic basis already given in verse 3. Peripatousin (‘walk’) is a present participle, describing a way of life.",
+      "words": ["G1345", "G3551", "G4137", "G4043", "G4561", "G4151G"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law's goal is reached, not abandoned. What the law required and could not produce through the flesh, the Spirit produces in those who belong to Christ, which is the new covenant promise of Jeremiah 31:33 and Ezekiel 36:27."
+        },
+        {
+          "id": "sanctification",
+          "note": "Walking by the Spirit is the shape of Christian obedience. The verse joins justification (verse 3) and sanctification (verse 4) without merging them: God's sentence on sin in Christ has as its purpose a life that fulfills his law."
+        }
+      ],
+      "refs": ["Ezekiel 36:26-27", "Jeremiah 31:33", "Galatians 5:16", "Galatians 5:22-23", "Romans 13:8-10"]
+    },
+    {
+      "v": "5-6",
+      "context": "Verse 4 mentioned two ways of walking; verses 5-6 describe the mindset behind each. People are oriented either by the flesh or by the Spirit, and each orientation has its outcome: death, or life and peace.",
+      "grammar": "Hoi kata sarka ontes, ‘those who are according to the flesh’, describes existence, not occasional acts. Phronousin, from phroneo, means to set one's mind on, to be intent on; it is the verb of Philippians 2:5 and Colossians 3:2. Its noun phronema, used three times in verses 6-7 and again in verse 27, means a mindset or way of thinking that includes aims and desires, not only thoughts. Verse 6 has no verbs: to phronema tes sarkos thanatos, ‘the mindset of the flesh (is) death’. The outcome is stated as identity, not merely consequence.",
+      "words": ["G4561", "G4151G", "G5426", "G5427", "G2288", "G2222", "G1515"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit shapes not only conduct but the direction of the mind. Paul describes two whole ways of being human, and the Spirit's way is ‘life and peace’, echoing the peace with God of 5:1."
+        },
+        {
+          "id": "humanity",
+          "note": "In Paul ‘flesh’ is not the body but human existence turned away from God and closed on itself. The verses define people by what their minds are set on, not by their bodily nature."
+        }
+      ],
+      "refs": ["Galatians 5:16-17", "Philippians 3:19-20", "Colossians 3:1-2", "Romans 5:1"]
+    },
+    {
+      "v": "7-8",
+      "context": "Paul explains why the mind of the flesh ends in death: it is hostile to God, it does not submit to his law, and it cannot. The conclusion is blunt: those in the flesh cannot please God.",
+      "grammar": "Echthra eis theon, ‘hostility toward God’, is a noun: the mind of the flesh does not merely feel hostile, it is enmity. Ouch hypotassetai is present passive or middle, ‘does not submit itself’. The added oude gar dynatai, ‘nor indeed can it’, moves from what happens to what is possible, and dynantai returns in verse 8. Hoi de en sarki ontes, ‘those who are in the flesh’, uses the phrase of 7:5, a realm rather than a body, which is why verse 9 can tell believers they are not in it.",
+      "words": ["G5427", "G2189", "G5293", "G1410", "G0700"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verses state that apart from the Spirit a person is not able to submit to God's law. Augustine drew on texts like this against Pelagius, and the Reformers made them central to their teaching on the bondage of the will; Arminian and Wesleyan theology accepts the inability and answers it with prevenient grace, God's enabling grace given before conversion."
+        }
+      ],
+      "refs": ["Romans 5:10", "Colossians 1:21", "James 4:4", "Hebrews 11:6", "John 6:44"]
+    },
+    {
+      "v": "9",
+      "context": "Paul turns to his readers: you are not in the flesh but in the Spirit, since God's Spirit dwells in you. Then the reverse: anyone without the Spirit of Christ does not belong to him. Having the Spirit is not a later stage of Christian life; it is what makes a person a Christian.",
+      "grammar": "Eiper can mean ‘if indeed’ (raising a condition) or ‘since’ (assuming it true). Here it most likely assumes the fact while inviting self-examination. Oikei en hymin, ‘dwells in you’, uses the verb of 7:17 and 7:20, where sin dwelt in the ‘I’; now the Spirit is the resident. The verse uses ‘Spirit of God’ and ‘Spirit of Christ’ interchangeably, and verse 10 adds ‘Christ in you’. Houtos ouk estin autou, ‘this one is not his’, is emphatic: belonging to Christ and having his Spirit cannot be separated.",
+      "words": ["G4561", "G4151G", "G3611", "G2192"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The same Spirit is called the Spirit of God and the Spirit of Christ, and his dwelling in believers is the same as Christ being in them (verse 10). Western theologians from Augustine onward cited such texts in arguing that the Spirit proceeds from the Father and the Son (the filioque); Eastern Orthodox theologians answer that the verse speaks of the Spirit's sending and indwelling, not his eternal origin."
+        },
+        {
+          "id": "spirit",
+          "note": "The verse makes the Spirit's indwelling the mark of every believer, not of a spiritual elite. That has been important in debates over whether receiving the Spirit is a second experience after conversion: Pentecostal and holiness traditions distinguish a later baptism in the Spirit for power, while other traditions hold that every believer receives the Spirit at conversion."
+        }
+      ],
+      "refs": ["1 Corinthians 3:16", "1 Corinthians 12:13", "Galatians 4:6", "1 John 4:13", "Philippians 1:19"]
+    },
+    {
+      "v": "10",
+      "context": "If Christ is in believers, two things are true at once: the body is still subject to death because of sin, and yet the Spirit is life because of righteousness. The present is marked by both mortality and new life.",
+      "grammar": "The men... de (‘on the one hand... on the other’) construction sets to soma nekron (‘the body is dead’) against to de pneuma zoe (‘but the spirit is life’). Nekron probably means ‘mortal’, destined to die, as verse 11's ‘mortal bodies’ shows. The contested word is pneuma. Many translations (the BSB, NIV, and King James Version) take it as the human spirit, ‘your spirit is alive’; others (ESV, NRSV, and interpreters such as Gordon Fee and Moo) take it as the Holy Spirit, ‘the Spirit is life’, since Paul has just used pneuma of God's Spirit and the word is zoe, the noun ‘life’, not the adjective ‘alive’. Dia hamartian and dia dikaiosynen (‘because of sin’, ‘because of righteousness’) balance the causes.",
+      "words": ["G5547", "G4983", "G3498", "G4151G", "G2222", "G1343"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation is already and not yet. The Spirit's life is present now because of righteousness, God's saving verdict, while the body still bears the sentence of death. Verse 11 shows how that tension will end."
+        }
+      ],
+      "refs": ["Galatians 2:20", "Colossians 1:27", "2 Corinthians 4:16", "Romans 5:12", "1 Corinthians 15:45"]
+    },
+    {
+      "v": "11",
+      "context": "The Spirit who lives in believers is the Spirit of the God who raised Jesus. The same God will give life to their mortal bodies through that Spirit. The resurrection of Jesus is the pattern and pledge of theirs.",
+      "grammar": "The verse names God twice by what he did: tou egeirantos ton Iesoun ek nekron (‘of him who raised Jesus from the dead’) and ho egeiras Christon ek nekron (‘he who raised Christ from the dead’). The change from ‘Jesus’ to ‘Christ’ may move from the historical person to his role as the one in whom believers share. Zoopoiesei, ‘will give life’, is future: this is the bodily resurrection, not only renewed moral life. Ta thneta somata (‘mortal bodies’) makes the object the body itself, the thing that seemed ‘dead’ in verse 10.",
+      "words": ["G4151G", "G1453", "G3611", "G2227", "G2349", "G4983"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The verse promises the resurrection of believers' bodies, raised by the same God and through the same Spirit who raised Jesus. Christian hope is embodied: God will give life to mortal bodies, not release souls from them."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father raises, the Son is raised, and the Spirit is the one through whom life is given. The verse is one of several in this chapter where Father, Son, and Spirit act together in a single work."
+        }
+      ],
+      "text": "The final phrase has two readings. The editions behind most modern translations read dia tou enoikountos autou pneumatos, ‘through his Spirit who dwells in you’, making the Spirit the agent. Other editions, and many manuscripts, read dia to enoikoun autou pneuma, ‘because of his Spirit who dwells in you’, making the Spirit's presence the reason God will act. Both readings are old and well supported, and both affirm that the indwelling Spirit is the link between Christ's resurrection and ours.",
+      "refs": ["1 Corinthians 6:14", "2 Corinthians 4:14", "1 Corinthians 15:20-23", "Philippians 3:20-21", "Ephesians 1:19-20"]
+    },
+    {
+      "v": "12-13",
+      "context": "‘Therefore’ turns the promise into obligation. Believers owe the flesh nothing. If they live by it, they will die; if by the Spirit they put to death the deeds of the body, they will live. The Spirit's work does not make the believer passive.",
+      "grammar": "Opheiletai esmen, ‘we are debtors’, is the language of obligation; Paul does not finish the sentence (‘but to the Spirit’), leaving the reader to supply it. In verse 13 mellete apothneskein (‘you are going to die’) uses mello, ‘be about to’, for a sure consequence. Thanatoute, ‘you put to death’, is a present active indicative in a conditional clause, an ongoing activity. Pneumati, ‘by the Spirit’, is an instrumental dative placed early: the Spirit is the means, and the believer is the one who acts. Tas praxeis tou somatos, ‘the deeds of the body’, are the actions of the body as used by sin (6:12-13). Zesesthe, ‘you will live’, looks to eternal life.",
+      "words": ["G3781", "G4561", "G3195", "G4151G", "G4234", "G2289", "G2198"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Putting sin to death is done ‘by the Spirit’ and by the believer at once. The Puritan John Owen built his treatise Of the Mortification of Sin in Believers (1656) on this verse, arguing that the work is the believer's duty and the Spirit's power together."
+        },
+        {
+          "id": "perseverance",
+          "note": "The warning ‘you will die’ is addressed to believers. Reformed readers take such warnings as one of God's means of keeping his people; Arminian and Wesleyan readers take them as showing that a believer can finally fall away. Both agree the warning is real and must be heeded."
+        }
+      ],
+      "refs": ["Colossians 3:5", "Galatians 5:24", "Galatians 6:8", "Romans 6:12-13", "Romans 13:14"]
+    },
+    {
+      "v": "14",
+      "context": "‘For’ explains why those who put sin to death will live: they are led by God's Spirit, and those led by the Spirit are God's sons. The verse introduces the theme of sonship and adoption that runs to verse 17 and returns in verses 19, 21, 23, and 29.",
+      "grammar": "Hosoi (‘as many as’) is inclusive: all who are led, and only those. Agontai, a present passive (‘are led’), is the verb used for Israel led through the wilderness (Deuteronomy 8:2 in the Septuagint) and for the Spirit leading Jesus (Luke 4:1). In context the leading is not special guidance for decisions but the Spirit's steady direction in putting sin to death. Houtoi huioi theou eisin, ‘these are sons of God’, uses huioi (‘sons’), the word for heirs in the ancient world; Paul includes women, as 2 Corinthians 6:18 makes explicit. Paul uses huioi and tekna (‘children’, verse 16) with little difference.",
+      "words": ["G3745", "G4151G", "G0071", "G5207"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Being led by the Spirit marks God's children. The verse ties the Spirit's leading to the moral struggle of verse 13, not to private revelation."
+        }
+      ],
+      "refs": ["Galatians 5:18", "Deuteronomy 8:2", "Luke 4:1", "Exodus 4:22", "2 Corinthians 6:18"]
+    },
+    {
+      "v": "15",
+      "context": "‘For’ grounds verse 14 in the readers' experience. The Spirit they received does not bring slavery and fear but sonship, and by him they cry to God with Jesus' own word for Father. The slavery of chapter 6 is now contrasted not with a better slavery but with adoption.",
+      "grammar": "Pneuma douleias (‘a spirit of slavery’) and pneuma huiothesias (‘the Spirit of adoption’) are set in balance with the same verb elabete (‘you received’), aorist, pointing back to conversion. Palin eis phobon, ‘again to fear’, means that slavery would be a return to the fear of the old life. Huiothesia, literally ‘placing as a son’, was a legal term for adoption. En ho krazomen, ‘by whom we cry out’, uses krazo, a verb for loud, urgent cries, suggesting prayer spoken aloud in worship. Abba ho pater gives the Aramaic abba with the Greek translation ho pater (‘Father’), as in Mark 14:36 and Galatians 4:6.",
+      "words": ["G2983", "G1397", "G5401", "G5206", "G2896", "G0005", "G3962"],
+      "history": "Abba is Aramaic, the everyday language of Jesus and Palestinian Jews. Joachim Jeremias argued (The Prayers of Jesus, English translation 1967) that addressing God as abba was characteristic of Jesus and expressed unusual intimacy. James Barr, in an article titled ‘Abba Isn't Daddy’ (Journal of Theological Studies, 1988), showed that the word was used by adult children too and did not mean a childish ‘daddy’, though he did not deny its warmth. That Greek-speaking believers in Rome and Galatia kept the Aramaic word suggests it came from Jesus' own prayer and passed into early Christian worship.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Christian prayer is the cry of adopted children, prompted by the Spirit and using the Son's own word for the Father. The Spirit does not replace the believer's prayer; he makes it possible."
+        },
+        {
+          "id": "salvation",
+          "note": "Adoption is one of the richest pictures of salvation in Paul: not only pardon but a new family, a new name, and an inheritance. Paul uses the same word for Israel's privilege in 9:4."
+        }
+      ],
+      "refs": ["Galatians 4:4-7", "Mark 14:36", "2 Timothy 1:7", "1 John 4:18", "Romans 9:4"]
+    },
+    {
+      "v": "16-17",
+      "context": "The Spirit confirms to believers that they are God's children. From that Paul draws a chain: children, therefore heirs; heirs of God, co-heirs with Christ. The chain includes a condition: sharing Christ's glory means sharing his sufferings first, which prepares for verse 18.",
+      "grammar": "Symmartyrei to pneumati hemon can mean ‘testifies with our spirit’ (two witnesses agreeing) or ‘testifies to our spirit’ (the Spirit assuring the human spirit). The prefix syn- (‘with’) and the Jewish rule that a matter is established by two or three witnesses (Deuteronomy 19:15) lead many to prefer ‘with’. Verse 17 builds a conditional chain, ei de tekna, kai kleronomoi, ‘and if children, also heirs’. Synkleronomoi (‘co-heirs’) is one of three syn- compounds in the verse: co-heirs, suffer with (sympaschomen), glorified with (syndoxasthomen). Eiper can mean ‘if indeed’ or ‘since’; most take it as a real condition that describes the path of every believer rather than a test to be passed.",
+      "words": ["G4828", "G5043", "G2818", "G4789", "G4841", "G4888"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit's witness is the ground of Christian assurance. John Wesley preached two sermons titled The Witness of the Spirit on verse 16, teaching that the Spirit gives a direct inner testimony that a believer is God's child, confirmed by the fruit of the Spirit. Reformed writers such as the Westminster Confession (18.2) locate assurance in God's promises, the evidence of grace, and the Spirit's witness together."
+        },
+        {
+          "id": "suffering",
+          "note": "Suffering with Christ is not a detour from the inheritance but the road to it. Paul makes shared suffering the normal condition of those who will share Christ's glory."
+        }
+      ],
+      "refs": ["Galatians 4:7", "1 John 3:1-2", "2 Timothy 2:11-12", "1 Peter 4:13", "Deuteronomy 19:15"]
+    },
+    {
+      "v": "18",
+      "context": "Verse 17 ended with suffering and glory; verse 18 weighs them. Paul's reckoning is that present sufferings are not worth comparing with the glory to be revealed. This verse introduces the section on hope in the midst of groaning (verses 18-30).",
+      "grammar": "Logizomai, ‘I consider’ or ‘I reckon’, is the verb of 6:11: a considered judgment, not a mood. Ouk axia... pros, ‘not worthy (to be compared) to’, uses axios, ‘of equal weight’, a word from weighing on scales. Ta pathemata tou nyn kairou, ‘the sufferings of the present time’, uses kairos for the present age. Ten mellousan doxan apokalyphthenai, ‘the glory that is about to be revealed’, places mellousan (‘coming’, ‘about to’) early for emphasis. Eis hemas can be ‘to us’ or ‘in us’: the glory will not only be shown to believers but will transform them.",
+      "words": ["G3049", "G0514", "G3804", "G2540", "G1391", "G0601"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Hope does not deny present suffering but sets it on a scale beside future glory. The glory is ‘to be revealed’: it already exists in God's purpose and will be disclosed."
+        },
+        {
+          "id": "suffering",
+          "note": "Paul, who had been beaten, stoned, and shipwrecked (2 Corinthians 11:23-27), counts suffering as real and temporary. He does not call it good; he calls it outweighed."
+        }
+      ],
+      "refs": ["2 Corinthians 4:17", "1 Peter 5:10", "Colossians 3:4", "1 John 3:2"]
+    },
+    {
+      "v": "19",
+      "context": "‘For’ introduces evidence for the coming glory: the whole creation is waiting for it. Paul personifies the created world as straining forward in eager expectation for the moment God's children are revealed, because its own release is tied to theirs.",
+      "grammar": "He apokaradokia tes ktiseos, ‘the eager expectation of the creation’, uses a rare noun found elsewhere only in Philippians 1:20. Some explain it from its parts as ‘watching with outstretched head’, a vivid image, but its meaning in use is simply intense expectation. Apekdechetai (‘waits eagerly’) is used three times in this section (verses 19, 23, 25) and always of waiting for the end. He ktisis (‘the creation’) is the main question: most interpreters take it as the non-human creation, animals, plants, and the physical world, since believers are distinguished from it in verse 23 and unbelievers could hardly be said to be waiting ‘in hope’. Some early readers took it to mean humanity. Ten apokalypsin ton huion tou theou, ‘the revelation of the sons of God’, means the public showing of who they already are.",
+      "words": ["G0603", "G2937", "G0602", "G5207", "G0553"],
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "The created world has a future in God's purpose, bound to the future of his children. Paul's hope is not for escape from the material world but for its renewal."
+        }
+      ],
+      "refs": ["Philippians 1:20", "Colossians 3:4", "1 John 3:2", "Isaiah 65:17", "2 Peter 3:13"]
+    },
+    {
+      "v": "20-21",
+      "context": "The reason creation waits: it was subjected to futility, not by its own choice, but by the one who subjected it, and it was subjected in hope. The hope is that creation itself will be freed from its slavery to decay and share the freedom of the glory of God's children.",
+      "grammar": "Te mataioteti, ‘to futility’, is the Septuagint's word for the Hebrew hevel (‘vapor’, ‘breath’, ‘futility’) in Ecclesiastes, ‘vanity of vanities’ (Ecclesiastes 1:2). Creation is not evil, but it cannot reach the purpose it was made for. Hypetage is an aorist passive (‘was subjected’), and ouch hekousa (‘not willingly’) denies that creation chose its condition. Dia ton hypotaxanta, ‘because of the one who subjected it’, is disputed: most interpreters, including C. E. B. Cranfield, James Dunn, and Douglas Moo, take the subjector to be God, who pronounced the curse on the ground in Genesis 3:17; others propose Adam, whose sin brought it, and a few Satan. Only God could subject it ‘in hope’. Eph helpidi (‘in hope’) may go with ‘subjected’ or begin verse 21. Hoti in verse 21 can mean ‘that’ (stating the content of the hope) or ‘because’. He douleia tes phthoras, ‘the slavery of decay’, names the cycle of death and corruption. Ten eleutherian tes doxes, literally ‘the freedom of the glory’, may mean ‘glorious freedom’ (BSB) or ‘the freedom that belongs to the glory’.",
+      "words": ["G3153", "G2937", "G5293", "G1635", "G1680", "G1659", "G1397", "G5356", "G1657", "G1391"],
+      "history": "Jewish writers near Paul's time also tied the condition of the world to Adam's sin and looked for its renewal. The book of Jubilees (second century BC) speaks of the day of the new creation, when the heavens and the earth will be renewed (Jubilees 1:29). 4 Ezra, a Jewish apocalypse written around AD 100, has God say that when Adam transgressed, what had been made was judged, and the ways of this world became narrow and painful (4 Ezra 7:11-12). The prophets had already pictured the land mourning because of human sin (Jeremiah 12:4, Hosea 4:1-3).",
+      "theology": [
+        {
+          "id": "new-creation",
+          "note": "Creation's slavery to decay is not its final state. Paul promises that the physical world will share in the freedom of God's glorified children, the Bible's hope of a new heavens and new earth (Isaiah 65:17, Revelation 21:1-5)."
+        },
+        {
+          "id": "creation",
+          "note": "The world was made good (Genesis 1:31), and its present frustration is not its nature but its condition after the fall. Christian care for creation has often drawn on this passage as evidence that the physical world matters to God's purposes."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 3:17",
+          "note": "The clearest background to creation's subjection is the curse on the ground after Adam's sin: arurah haadamah baavurekha, ‘cursed is the ground because of you’. The Septuagint reads epikataratos he ge en tois ergois sou, ‘cursed is the earth in your works’, having read a slightly different Hebrew word (baavodekha, ‘in your work’). Paul does not quote the verse, and his word mataiotes is not in it, but his claim that creation was subjected through no choice of its own, by the one who has power to promise hope, matches God's sentence in Genesis 3:17-19. Paul adds what Genesis only implies: the subjection was ‘in hope’."
+        }
+      ],
+      "refs": ["Genesis 3:17-19", "Ecclesiastes 1:2", "Isaiah 11:6-9", "Revelation 21:1-5", "Jeremiah 12:4"]
+    },
+    {
+      "v": "22",
+      "context": "Paul appeals to what ‘we know’: the whole creation has been groaning together in labor pains until now. Labor pains are suffering with a promise; they point to a birth. The groaning is the first of three: creation's (verse 22), believers' (verse 23), and the Spirit's (verse 26).",
+      "grammar": "Systenazei kai synodinei, ‘groans together and suffers birth pains together’, are two compound verbs with syn- (‘together’), which may mean creation groans in all its parts or groans together with believers. Odino (‘suffer birth pains’) supplies the key image: pain that is productive, not merely destructive. Achri tou nyn, ‘until now’, stresses that the groaning continues to the present moment, even after Christ's resurrection.",
+      "words": ["G6063", "G2937", "G4959", "G4944", "G3568"],
+      "history": "The image of labor pains before a new age was common in Jewish expectation. The prophets used it for the anguish before God's deliverance (Isaiah 26:17-19, 66:7-9; Micah 4:9-10), and Jesus called the troubles before the end ‘the beginning of birth pains’ (Mark 13:8). Later rabbinic tradition spoke of the ‘birth pangs of the Messiah’ (b. Sanhedrin 98b). Paul applies the image to the whole creation.",
+      "refs": ["Mark 13:8", "Isaiah 26:17-19", "Isaiah 66:7-9", "John 16:21", "Micah 4:9-10"]
+    },
+    {
+      "v": "23",
+      "context": "Believers groan too. Though they already have the Spirit as firstfruits, they groan inwardly as they wait for the completion of their adoption, the redemption of their bodies. Having the Spirit does not end the groaning; it gives it a direction.",
+      "grammar": "Ten aparchen tou pneumatos, ‘the firstfruits of the Spirit’, is most naturally a genitive of apposition: the Spirit is the firstfruits, the first portion of the harvest that guarantees the rest. Stenazomen (‘we groan’) is the simple form of the verb used of creation in verse 22. The striking phrase is huiothesian apekdechomenoi, ‘eagerly awaiting adoption’, when verse 15 said believers have already received the Spirit of adoption. Adoption, like salvation, is both present and future. Ten apolytrosin tou somatos hemon, ‘the redemption of our bodies’, is redemption of the body, not from it, the resurrection of verse 11.",
+      "words": ["G0536", "G4151G", "G4727", "G5206", "G0553", "G0629", "G4983"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The final stage of adoption is the body's redemption at the resurrection. Paul's hope for the body is not escape from it but its release from mortality."
+        },
+        {
+          "id": "hope",
+          "note": "Believers groan not because they lack the Spirit but because they have him: the firstfruits make them long for the full harvest. Hope and groaning belong together in this life."
+        }
+      ],
+      "text": "The word ‘adoption’ (huiothesian) is missing in a few early witnesses, among them the papyrus P46 and the Western codices D, F, and G, perhaps because a scribe felt it clashed with verse 15. It is present in Codex Sinaiticus, Codex Vaticanus, and most other witnesses, and editors print it with confidence.",
+      "refs": ["2 Corinthians 5:2-5", "Ephesians 1:13-14", "Philippians 3:20-21", "1 Corinthians 15:20-23", "Exodus 23:19"]
+    },
+    {
+      "v": "24-25",
+      "context": "Paul explains the waiting of verse 23. Salvation was received in hope, and hope by definition looks for what is not yet seen. So believers wait for it with endurance.",
+      "grammar": "Te gar elpidi esothemen, ‘for in hope we were saved’, uses the aorist of sozo, which in Paul more often looks to the future (5:9-10, 13:11). The dative te elpidi is best taken as a dative of manner (‘in hope’, with hope as the setting), not instrumental (‘by hope’), since Paul's instrument of salvation is faith. The rest of verse 24 is almost a proverb built on blepo (‘see’): hope seen is not hope. In verse 25 di hypomones (‘through endurance’, ‘with patience’) uses hypomone, the steady staying power of 5:3-4, not passive resignation.",
+      "words": ["G1680", "G4982", "G0991", "G1679", "G5281", "G0553"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "‘In hope we were saved’ holds past, present, and future together: believers were saved, and what they were saved into is still ahead. Paul describes salvation as a completed rescue whose full effects are awaited."
+        },
+        {
+          "id": "hope",
+          "note": "Christian hope is certain in its object and unseen in its present experience. It is expressed not as anxiety but as patient endurance."
+        }
+      ],
+      "refs": ["2 Corinthians 4:18", "2 Corinthians 5:7", "Hebrews 11:1", "Romans 5:3-5", "1 Thessalonians 1:3"]
+    },
+    {
+      "v": "26",
+      "context": "‘In the same way’ ties the Spirit's help to the hope just described. Believers are weak and do not know how to pray as they should, and the Spirit himself intercedes for them with groans that words cannot hold. This is the third groaning, and it is God's own.",
+      "grammar": "Synantilambanetai, ‘helps’, is a double compound meaning to take hold of a burden together with someone. Martha uses it when she asks Jesus to tell Mary to help her (Luke 10:40), and the Septuagint uses it of the elders sharing Moses' burden (Numbers 11:17). To ti proseuxometha katho dei ouk oidamen, literally ‘what we should pray as it is necessary we do not know’, refers to the content of prayer, not its method. Hyperentynchanei, ‘intercedes on behalf of’, appears only here in the New Testament. Stenagmois alaletois, ‘with groans unspoken’ or ‘inexpressible’, could mean groans without words or groans too deep for words; the adjective alaletos can mean either. Ernst Käsemann argued that Paul had in mind speaking in tongues in worship, but most interpreters think the groans are the Spirit's own intercession, not audible sounds from believers.",
+      "words": ["G5615", "G4878", "G0769G", "G4336", "G5241", "G4726", "G0215"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The verse is a comfort to anyone who cannot find words to pray. Weakness in prayer is expected, and the Spirit intercedes where believers' understanding fails."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit is a person who helps, intercedes, and groans, not an impersonal force. His intercession within believers (here) and Christ's at the Father's right hand (verse 34) form a double intercession."
+        }
+      ],
+      "text": "Where modern editions read ‘in our weakness’ (singular), the Textus Receptus has ‘our infirmities’ (plural), as in the King James Version. Some manuscripts also read a future indicative (‘what we shall pray’) instead of the subjunctive. Neither change affects the sense.",
+      "refs": ["Luke 10:40", "Numbers 11:17", "Ephesians 6:18", "Jude 1:20", "Hebrews 7:25"]
+    },
+    {
+      "v": "27",
+      "context": "The Father, who searches hearts, knows what the Spirit means, because the Spirit's intercession accords with God's will. Unspoken prayer is not lost, because it passes within the life of God.",
+      "grammar": "Ho eraunon tas kardias, ‘the one who searches the hearts’, is a title for God drawn from the Old Testament (1 Samuel 16:7, Psalm 139:1, 23, Jeremiah 17:10). To phronema tou pneumatos, ‘the mind of the Spirit’, uses the word of verses 6-7. Hoti can mean ‘because’ (as the BSB takes it) or ‘that’ (God knows that the Spirit intercedes). Kata theon, literally ‘according to God’, means ‘in accord with God's will’, as in 2 Corinthians 7:9-11. Hyper hagion, ‘for the saints’, names believers as God's holy people.",
+      "words": ["G2045", "G2588", "G5427", "G1793", "G0040H"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father searches hearts and knows the Spirit's mind; the Spirit intercedes according to the Father's will. The verse shows a communion of knowledge and purpose between the Father and the Spirit."
+        },
+        {
+          "id": "prayer",
+          "note": "Prayer that cannot be put into words is still known and answered by God. The Spirit's intercession always matches the will of God, which believers' own prayers do not."
+        }
+      ],
+      "refs": ["1 Samuel 16:7", "Psalm 139:1-4", "Jeremiah 17:10", "1 Corinthians 2:10-11", "Psalm 7:9"]
+    },
+    {
+      "v": "28",
+      "context": "‘And we know’ turns from what believers do not know (verse 26) to what they do know. For those who love God, called according to his purpose, all things work together for good. The ‘all things’ include the sufferings and groaning just described, and the ‘good’ is defined in the next verse as conformity to Christ.",
+      "grammar": "The subject of synergei (‘works together’) is the crux. Panta can be the subject (‘all things work together for good’, the King James Version and Vulgate) or the object (‘he works all things together’, with God, or possibly the Spirit of verses 26-27, as the subject). The verb syn-ergeo means ‘work with’, and some take the dative tois agaposin (‘those who love’) with the syn-: God ‘works together with those who love him’ (so the Revised Standard Version, 1946). The New English Bible (1961) made the Spirit the subject, continuing verse 27. Tois kata prothesin kletois ousin, ‘to those who are called according to purpose’, adds God's side of the relationship to the human side (‘those who love God’); prothesis (‘purpose’) returns in 9:11. Agathon (‘good’) is left undefined until verse 29.",
+      "words": ["G6063", "G0025", "G3956", "G4903", "G0018", "G4286", "G2822"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The verse teaches that God is at work in all things, including suffering, for the ultimate good of his people. It does not call every event good; it says nothing can defeat God's purpose to conform his people to his Son."
+        },
+        {
+          "id": "love",
+          "note": "‘Those who love God’ is rare in Paul as a description of believers (1 Corinthians 2:9, 8:3). Placed beside ‘called according to his purpose’, it shows that their love for God answers his prior call."
+        }
+      ],
+      "text": "Some important early manuscripts, the papyrus P46 and Codices Alexandrinus and Vaticanus, add ho theos (‘God’) after synergei, making God explicitly the subject: ‘God works all things together for good’. Most manuscripts lack it. Editors are divided on whether the word was original and dropped, or added by scribes to make an implicit subject explicit; the Nestle-Aland text prints the shorter reading. Even without the word, most modern translations take God as the implied subject, since the verses on either side speak of God's will and purpose.",
+      "refs": ["Genesis 50:20", "Ephesians 1:11", "1 Corinthians 2:9", "2 Timothy 1:9", "James 1:2-4"]
+    },
+    {
+      "v": "29",
+      "context": "‘For’ explains the ‘purpose’ of verse 28. Those God foreknew he also predestined to share the image of his Son, so that the Son would be the firstborn among many brothers and sisters. The ‘good’ of verse 28 is this: to become like Christ.",
+      "grammar": "Hous proegno, ‘whom he foreknew’, is the key phrase in a long debate. Proginosko can mean knowing something in advance (Acts 26:5 uses it of people who knew Paul beforehand), and many Arminian readers take it as God's foreknowledge of those who would believe. Reformed readers note that ‘know’ in Hebrew (yada) often means to choose or set one's love on (Amos 3:2), that the object is persons (‘whom’), not their faith, and that Paul uses the verb of God's choosing of Israel in 11:2; on this reading ‘foreknew’ means ‘chose beforehand in love’. Proorisen (‘predestined’, ‘decided beforehand’) states the destiny: symmorphous tes eikonos tou huiou autou, ‘conformed to the image of his Son’, where symmorphos (‘sharing the form of’) echoes the syn- words of verse 17. Prototokon (‘firstborn’) names Christ's rank and priority, as in Colossians 1:15 and 18.",
+      "words": ["G4267", "G4309", "G4832", "G1504", "G5207", "G4416", "G0080"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The verse is central to the doctrine of election. Augustinian and Reformed readers (Calvin, the Canons of Dort, 1619) take foreknowledge as God's prior choosing love, which causes faith; Arminian readers (Jacobus Arminius, John Wesley's sermon On Predestination, which takes these two verses as its text) take it as God's knowledge of who would believe; Karl Barth (Church Dogmatics II/2, 1942) read election first as God's choosing of Jesus Christ, in whom a people is chosen. All agree that the goal of election is likeness to Christ."
+        },
+        {
+          "id": "image",
+          "note": "The image of God, damaged in the fall, is restored in the image of the Son. Humanity was made in God's image (Genesis 1:27); believers are being remade in the image of Christ, who is himself the image of God (2 Corinthians 4:4, Colossians 1:15)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 89:27",
+          "note": "‘Firstborn’ recalls God's promise concerning David's royal line in Psalm 89:27 (89:28 in Hebrew): ‘I will also make him my firstborn, most exalted of the kings of the earth’. The Hebrew bekhor becomes prototokon in the Septuagint (Psalm 88:28 in its numbering), the word Paul uses here. Paul does not quote the psalm, but the title carries the idea of the royal heir with first rank. In Romans the firstborn is not an only child: he has ‘many brothers’, who share his image."
+        }
+      ],
+      "refs": ["2 Corinthians 3:18", "Colossians 1:15-18", "Amos 3:2", "1 Peter 1:1-2", "1 John 3:2"]
+    },
+    {
+      "v": "30",
+      "context": "The chain continues without a break: predestined, called, justified, glorified. Each group is the same group, and no one drops out between the links. The last verb, ‘glorified’, is in the past tense, as though the end were already done.",
+      "grammar": "The verse is built as a climax, each clause taking up the last verb of the previous one (hous de proorisen, toutous kai ekalesen; kai hous ekalesen, toutous kai edikaiosen...). The demonstrative toutous (‘these’) repeated three times insists that the same people pass through every stage. All the verbs are aorist, including edoxasen (‘glorified’), though glory is still future in verses 18 and 21. Grammarians call this a proleptic or prophetic aorist: something so certain in God's purpose that it can be spoken of as done. The aorist tense does not by itself mean ‘already complete’; the context does. The chain does not name faith or sanctification, which is not because Paul thinks them unimportant but because every link here is God's act.",
+      "words": ["G4309", "G2564G", "G1344", "G1392"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Because the same people are called, justified, and glorified, Reformed theology has taken these verses as a chief ground for the perseverance of the saints: no one justified fails to be glorified. The Puritan William Perkins called his chart of salvation A Golden Chaine (1590), and ‘the golden chain’ became a common name for these verses. Arminian readers accept that the chain describes God's purpose for those who continue in faith, and deny that it rules out apostasy."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Every verb in the chain has God as its subject, and the chain runs from before time (foreknew, predestined) to its end (glorified). The verse grounds believers' security in God's purpose rather than in their own grip on him, whatever view one takes of how that purpose relates to human faith."
+        },
+        {
+          "id": "justification",
+          "note": "Justification stands in the middle of the chain, between God's call and his glorifying. It is God's act, rooted in his eternal purpose and certain of its outcome."
+        }
+      ],
+      "refs": ["2 Thessalonians 2:13-14", "1 Corinthians 1:9", "Ephesians 1:4-5", "1 Peter 5:10", "John 10:28-29"]
+    },
+    {
+      "v": "31-32",
+      "context": "Paul steps back and draws the conclusion of chapters 5-8 in a series of questions. If God is for us, who can be against us? The proof is the cross: God did not spare his own Son but gave him up for us all. The God who gave the greater gift will surely give everything else with him.",
+      "grammar": "Ti oun eroumen pros tauta, ‘what then shall we say to these things’, uses Paul's formula for testing a conclusion (6:1, 7:7), now in triumph rather than objection. Ei ho theos hyper hemon is a first class condition, assumed true: ‘since God is for us’. In verse 32 hos ge (‘he who indeed’) adds emphasis. Tou idiou huiou ouk epheisato, ‘did not spare his own Son’, echoes the Septuagint of Genesis 22. Paredoken, ‘gave him up’ or ‘handed him over’, is the verb used of Judas handing Jesus over and of Isaiah 53:6, 12 in the Septuagint. The argument is from greater to lesser: pos ouchi kai syn auto ta panta hemin charisetai, ‘how will he not also with him freely give us all things’, with charizomai (‘give freely’) from the root of charis, grace.",
+      "words": ["G4483", "G2316", "G2398", "G5207", "G5339", "G3860", "G5483"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "God gave his Son up ‘for us all’. The initiative in the cross is the Father's, and his giving is the measure of his love. Paul uses the same verb for Christ giving himself (Galatians 2:20), so the Son's self-offering and the Father's giving are one act."
+        },
+        {
+          "id": "love",
+          "note": "The cross is the proof that God is for his people. The argument from greater to lesser grounds confidence in all God's future gifts on the gift already given."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 22:12",
+          "note": "The Hebrew of Genesis 22:12 and 22:16 praises Abraham because ‘you have not withheld (chasakhta) your son, your only son (yechidekha)’. The Septuagint renders ouk epheiso tou huiou sou tou agapetou, ‘you did not spare your beloved son’, using the verb pheidomai and translating ‘only’ as ‘beloved’. Paul's tou idiou huiou ouk epheisato uses the same verb and so echoes the story Jewish tradition calls the Aqedah, the binding of Isaac. The comparison has limits Paul's readers would feel: Abraham's son was spared at the last moment, while God's own Son was actually given up."
+        }
+      ],
+      "refs": ["Genesis 22:12", "John 3:16", "Romans 5:8-10", "Isaiah 53:6", "Psalm 118:6"]
+    },
+    {
+      "v": "33-34",
+      "context": "The scene becomes a courtroom. Who will bring a charge against God's chosen? God is the one who justifies. Who will condemn? Christ Jesus, who died, was raised, sits at God's right hand, and pleads for his people. The judge has acquitted, and the one who could condemn is the advocate.",
+      "grammar": "Tis enkalesei, ‘who will bring a charge’, uses enkaleo, a legal term for formal accusation. Kata eklekton theou, ‘against God's elect’, is the first use of eklektos in Romans (again at 16:13). Theos ho dikaion, ‘God (is) the one who justifies’, uses a present participle. Tis ho katakrinon, ‘who is the one who condemns’, picks up katakrima from verse 1. The punctuation is uncertain because early manuscripts had little. The sentences may be questions and answers, as the BSB punctuates them, or each answer may itself be a question (‘Is it God who justifies? Is it Christ who died?’), which would make the point by absurdity. Augustine discussed exactly this choice in On Christian Doctrine (3.3.6). Mallon de egertheis, ‘and more than that, was raised’, corrects upward: the resurrection is even more decisive than the death. Entynchanei hyper hemon (‘intercedes for us’) is the verb used of the Spirit in verse 27.",
+      "words": ["G1458", "G1588", "G1344", "G2632", "G0599", "G3123H", "G1453", "G1188", "G1793"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Justification is God's verdict, and no accuser can overturn it. Paul roots it in Christ's death, resurrection, and present intercession, so that the believer's security rests on the whole work of Christ."
+        },
+        {
+          "id": "exaltation",
+          "note": "Christ at God's right hand fulfills Psalm 110:1, the Old Testament verse the New Testament cites and echoes more often than any other. Paul adds that he ‘is interceding for us’, as Hebrews 7:25 also teaches: the exalted Christ is an advocate, not an accuser."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 50:8-9",
+          "note": "The Servant of the Lord says in Isaiah 50:8-9: ‘He who vindicates me is near. Who will contend with me?... Who will condemn me?’ The Hebrew karov matsdiqi (‘the one who justifies me is near’) becomes in the Septuagint ho dikaiosas me, with the same verb Paul uses (dikaioo). Paul does not quote the passage, but his sequence (God justifies, who condemns?) follows the Servant's confidence closely, and applies to Christ's people the vindication promised to the Servant. The right hand of God (verse 34) recalls Psalm 110:1."
+        },
+        {
+          "ref": "Psalm 110:1",
+          "note": "‘The LORD says to my Lord: Sit at my right hand’. The Hebrew shev limini becomes kathou ek dexion mou in the Septuagint (Psalm 109:1). Paul's en dexia tou theou (‘at the right hand of God’) alludes to it without quoting, as the early church did constantly (Acts 2:34-35, Hebrews 1:3, 13)."
+        }
+      ],
+      "text": "The name ‘Jesus’ after ‘Christ’ in verse 34 is missing in some manuscripts, including the Textus Receptus, and appears in brackets in the Nestle-Aland text. The sense is the same.",
+      "refs": ["Isaiah 50:8-9", "Hebrews 7:25", "1 John 2:1", "Zechariah 3:1-5", "Revelation 12:10"]
+    },
+    {
+      "v": "35-36",
+      "context": "The last question: who or what will separate us from Christ's love? Paul lists seven dangers, many from his own life. Then he cites Psalm 44 to show that suffering for God's sake is not a sign of God's absence but has always been the lot of his faithful people.",
+      "grammar": "Tis hemas chorisei, ‘who will separate us’, uses the masculine tis (‘who’) even though the list is of things, perhaps personifying them as enemies. Apo tes agapes tou Christou, ‘from the love of Christ’, is a subjective genitive: Christ's love for us, not our love for him, as verse 39's ‘love of God that is in Christ Jesus’ confirms. The seven items move from inner pressure (thlipsis, ‘trouble’, and stenochoria, ‘distress’, literally ‘narrowness’) to outward threats ending in machaira, ‘sword’, the instrument of execution. Verse 36 is introduced with kathos gegraptai (‘as it is written’), Paul's standard formula for Scripture.",
+      "words": ["G5563", "G0026", "G2347", "G4730", "G1375", "G3042", "G1132", "G2794", "G3162", "G1125", "G2289"],
+      "history": "Greek and Roman moralists, especially Stoics such as Seneca and Epictetus, listed hardships to show that the wise man remains unshaken by circumstance; scholars call these lists hardship catalogues. Paul writes similar lists (1 Corinthians 4:11-13, 2 Corinthians 6:4-10, 11:23-27), but the ground of steadiness is different: not the self-sufficiency of the sage but the love of Christ that holds him. Paul himself was later executed by the sword in Rome, according to early tradition, under Nero.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Suffering for Christ's sake is not evidence that his love has failed. Paul's list includes what he himself had endured, and he places it inside the love of Christ rather than against it."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 44:22",
+          "note": "Psalm 44 is a national lament. Israel protests that it has not forgotten God or broken his covenant (44:17-18), yet has been defeated and scattered; verse 22 (44:23 in Hebrew) says: ki alekha horagnu khol hayyom nechshavnu ketson tivchah, ‘for your sake we are killed all day long; we are counted as sheep for slaughter’. The Septuagint (Psalm 43:23) renders it closely, and Paul follows the Septuagint word for word. The psalm is a protest of the innocent, not a confession of guilt, which suits Paul's point: the suffering of God's people is not proof of his rejection. The psalm ends with a cry for God to wake and redeem ‘because of your loving devotion’ (44:26), the love Paul says nothing can cut off."
+        }
+      ],
+      "refs": ["Psalm 44:22", "2 Corinthians 11:23-27", "2 Corinthians 4:8-11", "John 16:33", "1 Corinthians 4:11-13"]
+    },
+    {
+      "v": "37",
+      "context": "‘No’ answers the list. In all these things, not by escaping them, believers overwhelmingly conquer through the one who loved them. The victory is inside suffering, not after it.",
+      "grammar": "All en toutois pasin, ‘but in all these things’, locates the victory within the hardships of verse 35. Hypernikomen, ‘we more than conquer’, appears only here in the New Testament; the prefix hyper- (‘beyond’) intensifies nikao (‘conquer’). Dia tou agapesantos hemas, ‘through the one who loved us’, uses an aorist participle, which most take to point to the cross, the definite act of love in history (Galatians 2:20).",
+      "words": ["G3956", "G5245", "G0025"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The victory belongs to Christ's love, not to the believer's strength. The past tense (‘who loved us’) anchors present confidence in what Christ has already done on the cross."
+        }
+      ],
+      "refs": ["Galatians 2:20", "1 John 5:4-5", "2 Corinthians 2:14", "John 16:33", "Revelation 12:11"]
+    },
+    {
+      "v": "38-39",
+      "context": "Paul ends with personal conviction. He names pairs of every power that might threaten, death and life, angels and rulers, present and future, powers, height and depth, and anything else in creation, and denies that any of them can separate believers from God's love in Christ. The chapter that began with ‘no condemnation’ ends with ‘no separation’.",
+      "grammar": "Pepeismai, a perfect passive (‘I have been persuaded’, ‘I am convinced’), expresses a settled conviction. The list is built mostly in pairs with oute... oute (‘neither... nor’). Angeloi and archai (‘angels’, ‘rulers’) are spiritual powers, as archai is in Colossians 1:16 and Ephesians 6:12. Enestota and mellonta (‘things present’, ‘things to come’) cover all of time. Hypsoma and bathos (‘height’, ‘depth’) cover all of space; some commentators note that both words were used in ancient astrology for the positions of heavenly bodies, which would make them a denial that the stars rule human fate, but the simple spatial sense is enough. Tis ktisis hetera, ‘any other created thing’, sweeps up everything not named: only the Creator is left out. Dynesetai (‘will be able’) is future: nothing will ever be able.",
+      "words": ["G3982", "G2288", "G0032G", "G0746", "G1764", "G3195", "G1411", "G5313", "G0899", "G2937", "G5563"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Nothing in creation can separate believers from God's love in Christ. Reformed readers take the list to include the believer himself as a created thing; Arminian readers answer that Paul lists outside powers and does not address a believer's own abandonment of faith. Both find here the ground of Christian confidence."
+        },
+        {
+          "id": "angels",
+          "note": "Angels, rulers, and powers are real in Paul's world, but they are creatures. The verse sets every spiritual power, good or hostile, beneath the love of God in Christ."
+        },
+        {
+          "id": "love",
+          "note": "The love of God is ‘in Christ Jesus our Lord’. God's love is not a general benevolence but his love given and secured in his Son, which is why it cannot be lost."
+        }
+      ],
+      "text": "The order of the list differs between manuscript traditions. Modern editions place ‘powers’ after ‘things present and things to come’; the Textus Receptus, followed by the King James Version, puts ‘principalities’ and ‘powers’ together before ‘things present’. The earlier order is probably the one that seems less tidy, and scribes moved ‘powers’ to join ‘principalities’.",
+      "refs": ["John 10:28-29", "Ephesians 1:21", "Colossians 1:16", "Ephesians 3:18-19", "1 Peter 3:22"]
+    }
+  ]
+}

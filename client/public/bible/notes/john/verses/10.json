@@ -1,0 +1,385 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Without a break from 9:41, Jesus begins a figure of speech to the same Pharisees. Whoever does not come into the sheepfold by the gate but climbs in another way is a thief and a robber; the one who enters by the gate is the shepherd. The leaders who have just thrown out one of the flock are the first hearers.",
+      "grammar": "Amēn amēn legō humin, ‘truly, truly, I say to you’, does not normally open a new discourse in John but carries one forward, which ties the chapter to the end of chapter 9. Ho mē eiserchomenos dia tēs thuras eis tēn aulēn tōn probatōn, ‘the one not entering through the gate into the fold of the sheep’, uses aulē, an open courtyard with walls; the Greek Old Testament uses the same word for the court of the tabernacle and the temple courts (Exodus 27:9, Psalm 84:2). Anabainōn allachothen, ‘climbing up from elsewhere’, describes someone going over the wall. Kleptēs is a thief who takes by stealth, lēstēs a robber or bandit who takes by violence; Josephus uses lēstēs for the armed rebels of the period, and John uses it of Barabbas (18:40).",
+      "words": ["G0281", "G1525", "G2374", "G0833", "G4263", "G0305", "G0237", "G2812", "G3027", "G4166"],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "The first test of a shepherd is how he comes to the flock. Authority over God's people that is seized, whether by force or by stealth, is illegitimate however religious its language, and the chapter measures every leader by the one who enters by the gate."
+        }
+      ],
+      "refs": ["John 9:40-41", "John 18:40", "Jeremiah 23:1-2", "Acts 20:29-30"]
+    },
+    {
+      "v": "3",
+      "context": "The gatekeeper opens for the true shepherd, the sheep hear his voice, and he calls his own sheep by name and leads them out. The picture is of a fold shared by several flocks, from which each shepherd draws out his own.",
+      "grammar": "Toutō ho thurōros anoigei, ‘for this one the gatekeeper opens’, puts toutō first: the gate opens for him and no other. Ta probata tēs phōnēs autou akouei, ‘the sheep hear his voice’, uses a singular verb with a neuter plural subject, normal in Greek, and the genitive with akouō, which often carries the sense of heeding. Ta idia probata phōnei kat' onoma, ‘he calls his own sheep by name’, uses idia, ‘his own’, which John used in 1:11 (‘he came to his own’). Exagei autous, ‘he leads them out’, is the verb of the exodus in the Greek Old Testament, where God leads Israel out of Egypt.",
+      "words": ["G2377", "G0455", "G4263", "G5456G", "G0191", "G2398", "G5455", "G3686", "G1806"],
+      "text": "The critical editions read phōnei, ‘he calls’, in the earliest manuscripts; the Textus Receptus has kalei, a synonym. The meaning is unchanged.",
+      "ot": [
+        {
+          "ref": "Numbers 27:16-17",
+          "note": "Moses asks the LORD to appoint a man over the congregation who will go out and come in before them and lead them out and bring them in (Hebrew yotsi'em viyvi'em; Greek Old Testament exaxei autous kai eisaxei autous), so that the LORD's people will not be like sheep without a shepherd. The LORD answers with Joshua, whose name in Greek is Iēsous. Jesus' ‘he leads them out’ (verse 3) and ‘he will come in and go out’ (verse 9) echo this prayer."
+        }
+      ],
+      "refs": ["Isaiah 43:1", "John 1:11", "John 20:16", "Exodus 33:17", "Psalm 23:2"]
+    },
+    {
+      "v": "4-5",
+      "context": "Having brought out all his own, the shepherd walks ahead and the sheep follow, because they know his voice. They will not follow a stranger but will flee from him, because they do not know strangers' voices.",
+      "grammar": "Hotan ta idia panta ekbalē, ‘when he has put out all his own’, uses ekballō, the very verb used in 9:34-35 when the Pharisees threw the healed man out (exebalon auton exō). The same act that the leaders meant as expulsion becomes, in Jesus' hands, the shepherd's leading of his own out of a fold that is not theirs. Emprosthen autōn poreuetai, ‘he goes ahead of them’, describes leading from the front. Allotriō de ou mē akolouthēsousin, ‘they will certainly not follow a stranger’, uses the emphatic double negative with a future (the critical editions; the Textus Receptus has the aorist subjunctive). The man of chapter 9, who would not follow the leaders' voice, is the example.",
+      "words": ["G2398", "G1544", "G1715", "G4198", "G0190", "G6063", "G5456G", "G0245", "G5343"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The flock is formed by recognition of a voice. Belonging to Christ's people is not first a matter of enclosure or membership but of hearing and following him, which is why the man cast out of the synagogue in chapter 9 is found among the sheep."
+        }
+      ],
+      "refs": ["John 9:34-35", "John 10:27", "Psalm 80:1", "Isaiah 40:11", "John 20:16"]
+    },
+    {
+      "v": "6",
+      "context": "John comments that Jesus told them this figure, but they did not understand what he was saying to them. Their failure to understand repeats the blindness of 9:40-41.",
+      "grammar": "Tautēn tēn paroimian eipen autois, ‘this figure he spoke to them’, uses paroimia, a proverb or veiled saying, John's word where the other Gospels say parabolē. Ekeinoi de ouk egnōsan tina ēn ha elalei autois, ‘but they did not understand what the things were that he was saying to them’, uses the imperfect elalei for his continuing speech. The hearers are called ekeinoi, ‘those men’, a distancing word.",
+      "words": ["G3942", "G1565", "G1097", "G2980"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus speaks in figures, and the figure divides its hearers into those who understand and those who do not. He promises a time when he will speak plainly of the Father (16:25), but the problem in this chapter is not obscurity of speech; it is the hearers' unwillingness to be sheep."
+        }
+      ],
+      "refs": ["John 16:25", "John 16:29", "Mark 4:11-12", "John 9:40-41"]
+    },
+    {
+      "v": "7-8",
+      "context": "Jesus explains the figure by identifying himself with a part of it: he is the gate for the sheep. All who came before him were thieves and robbers, and the sheep did not listen to them.",
+      "grammar": "Egō eimi hē thura tōn probatōn, ‘I am the gate of the sheep’, can mean the gate into the fold or the gate the sheep use to go out and in. The genitive tōn probatōn allows both, and verse 9 includes both directions. Pantes hosoi ēlthon pro emou, ‘all who came before me’, cannot mean Moses and the prophets, whom Jesus cites as witnesses (5:46); it points to those who came claiming the shepherd's place and took the sheep for themselves. Kleptai eisin kai lēstai, ‘are thieves and robbers’, uses the present tense, so the danger is current. All' ouk ēkousan autōn ta probata, ‘but the sheep did not listen to them’, uses the aorist for a settled pattern.",
+      "words": ["G0281", "G1510", "G2374", "G4263", "G3745", "G4253", "G2812", "G3027", "G0191"],
+      "text": "Papyrus 75 and the Sahidic Coptic read ‘I am the shepherd of the sheep’ in verse 7, likely an early attempt to make the saying match verse 11; nearly all other witnesses read ‘gate’. In verse 8 some early witnesses, among them Papyrus 45, Papyrus 75, and the first hand of Codex Sinaiticus, lack ‘before me’, perhaps because scribes feared the verse would seem to condemn the prophets; Papyrus 66 and Codex Vaticanus have it.",
+      "refs": ["John 5:39", "John 5:46", "Jeremiah 23:1-4", "Ezekiel 34:2-4", "Acts 5:36-37"]
+    },
+    {
+      "v": "9",
+      "context": "Jesus repeats that he is the gate and says what entering by him gives: salvation, freedom to come in and go out, and pasture.",
+      "grammar": "Di' emou ean tis eiselthē sōthēsetai, ‘through me, if anyone enters, he will be saved’, puts di' emou, ‘through me’, first for emphasis. Sōthēsetai, a future passive of sōzō, can mean rescued or kept safe as well as saved, and here it carries both senses: the sheep inside the gate is safe, and the one who enters by Christ is saved. Eiseleusetai kai exeleusetai, ‘he will come in and go out’, is a biblical idiom for the whole of ordinary life lived in security (Deuteronomy 28:6, Psalm 121:8). Nomēn heurēsei, ‘he will find pasture’, uses nomē, grazing land.",
+      "words": ["G1510", "G2374", "G1223", "G1525", "G4982", "G1831", "G3542", "G2147"],
+      "ot": [
+        {
+          "ref": "Ezekiel 34:14-15",
+          "note": "The LORD promises to feed his flock in good pasture on the mountains of Israel (Hebrew bemir'eh tov; Greek Old Testament en nomē agathē) and says, I myself will shepherd my sheep and make them lie down. Jesus' promise that those who enter through him will find pasture takes up what God promised to do himself. Psalm 23:2 gives the same picture of green pastures."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "There is one entrance, and it is a person. The claim is exclusive in its way (14:6), and it is also generous in what it gives: not confinement but safety, freedom, and food."
+        }
+      ],
+      "refs": ["John 14:6", "Psalm 23:1-2", "Psalm 118:20", "Deuteronomy 28:6", "Acts 4:12"]
+    },
+    {
+      "v": "10",
+      "context": "The thief comes only to steal, kill, and destroy; Jesus has come that the sheep may have life, and have it abundantly. The verse sets the purpose of his coming against every other claimant's.",
+      "grammar": "Ho kleptēs ouk erchetai ei mē hina klepsē kai thusē kai apolesē, ‘the thief comes only to steal and slaughter and destroy’, uses thuō, which usually means to sacrifice and here means to butcher: the thief kills the sheep for his own table. Three aorist subjunctives make a grim sequence. Egō ēlthon hina zōēn echōsin kai perisson echōsin, ‘I came that they may have life and have it in abundance’, uses egō emphatically and the present subjunctive echōsin, for life possessed and continuing. Perisson, ‘more than enough, overflowing’, describes the quality of the life, not merely its length.",
+      "words": ["G2812", "G2064", "G2813", "G2380", "G0622", "G2222", "G2192", "G4053"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The life Jesus gives is the eternal life of the whole Gospel (3:16, 17:3), and its abundance is not wealth or comfort but fullness of relationship with God. The shepherd gives it at the cost of his own life, as the next verse says."
+        }
+      ],
+      "refs": ["John 3:16", "John 17:3", "John 1:4", "1 Peter 5:8", "Ezekiel 34:10"]
+    },
+    {
+      "v": "11",
+      "context": "Jesus names himself with the fourth of his ‘I am’ sayings: he is the good shepherd, and the good shepherd lays down his life for the sheep. The phrase will recur four more times before verse 18.",
+      "grammar": "Egō eimi ho poimēn ho kalos, ‘I am the shepherd, the good one’, repeats the article so that kalos stands with emphasis, and kalos means more than morally good: fine, noble, the shepherd as a shepherd ought to be. Tēn psuchēn autou tithēsin huper tōn probatōn, ‘lays down his life for the sheep’, uses tithēmi with psuchē, an idiom found in the New Testament only in John's writings (10:11-18, 13:37-38, 15:13, 1 John 3:16). Huper with the genitive, ‘on behalf of’, is the preposition John uses when Caiaphas unknowingly prophesies that Jesus will die for the nation (11:50-52). The present tithēsin describes what the good shepherd characteristically does.",
+      "words": ["G1510", "G4166", "G2570G", "G5590H", "G5087", "G5228", "G4263"],
+      "ot": [
+        {
+          "ref": "Ezekiel 34:11-16",
+          "note": "After condemning Israel's shepherds for feeding themselves and leaving the flock to scatter (34:1-10), the LORD says, I myself will search for my sheep and seek them out (Hebrew hineni-ani; Greek Old Testament idou egō). He will rescue them from every place they were scattered, feed them, seek the lost, bring back the strays, and bind up the injured. Jesus' ‘I am the good shepherd’ claims the role the LORD reserved for himself, and he adds what no shepherd in Ezekiel does: he dies for the flock."
+        },
+        {
+          "ref": "Psalm 23:1",
+          "note": "The LORD is my shepherd (Hebrew YHWH ro'i; Greek Old Testament kurios poimainei me). Israel's best-loved psalm gives the shepherd's title to God. Isaiah 40:11 pictures the LORD gathering the lambs in his arms. When Jesus calls himself the shepherd, he speaks in the language Israel used for its God."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The shepherd's death is for the sheep, on their behalf. John does not yet say how the death saves, but the preposition huper and the link to 11:50-52 show a death that benefits others and that God intends for their gathering and life."
+        }
+      ],
+      "refs": ["Isaiah 40:11", "John 11:50-52", "John 15:13", "1 John 3:16", "Hebrews 13:20"]
+    },
+    {
+      "v": "12-13",
+      "context": "The hired hand, who is not the shepherd and does not own the sheep, sees the wolf coming, leaves the sheep, and runs. The wolf seizes and scatters them. He runs because he is a hired hand and does not care for the sheep.",
+      "grammar": "Ho misthōtos kai ouk ōn poimēn, ‘the hired man, not being a shepherd’, uses misthōtos, a day laborer paid by wages (Mark 1:20). Hou ouk estin ta probata idia, ‘whose own the sheep are not’, sets his relation to the flock against the shepherd's idia of verse 3. Theōrei ton lukon erchomenon, ‘he sees the wolf coming’, then two verbs of flight, aphiēsin, ‘he leaves’, and pheugei, ‘he flees’. The wolf's two actions, harpazei, ‘snatches’, and skorpizei, ‘scatters’, describe the ruin of the flock. Verse 13 explains: ou melei autō peri tōn probatōn, ‘it is not a concern to him about the sheep’, an impersonal idiom for indifference.",
+      "words": ["G3411", "G4166", "G2398", "G4263", "G2334", "G3074", "G0863G", "G5343", "G0726", "G4650", "G3199"],
+      "ot": [
+        {
+          "ref": "Zechariah 11:16-17",
+          "note": "The LORD raises up a shepherd who does not care for the perishing, seek the young, or heal the broken, but eats the flesh of the fat sheep; woe to the worthless shepherd who deserts the flock (Hebrew ro'i ha'elil ozvi hatson). The prophet's worthless shepherd and Jesus' hired hand both abandon the sheep. Ezekiel 34:5-8 adds that the sheep, left without a shepherd, became food for every wild beast."
+        }
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "The hired hand's failure is not that he is paid but that the sheep are not his and his own safety comes first. The test of a leader of God's people is what he does when the wolf comes. The New Testament uses the same image of wolves among the flock (Acts 20:29) and calls elders to shepherd willingly and not for gain (1 Peter 5:2)."
+        }
+      ],
+      "refs": ["Acts 20:28-30", "1 Peter 5:2-4", "Ezekiel 34:5-8", "Matthew 10:16", "Mark 14:27"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus repeats that he is the good shepherd and adds the heart of it: he knows his own and his own know him, just as the Father knows him and he knows the Father; and he lays down his life for the sheep.",
+      "grammar": "Ginōskō ta ema kai ginōskousi me ta ema, ‘I know my own and my own know me’, uses ginōskō for personal, relational knowledge, and the kathōs, ‘just as’, of verse 15 makes the knowledge between shepherd and sheep a reflection of the knowledge between the Father and the Son. The chain runs Father, Son, sheep, and the same verb holds it together. Kai tēn psuchēn mou tithēmi huper tōn probatōn, ‘and I lay down my life for the sheep’, repeats verse 11 in the first person.",
+      "words": ["G1510", "G4166", "G2570G", "G1097", "G2531", "G3962", "G5590H", "G5087", "G4263"],
+      "text": "The Textus Receptus reads ‘I know my own and am known by my own’ (ginōskomai hupo tōn emōn), a passive that the King James Version follows. The critical editions, with the earliest manuscripts, read ‘my own know me’, which matches the active form of the Father-Son clause in verse 15.",
+      "theology": [
+        {
+          "id": "union",
+          "note": "The sheep's knowledge of Christ is modeled on the Son's knowledge of the Father. Belonging to Christ is not a transaction but a shared life, the union Jesus will pray for in 17:21-23."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father knows the Son and the Son knows the Father with a knowledge that is mutual and complete (Matthew 11:27). The verse makes that eternal relation the pattern for the relation between Christ and his people."
+        }
+      ],
+      "refs": ["John 17:3", "John 17:21-23", "Matthew 11:27", "Galatians 4:9", "2 Timothy 2:19"]
+    },
+    {
+      "v": "16",
+      "context": "Jesus has other sheep that are not of this fold. He must bring them too, they will listen to his voice, and there will be one flock and one shepherd.",
+      "grammar": "Alla probata echō ha ouk estin ek tēs aulēs tautēs, ‘I have other sheep that are not of this fold’, uses the present echō: they already belong to him before they are gathered. Kakeina dei me agagein, ‘those too I must lead’, uses dei, the ‘must’ of divine necessity, and agō, to lead or bring, not ‘bring into’ a fold. The final clause turns on two different nouns: aulē, ‘fold’, earlier in the verse, and poimnē, ‘flock’, at the end, mia poimnē, heis poimēn, ‘one flock, one shepherd’. The critical editions read genēsontai, ‘they will become’, with the earliest manuscripts; the Textus Receptus has the singular genēsetai, ‘there will be’.",
+      "words": ["G0243", "G4263", "G0833", "G1163", "G0071", "G5456G", "G0191", "G1520", "G4167", "G4166"],
+      "ot": [
+        {
+          "ref": "Ezekiel 34:23",
+          "note": "I will appoint over them one shepherd, my servant David, and he will feed them (Hebrew ro'eh echad; Greek Old Testament poimena hena). Ezekiel 37:22-24 adds that Israel and Judah will be one nation under one king and one shepherd. The prophet speaks of reuniting the divided tribes; Jesus widens the one shepherd's flock to include sheep from outside Israel's fold. Isaiah 56:8 already speaks of the LORD gathering others besides Israel's outcasts."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church's unity comes from one shepherd, not from one enclosure. Most interpreters read the other sheep as Gentiles who will believe, gathered with Jewish disciples into one flock, the gathering John names in 11:52 and Paul describes in Ephesians 2:14-16."
+        },
+        {
+          "id": "mission",
+          "note": "Jesus already calls the other sheep his own and says he must bring them. The mission to the nations is not an afterthought of the church but part of the shepherd's own purpose, carried out through his disciples' word (17:20)."
+        }
+      ],
+      "refs": ["John 11:52", "John 17:20-21", "Isaiah 56:8", "Ephesians 2:14-16", "Ezekiel 37:24"]
+    },
+    {
+      "v": "17-18",
+      "context": "The Father loves Jesus because he lays down his life in order to take it up again. No one takes it from him; he lays it down of his own accord, with authority to lay it down and to take it up again, and this is the charge he received from the Father.",
+      "grammar": "Dia touto me ho patēr agapa hoti egō tithēmi tēn psuchēn mou, ‘for this reason the Father loves me, because I lay down my life’, does not make the Father's love a reward earned; John says the Father loved the Son before the foundation of the world (17:24). The clause names the self-giving that the Father delights in. Hina palin labō autēn, ‘so that I may take it again’, makes resurrection the purpose of the death. Oudeis airei autēn ap' emou, ‘no one takes it from me’, uses the present tense in the critical editions; Westcott and Hort, following some of the oldest manuscripts, printed the aorist ēren, ‘no one took it’. Exousian echō, ‘I have authority’, is repeated, and entolē, ‘commandment’, describes the mission as the Father's charge.",
+      "words": ["G3962", "G0025", "G5087", "G5590H", "G3825", "G2983", "G0142", "G1849", "G1785"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus' death is not something done to him against his will. It is a free act, under the Father's charge and with his own authority, which is why the Gospels can say both that he was handed over and that he gave himself (Galatians 2:20)."
+        },
+        {
+          "id": "resurrection",
+          "note": "Jesus claims authority to take up his life again. The New Testament usually says that God raised him (Acts 2:24), and here the Son shares that act, one of the places where John shows the Son doing what the Father does (5:21)."
+        }
+      ],
+      "refs": ["John 2:19-21", "John 19:30", "John 17:24", "Philippians 2:8", "Galatians 2:20"]
+    },
+    {
+      "v": "19-21",
+      "context": "The Jews divide again over his words. Many say he has a demon and is out of his mind, so why listen? Others say these are not the words of a man possessed. Can a demon open the eyes of the blind?",
+      "grammar": "Schisma palin egeneto, ‘again a division came about’, recalls 7:43 and 9:16. Daimonion echei kai mainetai, ‘he has a demon and is raving’, joins possession and madness, as ancient speech often did; mainomai is the word Festus uses of Paul (Acts 26:24). The reply, tauta ta rhēmata ouk estin daimonizomenou, ‘these words are not those of a demon-possessed man’, judges by the words, and mē daimonion dunatai tuphlōn ophthalmous anoixai, ‘a demon cannot open the eyes of the blind, can it?’, expects no and points back to chapter 9.",
+      "words": ["G4978", "G2453", "G3056", "G1140", "G3105", "G0191", "G4487", "G1139", "G1410", "G5185", "G3788", "G0455"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The same words produce opposite verdicts, as the light of chapter 9 did. John shows that Jesus' presence forces a decision, and that the evidence of his works weighs against the charge of madness."
+        }
+      ],
+      "refs": ["John 7:43", "John 9:16", "John 7:20", "John 8:48", "Mark 3:21-22"]
+    },
+    {
+      "v": "22",
+      "context": "Some two months after Tabernacles, the Feast of Dedication comes in Jerusalem, and it is winter. John names the feast, Hanukkah, which sets the scene for Jesus' claim to be the one the Father consecrated.",
+      "grammar": "Egeneto tote ta egkainia en tois Hierosolumois, ‘then the Dedication took place in Jerusalem’, uses egkainia, a neuter plural, ‘the renewal rites’, found only here in the New Testament. Cheimōn ēn, ‘it was winter’, can also mean stormy weather, and some readers hear the season as fitting the chill of the debate that follows. The critical editions read tote, ‘then’; later manuscripts have de, ‘and’, or no connecting word.",
+      "words": ["G1096", "G5119", "G1456", "G2414", "G5494"],
+      "history": "Hanukkah, from the Hebrew for dedication, remembered the day Judas Maccabeus and his brothers rebuilt the altar and restored the sacrifices on the twenty-fifth of Kislev in 164 BC, three years after Antiochus IV had defiled the temple (1 Maccabees 4:52-59). The Hebrew word is the one used for the dedication of the altar in the wilderness, chanukkat hammizbeach (Numbers 7:10-11), and the Greek Old Testament uses related words for the dedication of Solomon's temple and the rebuilt temple of Ezra's day. Second Maccabees says the first celebration was kept for eight days like Tabernacles, with ivy-wreathed wands, fair branches, and palms (2 Maccabees 10:6-7). Josephus calls the feast Lights (Antiquities 12.325), which links it with the light of 8:12 and 9:5.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The feast celebrated a purified temple and a restored altar. Jesus, who spoke of his body as the temple (2:21), is present at this feast as the one the Father consecrated (10:36), so the dedication of the house points to the one in whom God now dwells."
+        }
+      ],
+      "refs": ["Numbers 7:10-11", "1 Kings 8:63", "Ezra 6:16-17", "Daniel 11:31", "John 2:19-21"]
+    },
+    {
+      "v": "23",
+      "context": "Jesus is walking in the temple in Solomon's Colonnade, the covered portico on the eastern side of the outer court, a sheltered place to walk and teach in winter.",
+      "grammar": "Kai periepatei ho Iēsous en tō hierō, ‘and Jesus was walking about in the temple’, uses an imperfect for his ongoing presence, perhaps teaching as he walked, as philosophers did in a stoa. En tē stoa tou Solomōnos, ‘in the portico of Solomon’, uses stoa, a roofed colonnade.",
+      "words": ["G4043", "G2411", "G4745", "G4672G"],
+      "history": "Josephus says that the eastern portico of the outer court stood on a massive wall and was believed to be a work of Solomon (Antiquities 20.220-221; Jewish War 5.185). Whether any part truly went back to Solomon is doubtful, since Herod's builders had rebuilt the courts, but the name tied the place to Israel's first temple builder. The apostles later taught and the first believers gathered there (Acts 3:11, 5:12).",
+      "refs": ["Acts 3:11", "Acts 5:12", "1 Kings 6:1-2", "John 2:20"]
+    },
+    {
+      "v": "24",
+      "context": "The Jews surround Jesus and demand, “How long will You keep us in suspense? If You are the Christ, tell us plainly.” They want a single public claim they can act on.",
+      "grammar": "Ekuklōsan oun auton hoi Ioudaioi, ‘so the Jews encircled him’, uses kukloō, to surround, a word used of hostile encirclement (Psalm 22:16 in the Greek Old Testament, Luke 21:20). Heōs pote tēn psuchēn hēmōn aireis, literally ‘how long do you lift up our soul?’, is an idiom most translate as keeping in suspense; in modern Greek the phrase means to annoy, and it could also be heard as taking away life, and some interpreters hear an ironic echo of verses 17-18, where Jesus alone lifts up his own life. Ei su ei ho Christos, eipe hēmin parrēsia, ‘if you are the Christ, tell us plainly’, uses parrēsia, open speech, the word the brothers used in 7:4.",
+      "words": ["G2944", "G2453", "G5590I", "G0142", "G5547", "G2036", "G3954"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The question is about the Messiah, and at Hanukkah that title carried hopes of a deliverer like Judas Maccabeus. Jesus does not answer with a yes that would feed those hopes; he answers with his works and with a claim far larger than their question (verse 30)."
+        }
+      ],
+      "refs": ["Luke 22:67", "Mark 14:61-62", "John 7:4", "John 16:25", "Psalm 22:16"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus answers that he has told them and they do not believe. The works he does in his Father's name testify about him. But they do not believe, because they are not his sheep.",
+      "grammar": "Eipon humin kai ou pisteuete, ‘I told you and you do not believe’, puts the problem not in lack of information but in unbelief. Ta erga ha egō poiō en tō onomati tou patros mou, tauta marturei peri emou, ‘the works I do in my Father's name, these testify about me’, uses a neuter plural subject with a singular verb, and tauta, ‘these’, picks up the works for emphasis. In verse 26 the order is striking: ou pisteuete, hoti ouk este ek tōn probatōn tōn emōn, ‘you do not believe, because you are not of my sheep’. Being a sheep is given as the reason for believing, not its result.",
+      "words": ["G4100", "G2041", "G4160G", "G3686", "G3962", "G3140", "G4263"],
+      "text": "The Textus Receptus adds ‘as I said to you’ at the end of verse 26, which the King James Version prints; the earliest manuscripts lack it, and it may have been added because Jesus has not used these exact words before.",
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus traces belief to belonging: the sheep believe because they are his sheep. Augustinian and Reformed readers see here the Father's prior giving of the sheep to the Son (6:37, 10:29). Others, including Arminian readers, stress that the hearers are responsible for their unbelief and that the verse describes the present state of these opponents, not a fixed decree. Both read the verse as denying that unbelief is merely a lack of evidence."
+        }
+      ],
+      "refs": ["John 5:36", "John 6:37", "John 6:44", "John 8:47", "John 14:11"]
+    },
+    {
+      "v": "27-28",
+      "context": "Jesus describes his sheep: they hear his voice, he knows them, and they follow him. He gives them eternal life, they will never perish, and no one will snatch them out of his hand.",
+      "grammar": "Verse 27 has three present tenses, akouousin, ‘they hear’, ginōskō, ‘I know’, and akolouthousin, ‘they follow’, describing ongoing traits of the sheep. Verse 28 answers with the shepherd's gift: kagō didōmi autois zōēn aiōnion, ‘and I give them eternal life’. Kai ou mē apolōntai eis ton aiōna, ‘and they will certainly never perish’, uses the strongest negation Greek has, with ‘forever’. Kai ouch harpasei tis auta ek tēs cheiros mou, ‘and no one will snatch them out of my hand’, repeats harpazō from verse 12, where the wolf snatches the sheep of the hired hand.",
+      "words": ["G4263", "G5456G", "G0191", "G1097", "G0190", "G1325", "G2222", "G0166", "G0622", "G0726", "G5495"],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "The promise rests on the shepherd's hand. Reformed readers take it as the pledge that those who belong to Christ will be kept to the end; Arminian and Wesleyan readers stress the present tenses of hearing and following that describe the sheep. Both agree that no outside power, however strong, can take Christ's sheep from him."
+        },
+        {
+          "id": "salvation",
+          "note": "Eternal life is given now, not only promised later (5:24), and its security depends on the giver. The contrast with the hired hand of verse 12 is exact: the wolf can snatch from the hireling, but not from this shepherd."
+        }
+      ],
+      "refs": ["John 6:37-40", "John 17:12", "Romans 8:35-39", "1 Peter 1:5", "Philippians 1:6"]
+    },
+    {
+      "v": "29",
+      "context": "Jesus grounds the sheep's security in the Father: the Father who gave them to him is greater than all, and no one can snatch them out of the Father's hand. The hand of the Son in verse 28 and the hand of the Father here hold the same sheep.",
+      "grammar": "The opening words differ in the manuscripts. Most read ho patēr mou hos dedōken moi pantōn meizōn estin, ‘my Father, who has given them to me, is greater than all’, which the BSB follows. The Nestle-Aland text prints ho patēr mou ho dedōken moi pantōn meizon estin, with the neuter relative and neuter comparative, ‘what my Father has given me is greater than all’, following Codex Vaticanus in its first hand and much of the Latin tradition. The neuter reading makes the gift, the flock, the greatest thing, which is hard to fit into the argument; the masculine reading makes the Father's greatness the ground of security. Kai oudeis dunatai harpazein ek tēs cheiros tou patros, ‘and no one is able to snatch out of the Father's hand’, moves from the future of verse 28 to a statement of ability.",
+      "words": ["G3962", "G1325", "G3173", "G3956", "G1410", "G0726", "G5495"],
+      "ot": [
+        {
+          "ref": "Isaiah 43:13",
+          "note": "The LORD says, From ancient days I am he, and there is no one who can deliver out of my hand (Hebrew ve'ein miyyadi matsil; Greek Old Testament ouk estin ho ek tōn cheirōn mou exairoumenos). Deuteronomy 32:39 says the same. In both places the claim that none can take from God's hand belongs to God alone. Jesus says it first of his own hand (verse 28) and then of his Father's, preparing for verse 30."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The Father is greater than all powers that threaten the flock. The security of the sheep does not finally rest on their strength or even on the shepherd's courage alone, but on the Father's supremacy over everything."
+        }
+      ],
+      "refs": ["Deuteronomy 32:39", "John 6:39", "John 17:2", "John 17:6", "John 14:28"]
+    },
+    {
+      "v": "30",
+      "context": "Jesus concludes, “I and the Father are one.” If the sheep are held in both hands, the hands belong to one work and one power.",
+      "grammar": "Egō kai ho patēr hen esmen, ‘I and the Father are one’, uses the neuter hen, ‘one thing’, not the masculine heis, ‘one person’, and the plural esmen, ‘we are’. The grammar denies both that the Son and the Father are the same person and that they are two separate powers. In context the unity is first of all a unity of action and power, the protection of the sheep; the hearers' response in verses 31-33 shows they heard a claim to share God's own nature.",
+      "words": ["G1473", "G3962", "G1520", "G1510"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The verse became one of the church's central texts for the Trinity. Tertullian (Against Praxeas 22) noted that Jesus said ‘one thing’, not ‘one person’, against those who merged Father and Son, and Augustine's Tractates on John drew the same lesson against the Arians from ‘one’ and against the Sabellians from ‘are’. The Son is distinct from the Father and one with him in being and act."
+        }
+      ],
+      "refs": ["John 1:1", "John 5:18", "John 14:9-10", "John 17:11", "John 17:21-22"]
+    },
+    {
+      "v": "31-33",
+      "context": "The Jews again pick up stones to stone him. Jesus asks for which of the many good works from the Father they are stoning him. They answer that it is not for a good work but for blasphemy, because he, a man, makes himself God.",
+      "grammar": "Ebastasan palin lithous, ‘they again carried stones’, uses bastazō, to lift and carry, perhaps fetching stones from the building works; palin recalls 8:59. Polla erga kala edeixa humin ek tou patros, ‘I have shown you many good works from the Father’, uses kalos, the same adjective as the good shepherd. Dia poion autōn ergon, ‘for what kind of work of them’, uses poios, ‘what sort’. Their answer, hoti su anthrōpos ōn poieis seauton theon, ‘because you, being a man, make yourself God’, sets su and anthrōpos ōn against theon. Theon without the article here means ‘God’ or ‘divine’; the charge echoes 5:18, where he was accused of making himself equal to God.",
+      "words": ["G0941", "G3037", "G2453", "G3034", "G2570G", "G2041", "G1166", "G4169", "G0988", "G0444", "G2316"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The charge states the Christian confession in reverse. The accusers say he is a man who makes himself God; John's Gospel says he is God, the Word, who became a man (1:1, 14). The accusation is false not because Jesus is less than they fear but because the direction of his coming is the opposite of what they suppose."
+        }
+      ],
+      "refs": ["John 5:18", "John 8:59", "Leviticus 24:16", "John 1:1", "John 1:14"]
+    },
+    {
+      "v": "34-36",
+      "context": "Jesus answers from Scripture. The law says, ‘I have said you are gods.’ If Scripture, which cannot be broken, called gods those to whom the word of God came, how can they accuse of blasphemy the one the Father consecrated and sent into the world for saying, “I am the Son of God”?",
+      "grammar": "Ouk estin gegrammenon en tō nomō humōn, ‘is it not written in your law?’, uses nomos for Scripture as a whole, since the quotation is from the Psalms. The argument is from the lesser to the greater, the rabbis' qal wahomer: ei ekeinous eipen theous, ‘if he called those men gods’, pros hous ho logos tou theou egeneto, ‘to whom the word of God came’, then hon ho patēr hēgiasen kai apesteilen eis ton kosmon, ‘the one whom the Father consecrated and sent into the world’, can hardly be accused. Kai ou dunatai luthēnai hē graphē, ‘and the Scripture cannot be broken’, uses luō, to loosen or annul, the verb used of breaking the Sabbath and the law (5:18, 7:23). Hēgiasen, an aorist of hagiazō, ‘consecrated, set apart as holy’, is the verb 1 Maccabees 4:48 uses when Judas's men consecrated the temple courts.",
+      "words": ["G1125", "G3551", "G2316", "G3056", "G3089", "G1124", "G3962", "G0037", "G0649", "G2889", "G0987", "G5207"],
+      "ot": [
+        {
+          "ref": "Psalm 82:6",
+          "note": "In Psalm 82 God stands in the divine assembly and judges the ‘gods’ for failing to defend the weak, and then says, I said, ‘You are gods; you are all sons of the Most High,’ but you will die like men (Hebrew ani amarti elohim attem; Greek Old Testament, Psalm 81:6, egō eipa theoi este, which John reproduces exactly). Interpreters differ on who the gods are: Israel's human judges, Israel at Sinai (as in b. Avodah Zarah 5a), or heavenly beings of God's council. On any of these readings Jesus argues that Scripture itself applies the word god to beings far below the one the Father consecrated and sent."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus rests his argument on the unbreakable authority of a single word of Scripture. ‘The Scripture cannot be broken’ is one of the texts the church has used to confess that God's word stands and does not fail (Matthew 5:18)."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Son is the one the Father consecrated and sent into the world. The pairing of consecration and sending presupposes his existence with the Father before his coming, and at the feast of the temple's consecration it presents him as the one truly set apart for God."
+        }
+      ],
+      "refs": ["Psalm 82:1-8", "Matthew 5:17-18", "John 5:18", "John 17:17-19", "Exodus 22:28"]
+    },
+    {
+      "v": "37-38",
+      "context": "Jesus asks them to judge by the works. If he is not doing his Father's works, they should not believe him. If he is, then even if they do not believe him, they should believe the works, so that they may know and keep knowing that the Father is in him and he is in the Father.",
+      "grammar": "Ei ou poiō ta erga tou patros mou, mē pisteuete moi, ‘if I am not doing my Father's works, do not believe me’, is a real condition put to the test. Kan emoi mē pisteuēte, tois ergois pisteuete, ‘even if you do not believe me, believe the works’, offers the works as a lesser but real ground of faith. Hina gnōte kai ginōskēte, ‘that you may come to know and keep on knowing’, pairs an aorist and a present of the same verb: a moment of recognition and a continuing understanding. Hoti en emoi ho patēr kagō en tō patri, ‘that the Father is in me and I am in the Father’, states the mutual indwelling that 14:10-11 and 17:21 repeat.",
+      "words": ["G4160G", "G2041", "G3962", "G4100", "G1097"],
+      "text": "The critical editions read hina gnōte kai ginōskēte, ‘that you may know and understand’, with the earliest manuscripts; the Textus Receptus has hina gnōte kai pisteusēte, ‘that you may know and believe’, which the King James Version follows.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father in the Son and the Son in the Father describes a unity closer than cooperation: each dwells in the other. Later theology called this mutual indwelling perichōrēsis, and John 10:38, 14:10-11, and 17:21 are its main biblical ground."
+        }
+      ],
+      "refs": ["John 5:36", "John 14:10-11", "John 17:21", "John 20:30-31", "John 15:24"]
+    },
+    {
+      "v": "39",
+      "context": "Again they try to arrest him, but he escapes out of their hand. The phrase answers verses 28-29: no one snatches the sheep from his hand, and for now no one can take him in theirs.",
+      "grammar": "Ezētoun oun auton palin piasai, ‘so they were again seeking to seize him’, uses the imperfect of repeated attempts and piazō, the word for arrest in 7:30 and 8:20. Kai exēlthen ek tēs cheiros autōn, ‘and he went out of their hand’, echoes ek tēs cheiros from verses 28-29. John gives no explanation, but the pattern of the earlier chapters supplies it: his hour has not yet come.",
+      "words": ["G2212", "G3825", "G4084", "G1831", "G5495"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The one who holds the sheep cannot be held until he gives himself up. When the hour comes, he will go out to meet his captors of his own accord (18:4-8), just as he said no one takes his life from him (10:18)."
+        }
+      ],
+      "refs": ["John 7:30", "John 8:20", "John 8:59", "John 18:4-8", "Luke 4:30"]
+    },
+    {
+      "v": "40-42",
+      "context": "Jesus goes back across the Jordan to the place where John first baptized and stays there. Many come to him and say that John did no sign, but everything John said about this man was true, and many believe in him there.",
+      "grammar": "Apēlthen palin peran tou Iordanou eis ton topon hopou ēn Iōannēs to prōton baptizōn, ‘he went away again beyond the Jordan to the place where John was at first baptizing’, points back to 1:28. Emeinen ekei, ‘he stayed there’, uses menō, the verb of the first disciples staying with Jesus (1:39). Iōannēs men sēmeion epoiēsen ouden, panta de hosa eipen Iōannēs peri toutou alēthē ēn, ‘John did no sign, but all that John said about this man was true’, uses the men ... de construction to balance the Baptist's lack of signs against the truth of his testimony. Polloi episteusan eis auton ekei, ‘many believed in him there’, puts ekei, ‘there’, last, in pointed contrast to Jerusalem.",
+      "words": ["G0565", "G4008", "G2446", "G5117", "G2491G", "G0907", "G3306", "G4592", "G0227", "G4100"],
+      "history": "The place is Bethany beyond the Jordan (1:28), and its location is debated. A long pilgrim tradition and excavations since the 1990s point to the Wadi al-Kharrar on the east bank opposite Jericho, which UNESCO inscribed in 2015 as the Baptism Site, Bethany beyond the Jordan (Al-Maghtas). Rainer Riesner and others have argued instead for Batanea, the region of Bashan in the northeast, which would fit the days of travel in John 1 and 11. Either way, the site is outside the jurisdiction of the Jerusalem authorities, in Herod Antipas's Perea or farther north.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The Baptist's testimony bears fruit after his death. Faith here rests not on a new sign but on the recognition that the witness was true, which is how John's Gospel hopes its own readers will believe (19:35, 20:31)."
+        }
+      ],
+      "refs": ["John 1:28", "John 1:29-34", "John 3:26-30", "John 11:54", "John 20:31"]
+    }
+  ]
+}

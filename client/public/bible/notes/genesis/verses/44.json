@@ -1,0 +1,191 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Joseph sets the trap. The first part repeats what he did in 42:25, full sacks and returned silver. The second part is new: his own silver cup goes into Benjamin's sack. The test is designed to put Rachel's younger son in danger and see what the other brothers will do.",
+      "grammar": "Kaasher yukhlun seet, \"as much food as they can carry\", is generous to the limit. Gevia, \"cup\", is a larger drinking vessel or bowl; the same word names the almond-shaped cups on the tabernacle lampstand (Exodus 25:31-34) and the bowls of wine set before the Rechabites (Jeremiah 35:5). Joseph calls it ‘my cup, the cup of silver’, repeating the noun to fix attention on it. The word kesef, ‘silver’, appears three times in these two verses. Silver has followed this family since the sale of Joseph, and here it becomes the bait.",
+      "words": ["H1375", "H3701G", "H0572", "H6996H"],
+      "refs": ["Genesis 37:28", "Genesis 42:25", "Exodus 25:31-34", "Jeremiah 35:5"]
+    },
+    {
+      "v": "3-5",
+      "context": "At dawn the brothers set out with every reason for relief: Simeon restored, Benjamin safe, grain secured. They are barely outside the city when Joseph sends his steward after them with a script: why have you repaid good with evil, and taken the cup your master uses for divination?",
+      "grammar": "Verse 3 begins with a verbless clause, habboqer or, ‘the morning was light’, and verse 4 opens with a circumstantial clause, hem yatseu et-hair lo hirchiqu, ‘they had gone out of the city, they had not gone far’. The syntax slows the scene and sets the trap in motion before they are safe. Shillamtem raah tachat tovah, ‘you have repaid evil in place of good’, uses the Piel of shalem, ‘to make whole, repay’. In verse 5 nachesh yenachesh, ‘he surely divines’, is another infinitive absolute of emphasis.",
+      "words": ["H7291", "H5381", "H7999A", "H7451I", "H2896C", "H5172"],
+      "history": "Divination from a cup, reading shapes formed when oil was poured onto water, is known from Mesopotamian texts. The steward's words present Joseph in the role of a great Egyptian official with access to such arts, whatever Joseph himself actually did with the cup.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The accusation of repaying good with evil describes exactly what the brothers once did to Joseph. The words that close the whole story in 50:20, where God means for good what they meant for evil, take up the same pair."
+        }
+      ],
+      "refs": ["Genesis 50:20", "Psalm 35:12", "Proverbs 17:13", "Leviticus 19:26"]
+    },
+    {
+      "v": "6-9",
+      "context": "The brothers deny the charge with confidence. They point to their honesty in bringing back the silver found on the first trip, and they swear a rash oath: if the cup is found with any of them, he must die, and the rest will be slaves.",
+      "grammar": "Chalilah, \"could not possibly\" (literally ‘far be it’), comes from a root meaning ‘profane’: such a thing would be a profanation. Abraham used it when he pleaded that the Judge of all the earth would not kill the righteous with the wicked (18:25). Hen kesef, ‘look, silver’, opens the argument from their past conduct, and veekh nignov, \"Why would we steal\", is literally ‘and how would we steal?’, a question that expects no answer. The verb matsa, ‘to find’, appears here for the first of many times in the chapter (vv. 8, 9, 10, 12, 16, 17, 34): what is found, and what God finds, drives the scene.",
+      "words": ["H2486", "H4672", "H1589", "H4191"],
+      "history": "The oath echoes Jacob's words to Laban when Laban accused him of stealing his household gods: whoever has them shall not live (31:32). Jacob did not know that Rachel had taken them. Now her son Benjamin is the one who will be found with the stolen object, and again the brothers do not know it.",
+      "refs": ["Genesis 31:32", "Genesis 43:21-22", "Genesis 18:25"]
+    },
+    {
+      "v": "10",
+      "context": "The steward accepts their terms and then softens them. Only the one found with the cup will become a slave; the rest will be free. The change is the heart of the test, since it offers the ten a clean way home without Benjamin.",
+      "grammar": "Gam-attah khedivrekhem ken-hu, ‘now also, let it be according to your words’, sounds like agreement, but what follows revises their penalty: no death, and slavery for the guilty man only. Neqiyyim, \"free of blame\", means clean, innocent, cleared of obligation; the same root describes Abraham's servant being released from his oath (24:8, 41).",
+      "words": ["H5355A", "H5650", "H4672"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The steward's offer recreates the choice of Genesis 37: save yourselves and leave Rachel's son to slavery. Repentance is tested when the same door opens again, and the next verses show whether the brothers walk through it."
+        }
+      ],
+      "refs": ["Genesis 24:8", "Genesis 24:41", "Genesis 37:26-27"]
+    },
+    {
+      "v": "11-12",
+      "context": "The brothers lower their sacks and open them. The steward searches from the oldest to the youngest, and suspense builds sack by sack until the cup is found in Benjamin's, the last one opened.",
+      "grammar": "Vaychappes, \"searched\", is the verb used when Laban searched Jacob's tent and could not find his gods, because Rachel sat on them (31:35). Baggadol hechel uvaqqaton killah, ‘with the oldest he began and with the youngest he finished’, uses a neat pair of verbs, ‘began’ and ‘finished’, that holds the scene between two poles. Vayyimmatse, ‘and it was found’, is the Niphal of matsa, the passive of the chapter's key verb.",
+      "words": ["H2664", "H1419K", "H2490C", "H3615G", "H1375"],
+      "refs": ["Genesis 31:33-35", "Genesis 43:33"]
+    },
+    {
+      "v": "13",
+      "context": "The brothers answer the steward's offer without a word: they tear their clothes, reload, and all go back to the city. None of them takes the way home that the steward left open.",
+      "grammar": "Vayyiqreu simlotam, \"they tore their clothes\", is the gesture Reuben made at the empty pit and Jacob made over Joseph's robe (37:29, 34). The verbs are plural (they tore, they returned), but vayyaamos, ‘and he loaded’, is singular with ish, ‘each man’: every brother made the decision for himself, and all made the same one.",
+      "words": ["H7167", "H8071", "H6006", "H7725G"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The brothers' return is the evidence the whole test was built to find. Twenty years earlier they left a brother to slavery and came home; now they refuse to go home without one."
+        },
+        {
+          "id": "family",
+          "note": "The ten go back for Benjamin, the favored son of the wife Jacob loved. Solidarity replaces the envy of Genesis 37."
+        }
+      ],
+      "refs": ["Genesis 37:29", "Genesis 37:34", "Joshua 7:6", "2 Samuel 13:31"]
+    },
+    {
+      "v": "14-15",
+      "context": "Judah and his brothers come back to Joseph's house, where he is still waiting, and fall on the ground before him. Joseph plays his part to the end, asking what they have done and claiming that a man like him can divine the truth.",
+      "grammar": "\"Judah and his brothers\" marks Judah as the leader now, where earlier scenes spoke of the brothers as a group or put Reuben first. Vayyippelu, ‘they fell’, is stronger than the bowing of 42:6 and 43:26: this is prostration. Joseph's question repeats the emphatic nachesh yenachesh from verse 5, with ish kamoni, ‘a man like me’. The irony is sharp: he does know the truth about them, but not by divination.",
+      "words": ["H3063G", "H5307J", "H4639K", "H5172", "H3644G"],
+      "refs": ["Genesis 37:10", "Genesis 40:8", "Genesis 41:16", "Deuteronomy 18:10-12"]
+    },
+    {
+      "v": "16",
+      "context": "Judah does not argue. He confesses that God has uncovered the brothers' guilt, and offers all of them as slaves together with Benjamin. The false charge about a cup has become for him the exposure of a true crime twenty years old.",
+      "grammar": "Judah asks three questions: what shall we say, what shall we speak, how shall we justify ourselves? The third, nitstaddaq, is a rare reflexive (Hithpael) form of tsadaq, ‘to be in the right’: they cannot declare themselves righteous. The same root was on Judah's lips when he admitted of Tamar that she was more righteous than he (38:26). Haelohim matsa et-avon avadekha, ‘God has found the iniquity of your servants’, makes God the subject of the key verb matsa: the steward found a cup, and God has found their sin.",
+      "words": ["H6663", "H0430G", "H4672", "H5771H"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Judah's question, \"How can we justify ourselves?\", has no answer from the guilty side. He stops defending himself and leaves the verdict to the one who has the power to judge, which is the posture Scripture later describes when it says no one is justified by self-defense before God (Psalm 143:2; Romans 3:19-20)."
+        },
+        {
+          "id": "sin",
+          "note": "Judah speaks of avon, iniquity, not only of this charge but of what lies behind it. In Hebrew thought guilt remains until it is dealt with, and God is the one who finds it and brings it out."
+        }
+      ],
+      "refs": ["Genesis 38:26", "Genesis 42:21", "Numbers 32:23", "Psalm 143:2", "Romans 3:19"]
+    },
+    {
+      "v": "17",
+      "context": "Joseph refuses the collective offer and repeats the steward's terms: only Benjamin stays, and the rest may go home to their father \"in peace.\" The test reaches its sharpest point.",
+      "grammar": "Joseph uses the brothers' own word, chalilah, \"Far be it\" (v. 7), to decline their offer. Alu leshalom el-avikhem, ‘go up in peace to your father’, puts the heaviest weight on the word shalom. To go home ‘in peace’ without Benjamin would be no peace at all, and Judah's speech will explain why.",
+      "words": ["H2486", "H5927G", "H7965G", "H5650"],
+      "refs": ["Genesis 37:14", "Genesis 43:23", "Genesis 44:34"]
+    },
+    {
+      "v": "18",
+      "context": "Judah steps forward and asks to speak. The speech that follows (vv. 18-34) is one of the longest in Genesis and the turning point of the Joseph story. He opens with the careful courtesies of a petitioner before a great man.",
+      "grammar": "Vayyiggash, ‘and he drew near’, is the word that begins the weekly synagogue reading of Genesis 44:18 to 47:27, which takes its name from it. Bi adoni, \"Sir, please\", is the deferential opening used at the door in 43:20. Yedabber-na avdekha davar beoznei adoni, ‘let your servant speak a word in my lord's ears’, asks for a direct hearing. Kamokha kefaroh, ‘as you, so Pharaoh’, acknowledges that Joseph holds power second only to the king (41:40-44).",
+      "words": ["H5066G", "H0994", "H0241I", "H2734", "H0639G", "H6547H"],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Judah leads by stepping into the place of danger himself, not by commanding others. The brother who once proposed the sale of Joseph now stands between the ruler and the youngest brother."
+        }
+      ],
+      "refs": ["Genesis 41:40-44", "Genesis 43:20", "1 Samuel 25:24"]
+    },
+    {
+      "v": "19-20",
+      "context": "Judah recounts the first meeting from the brothers' side. His summary centers on the father: an old man, a son of his old age, a dead brother, a sole surviving son of his mother, and a father's love.",
+      "grammar": "Yeled zequnim, \"the child of his old age\", repeats the phrase used of Joseph in 37:3, where Israel loved Joseph because he was the son of his old age. Veaviv ahevo, \"and his father loves him\", uses the same verb ahav. Judah speaks of Benjamin in the very words that once explained Joseph's favored status, and this time without resentment. Vayyivvater hu levaddo, ‘he alone is left’, uses a Niphal of yatar, ‘to remain’.",
+      "words": ["H3206", "H2208", "H0157G", "H3498", "H0517"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Judah names his father's preference openly and without bitterness. The favoritism that once turned brothers into enemies is now acknowledged and accepted as part of what Judah must protect."
+        }
+      ],
+      "refs": ["Genesis 37:3", "Genesis 35:16-19", "Genesis 42:13"]
+    },
+    {
+      "v": "21-23",
+      "context": "Judah reports the exchange about bringing Benjamin: Joseph demanded to see him, the brothers warned that the boy's departure would kill their father, and Joseph refused to see them again without him.",
+      "grammar": "Veasimah eini alav, ‘that I may set my eye on him’, is more than ‘see him’. The idiom elsewhere means to look after someone with favor (Jeremiah 39:12; 40:4), so Judah subtly reminds Joseph that his demand sounded like an offer of care. In verse 22, veazav et-aviv vamet, ‘if he leaves his father, he will die’, is ambiguous in Hebrew: the subject of ‘die’ could be the boy or the father. The BSB, with most translations, takes it as the father. Lo tosifun lirot panai, ‘you shall not again see my face’, uses the verb yasaf, ‘to add, do again’.",
+      "words": ["H7760A", "H5869A", "H5800A", "H4191", "H3254G"],
+      "refs": ["Jeremiah 39:12", "Jeremiah 40:4", "Genesis 43:3-5"]
+    },
+    {
+      "v": "24-26",
+      "context": "Judah summarizes the scene at home in Canaan: the father's order to go back for food, and the brothers' insistence that they could not see the man's face without the youngest brother. He does not mention his own quarrel with Jacob or his pledge yet; that comes at the climax.",
+      "grammar": "Judah calls Jacob avdekha avi, ‘your servant my father’, a courtesy that places the patriarch under Joseph. The double lo nukhal, ‘we cannot’, in verse 26 frames the brothers' position as helplessness, not defiance. Veachinu haqqaton enennu ittanu, ‘and our youngest brother is not with us’, uses enennu, the word for absence that has echoed through the story since 37:30.",
+      "words": ["H5046", "H7666", "H3201", "H0369"],
+      "refs": ["Genesis 43:1-10", "Genesis 42:13"]
+    },
+    {
+      "v": "27-29",
+      "context": "Judah quotes his father directly. Jacob's words are painful for Judah to repeat: my wife bore me two sons, as though Leah's sons did not count. Judah repeats them anyway, and adds Jacob's belief that Joseph was torn by a wild animal, the lie the brothers themselves had created.",
+      "grammar": "Ishti, ‘my wife’, means Rachel alone, as if Jacob had only one wife. Tarof toraf, \"Surely he has been torn to pieces\", is the exact phrase Jacob cried out when he saw Joseph's bloodied robe (37:33): an infinitive absolute with a Pual perfect, the passive of the verb for a predator tearing its prey. Judah must now speak aloud, before the man he wronged, the words his own deception put in his father's mouth. In verse 29 beraah, ‘in calamity’, replaces the ‘in sorrow’ of 42:38, darkening the father's line.",
+      "words": ["H0802H", "H2963", "H0611", "H7451I", "H7585"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Judah repeats his father's favoritism without complaint and repeats the story of Joseph's death without defending himself. The brothers' lie is exposed in Joseph's hearing by one of the men who told it."
+        }
+      ],
+      "refs": ["Genesis 37:31-35", "Genesis 42:38", "Genesis 46:19"]
+    },
+    {
+      "v": "30-31",
+      "context": "Judah reaches the heart of his fear. If he returns without the boy, his father will die, and the sons will have killed their father with grief. The sentence runs across both verses, a long anxious thought that ends at the grave.",
+      "grammar": "Venafsho qeshurah venafsho, \"whose life is wrapped up in the boy’s life\", is literally ‘his soul is bound with his soul’. Qeshurah is a passive participle of qashar, ‘to tie, bind’, and nefesh here means the whole living self. A similar expression is used when Jonathan's soul was knit to David's (1 Samuel 18:1). The sentence is built as one long condition: ‘when I come ... and the boy is not with us ... and he sees ... then he will die’.",
+      "words": ["H5315H", "H7194", "H5288", "H7872", "H3015"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Judah argues from his father's love, not from Benjamin's innocence. He has come to see the father's bond with Rachel's son not as an injury to himself but as something worth guarding at his own cost."
+        }
+      ],
+      "refs": ["1 Samuel 18:1", "Genesis 42:38", "Genesis 37:35"]
+    },
+    {
+      "v": "32",
+      "context": "Judah explains why he in particular must stay: he pledged himself for the boy's safety. Now he lets the ruler know the bond he is under.",
+      "grammar": "Arav et-hanaar, ‘he stood surety for the boy’, is the verb of Judah's pledge in 43:9. Judah quotes his own words, \"I will bear the guilt before you, my father, all my life\", repeating vechatati, ‘I will be guilty’, from 43:9. The opening ki, \"Indeed\", gives the reason for the request that follows in verse 33.",
+      "words": ["H6148", "H2398"],
+      "refs": ["Genesis 43:9", "Proverbs 6:1-3", "Hebrews 7:22"]
+    },
+    {
+      "v": "33-34",
+      "context": "Judah's request: let him remain as a slave in place of the boy, and let the boy go home with his brothers. He closes by asking how he could return to his father without Benjamin and watch the calamity that would find him. Joseph can bear no more, and chapter 45 begins with his collapse.",
+      "grammar": "Yeshev-na avdekha tachat hanaar, ‘please let your servant stay in place of the boy’, uses tachat in its sense of substitution. Veha-naar yaal, ‘and let the boy go up’, sets the two jussives side by side: I stay, he goes. In verse 34 the chapter's key verb returns one last time: baraa asher yimtsa et-avi, ‘the evil that will find my father’. The steward found the cup, God found the iniquity, and Judah will not let evil find his father.",
+      "words": ["H3427", "H8478H", "H5927G", "H7451B", "H4672"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Judah offers his own freedom so that Benjamin may go free. This is substitution in the plainest sense, one taking another's place under a penalty, and Genesis uses the same preposition for the ram offered in Isaac's place (22:13). The New Testament does not cite this verse, but the pattern it shows is the one the gospel fulfills."
+        },
+        {
+          "id": "love",
+          "note": "Judah cannot bear to see his father's misery. Love for a father he once deceived now outweighs his own freedom."
+        }
+      ],
+      "refs": ["Genesis 22:13", "Genesis 43:9", "Isaiah 53:5-6", "Mark 10:45", "John 15:13"]
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The teaching is over, and Jesus turns from the disciples to the Father. The narrator's short introduction sets the posture, and the first words announce that the hour the Gospel has been counting toward has come. The prayer's opening petition is for mutual glory: the Father's glorifying of the Son, so that the Son may glorify the Father.",
+      "grammar": "Tauta elalēsen Iēsous, ‘Jesus spoke these things’, closes the discourse with the aorist, after the repeated perfect tauta lelalēka of chapters 14 to 16. Eparas tous ophthalmous autou eis ton ouranon, ‘having lifted up his eyes to heaven’, is an aorist participle of epairō, the posture of 11:41. Pater, ‘Father’, is the plain vocative, without a possessive, the form that probably stands behind Jesus' Aramaic Abba (Mark 14:36). Elēluthen hē hōra, ‘the hour has come’, is a perfect: the hour has arrived and is present. Doxason sou ton huion, ‘glorify your Son’, is an aorist imperative, and the purpose clause hina ho huios doxasē se, ‘so that the Son may glorify you’, makes the request reciprocal. The Son asks to be glorified in order to glorify.",
+      "words": ["G1869", "G3788", "G3772", "G3962", "G5610", "G1392", "G5207"],
+      "history": "The title the High Priestly Prayer is traced to David Chytraeus (1531 to 1600), a Lutheran theologian at the University of Rostock who called the chapter the prayer of the high priest (precatio summi sacerdotis). The idea is older. Cyril of Alexandria, in the fifth century, already read the chapter as the prayer of Christ acting as mediator and high priest for his people, and the prayer's shape, first for himself, then for his own, then for all who will believe, recalls the order of the high priest's confessions on the Day of Atonement (Leviticus 16:6, 16:17; see the chapter note).",
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The hour of glory is the hour of the cross. Jesus asks to be glorified on the night he will be arrested, because in John the Son's glory is shown in his self-giving death and in his return to the Father, and the Father is glorified in that same act (13:31-32)."
+        }
+      ],
+      "refs": ["John 11:41", "John 12:23", "John 13:31-32", "Mark 14:36", "Leviticus 16:17"]
+    },
+    {
+      "v": "2",
+      "context": "The ground of the request: the Father has given the Son authority over all humanity so that he may give eternal life to all whom the Father has given him. The verse introduces the language of giving that runs through the whole prayer.",
+      "grammar": "Kathōs edōkas autō exousian pasēs sarkos, ‘since you gave him authority over all flesh’, uses kathōs in a causal sense, ‘inasmuch as’. Pasēs sarkos, ‘all flesh’, is the Hebrew idiom kol basar for all humanity (Genesis 6:12, Isaiah 40:5). Hina pan ho dedōkas autō dōsē autois zōēn aiōnion, ‘so that all that you have given him, he may give to them eternal life’, begins with the neuter singular pan ho, ‘all that’, treating the Father's gift as a single whole, and then shifts to the masculine plural autois, ‘to them’, when it speaks of the persons who receive life. Grammarians call this a construction according to sense. The same neuter returns in verse 24 and in 6:37-39.",
+      "words": ["G1325", "G1849", "G4561", "G2222", "G0166"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Those who receive eternal life are described as the Father's gift to the Son, a theme first heard in 6:37-39. Augustinian and Reformed interpreters read this as the Father's sovereign choice of a people for his Son; Arminian and many other interpreters read the given as those whom the Father draws and who respond in faith, known to God in advance. Both readings agree that salvation originates in the Father's giving and is secured by the Son's giving of life."
+        },
+        {
+          "id": "exaltation",
+          "note": "The authority over all humanity recalls the one like a son of man in Daniel 7:14, to whom dominion over all peoples is given, and the Son of Man to whom the Father has given authority to judge (5:27). The risen Jesus claims it in Matthew 28:18."
+        }
+      ],
+      "refs": ["John 6:37-39", "John 5:27", "Daniel 7:14", "Matthew 28:18", "John 10:28-29"]
+    },
+    {
+      "v": "3",
+      "context": "Jesus pauses to define the eternal life he gives: to know the only true God and Jesus Christ whom he sent. The verse reads like a confession set within the prayer.",
+      "grammar": "Hautē de estin hē aiōnios zōē, ‘and this is eternal life’, points forward to the hina clause, which here explains rather than expresses purpose: hina ginōskōsin se, ‘that they know you’. The present subjunctive ginōskōsin describes continuing knowledge, not a single act of learning. Ton monon alēthinon theon, ‘the only true God’, uses alēthinos, ‘real’, as in 15:1, with monos, ‘only’, the language of Israel's confession against idols. Kai hon apesteilas Iēsoun Christon, ‘and the one you sent, Jesus Christ’, is one of only two places in the Gospel where the combined name Jesus Christ appears (with 1:17), and it is striking in Jesus' own mouth. Many commentators think the evangelist has framed the sentence as a summary of the Christian confession; others see a natural formula of prayer.",
+      "words": ["G0166", "G2222", "G1097", "G3441", "G0228", "G2316", "G0649", "G5547"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Eternal life is defined not first by duration or place but by relationship: knowing God and the one he sent. Knowing in the biblical sense is covenantal, the knowledge Jeremiah promised when all would know the LORD (Jeremiah 31:34), and it begins now (5:24)."
+        },
+        {
+          "id": "trinity",
+          "note": "Arian writers cited the only true God to deny that the Son is true God. Nicene readers answered that the phrase distinguishes the one God from idols, not the Father from the Son, and that knowing the Son is here joined to knowing God as the content of eternal life, something no creature could be. 1 John 5:20 says of Jesus Christ that he is the true God and eternal life."
+        }
+      ],
+      "refs": ["Jeremiah 31:34", "Jeremiah 9:23-24", "1 John 5:20", "1 Thessalonians 1:9", "John 1:17"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus reports to the Father that he has glorified him on earth by finishing the work he was given, and asks to be glorified in the Father's presence with the glory he had before the world existed. The prayer looks back over the ministry and forward past the cross.",
+      "grammar": "Egō se edoxasa epi tēs gēs, ‘I glorified you on earth’, is an aorist looking at the ministry as a whole. To ergon teleiōsas ho dedōkas moi hina poiēsō, ‘having completed the work that you gave me to do’, uses teleioō, ‘bring to completion’, the verb of 4:34 and 5:36; from the cross Jesus will say tetelestai, ‘it is finished’ (19:30), from the related teleō. Spoken before the cross, the aorist participle treats the work as already done. Verse 5 begins kai nun, ‘and now’, and asks doxason me su, pater, para seautō, ‘glorify me, Father, beside yourself’, tē doxē hē eichon pro tou ton kosmon einai para soi, ‘with the glory which I was having before the world existed beside you’. The imperfect eichon, ‘I was having’, describes a glory possessed, not merely planned, and para soi, ‘beside you’, echoes pros ton theon, ‘with God’, in 1:1.",
+      "words": ["G1392", "G1093G", "G2041", "G5048", "G1391", "G2192", "G4253", "G2889"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Son had glory with the Father before the world existed. The verse teaches the Son's personal pre-existence as plainly as 1:1, and in Isaiah the LORD says he will not give his glory to another (Isaiah 42:8, 48:11), so that the Son's sharing the Father's glory places him within the identity of the one God. Some later unitarian readers took the glory as one destined for him in God's purpose, but the imperfect eichon, ‘I had’, and the phrase with you describe possession."
+        },
+        {
+          "id": "incarnation",
+          "note": "The one who asks to return to his former glory is the Son who laid it aside to finish his work on earth. The verse gives the shape of the incarnation from the inside: glory before the world, work on earth, glory again with the Father (Philippians 2:6-11)."
+        }
+      ],
+      "refs": ["John 1:1", "John 4:34", "John 19:30", "Isaiah 42:8", "Philippians 2:6-11"]
+    },
+    {
+      "v": "6",
+      "context": "The prayer turns to the disciples. Jesus describes them before he prays for them: they are people the Father gave him out of the world, to whom he revealed the Father's name, and they have kept the Father's word.",
+      "grammar": "Ephanerōsa sou to onoma tois anthrōpois, ‘I revealed your name to the people’, uses phaneroō, ‘make visible’, a favorite Johannine verb. Hous edōkas moi ek tou kosmou, ‘whom you gave me out of the world’, joins the language of giving to the language of being chosen out of the world (15:19). Soi ēsan kamoi autous edōkas, ‘they were yours, and you gave them to me’, uses the imperfect ēsan, ‘they were’, for their prior belonging to the Father. Kai ton logon sou tetērēkan, ‘and they have kept your word’, is a perfect with the Koine ending -an for -asi. The praise is generous: these are the men who will scatter within hours (16:32), yet Jesus describes them by their faith, not their failure.",
+      "words": ["G5319", "G3686", "G0444", "G1325", "G2889", "G3056", "G5083G"],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "To reveal God's name is to make God himself known as he is. At the burning bush and on Sinai God proclaimed his name to Moses (Exodus 3:14-15, 34:5-7), and Isaiah promised a day when his people would know his name (Isaiah 52:6). Jesus claims to have done what those passages promised: the Father's name, his character and presence, has been made known in the Son."
+        }
+      ],
+      "refs": ["Exodus 3:14-15", "Exodus 34:5-7", "Isaiah 52:6", "Psalm 22:22", "John 1:18"]
+    },
+    {
+      "v": "7-8",
+      "context": "The disciples have come to know that everything Jesus has comes from the Father. He gave them the Father's words, they received them, and they know and believe that he came from the Father and was sent by him.",
+      "grammar": "Nun egnōkan hoti panta hosa dedōkas moi para sou eisin, ‘now they have come to know that everything you have given me is from you’, uses the perfect egnōkan, again with the Koine ending, for knowledge that has taken hold. Verse 8 gives the reason with hoti, ‘for’: ta rhēmata ha edōkas moi dedōka autois, ‘the words you gave me I have given them’. Three verbs describe their response: autoi elabon, ‘they received’, egnōsan alēthōs, ‘they knew truly’, and episteusan, ‘they believed’. Knowing and believing have parallel objects, that he came from the Father and that the Father sent him, and John does not set knowledge above faith.",
+      "words": ["G1097", "G1325", "G4487", "G2983", "G0230", "G1831", "G4100", "G0649"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The chain of revelation runs from the Father to the Son to the disciples: the Father gives the words, the Son gives them on, the disciples receive them. What the disciples come to know is not only what Jesus taught but where he came from, which is the heart of John's witness (20:31)."
+        }
+      ],
+      "refs": ["John 16:27-30", "John 12:49-50", "John 15:15", "John 20:31", "1 Thessalonians 2:13"]
+    },
+    {
+      "v": "9-10",
+      "context": "Jesus now prays for the disciples, and specifically for them, not for the world, because they belong to the Father. All that belongs to him belongs to the Father, and the reverse, and he has been glorified in them.",
+      "grammar": "Egō peri autōn erōtō, ‘I am asking concerning them’, uses erōtaō, the verb John uses for Jesus' requests to the Father. Ou peri tou kosmou erōtō, ‘I am not asking concerning the world’, describes this prayer's focus, not a refusal ever to pray for the world: in verse 21 he prays that the world may believe, and Luke records his prayer for those crucifying him (Luke 23:34). Alla peri hōn dedōkas moi, hoti soi eisin, ‘but concerning those you have given me, because they are yours’. Verse 10 uses neuter plurals: ta ema panta sa estin kai ta sa ema, ‘all things that are mine are yours, and yours are mine’. The first half any believer could say to God; the second, that all the Father has belongs to the Son, only the Son can say (16:15). Kai dedoxasmai en autois, ‘and I have been glorified in them’, is a perfect passive.",
+      "words": ["G2065", "G2889", "G1325", "G1392"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "The prayer shows Christ as intercessor for his own. The New Testament says he continues this intercession as the risen Lord (Romans 8:34, Hebrews 7:25), and the church has seen in this chapter the pattern of that heavenly ministry: a priest who knows his people by name and presents them to the Father as the Father's own."
+        },
+        {
+          "id": "trinity",
+          "note": "\"All I have is Yours, and all You have is Mine\" describes a complete sharing between the Father and the Son. Luke's parable has a father say to his son that all he has is his (Luke 15:31); only here is it said in both directions, which the church has read as a statement of one shared divine life."
+        }
+      ],
+      "refs": ["Luke 23:34", "Romans 8:34", "Hebrews 7:25", "Luke 15:31", "John 16:15"]
+    },
+    {
+      "v": "11",
+      "context": "Jesus is leaving the world and the disciples are staying in it. He asks the holy Father to keep them in his name, the name given to the Son, so that they may be one as the Father and the Son are one.",
+      "grammar": "Kai ouketi eimi en tō kosmō, ‘and I am no longer in the world’, uses the present as if the departure had already happened. Kai autoi en tō kosmō eisin, kagō pros se erchomai, ‘and they are in the world, and I am coming to you’. Pater hagie, ‘Holy Father’, is the only place in the New Testament where God is addressed with this title; the holy God is asked to keep a people set apart for himself. Tērēson autous en tō onomati sou hō dedōkas moi, ‘keep them in your name which you have given me’, uses tēreō, ‘guard’, and the relative hō has been attracted into the dative case of onomati: it is the name, not the disciples, that the Father has given the Son. Hina ōsin hen kathōs hēmeis, ‘so that they may be one as we are’, uses the neuter hen, ‘one thing’, as in 10:30, I and the Father are one.",
+      "words": ["G2889", "G2064", "G3962", "G0040G", "G5083I", "G3686", "G1520"],
+      "history": "The earliest Christian prayers outside the New Testament echo this verse. The Didache, a church manual from around AD 100, gives a thanksgiving to be said after the Eucharist that addresses God as Holy Father, thanks him for his holy name which he has made to dwell in believers' hearts, and asks him to remember his church, to deliver it from all evil, to perfect it in his love, and to gather it from the four winds (Didache 10:2-5). Whether the Didache depends on John or both draw on a shared tradition of prayer is debated, but the combination of Holy Father, name, keeping from evil, and perfection in love is close to John 17.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The unity Jesus asks for is modeled on the unity of the Father and the Son and kept by the Father's name. It is not a unity the disciples create by agreement but one they are kept in by God, which is why it is a petition before it is a command."
+        },
+        {
+          "id": "holiness",
+          "note": "The Holy Father is asked to keep his people. Holiness in this prayer belongs first to God, and the disciples share it by belonging to him, as Israel was called to be holy because the LORD is holy (Leviticus 11:44, 1 Peter 1:15-16)."
+        }
+      ],
+      "refs": ["John 10:30", "Leviticus 11:44", "Philippians 2:9", "Proverbs 18:10", "1 Peter 1:15-16"]
+    },
+    {
+      "v": "12",
+      "context": "While he was with them, Jesus kept and guarded them in the Father's name, and none was lost except the son of destruction, so that Scripture would be fulfilled. The verse names Judas without naming him.",
+      "grammar": "Hote ēmēn met' autōn, egō etēroun autous, ‘while I was with them, I was keeping them’, uses the imperfect etēroun for continued guarding, and kai ephulaxa, ‘and I guarded’, the aorist of phulassō, for the whole. Kai oudeis ex autōn apōleto ei mē ho huios tēs apōleias, ‘and none of them perished except the son of perdition’, plays on apollumi and apōleia (see the chapter note). The phrase ei mē, ‘except’, raises a real grammatical question: if it is a true exception, Judas was among those given and kept and was lost; if it is used adversatively, ‘none of them was lost, but the son of destruction was’, Judas may be understood as never having been truly among them, which fits 6:64 and 6:70. Commentators divide along lines close to their views on perseverance. Hina hē graphē plērōthē, ‘so that the Scripture might be fulfilled’, points to Psalm 41:9, already quoted at 13:18.",
+      "words": ["G5083I", "G5442I", "G0622", "G5207", "G0684", "G1124", "G4137"],
+      "ot": [
+        {
+          "ref": "Psalm 109:8",
+          "note": "Besides Psalm 41:9 (quoted in 13:18), the early church applied Psalm 109 to Judas. In the Hebrew the psalmist, attacked by those he loved, prays that his accuser's days be few and that another take his office (pequddato). The Septuagint (108:8) renders it tēn episkopēn autou labetō heteros, ‘let another take his oversight’, and Peter quotes those words when the eleven choose Matthias (Acts 1:20). John does not specify which Scripture he means here; the singular hē graphē, ‘the Scripture’, most naturally points back to the psalm already quoted in 13:18."
+        }
+      ],
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Jesus kept those the Father gave him, and none was lost except the one who belonged to destruction. When he is arrested he asks that the disciples be let go, and John says this fulfilled his word that he had lost none (18:8-9). The verse grounds the disciples' security in Christ's keeping, while the case of Judas keeps the warning of 15:6 in view."
+        }
+      ],
+      "refs": ["John 6:39", "John 18:8-9", "John 13:18", "Acts 1:16-20", "2 Thessalonians 2:3"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus is going to the Father, and he says these things aloud in the world so that his disciples may have his joy made full in themselves. The prayer is meant to be overheard.",
+      "grammar": "Nun de pros se erchomai, ‘but now I am coming to you’, repeats verse 11. Kai tauta lalō en tō kosmō, ‘and these things I am speaking in the world’, uses laleō, ‘speak aloud’: the prayer is spoken where the disciples can hear it, as at Lazarus's tomb Jesus said he prayed aloud for the sake of those standing by (11:42). Hina echōsin tēn charan tēn emēn peplērōmenēn en heautois, ‘so that they may have my joy made full in themselves’, uses a perfect passive participle of plēroō, the language of 15:11 and 16:24.",
+      "words": ["G3568", "G2064", "G2980", "G2889", "G5479", "G4137"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus' prayer for his disciples is also a gift to them: hearing him pray for them is part of how his joy becomes theirs. The church has continued to find strength in overhearing this prayer, which is why it has been read at ordinations, at the Lord's Supper, and at gatherings for Christian unity."
+        }
+      ],
+      "refs": ["John 11:41-42", "John 15:11", "John 16:24", "Hebrews 5:7", "1 John 1:4"]
+    },
+    {
+      "v": "14",
+      "context": "Jesus has given the disciples the Father's word, and the world has hated them for it, because they do not belong to the world, just as he does not. The verse gathers up 15:18-19 into the prayer.",
+      "grammar": "Egō dedōka autois ton logon sou, ‘I have given them your word’, is a perfect of lasting effect. Kai ho kosmos emisēsen autous, ‘and the world hated them’, is an aorist, as if the hatred of 15:18 had already fallen on them. Hoti ouk eisin ek tou kosmou kathōs egō ouk eimi ek tou kosmou, ‘because they are not of the world, just as I am not of the world’, uses ek, ‘from’ or ‘of’, for origin and belonging, and kathōs, ‘just as’, makes the disciples' relation to the world a copy of Jesus' own. The phrase is repeated word for word in verse 16.",
+      "words": ["G1325", "G3056", "G2889", "G3404"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The word that makes the disciples belong to God is the reason the world hates them. Jesus presents their suffering to the Father as part of their likeness to him: not of the world, as he is not of the world."
+        }
+      ],
+      "refs": ["John 15:18-19", "John 8:23", "1 John 3:13", "1 John 4:5-6", "Matthew 5:11-12"]
+    },
+    {
+      "v": "15-16",
+      "context": "Jesus does not ask that the disciples be taken out of the world, but that they be kept from the evil one. He repeats that they are not of the world, as he is not. Their place is in the world, and their protection is God's.",
+      "grammar": "Ouk erōtō hina arēs autous ek tou kosmou, ‘I do not ask that you take them out of the world’, uses airō ek, ‘lift out of’. All' hina tērēsēs autous ek tou ponērou, ‘but that you keep them from the evil one’, uses tēreō ek, ‘keep from’ or ‘guard out of’. This is the only other place in the New Testament besides Revelation 3:10 where tēreō is followed by ek, and interpreters of that verse have argued over whether the phrase means protection within a danger or removal from it. John 17:15 shows the phrase used for protection while remaining in the place of danger, since it is explicitly contrasted with taking out of the world. Tou ponērou, ‘of the evil one’ or ‘of evil’, is ambiguous in form (see the chapter note).",
+      "words": ["G2065", "G0142", "G2889", "G5083I", "G4190"],
+      "history": "The anonymous Epistle to Diognetus, probably from the second century, describes Christians in words close to this verse. As the soul dwells in the body but is not of the body, it says, so Christians dwell in the world but are not of the world (Diognetus 6:3); they live in their own countries as sojourners, share all things as citizens, and endure all things as foreigners (5:5). The church's history has held this balance with difficulty, swinging between withdrawal and assimilation.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Holiness is not withdrawal. Jesus explicitly declines to pray that his people be removed from the world; he prays that they be guarded within it. The verse has been a check both on flight from ordinary life and on its opposite, a church indistinguishable from the world around it."
+        },
+        {
+          "id": "angels",
+          "note": "If tou ponērou is masculine, as the BSB takes it, Jesus names the devil as the enemy from whom the disciples need guarding, the ruler of this world of 12:31 and 16:11. 1 John uses the same term for the evil one whom the young men have overcome and who cannot touch the one born of God (1 John 2:13-14, 5:18)."
+        }
+      ],
+      "refs": ["Matthew 6:13", "1 John 5:18-19", "2 Thessalonians 3:3", "Revelation 3:10", "1 Corinthians 5:9-10"]
+    },
+    {
+      "v": "17",
+      "context": "The central petition for the disciples: sanctify them by the truth, and the Father's word is truth. The verse explains how the disciples will be kept in the world: by being set apart for God through his word.",
+      "grammar": "Hagiason autous en tē alētheia, ‘sanctify them in the truth’, is an aorist imperative of hagiazō, ‘make holy’ or ‘set apart for God’. En tē alētheia can be instrumental, ‘by means of the truth’, or locative, ‘in the sphere of the truth’; the next clause suggests both. Ho logos ho sos alētheia estin, ‘your word is truth’, has alētheia without the article, in the predicate position: the word is not one truth among others but has the quality of truth itself, the same construction as the Word was God in 1:1. Logos here is the Father's word that Jesus gave the disciples (verses 6, 8, 14).",
+      "words": ["G0037", "G0225", "G3056"],
+      "ot": [
+        {
+          "ref": "Psalm 119:142",
+          "note": "The psalmist confesses, ‘your law is truth’ (Hebrew ve-toratkha emet), and the Septuagint (118:142) reads ho nomos sou alētheia, the same construction as John's ho logos ho sos alētheia estin. The same psalm says that the sum of God's word is truth (119:160), and David prays, your words are true (2 Samuel 7:28). Jesus applies to the Father's word, now given through him, what Israel's Scriptures said of the law: it is truth, and it makes holy those who keep it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The means of sanctification is God's word. The disciples are set apart not by leaving the world but by being claimed by the truth, the word Jesus has given them. The same connection appears in 15:3, where they are clean because of the word he has spoken."
+        },
+        {
+          "id": "revelation",
+          "note": "The church has drawn on this verse in confessing that God's word is truthful and trustworthy. Christians differ on how to state that confession for Scripture, whether in terms of inerrancy or of infallibility in what it teaches, but all traditions read the verse as grounding holiness in the truth God has spoken."
+        }
+      ],
+      "refs": ["Psalm 119:142", "Psalm 119:160", "2 Samuel 7:28", "John 15:3", "Ephesians 5:26"]
+    },
+    {
+      "v": "18",
+      "context": "Holiness is for mission. As the Father sent the Son into the world, the Son has sent the disciples into the world. The verse anticipates the risen Jesus' commission in 20:21.",
+      "grammar": "Kathōs eme apesteilas eis ton kosmon, kagō apesteila autous eis ton kosmon, ‘as you sent me into the world, I also sent them into the world’, puts the two sendings in exact parallel with kathōs ... kagō, ‘as ... so I’. The second verb is an aorist, apesteila, ‘I sent’, although the formal commission comes after the resurrection (20:21). Grammarians read it as proleptic, speaking of the commission as already given, or as referring to the sending that began during the ministry (4:38, I sent you to reap). Eis ton kosmon, ‘into the world’, names the same world that hates them (verse 14) as the destination of their mission.",
+      "words": ["G2531", "G0649", "G2889"],
+      "history": "The phrase missio Dei, ‘the mission of God’, became central to Protestant and later Catholic thinking about mission after the International Missionary Council's conference at Willingen in 1952. It taught that mission begins in the Father's sending of the Son and the Spirit, and that the church's sending is a share in that mission rather than an activity of its own. This verse and 20:21 were among its chief texts.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The church's mission is patterned on the Son's and derived from it. The disciples are sent as Jesus was sent: into the world, in dependence on the one who sends, to make the Father known, and at the cost of the world's hostility."
+        }
+      ],
+      "refs": ["John 20:21", "John 4:38", "Matthew 28:19-20", "2 Corinthians 5:20", "Isaiah 6:8"]
+    },
+    {
+      "v": "19",
+      "context": "The deepest line of the petition for the disciples: for their sake Jesus sanctifies himself, so that they too may be sanctified in truth. His self-consecration is the ground of theirs.",
+      "grammar": "Kai huper autōn egō hagiazō emauton, ‘and on their behalf I sanctify myself’, uses huper, ‘on behalf of’, the preposition John uses for Jesus' death for others (6:51, 10:11, 11:50-52, 15:13). Hagiazō in the Greek Old Testament is used for consecrating priests to their service (Exodus 28:41) and for setting apart sacrificial animals to the LORD (Deuteronomy 15:19). The present hagiazō, ‘I am consecrating’, describes what he is doing as he goes to the cross. Hina ōsin kai autoi hēgiasmenoi en alētheia, ‘so that they also may be sanctified in truth’, is a periphrastic perfect passive, a state of having been set apart; en alētheia without the article may mean ‘in the truth’ or ‘truly’.",
+      "words": ["G5228", "G0037", "G1510", "G0225"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Jesus is both the priest who consecrates and the offering consecrated. John Chrysostom, in his homilies on John, took the verse to mean that Christ offers himself as a sacrifice, and most commentators have followed him. Here more than anywhere the chapter earns its title of the High Priestly Prayer."
+        },
+        {
+          "id": "atonement",
+          "note": "The disciples' holiness rests on Christ's self-offering. Hebrews uses the same perfect participle: by God's will we have been sanctified (hēgiasmenoi) through the offering of the body of Jesus Christ once for all (Hebrews 10:10)."
+        }
+      ],
+      "refs": ["Hebrews 10:10", "Hebrews 2:11", "Exodus 28:41", "John 10:36", "Ephesians 5:25-26"]
+    },
+    {
+      "v": "20",
+      "context": "The prayer widens from the eleven to all who will believe in Jesus through their word. Every later reader of the Gospel who believes is included.",
+      "grammar": "Ou peri toutōn de erōtō monon, ‘not concerning these only do I ask’, alla kai peri tōn pisteuontōn dia tou logou autōn eis eme, ‘but also concerning those who believe in me through their word’. The Nestle-Aland text has the present participle pisteuontōn, ‘those believing’, where the later text has the future pisteusontōn, ‘those who will believe’; the present, spoken of people not yet believing, views them as though already present to Jesus. Dia tou logou autōn, ‘through their word’, names the apostles' message as the means of faith, the same connection John makes when he says he has written so that readers may believe (20:31).",
+      "words": ["G2065", "G3441", "G4100", "G3056"],
+      "text": "Most manuscripts read the present participle, those believing; the Byzantine text and the Textus Receptus behind the King James Version have the future, ‘which shall believe’. The meaning is the same: the prayer embraces future believers.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church of every age is included in Jesus' prayer on the night before his death. Its faith comes through the apostles' word, which is why the church has always understood itself as apostolic, built on the foundation of the apostles and prophets (Ephesians 2:20)."
+        }
+      ],
+      "refs": ["John 20:29-31", "Romans 10:14-17", "Ephesians 2:20", "1 John 1:3", "Acts 2:42"]
+    },
+    {
+      "v": "21",
+      "context": "The prayer for future believers: that all may be one, as the Father is in the Son and the Son in the Father, that they may be in the Father and the Son, so that the world may believe that the Father sent him. The verse has become the charter of the modern search for Christian unity.",
+      "grammar": "Three hina clauses build on one another. Hina pantes hen ōsin, ‘that all may be one’, states the petition with the neuter hen. Kathōs su, pater, en emoi kagō en soi, hina kai autoi en hēmin ōsin, ‘as you, Father, are in me and I in you, that they also may be in us’, gives the pattern and the source: kathōs means both ‘in the same way as’ and ‘because’. Hina ho kosmos pisteuē hoti su me apesteilas, ‘so that the world may believe that you sent me’, gives the purpose, and the present subjunctive pisteuē in the Nestle-Aland text suggests continuing belief. The world in this verse is not only the hostile world of verse 14 but the world that may come to believe.",
+      "words": ["G3956", "G1520", "G1510", "G2531", "G3962", "G2889", "G4100", "G0649"],
+      "history": "The verse has shaped the ecumenical movement of the past century. An Episcopal priest, Paul Wattson, began a Church Unity Octave in 1908, and the French Catholic priest Paul Couturier in 1935 recast it as a universal week of prayer for whatever unity Christ wills by the means he wills, the origin of today's Week of Prayer for Christian Unity. The Church of South India, formed in 1947 by the union of Anglican, Methodist, and Reformed churches, took That they all may be one as its motto. The World Council of Churches' assembly at New Delhi in 1961 described the unity it sought as all in each place who confess Christ brought into one committed fellowship.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "Christians agree that this unity is God's gift and will, and differ on its form. The Catholic Church teaches that the unity Christ prayed for subsists in the Catholic Church and seeks full visible communion with other Christians; the Orthodox Church holds that unity is given in the one apostolic faith and Eucharist of the church that has kept them. Many Protestants distinguish a spiritual unity already given in Christ from the visible structures of the churches and seek unity in the gospel, while ecumenical Protestants have worked toward visible union or toward reconciled diversity among churches that remain distinct. All read the verse as a petition that judges the church's divisions."
+        },
+        {
+          "id": "trinity",
+          "note": "The unity of believers is modeled on and drawn into the unity of the Father and the Son: they are to be in us. The verse does not make believers one in the way the Father and the Son are one in being, but it makes the divine communion the source and pattern of theirs."
+        }
+      ],
+      "refs": ["John 10:16", "John 11:52", "Ephesians 4:3-6", "1 Corinthians 1:10", "Galatians 3:28"]
+    },
+    {
+      "v": "22-23",
+      "context": "Jesus has given believers the glory the Father gave him, so that they may be one as the Father and the Son are one, brought to complete unity, so that the world may know that the Father sent him and has loved them as he loved the Son.",
+      "grammar": "Kagō tēn doxan hēn dedōkas moi dedōka autois, ‘and I, the glory which you have given me, I have given them’, uses two perfects. What this glory is has been read in several ways: the revelation of the Father's name, the Spirit, the glory of self-giving love shown at the cross, or the future glory already given in promise. Verse 23 continues egō en autois kai su en emoi, ‘I in them and you in me’, a verbless chain, and hina ōsin teteleiōmenoi eis hen, ‘that they may be brought to completion into one’, a periphrastic perfect passive of teleioō, the verb of Jesus' finished work in verse 4. The last clause is astonishing: kai ēgapēsas autous kathōs eme ēgapēsas, ‘and that you loved them as you loved me’. The Father's love for the disciples is measured by his love for the Son.",
+      "words": ["G1391", "G1325", "G1520", "G5048", "G1097", "G0649", "G0025"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The glory the Son received he has shared. Whatever its precise content, it is the glory of the Father's presence revealed in the Son, and it is given for unity: the church is meant to display God's glory in its common life, as Paul says believers are being changed into Christ's image from glory to glory (2 Corinthians 3:18)."
+        },
+        {
+          "id": "love",
+          "note": "The world is meant to see that the Father loves believers as he loves his Son. The love that has no measure (3:35) is the love with which the Father regards those who are in Christ, a claim that grounds the believer's assurance not in the believer's love but in God's."
+        }
+      ],
+      "refs": ["2 Corinthians 3:18", "John 3:35", "Ephesians 4:13", "Colossians 3:14", "1 John 4:12"]
+    },
+    {
+      "v": "24",
+      "context": "Jesus expresses his will that those the Father has given him be with him where he is and see his glory, the glory the Father gave him in love before the foundation of the world. The prayer reaches its horizon.",
+      "grammar": "Pater, ho dedōkas moi, thelō, ‘Father, what you have given me, I will’, puts the neuter collective ho, ‘what’, first, as in verse 2, treating believers as a single gift. The verb changes: throughout the prayer Jesus has said erōtō, ‘I ask’, and here he says thelō, ‘I will’ or ‘I desire’, the language of one who shares the Father's will. Hina hopou eimi egō kakeinoi ōsin met' emou, ‘that where I am they also may be with me’, repeats the promise of 14:3. Hina theōrōsin tēn doxan tēn emēn, ‘that they may see my glory’, uses theōreō, ‘behold’. Hoti ēgapēsas me pro katabolēs kosmou, ‘because you loved me before the foundation of the world’, uses katabolē, ‘laying down’ of a foundation, as in Ephesians 1:4 and 1 Peter 1:20.",
+      "words": ["G3962", "G1325", "G2309", "G2334", "G1391", "G0025", "G2602", "G2889"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The final goal of the believer is to be with Christ and to see his glory. The New Testament's hope is centered on a person, and this verse gives it its most personal form: the Son's own will that his people be where he is."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father loved the Son before the foundation of the world. Love belongs to God's eternal life before creation, so that the statement that God is love (1 John 4:8) describes the relationship of the Father and the Son from eternity, not only God's attitude toward the world."
+        }
+      ],
+      "refs": ["John 14:3", "Ephesians 1:4", "1 Peter 1:20", "1 John 3:2", "2 Corinthians 5:8"]
+    },
+    {
+      "v": "25-26",
+      "context": "The prayer closes by appealing to the Father's righteousness. The world has not known him, but the Son has, and the disciples know that he sent him. He has made the Father's name known and will keep making it known, so that the Father's love for the Son may be in them, and he himself in them.",
+      "grammar": "Pater dikaie, ‘righteous Father’, is the second title of character in the prayer, after Holy Father (verse 11). Kai ho kosmos se ouk egnō, egō de se egnōn, ‘and the world did not know you, but I knew you’, uses a kai ... de construction that many grammarians render ‘although the world did not know you, yet I knew you’. Kai houtoi egnōsan hoti su me apesteilas, ‘and these knew that you sent me’. Verse 26 sets two tenses of the same verb side by side: egnōrisa autois to onoma sou kai gnōrisō, ‘I made your name known to them and I will make it known’. The aorist looks back over the ministry; the future looks to the cross and the Spirit. The purpose, hina hē agapē hēn ēgapēsas me en autois ē kagō en autois, ‘that the love with which you loved me may be in them, and I in them’, ends the prayer, and the discourses, with the words kagō en autois, ‘and I in them’.",
+      "words": ["G3962", "G1342", "G2889", "G1097", "G0649", "G1107", "G3686", "G0026", "G0025"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The goal of all Jesus' revealing is that the Father's love for the Son be in believers. Knowledge of God's name is not an end in itself but the way that love is received, and the last words of the prayer are a promise of indwelling: and I in them."
+        },
+        {
+          "id": "union",
+          "note": "The prayer ends where the discourse on the vine began: Christ in his people. The union that 15:4-5 described as branches remaining in the vine is here the Son's presence in believers, carrying the Father's love with it."
+        }
+      ],
+      "refs": ["John 15:15", "John 15:9", "Romans 5:5", "Ephesians 3:17-19", "1 John 4:16"]
+    }
+  ]
+}

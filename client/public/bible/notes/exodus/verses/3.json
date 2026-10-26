@@ -1,0 +1,371 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Moses, once a prince of Egypt, is now keeping another man's sheep. The ordinary work of a shepherd brings him, apparently without intent, to the mountain where God will meet him and later meet all Israel (chapter 19).",
+      "grammar": "Umosheh hayah ro'eh, ‘and Moses was shepherding’, joins the verb ‘to be’ with a participle to describe ongoing, habitual work: this was what Moses' days now consisted of. Vayyinhag, ‘he drove’ or ‘led’, is the shepherd's verb for moving a flock. Achar hammidbar means ‘behind the wilderness’; since Hebrew orientation faced east, ‘behind’ can mean ‘west’, and some translate ‘to the west side of the wilderness’. The mountain is named ‘the mountain of God’ before God appears there, from the point of view of the one telling the story. Chorev (‘Horeb’) is related to a root meaning dry or desolate.",
+      "words": [
+        "H7462B",
+        "H2859A",
+        "H5090A",
+        "H0310A",
+        "H2722"
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Israel's great leaders are repeatedly taken from shepherding, Moses here and David later (Psalm 78:70-72). The Psalms remember that God led his people like a flock by the hand of Moses and Aaron (Psalm 77:20), so the years with Jethro's sheep are part of his preparation."
+        }
+      ],
+      "refs": [
+        "Psalm 77:20",
+        "Psalm 78:70-72",
+        "1 Kings 19:8",
+        "Exodus 19:1-3"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The angel of the LORD appears in a flame within a bush that burns without burning up. Moses decides to turn aside and look. The strange sight draws him in before any word is spoken.",
+      "grammar": "Vayyera, ‘and he appeared’, is the passive (Niphal) of ‘to see’, literally ‘he let himself be seen’, the standard verb for a divine appearance. The flame is labbat-esh, a ‘flame of fire’. The bush is seneh, a thornbush, a word found almost only here and in Deuteronomy 33:16, where God is called the one who dwelt in the bush. The key clause is einennu ukkal, ‘it was not being consumed’, a passive participle describing a continuing state: the fire kept burning, and the bush kept not burning up. Moses' asurah-na ve'ereh, ‘let me turn aside and see’, uses the cohortative, a form expressing resolve.",
+      "words": [
+        "H7200G",
+        "H4397H",
+        "H3827",
+        "H5572",
+        "H0398",
+        "H5493I"
+      ],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angel of the LORD appears in verse 2, but in verse 4 it is God who speaks from the bush and says ‘I am the God of your father’. The Old Testament often blurs the line this way (Genesis 16:7-13; Judges 13:21-22). Some interpreters understand the angel as a messenger who speaks with God's full authority; others see a direct appearance of God; and many early Christian writers identified the angel of the LORD with the Son before his incarnation. The text itself stresses that in meeting the angel Moses met God."
+        }
+      ],
+      "refs": [
+        "Acts 7:30-31",
+        "Deuteronomy 33:16",
+        "Genesis 16:7-13",
+        "Judges 13:21-22"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "God speaks only after Moses turns aside. He calls Moses by name, twice, and Moses answers with the reply of the ready servant. The meeting that follows is a conversation, not only a vision.",
+      "grammar": "The verse moves from YHWH (“the LORD saw”) to Elohim (“God called”) within one sentence, one God under two names in a single breath. Source critics have often divided the verse between two written sources on the basis of the names; others read the shift as a deliberate move from the personal name to the more general title. The repeated name, ‘Moses, Moses’, is the form of address used at other turning points: to Abraham at Moriah (Genesis 22:11), to Jacob before he went down to Egypt (Genesis 46:2), and to Samuel (1 Samuel 3:10). Hinneni, “Here I am”, is literally ‘behold me’, a statement of availability.",
+      "words": [
+        "H3068G",
+        "H5493I",
+        "H0430G",
+        "H4872",
+        "H2009"
+      ],
+      "refs": [
+        "Genesis 22:11",
+        "Genesis 46:2",
+        "1 Samuel 3:10",
+        "Isaiah 6:8"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The first words God speaks set a boundary: do not come closer, and remove your sandals. The place is holy because God is there. The same pattern of approach and limit will govern Sinai (19:12) and the tabernacle.",
+      "grammar": "Al-tiqrav halom, ‘do not draw near here’, uses qarav, the verb later used for approaching the altar and for bringing offerings (the noun for offering, qorban, comes from it). Shal-ne'alekha, ‘slip off your sandals’, is a brisk imperative. Admat-qodesh is literally ‘ground of holiness’: the noun qodesh in a construct phrase names holiness as the quality of the ground. Until now the Bible's language of holiness has been attached to a day (God made the seventh day holy, Genesis 2:3); here, for the first time, it is attached to a place.",
+      "words": [
+        "H7126G",
+        "H5394",
+        "H5275",
+        "H0127G",
+        "H6944G"
+      ],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness here is not a property of the soil but of God's presence, which makes an ordinary hillside a place to be approached with reverence and limits. The verse teaches that God's nearness and God's otherness come together: he calls Moses close and tells him how close he may come."
+        }
+      ],
+      "refs": [
+        "Joshua 5:15",
+        "Exodus 19:12",
+        "Acts 7:33",
+        "Genesis 2:3"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "God identifies himself by his history with Moses' family and with the patriarchs. Moses hides his face. The God who speaks is not new; he is the God who made promises in Genesis and now comes to keep them.",
+      "grammar": "Anokhi elohe avikha, ‘I am the God of your father’, uses the singular ‘father’. Interpreters take it either of Moses' own father, Amram, or collectively of the ancestors, and Stephen cites it in the plural (Acts 7:32). Vayyaster moshe panav, ‘Moses hid his face’, is a causative (Hiphil) of satar, the verb later used when God hides his face. Mehabbit, ‘from looking’, uses nabat, a verb of gazing intently.",
+      "words": [
+        "H0595",
+        "H0001G",
+        "H5641",
+        "H3372G",
+        "H5027"
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus quotes this verse to answer the Sadducees, who denied the resurrection. God calls himself the God of Abraham, Isaac, and Jacob long after their deaths, and Jesus draws the conclusion that he is not the God of the dead but of the living (Mark 12:26-27). The covenant relationship God claims with the patriarchs, long dead when he speaks, implies that death has not ended it."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "Moses' fear is not the terror of a guilty man before a tyrant but the awe of a creature before the holy God. The same Moses will later ask to see God's glory (33:18), and God will shelter him while he passes by."
+        }
+      ],
+      "refs": [
+        "Mark 12:26-27",
+        "Matthew 22:31-32",
+        "Acts 7:32",
+        "Exodus 33:20"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "God speaks of what he has seen, heard, and known, and of what he will do: come down, rescue, and bring up. The speech answers 2:23-25 point by point and turns God's attention into action.",
+      "grammar": "Ra'oh ra'iti, ‘seeing I have seen’, is an infinitive absolute before a finite verb, which intensifies it: “I have indeed seen”. The affliction is 'oni, from the root 'anah used for Egypt's oppression in 1:11-12. The taskmasters are nogesav, ‘his drivers’, the word used for the Egyptian slave drivers in chapter 5. Yada'ti et-makh'ovav, ‘I know his pains’, uses yada for knowledge by close acquaintance. Va'ered, ‘I have come down’, is the verb used when God came down to see Babel (Genesis 11:5) and Sodom (Genesis 18:21), both times for judgment; here the coming down is for rescue (lehatsilo, ‘to deliver him’) and ascent (leha'aloto, ‘to bring him up’).",
+      "words": [
+        "H7200G",
+        "H6040",
+        "H6818",
+        "H5065",
+        "H4341",
+        "H3381",
+        "H5337",
+        "H5927H"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verse defines salvation as God's own act: he comes down, delivers from the hand of the oppressor, and brings his people into a good land. Rescue from and bringing into belong together, and later Scripture holds both when it speaks of redemption."
+        },
+        {
+          "id": "attributes",
+          "note": "The God of Exodus is not unmoved by pain. He sees affliction, hears cries, and knows sufferings, and this knowledge leads to action. The verse is one of the Old Testament's clearest statements of God's compassion joined to his power."
+        }
+      ],
+      "refs": [
+        "Genesis 11:5",
+        "Genesis 18:21",
+        "Acts 7:34",
+        "Deuteronomy 26:7-9",
+        "Isaiah 63:9"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "God repeats that Israel's cry has reached him and then turns to Moses: go, I am sending you. The speech that began with a string of ‘I’ verbs ends by commissioning a man.",
+      "grammar": "Two sentences begin with ve'attah, ‘and now’: the first (v. 9) sums up the situation, the second (v. 10) draws the consequence, which the BSB renders “Therefore, go”. The oppression is lachats, ‘pressing, squeezing’, and the participle lochatsim, ‘are oppressing’; the same verb appears in the law's command not to oppress a foreigner (22:21; 23:9). Ve'eshlachakha, ‘and I will send you’, introduces shalach, ‘send’ or ‘let go’, the book's key verb: God sends Moses so that Pharaoh will send Israel. The command vehotse', ‘bring out’, is addressed to Moses, though in verse 8 God said he would bring them up. God acts through the one he sends.",
+      "words": [
+        "H6258",
+        "H6818",
+        "H3906",
+        "H3905",
+        "H7971G",
+        "H3318H"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The God who comes down to save sends a human messenger to carry out the rescue. Being ‘sent’ becomes the defining mark of a prophet, and Jesus uses the same pattern when he sends his disciples as the Father sent him (John 20:21)."
+        }
+      ],
+      "refs": [
+        "Exodus 22:21",
+        "Acts 7:34",
+        "John 20:21",
+        "Isaiah 6:8"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "Moses' first objection is about himself: who am I? God's answer is about himself: I will be with you. The sign he gives looks forward to worship at this very mountain after the people are free.",
+      "grammar": "Mi anokhi, ‘who am I?’, uses the fuller form of the pronoun ‘I’, the same form God used in verse 6 (anokhi elohe avikha). The reply opens with ki, which can introduce a quoted answer (‘Surely’) and is followed by ehyeh immakh, ‘I will be with you’. The verb ehyeh reappears two verses later as the name of God, so the name is first given as a promise of presence. Ta'avdun et-ha'elohim, ‘you will serve God’, uses avad, the verb of Israel's slavery in 1:13-14: they will move from serving Pharaoh to serving God. Interpreters debate what “the sign” refers to. Some take it to be the future worship on the mountain, a sign that will confirm the commission after the fact; others take it to be the burning bush itself, with the worship as the promised result.",
+      "words": [
+        "H4310",
+        "H0595",
+        "H1961",
+        "H5973A",
+        "H0226G",
+        "H5647H"
+      ],
+      "theology": [
+        {
+          "id": "god",
+          "note": "God does not answer Moses' sense of inadequacy by building up his confidence but by promising his own presence. The pattern returns in the calls of Gideon (Judges 6:15-16) and Jeremiah (Jeremiah 1:6-8), and Jesus' last words in Matthew promise the same presence (Matthew 28:20)."
+        }
+      ],
+      "refs": [
+        "Exodus 19:1-2",
+        "Judges 6:15-16",
+        "Jeremiah 1:6-8",
+        "Matthew 28:20"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Moses' second objection anticipates the people's question: what is the name of the God who sent him? He expects to be tested on whether he has truly met the God of the fathers.",
+      "grammar": "The people's question is mah-shemo, ‘what is his name?’ Some interpreters argue that asking ‘what’ (mah) rather than ‘who’ (mi) asks for the meaning or character behind the name, not merely a label. Others point out that mah is the ordinary way to ask someone's name (Genesis 32:27), so the question need not carry that weight. Either way, God's answer in verse 14 speaks to character, not only to what he is called. Moses' hinneh anokhi va, ‘behold, I am about to go’, uses a participle for imminent action.",
+      "words": [
+        "H4100",
+        "H8034",
+        "H7971G",
+        "H0935G"
+      ],
+      "refs": [
+        "Genesis 32:27-29",
+        "Judges 13:17-18",
+        "Proverbs 30:4"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "God answers with the most discussed sentence in the Old Testament: I AM WHO I AM. Then he gives a short form for Moses to use, ‘I AM has sent me to you’. Verse 15 will add the personal name YHWH.",
+      "grammar": "Ehyeh asher ehyeh uses the verb hayah (‘to be’) in the imperfect, first person, twice. The Hebrew imperfect can refer to present or future, so the phrase can be rendered ‘I am who I am’, ‘I will be who I will be’, or ‘I will be what I will be’. Interpreters read it in three main ways: as a statement of God's self-existence, the one whose being depends on nothing else; as a promise of faithful presence, picking up ‘I will be with you’ from verse 12; and as a partial refusal, God declining to be defined or controlled by a name. These readings are not mutually exclusive. The Greek translation rendered it ‘I am the one who is’ (ego eimi ho on), which shaped much later Jewish and Christian reflection on God's being. In the second sentence ehyeh functions as a name, the subject of ‘has sent me’.",
+      "words": [
+        "H1961",
+        "H0834A",
+        "H3541",
+        "H7971G"
+      ],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "God gives his name, but in a form that explains rather than labels him: he is the one who is, and the one who will be with his people. The name makes relationship possible without making God manageable."
+        },
+        {
+          "id": "attributes",
+          "note": "Christian theology has drawn the doctrine of God's self-existence (often called aseity) partly from this verse: God is not caused, completed, or sustained by anything outside himself. Jesus' words ‘before Abraham was born, I am’ (John 8:58) are widely read as an echo of this self-designation."
+        }
+      ],
+      "refs": [
+        "John 8:58",
+        "Revelation 1:8",
+        "Isaiah 43:10-13",
+        "Exodus 6:2-3"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "God now gives the name in its lasting form, YHWH, and binds it to the patriarchs: the LORD, the God of Abraham, Isaac, and Jacob. This is the name by which Israel is to call on him in every generation.",
+      "grammar": "YHWH (printed “the LORD” in the BSB) is closely related to ehyeh in verse 14. Ehyeh is a first person form of hayah, ‘I am’ or ‘I will be’; YHWH looks like a third person form of the same verb, ‘he is’ or ‘he will be’. When God speaks he says ‘I am’; when Israel speaks of him they say ‘he is’. Scholars debate whether the name is a simple form (‘he is’) or a causative form (‘he causes to be’). The verse closes in parallel lines: zeh-shemi le'olam, ‘this is my name forever’, and vezeh zikhri ledor dor, ‘this is my remembrance from generation to generation’. Zekher means the name by which someone is invoked and remembered, as in Psalm 135:13 and Hosea 12:5.",
+      "words": [
+        "H3068G",
+        "H8034",
+        "H5769G",
+        "H2143",
+        "H1755"
+      ],
+      "history": "The Hebrew text was written in consonants only, and by the last centuries BC Jews had largely stopped pronouncing the divine name out of reverence, reading Adonai (‘Lord’) in its place. Later scribes wrote the vowels of Adonai with the consonants YHWH as a reminder, and the English form ‘Jehovah’ arose from combining the two. The pronunciation ‘Yahweh’ is a scholarly reconstruction, supported by early Greek transcriptions of the name in Christian writers and by shortened forms in Hebrew names such as those ending in -yah and -yahu.",
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "The personal name joins God's being to his history with a family: YHWH is ‘the God of Abraham, the God of Isaac, and the God of Jacob’. God is known not in the abstract but through what he has promised and done."
+        },
+        {
+          "id": "covenant",
+          "note": "By tying his name to the patriarchs ‘forever’, God commits himself to be known by his faithfulness to the covenant. Every later generation that calls on the LORD calls on the God who keeps what he promised to Abraham."
+        }
+      ],
+      "refs": [
+        "Psalm 135:13",
+        "Hosea 12:5",
+        "Isaiah 42:8",
+        "Matthew 22:32"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "Moses is to gather the elders and tell them that the God of their fathers has appeared and has ‘attended to’ them, and that he will bring them up to the land. The message begins with the leaders of the people, who will then go with Moses to Pharaoh.",
+      "grammar": "The central phrase is paqod paqadti etkhem, ‘I have surely visited you’: the infinitive absolute with the finite verb, as in verse 7. Paqad means to attend to, inspect, take note of, and act on what is found, for blessing or for judgment. The phrase repeats Joseph's dying words almost exactly, ‘God will surely visit you’ (paqod yifqod, Genesis 50:24-25). The elders would recognize the words Joseph left them. Ve'asafta, ‘you shall gather’, and ziqne yisra'el, ‘the elders of Israel’, show that Israel already had a structure of leadership by family heads even in slavery.",
+      "words": [
+        "H0622",
+        "H2205G",
+        "H6485I",
+        "H6040",
+        "H5927H"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's message to the elders is framed as the fulfillment of Joseph's word, which rested in turn on God's oath to Abraham, Isaac, and Jacob (Genesis 50:24). Israel is invited to trust not a new idea but a promise they had carried for generations."
+        }
+      ],
+      "refs": [
+        "Genesis 50:24-25",
+        "Exodus 4:29-31",
+        "Exodus 13:19",
+        "Luke 1:68"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "God predicts the elders' response and gives the words for the first request to Pharaoh: a three-day trip into the wilderness to sacrifice. The chapter note's hard question discusses whether the request was honest.",
+      "grammar": "When speaking to Pharaoh, Moses is to call God ‘the LORD, the God of the Hebrews’, the name Israel used when identifying itself to foreigners (5:3; 7:16). Niqrah alenu, ‘he has met with us’, is a Niphal of qarah, a verb for a meeting that comes unexpectedly, used for God's encounters with Balaam (Numbers 23:3-4). Derekh sheloshet yamim, ‘a way of three days’, measures distance by walking time. Venizbechah, ‘that we may sacrifice’, uses zavach, the verb for slaughtering an animal as an offering.",
+      "words": [
+        "H2205G",
+        "H5680",
+        "H7136A",
+        "H1870L",
+        "H2076"
+      ],
+      "refs": [
+        "Exodus 5:1-3",
+        "Exodus 7:16",
+        "Exodus 8:27",
+        "Numbers 23:3-4"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "God tells Moses in advance that Pharaoh will refuse. The plagues are not a failed plan B; they are announced before Moses leaves Midian. After God strikes Egypt with his wonders, Pharaoh will let the people go.",
+      "grammar": "Verse 20 plays on shalach: veshalachti et-yadi, ‘I will send out my hand’, and yeshallach etkhem, ‘he will send you away’ (the intensive form, ‘let go, release’). God sends his hand so that Pharaoh will send the people. Vehikketi, ‘I will strike’, is the Hiphil of nakah, the verb used for the Egyptian beating a Hebrew (2:11). The wonders are nifle'otai, from pala', ‘to be extraordinary, beyond human power’.",
+      "words": [
+        "H3045",
+        "H3027H",
+        "H2389",
+        "H7971K",
+        "H5221",
+        "H6381"
+      ],
+      "text": "The end of verse 19 in Hebrew reads literally ‘and not by a strong hand’, which is hard to construe. The BSB, following the Greek translation (which reads ‘except by a strong hand’), renders it “unless a mighty hand compels him”. Others keep the Hebrew and translate ‘not even under a mighty hand’, meaning Pharaoh will resist even when struck, until God's final blow (compare 11:1).",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God knows Pharaoh's response before it happens and has already planned his own. The contest that follows is real, but its outcome is never in doubt: the hand of God, not the will of Pharaoh, decides when Israel goes."
+        }
+      ],
+      "refs": [
+        "Exodus 6:1",
+        "Exodus 11:1",
+        "Acts 7:36",
+        "Deuteronomy 4:34"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "Israel will not leave empty-handed. The women will ask their Egyptian neighbors for silver, gold, and clothing, and so the Israelites will ‘plunder’ Egypt. The promise is fulfilled in 12:35-36.",
+      "grammar": "Lo telekhu reqam, ‘you will not go empty’, uses reqam, the word in the law that forbids sending a freed slave away empty-handed (Deuteronomy 15:13). Chen, ‘favor’, is something God gives: ‘I will give this people favor in the eyes of Egypt’. Veshaalah, ‘she shall ask’, is sha'al, the ordinary verb for asking; older English versions rendered it ‘borrow’, which suggested a deceit the Hebrew does not imply. Venitsaltem, ‘you will plunder’, is a Piel of natsal, the verb that in its Hiphil meant ‘rescue’ in verse 8: God will snatch his people from Egypt, and they will strip Egypt of its wealth.",
+      "words": [
+        "H2580",
+        "H7387",
+        "H7592",
+        "H7934",
+        "H1481A",
+        "H5337"
+      ],
+      "history": "The gold and silver Israel carried out of Egypt reappear twice in the book: melted into the golden calf (32:2-4) and freely given for the tabernacle (35:22). The same wealth could be turned to idolatry or to worship. Among the women from whom Israelites would ask are those ‘staying in her house’, literally the sojourner of her house, which suggests Egyptians and Israelites living side by side in some places.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The gifts function as back wages for generations of unpaid labor, and they fulfill God's word to Abraham that his descendants would come out with great possessions (Genesis 15:14). Israel's law later applies the same principle to every released slave (Deuteronomy 15:13-15)."
+        }
+      ],
+      "refs": [
+        "Genesis 15:14",
+        "Deuteronomy 15:13-15",
+        "Exodus 12:35-36",
+        "Psalm 105:37"
+      ]
+    }
+  ]
+}

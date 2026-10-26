@@ -1,0 +1,453 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The women of 23:55-56, who watched the burial and prepared spices before the Sabbath, come to the tomb at dawn on Sunday. Luke runs straight on from the previous verse, which says they rested on the Sabbath in obedience to the commandment; their faithfulness to the Law frames the discovery.",
+      "grammar": "Orthrou batheōs, literally ‘at deep dawn’, uses the genitive of time with bathus (‘deep’), meaning the earliest light. Tē mia tōn sabbatōn, ‘on the first day of the week’, is the same Semitic idiom as Mark 16:2, with the cardinal ‘one’ standing for ‘first’. Pherousai ha hētoimasan arōmata, ‘bringing the spices they had prepared’, uses an aorist for the preparation done on Friday (23:56) and a present participle for the carrying.",
+      "words": ["G1520", "G4521", "G3722", "G0901", "G3418", "G2064", "G5342", "G2090", "G0759"],
+      "text": "The later Byzantine manuscripts, followed by the King James Version, add ‘and certain others with them’ at the end of the verse, probably anticipating the ‘other women’ of verse 10. The earliest manuscripts lack it.",
+      "parallels": ["Matthew 28:1", "Mark 16:1-2", "John 20:1"],
+      "refs": ["Luke 23:55-56", "Luke 8:2-3", "Exodus 20:8-10"]
+    },
+    {
+      "v": "2-3",
+      "context": "The stone is already rolled away, and when the women go in they do not find the body. Luke tells the absence first and the explanation afterward; for a moment the empty tomb is only a problem.",
+      "grammar": "Apokekulismenon is a perfect passive participle, ‘rolled away’ and remaining so, with no agent named. Ouch heuron to sōma, ‘they did not find the body’, turns on heuriskō, the same verb Luke uses for the finding in chapter 15; here the searchers find nothing. The title tou kuriou Iēsou, ‘of the Lord Jesus’, is the only place in the Gospel where the narrator joins the two words, a combination that becomes common in Acts (1:21, 4:33, 8:16).",
+      "words": ["G2147", "G3037", "G0617", "G3419", "G1525", "G4983", "G2962G", "G2424G"],
+      "text": "Codex Bezae and several Old Latin manuscripts read simply ‘the body’, without ‘of the Lord Jesus’. This is the first of eight places in Luke 22-24 where these Western witnesses have a shorter text; Brooke Foss Westcott and Fenton John Anthony Hort (1881) printed the shorter readings, calling them ‘Western non-interpolations’, on the view that here alone the usually expansive Western text had kept the original. Papyrus P75, copied around AD 200 and published in 1961, has the longer text in all eight places, and most editors now print it, though the SBL Greek New Testament (2010) still omits the phrase here.",
+      "refs": ["Acts 1:21", "Acts 4:33", "Luke 24:23"]
+    },
+    {
+      "v": "4-5",
+      "context": "Two men in dazzling clothing suddenly stand by the terrified women and ask why they look for the living among the dead. The question itself is the first announcement.",
+      "grammar": "Kai egeneto en tō aporeisthai autas, ‘and it happened while they were perplexed’, is Luke's Septuagint-style narrative opening (it imitates the Hebrew vayehi). Andres duo, ‘two men’, recalls the two men at the transfiguration, Moses and Elijah, who spoke of Jesus' departure (9:30-31), and anticipates the two men in white at the ascension (Acts 1:10). Esthēti astraptousē, ‘in clothing flashing like lightning’, uses a participle from astraptō, ‘to flash’. The question ti zēteite ton zōnta meta tōn nekrōn uses the present participle ton zōnta, ‘the living one’, set against nekrōn, ‘the dead’.",
+      "words": ["G0639", "G0435G", "G1417", "G2186", "G2066", "G0797", "G1719", "G2827", "G4383", "G2212", "G2198", "G3498"],
+      "history": "Luke has two messengers where Mark has one young man and Matthew one angel; John also has two angels. Deuteronomy 19:15 required two witnesses to establish a matter, and Luke's two figures here, like the two at the ascension, may carry that note of reliable testimony. The women bow their faces to the ground, the posture of people before a heavenly being (Daniel 10:9, 10:15).",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "‘The living one’ is the angels' title for Jesus. The hope the chapter gives is not a comforting memory of a dead teacher but the claim that he is alive, so that seeking him among the dead is simply looking in the wrong place."
+        }
+      ],
+      "parallels": ["Matthew 28:2-5", "Mark 16:5-6", "John 20:11-13"],
+      "refs": ["Luke 9:30-31", "Acts 1:10", "Deuteronomy 19:15", "Revelation 1:17-18"]
+    },
+    {
+      "v": "6-7",
+      "context": "The angels announce that Jesus is risen and tell the women to remember what he said in Galilee. Where Mark and Matthew send the disciples to Galilee, Luke points back to Galilee as the place of Jesus' teaching, since in Luke every appearance takes place in or near Jerusalem.",
+      "grammar": "Mnēsthēte (‘remember’) is an aorist imperative of mimnēskomai. The saying they are to remember is built on dei, ‘it is necessary’, the verb of God's plan in Luke (9:22, 17:25, 22:37, 24:26, 24:44), followed by three aorist infinitives: paradothēnai (‘to be handed over’), staurōthēnai (‘to be crucified’), and anastēnai (‘to rise’). The phrase ‘sinful men’ (anthrōpōn hamartōlōn) uses the same word, hamartōlos, that the Pharisees used of those Jesus welcomed (15:2): the one who ate with sinners is handed over to sinners.",
+      "words": ["G1453", "G3403", "G2980", "G1056G", "G5207", "G0444", "G1163", "G3860", "G5495", "G0268", "G4717", "G5154", "G2250", "G0450"],
+      "text": "Codex Bezae and some Old Latin manuscripts lack “He is not here; He has risen!” and some Latin copies substitute a phrase from Mark 16:6. This is another of the Western non-interpolations; P75, Sinaiticus, and Vaticanus have it. Some scholars thought it a harmonization with Mark and Matthew, but its wording (all' ēgerthē, ‘but he has been raised’) is not identical to either, which counts in favor of its originality.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The resurrection is presented as the fulfillment of Jesus' own words as well as the Scriptures'. Luke's pattern is that God's plan is announced, then carried out, then remembered and understood, and the women are the first to move from the second step to the third."
+        }
+      ],
+      "parallels": ["Matthew 28:6-7", "Mark 16:6-7"],
+      "refs": ["Luke 9:22", "Luke 9:44", "Luke 18:31-33", "John 2:22"]
+    },
+    {
+      "v": "8-10",
+      "context": "The women remember, return, and report everything to the Eleven and the rest. Luke names them only now, after their testimony: Mary Magdalene, Joanna, Mary the mother of James, and others with them.",
+      "grammar": "Emnēsthēsan tōn rhēmatōn autou, ‘they remembered his words’, uses the same verb as the command in verse 6: the women obey at once. Verse 10 opens ēsan de, ‘now they were’, and closes with elegon pros tous apostolous tauta, where the imperfect elegon suggests repeated or insistent telling. Luke calls the Eleven apostolous, ‘apostles’, a title he uses far more than the other evangelists.",
+      "words": ["G3403", "G4487", "G5290", "G0518", "G1733", "G3062", "G3094", "G2489", "G2385I", "G0652"],
+      "history": "Joanna was the wife of Chuza, the steward of Herod Antipas, and one of the women who supported Jesus from their own means (8:3); her presence shows followers reaching into Herod's household. Richard Bauckham (Gospel Women, 2002) proposed that she is the Junia whom Paul greets as prominent among the apostles (Romans 16:7), Junia being a Latin name a Jewish woman named Joanna might use; the suggestion is argued but not proven. Each Gospel's list of women differs: Mark names Mary Magdalene, Mary the mother of James, and Salome; Matthew, Mary Magdalene and ‘the other Mary’; John, Mary Magdalene alone. All four put Mary Magdalene first or alone.",
+      "parallels": ["Matthew 28:8", "Mark 16:8", "John 20:2"],
+      "refs": ["Luke 8:1-3", "Luke 23:49", "Luke 23:55", "Romans 16:7"]
+    },
+    {
+      "v": "11",
+      "context": "The apostles think the women's report is nonsense and do not believe them. Luke does not soften it; the first proclaimers of the resurrection are dismissed by the church's future leaders.",
+      "grammar": "Lēros, ‘idle talk, nonsense’, occurs only here in the New Testament; in Greek it describes silly or delirious chatter. Ephanēsan enōpion autōn hōsei lēros, ‘they appeared before them as nonsense’, puts the judgment in the apostles' perception. Ēpistoun is imperfect, ‘they kept disbelieving’, a settled unwillingness rather than a moment's doubt.",
+      "words": ["G5316", "G1799", "G5616", "G3026", "G4487", "G0569"],
+      "history": "In many settings of the ancient world women's testimony counted for less than men's; Josephus, for example, says women should not be admitted as witnesses (Antiquities 4.219), and the pagan critic Celsus, writing in the second century and quoted by Origen (Against Celsus 2.55), mocked the resurrection as resting on the word of a hysterical woman. Historians across the spectrum, from N. T. Wright to skeptics, often observe that a story shaped only to persuade would hardly have made women its first witnesses and the apostles its first doubters.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The apostles did not believe easily. Their faith in the resurrection came against their expectations and after they had rejected the first report, which is part of why Luke can present them as witnesses rather than as people who believed what they wished."
+        }
+      ],
+      "parallels": ["Mark 16:10-11"],
+      "refs": ["Mark 16:11", "Luke 24:22-24", "Luke 24:41", "Matthew 28:17"]
+    },
+    {
+      "v": "12",
+      "context": "Peter runs to the tomb, stoops to look in, sees only the linen cloths, and goes home wondering. The verse keeps Peter in view before the report in verse 34 that the Lord has appeared to him.",
+      "grammar": "Parakupsas (‘stooping to look in’), ta othonia (‘the linen strips’), and apēlthen pros heauton (‘he went away to his home’, or ‘went away, wondering to himself’) all appear in John's account of the disciples at the tomb (John 20:5, 20:10). Blepei (‘he sees’) is a historical present, a vivid past. Thaumazōn to gegonos, ‘marveling at what had happened’, uses a perfect participle for the completed event whose meaning he cannot yet grasp. The phrase pros heauton can go with ‘went away’ or with ‘wondering’, and translations divide on it.",
+      "words": ["G4074G", "G0450", "G5143", "G3419", "G3879", "G0991", "G3608", "G3441", "G0565", "G1438", "G2296", "G1096"],
+      "text": "Codex Bezae and the Old Latin omit the whole verse, and Westcott and Hort treated it as a Western non-interpolation, suspecting it had been borrowed from John 20. Papyrus P75, Sinaiticus, and Vaticanus contain it, and verse 24 (‘some of our companions went to the tomb’) presupposes a visit like it. Most scholars now regard it as original, with Luke and John drawing on a common tradition that John tells more fully with the beloved disciple beside Peter.",
+      "parallels": ["John 20:3-10"],
+      "refs": ["John 20:3-10", "Luke 24:24", "Luke 24:34", "1 Corinthians 15:5"]
+    },
+    {
+      "v": "13",
+      "context": "The same day, two disciples who are not among the Eleven walk to Emmaus. The scene that follows is found in full only in Luke, with a brief summary in the longer ending of Mark (16:12-13).",
+      "grammar": "Kai idou, ‘and behold’, opens a new scene in Luke's Septuagint manner. Ēsan poreuomenoi is a periphrastic imperfect, ‘they were going’, setting the walk in progress. Apechousan stadious hexēkonta, ‘being sixty stadia distant’, gives the distance in stadia, the Greek measure of about 185 meters (roughly 600 feet), so about 11 kilometers or 7 miles.",
+      "words": ["G2400", "G1417", "G2250", "G4198", "G2968", "G0568", "G4712", "G1835", "G2419", "G3686", "G1695"],
+      "history": "Four sites have been proposed. Emmaus Nicopolis (modern Imwas, near Latrun) is the town where Judas Maccabeus defeated the Seleucid general Gorgias (1 Maccabees 3:40, 4:3) and which was refounded as Nicopolis in the early third century after an embassy led by the Christian writer Julius Africanus; Eusebius's Onomasticon identifies it as Luke's Emmaus, but it lies about 160 stadia (roughly 30 km, 19 miles) from Jerusalem, a hard round trip in one afternoon and evening. El-Qubeibeh, about 63 stadia to the northwest, was identified by the Crusaders and has a Franciscan church. Abu Ghosh, on the road toward Jaffa, was another Crusader identification. Motza (Qaloniya) lies about 30 stadia west; Josephus says Vespasian settled 800 veterans at a place called Emmaus 30 stadia from Jerusalem (Jewish War 7.217), and some have suggested Luke's 60 stadia counts the walk there and back.",
+      "text": "Codex Sinaiticus, Codex Koridethi (Θ), and a few other witnesses read ‘one hundred sixty stadia’. The reading fits Emmaus Nicopolis, and a marginal note in two later minuscules connects it to that identification. Most scholars think it was introduced by copyists in Palestine, possibly in the circle of Eusebius and the Caesarean library, to match the Emmaus they knew; sixty stadia is the reading of P75, Vaticanus, Bezae, and the great majority.",
+      "parallels": ["Mark 16:12-13"],
+      "refs": ["Mark 16:12-13", "Luke 24:33", "John 11:18"]
+    },
+    {
+      "v": "14-16",
+      "context": "The two are discussing everything that has happened when Jesus himself comes near and walks with them, but they are prevented from recognizing him. The reader knows who he is; the characters do not, and the story's irony depends on that gap.",
+      "grammar": "Hōmiloun and suzētein describe conversation and debate (suzēteō, ‘to question together, argue’). Autos Iēsous, ‘Jesus himself’, is emphatic. Suneporeueto is an imperfect, ‘he was walking along with them’. In verse 16 ekratounto is an imperfect passive of krateō, ‘to hold fast, restrain’: their eyes ‘were being held’ so as not to recognize him. The passive with no stated agent is usually read as God's doing, and it is answered in verse 31 by the aorist passive diēnoichthēsan, ‘their eyes were opened’. Recognition, like blindness, is given.",
+      "words": ["G3656", "G0240", "G4819", "G4802", "G2424G", "G1448", "G4848", "G3788", "G2902", "G1921"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The disciples see Jesus and do not know him. Luke's story makes recognition of the risen Christ a gift that comes through the Scriptures and the breaking of bread, not something sight alone supplies."
+        }
+      ],
+      "refs": ["Luke 9:45", "Luke 18:34", "Luke 24:31", "John 20:14", "John 21:4"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus asks what they are discussing; they stop, faces downcast, and Cleopas asks whether he is the only visitor to Jerusalem who does not know what has happened. The one person who knows best is accused of knowing nothing.",
+      "grammar": "Tines hoi logoi houtoi hous antiballete, literally ‘what are these words that you are throwing back and forth?’, uses antiballō, found only here in the New Testament. Estathēsan skuthrōpoi, ‘they stood still, gloomy’, uses skuthrōpos, the word Jesus uses of hypocrites who look dismal when fasting (Matthew 6:16). Paroikeis, from paroikeō, ‘to live as a sojourner’, can mean a pilgrim staying in the city for the festival: ‘are you the only visitor in Jerusalem who does not know?’",
+      "words": ["G3056", "G0474", "G0240", "G4043", "G2476", "G4659", "G2810", "G3441", "G3939", "G2419", "G1097"],
+      "history": "Cleopas may be the Clopas whose wife Mary stood by the cross (John 19:25), since Clopas is a Semitic name and Cleopas a Greek one of similar sound. The second-century writer Hegesippus, quoted by Eusebius (Church History 3.11), says Clopas was the brother of Joseph and the father of Simeon, who led the Jerusalem church after James. Richard Bauckham (Jesus and the Eyewitnesses, 2006) argues that Luke names Cleopas because he was known as a source of the story. Some have suggested his unnamed companion was his wife; the text does not say.",
+      "text": "The King James Version, following the later manuscripts, reads ‘as ye walk, and are sad’, making the sadness part of Jesus' question. The earliest manuscripts read estathēsan, ‘they stood still’, making it narration: they stopped walking, their faces gloomy.",
+      "refs": ["John 19:25", "Matthew 6:16", "Luke 2:41-43"]
+    },
+    {
+      "v": "19-20",
+      "context": "The two summarize Jesus' life as they understood it: a prophet mighty in deed and word before God and the people, whom the chief priests and rulers handed over to be condemned to death and crucified. It is a true account that stops short of the truth.",
+      "grammar": "Anēr prophētēs dunatos en ergō kai logō, ‘a man, a prophet, powerful in deed and word’, uses almost exactly the description Stephen gives of Moses in Acts 7:22 (‘powerful in his words and deeds’). The phrase presents Jesus as the prophet like Moses. In verse 20 paredōkan, ‘they handed over’, is the verb of the passion predictions (9:44, 18:32, 24:7). Luke's pair hoi archiereis kai hoi archontes hēmōn, ‘our chief priests and rulers’, keeps the responsibility on the leaders and uses ‘our’, speaking as insiders.",
+      "words": ["G4169", "G2424G", "G3479", "G0435G", "G4396", "G1415", "G2041", "G3056", "G2992", "G3860", "G0749", "G0758", "G2917", "G2288", "G4717"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:15",
+          "note": "The Hebrew reads ‘The LORD your God will raise up for you a prophet like me from among you, from your brothers; to him you shall listen’, and the Septuagint follows it closely, ending autou akousesthe, ‘him you shall hear’. In its setting Moses promises Israel that God will keep speaking through prophets after him, so they need not turn to diviners. Luke echoes it at the transfiguration, where the voice from the cloud says ‘listen to him’ (9:35), and Peter and Stephen quote it outright of Jesus (Acts 3:22-23, 7:37). The Emmaus disciples' phrase ‘a prophet mighty in deed and word’ describes Jesus in Mosaic terms without yet seeing that the prophet like Moses must also suffer."
+        }
+      ],
+      "refs": ["Acts 7:22", "Acts 2:22", "Luke 7:16", "Luke 13:33"]
+    },
+    {
+      "v": "21",
+      "context": "The heart of their grief: they had hoped Jesus was the one to redeem Israel. And now it is the third day since it all happened, a remark that tells the reader more than the speakers know.",
+      "grammar": "Hēmeis de ēlpizomen, ‘but we were hoping’, is imperfect: a hope held over time and now, they think, finished. Ho mellōn lutrousthai ton Israēl, ‘the one about to redeem Israel’, uses lutroō, ‘to ransom, set free by paying a price’, the verb of the exodus and of Isaiah's promises of return from exile. The second half piles up particles, alla ge kai sun pasin toutois, ‘but indeed, besides all this’, and tritēn tautēn hēmeran agei, literally ‘this is bringing a third day’, an idiomatic impersonal expression.",
+      "words": ["G1679", "G3195", "G3084", "G2474", "G0235", "G1065", "G5154", "G2250", "G0071"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The hope of Israel's redemption runs through Luke's opening chapters (1:68, 2:38). The disciples' hope was not wrong but too small; Acts continues to speak of the hope of Israel (Acts 28:20) while showing that it is fulfilled through the suffering and rising of the Messiah and extends to the nations."
+        }
+      ],
+      "refs": ["Luke 1:68", "Luke 2:38", "Acts 1:6", "Isaiah 44:24", "Titus 2:14"]
+    },
+    {
+      "v": "22-24",
+      "context": "They report the women's visit to the tomb, the vision of angels, and the companions who confirmed the empty tomb but did not see him. They have every piece of evidence except the living Jesus, who is walking beside them.",
+      "grammar": "Exestēsan hēmas, ‘they astounded us’, is from existēmi, ‘to put out of one's senses’. Genomenai orthrinai, ‘having been at the tomb early’, uses an adjective as an adverb of time. Optasian angelōn heōrakenai, ‘to have seen a vision of angels’, uses optasia, the word for Zechariah's vision in the temple (1:22): the Gospel's first and last appearances of angels are both called visions. The report of the companions ends on its sharpest words, auton de ouk eidon, ‘but him they did not see’, with auton (‘him’) placed first for emphasis.",
+      "words": ["G1135G", "G1839", "G3720", "G3419", "G4983", "G3701", "G0032G", "G3708", "G2198", "G0565", "G2531", "G1492H"],
+      "refs": ["Luke 1:22", "Luke 24:1-12", "Luke 24:12", "John 20:3-10"]
+    },
+    {
+      "v": "25-26",
+      "context": "Jesus rebukes them for slowness to believe all the prophets said, and asks whether it was not necessary for the Messiah to suffer and so enter his glory. The question joins the two things they could not hold together.",
+      "grammar": "Ō anoētoi kai bradeis tē kardia, ‘O foolish and slow of heart’, uses anoētos, ‘without understanding’ (the word Paul uses for the Galatians, Galatians 3:1), and bradus, ‘slow’, with kardia, the seat of thought and will. Epi pasin hois elalēsan hoi prophētai, ‘in all that the prophets spoke’, stresses ‘all’: they believed the promises of glory but not the parts about suffering. Ouchi tauta edei pathein ton christon, ‘was it not necessary for the Messiah to suffer these things?’, uses edei again, and the two infinitives pathein and eiselthein (‘to suffer’ and ‘to enter’) are joined in one necessity.",
+      "words": ["G0453", "G1021", "G2588", "G4100", "G4396", "G3780", "G1163", "G3958", "G5547", "G1525", "G1391"],
+      "ot": [
+        {
+          "ref": "Isaiah 52:13-53:12",
+          "note": "No prophet uses the phrase ‘the Messiah must suffer’, and Jewish interpreters of the period did not generally expect a suffering Messiah. The pattern of suffering followed by glory is clearest in Isaiah's fourth Servant Song, which opens with the servant exalted and lifted up (52:13), describes him despised, wounded for others' transgressions, and cut off (53:3-8), and ends with his receiving a portion with the great (53:12). Luke has Jesus quote 53:12 at the Last Supper in a form close to the Septuagint (Luke 22:37), and Acts 8:32-33 quotes 53:7-8. Luke's word ‘glory’ (doxa) matches the Septuagint of 52:13, where the servant ‘will be glorified exceedingly’."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Glory comes through suffering, not around it. The necessity Jesus names is not fate but God's plan written beforehand, in which the Messiah's path to his throne runs through the cross (Philippians 2:8-9, 1 Peter 1:11)."
+        },
+        {
+          "id": "atonement",
+          "note": "The suffering is not an accident that God overcame. Jesus says it was necessary, which is Luke's way of saying the cross belongs to God's saving purpose, the purpose Jesus had named at the Supper when he spoke of his body given and blood poured out (22:19-20)."
+        }
+      ],
+      "refs": ["Luke 9:22", "Luke 22:37", "Acts 3:18", "1 Peter 1:10-11", "Galatians 3:1"]
+    },
+    {
+      "v": "27",
+      "context": "Beginning with Moses and all the Prophets, Jesus interprets to them the things about himself in all the Scriptures. Luke does not say which passages he used; the sermons in Acts, which Luke also wrote, show which ones his first readers learned to read this way.",
+      "grammar": "Arxamenos apo Mōuseōs kai apo pantōn tōn prophētōn, ‘beginning from Moses and from all the prophets’, names the Law and the Prophets as the starting point, and pasais tais graphais, ‘all the Scriptures’, widens it. Diermēneusen (‘he interpreted, explained’) is the aorist of diermēneuō, used elsewhere for translating a language (Acts 9:36, 1 Corinthians 12:30). The reflexive ta peri heautou, ‘the things concerning himself’, makes Jesus both the teacher and the subject of the lesson.",
+      "words": ["G0757", "G3475", "G4396", "G1329", "G1124", "G1438"],
+      "ot": [
+        {
+          "ref": "Genesis 22:18",
+          "note": "Peter's second sermon cites God's promise to Abraham, ‘in your seed all the families of the earth will be blessed’ (Acts 3:25), and applies the seed to Jesus. The Hebrew of Genesis 22:18 has ‘all the nations of the earth’ with a reflexive or passive verb (‘will bless themselves’ or ‘be blessed’); the Septuagint reads the passive, eneulogēthēsontai. Acts uses patriai, ‘families’, blending in Genesis 12:3, which has ‘families’ in Hebrew. This is Luke's clearest example of a text from Moses read as pointing to Jesus."
+        },
+        {
+          "ref": "Deuteronomy 18:15-19",
+          "note": "Luke's other clearest use of Moses. Peter (Acts 3:22-23) and Stephen (Acts 7:37) quote the promise of a prophet like Moses, Peter joining it to a warning drawn from Leviticus 23:29 that anyone who will not listen will be cut off. The Septuagint follows the Hebrew closely. See the note at verses 19-20."
+        },
+        {
+          "ref": "Isaiah 53:7-8",
+          "note": "In Acts 8:32-33 the Ethiopian official is reading this passage when Philip explains it as the good news about Jesus, a scene that repeats Emmaus in miniature: a traveler, a Scripture not understood, an interpreter, and recognition. The quotation follows the Septuagint, which differs from the Hebrew: where the Hebrew says ‘by oppression and judgment he was taken away’, the Greek has ‘in his humiliation his judgment was taken away’. Luke's use depends on the lamb led to slaughter in silence and on a life ‘taken from the earth’."
+        },
+        {
+          "ref": "Genesis 3:15",
+          "note": "The New Testament never quotes this verse directly (Romans 16:20 may allude to it), but from the second century Christian writers read the woman's offspring who crushes the serpent's head as the first announcement of Christ, Irenaeus most fully (Against Heresies 5.21.1). The Hebrew zera, ‘offspring’, is a collective noun, and the Septuagint's masculine pronoun autos (‘he’), referring back to the neuter sperma, was later taken to point to one person. Whether this is what Jesus began with ‘from Moses’ Luke does not say; it is the church's traditional reading, not Luke's stated text."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The risen Jesus teaches that the Old Testament as a whole, not a few proof texts, bears witness to him. The church learned its way of reading Israel's Scriptures from this lesson, which is why the apostolic sermons in Acts argue from Moses, the Prophets, and the Psalms."
+        }
+      ],
+      "refs": ["John 5:39", "John 5:46", "Acts 3:22-25", "Acts 8:30-35", "Acts 26:22-23"]
+    },
+    {
+      "v": "28-29",
+      "context": "At the village Jesus acts as though he will go on, and they press him to stay because evening is coming. The invitation is ordinary hospitality, and it is what gives them the meal where they know him.",
+      "grammar": "Prosepoiēsato porrōteron poreuesthai, ‘he acted as though he would go farther’, uses prospoieomai, ‘to make as if’, found only here in the New Testament. The phrase does not imply deception so much as courtesy: he does not impose himself. Parebiasanto, from parabiazomai, ‘to urge strongly’, is the verb Luke uses for Lydia's insistence that Paul stay with her (Acts 16:15). Meinon meth' hēmōn, ‘stay with us’, and the reason, pros hesperan estin kai kekliken ēdē hē hēmera, ‘it is toward evening and the day has already declined’, use a perfect of klinō, ‘to bend, decline’.",
+      "words": ["G1448", "G2968", "G4198", "G4364", "G4206", "G3849", "G3306", "G2073", "G2827", "G2250", "G1525"],
+      "refs": ["Genesis 18:3-5", "Genesis 19:2-3", "Acts 16:15", "Hebrews 13:2", "Revelation 3:20"]
+    },
+    {
+      "v": "30-31",
+      "context": "At table the guest takes the host's part: he takes bread, blesses, breaks, and gives it. Their eyes are opened, they know him, and he vanishes.",
+      "grammar": "The four verbs labōn, eulogēsen, klasas, epedidou (‘taking, he blessed, broke, and was giving’) are the same sequence Luke uses at the feeding of the five thousand (9:16) and the Last Supper (22:19). The last is an imperfect, catching the act in progress at the moment of recognition. Diēnoichthēsan hoi ophthalmoi, ‘the eyes were opened’, is an aorist passive with no stated agent, answering the passive of verse 16. Aphantos egeneto ap' autōn, ‘he became invisible from them’, uses aphantos, found only here in the New Testament.",
+      "words": ["G2625", "G2983", "G0740", "G2127", "G2806", "G1929", "G1272", "G3788", "G1921", "G0855"],
+      "ot": [
+        {
+          "ref": "Genesis 3:7",
+          "note": "The Septuagint of Genesis 3:7 says of the man and the woman after they ate, kai diēnoichthēsan hoi ophthalmoi tōn duo, ‘and the eyes of the two were opened’, the same verb, form, and noun as Luke's. There, eating what was forbidden opened eyes to shame; here, eating what Jesus gives opens the eyes of two disciples to the risen Lord. Luke gives no signal of the allusion, and some commentators doubt it, but the verbal match is exact, and it fits Luke's theme of a new beginning. Other openings of eyes in Scripture (2 Kings 6:17, where Elisha's servant sees the hills full of horses and chariots of fire) show God granting sight of what is already present."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Christians differ on whether this meal is the Lord's Supper. Catholic, Orthodox, and many Anglican and Lutheran interpreters read it as eucharistic, pointing to the verbs of 22:19 and to ‘the breaking of bread’ in Acts 2:42. Many evangelical interpreters see an ordinary evening meal in which Jesus' familiar gesture gives him away. Both readings agree that Christ makes himself known at the table."
+        }
+      ],
+      "refs": ["Luke 9:16", "Luke 22:19", "Acts 2:42", "2 Kings 6:17", "Genesis 3:7"]
+    },
+    {
+      "v": "32",
+      "context": "Looking back, the two realize their hearts were burning while he spoke on the road and opened the Scriptures to them. Recognition at the table explains the experience on the road.",
+      "grammar": "Ouchi hē kardia hēmōn kaiomenē ēn, ‘was not our heart burning?’, is a periphrastic imperfect with a present passive participle of kaiō, ‘to burn’, describing a continuing state. Kardia is singular, ‘our heart’, one experience shared. The two clauses hōs elalei hēmin and hōs diēnoigen hēmin tas graphas (‘as he was speaking to us’ and ‘as he was opening the Scriptures to us’) are parallel imperfects, and dianoigō is the same verb used of their eyes in verse 31 and of the disciples' minds in verse 45: Jesus opens Scripture, eyes, and minds.",
+      "words": ["G2588", "G2545", "G1510", "G2980", "G3598", "G1272", "G1124"],
+      "text": "The words ‘within us’ are missing from P75, Vaticanus, and Codex Bezae, and some editions omit them. Codex Bezae has a stranger difference: instead of kaiomenē, ‘burning’, it reads kekalummenē, ‘veiled’, and some Old Latin copies have ‘blinded’, turning the question into ‘was not our heart veiled?’, a reference to their failure to recognize him. The ‘burning’ reading is overwhelmingly attested.",
+      "ot": [
+        {
+          "ref": "Jeremiah 20:9",
+          "note": "Jeremiah says that when he tried not to speak God's word, it was in his heart like a burning fire shut up in his bones. The Hebrew has kaesh boeret, ‘like a burning fire’, and the Septuagint keeps the image of fire burning in his bones. Psalm 39:3 (‘my heart grew hot within me… the fire burned’) uses the image similarly, and the Septuagint there (38:4) has ekkauthēsetai, from the same root as Luke's kaiō. Neither is quoted, but both show that a burning heart was biblical language for being gripped by God's word."
+        }
+      ],
+      "refs": ["Jeremiah 20:9", "Psalm 39:3", "Luke 24:45", "2 Corinthians 3:14-16"]
+    },
+    {
+      "v": "33-35",
+      "context": "At once they walk back to Jerusalem, where the Eleven and others greet them with the news that the Lord has risen and appeared to Simon. Then the two tell their story. The confirmation of the apostles comes before the testimony of the two.",
+      "grammar": "Autē tē hōra, ‘that very hour’, stresses immediacy despite the late hour. Ēthroismenous is a perfect passive participle, ‘gathered together’. The greeting “The Lord has indeed risen and has appeared to Simon!” uses ontōs, ‘really, truly’, and ōphthē Simōni, an aorist passive of horaō with the dative, ‘he appeared to Simon’, literally ‘was seen by Simon’. This is the formula of the early creed Paul quotes in 1 Corinthians 15:5, ōphthē Kēpha, ‘he appeared to Cephas’, Cephas being the Aramaic form of Peter's name. In verse 35 egnōsthē autois en tē klasei tou artou, ‘he was made known to them in the breaking of the bread’, is another passive with God as the implied agent.",
+      "words": ["G0450", "G5610", "G5290", "G2419", "G2147", "G6003", "G1733", "G3689", "G1453", "G2962G", "G3700H", "G4613O", "G1834", "G3598", "G1097", "G2800", "G0740"],
+      "history": "No Gospel narrates the appearance to Peter alone. It is known only from this verse and Paul's list in 1 Corinthians 15:3-8, which Paul says he received and passed on, and which many scholars date to within a few years of the crucifixion. Luke's placement of it before the appearance to the Eleven matches Paul's order, ‘to Cephas, then to the Twelve’.",
+      "parallels": ["Mark 16:13"],
+      "refs": ["1 Corinthians 15:3-5", "Mark 16:7", "Acts 2:42", "Luke 22:31-32"]
+    },
+    {
+      "v": "36-37",
+      "context": "While they are still speaking, Jesus stands among them and greets them with peace. They are terrified and think they are seeing a spirit.",
+      "grammar": "Tauta de autōn lalountōn, ‘while they were saying these things’, is a genitive absolute: he appears in the middle of the conversation. Autos estē en mesō autōn, ‘he himself stood in their midst’, makes Jesus the subject with emphasis. Eirēnē humin, ‘peace to you’, is the ordinary Hebrew greeting shalom alekhem rendered in Greek, and John has the identical words (John 20:19). Ptoēthentes kai emphoboi genomenoi, ‘startled and terrified’, doubles the fear. Edokoun pneuma theōrein, ‘they thought they were seeing a spirit’, uses pneuma for the ghost of a dead person.",
+      "words": ["G2980", "G2476", "G3319", "G1515", "G4422", "G1719", "G1380", "G4151G", "G2334"],
+      "text": "Codex Bezae and some Old Latin copies omit ‘and said to them, Peace be with you’, and the SBL Greek New Testament (2010) follows them; most editions include it with P75, Sinaiticus, and Vaticanus. Some suspect a borrowing from John 20:19, but the greeting is found in the earliest witnesses. In verse 37 Codex Bezae reads phantasma, ‘phantom’, the word the disciples used when Jesus walked on the water (Mark 6:49), in place of pneuma.",
+      "parallels": ["Mark 16:14", "John 20:19-20"],
+      "refs": ["John 20:19", "Mark 6:49", "John 14:27", "Acts 10:40-41"]
+    },
+    {
+      "v": "38-40",
+      "context": "Jesus answers their fear with his body: look at my hands and feet, it is I myself; touch me and see, for a spirit does not have flesh and bones. Then he shows them his hands and feet.",
+      "grammar": "Ti tetaragmenoi este, ‘why are you troubled?’, uses a perfect passive participle for a state of agitation, and dialogismoi anabainousin, ‘doubts rise up’, pictures questions surfacing in the heart. Hoti egō eimi autos, ‘that it is I myself’, puts two emphatic pronouns together. Psēlaphēsate, an aorist imperative of psēlaphaō, ‘to touch, handle’, is the verb in 1 John 1:1 (‘what our hands have handled’). Sarka kai ostea, ‘flesh and bones’, is a biblical pair for a real body (Genesis 2:23). The hands and feet would show the nail wounds; Luke does not mention the side, which John does (John 20:20).",
+      "words": ["G5015", "G1261", "G0305", "G2588", "G1492H", "G5495", "G4228", "G1473", "G5584", "G4151G", "G4561", "G3747", "G2334", "G1166"],
+      "history": "Ignatius of Antioch, writing about AD 110 (To the Smyrnaeans 3), reports that after the resurrection Jesus told Peter and those with him to take hold of him and see that he was not a demon without a body, and says they touched him and believed. Ignatius wrote against Docetists, who taught that Christ only seemed to have a body. Jerome later attributed Ignatius's saying to a Jewish-Christian Gospel. Luke's account answers the same question: the risen Jesus is not a ghost.",
+      "text": "Verse 40 is missing from Codex Bezae, some Old Latin copies, and the Curetonian and Sinaitic Syriac, and Westcott and Hort treated it as a Western non-interpolation, suspecting it came from John 20:20. P75 and almost all other manuscripts include it, and the wording differs from John's (‘hands and feet’ here, ‘hands and side’ there), which tells against borrowing.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The risen Jesus has flesh and bones and bears the marks of the cross. The church's confession of the resurrection of the body rests on this continuity: the one who was crucified is raised in the same body, now transformed, not replaced by a spirit."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Son did not shed his humanity at the resurrection. His body remains human and wounded, which is why the church confesses that Christ ascended and reigns as a man, the one mediator between God and humanity (1 Timothy 2:5)."
+        }
+      ],
+      "parallels": ["John 20:20", "John 20:27"],
+      "refs": ["1 John 1:1", "John 20:27", "Genesis 2:23", "1 Corinthians 15:42-44", "Philippians 3:21"]
+    },
+    {
+      "v": "41-43",
+      "context": "They still cannot believe for joy and wonder, so he asks for food, takes a piece of broiled fish, and eats it in front of them. Eating is the final proof that he is not a ghost.",
+      "grammar": "Apistountōn autōn apo tēs charas, ‘while they were disbelieving for joy’, uses apo for cause: their disbelief is the incredulity of people who cannot believe good news this good. Luke uses the same construction when the disciples in Gethsemane sleep ‘from sorrow’ (22:45). Echete ti brōsimon enthade, ‘have you anything to eat here?’, is a plain question. In verse 43 enōpion autōn ephagen, ‘he ate before them’, places the phrase ‘before them’ first: the eating was done to be seen.",
+      "words": ["G2089", "G0569", "G5479", "G2296", "G2192", "G1034", "G1759", "G1929", "G2486", "G3702", "G3313", "G2983", "G1799", "G5315"],
+      "text": "The later Byzantine manuscripts and the King James Version add ‘and of an honeycomb’ after the fish. The earliest manuscripts lack it; Bruce Metzger suggested it entered from early Christian practice, in which honey was part of some baptismal and communion rites.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The risen Jesus eats. Christian hope is not the escape of souls from bodies but the renewal of bodily life, and the Scriptures' picture of the age to come is a feast (Isaiah 25:6-8, Luke 13:29)."
+        }
+      ],
+      "refs": ["Luke 22:45", "Acts 10:41", "John 21:9-13", "Isaiah 25:6-8"]
+    },
+    {
+      "v": "44",
+      "context": "Jesus ties his resurrection to his earlier teaching and to Scripture as a whole: everything written about him in the Law of Moses, the Prophets, and the Psalms must be fulfilled.",
+      "grammar": "Houtoi hoi logoi mou, ‘these are my words’, points back to his predictions. Eti ōn sun humin, ‘while I was still with you’, speaks as though his presence with them has already changed in kind. Dei plērōthēnai panta ta gegrammena, ‘all the things written must be fulfilled’, combines the divine dei with a perfect passive participle (gegrammena, ‘having been written and still standing written’). The three-part list en tō nomō Mōuseōs kai tois prophētais kai psalmois is the only place in the New Testament where the Psalms are named alongside the Law and the Prophets.",
+      "words": ["G3056", "G2980", "G2089", "G1163", "G4137", "G1125", "G3551", "G3475", "G4396", "G5568"],
+      "history": "The threefold division of Israel's Scriptures appears in the prologue to Sirach (about 132 BC), which speaks of the Law, the Prophets, and the other books, and in the Dead Sea Scroll 4QMMT, which refers to the book of Moses, the books of the Prophets, and David. Philo (On the Contemplative Life 25) describes the Therapeutae reading laws, oracles given through prophets, and psalms. The rabbinic canon names the third part Ketuvim, the Writings, with the Psalms first; ‘the Psalms’ here stands either for that section or for the Psalter itself, the book the New Testament quotes most often.",
+      "ot": [
+        {
+          "ref": "Psalm 16:8-11",
+          "note": "Peter in Acts 2:25-28 and Paul in Acts 13:35 argue from this psalm. The Hebrew of verse 10 reads ‘you will not let your faithful one see the pit (shachat)’; the Septuagint renders shachat as diaphthora, ‘decay’, and the apostles argue from the Greek that David died and decayed, so the psalm speaks of one who did not. The Hebrew noun can mean pit or grave; the argument does not depend on the Greek alone, since both say God will not abandon his faithful one to death."
+        },
+        {
+          "ref": "Psalm 110:1",
+          "note": "Jesus himself asked in Luke 20:41-44 how David could call the Messiah ‘lord’, quoting the Septuagint's eipen ho kurios tō kuriō mou, ‘the Lord said to my Lord’, which renders the Hebrew ‘the oracle of the LORD to my lord’. Peter uses it at Pentecost (Acts 2:34-35) to argue that Jesus, not David, ascended to God's right hand. The psalm's command, ‘sit at my right hand’, is what verse 51's ascension carries out."
+        },
+        {
+          "ref": "Psalm 118:22",
+          "note": "‘The stone the builders rejected has become the cornerstone’. Luke quotes it word for word from the Septuagint, which follows the Hebrew closely, at the end of the parable of the tenants (20:17), and Peter applies it to the resurrection before the council (Acts 4:11), using exoutheneō, ‘despise’, for the Septuagint's apodokimazō, ‘reject’. The psalm was sung at Passover as part of the Hallel, which gives it an obvious setting in the week of the passion."
+        },
+        {
+          "ref": "Psalm 2:7",
+          "note": "‘You are my Son; today I have begotten you’. In the Hebrew and the Septuagint alike, the words belong to the coronation of Israel's king. Paul in Acts 13:33 reads them of the resurrection, the day God declared Jesus his Son with power (compare Romans 1:4), and the voice at Jesus' baptism in Luke 3:22 echoes the first half."
+        },
+        {
+          "ref": "Psalm 31:5",
+          "note": "Jesus' last words on the cross in Luke, ‘Father, into your hands I commit my spirit’ (23:46), are this line of the psalm with ‘Father’ added. The Hebrew beyadekha afqid ruchi, ‘into your hand I commit my spirit’, is rendered in the Septuagint (30:6) with a future, parathēsomai; Luke has the present, paratithemai. Luke's passion narrative also alludes to Psalm 22 in the dividing of the garments (23:34, Psalm 22:18) and the mocking (23:35, Psalm 22:7). The Psalms Jesus prayed on the cross are among the Psalms he now says were written about him."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus names all three parts of Israel's Scriptures and claims that each speaks of him. The verse is the basis for reading the Old Testament as one witness with a single center, while each passage keeps its own setting and voice."
+        },
+        {
+          "id": "prophecy",
+          "note": "‘Must be fulfilled’ covers promises, patterns, and prayers, not predictions only. The Psalms, which are mostly prayers, are fulfilled when the Messiah prays them and lives them out, which is a fuller sense of fulfillment than prediction and outcome."
+        }
+      ],
+      "refs": ["Luke 18:31", "Luke 22:37", "Matthew 5:17", "Acts 13:32-35", "Romans 1:2-4"]
+    },
+    {
+      "v": "45-46",
+      "context": "Jesus opens their minds to understand the Scriptures and states what is written: the Messiah will suffer and rise from the dead on the third day. What he did for two on the road he now does for the whole group.",
+      "grammar": "Tote diēnoixen autōn ton noun, ‘then he opened their mind’, uses dianoigō for the third time (verses 31, 32, 45). Tou sunienai tas graphas is a purpose infinitive, ‘so that they might understand the Scriptures’. Houtōs gegraptai, ‘thus it is written’, is the standard formula for citing Scripture, a perfect passive meaning ‘it stands written’. The content follows as infinitives, pathein ton christon kai anastēnai ek nekrōn tē tritē hēmera, ‘that the Messiah suffer and rise from the dead on the third day’.",
+      "words": ["G5119", "G1272", "G3563", "G4920", "G1124", "G3779", "G1125", "G3958", "G5547", "G0450", "G3498", "G5154", "G2250"],
+      "ot": [
+        {
+          "ref": "Hosea 6:2",
+          "note": "No Old Testament text says in so many words that the Messiah will rise on the third day, and Luke does not name one. Hosea 6:2 is the nearest verbal match: the Hebrew says ‘after two days he will revive us; on the third day he will raise us up (yeqimenu)’, and the Septuagint renders the last clause ‘on the third day we shall rise (anastēsometha)’, using the verb Luke uses here. In context it is Israel's hopeful, and perhaps shallow, prayer of repentance, and it speaks of the people, not one person. Christian writers from the early centuries applied it to Christ; many modern interpreters think the early church had it in mind, since Jesus represents Israel, while others doubt that it lies behind the phrase at all."
+        },
+        {
+          "ref": "Jonah 1:17",
+          "note": "Jonah was in the fish three days and three nights; the Hebrew and Septuagint agree. Matthew 12:40 makes this a sign of the Son of Man's three days in the earth. Luke's form of the sign of Jonah (11:29-32) makes Jonah's preaching to Nineveh the sign and does not mention the three days, so it is less likely to be Luke's source here, though it belongs to the wider New Testament background of ‘the third day’."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The resurrection is not added to the suffering as a happy ending; both belong to what is written. Paul's early creed has the same pair and the same reference to Scripture: Christ died for our sins according to the Scriptures and was raised on the third day according to the Scriptures (1 Corinthians 15:3-4)."
+        }
+      ],
+      "refs": ["Luke 24:32", "Luke 9:22", "Acts 16:14", "1 Corinthians 15:3-4", "Acts 17:2-3"]
+    },
+    {
+      "v": "47-48",
+      "context": "The written plan continues past the resurrection: repentance and forgiveness of sins are to be proclaimed in his name to all nations, beginning from Jerusalem, and the disciples are witnesses. The outline of Acts is here in a sentence.",
+      "grammar": "Kēruchthēnai, an aorist passive infinitive, still depends on ‘thus it is written’ in verse 46, so the mission to the nations is part of what Scripture foretold, not only the suffering and rising. Epi tō onomati autou, ‘in his name’, means on his authority and by calling on him (Acts 2:38, 4:12). Arxamenoi apo Ierousalēm, ‘beginning from Jerusalem’, is a nominative participle loosely attached, a common construction in Luke. Humeis martures toutōn, ‘you are witnesses of these things’, has no verb; the emphatic humeis (‘you’) makes the statement a commission.",
+      "words": ["G2784", "G3686", "G3341", "G0859", "G0266", "G1484", "G0757", "G2419", "G3144"],
+      "text": "The earliest manuscripts, P75, Sinaiticus, and Vaticanus, read metanoian eis aphesin hamartiōn, ‘repentance for the forgiveness of sins’, the phrase used of John's baptism (3:3). Codex Alexandrinus, Bezae, and the later Byzantine copies read metanoian kai aphesin, ‘repentance and forgiveness’, which the BSB and most English Bibles follow. The difference is whether forgiveness is the result of repentance or a second element of the message.",
+      "ot": [
+        {
+          "ref": "Isaiah 49:6",
+          "note": "The Hebrew reads ‘I will also make you a light for the nations, that my salvation may reach to the end of the earth’, spoken to the Servant, whose mission is to restore Israel and then reach the nations. The Septuagint says ‘I have given you for a covenant of the people, for a light of the nations, to be for salvation to the end of the earth’. Simeon echoed it over the infant Jesus (2:32), Paul and Barnabas quote it as their commission (Acts 13:47), and Acts 1:8, ‘to the ends of the earth’, uses the Septuagint's exact phrase heōs eschatou tēs gēs. It is the clearest Old Testament source for ‘to all nations’."
+        },
+        {
+          "ref": "Genesis 12:3",
+          "note": "God's promise that all the families of the earth would be blessed in Abraham stands behind the mission to the nations throughout Luke-Acts. The Hebrew mishpechot, ‘families’, becomes phulai, ‘tribes’, in the Septuagint; Acts 3:25 uses patriai, ‘families’. See the note on Genesis 22:18 at verse 27."
+        }
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The mission belongs to the same necessity as the cross. The church does not decide to evangelize the nations as a strategy; the Scriptures and the risen Lord assign it, and it begins in the city that rejected him."
+        },
+        {
+          "id": "repentance",
+          "note": "The message to the nations is repentance and forgiveness in Jesus' name. The pairing of turning and pardon, preached first by John (3:3) and then by Jesus, becomes the content of the apostolic proclamation in Acts (2:38, 3:19, 26:20)."
+        }
+      ],
+      "refs": ["Luke 3:3", "Acts 1:8", "Acts 2:38", "Acts 10:39-43", "Acts 13:47"]
+    },
+    {
+      "v": "49",
+      "context": "Jesus promises to send what the Father promised and tells them to stay in the city until they are clothed with power from on high. Acts 1:4-8 repeats the promise and Acts 2 fulfills it at Pentecost.",
+      "grammar": "Kai idou egō apostellō, ‘and look, I am sending’, uses a present tense for an imminent certain future and makes Jesus the sender of the Father's promise, the same pattern John uses (John 15:26). Tēn epangelian tou patros mou, ‘the promise of my Father’, is a phrase Luke explains in Acts 1:4-5 as the Holy Spirit. Kathisate en tē polei, ‘stay in the city’, is an aorist imperative. Heōs hou endusēsthe ex hupsous dunamin, ‘until you are clothed with power from on high’, uses enduō, ‘to put on clothing’, a biblical image for the Spirit coming on a person (Judges 6:34, where the Spirit ‘clothed’ Gideon).",
+      "words": ["G2400", "G0649", "G1860", "G3962", "G2523", "G4172", "G1746", "G5311", "G1411"],
+      "ot": [
+        {
+          "ref": "Isaiah 32:15",
+          "note": "The Hebrew promises desolation ‘until the Spirit is poured upon us from on high (mimmarom)’, after which the wilderness becomes a fruitful field and justice and peace dwell in the land. The Septuagint reads heōs an epelthē eph' humas pneuma aph' hupsēlou, ‘until a spirit from on high comes upon you’. Luke's ‘from on high’ and, even more, Acts 1:8, ‘when the Holy Spirit has come upon you’ (epelthontos tou hagiou pneumatos eph' humas), follow the Septuagint's wording closely. The promise of the Spirit is the promise of the new age of restoration."
+        },
+        {
+          "ref": "Joel 2:28-32",
+          "note": "Peter explains Pentecost by quoting this passage (Acts 2:17-21), calling the Spirit what the Father had promised (Acts 2:33, 2:39). The Hebrew has ‘afterward I will pour out my Spirit on all flesh’; Peter's form, following and adapting the Septuagint, has ‘in the last days’. Joel's promise that everyone who calls on the name of the LORD will be saved is the text that joins the Spirit to the proclamation in Jesus' name."
+        }
+      ],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The witnesses are not sent in their own strength. The Spirit is the Father's promise, sent by the risen Son, and given as power for witness; the Trinitarian shape of the church's mission is already present in the Gospel's last words."
+        }
+      ],
+      "refs": ["Acts 1:4-8", "Acts 2:33", "Judges 6:34", "John 15:26", "Luke 3:16"]
+    },
+    {
+      "v": "50-51",
+      "context": "Jesus leads them out to the vicinity of Bethany, lifts his hands, and blesses them; while he is blessing them he parts from them and is carried up into heaven. The Gospel that opened with a priest in the temple unable to speak a blessing (1:21-22) closes with Jesus blessing his people.",
+      "grammar": "Exēgagen autous, ‘he led them out’, is the verb used in the Septuagint for God leading Israel out of Egypt, though here it is used in its ordinary sense. Eparas tas cheiras autou eulogēsen autous, ‘lifting up his hands he blessed them’, has an aorist participle and aorist verb. Kai egeneto en tō eulogein auton autous, ‘and it happened while he was blessing them’, uses a present infinitive: he departs mid-blessing, so the blessing is his last act and remains over them. Diestē (‘he parted’) is aorist, and anephereto (‘he was being carried up’) is an imperfect passive, describing the ascent as a process.",
+      "words": ["G1806", "G1854", "G0963", "G1869", "G5495", "G2127", "G1339", "G0399", "G3772"],
+      "history": "Bethany lay on the eastern slope of the Mount of Olives, about fifteen stadia (under two miles) from Jerusalem (John 11:18). Acts 1:12 places the ascension on the Mount of Olives, so the two accounts agree on the area. Acts also places it forty days after the resurrection (Acts 1:3), while this chapter reads as though everything happens on one day; most interpreters think Luke compresses the timeline here and spreads it out in Acts, where the forty days serve his second volume's purposes.",
+      "ot": [
+        {
+          "ref": "Leviticus 9:22",
+          "note": "After the first offerings at the tabernacle, ‘Aaron lifted up his hands toward the people and blessed them’. The Septuagint reads exaras tas cheiras epi ton laon eulogēsen autous, almost identical to Luke's eparas tas cheiras autou eulogēsen autous. Sirach 50:20-22 describes the high priest Simon, after the temple service, lifting his hands over the congregation to pronounce the blessing, while the people bow in worship. Luke ends his Gospel with Jesus in the posture of Israel's high priest and the people worshiping, the ending the Gospel's first scene could not reach when Zechariah came out unable to speak (1:21-22)."
+        }
+      ],
+      "text": "Codex Sinaiticus in its original hand, Codex Bezae, and some Old Latin copies lack ‘and was carried up into heaven’. Westcott and Hort omitted it as a Western non-interpolation. Some scholars suggested scribes cut it to avoid a clash with Acts 1, where the ascension comes forty days later; others that it was added to make the ascension explicit. P75, Vaticanus, and most witnesses have it, and Acts 1:2 refers to the Gospel as covering events ‘until the day he was taken up’, which suggests the first volume narrated the ascension.",
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Jesus blesses his people as a priest and is taken up to heaven, where, as Hebrews says, he lives to intercede for them (Hebrews 7:25). The church has spoken of Christ's threefold office as prophet, priest, and king; Luke's last picture shows the priest whose blessing continues from heaven."
+        },
+        {
+          "id": "exaltation",
+          "note": "The ascension is the exaltation of the crucified one to God's presence, the entrance into glory of which verse 26 spoke."
+        }
+      ],
+      "parallels": ["Mark 16:19", "Acts 1:9-11"],
+      "refs": ["Acts 1:9-12", "Numbers 6:22-27", "Hebrews 7:24-26", "Luke 1:21-22", "John 11:18"]
+    },
+    {
+      "v": "52-53",
+      "context": "The disciples worship him, return to Jerusalem with great joy, and are continually in the temple blessing God. The Gospel ends where it began, in the temple, and with the joy the angel announced at Jesus' birth (2:10).",
+      "grammar": "Proskunēsantes auton, ‘having worshiped him’, is the first time in Luke that anyone worships Jesus with this verb. It is the verb Jesus used when he answered the devil that worship belongs to the Lord God alone (4:8). Meta charas megalēs, ‘with great joy’, repeats the angel's words to the shepherds, charan megalēn (2:10). Ēsan dia pantos en tō hierō eulogountes ton theon is a periphrastic imperfect, ‘they were continually in the temple blessing God’, a habitual state.",
+      "words": ["G4352", "G5290", "G2419", "G5479", "G3173", "G1510", "G1223", "G2411", "G2127", "G2316"],
+      "text": "Codex Bezae and some Old Latin copies lack ‘worshiped him’, another Western non-interpolation. In verse 53 the earliest witnesses (P75, Sinaiticus, Vaticanus) read eulogountes, ‘blessing’; Codex Bezae reads ainountes, ‘praising’; and the later Byzantine copies combine both, ainountes kai eulogountes, which the King James Version renders ‘praising and blessing’. Westcott and Hort used this verse as a leading example of the Byzantine text's habit of joining two earlier readings. The Byzantine text also adds a closing ‘Amen’.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Luke has taken care to show that worship belongs to God alone (4:8). When the disciples now worship Jesus, and Luke records it without correction, the Gospel's last scene confesses what the creeds later state: the risen Son shares the honor due to God."
+        },
+        {
+          "id": "temple",
+          "note": "The disciples return to the temple, not away from it. Luke's story of the church begins inside Israel's worship, and Acts keeps the apostles in the temple courts (Acts 2:46, 3:1) until the gospel moves out from Jerusalem to the nations."
+        }
+      ],
+      "refs": ["Luke 2:10", "Luke 4:8", "Luke 1:8-10", "Acts 2:46-47", "Matthew 28:17"]
+    }
+  ]
+}

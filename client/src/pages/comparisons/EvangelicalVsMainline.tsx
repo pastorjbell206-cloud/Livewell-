@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -14,7 +15,7 @@ const COMPARISONS = [
   {
     category: "Theology",
     evangelical: "Conservative orthodoxy. The virgin birth, bodily resurrection, substitutionary atonement, and literal return of Christ are non-negotiable. The boundary markers are doctrinal. If you do not hold them, you are outside the tradition.",
-    mainline: "Progressive or moderate orthodoxy. The creeds are affirmed but often reinterpreted through contemporary lenses. The boundary markers are relational and liturgical more than doctrinal. Theological diversity within a tradition is a feature, not a bug.",
+    mainline: "Progressive or moderate orthodoxy. The creeds are affirmed but often reinterpreted through contemporary lenses. The boundary markers are relational and liturgical more than doctrinal. Theological diversity within a tradition is treated as a strength rather than a threat.",
   },
   {
     category: "Culture",
@@ -29,7 +30,7 @@ const COMPARISONS = [
   {
     category: "Mission",
     evangelical: "Evangelism and church planting. The Great Commission is the central mandate. Personal conversion is the goal. Global missions is the strategy. The Billy Graham model: preach the gospel, call for a decision.",
-    mainline: "Service and justice. The Great Commandment is the central mandate. Social transformation is the goal. Community development, advocacy, and institutional presence are the strategy. The Dorothy Day model: serve the poor, change the structures.",
+    mainline: "Service and justice. The Great Commandment is the central mandate. Social transformation is the goal. Community development, advocacy, and institutional presence are the strategy. The social gospel model: serve the poor, change the structures.",
   },
   {
     category: "Demographics",
@@ -52,16 +53,18 @@ const SHARED_GROUND = [
   "Both care about the world. The disagreement is over strategy, not compassion. Evangelicals build hospitals and orphanages alongside their preaching. Mainline Protestants preach and pray alongside their advocacy.",
   "Both are losing ground in the West. Neither model — neither the countercultural stance nor the accommodating one — has reversed the secularization of American society.",
   "Both produced heroes. Martin Luther King Jr. was trained in mainline theology and preached with evangelical fire. Billy Graham was an evangelist who befriended presidents from both parties.",
-  "Both need each other. Evangelicalism without mainline social conscience becomes theologically rigorous and socially blind. Mainline Protestantism without evangelical conviction becomes socially relevant and theologically empty.",
+  "Both need each other, though not in the same way. Evangelicalism has often held its doctrine tightly while going quiet about the poor and the structures that keep them poor. Mainline Protestantism has kept the social conscience and, in many places, let the doctrine thin out until there was little left to sustain the conscience.",
 ];
 
 const RELATED_ARTICLES = [
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
   { title: "The Social Gospel and Its Critics", href: "/writing/when-justice-becomes-a-gospel" },
   { title: "The Fundamentalist-Modernist Controversy", href: "/theology/history" },
   { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
+const RELATED_ON_SHELF = RELATED_ARTICLES.filter((a) => isPublicEssayHref(a.href));
+
 
 const FAQ_ITEMS = [
   {
@@ -70,7 +73,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "What are the 'mainline' denominations?",
-    answer: "The seven sisters: United Methodist Church, Evangelical Lutheran Church in America, Presbyterian Church (USA), Episcopal Church, United Church of Christ, Christian Church (Disciples of Christ), and American Baptist Churches USA. They were called 'mainline' because they dominated American religious life from the colonial era through the mid-twentieth century. The term is geographical as much as theological — these were the churches on the main line of the Pennsylvania Railroad running through affluent Philadelphia suburbs.",
+    answer: "The seven sisters: United Methodist Church, Evangelical Lutheran Church in America, Presbyterian Church (USA), Episcopal Church, United Church of Christ, Christian Church (Disciples of Christ), and American Baptist Churches USA. They were called 'mainline' because they dominated American religious life from the colonial era through the mid-twentieth century. The term is often traced to the Pennsylvania Railroad's Main Line, the affluent suburbs west of Philadelphia where these churches were strong, though that etymology is disputed.",
   },
   {
     question: "Why is the mainline shrinking?",
@@ -143,7 +146,7 @@ export default function EvangelicalVsMainline() {
         <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
         <h1 style={S.h1}>Evangelical vs. Mainline</h1>
         <p style={S.heroSub}>
-          One side says the church must confront the culture. The other says the church must listen to it. Both are right about the other's blind spot. Neither has figured out what comes next.
+          One side says the church must confront the culture. The other says the church must listen to it. Each can name the other's blind spot more easily than its own. Neither has figured out what comes next.
         </p>
       </section>
 
@@ -152,7 +155,7 @@ export default function EvangelicalVsMainline() {
         <div style={S.wrap}>
           <p style={S.eyebrow}>POINT BY POINT</p>
           <h2 style={S.h2}>Where they diverge</h2>
-          <p style={S.bodyText}>These categories are oversimplified. They are also useful. The real picture is messier than any comparison chart — but you have to start somewhere, and this is where the fault lines run.</p>
+          <p style={S.bodyText}>These categories are oversimplified. They are also useful. The real picture is messier than any comparison chart, but the chart shows where the fault lines run, and that is where the argument begins.</p>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div className="compare-header-desktop" style={{ display: "grid", gridTemplateColumns: "160px 1fr 1fr", gap: "0", borderBottom: "2px solid var(--mustard)" }}>
@@ -262,31 +265,33 @@ export default function EvangelicalVsMainline() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section style={S.sectionWarm}>
-        <div style={S.wrapNarrow}>
-          <p style={S.eyebrow}>KEEP READING</p>
-          <h2 style={S.h2}>Go deeper</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {RELATED_ARTICLES.map((a) => (
-              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
+      {/* Related Articles: only those on the public shelf (lib/shelf.ts). */}
+      {RELATED_ON_SHELF.length > 0 && (
+        <section style={S.sectionWarm}>
+          <div style={S.wrapNarrow}>
+            <p style={S.eyebrow}>KEEP READING</p>
+            <h2 style={S.h2}>Go deeper</h2>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {RELATED_ON_SHELF.map((a) => (
+                <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
+                  <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={S.sectionDark}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={S.h2White}>The full post-Christian series</h2>
-          <p style={S.bodyTextWhite}>Sixty essays on the fractures inside Western Christianity. Evangelical and mainline are two poles. The series maps the full spectrum.</p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Explore the Series</button>
+          <h2 style={S.h2White}>After Christendom</h2>
+          <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
           </Link>
         </div>
       </section>

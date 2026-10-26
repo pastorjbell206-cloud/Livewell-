@@ -65,9 +65,9 @@ export default function BibleAndHomosexuality() {
             People are not issues. They are image-bearers.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ margin: "0 0 1.2em" }}>One side quotes verses like weapons until conviction curdles into cruelty. The other abandons the text entirely and calls capitulation compassion. Both betray the gospel, and the person at the center of the question is the one who pays. James Bell, writing after twenty years of pastoral ministry, refuses the false choice between truth and love.</p>
+            <p style={{ margin: "0 0 1.2em" }}>One side quotes verses like weapons until conviction curdles into cruelty. The other abandons the text entirely and calls capitulation compassion. Both betray the gospel, and the person at the center of the question is the one who pays. James Bell, writing after fifteen years of pastoral ministry, refuses the false choice between truth and love.</p>
             <p style={{ margin: "0 0 1.2em" }}>This book works carefully through the relevant passages, the history of their interpretation, and the strongest case on every side before it draws a conclusion. It is written for the believer wrestling honestly, the family torn between love and conviction, and the pastor who wants to be both faithful and kind in the same sentence.</p>
-            <p style={{ margin: 0, fontWeight: 600 }}>Clarity and compassion can occupy the same room. The church has to build that room.</p>
+            <p style={{ margin: 0, fontWeight: 600 }}>The person at the center of this question deserves the whole truth and the whole welcome, and the church has to learn to offer both at once.</p>
           </div>
         </div>
       </section>

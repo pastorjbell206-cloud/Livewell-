@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, Mic, BookMarked, MessageCircle, Shield, Target, Church } from "lucide-react";
+import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church, PenLine, CalendarDays } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
 
 export const TOOLS = [
@@ -33,6 +33,13 @@ export const TOOLS = [
     icon: Brain,
     color: "var(--goldlt)",
   },
+  {
+    title: "Where Are You With God? A Self-Check",
+    description: "Eight honest questions across four areas: where you are with God right now, without the church answer. Ends with a reading of your season and where to start.",
+    href: "/diagnostic",
+    icon: Search,
+    color: "var(--ink)",
+  },
     {
     title: "The Whole-Life Assessment",
     description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Part of Integrated Life.",
@@ -56,7 +63,7 @@ export const TOOLS = [
   },
   {
     title: "Rule of Life Builder",
-    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and build a rhythm of grace you can actually keep. Part of Integrated Life.",
+    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can actually keep on an ordinary week. Part of Integrated Life.",
     href: "/tools/rule-of-life",
     icon: Target,
     color: "var(--goldlt)",
@@ -76,6 +83,13 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
+    title: "Reading Scripture in Context",
+    description: "Background guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics.",
+    href: "/resources/context",
+    icon: BookOpen,
+    color: "var(--ink)",
+  },
+  {
     title: "Passage Context Tool",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. Part of the Theological Depth section.",
     href: "/theology/passage",
@@ -84,14 +98,35 @@ export const TOOLS = [
   },
   {
     title: "Bible Verse Finder",
-    description: "Find Scripture for any season of life. Search by topic — anxiety, grief, hope, courage, marriage, and more — and get curated verses you can copy and share.",
+    description: "Search Scripture by what you are carrying: anxiety, grief, courage, marriage, and more. Each search returns the passages themselves, with the reference, so you can read them in context, copy them, and keep the ones you need.",
     href: "/tools/verse-finder",
     icon: BookOpen,
     color: "var(--ink2)",
   },
   {
+    title: "The Worry Journal",
+    description: "Five minutes before bed: name the worry, write the one thing that is yours to do tomorrow, hand the rest to God, and later see how your worries turned out. Private to your browser, with a printable version.",
+    href: "/tools/worry-journal",
+    icon: PenLine,
+    color: "var(--goldlt)",
+  },
+  {
+    title: "The Parent and Teen Conversation",
+    description: "A parent and a teenager each answer twelve short statements about home on their own, swap codes, and see where they see things differently, with questions to ask each other there. Nothing is stored or sent.",
+    href: "/tools/parent-teen-conversation",
+    icon: MessageCircle,
+    color: "var(--goldlt)",
+  },
+  {
+    title: "The Prayer Planner",
+    description: "Write down the people and needs you mean to pray for, give each a day, and each day see that day's names. Mark answered prayers and keep a dated record of them. Private to your browser.",
+    href: "/tools/prayer-planner",
+    icon: CalendarDays,
+    color: "var(--ink)",
+  },
+  {
     title: "Prayer Generator",
-    description: "Guided prayers for every occasion. Choose a prayer type — morning, evening, strength, guidance, gratitude — and receive a theologically rich prayer you can personalize.",
+    description: "Words for when you do not have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
     href: "/tools/prayer-generator",
     icon: Heart,
     color: "var(--ink)",
@@ -111,8 +146,8 @@ export const TOOLS = [
     color: "var(--ink)",
   },
   {
-    title: "Marriage Health Assessment",
-    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict — and what to do about what you find.",
+    title: "Marriage Health Self-Check",
+    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find.",
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
     color: "var(--goldlt)",
@@ -139,11 +174,18 @@ export const TOOLS = [
     color: "var(--ink)",
   },
   {
-    title: "Emotional Health Assessment",
-    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest — and where Scripture meets each one.",
+    title: "Emotional Health Self-Check",
+    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest, and where Scripture meets each one.",
     href: "/tools/emotional-health",
     icon: Brain,
     color: "var(--goldlt)",
+  },
+  {
+    title: "Spiritual Gifts Self-Check",
+    description: "Thirty-two statements about what you've actually done, across eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. It ranks no gift above another, and it sets out both views on the miraculous gifts without taking a side.",
+    href: "/tools/spiritual-gifts",
+    icon: Users,
+    color: "var(--ink)",
   },
     {
     title: "Scripture Memory System",
@@ -196,7 +238,7 @@ export const TOOLS = [
   },
   {
     title: "The Party Scorecard",
-    description: "How close is each party to the Bible, theme by theme? An even-handed tally built to come out split. The real test is whether you can name where your own side falls short.",
+    description: "How close is each party to the Bible, theme by theme? An honest tally that lands where the evidence puts it, not where either side would like. The real test is whether you can name where your own side falls short.",
     href: "/nation/scorecard",
     icon: Target,
     color: "var(--ink2)",
@@ -212,11 +254,11 @@ export const TOOLS = [
 
 /** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
 export const TOOL_GROUPS = [
-  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/assessments","/tools/emotional-health","/life/assessment"].includes(t.href)) },
+  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
   { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
-  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/prayer-generator"].includes(t.href)) },
-  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
-  { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/tools/party-scorecard","/nation/biblical-government","/nation/scorecard","/nation/policy"].includes(t.href)) },
+  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/prayer-generator"].includes(t.href)) },
+  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parent-teen-conversation","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
+  { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
 ];
 
 

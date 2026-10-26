@@ -1,0 +1,318 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with a hostile coalition. Pharisees and Sadducees, parties that disagreed about the resurrection, the oral traditions, and the temple, come together to demand that Jesus prove himself with a sign from heaven. Jesus has already refused the same demand in 12:38-40, and he has just fed four thousand people (15:32-39), so the request comes after the evidence, not before it.",
+      "grammar": "Peirazontes, ‘testing’, is a present participle of peirazō, the verb Matthew used for the devil in the wilderness (4:1, 3, where the tempter is ho peirazōn) and will use again for the Pharisees' questions about divorce, taxes, and the law (19:3; 22:18, 35). The word marks the request as a trap, not an inquiry. Sēmeion ek tou ouranou, ‘a sign out of heaven’, asks for something beyond the healings and feedings already done: a portent in the sky or an unmistakable act of God that would settle the matter on their terms. The aorist infinitive epideixai, ‘to show’, asks for a single public display.",
+      "words": ["G3985H", "G4592", "G3772", "G1925"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The demand assumes that God must reveal himself in the form people choose and on the schedule they set. The chapter answers that the decisive knowledge of Jesus is a gift of the Father (verse 17), not something extracted by a test."
+        }
+      ],
+      "parallels": ["Mark 8:11", "Matthew 12:38"],
+      "refs": ["Matthew 4:1-3", "Matthew 12:38-40", "Matthew 22:18", "1 Corinthians 1:22-23"]
+    },
+    {
+      "v": "2-3",
+      "context": "Jesus answers with a proverb about the weather. His opponents read a red evening sky as the promise of a fair day and a red, lowering morning sky as the sign of a storm, and they are right. What they cannot read is what God is doing in front of them. The saying stands between the demand for a sign (verse 1) and the refusal (verse 4).",
+      "grammar": "The weather words are vivid and rare. Eudia, ‘fair weather’, appears only here in the New Testament; purrazei, ‘is fiery red’, from pur, ‘fire’, occurs only in these two verses; and stugnazōn, ‘being overcast’ or ‘gloomy’, is the participle Mark uses of the rich man's face falling (Mark 10:22). Verse 3 builds a pointed contrast with men and de: to men prosōpon tou ouranou, ‘the face of the sky’, you know how to judge (diakrinein, to discern or distinguish), ta de sēmeia tōn kairōn, ‘but the signs of the times’, you cannot. Kairos means a fitting or decisive time rather than clock time, so ‘the signs of the times’ are the marks that God's appointed hour has come: the healings, the preaching to the poor, and the presence of Jesus himself (11:2-6).",
+      "words": ["G2105", "G4449", "G4768", "G4383", "G1252", "G4592", "G2540"],
+      "text": "The chapter note describes the evidence: these words are missing from Codex Sinaiticus and Codex Vaticanus and are bracketed in the standard critical text. Their absence explains why some Bibles (the NRSV, for example) print verses 2b and 3 in brackets or mark them in a note. If the words are a later addition, they may have been adapted from the similar saying in Luke 12:54-56, though Luke's weather signs are different (a cloud rising in the west and a south wind), so the Matthean form is not a simple copy of Luke's.",
+      "parallels": ["Luke 12:54-56"],
+      "refs": ["Luke 12:54-56", "Matthew 11:2-6", "Luke 19:44"]
+    },
+    {
+      "v": "4",
+      "context": "The refusal repeats almost word for word Jesus' answer in 12:39, with one difference: here he does not explain the sign of Jonah. Readers of Matthew already know the explanation (12:40), the three days and nights in the heart of the earth. Then Jesus simply leaves, a narrative detail that is itself a verdict.",
+      "grammar": "Genea ponēra kai moichalis, ‘an evil and adulterous generation’, uses moichalis, ‘adulterous’, in the prophets' sense of a people unfaithful to God as a wife to her husband (Hosea 2:2; Jeremiah 3:8-9), not primarily of sexual sin. Epizētei, ‘seeks after’, is a compound of zēteō with an intensive sense, ‘keeps demanding’. The negative ou dothēsetai, ‘will not be given’, is a divine passive: God is the one who withholds the sign. Ei mē to sēmeion Iōna, ‘except the sign of Jonah’, grants one sign, and it is the resurrection. Katalipōn autous apēlthen, ‘leaving them, he went away’, uses kataleipō, a strong word for leaving behind.",
+      "words": ["G1074", "G4190", "G3428", "G1934", "G1325", "G2495H", "G2641"],
+      "ot": [
+        {
+          "ref": "Jonah 1:17",
+          "note": "In the Hebrew (Jonah 2:1 in the Hebrew numbering) the LORD appoints a great fish, and Jonah is in its belly three days and three nights; the Septuagint's phrase treis hēmeras kai treis nuktas is the wording Jesus quotes in Matthew 12:40. In Jonah the prophet's return from the deep is the prelude to his preaching and to the repentance of Nineveh, a Gentile city. Matthew uses Jonah as a sign in two ways: the prophet brought back from the depths prefigures the Son raised from the heart of the earth, and the Gentiles who repented condemn the generation that will not (12:41)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The only sign Jesus will give his opponents is his own death and resurrection. The verse makes the resurrection not one proof among many but the decisive sign, which Jesus begins to predict openly in verse 21."
+        }
+      ],
+      "parallels": ["Mark 8:12-13", "Luke 11:29", "Matthew 12:39"],
+      "refs": ["Matthew 12:39-41", "Hosea 2:2", "Matthew 27:63-64"]
+    },
+    {
+      "v": "5-7",
+      "context": "On the far shore the disciples discover they have no bread. Jesus, still thinking of the encounter just ended, warns them against the leaven of the Pharisees and Sadducees, and they hear a remark about their shopping. The misunderstanding sets up the lesson of verses 8 to 12.",
+      "grammar": "Epelathonto, ‘they forgot’, is an aorist that may be read as a pluperfect in sense: they had forgotten before they set out. Jesus' warning doubles two present imperatives, horate kai prosechete, ‘watch and beware’, calling for continuing alertness; prosechō apo, ‘beware of’, is the construction Matthew uses for false prophets (7:15) and for human opponents (10:17). In verse 7 dielogizonto, an imperfect, pictures a discussion that went on among them. Their conclusion begins with hoti, which can introduce direct speech (‘We did not bring bread’) or give a reason (‘It is because we did not bring bread’). The BSB takes the second, making the disciples think Jesus is scolding them for poor planning.",
+      "words": ["G1950", "G0740", "G3708", "G4337", "G2219", "G1260", "G3754H"],
+      "parallels": ["Mark 8:14-16"],
+      "text": "Mark's form of the warning is ‘the leaven of the Pharisees and of Herod’ (Mark 8:15), and Luke's is ‘the leaven of the Pharisees, which is hypocrisy’ (Luke 12:1). Matthew's pairing of Pharisees and Sadducees continues from verse 1 and prepares for his explanation in verse 12.",
+      "refs": ["Matthew 13:33", "1 Corinthians 5:6-8", "Galatians 5:9", "Matthew 7:15"]
+    },
+    {
+      "v": "8-10",
+      "context": "Jesus knows what they are saying and answers with a rebuke and a string of questions. The problem is not that they forgot bread but that they forgot him. Twice they have seen him feed thousands from a few loaves, and they still worry about a meal.",
+      "grammar": "Gnous, ‘knowing’, is an aorist participle: Jesus perceives their conversation without being told, as in 12:25. Oligopistoi, ‘you of little faith’, is Matthew's own word for disciples whose trust falters in the face of a practical need (6:30; 8:26; 14:31), and here it is attached to anxiety about food, as in 6:30-31. Oupō noeite, ‘do you not yet understand?’, uses oupō, ‘not yet’, which leaves room for understanding to come. Jesus keeps the two basket words of the feeding stories distinct: kophinous, the smaller hand baskets of the five thousand (14:20), and spuridas, the larger baskets of the four thousand (15:37), in which Paul was later let down a wall (Acts 9:25).",
+      "words": ["G1097", "G3640", "G3768", "G3539", "G3421", "G2894", "G4711"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Little faith in Matthew is not unbelief but trust that shrinks before a present need. Jesus treats memory as the remedy: faith grows by recalling what he has already done, which is why the questions recite the loaves, the crowds, and the baskets."
+        }
+      ],
+      "parallels": ["Mark 8:17-20"],
+      "refs": ["Matthew 6:30-33", "Matthew 14:17-21", "Matthew 15:34-38", "Acts 9:25"]
+    },
+    {
+      "v": "11-12",
+      "context": "Jesus repeats the warning, and this time the disciples understand. Matthew alone explains the image: the leaven is the teaching of the Pharisees and Sadducees. The contrast with Mark is deliberate: where Mark ends the scene with an unanswered question (Mark 8:21), Matthew records that understanding came.",
+      "grammar": "Pōs ou noeite hoti ou peri artōn eipon humin, ‘how do you not understand that I did not speak to you about loaves?’, uses two negatives in close succession, ou noeite and ou peri artōn, pressing the absurdity of their literalism. Verse 12 opens with tote sunēkan, ‘then they understood’, using suniēmi, the verb of true understanding in the parables chapter, where the one who hears the word and understands it bears fruit (13:23). Didachē, ‘teaching’, names the content of what the two parties taught. Matthew speaks of one teaching held by two parties that disagreed on much, so what they share must be something deeper than doctrine on particular points: in context, a refusal to receive Jesus that demands proof on its own terms.",
+      "words": ["G4459", "G3539", "G0740", "G4337", "G4920", "G2219", "G1322"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Teaching works like leaven, silently and through the whole. The warning assumes that disciples can absorb a way of thinking without noticing it, and that discernment requires attention to what one is being taught. Matthew's point is aimed at particular leaders who opposed Jesus, not at Jewish teaching as such (compare 23:2-3)."
+        }
+      ],
+      "parallels": ["Mark 8:21"],
+      "refs": ["Matthew 13:23", "Matthew 13:51-52", "Matthew 23:2-3", "Luke 12:1"]
+    },
+    {
+      "v": "13-14",
+      "context": "Far to the north, in Gentile territory, Jesus asks what people say about the Son of Man. The disciples report the popular answers: John the Baptist raised, Elijah returned, Jeremiah, or another of the prophets. Every answer puts Jesus in the category of prophet, and every answer is too small.",
+      "grammar": "Ērōta, ‘he was asking’, is an imperfect, setting the question as the start of a conversation. Tina legousin hoi anthrōpoi einai ton huion tou anthrōpou, ‘whom do people say the Son of Man to be?’, is an accusative with infinitive after a verb of saying. Jesus uses his favorite self-designation in the third person, so the question is both about himself and about the meaning of the title. Mark and Luke have simply ‘Who do people say that I am?’ (Mark 8:27; Luke 9:18). The answers are set in a men ... de ... de series (hoi men, alloi de, heteroi de), ‘some ... others ... still others’, a tidy Greek list that shows how divided opinion was.",
+      "words": ["G2542G", "G5376K", "G2065", "G5207", "G0444", "G2491G", "G2243", "G2408", "G4396"],
+      "history": "Philip the tetrarch, who refounded the town as Caesarea (see the chapter note), was the first Jewish ruler to put portraits of himself and of the Roman emperors on his coins. His coins show the heads of Augustus and later Tiberius, and on the reverse a four-columned temple on a high platform, generally identified as the Augusteum that Herod the Great built for Augustus in the district. Jesus' question about who he is was asked in a region whose money announced another candidate for divine honor.",
+      "parallels": ["Mark 8:27-28", "Luke 9:18-19"],
+      "refs": ["Matthew 14:1-2", "Matthew 21:11", "Malachi 4:5", "Matthew 11:14"]
+    },
+    {
+      "v": "15-16",
+      "context": "Jesus turns the question on the disciples, and Simon Peter answers for them. His confession joins two titles: the Christ, Israel's anointed king, and the Son of the living God. Matthew's wording is the fullest of the three Gospels, and it is the confession the rest of the chapter builds on.",
+      "grammar": "Humeis de, ‘but you’, stands first and is emphatic: the disciples are set against ‘people’ of verse 13. Peter's answer begins su ei, ‘you are’, with the pronoun expressed for emphasis, and each title carries the article: ho christos, ‘the Christ’, and ho huios tou theou tou zōntos, ‘the Son of the God, the living one’. Tou zōntos is a present participle, ‘who lives’, the Old Testament's way of distinguishing Israel's God from lifeless idols (Jeremiah 10:10). Matthew is the only Gospel with ‘the Son of the living God’ here; the high priest will use nearly the same words under oath in 26:63, ‘by the living God’ and ‘the Christ, the Son of God’, so the confession of the disciple and the charge of the judge frame the passion.",
+      "words": ["G4771", "G4613O", "G4074G", "G5547", "G5207", "G2316", "G2198"],
+      "ot": [
+        {
+          "ref": "Hosea 1:10",
+          "note": "The phrase ‘living God’ runs through the Old Testament (Deuteronomy 5:26; 1 Samuel 17:26; Psalm 42:2). Hosea's promise that those once called ‘not My people’ will be called “sons of the living God” (Hosea 2:1 in the Hebrew and the Septuagint, which reads huioi theou zōntos) is its closest verbal parallel, and Paul quotes it of Jews and Gentiles called into God's people (Romans 9:26). Peter's confession is not a quotation, but it takes the Old Testament's title for the God who acts and gives life and names Jesus as his Son in a singular sense."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "‘The Christ’ names Jesus as the anointed king of David's line promised in 2 Samuel 7:12-16 and Psalm 2. Matthew has told his readers this from his first verse (1:1); here, for the first time, a disciple says it to Jesus' face, and Jesus accepts it."
+        },
+        {
+          "id": "incarnation",
+          "note": "‘Son of the living God’ goes beyond a royal title. In Matthew the Father alone knows the Son and the Son alone knows the Father (11:27), and the Father will call Jesus his beloved Son on the mountain (17:5). The church's confession that the man Jesus is the eternal Son of God begins in confessions like this one, which Jesus says the Father himself revealed."
+        }
+      ],
+      "parallels": ["Mark 8:29", "Luke 9:20", "John 6:68-69"],
+      "refs": ["Matthew 14:33", "Matthew 26:63", "Psalm 2:7", "2 Samuel 7:14", "Matthew 1:1"]
+    },
+    {
+      "v": "17",
+      "context": "Jesus pronounces Peter blessed and tells him where his answer came from. It was not human insight, reasoning, or tradition, but a revelation from the Father. The blessing is found only in Matthew, and it echoes Jesus' earlier thanks that the Father reveals these things to little children (11:25).",
+      "grammar": "Makarios ei, ‘blessed are you’, is the form of the Beatitudes (5:3-11) addressed to one man: Peter is in the position of one on whom God's favor rests. Simōn Bariōna is Aramaic left untranslated, bar Yona, ‘son of Jonah’, one of several Semitic touches in these verses that many scholars take as signs of early Palestinian tradition. Sarx kai haima, ‘flesh and blood’, is the Jewish idiom for a human being over against God (Galatians 1:16). The verb apekalupsen, ‘revealed’, is the verb of 11:25 and 11:27, and its subject is ho patēr mou ho en tois ouranois, ‘my Father who is in the heavens’: Jesus says ‘my Father’, not ‘our Father’, a distinction he keeps throughout Matthew.",
+      "words": ["G3107", "G4613O", "G0920", "G4561", "G0129G", "G0601", "G3962"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Peter's confession is right because it was given, not because Peter was clever. The verse makes knowledge of who Jesus is a work of the Father, which is why the same Peter can be wrong a few verses later when he speaks from ‘the things of men’ (verse 23). Revelation here is not a private feeling but the disclosure of a truth about Jesus that Peter then confesses in words."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father reveals the Son, and the Son speaks of the Father as ‘My Father’. The verse is one of the Gospel threads from which the church learned to speak of the Father and the Son as distinct and yet one in knowledge and purpose (11:27)."
+        }
+      ],
+      "refs": ["Matthew 11:25-27", "Galatians 1:15-16", "1 Corinthians 12:3", "John 6:44", "John 1:42"]
+    },
+    {
+      "v": "18",
+      "context": "Jesus answers Peter's ‘You are the Christ’ with ‘You are Peter’, and makes three promises: he will build his church, he will build it on this rock, and the gates of Hades will not overpower it. The chapter note sets out how Catholic, Orthodox, and Protestant readers understand the rock; this note looks at the words themselves.",
+      "grammar": "Kagō de soi legō, ‘and I also say to you’, answers Peter's confession in kind: Peter said su ei, ‘you are’, and Jesus replies su ei Petros, ‘you are Peter’. Petros is the masculine form used as a name; petra, ‘rock’, is feminine and could not name a man, so the Greek shifts words even if the Aramaic did not. In Aramaic the saying would run ‘you are kepha, and on this kepha’. The phrase epi tautē tē petra, ‘on this rock’, is the crux. Those who read the rock as Peter himself (the Catholic reading, and many Protestant scholars such as Oscar Cullmann and D. A. Carson) note that ‘this’ most naturally points to what was just named, that the conjunction is kai, ‘and’, not ‘but’, and that the Aramaic pun requires identity. Those who read the rock as Peter's confession (John Chrysostom, the reading favored in Orthodox tradition, and many Protestants) or as Christ himself (a reading Augustine sometimes gave) note the change of word and point to texts where Christ is the one foundation (1 Corinthians 3:11) and to Peter's own letter, where Christ is the living stone (1 Peter 2:4-8). Oikodomēsō is future: the church is not yet built. Mou tēn ekklēsian, ‘my church’, puts the possessive before the noun, stressing whose assembly it is. The last clause, pulai hadou ou katischusousin autēs, ‘the gates of Hades will not prevail against it’, uses katischuō, ‘to overpower, to be stronger than’. The pronoun autēs is feminine and could grammatically refer to the rock or to the church, since both nouns are feminine; most interpreters take it as the church.",
+      "words": ["G1473", "G4074G", "G4073", "G3618", "G1577", "G4439", "G0086", "G2729"],
+      "ot": [
+        {
+          "ref": "Isaiah 38:10",
+          "note": "King Hezekiah, sick to the point of death, says he must go through the gates of Sheol; the Hebrew is besha'arei she'ol, and the Septuagint renders it en pulais hadou, the phrase Jesus uses. Job 38:17 and Psalm 107:18 speak likewise of the gates of death. In these texts the gates are the entrance to the realm of the dead, which closes behind those who pass through. Jesus' promise uses the image to say that death will not hold or defeat the community he builds. Because city gates were also the seat of a city's power and council (Genesis 22:17 promises Abraham's offspring will possess the gates of their enemies), some interpreters hear the phrase more broadly as the power of death and all that serves it."
+        }
+      ],
+      "history": "The Syriac Peshitta, the standard early translation of the New Testament into Syriac, a dialect of Aramaic close to the language Jesus spoke, uses the same word, kepha, in both halves of the saying: ‘you are Kepha, and on this kepha I will build my church’. It cannot tell us what Jesus said, since it is a translation of the Greek, but it shows how naturally the saying falls into Aramaic, where no change of word is needed. Paul regularly calls Peter by the Aramaic form, Cephas (1 Corinthians 1:12; 15:5; Galatians 2:9), which shows that the name was known in its Aramaic shape in Greek-speaking churches within a generation.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The verse contributes three things to the doctrine of the church on which Catholic, Orthodox, and Protestant Christians agree: the church belongs to Christ (‘My church’), Christ himself builds it (‘I will build’), and death will not destroy it. They differ over what the rock is and whether Peter's role continues in an office, as the chapter note sets out; those are second-order questions on which faithful Christians disagree and remain brothers."
+        },
+        {
+          "id": "hope",
+          "note": "The promise that the gates of Hades will not prevail is first of all a promise about death. The church is built by one who will himself pass through death and rise (verse 21), and who later holds the keys of death and Hades (Revelation 1:18)."
+        }
+      ],
+      "text": "English Bibles render the last clause in three ways, all translating the same Greek: ‘the gates of hell’ (KJV), ‘the gates of Hades’ (BSB, ESV, NASB), and ‘the powers of death’ (RSV, NRSV). ‘Hell’ in older English could mean the realm of the dead in general; to modern ears it suggests Gehenna, the place of final judgment, which is a different word in Greek (5:22; 18:9).",
+      "refs": ["1 Peter 2:4-8", "Ephesians 2:20", "1 Corinthians 3:11", "Revelation 1:18", "John 1:42"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus adds a second promise to Peter: the keys of the kingdom of heaven, and the authority to bind and loose. Matthew will repeat the binding and loosing in 18:18, where it is given to the disciples as a community dealing with sin. Read together, the two passages show the authority first entrusted to Peter and then exercised by the gathered church.",
+      "grammar": "Dōsō soi, ‘I will give you’, is a future, like oikodomēsō in verse 18: the gift lies ahead, and Christians have pointed to Pentecost and the opening of the door to the Gentiles (Acts 2; 10) as its exercise. The pronoun is singular here, soi, and the verbs dēsēs and lusēs are second person singular; in 18:18 the same promise is plural (dēsēte, lusēte). The objects are neuter, ho ean, ‘whatever’, not ‘whoever’, which fits the rabbinic use of binding and loosing for forbidding and permitting under the law, though 18:15-18 shows persons are also in view. The main verbs are periphrastic future perfects, estai dedemenon and estai lelumenon, literally ‘will be having been bound’ and ‘will be having been loosed’. As the chapter note says, Julius Mantey argued this means heaven has already decided what the disciples declare, and Henry Cadbury replied that the construction is simply future in force; grammarians remain divided, and the NASB follows Mantey.",
+      "words": ["G1325", "G2807", "G0932", "G3772", "G1210", "G3089", "G1093G"],
+      "ot": [
+        {
+          "ref": "Isaiah 22:22",
+          "note": "God removes the proud steward Shebna and gives his office to Eliakim, saying, “I will place on his shoulder the key to the house of David. What he opens no one can shut, and what he shuts no one can open.” The Hebrew mafteach is a single key. The critical editions of the Septuagint (Rahlfs, Ziegler) read differently, that God will give Eliakim ‘the glory of David’, and only some Greek manuscripts carry the key; Revelation 3:7, which applies the verse to the risen Christ, follows the Hebrew. Matthew does not quote Isaiah, and he speaks of keys in the plural, but the picture of a steward entrusted with a king's house who admits and excludes is the nearest Old Testament background. Catholic interpreters stress that the steward's office in Isaiah is an office that passes from one holder to another; Protestant interpreters stress that Isaiah's steward is a type, and that in Revelation the key belongs to Christ."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The keys are keys ‘of the kingdom of heaven’: authority to open the way in. Jesus later condemns scribes and Pharisees for shutting the kingdom in people's faces (23:13), which suggests that the keys are used chiefly by proclaiming the gospel and teaching Jesus' commands rightly (28:19-20)."
+        },
+        {
+          "id": "church",
+          "note": "What is bound and loosed on earth corresponds to what is bound and loosed in heaven. The church's decisions carry heaven's weight only when they agree with Christ's word; Jesus' rebuke of Peter in verse 23 shows that the one who received the keys could still speak from ‘the things of men’."
+        }
+      ],
+      "refs": ["Matthew 18:18", "Matthew 23:13", "Revelation 3:7", "John 20:23", "Acts 15:7-11"]
+    },
+    {
+      "v": "20",
+      "context": "Jesus forbids the disciples to tell anyone that he is the Christ. The title is true, but it would be heard as a call to a political uprising. Before it can be announced, Jesus must show what kind of Christ he is, and he begins at once (verse 21).",
+      "grammar": "Diesteilato, ‘he gave strict orders’, is a strong verb of command, followed by a hina clause with the aorist subjunctive eipōsin, ‘that they should say to no one’. Autos estin ho christos, ‘he himself is the Christ’, uses the emphatic pronoun autos. The command to silence belongs with the others in Matthew (8:4; 9:30; 12:16; 17:9), and like them it concerns the timing of disclosure, not its truth.",
+      "words": ["G1291", "G3101", "G3367", "G2036", "G5547"],
+      "text": "The original hand of Codex Vaticanus and Codex Bezae read epetimēsen, ‘he sternly warned’, the verb Mark and Luke use (Mark 8:30; Luke 9:21), and Westcott and Hort printed it; most manuscripts and the modern critical text read diesteilato. Many later manuscripts, followed by the King James Version, read ‘that he was Jesus the Christ’, adding the name.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus accepts the title and restricts its use. The silence protects the confession from the expectations of a warrior king that Peter himself still holds (verse 22), until the cross and resurrection define it."
+        }
+      ],
+      "parallels": ["Mark 8:30", "Luke 9:21"],
+      "refs": ["Matthew 17:9", "Matthew 12:16", "John 6:15"]
+    },
+    {
+      "v": "21",
+      "context": "The Gospel turns. With the same formula that opened Jesus' preaching in 4:17, Matthew announces a new stage: Jesus begins to show his disciples that he must go to Jerusalem, suffer, be killed, and be raised on the third day. This is the first of three predictions (17:22-23; 20:17-19), and from here the Gospel moves toward Jerusalem.",
+      "grammar": "Apo tote ērxato, ‘from then he began’, repeats 4:17 exactly and marks the second great division of Matthew's story. Deiknuein, ‘to show’, is a present infinitive, suggesting continued teaching, and it implies demonstration, perhaps from Scripture (26:54). Dei, ‘it is necessary’, governs four infinitives: apelthein, ‘to go away’ to Jerusalem; pathein, ‘to suffer’ many things; apoktanthēnai, ‘to be killed’; and egerthēnai, ‘to be raised’. Matthew adds ‘go to Jerusalem’, which Mark lacks, and he does not have Mark's ‘be rejected’ (Mark 8:31). Tē tritē hēmera, ‘on the third day’, replaces Mark's ‘after three days’, and the aorist passive egerthēnai presents the resurrection as God's act.",
+      "words": ["G0757", "G1166", "G1163", "G2414", "G0565", "G3958", "G0615", "G5154", "G1453"],
+      "text": "At the start of the verse, the original hands of Codex Sinaiticus and Codex Vaticanus read ‘Jesus Christ’ rather than ‘Jesus’. Most manuscripts and editions have simply ‘Jesus’, and English versions follow them.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The must of divine necessity places the cross inside God's purpose from the first announcement. The verse does not yet say why the Son of Man must die; Matthew answers in 20:28 (a ransom for many) and 26:28 (blood poured out for the forgiveness of sins)."
+        },
+        {
+          "id": "resurrection",
+          "note": "From the first prediction, death and resurrection are announced together. The disciples hear only the first half (verse 22), but the resurrection is part of the plan from the start, the sign of Jonah promised in verse 4."
+        }
+      ],
+      "parallels": ["Mark 8:31", "Luke 9:22"],
+      "refs": ["Matthew 4:17", "Matthew 20:17-19", "Matthew 26:54", "1 Corinthians 15:3-4", "Hosea 6:2"]
+    },
+    {
+      "v": "22",
+      "context": "Peter, who has just been called blessed, takes Jesus aside to correct him. Only Matthew gives his words, and they are sincere: he cannot bear the thought of his master's death. The same loyalty will lead him to draw a sword in Gethsemane (26:51; John 18:10).",
+      "grammar": "Proslabomenos, ‘taking him aside’, is an aorist middle participle, literally ‘taking him to himself’, a gesture of privacy and perhaps of presumption, since the disciple now leads the master. Ērxato epitiman, ‘began to rebuke’, uses the verb Jesus uses for rebuking demons and the sea (8:26; 17:18). Peter's words hileōs soi, kurie, are an idiom from the Greek Old Testament, meaning ‘may God be merciful to you’ and so ‘God forbid’ (the Septuagint uses it for the Hebrew chalilah, ‘far be it’, in 2 Samuel 20:20 and 1 Chronicles 11:19). The second half is ou mē estai soi touto, ‘this will certainly not happen to you’, with ou mē and the future indicative, the strongest form of negation in Greek. Peter contradicts Jesus' ‘must’ with his own emphatic ‘never’.",
+      "words": ["G4355", "G0757", "G2008", "G2436", "G2962G"],
+      "parallels": ["Mark 8:32"],
+      "refs": ["Matthew 26:51-54", "John 18:10-11", "Matthew 26:35"]
+    },
+    {
+      "v": "23",
+      "context": "Jesus turns and calls Peter Satan. The rebuke is as sharp as the blessing of verse 17 was warm, and the two stand only a few sentences apart. Peter's protest repeats the devil's offer in the wilderness, a kingdom without a cross (4:8-10).",
+      "grammar": "Hupage opisō mou, satana, ‘go behind me, Satan’, echoes Jesus' answer to the devil in 4:10, hupage, satana (“Away from Me, Satan!”), but adds opisō mou, ‘behind me’, the phrase of discipleship in verse 24 (‘come after me’, opisō mou elthein). Peter is not dismissed but sent back to his place as a follower. Skandalon ei emou, ‘you are a stumbling block to me’, uses the word for the trigger of a trap or a stone that trips a traveler: the rock of verse 18 has become a stone in the road. The reason clause, hoti ou phroneis ta tou theou, ‘because you are not minding the things of God’, uses phroneō for a settled way of thinking and valuing, not a passing thought.",
+      "words": ["G4762", "G5217", "G3694", "G4567", "G4625", "G5426", "G2316", "G0444"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Temptation here comes through a friend's love. The verse teaches that opposing God's purpose can sound like loyalty and concern, and that the test of a thought is not its warmth but whether it minds the things of God."
+        },
+        {
+          "id": "atonement",
+          "note": "To resist the cross is to take Satan's side. The rebuke shows how central the suffering of verse 21 is to Jesus' mission: a Christ who refuses it is the devil's proposal, not the Father's."
+        }
+      ],
+      "parallels": ["Mark 8:33"],
+      "refs": ["Matthew 4:8-10", "Isaiah 55:8-9", "1 Corinthians 1:23", "1 Peter 2:8"]
+    },
+    {
+      "v": "24",
+      "context": "The road Jesus has just described for himself becomes the road for anyone who would follow him. Matthew addresses the words to the disciples; Mark and Luke widen the audience to the crowd or to all. Jesus has already spoken of taking up the cross in 10:38; now the saying follows directly on the announcement of his own death.",
+      "grammar": "Ei tis thelei opisō mou elthein, ‘if anyone wants to come after me’, is a condition of fact addressed to the will. Three imperatives follow: two aorists, aparnēsasthō heauton, ‘let him deny himself’, and aratō ton stauron autou, ‘let him take up his cross’, and a present, akoloutheitō moi, ‘let him keep following me’. The difference is aspect: the first two view the actions as decisive steps, the third as the continuing course of a life. Aparneomai is the verb of Peter's denials in 26:34, 35, and 75, so Matthew's readers would feel the reversal: a disciple either denies himself or denies his Lord.",
+      "words": ["G2309", "G3694", "G2064", "G0533", "G1438", "G0142", "G4716", "G0190"],
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "The Christian life is shaped by the shape of Christ's own life. Self-denial here is not self-hatred but the surrender of the self's claim to rule, and the cross is not ordinary hardship but the loss that comes from following Jesus. The chapter note's pastoral warning applies: this verse never requires anyone to submit to abuse."
+        }
+      ],
+      "parallels": ["Mark 8:34", "Luke 9:23"],
+      "refs": ["Matthew 10:38", "Matthew 27:32", "Galatians 2:20", "Matthew 26:75"]
+    },
+    {
+      "v": "25-26",
+      "context": "Two reasons follow, each introduced by gar, ‘for’. The first is a paradox: clinging to life loses it, and losing it for Jesus finds it. The second is a merchant's calculation: no profit could balance the loss of oneself, and nothing could buy the self back.",
+      "grammar": "Psuchē, ‘life’ or ‘soul’, is used four times in these two verses, and the BSB renders it ‘life’ in verse 25 and ‘soul’ in verse 26; the Greek does not change, and the saying plays on the life a person clutches and the self that lives before God. Matthew writes heurēsei, ‘will find’, where Mark 8:35 has ‘will save’, matching Jesus' earlier form of the saying (10:39). Verse 26 is ledger language: kerdēsē, ‘gain, make a profit on’; zēmiōthē, ‘suffer loss, forfeit’, the pair Paul uses in Philippians 3:7-8; and antallagma, ‘something given in exchange’, a price paid to recover something. Ōphelēthēsetai, ‘will be profited’, is future in the critical text, looking to the final reckoning of verse 27, where the Byzantine text has a present.",
+      "words": ["G5590H", "G4982", "G0622", "G2147", "G5623", "G2770", "G2210", "G0465"],
+      "ot": [
+        {
+          "ref": "Psalm 49:7-8",
+          "note": "The psalm says no one can redeem his brother or pay his ransom to God, “for the redemption of his soul is costly.” The Septuagint (Psalm 48:8-9) speaks of the price of the redemption of the psuchē. Jesus' question in verse 26 takes up the psalm's conviction that no human wealth can buy back a life, which prepares for his statement in 20:28 that the Son of Man gives his own life as a ransom."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verses define salvation as the finding of the true self, and they locate it in a loss suffered ‘for My sake’. The self cannot be purchased or secured; it is received back from Jesus by those who give it up to him."
+        }
+      ],
+      "parallels": ["Mark 8:35-37", "Luke 9:24-25"],
+      "refs": ["Matthew 10:39", "John 12:25", "Philippians 3:7-8", "Luke 12:20", "Matthew 20:28"]
+    },
+    {
+      "v": "27",
+      "context": "The third reason looks to the end. The Son of Man who must suffer will come in his Father's glory with his angels to repay each person for what he has done. The verse holds together the two faces of the Son of Man in this chapter: rejected in verse 21, enthroned as judge here.",
+      "grammar": "Mellei erchesthai, ‘is about to come’, uses mellō, which can express certainty as much as nearness. En tē doxē tou patros autou, ‘in the glory of his Father’, and meta tōn angelōn autou, ‘with his angels’, make the angels his own, as in 13:41 and 24:31. The judgment clause, apodōsei hekastō kata tēn praxin autou, ‘he will repay each one according to his conduct’, takes the Old Testament formula of divine judgment and makes the Son of Man its subject. Matthew uses praxis, ‘conduct, way of acting’, a singular noun for the whole pattern of a life, where the Septuagint and Paul use erga, ‘works’.",
+      "words": ["G3195", "G2064", "G1391", "G3962", "G0032G", "G0591", "G1538", "G4234"],
+      "ot": [
+        {
+          "ref": "Psalm 62:12",
+          "note": "The psalm closes, “For You will repay each man according to his deeds”; the Septuagint (Psalm 61:13) reads hoti su apodōseis hekastō kata ta erga autou, and Proverbs 24:12 and Romans 2:6 repeat the formula. In the Old Testament the one who repays is the LORD. Jesus assigns the same act to the Son of Man, a claim the chapter note connects with Daniel 7:13-14, where the Son of Man receives dominion and glory."
+        },
+        {
+          "ref": "Zechariah 14:5",
+          "note": "Zechariah's vision of the Day of the LORD ends, “Then the LORD my God will come, and all the holy ones with Him”; the Septuagint has pantes hoi hagioi met' autou. The holy ones are the heavenly host. Jesus' coming ‘with His angels’ uses the picture of the LORD's own coming with his army, applied to the Son of Man."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The verse is Matthew's first clear statement that the Son of Man will come in glory. It joins the return of Christ to the call to follow him: what a disciple risks now is weighed against that day."
+        },
+        {
+          "id": "judgment",
+          "note": "Judgment is personal (‘each one’) and just (‘according to what he has done’). Matthew does not set this against grace; the parable of the sheep and goats (25:31-46) will show that what is judged is how a life has treated Christ in the least of his brothers."
+        }
+      ],
+      "parallels": ["Mark 8:38", "Luke 9:26"],
+      "refs": ["Daniel 7:13-14", "Matthew 25:31-32", "Proverbs 24:12", "Romans 2:6", "Revelation 22:12"]
+    },
+    {
+      "v": "28",
+      "context": "A solemn promise closes the chapter: some standing there will not die before they see the Son of Man coming in his kingdom. Matthew places it directly before the transfiguration, six days later (17:1), so that his readers see at least a first fulfillment on the mountain. The chapter note discusses the other readings and the objection that Jesus was mistaken.",
+      "grammar": "Amēn legō humin, ‘truly I tell you’, marks a solemn saying. Tines tōn hōde hestōtōn, ‘some of those standing here’, uses the perfect participle of histēmi, which in this verb means simply ‘standing’. Ou mē geusōntai thanatou, ‘will certainly not taste death’, combines the emphatic double negative with a Semitic idiom for dying. Heōs an idōsin, ‘until they see’, is an aorist subjunctive in an indefinite temporal clause. The object is Matthew's own: ton huion tou anthrōpou erchomenon en tē basileia autou, ‘the Son of Man coming in his kingdom’, where Mark has ‘the kingdom of God having come with power’ (Mark 9:1) and Luke ‘the kingdom of God’ (Luke 9:27). The present participle erchomenon presents the coming as something they will see in progress.",
+      "words": ["G0281", "G2476", "G1089", "G2288", "G1492H", "G2064", "G0932"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Matthew speaks of the kingdom as the Son of Man's own (compare 13:41; 20:21). The verse ties the kingdom to the person of Jesus and promises that some of his hearers will see its reality before they die, whether on the mountain, at the resurrection when all authority is given to him (28:18), or in the events that followed."
+        }
+      ],
+      "parallels": ["Mark 9:1", "Luke 9:27"],
+      "refs": ["Matthew 17:1-2", "Matthew 28:18", "2 Peter 1:16-18", "Matthew 24:34-36", "Matthew 10:23"]
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The narrative of the plagues pauses so that God can reorder Israel's time before he ends its slavery. This is the only body of law in the Pentateuch given in Egypt rather than at Sinai or on the plains of Moab, and the setting is stated on purpose: Israel receives its first commandment while still in the house of bondage. Verse 2 makes the month of the exodus the head of the year, so that every later calendar begins with redemption.",
+      "grammar": "Hachodesh hazzeh, ‘this month’, uses chodesh, which means both new moon and month, since the month began with the first sliver of the new moon. The sentence is a verbless clause with a heavy front: literally ‘this month, for you, head of months; first it is for you of the months of the year’. The twice repeated lakhem, ‘for you’, marks the calendar as Israel's own: other peoples may count their year differently, but this people's year is counted from its rescue. Rosh (‘head’) is the word later used in Rosh Hashanah and Rosh Chodesh.",
+      "words": ["H2320G", "H7218J", "H7223G", "H9036"],
+      "history": "Israel knew more than one way of beginning the year. The agricultural Gezer Calendar (a limestone tablet of about the tenth century BC) begins its list of months with the autumn ingathering, and the Mishnah later names four new years, with the first of Nisan as the new year for kings and festivals and the first of Tishri, in the autumn, as the new year for counting years (m. Rosh Hashanah 1:1). This verse is the ground of the Nisan reckoning. Rashi opens his commentary on Genesis 1:1 with a saying he attributes to Rabbi Isaac: the Torah, being a book of commandments, might have begun here, with ‘This month shall be for you’, the first commandment given to Israel as a people. In the synagogue Exodus 12:1-20 is read as Parashat HaChodesh on the Sabbath before the first of Nisan.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Before Israel has a tabernacle, priesthood, or law code, God gives it a calendar. Worship begins with the ordering of time around what God has done, so that the year itself becomes a confession of redemption."
+        }
+      ],
+      "refs": ["Exodus 13:4", "Deuteronomy 16:1", "Esther 3:7", "Nehemiah 2:1"]
+    },
+    {
+      "v": "3-4",
+      "context": "The whole congregation is addressed, but the rite is carried out by households. Each father's house takes a lamb on the tenth day, and a household too small for one shares with its nearest neighbor. The instructions are practical because the meal has to be eaten entirely in one night (verse 10).",
+      "grammar": "Adat Yisrael, ‘the congregation of Israel’, uses edah, a word for an assembled community that becomes the standard name for Israel in Exodus through Numbers. The unit of the rite is the beit avot, literally ‘house of fathers’, the extended family under one head. Seh means one head of small livestock and covers both sheep and goats (verse 5 says so explicitly), so ‘lamb’ is a narrower English choice than the Hebrew requires. Verse 4 turns on two terms of reckoning: mikhsat nefashot, ‘the count of persons’, and lefi okhlo, literally ‘according to the mouth of his eating’, that is, how much each person will eat. The verb takhossu, ‘you shall compute’, is an accountant's word that occurs only here in the Bible; the related noun mikhsah, ‘count’, appears in the same verse.",
+      "words": ["H5712", "H1004M", "H7716", "H4373", "H3699", "H0400"],
+      "history": "The Mishnah distinguishes the Passover of Egypt from the Passover of later generations: in Egypt the lamb was taken on the tenth day, the blood was put on the lintel and doorposts with a bunch of hyssop, and the meal was eaten in haste on one night, while later generations kept seven days of unleavened bread (m. Pesachim 9:5). Later rabbinic law also set a minimum company for each animal, drawing on this verse's language of counting persons.",
+      "refs": ["Exodus 12:21", "Numbers 1:2", "Joshua 7:14"]
+    },
+    {
+      "v": "5",
+      "context": "The animal must be whole, male, and in its first year, and it may come from the sheep or the goats. The requirements match those for the burnt offering in Leviticus and mark the Passover animal as a gift fit for God, not a cast-off from the flock.",
+      "grammar": "Tamim, ‘unblemished’, means complete or whole. The same adjective describes Noah (Genesis 6:9) and is demanded of Abraham (Genesis 17:1), where it means moral integrity; for an animal it means free of the defects listed in Leviticus 22:20-25. Ben shanah is literally ‘son of a year’, a Hebrew idiom for age: a yearling, one within its first year.",
+      "words": ["H8549G", "H2145", "H1121L", "H8141", "H3532", "H5795"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The lamb that stands between the household and death has to be without defect. The same demand governs every sacrifice in Leviticus, and the New Testament applies it to Christ, who offered himself unblemished to God (Hebrews 9:14) and redeemed his people with blood like that of a lamb without blemish or spot (1 Peter 1:19)."
+        }
+      ],
+      "refs": ["Leviticus 22:19-21", "Leviticus 1:10", "Malachi 1:8", "Hebrews 9:14", "1 Peter 1:18-19"]
+    },
+    {
+      "v": "6",
+      "context": "The animal is kept four days and slaughtered on the fourteenth, the night of the full moon, by the whole assembly at once. The singular ‘it’ in Hebrew treats the many lambs of many houses as one act of one people.",
+      "grammar": "Lemishmeret, ‘for safekeeping’, is a noun from shamar, to guard, and the same root returns in verses 17, 24, 25, and 42, where Israel is to ‘keep’ the feast and God keeps his ‘vigil’. The time phrase ben ha'arbayim, ‘between the two evenings’, uses a dual form of erev, evening. Its sense was already disputed in antiquity. The Pharisaic and rabbinic tradition understood the span from the sun's decline after noon to sunset, so the lambs could be slaughtered in the afternoon (m. Pesachim 5:1 sets the daily evening offering on Passover eve early to make room for them). The Samaritans and later the Karaites understood the interval between sunset and full dark. Deuteronomy 16:6 says the Passover is sacrificed ‘at sunset’. The same phrase times the evening lamb of the daily offering (Exodus 29:39) and the lighting of the lamps (Exodus 30:8).",
+      "words": ["H4931", "H6153", "H0996G", "H7819A", "H6951", "H5712"],
+      "history": "By the Second Temple period the lambs were brought to the temple and killed there in the afternoon of the fourteenth of Nisan by the heads of the companies, with priests catching the blood in basins and passing it to the altar (m. Pesachim 5:5-6). Josephus says the sacrifices ran from the ninth to the eleventh hour, roughly three to five in the afternoon (Jewish War 6.423).",
+      "refs": ["Exodus 29:39", "Numbers 9:3", "Deuteronomy 16:6", "Leviticus 23:5"]
+    },
+    {
+      "v": "7",
+      "context": "The blood goes on the doorframe of each house where the meal is eaten. The house becomes the place of refuge, and its entrance, the boundary between inside and outside, carries the sign. Verse 22 will add how it is applied, and verse 23 why.",
+      "grammar": "The two locations are mezuzot, ‘doorposts’, a dual count (‘the two doorposts’), and mashqof, ‘lintel’, the beam across the top. Mashqof occurs only in this chapter. The verbs run in a chain of consecutive perfects (velaqechu... venatenu, ‘and they shall take... and they shall put’), the ordinary form of Hebrew procedural instruction, so the rite reads as a sequence of steps to be done in order.",
+      "words": ["H4201", "H4947", "H1818", "H5414H", "H3947G"],
+      "history": "Doorways had religious weight across the ancient Near East. Mesopotamian ritual texts treat the entrance as the place where harmful powers gain access to a house, and excavated Mesopotamian houses and temples have protective clay figures buried beneath floors and thresholds. Exodus uses a gesture its first readers would have recognized and fills it with new content: the blood protects only because the LORD said he would see it and pass over.",
+      "refs": ["Deuteronomy 6:9", "Exodus 21:6", "Deuteronomy 11:20"]
+    },
+    {
+      "v": "8-9",
+      "context": "The meal is specified: meat roasted whole over the fire, unleavened bread, bitter herbs. Verse 9 forbids two other ways of preparing it, raw or boiled, and insists that the animal be roasted entire, head, legs, and inner parts together.",
+      "grammar": "Tseli esh, literally ‘roast of fire’, is a construct phrase that names the method twice for emphasis (verses 8 and 9). Merorim, ‘bitter herbs’, is a plural of the adjective ‘bitter’ with no noun for plant, so the text does not say which herbs are meant; later tradition listed lettuce, chicory, and similar plants (m. Pesachim 2:6). Na, ‘raw’ or ‘underdone’, occurs only here in the Bible. Bashel mevushal combines an adjective and a Pual participle of the same root, ‘cooked, boiled’, and the phrase bammayim, ‘in water’, makes clear what kind of cooking is barred. The phrase al-merorim, literally ‘upon bitter herbs’, may mean the meat was eaten on or with them.",
+      "words": ["H6748", "H0784", "H4682", "H4844", "H4995", "H1310", "H1311"],
+      "history": "Roasting whole kept the animal intact and made the meal a single, complete sacrifice rather than portions cooked in a pot. In the reform of King Josiah the Passover was ‘roasted with fire according to the ordinance’ while other holy offerings were boiled (2 Chronicles 35:13), which shows that later readers were conscious of this verse and of Deuteronomy 16:7, whose verb can mean either boil or cook. Rabban Gamaliel's rule in the Mishnah says that whoever has not spoken of three things at Passover, the Passover sacrifice, the unleavened bread, and the bitter herbs, has not fulfilled his obligation (m. Pesachim 10:5).",
+      "refs": ["Numbers 9:11", "Deuteronomy 16:7", "2 Chronicles 35:13", "Exodus 1:14"]
+    },
+    {
+      "v": "10-11",
+      "context": "Nothing is to be left until morning; whatever remains is burned. Then comes the manner of eating: dressed for the road, sandals on, staff in hand, eating in haste. The meal is eaten by people who expect to walk out of their houses before dawn. The section closes with the naming formula, ‘it is the LORD's Passover’.",
+      "grammar": "Motnekhem chagurim, ‘your loins girded’ (the BSB paraphrases as fully dressed for travel), describes the long robe tucked up into the belt so that the legs are free to walk or run, the gesture of Elijah running before Ahab (1 Kings 18:46). Bechippazon, ‘in haste’, comes from a root meaning to hurry in alarm; the noun occurs only three times, here, in Deuteronomy 16:3, and in Isaiah 52:12, where the prophet promises a second exodus in which God's people will not go out in haste, because the LORD goes before them and behind them. Pesach hu laYHWH, ‘it is a Passover to the LORD’, is the first occurrence of the noun pesach in the Bible, and it is placed at the end of the verse as a verdict on everything just described.",
+      "words": ["H4975", "H2296", "H2649", "H6453", "H3498"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Israel eats a meal of departure while still under Pharaoh's roof. Dressing for the road before the release has happened is itself an act of trust in God's word, which is how Hebrews 11:28 reads Moses' keeping of the Passover."
+        }
+      ],
+      "refs": ["1 Kings 18:46", "Isaiah 52:12", "Deuteronomy 16:3", "Luke 12:35-36", "1 Peter 1:13"]
+    },
+    {
+      "v": "12",
+      "context": "God states what he himself will do that night. The verse moves from the land, to every firstborn of human and beast, to the gods of Egypt, and it ends with the self-identification that has sounded through the plague story: ‘I am the LORD’.",
+      "grammar": "Every main verb is first person singular: ve'avarti, ‘I will pass through’; vehikketi, ‘I will strike’; e'eseh shefatim, ‘I will execute judgments’; ani YHWH, ‘I am the LORD’. The consecutive perfects mark future certainty. Shefatim, ‘judgments’ or ‘acts of judgment’, is the word God used in 6:6 and 7:4 when he promised to bring Israel out ‘with great acts of judgment’. Elohei mitsrayim, ‘the gods of Egypt’, uses the plural elohim with a plural sense here, as the context requires.",
+      "words": ["H5674A", "H5221", "H1060", "H0430J", "H8201", "H0589"],
+      "history": "The Passover Haggadah, the order of service for the Jewish Passover meal, expounds this verse phrase by phrase to insist that God acted in person: I will pass through, I and not an angel; I will strike, I and not a seraph; I will execute judgments, I and not a messenger; I am the LORD, I and no other. Pharaoh was himself regarded as a divine son of the sun god, and the death of his heir (verse 29) was a blow to the claim of divine kingship. Numbers 33:4 recalls the night as the one on which the LORD executed judgment on Egypt's gods.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The judgment falls on persons and on powers at once. By striking the firstborn of Pharaoh, the heir of a god-king, the LORD shows that the gods Egypt trusted could not protect even their own. The verse makes the plague a verdict in a contest of sovereignty, not a random catastrophe."
+        },
+        {
+          "id": "idolatry",
+          "note": "Idols are exposed not by argument but by being judged. The gods of Egypt are named as defendants and found powerless, a theme the prophets take up when they mock gods that cannot save (Isaiah 46:1-2; Jeremiah 46:25)."
+        }
+      ],
+      "refs": ["Exodus 6:6", "Numbers 33:4", "Exodus 4:22-23", "Jeremiah 46:25", "Isaiah 19:1"]
+    },
+    {
+      "v": "13",
+      "context": "The blood is the sign, and the promise attached to it is the heart of the chapter: when God sees the blood he will pass over. The verse also names what is prevented, a plague ‘to destroy’, which prepares for ‘the destroyer’ of verse 23.",
+      "grammar": "Vehayah haddam lakhem le'ot, ‘the blood shall be for you a sign’, uses ot, the word for the covenant signs of the rainbow (Genesis 9:12-13), circumcision (Genesis 17:11), and the Sabbath (Exodus 31:13). The dative lakhem, ‘for you’, has been read two ways: a sign to Israel, strengthening their trust, or a sign on Israel's behalf, marking the house for God to see. The verse itself supports both, since it goes on, ‘when I see the blood’. Ufasachti, ‘and I will pass over’, is the verb pasach with the preposition al, ‘over’ or ‘upon’. The ancient versions already differ on its sense. The Septuagint renders it here with skepasō, ‘I will shelter’ or ‘cover’, and Targum Onqelos with an Aramaic verb meaning ‘I will have pity’ or ‘spare’, both taking the verb as protection hovering over the house; the traditional English ‘pass over’ takes it as God passing by. Isaiah 31:5 uses the same verb for the LORD shielding Jerusalem.",
+      "words": ["H1818", "H0226H", "H7200G", "H6452A", "H5063", "H4889"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The house is spared not because of who lives in it but because of what is on its door. The verse makes God's seeing the blood the ground of deliverance, and Israel's part is to trust the promise enough to act on it."
+        },
+        {
+          "id": "atonement",
+          "note": "The blood stands between the household and the plague. Whether the Passover is classed with the atoning sacrifices or apart from them, the verse establishes that a life given in the house's place is what turns judgment away, the logic Leviticus 17:11 later states for all sacrificial blood."
+        }
+      ],
+      "refs": ["Isaiah 31:5", "Genesis 9:12-13", "Hebrews 11:28", "Leviticus 17:11", "Ezekiel 9:4-6"]
+    },
+    {
+      "v": "14",
+      "context": "From here to verse 20 the speech looks past the first night to every year afterward. The day becomes a memorial and a festival, kept as a permanent statute. The shift shows that the rescue was meant to be relived, not only recalled.",
+      "grammar": "Lezikkaron, ‘as a memorial’, is from zakhar, to remember. The Septuagint renders it mnēmosynon, and the related Greek word anamnēsis is the one Jesus uses at the Last Supper in Luke's account (Luke 22:19). Vechaggotem... chag... techagguhu repeats the root chagag three times: ‘you shall festival it as a festival... you shall festival it’. The verb and noun are tied to pilgrimage feasts (the Arabic cognate gives the word hajj), and the repetition makes the command emphatic. Chuqqat olam, ‘an everlasting statute’, uses a word for an engraved or fixed decree.",
+      "words": ["H2146", "H2287", "H2282", "H1755", "H2708", "H5769G"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The verse creates a rite whose purpose is remembrance in the full biblical sense: each generation keeps the day as participants in the rescue, not only as heirs of its story. Jesus's words at the Supper, ‘Do this in remembrance of me’, draw on this vocabulary, and Christians differ over what that remembrance involves, from a memorial of Christ's death (Zwingli and the Baptist tradition) to a real sharing in his body and blood (Catholic, Orthodox, Lutheran, and Reformed traditions, each explaining the presence differently)."
+        }
+      ],
+      "refs": ["Luke 22:19", "1 Corinthians 11:24-26", "Exodus 13:9", "Deuteronomy 16:3"]
+    },
+    {
+      "v": "15",
+      "context": "The Feast of Unleavened Bread lasts seven days. On the first day leaven is removed from every house, and anyone who eats leavened food during the week is cut off from Israel. The sternness shows how closely the feast's shape is tied to the event it remembers.",
+      "grammar": "Two words for leaven appear. Se'or is the leavening agent itself, a lump of old fermented dough kept back to start the next batch; chamets is anything that has been leavened. Tashbitu, ‘you shall remove’, is a Hiphil of shavat, the verb behind Sabbath, here meaning ‘make to cease’ or ‘put an end to’. The penalty is venikhretah hannefesh hahi, ‘that person shall be cut off’, a Niphal of karat. Interpreters differ over what the penalty involved: execution by the community, exclusion from the people, or a judgment left to God, such as premature death or the end of one's family line (the view Jacob Milgrom argued in his Leviticus commentary). The Mishnah lists thirty-six offenses carrying this penalty (m. Keritot 1:1).",
+      "words": ["H7603", "H2557A", "H7673A", "H3772I", "H5315J"],
+      "history": "The house search for leaven on the eve of Passover is described in the opening chapters of Mishnah Pesachim, which rules that it is done by lamplight on the night of the fourteenth (m. Pesachim 1:1). Jewish households still keep the search and a formula renouncing any leaven overlooked.",
+      "refs": ["1 Corinthians 5:6-8", "Galatians 5:9", "Matthew 16:6", "Exodus 13:6-7"]
+    },
+    {
+      "v": "16-17",
+      "context": "The first and seventh days are sacred assemblies with work forbidden, except the preparation of food. Verse 17 gives the reason for the whole feast: on this very day God brought Israel's ‘divisions’ out of Egypt.",
+      "grammar": "Miqra qodesh, ‘a holy convocation’, is literally ‘a calling of holiness’, a day on which the people are summoned together. The exception, ‘only what every person eats, that alone may be done for you’, is the basis of the later rabbinic rule that festival days differ from the Sabbath only in the preparation of food (m. Megillah 1:5). In verse 17 ushmartem et-hammatsot, ‘you shall keep the unleavened bread’, has the verb for guarding or keeping a commandment. The Mekhilta, the early rabbinic commentary on Exodus, read the consonants of hammatsot as hammitsvot, ‘the commandments’, and drew the lesson that a commandment, like dough, should not be left to sour through delay; Rashi repeats it. Be'etsem hayyom hazzeh, ‘on this very day’, is literally ‘on the bone of this day’, an idiom for exactly that day used at the flood (Genesis 7:13) and at Abraham's circumcision (Genesis 17:23).",
+      "words": ["H4744", "H6944G", "H4399", "H8104G", "H4682", "H6106H", "H6635A"],
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The festival days share the Sabbath's rest from work but relax it for food, so that the feast can be a feast. The rest is joined to a meal because the rescue it remembers was the end of forced labor."
+        }
+      ],
+      "refs": ["Leviticus 23:6-8", "Numbers 28:17-25", "Genesis 7:13", "Genesis 17:23"]
+    },
+    {
+      "v": "18-20",
+      "context": "The dates are fixed precisely, from the evening of the fourteenth to the evening of the twenty-first, and the ban on leaven is repeated with a new clause: it applies to the resident foreigner as well as to the native Israelite. The first speech of God closes where it began, with unleavened bread in every home.",
+      "grammar": "Verse 19 names the two classes of person who make up Israel's community: the ger, the resident foreigner who lives among Israel without land of his own, and the ezrach ha'arets, the native of the land. The word ezrach is used of a tree native to its soil (Psalm 37:35), so the phrase is close to ‘one born and rooted here’. Machmetset, ‘anything leavened’, is a Hiphil participle, ‘something made to ferment’. Bekhol moshvotekhem, ‘in all your dwellings’, extends the rule to wherever Israel lives, and the same phrase in Leviticus 23 marks laws that apply outside the sanctuary.",
+      "words": ["H6153", "H1616", "H0249", "H2556A", "H4186", "H4672"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Already in Egypt the law anticipates foreigners living within Israel and binds them by the same rule. Israel is defined by covenant membership and practice, not by birth alone, a point verses 43 to 49 develop."
+        }
+      ],
+      "refs": ["Leviticus 23:5-8", "Numbers 9:14", "Numbers 15:15-16", "Psalm 37:35"]
+    },
+    {
+      "v": "21",
+      "context": "Moses now passes God's instructions to the elders. What God said in verses 1 to 13 is condensed, and new details follow. The elders are the leaders of the clans, the same men Moses gathered when he first returned to Egypt (4:29).",
+      "grammar": "Mishkhu uqechu, ‘draw out and take’, pairs two imperatives; mashakh means to pull or drag, and here probably means to draw an animal out of the flock. Lemishpechotekhem, ‘for your clans’, uses mishpachah, the kinship group larger than the household, which suggests that the elders organized the rite clan by clan. Veshachatu happasach, ‘and slaughter the Passover’, uses pesach as the name of the animal itself, the first time the word names the victim rather than the event.",
+      "words": ["H4900", "H3947G", "H4940", "H7819A", "H6453", "H2205G"],
+      "nt": [
+        {
+          "ref": "1 Corinthians 5:7",
+          "note": "Paul writes ‘Christ our Passover has been sacrificed’ using to pascha, the Greek form of the name that this verse gives to the slaughtered animal, and etythē, the verb for slaughtering a sacrificial victim. The Hebrew pesach reached Greek as pascha, through the Aramaic form, and Greek-speaking Christians kept the word for Easter. Paul's argument runs straight from Exodus: because the lamb has already been killed, the house must now be cleared of leaven (verse 15), so the church at Corinth should clear out the sin it is tolerating."
+        }
+      ],
+      "refs": ["Exodus 4:29-31", "1 Corinthians 5:7", "Exodus 3:16"]
+    },
+    {
+      "v": "22",
+      "context": "Moses adds two details God's speech did not give: the blood is applied with a bunch of hyssop dipped in a basin, and no one is to go out of the house until morning. The house marked with blood is only a refuge for those inside it.",
+      "grammar": "Aguddat ezov, ‘a bunch of hyssop’, uses a word for something tied together. The word saf, rendered ‘basin’, can also mean ‘threshold’ (Judges 19:27; 2 Kings 12:9), and both the Septuagint and the Latin Vulgate took it that way, reading ‘the blood that is on the threshold’. The early rabbis already disputed the point, Rabbi Ishmael and Rabbi Akiva taking opposite sides in the Mekhilta. On the threshold reading the animal was killed at the doorway and the blood lay on the threshold, so the whole frame of the door, bottom, sides, and top, was marked. Vehigga'tem, ‘and you shall make it touch’, is a Hiphil of naga, to touch, a verb for applying something. Ve'attem lo tetse'u, ‘and you, you shall not go out’, puts the pronoun first for emphasis.",
+      "words": ["H0092", "H0231", "H5592A", "H2881", "H5060", "H6607"],
+      "history": "Hyssop (ezov) is usually identified with Syrian marjoram (Origanum syriacum), a small aromatic plant with hairy leaves and stems that hold liquid well, which is why it served for sprinkling. It reappears in the cleansing of lepers (Leviticus 14:4-6), in the water for purification after contact with the dead (Numbers 19:18), and in the plea of Psalm 51:7. John's Gospel notes that the sponge of sour wine was lifted to Jesus on hyssop (John 19:29).",
+      "refs": ["Leviticus 14:4-6", "Numbers 19:18", "Psalm 51:7", "John 19:29", "Hebrews 9:19"]
+    },
+    {
+      "v": "23",
+      "context": "Moses explains why the blood matters: the LORD passes through to strike, sees the blood, passes over the doorway, and does not let ‘the destroyer’ enter. The verse introduces a second agent alongside the LORD, and it is the fullest statement of how the protection works.",
+      "grammar": "Hammashchit, ‘the destroyer’, is a Hiphil participle of shachat, to ruin, used as a noun with the article. Verse 13 used the same root without the article (lemashchit, ‘to destroy’), so the word can describe a function or name an agent. Verse 12 says ‘I will strike’, and verse 29 says ‘the LORD struck’, while this verse says the LORD will not ‘permit’ (yitten, literally ‘give’) the destroyer to enter. Interpreters have read the destroyer as an angel of judgment acting at God's command, as in the plague of 2 Samuel 24:16 where ‘the angel who was destroying’ uses the same participle, or as a way of speaking of the plague itself. On either reading, the destroyer is under God's command and cannot pass a door God protects. Here pasach al-happetach, ‘pass over the door’, pairs most naturally with the sense of standing guard over it, since the result is that the destroyer is kept out.",
+      "words": ["H5674A", "H5062", "H6452A", "H6607", "H7843", "H5414K"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The destroyer acts only within the limits God sets. Scripture regularly presents agents of judgment as under God's command (2 Samuel 24:16; 1 Corinthians 10:10), and this verse shows the same God both sending judgment and restraining it at the marked door."
+        }
+      ],
+      "refs": ["2 Samuel 24:16", "1 Corinthians 10:10", "Hebrews 11:28", "Isaiah 37:36"]
+    },
+    {
+      "v": "24-25",
+      "context": "The command is made permanent and carried forward into the land God has promised. The instruction is given before Israel has left Egypt, yet it already assumes arrival: the same people who have not yet crossed the sea are told what to do when they are settled in Canaan.",
+      "grammar": "Ha'avodah hazzot, ‘this service’, uses avodah, the noun from avad, to work or serve. The same root has described Israel's hard labor for Pharaoh (1:13-14; 2:23), and God's demand throughout the plagues has been ‘let My people go, so that they may serve [worship] Me’. The chapter turns the word of slavery into the word of worship: Israel exchanges forced service to Pharaoh for this service to the LORD. Ka'asher dibber, ‘as He promised’, refers back to the promise of the land (3:8, 6:8).",
+      "words": ["H5656G", "H8104G", "H2706G", "H1696I", "H0935G"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Worship is described with the same word as slavery, but the master has changed. The exodus is not freedom from all service but release into the service of the God who frees, which is why the ritual of remembrance is itself called avodah."
+        }
+      ],
+      "refs": ["Exodus 1:13-14", "Exodus 4:23", "Exodus 13:5", "Romans 6:17-18"]
+    },
+    {
+      "v": "26-27",
+      "context": "The rite is built to provoke a child's question, and the answer is supplied: it is the LORD's Passover sacrifice, because he passed over Israel's houses and spared them. The people respond by bowing and worshiping, the same response they gave when they first heard that God had seen their misery (4:31).",
+      "grammar": "The child's question, mah ha'avodah hazzot lakhem, is literally ‘what is this service to you?’ The answer names the rite zevach-pesach, ‘a Passover sacrifice’, using zevach, the ordinary word for a slaughtered offering whose meat is eaten by the worshipers, as with the peace offering. The Passover is thus classed with the communal sacrificial meals, not with the whole burnt offering. Hitsil, ‘he delivered’, a Hiphil of natsal, is the verb God used when he promised in 3:8 to come down ‘to rescue them’. The response pairs vayyiqqod, ‘and they bowed low’, with vayyishtachavu, a verb of full prostration.",
+      "words": ["H5656G", "H2077", "H6453", "H6452A", "H5337", "H6915", "H7812"],
+      "history": "The Passover Haggadah builds its teaching of children on four questions and four sons. The son it calls wicked is the one who asks this verse's question, ‘What is this service to you?’, and the Haggadah seizes on the words ‘to you’: by excluding himself, he has excluded himself from the community that was redeemed. The Haggadah draws each son's question from a different verse (Exodus 12:26, 13:8, 13:14, and Deuteronomy 6:20).",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Faith is handed on through a household meal and a child's question. The verse assumes that children will notice the strangeness of what their parents do and ask, and it makes the parents responsible for an answer that tells the story of God's act."
+        },
+        {
+          "id": "atonement",
+          "note": "The answer the children are given calls the rite a sacrifice. The Passover lamb is not merely food but a victim slain to the LORD, and the protection of the household is bound to its death."
+        }
+      ],
+      "refs": ["Exodus 13:8", "Exodus 13:14-15", "Deuteronomy 6:20-25", "Joshua 4:6-7", "Psalm 78:4-7"]
+    },
+    {
+      "v": "28",
+      "context": "A one-sentence report of obedience ends the instructions. Israel does exactly what was commanded before anything has happened, and the narrator notes it twice in one verse. The obedience of the Israelites stands in contrast to Pharaoh's refusal across ten chapters.",
+      "grammar": "The verse is framed by the same verb at both ends: vayya'asu, ‘and they did’, and ken asu, ‘so they did’. Between them is the compliance formula ka'asher tsivvah YHWH, ‘just as the LORD had commanded’, which becomes the refrain of the tabernacle chapters (Exodus 39 and 40) and of Leviticus 8. The Piel perfect tsivvah, ‘he had commanded’, is set in the past relative to the action, as the English pluperfect shows.",
+      "words": ["H6213A", "H6680", "H3651C", "H1980G"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The Israelites obey a command whose promise has not yet been fulfilled. Their obedience is the form their trust takes, which is why Hebrews can describe the Passover as kept by faith."
+        }
+      ],
+      "refs": ["Exodus 39:42-43", "Exodus 40:16", "Hebrews 11:28", "Exodus 12:50"]
+    },
+    {
+      "v": "29",
+      "context": "The narrative resumes at midnight, as announced in 11:4. The LORD strikes every firstborn from the throne to the dungeon, and the animals too. The two ends of Egyptian society stand for everything between them.",
+      "grammar": "Vayhi bachatsi hallaylah, ‘and it came to pass at the half of the night’, opens with the narrative formula that marks a decisive moment. The subject is then fronted, vaYHWH hikkah, ‘and the LORD, he struck’, putting the actor before the verb for emphasis. The social range runs from Pharaoh hayyoshev al-kis'o, ‘who sits on his throne’, to the captive asher beveit habbor, ‘who is in the house of the pit’. Bor is a cistern or pit and served as a prison; Joseph used the same word for his Egyptian prison (Genesis 40:15). In 11:5 the lower limit was the slave girl at the millstones; here it is the prisoner, so between the two verses every station of life is named.",
+      "words": ["H2677", "H3915", "H5221", "H1060", "H3427", "H0953A", "H7628A"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The last plague answers the first act of oppression. Pharaoh ordered Israel's sons thrown into the Nile (1:22), and God had warned that because Pharaoh refused to release his firstborn son Israel, Pharaoh's own firstborn would die (4:22-23). The verse carries out a judgment announced long in advance and refused ten times."
+        }
+      ],
+      "refs": ["Exodus 11:4-6", "Exodus 4:22-23", "Psalm 78:51", "Psalm 105:36", "Psalm 136:10"]
+    },
+    {
+      "v": "30",
+      "context": "Pharaoh rises in the night with his officials and all Egypt, and a great cry goes up because there is no house without a dead person. The cry of Egypt now answers the cry of Israel that opened the story of rescue.",
+      "grammar": "Tse'aqah gedolah, ‘a great cry’, fulfills 11:6 word for word, and tse'aqah is the same noun used when God said, ‘I have heard their cry’ (3:7, 3:9). The reversal is deliberate: the cry of the enslaved has become the cry of the enslavers. The final clause is a double negative, literally ‘there was not a house where there was not there a dead one’, which stresses completeness. Met, ‘dead’, is a Qal participle used as a noun.",
+      "words": ["H6818", "H1419A", "H0369", "H4191", "H6965B"],
+      "refs": ["Exodus 11:6", "Exodus 3:7-9", "Exodus 2:23", "Psalm 105:38"]
+    },
+    {
+      "v": "31-32",
+      "context": "Pharaoh, who had told Moses he would never see his face again (10:28), now summons him by night. He grants everything he had bargained over in the plagues: all the people, the flocks, and the herds. His last words are a request for blessing, from the king who had asked, ‘Who is the LORD, that I should obey His voice?’ (5:2).",
+      "grammar": "Pharaoh's speech is a volley of imperatives: qumu, ‘rise’; tse'u, ‘go out’; lekhu, ‘go’; ivdu, ‘serve’; qechu, ‘take’; and lekhu again. Ivdu et-YHWH, ‘serve the LORD’, completes the theme of avad, since Pharaoh himself now releases Israel to the service he had refused. The double gam... gam, ‘both... and’, is repeated in both verses, stripping away every condition Pharaoh had tried to set (8:28; 10:10-11, 24). Uverakhtem gam oti, ‘and bless me also’, is a consecutive perfect with the force of a request.",
+      "words": ["H6965B", "H3318G", "H5647H", "H1571", "H1288", "H6629G", "H1241"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The ruler who claimed to own Israel's labor ends by ordering Israel to serve the LORD and asking for blessing. The story's question since 5:2 (who is the LORD?) is answered from Pharaoh's own mouth."
+        }
+      ],
+      "refs": ["Exodus 5:2", "Exodus 10:24-28", "Exodus 8:28", "Genesis 12:3", "Genesis 47:7-10"]
+    },
+    {
+      "v": "33-34",
+      "context": "The Egyptians press Israel to leave in a hurry, fearing that all of them will die. The people pick up their dough before it has risen and carry it in kneading bowls wrapped in their cloaks. The detail explains the unleavened bread of the feast in terms of the night itself.",
+      "grammar": "Vatecheziq mitsrayim al-ha'am, ‘and Egypt was strong upon the people’, uses chazaq, the verb used through the plague narrative for the hardening of Pharaoh's heart. The same force that held Israel back now drives it out. Kullanu metim, ‘all of us are dying’, is a participle, which here expresses the Egyptians' fear of what is about to happen. In verse 34 terem yechmats, ‘before it was leavened’, uses terem with the imperfect, the standard construction for ‘not yet’. Mish'arotam, ‘their kneading troughs’, were shallow bowls, light enough to carry on the shoulder bound in a cloak.",
+      "words": ["H2388G", "H4116A", "H4191", "H1217", "H2962", "H2556A", "H4863", "H8071"],
+      "refs": ["Exodus 11:1", "Exodus 8:3", "Deuteronomy 16:3", "Psalm 105:38"]
+    },
+    {
+      "v": "35-36",
+      "context": "The Israelites ask their Egyptian neighbors for silver, gold, and clothing, as Moses had instructed (11:2), and the Egyptians give. The promise to Abraham that his descendants would come out ‘with many possessions’ (Genesis 15:14) and the promise to Moses at the bush (3:21-22) are fulfilled.",
+      "grammar": "Vayyish'alu, ‘and they asked’, is the ordinary verb for requesting, and the text does not suggest deceit; the older English ‘borrow’ (King James Version) implied a promise to return that the Hebrew does not contain. In verse 36 vayyash'ilum is the Hiphil of the same verb, ‘they let them have what they asked’, a play on words: Israel asked, and Egypt granted the asking. Vaynatsetsu, ‘and they plundered’, is a Piel of natsal, whose ordinary Hiphil sense is ‘rescue’ (verse 27); in the Piel it means to strip, as spoil is stripped from the defeated. The same Piel form was used in God's promise at the bush, ‘you will plunder the Egyptians’ (3:22), so the narrator marks this as that word coming true.",
+      "words": ["H7592", "H3627", "H2580", "H5869H", "H5337"],
+      "history": "The theme of ‘plundering the Egyptians’ had a long afterlife in Christian thought. Origen, in his letter to his student Gregory, and Augustine in On Christian Doctrine (book 2, chapter 40) read the Egyptian gold as a figure for the learning and arts of the pagan world, which Christians could take and put to the service of God. The gold itself appears again twice in Exodus: given for the golden calf (32:2-4) and freely offered for the tabernacle (35:22).",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Israel leaves not as runaways with nothing but as laborers paid at last. Later law applies the principle to every released slave, who is not to be sent away empty-handed (Deuteronomy 15:13-15), and it grounds the rule in the memory of Egypt."
+        }
+      ],
+      "refs": ["Genesis 15:14", "Exodus 3:21-22", "Exodus 11:2-3", "Deuteronomy 15:13-15", "Psalm 105:37"]
+    },
+    {
+      "v": "37",
+      "context": "The march begins: from Rameses to Succoth, about six hundred thousand men on foot besides dependents. The first stage of the route is recorded as a travel notice, and Numbers 33:3-5 repeats it in its list of Israel's stages.",
+      "grammar": "Vayyis'u, ‘and they set out’, is nasa, literally to pull up tent pegs, the regular verb for breaking camp and moving on in the wilderness stories. Ragli means ‘on foot’ and is used elsewhere of foot soldiers (Numbers 11:21; 1 Samuel 4:10), and haggevarim, ‘the men’, uses gever, a strong or adult male. The number is ke-shesh me'ot elef, ‘about six hundred elef’. Elef normally means ‘thousand’, but in some texts it names a clan or a military unit (Judges 6:15; 1 Samuel 10:19), which is why some scholars, from Flinders Petrie to George Mendenhall, have proposed reading the figure as a count of units rather than of individuals. Others keep the plain sense, which agrees with the census totals of Numbers 1:46 and 26:51 and with Numbers 11:21. Mittaf, ‘besides little ones’, uses taf, dependents too young to march, a word that in context includes the women and children.",
+      "words": ["H5265", "H7486G", "H5523H", "H0505G", "H7273", "H1397", "H2945"],
+      "history": "Rameses is generally identified with Pi-Ramesses, the Delta capital of Ramesses II (about 1279 to 1213 BC), whose remains lie at Qantir, next to Tell el-Dab'a, the site of the earlier city of Avaris. Succoth is widely identified with Egyptian Tjeku, in the Wadi Tumilat, the valley running east from the Delta toward the Bitter Lakes, and often with the site of Tell el-Maskhuta. Those who hold an earlier date for the exodus, in the fifteenth century BC, take the name Rameses as an updating of an older place name, as Genesis 47:11 uses it for the region in Joseph's time.",
+      "text": "The Hebrew ‘about six hundred thousand’ stands in every ancient witness, so the question about its size is one of interpretation, not of manuscripts. The BSB's ‘men on foot, besides women and children’ reflects the Hebrew fairly; some translations render ‘on foot’ as ‘foot soldiers’, anticipating the military language of verse 41.",
+      "refs": ["Numbers 33:3-5", "Numbers 1:46", "Numbers 11:21", "Genesis 47:11", "Exodus 1:11"]
+    },
+    {
+      "v": "38-39",
+      "context": "Others leave with Israel: a mixed multitude, and great numbers of animals. Verse 39 explains the unleavened loaves they baked on the road and gives the reason: they were driven out and had no time to prepare provisions. The feast of verses 14 to 20 is here rooted in the circumstances of the departure.",
+      "grammar": "Erev rav, ‘a great mixed company’, uses erev, a word related to arav, to mix; Nehemiah 13:3 uses it for people of foreign descent separated from Israel. Alah, ‘went up’, is the verb of ascent used for leaving Egypt for Canaan, which lies higher. In verse 39 ugot matsot are ‘cakes of unleavened bread’, flat rounds baked on hot stones or embers (Genesis 18:6 has Sarah making ugot). Goreshu, ‘they were driven out’, is a Pual (passive) of garash, the verb God used in 6:1 and 11:1 when he said Pharaoh would ‘drive’ them out. Lehitmahmeah, ‘to delay’, is a rare Hithpael form with a doubled syllable, a word that sounds like lingering.",
+      "words": ["H6154M", "H5927G", "H5692", "H1644G", "H4102", "H6720"],
+      "history": "Later Jewish tradition gave the mixed multitude a mixed reputation. Rashi, following the Midrash, blamed them for the golden calf, reading God's words to Moses, ‘your people’, in 32:7 as meaning the mixed crowd Moses had accepted. Numbers 11:4 speaks of ‘the rabble’ among the people who craved meat, a different Hebrew word, which many interpreters identify with the same group.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The redeemed people leave Egypt already including outsiders. From its first day Israel was not a closed ethnic body, and the law that follows (verses 43 to 49) sets out how outsiders may join it fully."
+        }
+      ],
+      "refs": ["Numbers 11:4", "Nehemiah 13:3", "Exodus 6:1", "Exodus 11:1", "Genesis 18:6"]
+    },
+    {
+      "v": "40",
+      "context": "The narrator steps back to state the length of Israel's stay in Egypt: 430 years. The figure closes the story of the sojourn that began when Jacob's family went down to Egypt (Genesis 46) and prepares for the note in verse 41 that the exodus happened on the anniversary.",
+      "grammar": "Moshav, ‘dwelling’ or ‘stay’, is from yashav, to sit or dwell. The relative clause asher yashvu bemitsrayim, ‘which they dwelt in Egypt’, limits the span to Egypt in the Hebrew text. The number is given in ascending order, ‘thirty years and four hundred years’, a common Hebrew way of writing compound numbers.",
+      "words": ["H4186", "H3427", "H7970", "H3967", "H8141"],
+      "text": "The Masoretic Text, the standard Hebrew text, says the sojourn in Egypt was 430 years. The Septuagint reads ‘in the land of Egypt and in the land of Canaan’, and the Samaritan Pentateuch reads ‘in the land of Canaan and in the land of Egypt’, both counting from Abraham's arrival in Canaan. On that reckoning the stay in Egypt itself lasted about 215 years, which is the figure Josephus gives (Antiquities 2.318), and Paul's statement that the law came 430 years after the promise (Galatians 3:17) fits it. The shorter span also fits the genealogy of Exodus 6:16-20, which puts only Kohath and Amram between Levi and Moses, and Genesis 15:16, which speaks of the fourth generation returning. Those who keep the Masoretic figure point to Genesis 15:13 (four hundred years of affliction) and Acts 7:6, and many take the genealogies as selective. Most text critics regard the Masoretic reading as the harder and probably original reading, with the Greek and Samaritan texts smoothing the chronology.",
+      "refs": ["Genesis 15:13-16", "Galatians 3:17", "Acts 7:6", "Exodus 6:16-20"]
+    },
+    {
+      "v": "41-42",
+      "context": "The exodus takes place at the end of the 430 years ‘to the very day’, as an army of the LORD marching out. Because the LORD kept watch that night to bring them out, Israel is to keep the same night as a watch for the LORD in every generation.",
+      "grammar": "Tsiv'ot YHWH, ‘the hosts of the LORD’, is the plural of tsava, army, the word behind the divine title ‘LORD of hosts’. God promised in 7:4 to bring out ‘My divisions, My people’, and here the narrator uses the same word. Verse 42 opens with a verbless clause: leil shimmurim hu laYHWH, literally ‘a night of watchings it is for the LORD’. Shimmurim is a plural of intensity from shamar, to keep or guard, and occurs only in this verse. It is then repeated, hu hallaylah hazzeh laYHWH shimmurim, ‘this same night is watchings for the LORD’. The first phrase can mean the LORD kept watch (as the BSB reads), and the second that Israel keeps watch in his honor, so the one word joins God's watching over Israel to Israel's watching before God.",
+      "words": ["H6635A", "H6106H", "H7093", "H8107", "H3318H"],
+      "history": "The Aramaic Targum Neofiti expands verse 42 into a poem of four nights kept in the book of memorials: the night of creation, the night of God's covenant with Abraham, the night of the exodus, and the night when the world will reach its end and be redeemed, when Moses and the Messiah will come. Jewish tradition calls the Seder night leil shimmurim, and the Christian Easter Vigil, the night watch before Easter, likewise treats the night of the exodus as the pattern of the night of the resurrection.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "God's vigil on the first Passover night becomes Israel's vigil in every later year, and later Jewish tradition read it as a night of waiting for final redemption. The verse makes remembrance of past rescue into watchfulness for the next."
+        }
+      ],
+      "refs": ["Exodus 7:4", "Psalm 121:4", "Exodus 6:26", "Joshua 5:13-15", "Mark 13:35-37"]
+    },
+    {
+      "v": "43-45",
+      "context": "A new speech sets the rule for who may eat the Passover. A foreigner may not; a slave bought with money may, once he is circumcised; a temporary resident or hired worker may not. The rule is placed after the exodus narrative because the mixed multitude of verse 38 has just made the question urgent.",
+      "grammar": "Chuqqat happasach, ‘the statute of the Passover’, is a heading for the paragraph. Ben-nekhar, literally ‘a son of foreignness’, is an outsider who keeps his own identity and gods; it is a stronger term than ger (verse 48), the resident alien who has settled among Israel. Toshav, ‘temporary resident’, and sakhir, ‘hired worker’, describe people attached to a household only for a time or a wage. The difference between the slave and the hired worker is striking: the slave, bought with silver (mikhnat-kasef) and circumcised, is a permanent member of the household and eats, while the free hired man, who is only passing through, does not. The dividing line is belonging, not status. Umaltah, ‘and you shall circumcise’, is a consecutive perfect addressed to the master.",
+      "words": ["H2708", "H5236", "H4736", "H4135A", "H8453A", "H7916"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Eating the Passover requires the covenant sign. The meal belongs to the people bound to God by circumcision (Genesis 17:10-14), so admission to the rite and admission to the covenant go together."
+        }
+      ],
+      "refs": ["Genesis 17:12-13", "Leviticus 22:10-11", "Ezekiel 44:9", "Joshua 5:2-10"]
+    },
+    {
+      "v": "46",
+      "context": "The meal must be eaten inside one house, no meat may be carried outside, and no bone may be broken. The lamb stays whole and the household stays together around it, marking the unity of those who share it.",
+      "grammar": "Bebayit echad ye'akhel, ‘in one house it shall be eaten’, uses a Niphal (passive) imperfect, so the rule is about the animal, not only the eaters. Lo totsi, ‘you shall not bring out’, is singular, addressed to each householder, while the next verb, lo tishberu, ‘you shall not break’, is plural. Etsem is ‘bone’; it is the same noun used in verses 17, 41, and 51 in the idiom ‘the bone of the day’, though the two uses are unrelated in sense.",
+      "words": ["H1004B", "H0259", "H0398", "H3318H", "H6106G", "H7665"],
+      "nt": [
+        {
+          "ref": "John 19:36",
+          "note": "John reports that the soldiers broke the legs of the two men crucified with Jesus but not his, and says this fulfilled the Scripture ‘Not one of His bones will be broken’. The Hebrew of Exodus 12:46 is a command, ‘you shall not break a bone in it’, repeated in Numbers 9:12, and the Septuagint keeps it as a command. John's wording has a passive verb, which matches Psalm 34:20, where God keeps all the bones of the righteous sufferer and not one is broken. John appears to draw on both: the Passover rule gives the ‘bone’ and the sacrificial meaning, and the psalm gives the passive and the picture of God guarding the righteous. Since John also dates Jesus' death to the day of Preparation, when the lambs were killed (John 19:14), most interpreters read the verse as John's presentation of Jesus as the Passover lamb."
+        }
+      ],
+      "refs": ["Numbers 9:12", "John 19:36", "Psalm 34:20", "1 Corinthians 10:17"]
+    },
+    {
+      "v": "47-49",
+      "context": "The whole congregation must keep the Passover. A resident foreigner who wishes to keep it must have the males of his household circumcised; then he may come near and be ‘like a native of the land’. No uncircumcised man may eat it, and verse 49 states the principle: one law for native and foreigner alike.",
+      "grammar": "Veki-yagur ittekha ger, ‘and if a sojourner sojourns with you’, uses the noun ger and its related verb gur together, stressing that this is someone who has settled. Himmol lo khol-zakhar, ‘let every male of his be circumcised’, has a Niphal form that the standard analyses list as an imperative; many grammarians take it as an infinitive absolute doing the work of a command, a common Hebrew idiom. Az yiqrav, ‘then he may draw near’, uses qarav, the verb of approaching God in worship, from which the word qorban, offering, comes. Vehayah ke'ezrach ha'arets, ‘he shall be like a native of the land’, grants full status. Torah achat, ‘one law’, is one of the earliest uses of the word torah for a rule binding the community, and its content here is equality.",
+      "words": ["H1481A", "H1616", "H4135A", "H7126G", "H0249", "H6189", "H8451", "H0259"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The door into Israel's central rite is open to any foreigner willing to take the covenant sign, and once inside he is no longer second class. The Old Testament's openness to outsiders, seen in Rahab, Ruth, and Isaiah 56:6-7, has its legal root here."
+        },
+        {
+          "id": "law",
+          "note": "‘One law’ binds the native and the foreigner equally. The principle recurs in Leviticus 24:22 and Numbers 15:15-16, and it makes Israel's law a protection for the stranger rather than an instrument of privilege."
+        }
+      ],
+      "refs": ["Numbers 9:14", "Leviticus 24:22", "Numbers 15:15-16", "Isaiah 56:6-7", "Ephesians 2:12-13"]
+    },
+    {
+      "v": "50-51",
+      "context": "The chapter ends with a second report of obedience and a closing summary. Verse 51 repeats the thought of verse 41, the LORD bringing Israel out ‘by their divisions’ on that very day, and so frames the Passover law with the event itself.",
+      "grammar": "Verse 50 repeats verse 28 almost exactly, ka'asher tsivvah YHWH... ken asu, ‘just as the LORD commanded... so they did’, giving the chapter a double seal of obedience. Verse 51 ends with al-tsiv'otam, ‘by their hosts’ or ‘by their divisions’, the same military term as verse 41. Hotsi, ‘He brought out’, is a Hiphil perfect of yatsa, the causative ‘to bring out’, the verb that gives the book its theme and that the Ten Commandments will open with (20:2).",
+      "words": ["H6213A", "H6680", "H3318H", "H6635A", "H6106H"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The last word of the chapter belongs to God's act: the LORD brought Israel out. Israel's obedience has been real and repeated, but the chapter ends by naming who did the rescuing, the note on which the Ten Commandments begin (20:2)."
+        }
+      ],
+      "refs": ["Exodus 12:28", "Exodus 12:41", "Exodus 20:2", "Exodus 6:26"]
+    }
+  ]
+}

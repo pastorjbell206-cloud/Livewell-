@@ -1,0 +1,225 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The dragon has taken his stand by the sea (12:17), and out of the sea comes his agent. The beast is described in the dragon's own image, ten horns and seven heads, but with the crowns moved from heads to horns and with blasphemous names written on it. The next verse will show where its power comes from.",
+      "grammar": "Anabainon, ‘coming up’, is a present participle: John watches the beast in the act of rising. Thērion means a wild animal, and the neuter noun governs a string of neuter participles and pronouns through the chapter. The beast wears ten diadēmata, royal crowns, the dragon's word from 12:3, and on its heads onomata blasphēmias, literally ‘names of blasphemy’, titles that claim for a human ruler what belongs to God.",
+      "words": ["G2342", "G2281", "G0305", "G1238", "G3686", "G0988"],
+      "history": "Roman emperors bore titles that Jews and Christians could only hear as blasphemy. Augustus was called in Greek Sebastos, ‘the one to be revered’, and many emperors were styled divi filius, ‘son of the deified one’. Suetonius (Domitian 13.2) reports that Domitian, emperor from 81 to 96, had official letters begin with the phrase ‘our Lord and God’. For readers in Asia, where Roman governors and legions arrived across the sea from the west, a beast rising from the sea would have looked like Rome's power coming ashore.",
+      "text": "Most early manuscripts read onomata, ‘names’, which modern editions print; the text behind the King James Version has onoma, ‘the name of blasphemy’. The plural suggests many titles, the singular one overarching claim; the sense is close either way.",
+      "ot": [
+        {
+          "ref": "Daniel 7:3",
+          "note": "Daniel sees four great beasts coming up from the sea, which the Aramaic calls the great sea stirred by the four winds; the Septuagint has the same verb John uses, anabainō. Daniel's beasts are successive empires (Babylon and those after it, 7:17), and the fourth has ten horns (7:7). John's single beast rises the same way and carries the fourth beast's horns, a sign that it gathers the whole line of empires into one."
+        }
+      ],
+      "refs": ["Daniel 7:3", "Daniel 7:7", "Revelation 12:3", "Revelation 17:3", "Revelation 17:9-12"]
+    },
+    {
+      "v": "2",
+      "context": "The beast combines the animals of Daniel's vision, and then the verse says where its authority comes from: the dragon hands it over. The transfer of power, throne, and authority is the chapter's key fact about the beast.",
+      "grammar": "John lists the animals in reverse order from Daniel 7:4-6 (lion, bear, leopard), moving from the empire nearest him back through its predecessors. The dragon gives three things: dunamis, ‘power’; thronos, ‘throne’; and exousia megalē, ‘great authority’. The triad parodies what the Lamb receives from God (5:12 gives him power, and 3:21 has him share his Father's throne). Thronos is a charged word in Revelation, used more than forty times, nearly always of God's throne; that the dragon has one at all, and gives it away, marks the beast as a rival kingdom.",
+      "words": ["G3917", "G0715", "G3023", "G1325", "G1411", "G2362", "G1849"],
+      "theology": [
+        {
+          "id": "state",
+          "note": "Paul wrote that the governing authorities are instituted by God (Romans 13:1); here a state receives its authority from the dragon. The two chapters are not in contradiction: a government that serves justice acts as God's servant, and one that demands worship and makes war on the saints has become the dragon's instrument. Oscar Cullmann, in The State in the New Testament (1956), set the two texts side by side as the New Testament's two faces of the state."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:4-6",
+          "note": "In the Aramaic of Daniel the first beast is like a lion with eagle's wings, the second like a bear, the third like a leopard with four wings and four heads; the Septuagint keeps the same animals. Daniel's four heads plus the single heads of the others make seven, which may be where John's seven heads come from. Each beast in Daniel is an empire; John's composite beast is imperial power as such, which in his day wore Rome's face."
+        }
+      ],
+      "refs": ["Daniel 7:4-6", "Revelation 5:12", "Luke 4:5-6", "Romans 13:1-4", "John 19:10-11"]
+    },
+    {
+      "v": "3",
+      "context": "One head has what looks like a fatal wound that has been healed, and the world is amazed. The wound is the beast's imitation of the Lamb's death and resurrection, and it wins the beast a following.",
+      "grammar": "Hōs esphagmenēn eis thanaton, ‘as slaughtered to death’, uses the same verb and construction as the Lamb that stood hōs esphagmenon, ‘as slain’, in 5:6. The parody is exact. Hē plēgē tou thanatou, ‘the wound of death’, etherapeuthē, ‘was healed’, an aorist passive. Ethaumasthē holē hē gē opisō tou thēriou is literally ‘the whole earth marveled after the beast’, a compressed construction in which the preposition opisō, ‘after’, turns amazement into following: they wondered and went after it.",
+      "words": ["G2776", "G4969", "G4127", "G2323", "G2296", "G3694"],
+      "history": "Nero died by his own hand in June of AD 68, and within a year three emperors had fallen in civil war before Vespasian restored order. Rumors spread that Nero had not died and would return from the east. Tacitus (Histories 2.8) describes a pretender who appeared in AD 69, and Suetonius (Nero 57) reports another, about twenty years after Nero's death, who found support among the Parthians. The Jewish Sibylline Oracles (book 4, lines 119-124 and 137-139) speak of Nero fleeing beyond the Euphrates and returning. Many interpreters see the healed head as John's use of this legend; others take the wound as the empire's near collapse in 68 and 69, or as a purely symbolic parody of the resurrection.",
+      "refs": ["Revelation 5:6", "Revelation 13:12", "Revelation 13:14", "Revelation 17:8", "2 Thessalonians 2:9"]
+    },
+    {
+      "v": "4",
+      "context": "Amazement becomes worship, of the dragon behind the beast and of the beast itself. The crowd's question explains why: the beast seems unbeatable.",
+      "grammar": "Prosekunēsan, ‘they worshiped’, appears twice, first with the dragon and then with the beast as its object. Tis homoios tō thēriō, ‘Who is like the beast?’, parodies Israel's praise of God at the sea, and it mocks the name of Michael, which means ‘Who is like God?’, the angel who had just thrown the dragon out of heaven (12:7). The second question, ‘who is able to make war with it?’, uses polemēsai, the verb of Michael's war in 12:7. The world's creed is that power is its own proof.",
+      "words": ["G4352", "G1404", "G3664", "G4170"],
+      "history": "The province of Asia led the empire in the worship of Rome and its rulers. Pergamum received permission for a temple to Roma and Augustus in 29 BC (the background, many think, of \"where the throne of Satan sits\" in 2:13). Smyrna won the right to build a temple to Tiberius, his mother Livia, and the Senate in AD 26 after a contest among eleven cities that Tacitus records (Annals 4.55-56). Ephesus dedicated a temple to the Flavian emperors, the Sebastoi, around AD 89 or 90, with a colossal statue whose head and forearm survive. Honoring the emperor with sacrifice and festival was civic duty, and refusing it looked like disloyalty.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The verse shows how idolatry works: people see power, are amazed, and worship it. The beast's claim is that no one can resist it, and the world's worship is the admission that it believes the claim."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 15:11",
+          "note": "Moses' song at the sea asks mi kamokha baelim YHWH, ‘Who is like you among the gods, O LORD?’; the Septuagint has tis homoios soi. The question praises the God who has just defeated Pharaoh's army. The beast's worshipers borrow Israel's liturgy for the beast, and the rest of Revelation, especially the song of Moses and the Lamb in 15:3-4, answers them."
+        }
+      ],
+      "refs": ["Exodus 15:11", "Psalm 89:6-8", "Micah 7:18", "Revelation 2:13", "Revelation 15:3-4"]
+    },
+    {
+      "v": "5-6",
+      "context": "The beast speaks arrogantly and blasphemes, and its time is limited to forty-two months. What it attacks is God's name and God's dwelling, which the verse identifies with God's people in heaven.",
+      "grammar": "Edothē autō, ‘there was given to it’, appears twice in verse 5 and again in verses 7, 14, and 15. It is a divine passive: the beast acts only as far as it is permitted, and for a fixed time. Stoma laloun megala, ‘a mouth speaking great things’, is lifted from Daniel's description of the little horn. In verse 6 the object of blasphemy is God's name and tēn skēnēn autou, tous en tō ouranō skēnountas, ‘his tabernacle, those who tabernacle in heaven’. The second phrase stands in apposition to the first: God's dwelling is his people. The forty-two months equal the 1,260 days and ‘time, times, and half a time’ of chapter 12.",
+      "words": ["G1325", "G4750", "G2980", "G0988", "G3376", "G4633", "G4637"],
+      "history": "The three and a half years go back to Daniel, where they measured the persecution under the Seleucid king Antiochus IV Epiphanes. His officials set up an altar to Zeus on the temple's altar of burnt offering in December 167 BC (1 Maccabees 1:54), and Judas Maccabeus rededicated the temple about three years later, in December 164 BC (1 Maccabees 4:52). A known historical crisis of limited length became, for later readers, the pattern of every persecution God allows but also ends.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Four times in the chapter the beast is ‘given’ what it does. Even at its most arrogant it acts inside boundaries God has drawn, and for a period God has numbered."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:8",
+          "note": "In Daniel's Aramaic the little horn has ‘a mouth speaking great things’, and 7:25 says it will speak words against the Most High, wear out the holy ones, and prevail for a time, times, and half a time. The Septuagint and Theodotion both render the first phrase with stoma lalōn megala, which John reproduces. Daniel's horn is Antiochus IV; John's beast inherits both the mouth and the time limit."
+        }
+      ],
+      "refs": ["Daniel 7:8", "Daniel 7:25", "Daniel 11:36", "2 Thessalonians 2:4", "Revelation 11:2"]
+    },
+    {
+      "v": "7",
+      "context": "The beast makes war on the saints and conquers them, and its authority is universal. The verse states the church's defeat as bluntly as 12:11 stated its victory, and both are true at once.",
+      "grammar": "Nikēsai autous, ‘to conquer them’, uses the verb of 12:11, where the saints conquer the dragon. The paradox is deliberate: in the beast's courts the saints lose, by being killed; in God's reckoning the same deaths are their victory. The fourfold list, ‘every tribe and people and tongue and nation’, is the same universal formula used of the Lamb's redeemed in 5:9 and 7:9. The beast claims the very peoples the Lamb has ransomed.",
+      "words": ["G4171", "G0040H", "G3528", "G5443", "G1100", "G1484"],
+      "text": "The first half of the verse, ‘it was permitted to wage war against the saints and to conquer them’, is missing from several important witnesses, including Papyrus 47 and Codex Alexandrinus. The omission is easily explained as a slip of the eye, since both halves begin with the same words (kai edothē autō), and the modern editions keep the clause.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Revelation does not promise the church outward success against the beast. It says plainly that the saints will be overcome, and it relocates victory to faithfulness unto death."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:21",
+          "note": "In Daniel's Aramaic the horn ‘made war with the holy ones and prevailed over them’ until the Ancient of Days came and judgment was given for them (7:22). Theodotion's Greek has epoiei polemon meta tōn hagiōn, closely matched by John's wording. Daniel moves at once from the saints' defeat to their vindication, and Revelation follows the same path in chapters 14 and 20."
+        }
+      ],
+      "refs": ["Daniel 7:21-22", "Revelation 11:7", "Revelation 5:9", "Revelation 12:11"]
+    },
+    {
+      "v": "8",
+      "context": "All earth-dwellers will worship the beast, except those whose names are in the Lamb's Book of Life. The verse draws the dividing line through humanity that the rest of the book will keep.",
+      "grammar": "Two points of syntax matter. First, hou ou gegraptai to onoma autou, literally ‘of whom his name has not been written’, is a Hebrew-style relative clause with a resumptive pronoun, and it moves from the plural ‘all who dwell’ to a singular: each one individually. Second, the phrase apo katabolēs kosmou, ‘from the foundation of the world’, stands last, directly after tou arniou tou esphagmenou, ‘the Lamb who was slain’. By word order it can go with ‘slain’ (the Lamb slain from the foundation of the world), as in the King James Version, the NIV, and G. B. Caird's commentary (1966). Or it can go back to ‘written’ (names not written from the foundation of the world), as the BSB and ESV take it. The main argument for the second is 17:8, which has almost the same sentence without the Lamb and there clearly means names written from the foundation of the world.",
+      "words": ["G4352", "G2730", "G1125", "G0975", "G2222", "G0721", "G4969", "G2602"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "On either reading, the verse places God's purpose before history: either the names were written before the world began, or the Lamb's sacrifice was determined then (1 Peter 1:19-20 says he was foreknown before the foundation of the world). Christians who differ on predestination agree that the verse is meant to steady the persecuted, not to make them anxious: those in the Lamb's book are kept from the beast's worship."
+        }
+      ],
+      "refs": ["Revelation 17:8", "Revelation 3:5", "Revelation 21:27", "1 Peter 1:19-20", "Ephesians 1:4"]
+    },
+    {
+      "v": "9-10",
+      "context": "John steps out of the vision to address the hearers, as the seven letters did. The saying that follows tells them what to expect under the beast and how to meet it: with endurance and faith, not with the sword.",
+      "grammar": "Ei tis echei ous, akousatō, ‘if anyone has an ear, let him hear’, is the refrain of the seven letters (2:7 and following), now without the words ‘what the Spirit says to the churches’, as if the whole church were being addressed at once. The proverb that follows has no main verbs in its second half in the best-attested form: ‘if anyone for sword to be killed, him by sword to be killed’. The infinitive apoktanthēnai, used twice, expresses what is destined. Hōde estin, ‘here is’, points to the demand the situation makes: hupomonē, patient endurance, and pistis, which here means both faith and faithfulness.",
+      "words": ["G3775", "G0161", "G5217", "G3162", "G0615", "G5281", "G4102G"],
+      "text": "The verse is one of the most unsettled in Revelation. Codex Alexandrinus, followed by the modern editions and the BSB, reads the passive infinitive apoktanthēnai, ‘is to be killed’, in both halves, making the saying a statement of what believers must accept. Most other manuscripts read apoktenei, ‘will kill’, in the first half, and the text behind the King James Version adds dei, ‘must’, producing a warning: whoever kills with the sword must be killed with the sword, like Jesus' word to Peter (Matthew 26:52). The first line also varies, with some witnesses reading that whoever leads into captivity will go into captivity. The older reading fits Jeremiah 15:2; the later one fits Matthew 26:52. On either reading the saints do not take up the beast's weapons.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The call to faith here is a call to accept captivity or death without retaliation, trusting that God will judge. Faith in Revelation is loyalty that holds under pressure, the same pairing of endurance and faith that 14:12 repeats."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 15:2",
+          "note": "When the people ask Jeremiah where they should go, God answers that those destined for death will go to death, those for the sword to the sword, those for famine to famine, and those for captivity to captivity; Jeremiah 43:11 repeats the pattern. The Septuagint keeps the short, verbless form (hosoi eis machairan, eis machairan). In Jeremiah it announces judgment on unfaithful Judah; John turns it into a word for the faithful, who must accept what the beast inflicts."
+        }
+      ],
+      "refs": ["Jeremiah 15:2", "Jeremiah 43:11", "Matthew 26:52", "Revelation 14:12", "Revelation 1:9"]
+    },
+    {
+      "v": "11-12",
+      "context": "A second beast rises, this time from the land. It looks harmless and speaks with the dragon's voice. Its whole task is to turn people's worship toward the first beast, which is why Revelation later calls it the false prophet (16:13, 19:20).",
+      "grammar": "Kerata duo homoia arniō, ‘two horns like a lamb’: arnion is the word for the Lamb throughout the book, so the second beast looks like Christ. Elalei hōs drakōn, ‘it was speaking like a dragon’, is an imperfect, describing its habitual speech. In verse 12 the tense shifts to the present (poiei, ‘it exercises’ and ‘it makes’), bringing the vision into the hearers' own time. Enōpion autou, ‘before it’ or ‘in its presence’, pictures the second beast as the first beast's official, acting in its name, as a priest acts before a god.",
+      "words": ["G2342", "G1093G", "G0721", "G2980", "G1404", "G1849", "G4413G", "G1799"],
+      "history": "In the province of Asia the imperial cult was run by local people, not imposed from Rome. The provincial council of Asia (the koinon) organized festivals, and its high priests of Asia, drawn from wealthy families, presided over the temples and games; Acts 19:31 mentions Asiarchs at Ephesus, officials of this same provincial elite. The second beast's lamb-like face fits a respectable local establishment whose religion made loyalty to Rome feel like piety.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The second beast is religion put in the service of power. It does not demand worship for itself but for the first beast, which is what makes it dangerous: counterfeit worship can look like a lamb."
+        }
+      ],
+      "refs": ["Matthew 7:15", "Revelation 16:13", "Revelation 19:20", "2 Corinthians 11:13-15", "Revelation 5:6"]
+    },
+    {
+      "v": "13-14",
+      "context": "The second beast works signs, even calling fire from heaven, and uses them to deceive people into making an image of the first beast. Signs are not proof of truth in Revelation; they can serve deception.",
+      "grammar": "Poiei sēmeia megala, ‘it performs great signs’, uses the word Revelation gave to the woman and the dragon (12:1, 3), now for miracles that mislead. Plana, ‘it deceives’, is the present of planaō, the verb that defined the dragon in 12:9. The first beast is described as the one hos echei tēn plēgēn tēs machairēs kai ezēsen, ‘who has the wound of the sword and lived’. Ezēsen is the aorist Christ uses of himself in 2:8, ‘who died and came to life’, so the parody of the resurrection is again precise.",
+      "words": ["G4592", "G4442", "G4105", "G1504", "G4127", "G3162", "G2198"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The verse warns that wonders do not authenticate a message by themselves. Deuteronomy tested a prophet by where the sign led, and Revelation applies the same test: signs that lead to the worship of power come from the dragon."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "1 Kings 18:38",
+          "note": "On Mount Carmel fire from the LORD fell and consumed Elijah's sacrifice, proving that the LORD is God and Baal is not; 2 Kings 1:10-12 has Elijah call down fire on the king's soldiers. The Septuagint uses pur ... ek tou ouranou, the words John uses. The second beast imitates the prophet whose fire proved the true God, and so becomes the anti-Elijah, as the two witnesses of 11:5-6 are the true heirs of Elijah."
+        },
+        {
+          "ref": "Deuteronomy 13:1-3",
+          "note": "The law warns that a prophet may give a sign or wonder that comes to pass and then say, ‘let us follow other gods’; Israel is not to listen, because the LORD is testing them. The Septuagint uses sēmeion for the sign. Revelation's second beast is exactly this figure: a genuine-seeming sign in the service of idolatry."
+        }
+      ],
+      "refs": ["Deuteronomy 13:1-3", "Mark 13:22", "2 Thessalonians 2:9-10", "Revelation 2:8", "Revelation 19:20"]
+    },
+    {
+      "v": "15",
+      "context": "The image of the beast is made to speak, and those who will not worship it are killed. This is the point where the church's refusal becomes a matter of life and death.",
+      "grammar": "Dounai pneuma tē eikoni, ‘to give breath to the image’: pneuma here means breath, the life that makes the image seem alive, and the phrase reads as a mockery of God breathing life into the first human (Genesis 2:7) and into the dry bones (Ezekiel 37:9-10). The purpose clauses stack up: hina kai lalēsē, ‘so that it may even speak’, and poiēsē hina hosoi ean mē proskunēsōsin ... apoktanthōsin, ‘and may cause that as many as do not worship be killed’. The aorist subjunctives describe what the whole arrangement is designed to produce.",
+      "words": ["G4151H", "G1504", "G2980", "G4352", "G0615"],
+      "history": "About AD 112 Pliny the Younger, governor of Bithynia on Asia's northern border, wrote to the emperor Trajan (Letters 10.96) describing how he tested people accused of being Christians. He had the emperor's image brought in with the statues of the gods and required the accused to invoke the gods, offer incense and wine to the image, and curse Christ; those who persisted in confessing Christ he had executed, and those who denied it proved the denial by this test. The letter is some twenty years later than the usual date of Revelation, but it shows exactly the test the vision describes.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The image is lifeless, and its apparent life is a trick; yet it has the power to kill. The verse shows idolatry at its most dangerous, when a made thing is backed by force and refusing it costs everything."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 3:5-6",
+          "note": "Nebuchadnezzar set up a golden image and decreed that whoever did not fall down and worship it would be thrown into a burning furnace. The Septuagint and Theodotion use proskuneō and eikōn, the words John uses. Shadrach, Meshach, and Abednego refused whether or not God rescued them (3:17-18), which is the stance Revelation asks of its hearers."
+        }
+      ],
+      "refs": ["Daniel 3:15-18", "Psalm 115:4-8", "Habakkuk 2:18-19", "Revelation 20:4"]
+    },
+    {
+      "v": "16-17",
+      "context": "The second beast imposes a mark on every class of person, and without it no one can trade. The religious demand becomes an economic one: worship shows up in the marketplace.",
+      "grammar": "The list of pairs (small and great, rich and poor, free and slave) is a merism, naming opposites to mean everyone. Hina dōsin autois charagma, ‘that they should give them a mark’, uses an indefinite third person plural, ‘they’, for the unnamed officials who carry out the order. Verse 17 explains the mark in apposition: to onoma tou thēriou ē ton arithmon tou onomatos autou, ‘the name of the beast or the number of its name’. The mark is the beast's name, written either as letters or as their numerical value, which prepares for verse 18.",
+      "words": ["G4145", "G4434", "G1401", "G5480", "G1188", "G3359", "G0059", "G4453", "G0706"],
+      "history": "Marks of ownership on the body were familiar. Slaves could be branded, soldiers were sometimes tattooed, and devotees of some gods bore their god's sign; Paul says he bears on his body the stigmata, the marks, of Jesus (Galatians 6:17). The Jewish book 3 Maccabees (2:28-30) describes Ptolemy IV of Egypt ordering Jews to be registered and branded with the ivy leaf, the emblem of Dionysus. Adolf Deissmann drew attention to papyrus documents on which charagma names the official stamp bearing the emperor's name and regnal year. Whether the mark is literal or a figure for allegiance, John's hearers knew what it meant to be marked as someone's property.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The beast's power reaches ordinary buying and selling. The verses expose how economic participation can require loyalty to a false god, and they ask believers to count faithfulness worth its cost in livelihood, as the letters to Thyatira and Laodicea already did."
+        }
+      ],
+      "refs": ["Revelation 7:3", "Revelation 14:1", "Revelation 14:9-11", "Deuteronomy 6:8", "Galatians 6:17"]
+    },
+    {
+      "v": "18",
+      "context": "John ends with a riddle and a call for wisdom: the hearers are to calculate the beast's number. The verse matches the call for endurance in verse 10; the saints need both the courage to refuse the beast and the insight to recognize it.",
+      "grammar": "Hōde hē sophia estin, ‘here is wisdom’, parallels ‘here is the endurance’ of verse 10. Psēphisatō, an aorist imperative from psēphos, a pebble used for counting, means ‘let him calculate’, which implies that the number can be worked out. Arithmos gar anthrōpou estin can mean ‘it is a man's number’ (the number of a particular person's name) or ‘it is a human number’ (a number reckoned in the ordinary human way); 21:17 uses the same phrase for an angel's measurement that is ‘a man's measure’. The number is written out in words, hexakosioi hexēkonta hex, in most manuscripts; some write it with three Greek letters.",
+      "words": ["G4678", "G3563", "G5585", "G0706", "G0444", "G1812", "G1835", "G1803"],
+      "text": "A small group of early witnesses read 616 instead of 666. Papyrus 115, an Oxyrhynchus fragment (P.Oxy. 4499) from the late third or early fourth century, writes it with the letters chi, iota, stigma; Codex Ephraemi Rescriptus, a fifth-century manuscript, spells it out as six hundred sixteen. Irenaeus, writing around AD 180 (Against Heresies 5.30.1), already knew copies reading 616, judged them a scribal error, and held to 666, which he said was found in the most approved and ancient copies and confirmed by people who had seen John. The modern editions print 666.",
+      "history": "In Greek and Hebrew the letters of the alphabet also served as numerals, so every name had a numerical value, and calculating it (gematria) was a known game. A graffito at Pompeii says the writer loves a woman whose number is 545, and Suetonius (Nero 39.2) records a Greek jibe that Nero's name had the same value as the phrase ‘he killed his own mother’. The name Nero Caesar written in Hebrew letters as nrwn qsr adds up to 666; spelled without the final n, as the Latin Nero Caesar would be, it gives 616, which neatly explains the variant. Irenaeus himself (5.30.3) weighed names such as Lateinos and Teitan and declined to decide. Richard Bauckham, in The Climax of Prophecy (1993), noted that the Greek word thērion, ‘beast’, written in Hebrew letters also comes to 666, and that 666 is a ‘triangular’ number (the sum of 1 through 36). Others read it symbolically as imperfection repeated, falling short of seven, against the Sibylline Oracles' reckoning (1.324-331) of the Greek name Jesus as 888.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The call for wisdom asks for discernment, not speculation: the ability to see what a power really is behind its claims. Every confident identification of the beast with a figure of the interpreter's own day has so far been wrong; what has never failed is the call to recognize and refuse any power that demands what belongs to God."
+        }
+      ],
+      "refs": ["Revelation 17:9", "Revelation 21:17", "Daniel 12:10", "1 Kings 10:14", "1 John 2:18"]
+    }
+  ]
+}

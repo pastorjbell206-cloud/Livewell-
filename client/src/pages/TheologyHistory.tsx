@@ -13,6 +13,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Prose } from "@/lib/prose";
 import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
+import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import { subjectById } from "@/lib/subjects";
 
@@ -26,6 +28,14 @@ type Tab = "timeline" | "councils" | "heresies" | "figures";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const cardStyle = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" } as const;
+
+// The heresies and the people are reference entries, not links: a plain
+// bordered block each (no hover lift), two columns from 900px (.ed-split),
+// every line at reading size.
+const refBlock = { ...cardStyle, padding: "clamp(var(--s-3), 3vw, var(--s-4))" } as const;
+const refName = { fontFamily: "var(--F)", fontSize: "clamp(22px, 2.4vw, 26px)", fontWeight: 500, lineHeight: 1.2, color: "var(--ink)", margin: 0 } as const;
+const refText = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)" } as const;
+const refNote = { fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink-muted)" } as const;
 
 export default function TheologyHistory() {
   const [eras, setEras] = useState<Era[]>([]);
@@ -54,6 +64,55 @@ export default function TheologyHistory() {
     return [...known, ...extra];
   }, [figures]);
 
+  // Hang everything on the one arc. Each library dates its entries differently
+  // (essays by dateRange, councils by year, figures by dates, heresies by
+  // century), so every item is resolved to a year and then to the timeline
+  // era whose range holds it. The reader opens an era and finds its essay,
+  // its councils, its figures, and what was disputed, in one place.
+  const eraBounds = useMemo(() => {
+    const bounds: { id: string; start: number; end: number }[] = [];
+    for (const era of eras) {
+      const nums = (era.range.match(/\d+/g) || []).map(Number);
+      const start = nums[0] ?? 0;
+      const end = /today/i.test(era.range) ? 9999 : (nums[1] ?? start);
+      bounds.push({ id: era.id, start, end });
+    }
+    return bounds;
+  }, [eras]);
+  const eraIdForYear = (year: number | null): string | null => {
+    if (year == null) return null;
+    const hit = eraBounds.find((b) => year >= b.start && year < b.end) ?? eraBounds.find((b) => year >= b.start && year <= b.end);
+    return hit?.id ?? null;
+  };
+  const firstYear = (s: string | undefined): number | null => {
+    if (!s) return null;
+    const m = s.match(/\d{2,4}/);
+    return m ? Number(m[0]) : null;
+  };
+  const centuryYear = (s: string | undefined): number | null => {
+    const words: Record<string, number> = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6, seventh: 7, eighth: 8, ninth: 9, tenth: 10 };
+    const m = (s || "").toLowerCase().match(/(\w+)\s+century/);
+    if (!m) return firstYear(s);
+    const n = words[m[1]] ?? Number(m[1].replace(/\D/g, ""));
+    return n ? (n - 1) * 100 + 50 : null;
+  };
+  const byEra = useMemo(() => {
+    const map = new Map<string, { essays: typeof essays; councils: Council[]; figures: Figure[]; heresies: Heresy[] }>();
+    for (const era of eras) map.set(era.id, { essays: [], councils: [], figures: [], heresies: [] });
+    const put = (id: string | null, kind: "essays" | "councils" | "figures" | "heresies", item: never) => {
+      if (id && map.has(id)) (map.get(id)![kind] as unknown[]).push(item);
+    };
+    for (const e of essays) {
+      const named = eras.find((x) => x.name === e.era)?.id ?? null;
+      put(named ?? eraIdForYear(firstYear(e.dateRange)), "essays", e as never);
+    }
+    for (const c of councils) put(eraIdForYear(firstYear(c.year)), "councils", c as never);
+    for (const f of figures) put(eraIdForYear(firstYear(f.dates)), "figures", f as never);
+    for (const h of heresies) put(eraIdForYear(centuryYear(h.era)), "heresies", h as never);
+    return map;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [eras, essays, councils, figures, heresies, eraBounds]);
+
   const tabs: { id: Tab; label: string; count: number }[] = [
     { id: "timeline", label: "The timeline", count: eras.length },
     { id: "councils", label: "The councils", count: councils.length },
@@ -70,10 +129,10 @@ export default function TheologyHistory() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Pillar Two
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Church history
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
             The story you were born into.
@@ -88,17 +147,11 @@ export default function TheologyHistory() {
       {essays.length > 0 && (
         <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
           <div style={wrap}>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>Read the story</div>
-            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)" }}>The era essays</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
-              {essays.map((e) => (
-                <Link key={e.slug} href={`/theology/history/${e.slug}`} style={{ display: "block", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-3)", textDecoration: "none" }}>
-                  <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{e.era} · {e.dateRange}</div>
-                  <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
-                  <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
-                </Link>
-              ))}
-            </div>
+            <SectionHead eyebrow="Read the story" title="The era essays" intro={`${essays.length} essays, from Pentecost to the present.`} />
+            <EditorialIndex
+              label="The era essays"
+              items={essays.map((e) => ({ href: `/theology/history/${e.slug}`, title: e.title, dek: e.blurb, kicker: `${e.era} · ${e.dateRange}` }))}
+            />
           </div>
         </section>
       )}
@@ -124,7 +177,7 @@ export default function TheologyHistory() {
       {tab === "timeline" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
-            {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading the story…</p>}
+            {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the story…</p>}
             {eras.map((era) => {
               const isOpen = openEra === era.id;
               return (
@@ -151,6 +204,56 @@ export default function TheologyHistory() {
                           </div>
                         ))}
                       </div>
+                      {(() => {
+                        const hung = byEra.get(era.id);
+                        if (!hung) return null;
+                        const rowLabel = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "6px" };
+                        const quiet = { fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" };
+                        const has = hung.essays.length || hung.councils.length || hung.figures.length || hung.heresies.length;
+                        if (!has) return null;
+                        return (
+                          <div style={{ marginTop: "20px", paddingTop: "16px", borderTop: "1px solid var(--border)", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(220px, 100%), 1fr))", gap: "16px" }}>
+                            {hung.essays.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>Read this era</div>
+                                {hung.essays.map((s) => (
+                                  <Link key={s.slug} href={`/theology/history/${s.slug}`} style={{ display: "block", fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.3, color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px", marginBottom: "8px", width: "fit-content" }}>{s.title}</Link>
+                                ))}
+                              </div>
+                            )}
+                            {hung.councils.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>Councils</div>
+                                {hung.councils.map((c) => (
+                                  <button key={c.name} type="button" onClick={() => setTab("councils")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                    {c.name} <span style={{ color: "var(--ink-muted)" }}>· {c.year}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                            {hung.figures.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>Figures</div>
+                                {hung.figures.map((f) => (
+                                  <button key={f.name} type="button" onClick={() => setTab("figures")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                    {f.name} <span style={{ color: "var(--ink-muted)" }}>· {f.dates}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                            {hung.heresies.length > 0 && (
+                              <div>
+                                <div style={rowLabel}>What was disputed</div>
+                                {hung.heresies.map((h) => (
+                                  <button key={h.name} type="button" onClick={() => setTab("heresies")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                    {h.name}
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </div>
@@ -168,7 +271,7 @@ export default function TheologyHistory() {
               The creeds were not handed down from the sky. The whole church gathered, usually in a crisis, and worked out how to say a true thing clearly. Here is what each council faced and what it gave us.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-              {councils.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {councils.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
               {councils.map((c, i) => (
                 <div key={i} style={{ ...cardStyle, padding: "var(--s-4)", borderLeft: `3px solid ${c.ecumenical ? "var(--mustard)" : "var(--border)"}` }}>
                   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "8px", alignItems: "baseline", marginBottom: "10px" }}>
@@ -195,21 +298,21 @@ export default function TheologyHistory() {
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "var(--s-4)", fontStyle: "italic" }}>
               The church often learned what it believed by facing what it could not accept. Each of these was sincere, attractive, and wrong in a way that mattered. Many still return today in new clothes.
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
-              {heresies.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {heresies.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
+            <div className="ed-split" style={{ gap: "var(--s-3)" }}>
               {heresies.map((h, i) => (
-                <div key={i} style={{ ...cardStyle, padding: "var(--s-4)" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "8px", marginBottom: "10px" }}>
-                    <span style={{ fontFamily: "var(--F)", fontSize: "21px", fontWeight: 500, color: "var(--ink)" }}>{h.name}</span>
-                    <span style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--ink-muted)" }}>{h.era}</span>
+                <div key={i} style={refBlock}>
+                  <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline", gap: "4px 16px", marginBottom: "14px" }}>
+                    <h2 style={refName}>{h.name}</h2>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)" }}>{h.era}</span>
                   </div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, color: "var(--ink)", marginBottom: "8px", fontStyle: "italic" }}>{h.claim}</p>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "8px" }}><strong style={{ color: "var(--ink)" }}>Why it appealed.</strong> {h.whyItAppealed}</p>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "8px" }}><strong style={{ color: "var(--ink)" }}>What the church said.</strong> {h.theChurchSaid}</p>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "10px", paddingTop: "10px", borderTop: "1px solid var(--border)" }}>
-                    {h.answeredBy && <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--mustard-text)", fontWeight: 600 }}>Answered by {h.answeredBy}</span>}
+                  <p style={{ ...refText, color: "var(--ink)", fontStyle: "italic", marginBottom: "12px" }}>{h.claim}</p>
+                  <p style={{ ...refText, marginBottom: "12px" }}><strong style={{ color: "var(--ink)" }}>Why it appealed.</strong> {h.whyItAppealed}</p>
+                  <p style={refText}><strong style={{ color: "var(--ink)" }}>What the church said.</strong> {h.theChurchSaid}</p>
+                  <div style={{ marginTop: "16px", paddingTop: "14px", borderTop: "1px solid var(--border)" }}>
+                    {h.answeredBy && <p style={refNote}><strong style={{ color: "var(--ink)" }}>Answered by</strong> {h.answeredBy}</p>}
                   </div>
-                  {h.stillSeenAs && <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "8px" }}><strong style={{ color: "var(--ink)" }}>Still seen as.</strong> {h.stillSeenAs}</p>}
+                  {h.stillSeenAs && <p style={{ ...refNote, marginTop: "10px" }}><strong style={{ color: "var(--ink)" }}>Still seen as.</strong> {h.stillSeenAs}</p>}
                 </div>
               ))}
             </div>
@@ -221,19 +324,19 @@ export default function TheologyHistory() {
       {tab === "figures" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
           <div style={{ ...wrap }}>
-            {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+            {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             {figures.length > 0 && <SectionArt seed="history-figures" />}
             {figuresByEra.map(({ era, items }) => (
               <div key={era} style={{ marginBottom: "var(--s-5)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{era}</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
+                <div className="ed-split" style={{ gap: "var(--s-3)" }}>
                   {items.map((f, i) => (
-                    <div key={i} style={{ ...cardStyle, padding: "var(--s-4)" }}>
-                      <div style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)" }}>{f.name}</div>
-                      <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--mustard-text)", fontWeight: 600, margin: "2px 0 2px" }}>{f.dates}</div>
-                      <div style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "10px" }}>{f.role}{f.place ? ` · ${f.place}` : ""}</div>
-                      <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)", marginBottom: "8px" }}>{f.summary}</p>
-                      <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink)" }}><strong>Why they matter.</strong> {f.whyTheyMatter}</p>
+                    <div key={i} style={refBlock}>
+                      <h3 style={refName}>{f.name}</h3>
+                      <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.02em", color: "var(--mustard-text)", margin: "6px 0 2px" }}>{f.dates}</div>
+                      <div style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink-muted)", marginBottom: "14px" }}>{f.role}{f.place ? ` · ${f.place}` : ""}</div>
+                      <p style={{ ...refText, marginBottom: "12px" }}>{f.summary}</p>
+                      <p style={{ ...refText, color: "var(--ink)" }}><strong>Why they matter.</strong> {f.whyTheyMatter}</p>
                     </div>
                   ))}
                 </div>
@@ -244,9 +347,9 @@ export default function TheologyHistory() {
       )}
 
       {/* FOOTER NAV */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
-          <Link href="/theology" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>All of Theological Depth</Link>
+          <Link href="/study" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Everything in Study</Link>
           <Link href="/theology/doctrine/god-and-trinity" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>See where the creeds came from →</Link>
         </div>
       </section>

@@ -1,0 +1,346 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The scene is set in a moment of rest. David lives in his palace and the LORD has given him rest from his enemies. That combination matters, because Deuteronomy tied the choosing of a place for God's name to the time when God would give Israel rest (Deuteronomy 12:10-11). David's plan in verse 2 follows that logic.",
+      "grammar": "Ki yashav hammelekh beveito, ‘when the king sat (or dwelt) in his house’. Yashav can mean ‘sit’, ‘dwell’, or ‘sit enthroned’, and the chapter uses it for David dwelling (verse 2), for God not dwelling in a house (verses 5-6), and for David sitting before the LORD in prayer (verse 18). Heniach lo, ‘he had given him rest’, is a Hiphil perfect of nuach, the verb of Deuteronomy 12:10 and Joshua 21:44 for the rest of the land.",
+      "words": ["H3427", "H1004P", "H5117", "H0341"],
+      "history": "The note of rest sits before the wars listed in 2 Samuel 8, so the narrator arranges the material by theme. The Chronicler, telling the same scene, leaves out the clause about rest (1 Chronicles 17:1). In Chronicles ‘rest’ is reserved for Solomon, whose name is linked with shalom and who is called ‘a man of rest’ (1 Chronicles 22:9), while David is remembered as a man of war (1 Chronicles 22:8).",
+      "parallels": ["1 Chronicles 17:1"],
+      "refs": ["Deuteronomy 12:10-11", "1 Chronicles 22:8-9", "1 Kings 5:3-5"]
+    },
+    {
+      "v": "2",
+      "context": "David contrasts his own house with God's. The comparison is a king's natural thought: a victorious ruler should house his god at least as well as himself.",
+      "grammar": "The two halves use the same participle, yoshev, ‘dwelling’: anokhi yoshev bevet arazim, ‘I am dwelling in a house of cedars’, and aron haelohim yoshev betokh hayeriah, ‘the ark of God is dwelling within the curtain’. Yeriah is the word for the tent curtains of the tabernacle (Exodus 26:1-13). The parallel construction makes the imbalance obvious. Re'eh na, ‘see, please’, is David's polite opening to the prophet.",
+      "words": ["H3427", "H0730", "H0727", "H3407"],
+      "history": "Cedar was the prestige timber of the ancient Near East, brought from the mountains of Lebanon. Hiram king of Tyre had supplied cedar and craftsmen for David's palace (2 Samuel 5:11), and Mesopotamian kings boasted in their inscriptions of cutting cedars in Lebanon for their palaces and temples. Nathan appears here for the first time; he will confront David after Bathsheba (chapter 12) and help put Solomon on the throne (1 Kings 1).",
+      "parallels": ["1 Chronicles 17:1"],
+      "refs": ["2 Samuel 5:11", "Exodus 26:1", "Psalm 132:1-5"]
+    },
+    {
+      "v": "3",
+      "context": "Nathan encourages the plan, reasonably enough: God has plainly been with David. But he speaks before the LORD has spoken, and verse 4 will overrule him the same night.",
+      "grammar": "Nathan's reply stacks two imperatives, lekh aseh, ‘go, do’, and grounds them with ki YHWH immakh, ‘for the LORD is with you’. The phrase echoes the narrator's refrain about David (1 Samuel 18:14; 2 Samuel 5:10), which is why Nathan's assumption sounds right. Kol asher bilvavekha, ‘all that is in your heart’, prepares the reversal of verse 21, where what counts is what is in God's heart.",
+      "words": ["H3824", "H1980G", "H6213A", "H5973A"],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "A true prophet can give his own opinion and be wrong. Nathan's authority rests not on his judgment but on the word that comes to him, and he promptly carries back a message that contradicts what he said."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:2"],
+      "refs": ["1 Samuel 16:13", "2 Samuel 5:10", "1 Samuel 18:14"]
+    },
+    {
+      "v": "4-5",
+      "context": "That night the LORD's word comes to Nathan. It opens with a question that already carries the answer: is David the one to build God a house? God's reply turns on who builds for whom.",
+      "grammar": "God calls David avdi, ‘my servant’, the title given to Moses (Numbers 12:7) and later to David as the model king (1 Kings 11:34). The question haattah tivneh li bayit, ‘is it you who will build me a house?’, puts the pronoun attah first after the question marker: the emphasis falls on ‘you’. The implied answer is not that God refuses a temple but that David is not the one, and that God will build first (verse 11).",
+      "words": ["H5650", "H0859A", "H1129", "H1004B"],
+      "text": "1 Chronicles 17:4 turns the question into a flat statement, ‘You are not the one to build Me a house’. Both forms say the same thing; Samuel's question is the more rhetorical.",
+      "parallels": ["1 Chronicles 17:3-4"],
+      "refs": ["Numbers 12:7", "1 Kings 8:18-19", "1 Chronicles 22:7-8"]
+    },
+    {
+      "v": "6",
+      "context": "God reviews his history with Israel. From the exodus until now he has not lived in a house but has moved with his people in a tent. The mobility is presented as his choice, not a lack.",
+      "grammar": "Mithallekh, ‘going about’, is a Hithpael participle of halakh, the reflexive-iterative stem that describes walking to and fro. The same form describes God walking in the garden (Genesis 3:8) and walking among Israel's camp (Leviticus 26:12; Deuteronomy 23:14). Beohel uvemishkan, ‘in a tent and in a tabernacle’, pairs the two names for the wilderness sanctuary; mishkan comes from shakhan, ‘to dwell’, and describes God's dwelling as a presence among the people.",
+      "words": ["H1980I", "H0168G", "H4908", "H5927H"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "God's presence with Israel was never tied to a building. The tabernacle traveled with the people; the later temple is a gift God allows, not a need he has. Stephen makes the same point in Acts 7:44-50."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:5"],
+      "refs": ["Leviticus 26:11-12", "Acts 7:44-50", "Isaiah 66:1", "John 1:14"]
+    },
+    {
+      "v": "7",
+      "context": "God has never asked any of Israel's earlier leaders why they had not built him a cedar house. The initiative for a temple, if there is to be one, must come from him.",
+      "grammar": "The question hadavar dibbarti, ‘did I speak a word?’, expects the answer no. Lirot et ammi, ‘to shepherd my people’, calls Israel's leaders shepherds, the image that verse 8 applies to David's origins and that later prophets use for the kings (Ezekiel 34).",
+      "words": ["H1980I", "H1697G", "H7626J", "H7462B"],
+      "text": "The Hebrew of Samuel reads shivte Yisrael, ‘the tribes of Israel’, while 1 Chronicles 17:6 reads shofte Yisrael, ‘the judges of Israel’. The two words differ by one letter in Hebrew. Since the verse speaks of those God ‘commanded to shepherd my people’, and verse 11 mentions the judges, many scholars take ‘judges’ as original. Others defend ‘tribes’, suggesting shevet (‘staff, scepter’) can stand for a ruler, as in Genesis 49:10.",
+      "parallels": ["1 Chronicles 17:6"],
+      "refs": ["Ezekiel 34:2-10", "Judges 2:16-18", "Genesis 49:10"]
+    },
+    {
+      "v": "8",
+      "context": "The oracle turns from what David proposed to what God has done. The LORD of Hosts took David from following sheep and made him ruler over his people.",
+      "grammar": "Ani leqachtikha, ‘I, I took you’, sets the independent pronoun before the verb: God, not David, is the actor. Min hannaveh meachar hatson, ‘from the pasture, from behind the flock’, recalls the anointing scene where David had to be called in from the sheep (1 Samuel 16:11). Nagid, ‘ruler’ or ‘leader’, is the title used for Saul and David as rulers designated by God (1 Samuel 9:16; 13:14; 25:30), a word that stresses appointment rather than royal status.",
+      "words": ["H0589", "H3947G", "H5116A", "H6629G", "H5057"],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "David's rule is described as God's appointment of a shepherd over God's people. Kingship in Israel is a stewardship; the people remain ‘my people’ throughout the oracle."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:7"],
+      "refs": ["1 Samuel 16:11-13", "Psalm 78:70-72", "Amos 7:15"]
+    },
+    {
+      "v": "9",
+      "context": "God has been with David everywhere and has cut off his enemies, and he will make David's name great. The promise of a great name ties David to the promise made to Abraham.",
+      "grammar": "Vaakhritah, ‘and I cut off’, is a consecutive imperfect with an added he (a lengthened form) summarizing past victories. Then the verb form changes: veasiti lekha shem gadol, ‘and I will make for you a great name’, is a consecutive perfect, normally future. The phrase shem gadol repeats God's promise to Abraham, ‘I will make your name great’ (Genesis 12:2), and contrasts with Babel's attempt to make a name for itself (Genesis 11:4).",
+      "words": ["H3772I", "H6213H", "H8034", "H1419A"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The promise to David takes up the promise to Abraham: a great name given by God, not seized. The Davidic covenant is a narrowing of Abraham's blessing to a royal line through which it will reach the nations (compare Psalm 72:17)."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:8"],
+      "refs": ["Genesis 12:2", "Genesis 11:4", "Psalm 72:17"]
+    },
+    {
+      "v": "10",
+      "context": "The promise widens from David to Israel: God will give his people a place, plant them, and let them live undisturbed, free from the oppression they knew before.",
+      "grammar": "Vesamti maqom, ‘I will appoint a place’, and unetativ, ‘and I will plant him’, use images of settled life; the planting image comes from the Song of the Sea (Exodus 15:17). Scholars debate the time reference of the consecutive perfects in verses 9b to 11a. Most translations take them as future promises; some read them as describing what God has already done for David and Israel, since the verb form can express repeated or past action in some contexts, and since David already has rest (verse 1). Bene avlah, ‘sons of wickedness’, is an idiom for violent men.",
+      "words": ["H7760L", "H4725", "H5193", "H7264", "H5766B", "H6031B"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The king exists for the people's sake. God's purpose in establishing David is that Israel, ‘my people’, may live securely in the place he appoints."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:9"],
+      "refs": ["Exodus 15:17", "Psalm 44:2", "Amos 9:15", "Jeremiah 24:6"]
+    },
+    {
+      "v": "11",
+      "context": "The turning point of the oracle. After recalling the judges and promising rest, God announces that he himself will make a house for David. David offered to build God a house; God will build David one.",
+      "grammar": "The verse shifts from first person to third: vehiggid lekha YHWH ki bayit yaaseh lekha YHWH, ‘and the LORD declares to you that a house the LORD will make for you’. Placing bayit, ‘house’, before the verb puts the stress on the word the whole chapter plays with, now meaning a dynasty. The verb is asah, ‘make’, not banah, ‘build’; verse 27 will say banah, completing the wordplay. The repetition of the divine name YHWH at both ends of the clause underlines who the builder is.",
+      "words": ["H8199", "H5117", "H5046", "H1004M", "H6213H"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Grace comes before service. The chapter reverses the natural religious order, in which a king builds for his god to secure blessing, and makes God's gift the foundation of everything David's line will do."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:10"],
+      "refs": ["Psalm 127:1", "1 Samuel 25:28", "Psalm 89:3-4"]
+    },
+    {
+      "v": "12",
+      "context": "The promise moves beyond David's lifetime. After his death God will raise up his offspring, one of his own body, and establish his kingdom. The immediate reference is to Solomon (1 Kings 5:5; 8:20).",
+      "grammar": "Vahaqimoti et zarakha acharekha, ‘I will raise up your offspring after you’, uses the Hiphil of qum, the verb of Deuteronomy 18:15 for God raising up a prophet. Zera, ‘seed’, is singular in form and can be collective (a line of descendants) or individual (one son), and the chapter uses it both ways. Asher yetse mimmeekha, ‘who will come out of your inward parts’, repeats word for word God's promise to Abraham of an heir from his own body (Genesis 15:4).",
+      "words": ["H4390", "H7901G", "H6965I", "H2233H", "H4578", "H3559H"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The promise is first about Solomon, but the language of seed and raising up links it to earlier promises (Genesis 3:15; 15:4) and opens it to the hope of a greater son. Peter at Pentecost and Paul at Pisidian Antioch both connect God's raising up of David's seed with the resurrection of Jesus (Acts 2:30-31; 13:22-23)."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:11"],
+      "refs": ["Genesis 15:4", "Acts 2:30-31", "Acts 13:22-23", "1 Kings 8:20"]
+    },
+    {
+      "v": "13",
+      "context": "The son will build the house for God's name, and God will establish his throne forever. The temple David wanted will come, but through his son and after God has built David's house.",
+      "grammar": "Hu yivneh bayit lishmi, ‘he will build a house for my name’, again fronts the pronoun: he, not you. ‘For my name’ is Deuteronomy's language for the sanctuary as the place where God causes his name to dwell (Deuteronomy 12:11), which guards against the idea that God is contained in a building. Vekhonanti, ‘and I will establish’, is an intensive form of kun, ‘to be firm’, and ad olam, ‘until forever’, is the first of the chapter's eight uses of olam.",
+      "words": ["H1129", "H8034", "H3559H", "H3678G", "H5769G"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The temple is built for God's name, the revelation of who he is, rather than as a house God needs. Solomon's dedication prayer states the point when it says that heaven cannot contain God, much less a house (1 Kings 8:27)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Mark 14:58",
+          "note": "At Jesus' trial, witnesses accuse him of saying he would build another temple not made with hands. John 2:19-21 says he spoke of his body. The New Testament presents the son of David as the builder of a house not of cedar but of people (Ephesians 2:19-22; 1 Peter 2:5)."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:12"],
+      "refs": ["Deuteronomy 12:11", "1 Kings 5:5", "1 Kings 8:27", "Ephesians 2:19-22"]
+    },
+    {
+      "v": "14",
+      "context": "The center of the promise: God will be a father to David's son, and the son will be his son. Because the relationship is that of father and son, wrongdoing will bring discipline rather than rejection.",
+      "grammar": "Ani ehyeh lo leav vehu yihyeh li leven, ‘I will be to him a father and he will be to me a son’, is built like the covenant formula ‘I will be your God and you will be my people’ (Leviticus 26:12). It is adoption language: the king becomes God's son by covenant, not by nature, which set Israel apart from Egypt, where the pharaoh was called the physical son of the sun god. Asher behaavoto, ‘when he does wrong’, uses a Hiphil infinitive of avah, ‘to act perversely’. Shevet anashim, ‘a rod of men’, and nige bene adam, ‘blows of sons of man’, mean discipline of ordinary human measure, as a father corrects a son (Proverbs 13:24).",
+      "words": ["H0001G", "H1121A", "H5753B", "H3198", "H7626G", "H5061"],
+      "text": "1 Chronicles 17:13 keeps the father-son promise but omits the clause about discipline for wrongdoing, consistent with the Chronicler's idealized portrait of Solomon. Hebrews 1:5 quotes only the first half, in the Septuagint's wording, of Christ.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "God's covenant with David's line is framed as fatherhood. Discipline is an expression of that relationship, not its end, which Hebrews 12:5-11 applies to every child of God."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 1:5",
+          "note": "Hebrews quotes this verse word for word from the Septuagint, alongside Psalm 2:7, to show that the Son is greater than angels. The writer applies to Christ the royal sonship first given to Solomon, reading it as fully realized in the one who is Son by nature. 2 Corinthians 6:18 adapts the same promise to the whole people of God, ‘sons and daughters’."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:13"],
+      "refs": ["Psalm 2:7", "Psalm 89:26-32", "Hebrews 1:5", "Hebrews 12:5-11", "2 Corinthians 6:18"]
+    },
+    {
+      "v": "15",
+      "context": "God's steadfast love will not be withdrawn from David's son as it was from Saul. The contrast with Saul, whose line did not continue, defines what is new about this promise.",
+      "grammar": "Vechasdi lo yasur mimmennu, ‘and my loyal love will not turn aside from him’. Chesed is covenant loyalty that goes beyond obligation. The verb sur, ‘turn aside’, appears twice more as a Hiphil, hasiroti, ‘I removed’: God removed his chesed from Saul and removed Saul himself. The play on one verb sets the two dynasties side by side.",
+      "words": ["H2617A", "H5493H", "H5493G", "H7586G"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Discipline is possible, abandonment is not. This is the ground of Israel's later appeal to ‘the faithful mercies of David’ (Isaiah 55:3), a phrase built on this verse."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Acts 13:34",
+          "note": "Paul quotes Isaiah 55:3, God's promise of the holy and sure blessings of David, as fulfilled when God raised Jesus from the dead, never to return to decay. The unending chesed promised here becomes, for Paul, the risen son of David."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:13"],
+      "refs": ["1 Samuel 15:28", "Isaiah 55:3", "Psalm 89:33-34", "Acts 13:34"]
+    },
+    {
+      "v": "16",
+      "context": "The oracle ends with the promise in its widest form: David's house, kingdom, and throne will stand forever. The word ‘forever’ occurs twice in one verse.",
+      "grammar": "Veneman, ‘and it will be made sure’, is a Niphal of aman, the root of amen and of emunah, ‘faithfulness’. Abigail had already predicted that God would make David ‘a sure house’ (bayit neeman, 1 Samuel 25:28), and Isaiah later plays on the same root when he warns David's house that if they do not stand firm in faith, they will not stand at all (Isaiah 7:9). Nakhon, ‘established’, repeats kun from verses 12 and 13.",
+      "words": ["H0539", "H1004M", "H4467", "H3678G", "H3559H", "H5769G"],
+      "text": "The Hebrew reads lefanekha, ‘before you’ (David). The Septuagint and a few Hebrew manuscripts read ‘before me’, which the BSB follows with \"before Me\". The parallel in 1 Chronicles 17:14 goes further, ‘I will set him over My house and My kingdom forever’, making explicit that the kingdom is finally God's, with David's son as its steward.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Chronicles' wording draws out what Samuel implies: the throne of David is the throne of the LORD's kingdom (compare 1 Chronicles 29:23). Israel's king rules on God's behalf."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:14"],
+      "refs": ["1 Samuel 25:28", "Isaiah 7:9", "Isaiah 9:7", "Luke 1:32-33", "1 Chronicles 29:23"]
+    },
+    {
+      "v": "17",
+      "context": "A short narrative hinge. Nathan reports everything to David, faithful to the word even though it reverses his own first answer.",
+      "grammar": "Chizzayon, ‘vision’, from chazah, ‘to see’, names the night revelation of verse 4. The word is rare in the historical books and often refers to a prophetic revelation received at night (compare Job 4:13). Kekhol haddevarim haelleh ukhekhol hachizzayon hazzeh, ‘according to all these words and according to all this vision’, stresses that Nathan kept nothing back.",
+      "words": ["H2384", "H1697G", "H1696G"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The prophet's task is to relay the whole word, including the parts that correct him. Nathan's obedience models the definition of a prophet in Deuteronomy 18:18."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:15"],
+      "refs": ["Deuteronomy 18:18", "Jeremiah 26:2", "Job 4:13"]
+    },
+    {
+      "v": "18",
+      "context": "David's response is prayer. He goes in, presumably to the tent where the ark stands, sits before the LORD, and begins with a question of humility: who am I, and what is my house?",
+      "grammar": "Vayyeshev lifne YHWH, ‘and he sat before the LORD’, uses the verb yashav once more; sitting is an unusual posture for prayer in the Bible, where standing, kneeling, and prostration are the norm. Mi anokhi, ‘who am I?’, is the question of Moses at his call (Exodus 3:11). The address Adonai YHWH, ‘Lord GOD’, occurs seven times in the prayer and rarely elsewhere in Samuel; it pairs the title ‘Lord’ with the divine name. Ad halom, ‘to here’, is David's modest phrase for everything God has done.",
+      "words": ["H3427", "H4310", "H0595", "H0136", "H3069"],
+      "history": "Later Jewish law drew on this verse. The Talmud states that no one may sit in the temple court except kings of the house of David (b. Yoma 25a; b. Sotah 40b), a rule that reflects David's posture here.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "David's first words answer God's promise with astonishment, not a claim. Prayer that receives a promise begins by recognizing the gap between the gift and the recipient."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:16"],
+      "refs": ["Exodus 3:11", "1 Samuel 18:18", "Genesis 32:10"]
+    },
+    {
+      "v": "19",
+      "context": "David marvels that God has not only raised him up but spoken about his house far into the future. The verse ends with a phrase whose meaning is among the most debated in Samuel.",
+      "grammar": "Vatiqtan od zot, ‘and this was yet small’, the verb qatan meaning ‘to be small, insignificant’. Lemerachoq, ‘for a distant time’, points the promise into the future. The final clause, vezot torat haadam, is literally ‘and this is the torah of man’. Torah can mean ‘law’, ‘instruction’, or ‘custom’. Most translations take it as a question or exclamation, ‘is this your custom with man?’ (the BSB) or ‘this is instruction for mankind’. Walter Kaiser argued in a 1974 essay that it means ‘this is the charter for humanity’: the promise to David carries God's purpose for all people, as the promise to Abraham did. Others think the text is damaged.",
+      "words": ["H6994", "H7350", "H8452", "H0120G"],
+      "text": "1 Chronicles 17:17 has a different and equally difficult phrase, usually translated ‘you have regarded me according to the rank of a man of high degree’. The difference suggests the phrase was already hard for ancient readers, and no interpretation has won a consensus.",
+      "parallels": ["1 Chronicles 17:17"],
+      "refs": ["Genesis 12:3", "Psalm 72:17", "Isaiah 55:3-5"]
+    },
+    {
+      "v": "20-21",
+      "context": "David confesses he has nothing more to say, since God knows his servant. The promise rests on God's word and God's heart, not on David's merit.",
+      "grammar": "Veattah yadata et avdekha, ‘and you know your servant’: yada, ‘know’, often carries the sense of choosing and caring for (Amos 3:2; Jeremiah 1:5). In verse 21 baavur devarekha ukhelibbekha, ‘for the sake of your word and according to your heart’, grounds the promise in God. It recalls Samuel's words that God had sought ‘a man after His own heart’ (1 Samuel 13:14): the chosen king is one who fits God's heart, and the choice itself flows from it. Lehodia, ‘to make known’, is a Hiphil of yada, so the verbs of knowing frame both verses.",
+      "words": ["H3254H", "H3045", "H5668", "H3820A", "H1420"],
+      "text": "Where Samuel reads ‘for the sake of your word’, 1 Chronicles 17:19 reads ‘for the sake of your servant’. The Hebrew words for ‘your word’ (devarekha) and ‘your servant’ (avdekha) look alike in unpointed script, and either could have arisen from the other.",
+      "theology": [
+        {
+          "id": "election",
+          "note": "David's standing before God rests on being known and chosen. He appeals to nothing in himself, only to God's word and purpose."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:18-19"],
+      "refs": ["1 Samuel 13:14", "Amos 3:2", "Jeremiah 1:5", "Psalm 139:1-4"]
+    },
+    {
+      "v": "22",
+      "context": "From the promise David turns to praise of God himself. There is none like the LORD and no God besides him, as Israel's history has shown.",
+      "grammar": "Al ken gadalta, ‘therefore you are great’, is a Qal perfect of gadal describing a state: the greatness is what God has shown himself to be. Ein kamokha veein elohim zulatekha, ‘there is none like you and there is no God besides you’, combines the language of Exodus 15:11 with the monotheistic confession of Deuteronomy 4:35. Beasher shamanu beoznenu, ‘in all we have heard with our ears’, grounds the confession in the testimony passed down in Israel.",
+      "words": ["H1431", "H3644G", "H2108", "H0241G"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "David's praise does not stop at the gift but moves to the giver. The confession of God's uniqueness is grounded in what he has done, not in speculation."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:20"],
+      "refs": ["Exodus 15:11", "Deuteronomy 4:35", "Psalm 86:8-10", "Isaiah 45:5"]
+    },
+    {
+      "v": "23-24",
+      "context": "David praises God for Israel's uniqueness: the one nation God went out to redeem for himself from Egypt, establishing it as his people forever. The prayer places David's house inside the larger story of Israel's redemption.",
+      "grammar": "Verse 23 closely echoes Deuteronomy 4:34, where Moses asks whether any god ever went to take a nation for himself by signs and wonders. The Hebrew has an unusual plural verb with Elohim, halkhu Elohim, which could be read ‘gods went’; the parallel in 1 Chronicles 17:21 has the singular, making clear that Israel's God is meant. Lifdot, ‘to redeem’, is from padah, the verb for buying back or ransoming. Verse 24 ends with the covenant formula, vattah YHWH hayita lahem lelohim, ‘and you, LORD, became their God’.",
+      "words": ["H1471A", "H6299", "H7760A", "H3372H", "H3559H", "H0430G"],
+      "text": "The Hebrew of verse 23 is rough: it shifts from ‘you’ plural (lakhem) to ‘your land’, and reads ‘for your land’ where the parallel in 1 Chronicles 17:21 reads ‘to drive out nations’. The BSB follows Chronicles with \"by driving out nations\", as do most modern translations.",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Israel's identity rests on God's act of redemption and his choice to be their God. The dynasty promise does not replace the covenant with the people; it serves it."
+        },
+        {
+          "id": "salvation",
+          "note": "Redemption from Egypt is described as God acquiring a people for himself. The language of padah, ransom, becomes the vocabulary for salvation throughout Scripture (Deuteronomy 7:8; Titus 2:14)."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:21-22"],
+      "refs": ["Deuteronomy 4:7-8", "Deuteronomy 4:34", "Deuteronomy 7:8", "Titus 2:14"]
+    },
+    {
+      "v": "25-26",
+      "context": "David's petition begins. He asks God to confirm and do what he has already promised, so that God's name, not David's, will be great forever.",
+      "grammar": "Veattah, ‘and now’, marks the shift from praise to request, as often in prayers. Haqem, ‘confirm’, is a Hiphil imperative of qum, the verb God used for raising up David's seed (verse 12): David asks God to ‘raise up’ his word as he promised to raise up the son. In verse 26 veyigdal shimkha, ‘and let your name be great’, answers verse 9, where God promised to make David's name great; the prayer turns that promise into praise of God's name.",
+      "words": ["H6258", "H6965I", "H6213A", "H1431", "H8034", "H6635B"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "David asks for nothing God has not already said. Praying God's promises back to him is not reminding a forgetful God; it is aligning desire with God's stated purpose, and aiming the answer at God's honor."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:23-24"],
+      "refs": ["Matthew 6:9-10", "Psalm 89:49", "Nehemiah 1:8-9", "Daniel 9:18-19"]
+    },
+    {
+      "v": "27",
+      "context": "David explains why he dares to pray this way: God himself revealed that he would build David a house. The promise gave David the courage to ask.",
+      "grammar": "Galitah et ozen avdekha, ‘you have uncovered the ear of your servant’, is an idiom for revealing something privately (1 Samuel 9:15; 20:2). Bayit evneh lakh, ‘a house I will build for you’, now uses banah, ‘build’, completing the reversal of verse 5: God is the builder. Matsa avdekha et libbo, literally ‘your servant has found his heart’, means he has found the courage; lehitpallel, ‘to pray’, is the Hithpael of palal, the ordinary verb for prayer.",
+      "words": ["H1540H", "H0241I", "H1129", "H4672", "H3820A", "H6419"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Bold prayer grows out of God's prior word. David's confidence is not in his standing but in what God has said, which is the pattern of faith throughout Scripture."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:25"],
+      "refs": ["1 Samuel 9:15", "Hebrews 4:16", "1 John 5:14-15"]
+    },
+    {
+      "v": "28-29",
+      "context": "The prayer closes with a confession and a final request. God is God, his words are true, and he has promised this good thing; so may he bless David's house forever, because blessing from him is sure.",
+      "grammar": "Attah hu haelohim, ‘you are he, the God’, uses the pronoun hu to identify God emphatically, as in Deuteronomy 7:9. Udevarekha yihyu emet, ‘and your words are truth’: emet, from the same root as neeman in verse 16, means reliability, words that hold. Hattovah hazzot, ‘this good thing’, can also carry the covenant sense of formal goodwill found in ancient treaty language. In verse 29 hoel, a Hiphil imperative of yaal, means ‘be pleased, resolve’, and the prayer ends with a Pual imperfect, yevorakh, ‘it will be blessed’, a passive that names God as the one who blesses.",
+      "words": ["H0430G", "H0571I", "H2896C", "H2974", "H1288", "H1293"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "The truthfulness of God's word is the foundation of David's hope. The New Testament speaks the same way when Jesus prays that the Father's word is truth (John 17:17) and when Paul says every promise of God finds its Yes in Christ (2 Corinthians 1:20)."
+        },
+        {
+          "id": "hope",
+          "note": "David asks for a blessing that reaches beyond his life, ‘forever’. The prayer hands the future of his house to God, a hope Israel kept praying after the dynasty fell (Psalm 89:49-51)."
+        }
+      ],
+      "parallels": ["1 Chronicles 17:26-27"],
+      "refs": ["Deuteronomy 7:9", "John 17:17", "2 Corinthians 1:20", "Psalm 89:49-51"]
+    }
+  ]
+}

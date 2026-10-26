@@ -1,0 +1,166 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Isaac calls Jacob and blesses him again, this time knowing exactly whom he is blessing. The instruction follows at once: no Canaanite wife, but a wife from Rebekah's family in Paddan-aram. Rebekah's plan in 27:46 has worked, and Jacob's flight now has his father's authority behind it.",
+      "grammar": "Verse 1 joins two verbs, vayvarekh ... vaytsavvehu, ‘he blessed him and commanded him’: the blessing carries an obligation. The prohibition uses lo with the imperfect (lo tiqqach, \"Do not take\"), the form of a standing command, the same form Abraham used when he made his servant swear in 24:3. Verse 2 opens with two imperatives, qum lekh, ‘get up, go’, which the BSB renders \"Go at once\". Paddenah carries the directional ending, ‘toward Paddan’, and so does betah, ‘to the house’.",
+      "words": ["H1288", "H6680", "H3947I", "H6965B", "H6307"],
+      "history": "Marriage within the wider family, especially to a cousin on the mother's or father's side, was common among herding families of the ancient Near East and kept property and loyalty within the clan. The contrast with Isaac is plain: Abraham refused to let Isaac go back to Mesopotamia and sent a servant instead (24:6-8), but Jacob, a fugitive with no servant or gifts, must go himself.",
+      "refs": ["Genesis 24:3-4", "Genesis 24:6-8", "Genesis 26:34-35", "Genesis 27:46"]
+    },
+    {
+      "v": "3-4",
+      "context": "Isaac's second blessing is openly covenantal. The first (27:27-29) spoke of dew, harvest, and rule; this one names El Shaddai, fruitfulness, a community of peoples, the blessing of Abraham, and the land. Isaac now passes on consciously what he tried to give Esau.",
+      "grammar": "\"Make you fruitful and multiply you\" uses two Hiphil (causative) verbs, yafrekha and yarbekha, the vocabulary of the creation blessing (1:28) and of God's word to Abraham in 17:2-6. \"A company of peoples\" is qehal ammim; qahal means an assembly gathered together, and later names Israel assembled before God, as at Sinai (Deuteronomy 9:10). The same phrase is used when God renews the promise to Jacob in 48:4, and 35:11 has ‘a company of nations’. \"The blessing of Abraham\" (birkat Avraham) is the exact phrase Paul uses when he says Christ redeemed us so that the blessing of Abraham would come to the Gentiles (Galatians 3:14). \"The land where you dwell as a foreigner\" is erets megurekha, ‘the land of your sojournings’, the phrase of 17:8.",
+      "words": ["H7706", "H6509", "H7235A", "H6951", "H1293", "H4033"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The blessing Isaac gives is not his own to invent. He asks God Almighty to give Jacob the blessing already promised to Abraham, and the land already given to Abraham. The patriarch hands on what he received; the giver is God."
+        }
+      ],
+      "refs": ["Genesis 17:1-8", "Genesis 35:11", "Genesis 48:3-4", "Galatians 3:14", "Deuteronomy 9:10"]
+    },
+    {
+      "v": "5",
+      "context": "Isaac sends Jacob, and Jacob goes. The verse names the destination in full, Laban son of Bethuel the Aramean, and closes by calling Rebekah \"the mother of Jacob and Esau\". After this Rebekah is mentioned only in passing (29:12, 35:8, 49:31); her life after Jacob leaves is not told.",
+      "history": "Paddan-aram lay in the upper Euphrates region around Haran, where Abraham's father Terah had settled (11:31) and where the family of Abraham's brother Nahor lived (24:10). Laban's household was Aramean, speaking Aramaic, as 31:47 shows when Laban names a stone heap in Aramaic and Jacob names it in Hebrew.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The son who stole the blessing is now sent away with his father's blessing and orders. What began as flight from Esau becomes, by Isaac's word, a mission to find a wife, and the chapter will show God himself taking charge of the road."
+        }
+      ],
+      "refs": ["Genesis 11:31", "Genesis 24:10", "Genesis 25:20", "Genesis 31:47"]
+    },
+    {
+      "v": "6-9",
+      "context": "Esau watches his brother leave with his father's blessing and draws a conclusion: his Canaanite wives displease his father. He goes to Ishmael's family and marries a daughter of Ishmael. The gesture is sincere but belated, and it joins the rejected son of Isaac to the rejected son of Abraham.",
+      "grammar": "The paragraph turns on the verb raah, ‘to see’: Esau ‘saw’ that Isaac had blessed Jacob (verse 6) and ‘saw’ that the Canaanite women were ‘evil in the eyes of’ his father (verse 8), rendered \"disapproved\". The narrator lets us watch him reading his parents from outside, without ever speaking to them. Verse 7 notes that Jacob ‘listened to’ (vayyishma el) his father and mother, the obedience vocabulary of 26:5 and 27:8. Verse 9 adds al nashav, \"in addition to the wives he already had\": Esau adds a wife but does not change course.",
+      "words": ["H7200G", "H7451H", "H8085H", "H4258G", "H0802H"],
+      "text": "Genesis 36:3 names Esau's Ishmaelite wife Basemath, sister of Nebaioth, while this verse names her Mahalath, and 26:34 gives Basemath as the name of a Hittite wife. Women were sometimes known by more than one name, and the lists may preserve different family records; the text does not harmonize them.",
+      "refs": ["Genesis 26:34-35", "Genesis 36:2-3", "Genesis 25:13", "Genesis 27:8"]
+    },
+    {
+      "v": "10-11",
+      "context": "Jacob leaves Beersheba, the southern limit of the land, heading for Haran in the far north. At sunset he stops at an unnamed place, takes a stone, and lies down. Nothing in the verses prepares for what happens next; the scene is deliberately ordinary.",
+      "grammar": "\"On reaching\" is vayyifga, from paga, a verb that means to come upon, to meet, or even to strike against. It is the verb used when, on his way back twenty years later, ‘the angels of God met him’ (32:1), so Jacob's time away is framed by two encounters with angels using the same verb. The noun maqom, \"place\", appears three times in verse 11, each time with the article, ‘the place’. Some interpreters think the article already hints at a sanctuary site; others take it simply as ‘the place he came to’. The stone was put mera'ashotav, literally ‘at his head-place’, which can mean under or beside his head.",
+      "words": ["H6293", "H4725", "H4763", "H0068G", "H8121"],
+      "history": "The distance from Beersheba to Bethel is roughly sixty miles, several days on foot along the watershed road through the hill country. Bethel is still only a small part of the way to Haran, which lay hundreds of miles to the north beyond Damascus.",
+      "refs": ["Genesis 32:1", "Genesis 12:8", "Genesis 13:3"]
+    },
+    {
+      "v": "12",
+      "context": "The dream begins. Jacob sees a stairway set on the earth with its top in heaven and angels going up and down it. The picture is of a way between earth and heaven that already exists; Jacob has not built it and does not climb it.",
+      "grammar": "The dream is told in a chain of participles introduced by vehinneh, ‘and look’: the stairway ‘set’ (mutsav, a Hophal participle, placed there by someone else), its top ‘reaching’ (maggia), angels ‘ascending and descending’ (olim veyoredim). Participles present what Jacob saw as a moving scene, still in progress. The angels go up first and then come down, the order John 1:51 keeps. The last word, bo, is \"on it\" in the BSB, but the same form can mean ‘on him’, and some ancient Jewish interpreters read it that way, with angels ascending and descending on Jacob. \"Angels\" is malakhim, ‘messengers’.",
+      "words": ["H2492B", "H5551", "H5324", "H5060", "H4397H", "H5927G", "H3381"],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angels are shown at work, passing between heaven and earth, which fits the Bible's picture of them as God's servants sent on errands for those who will inherit salvation (Hebrews 1:14). Jacob sees that the world he fled into is not left to itself."
+        }
+      ],
+      "refs": ["John 1:51", "Hebrews 1:14", "Genesis 11:4", "Psalm 91:11", "Genesis 32:1-2"]
+    },
+    {
+      "v": "13",
+      "context": "The third ‘look’ of the dream brings the LORD himself into view, and for the first time God speaks to Jacob. He names himself by his relationship to Jacob's family, then promises Jacob the ground on which he is lying.",
+      "grammar": "\"Standing\" is nitsav alav. The preposition al with the suffix can mean ‘above it’, the stairway, or ‘beside him’, Jacob; the same phrase is used of the three men who stood near Abraham in 18:2. God's speech opens ani YHWH, ‘I am the LORD’, the self-introduction that, with the longer pronoun anokhi, will later open the Ten Commandments (Exodus 20:2). He is ‘the God of Abraham your father’ though Abraham was Jacob's grandfather, the Hebrew word for ‘father’ covering any ancestor. \"On which you now lie\" is a participle, shokhev: the promised land is the very ground under Jacob's back.",
+      "words": ["H5324", "H0589", "H3068G", "H7901G", "H0430G"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God speaks first and names himself before he asks anything. Jacob has done nothing to seek him, and the God who speaks identifies himself by his history with Jacob's family, so revelation comes as the continuation of promises already made."
+        }
+      ],
+      "text": "Translations divide on the phrase in the first line. The BSB and ESV place the LORD at the top of the stairway (‘above it’); others, including the NRSV, read ‘the LORD stood beside him’, so that God comes down to Jacob on the ground. Both readings are grammatically sound.",
+      "refs": ["Genesis 18:2", "Exodus 3:6", "Exodus 20:2", "Genesis 13:14-15"]
+    },
+    {
+      "v": "14",
+      "context": "The promise widens to its full scope: descendants like dust, spreading in every direction, and blessing for all the families of the earth. These are the words first given to Abraham in 12:3 and 13:14-16, and now for the first time spoken directly to Jacob.",
+      "grammar": "\"Spread out\" is uparatsta, from parats, ‘to break through, burst out’, a strong verb for sudden, uncontainable growth. It will describe Jacob's own wealth in Haran (30:30, 30:43) and names Perez, whose birth ‘broke out’ in 38:29. The four directions are each marked with the Hebrew directional ending: yammah, qedmah, tsafonah, negbah. \"Will be blessed\" is venivrekhu, a Niphal, the same stem as in 12:3 and 18:18, where 22:18 and 26:4 used the Hithpael. \"All the families of the earth\" (kol mishpechot haadamah) repeats 12:3 exactly.",
+      "words": ["H6555", "H6083", "H1288", "H4940", "H0127G"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The promise to a single fugitive includes every family on earth. God's purpose for Jacob is never only about Jacob's safety, and Paul reads this promise as the gospel announced in advance to the Gentiles (Galatians 3:8)."
+        },
+        {
+          "id": "covenant",
+          "note": "The wording ties Jacob directly to Abraham's covenant. The promise now stands on its third generation, and the pattern is clear: God does not start again with each heir but renews the same pledge."
+        }
+      ],
+      "refs": ["Genesis 12:3", "Genesis 13:14-16", "Genesis 30:43", "Galatians 3:8", "Acts 3:25"]
+    },
+    {
+      "v": "15",
+      "context": "The promise turns personal. Besides the land and descendants, God gives Jacob his presence, his protection wherever he goes, a return to this land, and a pledge not to abandon him. Every clause answers something Jacob lacks as he runs.",
+      "grammar": "\"Look, I am with you\" (hinneh anokhi immakh) uses the fuller pronoun anokhi for emphasis. \"Watch over\" is shamar, to guard or keep, the verb Psalm 121 uses six times for the LORD who keeps Israel. \"I will not leave you\" is lo eezovkha, from azav, ‘to abandon, forsake’. The final clause says God will not leave Jacob ‘until’ (ad asher im) he has done what he promised. In Hebrew, as in English, ‘until’ does not imply that God will leave afterward; it names the goal his presence guarantees. \"What I have promised\" is literally ‘what I have spoken’ (dibbarti).",
+      "words": ["H0595", "H8104H", "H7725G", "H5800A", "H1696I"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Each verb is a promise of God's active care: to be with, to guard, to bring back, not to abandon. Jacob will quote the promise back to God when he is afraid of Esau (32:9-12), and at the end of his life he describes God as the one who shepherded him all his life (48:15)."
+        }
+      ],
+      "refs": ["Psalm 121:7-8", "Deuteronomy 31:6", "Hebrews 13:5", "Genesis 31:3", "Matthew 28:20"]
+    },
+    {
+      "v": "16-17",
+      "context": "Jacob wakes and speaks twice. First he admits what he had not known: the LORD is here. Then fear takes hold, and he names the place as the house of God and the gate of heaven. The man who took God's name lightly in 27:20 now trembles at his presence.",
+      "grammar": "\"Surely\" is akhen, a particle of sudden realization: ‘so it is true after all’. Moses uses it when he realizes his killing of the Egyptian is known (Exodus 2:14). Jacob's first sentence is built on yesh, ‘there is’: ‘the LORD is in this place’, and he adds, with the emphatic anokhi, ‘and I, I did not know it’. \"Awesome\" is nora, a Niphal participle of yare, ‘to fear’, so the place is literally ‘to be feared’; it shares its root with \"he was afraid\" at the start of the verse. The closing exclamation piles up demonstratives: ‘this is nothing other than the house of God, and this is the gate of heaven’.",
+      "words": ["H0403", "H3426", "H3372H", "H1004B", "H8179G"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Jacob's words give Israel's later worship its basic vocabulary: a place where God chooses to meet people is his house, and it is a gate between heaven and earth. The tabernacle and temple carry that idea, and John presents Jesus himself as the place where heaven is opened (John 1:51, 2:19-21)."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "The encounter produces fear before it produces worship. Jacob's fear is not terror of punishment but the awe of a man who suddenly knows himself in God's presence, the beginning of wisdom in Proverbs 9:10."
+        }
+      ],
+      "refs": ["Exodus 2:14", "Exodus 3:5-6", "Psalm 139:7-10", "John 2:19-21", "Proverbs 9:10"]
+    },
+    {
+      "v": "18-19",
+      "context": "At dawn Jacob turns his headrest into a monument. He stands the stone up as a pillar, pours oil on it, and names the place Bethel, ‘house of God’, the name he had spoken in the night. The narrator adds the town's older name, Luz.",
+      "grammar": "\"Pillar\" is matsevah, from the verb natsav, ‘to stand, set up’, the same root as the participles in verses 12 and 13 for the stairway set on the earth and the LORD standing. Jacob sets up on the ground what he saw standing between earth and heaven. \"Poured oil\" (vayyitsoq shemen) is the first act of anointing in the Bible; the same verb is used when oil is poured on Aaron's head at his consecration (Leviticus 8:12). The adverb ulam, \"though\", introduces a contrast: the place Jacob names Bethel was a town already called Luz.",
+      "words": ["H4676", "H3332G", "H8081", "H1008G", "H0199", "H3870H"],
+      "history": "Bethel is usually identified with the village of Beitin, about ten miles north of Jerusalem. Judges 1:23 also records that Bethel was formerly called Luz. Oil used for anointing in this period would have been olive oil, the staple of the hill country. Genesis 31:13 and 35:14-15 show Jacob later remembering this pillar and pouring out a drink offering and oil on another pillar there when he returns.",
+      "refs": ["Genesis 31:13", "Genesis 35:6-7", "Genesis 35:14-15", "Judges 1:23", "Leviticus 8:12"]
+    },
+    {
+      "v": "20-21",
+      "context": "Jacob answers the promise with a vow. Its conditions repeat God's own words from verse 15: presence, protection, provision, and a safe return. Its pledge is that the LORD will be Jacob's God.",
+      "grammar": "The vow opens with im, ‘if’, and runs through a series of linked verbs: ‘if God will be with me and will keep me ... and will give me bread to eat and clothing to wear, and I return in peace’. The difficulty is where the ‘if’ ends and the ‘then’ begins. The BSB, like many versions, starts the ‘then’ at \"the LORD will be my God\" in verse 21. Others, including a number of commentators, keep that clause inside the condition and start the ‘then’ at verse 22, ‘then this stone ... will be God's house’. Hebrew grammar allows both. \"With me\" is immadi, a longer form of the preposition than God's immakh in verse 15, but the promise Jacob asks for is the same. \"Safely\" is beshalom, ‘in peace’ or ‘whole’.",
+      "words": ["H5087", "H0518A", "H5978", "H8104H", "H7965G"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jacob's vow is a prayer that asks God to do what God has just said he will do. However mixed Jacob's motives, the form is sound: the promises of God are what a person has to hold God to."
+        },
+        {
+          "id": "faith",
+          "note": "Jacob has not yet called the LORD ‘my God’. The vow looks toward that confession, and 35:1-7 shows its fulfillment, when Jacob returns and builds an altar to the God who answered him in the day of his distress."
+        }
+      ],
+      "refs": ["Genesis 28:15", "1 Samuel 1:11", "Genesis 35:1-3", "Numbers 30:2", "Psalm 50:14"]
+    },
+    {
+      "v": "22",
+      "context": "The vow closes with two pledges. The pillar will become God's house, and Jacob will give a tenth of everything God gives him. For the first time in the vow Jacob stops speaking of God as ‘he’ and addresses him directly as ‘you’.",
+      "grammar": "\"I will surely give You a tenth\" is asser aasserennu lakh, an infinitive absolute with the finite verb of the same root (asar, ‘to give a tenth’), a Hebrew way of adding emphasis: ‘I will certainly tithe it to you’. The shift of person is abrupt. Through verse 21 Jacob speaks about God in the third person; in the last clause he says titten li, ‘you give me’, and lakh, ‘to you’. The vow that began as a bargain ends as speech to God.",
+      "words": ["H6237", "H4676", "H1004B", "H5414G"],
+      "history": "Giving a tenth to a god or a king was known in the ancient Near East, and Abram gave a tenth of the spoils to Melchizedek (14:20). Israel's law later made the tithe a standing obligation (Leviticus 27:30, Deuteronomy 14:22-23), and in the eighth century BC Amos mocked the people for bringing tithes to the shrine at Bethel while living unjustly (Amos 4:4).",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Jacob's tithe begins from the conviction that everything he will have is God's gift: ‘of all that You give me’. The tenth is a return of part of what is already received, which is how the rest of Scripture frames giving (1 Chronicles 29:14)."
+        }
+      ],
+      "refs": ["Genesis 14:20", "Leviticus 27:30", "Amos 4:4", "1 Chronicles 29:14", "Hebrews 7:4"]
+    }
+  ]
+}

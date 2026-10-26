@@ -93,7 +93,7 @@ export default function Covenant() {
       {/* FREE SAMPLE */}
       <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-5)" }}>
         <div style={prose} className="book-prose">
-          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the opening…</p>}
+          {sample ? <Markdown>{sample}</Markdown> : <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the opening…</p>}
         </div>
       </section>
 
@@ -101,7 +101,7 @@ export default function Covenant() {
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ ...prose, textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "24px", fontStyle: "italic", margin: "0 0 22px", color: "rgba(245,240,230,.92)" }}>
-            It is not your love that sustains the marriage. It is the marriage that sustains your love.
+            The vow was not a description of how you felt that day. It was a promise about every day you could not yet see.
           </p>
           <div style={{ display: "inline-flex" }}>
             <BuyEbookButton slug={SLUG} />

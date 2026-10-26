@@ -13,6 +13,7 @@
  * browser back button walks the chapters.
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link, useRoute } from "wouter";
 import { Markdown } from "@/components/Markdown";
 import Layout from "@/components/Layout";
@@ -106,7 +107,7 @@ export default function BookReader() {
     if (typeof window !== "undefined") window.history.pushState(null, "", `#ch-${n}`);
     if (slug) writeStoredJSON(progressKey(slug), { chapter: n });
     if (opts?.scroll !== false) {
-      requestAnimationFrame(() => contentRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
+      requestAnimationFrame(() => contentRef.current?.scrollIntoView({ behavior: scrollBehavior(), block: "start" }));
     }
   }, [slug]);
 
@@ -231,7 +232,7 @@ export default function BookReader() {
 
       {!book ? (
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", minHeight: "40vh" }}>
-          <div style={prose}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the book…</p></div>
+          <div style={prose}><p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the book…</p></div>
         </section>
       ) : (
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>

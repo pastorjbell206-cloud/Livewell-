@@ -1,0 +1,428 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Nicodemus is introduced by party (a Pharisee), rank (a ruler of the Jews), and name. He comes at night and opens with a compliment that is also a conclusion: Jesus' signs show that God is with him. The scene follows directly from 2:23-25, where many believed because of the signs and Jesus did not entrust himself to them; Nicodemus is one of those admirers, and the conversation tests what his admiration amounts to.",
+      "grammar": "Ēn de anthrōpos, ‘now there was a man’, links Nicodemus to the last word of chapter 2, where Jesus knew what was in anthrōpos, man. Nuktos is a genitive of time, ‘by night’, marking the kind of time rather than a point in it; John mentions it again when Nicodemus reappears (19:39), and in this Gospel night is never only a clock time (9:4, 13:30). Oidamen, ‘we know’, is plural: Nicodemus speaks for others, and Jesus will answer in the plural too (verses 7, 11, 12). Apo theou elēluthas didaskalos uses a perfect, ‘you have come from God as a teacher’, a true statement that falls short of the truth, since Jesus came from God in a sense Nicodemus does not yet grasp. Ean mē ē ho theos met' autou, ‘unless God is with him’, is the Old Testament language of God's presence with a chosen servant (Exodus 3:12, Judges 6:12).",
+      "words": ["G0444", "G5330", "G0758", "G3571", "G6063", "G1320", "G4592"],
+      "history": "Archōn tōn Ioudaiōn probably means that Nicodemus sat on the Sanhedrin, the council in Jerusalem, which fits his appearance in 7:50 among the chief priests and Pharisees. His name is Greek, Nikodēmos, ‘victor over the people’, and Greek names were common among Jews of the time. The Babylonian Talmud tells of a wealthy Jerusalemite named Nakdimon ben Gurion in the years before AD 70 (b. Taanit 19b-20a, b. Gittin 56a); whether he was the same man or a relative is unknown, and the identification should not be pressed.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Nicodemus believes something true about Jesus on the basis of signs, and Jesus does not dismiss it. The chapter shows that faith resting on signs is a beginning, not yet the new birth that sees the kingdom."
+        }
+      ],
+      "refs": ["John 2:23-25", "John 7:50-51", "John 19:39", "Exodus 3:12", "John 9:16"]
+    },
+    {
+      "v": "3",
+      "context": "Jesus ignores the compliment and speaks to the need: no one can see the kingdom of God without being born anōthen. The answer shifts the subject from who Jesus is to what must happen to Nicodemus.",
+      "grammar": "Anōthen is the hinge of the conversation. It can mean ‘from above’ (its sense in 3:31 and 19:11, 19:23) or ‘again’, ‘anew’. Nicodemus hears ‘again’ (his reply uses deuteron, ‘a second time’), and Jesus means at least ‘from above’, a birth whose source is God, which is also a second birth; the Gospel's habit of double meanings makes many interpreters think both are intended. Gennēthē is an aorist passive subjunctive: the person is born, not self-made, and the implied agent is God. Idein tēn basileian tou theou, ‘to see the kingdom of God’, uses ‘see’ in the sense of experience or share in, as ‘see life’ in verse 36 and ‘see death’ in 8:51. ‘Kingdom of God’, the Synoptic Gospels' central phrase, occurs in John only here and in verse 5.",
+      "words": ["G0281", "G1080", "G0509", "G1492H", "G0932"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "Jesus makes new birth the condition of seeing God's kingdom, and the passive verb makes it God's work. The kingdom is not reached by improving the old life but by receiving a new one from above, as 1:13 had already said."
+        },
+        {
+          "id": "kingdom",
+          "note": "John's one use of the Synoptic phrase ties Jesus' preaching of the kingdom to the new birth: the kingdom is entered by people whom God has remade, not by descent or merit."
+        }
+      ],
+      "text": "English Bibles divide between ‘born again’ (KJV, ESV, BSB, NIV) and ‘born from above’ (NRSV, NET margin). The Latin Vulgate's denuo, ‘again’, shaped Western usage. Justin Martyr, around AD 155, cites the saying with a different verb, anagennēthēte, ‘be born again’ (1 Apology 61), which shows how early the ‘again’ sense was understood.",
+      "parallels": ["Matthew 18:3", "Mark 10:15"],
+      "refs": ["John 1:12-13", "John 3:31", "1 Peter 1:3", "1 Peter 1:23", "Titus 3:5"]
+    },
+    {
+      "v": "4",
+      "context": "Nicodemus takes the words literally and asks how an old man could re-enter his mother's womb. The misunderstanding is a device John uses often (2:20, 4:11, 6:52): a literal reply lets Jesus explain the deeper meaning.",
+      "grammar": "Pōs dunatai, ‘how can?’, repeats the verb of possibility Jesus used (‘no one can see’), so the conversation is about what is possible. Gerōn ōn, ‘being old’, may hint at Nicodemus himself. The second question begins with mē, which in Greek questions expects the answer no: ‘He cannot enter a second time, can he?’ Deuteron, ‘a second time’, shows that Nicodemus heard anōthen as ‘again’, and so opens the double meaning.",
+      "words": ["G4459", "G1410", "G1088", "G2836", "G3384", "G1208"],
+      "history": "Later rabbinic law describes a Gentile who converts to Judaism as being like a newborn child (b. Yevamot 22a, 48b), meaning that the old family ties no longer count legally. The saying is attested only in the Talmud, and it is uncertain whether it was current in Nicodemus's day. If it was, Jesus' demand is sharper still: what was said of Gentiles entering Israel is required of Israel's own teacher.",
+      "refs": ["John 2:20", "John 4:11", "John 6:52"]
+    },
+    {
+      "v": "5",
+      "context": "Jesus restates verse 3 with two changes: ‘enter’ for ‘see’, and ‘of water and the Spirit’ for ‘from above’. The new phrase explains what birth from above is, and the next verses develop only the Spirit side of it.",
+      "grammar": "Ex hudatos kai pneumatos has one preposition governing both nouns and no article on either. Greek grammarians note that this construction presents the two as a single idea, one birth of water-and-Spirit, rather than two births; Linda Belleville (Trinity Journal 1, 1980) built her case for reading the phrase as one act on this point. Pneuma here has no article, which fits the idea of spirit as the life-giving power of God, as in Ezekiel. Eiselthein eis tēn basileian, ‘to enter the kingdom’, is the language the Synoptic Gospels use for entering the kingdom (Matthew 18:3, Mark 10:15).",
+      "words": ["G1537", "G5204", "G4151G", "G1525", "G0932"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is the agent of the new birth. Whatever the water means, the whole sentence makes the Spirit the one who gives entrance to the kingdom."
+        },
+        {
+          "id": "sacraments",
+          "note": "Christians read the water differently, and each reading has long standing. Most church fathers, and the Catholic, Orthodox, and Lutheran traditions, see a reference to baptism as the means by which the Spirit gives new birth. Calvin, in his commentary, took water and Spirit as one thing, the Spirit who cleanses like water, and many Reformed and Baptist interpreters follow him in reading Ezekiel 36 behind the verse. Ben Witherington (New Testament Studies 35, 1989) argued that water means physical birth, so that one must be born both naturally and spiritually; others see John the Baptist's baptism of repentance. The text does not settle the question by itself, and the church has not agreed on it."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Ezekiel 36:25-27",
+          "note": "God promises exiled Israel: ‘I will sprinkle clean water on you’ (Hebrew mayim tehorim; Septuagint hudōr katharon), ‘I will give you a new heart and put a new spirit within you’ (ruach chadashah; pneuma kainon), and ‘I will put My Spirit within you’. Water and spirit are joined as two sides of one promised renewal of the people. Jesus does not quote the passage, but his rebuke in verse 10 (‘you are Israel's teacher’) implies that Nicodemus should have known a Scripture that joins cleansing water and God's Spirit, and Ezekiel 37 follows with the breath (ruach) that brings dry bones to life."
+        }
+      ],
+      "text": "The first hand of Codex Sinaiticus and some early Christian writers read ‘the kingdom of heaven’ here, the phrase Matthew prefers; nearly all manuscripts read ‘the kingdom of God’, and the other reading probably came from familiarity with Matthew.",
+      "refs": ["Ezekiel 36:25-27", "Titus 3:5", "John 7:37-39", "1 Corinthians 12:13", "Isaiah 44:3"]
+    },
+    {
+      "v": "6",
+      "context": "A two-line saying explains why new birth is necessary: like produces like. Human birth produces human life; only the Spirit produces spiritual life. The saying answers Nicodemus's question about the womb.",
+      "grammar": "The lines are exactly parallel: to gegennēmenon ek tēs sarkos sarx estin, kai to gegennēmenon ek tou pneumatos pneuma estin. The perfect passive participle is neuter, ‘that which has been born’, which makes the saying a general principle rather than a statement about one person. Sarx, ‘flesh’, here is not sinful nature as in some of Paul's letters, but human nature in its creatureliness and limits, as in 1:13-14. The flesh is not evil; it simply cannot produce what only God gives.",
+      "words": ["G1080", "G4561", "G4151G"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The verse sets a limit on human capacity without condemning human nature. What people are by birth, even good and religious people, cannot bring them into the life of God."
+        },
+        {
+          "id": "regeneration",
+          "note": "Only the Spirit gives birth to spirit. The new life is not natural life improved but a life with a new source, which is why John can call believers born of God (1:13, 1 John 5:1)."
+        }
+      ],
+      "refs": ["John 1:13", "John 6:63", "1 Corinthians 15:50", "Galatians 5:16-17"]
+    },
+    {
+      "v": "7",
+      "context": "Jesus tells Nicodemus not to be amazed. The necessity of new birth is not a riddle but a plain requirement, and it applies beyond Nicodemus himself.",
+      "grammar": "Mē thaumasēs is an aorist subjunctive with mē, the standard form of a prohibition, ‘do not marvel’. The key shift is in the pronouns: eipon soi, ‘I said to you’, is singular, but dei humas gennēthēnai anōthen, ‘you must be born again’, is plural. Nicodemus had spoken for a group (‘we know’); Jesus answers the whole group, and through them every reader. Dei, ‘it is necessary’, expresses divine necessity, and it returns in verse 14 (the Son of Man must be lifted up) and verse 30 (he must increase).",
+      "words": ["G2296", "G4771", "G1163", "G1080", "G0509"],
+      "theology": [
+        {
+          "id": "regeneration",
+          "note": "The word must places new birth among the things God has ordained, alongside the cross (verse 14). It is not an option for the especially spiritual but the condition of life for everyone."
+        }
+      ],
+      "refs": ["John 3:14", "John 3:30", "John 5:28"]
+    },
+    {
+      "v": "8",
+      "context": "Jesus illustrates with the wind, using a word that also means Spirit. People hear the wind and see its effects without controlling or tracing it; so it is with everyone born of the Spirit.",
+      "grammar": "Pneuma means both ‘wind’ and ‘spirit’, and the verse uses it in both senses: to pneuma hopou thelei pnei, ‘the wind blows where it wills’, and pas ho gegennēmenos ek tou pneumatos, ‘everyone born of the Spirit’. Pnei, ‘blows’, is from the same root. Phōnē means both ‘sound’ and ‘voice’. The questions pothen erchetai kai pou hupagei, ‘where it comes from and where it goes’, are the questions John's Gospel keeps asking about Jesus himself (7:27-28, 8:14, 9:29-30), so the one born of the Spirit shares the mystery of Jesus' own origin.",
+      "words": ["G4151H", "G2309", "G4154", "G5456H", "G4159", "G5217", "G3779"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit is free. He cannot be commanded, predicted, or institutionally controlled, and yet his work is real and audible. The verse guards against making new birth either a human technique or an invisible idea without effects."
+        },
+        {
+          "id": "sovereignty",
+          "note": "‘Where it wishes’ ascribes the initiative to the Spirit. Christians differ on how God's initiative relates to human response, but the verse places the new birth first in God's freedom."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Ecclesiastes 11:5",
+          "note": "The Teacher says that as no one knows the way of the ruach (wind or spirit), or how bones grow in a pregnant woman's womb, so no one knows the work of God. The Hebrew joins wind, birth, and God's hidden work in one sentence, and the Septuagint renders ruach with pneuma. Jesus' saying does not quote it, but it gathers the same three ideas, and several commentators note the likeness."
+        }
+      ],
+      "refs": ["John 8:14", "Ezekiel 37:9-10", "Acts 2:2", "Ecclesiastes 11:5"]
+    },
+    {
+      "v": "9-10",
+      "context": "Nicodemus's last words in the chapter are a bewildered question. Jesus answers with a rebuke that is also an invitation: Israel's teacher should understand these things, because the Scriptures he teaches promised them.",
+      "grammar": "Pōs dunatai tauta genesthai, ‘how can these things happen?’, repeats the verb of possibility for the third time (verses 4, 9). In verse 10, su ei ho didaskalos tou Israēl has the article, ‘the teacher of Israel’, suggesting a recognized scholar, perhaps with some irony. Tauta ou ginōskeis, ‘and these things you do not know?’, is a question in form and a rebuke in force. Nicodemus had begun with ‘we know’ (oidamen); now he is said not to know.",
+      "words": ["G4459", "G1096", "G1320", "G2474", "G1097"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The rebuke assumes that the Old Testament already spoke of new birth by God's Spirit (Ezekiel 36-37, Jeremiah 31:33, Deuteronomy 30:6). Jesus' teaching is not a novelty but the fulfillment of what Israel's Scriptures promised."
+        }
+      ],
+      "refs": ["Jeremiah 31:33", "Deuteronomy 30:6", "Ezekiel 11:19-20", "Romans 2:28-29"]
+    },
+    {
+      "v": "11-12",
+      "context": "Jesus moves from Nicodemus's question to the problem of testimony. He speaks of what he knows and has seen, yet his testimony is not received. If Nicodemus cannot believe earthly things, like the wind and birth, how will he believe heavenly things?",
+      "grammar": "The pronouns turn plural: oidamen, ‘we know’, laloumen, ‘we speak’, heōrakamen, ‘we have seen’, and ou lambanete, ‘you (plural) do not receive’. The ‘we’ may answer Nicodemus's ‘we know’ with gentle irony, may include Jesus' disciples as witnesses, or may reflect the voice of the later church; interpreters are divided. Heōrakamen is a perfect: the testimony rests on sight that stands. Verse 12 contrasts epigeia, ‘earthly things’, with epourania, ‘heavenly things’, in a conditional sentence that argues from the lesser to the greater.",
+      "words": ["G6063", "G3708", "G3140", "G3141", "G2983", "G1919", "G2032"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus claims to speak from direct knowledge, as a witness rather than a scholar. The problem is not a lack of evidence but a refusal to receive it, which the Gospel treats as a moral as well as intellectual failure (verses 19-20)."
+        }
+      ],
+      "history": "The Wisdom of Solomon, a Jewish book written in Greek probably in the first century BC, laments that people can hardly understand what is on earth, and asks who has traced out what is in the heavens (9:16-17), concluding that no one could know God's counsel unless God gave wisdom and sent his holy spirit from on high. Jesus' words answer the same question: the one who has come from heaven can speak of heavenly things.",
+      "refs": ["John 3:32", "John 1:11", "John 8:26", "1 John 1:1-3"]
+    },
+    {
+      "v": "13",
+      "context": "The reason Jesus can speak of heavenly things: no one has gone up to heaven except the one who came down from it, the Son of Man. The verse grounds verse 12 and introduces the title that verse 14 will develop.",
+      "grammar": "Anabebēken is a perfect, ‘no one has ascended’, and ei mē, ‘except’, introduces the exception, ho ek tou ouranou katabas, ‘the one who descended from heaven’, an aorist participle for a completed descent. The logic is compressed. It may mean that no human being has ascended to heaven to bring back revelation, while the Son of Man, who came down, can speak of what he knows; or it may be spoken from after the resurrection, when the Son of Man has both descended and ascended. The sentence also sets Jesus against Jewish traditions that had Moses, Enoch, or others ascend into heaven to receive secrets.",
+      "words": ["G0305", "G3772", "G2597", "G5207"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of Man is the one who came down from heaven. The verse joins the title of Daniel 7 to the prologue's teaching that the Word came from God, so that the Son of Man is not merely a man raised up but one who first descended."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Proverbs 30:4",
+          "note": "Agur asks, ‘Who has ascended to heaven and come down?’, and then, ‘What is his name, and what is the name of his son?’ The Hebrew (mi alah shamayim vayerad) and the Septuagint (tis anebē eis ton ouranon kai katebē) agree. The question expects the answer that no human has done so. Jesus' saying reverses the order, descent before ascent, and names the one who has."
+        },
+        {
+          "ref": "Deuteronomy 30:11-14",
+          "note": "Moses says God's command is not in heaven, that someone should have to ascend and bring it down. Paul quotes the passage of Christ in Romans 10:6-8. Both uses deny that anyone must climb to heaven for God's word, because God has brought it near."
+        }
+      ],
+      "text": "Codex Alexandrinus, the later Byzantine manuscripts, and many Latin and Syriac witnesses add ho ōn en tō ouranō, ‘who is in heaven’, which the King James Version translates. P66, P75, Sinaiticus, and Vaticanus lack it. Most editors think it was added, but some scholars, noting that it is the harder reading (the Son of Man on earth yet in heaven), argue it could be original and was dropped because it seemed impossible.",
+      "refs": ["John 6:38", "John 6:62", "John 1:51", "Ephesians 4:9-10", "Romans 10:6-8"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus compares his coming death to the bronze snake Moses set on a pole: as the snake was lifted up in the wilderness, so must the Son of Man be lifted up, so that everyone who believes may have eternal life. It is the first of three ‘lifted up’ sayings in John (8:28, 12:32-34).",
+      "grammar": "Kathōs ... houtōs, ‘just as ... so’, sets up the comparison. Hupsoō means literally to lift up and figuratively to exalt, and John uses both at once: the Son of Man is raised on the cross, and the cross is his exaltation (12:32-33 says the phrase indicated the kind of death he would die). Dei, ‘must’, again signals divine necessity. In verse 15, the earliest manuscripts read en autō, ‘in him’; since John elsewhere says ‘believe into’ (eis), many grammarians attach en autō to the verb that follows, ‘may have eternal life in him’. Zōē aiōnios, ‘eternal life’, appears here for the first time in John; it means the life of the age to come, received now.",
+      "words": ["G2531", "G3475", "G5312", "G3789", "G3779", "G1163", "G2222", "G0166"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The comparison ties salvation to the cross. The Israelites were dying under judgment for their own rebellion, and God provided the remedy in the very form of what was killing them. The Son of Man, lifted up in death, is the remedy for sin's deadly bite."
+        },
+        {
+          "id": "exaltation",
+          "note": "Hupsoō makes the crucifixion itself the first step of Jesus' exaltation. In John the cross is not a defeat reversed by the resurrection but the hour of glory (12:23, 17:1)."
+        },
+        {
+          "id": "faith",
+          "note": "In Numbers, whoever looked at the snake lived. Faith is compared to that look: not an achievement, but turning toward what God has provided."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Numbers 21:8-9",
+          "note": "When venomous snakes struck the grumbling Israelites, God told Moses to make a snake and set it on a pole; Moses made it of bronze (nechash nechoshet, a wordplay in Hebrew), and whoever looked lived. The Hebrew calls the pole a nes, a standard or signal pole; the Septuagint renders it sēmeion, ‘sign’, the word John uses for Jesus' miracles. Numbers does not use the verb ‘lift up’; John's hupsoō likely comes from Isaiah 52:13 in the Septuagint, where the servant ‘will be lifted up and glorified exceedingly’. Jewish readers had already warned against thinking the bronze object itself healed: the Wisdom of Solomon calls it a symbol of salvation and says the one who turned toward it was saved by God, the Savior of all (16:6-7), and the Mishnah says Israel was healed when they looked upward and set their hearts on their Father in heaven (m. Rosh Hashanah 3:8). Later, Hezekiah destroyed the bronze snake, called Nehushtan, because Israel was burning incense to it (2 Kings 18:4)."
+        },
+        {
+          "ref": "Isaiah 52:13",
+          "note": "The fourth Servant Song opens with the servant's exaltation: in the Hebrew he will be raised and lifted up and highly exalted; in the Septuagint he will be hupsōthēsetai kai doxasthēsetai, ‘lifted up and glorified’. John's pairing of lifting up (3:14, 12:32) with glorification (12:23, 13:31) matches this verse, and the song goes on to describe the servant's suffering (52:14-53:12)."
+        }
+      ],
+      "text": "The later Byzantine manuscripts, followed by the King James Version, read eis auton and add ‘should not perish, but’ in verse 15, which makes it match verse 16 word for word. The earliest manuscripts have the shorter text, and the addition is best explained as scribal harmonizing.",
+      "refs": ["John 8:28", "John 12:32-34", "2 Kings 18:4", "Isaiah 52:13", "Galatians 3:13"]
+    },
+    {
+      "v": "16",
+      "context": "The best-known verse in the Bible explains verses 14-15: the lifting up of the Son happens because God loved the world and gave his Son. Interpreters disagree on whether Jesus is still speaking here or the Gospel writer has begun to reflect (the Greek had no quotation marks), but the verse carries the chapter's message either way.",
+      "grammar": "Houtōs gar, ‘for in this way’, opens the sentence with gar, ‘for’, linking it to verses 14-15. Houtōs usually means ‘in this way’ or ‘thus’ rather than ‘so much’, and Robert Gundry and Russell Howell (Novum Testamentum 41, 1999) argued that it points back to the lifting up of the Son: God loved the world in this manner. The degree of the love is still implied by what the manner cost. The following hōste with an indicative verb, edōken, ‘so that he gave’, is rare in the New Testament; with the indicative it states an actual result rather than a possible one: God's love really did issue in the gift. Ēgapēsen is an aorist, summing up God's love as a single act in history. Edōken, ‘gave’, includes giving up to death (compare Romans 8:32). The purpose clause offers two outcomes: mē apolētai, ‘not perish’ (an aorist middle of apollumi, to be destroyed or lost), and echē zōēn aiōnion, ‘have eternal life’, a present subjunctive, life possessed as an ongoing reality.",
+      "words": ["G3779", "G1063", "G0025", "G2889", "G5620", "G1325", "G3439", "G0622", "G2222"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The verse defines God's love by what it gave, and it names the object as the world, which in John is humanity turned away from God (1:10, 7:7). God's love does not wait for the world to become lovable."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation here has a source (God's love), a means (the gift of the Son), a condition (believing), and two outcomes set against each other (perishing or eternal life). Christians debate whether God's saving intention in the gift extends equally to every person; the chapter note sets out the Arminian and Reformed readings."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 22:2",
+          "note": "God tells Abraham to take ‘your only son, Isaac, whom you love’. The Hebrew yechidkha means ‘your only one’; the Septuagint renders it ton agapēton, ‘the beloved’. Hebrews 11:17 calls Isaac monogenēs, the word John uses here. Many interpreters, from the church fathers on, hear the story of Abraham's offering behind a Father who gives his only Son; the echo is thematic, and John does not quote Genesis."
+        }
+      ],
+      "refs": ["Romans 5:8", "Romans 8:32", "1 John 4:9-10", "Genesis 22:2", "John 1:10"]
+    },
+    {
+      "v": "17",
+      "context": "The purpose of the Son's mission is stated negatively and positively: not to condemn but to save. The verse answers the expectation that the coming one would arrive chiefly as judge (Matthew 3:10-12).",
+      "grammar": "Gar again gives the reason, explaining verse 16. The verb krinō means ‘to judge’, and in context the judgment is condemnation, as the contrast with sōthē, ‘might be saved’, shows. The two hina clauses are joined by all', ‘but’, a sharp contrast. The world is named three times: the Son is sent into the world, not to judge the world, but so that the world might be saved through him.",
+      "words": ["G0649", "G2889", "G2919", "G4982", "G1223"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "God's purpose in sending the Son is rescue. Judgment follows in the Gospel, but as the consequence of rejecting the rescue, not as the reason for the mission."
+        },
+        {
+          "id": "mission",
+          "note": "John uses the verb of sending (apostellō, pempō) for the Son about forty times, and in 20:21 Jesus sends the disciples as the Father sent him. The church's mission shares the purpose of this verse."
+        }
+      ],
+      "refs": ["John 12:47", "Luke 19:10", "1 Timothy 1:15", "John 20:21", "1 John 4:14"]
+    },
+    {
+      "v": "18",
+      "context": "The two outcomes of verse 16 become a present verdict. The believer is not condemned; the one who does not believe already stands condemned, because he has not believed in the name of God's only Son.",
+      "grammar": "Ou krinetai, ‘is not judged’, is present; ēdē kekritai, ‘has already been judged’, is perfect, a verdict already passed and still standing. The reason clause hoti mē pepisteuken uses mē, not the usual ou, with an indicative, which may present the unbelief as the ground of the verdict from the judge's point of view; grammarians differ on how much weight the negative carries. Pepisteuken, another perfect, describes a settled refusal to believe. ‘The name of God's one and only Son’ means his revealed identity.",
+      "words": ["G2919", "G2235", "G4100", "G3686", "G3439"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment is described as already present. C. H. Dodd called John's teaching here ‘realized eschatology’, and Rudolf Bultmann read it as the decision of faith in the present moment. Other interpreters, such as Raymond Brown, point out that John also keeps a future judgment and resurrection (5:28-29, 12:48), so that the verdict now anticipates the verdict then."
+        }
+      ],
+      "refs": ["John 5:24", "John 5:28-29", "John 12:48", "Romans 8:1"]
+    },
+    {
+      "v": "19-21",
+      "context": "The judgment is explained in terms of the prologue's light and darkness. The light has come, and people loved the darkness because their deeds were evil. Everyone who does evil avoids the light; whoever does the truth comes to it. The paragraph ends the Nicodemus scene without telling us his response, leaving the reader with the question of which way he, and the reader, will go.",
+      "grammar": "Hautē de estin hē krisis, ‘and this is the judgment’, uses krisis for the process and verdict of judgment. Elēluthen, a perfect, ‘has come’, says the light has arrived and remains. Ēgapēsan ... mallon to skotos ē to phōs, ‘they loved the darkness rather than the light’, uses the same verb as God's love in verse 16: love for God's gift and love for darkness stand side by side. Verses 20-21 contrast two participles: ho phaula prassōn, ‘the one who practices worthless things’, and ho poiōn tēn alētheian, ‘the one who does the truth’. Elegchthē, ‘be exposed’, means to be brought to light and shown for what it is. The last clause says the deeds of the one who comes to the light are en theō eirgasmena, ‘worked in God’, a perfect passive participle: whatever good he has done was God's work in him.",
+      "words": ["G2920", "G2064", "G0025", "G4655", "G5457", "G5337", "G1651", "G0225", "G2038"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verdict is not arbitrary: people are judged by their response to the light. Unbelief is presented as a love for darkness, a moral preference, not simply a lack of information."
+        },
+        {
+          "id": "sin",
+          "note": "Sin hides. The one who does evil avoids the light for fear of exposure, which is why the Gospel presents coming to Jesus as coming to be seen truly."
+        }
+      ],
+      "history": "‘Doing the truth’ is a Hebrew idiom (asah emet) for acting faithfully (Genesis 47:29, Nehemiah 9:33). The Community Rule from Qumran uses the same language: members commit themselves to practice truth, righteousness, and justice (1QS 1:5, 5:3, 8:2), and the same scroll divides humanity into sons of light and sons of darkness (1QS 3:13-4:26). The parallels show that John's language of light, darkness, and doing the truth was at home in first-century Judaism, though the Gospel centers it on a person rather than a community.",
+      "refs": ["John 1:5", "John 1:9-11", "John 8:12", "Ephesians 5:11-13", "1 John 1:6"]
+    },
+    {
+      "v": "22",
+      "context": "The scene changes. Jesus and his disciples go into the Judean countryside, stay there, and baptize. The verse sets up the chapter's second half, in which the ministries of Jesus and John overlap.",
+      "grammar": "Meta tauta, ‘after these things’, is John's loose transition between scenes. The verbs are imperfects, dietriben, ‘he was spending time’, and ebaptizen, ‘he was baptizing’, describing a period of activity rather than a single event. Eis tēn Ioudaian gēn, literally ‘into the Judean land’, means the countryside outside Jerusalem.",
+      "words": ["G3326", "G1304", "G0907", "G2453"],
+      "history": "Only John reports that Jesus' circle baptized during his ministry, before the church's baptism after Pentecost. The narrator later clarifies that Jesus himself did not baptize, only his disciples (4:2). The early overlap between Jesus and John the Baptist, both active in Judea, is absent from the other Gospels, which begin Jesus' public ministry after John's arrest (Mark 1:14).",
+      "refs": ["John 4:1-2", "Mark 1:14", "Matthew 28:19"]
+    },
+    {
+      "v": "23-24",
+      "context": "John the Baptist is still baptizing, at Aenon near Salim, because there was plenty of water, and people keep coming. A parenthesis notes that John had not yet been imprisoned.",
+      "grammar": "Hudata polla, ‘many waters’, is plural: springs or pools rather than a single stream. The imperfects pareginonto kai ebaptizonto, ‘people kept coming and being baptized’, describe continuing activity. Verse 24 is an explanatory aside introduced by gar: oupō ēn beblēmenos, ‘had not yet been thrown’, a perfect passive participle in a periphrastic construction describing John's state.",
+      "words": ["G0137", "G4530", "G5204", "G3854", "G0906H", "G5438G"],
+      "history": "Aenon comes from the Aramaic for ‘springs’. Eusebius's Onomasticon, a fourth-century gazetteer of biblical places, locates Aenon eight Roman miles south of Scythopolis (Beth Shean), near Salim and the Jordan. Others place it in Samaria, where there is a village called Salim east of Nablus and springs nearby. The parenthesis in verse 24 assumes that readers knew of John's later imprisonment, which Josephus places at Machaerus under Herod Antipas (Antiquities 18.116-119); it explains how this early period fits with Mark's statement that Jesus began preaching in Galilee after John was arrested.",
+      "parallels": ["Mark 1:14", "Matthew 4:12", "Luke 3:19-20"],
+      "refs": ["John 1:28", "Mark 6:17-18", "Matthew 14:3"]
+    },
+    {
+      "v": "25-26",
+      "context": "A dispute about purification leads John's disciples to complain that the one John testified about is baptizing and everyone is going to him. Their words show rivalry; John's answer in verses 27-30 dissolves it.",
+      "grammar": "Zētēsis, ‘a dispute’ or ‘an inquiry’, arises ek tōn mathētōn Iōannou, ‘on the part of John's disciples’. Katharismos, ‘purification’, is the same word used for the stone water jars at Cana (2:6), so the question of which washing truly cleanses runs through these chapters. In verse 26 memarturēkas, a perfect, ‘you have testified’, recalls 1:26-34. Ide, ‘look’, is the interjection John himself used to point to the Lamb, now used by his disciples to complain. Pantes erchontai pros auton, ‘everyone is coming to him’, is an exaggeration of wounded loyalty.",
+      "words": ["G2214", "G2453", "G2512", "G3140", "G2396", "G3956"],
+      "text": "Most manuscripts read ‘a Jew’ (Ioudaiou, singular). P66, the first hand of Sinaiticus, and some other witnesses read ‘Jews’ (plural). Some scholars have conjectured that the original said ‘Jesus’ or ‘the disciples of Jesus’, since the complaint in verse 26 concerns Jesus, but no manuscript reads that.",
+      "refs": ["John 2:6", "John 1:26-34", "John 4:1", "Mark 7:3-4"]
+    },
+    {
+      "v": "27",
+      "context": "John's first answer is a principle: a person can receive only what is given from heaven. If people are going to Jesus, heaven has given it, and there is no ground for complaint.",
+      "grammar": "Ou dunatai ... lambanein oude hen, ‘cannot receive even one thing’ (the earliest editions include oude hen), unless ē dedomenon, ‘it has been given’, a periphrastic perfect passive stressing a gift already bestowed. Ek tou ouranou, ‘from heaven’, is a reverent Jewish way of saying ‘from God’, as in Mark 11:30. The saying can apply to John (he has only what heaven gave him) or to Jesus (his success is heaven's gift), and both applications suit the context.",
+      "words": ["G1410", "G2983", "G1325", "G3772"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Every ministry, large or small, is a gift from God. The principle removes both envy and pride, since no one's success or obscurity is self-made."
+        }
+      ],
+      "refs": ["1 Corinthians 4:7", "James 1:17", "John 19:11", "Mark 11:30"]
+    },
+    {
+      "v": "28",
+      "context": "John reminds his disciples of what he had said from the start: he is not the Christ, but has been sent ahead of him. They themselves are witnesses to it.",
+      "grammar": "Humeis ... martureite, ‘you yourselves testify’, puts humeis first for emphasis: his own disciples can confirm his words. Ouk eimi egō ho christos, ‘I am not the Christ’, repeats 1:20. Apestalmenos eimi emprosthen ekeinou, ‘I have been sent ahead of him’, uses the perfect passive participle of apostellō with eimi: a standing commission.",
+      "words": ["G3140", "G5547", "G0649", "G1715"],
+      "ot": [
+        {
+          "ref": "Malachi 3:1",
+          "note": "God announces that he will send his messenger to prepare the way before him. The Hebrew uses the verb shalach, ‘send’, and the Septuagint renders it with a form of apostellō, the verb John uses of himself. Mark 1:2 quotes the verse of John the Baptist, and Jesus applies it to him in Matthew 11:10."
+        }
+      ],
+      "refs": ["John 1:20", "John 1:23", "Matthew 11:10", "Mark 1:2"]
+    },
+    {
+      "v": "29",
+      "context": "John describes himself as the friend of the bridegroom. The bride belongs to the groom, and the friend's joy is to hear the groom's voice. So John's joy is complete when people go to Jesus.",
+      "grammar": "Ho echōn tēn numphēn numphios estin, ‘the one who has the bride is the bridegroom’, is a proverb-like statement. Ho philos tou numphiou, ‘the friend of the bridegroom’, stands (hestēkōs, perfect participle) and listens. Chara chairei, literally ‘rejoices with joy’, is a cognate dative, a Greek rendering of the Hebrew habit of intensifying a verb with its own root, ‘rejoices greatly’. Peplērōtai, a perfect passive, ‘has been made full’, is the language John uses for complete joy elsewhere (15:11, 16:24, 17:13).",
+      "words": ["G3565", "G3566", "G5384", "G2476", "G5479", "G5463", "G4137"],
+      "history": "At a Jewish wedding the bridegroom's close friend, called in later Hebrew the shoshbin, helped arrange and conduct the marriage. The Mishnah, discussing who may not testify for a man, defines a ‘friend’ as his groomsman (m. Sanhedrin 3:5), which shows how close the relationship was understood to be. The friend's task was to bring the couple together, not to claim the bride.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The bride belongs to Christ. The Old Testament pictured God as Israel's husband (Isaiah 62:5, Hosea 2:19-20), and the New Testament calls the church Christ's bride (Ephesians 5:25-27, Revelation 21:2). John places himself outside the marriage as its servant, a stance that belongs to every ministry."
+        }
+      ],
+      "parallels": ["Mark 2:19-20", "Matthew 9:15", "Luke 5:34-35"],
+      "refs": ["Isaiah 62:5", "Hosea 2:19-20", "2 Corinthians 11:2", "Revelation 19:7", "John 15:11"]
+    },
+    {
+      "v": "30",
+      "context": "The Baptist's last words in the Gospel sum up his life: He must increase; I must decrease. In John's Gospel the Baptist never appears again.",
+      "grammar": "Dei, ‘must’, is again divine necessity (verses 7, 14). The two present infinitives, auxanein, ‘to grow’, and elattousthai, ‘to become less’, describe continuing processes set against each other with ekeinon and eme, ‘that one’ and ‘me’, in emphatic positions.",
+      "words": ["G1163", "G0837", "G1642", "G1565"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The verse is the pattern of Christian witness: the witness is glad to become smaller so that Christ is seen. John's success is measured by how many people leave him for Jesus."
+        }
+      ],
+      "history": "Augustine, preaching on this verse (Tractates on John 14.5), noted that John's birthday was kept in the summer, when the days begin to shorten, and Christ's in the winter, when they begin to lengthen, and he found in the calendar a picture of the saying. He also saw it in their deaths: John was shortened by beheading, while Christ was lifted up on the cross.",
+      "refs": ["John 1:15", "John 1:27", "Philippians 1:18", "Colossians 1:18"]
+    },
+    {
+      "v": "31",
+      "context": "The chapter's closing section contrasts the one from above with the one from the earth. Interpreters again disagree about the speaker, whether the Baptist continues or the evangelist reflects; the thought echoes Jesus' words to Nicodemus (verses 11-13), which suggests the evangelist is drawing the two halves of the chapter together.",
+      "grammar": "Ho anōthen erchomenos, ‘the one coming from above’, uses anōthen in its unambiguous sense, which confirms ‘from above’ as at least part of its meaning in verses 3 and 7. Epanō pantōn estin, ‘is above all’, frames the verse. Ek tēs gēs, ‘from the earth’, appears three times, describing origin, nature, and speech: the earthly person is from the earth, is earthly, and speaks from the earth.",
+      "words": ["G0509", "G2064", "G1883", "G1093G", "G2980"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The one who comes from heaven is above all. The verse places Jesus above every other witness, John the Baptist included, not because John spoke falsely but because he spoke as one from the earth."
+        }
+      ],
+      "text": "Some early witnesses, including the first hand of Codex Sinaiticus and Codex Bezae, lack the second ‘is above all’ at the end of the verse, which changes the sentence to ‘the one who comes from heaven testifies to what he has seen’. The major editions keep the longer text.",
+      "refs": ["John 3:3", "John 8:23", "Ephesians 1:21", "1 Corinthians 15:47"]
+    },
+    {
+      "v": "32-33",
+      "context": "The one from heaven testifies to what he has seen and heard, yet no one receives it. But whoever does receive it certifies that God is true. The overstatement ‘no one’ is immediately qualified, as in 1:11-12.",
+      "grammar": "Heōraken, perfect, ‘has seen’, and ēkousen, aorist, ‘heard’, ground the testimony in firsthand knowledge. Oudeis lambanei, ‘no one receives’, is hyperbole. In verse 33 esphragisen, ‘has set his seal’, is the verb for sealing a document to attest it: the one who accepts Jesus' testimony puts his own seal to the claim that God is alēthēs, ‘true’ or ‘truthful’. To believe the Son is to affirm the Father's honesty.",
+      "words": ["G3708", "G0191", "G3141", "G2983", "G4972", "G0227"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Believing Jesus is described as endorsing God's truthfulness. The reverse is drawn in 1 John 5:10: whoever does not believe God has made him a liar."
+        }
+      ],
+      "refs": ["John 3:11", "John 1:11-12", "1 John 5:9-10", "John 6:27"]
+    },
+    {
+      "v": "34",
+      "context": "The reason Jesus' words deserve belief: the one God sent speaks God's words, because the Spirit is given without measure.",
+      "grammar": "Hon gar apesteilen ho theos, ‘for the one whom God sent’, gives the reason for verse 33. Ta rhēmata tou theou lalei, ‘speaks the words of God’. The final clause, ou gar ek metrou didōsin to pneuma, ‘for not by measure does he give the Spirit’, has no stated subject in the earliest manuscripts. It may mean that God gives the Spirit without limit to the Son, which explains why the Son speaks God's words, or that the Son gives the Spirit without limit to others. The later manuscripts add ho theos, ‘God’, making the first reading explicit.",
+      "words": ["G0649", "G4487", "G2980", "G3358", "G1325", "G4151G"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Spirit rests on Jesus without limit, fulfilling the Baptist's sign that the Spirit would remain on him (1:32-33). Because the Spirit is his without measure, he can give the Spirit to others (7:39, 20:22)."
+        }
+      ],
+      "history": "A later rabbinic midrash, Leviticus Rabbah 15:2, says that the Holy Spirit rested on the prophets only by measure. If a similar idea was current earlier, the contrast would be pointed: prophets received the Spirit in measure; the Son receives him without measure.",
+      "refs": ["John 1:32-33", "Isaiah 11:2", "Isaiah 61:1", "John 7:39", "Luke 4:18"]
+    },
+    {
+      "v": "35",
+      "context": "The Father loves the Son and has given all things into his hand. The verse explains the Son's authority as the gift of the Father's love.",
+      "grammar": "Agapa, a present, ‘loves’, describes the Father's continuing love for the Son. Panta dedōken en tē cheiri autou, ‘he has given all things into his hand’, uses a perfect: the giving is complete and in force. ‘Hand’ is the Hebrew picture of power and control.",
+      "words": ["G3962", "G0025", "G5207", "G1325", "G5495"],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father's love for the Son is the ground of the Son's authority. The relation between them is described as love before it is described as command, and the Gospel later says the Father loved the Son before the foundation of the world (17:24)."
+        }
+      ],
+      "parallels": ["Matthew 11:27", "Luke 10:22"],
+      "refs": ["John 5:20", "John 13:3", "John 17:2", "John 17:24", "Matthew 28:18"]
+    },
+    {
+      "v": "36",
+      "context": "The chapter ends with the two outcomes that verse 16 set out: whoever believes in the Son has eternal life; whoever rejects him will not see life, and the wrath of God remains on him.",
+      "grammar": "Echei, ‘has’, is present: eternal life is a present possession of the believer, not only a future hope. The contrasting participle is ho apeithōn, from apeitheō, ‘to disobey’ or ‘refuse to be persuaded’, not simply ‘not believe’ (the King James Version's ‘believeth not’). Unbelief is described as disobedience to the Son. Ouk opsetai zōēn, ‘will not see life’, uses the same idiom as ‘see the kingdom’ in verse 3. Hē orgē tou theou, ‘the wrath of God’, appears only here in John's Gospel, and menei, ‘remains’, is present: the wrath is not newly imposed but stays where it already rests.",
+      "words": ["G4100", "G2192", "G0544", "G3700G", "G3709", "G3306"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith and obedience are paired: believing the Son and refusing him are the only two options the verse allows. Faith is not a private opinion but submission to the Son whom the Father has placed over all things."
+        },
+        {
+          "id": "judgment",
+          "note": "God's wrath is his settled opposition to sin. The verse says it remains on the one who refuses the Son, which fits verse 18: the Son does not bring condemnation but is the only way out of the condemnation that already stands."
+        }
+      ],
+      "refs": ["John 5:24", "Romans 1:18", "1 John 5:12", "John 3:18", "Romans 5:9"]
+    }
+  ]
+}

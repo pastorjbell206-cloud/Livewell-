@@ -1,0 +1,224 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "“Therefore” carries the conclusion of 3:19 forward: the wilderness generation failed to enter, but the promise of entering God's rest still stands. The fitting response is fear, the fear of falling short of a promise still open.",
+      "grammar": "Phobēthōmen (‘let us fear’) is a hortatory subjunctive, the first of several ‘let us’ exhortations in the letter (4:1, 4:11, 4:14, 4:16). Kataleipomenēs epangelias, ‘a promise being left open’, is a genitive absolute with a present participle: the promise remains available now. Dokē tis ex humōn husterēkenai can mean ‘anyone of you seem to have fallen short’ or ‘anyone of you think he has come too late’. The first is the usual reading. A few interpreters prefer the second, in which the danger is the belief that the promise has lapsed. Husterēkenai (‘to have fallen short’) is a perfect infinitive, a settled failure to arrive.",
+      "words": ["G5399", "G2641", "G1860", "G1525", "G2663", "G1380", "G5302"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "Fear here is not dread of God's character but seriousness about his promise. The author calls for a holy fear of missing what God offers, the opposite of complacency."
+        },
+        {
+          "id": "hope",
+          "note": "The promise of rest ‘still stands’. The readers live between promise and arrival, in the same position as Israel in the wilderness, with the promise still open to them."
+        }
+      ],
+      "refs": ["Hebrews 12:15", "Hebrews 6:11-12", "Philippians 2:12", "Romans 11:20-22"]
+    },
+    {
+      "v": "2",
+      "context": "The readers have received good news just as the wilderness generation did, but for that generation the message did no good, because it was not joined with faith. Hearing is not enough; the word must be met with trust.",
+      "grammar": "Esmen euēngelismenoi, ‘we have been evangelized’, is a periphrastic perfect passive: the gospel has been preached to us and remains with us. Kathaper kakeinoi, ‘just as they also’, makes the wilderness generation recipients of good news too, the promise of the land. Ho logos tēs akoēs, ‘the word of hearing’, means the message heard. The famous difficulty is the participle ‘united’. Most editions read sugkekerasmenous, accusative plural, agreeing with ‘them’: ‘since they were not united by faith with those who listened’ (meaning Joshua and Caleb, or true hearers generally). The Textus Receptus reads sugkekerasmenos, nominative singular, agreeing with ‘the word’: ‘the word, not being mixed with faith in those who heard it’, as the King James Version has it. The singular gives the smoother sense, and many translations render it in that spirit; the plural has stronger manuscript support.",
+      "words": ["G2097", "G5623", "G3056", "G0189", "G4786", "G4102G", "G0191"],
+      "text": "The variant affects the meaning. The singular says the word itself must be mixed with the hearers' faith; the plural says the hearers were not joined in faith to those who truly listened. The BSB renders the sense (‘they did not share the faith of those who comprehended it’) in a way that follows the plural.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The gospel profits only when it is received with faith. The same good news that saves one hearer leaves another unchanged, and the difference is trust."
+        }
+      ],
+      "refs": ["Romans 10:16-17", "1 Thessalonians 2:13", "Hebrews 3:19", "James 1:22"]
+    },
+    {
+      "v": "3",
+      "context": "Those who have believed enter that rest, for God swore that the unbelieving would not enter. Then the author adds a surprising observation: God's works were finished from the foundation of the world. The rest God speaks of in the psalm has existed since creation.",
+      "grammar": "Eiserchometha (‘we enter’) is present tense, which can mean ‘we are now entering’ (a present experience) or be a futuristic present (‘we are sure to enter’); interpreters divide, and many hold both. Hoi pisteusantes (‘those who believed’) is an aorist participle. Kathōs eirēken, ‘as he has said’, introduces the psalm's oath again, used as proof that the rest is for believers, since only the unbelieving were excluded. Kaitoi (‘and yet’, ‘although’) introduces the concessive clause: tōn ergōn apo katabolēs kosmou genēthentōn, ‘the works having been finished from the foundation of the world’, a genitive absolute. The point: God's rest is not something yet to be built. It has existed since creation, waiting for his people to enter it.",
+      "words": ["G1525", "G4100", "G2663", "G3660", "G2041", "G2602", "G2889"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Those who believe enter God's rest. The rest is received, not constructed; it is God's own completed rest, which he opens to his people."
+        },
+        {
+          "id": "sabbath",
+          "note": "The rest into which believers enter is the rest God has enjoyed since creation. The Sabbath points to God's finished work and invites his people to share it."
+        }
+      ],
+      "refs": ["Genesis 2:1-3", "Matthew 11:28-29", "Matthew 25:34", "Hebrews 9:26", "John 5:17"]
+    },
+    {
+      "v": "4-5",
+      "context": "The author links two texts that share the word ‘rest’: Genesis 2:2, where God rested on the seventh day, and Psalm 95:11, ‘they shall never enter my rest’. God's rest in the psalm is his own Sabbath rest.",
+      "grammar": "Eirēken gar pou, ‘for he has said somewhere’, is again the vague formula of 2:6, which does not name the human author. Peri tēs hebdomēs houtōs, ‘concerning the seventh day thus’, introduces the quotation. Katepausen (‘he rested’) is the aorist of katapauō, the verb from which katapausis (‘rest’) comes, so the verbal link between the two texts is exact in Greek. In verse 5, kai en toutō palin, ‘and in this again’, points back to the psalm.",
+      "words": ["G2046", "G4225", "G1442", "G2664", "G2250", "G2041", "G1525", "G2663"],
+      "ot": [
+        {
+          "ref": "Genesis 2:2",
+          "note": "The Hebrew says God rested (vayyishbot, the verb behind ‘Sabbath’) on the seventh day from all his work. The Septuagint uses katapauō, and Hebrews follows the Septuagint while adding ‘God’ as subject. In the first half of the verse the Septuagint, the Samaritan Pentateuch, and the Syriac say God finished his work on the sixth day, where the Hebrew says the seventh; Hebrews quotes only the second half, where the texts agree. Joining this verse to Psalm 95:11 by their common word is the Jewish method later called gezerah shavah (‘equal ordinance’), another of the rules ascribed to Hillel."
+        }
+      ],
+      "history": "Readers have long noticed that the seventh day in Genesis has no closing refrain of evening and morning. Augustine, in the last book of his Confessions (13.35-36), read that absence as a sign that God's rest has no evening, the eternal Sabbath promised to his people. Hebrews does not make that argument, but its claim that God's rest has stood open since creation points in the same direction.",
+      "refs": ["Genesis 2:2-3", "Exodus 20:11", "Exodus 31:17", "Psalm 95:11"]
+    },
+    {
+      "v": "6-7",
+      "context": "Since some must still enter the rest, and the first hearers failed through disobedience, God set another day, ‘Today’, speaking through David long afterward. The psalm's date proves the offer was still open centuries after Moses.",
+      "grammar": "Epei oun apoleipetai, ‘since then it remains’, states a conclusion drawn from the psalm: God's purpose to bring people into his rest was not cancelled by the wilderness failure. Hoi proteron euangelisthentes, ‘those who first received the good news’, again describes Israel's promise as gospel. Palin tina horizei hēmeran, ‘again he appoints a certain day’, uses horizō, to set a boundary or appoint. En Dauid, ‘in David’, may mean ‘in the Psalms’ (David standing for the Psalter) or ‘through David’ as author; the Septuagint heading of Psalm 94 names David, though the Hebrew psalm has no heading. Meta tosouton chronon, ‘after so long a time’, is the crux: the offer was renewed hundreds of years after the conquest.",
+      "words": ["G0620", "G2097", "G0543", "G3724", "G2250", "G4594", "G1138", "G5550"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The author reads Scripture historically: the date of the psalm matters to its meaning. God's word through David reopened a promise that might have seemed closed."
+        }
+      ],
+      "refs": ["Psalm 95:7-8", "Acts 2:29-31", "Hebrews 3:7-8", "2 Corinthians 6:2"]
+    },
+    {
+      "v": "8",
+      "context": "If Joshua had given them rest, God would not have spoken afterward of another day. The conquest of Canaan, real as it was, was not the final rest.",
+      "grammar": "Ei ... katepausen, ouk an ... elalei is a contrary to fact condition: an aorist in the ‘if’ clause and an imperfect with an in the ‘then’ clause, meaning ‘if Joshua had given them rest (he did not), God would not have been speaking (but he was)’. Iēsous is the Greek form of the Hebrew Yehoshua, so the Greek reads, literally, ‘if Jesus had given them rest’. The King James Version translated it ‘Jesus’ here and in Acts 7:45, which confused many English readers; modern translations write ‘Joshua’.",
+      "words": ["G2424I", "G2664", "G0243", "G2250", "G2980"],
+      "history": "The book of Joshua says the LORD gave Israel rest on every side (Joshua 21:44, 23:1), and Deuteronomy had promised rest in the land (12:9-10), using in the Septuagint the same noun, katapausis. The rest was real but incomplete: Judges records renewed oppression, and the prophets warned of exile. The psalm, written after the conquest, keeps the promise open, which is the observation on which Hebrews builds.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Joshua and Jesus share a name, and the author invites the comparison without spelling it out: the first Joshua led Israel into the land, but only the second leads God's people into God's own rest."
+        }
+      ],
+      "refs": ["Joshua 21:43-45", "Joshua 23:1", "Deuteronomy 12:9-10", "Acts 7:45", "Matthew 1:21"]
+    },
+    {
+      "v": "9",
+      "context": "The conclusion of the argument: there remains a Sabbath rest for the people of God. The author changes the word, from katapausis (‘rest’) to sabbatismos (‘Sabbath rest’), to name the rest God himself enjoys.",
+      "grammar": "Ara (‘so then’) marks the conclusion. Apoleipetai (‘remains’) repeats verse 6. Sabbatismos is the first known occurrence of the word in Greek. It is formed from the verb sabbatizō (‘to keep Sabbath’, used in the Septuagint of Exodus 16:30 and Leviticus 23:32), and the -ismos ending names an activity, so it means Sabbath-keeping or Sabbath celebration rather than mere cessation. Tō laō tou theou, ‘for the people of God’, is a title for Israel that Hebrews applies to the whole community of faith.",
+      "words": ["G0686", "G0620", "G4520", "G2992"],
+      "history": "Outside the Bible, sabbatismos appears later in Plutarch's essay On Superstition (Moralia 166A), written around the end of the first century AD, where it names Jewish Sabbath observance among practices Plutarch regards as superstitious. In early Christian writings after Hebrews it usually means literal Sabbath observance. Gerhard von Rad's essay on rest in the Old Testament (1933, titled from this verse) traced the idea from the land to God's own rest, and Otfried Hofius (Katapausis, 1970) argued from Jewish apocalyptic texts that the rest in Hebrews is a place, the heavenly sanctuary where God dwells, rather than a state of mind.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The Sabbath is here fulfilled in a greater rest, God's own, still open to his people. The chapter note sets out how Adventist, Reformed, and other Christians draw different conclusions for weekly observance; all agree the verse's primary concern is the rest of salvation."
+        },
+        {
+          "id": "hope",
+          "note": "The rest ‘remains’. Whatever share believers have in it now, its fullness lies ahead, and the letter's later language of a city to come (13:14) belongs with it."
+        }
+      ],
+      "refs": ["Exodus 16:30", "Revelation 14:13", "Hebrews 12:22-23", "Hebrews 13:14", "Isaiah 66:22-23"]
+    },
+    {
+      "v": "10",
+      "context": "Whoever enters God's rest also rests from his own works, as God did from his. The pattern of Genesis 2 becomes the pattern of the believer's life.",
+      "grammar": "Ho ... eiselthōn (‘the one who has entered’) is an aorist participle, and katepausen (‘rested’) is aorist. The aorists may be ‘gnomic’, stating a general truth (whoever enters rests), or may refer to a definite entry. A minority of interpreters, from some older commentators onward, have read ‘the one who entered’ as Jesus, who entered God's rest at his exaltation, as Joshua did not; most take it of any believer. Apo tōn ergōn autou, ‘from his works’, and hōsper apo tōn idiōn ho theos, ‘just as God from his own’, set the believer's rest beside God's. The works are not called evil; the point is completion and cessation, as with God's good works of creation.",
+      "words": ["G1525", "G2663", "G2664", "G2041", "G5618", "G2398"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Many Protestant readers hear in this verse a rest from works done to secure standing before God, matching Paul's contrast between faith and works. Others note that Hebrews does not speak the language of justification and read the rest chiefly as the completion of the believer's labors in the age to come (Revelation 14:13). The two readings are compatible."
+        }
+      ],
+      "refs": ["Genesis 2:2", "Revelation 14:13", "Matthew 11:28-30", "Romans 4:5", "Hebrews 6:1"]
+    },
+    {
+      "v": "11",
+      "context": "‘Let us therefore make every effort to enter that rest’, so that no one falls by the same pattern of disobedience. The rest is received by faith, and yet it calls for effort, the paradox the author leaves standing.",
+      "grammar": "Spoudasōmen (‘let us strive’, ‘let us be diligent’) is a hortatory aorist subjunctive; spoudazō means to hurry, be eager, or make every effort. The paradox of striving to enter rest is deliberate. Eis ekeinēn tēn katapausin, ‘into that rest’, uses the emphatic demonstrative. Hina mē en tō autō tis hupodeigmati pesē, ‘lest anyone fall in the same example’, uses hupodeigma, a pattern or warning example, and piptō (‘fall’), which recalls the corpses that fell in the wilderness (3:17).",
+      "words": ["G4704", "G1525", "G2663", "G5262", "G4098", "G0543"],
+      "history": "Twentieth century scholarship read these chapters in two main ways. Ernst Käsemann, in Das wandernde Gottesvolk (‘the wandering people of God’, 1939), read the church in Hebrews as a pilgrim people on the move toward a heavenly home, and connected the idea with Gnostic myths of the soul's return, a background few now accept. Otfried Hofius (1970) located the rest in Jewish apocalyptic hopes for a heavenly resting place. Andrew Lincoln's essay in From Sabbath to Lord's Day (edited by D. A. Carson, 1982) stressed that the rest is both entered now by faith and awaited in the future.",
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Entering the rest requires diligence, and falling is a real danger. The author does not set effort against faith; faith is precisely the trust that keeps going."
+        }
+      ],
+      "refs": ["2 Peter 1:10-11", "1 Corinthians 10:11-12", "Hebrews 6:11-12", "Luke 13:24", "Philippians 3:12-14"]
+    },
+    {
+      "v": "12",
+      "context": "The warning section closes with a picture of God's word: living, active, sharper than a two-edged sword, piercing to the division of soul and spirit, joints and marrow, judging the heart's thoughts and intentions. The word that said ‘Today’ in the psalm is the word that searches the readers.",
+      "grammar": "Zōn gar ho logos tou theou, ‘for living is the word of God’, puts ‘living’ first, recalling ‘the living God’ of 3:12. Energēs (‘active’, ‘effective’) is the adjective behind English ‘energy’. Tomōteros (‘sharper’) is a comparative of tomos (‘cutting’). Distomon means literally ‘two-mouthed’, a sword that devours. Diiknoumenos achri merismou, ‘penetrating to the point of dividing’, uses the noun merismos from 2:4. Psuchēs kai pneumatos, harmōn te kai muelōn, ‘of soul and spirit, of joints and marrow’, is best read as poetic language for the whole inner and outer person, not as a technical map of human parts; the verse is cited in the long debate between those who hold that humans are body, soul, and spirit (trichotomy) and those who hold that soul and spirit name one inner life (dichotomy), but it does not settle it. Kritikos (‘able to judge’) gives English ‘critic’. Enthumēseōn kai ennoiōn kardias, ‘of the thoughts and intentions of the heart’, reaches beneath deeds to motives.",
+      "words": ["G2198", "G3056", "G1756", "G5114", "G1366", "G3311", "G5590G", "G4151G", "G2924"],
+      "history": "Philo of Alexandria, in Who Is the Heir of Divine Things (130-140), calls the divine Word ‘the cutter’ that divides all things, and the Wisdom of Solomon (18:15-16) pictures God's all-powerful word leaping from heaven like a warrior with a sharp sword. Hebrews shares the imagery of the cutting word but applies it to the searching of the human heart before God, not to the ordering of the cosmos.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's word is not information to be mastered but a living power that examines the reader. Scripture is read rightly when the reader is read by it."
+        },
+        {
+          "id": "judgment",
+          "note": "Judgment reaches motives and intentions. The word exposes what outward conduct can hide, which is why the warning of 3:7-4:11 ends here."
+        }
+      ],
+      "refs": ["Isaiah 49:2", "Isaiah 55:10-11", "Jeremiah 23:29", "Ephesians 6:17", "Revelation 1:16"]
+    },
+    {
+      "v": "13",
+      "context": "No creature is hidden from God's sight; everything is naked and exposed before the eyes of the one to whom we must give account. The subject shifts from the word to God himself, or rather the two are treated as one.",
+      "grammar": "Ouk estin ktisis aphanēs, ‘there is no creature hidden’, uses aphanēs (‘invisible’, ‘hidden’). Gumna (‘naked’) and tetrachēlismena (‘laid bare’) describe total exposure. Tetrachēlismena is a perfect passive participle of trachēlizō, from trachēlos (‘neck’), found only here in the Bible. It was used of wrestlers seizing an opponent by the neck and possibly of bending back a sacrificial victim's head to expose the throat; either picture conveys helpless exposure. Pros hon hēmin ho logos, literally ‘to whom for us the word’, plays on logos: God's logos (word, verse 12) addresses us, and to him we owe our logos (account).",
+      "words": ["G2937", "G0852", "G1131", "G5136", "G3788", "G3056"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's knowledge is complete: nothing in creation is hidden from him. The attribute that theology calls omniscience is presented here as personal and moral, the eyes of the one to whom we answer."
+        },
+        {
+          "id": "judgment",
+          "note": "Every person must give account to God. The verse makes accountability the last word of the warning, just before the author turns to the high priest who makes approach to God possible."
+        }
+      ],
+      "refs": ["Psalm 139:1-12", "Psalm 33:13-15", "Romans 14:12", "1 Samuel 16:7", "Jeremiah 17:10"]
+    },
+    {
+      "v": "14",
+      "context": "‘Therefore’ turns from warning to encouragement. Since we have a great high priest who has passed through the heavens, Jesus the Son of God, let us hold fast our confession. The verse resumes 2:17-3:1 and opens the long section on Christ's priesthood that runs to 10:18.",
+      "grammar": "Echontes oun, ‘having therefore’, is a causal participle: the confession can be held because of the priest we have. Archierea megan (‘a great high priest’) intensifies the title; ‘great priest’ is used in the Septuagint for the high priest (Leviticus 21:10). Dielēluthota tous ouranous, ‘having passed through the heavens’, is a perfect participle, a completed passage with lasting effect. The plural ‘heavens’ reflects the Jewish idea of several heavens, and the picture is of the high priest passing through the tabernacle's courts and curtain into the holy of holies. Iēsoun ton huion tou theou, ‘Jesus the Son of God’, joins his human name and divine title. Kratōmen tēs homologias, ‘let us hold fast the confession’, uses a present subjunctive, continual holding.",
+      "words": ["G2192", "G0749", "G3173", "G1330", "G3772", "G2424G", "G5207", "G2902", "G3671"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Jesus is high priest as the Son of God who has entered God's presence. His priesthood is not an earthly office but the ministry of the exalted Son in heaven itself (8:1-2, 9:24)."
+        },
+        {
+          "id": "exaltation",
+          "note": "The ascension is described in priestly terms: Jesus passed through the heavens as the high priest passed through the curtain. His exaltation is also his entry into the sanctuary on behalf of his people."
+        }
+      ],
+      "refs": ["Hebrews 9:24", "Hebrews 10:23", "Hebrews 8:1-2", "Leviticus 16:12-15", "Ephesians 4:10"]
+    },
+    {
+      "v": "15",
+      "context": "The high priest is not distant: he is able to sympathize with our weaknesses, having been tested in every respect as we are, yet without sin. Greatness (verse 14) and sympathy (verse 15) belong together.",
+      "grammar": "Ou gar echomen ... mē dunamenon, ‘for we do not have one unable’, is a double negative (litotes) that makes a strong positive: he is fully able. Sumpathēsai (‘to sympathize’, ‘to suffer with’) is more than feeling sorry; it means sharing another's experience. Tais astheneiais hēmōn (‘our weaknesses’) are human frailties, not sins as such. Pepeirasmenon (‘having been tested’) is a perfect participle, a completed experience that continues to shape his priesthood. Kata panta kath' homoiotēta, ‘in all respects according to likeness’, may mean ‘in the same way we are’ or ‘in keeping with his likeness to us’. Chōris hamartias, ‘without sin’, can mean he was tested without sinning (the usual reading) or tested in every way except for testing that arises from prior sin; the two are compatible.",
+      "words": ["G2192", "G0749", "G1410", "G4834", "G0769G", "G3985G", "G3665", "G5565", "G0266"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus' testing was real because his humanity was real. Gregory of Nazianzus (Letter 101) argued against Apollinarius that what the Son did not assume he did not heal, so he took a complete human nature, including a human mind and will; this verse is part of the biblical ground for that conviction."
+        },
+        {
+          "id": "sin",
+          "note": "He was without sin. Theologians have debated whether Jesus was able not to sin (and did not) or not able to sin, with most of the classical tradition affirming the latter while insisting that the temptations were real. The verse affirms both the testing and the sinlessness without resolving that question."
+        }
+      ],
+      "refs": ["Hebrews 2:17-18", "Hebrews 5:2", "2 Corinthians 5:21", "1 Peter 2:22", "Matthew 4:1-11"]
+    },
+    {
+      "v": "16",
+      "context": "The practical conclusion: let us approach the throne of grace with confidence, to receive mercy and find grace for timely help. The God before whom everything is laid bare (verse 13) sits on a throne of grace because of the priest who sympathizes (verse 15).",
+      "grammar": "Proserchōmetha (‘let us approach’) is a present subjunctive and a cultic verb: in the Septuagint it describes priests drawing near to the altar and to God (Leviticus 9:7, 21:17). Hebrews uses it of all believers (7:25, 10:1, 10:22, 11:6, 12:18, 12:22), so every believer now approaches as only priests once did. Meta parrēsias (‘with boldness’) repeats the confidence of 3:6. Tō thronō tēs charitos, ‘the throne of grace’, may echo the mercy seat on the ark, where God met with Israel. Eis eukairon boētheian, ‘for well-timed help’, means help that comes at the right moment.",
+      "words": ["G4334", "G3954", "G2362", "G5485", "G1656", "G2121", "G0996"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Prayer is described as priestly approach to God's throne, open to every believer because of Christ's priesthood. It is marked by confidence, not presumption, because the throne is one of grace."
+        },
+        {
+          "id": "worship",
+          "note": "What was once restricted to the high priest once a year (Leviticus 16:2) is now the ordinary privilege of God's people. The verse reshapes worship around access through Christ rather than through a sanctuary on earth."
+        }
+      ],
+      "refs": ["Hebrews 10:19-22", "Ephesians 3:12", "Leviticus 16:2", "Hebrews 7:25", "Romans 5:2"]
+    }
+  ]
+}

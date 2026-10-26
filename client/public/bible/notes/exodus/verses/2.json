@@ -1,0 +1,349 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The answer to Pharaoh's decree begins with a marriage. The couple is unnamed here; the genealogy in 6:20 gives their names as Amram and Jochebed. The narrator withholds names so that the child, when he is finally named in verse 10, stands out.",
+      "grammar": "Vayyelekh ish, ‘and a man went’, is a common Hebrew way of opening a new action, and vayyiqqach, ‘and he took’, is the ordinary verb for marrying a wife. Both parents are described as belonging to the bet levi, the ‘house of Levi’. The tribe that will later provide Israel's priests produces its deliverer before it produces its priesthood.",
+      "words": [
+        "H1980G",
+        "H3947I",
+        "H1004M",
+        "H3878"
+      ],
+      "history": "The verse reads as if this were the couple's first child, but Aaron is three years older than Moses (7:7) and a sister is already old enough to keep watch in verse 4. The story focuses on the birth that matters for what follows, and the fuller family appears in the genealogy of 6:20 and in Numbers 26:59.",
+      "refs": [
+        "Exodus 6:20",
+        "Numbers 26:59",
+        "Exodus 7:7"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The mother sees that her son is ‘good’ and hides him for three months, in defiance of the order to throw him into the Nile (1:22). Her act is the first link in a chain of women who save Moses, following the midwives of chapter 1.",
+      "grammar": "“When she saw that he was a beautiful child” is literally ‘she saw him, that he was good’: vattere' oto ki-tov hu. The wording recalls the refrain of Genesis 1, ‘God saw that it was good’, and many interpreters hear a deliberate echo, as if a new beginning is being made. Tov can mean beautiful, healthy, or fine; the Greek translation chose asteios, ‘well formed’, the word Stephen and Hebrews later use of the child. Vattitspenehu, ‘she hid him’, is from tsafan, to hide or treasure something away.",
+      "words": [
+        "H7200G",
+        "H2896A",
+        "H6845",
+        "H3391"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Hebrews 11:23 counts this hiding as an act of faith: Moses' parents were not afraid of the king's edict. The verse shows faith working in a small, hidden act of protection long before any miracle."
+        }
+      ],
+      "refs": [
+        "Hebrews 11:23",
+        "Acts 7:20",
+        "Genesis 1:31"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "When hiding becomes impossible, the mother obeys Pharaoh's order in a way that turns it upside down. She does put her son into the Nile, but inside a sealed basket, among the reeds at the bank, where he can be found.",
+      "grammar": "The basket is a tevat gome', a ‘tevah of papyrus’; tevah is the word for Noah's ark (see the chapter note), and as Noah's ark was sealed with pitch (Genesis 6:14, with a different word), this one is daubed with chemar (‘bitumen’) and zefet (‘pitch’). The verb vattachmerah, ‘she bitumened it’, is formed from the noun itself. The reeds are suf, the same word that names the Yam Suf, the ‘Sea of Reeds’ that English Bibles call the Red Sea (13:18; 15:4). The child who is placed among the reeds will lead his people through the sea of reeds.",
+      "words": [
+        "H8392",
+        "H1573",
+        "H2560B",
+        "H2564",
+        "H2203",
+        "H5488H"
+      ],
+      "history": "Papyrus grew thickly in the marshes of the Nile Delta and was used for rope, mats, and light boats. Isaiah 18:2 mentions envoys sent in papyrus vessels on the waters, and Job 9:26 speaks of skiffs of papyrus.",
+      "refs": [
+        "Genesis 6:14",
+        "Isaiah 18:2",
+        "Exodus 15:4"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The boy's sister takes up a post at a distance to see what will happen. She is not named here, but she is usually identified with Miriam, who appears by name in 15:20 and in the family list of Numbers 26:59.",
+      "grammar": "Vattetatsav is a reflexive (Hithpael) form of yatsav, ‘to take one's stand’: she stationed herself. The purpose clause leda'ah mah-ye'aseh lo, ‘to know what would be done to him’, uses a passive verb without naming who would act. The sentence leaves the actor open, and the rest of the scene fills it in.",
+      "words": [
+        "H3320",
+        "H0269",
+        "H7350",
+        "H3045"
+      ],
+      "refs": [
+        "Exodus 15:20",
+        "Numbers 26:59",
+        "Micah 6:4"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "Pharaoh's own daughter comes to the river, finds the basket, opens it, and pities the crying baby, recognizing him at once as a Hebrew child. The decree of verse 22 of chapter 1 is undone inside the royal household.",
+      "grammar": "Verse 6 contains an unusual construction: vattir'ehu et-hayyeled, literally ‘she saw him, the child’, with the object marked twice, which slows the moment of discovery. Vehinneh na'ar bokheh, ‘and behold, a boy crying’, shifts the reader to her point of view: we see what she sees. The verb for her response, chamal, means to pity or to spare, and elsewhere describes sparing someone from death (1 Samuel 15:3, 9). Her words “This is one of the Hebrew children” show that she knows exactly whose child this is and what her father has ordered.",
+      "words": [
+        "H7364",
+        "H2009",
+        "H5288",
+        "H1058",
+        "H2550",
+        "H5680"
+      ],
+      "history": "The text does not name the princess, and no Egyptian source mentions her, so attempts to identify her with a known daughter of a particular king are speculation. Jewish tradition later identified her with Bithiah, the daughter of Pharaoh mentioned in 1 Chronicles 4:18, but the Bible itself does not make the connection.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The daughter of the king who ordered the killing becomes the means of the child's rescue. God's care works through people who do not know him and through the compassion of an enemy's household."
+        }
+      ],
+      "refs": [
+        "1 Chronicles 4:18",
+        "Acts 7:21",
+        "Proverbs 21:1"
+      ]
+    },
+    {
+      "v": "7-9",
+      "context": "The sister offers to find a Hebrew wet nurse, the princess agrees, and the girl brings the baby's own mother. The scene closes with a mother paid by Pharaoh's house to nurse the son Pharaoh wanted drowned.",
+      "grammar": "The nurse is meneqet, a participle of the causative (Hiphil) form of yanaq, ‘to suck’, so ‘one who gives suck’. In verse 8 the sister is called ha'almah, a word for a young woman or girl old enough to be out on her own. It is the same word used in Isaiah 7:14, where its meaning is debated: some argue it implies an unmarried girl and so a virgin, which is how the Greek translation rendered that verse; others hold that the word itself says nothing about marital status. Here it simply marks the sister as a girl. The princess's promise, va'ani etten et-sekharekh, ‘and I myself will give your wages’, puts the pronoun ‘I’ first for emphasis.",
+      "words": [
+        "H3243I",
+        "H3243H",
+        "H5959",
+        "H7939",
+        "H0517"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The child's life begins in his own mother's arms and in his own people's speech. The narrative leaves room to see that Moses' later loyalty to his brothers (v. 11) had roots in these early years."
+        }
+      ],
+      "refs": [
+        "Isaiah 7:14",
+        "Genesis 24:43",
+        "Hebrews 11:24-25"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Once weaned, the boy is brought to the princess and becomes her son. She names him, and her explanation of the name becomes a prophecy she does not intend.",
+      "grammar": "Vayhi-lah leven, ‘he became to her as a son’, is adoption language, like Esther 2:7 where Mordecai takes Esther ‘as a daughter’. The princess explains the name by the verb mashah, ‘to draw out’: “I drew him out of the water.” Strictly, the Hebrew form Mosheh is an active participle, ‘one who draws out’, not ‘one drawn out’. The name as Hebrew hears it looks forward: the one drawn from the water will draw his people through it. The same rare verb describes God drawing the psalmist out of deep waters (Psalm 18:16), and Isaiah 63:11 remembers Moses as the one through whom God brought his people up out of the sea.",
+      "words": [
+        "H1431",
+        "H1121A",
+        "H4872",
+        "H4871",
+        "H4325G"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The deliverer of Israel is raised at Pharaoh's expense and named by Pharaoh's daughter. The verse shows God preparing a rescue inside the very system that oppresses his people."
+        }
+      ],
+      "refs": [
+        "Psalm 18:16",
+        "Isaiah 63:11-12",
+        "Acts 7:21-22",
+        "Esther 2:7"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "Grown to adulthood, Moses goes out to his own people, sees their forced labor, and sees an Egyptian beating a Hebrew. After making sure no one is watching, he kills the Egyptian and hides the body. The chapter note's hard question addresses whether he was right.",
+      "grammar": "The word ‘brothers’ ('echav) frames verse 11: he went out to ‘his brothers’ and saw a Hebrew ‘of his brothers’ being beaten. The narrator makes plain whose side Moses is on. He “observed their hard labor” (vayyar' besivlotam): the verb ra'ah with the preposition be often means looking with feeling or concern, and sivlot is the word for the burdens of 1:11. The Egyptian is makkeh, ‘striking’, and Moses vayyakh, ‘struck’ him: the same verb, nakah, used for both men. Moses answers the violence in kind. Koh vakhoh, ‘this way and that’, and ki ein ish, ‘that there was no one’, show a careful, hidden act; the same words ‘there was no one’ describe the LORD in Isaiah 59:16, looking for someone to intervene and acting himself.",
+      "words": [
+        "H0251I",
+        "H5450",
+        "H5221",
+        "H0369",
+        "H2934"
+      ],
+      "history": "Exodus gives no age, but Stephen, following the Jewish tradition of his day, says Moses was forty years old when he visited his brothers (Acts 7:23), and that he was trained in all the wisdom of the Egyptians (Acts 7:22).",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Moses' first recorded act as an adult is to side with the oppressed. His instinct for justice is right, but his method is secret and violent, and the story will show that zeal for justice is not the same as a commission from God."
+        }
+      ],
+      "refs": [
+        "Acts 7:23-25",
+        "Hebrews 11:24-26",
+        "Isaiah 59:16"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The next day Moses tries to stop two Hebrews from fighting and is rejected by the man in the wrong, who throws the killing back at him. Moses realizes the secret is out and is afraid. His own people refuse him before Pharaoh hunts him.",
+      "grammar": "Moses addresses larasha', ‘the guilty one’: rasha' is the legal term for the party in the wrong (Deuteronomy 25:1). He calls the victim re'akha, ‘your companion’ or ‘neighbor’, the word in the command to love your neighbor as yourself (Leviticus 19:18). The reply, “Who made you ruler and judge over us?”, pairs sar (‘prince, official’) and shofet (‘judge’), the offices Moses will in fact hold (18:13). Halhargeni attah omer, literally ‘are you saying to kill me?’, means ‘do you intend to kill me’. Moses' response opens with akhen, ‘surely’, a particle of sudden realization, the word Jacob used when he woke at Bethel (Genesis 28:16).",
+      "words": [
+        "H5327A",
+        "H7563",
+        "H7453",
+        "H8269",
+        "H8199",
+        "H2026",
+        "H0403"
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Moses has the right sympathies but no recognized authority, and the question ‘who made you?’ is exactly the right question. The answer will come at the burning bush: God makes him ruler. Stephen presents this rejection as the first of many in which Israel refused the deliverer God sent (Acts 7:35)."
+        }
+      ],
+      "refs": [
+        "Acts 7:26-28",
+        "Acts 7:35",
+        "Luke 12:14",
+        "Genesis 28:16"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "Pharaoh learns of the killing and seeks Moses' life, so Moses flees east to Midian and sits down by a well. The prince of Egypt becomes a fugitive, and the scene is set for another well meeting like those of Genesis 24 and 29.",
+      "grammar": "Vaybaqqesh laharog, ‘he sought to kill’, uses the intensive (Piel) of baqash, persistent searching. The verb yashav appears twice: Moses ‘dwelt’ in Midian and ‘sat’ by the well, a single verb for settling down and sitting still. The flight is described as vayyivrach mippene far'oh, ‘he fled from the face of Pharaoh’.",
+      "words": [
+        "H1245",
+        "H2026",
+        "H1272",
+        "H3427",
+        "H0875"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Hebrews 11:27 says that by faith Moses left Egypt, not fearing the king's anger, while verse 14 here says Moses was afraid. Interpreters resolve this in two main ways: some take Hebrews to refer to the exodus itself, when Moses left without fear; others think Hebrews refers to this flight and sees Moses' departure, whatever his fear of arrest, as a choice of God's people over Egypt."
+        }
+      ],
+      "refs": [
+        "Hebrews 11:27",
+        "Acts 7:29",
+        "Genesis 29:2"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "The seven daughters of the priest of Midian come to water their father's flock, and shepherds drive them off. Moses stands up for them and waters the flock himself. For the third time in the chapter he intervenes for the weak, and this time it ends well.",
+      "grammar": "The shepherds vaygareshum, ‘drove them away’, using garash, the verb later used when Pharaoh will drive Israel out of Egypt (6:1; 11:1). Moses vayyoshi'an, ‘saved them’: this is the Hiphil of yasha', the root of the Bible's words for salvation, and the name of Joshua and Jesus. It is the first time the verb appears in Exodus, and its next major use is 14:30, “the LORD saved Israel”. The man who will save Israel first saves seven women at a well.",
+      "words": [
+        "H3548",
+        "H7651",
+        "H1644G",
+        "H3467",
+        "H8248G"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation in the Old Testament is first concrete rescue from those who oppress. The small scene at the well uses the same word as the great deliverance at the sea, preparing the reader to see that salvation means being brought out from under a hostile power."
+        }
+      ],
+      "refs": [
+        "Exodus 14:30",
+        "Exodus 6:1",
+        "Genesis 29:10"
+      ]
+    },
+    {
+      "v": "18-20",
+      "context": "The daughters report to their father that an Egyptian rescued them, and their father rebukes them for leaving the man at the well. The scene turns on hospitality, which in the ancient Near East was a duty owed to strangers.",
+      "grammar": "Reuel means ‘friend of God’ (re'u-el). The daughters say ish mitsri hitsilanu, ‘an Egyptian man rescued us’: natsal is the verb God uses when he says he has come down to rescue his people (3:8). They also say dalo dalah lanu, an infinitive absolute joined to the finite verb, which intensifies: ‘he actually drew water for us’, going beyond what a stranger would be expected to do. Moses, by his dress or speech, looks Egyptian to them.",
+      "words": [
+        "H7467J",
+        "H4116A",
+        "H5337",
+        "H1802",
+        "H3899H"
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Reuel's first question is where the stranger is and why he was left without a meal. The Old Testament treats hospitality to the stranger as a duty of righteousness (Genesis 18:2-5; Job 31:32), and here a fugitive with nothing receives it."
+        }
+      ],
+      "refs": [
+        "Exodus 3:8",
+        "Genesis 18:2-5",
+        "Job 31:32",
+        "Hebrews 13:2"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "Moses settles with Reuel's household, marries his daughter Zipporah, and names his first son for his condition: a resident foreigner. The prince of Egypt has become a stranger, as his people are.",
+      "grammar": "Vayyo'el, ‘he was willing’ or ‘he agreed’, is a Hiphil of ya'al, a verb of consenting to terms. The son's name, Gershom, is explained by ger, ‘resident foreigner’ or ‘sojourner’, someone living in a land that is not his own with limited rights. The name sounds like ger sham, ‘a sojourner there’, and also like garash, ‘drive out’, the verb of verse 17. Moses' words, “I have become a foreigner in a foreign land”, echo God's word to Abraham that his offspring would be strangers in a land not their own (Genesis 15:13). Tsipporah means ‘bird’.",
+      "words": [
+        "H2974",
+        "H6855",
+        "H1647G",
+        "H1616",
+        "H5237"
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The experience of being a ger shapes Israel's law: Israel must not oppress the foreigner, because it knows how a foreigner feels, having been one in Egypt (Exodus 23:9). Moses lives that experience personally before he gives the law."
+        }
+      ],
+      "refs": [
+        "Genesis 15:13",
+        "Exodus 18:3",
+        "Exodus 23:9",
+        "Hebrews 11:13"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Years pass. The king who sought Moses' life dies, but the oppression does not end with him. Israel groans and cries out, and their cry rises to God. The verse closes the story of Moses' early life and opens the story of God's answer.",
+      "grammar": "Three words for Israel's pain pile up: vayye'anechu (‘they groaned’), vayyiz'aqu (‘they cried out’), and shav'atam (‘their cry for help’). Za'aq, with its twin form tsa'aq, is the cry of the oppressed calling for justice: the law promises that God will hear such a cry from the mistreated widow and orphan (22:23), and in 3:7 God says he has heard it. The text does not say the Israelites addressed their cry to God, only that it went up (vatta'al) to God. The phrase min-ha'avodah, ‘because of the labor’, appears twice, bracketing their cry with its cause.",
+      "words": [
+        "H0584",
+        "H2199",
+        "H7775",
+        "H5927G",
+        "H5656G"
+      ],
+      "history": "The king's death also makes Moses' return possible, as God will tell him in 4:19. Stephen says forty years passed in Midian before God appeared to Moses (Acts 7:30), which with the forty years of Acts 7:23 and the forty of the wilderness makes up the 120 years of Deuteronomy 34:7.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The cry that reaches God is not a polished prayer but groaning under a burden. The verse teaches that God hears the cry of the oppressed even when it has not found words, a conviction the Psalms and Paul both echo (Psalm 34:17; Romans 8:26)."
+        }
+      ],
+      "refs": [
+        "Exodus 22:23",
+        "Exodus 4:19",
+        "Acts 7:30",
+        "Psalm 34:17"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "God hears, remembers, sees, and knows. After two chapters in which he acted mostly behind the scenes, God becomes the subject of four verbs in a row, and the story is ready for the burning bush.",
+      "grammar": "Na'aqatam, ‘their groaning’, is a word used for the groans of the wounded (Ezekiel 30:24) and of the oppressed (Judges 2:18), and God repeats it when he recommissions Moses (6:5). Vayyizkor, ‘he remembered’ (zakar), with berito, ‘his covenant’, is the same pairing used when God remembered Noah and his covenant (Genesis 8:1; 9:15). Verse 25 ends abruptly: vayyeda' elohim, ‘and God knew’, with no object. The BSB's “took notice” supplies the sense: God knew their condition from the inside, with care, the way yada is used for close personal knowledge.",
+      "words": [
+        "H8085G",
+        "H5009",
+        "H2142",
+        "H1285",
+        "H3045"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's action toward Israel rests on what he promised Abraham, Isaac, and Jacob. The rescue that follows is not a new idea but the keeping of an old promise, including the word that the nation which enslaved them would be judged (Genesis 15:14)."
+        },
+        {
+          "id": "attributes",
+          "note": "The four verbs describe a God who is attentive, faithful to his word, and personally concerned with human suffering. Remembering, in Scripture, means turning to act on a commitment, not recalling forgotten information."
+        }
+      ],
+      "text": "The Greek translation reads the end of verse 25 as ‘and he made himself known to them’, which reflects a slightly different Hebrew text, probably reading ‘to them’ (alehem) where the standard text has ‘God’ (elohim). The standard Hebrew, ‘and God knew’, is followed by most English versions and fits the chapter's theme of God's seeing and knowing (3:7).",
+      "refs": [
+        "Exodus 6:5",
+        "Genesis 15:13-14",
+        "Exodus 3:7",
+        "Luke 1:72",
+        "Psalm 106:44-45"
+      ]
+    }
+  ]
+}

@@ -1,36 +1,29 @@
-
 /**
- * The site's grouped navigation — one source of truth for the footer and the
- * header.
+ * The site's grouped navigation — one source of truth for the header and the
+ * footer.
  *
- * LiveWell is James Bell's writing platform: the essays, the books, the
- * newsletter, theology, church history, justice, the hard questions — a place
- * to read, learn, and grow. The header carries only that identity, in four
- * doors named for the KIND of thing a reader wants, which is how James asked
- * for it: Articles, Books, Tools, About. One door each, so the tools are never
- * a scavenger hunt and the books are never buried in a general menu.
+ * LiveWell is a simple site James keeps adding to: helping people live well in
+ * post-Christian America and understand the long history of the faith. The
+ * header carries five doors, named for what a reader came to do: Study (the
+ * Study Bible, church history, reading Scripture in its world), Essays, Books,
+ * Resources (downloads, tools, help, families), and About (the man behind it).
+ * Find Help, search, and Subscribe sit beside them on every page.
  *
- * The pastors' work (bound for the Pastors Connection Network) and the
- * disciple-making tools (bound for the discipleship app) are deliberately kept
- * OUT of the header. Their pages stay live — nothing is deleted and no URL
- * breaks — but they live in a footer-only group until they move to their own
- * homes. A group with no `primary` links never appears in the header or the
- * mobile menu; the footer still shows it.
+ * Two surfaces, one map: `primary: true` puts a link in the header; the footer
+ * shows every link in the group. A group with exactly one primary link renders
+ * in the header as a plain link, not a one-item menu. Nothing is deleted: every
+ * destination that left the header is still a live route, reachable from the
+ * hub that now holds it (/study, /resources, /tools).
  *
- * Two surfaces, one map: `primary: true` puts a link in the header and renders
- * it prominently in the footer; everything else renders as the footer column's
- * compact tail. The header stays scannable and the footer stays short, but no
- * destination is ever lost.
+ * The map is committed and static, so the header paints in full before any
+ * API call answers (the first-paint contract in CLAUDE.md).
  */
 export interface SiteNavLink {
   label: string;
   href: string;
   /** true → render as a plain <a> (external / mailto), not a wouter <Link>. */
   external?: boolean;
-  /**
-   * true → show in the header, and as a full-size row in the footer. Links
-   * without it render in the footer column's compact tail only.
-   */
+  /** true → show in the header. The footer shows every link in the group. */
   primary?: boolean;
 }
 
@@ -39,92 +32,87 @@ export interface SiteNavGroup {
   links: SiteNavLink[];
 }
 
-/**
- * The front door. A newcomer should never have to open a menu to find where to
- * begin, so this gets its own top-level spot beside the menus.
- */
-export const START_NAV: SiteNavLink = {
-  label: "Start Here",
-  href: "/start",
-};
-
-/** The header's short list for a group: only its primary links. */
+/** The header's list for a group: only its primary links. */
 export function headerLinks(group: SiteNavGroup): SiteNavLink[] {
   return group.links.filter((l) => l.primary);
 }
 
+/** A group with one header link renders as that plain link, not a menu. */
+export function soleHeaderLink(group: SiteNavGroup): SiteNavLink | null {
+  const links = headerLinks(group);
+  return links.length === 1 ? links[0] : null;
+}
+
+/** Crisis care, one click from every page (header utility and footer). */
+export const HELP_LINK: SiteNavLink = { label: "Find Help", href: "/help" };
+
 export const SITE_NAV_GROUPS: SiteNavGroup[] = [
   {
-    // "I want to read." Everything written, and the subjects it is written on.
-    title: "Articles",
+    // The anchor of the site: the whole Bible, the church's long memory, and
+    // how to read Scripture in the world it was written in.
+    title: "Study",
     links: [
-      { label: "All the writing", href: "/writing", primary: true },
-      { label: "Explore everything", href: "/explore", primary: true },
-      { label: "Theology", href: "/theology", primary: true },
+      { label: "Start here: study the Bible", href: "/study", primary: true },
+      { label: "The Study Bible", href: "/study/bible", primary: true },
       { label: "Church history", href: "/theology/history", primary: true },
-      { label: "Justice", href: "/justice", primary: true },
-      { label: "The church and power", href: "/disruption", primary: true },
-      { label: "When faith has questions", href: "/writing?track=doubt", primary: true },
-      { label: "Marriage", href: "/marriage" },
-      { label: "Parenting", href: "/parenting" },
-      { label: "Home and family", href: "/family" },
-      { label: "Living well", href: "/living-well" },
-      { label: "The historic faith", href: "/historic-faith" },
-      { label: "All six pillars", href: "/pillars" },
-      { label: "The map", href: "/map" },
-      { label: "The framework", href: "/framework" },
-      { label: "Article collections", href: "/article-collections" },
-      { label: "The Commonplace", href: "/library" },
+      { label: "Creeds and confessions", href: "/resources/creeds", primary: true },
+      { label: "The Bible in its context", href: "/resources/context", primary: true },
+      { label: "Study with a group", href: "/studyguides", primary: true },
     ],
   },
   {
-    // "I want a book." Three titles, each written by hand — James reduced the
-    // shelf to the books that are entirely his. The free reader and the wide
-    // paid catalog are archived (content/archive/), not deleted.
+    // A short shelf James has read and signed.
+    title: "Essays",
+    links: [
+      { label: "Essays", href: "/writing", primary: true },
+      { label: "Honest answers to hard questions", href: "/answers" },
+    ],
+  },
+  {
+    // The three books on the /books shelf.
     title: "Books",
     links: [
-      { label: "The books", href: "/books", primary: true },
-      { label: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america", primary: true },
-      { label: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", primary: true },
-      { label: "Believe", href: "/books/believe", primary: true },
-      { label: "The book roadmap", href: "/roadmap" },
+      { label: "Books", href: "/books", primary: true },
+      { label: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america" },
+      { label: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror" },
+      { label: "Believe", href: "/books/believe" },
     ],
   },
   {
-    // "I want something to use." Every tool, assessment, study and download in
-    // one door, which is what James asked for: one place, not a scavenger hunt.
-    title: "Tools",
+    // Things people use: the downloads, the tools, help in a hard season, and
+    // the household.
+    title: "Resources",
     links: [
-      { label: "All tools", href: "/tools", primary: true },
-      { label: "Where are you? (assessments)", href: "/assessments", primary: true },
-      { label: "Study guides and curriculum", href: "/studyguides", primary: true },
-      { label: "Guided reading paths", href: "/pathways", primary: true },
-      { label: "Downloads and PDFs", href: "/downloads", primary: true },
-      { label: "Answers to hard questions", href: "/answers", primary: true },
-      // James asked for the wisdom material to be easier to reach, so both of
-      // its doors sit in the header rather than the footer tail.
-      { label: "Wisdom for all of life", href: "/wisdom", primary: true },
-      { label: "Wisdom finder", href: "/tools/wisdom-finder", primary: true },
-      { label: "The Hard Issues Series", href: "/resources/hard-issues-series" },
-      { label: "Theology quiz", href: "/tools/theology-quiz" },
-      { label: "Reading Scripture in context", href: "/resources/context" },
+      { label: "Resources", href: "/resources", primary: true },
+      { label: "Downloads and PDFs", href: "/downloads" },
+      { label: "The Hard Issues booklets", href: "/resources/hard-issues-series" },
+      { label: "All tools", href: "/tools" },
       { label: "How-to guides", href: "/how-tos" },
-      { label: "Reading paths", href: "/reading-paths" },
-      { label: "Questions people ask", href: "/faq" },
+      { label: "Find help in a hard season", href: "/help" },
+      { label: "For families", href: "/family" },
     ],
   },
   {
+    // The person is the ministry: who James is, how to reach him, and the
+    // work that lives at its own address.
     title: "About",
     links: [
-      { label: "About James Bell", href: "/about", primary: true },
-      { label: "Newsletter (Substack)", href: "https://substack.com/@jamesbell333289", external: true, primary: true },
-      { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true, primary: true },
-      { label: "Contact", href: "mailto:Pastorjbell206@gmail.com", external: true, primary: true },
-      { label: "Membership", href: "/membership" },
-      { label: "Work with James", href: "/work-with-james" },
-      // The pastors' material now lives with the network it belongs to.
+      { label: "About", href: "/about", primary: true },
+      { label: "Speaking", href: "/speaking" },
+      { label: "Contact", href: "/contact" },
+      { label: "Newsletter", href: "/subscribe" },
+      { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true },
       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
       { label: "ENDS", href: "https://endsinitiative.org", external: true },
     ],
   },
+];
+
+/** Shortcuts under the search box: where most searches were headed anyway. */
+export const SEARCH_SHORTCUTS: SiteNavLink[] = [
+  { label: "The Study Bible", href: "/study/bible" },
+  { label: "Church history", href: "/theology/history" },
+  { label: "Essays", href: "/writing" },
+  { label: "Books", href: "/books" },
+  { label: "Find help", href: "/help" },
 ];

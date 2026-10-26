@@ -16,11 +16,11 @@ interface Event { year: string; sortYear: number; era: string; title: string; ca
 interface Data { intro: string; events: Event[]; closing: string; }
 
 const CATEGORIES: Record<string, { label: string; color: string }> = {
-  church: { label: "In the Name of Christ", color: "#7A1F1F" },
-  empire: { label: "Empire and Colonialism", color: "#5A4A2A" },
-  capitalism: { label: "Markets and Greed", color: "#8A5A00" },
-  communism: { label: "Communism and Forced Utopia", color: "#5A2A6A" },
-  nation: { label: "Nation and Ideology", color: "#2A4A6A" },
+  church: { label: "In the Name of Christ", color: "var(--accent-oxide)" },
+  empire: { label: "Empire and Colonialism", color: "var(--accent-umber)" },
+  capitalism: { label: "Markets and Greed", color: "var(--accent-amber)" },
+  communism: { label: "Communism and Forced Utopia", color: "var(--accent-violet)" },
+  nation: { label: "Nation and Ideology", color: "var(--accent-slate)" },
 };
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -58,7 +58,7 @@ export default function PropheticTimeline() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/justice" style={{ color: "inherit" }}>Prophetic Justice</Link> · The injustice timeline
+            <Link href="/theology/history" style={{ color: "inherit" }}>Church history</Link> · The injustice timeline
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "18ch" }}>
             No one's hands are clean.
@@ -90,7 +90,7 @@ export default function PropheticTimeline() {
       {/* TIMELINE */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          {!data && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading the reckoning…</p>}
+          {!data && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the reckoning…</p>}
           <div style={{ borderLeft: "2px solid var(--border)", marginLeft: "8px", display: "flex", flexDirection: "column", gap: "16px", paddingLeft: "0" }}>
             {events.map((e, i) => {
               const cat = CATEGORIES[e.category] ?? { label: e.category, color: "var(--ink-muted)" };
@@ -102,7 +102,7 @@ export default function PropheticTimeline() {
                       <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)" }}>{e.title}</span>
                       <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", color: cat.color }}>{e.year}</span>
                     </div>
-                    <span style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "10px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: cat.color, background: `${cat.color}1A`, borderRadius: "999px", padding: "3px 10px", marginBottom: "10px" }}>{cat.label}</span>
+                    <span style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "10px", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: cat.color, background: `color-mix(in srgb, ${cat.color} 10%, transparent)`, borderRadius: "999px", padding: "3px 10px", marginBottom: "10px" }}>{cat.label}</span>
                     <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: e.scale ? "8px" : "10px" }}>{e.summary}</p>
                     {e.scale && <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "10px" }}><strong style={{ color: "var(--ink)" }}>Scale. </strong>{e.scale}</p>}
                     <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)", fontStyle: "italic", borderTop: "1px solid var(--border)", paddingTop: "10px" }}>{e.theReckoning}</p>
@@ -121,8 +121,8 @@ export default function PropheticTimeline() {
             <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>The verdict</div>
             {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
             <div style={{ marginTop: "var(--s-4)", display: "flex", flexWrap: "wrap", gap: "16px" }}>
-              <Link href="/disruption" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Prophetic Disruption →</Link>
-              <Link href="/justice" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Prophetic Justice →</Link>
+              <Link href="/justice/witnesses" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>The witnesses →</Link>
+              <Link href="/theology/history" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>The history of the church →</Link>
             </div>
           </div>
         </section>

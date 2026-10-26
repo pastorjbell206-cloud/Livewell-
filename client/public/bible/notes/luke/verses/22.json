@@ -1,0 +1,1003 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Luke opens his passion account with a time note and a problem. The festival is near, the leaders have already decided that Jesus must die (19:47, 20:19), and the one thing stopping them is the people, who have hung on his words in the temple every day (21:38). Verse 3 supplies the solution they could not find themselves.",
+      "grammar": "Both main verbs are imperfects, ēngizen (‘was drawing near’) and ezētoun (‘were seeking’), painting a situation in progress rather than a single event: the clock is running and the search goes on. The object of their search is an article with an indirect question, to pōs anelōsin auton, literally ‘the how of doing away with him’, a construction Luke uses more than any other New Testament writer (it returns in verses 4, 23, and 24, and in Acts 4:21). Anaireō, ‘to do away with, execute’, is Luke's favorite verb for killing; he uses it of Jesus again in 23:32 and in Peter's preaching (Acts 2:23, 10:39). The reason clause turns on laos, ‘the people’, the word Luke keeps for the Jewish crowds who welcome Jesus, as distinct from their rulers.",
+      "words": [
+        "G1448",
+        "G2212",
+        "G0337",
+        "G2992"
+      ],
+      "parallels": [
+        "Matthew 26:1-5",
+        "Mark 14:1-2"
+      ],
+      "refs": [
+        "Luke 19:47-48",
+        "Luke 20:19",
+        "Luke 21:37-38",
+        "John 11:47-53"
+      ],
+      "history": "Luke calls the whole festival ‘the Feast of Unleavened Bread, called the Passover’, the combined usage the chapter note documents from Josephus. Unlike Mark (14:3-9) and Matthew, he does not follow the plot with the anointing at Bethany; he has already told a different anointing story, of a sinful woman in a Pharisee's house (7:36-50), and moves straight from the leaders' problem to Judas."
+    },
+    {
+      "v": "3-6",
+      "context": "Luke names the power behind the betrayal before he names the betrayer's actions. Satan, who departed from Jesus ‘until an opportune time’ (4:13), returns now through one of the Twelve, and Judas then acts entirely on his own initiative: he goes, confers, agrees, and watches for his chance.",
+      "grammar": "Eisēlthen de satanas eis Ioudan, ‘Satan entered into Judas’, uses the very phrasing Luke used for the demons entering the pigs (8:32-33), a deliberate and chilling echo. The description ek tou arithmou tōn dōdeka, ‘of the number of the Twelve’, stresses the insider's place, and Peter will use the same idea of Judas in Acts 1:17 (‘he was one of our number’). In verse 6 exōmologēsen means ‘he agreed, gave his word’, and Judas seeks eukairia, ‘a good opportunity’, a word built on kairos: the devil's ‘opportune time’ of 4:13 has arrived. Ater ochlou, ‘apart from a crowd’, uses a rare preposition found in the New Testament only here and in verse 35.",
+      "words": [
+        "G1525",
+        "G4567",
+        "G0706",
+        "G1843",
+        "G2120",
+        "G0817"
+      ],
+      "history": "Luke, like John, says that Satan was at work in Judas (John 13:2, 13:27), where Mark and Matthew speak only of Judas himself. Luke does not state the price; Matthew gives thirty pieces of silver, echoing Zechariah 11:12 (Matthew 26:15). The ‘temple officers’ (stratēgoi) with whom Judas confers commanded the Levitical temple guard, and Luke is the only evangelist to name them here, which prepares for their appearance at the arrest (verse 52).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Luke refuses to make Judas either a mere puppet or the only actor. Satan enters him, yet every verb in verses 4-6 has Judas as its subject. Evil in Scripture is personal and more than human, but it works through human consent, which is why Luke can hold Judas responsible (verse 22)."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:14-16",
+        "Mark 14:10-11",
+        "John 13:2"
+      ],
+      "refs": [
+        "Luke 4:13",
+        "John 13:27",
+        "Acts 1:16-18",
+        "Acts 5:3"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "The day arrives on which the lambs must be sacrificed, and Jesus takes the initiative, sending two named disciples to prepare. In Mark the disciples ask first; in Luke Jesus gives the order, one of many small signs that he is directing events rather than being overtaken by them.",
+      "grammar": "The relative clause says the day came en hē edei thuesthai to pascha, ‘on which it was necessary for the Passover to be sacrificed’. Edei is the imperfect of dei, the verb that in Luke marks the necessity of God's plan (9:22, 17:25, 22:37, 24:7, 24:26). Here its first sense is simply legal obligation, the Law's requirement, but readers of Luke hear the larger necessity behind it. Pascha in this clause means the Passover lamb, as in Mark 14:12 and 1 Corinthians 5:7; in verse 8 it means the meal. Hetoimasate, ‘prepare’, is an aorist imperative, a specific task, and hina phagōmen, ‘so that we may eat’, includes Jesus with the Twelve.",
+      "words": [
+        "G1163",
+        "G2380",
+        "G3957",
+        "G2090",
+        "G4074G",
+        "G2491H"
+      ],
+      "history": "The lambs were slaughtered in the temple court on the afternoon of 14 Nisan. The Mishnah describes the slaughter being done in three successive groups, with the Levites singing the Hallel psalms while the priests passed the blood in basins toward the altar (m. Pesachim 5:5-7), a picture of the scale of the day. Only Luke names the two disciples as Peter and John. They form a pair throughout Acts (3:1, 4:13, 8:14), and their errand here is the first thing Luke shows them doing together.",
+      "parallels": [
+        "Matthew 26:17-19",
+        "Mark 14:12-13"
+      ],
+      "refs": [
+        "Exodus 12:6",
+        "Deuteronomy 16:5-7",
+        "Acts 3:1",
+        "1 Corinthians 5:7"
+      ]
+    },
+    {
+      "v": "9-13",
+      "context": "The disciples ask where, and Jesus answers with a sign to watch for, a man carrying a water jar, and words to repeat to the householder. Everything happens as he said, which recalls the finding of the colt at the entry to the city (19:29-34) and assures the reader that the one about to be arrested knows what the next hours hold.",
+      "grammar": "Verse 13 closes with the same formula Luke used for the colt: heuron kathōs eirēkei autois, ‘they found it just as he had told them’ (compare 19:32). The pluperfect eirēkei looks back to the word already spoken and sets the event under it. The message to the householder, ‘The Teacher asks’, uses ho didaskalos without a name, as if the owner will know who is meant. Kataluma, ‘guest room’, is the word for the lodging that had no room at Jesus' birth (2:7); now a room is ready. Anagaion, ‘upper room’, occurs only here and in Mark 14:15, and estrōmenon, a perfect passive participle of strōnnumi, ‘to spread’, means the room was already laid out with couches or cushions for reclining.",
+      "words": [
+        "G2147",
+        "G2036",
+        "G1320",
+        "G2646",
+        "G0508",
+        "G4766"
+      ],
+      "history": "Tradition has long placed the upper room on the southwestern hill of Jerusalem, now called Mount Zion. Epiphanius, in the late fourth century, reports that when the emperor Hadrian visited the ruined city a small church stood there on the site where the disciples went up to the upper room after the ascension (On Weights and Measures 14). The hall shown to visitors today, the Cenacle, is a medieval building, and the identification with the room of this chapter remains a tradition rather than a demonstrated fact.",
+      "parallels": [
+        "Mark 14:13-16"
+      ],
+      "refs": [
+        "Luke 19:29-34",
+        "Luke 2:7",
+        "Acts 1:13"
+      ]
+    },
+    {
+      "v": "14-16",
+      "context": "At the appointed hour Jesus reclines with the apostles and speaks first of his own desire: he has longed to eat this Passover with them before he suffers. Then comes a vow: he will not eat it again until it finds its fulfillment in the kingdom of God. The meal is framed from the start as both farewell and promise.",
+      "grammar": "Epithumia epethumēsa, literally ‘with desire I have desired’, puts a noun and verb of the same root side by side, a Semitic way of intensifying that imitates the Hebrew infinitive absolute and appears in the Septuagint (Genesis 31:30 uses the same pair). Pro tou me pathein, ‘before I suffer’, uses paschō, Luke's verb for the passion (9:22, 17:25, 24:26, Acts 1:3, 3:18). The second-century bishop Melito of Sardis, in his homily On Pascha, played on the likeness of pascha and paschein, though the Greek word for Passover actually comes from Aramaic. In verse 16 ou mē phagō is the strongest form of negation Greek has, ‘I will certainly not eat’, and heōs hotou plērōthē, ‘until it is fulfilled’, treats the Passover itself as a promise awaiting completion.",
+      "words": [
+        "G1939",
+        "G1937",
+        "G3958",
+        "G3957",
+        "G4137",
+        "G0932"
+      ],
+      "text": "Later manuscripts, followed by the King James Version, read ‘I will not any more eat thereof’ (ouketi ... ex autou), which states plainly that Jesus eats this meal and not again. The earlier text reads ‘I will not eat it’, which Joachim Jeremias (The Eucharistic Words of Jesus) took as a vow of abstinence: Jesus himself fasted at this Passover. Most interpreters think he shared the meal and vowed not to eat it again, but the shorter wording leaves Jeremias's reading grammatically possible.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The Passover looked back to the exodus; Jesus says it also looks forward, to a fulfillment in the kingdom of God. Luke has already pictured that kingdom as a feast where people come from east and west to recline (13:29, 14:15), the banquet Isaiah foresaw (Isaiah 25:6-8)."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:20",
+        "Mark 14:17"
+      ],
+      "refs": [
+        "Luke 13:29",
+        "Luke 14:15",
+        "Isaiah 25:6-8",
+        "Acts 1:3"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Luke alone reports a cup before the bread. Jesus gives thanks, tells the Twelve to share it among themselves, and repeats his vow in a second form: he will not drink of the fruit of the vine until the kingdom of God comes. In Mark and Matthew this vow follows the cup of the covenant; Luke places it before, so that the whole Supper stands under the promise of the kingdom.",
+      "grammar": "Dexamenos potērion, ‘having received a cup’, may suggest a cup handed to Jesus as host. Eucharistēsas, ‘having given thanks’, is the participle from which the church's word Eucharist comes. The two aorist imperatives, labete and diamerisate, ‘take’ and ‘divide’, make the sharing an act of the group; Jesus is not said to drink. The phrase tou genēmatos tēs ampelou, ‘the fruit of the vine’, is not Luke's own idiom but the language of the Jewish blessing over wine.",
+      "words": [
+        "G1209",
+        "G4221",
+        "G2168",
+        "G1266",
+        "G6013",
+        "G0288"
+      ],
+      "history": "The Mishnah prescribes a blessing over wine in the words ‘who creates the fruit of the vine’ (m. Berakhot 6:1), which is why Jesus' phrase sounds like table liturgy. It also describes the first cup of the Passover evening, over which the host blessed the day and the wine (m. Pesachim 10:2). Many commentators therefore identify Luke's first cup with an early cup of the Passover order and the cup ‘after supper’ (verse 20) with the third cup, the cup of blessing, though the Mishnah's order is later than Jesus and cannot be pressed in detail.",
+      "text": "This cup is the reason Luke's text has been so contested. In the shorter text of Codex Bezae and several Old Latin manuscripts, which stops after ‘This is My body’ in verse 19, this is the only cup, and it comes before the bread; the longer text gives two cups. See the notes on verses 19 and 20.",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Jesus' vow turns the Supper toward the future. The disciples drink while he abstains, and the meal becomes a pledge that he will drink again with them when the kingdom comes, which is why Paul says the church proclaims the Lord's death ‘until He comes’ (1 Corinthians 11:26)."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:29",
+        "Mark 14:25"
+      ],
+      "refs": [
+        "1 Corinthians 10:16",
+        "1 Corinthians 11:26",
+        "Luke 22:30"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Jesus takes bread, gives thanks, breaks it, and gives it, the same four actions as at the feeding of the five thousand (9:16) and at Emmaus (24:30). His words turn the bread into an interpretation of his death: his body given for them. The command to repeat the act makes this meal the pattern for the church's gatherings (Acts 2:42, 20:7).",
+      "grammar": "Touto estin to sōma mou, ‘this is my body’: the demonstrative touto is neuter, while artos, ‘bread’, is masculine, so ‘this’ agrees with the neuter predicate sōma rather than with the bread. Greek regularly does this, so the grammar alone settles nothing about how Christ is present, a question the traditions answer differently (see the chapter note). To huper humōn didomenon is a present passive participle, ‘being given for you’, the gift already under way, and huper, ‘on behalf of’, is the preposition of substitution and benefit (Romans 5:8). Touto poieite is a present imperative, ‘keep doing this’. Eis tēn emēn anamnēsin uses the possessive adjective emēn, ‘my’, rather than the ordinary pronoun: ‘for the remembrance of me’. Joachim Jeremias argued that it means ‘so that God may remember me’, on the pattern of memorials before God; most interpreters take it as the disciples' remembrance of Jesus.",
+      "words": [
+        "G2168",
+        "G2806",
+        "G4983",
+        "G5228",
+        "G1325",
+        "G4160G",
+        "G1473",
+        "G0364"
+      ],
+      "text": "Verse 19b (‘given for you; do this in remembrance of Me’) and verse 20 are missing from Codex Bezae and several Old Latin manuscripts, the most important of the passages Westcott and Hort called ‘Western non-interpolations’ (see the text note on 24:3). Everything else supports the longer text, including P75, Sinaiticus, Vaticanus, and Alexandrinus. Defenders of the shorter reading point out that the longer words match Paul (1 Corinthians 11:24-25) almost exactly and could have been added to bring Luke into line with the church's liturgy. Defenders of the longer reading, among them Joachim Jeremias and the committee of the United Bible Societies' edition, answer that a scribe puzzled by two cups had a clear motive to cut, that the shorter text leaves a cup before the bread with no word about blood, and that Luke and Paul may both depend on an older liturgical tradition.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "This is the verse in which the Supper is instituted as an ongoing practice: the words ‘do this’ are found in the Gospels only here. Every Christian tradition keeps the command, whether it speaks of sacrament, ordinance, or mystery, and each reads ‘this is My body’ carefully in support of its account of Christ's presence."
+        },
+        {
+          "id": "atonement",
+          "note": "‘Given for you’ defines Jesus' death as a gift made on behalf of others before it happens. The bread is broken and given by Jesus himself, so his death is his own act of self-giving, not only something done to him."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:26",
+        "Mark 14:22",
+        "1 Corinthians 11:23-24"
+      ],
+      "refs": [
+        "Luke 9:16",
+        "Luke 24:30",
+        "Acts 2:42",
+        "Exodus 12:14"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "After the meal Jesus takes the cup and names it the new covenant in his blood, poured out for them. The bread spoke of his body given; the cup speaks of the covenant his death brings into being. With this word Luke's account of the table sayings reaches its center, and the next sentence turns abruptly to betrayal.",
+      "grammar": "Hōsautōs meta to deipnēsai, ‘likewise, after supper’, is word for word Paul's phrase in 1 Corinthians 11:25. The saying is literally ‘This cup, the new covenant in my blood’, with no verb, the Semitic habit of setting two nouns side by side. Kainē diathēkē, ‘new covenant’, is the phrase of Jeremiah 31:31 in its Greek form. The participle to huper humōn ekchunnomenon, ‘which is being poured out for you’, is nominative, so it agrees with to potērion, ‘the cup’, not with the dative en tō haimati, ‘in the blood’. Strictly the cup is poured out. Most commentators take this as a sign that Luke has joined Paul's wording to Mark's (Mark 14:24 has ‘poured out for many’), and the sense is plain: the blood is poured out, and the cup is its sign.",
+      "words": [
+        "G5615",
+        "G1172",
+        "G4221",
+        "G2537",
+        "G1242",
+        "G0129G",
+        "G1632"
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 24:8",
+          "note": "At Sinai Moses sprinkled the people with sacrificial blood and said, “This is the blood of the covenant that the LORD has made with you” (Hebrew dam-habberit; the Septuagint, to haima tēs diathēkēs). Mark and Matthew keep that wording closely (‘my blood of the covenant’). Luke's form joins it to Jeremiah: the covenant is new, and the blood is Jesus' own. As Sinai's covenant was sealed with blood, so is this one."
+        },
+        {
+          "ref": "Jeremiah 31:31",
+          "note": "Jeremiah promised that “the days are coming, declares the LORD, when I will make a new covenant with the house of Israel and with the house of Judah”, a covenant written on the heart and ending in forgiveness (31:33-34). This is the only place in the Hebrew Bible where the phrase ‘new covenant’ (berit chadashah) occurs, and the Septuagint renders it diathēkē kainē (Jeremiah 38:31 in its numbering). Luke's word order kainē diathēkē follows Paul. Jesus claims that the promise made to Israel in exile is kept through his death. Hebrews 8:8-12 quotes the whole passage to make the same point."
+        }
+      ],
+      "text": "Verse 20 is part of the passage absent from Codex Bezae and several Old Latin manuscripts (see the note on verse 19). P75, copied around AD 200, has it, as do all the great uncials. Almost all modern editions and translations print it; the RSV of 1946 and 1952 was the best-known exception, and its 1971 edition restored it.",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Jesus does not merely recall the covenant; he establishes one. The verse joins the blood of Sinai to Jeremiah's promise of a new covenant and says both find their meaning in his death, so that the church's cup is the sign of a covenant made by God and sealed in the blood of his Son."
+        },
+        {
+          "id": "atonement",
+          "note": "‘Poured out for you’ is the language of sacrifice: blood poured at the altar (Leviticus 4:7). Joined to the new covenant, whose promise ends in forgiveness (Jeremiah 31:34), the saying presents Jesus' death as the sacrifice through which sins are forgiven."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:27-28",
+        "Mark 14:23-24",
+        "1 Corinthians 11:25"
+      ],
+      "refs": [
+        "Hebrews 9:15-22",
+        "Zechariah 9:11",
+        "2 Corinthians 3:6",
+        "Hebrews 8:8-12"
+      ]
+    },
+    {
+      "v": "21-23",
+      "context": "Luke places the announcement of betrayal after the bread and cup, where Mark and Matthew have it before. The effect is that the hand that received the cup is the hand that will betray. Jesus holds God's plan and the betrayer's guilt in one sentence, and the disciples turn to questioning each other.",
+      "grammar": "Plēn, ‘but, nevertheless’, marks a sharp turn from the gift to the betrayer. Tou paradidontos, a present participle, is literally ‘the one handing me over’, the act already in motion. In verse 22 kata to hōrismenon, ‘according to what has been determined’, uses a perfect passive participle of horizō, the verb Peter will use for God's ‘set plan’ in Acts 2:23 (hōrismenē boulē). Men ... plēn sets the two halves side by side: on the one hand the Son of Man goes as determined, on the other hand woe to the man through whom he is handed over. Verse 23 uses the optative eiē in an indirect question, to tis ara eiē, ‘who then it might be’, a literary touch almost confined to Luke among the Gospel writers.",
+      "words": [
+        "G4133",
+        "G3860",
+        "G3724",
+        "G4198",
+        "G3759",
+        "G1510"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The Son of Man goes ‘as it has been determined’, yet woe falls on the betrayer. The verse is one of Scripture's plainest statements that God's plan and human guilt do not cancel each other; Acts 2:23 and 4:27-28 say the same of the whole passion."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:21-25",
+        "Mark 14:18-21",
+        "John 13:21-30"
+      ],
+      "refs": [
+        "Psalm 41:9",
+        "Acts 2:23",
+        "Acts 4:27-28",
+        "John 13:18"
+      ]
+    },
+    {
+      "v": "24-26",
+      "context": "Immediately after the talk of betrayal the disciples argue over which of them counts as greatest. Only Luke sets this dispute at the Last Supper. Jesus answers by naming the politics of the Gentile world and forbidding its pattern among his followers.",
+      "grammar": "Philoneikia, ‘love of strife, contentiousness’, occurs only here in the New Testament. The question is to tis autōn dokei einai meizōn, ‘which of them seems to be greater’; the comparative meizōn does the work of a superlative, as often in the Greek of the period, and dokei, ‘seems, is reckoned’, makes it a matter of reputation. In verse 25 kurieuousin means ‘lord it over’ and exousiazontes ‘those exercising authority’. Euergetai kalountai can be passive, ‘are called benefactors’, or middle, ‘call themselves benefactors’; the BSB takes the second. Verse 26 opens humeis de ouch houtōs, ‘but you, not so’, with no verb at all, a clipped prohibition. Ho neōteros, ‘the younger’, is the lowest in rank, and ho hēgoumenos, ‘the one who leads’, is a word the early church used for its own leaders (Acts 15:22, Hebrews 13:7).",
+      "words": [
+        "G5379",
+        "G1380",
+        "G3173",
+        "G2961",
+        "G1850",
+        "G2110",
+        "G3501",
+        "G2233",
+        "G1247"
+      ],
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Jesus does not abolish leadership; he assumes there will be ‘the one who leads’. What he abolishes is the Gentile pattern in which power is used over others and then dressed up as generosity. Among his people the leader takes the place of the youngest and the servant."
+        }
+      ],
+      "parallels": [
+        "Matthew 20:25-26",
+        "Mark 10:42-44"
+      ],
+      "refs": [
+        "Luke 9:46-48",
+        "Acts 15:22",
+        "Hebrews 13:17",
+        "1 Peter 5:3"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "Jesus grounds his command in a question with an obvious answer and then overturns it with his own example. At any meal the one reclining outranks the one serving; yet the Lord of this table is among them as the servant.",
+      "grammar": "The first question, tis gar meizōn, ‘for who is greater’, is followed by ouchi ho anakeimenos, a question introduced with ouchi, which expects the answer yes: ‘is it not the one reclining?’ Then egō de en mesō humōn eimi hōs ho diakonōn, ‘but I am in your midst as the one serving’. The emphatic egō and the present tense of eimi make it a description of his whole presence among them, not a single act. The participle diakonōn is the word for waiting at table, from which the church's word deacon derives.",
+      "words": [
+        "G3173",
+        "G0345",
+        "G3780",
+        "G1473",
+        "G1247"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Mark's parallel ends with the Son of Man giving his life as a ransom for many (Mark 10:45); Luke's saying stops at service. Hans Conzelmann (The Theology of St. Luke, 1954) argued that Luke has no real theology of atonement. Others reply that Luke places this saying at the table where Jesus has just called his body ‘given for you’ and his blood ‘poured out for you’ (verses 19-20), and that Acts speaks of the church bought with his own blood (Acts 20:28), so that service and sacrifice interpret each other."
+        }
+      ],
+      "parallels": [
+        "Mark 10:45",
+        "John 13:12-17"
+      ],
+      "refs": [
+        "Luke 12:37",
+        "Luke 17:7-10",
+        "Philippians 2:7",
+        "Acts 20:28"
+      ]
+    },
+    {
+      "v": "28-30",
+      "context": "Jesus turns from rebuke to promise. The disciples have stayed with him through his trials, and he confers on them a kingdom as his Father conferred one on him. They will eat and drink at his table and sit on thrones judging the twelve tribes of Israel.",
+      "grammar": "Diamemenēkotes, a perfect participle, ‘those who have remained’, describes faithfulness that has lasted up to now, just before it is about to fail. Peirasmoi here means ‘trials’ in the sense of the testing Jesus has endured. The key verb is diatithemai, ‘I confer, assign’, which comes from the same root as diathēkē, ‘covenant’ (verse 20): one could translate ‘I covenant to you a kingdom as my Father covenanted one to me’. The hina clause, ‘so that you may eat and drink’, ties the kingdom back to the table. Where Matthew 19:28 says ‘twelve thrones’, Luke says only ‘thrones’, perhaps because Judas is at the table.",
+      "words": [
+        "G1265",
+        "G3986H",
+        "G1303",
+        "G0932",
+        "G5132",
+        "G2362",
+        "G5443"
+      ],
+      "history": "Jewish hope in this period looked for the restoration of all twelve tribes. The Psalms of Solomon, from the first century BC, picture the Davidic Messiah gathering a holy people and judging the tribes of the people (Psalms of Solomon 17:26), and the Community Rule from Qumran sets twelve men and three priests at the head of the community (1QS 8:1), a council modeled on Israel's tribes. Jesus' Twelve carry the same symbolism, which is why Acts replaces Judas before Pentecost (Acts 1:15-26).",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is given as a covenant gift, from the Father to the Son and from the Son to his followers. It is not seized, as the Gentile kings seize power (verse 25), but received, and it is shared at a table."
+        },
+        {
+          "id": "israel",
+          "note": "Jesus appoints his disciples to judge, that is, to govern, the twelve tribes. His mission is the restoration of Israel, not its replacement, a theme Luke carries into Acts, where the Twelve are reconstituted and the gospel goes first to Jerusalem (Acts 1:6-8, 1:26)."
+        }
+      ],
+      "parallels": [
+        "Matthew 19:28"
+      ],
+      "refs": [
+        "Luke 12:32",
+        "Daniel 7:9",
+        "Psalm 122:5",
+        "Acts 1:6",
+        "Revelation 21:12-14"
+      ]
+    },
+    {
+      "v": "31-32",
+      "context": "Jesus turns to Peter with a warning and a promise. Satan has demanded to sift all the disciples like wheat, but Jesus has prayed for Peter in particular that his faith will not fail, and he gives him a task for after his return: strengthen your brothers.",
+      "grammar": "The doubled name, Simōn Simōn, is a mark of earnest address in Luke (10:41, ‘Martha, Martha’; Acts 9:4, ‘Saul, Saul’). The pronouns carry the argument. In verse 31 Satan asked for humas, plural, ‘all of you’; in verse 32 Jesus prayed peri sou, singular, ‘for you’, Peter. Exētēsato, aorist middle, means ‘he asked for, demanded to have’, implying a request made to someone with authority to grant it, as in Job 1-2. Siniasai, ‘to sift’, occurs only here in the New Testament. Edeēthēn, ‘I have prayed’, is from deomai, a word for earnest petition. Hina mē eklipē hē pistis sou, ‘that your faith may not fail’, uses ekleipō, the verb Luke will use of the sun's light failing at the cross (23:45). Epistrepsas, ‘having turned back’, is the language of repentance (Acts 3:19), and stērison, ‘strengthen’, is the verb (with its compound epistērizō) that Luke uses for confirming the churches (Acts 14:22, 15:32, 18:23).",
+      "words": [
+        "G4613O",
+        "G4567",
+        "G1809",
+        "G4617",
+        "G1189",
+        "G1587",
+        "G4102G",
+        "G1994",
+        "G4741"
+      ],
+      "text": "Most later manuscripts, followed by the King James Version, open verse 31 with ‘And the Lord said’. The phrase is absent from P75, Vaticanus, and a few other witnesses, and modern editions omit it; it was probably added to mark the change of speaker.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus' prayer comes before Peter's fall, and it does not ask that Peter be spared the sifting but that his faith not fail within it. Christ's intercession is aimed at perseverance through failure, not at the avoidance of every trial (Romans 8:34, Hebrews 7:25)."
+        },
+        {
+          "id": "perseverance",
+          "note": "Peter's faith will be shaken and his courage will collapse, yet Jesus asks that his faith not fail and speaks of his return as certain (‘when you have turned back’). The verse grounds a disciple's endurance in Christ's prayer rather than in the disciple's strength."
+        }
+      ],
+      "refs": [
+        "Job 1:12",
+        "Amos 9:9",
+        "John 17:15",
+        "Romans 8:34",
+        "Acts 2:14"
+      ]
+    },
+    {
+      "v": "33-34",
+      "context": "Peter answers with a vow of loyalty to prison and death. Jesus answers with a prophecy: before the rooster crows today, Peter will three times deny that he knows him. Luke, like John, sets this exchange at the table; Mark and Matthew place it on the way to the Mount of Olives.",
+      "grammar": "Meta sou hetoimos eimi, ‘with you I am ready’, puts ‘with you’ first for emphasis, and the vow uses kai ... kai, ‘both to prison and to death’. Paul will later say something similar and mean it (Acts 21:13). Jesus replies Legō soi, Petre, ‘I tell you, Peter’, the only time in Luke that he addresses him by the name Peter, the name given at his call (6:14) and meaning ‘rock’. Ou phōnēsei sēmeron alektōr, ‘the rooster will not crow today’, uses sēmeron because the Jewish day began at sunset: the night now falling is part of ‘today’. The content of the denial is given as me eidenai, ‘that you know me’, which is exactly what Peter will say in verse 57.",
+      "words": [
+        "G2092",
+        "G5438G",
+        "G2288",
+        "G4074G",
+        "G4594",
+        "G0220",
+        "G0533",
+        "G6063"
+      ],
+      "parallels": [
+        "Matthew 26:33-35",
+        "Mark 14:29-31",
+        "John 13:36-38"
+      ],
+      "refs": [
+        "Acts 21:13",
+        "Luke 22:57",
+        "Luke 22:61",
+        "John 21:15-19"
+      ],
+      "history": "Only Mark has the rooster crowing twice (Mark 14:30, 72); Luke, Matthew, and John speak of a single crow. The difference is discussed in the notes on Mark 14:29-31. Whether ‘cockcrow’ is meant literally or as the name of the night watch ending around three in the morning, Jesus' point is that the denial will come before dawn."
+    },
+    {
+      "v": "35-36",
+      "context": "Jesus reminds the disciples of their earlier mission, when they went out with nothing and lacked nothing (10:4, compare 9:3). Now everything changes. They are to take purse and bag, and the one without a sword should sell his cloak and buy one. The contrast marks a new and hostile time.",
+      "grammar": "Verse 35 lists the same three items, ballantion, pēra, and hupodēmata (purse, bag, sandals), that Jesus forbade the seventy-two in 10:4, so the reference is exact. Mē tinos husterēsate expects the answer ‘no’, and they give it: outhenos, ‘nothing’. Verse 36 opens alla nun, ‘but now’, a strong break. The third-person imperatives aratō, pōlēsatō, and agorasatō (‘let him take, sell, buy’) are general instructions. The clause ho mē echōn has no object, so it can be read ‘the one who has no purse’ (and so cannot buy a sword without selling his cloak) or ‘the one who has no sword’; the BSB takes the second. Either way, the demand is extreme, since the himation was the outer cloak a poor man also slept in.",
+      "words": [
+        "G0905",
+        "G4082",
+        "G5266",
+        "G5302",
+        "G0235",
+        "G3568",
+        "G2440",
+        "G3162"
+      ],
+      "history": "The Law forbade a creditor to keep a poor man's cloak overnight, because it was his only covering (Exodus 22:26-27, Deuteronomy 24:12-13). Selling one's cloak for a sword was therefore a picture of desperate need, which is part of why most interpreters take the saying as vivid rather than literal instruction (see the chapter note's hard question).",
+      "refs": [
+        "Luke 10:4",
+        "Luke 9:3",
+        "Exodus 22:26-27",
+        "Luke 21:12"
+      ]
+    },
+    {
+      "v": "37",
+      "context": "Jesus explains the change with Scripture. He must be counted among the lawless, and what is written about him is reaching its end. This is the only place in the Gospels where Jesus explicitly quotes Isaiah's fourth Servant Song about himself.",
+      "grammar": "The sentence is framed by two words from the same root. Dei telesthēnai en emoi, ‘it must be fulfilled in me’, uses the aorist passive of teleō, and the verse ends to peri emou telos echei, ‘what concerns me has an end’, that is, is reaching its goal. Dei is Luke's verb of divine necessity (9:22, 24:26, 24:44). The quotation is introduced by to gegrammenon, ‘what is written’, a perfect passive participle: Scripture stands written and now comes due. Meta anomōn elogisthē, ‘he was reckoned with the lawless’, uses logizomai, ‘to count, reckon’, the verb of Genesis 15:6 and Romans 4.",
+      "words": [
+        "G1163",
+        "G5055",
+        "G1125",
+        "G0459",
+        "G3049",
+        "G5056"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 53:12",
+          "note": "The Hebrew says of the Servant that he was numbered with the transgressors (et-poshim nimnah), and the verse continues “Yet He bore the sin of many and made intercession for the transgressors.” The Septuagint reads en tois anomois elogisthē, ‘he was reckoned among the lawless’. Luke's meta anomōn, ‘with the lawless’, is closer to the Hebrew preposition et, ‘with’, than to the Greek en. Isaiah's Servant is counted a criminal though innocent and in that way bears others' sin. Luke shows the text fulfilled in stages: Jesus is arrested as if an outlaw (verse 52), crucified between criminals (23:32-33), and intercedes for his executioners (23:34). Acts 8:32-33 quotes the same chapter of Isaiah."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "By claiming Isaiah 53 for himself on the eve of his death, Jesus interprets that death through the Servant who is counted among sinners and bears their sin. Luke's reserve elsewhere about atonement language makes this explicit citation all the more significant."
+        },
+        {
+          "id": "prophecy",
+          "note": "Jesus' death is the fulfillment of what is written, not a disaster that Scripture failed to foresee. The risen Jesus will make the same argument from ‘all the Scriptures’ on the road to Emmaus (24:26-27, 24:44)."
+        }
+      ],
+      "refs": [
+        "Luke 23:32-33",
+        "Acts 8:32-35",
+        "Luke 24:26-27",
+        "Luke 24:44"
+      ]
+    },
+    {
+      "v": "38",
+      "context": "The disciples take Jesus literally and produce two swords. His reply, ‘That is enough’, closes the conversation. Within an hour one of these swords will be used, and Jesus will stop it (verses 49-51).",
+      "grammar": "Idou machairai hōde duo, ‘look, two swords here’, reports what is at hand. Hikanon estin, literally ‘it is sufficient’, is neuter and impersonal; it does not agree with ‘swords’ (feminine), which is one reason many commentators take it as ‘enough of this’ rather than ‘two swords are enough’. Grammar alone does not decide; the neuter can also stand for ‘that amount is enough’. The reading must come from context, and the context is Jesus' rebuke at the arrest.",
+      "words": [
+        "G3162",
+        "G1417",
+        "G2425"
+      ],
+      "history": "The saying had a long afterlife in political theology. Bernard of Clairvaux, writing to Pope Eugenius III in On Consideration (book 4), read the two swords as the spiritual and the temporal power, both belonging to the church, and Boniface VIII's bull Unam Sanctam (1302) made the reading official papal teaching. Protestant and most modern Catholic interpreters alike regard it as an allegory the text will not bear.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "Whatever the swords mean, Jesus refuses to be defended by them (verse 51) and tells Pilate, in John's account, that his servants do not fight (John 18:36). The verse cannot ground a claim that the church wields the state's power of the sword, a claim Christians have repeatedly regretted."
+        }
+      ],
+      "refs": [
+        "Luke 22:49-51",
+        "Matthew 26:52",
+        "John 18:36"
+      ]
+    },
+    {
+      "v": "39-40",
+      "context": "Jesus goes out to the Mount of Olives as he did every night of the festival week (21:37), and the disciples follow. At the place he gives one instruction: pray, so that you will not enter into temptation. Luke frames the scene with this command, repeating it in verse 46.",
+      "grammar": "Kata to ethos, ‘according to the custom’, is Luke's phrase for regular religious practice: Zechariah's priestly service (1:9), the family's Passover pilgrimage (2:42); a related phrase describes Jesus' habit of attending the synagogue (4:16). Luke does not name Gethsemane; he says only epi tou topou, ‘at the place’, as if readers knew it. Proseuchesthe is a present imperative, ‘keep praying’, and mē eiselthein eis peirasmon, ‘not to enter into temptation’, echoes the last petition of the Lord's Prayer in Luke's form (11:4, mē eisenenkēs hēmas eis peirasmon). The verb ēkolouthēsan, ‘followed’, is the disciple's verb, and they are still following.",
+      "words": [
+        "G1485",
+        "G3735",
+        "G1638",
+        "G0190",
+        "G5117",
+        "G4336",
+        "G3986G"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus' first word in the garden is not about his own anguish but about the disciples' danger. Prayer, in his teaching, is the defense against the moment of testing, and the phrase ties the command directly to the petition he gave them in 11:4."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:30",
+        "Matthew 26:36",
+        "Mark 14:26",
+        "Mark 14:32",
+        "John 18:1-2"
+      ],
+      "refs": [
+        "Luke 21:37",
+        "Luke 11:4",
+        "Luke 4:16"
+      ]
+    },
+    {
+      "v": "41-42",
+      "context": "Jesus withdraws a short distance, kneels, and prays that the Father remove the cup, and in the same breath submits to the Father's will. Luke gives one prayer where Mark gives three, and he opens it with the plain address ‘Father’.",
+      "grammar": "Apespasthē, an aorist passive of apospaō, literally ‘he was drawn away’, is the verb Luke uses when Paul tears himself away from the Ephesian elders (Acts 21:1); it may carry a note of reluctance or strain. Theis ta gonata, ‘having placed the knees’, is Luke's phrase for kneeling in prayer (Acts 7:60, 9:40, 20:36). The imperfect prosēucheto, ‘he was praying’, depicts sustained prayer. Pater, ei boulei, parenegke touto to potērion ap' emou: the condition ‘if you are willing’ replaces Mark's ‘all things are possible for you’, and the aorist imperative parenegke, ‘take away’, is a real request. Then plēn mē to thelēma mou alla to son ginesthō, ‘yet not my will but yours be done’: two wills are named, and the imperative ginesthō, ‘let it be done’, echoes the petition ‘Your will be done’ in Matthew's form of the Lord's Prayer (Matthew 6:10), a line Luke's shorter form of the prayer does not contain (11:2).",
+      "words": [
+        "G0645",
+        "G3037",
+        "G1119",
+        "G4336",
+        "G3962",
+        "G1014",
+        "G3911",
+        "G4221",
+        "G2307",
+        "G1096"
+      ],
+      "history": "The ‘cup’ in the prophets is often the cup of God's wrath, which the nations and faithless Jerusalem must drink (Isaiah 51:17, 51:22; Jeremiah 25:15; Psalm 75:8). Jesus had used the image for his own suffering (Mark 10:38). The Third Council of Constantinople (681) made this prayer central to its teaching that Christ has a human will as well as a divine one, freely submitted (see the chapter note's interpretation).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The prayer joins honest request and complete surrender without cancelling either. Jesus asks for what he wants, and he wants the Father's will more. It is the Lord's Prayer ‘Your will be done’ prayed at the point of greatest cost."
+        },
+        {
+          "id": "incarnation",
+          "note": "The Son asks that the cup pass and then submits his will to the Father's. The church read the verse as evidence that the incarnate Son has a true human will, able to shrink from suffering, which he freely aligns with the divine will; a Christ without that human will could not pray this prayer."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:39",
+        "Mark 14:35-36"
+      ],
+      "refs": [
+        "Isaiah 51:17",
+        "Jeremiah 25:15",
+        "Hebrews 5:7-8",
+        "John 18:11"
+      ]
+    },
+    {
+      "v": "43-44",
+      "context": "An angel from heaven strengthens Jesus, and in his anguish he prays more earnestly, his sweat falling to the ground like drops of blood. The strengthening does not remove the struggle; it is followed by deeper anguish and more intense prayer. Whether Luke wrote these verses is one of the chief textual questions in the Gospels (see the text note).",
+      "grammar": "Ōphthē, ‘appeared’, is the aorist passive Luke uses for heavenly appearances (1:11, 24:34, Acts 7:2). Enischuōn, ‘strengthening’, occurs elsewhere in the New Testament only in Acts 9:19, of Saul regaining strength after food. Genomenos en agōnia, ‘being in anguish’, uses the ingressive sense of ginomai, ‘coming into’ the struggle. Ektenesteron, ‘more earnestly’, is the comparative of the adjective Luke uses for the church's earnest prayer for Peter in prison (Acts 12:5, ektenōs). The key phrase is hōsei thromboi haimatos, ‘like clots (or drops) of blood’. Hōsei makes it a comparison, and interpreters differ on whether it compares the sweat's color or its heaviness; the text does not say that the sweat was blood.",
+      "words": [
+        "G3700H",
+        "G0032G",
+        "G1765",
+        "G0074",
+        "G1617",
+        "G2402",
+        "G5616",
+        "G2361",
+        "G0129G"
+      ],
+      "text": "The verses are missing from P75, Vaticanus, Alexandrinus, Washingtonianus, and other early witnesses, and present in the first hand of Sinaiticus, Bezae, 0171, most later manuscripts, and the second-century writers Justin and Irenaeus, as the chapter note sets out. Some manuscripts mark them with asterisks or obeli, signs of scribal doubt, and family 13 moves them into Matthew after 26:39. Bart Ehrman and Mark Plunkett argued that they were added to counter teachers who denied Christ's real humanity; Lincoln Blumell argued that they were cut because a Son needing an angel's help embarrassed later theology, which Epiphanius says happened. The UBS and Nestle-Aland editions print them in double brackets, signaling doubt about their originality but recognizing their antiquity.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "As angels served Jesus after the testing in the wilderness (Matthew 4:11, Mark 1:13), an angel strengthens him at the beginning of the final trial. The angel does not take the cup away; he strengthens Jesus to drink it, which is the pattern of help Scripture most often describes."
+        },
+        {
+          "id": "incarnation",
+          "note": "If the verses are original, they show the Son's human nature under extreme strain, needing and receiving strength. Irenaeus used them against those who said Christ only seemed to have a body. Whatever one concludes about the text, the doctrine does not depend on them; Hebrews says the same of his prayers with loud cries and tears (Hebrews 5:7)."
+        }
+      ],
+      "refs": [
+        "Hebrews 5:7",
+        "Matthew 4:11",
+        "1 Kings 19:5-8",
+        "Acts 12:5"
+      ]
+    },
+    {
+      "v": "45-46",
+      "context": "Jesus rises from prayer and finds the disciples asleep, and Luke adds the reason: they were exhausted from sorrow. Jesus repeats his opening command, so that the scene is enclosed by the call to pray against temptation (verses 40 and 46).",
+      "grammar": "Apo tēs lupēs, ‘from grief’, uses apo in a causal sense: sorrow is why they sleep. Only Luke gives this explanation, which softens Mark's account without excusing the failure. Koimōmenous, a present participle, means ‘sleeping’. Jesus' question ti katheudete, ‘why are you sleeping’, is followed by anastantes proseuchesthe, ‘get up and pray’. The participle anastantes, ‘having risen’, repeats the verb used of Jesus rising from prayer in verse 45 (anastas): he has risen from prayer, and they must rise to pray. The purpose clause hina mē eiselthēte eis peirasmon repeats verse 40 almost exactly.",
+      "words": [
+        "G0450",
+        "G4335",
+        "G2837",
+        "G3077",
+        "G2518",
+        "G4336",
+        "G3986G"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Luke's frame makes the garden scene a lesson as well as a record. Jesus meets his hour by praying and enters it strengthened; the disciples sleep and enter it unready, and within minutes they reach for swords and scatter."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:40-46",
+        "Mark 14:37-42"
+      ],
+      "refs": [
+        "Luke 9:32",
+        "Luke 21:36",
+        "1 Thessalonians 5:6"
+      ]
+    },
+    {
+      "v": "47-48",
+      "context": "While Jesus is still speaking a crowd arrives, with Judas at its head. He approaches to kiss Jesus, and Jesus names the act for what it is. Luke does not narrate the kiss itself; he tells only that Judas drew near to kiss, and the question stops the reader at the edge of it.",
+      "grammar": "Eti autou lalountos, ‘while he was still speaking’, is a genitive absolute, and Luke will use the same construction in verse 60 when the rooster crows while Peter is still speaking. Ho legomenos Ioudas, ‘the one called Judas’, keeps a certain distance. Proērcheto, imperfect, ‘was going ahead of them’, casts Judas as the guide (Acts 1:16). In verse 48 philēmati, ‘with a kiss’, stands first for emphasis, and paradidōs is a present, ‘are you handing over’, the act still happening. By calling himself ‘the Son of Man’ Jesus recalls his own predictions that the Son of Man would be handed over (9:44, 18:31-32).",
+      "words": [
+        "G2980",
+        "G3793",
+        "G4281",
+        "G1448",
+        "G5368",
+        "G5370",
+        "G3860"
+      ],
+      "history": "Kisses mark some of Luke's most tender scenes: the sinful woman who would not stop kissing Jesus' feet (7:38, 7:45) and the father who kissed his returning son (15:20). Scripture's memory of a treacherous kiss is Joab's murder of Amasa (2 Samuel 20:9-10), and Proverbs contrasts the faithful wounds of a friend with the kisses of an enemy (Proverbs 27:6).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jesus' question exposes the particular evil of treachery: a sign of love used as the instrument of betrayal. Sin often takes the outward form of devotion, and the question leaves Judas room to see what he is doing."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:47-50",
+        "Mark 14:43-45",
+        "John 18:2-5"
+      ],
+      "refs": [
+        "2 Samuel 20:9-10",
+        "Proverbs 27:6",
+        "Luke 7:45",
+        "Luke 9:44"
+      ]
+    },
+    {
+      "v": "49-51",
+      "context": "The disciples ask whether to strike, and one does not wait for the answer, cutting off the right ear of the high priest's servant. Jesus stops them and heals the man. Only Luke records the healing, the last miracle of Jesus' earthly ministry, done for one of the men who came to arrest him.",
+      "grammar": "Ei pataxomen en machairē, ‘Lord, shall we strike with the sword’, uses ei to introduce a direct question, a Septuagint idiom Luke uses again in Acts 1:6. The future indicative pataxomen is deliberative. Jesus' reply, eate heōs toutou, is terse and can be read two ways. Addressed to the disciples, it means ‘stop, no more of this’, as the BSB takes it; addressed to the arresting party, it could mean ‘let them go this far’, permitting the arrest. The first fits the context best. Luke then shifts from ous, ‘ear’, in verse 50 to ōtion in verse 51, a diminutive form that had lost its diminutive force by this period. Hapsamenos, ‘having touched’, and iasato, ‘he healed’, use the vocabulary of Jesus' healings throughout the Gospel (5:13, 6:19).",
+      "words": [
+        "G3960",
+        "G3162",
+        "G0749",
+        "G1401",
+        "G3775",
+        "G1439",
+        "G0681",
+        "G5621",
+        "G2390"
+      ],
+      "history": "John alone names the swordsman as Simon Peter and the servant as Malchus (John 18:10); Luke and John both say it was the right ear. The high priest's servant would have been a slave of the household, part of the arresting party. The notes on Mark 14:46-47 discuss the suggestion that a mutilated ear had ritual significance.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus had taught ‘love your enemies, do good to those who hate you’ (6:27). At the moment of his arrest he does exactly that, healing a member of the party that has come to take him. The last healing in Luke is an act of enemy love."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:51-54",
+        "Mark 14:47",
+        "John 18:10-11"
+      ],
+      "refs": [
+        "Luke 6:27-29",
+        "Matthew 26:52",
+        "John 18:36",
+        "Acts 1:6"
+      ]
+    },
+    {
+      "v": "52-53",
+      "context": "Jesus addresses the leaders who have come out in person, and only Luke says that chief priests and elders were among them. He protests the manner of the arrest and then interprets it: this is their hour, and the hour of the power of darkness.",
+      "grammar": "Hōs epi lēstēn exēlthate, ‘have you come out as against an outlaw’, uses lēstēs, a word for an armed bandit or rebel (see the chapter note's word study), with the prepositional phrase meta machairōn kai xulōn, ‘with swords and clubs’. Kath' hēmeran, ‘every day’, recalls 19:47. Ouk exeteinate tas cheiras ep' eme, ‘you did not stretch out your hands against me’, is an idiom for hostile action. The verse ends all' hautē estin humōn hē hōra kai hē exousia tou skotous, ‘but this is your hour, and the authority of darkness’. The genitive humōn makes the hour belong to them, and exousia means delegated authority, not unlimited power. Paul uses the same phrase, hē exousia tou skotous, of the domain from which God has rescued believers (Colossians 1:13).",
+      "words": [
+        "G0749",
+        "G4755",
+        "G3027",
+        "G3162",
+        "G3586",
+        "G1614",
+        "G5610",
+        "G1849",
+        "G4655"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "‘Your hour’ is a limited grant. Darkness has authority only for an hour, and only within the plan that Jesus has just said must be fulfilled (verse 37). The verse lets evil be real and powerful while denying that it is ultimate."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:55-56",
+        "Mark 14:48-49"
+      ],
+      "refs": [
+        "Luke 19:47",
+        "Luke 21:37",
+        "Colossians 1:13",
+        "Acts 26:18",
+        "John 13:30"
+      ]
+    },
+    {
+      "v": "54-55",
+      "context": "The arrest is completed and Jesus is taken to the high priest's house. Peter follows, but at a distance, and sits among the servants at the courtyard fire. Luke now tells the denial first and the council later, so that Peter's failure and Jesus' faithfulness happen side by side through the night.",
+      "grammar": "Three verbs move quickly: sullabontes, ‘having seized’, ēgagon, ‘they led’, and eisēgagon, ‘they brought in’. Then the imperfect ēkolouthei makrothen, ‘he was following at a distance’: Peter still uses the disciple's verb (akoloutheō, 5:11, 9:23), but the adverb makrothen tells how far he has fallen back. Verse 55 opens with two genitive absolutes, periapsantōn de pur ... kai sugkathisantōn, ‘when they had kindled a fire and sat down together’, and ekathēto ho Petros mesos autōn, ‘Peter sat among them’, puts him at the center of the hostile circle.",
+      "words": [
+        "G4815",
+        "G0071",
+        "G1521",
+        "G0190",
+        "G3113",
+        "G6072",
+        "G4442",
+        "G0833",
+        "G3319"
+      ],
+      "history": "Luke does not name the high priest here. He has named Annas and Caiaphas together (3:2), and John reports a hearing before Annas before Jesus was sent to Caiaphas (John 18:13, 18:24). The courtyard (aulē) was the open central court around which a large house was built; the servants and guards waited there while their masters were inside.",
+      "parallels": [
+        "Matthew 26:57-58",
+        "Mark 14:53-54",
+        "John 18:12-18"
+      ],
+      "refs": [
+        "Luke 3:2",
+        "Luke 9:23",
+        "Luke 22:33"
+      ]
+    },
+    {
+      "v": "56-57",
+      "context": "The first challenge comes from a servant girl who studies Peter in the firelight. He denies not only his discipleship but his acquaintance with Jesus, the very words Jesus predicted (verse 34).",
+      "grammar": "Atenisasa, ‘having looked intently’, is a favorite verb of Luke and Acts for a searching look (4:20, Acts 3:4, 7:55). Pros to phōs, ‘toward the light’, places Peter where he can be seen. Her statement, kai houtos sun autō ēn, ‘this one too was with him’, uses sun autō, ‘with him’, the phrase Luke uses of the Twelve's companionship (8:1). Peter's reply begins with ērnēsato, ‘he denied’, the verb Jesus used in warning: whoever denies me before others will be denied before the angels of God (12:9). The denial itself, ouk oida auton, gunai, ‘I do not know him, woman’, fulfills the wording of verse 34 exactly.",
+      "words": [
+        "G3814",
+        "G5457",
+        "G0816",
+        "G4862",
+        "G0720",
+        "G6063",
+        "G1135G"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Peter had confessed Jesus as ‘the Christ of God’ (9:20). Now he cannot admit he knows him to a servant girl. The verse shows that faith in Luke is not a single confession but a loyalty that can be lost in a moment of fear, and Jesus' prayer in verse 32 is what holds it."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:69-70",
+        "Mark 14:66-68",
+        "John 18:17"
+      ],
+      "refs": [
+        "Luke 12:8-9",
+        "Luke 9:20",
+        "Luke 9:26"
+      ]
+    },
+    {
+      "v": "58-60",
+      "context": "Two more challenges follow, the second after a short while and the third about an hour later, and Peter denies each more sharply. As he speaks the third denial, the rooster crows. Luke spreads the three over an hour or more, which heightens the sense of a long night of failure.",
+      "grammar": "Luke's second accuser is heteros, masculine, ‘another man’, where Mark has the same servant girl again; Peter answers him anthrōpe, ouk eimi, ‘Man, I am not’, the vocative anthrōpe being a curt, even brusque address. In verse 59 diastasēs hōsei hōras mias, ‘about an hour having passed’, is a genitive absolute, and diischurizeto, imperfect, means ‘kept insisting’. Ep' alētheias, ‘in truth, certainly’, is a Lukan phrase (4:25, 20:21, Acts 10:34). Peter's third answer, ouk oida ho legeis, ‘I do not know what you are saying’, denies even understanding. Then parachrēma, ‘immediately’, a word almost confined to Luke and Acts, and eti lalountos autou, ‘while he was still speaking’, the same genitive absolute used for Judas's arrival in verse 47: Judas came while Jesus was still speaking, and the rooster crows while Peter is still speaking.",
+      "words": [
+        "G2087",
+        "G0444",
+        "G1339",
+        "G1340",
+        "G0225",
+        "G1057",
+        "G3916",
+        "G2980",
+        "G5455",
+        "G0220"
+      ],
+      "history": "Galileans could be recognized by speech, as Matthew says explicitly (Matthew 26:73), and the notes on Mark 14:69-70 cite the Talmud's stories about Galilean pronunciation. In Luke the third accuser simply reasons from Peter's origin: ‘he too is a Galilean’. Jesus was a Galilean too, and Pilate will soon ask the same question about him (23:6).",
+      "parallels": [
+        "Matthew 26:71-74",
+        "Mark 14:69-72",
+        "John 18:25-27"
+      ],
+      "refs": [
+        "Luke 23:6",
+        "Matthew 26:73",
+        "Luke 22:47"
+      ]
+    },
+    {
+      "v": "61-62",
+      "context": "At the rooster's crow the Lord turns and looks at Peter. Only Luke records the look. Peter remembers the prediction, goes outside, and weeps bitterly. The scene ends in tears, with no word of comfort yet, though the prayer of verse 32 already stands over it.",
+      "grammar": "Luke calls Jesus ho kurios, ‘the Lord’, twice in this one verse, a title the narrator uses sparingly and here sets against Peter's denial that he even knows him. Strapheis, ‘having turned’, is a verb Luke often uses when Jesus turns to address someone (7:9, 7:44, 10:23, 23:28). Eneblepsen, ‘he looked at’, means a direct, fixed look; Luke used it of Jesus looking at the leaders as he spoke of the rejected stone (20:17). Hupemnēsthē, ‘he remembered’, an aorist passive, is literally ‘he was reminded’. In verse 62 eklausen pikrōs, ‘he wept bitterly’, uses the adverb pikrōs, from pikros, ‘bitter’; the words are identical to Matthew 26:75.",
+      "words": [
+        "G4762",
+        "G2962G",
+        "G1689",
+        "G5279",
+        "G4487",
+        "G2799",
+        "G4090"
+      ],
+      "text": "Verse 62 is absent from the fragmentary uncial 0171 and from several Old Latin manuscripts. Because its wording is identical to Matthew 26:75, some have suspected that scribes added it from Matthew. Most editors keep it, since the omission is confined to a few witnesses and may be accidental: both verses 62 and 63 begin with kai, and a copyist's eye could skip from one to the next.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Peter's tears come after the Lord's look, not before. Repentance in Luke is set in motion by being seen by Jesus, and the bitterness of the tears is the first sign that Jesus' prayer for Peter's faith is being answered. Paul later distinguishes godly sorrow that leads to repentance from worldly sorrow that brings death (2 Corinthians 7:10)."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:75",
+        "Mark 14:72"
+      ],
+      "refs": [
+        "Luke 22:31-32",
+        "John 21:15-17",
+        "2 Corinthians 7:10",
+        "Luke 20:17"
+      ]
+    },
+    {
+      "v": "63-65",
+      "context": "Through the rest of the night the guards mock and beat Jesus. They blindfold him and demand that he prophesy who struck him, a game that sneers at his reputation as a prophet at the very hour his prophecy about Peter has come true in the courtyard.",
+      "grammar": "Hoi andres hoi sunechontes auton, ‘the men holding him’, has an ambiguous pronoun: the last person named is Peter, but the sense requires Jesus, which is why the later Byzantine text and the BSB supply the name. Enepaizon and derontes are imperfect and present: the mockery and beating went on. Perikalupsantes, ‘having covered around’, means blindfolded. Prophēteuson, tis estin ho paisas se, ‘Prophesy, who is the one who struck you’, is an aorist imperative with a scornful question. In verse 65 blasphēmountes, ‘blaspheming’, is the word Luke chooses for their insults; the irony is that the men who will accuse Jesus of blasphemy are themselves committing it.",
+      "words": [
+        "G0435G",
+        "G4912",
+        "G1702",
+        "G1194",
+        "G4028",
+        "G4395",
+        "G3817",
+        "G0987"
+      ],
+      "text": "The question ‘Who hit You?’ is not in Mark's account of the mockery, but it is in Matthew's (Matthew 26:68). It is one of the ‘minor agreements’ of Matthew and Luke against Mark that bear on the synoptic problem. B. H. Streeter (The Four Gospels, 1924) argued that the words entered Matthew's text by assimilation to Luke; Mark Goodacre (The Case Against Q, 2002) treats the agreement as evidence that Luke knew Matthew.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The guards mock Jesus as a false prophet at the moment his word to Peter is fulfilled a few meters away. Luke's arrangement makes the mockery its own refutation: the one blindfolded is the one whose prophecy has just come true."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:67-68",
+        "Mark 14:65"
+      ],
+      "refs": [
+        "Isaiah 50:6",
+        "Luke 22:34",
+        "Luke 7:39"
+      ]
+    },
+    {
+      "v": "66",
+      "context": "At daybreak the council assembles and Jesus is brought before it. Luke has only this one morning session, where Mark and Matthew have a night trial followed by a morning consultation.",
+      "grammar": "Hōs egeneto hēmera, ‘when day came’, marks the time. Presbuterion tou laou, ‘the council of elders of the people’, is a collective noun Luke uses again for the Jerusalem council in Acts 22:5, followed by archiereis te kai grammateis, ‘both chief priests and scribes’, naming its members. Apēgagon auton eis to sunedrion autōn, ‘they led him away into their council’, uses sunedrion, which can mean either the body or its meeting place; ‘into’ suggests a place.",
+      "words": [
+        "G2250",
+        "G4863",
+        "G4244",
+        "G2992",
+        "G0749",
+        "G1122",
+        "G0520",
+        "G4892"
+      ],
+      "history": "The Mishnah says the great council sat in the Chamber of Hewn Stone within the temple precincts (m. Middot 5:4). The Babylonian Talmud records a tradition that forty years before the temple's destruction the Sanhedrin left that chamber and sat in a place called the shops, with the consequence that it no longer judged capital cases (b. Avodah Zarah 8b; b. Shabbat 15a). How much these later traditions tell us about the year of Jesus' death is uncertain, but they agree with John 18:31 that the case had to go to the Roman governor.",
+      "parallels": [
+        "Matthew 27:1",
+        "Mark 15:1"
+      ],
+      "refs": [
+        "Acts 22:5",
+        "Acts 4:5-6",
+        "John 18:31"
+      ]
+    },
+    {
+      "v": "67-68",
+      "context": "The council's first question is whether Jesus is the Messiah. Jesus answers that a direct answer would be pointless: they will not believe, and if he asks them questions, they will not answer. The exchange recalls the temple debate in which they refused to answer his question about John's baptism (20:3-8).",
+      "grammar": "Ei su ei ho christos, eipon hēmin, ‘if you are the Christ, tell us’, puts the emphatic pronoun su first. Jesus answers with two parallel conditions, each using ean with the aorist subjunctive and the strongest Greek negation, ou mē: ean humin eipō, ou mē pisteusēte, ‘if I tell you, you will certainly not believe’, and ean erōtēsō, ou mē apokrithēte, ‘if I ask, you will certainly not answer’. The balanced lines make the point that the hearing is not a real inquiry.",
+      "words": [
+        "G5547",
+        "G1437",
+        "G4100",
+        "G2065",
+        "G0611"
+      ],
+      "text": "Later manuscripts, followed by the King James Version, add at the end of verse 68 ‘me, nor let me go’. The earliest manuscripts, among them Sinaiticus and Vaticanus, lack the words, which were probably added to complete the thought.",
+      "refs": [
+        "Luke 20:3-8",
+        "John 10:24-25",
+        "Jeremiah 38:15",
+        "Luke 23:3"
+      ]
+    },
+    {
+      "v": "69",
+      "context": "Jesus then makes the claim on which the trial turns. From now on the Son of Man will be seated at the right hand of the power of God. The prisoner before the council says that he is about to be enthroned beside God.",
+      "grammar": "Apo tou nun, ‘from now on’, is a Lukan phrase (1:48, 5:10, 12:52, 22:18) that marks a turning point: the enthronement begins with the passion, not only at the end of history. Estai ... kathēmenos is a future periphrastic, ‘will be sitting’, describing a continuing state. Ek dexiōn tēs dunameōs tou theou, ‘at the right hand of the power of God’, adds tou theou to Mark's ‘the Power’, a Jewish way of referring to God without naming him; Luke makes it plain for Gentile readers. Luke also omits Mark's ‘coming with the clouds of heaven’, keeping the stress on exaltation now.",
+      "words": [
+        "G3568",
+        "G5207",
+        "G0444",
+        "G2521",
+        "G1188",
+        "G1411",
+        "G2316"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "The Hebrew reads “The LORD said to my Lord: Sit at My right hand until I make Your enemies a footstool for Your feet”, a royal psalm in which Israel's God invites the king to share his throne. The Septuagint (Psalm 109:1) reads kathou ek dexiōn mou, ‘sit at my right hand’, and Luke's ek dexiōn follows it. Jesus had already used the psalm to pose a question about the Messiah (20:41-44); now he applies it to himself. Peter will argue from it at Pentecost that God has made Jesus both Lord and Christ (Acts 2:34-36)."
+        },
+        {
+          "ref": "Daniel 7:13",
+          "note": "Daniel saw “One like the Son of Man coming with the clouds of heaven” who approached the Ancient of Days and received everlasting dominion (7:13-14). The Aramaic kevar enash, ‘one like a son of man’, is rendered in the Greek versions hōs huios anthrōpou. Mark 14:62 cites both the seating and the coming. Luke keeps the title Son of Man, and with it Daniel's picture of a human figure enthroned by God, but drops the clouds, focusing on the Son of Man's place beside God, which Stephen will see (Acts 7:56)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The verse announces Christ's exaltation at the very moment of his humiliation. Luke's ‘from now on’ means that the cross and the throne are not two separate stages far apart but one movement, which Acts proclaims when it says God exalted Jesus to his right hand (Acts 2:33, 5:31)."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:64",
+        "Mark 14:62"
+      ],
+      "refs": [
+        "Acts 2:33-36",
+        "Acts 7:55-56",
+        "Luke 20:41-44"
+      ]
+    },
+    {
+      "v": "70-71",
+      "context": "They all ask whether he is then the Son of God, and his answer, ‘You say that I am’, is taken as a confession. The council needs no more testimony; they have heard it from his own mouth. Luke records no verdict of blasphemy and no death sentence; the next scene takes Jesus straight to Pilate with political charges.",
+      "grammar": "Su oun ei ho huios tou theou, ‘are you then the Son of God’, draws the inference (oun, ‘then’) from Jesus' claim to share God's throne. His reply, humeis legete hoti egō eimi, is usually taken as ‘you say that I am’, a qualified yes: the words are theirs, but they are true. Some grammarians read hoti as causal, ‘you say it, because I am’. Either way it is not a denial, and the council treats it as affirmation. In verse 71 ti eti echomen marturias chreian, ‘why do we still have need of testimony’, and autoi gar ēkousamen apo tou stomatos autou, ‘for we ourselves have heard from his mouth’, turn his words into evidence.",
+      "words": [
+        "G5207",
+        "G2316",
+        "G3004G",
+        "G1473",
+        "G1510",
+        "G3141",
+        "G5532",
+        "G4750"
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Three titles meet in this hearing: Christ (verse 67), Son of Man (verse 69), and Son of God (verse 70). Luke had joined them at the start, when Gabriel promised a son who would receive David's throne and be called the Son of God (1:32-35). The council hears the claim clearly and rejects it."
+        }
+      ],
+      "parallels": [
+        "Matthew 26:63-66",
+        "Mark 14:61-64"
+      ],
+      "refs": [
+        "Luke 1:32-35",
+        "Luke 3:22",
+        "Luke 9:35",
+        "Luke 23:3"
+      ]
+    }
+  ]
+}

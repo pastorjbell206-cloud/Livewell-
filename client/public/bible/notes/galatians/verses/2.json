@@ -1,0 +1,238 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Paul continues the timeline of chapter 1, where he listed his few contacts with Jerusalem to prove his gospel did not come from the apostles there. ‘Then’ picks up the sequence of 1:18 and 1:21. This visit is the one that matters most, because it is the one where the Jerusalem leaders examined his message.",
+      "grammar": "Epeita, ‘then’, is the third in a series (1:18, 1:21, 2:1) that makes the narrative read like sworn testimony (compare the oath of 1:20). Dia dekatessarōn etōn, ‘after fourteen years’, uses dia with the genitive for an interval that has passed. Whether the fourteen years run from Paul's conversion or from the visit of 1:18 is not settled by the grammar, and it matters for chronology: counting inclusively in the ancient manner, the combined span could be as short as about fourteen or as long as about sixteen years after his conversion. Palin, ‘again’, and anebēn, ‘I went up’, the usual verb for going up to Jerusalem, which sits in the hills.",
+      "words": ["G1899", "G1180", "G2094", "G3825", "G0305", "G4838", "G5103"],
+      "history": "Barnabas, a Levite from Cyprus (Acts 4:36), had introduced Paul to the Jerusalem apostles (Acts 9:27) and brought him to Antioch (Acts 11:25-26). Titus, a Gentile convert, later became one of Paul's trusted delegates (2 Corinthians 8:23, Titus 1:4); Acts never mentions him. Which visit in Acts this is remains disputed. If it is the famine-relief visit of Acts 11:30, it would be Paul's second visit, as Galatians implies, and the letter could be written before the council of Acts 15. If it is the council visit of Acts 15, Paul has passed over the relief visit, perhaps because he met no apostles then. J. B. Lightfoot held the second view; William Ramsay and F. F. Bruce argued for the first.",
+      "refs": ["Galatians 1:18-21", "Acts 11:27-30", "Acts 15:1-4", "Acts 4:36", "2 Corinthians 8:23"]
+    },
+    {
+      "v": "2",
+      "context": "Paul explains why he went and what he did. He went because of a revelation, not a summons, and he set out his gospel before the leaders privately. His concern was not that his gospel might be wrong but that his work among the Gentiles could be undone if Jerusalem rejected it.",
+      "grammar": "Kata apokalupsin, ‘in accordance with a revelation’, recalls 1:12 and 1:16: even this trip was God's direction. Anethemēn, ‘I laid before’, is a middle form used of laying a matter before others for their consideration. Tois dokousin, ‘those of repute’, the reputed ones, is the first of four uses of dokeō in the chapter (verses 2, 6 twice, 9). The phrase need not be sarcastic, but its repetition keeps a distance: their standing is a matter of reputation. Mē pōs eis kenon trechō ē edramon, ‘lest I be running or had run in vain’, mixes a present subjunctive with an aorist indicative, an awkward construction grammarians explain as fear about present effort and past work together. Running is a favorite image of Paul's for his ministry (Philippians 2:16).",
+      "words": ["G0602", "G0394", "G2098", "G1484", "G1380", "G2756", "G5143"],
+      "history": "If this visit is the one in Acts 11:27-30, the revelation may be the prophecy of Agabus about a coming famine, which sent Barnabas and Saul to Jerusalem with relief. If it is the council of Acts 15, Acts says the church at Antioch appointed them to go (Acts 15:2); Paul, who is stressing his independence, would be naming the divine prompting behind the church's decision.",
+      "refs": ["Galatians 1:12", "Philippians 2:16", "1 Corinthians 9:26", "Acts 15:2", "Acts 11:28"]
+    },
+    {
+      "v": "3",
+      "context": "The outcome is given at once: Titus, though a Greek, was not compelled to be circumcised. This is the precedent Paul needs in Galatia, where Gentile believers were being pressed to accept circumcision (5:2, 6:12).",
+      "grammar": "All' oude Titos, ‘but not even Titus’: the emphasis falls on ‘not even’. Hellēn ōn, ‘being a Greek’, is a concessive participle. Ēnankasthē, ‘was compelled’, is the key verb; its choice has fueled debate over whether Titus was circumcised voluntarily, since Paul says he was not compelled rather than that he was not circumcised. Most interpreters think the plain sense is that he was not circumcised at all, since a voluntary circumcision would have ruined Paul's point. The verb anankazō returns in 2:14 and 6:12: the opponents compel, and Paul refuses compulsion.",
+      "words": ["G5103", "G1672", "G0315", "G4059"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "A Gentile was received as a brother without the sign of the covenant with Abraham. The acceptance of Titus is the practical form of the gospel Paul preaches: Gentiles belong to God's people through Christ, not by becoming Jews."
+        }
+      ],
+      "refs": ["Acts 16:3", "Galatians 5:2-6", "Galatians 6:12-13", "Acts 15:1", "1 Corinthians 7:18-19"]
+    },
+    {
+      "v": "4-5",
+      "context": "Paul explains why Titus became a test case. Men he calls false brothers had slipped in to spy on the freedom believers have in Christ, aiming to enslave them. Paul and his companions did not yield even for an hour, so that the truth of the gospel would remain for the Galatians.",
+      "grammar": "Verse 4 begins a sentence Paul never finishes; the grammar breaks off (an anacoluthon), a sign of his emotion. The vocabulary is of infiltration: pareisaktous, ‘smuggled in’, pareisēlthon, ‘they slipped in’, and kataskopēsai, ‘to spy out’, the word used in the Septuagint for the spies of Joshua 2. Eleutheria, ‘freedom’, and katadoulōsousin, ‘they will enslave’, set up the slave-and-free contrast that runs through chapters 4 and 5. In verse 5, oude pros hōran eixamen tē hupotagē, ‘not even for an hour did we yield in submission’, stresses the refusal. Hina hē alētheia tou euangeliou diameinē pros humas, ‘so that the truth of the gospel might remain with you’: the Galatians, not yet converted at the time if the visit was early, are named as those who benefited.",
+      "words": ["G3920", "G5569", "G3922", "G2684", "G1657", "G2615", "G1502", "G5292", "G0225", "G1265"],
+      "text": "A few Western witnesses, including the first hand of Codex Claromontanus and Latin writers such as Irenaeus (in Latin translation), omit ‘to whom not even’ at the start of verse 5, making Paul say that he did yield for a moment. Nearly all Greek manuscripts have the negative, and the context requires it. The difference is an early scribal slip, perhaps encouraged by Acts 16:3, where Paul circumcised Timothy.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Paul calls the demand that Gentile believers be circumcised and keep the law a form of slavery. The law was not slavery in itself, but to require it of those who belong to Christ is to put them back under a guardian they have outgrown (3:23-25, 4:1-7)."
+        }
+      ],
+      "refs": ["Galatians 5:1", "Galatians 4:8-9", "Acts 15:1-5", "2 Corinthians 11:26", "Joshua 2:1"]
+    },
+    {
+      "v": "6",
+      "context": "Paul turns to the leaders themselves. Their past status makes no difference to him, since God shows no partiality, and the point that matters is that they added nothing to his gospel.",
+      "grammar": "Another broken sentence: apo de tōn dokountōn einai ti, ‘but from those who seemed to be something’, is left hanging while Paul inserts two asides. Hopoioi pote ēsan, ‘what they once were’, uses the imperfect with pote, ‘formerly’, possibly pointing to their privilege of having been with Jesus in his earthly ministry. Prosōpon ho theos anthrōpou ou lambanei, literally ‘God does not receive the face of a man’, reproduces a Hebrew idiom (nasa panim, ‘to lift the face’) for favoritism, as in Deuteronomy 10:17. Ouden prosanethento, ‘they added nothing’, uses the same verb as 1:16, where Paul did not ‘consult’ anyone: the leaders put nothing to him, no extra requirement.",
+      "words": ["G1380", "G3697", "G4218", "G4383", "G2983", "G4323"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's impartiality is basic to Paul's argument. The God who does not judge by status or ancestry (Deuteronomy 10:17, Romans 2:11) is the God who justifies Jew and Gentile alike through faith."
+        }
+      ],
+      "refs": ["Deuteronomy 10:17", "Romans 2:11", "Acts 10:34", "1 Samuel 16:7", "Galatians 1:16"]
+    },
+    {
+      "v": "7-8",
+      "context": "Instead of adding to Paul's gospel, the leaders recognized that God had given him the mission to the Gentiles, as he had given Peter the mission to the Jews. The same God was at work in both.",
+      "grammar": "Pepisteumai, ‘I have been entrusted’, is perfect passive: a trust given and still in force. To euangelion tēs akrobustias, ‘the gospel of the uncircumcision’, and tēs peritomēs, ‘of the circumcision’, name the audiences, not two different gospels, as verse 8 makes clear by making God the single worker in both. Ho energēsas, ‘the one who worked’, is the verb from which ‘energy’ comes. In verses 7 and 8 Paul uses the Greek name Petros; elsewhere in Galatians he uses the Aramaic Kēphas (1:18, 2:9, 11, 14). The unusual switch has led some scholars to suggest that Paul here echoes the wording of the agreement itself.",
+      "words": ["G4100", "G2098", "G0203", "G4074G", "G4061", "G1754", "G0651"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The one gospel has more than one field. God assigns different workers to different peoples, and the recognition of one another's callings is part of the church's unity."
+        }
+      ],
+      "refs": ["Romans 11:13", "Romans 15:15-16", "Acts 9:15", "1 Corinthians 12:4-6", "Ephesians 3:7-8"]
+    },
+    {
+      "v": "9",
+      "context": "The recognition becomes public. James, Cephas, and John, the reputed pillars, gave Paul and Barnabas the right hand of fellowship and agreed on a division of labor: Paul and Barnabas to the Gentiles, the pillars to the circumcised.",
+      "grammar": "Gnontes tēn charin tēn dotheisan moi, ‘knowing the grace given to me’: Paul regularly calls his apostleship a ‘grace’ (Romans 1:5, 15:15). Hoi dokountes stuloi einai, ‘those reputed to be pillars’, uses dokeō a last time. Dexias edōkan koinōnias, ‘they gave right hands of fellowship’: dexias, ‘right hands’, is a feminine plural adjective with ‘hands’ understood, and koinōnia, ‘partnership, sharing’, was used of business partnerships. The hina clause states the agreement's terms without a verb: ‘we to the Gentiles, they to the circumcision’.",
+      "words": ["G1097", "G5485", "G1325", "G1380", "G4769", "G1188", "G2842"],
+      "history": "James the Lord's brother is named first, reflecting his leadership of the Jerusalem church by this time (Acts 15:13, 21:18). This is Paul's only mention of John, the son of Zebedee. ‘Pillars’ may carry temple imagery: the two bronze pillars of Solomon's temple stood at its entrance (1 Kings 7:21), and the early church thought of itself as God's new temple (1 Corinthians 3:16, Revelation 3:12). About AD 96, 1 Clement 5 calls the persecuted apostles, Peter and Paul among them, ‘pillars’. Giving the right hand was a formal pledge of agreement in the Greek and Jewish world (compare 1 Maccabees 6:58, 2 Maccabees 12:11-12).",
+      "refs": ["Acts 15:13-21", "Acts 21:18", "1 Kings 7:21", "Revelation 3:12", "Ephesians 2:20"]
+    },
+    {
+      "v": "10",
+      "context": "The one request was that they remember the poor, which Paul says he was already eager to do. The request connected the Gentile mission to the Jerusalem church in practical care, and Paul's collection for Jerusalem occupied years of his later work.",
+      "grammar": "Monon, ‘only’, placed first: this was the only condition. Hina mnēmoneuōmen, ‘that we should remember’, is a present subjunctive, keep on remembering: a continuing obligation, not a single gift. Ho kai espoudasa auto touto poiēsai, ‘which very thing I was also eager to do’: the aorist espoudasa may mean ‘I had been eager’ (and had done it, as in the relief visit of Acts 11:30) or ‘I made every effort’ afterward, looking forward to the collection. The redundant auto touto, ‘this very thing’, is emphatic.",
+      "words": ["G3441", "G4434", "G3421", "G4704", "G4160G"],
+      "history": "Paul's collection for the poor among the saints in Jerusalem appears in 1 Corinthians 16:1-4, 2 Corinthians 8-9, and Romans 15:25-28, and Acts 24:17 mentions him bringing alms to his nation. ‘The poor’ may also have been a self-designation of the Jerusalem believers: the Qumran community called itself ‘the poor’ (1QpHab 12:3, 12:6, 12:10), and a later Jewish-Christian group was called the Ebionites, from the Hebrew evyonim, ‘poor ones’.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The one practical term of the Jerusalem agreement was care for the poor. Unity between Jewish and Gentile churches was to be expressed in money and material help, not only in doctrine, and Paul treats that care as central, not optional."
+        }
+      ],
+      "refs": ["Romans 15:25-27", "1 Corinthians 16:1-3", "2 Corinthians 8:9", "Acts 11:29-30", "Acts 24:17"]
+    },
+    {
+      "v": "11",
+      "context": "The scene shifts to Antioch and turns sharply. The same Cephas who shook hands in Jerusalem later came to Antioch, and Paul opposed him to his face because he stood condemned.",
+      "grammar": "Hote de ēlthen, ‘but when he came’, marks the contrast with the unity just described. Kata prosōpon, ‘to the face’, reuses prosōpon from verse 6: God does not regard faces, and Paul confronts Peter face to face. Antestēn, ‘I opposed’, is a strong verb for resisting. Kategnōsmenos ēn, ‘he was condemned’, is a perfect passive participle with the imperfect of ‘to be’, describing a standing state. It probably means ‘self-condemned’: his own conduct convicted him, since he acted against what he believed.",
+      "words": ["G2786", "G0490G", "G4383", "G0436", "G2607"],
+      "history": "Early Christians found the scene painful. Clement of Alexandria, according to Eusebius (Church History 1.12.2), suggested that the Cephas opposed was a different man, one of the seventy disciples. Origen and then Jerome proposed that the confrontation was staged by the two apostles for the church's instruction. Augustine objected in letters to Jerome (written about AD 394 to 405, now Augustine's Letters 28, 40, and 82) that this would make Paul's account a pretense and undermine the truthfulness of Scripture. Jerome eventually conceded, and later readers, including Luther and Calvin, took the rebuke as real.",
+      "refs": ["Acts 11:19-26", "Acts 15:30-35", "Matthew 16:18", "Acts 10:28"]
+    },
+    {
+      "v": "12",
+      "context": "Paul explains what Peter did. Before certain men came from James, Peter regularly ate with Gentile believers; after they came, he began to pull back and keep himself apart, out of fear of the circumcision party.",
+      "grammar": "The verbs trace a change of behavior. Sunēsthien, ‘he was eating with’, is imperfect: a regular practice. Hupestellen and aphōrizen, ‘he was drawing back and separating himself’, are also imperfect, often read as inceptive and gradual: he began to withdraw, step by step. Hupostellō was used of drawing back or retreating, and aphorizō, ‘to separate’, is the verb Paul used in 1:15 of God setting him apart; some interpreters suggest a play on the Hebrew root behind ‘Pharisee’ (parash, ‘to separate’), though Paul does not make it explicit. Phoboumenos, ‘fearing’, gives the motive.",
+      "words": ["G2385I", "G1484", "G4906", "G5288", "G0873", "G5399", "G4061"],
+      "history": "Many Jews in the period avoided eating with Gentiles because Gentile food might be unclean, not tithed, or connected with idols. Daniel refused the king's food (Daniel 1:8), Judith brought her own food into the Assyrian camp (Judith 12:1-2), and Jubilees 22:16 has Abraham tell Jacob to separate himself from the nations and not eat with them. Practice varied, and some Jews did share meals with Gentiles under conditions. Who ‘the circumcision’ were is debated: Jewish believers who insisted on circumcision for Gentiles, or, as Robert Jewett argued (New Testament Studies, 1971), non-Christian Jewish zealots in Judea who pressed the Jerusalem church to avoid association with the uncircumcised.",
+      "text": "Some of the oldest manuscripts, including P46, Sinaiticus, and Vaticanus, read ‘when he came’ (ēlthen, singular) instead of ‘when they came’ (ēlthon). The critical editions print the plural, judging the singular a scribal echo of ‘when Cephas came’ in verse 11; a few scholars argue that the singular is original and refers to James himself or his messenger.",
+      "refs": ["Acts 10:28", "Acts 11:2-3", "Acts 15:1", "Acts 21:20-21", "Daniel 1:8"]
+    },
+    {
+      "v": "13",
+      "context": "Peter's example spread. The rest of the Jewish believers joined him, and even Barnabas, Paul's partner in the Gentile mission, was carried along. Paul names it hypocrisy: acting against what they knew to be true.",
+      "grammar": "Sunupekrithēsan, ‘they joined in playing the hypocrite’, is compound: sun, ‘with’, plus hupokrinomai, ‘to act a part’. The hupokritēs in Greek was a stage actor, one who wore a mask. Paul's charge is not that Peter believed the wrong thing but that he acted a part he did not believe. Hōste kai Barnabas sunapēchthē, ‘so that even Barnabas was carried away’, uses a passive with sun: he was swept along with them. The kai, ‘even’, carries the sting.",
+      "words": ["G4942", "G3062", "G2453", "G0921G", "G4879", "G5272"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "Separation at the table spread through the community. A leader's fear shaped others' conduct, and the result was two classes of believers in one church. Paul treats the fracture of fellowship as a gospel issue, not a question of manners."
+        }
+      ],
+      "refs": ["Acts 15:37-39", "Matthew 23:28", "1 Corinthians 8:9-13", "Romans 14:15"]
+    },
+    {
+      "v": "14",
+      "context": "Paul saw that they were not walking straight toward the truth of the gospel and rebuked Peter publicly. His question exposes the inconsistency: Peter, a Jew, had been living like a Gentile, yet his withdrawal now pressured Gentiles to live like Jews.",
+      "grammar": "Ouk orthopodousin, ‘they were not walking straight’, is a rare verb, from orthos, ‘straight’, and pous, ‘foot’: walking upright or on a straight path. Pros tēn alētheian could mean ‘in line with’ or ‘toward’ the truth. The condition ei su Ioudaios huparchōn ethnikōs zēs, ‘if you, being a Jew, live like a Gentile’, uses the present tense, suggesting Peter's normal practice, not only his past. Ioudaizein, ‘to Judaize’, meant to adopt Jewish customs; in the Septuagint of Esther 8:17 many Gentiles were circumcised and ‘judaized’. Anankazeis, ‘you compel’, is present: Peter's withdrawal was functioning as pressure, whether he intended it or not.",
+      "words": ["G3716", "G0225", "G2098", "G2453", "G5225", "G1483", "G2452", "G0315", "G2450"],
+      "text": "Where Paul's quoted words to Peter end is not marked in Greek. Some translations close the quotation at the end of verse 14; others, like the NIV, continue it to verse 21. Many scholars think Paul moves from what he said at Antioch to what he now says to the Galatians without a clean break.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "‘The truth of the gospel’ (verses 5 and 14) is not only a doctrine to be believed but a way to walk. For Paul a church that divides at the table by ethnicity denies the gospel it confesses, whatever its creed."
+        }
+      ],
+      "refs": ["Galatians 2:5", "Acts 10:13-15", "Acts 10:28", "Esther 8:17", "1 Corinthians 9:20-21"]
+    },
+    {
+      "v": "15-16",
+      "context": "Paul states the thesis of the letter. Jewish believers, who were not Gentile sinners, nevertheless know that no one is justified by works of the law but through faith in Christ; that is why they too believed in Christ. The threefold repetition of ‘works of the law’ makes the verse the center of the chapter and of the debate over Paul's theology.",
+      "grammar": "Eidotes, ‘knowing’, a perfect participle, appeals to shared knowledge. Dikaioutai, ‘is justified’, is present passive, a general truth; dikaiōthōmen, aorist subjunctive, the purpose of their believing; dikaiōthēsetai, future, the verdict at the judgment. The phrase ean mē, normally ‘except’, has been read by James Dunn as possibly ‘except through faith’, a reading that could let works and faith coexist; most take it as simply adversative, ‘but only through faith’, as the rest of the verse shows. The most debated phrase is dia pisteōs Iēsou Christou, literally ‘through faith of Jesus Christ’. Read as an objective genitive, it means faith directed to Christ (the BSB, most translations, and the Reformation tradition, defended by James Dunn); read as a subjective genitive, it means the faithfulness of Christ himself, his obedience unto death (argued by Richard Hays in The Faith of Jesus Christ, 1983, and by many since). The verse's middle clause, ‘we have believed in Christ Jesus’, uses the verb with eis and is plainly the believer's faith, which supporters of the objective reading take as decisive and supporters of the subjective reading as the human response to Christ's faithfulness. Erga nomou, ‘works of the law’, is also contested (see history).",
+      "words": ["G5449", "G0268", "G6063", "G1344", "G2041", "G3551", "G1437", "G4102G", "G4100", "G4561"],
+      "history": "The phrase ‘works of the law’ has a Hebrew counterpart in the Dead Sea Scrolls. The document known as 4QMMT (Miqsat Ma'ase ha-Torah, ‘some of the works of the law’), probably from the second century BC, lists legal rulings on purity, sacrifice, and the calendar that separated its authors from other Jews, and it closes by telling its reader that doing them will be reckoned to him as righteousness, echoing Genesis 15:6. Martin Abegg and others have argued that the parallel shows ‘works of the law’ meant the deeds the law requires, as understood by a particular group. James Dunn, who named the ‘New Perspective on Paul’ in a 1982 lecture, argued that in Galatians the phrase refers above all to the practices that marked Jews off from Gentiles (circumcision, food laws, sabbath), building on E. P. Sanders's account of Judaism as a religion of grace in Paul and Palestinian Judaism (1977). Defenders of the Reformation reading, such as Stephen Westerholm, reply that the phrase covers everything the law commands and that Paul's point reaches beyond ethnic markers to human inability to be righteous by any deeds.",
+      "ot": [
+        {
+          "ref": "Psalm 143:2",
+          "note": "The last clause, ‘by works of the law no one will be justified’, echoes Psalm 143:2 (142:2 in the Septuagint), where the psalmist asks God not to enter into judgment with him, for no one living is righteous before him. The Septuagint reads ou dikaiōthēsetai enōpion sou pas zōn, ‘no one living will be justified before you’. Paul keeps the verb and future tense, replaces ‘every living one’ with pasa sarx, ‘all flesh’, a Hebraism for every human being, and adds ‘by works of the law’. He makes the same allusion in Romans 3:20. The psalm is a plea for mercy from one who knows he cannot stand in God's court on his own merit; Paul draws out what it implies about the law."
+        }
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The verse defines justification negatively and positively: not by works of the law, but through faith in (or the faithfulness of) Jesus Christ. Even Jews, who had the law, came to be justified the same way as Gentiles, which removes the ground for ranking believers. Luther's Commentary on Galatians (1535) made this verse the center of Reformation teaching; Catholic theology, especially since the Council of Trent (1547), agrees that justification is by grace and not earned, while differing on how inner renewal belongs to it."
+        },
+        {
+          "id": "faith",
+          "note": "Whatever the phrase pistis Christou means, the verse says plainly that Paul and Peter ‘believed in Christ Jesus’. Faith is trust directed to a person, and it is the way even the most privileged enter right standing with God."
+        }
+      ],
+      "refs": ["Romans 3:20-28", "Psalm 143:2", "Philippians 3:9", "Acts 15:10-11", "Ephesians 2:8-9"]
+    },
+    {
+      "v": "17",
+      "context": "Paul answers an objection. If Jewish believers, by seeking justification in Christ rather than in the law, are shown to be ‘sinners’ like Gentiles (in the sense of verse 15), does that make Christ a promoter of sin? Paul rejects the idea outright.",
+      "grammar": "Zētountes dikaiōthēnai en Christō, ‘seeking to be justified in Christ’: en Christō, ‘in Christ’, may mean ‘by means of Christ’ or ‘in union with Christ’. Heurethēmen kai autoi hamartōloi, ‘we ourselves were found to be sinners’, takes up the word ‘sinners’ from verse 15, now turned against the Jewish believers themselves: in leaving the law as a way of righteousness, they stand where Gentiles stood. Ara, ‘then’, begins a question expecting a negative answer. Mē genoito, ‘may it never be’, uses the optative, the rare mood of wish; Paul uses the phrase mostly in Romans and Galatians to reject a false inference.",
+      "words": ["G2212", "G1344", "G2147", "G0268", "G1249", "G1096"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Being justified in Christ means admitting that one stands before God on the same footing as the ‘sinners’ of the Gentiles. That is not Christ's fault; it is the truth about everyone, and justification by faith exposes it."
+        }
+      ],
+      "refs": ["Romans 3:9", "Romans 3:23", "Romans 6:1-2", "Romans 6:15"]
+    },
+    {
+      "v": "18",
+      "context": "The real transgression would be to rebuild what had been torn down. If Peter, having abandoned the law as the boundary of God's people, now rebuilds it, he shows that he was a transgressor for leaving it, or else he is a transgressor now for going back.",
+      "grammar": "Paul switches to the first person singular, ‘I’, softening the charge against Peter by making himself the example. Katelusa, ‘I tore down’, and oikodomō, ‘I build’, are building metaphors; kataluō was used for demolishing a building or dissolving a law (Matthew 5:17). Parabatēn emauton sunistanō, ‘I show myself to be a transgressor’, uses parabatēs, one who steps over a boundary. The point is debated: either rebuilding the law proves the first demolition was sin, or rebuilding it is the transgression, since it denies the gospel.",
+      "words": ["G2647", "G3825", "G3618", "G3848", "G4921"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Returning to the law as the condition of belonging undoes the gospel. Paul does not say the law was bad to have, but that to reinstate it as the dividing wall (compare Ephesians 2:14-15) contradicts what faith in Christ has already done."
+        }
+      ],
+      "refs": ["Ephesians 2:14-15", "Matthew 5:17", "Romans 4:15", "Galatians 5:1-4"]
+    },
+    {
+      "v": "19",
+      "context": "The ‘for’ explains why Paul cannot rebuild: through the law he died to the law, so that he might live to God. His relationship to the law has been ended by death, and a new life toward God has begun.",
+      "grammar": "Egō gar dia nomou nomō apethanon, ‘for I through the law died to the law’, places ‘I’ first for emphasis and plays on the two cases of nomos: through the law (genitive, the means) and to the law (dative, the relationship). How the law brought about his death to it is explained variously: the law condemned him and so killed him (compare Romans 7:9-11), or the law's curse fell on Christ, in whom Paul died (3:13). Hina theō zēsō, ‘in order that I might live to God’, gives the purpose: death to the law serves life toward God, not lawlessness. The first words of the English verse 20, Christō sunestaurōmai, ‘I have been crucified with Christ’, belong to verse 19 in the Greek editions.",
+      "words": ["G3551", "G0599", "G2316", "G2198", "G4957"],
+      "text": "Verse divisions differ here. The Greek critical editions end verse 19 with ‘I have been crucified with Christ’; most English Bibles, including the BSB, begin verse 20 with it. The words are the same; only the numbering differs.",
+      "theology": [
+        {
+          "id": "union",
+          "note": "The believer's death to the law happens in union with Christ's death. Paul speaks of it as his own experience: what happened to Christ on the cross happened to him, so that his relationship to the law as a way of righteousness is over."
+        }
+      ],
+      "refs": ["Romans 7:4-6", "Romans 6:10-11", "Romans 7:9-11", "2 Corinthians 5:14-15"]
+    },
+    {
+      "v": "20",
+      "context": "The most personal sentence in the letter. Paul has been crucified with Christ, and the life he now lives is Christ living in him; he lives it by faith in the Son of God, who loved him and gave himself for him.",
+      "grammar": "Sunestaurōmai, ‘I have been crucified with’, is perfect passive: a past event with a continuing result, he remains one who has died with Christ. Zō de ouketi egō, ‘and I no longer live’, puts egō, ‘I’, last for weight: it is no longer the old ‘I’ that lives. Zē de en emoi Christos, ‘but Christ lives in me’. En sarki, ‘in flesh’, here means bodily life, not sinful nature. En pistei zō tē tou huiou tou theou, ‘I live by faith, that of the Son of God’, has the same ambiguity as verse 16: faith in the Son, or the Son's own faithfulness; the following description of his self-giving is used by supporters of both readings. Tou agapēsantos me kai paradontos heauton, ‘who loved me and gave himself’, are aorist participles pointing to the cross; paradidōmi, ‘to hand over’, is the Septuagint's verb for the Servant who was handed over for sins (Isaiah 53:12).",
+      "words": ["G2198", "G4561", "G4102G", "G5207", "G0025", "G3860", "G1438"],
+      "text": "Some early manuscripts, including P46 and Vaticanus, read ‘by faith in God and Christ’ instead of ‘by faith in the Son of God’. Most editions print ‘the Son of God’, since Paul nowhere else speaks of God and Christ as objects of faith in this way and a scribe could have misread an abbreviation.",
+      "theology": [
+        {
+          "id": "union",
+          "note": "Union with Christ is here both death and life: the believer has died with him and Christ lives in the believer. The Christian life is not a self-improvement project but the life of Christ lived out in a human body by faith."
+        },
+        {
+          "id": "atonement",
+          "note": "Paul speaks of the cross in the first person singular: the Son of God loved ‘me’ and gave himself for ‘me’. The death that was for our sins (1:4) is also a personal act of love for each believer."
+        }
+      ],
+      "refs": ["Romans 6:6", "Colossians 3:3-4", "Galatians 1:4", "Ephesians 5:2", "John 15:13"]
+    },
+    {
+      "v": "21",
+      "context": "Paul concludes with a denial and a stark conditional. He does not nullify the grace of God, as returning to the law would do; if righteousness came through the law, Christ died for nothing. The next chapter develops the argument from Scripture.",
+      "grammar": "Ouk athetō, ‘I do not set aside’, uses a verb for annulling or rejecting something valid, a legal term (compare 3:15, where no one annuls a covenant). The implied contrast is with those who, by requiring the law, do set aside God's grace. Ei gar dia nomou dikaiosunē, ‘for if righteousness is through the law’, is a verbless first-class condition, stated for argument's sake. Ara Christos dōrean apethanen, ‘then Christ died for nothing’: dōrean usually means ‘as a gift, freely’ (Romans 3:24), but here ‘for nothing, without purpose’, as in the Septuagint's ‘hated without a cause’ (Psalm 69:4).",
+      "words": ["G0114", "G5485", "G3551", "G1343", "G1432", "G0599"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The necessity of the cross proves the insufficiency of the law. If law-keeping could make a person right with God, Christ's death would be pointless; its reality is the measure of what the law could not do."
+        },
+        {
+          "id": "salvation",
+          "note": "Grace and law as a way of righteousness are alternatives. To add the law as a condition of acceptance is not to supplement grace but to set it aside."
+        }
+      ],
+      "refs": ["Galatians 3:21", "Galatians 5:4", "Romans 3:24", "Romans 11:6", "Hebrews 10:26"]
+    }
+  ]
+}

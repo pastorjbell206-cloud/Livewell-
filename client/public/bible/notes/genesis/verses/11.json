@@ -1,0 +1,412 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The story steps back behind chapter 10, which already described peoples with their own languages, to explain how that division came about. The opening sets the condition the story will reverse: one language for all the earth.",
+      "grammar": "The Hebrew has two phrases: safah echat, literally ‘one lip’, and devarim achadim, literally ‘ones of words’. Safah (‘lip’) is a common Hebrew way of saying ‘language’ (Isaiah 19:18). The second phrase uses the rare plural of the number one; it most likely means ‘the same words’, a shared vocabulary, though some take it as ‘few words’. ‘All the earth’ (kol haarets) means its people, and the same phrase returns at the end of the story in verse 9, framing it.",
+      "words": [
+        "H8193K",
+        "H0259",
+        "H1697G"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Humanity begins as one people with one speech. The unity itself is not condemned; the story will show that the problem lies in what united humanity sets out to do with it."
+        }
+      ],
+      "refs": [
+        "Genesis 10:5",
+        "Isaiah 19:18",
+        "Zephaniah 3:9"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The people move and settle in a plain in Shinar, the land of Nimrod's first kingdom (10:10). Instead of spreading out to fill the earth, as God had commanded (9:1), they settle down in one place.",
+      "grammar": "Miqqedem can mean ‘from the east’ or ‘eastward’, and translations differ (the King James Version has ‘from the east’; the BSB reads eastward). In Genesis, movement to the east often marks movement away from God's presence: Adam and Eve are driven out on the east of Eden (3:24), Cain settles east of Eden (4:16), and Lot will choose the plain and move east (13:11, with the same word miqqedem). Biqah is a broad valley or plain, the flat land of southern Mesopotamia. Vayyeshvu (‘settled’) signals that they mean to stay.",
+      "words": [
+        "H5265",
+        "H6924G",
+        "H1237K",
+        "H3427"
+      ],
+      "refs": [
+        "Genesis 3:24",
+        "Genesis 4:16",
+        "Genesis 13:11",
+        "Genesis 10:10"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The first speech of the builders. They decide to make and fire bricks, and the narrator adds for his readers that they used brick instead of stone and bitumen instead of mortar. It is technology, the ability to build big, that makes the plan possible.",
+      "grammar": "Havah, “Come”, is literally an imperative of the verb ‘give’, used as an interjection to rouse others to action. The sentence is full of sound play: nilbenah levenim (‘let us brick bricks’) and nisrefah lisrefah (‘let us burn to burning’) use verbs with their own nouns, and the narrator's comment pairs levenah with leaven (‘brick’ for ‘stone’) and chemar with chomer (‘bitumen’ for ‘mortar’). The builders' plan sounds as solid as it looks.",
+      "words": [
+        "H3051",
+        "H3835B",
+        "H3843",
+        "H2564",
+        "H2563A"
+      ],
+      "history": "The word for bitumen, chemar, appears again for the tar pits of the Valley of Siddim (14:10) and for the tar Moses' mother used to waterproof his basket (Exodus 2:3). Brick making returns in Exodus as the labor forced on Israel in Egypt (Exodus 1:14; 5:7). Readers who knew that story would hear the building of Babel as the work of empire.",
+      "refs": [
+        "Genesis 14:10",
+        "Exodus 1:14",
+        "Exodus 2:3",
+        "Exodus 5:7"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The second speech states the plan and its motives: a city and a tower with its top in the heavens, a name for themselves, and security against being scattered. Each motive runs against something God has said or will say: the command to fill the earth (9:1) and the promise to make Abram's name great (12:2).",
+      "grammar": "Verosho vashamayim, “that reaches to the heavens”, is literally ‘and its head in the heavens’. The same kind of expression describes the walled cities of Canaan as fortified up to heaven (Deuteronomy 1:28), so it is partly the language of great height; but here it also expresses the builders' reach toward the divine realm. Naaseh lanu shem, ‘let us make for ourselves a name’, repeats lanu (‘for ourselves’), and pen, ‘lest’, introduces what they fear: nafuts, ‘we be scattered’. The Hebrew verb puts will return twice in verses 8 and 9.",
+      "words": [
+        "H4026M",
+        "H7218I",
+        "H8034",
+        "H6435",
+        "H6327A"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The builders' sin is not building or cooperating but seeking a name and a security of their own making, in defiance of God's command to spread out. The same impulse, to secure oneself apart from God, runs from Eden to Babel, and Babylon remains its symbol through the end of the Bible (Revelation 18:2)."
+        }
+      ],
+      "refs": [
+        "Genesis 9:1",
+        "Genesis 12:2",
+        "Deuteronomy 1:28",
+        "Isaiah 14:13-14",
+        "Revelation 18:2"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The center of the story. The builders aimed at the heavens; the LORD has to come down to see what they have built. The irony is deliberate and quiet.",
+      "grammar": "Vayyered, “came down”, is an ordinary narrative verb of motion. It is a way of speaking about God in human terms (an anthropomorphism) that the Bible uses without embarrassment; the same wording describes the LORD going down to see Sodom (18:21). The builders are called bene haadam, ‘the sons of man’, a phrase that stresses their earthbound humanity against their heavenly ambition. Banu (‘were building’) is a Hebrew perfect that here reports the work in progress.",
+      "words": [
+        "H3381",
+        "H7200G",
+        "H0120G",
+        "H1129"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God's descent shows the true scale of the project. However high human work reaches, God stands above it and sees it for what it is. Psalm 2 draws the same picture of the nations plotting while the One enthroned in heaven looks on."
+        }
+      ],
+      "refs": [
+        "Genesis 18:21",
+        "Exodus 3:8",
+        "Psalm 2:1-4",
+        "Psalm 33:13-14"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The LORD's assessment. United in people and language, the builders have only begun; if nothing stops them, nothing they plan will be out of reach. The verse gives the reason for the action of verse 7.",
+      "grammar": "Hachillam, “they have begun”, is the Hiphil infinitive of chalal with a suffix, the verb used of Nimrod's beginning in 10:8. The key clause is lo yibbatser mehem kol asher yazmu, ‘nothing that they plan will be withheld from them’. The same Niphal verb (batsar) and a noun from the same root as yazmu (zamam, ‘to plan’) appear in Job 42:2, where Job confesses that no plan of God's can be thwarted. What Job says of God, God here says the builders are reaching for.",
+      "words": [
+        "H2490C",
+        "H1219",
+        "H2161",
+        "H5971A"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's judgment here is preventive. He acts not because the tower is a threat to him, but because a united humanity set on its own name would pile up evil, as it did before the flood. The restraint of sin is itself a mercy."
+        }
+      ],
+      "refs": [
+        "Job 42:2",
+        "Genesis 10:8",
+        "Genesis 3:22",
+        "Genesis 6:5"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "God's answer mirrors the builders' words. They said “Come, let us make bricks”; he says “Come, let Us go down”. Their plan depended on understanding one another, and that is what God removes.",
+      "grammar": "Havah nerdah, ‘Come, let us go down’, repeats the builders' havah (verses 3 and 4) with a divine first person plural, as in 1:26 and 3:22. Navlah, ‘let us confuse’, is from balal. Many commentators have noticed that its consonants (n-b-l) reverse those of the builders' nilbenah (n-l-b-n), ‘let us make bricks’: the plan is undone in its own sounds. Lo yishmeu, “will not understand”, is literally ‘will not hear’; in Hebrew, to hear often means to understand or to obey.",
+      "words": [
+        "H3051",
+        "H3381",
+        "H1101A",
+        "H8085J"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The builders' strength lay in their common speech, and God reaches it with a word. The verse shows that human capacities, language included, are held within God's rule and can be limited by him."
+        }
+      ],
+      "refs": [
+        "Genesis 1:26",
+        "Genesis 3:22",
+        "Isaiah 6:8",
+        "Acts 2:6"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The thing the builders feared happens. The LORD scatters them over all the earth, and the city is left unfinished.",
+      "grammar": "Vayyafets, “scattered”, is the Hiphil (causative) of puts, the same verb as the builders' nafuts in verse 4: what they built to avoid, God brings about. The verb vayyachdelu, “they stopped”, is from chadal, ‘to cease’ or ‘to leave off’. Notably the text says the city stopped, not the tower; the city stands for the whole project.",
+      "words": [
+        "H6327A",
+        "H2308",
+        "H5892B"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Judgment serves God's first purpose. The command to fill the earth (1:28; 9:1) is fulfilled by the scattering the builders tried to prevent. Deuteronomy 32:8 and Acts 17:26 describe God apportioning the peoples their lands; here the process begins."
+        }
+      ],
+      "refs": [
+        "Genesis 1:28",
+        "Genesis 9:1",
+        "Deuteronomy 32:8",
+        "Luke 1:51"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "The story ends by naming the place and explaining the name. Babel, which its own people understood as a proud name, is tied in Hebrew to balal, ‘confuse’. The verse closes by repeating the scattering and the phrase “all the earth”, which frames the story with verse 1.",
+      "grammar": "Qara shemah, ‘one called its name’, is an impersonal construction: the name is simply what people called it. The explanation depends on sound, not on scientific etymology. ‘The language of the whole earth’ in this verse answers ‘the whole world had one language’ in verse 1, so that the story's first and last lines are about the same safah (lip, language), first united and then confused.",
+      "words": [
+        "H0894",
+        "H1101A",
+        "H8193K",
+        "H7121H"
+      ],
+      "history": "Babylon's great temple tower, Etemenanki, stood beside the temple of Marduk and was rebuilt in the sixth century BC under Nabopolassar and Nebuchadnezzar. The Greek historian Herodotus, writing in the fifth century BC, described a tower in Babylon of eight stages with a temple on top. By the time Israel's exiles were taken to Babylon in 597 and 586 BC, the city's temple tower would have been the most imposing building they had ever seen.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The name of the world's proudest city becomes a monument to God's judgment. The prophets later speak of Babylon's fall in similar terms (Isaiah 13:19; Jeremiah 51:53), and Revelation uses Babylon as the name for every power that sets itself against God."
+        }
+      ],
+      "refs": [
+        "Isaiah 13:19",
+        "Jeremiah 51:53",
+        "Revelation 18:2",
+        "Acts 2:5-6"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "A new heading, the account of Shem, opens the genealogy that leads from the flood to Abram. After the scattering of all peoples, the story narrows to one line.",
+      "grammar": "The formula copies chapter 5 almost exactly: age at the birth of the named son, years lived afterward, and other sons and daughters. The verb for fathering, vayyoled, is a Hiphil of yalad, the causative stem used for the father's role. But the chapter 5 formula also gave the total years and ended with ‘and he died’; this list omits both. The effect is to move the line along quickly toward Abram.",
+      "words": [
+        "H8435",
+        "H3205",
+        "H8035",
+        "H0775"
+      ],
+      "history": "The date “two years after the flood” creates a small arithmetic puzzle. Noah was 500 when his sons were born (5:32) and 600 at the flood (7:6), so Shem would be 100 at the flood, not two years after it. Some take 5:32 as a round number marking when Noah began to have sons; others suggest Shem was not the eldest. The text does not resolve it.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The name Shem means ‘name’. After the builders fail to make a name for themselves, the narrative turns to the line of Shem, and chapter 12 will show God giving a great name to one of Shem's descendants."
+        }
+      ],
+      "refs": [
+        "Genesis 5:3-5",
+        "Genesis 5:32",
+        "Genesis 7:6",
+        "1 Chronicles 1:24-27",
+        "Luke 3:34-36"
+      ]
+    },
+    {
+      "v": "12-15",
+      "context": "Two generations, Arphaxad and Shelah. The ages at which sons are born drop sharply from chapter 5, from over a hundred years to around thirty.",
+      "grammar": "Each paragraph uses the same frame: ‘X lived N years and fathered Y. And X lived after he fathered Y N years and fathered sons and daughters.’ The phrase acharei holido, “after he had become the father”, uses the Hiphil infinitive construct of yalad with a suffix, ‘after his fathering’. The repetition gives the genealogy its steady beat.",
+      "words": [
+        "H2421",
+        "H3205",
+        "H7974",
+        "H5677G"
+      ],
+      "text": "The numbers in these genealogies differ in the three main ancient witnesses. The Greek Septuagint generally adds a hundred years to the father's age at the birth of the named son, and it includes Cainan between Arphaxad and Shelah (followed by Luke 3:36). The Samaritan Pentateuch also differs. The standard Hebrew text, followed by English Bibles, gives the shortest totals.",
+      "refs": [
+        "Luke 3:35-36",
+        "Genesis 10:24",
+        "1 Chronicles 1:18"
+      ]
+    },
+    {
+      "v": "16-19",
+      "context": "Eber and Peleg. Eber is the ancestor singled out in 10:21, and Peleg's name recalls the division of the earth in his days (10:25). From here the story follows Peleg's line, not Joktan's.",
+      "history": "Lifespans fall in stages through this list. Shem lives 600 years, the next three generations about 430 to 460, and from Peleg on about 200 to 240; Nahor reaches only 148. Genesis presents the shortening of life after the flood without comment, as a slow approach to the limits later described in Psalm 90:10.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Peleg's generation is associated with the division of the earth, yet the line that runs through him continues without a break. While the nations divide, God carries forward the particular family through which he will bless them."
+        }
+      ],
+      "refs": [
+        "Genesis 10:21",
+        "Genesis 10:25",
+        "Psalm 90:10"
+      ]
+    },
+    {
+      "v": "20-23",
+      "context": "Reu and Serug, two generations with no story attached. The list keeps its rhythm, and the reader is carried steadily toward the family of Terah.",
+      "history": "Several names in this part of the line match place names in the region of Haran known from ancient texts. Serug corresponds to Sarugi, a town near Haran in Assyrian records, and Nahor to Nahur, a town mentioned in the Mari letters of the eighteenth century BC. The names suggest that the family's roots lay in upper Mesopotamia, which fits Terah's settling in Haran (verse 31) and Abraham's later sending there for a wife for Isaac, to ‘the city of Nahor’ (24:10).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Two generations pass with nothing recorded but births and years. Genesis includes them because God's purposes run through ordinary lives the narrative does not stop to describe."
+        }
+      ],
+      "refs": [
+        "Genesis 24:10",
+        "Luke 3:35",
+        "1 Chronicles 1:26"
+      ]
+    },
+    {
+      "v": "24-26",
+      "context": "Nahor and Terah. The genealogy ends, as chapter 5 did with Noah, with a father who has three sons. The pattern signals that the story is about to slow down and focus on one of them.",
+      "grammar": "Verse 26 breaks the formula: instead of one named son, Terah fathers three at once, just as 5:32 lists Noah's three sons. Avram, ‘Abram’, is usually explained as ‘the father is exalted’ (av, ‘father’, and ram, ‘high’), a name that will be expanded to Abraham in 17:5. Naming Abram first need not mean he was the eldest, since Genesis often lists the most important son first, as with Shem.",
+      "words": [
+        "H8646G",
+        "H0087",
+        "H5152H",
+        "H2039G"
+      ],
+      "refs": [
+        "Genesis 5:32",
+        "Genesis 17:5",
+        "Joshua 24:2",
+        "1 Chronicles 1:26-27"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "The account of Terah begins, the heading for the whole Abraham cycle through 25:11. It repeats the names of Terah's sons and adds Lot, Haran's son, who will travel with Abram.",
+      "grammar": "Holid, ‘fathered’, is a Hiphil perfect here rather than the wayyiqtol of the list, because the verse restates facts already given as the opening of a new section. The toledot of Terah is, in practice, the story of Abraham, just as the toledot of Isaac (25:19) is the story of Jacob: Genesis names a section after the father and tells it through the son.",
+      "words": [
+        "H8435",
+        "H3205",
+        "H3876"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Lot's introduction here prepares for chapters 13, 14, and 19. Genesis sets the members of the family in place before the call comes, so that the reader sees the whole household God is about to move."
+        }
+      ],
+      "refs": [
+        "Genesis 25:19",
+        "Genesis 12:4",
+        "Genesis 13:1"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "Haran dies young, before his father, in the family's homeland. His death leaves Lot fatherless and is the first sign that the family's future is fragile.",
+      "grammar": "Al pene terach aviv, “during his father Terah’s lifetime”, is literally ‘in the face of Terah his father’, which can mean ‘in his presence’ or ‘while he was still alive’. Either way the phrase underlines the grief of a father outliving his son. Moladeto, “his native land”, is the land of his kindred or birth; the same word appears in God's call to Abram to leave ‘your kindred’ (12:1).",
+      "words": [
+        "H4191",
+        "H6440H",
+        "H4138",
+        "H0218B",
+        "H3778"
+      ],
+      "history": "The Chaldeans (Kasdim) were a people who settled in southern Babylonia and rose to power there in the first millennium BC; the Neo-Babylonian kings, including Nebuchadnezzar, were of Chaldean descent. Calling the city Ur of the Chaldeans identifies it for readers who knew the region by that later name.",
+      "refs": [
+        "Genesis 12:1",
+        "Genesis 15:7",
+        "Nehemiah 9:7",
+        "Acts 7:2-4"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "The marriages of Abram and Nahor. Sarai is named with no family background, while Milcah's is given in full; the detail prepares for chapter 24, where the family of Nahor and Milcah produces Rebekah.",
+      "history": "Nahor marries Milcah, his brother Haran's daughter, so marriage within the extended family is normal in this household. Genesis later adds that Sarai was Abram's half-sister, a daughter of Terah by another mother (20:12). Jewish tradition, found in the Talmud and followed by Rashi, identified Iscah with Sarai, though 20:12 fits that identification poorly, and most modern interpreters leave Iscah as a separate person whose role is not explained.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Milcah's line is recorded here, and 22:20-23 will report her children, including Bethuel the father of Rebekah. The genealogical note quietly prepares the wife for the son not yet promised."
+        }
+      ],
+      "refs": [
+        "Genesis 20:12",
+        "Genesis 22:20-23",
+        "Genesis 24:15",
+        "Leviticus 18:9"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "A short verse with enormous weight. After a genealogy in which every generation fathers sons and daughters, the line reaches a woman who cannot have children. The whole story of Abraham will turn on this fact.",
+      "grammar": "The verse says the same thing twice: Sarai was aqarah, ‘barren’, and ein lah valad, ‘there was not to her a child’. The second clause adds nothing new in content, which is exactly its function; the repetition presses the point. Valad is a rare form of the ordinary word yeled, ‘child’.",
+      "words": [
+        "H6135",
+        "H0369",
+        "H2056"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The line of promise reaches a dead end in human terms. From here on, the continuation of the line will depend on God's gift, a pattern that runs through Rebekah, Rachel, Hannah, and Elizabeth, and that Paul makes central to the meaning of Abraham's faith (Romans 4:19-21)."
+        }
+      ],
+      "refs": [
+        "Genesis 25:21",
+        "Genesis 29:31",
+        "1 Samuel 1:2",
+        "Luke 1:7",
+        "Romans 4:19-21"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "Terah leads the family out of Ur toward Canaan, but they stop at Haran and settle there. The move begins before God's call is reported, and it ends halfway.",
+      "grammar": "The Hebrew is slightly awkward: vayyetseu ittam, literally ‘and they went out with them’, where one would expect Terah to be the subject. Translations smooth it as the BSB does. The city Haran (charan, spelled with the letter chet) is a different name in Hebrew from Abram's brother Haran (haran, spelled with he), though they look identical in English. Latsekhet artsah kenaan, ‘to go to the land of Canaan’, states a goal the family does not reach.",
+      "words": [
+        "H2771A",
+        "H2039G",
+        "H3667A",
+        "H3427"
+      ],
+      "history": "Haran lay on the Balikh River in upper Mesopotamia, in what is now southeastern Turkey, on the main trade route between Mesopotamia and Syria. Like Ur, it was a center of the worship of the moon god Sin, a connection that has led some interpreters to suggest that the family's route followed familiar religious and commercial ties.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Stephen's speech in Acts 7:2-4 says God had already appeared to Abraham in Mesopotamia before he lived in Haran, and Genesis 15:7 says the LORD brought Abram out of Ur. Genesis 11 tells the move from the side of the family's decisions; the later passages show God's hand behind it."
+        }
+      ],
+      "refs": [
+        "Genesis 15:7",
+        "Acts 7:2-4",
+        "Hebrews 11:8",
+        "Joshua 24:2-3"
+      ]
+    },
+    {
+      "v": "32",
+      "context": "Terah dies in Haran, and the genealogy ends with his death. The next verse, 12:1, begins with God's word to Abram, so the old generation closes before the new call is heard.",
+      "text": "The standard Hebrew gives Terah's age at death as 205; the Samaritan Pentateuch reads 145. The difference matters for the chronology. Terah was 70 when his sons were born (verse 26) and Abram left Haran at 75 (12:4), which with the Hebrew figure would put Terah's death some sixty years after Abram left. Stephen says Abraham moved to Canaan after his father died (Acts 7:4), which fits the Samaritan figure or the view that Abram was not the eldest son and was born later than Terah's seventieth year.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The genealogy that began with Shem ends with a death in a city short of the goal. The line has reached Abram, and what happens next will depend on God's call, not on the family's momentum."
+        }
+      ],
+      "refs": [
+        "Genesis 12:1",
+        "Genesis 12:4",
+        "Acts 7:4"
+      ]
+    }
+  ]
+}

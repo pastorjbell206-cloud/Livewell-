@@ -1,0 +1,185 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Abraham leaves the oaks of Mamre near Hebron, where the last three chapters have kept him (Genesis 18:1), and moves southwest into the Negev. The verse sets the stage for the whole episode: a wealthy herdsman living as an outsider in a territory with a king of its own.",
+      "grammar": "Three verbs in sequence trace the movement. Vayyissa (‘set out’) comes from nasa, a verb that pictures pulling up tent pegs and is used for each stage of a nomadic move (Genesis 12:9, Numbers 33). Vayyeshev (\"settled\") and vayyagor (\"was staying\") then distinguish living in a region from staying as a guest in a town. Gur is the verb behind ger, the resident alien who lives among a people without the rights of a native. Abraham is a ger in Gerar, and the two words even sound alike in Hebrew, which fits the story: his vulnerability as a foreigner is what he is afraid of.",
+      "words": ["H5265", "H3427", "H1481A"],
+      "history": "Kadesh is almost certainly Kadesh-barnea, the oasis on the southern edge of Canaan where Israel later camped during the wilderness years (Numbers 13:26, 20:1). Shur names the desert east of Egypt's border, where Hagar fled in Genesis 16:7. Naming the two gives the range of Abraham's herding country: the broad dry steppe between southern Canaan and Sinai. Gerar lay at its northern end, nearer the coast.",
+      "refs": ["Genesis 12:9", "Genesis 16:7", "Numbers 13:26", "Hebrews 11:9"]
+    },
+    {
+      "v": "2",
+      "context": "The deception is told in a single sentence, with no explanation, no plan shared with Sarah, and no mention of her beauty, unlike the fuller telling in Genesis 12:11-13. The narrator's brevity is itself a judgment: the reader has seen this before and knows at once what it means. The king acts on Abraham's words and takes Sarah.",
+      "grammar": "The preposition el usually means ‘to’, but here it means ‘concerning’: Abraham says this about Sarah to others, not to her. The verb for what the king does, laqach (\"had Sarah brought\", literally ‘took’), is the ordinary Hebrew expression for taking a woman in marriage (Genesis 4:19, 24:67), and the same verb described Pharaoh's action in Genesis 12:15. Its object here is the woman through whom, a chapter earlier, God promised the son (Genesis 18:10).",
+      "words": ["H0413", "H3947G", "H0269"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse sets the promised son's mother inside a foreign king's household on the eve of the promised birth. Abraham's lie is not a private weakness; it endangers the very promise he has been given, which is how Genesis tends to show sin, reaching past the sinner to others."
+        }
+      ],
+      "refs": ["Genesis 12:11-15", "Genesis 26:7", "Genesis 18:10"]
+    },
+    {
+      "v": "3",
+      "context": "God intervenes before anything irreversible happens. He speaks, not to Abraham, but to the foreign king, and his first words are a death sentence. The rest of the chapter unfolds from this night.",
+      "grammar": "Hinneka met is literally ‘behold, you are dying’ or ‘you are a dead man’. Met is a participle, and the participle presents the death as already underway or certain, the force the BSB catches with \"as good as dead\". The reason is given in a legal phrase, be'ulat ba'al, literally ‘owned by an owner’ or ‘married to a husband’. The same technical expression appears in the law on adultery in Deuteronomy 22:22. God speaks to Abimelech in terms of law: this woman has a husband, and to take her is a capital wrong.",
+      "words": ["H4191", "H1166I", "H1167I", "H2472"],
+      "history": "In Genesis God speaks in dreams to people outside Abraham's line as well as within it: to Abimelech here, to Laban (Genesis 31:24), and to Pharaoh and his officials (Genesis 40-41). Dreams were widely regarded across the ancient Near East as a channel for messages from the gods, and Egypt and Mesopotamia both produced manuals for interpreting them. Genesis shares the belief that God may speak in dreams, but here the message needs no interpreter.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God treats the taking of another man's wife as deserving death even when the man who does it was deceived. The verse shows judgment as God's defense of the vulnerable, here Sarah, who has no one else to speak for her."
+        },
+        {
+          "id": "revelation",
+          "note": "God speaks directly to a king outside the covenant family. Revelation in Genesis is not confined to the chosen line, even though its purpose here is to protect that line."
+        }
+      ],
+      "refs": ["Deuteronomy 22:22", "Genesis 31:24", "Job 33:14-18", "Genesis 12:17"]
+    },
+    {
+      "v": "4-5",
+      "context": "The narrator first assures the reader that Abimelech had not touched Sarah, then lets the king defend himself. His plea has two parts: a question about God's justice (verse 4) and an appeal to the facts, since both Abraham and Sarah told him the same thing (verse 5).",
+      "grammar": "Abimelech's question, literally ‘Will you kill a nation, even a righteous one?’, uses tsaddiq, righteous or innocent in a legal sense, and it echoes Abraham's own plea at Sodom, where he asked whether God would sweep away the righteous with the wicked (Genesis 18:23-25). The foreigner now asks Abraham's question about Abraham's lie. In verse 5 the emphatic pronouns stack up: ‘he himself said... and she, she too said’, so that Sarah is shown as a party to the deception. The king's defense is a pair, tom levav (\"integrity of my heart\") and niqyon kappay (\"innocence of my hands\"), covering motive and deed together, as in Psalm 24:4 where the one who may stand before God has clean hands and a pure heart.",
+      "words": ["H6662", "H1471A", "H8537", "H5356A", "H3709G"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Abimelech distinguishes guilt that comes from intent from harm done in ignorance, and God will accept the distinction in verse 6. Yet the danger is real even so: Scripture treats wrongs done unknowingly as still wrongs, which is why the law later provides offerings for unintentional sin (Leviticus 4:2)."
+        }
+      ],
+      "refs": ["Genesis 18:23-25", "Psalm 24:3-4", "Psalm 26:6", "Leviticus 4:2"]
+    },
+    {
+      "v": "6",
+      "context": "God accepts Abimelech's plea and then goes further: the king's innocence was not only his own doing. God held him back. The dream's second speech reveals what the king could not know, that he had been restrained all along.",
+      "grammar": "God answers with two emphatic clauses built alike: gam anokhi yadati, ‘I too know’, and vaechsokh gam anokhi, ‘and I, I also held you back’. The repeated pronoun anokhi puts God himself at the center of what happened. God also takes up Abimelech's own word, tom, \"integrity\" (BSB \"a clear conscience\"). The verb chasakh, to withhold or hold back, returns in Genesis 22:12 and 22:16, where the angel says Abraham has not withheld his son. The sin is named as sin \"against Me\": wronging a man's marriage is an offense against God himself, as Joseph will say when Potiphar's wife tempts him (Genesis 39:9). The last clause, literally ‘I did not give you to touch her’, presents even the absence of an act as God's decision.",
+      "words": ["H0595", "H2820", "H2398", "H5414K", "H5060"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The verse is one of Scripture's clearest statements that God restrains evil in people who do not know him and never learn of it until afterward. Theologians sometimes call this restraining grace: an unseen check on what human beings would otherwise do."
+        },
+        {
+          "id": "sin",
+          "note": "Sin against a neighbor is sin against God. The verse grounds the moral law in God's own claim, the same logic as Psalm 51:4 and Genesis 39:9."
+        }
+      ],
+      "refs": ["Genesis 39:9", "Psalm 51:4", "Genesis 22:12", "1 Samuel 25:26"]
+    },
+    {
+      "v": "7",
+      "context": "God gives Abimelech a command, a reason, a promise, and a warning. The command is to return Sarah; the reason is that Abraham is a prophet; the promise is life through Abraham's prayer; the warning is certain death for the king and his whole household. The man who caused the trouble is appointed to end it.",
+      "grammar": "After the promise that Abraham will pray, the next verb is an imperative joined by ‘and’: literally ‘he will pray for you, and live’. An imperative placed after another verb this way often expresses a promised result in Hebrew, so the sense is ‘so that you will live’. The warning uses mot tamut, an infinitive absolute before the finite verb, the same construction as God's warning in Genesis 2:17. The infinitive intensifies the verb, and English renders it \"you will surely die\". Yitpallel, \"he will pray\", is a Hithpael of palal, a stem often used for acting on one's own behalf or in a mediating role; this verb, the most common Old Testament word for prayer, appears here for the first time in the Bible.",
+      "words": ["H5030", "H6419", "H2421", "H4191", "H7725G"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The first mention of prayer with this verb is intercession: one person asking God on behalf of another. It is a prophet's work, and the pattern continues through Moses (Numbers 21:7), Samuel (1 Samuel 12:23), and Job (Job 42:8)."
+        },
+        {
+          "id": "offices",
+          "note": "The first person Scripture calls a prophet is Abraham, and what defines him here is not prediction but nearness to God and the right to plead for others. That shape of the prophetic office runs through the Old Testament and is fulfilled in Christ, who always lives to intercede (Hebrews 7:25)."
+        }
+      ],
+      "refs": ["Job 42:8", "1 Samuel 12:23", "Psalm 105:14-15", "Genesis 2:17", "Hebrews 7:25"]
+    },
+    {
+      "v": "8",
+      "context": "The king acts at first light and tells his whole court. Their reaction, great fear, prepares the irony of verse 11: the men Abraham assumed had no fear of God are the ones trembling at God's word.",
+      "grammar": "Vayyashkem, \"got up early\", is a Hiphil of shakam, a verb Genesis uses for prompt obedience after a night encounter with God; Abraham himself will rise early in 21:14 and 22:3. The fear is marked with vayyireu... meod, ‘they feared exceedingly’. The verb yare is the one from which yir'ah, the \"fear\" of verse 11, is formed.",
+      "words": ["H7925", "H3372G", "H3966"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "Pagan courtiers respond to God's warning with the fear Abraham denied them. Scripture often shows outsiders fearing God more readily than his own people, as with the sailors in Jonah 1:16."
+        }
+      ],
+      "refs": ["Genesis 22:3", "Jonah 1:16", "Genesis 21:14"]
+    },
+    {
+      "v": "9-10",
+      "context": "Abimelech summons Abraham and cross-examines him like an injured party at law. His three questions (what have you done, how have I wronged you, what were you thinking) leave Abraham with nothing to say in his own defense, and the king's judgment on the deed is blunt.",
+      "grammar": "Mah asita, \"What have you done\", is the question God asks the woman in Eden (Genesis 3:13) and Pharaoh asks Abram (Genesis 12:18); in Genesis it is the accuser's question, and it will be asked of Isaac too (Genesis 26:10). The king calls the danger chata'ah gedolah, ‘a great sin’, the phrase Moses later uses of the golden calf (Exodus 32:21). The last clause, literally ‘deeds that are not done you have done with me’, uses the Hebrew imperfect for what custom forbids: ‘things one does not do’. The same idiom marks the violation of Dinah (Genesis 34:7) and Laban's appeal to local custom (Genesis 29:26). In verse 10 mah ra'ita is literally ‘What did you see?’: what did you have in view, what were you thinking.",
+      "words": ["H4100", "H6213A", "H2401", "H1419A", "H7200G"],
+      "history": "Scholars have pointed out that ‘the great sin’ is a set expression for adultery outside the Bible as well, in Egyptian marriage documents and in texts from Ugarit on the Syrian coast. Abimelech speaks the moral language of his world, and it matches the law Israel would later receive.",
+      "refs": ["Genesis 12:18", "Genesis 26:10", "Exodus 32:21", "Genesis 34:7"]
+    },
+    {
+      "v": "11",
+      "context": "Abraham's first reason is fear: he judged Gerar a godless place and expected to be murdered for his wife. The chapter has already shown him wrong. Abimelech and his servants fear God, and it is Abraham's own conduct that lacked it.",
+      "grammar": "Ki amarti is literally ‘because I said’, the usual Hebrew way of saying ‘I thought’ (speech to oneself). The adverb raq, ‘only’ or ‘surely’, makes the assessment sweeping: there is simply no fear of God here. The feared consequence is put with a consecutive perfect, vaharaguni, \"They will kill me\", presenting it as the certain next step of his reasoning. Yir'at Elohim, fear of God, in Genesis names the basic reverence that restrains people from violence and injustice even without the law of Sinai; Joseph uses the phrase to reassure his brothers (Genesis 42:18), and the Hebrew midwives fear God and refuse to kill (Exodus 1:17).",
+      "words": ["H7535", "H3374", "H2026"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The verse assumes that a people without the fear of God is capable of anything, and in that Abraham is right. His mistake is to assume he can tell who fears God by their nationality. Fear of man drove him to lie, the snare Proverbs 29:25 warns of."
+        }
+      ],
+      "refs": ["Genesis 42:18", "Exodus 1:17", "Proverbs 29:25", "Proverbs 16:6"]
+    },
+    {
+      "v": "12",
+      "context": "Abraham's second reason is a technicality: Sarah really is his sister, his father's daughter by another mother. It is the only place Genesis tells us this; Genesis 11:29 introduced Sarai without naming her parents.",
+      "grammar": "Omnah, \"really\", is a rare adverb meaning ‘truly, indeed’. Abraham presses its truth, and the next word, akh, ‘only’ or ‘though’, admits the qualification: not my mother's daughter. The sentence ends with the fact that makes the defense hollow: vattehi li le'ishah, \"and she became my wife\". The statement is true in its words and false in its purpose; he used a partial truth to create a false belief.",
+      "words": ["H0546", "H0389", "H0269", "H0802H"],
+      "history": "Marriage between half-siblings with the same father is later forbidden in the law of Moses (Leviticus 18:9, 20:17). Yet in the time of David, Tamar can still plead with her half-brother Amnon to ask the king for her in marriage (2 Samuel 13:13), which suggests the prohibition was not always observed. In Egypt royal families practiced sibling marriage, but Genesis presents Abraham's case as a family arrangement, not a royal one.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Abraham's defense shows that deception does not require a false statement. Scripture judges speech by what it intends to make others believe, which is why the ninth commandment speaks of false witness rather than merely false words."
+        }
+      ],
+      "refs": ["Genesis 11:29", "Leviticus 18:9", "2 Samuel 13:13", "Ephesians 4:25"]
+    },
+    {
+      "v": "13",
+      "context": "Abraham's third reason reveals that the ruse was not an impulse in Gerar but a standing policy, agreed with Sarah from the time they left Terah's house. He frames it as a favor she owes him, which Genesis 12:11-13 already showed him asking.",
+      "grammar": "Two features stand out. First, the verb hit'u, ‘caused me to wander’, is plural with Elohim as its subject. Normally when Elohim refers to Israel's God the verb is singular, as in Genesis 1:1; a plural verb appears in only a few places (Genesis 35:7, 2 Samuel 7:23). Some think Abraham speaks to a pagan king in a way that king would understand, ‘the gods’; others take the plural as a grammatical agreement with the plural form of the noun, without theological weight. The verb itself, ta'ah, is used of straying or wandering like lost sheep, a striking word for Abraham's call. Second, Abraham calls the lie chesed, \"loyalty\", the rich Hebrew word for faithful, committed love within a relationship. He bends one of the Bible's great words to cover a lie.",
+      "words": ["H8582", "H0430G", "H2617A", "H4725"],
+      "text": "Translations handle the plural verb differently. Most, like the BSB, render ‘God caused me to wander’ as a singular God. A few older and some modern translations bring out the plural as ‘the gods caused me to wander’, following the Hebrew form. The Hebrew text itself is not in doubt.",
+      "refs": ["Genesis 12:1", "Genesis 12:11-13", "Genesis 35:7", "Psalm 119:176"]
+    },
+    {
+      "v": "14-15",
+      "context": "Abimelech restores Sarah and loads Abraham with gifts. Where Pharaoh expelled Abram from Egypt (Genesis 12:19-20), Abimelech invites him to stay. The foreign king ends the episode more generously than the man of promise began it.",
+      "grammar": "Hinneh artsi lefanekha, \"Look, my land is before you\", repeats almost exactly the phrase Abram used when he offered Lot his choice of land in Genesis 13:9. The man who once gave generously now receives the same offer from a foreigner. Ba-tov be'enekha, literally ‘in what is good in your eyes’, leaves the choice entirely to Abraham. The verb in verse 14 for returning Sarah, vayyashev, is the Hiphil of shuv, the exact verb God commanded in verse 7: the king obeys to the letter.",
+      "words": ["H2009", "H0776G", "H6440G", "H7725G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The promise that those who bless Abraham will be blessed (Genesis 12:3) works here in an unexpected direction: God protects Abraham, and the foreigner who blesses him receives life. The gifts that enrich the patriarch come through his failure, not his merit."
+        }
+      ],
+      "refs": ["Genesis 13:9", "Genesis 12:16", "Genesis 12:19-20", "Genesis 34:10"]
+    },
+    {
+      "v": "16",
+      "context": "Abimelech turns to Sarah and makes a public settlement in her favor. The payment answers the question of her honor before the whole household, so that no one can say she was disgraced.",
+      "grammar": "The key phrase is kesut enayim, ‘a covering of the eyes’. Most interpreters take it as compensation that closes the eyes of others to any suspicion, and the BSB's \"your vindication\" gives that sense. The closing word, venokhachat, is a Niphal participle of yakach, a legal verb meaning to decide a case or set things right. The BSB and most modern translations read it as vindication (\"you are completely cleared\"). Note too Abimelech's pointed choice of words: he calls Abraham \"your brother\", using Abraham's own description back on him.",
+      "words": ["H3682", "H5869A", "H3198", "H0251G"],
+      "history": "A thousand \"pieces of silver\" is literally ‘a thousand of silver’; the unit is not named, but it was probably the shekel, a weight of silver (roughly eleven grams), since coins did not yet exist. The sum is very large: Abraham will pay four hundred shekels for a burial field in Genesis 23:15-16, and centuries later Jeremiah buys a field for seventeen (Jeremiah 32:9).",
+      "text": "The verse is notoriously hard to translate. The King James Version reads ‘behold, he is to thee a covering of the eyes’, taking the pronoun to mean Abraham himself; modern versions take it as ‘it’, the payment. The last words the KJV renders ‘thus she was reproved’, taking yakach in the sense of rebuke, while most modern translations read it as a declaration that she is cleared. The Hebrew allows both, and the context of compensation favors the modern reading.",
+      "refs": ["Genesis 23:15-16", "Deuteronomy 22:19", "Jeremiah 32:9"]
+    },
+    {
+      "v": "17-18",
+      "context": "Abraham prays, and God heals Abimelech's household so that they bear children again. Only now does the narrator reveal what the reader had not been told: God had closed every womb in the household while Sarah was there. The chapter ends with wombs reopened in Gerar, and the next begins with God attending to Sarah's.",
+      "grammar": "Vayyitpallel, \"prayed\", fulfills God's word in verse 7 with the same verb, and God's answer is rapha, to heal, the verb behind the later name ‘the LORD who heals you’ (Exodus 15:26). Verse 18 intensifies its verb with an infinitive absolute, atsor atsar, \"had completely closed\". It is also the only verse in the chapter that uses the covenant name YHWH, \"the LORD\"; everywhere else the chapter says Elohim, \"God\". Source critics have used such shifts to distinguish sources, while many literary readers note that the covenant name appears where the matter touches Sarah, the mother of the promised line.",
+      "words": ["H6419", "H7495", "H6113", "H3068G", "H7358"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The prayer that heals comes from the man who caused the harm. God answers because he appointed Abraham to pray, not because Abraham has earned a hearing, and the result is life for a household outside the covenant."
+        },
+        {
+          "id": "providence",
+          "note": "God opens and closes wombs (Genesis 29:31, 1 Samuel 1:5). The closing that protected Sarah and the healing that follows show his rule over the one thing every household in this world most longed for: children."
+        }
+      ],
+      "refs": ["Genesis 21:1-2", "Genesis 29:31", "1 Samuel 1:5", "Exodus 15:26", "James 5:16"]
+    }
+  ]
+}

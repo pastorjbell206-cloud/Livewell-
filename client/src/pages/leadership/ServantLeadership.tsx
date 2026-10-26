@@ -27,7 +27,7 @@ const PRINCIPLES: [string, string, string][] = [
 interface Mark { n: number; title: string; anchor: string; neglected: string; conviction: string; diagnostic: string; verdict: string }
 const MARKS: Mark[] = [
   { n: 1, title: "Serves Before He Leads", anchor: "John 13:3–5", neglected: "We taught leaders to take the head of the table, never the floor under it.", conviction: "Service is not the warm-up to authority. It is the exercise of it. The leader proves his right to lead by the basin in his hands before the title on his door.", diagnostic: "What is the lowly task my position has let me stop doing?", verdict: "The towel comes before the title." },
-  { n: 2, title: "Leads by Character, Not Talent", anchor: "1 Timothy 3:1–7", neglected: "We screened resumes when God screened the man.", conviction: "Of twenty qualifications, one is a skill. The rest are character. A servant leader is examined at the level of his marriage, money, temper, and appetite — not his platform.", diagnostic: "Where is my gifting outrunning my character right now?", verdict: "Character is the only credential that lasts." },
+  { n: 2, title: "Leads by Character, Not Talent", anchor: "1 Timothy 3:1–7", neglected: "We screened resumes when God screened the man.", conviction: "Of twenty qualifications, one is a skill. The rest are character. A servant leader is examined at the level of his marriage, money, temper, and appetite — not his platform.", diagnostic: "Where is my gifting outrunning my character right now?", verdict: "The qualification is the man, not the gift." },
   { n: 3, title: "Is a Person of Prayer", anchor: "Acts 6:4", neglected: "We let prayer become a public function and quit it as a private foundation.", conviction: "The servant leader guards prayer the way the apostles did — structurally, at the cost of disappointing legitimate needs. The leader who does not pray runs the church on human fuel, and everyone feels the difference without being able to name it.", diagnostic: "Is my prayer life what I would call adequate in anyone but myself?", verdict: "Lead from your knees or not at all." },
   { n: 4, title: "Shepherds People, Not Programs", anchor: "1 Peter 5:2–3", neglected: "We hired managers and called them shepherds.", conviction: "A servant leader knows the sheep by name, smells the wolf early, and goes after the one. He leads by example, not by domineering — because the flock belongs to God, not to him.", diagnostic: "Whose name and wound do I actually know this week?", verdict: "A crook, not a clipboard." },
   { n: 5, title: "Raises Up Other Leaders", anchor: "2 Timothy 2:2", neglected: "We built ministries that could not survive the man who built them.", conviction: "The servant leader measures success by the chain extending past him — leaders raising leaders he will never meet. The indispensable leader is a bottleneck with a halo.", diagnostic: "Who could carry this if I were removed today?", verdict: "Build successors, not a following." },
@@ -38,9 +38,6 @@ const MARKS: Mark[] = [
 ];
 
 const QUOTES = [
-  "A leader is not built in the spotlight. He is built in the years no one was watching.",
-  "We assumed the basin and platformed the gift.",
-  "The gift will take you where your character cannot keep you.",
   "The towel was the throne the whole time.",
 ];
 
@@ -100,7 +97,7 @@ export default function ServantLeadership() {
               { href: "/leadership/guides", k: "The Lessons · 4 guides", t: "Training Guides", d: "Session-by-session: servant leadership, elders, deacons, developing leaders." },
               { href: "#marks", k: "The Framework", t: "The 9 Marks", d: "A diagnostic for every leader — and the conviction underneath each one." },
             ].map((c) => (
-              <a key={c.href} href={c.href} style={{ display: "block", background: "var(--panel, #1d1b15)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)", textDecoration: "none" }}>
+              <a key={c.href} href={c.href} style={{ display: "block", background: "var(--charcoal-soft)", border: "1px solid rgba(245,240,230,0.12)", padding: "var(--s-3)", textDecoration: "none" }}>
                 <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "8px" }}>{c.k}</div>
                 <div style={{ fontFamily: "var(--F)", fontSize: "21px", color: "var(--bone)", lineHeight: 1.2, marginBottom: "6px" }}>{c.t}</div>
                 <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.55, color: "rgba(245,240,230,0.7)" }}>{c.d}</div>

@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useFormationTracker } from "@/hooks/useFormationTracker";
+import { isPublicEssay } from "@/lib/shelf";
 
 /* ── Reading paths (mirrored from ReadingPaths.tsx for progress tracking) ── */
 
@@ -22,46 +23,41 @@ const READING_PATHS: ReadingPath[] = [
     slug: "marriage-drifting",
     title: "When Your Marriage Is Drifting",
     articles: [
-      { title: "Your Marriage Is a Ministry Too", slug: "your-marriage-is-ministry-too" },
-      { title: "Protecting Your Marriage When Ministry Demands Everything", slug: "protecting-marriage-ministry-demands" },
-      { title: "What Your Spouse Wishes You Knew About Life in the Parsonage", slug: "spouse-wishes-knew-parsonage" },
-      { title: "How to Be Present at Home When Your Mind Never Leaves the Church", slug: "present-at-home-mind-never-leaves" },
-      { title: "Conflict Is Not Failure", slug: "conflict-is-not-failure" },
-      { title: "The Examined Life", slug: "the-examined-life" },
+      { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" },
+      { title: "What Silence Actually Costs a Marriage", slug: "what-silence-costs-a-marriage" },
+      { title: "What the Resentment in Your Marriage Is Telling You", slug: "the-resentment-in-your-marriage" },
+      { title: "How Do You Forgive Without Pretending It Didn't Happen?", slug: "forgiveness-without-pretending" },
     ],
   },
   {
     slug: "faith-crisis",
     title: "Faith in Crisis — A Path Through Doubt",
     articles: [
-      { title: "The Monster in the Mirror", slug: "the-monster-in-the-mirror" },
-      { title: "You Are Not the Exception", slug: "you-are-not-the-exception" },
-      { title: "Truth in a Post-Truth World", slug: "truth-in-post-truth-world" },
-      { title: "The Holy Spirit Is Not a Feeling", slug: "holy-spirit-not-feeling" },
-      { title: "The Incarnation Changes Everything", slug: "incarnation-changes-everything" },
-      { title: "The Hope of Resurrection", slug: "hope-of-resurrection" },
+      { title: "What If Christianity Is Wrong?", slug: "what-if-we-are-wrong" },
+      { title: "When God Stops Making Sense", slug: "when-god-doesnt-make-sense" },
+      { title: "What to Do When God Feels Absent", slug: "dark-night-god-feels-absent" },
+      { title: "How Does the Church Tell the Truth in a Post-Truth Age?", slug: "truth-in-post-truth-world" },
+      { title: "What Comes After Deconstruction of Your Faith?", slug: "excavation-not-demolition" },
     ],
   },
   {
     slug: "pastor-nobody-sees",
     title: "The Pastor Nobody Sees",
     articles: [
-      { title: "Why Pastors Quit (And How to Stay)", slug: "why-pastors-quit-and-how-to-stay" },
-      { title: "The Slow Burn: How Ministry Exhaustion Sneaks Up on You", slug: "slow-burn-ministry-exhaustion" },
-      { title: "The Hidden Pain of the Successful Pastor", slug: "hidden-pain-successful-pastor" },
-      { title: "The Danger of Pastoral Isolation", slug: "danger-pastoral-isolation" },
-      { title: "It’s Okay to See a Counselor", slug: "okay-to-see-counselor" },
+      { title: "Why Are Pastors So Lonely in a Full Church?", slug: "the-loneliest-room-in-the-church" },
+      { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" },
+      { title: "Why Do Pastors Treat Exhaustion as Faithfulness?", slug: "burnout-is-not-a-badge" },
+      { title: "When Ministry Is Quietly Killing Your Marriage", slug: "protecting-marriage-in-ministry" },
     ],
   },
   {
     slug: "raising-children",
     title: "Raising Children Who Think Theologically",
     articles: [
-      { title: "The Pastor’s Kids Are Watching — What Are They Seeing?", slug: "pastors-kids-watching-what-seeing" },
-      { title: "The Kingdom of God Is Not What You Think It Is", slug: "kingdom-of-god-not-what-you-think" },
-      { title: "The Psalms as Prayer — Not Just Poetry", slug: "psalms-as-prayer-not-poetry" },
-      { title: "Eschatology Matters — Why the End Shapes How We Live Now", slug: "eschatology-matters-end-shapes-now" },
-      { title: "Sabbath Is Resistance", slug: "sabbath-is-resistance" },
+      { title: "How Do You Raise Kids Who Think About Their Faith?", slug: "raising-kids-who-think" },
+      { title: "How Do You Talk to Your Kids About Doubt?", slug: "teaching-kids-about-doubt" },
+      { title: "When Your Teenager Says They Don't Believe Anymore", slug: "teenager-losing-faith" },
+      { title: "How a Father Shapes the Way a Child Sees God", slug: "the-father-wound-and-the-god-question" },
     ],
   },
   {
@@ -69,10 +65,10 @@ const READING_PATHS: ReadingPath[] = [
     title: "Justice and the Kingdom — Where Faith Meets the World",
     articles: [
       { title: "Where the Church Was Silent", slug: "where-church-was-silent" },
-      { title: "Justice Is Not a Political Category: It Is a Theological One", slug: "justice-not-political-theological" },
-      { title: "Complicity Is Not Innocence", slug: "complicity-not-innocence" },
-      { title: "Mishpat and Tsedaqah", slug: "mishpat-tsedaqah" },
-      { title: "The Prophetic Pastor", slug: "prophetic-pastor" },
+      { title: "Is Justice a Political Issue or a Theological One?", slug: "justice-not-political-theological" },
+      { title: "What Does the Bible Say About the Church and the Poor?", slug: "poor-not-ministry-category" },
+      { title: "Why Does Charity Treat Symptoms and Not Causes?", slug: "symptoms-without-causes-charity" },
+      { title: "Can a System Sin?", slug: "individual-sin-systemic-sin-2" },
     ],
   },
 ];
@@ -87,9 +83,11 @@ const SUGGESTED_TOOLS = [
 ];
 
 const SUGGESTED_ARTICLES = [
-  { slug: "the-examined-life", title: "The Examined Life", href: "/writing/the-examined-life" },
-  { slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", href: "/writing/the-monster-in-the-mirror" },
-  { slug: "incarnation-changes-everything", title: "The Incarnation Changes Everything", href: "/writing/incarnation-changes-everything" },
+  { slug: "excavation-not-demolition", title: "What Comes After Deconstruction of Your Faith?", href: "/writing/excavation-not-demolition" },
+  { slug: "what-if-we-are-wrong", title: "What If Christianity Is Wrong?", href: "/writing/what-if-we-are-wrong" },
+  { slug: "the-slow-drift-that-ends-marriages", title: "Why Do Married Couples Slowly Drift Apart?", href: "/writing/the-slow-drift-that-ends-marriages" },
+  { slug: "the-father-wound-and-the-god-question", title: "How a Father Shapes the Way a Child Sees God", href: "/writing/the-father-wound-and-the-god-question" },
+  { slug: "the-loneliest-room-in-the-church", title: "Why Are Pastors So Lonely in a Full Church?", href: "/writing/the-loneliest-room-in-the-church" },
 ];
 
 /* ── Helpers ── */
@@ -159,9 +157,9 @@ export default function Dashboard() {
     for (const b of data.bibleBooks)
       entries.push({ type: "Bible Book", title: b.name, slug: b.name, at: b.studiedAt, href: `/tools/deep-bible` });
     for (const p of data.pathsStarted)
-      entries.push({ type: "Path Started", title: p.title, slug: p.slug, at: p.startedAt, href: `/reading-paths` });
+      entries.push({ type: "Path Started", title: p.title, slug: p.slug, at: p.startedAt, href: `/reading-paths/${p.slug}` });
     for (const p of data.pathsCompleted)
-      entries.push({ type: "Path Completed", title: p.title, slug: p.slug, at: p.completedAt, href: `/reading-paths` });
+      entries.push({ type: "Path Completed", title: p.title, slug: p.slug, at: p.completedAt, href: `/reading-paths/${p.slug}` });
     entries.sort((a, b) => (a.at > b.at ? -1 : 1));
     return entries.slice(0, 10);
   }, [data]);
@@ -182,7 +180,7 @@ export default function Dashboard() {
         title: "Start Here Diagnostic",
         description:
           "Not sure where to begin? This diagnostic helps you find the right starting point based on what you are carrying.",
-        href: "/start-here",
+        href: "/start",
       });
     }
 
@@ -192,7 +190,7 @@ export default function Dashboard() {
       items.push({
         title: p.title,
         description: `A reading path with ${p.total} essays. Begin where the weight is heaviest.`,
-        href: "/reading-paths",
+        href: `/reading-paths/${p.slug}`,
       });
     }
 
@@ -211,7 +209,8 @@ export default function Dashboard() {
     // Suggest articles not yet read
     for (const article of SUGGESTED_ARTICLES) {
       if (items.length >= 5) break;
-      if (!readSlugs.has(article.slug)) {
+      // Only essays on the public shelf (lib/shelf.ts) are suggested.
+      if (!readSlugs.has(article.slug) && isPublicEssay(article.slug)) {
         items.push({
           title: article.title,
           description: "An essay worth sitting with.",
@@ -302,7 +301,7 @@ export default function Dashboard() {
           >
             {stats.lastActive
               ? `Last active ${relativeTime(stats.lastActive)}`
-              : "Your reading begins here. Everything you engage with is tracked in this room."}
+              : "Your reading begins here. What you read and use will be kept in this room."}
           </p>
 
           {/* Stats row */}
@@ -387,7 +386,7 @@ export default function Dashboard() {
                 curated sequence of essays built for a specific season.
               </p>
               <Link
-                href="/reading-paths"
+                href="/writing"
                 style={{
                   display: "inline-block",
                   padding: "0.75rem 1.5rem",
@@ -401,7 +400,7 @@ export default function Dashboard() {
                   textDecoration: "none",
                 }}
               >
-                Browse reading paths
+                Browse the essays
               </Link>
             </div>
           )}
@@ -520,7 +519,7 @@ export default function Dashboard() {
                 {unstartedPaths.map((path) => (
                   <Link
                     key={path.slug}
-                    href="/reading-paths"
+                    href={`/reading-paths/${path.slug}`}
                     style={{
                       ...cardStyle,
                       textDecoration: "none",
@@ -659,6 +658,7 @@ export default function Dashboard() {
             <textarea
               value={noteText}
               onChange={(e) => setNoteText(e.target.value)}
+              aria-label="Your note"
               placeholder="Write a note — a thought from your reading, a question you are sitting with, a conviction that will not let you go."
               rows={3}
               style={{
@@ -695,6 +695,7 @@ export default function Dashboard() {
                 type="text"
                 value={noteSlug}
                 onChange={(e) => setNoteSlug(e.target.value)}
+                aria-label="Article slug (optional)"
                 placeholder="Article slug (optional)"
                 style={{
                   flex: 1,
@@ -850,8 +851,8 @@ export default function Dashboard() {
                   lineHeight: 1.7,
                 }}
               >
-                You have engaged with everything we would suggest. Keep reading.
-                The work is never done.
+                You have read or used everything on this page's list. The writing
+                runs deeper than the list does.
               </p>
             </div>
           ) : (

@@ -1,0 +1,431 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "God opens the new age with the blessing he spoke over the first humans (1:28), now addressed to Noah and his three sons. Verse 7 repeats the command, so the whole speech of verses 1 to 7 is framed by fruitfulness, with the new rules about food and blood set inside that frame.",
+      "grammar": "Vayvarekh (“blessed”) is the Piel of barakh, the same form used in 1:22 and 1:28. The three imperatives that follow, peru, revu, and mileu (‘be fruitful, multiply, fill’), are word for word those of 1:28. What is missing is as telling as what is repeated: the command to ‘subdue’ (kavash) and ‘rule’ (radah) is not restated. In its place verse 2 describes fear and dread, the form human rule over animals now takes in a world marked by violence.",
+      "words": [
+        "H1288",
+        "H6509",
+        "H7235A",
+        "H4390"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The human vocation given at creation survives the flood. Humanity's calling to fill the earth was not cancelled by sin or by judgment, which is why the Old Testament can go on to treat children and fruitfulness as gifts of God's blessing."
+        }
+      ],
+      "refs": [
+        "Genesis 1:28",
+        "Genesis 8:17",
+        "Genesis 35:11",
+        "Psalm 127:3"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The relationship between humans and animals changes. Animals will now fear humans, and they are placed in human hands, a change that prepares for the permission to eat meat in verse 3.",
+      "grammar": "The two nouns, mora (“fear”) and chat (“dread”), are the vocabulary of terror before a stronger power; mora is used in Deuteronomy 11:25 for the dread God puts on the land's peoples before Israel. The closing clause, “They are delivered into your hand”, uses nittanu, a Niphal perfect of natan, and the phrase ‘given into your hand’ is the standard Old Testament formula for handing an enemy over in battle (Joshua 6:2; Judges 3:28). The language of rule has taken on the vocabulary of conflict.",
+      "words": [
+        "H4172A",
+        "H2844A",
+        "H5414G"
+      ],
+      "refs": [
+        "Deuteronomy 11:25",
+        "Psalm 8:6-8",
+        "Hosea 2:18",
+        "Isaiah 11:6-9"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "God now gives animals for food, setting the new permission beside the old gift of plants in 1:29-30. The verse is a grant, not a concession wrung from God: the same giving God who fed the first creatures now widens the menu.",
+      "grammar": "“I now give” is natatti, the Hebrew perfect used performatively, as in 1:29: the speaking is the giving. The comparison keyereq esev, “just as I gave you the green plants”, points back explicitly to 1:30, where the same phrase appears. The Hebrew places “Everything” (kol) as the last word of the verse for emphasis.",
+      "words": [
+        "H5414G",
+        "H3418",
+        "H6212",
+        "H0402"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "Food is still received as God's gift. Paul draws on this pattern when he insists that nothing God created is to be rejected if it is received with thanksgiving (1 Timothy 4:3-5), and the New Testament's declaration that all foods are clean (Mark 7:19) returns to the breadth of this grant."
+        }
+      ],
+      "refs": [
+        "Genesis 1:29-30",
+        "1 Timothy 4:3-5",
+        "Mark 7:19",
+        "Acts 10:13-15"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The one restriction on the gift: meat must not be eaten with its blood. The limit is placed immediately beside the permission, so that the right to kill for food never becomes a right to treat life as one's own.",
+      "grammar": "The verse opens with akh, a restrictive adverb meaning ‘only’ or ‘but’, which marks an exception to the ‘everything’ of verse 3. The phrase basar benafsho damo is compact: literally ‘flesh with its life, its blood’. The two nouns stand side by side in apposition, so that ‘its blood’ explains ‘its life’. Leviticus 17:11 and Deuteronomy 12:23 make the same identification in plain prose. Nefesh here means ‘life’, not a separate immortal soul.",
+      "words": [
+        "H0389",
+        "H1320",
+        "H5315H",
+        "H1818"
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "This is the first food law in Scripture, given to all of Noah's descendants before Israel exists. The Jerusalem council in Acts 15 asked Gentile believers to abstain from blood, which many interpreters connect with this command given to all humanity rather than only to Israel."
+        }
+      ],
+      "refs": [
+        "Leviticus 17:10-14",
+        "Deuteronomy 12:23-24",
+        "Acts 15:20",
+        "Acts 15:29"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The protection that verse 4 gives animal blood is now given, far more strongly, to human blood. God himself will require an accounting for any human life taken, whether by a beast or by another person.",
+      "grammar": "The verb darash (‘require’, ‘seek’) occurs three times in the verse, twice as edrosh, a first person imperfect, ‘I will require’. The repetition makes God the one who pursues every case. The last clause, literally ‘from the hand of each man his brother’, uses ish and achiv, ‘man’ and ‘brother’. The wording recalls Cain, who asked whether he was his brother's keeper and whose brother's blood cried out from the ground (4:9-10). Every killing is now framed as the killing of a brother.",
+      "words": [
+        "H1875",
+        "H0376I",
+        "H0251I",
+        "H5315H"
+      ],
+      "history": "The principle that an animal that kills a person is itself held responsible appears in Israel's law, where an ox that gores a man or woman to death must be stoned (Exodus 21:28). Laws dealing with the goring ox are also found in the older law collections of Mesopotamia, including the Laws of Hammurabi, although those deal with the owner's liability rather than with the animal as accountable for blood.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "God binds himself to require an accounting for human life. Bloodshed is not a private matter between killer and victim's family; it is an offense God himself pursues, which is the ground on which later biblical law treats murder as a wrong against the community and against God."
+        }
+      ],
+      "refs": [
+        "Genesis 4:9-10",
+        "Exodus 21:28-29",
+        "Psalm 9:12",
+        "Numbers 35:33"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The center of the speech, set as a short poem. The one who sheds human blood will have his own blood shed, and the reason is given at once: humans are made in God's image. The verse ties justice for murder directly to the dignity of the victim.",
+      "grammar": "In Hebrew the first line is a chiasm, a mirror pattern of six words: shofekh dam haadam / baadam damo yishafekh, ‘shedding / blood / of man // by man / his blood / will be shed’. The sentence turns back on itself as the killer's act returns on him. The phrase baadam is the crux. Most translations read the preposition as ‘by’, so that a human agent carries out the penalty, and many interpreters have seen here the grant of judicial authority to human society. Others read it as ‘for (the price of) that man’, or take the line as a proverb describing how violence returns on the violent without assigning the task to anyone. The ki clause (“for in His own image”) gives the reason for the whole statement.",
+      "words": [
+        "H8210H",
+        "H1818",
+        "H0120G",
+        "H6754"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "The image of God is not lost after the flood. Genesis 9:6 speaks of every human being, the violent ones included, as still made in God's image, and it grounds the gravity of murder there. James 3:9 makes the same argument about cursing people made in God's likeness."
+        },
+        {
+          "id": "law",
+          "note": "Christians have long disagreed over what this verse requires of governments. Many find in it the foundation for the state's authority to punish murder, including by death, and connect it with Romans 13:4. Others read it as describing the way bloodshed breeds bloodshed and point to Jesus' words about those who take the sword (Matthew 26:52). Both sides agree that the verse makes human life sacred because of whose image it bears."
+        }
+      ],
+      "refs": [
+        "Genesis 1:27",
+        "James 3:9",
+        "Romans 13:4",
+        "Matthew 26:52",
+        "Revelation 13:10"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The speech closes where it began, with the command to multiply. Set directly after the verse about bloodshed, the command gives the positive side: humans are to fill the earth with life, not empty it by violence.",
+      "grammar": "The verse opens with an emphatic pronoun, veattem, “But as for you”, which sets Noah's family against the killer of verse 6. The command includes shirtsu, “spread out”, a verb whose usual sense is ‘swarm’ or ‘teem’ and which in Genesis 1:20-21 and 8:17 is used of animals. Its use for humans here stresses sheer abundance of life.",
+      "words": [
+        "H0859D",
+        "H8317",
+        "H7235A"
+      ],
+      "refs": [
+        "Genesis 1:20-22",
+        "Genesis 1:28",
+        "Exodus 1:7"
+      ]
+    },
+    {
+      "v": "8-10",
+      "context": "God turns from commands to a covenant, a solemn binding commitment. The circle of partners widens as the speech goes on: Noah, his sons, their descendants, and every living creature that came out of the ark. No other covenant in the Bible includes animals as parties.",
+      "grammar": "Verse 9 begins vaani hineni meqim, literally ‘And I, behold me, establishing’. The double first person and the participle stress that God alone acts and that the act is taking place now. The verb is heqim, the Hiphil of qum, ‘to cause to stand’. Covenants are usually ‘cut’ (karat berit, as in 15:18), and some scholars argue that heqim berit means to confirm or uphold a covenant already in existence, pointing to a commitment implicit in creation or to the promise of 6:18. Others think the verb can simply mean to set up a covenant for the first time. The grammar allows both, and the difference affects how one relates this covenant to Genesis 1.",
+      "words": [
+        "H6965I",
+        "H1285",
+        "H2233H",
+        "H5315K"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's first covenant in the Bible is universal: it includes Noah's descendants without distinction and every living creature. Its benefits reach everyone who lives on the earth, whether they know of it or not, and it is the ground on which the particular covenants with Abraham and Israel will later stand."
+        }
+      ],
+      "refs": [
+        "Genesis 6:18",
+        "Genesis 15:18",
+        "Hosea 2:18",
+        "Jeremiah 33:20-21"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The content of the covenant in one sentence, stated twice for emphasis: all life will not again be cut off by a flood, and there will not again be a flood to destroy the earth. The promise is unconditional; it asks nothing of Noah.",
+      "grammar": "The verb “cut off” is yikkaret, a Niphal of karat, the same verb used for ‘cutting’ a covenant elsewhere. Here God establishes a covenant so that life will not be cut off. The word for “flood”, mabbul, is used in the Old Testament almost only for Noah's flood (Genesis 6 to 11), and once more in Psalm 29:10, where the LORD sits enthroned over the flood. It is a technical term for this event, not the everyday word for a flooding river.",
+      "words": [
+        "H3772I",
+        "H3999",
+        "H7843"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The promise limits the form of judgment, not judgment itself. Scripture continues to speak of God judging the world, and 2 Peter 3:5-7 sets the flood beside a future judgment by fire. What the covenant rules out is another undoing of creation by water, which gives history the stable ground on which God's saving purposes will unfold."
+        }
+      ],
+      "refs": [
+        "Isaiah 54:9-10",
+        "Psalm 29:10",
+        "2 Peter 3:5-7",
+        "Genesis 8:21"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "God gives the covenant a sign: his bow set in the clouds. This is the first of the Bible's covenant signs, and it comes before the sign of circumcision for Abraham (17:11) and the Sabbath for Israel at Sinai (Exodus 31:13-17).",
+      "grammar": "The sign is ot, the word for a visible token that points beyond itself. “I have set” is natatti, a Hebrew perfect, which here can be read as a performative (‘I hereby set’) or as referring to something already done. The choice lies behind a question interpreters ask: did the rainbow first appear after the flood, or did God give an existing phenomenon a new meaning? The text does not say, and the grammar allows either. “For all generations to come” translates ledorot olam, literally ‘for generations of perpetuity’, an expression of unlimited duration.",
+      "words": [
+        "H0226H",
+        "H7198",
+        "H5414H",
+        "H5769G"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "A covenant sign makes a promise visible. This sign is in the sky, where every nation can see it, which fits a covenant made with all humanity. Unlike circumcision or the Sabbath, it requires nothing of those who see it."
+        }
+      ],
+      "refs": [
+        "Genesis 17:11",
+        "Exodus 31:13",
+        "Ezekiel 1:28",
+        "Revelation 4:3"
+      ]
+    },
+    {
+      "v": "14-16",
+      "context": "The sign works in both directions, but the text stresses God's side of it. When clouds gather and the bow appears, God will see it and remember. The storm cloud, which could look like the start of another flood, becomes the place where the promise shows.",
+      "grammar": "Verse 14 contains a play on sound: beannani anan, literally ‘when I cloud a cloud’, pairs a Piel infinitive of the verb anan with the noun anan. The main verbs in verses 14 to 16 are consecutive perfects (vehayah, venirah, vezakharti, ureitiha), which describe what will happen repeatedly whenever the conditions arise. The verb for remembering is zakar, the verb of 8:1: God's remembering Noah turned the flood, and his remembering the covenant will keep it from returning. Verse 16 also has the Bible's first use of berit olam, “everlasting covenant”.",
+      "words": [
+        "H6049A",
+        "H6051",
+        "H2142",
+        "H1285",
+        "H5769G"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God binds his future actions to a visible sign and speaks of remembering it. The language is deliberately human, but the point is his faithfulness: God places his own word where he will see it and pledges to act according to it."
+        },
+        {
+          "id": "covenant",
+          "note": "The phrase “everlasting covenant” first appears here and returns for the covenant with Abraham (17:7), the Sabbath (Exodus 31:16), David (2 Samuel 23:5), and the new covenant (Jeremiah 32:40; Hebrews 13:20). God's covenants are meant to last."
+        }
+      ],
+      "refs": [
+        "Genesis 8:1",
+        "Genesis 17:7",
+        "Isaiah 54:9-10",
+        "Jeremiah 32:40",
+        "Hebrews 13:20"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The covenant speech ends with a closing summary addressed to Noah alone. With this verse the word covenant has been spoken seven times in verses 9 to 17, a number that in Genesis often marks completeness.",
+      "grammar": "In verse 9 the covenant was introduced with a participle, meqim, ‘about to establish’; here it is heqimoti, a perfect: ‘I have established’. The shift in verb form marks the covenant as now in force. The final phrase, kol basar, ‘all flesh’, is the same expression used in 6:12-13 for the corrupt world God resolved to judge; the same ‘all flesh’ is now the object of his covenant.",
+      "words": [
+        "H6965I",
+        "H1320"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The same ‘all flesh’ that was condemned in 6:12-13 is now covered by God's commitment. The covenant does not wait for the world to become righteous; it is given to the world as it is."
+        }
+      ],
+      "refs": [
+        "Genesis 6:12-13",
+        "Genesis 9:9"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "A bridge between the covenant and the story that follows. The three sons are named again, and a new detail is added: Ham was the father of Canaan. The note prepares for the curse in verse 25 and for the table of nations in chapter 10, which traces the whole earth's population to these three.",
+      "grammar": "“From them the whole earth was populated” uses naftsah, from a verb (nafats) meaning ‘to disperse’ or ‘to spread out’, with ‘all the earth’ standing for the earth's people. The spreading is presented here as the fulfillment of the blessing in verses 1 and 7; chapter 11 will show a scattering of another kind.",
+      "words": [
+        "H5310B",
+        "H3667G",
+        "H2526G"
+      ],
+      "history": "The three names became the traditional heads of the world's peoples. The term Semitic, coined by German scholars in the late eighteenth century from the name Shem, now describes a family of languages (including Hebrew, Aramaic, Akkadian, and Arabic), not a race. Genesis 10 groups peoples by land, language, and clan, and its groupings do not line up exactly with modern language families.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Every nation descends from one family that came out of the ark. Paul makes the same point before the council of the Areopagus in Athens: God made every nation of men from one man (Acts 17:26)."
+        }
+      ],
+      "refs": [
+        "Genesis 10:1",
+        "Genesis 10:32",
+        "Acts 17:26"
+      ]
+    },
+    {
+      "v": "20-21",
+      "context": "The new world's first story after the covenant is a failure. Noah, the righteous man, plants a vineyard, drinks its wine, becomes drunk, and lies exposed in his tent. The pattern recalls Eden: a man tied to the ground, fruit taken and consumed, and nakedness that follows.",
+      "grammar": "Vayyachel is the Hiphil of chalal, ‘to begin’. Translations divide over how it connects to the rest of the clause. The BSB reads “Noah, a man of the soil, proceeded to plant a vineyard”; others render ‘Noah was the first tiller of the soil’ or ‘Noah began to be a farmer’. The phrase ish haadamah, ‘man of the ground’, links Noah to the adamah of 3:17 and to Lamech's hope that his son would bring relief from the ground's toil (5:29). “Uncovered himself” is vayyitgal, a Hithpael, a reflexive form: Noah exposed himself. The shame begins with his own act.",
+      "words": [
+        "H2490C",
+        "H0127G",
+        "H3754",
+        "H7937",
+        "H1540I"
+      ],
+      "history": "Grape growing and wine making are very old in the highlands north of Mesopotamia. The Areni-1 cave in Armenia contains a wine-pressing installation that archaeologists have dated to about 4000 BC, among the oldest known. Wine was an ordinary part of life in Israel (Psalm 104:15) and a sign of blessing, while drunkenness was consistently condemned (Proverbs 23:29-35).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The man God called righteous and blameless (6:9) falls within a few verses of the covenant. Genesis does not excuse him or explain the lapse away. The flood removed the violent generation; it did not produce a sinless one, and the Bible's heroes are shown with their failures."
+        }
+      ],
+      "refs": [
+        "Genesis 3:6-7",
+        "Genesis 5:29",
+        "Genesis 6:9",
+        "Psalm 104:15",
+        "Proverbs 23:29-35"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "Ham sees his father's nakedness and tells his brothers outside. Shem and Japheth respond by covering him without looking. The contrast between seeing and telling on one side and not seeing and covering on the other is the whole point of the scene.",
+      "grammar": "Verse 23 describes the brothers' care in exact detail, and the Hebrew says it twice: they walked achoranit, ‘backward’, and their faces were achoranit, ‘turned backward’, so they did not see. The opening verb, vayyiqqach (“took”), is singular although its subject is Shem and Japheth together. When a verb stands before a compound subject, Hebrew often agrees it with the first name only, so the grammar alone need not mean Shem acted first, though some Jewish interpreters read it that way. The garment is hassimlah, ‘the cloak’, with the article, perhaps the outer garment at hand.",
+      "words": [
+        "H6172",
+        "H5046",
+        "H8071",
+        "H0322",
+        "H3680"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Honor for parents is part of the moral order before the fifth commandment is given (Exodus 20:12). The brothers do not deny their father's failure, but they refuse to make a spectacle of it. Proverbs 10:12 and 1 Peter 4:8 speak of love covering offenses in the same spirit."
+        }
+      ],
+      "refs": [
+        "Leviticus 18:7",
+        "Exodus 20:12",
+        "Proverbs 10:12",
+        "1 Peter 4:8",
+        "Habakkuk 2:15"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "Noah wakes, learns what his youngest son did, and speaks a curse. The curse falls not on Ham but on Ham's son Canaan, who is to be the lowest of servants to his brothers. These are the first recorded words of Noah in the Bible.",
+      "grammar": "“Youngest son” translates beno haqqatan, ‘his son the small one’. Genesis always lists the brothers as Shem, Ham, and Japheth, which has led some interpreters to read haqqatan as ‘younger’ rather than ‘youngest’, and others to think the phrase refers to Canaan as Noah's grandson. “Cursed be” is arur, a Qal passive participle, the form God used in 3:14, 3:17, and 4:11. This is the first curse spoken by a human being. “A servant of servants” (eved avadim) is a Hebrew superlative made by joining a noun to its own plural, like ‘holy of holies’ and ‘song of songs’: the lowest of servants.",
+      "words": [
+        "H6996A",
+        "H0779",
+        "H5650",
+        "H3667G"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin's consequences run across generations in this story, as they did from Adam to Cain to Lamech. Scripture holds together two truths that later passages spell out: children often bear the effects of their parents' sins (Exodus 20:5), and each person answers for his own guilt (Ezekiel 18:20)."
+        }
+      ],
+      "refs": [
+        "Genesis 3:14",
+        "Genesis 4:11",
+        "Joshua 9:23",
+        "Ezekiel 18:20"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "Noah's blessing on Shem is phrased as a blessing of Shem's God. The line of promise that will run through Shem to Abraham (11:10-26) is marked here by its relationship to the LORD, not by any quality in Shem himself.",
+      "grammar": "Barukh (‘blessed’) is a Qal passive participle, the counterpart of arur in verse 25. It is directed at YHWH, ‘the God of Shem’, the first time the Bible calls God the God of a particular person, a pattern that becomes ‘the God of Abraham, Isaac, and Jacob’. The last phrase, lamo, is literally ‘to them’. Most translations take it as ‘to him’ (Shem), since lamo can stand for a singular in poetry; others read it as referring to Shem's descendants.",
+      "words": [
+        "H1288",
+        "H3068G",
+        "H8035",
+        "H5650"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The blessing goes to Shem through his God. Genesis will trace the chosen line from Shem to Abram (11:10-26), and here the reader learns that what sets that line apart is the LORD who has attached himself to it."
+        }
+      ],
+      "refs": [
+        "Genesis 11:10",
+        "Genesis 12:1-3",
+        "Exodus 3:6",
+        "Luke 3:36"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "Japheth's blessing is expansion and a share in Shem's tents, and the refrain about Canaan's servitude closes the poem for the third time. Japheth is promised room, and a place beside Shem.",
+      "grammar": "The verse opens with a pun: yaft Elohim leyefet, ‘may God make space for Japheth’. Yaft is a Hiphil of patah, ‘to be wide’, and sounds like the name Yefet. The next clause, “may he dwell in the tents of Shem”, has an ambiguous subject. It can be Japheth, who comes to share Shem's place and blessing, or God, who dwells among Shem's descendants. The Aramaic Targum Onkelos takes it the second way, speaking of God's presence dwelling in the tents of Shem. Most modern translations make Japheth the subject.",
+      "words": [
+        "H6601A",
+        "H3315",
+        "H7931",
+        "H0168G"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Japheth's descendants in chapter 10 include the coastland peoples to the north and west, among them Javan, the Greeks (10:2-5). Many Christian readers have seen a thematic fulfillment in the gospel reaching the Gentile world and bringing them into the blessings first given to Israel (Ephesians 2:13-19), though the verse itself makes no prediction of that kind."
+        }
+      ],
+      "refs": [
+        "Genesis 10:2-5",
+        "Isaiah 66:19",
+        "Ephesians 2:13-19",
+        "Romans 11:17"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "Noah's life is closed with the formula of the genealogy in chapter 5, which his birth (5:28-32) had left open. With his death the account of the world before and through the flood ends, and the next chapter turns to his sons.",
+      "grammar": "The structure is exactly that of 5:5, 8, 11 and the rest: the years after a key event, the total years, and vayyamot, “and then he died”. Noah's story began inside that genealogy, and the old refrain now returns to finish it.",
+      "words": [
+        "H2421",
+        "H4191",
+        "H3999"
+      ],
+      "history": "If the Hebrew numbers of 11:10-26 are added up, Abram is born 292 years after the flood, so Noah, who lived 350 years after it, would still be alive in Abram's early life. The Greek Septuagint and the Samaritan Pentateuch give considerably larger numbers in that genealogy, which removes the overlap. Interpreters also differ on whether the genealogies were meant to be added up as a continuous chronology or may skip generations.",
+      "refs": [
+        "Genesis 5:5",
+        "Genesis 5:32",
+        "Genesis 7:6",
+        "Genesis 11:10-26"
+      ]
+    }
+  ]
+}

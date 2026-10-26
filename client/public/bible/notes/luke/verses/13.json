@@ -1,0 +1,414 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Some in the crowd bring Jesus news of Galileans killed by Pilate while they were offering sacrifices. The report follows directly on his rebuke of people who can read the sky but not ‘this present time’ (12:56), and Luke's opening phrase, ‘at that very time’, ties the two together: here is a piece of the present time, and Jesus will show them how to read it.",
+      "grammar": "Parēsan, ‘were present’, is an imperfect, and apangellontes, ‘reporting’, a present participle: the scene opens with people standing by and passing on news, not with a question. En autō tō kairō, ‘at that very time’, uses kairos, the word Jesus used a moment earlier for the season they fail to interpret (12:56). The relative clause is blunt: hōn to haima Pilatos emixen meta tōn thusiōn autōn, literally ‘whose blood Pilate mixed with their sacrifices’. Emixen, ‘mixed’, is an aorist that states the atrocity as a single act, and the phrase makes the worshipers' own blood part of the offering.",
+      "words": ["G2540", "G0518", "G1057", "G0129G", "G4091", "G3396", "G2378"],
+      "history": "Roman governors normally lived at Caesarea on the coast and came up to Jerusalem with troops at the great festivals, when crowds of pilgrims made unrest likeliest; Luke's own passion narrative finds Pilate in Jerusalem at Passover (23:1-7). Because lay Israelites slaughtered their own animals in the temple court only at Passover (m. Pesahim 5:5-7), the report most naturally describes a clash at that feast. Luke's readers would feel the irony later: when Pilate hears that Jesus is a Galilean, he sends him to Herod (23:6-7), and Jesus himself dies at Passover by Pilate's order.",
+      "refs": ["Luke 12:54-56", "Luke 23:6-7", "Acts 5:37", "Luke 23:12"]
+    },
+    {
+      "v": "2-3",
+      "context": "Jesus names the assumption behind the report before anyone voices it: that victims of such a death must have been worse sinners. He denies it flatly and turns the question on the hearers. The issue is not what the dead had done but what the living will do.",
+      "grammar": "Dokeite hoti ... hamartōloi para pantas tous Galilaious egenonto, ‘do you think that they were sinners beyond all the Galileans’, uses para with the accusative to express comparison, ‘more than’. The reason clause uses a perfect, peponthasin, ‘they have suffered’, a finished event whose result remains: they are dead. Ouchi, legō humin is a strengthened negative, ‘No, I tell you’. The warning is a conditional: ean mē metanoēte, ‘unless you repent’, a present subjunctive, then pantes homoiōs apoleisthe, ‘you will all perish likewise’, a future middle of apollumi, the same verb that will describe the lost sheep, coin, and son in chapter 15. Homoiōs, ‘in the same way’, is the word N. T. Wright presses when he reads the warning as a threat of the same kind of death, by Roman arms, if the nation kept to the road of revolt.",
+      "words": ["G1380", "G1057", "G0268", "G3844", "G3958", "G3780", "G3340", "G3668", "G0622"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The verse breaks the link many of Jesus' hearers drew between a terrible death and a terrible life. Jesus does not explain why the Galileans died; he refuses to let their deaths become evidence against them, the same refusal he makes when his disciples ask whose sin caused a man's blindness (John 9:2-3)."
+        },
+        {
+          "id": "repentance",
+          "note": "Repentance here is not the response of the guilty few but the need of all (pantes). The present subjunctive frames it as a continuing turning, and by addressing it to the survivors Jesus makes every report of disaster a question put to the one who hears it."
+        }
+      ],
+      "refs": ["John 9:2-3", "Job 4:7-8", "Luke 15:7", "Romans 3:23", "Romans 2:4"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus adds a second case himself, one with no human villain: a tower in Siloam that fell and killed eighteen. The same question and the same answer follow word for word, which makes the point unmistakable. Cruelty and accident alike are no measure of the victims' guilt.",
+      "grammar": "Ekeinoi hoi dekaoktō, ‘those eighteen’, stands at the head of the sentence before its verb arrives, a hanging subject that fixes attention on the people before the question is asked. Eph' hous epesen ho purgos, ‘on whom the tower fell’, uses the plain aorist of an event. In place of ‘sinners’ Jesus now says opheiletai, ‘debtors’, a word that reflects the Aramaic habit of speaking of sin as debt (compare Matthew 6:12 with Luke 11:4). Tous katoikountas Ierousalēm, ‘those living in Jerusalem’, widens the comparison from a group of pilgrims to the whole city. Verse 5 repeats verse 3 but for one word: hōsautōs replaces homoiōs, two synonyms for ‘likewise’.",
+      "words": ["G1176", "G4444", "G4611", "G0615", "G3781", "G2730", "G2419", "G5615"],
+      "history": "Siloam lay at the southern tip of the old city of David, where the water brought by Hezekiah's tunnel from the Gihon spring collected in a pool. Isaiah speaks of ‘the waters of Shiloah that flow gently’ (Isaiah 8:6), Nehemiah's builders repaired ‘the wall of the Pool of Shelah’ by the king's garden (Nehemiah 3:15), and John's Gospel sends a blind man to wash there (John 9:7). A tower on the walls above the pool would have stood over a busy public place, which may explain how one collapse took so many lives. No other ancient source mentions it.",
+      "text": "In verse 5 the modern critical editions (Nestle-Aland and the SBL Greek New Testament) read the present subjunctive metanoēte, as in verse 3, while Westcott and Hort's edition and Tregelles printed the aorist metanoēsēte, which a number of early manuscripts have. The aorist would present repentance as a decisive act rather than an ongoing turning. The difference is slight, and English translations cannot show it.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "By choosing an accident as his second example, Jesus rules out reading the events of the world as a ledger of rewards and punishments. God's rule over all things is not denied, but its details are not available for judging the dead, and Ecclesiastes had already observed that time and chance overtake everyone (Ecclesiastes 9:11-12)."
+        }
+      ],
+      "refs": ["Isaiah 8:6", "Nehemiah 3:15", "John 9:7", "Ecclesiastes 9:11-12", "Luke 11:4"]
+    },
+    {
+      "v": "6",
+      "context": "The parable gives the call to repent its time frame. A vineyard owner comes looking for fruit on a fig tree he planted there and finds none. Israel's prophets used both the vineyard and the fig tree for God's people and the fruit he looks for from them.",
+      "grammar": "Elegen, ‘he was saying’, is an imperfect that introduces the parable as part of the same continuing speech. Sukēn eichen tis pephuteumenēn en tō ampelōni autou, ‘a certain man had a fig tree planted in his vineyard’, uses a perfect passive participle, a tree established where it stands, not a wild one. The last clause pairs zētōn karpon, ‘seeking fruit’, with ouch heuren, ‘did not find’. Seeking and finding are the verbs of chapter 15 and of Luke's summary of Jesus' mission (19:10); here the owner seeks and does not find.",
+      "words": ["G3850", "G4808", "G5452", "G0290", "G2212", "G2590", "G2147"],
+      "ot": [
+        {
+          "ref": "Isaiah 5:1-7",
+          "note": "The parable does not quote Isaiah's song of the vineyard, but it draws on the same picture. In the Hebrew the owner digs, clears, plants, builds a tower, and waits for good grapes, and the vineyard yields only rotten ones; the Septuagint speaks of waiting for the vine to ‘make’ grapes, the same idiom as ‘make fruit’ in Luke 13:9. Isaiah's song ends in judgment: the owner will remove the hedge and let the vineyard be trampled (5:5-6). Jesus' parable borrows the setting and the disappointed search but adds a figure Isaiah's song lacks, a vinedresser who pleads for more time."
+        }
+      ],
+      "refs": ["Isaiah 5:1-7", "Micah 7:1", "Jeremiah 8:13", "Hosea 9:10", "Mark 11:12-14"]
+    },
+    {
+      "v": "7",
+      "context": "The owner has come for three years and found nothing, and he orders the tree cut down. His words echo John the Baptist's warning at the start of the Gospel, that every tree not producing good fruit is cut down (3:9), so the parable picks up the call to bear fruit in keeping with repentance (3:8).",
+      "grammar": "Ampelourgos, ‘vinedresser’, the hired or household worker who tends the vines, occurs only here in the New Testament. Idou tria etē aph' hou erchomai, ‘look, three years since I have been coming’, uses a present tense for action begun in the past and still going on, which English renders with a perfect (‘I have come’). Ekkopson, ‘cut it down’, is an aorist imperative, a single decisive act, the verb John the Baptist used (3:9). Hinati kai tēn gēn katargei, ‘why should it even use up the ground?’, uses katargeō, ‘to make idle, render useless’: the barren tree is not merely fruitless but takes water and soil that a fruitful tree could use. Most of the verb's other New Testament uses are in Paul's letters.",
+      "words": ["G0289", "G2400", "G5140", "G2094", "G2064", "G1581", "G2673"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The owner's verdict is just: three years of seeking with nothing found. The parable does not treat judgment as arbitrary or hasty; it is the conclusion of patience that has been refused, which is why the next verse can present mercy as a request for more time rather than a cancellation of the verdict."
+        }
+      ],
+      "refs": ["Luke 3:8-9", "Matthew 3:10", "Isaiah 5:4-6", "John 15:2"]
+    },
+    {
+      "v": "8-9",
+      "context": "The vinedresser asks for one more year, promising to dig around the tree and manure it. If it bears fruit, well and good; if not, the owner may cut it down. The parable ends there, and the reader never learns what the tree did.",
+      "grammar": "Kurie, aphes autēn kai touto to etos, ‘sir, leave it this year too’, uses aphiēmi, ‘to let go, leave alone’, the verb Luke also uses for forgiving (5:20, 11:4, 23:34); here it means to let the tree stand, but the request is for a reprieve. Heōs hotou skapsō ... kai balō kopria, ‘until I dig around it and put on manure’, has two aorist subjunctives for the work the vinedresser takes on himself; kopria, ‘manure’, occurs only here. Verse 9 breaks off in mid-sentence: kan men poiēsē karpon eis to mellon, ‘and if it bears fruit in the coming year...’, with no main clause, a figure grammarians call aposiopesis; English supplies ‘fine’ or ‘well and good’. The second half is complete: ei de mē ge, ekkopseis autēn, ‘but if not, you will cut it down’. The future is the owner's, not the vinedresser's: he will plead, but he will not wield the axe himself.",
+      "words": ["G2962H", "G0863G", "G2094", "G4626", "G2874", "G4160G", "G2590", "G3195", "G1581"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The verses give repentance its setting in time. The extra year is real grace, bought by someone else's labor, but it is a year and not an indefinite future. Paul makes the same connection when he says that God's kindness is meant to lead to repentance (Romans 2:4), and 2 Peter explains the delay of judgment as patience that wants none to perish (2 Peter 3:9)."
+        }
+      ],
+      "refs": ["Romans 2:4", "2 Peter 3:9", "Luke 3:8", "Ezekiel 33:11"]
+    },
+    {
+      "v": "10-11",
+      "context": "The scene changes to a synagogue on a Sabbath, the last time Luke shows Jesus teaching in one. A woman is there who has been bent double for eighteen years by what Luke calls a spirit of weakness. The number eighteen, just used of the tower's victims (verse 4), now measures a long bondage rather than a sudden death.",
+      "grammar": "Ēn didaskōn, ‘he was teaching’, is a periphrastic imperfect that sets the background for what interrupts it. En tois sabbasin, literally ‘on the Sabbaths’, is a plural used for a single Sabbath, as often in the Gospels, perhaps under the influence of the Aramaic form of the word. Pneuma echousa astheneias, ‘having a spirit of weakness’, is a Semitic genitive: a spirit that caused her infirmity. Sugkuptousa, ‘bent together’, occurs only here in the New Testament. The phrase mē dunamenē anakupsai eis to panteles is ambiguous: eis to panteles, ‘completely’, may go with the negative (‘wholly unable to straighten up’) or with the verb (‘unable to straighten up fully’). Commentators are divided, and translations follow both readings.",
+      "words": ["G1321", "G4864", "G4521", "G1135G", "G4151G", "G0769H", "G1176", "G4794", "G0352", "G3838"],
+      "history": "Luke's narrative mentions no request, no faith, and no sin on the woman's part. In Luke's other healings the language of spirits and of illness can overlap (4:39, where Jesus ‘rebukes’ a fever; 8:2, women healed of evil spirits and infirmities), and the text does not describe an exorcism with a spirit speaking or leaving. Luke presents her condition as a weakness Satan has imposed (verse 16), without further diagnosis.",
+      "refs": ["Luke 4:16-21", "Luke 4:38-39", "Luke 6:6", "Luke 8:2"]
+    },
+    {
+      "v": "12-13",
+      "context": "Jesus sees her, calls her over, and declares her released before he touches her. Then he lays his hands on her, she stands straight at once, and she begins to praise God. The whole initiative is his.",
+      "grammar": "Idōn ... prosephōnēsen, ‘seeing her, he called to her’: the sequence of seeing, calling, and speaking puts Jesus in the active role throughout. Gunai, ‘woman’, is a respectful form of address, the same vocative Jesus uses of his mother in John 2:4. Apolelusai tēs astheneias sou, ‘you have been released from your weakness’, is a perfect passive of apoluō: the release is announced as already accomplished and lasting, and the passive leaves God as the implied agent. Only after the word does Jesus lay hands on her (epethēken). Anōrthōthē, ‘she was made straight’, is an aorist passive of anorthoō, used elsewhere of rebuilding David's fallen tent (Acts 15:16) and strengthening weak knees (Hebrews 12:12). Parachrēma, ‘immediately’, is almost exclusively a word of Luke and Acts. Edoxazen, an imperfect, means she began, and went on, glorifying God.",
+      "words": ["G1492H", "G4377", "G1135G", "G0630G", "G0769H", "G2007", "G5495", "G3916", "G0461", "G1392"],
+      "ot": [
+        {
+          "ref": "Psalm 146:7-8",
+          "note": "The Hebrew psalm praises the LORD who sets prisoners free and raises up those who are bowed down (zoqef kefufim). The Septuagint (Psalm 145:7-8) renders these lines with the two verbs at the center of Luke's story: the Lord luei, ‘looses’, the fettered, and anorthoi, ‘makes straight’, those bent down. Luke does not quote the psalm, but his narrative describes a woman bent down who is made straight (anōrthōthē) and loosed (verses 12, 16) in the very words the Greek psalm uses for the LORD's own works."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The healing shows salvation in Luke's full sense: release of the whole person, body included. Jesus pronounces the release first and touches second, so that the word and the hand together enact what he announced at Nazareth, freedom for the oppressed (4:18)."
+        }
+      ],
+      "refs": ["Psalm 146:7-8", "Luke 4:18", "Acts 15:16", "Hebrews 12:12", "Luke 18:43"]
+    },
+    {
+      "v": "14",
+      "context": "The synagogue leader objects, but he does not address Jesus. He lectures the crowd: there are six days for work, so come for healing then. He treats Jesus' act as work and blames the patients for seeking it on the wrong day.",
+      "grammar": "Apokritheis, ‘answering’, has no question to answer; the leader responds to what has happened. Aganaktōn, ‘being indignant’, is a present participle describing his state as he speaks. Elegen tō ochlō is an imperfect, ‘he kept saying to the crowd’. His sentence, hex hēmerai eisin en hais dei ergazesthai, ‘there are six days on which one must work’, uses dei, ‘it is necessary’, the word Jesus will turn back on him in verse 16. Therapeuesthe, ‘be healed’, is a present passive imperative, an instruction to the sick about when to present themselves.",
+      "words": ["G0752", "G0023", "G2323", "G3793", "G1803", "G1163", "G2038", "G4521"],
+      "history": "The archisynagōgos, ‘synagogue ruler’, was the official who oversaw the building and its services. Luke names Jairus as one (8:41), and in Acts the rulers of the synagogue at Pisidian Antioch invite Paul and Barnabas to speak after the reading of the Law and the Prophets (Acts 13:15), while Crispus and Sosthenes hold the office at Corinth (Acts 18:8, 18:17). The leader here speaks as the one responsible for the Sabbath order of his assembly, and his words paraphrase the fourth commandment: six days you shall labor (Exodus 20:9, Deuteronomy 5:13).",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "The leader's reasoning takes the commandment's six days of work as the only time for anything that could count as work. What he omits is the reason Deuteronomy gives for the Sabbath: Israel was a slave in Egypt and the LORD brought it out (Deuteronomy 5:15). Jesus' reply restores that purpose."
+        }
+      ],
+      "refs": ["Exodus 20:9-10", "Deuteronomy 5:13-15", "Luke 6:6-11", "Luke 8:41", "Acts 13:15"]
+    },
+    {
+      "v": "15",
+      "context": "Luke calls Jesus ‘the Lord’ as he answers, and the answer is an argument from everyday practice. Everyone present unties an ox or donkey on the Sabbath and leads it to water. The critic's own conduct refutes his rule.",
+      "grammar": "Ho kurios, ‘the Lord’, is Luke's narrative title for Jesus, used at weighty moments (7:13, 10:1, 18:6). Hupokritai, ‘hypocrites’, is plural: the rebuke reaches beyond the leader to those who share his view. The question expects agreement: hekastos humōn tō sabbatō ou luei ton boun autou ē ton onon apo tēs phatnēs, ‘does not each of you on the Sabbath untie his ox or his donkey from the manger?’ Luei, ‘unties’, is the first use of luō, the verb the next verse will apply to the woman. Phatnē, ‘manger’ or ‘stall’, appears elsewhere in the New Testament only in Luke 2, where the newborn Jesus lies in one. Apagagōn potizei, ‘leading it away, he waters it’, completes the picture of an ordinary Sabbath chore.",
+      "words": ["G2962G", "G5273", "G4521", "G3089", "G1016", "G3688", "G5336", "G0520", "G4222"],
+      "history": "The argument is from the lesser to the greater, a form later rabbis called qal wahomer, ‘light and heavy’, the first of the seven rules of interpretation that the Tosefta attributes to Hillel (t. Sanhedrin 7:11). Jewish practice did allow for animals on the Sabbath: the Mishnah discusses what may be tied and untied (m. Shabbat 15:1-2) and how cattle may be watered at wells (m. Eruvin 2:1-4). The Damascus Document from Qumran shows a stricter line, limiting how far one may follow an animal to pasture on the Sabbath (CD 11:5-6) and forbidding lifting a newborn animal out of a pit (CD 11:13-14). Jesus appeals to the practice his hearers actually followed.",
+      "refs": ["Luke 14:5", "Matthew 12:11-12", "Luke 2:7", "Deuteronomy 22:4"]
+    },
+    {
+      "v": "16",
+      "context": "The conclusion. If an animal may be untied from its stall for a drink, this daughter of Abraham, bound by Satan for eighteen years, must be untied from her bond on the Sabbath. The leader said work ‘must’ be done on six days; Jesus says she ‘must’ be freed on the seventh.",
+      "grammar": "The sentence is built on the wordplay of verse 15. The ox is ‘untied’ (luei); the woman, whom Satan ‘bound’ (edēsen, aorist of deō), must be ‘untied’ (luthēnai, aorist passive infinitive of luō) from her ‘bond’ (desmos). Tautēn de thugatera Abraam ousan, ‘this one, being a daughter of Abraham’, stands first for emphasis, before the verb, as if to say that a daughter of Abraham ranks above an ox. Idou deka kai oktō etē, ‘look, ten and eight years’, spells out the number that verse 11 gave as one word and adds idou to stress the length. Ouk edei, ‘was it not necessary?’, is the imperfect of dei, and it answers the leader's dei of verse 14: God's necessity of release against a human necessity of rules. The passive luthēnai again implies God as the one who looses.",
+      "words": ["G2364", "G0011", "G1210", "G4567", "G1176", "G1163", "G3089", "G1199", "G4521"],
+      "history": "‘Daughter of Abraham’ occurs only here in the New Testament. The Jewish book 4 Maccabees, probably from the first century AD, calls the mother of the seven martyrs a daughter of devout Abraham (4 Maccabees 15:28), honoring her as a true heir of his faith. Jesus gives a crippled woman in a village synagogue the same title of belonging, as he will call Zacchaeus a son of Abraham (19:9).",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Jesus argues that the Sabbath is not merely a day on which release is permitted but the day on which it is fitting, even necessary. The day that remembered the exodus (Deuteronomy 5:15) is the natural day for a daughter of Abraham to be freed from her bondage."
+        },
+        {
+          "id": "suffering",
+          "note": "The verse traces her long illness to Satan's binding, not to her sin, and treats her release as God's will for her. It places human affliction within a conflict that Jesus has come to win, the binding of the strong man (11:21-22), rather than in a ledger of deserving."
+        }
+      ],
+      "refs": ["Luke 19:9", "Luke 11:21-22", "Acts 10:38", "Luke 4:18", "Deuteronomy 5:15"]
+    },
+    {
+      "v": "17",
+      "context": "The episode closes with two reactions: shame for Jesus' opponents and joy for the crowd. The crowd that the leader lectured takes Jesus' side, rejoicing at everything he was doing.",
+      "grammar": "Tauta legontos autou, ‘as he said these things’, is a genitive absolute. Katēschunonto, ‘they were put to shame’, and echairen, ‘was rejoicing’, are both imperfects, describing reactions that unfolded and continued. Pantes hoi antikeimenoi autō, ‘all who opposed him’, uses a present participle of antikeimai, ‘to stand against’. Epi pasin tois endoxois tois ginomenois hup' autou, ‘at all the glorious things being done by him’, uses endoxos, ‘glorious’, for deeds that display God's power; the present participle ginomenois suggests that the woman's healing is one of a continuing series.",
+      "words": ["G2617", "G0480", "G3793", "G5463", "G1741", "G1096"],
+      "ot": [
+        {
+          "ref": "Isaiah 45:16",
+          "note": "Luke's phrase echoes the Greek of Isaiah 45:16, which says that all who oppose him (pantes hoi antikeimenoi autō) will be put to shame. The Hebrew has the makers of idols going off together in disgrace, in an oracle about the LORD, the only God and Savior of Israel; the Septuagint's wording is the one Luke's sentence matches. The joy over his glorious deeds may also recall the Greek of Exodus 34:10, where God promises at the renewal of the covenant to do ‘glorious things’ (endoxa, rendering the Hebrew for marvels) before all the people. Luke uses the language of the LORD's vindication and wonders for what Jesus has just done."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Shame for opponents and joy for the people are how Luke marks the kingdom's arrival: what Jesus does divides the audience. The crowd's joy anticipates the multitude of disciples praising God for all the mighty works as Jesus nears Jerusalem (19:37)."
+        }
+      ],
+      "refs": ["Isaiah 45:16", "Exodus 34:10", "Luke 18:43", "Luke 19:37"]
+    },
+    {
+      "v": "18-19",
+      "context": "Luke connects the parables to the healing with ‘therefore’: what has just happened in one synagogue is what the kingdom is like. It begins as small as a mustard seed and grows into a tree where the birds nest.",
+      "grammar": "Elegen oun, ‘so he said’, uses oun to link the parables to the preceding scene. The double question, tini homoia estin ... kai tini homoiōsō autēn, ‘what is it like, and to what shall I compare it?’, is a traditional way of opening a comparison; Isaiah 40:18 asks to whom God can be likened. Kokkō sinapeōs, ‘a grain of mustard’, uses kokkos, a single seed or grain. Labōn anthrōpos ebalen eis kēpon heautou, ‘which a man took and threw into his own garden’: ebalen is a casual word for sowing. Egeneto eis dendron, literally ‘became into a tree’, is a Semitic way of expressing what something becomes. Kateskēnōsen, ‘nested’ or ‘settled’, is from a verb that means to pitch a tent or take up lodging.",
+      "words": ["G3767", "G3664", "G0932", "G3666", "G2848", "G4615", "G2779", "G0837", "G1186", "G4071", "G2681", "G2798"],
+      "ot": [
+        {
+          "ref": "Daniel 4:12",
+          "note": "In Nebuchadnezzar's dream the great tree has birds of the air nesting in its branches (Daniel 4:12, 4:21), an image of an empire sheltering the peoples, and Ezekiel pictures God planting a cedar sprig on Israel's mountain so that birds of every kind nest under it (Ezekiel 17:23, compare 31:6). Luke's closing words, the birds of the air nesting in its branches, take up this language. The irony is deliberate: the kingdom that will shelter the nations does not start as a cedar or a world empire but as a mustard seed tossed into a garden."
+        }
+      ],
+      "parallels": ["Mark 4:30-32", "Matthew 13:31-32"],
+      "text": "The three Gospels tell the parable differently. Mark has the seed sown on the ground, calls it the smallest of all seeds, and says it becomes the largest of garden plants with branches in whose shade the birds can nest. Matthew has it sown in a field, keeps the contrast of smallest and largest, and says it becomes a tree. Luke omits the contrast of sizes entirely and says only that it grew and became a tree, putting the weight on growth and shelter. The later manuscripts behind the King James Version add ‘great’ to the tree, which the earliest witnesses lack.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Placed after the healing of one woman in one synagogue, the parable says that such small beginnings are the kingdom's real presence, not a preface to it. The birds' nesting points ahead to the gathering of the nations described in verse 29."
+        }
+      ],
+      "refs": ["Ezekiel 17:23", "Daniel 4:12", "Psalm 104:12", "Isaiah 40:18"]
+    },
+    {
+      "v": "20-21",
+      "context": "A second comparison, this one from a woman's work, makes the same point from another angle. A small amount of leaven, hidden in a large quantity of flour, works through all of it.",
+      "grammar": "Kai palin eipen, ‘and again he said’, marks the second parable as a pair to the first, a man in his garden and a woman in her kitchen. Zumē is leaven, sourdough kept back from an earlier batch. Enekrupsen eis aleurou sata tria, ‘hid in three measures of flour’, is literally ‘hid’: the BSB's ‘mixed’ gives the practical sense, but the Greek chooses a word of concealment. Heōs hou ezumōthē holon, ‘until the whole was leavened’, uses an aorist passive for the finished result: nothing is left untouched.",
+      "words": ["G3825", "G3666", "G0932", "G2219", "G1135G", "G1470", "G0224", "G4568", "G5140", "G2220", "G3650"],
+      "text": "Most editions, including Nestle-Aland, read the compound enekrupsen, ‘hid in’, as in Matthew 13:33, while Westcott and Hort's edition and the SBL Greek New Testament print the simple ekrupsen, ‘hid’. The meaning is the same.",
+      "parallels": ["Matthew 13:33"],
+      "history": "Luke's wording is almost identical to Matthew's, which is why most scholars assign the saying to the material Matthew and Luke share beyond Mark. The Gospel of Thomas (saying 96) also has a woman who hides a little leaven in dough and makes large loaves. Three seahs of flour, the amount Sarah prepared for her guests (Genesis 18:6), was a quantity for a feast, not a family's daily bread.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom works from within and out of sight until its effect is total. Leaven was often an image of corruption (12:1, 1 Corinthians 5:6), so the parable is surprising, but Jesus says plainly that the kingdom of God is like it: the image here is of pervasive power, not of impurity."
+        }
+      ],
+      "refs": ["Matthew 13:33", "Genesis 18:6", "Luke 12:1", "Luke 10:21"]
+    },
+    {
+      "v": "22",
+      "context": "A travel notice opens the second half of the chapter. Jesus is still moving through towns and villages, teaching as he goes, and his destination is still Jerusalem, as it has been since 9:51.",
+      "grammar": "Dieporeueto, ‘he was traveling through’, is an imperfect of continuing movement, and kata poleis kai kōmas, ‘town by town and village by village’, is distributive. Poreian poioumenos eis Hierosoluma, ‘making his way to Jerusalem’, uses poreia, ‘a going, a trip’. Luke uses two spellings for the city, Hierosoluma, the Greek form, and Ierousalēm, closer to the Hebrew; the second is the one Jesus uses when he addresses the city in verses 33 and 34.",
+      "words": ["G1279", "G4172", "G2968", "G1321", "G4197", "G2414"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The notice shows that Jesus' teaching in the towns and his road to the cross are one mission. Every stop along the way is part of his going up to Jerusalem to die, which is why the warnings of the following verses carry such urgency."
+        }
+      ],
+      "refs": ["Luke 9:51", "Luke 17:11", "Luke 18:31", "Luke 19:28"]
+    },
+    {
+      "v": "23",
+      "context": "Someone asks whether only a few are being saved. Jesus answers the whole company (‘them’), and he answers with a command rather than a number.",
+      "grammar": "The question begins with ei, literally ‘if’, used to introduce a direct question, a Septuagintal habit Luke repeats in Acts (1:6, 19:2). Oligoi hoi sōzomenoi, ‘few are those being saved’, uses a present passive participle, ‘those who are being saved’, the same form Luke uses of the growing church (Acts 2:47) and Paul of believers (1 Corinthians 1:18). The questioner may be asking about the final number or about the present response to Jesus. Ho de eipen pros autous, ‘he said to them’, turns from the individual to the group.",
+      "words": ["G2962G", "G3641", "G4982"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The question treats salvation as a statistic to be known; Jesus treats it as a door to be entered. Christians have answered the question of number differently, and the chapter note sets out those views; the verse itself turns attention from the count to the hearer's own response."
+        }
+      ],
+      "refs": ["Acts 2:47", "1 Corinthians 1:18", "Acts 1:6", "Matthew 7:13-14"]
+    },
+    {
+      "v": "24",
+      "context": "Jesus commands earnest effort to enter through the narrow door, because many will seek to enter and will not be able. The reason becomes clear in the next verse: there will come a time when the door is shut.",
+      "grammar": "Agōnizesthe, ‘strive’, is a present imperative addressed to all, the vocabulary of athletes and contests. Eiselthein dia tēs stenēs thuras, ‘to enter through the narrow door’, pictures a single doorway, not a broad entrance. The contrast is between agōnizesthe, ‘strive’, and zētēsousin, ‘they will seek’: the many are not indifferent, for they want to enter, but ouk ischusousin, ‘they will not be able’. Most interpreters take the inability as belonging to the time after the door is shut (verse 25), so that what fails them is not effort but timing.",
+      "words": ["G0075", "G1525", "G4728", "G2374", "G4183", "G2212", "G2480"],
+      "text": "The Byzantine manuscripts and the Textus Receptus read pulē, ‘gate’, where the earliest manuscripts have thura, ‘door’, which is why the King James Version reads ‘strait gate’. The change assimilates Luke to Matthew 7:13, where the word is ‘gate’. ‘Door’ is almost certainly Luke's, and it suits the house and the banquet in the verses that follow.",
+      "parallels": ["Matthew 7:13-14"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The command does not make entry a reward for effort, since the door belongs to the master who opens and shuts it. It makes response urgent: faith that enters now, rather than intends to later, is what the verse calls for, and Paul uses the same verb of the effort that grace produces (Colossians 1:29)."
+        }
+      ],
+      "refs": ["Matthew 7:13-14", "John 10:9", "1 Corinthians 9:24-25", "Colossians 1:29"]
+    },
+    {
+      "v": "25",
+      "context": "The picture sharpens into a scene. The master of the house gets up and shuts the door; those outside knock and ask to be let in; he answers that he does not know where they are from.",
+      "grammar": "The verse opens aph' hou an egerthē ho oikodespotēs kai apokleisē tēn thuran, ‘from the time the master of the house rises and shuts the door’, and its link to what surrounds it is debated. Some editors and translators attach it to verse 24 (‘they will not be able, once the master has risen’); others begin a new sentence whose main clause is ‘then you will begin to say’ (verse 26). Either way the aorist subjunctives egerthē and apokleisē mark a decisive moment after which things change. Arxēsthe exō hestanai kai krouein, ‘you begin to stand outside and to knock’, pictures a growing crowd outside. Ouk oida humas pothen este, ‘I do not know you, where you are from’, uses the perfect oida, ‘I know’, of relationship, not information.",
+      "words": ["G1453", "G3617", "G0608", "G2374", "G1854", "G2476", "G2925", "G0455", "G6063", "G4159"],
+      "parallels": ["Matthew 25:10-12", "Matthew 7:22-23"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The door that is now open will be shut, and knocking will not open it once the master has risen. The verse gives judgment the form of a closing time rather than a sudden trap, which is why the command of verse 24 is urgent. Matthew's parable of the ten virgins uses the same scene: the door shut, the cry ‘Lord, open to us’, and the answer that he does not know them (Matthew 25:10-12)."
+        }
+      ],
+      "refs": ["Matthew 25:10-12", "Luke 11:9-10", "Luke 12:36", "Genesis 7:16"]
+    },
+    {
+      "v": "26-27",
+      "context": "Those outside plead their familiarity with Jesus: they ate and drank in his company, and he taught in their streets. The master repeats that he does not know where they are from and sends them away with words from Psalm 6.",
+      "grammar": "Tote arxesthe legein, ‘then you will begin to say’, again pictures a protest that starts and grows. Ephagomen enōpion sou kai epiomen, ‘we ate and drank in your presence’, and en tais plateiais hēmōn edidaxas, ‘in our streets you taught’, are claims that fit Jesus' own contemporaries: they had his company and heard his teaching. Verse 27 repeats the disowning formula and adds apostēte ap' emou pantes ergatai adikias, ‘depart from me, all workers of unrighteousness’, an aorist imperative of aphistēmi. Matthew's form of the saying has the claimants appeal to prophecy and miracles done in Jesus' name (Matthew 7:22); Luke's has them appeal to meals and teaching.",
+      "words": ["G0757", "G5315", "G1799", "G4095", "G4116", "G1321", "G6063", "G4159", "G0868", "G2040", "G0093"],
+      "ot": [
+        {
+          "ref": "Psalm 6:8",
+          "note": "In Hebrew Psalm 6:9 (6:8 in English), a sufferer who has been heard by the LORD turns on his enemies: ‘depart from me, all workers of iniquity’ (suru mimmenni kol-poale aven). The Septuagint renders it apostēte ap' emou pantes hoi ergazomenoi tēn anomian. Matthew 7:23 follows the Septuagint's ‘those working lawlessness’ closely; Luke keeps the opening words but has ergatai adikias, ‘workers of unrighteousness’. In the psalm the words vindicate a faithful sufferer against his enemies; on Jesus' lips they place those who thought themselves his friends among the enemies of the righteous."
+        }
+      ],
+      "parallels": ["Matthew 7:22-23"],
+      "text": "Some manuscripts vary slightly in verse 27, with or without legōn, ‘saying’, and with or without ‘you’ after ‘I do not know’. The sense is unchanged.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Proximity to Jesus is not the same as belonging to him. The verses warn the very people who shared meals with him and heard him teach, and by extension every reader who has been near the church, that familiarity with Jesus can coexist with a life of unrighteousness he disowns."
+        }
+      ],
+      "refs": ["Psalm 6:8", "Matthew 7:22-23", "Luke 6:46", "2 Timothy 2:19"]
+    },
+    {
+      "v": "28",
+      "context": "Outside the door there will be weeping and gnashing of teeth, as those shut out see the patriarchs and all the prophets inside the kingdom while they themselves are thrown out.",
+      "grammar": "Ekei estai ho klauthmos kai ho brugmos tōn odontōn, ‘there will be the weeping and the gnashing of teeth’, has the article on both nouns, marking a known and fixed phrase; it appears only here in Luke but six times in Matthew. Gnashing of teeth in the Old Testament is usually a sign of rage (Psalm 112:10, Psalm 35:16), so the phrase joins grief and anger. Hotan opsēsthe, ‘when you see’, makes sight part of the loss. Humas de ekballomenous exō, ‘but yourselves being thrown out’, uses a present passive participle: the exclusion is pictured in progress.",
+      "words": ["G2805", "G1030", "G3599", "G3700G", "G0011", "G2464", "G2384H", "G4396", "G0932", "G1544", "G1854"],
+      "parallels": ["Matthew 8:11-12"],
+      "theology": [
+        {
+          "id": "hell",
+          "note": "Luke's image of final loss is exclusion from a feast and from the company of Israel's patriarchs and prophets, felt as grief and anger. Christians agree that the warning is real and differ on the nature and duration of the loss it describes; the verse itself stresses separation from the kingdom's joy."
+        }
+      ],
+      "refs": ["Matthew 8:11-12", "Psalm 112:10", "Luke 16:23-26", "Matthew 25:30"]
+    },
+    {
+      "v": "29",
+      "context": "Meanwhile people will come from every point of the compass to recline at table in the kingdom. The kingdom's banquet will be full, and full of those the questioner of verse 23 did not expect.",
+      "grammar": "Hēxousin, ‘they will come’, has no stated subject: the people who come are defined only by where they come from. Apo anatolōn kai dusmōn kai apo borra kai notou, ‘from east and west and from north and south’, names all four directions. Anaklithēsontai, ‘they will recline’, is a future passive in form, ‘they will be made to recline’, the posture of guests at a formal meal, which prepares for the banquet of chapter 14.",
+      "words": ["G2240", "G0395", "G1424", "G1005", "G3558G", "G0347", "G0932"],
+      "ot": [
+        {
+          "ref": "Psalm 107:3",
+          "note": "Psalm 107 opens by calling on the redeemed of the LORD whom he gathered from the lands, from east and west, from north and from the sea (107:3), where ‘the sea’ stands for a fourth direction. Isaiah 43:5-6 has God summon his sons and daughters from east, west, north, and south, and Isaiah 49:12 pictures them coming from far away. In those texts the gathered are scattered Israelites returning from exile. Luke's saying uses the same four-direction language for the kingdom's banquet, and in Luke's larger story it anticipates the gospel going to the ends of the earth (Acts 1:8)."
+        }
+      ],
+      "parallels": ["Matthew 8:11"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The feast of Abraham, Isaac, and Jacob is not for their physical descendants alone. The verse is one of the Gospel's early signs that the gathering of the nations, promised to Abraham (Genesis 12:3), will be part of the kingdom's fulfillment."
+        }
+      ],
+      "refs": ["Psalm 107:3", "Isaiah 43:5-6", "Isaiah 25:6", "Genesis 12:3", "Acts 1:8"]
+    },
+    {
+      "v": "30",
+      "context": "A proverb seals the reversal: some who are last will be first, and some who are first will be last. It applies directly to those who assumed a place at the feast and those who never expected one.",
+      "grammar": "Kai idou eisin eschatoi hoi esontai prōtoi, literally ‘and look, there are last ones who will be first’, has no article on eschatoi and prōtoi and uses the relative hoi: it speaks of some of the last and some of the first, not of all. Luke's form is therefore less sweeping than Mark 10:31 and Matthew 19:30 and 20:16, where the many who are first will be last. Esontai, ‘will be’, is future: the reversal belongs to the coming kingdom, though it begins in Jesus' ministry.",
+      "words": ["G2400", "G2078", "G4413G"],
+      "parallels": ["Mark 10:31", "Matthew 19:30", "Matthew 20:16"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's reversals run through Luke from Mary's song (1:52-53) onward. The saying warns against assuming a place and holds out hope to those who have none, without turning the reversal into a rule that every insider is lost."
+        }
+      ],
+      "refs": ["Luke 1:52-53", "Luke 14:11", "Mark 10:31", "Luke 18:14"]
+    },
+    {
+      "v": "31",
+      "context": "In that same hour some Pharisees warn Jesus to leave because Herod Antipas wants to kill him. Luke does not say whether the warning is friendly, and his portrait of the Pharisees is mixed.",
+      "grammar": "En autē tē hōra, ‘in that very hour’, is a favorite Lucan link (2:38, 10:21, 12:12). Exelthe kai poreuou enteuthen, ‘get out and go away from here’, pairs an aorist imperative, a single decisive departure, with a present imperative of continuing travel. Hērōdēs thelei se apokteinai, ‘Herod wants to kill you’, uses thelō, the verb that will return twice in verse 34 for Jesus' wish and Jerusalem's refusal.",
+      "words": ["G5610", "G4334", "G5330", "G1831", "G4198", "G1782", "G2264H", "G2309", "G0615"],
+      "text": "The earliest manuscripts read hōra, ‘hour’; the later manuscripts behind the King James Version read hēmera, ‘day’, hence ‘the same day’. The difference is small.",
+      "history": "Luke has already shown Antipas imprisoning John (3:19-20) and, after beheading him, perplexed by reports about Jesus and wanting to see him (9:7-9). The wish is fulfilled in the passion narrative, where Pilate sends Jesus to Herod, who hopes to see a sign, mocks him, and returns him (23:8-12). In the Old Testament the priest Amaziah told the prophet Amos to flee back to Judah rather than prophesy at the king's sanctuary (Amos 7:12-13); whether friendly or hostile, the advice to move on is advice a prophet may refuse.",
+      "refs": ["Luke 9:7-9", "Luke 23:8-12", "Luke 3:19-20", "Amos 7:12-13", "Acts 5:34-39"]
+    },
+    {
+      "v": "32",
+      "context": "Jesus sends a message back to Herod, calling him ‘that fox’. He will go on casting out demons and healing today and tomorrow, and on the third day he will reach his goal. Herod does not set his schedule.",
+      "grammar": "Poreuthentes eipate tē alōpeki tautē, ‘go and tell this fox’, uses alōpēx, which is feminine in Greek whatever the animal's sex; the gender says nothing about Herod. Ekballō daimonia kai iaseis apotelō, ‘I cast out demons and complete healings’, uses present tenses for work that continues regardless of the threat. Sēmeron kai aurion kai tē tritē, ‘today and tomorrow and on the third day’, is a Semitic expression for a short, fixed span, with the third day as its end (compare Exodus 19:10-11, Hosea 6:2). Teleioumai, ‘I reach my goal’, can be read as middle, ‘I finish my course’, or as passive, ‘I am brought to completion’, and the passive would imply that God completes him. Hebrews uses the same verb of Christ ‘made perfect’ through suffering (Hebrews 2:10, 5:9).",
+      "words": ["G4198", "G0258", "G2400", "G1544", "G1140", "G2392", "G0658", "G4594", "G0839", "G5154", "G5048"],
+      "history": "Jesus' only other mention of foxes in Luke is that foxes have dens but the Son of Man has nowhere to lay his head (9:58). Calling a ruling tetrarch a fox was not a compliment to his cleverness alone: in Jewish usage the fox was a small, destructive creature (Nehemiah 4:3, Ezekiel 13:4), a nuisance rather than a lion.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Jesus' course is fixed by God, not by a king's threats. The verse sets the ‘today and tomorrow’ of his work and the ‘third day’ of its completion under God's appointment, a theme that reaches its height when the risen Christ says the Messiah had to suffer and rise on the third day (24:46)."
+        }
+      ],
+      "refs": ["Luke 9:58", "Hosea 6:2", "Hebrews 2:10", "Luke 24:46", "John 19:30"]
+    },
+    {
+      "v": "33",
+      "context": "Nevertheless, Jesus must keep going, because it is unthinkable that a prophet should perish outside Jerusalem. The threat from Herod is real but beside the point: Jesus is going to the place where prophets die.",
+      "grammar": "Plēn, ‘nevertheless’, turns from what Jesus will do regardless of Herod to what he must do. Dei me ... poreuesthai, ‘it is necessary for me to keep going’, is the third dei in the chapter (verses 14, 16) and the word Luke uses for God's plan for Jesus (9:22, 17:25, 24:7, 24:26). Tē echomenē, ‘on the next’, supplies ‘day’. Ouk endechetai, ‘it is not possible, not admissible’, occurs only here in the New Testament. Prophētēn apolesthai exō Ierousalēm, ‘a prophet to perish outside Jerusalem’, uses apollumi once more, the chapter's verb for perishing (verses 3 and 5).",
+      "words": ["G4133", "G1163", "G4594", "G0839", "G2192", "G4198", "G1735", "G4396", "G0622", "G1854", "G2419"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Jesus counts himself among the prophets (4:24), and the disciples on the Emmaus road will call him a prophet mighty in deed and word (24:19). The verse shows the prophetic office carried to its end: the prophet does not merely speak God's word to Jerusalem but dies there at its hands, as Stephen will charge (Acts 7:52)."
+        }
+      ],
+      "refs": ["Luke 4:24", "Luke 9:22", "Luke 9:51", "Luke 24:19", "Acts 7:52"]
+    },
+    {
+      "v": "34",
+      "context": "Jesus addresses the city directly, grieving over its history of killing the prophets and over its refusal of his many attempts to gather its children as a hen gathers her brood. The lament holds judgment and longing together.",
+      "grammar": "The doubled vocative, Ierousalēm Ierousalēm, is the form of intense address, as in ‘Martha, Martha’ (10:41) or ‘Simon, Simon’ (22:31). Hē apokteinousa tous prophētas kai lithobolousa tous apestalmenous pros autēn, ‘who kills the prophets and stones those sent to her’, uses present participles to describe the city's settled character, not a single act; apestalmenous is a perfect passive participle, ‘those who have been sent’, implying a sender. Posakis ēthelēsa episunaxai ta tekna sou, ‘how often I wanted to gather your children’, and kai ouk ēthelēsate, ‘and you were not willing’, set the same verb, thelō, against itself: his will and theirs. Hon tropon ornis tēn heautēs nossian hupo tas pterugas, ‘as a bird gathers her own brood under her wings’, uses ornis, ‘bird’, commonly a hen, and nossia, ‘brood’, as a collective singular, where Matthew has the plural ‘chicks’.",
+      "words": ["G2419", "G0615", "G4396", "G3036", "G0649", "G4212", "G2309", "G1996", "G5043", "G3733", "G3555", "G4420"],
+      "parallels": ["Matthew 23:37"],
+      "history": "Matthew places the lament in the temple during the last week, after the triumphal entry; Luke places it on the road, before Jesus reaches the city. Luke's order makes the lament's final line point forward to the entry of 19:38. The charge of stoning recalls Zechariah son of Jehoiada, stoned in the temple court at the king's command (2 Chronicles 24:20-22), whom Jesus has already named as the last of the prophets whose blood would be required of this generation (11:50-51).",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus speaks of wanting to gather Jerusalem ‘how often’, as if his longing reached back through the whole history of the prophets, and he uses a picture Scripture applies to God's own care (Deuteronomy 32:11, Psalm 91:4). The judgment that follows is announced by someone who grieves it."
+        },
+        {
+          "id": "election",
+          "note": "The verse sets God's expressed desire to gather against human refusal, and it has been read on both sides of the debate over grace and freedom. Arminian and many Catholic and Orthodox readers take it as evidence that God's saving will can be resisted; Reformed readers, following Calvin's comment on the Matthean parallel, distinguish God's will revealed in the call of the word from his hidden decree. Both agree that the refusal is real and culpable."
+        }
+      ],
+      "refs": ["2 Chronicles 24:20-22", "Luke 11:47-51", "Deuteronomy 32:11", "Psalm 91:4", "Luke 19:41-44"]
+    },
+    {
+      "v": "35",
+      "context": "The lament ends with a sentence of abandonment and a promise. Their house is left to them, and they will not see Jesus until they say the words of Psalm 118:26, ‘Blessed is He who comes in the name of the Lord’.",
+      "grammar": "Idou aphietai humin ho oikos humōn, ‘look, your house is left to you’, is a present passive: the abandonment is under way. The house is now ‘your’ house, not God's, and ‘house’ can mean the temple, the city, or the ruling family; the three overlap. Ou mē idēte me, ‘you will certainly not see me’, is the emphatic double negative with the aorist subjunctive, the strongest way Greek can deny a future event. Heōs [hēxei hote] eipēte, ‘until [the time comes when] you say’, has a temporal clause whose wording varies in the manuscripts. Eulogēmenos ho erchomenos en onomati kuriou, ‘blessed is the one coming in the name of the Lord’, is a perfect passive participle, ‘one who stands blessed’.",
+      "words": ["G2400", "G0863G", "G3624G", "G1492H", "G2240", "G2036", "G2127", "G2064", "G3686", "G2962G"],
+      "ot": [
+        {
+          "ref": "Psalm 118:26",
+          "note": "The Hebrew reads barukh habba beshem YHWH, ‘blessed is the one who comes in the name of the LORD’, a greeting spoken over a worshiper, or a king, arriving at the temple gate in a psalm of thanksgiving for deliverance. Psalm 118 was part of the Hallel, the psalms sung at the great festivals, including Passover. The Septuagint (Psalm 117:26) has eulogēmenos ho erchomenos en onomati kuriou, and Luke's wording matches it exactly. Luke uses the verse twice: here as the condition for Jerusalem's seeing Jesus again, and at 19:38, where the disciples shout it as he descends the Mount of Olives, adding ‘the King’."
+        },
+        {
+          "ref": "Jeremiah 12:7",
+          "note": "The announcement that the house is abandoned echoes the prophets' language of God leaving his temple and people. In Jeremiah 12:7 the LORD says he has forsaken his house and abandoned his inheritance, and in Jeremiah 22:5 he swears that the king's house will become a ruin if his words are not heard. Jesus speaks as those prophets spoke, with the same grief and the same warning."
+        }
+      ],
+      "parallels": ["Matthew 23:38-39"],
+      "text": "The chapter note describes the addition of erēmos, ‘desolate’, which the BSB prints. In the second half of the verse Nestle-Aland and the SBL edition include the words hēxei hote, ‘the time comes when’, which Westcott and Hort and the Tyndale House Greek New Testament omit; the difference affects only how the future moment is expressed.",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "How this ‘until’ is fulfilled is debated. Some read it as fulfilled at the entry into Jerusalem (19:38), though there it is the disciples, not the city, who say the words. Others see a welcome of the returning Christ by Jerusalem at the end, a hope that fits Paul's expectation for Israel (Romans 11:25-27). Dale C. Allison argued that the saying is a conditional prophecy: when Jerusalem blesses him, he will come (Journal for the Study of the New Testament 18, 1983). All three readings hold that judgment is not Jesus' last word to the city."
+        },
+        {
+          "id": "hope",
+          "note": "The lament ends not with the abandoned house but with a future greeting. Even in announcing judgment Jesus names the words by which the city will one day receive him."
+        }
+      ],
+      "refs": ["Psalm 118:26", "Luke 19:38", "Jeremiah 12:7", "Jeremiah 22:5", "Romans 11:25-27"]
+    }
+  ]
+}

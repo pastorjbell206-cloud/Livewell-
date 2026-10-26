@@ -1,0 +1,366 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with a summary of Abraham's life near its end: he is old, and the LORD has blessed him in everything. The one thing still unsettled is the next generation, and the rest of the chapter addresses it.",
+      "grammar": "The verse begins with the subject, ve'Avraham zaqen, ‘now Abraham was old’, a clause that sets the background rather than moving the plot. Ba bayyamim, literally ‘come into the days’, is the Hebrew idiom for advanced age (Genesis 18:11, Joshua 13:1). Berakh... bakkol, \"had blessed him in every way\", picks up the key word of Abraham's call, bless (Genesis 12:2-3), and declares it fulfilled in his own life.",
+      "words": ["H2204", "H0935J", "H1288", "H3605"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The narrator sums up Abraham's long life under one verdict: the LORD blessed him. The chapter that follows shows that blessing extending to his son through events that look entirely ordinary."
+        }
+      ],
+      "refs": ["Genesis 12:2", "Genesis 18:11", "Joshua 13:1", "1 Kings 1:1"]
+    },
+    {
+      "v": "2",
+      "context": "Abraham calls his senior servant, the one who manages everything he owns, and asks him to take a solemn oath. The servant is never named in the chapter; he is defined entirely by his master and his task.",
+      "grammar": "The servant is avdo zeqan beto, ‘his servant, the elder of his house’, probably meaning the senior or chief servant, and hammoshel bekhol, \"who managed all\", literally ‘who ruled over all’. The oath gesture uses yarekh, \"thigh\". Hebrew uses the same word for the loins as the source of descendants: Jacob's offspring are literally ‘those who came out of his thigh’ (Genesis 46:26, Exodus 1:5). The gesture ties the oath to Abraham's offspring, the very matter the oath concerns. Sim-na, \"Place\", includes the particle na, a request rather than a bare command.",
+      "words": ["H5650", "H2205H", "H4910", "H3409"],
+      "history": "Many readers identify this servant with Eliezer of Damascus, whom Abraham once named as his likely heir (Genesis 15:2). The identification is possible, since Eliezer held a similar position, but Genesis 24 never gives the servant a name, and decades have passed since chapter 15.",
+      "refs": ["Genesis 15:2", "Genesis 47:29", "Genesis 46:26", "Exodus 1:5"]
+    },
+    {
+      "v": "3-4",
+      "context": "The oath has two sides: not a Canaanite wife, but a wife from Abraham's own land and kindred. The servant is sent back along the road Abraham traveled when God first called him.",
+      "grammar": "Ve'ashbi'akha is a Hiphil of shava, ‘I will make you swear’. The title \"the God of heaven and the God of earth\" names the LORD as ruler of all, which matters for a mission outside Canaan: the God who sends the servant is not a local god. \"God of heaven\" appears here and in verse 7 for the first time, a title that later becomes common in the Persian period (Ezra 1:2, Nehemiah 1:4) and that Jonah uses to identify his God to foreign sailors (Jonah 1:9). In verse 4 artsi umoladti, \"my country and my kindred\", repeats the words of God's call in Genesis 12:1, ‘from your country and your kindred’. The servant is to go back the way Abraham came, so that Isaac need not.",
+      "words": ["H7650", "H8064", "H3669A", "H4138"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Abraham's concern is not only kinship but faith: his heir must not be absorbed into the peoples of the land. Israel's law later forbids marriage with the Canaanites for the same reason, that they would turn hearts to other gods (Deuteronomy 7:3-4), and Paul asks believers to marry ‘in the Lord’ (1 Corinthians 7:39)."
+        }
+      ],
+      "refs": ["Genesis 12:1", "Deuteronomy 7:3-4", "Genesis 26:34-35", "Jonah 1:9", "1 Corinthians 7:39"]
+    },
+    {
+      "v": "5-6",
+      "context": "The servant raises a practical objection: what if the woman will not come? Should Isaac go to her? Abraham's answer is immediate and absolute. Isaac must never go back.",
+      "grammar": "The servant's question begins with ulay, ‘perhaps’, and uses an infinitive absolute to intensify it: hehashev ashiv, ‘shall I really take back?’ Abraham answers with hishamer lekha pen, \"Make sure that you do not\", literally ‘guard yourself lest’, one of the strongest forms of warning in Hebrew, used in Deuteronomy for the danger of forgetting the LORD (Deuteronomy 6:12). The verb shuv in the Hiphil, ‘cause to return’, appears in both speeches: the servant asks about it, and Abraham forbids it.",
+      "words": ["H0194", "H0014", "H7725G", "H8104J", "H6435"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Isaac is bound to the land God promised. To return to Mesopotamia would reverse Abraham's call. The covenant's promise of land governs even the choice of Isaac's wife."
+        }
+      ],
+      "refs": ["Genesis 12:1-7", "Deuteronomy 6:12", "Hebrews 11:15-16"]
+    },
+    {
+      "v": "7-8",
+      "context": "These are Abraham's last recorded words in Genesis. He grounds the mission in God's past acts (calling him out) and God's sworn promise (the land for his offspring), and he expects God to go ahead of the servant. If the woman refuses, the servant is free; but Isaac must not go back.",
+      "grammar": "Abraham piles up three relative clauses about the LORD: ‘who took me... who spoke to me... who swore to me’. The verb laqach, ‘took’, is the same verb the servant is to use of taking a wife (verse 4): the God who took Abraham will enable the servant to take Rebekah. Then an emphatic pronoun, hu yishlach, ‘he himself will send’, puts God in charge of the outcome. Verse 8 gives the oath's release clause with naqah, ‘to be clear, free of obligation’: venikkita mishshevu'ati, \"you are released from this oath of mine\". The woman's willingness is built into the oath.",
+      "words": ["H3947G", "H7650", "H4397H", "H5352", "H7621"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Abraham expects God's angel to go before the servant, yet he also allows that the woman may refuse. God's guidance and a person's free consent stand side by side in the same speech, and the chapter will honor both."
+        },
+        {
+          "id": "angels",
+          "note": "The angel here is never seen. His work is described only by its results, a road that goes right, which is how Scripture often presents the unseen help of God's messengers (Exodus 23:20, Psalm 91:11)."
+        }
+      ],
+      "refs": ["Exodus 23:20", "Psalm 91:11", "Genesis 12:7", "Genesis 15:18"]
+    },
+    {
+      "v": "9",
+      "context": "The servant places his hand as Abraham asked and swears. The first scene closes with the servant bound to his master's purpose.",
+      "grammar": "Adonav, ‘his master’, is plural in form (literally ‘his masters’), though it refers to Abraham alone. Hebrew often uses the plural of adon for a single owner or lord as a mark of rank; the same form is used of Joseph as ‘the lord of the land’ (Genesis 42:30). The chapter uses ‘my master’ more than twenty times, keeping the servant's loyalty always in view.",
+      "words": ["H0113", "H3409", "H7650"],
+      "refs": ["Genesis 42:30", "Genesis 47:29"]
+    },
+    {
+      "v": "10",
+      "context": "The servant sets out with ten camels and a selection of his master's best goods, bound for the town of Nahor in upper Mesopotamia. The wealth he carries will serve as evidence of Abraham's blessing (verse 35) and as betrothal gifts (verse 53).",
+      "grammar": "Aram-naharayim, \"Aram-naharaim\", ends in the Hebrew dual, ‘two rivers’, so the name means Aram of the two rivers. Vekhol-tuv adonav beyado, literally ‘and all the good of his master in his hand’, can mean he took every kind of valuable, or that all his master's goods were under his authority.",
+      "words": ["H1581", "H2898", "H0763G", "H5152H"],
+      "history": "Aram-naharaim appears later as Balaam's homeland (Deuteronomy 23:4) and as the kingdom of Cushan-rishathaim, the first oppressor in Judges (Judges 3:8). The region lay in the great bend of the Euphrates, where Abraham's family had settled at Harran (Genesis 11:31).",
+      "refs": ["Genesis 11:31", "Deuteronomy 23:4", "Judges 3:8", "Genesis 27:43"]
+    },
+    {
+      "v": "11",
+      "context": "The servant arrives at evening and has the camels kneel by the well outside the town at the hour when women come out to draw water. He places himself where the right woman is most likely to appear.",
+      "grammar": "Vayyavrekh, \"made... kneel\", is a Hiphil of a verb meaning to kneel; it is spelled with the same consonants as barakh, ‘to bless’, the key word of verse 1, and a Hebrew reader hears the echo. Hasho'avot, ‘the women drawing water’, is a feminine plural participle, naming an activity that belonged to women.",
+      "words": ["H1288", "H0875", "H6153", "H7579"],
+      "history": "Scenes at wells recur in Scripture as places of meeting: Jacob meets Rachel at a well (Genesis 29:2-10), Moses defends the daughters of Reuel at one (Exodus 2:15-17), and Saul meets girls going out to draw water (1 Samuel 9:11). Wells outside a town were public spaces where strangers could be seen and approached.",
+      "refs": ["Genesis 29:2-10", "Exodus 2:15-17", "1 Samuel 9:11", "John 4:6-7"]
+    },
+    {
+      "v": "12-14",
+      "context": "The servant prays for guidance in a specific decision. He names God as the God of his master, asks for success today, and proposes a sign: the woman who offers to water his camels as well as himself.",
+      "grammar": "Haqreh-na lefanai hayyom, \"please grant me success today\", uses the Hiphil of qarah, ‘to happen’ or ‘to meet by chance’: literally ‘make it happen before me today’. The servant asks God to arrange what would otherwise look like coincidence; Ruth 2:3 uses the related noun when Ruth ‘happened’ to come to Boaz's field. He asks God to ‘do chesed’ with Abraham (see verse 27). In verse 14 hokhachta, \"You have appointed\", is from yakach, a verb for deciding a case: the woman will be the one God has adjudged for Isaac.",
+      "words": ["H7136A", "H2617A", "H3198", "H3537", "H5291"],
+      "text": "The Hebrew consonants for ‘girl’ in verses 14, 16, and 28 spell na'ar, which elsewhere means a young man, but the vowels direct the reader to say na'arah, ‘young woman’. This is a regular feature of the Pentateuch's traditional text, which writes the word without its feminine ending in most of its occurrences. It reflects an older spelling and does not affect the meaning.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The servant's prayer is specific, humble, and grounded in God's commitment to someone else. He asks not for his own sake but for his master's, appealing to God's chesed. Prayer here is an act of dependence in the middle of an ordinary task."
+        }
+      ],
+      "refs": ["Ruth 2:3", "Judges 6:36-40", "Proverbs 16:9", "Philippians 4:6"]
+    },
+    {
+      "v": "15",
+      "context": "The answer arrives before the prayer ends. Rebekah comes out with her jar on her shoulder, and the narrator immediately tells the reader who she is, though the servant does not yet know.",
+      "grammar": "Hu terem killah ledabber, \"Before the servant had finished praying\", literally ‘he had not yet finished speaking’, and then vehinneh, ‘and look’, shifting to what the servant sees. Terem, ‘not yet’, makes the timing the point. The genealogy that follows (\"daughter of Bethuel son of Milcah\") matches Genesis 22:20-23 and tells the reader that she fulfills Abraham's condition, though the servant will learn it only in verse 24.",
+      "words": ["H2962", "H3615G", "H2009", "H7259"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "God answers before the request is complete, the pattern Isaiah 65:24 states as promise and Daniel 9:20-23 describes as experience. The answer was already on its way when the servant began to pray."
+        }
+      ],
+      "refs": ["Isaiah 65:24", "Daniel 9:20-23", "Genesis 22:23", "Matthew 6:8"]
+    },
+    {
+      "v": "16",
+      "context": "The narrator describes Rebekah: very beautiful, unmarried, and a virgin. Then he shows her at work, going down to the spring and coming up with a full jar.",
+      "grammar": "Tovat mar'eh me'od, ‘very good of appearance’, puts Rebekah alongside Sarah (Genesis 12:11) and Rachel (Genesis 29:17) among the beautiful matriarchs. Betulah, \"virgin\", is followed by a clause that makes its sense explicit: \"who had not had relations with any man\", literally ‘no man had known her’. Some scholars take the added clause as a sign that betulah could be used more broadly of a young woman of marriageable age, so that the narrator needed to make it precise; others read the clause as simple emphasis. The verbs ‘went down... filled... came up’ picture a spring reached by steps.",
+      "words": ["H4758", "H1330", "H3045", "H3381"],
+      "refs": ["Genesis 12:11", "Genesis 29:17", "Deuteronomy 22:19"]
+    },
+    {
+      "v": "17-18",
+      "context": "The servant runs to meet her and asks for a little water. Rebekah answers with courtesy and quick action.",
+      "grammar": "The servant's request uses hagmi'ini, a rare Hiphil of gama, ‘let me sip’ or ‘let me swallow’: he asks for very little. She answers with the plain verb for drink, sheteh, and calls him adoni, \"my lord\", a polite form of address to a stranger. Vattemaher, ‘she hurried’, the first of several verbs of haste used of her (verses 18, 20), shows her readiness to serve.",
+      "words": ["H1572", "H4592", "H8354", "H4116A"],
+      "refs": ["John 4:7", "Matthew 10:42", "Hebrews 13:2"]
+    },
+    {
+      "v": "19-20",
+      "context": "Without being asked, Rebekah offers to water all the camels until they have finished, exactly what the servant had set as his sign. She empties her jar into the trough and runs back again and again.",
+      "grammar": "\"Until they have had enough to drink\" is literally ‘until they have finished drinking’, the same verb killah used for the servant finishing his prayer (verse 15). The verbs of verse 20 are rapid: she hurried, emptied, ran, drew. Shoqet, \"trough\", is a rare word, used again only in Genesis 30:38 for the troughs where Jacob waters Laban's flocks.",
+      "words": ["H3615G", "H7579", "H6168", "H8268", "H7323G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The answer to the prayer comes through a woman's free and generous action. God guides here not by overriding character but by working through it: the sign the servant chose was a test of kindness, and Rebekah passes it by being who she is."
+        }
+      ],
+      "refs": ["Genesis 30:38", "Proverbs 31:13-20", "Genesis 18:6-7"]
+    },
+    {
+      "v": "21",
+      "context": "The servant watches in silence, not yet ready to conclude that his prayer has been answered. Before speaking he waits to see the whole sign fulfilled.",
+      "grammar": "Two participles describe his stance: mishta'eh, a Hithpael of sha'ah, ‘gazing intently’, and macharish, a Hiphil of charash, ‘keeping silent’. The purpose clause, ‘to know whether the LORD had prospered his way or not’, uses tsalach in the Hiphil, ‘to make successful’, a key word of the chapter (verses 21, 40, 42, 56). The Hebrew derekh, ‘way’ or ‘road’, becomes a theme of its own: the servant is on the LORD's road.",
+      "words": ["H7583", "H2790B", "H6743B", "H1870L"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The servant has prayed for a sign, but he does not rush to claim it. Wisdom waits and watches before concluding that God has spoken, even when the evidence seems to be arriving."
+        }
+      ],
+      "refs": ["Psalm 37:7", "Proverbs 19:2", "Genesis 39:2-3"]
+    },
+    {
+      "v": "22",
+      "context": "When the camels have finished drinking, the servant brings out gold jewelry: a ring and two heavy bracelets. The gift signals that he has recognized her.",
+      "grammar": "Nezem is a ring, and verse 47 shows it was a nose ring. Its weight, a beqa, is named from a verb meaning to split: it was a half-shekel, as Exodus 38:26 explains (a beka per person, half a shekel). Tsemidim, \"bracelets\", come from a root meaning to bind or fasten, and ten shekels of gold for two bracelets is a substantial weight.",
+      "words": ["H5141", "H1235", "H6781A", "H4948", "H2091"],
+      "history": "The shekel was a weight, roughly eleven grams, so the ring weighed around five or six grams and the pair of bracelets over a hundred grams of gold. Jewelry was a common form of portable wealth in the ancient Near East, and nose rings are listed among women's ornaments in Isaiah 3:21.",
+      "refs": ["Exodus 38:26", "Isaiah 3:21", "Ezekiel 16:11-12"]
+    },
+    {
+      "v": "23-25",
+      "context": "The servant asks two questions: whose daughter she is, and whether there is room to stay. Rebekah answers both, and then, as with the water, offers more than was asked: straw, feed, and lodging.",
+      "grammar": "Bat-mi at, ‘daughter of whom are you?’, puts ‘daughter’ first, the natural way to ask about family. Rebekah answers \"I am the daughter of Bethuel\" and names her grandmother Milcah, Nahor's principal wife, not the concubine Reumah (Genesis 22:24): she is from the main line of Abraham's brother. The servant asked for maqom lalun, ‘a place to lodge’; she adds gam-teven gam-mispo, ‘both straw and fodder’, with a repeated gam, ‘both... and’, that stresses the abundance.",
+      "words": ["H1323G", "H4435G", "H8401", "H4554", "H3885A"],
+      "refs": ["Genesis 22:20-24", "Genesis 19:2-3", "Romans 12:13"]
+    },
+    {
+      "v": "26-27",
+      "context": "The servant's first response to the answer is worship. He bows, then blesses the LORD aloud, naming both what God did for Abraham and what God did for him.",
+      "grammar": "Vayyiqqod vayyishtachu, ‘he bowed his head and prostrated himself’, pairs two verbs of worship that recur together at moments of recognition (Exodus 4:31, 12:27). The blessing formula barukh YHWH, \"Blessed be the LORD\", was spoken earlier by Noah (Genesis 9:26) and Melchizedek (Genesis 14:20). The second half of verse 27 fronts the pronoun: anokhi baderekh nachani YHWH, ‘as for me, on the road the LORD led me’. Nachah, to lead or guide, is the verb of Psalm 23:3, where the LORD guides in paths of righteousness.",
+      "words": ["H6915", "H7812", "H2617A", "H0571G", "H5148"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The servant interprets a meeting at a well as God's leading. Scripture treats such recognition as part of faith: providence is seen, named, and thanked for, not merely assumed."
+        },
+        {
+          "id": "prayer",
+          "note": "Thanksgiving follows the answer immediately and is spoken aloud before anyone else. The servant's prayer life has two movements in one scene: asking (verses 12-14) and blessing (verse 27)."
+        }
+      ],
+      "refs": ["Exodus 4:31", "Psalm 23:3", "Genesis 14:20", "Exodus 34:6"]
+    },
+    {
+      "v": "28-29",
+      "context": "Rebekah runs home with the news, and her brother Laban runs out to the stranger. The narrator introduces Laban here, and he will be a major figure in Jacob's story (Genesis 29-31).",
+      "grammar": "Rebekah runs to beit immah, \"her mother's household\", a phrase used elsewhere for the women's part of a family (Ruth 1:8, Song of Solomon 3:4). Its use here may suggest that her father was not the active head of the house, which fits verses 53 and 55, where only her brother and mother are mentioned. Laban is introduced with a formal note, ‘and Rebekah had a brother, and his name was Laban’, before he acts.",
+      "words": ["H7323G", "H0517", "H3837A", "H5869M"],
+      "refs": ["Ruth 1:8", "Song of Solomon 3:4", "Genesis 29:13"]
+    },
+    {
+      "v": "30-31",
+      "context": "Laban comes out once he sees the jewelry and hears his sister's story, and he greets the servant warmly as one blessed by the LORD. The narrator's order (first the ring and bracelets, then the words) quietly prepares for the Laban of later chapters, who has a sharp eye for wealth.",
+      "grammar": "Kir'ot et-hannezem, ‘when he saw the ring’, comes first in the sentence, before any mention of hearing Rebekah's words. Laban's greeting, bo berukh YHWH, \"Come, you who are blessed by the LORD\", uses the passive participle of barakh with the covenant name. Pinniti habbayit, \"I have prepared the house\", is a Piel of panah, ‘to turn’, here meaning to clear or make ready.",
+      "words": ["H5141", "H6781A", "H1288", "H6437G"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Laban speaks the name of the LORD, yet later his household keeps teraphim, household idols, which Rachel steals and Laban calls ‘my gods’ (Genesis 31:19, 30). Abraham's relatives knew the name of Abraham's God without belonging to him alone, which is part of why Joshua 24:2 remembers that the fathers beyond the River served other gods."
+        }
+      ],
+      "refs": ["Genesis 31:19", "Genesis 31:30", "Joshua 24:2", "Genesis 29:13"]
+    },
+    {
+      "v": "32-33",
+      "context": "The household shows the full hospitality of the ancient world: the camels are unloaded and fed, and water is brought for washing feet. But the servant refuses to eat until he has delivered his message.",
+      "grammar": "Vayefattach, ‘he unloosed’, is a Piel used for ungirding or unharnessing. The servant's refusal is emphatic: lo okhal ad im-dibbarti devarai, ‘I will not eat until I have spoken my words’. His mission comes before his comfort. Laban's answer is a single word, dabber, ‘speak’.",
+      "words": ["H6605A", "H7364", "H0398", "H1696G"],
+      "history": "Washing a guest's feet after travel on dusty roads in sandals was a basic courtesy, offered by Abraham to his visitors (Genesis 18:4) and by Lot (Genesis 19:2). It was usually done by the guest himself with water provided, or by servants. Jesus takes the servant's role in John 13:4-5.",
+      "refs": ["Genesis 18:4", "Genesis 19:2", "John 13:4-5", "John 4:34"]
+    },
+    {
+      "v": "34-36",
+      "context": "The servant begins his long retelling (verses 34-49). He identifies himself only by his master, describes the LORD's blessing on Abraham, and announces that Abraham's whole estate belongs to the son of Sarah's old age.",
+      "grammar": "Eved Avraham anokhi, ‘servant of Abraham am I’, places his role first; he never gives his own name. In verse 35 he makes the LORD the subject of Abraham's wealth: ‘the LORD has blessed my master greatly... and he has given him’. The list pairs goods in twos: flocks and herds, silver and gold, male and female servants, camels and donkeys. In verse 36 he adds that Isaac was born to Sarah acharei ziqnatah, ‘after her old age’, and that Abraham has given him everything, information designed for a family weighing a marriage.",
+      "words": ["H5650", "H1288", "H1431", "H2209"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The servant presents Abraham's wealth not as achievement but as blessing: the LORD gave it. Scripture consistently treats riches as a gift held under God, as Deuteronomy 8:18 later reminds Israel."
+        }
+      ],
+      "refs": ["Deuteronomy 8:18", "Genesis 13:2", "Genesis 25:5", "Genesis 21:2"]
+    },
+    {
+      "v": "37-38",
+      "context": "The servant retells the oath. His version stresses Abraham's own family over his land, and says nothing about the prohibition on taking Isaac back to Mesopotamia, which would not flatter his hearers.",
+      "grammar": "Verse 38 opens with im-lo, a form taken from oath language that means ‘but rather’ or ‘surely’, making the positive requirement as solemn as the prohibition. In verse 4 Abraham said ‘my country and my kindred’; the servant now says beit avi, \"my father's house\", and mishpachti, \"my kindred\" (a word for clan or extended family). The shift from country to family suits a speech made to Abraham's relatives.",
+      "words": ["H7650", "H0518I", "H1004M", "H4940"],
+      "refs": ["Genesis 24:3-4", "Genesis 28:2", "Genesis 12:1"]
+    },
+    {
+      "v": "39-41",
+      "context": "The servant recalls his question and Abraham's reply, including the promise of the angel and the release clause. He presents Abraham as a man who walks with God and expects God to act.",
+      "grammar": "Abraham's description of God, asher-hithallakhti lefanav, \"before whom I have walked\", uses the Hithpael of halakh, to walk about, live one's life. It echoes God's command in Genesis 17:1, ‘walk before me and be blameless’. Where verse 8 used shevu'ah for the oath, verse 41 uses alah twice, a word that means an oath with its curse, the penalty invoked if it is broken. The servant tells the family that he is bound under a curse, which explains his urgency. \"If they refuse to give her\" shifts the possible refusal from the woman (verse 8) to her family, again with his hearers in mind.",
+      "words": ["H1980I", "H6743B", "H0423", "H5352", "H5355A"],
+      "refs": ["Genesis 17:1", "Genesis 48:15", "Numbers 5:21", "Genesis 24:8"]
+    },
+    {
+      "v": "42-44",
+      "context": "The servant retells his prayer at the spring, nearly word for word. The repetition invites the family to see what he saw: that the sign was set before Rebekah appeared, and that she fulfilled it without knowing.",
+      "grammar": "Verse 42 puts his request as a polite condition, im-yeshkha-na matsliach, literally ‘if you are indeed prospering my way’. In verse 43 he calls the girl ha'almah, \"a maiden\", a different word from the na'arah of verse 14 and the betulah of verse 16. Almah means a young woman of marriageable age; it is the word in Isaiah 7:14, and whether it implies virginity is debated. Its use here for Rebekah, who has just been described as a virgin, is one of the passages cited in that debate: the Septuagint renders almah here with parthenos, the Greek word it also uses in Isaiah 7:14. The word itself stresses youth and marriageability; context decides the rest.",
+      "words": ["H6743B", "H5959", "H3198", "H3537"],
+      "text": "Translations vary in rendering almah: ‘maiden’, ‘young woman’, or ‘virgin’. The choice here has little effect on the story, but readers comparing English Bibles on Isaiah 7:14 will find the same word behind the difference.",
+      "refs": ["Isaiah 7:14", "Exodus 2:8", "Song of Solomon 6:8", "Matthew 1:23"]
+    },
+    {
+      "v": "45-46",
+      "context": "He tells how Rebekah came before he had finished praying, and how she did exactly what he had asked of God. The family hears their daughter described as the answer to a prayer they knew nothing of.",
+      "grammar": "Ledabber el-libbi, ‘speaking to my heart’, tells the family that the prayer was silent, spoken inwardly, so Rebekah could not have known what to say. Hannah's prayer at Shiloh is described the same way (1 Samuel 1:13). The servant also repeats that she lowered her jar ‘from upon her’ and gave drink to him and the camels, the details of the sign in order.",
+      "words": ["H3820A", "H2962", "H8248G", "H4116A"],
+      "refs": ["1 Samuel 1:13", "Nehemiah 2:4", "Genesis 24:15-20"]
+    },
+    {
+      "v": "47-48",
+      "context": "He tells of asking her family and giving the ring and bracelets, and of worshiping the LORD who led him to his master's kin. In this telling he asks her lineage before giving the gifts, the reverse of verses 22-23.",
+      "grammar": "The reversal is in the verb order: in verse 22 he gave the jewelry and then asked; here he asked (va'esh'al) and then put (va'asim) the ring. The telling makes his conduct look entirely proper to her family. \"The ring on her nose\" confirms that the nezem of verse 22 was a nose ring. In verse 48 he says the LORD led him bederekh emet, \"on the right road\", literally ‘on the road of faithfulness’ or ‘truth’: the word emet echoes his praise in verse 27 and his request in verse 49.",
+      "words": ["H7592", "H5141", "H0639H", "H5148", "H0571H"],
+      "refs": ["Genesis 24:22-23", "Psalm 25:4-5", "Psalm 143:8"]
+    },
+    {
+      "v": "49",
+      "context": "The servant ends with a direct request for an answer. Having told of God's faithfulness to Abraham, he asks the family whether they will show the same faithfulness.",
+      "grammar": "Im-yeshkhem osim chesed ve'emet, ‘if you are doing kindness and faithfulness’, applies to the family the very pair he used of God in verse 27. ‘To do chesed and emet’ is a set phrase for keeping faith in a relationship (Genesis 47:29, Joshua 2:14). The last words, literally ‘that I may turn to the right or to the left’, mean he will look elsewhere if they refuse.",
+      "words": ["H2617A", "H0571G", "H3225G", "H8040G"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The servant asks the family to imitate God: to show the chesed and emet that God has shown Abraham. In Scripture human loyalty is meant to mirror divine loyalty, as Micah 6:8 later puts it in asking Israel to love kindness."
+        }
+      ],
+      "refs": ["Genesis 47:29", "Joshua 2:14", "Micah 6:8", "Genesis 24:27"]
+    },
+    {
+      "v": "50-51",
+      "context": "Laban and Bethuel accept the servant's reading of events. They see the LORD's hand and give their consent: Rebekah may go.",
+      "grammar": "Me'YHWH yatsa haddavar, ‘from the LORD the matter has come forth’, places the source of the whole affair in God. Lo nukhal dabber elekha ra o-tov, literally ‘we cannot speak to you bad or good’, is a merism, naming two opposites to mean ‘anything at all’: there is nothing left for them to say. God later warns Laban with the same idiom not to speak to Jacob ‘either good or bad’ (Genesis 31:24, 29). Verse 51 ends ka'asher dibber YHWH, \"just as the LORD has decreed\", literally ‘as the LORD has spoken’.",
+      "words": ["H3318G", "H7451A", "H2896A", "H1696G"],
+      "history": "Bethuel appears only here in the action of the chapter; elsewhere Rebekah's brother and mother act for her (verses 28, 53, 55). Some interpreters suggest Bethuel was elderly or incapacitated, others that Laban as brother led the negotiations while the father gave formal consent. The text does not explain.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Even people outside the covenant line recognize God's hand when the pattern of events is laid before them. Providence, though hidden in its working, can be discerned."
+        }
+      ],
+      "refs": ["Genesis 31:24", "Genesis 31:29", "Psalm 118:23", "Proverbs 16:33"]
+    },
+    {
+      "v": "52-54",
+      "context": "The servant bows to the ground before the LORD, then gives gifts to Rebekah and to her brother and mother. The household eats, and in the morning the servant asks to leave.",
+      "grammar": "Keli-khesef ukheli zahav, ‘articles of silver and articles of gold’, and begadim, \"clothing\", go to Rebekah; to her brother and mother go migdanot, \"precious gifts\", a rare word used of choice things (2 Chronicles 21:3, Ezra 1:6). In verse 54 shallechuni, \"Send me\", is a Piel of shalach, the verb for formally dismissing a guest.",
+      "words": ["H7812", "H3627", "H0899B", "H4030", "H7971G"],
+      "history": "Gifts to the bride's family are part of betrothal customs described elsewhere in the Old Testament: Shechem offers Jacob's sons a bride price and gift (Genesis 34:12), and Saul demands a bride price of David (1 Samuel 18:25). The law refers to a standard bride price for virgins (Exodus 22:16-17). The servant's gifts function in this way, sealing the agreement.",
+      "refs": ["Genesis 34:12", "1 Samuel 18:25", "Exodus 22:16-17"]
+    },
+    {
+      "v": "55-56",
+      "context": "The family asks for a delay; the servant refuses. He has what he came for, and he credits the LORD with the success of his errand.",
+      "grammar": "The family asks for yamim o asor, literally ‘days or ten’, an unusual phrase. The BSB renders \"ten days or so\"; some ancient Jewish interpreters took it as ‘a year or ten months’, reading yamim, ‘days’, in its sense of a year. The servant replies al-te'acharu oti, ‘do not delay me’, a Piel of achar, and repeats ‘send me’ from verse 54.",
+      "words": ["H3117G", "H6218", "H0309", "H6743B"],
+      "refs": ["Genesis 24:54", "Genesis 31:27-28", "Judges 19:4-9"]
+    },
+    {
+      "v": "57-58",
+      "context": "The family decides to ask Rebekah herself. Her answer is a single word in Hebrew: she will go. The decision to leave her land and family is hers.",
+      "grammar": "Venish'alah et-piha, \"and ask her opinion\", is literally ‘let us ask her mouth’: they will hear it from her own lips. Their question, hatelekhi, ‘will you go?’, and her answer, elekh, ‘I will go’, use the same verb halakh that God used when he told Abraham ‘Go’ (Genesis 12:1). Many readers see her as following Abraham's pattern: leaving country, kindred, and father's house for a land she has not seen.",
+      "words": ["H7592", "H6310G", "H1980G"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Rebekah's consent is sought and given. Even within the customs of arranged marriage, the chapter makes her willingness count, as Abraham's oath had anticipated (verse 8)."
+        },
+        {
+          "id": "faith",
+          "note": "Her one-word answer commits her to a man she has never met in a land she has never seen, on the testimony of a servant about the God of Abraham. Rebekah's going echoes Abraham's own obedience to the call to go."
+        }
+      ],
+      "refs": ["Genesis 12:1", "Ruth 1:16", "Genesis 24:8", "Hebrews 11:8"]
+    },
+    {
+      "v": "59-61",
+      "context": "The family sends Rebekah off with her nurse and her maids, and blesses her. The blessing, spoken by Abraham's relatives, echoes God's oath to Abraham on Moriah. Rebekah and her maids mount the camels and follow the servant.",
+      "grammar": "The blessing opens with at hayi le'alfe revavah, ‘you, become thousands of ten thousands’: revavah means a myriad, ten thousand. Its second line, veyirash zar'ekh et sha'ar sone'av, ‘may your offspring possess the gate of those who hate him’, is nearly identical to Genesis 22:17 but has sone'av, ‘those who hate’, in place of oyevav, ‘enemies’. As in 22:17, the pronoun is singular while the BSB renders it \"their\". In verse 61 the verbs are feminine plural (‘they rode... they went’), keeping Rebekah and her maids at the center.",
+      "words": ["H0505G", "H7233", "H3423H", "H8130", "H3243I"],
+      "history": "Rebekah's nurse is named at her death many years later: Deborah, buried below Bethel under an oak called the oak of weeping (Genesis 35:8). A nurse who had raised a girl often stayed with her for life.",
+      "refs": ["Genesis 22:17", "Genesis 35:8", "Ruth 4:11-12", "Numbers 10:36"]
+    },
+    {
+      "v": "62-63",
+      "context": "The scene shifts to Isaac in the Negev, who has come from Beer-lahai-roi. He goes out into the field at evening, and looking up he sees camels coming.",
+      "grammar": "The first clause is awkward in Hebrew: literally ‘Isaac had come from coming to Beer-lahai-roi’, and translators smooth it in various ways. The name recalls the well where the angel found Hagar (Genesis 16:14), and Isaac will live near it after Abraham's death (Genesis 25:11). Lifnot arev, ‘at the turning of evening’, sets the time. Vayyissa einav vayyar vehinneh, ‘he lifted his eyes and saw, and look’, is the same sequence as in verse 64, preparing a meeting seen from both sides.",
+      "words": ["H0883", "H7742", "H6437G", "H5375M", "H1581"],
+      "refs": ["Genesis 16:14", "Genesis 25:11", "Psalm 77:12", "Genesis 22:13"]
+    },
+    {
+      "v": "64-65",
+      "context": "Rebekah sees Isaac, gets down from her camel, and asks who the man is. Told it is the servant's master, she veils herself. The long-distance story ends in a single look across a field.",
+      "grammar": "Vattippol me'al haggamal, literally ‘she fell from the camel’, means she got down quickly; the same verb describes Naaman getting down from his chariot to meet Elisha's servant (2 Kings 5:21). Her question uses a rare demonstrative, hallazeh, ‘that one there’, used also by Joseph's brothers of ‘this dreamer’ (Genesis 37:19). The servant now calls Isaac \"my master\", not Abraham, a sign that the succession is complete. Vattitkas, \"covered herself\", is reflexive (Hithpael).",
+      "words": ["H5307G", "H1976", "H0113", "H6809", "H3680"],
+      "refs": ["2 Kings 5:21", "Genesis 37:19", "Genesis 38:14", "Genesis 29:23-25"]
+    },
+    {
+      "v": "66-67",
+      "context": "The servant reports everything to Isaac, and the story closes with Isaac bringing Rebekah into Sarah's tent, marrying her, and loving her. Sarah's death opened chapter 23; the comfort of her son closes chapter 24.",
+      "grammar": "The verbs of verse 67 come in a telling order: he brought her in, took her, she became his wife, he loved her, he was comforted. Love is named after marriage, not before. This is the first time the Bible says a man loved his wife, using the same verb ahav first used of Abraham's love for Isaac (22:2). Vayyinnachem, \"was comforted\", is a Niphal of nacham, the verb for being consoled in grief.",
+      "words": ["H0168G", "H0157G", "H5162G", "H3947I"],
+      "text": "The Hebrew reads literally ‘into the tent Sarah his mother’, with the article on ‘the tent’ followed directly by a name, which is unusual grammar. Some scholars think ‘Sarah his mother’ was added as an explanatory note; others take the phrase as a compressed way of saying ‘his mother Sarah's tent’. Translations agree on the sense.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The chapter ends in a home: the mother's tent, a wife, love, and comfort after loss. Genesis presents marriage not only as the means of the promised line but as companionship that consoles, as Genesis 2:18 foresaw."
+        },
+        {
+          "id": "love",
+          "note": "The Bible's first statement that a husband loved his wife sits at the close of a story governed by God's providence. The love is personal and specific, and it follows a covenant commitment rather than preceding it."
+        }
+      ],
+      "refs": ["Genesis 2:18", "Genesis 2:24", "Ephesians 5:25", "Genesis 29:18"]
+    }
+  ]
+}

@@ -57,7 +57,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Honest Questions About Christianity: Essays for Skeptics and Seekers",
-  description: "Ten hard questions about God, the Bible, suffering, and the church — answered without flinching. Written by a pastor who came to faith from atheism.",
+  description: "Ten hard questions about God, the Bible, suffering, and the church, answered at length by a pastor who came to faith from atheism.",
   url: "https://www.livewellbyjamesbell.co/honest-questions",
   author: {
     "@type": "Person",
@@ -78,7 +78,7 @@ export default function HonestQuestions() {
     <Layout>
       <SEOMeta
         title="Honest Questions About Christianity: Essays for Skeptics and Seekers"
-        description="Ten hard questions about God, the Bible, suffering, and the church — answered without flinching. Written by a pastor who came to faith from atheism."
+        description="Ten hard questions about God, the Bible, suffering, and the church, answered at length by a pastor who came to faith from atheism."
         keywords="is God real, why does God allow suffering, is the Bible reliable, questions about Christianity, doubting faith, skeptic, does God exist, hard questions about faith"
         structuredData={[faqSchema, webPageSchema]}
       />
@@ -90,7 +90,7 @@ export default function HonestQuestions() {
           The Bible was written by people who argued with God. You are allowed to ask questions.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          Written by a former atheist who asked every one of these questions before he believed a word of the gospel. No cliches. No bait-and-switch. Just honest engagement with the hardest objections to Christianity.
+          Written by a pastor who came to faith from atheism, and who carried questions like these before he believed a word of the gospel. The hardest objections to Christianity get engaged here without a cliche and without a bait-and-switch at the end.
         </p>
       </section>
 
@@ -177,7 +177,7 @@ export default function HonestQuestions() {
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>One hard question. One honest answer. Every week.</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Essays for skeptics, seekers, and anyone who refuses to believe something they have not examined. No guilt. No pressure. Just theology that takes your intelligence seriously.</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "32px", lineHeight: 1.7 }}>Essays for skeptics, seekers, and anyone who refuses to believe something they have not examined. Nothing here will guilt you or press you toward a decision; it assumes you are an adult and can weigh the argument yourself.</p>
           <LandingSignup source="landing-honest-questions" />
         </div>
       </section>

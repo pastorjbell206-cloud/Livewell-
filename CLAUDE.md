@@ -37,6 +37,14 @@ For the reader whose faith has outgrown the answers they were given — whose ma
 
 ## Voice & Tone
 
+> **Governing standard: `docs/VOICE-JAMES-BELL.md`** — James's own statement of
+> the mature register. Where this section and that file disagree, that file
+> wins. The material differences: developed paragraphs rank above fragment
+> stacks; repeated antithesis, anaphora, and em-dashes go on the avoid list
+> once their rhetorical work is done; contractions and natural spoken phrasing
+> are preferred. The moves below survive at a genuine hinge — they are no
+> longer the default gait.
+
 ### Long-form register (essays, books, sermons published as prose)
 
 Prophetic and pastoral simultaneously, never one without the other. Intellectual anchors: Tim Keller (architecture), Walter Brueggemann (prophetic imagination), Eugene Peterson (pastoral texture), Dietrich Bonhoeffer (willingness to name the thing at cost).
@@ -72,11 +80,10 @@ Signposting ("here is what I mean," "let me explain"). Clean application turns. 
 
 ### Punctuation mechanics
 
-These describe Bell's actual voice; they are the single source of truth (other
-docs defer here).
+Mechanics only; register is governed by `docs/VOICE-JAMES-BELL.md`.
 
-- **Em-dash** — part of the voice; permitted. Favor the hard period for the
-  "Not X. Y." ground-clearing move, but the em-dash may carry flow elsewhere.
+- **Em-dash** — permitted, sparingly. Never the standard connector between
+  clauses; repeated em-dashes are on the avoid list in the governing standard.
 - **Semicolon** — permitted in prose where it binds two close clauses. Not
   forbidden.
 - **Exclamation point** — reserved for **direct Scripture quotation** (quoted
@@ -86,6 +93,10 @@ docs defer here).
 ---
 
 ## Structural Moves (the Bell patterns)
+
+> Reserved for genuine hinges, not the default gait — see
+> `docs/VOICE-JAMES-BELL.md`. A piece built from these moves paragraph after
+> paragraph fails the mature register even when each move is executed well.
 
 1. **"Not X. Y."** — ground-clearing with a hard period, never a comma. "This is not about politics. It is about the cross."
 2. **Short-Long-Short** — sentence rhythm. A short declaration. A longer sentence that builds the evidence, names the history, implicates the reader. Then the verdict: three to eight words.
@@ -355,7 +366,17 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 - The homepage is strong; inner pages need the same design system applied.
 - Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel.
 - Contact forms send to Pastorjbell206@gmail.com.
-- The site has 161+ articles and 21 books in the database. Content is the product.
+- The database holds the full archive of essays and 21 books, but readers see
+  a small curated essay shelf (`client/src/lib/shelf.json`): "live" essays are
+  public, "pending" ones go public when a rewrite lands in
+  `client/public/essays/`, posts James publishes through the admin after
+  2026-10-12 appear on their own (judged by `essayDate`: publishedAt, else
+  createdAt, in `shelf.ts` and `scripts/lib/shelf.mjs` alike), and every other
+  essay is retired (its URL answers with a noindex notice) rather than
+  deleted. Bringing one back is one line in `shelf.json`. A hand-written
+  `/writing/<slug>` link on a live page goes through `isPublicEssay` or
+  `isPublicEssayHref` so it never lands on a notice (`validate-links.mjs`
+  fails on one that does not). Content is the product.
 - All components use inline styles with CSS variable references. Brand changes flow through `:root` tokens in `index.css`.
 
 ---
@@ -420,9 +441,9 @@ There are **two server implementations of the same API**:
 
 A procedure added to `server/routers.ts` **does not exist in production** until
 it is also added to `api/index.ts`. `server/api-parity.test.ts` fails CI if the
-client calls a procedure prod doesn't implement — respect it. Known prod gaps
-(`stripe.*` REST fallback, `files.*`, `teamCollab.*`) are intentional and need
-per-user auth to close.
+client calls a procedure prod doesn't implement — respect it. `KNOWN_PROD_GAPS`
+is currently **empty**: every client-invoked procedure is implemented in
+`api/index.ts`. Any future intentional gap goes in that set with a reason.
 
 ### Directory map
 
@@ -467,10 +488,14 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR: `pnpm check` → content validators (`validate-formation.mjs`,
-`validate-life.mjs`, `validate-table.mjs`) → `pnpm test` → `pnpm build`. A
-separate, non-blocking `quality` job runs Lighthouse + axe against the built
-site. Keep all four blocking steps green.
+On every PR, five blocking steps: `pnpm check` → the content-gates step (22
+validators: scripture, life, studyguides, pathways, theology, politics,
+no-emdash, content-integrity, skeptic-track, answers, argument-cases, links,
+needs (pages and drafts), grow-links, plans, workbooks, family, grow-voice,
+verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+`pnpm build` → the canonical audit (sitemap +
+prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
+Lighthouse + axe against the built site. Keep all five blocking steps green.
 
 ### Conventions for AI assistants
 
@@ -515,7 +540,8 @@ How to work in this repo, in order of weight:
 > protocol and a vibe disagree, follow the protocol.
 
 **Read order (before the first edit):** this file top to bottom; then the
-governing doc for the task type (content → `EDITORIAL-CONSTITUTION.md`; non-trivial
+governing doc for the task type (content → `EDITORIAL-CONSTITUTION.md` and
+`docs/VOICE-JAMES-BELL.md` for anything in James's voice; non-trivial
 engineering → `ARCHITECTURE.md`); then the source of truth the task touches —
 `drizzle/schema.ts` (data), `taxonomy.ts` (content IA), `index.css` `:root`
 (tokens), `api/index.ts` + `server/routers.ts` (the API, both runtimes).
@@ -653,12 +679,31 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
   static routes, the JSON-library manifests, and database content. `llms.txt`
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
-- **IA (approved blueprint, implemented)**: the six pillars (`PILLARS_V2` in
-  `taxonomy.ts`, under the two movements) are the only taxonomy spine; footer
-  mirrors the header (The Pillars / Write & Read / Libraries & Tools / For
-  Pastors / Connect); "Resources" names exactly one
-  thing (the hub at /resources); all tools are registered in /tools; /quiz
-  301s to /tools/theology-quiz (vercel.json).
+- **IA (simplified site, approved by James on 2026-10-12, implemented)**: a
+  simple site he keeps adding to, for living well in post-Christian America
+  and understanding the church's long history. The header has five doors from
+  the committed map in `client/src/lib/siteNav.ts` (Study, Essays, Books,
+  Resources, About) beside Find Help, search, and Subscribe; the footer
+  mirrors every group. Study (/study) leads with the Study Bible, then church
+  history (/theology/history), the creeds, the context guides, and group study
+  guides. Essays (/writing) is the curated shelf in `client/src/lib/shelf.json`
+  (see Strategic Reminders). Books shows the three titles in `bookShelf.ts`.
+  Resources (/resources) holds downloads, tools, Find Help, and families.
+  About is the person: /about, /speaking, /contact, /subscribe. Folded hubs
+  (the reading hubs, the subject hubs, the /theology pages the Study Bible
+  replaces, /faq, /doubt, /substack, /work-with-james, /connect) are one-hop
+  permanent redirects in vercel.json mirrored by `redirectTo` stubs in App.tsx;
+  their page files stay in the repo; /lament lands on /studyguides/lament. An
+  old /writing/<slug> 301 lands only on a public essay, a /writing section, or
+  another live page, and no shelf essay's own URL is a redirect source. Never
+  redirected: /study/*, church history (/theology/history, /theology/traditions,
+  /justice/timeline, /justice/witnesses, /disruption/witnesses),
+  /theology/glossary, /theology/search, /theology/doctrine/*, the creeds, the
+  context guides, /downloads, ebooks and PDFs, /nation (reachable, out of the
+  nav), /help, and every tool, all still registered in /tools.
+  `client/src/lib/site-structure.test.ts` holds this shape. `taxonomy.ts` and
+  `pillar-assignments.ts` still file content but no longer drive navigation.
+  No giving or Support page until James names who receives gifts.
 - **Payments**: Stripe checkout is config-driven — live only when
   STRIPE_SECRET_KEY (Vercel env) and the `stripeMembershipPriceId` site
   setting both exist; the membership page falls back to the waitlist.

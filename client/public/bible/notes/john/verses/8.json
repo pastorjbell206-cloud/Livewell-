@@ -1,0 +1,472 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The story of the woman caught in adultery continues from 7:53: the crowd goes home, and Jesus goes out to the Mount of Olives, then comes back to the temple at dawn, sits down, and teaches the people who gather. The scene is set exactly like Luke 21:37-38, where Jesus spends his nights on the Mount of Olives and the people come early to hear him in the temple, which is one reason a group of manuscripts places the whole story in Luke.",
+      "grammar": "Orthrou is a genitive of time, ‘at early dawn’, a word John uses nowhere else (he says prōi for early morning, 18:28 and 20:1), though Luke has the same phrase in Luke 24:1 and a close relative in Luke 21:38. Kathisas edidasken, ‘having sat down he was teaching’, pairs an aorist participle with an imperfect: he took the teacher's seated posture and taught at length. To oros tōn elaiōn, the Mount of Olives, is named often in the other Gospels but never in John outside this passage. These small differences of vocabulary are part of the evidence that the passage came from outside John's Gospel.",
+      "words": ["G3722", "G1638", "G3735", "G2523", "G1321"],
+      "text": "These verses belong to the passage (7:53-8:11) that is missing from the earliest manuscripts of John; the note on 7:53 gives the evidence. The group of manuscripts called family 13 places the whole story after Luke 21:38, where these opening lines would follow naturally on Luke's own description of Jesus' last days in Jerusalem.",
+      "parallels": ["Luke 21:37-38", "Mark 11:19", "Luke 22:39"],
+      "refs": ["Luke 21:37-38", "John 7:53", "Mark 12:13-17"]
+    },
+    {
+      "v": "3-5",
+      "context": "Scribes and Pharisees bring a woman caught in adultery, stand her in the middle of the crowd, and put the law to Jesus as a question. The man, whom the law condemned with her, is not there. The question is framed so that any answer will cost Jesus something.",
+      "grammar": "Kateilēmmenēn is a perfect passive participle of katalambanō, ‘having been caught’, and the accusers add ep' autophōrō moicheuomenē, ‘being caught in the very act of committing adultery’. Autophōros was a legal word in classical Greek for a thief caught red-handed, so the accusers claim evidence of the strictest kind. The present participle moicheuomenē puts her in the act itself. In verse 5, su oun ti legeis, ‘you then, what do you say?’, sets su, ‘you’, emphatically against Mōusēs: the law says one thing, and they want Jesus on record against it or for it. Grammateis, ‘scribes’, the professional interpreters of the law, occur nowhere else in John.",
+      "words": ["G1122", "G5330", "G3430", "G2638", "G1888", "G3431", "G3475", "G1781"],
+      "ot": [
+        {
+          "ref": "Leviticus 20:10",
+          "note": "The law sets death for both parties to adultery with a neighbor's wife: the Hebrew mot yumat hanno'ef vehanno'afet names the adulterer and the adulteress together, and the Greek Old Testament uses the same verb, moicheuō, that the accusers use here. Deuteronomy 22:22-24 repeats the penalty for both and specifies stoning where the woman is betrothed. The accusers cite Moses accurately about the penalty but bring only one of the two the law names, so they break the law's own requirement while claiming to enforce it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The law is real and its penalty is real, and the scene does not pretend otherwise. What the passage exposes is the use of the law as an instrument: a person is set up as evidence in a case against someone else. The law given to protect the covenant community has become a trap."
+        }
+      ],
+      "refs": ["Deuteronomy 22:22-24", "Deuteronomy 17:6", "Mark 12:13-17", "Ezekiel 16:38-40"]
+    },
+    {
+      "v": "6",
+      "context": "The narrator states the motive: they are testing him to get grounds for a charge. Jesus bends down and writes on the ground with his finger, and he does not answer.",
+      "grammar": "Peirazontes, ‘testing’, is the verb used of the Pharisees' traps in the Synoptic Gospels (Mark 10:2, 12:15), and hina echōsin katēgorein autou, ‘so that they might have something to accuse him of’, gives the purpose. Katō kupsas, ‘having stooped down’, and the imperfect egraphen, ‘he was writing’ or ‘he began to write’, describe a deliberate, continuing act rather than a doodle. Many manuscripts have the compound kategraphen, which can mean to write down or to draw, and some interpreters have pressed it to mean writing a record of charges; the word does not carry that much weight by itself. Tō daktulō, ‘with his finger’, may recall the tablets of the law written with the finger of God (Exodus 31:18), an echo Augustine drew out in his Tractates on John (33).",
+      "words": ["G3985H", "G2723", "G2955", "G1147", "G1125", "G1093I"],
+      "text": "The Byzantine manuscripts add mē prospoioumenos, ‘not pretending’ or ‘not paying attention’, which the King James Version renders ‘as though he heard them not’. The words are absent from most other manuscripts that contain the passage and are best read as an early explanation of Jesus' silence.",
+      "ot": [
+        {
+          "ref": "Jeremiah 17:13",
+          "note": "Jeremiah says that those who turn away from the LORD will be written in the earth (Hebrew ba'arets yikkatevu), because they have forsaken the fountain of living water; the Greek Old Testament has them written on the ground. Jerome read Jesus' writing in this light. The link is suggestive, not stated by the text, and it gains weight from the setting at Tabernacles, where 7:37-38 has just spoken of living water."
+        }
+      ],
+      "refs": ["Exodus 31:18", "Mark 10:2", "Mark 12:15", "Luke 11:20"]
+    },
+    {
+      "v": "7-8",
+      "context": "The accusers keep pressing, and Jesus stands up and gives one sentence: whoever is without sin among them should throw the first stone. Then he bends down and writes again. He neither sets the law aside nor carries it out; he turns the question on the ones asking it.",
+      "grammar": "Epemenon erōtōntes, ‘they kept on asking’, uses an imperfect of epimenō with a present participle: persistent pressure. Anamartētos, ‘without sin’, occurs only here in the New Testament; in Greek generally it means blameless or not having erred. Prōtos ep' autēn baletō lithon, ‘let him first throw a stone at her’, is a third person aorist imperative. It does not forbid the sentence; it assigns the first stone, and so the responsibility, to the sinless witness. Palin katakupsas egraphen, ‘again having stooped down he wrote’, repeats the gesture of verse 6 and leaves the accusers alone with the saying.",
+      "words": ["G1961", "G2065", "G0352", "G0361", "G4413G", "G0906G", "G3037", "G1125"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 17:7",
+          "note": "In a capital case, the hands of the witnesses are to be first against the condemned, and afterward the hands of all the people (Hebrew yad ha'edim tihyeh-bo varishonah; the Greek Old Testament has en prōtois, ‘among the first’). The law made the witnesses bear the weight of the verdict by casting the first stone. Jesus' word keeps the law's order and adds the one qualification that empties the circle: the first thrower must be without sin."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verse does not abolish judgment or courts; it places the judges under judgment first. The only person present who meets the condition he names is Jesus himself, and he does not throw."
+        }
+      ],
+      "text": "A few later manuscripts and some Armenian copies add at the end of verse 8 that he wrote the sins of each one of them. The addition shows how early readers explained the scene; it is not part of the text most editors print.",
+      "refs": ["Deuteronomy 17:7", "Romans 2:1", "Matthew 7:1-5", "John 8:46"]
+    },
+    {
+      "v": "9",
+      "context": "The accusers leave one at a time, beginning with the oldest, until Jesus is left alone with the woman still standing in the middle. The crowd that surrounded her has become a space around her.",
+      "grammar": "Exērchonto heis kath' heis, ‘they were going out one by one’, uses an imperfect for the gradual emptying of the circle and a distributive phrase that makes each departure a separate decision. Arxamenoi apo tōn presbuterōn, ‘beginning from the older ones’, may mean the elders by age or by office; the plain sense is age, and most readers since Augustine have taken it as the older recognizing their sins first. Kateleiphthē monos, ‘he was left alone’, is an aorist passive, and en mesō, ‘in the middle’, repeats the phrase of verse 3: the place of accusation is now the place of mercy.",
+      "words": ["G1831", "G1520", "G0757", "G4245H", "G2641", "G3441", "G3319"],
+      "text": "The Textus Receptus and many Byzantine manuscripts add ‘being convicted by their own conscience’ (hupo tēs suneidēseōs elegchomenoi), which the King James Version prints, and the Textus Receptus also adds ‘unto the last’. Both expansions explain the departure; the shorter text leaves it unexplained, which is more likely original.",
+      "refs": ["Romans 3:10", "Psalm 130:3", "1 John 1:8"]
+    },
+    {
+      "v": "10-11",
+      "context": "Jesus straightens up and asks the woman where her accusers are and whether no one has condemned her. She says, “No one, Lord.” He answers, “Then neither do I condemn you,” and sends her away with a command, “Now go and sin no more.”",
+      "grammar": "Oudeis se katekrinen, ‘has no one condemned you?’, uses the aorist of katakrinō, the verb for passing sentence. Kurie can mean ‘Sir’ or ‘Lord’; in her mouth it is respectful address, and readers of the Gospel hear more. Oude egō se katakrinō, ‘neither do I condemn you’, uses the present tense: he is not passing sentence now. Poreuou, ‘go’, is a present imperative, and apo tou nun mēketi hamartane, ‘from now on no longer sin’, pairs mēketi with a present imperative, which forbids continuing a course of action. The same command, mēketi hamartane, is given to the healed man in John 5:14, one of the phrases that links the story to John's Gospel even though its vocabulary is mostly Lukan.",
+      "words": ["G2632", "G3762", "G2962H", "G4198", "G3568", "G3371", "G0264"],
+      "history": "The story's place in the Western church was secured by Jerome's Vulgate and by preachers such as Ambrose and Augustine. In the old Roman Missal it was the Gospel for the Saturday after the third Sunday of Lent, when the stational Mass was held at the church of Saint Susanna in Rome and the first reading was the story of Susanna, the innocent woman falsely accused of adultery (Daniel 13 in the Greek and Latin Bibles). The two women stood side by side: one innocent and vindicated, the other guilty and forgiven. The modern Roman Lectionary reads John 8:1-11 on the fifth Sunday of Lent in Year C.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Mercy comes before the command, and the command is not the condition of the mercy. Jesus does not deny her sin; he refuses to be the one who condemns and then sends her into a new life. The order matches 3:17, where the Son is sent not to condemn the world but to save it."
+        },
+        {
+          "id": "repentance",
+          "note": "The word to go and sin no more shows that forgiveness is not indifference. The new life begins from being uncondemned, not from earning release, and it is still a life turned away from sin."
+        }
+      ],
+      "refs": ["John 5:14", "John 3:17", "Romans 8:1", "Luke 7:47-50", "Micah 7:18-19"]
+    },
+    {
+      "v": "12",
+      "context": "In the earliest manuscripts this verse follows 7:52 directly: the council has sneered that no prophet comes from Galilee, and Jesus speaks again in the temple, this time with a claim far larger than prophet. He is the light of the world, and those who follow him will have the light of life.",
+      "grammar": "Egō eimi to phōs tou kosmou, ‘I am the light of the world’, is the second of John's ‘I am’ sayings with a predicate (after the bread of life, 6:35). Ho akolouthōn emoi, ‘the one following me’, is a present participle for continuing discipleship. Ou mē peripatēsē, ‘will certainly not walk’, is the emphatic double negative with an aorist subjunctive, the strongest denial Greek has. To phōs tēs zōēs, ‘the light of life’, can mean the light that gives life or the light that is life; the phrase also appears in the Qumran Community Rule, which speaks of the forgiven person looking upon the light of life (1QS 3:7).",
+      "words": ["G1510", "G5457", "G2889", "G0190", "G4043", "G4653", "G2222"],
+      "history": "The Mishnah describes the celebration of the water-drawing at Tabernacles (m. Sukkah 5:2-4). At the close of the first festival day the priests and Levites went down to the Court of the Women, where golden lampstands fifty cubits high stood with four golden bowls on each; young priests climbed ladders to fill them with oil, and wicks were made from the worn-out drawers and belts of the priests. There was not a courtyard in Jerusalem that did not reflect the light. Men of piety danced with burning torches, the Levites played on the fifteen steps between the courts, and at dawn two priests led the people to the eastern gate, turned to face the sanctuary, and recalled that their fathers had once turned their backs on the temple to worship the sun, while their own eyes were toward the LORD. Jesus speaks of himself as the light in the same court, near the treasury (8:20).",
+      "ot": [
+        {
+          "ref": "Isaiah 49:6",
+          "note": "The LORD tells his servant that restoring Israel is too small a task: he will make him a light for the nations (Hebrew or goyim; Greek Old Testament eis phōs ethnōn), so that salvation reaches the ends of the earth. Isaiah 42:6 has the same phrase. John's ‘light of the world’ is wider in wording and in scope, but it stands in this line, which Simeon applies to the infant Jesus (Luke 2:32). Zechariah 14, read at the feast in later synagogue practice (b. Megillah 31a), promises that at evening time there will be light (Zechariah 14:7)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Light in the prologue is the life of the Word shining into darkness (1:4-5, 9). Here Jesus claims it in the first person, and the promise is personal: not a lamp to be admired but a light to be followed, as Israel followed the pillar of fire through the wilderness (Exodus 13:21)."
+        }
+      ],
+      "refs": ["John 1:4-9", "John 9:5", "John 12:35-36", "Exodus 13:21", "Psalm 36:9"]
+    },
+    {
+      "v": "13-14",
+      "context": "The Pharisees object that Jesus is testifying about himself, so his testimony is not valid. Jesus answers that it is valid, because he knows where he came from and where he is going, and they do not.",
+      "grammar": "Hē marturia sou ouk estin alēthēs, ‘your testimony is not true’, uses alēthēs in the legal sense of valid or admissible. In 5:31 Jesus himself said, ‘If I testify about myself, my testimony is not valid’, and here he says kan egō marturō peri emautou, alēthēs estin hē marturia mou, ‘even if I testify about myself, my testimony is valid’. The two statements answer different questions: in chapter 5 he grants the legal rule and appeals to other witnesses; here he claims that his self-knowledge is itself true because of his origin. Pothen ēlthon kai pou hupagō, ‘where I came from and where I am going’, answers the question of 7:27-28, and the change from ēlthon, ‘I came’ (aorist), to erchomai, ‘I come’ (present), in the second half is a small shift many translations smooth over.",
+      "words": ["G5330", "G3140", "G3141", "G0227", "G6063", "G4159", "G5217"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus grounds his testimony in knowledge no one else has: his origin with the Father and his return to him. Revelation here is not an argument that can be checked from below; it is witness from one who has come from above (3:31-32)."
+        }
+      ],
+      "refs": ["John 5:31-32", "John 7:27-29", "John 13:3", "John 3:31-32", "John 16:28"]
+    },
+    {
+      "v": "15-16",
+      "context": "Jesus contrasts two kinds of judging. His hearers judge according to the flesh; he judges no one. Yet when he does judge, his judgment is true, because he does not judge alone but with the Father who sent him.",
+      "grammar": "Kata tēn sarka, ‘according to the flesh’, means by human standards and outward appearance, the superficial judgment he warned against in 7:24. Egō ou krinō oudena, ‘I judge no one’, and then kai ean krinō de egō, ‘but even if I do judge’, holds together two sides of John's teaching: the Son did not come to condemn (3:17), yet judgment has been given to him (5:22, 27). Hē krisis hē emē alēthinē estin, ‘my judgment is true’, uses alēthinē, ‘genuine, real’, in the critical editions; the Textus Receptus has alēthēs. Monos ouk eimi, ‘I am not alone’, anticipates verse 29.",
+      "words": ["G4561", "G2919", "G2920", "G0228", "G3441", "G3992", "G3962"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus' judgment is never a private verdict; it is the Father's judgment carried out by the Son. The hearers' judgment is flesh-bound and partial, which is why the one they judge is the one who will judge them."
+        }
+      ],
+      "refs": ["John 7:24", "John 3:17", "John 5:22", "John 5:30", "1 Samuel 16:7"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus answers the legal objection on its own terms. The law requires two witnesses, and he has two: himself and the Father who sent him.",
+      "grammar": "En tō nomō de tō humeterō gegraptai, ‘in your law it stands written’, uses the perfect gegraptai for Scripture's standing authority. The phrase ‘your law’ (compare 10:34, 15:25) is read by some as distance from the synagogue of John's day and by others as argument ad hominem, the law you appeal to; Jesus never disowns the law in John and says Scripture cannot be broken (10:35). Egō eimi ho marturōn peri emautou, ‘I am the one testifying about myself’, uses egō eimi with a participle, and the Father is named as the second witness.",
+      "words": ["G3551", "G1125", "G1417", "G0444", "G3141", "G3140", "G1510"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 19:15",
+          "note": "A matter is established on the evidence of two or three witnesses (Hebrew al-pi shenei edim; Greek Old Testament epi stomatos duo marturōn). John's wording shifts to ‘the testimony of two men’ (duo anthrōpōn), and the shift matters: if the law accepts two human witnesses, how much more the witness of the Son and the Father. Deuteronomy 17:6 states the same rule for capital cases."
+        }
+      ],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Father and the Son are two witnesses, distinct in their testimony, yet their witness is one. John does not reduce the Son to the Father's mouthpiece or make them rivals; the distinction and the unity are held together, as in 10:30 and 14:10."
+        }
+      ],
+      "refs": ["Deuteronomy 17:6", "John 5:32-37", "John 10:34", "1 John 5:9", "Matthew 18:16"]
+    },
+    {
+      "v": "19-20",
+      "context": "They ask where his Father is, and Jesus answers that they know neither him nor his Father; to know him would be to know the Father. John notes the place, the treasury in the temple, and that no one arrested him because his hour had not yet come.",
+      "grammar": "Pou estin ho patēr sou, ‘where is your father?’, may be a request to produce the second witness or a slur about his birth (compare 8:41). Jesus' answer is a contrary-to-fact condition, ei eme ēdeite, kai ton patera mou an ēdeite, ‘if you knew me, you would know my Father too’, using pluperfect forms of oida that function as imperfects. En tō gazophulakiō, ‘in the treasury’, can mean in or near the treasury area. Oupō elēluthei hē hōra autou, ‘his hour had not yet come’, repeats 7:30 almost exactly.",
+      "words": ["G3962", "G6063", "G1492H", "G1049", "G2411", "G4084", "G5610"],
+      "history": "The Mishnah describes thirteen trumpet-shaped chests in the temple for offerings (m. Shekalim 6:5), and Mark places the offering boxes where Jesus watched a widow give two small coins (Mark 12:41-44). Most scholars locate them in the Court of the Women, the court open to all Israelites, which is also where the Mishnah places the great lamps of Tabernacles (m. Sukkah 5:2).",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "To know Jesus is to know the Father. The verse makes the Son the way the Father is known, the claim that will be stated plainly in 14:7-9."
+        }
+      ],
+      "refs": ["John 14:7-9", "John 7:30", "Mark 12:41-44", "John 1:18"]
+    },
+    {
+      "v": "21-22",
+      "context": "Jesus says again that he is going away, that they will seek him and die in their sin, and that where he is going they cannot come. His hearers wonder aloud whether he means to kill himself.",
+      "grammar": "En tē hamartia humōn apothaneisthe, ‘you will die in your sin’, uses the singular hamartia: not a list of wrongs but the one sin of refusing the one sent (16:9). Verse 24 shifts to the plural. Mēti apoktenei heauton, ‘surely he will not kill himself?’, uses mēti, which expects the answer no but raises the possibility. The misunderstanding is sharper than in 7:35, where they guessed he would go to the Greeks. It is also ironic, since Jesus will go to the Father by a death, though one he lays down of his own accord (10:18) rather than takes by his own hand.",
+      "words": ["G5217", "G2212", "G0266", "G0599", "G2453", "G3385", "G0615", "G1438"],
+      "history": "Suicide was regarded with horror in Jewish tradition. Josephus, arguing against his companions at Jotapata in AD 67, says that the souls of those who lay violent hands on themselves are received by the darker regions of Hades (Jewish War 3.375). The hearers' guess would place Jesus where they could not follow, but in the worst possible place.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "To die in one's sin is to die with it unforgiven and unremoved. The warning is not a curse but a statement of what happens if the one who can free them is refused, and verse 24 at once gives the way out: believing."
+        }
+      ],
+      "refs": ["John 7:33-35", "John 13:33", "John 16:9", "Ezekiel 3:18-19"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus names the difference between himself and his hearers: they are from below and of this world; he is from above and not of this world. That is why they will die in their sins unless they believe that ‘I am’.",
+      "grammar": "Humeis ek tōn katō este, egō ek tōn anō eimi, ‘you are from the things below, I am from the things above’, uses ek for origin, the same contrast as 3:31. In verse 24 ean gar mē pisteusēte hoti egō eimi, ‘for unless you believe that I am’, has no predicate after egō eimi. English versions supply ‘he’ (BSB, ESV) or ‘the one I claim to be’ (NIV), and the ellipsis can be explained from context (‘that I am the one from above’). But the phrase also matches the absolute ‘I am’ of God in the Greek Old Testament, and verse 28 and verse 58 build on it. Raymond Brown's commentary (1966) and most commentators since hear both levels.",
+      "words": ["G2736", "G0507", "G2889", "G4100", "G1473", "G1510", "G0266"],
+      "ot": [
+        {
+          "ref": "Isaiah 43:10",
+          "note": "The LORD calls Israel his witnesses and his chosen servant, so that you may know and believe me and understand that I am he (Hebrew ki-ani hu). The Greek Old Testament renders ani hu with egō eimi: hina gnōte kai pisteusēte kai sunēte hoti egō eimi. John 8:24 uses the same verb, believe, and the same clause, hoti egō eimi. In Isaiah the phrase is the one God's claim over against the idols (43:11, before me no god was formed); in John it is Jesus' claim, and belief in it is the condition of life."
+        },
+        {
+          "ref": "Deuteronomy 32:39",
+          "note": "See now that I, even I, am he (Hebrew ani ani hu; Greek Old Testament idete idete hoti egō eimi), and there is no god besides me; I put to death and I make alive. The Song of Moses supplies the earliest use of the formula, and the pairing of death and life fits Jesus' warning of dying in sin and his promise of life."
+        }
+      ],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "The absolute ‘I am’ takes up the form in which Israel's God declared his uniqueness. Faith here is not assent to a doctrine about Jesus but belief that he is who God is."
+        },
+        {
+          "id": "sin",
+          "note": "Unbelief is the sin that keeps every other sin in place. The plural ‘sins’ in verse 24 shows the many wrongs that remain when the one who could take them away (1:29) is refused."
+        }
+      ],
+      "refs": ["John 3:31", "John 17:14-16", "John 13:19", "Isaiah 41:4", "Isaiah 46:4"]
+    },
+    {
+      "v": "25-27",
+      "context": "They ask the obvious question, “Who are You?” Jesus' answer is among the hardest sentences in the Gospel to translate. He has much to say and judge concerning them, but he speaks only what he has heard from the one who sent him, and John notes that they did not understand he meant the Father.",
+      "grammar": "Tēn archēn ho ti kai lalō humin can be read in several ways. Tēn archēn is an accusative used as an adverb; in Greek generally it can mean ‘at all’ (with a negative or in a question), so several Greek fathers read it as ‘Why do I speak to you at all?’ Others take it as ‘from the beginning’, giving ‘what I have been telling you from the beginning’ (BSB, ESV, NIV). The critical editions print ho ti, ‘that which’, but ancient manuscripts were not divided into words, and it can equally be read hoti, ‘because’ or ‘that’. The first reading is an exclamation of frustration; the second points back to all he has said since the chapter began. Verse 27 uses ouk egnōsan, ‘they did not know’, the verb of recognition, not intellectual grasp.",
+      "words": ["G5101", "G0746", "G2980", "G2919", "G0227", "G0191", "G1097"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' identity is not a secret he withholds; his words have been saying it all along. The hearers' failure to recognize the Father in his speech shows that revelation can be spoken plainly and still not be heard."
+        }
+      ],
+      "refs": ["John 10:24-25", "John 1:1-2", "John 12:49-50", "John 7:28"]
+    },
+    {
+      "v": "28-29",
+      "context": "Jesus says that when they have lifted up the Son of Man, they will know that ‘I am’, and that he does nothing on his own. The Father who sent him is with him and has not left him alone, because he always does what pleases him.",
+      "grammar": "Hotan hupsōsēte ton huion tou anthrōpou, ‘when you lift up the Son of Man’, uses hupsoō, which in John means both to raise on a cross and to exalt (3:14, 12:32-34). Humeis, the hearers, are the ones who will do the lifting: their act of rejection will be the moment of revelation. Tote gnōsesthe hoti egō eimi, ‘then you will know that I am’, echoes Isaiah's ‘that you may know that I am’. Ta aresta autō poiō pantote, ‘I always do the things pleasing to him’, puts pantote, ‘always’, at the end for weight: no act of Jesus falls outside the Father's pleasure.",
+      "words": ["G5312", "G5207", "G0444", "G1097", "G1510", "G1321", "G0863G", "G0701", "G3842"],
+      "ot": [
+        {
+          "ref": "Isaiah 52:13",
+          "note": "The fourth Servant Song opens with the servant who will be lifted up and greatly exalted (Hebrew yarum venissa; Greek Old Testament hupsōthēsetai kai doxasthēsetai sphodra). John's pairing of lifting up and glory draws on this verse, which goes on to describe the servant's suffering. A few verses earlier Isaiah promises that God's people will know his name, that I am he who speaks (Isaiah 52:6; Greek Old Testament egō eimi autos ho lalōn)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The cross is where the divine identity of Jesus will be made known. John does not treat the lifting up on the cross and the exaltation to glory as two separate events but as one movement, so the moment of greatest humiliation is the moment of revelation."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son does nothing from himself, speaks what the Father taught, and is never left alone by the Father. John's picture of the Son's dependence is not a sign of lesser status but of perfect unity of will and action (5:19)."
+        }
+      ],
+      "refs": ["John 3:14-15", "John 12:32-34", "John 5:19", "John 16:32", "Numbers 21:8-9"]
+    },
+    {
+      "v": "30-31",
+      "context": "Many believe in him as he speaks. Jesus turns to the Jews who had believed him and sets the condition of real discipleship: remaining in his word. The rest of the chapter shows this group turning against him, which makes this condition the chapter's hinge.",
+      "grammar": "Verse 30 says polloi episteusan eis auton, ‘many believed in him’, and verse 31 speaks of tous pepisteukotas autō Ioudaious, ‘the Jews who had believed him’, with a perfect participle and a simple dative rather than eis. Some interpreters see a deliberate distinction between believing in him and believing what he said; others note that John does not use the two constructions consistently (compare 5:24, 6:30) and read the shift as narrative, not doctrine. Ean humeis meinēte en tō logō tō emō, ‘if you remain in my word’, uses menō, John's word for abiding (15:4-10), and alēthōs mathētai mou este, ‘you are truly my disciples’, makes remaining the proof of discipleship.",
+      "words": ["G4100", "G2453", "G3306", "G3056", "G0230", "G3101"],
+      "history": "Hoi Ioudaioi occurs about seventy times in John, more than in the other three Gospels together, and its sense shifts with the setting. It can mean the Jewish people and their customs (2:6, 2:13), the people of Judea as distinct from Galilee (7:1), the religious authorities in Jerusalem (9:22, where the fearful parents are themselves Jews), or, as here and in the verses that follow, a particular group of hearers who first believe and then turn hostile. Malcolm Lowe (Novum Testamentum, 1976) proposed that the word often means Judeans, and Urban von Wahlde (New Testament Studies, 1982) surveyed its uses and argued that most hostile uses mean the authorities. Whatever the precise reference, it never in John means every Jew; Jesus, his disciples, and many who believe are Jews.",
+      "theology": [
+        {
+          "id": "perseverance",
+          "note": "Real discipleship is shown by remaining. The verse does not make continuing the price of entry, but it does make it the mark by which true disciples are known, a mark the rest of the chapter shows these hearers failing."
+        }
+      ],
+      "refs": ["John 2:23-25", "John 6:66", "John 15:4-10", "1 John 2:19", "John 4:22"]
+    },
+    {
+      "v": "32",
+      "context": "The promise that follows remaining in Jesus' word: they will know the truth, and the truth will set them free. The next verse shows how badly the hearers take it.",
+      "grammar": "Kai gnōsesthe tēn alētheian, ‘and you will know the truth’, depends on the condition of verse 31: the knowledge is the fruit of remaining, not a separate gift. Kai hē alētheia eleutherōsei humas, ‘and the truth will set you free’, uses the future of eleutheroō, a verb the hearers take politically. In John, truth is not an abstraction but the reality of God made known in Jesus (1:14, 14:6), so the truth that frees is finally a person, as verse 36 makes explicit by putting ‘the Son’ where verse 32 has ‘the truth’.",
+      "words": ["G1097", "G0225", "G1659"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Freedom is the gift of the truth that Jesus is and speaks. The parallel between verse 32 and verse 36 shows that the liberating truth and the liberating Son are the same, so freedom comes by knowing him."
+        }
+      ],
+      "refs": ["John 8:36", "John 14:6", "John 1:14", "Galatians 5:1", "Romans 6:17-18"]
+    },
+    {
+      "v": "33",
+      "context": "The hearers protest that they are Abraham's offspring and have never been anyone's slaves. How can Jesus say they will become free?",
+      "grammar": "Sperma Abraam esmen, ‘we are the seed of Abraham’, uses sperma in the collective sense of descendants, the word of the promises in Genesis (Genesis 12:7, 22:17). Oudeni dedouleukamen pōpote, ‘we have never been enslaved to anyone’, uses a perfect with pōpote, ‘ever yet’: a claim about their whole standing. Eleutheroi genēsesthe, ‘you will become free’, quotes Jesus back to himself with genēsesthe, ‘become’, which they hear as an insult: to become free one must now be a slave.",
+      "words": ["G4690G", "G0011", "G1398", "G4455", "G1658", "G1096"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Descent from Abraham was the heart of Israel's identity and the ground of God's promises, and Jesus will grant it (verse 37). The chapter asks whether descent alone makes one a child of Abraham, a question John the Baptist had already pressed (Matthew 3:9) and Paul would take up (Romans 9:6-8)."
+        }
+      ],
+      "refs": ["Genesis 12:7", "Matthew 3:9", "Romans 9:6-8", "Exodus 20:2", "Nehemiah 9:36"]
+    },
+    {
+      "v": "34-36",
+      "context": "Jesus answers with a solemn saying: everyone who commits sin is a slave of sin. A slave has no permanent place in the household, but a son stays forever, and if the Son sets them free, they will be free indeed.",
+      "grammar": "Pas ho poiōn tēn hamartian, ‘everyone who does sin’, uses a present participle for a practice, not a single lapse (compare 1 John 3:4-9). Doulos estin tēs hamartias, ‘is a slave of sin’, makes sin the master. Verse 35 moves from a principle to a picture: ho doulos ou menei en tē oikia eis ton aiōna, ‘the slave does not remain in the house forever’, ho huios menei eis ton aiōna, ‘the son remains forever’. The shift from ‘a son’ in general to ‘the Son’ in verse 36 is carried by the article: ean oun ho huios humas eleutherōsē, ontōs eleutheroi esesthe, ‘if then the Son frees you, you will be free in reality’. Ontōs, ‘really’, answers alēthōs in verse 31.",
+      "words": ["G0281", "G4160G", "G0266", "G1401", "G3306", "G3614G", "G5207", "G1659", "G3689", "G1658"],
+      "text": "Codex Bezae and a few other witnesses lack ‘of sin’ at the end of verse 34, which yields ‘everyone who commits sin is a slave’. Nearly all manuscripts have the longer text, and the shorter one may be an attempt to make the saying lead more smoothly into the picture of the household slave in verse 35.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is a master, not only a mistake. The slave cannot free himself by trying harder, which is why the verse turns at once from the slave's condition to the Son's act."
+        },
+        {
+          "id": "salvation",
+          "note": "Freedom is given by the Son, who alone belongs to the Father's household by right and can bring others into it. Paul uses the same picture of the slave and the son in Galatians 4:1-7."
+        }
+      ],
+      "refs": ["Romans 6:16-23", "Galatians 4:1-7", "Galatians 4:30", "Hebrews 3:5-6", "2 Peter 2:19"]
+    },
+    {
+      "v": "37-38",
+      "context": "Jesus grants their descent from Abraham but names their intent: they are seeking to kill him because his word finds no room in them. He speaks what he has seen with the Father, and they do what they have heard from their father.",
+      "grammar": "Oida hoti sperma Abraam este, ‘I know that you are Abraham's seed’, concedes the physical fact before the argument turns to character. Ho logos ho emos ou chōrei en humin, ‘my word has no room in you’ or ‘makes no headway among you’, uses chōreō, to make room or to advance. Verse 38 sets egō and humeis side by side: ha egō heōraka para tō patri lalō, ‘what I have seen with the Father I speak’, and kai humeis oun ha ēkousate para tou patros poieite, ‘and you, what you heard from the father, you do’. In the critical text the second ‘father’ has no ‘your’, so poieite could be read as an imperative, ‘so you too must do what you heard from the Father’, an appeal rather than an accusation; verses 39-44 show that the accusing sense is at least where the argument goes.",
+      "words": ["G6063", "G4690G", "G0011", "G2212", "G0615", "G3056", "G5562", "G3708", "G3962", "G4160G"],
+      "text": "The Textus Receptus reads ‘what you have seen with your father’, with ‘your’ and the verb ‘seen’, which makes the contrast between the two fathers explicit from the start. The critical editions, following the oldest papyri, read ‘what you heard from the father’, which leaves the reference open until verse 41.",
+      "refs": ["John 5:19-20", "John 3:11", "John 7:19", "John 8:44"]
+    },
+    {
+      "v": "39-40",
+      "context": "They insist, “Abraham is our father.” Jesus answers that Abraham's children would do Abraham's works; instead they seek to kill a man who has told them the truth he heard from God, which Abraham never did.",
+      "grammar": "Ei tekna tou Abraam este, ta erga tou Abraam epoieite, ‘if you are Abraham's children, you would be doing Abraham's works’, is a mixed condition: a real present in the first half, an unreal imperfect without an in the second. Scribes smoothed it in two directions. Some read ‘if you were’ (ēte, the Textus Receptus), a regular contrary-to-fact condition; others, including Papyrus 66 and Codex Vaticanus in its first hand, read poieite as a command, ‘if you are Abraham's children, do the works of Abraham’. Verse 40 has Jesus call himself anthrōpon, ‘a man’, who has told them the truth. Touto Abraam ouk epoiēsen, ‘this Abraham did not do’, points back to Genesis.",
+      "words": ["G0011", "G3962", "G5043", "G2041", "G4160G", "G0615", "G0444", "G0225", "G2316"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Kinship with Abraham is shown in likeness to him, above all in his welcome of God's word and God's messengers. Interpreters often point to Genesis 18, where Abraham runs to receive the visitors the LORD sends, in contrast to a crowd seeking to kill the one God sent. Paul makes a related argument when he calls those who share Abraham's faith his children (Romans 4:11-12, Galatians 3:7)."
+        }
+      ],
+      "refs": ["Genesis 18:1-8", "Genesis 15:6", "Romans 4:11-12", "Galatians 3:7", "James 2:21-23"]
+    },
+    {
+      "v": "41-42",
+      "context": "Jesus tells them they are doing the works of their own father. They retort that they were not born of sexual immorality; they have one Father, God. Jesus answers that if God were their Father, they would love him, because he came from God and was sent by him.",
+      "grammar": "Hēmeis ek porneias ou gegennēmetha, ‘we were not born of fornication’, puts hēmeis, ‘we’, first, which many readers hear as a jab: we were not, implying that someone else was. In the prophets, porneia is also the image for Israel's idolatry, and ‘children of fornication’ (Hosea 1:2, Greek Old Testament tekna porneias) are children of an unfaithful people, so the hearers may be claiming covenant faithfulness as much as legitimacy. Hena patera echomen ton theon, ‘we have one Father, God’, echoes the prophets (Malachi 2:10). Jesus answers with a contrary-to-fact condition, ei ho theos patēr humōn ēn, ēgapate an eme, ‘if God were your Father, you would love me’, and two verbs of coming: exēlthon, ‘I came out’, and hēkō, ‘I have come and am here’.",
+      "words": ["G4202", "G1080", "G1520", "G3962", "G2316", "G0025", "G1831", "G2240", "G0649"],
+      "ot": [
+        {
+          "ref": "Malachi 2:10",
+          "note": "Do we not all have one Father? Did not one God create us? (Hebrew av echad; Greek Old Testament pater heis). Malachi asks the question to rebuke Israel for faithlessness among themselves. The hearers use the confession as a defense; Jesus accepts the confession and tests it by its fruit, love for the one the Father sends. Isaiah 63:16 and Deuteronomy 32:6 speak of God as Israel's Father in the same covenant sense."
+        }
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Love for the Son is the sign of belonging to the Father. John makes the same argument in 1 John 5:1: everyone who loves the Father loves the one born of him."
+        }
+      ],
+      "refs": ["Hosea 1:2", "Isaiah 63:16", "1 John 5:1", "John 16:27-28"]
+    },
+    {
+      "v": "43-44",
+      "context": "Jesus explains why they cannot understand him: they cannot bear to hear his word. Then comes the chapter's hardest sentence: they are of their father the devil, who was a murderer from the beginning and is a liar and the father of lies.",
+      "grammar": "Verse 43 distinguishes lalia, ‘speech, way of talking’, from logos, ‘word, message’: they do not understand his speech because they cannot hear his message. Humeis ek tou patros tou diabolou este, ‘you are of the father, the devil’, uses ek for origin and likeness, the same construction as ‘from below’ in verse 23. Anthrōpoktonos ēn ap' archēs, ‘he was a man-killer from the beginning’, recalls death's entrance in Genesis 3 and Cain's murder of Abel, which 1 John 3:12 ties to the evil one. En tē alētheia ouk estēken can be read as a perfect of histēmi, ‘he has not stood in the truth’, or as an imperfect of stēkō, ‘he was not standing in the truth’; editors print it both ways. The closing ho patēr autou can mean ‘the father of it’ (the lie) or ‘his father’; the first is almost universally preferred.",
+      "words": ["G2981", "G3056", "G1228", "G1939", "G0443", "G0746", "G2476", "G5579", "G5583", "G0225"],
+      "history": "No verse in the Gospels has been used more cruelly against Jews. Read as a statement about the Jewish people rather than about hearers who were seeking to kill Jesus (8:37, 40), it fed medieval images of Jews as allies of Satan, was cited by Martin Luther in On the Jews and Their Lies (1543), and became the title of a section in Elvira Bauer's children's picture book Trust No Fox on His Green Heath and No Jew on His Oath (1936), published by Julius Streicher's Stürmer press, which declared that the father of the Jews is the devil. The church has since repented of such readings: the Second Vatican Council's Nostra Aetate (1965, section 4) taught that the Jews are not to be presented as rejected or accursed by God, and many Protestant bodies have said the same. The verse's own logic runs the other way. Jesus is a Jew speaking to Jews, the charge concerns intent to kill and refusal of truth, and Jesus uses the same language of Peter (Mark 8:33) and Judas (6:70).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse traces sin to its two oldest marks, murder and the lie, and says that whoever chooses them bears the likeness of the first liar. It is a warning addressed, in John's Gospel, to people who had believed, and every reader who handles it must hear it as addressed first to himself."
+        }
+      ],
+      "refs": ["Genesis 3:1-5", "Genesis 4:8", "1 John 3:8-12", "Mark 8:33", "Revelation 12:9"]
+    },
+    {
+      "v": "45-47",
+      "context": "Because Jesus tells the truth, they do not believe him. He challenges them to convict him of sin, and concludes that whoever is of God hears God's words; they do not hear because they are not of God.",
+      "grammar": "Egō de hoti tēn alētheian legō, ou pisteuete moi, ‘but because I speak the truth, you do not believe me’, is a deliberate paradox: the truth itself is the reason for unbelief, because they are bound to the lie (verse 44). Tis ex humōn elegchei me peri hamartias, ‘which of you convicts me of sin?’, uses elegchō, to expose or convict, the same verb used of the Spirit's work in 16:8. Ho ōn ek tou theou ta rhēmata tou theou akouei, ‘the one who is of God hears the words of God’, repeats the construction ek plus genitive and makes hearing the sign of origin.",
+      "words": ["G0225", "G4100", "G1651", "G0266", "G2316", "G4487", "G0191"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus' challenge presupposes his sinlessness, which the rest of the New Testament confesses: he was tempted in every way yet without sin (Hebrews 4:15), and he knew no sin (2 Corinthians 5:21). The Word who became flesh took a full human life without its bondage to sin."
+        }
+      ],
+      "refs": ["Hebrews 4:15", "2 Corinthians 5:21", "1 Peter 2:22", "John 16:8", "1 John 4:6"]
+    },
+    {
+      "v": "48-50",
+      "context": "The hearers answer with insult: Jesus is a Samaritan and has a demon. Jesus denies the demon, says he honors his Father while they dishonor him, and leaves his vindication to the one who seeks his glory and judges.",
+      "grammar": "Ou kalōs legomen hēmeis, ‘are we not right in saying?’, uses ou to expect agreement and hēmeis for emphasis. Samaritēs ei su kai daimonion echeis, ‘you are a Samaritan and have a demon’, joins two charges: religious outsider and madman. Jesus answers only the second, egō daimonion ouk echō, which some interpreters notice as a quiet refusal to treat Samaritan as an insult after chapter 4. Timō ton patera mou kai humeis atimazete me, ‘I honor my Father, and you dishonor me’, sets honor against dishonor. Estin ho zētōn kai krinōn, ‘there is one who seeks and judges’, uses two present participles for the Father's continuing activity.",
+      "words": ["G2453", "G2573", "G4541", "G1140", "G5091", "G0818", "G2212", "G1391", "G2919"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus does not defend his own honor; he entrusts it to the Father, who is judge. The same pattern will hold at the cross, where he entrusts himself to the one who judges justly (1 Peter 2:23)."
+        }
+      ],
+      "refs": ["John 4:9", "John 7:20", "John 10:20", "John 5:23", "1 Peter 2:23"]
+    },
+    {
+      "v": "51-53",
+      "context": "Jesus promises that whoever keeps his word will never see death. The hearers take this as proof of madness: Abraham died, and so did the prophets. Is Jesus greater than Abraham?",
+      "grammar": "Ean tis ton emon logon tērēsē, thanaton ou mē theōrēsē eis ton aiōna, ‘if anyone keeps my word, he will certainly never see death’, uses the emphatic double negative again (as in verse 12) with eis ton aiōna, ‘forever’. The hearers repeat it with a different verb, ou mē geusētai thanatou, ‘will never taste death’, a Semitic idiom for dying (Mark 9:1). Nun egnōkamen, ‘now we know’, uses a perfect: they consider the case closed. Mē su meizōn ei tou patros hēmōn Abraam, ‘you are not greater than our father Abraham, are you?’, expects no, the same form of question the Samaritan woman asked about Jacob (4:12). In both places the reader knows the true answer.",
+      "words": ["G0281", "G3056", "G5083G", "G2288", "G2334", "G1089", "G1097", "G0599", "G4396", "G3173"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Jesus does not deny that believers die bodily; Lazarus will die and be raised (11:25-26). He promises that death will not be the final sight of anyone who keeps his word, because the life he gives is eternal life that death cannot end."
+        }
+      ],
+      "refs": ["John 11:25-26", "John 5:24", "John 4:12", "Mark 9:1", "Hebrews 2:9"]
+    },
+    {
+      "v": "54-55",
+      "context": "Jesus says that self-glorification would be empty; his Father, whom they call their God, is the one who glorifies him. They do not know him; Jesus does, and to deny it would make him a liar like them.",
+      "grammar": "Ean egō doxasō emauton, hē doxa mou ouden estin, ‘if I glorify myself, my glory is nothing’, is a condition in the aorist subjunctive. Hon humeis legete hoti theos hēmōn estin, ‘of whom you say, He is our God’, turns their confession back on them. Verse 55 plays on two verbs of knowing: ouk egnōkate auton, ‘you have not come to know him’ (perfect of ginōskō), and egō de oida auton, ‘but I know him’ (oida, settled knowledge). Esomai homoios humin pseustēs, ‘I would be a liar like you’, picks up pseustēs from verse 44. Ton logon autou tērō, ‘I keep his word’, is the same thing he asks of disciples in verse 51.",
+      "words": ["G1392", "G1391", "G2316", "G1097", "G6063", "G5583", "G5083G"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The Son's glory is given, not seized. Jesus will pray for the Father to glorify him with the glory he had before the world existed (17:5), and that request, like this verse, shows the Son receiving honor from the Father rather than taking it."
+        }
+      ],
+      "refs": ["John 17:1-5", "John 5:41-44", "John 7:28-29", "Hebrews 5:5"]
+    },
+    {
+      "v": "56",
+      "context": "Jesus says that Abraham, their father, rejoiced that he would see Jesus' day, and he saw it and was glad. The claim sets up the hearers' incredulous reply and the chapter's final saying.",
+      "grammar": "Ēgalliasato hina idē tēn hēmeran tēn emēn, ‘he rejoiced that he would see my day’, uses agalliaō, a word for exultant joy, with hina, which here gives the object of the rejoicing (joyful at the prospect of seeing) rather than purpose. Kai eiden kai echarē, ‘and he saw and was glad’, uses two aorists: Abraham's anticipation was answered by sight. When and how Abraham saw is not stated, and interpreters have pointed to the promise of Genesis 12, the birth of Isaac, the offering on Moriah (Genesis 22), or a vision granted to Abraham.",
+      "words": ["G0011", "G3962", "G0021", "G1492H", "G2250", "G5463"],
+      "history": "Jewish tradition before and after Jesus remembered Abraham as a man to whom God showed the future. Genesis Rabbah 44:22 records a dispute between Rabbi Yohanan ben Zakkai and Rabbi Akiva over whether God revealed to Abraham only this world or the world to come as well. The Aramaic Targum Onqelos renders Abraham's laughter at the promise of a son in Genesis 17:17 as rejoicing, and the Book of Jubilees does the same (Jubilees 15:17), so the joy of Abraham at the promise was already a familiar idea.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus claims that the promise to Abraham found its fulfillment in his day. The New Testament reads the promise of blessing for all nations through Abraham's offspring as pointing to Christ (Galatians 3:8, 16), and Hebrews says Abraham and the patriarchs saw the promises from afar and greeted them (Hebrews 11:13)."
+        }
+      ],
+      "refs": ["Genesis 17:17", "Genesis 22:8-14", "Galatians 3:8", "Hebrews 11:13", "Matthew 13:17"]
+    },
+    {
+      "v": "57",
+      "context": "The hearers seize on the impossibility: Jesus is not yet fifty years old, and he claims to have seen Abraham?",
+      "grammar": "Pentēkonta etē oupō echeis, ‘you do not yet have fifty years’, is a round figure for a man not yet old. Kai Abraam heōrakas, ‘and you have seen Abraham?’, uses the perfect of horaō, turning Jesus' claim that Abraham saw his day into the claim that he saw Abraham.",
+      "words": ["G2453", "G4004", "G2094", "G3768", "G0011", "G3708"],
+      "history": "Irenaeus of Lyon took the figure literally and argued that Jesus must have been over forty, since otherwise his hearers would have said ‘not yet forty’ (Against Heresies 2.22.6). Most readers since have taken fifty as a round number, perhaps the age at which Levites left their service (Numbers 4:3), and the other Gospels place Jesus' ministry when he was about thirty (Luke 3:23).",
+      "text": "Papyrus 75 and the first hand of Codex Sinaiticus, with the Sahidic Coptic, read ‘and has Abraham seen you?’ (kai Abraam heōraken se), which answers verse 56 more directly. Most manuscripts read ‘and you have seen Abraham?’, and most editors print it, judging the other reading an assimilation to verse 56.",
+      "refs": ["Luke 3:23", "Numbers 4:3", "John 2:20"]
+    },
+    {
+      "v": "58",
+      "context": "Jesus answers with a double Amen and the chapter's climax: “before Abraham was born, I am!” He does not say that he is older than Abraham but that his existence is of another order.",
+      "grammar": "Prin Abraam genesthai egō eimi, ‘before Abraham came to be, I am’, sets two verbs against each other. Genesthai is an aorist infinitive of ginomai, ‘to come into being’, the verb John uses for everything made through the Word (1:3) and for the Word becoming flesh (1:14). Eimi is a present of eimi, ‘to be’, with no beginning implied. Grammarians call a present used with a past time expression like prin an extension from past to present, and some have argued it means only ‘I have been since before Abraham’; but the contrast with genesthai, the absence of any predicate, and the hearers' response all point to more. The claim is not simply pre-existence but eternal being.",
+      "words": ["G0281", "G4250", "G0011", "G1096", "G1473", "G1510"],
+      "ot": [
+        {
+          "ref": "Exodus 3:14",
+          "note": "When Moses asks God's name, God answers ehyeh asher ehyeh, ‘I am who I am’, and tells him to say that ehyeh, ‘I am’, has sent him. The Greek Old Testament renders the first phrase egō eimi ho ōn, ‘I am the one who is’, and the name ho ōn, ‘the one who is’. John's absolute egō eimi is closer in form to Isaiah's egō eimi (43:10, 43:25, 46:4) than to the Greek of Exodus, which makes the name ho ōn. But Isaiah's formula itself takes up the name revealed at the bush, and the church from the fourth century on has heard Exodus 3:14 behind this verse."
+        },
+        {
+          "ref": "Psalm 90:2",
+          "note": "Before the mountains were born or you brought forth the earth and the world, from everlasting to everlasting you are God. The Greek Old Testament (Psalm 89:2) reads pro tou orē genēthēnai ... su ei, ‘before the mountains came to be ... you are’, the same contrast of a verb of becoming with a present ‘you are’ that John 8:58 uses of Abraham and Jesus."
+        }
+      ],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "Jesus speaks of himself in the form Israel's Scriptures reserve for God's own being. The verse is one of the texts on which the Council of Nicaea's confession (325), that the Son is eternal and of one being with the Father, rested."
+        },
+        {
+          "id": "incarnation",
+          "note": "The man not yet fifty is the eternal Son. The verse holds together what the prologue said: the Word who was with God in the beginning (1:1) became flesh (1:14) without ceasing to be who he was."
+        }
+      ],
+      "text": "Nearly all English versions render ‘I am’. A few, among them James Moffatt's translation (1913) and the New World Translation, render ‘I have existed’ or ‘I have been’, which reads the present as an extended past and loses the contrast with ‘came to be’ and the echo of the divine name.",
+      "refs": ["John 1:1-3", "John 1:14-15", "John 17:5", "Colossians 1:17", "Revelation 1:8"]
+    },
+    {
+      "v": "59",
+      "context": "They pick up stones to throw at him, but Jesus is hidden and goes out of the temple. The hearers understood the claim; stoning was the law's penalty for blasphemy.",
+      "grammar": "Ēran oun lithous hina balōsin ep' auton, ‘so they picked up stones to throw at him’, uses airō, to lift. Iēsous de ekrubē, ‘but Jesus was hidden’, is an aorist passive of kruptō. It can be read as a middle in sense, ‘he hid himself’ (so many translations), or as a divine passive, ‘he was hidden’ by God, which fits 7:30 and 8:20, where his hour had not come. Exēlthen ek tou hierou, ‘he went out of the temple’, is simple and ominous: the one who is the true temple (2:19-21) leaves the building.",
+      "words": ["G0142", "G3037", "G0906G", "G2928", "G1831", "G2411"],
+      "history": "Stones were close to hand in the temple courts, and crowds had thrown them there before. Josephus reports that at Passover in 4 BC, when Archelaus sent soldiers against mourners gathered in the temple, the crowd stoned the soldiers and killed many (Jewish War 2.12). The law's penalty for one who blasphemes the name of the LORD was stoning by the congregation (Leviticus 24:16).",
+      "text": "The Textus Receptus and many later manuscripts add ‘going through the midst of them, and so passed by’, which the King James Version prints. The words echo Luke 4:30 and John 9:1 and are missing from the earliest manuscripts, including Papyri 66 and 75, Codex Sinaiticus in its first hand, and Codex Vaticanus.",
+      "refs": ["Leviticus 24:16", "John 10:31-33", "Luke 4:29-30", "John 12:36", "Ezekiel 10:18"]
+    }
+  ]
+}

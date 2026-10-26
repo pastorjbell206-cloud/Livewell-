@@ -1,0 +1,623 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "“Therefore” links the appeal to the end of chapter 1, where Paul urged the church to stand firm in one spirit and to strive side by side against opposition (1:27-30). Before giving the command in verse 2, Paul lists four realities the Philippians have already received: encouragement in Christ, comfort from love, fellowship with the Spirit, and affection and compassion.",
+      "grammar": "Each clause begins ei tis or ei ti, ‘if any’. No verb is expressed, but the sense is a condition assumed to be true, the kind grammarians call a first class condition: ‘if there is any encouragement in Christ, and there is’. English readers can hear it as ‘since’. Paraklēsis can mean exhortation or encouragement, and paramuthion consolation or comfort; the two overlap. Koinōnia pneumatos (‘fellowship of the Spirit’) can mean the fellowship the Spirit creates (subjective genitive) or participation in the Spirit himself (objective genitive); the parallel ‘fellowship of the Holy Spirit’ in 2 Corinthians 13:14 is debated the same way. The fourth clause, ei tis splagchna, is ungrammatical in Greek: the masculine or feminine singular tis stands before the neuter plural splagchna (literally ‘inward parts’, the seat of affection). Most editions print it as the harder, earlier reading, and the Textus Receptus smooths it to tina.",
+      "words": [
+        "G3874",
+        "G3890",
+        "G2842",
+        "G4151G",
+        "G4698",
+        "G3628"
+      ],
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The appeal rests on Christ, on love (almost certainly God's love, compare 2 Corinthians 13:14), and on the Spirit. Paul's ethics grow out of a threefold experience of God before the church had words for the doctrine."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 13:14",
+        "Philippians 1:27",
+        "Colossians 3:12",
+        "Romans 15:5"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The one command of verses 1 to 4 arrives: “make my joy complete”. Paul spells out what would complete it with four phrases about unity of mind and love. His joy depends on their harmony, which later becomes personal when he names Euodia and Syntyche (4:2).",
+      "grammar": "Plērōsate is an aorist imperative, ‘fill up’ or ‘complete’. The hina clause that follows gives the content of the request more than its purpose: ‘that you think the same thing’. Phroneō, the verb used twice in this verse, means to think, set one's mind on, or hold an attitude, and it appears ten times in this short letter, more than in any other book of the New Testament; it becomes the hinge of verse 5. Sumpsuchoi (‘united in soul’) is found only here in the New Testament and is built from sun, ‘with’, and psuchē, ‘soul’. To hen phronountes, ‘thinking the one thing’, is a slightly different phrase from to auto phronēte, ‘thinking the same thing’, and the repetition sounds almost insistent.",
+      "words": [
+        "G4137",
+        "G5479",
+        "G5426",
+        "G4861",
+        "G1520"
+      ],
+      "refs": [
+        "Philippians 4:2",
+        "Romans 12:16",
+        "1 Corinthians 1:10",
+        "John 17:21"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Paul names what destroys unity (selfish ambition and empty glory) and its remedy (humility that counts others above oneself). The vocabulary anticipates the hymn: the one who ‘emptied’ himself is the opposite of ‘empty glory’, and the one who ‘humbled’ himself embodies the humility asked for here.",
+      "grammar": "Eritheia originally described the conduct of a hired worker and came to mean self-seeking or partisan rivalry; Paul already used it in 1:17 for those who preach Christ out of rivalry. Kenodoxia, ‘empty glory’, is found only here in the New Testament. Its first half, kenos (‘empty’), shares a root with ekenōsen in verse 7, and its second half, doxa (‘glory’), returns in verse 11, so the vocabulary sets vain glory against Christ's self-emptying and the true glory given to God. Tapeinophrosunē (‘humility’, literally lowliness of mind) comes from tapeinos, a word Greek moralists generally used for the abject or servile, not for a virtue. Hēgoumenoi (‘considering’) is the same verb used of Christ in verse 6, where he did not ‘consider’ equality with God something to exploit. Huperechontas means ‘surpassing’ or ‘more important’, not necessarily better in ability.",
+      "words": [
+        "G2052",
+        "G2754",
+        "G5012",
+        "G2233",
+        "G5242"
+      ],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Humility is defined not as low self-regard but as regard for others: counting their good as weightier than one's own. Paul grounds this new human virtue in the pattern of Christ rather than in Greek ethics, where it had little place."
+        }
+      ],
+      "refs": [
+        "Romans 12:3",
+        "Romans 12:10",
+        "Galatians 5:26",
+        "1 Peter 5:5"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "The positive side of verse 3: look to the interests of others. The word ‘also’ matters; Paul does not forbid care for one's own affairs but refuses to let them be the only concern. Verse 21 will describe people who seek only their own interests, and Timothy as the exception.",
+      "grammar": "Skopountes (‘looking to’) means to fix attention on something, the verb behind the English ‘scope’. The contrast mē ta heautōn ... alla kai ta heterōn, ‘not your own things but also the things of others’, uses kai (‘also’). Some interpreters argue that the word should be read as ‘even’ or that the sense is simply ‘not ... but’; most see the kai as keeping a place for legitimate self-care.",
+      "words": [
+        "G4648",
+        "G2087",
+        "G1538"
+      ],
+      "text": "The manuscripts divide between hekastos (‘each one’, singular) and hekastoi (‘each ones’, plural) in both halves of the verse, and the editions print different combinations. The sense is the same: every member of the church is addressed.",
+      "refs": [
+        "1 Corinthians 10:24",
+        "1 Corinthians 13:5",
+        "Romans 15:1-3",
+        "Philippians 2:21"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The bridge to the hymn: the mind Paul has asked for in verses 2 to 4 is the mind seen in Christ Jesus. What follows (verses 6 to 11) is the reason, the model, and the power behind the appeal.",
+      "grammar": "Touto phroneite en humin ho kai en Christō Iēsou is elliptical: it has no verb in its second half. The traditional reading supplies ‘was’: ‘have this mind among you which was also in Christ Jesus’, so the hymn presents Christ as an example to imitate. Ernst Käsemann, in an influential 1950 essay, argued against that ethical reading and supplied a different verb: ‘think this way among yourselves, as is fitting for those who are in Christ Jesus’, so the hymn tells the story of salvation rather than offering a moral model, and ‘in Christ’ refers to the sphere of the church. Ralph Martin's Carmen Christi (1967) developed the same line. Most recent commentators, among them Gordon Fee and Markus Bockmuehl, have returned to a reading that includes imitation, noting that Paul explicitly applies Christ's pattern in verses 3 to 4 and in the examples of Timothy and Epaphroditus. En humin can mean ‘in you’ (each person) or ‘among you’ (the community).",
+      "words": [
+        "G3778",
+        "G5426",
+        "G5547"
+      ],
+      "text": "Later manuscripts, followed by the King James Version, read a passive imperative phroneisthō (‘let this be thought’), which produced the familiar ‘Let this mind be in you’. The earlier manuscripts and modern editions read the active phroneite, ‘think this’; the BSB keeps the traditional English phrasing.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Christian growth is described as taking on a mind, a way of thinking and valuing, that belongs to Christ. The ethical reading and the salvation-story reading are not finally opposed: those who are in Christ are to think in the way his story reveals."
+        }
+      ],
+      "refs": [
+        "1 Corinthians 2:16",
+        "Romans 15:5",
+        "1 Corinthians 11:1",
+        "1 Peter 2:21"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The hymn begins with Christ's status before his human life: he existed in the form of God. The first movement (verses 6 to 8) is a descent in which Christ is the subject of every verb: he did not regard equality with God as something to exploit, he emptied himself, he humbled himself.",
+      "grammar": "Hos (‘who’) is a relative pronoun often found at the start of early Christian hymns (compare Colossians 1:15 and 1 Timothy 3:16). The participle huparchōn (‘existing’) can be read as concessive, ‘although he existed in the form of God’, which is the traditional reading, or as causal, ‘because he existed in the form of God’, argued by C. F. D. Moule (1970), N. T. Wright in The Climax of the Covenant (1991), and Michael Gorman: self-giving is not a departure from divinity but its expression. The participle's present tense marks a state that goes on alongside the action of the main verb, but it cannot by itself prove that Christ remained in that form during his emptying. Morphē (‘form’) is the crux. J. B. Lightfoot, in his Philippians commentary (1868), read it in the philosophical sense of essential attributes, as opposed to schēma, outward fashion. Most recent interpreters find that too technical for the period and read morphē as the visible form that truly expresses what something is; Markus Bockmuehl (1997) connected ‘the form of God’ with Jewish traditions of God's visible glory. Either way, the same word is used for ‘the form of a servant’ in verse 7, so Christ was as truly God as he became truly a servant.",
+      "words": [
+        "G3739",
+        "G3444",
+        "G5225",
+        "G2233",
+        "G2470"
+      ],
+      "text": "Harpagmos, found only here in the Bible, is why English versions differ: ‘robbery’ (KJV), ‘something to be grasped’ (ESV, BSB), ‘something to be exploited’ (NRSV). Three readings have been proposed: something not yet possessed, to be snatched; something possessed, to be clung to; or something possessed, not to be used for one's own advantage. Roy Hoover (Harvard Theological Review, 1971), building on Werner Jaeger, showed that with verbs like ‘consider’ the related noun harpagma forms a fixed idiom meaning something to take advantage of. Most scholars now follow him: Christ had equality with God and did not use it for himself.",
+      "history": "Many scholars have taken verses 6 to 11 as a hymn older than the letter. Ernst Lohmeyer, in Kyrios Jesus (1928), arranged it into six stanzas of three lines and suggested an Aramaic original from the early Jerusalem church; Joachim Jeremias preferred three stanzas; Ralph Martin's Carmen Christi (1967) surveyed the debate. Others doubt that it is a hymn at all. Gordon Fee (Bulletin for Biblical Research, 1992) argued it is exalted Pauline prose, since it lacks the regular meter of Greek hymns and its vocabulary fits Paul's argument. Early Christians certainly sang to Christ: about AD 112 Pliny the Younger, governor of Bithynia, reported to the emperor Trajan that Christians met before dawn to sing a hymn to Christ as to a god (Letters 10.96).",
+      "ot": [
+        {
+          "ref": "Genesis 3:5",
+          "note": "The serpent promised the first couple that they would be like God (Hebrew kelohim; Septuagint hōs theoi, ‘as gods’), and they reached for it. James Dunn, in Christology in the Making (1980), read the hymn as a contrast with Adam: Adam, made in God's image, grasped at equality with God; Christ did not. Dunn noted that morphē and eikōn (‘image’, Genesis 1:26-27) overlap in the Septuagint, and argued that the hymn need not imply a life before Jesus' birth. Many who accept the Adam echo, including N. T. Wright and Gordon Fee, reply that the parallel is loose (the hymn never uses eikōn) and that ‘being made in human likeness’ in verse 7 only makes sense if the subject was not human before."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The verse speaks of Christ's existence in the form of God before he took the form of a servant. The church's confession that the Son existed before his human birth and chose to become human draws directly on this verse, whatever the precise sense of harpagmos."
+        },
+        {
+          "id": "attributes",
+          "note": "If the causal reading is right, Christ's refusal to exploit his equality with God reveals what God is like: not self-seeking but self-giving. That reading makes the cross not a hiding of God's glory but its display, a theme later developed in Luther's theology of the cross."
+        }
+      ],
+      "refs": [
+        "John 1:1-2",
+        "John 17:5",
+        "2 Corinthians 8:9",
+        "Colossians 1:15",
+        "Hebrews 1:3"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "“But emptied Himself” is the turning point of the descent. The two phrases that follow explain what the emptying was: taking the form of a servant and being made in human likeness. Verse 7 ends and verse 8 begins with the note that he was found in appearance as a man.",
+      "grammar": "Heauton ekenōsen, ‘himself he emptied’, puts the reflexive pronoun first: no one emptied him; he did it. The verb kenoō is used elsewhere in Paul in a metaphorical sense, to make something void or of no effect (Romans 4:14, 1 Corinthians 1:17), and the text never says what Christ emptied himself of. The two aorist participles that follow, labōn (‘taking’) and genomenos (‘becoming’), are best read as participles of means, explaining how the emptying happened: he emptied himself by taking the form of a servant. That makes the emptying an addition rather than a subtraction. Homoiōma (‘likeness’) and schēma (‘appearance’, verse 8) are not words for mere seeming; Paul uses homoiōma in Romans 8:3 for Christ sent ‘in the likeness of sinful flesh’, stressing real resemblance while leaving room for a difference (there, sin). Doulos means slave, not a household servant of high rank.",
+      "words": [
+        "G2758",
+        "G3444",
+        "G1401",
+        "G2983",
+        "G3667",
+        "G1096",
+        "G4976"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 53:12",
+          "note": "The last Servant Song says the servant poured out his soul to death (Hebrew he'erah lammavet nafsho) and was numbered with the transgressors. The Septuagint renders it differently, ‘his soul was handed over to death’. Joachim Jeremias argued that ‘emptied himself’ reflects the Hebrew wording directly, so that the hymn's servant (doulos) is Isaiah's Servant (ebed) who pours out his life. Others think the link is only thematic. The pattern of humiliation followed by exaltation in Isaiah 52:13-53:12 is close to the hymn's shape either way."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The church's reading of the emptying within the faith of Chalcedon (AD 451) holds that the Son took human nature without losing or changing his divine nature. Augustine put it in On the Trinity (book 1) that he took the form of a servant without losing the form of God, and Pope Leo's Tome (449) described the emptying as a stooping down in compassion, not a failure of power. Nineteenth century kenotic theologians, beginning with Gottfried Thomasius in Germany, proposed that the Son laid aside certain divine attributes; the chapter note sets out that debate."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 8:9",
+        "Romans 8:3",
+        "John 1:14",
+        "Mark 10:45",
+        "Hebrews 2:14-17"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The descent reaches its lowest point. Having become human, Christ humbled himself further, obeying to the point of death, and not just any death: “even death on a cross”. This is the end of the first movement.",
+      "grammar": "The phrase ‘and being found in appearance as a man’ (schēmati heuretheis hōs anthrōpos) closes verse 7 in the Greek editions, while the BSB and many English versions begin verse 8 with it; ‘being found’ suggests how he appeared to anyone who looked: simply a man. Etapeinōsen heauton (‘he humbled himself’) repeats the reflexive pattern of verse 7 and uses the verb behind tapeinophrosunē in verse 3, so Paul's appeal for humility has its model here. Genomenos hupēkoos mechri thanatou, ‘becoming obedient to the point of death’, measures the extent of obedience, not to whom it was given (the Father is implied). The last phrase, thanatou de staurou, ‘and a death of a cross’, adds a word with the particle de that breaks the rhythm of the lines. Lohmeyer and many after him took it as Paul's own addition to an existing hymn, meant to stress the shame; those who think Paul wrote the whole passage see it as a deliberate climax.",
+      "words": [
+        "G5013",
+        "G5255",
+        "G2288",
+        "G4716"
+      ],
+      "history": "Crucifixion was the Roman punishment for slaves and rebels. Cicero, defending Gaius Rabirius in 63 BC (For Rabirius 16), said that the very word cross should be kept far from a Roman citizen's thoughts, eyes, and ears. Philippi was a Roman colony whose citizens were legally shielded from it, and Paul himself insisted on his citizenship there (Acts 16:37-38). A hymn that followed a divine figure down to a slave's death would have struck such readers as scandalous.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The hymn presents Christ's death first as obedience. Paul elsewhere draws out that this obedience reverses Adam's disobedience (Romans 5:19), and here it becomes the ground of his exaltation in verse 9."
+        }
+      ],
+      "refs": [
+        "Romans 5:19",
+        "Hebrews 5:8",
+        "Hebrews 12:2",
+        "Galatians 3:13",
+        "1 Corinthians 1:23"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "“Therefore God” begins the second movement, in which God is the subject. The one who humbled himself is exalted to the highest place and given the name above every name. Jesus' own saying that whoever humbles himself will be exalted (Luke 14:11) takes shape in his own story.",
+      "grammar": "Dio (‘therefore’) makes the exaltation a consequence of the humiliation. Huperupsōsen, ‘super-exalted’, is found only here in the New Testament; the prefix huper intensifies it, and it probably means exalted to the highest place rather than exalted more highly than before. Echarisato (‘he graciously gave’) comes from the same root as charis, ‘grace’: the name is a gift. To onoma to huper pan onoma, ‘the name above every name’, has the definite article in the earliest manuscripts, pointing to one particular name. Most interpreters identify it as Kurios (‘Lord’) in verse 11, the word the Septuagint uses for God's own name, YHWH. A minority take it as the name ‘Jesus’, now invested with a new glory, since verse 10 speaks of ‘the name of Jesus’.",
+      "words": [
+        "G1352",
+        "G5251",
+        "G5483",
+        "G3686"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 52:13",
+          "note": "The Hebrew says the LORD's servant will be raised and lifted up and be very high. The Septuagint renders it ‘my servant will understand, and will be exalted (hupsōthēsetai) and glorified exceedingly’. The hymn's pattern (a servant humiliated to death and then highly exalted) closely matches the Servant Song, and huperupsōsen shares its root with the Septuagint verb."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "God's exaltation of Jesus is the Father's verdict on the Son's obedience. The verse does not say the Son became divine; it says the one who was in the form of God and humbled himself is now publicly given the name and rule that belong to God."
+        },
+        {
+          "id": "messiah",
+          "note": "The hymn never uses the word Messiah, but the humbled and exalted figure receives the lordship promised to David's heir in Psalm 110:1 and the name of God himself. The early church's confession of Jesus as Christ and Lord is here compressed into one movement from the cross to the throne."
+        }
+      ],
+      "refs": [
+        "Isaiah 52:13",
+        "Acts 2:33-36",
+        "Ephesians 1:20-21",
+        "Hebrews 1:3-4",
+        "Luke 14:11"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The purpose of the exaltation is universal homage: every knee will bow at the name of Jesus, in heaven, on earth, and under the earth. The words come from one of the Old Testament's most emphatic declarations that there is no God but the LORD.",
+      "grammar": "Hina (‘so that’) introduces the purpose of God's act. Kampsē (‘should bow’) is an aorist subjunctive, looking to a future acknowledgment. The three genitive adjectives, epouraniōn, epigeiōn, and katachthoniōn, ‘of those in heaven, on earth, and under the earth’, are best taken as masculine, meaning beings: angels and spiritual powers, the living, and the dead. The phrase en tō onomati Iēsou, ‘in the name of Jesus’, may mean ‘at’ the name (as the BSB) or ‘in honor of’ the name.",
+      "words": [
+        "G3686",
+        "G1119",
+        "G2578",
+        "G2032",
+        "G1919",
+        "G2709"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 45:23",
+          "note": "The Hebrew reads ki-li tikhra kol-berekh tishava kol-lashon, ‘to me every knee shall bow, every tongue shall swear’, spoken by the LORD, who has just said there is no other God besides him, a righteous God and a Savior (45:21-22). The Septuagint renders the second line ‘every tongue shall confess (exomologēsetai) to God’, and Paul follows that wording, using the same verb in verse 11. In Romans 14:11 Paul quotes the same verse of God as judge. Here he applies it to the exalted Jesus. Richard Bauckham (God Crucified, 1998) and Larry Hurtado (Lord Jesus Christ, 2003) argue that this is not a borrowing of language for a lesser figure: taken from Isaiah's strongest statement of monotheism, it includes Jesus within the unique identity of Israel's God, while the confession still ends ‘to the glory of God the Father’."
+        }
+      ],
+      "history": "Ignatius of Antioch, writing about AD 110, uses the same threefold phrase when he says Jesus was truly crucified while beings in heaven, on earth, and under the earth looked on (To the Trallians 9.1). The phrase became a standard way of naming the whole creation.",
+      "refs": [
+        "Isaiah 45:22-23",
+        "Romans 14:10-11",
+        "Revelation 5:13",
+        "Ephesians 1:10",
+        "Colossians 1:20"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The hymn ends with the confession that “Jesus Christ is Lord” and with its final goal: the glory of God the Father. The Son's exaltation does not rival the Father's glory; it serves it.",
+      "grammar": "Exomologēsētai is the Septuagint's verb from Isaiah 45:23, meaning to confess openly or to acknowledge, often with a note of praise. Some manuscripts read the future indicative (exomologēsetai, ‘will confess’) instead of the subjunctive; the sound difference in Greek is small. The content of the confession, kurios Iēsous Christos, puts kurios first for emphasis: ‘Lord is Jesus Christ’. This is the earliest Christian confession (Romans 10:9, 1 Corinthians 12:3). Eis doxan theou patros, ‘to the glory of God the Father’, states the final purpose of the whole hymn.",
+      "words": [
+        "G1843",
+        "G2962G",
+        "G1391",
+        "G3962"
+      ],
+      "history": "In the Roman world kurios was used of the emperor, and saying ‘Lord Caesar’ became a test for Christians. The Martyrdom of Polycarp (8.2) records officials urging the aged bishop of Smyrna, about AD 155 to 160, to ask what harm there was in saying it. Philippi, a Roman colony, would have heard ‘Jesus Christ is Lord’ against that background, though the hymn's own source is Isaiah, not imperial politics.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "Jesus receives the confession that Isaiah reserves for the LORD alone, and yet the confession is to the glory of God the Father. The verse holds together the Son's sharing in the one divine name and his distinction from the Father, the pattern the church later confessed as the Trinity."
+        },
+        {
+          "id": "kingdom",
+          "note": "The final bowing of every knee is the completion of God's rule over creation. It is future in form (every tongue should confess), and Christian traditions differ over whether it describes the joyful worship of the redeemed only or also the forced acknowledgment of those who resisted."
+        }
+      ],
+      "refs": [
+        "Romans 10:9",
+        "1 Corinthians 12:3",
+        "1 Corinthians 15:24-28",
+        "John 5:23",
+        "Revelation 5:13-14"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "“Therefore, my beloved” draws the lesson from the hymn. As Christ was obedient (verse 8), the Philippians, who have always obeyed, should now work out their salvation, especially while Paul is absent. The command concerns the life of the community as well as of each person.",
+      "grammar": "Hōste (‘so then’) makes the hymn the ground of the command. Hupēkousate (‘you obeyed’) echoes hupēkoos in verse 8. The main verb, katergazesthe (‘work out’, present imperative), means to bring something to completion; it presupposes salvation as something possessed that is to be carried through, not something to be earned. Tēn heautōn sōtērian, ‘your own salvation’, uses a plural reflexive: it may point to each person or to the community's shared well-being, and many commentators hold both together. Meta phobou kai tromou, ‘with fear and trembling’, is a Septuagint phrase (Exodus 15:16, Psalm 2:11) for the awe of creatures before God, not anxiety about being lost; Paul uses it for the proper attitude of servants (Ephesians 6:5) and for his own arrival at Corinth (1 Corinthians 2:3).",
+      "words": [
+        "G5620",
+        "G5219",
+        "G2716",
+        "G4991",
+        "G5401",
+        "G5156",
+        "G0666"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation here has a present and ongoing dimension. The verse does not make salvation a human achievement (verse 13 rules that out) but calls for its full outworking in a life of obedience and humility."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "Fear and trembling are the posture of those who know God is at work among them. It is the reverent seriousness of worship, not the terror of the unforgiven."
+        }
+      ],
+      "refs": [
+        "Psalm 2:11",
+        "1 Corinthians 2:3",
+        "2 Corinthians 7:15",
+        "Ephesians 6:5",
+        "Hebrews 12:28"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "The reason the Philippians can work out their salvation: God is at work in them, both in their willing and in their doing. Verse 13 does not compete with verse 12; it grounds it.",
+      "grammar": "Theos is placed first for emphasis: ‘for God is the one working in you’. The participle ho energōn (‘the one working’) and the infinitive energein (‘to work’) come from the same root, so God's working produces their working. To thelein kai to energein, ‘both the willing and the working’, uses articular infinitives, which treat the actions as things God brings about. Huper tēs eudokias, ‘for the sake of his good pleasure’, can mean for God's own good purpose (the BSB) or, as some take it, for the sake of goodwill in the community; most read it of God.",
+      "words": [
+        "G2316",
+        "G1754",
+        "G2309",
+        "G2107"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God works both desire and action in his people. Augustine used this verse against Pelagius to argue that even the good will is God's gift, a conclusion the Second Council of Orange (529) affirmed. Christian traditions still differ over how divine and human agency fit together (Augustinian, Thomist, Arminian, and others), but all read the verse as ruling out a salvation achieved without God."
+        },
+        {
+          "id": "sanctification",
+          "note": "Holiness is neither passive nor self-generated. The believer truly wills and acts, and God is truly the one who works in that willing and acting."
+        }
+      ],
+      "refs": [
+        "1 Corinthians 15:10",
+        "Ephesians 2:10",
+        "Hebrews 13:20-21",
+        "Ezekiel 36:26-27",
+        "Colossians 1:29"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "A practical command that sounds small but carries an Old Testament echo: do everything without grumbling or arguing. Its purpose follows in verse 15. Paul is thinking of the church's internal quarrels (4:2).",
+      "grammar": "Poieite is a present imperative, a habit of life. Gongusmos (‘grumbling’, an onomatopoeic word that sounds like muttering) is the Septuagint's word for Israel's murmuring against Moses and against God in the wilderness (Exodus 16:7-9, Numbers 17:5). Dialogismos can mean inner questioning or open dispute; here it probably means arguing with one another. Chōris (‘without’) governs both nouns.",
+      "words": [
+        "G4160G",
+        "G5565",
+        "G1112",
+        "G1261"
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 16:7-9",
+          "note": "In the wilderness Israel grumbled against Moses and Aaron over food, and Moses answered that their grumbling was really against the LORD. The Septuagint uses gongusmos, the word Paul uses here. Paul presents the church as a people in its own wilderness between redemption and final rest, tempted to repeat Israel's complaint; 1 Corinthians 10:10 makes the same warning explicit."
+        }
+      ],
+      "refs": [
+        "Exodus 16:7-9",
+        "Numbers 14:27",
+        "1 Corinthians 10:10",
+        "1 Peter 4:9"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "The purpose of verse 14: that the Philippians would be blameless and pure, God's faultless children in a crooked generation, shining like stars. Paul draws his wording from the Song of Moses, but reverses its verdict.",
+      "grammar": "Genēsthe (‘you may become’) is aorist subjunctive in a purpose clause. Amemptoi (‘blameless’) describes those against whom no charge can be made; akeraioi (‘pure’, literally ‘unmixed’) is used of undiluted wine or unalloyed metal, and so of integrity. Amōma (‘without blemish’) is sacrificial language for animals fit to be offered. Phainesthe can be indicative (‘you shine’) or imperative (‘shine’); most take it as indicative, describing what they are. Phōstēres means luminaries, the heavenly bodies (Genesis 1:14 in the Septuagint), rather than lamps.",
+      "words": [
+        "G0273",
+        "G0185",
+        "G5043",
+        "G0299",
+        "G4646",
+        "G1294",
+        "G5316",
+        "G5458"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 32:5",
+          "note": "The Song of Moses accuses Israel: in the Septuagint, ‘they sinned; not his children, blemished ones (tekna mōmēta), a crooked and perverse generation (genea skolia kai diestrammenē)’. The Hebrew is difficult but carries the same charge of a twisted generation that is no longer truly God's children. Paul takes the Septuagint phrases and turns them around: the Philippians are to be children of God without blemish (tekna theou amōma) in the midst of the crooked and perverse generation. The warning of Moses becomes a calling for the church."
+        },
+        {
+          "ref": "Daniel 12:3",
+          "note": "Daniel's vision of the end promises that the wise will shine like the brightness of the heavens. The Old Greek translation of Daniel says they will shine like the luminaries (phōstēres) of heaven, the word Paul uses. What Daniel promises for the resurrection, Paul sees already beginning in a church that keeps faith in a dark world."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 32:5",
+        "Daniel 12:3",
+        "Matthew 5:14-16",
+        "Acts 2:40",
+        "Ephesians 5:8"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The Philippians shine as they hold fast (or hold out) the word of life, and their faithfulness will be Paul's boast on the day of Christ, the evidence that his running and laboring were not in vain.",
+      "grammar": "Epechontes can mean ‘holding fast’ (keeping a grip on the word) or ‘holding out’ (offering it to others, as the BSB's ‘hold forth’ suggests). Both meanings are attested, and interpreters remain divided; the context of shining in the world favors ‘holding out’ for some, while the context of perseverance favors ‘holding fast’ for others. Kauchēma (‘boast’) is not self-praise but the ground of Paul's confidence before Christ. Edramon (‘I ran’) and ekopiasa (‘I labored’) use athletic and manual labor images, and eis kenon (‘in vain’, literally ‘into emptiness’) returns to the root keno- of verses 3 and 7.",
+      "words": [
+        "G3056",
+        "G1907",
+        "G2745",
+        "G5143",
+        "G2872",
+        "G2756"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 49:4",
+          "note": "In the second Servant Song the servant says, in the Septuagint, ‘I labored in vain (kenōs ekopiasa)’ before trusting that his cause is with the LORD. Paul's ‘labor in vain’ echoes the Servant's words, as he does in Galatians 2:2 and 1 Thessalonians 3:5, and he sees his apostolic work in the light of the Servant's mission to the nations (Isaiah 49:6)."
+        }
+      ],
+      "refs": [
+        "Galatians 2:2",
+        "1 Thessalonians 2:19",
+        "1 Corinthians 9:24-27",
+        "Isaiah 49:4",
+        "Philippians 1:10"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Paul pictures his possible execution as a drink offering poured over the Philippians' sacrifice of faith, and he rejoices. He asks them to rejoice with him. Christ's self-pouring in the hymn is here reproduced in the apostle.",
+      "grammar": "Ei kai spendomai, ‘even if I am being poured out’, is a real possibility, not a remote supposition. The present tense spendomai may suggest that the process has already begun. The same verb appears in 2 Timothy 4:6. Epi tē thusia kai leitourgia tēs pisteōs humōn, ‘upon the sacrifice and service of your faith’, joins two nouns under one article: the Philippians' faith, expressed in their gift and their life, is the main offering, and Paul's blood is the libation poured over it. Chairō kai sugchairō (‘I rejoice and rejoice with’) is echoed exactly in verse 18 by chairete kai sugchairete, a mirror that binds apostle and church in shared joy.",
+      "words": [
+        "G4689",
+        "G2378",
+        "G3009",
+        "G5463",
+        "G4796"
+      ],
+      "history": "Drink offerings of wine accompanied Israel's daily and festival sacrifices (Numbers 28:7), and libations were poured in Greek and Roman worship at sacrifices, meals, and treaties. Paul's readers in Philippi, a city with temples and imperial cult, would have known the practice well. Paul applies it to his own death, as later writers speak of martyrs' blood.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Paul reads his possible death in the pattern of worship and of Christ's self-giving. Suffering for the church is not wasted but offered, and it can coexist with joy."
+        }
+      ],
+      "refs": [
+        "2 Timothy 4:6",
+        "Numbers 28:7",
+        "Romans 12:1",
+        "Romans 15:16",
+        "Colossians 1:24"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "Paul turns to travel plans, but the plans are also examples. Timothy, whom he hopes to send soon, embodies the humility of verses 3 and 4: he genuinely cares for others' interests.",
+      "grammar": "Elpizō en kuriō Iēsou, ‘I hope in the Lord Jesus’, places even travel plans under Christ's lordship. Eupsuchō (‘I may be cheered’) is found only here in the New Testament. Isopsuchon (‘like-minded’, literally ‘of equal soul’) is also unique in the New Testament; it may mean that no one is so like Paul himself, or no one so like Timothy. Its one Septuagint use is Psalm 55:13 (54:14 in the Greek numbering), where the psalmist speaks of a betraying companion as ‘a man my equal’. Gnēsiōs (‘genuinely’) means legitimately, as of a true-born child, which prepares for the father and son image of verse 22. Merimnēsei (‘will care’) uses the verb Jesus uses for anxiety in Matthew 6:25, here in its positive sense of concern.",
+      "words": [
+        "G1679",
+        "G5095",
+        "G2174",
+        "G2473",
+        "G1104",
+        "G3309"
+      ],
+      "history": "Timothy was from Lystra, son of a Jewish mother and a Greek father (Acts 16:1-3). He was with Paul when the church at Philippi was founded (Acts 16) and was later sent back to Macedonia (Acts 19:22). He is named as co-sender of this letter (1:1), which fits Paul's confidence that the Philippians know his worth.",
+      "refs": [
+        "Acts 16:1-3",
+        "1 Corinthians 16:10",
+        "1 Thessalonians 3:2",
+        "1 Timothy 1:2",
+        "Philippians 1:1"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "The negative example: all the others seek their own interests, not those of Jesus Christ. The positive example: Timothy has served with Paul in the gospel like a son with his father.",
+      "grammar": "Hoi pantes ... ta heautōn zētousin, ‘all seek their own things’, is a sweeping statement that interpreters soften in different ways (all those available to send, or all compared with Timothy). In verse 22 dokimē is proven character, what has been tested and approved. The sentence begins as if Timothy served Paul as a son serves a father (hōs patri teknon), but ends with sun emoi edouleusen, ‘he served with me’. Paul corrects the image mid-sentence: both are slaves (edouleusen, from doulos, as in verse 7) of the gospel.",
+      "words": [
+        "G2212",
+        "G1382",
+        "G3962",
+        "G5043",
+        "G1398",
+        "G2098"
+      ],
+      "text": "The manuscripts vary between ‘Jesus Christ’ and ‘Christ Jesus’ in verse 21, a common variation in Paul's letters that does not affect the meaning.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Paul presents Timothy's authority as coming from proven character and shared servanthood, not position. The broken father and son image insists that apostle and coworker stand together under the gospel."
+        }
+      ],
+      "refs": [
+        "1 Corinthians 4:17",
+        "1 Corinthians 13:5",
+        "2 Timothy 3:10",
+        "1 Timothy 3:10"
+      ]
+    },
+    {
+      "v": "23-24",
+      "context": "Paul will send Timothy as soon as his own case is clear, and he trusts in the Lord that he himself will come soon. The uncertainty of his trial runs underneath the whole letter (1:19-26).",
+      "grammar": "Hōs an aphidō ta peri eme, ‘as soon as I see how things go with me’, uses a subjunctive of an uncertain future event. Exautēs means ‘immediately’. Pepoitha en kuriō (‘I am confident in the Lord’) is a perfect tense of persuasion, expressing settled confidence, the same verb he used in 1:25. Paul's hope of release is sincere but held under the Lord's will.",
+      "words": [
+        "G0872",
+        "G1824",
+        "G3982",
+        "G2064"
+      ],
+      "history": "Where Paul was imprisoned when he wrote is debated. The traditional view is Rome (about AD 60 to 62), supported by the mention of the praetorium (1:13) and Caesar's household (4:22). Others propose Ephesus in the mid 50s, since the several trips between Paul and Philippi implied in this chapter (news of Epaphroditus' illness, their response, Paul's planned visits) are easier over the shorter distance; a few propose Caesarea (Acts 23-26).",
+      "refs": [
+        "Philippians 1:25-26",
+        "Philemon 1:22",
+        "Acts 28:30-31",
+        "Philippians 1:13"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "Paul explains why he is sending Epaphroditus back now: the Philippians' messenger, who brought their gift, has become Paul's coworker and fellow soldier. Paul honors him in five titles so the church will receive him without any suggestion that he failed in his mission.",
+      "grammar": "Anagkaion hēgēsamēn (‘I considered it necessary’) is an epistolary aorist: Paul writes from the point of view of the readers, for whom the sending will be past when the letter arrives with Epaphroditus. The five descriptions fall into two groups: in relation to Paul, adelphon (‘brother’), sunergon (‘fellow worker’), and sustratiōtēn (‘fellow soldier’); in relation to the Philippians, apostolon (‘messenger’, literally ‘one sent’) and leitourgon (‘minister’). Apostolos here does not mean one of the Twelve or an apostle like Paul but an envoy of a church, as in 2 Corinthians 8:23. Leitourgos was the word for a public servant or a priest, and it prepares for the leitourgia of verse 30.",
+      "words": [
+        "G0316",
+        "G2233",
+        "G1891",
+        "G4904",
+        "G4961",
+        "G0652",
+        "G3011"
+      ],
+      "history": "Epaphroditus is named only in Philippians (2:25, 4:18). His name, derived from the goddess Aphrodite, was common in the Greek-speaking world; the patron to whom Josephus dedicated his Antiquities bore it, as did a freedman of Nero. He is not the same person as Epaphras of Colossians, though that name may be a shortened form.",
+      "refs": [
+        "Philippians 4:18",
+        "2 Corinthians 8:23",
+        "Philemon 1:2",
+        "Philippians 4:3"
+      ]
+    },
+    {
+      "v": "26-27",
+      "context": "Epaphroditus is homesick for the Philippians and distressed that they heard of his illness. Paul confirms he nearly died, but God had mercy on him, and on Paul too, sparing him sorrow upon sorrow.",
+      "grammar": "Epipothōn ēn (‘he was longing’) is a periphrastic imperfect, emphasizing an ongoing state. Adēmonōn (‘being distressed’) is the word used of Jesus in Gethsemane (Mark 14:33), a strong word for deep anguish. Paraplēsion thanatō (‘nearly unto death’) is idiomatic. Lupēn epi lupēn, ‘grief upon grief’, pictures one sorrow stacked on another: Paul's imprisonment and the loss of a friend. Paul says plainly that God had mercy on Epaphroditus; he claims no miraculous healing of his own and implies no guarantee that God always heals.",
+      "words": [
+        "G1971",
+        "G0085",
+        "G0770H",
+        "G3897",
+        "G1653",
+        "G3077"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Recovery from illness is ascribed to God's mercy, and the grief it would have caused is taken seriously. The apostle who rejoices in suffering is not stoic about the death of a friend."
+        },
+        {
+          "id": "suffering",
+          "note": "Serious illness struck a faithful worker in the middle of gospel service. Paul neither treats it as a failure of faith nor hides his own sorrow, which gives readers permission to grieve and to pray for recovery."
+        }
+      ],
+      "refs": [
+        "Mark 14:33",
+        "2 Timothy 4:20",
+        "2 Corinthians 1:8-10",
+        "James 5:14-15"
+      ]
+    },
+    {
+      "v": "28-29",
+      "context": "Paul sends Epaphroditus back eagerly, so the church will rejoice and Paul will be less anxious. He tells them to receive him with joy and to honor people like him.",
+      "grammar": "Spoudaioterōs (‘all the more eagerly’) is a comparative adverb. Epempsa (‘I am sending’) is another epistolary aorist. Alupoteros (‘less sorrowful’) implies that Paul still carries grief; he does not claim to be free of it. Prosdechesthe (‘receive’, ‘welcome’) is a present imperative; entimous echete, ‘hold in honor’, names the church's response to those who risk themselves for Christ.",
+      "words": [
+        "G4708",
+        "G3992",
+        "G0253",
+        "G4327",
+        "G1784"
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church is called to honor people whose service costs them, not because of rank but because they display the mind of Christ. Paul's instruction heads off any suspicion that Epaphroditus returned early in failure."
+        }
+      ],
+      "refs": [
+        "1 Thessalonians 5:12-13",
+        "Romans 16:2",
+        "1 Corinthians 16:16-18"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "The reason for honor: Epaphroditus came near death for the work of Christ, risking his life to complete the service the Philippians could not give in person. The chapter ends with a third example of the pattern in the hymn: going down, even toward death, for others.",
+      "grammar": "Mechri thanatou ēngisen, ‘he came near to the point of death’, repeats mechri thanatou from verse 8, where Christ was obedient to the point of death. The link is surely intended. Paraboleusamenos tē psuchē, ‘having gambled with his life’, uses a rare verb from paraboleuomai, ‘to throw down a stake’, a gambler's word. The rest of the verse says he came to fill up (anaplērōsē) what was lacking (husterēma) in their service (leitourgias) to Paul: not a rebuke to the church, but a recognition that distance kept them from serving him themselves.",
+      "words": [
+        "G2041",
+        "G2288",
+        "G1448",
+        "G3851",
+        "G5590H",
+        "G0378",
+        "G5303",
+        "G3009"
+      ],
+      "text": "Manuscripts differ between ‘the work of Christ’, ‘the work of the Lord’, and simply ‘the work’. Later manuscripts also read parabouleusamenos, ‘having disregarded’, which the King James Version renders ‘not regarding his life’; the earlier manuscripts read paraboleusamenos, ‘having risked’.",
+      "history": "In late antique Alexandria, a guild of attendants who cared for the sick and buried the dead were called parabolani, a name usually traced to this word, since they risked their lives in times of plague. Laws of the early fifth century preserved in the Theodosian Code regulated their number after they became involved in the city's violent church politics.",
+      "refs": [
+        "Philippians 4:18",
+        "Romans 16:4",
+        "1 Corinthians 16:17",
+        "Philippians 2:8"
+      ]
+    }
+  ]
+}

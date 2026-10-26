@@ -1,0 +1,492 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "After thirty-nine chapters that end with Hezekiah being told his treasures and sons will be carried to Babylon (39:6-7), the book opens a new section with a double command: comfort my people. The reason is announced at once. Jerusalem's hard service is over and her guilt has been paid. Everything in chapters 40 to 55 unfolds from these two verses.",
+      "grammar": "Nachamu nachamu, \"Comfort, comfort\", is a Piel imperative repeated for urgency, and it is plural: God is addressing a group, not a single prophet. Frank Moore Cross argued in 1953 that the addressees are God's heavenly council, the setting of Isaiah 6 and 1 Kings 22:19-22, and many interpreters follow him. \"My people\" and \"your God\" together recall the covenant formula (Leviticus 26:12): the relationship still stands after the exile. \"Speak tenderly\" is dabberu al-lev, ‘speak to the heart’, the idiom of a man wooing or reassuring a woman (Genesis 34:3, Hosea 2:14, Ruth 2:13). Three reasons follow, each introduced by ki: her tsava, military or forced service (Job 7:1), is complete; her iniquity nirtsah, \"has been pardoned\", a Niphal of ratsah used in Leviticus 26:41-43 for guilt paid off in full; and she has received kiflayim, ‘double’, for her sins. Kiflayim is disputed: it may mean double punishment (as in Jeremiah 16:18), or, from the verb kafal, ‘to fold over’, a matching equivalent, the full amount.",
+      "words": [
+        "H5162G",
+        "H5971A",
+        "H1696G",
+        "H3820A",
+        "H6635H",
+        "H7521",
+        "H5771G",
+        "H3718"
+      ],
+      "text": "The ancient versions supply the unnamed comforters. The Aramaic Targum opens ‘O prophets, prophesy comfort to my people’, and the Septuagint adds ‘O priests’ to verse 2, ‘Priests, speak to the heart of Jerusalem’. Neither addition is in the Hebrew, which leaves the speakers unidentified.",
+      "history": "In the synagogue these verses open the haftarah (the reading from the Prophets) for Shabbat Nachamu, the Sabbath of Comfort that follows the fast of Tisha BeAv, which mourns the destruction of the temple; it begins seven weeks of prophetic readings of consolation from Isaiah 40 to 63. In the church the same words open Handel's Messiah (1742), whose first vocal line is the tenor's ‘Comfort ye’.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The comfort rests on guilt dealt with, not ignored. Her iniquity is paid off, the language of Leviticus 26 for a debt settled. Isaiah 53 will say how God finally deals with iniquity: the LORD lays it on his Servant (53:6)."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation begins with God's word of comfort to a people who have done nothing to earn it. The sentence is over because God declares it over; the exiles' part is to hear."
+        }
+      ],
+      "refs": [
+        "Isaiah 39:6-7",
+        "Leviticus 26:40-45",
+        "Hosea 2:14",
+        "Isaiah 61:7",
+        "2 Corinthians 1:3-4"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The first voice calls for a road to be built for God through the wilderness, the desert between Babylon and Jerusalem. The picture is of a royal processional way, but the one who travels it is the LORD himself, coming back to Zion at the head of his people.",
+      "grammar": "Qol qore, ‘a voice calling’, is a noun and a participle with no named speaker. The Hebrew line most naturally divides after it: ‘A voice calls: In the wilderness prepare the way of the LORD; make straight in the desert a highway for our God.’ The phrase \"in the wilderness\" (bammidbar) belongs with \"prepare\", as the parallel \"in the desert\" (baaravah) belongs with \"make straight\", and the Masoretic accents agree. Pannu, \"Prepare\", is a Piel imperative of panah, ‘to clear away’ obstacles; yashsheru, \"make straight\", is a Piel of yashar. Mesillah is a built-up, graded road, the word of 11:16.",
+      "words": [
+        "H6963A",
+        "H7121I",
+        "H4057B",
+        "H6437G",
+        "H3474",
+        "H6160L",
+        "H4546"
+      ],
+      "history": "Babylon had its own processional way, a great paved and walled avenue along which the image of the god Marduk was carried in the New Year festival (the akitu), passing through the Ishtar Gate. Isaiah's hearers knew such processions of gods on roads made for them. The prophet turns the image around: the true God builds his road through the wilderness to bring his people home. The Rule of the Community from Qumran (1QS 8:12-16) quotes this verse to explain why the community withdrew into the desert: to prepare the way of the Lord by the study of the law.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's coming is announced before it happens. The voice does not describe the exiles' effort but calls for a way to be prepared for God, who is the one on the move. Every Gospel uses this verse to introduce the one who announced Jesus."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Mark 1:3",
+          "note": "All four Gospels apply the verse to John the Baptist (Matthew 3:3, Luke 3:4, John 1:23, where John says it of himself). They follow the Septuagint, which reads ‘the voice of one crying in the wilderness: prepare the way of the Lord’; the Greek word order lets ‘in the wilderness’ go with the voice, which fits John's location in the desert. The Gospels also change ‘make straight the paths of our God’ to ‘make his paths straight’, so that ‘the Lord’ whose way is prepared is Jesus. Mark begins by joining this verse to Malachi 3:1 (and perhaps Exodus 23:20) under Isaiah's name, presenting John as the messenger of Israel's God returning to his people."
+        }
+      ],
+      "parallels": [
+        "Matthew 3:1-3",
+        "Mark 1:2-4",
+        "Luke 3:2-6",
+        "John 1:19-23"
+      ],
+      "refs": [
+        "Isaiah 11:16",
+        "Isaiah 35:8",
+        "Malachi 3:1",
+        "Exodus 23:20"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "The road-building becomes a reshaping of the land itself: valleys raised, mountains lowered, rough ground made level. The purpose is stated in verse 5: the glory of the LORD will be revealed and all people will see it together. The oracle is sealed with the formula that God himself has spoken.",
+      "grammar": "Kol-gei yinnase, \"Every valley shall be lifted up\", and kol-har vegivah yishpalu, \"every mountain and hill made low\", are imperfects describing what will happen when the road is built. Heaqov, \"the uneven ground\", is from a root meaning bent or crooked, and harekhasim, \"the rugged land\", is a word found only here. Venigleh, \"will be revealed\", is a Niphal consecutive perfect of galah, ‘to uncover’: God's glory has been hidden in the exile and will be unveiled. Kol-basar, \"all humanity\", literally ‘all flesh’, reaches beyond Israel to the whole human race. The closing clause, ki pi YHWH dibber, \"For the mouth of the LORD has spoken\", is a signature formula of the book (1:20, 58:14).",
+      "words": [
+        "H1516R",
+        "H5375G",
+        "H8213",
+        "H6121B",
+        "H7406",
+        "H1540H",
+        "H3519",
+        "H1320",
+        "H6310G"
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The glory of the LORD that left the temple in Ezekiel's vision (Ezekiel 10:18-19) returns, and this time all flesh sees it. John's Gospel says of the incarnate Word that we saw his glory (John 1:14)."
+        },
+        {
+          "id": "mission",
+          "note": "The return of God to Zion is a revelation to all humanity, not a private event for Israel. Luke extends his quotation to include this verse because it announces the salvation of God to all flesh, the theme of his two volumes."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Luke 3:5-6",
+          "note": "Only Luke continues the quotation beyond verse 3, through verses 4 and 5. He follows the Septuagint, whose version of verse 5 reads ‘all flesh will see the salvation of God’ where the Hebrew has ‘all flesh will see it together’ (the glory). The Greek phrase suits Luke's purpose exactly: Simeon has already seen God's salvation in the infant Jesus (Luke 2:30), and Acts ends with Paul announcing that this salvation of God has been sent to the Gentiles (Acts 28:28)."
+        }
+      ],
+      "refs": [
+        "Luke 3:4-6",
+        "Isaiah 52:10",
+        "Ezekiel 43:2-5",
+        "John 1:14"
+      ]
+    },
+    {
+      "v": "6-8",
+      "context": "A second voice commands a herald to cry out, and the herald objects: what can be proclaimed when all flesh is as fragile as grass? The answer grants the objection and then sets against it the one thing that lasts: the word of our God stands forever. The word that has just promised comfort (verses 1-5) is therefore reliable, though every human power, Babylon's included, withers.",
+      "grammar": "Kol omer qera, ‘a voice saying, Cry out’. The next verb, veamar, ‘and he said’, is read in the Masoretic Text as a third person. \"All flesh is like grass\" is in Hebrew a bare equation, kol-habbasar chatsir, ‘all flesh is grass’. Its companion line uses chasdo, ‘its faithfulness’ or ‘its constancy’, the word chesed, usually God's steadfast love: human loyalty at its best lasts no longer than a wildflower. The verbs of verse 7, yavesh and navel, are perfects of general truth, what always happens. Ruach YHWH, \"the breath of the LORD\", is the scorching east wind that dries the grass of the land in days. Verse 8 answers with devar-Eloheinu yaqum leolam: ‘the word of our God will stand’, qum in the sense of remaining in force, as a vow or a decree stands.",
+      "words": [
+        "H7121I",
+        "H0559",
+        "H1320",
+        "H2682A",
+        "H2617A",
+        "H3001",
+        "H5034B",
+        "H7307H",
+        "H1697G",
+        "H6965I"
+      ],
+      "text": "The great Isaiah Scroll from Qumran (1QIsaa) and the Septuagint read ‘and I said’ instead of ‘and he said’, making the objection the prophet's own; the BSB (\"And I asked\") and most modern translations follow them. It is the only moment in chapters 40 to 55 where the prophet speaks of himself this way, a brief call scene like Isaiah 6. The Septuagint lacks most of verse 7, probably because a copyist's eye skipped from the first ‘the grass withers’ to the second, and it renders chasdo as ‘glory’ (doxa), which is how 1 Peter quotes it.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The passage sets the permanence of God's word against the transience of everything human, including the empires that seem permanent. It is the ground of the whole message: comfort can be spoken because the word that speaks it will not fail."
+        },
+        {
+          "id": "humanity",
+          "note": "Human frailty is stated without contempt. Grass is beautiful and brief, and so are we. Psalm 103:15-17 draws the same contrast between human days like grass and the LORD's steadfast love from everlasting to everlasting."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "1 Peter 1:24-25",
+          "note": "Peter quotes verses 6 to 8 from the Septuagint (‘all its glory like the flower of grass’) to explain the imperishable seed by which his readers have been born again (1:23). He changes ‘the word of our God’ to ‘the word of the Lord’ and then adds his own identification: this is the word that was preached as good news to you. The gospel is the enduring word that Isaiah contrasted with fading flesh. James 1:10-11 uses the same image of the rich man fading like a flower of the grass."
+        }
+      ],
+      "refs": [
+        "Psalm 103:15-17",
+        "1 Peter 1:23-25",
+        "James 1:10-11",
+        "Matthew 24:35",
+        "Isaiah 6:8"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Zion is sent up a high mountain to announce good news to the towns of Judah, and the whole message fits in three words: Here is your God. The good news is not first a change of circumstances but the arrival of God himself, which verses 10 and 11 go on to describe.",
+      "grammar": "Mevasseret Tsiyyon, \"O Zion, herald of good news\", is a feminine Piel participle of basar, ‘to bring good news’, in a construct phrase that can be read two ways. It can mean ‘Zion, the herald’, Zion herself announcing to Judah's towns (the BSB and most modern translations), or ‘herald to Zion’, a messenger bringing news to the city (the Septuagint's ho euangelizomenos Sion, and in 52:7 a masculine herald does come to Zion). The feminine imperatives, ali, ‘go up’, and harimi, ‘lift up’, support the first reading. Al-tirai, ‘do not fear’, is the word of assurance that runs through these chapters (41:10, 43:1). Hinneh Eloheikhem, \"Here is your God\", is the content of the news.",
+      "words": [
+        "H2022G",
+        "H1364",
+        "H5927G",
+        "H1319",
+        "H6726",
+        "H7311A",
+        "H3372G",
+        "H2009"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The verb basar, rendered in Greek by euangelizesthai, gives the New Testament its vocabulary for the gospel. Here the good news is that God himself has come. When Mark opens with the beginning of the gospel of Jesus Christ and quotes Isaiah 40:3 (Mark 1:1-3), he claims that this announcement has become true in Jesus."
+        }
+      ],
+      "refs": [
+        "Isaiah 52:7",
+        "Isaiah 41:10",
+        "Nahum 1:15",
+        "Mark 1:1-3",
+        "Romans 10:15"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "The God who comes is described in two images held together. He comes as a strong warrior whose arm rules, bringing his reward with him; and he comes as a shepherd who gathers lambs in his arm and gently leads the nursing ewes. The same arm does both.",
+      "grammar": "Adonai YHWH bechazaq yavo, ‘the Lord GOD comes as a strong one’ or \"with might\". Zeroo moshelah lo, ‘his arm rules for him’: the arm of the LORD is the exodus image of God's power (Deuteronomy 4:34), and it will be bared in 52:10 and revealed in 53:1. Sekharo, \"His reward\", and peullato, \"His recompense\", are the wages or spoils a victor brings home; in context the prize is most likely his rescued people, as 62:11 repeats. Verse 11 then uses zeroa again, bizroo yeqabbets telaim, ‘in his arm he gathers the lambs’. The last verb, yenahel, ‘he leads (to a watering place)’, is the tender verb of Psalm 23:2, \"He leads me beside quiet waters\", and alot, the ‘nursing ewes’, are sheep with young, who cannot be driven hard (Genesis 33:13).",
+      "words": [
+        "H0136",
+        "H2389",
+        "H2220",
+        "H4910",
+        "H7939",
+        "H6468",
+        "H7462B",
+        "H6908",
+        "H2922",
+        "H5763",
+        "H5095"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Power and tenderness belong to the same God and are exercised by the same arm. The passage refuses to set God's might against his gentleness: the one who rules is the one who carries the weak."
+        },
+        {
+          "id": "leadership",
+          "note": "Israel's kings were meant to be shepherds and often failed (Ezekiel 34:1-10). God himself takes up the task, and Jesus claims it as the good shepherd who knows his sheep (John 10:11-14)."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Revelation 22:12",
+          "note": "The risen Jesus says ‘Behold, I am coming soon, and my reward is with me’, echoing verse 10 (repeated in Isaiah 62:11). Words spoken of the LORD's coming to Zion are placed in Jesus' mouth about his own return, one of many places where Revelation applies to Christ what Isaiah says of God."
+        }
+      ],
+      "refs": [
+        "Isaiah 62:11",
+        "Psalm 23:1-2",
+        "Ezekiel 34:11-16",
+        "John 10:11-14",
+        "Genesis 33:13"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "The poem turns from announcement to argument. A string of rhetorical questions confronts the exiles' despair with the size of God. Who has measured the oceans in his palm and weighed the mountains? The questions expect the answer ‘no one but the LORD’, and they prepare for the complaint of verse 27.",
+      "grammar": "The verse is a catalog of ancient measures, each absurdly small for what it measures. Shoal, \"the hollow of his hand\", is a handful; zeret, \"span\", is the distance from thumb to little finger, half a cubit; shalish, ‘a third’, is a dry measure, probably a third of an ephah; peles is a balance or steelyard and moznayim a pair of scales. Tikken, \"marked off\", is a Piel of takhan, ‘to measure, regulate’, and will return in verse 13 of the Spirit. The perfect verbs (madad, tikken, shaqal) present God's measuring as done at creation.",
+      "words": [
+        "H4058",
+        "H8168",
+        "H2239",
+        "H8505",
+        "H7991A",
+        "H6425",
+        "H3976"
+      ],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The Creator handles the whole cosmos as a merchant handles grain. The verse does not describe physics; it asserts that nothing in creation is too large for God to have measured, and so nothing in the exiles' world is beyond his reach."
+        }
+      ],
+      "refs": [
+        "Job 38:4-11",
+        "Proverbs 30:4",
+        "Psalm 95:4-5",
+        "Isaiah 48:13"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The questions move from God's power to his wisdom. No one directed his Spirit, advised him, or taught him justice and understanding. God needs no counselor. The point is aimed at the gods of Babylon, whose myths show them consulting one another.",
+      "grammar": "Mi-tikken et-ruach YHWH, \"Who has directed the Spirit of the LORD\", repeats the verb tikken from verse 12: the one who measured the heavens cannot himself be measured. Ruach can mean spirit or mind, and the Septuagint rendered it nous, ‘mind’. Ish atsato, \"His counselor\", is literally ‘the man of his counsel’, a royal adviser. Verse 14 piles up verbs of instruction, nowats, ‘he took counsel’ (a Niphal of yaats), vayvinehu, ‘and he made him understand’, vaylammedehu, ‘and he taught him’ (twice), and yodienu, ‘he made him know’, with the path of justice, knowledge, and the way of understanding as their objects.",
+      "words": [
+        "H8505",
+        "H7307G",
+        "H6098",
+        "H3045",
+        "H3289",
+        "H0995",
+        "H3925G",
+        "H0734",
+        "H4941H"
+      ],
+      "history": "In the Babylonian creation epic Enuma Elish, the gods deliberate in assembly and the wise god Ea devises plans and counsels Marduk. R. N. Whybray's study The Heavenly Counsellor in Isaiah xl 13-14 (1971) argued that these verses deliberately deny the Babylonian picture of a creator who depended on another god's advice. Israel's God has no Ea.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God's wisdom is underived. He does not learn, consult, or discover; he knows. This is the root of the classical teaching that God's knowledge is not gained from creatures, and it is why his counsel can be trusted when events seem to contradict it."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Romans 11:34",
+          "note": "Paul quotes verse 13 from the Septuagint (‘who has known the mind of the Lord, or who has been his counselor?’) in the doxology that closes Romans 9 to 11, after arguing that God's mercy will reach both Jews and Gentiles in ways no one foresaw. In 1 Corinthians 2:16 he quotes the same line and answers it: we have the mind of Christ. The Greek nous for ruach allowed Paul to use the verse about God's understanding, and in 1 Corinthians to link it with the Spirit who searches the depths of God (2:10-12)."
+        }
+      ],
+      "refs": [
+        "Romans 11:33-36",
+        "1 Corinthians 2:16",
+        "Job 21:22",
+        "Jeremiah 23:18"
+      ]
+    },
+    {
+      "v": "15-17",
+      "context": "Measured against this God, the nations that terrify the exiles are a drop from a bucket and dust on a scale. Even the forests of Lebanon could not supply the fire, nor its animals the victims, for an offering worthy of him. The section ends with the nations counted as nothing.",
+      "grammar": "Hen goyim kemar middeli, ‘behold, nations are like a drop from a bucket’: mar is a single drip running off the rim. Keshachaq moznayim, ‘like the film of dust on scales’, is the fine powder too slight to move the balance. Iyyim, \"islands\" or coastlands, the far Mediterranean shores, he lifts kaddaq, ‘like fine dust’. Verse 17 uses three words for nothingness: keayin, ‘as nothing’; meefes, ‘less than nothing’ or ‘of nothing’; and tohu, the ‘formless’ of Genesis 1:2. Nechshevu, \"regards\", a Niphal of chashav, means they are reckoned or counted so.",
+      "words": [
+        "H1471A",
+        "H4752",
+        "H1805",
+        "H7834",
+        "H0339",
+        "H1851",
+        "H3844G",
+        "H5930A",
+        "H0657A",
+        "H8414",
+        "H2803H"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The empires that deported Judah are, in God's reckoning, a drip and a speck. The verse does not mean nations are unimportant to God (the chapter wants all flesh to see his glory); it means they are no threat to his purpose."
+        },
+        {
+          "id": "worship",
+          "note": "No offering is adequate to God, not even the whole of Lebanon on the altar. Worship cannot enlarge him; it can only acknowledge him, which is the point of Psalm 50:9-12 and of Paul's words in Athens that God is not served by human hands as though he needed anything (Acts 17:25)."
+        }
+      ],
+      "refs": [
+        "Psalm 50:9-12",
+        "Acts 17:24-25",
+        "Daniel 4:35",
+        "Psalm 62:9"
+      ]
+    },
+    {
+      "v": "18-20",
+      "context": "The first of the book's great satires on idol-making. To whom can God be compared? Surely not to a statue a craftsman casts, a goldsmith plates, and a silversmith chains, or that a poorer worshiper has carved from wood that will not rot, and fastened so it will not fall over. The argument continues in verses 25 and 26.",
+      "grammar": "Demut, \"image\" in verse 18, is the word of Genesis 1:26, ‘in our likeness’: humans bear God's likeness, but nothing can be made to be his likeness. In verse 19 the craftsman nasakh, ‘cast’ the image, and the smith yeraqqeenu, ‘hammers it out (in gold)’, a Piel of raqa, the verb behind the raqia, the ‘expanse’ of Genesis 1:6. The last clause of verse 20, pesel lo yimmot, \"an idol that will not topple\", is heavy irony: the god has to be braced to stay upright.",
+      "words": [
+        "H1819",
+        "H0410G",
+        "H1823",
+        "H6459",
+        "H5258A",
+        "H2796",
+        "H7554",
+        "H5533B",
+        "H8641",
+        "H4131"
+      ],
+      "text": "The opening of verse 20, hamsukkan terumah, is obscure. Traditionally it is read ‘one who is too poor for such an offering’ (the BSB's \"one bereft of an offering\"), taking mesukkan from a root meaning ‘to be poor’. Many scholars since the discovery of Akkadian texts connect it with musukkannu, the Akkadian name of a hard, durable wood (probably sissoo) used for cult statues, and read ‘he who selects mesukkan-wood as an offering chooses wood that will not rot’.",
+      "history": "Mesopotamian texts describe how cult statues were made of a wooden core overlaid with precious metal, and then brought to life through rituals of ‘washing of the mouth’ and ‘opening of the mouth’ (mis pi and pit pi), after which the image was treated as the god's living presence. Isaiah's satire follows the process at the workshop stage and stops there: what he shows is only the craftsmanship.",
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "The argument against idols is that they are made. A god that must be manufactured, plated, and secured against toppling depends on its worshipers; the LORD made those who make idols. The same satire returns at greater length in 44:9-20 and 46:1-7."
+        }
+      ],
+      "refs": [
+        "Isaiah 44:9-20",
+        "Isaiah 46:5-7",
+        "Jeremiah 10:3-5",
+        "Acts 17:29"
+      ]
+    },
+    {
+      "v": "21-24",
+      "context": "Four sharp questions accuse the hearers of forgetting what they have known from the beginning. Then comes the answer, in a series of participles describing God: he sits above the circle of the earth, stretches out the heavens like a tent, and brings rulers to nothing. Princes are like plants just set in the ground when he blows on them and the storm carries them off.",
+      "grammar": "Verse 21's questions mix imperfects (‘do you not know, do you not hear?’) with perfects (‘has it not been told, have you not understood?’), accusing the hearers of both present dullness and past neglect. The description of God is built from participles with the article: hayyoshev, ‘the one who sits’; hanoteh, ‘the one who stretches out’; hanoten, ‘the one who gives (princes to nothing)’. Chug haarets, \"the circle of the earth\", names the horizon or the vault of the sky above it, as in Proverbs 8:27 and Job 22:14; the verse is poetry about God's height, not a statement about the earth's shape. Doq, \"curtain\", is a fine cloth, found only here. Verse 24 repeats af bal three times, ‘scarcely ... scarcely ... scarcely’, and uses geza, ‘stem’ or ‘stock’, the word for Jesse's stump in 11:1.",
+      "words": [
+        "H3045",
+        "H5046",
+        "H4146",
+        "H3427",
+        "H2329",
+        "H2284",
+        "H5186",
+        "H1852",
+        "H7336",
+        "H1077",
+        "H1503",
+        "H7179"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Rulers are appointed and dismissed by God, and their power has shallow roots. The exiles needed this: Babylon, the greatest power of their world, fell to Cyrus in 539 BC, only twenty-three years after Nebuchadnezzar's death. Daniel 2:21 says God removes kings and sets up kings."
+        },
+        {
+          "id": "creation",
+          "note": "God stretched out the heavens like a tent to live in. The image of creation as a dwelling God pitches for himself runs through the Psalms (104:2) and anticipates the tabernacle, the tent in which God would live among his people."
+        }
+      ],
+      "refs": [
+        "Psalm 104:2",
+        "Proverbs 8:27",
+        "Numbers 13:33",
+        "Daniel 2:21",
+        "Psalm 2:2-4"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "God himself speaks, repeating the question of verse 18 in the first person: to whom will you compare me? Then he points the hearers to the night sky. The stars that Babylon worshiped are an army he brings out and counts, and not one fails to answer his roll call. That detail prepares for the complaint in verse 27 that Israel has been overlooked.",
+      "grammar": "Qadosh, \"the Holy One\", stands here without the article and without the book's usual ‘of Israel’, as a title for God alone (compare Habakkuk 3:3). Mi-vara elleh, \"Who created all these?\", uses bara, the verb of Genesis 1:1 reserved for God. Hammotsi bemispar tsevaam, \"He leads forth the starry host by number\", pictures a general mustering troops or a shepherd counting sheep out of the fold. Ish lo needar, ‘not one is missing’, is a Niphal participle of adar, ‘to be lacking’: none of the stars is ever left out.",
+      "words": [
+        "H1819",
+        "H7737A",
+        "H6918G",
+        "H1254A",
+        "H3318H",
+        "H4557",
+        "H6635A",
+        "H8034",
+        "H5737C"
+      ],
+      "history": "Babylonian religion identified the planets and stars with gods: Marduk with the planet Jupiter, Ishtar with Venus, Sin with the moon, Shamash with the sun. Babylonian astronomers recorded the heavens in detail for the purpose of reading omens. Isaiah names none of them; he calls them all \"these\", a counted host that God created and calls by name, exactly as Genesis 1:16 disposes of the sun and moon.",
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "‘The Holy One’ is Isaiah's characteristic way of naming God, usually as ‘the Holy One of Israel’, about twenty-five times in the book. Holiness here means incomparability: there is no one to set beside him."
+        },
+        {
+          "id": "providence",
+          "note": "God knows every star by name and none goes missing. The argument moves from the greater to the lesser: if not one star is overlooked, the people of Jacob are not either (verse 27). Jesus argues the same way from sparrows and hairs (Matthew 10:29-31)."
+        }
+      ],
+      "refs": [
+        "Psalm 147:4",
+        "Genesis 1:16",
+        "Isaiah 46:5",
+        "Matthew 10:29-31"
+      ]
+    },
+    {
+      "v": "27-28",
+      "context": "The argument reaches its target. Jacob and Israel have been saying that their way is hidden from God and their case ignored. Verse 28 answers with the two questions of verse 21 again and with who God is: the everlasting God, Creator of the ends of the earth, who never tires and whose understanding no one can fathom.",
+      "grammar": "Lammah tomar Yaaqov utedabber Yisrael, ‘why do you say, Jacob, and speak, Israel’: the paired names are typical of chapters 40 to 48. The complaint has two lines. Nisterah darki, \"My way is hidden\", is a Niphal perfect, ‘has become hidden’; mishpati yaavor, ‘my case passes by (my God)’, pictures a lawsuit that a judge ignores. Elohei olam, \"the everlasting God\", recalls El Olam, the name Abraham used at Beersheba (Genesis 21:33). Lo yiaf velo yiga, \"He will not grow tired or weary\", introduces the two verbs that verses 29 to 31 will play on. Ein cheqer litvunato, \"His understanding is beyond searching out\", is the phrase of Psalm 147:5.",
+      "words": [
+        "H3290",
+        "H5641",
+        "H1870G",
+        "H4941H",
+        "H5674A",
+        "H5769G",
+        "H1254A",
+        "H7098",
+        "H3286",
+        "H3021",
+        "H2714",
+        "H8394"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "God is eternal, the Creator of the whole earth, tireless, and unsearchable in understanding. The attributes are not listed for their own sake; each answers the complaint. An everlasting God has not aged out of his promises; a Creator of the ends of the earth is not limited to Judah; a God who does not tire has not given up; and unsearchable understanding means his silence is not ignorance."
+        },
+        {
+          "id": "suffering",
+          "note": "The verse gives voice to the lament of people who feel forgotten, and Scripture does not rebuke them for saying it (compare Psalm 13:1 and Lamentations 3:8). It answers the lament with who God is rather than with an explanation of why."
+        }
+      ],
+      "refs": [
+        "Genesis 21:33",
+        "Psalm 147:5",
+        "Psalm 13:1",
+        "Romans 11:33",
+        "Isaiah 49:14-16"
+      ]
+    },
+    {
+      "v": "29-31",
+      "context": "The unwearied God gives strength to the weary. Even the fittest young men tire and stumble, but those who wait for the LORD will exchange their strength for his: they will rise on wings like eagles, run without tiring, walk without fainting. The chapter that began with comfort ends with endurance.",
+      "grammar": "The two verbs of verse 28 return in a deliberate pattern: yiaf and yiga, ‘grow tired’ and ‘grow weary’, are denied of God in verse 28, affirmed of the young in verse 30, and denied again of those who wait in verse 31. Qoveh YHWH, \"those who wait upon the LORD\", is a participle of qavah, a waiting that looks forward in hope. Yachalifu koach, \"will renew their strength\", is a Hiphil of chalaf, ‘to exchange, replace’, the verb used for changing clothes (Genesis 35:2) and for the boast of 9:10: they trade in their strength for new. Yaalu ever kannesharim is ‘they will go up (on) pinions like eagles’; nesher can name the eagle or the griffon vulture, both soaring birds that ride rising air. Kashol yikkashelu, \"stumble and fall\", uses an infinitive absolute for emphasis.",
+      "words": [
+        "H3287",
+        "H3581B",
+        "H6109",
+        "H5288",
+        "H0970",
+        "H3782",
+        "H6960A",
+        "H2498",
+        "H0083",
+        "H5404",
+        "H3286",
+        "H3021"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Waiting on the LORD is not passive resignation but active expectancy that receives what it cannot produce. The sequence of flying, running, and walking has often been noticed: the promise ends not in soaring but in the ordinary daily walk, where the strength to keep going is most needed."
+        },
+        {
+          "id": "faith",
+          "note": "Strength is exchanged, not generated. The verse describes faith as dependence: those who wait on God receive his strength because they have stopped relying on their own, which even the young cannot sustain."
+        }
+      ],
+      "refs": [
+        "Psalm 103:5",
+        "Exodus 19:4",
+        "Psalm 27:14",
+        "2 Corinthians 4:16",
+        "Galatians 6:9"
+      ]
+    }
+  ]
+}

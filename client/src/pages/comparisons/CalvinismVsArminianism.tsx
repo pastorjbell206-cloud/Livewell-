@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -42,7 +43,7 @@ const HISTORICAL_CONTEXT = [
   { year: "354-430", label: "Augustine of Hippo", desc: "Argued for predestination and the bondage of the will against Pelagius. Set the terms of the debate for the next 1,600 years." },
   { year: "1509-1564", label: "John Calvin", desc: "Systematized the theology of God's sovereignty in the Institutes. Geneva became the laboratory for Reformed Christianity." },
   { year: "1560-1609", label: "Jacobus Arminius", desc: "A Dutch Reformed theologian who questioned unconditional election. His followers codified his views in the Five Articles of Remonstrance (1610)." },
-  { year: "1618-1619", label: "The Synod of Dort", desc: "The Reformed churches formally condemned Arminianism and articulated the five points (TULIP). The Remonstrants were expelled." },
+  { year: "1618-1619", label: "The Synod of Dort", desc: "The Reformed churches formally condemned Arminianism and articulated the five points later summarized as TULIP. The Remonstrants were expelled." },
   { year: "1703-1791", label: "John Wesley", desc: "Took Arminian theology and made it a movement. Methodism carried Arminianism to the masses. The revival changed England." },
   { year: "1703-1758", label: "Jonathan Edwards", desc: "America's greatest Calvinist mind. Freedom of the Will (1754) remains the most rigorous defense of compatibilism in the English language." },
 ];
@@ -59,14 +60,16 @@ const SHARED_GROUND = [
 const RELATED_ARTICLES = [
   { title: "The Reformation and Its Consequences", href: "/theology/history/the-reformation" },
   { title: "The Age of Revivals", href: "/theology/history/the-awakenings" },
-  { title: "The Evangelical Movement", href: "/theology/history/the-awakenings" },
+  { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
   { title: "The Enlightenment and the Crisis of Authority", href: "/writing/authority-we-traded-for-authenticity" },
 ];
+const RELATED_ON_SHELF = RELATED_ARTICLES.filter((a) => isPublicEssayHref(a.href));
+
 
 const FAQ_ITEMS = [
   {
     question: "Was Calvin actually a Calvinist?",
-    answer: "Not in the five-point sense. Calvin never used the TULIP acronym — that was a later systematization from the Synod of Dort (1618-1619), more than fifty years after his death. Calvin's theology was broader and more pastoral than the five points suggest. But the points do represent a fair distillation of his core convictions about God's sovereignty in salvation.",
+    answer: "Not in the five-point sense. Calvin never used the TULIP acronym. The five points themselves were articulated at the Synod of Dort (1618-1619), more than fifty years after his death, and the acronym came centuries later as an English mnemonic. Calvin's theology was broader and more pastoral than the five points suggest. But the points do represent a fair distillation of his core convictions about God's sovereignty in salvation.",
   },
   {
     question: "What is Molinism?",
@@ -273,31 +276,33 @@ export default function CalvinismVsArminianism() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section style={S.sectionWarm}>
-        <div style={S.wrapNarrow}>
-          <p style={S.eyebrow}>KEEP READING</p>
-          <h2 style={S.h2}>Go deeper</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {RELATED_ARTICLES.map((a) => (
-              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
+      {/* Related Articles: only those on the public shelf (lib/shelf.ts). */}
+      {RELATED_ON_SHELF.length > 0 && (
+        <section style={S.sectionWarm}>
+          <div style={S.wrapNarrow}>
+            <p style={S.eyebrow}>KEEP READING</p>
+            <h2 style={S.h2}>Go deeper</h2>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {RELATED_ON_SHELF.map((a) => (
+                <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
+                  <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={S.sectionDark}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={S.h2White}>The full post-Christian series</h2>
-          <p style={S.bodyTextWhite}>Sixty essays on the traditions, fractures, and questions that define Christianity today. Calvinism and Arminianism are one fault line. The series maps them all.</p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Explore the Series</button>
+          <h2 style={S.h2White}>After Christendom</h2>
+          <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
           </Link>
         </div>
       </section>

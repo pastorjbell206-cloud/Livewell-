@@ -1,81 +1,81 @@
 {
   "slug": "grief",
   "title": "Eight Weeks of Walking With Loss",
-  "subtitle": "An eight week companion for grief from James Bell. Permission to mourn, lament as language, and a way to live forward without leaving them behind.",
-  "intro": "This is an eight week companion for the person walking with loss. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It does not promise closure, because closure is a word invented by people in a hurry. Grief is not a problem to be solved. It is love with nowhere to go, and it deserves better than a deadline.\n\nIt is not a cure, and it is not a substitute for a doctor, a counselor, a pastor, or the people who will sit with you. Walk it imperfectly and at your own pace. A missed week is not failure, you just pick it back up when you can. Some weeks you may only manage the question. That counts. There is no scorecard in the valley, only company.",
-  "careNote": "If grief reaches the point where you cannot function, see a doctor or a licensed counselor, and remember there is no schedule for sorrow, these eight weeks are a companion, not a deadline.",
+  "subtitle": "An eight-week companion from James Bell for anyone grieving a death: permission to mourn, the Psalms' language of lament, and a way to live forward without leaving them behind.",
+  "intro": "This is an eight-week companion for someone grieving a death. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It doesn't promise closure, because grief for someone you loved doesn't simply end; it changes shape. What you feel is not proof that something is wrong with you or your faith. It is love, still reaching for someone who isn't there, and it deserves better than a deadline. The weeks are not stages, and your grief won't keep to their order, so stay on one as long as you need and come back to any of them.\n\nIt is not a cure, and it is not a substitute for a doctor, a licensed counselor, a pastor, or the people who will sit with you. Walk it at your own pace. A missed week is not failure; you simply pick it back up when you can, and some weeks the question will be all you manage. If the grief has turned into not wanting to be here, don't wait for any week of this plan: call or text 988 tonight, or 911 if you're in danger.",
+  "careNote": "If you have thoughts of ending your life, or a child in your home talks about wanting to die, call or text 988 now. If months have passed and you still can't get up, eat, work, or care for your children, see a doctor or a licensed counselor. There is no schedule for sorrow; these weeks are a companion, not a deadline.",
   "weeks": [
     {
       "n": 1,
       "focus": "Permission to grieve",
-      "why": "Much of what makes grief unbearable is the pressure to be done with it. The first work is permission, the settled decision that your sorrow is allowed, that it does not need defending, and that Jesus himself wept at a tomb he was about to open. You begin by letting the grief exist.",
-      "practice": "Set aside ten minutes a day where grief is allowed. Sit with a photo, say their name out loud, let the tears come or not come. Then get up and live the rest of the day.",
-      "read": { "label": "The Grief page, written for exactly where you are standing", "href": "/grief" },
-      "tool": { "label": "The Help page, so you know where to turn on the worst days", "href": "/help" },
-      "reflection": "What have I not allowed myself to feel about this loss, and whose voice told me I was not allowed?"
+      "why": "Much of what makes grief so heavy is the pressure to be done with it, and the second weight many grieving people carry: the sense that they're doing it wrong, crying too long or too loudly or not enough. Begin by setting that second weight down. Your sorrow doesn't need defending. At the grave of his friend Lazarus, Jesus wept, though he had come to call him out of the tomb (John 11:35). The one person there who knew how the day would end cried anyway, so your tears are not unbelief. In the first days grief may not feel like sadness at all. It can feel like shock, or fog, or nothing, and that is grief too. And if the one who died was hard to love, or absent, you may grieve both what you lost and what you never had.",
+      "practice": "Each day, give your grief some unhurried time on purpose. Sit with a photo, say their name out loud, and let the tears come or not come. Grief will find you at other hours too, uninvited, and that's allowed. Then do one ordinary thing, eat something or step outside, and don't feel guilty for either the tears or the bread.",
+      "read": { "label": "Someone I love has died, the care page these weeks walk more slowly", "href": "/help/grief" },
+      "tool": { "label": "John 11 in the Study Bible: the death and raising of Lazarus, and the tears of Jesus at the tomb", "href": "/study/bible/john/11" },
+      "reflection": "What have I not allowed myself to feel about this loss, and whose voice told me I wasn't allowed?"
     },
     {
       "n": 2,
       "focus": "Lament as language",
-      "why": "Grief needs words, and polite words are too small for it. The psalms of lament were written by people who shouted at God and stayed in the conversation. Lament is not a loss of faith. It is faith refusing to leave the room.",
-      "practice": "Each day, pray one psalm of lament aloud, Psalm 6 or Psalm 42 are places to start. Five minutes. Let the old words carry what your own words cannot yet.",
-      "read": { "label": "The Lament page, on the prayer language of the broken", "href": "/lament" },
-      "tool": { "label": "The Prayer Generator, for the days when even borrowed words fail", "href": "/tools/prayer-generator" },
+      "why": "Grief needs words, and polite words are too small for it. The psalms of lament were prayed by people who brought their sorrow and their anger straight to God and stayed in the conversation. Most of them turn toward praise before they end. Psalm 88 doesn't. It closes in the dark, “darkness is my closest companion” (Psalm 88:18), and the people of God kept it in their prayer book anyway, for nights like yours. Even so, it opens by calling God “the God of my salvation” (Psalm 88:1) and keeps crying out to him, so even that prayer is an act of faith. Lament is faith that refuses to leave the room.",
+      "practice": "Each day, read one psalm of lament aloud as your own prayer: Psalm 13, Psalm 42, or Psalm 88. Five minutes is enough. If all you can manage is their name and a groan, that's still prayer; the Spirit intercedes for us “with groans too deep for words” (Romans 8:26). Bring your anger too. God would rather hear the truth than polite silence.",
+      "read": { "label": "How to Practice Lament, on bringing God your honest complaint even when no turn toward praise comes", "href": "/how-tos/ss-how-to-practice-lament" },
+      "tool": { "label": "Psalm 88 in the Study Bible, the lament that ends in the dark and was kept in Scripture anyway", "href": "/study/bible/psalms/88" },
       "reflection": "If I said the angriest, saddest, truest thing to God right now, what would it be?"
     },
     {
       "n": 3,
       "focus": "The body in grief",
-      "why": "Grief is physical. It lives in your sleep, your appetite, your chest, your exhaustion, and it will not be thought away. Caring for the body in sorrow is not moving on. It is keeping the lamp lit in a house that still has someone living in it.",
-      "practice": "Each day, do one act of basic mercy for your body, a short walk outside, a real meal, water, bed at a decent hour. One act. Not a regimen, a kindness.",
-      "read": { "label": "The Body and the Rhythms, on the body you still have to live in", "href": "/life/the-body-and-the-rhythms" },
-      "tool": { "label": "The Verse Finder, look up what Scripture says about weariness and rest", "href": "/tools/verse-finder" },
+      "why": "Grief is physical, and many people are surprised by how much: an exhaustion sleep doesn't touch, a weight on the chest, an appetite that vanishes, a fog that steals your keys and your words. It won't be thought away. Caring for your body in sorrow isn't moving on; it's keeping the lamp lit in a house where someone still lives. Lower the bar for a good day to somewhere near the floor. Some signs, though, aren't for waiting out. If sleep has all but stopped, or you're leaning on alcohol or pills to get through, see a doctor and tell them about the death, and don't quit the alcohol or pills suddenly on your own, since that can be dangerous; SAMHSA's helpline is on Find Help. Chest pain or trouble breathing is a reason to call 911 right away.",
+      "practice": "Each day, do one act of basic mercy for your body: drink water, eat something small even when you aren't hungry, step outside for a few minutes, or go to bed at the same time as the night before. One act is enough, a kindness to the body that is carrying this with you.",
+      "read": { "label": "What Is a Christian View of Sleep, Food, and Rest? On the body as a gift to care for, not a project", "href": "/life/the-body-and-the-rhythms" },
+      "tool": { "label": "The Prayer Generator's evening prayers, for the end of a day that asked more than you had", "href": "/tools/prayer-generator" },
       "reflection": "What is my body carrying for me right now, and how have I been treating it in return?"
     },
     {
       "n": 4,
       "focus": "Remembering well",
-      "why": "There comes a point where the fear of forgetting hurts almost as much as the loss itself. Remembering well is deliberate work, gathering the stories, the habits, the laughter, before they blur. Memory is not a trap to escape. It is an inheritance to keep.",
-      "practice": "Each day, write down one specific memory of them, a sentence or two, the more ordinary the better. The way they answered the phone. What they always ordered. Keep the pages.",
-      "read": { "label": "Return to the Grief page and read it again more slowly", "href": "/grief" },
-      "tool": { "label": "The Family Devotion Builder, shape a short time of remembrance for your household", "href": "/tools/family-devotions" },
+      "why": "Many grieving people find a second fear beside the loss, the fear of forgetting: the voice, the laugh, the way they answered the phone. Keeping their stories isn't a failure to let go. It is how love keeps faith with a life, and a faith that believes in the resurrection has no reason to treat the dead as erased. Say their name, and ask the people close to you to say it too. Memory can also wound. If what replays isn't a memory you want to keep but the images of how they died, and they keep you from sleeping or functioning, a counselor who works with grief can help.",
+      "practice": "Each day, write down one specific memory of them in a sentence or two, the more ordinary the better: how they answered the phone, what they always ordered, the thing they said too often. Keep the pages together. On one day this week, tell one of those stories out loud to someone who knew them, or to someone who didn't.",
+      "read": { "label": "How to Grieve Well, on keeping the bond instead of severing it, in a grief that keeps no schedule", "href": "/how-tos/ss-how-to-grieve-well" },
+      "tool": { "label": "A grief journal page to print, with room for what you miss and a memory you want to keep (PDF)", "href": "/downloads/tools/grief-journal-letter.pdf" },
       "reflection": "What about them do I most fear forgetting, and what would it mean to write it down while it is still warm?"
     },
     {
       "n": 5,
       "focus": "The hard days",
-      "why": "Grief does not move in a straight line. It ambushes, on birthdays, anniversaries, the first holiday, a song in a grocery store. The hard days cannot be avoided, but they can be expected and met with a plan, so they find you prepared rather than alone.",
-      "practice": "Each morning, say one chosen verse aloud before the day begins. Then look at the calendar and mark the hard dates coming, so none of them takes you by surprise.",
-      "read": { "label": "Return to the Lament page, it was written for the ambush days", "href": "/lament" },
-      "tool": { "label": "Scripture Memory, learn the verse you will carry into the hard days", "href": "/tools/scripture-memory" },
+      "why": "Grief rarely moves in a straight line. It comes in waves that don't ask permission: a song in the grocery store, the moment you reach for the phone to tell them something, a birthday, the first holiday, the day they died. The hard days can't be avoided, but many of them can be seen coming, and a day you've planned for is less likely to find you alone. The first year is full of firsts, and the second year surprises many people, after everyone else has moved on. When Jacob believed his son was dead, “he refused to be comforted” (Genesis 37:35), and Scripture doesn't rebuke him for it.",
+      "practice": "Put the hard dates on your calendar now: their birthday, your anniversary, the holidays, the day they died. For the nearest one, decide ahead of time who you'll be with and one small thing you'll do, such as a visit to the grave, their favorite meal, or a friend beside you at church. Each morning, pray for the day in front of you and no further.",
+      "read": { "label": "What Does the Bible Say About Grief and Loss? Its practices include marking the hard days so they don't ambush you", "href": "/life/grief-and-loss" },
+      "tool": { "label": "The first holidays without them: a page to plan Thanksgiving, Christmas, or an anniversary (PDF)", "href": "/downloads/tools/holidays-after-loss-letter.pdf" },
       "reflection": "Which dates and places do I already know will hurt, and who could I ask to stand with me on one of them?"
     },
     {
       "n": 6,
       "focus": "Where God was",
-      "why": "Sooner or later grief asks the unaskable question, where was God when this happened. Faith does not require you to skip the question. It requires you to ask it to his face. The cross means God is not a stranger to loss, and that changes the question without shrinking it.",
-      "practice": "Each day, finish this sentence in a notebook, honestly, God, where were you when. Then sit in silence for two minutes. Do not rush to answer for him.",
-      "read": { "label": "Grief and Loss, on where God is in the worst of it", "href": "/life/grief-and-loss" },
-      "tool": { "label": "The Emotional Health tool, to name what you feel toward God without dressing it up", "href": "/tools/emotional-health" },
-      "reflection": "What do I actually believe God was doing when my person died, and have I ever said it out loud?"
+      "why": "Many grieving people come to a question they were afraid to ask: where was God when this happened? Faith doesn't require you to skip it. It lets you bring it to his face, as Martha and Mary did. Each met Jesus with the same sentence, “Lord, if You had been here, my brother would not have died” (John 11:21, 32), and he rebuked neither of them. The cross means God is not a stranger to loss, and that changes the question without shrinking it. If the death was by suicide, the questions often come tangled with guilt and anger. Their death is not a verdict on your love, and the care page speaks to the hardest of those questions without pronouncing on anyone. If any of this has turned toward your own life, call or text 988 now.",
+      "practice": "Each day, finish this sentence honestly in a notebook: God, where were you when. Then sit in silence for two minutes, and don't rush to answer for him. On one day this week, read Psalm 13, which asks God how long four times and ends, somehow, in trust.",
+      "read": { "label": "Lament: A Bible Study on Praying Your Pain, whose fourth session turns to the God who suffers", "href": "/studyguides/lament" },
+      "tool": { "label": "Psalm 13 in the Study Bible, the prayer that asks God how long and does not let go of him", "href": "/study/bible/psalms/13" },
+      "reflection": "What do I actually believe God was doing when they died, and have I ever said it out loud to him?"
     },
     {
       "n": 7,
       "focus": "Letting others in",
-      "why": "Grief isolates twice, once through the loss and once through the silence that follows, when the casseroles stop and everyone else goes back to normal. People want to help and do not know how. This week you let one or two of them in, not because you are better, but because you were not built to do this alone.",
-      "practice": "Once a day, answer one message or question honestly instead of saying you are fine. One true sentence to one real person. That is enough.",
-      "read": { "label": "Friendship Against Isolation, on why sorrow shared is sorrow changed", "href": "/life/friendship-against-isolation" },
-      "tool": { "label": "The Help page, if these weeks have shown you it is time for a counselor", "href": "/help" },
+      "why": "Grief isolates twice, once through the loss and once through the silence that follows, when the meals stop, the relatives go home, and everyone else goes back to normal. People want to help and don't know how, so tell them: the phone calls, the meals, the paperwork, the rides. Even Jesus asked his friends to stay and keep watch with him the night before he died (Matthew 26:38). Watch, too, for the others in your house who are grieving. A child or teenager may show it more by withdrawing or struggling at school than in words, and if that goes on, talk with their doctor or a counselor who works with grieving children. If one of them talks about wanting to die, ask plainly whether they're thinking about suicide, stay with them, and call or text 988 together, or 911 if they're in danger right now.",
+      "practice": "Once a day, answer one message or question honestly instead of saying you're fine. Before the week ends, hand one person a real task. If you lost a child, or someone suddenly or to suicide, ask a hospice, a chaplain, or your pastor where a group for that kind of loss meets; these losses more often need a counselor too. Put off big decisions, like selling the house, if you can, and if the estate, debts, or insurance are more than you understand, see an attorney before signing anything.",
+      "read": { "label": "How to Help a Friend Through Loss, to pass to the people who want to help and don't know how", "href": "/how-tos/ss-how-to-help-a-friend-through-loss" },
+      "tool": { "label": "Find Help, with the crisis lines and the care pages, for the day you need more than a friend can give", "href": "/help" },
       "reflection": "Who has tried to reach me in this season, and what would it cost me to let one of them actually see how I am?"
     },
     {
       "n": 8,
       "focus": "Living forward",
-      "why": "Living forward is not leaving them behind. The love does not end, it changes form, and at some point it asks to be carried into the life still in front of you. The goal was never to stop grieving. It was to grieve as people who have hope, which is a different way of carrying the same weight.",
-      "practice": "Each day, do one small ordinary act of living, plant something, cook a real meal, accept one invitation, and as you do it, name one thing of theirs you are carrying forward with you.",
-      "read": { "label": "The Discipleship page, on the long road that continues from here", "href": "/discipleship" },
-      "tool": { "label": "The Whole Life Assessment, a gentle look at the life that remains to be lived", "href": "/life/assessment" },
-      "reflection": "What did they give me that I am responsible for carrying now, and what would they want to see me do with it?"
+      "why": "Whenever you come to this week, two months after the death or two years, living forward does not mean leaving them behind. The love doesn't end; it changes shape, and in time it asks to be carried into the life still in front of you. Paul wrote to a young church that had buried some of its own, and he didn't tell them not to grieve. He told them not to “grieve like the rest, who are without hope” (1 Thessalonians 4:13). The grief is assumed; what changes is the direction it faces. Then he told them to “encourage one another with these words” (1 Thessalonians 4:18), so the hope passes gently from one grieving person to another.",
+      "practice": "Each day, do one small ordinary act of living: cook a real meal, plant something, accept one invitation, finish something they would have been glad to see done. As you do it, name one thing of theirs you're carrying forward. At the week's end, write on a card the two or three practices from these weeks that helped, and keep it for the hard days still to come.",
+      "read": { "label": "1 Thessalonians 4 in the Study Bible, where Paul writes to a grieving church about hope for the dead", "href": "/study/bible/1-thessalonians/4" },
+      "tool": { "label": "Grief: A Bible Study on Loss and the God Who Wept, five sessions to walk through with a friend or a group", "href": "/studyguides/grief" },
+      "reflection": "What of theirs do I want to carry forward, and what would carrying it look like in the year ahead?"
     }
   ]
 }

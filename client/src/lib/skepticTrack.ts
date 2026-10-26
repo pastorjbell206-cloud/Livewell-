@@ -11,8 +11,11 @@
  * it and only advertise the track when it is true. It flips automatically the
  * moment the last `null` slug is filled in. scripts/validate-skeptic-track.mjs
  * enforces that every non-null slug resolves to a real static-library essay, so
- * a wired stop can never quietly dead-end.
+ * a wired stop can never quietly dead-end. A stop whose essay is off the public
+ * shelf counts as unfinished too: the page shows it as "Essay in progress".
  */
+import { isPublicEssay } from "./shelf";
+
 export interface SkepticStop {
   /** Slug of the real essay for this stop, or null if not yet written. */
   slug: string | null;
@@ -49,7 +52,7 @@ export const SKEPTIC_STOPS: SkepticStop[] = [
     slug: "why-trust-the-bible",
     title: "5. The Bible without the marketing.",
     pitch:
-      "Inerrancy is a fairly recent dogma. Inspiration is older. Read Scripture the way Christians have actually read it.",
+      "Where the Bible came from, what the manuscripts show, and why Christians trust it, with the hard questions left in.",
   },
   {
     slug: "can-you-be-good-without-god",
@@ -65,9 +68,15 @@ export const SKEPTIC_STOPS: SkepticStop[] = [
   },
 ];
 
+/** A stop a reader can open: its essay exists and is on the public shelf (lib/shelf.ts). */
+export function isStopReadable(stop: SkepticStop): boolean {
+  return stop.slug !== null && isPublicEssay(stop.slug);
+}
+
 /**
- * True only when every stop resolves to a real essay. The site advertises the
- * track (nav cards, CTAs) only while this holds; otherwise those entry points
- * are hidden so nothing points a reader at an unfinished track.
+ * True only when every stop resolves to an essay on the public shelf. The
+ * site advertises the track (nav cards, CTAs, the sitemap) only while this
+ * holds; otherwise those entry points are hidden so nothing points a reader
+ * at a track whose essays answer with a retired or pending notice.
  */
-export const SKEPTIC_TRACK_LIVE: boolean = SKEPTIC_STOPS.every((s) => s.slug !== null);
+export const SKEPTIC_TRACK_LIVE: boolean = SKEPTIC_STOPS.every(isStopReadable);

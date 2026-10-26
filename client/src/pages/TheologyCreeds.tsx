@@ -38,7 +38,7 @@ export default function TheologyCreeds() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Creeds and confessions
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Creeds and confessions
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             The faith, in its own words.
@@ -53,7 +53,7 @@ export default function TheologyCreeds() {
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-4)" }}>
         <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, color: "var(--ink)", marginBottom: "8px" }}>The creeds</h2>
-          {creeds.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-5) 0" }}>Loading…</p>}
+          {creeds.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-5) 0" }} role="status">Loading…</p>}
           {creeds.map((c) => {
             const isOpen = open === c.name;
             return (

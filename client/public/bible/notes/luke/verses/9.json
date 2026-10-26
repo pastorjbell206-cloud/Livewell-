@@ -1,0 +1,1442 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Jesus calls the Twelve together, gives them power and authority over demons and diseases, and sends them to proclaim the kingdom and heal. What the reader has watched Jesus do in chapters 4-8 is now handed to others.",
+      "grammar": "Sugkalesamenos, ‘having called together’, is an aorist middle participle: Jesus summons them to himself before sending them away from himself. Edōken autois dunamin kai exousian, ‘he gave them power and authority’, pairs the two words the Capernaum crowd used of Jesus' own word (4:36): dunamis is the ability to act, exousia the right to act. Apesteilen, ‘he sent’, is the verb from which apostolos, ‘one sent’, comes, and Luke calls them apostles when they return (verse 10). Kērussein tēn basileian tou theou kai iasthai, ‘to proclaim the kingdom of God and to heal’, joins word and deed as two sides of one commission.",
+      "words": [
+        "G4779",
+        "G1427",
+        "G1325",
+        "G1411",
+        "G1849",
+        "G1140",
+        "G3554",
+        "G2323",
+        "G0649",
+        "G2784",
+        "G0932",
+        "G2390"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The mission of the Twelve is an extension of Jesus' own: the same message, the same signs, by his delegated authority. Their authority is given, not possessed, which is why the next verses strip them of every other resource."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom is proclaimed and shown together. Healing is not an advertisement for the message but part of its content: where God reigns, demons and diseases give way."
+        }
+      ],
+      "parallels": [
+        "Mark 6:7",
+        "Matthew 10:1",
+        "Matthew 10:5-8"
+      ],
+      "refs": [
+        "Luke 4:36",
+        "Luke 6:13",
+        "Luke 10:1",
+        "Luke 10:9",
+        "Acts 1:8"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Jesus forbids the Twelve to take anything for the road: no staff, bag, bread, money, or second tunic. They are to travel as dependents, living from the hospitality of those who receive them.",
+      "grammar": "Mēden airete eis tēn hodon, ‘take nothing for the road’, is a present imperative with a general prohibition, followed by five items each introduced by mēte, ‘neither, nor’. The last, mēte ana duo chitōnas echein, ‘nor to have two tunics apiece’, shifts to an infinitive, as if carrying on an instruction already begun. Pēra, ‘bag’, is a traveler's or beggar's pouch; argurion, literally ‘silver’, is money in general.",
+      "words": [
+        "G3367",
+        "G0142",
+        "G3598",
+        "G4464",
+        "G4082",
+        "G0740",
+        "G0694",
+        "G0303",
+        "G5509"
+      ],
+      "history": "Josephus says that the Essenes carried nothing with them on their travels except weapons against bandits, and that in every city one of their number was appointed to look after visiting members, providing clothing and supplies (Jewish War 2.124-127). The Twelve travel lighter still, without even a staff, and depend not on a network of their own order but on the welcome of ordinary households in the towns they enter.",
+      "parallels": [
+        "Mark 6:8-9",
+        "Matthew 10:9-10"
+      ],
+      "refs": [
+        "Luke 10:4",
+        "Luke 22:35-36",
+        "Luke 3:11"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "They are to stay in the house that first receives them until they leave the town. Where they are not received, they are to shake the dust from their feet as they go, a testimony against that town.",
+      "grammar": "Eis hēn an oikian eiselthēte, ekei menete, ‘whatever house you enter, stay there’, uses an indefinite relative with an and the subjunctive, followed by the present imperative menete, ‘keep staying’. In verse 5 hosoi an mē dechōntai humas, ‘as many as do not receive you’, uses dechomai, the verb of welcoming the word in 8:13. Ton koniorton ... apotinassete, ‘shake off the dust’, is a present imperative. Eis marturion ep' autous, ‘for a testimony against them’: Luke's epi with the accusative makes the witness adverse, where Mark 6:11 has the dative autois, ‘to them’.",
+      "words": [
+        "G3614G",
+        "G1525",
+        "G3306",
+        "G1831",
+        "G1209",
+        "G4172",
+        "G2868",
+        "G4228",
+        "G0660",
+        "G3142"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The sign of the dust is not a curse spoken by the messengers but a public declaration that they have delivered their message and the responsibility now lies with the hearers. Rejecting God's messengers is treated as rejecting God's offer, the pattern Jesus will spell out in 10:10-16."
+        }
+      ],
+      "parallels": [
+        "Mark 6:10-11",
+        "Matthew 10:11-14"
+      ],
+      "refs": [
+        "Luke 10:5-12",
+        "Acts 13:51",
+        "Acts 18:6",
+        "Ezekiel 3:18-19"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The Twelve go out and travel from village to village, announcing the good news and healing everywhere. Luke reports the mission's success in one sentence and moves at once to its effect on the ruler of Galilee.",
+      "grammar": "Exerchomenoi de diērchonto kata tas kōmas, ‘going out, they went through village by village’, uses the imperfect of repeated travel and kata distributively, as in 8:1. Euangelizomenoi kai therapeuontes, ‘announcing the good news and healing’, are present participles of continuous activity. Pantachou, ‘everywhere’, is emphatic at the end of the sentence.",
+      "words": [
+        "G1831",
+        "G1330",
+        "G2968",
+        "G2097",
+        "G2323",
+        "G3837"
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The disciples do what Jesus did (8:1): they go through villages proclaiming good news. Luke describes their mission with his own vocabulary for Jesus' work, making it a rehearsal of the church's mission in Acts."
+        }
+      ],
+      "parallels": [
+        "Mark 6:12-13"
+      ],
+      "refs": [
+        "Luke 8:1",
+        "Acts 8:4",
+        "Acts 8:25"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "Herod the tetrarch hears of everything happening and is at a loss, because people are saying three things: John has been raised, Elijah has appeared, or one of the ancient prophets has risen. The report of the Twelve's mission reaches the court.",
+      "grammar": "Diēporei, ‘he was thoroughly perplexed’, is an imperfect of diaporeō, a verb found in the New Testament only in Luke's writings (Acts 2:12, 5:24, 10:17), always of bewilderment at something God is doing. Dia to legesthai, ‘because it was being said’, gives the cause with an articular infinitive. The three opinions use three verbs: John ēgerthē ek nekrōn, ‘has been raised from the dead’; Elijah ephanē, ‘has appeared’, fitting a prophet who never died but was taken up; a prophet of the ancients anestē, ‘has risen’.",
+      "words": [
+        "G2264H",
+        "G5076",
+        "G1096",
+        "G1280",
+        "G1453",
+        "G3498",
+        "G2243",
+        "G5316",
+        "G4396",
+        "G0744",
+        "G0450"
+      ],
+      "history": "Luke calls Antipas tetraarchēs, ‘tetrarch’, his correct Roman title, where Mark 6:14 calls him ‘king’, the popular usage. Antipas sought the title of king later, and Josephus reports that his request to the emperor Gaius in AD 39 led to his exile instead (Antiquities 18.240-255). Expectation of Elijah's return rested on Malachi 4:5-6 and is echoed in Sirach 48:10.",
+      "parallels": [
+        "Mark 6:14-15",
+        "Matthew 14:1-2"
+      ],
+      "refs": [
+        "Malachi 4:5-6",
+        "Luke 3:1",
+        "Luke 9:19",
+        "Acts 2:12"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Herod's own verdict: he beheaded John, so who is this? He keeps trying to see Jesus. Luke tells of John's death only in Herod's words and leaves the question open until Herod finally sees Jesus at his trial (23:8).",
+      "grammar": "Iōannēn egō apekephalisa, ‘John I beheaded’, puts John first and adds the emphatic pronoun egō: Herod owns the act. Tis de estin houtos, ‘but who is this?’, is the chapter's question, asked here by a king, then by Jesus himself (verses 18-20), and answered by the voice from the cloud (verse 35). Ezētei idein auton, ‘he was seeking to see him’, is an imperfect of continued desire.",
+      "words": [
+        "G2264H",
+        "G2491G",
+        "G1473",
+        "G0607",
+        "G5101",
+        "G0191",
+        "G2212",
+        "G1492H"
+      ],
+      "theology": [
+        {
+          "id": "state",
+          "note": "The ruler who silenced God's messenger by force is left anxious and curious rather than secure. Luke shows political power unable to stop the word, and in 23:8-11 unable to understand it when it stands before him."
+        }
+      ],
+      "parallels": [
+        "Mark 6:16",
+        "Matthew 14:2"
+      ],
+      "refs": [
+        "Luke 23:8-11",
+        "Luke 3:19-20",
+        "Luke 13:31-32",
+        "Luke 8:25"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The apostles return and report, and Jesus takes them aside to Bethsaida. The retreat is for the Twelve, but the crowds will not let it last.",
+      "grammar": "Hupostrepsantes hoi apostoloi, ‘the apostles, having returned’, uses the title Luke gave the Twelve at their choosing (6:13); they are now literally ‘sent ones’ coming back. Diēgēsanto autō hosa epoiēsan, ‘they related to him all that they had done’, uses diēgeomai, the verb Jesus used for the freed man's testimony (8:39). Paralabōn autous hupechōrēsen kat' idian, ‘taking them, he withdrew privately’, uses hupochōreō, ‘withdraw, retire’, found only in Luke (also 5:16).",
+      "words": [
+        "G5290",
+        "G0652",
+        "G1334",
+        "G4160G",
+        "G3880",
+        "G5298",
+        "G2398",
+        "G0966"
+      ],
+      "history": "Bethsaida lay in the territory of Herod Philip, not Antipas (see the chapter note). By withdrawing there Jesus leaves the domain of the ruler who has just been asking about him. John 6:1 places the feeding across the Sea of Galilee, which fits a site on the northeast shore.",
+      "parallels": [
+        "Mark 6:30-32",
+        "Matthew 14:13",
+        "John 6:1"
+      ],
+      "refs": [
+        "Luke 6:13",
+        "Luke 5:16",
+        "Mark 6:45",
+        "John 1:44"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "The crowds find out and follow. Jesus welcomes them, speaks about the kingdom, and heals those who need it. The disrupted retreat becomes the setting for the feeding.",
+      "grammar": "Apodexamenos autous, ‘having welcomed them’, uses the verb the crowd used of welcoming Jesus in 8:40: now he gives the welcome. Elalei ... kai iato, ‘he was speaking ... and was healing’, are imperfects that describe a whole afternoon's activity. Tous chreian echontas therapeias, ‘those who had need of healing’, uses therapeia, a word that can mean care or household service as well as healing.",
+      "words": [
+        "G3793",
+        "G1097",
+        "G0190",
+        "G0588",
+        "G2980",
+        "G0932",
+        "G5532",
+        "G2322",
+        "G2390"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Jesus meets the crowd's intrusion with welcome, teaching, and healing, and then with food. Luke presents the kingdom as hospitality that goes further than anyone asked."
+        }
+      ],
+      "parallels": [
+        "Mark 6:33-34",
+        "Matthew 14:13-14",
+        "John 6:2-3"
+      ],
+      "refs": [
+        "Luke 8:40",
+        "Luke 15:2",
+        "Mark 6:34"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "As the day declines, the Twelve urge Jesus to send the crowd away to find lodging and food in the villages, since they are in a deserted place. Their proposal is sensible, and it sets up Jesus' surprising command.",
+      "grammar": "Hē de hēmera ērxato klinein, ‘the day began to decline’, uses klinō, ‘bend, lean’, of the sun going down; the same expression returns at Emmaus, where the disciples urge the stranger to stay because the day is already far spent (24:29, kekliken). Both scenes lead to Jesus breaking bread. Hina ... katalusōsin kai heurōsin episitismon, ‘so that they may lodge and find provisions’: kataluō in the sense ‘find lodging’ recurs in 19:7, and episitismos, ‘provisions’, occurs only here. Hōde en erēmō topō esmen, ‘here we are in a desolate place’, puts erēmos, ‘wilderness’, in the disciples' mouths.",
+      "words": [
+        "G2250",
+        "G2827",
+        "G1427",
+        "G0630G",
+        "G2968",
+        "G0068G",
+        "G2647",
+        "G1979",
+        "G2048",
+        "G5117"
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 16:1-4",
+          "note": "In the Wilderness of Sin the people complain that they will die of hunger, and the LORD promises to rain bread from heaven. Numbers 11:13 has Moses ask, ‘Where can I get meat for all these people?’ Luke's ‘desolate place’ (erēmos topos) and the problem of feeding a multitude there recall that story. The link is a pattern rather than a quotation, and Luke leaves it implicit."
+        }
+      ],
+      "parallels": [
+        "Mark 6:35-36",
+        "Matthew 14:15",
+        "John 6:5"
+      ],
+      "refs": [
+        "Luke 24:29",
+        "Numbers 11:13",
+        "Psalm 78:19"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Jesus tells the Twelve to feed the crowd themselves. They reply that they have only five loaves and two fish, unless they go and buy food for all these people. The disciples' resources are named precisely so that their insufficiency is plain.",
+      "grammar": "Dote autois humeis phagein, ‘you give them something to eat’, adds the pronoun humeis, ‘you yourselves’, for emphasis: the Twelve who have just been given authority must now face a need beyond them. Their answer, ouk eisin hēmin pleion ē artoi pente kai ichthues duo, ‘we have no more than five loaves and two fish’, is followed by ei mēti ... agorasōmen, ‘unless perhaps we go and buy’, a doubtful suggestion expressed with ei mēti. Luke does not give Mark's figure of two hundred denarii (Mark 6:37).",
+      "words": [
+        "G1325",
+        "G4771",
+        "G5315",
+        "G4119",
+        "G0740",
+        "G4002",
+        "G2486",
+        "G1417",
+        "G3385",
+        "G0059",
+        "G2992",
+        "G1033"
+      ],
+      "ot": [
+        {
+          "ref": "2 Kings 4:42-44",
+          "note": "A man brings Elisha twenty loaves of barley bread, and Elisha tells his servant to give it to the people to eat. The servant objects, ‘How can I set this before a hundred men?’, and Elisha repeats the command: ‘For this is what the LORD says: They will eat and have some left over.’ They eat, and some is left. The pattern of command, objection, obedience, and surplus is the same as in Luke 9:13-17, on a far greater scale. John's account mentions barley loaves (John 6:9), which strengthens the echo."
+        }
+      ],
+      "parallels": [
+        "Mark 6:37-38",
+        "Matthew 14:16-17",
+        "John 6:5-9"
+      ],
+      "refs": [
+        "2 Kings 4:42-44",
+        "John 6:9",
+        "Numbers 11:21-23"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Luke gives the size of the crowd, about five thousand men, and Jesus has them seated in groups of about fifty. The disciples obey and everyone sits down. The ordered groups turn a restless crowd into a company at table.",
+      "grammar": "Ēsan gar hōsei andres pentakischilioi, ‘for there were about five thousand men’, uses anēr, ‘man, male’; Matthew 14:21 adds ‘besides women and children’. Kataklinate autous klisias hōsei ana pentēkonta, ‘have them recline in table-groups of about fifty each’: kataklinō is the verb of reclining at a meal (the same verb as 7:36), and klisia, found only here in the New Testament, means a group reclining together for a meal. Mark 6:39-40 has groups of hundreds and fifties seated on green grass; Luke keeps only the fifties.",
+      "words": [
+        "G5616",
+        "G0435G",
+        "G4000",
+        "G3101",
+        "G2625",
+        "G2828",
+        "G0303",
+        "G4004",
+        "G4160G",
+        "G3779",
+        "G0537"
+      ],
+      "history": "Mark's detail of green grass (Mark 6:39) and John's note that there was much grass in the place and that Passover was near (John 6:4, 6:10) point to spring, when the hills around the lake are green after the winter rains. Luke gives no season. All four Gospels record this feeding, the only miracle of Jesus' public ministry, apart from the resurrection, told in all four.",
+      "parallels": [
+        "Mark 6:39-40",
+        "Matthew 14:18-19",
+        "John 6:10"
+      ],
+      "refs": [
+        "Exodus 18:21",
+        "Mark 6:39",
+        "John 6:4"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "Jesus takes the five loaves and two fish, looks up to heaven, blesses them, breaks them, and keeps giving them to the disciples to set before the crowd. Luke tells the miracle through the actions of a host at table, without describing the multiplication itself.",
+      "grammar": "Labōn ... anablepsas ... eulogēsen ... kateklasen ... edidou: two participles and three finite verbs, the last of them an imperfect, ‘he kept giving’. The shift from the aorists of blessing and breaking to the imperfect of giving suggests that the supply was renewed as it was handed out, which is as close as the text comes to describing how the miracle happened. Luke alone writes eulogēsen autous, ‘he blessed them’, with the loaves as object, where Mark 6:41 has ‘he blessed’ without an object and John 6:11 says ‘he gave thanks’ (eucharistēsas). Paratheinai, ‘to set before’, is the verb of serving a meal.",
+      "words": [
+        "G2983",
+        "G4002",
+        "G0740",
+        "G2486",
+        "G0308",
+        "G3772",
+        "G2127",
+        "G2622",
+        "G1325",
+        "G3908"
+      ],
+      "history": "Jewish custom at meals was for the head of the household to take the bread and say a blessing over it before breaking and distributing it. The Mishnah prescribes the blessing over bread as praise to God ‘who brings forth bread from the earth’ (m. Berakhot 6:1). The blessing was addressed to God as the giver; Luke's phrasing, blessing the loaves themselves, reflects the same act from the side of the food.",
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "Luke uses the same sequence of taking, blessing or giving thanks, breaking, and giving at the Last Supper (22:19) and at Emmaus (24:30), and the church has long read the feeding in the light of the Lord's Supper. Christians differ over what the Supper is and how Christ is present in it, but the verbal link shows that Luke wants the reader to connect Jesus' provision in the wilderness with his giving of himself at the table."
+        }
+      ],
+      "parallels": [
+        "Mark 6:41",
+        "Matthew 14:19",
+        "John 6:11"
+      ],
+      "refs": [
+        "Luke 22:19",
+        "Luke 24:30",
+        "Acts 2:42",
+        "1 Corinthians 11:23-24"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "All eat and are filled, and twelve baskets of leftover pieces are gathered. The surplus is larger than the original supply, and the number matches the Twelve who had nothing to give.",
+      "grammar": "Ephagon kai echortasthēsan pantes, ‘they all ate and were filled’: chortazō, ‘to feed to the full’, is the verb of the beatitude, ‘Blessed are you who hunger now, for you will be filled’ (6:21, chortasthēsesthe). Klasmata, ‘broken pieces’, are the fragments from the breaking in verse 16. Kophinoi dōdeka, ‘twelve baskets’, uses kophinos, a wicker basket; all four accounts of this feeding use kophinos, while Mark and Matthew's feeding of four thousand uses spuris, a different kind of basket (Mark 8:8, Matthew 15:37).",
+      "words": [
+        "G5315",
+        "G5526",
+        "G3956",
+        "G0142",
+        "G4052",
+        "G2801",
+        "G2894",
+        "G1427"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The hungry are filled, as the beatitude promised, and there is more than enough. Isaiah pictured the LORD preparing a feast for all peoples on his mountain (Isaiah 25:6), and Jesus speaks of people coming from east and west to recline in the kingdom (13:29). The feeding is a foretaste of that table."
+        }
+      ],
+      "parallels": [
+        "Mark 6:42-44",
+        "Matthew 14:20-21",
+        "John 6:12-13"
+      ],
+      "refs": [
+        "Luke 6:21",
+        "Luke 1:53",
+        "Isaiah 25:6",
+        "Luke 13:29",
+        "Mark 8:8"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Jesus is praying alone, with the disciples near, and he asks who the crowds say he is. Luke omits Mark's long section between the feeding and the confession (Mark 6:45-8:26), so the question follows the feeding directly.",
+      "grammar": "Kai egeneto en tō einai auton proseuchomenon kata monas, ‘and it happened, while he was praying alone’, is Luke's typical opening with egeneto and an articular infinitive of time, joined to a periphrastic participle, einai proseuchomenon, that stresses ongoing prayer. Kata monas, ‘alone’, is an idiom meaning ‘in private’. Sunēsan autō hoi mathētai, ‘the disciples were with him’, is slightly awkward with ‘alone’, and the sense is that he was apart from the crowds with only the disciples near. Tina me legousin hoi ochloi einai, ‘whom do the crowds say me to be?’, is an accusative and infinitive after a verb of saying.",
+      "words": [
+        "G1096",
+        "G4336",
+        "G3441",
+        "G4895",
+        "G3101",
+        "G1905",
+        "G3004G",
+        "G3793"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Luke sets the turning points of Jesus' ministry in prayer: his baptism (3:21), the choosing of the Twelve (6:12), this confession, the transfiguration (9:28-29), the Lord's Prayer (11:1), and Gethsemane (22:41-44). Revelation about who Jesus is comes in the setting of his communion with the Father."
+        }
+      ],
+      "parallels": [
+        "Mark 8:27",
+        "Matthew 16:13"
+      ],
+      "refs": [
+        "Luke 3:21",
+        "Luke 6:12",
+        "Luke 11:1",
+        "Luke 22:41"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "The disciples report the crowds' opinions, the same three Herod heard (verses 7-8). Then Jesus asks them directly, and Peter answers for them: ‘The Christ of God.’",
+      "grammar": "Humeis de tina me legete einai, ‘but you, whom do you say me to be?’, puts humeis first for emphasis, turning from the crowds to the disciples. Peter's answer, ton christon tou theou, ‘the Christ of God’, is in the accusative because it completes the question's construction: ‘you are saying me to be the Christ of God’. The genitive tou theou marks the Messiah as God's own anointed. Luke has used similar wording in 2:26, where Simeon is promised he will see ‘the Lord's Christ’, and the rulers at the cross will mock ‘the Christ of God, the Chosen One’ (23:35).",
+      "words": [
+        "G0611",
+        "G2491G",
+        "G0910",
+        "G2243",
+        "G4396",
+        "G0744",
+        "G0450",
+        "G4771",
+        "G3004G",
+        "G4074G",
+        "G5547",
+        "G2316"
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Peter's confession moves beyond the crowd's category of prophet to the title of the anointed king. Luke's form, ‘of God’, recalls Psalm 2:2, where the kings of the earth set themselves ‘against the LORD and against His Anointed One’, a psalm the church in Acts 4:25-27 applies to Jesus' death. The Messiah belongs to God and is rejected by earthly powers."
+        }
+      ],
+      "parallels": [
+        "Mark 8:28-29",
+        "Matthew 16:14-16",
+        "John 6:68-69"
+      ],
+      "refs": [
+        "Luke 2:26",
+        "Luke 23:35",
+        "Psalm 2:2",
+        "Acts 4:25-27"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "Jesus orders the disciples to tell no one and immediately explains what his messiahship means: the Son of Man must suffer, be rejected by the elders, chief priests, and scribes, be killed, and be raised on the third day. Luke omits Peter's protest and Jesus' rebuke (Mark 8:32-33), so the prediction stands without interruption.",
+      "grammar": "Epitimēsas autois parēngeilen, ‘warning them sternly, he commanded’, uses epitimaō, the verb of rebuking demons and storms, for the force of the command. Eipōn hoti dei, ‘saying that it is necessary’, joins the silence to the reason for it: the title must be filled with the content of suffering before it is announced. Four aorist infinitives follow dei: pathein, ‘to suffer’; apodokimasthēnai, ‘to be rejected after testing’; apoktanthēnai, ‘to be killed’; and tē tritē hēmera egerthēnai, ‘on the third day to be raised’. The passive egerthēnai presents the resurrection as God's act; Mark 8:31 has ‘after three days rise’ (anastēnai), and Luke agrees with Matthew 16:21 in ‘on the third day’.",
+      "words": [
+        "G2008",
+        "G3853",
+        "G1163",
+        "G5207",
+        "G0444",
+        "G3958",
+        "G0593",
+        "G4245G",
+        "G0749",
+        "G1122",
+        "G0615",
+        "G5154",
+        "G1453"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 118:22",
+          "note": "‘The stone the builders rejected has become the cornerstone.’ The Septuagint (Psalm 117:22) uses apodokimazō, ‘reject after examination’, the verb Jesus uses here. He will quote the psalm at the end of the parable of the tenants (20:17), and Peter applies it to Jesus before the same council in Acts 4:11. In the psalm the rejected stone is vindicated by the LORD, which is the pattern of this prediction: rejection by the builders, then raising by God."
+        },
+        {
+          "ref": "Hosea 6:2",
+          "note": "‘After two days He will revive us; on the third day He will raise us up, that we may live in His presence.’ The Septuagint has en tē hēmera tē tritē anastēsometha. Hosea speaks of the nation's restoration, not of the Messiah, and the Gospels never quote it; but it is the Old Testament's clearest ‘third day’ of raising, and many interpreters think it lies behind the church's confession that Christ was raised on the third day ‘according to the Scriptures’ (1 Corinthians 15:4)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The elders, chief priests, and scribes were the three groups that made up the Jerusalem council, so Jesus foretells an official rejection by Israel's leaders. Luke's dei places that rejection inside God's purpose, the necessity he will later explain from Moses and the Prophets (24:26-27, 46)."
+        },
+        {
+          "id": "resurrection",
+          "note": "From the first prediction, death and resurrection are announced together. The disciples will not understand it (9:45, 18:34), but the resurrection is part of the plan from the beginning, not an afterthought."
+        }
+      ],
+      "parallels": [
+        "Mark 8:30-31",
+        "Matthew 16:20-21"
+      ],
+      "refs": [
+        "Luke 17:25",
+        "Luke 20:17",
+        "Luke 24:7",
+        "Luke 24:26",
+        "1 Corinthians 15:3-4"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Jesus speaks to everyone: whoever wants to come after him must deny himself, take up his cross daily, and follow. The road he has just described for himself becomes the road for all who follow him.",
+      "grammar": "Elegen de pros pantas, ‘he was saying to all’, widens the audience beyond the Twelve. The conditional ei tis thelei, ‘if anyone wants’, addresses the will. Two aorist imperatives, arnēsasthō heauton, ‘let him deny himself’, and aratō ton stauron autou, ‘let him take up his cross’, present decisive acts, and a present imperative, akoloutheitō moi, ‘let him keep following me’, presents the ongoing life that results. Arneomai is the verb of Peter's later denial of Jesus (22:57): the disciple must say no to himself or end up saying no to his Lord. Kath' hēmeran, ‘daily’, is Luke's addition, turning a single act of martyrdom into a daily pattern.",
+      "words": [
+        "G3004G",
+        "G3956",
+        "G2309",
+        "G3694",
+        "G2064",
+        "G0720",
+        "G1438",
+        "G0142",
+        "G4716",
+        "G2250",
+        "G0190"
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The cross was a Roman instrument of execution, not a metaphor for ordinary hardship. By adding ‘daily’, Luke does not soften it but extends it: the disciple lives each day as one already given up to Jesus, ready for whatever loss following him brings."
+        },
+        {
+          "id": "sanctification",
+          "note": "The Christian life is described as a daily self-denial and a continuing following. Holiness in Luke's terms is not an achievement but the pattern of a life that keeps choosing Jesus over itself."
+        }
+      ],
+      "parallels": [
+        "Mark 8:34",
+        "Matthew 16:24"
+      ],
+      "refs": [
+        "Luke 14:27",
+        "Luke 22:57",
+        "Galatians 2:20",
+        "1 Corinthians 15:31"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The paradox that explains the command: whoever tries to save his life will lose it, and whoever loses it for Jesus' sake will save it. The saying turns on two meanings of ‘life’, the life one guards and the life God gives.",
+      "grammar": "Hos gar an thelē tēn psuchēn autou sōsai, ‘for whoever wants to save his life’: psuchē means life, soul, or self, and the saying uses it in two senses at once, the present life one clings to and the true life one receives. Apolesei, ‘will lose’, and sōsei, ‘will save’, are futures looking to God's final verdict. Heneken emou, ‘for my sake’, makes Jesus himself the reason for the loss; Mark 8:35 adds ‘and the gospel’s’. Luke repeats a form of the saying in 17:33, in the setting of the day of the Son of Man.",
+      "words": [
+        "G2309",
+        "G5590H",
+        "G4982",
+        "G0622",
+        "G1752",
+        "G1473"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Saving one's life in the end is the gift of God to those who lose it for Jesus. The saying does not make self-denial the price of salvation; it says that salvation belongs to those whose lives are bound to Jesus, and that clinging to oneself is the way to lose everything."
+        }
+      ],
+      "parallels": [
+        "Mark 8:35",
+        "Matthew 16:25"
+      ],
+      "refs": [
+        "Luke 17:33",
+        "John 12:25",
+        "Luke 14:26",
+        "Philippians 3:7-8"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "A question drives the point home: what good is it to gain the whole world and lose oneself? The saying moves from martyrdom to the quieter danger of a successful life that forfeits the self.",
+      "grammar": "Ti gar ōpheleitai anthrōpos, ‘for what is a person profited?’, is a present passive with ōpheleō, ‘benefit’. Kerdēsas ton kosmon holon, ‘having gained the whole world’, uses kerdainō, the language of commercial profit. Luke writes heauton de apolesas ē zēmiōtheis, ‘but having lost or forfeited himself’, where Mark 8:36 has ‘forfeit his soul’ (tēn psuchēn autou). Zēmioō, ‘suffer loss, be fined’, belongs to the same ledger language: the gain is counted against a loss that cannot be recovered.",
+      "words": [
+        "G5623",
+        "G0444",
+        "G2770",
+        "G2889",
+        "G3650",
+        "G1438",
+        "G0622",
+        "G2210"
+      ],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The whole world is imagined as a possible gain, and it is still too little to set against the loss of the self. Luke will tell the story of such a loss in the rich fool, who gains a harvest and loses his life on the same night (12:16-21)."
+        }
+      ],
+      "parallels": [
+        "Mark 8:36-37",
+        "Matthew 16:26"
+      ],
+      "refs": [
+        "Luke 12:16-21",
+        "Philippians 3:7-8",
+        "Psalm 49:7-9",
+        "1 Timothy 6:7"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "The warning turns to the future: whoever is ashamed of Jesus and his words, the Son of Man will be ashamed of when he comes in his glory and the glory of the Father and the holy angels. The present choice is weighed against the final revelation of glory.",
+      "grammar": "Hos gar an epaischunthē me kai tous emous logous, ‘whoever is ashamed of me and my words’, uses an aorist subjunctive for the disciple's choice, and touton ho huios tou anthrōpou epaischunthēsetai, ‘of him the Son of Man will be ashamed’, a future passive, for the matching verdict. Luke's phrase en tē doxē autou kai tou patros kai tōn hagiōn angelōn, ‘in his glory and the Father's and the holy angels'’, gives three sources of glory where Mark 8:38 has ‘in his Father's glory with the holy angels’. Luke attributes glory to Jesus in his own right.",
+      "words": [
+        "G1870",
+        "G3056",
+        "G5207",
+        "G0444",
+        "G2064",
+        "G1391",
+        "G3962",
+        "G0040G",
+        "G0032G"
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 7:13-14",
+          "note": "In Daniel's vision, one ‘like a son of man’ comes with the clouds of heaven to the Ancient of Days and is given dominion, glory, and a kingdom that all peoples serve. The Aramaic bar enash means ‘a human being’; the Septuagint's hōs huios anthrōpou gives the Gospels' phrase. Jesus' self-designation as the Son of Man who comes in glory draws on this scene, and before the council he will speak of the Son of Man seated at the right hand of the power of God (22:69)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "return",
+          "note": "The verse speaks of the Son of Man's coming in glory as the moment when present faithfulness or shame is answered. The return of Christ in Luke is not only a hope but a standard by which disciples measure what they will risk now."
+        },
+        {
+          "id": "judgment",
+          "note": "The judgment is personal and reciprocal: the Son of Man is ashamed of those who were ashamed of him. Luke repeats the principle in 12:8-9 with the language of acknowledging and denying before the angels of God."
+        }
+      ],
+      "parallels": [
+        "Mark 8:38",
+        "Matthew 16:27"
+      ],
+      "refs": [
+        "Luke 12:8-9",
+        "Luke 21:27",
+        "Romans 1:16",
+        "2 Timothy 1:8"
+      ]
+    },
+    {
+      "v": "27",
+      "context": "A promise: some standing here will not taste death before they see the kingdom of God. The next scene, eight days later, gives three of them a sight of the glory just described.",
+      "grammar": "Legō de humin alēthōs, ‘I tell you truly’, is Luke's Greek equivalent for Mark's amēn legō humin (Mark 9:1); Luke often translates or omits the Hebrew amēn. Ou mē geusōntai thanatou, ‘will certainly not taste death’, uses the emphatic double negative and a Semitic idiom for dying. Heōs an idōsin tēn basileian tou theou, ‘until they see the kingdom of God’, is Luke's shortest form of the saying: Mark adds ‘having come with power’, and Matthew 16:28 ‘the Son of Man coming in his kingdom’.",
+      "words": [
+        "G3004G",
+        "G0230",
+        "G2476",
+        "G1089",
+        "G2288",
+        "G1492H",
+        "G0932"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Interpreters have referred the promise to the transfiguration that follows, to the resurrection and Pentecost, to the fall of Jerusalem in AD 70, or to the spread of the church in Acts. Many ancient readers, John Chrysostom among them, took it of the transfiguration, a reading Luke's placement supports. Luke's wording, ‘see the kingdom’, suits a present glimpse of the kingdom's reality rather than its final arrival."
+        }
+      ],
+      "parallels": [
+        "Mark 9:1",
+        "Matthew 16:28"
+      ],
+      "refs": [
+        "Luke 17:20-21",
+        "John 8:52",
+        "Hebrews 2:9",
+        "2 Peter 1:16-18"
+      ]
+    },
+    {
+      "v": "28",
+      "context": "About eight days later Jesus takes Peter, John, and James up a mountain to pray. Luke alone gives prayer as the purpose of the climb.",
+      "grammar": "Meta tous logous toutous hōsei hēmerai oktō, ‘after these sayings, about eight days’, is a loose time phrase in which hēmerai stands in the nominative as a kind of parenthesis; Mark 9:2 and Matthew 17:1 say ‘after six days’. Luke's ‘about eight days’ may be an inclusive way of saying a week later. Anebē eis to oros proseuxasthai, ‘he went up on the mountain to pray’, uses an aorist infinitive of purpose. Luke again names John before James, as in 8:51.",
+      "words": [
+        "G3056",
+        "G5616",
+        "G2250",
+        "G3638",
+        "G3880",
+        "G4074G",
+        "G2491H",
+        "G2385G",
+        "G0305",
+        "G3735",
+        "G4336"
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The transfiguration happens while Jesus prays (verse 29). In Luke the revelation of Jesus' glory is not a stage effect for the disciples but the outward showing of his communion with the Father."
+        }
+      ],
+      "parallels": [
+        "Mark 9:2",
+        "Matthew 17:1"
+      ],
+      "refs": [
+        "Luke 6:12",
+        "Luke 8:51",
+        "Exodus 24:12-15",
+        "Luke 22:39"
+      ]
+    },
+    {
+      "v": "29",
+      "context": "As Jesus prays, the appearance of his face changes and his clothing flashes white. Luke describes the change without the word ‘transfigured’.",
+      "grammar": "To eidos tou prosōpou autou heteron, ‘the appearance of his face became different’, avoids the verb metamorphoō, ‘transform’, which Mark 9:2 and Matthew 17:2 use. Many commentators think Luke avoided it because Greek readers associated metamorphosis with the shape-changing of gods in myth. Ho himatismos autou leukos exastraptōn, ‘his clothing white, flashing like lightning’, uses exastraptō, a word found only here, from astrapē, ‘lightning’ (compare 17:24 and the angels at the tomb in 24:4, en esthēti astraptousē).",
+      "words": [
+        "G4336",
+        "G1491",
+        "G4383",
+        "G2087",
+        "G2441",
+        "G3022",
+        "G1823"
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 34:29-35",
+          "note": "When Moses came down from Sinai with the tablets, the skin of his face shone because he had spoken with the LORD, and the people were afraid to come near. The Septuagint says the appearance of his face ‘had been glorified’ (dedoxastai). Luke's transfiguration also happens on a mountain, involves the face, and speaks of glory (verse 32). The difference is that Moses reflected a glory he had seen, while Jesus' glory is his own (verse 32, ‘His glory’)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The change in Jesus' face and clothing is a visible disclosure of what he already is. Paul reflects on the contrast with Moses' fading radiance and speaks of the glory of God in the face of Christ (2 Corinthians 3:7-18, 4:6)."
+        }
+      ],
+      "parallels": [
+        "Mark 9:2-3",
+        "Matthew 17:2"
+      ],
+      "refs": [
+        "2 Corinthians 3:18",
+        "2 Corinthians 4:6",
+        "Daniel 7:9",
+        "Luke 24:4"
+      ]
+    },
+    {
+      "v": "30-31",
+      "context": "Two men, Moses and Elijah, are suddenly talking with Jesus. They appear in glory and speak of his departure, which he is about to accomplish at Jerusalem. Only Luke tells the subject of their conversation.",
+      "grammar": "Sunelaloun autō, ‘they were talking with him’, is an imperfect of ongoing conversation. Ophthentes en doxē, ‘appearing in glory’, uses the aorist passive of horaō, the verb for heavenly appearances and for the risen Jesus (24:34, Acts 13:31). The key phrase is elegon tēn exodon autou hēn ēmellen plēroun en Ierousalēm, ‘they were speaking of his exodus, which he was about to fulfill in Jerusalem’. Exodos means literally ‘a way out, departure’, and was used for death (Wisdom 3:2; 2 Peter 1:15, where Peter speaks of his own ‘departure’ just before recalling the transfiguration). It is also the name the Septuagint tradition gave the second book of Moses, and Hebrews 11:22 uses it for Israel's going out from Egypt. Plēroō, ‘fulfill, complete’, treats this departure as the fulfillment of a plan, and ēmellen, ‘he was about to’, marks it as near and certain.",
+      "words": [
+        "G0435G",
+        "G4814",
+        "G3475",
+        "G2243",
+        "G3700H",
+        "G1391",
+        "G1841",
+        "G3195",
+        "G4137",
+        "G2419"
+      ],
+      "history": "Moses and Elijah both met God on the same mountain, Sinai or Horeb (Exodus 24, 33-34; 1 Kings 19:8-18), and both left the earth in unusual ways: Elijah was taken up in a whirlwind (2 Kings 2:11), and Moses was buried by the LORD in a grave no one knows (Deuteronomy 34:5-6). The last verses of the Prophets name them together, Moses' law and Elijah's return (Malachi 4:4-5). Luke's readers could see them as the Law and the Prophets bearing witness, a pairing Jesus himself makes at the end of the Gospel (24:27, 44).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus' death is called an exodus to be fulfilled. The word frames the cross, and with it the resurrection and ascension, as the new act of deliverance for God's people, as the first exodus was Israel's rescue from slavery. Luke does not explain the mechanism here, but he names the event in the language of redemption."
+        },
+        {
+          "id": "glory",
+          "note": "Moses and Elijah appear in glory and talk about Jesus' death. On the mountain of glory the subject of conversation is the cross, which is Luke's way of binding the two together: the glory is reached through the departure at Jerusalem (24:26)."
+        }
+      ],
+      "parallels": [
+        "Mark 9:4",
+        "Matthew 17:3"
+      ],
+      "refs": [
+        "2 Peter 1:15",
+        "Hebrews 11:22",
+        "Malachi 4:4-5",
+        "Luke 24:26-27",
+        "Luke 13:33"
+      ]
+    },
+    {
+      "v": "32",
+      "context": "Peter and his companions are heavy with sleep, but they stay awake, or wake fully, and see Jesus' glory and the two men standing with him. Only Luke mentions their sleepiness, which will return in Gethsemane.",
+      "grammar": "Ēsan bebarēmenoi hupnō, ‘they had been weighed down with sleep’, is a periphrastic pluperfect of bareō, ‘burden’. Diagrēgorēsantes, found only here in the New Testament, can mean ‘having kept fully awake’ (despite their drowsiness) or ‘having become fully awake’ (after dozing); both are possible, and translations divide. Eidon tēn doxan autou, ‘they saw his glory’, names the glory as Jesus' own, and sunestōtas autō, ‘standing with him’, a perfect participle, shows Moses and Elijah in attendance on him.",
+      "words": [
+        "G4074G",
+        "G0916",
+        "G5258",
+        "G1235",
+        "G1492H",
+        "G1391",
+        "G0435G",
+        "G4921"
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The apostolic witness to Jesus' glory is grounded in seeing. Second Peter 1:16-18 recalls this mountain as the moment they were eyewitnesses of his majesty, and John 1:14 says, in the plural of witnesses, ‘we have seen His glory’."
+        }
+      ],
+      "parallels": [
+        "Mark 9:4",
+        "Matthew 17:3"
+      ],
+      "refs": [
+        "Luke 22:45",
+        "2 Peter 1:16-18",
+        "John 1:14",
+        "Daniel 10:9"
+      ]
+    },
+    {
+      "v": "33",
+      "context": "As Moses and Elijah are leaving, Peter proposes building three shelters, one each for Jesus, Moses, and Elijah. Luke adds that he did not know what he was saying. Peter wants to hold the moment and puts the three on a level.",
+      "grammar": "En tō diachōrizesthai autous ap' autou, ‘as they were parting from him’, is an articular infinitive of time and sets the timing only Luke gives: Peter speaks to keep them from leaving. Epistata, ‘Master’, is Luke's usual word (Mark 9:5 has ‘Rabbi’). Kalon estin hēmas hōde einai, ‘it is good for us to be here’. Poiēsōmen skēnas treis, ‘let us make three tents’, is a hortatory subjunctive. Mē eidōs ho legei, ‘not knowing what he was saying’, uses a perfect participle of oida; Mark 9:6 explains it by fear.",
+      "words": [
+        "G1316",
+        "G4074G",
+        "G1988",
+        "G2570G",
+        "G5602",
+        "G4160G",
+        "G4633",
+        "G5140",
+        "G3475",
+        "G2243",
+        "G6063"
+      ],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Skēnē, ‘tent’, is the word for the tabernacle where God's glory dwelt in the wilderness (Exodus 40:34-35). Peter's offer to house the glory in tents shows that he senses God's presence, but he misunderstands its form: the voice will point him to Jesus alone as the place where God is found and heard, the one who ‘tabernacled’ among us (John 1:14, eskēnōsen)."
+        }
+      ],
+      "parallels": [
+        "Mark 9:5-6",
+        "Matthew 17:4"
+      ],
+      "refs": [
+        "Exodus 40:34-35",
+        "Leviticus 23:42-43",
+        "John 1:14",
+        "Revelation 21:3"
+      ]
+    },
+    {
+      "v": "34",
+      "context": "While Peter is still speaking, a cloud comes and overshadows them, and they are afraid as they enter the cloud. The cloud answers Peter's proposal: God provides his own covering.",
+      "grammar": "Tauta de autou legontos, ‘while he was saying these things’, is a genitive absolute that cuts Peter off. Egeneto nephelē kai epeskiazen autous, ‘a cloud came and was overshadowing them’: episkiazō is the verb of Gabriel's promise that the power of the Most High would overshadow Mary (1:35), and of the cloud settling on the tabernacle in the Septuagint of Exodus 40:35. En tō eiselthein autous eis tēn nephelēn, ‘as they entered the cloud’, leaves the pronoun autous ambiguous: it may mean Jesus, Moses, and Elijah, while the disciples watched in fear, or it may include the disciples themselves. Interpreters and translations differ.",
+      "words": [
+        "G3778",
+        "G3004G",
+        "G3507",
+        "G1982",
+        "G5399",
+        "G1525"
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 40:34-35",
+          "note": "When the tabernacle was finished, the cloud covered the tent of meeting and the glory of the LORD filled it, and Moses could not enter ‘because the cloud had settled on it’. The Septuagint translates ‘settled’ with epeskiazen, the verb Luke uses here. The cloud is the sign of God's own presence, the same cloud that led Israel out of Egypt (Exodus 13:21) and covered Sinai (Exodus 24:15-18). The disciples are brought into that presence."
+        }
+      ],
+      "parallels": [
+        "Mark 9:7",
+        "Matthew 17:5"
+      ],
+      "refs": [
+        "Luke 1:35",
+        "Exodus 24:15-18",
+        "Exodus 13:21",
+        "Acts 1:9"
+      ]
+    },
+    {
+      "v": "35",
+      "context": "A voice from the cloud speaks: “This is My Son, whom I have chosen. Listen to Him!” The Father identifies Jesus and gives the disciples one command.",
+      "grammar": "Houtos estin ho huios mou ho eklelegmenos, ‘this is my Son, the one chosen’: eklelegmenos is a perfect passive participle of eklegomai, ‘choose’, describing a choice made and standing. It is in the earliest manuscripts (Papyri 45 and 75, Codices Sinaiticus and Vaticanus); later manuscripts assimilate it to Mark and Matthew's ho agapētos, ‘beloved’. Autou akouete, ‘listen to him’, is a present imperative, ‘keep listening to him’, with autou placed first for emphasis: him, and not Moses or Elijah in the same way. At the baptism the voice addressed Jesus (3:22, ‘You are’); here it addresses the disciples (‘This is’).",
+      "words": [
+        "G5456G",
+        "G3507",
+        "G5207",
+        "G1586",
+        "G0191"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "‘You are My Son; today I have become Your Father’, God's words to his anointed king on Zion. The Septuagint reads huios mou ei su. The words ‘My Son’ carry the royal sense of the confession Peter has just made, the Christ of God, and Acts 13:33 applies the psalm to Jesus' resurrection."
+        },
+        {
+          "ref": "Isaiah 42:1",
+          "note": "‘Here is My Servant, whom I uphold, My Chosen One, in whom My soul delights; I will put My Spirit on Him.’ The Hebrew bechiri, ‘my chosen one’, is rendered in the Septuagint ho eklektos mou. Luke's ‘chosen’ points to this Servant, whose road in Isaiah leads through suffering (52:13-53:12). The rulers at the cross will mock Jesus as ‘the Chosen One’ (23:35, ho eklektos). In Jewish writings of the period, the section of 1 Enoch known as the Similitudes also calls a heavenly figure the Chosen One."
+        },
+        {
+          "ref": "Deuteronomy 18:15",
+          "note": "Moses promises that the LORD will raise up a prophet like him from among his brothers: ‘You must listen to him.’ The Septuagint has autou akousesthe, which Luke's autou akouete echoes closely. With Moses himself present on the mountain, the command identifies Jesus as that prophet, as Peter does explicitly in Acts 3:22-23."
+        }
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus is the Chosen One of God. The New Testament speaks of believers as chosen ‘in Him’ (Ephesians 1:4), and Karl Barth built his doctrine of election on this point (Church Dogmatics II/2, 1942), treating Christ as both the electing God and the elected man. Christians differ on how God's choosing relates to human response, but they agree that election in Scripture is centered on Christ and is for a purpose."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father speaks from the cloud of his presence about the Son before him. The scene, like the baptism, sets the Father and the Son in distinct relation while showing their unity of purpose, part of the evidence from which the church later confessed God as Father, Son, and Spirit."
+        }
+      ],
+      "parallels": [
+        "Mark 9:7",
+        "Matthew 17:5"
+      ],
+      "refs": [
+        "Luke 3:22",
+        "Luke 23:35",
+        "Acts 3:22-23",
+        "2 Peter 1:17"
+      ]
+    },
+    {
+      "v": "36",
+      "context": "When the voice has spoken, Jesus is found alone. The disciples keep silent and tell no one in those days what they had seen. Luke omits the conversation on the way down about Elijah (Mark 9:9-13).",
+      "grammar": "En tō genesthai tēn phōnēn, ‘when the voice had come’, is another articular infinitive of time. Heurethē Iēsous monos, ‘Jesus was found alone’, uses the aorist passive of heuriskō, and monos, ‘alone’, underlines the voice's command: of the three figures, only Jesus remains to be heard. Esigēsan, ‘they kept silent’, and oudeni apēngeilan, ‘they reported to no one’, describe the disciples' own restraint; Mark 9:9 gives Jesus' command to silence, which Luke omits. Hōn heōrakan, ‘of what they had seen’, uses a perfect of lasting witness.",
+      "words": [
+        "G5456G",
+        "G2147",
+        "G3441",
+        "G4601",
+        "G0518",
+        "G2250",
+        "G3708"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "What was seen on the mountain is not proclaimed until after the resurrection, when it can be understood as part of the whole story. Revelation in Luke often comes before understanding, and waits for the cross and the empty tomb to make sense of it."
+        }
+      ],
+      "parallels": [
+        "Mark 9:8-10",
+        "Matthew 17:8-9"
+      ],
+      "refs": [
+        "2 Peter 1:16-18",
+        "Luke 9:21",
+        "Luke 24:44-45"
+      ]
+    },
+    {
+      "v": "37-40",
+      "context": "The next day, coming down the mountain, Jesus meets a large crowd. A man cries out, begging him to look at his only son, whom a spirit seizes, convulses, and mauls, and whom the disciples could not free. The glory of the mountain meets the failure below.",
+      "grammar": "Deomai sou epiblepsai epi ton huion mou, ‘I beg you to look upon my son’: epiblepō, ‘look upon with care’, is the verb of Mary's song, ‘He has looked with favor on the humble state of His servant’ (1:48). Hoti monogenēs moi estin, ‘for he is my only child’, is Luke's detail, the third only child in three chapters (7:12, 8:42). The symptoms are told in the present tense, as they happen repeatedly: lambanei, ‘it seizes’; krazei, ‘he cries out’; sparassei, ‘it convulses’; meta aphrou, ‘with foam’; mogis apochōrei, ‘it scarcely leaves’; suntribon, ‘crushing, mauling’. In verse 40, ouk ēdunēthēsan, ‘they were not able’, reports the disciples' failure without comment.",
+      "words": [
+        "G1836",
+        "G2718",
+        "G3735",
+        "G4876",
+        "G0994",
+        "G1320",
+        "G1189",
+        "G1914",
+        "G5207",
+        "G3439",
+        "G4151G",
+        "G2983",
+        "G2896",
+        "G4682",
+        "G0876",
+        "G3425",
+        "G4937",
+        "G1544",
+        "G1410"
+      ],
+      "history": "The symptoms resemble what is now called epilepsy, and Matthew 17:15 uses selēniazetai, literally ‘moonstruck’, reflecting the ancient belief that the moon affected such seizures. The Gospels, however, attribute this boy's condition to an unclean spirit (verse 42) while treating other illnesses as simple sickness, so they do not equate epilepsy with possession. Modern readers differ on how to relate the two accounts of the same symptoms.",
+      "parallels": [
+        "Mark 9:14-18",
+        "Matthew 17:14-16"
+      ],
+      "refs": [
+        "Luke 1:48",
+        "Luke 7:12",
+        "Luke 8:42",
+        "Luke 9:1"
+      ]
+    },
+    {
+      "v": "41",
+      "context": "Jesus laments over an unbelieving and perverse generation and asks how long he must be with them and bear with them. Then he tells the father to bring his son.",
+      "grammar": "Ō genea apistos kai diestrammenē, ‘O unbelieving and twisted generation’: the interjection ō and the vocative make it a lament. Diestrammenē, a perfect passive participle of diastrephō, ‘twist, distort’, describes a generation bent out of shape; Matthew 17:17 has the same word, Mark 9:19 only ‘unbelieving’. Heōs pote esomai pros humas kai anexomai humōn, ‘until when shall I be with you and bear with you?’, uses two futures, the second from anechomai, ‘endure, put up with’. The lament includes the disciples, the crowd, and the father together.",
+      "words": [
+        "G5599",
+        "G1074",
+        "G0571",
+        "G1294",
+        "G4219",
+        "G0430",
+        "G4317",
+        "G5207"
+      ],
+      "ot": [
+        {
+          "ref": "Deuteronomy 32:5",
+          "note": "In the Song of Moses, Israel has acted corruptly toward God, ‘a perverse and crooked generation’. The Septuagint reads genea skolia kai diestrammenē, and Jesus' words echo its second adjective. Deuteronomy 32:20 adds ‘a perverse generation, children who are unfaithful’. The song laments a people who did not trust the God who carried them, and Jesus speaks in the voice of that song. The echo is the more fitting because Moses has just appeared on the mountain."
+        }
+      ],
+      "parallels": [
+        "Mark 9:19",
+        "Matthew 17:17"
+      ],
+      "refs": [
+        "Deuteronomy 32:20",
+        "Numbers 14:11",
+        "Philippians 2:15",
+        "Acts 2:40"
+      ]
+    },
+    {
+      "v": "42-43",
+      "context": "Even as the boy approaches, the demon throws him down in a convulsion. Jesus rebukes the unclean spirit, heals the boy, and gives him back to his father. Everyone is astonished at the majesty of God, and while they marvel, Jesus turns to his disciples.",
+      "grammar": "Errēxen auton to daimonion kai sunesparaxen, ‘the demon threw him down and convulsed him violently’, uses rhēgnumi, ‘tear, dash down’, and a compound of sparassō, heightening the symptoms of verse 39. Three aorists follow: epetimēsen, ‘he rebuked’; iasato, ‘he healed’; apedōken, ‘he gave back’. The last recalls Nain, where Jesus gave the son to his mother (7:15, edōken). Exeplēssonto epi tē megaleiotēti tou theou, ‘they were astounded at the majesty of God’: megaleiotēs occurs elsewhere only in Acts 19:27 and in 2 Peter 1:16, where the apostle calls himself an eyewitness of Christ's majesty on the holy mountain. Luke thus uses for the healing below the mountain the word Peter uses for the glory on it.",
+      "words": [
+        "G4334",
+        "G4486",
+        "G1140",
+        "G4952",
+        "G2008",
+        "G4151G",
+        "G0169",
+        "G2390",
+        "G3816",
+        "G0591",
+        "G3962",
+        "G1605",
+        "G3168",
+        "G2296",
+        "G4160G"
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The crowd sees God's majesty not in a shining face but in a boy restored to his father. Luke joins the two halves of the scene: the glory the three saw on the mountain is the same power at work in the valley."
+        }
+      ],
+      "parallels": [
+        "Mark 9:20-27",
+        "Matthew 17:18"
+      ],
+      "refs": [
+        "Luke 7:15",
+        "2 Peter 1:16",
+        "Luke 5:26",
+        "Luke 4:35"
+      ]
+    },
+    {
+      "v": "44-45",
+      "context": "While everyone marvels, Jesus tells the disciples to let his words sink in: the Son of Man is about to be handed over into human hands. They do not understand; the saying is hidden from them, and they are afraid to ask.",
+      "grammar": "Thesthe humeis eis ta ōta humōn, ‘you, put into your ears’, is an emphatic aorist middle imperative: let these words lodge where they cannot be lost. Mellei paradidosthai, ‘is about to be handed over’, uses paradidōmi, ‘hand over, deliver up’, the verb used for Judas's betrayal (22:4-6), for the council handing Jesus to Pilate (24:20), and, in Paul, for God giving up his Son (Romans 8:32). Ēgnooun, ‘they were not understanding’, and parakekalummenon, ‘veiled’, a perfect passive participle, describe a lasting concealment, and the hina clause, ‘so that they might not perceive it’, can express purpose or result. Ephobounto erōtēsai, ‘they were afraid to ask’, adds a human reason to the veiling.",
+      "words": [
+        "G5087",
+        "G3775",
+        "G3056",
+        "G5207",
+        "G0444",
+        "G3195",
+        "G3860",
+        "G5495",
+        "G0050",
+        "G4487",
+        "G3871",
+        "G0143",
+        "G5399",
+        "G2065"
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 53:6",
+          "note": "‘The LORD has laid upon Him the iniquity of us all’, and 53:12, ‘He poured out His life unto death’. The Septuagint uses paradidōmi in both places: the LORD ‘handed him over’ for our sins (53:6), and ‘his soul was handed over to death’ (53:12). Jesus' word ‘handed over’ carries that echo, and Luke later quotes Isaiah 53:12 directly (22:37). Luke does not name God as the one who hands over here, but the passive leaves room for it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The second prediction is shorter than the first and centers on one word, ‘handed over’. Human hands will do it, Judas and the council and Pilate, and yet the verb also belongs to Isaiah's servant whom the LORD gives up for others, so Luke's readers can hear both human betrayal and divine purpose in it."
+        }
+      ],
+      "parallels": [
+        "Mark 9:30-32",
+        "Matthew 17:22-23"
+      ],
+      "refs": [
+        "Luke 18:31-34",
+        "Luke 22:37",
+        "Luke 24:6-7",
+        "Romans 8:32",
+        "Luke 24:16"
+      ]
+    },
+    {
+      "v": "46-48",
+      "context": "An argument breaks out among the disciples over who is the greatest. Jesus, knowing their thoughts, stands a child beside him and says that whoever welcomes this child in his name welcomes him, and whoever welcomes him welcomes the one who sent him; the least among them is the great one.",
+      "grammar": "To tis an eiē meizōn autōn, ‘which of them might be greater’, uses the optative eiē with an in an indirect question, a refined construction. Eidōs ton dialogismon tēs kardias autōn, ‘knowing the reasoning of their heart’, shows Jesus' insight as in 5:22 and 6:8. Epilabomenos paidion estēsen auto par' heautō, ‘taking a child, he stood it beside himself’: the child is placed at Jesus' side, in the place of honor. Dexētai ... epi tō onomati mou, ‘whoever receives in my name’, uses dechomai, the verb of welcoming messengers (9:5). Ho gar mikroteros en pasin humin huparchōn, houtos estin megas, ‘for the one who is least among you all, this one is great’, repeats mikroteros from John's saying in 7:28: the kingdom's ‘least’ is its ‘great’.",
+      "words": [
+        "G1261",
+        "G3173",
+        "G6063",
+        "G2588",
+        "G1949",
+        "G3813",
+        "G2476",
+        "G1209",
+        "G3686",
+        "G0649",
+        "G3398"
+      ],
+      "history": "Children in the ancient world had little legal or social standing; they were loved, but they were not persons of rank, and a child could not repay a favor. To welcome a child ‘in my name’ is to show hospitality to someone who confers no status, and Jesus identifies himself, and the Father, with such a guest.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Greatness among Jesus' followers is measured by the welcome given to those with no status, and the one who counts himself least is great. Luke repeats the lesson at the Last Supper, when the same dispute arises and Jesus says he is among them as one who serves (22:24-27)."
+        }
+      ],
+      "parallels": [
+        "Mark 9:33-37",
+        "Matthew 18:1-5"
+      ],
+      "refs": [
+        "Luke 22:24-27",
+        "Luke 7:28",
+        "Luke 18:15-17",
+        "Luke 10:16"
+      ]
+    },
+    {
+      "v": "49-50",
+      "context": "John reports that they saw someone driving out demons in Jesus' name and tried to stop him because he did not follow with them. Jesus says not to stop him: whoever is not against you is for you. The disciples who just failed to cast out a demon try to stop someone who succeeded.",
+      "grammar": "Apokritheis de Iōannēs, ‘John answered’, suggests John is responding to the saying about receiving in Jesus' name. Ekōluomen auton, ‘we were trying to stop him’, is a conative imperfect, an attempted action. Hoti ouk akolouthei meth' hēmōn, ‘because he does not follow with us’: the complaint is about belonging to their group, not following Jesus. Mē kōluete, ‘do not forbid’, a present imperative, may mean ‘stop forbidding’. Hos gar ouk estin kath' humōn, huper humōn estin, ‘whoever is not against you is for you’: Luke's ‘you’ keeps the focus on the disciples' attitude, where Mark 9:40 has ‘us’.",
+      "words": [
+        "G0611",
+        "G2491H",
+        "G1988",
+        "G3686",
+        "G1544",
+        "G1140",
+        "G2967",
+        "G0190",
+        "G5228"
+      ],
+      "ot": [
+        {
+          "ref": "Numbers 11:26-29",
+          "note": "Eldad and Medad prophesy in the camp instead of at the tent with the other elders, and Joshua says, ‘Moses, my lord, stop them’. The Septuagint has kōluson autous, the verb John uses here. Moses answers, ‘Are you jealous on my account? If only all the LORD’s people were prophets’. John takes Joshua's part, and Jesus takes Moses'."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "Jesus refuses to make belonging to the disciples' circle the test of genuine work done in his name. Luke balances this with the opposite saying in 11:23, ‘Whoever is not with Me is against Me’, spoken about neutrality toward Jesus himself. Together they distinguish loyalty to Jesus, which is required, from loyalty to one group of his followers, which is not."
+        }
+      ],
+      "parallels": [
+        "Mark 9:38-40"
+      ],
+      "refs": [
+        "Luke 11:23",
+        "Acts 19:13-16",
+        "Philippians 1:15-18",
+        "Numbers 11:29"
+      ]
+    },
+    {
+      "v": "51",
+      "context": "The Gospel turns a corner. As the days of his being taken up draw near, Jesus sets his face to go to Jerusalem. From here to 19:27 Luke tells the long road to the city.",
+      "grammar": "En tō sumplērousthai tas hēmeras tēs analēmpseōs autou, ‘when the days of his taking up were being fulfilled’: sumplēroō, ‘fill up completely’, is the verb Luke uses for the day of Pentecost being fulfilled (Acts 2:1), time filling up toward an appointed event. Analēmpsis occurs only here in the New Testament; the chapter note explains its link to the ascension. Kai autos to prosōpon estērisen tou poreuesthai eis Ierousalēm, ‘and he himself set his face to go to Jerusalem’: stērizō, ‘fix, make firm’, with prosōpon, ‘face’, is a Septuagint idiom for fixed resolve, often in judgment. The emphatic autos, ‘he himself’, stresses Jesus' own choice.",
+      "words": [
+        "G1096",
+        "G4845",
+        "G2250",
+        "G0354",
+        "G4383",
+        "G4741",
+        "G4198",
+        "G2419"
+      ],
+      "ot": [
+        {
+          "ref": "Ezekiel 21:2",
+          "note": "‘Son of man, set your face against Jerusalem and preach against the sanctuaries. Prophesy against the land of Israel.’ The Septuagint (21:7 in its numbering) reads stērison to prosōpon sou epi Ierousalēm, the same verb and noun Luke uses. The phrase recurs in Ezekiel's oracles against other places. Jesus sets his face toward Jerusalem as a prophet goes to the city that kills the prophets (13:33-34), and Luke's wording lets the reader hear both resolve and a coming confrontation."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "Luke defines the goal of the road not only as the cross but as the taking up. The days being fulfilled point beyond Jerusalem's judgment to the ascension, so the whole travel narrative moves toward Jesus' exaltation through suffering."
+        }
+      ],
+      "refs": [
+        "Acts 1:2",
+        "Acts 1:11",
+        "Acts 2:1",
+        "Luke 13:33-34",
+        "Isaiah 50:7"
+      ]
+    },
+    {
+      "v": "52-53",
+      "context": "Jesus sends messengers ahead into a Samaritan village to prepare for him, but the people refuse to receive him because he is heading for Jerusalem. The first scene of the road is a rejection.",
+      "grammar": "Apesteilen angelous pro prosōpou autou, ‘he sent messengers before his face’, repeats the words of Malachi 3:1 and Exodus 23:20 that Jesus applied to John in 7:27. Now Jesus sends his own forerunners. Hōs hetoimasai autō, ‘so as to prepare for him’, uses hetoimazō, the verb of preparing the Lord's way (1:17, 1:76, 3:4). Ouk edexanto auton, ‘they did not receive him’, is the refusal Jesus spoke of in 9:5. Hoti to prosōpon autou ēn poreuomenon eis Ierousalēm, ‘because his face was going toward Jerusalem’, is a Hebraic idiom for going in person; the Hebrew of 2 Samuel 17:11 speaks in the same way of a king's ‘face going’ into battle.",
+      "words": [
+        "G0649",
+        "G0032H",
+        "G4383",
+        "G2968",
+        "G4541",
+        "G2090",
+        "G1209",
+        "G4198",
+        "G2419"
+      ],
+      "history": "The immediate cause of the refusal is religious geography. Samaritans worshiped on Mount Gerizim and rejected Jerusalem's claim to be the place of God's temple (John 4:20), so a teacher traveling to Jerusalem for a festival would find no welcome in a Samaritan village. John 4:9 summarizes the relationship: Jews do not associate with Samaritans.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The Samaritans who refuse Jesus here will later hear the gospel gladly. In Acts 8:5-25 Philip preaches in Samaria, and Peter and John are sent to pray for the new believers. The rejection at the start of the road is not the last word for them."
+        }
+      ],
+      "refs": [
+        "Luke 7:27",
+        "Malachi 3:1",
+        "John 4:9",
+        "John 4:20",
+        "Acts 8:5"
+      ]
+    },
+    {
+      "v": "54",
+      "context": "James and John ask whether Jesus wants them to call down fire from heaven to consume the village. After the transfiguration, where Elijah appeared, they reach for Elijah's weapon.",
+      "grammar": "Kurie, theleis eipōmen pur katabēnai apo tou ouranou kai analōsai autous, ‘Lord, do you want us to tell fire to come down from heaven and consume them?’ Theleis with the deliberative subjunctive eipōmen, without a conjunction, is an idiomatic way of asking permission. Eipōmen, ‘we should speak, command’, assumes that their word could summon fire, the confidence of men who had just been given authority (9:1). Analiskō, ‘consume, destroy’, occurs elsewhere in the New Testament in Galatians 5:15, of believers devouring one another.",
+      "words": [
+        "G1492H",
+        "G3101",
+        "G2385G",
+        "G2491H",
+        "G2962G",
+        "G2309",
+        "G2036",
+        "G4442",
+        "G2597",
+        "G3772",
+        "G0355"
+      ],
+      "ot": [
+        {
+          "ref": "2 Kings 1:9-12",
+          "note": "King Ahaziah of Samaria sends a captain with fifty men to arrest Elijah, and Elijah answers, ‘If I am a man of God, may fire come down from heaven and consume you and your fifty men’, and it does, twice. The Septuagint reads katabēsetai pur ek tou ouranou kai kataphagetai se. The disciples' words closely follow the first half of the sentence. The setting in Samaria, the region of Elijah's opponents, sharpens the parallel: the village is Samaritan, and James and John propose to treat it as Elijah treated the king's soldiers."
+        }
+      ],
+      "text": "Many manuscripts, including Codices Alexandrinus, Ephraemi (C), Bezae, and Washingtonianus (W), with the Byzantine text and the Textus Receptus, add ‘as Elijah also did’ at the end of the verse. The phrase is absent from Papyri 45 and 75 and Codices Sinaiticus and Vaticanus, and most editors regard it as a gloss that made the allusion to 2 Kings 1 explicit. The King James Version includes it.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The disciples assume that rejecting Jesus deserves immediate fire. Jesus does not deny that judgment is real (10:12-15), but he refuses to let his followers bring it down now. Judgment belongs to God and to the last day; the time of the road to Jerusalem is the time of mercy."
+        }
+      ],
+      "refs": [
+        "Mark 3:17",
+        "2 Kings 1:10",
+        "Luke 10:12-15",
+        "Luke 3:16-17"
+      ]
+    },
+    {
+      "v": "55-56",
+      "context": "Jesus turns and rebukes them, and they go on to another village. Luke's shortest text says nothing about what the rebuke contained, and the silence is itself the answer.",
+      "grammar": "Strapheis de epetimēsen autois, ‘turning, he rebuked them’: strapheis marks a pointed response, as in 7:9 and 7:44, and epitimaō is the verb Jesus used for demons, for the storm, and for the stern command to silence after Peter's confession (9:21). He rebukes the disciples with the word he uses for hostile powers. Kai eporeuthēsan eis heteran kōmēn, ‘and they went to another village’, is an aorist of simple movement: rejection is met with departure, as 9:5 instructed, not with fire.",
+      "words": [
+        "G4762",
+        "G2008",
+        "G4198",
+        "G2087",
+        "G2968"
+      ],
+      "text": "After ‘rebuked them’ some manuscripts add, ‘and he said, You do not know what kind of spirit you are of’. Codex Bezae (D, fifth century) has this form, as do some other witnesses, among them the group of minuscules known as family 13. Many later manuscripts, with the Latin Vulgate and the Textus Receptus, continue with a further sentence at the start of verse 56: ‘for the Son of Man did not come to destroy people's lives but to save them’. The King James Version prints the whole expansion. The earliest witnesses, Papyri 45 and 75, Codices Sinaiticus, Alexandrinus, Vaticanus, Ephraemi, and Washingtonianus, and others, lack both additions. Most editors think the sayings grew as scribes supplied the content of the rebuke, the second drawing on 19:10. Modern versions usually place them in a footnote, and the BSB's verse 55 is the short text.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus meets hostility with a rebuke to his own followers and a quiet change of route. Luke's Gospel then gives the Samaritans a place of honor: the Samaritan who shows mercy (10:33) and the Samaritan leper who returns to give thanks (17:16). John, who wanted fire for a Samaritan village, later prays for Samaritans to receive the Holy Spirit (Acts 8:14-17)."
+        }
+      ],
+      "refs": [
+        "Luke 19:10",
+        "Luke 10:33",
+        "Luke 17:16",
+        "Acts 8:14-17",
+        "Luke 6:27-28"
+      ]
+    },
+    {
+      "v": "57-58",
+      "context": "On the road, someone offers to follow Jesus wherever he goes. Jesus answers that foxes have dens and birds have roosts, but the Son of Man has nowhere to lay his head. The first of three would-be followers hears the cost before he starts.",
+      "grammar": "Akolouthēsō soi hopou ean aperchē, ‘I will follow you wherever you go’, is a future of promise with an indefinite clause. Phōleous, ‘dens, holes’, and kataskēnōseis, ‘roosting places’, are the homes of creatures; kataskēnōsis comes from kataskēnoō, ‘settle, encamp’, and means a place to settle rather than a nest in the strict sense. Ouk echei pou tēn kephalēn klinē, ‘he has not where he may lay his head’, uses klinō, the verb for the day ‘declining’ in 9:12: Jesus has no place to rest at the day's end.",
+      "words": [
+        "G3598",
+        "G0190",
+        "G3699",
+        "G0565",
+        "G0258",
+        "G5454",
+        "G4071",
+        "G2682",
+        "G5207",
+        "G2776",
+        "G2827"
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of Man, the figure of Daniel 7 who receives glory and a kingdom, has less shelter than a fox. Luke's Jesus accepts homelessness on the road to Jerusalem, and the Samaritan refusal just narrated is a case in point. The glory of the mountain and the poverty of the road belong to the same person."
+        }
+      ],
+      "parallels": [
+        "Matthew 8:19-20"
+      ],
+      "refs": [
+        "Luke 2:7",
+        "Luke 13:32",
+        "2 Corinthians 8:9",
+        "Philippians 2:6-8"
+      ]
+    },
+    {
+      "v": "59-60",
+      "context": "Jesus calls another man to follow him. The man asks to go first and bury his father. Jesus answers, ‘Let the dead bury their own dead. You, however, go and proclaim the kingdom of God.’",
+      "grammar": "Akolouthei moi, ‘follow me’, is a present imperative, the call Jesus gave Levi (5:27). The man's request, epitrepson moi apelthonti prōton thapsai ton patera mou, ‘allow me, having gone away, first to bury my father’, puts prōton, ‘first’, at the center. Jesus' reply uses nekros in two senses: aphes tous nekrous thapsai tous heautōn nekrous, ‘leave the dead to bury their own dead’, where the first ‘dead’ are those who have no part in the life of the kingdom, and the second are the physically dead. Su de apelthōn diangelle, ‘but you, go and proclaim far and wide’: diangellō, ‘announce widely’, is a stronger compound of the ordinary verb, and only Luke includes this commission (Matthew 8:22 has only the saying about the dead).",
+      "words": [
+        "G0190",
+        "G2962G",
+        "G2010",
+        "G0565",
+        "G4413G",
+        "G2290",
+        "G3962",
+        "G0863G",
+        "G3498",
+        "G1229",
+        "G0932"
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's claim outranks even the most sacred family duty. The saying is not a general rule against burial or honoring parents (18:20), but a demand that when Jesus calls, the call comes first, because the proclamation of life has an urgency that nothing else has."
+        },
+        {
+          "id": "family",
+          "note": "The fifth commandment is not abolished, and Jesus condemns those who evade support of their parents by religious pretext (Mark 7:10-13). Here the conflict is between the ordinary order of family obligation and the arrival of the kingdom, and Jesus places himself above it; Martin Hengel argued that no rabbi claimed such authority for himself."
+        }
+      ],
+      "text": "Some early manuscripts lack ‘Lord’ in the man's reply, and Westcott and Hort omitted it; most editors print it, and the BSB includes it.",
+      "parallels": [
+        "Matthew 8:21-22"
+      ],
+      "refs": [
+        "Luke 5:27-28",
+        "Luke 14:26",
+        "Luke 18:28-30",
+        "Mark 7:10-13"
+      ]
+    },
+    {
+      "v": "61-62",
+      "context": "A third man offers to follow but asks first to say farewell to his household. Jesus answers that no one who puts his hand to the plow and looks back is fit for the kingdom of God. The section ends without saying what any of the three did.",
+      "grammar": "Akolouthēsō soi, kurie; prōton de epitrepson moi, ‘I will follow you, Lord; but first allow me’, repeats the ‘first’ of verse 59. Apotaxasthai tois eis ton oikon mou, ‘to take leave of those at my home’, uses apotassomai, ‘say goodbye, renounce’, the verb Jesus uses in 14:33: whoever does not renounce (apotassetai) all his possessions cannot be his disciple. Oudeis epibalōn tēn cheira ep' arotron kai blepōn eis ta opisō, ‘no one, having put his hand on a plow and looking at the things behind’, contrasts an aorist participle (the start) with a present one (the continuing backward look). Euthetos, ‘fit, suitable’, returns in 14:35 of salt that is not fit for the soil.",
+      "words": [
+        "G2087",
+        "G0190",
+        "G2962G",
+        "G4413G",
+        "G2010",
+        "G0657",
+        "G3624G",
+        "G1911",
+        "G5495",
+        "G0723",
+        "G0991",
+        "G3694",
+        "G2111",
+        "G0932"
+      ],
+      "ot": [
+        {
+          "ref": "1 Kings 19:19-21",
+          "note": "Elijah finds Elisha plowing with twelve yoke of oxen and throws his cloak over him. Elisha runs after him and says, ‘Please let me kiss my father and mother, and then I will follow you’, and Elijah lets him go back. Elisha slaughters his oxen, burns the plowing equipment to cook them, feeds the people, and follows. The man in Luke asks almost the same thing, but Jesus, greater than Elijah, does not grant it, and the plow of Elisha's story becomes the image of the reply."
+        }
+      ],
+      "history": "Greek readers knew the image of the plowman who must keep his eyes on his work. Hesiod's Works and Days (lines 441-445), written around 700 BC, describes the ideal plowman as a man who attends to his work and drives a straight furrow, past the age for gazing about at his companions. A light ancient plow was guided by one hand and needed constant attention; a plowman who looked back would cut a crooked furrow.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Fitness for the kingdom is described not as ability but as undivided attention. The three conversations have no endings, which leaves the reader in the would-be followers' place, asked to decide what comes first."
+        }
+      ],
+      "refs": [
+        "Luke 14:33",
+        "Luke 14:35",
+        "Luke 17:32",
+        "Philippians 3:13-14",
+        "Genesis 19:26"
+      ]
+    }
+  ]
+}

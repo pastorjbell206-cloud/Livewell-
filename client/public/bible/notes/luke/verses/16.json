@@ -1,0 +1,287 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Jesus turns from the Pharisees and scribes of chapter 15 to his disciples, though verse 14 will show the Pharisees still listening. The parable opens with the same words that will open the rich man and Lazarus in verse 19, ‘a certain man was rich’, so the chapter is framed as two stories about rich men and what they did with what they had.",
+      "grammar": "Dieblēthē (\"was accused\") is an aorist passive of diaballō, a verb that often describes a hostile report, whether true or slanderous; it is the root from which diabolos, ‘slanderer’ or ‘devil’, is formed, though the verb itself carries no demonic sense here. The parable never says whether the charge was fair, and the manager's silence in verse 2 suggests it was. Diaskorpizōn (\"wasting\") is a present participle, describing an ongoing pattern of squandering. It is the same verb used of the younger son who scattered his inheritance in 15:13, a link that binds the two chapters: both men waste what belongs to someone else, and both face a moment of reckoning.",
+      "words": ["G1225", "G1287", "G3623", "G5225"],
+      "history": "The oikonomos was a familiar figure: an agent who ran an estate, collected rents in kind, made loans, and signed contracts in the owner's name. Joseph in Potiphar's house (Genesis 39:4-6) is the Bible's classic picture of the office. Luke uses the word earlier of the faithful and wise manager set over a household (12:42), so his hearers already have a model of what such a man ought to be.",
+      "refs": ["Luke 15:13", "Luke 12:42-48", "Genesis 39:4-6", "1 Corinthians 4:1-2"]
+    },
+    {
+      "v": "2",
+      "context": "The master summons the manager and dismisses him in the same breath. The demand for an account is not an inquiry but the formal close of his office, which is what drives the scramble of verses 3-7: he still has the authority to sign documents, but only until he hands over the books.",
+      "grammar": "Apodos ton logon (\"turn in an account\") is an aorist imperative with the ordinary bookkeeping phrase for rendering an account; the same idiom is used of the day when people will give account to God (Matthew 12:36, Romans 14:12, Hebrews 13:17). Oikonomia (\"management\") names the office itself, and the infinitive oikonomein, ‘to act as manager’, closes the verse: the noun and verb frame the sentence around the thing he is losing. Ou gar dunē eti (‘for you are no longer able’) states the dismissal as a fact, not a threat.",
+      "words": ["G0591", "G3056", "G3622", "G3621"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The summons to give an account is the parable's picture of the reckoning every steward faces. The manager's crisis is a small version of the crisis Jesus keeps placing before his hearers (12:20, 12:42-48): a day when the office ends and the books are opened."
+        }
+      ],
+      "refs": ["Luke 12:20", "Romans 14:12", "Hebrews 13:17", "Matthew 12:36"]
+    },
+    {
+      "v": "3-4",
+      "context": "The manager talks to himself, a device Luke uses for the rich fool (12:17-19), the lost son (15:17-19), and the unjust judge (18:4-5). He weighs his options with brutal honesty, rejects manual labor and begging, and lands on a plan that will make people owe him hospitality once he is out of work.",
+      "grammar": "Ti poiēsō (\"What shall I do\") is a deliberative aorist subjunctive, the same question the rich fool asks in 12:17. Verse 4 opens with egnōn, an aorist that grammarians often call dramatic: ‘I've got it’, the moment the idea arrives, rather than a report of past knowledge. The purpose clause with hotan metastathō (\"after my removal\"), an aorist passive subjunctive, looks ahead to his dismissal as certain, and dexōntai me eis tous oikous autōn (\"welcome me into their homes\") anticipates the eternal dwellings of verse 9, where the same verb, dechomai, returns.",
+      "words": ["G4160G", "G1097", "G3179", "G1209", "G4626", "G1871"],
+      "history": "The two options he refuses mark the bottom of the social scale. Digging was heavy day labor, and begging meant public shame; the wisdom writer Ben Sira told his pupils that it is better to die than to beg (Sirach 40:28). The same verb for begging, epaiteō, describes the blind man by the road at Jericho (18:35), who does without shame what this man cannot bring himself to do.",
+      "refs": ["Luke 12:17-19", "Luke 15:17-19", "Luke 18:4-5", "Luke 18:35"]
+    },
+    {
+      "v": "5-7",
+      "context": "The manager calls in his master's debtors one by one and has each rewrite his own bill for a lower amount. Two cases stand for the whole group. The speed (\"Sit down quickly\") shows that he is racing the moment when his authority ends.",
+      "grammar": "The debts are named in units: batous (\"measures\" of oil, the Hebrew bath) and korous (\"measures\" of wheat, the Hebrew cor). Ta grammata (\"your bill\"), literally ‘your writings’, is the promissory note, and the command grapson (\"write\"), an aorist imperative addressed to the debtor, means the debtor himself writes the new figure. The note stays in his own hand, and he is now implicated in the reduction. The first debtor's bill is halved; the second loses a fifth. The asyndetic, clipped dialogue (question, figure, command) moves at the pace of the manager's hurry.",
+      "words": ["G0943", "G2884", "G1121", "G1125", "G5533", "G3784"],
+      "history": "Oil and wheat were the two great commodities of the land, and they appear together in the same two units when Solomon pays Hiram's workmen in cors of wheat and baths of oil (2 Chronicles 2:10). Josephus, describing that payment, says a bath held seventy-two xestai (Antiquities 8.57), and a cor was ten baths (Ezekiel 45:14). The sums here are commercial quantities, suggesting that the debtors were tenant farmers paying rent in produce or merchants who had taken goods on credit. What the reductions represent (a lawful discount, removed interest, the manager's own commission, or simple fraud) is the disputed question the chapter note sets out.",
+      "refs": ["2 Chronicles 2:10", "Ezekiel 45:14", "Exodus 22:25", "Deuteronomy 23:19-20"]
+    },
+    {
+      "v": "8",
+      "context": "The story ends with the master praising the manager, and the sentence that follows turns from the parable to its lesson. Where the parable proper stops and Jesus' comment begins is one of the passage's old questions.",
+      "grammar": "Ton oikonomon tēs adikias, ‘the manager of unrighteousness’, is a Semitic descriptive genitive, where Greek would ordinarily use an adjective: \"the dishonest manager\". Luke uses the same construction for ‘the judge of unrighteousness’ in 18:6 and ‘the mammon of unrighteousness’ in verse 9. The praise is for phronimōs (\"shrewdly\"), practical good sense in a crisis, not for honesty. Who ho kurios (\"the master\") is has been argued: Joachim Jeremias (The Parables of Jesus) took it as Jesus, the Lord, commenting on the story, while Joseph Fitzmyer (Anchor Bible, Luke X-XXIV, 1985) read it as the rich man within the story. ‘Sons of this age’ and ‘sons of light’ use the Semitic idiom in which ‘son of’ means one who belongs to or is marked by something, as ‘a son of peace’ in 10:6. Eis tēn genean tēn heautōn, literally ‘toward their own generation’, means in dealing with people of their own kind.",
+      "words": ["G0093", "G5430", "G5429", "G2962H", "G0165G", "G5457", "G1074"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The verse commends a kind of wisdom: seeing one's real situation and acting on it before it is too late. The children of this age apply it to their short future; Jesus wants the children of light to apply it at least as clearly to the future that lasts."
+        }
+      ],
+      "refs": ["Luke 20:34-36", "John 12:36", "1 Thessalonians 5:5", "Ephesians 5:8", "Luke 18:6"]
+    },
+    {
+      "v": "9",
+      "context": "The first application: use money to make friends, so that when money gives out they will receive you into eternal dwellings. The manager used his master's goods to secure a welcome in human houses; disciples are to use wealth, which is never finally theirs, in ways that last beyond death.",
+      "grammar": "Ek tou mamōna tēs adikias, ‘by means of the mammon of unrighteousness’, is translated \"worldly wealth\" in the BSB. The genitive probably describes wealth as it belongs to this unjust age rather than money gained by fraud; verse 11 calls it simply ‘the unrighteous mammon’ in contrast with ‘the true’. The subject of dexōntai (\"they will welcome\") is debated. It may be the friends made by generosity, the poor who have received it, or, as many commentators hold, a reverent plural that avoids naming God, the same idiom as 12:20, where the Greek says literally ‘they are demanding your soul’. Aiōnious skēnas, ‘eternal tents’, is a deliberate paradox: the tent, the most temporary of homes, becomes permanent.",
+      "words": ["G3126", "G0093", "G1587", "G1209", "G0166", "G4633"],
+      "text": "Critical editions read eklipē, ‘when it fails’, with wealth as the subject: money runs out, at the latest at death. The later Byzantine text and the Textus Receptus read eklipēte, ‘when you fail’, meaning when you die, which the King James Version renders ‘when ye fail’. The earlier reading is better attested, and the sense is close either way.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The verse treats money as something to be spent on people with eternity in view. Wealth cannot be kept, but what it does for others can outlast it, which is the logic of Jesus' command to sell possessions, give to the poor, and have treasure in heaven (12:33)."
+        }
+      ],
+      "refs": ["Luke 12:33", "Luke 12:20", "1 Timothy 6:17-19", "Luke 14:13-14", "Matthew 6:19-21"]
+    },
+    {
+      "v": "10-12",
+      "context": "A chain of sayings links the parable to faithfulness. Three contrasts, little and much, unrighteous mammon and true riches, another's and your own, press the same point from three sides: how a person handles money is a test of whether they can be trusted with what really matters.",
+      "grammar": "Verse 10 is a proverb in two balanced halves built on pistos (\"faithful\") and adikos (\"dishonest\"), with elachistō (\"very little\"), a superlative, set against pollō (\"much\"). Verses 11 and 12 are conditional sentences with ei and the aorist egenesthe (‘if you did not prove to be’), a first-class condition that treats the failure as a real possibility the hearers must face. The words play on pistos and pisteusei: if you have not been ‘faithful’, who will ‘entrust’ (pisteuō) you with the true riches? Money is en tō allotriō, ‘in what belongs to another’, because everything a steward handles belongs to his master.",
+      "words": ["G4103", "G1646", "G0094", "G4100", "G0228", "G0245"],
+      "text": "In verse 12 most manuscripts ask who will give you ‘what is your own’ (humeteron). Codex Vaticanus and a few others read ‘what is ours’ (hēmeteron), which Westcott and Hort printed; most editors keep ‘your own’, as the BSB does.",
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Money is described as ‘very little’ and ‘another's’. The verses do not despise it; they relativize it. Faithful use of what is small and borrowed is the proving ground for the ‘true riches’ that God gives as a person's own."
+        }
+      ],
+      "refs": ["Luke 19:17", "Matthew 25:21", "1 Corinthians 4:2", "1 Peter 4:10"]
+    },
+    {
+      "v": "13",
+      "context": "The chain ends in its sharpest form. The steward language gives way to the language of slavery: a household slave cannot belong to two owners, and a person cannot serve both God and mammon. The Pharisees' reaction in verse 14 shows how directly this saying struck.",
+      "grammar": "Oiketēs is a household slave, a word Luke adds to the saying as Matthew has it (Matthew 6:24); it ties the saying to the household of the parable. Douleuein (\"serve\") is the verb of a slave's service, not casual employment. The two parallel either-or clauses are chiastic: hate the one and love the other, or cling to the one and despise the other. ‘Hate’ and ‘love’ here, as often in Semitic speech, describe choosing and rejecting rather than emotions. Mamōnas is set grammatically alongside theos as the object of the same verb, which is what makes the personification so stark.",
+      "words": ["G3610", "G1398", "G3404", "G0025", "G0472", "G2706", "G3126"],
+      "parallels": ["Matthew 6:24"],
+      "theology": [
+        {
+          "id": "idolatry",
+          "note": "Jesus names money as a rival lord that claims the service owed to God. The verse makes idolatry a matter of what one serves, not only of images, which is the same move Paul makes when he calls greed idolatry (Colossians 3:5)."
+        }
+      ],
+      "refs": ["Matthew 6:24", "Colossians 3:5", "1 Timothy 6:10", "Hebrews 13:5"]
+    },
+    {
+      "v": "14-15",
+      "context": "Luke names the listening Pharisees and their response: they sneer. Jesus answers with a verdict on self-justification that the chapter's second parable will dramatize and that 18:9-14 will return to in the temple.",
+      "grammar": "Exemuktērizon (\"were scoffing\") is an imperfect of ekmuktērizō, a verb built on the word for nose, to turn up the nose; Luke uses it again only of the rulers sneering at Jesus on the cross (23:35). Hoi dikaiountes heautous (\"the ones who justify yourselves\") is a present participle with a reflexive: a habit of declaring oneself in the right before an audience. The same verb, dikaioō, will describe the tax collector who goes home justified by God (18:14). Bdelugma (\"detestable\") is a strong word, used in the Septuagint for what God abhors, especially idolatry (Deuteronomy 7:25-26), and for the ‘abomination of desolation’ (Mark 13:14). What is lofty (hupsēlon) among people is exactly what God finds abhorrent, the reversal of Mary's song (1:51-52).",
+      "words": ["G1592", "G5366", "G1344", "G1097", "G2588", "G5308", "G0946"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The verse sets two courts against each other: justification before people and the knowledge of God, who sees the heart. It prepares for 18:14, where the only justification that counts is God's verdict, given to the man who stopped justifying himself."
+        }
+      ],
+      "refs": ["1 Samuel 16:7", "Luke 18:9-14", "Luke 1:51-52", "Proverbs 16:5", "Luke 23:35"]
+    },
+    {
+      "v": "16",
+      "context": "A saying about the turning of the ages. The Law and the Prophets ran until John; since then the kingdom is proclaimed as good news, and people are pressing into it. In context it answers the Pharisees who scoff at a teacher who welcomes tax collectors: the new era is arriving through exactly those people.",
+      "grammar": "The first sentence has no verb; \"were proclaimed\" is supplied by the BSB. Mechri Iōannou, ‘until John’, can include John in the old era or mark him as the hinge. Euangelizetai (\"is being preached\") is a present passive of Luke's favorite verb for proclaiming good news. Biazetai is either middle, ‘everyone is forcing his way in’ (the BSB), or passive, ‘everyone is being pressed to enter’, as the chapter note explains. The saying's form in Matthew 11:12 is different and even harder: there the kingdom suffers violence.",
+      "words": ["G3551", "G4396", "G3360", "G2097", "G0932", "G0971"],
+      "parallels": ["Matthew 11:12-13"],
+      "history": "Hans Conzelmann built his influential account of Luke's theology (Die Mitte der Zeit, 1954, translated as The Theology of St Luke, 1960) partly on this verse, dividing history into the period of Israel up to John, the period of Jesus as the center of time, and the period of the church. Later scholars, including Fitzmyer, accepted a threefold scheme in some form but questioned Conzelmann's placing of John entirely in the old era, since Luke's own Gospel opens the good news with John's birth.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is not only a future hope here but a present proclamation that people are entering. The verse marks John as the point where promise becomes announcement."
+        }
+      ],
+      "refs": ["Luke 7:28-29", "Luke 3:18", "Acts 10:37", "Luke 4:43"]
+    },
+    {
+      "v": "17",
+      "context": "The very next sentence guards against misunderstanding verse 16. The arrival of the kingdom does not mean the Law is discarded; heaven and earth will go before the smallest part of it fails. Verse 18 then gives an example of the Law's force pressed further, not relaxed.",
+      "grammar": "Eukopōteron (\"easier\") introduces a comparison of impossibilities, the same form as the camel and the needle in 18:25. Keraia (\"stroke of a pen\") is literally a small horn, the hook or serif that distinguishes one Hebrew letter from another of similar shape. Pesein, ‘to fall’, is used of a word or promise failing to take effect. Matthew's form has both the smallest letter (iota, for the Hebrew yod) and the stroke, and adds ‘until everything is accomplished’ (Matthew 5:18).",
+      "words": ["G2123", "G2762", "G4098", "G3928", "G3551"],
+      "parallels": ["Matthew 5:18"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Luke's Jesus affirms the Law's permanence in the strongest image available. How the Law continues is worked out in Luke-Acts: it is fulfilled in Christ (24:44), it still bears witness to him, and its intent is pressed deeper, as the next verse shows. The verse rules out reading the kingdom as the Law's cancellation."
+        }
+      ],
+      "refs": ["Matthew 5:17-18", "Luke 21:33", "Luke 24:44", "Isaiah 40:8"]
+    },
+    {
+      "v": "18",
+      "context": "A single, stark saying on divorce follows. In Luke it stands as an example of verse 17: far from loosening the Law, Jesus holds marriage to a standard stricter than the debate of his day. It also speaks to men who, in the sayings just before, justify themselves before others.",
+      "grammar": "Pas ho apoluōn... kai gamōn (‘everyone who divorces... and marries’) puts two present participles under one article, so that the saying addresses the man who divorces and remarries as one act. Moicheuei (\"commits adultery\") is present, a general statement. The second half turns to the man who marries apolelumenēn apo andros, a perfect passive participle, ‘a woman who has been divorced from a husband’. Luke's form, like Mark's, has no exception clause; Matthew's has ‘except for sexual immorality’ (Matthew 5:32, 19:9). Luke also lacks Mark's line about a wife who divorces her husband (Mark 10:12).",
+      "words": ["G0630H", "G1060", "G3431", "G0620", "G1135H"],
+      "parallels": ["Matthew 5:32", "Matthew 19:9", "Mark 10:11-12"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 24:1-4",
+          "note": "Jesus does not quote Deuteronomy here, but the saying addresses the law it contains. The Hebrew allows a man who finds ‘some indecency’ (ervat davar) in his wife to write her a certificate of divorce and send her away, and it forbids him to take her back after she has married another. The Septuagint renders the certificate as biblion apostasiou, the phrase Matthew uses (Matthew 5:31, 19:7). Deuteronomy regulates divorce as an existing practice; it does not command it. In Mark and Matthew Jesus answers the appeal to this law by going back to Genesis 1:27 and 2:24, the order of creation. Luke's compressed saying assumes that argument without stating it."
+        }
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The saying treats marriage as a bond that a husband's decision cannot dissolve, and it names the husband who discards his wife as the one who wrongs her. Christian traditions read it with the other New Testament texts in different ways: Roman Catholic teaching holds a valid sacramental marriage indissoluble; the Orthodox allow a second marriage with penitence; many Protestant confessions allow divorce for adultery and desertion. This note is not legal advice, and no reading of the verse requires anyone to remain in danger; people facing abuse should seek safety first."
+        },
+        {
+          "id": "law",
+          "note": "Placed after verse 17, the saying shows what it means that no stroke of the Law will fail: its intent for marriage, stated at creation, is honored more strictly than the permissions the rabbis debated."
+        }
+      ],
+      "refs": ["Genesis 2:24", "Malachi 2:14-16", "1 Corinthians 7:10-15", "Mark 10:2-12"]
+    },
+    {
+      "v": "19",
+      "context": "The second parable opens, echoing the first line of the first: ‘a certain man was rich’. The whole portrait is dress and dinner. He is never named, which is unusual for a story whose poor man will be.",
+      "grammar": "Enedidusketo (\"dressed\") is an imperfect middle, ‘he habitually clothed himself’. Euphrainomenos kath' hēmeran lamprōs, ‘making merry daily in splendor’, uses euphrainō, the verb of the rich fool's ‘be merry’ (12:19) and the father's feast for the lost son (15:23-32). The celebration that in chapter 15 welcomes the lost is here a daily private habit. Lamprōs, ‘brilliantly, splendidly’, occurs only here in the New Testament.",
+      "words": ["G4145", "G1737", "G4209", "G1040", "G2165", "G2988"],
+      "text": "P75, a papyrus codex of Luke and John usually dated to about AD 175-225, names the rich man: ‘a rich man by name Neues’. Henry J. Cadbury (A Proper Name for Dives, Journal of Biblical Literature 81, 1962) gathered the names later tradition gave him, and Brent Nongbri (Journal of Biblical Literature 135, 2016) has argued that P75 may be later than usually thought. No other early Greek witness has the name, and editors regard it as a scribal attempt to fill a gap. English Bibles do not print it. Dives is simply the Latin word for ‘rich man’.",
+      "refs": ["Proverbs 31:22", "Luke 12:19", "Luke 15:23-24", "James 5:5"]
+    },
+    {
+      "v": "20-21",
+      "context": "The poor man is introduced by name and by condition. He lies at the rich man's gate, covered with sores, hungry for what falls from the table, with dogs as his only visitors. The gate is the story's first boundary: the rich man passes it daily, and the parable says nothing of what he does there, which is the point.",
+      "grammar": "Ebeblēto is a pluperfect passive of ballō, ‘had been thrown down’ or ‘had been laid’: he did not arrive there by his own strength and remains where he was left. Heilkōmenos (\"covered with sores\"), a perfect passive participle found only here in the New Testament, describes a settled condition. Epithumōn chortasthēnai (\"longing to be fed\") repeats almost exactly the phrase used of the lost son longing to be filled with pods (15:16). Alla kai (\"even\") introduces the dogs as a further indignity: the only creatures that come to him are scavengers.",
+      "words": ["G4434", "G2976G", "G0906H", "G4440", "G1669", "G1937", "G5526", "G2965"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The Law and the Prophets commanded open-handed care for the poor brother within your gates (Deuteronomy 15:7-11, Isaiah 58:7). The parable places the poor man exactly there, at the gate, so that the rich man's sin is neglect of a command he had every day before his eyes."
+        },
+        {
+          "id": "wealth",
+          "note": "Nothing in the story says the rich man gained his wealth unjustly or harmed Lazarus. His wealth is condemned in the way it is used: a feast every day beside a man starving at the door."
+        }
+      ],
+      "refs": ["Deuteronomy 15:7-11", "Isaiah 58:7", "Luke 15:16", "James 2:15-16", "Luke 14:13"]
+    },
+    {
+      "v": "22",
+      "context": "Both men die, and the reversal begins. The beggar, apparently unburied, is carried by angels to Abraham's side; the rich man is buried, and the story says no more about his funeral. The second half of the parable takes place beyond death.",
+      "grammar": "The verse opens with egeneto and two aorist infinitives, a Septuagint-style narrative formula common in Luke (‘it came to pass that the beggar died and was carried’). Apenechthēnai is an aorist passive: Lazarus is carried, as he was carried to the gate in verse 20, but now by angels. Kolpos (\"side\"), literally ‘bosom’, pictures the place of honor next to Abraham at a banquet. The rich man's two verbs, apethanen and etaphē (\"died and was buried\"), are flat and brief after the long description of his life.",
+      "words": ["G0599", "G0667", "G0032G", "G2859", "G0011", "G2290"],
+      "history": "Jewish tradition also pictured angels meeting the righteous at death. The Babylonian Talmud, in a saying attributed to Rabbi Eleazar, describes three companies of ministering angels coming out to welcome a righteous man when he departs, and companies of destroying angels meeting the wicked (b. Ketubot 104a). The text is later than Luke, but it shows how natural the image in this verse was in Jewish thought.",
+      "theology": [
+        {
+          "id": "intermediate",
+          "note": "Lazarus is taken to Abraham's side at death, not at a later resurrection. The verse pictures the righteous dead received at once into rest and fellowship, which is why Christian readers have linked it with Jesus' promise to the criminal (23:43)."
+        }
+      ],
+      "refs": ["Luke 23:43", "John 13:23", "Matthew 8:11", "Philippians 1:23"]
+    },
+    {
+      "v": "23-24",
+      "context": "The rich man is in Hades, in torment, and now he is the one looking from a distance at someone else's comfort. His first request asks mercy, but it still treats Lazarus as a servant to be sent on an errand.",
+      "grammar": "Hadēs is the Greek name for the realm of the dead, used in the Septuagint for Sheol. Huparchōn en basanois (\"where he was in torment\") uses basanos, originally a touchstone for testing metals and then torture, a word that returns in verse 28. Apo makrothen (\"from afar\") is the same adverb used of the tax collector who stands ‘at a distance’ in 18:13. In verse 23 kolpois is plural, ‘in his bosom’, a common Greek idiom for the singular. Eleēson me (\"have mercy on me\") is the cry of the lepers (17:13) and the blind man (18:38-39); in their mouths it is heard, in his it comes too late. Odunōmai (\"I am in agony\") is present tense: the suffering is ongoing.",
+      "words": ["G0086", "G0931", "G3113", "G2859", "G1653", "G3600", "G5395"],
+      "theology": [
+        {
+          "id": "intermediate",
+          "note": "The rich man is conscious, remembers, speaks, and suffers before any final resurrection. How literally to take the flame, the finger, and the tongue is debated, but the verse presents personal existence continuing after death with its moral outcome already felt."
+        },
+        {
+          "id": "hell",
+          "note": "Hades here is a place of torment, though the New Testament reserves Gehenna for final punishment (12:5) and Revelation says Hades itself will be emptied into the lake of fire (Revelation 20:13-14). Whether the verse describes the intermediate state or pictures final judgment in the imagery of Hades is a question interpreters answer differently."
+        }
+      ],
+      "refs": ["Luke 12:5", "Revelation 20:13-14", "Luke 17:13", "Acts 2:27"]
+    },
+    {
+      "v": "25",
+      "context": "Abraham's first answer is gentle in form and final in content. He calls the rich man ‘child’, acknowledges the family tie, and explains the reversal: each received his portion in life, and now the positions are exchanged.",
+      "grammar": "Teknon (\"Child\") answers the rich man's ‘Father Abraham’. The kinship is real, but, as John warned, having Abraham as father does not save (3:8). Mnēsthēti (\"remember\") is an aorist imperative. Apelabes, from apolambanō, ‘you received in full’, is a commercial word for receiving what is owed, and it echoes the woe of 6:24: \"But woe to you who are rich, for you have already received your comfort.\" Parakaleitai (\"he is comforted\") takes up the same word for comfort (paraklēsis) used there. The balanced clauses (you and Lazarus, then now he and you) set the reversal out like an account being closed.",
+      "words": ["G5043", "G3403", "G0618", "G0018", "G2556H", "G3870", "G3600"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's judgment in this verse is a reversal that puts right what life left wrong, the pattern announced in Mary's song (1:52-53) and the blessings and woes (6:20-25). It is not a reward for poverty or a penalty for wealth as such; the parable's last scene ties the rich man's fate to not listening to Moses and the prophets."
+        }
+      ],
+      "refs": ["Luke 6:20-25", "Luke 1:52-53", "Luke 3:8", "Psalm 73:16-20"]
+    },
+    {
+      "v": "26",
+      "context": "Abraham adds the decisive reason: a great chasm has been fixed, and no one crosses it in either direction. The gate that divided the two men in life has become a gulf that cannot be bridged.",
+      "grammar": "Chasma mega (\"a great chasm\") occurs only here in the New Testament. Estēriktai (\"has been fixed\") is a perfect passive: set in place and remaining so, and the passive implies that God fixed it. The purpose clause with hopōs says that the chasm exists precisely so that crossing is impossible, and it rules out traffic both ways: diabēnai, ‘to go across’, from here to there, and diaperōsin, ‘to cross over’, from there to here. En pasi toutois (\"besides all this\") marks this as a second, independent reason beyond the justice of verse 25.",
+      "words": ["G5490", "G4741", "G1224", "G1276", "G3342"],
+      "theology": [
+        {
+          "id": "intermediate",
+          "note": "The chasm pictures a separation after death that cannot be crossed. Whatever else the imagery borrows from Jewish pictures of compartments in the realm of the dead (1 Enoch 22), its point is finality: death fixes the outcome of a life."
+        }
+      ],
+      "refs": ["Hebrews 9:27", "Luke 13:25-28", "Matthew 25:10-12"]
+    },
+    {
+      "v": "27-28",
+      "context": "The rich man's second request turns to his five brothers. For the first time he thinks of others, though still of his own household, and still of Lazarus as a messenger to be dispatched.",
+      "grammar": "Erōtō se (\"I beg you\") is a polite request, and the purpose is expressed twice: hopōs diamarturētai autois, ‘so that he may solemnly warn them’, and hina mē... elthōsin, ‘so that they may not come’. Diamarturomai is Luke's word for solemn apostolic testimony in Acts, used of Peter warning the crowd at Pentecost (Acts 2:40) and of Paul testifying to Jews and Greeks (Acts 20:21, 20:24). Ton topon touton tēs basanou (\"this place of torment\") repeats the basanos of verse 23.",
+      "words": ["G2065", "G3992", "G2192", "G4002", "G1263", "G5117", "G0931"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The rich man assumes his brothers lack only information. The parable's answer is that they lack a will to listen. Repentance in Luke is a turning of the whole person toward God's word, not a response to more vivid evidence."
+        }
+      ],
+      "refs": ["Acts 2:40", "Acts 20:21", "Luke 13:3"]
+    },
+    {
+      "v": "29",
+      "context": "Abraham's second answer is the chapter's hinge: the brothers already have Moses and the prophets, and they should listen to them. The Scriptures that command care for the poor at your gate are enough.",
+      "grammar": "Echousin (\"They have\") is present: the Scriptures are in their possession now. Akousatōsan (\"let... listen\") is an aorist imperative of akouō, which with a genitive of the person heard often carries the Hebrew sense of shema, to hear and obey. ‘Moses and the prophets’ names the Scriptures by two of their parts, as ‘the Law and the Prophets’ did in verse 16, and anticipates 24:27, where the risen Jesus begins with Moses and all the prophets.",
+      "words": ["G2192", "G3475", "G4396", "G0191"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Abraham treats written Scripture as God's sufficient call to repentance. The verse sets the ordinary reading of the Law and the Prophets above any extraordinary sign, and it places responsibility on those who have that word."
+        }
+      ],
+      "refs": ["Luke 24:27", "Luke 9:35", "Deuteronomy 18:15", "Deuteronomy 15:11", "2 Timothy 3:15-16"]
+    },
+    {
+      "v": "30-31",
+      "context": "The rich man contradicts Abraham: a messenger from the dead would bring repentance. Abraham's final word ends the parable with no verdict on the rich man and a warning to the living. Luke's readers know that someone did rise, and that many were still not persuaded.",
+      "grammar": "The two conditions are built differently. The rich man's ean tis apo nekrōn poreuthē (\"if someone is sent to them from the dead\") is a hopeful future supposition with the verb ‘go’. Abraham's answer opens with ei... ouk akouousin, a condition assumed true (‘if, as is the case, they do not listen’), and then oud' ean tis ek nekrōn anastē, ‘not even if someone rises from the dead’. Abraham changes the verb from ‘go’ to anistēmi, the verb of resurrection that Jesus uses of himself in 18:33 and the angels in 24:7. Peisthēsontai (\"they will not be persuaded\" with the negative) is a future passive of peithō, the verb Luke uses in Acts for persuasion to faith (Acts 17:4, 28:24).",
+      "words": ["G3498", "G4198", "G3340", "G0450", "G0191", "G3982"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The verse teaches that faith does not arise from spectacle when the heart has refused God's word. It anticipates the pattern of Luke 24 and Acts, where the resurrection is proclaimed from Moses and the prophets, and many still refuse."
+        },
+        {
+          "id": "resurrection",
+          "note": "The parable ends with the word for resurrection, pointing beyond itself to Easter. The risen Christ will send his disciples back to the Scriptures to understand why he had to rise (24:44-47)."
+        }
+      ],
+      "refs": ["Luke 24:25-27", "Luke 24:44-47", "John 11:45-53", "John 12:10-11", "Acts 28:23-24"]
+    }
+  ]
+}

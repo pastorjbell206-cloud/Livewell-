@@ -173,8 +173,8 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
                 <button type="button" onClick={retryVerification} style={{ ...btn, background: "var(--mustard)", color: "var(--ink)" }}>
                   Check again
                 </button>
-                <Link href={`/${slug}`} style={{ ...btn, background: "var(--ink)", color: "var(--bone)" }}>
-                  Back to the book
+                <Link href="/books" style={{ ...btn, background: "var(--ink)", color: "var(--bone)" }}>
+                  Back to the books
                 </Link>
               </div>
             </>
@@ -183,7 +183,7 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--ink-muted)", marginTop: "40px" }}>
             Trouble downloading?{" "}
             <a href="mailto:Pastorjbell206@gmail.com?subject=Ebook%20download" style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)" }}>Email us</a>{" "}
-            and we'll help. <Link href={`/${slug}`} style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)" }}>Back to the book</Link>.
+            and we'll help. <Link href="/books" style={{ color: "var(--ink)", borderBottom: "1px solid var(--mustard)" }}>Back to the books</Link>.
           </p>
         </div>
       </section>

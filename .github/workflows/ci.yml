@@ -41,6 +41,17 @@ jobs:
           node scripts/validate-answers.mjs
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
+          node scripts/validate-needs.mjs
+          node scripts/validate-needs.mjs --drafts
+          node scripts/validate-grow-links.mjs
+          node scripts/validate-plans.mjs
+          node scripts/validate-workbooks.mjs
+          node scripts/validate-family.mjs
+          node scripts/validate-grow-voice.mjs
+          node scripts/validate-verse-guides.mjs
+          pnpm exec tsx scripts/validate-catalogue.mjs
+          node scripts/validate-bible.mjs
+          node scripts/validate-bible-notes.mjs
 
       - name: Test
         run: pnpm test
@@ -71,7 +82,9 @@ jobs:
           node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run sitemap && pnpm run build
+      # Prerender too, so Lighthouse measures the HTML Vercel actually ships
+      # (build:vercel runs prerender; the static home hero lives there).
+      - run: pnpm run sitemap && pnpm run build && pnpm run prerender
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
       - name: Lighthouse (home)
@@ -81,6 +94,20 @@ jobs:
             --only-categories=performance,accessibility,best-practices,seo \
             --output=json --output-path=./lh.json --quiet
           node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
+      - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
+        run: |
+          node -e "
+            const r = require('./lh.json').categories;
+            const min = { performance: 90, accessibility: 90, 'best-practices': 95, seo: 95 };
+            let bad = 0;
+            for (const k in min) {
+              const s = Math.round((r[k]?.score ?? 0) * 100);
+              const ok = s >= min[k];
+              console.log((ok ? 'ok  ' : 'FAIL') + ' ' + k.padEnd(15) + s + ' (min ' + min[k] + ')');
+              if (!ok) bad++;
+            }
+            if (bad) { console.error(bad + ' Lighthouse category(ies) below threshold'); process.exit(1); }
+          "
       - name: Axe (home)
         run: |
           # axe exits 1 on real accessibility violations and 2 on environment

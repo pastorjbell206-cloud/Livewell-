@@ -1,0 +1,307 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A single long sentence opens the second half of the Gospel. It names the time (before Passover), what Jesus knew (his hour to leave the world for the Father), and what he did (loved his own to the end). Everything in chapters 13 to 19 unfolds this sentence.",
+      "grammar": "Eidōs ho Iēsous hoti ēlthen autou hē hōra, ‘Jesus, knowing that his hour had come’, uses the perfect participle of oida, and the knowledge of Jesus runs through the chapter (verses 3, 11, 18). Hina metabē ek tou kosmou toutou pros ton patera, ‘to pass from this world to the Father’, uses metabainō, ‘cross over’, for his death and return. Agapēsas tous idious tous en tō kosmō, ‘having loved his own who were in the world’, recalls 1:11, where his own did not receive him; here ‘his own’ are the disciples who did. Eis telos ēgapēsen autous, ‘he loved them to the end’, can mean to the end of his life or to the utmost degree, and John probably intends both. The aorist ēgapēsen sums up the love about to be shown in the foot washing and the cross.",
+      "words": ["G4253", "G3957", "G5610", "G3327", "G2398", "G5056", "G0025"],
+      "history": "Augustine opened his sermon on this verse (Tractates on John 55.1) by explaining pascha as a Hebrew word meaning passing over, in Latin transitus, and pointed out that John interprets the name himself when he says Jesus was to pass out of this world to the Father. The same verb for passing over is used in John 5:24 and 1 John 3:14 of believers who have crossed from death to life.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "The Gospel's second half begins with love, not power or glory, and names the recipients: his own who were in the world, the disciples who will betray, deny, and desert him. The love is complete (eis telos) before any of their failures are recorded."
+        }
+      ],
+      "refs": ["John 1:11", "John 5:24", "John 15:13", "John 17:1", "John 19:30"]
+    },
+    {
+      "v": "2",
+      "context": "The narrator sets the scene at the evening meal and names the shadow over it: the devil had already put the betrayal into Judas's heart. Jesus washes Judas's feet knowing this.",
+      "grammar": "Deipnou ginomenou, ‘supper taking place’, is a genitive absolute with a present participle: the meal is in progress, not finished, as verse 26 confirms. Tou diabolou ēdē beblēkotos eis tēn kardian, ‘the devil having already put into the heart’, uses a perfect participle of ballō, ‘throw’ or ‘put’: the suggestion is already lodged. In the best text the heart is not explicitly Judas's: the clause runs ‘into the heart that Judas son of Simon Iscariot should betray him’, with Ioudas in the nominative as subject of hina paradoi. Grammatically the heart could be the devil's own (the devil had made up his mind) or Judas's; most translations, including the BSB, take it as Judas's, which the later text made explicit.",
+      "words": ["G1173", "G1096", "G1228", "G0906H", "G2588", "G3860", "G2469"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "John describes the betrayal as both the devil's suggestion and Judas's act. Evil has a source outside the human heart and a willing home inside it, and the Gospel holds Judas responsible even while naming the devil's part (compare 12:6)."
+        }
+      ],
+      "refs": ["Luke 22:3", "John 6:70-71", "John 12:6", "Acts 5:3", "James 1:14-15"]
+    },
+    {
+      "v": "3",
+      "context": "John pauses to give the reason for what follows, and it is not what a reader might expect. Jesus washes feet because he knows his supreme authority, not in spite of it.",
+      "grammar": "The participle eidōs, ‘knowing’, repeats from verse 1 and governs two hoti clauses. The first, hoti panta edōken autō ho patēr eis tas cheiras, ‘that the Father had given all things into his hands’, repeats 3:35. The second is balanced: hoti apo theou exēlthen kai pros ton theon hupagei, ‘that he had come from God and was going to God’. The aorist exēlthen, ‘he came out’, and the present hupagei, ‘he is going’, describe the whole arc of the incarnation and exaltation. Verse 4 follows directly: this knowledge leads to the towel.",
+      "words": ["G6063", "G3956", "G1325", "G5495", "G1831", "G5217"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The one who came from God and is returning to God kneels at his disciples' feet. John makes humility the expression of Jesus' divine identity rather than a veil over it, as Paul does in Philippians 2:6-8."
+        },
+        {
+          "id": "exaltation",
+          "note": "All things are already in the Son's hands. The authority he will exercise as the exalted Lord (Matthew 28:18) is the same authority he uses to serve."
+        }
+      ],
+      "refs": ["John 3:35", "John 16:28", "Matthew 11:27", "Philippians 2:6-8"]
+    },
+    {
+      "v": "4-5",
+      "context": "Jesus rises from the meal, lays aside his outer garments, ties a towel around his waist, pours water into a basin, and begins to wash the disciples' feet and wipe them with the towel. John slows the narrative to a sequence of small actions, each one a step lower.",
+      "grammar": "The verbs are mostly vivid presents: egeiretai, ‘he rises’, tithēsin ta himatia, ‘he lays aside his garments’, ballei hudōr, ‘he pours water’. Tithēmi is the verb Jesus used for laying down his life (10:11, 10:17-18), and verse 12 uses lambanō, ‘take up’, for his taking the garments again, the pair of 10:17-18: the action pictures the death and resurrection. Lention, ‘towel’, is a Latin loanword (linteum), and diezōsen heauton, ‘he girded himself’, describes the posture of a servant ready for work. Niptēr, ‘basin’, occurs only here in the New Testament. Ērxato niptein, ‘he began to wash’, suggests he moved from one disciple to the next. Ekmassein, ‘to wipe’, is the verb used of Mary wiping his feet with her hair (12:3): he does for them what she did for him.",
+      "words": ["G1453", "G5087", "G2440", "G3012", "G1241", "G3537", "G3538", "G1591"],
+      "history": "The church kept this act in its worship. The Rule of Benedict, written in the sixth century, directs the brothers who finish their week of kitchen service to wash everyone's feet (chapter 35) and the abbot and community to wash the feet of guests (chapter 53). The Seventeenth Council of Toledo in 694 ordered bishops and priests to wash feet on Holy Thursday wherever the custom had lapsed (canon 3), the earliest clear evidence of the rite on that day. The Mandatum of Maundy Thursday, and in the English monarchy the Royal Maundy, grew from it.",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "The Lord takes the place of a slave with a towel and basin. The scene makes service the defining form of authority among his followers, a point Jesus will draw out in verses 12-17 and that Peter later puts in the image of clothing oneself with humility (1 Peter 5:5)."
+        }
+      ],
+      "refs": ["Luke 12:37", "Luke 22:27", "Philippians 2:7", "1 Peter 5:5", "1 Samuel 25:41"]
+    },
+    {
+      "v": "6-7",
+      "context": "When Jesus reaches Peter, Peter recoils: the Lord washing his feet is unthinkable. Jesus answers that Peter cannot understand now but will later.",
+      "grammar": "Kurie, su mou nipteis tous podas, ‘Lord, you, my feet, are you washing?’, sets the emphatic su, ‘you’, directly beside mou, ‘my’, a collision of persons that carries Peter's shock. The present nipteis is conative, ‘are you going to wash?’, describing an action about to happen. Jesus answers with a matching contrast: ho egō poiō su ouk oidas arti, ‘what I am doing, you do not know now’, and gnōsē de meta tauta, ‘but you will understand after these things’. Meta tauta, ‘after these things’, points to the cross, the resurrection, and the Spirit's teaching (14:26), the same delayed understanding John noted in 2:22 and 12:16.",
+      "words": ["G2962G", "G4771", "G3538", "G0737", "G1097", "G6063"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus acts before he explains, and full understanding comes only after Easter. The verse admits a gap between receiving what Jesus does and grasping it, and treats the gap as normal rather than as failure."
+        }
+      ],
+      "refs": ["John 2:22", "John 12:16", "John 14:26", "John 16:12-13", "Matthew 16:22"]
+    },
+    {
+      "v": "8",
+      "context": "Peter refuses absolutely, and Jesus answers that refusal means having no share with him. The exchange turns the foot washing from an example of humility into something only Jesus can do for a disciple.",
+      "grammar": "Ou mē nipsēs mou tous podas eis ton aiōna, ‘you will certainly never wash my feet, not ever’, combines the strongest Greek negation, ou mē with the aorist subjunctive, with eis ton aiōna, ‘forever’. Jesus answers with a condition, ean mē nipsō se, ouk echeis meros met' emou, ‘unless I wash you, you have no part with me’. The object shifts from ‘my feet’ to ‘you’: the washing concerns the whole person. Meros, ‘part’ or ‘share’, is the language of inheritance, the portion of land each tribe received, and here means sharing in Jesus himself and all that is his.",
+      "words": ["G3361", "G3538", "G0165H", "G3313"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "To have a part with Jesus is to share his life and destiny, and the condition is being washed by him. Union with Christ begins with receiving his service, which is humbling for those who would rather serve than be served."
+        },
+        {
+          "id": "sanctification",
+          "note": "The washing Jesus insists on pictures the cleansing that comes from him alone, which later New Testament writers connect with his death (1 John 1:7) and with the washing of regeneration (Titus 3:5)."
+        }
+      ],
+      "refs": ["Titus 3:5", "1 John 1:7", "Hebrews 10:22", "Numbers 18:20", "Revelation 1:5"]
+    },
+    {
+      "v": "9-11",
+      "context": "Peter swings to the opposite extreme and asks to be washed all over. Jesus answers that one who has bathed needs only his feet washed, that the disciples are clean, but not all of them, and the narrator explains the exception: he knew who would betray him.",
+      "grammar": "Verse 10 turns on two verbs. Ho leloumenos, ‘the one who has bathed’, is a perfect participle of louō, ‘bathe the whole body’, describing a completed washing whose effect remains. Ouk echei chreian ei mē tous podas nipsasthai, ‘has no need except to wash his feet’, uses niptō, ‘wash a part of the body’, in the aorist middle. All' estin katharos holos, ‘but is clean all over’, and the plural humeis katharoi este, ‘you are clean’, turn from the image to the disciples. All' ouchi pantes, ‘but not all’, repeated in verse 11, marks Judas. The pluperfect ēdei gar ton paradidonta auton, ‘for he knew the one betraying him’, uses a present participle as a title, ‘his betrayer’.",
+      "words": ["G3068", "G5532", "G3538", "G2513", "G3650", "G3860"],
+      "history": "The distinction between a full bath and washing the extremities has a background in the priesthood. At their ordination Aaron and his sons were washed with water (Exodus 29:4, Leviticus 8:6), and afterward they washed their hands and feet at the bronze basin each time they entered the tent or approached the altar (Exodus 30:19-21). Some commentators read Jesus' saying against that pattern: a once-for-all cleansing, followed by repeated washing for service.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Many interpreters since Augustine have read the bath as the decisive cleansing believers receive in Christ and the foot washing as the ongoing cleansing from the sins of daily life (1 John 1:9). Others, especially those who follow the shorter text without ‘except the feet’, read one complete cleansing. Either reading holds that the clean are made clean by Jesus, not by themselves."
+        }
+      ],
+      "refs": ["John 15:3", "Exodus 30:19-21", "Ephesians 5:25-26", "1 John 1:9", "Hebrews 10:22"]
+    },
+    {
+      "v": "12-15",
+      "context": "Jesus puts his garments back on, reclines again, and explains the act. They rightly call him Teacher and Lord; if he, their Lord and Teacher, has washed their feet, they ought to wash one another's. He has given them an example to follow.",
+      "grammar": "Ginōskete ti pepoiēka humin, ‘do you know what I have done for you?’, is a question with a perfect of lasting effect. In verse 13 humeis phōneite me ho didaskalos kai ho kurios, ‘you call me the Teacher and the Lord’, uses nominatives with the article as titles, the forms of address rabbi and mar. Verse 14 reverses the order, ho kurios kai ho didaskalos, ‘the Lord and the Teacher’, putting the higher title first to sharpen the argument from greater to lesser. Kai humeis opheilete allēlōn niptein tous podas, ‘you also ought to wash one another's feet’, uses opheilō, ‘owe’ or ‘be obligated’. Hupodeigma gar edōka humin, ‘for I gave you an example’, and hina kathōs egō epoiēsa humin kai humeis poiēte, ‘that as I did for you, you also may do’, make Jesus' act a pattern, with kathōs, ‘just as’, marking both manner and ground.",
+      "words": ["G1097", "G1320", "G2962G", "G3784", "G5262", "G2531"],
+      "history": "Foot washing appears as a Christian practice early. The list of qualifications for widows enrolled for church support includes having washed the feet of the saints (1 Timothy 5:10), which shows the act had become a recognized form of humble hospitality among believers. Tertullian, around AD 200, lists offering water for the saints' feet among the services a Christian wife married to a pagan would find hindered (To His Wife 2.4).",
+      "theology": [
+        {
+          "id": "leadership",
+          "note": "Jesus does not give up his titles; he affirms them (verse 13) and then shows what they mean. Authority among his followers is measured by readiness to serve, the lesson Luke records at the same supper (Luke 22:25-27)."
+        },
+        {
+          "id": "sacraments",
+          "note": "Churches divide on whether ‘you also ought to wash one another's feet’ commands a rite. Mennonites, Brethren, several Baptist bodies, and Seventh-day Adventists keep foot washing as an ordinance; Catholic, Orthodox, Anglican, and Lutheran churches practice it on Maundy Thursday; many Protestants take the command as a pattern of humble service without a ritual obligation. Each reads the same verse faithfully, and the difference is second-order."
+        }
+      ],
+      "refs": ["Luke 22:25-27", "Mark 10:42-45", "1 Timothy 5:10", "Philippians 2:5", "1 Peter 2:21"]
+    },
+    {
+      "v": "16-17",
+      "context": "Jesus reinforces the lesson with a proverb: a servant is not greater than his master, nor a messenger than his sender. Then he adds a blessing that depends on doing, not just knowing.",
+      "grammar": "Ouk estin doulos meizōn tou kuriou autou, ‘a slave is not greater than his master’, is paired with oude apostolos meizōn tou pempsantos auton, ‘nor is one sent greater than the one who sent him’. Apostolos, the word for an apostle, occurs only here in John, in its basic sense of a messenger or envoy. Verse 17 joins two conditions of different kinds: ei tauta oidate, ‘if you know these things’, uses ei with the indicative, assuming it is true, while makarioi este ean poiēte auta, ‘you are blessed if you do them’, uses ean with the subjunctive, leaving the doing open. They know; whether they will act is the question.",
+      "words": ["G1401", "G3173", "G0652", "G3992", "G6063", "G3107", "G4160G"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "The blessing rests on doing what is known, a theme that runs from Deuteronomy through the wisdom books to James (James 1:22-25). Knowledge of Jesus' example that does not become practice misses the blessing he promises."
+        }
+      ],
+      "parallels": ["Matthew 10:24", "Luke 6:40"],
+      "refs": ["John 15:20", "James 1:22-25", "Matthew 7:24-27", "Luke 11:28"]
+    },
+    {
+      "v": "18",
+      "context": "The blessing does not apply to all of them. Jesus knows whom he has chosen, and the betrayal fulfills Psalm 41: one who shares his bread has turned against him.",
+      "grammar": "Ou peri pantōn humōn legō, ‘I am not speaking about all of you’. Egō oida tinas exelexamēn, ‘I know whom I chose’, uses the aorist middle of eklegomai, as in 6:70, where Jesus said he chose the Twelve and one of them is a devil. All' hina hē graphē plērōthē, ‘but so that the Scripture may be fulfilled’, is elliptical: something like ‘this happened’ must be supplied. The quotation uses ho trōgōn mou ton arton, ‘the one eating my bread’. Trōgō, ‘chew’ or ‘eat’, is the verb of 6:54-58, where Jesus spoke of eating his flesh, so that the betrayer is one who ate the bread of the table fellowship. Epēren ep' eme tēn pternan autou, ‘lifted up his heel against me’, is the aorist of epairō.",
+      "words": ["G1586", "G1124", "G4137", "G5176", "G0740", "G1869", "G4418"],
+      "ot": [
+        {
+          "ref": "Psalm 41:9",
+          "note": "In the Hebrew (41:10) the psalmist, sick and surrounded by enemies, laments that even his friend, ‘the man of my peace’ whom he trusted, who ate his bread, has made his heel great against him. The Septuagint (40:10) reads ho esthiōn artous mou emegalunen ep' eme pternismon, ‘the one eating my loaves magnified tripping against me’. John's wording departs from both: he omits the trusted friend, uses trōgō for eating, and has ‘lifted up his heel’. The psalm is traditionally David's, and many interpreters see behind it the betrayal of Ahithophel, David's counselor who joined Absalom and later hanged himself (2 Samuel 15:12, 17:23), a pattern the Gospels see repeated in Judas. In the psalm the betrayed man trusts God to raise him up (41:10), and Jesus quotes it on the night before he is raised."
+        }
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "Jesus' choice of the Twelve included Judas, and Jesus knew it (6:70-71). John does not explain how divine choosing and human betrayal fit together; he insists that the betrayal fell within the Father's purpose revealed in Scripture and that Judas remained responsible."
+        }
+      ],
+      "refs": ["John 6:70-71", "John 17:12", "2 Samuel 17:23", "Acts 1:16-20", "Mark 14:18"]
+    },
+    {
+      "v": "19-20",
+      "context": "Jesus tells them in advance so that the betrayal will confirm rather than shake their faith: when it happens they will believe that ‘I am’. Then he adds a promise that those he sends carry his authority.",
+      "grammar": "Ap' arti legō humin pro tou genesthai, ‘from now on I tell you before it happens’. Hina pisteusēte hotan genētai hoti egō eimi, ‘so that you may believe, when it happens, that I am’, has no predicate after egō eimi; the BSB supplies ‘He’, but the absolute form echoes the divine self-naming of Isaiah (8:24, 8:28, 8:58). Prediction serves revelation: foreknowledge of the betrayal shows who Jesus is. Verse 20 moves to mission: ho lambanōn an tina pempsō eme lambanei, ‘whoever receives anyone I send receives me’, and ho de eme lambanōn lambanei ton pempsanta me, ‘and whoever receives me receives the one who sent me’.",
+      "words": ["G0737", "G1096", "G4100", "G1473", "G1510", "G2983", "G3992"],
+      "ot": [
+        {
+          "ref": "Isaiah 43:10",
+          "note": "In the Hebrew the LORD calls Israel his witnesses and his chosen servant, ‘so that you may know and believe me and understand that I am he’ (ki-ani hu). The Septuagint renders the last words hoti egō eimi, ‘that I am’, and the same verse says hon exelexamēn, ‘whom I have chosen’. Both phrases appear in John 13:18-19: Jesus knows whom he has chosen, and he speaks so that they may believe that I am. In Isaiah the proof of the LORD's uniqueness is that he announces events before they happen (Isaiah 41:22-23, 46:9-10). Jesus claims the same prerogative by foretelling the betrayal."
+        }
+      ],
+      "theology": [
+        {
+          "id": "names-of-god",
+          "note": "Jesus applies to himself the self-designation by which the LORD in Isaiah distinguishes himself from idols. The betrayal, which might seem to disprove his claims, is turned into evidence for them."
+        }
+      ],
+      "parallels": ["Matthew 10:40", "Luke 10:16"],
+      "refs": ["John 8:24", "John 8:28", "John 8:58", "John 14:29", "Isaiah 46:9-10"]
+    },
+    {
+      "v": "21-22",
+      "context": "Jesus, troubled in spirit, announces solemnly that one of them will betray him. The disciples look at one another, uncertain whom he means. No one suspects Judas.",
+      "grammar": "Etarachthē tō pneumati, ‘he was troubled in spirit’, is an aorist passive of tarassō, the verb used of Jesus at Lazarus's tomb (11:33) and before the hour (12:27). Emarturēsen, ‘he testified’, gives the words the weight of formal witness. Heis ex humōn paradōsei me, ‘one of you will betray me’, puts heis ex humōn, ‘one of you’, first. In verse 22 eblepon eis allēlous, ‘they kept looking at one another’, is an imperfect, and aporoumenoi peri tinos legei, ‘being at a loss about whom he meant’, uses aporeō, ‘be perplexed’.",
+      "words": ["G5015", "G4151G", "G3140", "G3860", "G0991", "G0639"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus knows the betrayal is coming and has foretold it, yet he is troubled by it. Foreknowledge does not make him indifferent; betrayal by a friend wounds him as it would any person."
+        }
+      ],
+      "parallels": ["Mark 14:18-19", "Matthew 26:21-22", "Luke 22:21-23"],
+      "text": "Each Gospel tells the reaction differently. In Mark and Matthew each disciple asks ‘Surely not I?’, and Matthew adds Judas's own question and Jesus' reply (Matthew 26:25). In Luke they discuss among themselves which of them it could be, and Luke places the announcement after the bread and cup. John alone has the silent looks and then the private question through the beloved disciple.",
+      "refs": ["John 11:33", "John 12:27", "John 6:64", "Psalm 55:12-14"]
+    },
+    {
+      "v": "23",
+      "context": "The disciple whom Jesus loved appears here for the first time under that description, reclining next to Jesus. He is never named in the Gospel, and his identity is one of the longest-running questions in the study of John.",
+      "grammar": "Ēn anakeimenos heis ek tōn mathētōn autou en tō kolpō tou Iēsou, ‘one of his disciples was reclining in the bosom of Jesus’. En tō kolpō, ‘at the breast’ or ‘in the lap’, describes his position at the table, lying to Jesus' right so that his head was near Jesus' chest, and it echoes 1:18, where the Son is eis ton kolpon tou patros, ‘at the Father's side’. Hon ēgapa ho Iēsous, ‘whom Jesus loved’, uses an imperfect of continuing love. The description does not claim that Jesus loved him and not the others (13:1); it names him by his relationship rather than his name.",
+      "words": ["G0345", "G3101", "G2859", "G0025"],
+      "history": "The church's earliest identifications point to John son of Zebedee. Irenaeus, around 180, says that John, the disciple who leaned on the Lord's breast, published the Gospel at Ephesus (Against Heresies 3.1.1), and Polycrates, bishop of Ephesus in the 190s, speaks in a letter preserved by Eusebius of John who reclined on the Lord's breast and was buried at Ephesus (Ecclesiastical History 5.24.3). Modern scholars have proposed others. Martin Hengel (The Johannine Question, 1989) and Richard Bauckham (Jesus and the Eyewitnesses, 2006) argue for John the Elder, a Jerusalem disciple outside the Twelve. Ben Witherington III has argued for Lazarus, the one man the Gospel explicitly says Jesus loved (11:3, 11:5). James Charlesworth (The Beloved Disciple, 1995) argued for Thomas. Rudolf Bultmann's commentary (1941) read the figure as a symbol, representing Gentile Christianity. No proposal has won general agreement, and the Gospel's own reticence seems deliberate.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "The Gospel's chief witness is identified not by office or achievement but by being loved by Jesus. Whoever he was, the title presents discipleship as first of all receiving Christ's love, which every reader is invited to share."
+        }
+      ],
+      "refs": ["John 1:18", "John 19:26-27", "John 20:2-8", "John 21:7", "John 21:20-24"]
+    },
+    {
+      "v": "24-25",
+      "context": "Peter signals to the beloved disciple to find out whom Jesus means. The disciple leans back against Jesus and asks quietly. The scene shows the seating and the intimacy of the question.",
+      "grammar": "Neuei, ‘he nods’ or ‘signals’, is a vivid present. The best text continues puthesthai tis an eiē peri hou legei, ‘to inquire who it might be of whom he spoke’, using the optative eiē with an, a mood that had become rare in New Testament Greek and appears here in an indirect question, in the more literary style of Luke-Acts. Verse 25 uses anapesōn ekeinos houtōs epi to stēthos tou Iēsou, ‘that one, leaning back thus on Jesus' chest’. The aorist participle of anapiptō describes the movement of leaning back, and stēthos, ‘chest’, is a different word from kolpos in verse 23; houtōs, ‘thus’, pictures the posture. His question is brief: kurie, tis estin, ‘Lord, who is it?’",
+      "words": ["G3506", "G4441", "G1510", "G0377", "G4738"],
+      "text": "Codex Vaticanus and some other early witnesses, followed by Westcott and Hort, read instead ‘and says to him, Tell who it is’, so that Peter speaks rather than only nodding. Codex Sinaiticus combines the two readings. Most modern editions print the optative question, ‘to inquire who it might be’, which the BSB follows.",
+      "refs": ["John 1:18", "John 21:20", "Acts 21:33", "Luke 22:23"]
+    },
+    {
+      "v": "26-27",
+      "context": "Jesus identifies the betrayer by an act of hospitality: the one to whom he gives the dipped morsel. He gives it to Judas, and as Judas takes it Satan enters him. Jesus tells him to do quickly what he is going to do.",
+      "grammar": "Ekeinos estin hō egō bapsō to psōmion kai dōsō autō, ‘it is the one for whom I will dip the morsel and give it to him’, uses future indicatives. The narrative then uses presents: bapsas oun to psōmion lambanei kai didōsin Iouda, ‘having dipped the morsel, he takes it and gives it to Judas’, with lambanei, ‘takes’, found in some early manuscripts and printed in the Nestle-Aland text but absent from the later majority text. Verse 27 marks the turning point with meta to psōmion tote eisēlthen eis ekeinon ho satanas, ‘after the morsel, then Satan entered into that man’; tote, ‘then’, ties the entry to the moment of receiving. Ho poieis poiēson tachion, ‘what you are doing, do more quickly’, uses the comparative tachion, which can mean ‘more quickly’ or simply ‘quickly’; the present poieis treats the betrayal as already under way.",
+      "words": ["G0911", "G5596", "G1325", "G2983", "G1525", "G4567", "G5032"],
+      "history": "Sharing a morsel dipped in a common dish was a sign of fellowship at table. In the book of Ruth, Boaz invites Ruth, a foreign gleaner, to come and dip her piece of bread in the vinegar, a gesture of favor that begins his care for her (Ruth 2:14). Whether or not giving a morsel was a fixed mark of honor, Jesus' gesture is an act of friendship offered to the man he knows will betray him, and the Synoptic accounts describe the betrayer as one who dips in the same dish (Mark 14:20).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Satan enters Judas as he takes the morsel, at the moment an offer of friendship is received without repentance. John does not present Judas as a helpless tool: the devil's entry follows the heart's earlier yielding (13:2), and Judas acts in the night by his own choice."
+        }
+      ],
+      "parallels": ["Mark 14:20", "Matthew 26:23-25", "Luke 22:3"],
+      "refs": ["Ruth 2:14", "John 13:2", "Luke 22:3", "Psalm 41:9"]
+    },
+    {
+      "v": "28-30",
+      "context": "No one at the table understands. Some assume Jesus has sent Judas to buy what is needed for the feast or to give something to the poor. Judas takes the morsel and goes out at once, and John adds four words in Greek: it was night.",
+      "grammar": "Touto oudeis egnō tōn anakeimenōn, ‘no one of those reclining understood this’, includes, it seems, the beloved disciple, who heard the sign but did not grasp its timing. Edokoun, ‘they were supposing’, is imperfect. Agorason hōn chreian echomen eis tēn heortēn, ‘buy what we need for the feast’, uses an aorist imperative, and ē tois ptōchois hina ti dō, ‘or that he should give something to the poor’, a purpose clause. Verse 30 uses labōn oun to psōmion ekeinos exēlthen euthus, ‘so having taken the morsel, that one went out immediately’, and ēn de nux, ‘and it was night’, a short clause of great weight. In John night is the realm of darkness opposed to the light (3:2, 9:4, 11:10).",
+      "words": ["G0345", "G1380", "G1101", "G0059", "G1859", "G4434", "G2112", "G3571"],
+      "history": "The disciples' assumptions bear on the dating of the meal. If this were the Passover night itself, the first day of the feast, buying supplies would have been difficult, though not impossible; if the feast was still to come, as John's chronology suggests (13:1, 18:28), errands for the feast and gifts to the poor, customary at Passover (m. Pesahim 10:1), make easy sense. Interpreters on both sides of the chronology question have used this verse, and it does not settle the matter by itself.",
+      "refs": ["John 12:6", "John 3:19-20", "John 11:10", "Luke 22:53", "John 1:5"]
+    },
+    {
+      "v": "31-32",
+      "context": "The moment Judas leaves, Jesus speaks of glory. The departure of the betrayer sets in motion the hour, and Jesus speaks of it as already happening: the Son of Man is glorified, God is glorified in him, and God will glorify him at once.",
+      "grammar": "Nun edoxasthē ho huios tou anthrōpou, ‘now the Son of Man has been glorified’, uses an aorist for an event still ahead; grammarians call this proleptic, speaking of what is certain as if already done, or read it as viewing the whole hour, now begun, as a single act. Kai ho theos edoxasthē en autō, ‘and God has been glorified in him’, adds the Father. Verse 32 moves to the future: kai ho theos doxasei auton en autō, ‘God will also glorify him in himself’, where the unaccented autō in the early manuscripts can be read as ‘in him’ or, with a rough breathing, ‘in himself’. Kai euthus doxasei auton, ‘and will glorify him at once’, points to the nearness of the cross and resurrection. The verb doxazō occurs five times in two verses.",
+      "words": ["G3568", "G1392", "G5207", "G2316", "G2112"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "Glory begins the moment the betrayer goes out. The Father and the Son are glorified in each other, and the cross is where that mutual glory is shown to the world."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father is glorified in the Son and glorifies the Son in himself. John describes a relationship of mutual honor within God, the ground for Jesus' prayer in 17:1-5 and for the church's confession that the Son shares the Father's glory."
+        }
+      ],
+      "refs": ["John 12:23", "John 17:1-5", "Isaiah 49:3", "Philippians 2:9-11", "John 7:39"]
+    },
+    {
+      "v": "33",
+      "context": "Jesus turns to the disciples with tenderness. He will be with them only a little longer; they will look for him but cannot come where he is going, as he told the Judean leaders. The words prepare for Peter's question in verse 36 and for the promises of chapter 14.",
+      "grammar": "Teknia, ‘little children’, is a diminutive of teknon, used only here in the Gospel but seven times in 1 John. Eti mikron meth' humōn eimi, ‘a little while longer I am with you’. Zētēsete me, ‘you will seek me’, is a future. Kathōs eipon tois Ioudaiois hoti hopou egō hupagō humeis ou dunasthe elthein, ‘as I said to the Jews, where I am going you cannot come’, quotes 7:34 and 8:21, but with a difference: to his opponents Jesus added that they would die in their sins; to the disciples he adds arti, ‘now’, and in verse 36 promises that Peter will follow later.",
+      "words": ["G5040", "G3398", "G2212", "G5217", "G1410", "G0737"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The same words spoken to opponents and to disciples mean different things. For the disciples the separation is temporary, and Jesus will explain in 14:2-3 that he goes to prepare a place and will come back for them."
+        }
+      ],
+      "refs": ["John 7:33-34", "John 8:21", "John 14:2-3", "John 16:16", "1 John 2:1"]
+    },
+    {
+      "v": "34-35",
+      "context": "Between the announcements of his departure, Jesus gives the command that will govern his community: love one another as he has loved them. Their love will be the sign by which everyone recognizes them as his disciples.",
+      "grammar": "Entolēn kainēn didōmi humin, ‘a new commandment I give you’, puts entolēn kainēn, ‘a new commandment’, first for emphasis. Hina agapate allēlous, ‘that you love one another’, gives the content of the command with a present subjunctive of continuing love. Kathōs ēgapēsa humas, ‘just as I loved you’, uses an aorist that looks at his love as a whole, including the foot washing and the cross. Kathōs can mean ‘in the same way as’ or ‘because’, and here it is both: his love is the pattern and the ground. Verse 35 names the result: en toutō gnōsontai pantes hoti emoi mathētai este, ‘by this all will know that you are my disciples’, ean agapēn echēte en allēlois, ‘if you have love among one another’.",
+      "words": ["G1785", "G2537", "G0025", "G2531", "G0026", "G1097", "G3101"],
+      "ot": [
+        {
+          "ref": "Leviticus 19:18",
+          "note": "The Hebrew commands, ‘you shall love your neighbor as yourself’ (ve'ahavta le-re'akha kamokha), and the Septuagint renders it agapēseis ton plēsion sou hōs seauton. Jesus had named it the second great commandment (Mark 12:31). The new commandment is not a quotation but a transformation: the measure changes from ‘as yourself’ to ‘as I have loved you’, and the circle named is ‘one another’, the community of disciples, as the place where that love is seen. 1 John 2:7-8 reflects on the command as both old and new."
+        }
+      ],
+      "history": "The early church remembered the command as its identifying mark. Tertullian, writing his Apology around AD 197, reports that pagans pointed at Christians and remarked how they loved one another (Apology 39.7). Jerome, in his commentary on Galatians (on 6:10), tells the story that the aged apostle John at Ephesus, too weak to preach, would only say, ‘Little children, love one another’, and when asked why, answered that it was the Lord's command and enough if it was done. The Latin of verse 34, mandatum novum, gave Maundy Thursday its name.",
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus' love is both the standard and the source of his disciples' love. The command asks them to love as those who have first been loved, which is why it comes after the foot washing and before the cross."
+        },
+        {
+          "id": "church",
+          "note": "The visible sign of the community is not its doctrine, power, or numbers but its mutual love. The world is meant to recognize Jesus in how his people treat one another (17:21-23)."
+        }
+      ],
+      "refs": ["1 John 2:7-8", "1 John 3:16", "1 John 4:11", "John 15:12-13", "John 17:21-23"]
+    },
+    {
+      "v": "36-38",
+      "context": "Peter fixes on the departure: where is Jesus going, and why can't he follow now? He promises to lay down his life for Jesus. Jesus turns the promise into a question and foretells that Peter will deny him three times before the rooster crows. The chapter that began with love to the end ends with the warning of failure.",
+      "grammar": "Kurie, pou hupageis, ‘Lord, where are you going?’, was rendered in the Latin Vulgate Domine, quo vadis. Jesus answers hopou hupagō ou dunasai moi nun akolouthēsai, akolouthēseis de husteron, ‘where I am going you cannot follow me now, but you will follow later’, a promise fulfilled when Peter follows him to death (21:18-19). Peter's pledge, tēn psuchēn mou huper sou thēsō, ‘I will lay down my life for you’, uses the words of the good shepherd, tithēmi tēn psuchēn huper, ‘lay down one's life for’ (10:11, 10:15). Jesus repeats them back as a question, tēn psuchēn sou huper emou thēseis, ‘your life for me you will lay down?’ In truth the shepherd will lay down his life for Peter. The prediction uses ou mē alektōr phōnēsē heōs hou arnēsē me tris, ‘a rooster will certainly not crow until you deny me three times’.",
+      "words": ["G5217", "G0190", "G5306", "G5590H", "G5228", "G5087", "G0220", "G0720", "G5151"],
+      "history": "The Latin question Domine, quo vadis gave its name to a legend in the apocryphal Acts of Peter (chapter 35), written in the late second century, in which Peter, fleeing persecution in Rome, meets Jesus on the road and asks where he is going; Jesus answers that he is going to Rome to be crucified again, and Peter turns back to his own martyrdom. 1 Clement 5:4, written from Rome near the end of the first century, already remembers Peter's martyrdom.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Jesus foretells Peter's failure without withdrawing his promise that Peter will follow later. The denial will be real, but it is not the end of the story: the risen Jesus restores Peter by a charcoal fire with a threefold question matching the threefold denial (21:15-19)."
+        }
+      ],
+      "parallels": ["Mark 14:29-31", "Matthew 26:33-35", "Luke 22:31-34"],
+      "text": "The accounts differ in setting and detail. Mark and Matthew place the prediction on the way to the Mount of Olives after the meal, and in Mark the rooster crows twice (Mark 14:30, 14:72). Luke, like John, sets it at the table and adds that Jesus prayed for Peter that his faith would not fail and that he would strengthen his brothers (Luke 22:32).",
+      "refs": ["John 10:11", "John 18:25-27", "John 21:15-19", "Luke 22:32"]
+    }
+  ]
+}

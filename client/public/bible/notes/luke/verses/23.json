@@ -1,0 +1,999 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The council rises as one body and takes Jesus to Pilate. In front of the Roman governor the charge changes from a religious question to three political accusations, framed to alarm Rome: misleading the nation, forbidding tribute to Caesar, and claiming to be Messiah, a king.",
+      "grammar": "Anastan hapan to plēthos autōn, ‘the whole multitude of them having risen’, uses a singular participle with a collective noun: the council acts as one. Ērxanto katēgorein, ‘they began to accuse’, introduces the charge sheet, three accusative participles hanging on touton heuramen, ‘we found this man’: diastrephonta, ‘perverting, misleading’, kōluonta, ‘forbidding’, and legonta, ‘saying’. Diastrephō is the verb Jesus used of a ‘perverse generation’ (9:41). The last charge, christon basilea einai, sets ‘Christ’ and ‘king’ side by side, as if translating the Jewish title for a Roman ear: to Pilate, a messiah is a king, and a king not appointed by Caesar is a rebel.",
+      "words": [
+        "G4128",
+        "G2723",
+        "G2147",
+        "G1294",
+        "G1484",
+        "G2967",
+        "G5411",
+        "G2541J",
+        "G5547",
+        "G0935"
+      ],
+      "history": "The tribute charge touched Rome's rawest nerve in Judea. When Judea came under direct Roman rule in AD 6 and a census was taken for taxation, Judas the Galilean raised a revolt, teaching that paying tribute to Rome meant accepting mortal masters in place of God (Josephus, Jewish War 2.118; Antiquities 18.1-10; compare Acts 5:37). The charge that Jesus forbade tribute is false by Luke's own account, since Jesus had said ‘give to Caesar what is Caesar's’ (20:25), using the same word for tribute, phoros (20:22).",
+      "theology": [
+        {
+          "id": "state",
+          "note": "Jesus is accused of being a political threat to Caesar, and Luke shows the accusation to be false. His kingship is real but is not a rival bid for Caesar's throne. Acts records the same charge against his followers, that they act against Caesar's decrees by saying there is another king, Jesus (Acts 17:7)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:1-2",
+        "Matthew 27:11-12",
+        "Mark 15:1-3",
+        "John 18:28-32"
+      ],
+      "refs": [
+        "Luke 20:20-25",
+        "Acts 17:7",
+        "Acts 24:5",
+        "Acts 5:37"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "Pilate asks the question that matters to Rome, and Jesus answers with the same qualified affirmation he gave the council. Pilate then pronounces the first of his three verdicts of innocence. Luke compresses the exchange: John gives the conversation at length (John 18:33-38).",
+      "grammar": "Su ei ho basileus tōn Ioudaiōn, ‘are you the king of the Jews’, puts the emphatic su first, perhaps with a note of disbelief at the bound prisoner before him. Jesus answers su legeis, ‘you say so’, the same kind of answer as 22:70: not a denial, not an acceptance of Pilate's meaning. Pilate's verdict uses aition, a neuter adjective meaning ‘ground for a charge, guilt’: ouden heuriskō aition, ‘I find no guilt’. The same word returns in verses 14 and 22, binding the three verdicts together.",
+      "words": [
+        "G4091",
+        "G2065",
+        "G0935",
+        "G2453",
+        "G3004G",
+        "G2147",
+        "G0159"
+      ],
+      "history": "A provincial governor judged cases like this personally, hearing the accusers, questioning the accused, and giving sentence himself, a procedure Roman historians call cognitio. A. N. Sherwin-White's study (Roman Society and Roman Law in the New Testament, 1963) showed that the Gospel accounts of this procedure, including the accused's right to answer and the governor's freedom to choose the outcome, fit what is known of Roman provincial practice in the first century.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Pilate's first verdict begins the chapter's steady insistence that Jesus dies innocent. Luke wants the reader to know that the one crucified had done nothing to deserve it, which is the ground for the exchange the chapter narrates: the innocent in place of the guilty."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:11",
+        "Mark 15:2",
+        "John 18:33-38"
+      ],
+      "refs": [
+        "Luke 22:70",
+        "John 18:38",
+        "Acts 13:28",
+        "1 Peter 2:22"
+      ]
+    },
+    {
+      "v": "5-7",
+      "context": "The accusers press harder: his teaching stirs up the people from Galilee to Jerusalem. The mention of Galilee gives Pilate an idea. He learns that Jesus comes from Herod's territory and sends him to Herod, who happens to be in Jerusalem.",
+      "grammar": "Epischuon, ‘they were insisting’, is an imperfect of a verb that occurs only here in the New Testament, ‘to grow stronger’, and so ‘to press the point’. Anaseiei ton laon, ‘he stirs up the people’, uses a verb for shaking up, the same one Mark uses when the chief priests stir up the crowd (Mark 15:11). Arxamenos apo tēs Galilaias heōs hōde, ‘beginning from Galilee to here’, is almost the phrase Peter uses to summarize Jesus' ministry to Cornelius (Acts 10:37): the accusation unwittingly gives the outline of Luke's Gospel. In verse 7 anepempsen, ‘he sent up’, is a technical term for referring a case to another authority; Festus uses the same verb of sending Paul to Caesar (Acts 25:21).",
+      "words": [
+        "G2001",
+        "G0383",
+        "G2992",
+        "G1321",
+        "G2449",
+        "G1056G",
+        "G1057",
+        "G1849",
+        "G0375",
+        "G2264H"
+      ],
+      "history": "Herod Antipas ruled Galilee and Perea, so Jesus of Nazareth was his subject. Luke says only that Antipas was in Jerusalem ‘in those days’, presumably for the Passover. The chapter note sets out the legal point: Pilate did not have to send Jesus to him, since the offense was alleged in Judea, and the transfer was a gesture of courtesy, or an attempt to be rid of an awkward case.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Pilate's maneuver looks like the ordinary politics of an uneasy governor. Luke's second volume reads it as part of something larger: Herod and Pilate were gathered together against the Lord's anointed, to do what God's hand and plan had decided beforehand (Acts 4:27-28)."
+        }
+      ],
+      "refs": [
+        "Acts 10:37",
+        "Acts 25:21",
+        "Luke 3:1",
+        "Luke 13:31-32"
+      ]
+    },
+    {
+      "v": "8-10",
+      "context": "Herod is delighted. He has wanted to see Jesus for a long time and hopes for a miracle. He questions him at length, and Jesus says nothing at all, while the chief priests and scribes stand by accusing him fiercely.",
+      "grammar": "Echarē lian, ‘he was very glad’, uses the same verb as the priests' gladness at Judas's offer (22:5). Ēn gar ex hikanōn chronōn thelōn idein auton is a periphrastic imperfect, ‘for he had been wanting to see him for a long time’, and ēlpizen ti sēmeion idein, ‘he was hoping to see some sign’, names his motive. In verse 9 epērōta ... en logois hikanois, ‘he kept questioning him with many words’, is set against autos de ouden apekrinato autō, ‘but he answered him nothing’: the emphatic autos, ‘he himself’, and the flat ouden, ‘nothing’, make the silence loud. Eutonōs, ‘vehemently’, occurs in the New Testament only here and in Acts 18:28.",
+      "words": [
+        "G5463",
+        "G2425",
+        "G2309",
+        "G1679",
+        "G4592",
+        "G1905",
+        "G0611",
+        "G2476",
+        "G2159",
+        "G2723"
+      ],
+      "history": "Herod's wish goes back to 9:7-9, where, having beheaded John, he was perplexed by reports of Jesus and kept trying to see him. Pharisees later warned that he wanted to kill Jesus (13:31). Luke had sources close to Herod's household, as the chapter note says, which may explain his knowledge of this scene.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus had said that an evil generation seeks a sign and will be given none but the sign of Jonah (11:29-30). Before Herod he refuses to perform. Revelation in Luke is given to those who seek God, not to those who want entertainment, and silence can be a form of judgment."
+        }
+      ],
+      "refs": [
+        "Luke 9:7-9",
+        "Luke 11:29-30",
+        "Isaiah 53:7",
+        "Acts 8:32"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "Herod and his soldiers treat Jesus with contempt, dress him in a splendid robe, and send him back to Pilate. That day the two rulers, previously enemies, become friends. The one outcome of the hearing is a new alliance between the powers that condemn Jesus.",
+      "grammar": "Exouthenēsas, ‘having treated him with contempt’, is the verb Peter uses in Acts 4:11 when he applies Psalm 118 to Jesus as the stone ‘rejected by you builders’; Luke has chosen that word there in place of the Septuagint's apodokimazō, as if thinking of this scene. Strateumasin, literally ‘armies’, here means Herod's bodyguard. Peribalōn esthēta lampran, ‘having clothed him in bright clothing’, uses lampros, ‘shining, splendid’. Verse 12 uses egenonto philoi ... met' allēlōn, ‘they became friends with each other’, and explains with a periphrastic: proupērchon gar en echthra ontes, ‘for before they had been at enmity’. The prefix pro- in proupērchon underlines the change.",
+      "words": [
+        "G1848",
+        "G4753",
+        "G1702",
+        "G2066",
+        "G2986",
+        "G5384",
+        "G2189",
+        "G4391"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The friendship of Herod and Pilate is the only thing their hearings produce, and the church in Acts saw in it the fulfillment of Psalm 2, the kings and rulers gathered against the Lord's Anointed (Acts 4:25-27). Their cooperation serves the purpose they oppose."
+        }
+      ],
+      "refs": [
+        "Acts 4:11",
+        "Acts 4:25-28",
+        "Psalm 2:1-2",
+        "Luke 18:9"
+      ]
+    },
+    {
+      "v": "13-16",
+      "context": "Pilate summons the chief priests, the rulers, and the people and sums up the case: he has examined Jesus and found no basis for the charges, and neither has Herod. He proposes to discipline Jesus and release him. This is the second declaration of innocence, now made public and supported by a second witness.",
+      "grammar": "Sugkalesamenos, ‘having called together’, gathers three groups, and Luke names ‘the people’ (ton laon) alongside the rulers for the first time in the trial. The charge is restated with apostrephonta, ‘turning away’, the people from their allegiance, a variation on verse 2. Anakrinas, ‘having examined’, is a term for judicial investigation (Acts 4:9, 12:19, 24:8, 28:18). Verse 15 closes with a careful legal sentence: ouden axion thanatou estin pepragmenon autō, ‘nothing worthy of death has been done by him’, a perfect passive with a dative of the agent, a classical construction. In verse 16 paideusas oun auton apolusō, ‘having disciplined him, I will release him’, uses paideuō, which the chapter note explains.",
+      "words": [
+        "G4779",
+        "G0758",
+        "G2992",
+        "G0654",
+        "G0350",
+        "G0514",
+        "G2288",
+        "G4238",
+        "G3811",
+        "G0630G"
+      ],
+      "text": "In verse 15 the earliest manuscripts, followed by modern editions, read ‘for he sent him back to us’. Many later manuscripts, followed by the King James Version, read ‘for I sent you to him’. The sense is similar (Herod had the chance to condemn Jesus and did not), but the earlier reading is more natural after Herod has just sent Jesus back.",
+      "history": "The Law required two or three witnesses to establish a matter (Deuteronomy 19:15). Luke's Pilate is careful to cite Herod's finding alongside his own, so that two rulers, one Roman and one Jewish, stand as witnesses that Jesus has done nothing deserving death. Paul's trial in Acts has the same shape, when Festus and Agrippa II agree that he has done nothing deserving death or chains (Acts 26:31-32).",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Two authorities with every reason to find fault find none. Luke's repeated verdicts of innocence prepare for the confession of the criminal (verse 41) and the centurion (verse 47), and they make plain that the death that follows is not a penalty Jesus has earned."
+        }
+      ],
+      "parallels": [
+        "John 18:38",
+        "John 19:4"
+      ],
+      "refs": [
+        "Deuteronomy 19:15",
+        "Acts 26:31-32",
+        "Acts 3:13"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "Most modern Bibles skip from verse 16 to verse 18, placing the words of verse 17 in a footnote. The verse, found in the King James Version, explains that Pilate was obliged to release one prisoner to the people at the feast, and so accounts for the crowd's demand for Barabbas that follows.",
+      "text": "The verse, ‘For of necessity he must release one unto them at the feast’ (KJV), is absent from P75, Vaticanus, Alexandrinus, and other early witnesses, and Codex Bezae has a similar sentence after verse 19 instead. That it appears in different places, and in wording close to Mark 15:6 and Matthew 27:15, marks it as an explanatory note added by scribes who felt that the crowd's cry in verse 18 needed a reason. Without it, Luke simply does not explain the custom, and the demand for Barabbas comes as an abrupt shout. The notes on Mark 15:6-8 discuss the historical evidence for a Passover release.",
+      "parallels": [
+        "Matthew 27:15",
+        "Mark 15:6",
+        "John 18:39"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "The crowd shouts with one voice: away with this man, release Barabbas. Luke pauses to tell who Barabbas is, a man imprisoned for an insurrection in the city and for murder, so that the reader sees exactly what the choice is.",
+      "grammar": "Anekragon pamplēthei, ‘they cried out all together’, uses an adverb that occurs only here in the New Testament. Aire touton, ‘take this man away’, is a present imperative, a demand that he be removed and killed; the same cry, aire auton, will be raised against Paul in Jerusalem (Acts 21:36, 22:22). Apoluson hēmin, ‘release to us’, is an aorist imperative. Verse 19 is a relative clause, hostis ēn ... blētheis en tē phulakē, ‘who had been thrown into prison’, with the reasons given by dia with the accusative: dia stasin ... kai phonon, ‘because of an insurrection ... and murder’. Stasis means an uprising, a word Luke uses in Acts for riots and serious disputes (Acts 19:40, 24:5).",
+      "words": [
+        "G0349",
+        "G3826",
+        "G0142",
+        "G0630G",
+        "G0912",
+        "G4714",
+        "G4172",
+        "G5408",
+        "G5438G"
+      ],
+      "history": "The name Barabbas is Aramaic, bar Abba, ‘son of the father’, as the notes on Mark 15:6-8 and John 18:40 explain, and some manuscripts of Matthew call him Jesus Barabbas. Luke's description matches Mark's, who says he was held with rebels who had committed murder in the insurrection (Mark 15:7). Nothing else is known of this uprising; Josephus reports several disturbances under Pilate, but none that can be identified with it.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Peter will say to the people of Jerusalem, “You rejected the Holy and Righteous One and asked that a murderer be released to you” (Acts 3:14). Luke tells the scene so that the exchange is visible: the man guilty of the charge Jesus is falsely accused of, insurrection, goes free, and Jesus takes his place."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:20-21",
+        "Mark 15:11",
+        "John 18:40"
+      ],
+      "refs": [
+        "Acts 3:14",
+        "Acts 21:36",
+        "Acts 22:22",
+        "Mark 15:7"
+      ]
+    },
+    {
+      "v": "20-23",
+      "context": "Pilate, wanting to release Jesus, appeals to the crowd again. They keep shouting “Crucify Him! Crucify Him!” He declares Jesus innocent a third time and repeats his offer to discipline and release him, but their loud voices prevail.",
+      "grammar": "Palin prosephōnēsen autois, thelōn apolusai ton Iēsoun, ‘again he called to them, wishing to release Jesus’, states Pilate's intention openly. The crowd's reply is an imperfect, epephōnoun, ‘they kept shouting’, with staurou staurou auton, a doubled present imperative, ‘crucify, crucify him’. Verse 22 counts: triton, ‘a third time’. Ti gar kakon epoiēsen houtos, ‘why, what evil has this man done’, uses gar to mark incredulity. Verse 23 builds a crescendo with two more imperfects: epekeinto phōnais megalais, ‘they kept pressing with loud voices’, and katischuon hai phōnai autōn, ‘their voices were prevailing’. Katischuō, ‘to overpower’, is the verb Jesus used of the gates of Hades in Matthew 16:18.",
+      "words": [
+        "G4377",
+        "G2309",
+        "G0630G",
+        "G2019",
+        "G4717",
+        "G5154",
+        "G2556G",
+        "G0159",
+        "G1945",
+        "G5456G",
+        "G2729"
+      ],
+      "text": "Many later manuscripts, followed by the King James Version, add at the end of verse 23 ‘and of the chief priests’ (‘the voices of them and of the chief priests prevailed’). The earliest manuscripts lack the words, which were probably added to lay the responsibility on the leaders more explicitly.",
+      "theology": [
+        {
+          "id": "state",
+          "note": "Pilate holds the power of life and death and three times declares the prisoner innocent. Yet the voices prevail. The verse shows the state's authority failing at its central task, justice, not through ignorance but through pressure, which is why the church's confession names Pilate: Jesus suffered under Pontius Pilate."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:22-23",
+        "Mark 15:12-14",
+        "John 19:6"
+      ],
+      "refs": [
+        "Acts 3:13",
+        "Exodus 23:2",
+        "Romans 13:3-4"
+      ]
+    },
+    {
+      "v": "24-25",
+      "context": "Pilate gives judgment that their demand be granted. He releases the man imprisoned for insurrection and murder, the one they asked for, and hands Jesus over to their will. Luke tells the release and the handing over in one sentence so that the reader cannot separate them.",
+      "grammar": "Epekrinen, ‘he decided, pronounced sentence’, occurs only here in the New Testament, a formal term for a judicial decision. Genesthai to aitēma autōn, ‘that their demand be done’, uses aitēma, ‘request, demand’. Verse 25 repeats Barabbas's crimes in full, dia stasin kai phonon beblēmenon eis phulakēn, ‘the one thrown into prison for insurrection and murder’, with a perfect participle marking his lasting status as a prisoner, and then hon ētounto, ‘whom they were asking for’. The final clause is paredōken tō thelēmati autōn, ‘he handed over to their will’. Paradidōmi completes the chain of handing over that began with Judas (22:4), and thelēma, ‘will’, is the word of Jesus' prayer: ‘not My will, but Yours be done’ (22:42). He is handed over to their will because he has already surrendered to the Father's.",
+      "words": [
+        "G1948",
+        "G1096",
+        "G0155",
+        "G0630G",
+        "G4714",
+        "G5408",
+        "G0906G",
+        "G0154",
+        "G3860",
+        "G2307"
+      ],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The guilty man is released and the innocent one is handed over. Luke draws no doctrine from it, but he tells it so that the exchange is unmistakable, and the church has always read it as a picture of what the cross does: the one who deserved nothing takes the place of the one who deserved death (1 Peter 3:18)."
+        },
+        {
+          "id": "sovereignty",
+          "note": "Jesus is given up to the will of the crowd, and yet his own prayer placed him under the will of the Father (22:42). The same act is human injustice and the fulfillment of God's purpose, as Acts will say of it (Acts 2:23, 4:28)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:26",
+        "Mark 15:15",
+        "John 19:16"
+      ],
+      "refs": [
+        "Luke 22:42",
+        "Acts 3:14",
+        "1 Peter 3:18",
+        "Acts 2:23"
+      ]
+    },
+    {
+      "v": "26",
+      "context": "As the soldiers lead Jesus away, they seize a man coming in from the country, Simon of Cyrene, and make him carry the cross behind Jesus. Luke's wording turns a forced labor into a picture of discipleship.",
+      "grammar": "Epilabomenoi, ‘having seized’, is a plain verb of taking hold; Luke does not use Mark's angareuō, the technical term for Roman requisition of labor (Mark 15:21, Matthew 5:41). Erchomenon ap' agrou, ‘coming from the country’ or ‘from a field’, has been used by some to argue that Simon had been working and that this day was therefore not a festival day, but the phrase can mean simply that he was entering the city from outside. The decisive phrase is pherein opisthen tou Iēsou, ‘to carry behind Jesus’: opisthen, ‘behind’, echoes Jesus' call to take up one's cross and come after him (9:23, opisō; 14:27).",
+      "words": [
+        "G1949",
+        "G4613J",
+        "G2956",
+        "G0068G",
+        "G2007",
+        "G4716",
+        "G5342",
+        "G3693"
+      ],
+      "history": "Luke omits Mark's note that Simon was the father of Alexander and Rufus (Mark 15:21), perhaps because his readers did not know them. Cyrene, a Greek city in North Africa, had a large Jewish community; Cyrenian Jews had a synagogue in Jerusalem (Acts 6:9), men of Cyrene were among the first to preach to Greeks at Antioch (Acts 11:20), and a Lucius of Cyrene was among the church's prophets and teachers there (Acts 13:1).",
+      "parallels": [
+        "Matthew 27:32",
+        "Mark 15:21",
+        "John 19:17"
+      ],
+      "refs": [
+        "Luke 9:23",
+        "Luke 14:27",
+        "Acts 11:20",
+        "Acts 13:1"
+      ]
+    },
+    {
+      "v": "27-28",
+      "context": "A large crowd follows, among them women mourning and lamenting for Jesus. He turns to them and tells them not to weep for him but for themselves and their children. Only Luke records the scene, and it is the last address Jesus gives before the cross.",
+      "grammar": "Ēkolouthei ... polu plēthos tou laou, ‘a great multitude of the people was following’, uses the disciple's verb once more. The women ekoptonto kai ethrēnoun, ‘were beating their breasts and wailing’, two imperfects of formal lament. Strapheis pros autas, ‘having turned to them’, is the same participle used when the Lord turned to look at Peter (22:61). Thugateres Ierousalēm, ‘daughters of Jerusalem’, addresses them as representatives of the city. Mē klaiete ep' eme, ‘stop weeping for me’, a present imperative with mē, forbids an action already in progress, and plēn eph' heautas klaiete, ‘but weep for yourselves’, redirects it.",
+      "words": [
+        "G0190",
+        "G4128",
+        "G2992",
+        "G1135G",
+        "G2875",
+        "G2354",
+        "G4762",
+        "G2364",
+        "G2419",
+        "G2799",
+        "G5043"
+      ],
+      "history": "The Mishnah, describing executions carried out by a Jewish court, says that relatives were not to make public lament for the condemned man, only to grieve in private (m. Sanhedrin 6:6). Whether or not that rule reflects practice under Rome, a public lament for a man condemned as a rebel was a conspicuous act, and Luke presents these women, like the women of Galilee (verse 49), as faithful when the men have fled.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus has wept over Jerusalem and foretold its fall (19:41-44, 21:20-24). On the way to his death he turns sympathy aside and warns of the judgment coming on the city that is rejecting him. His concern at this hour is for them, not for himself."
+        }
+      ],
+      "refs": [
+        "Luke 19:41-44",
+        "Luke 21:20-24",
+        "Zechariah 12:10",
+        "Luke 8:52"
+      ]
+    },
+    {
+      "v": "29-31",
+      "context": "Jesus explains his warning. Days are coming when the barren will be called blessed and people will beg the mountains to fall on them, a picture of the horror of Jerusalem's destruction. He ends with a proverb: if they do this when the wood is green, what will happen when it is dry?",
+      "grammar": "Idou erchontai hēmerai, ‘behold, days are coming’, is a prophetic formula that Luke uses for the city's fall (19:43, 21:6). Makariai hai steirai, ‘blessed are the barren’, is a beatitude in reverse: Elizabeth called Mary and the fruit of her womb blessed (1:42), and a woman in the crowd blessed the womb that bore Jesus (11:27). In verse 30 tote arxontai legein, ‘then they will begin to say’, introduces Hosea's words as two aorist imperatives, pesete and kalupsate, ‘fall’ and ‘cover’. Verse 31 is an argument from lesser to greater with a present condition, ei en tō hugrō xulō tauta poiousin, ‘if they do these things in the green wood’, and a deliberative subjunctive, en tō xērō ti genētai, ‘in the dry, what will happen’. The subject ‘they’ is not named. Interpreters have suggested the Romans, the Jerusalem leaders, people in general, or God himself, since Luke elsewhere uses an unnamed ‘they’ for God's action (12:20, ‘this very night your life will be required of you’, literally ‘they demand your soul’).",
+      "words": [
+        "G2250",
+        "G3107",
+        "G4723",
+        "G2836",
+        "G3149",
+        "G3735",
+        "G4098",
+        "G1015",
+        "G2572",
+        "G5200",
+        "G3586",
+        "G3584"
+      ],
+      "ot": [
+        {
+          "ref": "Hosea 10:8",
+          "note": "Hosea announced the destruction of the high places of Aven (Bethel) and the fall of the northern kingdom to Assyria, which came in 722 BC: in that day the people would say to the mountains, ‘Cover us’, and to the hills, ‘Fall on us’, preferring burial to what was coming. The Hebrew order is cover, then fall, and the standard Septuagint text keeps it (kalupsate hēmas ... pesete eph' hēmas). Luke reverses the two verbs, so that the mountains are asked to fall and the hills to cover. Jesus applies the prophet's word about Samaria's fall to Jerusalem's, and Revelation 6:16 uses the same cry for the terror of the final judgment."
+        }
+      ],
+      "history": "The proverb of the green and dry wood echoes Ezekiel's prophecy of a fire that devours every tree, both green and dry (Ezekiel 20:47). A later Jewish tradition preserves a similar lesser-to-greater saying on the lips of the sage Yose ben Yoezer as he was led to execution in the second century BC, about the fate of those who do God's will compared with those who provoke him (Genesis Rabbah 65:22). Genesis Rabbah is much later than Luke, but the tradition shows how naturally such an argument was framed. The destruction Jesus foresees came in AD 70, and Josephus's account of the famine in the besieged city makes the reversed beatitude bitterly concrete (Jewish War 6.201-213).",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "If the innocent one suffers this, what will the guilty suffer? The saying treats Jesus' death as the measure of a coming judgment, and the Old Testament passages it draws on speak of God's judgment on a faithless people. Luke's pairing is sobering: the one who speaks of judgment goes on to pray for the forgiveness of those who crucify him (verse 34)."
+        }
+      ],
+      "refs": [
+        "Luke 21:23-24",
+        "Ezekiel 20:47",
+        "Revelation 6:16",
+        "Isaiah 54:1"
+      ]
+    },
+    {
+      "v": "32-33",
+      "context": "Two criminals are led out with Jesus. At the place called The Skull they are crucified together, one on his right and one on his left. The Servant is numbered with the transgressors, as Jesus said he must be (22:37).",
+      "grammar": "Ēgonto de kai heteroi kakourgoi duo sun autō, ‘and others, two criminals, were also led with him’, read woodenly, could mean ‘two other criminals’, as if Jesus were one too. The Greek can equally be taken as ‘others, two criminals’, which is how the BSB renders it (‘Two others, who were criminals’), and Luke's repeated insistence on Jesus' innocence shows which he means. Kakourgos, ‘evildoer’, is Luke's word for the two men, where Mark and Matthew call them lēstai, ‘bandits’. Anairethēnai, ‘to be executed’, is Luke's verb for killing Jesus (22:2). In verse 33 Luke gives the name only in Greek, Kranion, ‘Skull’, and omits the Aramaic Golgotha for his Gentile readers. Estaurōsan auton, ‘they crucified him’, is as brief as Mark's account.",
+      "words": [
+        "G2087",
+        "G2557",
+        "G1417",
+        "G0337",
+        "G5117",
+        "G2898",
+        "G4717",
+        "G1188",
+        "G0710"
+      ],
+      "history": "Luke gives no hour for the crucifixion itself. Mark says the third hour (Mark 15:25) and John places Pilate's sentence ‘about the sixth hour’ (John 19:14); the notes on those verses discuss the difference. Luke's only time notes are the darkness from the sixth hour to the ninth (verse 44), which implies that Jesus was already on the cross by about noon.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus is crucified between two criminals, which is the literal fulfillment of Isaiah's word that the Servant was numbered with the transgressors, the verse Jesus quoted the night before (22:37). He dies in the company of the guilty, and in their place."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:33",
+        "Matthew 27:38",
+        "Mark 15:22",
+        "Mark 15:27",
+        "John 19:17-18"
+      ],
+      "refs": [
+        "Luke 22:37",
+        "Isaiah 53:12",
+        "Hebrews 13:12"
+      ]
+    },
+    {
+      "v": "34",
+      "context": "Jesus' first word from the cross is a prayer for those crucifying him: Father, forgive them, for they do not know what they are doing. Meanwhile the soldiers divide his clothes by casting lots. Prayer and indifference stand side by side in a single verse.",
+      "grammar": "Elegen is imperfect, ‘he was saying’. Some interpreters take it to mean that Jesus kept repeating the prayer; the imperfect of speaking verbs is common in Luke's narrative, so the form supports but does not prove that reading. Pater, ‘Father’, is the address of 22:42 and 23:46; all three of Jesus' prayers in the passion begin with it. Aphes autois, ‘forgive them’, is an aorist imperative of aphiēmi, the verb of the Lord's Prayer (11:4), with the dative of the persons forgiven. The reason clause, ou gar oidasin ti poiousin, ‘for they do not know what they are doing’, uses the perfect oidasin with present meaning, ‘they do not know’. Diamerizomenoi ... ebalon klērous, ‘dividing ... they cast lots’, echoes the Greek of Psalm 22:18.",
+      "words": [
+        "G3962",
+        "G0863H",
+        "G6063",
+        "G4160G",
+        "G1266",
+        "G2440",
+        "G0906G",
+        "G2819"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 22:18",
+          "note": "The psalmist, surrounded by enemies, says “They divide my garments among them and cast lots for my clothing.” The Septuagint (Psalm 21:19) reads diemerisanto ta himatia mou heautois kai epi ton himatismon mou ebalon klēron. Luke uses the same verbs, diamerizō and ballō klēron, without a formula of fulfillment; John quotes the verse explicitly (John 19:24). The psalm is the prayer of a righteous sufferer who is mocked and stripped and who ends in praise of God's deliverance."
+        },
+        {
+          "ref": "Isaiah 53:12",
+          "note": "Isaiah's Servant “bore the sin of many and made intercession for the transgressors.” The Hebrew yafgia, ‘he intercedes’, and the Septuagint's dia tas hamartias autōn paredothē, ‘he was handed over because of their sins’, differ at this point, but the Hebrew picture of intercession for the transgressors is exactly what Jesus does here, having already been numbered with them (22:37, 23:33)."
+        }
+      ],
+      "text": "The prayer is missing from P75, Vaticanus, the first hand of Bezae, Washingtonianus, and early Syriac and Coptic witnesses, and present in Sinaiticus, most later manuscripts, and second-century witnesses, as the chapter note sets out. The editors of the United Bible Societies' text, in Bruce Metzger's account of their decisions, judged that it was probably not part of Luke's original text but that it bears clear marks of coming from Jesus, and so kept it in double brackets. Adolf von Harnack and Nathan Eubank, by contrast, argue that it was original and removed by scribes who thought God had not forgiven Jerusalem.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "At the moment of his crucifixion Jesus intercedes for those who put him there. The prayer shows what his death is for: not vengeance but the forgiveness of the guilty, and Peter will later offer that forgiveness to the people of Jerusalem, telling them they acted in ignorance (Acts 3:17-19)."
+        },
+        {
+          "id": "love",
+          "note": "Jesus had commanded his followers to love their enemies and pray for those who mistreat them (6:27-28). Here he does it while the nails are being driven, and Stephen, the first martyr, will pray the same way (Acts 7:60)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:35",
+        "Mark 15:24",
+        "John 19:23-24"
+      ],
+      "refs": [
+        "Luke 6:27-28",
+        "Acts 3:17",
+        "Acts 7:60",
+        "Luke 11:4"
+      ]
+    },
+    {
+      "v": "35",
+      "context": "The people stand watching; the rulers sneer. Their taunt concedes that Jesus saved others and demands that he save himself if he really is the Messiah of God, the Chosen One. Luke separates the watching people from the scoffing leaders.",
+      "grammar": "Heistēkei ho laos theōrōn, ‘the people stood watching’, uses a pluperfect with the sense of a continuing stance and a present participle. The rulers exemuktērizon, ‘were sneering’, literally ‘turning up the nose’, a verb found in the New Testament only here and in 16:14, where the Pharisees sneered at Jesus' teaching on money. Their words are built on sōzō: allous esōsen, sōsatō heauton, ‘others he saved; let him save himself’, an aorist indicative followed by an aorist imperative. Ho christos tou theou ho eklektos, ‘the Christ of God, the Chosen One’, repeats Peter's confession (9:20) and the heavenly voice at the transfiguration, which in Luke says ‘This is My Son, whom I have chosen’ (9:35, eklelegmenos).",
+      "words": [
+        "G2476",
+        "G2992",
+        "G2334",
+        "G1592",
+        "G0758",
+        "G4982",
+        "G5547",
+        "G1588"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 22:7",
+          "note": "The Hebrew reads “All who see me mock me; they sneer and shake their heads”, and the Septuagint (Psalm 21:8) has exemuktērisan me, ‘they sneered at me’, the same rare verb Luke uses for the rulers. Mark and Matthew echo the psalm in the wagging of heads; Luke echoes its verb. The psalm's next line has the mockers say that the sufferer trusted the LORD, so let the LORD deliver him (22:8), the shape of the rulers' taunt."
+        }
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The taunt tells the truth without meaning to: Jesus did save others, and he will not save himself. Luke's whole account of the cross turns on that irony, since by refusing to come down Jesus opens salvation to the criminal beside him (verse 43)."
+        },
+        {
+          "id": "messiah",
+          "note": "‘The Christ of God, the Chosen One’ is exactly who Jesus is, and the rulers say it in scorn. In Isaiah the Servant is God's chosen one (Isaiah 42:1, eklektos in the Greek), so the title joins the Messiah to the suffering Servant at the very place where that union is enacted."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:39-43",
+        "Mark 15:29-32"
+      ],
+      "refs": [
+        "Luke 9:20",
+        "Luke 9:35",
+        "Isaiah 42:1",
+        "Luke 4:23",
+        "Luke 16:14"
+      ]
+    },
+    {
+      "v": "36-38",
+      "context": "The soldiers join the mockery, offering sour wine and taunting Jesus as King of the Jews. Above him hangs the inscription that names the charge: This is the King of the Jews. The Roman soldiers and the Roman notice say, in scorn, what the reader knows to be true.",
+      "grammar": "Enepaixan, ‘they mocked’, is the verb Jesus used in his prediction that the Son of Man would be mocked (18:32). The soldiers are described as proserchomenoi, oxos prospherontes, ‘coming up, offering sour wine’, two present participles of the approach. Their taunt, ei su ei ho basileus tōn Ioudaiōn, sōson seauton, ‘if you are the king of the Jews, save yourself’, uses the conditional form of the devil's tests in the wilderness, ‘if you are the Son of God’ (4:3, 4:9). The inscription's word order in the critical text is ho basileus tōn Ioudaiōn houtos, ‘the King of the Jews, this one’, with the demonstrative houtos placed last with a contemptuous edge.",
+      "words": [
+        "G1702",
+        "G4757",
+        "G4334",
+        "G3690",
+        "G4374",
+        "G0935",
+        "G2453",
+        "G4982",
+        "G1923",
+        "G3778"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 69:21",
+          "note": "The psalmist, scorned and without comforters, says “They poisoned my food with gall and gave me vinegar to quench my thirst.” The Septuagint (Psalm 68:22) reads epotisan me oxos, ‘they gave me sour wine to drink’, and Luke uses the same noun, oxos. In the psalm the drink is an act of cruelty, and Luke presents the soldiers' offer as mockery rather than kindness."
+        }
+      ],
+      "text": "In verse 38 the King James Version adds that the inscription was written ‘in letters of Greek, and Latin, and Hebrew’, words missing from the earliest manuscripts, among them P75 and Vaticanus, and probably drawn from John 19:20. The wording of the inscription itself varies among the Gospels, as the notes on Mark 15:26 describe.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The inscription is the chapter's one public proclamation of Jesus' kingship, posted by the Roman state as a joke. Luke leaves it standing over the cross because it is true: the kingdom of God comes through a king who will not save himself."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:37",
+        "Matthew 27:48",
+        "Mark 15:26",
+        "Mark 15:36",
+        "John 19:19-22",
+        "John 19:29"
+      ],
+      "refs": [
+        "Luke 18:32",
+        "Luke 4:3",
+        "Luke 4:9",
+        "Luke 1:32-33"
+      ]
+    },
+    {
+      "v": "39",
+      "context": "One of the criminals hanging beside Jesus joins the mockery, demanding that if Jesus is the Christ he save himself and them. In Mark and Matthew both criminals revile Jesus; Luke alone distinguishes them, and the contrast with the other criminal follows at once.",
+      "grammar": "Kremasthentōn, ‘of those who had been hanged’, is an aorist passive participle of kremannumi, ‘to hang’, the verb Peter uses in Acts when he says the leaders killed Jesus by hanging him on a tree (Acts 5:30, 10:39), and Paul in citing Deuteronomy 21:23 (Galatians 3:13). Eblasphēmei, imperfect, ‘kept deriding’, is the same verb as the guards' abuse in 22:65. His taunt, ouchi su ei ho christos, uses ouchi, which expects the answer yes, so that the question is sarcastic: ‘aren't you the Christ?’ Sōson seauton kai hēmas, ‘save yourself and us’, completes the three taunts to save himself (verses 35, 37, 39).",
+      "words": [
+        "G1520",
+        "G2910",
+        "G2557",
+        "G0987",
+        "G3780",
+        "G5547",
+        "G4982"
+      ],
+      "parallels": [
+        "Matthew 27:44",
+        "Mark 15:32"
+      ],
+      "refs": [
+        "Deuteronomy 21:22-23",
+        "Galatians 3:13",
+        "Acts 5:30",
+        "Acts 10:39"
+      ]
+    },
+    {
+      "v": "40-41",
+      "context": "The second criminal rebukes the first. He fears God, admits that their sentence is just, and declares that Jesus has done nothing wrong. In a few words he confesses his own guilt and Jesus' innocence, the two things the whole chapter has been arguing.",
+      "grammar": "Oude phobē su ton theon, ‘do you not even fear God’, uses oude, ‘not even’, and the emphatic su. The reason, hoti en tō autō krimati ei, ‘since you are under the same sentence’, uses krima, a judicial verdict. Verse 41 is built on men ... de: hēmeis men dikaiōs, ‘we indeed justly’, houtos de ouden atopon epraxen, ‘but this man did nothing out of place’. Dikaiōs, ‘justly’, is the adverb of dikaios, the word the centurion will use of Jesus (verse 47). Axia hōn epraxamen apolambanomen, ‘we are receiving what is worthy of what we did’, is the language of just recompense. Atopos, literally ‘out of place’, means improper or wrong; Luke uses it in Acts for the wrongdoing no one can find in Paul (Acts 25:5).",
+      "words": [
+        "G2087",
+        "G2008",
+        "G5399",
+        "G2316",
+        "G2917",
+        "G1346",
+        "G0514",
+        "G4238",
+        "G0618",
+        "G0824"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The criminal's words contain everything Luke means by repentance: the fear of God, the admission that his punishment is deserved, and the recognition of who Jesus is. He has nothing to offer and no time to amend his life, and the verse shows that repentance is a turning of the heart before it is a change in conduct."
+        },
+        {
+          "id": "fear-of-god",
+          "note": "‘Do you not even fear God’ is the criminal's first word, and it is the turning point of his confession. The fear of God, the beginning of wisdom in Proverbs, is here the beginning of salvation for a dying man."
+        }
+      ],
+      "refs": [
+        "Luke 18:13-14",
+        "Proverbs 1:7",
+        "Acts 25:5",
+        "Luke 23:47"
+      ]
+    },
+    {
+      "v": "42",
+      "context": "The criminal turns to Jesus and asks only to be remembered when he comes into his kingdom. He sees in a crucified man a king whose reign is still to come, a faith that exceeds anything the disciples showed that day.",
+      "grammar": "Iēsou, a vocative, addresses Jesus by his bare name, as the lepers (17:13) and the blind man at Jericho (18:38) did when they cried for mercy. Mnēsthēti mou, ‘remember me’, is an aorist imperative of mimnēskomai, the verb of the Psalms' prayers that God remember his people (Psalm 106:4). Hotan elthēs eis tēn basileian sou, ‘when you come into your kingdom’, uses hotan with the aorist subjunctive for a definite future event, which the man takes for granted.",
+      "words": [
+        "G2424G",
+        "G3403",
+        "G2064",
+        "G0932"
+      ],
+      "text": "The later manuscripts, followed by the King James Version, read ‘he said unto Jesus, Lord, remember me’, where the earliest have ‘Jesus, remember me’. P75 and Vaticanus, followed by the Nestle-Aland text and the BSB, read ‘into your kingdom’ (eis tēn basileian), while many other manuscripts, followed by the SBL edition, read ‘in your kingdom’ (en tē basileia). The first pictures Jesus entering his reign, the second returning with it.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The criminal is the one person at the cross who speaks of Jesus' kingdom without mockery. He believes the kingdom is real while its King is dying, which is the paradox of the whole chapter: the kingdom of God comes through the cross, not around it."
+        },
+        {
+          "id": "faith",
+          "note": "His faith has no evidence to lean on but the manner of Jesus' dying and a few words of prayer. The request is simple and personal, ‘remember me’, and it is enough."
+        }
+      ],
+      "refs": [
+        "Psalm 106:4",
+        "Genesis 40:14",
+        "Luke 1:54",
+        "Luke 17:13"
+      ]
+    },
+    {
+      "v": "43",
+      "context": "Jesus answers with a solemn promise: today you will be with me in Paradise. The man asked for something at an indefinite future time; Jesus answers with ‘today’ and with his own company. It is the second of Luke's three sayings from the cross.",
+      "grammar": "Amēn soi legō, ‘truly I tell you’, is Jesus' formula of solemn assurance, and in Luke it is always followed by the content it introduces (4:24, 12:37, 18:17, 18:29, 21:32). Sēmeron, ‘today’, stands immediately after it and before met' emou esē, ‘you will be with me’. A close parallel in structure is 22:34, where ‘today’ plainly belongs to what follows: legō soi, Petre, ou phōnēsei sēmeron alektōr, ‘I tell you, Peter, the rooster will not crow today’. Met' emou, ‘with me’, puts the stress on companionship with Jesus. En tō paradeisō, ‘in the paradise’, has the article, pointing to a known place.",
+      "words": [
+        "G0281",
+        "G3004G",
+        "G4594",
+        "G1473",
+        "G1510",
+        "G3857"
+      ],
+      "history": "Jewish writings of the period use ‘paradise’ both for the restored Eden of the age to come and for the place where the righteous wait. 4 Ezra, written around AD 100, pictures the pit of torment appearing at the judgment with a paradise of delight opposite it (4 Ezra 7:36), and Jesus' own parable places the poor man Lazarus at Abraham's side after death (16:22-23). The chapter note discusses the rabbinic ‘Garden of Eden’ and the word's Persian origin.",
+      "text": "Ancient Greek manuscripts had little punctuation, so the sentence can in principle be divided ‘Truly I tell you today, you will be with me in Paradise’, as the New World Translation and some Seventh-day Adventist writers read it. The chapter note sets out that position and the replies. Grammatically, the majority reading is strongly favored: Jesus uses ‘Truly I tell you’ dozens of times in the Gospels and never elsewhere adds ‘today’ to the formula, and in Luke the word sēmeron regularly marks the arrival of salvation (2:11, 4:21, 19:9).",
+      "theology": [
+        {
+          "id": "intermediate",
+          "note": "Read in its natural sense, the verse promises a dying man conscious fellowship with Christ on the day of his death, before the resurrection of the body. It does not describe the place in detail, and Christians differ on how to speak of it, but it is a principal text for the church's confession that those who die in Christ are with him."
+        },
+        {
+          "id": "salvation",
+          "note": "The criminal's salvation comes without baptism, good works, or time to reform, grounded only in his plea and Jesus' word. Luke places it at the cross itself, so that the first person promised paradise is a condemned man dying beside the Savior."
+        }
+      ],
+      "refs": [
+        "Luke 19:9",
+        "Luke 16:22-23",
+        "2 Corinthians 12:2-4",
+        "Philippians 1:23",
+        "Revelation 2:7"
+      ]
+    },
+    {
+      "v": "44-45",
+      "context": "From about the sixth hour to the ninth darkness covers the land, the sun's light failing, and the curtain of the temple is torn down the middle. Luke puts both signs before Jesus' death, so that they frame his final prayer.",
+      "grammar": "Ēn ēdē hōsei hōra hektē, ‘it was already about the sixth hour’, with ēdē, ‘already’, and hōsei, ‘about’, keeps the timing approximate. Skotos egeneto eph' holēn tēn gēn, ‘darkness came over the whole land’, uses gē, which can mean ‘land’ or ‘earth’; the Greek does not settle whether Luke means Judea or the world. Verse 45 opens with a genitive absolute in the critical text, tou hēliou eklipontos, ‘the sun failing’, which explains the darkness. Ekleipō, ‘to fail’, is the verb of Jesus' prayer that Peter's faith would not fail (22:32), and the word Greek writers also used for an eclipse. Eschisthē de to katapetasma tou naou meson, ‘and the curtain of the sanctuary was torn in the middle’, uses a divine passive, eschisthē, and naos, the sanctuary building, not the whole temple complex (hieron).",
+      "words": [
+        "G2235",
+        "G5616",
+        "G5610",
+        "G1623",
+        "G4655",
+        "G1093H",
+        "G1766",
+        "G2246",
+        "G1587",
+        "G4977",
+        "G2665",
+        "G3485",
+        "G3319"
+      ],
+      "ot": [
+        {
+          "ref": "Amos 8:9",
+          "note": "Amos announced a day of judgment on which “I will make the sun go down at noon, and I will darken the earth in the daytime” (Hebrew veheveti hashemesh batsohorayim). The Septuagint uses the same image. Luke does not cite the verse, but darkness at midday was a prophetic sign of judgment, and the timing, beginning about noon, matches Amos's picture closely."
+        }
+      ],
+      "text": "The earliest manuscripts (P75, Sinaiticus, Vaticanus) read tou hēliou eklipontos, ‘the sun's light failing’, while most later manuscripts read kai eskotisthē ho hēlios, ‘and the sun was darkened’, as the chapter note explains. Because eklipontos could suggest a solar eclipse, which is impossible at Passover's full moon, scribes may have changed it to avoid the objection; Origen already knew the problem. The BSB's ‘the sun was darkened’ translates the sense of either reading.",
+      "history": "The temple had an outer curtain before the sanctuary and an inner one before the Most Holy Place, as the notes on Mark 15:38 explain, and Luke does not say which tore. Placed before Jesus' death, the tearing in Luke reads less as an aftermath and more as part of the same event as the darkness and the final prayer; Dennis Sylva (Journal of Biblical Literature, 1986) linked it with Jesus' communion with the Father in his last words.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The torn curtain signals that the old sanctuary's order is being brought to an end and that access to God is being opened. Hebrews interprets the curtain as Christ's flesh, the way through which believers now enter the holy place (Hebrews 10:19-20)."
+        },
+        {
+          "id": "judgment",
+          "note": "Darkness at midday is the prophets' sign of the day of the LORD. At the cross judgment falls, and the one on whom it falls prays for his judges (verse 34) and entrusts himself to the Father (verse 46)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:45",
+        "Matthew 27:51",
+        "Mark 15:33",
+        "Mark 15:38"
+      ],
+      "refs": [
+        "Hebrews 10:19-20",
+        "Joel 2:31",
+        "Acts 2:20",
+        "Luke 22:53"
+      ]
+    },
+    {
+      "v": "46",
+      "context": "Jesus cries out with a loud voice and prays the words of Psalm 31, entrusting his spirit to his Father, and then breathes his last. Luke's Jesus dies praying, the third of his sayings from the cross, and the last word of his earthly life is ‘Father’.",
+      "grammar": "Phōnēsas phōnē megalē, ‘having called out with a loud voice’, puts a verb and noun of the same root together, a Semitic intensifier. The prayer's verb is paratithemai, present middle, ‘I entrust, I commit’. Paratithēmi is a word for depositing something valuable with a trusted keeper; Paul uses it when he commends the Ephesian elders to God (Acts 20:32), and Peter when he tells sufferers to entrust their souls to a faithful Creator (1 Peter 4:19). Exepneusen, ‘he breathed out’, is Mark's word for Jesus' death (Mark 15:37), an understated verb that does not describe a struggle.",
+      "words": [
+        "G5455",
+        "G5456G",
+        "G3173",
+        "G3962",
+        "G5495",
+        "G3908",
+        "G4151G",
+        "G1606"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 31:5",
+          "note": "The psalmist, pursued and mocked, prays “Into Your hands I commit my spirit; You have redeemed me, O LORD, God of truth.” The Hebrew is beyadkha afqid ruchi, ‘into your hand I entrust my spirit’, with the singular ‘hand’ and an imperfect verb. The Septuagint (Psalm 30:6) has eis cheiras sou parathēsomai to pneuma mou, with plural ‘hands’ and a future, ‘I will commit’. Luke follows the Septuagint but uses the present, paratithemai, and adds ‘Father’, turning a psalm of trust in danger into the Son's last words. Later Jewish practice uses the verse in the prayers said before sleep. Stephen dies with a similar prayer addressed to Jesus himself (Acts 7:59)."
+        }
+      ],
+      "text": "Many later manuscripts, followed by the King James Version, read the future paratithēsomai, ‘I will commit’, which matches the Septuagint of Psalm 31; the earliest manuscripts have the present, which is almost certainly original, the future being a scribal assimilation to the psalm.",
+      "theology": [
+        {
+          "id": "intermediate",
+          "note": "Jesus dies committing his spirit to the Father's keeping. The verse, with verse 43, grounds the Christian confidence that death does not put the person beyond God's care, and Christians from Stephen onward have prayed its words at the hour of death (Acts 7:59)."
+        },
+        {
+          "id": "prayer",
+          "note": "All three of Jesus' prayers in Luke's passion begin with ‘Father’ (22:42, 23:34, 23:46). The Son who first spoke of ‘My Father's house’ as a boy (2:49) dies with the same trust, and he dies praying Scripture."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:50",
+        "Mark 15:37",
+        "John 19:30"
+      ],
+      "refs": [
+        "Acts 7:59",
+        "1 Peter 4:19",
+        "Luke 2:49",
+        "Acts 20:32"
+      ]
+    },
+    {
+      "v": "47",
+      "context": "The centurion who has watched everything responds by glorifying God and declaring, ‘Surely this was a righteous man.’ Where Mark's centurion calls Jesus Son of God, Luke's gives the verdict his whole passion account has been building: Jesus was innocent.",
+      "grammar": "Idōn de ho hekatontarchēs to genomenon, ‘when the centurion saw what had happened’, uses a singular participle to gather the whole event into one thing seen. Edoxazen ton theon, ‘he was glorifying God’, is Luke's characteristic response to God's acts: the shepherds (2:20), the healed paralytic (5:25), the crowd at Nain (7:16), the healed leper (17:15), the blind man at Jericho (18:43). Ontōs, ‘truly, certainly’, and dikaios ēn, ‘was righteous’, combine the verdict of innocence with the richer biblical sense of the righteous one who is faithful to God.",
+      "words": [
+        "G1492H",
+        "G1543",
+        "G1392",
+        "G2316",
+        "G3689",
+        "G0444",
+        "G1342"
+      ],
+      "history": "The Wisdom of Solomon, a Jewish writing from around the turn of the eras, describes the wicked plotting against the righteous man and saying that if the righteous man is God's son, God will help him (Wisdom of Solomon 2:18), which shows how naturally ‘righteous’ and ‘son of God’ could stand together. Luke's centurion and Mark's say different words, but for readers who knew that tradition they point in the same direction.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The Roman officer in charge of the execution declares the executed man righteous. Acts turns the adjective into a title, the Righteous One (Acts 3:14, 7:52), and Peter draws the conclusion that Christ died for sins, the righteous for the unrighteous (1 Peter 3:18)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:54",
+        "Mark 15:39"
+      ],
+      "refs": [
+        "Acts 3:14",
+        "Acts 7:52",
+        "1 Peter 3:18",
+        "Isaiah 53:11"
+      ]
+    },
+    {
+      "v": "48-49",
+      "context": "The crowds who came to watch go home beating their breasts, a sign of grief and contrition. All who knew Jesus, and the women who had followed him from Galilee, stand at a distance and watch. Luke closes the death scene with the witnesses who will matter on the third day.",
+      "grammar": "Sumparagenomenoi ochloi epi tēn theōrian tautēn, ‘the crowds who had come together for this spectacle’, uses theōria, ‘sight, spectacle’, a word found only here in the New Testament. Theōrēsantes ta genomena, ‘having seen the things that happened’, is followed by tuptontes ta stēthē hupestrephon, ‘beating their breasts, they were returning’, an imperfect for the stream of people going home. The gesture is the tax collector's in the temple (18:13). In verse 49 hoi gnōstoi autō, ‘those known to him, his acquaintances’, stood apo makrothen, ‘at a distance’, and the women were horōsai tauta, ‘seeing these things’; the present participle stresses that they kept watching.",
+      "words": [
+        "G4836",
+        "G3793",
+        "G2335",
+        "G2334",
+        "G5180",
+        "G4738",
+        "G5290",
+        "G1110",
+        "G3113",
+        "G1135G",
+        "G4870",
+        "G3708"
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 38:11",
+          "note": "The sufferer of Psalm 38 laments “My beloved and friends shun my disease, and my kinsmen stand at a distance”, in the Septuagint (Psalm 37:12) hoi engista mou makrothen estēsan. Psalm 88:8 in the Septuagint (87:9) has emakrunas tous gnōstous mou ap' emou, ‘you have removed my acquaintances far from me’, with the same word gnōstoi that Luke uses. Many commentators hear these laments behind Luke's wording: the righteous sufferer's friends stand far off. Luke's note is gentler than the psalms, since the women stay and watch, and they will be the witnesses of the burial and the empty tomb."
+        }
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The crowd that watched the spectacle goes home grieving. Luke shows the first stirrings of the repentance that Peter will call for at Pentecost, when the people of Jerusalem are cut to the heart (Acts 2:37)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:55-56",
+        "Mark 15:40-41",
+        "John 19:25-27"
+      ],
+      "refs": [
+        "Luke 18:13",
+        "Acts 2:37",
+        "Luke 8:2-3",
+        "Zechariah 12:10"
+      ]
+    },
+    {
+      "v": "50-51",
+      "context": "A new figure appears: Joseph, a member of the council, good and righteous, who had not agreed with the council's decision. He comes from Arimathea and is waiting for the kingdom of God. Luke presents him in the vocabulary he used for the devout Israelites at the start of the Gospel.",
+      "grammar": "Kai idou anēr onomati Iōsēph, ‘and behold, a man named Joseph’, is Luke's way of introducing a new character, as with Zacchaeus (19:2). Bouleutēs, ‘councillor’, names his office. Anēr agathos kai dikaios, ‘a good and righteous man’, uses dikaios as of Zechariah and Elizabeth (1:6) and Simeon (2:25). Verse 51 explains: houtos ouk ēn sugkatatetheimenos tē boulē kai tē praxei autōn, ‘he had not consented to their plan and action’, with a perfect participle of a verb found only here in the New Testament. Boulē, ‘plan, counsel’, is the word Luke uses in Acts for God's plan (Acts 2:23, 4:28): the council had its plan, and God had his. Prosedecheto tēn basileian tou theou, ‘he was waiting for the kingdom of God’, echoes Simeon, who was waiting for the consolation of Israel, and Anna's hearers, who were waiting for Jerusalem's redemption (2:25, 2:38).",
+      "words": [
+        "G0435G",
+        "G3686",
+        "G1010",
+        "G0018",
+        "G1342",
+        "G4784",
+        "G1012",
+        "G4234",
+        "G0707",
+        "G4327",
+        "G0932"
+      ],
+      "history": "Arimathea is usually identified with Ramathaim, Samuel's town, as the notes on Mark 15:42-43 and John 19:38 explain. Luke calls it ‘a town of the Jews’, that is, of Judea, orienting his Gentile readers. Luke's note that Joseph had not consented is a careful qualification of Mark's statement that the whole council condemned Jesus (Mark 14:64).",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Joseph was waiting for the kingdom of God, and the kingdom's King lies dead. His act of burial is the faith of a man who still expects God's reign though he does not yet know how it will come; the reader knows that the next chapter will answer him."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:57",
+        "Mark 15:43",
+        "John 19:38"
+      ],
+      "refs": [
+        "Luke 2:25",
+        "Luke 2:38",
+        "Acts 2:23",
+        "Acts 4:28"
+      ]
+    },
+    {
+      "v": "52-53",
+      "context": "Joseph asks Pilate for the body, takes it down, wraps it in linen, and lays it in a rock-cut tomb where no one had yet been laid. The burial is quick but honorable, and the tomb is identifiable.",
+      "grammar": "Ētēsato to sōma tou Iēsou, ‘he asked for the body of Jesus’, uses the middle voice of aiteō, asking for oneself. Kathelōn, ‘having taken down’, is the word Paul uses in his summary at Pisidian Antioch, that they took him down from the tree and laid him in a tomb (Acts 13:29). Enetulixen auto sindoni, ‘he wrapped it in a linen cloth’. En mnēmati laxeutō, ‘in a rock-hewn tomb’, uses an adjective that occurs only here in the New Testament. The final clause piles up negatives: hou ouk ēn oudeis oupō keimenos, literally ‘where no one was not yet lying’, which in Greek intensifies rather than cancels: no one at all had ever been laid there.",
+      "words": [
+        "G0154",
+        "G4983",
+        "G2507",
+        "G1794",
+        "G4616",
+        "G5087",
+        "G3418",
+        "G2991",
+        "G3762",
+        "G3768",
+        "G2749"
+      ],
+      "text": "Codex Bezae, with some other witnesses, adds at the end of verse 53 that when Jesus had been laid there Joseph put against the tomb a stone that twenty men could hardly roll. The addition is found in no early manuscript of Luke and is a later elaboration that stresses the impossibility of stealing the body.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "Luke establishes that Jesus was truly dead and buried in a known, unused tomb. The resurrection he proclaims in the next chapter is the raising of this body from this tomb, not a vision detached from the grave, which is why Paul's summary of the gospel includes ‘that He was buried’ (1 Corinthians 15:4)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:58-60",
+        "Mark 15:43-46",
+        "John 19:38-42"
+      ],
+      "refs": [
+        "Acts 13:29",
+        "Isaiah 53:9",
+        "Luke 19:30",
+        "1 Corinthians 15:3-4"
+      ]
+    },
+    {
+      "v": "54",
+      "context": "Luke marks the time: it was the day of Preparation, and the Sabbath was beginning. The burial had to be finished before sunset, when work stopped.",
+      "grammar": "Hēmera ēn paraskeuēs, ‘it was the day of Preparation’, uses paraskeuē, ‘preparation’, the name for the day before the Sabbath, when food was prepared and work finished. Kai sabbaton epephōsken, ‘and the Sabbath was dawning’, uses an imperfect of epiphōskō, a verb for daybreak. Since the Jewish Sabbath began at sunset, Luke may use the word loosely for ‘beginning’, or it may reflect the lighting of lamps on Friday evening. Matthew uses the same verb for the dawn of the first day of the week (Matthew 28:1).",
+      "words": [
+        "G2250",
+        "G3904",
+        "G4521",
+        "G2020"
+      ],
+      "history": "Paraskeuē became the ordinary Greek name for Friday among Jews and Christians. Josephus preserves a decree of Augustus exempting Jews from appearing in court on the Sabbath or on the preparation day after the ninth hour (Antiquities 16.163), and the Didache tells Christians to fast on Wednesday and on the day of Preparation (Didache 8:1). The word remains the name for Friday in modern Greek.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "Jesus is laid in the tomb as the Sabbath begins, and he rests there through the day of rest. The Sabbath that commemorated the completion of creation (Genesis 2:2-3) passes in silence, and the new creation begins on the first day of the week (24:1)."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:62",
+        "Mark 15:42",
+        "John 19:31",
+        "John 19:42"
+      ],
+      "refs": [
+        "Matthew 28:1",
+        "Genesis 2:2-3",
+        "Luke 24:1"
+      ]
+    },
+    {
+      "v": "55-56",
+      "context": "The women from Galilee follow, see the tomb and how the body is laid, and go home to prepare spices and perfumes. Then they rest on the Sabbath as the commandment requires. Luke ends the chapter with their obedience and their waiting, and runs straight into the first day of the week.",
+      "grammar": "Katakolouthēsasai, ‘having followed after’, is a compound of akoloutheō; the women are still following. Sunelēluthuiai ... ek tēs Galilaias, a perfect participle, ‘who had come with him from Galilee’, recalls their long companionship (8:1-3). Etheasanto to mnēmeion kai hōs etethē to sōma autou, ‘they saw the tomb and how his body was laid’, stresses exact observation. Verse 56 contains a men without its de: kai to men sabbaton hēsuchasan kata tēn entolēn, ‘and on the Sabbath they rested’, which is answered by tē de mia tōn sabbatōn in 24:1, ‘but on the first day of the week’. The Greek sentence runs across the chapter division.",
+      "words": [
+        "G2628",
+        "G1135G",
+        "G4905",
+        "G1056G",
+        "G2300",
+        "G3419",
+        "G5087",
+        "G4983",
+        "G5290",
+        "G2090",
+        "G0759",
+        "G3464",
+        "G3303",
+        "G4521",
+        "G2270",
+        "G1785"
+      ],
+      "history": "Arōmata were dry spices and muron was perfumed oil; both were used to honor the dead and mask the odor of decay. John says that Joseph and Nicodemus used a large quantity of myrrh and aloes at the burial (John 19:39-40), while Luke has the women prepare their own. The notes on John 19:39-40 discuss the two accounts.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The women rest ‘according to the commandment’ (Exodus 20:10). Luke portrays the first witnesses of the resurrection as faithful Jews who keep the Law even in grief, part of his larger case that the gospel is the fulfillment of Israel's faith, not a break from it."
+        }
+      ],
+      "parallels": [
+        "Matthew 27:61",
+        "Mark 15:47",
+        "Mark 16:1"
+      ],
+      "refs": [
+        "Exodus 20:10",
+        "Luke 8:2-3",
+        "Luke 24:1",
+        "Luke 24:10"
+      ]
+    }
+  ]
+}

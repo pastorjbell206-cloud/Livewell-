@@ -1,0 +1,208 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The scene opens with Isaac old and nearly blind, the detail on which the whole chapter will turn. He calls Esau, \"his older son\", and announces that he does not know when he will die. Genesis 35:28-29 will show that he lived on for many years, so the urgency of the chapter rests on a fear, not a fact.",
+      "grammar": "\"His eyes were so weak\" is vattikhhena einav, from kahah, ‘to grow dim or faint’. The same verb describes Eli's failing sight (1 Samuel 3:2) and is denied of Moses at 120 (Deuteronomy 34:7). The exchange \"My son\" and \"Here I am\" (hinneni) repeats the pattern of Genesis 22:1 and 22:7, where Abraham answered God and then Isaac with the same word; there it introduced a test of faith, here a plan to go around God's word. Esau is called beno haggadol, ‘his son, the great one’, the ordinary term for the elder, which the chapter will set against Jacob, haqqatan, ‘the small one’ (verses 15 and 42).",
+      "words": ["H3543A", "H2009", "H1419K", "H2204"],
+      "refs": ["1 Samuel 3:2", "Deuteronomy 34:7", "Genesis 22:1", "Genesis 22:7", "Genesis 35:28-29"]
+    },
+    {
+      "v": "3-4",
+      "context": "Isaac sends Esau out to hunt and to prepare the dish he loves, after which he will bless him. Nothing is said of Jacob or of the oracle given to Rebekah (25:23), and the blessing is arranged in private, with only the favorite son present.",
+      "grammar": "The verse turns on food words. \"Hunt some game\" is tsudah ... tsayid, verb and noun from the same root, and \"a tasty dish\" is matammim, from taam, ‘taste’. The word appears six times in the chapter (verses 4, 7, 9, 14, 17, 31), which keeps the reader's attention on the appetite that drives Isaac's choice, the same appetite noted in 25:28. \"So that I may bless you\" is literally ‘so that my nefesh may bless you’: nefesh, often rendered ‘soul’, here means the whole living self, so the phrase stresses that the blessing comes from Isaac's very being.",
+      "words": ["H6679A", "H6718A", "H4303", "H5315I", "H1288"],
+      "history": "A father's blessing given near death was a formal act with lasting effect in Israel's world. Genesis shows Jacob blessing Joseph's sons (Genesis 48) and all his own sons together (Genesis 49), and Moses blesses the tribes before his death (Deuteronomy 33). Isaac's version is conspicuously private, arranged with one son and without the rest of the household.",
+      "refs": ["Genesis 25:28", "Genesis 48:15-16", "Genesis 49:1-2", "Deuteronomy 33:1"]
+    },
+    {
+      "v": "5-7",
+      "context": "Rebekah has overheard, and the moment Esau leaves she tells Jacob. Her report of Isaac's words is close but not exact, and the differences show the reader how she understands what is at stake.",
+      "grammar": "\"Was listening\" is a participle, shomaat, describing Rebekah as someone listening while the conversation happens, as if the narrator lets us see her at the tent door. When she repeats Isaac's words in verse 7, she drops ‘that I love’ and adds lifne YHWH, \"in the presence of the LORD\". The addition shows that Rebekah understands the blessing as a sacred act before God, not merely a father's wish, which is why she regards it as worth any risk.",
+      "words": ["H8085G", "H6440G", "H3068G", "H1696G"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Rebekah acts because she understands that the blessing given before the LORD will be binding. The story will show that God's purpose, announced before the twins' birth, is achieved, but it never suggests that God needed her scheme to achieve it."
+        }
+      ],
+      "refs": ["Genesis 25:23", "Genesis 18:10", "Genesis 48:15"]
+    },
+    {
+      "v": "8-10",
+      "context": "Rebekah gives Jacob his orders: fetch two young goats, and she will prepare the dish Isaac loves so that Jacob can take it in and receive the blessing. She plans every step; Jacob's part is to obey.",
+      "grammar": "Rebekah's command is shema beqoli, ‘listen to my voice’, the idiom for obedience that God used of Abraham in 26:5. She will repeat it in verses 13 and 43, so the chapter is punctuated by a mother's voice demanding the obedience the previous chapter reserved for God. \"As I tell you\" is a participle of tsavah, ‘to command’ (metsavvah), the verb from which the word for God's commandments comes. Two kids of the goats (gedayei izzim) is more meat than one man could eat, but enough to imitate the richness of game.",
+      "words": ["H8085H", "H6963A", "H6680", "H1423", "H5795"],
+      "refs": ["Genesis 26:5", "Genesis 27:13", "Genesis 27:43", "1 Samuel 15:22"]
+    },
+    {
+      "v": "11-13",
+      "context": "Jacob's objection is not that the plan is wrong but that it might fail. If Isaac touches him, he will be exposed and cursed instead of blessed. Rebekah answers by taking the curse on herself and repeating her command.",
+      "grammar": "Jacob contrasts his brother as ish sair (\"a hairy man\") with himself as ish chalaq (\"smooth-skinned\"). Sair sounds like Seir, Edom's hill country, the pun first heard at Esau's birth (25:25). Chalaq is used elsewhere of smooth, flattering speech (Psalm 55:21, Proverbs 5:3), so the word fits Jacob in more than one sense, though the narrator leaves the reader to notice it. \"A deceiver\" is kimtatea, a rare Piel participle of a verb meaning to mock or make a fool of someone; it occurs again only in 2 Chronicles 36:16, of those who scoffed at God's prophets. Jacob fears being seen as someone who made a fool of his father, and ‘curse’ (qelalah) is set against ‘blessing’ (berakhah).",
+      "words": ["H8163A", "H2509", "H8591", "H7045", "H1293"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jacob's only scruple is the risk of being caught, and Rebekah's reply, \"Your curse be on me, my son\", tries to take on herself a consequence that no one can transfer by saying so. Both treat the blessing as something to be secured by management rather than received from God."
+        }
+      ],
+      "refs": ["Genesis 25:25", "Psalm 55:21", "Proverbs 5:3", "2 Chronicles 36:16", "Galatians 6:7"]
+    },
+    {
+      "v": "14-17",
+      "context": "Jacob fetches the goats; Rebekah cooks, then dresses Jacob in Esau's best clothes, covers his hands and neck with goatskin, and puts the food and bread in his hands. The verses are all her action, and Jacob is almost passive, a costumed actor being prepared for his part.",
+      "grammar": "\"The finest clothes\" is bigde ... hachamudot, ‘the desirable garments’, perhaps festive clothes kept in the house. Twice the text uses the Hiphil of lavash, ‘to clothe’ (vattalbesh, hilbishah): Rebekah clothes Jacob as a parent dresses a child. The same Hiphil describes God clothing Adam and Eve in Genesis 3:21. The goatskins go on the chelqat of his neck, \"the smooth part\", a word from the same root as chalaq in verse 11, so the text dresses exactly the smoothness that could betray him.",
+      "words": ["H0899B", "H2532B", "H3847", "H2513B", "H5785"],
+      "history": "Goat hair was coarse and was used in the ancient Near East for tent cloth, sacks, and rough garments. It could pass for human hair in poor light: Michal uses goat hair to make an idol in a bed look like David's head (1 Samuel 19:13). A nearly blind man feeling for his son's arms would find what he expected.",
+      "refs": ["Genesis 3:21", "1 Samuel 19:13", "Genesis 37:31-33", "Exodus 26:7"]
+    },
+    {
+      "v": "18-20",
+      "context": "Jacob goes in, and Isaac's first words are a question of identity: \"Which one are you, my son?\" Jacob lies three times in a breath: he is Esau, the firstborn, and he has done as he was told. When Isaac wonders how the hunt was so quick, Jacob brings God into the lie.",
+      "grammar": "Isaac's question is mi attah, ‘who are you’, a question he will ask again of Esau in verse 32. Jacob answers anokhi Esav bekhorekha, ‘I am Esau your firstborn’, using the fuller, emphatic form of ‘I’. His invented explanation in verse 20 is that the LORD ‘made it happen before me’ (hiqrah ... lefanai). That is the same verb and phrase Abraham's servant used when he prayed that God would ‘make it happen before me today’ as he looked for Rebekah (24:12). The servant's prayer was answered; Jacob borrows its language for a lie. He also calls him \"the LORD your God\", not ‘my God’; not until Bethel will Jacob speak of the LORD as his own God (28:21).",
+      "words": ["H4310", "H0595", "H1060", "H7136A", "H4116A"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jacob not only lies but uses God's name to support the lie. The command not to take the LORD's name in vain (Exodus 20:7) forbids exactly this, making God an accomplice to one's own schemes."
+        }
+      ],
+      "refs": ["Genesis 24:12", "Genesis 28:20-21", "Exodus 20:7", "Proverbs 12:22"]
+    },
+    {
+      "v": "21-23",
+      "context": "Isaac is not satisfied and asks to touch him. He feels the hairy hands and speaks the chapter's most famous line: the voice belongs to one son, the hands to the other. He trusts his hands, and the narrator states the result: Isaac did not recognize him, and he blessed him.",
+      "grammar": "\"Touch\" is mush in verse 21 and mashash in verse 22, two forms of the verb for feeling with the hands, the same verb Jacob feared in verse 12. Isaac's verdict is balanced in Hebrew: haqqol qol Yaaqov, vehayyadayim yede Esav, ‘the voice, the voice of Jacob; and the hands, the hands of Esau’. The last clause of verse 23, \"so he blessed him\", is debated. Some take it as a summary heading anticipating the blessing given in verses 27-29; others think Isaac begins a blessing here and completes it after the meal. Either way, the narrator marks this as the moment the deception succeeds.",
+      "words": ["H4184", "H4959", "H6963A", "H3027G", "H5234A"],
+      "refs": ["Genesis 27:12", "Genesis 37:32-33", "Genesis 38:25-26", "Genesis 42:8"]
+    },
+    {
+      "v": "24-25",
+      "context": "One final question, and Jacob answers with a single word. Then the meal: Jacob serves the food and wine, and Isaac eats and drinks. The meal the blessing depended on is completed, and the ritual can go forward.",
+      "grammar": "Isaac's question is attah zeh beni Esav, literally ‘you, this one, my son Esau?’, and Jacob's reply is only ani, \"I am\". Hebrew often answers a yes or no question by repeating a key word, and Jacob's one-word lie is the barest possible. \"Serve me\" is haggishah li, a Hiphil of nagash, ‘bring it near’, the same verb Isaac used in verse 21 when he told Jacob to come near. The purpose clause again says ‘so that my nefesh may bless you’, as in verse 4.",
+      "words": ["H0589", "H5066H", "H5315I", "H3196"],
+      "refs": ["Genesis 27:4", "Genesis 27:21", "Proverbs 20:17"]
+    },
+    {
+      "v": "26-27",
+      "context": "Isaac asks for a kiss, and as Jacob comes close Isaac smells Esau's clothes. The smell settles the question for him, and he begins the blessing with the scent of a field that the LORD has blessed.",
+      "grammar": "Isaac smells (vayyarach, a Hiphil of ruach) the reiach, the smell, of the clothes, and the noun is repeated three times in the verse: the smell of his clothes, the smell of my son, the smell of a field. \"Ah\" renders the imperative reeh, ‘see’, used here as ‘look’ or ‘behold’: a blind man says ‘see’ about a scent. The field is one asher berakho YHWH, \"that the LORD has blessed\", so the blessing begins by naming the LORD as the source of fertility before Isaac asks anything for his son.",
+      "words": ["H7306", "H7381", "H7200G", "H5401A", "H0899B"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The kiss is a gesture of intimacy, and the scene is painful precisely because it is so tender. The deception exploits the trust between a father and a son, and the family will bear the cost of that for decades."
+        }
+      ],
+      "refs": ["Genesis 37:32", "Deuteronomy 33:13", "Hosea 14:6"]
+    },
+    {
+      "v": "28-29",
+      "context": "The blessing proper is poetry in two stanzas. The first asks for fertility of the land; the second gives rule over nations and brothers and ends with the protective formula from God's promise to Abraham. Jacob receives far more than property: he receives the words that carry the covenant.",
+      "grammar": "Verse 28 asks for ‘some of’ (the Hebrew preposition min) the dew of heaven and the fatness of the earth, and dagan vetirosh, \"grain and new wine\", a standard pair for the harvest of the land (Deuteronomy 7:13). Verse 29 calls Jacob gevir, \"master\", a word for a lord that occurs only here and in verse 37 in the whole Old Testament. \"Bow down\" is the verb for prostration, yishtachavu, which Joseph's dreams will take up (37:7-10). The last line reverses the order of Genesis 12:3: here curse comes before blessing, ‘those who curse you, cursed; those who bless you, blessed’, expressed with passive participles, arur and barukh.",
+      "words": ["H2919", "H4924A", "H1715", "H8492", "H1376", "H7812", "H0779"],
+      "history": "In Canaan's long dry summer, from about May to September, dew was the only moisture most crops received, and it mattered greatly to grapes and summer fruit. That is why the Old Testament treats dew as a gift of heaven (Deuteronomy 33:28, Hosea 14:5) and its withholding as judgment (Haggai 1:10).",
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Isaac's words carry the Abrahamic promise: rule over peoples and the protective blessing and curse of Genesis 12:3. Whatever the means, the covenant blessing has passed to the one God named before birth (25:23), and Hebrews 11:20 calls Isaac's blessing an act of faith concerning the future."
+        }
+      ],
+      "refs": ["Genesis 12:3", "Genesis 25:23", "Numbers 24:9", "Deuteronomy 33:28", "Haggai 1:10"]
+    },
+    {
+      "v": "30-31",
+      "context": "The timing is exact: Jacob has barely left when Esau comes in from the hunt. Esau, unaware, repeats the whole ritual, cooking the dish and inviting his father to eat and bless him.",
+      "grammar": "\"As soon as\" is built with an infinitive absolute and the adverb akh: vayehi akh yatso yatsa Yaaqov, ‘Jacob had only just gone out’, a construction that stresses how narrowly the two brothers missed each other. Esau's invitation is in the third person, yaqum avi, ‘let my father arise and eat’, a polite and deferential form. Jacob in verse 19 used direct imperatives, qum na, ‘get up, please’. The small difference in manners is one of the ways the narrator shows Esau as the more straightforward son in this scene.",
+      "words": ["H0389", "H3318G", "H6965B", "H1571"],
+      "refs": ["Genesis 27:19", "Genesis 25:29"]
+    },
+    {
+      "v": "32-33",
+      "context": "Isaac again asks, \"Who are you?\" and this time the answer is true. The discovery produces a violent trembling, and then a decision: the blessing stands. Isaac does not curse Jacob or try to revoke the words.",
+      "grammar": "\"Tremble violently\" is vayyecherad ... charadah gedolah ad meod, literally ‘he trembled a great trembling, exceedingly’, a verb with its own noun, strengthened twice. It is the language of shock and fear; the same verb describes the people trembling at Sinai (Exodus 19:16). Verse 33 ends gam barukh yihyeh, \"indeed, he will be blessed\", with gam (‘also, indeed’) giving emphasis and the passive participle presenting blessedness as a fixed state.",
+      "words": ["H2729", "H2731", "H3966", "H1288", "H0645"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Many interpreters read Isaac's great trembling as the moment he realizes that God has overruled his plan. His refusal to revoke the blessing shows him submitting, at last, to the word spoken before the twins were born. Hebrews 11:20 treats the blessing as an act of faith."
+        }
+      ],
+      "refs": ["Hebrews 11:20", "Exodus 19:16", "Genesis 25:23", "Proverbs 19:21"]
+    },
+    {
+      "v": "34-36",
+      "context": "Esau's grief breaks out in a loud and bitter cry and a plea to be blessed too. Isaac names what happened: deceit. Esau turns the explanation into an accusation against his brother's very name, and asks whether any blessing is left.",
+      "grammar": "\"A loud and bitter cry\" is tseaqah gedolah umarah, with the same intensifying ad meod as Isaac's trembling in verse 33; father and son are matched in their distress. The phrase is very close to the one used when Mordecai wails ‘loudly and bitterly’ in Esther 4:1. Esau's pun in verse 36 plays on aqav, ‘to take by the heel, to cheat’, and on two nouns that sound nearly alike, bekhorati (‘my birthright’) and birkhati (‘my blessing’), which share the same three consonants in a different order. \"Saved\" is atsalta, from atsal, ‘to set aside, reserve’.",
+      "words": ["H6818", "H4751", "H6117", "H1062", "H1293", "H0680"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Esau's account is partly true and partly self-serving: Jacob did deceive him for the blessing, but Esau sold the birthright freely in 25:33. The verse lets the reader hear a wronged man's grief without letting him rewrite his own part in it."
+        }
+      ],
+      "refs": ["Esther 4:1", "Genesis 25:26", "Genesis 25:33-34", "Jeremiah 9:4", "Hosea 12:3"]
+    },
+    {
+      "v": "37-38",
+      "context": "Isaac explains that he has already given Jacob mastery, servants, and the harvest. There is nothing left to give. Esau asks whether his father has only one blessing and weeps aloud.",
+      "grammar": "Isaac's verbs in verse 37 are perfects, samtiv (‘I have appointed him’), natatti (‘I have given’), and semakhtiv (‘I have sustained him’). They treat the blessing as already done and in force, which is why Isaac cannot take it back: the words have accomplished what they said. Esau's question opens with the interrogative ha- attached to berakhah, ‘is it a single blessing that you have?’ The last clause, vayyissa ... qolo vayyevk, ‘he lifted up his voice and wept’, is the Hebrew idiom for loud weeping.",
+      "words": ["H1376", "H7760A", "H5564", "H1293", "H1058"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Hebrews 12:17 says that Esau afterward sought the blessing with tears but ‘found no place for repentance’. Interpreters disagree whether the repentance he could not find was a change of mind in Isaac (so the blessing could be reversed) or genuine repentance in Esau himself. Either reading warns that some choices, once made, have consequences that tears alone do not undo."
+        }
+      ],
+      "refs": ["Hebrews 12:16-17", "Genesis 27:29", "Genesis 21:16"]
+    },
+    {
+      "v": "39-40",
+      "context": "Isaac finally speaks over Esau, in poetry that mirrors Jacob's blessing in reverse. Esau's dwelling will lie away from the richness of the land and the dew; he will live by the sword and serve his brother, but a day will come when he throws off the yoke.",
+      "grammar": "The key preposition is the same min as in verse 28, and it cuts two ways. In Jacob's blessing it meant ‘some of’ the dew and fatness. Here it can mean ‘away from’, which is how the BSB and most modern versions read it, or ‘of’, giving a blessing much like Jacob's. \"When you rebel\" translates tarid, a Hiphil of a rare verb, rud, whose meaning is uncertain: ‘grow restless’, ‘roam free’, or ‘break loose’. The yoke (ol) is the image of subjection that Esau will one day break off his neck.",
+      "words": ["H4924A", "H2919", "H4186", "H2719", "H7300", "H5923"],
+      "history": "Edom's later history followed these lines of subjection and revolt, as the chapter note describes. By the late second century BC the Edomites, called Idumeans in Greek, had been absorbed into the Jewish state under the Hasmonean ruler John Hyrcanus, and Herod the Great, who ruled Judea when Jesus was born, came from an Idumean family.",
+      "text": "The King James Version reads verse 39 as a blessing parallel to Jacob's, ‘thy dwelling shall be the fatness of the earth, and of the dew of heaven from above’, taking min in the same sense as verse 28. Most modern translations take it as ‘away from’, because the next verse describes a hard life by the sword and because Isaac has just said he has nothing left to give. Both are possible readings of the Hebrew.",
+      "refs": ["Genesis 27:28", "2 Samuel 8:14", "2 Kings 8:20-22", "Obadiah 1:10", "Malachi 1:3"]
+    },
+    {
+      "v": "41",
+      "context": "Esau's grief hardens into hatred. He resolves to wait until his father's death and mourning are past and then to kill Jacob. The story that began with brothers struggling in the womb now threatens to end like the story of Cain and Abel.",
+      "grammar": "\"Held a grudge\" is vayyistom, from satam, ‘to bear a grudge, harbor hostility’. The same verb returns at the end of Genesis, when Joseph's brothers fear that he will ‘bear a grudge’ against them after Jacob's death (50:15); the book is framed by the fear of a brother's delayed revenge. \"Said in his heart\" is the Hebrew idiom for thinking to oneself. \"I will kill\" is veaharegah, from harag, the verb used when Cain killed Abel (4:8).",
+      "words": ["H7852", "H3820A", "H2026", "H0060"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Esau's sin is hatred nursed in the heart and postponed only for appearances. The New Testament traces murder to exactly this root: 1 John 3:12-15 names Cain and says that anyone who hates his brother is a murderer."
+        }
+      ],
+      "refs": ["Genesis 4:8", "Genesis 50:15", "1 John 3:12-15", "Matthew 5:21-22"]
+    },
+    {
+      "v": "42-45",
+      "context": "Esau's words reach Rebekah, and she acts again, this time to save Jacob's life. She sends him to her brother Laban in Haran for ‘a few days’, until Esau's anger cools, and she promises to send for him. The reader who knows the rest of Genesis knows the few days will be twenty years and that Genesis never tells of her seeing him again; only her burial is mentioned, in 49:31.",
+      "grammar": "\"Consoling himself\" is mitnachem, a Hithpael participle of nacham: Esau is comforting himself with the thought of killing Jacob. \"Obey my voice\" (shema beqoli) appears for the third time in the chapter. \"For a while\" is yamim achadim, literally ‘some days’ or ‘a few days’; the same phrase returns with bitter irony in 29:20, where Jacob's seven years for Rachel seem ‘but a few days’. \"Why should I lose both of you\" uses shakhol, the verb for being bereaved of children. The two she would lose may be both sons (Jacob killed and Esau put to death as a murderer, under the principle of 9:6) or, as some read it, Jacob and Isaac on the same day.",
+      "words": ["H5162G", "H1272", "H0259", "H7921A", "H2534"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Rebekah's plan secured the blessing for her favorite and cost her his presence. The mother who spoke of losing both sons in one day will lose the son she loved to a long exile. Genesis shows favoritism and scheming reaping exactly the loss they were meant to prevent."
+        }
+      ],
+      "refs": ["Genesis 29:20", "Genesis 31:41", "Genesis 9:6", "Genesis 35:8"]
+    },
+    {
+      "v": "46",
+      "context": "Rebekah turns to Isaac and gives him a different reason for sending Jacob away: she cannot bear the thought of Jacob marrying a Hittite woman like Esau's wives (26:34-35). Isaac acts on it in 28:1-5. The verse shows Rebekah still managing her husband, now for Jacob's protection.",
+      "grammar": "\"I am weary of my life\" is qatsti vechayyai, from quts, ‘to feel loathing’, a strong word used of Israel's disgust with the manna (Numbers 21:5). Her closing question, lamah li chayyim, ‘what is life to me?’, repeats the word chayyim at the end, so the verse begins and ends with her life. The phrase \"Hittite women\" is literally ‘daughters of Heth’, the people from whom Abraham bought Sarah's grave in chapter 23.",
+      "words": ["H6973", "H2416E", "H1323G", "H2845"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Even Rebekah's half-truth serves God's purpose. Jacob's flight will take him to Haran, to his wives, to the births of the twelve tribes' ancestors, and to a meeting with God at Bethel on the road (28:10-22)."
+        }
+      ],
+      "refs": ["Genesis 26:34-35", "Genesis 28:1-5", "Genesis 24:3-4", "Numbers 21:5"]
+    }
+  ]
+}

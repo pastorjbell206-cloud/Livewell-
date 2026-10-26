@@ -78,16 +78,15 @@ export const READING_PATHS: ReadingPath[] = [
       "Where the church has merged the cross with the flag — Christian nationalism, the gospel of patriotism, and fear dressed up as theology. The aim is not caricature. It is to name the fusion and trace it to its root.",
     entries: [
       {
-        title: "When God Bless America Replaces Thy Kingdom Come",
-        slug: "when-god-bless-america-replaces-thy-kingdom-come",
+        title: "Can You Pledge Allegiance to Two Kingdoms?",
+        slug: "two-kingdoms-one-pledge",
         blurb:
           "How patriotism became the practical savior of American Christianity.",
         available: true,
       },
       {
-        title:
-          "When the Church Becomes a Political Brand — and How to Step Back",
-        slug: "church-political-brand-step-back",
+        title: "When Your Church Became a Voting Bloc",
+        slug: "when-the-pulpit-became-a-precinct",
         blurb: "The mechanics of a church turned voting bloc, and the way out.",
         available: true,
       },
@@ -170,8 +169,8 @@ export const READING_PATHS: ReadingPath[] = [
       "The quieter idolatries of the progressive church, named with the same honesty — justice severed from love, the confidence of being on the right side of history mistaken for the right side of Scripture. The harder essay to write for this audience, which is exactly why it matters.",
     entries: [
       {
-        title: "Justice Without Love Is Ideology",
-        slug: "justice-without-love-ideology",
+        title: "When Justice Becomes a Gospel",
+        slug: "when-justice-becomes-a-gospel",
         blurb: "What happens when a good thing takes God's place.",
         available: true,
       },
@@ -251,14 +250,9 @@ export const READING_PATHS: ReadingPath[] = [
         available: true,
       },
       {
-        title: "Mishpat and Tsedaqah",
-        slug: "mishpat-tsedaqah",
+        title: "What Is Biblical Justice? Mishpat and Tsedaqah",
+        slug: "what-is-biblical-justice-mishpat-and-tsedaqah",
         blurb: "Two Hebrew words the church has flattened.",
-        available: true,
-      },
-      {
-        title: "What Micah 6:8 Actually Demands",
-        slug: "micah-6-8-demands",
         available: true,
       },
       {
@@ -268,32 +262,22 @@ export const READING_PATHS: ReadingPath[] = [
       },
       {
         title: "What the Good Samaritan Is Actually Arguing",
-        slug: "good-samaritan-arguing",
+        slug: "good-samaritan-actually-arguing",
         available: true,
       },
       {
-        title: "What the Jubilee Means",
-        slug: "what-jubilee-means",
+        title: "Jubilee, Debt, and the Economy God Commanded",
+        slug: "jubilee-debt-and-the-economy-god-commanded",
         available: true,
       },
       {
-        title: "The Widow, the Orphan, the Stranger",
-        slug: "widow-orphan-stranger",
+        title: "What the Bible Says About the Poor and the Stranger",
+        slug: "what-the-bible-says-about-the-poor-and-the-stranger",
         available: true,
       },
       {
-        title: "What the Greek Actually Says: Why Original Language Matters",
-        slug: "greek-original-language-matters",
-        available: true,
-      },
-      {
-        title: "The Kingdom of God Is Not What You Think It Is",
-        slug: "kingdom-of-god-not-what-you-think",
-        available: true,
-      },
-      {
-        title: "Sin Is Not Just What You Do — It's What You Are",
-        slug: "sin-not-just-what-you-do",
+        title: "What the Bible Says Actually Went Wrong With the World",
+        slug: "what-went-wrong",
         available: true,
       },
       {
@@ -334,20 +318,8 @@ export const READING_PATHS: ReadingPath[] = [
       "The civilizational shift under everything else — why your faith feels different now. The collapse of cultural Christianity and what faithfulness looks like on the other side of cultural power, held without nostalgia.",
     entries: [
       {
-        title: "The Church Has a Credibility Problem",
-        slug: "church-credibility-problem",
-        blurb: "Why the watching world stopped believing us.",
-        available: true,
-      },
-      {
-        title: "Where the Church Was Silent",
-        slug: "where-church-was-silent",
-        blurb: "A reckoning with the history the church would rather not own.",
-        available: true,
-      },
-      {
-        title: "Complicity Is Not Innocence",
-        slug: "complicity-not-innocence",
+        title: "Complicity: How Good People Sustain Bad Systems",
+        slug: "complicity-how-good-people-sustain-bad-systems",
         blurb: "What silence costs the witness.",
         available: true,
       },
@@ -359,7 +331,7 @@ export const READING_PATHS: ReadingPath[] = [
       },
       {
         title: "How to Lead When Trust in Institutions Is at an All-Time Low",
-        slug: "lead-when-trust-institutions-low",
+        slug: "50-how-to-lead-when-trust-in-institutions-including-the-church-is-at-an-all-time-low",
         available: true,
       },
       {
@@ -416,60 +388,20 @@ export const READING_PATHS: ReadingPath[] = [
       "The long work of pastoring inside all of this — burnout, board conflict, preaching a divided room, and the calling underneath. Strong already; this path connects the soul care to the moment the church is actually living through.",
     entries: [
       {
-        title: "The Hidden Pain of the Successful Pastor",
-        slug: "hidden-pain-successful-pastor",
+        title: "The Pastor Nobody Checks On",
+        slug: "the-pastor-nobody-checks-on",
         blurb: "The peculiar isolation success in ministry creates.",
         available: true,
       },
       {
-        title: "The Slow Burn: How Ministry Exhaustion Sneaks Up on You",
-        slug: "slow-burn-ministry-exhaustion",
+        title: "Burnout Is Not a Badge of Honor",
+        slug: "burnout-is-not-a-badge",
         blurb: "Burnout is not a moment. It is a process.",
         available: true,
       },
       {
-        title: "When the Shepherd Needs Shepherding",
-        slug: "when-shepherd-needs-shepherding",
-        available: true,
-      },
-      {
-        title: "The Loneliness of Leadership",
-        slug: "loneliness-of-leadership",
-        available: true,
-      },
-      {
-        title: "The Danger of Pastoral Isolation",
-        slug: "danger-pastoral-isolation",
-        available: true,
-      },
-      {
-        title:
-          "It's Okay to See a Counselor — Why Pastors Resist and Why They Shouldn't",
-        slug: "okay-to-see-counselor",
-        available: true,
-      },
-      {
-        title:
-          "How to Pastor a Congregation That Is Politically Divided — And Keep the Gospel Central",
-        slug: "pastor-politically-divided-gospel-central",
-        available: true,
-      },
-      {
-        title:
-          "How to Talk About Political Divisiveness From the Pulpit Without Destroying Your Church",
-        slug: "talk-politics-pulpit-without-destroying",
-        available: true,
-      },
-      {
-        title: "The Prophetic Pastor",
-        slug: "prophetic-pastor",
-        blurb:
-          "Naming injustice and advocating for the vulnerable is not optional.",
-        available: true,
-      },
-      {
-        title: "The Interior Life of the Pastor",
-        slug: "interior-life-of-pastor",
+        title: "The Loneliest Room in the Church",
+        slug: "the-loneliest-room-in-the-church",
         available: true,
       },
       {

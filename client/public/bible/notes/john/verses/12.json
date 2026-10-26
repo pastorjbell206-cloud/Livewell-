@@ -1,0 +1,427 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Jesus returns from Ephraim to Bethany six days before Passover, answering the question of 11:56. His friends give a dinner in his honor, and the three members of the family appear in their characteristic roles: Martha serving, Lazarus at the table as living proof of the sign, and Mary about to act.",
+      "grammar": "Pro hex hēmerōn tou pascha, literally ‘before six days of the Passover’, places the time phrase before the event it counts back from, an idiom found also in the Greek of Amos 1:1 (‘two years before the earthquake’). Epoiēsan oun autō deipnon ekei, ‘so they made him a dinner there’, has an unspecified ‘they’, which leaves open whose house it was. Diēkonei, ‘was serving’, is an imperfect of diakoneō, the verb Jesus will use of discipleship in verse 26. Heis ēn ek tōn anakeimenōn, ‘was one of those reclining’, describes the posture of a formal meal.",
+      "words": ["G1803", "G3957", "G1173", "G1247", "G0345"],
+      "history": "Mark and Matthew set the Bethany anointing in the house of Simon the leper and place it after a notice that the Passover was two days away (Mark 14:1-3, Matthew 26:2-6). Many interpreters think Mark has placed the story topically, to frame the plot against Jesus with an act of devotion, while John gives its time; others hold that the ‘they’ of John 12:2 were guests in Simon's house, so the two accounts can describe the same dinner.",
+      "parallels": ["Mark 14:3", "Matthew 26:6"],
+      "refs": ["John 11:1-2", "John 11:55-57", "Luke 10:38-42"]
+    },
+    {
+      "v": "3",
+      "context": "Mary pours a pound of costly nard over Jesus' feet and wipes them with her hair, and the fragrance fills the house. The act answers the dinner's hospitality with extravagant devotion and, as Jesus will say, anticipates his burial. It also prepares for 13:5, where Jesus washes and wipes his disciples' feet.",
+      "grammar": "Litran murou nardou pistikēs polutimou, ‘a pound of perfume of pure, very costly nard’, stacks four genitives. Litra is the Roman pound (libra), about 327 grams. The meaning of pistikos is uncertain: it may come from pistos, ‘faithful’, and mean genuine or unadulterated; it may come from pinō, ‘drink’, and mean liquid; or it may preserve a lost place or plant name, some suggesting the pistachio (Pistacia). Mark 14:3 has the same rare adjective, which shows that the two accounts share a common tradition. Ēleipsen tous podas, ‘she anointed the feet’, and exemaxen, ‘she wiped’, are the verbs of 11:2, and ekmassō returns in 13:5 of Jesus wiping the disciples' feet. Hē de oikia eplērōthē ek tēs osmēs, ‘the house was filled with the fragrance’, is a detail found only in John.",
+      "words": ["G3046", "G3464", "G3487", "G4101", "G4186", "G0218", "G1591", "G3744"],
+      "text": "John says Mary anointed Jesus' feet; Mark 14:3 and Matthew 26:7 say the woman poured the perfume on his head, and Luke 7:38 describes a different woman anointing his feet in Galilee. Mark adds that she broke an alabaster jar. Those who hold that John and Mark describe the same event suggest that a pound of nard would have covered both head and feet and that each writer chose the detail that served his account; Mark's anointing of the head suits a royal anointing, and John's anointing of the feet suits burial and prepares for the foot washing of chapter 13.",
+      "parallels": ["Mark 14:3", "Matthew 26:7", "Luke 7:37-38"],
+      "refs": ["John 11:2", "John 13:5", "Song of Solomon 1:12", "John 19:39-40"]
+    },
+    {
+      "v": "4-6",
+      "context": "Judas objects that the perfume should have been sold and the money given to the poor. John exposes the motive: Judas kept the common purse and stole from it. It is the first time the Gospel gives Judas a character beyond the label of betrayer.",
+      "grammar": "Ho mellōn auton paradidonai, ‘the one who was going to betray him’, uses mellō with a present infinitive for what is about to happen, a phrase John attached to Judas at his first mention (6:71). Dia ti touto to muron ouk eprathē triakosiōn dēnariōn, ‘why was this perfume not sold for three hundred denarii?’, uses the genitive of price. In verse 6 John contrasts ouch hoti peri tōn ptōchōn emelen, ‘not because he cared about the poor’, with all' hoti kleptēs ēn, ‘but because he was a thief’. The imperfect ebastazen means ‘he used to carry’, and bastazō in everyday Greek also meant ‘carry off’, ‘pilfer’; John's phrase ta ballomena ebastazen, ‘he carried the things put in’, allows both.",
+      "words": ["G3195", "G3860", "G1220", "G4434", "G3199", "G2812", "G1101", "G0941"],
+      "history": "Glōssokomon, ‘money bag’ or ‘money box’, originally meant a case for keeping the reeds or mouthpieces of wind instruments, and came to mean any small box. The Greek of 2 Chronicles 24:8-11 uses it for the chest King Joash set at the temple gate to collect money for repairs. Three hundred denarii is close to a year's wages for a laborer (Matthew 20:2). Mark 14:5 gives the price as more than three hundred denarii.",
+      "parallels": ["Mark 14:4-5", "Matthew 26:8-9"],
+      "refs": ["John 6:70-71", "John 13:29", "Matthew 26:14-16", "1 Timothy 6:10"]
+    },
+    {
+      "v": "7-8",
+      "context": "Jesus defends Mary and reads her act as preparation for his burial. Then he answers the objection about the poor with a saying that echoes Deuteronomy: the poor will always be present, but he will not.",
+      "grammar": "Verse 7 is one of the harder sentences in John. The best manuscripts read aphes autēn, hina eis tēn hēmeran tou entaphiasmou mou tērēsē auto, literally ‘leave her alone, so that she may keep it for the day of my burial’. Since she has just poured it out, interpreters propose several readings. The hina clause may be elliptical, ‘leave her alone: she did this so that she might keep it for my burial’, the sense the BSB gives. It may be an imperatival hina, ‘let her keep it’, meaning whatever remains of the nard. Or the day of the anointing may itself be treated as the day of the burial, the preparation already done. The later text removed the difficulty with a perfect indicative, tetērēken, ‘she has kept it’. In verse 8, tous ptōchous gar pantote echete meth' heautōn, ‘for the poor you always have with you’, is set against eme de ou pantote echete, ‘but me you do not always have’: the contrast is between a standing duty and a unique moment.",
+      "words": ["G0863G", "G1780", "G5083I", "G4434", "G3842"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 15:11",
+          "note": "The Hebrew says that the needy will never cease from the land, and therefore commands Israel to open its hand to the poor and needy brother; the Septuagint renders it closely, ‘the needy will not fail from the land’. Jesus' saying is an echo rather than a quotation. Its setting in Deuteronomy matters: the permanence of poverty is the reason for continual generosity, not an excuse for neglect. Mark 14:7 makes the point explicit by adding that the disciples can do good to the poor whenever they wish. Jesus does not set devotion to him against care for the poor; he says that this moment, before his death, calls for this act."
+        }
+      ],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The verse has often been misused to excuse indifference to poverty. Read with Deuteronomy 15, it assumes that care for the poor is a permanent obligation of God's people and simply refuses to let Judas use it as a weapon against an act of love."
+        }
+      ],
+      "parallels": ["Mark 14:6-9", "Matthew 26:10-13"],
+      "refs": ["Mark 14:7-8", "John 19:40", "Galatians 2:10"]
+    },
+    {
+      "v": "9-11",
+      "context": "News that Jesus is at Bethany brings a large crowd, drawn as much by Lazarus as by Jesus. The chief priests respond by planning to kill Lazarus too, since he is the living reason many are leaving them to believe in Jesus.",
+      "grammar": "Egnō oun ho ochlos polus, ‘the large crowd learned’, is odd Greek, with the article on ochlos and the adjective polus following without its own article; grammarians treat ho ochlos polus as a fixed expression, ‘the great crowd’, which recurs in verse 12. Ou dia ton Iēsoun monon, all' hina kai ton Lazaron idōsin, ‘not only because of Jesus but also to see Lazarus’, joins a causal phrase and a purpose clause. In verse 11 the imperfects hupēgon ... kai episteuon, ‘were going away ... and believing’, describe a continuing movement: people were drifting from the leaders' influence to faith.",
+      "words": ["G3793", "G4183", "G1011", "G5217", "G4100"],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The chief priests, largely Sadducees who denied the resurrection (Acts 23:8), plan to kill a man whose life testifies against their denial. John lets the irony stand: a raised man is dangerous to those whose power depends on death having the last word."
+        }
+      ],
+      "refs": ["John 11:45-53", "John 12:17-19", "Acts 4:1-3", "Acts 23:8"]
+    },
+    {
+      "v": "12-13",
+      "context": "The next day the pilgrim crowd hears that Jesus is coming and goes out to meet him with palm branches, hailing him with Psalm 118 and the title King of Israel. In John the crowd comes out from the city to escort him in, rather than accompanying him on the road as in the other Gospels.",
+      "grammar": "Ta baia tōn phoinikōn, literally ‘the fronds of the palm trees’, is slightly redundant, since baion already meant a palm frond; the same word appears in 1 Maccabees 13:51, where Simon's men enter the citadel with palm branches. Exēlthon eis hupantēsin autō, ‘they went out to meet him’, uses the noun for a formal welcome. The imperfect ekraugazon, ‘they kept shouting’, describes repeated cries. Hōsanna is a transliteration of the Hebrew hoshi'ah na, ‘save, please’, kept untranslated as it had become a liturgical shout. Eulogēmenos ho erchomenos en onomati kuriou, ‘blessed is the one who comes in the name of the Lord’, is a perfect passive participle from the Greek psalm. The crowd adds kai ho basileus tou Israēl, ‘and the King of Israel’, which is not in the psalm.",
+      "words": ["G0902", "G5404", "G5222", "G2905", "G5614", "G2127", "G0935", "G2474"],
+      "ot": [
+        {
+          "ref": "Psalm 118:25-26",
+          "note": "The Hebrew of 118:25 cries anna YHWH hoshi'ah na, ‘O LORD, save us, please’, and 118:26 blesses ‘the one who comes in the name of the LORD’, a priestly welcome to the pilgrim or king entering the temple gates. The Septuagint (Psalm 117:25-26) translates the plea as sōson dē, ‘save now’, but John, like Mark and Matthew, keeps the Hebrew hōsanna. The crowd applies the pilgrims' welcome to a single person and adds the title King of Israel, which may echo Zephaniah 3:15, where the King of Israel, the LORD, is in Zion's midst. The same psalm speaks of the stone the builders rejected (118:22), which Jesus applied to himself (Mark 12:10-11), so the crowd's song carries a warning they do not hear."
+        }
+      ],
+      "history": "Palms did not grow freely on the heights of Jerusalem but flourished at Jericho, the ‘City of Palms’ (Deuteronomy 34:3), a day's walk down the road through Bethany. Palm branches belonged to the Feast of Tabernacles (Leviticus 23:40) and to Jewish celebrations of victory (1 Maccabees 13:51, 2 Maccabees 10:7).",
+      "parallels": ["Mark 11:8-10", "Matthew 21:8-9", "Luke 19:36-38"],
+      "text": "Each Gospel records the acclamation differently. Mark adds a blessing on the coming kingdom of our father David; Matthew has ‘Hosanna to the Son of David’; Luke omits hosanna, names Jesus ‘the King’, and adds ‘peace in heaven’. Only John mentions palms and the title King of Israel.",
+      "refs": ["John 1:49", "Zephaniah 3:15", "Leviticus 23:40", "John 19:19"]
+    },
+    {
+      "v": "14-15",
+      "context": "Jesus responds to the crowd's royal acclamation with an enacted prophecy: he sits on a young donkey. John quotes Zechariah 9:9 in shortened form, and the gesture corrects the crowd's expectations: he is a king, but a king of peace, not a war leader.",
+      "grammar": "Heurōn de ho Iēsous onarion, ‘Jesus, having found a young donkey’, uses the diminutive onarion, found only here in the New Testament; John omits the fetching of the animal that the other Gospels narrate. Kathōs estin gegrammenon, ‘as it is written’, uses a periphrastic perfect, stressing that the Scripture stands written. The quotation begins mē phobou, thugatēr Siōn, ‘do not fear, daughter of Zion’, a present imperative with mē, often used to stop an action already happening: ‘stop being afraid’. Kathēmenos epi pōlon onou, ‘seated on a donkey's colt’, uses the present participle of kathēmai.",
+      "words": ["G2147", "G3678", "G2523", "G1125", "G5399", "G2364", "G4622", "G4454", "G3688"],
+      "ot": [
+        {
+          "ref": "Zechariah 9:9",
+          "note": "The Hebrew opens gili me'od bat-tsiyyon, ‘rejoice greatly, daughter of Zion’, and describes the coming king as tsaddiq venosha', ‘righteous and saved’ or ‘victorious’, and 'ani, ‘humble’ or ‘lowly’, riding on a donkey, on a colt, the foal of a donkey. The Septuagint reads ‘rejoice greatly’ and makes the king ‘righteous and saving’ and ‘gentle’, riding on a beast of burden and a young colt. John drops the call to rejoice, the king's righteous and humble character, and the Hebrew parallelism that led Matthew 21:5-7 to mention two animals, keeping only the king, his coming, and the donkey's colt. In Zechariah the next verse promises that he will cut off the chariot and the war horse and speak peace to the nations (9:10); a donkey was the mount of peace, as when Solomon rode David's mule to his anointing (1 Kings 1:33-38). Genesis 49:11, where the ruler from Judah tethers his donkey's colt to the vine, may also stand in the background."
+        },
+        {
+          "ref": "Zephaniah 3:16",
+          "note": "John's opening, ‘do not fear, daughter of Zion’, replaces Zechariah's ‘rejoice’. The closest source is Zephaniah 3:14-16, where daughter Zion is told to rejoice, is assured that the King of Israel, the LORD, is in her midst, and is told on that day ‘do not fear, O Zion’; the Septuagint there reads tharsei, ‘take courage’. Isaiah 40:9 and 44:2 also pair ‘do not fear’ with the arrival of God. By blending these texts John presents Jesus' arrival as the arrival of Israel's God as king."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Jesus accepts the title King of Israel but defines his kingship by the donkey rather than the war horse. The kingdom he brings comes in humility and peace, and its throne, John will show, is the cross (19:19)."
+        }
+      ],
+      "parallels": ["Matthew 21:1-7", "Mark 11:1-7", "Luke 19:29-35"],
+      "refs": ["1 Kings 1:33-38", "Genesis 49:10-11", "Zechariah 9:10", "John 18:36-37"]
+    },
+    {
+      "v": "16",
+      "context": "The narrator steps out of the story to say that the disciples did not understand these things at the time; only after Jesus was glorified did they remember and see that Scripture had spoken of him. The same comment followed the temple action in 2:22.",
+      "grammar": "Tauta ouk egnōsan ... to prōton, ‘they did not understand these things at first’, uses to prōton adverbially. All' hote edoxasthē Iēsous, tote emnēsthēsan, ‘but when Jesus was glorified, then they remembered’, uses an aorist passive of doxazō for the whole event of death, resurrection, and exaltation. The verse repeats tauta, ‘these things’, three times, tying the event, the Scripture, and the crowd's action together: the things written about him are the things done to him.",
+      "words": ["G1097", "G4413G", "G1392", "G3403", "G1125"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "John admits that understanding came later, after the resurrection and the coming of the Spirit, who would remind the disciples of what Jesus said (14:26). The verse describes how the church came to read the Old Testament in the light of Christ: memory and Scripture, read together after Easter."
+        }
+      ],
+      "refs": ["John 2:22", "John 14:26", "Luke 24:25-27", "Luke 24:44-45"]
+    },
+    {
+      "v": "17-19",
+      "context": "The crowd that saw the raising of Lazarus keeps testifying, and that testimony is why the other crowd came out to meet Jesus. The Pharisees admit defeat to one another: the world has gone after him. The next verse brings Greeks, making their exaggeration truer than they know.",
+      "grammar": "Emarturei, ‘kept testifying’, is an imperfect of ongoing witness. Verse 18 gives the cause of the welcome with hoti ēkousan touto auton pepoiēkenai to sēmeion, ‘because they heard that he had done this sign’, using a perfect infinitive of a deed with lasting effect. In verse 19 theōreite can be indicative, ‘you see’, or imperative, ‘look’, and translations divide; the BSB takes it as a statement. Ouk ōpheleite ouden, ‘you are gaining nothing’, uses a double negative. Ide ho kosmos opisō autou apēlthen, ‘look, the world has gone off after him’, uses opisō, ‘after’, the language of following a leader.",
+      "words": ["G3140", "G4592", "G2334", "G5623", "G2889", "G3694"],
+      "text": "In verse 17 most manuscripts read hote, ‘when’: the crowd that was with him when he called Lazarus kept testifying. A smaller group of early witnesses reads hoti, ‘that’: the crowd testified that he had called Lazarus. The first makes the witnesses those present at the tomb; the second makes the content of their witness the raising.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The Pharisees' complaint that the world has gone after Jesus is exaggeration in their mouths, but John places it just before the Greeks arrive. The Gospel's ironies often make enemies speak the truth, and here they announce the worldwide reach of Jesus' mission (3:16-17, 4:42)."
+        }
+      ],
+      "refs": ["John 11:47-48", "John 4:42", "John 3:17", "Acts 17:6"]
+    },
+    {
+      "v": "20-22",
+      "context": "Some Greeks who had come up to worship at the feast ask Philip to see Jesus. Philip tells Andrew, and the two tell Jesus. The request, relayed through the two disciples with Greek names, triggers the announcement of the hour.",
+      "grammar": "Hellēnes, ‘Greeks’, means Gentiles, not Greek-speaking Jews, whom the New Testament calls Hellenists (Acts 6:1). Ek tōn anabainontōn hina proskunēsōsin en tē heortē, ‘among those who were going up to worship at the feast’, uses a present participle that may describe people who customarily came up, and proskuneō, the worship Jesus discussed with the Samaritan woman (4:20-24). Their request uses kurie, here ‘sir’, and thelomen ton Iēsoun idein, ‘we wish to see Jesus’. In John seeing can mean more than looking (1:39, 14:9), and the Greeks' desire becomes an image of the Gentiles' coming to faith. Verse 22 uses vivid presents, erchetai ... legei, ‘comes ... tells’, as the message is passed along.",
+      "words": ["G1672", "G0305", "G4352", "G2962H", "G2309", "G1492H", "G5376G", "G0406"],
+      "history": "John places Philip's home in ‘Bethsaida in Galilee’, though Bethsaida lay just east of the Jordan in the territory of Herod Philip. Ancient usage was loose: Josephus calls the rebel Judas a Gaulanite from Gamala in one place (Antiquities 18.4) and a Galilean in another (Jewish War 2.118), so ‘Galilee’ could stretch to include the district around the lake. Gentiles who worshiped Israel's God had been foreseen in Solomon's prayer at the temple's dedication, which asks God to hear the foreigner who comes from a distant land to pray toward his house (1 Kings 8:41-43).",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The arrival of Gentiles marks the moment Jesus says his hour has come. Their approach is a first sign of the harvest his death will produce (verses 24 and 32), when the other sheep of 10:16 are brought in."
+        }
+      ],
+      "refs": ["John 1:44", "John 10:16", "1 Kings 8:41-43", "Isaiah 56:6-7", "John 7:35"]
+    },
+    {
+      "v": "23",
+      "context": "Jesus answers not the Greeks but the moment. After repeated notices that his hour had not yet come (2:4, 7:30, 8:20), he announces that it has arrived. What follows explains what kind of glorification he means.",
+      "grammar": "Elēluthen hē hōra, ‘the hour has come’, is a perfect: it has arrived and is now present. Hina doxasthē ho huios tou anthrōpou, ‘for the Son of Man to be glorified’, uses hina not for purpose but to explain which hour is meant, a common Johannine use sometimes called epexegetical. The aorist passive subjunctive of doxazō points to God as the one who glorifies. The title Son of Man, from Daniel 7:13-14, carries the dignity of the one given everlasting dominion, and John joins it here to death.",
+      "words": ["G2064", "G5610", "G1392", "G5207", "G0444"],
+      "ot": [
+        {
+          "ref": "Isaiah 52:13",
+          "note": "The Hebrew says that the servant will be raised and lifted up and highly exalted; the Septuagint renders it with hupsōthēsetai kai doxasthēsetai sphodra, ‘he will be lifted up and glorified exceedingly’. John uses both verbs, doxazō here and hupsoō in verse 32, and quotes the next verse of the same passage, Isaiah 53:1, in verse 38. The allusion is not a quotation but a shared vocabulary: John reads the hour of Jesus through Isaiah's servant, whose exaltation comes through suffering."
+        }
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The hour of glory is the hour of death. The verse redefines glory for the rest of the Gospel: not escape from suffering but the Father's honor revealed in the Son's self-giving."
+        }
+      ],
+      "refs": ["John 2:4", "John 13:31-32", "John 17:1", "Daniel 7:13-14"]
+    },
+    {
+      "v": "24",
+      "context": "Jesus explains his glorification with a farmer's picture. A grain of wheat that is not buried stays a single grain; buried and dead, it produces a harvest. The saying applies first to Jesus and then, in the next verse, to those who follow him.",
+      "grammar": "Amēn amēn legō humin, ‘truly, truly I tell you’, introduces a solemn saying, as always in John with the doubled amen. The two conditions are balanced: ean mē ho kokkos tou sitou pesōn eis tēn gēn apothanē, autos monos menei, ‘unless the grain of wheat, having fallen into the earth, dies, it remains alone’, and ean de apothanē, polun karpon pherei, ‘but if it dies, it bears much fruit’. Monos menei is literally ‘remains alone’, which is sharper than ‘remains a seed’: the alternative to death is isolation. The present tenses menei and pherei state what always happens.",
+      "words": ["G0281", "G2848", "G4621", "G4098", "G0599", "G3441", "G3306", "G2590"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Jesus' death is not a loss that interrupts his work but the means of its fruitfulness. The single grain becomes a harvest of many, which fits Isaiah's promise that the servant who pours out his life will see his offspring (Isaiah 53:10-11)."
+        },
+        {
+          "id": "resurrection",
+          "note": "Paul uses the same image of a seed sown and raised for the resurrection body (1 Corinthians 15:36-38). Death is the path to transformed life, first for Jesus and then for those joined to him."
+        }
+      ],
+      "refs": ["1 Corinthians 15:36-38", "Isaiah 53:10-11", "John 15:5", "John 15:8"]
+    },
+    {
+      "v": "25-26",
+      "context": "The law of the seed applies to disciples. Whoever clings to life loses it; whoever lets go of it for Christ keeps it for eternal life. Service means following Jesus where he goes, and the Father honors those who do.",
+      "grammar": "The participles are present, ho philōn tēn psuchēn autou, ‘the one who loves his life’, and ho misōn, ‘the one who hates’, describing a way of living. Loving and hating is a Semitic idiom of preference, not literal hostility (compare Genesis 29:30-31, Luke 14:26). Apolluei, ‘loses’, is present, as if the loss is already under way. Eis zōēn aiōnion phulaxei auton, ‘will keep it for eternal life’, uses psuchē, ‘life’ or ‘self’, of the natural life that is surrendered and preserved. In verse 26 the present imperative akoloutheitō, ‘let him keep following’, defines service (diakonē) as following, and hopou eimi egō ekei kai ho diakonos ho emos estai, ‘where I am, there my servant will also be’, promises that the servant shares his master's destiny, both the cross and the glory. Timēsei auton ho patēr, ‘the Father will honor him’, answers the world's contempt.",
+      "words": ["G5368", "G3404", "G5590H", "G0622", "G5442I", "G1247", "G0190", "G1249", "G5091"],
+      "theology": [
+        {
+          "id": "union",
+          "note": "‘Where I am, there my servant will also be’ describes discipleship as sharing Jesus' place: his road to death now, and his presence with the Father afterward (14:3, 17:24)."
+        },
+        {
+          "id": "suffering",
+          "note": "The saying gives no promise of safety; it promises honor from the Father. In John the same pattern holds for Peter, whose following will lead to his own death (21:18-19)."
+        }
+      ],
+      "parallels": ["Mark 8:34-35", "Matthew 10:38-39", "Matthew 16:24-25", "Luke 9:23-24", "Luke 17:33"],
+      "refs": ["John 14:3", "John 17:24", "John 21:18-19", "Luke 14:26"]
+    },
+    {
+      "v": "27",
+      "context": "Jesus admits that his soul is troubled and considers, aloud, the prayer to be saved from the hour, then rejects it: this hour is why he came. The verse is John's closest counterpart to Gethsemane in the other Gospels, where the prayer in the garden takes a different form.",
+      "grammar": "Nun hē psuchē mou tetaraktai, ‘now my soul is troubled’, uses a perfect passive of tarassō: the trouble has come and remains. Kai ti eipō, ‘and what shall I say?’, is a deliberative subjunctive. The words pater, sōson me ek tēs hōras tautēs, ‘Father, save me from this hour’, can be punctuated as a question, ‘shall I say, Father, save me from this hour?’, as in the BSB and most modern versions, or as a real petition that Jesus then corrects, ‘Father, save me from this hour. But ...’; ancient manuscripts had no punctuation, and both readings have defenders. Either way the next words, alla dia touto ēlthon eis tēn hōran tautēn, ‘but for this reason I came to this hour’, decide the matter.",
+      "words": ["G5590I", "G5015", "G2036", "G3962", "G4982", "G5610"],
+      "ot": [
+        {
+          "ref": "Psalm 6:3",
+          "note": "Jesus' words echo the laments of the psalms. In Psalm 6:3 (6:4 in Hebrew and Greek) the psalmist says his soul is greatly troubled, and the Septuagint uses the same verb and noun: hē psuchē mou etarachthē sphodra. In Psalm 42:6 (41:7 in the Septuagint), ‘my soul is troubled within me’ uses them again. Jesus prays in the words of Israel's sufferers, as the other Gospels show him doing in Gethsemane (Mark 14:34, echoing Psalm 42:5) and on the cross (Mark 15:34, Psalm 22:1). The allusion is verbal rather than a formal quotation."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son who says he came for this hour also feels its horror. His obedience is not the calm of someone who feels nothing, but a human will choosing the Father's will through real distress (Hebrews 5:7-8)."
+        }
+      ],
+      "parallels": ["Mark 14:33-36", "Matthew 26:37-39", "Luke 22:41-44"],
+      "refs": ["John 11:33", "John 13:21", "John 18:11", "Hebrews 5:7-8"]
+    },
+    {
+      "v": "28-30",
+      "context": "Jesus' prayer becomes a single request: glorify your name. The Father answers from heaven. The crowd hears only thunder or supposes an angel, and Jesus says the voice was for their sake, not his.",
+      "grammar": "Pater, doxason sou to onoma, ‘Father, glorify your name’, is an aorist imperative, a request for decisive action. The answer uses two tenses, kai edoxasa kai palin doxasō, ‘I have glorified it and I will glorify it again’. The aorist most naturally refers to the Father's glory already revealed in Jesus' ministry and signs (2:11, 11:40), the future to the coming hour of death and exaltation. In verse 29 the crowd says brontēn gegonenai, ‘that it had thundered’, a perfect infinitive, while others say angelos autō lelalēken, ‘an angel has spoken to him’. Ou di' eme ... alla di' humas, ‘not for my sake but for yours’, repeats the reason for the prayer at Lazarus's tomb (11:42).",
+      "words": ["G1392", "G3686", "G5456G", "G1027", "G0032G", "G2980"],
+      "history": "In the Old Testament God's voice was often likened to thunder: at Sinai, God answered Moses in thunder (Exodus 19:19), and the psalms speak of the LORD thundering from heaven (2 Samuel 22:14, Psalm 29:3). Later rabbinic tradition held that after the last prophets the Holy Spirit departed from Israel but a heavenly voice, the bat qol, could still be heard (b. Sanhedrin 11a). The crowd's two explanations, thunder and an angel, are both attempts to classify what they heard without receiving it as the Father's word.",
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The Son asks for nothing for himself except that the Father's name be glorified, and the Father answers that he has done so and will do so again. The cross is the place where the Father's name is honored, which is why the Son can go to it willingly."
+        },
+        {
+          "id": "trinity",
+          "note": "The Son prays, the Father answers, and the answer is spoken for others. John shows the relationship of Father and Son in audible form, as the baptism and transfiguration do in the other Gospels (Mark 1:11, Mark 9:7)."
+        }
+      ],
+      "refs": ["Mark 1:11", "Mark 9:7", "John 11:42", "Exodus 19:19", "John 17:1-5"]
+    },
+    {
+      "v": "31",
+      "context": "Jesus declares that his hour is the judgment of the world and the expulsion of its ruler. The cross, which looks like the world's verdict on Jesus, is in fact God's verdict on the world and the defeat of the power behind it.",
+      "grammar": "The verse repeats nun, ‘now’, twice: nun krisis estin tou kosmou toutou, ‘now is the judgment of this world’, and nun ho archōn tou kosmou toutou ekblēthēsetai exō, ‘now the ruler of this world will be cast out’. The present and future stand side by side: the judgment is already happening in the hour, and the expulsion follows from it. The title ho archōn tou kosmou toutou, ‘the ruler of this world’, appears only in John (also 14:30, 16:11) and means Satan. Ekblēthēsetai exō, ‘will be thrown out’, is a future passive with a redundant ‘out’ for emphasis; Codex Bezae reads blēthēsetai without the prefix.",
+      "words": ["G3568", "G2920", "G2889", "G0758", "G1544", "G1854"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment in John is not only a future event; it takes place at the cross, where the world's rejection of the light is exposed and condemned (3:19). The final judgment confirms what the cross has already revealed."
+        },
+        {
+          "id": "atonement",
+          "note": "The cross is a victory as well as a sacrifice. The ruler of this world is cast out at the moment he seems to triumph, a theme Paul states when he says God disarmed the powers and triumphed over them in the cross (Colossians 2:15)."
+        }
+      ],
+      "refs": ["John 16:11", "John 14:30", "Colossians 2:15", "Hebrews 2:14-15", "Luke 10:18"]
+    },
+    {
+      "v": "32-33",
+      "context": "Jesus completes the thought: when he is lifted up from the earth he will draw everyone to himself. The narrator adds that the saying indicated the kind of death he would die, crucifixion, where the victim was raised above the ground.",
+      "grammar": "Kagō ean hupsōthō ek tēs gēs, ‘and I, when I am lifted up from the earth’, uses ean with an aorist subjunctive; ean normally means ‘if’, but here, of an event certain to happen, it approaches ‘when’. Hupsoō has John's double sense of being raised on the cross and exalted to glory (3:14, 8:28). Pantas helkusō pros emauton, ‘I will draw everyone to myself’, uses helkuō, the verb used in 6:44 of the Father drawing people to the Son. In the setting of the Greeks' request, ‘everyone’ most naturally means all kinds of people, Gentiles as well as Jews, not every individual without exception; readers who hold to universal salvation and those who do not both appeal to the verse. Verse 33 uses sēmainōn poiō thanatō, ‘signifying by what kind of death’, where sēmainō is related to sēmeion, ‘sign’: the saying itself is a sign pointing to the cross.",
+      "words": ["G5312", "G1093G", "G3956", "G1670", "G4591", "G4169", "G2288"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The lifted-up Son becomes the center toward which people are drawn. The cross is not only something done for the world at a distance; it is the power that brings people to Christ, as the bronze serpent drew the eyes of the dying in the wilderness (3:14, Numbers 21:8-9)."
+        },
+        {
+          "id": "mission",
+          "note": "‘Everyone’ answers the Greeks of verse 20. The mission to the nations flows from the cross itself, not from a later strategy."
+        }
+      ],
+      "refs": ["John 3:14-15", "John 8:28", "John 6:44", "John 18:32", "Numbers 21:8-9"]
+    },
+    {
+      "v": "34",
+      "context": "The crowd objects. The Law, they say, teaches that the Messiah remains forever, so how can the Son of Man be lifted up? They have understood that ‘lifted up’ means death, and they cannot fit a dying Messiah into their Scriptures.",
+      "grammar": "Hēmeis ēkousamen ek tou nomou, ‘we have heard from the Law’, uses nomos broadly for Scripture, as in 10:34, where Jesus quotes a psalm as ‘your Law’. Ho christos menei eis ton aiōna, ‘the Christ remains forever’, uses menō, ‘remain’, a favorite Johannine verb. Pōs legeis su hoti dei hupsōthēnai ton huion tou anthrōpou, ‘how can you say that the Son of Man must be lifted up?’, uses dei, the ‘must’ of divine necessity (3:14). The crowd's final question, tis estin houtos ho huios tou anthrōpou, ‘who is this Son of Man?’, may mean they do not identify the Son of Man with the Messiah, or that they cannot recognize a Son of Man who dies.",
+      "words": ["G3551", "G5547", "G3306", "G0165H", "G1163", "G5312", "G5207"],
+      "ot": [
+        {
+          "ref": "Psalm 89:36-37",
+          "note": "No Old Testament verse says in so many words that the Messiah remains forever, and several have been proposed. W. C. van Unnik (The Quotation from the Old Testament in John 12:34, Novum Testamentum 3, 1959) argued that the source is Psalm 89:36-37 (88:37 in the Septuagint), where God swears that David's seed will remain forever (to sperma autou eis ton aiōna menei), a psalm also used of the Messiah elsewhere. Other suggestions include Psalm 110:4 (a priest forever), Isaiah 9:7 (no end to his government), Ezekiel 37:25 (David their prince forever), and Daniel 7:14 (an everlasting dominion). Whichever text is meant, the crowd has read the promise of an unending reign without the servant's death, which John has just connected to Isaiah 52:13."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The crowd's objection is sincere and rooted in Scripture. John's answer is not that the Messiah does not remain forever, but that he remains by way of death and resurrection: the one who is lifted up on the cross is the one who lives and reigns."
+        }
+      ],
+      "refs": ["John 10:34", "John 3:14", "Isaiah 9:7", "Daniel 7:13-14", "Acts 2:29-36"]
+    },
+    {
+      "v": "35-36",
+      "context": "Jesus does not argue. He answers with a last call: the light is with them a little while longer; they should walk in it and believe in it before darkness overtakes them. Then he leaves and hides himself, and his public ministry is over.",
+      "grammar": "Eti mikron chronon to phōs en humin estin, ‘for a little while longer the light is among you’, echoes his earlier warnings (7:33, 9:4). Peripateite hōs to phōs echete, ‘walk while you have the light’, uses hōs in the sense ‘while’. Hina mē skotia humas katalabē, ‘so that darkness may not overtake you’, uses katalambanō, the verb of 1:5, where the darkness did not overcome the light. Hina huioi phōtos genēsthe, ‘so that you may become sons of light’, is a Semitic idiom in which ‘son of’ something means one who belongs to it and shares its character. Ekrubē ap' autōn, ‘he was hidden from them’, is an aorist passive: Jesus withdraws, and the light is no longer available to those who refused it.",
+      "words": ["G5457", "G4043", "G4653", "G2638", "G5207", "G2928"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Believing in the light is presented as time-sensitive: the opportunity is real but not endless. The verse joins the Gospel's many invitations with a warning that refusing the light has consequences."
+        }
+      ],
+      "refs": ["John 1:5", "John 8:12", "John 9:4", "Ephesians 5:8", "1 Thessalonians 5:5"]
+    },
+    {
+      "v": "37-38",
+      "context": "The narrator sums up the public ministry. In spite of so many signs, the people did not believe, and John reads their unbelief as the fulfillment of Isaiah 53:1. The first half of the Gospel ends not with triumph but with Scripture's explanation of rejection.",
+      "grammar": "Tosauta de autou sēmeia pepoiēkotos emprosthen autōn, ‘though he had done so many signs before them’, is a genitive absolute with concessive force. Ouk episteuon eis auton, ‘they were not believing in him’, uses the imperfect of continuing unbelief. Hina ho logos Ēsaiou tou prophētou plērōthē, ‘so that the word of Isaiah the prophet might be fulfilled’, uses hina with a purpose sense: John does not say unbelief happened and Isaiah happened to predict it, but that it took place within God's purpose. The quotation asks tis episteusen tē akoē hēmōn, ‘who has believed our report?’, where akoē means what is heard, the message, and ho brachiōn kuriou, ‘the arm of the Lord’, is the image of God's power at work.",
+      "words": ["G5118", "G4592", "G4100", "G4137", "G0189", "G1023", "G0601"],
+      "ot": [
+        {
+          "ref": "Isaiah 53:1",
+          "note": "John follows the Septuagint word for word, including the opening kurie, ‘Lord’, which is not in the Hebrew. The Hebrew asks who has believed ‘what we have heard’ (shemu'atenu) and to whom the arm of the LORD has been revealed. In Isaiah the question opens the fourth servant song, expressing astonishment that the servant's suffering and exaltation were not recognized. Paul quotes the first line in Romans 10:16 of Israel's response to the gospel. John applies it to the response to Jesus' signs, in which the arm of the Lord has been revealed and not received, and so identifies Jesus with Isaiah's servant."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "John places the unbelief of Jesus' contemporaries inside God's foreknown purpose, so that it does not take God by surprise or defeat his plan. He does not say that the signs were inadequate."
+        }
+      ],
+      "refs": ["Romans 10:16", "Deuteronomy 29:2-4", "John 1:11", "John 20:30-31"]
+    },
+    {
+      "v": "39-40",
+      "context": "John goes further: they could not believe, because Isaiah also said that God had blinded their eyes and hardened their hearts. It is the hardest statement in the chapter, and John quotes Isaiah 6:10 in a form that makes God's action plain.",
+      "grammar": "Dia touto ouk ēdunanto pisteuein, hoti ..., ‘for this reason they could not believe, because ...’, is best read with dia touto pointing forward to the hoti clause, the quotation that follows, though some take it back to verse 38. Ouk ēdunanto, ‘they were unable’, is the imperfect of dunamai. The quotation begins tetuphlōken autōn tous ophthalmous, ‘he has blinded their eyes’, a perfect of lasting effect, and epōrōsen autōn tēn kardian, ‘he hardened their heart’. The subject is not named; most interpreters take it to be God, as in Isaiah 6:10, though a minority suggest the devil, comparing 2 Corinthians 4:4. The purpose clause hina mē idōsin ... kai noēsōsin ... kai straphōsin, ‘so that they might not see ... and understand ... and turn’, ends with a future indicative, kai iasomai autous, ‘and I will heal them’, which shifts to the first person, God himself speaking.",
+      "words": ["G1410", "G5186", "G4456", "G3539", "G4762", "G2390"],
+      "ot": [
+        {
+          "ref": "Isaiah 6:10",
+          "note": "In the Hebrew the prophet is commanded to make the people's heart fat, their ears heavy, and their eyes shut, lest they see, hear, understand, turn, and be healed. The Septuagint turns the commands into statements about the people: their heart has grown dull, they have closed their eyes. Matthew 13:14-15 and Acts 28:26-27 follow the Septuagint. John follows neither exactly: he omits the ears, puts the eyes first, and makes a third person, most likely God, the subject of active verbs, ‘he has blinded’ and ‘he has hardened’. His wording is closer to the Hebrew in making the hardening a deliberate act, but he has condensed it. In Isaiah the oracle comes at the prophet's call and announces judgment on a people who had long refused God; the hardening is a judgment on refusal, not its first cause."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "John holds that unbelief can become a divine judgment, so that those who refuse the light lose the ability to see it. Faithful traditions weigh this differently. Augustinian and Reformed readers stress God's active hardening as just judgment; Wesleyan and many Catholic readers stress that the inability follows a prior refusal. John's next verses, that many believed (verse 42) and that Jesus kept calling (verses 44-50), keep the call open."
+        },
+        {
+          "id": "judgment",
+          "note": "Paul, using the same Isaiah passage and related texts, speaks of a hardening that is partial and temporary, until the fullness of the Gentiles has come in (Romans 11:7-8, 11:25). The hardening in the New Testament is never presented as the final word on Israel."
+        }
+      ],
+      "refs": ["Matthew 13:14-15", "Acts 28:26-27", "Romans 11:7-8", "Romans 11:25", "2 Corinthians 4:4"]
+    },
+    {
+      "v": "41",
+      "context": "John explains why Isaiah could speak of Jesus: he saw his glory. The glory Isaiah saw when he beheld the Lord enthroned in the temple was, in John's reading, the glory of the Son.",
+      "grammar": "Tauta eipen Ēsaias hoti eiden tēn doxan autou, ‘Isaiah said these things because he saw his glory’, uses hoti, ‘because’. The pronoun autou, ‘his’, is not further identified in Greek; the BSB supplies ‘Jesus’’ from the context, since kai elalēsen peri autou, ‘and he spoke about him’, must refer to the one in whom the people did not believe (verse 37). The later manuscripts' hote, ‘when’, would make the verse say simply that Isaiah spoke when he had his vision.",
+      "words": ["G2268", "G1492H", "G1391", "G2980"],
+      "ot": [
+        {
+          "ref": "Isaiah 6:1",
+          "note": "In the Hebrew Isaiah sees ‘the Lord sitting on a throne, high and lifted up’, and the seraphim cry that the whole earth is full of his glory (6:3). The Aramaic Targum of Isaiah renders the vision as seeing ‘the glory of the LORD’, avoiding a direct sight of God, and John's language of seeing ‘his glory’ matches that way of reading. John identifies that glory with Jesus. The link to the preceding quotations is deliberate: ‘high and lifted up’ in 6:1 uses the same two Hebrew roots as Isaiah 52:13, where the servant is lifted up and exalted, so the enthroned Lord and the suffering servant are one figure in John's reading."
+        }
+      ],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The glory of Israel's God in the temple vision is the glory of Jesus. John makes the claim of 1:14, that the Word's glory was seen, reach back into Israel's history: the one Isaiah saw enthroned is the one who is lifted up on the cross."
+        },
+        {
+          "id": "trinity",
+          "note": "Early Christian readers generally took the verse to mean that Isaiah saw the pre-existent Son, a reading that became part of the church's case for his full divinity. Some modern interpreters read it instead as Isaiah foreseeing the glory of Jesus' coming ministry, as Abraham is said to have seen his day (8:56)."
+        }
+      ],
+      "refs": ["John 1:14", "John 1:18", "John 8:56", "John 17:5", "Isaiah 52:13"]
+    },
+    {
+      "v": "42-43",
+      "context": "Not everyone refused. Many even among the leaders believed, but fear of the Pharisees and of expulsion from the synagogue kept them silent. John names the deeper cause: they loved human praise more than God's.",
+      "grammar": "Homōs mentoi, ‘nevertheless, however’, is a strong double adversative that qualifies the gloomy verdict just given. Kai ek tōn archontōn polloi episteusan, ‘even of the rulers many believed’. Ouch hōmologoun, ‘they were not confessing’, is an imperfect of continuing silence. Hina mē aposunagōgoi genōntai, ‘so that they would not be put out of the synagogue’, uses the rare adjective aposunagōgos. Verse 43 plays on doxa: ēgapēsan gar tēn doxan tōn anthrōpōn mallon ēper tēn doxan tou theou, ‘for they loved the glory of men more than the glory of God’. The word the BSB renders ‘praise’ is the word it renders ‘glory’ in verse 41, so the leaders preferred human honor to the glory Isaiah saw.",
+      "words": ["G3676", "G3305", "G0758", "G3670", "G0656", "G0025", "G1391", "G2260"],
+      "history": "John names two such rulers. Nicodemus, a Pharisee and ruler of the Jews, came to Jesus by night (3:1-2) and later brought spices for his burial (19:39), and Joseph of Arimathea is called a disciple, but secretly for fear of the Jewish leaders (19:38). Both come into the open only at Jesus' death, which suggests that John's judgment here is sober rather than final.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith that refuses to confess is presented as incomplete, because it still seeks approval from people rather than from God (5:44). The New Testament joins believing and confessing (Romans 10:9-10)."
+        }
+      ],
+      "refs": ["John 5:44", "John 9:22", "John 19:38-39", "Romans 10:9-10"]
+    },
+    {
+      "v": "44-45",
+      "context": "Although Jesus has withdrawn (verse 36), John closes the public ministry with a summary of his message, introduced as a cry. The first theme is that believing in Jesus and seeing Jesus are believing in and seeing the Father who sent him.",
+      "grammar": "Ekraxen, ‘he cried out’, is the verb John uses of Jesus' public proclamations in the temple (7:28, 7:37). Ho pisteuōn eis eme ou pisteuei eis eme alla eis ton pempsanta me, literally ‘the one believing in me does not believe in me but in the one who sent me’, is a Semitic way of saying ‘not only in me but also in the one who sent me’: faith in Jesus does not stop at him but reaches the Father. Verse 45 repeats the thought with theōreō, ‘see’: ho theōrōn eme theōrei ton pempsanta me, ‘the one who sees me sees the one who sent me’.",
+      "words": ["G2896", "G4100", "G3992", "G2334"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus is the Father's self-revelation, not merely a messenger about him. The later saying to Philip, ‘whoever has seen me has seen the Father’ (14:9), rests on this claim."
+        }
+      ],
+      "refs": ["John 14:9", "John 13:20", "John 1:18", "Matthew 10:40", "John 5:23"]
+    },
+    {
+      "v": "46-48",
+      "context": "Jesus came as light so that believers need not remain in darkness. He did not come to judge but to save, yet the one who rejects him is not left without a judge: the word he has spoken will judge on the last day.",
+      "grammar": "Egō phōs eis ton kosmon elēlutha, ‘I have come into the world as light’, uses a perfect: he has come and remains present. Hina pas ho pisteuōn eis eme en tē skotia mē meinē, ‘so that everyone believing in me may not remain in the darkness’, assumes that people begin in darkness. Verse 47 says egō ou krinō auton, ‘I do not judge him’, and gives the reason with the purpose of his coming, ou gar ēlthon hina krinō ton kosmon all' hina sōsō ton kosmon, ‘for I did not come to judge the world but to save the world’. Verse 48 answers the apparent tension with 5:22, where all judgment is given to the Son: ho logos hon elalēsa ekeinos krinei auton en tē eschatē hēmera, ‘the word I have spoken, that will judge him on the last day’. Judgment is the consequence of refusing the word that came to save.",
+      "words": ["G5457", "G2064", "G3306", "G2919", "G4982", "G0114", "G4487", "G3056"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus' purpose in coming is salvation, not condemnation, but his word becomes the standard by which the last day judges. Judgment is not a separate intention of God opposed to his love; it is love's word refused."
+        }
+      ],
+      "refs": ["John 3:17-19", "John 5:22-24", "John 8:12", "John 9:39", "Luke 10:16"]
+    },
+    {
+      "v": "49-50",
+      "context": "The summary ends where the Gospel began, with the Word. Jesus has not spoken on his own authority; the Father commanded what to say, and that command is eternal life. The public ministry closes on the Father's life-giving word.",
+      "grammar": "Ex emautou ouk elalēsa, ‘I have not spoken from myself’, uses the same idiom as Caiaphas's prophecy (11:51) in reverse: there a man spoke more than he knew; here the Son speaks nothing but what he received. Ho pempsas me patēr autos moi entolēn dedōken, ‘the Father who sent me has himself given me a command’, uses a perfect, a command given and still in force. Ti eipō kai ti lalēsō, ‘what I should say and what I should speak’, pairs two verbs of speech; some see a distinction between content and manner, others simple emphasis. Verse 50 makes a bold identification: hē entolē autou zōē aiōnios estin, ‘his command is eternal life’, echoing Moses' words that the commandment is Israel's life (Deuteronomy 32:46-47).",
+      "words": ["G2980", "G3992", "G1785", "G1325", "G2222", "G0166"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 18:18-19",
+          "note": "God promises Moses a prophet like him: ‘I will put my words in his mouth, and he will tell them everything I command him’, and anyone who does not listen to his words will answer to God. The Septuagint uses lalēsei ... kathoti an enteilōmai autō, ‘he will speak ... whatever I command him’, the same vocabulary of speaking and commanding that fills John 12:48-50. The crowds in John had asked whether Jesus was the Prophet (6:14, 7:40). These closing verses present him as that prophet and more: his words carry the Father's command, and the one who rejects them will be judged by them on the last day."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus' words are the Father's words, spoken at the Father's command. The authority of his teaching is not that of a gifted rabbi but of the one sent, whose word gives life."
+        }
+      ],
+      "refs": ["John 5:19", "John 8:28", "John 14:10", "John 17:8", "Deuteronomy 32:46-47"]
+    }
+  ]
+}

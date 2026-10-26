@@ -1,0 +1,223 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with a date, the first year of Darius the Mede, which places it just after Babylon's fall in chapter 5 and alongside the lions' den of chapter 6. The long sentence is left hanging here and completed in verse 2: the date matters because it tells the reader that the empire Jeremiah said would last seventy years has just ended.",
+      "grammar": "Darius is said to have been ‘made king’ (hamlakh), a Hophal, the passive of the causative stem: someone else caused him to reign. Readers who identify Darius with a governor under Cyrus, such as Gubaru, take the form as a sign that he was appointed by a higher king; others take it as a divine passive, God being the one who gives kingdoms (2:21; 5:21). The form allows either. His father's name is Achashverosh, the Hebrew name the book of Esther uses for Xerxes, which the BSB follows.",
+      "words": ["H4427A", "H0325", "H1867I"],
+      "history": "No Darius the Mede appears in the Babylonian or Persian records, and the historical Xerxes I (reigned 486 to 465 BC) was the son, not the father, of Darius I. Proposals include Gubaru, the governor Cyrus installed over Babylon (John C. Whitcomb, Darius the Mede, 1959); Cyrus himself under a second title, reading 6:28 as ‘Darius, that is, Cyrus’ (D. J. Wiseman); and, among critical scholars, a literary figure built from memories of later Persian kings and of the expectation that the Medes would take Babylon (Isaiah 13:17; Jeremiah 51:11). Whatever the identification, the year intended is about 539 or 538 BC, the year of Cyrus's decree (Ezra 1:1-4).",
+      "refs": ["Daniel 5:30-31", "Daniel 6:28", "Ezra 1:1-4", "Jeremiah 51:11"]
+    },
+    {
+      "v": "2",
+      "context": "Daniel reads Jeremiah. This is the first place in the Bible where one prophet is shown studying another prophet's written words and trying to understand how they apply to his own day. What he finds is a number, seventy years, and the rest of the chapter turns on that number.",
+      "grammar": "‘I understood’ is binoti, from bin, the verb of discernment that threads through the chapter: Daniel understands (verse 2), Gabriel comes to give understanding (verse 22), and Daniel is told to understand (verses 23 and 25). The object is ‘the number of the years’ found ‘in the books’ (bassefarim, plural with the article), which suggests that Jeremiah's prophecies already circulated as a written collection that Daniel regarded as the word of the LORD. The phrase lemallot lechorvot Yerushalayim, ‘to complete the desolations of Jerusalem’, uses the Piel of male, ‘to fill up’: the seventy years are a measure that has to be filled.",
+      "words": ["H0995", "H5612H", "H4557", "H4390", "H2723"],
+      "history": "Jeremiah foretold seventy years of Babylonian rule twice (Jeremiah 25:11-12; 29:10). Counting from Nebuchadnezzar's first move against Jerusalem in about 605 BC brings the reader close to Cyrus's decree in 539 or 538 BC; counting from the temple's destruction in 587 or 586 BC brings the reader to the rebuilt temple's completion in about 516 or 515 BC. Later biblical writers were already reading the number: the Chronicler ties it to the land's unkept sabbath years (2 Chronicles 36:21, drawing on Leviticus 26:34-35), and Zechariah hears an angel ask how long God will withhold mercy after seventy years (Zechariah 1:12).",
+      "theology": [
+        { "id": "revelation", "note": "Daniel, himself a receiver of visions, learns God's timetable by reading an older prophet's written text. The verse shows Scripture already functioning as Scripture inside the Old Testament: a fixed word, studied, trusted, and expected to come true." }
+      ],
+      "refs": ["Jeremiah 25:11-12", "Jeremiah 29:10", "2 Chronicles 36:21", "Zechariah 1:12"]
+    },
+    {
+      "v": "3",
+      "context": "Daniel's response to a promise nearly due is not to wait but to pray. The response is itself scriptural: the very passage in Jeremiah that promised the seventy years went on to say that when the time came the exiles would call on God and seek him with all their heart (Jeremiah 29:10-13). Daniel does what Jeremiah said the exiles would do.",
+      "grammar": "‘I turned my attention’ is literally ‘I set my face’ (va'ettenah et panai), a phrase of fixed resolve. The purpose clause is unusual: lebaqqesh tefillah, literally ‘to seek prayer’, using the same verb, biqqesh, that Jeremiah 29:13 uses for seeking God. The three outward signs (fasting, sackcloth, ashes) are the standard vocabulary of national mourning and repentance.",
+      "words": ["H5414H", "H1245", "H8605", "H6685", "H8242", "H0665"],
+      "theology": [
+        { "id": "prayer", "note": "The promise of restoration drives Daniel to prayer rather than replacing it. Biblical prayer does not treat God's sovereign plan as a reason to stop asking; it asks for what God has promised, on the ground that he has promised it." }
+      ],
+      "refs": ["Jeremiah 29:12-13", "Nehemiah 9:1", "Jonah 3:5-6", "Esther 4:1-3"]
+    },
+    {
+      "v": "4",
+      "context": "The prayer proper begins, and it begins with God, not with the crisis. The opening address is almost word for word the prayer that opens Nehemiah (Nehemiah 1:5) and draws on Moses' description of the faithful God in Deuteronomy 7:9 and 7:21.",
+      "grammar": "Two Hithpael verbs frame the verse: va'etpallelah, ‘I prayed’, and va'etvaddeh, ‘I confessed’. The second is the verb Leviticus uses for confession on the Day of Atonement (Leviticus 16:21) and, decisively, in the promise that if the exiles ‘confess their iniquity’ God will remember his covenant (Leviticus 26:40-42). Daniel is doing exactly what the covenant said would open the way home. The name YHWH, rendered LORD, appears in Daniel only in this chapter (verses 2, 4, 8, 10, 13, 14, and 20), a sign that the prayer speaks in the covenant language of Deuteronomy and the older prophets. Some scholars (among them John J. Collins, in the Hermeneia commentary, 1993) think the prayer was an existing liturgical text set into the chapter; others point to its many links with the surrounding narrative. Hesed, BSB ‘loving devotion’, is the word for God's steadfast covenant loyalty.",
+      "words": ["H6419", "H3034", "H3068G", "H2617A", "H1285"],
+      "theology": [
+        { "id": "repentance", "note": "Confession here is a covenant act. Leviticus 26:40-42 had made confession the condition on which God would remember his covenant with the patriarchs, so Daniel's confession is not self-reproach for its own sake but the prescribed road back to God." },
+        { "id": "attributes", "note": "God is named great, awesome, and faithful before anything is asked. His covenant loyalty is the fixed point against which Israel's unfaithfulness is measured and the only ground on which the prayer dares to proceed." }
+      ],
+      "refs": ["Deuteronomy 7:9", "Nehemiah 1:5", "Leviticus 26:40-42", "Leviticus 16:21"]
+    },
+    {
+      "v": "5-6",
+      "context": "The confession piles verb on verb, then names the root: Israel did not listen to the prophets whom God sent to every level of society, from kings to ordinary people.",
+      "grammar": "Five verbs of wrongdoing run together: chatanu (we sinned), ve'avinu (we did wrong), hirsha'nu (we acted wickedly), maradnu (we rebelled), vesor (and turned aside). The first three are the exact sequence that Solomon's temple prayer gave the exiles to say (1 Kings 8:47), so Daniel is praying the words Solomon put in the mouths of captives. The fifth is an infinitive absolute (sor) continuing the finite verbs, a Hebrew idiom that keeps the series running without repeating the person. Later Jewish liturgy kept the same kind of triad: the high priest's confession on the Day of Atonement in the Mishnah (m. Yoma 3:8) uses three verbs of sin.",
+      "words": ["H2398", "H5753B", "H7561", "H4775", "H5493I"],
+      "theology": [
+        { "id": "sin", "note": "The list moves from missing the mark to active rebellion to turning away, and verse 6 locates the heart of it in refusing to hear. Sin in this prayer is fundamentally a refusal of God's spoken word through his messengers." }
+      ],
+      "refs": ["1 Kings 8:47", "Jeremiah 7:25-26", "2 Chronicles 36:15-16", "Psalm 106:6"]
+    },
+    {
+      "v": "7-8",
+      "context": "The prayer sets two possessions side by side: righteousness belongs to God, shame belongs to us. The list of the shamed widens to everyone, Judah, Jerusalem, all Israel near and far, kings, leaders, fathers, so that no group is exempted.",
+      "grammar": "The construction is a pair of verbless clauses with the preposition le, ‘belonging to’: lekha hatsedaqah, ‘to you the righteousness’, velanu boshet happanim, ‘and to us the shame of faces’. Kayyom hazzeh, ‘as at this day’, is a formula of confession that points to present evidence (Ezra 9:7; Jeremiah 44:22). The reason given for exile, bema'alam asher ma'alu, ‘in their unfaithfulness which they committed’, repeats the precise phrase of Leviticus 26:40. Ma'al is the word for breach of trust, especially against what is holy.",
+      "words": ["H6666", "H1322", "H4604", "H4603", "H5080"],
+      "history": "Daniel 9:4-19 has a close relative in the book of Baruch, a Jewish writing preserved in the Greek Old Testament and the Apocrypha. Baruch 1:15-2:19 follows the same prayer phrase by phrase, beginning with the same contrast of righteousness belonging to God and shame to us. Scholars debate which text depends on which, or whether both draw on a shared liturgical prayer, but the parallel shows that this confession was prayed and reused by Jewish communities.",
+      "theology": [
+        { "id": "leadership", "note": "The confession names rulers first among the guilty. Leaders do not stand outside the nation's sin to condemn it; Scripture holds them more accountable, not less." }
+      ],
+      "refs": ["Ezra 9:6-7", "Leviticus 26:40", "Nehemiah 9:33-34", "Jeremiah 44:21-22"]
+    },
+    {
+      "v": "9-10",
+      "context": "The contrast turns hopeful. Compassion and forgiveness belong to God even though Israel rebelled and did not walk in the laws given through the prophets. The whole prayer's appeal will rest on this sentence.",
+      "grammar": "Both nouns are plural with the article, harachamim vehasselichot, literally ‘the compassions and the forgivenesses’. These are plurals of abundance: mercy in full measure rather than a single act. Selichot is rare in the Hebrew Bible (elsewhere Nehemiah 9:17 and Psalm 130:4 use related forms) and later became the name of the Jewish penitential prayers recited before the High Holy Days. The conjunction ki before ‘we have rebelled’ is best read concessively, ‘even though’, as the BSB does.",
+      "words": ["H7356B", "H5547", "H4775", "H8451"],
+      "theology": [
+        { "id": "attributes", "note": "Mercy is not presented as an exception God makes to his character but as something that belongs to him, like the righteousness of verse 7. The prayer holds both in God without resolving one into the other." }
+      ],
+      "refs": ["Nehemiah 9:17", "Psalm 130:4", "Exodus 34:6-7", "Micah 7:18"]
+    },
+    {
+      "v": "11",
+      "context": "Daniel names the exile for what it is: the curse written in the Law of Moses, now fulfilled. The disaster is not random; it is the covenant working as Moses said it would.",
+      "grammar": "‘The oath and the curse’ (ha'alah vehashvu'ah) are the sworn sanctions of the covenant, the same pair used when Israel entered the covenant in Moab (Deuteronomy 29:12, 20-21). They have been ‘poured out’ (vattittakh), a verb used for God's wrath being poured out on Jerusalem (Jeremiah 42:18; 44:6). The same verb returns at the chapter's last word (verse 27), where the decreed end is poured out on the desolator: the curse that fell on Israel will in the end fall on its oppressor.",
+      "words": ["H0423", "H7621", "H5413", "H3789"],
+      "theology": [
+        { "id": "covenant", "note": "The exile is read as covenant judgment, not as a failure of God's power. Because the curse came exactly as written, Daniel can trust that the covenant's promise of restoration after confession is just as sure." }
+      ],
+      "refs": ["Deuteronomy 29:20-21", "Deuteronomy 28:15", "Jeremiah 44:6", "Leviticus 26:14-39"]
+    },
+    {
+      "v": "12-13",
+      "context": "God did what he said. Jerusalem suffered what no city had suffered, and still the people did not seek God's favor. The confession includes the failure to repent even under judgment.",
+      "grammar": "Vayyaqem et devaro, ‘he established his word’, is the Hiphil of qum, used for making a promise or threat stand. Verse 13's idiom chillinu et penei YHWH, literally ‘we did not soften the face of the LORD’, is the standard phrase for entreating favor (Exodus 32:11; Zechariah 7:2; Malachi 1:9). The phrase the BSB renders ‘giving attention to’ God's truth is lehaskil ba'amittekha, from sakal, ‘to have insight’, the same verb Gabriel uses in verse 22 (‘to give you insight’). Israel failed to gain insight from God's truth; Daniel, who seeks it, receives it.",
+      "words": ["H6965I", "H2470B", "H7919A", "H0571H"],
+      "refs": ["Lamentations 1:12", "Lamentations 4:6", "Ezekiel 5:9", "Exodus 32:11"],
+      "theology": [
+        { "id": "judgment", "note": "The judgment on Jerusalem is described as unique under heaven, which matches the uniqueness of Israel's privilege. The prayer treats the severity of judgment as proportionate to the greatness of the covenant broken." }
+      ]
+    },
+    {
+      "v": "14",
+      "context": "Verse 14 is the prayer's theodicy, its justification of God: the LORD kept the calamity ready and brought it, and he is righteous in all he does. With this, the confession is complete and the petition can begin.",
+      "grammar": "Vayyishqod, ‘and he kept watch over’, is the verb of Jeremiah's opening vision, where God plays on shaqed, ‘almond branch’, and says he is shoqed, ‘watching’, over his word to perform it (Jeremiah 1:11-12). Jeremiah later promised that the same watching would turn from tearing down to building up (Jeremiah 31:28). By using this rare verb Daniel signals that he is reading Jeremiah closely: the God who watched to bring the disaster will watch to bring the return.",
+      "words": ["H8245", "H6662", "H7451C"],
+      "refs": ["Jeremiah 1:11-12", "Jeremiah 31:28", "Jeremiah 44:27", "Nehemiah 9:33"],
+      "theology": [
+        { "id": "sovereignty", "note": "Calamity is neither outside God's control nor a lapse of his justice. The same sovereign attention that brought judgment is the basis for hoping that his promised mercy will be carried out." }
+      ]
+    },
+    {
+      "v": "15",
+      "context": "‘And now’ (ve'attah) marks the turn from confession to petition. The first ground of appeal is the exodus: the God who brought Israel out of Egypt made himself a name, and that name is still at stake.",
+      "grammar": "The verse joins two relative clauses about God (who brought out, who made a name) to two blunt perfects about Israel (chatanu, rasha'nu, ‘we have sinned, we have acted wickedly’). The juxtaposition is deliberate: God's past saving acts and Israel's past sin stand side by side, and the petition that follows will ask God to act again in keeping with the first, not the second.",
+      "words": ["H6258", "H3318H", "H8034", "H2398", "H7561"],
+      "theology": [
+        { "id": "exile", "note": "Daniel frames the return from Babylon as a second exodus, the pattern Isaiah had already announced (Isaiah 43:16-19; 52:11-12). The God who once redeemed from Egypt is asked to redeem from exile for the same reason, his name." }
+      ],
+      "refs": ["Nehemiah 9:10", "Jeremiah 32:20-21", "Isaiah 63:12-14", "Exodus 32:11-12"]
+    },
+    {
+      "v": "16",
+      "context": "The first petition proper: turn your anger from your city. The appeal is to God's righteous acts, and the reason given is that Jerusalem has become a reproach among the nations.",
+      "grammar": "‘In keeping with all Your righteous acts’ translates kekhol tsidqotekha, a plural. The plural of tsedaqah in the Old Testament regularly means God's saving deeds on behalf of his people (Judges 5:11; 1 Samuel 12:7; Micah 6:5, ‘the righteous acts of the LORD’). So God's righteousness is appealed to not as the reason for punishment but as the reason for rescue. Yashov na, ‘let it turn, please’, uses the particle of entreaty na.",
+      "words": ["H6666", "H7725I", "H4994", "H2781"],
+      "theology": [
+        { "id": "justification", "note": "Daniel appeals to God's righteousness to save a people who have none of their own. This use of ‘righteousness’ for God's faithful saving action lies behind much of the New Testament's language of the righteousness of God revealed in the gospel, a connection interpreters since the Reformation have debated in detail (see Romans 3:21-26)." }
+      ],
+      "refs": ["Micah 6:5", "Judges 5:11", "Psalm 79:4", "Romans 3:21-26"]
+    },
+    {
+      "v": "17",
+      "context": "Daniel asks God to hear and to let his face shine on the desolate sanctuary. The prayer that began with the city now centers on the temple.",
+      "grammar": "Veha'er panekha, ‘make your face shine’, is the Hiphil imperative from the priestly blessing (Numbers 6:25) and the refrain of Psalm 80 (verses 3, 7, 19). ‘Desolate’ (hashamem) is the first appearance of the root shamem that will dominate Gabriel's answer (verses 18, 26, and twice in 27): Daniel's word for the ruined sanctuary becomes the angel's word for the ‘abomination that causes desolation’.",
+      "words": ["H0215", "H6440H", "H4720", "H8076", "H4616"],
+      "text": "The Hebrew ends with lema'an Adonai, literally ‘for the sake of the Lord’, a third-person phrase that is awkward inside a prayer addressed to God. The BSB, like many translations, renders it as direct address, ‘For Your sake, O Lord’, and some scholars emend the text to lema'ankha, ‘for your sake’, as in verse 19. The meaning is the same either way: the ground of the request is God himself.",
+      "theology": [
+        { "id": "temple", "note": "The sanctuary is ‘Your sanctuary’: its ruin is a dishonor to God before it is a loss to Israel. Chapter 9 moves from this prayer for a desolate temple to a prophecy in which the temple's fate is bound up with the coming of an anointed one." }
+      ],
+      "refs": ["Numbers 6:25", "Psalm 80:3", "Psalm 80:19", "Lamentations 5:18"]
+    },
+    {
+      "v": "18",
+      "context": "Two more imperatives (incline your ear, open your eyes) and then the most quoted line of the prayer: we do not present our petitions because of our righteousness but because of your great compassion.",
+      "grammar": "Verse 18 answers verse 16 with a pointed contrast. There Daniel appealed to tsidqotekha, ‘Your righteous acts’; here he disowns tsidqotenu, ‘our righteous acts’. The two words differ by one suffix, and the whole theology of the prayer lies in the difference. ‘We are presenting our petitions’ is literally ‘we are making our supplications fall before you’ (mappilim, Hiphil participle of nafal), an idiom drawn from a suppliant falling prostrate (Jeremiah 36:7; 42:9). ‘The city that bears Your name’ is literally ‘the city on which your name is called’, the Hebrew idiom of ownership (Jeremiah 7:10-11; 2 Samuel 12:28).",
+      "words": ["H6666", "H5307N", "H8469", "H7356B", "H7121H"],
+      "theology": [
+        { "id": "salvation", "note": "The petition rests entirely on God's compassion and disclaims any appeal to human merit. The verse is one of the Old Testament's plainest statements that God's people come to him on the basis of his mercy, not their record." }
+      ],
+      "refs": ["Jeremiah 36:7", "Jeremiah 7:10-11", "Titus 3:5", "Psalm 79:9"]
+    },
+    {
+      "v": "19",
+      "context": "The prayer ends in four short cries: hear, forgive, attend and act, do not delay. The reason is repeated one last time: the city and the people are called by God's name.",
+      "grammar": "Three of the imperatives carry the lengthened form with a final -ah (shema'ah, selachah, haqshivah), which grammarians often call the emphatic or paragogic imperative: it adds urgency, much as an English speaker might say ‘please, do hear’. The verb salach, ‘to forgive’, has only God as its subject anywhere in the Hebrew Bible; people are never said to salach one another. The negative command al te'achar, ‘do not delay’, uses al with the jussive, the form of an urgent plea.",
+      "words": ["H8085G", "H5545", "H7181", "H0309", "H4616"],
+      "history": "Phrases from verses 18 and 19 entered Jewish penitential prayer, including the Selichot recited before Rosh Hashanah and Yom Kippur, where the cry ‘Lord, hear; Lord, forgive’ is still said in Hebrew.",
+      "theology": [
+        { "id": "prayer", "note": "The model prayer ends not in calm resignation but in urgency: forgive, act, do not delay. Humility before God and boldness toward God belong together here." }
+      ],
+      "refs": ["Psalm 79:9", "Ezekiel 36:22", "Luke 18:7-8", "Psalm 130:2-4"]
+    },
+    {
+      "v": "20-21",
+      "context": "The narrative resumes in the middle of Daniel's speaking. The answer arrives before the prayer is finished, at the hour when the evening offering used to be made in the temple, though the temple has lain in ruins for decades.",
+      "grammar": "Verse 20 is a string of participles (medabber, mitpallel, mitvaddeh, mappil): ‘while I was still speaking, praying, confessing, presenting’. The piling up freezes Daniel in the act of prayer. He confesses ‘my sin and the sin of my people’, the only place in the chapter where he names his own sin. Verse 21's mu'af bi'af is a famous puzzle. Standard lexicons derive it from ya'af, ‘to be weary’, which would give ‘in weariness’, possibly referring to Daniel's exhaustion after the vision of 8:27. Older interpreters and most translations derive it from 'uf, ‘to fly’, giving ‘in swift flight’ (KJV, ‘being caused to fly swiftly’). The BSB follows the second.",
+      "words": ["H6419", "H3034", "H5307N", "H3286", "H3288", "H1403"],
+      "history": "The evening offering, the minchat 'erev, was offered in the temple in the late afternoon (Exodus 29:38-42), and it became a set hour of prayer: Ezra prayed at it (Ezra 9:5), Psalm 141:2 compares prayer to it, and in Acts Peter and John go up to the temple at the ninth hour, about 3 p.m., the hour of prayer (Acts 3:1). Gabriel and Michael (10:13) are the only angels named in the Hebrew Bible. Gabriel appears again in the New Testament to Zechariah the priest, during the offering of incense in the temple, and to Mary (Luke 1:19, 26).",
+      "refs": ["Daniel 8:15-16", "Ezra 9:5", "Psalm 141:2", "Luke 1:19", "Acts 3:1"]
+    },
+    {
+      "v": "22-23",
+      "context": "Gabriel explains why he has come: the answer went out at the start of Daniel's prayer, because Daniel is greatly treasured. He calls Daniel to understand the word and the vision.",
+      "grammar": "‘An answer went out’ is yatsa davar, literally ‘a word went out’. Verse 25 will speak of motsa davar, ‘the going out of a word’, to restore Jerusalem. Many commentators, especially those who read verse 25 as referring to God's word through Jeremiah, see the echo as a clue that the ‘word’ in verse 25 is God's decree, not a Persian king's; others think the similar phrase simply ties the two decrees together. Chamudot attah, ‘you are precious’, uses a plural noun of intensity, ‘you are treasures’; Daniel is called ish chamudot, ‘a man greatly loved’, in 10:11 and 19. The paired imperatives uvin... vehaven, ‘understand... and understand’, repeat bin in two stems for emphasis.",
+      "words": ["H3318O", "H1697G", "H2532B", "H0995", "H7919A", "H4758"],
+      "theology": [
+        { "id": "prayer", "note": "The answer is dispatched at the beginning of the prayer, before the confession is complete. God's response is not earned by the length or eloquence of the prayer, yet it comes to the one who prays." }
+      ],
+      "refs": ["Daniel 10:11-12", "Isaiah 65:24", "Daniel 8:16-17"]
+    },
+    {
+      "v": "24",
+      "context": "Gabriel's answer begins with the whole span and its goal. Jeremiah's seventy years become seventy sevens, and the period has six purposes: three that deal with sin and three that bring in something new. The verse tells the reader what the seventy weeks are for before verses 25-27 say how they unfold.",
+      "grammar": "Shavu'im shiv'im, ‘sevens seventy’, plays on two forms of the same root: shavua', a unit of seven, and shiv'im, seventy. The masculine plural shavu'im is unusual (the ordinary plural of ‘week’ is feminine), and most interpreters take the unit here as seven years, following the sabbatical pattern of Leviticus 25 and the sevenfold punishment of Leviticus 26:18, 21, 24, and 28. Nechtakh, ‘decreed’, occurs only here in the Hebrew Bible; in later Hebrew and Aramaic the root means ‘to cut’ or ‘to determine’. Six infinitives follow in three pairs: to finish transgression and end sin; to atone for iniquity and bring in everlasting righteousness; to seal vision and prophet and anoint qodesh qodashim. That last phrase has no article. With the article it can name the inner room of the tabernacle (Exodus 26:33); without it, it usually describes the altar or other most holy things (Exodus 29:37; 30:29). Readers have taken it as the temple rededicated, a future temple, the Messiah himself, or the people of God.",
+      "words": ["H7620I", "H7657", "H2852", "H3722A", "H6664G", "H2856", "H4886", "H6944G"],
+      "text": "The Hebrew preserves three places where the written consonants (the Ketiv) and the reading tradition (the Qere) differ. In the first infinitive the consonants suggest kala', ‘to restrain’, while the reading gives kalah, ‘to finish’. In the second the consonants give lachtom chatta'ot, ‘to seal up sins’ (the same verb as ‘seal up vision’ later in the verse), while the reading gives lehatem chatta't, ‘to complete sin’. English translations follow the reading tradition. The differences shade the sense (sin sealed away or sin brought to its full measure) without changing the verse's promise that God will deal with it.",
+      "history": "Readings of the seventy weeks fall into four main families, set out in the notes on verses 25-27. Jewish interpreters, from the chronicle Seder Olam Rabbah (second century AD, attributed to Yose ben Halafta) to Rashi, took the 490 years as seventy years of exile plus 420 years of the Second Temple, ending in its destruction in AD 70; the Talmud (b. Nazir 32b) assumes this reading. At Qumran the scroll 11Q13 (11QMelchizedek), which reckons history in jubilees, quotes verse 25's ‘anointed prince’ for its herald of the end. In the church, Jerome's Commentary on Daniel (about AD 407) collected the calculations of Julius Africanus, Eusebius, Hippolytus, Apollinaris, Clement, Origen, and Tertullian and declined to choose among them.",
+      "theology": [
+        { "id": "atonement", "note": "The verse promises atonement in the technical vocabulary of the sanctuary: lekhapper 'avon, ‘to atone for iniquity’. The end of exile is not enough; the prophecy looks to a final dealing with sin that the return from Babylon did not accomplish, which Christians identify with the cross (Hebrews 9:26)." },
+        { "id": "messiah", "note": "The last purpose is an anointing. Whether the most holy thing to be anointed is a place or a person, the verse joins the end of sin to a new act of anointing, preparing for the ‘anointed one’ of verses 25 and 26." }
+      ],
+      "refs": ["Leviticus 25:8", "Leviticus 26:18", "Hebrews 9:26", "Exodus 29:37", "Isaiah 53:11"]
+    },
+    {
+      "v": "25",
+      "context": "Gabriel gives the first two divisions: from a word to restore and rebuild Jerusalem until an anointed prince, seven weeks and sixty-two weeks, and the city rebuilt with its squares and moat in troubled times. Everything depends on where the count begins and whether the seven and the sixty-two run together.",
+      "grammar": "Mashiach nagid has no article: ‘an anointed one, a prince’, not the title ‘the Messiah’. Mashiach names anointed kings, priests, and once Cyrus (Isaiah 45:1). Nagid, ‘leader’, is used of the designated kings Saul, David, and Solomon (1 Samuel 9:16; 13:14; 1 Kings 1:35) and also of temple officials (Nehemiah 11:11; Jeremiah 20:1); Daniel 11:22 speaks of a nagid berit, ‘a prince of the covenant’. The BSB's capitals (‘the Messiah, the Prince’) reflect the Christian reading, which the Hebrew permits but does not require. ‘Trench’ (charuts) comes from charats, ‘to cut, decide’, the root of ‘decreed’ in verses 26 and 27: a play on words ties the city's defenses to its decreed future.",
+      "words": ["H4161", "H1697G", "H4899", "H5057", "H2742C", "H6695A"],
+      "text": "The Masoretes placed their main dividing accent (the atnach) after ‘seven weeks’. Followed strictly, the verse reads: ‘until an anointed prince, seven weeks; and for sixty-two weeks it shall be rebuilt’. The RSV, NRSV, ESV, and the Jewish Publication Society version follow the accent, so that the anointed one arrives after 49 years. The KJV, NASB, NIV, and BSB join the numbers, so that he arrives after 483 years; they note that the accents are a medieval reading tradition and that Theodotion's Greek, the version the church used, joins the numbers too. The older Greek translation (the Old Greek) differs sharply here and in verses 26-27 and is little help.",
+      "history": "Four starting points have been proposed for the ‘going out of the word’. Critical scholars usually take God's word through Jeremiah (about 605 or 587 BC). Many conservative interpreters, including Keil and E. J. Young (The Prophecy of Daniel, 1949), take Cyrus's decree of 539/538 BC (Isaiah 44:28; 45:13; Ezra 1:1-4). Others take Artaxerxes' commission to Ezra (Ezra 7), about 458/457 BC, counting 483 years to about AD 27, the start of Jesus' ministry; this date is central in the historicist tradition, including Seventh-day Adventist interpretation. Still others take Artaxerxes' letters to Nehemiah (Nehemiah 2:1-8), about 445/444 BC; Julius Africanus in the third century counted from this point in lunar years, and Sir Robert Anderson (The Coming Prince, 1881) and Harold Hoehner (Chronological Aspects of the Life of Christ, 1977) counted 483 years of 360 days to Jesus' final entry into Jerusalem.",
+      "refs": ["Isaiah 45:1", "Ezra 7:11-13", "Nehemiah 2:5-8", "1 Samuel 13:14", "Nehemiah 4:17"]
+    },
+    {
+      "v": "26",
+      "context": "After the sixty-two weeks an anointed one is cut off, and the people of a coming prince destroy the city and the sanctuary. War and desolation run to the end. Verse 26 is the tragic center of the prophecy: the anointed figure does not triumph but is removed.",
+      "grammar": "Yikkaret, ‘he will be cut off’, is the Niphal of karat, used for violent death (Genesis 9:11) and for being cut off from the covenant people (Exodus 12:15). Christians have often heard in it Isaiah's servant who ‘was cut off from the land of the living’ (Isaiah 53:8), though Isaiah uses a different verb. Ve'en lo is literally ‘and there is not to him’, with no object: ‘he will have nothing’ (BSB, NIV), ‘but not for himself’ (KJV), or ‘with no one to help him’; some suspect a word has dropped out. ‘The people of the prince who is to come’ makes the people, not the prince, the destroyers. The last clause draws on Isaiah: ‘flood’ (shetef) and ‘decreed desolations’ echo Isaiah 10:22-23, where destruction is decreed and overflowing.",
+      "words": ["H3772I", "H4899", "H0369", "H5057", "H7858", "H2782", "H8074G"],
+      "history": "The critical reading, argued by James Montgomery (International Critical Commentary, 1927) and John J. Collins (Hermeneia, 1993), identifies the anointed one cut off with the high priest Onias III, deposed and later murdered near Antioch about 171 BC (2 Maccabees 4:33-35), and the destroying people with the forces of Antiochus IV, which plundered Jerusalem and defiled its temple in 169 and 167 BC (1 Maccabees 1:20-40). Its defenders acknowledge that the 62 weeks do not fit the dates exactly. The Christian messianic reading, found in Tertullian, Eusebius, and most interpreters through the Reformation, identifies the anointed one with Christ crucified and the destroyers with Rome under Titus in AD 70. Josephus, writing after the war, already said that Daniel wrote of Roman rule and Jerusalem's desolation (Antiquities 10.276). Rashi, in the Jewish tradition, identified the anointed one cut off with King Agrippa, the last king before the destruction.",
+      "theology": [
+        { "id": "messiah", "note": "Whatever the identification, the verse shows an anointed figure whose story ends not in enthronement but in being cut off, followed by the ruin of the city. Christians have read this as a prophecy of a suffering Messiah, alongside Isaiah 53 and Zechariah 12:10." }
+      ],
+      "refs": ["Isaiah 53:8", "Isaiah 10:22-23", "Luke 21:20-24", "Matthew 24:1-2", "Daniel 11:22"]
+    },
+    {
+      "v": "27",
+      "context": "The final week: a covenant made strong with many, sacrifice stopped in the middle of the week, the abomination that desolates, and at the end the decreed destruction poured out on the desolator. The prophecy ends not with rebuilding but with desecration and judgment, and chapters 10-12 will expand the same crisis.",
+      "grammar": "The subject ‘he’ is not named. Grammatically the nearest candidate is the ‘prince who is to come’ of verse 26, though that prince appears there only inside a phrase (‘the people of the prince’); messianic interpreters take the subject to be the anointed one. Vehigbir berit is not the usual idiom for making a covenant (karat berit); higbir means ‘to make strong’ or ‘to make prevail’, so the clause may mean enforcing a covenant or making one firm. Larabbim, ‘with the many’, recalls Daniel 11:33 and 12:3 and Isaiah 53:11-12, where the servant justifies ‘the many’. ‘On the wing of abominations one who desolates’ (we'al kenaf shiqqutsim meshomem) is the literal Hebrew; kenaf, ‘wing’, can mean an extremity or highest point. The closing words kalah venecheratsah, ‘a complete end, and one decreed’, repeat Isaiah 10:23 and 28:22.",
+      "words": ["H1396", "H1285", "H7227A", "H7673A", "H3671", "H8251", "H8074G", "H3617"],
+      "text": "The Greek versions (both the Old Greek and Theodotion) read ‘and upon the temple an abomination of desolations’, apparently understanding ‘wing’ as a part of the temple; English versions that say ‘wing of the temple’ blend the Hebrew with that reading. The Hebrew as it stands has no word for temple.",
+      "history": "On 15 Chislev in the year 145 of the Seleucid era (December 167 BC), Antiochus IV set up on the altar the object 1 Maccabees 1:54 calls, in the same Greek words the Greek Daniel uses, an abomination of desolation, rededicating the temple to Olympian Zeus (2 Maccabees 6:2). Eberhard Nestle proposed in 1884 that shiqquts meshomem mocks the god's Semitic title Baal Shamem, ‘lord of heaven’. The altar was rededicated three years later (1 Maccabees 4:52-59), the origin of Hanukkah (John 10:22). The dispensational reading, anticipated by Hippolytus (Commentary on Daniel, about AD 204) and developed by J. N. Darby and the Scofield Reference Bible (1909), places a gap after the 69th week and assigns the 70th to a future ruler who breaks a seven-year covenant (compare the 1,260 days of Revelation 11-13). Keil read the numbers symbolically and extended the 70th week to the end of the present age. Meredith Kline (1974) argued that the covenant is Christ's, confirmed by his death, which ended sacrifice.",
+      "nt": [
+        { "ref": "Matthew 24:15", "note": "Jesus takes up the phrase in his discourse on the temple's destruction: “So when you see standing in the holy place ‘the abomination of desolation,’ described by the prophet Daniel (let the reader understand),” (Matthew 24:15; compare Mark 13:14). The Greek to bdelygma tēs erēmōseōs matches the Greek of Daniel 9:27, 11:31, and 12:11 and of 1 Maccabees 1:54. By calling it future, Jesus treats Antiochus's desecration as a pattern that would be repeated. Luke's parallel interprets the sign for Gentile readers as Jerusalem surrounded by armies (Luke 21:20), pointing to the Roman siege of AD 66-70; futurist interpreters add a further fulfillment still to come (compare 2 Thessalonians 2:3-4)." }
+      ],
+      "theology": [
+        { "id": "judgment", "note": "The prophecy's last word is that the decreed end will be poured out on the desolator. The same verb that described the covenant curse on Israel in verse 11 now describes God's judgment on Israel's destroyer: no power that desecrates God's dwelling has the final word." }
+      ],
+      "refs": ["Daniel 11:31", "Daniel 12:11", "Isaiah 10:23", "Mark 13:14", "Hebrews 10:18"]
+    }
+  ]
+}

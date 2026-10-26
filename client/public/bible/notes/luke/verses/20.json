@@ -1,0 +1,389 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The first public challenge in the temple. As Jesus teaches the people and proclaims the good news, representatives of the three groups that made up the Sanhedrin confront him with a double question: by what kind of authority does he act, and who gave it to him. ‘These things’ most naturally includes the clearing of the temple (19:45-46) and his taking over its courts as a place of teaching (19:47).",
+      "grammar": "En mia tōn hēmerōn, ‘on one of the days’, is a Lukan way of opening a scene (5:17, 8:22), and it places this debate within the daily teaching of 19:47. Luke adds euangelizomenou, ‘proclaiming the good news’, to Mark's simple teaching; it is the verb of the Nazareth sermon (4:18) and of Jesus' mission (4:43). Epestēsan, ‘they came up to’ or ‘stood over’, is used of the angel appearing to the shepherds (2:9) and can carry a note of confrontation. The question has two parts: en poia exousia, ‘by what sort of authority’, asks about the kind of authority (prophetic, priestly, royal), and tis estin ho dous, ‘who is the one who gave’, asks about its source.",
+      "words": ["G1321", "G2411", "G2097", "G2186", "G0749", "G1122", "G4245G", "G4169", "G1849", "G1325"],
+      "theology": [
+        { "id": "messiah", "note": "The leaders' question is the right question, and the Gospel has already answered it: the Father gave the Son authority at the baptism and transfiguration (3:22, 9:35), and the risen Jesus will speak of all things handed over to him. The question of authority is the question of who Jesus is." }
+      ],
+      "parallels": ["Mark 11:27-28", "Matthew 21:23"],
+      "refs": ["Luke 4:32", "Luke 5:24", "Luke 4:18", "John 5:27"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus answers with a question of his own, a common move in rabbinic debate. It is not an evasion: if they can say where John's authority came from, they have their answer about Jesus, whom John announced (3:16).",
+      "grammar": "Erōtēsō humas kagō logon, literally ‘I also will ask you a word’, uses logos in the sense of a question or matter for discussion. Eipate moi, ‘tell me’, is an aorist imperative that puts the questioners on the spot. The alternatives ex ouranou and ex anthrōpōn, ‘from heaven’ and ‘from men’, use ‘heaven’ as a reverent way of saying ‘from God’, as the lost son says ‘I have sinned against heaven’ (15:18). The imperfect ēn, ‘was it’, looks back on John's ministry as completed.",
+      "words": ["G2065", "G3056", "G0908", "G2491G", "G3772", "G0444"],
+      "theology": [
+        { "id": "revelation", "note": "The counter-question assumes that God's authority can be recognized in the work of his messengers. John's baptism was either God's call to Israel or a human invention, and the answer to that settles the answer about Jesus. Revelation in Luke is not withheld from the honest inquirer but from the one who will not follow the evidence he already has." }
+      ],
+      "parallels": ["Mark 11:29-30", "Matthew 21:24-25"],
+      "refs": ["Luke 3:16", "Luke 7:26-30", "Luke 15:18", "John 1:6-7"]
+    },
+    {
+      "v": "5-7",
+      "context": "The leaders confer and see that either answer traps them: ‘from heaven’ convicts them of unbelief, and ‘from men’ risks the anger of a crowd that held John to be a prophet. They choose to profess ignorance.",
+      "grammar": "Sunelogisanto pros heautous, ‘they reasoned together among themselves’, occurs only here in the New Testament; Luke lets the reader overhear the calculation. Katalithasei, ‘will stone us to death’, a compound of lithos, ‘stone’, with kata- for thoroughness, occurs only here in the New Testament. Laos hapas, ‘all the people’, and pepeismenos estin, ‘is convinced’, a perfect passive participle with the verb to be, describe a settled conviction. Their reply is indirect speech, apekrithēsan mē eidenai pothen, ‘they answered that they did not know from where’, which Luke reports without quoting, as if the answer were too thin to deserve direct speech.",
+      "words": ["G4817", "G4100", "G2992", "G2642", "G3982", "G4396", "G6063", "G4159"],
+      "history": "Stoning in the first century could be a legal penalty or an act of crowd violence, and Luke-Acts shows both: Stephen stoned after a hearing (Acts 7:58), Paul stoned at Lystra by a crowd (Acts 14:19), and the apostles later taken without force because the officers feared being stoned by the people (Acts 5:26). John's standing with the people is confirmed by Josephus, who reports that many Jews regarded Herod Antipas's defeat by the Nabatean king as God's punishment for killing John (Antiquities 18.116-119).",
+      "theology": [
+        { "id": "repentance", "note": "Luke has already said that the Pharisees and experts in the Law rejected God's purpose for themselves by refusing John's baptism (7:30). Their calculated agnosticism here continues that refusal: they will not admit a call to repentance they did not obey." }
+      ],
+      "parallels": ["Mark 11:31-33", "Matthew 21:25-27"],
+      "refs": ["Luke 7:29-30", "Luke 1:76", "Acts 5:26", "Matthew 21:32"]
+    },
+    {
+      "v": "8",
+      "context": "Since they will not answer, Jesus will not answer either. The refusal ends the first round, but the parable that follows answers the question indirectly for anyone with ears to hear.",
+      "grammar": "Oude egō legō humin, ‘neither do I tell you’, uses the emphatic pronoun egō to match their refusal with his. The present tenses legō and poiō, ‘I tell’, ‘I do’, frame his authority as ongoing activity, not a past claim. The same pattern returns at his trial, where Jesus answers the council, ‘If I tell you, you will not believe’ (22:67).",
+      "words": ["G3761", "G1473", "G3004G", "G4169", "G1849", "G4160G"],
+      "theology": [
+        { "id": "revelation", "note": "Jesus withholds a direct answer from those who have shown they will not accept one, not from those who seek. The parable in the next verse gives the answer in a form that only those willing to see themselves in it will grasp." }
+      ],
+      "parallels": ["Mark 11:33", "Matthew 21:27"],
+      "refs": ["Luke 22:67-68", "Luke 8:10", "Matthew 7:6"]
+    },
+    {
+      "v": "9",
+      "context": "Jesus turns to the people and tells the parable of the vineyard. A man plants a vineyard, leases it to farmers, and goes away for a long time. The opening recalls Isaiah's Song of the Vineyard, though Luke shortens its details.",
+      "grammar": "Ērxato pros ton laon legein, ‘he began to tell the people’, addresses the parable to the crowd, where Mark has Jesus speak to the leaders (Mark 12:1). Ephuteusen ampelōna, ‘planted a vineyard’, echoes the Septuagint of Isaiah 5:2, and exedeto geōrgois, ‘leased it to farmers’, uses the middle voice of ekdidōmi, to let out for one's own benefit. Apedēmēsen, ‘went abroad’, is the verb used of the younger son in 15:13; chronous hikanous, ‘for considerable times’, a detail only Luke has, lengthens the absence and matches the long absence of the nobleman in 19:12.",
+      "words": ["G2992", "G3850", "G5452", "G0290", "G1554", "G1092", "G0589", "G5550", "G2425"],
+      "theology": [
+        { "id": "israel", "note": "The vineyard in the Old Testament is Israel, planted and tended by God (Isaiah 5:7, Psalm 80:8-16). The parable tells Israel's story from God's side: a people prepared and entrusted, and an owner who waits a long time for fruit." }
+      ],
+      "ot": [
+        { "ref": "Isaiah 5:1-2", "note": "Isaiah sings of his beloved's vineyard on a fertile hill, which he dug, cleared, planted with choice vines, and furnished with a tower and a winepress, but which yielded wild grapes. The Septuagint says ephuteusa ampelon, ‘I planted a vine’, and Mark follows its description closely (Mark 12:1). Luke keeps only the planting, but the phrase is enough to call up the song, whose explanation every hearer knew: the vineyard of the LORD of Hosts is the house of Israel (Isaiah 5:7). In Isaiah the vineyard itself is judged and laid waste; in Jesus' parable the judgment falls on the tenants." }
+      ],
+      "parallels": ["Mark 12:1", "Matthew 21:33"],
+      "refs": ["Isaiah 5:1-7", "Psalm 80:8-16", "Jeremiah 2:21", "Luke 13:6-9"]
+    },
+    {
+      "v": "10-12",
+      "context": "At harvest the owner sends a servant for his share of the fruit, then a second, then a third. Each is treated worse than the one before: beaten and sent away empty, beaten and shamed, wounded and thrown out. In Luke, unlike Mark and Matthew, no servant is killed; the killing is reserved for the son.",
+      "grammar": "Kairō, ‘at the season’, is the appointed time for fruit, the same word as the ‘time of your visitation’ in 19:44. Hina dōsousin, ‘so that they would give’, has a future indicative after hina, a later Greek usage. Verses 11 and 12 open with prosetheto pempsai, literally ‘he added to send’, the Hebrew idiom meaning ‘he sent again’, familiar from the Septuagint and used by Luke in 19:11. The three participles build a crescendo: deirantes, ‘beating’; atimasantes, ‘dishonoring’; traumatisantes, ‘wounding’. Kenon, ‘empty’, sums up the result: the owner receives nothing.",
+      "words": ["G2540", "G0649", "G1401", "G2590", "G1194", "G1821", "G2756", "G4369", "G0818", "G5135", "G1544"],
+      "history": "Israel's Scriptures remembered prophets rejected and abused, and the Chronicler summarized the whole history before the exile in those terms: God sent his messengers again and again because he had compassion on his people, but they mocked them and despised his words until there was no remedy (2 Chronicles 36:15-16). Jeremiah was beaten and put in stocks (Jeremiah 20:2), and Uriah was killed by King Jehoiakim (Jeremiah 26:20-23). Nehemiah's prayer confesses that Israel killed the prophets who warned them (Nehemiah 9:26).",
+      "theology": [
+        { "id": "israel", "note": "The repeated sending shows God's patience toward his people as much as their resistance. The owner could have acted after the first servant; the parable's owner sends again and again, as the Chronicler said God did out of compassion." }
+      ],
+      "parallels": ["Mark 12:2-5", "Matthew 21:34-36"],
+      "refs": ["2 Chronicles 36:15-16", "Nehemiah 9:26", "Jeremiah 7:25-26", "Luke 13:34", "Acts 7:52"]
+    },
+    {
+      "v": "13",
+      "context": "Only Luke gives the owner a moment of deliberation. He asks what he should do, decides to send his beloved son, and hopes the tenants will respect him. The question and the ‘perhaps’ make the owner's patience and vulnerability vivid.",
+      "grammar": "Ti poiēsō, ‘what shall I do?’, is a deliberative subjunctive, the same self-questioning used by the rich fool (12:17) and the dishonest manager (16:3), but here it introduces an act of costly generosity. Pempsō ton huion mou ton agapēton, ‘I will send my son, the beloved’, repeats the article so that ‘the beloved’ stands as a title, as at the baptism (3:22). Isōs, ‘perhaps’, occurs only here in the New Testament. Entrapēsontai, ‘they will respect’, is from entrepō, to turn in on oneself, hence to show reverence or feel shame; it is the word used of the unjust judge who did not respect anyone (18:2, 18:4).",
+      "words": ["G0290", "G4160G", "G3992", "G5207", "G0027", "G2481", "G1788"],
+      "theology": [
+        { "id": "messiah", "note": "The son is not one more servant but a different kind of messenger, ‘my beloved son’, the phrase of the voice from heaven (3:22). Jesus places himself at the end of the line of prophets and above it, as the heir of the vineyard." },
+        { "id": "love", "note": "The owner's ‘perhaps’ is not ignorance but a picture of God's persistent love, which sends the son even to those who have abused every messenger. Paul will reason in the same direction: God did not spare his own Son (Romans 8:32)." }
+      ],
+      "parallels": ["Mark 12:6", "Matthew 21:37"],
+      "refs": ["Luke 3:22", "Luke 9:35", "Genesis 22:2", "Romans 8:32", "Hebrews 1:1-2"]
+    },
+    {
+      "v": "14-15",
+      "context": "The tenants recognize the son as the heir and reason that his death will make the inheritance theirs. They throw him out of the vineyard and kill him. The recognition is the chilling detail: they kill him not by mistake but because of who he is.",
+      "grammar": "Dielogizonto pros allēlous, ‘they were reasoning with one another’, is imperfect, the same plotting as the leaders in verse 5. Houtos estin ho klēronomos, ‘this is the heir’, uses the article: the one heir. Apokteinōmen auton, ‘let us kill him’, is a hortatory subjunctive, and hina hēmōn genētai hē klēronomia, ‘so that the inheritance may become ours’, places hēmōn, ‘ours’, first for emphasis. Luke and Matthew have the order ekbalontes exō... apekteinan, ‘throwing him out, they killed him’, where Mark has ‘they killed him and threw him out’ (Mark 12:8).",
+      "words": ["G1092", "G1260", "G2818", "G0615", "G2817", "G1544", "G1854"],
+      "theology": [
+        { "id": "atonement", "note": "The son is killed outside the vineyard. Luke does not draw the connection himself, but Christian readers from early on linked the detail with Jesus crucified outside the city, as Hebrews says that Jesus suffered outside the gate (Hebrews 13:12). In the parable the death is the tenants' crime; in the Gospel as a whole it is also the means of God's saving purpose (Acts 2:23)." }
+      ],
+      "ot": [
+        { "ref": "Genesis 37:20", "note": "When Joseph's brothers see the favored son coming, they say to one another, ‘Come, let us kill him’, and the Septuagint's deute apokteinōmen auton is the phrase Mark and Luke give the tenants. The echo makes the beloved son a new Joseph, rejected by his own out of envy, and the reader of Genesis knows that God turned that rejection into the saving of many lives (Genesis 50:20)." }
+      ],
+      "parallels": ["Mark 12:7-8", "Matthew 21:38-39"],
+      "refs": ["Genesis 37:18-20", "Hebrews 13:12", "John 19:17", "Acts 2:23", "Acts 3:15"]
+    },
+    {
+      "v": "16",
+      "context": "Having asked what the owner will do (verse 15), Jesus answers his own question: he will come, destroy those tenants, and give the vineyard to others. The people's response, found only in Luke, is horror at the thought.",
+      "grammar": "The question of verse 15, ti oun poiēsei, ‘what then will he do?’, echoes the owner's own ti poiēsō in verse 13; the owner's patience is now exhausted. Eleusetai kai apolesei, ‘he will come and destroy’, uses apollumi, the verb of 19:47 where the leaders seek to destroy Jesus: the destroyers will be destroyed. Allois, ‘to others’, does not specify who. Mē genoito, ‘may it not be’, uses the rare optative mood for a wish; the phrase occurs fifteen times in the New Testament, fourteen of them in Paul's letters (Romans 3:4, 6:2) and only here in the Gospels.",
+      "words": ["G2064", "G0622", "G1092", "G1325", "G0290", "G0243", "G1096"],
+      "theology": [
+        { "id": "israel", "note": "The vineyard is not destroyed, as in Isaiah 5, but transferred, and the tenants are the leaders (verse 19). The people's cry shows that they, the hearers of the parable, do not want the vineyard lost. Luke's story names the new tenants in part: the Twelve, Jewish men appointed to judge the twelve tribes (22:29-30), and the chapter note's hard question sets out how far this passage supports the view that the church replaced Israel." },
+        { "id": "judgment", "note": "The owner's coming is judgment on stewards who abused their trust. Luke has pictured the same act in the parable of the minas (19:15, 19:27), and in both the judgment falls on those who refuse the owner's claim." }
+      ],
+      "parallels": ["Mark 12:9", "Matthew 21:40-41"],
+      "refs": ["Isaiah 5:4-6", "Luke 22:29-30", "Acts 13:46", "Romans 11:1", "Romans 3:4"]
+    },
+    {
+      "v": "17",
+      "context": "Jesus looks straight at the people who have just recoiled and quotes Psalm 118:22: the stone the builders rejected has become the cornerstone. The quotation answers their horror. What is unthinkable in the story is what Scripture says God will do: the rejected one becomes the foundation of something new.",
+      "grammar": "Emblepsas autois, ‘looking at them intently’, is a detail only Luke has; he uses the same verb for the Lord turning to look at Peter (22:61). Ti oun estin to gegrammenon touto, ‘what then is this that is written?’, uses the perfect participle for Scripture's abiding witness, and oun, ‘then’, ties it to the people's objection: if the rejection could never happen, what does this Scripture mean? Apedokimasan, ‘rejected’, is the verb of the first passion prediction, where the Son of Man must be rejected by the elders, chief priests, and scribes (9:22), the same three groups who questioned him in verse 1.",
+      "words": ["G1689", "G1125", "G3037", "G0593", "G3618", "G2776", "G1137"],
+      "theology": [
+        { "id": "exaltation", "note": "The psalm moves from rejection to exaltation by God's act. In the parable the son stays dead; the quotation adds what the story could not, that God will reverse the builders' verdict. Peter preaches this very text to the same council after the resurrection (Acts 4:10-11)." }
+      ],
+      "ot": [
+        { "ref": "Psalm 118:22", "note": "The Hebrew reads even ma'asu habbonim hayetah lerosh pinnah, ‘a stone the builders rejected has become the head of the corner’. In the psalm, the last of the Hallel sung at the festivals, the rejected stone is the king or Israel, delivered by God and brought in triumph to his house. Luke quotes the Septuagint (Psalm 117:22) exactly, lithon hon apedokimasan hoi oikodomountes, houtos egenēthē eis kephalēn gōnias, but stops before the next line, ‘this is from the LORD’, which Mark and Matthew include. The ‘head of the corner’ may be a cornerstone at the foundation or a capstone crowning the structure; either way it holds the building together. The same psalm supplied the disciples' blessing in 19:38." }
+      ],
+      "parallels": ["Mark 12:10-11", "Matthew 21:42"],
+      "refs": ["Luke 9:22", "Acts 4:10-11", "1 Peter 2:4-7", "Ephesians 2:20"]
+    },
+    {
+      "v": "18",
+      "context": "A warning that joins two stone images. The stone cannot be treated as neutral: those who stumble over it are broken, and those on whom it falls are crushed. The verse turns the psalm's promise into a threat for those who reject the stone.",
+      "grammar": "Pas ho pesōn, ‘everyone who falls’, is a general statement, and eph' hon d' an pesē, ‘but on whomever it falls’, is an indefinite relative clause with an and the subjunctive. The future passive sunthlasthēsetai, ‘will be shattered’, and the future active likmēsei, ‘it will crush’, are both vivid. Likmaō originally meant to winnow, to toss grain so the wind carries off the chaff, and from that to scatter like chaff or crush to powder; Theodotion's Greek version of Daniel 2:44 uses it of the stone that crushes the kingdoms.",
+      "words": ["G4098", "G3037", "G4917", "G3039"],
+      "theology": [
+        { "id": "judgment", "note": "The same stone is a foundation for those who build on it and a ruin for those who oppose it. Simeon had said that the child was set for the fall and rising of many in Israel (2:34), and this verse gives that prophecy its last form in Luke." }
+      ],
+      "ot": [
+        { "ref": "Isaiah 8:14-15", "note": "Isaiah says the LORD will be a sanctuary, but also a stone of stumbling and a rock of offense to both houses of Israel, and many will stumble, fall, and be broken. This supplies the first half of the saying, falling on the stone." },
+        { "ref": "Daniel 2:34-35", "note": "In Nebuchadnezzar's dream a stone cut without hands strikes the statue of the kingdoms, crushes it so that it blows away like chaff, and becomes a mountain filling the earth; Daniel explains that the God of heaven will set up a kingdom that will crush all these kingdoms and endure forever (2:44). The Aramaic uses daqaq, ‘to crush fine’, and Theodotion's Greek of 2:44 renders it with likmaō, Luke's verb. The stone that falls on its opponents is the kingdom of God in the person of the rejected son." }
+      ],
+      "text": "The same saying stands at Matthew 21:44 in most manuscripts but is missing from some early witnesses there, which is why modern Bibles differ at that verse. In Luke the verse has no textual doubt.",
+      "parallels": ["Matthew 21:44"],
+      "refs": ["Luke 2:34", "Isaiah 8:14-15", "Daniel 2:44-45", "Romans 9:32-33", "1 Peter 2:8"]
+    },
+    {
+      "v": "19",
+      "context": "The leaders understand that the parable is aimed at them and want to arrest Jesus at once, but they fear the people. The verse confirms who the tenants are and shows the leaders acting out the parable even as they hear it.",
+      "grammar": "Ezētēsan epibalein ep' auton tas cheiras, ‘they sought to lay hands on him’, is the idiom for arrest, and en autē tē hōra, ‘in that very hour’, is Luke's phrase for immediacy (2:38, 10:21). Ephobēthēsan ton laon, ‘they feared the people’, gives the reason they held back, as in 22:2. Egnōsan gar hoti pros autous eipen, ‘for they knew he had spoken with reference to them’: pros here means ‘against’ or ‘about’, since the parable was told to the people (verse 9) but aimed at the leaders.",
+      "words": ["G2212", "G1122", "G0749", "G1911", "G5495", "G5610", "G5399", "G2992", "G1097", "G3850"],
+      "theology": [
+        { "id": "leadership", "note": "The leaders recognize the truth about themselves and respond by trying to silence its speaker. The parable is addressed to all who hold God's people in trust, and the leaders' reaction shows the danger of that trust: the stewards come to treat the vineyard as their own." }
+      ],
+      "parallels": ["Mark 12:12", "Matthew 21:45-46"],
+      "refs": ["Luke 19:47-48", "Luke 22:2", "Luke 22:53", "Acts 5:26"]
+    },
+    {
+      "v": "20",
+      "context": "The leaders change tactics. They cannot arrest him openly, so they send agents posing as sincere inquirers to catch him in a statement that could be reported to the Roman governor. Luke states the aim plainly: to hand him over to the governor's jurisdiction.",
+      "grammar": "Paratērēsantes, ‘watching closely’, is the verb for the Pharisees watching to see whether Jesus would heal on the Sabbath (6:7, 14:1). Enkathetous, ‘suborned agents, spies’, occurs only here in the New Testament and describes men hired to lie in wait. Hupokrinomenous heautous dikaious einai, ‘pretending that they were righteous’, uses the verb from which hypocrite comes. Hina epilabōntai autou logou, ‘so that they might seize on a word of his’, and hōste paradounai auton tē archē kai tē exousia tou hēgemonos, ‘so as to hand him over to the rule and authority of the governor’, spell out the plan. Hēgemōn, ‘governor’, is Luke's term for Pilate (3:1 uses the related verb), and Luke has warned disciples they will be brought before archai and exousiai (12:11).",
+      "words": ["G3906", "G0649", "G1455", "G5271", "G1342", "G1949", "G3056", "G3860", "G0746", "G1849", "G2232"],
+      "theology": [
+        { "id": "state", "note": "The plot depends on the power of the Roman state to execute a man the Jewish leaders cannot. Luke shows the religious and political authorities converging against Jesus, as the church will pray in Acts 4:25-27 with Psalm 2 in mind." }
+      ],
+      "parallels": ["Mark 12:13", "Matthew 22:15-16"],
+      "refs": ["Luke 6:7", "Luke 11:53-54", "Luke 12:11", "Luke 23:1-2", "Acts 4:25-27"]
+    },
+    {
+      "v": "21",
+      "context": "The spies open with flattery designed to box Jesus in: since he teaches truly and shows no favoritism, he must answer honestly even if it is dangerous. The compliment is true, which makes the trap sharper.",
+      "grammar": "Orthōs legeis kai didaskeis, ‘you speak and teach rightly’, uses the adverb orthōs, used by Jesus to commend the lawyer (10:28). Ou lambaneis prosōpon, literally ‘you do not receive a face’, is a Hebraism carried through the Septuagint from nasa panim, ‘to lift up a face’, meaning to show partiality or favor to someone because of their status (Leviticus 19:15). Ep' alētheias, ‘in accordance with truth’, and tēn hodon tou theou, ‘the way of God’, describe teaching that follows God's path regardless of who is listening.",
+      "words": ["G1320", "G6063", "G3723", "G1321", "G2983", "G4383", "G0225", "G3598", "G2316"],
+      "theology": [
+        { "id": "god", "note": "The phrase the spies use insincerely describes God himself, who shows no partiality (Deuteronomy 10:17, Acts 10:34). Their flattery unwittingly identifies Jesus' teaching with God's own impartial justice." }
+      ],
+      "parallels": ["Mark 12:14", "Matthew 22:16"],
+      "refs": ["Leviticus 19:15", "Deuteronomy 10:17", "Acts 10:34", "Galatians 2:6"]
+    },
+    {
+      "v": "22",
+      "context": "The question itself: is it lawful for us to pay tribute to Caesar or not? ‘Lawful’ means lawful under God's Law, and ‘or not’ demands a yes or no. Either answer seemed to lose Jesus either the people or his freedom.",
+      "grammar": "Exestin, ‘is it permitted’, is the word used in the Sabbath controversies (6:2, 6:9, 14:3): the question is framed as a matter of Torah, not policy. Hēmas, ‘for us’, identifies the questioners with the people who pay. Kaisari phoron dounai, ‘to give tribute to Caesar’, uses phoros, the ordinary Greek word for tribute from a subject people. The aorist infinitive dounai, ‘to give’, will be answered in verse 25 with a different verb.",
+      "words": ["G1832", "G2541J", "G5411", "G1325"],
+      "history": "Roman provinces paid direct taxes of two main kinds, a tax on land and its produce (tributum soli) and a tax on persons (tributum capitis), assessed through a census. Judea had paid such tribute directly to Rome only since AD 6, when Archelaus was deposed and Quirinius conducted the census Gamaliel recalls in Acts 5:37. Galilee, still under Herod Antipas, paid its taxes to him, so the question had its sharpest edge in Jerusalem, where tribute went to Caesar himself.",
+      "theology": [
+        { "id": "state", "note": "The question assumes that God's Law has something to say about the state, and Jesus' answer will agree. Neither the question nor the answer treats political obedience as a purely secular matter." }
+      ],
+      "parallels": ["Mark 12:14", "Matthew 22:17"],
+      "refs": ["Luke 23:2", "Acts 5:37", "Luke 6:9", "Romans 13:6-7"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus sees through the scheme and asks to see a denarius, the coin of the tribute. When they identify the image and inscription as Caesar's, they have already answered part of the question.",
+      "grammar": "Katanoēsas autōn tēn panourgian, ‘perceiving their craftiness’, uses panourgia, literally ‘readiness to do anything’, hence cunning, where Mark has hupokrisis, ‘hypocrisy’ (Mark 12:15). Paul uses panourgia of the serpent deceiving Eve (2 Corinthians 11:3). Deixate moi dēnarion, ‘show me a denarius’, is an aorist imperative. The question tinos echei eikona kai epigraphēn, ‘whose image and inscription does it have?’, uses eikōn, the word of the Greek Old Testament in Genesis 1:26-27, and epigraphē, the word Luke uses later for the inscription over the cross (23:38).",
+      "words": ["G2657", "G3834", "G1166", "G1220", "G2192", "G1504", "G1923", "G2541J"],
+      "history": "Many Jews objected to human images in Jerusalem. Josephus tells how Pilate brought army standards bearing the emperor's image into the city by night early in his governorship, and how crowds of Jews went to Caesarea and lay prostrate for days, baring their necks rather than accept them, until Pilate removed them (Antiquities 18.55-59; Jewish War 2.169-174). The prefects' own bronze coins avoided portraits. That Jesus' questioners could produce a denarius with Caesar's head on request in the temple courts is itself telling.",
+      "parallels": ["Mark 12:15-16", "Matthew 22:18-21"],
+      "refs": ["Genesis 1:26-27", "Luke 23:38", "2 Corinthians 11:3", "Exodus 20:4"]
+    },
+    {
+      "v": "25",
+      "context": "The answer: give back to Caesar what is Caesar's, and to God what is God's. It neither endorses the revolutionaries who refused the tax nor gives Caesar what his coin claimed, divine honor.",
+      "grammar": "The spies asked whether it was lawful dounai, ‘to give’; Jesus answers apodote, ‘give back, pay what is owed’, a compound verb that implies a debt. The coin already belongs to Caesar in a sense, since it carries his image, and returning it is repayment, not tribute to a god. Toinun, ‘then, therefore’, draws the conclusion from their own answer. The two halves are balanced in Greek, ta Kaisaros Kaisari kai ta tou theou tō theō, ‘the things of Caesar to Caesar and the things of God to God’, but the balance is not equality: the second clause, in light of Genesis 1:27, claims the whole person.",
+      "words": ["G5106", "G0591", "G2541J", "G2316"],
+      "theology": [
+        { "id": "state", "note": "Rulers have a real claim, to be paid what is owed them (Romans 13:7), but a limited one. The verse does not divide life into two independent realms; it subordinates Caesar's claim to God's, and when the two conflict, the apostles will answer that they must obey God rather than men (Acts 5:29)." },
+        { "id": "image", "note": "The coin bears Caesar's image and belongs to him; human beings bear God's image (Genesis 1:27) and belong to God. Tertullian drew out this reading early (On Idolatry 15), and it remains the most natural way to hear the contrast between the two clauses." }
+      ],
+      "parallels": ["Mark 12:17", "Matthew 22:21"],
+      "refs": ["Romans 13:1-7", "1 Peter 2:13-17", "Acts 5:29", "Genesis 1:27"]
+    },
+    {
+      "v": "26",
+      "context": "The spies fail to catch him in front of the people and fall silent, amazed. Luke notes the setting, ‘before the people’, because the trap depended on a public statement. Their silence will not stop the leaders from lying about his answer before Pilate (23:2).",
+      "grammar": "Ouk ischusan epilabesthai, ‘they were not able to seize on’, repeats the verb of verse 20: the plan named there fails here. Rhēmatos, ‘a word, a saying’, and enantion tou laou, ‘in front of the people’, stress the public character of the failure. Thaumasantes epi tē apokrisei autou, ‘marveling at his answer’, and esigēsan, ‘they fell silent’, close the scene; the lawyers and Pharisees were reduced to the same silence in 14:4-6.",
+      "words": ["G2480", "G1949", "G4487", "G1726", "G2992", "G2296", "G0612", "G4601"],
+      "theology": [
+        { "id": "wisdom", "note": "Jesus' answer escapes the trap not by cleverness alone but by exposing what both sides of the dilemma assumed. His wisdom is the kind he will promise his disciples when they are brought before kings and governors: words no adversary can resist or contradict (21:15)." }
+      ],
+      "parallels": ["Mark 12:17", "Matthew 22:22"],
+      "refs": ["Luke 14:6", "Luke 21:15", "Luke 23:2", "Luke 2:47"]
+    },
+    {
+      "v": "27",
+      "context": "Now the Sadducees, whom Luke introduces here for the first time in his Gospel, come with a question designed to make belief in resurrection look absurd. Luke identifies them by their denial, the point on which the whole exchange turns.",
+      "grammar": "Tines tōn Saddoukaiōn, ‘some of the Sadducees’, is followed by hoi antilegontes anastasin mē einai, ‘who deny that there is a resurrection’. Antilegō means to speak against or contradict, and with mē einai forms a double negative that is normal in Greek for verbs of denial. Some manuscripts, followed by the editions of Westcott and Hort and of Tregelles, read the simpler legontes, ‘who say’, as Mark has (Mark 12:18). Anastasis, ‘resurrection’, literally a standing up, is the word Luke will use for the apostles' central message in Acts (Acts 4:2).",
+      "words": ["G4334", "G4523", "G0483", "G0386", "G1905"],
+      "history": "Luke's second volume shows the Sadducees in the same role: annoyed that the apostles proclaimed in Jesus the resurrection from the dead (Acts 4:1-2), leading the arrest of the apostles (Acts 5:17), and divided from the Pharisees in the council over resurrection, angels, and spirits (Acts 23:6-8). Josephus describes them as holding that souls perish with the body (Antiquities 18.16).",
+      "theology": [
+        { "id": "resurrection", "note": "The denial of resurrection is the Sadducees' defining mark in Luke-Acts, and the resurrection is the apostles' defining message. This verse introduces the conflict that Jesus' own rising will settle and that Acts will carry on." }
+      ],
+      "parallels": ["Mark 12:18", "Matthew 22:23"],
+      "refs": ["Acts 4:1-2", "Acts 23:6-8", "1 Corinthians 15:12", "Daniel 12:2"]
+    },
+    {
+      "v": "28",
+      "context": "The Sadducees cite Moses, whose writings they accepted as binding, on the duty of a man to marry his dead brother's childless widow and raise up children for him. The appeal to Moses matters: Jesus will answer from Moses too (verse 37).",
+      "grammar": "Mōusēs egrapsen hēmin, ‘Moses wrote for us’, frames the law as Scripture addressed to Israel. The case is a condition, ean tinos adelphos apothanē, ‘if someone's brother dies’, with ateknos, ‘childless’, a word found only in this passage in the New Testament. The purpose clause hina labē... kai exanastēsē sperma tō adelphō autou, ‘that he should take the wife and raise up offspring for his brother’, uses exanistēmi, ‘to raise up’, a compound of the same root as anastasis. The Sadducees' own verb for continuing a name through children is the verb of resurrection, which is the only kind of life after death they allowed.",
+      "words": ["G1320", "G3475", "G1125", "G0080", "G0599", "G1135H", "G0815", "G2983", "G1817", "G4690G"],
+      "theology": [
+        { "id": "family", "note": "The levirate law protected a widow who would otherwise have no place and no inheritance, and preserved a dead man's name in Israel (Deuteronomy 25:6, Ruth 4:10). The Sadducees use a law of mercy as a debating trick, but the law itself shows God's care for the continuation of families." }
+      ],
+      "ot": [
+        { "ref": "Deuteronomy 25:5-6", "note": "The Hebrew law of yibbum requires that when brothers live together and one dies without a son, a surviving brother take the widow, and her firstborn son carry on the dead man's name so that it is not blotted out of Israel. The Sadducees paraphrase rather than quote. Their phrase ‘raise up offspring for his brother’ is closer to Judah's words to Onan in Genesis 38:8, which the Septuagint renders anastēson sperma tō adelphō sou,. Luke keeps Mark's wording with small changes, including his word ateknos." }
+      ],
+      "parallels": ["Mark 12:19", "Matthew 22:24"],
+      "refs": ["Deuteronomy 25:5-10", "Genesis 38:8", "Ruth 4:5-10"]
+    },
+    {
+      "v": "29-32",
+      "context": "The case: seven brothers, each marrying the widow in turn and dying childless, and finally the woman dies. The story is told briskly, with the middle brothers summarized, because its purpose is to reach the punch line in verse 33.",
+      "grammar": "Hepta oun adelphoi ēsan, ‘now there were seven brothers’, opens like a story, with oun linking it to the law just cited. Luke's telling is compressed: the second brother gets only three words in Greek, kai ho deuteros, ‘and the second’, and the third is joined to all seven with hōsautōs, ‘likewise’. Ou katelipon tekna, ‘they did not leave children’, echoes Mark's form of the law, where the dead brother leaves (kataleipō) a wife (Mark 12:19). Husteron, ‘lastly, afterward’, marks the end of the sequence: the woman outlives them all.",
+      "words": ["G2033", "G0080", "G4413G", "G2983", "G0599", "G0815", "G1208", "G5154", "G5615", "G2641", "G5043", "G5306"],
+      "text": "Verse 30 in the BSB consists of three words because the earliest manuscripts read only ‘and the second’. Later manuscripts, followed by the King James Version, fill it out with the second brother marrying her and dying childless. The chapter note discusses the variant.",
+      "history": "Seven brothers were a familiar number in Jewish storytelling. The most famous seven, in 2 Maccabees 7, died under Antiochus IV confessing that God would raise them up, and the book of Tobit tells of Sarah, whose seven husbands died on their wedding nights (Tobit 3:8). Whether the Sadducees meant to mock either story, their case turns a hope held by martyrs into a riddle.",
+      "parallels": ["Mark 12:20-22", "Matthew 22:25-27"],
+      "refs": ["Mark 12:20-22", "Genesis 38:6-11", "Hebrews 11:35"]
+    },
+    {
+      "v": "33",
+      "context": "The punch line: in the resurrection, whose wife will she be, since all seven had her? The question assumes that if there is a resurrection, the life of the age to come must reproduce the relationships of this one, and so resurrection produces an absurdity.",
+      "grammar": "En tē anastasei, ‘in the resurrection’, is placed early for emphasis, the point under attack. Tinos autōn ginetai gunē, ‘of which of them does she become wife?’, uses a present tense with future sense, and ginetai, ‘becomes’, suggests the Sadducees' assumption that the resurrection would simply restart marital life. Hoi gar hepta eschon autēn gunaika, ‘for the seven had her as wife’, uses the aorist for each marriage viewed as a completed fact.",
+      "words": ["G1135H", "G0386", "G1096", "G2033", "G2192"],
+      "theology": [
+        { "id": "resurrection", "note": "The Sadducees' argument works only if resurrection means this life resumed. Jesus' answer will reject that premise, not the resurrection: the age to come is a new mode of life, not an extension of the old arrangements." }
+      ],
+      "parallels": ["Mark 12:23", "Matthew 22:28"],
+      "refs": ["1 Corinthians 15:35-44", "Matthew 22:29", "Mark 12:24"]
+    },
+    {
+      "v": "34-35",
+      "context": "Jesus contrasts two ages. The sons of this age marry and are given in marriage; those counted worthy of the age to come and of the resurrection from the dead do neither. Luke's form of the answer is longer than Mark's and frames it in terms of the two ages familiar from Jewish thought.",
+      "grammar": "Hoi huioi tou aiōnos toutou, ‘the sons of this age’, is a Semitic idiom for people who belong to the present order, used also in 16:8. Gamousin kai gamiskontai, ‘they marry and are given in marriage’, pairs the active for men and the passive for women given by their fathers, reflecting ancient custom. Kataxiōthentes, ‘those counted worthy’, is an aorist passive participle; the passive implies God as the one who counts them worthy, as in Acts 5:41 and 2 Thessalonians 1:5. Tou aiōnos ekeinou tuchein kai tēs anastaseōs tēs ek nekrōn, ‘to attain that age and the resurrection from among the dead’, uses ek nekrōn, ‘out from the dead’, the phrase Acts uses for Jesus' resurrection (Acts 4:2).",
+      "words": ["G5207", "G0165G", "G1060", "G1061", "G2661", "G5177", "G0386", "G3498"],
+      "theology": [
+        { "id": "resurrection", "note": "The resurrection belongs to the age to come, a different order of existence, and it is received by those God counts worthy. Jesus speaks here of the resurrection of the righteous (compare 14:14), without addressing the resurrection of the wicked that Daniel 12:2 and Acts 24:15 also mention." },
+        { "id": "family", "note": "Marriage belongs to this age, where death requires children to carry on life. The verse does not devalue marriage, which Jesus defends elsewhere (16:18), but places it within the present order rather than the final one." }
+      ],
+      "parallels": ["Mark 12:25", "Matthew 22:30"],
+      "refs": ["Luke 16:8", "Luke 14:14", "Acts 4:2", "Philippians 3:11", "Acts 24:15"]
+    },
+    {
+      "v": "36",
+      "context": "The reason: the risen cannot die any more, because they are like the angels, and they are sons of God because they are sons of the resurrection. The answer strikes at both of the Sadducees' denials at once, resurrection and angels (Acts 23:8).",
+      "grammar": "Oude gar apothanein eti dunantai, ‘for they are no longer able to die’, gives the reason marriage ends: its purpose in carrying life past death no longer applies. Isangeloi gar eisin, ‘for they are equal to angels’, uses a word found only here in the New Testament. The comparison is specified by its context, immortality. Kai huioi eisin theou tēs anastaseōs huioi ontes, ‘and they are sons of God, being sons of the resurrection’, uses the Semitic ‘son of’ idiom: a son of the resurrection is one who shares in it, as ‘sons of this age’ in verse 34 belong to this one.",
+      "words": ["G3761", "G0599", "G2089", "G1410", "G2465", "G5207", "G2316", "G0386"],
+      "theology": [
+        { "id": "angels", "note": "Jesus affirms the existence of angels against the Sadducees and uses them as the point of comparison for the risen: deathless beings. The risen do not become angels; they are like them in not dying, and they remain human, called sons of God." },
+        { "id": "hope", "note": "The hope Jesus defends is not survival as a shadow but a life death cannot touch, given by God to his children. Paul describes the same hope as the adoption of sons and the redemption of the body (Romans 8:23)." }
+      ],
+      "parallels": ["Mark 12:25", "Matthew 22:30"],
+      "refs": ["Acts 23:8", "Romans 8:19-23", "1 Corinthians 15:42-44", "1 John 3:2", "Revelation 21:4"]
+    },
+    {
+      "v": "37",
+      "context": "Jesus turns from the nature of resurrection to its proof, and he proves it from Moses, the part of Scripture the Sadducees held highest. At the burning bush Moses calls the Lord the God of Abraham, Isaac, and Jacob.",
+      "grammar": "Hoti de egeirontai hoi nekroi, ‘that the dead are raised’, uses a present passive for a general truth, with God as the implied agent. Kai Mōusēs emēnusen, ‘even Moses showed’, uses mēnuō, a legal term for disclosing information (Acts 23:30). Epi tēs batou, ‘at the bush’, is how Jewish teachers cited a passage before Scripture had chapters and verses, by a key word in it; Paul cites ‘in Elijah’ the same way (Romans 11:2). Luke's hōs legei kurion, ‘as he calls the Lord’, makes Moses the one who names God so, where Mark has God speaking to Moses (Mark 12:26).",
+      "words": ["G1453", "G3498", "G3475", "G3377", "G0942", "G2962G", "G2316", "G0011", "G2464", "G2384H"],
+      "theology": [
+        { "id": "covenant", "note": "The argument rests on the covenant. God bound himself to Abraham, Isaac, and Jacob by name and promise, and he still called himself their God centuries after they died. A covenant God whose covenant partners are simply gone would be the God of the dead, and Jesus says he is not." }
+      ],
+      "ot": [
+        { "ref": "Exodus 3:6", "note": "At the burning bush God says in Hebrew anokhi elohei avikha, elohei avraham, elohei yitschaq velohei ya'aqov, ‘I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob’, and he repeats the name in 3:15 as his name forever. In Exodus the words identify the God who now rescues Israel as the one who made promises to the fathers. The Hebrew has no verb; the Septuagint supplies eimi, ‘I am’. The later rabbis also argued for resurrection from the Torah, and the Babylonian Talmud gathers such proofs (b. Sanhedrin 90b-92a); Jesus' argument moves from God's covenant faithfulness to the patriarchs' continuing life." }
+      ],
+      "parallels": ["Mark 12:26", "Matthew 22:31-32"],
+      "refs": ["Exodus 3:6", "Exodus 3:15", "Hebrews 11:16", "Acts 7:32"]
+    },
+    {
+      "v": "38",
+      "context": "The conclusion: God is not God of the dead but of the living, for to him all are alive. The last clause is found only in Luke and extends the argument to all who belong to God.",
+      "grammar": "Theos de ouk estin nekrōn alla zōntōn, ‘he is not a God of dead people but of living ones’, has no article on either noun: God is God of persons who live. Pantes gar autō zōsin, ‘for all live to him’, uses a dative that can be read as reference (‘in his sight’) or as belonging (‘for him’). Fourth Maccabees says the patriarchs do not die to God but live to God (4 Maccabees 7:19, 16:25), using the same construction, and Paul says that whether we live or die we are the Lord's (Romans 14:8).",
+      "words": ["G2316", "G3498", "G2198", "G3956"],
+      "theology": [
+        { "id": "intermediate", "note": "Readers differ on what ‘all live to him’ implies for the time before the resurrection. Many see here the conviction that the dead in God are already alive in his presence, as Jesus promised the dying criminal paradise today (23:43). Others read it chiefly as a guarantee of the future resurrection, the patriarchs being alive to God because he will certainly raise them. Both readings agree that death does not sever God's people from him." },
+        { "id": "hope", "note": "The hope of resurrection rests on the character of God, the living God who does not abandon those he has named as his own. Jesus grounds the hope not in human nature but in God's faithfulness." }
+      ],
+      "parallels": ["Mark 12:27", "Matthew 22:32"],
+      "refs": ["Romans 14:8-9", "Luke 23:43", "Luke 16:22-25", "Philippians 1:23"]
+    },
+    {
+      "v": "39-40",
+      "context": "Some scribes, who shared the Pharisees' belief in the resurrection, commend the answer, and after this no one dares to ask him anything more. Luke places here the notice that Mark puts after the question about the great commandment (Mark 12:34), which Luke has told earlier (10:25-28).",
+      "grammar": "Apokrithentes... eipan, ‘answering, they said’, is a Semitic way of introducing speech. Kalōs eipas, ‘you have spoken well’, is genuine approval; Luke shows scribes siding with Jesus against the Sadducees, as Pharisaic scribes will side with Paul in Acts 23:9. Ouketi gar etolmōn eperōtan auton ouden, ‘for they no longer dared to question him about anything’, uses the imperfect of tolmaō with a double negative for emphasis. With gar the verse explains why the scribes' approval closes the questioning: the challengers have run out of traps.",
+      "words": ["G0611", "G1122", "G1320", "G2573", "G5111", "G1905"],
+      "theology": [
+        { "id": "resurrection", "note": "The scribes' approval marks the resurrection as common ground between Jesus and the Pharisaic tradition. The argument in Acts over Jesus' resurrection will be not whether God raises the dead but whether he has raised Jesus." }
+      ],
+      "parallels": ["Mark 12:28", "Mark 12:34", "Matthew 22:33-34", "Matthew 22:46"],
+      "refs": ["Acts 23:6-9", "Luke 10:25-28", "Luke 14:6"]
+    },
+    {
+      "v": "41",
+      "context": "Now Jesus asks the question. After the leaders' attempts to trap him, he raises a question from Scripture about the identity of the Christ: how can people say the Christ is David's son? The question is not a denial but a puzzle meant to push his hearers beyond their categories.",
+      "grammar": "Pōs legousin, ‘how do they say?’, uses an impersonal third plural, ‘how is it said’; in Mark it is ‘how do the scribes say’ (Mark 12:35). Ton christon einai Dauid huion, ‘that the Christ is David's son’, is an accusative with infinitive, the regular construction for reported statements. Christos, ‘anointed’, translates the Hebrew mashiach and is a title here, ‘the Messiah’.",
+      "words": ["G4459", "G3004G", "G5547", "G1511", "G1138", "G5207"],
+      "history": "The hope that the Messiah would be David's descendant rested on God's promise of an everlasting house for David (2 Samuel 7:12-16) and on prophets who spoke of a shoot from Jesse and a righteous branch for David (Isaiah 11:1, Jeremiah 23:5). Luke has affirmed Jesus' Davidic descent from the start: Joseph was of the house of David (1:27), the angel promised him David's throne (1:32), and the blind man at Jericho called him Son of David (18:38-39).",
+      "theology": [
+        { "id": "messiah", "note": "Jesus does not question that the Christ is David's son; Luke has taught it throughout. He questions whether that title says enough, preparing for the Psalm that shows David's son to be more than David's heir." }
+      ],
+      "parallels": ["Mark 12:35", "Matthew 22:41-42"],
+      "refs": ["2 Samuel 7:12-16", "Luke 1:32-33", "Luke 18:38-39", "Romans 1:3-4"]
+    },
+    {
+      "v": "42-43",
+      "context": "The evidence: David himself, in the book of Psalms, says, ‘The Lord said to my Lord, Sit at my right hand until I make your enemies a footstool for your feet’. The verse is the Old Testament text the New Testament cites or echoes more than any other, and Luke will return to it at the trial and at Pentecost.",
+      "grammar": "Autos gar Dauid legei, ‘for David himself says’, stresses that the words are David's own. En biblō psalmōn, ‘in the book of Psalms’, is a Lukan way of citing (Acts 1:20), where Mark says David spoke ‘in the Holy Spirit’ (Mark 12:36). Kathou ek dexiōn mou, ‘sit at my right hand’, is a present imperative, a continuing session. Heōs an thō tous echthrous sou hupopodion tōn podōn sou, ‘until I put your enemies as a footstool for your feet’, is an indefinite temporal clause: the subjection is sure but its time is left open, and God, not the one enthroned, does the subduing.",
+      "words": ["G1138", "G0976", "G5568", "G2962G", "G2521", "G1188", "G2193", "G5087", "G2190", "G5286", "G4228"],
+      "theology": [
+        { "id": "exaltation", "note": "The psalm speaks of one enthroned beside God, sharing his rule while God subdues his enemies. Luke will apply it to the risen Jesus exalted to God's right hand (22:69, Acts 2:33-35), and the New Testament reads the ‘until’ as the time of the church, before the last enemy is destroyed (1 Corinthians 15:25-26)." }
+      ],
+      "ot": [
+        { "ref": "Psalm 110:1", "note": "The Hebrew reads ne'um YHWH ladoni, ‘the declaration of the LORD to my lord’, then ‘sit at my right hand until I make your enemies a footstool for your feet’. The first ‘Lord’ is the divine name; the second, adoni, is the ordinary word for a human superior or king. The Septuagint (Psalm 109:1) renders both with kurios, and Luke follows the Septuagint exactly, including hupopodion tōn podōn sou, ‘a footstool for your feet’. The psalm, headed as David's, was originally a royal oracle for the king of Israel; Jesus' question assumes, as his hearers did, that David speaks of a figure greater than himself. Jewish interpreters later applied the psalm to Abraham (b. Nedarim 32b) or, according to Justin Martyr, to Hezekiah." }
+      ],
+      "parallels": ["Mark 12:36", "Matthew 22:43-44"],
+      "refs": ["Luke 22:69", "Acts 2:33-36", "1 Corinthians 15:25-26", "Hebrews 1:13", "Acts 1:20"]
+    },
+    {
+      "v": "44",
+      "context": "Jesus draws the conclusion as a question and leaves it unanswered: David calls him Lord, so how is he his son? Luke's readers know the answer from the whole Gospel: he is David's son by birth (1:32) and David's Lord by exaltation (Acts 2:36).",
+      "grammar": "Dauid oun kurion auton kalei, ‘David then calls him Lord’, puts kurion before the verb for emphasis. Kai pōs autou huios estin, ‘and how is he his son?’, is a genuine question, not a rhetorical denial. In the ancient world a father did not address his son as lord; the one addressed must be greater than the one speaking. The unanswered question leaves the hearers to supply what only a greater claim could resolve.",
+      "words": ["G1138", "G2962G", "G2564G", "G4459", "G5207"],
+      "theology": [
+        { "id": "messiah", "note": "The Messiah is both David's descendant and David's Lord. The verse does not deny the first but insists on the second, which no merely human heir could claim." },
+        { "id": "incarnation", "note": "Paul summarizes the same double identity: descended from David according to the flesh, declared Son of God in power by the resurrection (Romans 1:3-4). The church's confession that Christ is truly human and truly God gave the full answer to Jesus' question, and Luke's infancy story, with its promise that the son of David would be called Son of God (1:32-35), points toward it." }
+      ],
+      "parallels": ["Mark 12:37", "Matthew 22:45-46"],
+      "refs": ["Luke 1:32-35", "Romans 1:3-4", "Acts 2:36", "Revelation 22:16"]
+    },
+    {
+      "v": "45-46",
+      "context": "In the hearing of all the people, Jesus warns his disciples against the scribes who love status: robes, greetings, the best seats in synagogues and at banquets. The public setting makes the warning also a public rebuke.",
+      "grammar": "Akouontos pantos tou laou, ‘while all the people were listening’, is a genitive absolute that sets the scene. Prosechete apo, ‘beware of’, a present imperative, is the warning used of the Pharisees' leaven (12:1). Two participles describe the scribes' desires: thelontōn peripatein en stolais, ‘wanting to walk around in long robes’, and philountōn aspasmous, ‘loving greetings’. Prōtokathedria, ‘first seat’, and prōtoklisia, ‘first reclining place’, are both compounds with prōtos, ‘first’: the problem is the love of being first.",
+      "words": ["G0191", "G2992", "G3101", "G4337", "G1122", "G2309", "G4749", "G5368", "G0783", "G0058", "G4410", "G4864", "G4411", "G1173"],
+      "theology": [
+        { "id": "leadership", "note": "Jesus warns against leaders whose religion becomes a means to honor. Luke has already shown Jesus teaching the lowest place at banquets (14:7-11) and telling his disciples that the greatest must be like the youngest (22:26), which he will say at the Last Supper within days." }
+      ],
+      "parallels": ["Mark 12:38-39", "Matthew 23:5-7"],
+      "refs": ["Luke 11:43", "Luke 14:7-11", "Luke 22:24-27", "Matthew 23:6-12"]
+    },
+    {
+      "v": "47",
+      "context": "The heaviest charge: these same scribes devour widows' houses and make long prayers as a pretense, and they will receive greater condemnation. The next scene, a poor widow giving her last coins (21:1-4), shows a widow in the very place where such scribes prayed.",
+      "grammar": "Hoi katesthiousin tas oikias tōn chērōn, ‘who devour the houses of widows’, uses katesthiō, ‘to eat up’, the verb used of the birds devouring seed (8:5) and of the lost son devouring his father's property (15:30). Prophasei, ‘as a pretext, for show’, is a dative of manner, and makra proseuchontai, ‘they pray long prayers’, uses a present of habitual action. Houtoi lēmpsontai perissoteron krima, ‘these will receive greater condemnation’, uses the comparative: judgment is graded by responsibility, as in 12:47-48.",
+      "words": ["G2719", "G3614G", "G5503", "G4392", "G3117", "G4336", "G2983", "G4055", "G2917"],
+      "theology": [
+        { "id": "justice-poor", "note": "The Law made widows God's special concern (Exodus 22:22-24, Deuteronomy 24:17), and the prophets condemned leaders who made widows their prey (Isaiah 10:1-2). Jesus stands in that line: exploitation of the vulnerable is not made acceptable by religious devotion; it is made worse." },
+        { "id": "judgment", "note": "Greater condemnation for those with greater knowledge and position runs through Jesus' teaching (12:47-48) and the letters (James 3:1). The scribes' long prayers do not shield them; they add to their guilt." }
+      ],
+      "parallels": ["Mark 12:40"],
+      "refs": ["Exodus 22:22-24", "Isaiah 10:1-2", "Luke 12:47-48", "James 3:1", "Luke 21:1-4"]
+    }
+  ]
+}

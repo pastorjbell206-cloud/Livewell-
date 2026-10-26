@@ -1,0 +1,399 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Some time after Jacob's oath scene (47:29-31), Joseph hears that his father is ill and brings his two sons. The narrator names them in birth order, Manasseh then Ephraim, the order Jacob will reverse before the chapter ends.",
+      "grammar": "Vayhi acharei hadevarim ha'elleh, \"Some time later\", is literally ‘and it was after these things’, the formula that opens new episodes at 15:1, 22:1, and 39:7. Choleh (\"ill\") is a participle, ‘is sick’, describing a present condition. Rabbinic tradition noticed that this is the first time anyone in the Bible is said to be sick; until now the patriarchs simply die at the end of their years.",
+      "words": [
+        "H1697I",
+        "H2470H",
+        "H4519G",
+        "H0669G"
+      ],
+      "refs": [
+        "Genesis 22:1",
+        "Genesis 47:29-31",
+        "Genesis 41:51-52"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Jacob hears that Joseph has come and gathers himself to sit up. The narrator switches from \"Jacob\" to \"Israel\" within the verse, as the frail old man becomes the patriarch about to pass on the covenant blessing.",
+      "grammar": "Vayyitchazzeq yisra'el is a Hithpael of chazaq, ‘Israel strengthened himself’: the reflexive stem pictures a deliberate effort, gathering what strength he has. He sits up \"in bed\" (al-hammittah), the same bed at whose head he bowed in 47:31. The alternation of the names Jacob and Israel in these chapters often tracks the move from the private man to the head of the covenant family.",
+      "words": [
+        "H2388G",
+        "H4296",
+        "H3478"
+      ],
+      "refs": [
+        "Genesis 47:31",
+        "Genesis 35:10",
+        "Genesis 49:33"
+      ]
+    },
+    {
+      "v": "3-4",
+      "context": "Before doing anything else, Jacob recalls God's appearing at Luz (Bethel) and quotes the promise he received there. The adoption that follows rests on this word: the boys are brought into a family whose future God has pledged.",
+      "grammar": "Jacob names God as El Shaddai, \"God Almighty\", the name under which God gave the covenant to Abraham (17:1) and under which Isaac blessed Jacob (28:3). The promise begins hineni mafrekha, a participle, ‘look, I am making you fruitful’, used for an action already under way or about to begin. Liqhal ammim, \"a multitude of peoples\" (qahal, an assembly or company), echoes Isaac's blessing (28:3) and God's word at Bethel (35:11, where it is ‘a company of nations’). Achuzzat olam, \"an everlasting possession\", is the phrase of the covenant of circumcision (17:8). The family now holds an achuzzah in Egypt (47:11), but the everlasting one is in Canaan.",
+      "words": [
+        "H7706",
+        "H6509",
+        "H6951",
+        "H0272"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Jacob does not bless on his own authority. He passes on what God promised, quoting it first. The blessing of the next generation is the handing on of a covenant word, not a father's private good wishes."
+        },
+        {
+          "id": "names-of-god",
+          "note": "El Shaddai is tied in Genesis to the promise of fruitfulness (17:1-2, 28:3, 35:11). Jacob's use of the name here, before adopting two boys, fits that pattern: the God who makes a barren family fruitful is the one he invokes."
+        }
+      ],
+      "refs": [
+        "Genesis 28:3-4",
+        "Genesis 35:9-12",
+        "Genesis 17:1-8",
+        "Exodus 6:3"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The adoption. Joseph's sons, born in Egypt, will count as Jacob's own, standing in the rank of Reuben and Simeon, his two eldest. The effect is to give Joseph two tribes, the double portion of a firstborn.",
+      "grammar": "The verse opens ve'attah, \"And now\", the logical turn from God's promise to Jacob's act: because God promised a multitude, Jacob widens the family. The key clause is fronted for emphasis, li hem, ‘mine they are’, and repeated at the end, li yihyu, ‘mine they shall be’. Naming Ephraim first anticipates verse 20. Comparing them to Reuben and Simeon sets them on the level of sons, not grandsons.",
+      "words": [
+        "H6258",
+        "H0669G",
+        "H7205",
+        "H8095G"
+      ],
+      "history": "1 Chronicles 5:1-2 draws the conclusion: Reuben's birthright was given to the sons of Joseph because Reuben had defiled his father's bed, while the leadership went to Judah. The double share of the firstborn is later written into law in Deuteronomy 21:17.",
+      "refs": [
+        "1 Chronicles 5:1-2",
+        "Deuteronomy 21:17",
+        "Genesis 35:22",
+        "Joshua 14:4"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "Any later sons of Joseph will stay his and be registered under the names of Ephraim and Manasseh for purposes of inheritance. Only these two become tribes.",
+      "grammar": "Moladtekha, \"children\" (literally ‘your offspring’, from yalad, to bear), is a collective noun. Al shem acheihem yiqqare'u, ‘they shall be called by the name of their brothers’, uses a Niphal of qara, to be called or registered. Nachalah (\"territory they inherit\") is the standard word for an allotted inheritance, the term the book of Joshua uses throughout for the tribal lands.",
+      "words": [
+        "H4138",
+        "H7121H",
+        "H5159"
+      ],
+      "refs": [
+        "Joshua 17:1-6",
+        "Numbers 26:28-37",
+        "Joshua 16:4"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "Jacob turns abruptly to Rachel's death. The memory is not a digression: Rachel died young, after only two sons, and by taking her grandsons as his own Jacob gives her, in effect, the further sons she did not live to bear.",
+      "grammar": "Metah alai rachel, \"to my sorrow Rachel died\", is literally ‘Rachel died upon me’. The preposition al with a first person suffix expresses something that falls on a person as a burden; the grief is Jacob's. Kivrat-erets (\"some distance\") is an uncertain measure of distance, used also in 35:16 and 2 Kings 5:19. The narrator's gloss \"(that is, Bethlehem)\" repeats 35:19.",
+      "words": [
+        "H4191",
+        "H5921A",
+        "H3530",
+        "H0672H"
+      ],
+      "history": "The traditional Tomb of Rachel stands at the northern edge of Bethlehem and has been venerated by Jews, Christians, and Muslims for many centuries. 1 Samuel 10:2 places \"Rachel’s tomb in Zelzah on the border of Benjamin\", north of Jerusalem, and Jeremiah 31:15 hears Rachel weeping at Ramah, also in Benjamin. The chapter note mentions this debate; the gloss in this verse reflects the Bethlehem tradition.",
+      "refs": [
+        "Genesis 35:16-20",
+        "1 Samuel 10:2",
+        "Jeremiah 31:15",
+        "Matthew 2:18"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "Jacob, nearly blind, sees the shapes of the boys and asks who they are. Joseph answers that God has given them, and Jacob asks for them so he can bless them.",
+      "grammar": "Mi-elleh, \"Who are these?\", recalls Esau's question at the reunion, \"Who are these with you?\" (33:5), and Isaac's \"Which one are you, my son?\" (27:18). Joseph's reply, banai hem asher natan-li elohim, ‘they are my sons whom God gave me’, echoes Jacob's own answer to Esau in 33:5. Jacob answers with an imperative plus na (qachem-na, \"please bring them\") and a purpose clause, va'avarakhem, ‘so that I may bless them’. The question may also serve as a formal step in the adoption, having the father identify the children before they are received.",
+      "words": [
+        "H4310",
+        "H5414G",
+        "H3947J",
+        "H1288"
+      ],
+      "refs": [
+        "Genesis 33:5",
+        "Genesis 27:18",
+        "Psalm 127:3"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "The narrator explains Jacob's question: his eyes are failing. Joseph brings the boys close, and Jacob kisses and embraces them, the gestures that precede the blessing.",
+      "grammar": "Einei yisra'el kaved mizzoqen, ‘the eyes of Israel were heavy from old age’, uses kaved, heavy, for dimmed sight. Isaac's blindness in 27:1 uses a different verb (kahah, to grow dim), but the scene is plainly built to recall it. In chapter 27 a blind father kissed a son (27:26-27) and was deceived; here a blind father kisses the boys and knows exactly who is who.",
+      "words": [
+        "H3513J",
+        "H2207",
+        "H5401A",
+        "H2263"
+      ],
+      "refs": [
+        "Genesis 27:1",
+        "Genesis 27:26-27",
+        "Genesis 45:15"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "Jacob speaks from the depth of the story: he never expected to see Joseph again, and now God has let him see Joseph's children. The loss of chapter 37 is answered twice over.",
+      "grammar": "Lo fillalti, \"I never expected\", uses the Piel of palal, which means to judge, reckon, or estimate. The reflexive stem of the same root, hitpallel, is the usual Hebrew word for praying. The second verb, her'ah (\"has let me see\"), is a Hiphil of ra'ah, ‘caused me to see’: seeing Joseph's face was more than Jacob hoped, and God has added his offspring (zar'ekha, ‘your seed’) as well.",
+      "words": [
+        "H6419",
+        "H7200G",
+        "H2233H"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jacob credits God, not chance or Joseph's success, with this outcome. The verse is a small instance of what Paul later puts as God doing far more abundantly than all we ask or imagine (Ephesians 3:20)."
+        }
+      ],
+      "refs": [
+        "Genesis 37:33-35",
+        "Genesis 45:28",
+        "Ephesians 3:20"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Joseph takes the boys from between his father's knees and bows to the ground. The adoption is complete; the blessing is about to begin.",
+      "grammar": "Vayyotse yosef otam me'im birkav, ‘Joseph brought them out from beside his knees’, uses the Hiphil of yatsa, to bring out. Birkayim, knees, is a dual noun, and placing a child on or between the knees marked it as acknowledged as one's own (30:3, 50:23). Vayyishtachu le'appav artsah, ‘he bowed down with his face to the ground’, is the full form of the gesture of reverence. The man before whom his brothers bowed (42:6, 43:28) bows to his father.",
+      "words": [
+        "H3318H",
+        "H1290",
+        "H7812"
+      ],
+      "history": "Placing a child on the knees as a sign of acceptance is attested in Genesis itself: Rachel had Bilhah bear children \"upon her knees\" (30:3), and Joseph's great-grandsons are brought up on his knees (50:23). Similar gestures of acknowledgment are known from other ancient Near Eastern sources, though the details of their legal force are debated.",
+      "refs": [
+        "Genesis 30:3",
+        "Genesis 50:23",
+        "Genesis 42:6",
+        "Job 3:12"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "Joseph arranges the boys carefully, the older at his father's right hand and the younger at his left, so that the blessing of the right hand will fall on Manasseh.",
+      "grammar": "The verse is a chiasm of hands: Ephraim bimino mismol yisra'el, ‘Ephraim in his right, at Israel's left’, and Manasseh bismolo mimin yisra'el, ‘Manasseh in his left, at Israel's right’. Right (yamin) and left (semol) are repeated in crossed order, so that the sentence's form pictures the exact arrangement Jacob is about to overturn.",
+      "words": [
+        "H3225G",
+        "H8040G",
+        "H5066H"
+      ],
+      "refs": [
+        "Psalm 110:1",
+        "Ecclesiastes 10:2",
+        "Matthew 25:33"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "Jacob stretches out his right hand over Ephraim and his left over Manasseh, crossing his arms. The narrator stresses both that Ephraim is \"the younger\" and that Manasseh is \"the firstborn\": Jacob's act is contrary to custom and deliberate.",
+      "grammar": "The debated verb is sikkel et-yadav. Sakal usually means to act prudently or with insight, and the Aramaic Targum Onkelos took it that way, ‘he made his hands act wisely’. The Septuagint rendered it ‘crosswise’, and many modern scholars link it to a separate root meaning to interlace, which is how most English versions read \"crossing his hands\". The closing clause, ki menashsheh habbekhor, is usually translated \"although Manasseh was the firstborn\", but ki more often means ‘because’: on that reading the clause explains why the hands had to be crossed, since Joseph had placed the firstborn at the right.",
+      "words": [
+        "H7919B",
+        "H3225G",
+        "H6810",
+        "H1060"
+      ],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The right hand goes to the younger by the patriarch's deliberate act. Genesis has repeatedly shown God's choice running against birth order (Abel, Isaac, Jacob, Perez, Joseph); here that pattern is enacted openly, with no deceit, as a matter of the blessing's content."
+        }
+      ],
+      "refs": [
+        "Genesis 25:23",
+        "Genesis 38:27-30",
+        "Romans 9:10-13",
+        "1 Samuel 16:11-13"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "Jacob blesses Joseph by blessing his sons. The blessing opens with three descriptions of God, of which this verse has the first two: the God before whom Abraham and Isaac walked, and the God who has shepherded Jacob all his life.",
+      "grammar": "Hithallekhu lefanav, ‘they walked about before him’, is a Hithpael of halakh, describing a way of life lived in God's presence. God commanded Abraham in the same terms, \"walk before Me and be blameless\" (17:1). Haro'eh oti me'odi, \"who has been my shepherd all my life\", is a participle, describing God's ongoing care, and me'odi is literally ‘from my still-being’, from the time Jacob existed. The chapter note treats ra'ah, to shepherd, as a key word.",
+      "words": [
+        "H1980I",
+        "H7462B",
+        "H5750"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jacob's life had been flight, exile, grief, and fear; he still calls God his shepherd for the whole of it. The verse teaches that providence is often recognized in retrospect, as a pattern seen at the end."
+        }
+      ],
+      "refs": [
+        "Genesis 17:1",
+        "Genesis 24:40",
+        "Psalm 23:1",
+        "Genesis 49:24"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The third description names \"the angel who has redeemed me from all harm\", and then the actual blessing: may he bless the boys, may they carry the names of Abraham, Isaac, and Jacob, and may they grow into a multitude.",
+      "grammar": "After three subjects, ha'elohim, ha'elohim, and hammal'akh (\"the angel\"), the verb that follows is singular, yevarekh, ‘may he bless’. The grammar treats the three descriptions as one subject: the angel is not a second being alongside God but God himself in his saving presence, as when the angel of God says \"I am the God of Bethel\" (31:11-13) and Hosea says Jacob \"struggled with the angel\" at Peniel (Hosea 12:4). Hago'el, \"who has redeemed\", is the first use of ga'al in the Bible. Veyiqqare vahem shemi, ‘let my name be called on them’, is the language of ownership and adoption (compare Deuteronomy 28:10). Veyidgu larov, \"may they grow into a multitude\", uses dagah, found only here in the Bible; it is usually connected with dag, fish, suggesting teeming increase, though the meaning should not rest on that link alone.",
+      "words": [
+        "H4397H",
+        "H1350A",
+        "H1711",
+        "H8034"
+      ],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Jacob identifies the angel with the God who shepherded him. Many church fathers, including Justin Martyr, read such appearances of the angel of the LORD as the Son of God before the incarnation; others, both ancient and modern, read the angel as a created messenger through whom God acts and speaks. The verse itself joins the angel to God by the singular verb, without explaining how."
+        },
+        {
+          "id": "salvation",
+          "note": "The first use of ‘redeem’ in Scripture is a man's testimony that God rescued him from every harm. Before it is the language of the exodus (Exodus 6:6) or of the cross, redemption is a personal rescue by a kinsman who takes responsibility for you."
+        }
+      ],
+      "refs": [
+        "Genesis 31:11-13",
+        "Hosea 12:4",
+        "Exodus 6:6",
+        "Deuteronomy 28:10",
+        "Isaiah 63:9"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "Joseph sees the right hand on Ephraim's head, is displeased, and takes hold of his father's hand to move it. Joseph, who has controlled every scene since chapter 42, tries to correct his father.",
+      "grammar": "Vayyera be'einav, \"he was displeased\", is literally ‘it was evil in his eyes’. The same idiom describes Abraham's distress when told to send Ishmael away (21:11), another scene where the elder son's expected place is overturned. Vayyitmokh, ‘he grasped’, is a firm verb, used of holding up hands in Exodus 17:12, and lehasir, ‘to remove’, is a Hiphil infinitive of purpose.",
+      "words": [
+        "H7489A",
+        "H8551",
+        "H5493G"
+      ],
+      "refs": [
+        "Genesis 21:11-12",
+        "Exodus 17:12"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "Joseph protests aloud and instructs his father to put his right hand on the firstborn.",
+      "grammar": "Lo-khen avi, \"Not so, my father\", is a blunt negation followed by an explanation with ki (\"This one is the firstborn\") and an imperative, sim yeminekha, \"put your right hand\". Joseph speaks to his father with the directness of a man used to giving orders; the respectful address avi, ‘my father’, softens it only slightly.",
+      "words": [
+        "H3651C",
+        "H1060",
+        "H7760H"
+      ],
+      "refs": [
+        "Genesis 27:36",
+        "Genesis 43:33"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "Jacob refuses. He knows what he is doing; Manasseh will be great, but Ephraim greater. The father who once deceived his own father now acts with full knowledge.",
+      "grammar": "Vayma'en, \"refused\", is the verb used of Jacob refusing to be comforted over Joseph (37:35) and of Joseph refusing Potiphar's wife (39:8); in all three the refusal marks resolve. Yada'ti beni yada'ti, \"I know, my son, I know\", frames the vocative with a doubled verb, gentle but immovable. Ve'ulam, \"nevertheless\", is a strong adversative. Melo-haggoyim, \"a multitude of nations\", is literally ‘the fullness of the nations’. Some interpreters hear this phrase behind Paul's ‘fullness of the Gentiles’ (Romans 11:25), but the connection is disputed and the context in Genesis concerns Ephraim's numbers, not the Gentiles.",
+      "words": [
+        "H3985",
+        "H3045",
+        "H0199",
+        "H4393"
+      ],
+      "history": "Ephraim's primacy came slowly and not in every respect. In the first census in Numbers, Ephraim outnumbered Manasseh (40,500 to 32,200; Numbers 1:33-35), but in the second, Manasseh was larger (52,700 to 32,500; Numbers 26:34-37). Ephraim's greatness lay in leadership: Joshua came from Ephraim, the sanctuary at Shiloh stood in its territory, and the northern kingdom was often simply called Ephraim.",
+      "refs": [
+        "Numbers 1:33-35",
+        "Numbers 26:34-37",
+        "Joshua 18:1",
+        "Hosea 11:8",
+        "Romans 11:25"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "Jacob's refusal rests on knowledge he has been given: the future of the two tribes is settled by God's purpose, not by the order of birth or by Joseph's wishes. Joseph, the most powerful man in Egypt, cannot move his father's hand."
+        }
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Jacob completes the blessing with a formula: Israel will bless its children by saying, may God make you like Ephraim and Manasseh. The narrator sums up the scene: he set Ephraim before Manasseh.",
+      "grammar": "Bekha yevarekh yisra'el, \"By you shall Israel pronounce this blessing\", uses a singular ‘you’ (bekha) though two boys are blessed; the singular may address Joseph, whose sons they are, or treat the pair as one. Yesimkha elohim, ‘may God make you’, is a jussive of sim, to set or make. The blessing's structure (someone becoming a byword for blessing) recalls God's promise to Abraham that in him families would be blessed (12:3).",
+      "words": [
+        "H1288",
+        "H7760A",
+        "H0669G",
+        "H4519G"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The blessing makes these two boys, born in Egypt to an Egyptian mother, the model for every Israelite father's blessing on his sons. Jewish households still speak it over sons on the eve of the Sabbath. Belonging to Israel is by God's grant and the father's word, not by birthplace."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 11:21",
+          "note": "Hebrews writes that Jacob, \"when he was dying, blessed each of Joseph's sons\". The writer takes this chapter's blessing and the worship of 47:31 together as one act of faith. What makes it faith is that Jacob, in Egypt, gave the boys a share in a land his family did not yet hold, trusting God's promise at Luz (vv. 3-4) to be fulfilled after his death."
+        }
+      ],
+      "refs": [
+        "Genesis 12:3",
+        "Ruth 4:11",
+        "Hebrews 11:21"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Jacob turns back to Joseph with a promise: I am about to die, but God will be with you all and bring you back to the land of your fathers. It is the promise of 46:4 handed on to the next generation.",
+      "grammar": "Hinneh anokhi met, \"Look, I am about to die\", uses a participle for an imminent event, the same construction Joseph will use in 50:24. The rest shifts to plural pronouns: God will be immakhem, \"with you\" (plural), and will bring ‘you’ (plural) back. The promise is addressed to Joseph but meant for the whole people. Veheshiv, \"and bring you back\", is a Hiphil of shuv, the verb of return.",
+      "words": [
+        "H4191",
+        "H5973A",
+        "H7725J"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The dying father's last concern is not his own grave but his descendants' return. Joseph will repeat the promise almost word for word at his own death (50:24), and Moses will carry Joseph's bones out of Egypt because of it (Exodus 13:19)."
+        }
+      ],
+      "refs": [
+        "Genesis 46:4",
+        "Genesis 50:24",
+        "Genesis 28:15",
+        "Exodus 13:19"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Jacob gives Joseph one portion more than his brothers, a shekhem, ‘shoulder’ or ‘ridge’, which he says he took from the Amorites with sword and bow. The word almost certainly plays on the town of Shechem.",
+      "grammar": "Natatti lekha shekhem achad al-acheikha, ‘I give you one shoulder above your brothers’. Natatti is a perfect used for an act performed by speaking (‘I hereby give’), a common use in legal and formal statements. Shekhem means shoulder, and from that a ridge or slope. The clause asher laqachti miyyad ha'emori becharbi uveqashti, ‘which I took from the hand of the Amorite with my sword and my bow’, is the puzzle of the verse.",
+      "words": [
+        "H5414G",
+        "H7926",
+        "H0567",
+        "H2719"
+      ],
+      "text": "Genesis never tells of Jacob taking land by force. He bought a plot at Shechem (33:19), and his sons Simeon and Levi sacked the city, which Jacob condemned (34:30, 49:5-7). Interpreters explain the verse as a reference to that episode credited to Jacob as head of the family, as an event not otherwise recorded, or as a prophetic statement of the later conquest, spoken as if already done. The Targum Onkelos, uneasy with a warlike Jacob, rendered ‘sword and bow’ as ‘my prayer and my petition’. Translations also differ between ‘one portion’ and ‘Shechem’ for shekhem.",
+      "history": "Shechem lay in the hill country between Mount Ebal and Mount Gerizim, near modern Nablus. Joseph's bones were buried in Jacob's plot there (Joshua 24:32), the town later lay on the border between Ephraim and Manasseh, the two tribes of Joseph, and in John's Gospel Jesus meets the Samaritan woman at Jacob's well, \"near the plot of ground that Jacob had given to his son Joseph\" (John 4:5).",
+      "nt": [
+        {
+          "ref": "John 4:5",
+          "note": "John locates Sychar \"near the plot of ground that Jacob had given to his son Joseph\", an allusion to this verse read together with 33:19 and Joshua 24:32. The Samaritans of Jesus' day claimed descent from Joseph's tribes and worshiped on nearby Mount Gerizim, so John's reference sets the conversation about true worship (John 4:20-24) on ground bound up with Jacob's gift."
+        }
+      ],
+      "refs": [
+        "Genesis 33:18-20",
+        "Genesis 34:25-30",
+        "Joshua 24:32",
+        "John 4:5"
+      ]
+    }
+  ]
+}

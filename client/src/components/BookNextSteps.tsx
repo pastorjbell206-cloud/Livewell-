@@ -33,7 +33,7 @@ export function BookNextSteps({
           <NewsletterSignup
             variant="inline"
             title="If this book is your kind of reading"
-            description="One serious essay a week in the same vein — theology that meets the actual Tuesday afternoon. No spam, ever."
+            description="One serious essay a week in the same vein — theology that meets the weight of everyday life. No spam, ever."
             source={`book-${slug}`}
           />
         </div>

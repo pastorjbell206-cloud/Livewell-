@@ -1,0 +1,368 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The blessing of 1:28 is working: humanity multiplies on the earth. But the growth becomes the setting for a boundary crossed. The sons of God see the daughters of men, find them beautiful, and take whomever they choose. The episode (verses 1 to 4) is the prelude to the verdict of verse 5.",
+      "grammar": "\"Began\" is hechel, a Hiphil of chalal, the same root as huchal in 4:26, where people ‘began’ to call on the LORD. The verbs of verse 2 follow the sequence of 3:6: they saw (vayyir'u) that the daughters were ‘good’ (tovot, \"beautiful\"), and they took (vayyiqchu). Desire sees, judges something good by its own standard, and takes. \"Whomever they chose\" is mikkol asher bacharu, ‘from all whom they chose’, stressing unrestrained choice. Bene ha'elohim, \"the sons of God\", is the phrase used for heavenly beings in Job 1:6, 2:1, and 38:7, which is the chief argument for the angelic reading; the Sethite and royal readings take it in a derived sense.",
+      "words": [
+        "H2490C",
+        "H1121I",
+        "H2896A",
+        "H3947I",
+        "H0977"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Whatever the identity of the sons of God, the verse describes sin in the shape of chapter 3: seeing, desiring, and taking without regard to God's order. The multiplication God blessed becomes the occasion for new transgression."
+        },
+        {
+          "id": "angels",
+          "note": "On the oldest Jewish reading, followed by many early Christian writers, the sons of God are angelic beings who left their proper place. Jude 6 and 2 Peter 2:4 are often read as alluding to this. Others hold that angels cannot marry (Matthew 22:30) and read the phrase of human rulers or of Seth's line. Christians hold all three views."
+        }
+      ],
+      "refs": [
+        "Job 1:6",
+        "Job 38:7",
+        "Jude 1:6",
+        "2 Peter 2:4",
+        "Genesis 3:6"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "The LORD sets a limit. His Spirit will not remain with humanity forever, because they are flesh, and their days will be a hundred and twenty years. It is judgment in miniature before the great judgment of the flood.",
+      "grammar": "The verb yadon, rendered \"will not contend\", is uncertain; it occurs nowhere else in this form. Some derive it from din, to judge or strive; the Septuagint and other ancient versions read ‘remain’ or ‘abide’, and some scholars connect it with an Akkadian word meaning ‘to be strong’. Beshaggam, \"for he is\", is also debated: most read it as ‘because also’ (be + she + gam), but it can be read as ‘in their going astray’, from shagag, to err. \"Mortal\" translates basar, ‘flesh’, the word for creaturely frailty over against God's ruach, ‘Spirit’ or ‘breath’.",
+      "words": [
+        "H1777",
+        "H7307G",
+        "H1571",
+        "H1320"
+      ],
+      "text": "English Bibles visibly diverge: ‘shall not strive’ (King James Version), ‘shall not abide’ (ESV and RSV), \"will not contend\" (BSB, NIV). The 120 years are read two ways: as a new limit on the human lifespan, which later genealogies approach (Moses dies at 120 in Deuteronomy 34:7), or as the time remaining before the flood, a period of God's patience (1 Peter 3:20).",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The breath God gave in 2:7 is his to give and to withdraw. Human life depends moment by moment on God's Spirit (Psalm 104:29-30, Job 34:14-15), and this verse is the first time God says he will limit it."
+        },
+        {
+          "id": "judgment",
+          "note": "Judgment arrives with a delay. Whether the 120 years limit lifespan or count down to the flood, God sets a bound rather than acting at once, and Peter reads the time before the flood as God waiting patiently while the ark was built."
+        }
+      ],
+      "refs": [
+        "Psalm 104:29-30",
+        "Job 34:14-15",
+        "1 Peter 3:20",
+        "Deuteronomy 34:7",
+        "Isaiah 31:3"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "A brief note about the Nephilim and the mighty men of old. The narrator ties them to the unions of verse 2 and to legends every reader knew, then moves directly to God's verdict. The verse explains less than it hints.",
+      "grammar": "Nefilim has no certain meaning. It is often connected with nafal, to fall, which would give ‘fallen ones’, but that is a guess from the sound. The Septuagint translated it gigantes, ‘giants’, which is why older English Bibles read ‘giants’. \"And afterward as well\" (vegam acharei-khen) points ahead to Numbers 13:33, where the spies claim to have seen Nephilim in Canaan. Gibborim, \"mighty men\", is the word used for Nimrod in 10:8. Anshe hashem, \"men of renown\", is literally ‘men of the name’. The name they win for themselves anticipates Babel, where people try to make a name for themselves (11:4), and God's promise to make Abram's name great (12:2).",
+      "words": [
+        "H5303",
+        "H1368",
+        "H8034",
+        "H5769J"
+      ],
+      "history": "Mesopotamian tradition celebrated heroes of mixed divine and human descent; the Epic of Gilgamesh describes its hero as two-thirds divine and one-third human, a king of great strength from the early days. Genesis mentions such heroes only to set them under judgment. Their fame is recorded in a single line, and the next verse speaks of wickedness.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The heroes of old are remembered for renown, not righteousness. By placing them just before the verdict of verse 5, Genesis treats the human quest for a great name apart from God as part of what went wrong."
+        }
+      ],
+      "refs": [
+        "Numbers 13:33",
+        "Genesis 10:8-9",
+        "Genesis 11:4",
+        "Genesis 12:2"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The LORD sees. The verse deliberately recalls 1:31, where God saw everything he had made and it was very good. Now what he sees is great wickedness and hearts bent entirely toward evil. This verdict explains everything that follows.",
+      "grammar": "The sentence piles up words of totality: \"every inclination\", ‘only’ (raq, BSB \"altogether\"), \"evil\", ‘every day’ (kol-hayyom, BSB \"all the time\"). Yetser, \"inclination\", comes from yatsar, the potter's verb for forming the man in 2:7: what the human heart forms, its shaping of plans and purposes, is evil. Machshevot, \"thoughts\", are plans and devisings. Lev, \"heart\", in Hebrew is the center of thought and will, not only of feeling.",
+      "words": [
+        "H7451I",
+        "H3336",
+        "H4284",
+        "H3820A",
+        "H7535"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin has reached the source of action, the heart's inclination. Genesis 8:21 repeats this verse's diagnosis after the flood, so the flood cleanses the earth but does not change the human heart. Scripture's answer is a new heart given by God (Ezekiel 36:26)."
+        }
+      ],
+      "refs": [
+        "Genesis 8:21",
+        "Jeremiah 17:9",
+        "Ezekiel 36:26",
+        "Romans 3:10-12",
+        "Mark 7:21-23"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "The LORD's response is described from the inside: he regrets making humanity and is grieved to the heart. Then he speaks his resolve to blot out humans and animals alike. The human heart of verse 5 is answered by God's heart in verse 6.",
+      "grammar": "\"Regretted\" is vayyinnachem, a Niphal of nacham, the verb Lamech used in naming Noah (5:29, ‘comfort’). In the Niphal it means to be sorry, relent, or change course. \"Was grieved\" is vayyit'atsev, a Hithpael of atsav, the root of itsavon, the ‘pain’ and ‘toil’ of 3:16-17. The pain that sin brought into human life now touches the heart of God. \"Blot out\" is emcheh, from machah, to wipe clean, used of wiping a dish (2 Kings 21:13) and of blotting a name from a book (Exodus 32:32-33). The list in verse 7, man, beast, creeping thing, bird, runs roughly backward through the creatures of days six and five.",
+      "words": [
+        "H5162H",
+        "H6087A",
+        "H4229A",
+        "H1254A"
+      ],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Scripture says both that God regretted (here and 1 Samuel 15:11, 35) and that he is not a man that he should change his mind (1 Samuel 15:29, Numbers 23:19), sometimes in the same chapter. Classical theology reads such language as describing God's real opposition to evil in terms human beings can grasp, without implying that God was surprised or that his purpose failed; other theologians give the language more literal weight. All agree the verse forbids picturing God as indifferent."
+        },
+        {
+          "id": "judgment",
+          "note": "The judgment includes the animals, because humanity's rule over creation (1:28) means creation shares humanity's ruin. Paul makes the same connection in reverse when he says creation waits for the redemption of God's children (Romans 8:19-21)."
+        }
+      ],
+      "refs": [
+        "1 Samuel 15:11",
+        "1 Samuel 15:29",
+        "Numbers 23:19",
+        "Ephesians 4:30",
+        "Exodus 32:32-33"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "One sentence turns the story. Against the whole human race stands a single man: \"Noah, however, found favor in the eyes of the LORD\". The Hebrew places Noah first for contrast.",
+      "grammar": "Chen, \"favor\" or ‘grace’, appears here for the first time in the Bible. ‘To find favor in the eyes of’ someone is an idiom for receiving kindness from a superior that one cannot demand (Genesis 18:3, 39:4). Noach and chen use the same two consonants in reverse order (n-ch and ch-n), so the sound of the verse marks Noah as the man of grace. The verse comes before verse 9 calls him righteous.",
+      "words": [
+        "H5146",
+        "H4672",
+        "H2580",
+        "H5869A"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The first mention of grace in Scripture comes at the moment of the world's condemnation. The order of verses 8 and 9, favor first and righteousness second, has long been read as showing that Noah's rescue rests on God's grace, though Genesis also insists that grace produced a righteous life."
+        }
+      ],
+      "refs": [
+        "Exodus 33:12-17",
+        "Ephesians 2:8-9",
+        "Genesis 18:3",
+        "Hebrews 11:7"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "The third toledot heading opens the flood story, \"This is the account of Noah\", and immediately describes his character in three phrases: righteous, blameless in his generation, walking with God. Verse 10 repeats his three sons from 5:32, resuming the family line.",
+      "grammar": "Tsaddiq, \"righteous\", is used here of a person for the first time in the Bible; it describes one who is in right relation to God and others and lives accordingly. Tamim, \"blameless\", means whole or complete, the word used for sacrificial animals without defect (Exodus 12:5) and in God's call to Abram to be blameless (17:1). Bedorotav, \"in his generation\", is plural, ‘among his generations’, and interpreters debate whether it praises Noah absolutely or relative to his corrupt contemporaries. The final clause puts ‘with God’ first for emphasis, et-ha'elohim hithallekh-noach, repeating the phrase used of Enoch (5:22, 24).",
+      "words": [
+        "H8435",
+        "H6662",
+        "H8549H",
+        "H1755",
+        "H1980I"
+      ],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Hebrews calls Noah an heir of the righteousness that comes by faith (Hebrews 11:7), and Ezekiel names him with Daniel and Job as a model of righteousness (Ezekiel 14:14). His blamelessness is not sinlessness, as chapter 9 shows; it is wholehearted integrity before God."
+        }
+      ],
+      "refs": [
+        "Ezekiel 14:14",
+        "Hebrews 11:7",
+        "2 Peter 2:5",
+        "Genesis 17:1",
+        "Genesis 5:22"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "The narrator describes the earth from God's point of view: corrupt and full of violence. Verse 12 has God look and see what the narrator described. The contrast with Noah in verse 9 is total.",
+      "grammar": "\"Was corrupt\" is vattishshachet, a Niphal of shachat, to ruin or spoil. Verse 12 is built to echo 1:31: there God saw everything, ‘and behold (vehinneh), it was very good’; here God saw the earth, ‘and behold (vehinneh), it was corrupt’. The last clause shifts to the Hiphil, hishchit, ‘had corrupted’: the earth is ruined because all flesh had ruined its own way. \"Violence\" is chamas. \"All living creatures\" is kol basar, ‘all flesh’; whether it includes animals as well as humans is debated, though 9:5 holds animals accountable for shedding human blood.",
+      "words": [
+        "H7843",
+        "H2555",
+        "H2009",
+        "H1870G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Before God announces judgment, the text establishes that the world has already destroyed itself. The prophets use chamas for the injustice that brings judgment on Israel's own cities (Amos 3:10, Habakkuk 1:2-3)."
+        },
+        {
+          "id": "creation",
+          "note": "The echo of 1:31 shows that corruption is a reversal of creation's goodness, not a flaw in its making. The world God saw as very good is the same world he now sees ruined, and the difference is what creatures did with it."
+        }
+      ],
+      "refs": [
+        "Genesis 1:31",
+        "Habakkuk 1:2-3",
+        "Amos 3:10",
+        "Romans 1:21-32"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "God speaks to Noah for the first time. He announces the end of all flesh, gives the reason (violence), and says what he will do. Noah is made a confidant of God's plan before the event.",
+      "grammar": "\"The end of all living creatures has come before Me\" (qets kol basar ba lefanai) uses qets, ‘end’, the word of Amos 8:2 (‘the end has come upon My people Israel’) and Ezekiel 7:2-6. \"Through them\" is literally ‘from before their faces’, that is, because of them. \"I will destroy\" is mashchitam, a Hiphil participle of shachat introduced by hineni, ‘behold I’; the construction marks something about to happen. It is the same verb as the corruption of verses 11 and 12, so God's destroying brings to completion the ruin that flesh had already begun.",
+      "words": [
+        "H7093",
+        "H0935M",
+        "H7843",
+        "H2005"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God reveals his purpose to Noah before he acts. Amos 3:7 states the principle that the Lord does nothing without revealing his plan to his servants the prophets, and Peter calls Noah a preacher of righteousness (2 Peter 2:5)."
+        }
+      ],
+      "refs": [
+        "Amos 8:2",
+        "Ezekiel 7:2-6",
+        "Amos 3:7",
+        "2 Peter 2:5"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "The first instruction: build an ark of gopher wood, divide it into rooms, and seal it inside and out. Judgment has been announced, and in the same speech God provides the way through it.",
+      "grammar": "Tevah, \"ark\", is a box or chest, used elsewhere only of the basket that carried the infant Moses (Exodus 2:3). Qinnim, \"rooms\", is literally ‘nests’, compartments for the animals. \"Coat\" and \"pitch\" are the same root, vekhafarta... bakkofer, ‘cover it with covering’. The consonants k-p-r also form the Piel verb kipper, ‘to make atonement’, but the two are generally treated as separate words; the verb here is related to an Akkadian word for smearing. Building the doctrine of atonement on the ark's pitch would be a word-root fallacy, though the image of a covered vessel of rescue has invited Christian reflection.",
+      "words": [
+        "H8392",
+        "H1613",
+        "H7064",
+        "H3722B",
+        "H3724B"
+      ],
+      "history": "Bitumen, a natural tar, seeps from the ground in several places in Mesopotamia and was used there for waterproofing boats, baskets, and buildings for thousands of years. Genesis 11:3 notes its use as mortar at Babel, and 14:10 mentions bitumen pits in the Valley of Siddim.",
+      "refs": [
+        "Exodus 2:3",
+        "Genesis 11:3",
+        "Genesis 14:10",
+        "Hebrews 11:7"
+      ]
+    },
+    {
+      "v": "15-16",
+      "context": "The dimensions and design: 300 by 50 by 30 cubits, a roof or opening at the top, a door in the side, three decks. The ark has no rudder, sail, or oars. It is built to float and to hold, not to be steered, because God will carry it.",
+      "grammar": "Ammah, \"cubit\", is the forearm, elbow to fingertip. The proportions, six to one in length to breadth, suit a stable floating hull. Tsohar, \"roof\", occurs only here; it is related to the word for noon or brightness, so older translations read ‘window’ (King James Version) while many modern ones read ‘roof’. The next clause, literally ‘to a cubit you shall finish it from above’, is obscure, and translators disagree on whether it describes a gap for light and air under the roof or the pitch of the roof itself. Petach is the \"door\", and verse 16 ends with three levels, lower, second, and third.",
+      "words": [
+        "H0520A",
+        "H6672B",
+        "H6607",
+        "H8482"
+      ],
+      "text": "Translations divide over tsohar and the cubit clause: the King James Version reads ‘A window shalt thou make to the ark, and in a cubit shalt thou finish it above’, while the BSB reads \"You are to make a roof for the ark, finish its walls a cubit from the top\". Both are attempts to render a rare word and a compressed construction.",
+      "refs": [
+        "Genesis 8:6",
+        "Genesis 7:16",
+        "1 Peter 3:20"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "God names the instrument of judgment: the flood. It will destroy every creature with the breath of life under heaven. The emphatic ‘I’ that opens this verse is answered by the covenant ‘I’ of verse 18.",
+      "grammar": "The verse begins va'ani hineni mevi, ‘and I, behold I am bringing’: the pronoun, the particle of attention, and a participle of imminent action. Hammabbul, \"floodwaters\", is a technical term used in the Old Testament only for Noah's flood (and in Psalm 29:10, which says the LORD sits enthroned over the flood). Mayim, \"waters\", follows as an explanation. \"Will perish\" is yigva, a verb for breathing one's last that Genesis uses of the patriarchs' deaths (25:8, 35:29).",
+      "words": [
+        "H0935P",
+        "H3999",
+        "H7307H",
+        "H1478"
+      ],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The flood is not a natural disaster God failed to prevent but a judgment he brings. Psalm 29:10 turns this into worship: the God who sat enthroned over the flood still reigns as king forever."
+        }
+      ],
+      "refs": [
+        "Psalm 29:10",
+        "Genesis 7:22",
+        "2 Peter 3:5-7",
+        "Isaiah 54:9"
+      ]
+    },
+    {
+      "v": "18",
+      "context": "In the middle of the announcement of destruction comes the first mention of covenant in the Bible. God binds himself to Noah and names who will be saved with him: his sons, his wife, and his sons' wives, eight people in all.",
+      "grammar": "\"I will establish\" is vahaqimoti, a Hiphil of qum, ‘to cause to stand’. Covenants are usually ‘cut’ (karat berit) when first made, as in 15:18. Some scholars argue that ‘establish’ (heqim) means to confirm or uphold a commitment already in place, which would imply a covenant relationship reaching back to creation; others hold that the two expressions overlap and that this is the first covenant. The possessive suffix makes it ‘my covenant’, beriti: it is God's covenant, given on his terms.",
+      "words": [
+        "H6965I",
+        "H1285",
+        "H0854"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The first covenant in Scripture is announced before the danger, not after it, and it is God's commitment to preserve a people through judgment. Chapter 9 spells it out, and every later covenant (with Abraham, Israel, David, and the new covenant) carries the same pattern of God binding himself to save."
+        },
+        {
+          "id": "family",
+          "note": "Noah's household is saved with him. Scripture repeatedly shows God's saving purpose reaching families (Acts 16:31), and Peter counts the eight people in the ark as a picture of those brought safely through water (1 Peter 3:20)."
+        }
+      ],
+      "refs": [
+        "Genesis 9:9-11",
+        "Genesis 15:18",
+        "1 Peter 3:20",
+        "Jeremiah 31:31-33"
+      ]
+    },
+    {
+      "v": "19-20",
+      "context": "Noah is to bring pairs of every kind of creature, male and female, to keep them alive. Verse 20 adds that they will come to him. The ark carries not only a human family but the whole animal creation into the world after the flood.",
+      "grammar": "Zakhar uneqevah, \"male and female\", are the words of 1:27, and leminehu, ‘according to its kind’, is the refrain of 1:11-25. The flood instructions are written in creation's vocabulary, because the ark preserves what God made for a new beginning. Lehachayot, \"to keep them alive\", is a Hiphil infinitive of chayah, ‘to cause to live’. In verse 20, \"will come to you\" (yavo'u elekha) suggests that Noah does not have to hunt the animals down; they are brought.",
+      "words": [
+        "H2145",
+        "H5347",
+        "H4327",
+        "H2421"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's judgment on humanity is joined to care for the animals. Psalm 36:6 says the LORD preserves both man and beast, and the covenant after the flood will explicitly include every living creature (9:10)."
+        }
+      ],
+      "refs": [
+        "Genesis 1:24-25",
+        "Genesis 7:2-3",
+        "Genesis 9:10",
+        "Psalm 36:6"
+      ]
+    },
+    {
+      "v": "21-22",
+      "context": "The last instruction is food for the family and the animals. Then the narrator gives the chapter's closing sentence: Noah did everything as God commanded. Noah never speaks in the flood story; his obedience is his answer.",
+      "grammar": "\"Food\" in verse 21 is okhlah, the word of 1:29-30 for the food God gave to people and animals. Verse 22 doubles its statement of obedience: ‘Noah did according to all that God commanded him; so he did’. The same formula is used of Moses and Israel completing the tabernacle exactly as the LORD commanded (Exodus 39:42-43, 40:16), and it links the builder of the ark with the builder of the sanctuary.",
+      "words": [
+        "H0402",
+        "H6680",
+        "H6213A",
+        "H3651C"
+      ],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Hebrews 11:7 says Noah built the ark by faith, warned about things not yet seen, and in reverent fear. His faith is shown entirely in obedience carried out over a long time before any rain fell."
+        }
+      ],
+      "refs": [
+        "Hebrews 11:7",
+        "Exodus 40:16",
+        "Genesis 7:5",
+        "James 2:22"
+      ]
+    }
+  ]
+}

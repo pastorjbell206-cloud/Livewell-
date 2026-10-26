@@ -1,0 +1,594 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with Jesus at prayer and a disciple who has watched him asking to be taught. The request frames the whole first section (verses 1-13): the prayer Jesus gives, a parable about asking, and promises about the Father who hears.",
+      "grammar": "Kai egeneto en tō einai auton ... proseuchomenon, literally ‘and it happened while he was ... praying’, is Luke's Septuagint-style way of opening a scene, with the present participle showing prayer in progress. Hōs epausato, ‘when he stopped’, uses an aorist middle of pauō: the disciple waits until Jesus has finished. Didaxon hēmas proseuchesthai, ‘teach us to pray’, pairs an aorist imperative, a specific request, with a present infinitive, prayer as an ongoing practice. Kathōs kai Iōannēs edidaxen, ‘just as John also taught’, refers to a teaching Luke has already mentioned when critics noted that John's disciples fasted and offered prayers (5:33).",
+      "words": ["G1096", "G4336", "G3973", "G3101", "G1321", "G2491G"],
+      "history": "Teachers and movements in Jesus' day were known by their distinctive prayers. Luke has already said that John's disciples made prayers (5:33), and the Qumran community kept its own hymns and liturgies (the Thanksgiving Hymns, 1QH). A prayer of one's own was a mark of identity, so the request asks, in effect, for the prayer that would mark Jesus' followers as his.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The disciples learn to pray by watching Jesus pray. Prayer in Luke is first the Son's own practice (3:21, 6:12, 9:18, 9:28) and only then something he teaches, so Christian prayer is a sharing in his relation to the Father."
+        }
+      ],
+      "refs": ["Luke 3:21", "Luke 5:33", "Luke 9:18", "Luke 22:41-42", "Romans 8:26"]
+    },
+    {
+      "v": "2",
+      "context": "Jesus gives the words themselves. The prayer opens with the single word Father and two petitions about God's own honor and rule, before any request for the one praying.",
+      "grammar": "Hotan proseuchēsthe, legete, ‘whenever you pray, say’, uses a present subjunctive and a present imperative: a pattern for regular use, not a single occasion. Pater, ‘Father’, stands alone without ‘our’ or ‘in heaven’. The two petitions are third-person imperatives, a form English lacks: hagiasthētō to onoma sou, ‘let your name be made holy’, and elthetō hē basileia sou, ‘let your kingdom come’. Hagiasthētō is an aorist passive with no agent named. Many grammarians read it as a divine passive, asking God himself to show his name holy, while it can also include human reverence for the name. The aorists present each petition as a whole, often read as looking toward God's decisive act rather than a gradual process.",
+      "words": ["G4336", "G3004G", "G3962", "G0037", "G3686", "G2064", "G0932"],
+      "ot": [
+        {
+          "ref": "Ezekiel 36:23",
+          "note": "Speaking to exiles whose defeat had caused his name to be profaned among the nations, God promises, ‘I will sanctify my great name’, and he does so by gathering, cleansing, and renewing his people with a new heart and his Spirit (Ezekiel 36:24-27). The Septuagint uses hagiazō, the verb of Jesus' petition. The prayer therefore asks God to do what he promised through the prophet: to vindicate his own name by restoring his people, which in Luke happens through Jesus and the gift of the Spirit."
+        }
+      ],
+      "text": "Later manuscripts, followed by the King James Version, expand the address to ‘Our Father which art in heaven’ and add ‘Thy will be done, as in heaven, so in earth’, both from Matthew. A few late witnesses replace ‘your kingdom come’ with a petition for the Holy Spirit to come and cleanse. The chapter note sets out the witnesses; the short form printed in the BSB is judged original.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The first concern of prayer is God's name and God's reign. Before asking for anything for themselves, disciples ask God to be honored and to rule, which reorders every request that follows."
+        },
+        {
+          "id": "kingdom",
+          "note": "To pray for the kingdom to come is to confess that it has not yet fully come. Yet in verse 20 Jesus says it has already come upon his hearers, so the prayer asks God to complete what he has begun."
+        },
+        {
+          "id": "names-of-god",
+          "note": "God's name stands for God as he has made himself known. Praying that it be hallowed asks that God be recognized and treated as holy by all, the concern of the third commandment and of Isaiah's vision (Isaiah 6:3)."
+        }
+      ],
+      "parallels": ["Matthew 6:9-10"],
+      "refs": ["Ezekiel 36:23", "Isaiah 29:23", "Exodus 20:7", "Galatians 4:6", "Luke 22:18"]
+    },
+    {
+      "v": "3",
+      "context": "The first request for the one praying is the most basic: bread. Placed right after the kingdom petitions, it treats daily need as something the Father cares about and something disciples receive from him each day.",
+      "grammar": "Ton arton hēmōn ton epiousion, ‘our epiousios bread’, puts the unexplained adjective in the attributive position (see the chapter note on the word). Didou, ‘keep giving’, is a present imperative, where Matthew 6:11 has the aorist dos, ‘give’. Luke's to kath' hēmeran, ‘day by day’ or ‘each day’, replaces Matthew's sēmeron, ‘today’. Together the present tense and the distributive phrase make Luke's form a prayer for continual, repeated provision, while Matthew's is a request for today's portion.",
+      "words": ["G0740", "G1967", "G1325", "G2596", "G2250"],
+      "history": "The petition stands in the line of Israel's wilderness experience, when manna came each morning and a day's portion was gathered every day (Exodus 16:4), and of the wise man's prayer to be fed with the bread that is his portion, neither poverty nor riches (Proverbs 30:8). For most people in Roman Galilee, food for the next day was not assured; day laborers were paid at evening for that day's work (Matthew 20:8, Deuteronomy 24:15).",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Disciples ask for bread as children ask a father, one day at a time. The request teaches dependence and contentment together: enough for today, received again tomorrow, as Israel received manna."
+        },
+        {
+          "id": "prayer",
+          "note": "Asking God for ordinary needs is not beneath prayer. The petition for bread sits directly under the petitions for God's name and kingdom, joining the largest hopes and the smallest needs in a single prayer."
+        }
+      ],
+      "parallels": ["Matthew 6:11"],
+      "refs": ["Exodus 16:4", "Proverbs 30:8", "Luke 12:29-31", "John 6:32-35"]
+    },
+    {
+      "v": "4",
+      "context": "The last two requests concern sin and testing. Disciples ask to be forgiven as those who themselves forgive, and ask not to be brought into the trial that would undo them.",
+      "grammar": "Aphes hēmin tas hamartias hēmōn, ‘forgive us our sins’, uses an aorist imperative of aphiēmi, the verb of releasing a debt. The next clause switches picture: kai gar autoi aphiomen panti opheilonti hēmin, ‘for we ourselves also forgive everyone indebted to us’. Aphiomen is present tense, ‘we forgive’ as a practice, where Matthew 6:12 has hōs kai hēmeis aphēkamen, ‘as we also have forgiven’. Kai gar, ‘for indeed’, gives the reason the request can be made with integrity, not a price paid for it. Panti, ‘everyone’, excludes no debtor. Mē eisenegkēs, ‘do not bring’, is an aorist subjunctive with mē, the standard Greek form for forbidding an action, here turned into a request to God. Eispherō means ‘to lead into’ or ‘bring into’, so the petition asks not to be carried into peirasmos, the time of testing.",
+      "words": ["G0863H", "G0266", "G3784", "G1533", "G3986G"],
+      "history": "Jewish wisdom had already tied God's forgiveness to human forgiveness. Sirach 28:2, from the early second century BC, urges forgiving a neighbor's wrong so that one's own sins will be pardoned when one prays. The sixth blessing of the Eighteen Benedictions asks the Father to forgive because we have sinned, and the chapter note traces that link. The Didache (8.2) gives Matthew's form of this petition with ‘our debt’.",
+      "text": "The Byzantine text, followed by the King James Version, adds ‘but deliver us from evil’ from Matthew 6:13. The earliest witnesses end the prayer with the petition about temptation.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Every disciple is taught to ask for forgiveness regularly, as regularly as bread. The prayer assumes that followers of Jesus continue to sin and continue to need mercy, and that those who receive mercy release others."
+        },
+        {
+          "id": "prayer",
+          "note": "The final petition asks God for protection in the time of trial, the same prayer Jesus urges on the disciples in Gethsemane (22:40, 46). Luke's Jesus has faced such testing himself (4:1-13), and he commends the disciples who stood by him in his trials (22:28)."
+        }
+      ],
+      "parallels": ["Matthew 6:12-13"],
+      "refs": ["Luke 7:41-43", "Luke 17:3-4", "Luke 22:40", "James 1:13", "1 Corinthians 10:13"]
+    },
+    {
+      "v": "5-7",
+      "context": "Jesus follows the prayer with a story from village life. A man whose friend has arrived at midnight has no bread and goes to a neighbor, who answers from behind a barred door that he cannot get up. The listener is meant to find the refusal unthinkable.",
+      "grammar": "The parable begins tis ex humōn hexei philon, ‘which of you will have a friend’, a question form Jesus often uses to appeal to his hearers' own sense of what anyone would do (11:11, 14:5, 15:4, 17:7). The sentence starts with future indicatives (hexei, poreusetai) and then shifts to an aorist subjunctive (eipē), a loose construction that runs on through verse 7. Many commentators read verses 5 to 7 as one long question expecting the answer ‘no one would refuse’. Chrēson moi treis artous, ‘lend me three loaves’, uses kichrēmi, ‘to lend’, found only here in the New Testament. The sleeper's mē moi kopous pareche, ‘do not cause me troubles’, uses kopos, the same word the unjust judge uses of the widow who keeps bothering him (18:5). Kekleistai, ‘has been shut’, is a perfect passive: the door is locked and stays locked.",
+      "words": ["G5101", "G5384", "G3317", "G5531", "G5140", "G0740", "G3908", "G2873", "G2374", "G2808", "G2845"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The story's setting makes the point before its conclusion does: in a culture of hospitality, no neighbor refuses bread for a guest. If an ordinary neighbor at midnight will help, prayer to God cannot be less sure."
+        }
+      ],
+      "refs": ["Luke 18:1-8", "Luke 14:5", "Genesis 18:2-8", "Proverbs 3:28"]
+    },
+    {
+      "v": "8",
+      "context": "Jesus draws the conclusion. Friendship alone might not get the neighbor out of bed, but anaideia will, and he will give whatever is needed.",
+      "grammar": "Ei kai ou dōsei, ‘even if he will not give’, is concessive. The contrast is between dia to einai philon autou, ‘because of being his friend’, and dia ge tēn anaideian autou, ‘yet because of his anaideia’; the small particle ge sharpens the contrast, ‘at least because of’. Autou, ‘his’, in the second phrase is ambiguous, which is why interpreters divide over whether the shamelessness belongs to the asker or to the sleeper (see the chapter note). The participles anastas and egertheis, both meaning ‘getting up’, frame the verse: the man who could not get up (verse 7) now gets up. Hosōn chrēzei, ‘as much as he needs’, promises more than the three loaves requested.",
+      "words": ["G3004G", "G1325", "G0450", "G5384", "G1065", "G0335", "G1453", "G3745", "G5535"],
+      "text": "English versions render anaideia differently: ‘persistence’ (BSB, NASB), ‘importunity’ (KJV), ‘impudence’ (ESV), and ‘shameless audacity’ (NIV 2011). The Greek word means shamelessness; the translations that choose persistence read the parable in light of the parable of the persistent widow (18:1-8).",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Whatever the word means, the argument runs from the lesser to the greater. God is not the grudging neighbor; he is the Father of verse 13, and boldness in asking is fitting for those who know him."
+        }
+      ],
+      "refs": ["Luke 18:1-8", "Hebrews 4:16", "Genesis 32:26", "Matthew 15:22-28"]
+    },
+    {
+      "v": "9-10",
+      "context": "The parable's lesson becomes a command and a promise. Ask, seek, knock, because everyone who does so receives, finds, and has the door opened.",
+      "grammar": "Kagō humin legō, ‘and I tell you’, brings the application with Jesus' own authority. The three commands aiteite, zēteite, krouete are present imperatives, ‘keep asking, keep seeking, keep knocking’, while the promises are futures: dothēsetai and anoigēsetai are passives with God as the implied giver and opener (the divine passive), and heurēsete is active, ‘you will find’. Verse 10 restates the promise as a general truth with present participles and present indicatives: pas ho aitōn lambanei, ‘everyone who asks receives’. The knocking recalls the neighbor's shut door in verse 7.",
+      "words": ["G0154", "G1325", "G2212", "G2147", "G2925", "G0455", "G2983"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Jesus commands persistent asking and promises an answer. Verse 13 defines the best of what is given, and Jesus' own prayer in Gethsemane (22:42) shows that asking includes yielding to the Father's will; together they keep the promise from becoming a formula for getting what one names."
+        },
+        {
+          "id": "faith",
+          "note": "The promise is addressed to those who trust the Father enough to keep asking. Faith here is not a technique but the confidence that God hears, which is why the verse begins with ask rather than with any condition."
+        }
+      ],
+      "parallels": ["Matthew 7:7-8"],
+      "refs": ["Jeremiah 29:13", "Deuteronomy 4:29", "James 1:5", "Revelation 3:20", "1 John 5:14-15"]
+    },
+    {
+      "v": "11-12",
+      "context": "Jesus turns from neighbors to fathers. No father would hand his hungry son something harmful that looks like food, a snake for a fish or a scorpion for an egg.",
+      "grammar": "Tina de ex humōn ton patera, ‘which of you, the father’, begins with an accusative that the sentence never governs, a loose construction common in speech. Aitēsei, ‘will ask’, and epidōsei, ‘will give’, are futures in a question expecting the answer no. Anti ichthuos ophin, ‘a snake instead of a fish’, uses anti, ‘in place of’, to stress substitution, and the same structure is implied in verse 12.",
+      "words": ["G3962", "G0154", "G5207", "G2486", "G0473", "G3789", "G1929", "G5609", "G4651"],
+      "history": "Fish and eggs were ordinary food around the Sea of Galilee, where fishing was a major trade (5:1-11). Snakes and scorpions, paired in 10:19 as threats, were common dangers. The pairs are chosen because each harmful thing could be mistaken for the food asked for, which makes a father's deception conceivable and his refusal to deceive the point.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "The comparison assumes that God is not a trickster. A request made to him in need will not be answered with something that harms, which grounds the believer's trust when the answer is not the one expected."
+        }
+      ],
+      "parallels": ["Matthew 7:9-10"],
+      "refs": ["Luke 10:19", "James 1:17", "Psalm 103:13", "Isaiah 49:15"]
+    },
+    {
+      "v": "13",
+      "context": "The conclusion runs from human fathers to God. If flawed people give good gifts to their children, the Father will give the best gift of all, the Holy Spirit, to those who ask.",
+      "grammar": "Ei oun humeis ponēroi huparchontes, ‘if then you, being evil’, is a real condition that assumes its premise: Jesus speaks of his hearers' evil as a given. Oidate is a perfect with present meaning, ‘you know how’. Posō mallon, ‘how much more’, marks an argument from the lesser to the greater, the form Jewish interpreters called qal wahomer, the first of the seven rules of interpretation traditionally credited to Hillel (Tosefta Sanhedrin 7:11). Ho patēr ho ex ouranou, literally ‘the Father from heaven’, uses ex, ‘from’, perhaps because the gift comes down from heaven. Pneuma hagion, ‘Holy Spirit’, stands without the article, which some take to stress the quality of the gift.",
+      "words": ["G4190", "G5225", "G6063", "G1390", "G0018", "G5043", "G4214", "G3123G", "G3962", "G4151G", "G0040G", "G0154"],
+      "text": "Matthew 7:11 has ‘good things’. A few witnesses to Luke, P45 and Codex Bezae among them, read ‘a good gift’ or ‘good gifts’, and the chapter note records others; the earliest and most widespread reading is ‘the Holy Spirit’, which fits Luke's attention to the Spirit.",
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "The Father's greatest gift to those who ask is the Holy Spirit himself. Luke shows the promise fulfilled when the praying church receives the Spirit (Acts 1:14, 2:1-4, 4:31), and the verse invites disciples to ask for God's own presence above every other gift."
+        },
+        {
+          "id": "sin",
+          "note": "Jesus calls his hearers evil in passing, as a settled fact that needs no argument. Even their best love is marked by sin, yet they still give good gifts, which shows both the depth of human corruption and the traces of goodness that remain."
+        }
+      ],
+      "parallels": ["Matthew 7:11"],
+      "refs": ["Acts 2:38-39", "Acts 4:31", "Luke 3:22", "Luke 24:49", "Galatians 4:6"]
+    },
+    {
+      "v": "14-16",
+      "context": "Jesus drives out a demon that had made a man mute, and when the man speaks the crowds marvel. Two hostile responses follow: some attribute the exorcism to the prince of demons, and others demand a sign from heaven. Jesus answers the first in verses 17 to 26 and the second in verses 29 to 32.",
+      "grammar": "Ēn ekballōn, ‘he was casting out’, is a periphrastic imperfect that sets the scene. Kōphos can mean mute or deaf, since the two often went together; here the man ‘spoke’ (elalēsen), so mute is meant. Exelthontos, ‘having gone out’, is a genitive absolute, the demon's departure as the backdrop to the man's speech. En Beelzeboul, ‘by Beelzebul’, uses the instrumental en, ‘by means of’. Heteroi de peirazontes, ‘others, testing’, uses the verb of the devil's testing in 4:2, and ezētoun, ‘were seeking’, is an imperfect of repeated demand.",
+      "words": ["G1544", "G1140", "G2974", "G1831", "G2980", "G2296", "G3793", "G0954", "G0758", "G2087", "G3985H", "G4592", "G2212"],
+      "text": "In verse 14 some editions omit ‘and it was’ (kai auto ēn), giving ‘he was casting out a mute demon’; the meaning is the same. The spelling of the demon prince's name varies, and the Latin tradition's Beelzebub, followed by the King James Version, comes from the Philistine god of 2 Kings 1 (see the chapter note).",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The opponents do not deny that something supernatural has happened; they dispute its source. The Gospels assume a world of spiritual powers hostile to God, and the question they press is whose power is at work in Jesus."
+        }
+      ],
+      "parallels": ["Matthew 12:22-24", "Mark 3:22", "Matthew 9:32-34", "Matthew 12:38"],
+      "refs": ["2 Kings 1:2", "John 8:48", "Luke 4:2", "Luke 23:8", "1 Corinthians 1:22"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus knows what they are thinking and answers with an argument from common sense. A kingdom at war with itself collapses, so if Satan were driving out his own servants, his kingdom would be falling apart.",
+      "grammar": "Eidōs autōn ta dianoēmata, ‘knowing their thoughts’, uses a noun found only here in the New Testament; Luke often notes that Jesus knows what people are thinking (5:22, 6:8, 9:47). Diameristheisa, ‘divided’, is an aorist passive participle, and erēmoutai, ‘is laid waste’, a present passive. The second clause, kai oikos epi oikon piptei, can mean ‘a house divided against a house falls’ (BSB) or ‘house falls upon house’, a picture of a ruined city where buildings collapse on one another. Verse 18 is a first-class condition, ei de kai ho satanas eph' heauton diemeristhē, ‘if Satan too is divided against himself’, which accepts the premise for argument. The closing hoti legete, ‘because you say’, names the claim that his reasoning exposes as absurd.",
+      "words": ["G6063", "G1270", "G0932", "G1266", "G2049", "G3624H", "G4098", "G4567", "G2476"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "Jesus speaks of Satan as having a kingdom, an ordered realm of power over people. The coming of God's kingdom is therefore not only the gathering of a people but the overthrow of a rival reign."
+        }
+      ],
+      "parallels": ["Matthew 12:25-26", "Mark 3:23-26"],
+      "refs": ["Luke 4:6", "John 12:31", "Colossians 1:13", "Luke 5:22"]
+    },
+    {
+      "v": "19",
+      "context": "Jesus turns the accusation back on the accusers. Other Jewish exorcists drove out demons, and no one charged them with sorcery; the same standard applied to Jesus would condemn their own people.",
+      "grammar": "Ei de egō en Beelzeboul ekballō, ‘and if I by Beelzebul cast out’, is another first-class condition assumed for argument, with the emphatic egō, ‘I’. Hoi huioi humōn, ‘your sons’, is a Semitic idiom for their disciples or members of their own community. Dia touto, ‘for this reason’, introduces the consequence, and autoi humōn kritai esontai, ‘they themselves will be your judges’, puts autoi, ‘they’, first: their own practitioners will testify against the double standard.",
+      "words": ["G1473", "G0954", "G1544", "G5207", "G2923"],
+      "history": "Jewish exorcism is attested in several sources of the period. The Genesis Apocryphon from Qumran (1QapGen 20:28-29) retells Genesis 12 so that Abram prays, lays his hands on Pharaoh's head, and drives out the evil spirit afflicting him, and Acts 19:13-14 tells of the seven sons of a Jewish high priest named Sceva who tried to exorcise in Jesus' name. The chapter note mentions Tobit and Josephus' Eleazar. None of these was accused of working by Satan.",
+      "parallels": ["Matthew 12:27", "Mark 3:22"],
+      "refs": ["Acts 19:13-14", "Luke 9:49-50", "Mark 9:38"]
+    },
+    {
+      "v": "20",
+      "context": "The positive conclusion. If Jesus casts out demons by God's power, then God's reign is not merely near; it has reached them.",
+      "grammar": "Ei de en daktulō theou egō ekballō, ‘but if by the finger of God I cast out’, is again a first-class condition, and here Jesus clearly accepts the premise. The apodosis is ara ephthasen eph' humas hē basileia tou theou, ‘then the kingdom of God has come upon you’. Ephthasen is an aorist of phthanō, ‘to arrive, to reach’, a stronger verb than ēngiken, ‘has drawn near’, in 10:9. The debate about realized and future eschatology often turns on this verse: C. H. Dodd read it as proof that the kingdom was present in Jesus' ministry, and most interpreters now see here the present arrival of a kingdom that is also still to come in fullness (verse 2).",
+      "words": ["G1147", "G2316", "G1544", "G0686", "G5348", "G0932"],
+      "ot": [
+        {
+          "ref": "Exodus 8:19",
+          "note": "When the third plague turns dust into gnats and Egypt's magicians cannot copy it, they tell Pharaoh, etsba elohim hi, ‘it is the finger of God’ (Exodus 8:15 in the Hebrew numbering). The Septuagint reads daktulos theou estin touto. The phrase marks the point where human power fails and God's own hand is plainly at work in freeing Israel. Jesus takes the magicians' admission as his own claim: his exorcisms are God's hand liberating captives, a new exodus. Matthew 12:28 has ‘by the Spirit of God’, and the two phrases describe the same divine power."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "God's reign has arrived wherever Jesus frees people from evil by God's power. The kingdom is present in his works, not only promised for the future, though the disciples still pray for its coming (verse 2)."
+        },
+        {
+          "id": "spirit",
+          "note": "Luke's ‘finger of God’ corresponds to Matthew's ‘Spirit of God’, so the verse is a witness to the Spirit's power in Jesus' ministry, the same Spirit who came on him at his baptism (3:22) and anointed him to set captives free (4:18)."
+        }
+      ],
+      "parallels": ["Matthew 12:28"],
+      "refs": ["Exodus 8:19", "Exodus 31:18", "Luke 4:18", "Luke 17:20-21", "Acts 10:38"]
+    },
+    {
+      "v": "21-22",
+      "context": "A short parable explains the exorcisms. A strong man guards his palace in full armor, and his goods are safe until someone stronger overpowers him, strips his armor, and distributes the plunder. Satan is the strong man, and Jesus the stronger one.",
+      "grammar": "Ho ischuros kathōplismenos, ‘the strong man, fully armed’, uses a perfect middle participle found only here in the New Testament. Aulē can mean courtyard or palace; with ‘his own’ (heautou) it suggests a fortified residence. En eirēnē estin ta huparchonta autou, literally ‘his possessions are in peace’, uses eirēnē ironically: the peace of a tyrant's secure hold. Ischuroteros, ‘one stronger’, is the comparative John the Baptist used of the one coming after him (3:16). Epelthōn nikēsē, ‘attacking, he overcomes’, gives the decisive action, and tēn panoplian, ‘the full armor’, is the word Ephesians 6:11-13 uses for the armor of God. Skula, ‘plunder’, occurs only here in the New Testament, and diadidōsin, ‘he distributes’, is the verb used for distributing to the poor (18:22).",
+      "words": ["G2478", "G2528", "G5442H", "G0833", "G1515", "G5225", "G3528", "G3833", "G3982", "G4661", "G1239"],
+      "ot": [
+        {
+          "ref": "Isaiah 49:24-25",
+          "note": "The exiles ask whether prey can be taken from the mighty or captives rescued from a tyrant, and the Lord answers that he himself will take the captives of the mighty and rescue the prey of the tyrant. The Septuagint uses gigas, ‘giant’, and skula, ‘spoils’. Jesus' picture of the stronger one taking the strong man's plunder echoes this promise that God himself will free his captive people."
+        },
+        {
+          "ref": "Isaiah 53:12",
+          "note": "At the close of the fourth Servant Song the Lord says he will give his servant a portion with the many and that he will divide the spoil with the strong, because he poured out his soul to death and was numbered with the transgressors. The Septuagint reads tōn ischurōn meriei skula, ‘he will divide the spoils of the strong’. Luke quotes the next line of this verse at the Last Supper (22:37), and the echo here suggests that the stronger one wins his plunder by the way of the Servant."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom comes as a rescue from occupation. Jesus' exorcisms are raids on a strong man's house, and the plunder distributed is people set free, a victory completed, as Colossians 2:15 says, at the cross."
+        },
+        {
+          "id": "atonement",
+          "note": "Christian theology has read this parable as a picture of Christ's victory over the powers of evil, the theme Gustaf Aulén called Christus Victor (1931). The echo of Isaiah 53:12 links that victory to the Servant who suffers for many."
+        }
+      ],
+      "parallels": ["Mark 3:27", "Matthew 12:29"],
+      "refs": ["Isaiah 49:24-25", "Isaiah 53:12", "Luke 3:16", "Colossians 2:15", "Hebrews 2:14-15"]
+    },
+    {
+      "v": "23",
+      "context": "The saying closes the argument with a demand. In the conflict between the strong man and the stronger, there is no neutral ground: one gathers with Jesus or scatters.",
+      "grammar": "Ho mē ōn met' emou kat' emou estin, ‘the one not being with me is against me’, uses the present participle with mē for a general class of people. The prepositions meta, ‘with’, and kata, ‘against’, are set side by side with the emphatic emou, ‘me’. The second line uses shepherd language: sunagōn, ‘gathering’, and skorpizei, ‘scatters’, the verb John 10:12 uses of the wolf scattering the flock.",
+      "words": ["G1510", "G3326", "G1473", "G2596", "G4863", "G4650"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's arrival forces a decision. Luke also records the opposite-sounding saying, ‘whoever is not against you is for you’ (9:50), about an exorcist working in Jesus' name; together they say that allegiance to Jesus, not membership in a particular group, is the dividing line."
+        }
+      ],
+      "parallels": ["Matthew 12:30"],
+      "refs": ["Luke 9:50", "Ezekiel 34:12", "John 10:12", "Joshua 24:15"]
+    },
+    {
+      "v": "24-26",
+      "context": "A warning follows about the danger of being cleaned out but not filled. An expelled spirit wanders, finds the house it left swept and in order, and returns with seven worse ones. Deliverance that is not followed by allegiance to the stronger one leaves a person more exposed than before.",
+      "grammar": "Hotan ... exelthē, ‘whenever it goes out’, is a general temporal clause with the aorist subjunctive. Dierchetai di' anudrōn topōn, ‘it goes through waterless places’, pictures the desert. Zētoun anapausin, ‘seeking rest’, gives the spirit a restless longing. Hupostrepsō eis ton oikon mou, ‘I will return to my house’, has the spirit still call the person its house. In verse 25 sesarōmenon kai kekosmēmenon, ‘swept and put in order’, are perfect passive participles describing a finished state; Matthew 12:44 adds ‘empty’. Ta eschata ... cheirona tōn prōtōn, ‘the last things worse than the first’, is the phrase 2 Peter 2:20 uses of those who return to corruption after knowing Christ.",
+      "words": ["G0169", "G4151G", "G1831", "G0504", "G5117", "G0372", "G5290", "G4563", "G2885", "G2033", "G4190", "G2730", "G2078", "G5501"],
+      "history": "Deserts were thought of as the haunts of demons. Isaiah pictures ruined Babylon and Edom inhabited by wild creatures and night spirits (Isaiah 13:21, 34:14), the scapegoat was sent to Azazel in the wilderness on the Day of Atonement (Leviticus 16:10), and in Tobit 8:3 the demon Asmodeus flees to the remotest parts of Egypt. Jesus himself was tested in the wilderness (4:1-2).",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "Moral cleanup without the presence of God is not safety. The house must be occupied, and in Luke's larger story the gift that fills it is the Holy Spirit whom the Father gives to those who ask (verse 13)."
+        }
+      ],
+      "parallels": ["Matthew 12:43-45"],
+      "refs": ["2 Peter 2:20", "Isaiah 34:14", "Luke 8:2", "Ephesians 5:18", "Luke 4:1-2"]
+    },
+    {
+      "v": "27-28",
+      "context": "A woman in the crowd blesses the mother who bore and nursed Jesus. Jesus does not deny it but moves the blessing to a wider circle: those who hear God's word and keep it.",
+      "grammar": "Eparasa tis phōnēn gunē, ‘a woman, lifting up her voice’, uses an aorist participle for a sudden outcry. Makaria hē koilia hē bastasasa se, ‘blessed the womb that carried you’, is a traditional form of praise for a son by blessing his mother. Jesus' reply begins with menoun, a particle that can either correct (‘no, rather’) or affirm and go further (‘yes, but more than that’); grammarians and translators divide, and the BSB's ‘rather’ keeps both possibilities open. Hoi akouontes ton logon tou theou kai phulassontes, ‘those who hear the word of God and keep it’, are present participles for an ongoing way of life.",
+      "words": ["G1869", "G5456G", "G1135G", "G3107", "G2836", "G0941", "G3149", "G2337", "G3304", "G0191", "G3056", "G5442G"],
+      "history": "Blessing a mother was a common way to honor her son in Jewish and Greek speech; the chapter note gives a rabbinic example. Luke has already shown Mary blessed: Elizabeth calls her blessed among women and blessed because she believed (1:42, 1:45), and Mary sings that all generations will call her blessed (1:48). Jesus' reply therefore includes his mother by the right reason, since she is the one who heard God's word and treasured it (2:19, 2:51).",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The blessing Jesus names comes through God's word heard and kept. Natural closeness to Jesus, even the closest possible, is not the basis of blessing; receiving and obeying God's word is, as in 8:21."
+        },
+        {
+          "id": "faith",
+          "note": "Hearing and keeping belong together. Luke's Mary is the model, blessed because she believed (1:45), which is why Christian traditions that differ on her place agree that her greatness lies in her faith."
+        }
+      ],
+      "refs": ["Luke 1:42-45", "Luke 8:21", "Luke 23:29", "James 1:22-25", "Luke 2:19"]
+    },
+    {
+      "v": "29-30",
+      "context": "As the crowds grow, Jesus answers those who demanded a sign (verse 16). The only sign this generation will get is Jonah's: as Jonah was a sign to Nineveh, so the Son of Man will be to them.",
+      "grammar": "Tōn de ochlōn epathroizomenōn, ‘as the crowds were gathering thickly’, is a genitive absolute with a participle found only here in the New Testament. Hē genea hautē genea ponēra estin, ‘this generation is an evil generation’, repeats genea for emphasis. Sēmeion zētei, ‘it seeks a sign’, and ou dothēsetai, ‘will not be given’, a divine passive. Ei mē to sēmeion Iōna, ‘except the sign of Jonah’, uses a genitive that can mean the sign that Jonah was or the sign concerning Jonah. Verse 30 answers with egeneto, ‘became’, for Jonah in the past, and estai, ‘will be’, a future, for the Son of Man.",
+      "words": ["G3793", "G1865", "G1074", "G4190", "G4592", "G2212", "G1325", "G2495H", "G3536", "G5207"],
+      "ot": [
+        {
+          "ref": "Jonah 3:4-5",
+          "note": "Jonah walks a day into Nineveh and proclaims that in forty days it will be overturned, and the people believe God, call a fast, and put on sackcloth. The Septuagint oddly reads ‘three days’ for the Hebrew's forty. Jonah's only message is a warning, yet a pagan city repents at it. Luke's use centers on Jonah as a preacher of repentance, while Matthew 12:40 draws out his three days and nights in the fish as a sign of Jesus' death and resurrection. The future ‘will be’ in Luke may point to the Son of Man's vindication in the resurrection or at the judgment, and interpreters differ over which Luke intends."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God does not give signs on demand to test him. The sign offered is a person and his message, which calls for repentance rather than proof, and which, in Luke's story, God will vindicate by raising him from the dead."
+        }
+      ],
+      "parallels": ["Matthew 12:38-40", "Matthew 16:1-4", "Mark 8:11-12"],
+      "refs": ["Jonah 3:4-5", "Jonah 1:17", "1 Corinthians 1:22-23", "Luke 16:31"]
+    },
+    {
+      "v": "31",
+      "context": "The first witness against this generation is a Gentile queen. She traveled from the ends of the earth to hear Solomon's wisdom, and now something greater than Solomon is present and ignored.",
+      "grammar": "Basilissa notou, ‘queen of the south’, uses notos, the south wind and hence the south. Egerthēsetai en tē krisei, ‘will be raised at the judgment’, is a future passive of egeirō, the verb used for resurrection, so she will stand up alive at the last day. Meta tōn andrōn tēs geneas tautēs, ‘with the men of this generation’, sets her beside them as a witness. Katakrinei, ‘she will condemn’, means her example will convict them. Ek tōn peratōn tēs gēs, ‘from the ends of the earth’, stresses the distance. Pleion Solomōnos hōde, ‘something greater than Solomon here’, uses the neuter pleion, ‘something more’, which can point to Jesus himself or to the kingdom present in him.",
+      "words": ["G0938H", "G3558H", "G1453", "G2920", "G0435G", "G2632", "G4009", "G1093G", "G4678", "G4672G", "G4119", "G5602"],
+      "history": "The queen of Sheba (1 Kings 10:1-13, 2 Chronicles 9:1-12) came from a kingdom most scholars locate in southwest Arabia, the land of the Sabaeans in modern Yemen, a center of the incense trade; some traditions, including the Ethiopian, linked her with Africa, and Josephus calls her queen of Egypt and Ethiopia (Antiquities 8.165). For a Galilean audience she was the model of a foreign ruler who went to great lengths to hear God-given wisdom.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "At the judgment, people who responded to lesser light will testify against those who rejected greater. The verse assumes a bodily resurrection of all to judgment and makes the Gentile queen's hunger for wisdom a standard for Israel's response to Jesus."
+        },
+        {
+          "id": "wisdom",
+          "note": "Solomon's wisdom was God's gift, and the queen came to hear it. Jesus claims that something greater than Solomon's wisdom is present in him, the claim Paul makes explicit when he calls Christ the wisdom of God (1 Corinthians 1:24)."
+        }
+      ],
+      "parallels": ["Matthew 12:42"],
+      "refs": ["1 Kings 10:1-9", "2 Chronicles 9:1-8", "1 Corinthians 1:24", "Colossians 2:3"]
+    },
+    {
+      "v": "32",
+      "context": "The second witness is a Gentile city. Nineveh repented when a reluctant prophet preached a bare warning, and something greater than Jonah is here. Luke's order ends the pair on repentance.",
+      "grammar": "Andres Nineuitai, ‘Ninevite men’, parallels the queen of the South. Anastēsontai, ‘they will stand up’, a future middle of anistēmi, is the other common verb for resurrection. Metenoēsan eis to kērugma Iōna, ‘they repented at the preaching of Jonah’, uses eis, often causal here, ‘in response to’. Kērugma, ‘proclamation’, is the word the early church used for its announcement of the gospel (1 Corinthians 1:21). The closing kai idou pleion Iōna hōde repeats the pattern of verse 31.",
+      "words": ["G0435G", "G3536", "G0450", "G2920", "G1074", "G2632", "G3340", "G2782", "G2495H", "G4119"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "A pagan city turned at a single warning from a prophet who did not want it to be spared (Jonah 4:1-2). The verse measures repentance by response to God's word, not by privilege, and makes Nineveh a witness against a generation that heard far more."
+        },
+        {
+          "id": "judgment",
+          "note": "Accountability grows with the light received. Those who hear Jesus himself, greater than any prophet, carry a heavier responsibility than those who heard Jonah."
+        }
+      ],
+      "parallels": ["Matthew 12:41"],
+      "refs": ["Jonah 3:5-10", "Jonah 4:1-2", "Luke 10:13-14", "1 Corinthians 1:21"]
+    },
+    {
+      "v": "33",
+      "context": "A saying about a lamp links the sign of Jonah to what follows. God has not hidden his light; it has been set where everyone who enters can see it. The problem, as verses 34 to 36 explain, is in the eye that receives it.",
+      "grammar": "Oudeis luchnon hapsas, ‘no one having lit a lamp’, uses an aorist participle for the lighting. Eis kruptēn, ‘into a hidden place’ or ‘cellar’, uses a noun found only here in the New Testament. Epi tēn luchnian, ‘on the lampstand’, gives the right place. Hina hoi eisporeuomenoi to phōs blepōsin, ‘so that those entering may see the light’, is a purpose clause with the present subjunctive. Luke has used this saying already in 8:16, where it follows the parable of the sower; here it follows the sign of Jonah.",
+      "words": ["G3762", "G3088", "G0681", "G2926", "G3426", "G3087", "G1531", "G5457", "G0991"],
+      "text": "Some early manuscripts, including P45 and P75, lack ‘or under a basket’, and the Tyndale House edition omits it; most editions and English versions include it, as do Codex Sinaiticus and Codex Vaticanus. The chapter note gives the details.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "God's revelation in Jesus is public, not hidden. Those who ask for signs already stand in the light; what they lack is not evidence but eyes to receive it."
+        }
+      ],
+      "parallels": ["Matthew 5:15", "Mark 4:21", "Luke 8:16"],
+      "refs": ["Luke 8:16", "Luke 2:32", "John 8:12", "Matthew 5:14-16"]
+    },
+    {
+      "v": "34-36",
+      "context": "The eye is the lamp of the body. A sound eye fills the whole person with light, a bad one with darkness, so the hearers must check whether the light they think they have is actually darkness. Verse 36, found only in Luke, describes the person wholly full of light.",
+      "grammar": "Ho luchnos tou sōmatos estin ho ophthalmos sou, ‘the lamp of the body is your eye’, puts the predicate first for emphasis. Hotan ho ophthalmos sou haplous ē, ‘whenever your eye is haplous’, and epan de ponēros ē, ‘but when it is evil’, are general conditions with the present subjunctive (see the chapter note on haplous). In verse 35 skopei oun mē to phōs ... skotos estin, ‘watch then lest the light is darkness’, uses mē with the indicative estin rather than a subjunctive, a construction that often signals a suspicion that the feared thing is already true. Verse 36 has puzzled commentators because its result clause seems to repeat its condition; the future estai, ‘it will be’, and the image hōs hotan ho luchnos tē astrapē phōtizē se, ‘as when the lamp lights you with its brightness’, point to the full radiance of a life wholly open to God's light.",
+      "words": ["G3088", "G4983", "G3788", "G0573", "G5460", "G4190", "G4652", "G4648", "G5457", "G4655", "G3313", "G0796", "G5461"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The danger Jesus names is darkness that thinks it is light. Sin blinds the very faculty by which a person would recognize it, which is why the Pharisee in the next scene can be scrupulous about washing and blind to his own greed."
+        },
+        {
+          "id": "holiness",
+          "note": "Wholeness is the goal: a body full of light with no part dark. Holiness in Luke is an undivided openness to God, not a partial cleanness, a theme the woes that follow press home."
+        }
+      ],
+      "parallels": ["Matthew 6:22-23"],
+      "refs": ["Matthew 6:22-23", "Deuteronomy 15:9", "Proverbs 22:9", "John 3:19-21", "2 Corinthians 4:4-6"]
+    },
+    {
+      "v": "37-38",
+      "context": "A Pharisee invites Jesus to a meal, and Jesus reclines at table without first washing. His host is astonished. The scene sets up the woes that follow.",
+      "grammar": "En de tō lalēsai, ‘while he was speaking’, uses the aorist infinitive with the article to link this scene to the preceding sayings. Erōta, ‘asks’, is a present tense used vividly in narrative. Hopōs aristēsē par' autō, ‘that he would eat the midday meal with him’, uses aristaō, a verb found elsewhere in the New Testament only in John 21:12 and 21:15, where the risen Jesus calls the disciples to breakfast. Anepesen, ‘he reclined’, is the posture of a formal meal. In verse 38 ethaumasen hoti ou prōton ebaptisthē pro tou aristou, ‘he was amazed that he did not first wash before the meal’, uses baptizō, ‘to dip, to wash’, in an aorist passive with a middle sense, ‘wash oneself’.",
+      "words": ["G2980", "G2065", "G5330", "G0709", "G0377", "G2296", "G4413G", "G0907", "G0712"],
+      "history": "Hand-washing before meals was a Pharisaic tradition, not a command of the Law for lay Israelites (Mark 7:3-4). The Mishnah records the schools of Shammai and Hillel debating whether to wash the hands before or after mixing the cup of wine at a meal (m. Berakhot 8:2), and a whole tractate, Yadayim, treats the purity of hands. Luke's Jesus accepts Pharisees' invitations three times (7:36, 11:37, 14:1), and each meal becomes a scene of teaching and conflict.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Jesus does not despise his host's hospitality, but he declines a purity practice that the Law did not require. The omission provokes the question of what makes a person clean before God, which he answers in the verses that follow."
+        }
+      ],
+      "parallels": ["Mark 7:1-5", "Matthew 15:1-2"],
+      "refs": ["Mark 7:3-4", "Luke 7:36", "Luke 14:1", "John 21:12"]
+    },
+    {
+      "v": "39-40",
+      "context": "Jesus answers the unspoken criticism. The Pharisees clean the outside of the vessels, but their own inside is full of greed. The God who made the outside made the inside too.",
+      "grammar": "Nun humeis hoi Pharisaioi, ‘now you Pharisees’, uses nun as a transition, ‘as things stand’. To exōthen tou potēriou kai tou pinakos katharizete, ‘you clean the outside of the cup and the platter’, describes a real purity practice. The next clause switches from the vessels to the people: to de esōthen humōn gemei, ‘but your inside is full’, so the cup becomes an image of the person. Harpagē, ‘robbery, plunder’, and ponēria, ‘wickedness’, name greed as seizing what belongs to others. Aphrones, ‘fools’, is the word the rich fool will hear from God (12:20). Ouch ho poiēsas to exōthen kai to esōthen epoiēsen, ‘did not the one who made the outside also make the inside?’, uses ouch to expect ‘yes’, grounding the argument in creation.",
+      "words": ["G2962G", "G3568", "G5330", "G1855", "G4221", "G4094", "G2511", "G2081", "G1073", "G0724", "G4189", "G0878", "G4160G"],
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Holiness belongs to the whole person because God made the whole person. Outward purity that leaves the heart untouched is not holiness but its imitation."
+        },
+        {
+          "id": "creation",
+          "note": "Jesus argues from creation: the God who made both outside and inside claims both. The doctrine of creation undercuts any religion that treats the visible and ritual as God's concern and the inner life as one's own."
+        }
+      ],
+      "parallels": ["Matthew 23:25-26"],
+      "refs": ["1 Samuel 16:7", "Psalm 51:6", "Mark 7:20-23", "Luke 16:15"]
+    },
+    {
+      "v": "41",
+      "context": "Jesus prescribes the remedy. Instead of scrupulous cleaning of vessels, give alms from what is within, and then everything is clean. Generosity cleanses where ritual cannot.",
+      "grammar": "The verse is a famous puzzle. Plēn ta enonta dote eleēmosunēn, literally ‘but the things being inside, give as alms’, can mean give the contents of the cups and dishes to the poor, give from your inner self (the heart just described as full of greed), or give alms with respect to what is inside. Julius Wellhausen proposed that behind the Greek lies an Aramaic confusion between dakkau, ‘cleanse’, and zakkau, ‘give alms’, which would explain why Matthew 23:26 reads ‘first clean the inside of the cup’; Matthew Black (An Aramaic Approach to the Gospels and Acts) took the suggestion up. Others think Luke is interpreting the saying deliberately. Kai idou panta kathara humin estin, ‘and behold, everything is clean for you’, states the result.",
+      "words": ["G4133", "G1751", "G1325", "G1654", "G2400", "G2513"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Almsgiving here does the work of purification: greed is cleansed by giving. Luke returns to this repeatedly (12:33, 19:8, Acts 10:4), making care for the poor the sign that a heart has been changed."
+        },
+        {
+          "id": "holiness",
+          "note": "What makes a person clean is not the washing of vessels but a heart turned outward in generosity. The verse relocates purity from ritual to love."
+        }
+      ],
+      "refs": ["Luke 12:33", "Luke 19:8", "Acts 10:4", "Titus 1:15", "Daniel 4:27"]
+    },
+    {
+      "v": "42",
+      "context": "The first woe. The Pharisees tithe even their smallest garden herbs, but they pass over justice and the love of God. Jesus does not tell them to stop tithing; he tells them to put first things first without neglecting the rest.",
+      "grammar": "Ouai humin tois Pharisaiois, ‘woe to you, the Pharisees’, opens a lament in the prophets' manner. Apodekatoute, ‘you tithe’, is present tense, a regular practice. Hēduosmon, ‘mint’, is found only here and in Matthew 23:23, and pēganon, ‘rue’, only here. Parerchesthe tēn krisin kai tēn agapēn tou theou, ‘you pass by justice and the love of God’, uses parerchomai, ‘go past’, as the priest and Levite passed by (10:31-32 use a related compound). Tauta de edei poiēsai kakeina mē pareinai, ‘these you ought to have done and not neglected those’, uses the imperfect edei, ‘it was necessary’, for an obligation left unfulfilled.",
+      "words": ["G3759", "G5330", "G0586", "G2238", "G4076", "G3001", "G3928", "G2920", "G0026", "G2316", "G1163", "G3918"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Justice and love for God are the weightier matters. Luke's pairing, where Matthew 23:23 has justice, mercy, and faithfulness, echoes the great commandment of 10:27 and the prophets' summary in Micah 6:8."
+        },
+        {
+          "id": "law",
+          "note": "Jesus affirms tithing while condemning its misuse. He does not set the Law's small commands against its large ones, but orders them: faithfulness in detail is good only when it serves justice and love for God."
+        }
+      ],
+      "parallels": ["Matthew 23:23"],
+      "refs": ["Micah 6:8", "Deuteronomy 14:22", "Hosea 6:6", "Zechariah 7:9-10", "Luke 18:12"]
+    },
+    {
+      "v": "43",
+      "context": "The second woe targets the love of honor. The Pharisees love the front seats in the synagogue and respectful greetings in public.",
+      "grammar": "Agapate, ‘you love’, is the same verb as the great commandment's ‘love the Lord your God’ (10:27): the woe exposes a misdirected love. Prōtokathedria, ‘first seat’, is found in the New Testament only in this saying and its parallels (Matthew 23:6, Mark 12:39, Luke 20:46). Aspasmous en tais agorais, ‘greetings in the marketplaces’, refers to the honorific titles with which respected teachers were addressed in public.",
+      "words": ["G3759", "G5330", "G0025", "G4410", "G4864", "G0783", "G0058"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The love of honor is a form of pride that turns religion into a stage. Luke repeats the charge against the scribes in 20:46 and gives the remedy in the parable of the wedding seats: take the lowest place (14:7-11)."
+        }
+      ],
+      "parallels": ["Matthew 23:6-7", "Mark 12:38-39", "Luke 20:46"],
+      "refs": ["Luke 14:7-11", "Luke 20:46", "John 5:44", "James 2:2-4"]
+    },
+    {
+      "v": "44",
+      "context": "The third woe compares them to unmarked graves. People walk over them without knowing, and so are defiled unawares. Those who claim to guard purity have become a hidden source of impurity.",
+      "grammar": "Este hōs ta mnēmeia ta adēla, ‘you are like the unseen tombs’, uses adēlos, ‘not evident’, found elsewhere in the New Testament only in 1 Corinthians 14:8 of a trumpet's uncertain sound. Hoi peripatountes epanō ouk oidasin, ‘those walking over them do not know’, uses the perfect oidasin with present meaning. The image is the opposite of Matthew 23:27, where the Pharisees are whitewashed tombs, attractive outside and dead within; in Luke the danger is that the tombs are invisible.",
+      "words": ["G3759", "G3419", "G0082", "G0444", "G4043", "G1883", "G6063"],
+      "history": "Numbers 19:16 makes anyone who touches a grave unclean for seven days. The chapter note records the Mishnah's custom of marking graves with lime before Passover so that pilgrims would not stumble into impurity. An unmarked grave was a hidden hazard that could disqualify a person from the festival without his knowing it.",
+      "theology": [
+        {
+          "id": "holiness",
+          "note": "Religious leaders whose inner life is corrupt spread impurity to those who trust them. The woe inverts the Pharisees' concern: they fear contact with impurity, but they themselves have become its hidden source."
+        }
+      ],
+      "parallels": ["Matthew 23:27"],
+      "refs": ["Numbers 19:16", "Matthew 23:27", "Acts 23:3", "Luke 12:1"]
+    },
+    {
+      "v": "45-46",
+      "context": "A lawyer protests that Jesus is insulting them too. Jesus does not retreat; he turns to the experts in the law with three woes of their own, the first against loading people with burdens they will not help carry.",
+      "grammar": "Tauta legōn kai hēmas hubrizeis, ‘saying these things you insult us too’, uses hubrizō, ‘to treat with contempt’, the verb Jesus uses of his own coming mistreatment (18:32). Kai humin tois nomikois ouai, ‘and to you lawyers, woe’, puts kai first: ‘you as well’. Phortizete tous anthrōpous phortia dusbastakta, ‘you load people with loads hard to carry’, uses the verb and noun from the same root, and dusbastaktos is found only here and in Matthew 23:4. Heni tōn daktulōn humōn ou prospsauete tois phortiois, ‘with one of your fingers you do not touch the loads’, uses prospsauō, found only here, and daktulos, the same word as the finger of God in verse 20: God's finger frees, theirs will not lift.",
+      "words": ["G3544", "G1320", "G5195", "G3759", "G5412", "G5413", "G1419", "G1520", "G1147", "G4379"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Interpreting the Law carries responsibility for how it lands on people. Jesus condemns teaching that multiplies obligations without helping anyone keep them, and invites the weary to a lighter yoke (Matthew 11:28-30); Peter makes the same objection to burdening Gentile believers (Acts 15:10)."
+        },
+        {
+          "id": "leadership",
+          "note": "Those who teach others are judged by whether they share the weight they impose. The woe addresses every teacher of God's word, including the church's, and asks whether their teaching lifts burdens or adds them."
+        }
+      ],
+      "parallels": ["Matthew 23:4"],
+      "refs": ["Matthew 11:28-30", "Acts 15:10", "Galatians 6:2", "Luke 18:32"]
+    },
+    {
+      "v": "47-48",
+      "context": "The second woe to the lawyers exposes a grim irony. They honor the murdered prophets with tombs, but in doing so they finish their fathers' work: the fathers killed, the sons build the monuments.",
+      "grammar": "Oikodomeite ta mnēmeia tōn prophētōn, ‘you build the tombs of the prophets’, uses the present tense of ongoing construction. Hoi de pateres humōn apekteinan autous, ‘but your fathers killed them’, sets an aorist of a completed deed against it. Verse 48 draws the conclusion with ara, ‘so then’: martures este kai suneudokeite, ‘you are witnesses and you give approval’. Suneudokeō, ‘to approve along with’, is the verb Luke uses of Saul approving Stephen's death (Acts 8:1, 22:20) and Paul uses of those who approve evil deeds (Romans 1:32). The men ... de construction in the last line, ‘they killed ..., you build’, pairs the two acts as two halves of one project.",
+      "words": ["G3759", "G3618", "G3419", "G4396", "G3962", "G0615", "G0686", "G3144", "G4909", "G2041"],
+      "history": "Israel's Scriptures remember prophets killed or persecuted: Uriah son of Shemaiah, executed by King Jehoiakim (Jeremiah 26:20-23); Zechariah son of Jehoiada, stoned in the temple court (2 Chronicles 24:20-22); and the general confession that Israel killed the prophets who warned them (Nehemiah 9:26, 1 Kings 19:10). The chapter note describes the monuments being built in Jesus' day.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Honoring the prophets of the past is no proof of hearing God now. Every generation is tested by how it treats the messengers God sends to it, and Luke's Jesus stands in the line of the rejected prophets (13:33-34)."
+        }
+      ],
+      "parallels": ["Matthew 23:29-32"],
+      "refs": ["Jeremiah 26:20-23", "Nehemiah 9:26", "Acts 7:52", "Acts 8:1", "Luke 13:33-34"]
+    },
+    {
+      "v": "49",
+      "context": "Jesus quotes the wisdom of God announcing the sending of prophets and apostles, some of whom will be killed and persecuted. The rejection of God's messengers is part of a long pattern that is about to reach its climax.",
+      "grammar": "Dia touto kai hē sophia tou theou eipen, ‘for this reason also the wisdom of God said’, introduces a saying that matches no known text of Scripture. Interpreters propose that it quotes a lost writing, that it sums up the message of Scripture in wisdom's voice (compare Proverbs 1:20-33), or that Jesus speaks as God's wisdom himself; Matthew 23:34 has ‘I send you’. Apostelō eis autous prophētas kai apostolous, ‘I will send to them prophets and apostles’, uses a future of apostellō and joins apostles, Luke's name for the Twelve, to the prophets. Apoktenousin and diōxousin, ‘they will kill’ and ‘they will persecute’, are futures that Acts will fulfill.",
+      "words": ["G4678", "G2316", "G0649", "G4396", "G0652", "G0615", "G1377"],
+      "history": "Jewish wisdom writings personified Wisdom as God's agent calling people and sending messengers. Proverbs 1:20-33 pictures Wisdom crying in the streets and rejected, and the Wisdom of Solomon says that in every generation Wisdom passes into holy souls and makes them friends of God and prophets (Wisdom 7:27). Luke has already spoken of wisdom being justified by all her children (7:35).",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "God's wisdom has always spoken through messengers who were rejected. Jesus speaks in the voice of that wisdom and places his own apostles in the line of the prophets, which the church would read as a sign that Christ is himself the wisdom of God."
+        }
+      ],
+      "parallels": ["Matthew 23:34"],
+      "refs": ["Proverbs 1:20-33", "Luke 7:35", "Acts 7:52", "Acts 12:1-2", "1 Corinthians 1:24"]
+    },
+    {
+      "v": "50-51",
+      "context": "The long history of murdered messengers will be charged to this generation, from Abel, the first victim in Genesis, to Zechariah, the last in Chronicles. The generation that rejects the one greater than all the prophets will answer for the whole pattern.",
+      "grammar": "Hina ekzētēthē to haima pantōn tōn prophētōn, ‘so that the blood of all the prophets may be required’, uses hina with an aorist passive subjunctive; the clause states the outcome, and grammarians debate whether it is purpose or result. Ekzēteō, ‘to seek out, require’, is the Septuagint verb for God requiring blood from those who shed it (Genesis 9:5). To ekkechumenon apo katabolēs kosmou, ‘poured out since the foundation of the world’, uses a perfect passive participle for blood shed and still crying out. In verse 51 Luke writes metaxu tou thusiastēriou kai tou oikou, ‘between the altar and the house’, using oikos for the sanctuary where Matthew 23:35 has naos. Nai legō humin, ‘yes, I tell you’, confirms the verdict.",
+      "words": ["G1567", "G0129G", "G4396", "G1632", "G2602", "G2889", "G1074", "G0006", "G2197G", "G0622", "G3342", "G2379", "G3624H"],
+      "ot": [
+        {
+          "ref": "2 Chronicles 24:20-22",
+          "note": "The Spirit of God clothes Zechariah son of Jehoiada the priest, who warns the people that they have forsaken the LORD; at King Joash's command they stone him in the court of the LORD's house. As he dies he says, yere YHWH veyidrosh, ‘may the LORD see and require it’. The Hebrew verb darash, ‘require’, is the same verb used of God requiring blood in Genesis 9:5, where the Septuagint has ekzēteō, and Jesus picks up that language: the blood Zechariah asked God to require will be required. Chronicles stands last in the traditional order of the Hebrew Bible, so Abel to Zechariah spans the Scriptures from first to last (see the chapter note)."
+        },
+        {
+          "ref": "Genesis 4:10",
+          "note": "God tells Cain that his brother's blood is crying out to him from the ground. Abel is the first person murdered in Scripture, and his blood becomes the image of innocent blood demanding justice. Hebrews 12:24 later contrasts it with the blood of Jesus, which speaks a better word."
+        }
+      ],
+      "text": "Matthew 23:35 calls the martyr ‘Zechariah son of Barachiah’, which has raised the question of confusion with the prophet Zechariah son of Berechiah (Zechariah 1:1) or with Zacharias son of Baris, killed in the temple by Zealots in AD 67 or 68 (Josephus, Jewish War 4.334-344). Luke names no father, so the question does not arise in his text; the Chronicles martyr is the natural reading.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's justice remembers innocent blood across generations. The verse does not make descendants guilty for ancestors as such; it says that a generation that repeats the fathers' rejection, now of the Son himself, takes up the whole account."
+        }
+      ],
+      "parallels": ["Matthew 23:35-36"],
+      "refs": ["Genesis 4:10", "Genesis 9:5", "Hebrews 12:24", "Revelation 6:9-10", "2 Chronicles 24:20-22"]
+    },
+    {
+      "v": "52",
+      "context": "The last woe is the gravest. The experts in the Law have taken away the key that opens knowledge of God; they have not gone in themselves, and they have stopped others from entering.",
+      "grammar": "Ērate tēn kleida tēs gnōseōs, ‘you took away the key of knowledge’, uses an aorist of airō, ‘to take away’. The genitive can mean the key that opens the way to knowledge or the key that is knowledge, and Matthew 23:13 speaks instead of shutting the kingdom of heaven. Autoi ouk eisēlthate, ‘you yourselves did not enter’, and tous eiserchomenous ekōlusate, ‘you hindered those who were entering’, use aorists for a completed pattern and the present participle eiserchomenous for people in the act of going in. Kōluō, ‘to hinder’, is the verb Jesus uses when he says ‘do not hinder’ the children (18:16), and the question of Acts 8:36, what hinders me from being baptized.",
+      "words": ["G3759", "G3544", "G0142", "G2807", "G1108", "G1525", "G2967"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Knowledge of God is meant to be opened to people, and teachers hold its key in trust. The woe condemns scholarship that guards Scripture as a possession rather than opening it, the opposite of the risen Jesus, who opens the Scriptures to his disciples (24:32, 45)."
+        },
+        {
+          "id": "leadership",
+          "note": "A teacher's failure is double: failing to enter and keeping others out. Jesus holds religious leaders responsible not only for their own response to God but for the access they give or deny to others."
+        }
+      ],
+      "parallels": ["Matthew 23:13"],
+      "refs": ["Luke 24:32", "Luke 24:45", "Luke 18:16", "Isaiah 22:22", "Revelation 3:7"]
+    },
+    {
+      "v": "53-54",
+      "context": "The meal ends in open hostility. As Jesus leaves, the scribes and Pharisees begin to press him hard and to question him on many things, lying in wait to catch him in something he might say. The scene prepares for the trap questions of chapter 20.",
+      "grammar": "Kakeithen exelthontos autou, ‘and as he went out from there’, is a genitive absolute. Deinōs enechein, ‘to be terribly hostile’ or ‘to press hard’, uses enechō, the verb for Herodias' grudge against John (Mark 6:19). Apostomatizein, found only here in the New Testament, means to make someone speak off the cuff or to question him closely. In verse 54 enedreuontes, ‘lying in ambush’, is the verb used for the plot to ambush Paul (Acts 23:21), and thēreusai, ‘to catch’ as in hunting, is found only here. Ti ek tou stomatos autou, ‘something out of his mouth’, names the prey.",
+      "words": ["G1831", "G1122", "G5330", "G1171", "G1758", "G0653", "G1748", "G2340", "G4750"],
+      "text": "The earliest manuscripts read ‘as he went out from there’. The Byzantine text, followed by the King James Version, reads ‘as he said these things to them’ and adds at the end ‘that they might accuse him’. Codex Bezae has a further, freer form of both verses. The additions spell out the enemies' purpose but do not change the sense.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Faithful speech provokes hostility. The ambush language anticipates the plots that lead to Jesus' arrest (20:20, 22:2), and it shows that his path to the cross runs through conflict with the religious authorities he has just warned."
+        }
+      ],
+      "refs": ["Luke 20:20", "Luke 6:7", "Mark 12:13", "Acts 23:21", "Psalm 10:8-9"]
+    }
+  ]
+}

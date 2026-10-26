@@ -16,6 +16,7 @@
 
 export type ScriptureRendering =
   | "esv"
+  | "bsb"
   | "kjv"
   | "niv"
   | "nasb"
@@ -28,6 +29,7 @@ export type ScriptureRendering =
 
 const TRANSLATION_NAMES: Partial<Record<ScriptureRendering, string>> = {
   esv: "English Standard Version",
+  bsb: "Berean Standard Bible",
   kjv: "King James Version",
   niv: "New International Version",
   nasb: "New American Standard Bible",

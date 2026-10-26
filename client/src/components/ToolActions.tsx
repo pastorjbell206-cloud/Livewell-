@@ -1,13 +1,20 @@
 import { useState } from "react";
 import { Printer, Share2, RotateCcw } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
 
 interface ToolActionsProps {
   toolName: string;
   shareText?: string;
+  /**
+   * Hosts with saved progress pass their real restart handler here so
+   * "Start Over" clears the stored answers. Without it a plain reload would
+   * rehydrate the reader's saved state and start nothing over.
+   */
+  onStartOver?: () => void;
 }
 
-export function ToolActions({ toolName, shareText }: ToolActionsProps) {
-  const [copied, setCopied] = useState(false);
+export function ToolActions({ toolName, shareText, onStartOver }: ToolActionsProps) {
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "failed">("idle");
 
   const handlePrint = () => {
     window.print();
@@ -15,26 +22,16 @@ export function ToolActions({ toolName, shareText }: ToolActionsProps) {
 
   const handleShare = async () => {
     const text = shareText || `${toolName} — ${window.location.href}`;
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Fallback for older browsers
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      textarea.style.position = "fixed";
-      textarea.style.opacity = "0";
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
+    const ok = await copyToClipboard(text);
+    setCopyState(ok ? "copied" : "failed");
+    setTimeout(() => setCopyState("idle"), 2000);
   };
 
   const handleStartOver = () => {
+    if (onStartOver) {
+      onStartOver();
+      return;
+    }
     window.location.reload();
   };
 
@@ -86,14 +83,14 @@ export function ToolActions({ toolName, shareText }: ToolActionsProps) {
         aria-live="polite"
         style={buttonStyle}
         onMouseEnter={(e) => {
-          if (!copied) e.currentTarget.style.color = "var(--mustard)";
+          if (copyState === "idle") e.currentTarget.style.color = "var(--mustard)";
         }}
         onMouseLeave={(e) => {
-          if (!copied) e.currentTarget.style.color = "var(--ink-muted)";
+          if (copyState === "idle") e.currentTarget.style.color = "var(--ink-muted)";
         }}
       >
         <Share2 size={15} />
-        {copied ? "Copied" : "Share"}
+        {copyState === "copied" ? "Copied" : copyState === "failed" ? "Couldn't copy" : "Share"}
       </button>
       <button
         onClick={handleStartOver}

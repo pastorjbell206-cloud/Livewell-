@@ -6,6 +6,7 @@
  * /theology/theology-diagnostics.json.
  */
 import { useEffect, useMemo, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { RotateCcw } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -66,7 +67,7 @@ export default function TheologyDiagnostic() {
   }, [quiz, complete, answers]);
 
   function start(slug: string) { setActiveSlug(slug); setAnswers({}); }
-  function reset() { setAnswers({}); window.scrollTo({ top: 0, behavior: "smooth" }); }
+  function reset() { setAnswers({}); window.scrollTo({ top: 0, behavior: scrollBehavior() }); }
 
   return (
     <Layout>
@@ -79,7 +80,7 @@ export default function TheologyDiagnostic() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology" style={{ color: "inherit" }}>Theological Depth</Link> · Which view am I
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Which view am I
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             Where do you lean, and why?
@@ -95,7 +96,7 @@ export default function TheologyDiagnostic() {
           {/* QUIZ PICKER */}
           {!quiz && (
             <>
-              {quizzes === null && !loadError && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }}>Loading…</p>}
+              {quizzes === null && !loadError && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
               {loadError && (
                 <LoadFailed what="The diagnostic" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
               )}

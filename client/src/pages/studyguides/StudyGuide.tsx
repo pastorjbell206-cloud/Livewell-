@@ -8,10 +8,16 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import MoreOnThis from "@/components/MoreOnThis";
+import { CrisisBlock } from "@/components/CrisisBlock";
+import { HelpForThisGuide } from "@/components/HelpForThisGuide";
+import ScriptureNote from "@/components/ScriptureNote";
+import { GUIDE_TOPICS, SENSITIVE_GUIDES } from "@/lib/needs";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
 import PageEndNav from "@/components/PageEndNav";
 import { DONATE_HREF, DONATE_BLURB } from "@/lib/donate";
+import { isPublicEssay } from "@/lib/shelf";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -46,6 +52,8 @@ interface Guide {
   leaderPrimer?: string;
   faq?: { q: string; a: string }[];
   timeline?: { date: string; event: string }[];
+  /** Set on guides that quote the Berean Standard Bible throughout. */
+  translation?: "BSB";
 }
 
 const ALL_TABS = ["Leader", "Participant", "Devotional", "Facilitator", "Reference", "Promo"] as const;
@@ -109,7 +117,7 @@ export default function StudyGuide() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Leader's Toolkit`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/studyguides/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guide · Leader's Toolkit</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That guide is not here yet." : "Loading the guide…")}</h1>
@@ -166,7 +174,7 @@ export default function StudyGuide() {
                   <div style={lbl}>Session {s.n} · {s.timing.map((t) => `${t.segment} ${t.minutes}m`).join(" · ")}</div>
                   <h3 style={h3}>{s.title}</h3>
                   <p style={{ ...body, fontStyle: "italic", marginBottom: "12px" }}>Aim: {s.aim}</p>
-                  {s.essaySlug && <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>}
+                  {s.essaySlug && isPublicEssay(s.essaySlug) && <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>}
                   {s.teaching && (<><div style={{ ...lbl, marginTop: "16px" }}>Teaching notes</div>{para(s.teaching)}</>)}
                   <div style={{ ...lbl, marginTop: "24px" }}>Key Scripture</div>
                   <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "14px 18px", borderRadius: "0 var(--radius-sm) var(--radius-sm) 0" }}>
@@ -329,6 +337,14 @@ export default function StudyGuide() {
             </div>
           </section>
 
+          {data.translation === "BSB" && (
+            <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", padding: "0 var(--s-4)" }}>
+              <ScriptureNote rendering="bsb" />
+            </div>
+          )}
+          {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" topics={["suicide", ...(GUIDE_TOPICS[slug] ?? [])]} />}
+          {slug && <HelpForThisGuide slug={slug} />}
+          {slug && <MoreOnThis href={`/studyguides/${slug}`} />}
           <PageEndNav back={{ href: "/studyguides", label: "All study guides" }} />
         </>
       )}

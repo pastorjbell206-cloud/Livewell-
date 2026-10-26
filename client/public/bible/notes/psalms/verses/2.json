@@ -1,0 +1,184 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The psalm opens with a question of astonished protest: why do the nations bother? The answer is implied before it is given, since their plotting is ‘in vain’. The verse sets earth's noise against heaven's calm in verse 4.",
+      "grammar": "Lammah, ‘why?’, here expresses incredulity more than inquiry. The two lines are parallel but use different verb forms: ragshu, a perfect, ‘have thronged’ or ‘are in tumult’, and yehgu, an imperfect, ‘they mutter’ or ‘plot’. Ragash as a verb occurs only here; related nouns describe a noisy crowd (Psalm 55:14; 64:2). Yehgu is from hagah, the verb used in Psalm 1:2 for the righteous ‘meditating’ on God's law day and night. The same verb that described murmuring over Scripture now describes muttering against God. What they mutter is riq, ‘emptiness’, placed last for effect.",
+      "words": ["H7283", "H1471A", "H3816", "H1897", "H7385"],
+      "history": "The Babylonian Talmud (Berakhot 9b-10a) treats Psalms 1 and 2 as a single psalm, noting that it begins and ends with ‘blessed’ (1:1; 2:12). Early Christian writers knew the same arrangement: Justin Martyr quotes the two as one, and Codex Bezae, a fifth-century manuscript of Acts, has Paul cite Psalm 2:7 as from ‘the first psalm’ (Acts 13:33).",
+      "nt": [
+        {
+          "ref": "Acts 4:25-26",
+          "note": "The Jerusalem church, after Peter and John are threatened, prays verses 1 and 2 word for word in the Septuagint's form, which renders ragshu with ephruaxan, ‘raged insolently’, like snorting horses. They attribute the psalm to David and apply it to Herod, Pontius Pilate, the Gentiles, and the peoples of Israel gathered against Jesus (4:27). Every group, Jewish and Gentile, is implicated."
+        }
+      ],
+      "refs": ["Psalm 1:2", "Acts 4:25-28", "Psalm 83:2-5", "Isaiah 8:9-10"]
+    },
+    {
+      "v": "2",
+      "context": "The rebels are named: the kings and rulers of the earth. Their target is named too: the LORD and his Anointed. The psalm treats the two as a single authority, so that rebellion against the king is rebellion against God.",
+      "grammar": "Yityatstsevu, ‘they take their stand’, is a Hithpael of yatsav, the posture of men setting themselves for battle (1 Samuel 17:16). Nosdu yachad, ‘they sit together’ or ‘take counsel together’, is a Niphal of yasad, the idea of settling a plan in council. Meshicho, ‘his anointed one’, is mashiach with a suffix: a person anointed with oil for office, usually the king. It is the source of the word Messiah, and the Greek christos, ‘anointed’, gives Christ.",
+      "words": ["H3320", "H7336", "H3245", "H4899"],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The phrase ‘the LORD and his Anointed’ binds God and his king together. The New Testament takes that union as its starting point for speaking of Jesus, the Christ, as sharing the Father's rule."
+        }
+      ],
+      "refs": ["1 Samuel 16:13", "1 Samuel 24:6", "Psalm 89:20", "Revelation 11:15", "Revelation 17:14"]
+    },
+    {
+      "v": "3",
+      "context": "The rebels speak for themselves. They experience the rule of God and his king as chains and ropes and resolve to throw them off. The psalm lets them state their case before answering it.",
+      "grammar": "Nenatteqah, ‘let us tear apart’, is a cohortative (a first person form of resolve, ‘let us’), and venashlikhah, ‘and let us throw off’, repeats the pattern. Moserot are the bands tying a yoke to an ox (Jeremiah 27:2); avot are ropes or cords. Both nouns carry the poetic suffix -emo, ‘their’, and the same ending runs through verses 3 to 5 (lamo, elemo, yevahalemo), a sound pattern that ties the rebels' words to God's answer.",
+      "words": ["H5423", "H4147", "H7993", "H5688"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse names rebellion's logic: God's rule is felt as bondage and autonomy as freedom. Jeremiah uses the same image for Israel breaking its yoke and bursting its bonds (Jeremiah 2:20; 5:5)."
+        }
+      ],
+      "refs": ["Jeremiah 2:20", "Jeremiah 5:5", "Luke 19:14", "Matthew 11:29-30"]
+    },
+    {
+      "v": "4",
+      "context": "The scene shifts from earth to heaven. God does not rise to meet the threat; he stays seated and laughs. The contrast in posture is the argument: the rebels stand (verse 2), God sits enthroned.",
+      "grammar": "Yoshev bashamayim, ‘the one sitting in the heavens’, is a participle that functions as a royal title, ‘the one enthroned’. Yischaq, ‘he laughs’, and yilag, ‘he mocks’, are imperfects describing God's response as it unfolds. Adonai, ‘the Lord’, a title meaning sovereign master, stands in parallel with the enthroned one. The anthropomorphism is deliberate: God's laughter is not cruelty but the disproportion between human revolt and divine rule.",
+      "words": ["H3427", "H8064", "H7832", "H3932", "H0136"],
+      "history": "The Babylonian Talmud (Avodah Zarah 3b) applies God's laughter to the rebellion of Gog and Magog at the end of days, reading the psalm as a picture of the nations' final revolt against the Messiah.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God's rule is not threatened by the combined power of earth's rulers. The same image of God laughing at the wicked recurs in Psalms 37:13 and 59:8, always as reassurance to the besieged faithful."
+        }
+      ],
+      "refs": ["Psalm 37:13", "Psalm 59:8", "Isaiah 40:22-23", "Psalm 29:10"]
+    },
+    {
+      "v": "5",
+      "context": "Laughter turns to speech. God addresses the rebels in anger and terrifies them. What he says follows in verse 6.",
+      "grammar": "Az, ‘then’, marks the turn. Yedabber elemo, ‘he will speak to them’, introduces God's word as the answer to their word in verse 3. Beappo, ‘in his anger’, uses af, literally ‘nose’, the Hebrew idiom for anger as flaring nostrils; charon is ‘burning’ fury. Yevahalemo, a Piel of bahal, means ‘he will terrify them’ or ‘throw them into panic’, the word used of the dismay of kings in Exodus 15:15.",
+      "words": ["H0227A", "H1696G", "H0639G", "H2740", "H0926"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's answer to rebellion is first a word. His anger is not arbitrary rage but the response of rightful authority defied, and the psalm will still offer the rebels terms of peace (verses 10-12)."
+        }
+      ],
+      "refs": ["Exodus 15:14-15", "Revelation 6:15-17", "Psalm 76:7-8"]
+    },
+    {
+      "v": "6",
+      "context": "The divine decree answers the nations' plan. God has already installed his king on Zion. The rebels are resisting an accomplished fact.",
+      "grammar": "Vaani nasakhti malki, ‘but I, I have installed my king’. The independent pronoun ani sets God against the rebels' ‘let us’ in verse 3. Nasakhti is a perfect, presenting the installation as done. The verb nasakh most often means ‘to pour out’ a drink offering, which some connect with anointing, though anointing uses a different verb; others identify a second verb meaning ‘to set up’ or ‘to weave’ (compare Proverbs 8:23, where Wisdom says she was ‘set up’ from everlasting). Al Tsiyyon har qodshi, ‘on Zion, my holy mountain’, locates the king at the place of God's own dwelling.",
+      "words": ["H0589", "H5258B", "H4428G", "H6726", "H6944G"],
+      "text": "The Septuagint reads the verse as the king speaking: ‘But I was appointed king by him on Zion, his holy mountain’. That reading, which needs only a change of vowels and person, makes verse 6 the start of the king's speech that continues in verse 7. The Hebrew keeps God as speaker, and most translations follow it.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "God's kingdom is exercised through the king he appoints and from the place he chooses. The New Testament's Zion is the heavenly Jerusalem where the Son reigns (Hebrews 12:22-24)."
+        }
+      ],
+      "refs": ["Psalm 110:1-2", "2 Samuel 5:7", "Hebrews 12:22-24", "Proverbs 8:23"]
+    },
+    {
+      "v": "7",
+      "context": "The king himself now speaks and recites the decree God gave him: you are my son, today I have begotten you. This is the heart of the psalm and one of the most quoted verses of the Old Testament in the New.",
+      "grammar": "Asapperah, ‘let me recount’, is a Piel cohortative of safar: the king proclaims formally. El choq YHWH, ‘the decree of the LORD’: choq is a fixed, written statute. The decree puts the predicate first, beni attah, ‘my son are you’, the language of a legal declaration of sonship. Ani hayyom yelidtikha, ‘I today have begotten you’, uses a perfect of yalad, ‘to beget’ or ‘give birth’, in a performative sense: the declaration makes it so. Hayyom, ‘today’, ties the begetting to a particular day, the day of enthronement, which marks this as royal adoption, the fulfillment of 2 Samuel 7:14, not physical descent.",
+      "words": ["H5608A", "H2706G", "H1121A", "H3117G", "H3205"],
+      "history": "The Babylonian Talmud (Sukkah 52a) applies verses 7 and 8 to the Messiah son of David, to whom God says ‘ask of me’. Rashi, writing in eleventh-century France, noted that the rabbis interpreted the psalm of the King Messiah, but argued that its plain sense, and the right answer to Christian readings, applied it to David himself. Augustine, in his Expositions of the Psalms, read ‘today’ as God's eternal present, in which nothing is past or future, and so as the Son's eternal generation, a reading that shaped later Christian use of the verse.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "In its first setting the verse declared a human king God's son by adoption on the day of his crowning. The New Testament applies it to Jesus at his baptism, his resurrection, and his exaltation, and the church confessed that the one so declared is the eternal Son, whose sonship the royal adoption only foreshadowed."
+        },
+        {
+          "id": "trinity",
+          "note": "Christian theology read ‘begotten’ as describing the Son's eternal relation to the Father, the language the Nicene Creed uses (‘begotten, not made’). The psalm does not state that doctrine on its own; it supplies the vocabulary of Father and Son that the fuller revelation fills."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Acts 13:33",
+          "note": "Paul, preaching in Pisidian Antioch, quotes the verse from the Septuagint, which renders it exactly, and applies ‘today I have begotten you’ to God raising Jesus from the dead. Romans 1:4 similarly speaks of Jesus declared Son of God in power by the resurrection. The day of enthronement becomes Easter."
+        },
+        {
+          "ref": "Hebrews 1:5",
+          "note": "Hebrews pairs the verse with 2 Samuel 7:14 to show the Son's superiority to angels, and in 5:5 uses it to show that Christ did not appoint himself high priest but was appointed by the one who called him Son. The voice at Jesus' baptism (Mark 1:11) echoes the first half, ‘You are my Son’, combined with Isaiah 42:1; in Luke 3:22 Codex Bezae and some early writers give the whole verse."
+        }
+      ],
+      "refs": ["2 Samuel 7:14", "Acts 13:32-33", "Romans 1:3-4", "Hebrews 5:5", "Mark 1:11"]
+    },
+    {
+      "v": "8",
+      "context": "The decree continues with a promise. The king need only ask, and God will give him the nations and the ends of the earth. The rebellious nations of verse 1 are the inheritance of the king they rebel against.",
+      "grammar": "Sheal mimmenni, ‘ask of me’, is an imperative; veettenah, ‘and I will give’, is a cohortative expressing God's resolve. The two nouns for what is given, nachalah (‘inheritance’) and achuzzah (‘possession’), are the legal terms for land held by a family. They are applied now to the whole world: afse arets, ‘the ends of the earth’, a phrase used for the farthest horizon of God's rule (Psalm 72:8; Micah 5:4).",
+      "words": ["H7592", "H5414I", "H5159", "H0272", "H0657A"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The promise reaches beyond Israel's borders to every nation. The New Testament's commission to disciple all nations (Matthew 28:18-19) rests on the authority of the one who has received them from the Father."
+        }
+      ],
+      "refs": ["Psalm 72:8", "Micah 5:4", "Matthew 28:18-19", "Revelation 11:15", "Daniel 7:13-14"]
+    },
+    {
+      "v": "9",
+      "context": "The decree ends with the king's power over resisting nations: he will break them with an iron rod and shatter them like pottery. The images are of total and effortless victory.",
+      "grammar": "Teroem, ‘you will break them’, is from raa, ‘to break, shatter’, in parallel with tenappetsem, ‘you will smash them’, a Piel of nafats. Beshevet barzel, ‘with a rod of iron’: shevet is both a shepherd's rod and a king's scepter (Genesis 49:10). Kikhli yotser, ‘like a potter's vessel’, pictures fragments that cannot be mended (Jeremiah 19:11).",
+      "words": ["H7489B", "H7626G", "H1270", "H3627", "H3335H", "H5310A"],
+      "text": "The Septuagint reads the first verb as ‘you will shepherd them’ (poimaneis), taking the same consonants as a form of raah, ‘to shepherd’, rather than raa, ‘to break’. Both readings are possible from the unpointed Hebrew. The Masoretic reading fits the parallel line (‘shatter’); the Greek softens the image by making the king a shepherd with an iron rod.",
+      "nt": [
+        {
+          "ref": "Revelation 19:15",
+          "note": "Revelation uses the Septuagint's wording three times: the risen Christ will shepherd the nations with an iron rod (19:15; 12:5), and he shares that authority, received from his Father, with the faithful in Thyatira (2:26-28). The Greek verb holds both senses, ruling and breaking, and Revelation keeps both."
+        }
+      ],
+      "refs": ["Revelation 2:26-27", "Revelation 12:5", "Jeremiah 19:11", "Genesis 49:10"]
+    },
+    {
+      "v": "10",
+      "context": "The final section turns to the kings themselves. Having heard the decree, they are urged to act wisely while there is time.",
+      "grammar": "Veattah, ‘and now’, draws the conclusion from verses 4 to 9. Haskilu, ‘act wisely’, is a Hiphil imperative of sakal, the vocabulary of wisdom literature for insight that leads to right action. Hivvaseru, ‘be warned’ or ‘accept instruction’, is a Niphal of yasar, the verb of discipline and correction (Proverbs 1:2-3 uses the related noun musar). Shofte arets, ‘judges of the earth’, is another title for rulers.",
+      "words": ["H6258", "H7919A", "H3256", "H8199"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Wisdom for rulers begins with recognizing whose rule theirs is under. The psalm, which opened the Psalter after the wisdom poem of Psalm 1, ends in wisdom's language."
+        }
+      ],
+      "refs": ["Proverbs 8:15-16", "Proverbs 1:2-7", "Daniel 4:34-37"]
+    },
+    {
+      "v": "11",
+      "context": "The kings are told to serve the LORD with fear and to rejoice with trembling, a paradox that holds reverence and joy together.",
+      "grammar": "Ivdu et YHWH beyirah, ‘serve the LORD with fear’, uses avad, the verb for a vassal's service to his overlord as well as for worship. Vegilu birada, ‘and rejoice with trembling’, joins gil, an exultant joy, with readah, ‘trembling’. The pairing troubled some interpreters, and a conjecture proposed early in the twentieth century rearranged the letters of the last words of verse 11 and the first of verse 12 to read ‘with trembling kiss his feet’. The received text makes sense as it stands: joy in God's rule and awe before it belong together (compare Psalm 96:9-11).",
+      "words": ["H5647H", "H3374", "H1523", "H7461B"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "Fear and joy are not opposites here. The fear of the LORD is the trembling of those who have seen his majesty, and the joy is that such a king is good."
+        }
+      ],
+      "refs": ["Psalm 96:9-11", "Philippians 2:12", "Hebrews 12:28", "Psalm 100:2"]
+    },
+    {
+      "v": "12",
+      "context": "The appeal ends with a command to pay homage, a warning of sudden wrath, and a closing beatitude. The chapter note discusses the translation of ‘kiss the Son’; the verse note sets out the ancient evidence.",
+      "grammar": "Nashqu, ‘kiss’, is a Piel imperative; a kiss was the gesture of homage to a king (1 Samuel 10:1; 1 Kings 19:18). Var is the problem: in Aramaic bar means ‘son’, while in Hebrew it can mean ‘pure’ or ‘grain’. Pen yeenaf, ‘lest he be angry’, has an ambiguous subject, the LORD or the son. Kimat means ‘quickly’ or ‘a little’, so the anger may flare ‘suddenly’ or ‘in an instant’. The last line, ashre kol chose vo, ‘blessed are all who take refuge in him’, echoes the opening of Psalm 1, ‘blessed is the man’, and uses chasah, the Psalter's key word for trust.",
+      "words": ["H5401A", "H1121A", "H0599", "H4592", "H0835", "H2620"],
+      "text": "The ancient versions divide. The Septuagint reads ‘take hold of instruction’, and the Aramaic Targum ‘receive instruction’, both apparently avoiding ‘son’. The Syriac Peshitta reads ‘kiss the son’. The second-century Jewish Greek translators Aquila and Symmachus took var in the sense ‘pure’ or ‘choice’. Jerome's translation from the Hebrew rendered it ‘worship purely’, though he later wrote that ‘son’ was also a possible rendering. Modern translations follow ‘son’ (BSB, ESV, KJV), ‘kiss his feet’ by conjecture (NRSV), or ‘pay homage in good faith’ (NJPS).",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The psalm's final word is not threat but invitation. The same rulers who plotted against the Anointed are offered refuge in him, and the beatitude reaches ‘all’."
+        },
+        {
+          "id": "exaltation",
+          "note": "Homage to the son is homage to God, since rebellion against one was rebellion against both (verse 2). The New Testament presents every knee bowing to the exalted Christ to the glory of God the Father (Philippians 2:9-11)."
+        }
+      ],
+      "refs": ["Psalm 1:1", "1 Samuel 10:1", "Philippians 2:9-11", "Psalm 34:8", "John 5:22-23"]
+    }
+  ]
+}

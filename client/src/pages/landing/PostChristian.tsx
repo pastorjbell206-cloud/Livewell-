@@ -160,7 +160,7 @@ export default function PostChristian() {
           The end of cultural Christianity might be the beginning of actual Christianity.
         </h1>
         <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          Sixty essays. Seven tiers. The full story of how the most powerful religious movement in Western history is losing its grip — and what, if anything, remains when the scaffolding falls.
+          Sixty essays in seven tiers, tracing how the faith that shaped the West lost its cultural hold, and what, if anything, remains when the scaffolding falls.
         </p>
       </section>
 
@@ -221,10 +221,10 @@ export default function PostChristian() {
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>THE ARGUMENT</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "24px" }}>Why this series exists</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginBottom: "20px", maxWidth: "68ch" }}>
-            Christianity is not dying. Something is dying. The version of Christianity that required cultural power, political alignment, and social respectability to survive — that version is over. What is emerging on the other side may be closer to the original thing than anything Christendom ever produced.
+            Christianity is not dying. Something is dying. The version of Christianity that required cultural power, political alignment, and social respectability to survive — that version is over. What is emerging on the other side may turn out to look more like the church before Constantine than the one Christendom built. That is a claim to be argued, not assumed, and the essays here try to earn it.
           </p>
           <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, maxWidth: "68ch" }}>
-            These sixty essays trace the full arc: how Christianity gained the world, what it lost in the process, why people are leaving, what legitimate grievances they carry, and whether anything on the other side of this collapse is worth building on. Written by a pastor. Written from inside the room. Written for anyone who refuses to settle for easy answers in either direction.
+            These sixty essays trace the full arc: how Christianity gained the world, what it lost in the process, why people are leaving, what legitimate grievances they carry, and whether anything on the other side of this collapse is worth building on. They were written by a working pastor from inside the room, for the reader who will not accept an easy answer from either direction.
           </p>
         </div>
       </section>
@@ -234,7 +234,7 @@ export default function PostChristian() {
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>STAY WITH THE SERIES</p>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" }}>Get new essays as they publish</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginBottom: "32px", lineHeight: 1.7 }}>One essay a week from the post-Christian series. No spam. No guilt. Theology that takes both faith and doubt seriously.</p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted, #5A5448)", marginBottom: "32px", lineHeight: 1.7 }}>One essay a week from the post-Christian series, and nothing else in your inbox. Theology that takes both faith and doubt seriously.</p>
           <LandingSignup source="landing-post-christian" />
         </div>
       </section>

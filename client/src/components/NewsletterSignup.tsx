@@ -29,7 +29,7 @@ interface NewsletterSignupProps {
 export function NewsletterSignup({
   variant = "inline",
   title = "One serious essay a week",
-  description = "Theology that meets the actual Tuesday afternoon of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
+  description = "Theology that meets the weight of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
   source,
   audienceType,
 }: NewsletterSignupProps) {

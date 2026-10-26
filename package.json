@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
-    "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build": "tsx scripts/build-catalogue.mjs && vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "build:vercel": "rm -rf node_modules/.vite .vite dist && pnpm run pdfs && pnpm run og && pnpm run howtos && pnpm run wisdom && pnpm run sitemap && pnpm run publish:articles && pnpm run llms:full && pnpm run build && pnpm run prerender",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc --noEmit",
@@ -20,6 +20,7 @@
     "howtos": "node scripts/build-howtos-index.mjs",
     "wisdom": "node scripts/build-wisdom-index.mjs",
     "plans:index": "node scripts/build-plans-index.mjs",
+    "needs:index": "node scripts/build-needs-index.mjs",
     "prophetic": "node scripts/build-prophetic-indexes.mjs",
     "pdfs": "node scripts/build-pdfs.mjs",
     "manuals": "node scripts/build-leadership-manuals.mjs",
@@ -39,8 +40,16 @@
     "validate:pathways": "node scripts/validate-pathways.mjs",
     "validate:integrity": "node scripts/validate-content-integrity.mjs",
     "validate:links": "node scripts/validate-links.mjs",
+    "validate:needs": "node scripts/validate-needs.mjs",
+    "validate:grow-links": "node scripts/validate-grow-links.mjs",
+    "validate:plans": "node scripts/validate-plans.mjs",
+    "validate:workbooks": "node scripts/validate-workbooks.mjs",
+    "validate:family": "node scripts/validate-family.mjs",
+    "validate:grow-voice": "node scripts/validate-grow-voice.mjs",
+    "validate:verse-guides": "node scripts/validate-verse-guides.mjs",
     "llms:full": "node scripts/build-llms-full.mjs",
-    "theology-index": "node scripts/build-theology-index.mjs"
+    "theology-index": "node scripts/build-theology-index.mjs",
+    "catalogue": "tsx scripts/build-catalogue.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -87,8 +96,8 @@
     "input-otp": "^1.4.2",
     "jose": "6.1.0",
     "lucide-react": "^0.453.0",
-    "mysql2": "^3.15.0",
-    "nanoid": "^5.1.5",
+    "mysql2": "^3.22.0",
+    "nanoid": "^5.1.16",
     "next-themes": "^0.4.6",
     "react": "^19.2.1",
     "react-day-picker": "^9.11.1",
@@ -155,9 +164,11 @@
     },
     "overrides": {
       "tailwindcss>nanoid": "3.3.7",
-      "qs@<6.15.2": ">=6.15.2",
       "path-to-regexp@<0.1.13": ">=0.1.13",
-      "mdast-util-to-hast@<13.2.1": ">=13.2.1"
+      "mdast-util-to-hast@<13.2.1": ">=13.2.1",
+      "qs@<6.16.0": ">=6.16.0",
+      "sharp@<0.35.4": ">=0.35.4",
+      "fflate@<0.7.5": ">=0.7.5"
     },
     "onlyBuiltDependencies": [
       "esbuild",

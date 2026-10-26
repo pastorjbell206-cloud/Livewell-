@@ -1,0 +1,212 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "\"After these events\" ties the vision to chapter 14. Abram has just defeated four kings, made enemies in the east, and refused Sodom's wealth, and God now speaks to both fears: he will be Abram's protection and Abram's payment.",
+      "grammar": "\"The word of the LORD came\" (hayah devar YHWH) is the formula the prophets use for receiving a message (Jeremiah 1:2, Ezekiel 1:3, Hosea 1:1). Its first appearance in the Bible is here, and 20:7 will call Abraham a prophet. \"Do not be afraid\" (al tira) is also its first occurrence. The final clause is disputed: sekharkha harbeh me'od can mean ‘your reward will be very great’, with harbeh (a Hiphil infinitive used as an adverb) describing the reward, or, as the BSB reads it, ‘I am... your very great reward’, making God himself the reward. Sakhar is ordinary wage language, the pay a worker or soldier earns.",
+      "words": ["H1697G", "H4236", "H3372G", "H4043", "H7939"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The first time Scripture says the word of the LORD ‘came’ to someone, it comes to Abram in a vision. The prophetic word begins with the promise to Abraham, which is why later prophets keep returning to it."
+        }
+      ],
+      "text": "English versions divide over the last line. The KJV, BSB, and NIV read God as the reward (‘your exceeding great reward’, ‘your very great reward’); the ESV and NRSV read ‘your reward shall be very great’. The Hebrew allows both, and the Septuagint takes it the second way.",
+      "refs": ["Genesis 14:20-23", "Psalm 3:3", "Psalm 16:5", "Deuteronomy 33:29"]
+    },
+    {
+      "v": "2",
+      "context": "Abram answers the promise of reward with the one lack that makes every reward empty: he has no son. His estate will pass to a servant, Eliezer of Damascus.",
+      "grammar": "Abram addresses God as Adonai YHWH, \"Lord GOD\", the first time this pairing appears; English Bibles print the second word as GOD in small capitals because Jewish readers pronounced it as Elohim here to avoid saying Adonai twice. Holekh ariri, ‘I am going childless’, uses the participle of halakh, ‘to walk’ or ‘to go’; some take it to mean ‘I am going on’ through life childless, others ‘I am departing’, that is, dying without a child. The next phrase, ben-mesheq beiti, is one of the most obscure in Genesis. Mesheq appears only here, and it sounds like Dammeseq, ‘Damascus’, which follows; the wordplay seems deliberate, but the exact sense (perhaps ‘the one who will possess my house’) is uncertain.",
+      "words": ["H0136", "H3069", "H6185", "H4943", "H0461G"],
+      "history": "Eliezer is probably the unnamed senior servant of 24:2. Abram's pursuit in 14:15 had just taken him past Damascus. A household without a son needed a legal heir, and a trusted servant was a natural choice.",
+      "refs": ["Genesis 24:2", "Genesis 14:15", "Psalm 39:13"]
+    },
+    {
+      "v": "3",
+      "context": "Abram repeats his complaint more bluntly, and this time the fault is laid at God's door: \"You have given me no offspring.\" He has been promised offspring since 12:7 and 13:15-16.",
+      "grammar": "The verse is built on two exclamations, hen, ‘look’, and vehinneh, ‘and look’. The first introduces what God has not done; the second what will follow from it. Yoresh, ‘inheriting’, is a participle, as though the servant's inheritance were already underway. Ben-beiti, ‘son of my house’, is a household servant, probably one born in the household (compare 14:14), not a son by birth.",
+      "words": ["H2005", "H2009", "H2233H", "H3423G"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Abram's first recorded words to God are not praise but complaint, and God answers with a fuller promise rather than a rebuke. The lament psalms follow the same pattern: honest speech to God is itself an act of faith."
+        }
+      ],
+      "refs": ["Genesis 12:7", "Genesis 13:15-16", "Psalm 13:1-2"]
+    },
+    {
+      "v": "4",
+      "context": "The word of the LORD answers the objection directly. Eliezer will not inherit; Abram's heir will be his own son.",
+      "grammar": "\"One who comes from your own body\" renders asher yetse mimme'eykha, literally ‘who will come out from your inward parts’. The same phrase appears in God's promise to David of a son whose throne God will establish (2 Samuel 7:12), so the two great dynastic promises of the Old Testament share their wording. The emphatic hu, ‘he’, before the final verb, makes the point: that one, and no other, will inherit you.",
+      "words": ["H4578", "H3318M", "H3423G"],
+      "refs": ["2 Samuel 7:12", "Genesis 17:16", "Genesis 21:12"]
+    },
+    {
+      "v": "5",
+      "context": "God brings Abram outside and points him to the night sky. The dust of 13:16 becomes the stars, and the promise is made visible: Abram cannot count them, and neither will anyone count his descendants.",
+      "grammar": "Habbet-na, ‘look, please’, is a Hiphil imperative softened by the particle na, which often turns a command into an invitation. The challenge \"if you are able\" is left hanging, and God's answer is only two Hebrew words and a noun: koh yihyeh zar'ekha, \"So shall your offspring be.\" Zera, ‘seed’ or ‘offspring’, is a collective singular, a detail Paul will later press in Galatians 3:16.",
+      "words": ["H5027", "H3556", "H5608A", "H2233H"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The stars become a standing sign of the promise, repeated to Abraham (22:17), Isaac (26:4), and Moses (Deuteronomy 1:10). Every clear night was a reminder of what God had pledged."
+        }
+      ],
+      "refs": ["Genesis 22:17", "Deuteronomy 1:10", "Romans 4:18", "Hebrews 11:12"]
+    },
+    {
+      "v": "6",
+      "context": "The narrator steps back from the dialogue and comments: Abram believed, and God counted it as righteousness. There is no new event here; it is the verdict on everything that has just happened, and it becomes the hinge of the chapter and a foundation text for the New Testament.",
+      "grammar": "Vehe'emin is a Hiphil of aman, ‘to be firm’; with the preposition be it means ‘to put trust in’, to rest one's weight on. Unusually, it is a consecutive perfect (weqatal) rather than the normal narrative form. Grammarians debate why: many take it as marking a continuing attitude (‘he kept trusting’), others as a comment set apart from the flow of events. Vayyachsheveha, ‘and he reckoned it’, is the language of accounting. The feminine ‘it’ refers to Abram's act of believing. Most readers take God as the one who reckons; a minority of medieval Jewish interpreters read Abram as the subject, counting God's promise as righteousness on God's part. The same phrase is used when Phinehas's zeal is \"credited to him as righteousness\" (Psalm 106:31).",
+      "words": ["H0539", "H2803H", "H6666"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The Bible's first explicit statement of faith is trust in a person who has made a promise, not assent to an idea. Abram has nothing but God's word, and he rests on it."
+        },
+        {
+          "id": "justification",
+          "note": "Paul reads the verse as God counting a person righteous apart from works, since Abram was declared righteous before circumcision and before the law (Romans 4:3-11, Galatians 3:6). James cites it to show that such faith is proved in obedience (James 2:21-23). Protestants have usually read ‘credited’ as God reckoning a righteousness not one's own; Roman Catholic and Orthodox readers have stressed that God's reckoning also makes a person righteous. All agree that the verse puts God's promise and Abram's trust before any merit."
+        },
+        {
+          "id": "salvation",
+          "note": "Righteousness here is a right standing with God received through trust. The verse shows the way of salvation already at work in Genesis, long before the cross makes plain on what basis God can count the ungodly righteous (Romans 4:5, 23-25)."
+        }
+      ],
+      "refs": ["Romans 4:3-5", "Galatians 3:6-9", "James 2:23", "Psalm 106:31", "Habakkuk 2:4"]
+    },
+    {
+      "v": "7",
+      "context": "The second half of the chapter opens as the first did, with God naming himself, and turns from the promise of a son to the promise of land.",
+      "grammar": "\"I am the LORD, who brought you out\" (ani YHWH asher hotsetikha) uses the same Hiphil of yatsa, ‘to bring out’, and the same self-introduction that opens the Ten Commandments: \"I am the LORD your God, who brought you out of the land of Egypt\" (Exodus 20:2). Abram's departure from Ur is presented as a first exodus. Lerishtah, ‘to possess it’, uses yarash, the verb of inheriting from verses 3-4, now applied to the land.",
+      "words": ["H3318H", "H0218B", "H3778", "H3423H"],
+      "history": "Ur is usually identified with Tell el-Muqayyar in southern Iraq, a great Sumerian city excavated by Leonard Woolley in the 1920s and 1930s; a few scholars have argued for a northern Ur nearer Harran. The Chaldeans, the Kasdim, are a people known from the first millennium BC, so the phrase ‘Ur of the Chaldeans’ names the city as later readers knew it.",
+      "refs": ["Exodus 20:2", "Genesis 11:31", "Nehemiah 9:7-8", "Acts 7:2-4"]
+    },
+    {
+      "v": "8",
+      "context": "Abram asks for assurance. He has just believed God about a son; now he asks how he can know about the land, which he has seen others hold (12:6, 13:7).",
+      "grammar": "Bammah eda is literally ‘by what shall I know’: a request for a sign or means of certainty, not a denial. The verb yarash, ‘possess’, repeats from verse 7, and Abram throws God's word back to him. God answers with a ritual, not a rebuke, which suggests the question is not unbelief. Compare Gideon's request (Judges 6:36-40) and Hezekiah's (2 Kings 20:8), and contrast Zechariah in Luke 1:18.",
+      "words": ["H3045", "H3423H", "H0136"],
+      "refs": ["Judges 6:36-40", "2 Kings 20:8", "Luke 1:18", "Luke 1:34"]
+    },
+    {
+      "v": "9",
+      "context": "God instructs Abram to bring five animals. The answer to ‘how can I know’ will not be an argument but a covenant ceremony.",
+      "grammar": "Meshulleshet and meshullash are Pual participles of the verb for ‘three’, meaning ‘made three’, that is, three years old, animals at full maturity. Qechah, ‘bring’, carries an extra syllable (a lengthened imperative) that often gives a command a note of urgency or personal address.",
+      "words": ["H5697A", "H5795", "H0352A", "H8449", "H1469", "H8027"],
+      "history": "Every animal listed here reappears in Israel's later sacrificial law: heifers (Numbers 19:2, Deuteronomy 21:3), goats and rams (Leviticus 1:10), and turtledoves and young pigeons, which the law allowed as the offerings of the poor (Leviticus 1:14, 5:7, 12:8). The ceremony draws on the whole range of Israel's clean sacrificial animals.",
+      "refs": ["Leviticus 1:14", "Leviticus 5:7", "Numbers 19:2", "Luke 2:24"]
+    },
+    {
+      "v": "10-11",
+      "context": "Abram cuts the larger animals in two and lays the halves facing each other, leaving a path between them. Birds of prey come down on the carcasses, and Abram drives them off, waiting through the day for God to act.",
+      "grammar": "Vayvatter, ‘he cut in pieces’, and bitro, ‘its half’, come from the rare root batar. Outside this passage it appears in the description of Judah's covenant ceremony in Jeremiah 34:18-19, where Judah's leaders \"passed between the pieces of the calf\". Ish bitro liqrat re'ehu, literally ‘each its half to meet its neighbor’, describes the halves set opposite each other. The birds of prey are ha'ayit, a collective singular, and vayyashshev, ‘he drove them away’, is a Hiphil of a verb meaning ‘to blow’.",
+      "words": ["H1334", "H1335", "H5861", "H6297", "H5380"],
+      "history": "The law later directs that a bird offered as a burnt offering be torn open by its wings without being divided (Leviticus 1:17), which matches Abram leaving the birds whole. Some interpreters read the birds of prey as an omen of the hostile nations of verse 13; the text itself does not say.",
+      "refs": ["Jeremiah 34:18-19", "Leviticus 1:17"]
+    },
+    {
+      "v": "12",
+      "context": "At sunset Abram falls into a deep sleep, and a great and dreadful darkness comes on him. The vision of the stars in verse 5 now gives way to a revelation received in darkness, fitting the dark history it foretells.",
+      "grammar": "Tardemah, ‘deep sleep’, is the same word used for the sleep God caused to fall on the man when he formed the woman (2:21) and for the sleep from the LORD on Saul's camp (1 Samuel 26:12). It marks a sleep God sends, not ordinary tiredness. The verse repeats the verb naphal, ‘to fall’: the sleep ‘fell’ on Abram, and dread, great darkness, is ‘falling’ on him, a participle that makes the terror present to the reader. Vehinneh, ‘and behold’, shifts to Abram's point of view.",
+      "words": ["H8639", "H0367", "H2825", "H5307G"],
+      "refs": ["Genesis 2:21", "1 Samuel 26:12", "Job 4:13-14", "Daniel 10:9"]
+    },
+    {
+      "v": "13",
+      "context": "God tells Abram that his descendants will be foreigners, slaves, and oppressed for four hundred years before the land is theirs. The promise includes the long delay and the suffering.",
+      "grammar": "Yadoa teda, ‘knowing you will know’, pairs an infinitive absolute with a finite verb of the same root, a standard Hebrew construction for emphasis: \"Know for certain.\" It answers Abram's question in verse 8, bammah eda, ‘how shall I know’, with the same verb. Ger, ‘sojourner’, is a resident foreigner without landholding rights, what Abraham calls himself in 23:4. Innu, ‘they will afflict’, is the Piel of anah, the verb Exodus 1:11-12 uses for Egypt's oppression.",
+      "words": ["H3045", "H1616", "H5647G", "H6031B"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God announces the slavery in Egypt centuries before it happens. The oppression of Exodus 1 is therefore not a sign that the promise has failed but part of a history God foresaw and will bring to its end."
+        },
+        {
+          "id": "suffering",
+          "note": "The covenant does not exempt Abram's family from suffering. It gives the suffering a limit and a direction, which is the shape of hope throughout Scripture."
+        }
+      ],
+      "text": "Four hundred years here and in Acts 7:6 stands beside 430 years in Exodus 12:40 and Galatians 3:17. Many take four hundred as a round number. In Exodus 12:40 the Septuagint and Samaritan Pentateuch count the 430 years as including the time in Canaan, which shortens the stay in Egypt; the standard Hebrew text counts it for Egypt alone.",
+      "refs": ["Exodus 1:11-12", "Acts 7:6-7", "Exodus 12:40", "Genesis 23:4"]
+    },
+    {
+      "v": "14",
+      "context": "God will judge the oppressing nation, and Abram's descendants will leave with great possessions. The verse compresses the plagues and the exodus into one sentence.",
+      "grammar": "Dan anokhi, ‘I am judging’, puts the participle first and the emphatic pronoun after, a construction often used for a future action God is certain to perform. Birkhush gadol, ‘with great possessions’, uses rekhush, the word for Sodom's goods that Abram refused in chapter 14. What Abram would not take from a king, God will give his descendants.",
+      "words": ["H1777", "H0595", "H7399", "H1471A"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The plagues on Egypt are promised as judgment, a verdict on a nation that enslaved and afflicted God's people. The exodus is not arbitrary power but justice for the oppressed."
+        }
+      ],
+      "refs": ["Exodus 12:35-36", "Exodus 6:6", "Genesis 14:21-23", "Psalm 105:37"]
+    },
+    {
+      "v": "15",
+      "context": "God turns from Abram's descendants to Abram himself. He will not see the slavery; he will die in peace at a good old age. The promise is fulfilled in 25:8.",
+      "grammar": "The verse opens with an emphatic ve'attah, ‘but you’, setting Abram apart from the descendants of verses 13-14. ‘Go to your fathers’ is an idiom for death; Abram's fathers were buried far away in Mesopotamia, so the phrase speaks of joining the dead, not of burial in a family tomb. Besevah tovah, ‘in a good old age’, recurs at his death (25:8).",
+      "words": ["H0859A", "H0001G", "H7965G", "H7872"],
+      "refs": ["Genesis 25:8", "Genesis 47:30", "Judges 8:32", "1 Chronicles 29:28"]
+    },
+    {
+      "v": "16",
+      "context": "The return will come in the fourth generation, because the Amorites' iniquity has not yet reached its full measure. The delay is tied both to Abram's descendants and to the moral history of the land's current inhabitants.",
+      "grammar": "Dor, ‘generation’, can mean the span of a lifetime or an era as well as a single step in a family tree. Exodus 6:16-20 counts four generations from Levi, who went down to Egypt, to Moses, who led the people out, which fits the verse. Lo shalem, ‘not complete’, uses shalem, an adjective meaning full or whole, with ad-hennah, ‘until now’: the iniquity is still filling up. ‘Amorite’ here stands, as often, for the inhabitants of Canaan in general (compare Amos 2:9-10, Joshua 24:15).",
+      "words": ["H1755", "H7243", "H8003", "H5771G", "H0567"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God will not give Abram's family a land whose inhabitants have not yet deserved to lose it. The conquest is presented as judgment on accumulated sin, delayed for generations, and Leviticus 18:24-28 holds Israel to the same standard."
+        },
+        {
+          "id": "attributes",
+          "note": "The verse shows God's patience. He waits four centuries rather than act before judgment is just, which is the same forbearance the New Testament describes as meant to lead to repentance (Romans 2:4, 2 Peter 3:9)."
+        }
+      ],
+      "refs": ["Leviticus 18:24-28", "Exodus 6:16-20", "Amos 2:9-10", "1 Thessalonians 2:16"]
+    },
+    {
+      "v": "17",
+      "context": "After dark, a smoking firepot and a flaming torch pass between the pieces. Abram does not walk the path; God does, alone, in fire and smoke.",
+      "grammar": "Tannur is an oven or firepot, a portable clay vessel for fire; lappid is a torch. Both are marked by fire and smoke, as God's presence is at the burning bush (Exodus 3:2), in the pillar of cloud and fire (Exodus 13:21), and on Sinai (Exodus 19:18). Avar bein haggezarim, ‘passed between the pieces’, uses gezarim, from gazar, ‘to cut’. The same noun appears in Psalm 136:13, which praises God who divided the Red Sea ‘into parts’, perhaps an echo linking the covenant ceremony to the exodus it promised.",
+      "words": ["H8574H", "H6227", "H3940", "H0784", "H5674A", "H1506"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "In such ceremonies the party who passed between the pieces took the curse on himself if he broke his word (Jeremiah 34:18-20). Here only God passes through. The covenant's certainty rests on God's self-commitment, which Hebrews 6:13-18 describes as God swearing by himself because he had no one greater to swear by."
+        },
+        {
+          "id": "glory",
+          "note": "Fire and smoke are the signs of God's presence throughout the Old Testament. Abram sees, in a sleep of terror, a small form of what Israel will see at Sinai."
+        }
+      ],
+      "refs": ["Jeremiah 34:18-20", "Exodus 19:18", "Exodus 13:21", "Hebrews 6:13-18", "Psalm 136:13"]
+    },
+    {
+      "v": "18",
+      "context": "The narrator names what has happened: on that day the LORD made a covenant with Abram. God's words define the land's borders, from the river of Egypt to the Euphrates.",
+      "grammar": "Karat berit, literally ‘cut a covenant’, is the regular Hebrew idiom for making one, and in this chapter the phrase is enacted before it is spoken. Natatti, \"I have given\", is a perfect: the land is spoken of as already given, since God's promise is as good as done. Grammarians call this a perfect of certainty or a performative perfect.",
+      "words": ["H3772H", "H1285", "H5414G", "H5104H", "H6578"],
+      "history": "‘The river of Egypt’ is usually taken either as the Nile's easternmost branch or as the Wadi el-Arish in northern Sinai, which elsewhere marks Israel's southwestern border (Numbers 34:5 uses nachal, ‘brook’). The Euphrates marks the far northeast. Israel's rule reached toward these limits only under David and Solomon (1 Kings 4:21).",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The land promise defines the space in which Abram's descendants are to live as God's people. Its borders are repeated to Moses and Joshua (Deuteronomy 1:7, Joshua 1:4), and Israel's history returns to it again and again."
+        }
+      ],
+      "refs": ["Deuteronomy 1:7-8", "Joshua 1:4", "1 Kings 4:21", "Numbers 34:5"]
+    },
+    {
+      "v": "19-21",
+      "context": "The promise closes with ten peoples whose land will be given. Most lists of Canaan's inhabitants name six or seven (Exodus 3:8, Deuteronomy 7:1); this one is the fullest in the Bible.",
+      "history": "Several of these peoples appear elsewhere in Genesis or the conquest story. The Kenites are the clan of Moses' father-in-law (Judges 1:16), and Caleb is called a Kenizzite (Numbers 32:12). The Kadmonites, whose name means ‘easterners’, appear only here. The Hittites are the sons of Heth from whom Abraham buys a burial plot (Genesis 23). The Perizzites shared the land with Abram and Lot (13:7), the Rephaites were defeated in 14:5, and the Jebusites held Jerusalem until David took it (2 Samuel 5:6-7). The Hivites, usually present in such lists, are absent.",
+      "grammar": "Each name is a gentilic noun, a word naming a people, singular in form (‘the Kenite’) but collective in meaning. Every one is introduced by the object marker et, so the list reads as the object of \"I have given\" in verse 18.",
+      "words": ["H7017", "H7074G", "H6935", "H2850", "H6522", "H2983G"],
+      "refs": ["Deuteronomy 7:1", "Exodus 3:8", "Judges 1:16", "Numbers 32:12", "2 Samuel 5:6-7"]
+    }
+  ]
+}

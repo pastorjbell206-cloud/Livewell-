@@ -169,8 +169,8 @@ export default function HistoricFaith() {
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
             You cannot see a lens you are looking through. These name the three that distort the American reading of
-            Scripture the most, nationalism, consumerism, and individualism, and the end of the Christendom that made
-            them feel like the faith itself.
+            Scripture the most: nationalism, consumerism, and individualism. They also name the end of the Christendom
+            that made those three feel like the faith itself.
           </p>
           <Cards items={LENSES} />
           <ScriptureBlock reference="1 Corinthians 13:12" version="ESV">
@@ -188,9 +188,9 @@ export default function HistoricFaith() {
             The oldest, deepest thing there is.
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "rgba(245,240,230,0.72)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
-            Take the lenses off and this is what is left, and it is not less than what you had. It is far more. The long
-            memory of the church, the creed the whole world confesses, the Bible read in its own ancient world, and the
-            one connected story that runs through all of it.
+            Underneath the lenses is the faith they were distorting: the long memory of the church, the creed the whole
+            church confesses, the Bible read in its own ancient world, and the one connected story that runs through
+            all of it. None of this was invented to replace what you had. It was there the whole time.
           </p>
           <Cards items={UNDERNEATH} dark />
           <PullQuote tone="dark">

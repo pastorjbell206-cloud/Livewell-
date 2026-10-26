@@ -159,7 +159,7 @@ export const TRACKS: Track[] = [
     title: "Devotionals",
     kicker: "Devotional",
     description:
-      "Short readings for the actual Tuesday afternoon — not the imagined retreat.",
+      "Short readings for an ordinary day, not the imagined retreat.",
     group: "everyday",
   },
 ];
@@ -181,6 +181,13 @@ export const LEGACY_PILLAR_MAP: Record<string, string> = {
   "Theological Depth": "theology",
   "Leadership Formation": "pastoral-ministry",
   "Integrated Life": "marriage",
+
+  // PCN-import pillar labels (2025 seeds). "Living Well" here is not the
+  // living-well movement — every post carrying it is pastor-facing PCN
+  // material, so it routes to pastoral-ministry with the rest of that import.
+  "Pastoral Ministry": "pastoral-ministry",
+  "Living Well": "pastoral-ministry",
+  "Faith & Theology": "theology",
 
   // Old `posts.topic` enum values
   "justice": "prophetic-justice",

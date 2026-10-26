@@ -1,0 +1,302 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "On a Sabbath Jesus goes to eat at the house of a leading Pharisee, and the guests watch him closely. The meal that follows fills the first half of the chapter, and it takes up the kingdom's feast promised at the end of chapter 13 (13:29).",
+      "grammar": "Kai egeneto en tō elthein auton, ‘and it happened, as he went’, is the Septuagint's narrative formula that Luke uses often to open a scene. Tinos tōn archontōn tōn Pharisaiōn, ‘one of the rulers of the Pharisees’, marks the host as a leading figure. Phagein arton, literally ‘to eat bread’, is a Hebrew idiom for sharing a meal (compare Genesis 43:25). Kai autoi ēsan paratēroumenoi auton, ‘and they themselves were watching him closely’, is a periphrastic imperfect with an emphatic autoi: the watchers are also being watched, as verse 7 will show. Paratēreō is the verb of hostile scrutiny in 6:7 and 20:20.",
+      "words": ["G2064", "G3624G", "G0758", "G5330", "G4521", "G5315", "G0740", "G3906"],
+      "history": "This is the third time Luke shows Jesus dining with Pharisees (7:36, 11:37). On the Sabbath cooking was forbidden, so the food for a festive midday meal after the synagogue service had been prepared the day before, as the manna story already assumes (Exodus 16:23). An invitation from a prominent man to a well-known teacher was a public event, and other guests, including experts in the Law, were present.",
+      "refs": ["Luke 7:36", "Luke 11:37", "Luke 6:7", "Luke 20:20", "Exodus 16:23"]
+    },
+    {
+      "v": "2",
+      "context": "A man with dropsy is right in front of Jesus. Luke does not say how he came to be there, whether as a guest, a bystander, or a test, only that he stood before Jesus.",
+      "grammar": "Kai idou, ‘and look’, draws sudden attention to the man. Hudrōpikos, ‘suffering from dropsy’, an adjective describing a person swollen with fluid, occurs only here in the New Testament. Emprosthen autou, ‘before him’, places the man where Jesus cannot ignore him.",
+      "words": ["G2400", "G0444", "G5203", "G1715"],
+      "history": "Hudrōpikos was a common medical term, found in the Hippocratic writings and later medical authors. William Kirk Hobart (The Medical Language of St. Luke, 1882) collected such words to argue that the author was a physician, as Colossians 4:14 describes Luke. Henry J. Cadbury (The Style and Literary Method of Luke, 1920) showed that the same vocabulary appears in educated non-medical writers such as Josephus and Plutarch, so the words prove only that Luke wrote good literary Greek; the traditional identification of the author with Luke the physician rests on other grounds. The moral use of dropsy as a picture of insatiable craving is discussed in the chapter note.",
+      "refs": ["Colossians 4:14", "Luke 13:11", "Luke 6:6"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus takes the initiative, asking the experts in the Law and the Pharisees whether it is lawful to heal on the Sabbath. They say nothing, and he takes hold of the man, heals him, and sends him away.",
+      "grammar": "Apokritheis, ‘answering’, again has no spoken question before it; Jesus answers the situation and the watchers' unspoken thoughts, as in 5:22 and 7:40. Exestin tō sabbatō therapeusai ē ou, ‘is it lawful to heal on the Sabbath or not?’, is a yes or no question that leaves no room for a qualified answer. Hēsuchasan, ‘they were silent’, is an aorist of a refusal to commit; in Acts 11:18 the same verb describes critics who fall silent and then glorify God, which these do not. Epilabomenos iasato auton kai apelusen, ‘taking hold of him, he healed him and released him’, uses apoluō, the verb of the bent woman's release (13:12), here in its ordinary sense of sending someone on his way.",
+      "words": ["G0611", "G3544", "G5330", "G1832", "G4521", "G2323", "G2270", "G1949", "G2390", "G0630G"],
+      "text": "The earliest manuscripts include ē ou, ‘or not’, at the end of the question, which later copies omit; the BSB includes it. The difference sharpens the question slightly but does not change it.",
+      "theology": [
+        {
+          "id": "sabbath",
+          "note": "This time Jesus asks before he heals, and the silence of those who know the Law is itself an answer. He acts without waiting for permission, treating mercy to the man as within the Sabbath's purpose, as he did in 6:9 when he asked whether it was lawful to do good or harm."
+        }
+      ],
+      "parallels": ["Luke 6:9", "Mark 3:4"],
+      "refs": ["Luke 6:9", "Luke 5:22", "Acts 11:18", "Luke 13:12"]
+    },
+    {
+      "v": "5-6",
+      "context": "Jesus follows the healing with an argument from their own conduct. None of them would leave a son or an ox in a well until the Sabbath ended. They cannot answer.",
+      "grammar": "Tinos humōn huios ē bous eis phrear peseitai, literally ‘of which of you will a son or an ox fall into a well?’, is a compressed construction that grammarians describe as mixing two questions, whose son will fall and who will not pull him out. Phrear is a well or cistern, the word for Jacob's well in John 4:11-12. Ouk eutheōs anaspasei, ‘will he not immediately pull him up?’, expects yes, and eutheōs, ‘immediately’, makes the point: no one waits for sundown. Verse 6, ouk ischusan antapokrithēnai pros tauta, ‘they were not able to answer back to these things’, uses antapokrinomai, which occurs elsewhere in the New Testament only in Romans 9:20, of the creature answering back to God.",
+      "words": ["G5207", "G1016", "G5421", "G4098", "G2112", "G0385", "G4521", "G2480", "G0470"],
+      "text": "The chapter note sets out the variant ‘son or ox’ against ‘donkey or ox’. It is worth adding that the majority of Byzantine manuscripts also read ‘son’; the reading ‘donkey’ came into the printed Textus Receptus from a minority of witnesses, and through it into the King James Version.",
+      "parallels": ["Matthew 12:11-12"],
+      "history": "Matthew places a similar saying in a synagogue healing, about a sheep that falls into a pit on the Sabbath (Matthew 12:11-12). The Law required an Israelite to help raise even an enemy's fallen donkey (Exodus 23:5) or a neighbor's ox (Deuteronomy 22:4). Sabbath rescue rules differed among Jewish groups, as the chapter note explains, with Qumran's Damascus Document taking the strictest line.",
+      "refs": ["Matthew 12:11-12", "Luke 13:15", "Deuteronomy 22:4", "Exodus 23:5", "Romans 9:20"]
+    },
+    {
+      "v": "7",
+      "context": "Jesus now turns from the man he healed to the guests who watched him. He has noticed how they pick the places of honor, and he tells them what Luke calls a parable.",
+      "grammar": "Elegen de pros tous keklēmenous parabolēn, ‘he told a parable to those invited’, uses parabolē, which in the Gospels covers proverbs and comparisons as well as stories; Luke's label warns that the advice that follows is about more than dinner parties. Epechōn, ‘noticing’, means fixing one's attention (Acts 3:5). Pōs tas prōtoklisias exelegonto, ‘how they were choosing the first places’, uses the imperfect middle of eklegomai, ‘they kept picking out for themselves’. It is the verb Luke uses of Jesus choosing the Twelve (6:13) and of Mary choosing the good portion (10:42): the guests choose too, and they choose status.",
+      "words": ["G3004G", "G2564G", "G3850", "G1907", "G4459", "G4411", "G1586"],
+      "history": "At a formal meal guests reclined on couches arranged around the tables, and position relative to the host marked rank. Jesus later warns against scribes who love the first places at banquets (20:46) and has already rebuked Pharisees who love the best seats in the synagogues (11:43). At the Last Supper the disciples themselves will argue over which of them is the greatest (22:24-27).",
+      "refs": ["Luke 11:43", "Luke 20:46", "Luke 22:24-27", "Luke 10:42"]
+    },
+    {
+      "v": "8-9",
+      "context": "When invited to a wedding feast, do not take the place of honor, in case someone more distinguished has been invited. The host will then ask you to give up your seat, and you will have to take the lowest place in front of everyone.",
+      "grammar": "Hotan klēthēs hupo tinos eis gamous, ‘when you are invited by someone to a wedding feast’, moves the setting tactfully to another occasion, so that no one at this table is directly accused. Mē kataklithēs eis tēn prōtoklisian, ‘do not recline in the first place’, is an aorist subjunctive prohibition, forbidding the act before it starts. Mēpote entimoteros sou ē keklēmenos, ‘lest someone more honored than you has been invited’, uses the comparative of entimos, ‘honored’. In verse 9, ho se kai auton kalesas, ‘the one who invited you and him’, reminds the guest that both owe their place to the host. Kai tote arxē meta aischunēs ton eschaton topon katechein, ‘and then with shame you will begin to take the last place’, uses arxē, ‘you will begin’, as if picturing the slow walk past every occupied couch down to the only place left.",
+      "words": ["G2564G", "G1062", "G2625", "G4411", "G1784", "G1325", "G5117", "G0152", "G2078", "G2722"],
+      "ot": [
+        {
+          "ref": "Proverbs 25:6-7",
+          "note": "The Hebrew proverb advises not to put oneself forward before a king or stand in the place of great men, for it is better to be told ‘come up here’ than to be humbled before a noble. The Septuagint renders the key words with anabaine, ‘come up’, and tapeinōsai, ‘to humble’, and Jesus' teaching uses the related prosanabēthi, ‘move up’ (verse 10), and tapeinoō (verse 11). In Proverbs the advice is court wisdom for courtiers; Jesus turns it into a parable of standing before God, who is the host who invites."
+        }
+      ],
+      "refs": ["Proverbs 25:6-7", "Luke 1:52", "Luke 20:46"]
+    },
+    {
+      "v": "10",
+      "context": "Take the lowest place instead, so that the host will come and tell you to move up. Then you will be honored in front of all your fellow guests.",
+      "grammar": "Anapese eis ton eschaton topon, ‘recline in the last place’, is an aorist imperative, a deliberate act of placing oneself low. The purpose clause hina hotan elthē ho keklēkōs se erei soi, ‘so that when the one who invited you comes, he will say to you’, makes the host's word the only thing that moves a guest up. Phile, prosanabēthi anōteron, ‘friend, go up higher’, addresses the guest as philos, ‘friend’. Tote estai soi doxa, ‘then you will have honor’, uses doxa, the ordinary word for reputation and honor as well as for glory, enōpion pantōn tōn sunanakeimenōn soi, ‘before all those reclining with you’.",
+      "words": ["G2564G", "G4198", "G0377", "G2078", "G5117", "G2064", "G5384", "G4320", "G0511", "G1391", "G1799", "G4873"],
+      "history": "A similar piece of advice appears in Leviticus Rabbah 1:5, attributed to Rabbi Akiva in the name of Simeon ben Azzai, as the chapter note describes. Both teachers build on Proverbs 25:6-7, which shows that the counsel was common wisdom in Israel. The difference lies in what Jesus makes of it in the next verse.",
+      "refs": ["Proverbs 25:7", "Luke 14:11", "James 4:10"]
+    },
+    {
+      "v": "11",
+      "context": "The saying that turns the dinner advice into a principle of the kingdom: everyone who exalts himself will be humbled, and the one who humbles himself will be exalted. It is God, not the host, who finally does both.",
+      "grammar": "Hoti, ‘for’, gives the reason behind verses 8-10. Pas ho hupsōn heauton, ‘everyone who exalts himself’, and ho tapeinōn heauton, ‘the one who humbles himself’, are present participles describing a habit of life. The main verbs, tapeinōthēsetai, ‘will be humbled’, and hupsōthēsetai, ‘will be exalted’, are future passives with no agent named, a reverent way of pointing to God as the one who acts. The two halves form a chiasm: exalt, humble; humble, exalt.",
+      "words": ["G3956", "G5312", "G1438", "G5013"],
+      "parallels": ["Luke 18:14", "Matthew 23:12"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The maxim describes the pattern of Christ's own story: he humbled himself to death on a cross, and God highly exalted him (Philippians 2:8-9). Luke repeats the saying after the parable of the Pharisee and the tax collector (18:14), where the one who goes home justified is the one who humbled himself before God."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom's order of honor is set by God, who, as Mary sang, brings down rulers and lifts up the humble (1:52). Seeking a high place before God is the surest way to lose it."
+        }
+      ],
+      "refs": ["Ezekiel 21:26", "1 Samuel 2:7-8", "Philippians 2:8-9", "Luke 18:14", "James 4:6"]
+    },
+    {
+      "v": "12",
+      "context": "Jesus turns to the host. When you give a meal, do not invite friends, brothers, relatives, or rich neighbors, because they may invite you back and you will be repaid.",
+      "grammar": "Elegen de kai tō keklēkoti auton, ‘he said also to the one who had invited him’, uses a perfect participle, ‘his host’. Ariston ē deipnon distinguishes the midday or morning meal from the main evening meal: any meal. Mē phōnei, ‘do not call’, is a present imperative with mē, which forbids a habit, ‘do not make a practice of inviting’, rather than forbidding ever dining with family. The list climbs from friends to brothers to relatives to rich neighbors. Mēpote kai autoi antikalesōsin se kai genētai antapodoma soi, ‘lest they also invite you in return and it becomes a repayment to you’: the prefix anti-, ‘in return’, repeated in antikaleō and antapodoma, spells out the circle of exchange that repayment closes.",
+      "words": ["G2564G", "G4160G", "G0712", "G1173", "G5455", "G5384", "G0080", "G4773", "G1069", "G4145", "G0479", "G0468"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "The danger Jesus names is not that the host will lose money but that he will be repaid. Generosity that expects a return is a transaction, and the verse sets the host's table free from the economy of obligation that governs so much use of wealth."
+        }
+      ],
+      "refs": ["Luke 6:32-35", "Proverbs 22:9", "Deuteronomy 14:28-29"]
+    },
+    {
+      "v": "13-14",
+      "context": "Instead, invite the poor, the crippled, the lame, and the blind. They cannot repay, and so you will be blessed, because God will repay you at the resurrection of the righteous.",
+      "grammar": "Hotan dochēn poiēs, ‘when you give a banquet’, uses dochē, a reception, the word Luke used for the great banquet Levi gave for Jesus and the tax collectors (5:29). Kalei, ‘invite’, is a present imperative: make this your practice. The four groups, ptōchous, anapeirous, chōlous, tuphlous, ‘poor, crippled, lame, blind’, will return in the parable (verse 21); anapeiros, ‘crippled’, occurs only in these two verses. Kai makarios esē, ‘and you will be blessed’, is a beatitude. The reason is a play on repayment: hoti ouk echousin antapodounai soi, antapodothēsetai gar soi, ‘because they have nothing to repay you with, for it will be repaid to you’. The future passive again leaves God as the unnamed payer, and the time is en tē anastasei tōn dikaiōn, ‘at the resurrection of the righteous’.",
+      "words": ["G1403", "G4160G", "G2564G", "G4434", "G0376", "G5560", "G5185", "G3107", "G0467", "G0386", "G1342"],
+      "history": "The list inverts several exclusions. Leviticus 21:17-23 barred priests with a blemish, including the blind and the lame, from offering the bread of God; a saying remembered from David's capture of Jerusalem said that the blind and the lame would not come into the house (2 Samuel 5:8); and the Rule of the Congregation from Qumran excluded such people from the assembly of the last days, as the chapter note explains. Jesus' own answer to John the Baptist named the blind and the lame among those who receive good news (7:22).",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "Jesus makes the poor and disabled not recipients of leftovers but invited guests at the host's own table. The command puts into practice his announcement of good news to the poor (4:18) and treats hospitality as a form of justice owed to those whom social exchange leaves out."
+        },
+        {
+          "id": "resurrection",
+          "note": "The phrase ‘the resurrection of the righteous’ assumes a bodily raising of the dead at the end, when God judges and rewards. It is the only place the Gospels use that exact phrase; Paul, before Felix, speaks of a resurrection of both the righteous and the wicked (Acts 24:15), and Daniel 12:2 stands behind both."
+        }
+      ],
+      "refs": ["Luke 5:29", "Luke 7:22", "2 Samuel 5:8", "Acts 24:15", "Daniel 12:2"]
+    },
+    {
+      "v": "15",
+      "context": "A fellow guest, hearing about the resurrection and repayment, responds with a pious blessing on everyone who will eat bread in the kingdom of God. His remark assumes he will be there; the parable that follows asks whether he will.",
+      "grammar": "Akousas de tis tōn sunanakeimenōn tauta, ‘one of those reclining with him, hearing these things’, uses an aorist participle for the trigger. Makarios hostis phagetai arton en tē basileia tou theou, ‘blessed is whoever will eat bread in the kingdom of God’, has the form of a beatitude like the one Jesus has just spoken (verse 14). Phagetai, ‘will eat’, is future, looking to the age to come, and arton, ‘bread’, again stands for the whole meal.",
+      "words": ["G0191", "G4873", "G3107", "G3748", "G5315", "G0740", "G0932"],
+      "history": "The hope of a feast at the end of the age runs from Isaiah's promise of a banquet for all peoples on the LORD's mountain (Isaiah 25:6-8) into later Jewish writings. The Parables of Enoch, a section of 1 Enoch usually dated around the turn of the era, say that the righteous will eat and rest with that Son of Man forever (1 Enoch 62:14), and the Qumran Rule of the Congregation describes a meal of the community with the Messiah of Israel (1QSa 2:11-22). The guest speaks a common hope; Jesus' parable asks who will actually come.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom's future is pictured as a meal, and the guest is right that those who eat it are blessed. The parable that follows moves the blessing from a future assumption to a present decision: the invitation is being issued now."
+        }
+      ],
+      "refs": ["Isaiah 25:6-8", "Luke 13:29", "Luke 22:16", "Luke 22:30", "Revelation 19:9"]
+    },
+    {
+      "v": "16-17",
+      "context": "The parable begins. A man prepares a great banquet and invites many. When the hour comes, he sends his servant to tell the invited guests that everything is ready.",
+      "grammar": "Anthrōpos tis epoiei deipnon mega, ‘a certain man was giving a great dinner’, uses the imperfect, setting the scene. Ekalesen pollous, ‘he invited many’, is aorist: the first invitation had already been given and accepted. Apesteilen ton doulon autou tē hōra tou deipnou, ‘he sent his servant at the hour of the dinner’, describes the second summons customary in the ancient world. Erchesthe, hoti ēdē hetoima estin, ‘come, because it is already ready’: erchesthe is a present imperative, ‘come now’, and ēdē hetoima, ‘already prepared’, puts all the preparation on the host's side.",
+      "words": ["G0444", "G4160G", "G1173", "G3173", "G2564G", "G4183", "G0649", "G1401", "G5610", "G2036", "G2064", "G2235", "G2092"],
+      "parallels": ["Matthew 22:1-4"],
+      "text": "Matthew's related parable differs at nearly every point. There a king gives a wedding feast for his son, sends several servants in two rounds, and the invited guests not only refuse but mistreat and kill the servants, so the king destroys their city before inviting others (Matthew 22:1-10). Luke's host is a private man, his single servant goes three times, and the refusals are polite excuses.",
+      "ot": [
+        {
+          "ref": "Proverbs 9:1-6",
+          "note": "The parable is not a quotation, but its shape recalls Wisdom's banquet in Proverbs 9. Wisdom slaughters her animals, mixes her wine, sets her table, and sends out her maidens to call from the heights of the city to the simple, come, eat my bread and drink my wine (9:1-5). Isaiah 55:1-3 also invites the thirsty and those without money to come and eat. Jesus' host, like Wisdom and like the LORD in Isaiah, has everything ready and sends out a call."
+        }
+      ],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The banquet is ready before anyone arrives, and the guests are asked only to come. The verse pictures God's kingdom as a gift prepared in full, with the invitation as the only point where human beings enter the story."
+        }
+      ],
+      "refs": ["Proverbs 9:1-6", "Isaiah 55:1-3", "Isaiah 25:6", "Matthew 22:4"]
+    },
+    {
+      "v": "18",
+      "context": "One after another the guests begin to make excuses. The first has bought a field and needs to go and see it, and asks to be excused.",
+      "grammar": "Ērxanto apo mias pantes paraiteisthai, ‘they all began apo mias to make excuses’. Apo mias is feminine with no noun, and grammarians supply different ones: ‘with one voice’, ‘with one mind’, or an adverbial sense, ‘all alike’ or ‘one after another’. Agron ēgorasa, ‘I have bought a field’, is aorist: the purchase is done. Echō anagkēn exelthōn idein auton, ‘I have a necessity to go out and see it’, uses anagkē, ‘necessity, compulsion’, the noun behind the verb anagkazō, ‘compel’, in verse 23: the guest pleads a compulsion, and the host will answer with one of his own. Erōtō se, eche me parētēmenon, ‘I ask you, have me excused’, uses a perfect passive participle with echō, an unusual construction often explained as imitating a Latin formula of polite refusal; the Latin Vulgate renders it word for word as habe me excusatum.",
+      "words": ["G0757", "G1520", "G3956", "G3868", "G4413G", "G0068G", "G0059", "G0318", "G1831", "G1492H", "G2065"],
+      "history": "Kenneth Bailey (Through Peasant Eyes, 1980) argued from Middle Eastern village practice that no one buys a field without having seen it, so the excuse is transparent: the guest is choosing not to come and saying so politely. Augustine, preaching on the parable at Carthage (Sermon 112), read the field as the spirit of domination, a picture of pride.",
+      "refs": ["Luke 9:59-62", "Luke 17:28", "Hebrews 12:25"]
+    },
+    {
+      "v": "19-20",
+      "context": "The second guest has bought five yoke of oxen and is going to test them. The third has married and says simply that he cannot come. The excuses rise from a request to be excused to a flat refusal.",
+      "grammar": "Zeugē boōn ēgorasa pente, ‘I have bought five yoke of oxen’, puts the number last for emphasis: ten animals, the plowing strength of a substantial farm. Poreuomai dokimasai auta, ‘I am going to test them’, uses a present tense for an intention already under way, and dokimazō, ‘to test, examine’. The second guest repeats the first's polite formula, erōtō se, eche me parētēmenon. The third drops it: gunaika egēma kai dia touto ou dunamai elthein, ‘I have married a wife, and for this reason I cannot come’. Dia touto, ‘for this reason’, presents the marriage as a sufficient cause, and ou dunamai, ‘I am not able’, turns a choice into an inability.",
+      "words": ["G2087", "G2201", "G1016", "G0059", "G4002", "G4198", "G1381", "G2065", "G3868", "G1135H", "G1060", "G1410", "G2064"],
+      "history": "The Law released a newly married man from military service for a year so that he could bring joy to his wife (Deuteronomy 24:5; compare 20:7), and the third guest may be leaning on that exemption; but it concerned war, not an accepted invitation to a meal. Augustine's Sermon 112 read the five yoke of oxen as the five senses of the body, and the wife as fleshly pleasure, so that the three excuses together named pride, curiosity of the senses, and pleasure as what keeps people from Christ's supper.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Land, livestock, and marriage are good gifts, and none of the excuses is sinful in itself. The parable shows how good things become reasons not to come to God, which prepares for Jesus' warning in verse 26 that even the closest family ties cannot take first place."
+        }
+      ],
+      "refs": ["Deuteronomy 24:5", "Deuteronomy 20:7", "1 Corinthians 7:32-33", "Luke 17:27", "Luke 8:14"]
+    },
+    {
+      "v": "21",
+      "context": "The servant reports the refusals, and the angry host sends him at once into the city's streets and lanes to bring in the poor, the crippled, the blind, and the lame, the same guests Jesus told the Pharisee to invite (verse 13).",
+      "grammar": "Paragenomenos ho doulos apēngeilen tō kuriō autou tauta, ‘the servant came and reported these things to his master’. Orgistheis ho oikodespotēs, ‘the master of the house, becoming angry’, uses an aorist passive participle for the onset of anger at a public insult. Exelthe tacheōs, ‘go out quickly’, is urgent because the food is ready. Eis tas plateias kai rhumas tēs poleōs, ‘into the streets and lanes of the city’, pairs plateia, a broad street or square, with rhumē, a narrow lane or alley (compare the ‘Straight Street’ of Acts 9:11). Eisagage hōde, ‘bring in here’, is an aorist imperative: the servant does not merely invite but brings them in.",
+      "words": ["G3854", "G1401", "G0518", "G2962H", "G3710", "G3617", "G1831", "G5030", "G4116", "G4505", "G4172", "G4434", "G0376", "G5185", "G5560", "G1521"],
+      "text": "The earliest manuscripts list ‘the poor, the crippled, the blind, and the lame’, a slightly different order from verse 13. Later manuscripts, followed by the King James Version, put ‘the lame’ before ‘the blind’, making the two lists match, a change a copyist was likely to make. The meaning is the same.",
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The host does what Jesus told the Pharisee to do. The verse shows that the command of verse 13 is not only an ethic for hosts but a picture of God's own hospitality, which fills his house with those the world overlooks."
+        }
+      ],
+      "refs": ["Luke 14:13", "Luke 7:22", "Luke 4:18", "Isaiah 35:5-6"]
+    },
+    {
+      "v": "22-23",
+      "context": "The servant reports that the order is done and there is still room. The master sends him beyond the city to the roads and hedges to compel people to come in, so that the house will be full.",
+      "grammar": "Kurie, gegonen ho epetaxas, ‘sir, what you ordered has been done’, uses a perfect, a task complete. Kai eti topos estin, ‘and there is still room’, shows the scale of the host's feast. Exelthe eis tas hodous kai phragmous, ‘go out to the roads and hedges’, sends him outside the town, where phragmos, a fence or hedge, marked fields and vineyards; the same word names the dividing wall Christ has broken down in Ephesians 2:14. Anagkason eiselthein, ‘compel them to come in’, is an aorist imperative of anagkazō, whose range runs from force to urgent persuasion. Here a lone servant speaks to strangers who have no reason to think a rich man's feast is meant for them, and the insistence is needed to overcome their disbelief. Hina gemisthē mou ho oikos, ‘so that my house may be filled’, states the host's purpose: a full house, not coerced guests.",
+      "words": ["G2962H", "G1401", "G1096", "G2004", "G5117", "G1831", "G3598", "G5418", "G0315", "G1525", "G1072", "G3624G"],
+      "history": "Augustine's use of this verse is the most consequential in its history, and it is often misstated. He did not use it to force pagans or Jews to be baptized. He applied it to the Donatists, Christians in schism from the catholic church in North Africa, and to state pressure to return them to unity. In Letter 185 to the tribune Boniface (around 417) he read the parable's two sendings as two ages of the church: the first order, ‘bring them in’, fits the church's beginnings when it had no power, and the second, ‘compel them to come in’, fits the time when kings had become Christian and the church could call on their laws, so that those found in the hedges, whom he identified with heresies and schisms, might be compelled. In his sermon on the parable at Carthage (Sermon 112) he urged that those found outside should not be waited for until they chose to come. He consistently opposed the death penalty for Donatists and asked officials for restraint. The later use of the verse, and the reply of Pierre Bayle and others, is traced in the chapter note.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The third sending reaches beyond the city to those with no place in it, and Luke's readers would see the pattern of Acts, where the gospel goes out from Jerusalem to the nations. The urgency of the command belongs to the invitation: the house is to be filled, and those outside need persuading that they are truly wanted."
+        }
+      ],
+      "refs": ["Ephesians 2:14", "Luke 24:29", "Acts 16:15", "2 Corinthians 5:11", "2 Corinthians 5:20"]
+    },
+    {
+      "v": "24",
+      "context": "The host's final verdict: none of the men who were invited will taste his banquet. The first guests are not excluded by the host's cruelty but by their own refusal, and the door does not reopen for them.",
+      "grammar": "Legō gar humin, ‘for I tell you’, shifts to the plural humin, although the host has been speaking to one servant. The shift lets the host's voice carry beyond the story to everyone at the Pharisee's table. Oudeis tōn andrōn ekeinōn tōn keklēmenōn, ‘none of those men who were invited’, uses a perfect passive participle: they had been invited and remained invited guests, yet they chose not to come. Geusetai mou tou deipnou, ‘will taste my dinner’, puts mou, ‘my’, before the noun for emphasis: the dinner is the host's, and so is the decision.",
+      "words": ["G3004G", "G3762", "G0435G", "G2564G", "G1089", "G1173"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The judgment in the parable is the consequence of refusal, not a new decision against people who wanted to come. The verse echoes the shut door of 13:25 and anticipates Paul and Barnabas at Pisidian Antioch, who tell those who reject the word that they have judged themselves unworthy of eternal life (Acts 13:46)."
+        }
+      ],
+      "refs": ["Luke 13:25-28", "Acts 13:46", "Hebrews 12:25", "Proverbs 1:24-26"]
+    },
+    {
+      "v": "25",
+      "context": "The scene changes from the dinner table to the road. Large crowds are traveling with Jesus, and he turns to speak to them about what it really means to follow him.",
+      "grammar": "Suneporeuonto de autō ochloi polloi, ‘great crowds were traveling with him’, uses an imperfect of continuing movement and the prefix sun-, ‘with’: they are going in the same direction, but that is not yet following. Strapheis, ‘having turned’, is one of Luke's characteristic gestures for Jesus at decisive moments (7:9, 9:55, 10:23, 22:61, 23:28). He faces the crowd to tell them where the road leads.",
+      "words": ["G4848", "G3793", "G4183", "G4762", "G2036"],
+      "refs": ["Luke 7:9", "Luke 9:57-62", "Luke 22:61", "Luke 23:28"]
+    },
+    {
+      "v": "26",
+      "context": "The first of three conditions: whoever comes to Jesus and does not hate father and mother, wife and children, brothers and sisters, and even his own life, cannot be his disciple. The saying is meant to stop the crowd in its tracks.",
+      "grammar": "Ei tis erchetai pros me kai ou misei, ‘if anyone comes to me and does not hate’, is a real condition with present indicatives: it describes someone already coming. The list is joined by repeated kai and climbs to eti te kai tēn psuchēn heautou, ‘and yes, even his own life’, where psuchē means one's life or self. Ou dunatai einai mou mathētēs, ‘he cannot be my disciple’, puts mou, ‘my’, before mathētēs for emphasis. Miseō here reflects the Hebrew use of sane', ‘hate’, in comparisons to mean rejecting one thing in favor of another. When Jacob loved Rachel more than Leah (Genesis 29:30), the next verse says the LORD saw that Leah was ‘hated’ (senu'ah, 29:31), where the sense is loved less. Deuteronomy 21:15-17 speaks of a loved and a ‘hated’ wife in a law about inheritance. In Malachi 1:2-3 the LORD says he loved Jacob and hated Esau, speaking of the destinies of Israel and Edom; Paul quotes it in Romans 9:13 in his argument about God's choosing, and interpreters differ whether Paul applies it to nations and their roles in history or to individuals and their salvation. Luke 16:13 uses the same pairing when it says no servant can serve two masters, for he will hate one and love the other.",
+      "words": ["G2064", "G3404", "G3962", "G3384", "G1135H", "G5043", "G0080", "G0079", "G5590H", "G1410", "G3101"],
+      "parallels": ["Matthew 10:37"],
+      "text": "Matthew's parallel expresses the same demand as a comparison, ‘anyone who loves his father or mother more than Me is not worthy of Me’ in most English versions, which shows how early readers understood the idiom. Luke keeps the starker Semitic form. The Greek manuscripts of Luke agree on ‘hate’.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The verse does not command hostility toward family; Jesus upholds the command to honor parents (18:20). It demands that loyalty to him rank above every family claim, so decisively that by comparison other loves look like hate. Only God could rightly ask that, and Luke means the reader to notice who is asking."
+        }
+      ],
+      "refs": ["Genesis 29:30-31", "Deuteronomy 21:15-17", "Malachi 1:2-3", "Luke 16:13", "John 12:25"]
+    },
+    {
+      "v": "27",
+      "context": "The second condition: whoever does not carry his own cross and come after Jesus cannot be his disciple. The saying spoken on the road to Jerusalem keeps its literal edge.",
+      "grammar": "Hostis ou bastazei ton stauron heautou, ‘whoever does not carry his own cross’, uses a present tense for an ongoing carrying and heautou, ‘his own’: each disciple has a cross that is his. Bastazō is the verb John uses for Jesus carrying his cross (John 19:17). Kai erchetai opisō mou, ‘and come after me’, pictures the disciple walking behind Jesus. Luke's passion narrative gives the words a picture: the soldiers seize Simon of Cyrene and put the cross on him to carry behind Jesus (23:26).",
+      "words": ["G0941", "G4716", "G1438", "G2064", "G3694", "G1410", "G3101"],
+      "parallels": ["Matthew 10:38", "Mark 8:34", "Luke 9:23"],
+      "history": "The image came from Roman practice: the condemned man carried the crossbeam to the place of execution. Plutarch, writing in the late first or early second century, uses the fact as an illustration when he says that every criminal who is punished carries his own cross (On the Delays of the Divine Vengeance 9, Moralia 554A-B). For Jesus' hearers the phrase meant walking to one's own execution, and in Palestine, after the mass crucifixions under Varus in 4 BC, it was not an abstract picture.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Suffering is not an accident of discipleship but part of its definition: to follow Jesus is to walk the road he walks. Luke's earlier form of the saying adds ‘daily’ (9:23), and Paul speaks of being crucified with Christ (Galatians 2:20)."
+        }
+      ],
+      "refs": ["Luke 9:23", "Luke 23:26", "John 19:17", "Galatians 2:20", "Mark 8:34"]
+    },
+    {
+      "v": "28-30",
+      "context": "The first parable of counting the cost. No one starts building a tower without sitting down to calculate whether he can finish it; otherwise the unfinished foundation will make him a laughingstock.",
+      "grammar": "Tis gar ex humōn, ‘for which of you’, uses gar to explain the conditions just stated: they are costs that must be reckoned. Thelōn purgon oikodomēsai, ‘wanting to build a tower’, may mean a farm tower in a vineyard (Isaiah 5:2, Mark 12:1) or a larger building. Ouchi prōton kathisas psēphizei tēn dapanēn, ‘does he not first sit down and calculate the cost?’, uses psēphizō, ‘to count with pebbles’, found elsewhere in the New Testament only in Revelation 13:18. Ei echei eis apartismon, ‘whether he has enough for completion’, uses apartismos, which occurs only here. Verse 29 is built on genitive absolutes, thentos autou themelion kai mē ischuontos ektelesai, ‘when he has laid a foundation and is not able to finish’. Arxōntai autō empaizein, ‘they begin to mock him’, uses empaizō, the verb Luke uses for the mockery of Jesus in his passion (18:32, 22:63, 23:11, 23:36).",
+      "words": ["G4444", "G3618", "G2523", "G5585", "G1160", "G0535", "G5087", "G2310", "G2480", "G1615", "G2334", "G1702", "G0757"],
+      "history": "Building on a grand scale was a mark of status in Herodian Palestine, and an unfinished project was an obvious public embarrassment. Luke's readers had just heard of another tower, the one in Siloam that fell (13:4).",
+      "refs": ["Isaiah 5:2", "Luke 13:4", "Proverbs 24:27", "Luke 22:63"]
+    },
+    {
+      "v": "31-32",
+      "context": "The second parable, from war rather than building. A king facing an army twice the size of his own sits down to deliberate, and if he cannot win, he sends a delegation while the enemy is still far off to ask for terms of peace.",
+      "grammar": "Ē tis basileus poreuomenos heterō basilei sumbalein eis polemon, ‘or what king, going to engage another king in war’, pairs this parable with the last, a private project and a public war. Ouchi kathisas prōton bouleusetai, ‘will he not first sit down and deliberate’, uses a future indicative in the question. Ei dunatos estin en deka chiliasin hupantēsai tō meta eikosi chiliadōn erchomenō ep' auton, ‘whether he is able with ten thousand to meet the one coming against him with twenty thousand’, puts the odds in plain numbers. Verse 32 begins with the elliptical ei de mē ge, ‘and if not’. Eti autou porrō ontos presbeian aposteilas, ‘while he is still far off, sending a delegation’, uses presbeia, ‘an embassy’, the word Luke uses again for the citizens who send a delegation after the nobleman in 19:14. Erōta ta pros eirēnēn, literally ‘he asks the things toward peace’, means the conditions on which peace can be had, which for the weaker king amount to terms of surrender.",
+      "words": ["G0935", "G4198", "G4820", "G4171", "G2523", "G1011", "G1415", "G1176", "G5505", "G5221", "G1501", "G4206", "G4242", "G0649", "G2065", "G1515"],
+      "history": "Wars between neighboring client kings were not hypothetical. Around AD 36 the Nabatean king Aretas IV destroyed the army of Herod Antipas in a war that began over a border dispute and Antipas's divorce of Aretas's daughter (Josephus, Antiquities 18.109-115).",
+      "refs": ["Luke 19:14", "Proverbs 20:18", "Proverbs 24:6", "Luke 19:42"]
+    },
+    {
+      "v": "33",
+      "context": "The application of both parables and the third condition: any of you who does not give up everything he has cannot be Jesus' disciple. Counting the cost means recognizing that the cost is everything.",
+      "grammar": "Houtōs oun, ‘so then, in the same way’, draws the conclusion from the builder and the king. Pas ex humōn hos ouk apotassetai pasin tois heautou huparchousin, ‘everyone of you who does not say farewell to all his possessions’, uses apotassomai, which means to take leave of someone (the would-be follower in 9:61 wants to say goodbye to those at home) and, with things as its object, to renounce them. The present tense describes a settled posture. Huparchonta, ‘possessions’, is a word Luke uses often (8:3, 12:15, 12:33, 16:1, 19:8). The refrain ou dunatai einai mou mathētēs closes for the third time.",
+      "words": ["G3779", "G3767", "G3956", "G0657", "G1438", "G5225", "G1410", "G3101"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Luke shows disciples responding to this demand in different forms. Peter and his partners leave everything (5:11), the rich ruler is told to sell all (18:22), Zacchaeus gives half and repays fourfold (19:8), and the Jerusalem church holds possessions in common (Acts 4:32). What all share is that possessions no longer have first claim; the verse names a surrender of ownership to Christ that each disciple lives out in obedience to him."
+        }
+      ],
+      "refs": ["Luke 5:11", "Luke 9:61", "Luke 12:33", "Luke 18:22", "Acts 4:32"]
+    },
+    {
+      "v": "34-35",
+      "context": "Salt is good, but salt that has lost its savor cannot be restored. It is fit neither for the soil nor for the manure pile and is thrown out. The call to hear closes the section and the chapter.",
+      "grammar": "Kalon oun to halas, ‘salt, then, is good’, with oun tying the saying to the conditions of discipleship. Ean de kai to halas mōranthē, ‘but if even the salt becomes tasteless’, uses the aorist passive subjunctive of mōrainō, which elsewhere means ‘to become foolish’ (Romans 1:22) or ‘to make foolish’ (1 Corinthians 1:20); Mark's form of the saying uses analos, ‘saltless’. En tini artuthēsetai, ‘with what will it be seasoned?’, a future passive, expects the answer ‘with nothing’. Oute eis gēn oute eis koprian eutheton estin, ‘it is fit neither for soil nor for the manure pile’: euthetos, ‘fit, useful’, is the word of 9:62, where no one who looks back is ‘fit’ for the kingdom, and kopria, ‘manure’, recalls the fig tree the vinedresser promised to manure (13:8). Exō ballousin auto, ‘they throw it out’, is an impersonal plural. Ho echōn ōta akouein akouetō, ‘let the one who has ears to hear, hear’, repeats the call after the parable of the sower (8:8).",
+      "words": ["G2570G", "G3767", "G0217", "G3471", "G0741", "G1093I", "G2874", "G2111", "G1854", "G0906G", "G3775", "G0191"],
+      "parallels": ["Matthew 5:13", "Mark 9:49-50"],
+      "text": "Each Gospel sets the salt saying differently. Matthew makes it a direct description of the disciples, ‘you are the salt of the earth’, and has useless salt trampled underfoot. Mark follows it with a command to have salt among yourselves and be at peace with one another. Luke places it at the end of the cost of discipleship, so that tasteless salt is a disciple who has lost what made him one.",
+      "theology": [
+        {
+          "id": "sanctification",
+          "note": "A disciple's worth lies in being distinctively what Christ has made him, as salt's worth lies in its saltiness. The saying warns that a following which loses its distinctive character, its loyalty to Jesus above family, life, and possessions, has lost its usefulness, and it leaves the hearer with a call to listen rather than a formula for restoration."
+        }
+      ],
+      "refs": ["Matthew 5:13", "Mark 9:49-50", "Colossians 4:6", "Leviticus 2:13", "Luke 9:62"]
+    }
+  ]
+}

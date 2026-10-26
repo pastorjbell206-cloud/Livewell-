@@ -1,0 +1,341 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The fourth of Matthew's five discourses begins with the disciples' question about rank. It comes ‘at that time’, directly after Jesus has spoken of himself and Peter as sons who are free (17:26), and after two predictions of his death. The disciples are thinking about position while Jesus is thinking about the cross.",
+      "grammar": "En ekeinē tē hōra, ‘in that hour’, ties the discourse to the scene in Capernaum. The question tis ara meizōn estin, ‘who then is greater?’, uses ara, ‘then, so’, which draws an inference from what went before: if the sons are free, who ranks highest among them? Meizōn is a comparative, ‘greater’, used, as often in the Greek of the period, with the force of a superlative, ‘greatest’. En tē basileia tōn ouranōn, ‘in the kingdom of heaven’, shows that the disciples expect rank in the coming kingdom, the question the mother of James and John will ask outright in 20:20-21.",
+      "words": ["G5610", "G4334", "G0686", "G3173", "G0932", "G3772"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The disciples rightly believe the kingdom is coming and wrongly assume it will be ordered like the kingdoms they know. The discourse that follows redefines greatness in the kingdom by humility, service, and care for the least."
+        }
+      ],
+      "parallels": ["Mark 9:33-34", "Luke 9:46"],
+      "refs": ["Matthew 20:20-28", "Luke 22:24-27", "Matthew 17:26"]
+    },
+    {
+      "v": "2-4",
+      "context": "Jesus answers with an acted parable. He calls a little child, stands the child among them, and says that unless they turn and become like children they will not even enter the kingdom, let alone rank high in it. The greatest is the one who humbles himself like this child.",
+      "grammar": "Proskalesamenos paidion estēsen auto en mesō autōn, ‘calling a child, he stood it in the middle of them’: the child is set at the center of the circle. Ean mē straphēte kai genēsthe hōs ta paidia, ‘unless you turn and become like children’, uses strephō, ‘to turn’, an aorist passive with a middle sense, the Gospel's language of conversion (compare epistrephō in 13:15). Ou mē eiselthēte, ‘you will certainly not enter’, is the strongest negation in Greek: the question is not rank but entrance. Hostis oun tapeinōsei heauton, ‘whoever therefore will humble himself’, uses the future indicative in a general relative clause. The humility is something a person does to himself (heauton), not a quality a child consciously has; the child is simply one without status, and the disciple must choose that place.",
+      "words": ["G4341", "G3813", "G2476", "G4762", "G1096", "G1525", "G5013", "G3173"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Entrance into the kingdom requires a turning, and the turning is described as becoming small. Repentance here is not only sorrow for particular sins but a reversal of the whole contest for standing, which Jesus himself embodies as the one ‘gentle and humble in heart’ (11:29)."
+        }
+      ],
+      "parallels": ["Mark 9:35-36", "Luke 9:47-48", "Mark 10:15"],
+      "refs": ["Matthew 23:11-12", "Matthew 19:13-15", "Matthew 11:25", "Philippians 2:5-8"]
+    },
+    {
+      "v": "5",
+      "context": "Welcoming such a child in Jesus' name is welcoming Jesus. The verse turns from becoming like a child to receiving children and those like them, and it prepares for the warning about the ‘little ones’ that follows.",
+      "grammar": "Hos ean dexētai hen paidion toiouto, ‘whoever receives one such child’, uses dechomai, the verb of hospitality to messengers (10:14, 40-41). Toiouto, ‘such’, widens the reference from the child in the room to all who are like it. Epi tō onomati mou, ‘on the basis of my name’, means receiving the child because of Jesus. The present dechetai, ‘receives’, in the main clause states a general truth: the welcome given to the least reaches Jesus himself, as in the judgment scene of 25:40.",
+      "words": ["G1209", "G1520", "G3813", "G5108", "G3686"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus identifies himself with those who have no status and can repay nothing. Love for him cannot be separated from welcome for them, a principle Matthew states most fully in 25:31-46."
+        }
+      ],
+      "parallels": ["Mark 9:37", "Luke 9:48"],
+      "refs": ["Matthew 10:40-42", "Matthew 25:40", "John 13:20"]
+    },
+    {
+      "v": "6",
+      "context": "The positive promise turns to the most severe warning in the Gospels. Whoever causes one of these little ones who believe in Jesus to stumble would be better off drowned in the open sea with a millstone around his neck. The little ones are the child of verse 2 and every vulnerable disciple.",
+      "grammar": "Hos d' an skandalisē, ‘whoever causes to stumble’, is an aorist subjunctive of skandalizō, which here means to lead into sin or away from faith. Hena tōn mikrōn toutōn tōn pisteuontōn eis eme, ‘one of these little ones who believe in me’, defines the little ones as believers; the phrase ‘believe in me’ is common in John but rare in the first three Gospels. Sumpherei autō hina, ‘it is better for him that’, is followed by two aorist passive subjunctives: kremasthē, ‘be hung’, a mulos onikos, ‘a donkey's millstone’, the heavy upper stone of a mill turned by an animal, and katapontisthē, ‘be drowned’, the verb used of Peter beginning to sink (14:30). En tō pelagei tēs thalassēs, ‘in the depth of the sea’, pictures the open water far from shore, where no body is recovered.",
+      "words": ["G4624", "G3398", "G4100", "G4851", "G2910", "G3458", "G3684", "G2670", "G3989"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The severity of the warning is measured by the worth of the one harmed. The verse places those with power over the young and the weak under the heaviest judgment Jesus names, which is why, as the chapter note insists, the chapter must never be used to shield those who harm the vulnerable. Abuse of a child or of any vulnerable person should be reported to the civil authorities, and those harmed should be helped to safety."
+        }
+      ],
+      "parallels": ["Mark 9:42", "Luke 17:1-2"],
+      "refs": ["Matthew 10:42", "Matthew 17:27", "Romans 14:13", "1 Corinthians 8:12-13"]
+    },
+    {
+      "v": "7",
+      "context": "Jesus widens the warning. Stumbling blocks are inevitable in this world, and the world will suffer because of them, but that does not excuse the one through whom they come. The verse holds together the reality of evil in the world and the responsibility of each person for the harm he causes.",
+      "grammar": "Ouai tō kosmō apo tōn skandalōn, ‘woe to the world because of the stumbling blocks’, uses apo in a causal sense. Ouai can express both lament and threat, and the first woe is closer to lament over a world full of traps. Anagkē gar elthein ta skandala, ‘for it is necessary that the stumbling blocks come’, uses anagkē, ‘necessity’, not to say God wills them but that in a fallen world they are unavoidable. Plēn, ‘nevertheless, but’, turns sharply to the individual: ouai tō anthrōpō di' hou to skandalon erchetai, ‘woe to the man through whom the stumbling block comes’.",
+      "words": ["G3759", "G2889", "G4625", "G0318", "G4133", "G0444"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin has a social dimension: it sets traps that bring others down. The verse refuses both fatalism (it was bound to happen) and denial (it is no one's fault). Jesus will say the same of Judas: the Son of Man goes as it is written, but woe to that man by whom he is betrayed (26:24)."
+        }
+      ],
+      "parallels": ["Luke 17:1"],
+      "refs": ["Matthew 26:24", "Luke 17:1-2", "Romans 14:20-21"]
+    },
+    {
+      "v": "8-9",
+      "context": "The warning turns inward. If a person's own hand, foot, or eye leads him into sin, he must deal with it decisively. Jesus said nearly the same words in the Sermon on the Mount about lust (5:29-30); here they concern whatever in one's life causes one to fall or to trip others. They are hyperbole, and the church has never taken them as a command to harm the body.",
+      "grammar": "Ei de hē cheir sou ē ho pous sou skandalizei se, ‘if your hand or your foot causes you to stumble’, is a first class condition with the present indicative, treating the danger as real. Ekkopson auto kai bale apo sou, ‘cut it off and throw it from you’, and in verse 9 exele auto kai bale, ‘tear it out and throw it away’, are aorist imperatives of decisive action. Kalon soi estin, ‘it is good for you’, is a Semitic way of saying ‘better’, followed by ē, ‘than’. Kullon, ‘maimed’, chōlon, ‘lame’, and monophthalmon, ‘one-eyed’, describe the disabilities a person would accept rather than lose everything. Eis tēn zōēn, ‘into life’, means the life of the age to come, and it is set against to pur to aiōnion, ‘the eternal fire’, and tēn geennan tou puros, ‘the Gehenna of fire’.",
+      "words": ["G5495", "G4228", "G4624", "G1581", "G1807", "G2570G", "G2948", "G5560", "G3442", "G2222", "G0166", "G1067"],
+      "theology": [
+        {
+          "id": "hell",
+          "note": "Jesus speaks of Gehenna to his own disciples as a warning, not to outsiders as a threat. Christians have read the images of fire in different ways, as the note on Mark 9:47-48 sets out; all take the warning with full seriousness. The point here is that sin tolerated can cost the whole person."
+        },
+        {
+          "id": "sanctification",
+          "note": "Holiness in this saying is ruthless toward one's own sin, not toward others. The images are deliberately extreme to show that no habit, relationship, or practice is worth keeping if it leads to ruin. Anyone struggling with thoughts of self-harm should hear clearly that Jesus is speaking in figures, and should seek help from someone they trust."
+        }
+      ],
+      "parallels": ["Mark 9:43-48", "Matthew 5:29-30"],
+      "refs": ["Matthew 5:29-30", "Matthew 25:41", "Colossians 3:5", "Romans 8:13"]
+    },
+    {
+      "v": "10",
+      "context": "Jesus returns to the little ones: do not despise any of them, for their angels in heaven always see the face of the Father. The verse joins the warning of verses 6 to 9 to the parable of verses 12 to 14, both of which concern the worth of the least disciple in God's eyes.",
+      "grammar": "Horate mē kataphronēsēte, ‘see that you do not despise’, uses kataphroneō, ‘to look down on, think little of’, the attitude of the disciples' question about greatness. Hoi angeloi autōn, ‘their angels’, uses a possessive genitive: angels are in some way assigned to the little ones. Dia pantos blepousi to prosōpon tou patros mou, ‘continually see the face of my Father’, uses the present blepousi with dia pantos, ‘always’, describing unbroken access. Jesus says ‘my Father’, as he does throughout this chapter (verses 19, 35).",
+      "words": ["G3708", "G2706", "G3398", "G0032G", "G3956", "G0991", "G4383", "G3962"],
+      "history": "To ‘see the face’ of a king was court language for having direct access to him. The Hebrew of 2 Kings 25:19 and Jeremiah 52:25 describes the king's closest advisers as ‘those who saw the king's face’, and Esther 1:14 speaks of the seven princes who had personal access to the king. Jewish writings of the period describe angels who stand in God's presence, such as Raphael in Tobit 12:15, and Acts 12:15 shows early Christians speaking of a person's angel. The chapter note traces how the verse became the main text for the church's teaching on guardian angels.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The verse teaches that God's care for the least believer includes the ministry of angels who have immediate access to him (compare Hebrews 1:14). How far it teaches an individual guardian angel for each person is debated; Jerome and Aquinas read it that way, while others take it more generally. Its point in context is that no one whom heaven attends so closely may be despised on earth."
+        }
+      ],
+      "refs": ["Hebrews 1:14", "Psalm 91:11", "Acts 12:15", "Esther 1:14", "Psalm 34:7"]
+    },
+    {
+      "v": "11",
+      "context": "The BSB and most modern versions leave this verse number empty. Later manuscripts read here, ‘For the Son of Man came to save the lost’, which the King James Version prints. The chapter note explains the evidence; the words match Luke 19:10.",
+      "grammar": "The added sentence reads ēlthen gar ho huios tou anthrōpou sōsai to apolōlos, ‘for the Son of Man came to save what was lost’. Gar, ‘for’, would make it the reason for verse 10, and to apolōlos, a perfect participle, ‘the lost thing’, anticipates the lost sheep of verse 12.",
+      "words": ["G2064", "G5207", "G4982", "G0622"],
+      "text": "The sentence is absent from Codex Sinaiticus, Codex Vaticanus, and other early witnesses of several text types, and it appears in most later manuscripts. Copyists probably added it to link Jesus' saying about the little ones' angels with the parable of the straying sheep. Because the verse numbers were fixed in the sixteenth century from Greek texts that contained it, modern Bibles keep the number and leave the verse blank.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Though not part of Matthew's original text here, the conviction is Jesus' own (Luke 19:10; Matthew 9:13; 15:24): he came to seek and save the lost, and the parable that follows applies that mission to the church's care for its wandering members."
+        }
+      ],
+      "refs": ["Luke 19:10", "Matthew 9:13", "Matthew 15:24"]
+    },
+    {
+      "v": "12-13",
+      "context": "Jesus asks the disciples to imagine a shepherd whose sheep has wandered off. He leaves the ninety-nine and goes to search, and if he finds it, he rejoices over it more than over the rest. Luke tells the same parable to Pharisees who criticize Jesus' welcome of sinners (Luke 15:3-7); Matthew tells it to disciples about a member of their own community who strays.",
+      "grammar": "Ti humin dokei, ‘what do you think?’, invites a judgment (17:25). Ean genētai tini anthrōpō hekaton probata, ‘if a man has a hundred sheep’, uses genētai with the dative for possession. Matthew's verb is planaō, ‘go astray, wander’, used four times in the two verses, where Luke has apollumi, ‘be lost’. Ouchi aphēsei ta enenēkonta ennea epi ta orē kai poreutheis zētei, ‘will he not leave the ninety-nine on the hills and go and seek?’: the Greek word order allows ‘on the hills’ to go with ‘leave’ (as the BSB takes it) or with ‘going’ (he goes onto the hills to search). Ouchi expects the answer yes. Verse 13 begins kai ean genētai heurein auto, ‘and if it happens that he finds it’: where Luke's shepherd searches ‘until he finds it’ (Luke 15:4), Matthew leaves the outcome open, which suits a warning to the church not to give up.",
+      "words": ["G1380", "G1540", "G4263", "G4105", "G0863G", "G3735", "G2212", "G2147", "G5463"],
+      "ot": [
+        {
+          "ref": "Ezekiel 34:11-16",
+          "note": "God condemns Israel's shepherds, who have not brought back the strays or searched for the lost (Ezekiel 34:4), and whose sheep went astray “on all the mountains and every high hill” (34:6). He promises, “I will seek the lost, bring back the strays” (34:16). The Septuagint uses to planōmenon, ‘the one that is straying’, in 34:4 and 34:16, the verb Matthew uses of the sheep. Matthew's parable is not a quotation, but its hills, its straying sheep, and its searching shepherd take up Ezekiel's picture, and it lays on the disciples, as future shepherds of the church, the duty the shepherds of Israel neglected."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The community is not measured by the ninety-nine who stay but by its care for the one who wanders. The parable makes pursuing straying believers a charge to the whole church and not only to its leaders, and it stands immediately before the instructions on correction in verses 15 to 17, which are meant to serve the same end."
+        }
+      ],
+      "parallels": ["Luke 15:4-6"],
+      "refs": ["Ezekiel 34:4", "Ezekiel 34:16", "Matthew 9:36", "1 Peter 2:25", "James 5:19-20"]
+    },
+    {
+      "v": "14",
+      "context": "The parable's application: it is not the will of the Father that one of these little ones should perish. The first half of the discourse ends where it began, with the little ones, and with the Father's care for them. Luke's form ends with joy in heaven over a repenting sinner (Luke 15:7).",
+      "grammar": "Houtōs, ‘in the same way’, applies the parable. Ouk estin thelēma emprosthen tou patros humōn, literally ‘it is not a will before your Father’, is a reverent Semitic way of saying ‘your Father does not will’; Jewish Aramaic used ‘before God’ to avoid making God the direct subject of a verb, and Matthew uses the same idiom in 11:26 (eudokia emprosthen sou). Hina apolētai hen tōn mikrōn toutōn, ‘that one of these little ones should perish’, uses the aorist middle subjunctive of apollumi, ‘perish, be lost’, and hen, ‘one’, keeps the focus on a single person.",
+      "words": ["G3779", "G2307", "G1715", "G3962", "G0622", "G1520", "G3398"],
+      "text": "Manuscripts differ between ‘your Father’ (humōn), the reading of most manuscripts and the Nestle-Aland text, and ‘my Father’ (mou), printed by Westcott and Hort. Either is natural in Matthew: Jesus says ‘my Father’ in verses 10, 19, and 35.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The Father's will is set against the loss of even one of his little ones. In context the verse is about believers who wander, and it grounds the church's patient pursuit of them in the Father's own desire. How this verse relates to God's saving purpose for all people (2 Peter 3:9) is part of the wider discussion Christians have about God's will and human refusal."
+        }
+      ],
+      "refs": ["2 Peter 3:9", "John 6:39", "John 10:28-29", "Luke 15:7"]
+    },
+    {
+      "v": "15",
+      "context": "The second half of the discourse turns from the little ones to the brother who sins. The first step is private: go to him alone and show him his fault. If he listens, you have won your brother back. The chapter note's pastoral cautions apply here above all: this procedure assumes rough equality between two members and never requires a victim of abuse to confront the abuser alone.",
+      "grammar": "Ean de hamartēsē eis se ho adelphos sou, ‘if your brother sins against you’, is a third class condition with the aorist subjunctive, a real possibility. Hupage elegxon auton, ‘go, show him his fault’, pairs a present imperative of motion with an aorist imperative of elegchō, which means to bring a fault to light so that the other sees it, not merely to scold. Metaxu sou kai autou monou, ‘between you and him alone’, keeps the matter private and protects the brother's reputation. Ean sou akousē, ekerdēsas ton adelphon sou, ‘if he listens to you, you have gained your brother’, uses the aorist ekerdēsas to present the outcome as already achieved at the moment he listens. Kerdainō, ‘gain’, is the verb of 16:26, gaining the whole world; here the thing gained is a brother.",
+      "words": ["G0264", "G4771", "G0080", "G5217", "G1651", "G3342", "G3441", "G0191", "G2770"],
+      "ot": [
+        {
+          "ref": "Leviticus 19:17",
+          "note": "“You must not harbor hatred against your brother in your heart. Directly rebuke your neighbor, so that you will not incur guilt on account of him.” The Hebrew doubles the verb for emphasis (hokheach tokhiach), and the Septuagint renders it elegmō elenxeis, using the verb Jesus uses here. In Leviticus open rebuke is the alternative to silent hatred, and the next verse commands love of neighbor (19:18). Jesus keeps the Law's order and adds privacy and the aim of winning the brother back."
+        }
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church's first response to sin between members is a private, honest conversation aimed at restoration. The verse rules out both ignoring the sin and spreading it abroad, and it measures success by whether the brother is won, not by whether the offended party is vindicated."
+        }
+      ],
+      "text": "The words ‘against you’ are absent from Codex Sinaiticus and Codex Vaticanus and bracketed in the Nestle-Aland text, as the chapter note explains; the current NIV omits them. With them, the verse concerns a personal offense; without them, a wider responsibility for a brother's sin.",
+      "parallels": ["Luke 17:3"],
+      "refs": ["Leviticus 19:17-18", "Galatians 6:1", "James 5:19-20", "Proverbs 27:5-6"]
+    },
+    {
+      "v": "16",
+      "context": "If the brother will not listen, the one who went takes one or two others. Jesus grounds the step in the law of witnesses, so that the matter is established fairly and not by one person's word. The witnesses protect the accused as much as the accuser.",
+      "grammar": "Ean de mē akousē, ‘but if he does not listen’, repeats the verb of verse 15: the whole procedure turns on listening. Paralabe meta sou eti hena ē duo, ‘take with you one or two more’, uses the aorist imperative of paralambanō, the verb of Jesus taking the three up the mountain (17:1). The purpose clause hina epi stomatos duo marturōn ē triōn stathē pan rhēma, ‘so that on the mouth of two or three witnesses every word may be established’, quotes Deuteronomy in a shortened form. Rhēma, ‘word’, here means a matter or charge, as the Hebrew davar can.",
+      "words": ["G0191", "G3880", "G1520", "G1417", "G4750", "G3144", "G5140", "G2476", "G4487"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 19:15",
+          "note": "“A lone witness is not sufficient to establish any wrongdoing or sin against a man,” and “A matter must be established by the testimony of two or three witnesses.” The Hebrew is al pi shenei edim o al pi sheloshah edim yaqum davar, and the Septuagint reads epi stomatos duo marturōn kai epi stomatos triōn marturōn stathēsetai pan rhēma. Matthew follows the Greek closely but shortens it, dropping the repeated ‘on the mouth of’. In Deuteronomy the rule protects the accused from a single malicious witness (19:16-19). Paul uses the same verse for his own dealings with the Corinthians (2 Corinthians 13:1) and for charges against elders (1 Timothy 5:19)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus brings Israel's law of evidence into the life of his community. The procedure is not a way to multiply pressure on the accused but a safeguard of justice: no one is to be condemned on one person's word."
+        }
+      ],
+      "refs": ["2 Corinthians 13:1", "1 Timothy 5:19", "Deuteronomy 17:6", "John 8:17"]
+    },
+    {
+      "v": "17",
+      "context": "If he refuses to listen to the witnesses, the matter goes to the church; if he refuses to listen to the church, he is to be regarded as a Gentile or a tax collector. This is the second and last use of ekklēsia in the Gospels, and here it plainly means a gathered local community. The chapter note sets out how the churches have practiced discipline and the harms done when it has been misused.",
+      "grammar": "Ean de parakousē autōn, ‘if he refuses to hear them’, uses parakouō, which can mean to overhear or to ignore; here it means refusing to heed. Eipe tē ekklēsia, ‘tell it to the church’, is an aorist imperative, and the ekklēsia is the assembly before which the matter is brought. The final clause is singular: estō soi hōsper ho ethnikos kai ho telōnēs, ‘let him be to you as the Gentile and the tax collector’. The singular soi, ‘to you’, keeps the focus on the relationship between the offended person and the one who will not listen. Ethnikos, ‘Gentile, pagan’, and telōnēs, ‘tax collector’, were the stock outsiders of 5:46-47 and 6:7.",
+      "words": ["G3878", "G2036", "G1577", "G1510", "G4771", "G5618", "G1482", "G5057"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The gathered church has a real responsibility for its members' lives, and its judgment carries weight. Yet the verse's last words must be read in Matthew, whose Jesus ate with tax collectors and called one to follow him (9:9-11). To treat someone as a tax collector is to recognize that he has put himself outside and must be sought again, not to license contempt or cruelty; Paul says the same when he tells the church not to regard such a person as an enemy but to warn him as a brother (2 Thessalonians 3:15)."
+        }
+      ],
+      "refs": ["1 Corinthians 5:4-5", "2 Thessalonians 3:14-15", "Matthew 9:9-11", "2 Corinthians 2:6-8", "Titus 3:10"]
+    },
+    {
+      "v": "18",
+      "context": "Jesus repeats to the disciples the promise he made to Peter in 16:19: what they bind on earth will be bound in heaven, and what they loose on earth will be loosed in heaven. In this setting the binding and loosing concern the community's decisions about a member who sins, whether to hold him to his sin or release him.",
+      "grammar": "Amēn legō humin, ‘truly I tell you’, marks a solemn promise. The verbs are now plural, dēsēte and lusēte, ‘you (all) bind’ and ‘you (all) loose’, where 16:19 had the singular addressed to Peter. The objects are hosa ean, ‘whatever things’, neuter plural, as in 16:19. The main verbs are the same periphrastic future perfects, estai dedemena and estai lelumena, ‘will be having been bound’ and ‘will be having been loosed’, on which grammarians divide as described in the note on 16:19. Heaven is singular here, en ouranō, where 16:19 has the plural, a variation without difference of meaning.",
+      "words": ["G0281", "G3745", "G1210", "G3089", "G1093G", "G3772"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The authority first promised to Peter is here exercised by the community, which suggests to many interpreters that Peter received it as the representative of the disciples; Catholic interpreters hold that the two passages describe the authority of the whole college of apostles together with a particular role for Peter within it. All agree that the church's decisions in discipline and forgiveness are meant to carry heaven's weight when they are faithful to Christ, as John 20:23 says of forgiving and retaining sins."
+        }
+      ],
+      "refs": ["Matthew 16:19", "John 20:23", "1 Corinthians 5:4-5", "2 Corinthians 2:10"]
+    },
+    {
+      "v": "19-20",
+      "context": "Two promises close the section on correction. If two disciples agree on earth about any matter they ask, the Father will do it; and where two or three are gathered in Jesus' name, he is among them. In context the two or three recall the witnesses of verse 16 and the gathered church of verse 17, though the promise of Jesus' presence reaches every gathering in his name.",
+      "grammar": "Palin, ‘again’, adds a second solemn saying to verse 18. Ean duo sumphōnēsōsin ex humōn, ‘if two of you agree’, uses sumphōneō, ‘to sound together, agree’, the root of English ‘symphony’. Peri pantos pragmatos hou ean aitēsōntai, ‘concerning any matter which they ask’: pragma can mean a thing or affair, and it is the word Paul uses for a legal dispute between believers (1 Corinthians 6:1), which suits this context of settling a case. Verse 20 gives the reason with gar, ‘for’: hou gar eisin duo ē treis sunēgmenoi eis to emon onoma, ‘for where two or three are gathered into my name’. Sunēgmenoi is a perfect passive participle of sunagō, the verb from which ‘synagogue’ comes. Ekei eimi en mesō autōn, ‘there I am in their midst’, is a present tense: Jesus speaks of his presence as a present fact, not only a future promise.",
+      "words": ["G3825", "G1417", "G4856", "G4229", "G0154", "G3962", "G4863", "G3686", "G1510", "G3319"],
+      "history": "The Mishnah preserves a close parallel from Rabbi Hananiah ben Teradion, who was martyred under Hadrian in the second century: if two sit together and exchange words of Torah, the Shekhinah, God's dwelling presence, rests between them, as Malachi 3:16 says that those who feared the LORD spoke with one another and the LORD listened and heard (m. Avot 3:2; compare 3:6, which extends the promise to ten, five, three, two, and one). The saying is later than Jesus, but it shows the Jewish idiom of God's presence among those gathered around his word. In Matthew it is Jesus' name that gathers them, and Jesus himself who is present.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The promise concerns the agreed prayer of the community as it seeks the Father's will in a matter, especially one of discipline and reconciliation. It is not a technique for obtaining any request, as the chapter note warns, but an assurance that the Father hears the united prayer of those gathered in his Son's name."
+        },
+        {
+          "id": "incarnation",
+          "note": "Jesus promises to be present wherever his people gather in his name, a presence the Jewish teachers ascribed to God's Shekhinah. Matthew frames his Gospel with Immanuel, ‘God with us’ (1:23), and ‘I am with you always’ (28:20), and this verse stands between them."
+        }
+      ],
+      "refs": ["Malachi 3:16", "Matthew 1:23", "Matthew 28:20", "1 Corinthians 5:4", "1 Corinthians 6:1"]
+    },
+    {
+      "v": "21-22",
+      "context": "Peter asks how often he must forgive a brother who sins against him, and offers seven times, a generous number. Jesus answers with seventy-seven times, or seventy times seven. Either way, the answer turns counting into its opposite.",
+      "grammar": "Posakis hamartēsei eis eme ho adelphos mou kai aphēsō autō, ‘how often will my brother sin against me and I forgive him?’, uses two future indicatives joined by kai, a Semitic way of saying ‘how often shall I forgive my brother when he sins against me?’. Aphēsō is a deliberative future, asking what is required. Heōs heptakis, ‘up to seven times’, suggests a limit. Jesus answers ou legō soi heōs heptakis, all' heōs hebdomēkontakis hepta, ‘I do not say to you up to seven times, but up to seventy times seven’, using the adverb hebdomēkontakis, ‘seventy times’, with hepta, ‘seven’. The expression can mean seventy-seven (70 + 7) or four hundred ninety (70 x 7), and the Greek alone does not settle it.",
+      "words": ["G4074G", "G2962G", "G4212", "G0264", "G0863H", "G2034", "G1441", "G2033"],
+      "ot": [
+        {
+          "ref": "Genesis 4:24",
+          "note": "Lamech boasts to his wives, “If Cain is avenged sevenfold, then Lamech seventy-sevenfold.” The Hebrew shivim veshivah plainly means seventy-seven, and the Septuagint renders it hebdomēkontakis hepta, the very phrase of Matthew 18:22. That is the main reason most modern translations read ‘seventy-seven times’ in Matthew. Lamech's song is the Bible's first picture of unlimited revenge, escalating Cain's protection into a boast of disproportionate vengeance. Jesus uses the same number to answer it: the unlimited revenge of the line of Cain is met by the unlimited forgiveness of the kingdom."
+        }
+      ],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Forgiveness among disciples has no ceiling that a person can reach and then stop. The verse does not say forgiveness is the same as trust or reconciliation, which require repentance (Luke 17:3-4), but it forbids keeping a tally. Where there has been abuse, forgiveness in this sense never requires the one harmed to return to danger."
+        }
+      ],
+      "parallels": ["Luke 17:4"],
+      "refs": ["Genesis 4:23-24", "Luke 17:3-4", "Colossians 3:13", "Ephesians 4:32"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus explains his answer with a parable. A king settles accounts with his servants, and the first brought to him owes ten thousand talents. The chapter note works out the sums: the debt is beyond any possibility of repayment, deliberately so.",
+      "grammar": "Dia touto, ‘because of this’, ties the parable to Peter's question: this is why forgiveness cannot be counted. Hōmoiōthē hē basileia tōn ouranōn, ‘the kingdom of heaven has been likened’, is an aorist passive Matthew uses to introduce parables (13:24; 22:2). Anthrōpō basilei, literally ‘to a man, a king’, is a Semitic way of saying ‘a certain king’. Sunarai logon, ‘to settle an account’, is a commercial idiom found in business papyri of the period. Doulos, ‘servant, slave’, can describe high royal officials, and a servant who could run up such a debt was probably a provincial governor or revenue farmer. Heis opheiletēs muriōn talantōn, ‘one debtor of ten thousand talents’, joins murioi, the largest Greek number word, to the largest unit of money.",
+      "words": ["G1223", "G3666", "G0932", "G0935", "G4868", "G3056", "G1401", "G3781", "G3463", "G5007"],
+      "history": "The sum is the same as the ten thousand talents of silver Haman offered the Persian king for leave to destroy the Jews (Esther 3:9), a figure of royal extravagance. Josephus reports that the combined annual revenue of the territories assigned to Herod's three sons after Herod's death was about nine hundred talents (Antiquities 17.318-320), so a debt of ten thousand talents was more than a decade of the revenue of the whole kingdom Herod had ruled.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The parable draws on the Jewish habit of speaking of sin as debt, which Jesus used in the Lord's Prayer (6:12). By making the first debt unpayable, the parable says that a person's debt to God is not a shortfall that effort can make up but a condition only the king's mercy can meet."
+        }
+      ],
+      "refs": ["Matthew 6:12", "Matthew 25:19", "Luke 16:1-2", "Esther 3:9"]
+    },
+    {
+      "v": "25",
+      "context": "Unable to pay, the servant is ordered sold with his wife, his children, and all he has. The sale would not begin to cover the debt; it is punishment and the recovery of a small part of what was owed. The harshness sets up the mercy of verse 27.",
+      "grammar": "Mē echontos de autou apodounai, ‘since he did not have the means to pay’, is a genitive absolute giving the reason. Ekeleusen auton ho kurios prathēnai, ‘the lord ordered him to be sold’, uses the aorist passive infinitive of pipraskō, ‘sell’. The list kai tēn gunaika kai ta tekna kai panta hosa echei, ‘and his wife and children and everything he has’, uses repeated kai to pile up the loss. Kai apodothēnai, ‘and payment to be made’, is an aorist passive infinitive: the order is for the proceeds to go toward the debt.",
+      "words": ["G2192", "G0591", "G2753", "G2962H", "G4097", "G1135H", "G5043"],
+      "history": "Selling a debtor and his family into slavery was practiced in the ancient Near East and in Israel (2 Kings 4:1; Nehemiah 5:5), though the law of Moses limited it and required the release of Hebrew slaves (Leviticus 25:39-43; Deuteronomy 15:12). The chapter note explains that the king's measures reflect the harsher practice of Gentile courts. Jesus' hearers would have known the fear of debt slavery at first hand.",
+      "refs": ["2 Kings 4:1", "Nehemiah 5:5", "Leviticus 25:39-43", "Amos 2:6"]
+    },
+    {
+      "v": "26-27",
+      "context": "The servant falls down and begs for time, promising to repay everything. The promise is impossible, and the master does not take it up. Moved with compassion, he releases the man and forgives the whole debt, giving far more than was asked.",
+      "grammar": "Pesōn oun ho doulos prosekunei autō, ‘so the servant, falling down, did obeisance to him’, uses the imperfect of proskuneō, the verb of worship and homage used of the Magi (2:11) and the disciples in the boat (14:33). Makrothumēson ep' emoi, ‘be patient with me’, uses makrothumeō, ‘to be long-tempered’. Kai panta apodōsō soi, ‘and I will pay you everything’, is a promise no hearer could believe. Splagchnistheis, ‘moved with compassion’, is the verb Matthew elsewhere uses only of Jesus (9:36; 14:14; 20:34). The master does two things: apelusen auton, ‘he released him’, and to daneion aphēken autō, ‘he forgave him the loan’. Daneion, ‘loan’, occurs only here in the New Testament; the master treats the vast debt as a loan and cancels it outright.",
+      "words": ["G4098", "G1401", "G4352", "G3114", "G0591", "G4697", "G0630G", "G1156", "G0863H"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The servant asks for time and receives release. The parable pictures God's forgiveness as the cancellation of a debt no one could repay, given from compassion and not in response to the debtor's promises. The gift exceeds the request, as God's grace always does."
+        },
+        {
+          "id": "justification",
+          "note": "The master does not reduce or reschedule the debt; he cancels it. Christians of every tradition have heard in this the free forgiveness of sins, though they describe its basis and its relation to the life that follows in different ways, as the chapter note's hard question sets out."
+        }
+      ],
+      "refs": ["Matthew 9:36", "Colossians 2:13-14", "Luke 7:41-43", "Psalm 103:10-12"]
+    },
+    {
+      "v": "28-30",
+      "context": "The forgiven servant goes out and finds a fellow servant who owes him a hundred denarii, about a hundred days' wages. He seizes him by the throat and demands payment. The fellow servant falls down and makes almost the same plea the first servant made, but he refuses and has him thrown into prison.",
+      "grammar": "Exelthōn de ho doulos ekeinos, ‘but that servant, going out’, marks the change of scene immediately after the release: he has barely left the king's presence. Hekaton dēnaria, ‘a hundred denarii’, is a real sum but tiny beside ten thousand talents, about one six-hundred-thousandth of it. Kratēsas auton epnigen, ‘seizing him, he began to choke him’, uses the imperfect of pnigō for continuing violence. Apodos ei ti opheileis, ‘pay back if you owe anything’, is a curt demand. The fellow servant's plea in verse 29, makrothumēson ep' emoi, kai apodōsō soi, repeats verse 26 almost word for word, without panta, ‘everything’, since his debt could actually be paid. In verse 30, ouk ēthelen, ‘he was not willing’, an imperfect, describes a settled refusal, and ebalen auton eis phulakēn heōs apodō to opheilomenon, ‘he threw him into prison until he should pay the debt’, uses heōs with the subjunctive for an open-ended term.",
+      "words": ["G1831", "G4889", "G1540", "G1220", "G2902", "G4155", "G3784", "G3870", "G3114", "G2309", "G5438G"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The servant's sin is not that he asked for what was owed but that he refused to give what he had received. The echo of his own plea in another's mouth is the test he fails: he does not recognize himself. Unforgiveness here is a kind of forgetting."
+        }
+      ],
+      "refs": ["Matthew 6:12", "Matthew 6:14-15", "James 2:13", "Matthew 5:25-26"]
+    },
+    {
+      "v": "31-33",
+      "context": "The other servants, deeply distressed, report everything to the master. He summons the servant and turns his own plea against him: I forgave you all that debt because you begged me; should you not have had mercy on your fellow servant as I had mercy on you? The question is the moral center of the parable.",
+      "grammar": "Elupēthēsan sphodra, ‘they were exceedingly grieved’, is the phrase used of the disciples at the passion prediction (17:23). Diesaphēsan, ‘they explained clearly’, reports the matter in full. The master's address doule ponēre, ‘wicked servant’, is the verdict spoken to the unfaithful servant in the parable of the talents (25:26). Pasan tēn opheilēn ekeinēn aphēka soi, ‘all that debt I forgave you’, puts pasan, ‘all’, first for emphasis, and epei parekalesas me, ‘since you begged me’, gives the only condition: he asked. The question ouk edei kai se eleēsai ton sundoulon sou, hōs kagō se ēleēsa, ‘was it not necessary for you also to have mercy on your fellow servant, as I also had mercy on you?’, uses edei, the imperfect of dei, ‘it was necessary’, the word of divine necessity from 16:21. Mercy received creates an obligation of mercy given, and kai se ... kagō, ‘you also ... I also’, binds the two together.",
+      "words": ["G3076", "G4970", "G1285", "G1401", "G4190", "G3782", "G0863H", "G3870", "G1163", "G1653"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "The master's question makes received mercy the ground and measure of mercy shown. The Beatitude ‘Blessed are the merciful, for they will be shown mercy’ (5:7) is here told as a story in reverse: the unmerciful man had been shown mercy and would not pass it on."
+        }
+      ],
+      "refs": ["Matthew 5:7", "Matthew 9:13", "Ephesians 4:32", "Luke 6:36", "1 John 4:11"]
+    },
+    {
+      "v": "34-35",
+      "context": "In anger the master hands the servant over to the jailers until he repays all he owes, which, given the sum, means without end. Jesus applies the story directly: so will my heavenly Father do to each of you unless you forgive your brother from your heart. The discourse ends with a warning addressed to disciples, not outsiders.",
+      "grammar": "Orgistheis, ‘being angered’, is an aorist passive participle; the master's anger answers the servant's cruelty. Paredōken auton tois basanistais, ‘he handed him over to the torturers’, uses basanistēs, one who tortures or interrogates under torture, a figure of Hellenistic and Roman prisons. Heōs hou apodō pan to opheilomenon, ‘until he should repay all that is owed’, sets a condition that cannot be met. Houtōs kai ho patēr mou ho ouranios poiēsei humin, ‘so also my heavenly Father will do to you’, is a future of judgment, and ean mē aphēte hekastos tō adelphō autou apo tōn kardiōn humōn, ‘unless you forgive, each one, his brother from your hearts’, makes forgiveness a matter of the heart and of each individual, not a public gesture.",
+      "words": ["G3710", "G3860", "G0930", "G0591", "G3784", "G3962", "G3770", "G0863H", "G1538", "G0080", "G2588"],
+      "text": "Later manuscripts add ta paraptōmata autōn, ‘their trespasses’, at the end of the verse, which the King James Version translates. The words were probably added from 6:14-15. The earliest manuscripts end with ‘from your hearts’.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The verse is among the sternest in the Gospels, and it is spoken to disciples. The chapter note sets out how different traditions read it: as the loss of grace by those who refuse to extend it, as the exposure of those whom mercy never truly reached, or as a warning to believers who persist in refusal. All agree that the parable's order matters: the king forgave first, and the warning falls on one who received mercy and would not show it."
+        },
+        {
+          "id": "salvation",
+          "note": "Forgiving ‘from your heart’ is not the price of God's forgiveness but its fruit. A heart that has truly received the cancellation of an unpayable debt is being remade to release others, and a heart that clings to every debt owed it shows that it has not grasped what it received (compare 6:12, 14-15)."
+        }
+      ],
+      "refs": ["Matthew 6:14-15", "Mark 11:25", "James 2:13", "Matthew 5:25-26", "Colossians 3:13"]
+    }
+  ]
+}

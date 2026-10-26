@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
@@ -33,7 +34,7 @@ const COMPARISONS = [
   },
   {
     category: "Formation",
-    liturgical: "Worship forms you by repetition. You become what you pray. The fixed prayers, the creeds, the lectionary readings — they shape the imagination over decades. James K.A. Smith: liturgies are 'formative practices that train our hearts.'",
+    liturgical: "Worship forms you by repetition. You become what you pray. The fixed prayers, the creeds, the lectionary readings — they shape the imagination over decades. James K.A. Smith argues that liturgies are formative practices that train the heart.",
     contemporary: "Worship forms you by encounter. The emotional experience of meeting God in the moment — through a powerful song, a moving sermon, a prayer response — is the primary means of spiritual formation. The best services produce transformation.",
   },
 ];
@@ -68,6 +69,8 @@ const RELATED_ARTICLES = [
   { title: "The Orthodox Way", href: "/theology/history/the-church-that-outlived-rome" },
   { title: "Christianity in a Post-Christian Age", href: "/writing/the-church-after-cultural-power" },
 ];
+const RELATED_ON_SHELF = RELATED_ARTICLES.filter((a) => isPublicEssayHref(a.href));
+
 
 const FAQ_ITEMS = [
   {
@@ -76,7 +79,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Is contemporary worship biblical?",
-    answer: "The New Testament does not prescribe a worship format. The early church gathered for the apostles' teaching, fellowship, breaking of bread, and prayer (Acts 2:42). Within a generation, that developed into the Word-and-Table structure that liturgical churches preserve. Contemporary worship's informality is not anti-biblical, but it is historically novel — the first nineteen centuries of Christianity would not recognize it. That does not make it wrong. But it should make its practitioners more humble about claiming biblical warrant.",
+    answer: "The New Testament does not prescribe a worship format. The early church gathered for the apostles' teaching, fellowship, breaking of bread, and prayer (Acts 2:42). Within a generation, that developed into the Word-and-Table structure that liturgical churches preserve. Contemporary worship's informality is not anti-biblical, but it is historically novel. The worship set, the projection screen, and the service built to carry a visitor toward a decision descend from the revival tradition of the nineteenth century and the Jesus Movement of the twentieth, not from the church of Justin Martyr. That does not make it wrong. But it should make its practitioners more humble about claiming biblical warrant.",
   },
   {
     question: "What is the blended model?",
@@ -262,31 +265,33 @@ export default function LiturgicalVsContemporary() {
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section style={S.sectionWarm}>
-        <div style={S.wrapNarrow}>
-          <p style={S.eyebrow}>KEEP READING</p>
-          <h2 style={S.h2}>Go deeper</h2>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {RELATED_ARTICLES.map((a) => (
-              <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
+      {/* Related Articles: only those on the public shelf (lib/shelf.ts). */}
+      {RELATED_ON_SHELF.length > 0 && (
+        <section style={S.sectionWarm}>
+          <div style={S.wrapNarrow}>
+            <p style={S.eyebrow}>KEEP READING</p>
+            <h2 style={S.h2}>Go deeper</h2>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {RELATED_ON_SHELF.map((a) => (
+                <Link key={a.href} href={a.href} style={{ textDecoration: "none" }}>
+                  <div style={{ padding: "20px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)" }}>{a.title}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={S.sectionDark}>
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={S.h2White}>The full post-Christian series</h2>
-          <p style={S.bodyTextWhite}>Sixty essays on the traditions, fractures, and questions reshaping Christianity. How we worship is inseparable from what we believe.</p>
-          <Link href="/post-christian" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Explore the Series</button>
+          <h2 style={S.h2White}>After Christendom</h2>
+          <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
+          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
+            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
           </Link>
         </div>
       </section>

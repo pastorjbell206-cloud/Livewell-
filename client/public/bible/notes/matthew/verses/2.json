@@ -1,0 +1,567 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Matthew passes over the birth itself in a subordinate clause and moves straight to the visitors. Two kings are set up in one sentence: Jesus, just born in David's town, and ‘King Herod’, who holds the throne. Into that tension come Magi from the east, strangers asking the question Israel's leaders should have been asking.",
+      "grammar": "Tou de Iēsou gennēthentos is a genitive absolute (‘Jesus having been born’), which treats the birth as background already told in chapter 1. En Bēthleem tēs Ioudaias, ‘Bethlehem of Judea’, distinguishes the town from the Bethlehem in the territory of Zebulun in Galilee (Joshua 19:15) and names the tribe of Judah's land, which Micah's prophecy in verse 6 will make important. En hēmerais Hērōdou tou basileōs, ‘in the days of Herod the king’, uses the Old Testament's way of dating by reigns. Idou, ‘behold’, introduces the surprise, and apo anatolōn, ‘from the risings’ (plural), is the ordinary idiom for the east, where the sun rises.",
+      "words": [
+        "G1080",
+        "G0965",
+        "G2449",
+        "G2264G",
+        "G0935",
+        "G3097",
+        "G0395"
+      ],
+      "history": "Herod's full title was king of the Jews, granted by the Roman Senate in 40 BC on the proposal of Mark Antony and Octavian (Josephus, Antiquities 14.381-385), and he held it as a client of Rome. Bethlehem lay about six miles south of Jerusalem and within sight of the Herodium, the fortress-palace Herod built on a hilltop to the southeast, where he chose to be buried. The newborn king and the reigning one were neighbors.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The first people in Matthew to seek Jesus are Gentiles, and they come ‘from the east’. Jesus will later say that many will come from east and west to feast with Abraham in the kingdom (8:11), and the Magi are the first of them."
+        }
+      ],
+      "parallels": [
+        "Luke 2:4-7"
+      ],
+      "refs": [
+        "Joshua 19:15",
+        "Micah 5:2",
+        "Matthew 8:11",
+        "Luke 1:5"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "The Magi's question announces the chapter's conflict. They seek the one ‘born King of the Jews’, a title Herod had been given and this child was born with. They have seen his star and come to worship.",
+      "grammar": "Ho techtheis basileus, ‘the one born king’, uses an aorist passive participle: this king was born to the office, not appointed to it, as Herod had been. Basileus tōn Ioudaiōn, ‘king of the Jews’, is how outsiders speak; Jews in Matthew say ‘King of Israel’ (27:42), and the Gentile title returns only in the passion, on the lips of Pilate and the soldiers and on the charge over the cross (27:11, 29, 37). Autou ton astera, ‘his star’, assumes a star belongs to this birth. En tē anatolē is singular here, where verse 1 had the plural; it can mean ‘in the east’ or ‘at its rising’, the term for a star's first appearing. Proskynēsai, an aorist infinitive of purpose, states why they came: to do homage, to worship.",
+      "words": [
+        "G5088",
+        "G0935",
+        "G2453",
+        "G0792",
+        "G0395",
+        "G4352"
+      ],
+      "history": "Modern astronomers have offered several candidates. Johannes Kepler proposed the triple conjunction of Jupiter and Saturn in Pisces in 7 BC. Colin Humphreys (Quarterly Journal of the Royal Astronomical Society, 1991) argued for a comet recorded in Chinese annals as visible for over seventy days in 5 BC. Michael Molnar (The Star of Bethlehem: The Legacy of the Magi, 1999), drawing on a coin of Antioch showing the ram of Aries, proposed the Moon's occultation of Jupiter in Aries on 17 April 6 BC, an event an astrologer would read as a royal birth in Judea. Each fits part of Matthew's description, and none explains a star that goes ahead of travelers and stops over a house, which is why John Chrysostom and many since have held that Matthew describes a sign given by God rather than an ordinary astronomical event.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The Magi's purpose is worship from their first sentence. Proskyneō can mean homage to a king, but Matthew uses it for what is owed to God alone (4:10) and for the disciples' worship of the risen Jesus (28:9, 17), so the Gospel's first worshipers already point to its last."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Numbers 24:17",
+          "note": "Balaam, a seer brought ‘from the mountains of the east’ (Numbers 23:7), says, \"A star will come forth from Jacob, and a scepter will arise from Israel.\" The Hebrew darakh kokhav, ‘a star treads forth’, is set in parallel with a ruler's scepter. The Septuagint reads anatelei astron ex Iakōb, ‘a star will rise out of Jacob’, using the verb from which Matthew's anatolē comes, and turns the scepter into ‘a man’. Matthew does not quote the oracle, but a star rising for Israel's ruler, seen by an eastern sage, is hard to miss, and Jewish texts of the period read the verse of a coming ruler (the Damascus Document, CD 7:18-21). Origen already connected the Magi with Balaam's prophecy (Against Celsus 1.59-60)."
+        },
+        {
+          "ref": "Isaiah 60:1-3",
+          "note": "Isaiah pictures the glory of the LORD rising on Zion and \"Nations will come to your light, and kings to the brightness of your dawn\" (60:3). The Septuagint uses anatellō for the glory's rising (60:1). The Magi's coming to the light of a rising star enacts the picture, and verse 11's gold and frankincense will make the echo stronger."
+        }
+      ],
+      "refs": [
+        "Numbers 24:17",
+        "Isaiah 60:3",
+        "Matthew 27:11",
+        "Matthew 27:37",
+        "Revelation 22:16"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Herod hears and is troubled, and all Jerusalem with him. The reaction is the opposite of the Magi's: they came to worship; the capital is shaken. Jerusalem's alarm here anticipates its stir when Jesus enters as king (21:10) and its part in his death.",
+      "grammar": "Etarachthē, aorist passive of tarassō, means ‘was stirred up, agitated, thrown into turmoil’, the verb used of the disciples' terror at seeing Jesus on the water (14:26). Pasa Hierosolyma, ‘all Jerusalem’, treats the city as a feminine singular (pasa), though Matthew elsewhere uses the neuter plural form of the name (verse 1); the whole city is personified as one troubled body. Met' autou, ‘with him’, aligns the city with its king.",
+      "words": [
+        "G0191",
+        "G0935",
+        "G2264G",
+        "G5015",
+        "G3956",
+        "G2414"
+      ],
+      "history": "Herod had reason to fear any rival claimant. He had risen to power by displacing the Hasmonean dynasty, the priest-kings who had ruled Judea since the Maccabees, and he eliminated its surviving members one by one, including the young high priest Aristobulus III, drowned at Jericho in 35 BC (Josephus, Antiquities 15.53-56). A report of a newborn king of the Jews, announced by foreign sages, would have struck at the weakest point of an Idumean king's legitimacy.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Messiah's arrival is not welcomed by those who hold power over God's people. Matthew shows from the start that the king God sends will be received as a threat by the kings already in place, a pattern that runs to the cross."
+        }
+      ],
+      "refs": [
+        "Matthew 21:10",
+        "Matthew 23:37",
+        "Psalm 2:1-2",
+        "John 11:47-48"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Herod summons the religious experts and asks where the Christ is to be born. He takes the Magi's ‘King of the Jews’ to mean the Messiah, and he turns to Scripture for intelligence.",
+      "grammar": "Synagagōn, ‘having gathered together’, is the verb Matthew uses again when the chief priests and elders gather at Caiaphas's house to plot Jesus' arrest (26:3) and when the Pharisees gather against him (22:34, 41). Pantas tous archiereis kai grammateis tou laou, ‘all the chief priests and scribes of the people’, names the same leadership that will condemn him (16:21, 20:18). Epynthaneto is imperfect, ‘he kept asking’ or ‘he began to inquire’. Pou ho Christos gennatai uses the present tense, ‘where the Christ is born’, a present of fixed expectation: where, according to Scripture, is he to be born.",
+      "words": [
+        "G4863",
+        "G0749",
+        "G1122",
+        "G2992",
+        "G4441",
+        "G5547",
+        "G1080"
+      ],
+      "history": "The plural archiereis, ‘chief priests’, covers the serving high priest, former high priests, and the leading priestly families. Under Herod the high priesthood had become an appointment in the king's gift: he made and unmade high priests at will, and Josephus counts twenty-eight high priests from Herod's reign to the temple's fall (Antiquities 20.250). The grammateis, ‘scribes’, were the trained interpreters of the law of Moses, many of them Pharisees.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Scripture is sufficient to answer Herod's question, and the experts answer it correctly. The chapter shows that knowing where the Messiah is to be found, and even quoting the right text, is not the same as going to him."
+        }
+      ],
+      "refs": [
+        "Matthew 16:21",
+        "Matthew 26:3-4",
+        "Matthew 20:18",
+        "John 7:42"
+      ]
+    },
+    {
+      "v": "5-6",
+      "context": "The scholars answer at once: Bethlehem, because the prophet wrote it. Their quotation joins Micah's promise of a ruler from Bethlehem to God's words to David, ‘you will shepherd My people Israel’, so that the child is the shepherd-king of David's line.",
+      "grammar": "Houtōs gar gegraptai, ‘for thus it stands written’, uses the perfect passive, the standard formula for Scripture's abiding authority. The quotation's key change is oudamōs elachistē, ‘by no means least’: oudamōs is an emphatic negative (‘in no way at all’), and it reverses Micah's description of Bethlehem as small. En tois hēgemosin Iouda, ‘among the rulers of Judah’, is followed by hēgoumenos, ‘a ruler’, a participle from the same root, so the line plays on the word: Bethlehem is not least among Judah's rulers, because the ruler comes from it. Hostis poimanei, ‘who will shepherd’, introduces the line from 2 Samuel, and hostis, a relative pronoun that often characterizes, can carry the sense ‘one who is such as to shepherd’.",
+      "words": [
+        "G1125",
+        "G4396",
+        "G0965",
+        "G3760",
+        "G1646",
+        "G2232",
+        "G2233",
+        "G3748",
+        "G4165"
+      ],
+      "ot": [
+        {
+          "ref": "Micah 5:2",
+          "note": "In the Hebrew (Micah 5:1), Bethlehem Ephrathah is tsa'ir lihyot be'alphei Yehudah, ‘too small to be among the clans (or thousands) of Judah’, yet from it will come one to rule Israel, \"One whose origins are of old, from the days of eternity.\" The Septuagint keeps the smallness (oligostos, ‘very small’) and the thousands (chiliasin). Matthew departs from both. He replaces Ephrathah with ‘land of Judah’, turns ‘small’ into ‘by no means least’, and reads ‘rulers’ where the Hebrew has ‘clans’; the two Hebrew words, alphei and alluphei, share their consonants and differ only in vowels. Micah spoke in the Assyrian crisis of the late eighth century BC, when Jerusalem was besieged and humiliated (5:1), and promised that God would begin again where David began, in a small town. The Aramaic Targum of Micah already named the coming ruler as the Messiah, and John 7:42 shows that the expectation of a Messiah from Bethlehem was common knowledge."
+        },
+        {
+          "ref": "2 Samuel 5:2",
+          "note": "When the tribes made David king at Hebron, they recalled the LORD's word to him, \"You will shepherd My people Israel, and you will be ruler over them.\" The Septuagint reads sy poimaneis ton laon mou ton Israēl, which Matthew adapts to the third person (hostis poimanei ton laon mou ton Israēl). The same words appear in 1 Chronicles 11:2. Micah itself continues in 5:4 with the ruler who will ‘stand and shepherd His flock in the strength of the LORD’, so Matthew's addition draws out what Micah's context already says. The combined quotation defines the Messiah's rule as a shepherd's care, set against Herod's, and prepares for Jesus' compassion on crowds ‘like sheep without a shepherd’ (9:36)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "This is the one fulfillment in the chapter that is a direct prediction of a place, and Matthew gives it to Israel's own scholars rather than in his own formula. The change from ‘small’ to ‘by no means least’ is itself a claim: the birth of this ruler has made the little town great."
+        },
+        {
+          "id": "messiah",
+          "note": "The ruler from Bethlehem is a shepherd. By joining Micah to God's charge to David, the quotation defines the Messiah's kingship as care for God's flock, the kind of king Ezekiel 34 had promised in place of Israel's failed shepherds."
+        }
+      ],
+      "parallels": [
+        "Luke 2:4",
+        "John 7:42"
+      ],
+      "refs": [
+        "Micah 5:2-4",
+        "2 Samuel 5:2",
+        "Ezekiel 34:23",
+        "Matthew 9:36",
+        "John 10:11"
+      ]
+    },
+    {
+      "v": "7-8",
+      "context": "Herod calls the Magi secretly, finds out exactly when the star appeared, and sends them to Bethlehem with a request to report back so that he too may worship. The reader already suspects what verse 16 confirms: the exact date is for a massacre, and the worship is a lie.",
+      "grammar": "Lathra, ‘secretly’, is the word used of Joseph's plan to divorce Mary quietly (1:19). Joseph's secrecy protected a woman; Herod's hides a plan to kill a child. Ēkribōsen, ‘he ascertained precisely’, is a rare verb (only here and verse 16 in the New Testament), and verse 16 shows its purpose: ‘according to the time he had ascertained’. Ton chronon tou phainomenou asteros, ‘the time of the appearing star’, uses a present participle, most naturally ‘when the star appeared’. In verse 8 exetasate akribōs, ‘search out carefully’, repeats the root of ‘precisely’. Hopōs kagō elthōn proskynēsō, ‘so that I too may come and worship him’, uses the same verb as the Magi (verse 2), borrowed for deceit.",
+      "words": [
+        "G2977",
+        "G0198",
+        "G5550",
+        "G5316",
+        "G1833",
+        "G0199",
+        "G3813",
+        "G4352"
+      ],
+      "history": "Herod's rule depended on surveillance. Josephus reports that he forbade citizens to meet together, placed spies in the city and on the roads, and was said to go out at night himself in disguise to listen to what people said of him (Antiquities 15.366-367). A private interview with foreign visitors who had come asking about a rival king fits that picture exactly.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Herod uses the language of worship to cover murder. The Gospel's first counterfeit worshiper is a king, and Jesus will later quote Isaiah against people who honor God with their lips while their hearts are far from him (15:8)."
+        }
+      ],
+      "refs": [
+        "Matthew 1:19",
+        "Matthew 2:16",
+        "Matthew 15:8",
+        "Psalm 55:21"
+      ]
+    },
+    {
+      "v": "9-10",
+      "context": "The Magi set out, and the star they had seen at its rising goes ahead of them and stops over the place where the child is. When they see it they are overjoyed. Scripture told them where to go; the star shows them the house.",
+      "grammar": "Proēgen autous, ‘was going ahead of them’, is imperfect, a continuing guidance, and the star stops (estathē, aorist passive, ‘it was made to stand’) epanō hou ēn to paidion, ‘over where the child was’. The verbs describe what no ordinary star does. Verse 10 is one of the most emphatic expressions of joy in the New Testament: echarēsan charan megalēn sphodra, literally ‘they rejoiced a great joy exceedingly’, a cognate accusative (the verb and noun from the same root) strengthened by both megalēn and sphodra. The only comparable scene in Matthew is the women leaving the empty tomb ‘in fear and great joy’ (28:8).",
+      "words": [
+        "G0792",
+        "G0395",
+        "G4254",
+        "G2476",
+        "G1883",
+        "G3813",
+        "G5463",
+        "G5479",
+        "G3173",
+        "G4970"
+      ],
+      "text": "For estathē, ‘it stood’ (aorist passive), the later Byzantine manuscripts and the King James Version have estē (active), with no difference in sense. The phrase ‘in the east’ or ‘at its rising’ (en tē anatolē) recurs here, and English Bibles divide as they did in verse 2.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God leads the Magi by the means available to them, a sign in the sky, and then by Scripture through Israel's scholars, and then again by the sign. The guidance comes in stages, and each stage requires them to keep moving."
+        },
+        {
+          "id": "worship",
+          "note": "Joy comes before the worship of verse 11 and is part of it. Matthew's intensified language presents the Magi's gladness as the fitting response to finding the Messiah, a joy the Gospel will not describe this fully again until the resurrection."
+        }
+      ],
+      "refs": [
+        "Exodus 13:21",
+        "Matthew 28:8",
+        "Psalm 16:11",
+        "Isaiah 60:5"
+      ]
+    },
+    {
+      "v": "11",
+      "context": "In a house, not a stable, they find the child with Mary his mother, fall down, and worship him. Then they open their treasure chests and give gold, frankincense, and myrrh. The scene is the climax of the first half of the chapter: the Gentiles' costly worship of the true king.",
+      "grammar": "Eis tēn oikian, ‘into the house’, suggests the family is now living in Bethlehem, some time after the birth. To paidion meta Marias tēs mētros autou, ‘the child with Mary his mother’, begins a formula Matthew repeats four more times, ‘the child and his mother’ (verses 13, 14, 20, 21): Joseph is never called the child's father. Pesontes prosekynēsan, ‘falling down they worshiped’, describes full prostration. Anoixantes tous thēsaurous autōn, ‘opening their treasures’, means their treasure chests. Libanos, ‘frankincense’, comes from the Semitic name of the resin (Hebrew levonah, ‘white’), and smyrna, ‘myrrh’, from the Semitic mor, ‘bitter’.",
+      "words": [
+        "G3614G",
+        "G3813",
+        "G3384",
+        "G4098",
+        "G4352",
+        "G0455",
+        "G2344",
+        "G1435",
+        "G5557",
+        "G3030",
+        "G4666"
+      ],
+      "history": "Frankincense and myrrh came from the resin of trees in southern Arabia and the Horn of Africa and were carried north by camel caravan on the incense routes that made cities such as Petra rich. Pliny the Elder (Natural History, book 12) describes their harvest and their cost. Gold, frankincense, and myrrh together were the gifts a subject or client people brought to a king, and they were also the materials of Israel's worship: gold for the sanctuary's furnishings, frankincense for the incense (Exodus 30:34), myrrh for the anointing oil (Exodus 30:23).",
+      "text": "The earliest manuscripts read eidon, ‘they saw’ the child; later manuscripts, followed by the King James Version, read heuron, ‘they found’, perhaps echoing Herod's ‘when you find him’ (verse 8).",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "The Magi's worship has three movements that Matthew's verbs mark: they come, they fall down, they give. Worship in the Gospel's first scene of it is bodily and costly, directed to a child who has done nothing yet but be who he is."
+        },
+        {
+          "id": "mission",
+          "note": "The nations bring their wealth to Israel's king, as the Psalms and Isaiah had pictured. Matthew does not quote those texts, but the gifts carry the echo, and the Gentiles' homage here anticipates the nations who will be discipled at the end (28:19)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 72:10-11",
+          "note": "Psalm 72, a prayer for the king, asks that the kings of Tarshish, Sheba, and Seba bring tribute and gifts, that \"all kings bow down to him and all nations serve him\", and that \"gold from Sheba\" be given him (72:15). Isaiah 60:6 adds caravans from Sheba \"bearing gold and frankincense\". These passages are the source of the later tradition that the Magi were kings. Matthew does not quote them, and he calls the visitors Magi, not kings, but his gifts and his prostrating Gentiles are shaped by the same hope that the nations will honor Israel's God and his anointed one."
+        }
+      ],
+      "refs": [
+        "Psalm 72:10-11",
+        "Isaiah 60:6",
+        "1 Kings 10:2",
+        "Exodus 30:23",
+        "John 19:39"
+      ]
+    },
+    {
+      "v": "12",
+      "context": "Warned in a dream not to go back to Herod, the Magi return home by another road. They leave the story as quietly as they entered it, and their obedience to the warning is what forces Herod's hand.",
+      "grammar": "Chrēmatisthentes kat' onar, ‘having been warned in a dream’, uses chrēmatizō, a verb used in Greek for official instruction and in the Bible for a divine oracle or warning (Hebrews 8:5, 11:7). It is a passive with no stated agent, God being understood. Di' allēs hodou, ‘by another road’, is plain in sense, though many preachers have heard in it a figure of the changed direction of those who meet Christ. Anechōrēsan, ‘they withdrew’, is the first of four uses of anachōreō in the chapter (verses 12, 13, 14, 22), the verb for getting away from danger.",
+      "words": [
+        "G5537",
+        "G3677",
+        "G2264G",
+        "G0243",
+        "G3598",
+        "G0402",
+        "G5561"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God protects the child through a dream given to Gentiles who owe Herod nothing. The warning does not stop Herod's evil, but it keeps him from the child, which is how providence works throughout the chapter: through people's obedience, not by removing the danger."
+        }
+      ],
+      "refs": [
+        "Hebrews 11:7",
+        "Matthew 27:19",
+        "Genesis 31:24",
+        "1 Kings 13:9-10"
+      ]
+    },
+    {
+      "v": "13",
+      "context": "The second dream to Joseph comes as soon as the Magi have gone. The angel's command is urgent and specific: get up, take the child and his mother, flee to Egypt, stay until told, because Herod will search for the child to kill him. The land of the exodus becomes a refuge.",
+      "grammar": "Anachōrēsantōn autōn, ‘when they had withdrawn’, is a genitive absolute linking the scenes. Phainetai, ‘appears’, is a historic present, making the appearance vivid. The commands pile up: egertheis paralabe, ‘get up and take’, then pheuge, ‘flee’, a present imperative, and isthi ekei, ‘be there’, also present, a continuing stay. Heōs an eipō soi, ‘until I tell you’, leaves the length of exile in God's hands. Mellei gar Hērōdēs zētein, ‘for Herod is about to seek’, uses mellō for an imminent action, and apolesai, ‘to destroy’, is the verb Matthew uses when the Pharisees plot against Jesus (12:14) and when the chief priests persuade the crowd to have him killed (27:20).",
+      "words": [
+        "G0402",
+        "G0032G",
+        "G5316",
+        "G3677",
+        "G1453",
+        "G3880",
+        "G5343",
+        "G0125",
+        "G3195",
+        "G2212",
+        "G0622"
+      ],
+      "history": "Egypt was the traditional refuge from kings in the land of Israel: Jeroboam fled there from Solomon (1 Kings 11:40), and the prophet Uriah from Jehoiakim (Jeremiah 26:21). In Jesus' day Alexandria had one of the largest Jewish communities in the world, and Egypt lay outside Herod's power. Coptic Christian tradition later marked a number of sites as places where the holy family stayed, but the Gospel says nothing of where they went or how long they remained.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God's protection of his Son takes the form of flight. The Messiah's first experience of the world's power is to be hunted by it, and God preserves him not by a miracle against Herod but by a warning obeyed in the night."
+        }
+      ],
+      "refs": [
+        "1 Kings 11:40",
+        "Jeremiah 26:21",
+        "Exodus 2:15",
+        "Matthew 12:14",
+        "Revelation 12:4-6"
+      ]
+    },
+    {
+      "v": "14-15",
+      "context": "Joseph obeys at once, that same night, and the family stays in Egypt until Herod's death. Matthew then quotes Hosea, ‘Out of Egypt I called My Son’, and places the quotation here, at the flight, before the return is told, so that Egypt is framed from the start as the place from which God's Son will be called.",
+      "grammar": "Nyktos, ‘by night’, is a genitive of time: the obedience is immediate. Parelaben to paidion kai tēn mētera autou repeats the angel's words exactly, command matched by action. Heōs tēs teleutēs Hērōdou, ‘until the end of Herod’, uses teleutē, ‘end, death’, found only here in the New Testament. The formula hina plērōthē to rhēthen hypo kyriou dia tou prophētou repeats 1:22 word for word, with the Lord as speaker and the prophet as instrument, which suits a quotation in which God himself speaks of ‘My Son’. This is the first time in Matthew that God calls Jesus his Son, before the voice at the baptism (3:17).",
+      "words": [
+        "G1453",
+        "G3880",
+        "G3571",
+        "G0402",
+        "G5054",
+        "G2443",
+        "G4137",
+        "G2962G",
+        "G4396",
+        "G0125",
+        "G2564G",
+        "G5207"
+      ],
+      "ot": [
+        {
+          "ref": "Hosea 11:1",
+          "note": "Hosea 11:1 reads, \"When Israel was a child, I loved him, and out of Egypt I called My son.\" The Hebrew is mimmitsrayim qarati livni. The Septuagint reads ex Aigyptou metekalesa ta tekna autou, ‘out of Egypt I called his children’, which would not serve Matthew's point; Matthew follows the Hebrew with ton huion mou, ‘my son’. In Hosea the line looks back on the exodus and speaks of the nation as God's son, as in Exodus 4:22 (\"Israel is My firstborn son\"); the next verse laments that the more God called, the farther Israel went. Matthew is not claiming Hosea predicted the flight. He reads Jesus as the Son in whom Israel's sonship is summed up and fulfilled, reliving the exodus as its faithful representative. Some interpreters add that the Septuagint of Balaam's oracle (Numbers 24:7-8) speaks of ‘a man’ from Jacob's seed whom God brought out of Egypt, which would have made the step from the people to one person easier for a reader of the Greek Bible. Jewish interpreters read Hosea 11:1 only of Israel, as its context requires, and Christian interpreters since Jerome's commentary on Hosea have acknowledged that Matthew's use is typological rather than predictive."
+        }
+      ],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Jesus takes Israel's place and relives its story: down into Egypt, out again at God's call, and in the next chapters through the water and into the wilderness. Matthew presents him as Israel in one person, the Son who will be faithful where the people were not."
+        },
+        {
+          "id": "prophecy",
+          "note": "Hosea 11:1 is the clearest case of Matthew's typological fulfillment. A text describing God's past act for Israel is filled full when God acts in the same way for Israel's Messiah, so fulfillment includes patterns in history as well as predictions."
+        }
+      ],
+      "refs": [
+        "Hosea 11:1-2",
+        "Exodus 4:22-23",
+        "Numbers 24:8",
+        "Matthew 3:17",
+        "Matthew 4:1-4"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "Herod realizes the Magi have not come back and, in a rage, has every boy two years old and under in Bethlehem and its district killed, timing the order to what he learned about the star. The child the order aims at is already gone.",
+      "grammar": "Enepaichthē, ‘he had been tricked’ or ‘mocked’, is the aorist passive of empaizō, the verb Matthew will use for the mocking of Jesus in his passion (20:19; 27:29, 31, 41): the king who is ‘mocked’ here kills children, and the true king will be mocked and killed. Ethymōthē lian, ‘he was furious, exceedingly’, is the only use of thymoō in the New Testament. Aposteilas aneilen, ‘sending, he killed’, makes Herod the agent of what his soldiers did. Pantas tous paidas is masculine, ‘all the boys’. Apo dietous kai katōterō, ‘from two years and under’, is set kata ton chronon hon ēkribōsen, ‘according to the time he had ascertained’, which ties the killing back to verse 7.",
+      "words": [
+        "G2264G",
+        "G1702",
+        "G3097",
+        "G2373",
+        "G0337",
+        "G3816",
+        "G0965",
+        "G3725",
+        "G1332",
+        "G5550",
+        "G0198"
+      ],
+      "history": "The act fits what Josephus reports of Herod's last months. Around 4 BC, when young men pulled down the golden eagle he had set over the temple gate, Herod had the two teachers who inspired them, Judas and Matthias, burned alive, along with some of their students (Antiquities 17.149-167). Days before his death he had his son Antipater executed (Antiquities 17.187), and he ordered the leading men of the nation killed at his death so there would be mourning (17.174-179). The killing of a small number of village children is not recorded by Josephus, but it is of a piece with his portrait.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The Messiah's coming brings the death of children. Matthew does not soften it or explain it; he names Herod as the killer and lets the grief stand in the next verses. The innocent suffer in the Gospel from its second chapter, and the rescued child will himself die under the rulers of his people and of Rome."
+        },
+        {
+          "id": "state",
+          "note": "Herod is the portrait of power that feels threatened by God's king: surveillance, deceit, and the killing of the powerless. Scripture's picture of rulers as servants of God for good (Romans 13:4) is matched by this picture of a ruler who has become a Pharaoh."
+        }
+      ],
+      "refs": [
+        "Exodus 1:16",
+        "Exodus 1:22",
+        "Matthew 27:29",
+        "Revelation 12:4"
+      ]
+    },
+    {
+      "v": "17-18",
+      "context": "Matthew attaches Jeremiah's words to the massacre: a voice heard in Ramah, Rachel weeping for her children and refusing comfort, because they are no more. The formula changes. He does not say this happened ‘so that’ Scripture would be fulfilled, only that it was fulfilled ‘then’.",
+      "grammar": "Tote eplērōthē, ‘then was fulfilled’, is a plain aorist passive with tote, ‘then’, in place of the purpose clauses (hina, hopōs) of verses 15 and 23. Matthew uses the same form only once more, of Judas's blood money (27:9), also naming Jeremiah. Both are events of evil, and in both Matthew declines to say that the evil was done in order to fulfill Scripture. In the quotation, klaiousa ta tekna autēs, ‘weeping for her children’, is a present participle, continuing grief, and ouk ēthelen paraklēthēnai, ‘she was not willing to be comforted’, uses an imperfect of refusal. Hoti ouk eisin, ‘because they are not’, is the bare statement of death.",
+      "words": [
+        "G5119",
+        "G4137",
+        "G2408",
+        "G4471",
+        "G2805",
+        "G3602",
+        "G4478",
+        "G2799",
+        "G5043",
+        "G2309",
+        "G3870"
+      ],
+      "text": "Modern editions read dia Ieremiou, ‘through Jeremiah’; the Byzantine text reads hypo Ieremiou, ‘by Jeremiah’, a small difference that alters the pattern of 1:22 and 2:15, where the Lord speaks ‘through’ the prophet. In verse 18 the King James Version adds ‘lamentation’ (thrēnos) from later manuscripts that assimilated to the Septuagint.",
+      "ot": [
+        {
+          "ref": "Jeremiah 31:15",
+          "note": "The Hebrew reads, \"A voice is heard in Ramah, mourning and great weeping, Rachel weeping for her children, and refusing to be comforted, because they are no more.\" The Septuagint (numbered Jeremiah 38:15) says Rachel ‘would not cease’ (pausasthai); Matthew's ‘would not be comforted’ (paraklēthēnai) matches the Hebrew me'anah lehinnachem, so here too he stands closer to the Hebrew. Rachel, Jacob's wife, was the mother of Joseph and Benjamin, and in Jeremiah she stands for the northern tribes, above all Ephraim (31:18-20), mourning her descendants carried into exile. Ramah, about five miles north of Jerusalem, was where the Babylonians gathered the captives of Judah before deportation (Jeremiah 40:1). The oracle turns at once to comfort (31:16-17) and leads to the promise of the new covenant (31:31-34). Rashi, commenting on Genesis 48:7, records the tradition that Jacob buried Rachel by the road near Bethlehem so that she might weep and pray for the exiles as they passed, citing this verse."
+        }
+      ],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Scripture gives the grieving mothers a voice and lets it stand unconsoled. Matthew quotes only the lament, but the passage he quotes belongs to Jeremiah's book of consolation, so the grief is placed inside a promise without being hurried past."
+        },
+        {
+          "id": "prophecy",
+          "note": "The change to ‘then was fulfilled’ shows the precision of Matthew's view of fulfillment. God's purposes run through history, but Matthew does not make God the author of Herod's crime; the old grief of the exile is filled full in a new sorrow."
+        }
+      ],
+      "refs": [
+        "Jeremiah 31:15-17",
+        "Genesis 35:16-20",
+        "Jeremiah 40:1",
+        "Jeremiah 31:31",
+        "Matthew 27:9"
+      ]
+    },
+    {
+      "v": "19-21",
+      "context": "Herod dies, and the angel comes to Joseph a third time with words that echo God's words to Moses in Midian: those who sought the child's life are dead. Joseph again gets up, takes the child and his mother, and goes to the land of Israel. The exile in Egypt ends as Israel's did, at God's word.",
+      "grammar": "Teleutēsantos de tou Hērōdou, ‘when Herod had died’, is a genitive absolute, and phainetai, ‘appears’, is again a historic present. The command repeats verse 13 except for its goal: poreuou eis gēn Israēl, ‘go into the land of Israel’, a phrase found in the New Testament only in verses 20 and 21. Tethnēkasin gar hoi zētountes tēn psychēn tou paidiou, ‘for those seeking the child's life have died’, uses a plural although only Herod has been mentioned; the plural comes from the Old Testament model. Verse 21 repeats the command almost word for word as narrative, Matthew's pattern of exact obedience.",
+      "words": [
+        "G5053",
+        "G2264G",
+        "G5316",
+        "G3677",
+        "G2212",
+        "G5590H",
+        "G2348",
+        "G4198",
+        "G1093H",
+        "G2474",
+        "G3880"
+      ],
+      "history": "Herod died at Jericho in the spring of 4 BC on the reckoning most historians follow, after a painful illness that Josephus describes at length (Antiquities 17.168-169), and was carried in procession to the Herodium for burial (17.196-199). A minority date his death to 1 BC.",
+      "ot": [
+        {
+          "ref": "Exodus 4:19",
+          "note": "God tells Moses in Midian, \"Go back to Egypt, for all the men who sought to kill you are dead.\" The Septuagint reads tethnēkasin gar pantes hoi zētountes sou tēn psychēn, and Matthew's words (tethnēkasin gar hoi zētountes tēn psychēn tou paidiou) follow it closely, which explains his plural. Moses fled a king who sought his life and returned when that king died, to lead God's people out of slavery; Jesus does the same. The next verses of Exodus call Israel God's firstborn son (4:22), the text behind Hosea 11:1, so the Moses pattern and the Israel pattern meet in this chapter."
+        }
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The tyrant dies and the child lives. Matthew marks God's timing with a repeated ‘until’: stay until I tell you (verse 13), until the death of Herod (verse 15). The family's return, like its flight, waits on God's word."
+        }
+      ],
+      "refs": [
+        "Exodus 4:19-20",
+        "Exodus 2:23",
+        "Matthew 2:13",
+        "Acts 12:23"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "Back in the land, Joseph learns that Archelaus now rules Judea in his father's place, and he is afraid to go there. A fourth dream sends him north to Galilee. The last of Herod's shadows falls over the family, and it directs them to the region where Jesus will grow up and begin his work.",
+      "grammar": "Akousas hoti Archelaos basileuei, ‘hearing that Archelaus reigns’, keeps the present tense of the report. Basileuei, ‘reigns as king’, is the popular way of speaking, since Rome had denied Archelaus the royal title. Anti tou patros autou Hērōdou, ‘in place of his father Herod’, uses anti for succession. Ephobēthē ekei apelthein, ‘he was afraid to go there’, is the first time Joseph fears anything; the angel had told him not to fear in 1:20. Chrēmatistheis, ‘having been warned’, and anechōrēsen, ‘withdrew’, repeat the vocabulary of verse 12. Eis ta merē tēs Galilaias, ‘into the regions of Galilee’, uses the plural merē, ‘parts, district’.",
+      "words": [
+        "G0191",
+        "G0745",
+        "G0936",
+        "G2449",
+        "G0473",
+        "G5399",
+        "G5537",
+        "G0402",
+        "G3313",
+        "G1056G"
+      ],
+      "history": "Herod's will left Judea, Samaria, and Idumea to Archelaus, and Augustus confirmed him as ethnarch, ‘ruler of a people’, with a promise of the royal title if he proved worthy; his coins bear the title ethnarch. Before he could sail to Rome to have the will confirmed, he put down a Passover riot by killing about three thousand people (Antiquities 17.213-218), and a Jewish embassy of fifty followed him to Rome to ask that he not rule over them (17.299-314). Many interpreters hear that episode behind Jesus' parable of the nobleman who went to a far country to receive a kingdom while his citizens sent a delegation after him (Luke 19:12-14). His marriage to Glaphyra, the widow of his half-brother Alexander, offended Jewish law (17.341). In AD 6, after complaints from Judeans and Samaritans, Augustus deposed him and banished him to Vienne in Gaul (17.342-344), and Judea came under Roman prefects.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Joseph's fear is real and reasonable, and God does not rebuke it; he guides it. The move to Galilee happens through ordinary prudence confirmed by a warning, and so the Messiah grows up far from Jerusalem, in the region Isaiah called Galilee of the nations (4:15)."
+        }
+      ],
+      "parallels": [
+        "Luke 2:39"
+      ],
+      "refs": [
+        "Luke 19:12-14",
+        "Matthew 4:12-16",
+        "Matthew 14:1",
+        "Luke 3:1"
+      ]
+    },
+    {
+      "v": "23",
+      "context": "Joseph settles in a town called Nazareth, and Matthew says this fulfilled what the prophets said: he will be called a Nazarene. No Old Testament verse contains those words, and Matthew seems to know it, since he cites prophets in the plural and changes his formula. The chapter's sequence of place names ends in an obscure village.",
+      "grammar": "Katōkēsen eis polin, ‘he settled in a town’, describes a permanent home. Legomenēn Nazaret, ‘called Nazareth’, introduces a place the reader is not expected to know. The formula differs from Matthew's others in two ways: dia tōn prophētōn, ‘through the prophets’, is plural, and the quotation is introduced not by legontos, ‘saying’, but by hoti, which can mean ‘that’ and introduce indirect speech. Many interpreters, R. T. France among them, take the plural and the hoti as signs that Matthew is summarizing a theme of several prophets rather than quoting one text. Nazōraios, ‘Nazarene’, is Matthew's form (Mark uses Nazarēnos), and it becomes the name by which Jesus' followers were known (Acts 24:5).",
+      "words": [
+        "G2730",
+        "G4172",
+        "G3004H",
+        "G3478",
+        "G3704",
+        "G4137",
+        "G4396",
+        "G3754G",
+        "G3480",
+        "G2564G"
+      ],
+      "history": "Nazareth appears in no Old Testament text and in no Jewish writing before the Gospels. Excavations show a small agricultural village of the first century, a few miles from Sepphoris, which Herod Antipas rebuilt as his capital. The earliest Jewish mention is a Hebrew inscription listing the priestly courses, found at Caesarea in 1962 and dated to about the third or fourth century AD, which spells the name with the Hebrew letter tsade (N-TS-R-T). That spelling is what makes a wordplay on the Hebrew netser, ‘branch’, possible.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The Messiah of David's line, born in David's town, grows up in a village with no history and no prophecy attached to it. Whatever wordplay Matthew intends, the effect is to show a king whose humble origins were part of God's plan, the one Isaiah pictured as a shoot from a cut-down stump."
+        },
+        {
+          "id": "prophecy",
+          "note": "Matthew's plural ‘prophets’ shows that fulfillment for him can be the convergence of several texts and themes on one reality. The proposals below each draw on a real prophetic strand, and none requires him to have invented a quotation."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 11:1",
+          "note": "The strongest proposal, argued as early as Jerome, is a play on netser, ‘branch’, in Isaiah 11:1, \"Then a shoot will spring up from the stump of Jesse, and a Branch from his roots will bear fruit.\" The Branch was a messianic title (Jeremiah 23:5, Zechariah 3:8 and 6:12, though these use a different Hebrew word, tsemach), and Nazareth, spelled with tsade, sounds like ‘Branch-town’. A second proposal is nazir, a Nazirite, consecrated to God, recalling Samson's birth announcement, \"the boy will be a Nazirite to God from the womb\" (Judges 13:5), whose wording (‘you will conceive and give birth to a son’) resembles Isaiah 7:14; but Jesus did not keep a Nazirite's vows (11:19). A third links the name to natsar, ‘to keep’, used of the servant who restores ‘the protected ones of Israel’ (Isaiah 49:6). A fourth takes the point to be contempt: a Nazarene was a nobody (John 1:46), and the prophets foresaw a Messiah ‘despised and rejected by men’ (Isaiah 53:3). Several of these can stand together."
+        }
+      ],
+      "parallels": [
+        "Luke 2:39"
+      ],
+      "refs": [
+        "Isaiah 11:1",
+        "Judges 13:5",
+        "Isaiah 53:2-3",
+        "John 1:46",
+        "Acts 24:5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The heading for the whole table of nations and the fourth of the toledot headings (“This is the account”) that divide Genesis into its sections (2:4; 5:1; 6:9). It picks up 9:18-19, which said that the whole earth was populated from Noah's three sons, and verse 32 closes the section with nearly the same words.",
+      "grammar": "Toledot comes from the verb yalad, ‘to bear’ or ‘to father’, and means literally ‘generations’ or ‘what was produced’. It introduces not the person named but what came from him: this section is about the descendants of Shem, Ham, and Japheth. The verb vayyivvaledu, ‘were born’, is a Niphal (passive) wayyiqtol, and the phrase “after the flood” sets the whole table in the new world of the Noahic covenant.",
+      "words": [
+        "H8435",
+        "H3205",
+        "H3999"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The command of 9:1 and 9:7 to fill the earth is being carried out. The list shows God's blessing at work in the ordinary business of families having children and spreading out."
+        }
+      ],
+      "refs": [
+        "Genesis 9:18-19",
+        "Genesis 10:32",
+        "Genesis 11:10",
+        "1 Chronicles 1:4"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Japheth's seven sons open the list. Japheth comes first because his line is the most distant from the story Genesis will follow; the chosen line through Shem comes last.",
+      "history": "Several names match peoples known from Assyrian and Greek sources. Gomer corresponds to the Gimirrai of Assyrian texts, the Cimmerians, a horse-riding people who pressed into Anatolia around the late eighth and seventh centuries BC. Madai is the Medes of western Iran, and Javan (Yawan) the Ionian Greeks of the Aegean coast. Tubal and Meshech correspond to Tabal and Mushki, peoples of central and eastern Anatolia named in Assyrian records, and Ezekiel pairs them as traders in bronze and slaves (Ezekiel 27:13). Magog is unidentified; the Jewish historian Josephus identified it with the Scythians. Tiras is uncertain.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Peoples at the far edge of Israel's world, horse riders from the north and Greeks across the sea, are named as members of Noah's family. Later prophets place several of them in visions of the end (Ezekiel 38:2-6; Isaiah 66:19), but here they are simply kin."
+        }
+      ],
+      "refs": [
+        "Ezekiel 27:13",
+        "Ezekiel 38:2-6",
+        "Isaiah 66:19",
+        "Daniel 8:21"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "Gomer's three sons, peoples of the north. The list moves one generation down only for selected branches, which shows that its interest is in peoples Israel knew or heard of, not in complete family records.",
+      "history": "Ashkenaz is usually connected with the Ishkuza of Assyrian texts, commonly identified with the Scythians, and Jeremiah names Ashkenaz together with Ararat as northern kingdoms summoned against Babylon (Jeremiah 51:27). In medieval Jewish usage the name came to be applied to Germany, which is the origin of the term Ashkenazi. Togarmah, called Beth-togarmah in Ezekiel and known for trading horses and mules (Ezekiel 27:14), is often located in eastern Anatolia.",
+      "text": "Where Genesis reads Riphath, the standard Hebrew text of 1 Chronicles 1:6 reads Diphath. The Hebrew letters for r and d look very similar, and many Hebrew manuscripts and the Greek translation read Riphath in Chronicles as well, so the difference is almost certainly a copying slip.",
+      "refs": [
+        "Jeremiah 51:27",
+        "Ezekiel 27:14",
+        "Ezekiel 38:6",
+        "1 Chronicles 1:6"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Javan's descendants are the peoples of the Mediterranean islands and coasts. They are named in plural and place forms, a sign that the table moves freely between persons and peoples.",
+      "grammar": "Two of the names are plural gentilics, Kittim and Dodanim (or Rodanim), formed with the Hebrew plural ending -im. A plural ending cannot name one son; it names a people. The table uses the language of fathering (‘the sons of Javan’) to express relationship between peoples, not only physical descent, which is how ancient genealogies often worked.",
+      "words": [
+        "H3794G",
+        "H1721",
+        "H8659G",
+        "H0473G"
+      ],
+      "history": "Kittim takes its name from Kition, a Phoenician city on the southern coast of Cyprus (modern Larnaca); the name later widened to mean the western coastlands generally, and in Daniel 11:30 it refers to ships from the west. Elishah is often connected with Alashiya, a name for Cyprus or part of it in Late Bronze Age texts. Tarshish was a distant western port reached by large ships (1 Kings 10:22; Jonah 1:3).",
+      "text": "The Hebrew of Genesis reads Dodanim; the parallel in 1 Chronicles 1:7 reads Rodanim, and the Greek Septuagint has Rhodians, the people of Rhodes. Because the letters d and r are easily confused in Hebrew script, many translations, including the BSB (“the Rodanites”), adopt the r reading here.",
+      "refs": [
+        "1 Chronicles 1:7",
+        "Daniel 11:30",
+        "Jonah 1:3",
+        "Isaiah 23:1"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "The first of three closing formulas (compare verses 20 and 31). It describes the spread of Japheth's descendants to the coastlands, and it names four ways peoples are distinguished: territory, language, clan, and nation. Languages are already plural here, before the Babel story of 11:1-9, so chapter 11 steps back in time to explain how the division came about.",
+      "grammar": "“Maritime peoples” translates iyye haggoyim, literally ‘the coastlands of the nations’. The word i means a coast or island and is a favorite of Isaiah, who pictures the coastlands waiting for God's law (Isaiah 42:4). The verb nifredu, ‘separated’, is a Niphal of parad, the same verb used in 13:9-14 when Abram and Lot separate and in verse 32 of this chapter.",
+      "words": [
+        "H0339",
+        "H1471A",
+        "H6504",
+        "H3956H"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The distinction of peoples by land and language is recorded without complaint. Here it is the natural result of the command to fill the earth; chapter 11 will show that it also carries a judgment on human pride. Scripture holds both together."
+        }
+      ],
+      "refs": [
+        "Isaiah 42:4",
+        "Isaiah 49:1",
+        "Genesis 11:1",
+        "Zephaniah 2:11"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "Ham's four sons are peoples to the south and southwest of Israel, together with Canaan in the land itself. Each receives further treatment except Put.",
+      "grammar": "Mitsrayim (“Mizraim”), the ordinary Hebrew name for Egypt, has an ending that looks like a dual, the Hebrew form for a pair. Many have linked this to Egypt's traditional division into Upper and Lower Egypt, whose kings wore a double crown. Grammarians are not agreed that the ending is truly dual, so the explanation is attractive but not certain.",
+      "words": [
+        "H4714H",
+        "H3568G",
+        "H6316G",
+        "H3667G"
+      ],
+      "history": "Cush is the Nile valley south of Egypt, ancient Nubia in modern Sudan, whose kings ruled Egypt as its Twenty-fifth Dynasty in the eighth and seventh centuries BC; one of them, Tirhakah, appears in 2 Kings 19:9. Put is usually identified with Libya, west of Egypt, and it appears alongside Cush in lists of Egypt's allies (Jeremiah 46:9; Ezekiel 30:5).",
+      "refs": [
+        "2 Kings 19:9",
+        "Jeremiah 46:9",
+        "Ezekiel 30:5",
+        "Psalm 105:23"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "Cush's descendants include peoples of Arabia as well as Africa, reflecting the trade links across the Red Sea. The same names appear in other lines of Genesis, a reminder that the table groups peoples by association.",
+      "history": "Sheba and Dedan appear here as descendants of Cush, Sheba again in verse 28 as a son of Joktan in Shem's line, and both together in 25:3 as descendants of Abraham through Keturah. Sheba was the kingdom of the Sabaeans in southwest Arabia (modern Yemen), whose queen visits Solomon in 1 Kings 10. Dedan is usually identified with the oasis of al-Ula in northwest Arabia, on the incense road. Seba is paired with Sheba as a distant, wealthy land in Psalm 72:10. The repetition of names across different lines shows the table following trade, geography, and political links rather than a single line of descent.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Sheba and Seba, named here among the far peoples, reappear in Psalm 72:10 bringing gifts to Israel's king, and Isaiah 60:6 pictures those from Sheba bringing gold and frankincense to Zion. The peoples of the table become the peoples who will one day come to worship."
+        }
+      ],
+      "refs": [
+        "Genesis 25:3",
+        "1 Kings 10:1",
+        "Psalm 72:10",
+        "Isaiah 60:6"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "The list breaks into a short story about Nimrod, the first person after the flood to be called a gibbor, a mighty man. The description connects him with the mighty men of 6:4 and introduces the kingdoms of Babylonia and Assyria.",
+      "grammar": "“Began” is hechel, a Hiphil of chalal, the same verb used when Noah ‘began’ as a man of the soil (9:20) and when God says of Babel's builders that this is only the beginning of what they will do (11:6). Genesis uses the verb at points where something new, often troubling, starts. Gibbor (‘mighty one’) is not negative in itself, but its last use was for the men of renown before the flood (6:4). Jewish interpreters also heard in the name Nimrod the Hebrew for ‘we will rebel’ (from marad), though whether the name was meant that way is uncertain.",
+      "words": [
+        "H5248",
+        "H2490C",
+        "H1368"
+      ],
+      "refs": [
+        "Genesis 6:4",
+        "Genesis 9:20",
+        "Genesis 11:6",
+        "Micah 5:6",
+        "1 Chronicles 1:10"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "Nimrod's fame became proverbial as a mighty hunter, and the verse quotes the saying. The narrator's aside shows the saying was still current in the writer's day.",
+      "grammar": "The phrase lifne YHWH, “before the LORD”, is the crux. It can mean ‘in the LORD's sight’ with his approval, or it can be an idiom for superlative greatness, as in Jonah 3:3, where Nineveh is literally ‘a great city to God’, meaning an exceedingly great city. Some ancient interpreters, including Josephus and early rabbinic writers, read it negatively as ‘in defiance of the LORD’, but the Hebrew preposition does not naturally mean that. The saying itself is introduced by yeamar, a Niphal imperfect, ‘it is said’, describing something repeated habitually.",
+      "words": [
+        "H6718A",
+        "H6440G",
+        "H3068G",
+        "H0559"
+      ],
+      "history": "Royal hunting was a mark of kingship in the ancient Near East. Assyrian kings recorded their hunts of lions and wild bulls, and the palace reliefs of Ashurbanipal from Nineveh, now in the British Museum, show the king killing lions in a royal hunt. A mighty hunter was a natural picture of a founder of empires.",
+      "refs": [
+        "Jonah 3:3",
+        "Genesis 27:3",
+        "Jeremiah 16:16"
+      ]
+    },
+    {
+      "v": "10",
+      "context": "Nimrod's first kingdom lies in the land of Shinar, the Bible's name for southern Mesopotamia. Babylon heads the list, preparing for the story of Babel in the next chapter, which is also set in Shinar (11:2).",
+      "grammar": "“Began” here is reshit, ‘beginning’, the noun that opens the Bible in bereshit (1:1). The same word marks the start of a human kingdom. Calneh is a problem: no city of that name is known in southern Mesopotamia. Many scholars repoint the Hebrew consonants to read vekhullanah, ‘all of them’, so that the verse ends ‘Babylon, Erech, and Accad, all of them in the land of Shinar’. The consonantal text allows both readings.",
+      "words": [
+        "H7225G",
+        "H4467",
+        "H3641A",
+        "H8152"
+      ],
+      "history": "Erech is Uruk, one of the oldest and largest cities of Sumer, in southern Iraq, and in Mesopotamian tradition the city of Gilgamesh. Accad (Akkad or Agade) was the capital of Sargon of Akkad, who founded the first great Mesopotamian empire around the twenty-fourth or twenty-third century BC; the site of the city has never been located. Babylon rose to lasting greatness in the early second millennium BC under Hammurabi and again in the sixth century under Nebuchadnezzar.",
+      "refs": [
+        "Genesis 11:2",
+        "Genesis 14:1",
+        "Daniel 1:2",
+        "Isaiah 11:11"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "The kingdom extends north into Assyria, with four cities named. Together with verse 10 the passage sketches the two great powers of Mesopotamia, Babylonia and Assyria, which would one day destroy Samaria and Jerusalem.",
+      "grammar": "Verse 11 can be read two ways. The older reading, reflected in the King James Version, takes Asshur as the subject: ‘Out of that land went forth Asshur, and builded Nineveh’. Most modern translations, including the BSB, take Nimrod as the subject and Asshur as the destination (“he went forth into Assyria”), which fits the flow of verses 8 to 12 and Micah 5:6, where the land of Assyria and the land of Nimrod are set in parallel. The closing phrase, “the great city”, could describe Calah alone or the whole group of four cities.",
+      "words": [
+        "H0804G",
+        "H5210",
+        "H3625",
+        "H7449",
+        "H5892B"
+      ],
+      "history": "Nineveh stood on the east bank of the Tigris opposite modern Mosul, and became Assyria's capital under Sennacherib around 700 BC. Calah is the site now called Nimrud, south of Nineveh, the royal capital of Ashurnasirpal II in the ninth century BC; the modern name comes from local tradition connecting the ruins with Nimrod. Rehoboth-Ir (literally ‘the broad places of the city’) and Resen have not been securely identified.",
+      "refs": [
+        "Micah 5:6",
+        "Jonah 1:2",
+        "Jonah 3:3",
+        "Nahum 3:1"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "Mizraim, Egypt, fathers seven peoples, all given as plural gentilic names. The parenthesis about the Philistines explains the origin of a people who will be Israel's rivals from the judges to David.",
+      "grammar": "Every name here ends in -im, the Hebrew plural, and several also carry the ending for a people (Pathrusim, the people of Pathros). Yalad (‘was the father of’) is therefore being used of a nation producing peoples, not a man fathering sons. The phrase “from whom the Philistines came” uses yatsa, ‘went out’, the ordinary verb for origin.",
+      "words": [
+        "H3205",
+        "H6625",
+        "H6430H",
+        "H3732"
+      ],
+      "history": "Pathros is the Hebrew form of an Egyptian phrase meaning ‘the southern land’, Upper Egypt, and the Pathrusim are its people (Isaiah 11:11; Jeremiah 44:1). Caphtor is usually identified with Crete, and Amos 9:7 names it as the Philistines' place of origin. The Philistines settled on the southern coast of Canaan in the twelfth century BC, as part of the movements of the Sea Peoples recorded by Egypt's Ramesses III. The other names (Ludim, Anamim, Lehabim, Naphtuhim, Casluhim) are identified only tentatively, and some cannot be located at all.",
+      "refs": [
+        "Amos 9:7",
+        "Deuteronomy 2:23",
+        "Jeremiah 47:4",
+        "Jeremiah 44:1"
+      ]
+    },
+    {
+      "v": "15-18",
+      "context": "Canaan's descendants: two named sons, Sidon and Heth, and then nine peoples. These are the inhabitants of the land that God will promise to Abram, and several of the names will return in the lists of nations Israel must displace (15:19-21; Deuteronomy 7:1).",
+      "grammar": "After Sidon and Heth the form changes: each name is a singular gentilic with the article (hayyevusi, ‘the Jebusite’), used collectively for a whole people. Verse 18 ends with nafotsu, “were scattered”, a Niphal of puts. It is the verb of Babel: the builders fear being scattered (11:4), and the LORD scatters them (11:8-9). The Canaanite clans are already dispersing before the reader hears why.",
+      "words": [
+        "H6721G",
+        "H1060",
+        "H2983G",
+        "H6327A"
+      ],
+      "history": "Sidon, Canaan's firstborn, was a leading Phoenician port on the coast of modern Lebanon. Arvad was an island city off the Syrian coast (modern Arwad), and Arqa (the Arkites) and Sumur (the Zemarites) were towns of the northern coastal plain. Hamath, on the Orontes River in Syria (modern Hama), marked the northern limit of Israel's ideal borders (Numbers 34:8). The Jebusites held Jerusalem until David took it (2 Samuel 5:6-9), and the Hivites appear at Shechem (34:2) and Gibeon (Joshua 9:7).",
+      "refs": [
+        "Genesis 15:19-21",
+        "Deuteronomy 7:1",
+        "2 Samuel 5:6-9",
+        "Ezekiel 27:8",
+        "Genesis 11:8"
+      ]
+    },
+    {
+      "v": "19",
+      "context": "The borders of Canaan are traced like a route: south along the coast from Sidon to Gerar and Gaza, then southeast to the cities of the plain. The land that will be promised to Abram (12:7; 15:18) is described before he enters the story.",
+      "grammar": "The phrase boakhah, “toward”, is literally ‘as you come’, an infinitive with a ‘you’ suffix. It is the language of directions given to a traveler, ‘as you go toward Gerar’. The directional ending -ah on Gerar and Sodom (gerarah, sedomah) marks motion toward a place.",
+      "words": [
+        "H0935I",
+        "H1366H",
+        "H1642",
+        "H5467"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Sodom and Gomorrah still stand on this map. The reader who knows chapter 19 sees cities whose end is coming. The land's borders and its people are drawn within a history that God is already directing toward the promise of 15:18-21."
+        }
+      ],
+      "refs": [
+        "Genesis 13:10",
+        "Genesis 14:2",
+        "Genesis 15:18",
+        "Numbers 34:2-12"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "The closing formula for Ham's line, matching verse 5 for Japheth and verse 31 for Shem. The four terms are the same in each, so every branch of the human family is described in the same way.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Ham's line includes Egypt, Babylon, and the Canaanites, Israel's greatest oppressors and rivals, and it is described with exactly the same words as the others. The table does not rank the three branches; each has its clans, languages, lands, and nations."
+        }
+      ],
+      "refs": [
+        "Genesis 10:5",
+        "Genesis 10:31",
+        "Revelation 7:9"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Shem's section opens with a special introduction before the list of his sons. He is named as ancestor of all the sons of Eber, a great-grandson, because Eber's line leads to Abram, who will be called ‘the Hebrew’ (14:13).",
+      "grammar": "Yullad (“were born”) is a Pual, a passive form. The phrase achi yefet haggadol is ambiguous: haggadol (‘the great’, ‘the elder’) can describe Shem, as in the BSB (“the older brother of Japheth”), or Japheth, as in the King James Version (‘the brother of Japheth the elder’). Hebrew word order permits both. Many commentators note that the name Eber (ever) shares its consonants with ivri, ‘Hebrew’, although whether the two are historically connected is debated.",
+      "words": [
+        "H3205",
+        "H5677G",
+        "H1419K",
+        "H3315"
+      ],
+      "refs": [
+        "Genesis 11:14-17",
+        "Genesis 14:13",
+        "Numbers 24:24",
+        "1 Chronicles 1:17"
+      ]
+    },
+    {
+      "v": "22-23",
+      "context": "Shem's five sons and the four sons of Aram. The names cover Mesopotamia and Syria, the regions from which Abram's family will come.",
+      "history": "Elam lay in southwestern Iran, with its capital at Susa, and its language was unrelated to Hebrew; its place under Shem shows that the table groups peoples by geography and history, not language. Asshur is Assyria. Aram is the Arameans, whose language, Aramaic, became the common language of the Persian Empire and appears in parts of Ezra and Daniel. Uz is the homeland of Job (Job 1:1).",
+      "text": "The parallel list in 1 Chronicles 1:17 names Uz, Hul, Gether, and Meshech directly after Aram as sons of Shem, without the words ‘the sons of Aram’, and reads Meshech where Genesis has Mash. The shorter list in Chronicles may have been compressed, or a phrase may have dropped out in copying.",
+      "refs": [
+        "1 Chronicles 1:17",
+        "Job 1:1",
+        "Deuteronomy 26:5",
+        "Daniel 8:2"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The line of Arphaxad is followed three generations to Eber, the ancestor named in verse 21. This is the line that 11:10-26 will trace in full, with ages, down to Abram.",
+      "grammar": "Yalad here is Qal, active, ‘fathered’, in the plain pattern of a descent line: A fathered B, and B fathered C. The pattern is linear, one son per generation, unlike the branching lists of the rest of the chapter. That shift marks the line the story will follow.",
+      "words": [
+        "H3205",
+        "H0775",
+        "H7974"
+      ],
+      "text": "The Greek Septuagint inserts a Cainan between Arphaxad and Shelah, here and in 11:12-13. Luke's genealogy of Jesus includes this Cainan (Luke 3:36), following the Greek. The standard Hebrew text and 1 Chronicles 1:18 do not have him.",
+      "refs": [
+        "Genesis 11:10-14",
+        "Luke 3:35-36",
+        "1 Chronicles 1:18"
+      ]
+    },
+    {
+      "v": "25",
+      "context": "Eber has two sons, and the list pauses to explain Peleg's name. The line through Peleg will lead to Abram (11:16-26); the line through Joktan branches out into the Arabian peoples of verses 26 to 30.",
+      "grammar": "The explanation is a naming formula with ki, ‘because’: ‘the name of the one was Peleg, because in his days the earth was divided (niflegah)’. Niflegah is a Niphal perfect of palag, ‘to divide’, and the name and the verb share the same consonants, a wordplay typical of Genesis. ‘The earth’ here most naturally means its people, as ‘the whole earth’ does in 11:1.",
+      "words": [
+        "H6389",
+        "H6385",
+        "H3355"
+      ],
+      "history": "In the ages given in 11:10-26, lifespans fall sharply at Peleg: Eber lives 464 years, Peleg only 239. Whatever the division in his days was, Genesis marks his generation as a break.",
+      "refs": [
+        "Genesis 11:1",
+        "Genesis 11:16-19",
+        "1 Chronicles 1:19"
+      ]
+    },
+    {
+      "v": "26-30",
+      "context": "Joktan's thirteen sons and their territory. The names belong mostly to southern and western Arabia. This is the last branch before the summary, and the most detailed part of Shem's line outside the chosen line.",
+      "history": "Hazarmaveth corresponds to Hadramawt, a region of southern Yemen that still bears the name. Sheba, as in verse 7, is the Sabaean kingdom of southwest Arabia, and Havilah appears again, as in verse 7 and 2:11. Ophir was the source of the gold Solomon's fleet brought from the Red Sea port of Ezion-geber (1 Kings 9:26-28); its location is unknown, with Arabia, East Africa, and India all proposed. Mesha and Sephar have not been securely identified, though Sephar is sometimes connected with Zafar in Yemen.",
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Joktan's descendants are as much Shem's children as Peleg's, yet the story will not follow them. Descent from Shem does not by itself put a people in the line of promise, and the table gives the side branch as much care as any other."
+        }
+      ],
+      "refs": [
+        "1 Kings 9:26-28",
+        "1 Kings 10:11",
+        "Job 22:24",
+        "1 Chronicles 1:20-23"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "The closing formula for Shem's line, word for word the pattern of verses 5 and 20. With it all three branches have been named, and the chapter can summarize.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Shem's descendants include Elam, Assyria, the Arameans, and the Arabians as well as Eber. When God calls one man from this line, it will not be because the rest are outside his concern: the call is so that all the clans named here may be blessed (12:3)."
+        }
+      ],
+      "refs": [
+        "Genesis 10:5",
+        "Genesis 10:20",
+        "Genesis 12:3"
+      ]
+    },
+    {
+      "v": "32",
+      "context": "The table closes as it opened, with the toledot of Noah's sons and the words “after the flood”. It says that from these clans the nations spread out over the earth, the statement that chapter 11 will fill in with the story of Babel.",
+      "grammar": "Nifredu, “spread out”, is the Niphal of parad, the verb of verse 5, now applied to all the nations. The key nouns of the table all return: mishpechot (clans), toledot (generations), and goyim (nations). The last word, “after the flood”, repeats the end of verse 1 and closes the frame.",
+      "words": [
+        "H4940",
+        "H8435",
+        "H1471A",
+        "H6504"
+      ],
+      "history": "The traditional count of the names in the Hebrew text of this chapter is seventy: fourteen for Japheth, thirty for Ham, and twenty-six for Shem. Jewish tradition spoke of seventy nations of the world, and some interpreters connect this with Deuteronomy 32:8, where God fixed the boundaries of the peoples. In the standard Hebrew of that verse the number matches the sons of Israel (the seventy of Genesis 46:27); in a Dead Sea Scrolls manuscript and the Greek translation it matches the sons of God.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The nations are named, counted, and placed before the story of Abram begins. The promise that all the families of the earth will be blessed (12:3) uses mishpechot, the same word as this verse; the table is the list of those the promise has in view."
+        }
+      ],
+      "refs": [
+        "Genesis 12:3",
+        "Deuteronomy 32:8",
+        "Acts 17:26",
+        "Revelation 7:9"
+      ]
+    }
+  ]
+}

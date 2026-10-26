@@ -1,0 +1,225 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Hebrews opens without a greeting, like a sermon rather than a letter (13:22 calls it a ‘word of exhortation’). Its first clause names the past: God spoke to the fathers through the prophets, often and in varied ways. The whole of verses 1 to 4 is one sentence in Greek, and this clause is only its foundation; the main verb comes in verse 2.",
+      "grammar": "Polumerōs kai polutropōs, ‘in many parts and in many ways’, are two rhyming adverbs, the first stressing that revelation came in portions over time, the second that it came in different forms (dreams, visions, law, oracle, history). The opening is alliterative, with five words beginning with p (polumerōs, polutropōs, palai, patrasin, prophētais), a flourish of trained Greek rhetoric. Lalēsas (‘having spoken’) is an aorist participle subordinate to the main verb in verse 2, so the grammar itself makes the prophets' speaking preparatory. En tois prophētais can be instrumental (‘by the prophets’) or locative (‘in the prophets’), picturing God speaking in and through them.",
+      "words": ["G4181", "G4187", "G3819", "G2980", "G3962", "G4396"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The earlier revelation is affirmed as God's own speech, not merely human religious insight. Its many parts and forms are not a defect but a sign of its incompleteness, which the Son completes."
+        }
+      ],
+      "refs": ["Numbers 12:6-8", "Amos 3:7", "Hebrews 2:2-3", "2 Peter 1:21", "Luke 1:70"]
+    },
+    {
+      "v": "2",
+      "context": "The main clause: in these last days God has spoken to us by a Son. Two relative clauses then describe the Son's place at both ends of history: appointed heir of all things (the goal) and the one through whom God made the universe (the beginning).",
+      "grammar": "Ep' eschatou tōn hēmerōn toutōn, ‘at the end of these days’, echoes the Septuagint phrase for the time of fulfillment (Numbers 24:14, the ‘latter days’ of Jeremiah 23:20). Elalēsen (‘he spoke’) is aorist, a decisive past act. En huiō has no article: not ‘in the Son’ but ‘in a Son’ or ‘in one who is Son’, stressing the kind of messenger rather than identifying him. The contrast with ‘the prophets’ is not between two sets of messengers but between servants and a Son. Klēronomon pantōn, ‘heir of all things’, echoes Psalm 2:8, where the Son is promised the nations as his inheritance. Tous aiōnas (literally ‘the ages’) means the universe, perhaps in both its spatial and temporal extent, following a Jewish use of the Hebrew olam for the world.",
+      "words": ["G2078", "G2250", "G2980", "G5207", "G5087", "G2818", "G0165G"],
+      "text": "The Textus Receptus and the Byzantine manuscripts change the word order of the last clause (‘through whom also he made the ages’); the meaning is unchanged.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The Son is not one more prophet but the final word, spoken ‘in these last days’. Revelation in the Son is presented as the climax toward which the earlier speaking moved, not a replacement that discards it."
+        },
+        {
+          "id": "creation",
+          "note": "God made the universe through the Son. The Son stands at creation's beginning as agent and at its end as heir, the same pattern as Colossians 1:16 and John 1:3."
+        }
+      ],
+      "refs": ["Psalm 2:8", "John 1:3", "Colossians 1:16", "1 Corinthians 8:6", "Galatians 4:4"]
+    },
+    {
+      "v": "3",
+      "context": "Four statements describe who the Son is and what he has done: he radiates God's glory, bears the exact stamp of God's being, sustains all things by his word, and, having made purification for sins, sat down at God's right hand. The last phrase introduces the letter's great text, Psalm 110, which is quoted in verse 13.",
+      "grammar": "Ōn (‘being’) is a present participle, describing what the Son continually is, in contrast with the aorist actions that follow. Apaugasma can mean ‘radiance’ (light streaming from a source) or ‘reflection’; the only other biblical use is Wisdom of Solomon 7:26, where Wisdom is the radiance of eternal light. Charaktēr was the impression left by a seal or die. Hupostasis here means the underlying reality or being of God (the Latin Vulgate has substantia). In the later Trinitarian vocabulary settled in the fourth century, hypostasis came to mean ‘person’, distinct from ousia (‘being’), so the verse's use of the word is not the later technical sense. Pherōn ta panta, ‘carrying all things’, pictures bearing creation toward its goal, not holding it up like Atlas. Katharismon poiēsamenos (‘having made purification’) is an aorist middle participle: the act was complete before he sat down. Ekathisen (‘he sat’) and en hupsēlois (‘on high’) allude to Psalm 110:1.",
+      "words": ["G0541", "G1391", "G5481", "G5287", "G5342", "G2512", "G2523", "G3172"],
+      "text": "The Textus Receptus and most later manuscripts add ‘by himself’ (di' heautou) before ‘made purification’ and ‘our’ after ‘sins’, followed by the King James Version (‘when he had by himself purged our sins’). The earlier manuscripts lack both additions. The meaning is similar, since the verse already makes the Son the actor.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Son is distinguished from God (he is God's radiance and imprint) and yet shares God's nature so fully that to see him is to see God. The Nicene fathers used the image of light and its radiance, never separated, to explain how the Son is eternally from the Father yet equal with him."
+        },
+        {
+          "id": "atonement",
+          "note": "Purification for sins is placed between the Son's eternal identity and his enthronement. The sacrifice is described as finished, and the seated posture, which chapter 10:11-12 will contrast with priests who stand daily, is the sign of that completion."
+        }
+      ],
+      "refs": ["John 1:14", "Colossians 1:15-17", "2 Corinthians 4:4-6", "Hebrews 10:11-12", "Psalm 110:1"]
+    },
+    {
+      "v": "4",
+      "context": "The sentence ends by comparing the Son with angels, which sets up the chain of quotations that follows. The name he has inherited is ‘Son’, as verse 5 will show. ‘Better’ or ‘superior’ becomes the letter's signature word.",
+      "grammar": "Tosoutō ... hosō, ‘by so much ... as’, is a correlative construction of proportion: his superiority matches the superiority of his name. Kreittōn (‘superior’, ‘better’) is used thirteen times in Hebrews: a better hope, covenant, promises, sacrifices, possession, country, and resurrection. Genomenos (‘having become’) has troubled readers who ask how an eternal Son can ‘become’ superior; the most common answer is that it refers to his exaltation after his earthly humiliation (2:9), when the one who was always Son was publicly installed. Keklēronomēken (‘he has inherited’) is a perfect tense, a permanent possession.",
+      "words": ["G5118", "G2908", "G1096", "G0032G", "G1313", "G2816", "G3686"],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The verse describes the Son's enthronement as the moment his superiority over angels was publicly established. Hebrews holds together an eternal Sonship (verse 2) and an exaltation after suffering (2:9) without treating them as rivals."
+        }
+      ],
+      "refs": ["Philippians 2:9", "Ephesians 1:20-21", "Hebrews 8:6", "1 Peter 3:22"]
+    },
+    {
+      "v": "5",
+      "context": "The first of seven Old Testament quotations. The rhetorical question ‘to which of the angels did God ever say’ opens the series, and the same question will close it in verse 13. Two texts about God's Son, Psalm 2:7 and 2 Samuel 7:14, are paired.",
+      "grammar": "Tini gar eipen pote tōn angelōn, ‘for to which of the angels did he ever say’, expects the answer ‘none’. The quotations are introduced as God's speech, not as ‘Scripture says’, a pattern that runs through Hebrews. Gegennēka (‘I have begotten’) is a perfect tense. Sēmeron (‘today’) has been read of eternal generation (Augustine, in his exposition of Psalm 2, took ‘today’ as God's timeless present), of the incarnation, of the baptism, and most often in the New Testament of the resurrection and exaltation (Acts 13:33). The flow of Hebrews 1:3-5, from enthronement to the name ‘Son’, favors the exaltation. Esomai autō eis patera, ‘I will be to him for a father’, is a Hebrew idiom (the preposition le rendered by eis) carried over by the Septuagint.",
+      "words": ["G0032G", "G5207", "G4594", "G1080", "G3962"],
+      "ot": [
+        {
+          "ref": "Psalm 2:7",
+          "note": "The Hebrew reads beni attah ani hayyom yelidtikha, ‘You are my son; today I have begotten you’, spoken by the LORD to the king installed on Zion. The Septuagint translates it word for word, and Hebrews follows it exactly. In Israel the words belonged to the coronation of a Davidic king, adopted as God's son on his enthronement day. Hebrews reads the psalm, as Acts 13:33 does, as fulfilled when the risen Jesus was installed at God's right hand, and it quotes the same verse again in 5:5 for his appointment as high priest."
+        },
+        {
+          "ref": "2 Samuel 7:14",
+          "note": "Nathan's oracle promised David that God would be a father to his offspring and establish his throne. The Hebrew ani ehyeh-lo le'av vehu yihyeh-li leven is rendered literally by the Septuagint, and Hebrews follows it. The Hebrew continues with discipline for the son's iniquity, which Hebrews omits and which the Chronicler's version already drops (1 Chronicles 17:13). At Qumran, the Florilegium (4Q174) comments on 2 Samuel 7:11-14 together with Psalm 2, reading both of a coming Branch of David, so Hebrews' pairing of the two texts has a Jewish precedent."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The two texts are both royal promises to David's line. Hebrews presents Jesus as the Davidic Son in whom those promises reach their intended fullness, and the name ‘Son’ as the name that no angel was ever given."
+        }
+      ],
+      "refs": ["Psalm 2:7", "2 Samuel 7:14", "Acts 13:33", "Hebrews 5:5", "Mark 1:11"]
+    },
+    {
+      "v": "6",
+      "context": "When God brings his firstborn into the world, he commands all his angels to worship him. The worship of angels settles the comparison: those who worship are lower than the one worshiped.",
+      "grammar": "Hotan de palin eisagagē, ‘and when again he brings in’, is ambiguous. Palin (‘again’) may simply introduce another quotation (as in verse 5 and 2:13), or it may modify the verb, ‘when he brings in again’, which B. F. Westcott took of the second coming. Eisagagē is an aorist subjunctive after hotan, describing an event whose time is left open. Oikoumenē (‘the inhabited world’) returns in 2:5 as ‘the world to come’ that has been subjected to the Son, which leads William Lane (Word Biblical Commentary, 1991) and others to read the verse of the exaltation, the firstborn's entry into the heavenly world, rather than of the birth at Bethlehem. Prōtotokos (‘firstborn’) here is a title of rank and heirship (Psalm 89:27).",
+      "words": ["G3825", "G1521", "G4416", "G3625", "G4352"],
+      "ot": [
+        {
+          "ref": "Deuteronomy 32:43",
+          "note": "The standard Hebrew text of the Song of Moses has no line about worship. A Hebrew manuscript from Qumran (4QDeut q) reads ‘bow down to him, all gods’ (hishtachavu lo kol elohim), showing a longer Hebrew form existed. The Septuagint is longer still, calling on ‘all the sons of God’ to worship him and ‘all the angels of God’ to be strong in him; the copy of the Song among the Odes after the Psalms in Codex Alexandrinus has ‘all the angels of God’ in the worship line, matching Hebrews. Hebrews' ‘and let them worship’ (kai proskunēsatōsan) follows the Deuteronomy form. In the Song, the worship greets the LORD as he comes to avenge his people; Hebrews applies it to the Son."
+        },
+        {
+          "ref": "Psalm 97:7",
+          "note": "The Hebrew says ‘worship him, all you gods’; the Septuagint (Psalm 96:7) renders ‘worship him, all his angels’, a plain imperative. The wording is close to Hebrews 1:6 but lacks ‘and’ and ‘of God’, so most scholars think Hebrews quotes Deuteronomy, perhaps with this psalm in mind. Both texts belong to the LORD's coming as king."
+        }
+      ],
+      "text": "Because the line is missing from the standard Hebrew text, older English readers could not find it in their Old Testaments. The Qumran fragment has confirmed that the Septuagint was translating a real Hebrew form of the verse, not inventing one.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Angels are commanded to worship the Son. Since Scripture reserves worship for God alone, and Revelation 22:8-9 has an angel refusing it, the verse places the Son on the side of God."
+        },
+        {
+          "id": "trinity",
+          "note": "The Father commands worship of the Son while remaining distinct from him. The verse contributes the practice of worship to the evidence behind the later doctrine: the church worshiped the Son before it had defined his relation to the Father."
+        }
+      ],
+      "refs": ["Deuteronomy 32:43", "Psalm 97:7", "Revelation 5:11-12", "Revelation 22:8-9", "Philippians 2:10"]
+    },
+    {
+      "v": "7",
+      "context": "The contrast begins with the angels: God makes them winds and flames of fire. They are powerful but changeable servants, as the next quotations show the Son's throne to be eternal and his being unchanging.",
+      "grammar": "Kai pros men tous angelous legei, ‘and to (or about) the angels he says’, sets up a men ... de contrast answered in verse 8 (pros de ton huion, ‘but to the Son’). Pros can mean ‘to’ or ‘with reference to’; here it means ‘about’. Pneumata can mean ‘winds’ or ‘spirits’, both senses of the Hebrew ruach. Leitourgous (‘ministers’, ‘servants’) is priestly vocabulary, and verse 14 will call angels leitourgika pneumata, ‘ministering spirits’.",
+      "words": ["G0032G", "G4160G", "G4151H", "G3011", "G5395"],
+      "ot": [
+        {
+          "ref": "Psalm 104:4",
+          "note": "The Hebrew, oseh mal'akhav ruchot mesharetav esh lohet, is ambiguous: it can mean ‘who makes winds his messengers, flaming fire his servants’ (the sense most translators give it in the psalm, whose context is weather and creation) or ‘who makes his messengers winds’. The Septuagint (Psalm 103:4) chose the second, with angels as the object, and Hebrews follows it, reading the verse as a statement about what angels are: God can turn them into wind and fire. Where the standard edition of the Septuagint has ‘flaming fire’ (pur phlegon), Hebrews has ‘a flame of fire’ (puros phloga)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Angels are creatures and servants whose form God can change. The contrast with the Son's eternal throne (verse 8) and unchanging being (verse 12) is the point: however glorious, they belong to the created order."
+        }
+      ],
+      "refs": ["Psalm 104:4", "Psalm 103:20-21", "Hebrews 1:14", "Exodus 3:2"]
+    },
+    {
+      "v": "8-9",
+      "context": "To the Son, God speaks words from a royal wedding psalm: his throne is forever, his scepter is justice, he loved righteousness and hated wickedness, and God, his God, anointed him above his companions. The Son is addressed as God and is also anointed by God.",
+      "grammar": "Ho thronos sou ho theos can be read in two ways. Most translations, ancient and modern, take ho theos as a vocative (‘your throne, O God’), a form the Septuagint uses often, since a nominative with the article can serve as a vocative in biblical Greek. A minority read it as a predicate, ‘your throne is God’ or ‘God is your throne’, a rendering printed in the margin of some versions; the RSV translated the psalm itself ‘your divine throne’. The flow of Hebrews 1, which calls the Son creator in verse 10, favors the vocative. In verse 9, ho theos ho theos sou can likewise be read ‘God, your God, has anointed you’ or ‘therefore, O God, your God has anointed you’. Metochous (‘companions’, ‘partners’) is the word Hebrews later uses of believers who share in Christ (3:1, 3:14), which suggests the Son's companions are his people.",
+      "words": ["G2362", "G2316", "G4464", "G0932", "G1343", "G0458", "G5548", "G3353"],
+      "ot": [
+        {
+          "ref": "Psalm 45:6-7",
+          "note": "The Hebrew kis'akha elohim olam va'ed addresses the king at his wedding, probably in a courtly address calling him elohim, as Hebrew could call judges or rulers ‘gods’ (Psalm 82:6). The Septuagint (Psalm 44:7-8) renders it word for word with ho theos, and translates resha (‘wickedness’) as anomia (‘lawlessness’). Hebrews follows the Septuagint closely but moves the article in the scepter line. Jewish interpreters read the psalm of the Messiah (the Targum renders the king as King Messiah in 45:3). Hebrews takes the address at full strength: said of Jesus, the title fits literally."
+        }
+      ],
+      "text": "In verse 8 the editions differ between ‘the scepter of your kingdom’ (sou) and ‘the scepter of his kingdom’ (autou). ‘His’ has early support, including Papyrus 46 and the codices Sinaiticus and Vaticanus, and Westcott and Hort printed it; if original, it would make ‘God’ the subject (‘God is your throne ... the scepter of his kingdom’). Most editions print ‘your’, agreeing with the Septuagint.",
+      "theology": [
+        {
+          "id": "trinity",
+          "note": "The Son is addressed as God, and in the next breath God is called his God, who anoints him. The verse holds the Son's deity and his distinction from the Father together, the pairing the church later expressed in the doctrine of the Trinity."
+        },
+        {
+          "id": "messiah",
+          "note": "‘Anointed’ (echrisen) is the verb behind ‘Christ’. The Son is the anointed king whose rule is marked by love of righteousness, fulfilling the royal ideal the psalm celebrated."
+        }
+      ],
+      "refs": ["Psalm 45:6-7", "John 20:28", "Isaiah 9:6-7", "Isaiah 61:1", "Hebrews 3:14"]
+    },
+    {
+      "v": "10-12",
+      "context": "A third address to the Son applies to him a psalm that praises God as creator and as unchanging when heaven and earth wear out. The Son laid the foundations of the earth; the heavens will be rolled up like a garment; he remains the same.",
+      "grammar": "Kai su kat' archas, kurie, ‘and you, in the beginning, Lord’, places su (‘you’) first, which the Septuagint does not, so that the pronoun stands out as addressed to the Son. Kurie (‘Lord’) is a vocative supplied by the Septuagint. Diameneis (‘you remain’) is present tense, and palaiōthēsontai (‘they will grow old’) and allagēsontai (‘they will be changed’) are futures: the created order is transient, the Son permanent. Helixeis (‘you will roll up’) pictures a scroll or cloak being rolled, recalling Isaiah 34:4, where the heavens are rolled up like a scroll. Su de ho autos ei, ‘but you are the same’, anticipates Hebrews 13:8, ‘Jesus Christ is the same yesterday and today and forever’.",
+      "words": ["G0746", "G2962G", "G2311", "G0622", "G1265", "G3822", "G1667", "G0236"],
+      "ot": [
+        {
+          "ref": "Psalm 102:25-27",
+          "note": "In the Hebrew the psalm is a prayer of an afflicted man to the LORD, and verses 25 to 27 praise God's permanence against his own short days. The Hebrew has no vocative ‘Lord’ in verse 25; the Septuagint (Psalm 101:26-28) supplies kurie, which allows Hebrews to read the words as addressed to the Lord Jesus. The Septuagint also vocalized a word in verse 23 so that it reads ‘he answered him’ instead of ‘he afflicted’, turning the following verses into God's reply to the one praying. Derek Kidner (Psalms 73-150, 1975) observed that on this Greek reading God addresses the psalmist's figure as creator, which is how Hebrews uses it. Some Septuagint manuscripts read ‘you will change them’, others ‘you will roll them up’, as Hebrews does."
+        }
+      ],
+      "text": "In verse 12, the major critical editions include a second ‘like a garment’ (hōs himation) after ‘roll them up’, attested in early manuscripts including Papyrus 46 and the codices Sinaiticus and Vaticanus, though it is absent from the Septuagint and from the Textus Receptus. It may be the author's own repetition for rhythm.",
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "The unchangeableness the psalm ascribes to God is ascribed to the Son. What is true of God's eternity is true of him, which is why the letter can later say he is the same yesterday, today, and forever (13:8)."
+        },
+        {
+          "id": "creation",
+          "note": "Creation is God's handiwork and also temporary: it will grow old and be changed. The Son is its maker and outlasts it, so the believer's hope rests on him rather than on the permanence of the world."
+        }
+      ],
+      "refs": ["Psalm 102:25-27", "Isaiah 34:4", "Isaiah 51:6", "Hebrews 13:8", "2 Peter 3:10-13"]
+    },
+    {
+      "v": "13",
+      "context": "The chain of quotations closes with Psalm 110:1 and the same question that opened it in verse 5. The Son sits at God's right hand until his enemies are made his footstool. Verse 3 alluded to this psalm; now it is quoted in full.",
+      "grammar": "Eirēken (‘has he said’) is a perfect tense, suggesting a word spoken and still standing. Kathou ek dexiōn mou, ‘sit at my right hand’, is a present imperative of a continuing state. Heōs an thō, ‘until I put’, uses an aorist subjunctive for an event certain but not yet complete, which Hebrews will stress again in 2:8 (‘we do not yet see everything subject to him’) and 10:12-13. Hupopodion tōn podōn sou, ‘a footstool for your feet’, is a picture of total subjection.",
+      "words": ["G0032G", "G2046", "G2521", "G1188", "G5087", "G2190", "G5286"],
+      "ot": [
+        {
+          "ref": "Psalm 110:1",
+          "note": "The Hebrew begins ne'um YHWH ladoni, ‘the LORD's declaration to my lord’, an oracle to the king. The Septuagint (Psalm 109:1) renders both names as kurios (‘the Lord said to my Lord’), and Hebrews quotes its words exactly. Psalm 110 is the Old Testament text most often cited or echoed in the New Testament; Jesus used its opening line to ask how the Messiah could be both David's son and his lord (Mark 12:35-37). Hebrews uses verse 1 for the Son's enthronement and, from chapter 5 onward, verse 4 for his priesthood after the order of Melchizedek."
+        }
+      ],
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The Son is seated in the place of highest honor and shared rule. The subjection of his enemies is still being worked out, so the exaltation is both accomplished and awaiting completion."
+        },
+        {
+          "id": "kingdom",
+          "note": "The ‘until’ of the psalm frames the present age: Christ already reigns, and his reign will be complete when every enemy is subjected, the last being death (1 Corinthians 15:25-26)."
+        }
+      ],
+      "refs": ["Psalm 110:1", "Mark 12:35-37", "Acts 2:34-35", "1 Corinthians 15:25-26", "Hebrews 10:12-13"]
+    },
+    {
+      "v": "14",
+      "context": "The answer to the chapter's comparison: angels are ministering spirits sent to serve those who will inherit salvation. The final phrase turns from the Son to the readers, preparing the warning of 2:1-4 and introducing ‘salvation’, a key word of chapter 2.",
+      "grammar": "Ouchi (‘are they not?’) expects a ‘yes’. Leitourgika pneumata, ‘ministering spirits’, repeats the vocabulary of verse 7. Eis diakonian apostellomena, ‘being sent for service’, is a present passive participle: angels are continually sent. Dia tous mellontas klēronomein sōtērian, ‘for the sake of those who are about to inherit salvation’, uses mellō (‘be about to’), which points to salvation as a future inheritance, although Hebrews also treats it as already begun (2:3). The verb ‘inherit’ echoes the Son's inheritance in verses 2 and 4: believers inherit with him.",
+      "words": ["G3010", "G4151G", "G1248", "G0649", "G3195", "G2816", "G4991"],
+      "history": "Jewish literature of the period gave angels a large role in guarding and guiding the righteous. In the book of Tobit, the angel Raphael accompanies Tobias on his travels and heals his father (Tobit 5 and 12), and Psalm 91:11 promised angels to guard the one who trusts God. Hebrews affirms their service while placing it beneath the Son.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "Angels serve God by serving his people. The verse supports the church's teaching on the ministry of angels, while its setting insists they are servants, not objects of devotion. Whether each believer has a particular guardian angel, a view held by many church fathers and in Catholic and Orthodox piety, the verse does not say."
+        },
+        {
+          "id": "salvation",
+          "note": "Salvation is an inheritance, received as heirs of the Son who is ‘heir of all things’ (verse 2). The future orientation prepares the letter's call to hold on until the inheritance is received."
+        }
+      ],
+      "refs": ["Psalm 91:11", "Psalm 34:7", "Matthew 18:10", "Acts 12:7-11", "Hebrews 13:2"]
+    }
+  ]
+}

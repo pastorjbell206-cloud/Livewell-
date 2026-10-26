@@ -55,7 +55,7 @@ export default function ConsiderTheBirds() {
     <Layout>
       <SEOMeta
         title="Consider the Birds: What the Bible Says About Anxiety — by James Bell"
-        description="What the Bible actually says about anxiety: the Greek word Jesus used for worry, and the peace he offers instead. An honest look, now an ebook."
+        description="What the Bible actually says about anxiety: the Greek word Jesus used for worry, and the peace he offers instead. Fourteen chapters, from three in the morning to first light, as an ebook."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/${SLUG}`}
         type="book"
@@ -124,7 +124,7 @@ export default function ConsiderTheBirds() {
               You have been told two things about that hour, and both have failed you. That your worry is a sin you could stop if you only believed harder. And that it is only chemistry, a glitch in the machine, meaning nothing. Both are half a healing. Both leave you alone in the dark.
             </p>
             <p style={{ margin: "0 0 1.2em" }}>
-              In <em>Consider the Birds</em>, pastor and former atheist James Bell takes the question seriously — and takes you seriously. Drawing on the Greek word Jesus used for worry, <em>merimna</em> (the soul pulled in two), he traces anxiety down to its root: not a wiring problem, but a worship problem — the ancient refusal to be a creature who is kept. It honors the doctor and the medicine, and refuses to stop there.
+              In <em>Consider the Birds</em>, pastor and former atheist James Bell takes the question seriously, and takes you seriously. Starting from the Greek word Jesus used for worry, <em>merimna</em>, which he reads as a mind pulled in two directions, he argues that beneath the wiring there is usually a worship question: the ancient refusal to be a creature who is kept. It honors the doctor and the medicine, and refuses to stop there.
             </p>
             <p style={{ margin: 0, fontWeight: 600 }}>
               It does not promise the hour will never come again. It promises something better: that when it comes, it no longer means what you were afraid it meant.

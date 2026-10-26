@@ -1,0 +1,261 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "“Therefore” gathers up chapters 1 and 2: the Son above the angels who became like his brothers. The readers are addressed as holy brothers who share a heavenly calling and told to consider Jesus, the apostle and high priest of their confession. The comparison with Moses follows.",
+      "grammar": "Hothen (‘therefore’) links back to the merciful and faithful high priest of 2:17. Adelphoi hagioi (‘holy brothers’) echoes 2:11, where the sanctifier calls the sanctified brothers. Klēseōs epouraniou metochoi, ‘partners in a heavenly calling’, uses metochoi, the word for the Son's ‘companions’ in 1:9 and for sharing ‘in Christ’ in 3:14. Katanoēsate (‘consider carefully’) is an aorist imperative calling for fixed, thoughtful attention. Ton apostolon kai archierea tēs homologias hēmōn, ‘the apostle and high priest of our confession’, joins two titles under one article: Jesus is the one sent from God to us and the one who represents us to God. Homologia (‘confession’) likely refers to a statement the community professed, perhaps at baptism (4:14, 10:23).",
+      "words": ["G0080", "G0040G", "G2821", "G2032", "G3353", "G2657", "G0652", "G0749", "G3671"],
+      "theology": [
+        {
+          "id": "offices",
+          "note": "Jesus is apostle (God's envoy, like Moses) and high priest (the people's representative, like Aaron) at once. The two roles that Israel's history divided between two brothers are united in one person."
+        },
+        {
+          "id": "church",
+          "note": "Believers are ‘holy brothers’ and partners in a calling that comes from heaven. The church is defined by that shared calling and by a common confession, not by ethnicity or place."
+        }
+      ],
+      "refs": ["Hebrews 2:17", "Hebrews 4:14", "Hebrews 10:23", "John 20:21", "Philippians 3:14"]
+    },
+    {
+      "v": "2",
+      "context": "Jesus was faithful to the God who appointed him, as Moses was faithful in all God's house. The author begins by honoring Moses before showing Jesus' greater glory.",
+      "grammar": "Piston onta tō poiēsanti auton, ‘being faithful to the one who made him’, uses poieō in the sense of appointing to an office (as in 1 Samuel 12:6, where the Septuagint says the LORD ‘made’ Moses and Aaron). The church fathers in the Arian controversy argued over the phrase, since some read ‘made’ as ‘created’; Athanasius replied that it refers to the Son's appointment in his human office. Hōs kai Mōusēs (‘as also Moses’) is a comparison of likeness before a contrast. En holō tō oikō autou, ‘in all his house’, quotes Numbers 12:7.",
+      "words": ["G4103", "G4160I", "G3475", "G3650", "G3624H"],
+      "text": "‘All’ (holō) is missing from some early manuscripts, and the SBL edition omits it; most editions include it, as in verse 5 and the Septuagint of Numbers 12:7.",
+      "ot": [
+        {
+          "ref": "Numbers 12:7",
+          "note": "When Miriam and Aaron challenged Moses, the LORD declared that he spoke with other prophets in visions and dreams, but not so with his servant Moses: ‘he is faithful in all my house’ (Hebrew bekhol-beti ne'eman hu). The Septuagint renders it en holō tō oikō mou pistos estin, and calls Moses therapōn (‘servant’), the word Hebrews will use in verse 5. The text is God's highest commendation of Moses, and Hebrews takes it as the standard against which even greater faithfulness can be measured."
+        },
+        {
+          "ref": "1 Samuel 2:35",
+          "note": "After condemning Eli's house, God promises to raise up a faithful priest and to build him a sure house (the Septuagint has ‘a faithful priest’ and ‘a faithful house’). Many commentators think Hebrews has this text in mind alongside Numbers 12:7, since it joins the ideas of faithfulness, priesthood, and house that verses 1 to 6 combine."
+        }
+      ],
+      "refs": ["Numbers 12:7", "1 Samuel 2:35", "Hebrews 2:17", "John 17:4"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus deserves greater glory than Moses as the builder of a house has more honor than the house. Verse 4 adds a parenthesis: every house has a builder, but God builds everything, which implicitly puts the Son on the builder's side, since 1:2 and 1:10 made him the Creator.",
+      "grammar": "Pleionos gar houtos doxēs ... ēxiōtai, ‘for this one has been counted worthy of more glory’, uses a perfect passive (God is the one who counts him worthy). Kath' hoson (‘by as much as’) sets up the proportion. Ho kataskeuasas (‘the one who built’) uses kataskeuazō, which can mean to build or to furnish and equip. The argument slides between oikos as a building and as a household: Moses was a member of the household, while the Son belongs with the builder. Verse 4 identifies the builder of all things as God (theos, the predicate, last for emphasis).",
+      "words": ["G4119", "G1391", "G0515", "G5092", "G3624G", "G2680"],
+      "theology": [
+        {
+          "id": "god",
+          "note": "God is the builder of everything. By placing Jesus on the builder's side of the comparison, the verses imply what chapter 1 said openly: the Son shares in the work that belongs to God alone."
+        }
+      ],
+      "refs": ["Hebrews 1:2", "Hebrews 1:10", "Hebrews 11:10", "Zechariah 6:12-13"]
+    },
+    {
+      "v": "5",
+      "context": "Moses was faithful as a servant in all God's house, a witness to what would be spoken later. The phrase makes Moses' whole ministry point forward.",
+      "grammar": "Kai Mōusēs men ... Christos de (verses 5 and 6) is a men ... de contrast, ‘Moses on the one hand ... Christ on the other’. Therapōn is not the ordinary word for slave (doulos) but a word for an honored attendant or trusted servant, taken from the Septuagint of Numbers 12:7; it is found only here in the New Testament. Eis marturion tōn lalēthēsomenōn, ‘for a testimony of the things that would be spoken’, uses a future passive participle: Moses' ministry bore witness to a later speaking, which Hebrews identifies as God's word in the Son (1:2).",
+      "words": ["G3475", "G4103", "G3624H", "G2324", "G3142", "G2980"],
+      "history": "Jewish writers of the period gave Moses extraordinary status. Philo calls him the greatest and most perfect of men and, in his Life of Moses (1.158), says Moses was named god and king of the whole nation. Some later rabbinic texts ranked Moses above the ministering angels. Hebrews does not diminish Moses; it calls him faithful twice, but it places him within the house as a servant.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The law and the prophets are true testimony, and part of their function was to point ahead to what God would say later. The verse describes the relation between the covenants as witness and fulfillment."
+        }
+      ],
+      "refs": ["Numbers 12:7", "Deuteronomy 18:15-18", "John 5:46", "Luke 24:27"]
+    },
+    {
+      "v": "6",
+      "context": "Christ is faithful as a Son over God's house, and the readers are that house, provided they hold fast their confidence and the hope they boast in. The first of two conditional clauses (with verse 14) turns the comparison into a warning.",
+      "grammar": "Hōs huios epi ton oikon, ‘as a son over the house’: epi (‘over’) contrasts with en (‘in’) used of Moses. Hou oikos esmen hēmeis, ‘whose house we are’, identifies the church as God's household. Eanper (‘if indeed’) introduces a condition; parrēsia (‘confidence’, ‘boldness’) is a key word of the letter (4:16, 10:19, 10:35), originally the free speech of a citizen. To kauchēma tēs elpidos, ‘the boast of the hope’, is the hope in which they rightly glory. Kataschōmen (‘we hold fast’) is aorist subjunctive in the condition.",
+      "words": ["G5547", "G5207", "G3624H", "G1437", "G3954", "G2745", "G1680", "G2722"],
+      "text": "Many manuscripts, followed by the Textus Receptus and the King James Version, add ‘firm to the end’ (mechri telous bebaian) after ‘hope’, apparently borrowed from verse 14; Papyrus 46 and Codex Vaticanus lack it, and most editions omit it. Some manuscripts also read hos (‘which house’) for hou (‘whose house’), and some have ean for eanper, without changing the sense.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The church is God's house, the household over which the Son presides. Membership is described in terms of continuing confidence and hope, not only of past entry."
+        },
+        {
+          "id": "perseverance",
+          "note": "The condition does not make belonging uncertain in God's sight, but it names the evidence of belonging: holding fast. The chapter note sets out the Reformed, Arminian, and ‘means of perseverance’ readings."
+        }
+      ],
+      "refs": ["1 Timothy 3:15", "1 Peter 2:5", "Hebrews 10:21-23", "Hebrews 3:14", "Ephesians 2:19"]
+    },
+    {
+      "v": "7-8",
+      "context": "The second warning passage begins with a long quotation from Psalm 95, introduced as what the Holy Spirit says now. The psalm calls the hearers not to harden their hearts as Israel did in the wilderness. Everything in 3:12-4:11 is commentary on it.",
+      "grammar": "Dio (‘therefore’) connects the quotation to the condition of verse 6. Kathōs legei to pneuma to hagion, ‘as the Holy Spirit says’, uses a present tense: the Spirit is speaking now, not only in David's day. Sēmeron (‘today’) stands first, the word the author will expound. Ean ... akousēte (‘if you hear’) is a third class condition, a real possibility. Mē sklērunēte (‘do not harden’) is an aorist subjunctive of prohibition. En tō parapikrasmō, ‘in the provocation’, and tou peirasmou, ‘of the testing’, translate place names in the Hebrew.",
+      "words": ["G1352", "G4151G", "G4594", "G0191", "G4645", "G2588", "G3894", "G3986H"],
+      "ot": [
+        {
+          "ref": "Psalm 95:7-8",
+          "note": "The Hebrew reads ‘Today, if you hear his voice, do not harden your hearts as at Meribah, as on the day of Massah in the wilderness’, naming the places where Israel quarreled over water (Exodus 17:1-7; Numbers 20:1-13). The Septuagint (Psalm 94:7-8) translated the names by their meanings, ‘as in the embitterment, as in the day of the testing’, which turns local history into a general warning, and Hebrews follows the Greek. The psalm itself is a call to worship (95:1-7) that turns abruptly to warning, a pattern Hebrews reproduces."
+        }
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Scripture is introduced as the present speech of the Holy Spirit. The verse gives one of the New Testament's clearest statements that the Spirit speaks through the Old Testament to later readers."
+        },
+        {
+          "id": "spirit",
+          "note": "The Spirit is the speaker of Scripture, addressing each generation with the same ‘today’. His voice is heard in the reading of the text."
+        }
+      ],
+      "refs": ["Psalm 95:7-8", "Exodus 17:1-7", "Numbers 20:1-13", "Hebrews 10:15", "2 Peter 1:21"]
+    },
+    {
+      "v": "9",
+      "context": "The psalm continues: the fathers tested God and saw his works for forty years. The irony is sharp: they saw his works for four decades and still tested him.",
+      "grammar": "Hou (‘where’) refers to the wilderness. Epeirasan (‘they tested’) is aorist. En dokimasia, ‘by testing’ or ‘in scrutiny’, is a noun where the Septuagint had a verb (edokimasan, ‘they tried’). Kai eidon ta erga mou tesserakonta etē, ‘and saw my works forty years’: in Hebrews the forty years attach to the seeing, not to God's anger, because verse 10 adds ‘therefore’ after ‘forty years’.",
+      "words": ["G3985H", "G3962", "G6020", "G1492H", "G2041"],
+      "ot": [
+        {
+          "ref": "Psalm 95:9-10",
+          "note": "The Hebrew reads ‘where your fathers tested me, they tried me, though they had seen my work. For forty years I loathed that generation’. The Septuagint (Psalm 94:9-10) keeps the same division: forty years belong to God's anger. Hebrews inserts dio (‘therefore’) so that the forty years attach to Israel's seeing God's works, and then in verse 17, commenting on the passage, returns to the psalm's own division (‘with whom was he angry forty years?’). The change may be deliberate. The rabbis debated the length of the messianic age, and the Babylonian Talmud (Sanhedrin 99a) records Rabbi Eliezer's view that it would last forty years, citing Psalm 95:10. Some commentators suggest the author saw the readers' own period, some decades after Jesus' ministry, as a comparable time of seeing God's works."
+        }
+      ],
+      "refs": ["Psalm 95:9-10", "Numbers 14:22-23", "Deuteronomy 8:2", "Acts 7:36", "Exodus 17:7"]
+    },
+    {
+      "v": "10",
+      "context": "God was angry with that generation and said their hearts always go astray and they have not known his ways. The diagnosis is of the heart and of knowledge: not ignorance of God's works but refusal of his ways.",
+      "grammar": "Prosōchthisa (‘I was angry’, ‘I was provoked’) is a Septuagint verb for deep displeasure. Tē genea tautē, ‘this generation’, is the reading of the major editions; the Septuagint has ekeinē, ‘that generation’, and the BSB's ‘that generation’ follows the psalm's wording. If ‘this’ is original, the author has brought the wilderness generation into the present. Aei planōntai tē kardia, ‘always they go astray in heart’, uses a present passive of planaō, ‘to wander’, which suits the wilderness setting. Ouk egnōsan tas hodous mou, ‘they did not know my ways’, uses ‘know’ in the Hebrew sense of acknowledge and follow.",
+      "words": ["G5062", "G2094", "G1352", "G4360", "G1074", "G4105", "G2588", "G3598"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is traced to a wandering heart and a refusal to acknowledge God's ways, even among people who had seen his works. Experience of God's power did not produce faith."
+        }
+      ],
+      "refs": ["Psalm 95:10", "Isaiah 53:6", "Jeremiah 5:23", "Acts 7:39"]
+    },
+    {
+      "v": "11",
+      "context": "The quotation ends with God's oath in anger: they shall never enter my rest. ‘Rest’ is the word the author will turn over in the next chapter.",
+      "grammar": "Hōs ōmosa (‘as I swore’) may mean ‘so I swore’ (result) or ‘as I swore’. Ei eiseleusontai, literally ‘if they shall enter’, is a Hebrew oath formula carried into Greek: the full form was ‘may such and such happen to me if they enter’, and the curse was left unspoken. The effect is a strong denial, ‘they shall certainly not enter’. Katapausin mou, ‘my rest’, is God's own rest.",
+      "words": ["G3660", "G3709", "G1525", "G2663"],
+      "ot": [
+        {
+          "ref": "Psalm 95:11",
+          "note": "The Hebrew im-yevo'un el-menuchati uses the oath particle im with the same unspoken curse, and menuchah (‘resting place’) is the word for the land as Israel's rest in Deuteronomy 12:9 and for the temple as God's resting place in Psalm 132:8, 14. The Septuagint renders it literally, katapausis. The oath refers to Numbers 14:21-23, 28-30, where God swore that the generation who refused to enter Canaan would die in the wilderness."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's oath shows that his patience with persistent unbelief has limits. The same Scripture that invites ‘today’ also records a day when the invitation closed for a generation."
+        }
+      ],
+      "refs": ["Psalm 95:11", "Numbers 14:21-23", "Deuteronomy 12:9", "Psalm 132:8", "Deuteronomy 1:34-35"]
+    },
+    {
+      "v": "12",
+      "context": "The commentary begins. ‘See to it, brothers’: let no one have an evil, unbelieving heart that turns away from the living God. The author applies the psalm's ‘hearts’ directly to the congregation.",
+      "grammar": "Blepete (‘watch out’) is a present imperative, continual vigilance. Mēpote estai (‘lest there be’) with a future indicative expresses a real fear. Kardia ponēra apistias, ‘an evil heart of unbelief’, uses a genitive of description: an evil heart marked by unbelief. En tō apostēnai, ‘in falling away’, uses aphistēmi, the verb behind ‘apostasy’, which is the outcome of such a heart. Theou zōntos, ‘the living God’, a phrase used four times in Hebrews (3:12, 9:14, 10:31, 12:22), contrasts with dead idols and warns that the one abandoned is alive and active.",
+      "words": ["G0991", "G2588", "G4190", "G0570", "G0868", "G2198"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Unbelief is not treated as an intellectual doubt but as a condition of the heart that turns away from a living person. Faith, correspondingly, is continuing trust in the living God."
+        },
+        {
+          "id": "perseverance",
+          "note": "The warning addresses ‘brothers’ and names apostasy as a real danger. Christian traditions interpret its implications differently, but all take it as spoken to the church, not to outsiders."
+        }
+      ],
+      "refs": ["Hebrews 10:31", "Hebrews 6:4-6", "Jeremiah 17:5", "1 Thessalonians 1:9", "Hebrews 12:15"]
+    },
+    {
+      "v": "13",
+      "context": "The remedy is mutual exhortation every day, as long as it is called ‘Today’, so that no one is hardened by sin's deceit. The ‘today’ of the psalm now defines the whole present time as a season of opportunity.",
+      "grammar": "Parakaleite heautous, ‘encourage yourselves’, uses the reflexive pronoun in the sense of ‘one another’ (a common Hellenistic use). Kath' hekastēn hēmeran, ‘each day’, stresses frequency. Achris hou to sēmeron kaleitai, ‘as long as it is called Today’, treats ‘Today’ almost as a name for the present age. Sklērunthē (‘be hardened’) is aorist passive: hardening happens to a person, and the agent is apatē tēs hamartias, ‘the deceit of sin’, which makes sin a deceiver that promises what it cannot give.",
+      "words": ["G3870", "G1438", "G2250", "G4594", "G4645", "G0539", "G0266"],
+      "text": "The manuscripts differ in the word order of ‘one of you’ (tis ex humōn or ex humōn tis); the meaning is unchanged.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The community is responsible for each member's faith. Daily encouragement is presented as one of the means God uses to keep people from hardening."
+        },
+        {
+          "id": "sin",
+          "note": "Sin works by deceit. Its danger is not only in wrong acts but in the gradual hardening it produces in those who believe its promises."
+        }
+      ],
+      "refs": ["Hebrews 10:24-25", "Ephesians 4:22", "Romans 7:11", "2 Corinthians 6:2", "Galatians 6:1-2"]
+    },
+    {
+      "v": "14",
+      "context": "The reason for vigilance: we have become partners of Christ, if we hold our original confidence firm to the end. The verse parallels verse 6.",
+      "grammar": "Metochoi gar tou Christou gegonamen, ‘for we have become partners of Christ’, uses a perfect tense, a state already established. Metochoi can mean ‘sharers in Christ’ or ‘partners with Christ’, the companions of the anointed king (1:9). Eanper (‘if indeed’) states the condition. Tēn archēn tēs hupostaseōs, ‘the beginning of the assurance’, uses hupostasis, the word translated ‘nature’ in 1:3; here it means the firm confidence with which they began, and 11:1 will use it again for faith as the ‘assurance’ of things hoped for. Mechri telous bebaian (‘firm to the end’) repeats bebaios from 2:2. The relation between the perfect ‘we have become’ and the future-looking condition is at the heart of the perseverance debate: persevering shows that they have become partners.",
+      "words": ["G3353", "G5547", "G1096", "G1437", "G0746", "G5287", "G5056", "G0949", "G2722"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith that began must be held to the end. The verse ties sharing in Christ to faith that lasts, whatever tradition one follows in explaining how the condition relates to God's keeping."
+        },
+        {
+          "id": "union",
+          "note": "Believers are ‘partners of Christ’, sharing in him and in his kingdom. The union is real and already begun, which is why the call to hold fast is so serious."
+        }
+      ],
+      "refs": ["Hebrews 3:6", "Hebrews 11:1", "Hebrews 1:9", "Colossians 1:23", "Matthew 24:13"]
+    },
+    {
+      "v": "15",
+      "context": "The author repeats the psalm's opening lines as the text for the questions that follow. The quotation acts as a heading for verses 16 to 19.",
+      "grammar": "En tō legesthai, ‘in its being said’, is an articular infinitive that may connect backward (holding firm while it is said, ‘Today’) or forward (as the introduction to the questions of verse 16). Editors and translators differ over the punctuation. The quotation itself repeats verses 7 and 8 exactly.",
+      "words": ["G3004G", "G4594", "G5456G", "G4645", "G3894"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The repetition of the psalm underlines that Scripture's ‘today’ is spoken again and again to each new generation, and that each must hear it for itself."
+        }
+      ],
+      "refs": ["Psalm 95:7-8", "Hebrews 3:7-8", "Hebrews 4:7", "2 Corinthians 6:2"]
+    },
+    {
+      "v": "16",
+      "context": "Three pairs of questions and answers (verses 16 to 18) identify who failed: not outsiders, but the very people Moses led out of Egypt. The redeemed themselves rebelled.",
+      "grammar": "The first word, tines, can be accented two ways, and ancient manuscripts had no accents. Read as tines (indefinite), it means ‘some heard and rebelled, but not all’, which is how the King James Version took it (‘some, when they had heard, did provoke’), thinking of Joshua and Caleb. Read as tines (interrogative), it means ‘who heard and rebelled?’, answered by ‘was it not all?’, which matches the question and answer pattern of verses 17 and 18. Modern editions and translations follow the interrogative. Parepikranan (‘they rebelled’, ‘provoked’) is the verb behind parapikrasmos in verse 8.",
+      "words": ["G5101", "G0191", "G3893", "G1831", "G0125", "G3475"],
+      "text": "The shift from the King James Version's ‘some ... not all’ to modern Bibles' ‘who ... all’ is not a manuscript difference but a matter of accenting the same Greek letters.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Those who failed had experienced the exodus. Rescue from Egypt did not guarantee arrival in the land, which is the point the author presses on readers who have experienced Christian beginnings."
+        }
+      ],
+      "refs": ["Numbers 14:1-4", "1 Corinthians 10:1-5", "Jude 1:5", "Numbers 14:30"]
+    },
+    {
+      "v": "17",
+      "context": "With whom was God angry for forty years? With those who sinned, whose bodies fell in the wilderness. The wording comes from God's sentence in Numbers 14.",
+      "grammar": "Here the author follows the psalm's own linking of forty years with God's anger (prosōchthisen tesserakonta etē), unlike verses 9 and 10. Tois hamartēsasin (‘those who sinned’) is an aorist participle. Hōn ta kōla epesen en tē erēmō, ‘whose corpses fell in the wilderness’, uses kōlon, originally a limb, and in the plural a corpse, a word taken from the Septuagint of Numbers 14:29 and 32.",
+      "words": ["G4360", "G5062", "G2094", "G0264", "G2966", "G4098", "G2048"],
+      "ot": [
+        {
+          "ref": "Numbers 14:29",
+          "note": "After the people refused to enter Canaan at Kadesh, God declared that their corpses would fall in the wilderness, all those twenty years old and upward, except Caleb and Joshua. The Hebrew pigreikhem (‘your corpses’) is rendered by the Septuagint ta kōla humōn, the same word Hebrews uses. The author draws his vocabulary from the story the psalm summarizes."
+        }
+      ],
+      "refs": ["Numbers 14:29-35", "1 Corinthians 10:5", "Psalm 106:24-26", "Deuteronomy 2:14-16"]
+    },
+    {
+      "v": "18-19",
+      "context": "The last question and the conclusion. God swore that the disobedient would not enter his rest, and the author concludes that they could not enter because of unbelief. Disobedience (verse 18) and unbelief (verse 19) describe the same failure from two sides.",
+      "grammar": "Ōmosen mē eiseleusesthai, ‘he swore that they should not enter’, puts the oath of the psalm in indirect speech. Tois apeithēsasin (‘those who disobeyed’) comes from apeitheō, which can mean either disobey or refuse to believe; the next verse's apistia (‘unbelief’) shows the two are one. Ouk ēdunēthēsan (‘they were not able’) makes their failure an inability, the consequence of unbelief. Di' apistian (‘because of unbelief’) stands last for emphasis.",
+      "words": ["G3660", "G1525", "G2663", "G0544", "G1410", "G0570"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Entrance into God's rest is by faith, and unbelief shuts people out. In Hebrews, unbelief and disobedience are two names for one refusal to trust God's word."
+        },
+        {
+          "id": "judgment",
+          "note": "God's oath was executed on a whole generation. The author uses their story not to frighten for its own sake but to show what is at stake in the readers' present choice."
+        }
+      ],
+      "refs": ["Numbers 14:22-23", "Hebrews 4:6", "Hebrews 11:6", "Romans 11:20", "John 3:36"]
+    }
+  ]
+}

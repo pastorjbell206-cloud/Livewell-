@@ -1,0 +1,443 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The road from Jericho ends at the Mount of Olives, facing the city. At Bethphage Jesus sends two disciples ahead, the first act of an entry he arranges himself. The last week of Matthew's story begins here.",
+      "grammar": "Hote ēngisan eis Hierosoluma, ‘when they drew near to Jerusalem’, uses engizō, the verb of the kingdom's approach (3:2, 4:17, 10:7): as Jesus nears the city, the kingdom he announced draws near to it. Kai ēlthon eis Bēthphagē eis to oros tōn elaiōn, ‘and came to Bethphage, to the Mount of Olives’, piles up place names in approach. Tote, ‘then’, is Matthew's favorite connective, and apesteilen, ‘sent’, is an aorist of apostellō, the verb that names an apostle.",
+      "words": ["G1448", "G2414", "G0967", "G3735", "G1638", "G0649"],
+      "history": "The site of Bethphage is not certain; its name is usually explained from Aramaic as ‘house of unripe figs’, and it lay on the eastern slopes of the Mount of Olives near Bethany. The mount rises across the Kidron Valley from the temple. Zechariah 14:4 pictures the LORD's feet standing on it on the day he comes to fight for Jerusalem, and Josephus tells of an Egyptian prophet in the 50s who gathered a following there, promising that the city's walls would fall at his command (Antiquities 20.169-172).",
+      "text": "The critical editions read eis to oros, ‘to the Mount’; the Textus Receptus has pros to oros, ‘toward the Mount’. The difference is one of preposition only.",
+      "parallels": ["Mark 11:1", "Luke 19:28-29", "John 12:12"],
+      "refs": ["Zechariah 14:4", "Matthew 24:3", "Acts 1:12"]
+    },
+    {
+      "v": "2-3",
+      "context": "Jesus tells the two disciples they will find a donkey tied with her colt beside her, and they are to untie both and bring them. If anyone objects, they are to say the Lord needs them, and the owner will send them at once. Matthew alone mentions the mother as well as the colt.",
+      "grammar": "Heurēsete onon dedemenēn kai pōlon met' autēs, ‘you will find a donkey tied, and a colt with her’: onos is feminine here, a she-donkey, and dedemenēn, ‘tied’, is a perfect passive participle. Lusantes agagete moi, ‘untie and bring to me’, pairs an aorist participle with an aorist imperative. Ho kurios autōn chreian echei, ‘the Lord has need of them’, can be heard as a simple claim of the teacher on a follower's property or, in Matthew's usage, as Jesus naming himself Lord. Euthus de apostelei autous, ‘and at once he will send them’, is a future: the owner will release them. In Mark 11:3 the present apostellei with palin, ‘back’, makes Jesus the one who returns the colt.",
+      "words": ["G2147", "G3688", "G1210", "G4454", "G3089", "G2962G", "G5532", "G0649"],
+      "ot": [
+        {
+          "ref": "Genesis 49:11",
+          "note": "Jacob's blessing of Judah pictures the ruler from Judah's line, after the promise that the scepter will not depart from Judah (49:10), tying his donkey to the vine and ‘his donkey's son’ (Hebrew beni atono) to the choice branch. The Septuagint renders the colt ton pōlon tēs onou autou. Matthew does not cite the verse, but the tied donkey and colt may echo it, and Justin Martyr in the second century linked Genesis 49:11 with this scene (First Apology 32; Dialogue with Trypho 53). The allusion is possible rather than certain."
+        }
+      ],
+      "parallels": ["Mark 11:2-3", "Luke 19:30-31"],
+      "refs": ["Genesis 49:10-11", "1 Kings 1:33", "Zechariah 9:9"]
+    },
+    {
+      "v": "4-5",
+      "context": "Matthew stops the story to say what it means. The arrangement fulfills a prophecy that joins Isaiah 62:11 and Zechariah 9:9: Zion's king comes to her gentle, riding on a donkey and a colt. The quotation interprets everything that follows in the chapter: this is a king, and a humble one.",
+      "grammar": "Touto de gegonen hina plērōthē to rhēthen dia tou prophētou legontos, ‘this has happened so that what was spoken through the prophet might be fulfilled’, is one of Matthew's fulfillment formulas (1:22, 2:15, 2:17, 2:23, 4:14, 8:17, 12:17, 13:35, 27:9). The perfect gegonen presents the event as standing accomplished. In the quotation, idou ho basileus sou erchetai soi, ‘behold, your king comes to you’, uses a present of arrival. Praus, ‘gentle’, is the word of 5:5 and 11:29. Epibebēkōs, ‘mounted’, is a perfect participle, a king already seated. Epi onon kai epi pōlon huion hupozugiou, ‘on a donkey and on a colt, the son of a beast of burden’, repeats epi before each animal; huion, ‘son’, renders the Hebrew ben, ‘foal’.",
+      "words": ["G1096", "G4137", "G4396", "G2364", "G0935", "G4235", "G1910", "G3688", "G4454", "G5268"],
+      "text": "The Textus Receptus reads touto de holon gegonen, ‘all this was done’, the wording of the King James Version, which matches 1:22 and 26:56; the earliest manuscripts lack ‘all’. Matthew does not name the prophet, and the quotation in fact combines two.",
+      "ot": [
+        {
+          "ref": "Zechariah 9:9",
+          "note": "The Hebrew calls the daughter of Zion to rejoice greatly, because her king comes, tsaddiq venosha, ‘righteous and saved (or victorious)’, ani, ‘humble’ or ‘afflicted’, riding al-chamor ve'al-ayir ben-atonot, ‘on a donkey, on a colt, the foal of she-donkeys’. The next verse says he will cut off chariot and war horse and speak peace to the nations. The Septuagint has dikaios kai sōzōn, praus, and epi hupozugion kai pōlon neon, ‘on a beast of burden and a young colt’. Matthew omits ‘righteous and having salvation’, keeps praus from the Greek, and renders the animals closer to the Hebrew (onos for chamor, ‘son’ for ben) while taking hupozugion from the Septuagint. His two animals are discussed in the chapter note's hard question: most commentators hold that he knew Hebrew parallelism and followed an interpretive habit that made each line count, or that he reports a real second animal."
+        },
+        {
+          "ref": "Isaiah 62:11",
+          "note": "The opening words come from Isaiah, where the LORD proclaims to the ends of the earth, ‘Say to the daughter of Zion, Behold, your salvation comes’ (Hebrew hinneh yish'ekh ba). The Septuagint has idou soi ho sōtēr paraginetai, ‘behold, your savior arrives’. Matthew replaces Zechariah's ‘Rejoice greatly’ with Isaiah's ‘Say to the daughter of Zion’, turning a call to celebrate into a message to be announced, and Isaiah's context (the watchmen on Jerusalem's walls, the road prepared for the people's return, 62:6-10) sets the king's arrival within the hope of Zion's salvation."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus enters as Israel's king by fulfilling the prophecy of a king who comes gentle and on a donkey, not a war horse. His messiahship is claimed openly and defined at once: it rules by humility and brings the peace of Zechariah 9:10."
+        }
+      ],
+      "parallels": ["John 12:14-15"],
+      "refs": ["Zechariah 9:9-10", "Isaiah 62:11", "Matthew 11:29", "Matthew 5:5"]
+    },
+    {
+      "v": "6-7",
+      "context": "The disciples do exactly as Jesus directed, bring the donkey and the colt, lay their cloaks on them, and Jesus sits on them. Obedience to Jesus' word and fulfillment of the prophet's word are placed side by side.",
+      "grammar": "Poiēsantes kathōs sunetaxen autois ho Iēsous, ‘having done as Jesus directed them’, uses suntassō, ‘arrange, direct’, which Matthew uses again when the disciples prepare the Passover as Jesus directed (26:19) and at the potter's field (27:10). Epethēkan ep' autōn ta himatia, ‘they put their cloaks on them’, and epekathisen epanō autōn, ‘he sat on them’, both use the plural pronoun autōn. The nearest plural in the second clause is ta himatia, ‘the cloaks’, so ‘he sat on them’ may mean on the cloaks; many commentators read it that way, others as a loose way of saying he rode the animals, one of them carrying him.",
+      "words": ["G4198", "G4929", "G0071", "G3688", "G4454", "G2440", "G1940", "G1883"],
+      "history": "Spreading cloaks under a new king was an act of homage: when Jehu was proclaimed king, the officers spread their garments under him on the steps (2 Kings 9:13). David had Solomon ride his own mule to his anointing (1 Kings 1:33-40), so riding into the city was itself a royal sign for anyone who knew those stories.",
+      "parallels": ["Mark 11:4-7", "Luke 19:32-35"],
+      "refs": ["2 Kings 9:13", "1 Kings 1:33-40", "Matthew 26:19"]
+    },
+    {
+      "v": "8",
+      "context": "The crowd joins the homage, spreading cloaks on the road, while others cut branches and spread them too. The procession becomes a royal welcome.",
+      "grammar": "Ho de pleistos ochlos, ‘the very large crowd’, uses a superlative that can mean ‘very large’ or ‘most of the crowd’. Estrōsan heautōn ta himatia, ‘spread their own cloaks’, is an aorist, and the next two verbs are imperfects, ekopton kladous ... kai estrōnnuon, ‘were cutting branches ... and were spreading them’, painting a continuing scene. Matthew's klados is a general word for a branch; John specifies palm branches (John 12:13), and Mark has leafy branches cut from the fields (Mark 11:8).",
+      "words": ["G4118", "G3793", "G4766", "G2440", "G2875", "G2798", "G1186"],
+      "history": "Branches were carried at moments of national deliverance. When Simon the Maccabee took the citadel of Jerusalem in 141 BC, the people entered with praise, palm branches, and songs (1 Maccabees 13:51), and branches were carried at the rededication of the temple in 164 BC (2 Maccabees 10:7), the feast later known as Hanukkah. At the Feast of Tabernacles worshipers carried the lulav, a bundle of palm, myrtle, and willow (Leviticus 23:40).",
+      "parallels": ["Mark 11:8", "Luke 19:36", "John 12:13"],
+      "refs": ["Leviticus 23:40", "2 Kings 9:13"]
+    },
+    {
+      "v": "9",
+      "context": "The crowds before and behind Jesus shout words from Psalm 118, the pilgrim psalm of the great feasts, with Matthew's addition ‘to the Son of David’. The welcome that priests gave every pilgrim is given to Jesus as David's heir. Only Matthew's crowd uses the title.",
+      "grammar": "Hoi proagontes auton kai hoi akolouthountes, ‘those going ahead of him and those following’, surround Jesus with the procession. Ekrazon, ‘they were crying out’, is an imperfect of repeated shouting. Hōsanna is a Greek spelling of the Hebrew hoshi'ah na, ‘save, please’; by Jesus' day it had become a shout of praise, which is why it can take a dative, tō huiō Dauid, ‘to the Son of David’, like an acclamation. Eulogēmenos ho erchomenos en onomati kuriou, ‘blessed is the one who comes in the name of the Lord’, uses a perfect passive participle and matches the Septuagint exactly. Hōsanna en tois hupsistois, ‘Hosanna in the highest’, calls on the heights of heaven to join the praise, the language of Psalm 148:1 in the Septuagint and of the angels in Luke 2:14.",
+      "words": ["G3793", "G4254", "G0190", "G2896", "G5614", "G1138", "G2127", "G5310"],
+      "ot": [
+        {
+          "ref": "Psalm 118:25-26",
+          "note": "Psalm 118 closes the Hallel (Psalms 113 to 118), sung at Passover and the other pilgrim feasts. Verse 25 pleads anna YHWH hoshi'ah na, ‘Please, LORD, save us’, and verse 26 is the priests' blessing on the one who arrives at the temple, barukh habba beshem YHWH, ‘blessed is he who comes in the name of the LORD’. The Septuagint (Psalm 117:25-26) translates the plea as ō kurie, sōson dē, ‘O Lord, save now’, and does not transliterate it; the Gospels keep the Hebrew word as a cry of praise. The Mishnah says worshipers shook their branches at these words during Tabernacles (m. Sukkah 3:9). Jesus will quote verse 26 again when he laments over Jerusalem (23:39) and verse 22 in this chapter (verse 42)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The crowd applies to Jesus a psalm of the king's victorious entry to the temple and names him Son of David. The acclamation is true beyond their understanding: the plea ‘save, please’ will be answered by the one they hail, through the death he has foretold."
+        },
+        {
+          "id": "worship",
+          "note": "The crowd's words passed into Christian worship. The Didache's table prayer already cries ‘Hosanna to the God of David’ (Didache 10:6), and the Sanctus and Benedictus of the eucharistic liturgy sing ‘Hosanna in the highest’ and ‘Blessed is he who comes’, so the church greets Christ at the table with the words that greeted him at the gate."
+        }
+      ],
+      "parallels": ["Mark 11:9-10", "Luke 19:37-38", "John 12:13"],
+      "refs": ["Psalm 118:25-26", "Matthew 23:39", "Psalm 148:1", "Luke 2:14"]
+    },
+    {
+      "v": "10-11",
+      "context": "As Jesus enters, the whole city is shaken and asks who he is. The crowds answer that this is the prophet Jesus from Nazareth in Galilee. The question is the one the chapter and the week will answer; the crowds' reply is true and incomplete.",
+      "grammar": "Eiselthontos autou, ‘when he entered’, is a genitive absolute. Eseisthē pasa hē polis, ‘the whole city was shaken’, uses seiō, the verb of an earthquake; Matthew uses the same verb when the earth shakes at Jesus' death (27:51) and when the guards shake at the tomb (28:4), and the noun seismos for the storm on the lake (8:24). Tis estin houtos, ‘who is this?’, echoes the disciples' question after the storm, ‘what kind of man is this?’ (8:27). The crowds' reply, houtos estin ho prophētēs Iēsous ho apo Nazareth tēs Galilaias, uses the article, ‘the prophet’, which may point to the prophet like Moses promised in Deuteronomy 18:15.",
+      "words": ["G1525", "G4579", "G4172", "G4396", "G3478", "G1056G"],
+      "history": "Jerusalem swelled at Passover with pilgrims from Galilee and the Diaspora. A Galilean prophet hailed as David's son would have been noticed by the priestly authorities and by the Roman prefect, who came up to the city at the feast with troops to keep order. Matthew has already said that Jerusalem was troubled when the magi asked for the newborn king (2:3).",
+      "parallels": ["Mark 11:11"],
+      "refs": ["Matthew 2:3", "Matthew 8:27", "Deuteronomy 18:15", "Matthew 16:13-16", "John 7:40"]
+    },
+    {
+      "v": "12",
+      "context": "In Matthew the king goes straight from the procession to the temple. He drives out all who were buying and selling in its courts and overturns the tables of the money changers and the seats of the dove sellers. The act is a prophetic sign by the one who has just been hailed as Son of David.",
+      "grammar": "Eisēlthen ... eis to hieron, ‘entered the temple’, uses hieron, the whole temple precinct with its courts, not naos, the sanctuary building. Exebalen, ‘he drove out’, is the verb Matthew uses for casting out demons (8:16, 12:28). Tous pōlountas kai agorazontas, ‘those selling and buying’, puts both sides of the trade under judgment. Katestrepsen, ‘overturned’, takes both objects, the trapezas tōn kollubistōn, ‘tables of the money changers’, and the kathedras, ‘seats’, of those selling doves. Kollubistēs comes from kollubos, a small coin or exchange fee.",
+      "words": ["G1525", "G2411", "G1544", "G4453", "G0059", "G5132", "G2855", "G2690", "G2515", "G4058"],
+      "history": "Every Jewish man owed a yearly half-shekel for the temple (Exodus 30:13). The Mishnah says tables were set up in the temple on the twenty-fifth of Adar, about three weeks before Passover (m. Shekalim 1:3), and it names the surcharge charged on the exchange the kolbon (m. Shekalim 1:6), a word from the same Greek root as the money changers' name. Doves were the offering of the poor (Leviticus 12:8), and the trade probably stood in the outer court, near Herod's Royal Stoa on the southern side of the platform.",
+      "text": "The King James Version reads ‘the temple of God’, following later manuscripts; the earliest, including Codex Sinaiticus and Codex Vaticanus, read ‘the temple’.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Jesus acts with the authority of the temple's Lord, judging its business by its calling. Malachi had promised that the Lord would suddenly come to his temple and refine it (Malachi 3:1-3), and Matthew has already identified John as the messenger sent ahead of him (11:10)."
+        }
+      ],
+      "parallels": ["Mark 11:15-16", "Luke 19:45", "John 2:13-16"],
+      "refs": ["Malachi 3:1-3", "Exodus 30:13", "Leviticus 12:8", "Zechariah 14:21"]
+    },
+    {
+      "v": "13",
+      "context": "Jesus explains the act with two prophets. God's house is to be called a house of prayer (Isaiah 56:7), but they are making it a den of robbers (Jeremiah 7:11). The quotation turns a disruption of trade into a charge against the way the temple is being used.",
+      "grammar": "Gegraptai, ‘it stands written’, is a perfect passive, Scripture's word still in force (4:4, 7, 10). Ho oikos mou oikos proseuchēs klēthēsetai, ‘my house will be called a house of prayer’, is a future passive: what God has declared the house will be called. Humeis de auton poieite spēlaion lēstōn, ‘but you are making it a den of robbers’, sets the emphatic humeis, ‘you’, against God's ‘my house’, and the present poieite describes what is going on. Lēstēs is a robber or bandit, and a spēlaion is a cave, the hideout where robbers retreat after their crimes.",
+      "words": ["G1125", "G3624G", "G4335", "G2564G", "G4160G", "G4693", "G3027"],
+      "text": "The critical editions read the present poieite, ‘you are making’; the Textus Receptus has the aorist epoiēsate, ‘you have made’, the King James Version's ‘ye have made it a den of thieves’.",
+      "ot": [
+        {
+          "ref": "Isaiah 56:7",
+          "note": "The Hebrew promises that foreigners who join themselves to the LORD will be brought to his holy mountain, ki veiti beit-tefillah yiqqare lekhol ha'ammim, ‘for my house will be called a house of prayer for all the peoples’. Matthew's wording follows the Septuagint but stops before its last phrase, pasin tois ethnesin, ‘for all the nations’, which Mark keeps (Mark 11:17) and Luke also omits. Some interpreters suggest the omission reflects the temple's destruction by the time Matthew wrote; others that Matthew focuses the charge on the robbers' den. The same chapter of Isaiah promises eunuchs a name in God's house (56:3-5), the background of 19:12."
+        },
+        {
+          "ref": "Jeremiah 7:11",
+          "note": "Jeremiah stood in the temple gate and warned people who stole, murdered, and committed adultery and then came to the temple saying they were safe. The Hebrew asks hame'arat paritsim hayah habbayit hazzeh, ‘has this house become a cave of violent men in your eyes?’, and the Septuagint has spēlaion lēstōn, Matthew's phrase. A den is not where robbers rob but where they hide, so the charge is that the temple was being used as a refuge that let injustice feel safe. Jeremiah went on to say God would do to this house what he did to Shiloh (7:12-14), and Jesus will announce the temple's fall (24:1-2)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The temple's calling is prayer, communion with God open to all who come, and Jesus judges its practice by that calling. Worship that becomes a shelter for injustice has lost what makes a house God's."
+        }
+      ],
+      "parallels": ["Mark 11:17", "Luke 19:46"],
+      "refs": ["Isaiah 56:7", "Jeremiah 7:11", "Jeremiah 7:12-14", "Matthew 24:1-2"]
+    },
+    {
+      "v": "14",
+      "context": "Only Matthew records that the blind and the lame came to Jesus in the temple and he healed them. The courts just cleared of traders are filled with the people who had been kept at a distance, and the Son of David heals where David's saying had shut them out.",
+      "grammar": "Prosēlthon autō tuphloi kai chōloi, ‘blind and lame came to him’, puts the two groups without articles, any who were blind or lame. En tō hierō, ‘in the temple’, repeats the place where the traders had been. Etherapeusen autous, ‘he healed them’, is the aorist Matthew uses in his summaries of Jesus' healing (4:24, 12:15, 15:30, 19:2).",
+      "words": ["G4334", "G5185", "G5560", "G2411", "G2323"],
+      "history": "A saying attached to David's capture of Jerusalem declared that the blind and the lame would not come into the house (2 Samuel 5:8), and the Septuagint makes it ‘the house of the Lord’ (eis oikon kuriou). Priests with such defects could not serve at the altar (Leviticus 21:18), the Temple Scroll from Qumran barred the blind from the city of the sanctuary (11QTemple 45:12-14), and the Mishnah exempts the lame and the blind from the duty to appear at the pilgrim feasts (m. Hagigah 1:1). The Son of David reverses the exclusion attached to David's name.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "Jesus makes the temple what Isaiah said it would be, a house where those once excluded are welcomed. Healing the blind and the lame in its courts is the positive side of the judgment in verses 12 and 13, and it matches the signs he gave John's disciples (11:5)."
+        }
+      ],
+      "refs": ["2 Samuel 5:8", "Leviticus 21:18", "Isaiah 35:5-6", "Matthew 11:5", "Matthew 15:30-31"]
+    },
+    {
+      "v": "15-16",
+      "context": "The chief priests and scribes see the wonders he does and hear children in the temple courts still shouting ‘Hosanna to the Son of David’, and they are indignant. They ask Jesus whether he hears it. He answers with Psalm 8: God has prepared praise from the mouths of infants. The scene, found only in Matthew, sets the authorities' anger against the children's praise.",
+      "grammar": "Ta thaumasia ha epoiēsen, ‘the wonderful things he did’, uses thaumasios, which occurs only here in the New Testament; the Septuagint uses it for God's wonders, and the root returns in verse 42, where the Lord's doing is thaumastē, ‘marvelous in our eyes’. Tous paidas tous krazontas, ‘the children crying out’, uses pais, ‘child’ or ‘servant’. Ēganaktēsan, ‘they were indignant’, is the verb used of the ten in 20:24. Nai, ‘yes’, is Jesus' one-word answer. Oudepote anegnōte, ‘have you never read?’, is his reproach to scholars (compare verse 42). Katērtisō ainon, ‘you have prepared praise’, is an aorist middle of katartizō, ‘prepare, make complete’, the middle suggesting God prepares it for himself.",
+      "words": ["G0749", "G1122", "G2297", "G3816", "G2896", "G5614", "G0023", "G3483", "G0314", "G3516", "G2337", "G2675", "G0136"],
+      "ot": [
+        {
+          "ref": "Psalm 8:2",
+          "note": "The Hebrew reads mippi olelim veyoneqim yissadta oz, ‘from the mouth of children and nursing infants you have established strength’, and continues ‘because of your foes, to silence the enemy and the avenger’. The Septuagint (Psalm 8:3 in its numbering) has ek stomatos nēpiōn kai thēlazontōn katērtisō ainon, ‘you have prepared praise’, and Matthew quotes the Greek word for word. In the psalm the strength or praise of infants silences God's enemies; the leaders who object hear themselves cast in the enemies' part. The psalm praises the LORD whose name is majestic in all the earth, and Jesus accepts for himself the praise the psalm gives to God. Matthew has already shown God revealing his ways to nēpioi, ‘little children’, rather than to the wise (11:25)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "God is praised by those who have nothing to offer, and he takes their praise as his own work. The verse joins the earlier welcome of children (19:14) with the children's hosannas: the kingdom's worship rises from the least."
+        }
+      ],
+      "refs": ["Psalm 8:1-2", "Matthew 11:25", "Matthew 19:14", "1 Corinthians 1:27"]
+    },
+    {
+      "v": "17",
+      "context": "Jesus leaves the leaders, goes out of the city to Bethany, and spends the night there. The pattern of the week is set: days in the temple, nights outside the city.",
+      "grammar": "Katalipōn autous, ‘having left them’, uses kataleipō, the verb of leaving in 19:5 and a hint of judgment: he leaves the objectors behind. Exēlthen exō tēs poleōs, ‘went out outside the city’, doubles the idea of going out. Ēulisthē ekei, ‘he lodged there’, is an aorist of aulizomai, ‘spend the night’, which can mean lodging in a house or camping in the open; Luke says Jesus spent his nights that week on the Mount of Olives (Luke 21:37).",
+      "words": ["G2641", "G1831", "G4172", "G0963", "G0835"],
+      "history": "Bethany lay about 3 kilometers (under 2 miles) from Jerusalem on the eastern slope of the Mount of Olives (John 11:18). It was the village of Mary, Martha, and Lazarus, and Matthew will set the anointing of Jesus there in the house of Simon the leper (26:6). Crowded pilgrim seasons pushed many visitors into the surrounding villages.",
+      "parallels": ["Mark 11:11"],
+      "refs": ["John 11:18", "Matthew 26:6", "Luke 21:37"]
+    },
+    {
+      "v": "18-19",
+      "context": "Returning to the city in the morning, Jesus is hungry, sees a fig tree by the road, finds nothing on it but leaves, and says no fruit will ever come from it again. The tree withers at once. Coming straight after the temple action, the curse is an acted parable of judgment on show without fruit.",
+      "grammar": "Epeinasen, ‘he was hungry’, is the verb of 4:2, when he was hungry after the fast; the Messiah's hunger is real. Sukēn mian, ‘one fig tree’, uses heis as an indefinite article, ‘a fig tree’. Ouden heuren en autē ei mē phulla monon, ‘found nothing on it except leaves only’, stresses the emptiness with monon. The curse, mēketi ek sou karpos genētai eis ton aiōna, ‘let no fruit come from you anymore forever’, uses mē with an aorist subjunctive as a prohibition in the third person, where Mark has the rarer optative (Mark 11:14). Kai exēranthē parachrēma, ‘and it withered at once’, uses parachrēma, common in Luke but found in Matthew only here and in verse 20.",
+      "words": ["G4404", "G3983", "G4808", "G3598", "G5444", "G3371", "G2590", "G3583", "G3916"],
+      "history": "Fig trees near Jerusalem put out leaves in spring, around Passover, together with small early knobs (Hebrew paggim) that were sometimes eaten; the ripe figs came in early summer and the main crop in late summer. Mark adds that it was not the season for figs (Mark 11:13), which Matthew omits. A tree in full leaf promised something it did not have. Matthew's account has the tree wither on the spot, where Mark spreads the curse and the withering over two days with the temple action between.",
+      "ot": [
+        {
+          "ref": "Jeremiah 8:13",
+          "note": "The Hebrew reads ein te'enim batte'enah vehe'aleh navel, ‘no figs on the fig tree, and the leaf withers’, in an oracle of judgment on Judah for rejecting the LORD's word. The Septuagint has ouk estin suka en tais sukais kai ta phulla katerruē, ‘there are no figs on the fig trees and the leaves have fallen’. Hosea 9:10 pictures God finding Israel like the first fruit on the fig tree, and Micah 7:1 longs for an early fig and finds none. Jesus acts out an image the prophets had spoken, and Matthew places it between the temple action and the challenge to his authority."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The fig tree is judged for leaves without fruit, the same measure Jesus applies in the tenants parable (verses 34, 41, 43). The warning falls on religious life that displays signs of health and gives God nothing he is looking for, and Matthew aims it at the temple's keepers in the verses that follow."
+        }
+      ],
+      "parallels": ["Mark 11:12-14", "Mark 11:20"],
+      "refs": ["Jeremiah 8:13", "Hosea 9:10", "Micah 7:1", "Luke 13:6-9", "Matthew 3:10"]
+    },
+    {
+      "v": "20-22",
+      "context": "The disciples marvel at how quickly the tree withered. Jesus turns their amazement into teaching on faith: with faith and without doubting they could not only do this but tell this mountain to be thrown into the sea, and whatever they ask in prayer, believing, they will receive.",
+      "grammar": "Pōs parachrēma exēranthē hē sukē, ‘how did the fig tree wither at once?’, asks about the manner. Jesus answers with a condition, ean echēte pistin kai mē diakrithēte, ‘if you have faith and do not doubt’: diakrinomai, in the passive, means to be divided in one's own mind, to waver (compare James 1:6). Ou monon to tēs sukēs poiēsete, ‘not only will you do what was done to the fig tree’, uses the neuter article to for ‘the thing of the fig tree’. Arthēti kai blēthēti eis tēn thalassan, ‘be lifted up and be thrown into the sea’, are two aorist passive imperatives. Verse 22 ends with a participle, pisteuontes, ‘believing’, and a future, lēmpsesthe, ‘you will receive’.",
+      "words": ["G2296", "G3916", "G4102G", "G1252", "G3735", "G0142", "G0906G", "G2281", "G0154", "G4335", "G4100", "G2983"],
+      "history": "Moving mountains was a Jewish figure for doing what seems impossible; the Babylonian Talmud calls a brilliant teacher an ‘uprooter of mountains’ (b. Berakhot 64a). Spoken on the Mount of Olives or on the road toward the temple mount, ‘this mountain’ may be proverbial or may point to one of them. Zechariah 14:4 pictures the Mount of Olives split in two on the day of the LORD, and some interpreters connect the saying to the temple mount after the fig tree's judgment; others take it as a general proverb, as in 17:20.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The promise rests on faith in God, not in faith itself. Matthew's Jesus teaches boldness in prayer (7:7-11, 18:19) and also prays in Gethsemane that the Father's will be done (26:39), so the verse encourages undivided trust rather than a technique for getting what one wants."
+        },
+        {
+          "id": "prayer",
+          "note": "Prayer is joined to faith: what is asked believing is received. Matthew leaves out Mark's following saying about forgiving when one prays (Mark 11:25), which he has already given in the Lord's Prayer (6:12, 14-15)."
+        }
+      ],
+      "parallels": ["Mark 11:20-24"],
+      "refs": ["Matthew 17:20", "James 1:6-8", "Matthew 7:7-11", "Matthew 26:39", "1 Corinthians 13:2"]
+    },
+    {
+      "v": "23",
+      "context": "When Jesus returns to the temple courts and teaches, the chief priests and elders of the people challenge him. By what authority is he doing these things, and who gave it to him? ‘These things’ include the entry, the temple action, the healings, and now his teaching in the temple they control.",
+      "grammar": "Elthontos autou eis to hieron prosēlthon autō didaskonti, ‘when he came into the temple, they came to him as he was teaching’, begins with a genitive absolute and then refers to the same person in the dative, a loose construction common in the Gospels. Hoi archiereis kai hoi presbuteroi tou laou, ‘the chief priests and the elders of the people’, is Matthew's phrase for the leaders who will plot and try Jesus (26:3, 26:47, 27:1). En poia exousia, ‘by what kind of authority’, asks about its nature, and tis soi edōken, ‘who gave you’, about its source.",
+      "words": ["G2411", "G1321", "G0749", "G4245G", "G2992", "G4169", "G1849", "G1325"],
+      "history": "The chief priests were the high priest and the leading priestly families who ran the temple; the high priest was Joseph Caiaphas (about AD 18 to 36). The elders were the heads of the city's leading lay families. Together with the scribes they made up the council that governed Jewish affairs under the Roman prefect, and responsibility for order in the temple courts lay with them, which is why the question came from them.",
+      "text": "The critical editions read the genitive absolute elthontos autou, ‘when he came’; the Textus Receptus has the dative elthonti autō, which smooths the grammar.",
+      "parallels": ["Mark 11:27-28", "Luke 20:1-2"],
+      "refs": ["Matthew 7:28-29", "Matthew 28:18", "Matthew 26:3", "John 2:18"]
+    },
+    {
+      "v": "24-25",
+      "context": "Jesus answers with a question of his own: was John's baptism from heaven or from men? If they answer, he will answer. The leaders deliberate privately, and Matthew lets the reader overhear: if they say from heaven, Jesus will ask why they did not believe John.",
+      "grammar": "Erōtēsō humas kagō logon hena, ‘I also will ask you one question’, uses kagō, ‘I too’, to match their question with his. To baptisma to Iōannou pothen ēn, ‘John's baptism, where was it from?’, uses baptisma for John's whole ministry. Ex ouranou ē ex anthrōpōn, ‘from heaven or from men?’, uses ‘heaven’ as a reverent way of saying ‘God’. Dielogizonto en heautois, ‘they were reasoning among themselves’, is an imperfect of deliberation. Dia ti oun ouk episteusate autō, ‘why then did you not believe him?’, uses pisteuō with the dative for believing a messenger's word.",
+      "words": ["G2065", "G1520", "G0908", "G2491G", "G3772", "G1260", "G4100"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Jesus ties his authority to God's messenger who came before him. If John's word was from heaven, the one John announced carries heaven's authority (3:11, 11:10); the question exposes that the leaders' problem is not lack of evidence but unwillingness to receive it."
+        }
+      ],
+      "parallels": ["Mark 11:29-31", "Luke 20:3-5"],
+      "refs": ["Matthew 3:11", "Matthew 11:9-10", "Matthew 17:12", "John 1:6"]
+    },
+    {
+      "v": "26-27",
+      "context": "If they say John's baptism was from men, they fear the crowd, since everyone holds John to be a prophet. So they answer that they do not know, and Jesus declines to tell them by what authority he acts. Their refusal to decide about John is their answer about Jesus.",
+      "grammar": "Phoboumetha ton ochlon, ‘we fear the crowd’, is a present of the leaders' continuing fear, which Matthew repeats in verse 46. Pantes gar hōs prophētēn echousin ton Iōannēn, ‘for all hold John as a prophet’, uses the same construction as 14:5, where Herod feared the crowd because they held John to be a prophet. Ouk oidamen, ‘we do not know’, is a perfect with present meaning, a claim of ignorance that is really a refusal. Jesus answers oude egō legō humin, ‘neither do I tell you’, a present tense: he does not simply decline once but withholds what they will not receive.",
+      "words": ["G5399", "G3793", "G4396", "G2192", "G6063", "G3004G", "G1849"],
+      "history": "John's standing with the people is confirmed by Josephus, who says that when Herod Antipas's army was destroyed by the Nabatean king Aretas IV, some Jews thought it God's just punishment for the killing of John, a good man (Antiquities 18.116-119).",
+      "parallels": ["Mark 11:32-33", "Luke 20:6-8"],
+      "refs": ["Matthew 14:5", "Matthew 21:46", "Luke 7:29-30"]
+    },
+    {
+      "v": "28-30",
+      "context": "Jesus goes on the attack with a parable found only in Matthew. A man with two sons tells each to work in the vineyard. The first refuses, then changes his mind and goes; the second agrees politely and does not go. The story is a question the hearers must answer.",
+      "grammar": "Ti de humin dokei, ‘what do you think?’, is Matthew's characteristic way of inviting a hearer's judgment (17:25, 18:12, 22:17, 22:42, 26:66). Teknon, ‘child’, is an affectionate address. Hupage sēmeron ergazou en tō ampelōni, ‘go, work today in the vineyard’, pairs two present imperatives with ‘today’. The first son's reply, ou thelō, ‘I will not’, is blunt; husteron de metamelētheis apēlthen, ‘but later, having changed his mind, he went’, uses an aorist passive participle of metamelomai, ‘regret, change one's mind’. The second son says egō, kurie, literally ‘I, sir’, an elliptical reply meaning ‘I will’, with the respectful kurie, and then kai ouk apēlthen, ‘and did not go’.",
+      "words": ["G1380", "G5043", "G2038", "G0290", "G2309", "G5306", "G3338", "G0565", "G2962H"],
+      "text": "Manuscripts give three forms of the parable. In the form printed by most modern Bibles, found in Codex Sinaiticus and many others, the first son refuses and then goes, and the second agrees and does not go. In Codex Vaticanus and some other witnesses the order is reversed, the first agreeing and not going, and Westcott and Hort printed that form. In Codex Bezae and some Old Latin manuscripts the first son refuses and then goes, yet the hearers' answer in verse 31 is ‘the last’. All three agree on the point: doing the father's will is what counts.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The first son's change of mind is the parable's picture of repentance, a reversal that issues in obedience. The verb metamelomai, not the usual metanoeō, is also used of Judas's remorse (27:3); here it is regret that goes to the vineyard."
+        }
+      ],
+      "refs": ["Luke 15:11-32", "Matthew 7:21", "James 1:22", "Ezekiel 33:13-16"]
+    },
+    {
+      "v": "31-32",
+      "context": "The leaders answer that the first son did the father's will, and so pronounce their own verdict. Jesus applies it: tax collectors and prostitutes are entering the kingdom of God ahead of them, because John came in the way of righteousness and those outsiders believed him, while the leaders did not change their minds even after seeing it.",
+      "grammar": "Tis ek tōn duo epoiēsen to thelēma tou patros, ‘which of the two did the will of the father?’, uses the language of 7:21 and 12:50, doing the Father's will. Proagousin humas eis tēn basileian tou theou, ‘are going ahead of you into the kingdom of God’, is a present; grammarians disagree whether it leaves room for the leaders to follow later or is a courteous way of saying ‘instead of you’. En hodō dikaiosunēs, ‘in the way of righteousness’, may mean that John taught the righteous way of life (compare Proverbs 8:20) or that he himself walked in it (compare 3:15). The last clause repeats the first son's words exactly: oude metemelēthēte husteron tou pisteusai autō, ‘you did not even change your minds later so as to believe him’, with husteron and metamelomai from verse 29 and a genitive infinitive of result.",
+      "words": ["G2307", "G4413G", "G5057", "G4204", "G4254", "G3598", "G1343", "G3338", "G5306", "G4100"],
+      "history": "Tax collectors bought or contracted the right to collect tolls and customs and were despised as collaborators and cheats; prostitutes were among the most shamed people in the community. Luke also records tax collectors coming to John's baptism (Luke 3:12) and says the people and the tax collectors acknowledged God's justice by being baptized by John, while the Pharisees and lawyers rejected God's purpose for themselves (Luke 7:29-30).",
+      "text": "Where Codex Vaticanus reverses the sons in verses 29 and 30, it has the hearers answer ‘the latter’ (ho husteros); where Codex Bezae keeps the order but has them answer ‘the last’, the leaders would be giving a perverse answer, and the Latin Vulgate also reads ‘the last’ (novissimus). Most editors print ‘the first’, the reading of Sinaiticus.",
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "Repentance is measured by what a person does after hearing God's messenger, not by the respectability of a first answer. The outsiders who said no to God with their lives said yes to John; the leaders who seemed to say yes did not move even when they saw others change."
+        },
+        {
+          "id": "kingdom",
+          "note": "Matthew uses ‘the kingdom of God’ here, one of the few times he departs from ‘kingdom of heaven’ (compare 19:24, 21:43). Its door opens to repentant sinners, and the reversal of 19:30 and 20:16 is now spoken to the city's rulers."
+        }
+      ],
+      "refs": ["Matthew 7:21", "Matthew 3:15", "Luke 7:29-30", "Matthew 9:10-13", "Matthew 11:19"]
+    },
+    {
+      "v": "33",
+      "context": "A second parable follows. A landowner plants a vineyard, builds its wall, winepress, and tower, leases it to tenants, and goes abroad. The opening deliberately echoes Isaiah's song of the vineyard, so that hearers know from the first line that the story is about Israel and those entrusted with it.",
+      "grammar": "Allēn parabolēn akousate, ‘hear another parable’, is an aorist imperative calling for attention. Anthrōpos ēn oikodespotēs, ‘there was a man, a householder’, uses the same doubled phrase as 20:1. A string of aorists describes the owner's care: ephuteusen, ‘planted’; phragmon autō periethēken, ‘put a fence around it’; ōruxen en autō lēnon, ‘dug a winepress in it’; ōkodomēsen purgon, ‘built a tower’. Then exedeto auton geōrgois, ‘he leased it to farmers’, an aorist middle of ekdidōmi, the technical word for letting out land, and apedēmēsen, ‘went abroad’, the verb of the master in 25:14-15.",
+      "words": ["G3850", "G3617", "G5452", "G0290", "G5418", "G3736", "G3025", "G4444", "G1554", "G1092", "G0589"],
+      "history": "Large estates in Galilee and Judea were often owned by absentee landlords and worked by tenants who paid a share of the crop through agents. The Zenon papyri from the third century BC record a vineyard estate at Beth Anath in Galilee belonging to an Egyptian official and the troubles its agents had with local tenants, and Martin Hengel (1968) used them to show how realistic the parable's situation was.",
+      "ot": [
+        {
+          "ref": "Isaiah 5:1-2",
+          "note": "Isaiah sings of his beloved's vineyard on a fertile hill, which he dug and cleared, planted with choice vines, and furnished with a tower and a hewn winepress, yet it yielded wild grapes. The Septuagint has phragmon periethēka, ‘I put a fence around it’, ōkodomēsa purgon, ‘I built a tower’, and prolēnion ōruxa, ‘I dug a vat’, and Matthew's wording follows its vocabulary closely. Isaiah explains the song himself: the vineyard of the LORD of Hosts is the house of Israel (5:7). Jewish tradition read the tower as the sanctuary and the winepress as the altar (the Targum of Isaiah; t. Sukkah 3:15), so the parable could be heard as a story about the temple and its keepers. Isaiah's vineyard is judged and laid waste; in Jesus' parable the vineyard stands and the tenants are judged."
+        }
+      ],
+      "parallels": ["Mark 12:1", "Luke 20:9"],
+      "refs": ["Isaiah 5:1-7", "Psalm 80:8-16", "Jeremiah 2:21", "Matthew 25:14-15"]
+    },
+    {
+      "v": "34-36",
+      "context": "At harvest the owner sends servants to collect his share of the fruit. The tenants beat one, kill another, and stone a third. He sends a larger group, and they are treated the same. The pattern recalls Israel's long history of rejecting the prophets.",
+      "grammar": "Hote de ēngisen ho kairos tōn karpōn, ‘when the season of the fruits drew near’, uses engizō again (compare verse 1) and kairos, the appointed time. Labein tous karpous autou, ‘to receive his fruits’: the owner is entitled to them. Three relative pronouns set out the violence in rising order, hon men edeiran, hon de apekteinan, hon de elithobolēsan, ‘one they beat, another they killed, another they stoned’. Palin apesteilen allous doulous pleionas tōn prōtōn, ‘again he sent other servants, more than the first’. Where Mark sends servants one at a time, Matthew sends them in two groups, which some commentators take as the earlier and later prophets.",
+      "words": ["G2540", "G2590", "G1401", "G1092", "G1194", "G0615", "G3036", "G4119"],
+      "history": "Israel's Scriptures remembered prophets rejected and abused. The Chronicler summarized the years before the exile in those terms, God sending his messengers again and again while the people mocked them (2 Chronicles 36:15-16). Jeremiah was beaten and put in stocks (Jeremiah 20:2), Uriah was killed by King Jehoiakim (Jeremiah 26:20-23), and Zechariah son of Jehoiada was stoned in the temple court (2 Chronicles 24:20-22), a death Jesus will name in 23:35.",
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "The servants stand for the prophets God sent to call for the fruit of righteousness. Their treatment shows God's patience, sending again and more, and the seriousness of refusing his word, a charge Jesus will press in 23:29-37."
+        }
+      ],
+      "parallels": ["Mark 12:2-5", "Luke 20:10-12"],
+      "refs": ["2 Chronicles 36:15-16", "2 Chronicles 24:20-22", "Matthew 23:34-37", "Nehemiah 9:26"]
+    },
+    {
+      "v": "37-39",
+      "context": "Last of all the owner sends his son, expecting the tenants to respect him. Instead they see the heir, plot to kill him and seize the inheritance, throw him out of the vineyard, and kill him. The parable now describes what Jesus has foretold for himself.",
+      "grammar": "Husteron de, ‘last of all’, marks the son as the final messenger. Entrapēsontai ton huion mou, ‘they will respect my son’, is a future passive of entrepō with the sense ‘feel shame before, show regard for’. The tenants' words, houtos estin ho klēronomos, deute apokteinōmen auton kai schōmen tēn klēronomian autou, ‘this is the heir; come, let us kill him and have his inheritance’, use two hortatory subjunctives. Houtos estin, ‘this is’, echoes the voice at the baptism and transfiguration, ‘This is My beloved Son’ (3:17, 17:5). In verse 39 Matthew orders the verbs exebalon exō tou ampelōnos kai apekteinan, ‘they threw him out of the vineyard and killed him’, where Mark has killing first (Mark 12:8), matching Jesus' death outside the city.",
+      "words": ["G5306", "G5207", "G1788", "G2818", "G1205", "G0615", "G2817", "G1544", "G1854"],
+      "history": "Joachim Jeremias (The Parables of Jesus) argued that the tenants' reasoning reflects a real legal situation: the arrival of the son could suggest that the owner had died, and if the heir were killed the vineyard might be treated as ownerless property that those in possession could claim. Whether or not the hearers pictured it so precisely, the tenants act as though the owner will never return.",
+      "ot": [
+        {
+          "ref": "Genesis 37:20",
+          "note": "When Joseph's brothers see the favored son coming, they say to one another, in the Septuagint, deute apokteinōmen auton, ‘come, let us kill him’, the words the tenants use. The echo makes the son a new Joseph, rejected by his own out of envy, and a reader of Genesis knows that God turned that rejection into the saving of many (Genesis 50:20)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Jesus places himself after all the prophets as the owner's son and heir, different in kind from the servants. The parable implies what Matthew confesses elsewhere, that Jesus is the Son sent by the Father (3:17, 11:27), and that his sending is God's final appeal."
+        },
+        {
+          "id": "atonement",
+          "note": "The son is killed outside the vineyard, as Jesus will be crucified outside Jerusalem (Hebrews 13:12). The parable presents his death as human rejection; verse 42 will show it as the Lord's own doing."
+        }
+      ],
+      "parallels": ["Mark 12:6-8", "Luke 20:13-15"],
+      "refs": ["Matthew 3:17", "Hebrews 1:1-2", "Hebrews 13:12", "Genesis 37:18-20", "John 19:17"]
+    },
+    {
+      "v": "40-41",
+      "context": "Jesus asks what the owner will do to those tenants when he comes. The leaders answer: he will destroy the wretches wretchedly and lease the vineyard to others who will give him the fruit in season. As with the two sons, they pronounce their own sentence; in Mark and Luke Jesus answers his own question.",
+      "grammar": "Hotan oun elthē ho kurios tou ampelōnos, ‘when therefore the lord of the vineyard comes’, uses an aorist subjunctive for a future coming, and kurios, ‘lord’, the title of Jesus himself in verse 3. The answer is a stock Greek idiom of fitting retribution, kakous kakōs apolesei autous, ‘bad men he will badly destroy’, whose wordplay English Bibles try to catch with ‘wretches ... wretched end’. Ton ampelōna ekdōsetai allois geōrgois, ‘he will lease the vineyard to other farmers’, repeats the verb of verse 33. Hoitines apodōsousin autō tous karpous en tois kairois autōn, ‘who will give him the fruits in their seasons’, uses hoitines, ‘such as will’, describing the kind of tenants they will be.",
+      "words": ["G2962H", "G0290", "G1092", "G2556G", "G2560", "G0622", "G1554", "G0591", "G2590", "G2540"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The judgment falls on the tenants, not the vineyard. God's purpose for his vineyard continues; those who treated it as their own possession lose their place in it. The leaders see the justice of the verdict before they see that it is about them (verse 45)."
+        }
+      ],
+      "parallels": ["Mark 12:9", "Luke 20:15-16"],
+      "refs": ["Matthew 21:3", "Matthew 24:50-51", "Isaiah 5:5-6"]
+    },
+    {
+      "v": "42",
+      "context": "Jesus answers their verdict with Scripture: the stone the builders rejected has become the cornerstone; this is the Lord's doing, marvelous in our eyes. The image shifts from vineyard to building, and the son killed by the tenants becomes the stone rejected by the builders and then set in the place of honor.",
+      "grammar": "Oudepote anegnōte en tais graphais, ‘have you never read in the Scriptures?’, repeats the reproach of verse 16. The quotation matches the Septuagint word for word. Lithon hon apedokimasan hoi oikodomountes, ‘the stone which the builders rejected’, has lithon in the accusative, drawn into the case of the relative pronoun, though it is the subject of the next clause, houtos egenēthē eis kephalēn gōnias, ‘this one has become the head of the corner’, with eis for the result. Para kuriou egeneto hautē kai estin thaumastē en ophthalmois hēmōn, ‘from the Lord this happened, and it is marvelous in our eyes’, uses the feminine hautē and thaumastē, a literal rendering of the Hebrew feminine zot, ‘this’, which Hebrew uses for an abstract ‘this thing’.",
+      "words": ["G0314", "G1124", "G3037", "G0593", "G3618", "G2776", "G1137", "G2298", "G3788"],
+      "ot": [
+        {
+          "ref": "Psalm 118:22-23",
+          "note": "The Hebrew reads even ma'asu habbonim hayetah lerosh pinnah, ‘a stone the builders rejected has become the head of the corner’, and continues me'et YHWH hayetah zot hi nifla't be'enenu, ‘from the LORD this came about; it is wonderful in our eyes’. In the psalm, the last of the Hallel, the rejected stone is the king or Israel, delivered by God and brought in triumph to his house, the same psalm the crowds sang in verse 9. The Septuagint (Psalm 117:22-23) is quoted exactly. The ‘head of the corner’ may be a cornerstone at the foundation or a capstone crowning the structure; either way it holds the building together. The early church returned to the verse to speak of Jesus' death and resurrection (Acts 4:11, 1 Peter 2:7), and Klyne Snodgrass has argued that a wordplay between Hebrew ben, ‘son’, and even, ‘stone’, links the son of verse 37 with the stone of verse 42."
+        }
+      ],
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The stone rejected and then made the cornerstone describes rejection followed by vindication, which the apostles read as the crucifixion and the resurrection (Acts 4:10-11). The reversal is ‘the Lord's doing’, not the builders'."
+        },
+        {
+          "id": "temple",
+          "note": "The builders are the leaders responsible for God's house, and the rejected stone becomes the foundation of a new one. The New Testament identifies that house with Christ and his people, living stones built on him (1 Peter 2:4-7, Ephesians 2:20-22)."
+        }
+      ],
+      "parallels": ["Mark 12:10-11", "Luke 20:17"],
+      "refs": ["Psalm 118:22-23", "Acts 4:11", "1 Peter 2:4-7", "Ephesians 2:20", "Isaiah 28:16"]
+    },
+    {
+      "v": "43",
+      "context": "Jesus draws the conclusion, found only in Matthew: the kingdom of God will be taken from ‘you’ and given to a people who will produce its fruit. The ‘you’ are the chief priests and elders who asked about his authority (verse 23), and Matthew adds in verse 45 that the chief priests and Pharisees knew he was speaking about them.",
+      "grammar": "Dia touto legō humin, ‘therefore I tell you’, draws the inference from the psalm and the parable. Arthēsetai aph' humōn, ‘will be taken away from you’, and dothēsetai, ‘will be given’, are future passives with God as the actor. The recipient is ethnei poiounti tous karpous autēs, ‘a people producing its fruits’: ethnos is singular, not the plural ethnē, ‘the Gentiles’, and the present participle poiounti describes a people characterized by producing fruit. Autēs, ‘its’, refers to the kingdom, so the fruit is the kingdom's own, the righteousness Matthew has described since 3:8 and 7:16-20. The phrase ‘kingdom of God’ appears here rather than Matthew's usual ‘kingdom of heaven’.",
+      "words": ["G0142", "G0932", "G2316", "G1325", "G1484", "G4160G", "G2590"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The verse has been read as God's rejection of Israel and its replacement by the Gentile church, a reading the church has repudiated (Nostra Aetate 4, 1965, and many Protestant statements) because it turned the Gospel into a warrant for contempt. Many now read it, with Anthony Saldarini, as a transfer of leadership within Israel to the Twelve, who will judge the twelve tribes (19:28); with Wesley Olmstead, as a renewed Israel into which the nations are gathered; or as the church of Jews and Gentiles, while holding with Paul that God has not rejected his people and his calling is irrevocable (Romans 11:1-2, 29). The verse itself addresses the leaders who refuse the Son, and its warning falls first on all who hold responsibility for God's people, church leaders included."
+        },
+        {
+          "id": "kingdom",
+          "note": "The kingdom is God's to give and to take away, and it belongs to those who bear its fruit. No office, lineage, or institution holds it by right."
+        }
+      ],
+      "refs": ["Matthew 3:8-10", "Matthew 7:16-20", "Romans 11:1-2", "Romans 11:29", "1 Peter 2:9"]
+    },
+    {
+      "v": "44",
+      "context": "A final saying about the stone: whoever falls on it will be broken to pieces, and whoever it falls on will be crushed. The stone of verse 42 becomes a stone of judgment, joining Isaiah's stone of stumbling and Daniel's stone that shatters kingdoms.",
+      "grammar": "Ho pesōn epi ton lithon touton, ‘the one who falls on this stone’, uses an aorist participle, and sunthlasthēsetai, ‘will be shattered’, a future passive of sunthlaō, ‘crush together, break in pieces’. Eph' hon d' an pesē, ‘but on whomever it falls’, is an indefinite relative clause, and likmēsei auton, ‘it will crush him’, uses likmaō, which originally meant to winnow grain and came to mean to scatter like chaff or grind to powder.",
+      "words": ["G4098", "G3037", "G4917", "G3039"],
+      "text": "The verse is missing from Codex Bezae, from minuscule 33, from several Old Latin manuscripts, and from the Sinaitic Syriac, and Origen does not cite it. It closely matches Luke 20:18, and some editors think it was added from there; others note that its position after verse 43 rather than after verse 42 is awkward for an addition. The Nestle-Aland text prints it in brackets, and the BSB, KJV, and most modern Bibles include it, some with a note.",
+      "ot": [
+        {
+          "ref": "Isaiah 8:14-15",
+          "note": "Isaiah says the LORD will be a sanctuary, but also a stone of stumbling and a rock of offense to both houses of Israel, and many will stumble, fall, and be broken. The Hebrew uses venishbaru, ‘and they will be broken’. The first half of the saying, falling on the stone, draws on this image, which Paul and Peter join with Psalm 118:22 and Isaiah 28:16 (Romans 9:33, 1 Peter 2:6-8)."
+        },
+        {
+          "ref": "Daniel 2:34-35",
+          "note": "In Nebuchadnezzar's dream a stone cut without hands strikes the statue of the kingdoms, crushes it so that it blows away like chaff, and becomes a mountain filling the earth; Daniel explains that God will set up a kingdom that will crush all these kingdoms and stand forever (2:44). Theodotion's Greek of 2:44 uses likmaō, the verb of this verse. The stone that falls on its opponents is the kingdom of God in the person of the rejected son."
+        }
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The rejected stone cannot be rejected without cost. Whoever stumbles over him is broken, and the kingdom he brings will crush every power set against it, the image of Daniel 2 applied to Jesus."
+        }
+      ],
+      "parallels": ["Luke 20:18"],
+      "refs": ["Isaiah 8:14-15", "Daniel 2:44-45", "Romans 9:32-33", "1 Peter 2:8"]
+    },
+    {
+      "v": "45-46",
+      "context": "The chief priests and Pharisees realize the parables are about them. They want to arrest Jesus but fear the crowds, who hold him to be a prophet. The chapter ends as it began, with the crowds' verdict (verse 11), and the plot that will end at the cross is now in motion.",
+      "grammar": "Akousantes ... tas parabolas autou, ‘having heard his parables’, uses the plural, taking the two sons and the tenants together. Egnōsan hoti peri autōn legei, ‘they knew that he was speaking about them’, keeps the present legei, ‘he speaks’, from their thought. Zētountes auton kratēsai, ‘seeking to seize him’, uses kratēsai, the verb of the arrest in 26:4, 48, 50, 55, 57. Epei eis prophētēn auton eichon, ‘since they held him as a prophet’, uses eis with the accusative for the predicate, a Semitic construction, where verse 26 used hōs.",
+      "words": ["G0749", "G5330", "G3850", "G1097", "G2212", "G2902", "G5399", "G3793", "G4396"],
+      "text": "The critical editions read eis prophētēn, ‘as a prophet’, with the Semitic eis; the Textus Receptus has hōs prophētēn, the same construction as verse 26, with epeidē for ‘since’.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The leaders recognize the judgment and respond not with repentance but with a plan to remove the one who spoke it, acting out the tenants' part. The crowds, for now, restrain them, and Matthew does not blame the people for the leaders' decision."
+        }
+      ],
+      "parallels": ["Mark 12:12", "Luke 20:19"],
+      "refs": ["Matthew 21:11", "Matthew 26:3-5", "Matthew 14:5", "John 11:47-53"]
+    }
+  ]
+}

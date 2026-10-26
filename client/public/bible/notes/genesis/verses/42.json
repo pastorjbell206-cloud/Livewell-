@@ -1,0 +1,246 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "The famine of Genesis 41 now reaches Jacob's household in Canaan. The chapter opens with the father still in charge, rousing sons who stand paralyzed, and sending them south for food. His purpose clause, \"so that we may live and not die\", becomes a refrain: Joseph will echo it (v. 20), and Judah will repeat it word for word when he persuades Jacob to release Benjamin (43:8).",
+      "grammar": "There is a play on the verb raah, ‘to see’. Jacob ‘saw’ (vayyar, translated \"learned\") that there was grain, while his sons are only titrau, a Hithpael of the same verb, which here has a reciprocal sense: ‘you look at one another’. The father sees and acts; the sons look at each other and do nothing. The noun for grain, shever, and the verb for buying grain, shavar, run through the whole chapter (vv. 2, 3, 5, 6, 7, 10, 19, 26) and tie every scene to the one thing the family lacks. The verb yeredu, ‘go down’, is the standard term for travel from Canaan to Egypt, and it will return with a darker sense in Jacob's final line about going down to Sheol (v. 38).",
+      "words": ["H7200H", "H7200G", "H7668", "H7666", "H3381"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The famine that threatens the family is the means by which God brings them to the one man who can save them. Jacob sends his sons for bread; the narrator has already shown that God sent Joseph ahead for exactly this (41:25-32)."
+        }
+      ],
+      "refs": ["Genesis 12:10", "Genesis 26:1-2", "Genesis 43:8", "Genesis 45:5"]
+    },
+    {
+      "v": "3-4",
+      "context": "Ten brothers go, and Benjamin stays. The narrator calls them \"Joseph’s brothers\" and Benjamin \"Joseph’s brother\", not Jacob's sons, which quietly keeps the missing brother at the center of the story and reminds the reader of what these ten once did to him.",
+      "grammar": "Asôn, \"harm\", is a rare word. Outside this story (here, v. 38, and 44:29) it appears only in Exodus 21:22-23, the law about injury to a pregnant woman, where it names serious or fatal harm. Jacob fears a disaster, not an inconvenience. The clause is introduced by pen, ‘lest’, the particle of a feared outcome.",
+      "words": ["H0611", "H6235"],
+      "history": "Benjamin is the only other son of Rachel, whose death at his birth is told in 35:16-19. Jacob has transferred to him the protective love he once gave Joseph, which is why the father who readily sends ten sons into danger will not send the eleventh.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "The favoritism that fractured the family in Genesis 37 is still in place. Jacob's fear for Benjamin is real love, but it also tells the ten again that they are the sons he is willing to risk."
+        }
+      ],
+      "refs": ["Genesis 35:16-19", "Genesis 37:3-4", "Exodus 21:22-23"]
+    },
+    {
+      "v": "5",
+      "context": "The sons of Israel arrive as one group among many foreigners buying grain. The family of promise has no special standing here; it is just another hungry clan from Canaan in a line at the Egyptian granaries.",
+      "grammar": "Betokh habbaim, ‘in the midst of those coming’, uses a participle for the stream of buyers, a continuous flow of people. The explanation that follows (ki, ‘for’) grounds the trip in the famine that was \"also\" in Canaan, linking this verse back to 41:57, where all the earth came to Egypt to buy grain.",
+      "words": ["H0935G", "H8432", "H7458"],
+      "refs": ["Genesis 41:56-57", "Genesis 47:4"]
+    },
+    {
+      "v": "6",
+      "context": "The narrator pauses to set the scene: Joseph is the ruler who sells grain to everyone. Then the brothers arrive and bow with their faces to the ground, and the dream of Genesis 37:7 comes true without anyone but Joseph and the reader knowing it.",
+      "grammar": "Hashallit, \"the ruler\", is a rare word in Hebrew, found elsewhere mainly in Ecclesiastes and, in its Aramaic form, in Ezra and Daniel. The clause is a verbless description with the pronoun hu, ‘he’, set twice for emphasis: he was the ruler, he was the one selling. The verb for bowing, yishtachavu, is the same verb used in Joseph's dreams (37:7, 9-10), and appayim artsah, ‘faces to the ground’, recalls Jacob's indignant question in 37:10 about bowing to the ground before Joseph.",
+      "words": ["H7989", "H7666", "H7812", "H0639I"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The brothers fulfill the dream in the act of seeking survival, not submission. God's purpose is carried out through ordinary needs and free choices, and those who once tried to kill the dream become its witnesses."
+        }
+      ],
+      "refs": ["Genesis 37:7-10", "Genesis 41:40-41", "Genesis 43:26"]
+    },
+    {
+      "v": "7-8",
+      "context": "Recognition runs in one direction only. Joseph knows them at once, hides himself, and speaks harshly; they see an Egyptian lord. Verse 8 restates verse 7 to fix the imbalance firmly before the interrogation begins.",
+      "grammar": "The verb nakar appears in two stems side by side. Vayyakkirem (Hiphil) means ‘he recognized them’, and vayyitnakker (Hithpael) means ‘he made himself unrecognizable’ or ‘acted as a stranger’. The same root yields nokhri, ‘foreigner’. Joseph becomes a foreigner to his own brothers. Qashot, \"harshly\", is a feminine plural adjective used adverbially, literally ‘hard things’. In verse 8 the independent pronoun vehem, ‘but they’, sets the brothers in contrast with Joseph.",
+      "words": ["H5234A", "H5234B", "H7186"],
+      "history": "The brothers had last seen a boy of seventeen (37:2). Now they face a man near forty in Egyptian dress, shaved in the Egyptian manner (41:14), bearing an Egyptian name (41:45), and speaking through an interpreter (v. 23). Nothing about him would suggest the brother they sold.",
+      "refs": ["Genesis 37:32-33", "Genesis 38:25-26", "Luke 24:16", "John 1:10-11"]
+    },
+    {
+      "v": "9",
+      "context": "The sight of the bowing brothers brings back the dreams. Joseph's first word to them after remembering is an accusation, the first move of a test that will run through three chapters.",
+      "grammar": "Meraggelim, \"spies\", is a Piel participle of ragal, a verb related to regel, ‘foot’: those who go about on foot through a land to look it over. The same term names the two men Joshua sends to Jericho (Joshua 2:1). The phrase translated \"if our land is vulnerable\" is literally ‘to see the nakedness of the land’. Ervah usually means bodily nakedness or shame; here it is the land's exposed and undefended places.",
+      "words": ["H2142", "H2472", "H7270", "H6172"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Joseph remembers the dreams, not his injuries. The narrator suggests that what guides him is his sense of what God has been doing, although his motives in the scenes that follow remain partly hidden."
+        }
+      ],
+      "refs": ["Genesis 37:5-11", "Joshua 2:1", "Numbers 13:17-20"]
+    },
+    {
+      "v": "10-11",
+      "context": "The brothers protest their innocence and give their credentials. Their answer is true in its facts and deeply ironic in its claims: they are indeed sons of one man, and one of those sons is standing in front of them.",
+      "grammar": "Kenim, \"honest\", comes from ken, ‘right, so, true’, and means men whose word matches reality. The reader knows these men lied to their father for more than twenty years about Joseph's fate (37:31-35). Kullanu bene ish-echad nachnu, ‘all of us, sons of one man, we’, puts \"all of us\" first for emphasis. The argument implied is that no father would risk all his sons on one spying mission.",
+      "words": ["H3651A", "H0259", "H0113"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The brothers can say \"Your servants are honest men\" because they have lived inside their lie so long it no longer feels like one. The story is about to press them until the buried truth comes out."
+        }
+      ],
+      "refs": ["Genesis 37:31-35", "Psalm 32:3-4"]
+    },
+    {
+      "v": "12-13",
+      "context": "Joseph repeats the charge, and the brothers, anxious to prove themselves, volunteer more than they need: the family has twelve sons, the youngest is at home, and \"one is no more.\" Joseph learns in a single sentence that his father and Benjamin are alive.",
+      "grammar": "Veha-echad enennu, ‘and the one is not’, uses the negative particle ayin with a suffix, a Hebrew way of saying someone has disappeared or is dead. Reuben used the same form when he found the pit empty, ‘the boy is not’ (37:30), and Jacob will use it of both Joseph and Simeon in verse 36. The brothers still count Joseph among the twelve, even as they say he is gone. Vehinneh, ‘and look’, introduces Benjamin as a fact Joseph can seize on.",
+      "words": ["H0369", "H6996H", "H2009"],
+      "refs": ["Genesis 37:30", "Genesis 44:20"]
+    },
+    {
+      "v": "14-16",
+      "context": "Joseph insists on the charge and sets his test. The youngest brother must come to Egypt. The first plan is harsh: one brother goes home while nine sit in prison. Joseph will soften it after three days (vv. 18-20).",
+      "grammar": "Tibbachenu, \"you will be tested\", is the Niphal of bachan, the verb for assaying metal to see what it really is. Chei Pharaoh, ‘by the life of Pharaoh’, is an oath formula built like Israel's own oath, ‘as the LORD lives’ (chai YHWH). The question haemet ittekhem, ‘whether truth is with you’, uses emet, the ordinary word for truth and reliability, from the same root as amen and as the verb for believing (15:6).",
+      "words": ["H0974", "H2416A", "H6547H", "H0571H"],
+      "history": "Oaths sworn by the life of the king are attested in Egyptian legal texts, so Joseph uses the idiom any Egyptian official would use. Coming from a Hebrew, it is also a disguise, since it hides the God he actually fears (v. 18).",
+      "refs": ["Judges 8:19", "1 Samuel 17:55", "Jeremiah 17:10"]
+    },
+    {
+      "v": "17",
+      "context": "Joseph puts all ten in custody for three days. For the first time the brothers taste what Joseph endured: confinement in a foreign land with no way to prove their word.",
+      "grammar": "Mishmar, \"custody\", is the word used for the royal prison where Joseph was held with Pharaoh's cupbearer and baker (40:3, 4, 7; 41:10). The verb vayyeesof, literally ‘he gathered’, is the ordinary verb for gathering people or things together, used here for rounding them up into confinement.",
+      "words": ["H0622", "H4929", "H7969"],
+      "refs": ["Genesis 40:3-4", "Genesis 41:10"]
+    },
+    {
+      "v": "18-20",
+      "context": "On the third day Joseph changes the terms. Now one brother stays and nine go home with grain, so that their families do not starve. He grounds the new plan in his own fear of God, a statement the brothers hear as an Egyptian's piety and the reader recognizes as Joseph's true identity breaking through.",
+      "grammar": "In Hebrew the confession is \"I fear God\" with the object placed first: et-haelohim ani yare, ‘it is God I fear’. The fronting puts the weight on God. The command \"do this and you will live\" pairs two imperatives, where the second states the result of obeying the first. In verse 20 veyeamenu, \"can be verified\", is a Niphal of aman, the root behind amen and believing: the brothers' words will be shown to be firm and reliable.",
+      "words": ["H0430G", "H3373", "H2421", "H0539", "H0631"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "In Genesis the fear of God is what restrains the powerful from abusing the stranger. Abraham feared there was no fear of God in Gerar (20:11), and the Hebrew midwives will spare Israel's sons because they fear God (Exodus 1:17). Joseph holds absolute power over these men, and the fear of God sets the limit on how he uses it."
+        },
+        {
+          "id": "justice-poor",
+          "note": "Joseph's revised plan provides for the hungry households back in Canaan, not only for the men in front of him. Even his testing is bent toward feeding the vulnerable."
+        }
+      ],
+      "refs": ["Genesis 20:11", "Genesis 39:9", "Exodus 1:17", "Leviticus 25:17"]
+    },
+    {
+      "v": "21",
+      "context": "The brothers speak to one another in Hebrew, assuming the Egyptian cannot understand, and connect their distress directly with Joseph. This is the first time the reader learns that Joseph pleaded with them from the pit; Genesis 37 kept silent about it until now.",
+      "grammar": "The confession begins with aval, an emphatic particle meaning ‘truly’ or ‘alas’, followed by asheimim anachnu, ‘guilty are we’, with the adjective placed first. The noun tsarah, ‘distress’, is used twice: they saw ‘the distress of his soul’ (tsarat nafsho) when he pleaded, and now ‘this distress’ has come on them. The repetition states their conclusion in the grammar itself: the distress they ignored has returned as their own. Behitchanno, \"when he pleaded\", is a Hithpael of chanan, to seek grace or favor.",
+      "words": ["H0061", "H0818", "H6869B", "H2603A", "H5315G"],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The brothers do not blame Egypt, the famine, or their father. They name a specific wrong, a specific victim, and their own refusal to listen, which is how genuine repentance begins in Scripture, even before it is complete."
+        },
+        {
+          "id": "sin",
+          "note": "Twenty years have not erased the memory of a boy's cries. The verse shows sin living on in the conscience of those who committed it, waiting for a crisis to bring it back into speech."
+        }
+      ],
+      "refs": ["Genesis 37:23-28", "Psalm 32:3-5", "Psalm 51:3", "Proverbs 28:13"]
+    },
+    {
+      "v": "22",
+      "context": "Reuben answers with an accusation of his own. He had tried to stop the others in Genesis 37:21-22, and now he reminds them. He still believes Joseph is dead, which is why he speaks of blood.",
+      "grammar": "\"Account for his blood\" is literally ‘his blood, behold, is being sought’. Nidrash is a Niphal participle of darash, ‘to seek, require’, the same verb God uses when he tells Noah he will require the lifeblood of anyone who kills a human (9:5). The participle presents the reckoning as already under way. Reuben's question begins with halo, ‘did I not’, a question that expects the answer yes.",
+      "words": ["H1875", "H1818", "H2398", "H3206"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Reuben believes that shed blood is never forgotten by God. The conviction reaches back to Abel's blood crying from the ground (4:10) and to the covenant with Noah (9:5-6). He is wrong that Joseph is dead but right that God holds people accountable."
+        }
+      ],
+      "refs": ["Genesis 4:10", "Genesis 9:5-6", "Genesis 37:21-22", "Genesis 37:29-30"]
+    },
+    {
+      "v": "23-24",
+      "context": "The narrator lets the reader in on what the brothers do not know: Joseph has understood every word. Their confession undoes him, and he turns aside to weep, the first of several times he weeps over his brothers. Then he composes himself, takes Simeon, and binds him in front of them.",
+      "grammar": "Hammelits, \"the interpreter\", is a Hiphil participle of a verb whose other uses include an envoy (2 Chronicles 32:31) and a mediator who speaks for a person before God (Job 33:23). The sequence of short verb forms in verse 24 (he turned, he wept, he returned, he spoke, he took, he bound) moves quickly from private grief to public severity without comment. Vayyeesor, ‘he bound’, is the verb used of the prisoners in the jail where Joseph was held (39:20).",
+      "words": ["H3887", "H1058", "H8095G", "H0631"],
+      "history": "Simeon is the second oldest. Many interpreters suggest that Joseph passes over Reuben because he now knows (v. 22) that Reuben tried to save him, and takes the next in line. Simeon was also the brother who, with Levi, led the massacre at Shechem (34:25), though the text does not say that this was Joseph's reason.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Joseph's tears show that the harshness is not the whole truth about him. Scripture often shows love that must wound in order to heal, and the tears reveal what the severity is serving."
+        }
+      ],
+      "refs": ["Genesis 34:25-30", "Genesis 43:30", "Genesis 45:2", "Genesis 49:5-7"]
+    },
+    {
+      "v": "25-26",
+      "context": "Joseph gives more than the brothers paid for: full bags, their silver returned, and food for the road. The gift is also a test, since silver discovered in their sacks will look like theft.",
+      "grammar": "Three nouns for containers appear in this scene: keli (a general word for vessels or bags, v. 25), saq (\"sack\", vv. 25, 27, 35), and amtachat (v. 27, and throughout chapters 43 and 44). Some source critics take the variation as evidence of two earlier versions woven together; others read it as ordinary variety in storytelling. Tsedah, \"provisions\", is the same word used for the food Israel carries out of Egypt at the exodus (Exodus 12:39).",
+      "words": ["H6680", "H3701G", "H8242", "H6720"],
+      "history": "Silver was weighed out in pieces or rings and carried in tied bundles. Returning a buyer's silver meant returning the actual metal, bundled as it had been paid. The brothers had once come home with twenty shekels of silver for selling Joseph (37:28), and silver now follows them home again.",
+      "refs": ["Genesis 37:28", "Genesis 44:1-2", "Exodus 12:39"]
+    },
+    {
+      "v": "27-28",
+      "context": "At the first night's stop one brother finds his silver in the mouth of his sack. The discovery does not bring relief. It turns the brothers' fear toward God, and for the first time in the Joseph story they mention him by name.",
+      "grammar": "Hushav, \"has been returned\", is a Hophal perfect, a passive of the causative stem: someone has caused it to come back, but the speaker cannot say who. The brothers supply the answer in their question: mah-zot asah Elohim lanu, ‘what is this God has done to us?’ \"Their hearts sank\" is literally ‘their heart went out’, an idiom for sudden dread. The malon, \"the place where they lodged\", is the same word used for the lodging place in Exodus 4:24.",
+      "words": ["H4411", "H7725G", "H3820A", "H2729", "H0430G"],
+      "text": "Here only one brother finds his silver on the road, and in verse 35 all find theirs at home; in 43:21 the brothers tell Joseph's steward that they all found their silver at the lodging place. Some scholars see two versions of the story combined. Others note that 43:21 is a compressed account given in a tense moment, or that the others opened their sacks at a later stop.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The brothers are right that God is at work and wrong about what he is doing. They read the returned silver as a sign of judgment; it is in fact the first gift of a brother preparing reconciliation."
+        }
+      ],
+      "refs": ["Genesis 43:18-23", "Exodus 4:24"]
+    },
+    {
+      "v": "29-34",
+      "context": "The brothers report to Jacob. Their account is accurate in outline but carefully edited: they leave out the three days in custody and Simeon bound before their eyes, and they add a promise that they may trade in the land, which the narrative did not record Joseph saying.",
+      "grammar": "They call Joseph haish adonei haarets, ‘the man, the lord of the land’. Adonei is plural in form, a plural of majesty or honor used for a single master, as with some other titles in Hebrew. Tischaru (v. 34), \"trade\", means to move about freely as a merchant. Hamor used the same verb when he offered Jacob's family the right to trade in the land of Shechem (34:10, 21).",
+      "words": ["H0113", "H7270", "H5117", "H5503"],
+      "refs": ["Genesis 34:10", "Genesis 34:21", "Genesis 43:3-7"]
+    },
+    {
+      "v": "35",
+      "context": "Emptying their sacks at home, every brother finds his bundle of silver, and father and sons are afraid together. What began as an anomaly at the inn now looks like a pattern and a trap.",
+      "grammar": "Vayhi hem meriqim, ‘and it happened, as they were emptying’, uses a participle for action in progress, and vehinneh, ‘and look’, puts the reader at the moment of discovery. Tseror, \"bag\", is a tied bundle or pouch; the same word appears in Abigail's image of a life bound in the bundle of the living (1 Samuel 25:29).",
+      "words": ["H7324", "H6872A", "H3372G"],
+      "refs": ["1 Samuel 25:29", "Proverbs 7:20"]
+    },
+    {
+      "v": "36",
+      "context": "Jacob's lament gathers every loss into one sentence. He blames his sons for his bereavement, names Joseph and Simeon as gone, and refuses to lose Benjamin. He cannot see that every item on his list is part of the road to his rescue.",
+      "grammar": "Shikkaltem, \"you have deprived me\", is a Piel perfect of shakhol, ‘to be bereaved of children’; the Piel means ‘to make childless’. Jacob will use the same verb in his resigned prayer, ‘if I am bereaved, I am bereaved’ (43:14), and Rebekah used it when she feared losing both her sons in one day (27:45). Enennu, ‘he is not’, is repeated for Joseph and Simeon alike. The last clause, alai hayu khullanah, puts ‘on me’ first: all these things have fallen on me.",
+      "words": ["H7921A", "H0369", "H1144G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jacob reads his circumstances as a verdict against him, and every fact he cites is true. The narrative lets the reader see that God's saving purpose can lie hidden inside events that look, to the one who suffers them, like pure loss."
+        },
+        {
+          "id": "suffering",
+          "note": "Scripture records Jacob's complaint without correcting it. The lament of a grieving father is allowed to stand, even though the reader knows it will be answered."
+        }
+      ],
+      "refs": ["Genesis 27:45", "Genesis 43:14", "Romans 8:28"]
+    },
+    {
+      "v": "37",
+      "context": "Reuben offers a guarantee: if he fails to bring Benjamin back, Jacob may put two of Reuben's sons to death. The offer shows desperation more than wisdom, since it asks a grieving grandfather to answer the loss of a son with the death of grandsons.",
+      "grammar": "Tamit is a Hiphil imperfect of mut, ‘to die’, so ‘you may put to death’. Tenah oto al-yadi, ‘give him into my hand’, is the language of entrusting something to a guardian who answers for it. Shenei vanai can be read as ‘my two sons’ or ‘two of my sons’.",
+      "words": ["H4191", "H1121A", "H3027G"],
+      "text": "English Bibles divide between \"my two sons\" (BSB and others) and ‘two of my sons’. Genesis 46:9 lists four sons of Reuben, which has led some translators to prefer the second rendering; others think Reuben had only two sons at this point.",
+      "refs": ["Genesis 43:8-9", "Genesis 46:9"]
+    },
+    {
+      "v": "38",
+      "context": "Jacob refuses. His words reveal how he sees his family: of Rachel's two sons, one is dead and one is left, as though the ten in front of him did not count. The chapter ends at a deadlock only the famine can break.",
+      "grammar": "Levaddo nishar, ‘he alone remains’, uses a Niphal participle of shaar, ‘to be left over’, the root that gives the word ‘remnant’ in 45:7. Jacob speaks of Benjamin as the last of Rachel's line. Sheolah has the directional ending: ‘down to Sheol’. The phrase about bringing gray hair down to Sheol in sorrow recalls Jacob's vow to go down to Sheol mourning for Joseph (37:35), and Judah will quote it back in his plea (44:29, 31).",
+      "words": ["H7604", "H7872", "H3015", "H7585"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Jacob speaks of death as a descent into Sheol, the realm of the dead, and sees nothing beyond sorrow. The Old Testament's hope for what lies past the grave grows slowly, and here it is shadowed entirely by grief."
+        },
+        {
+          "id": "family",
+          "note": "\"He alone is left\" wounds the sons who hear it. The favoritism that set the brothers against Joseph is still spoken aloud, and the test ahead will ask whether they can bear it without turning on Benjamin."
+        }
+      ],
+      "refs": ["Genesis 37:35", "Genesis 44:27-31", "Genesis 45:7"]
+    }
+  ]
+}

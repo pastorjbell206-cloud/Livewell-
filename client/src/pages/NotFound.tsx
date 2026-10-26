@@ -84,7 +84,7 @@ export default function NotFound() {
               Back to the front page
             </Link>
             <Link
-              href="/explore"
+              href="/search"
               style={{
                 fontFamily: "var(--U)",
                 fontSize: "14px",
@@ -96,7 +96,7 @@ export default function NotFound() {
                 textDecoration: "none",
               }}
             >
-              Browse everything
+              Search the site
             </Link>
             <Link
               href="/writing"

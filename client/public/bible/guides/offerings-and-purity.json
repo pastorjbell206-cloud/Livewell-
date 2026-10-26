@@ -1,0 +1,159 @@
+{
+  "id": "offerings-and-purity",
+  "title": "Offerings, Priests, and Purity",
+  "summary": "The five offerings of Leviticus and what they meant, the Day of Atonement, priests and Levites, clean and unclean, the prophets' critique of sacrifice, purity in Jesus' day, and why the sacrificial system matters for reading the New Testament.",
+  "sections": [
+    {
+      "h": "Why Leviticus matters",
+      "body": "Many readers who set out to read the Bible from the beginning stall in Leviticus. After the drama of Genesis and Exodus they find chapter after chapter on how to kill and burn animals, what to do about skin disease and mildew, and which animals may be eaten. The book can seem remote from any life a modern person lives. Yet the New Testament cannot be understood without it. When John the Baptist calls Jesus “the Lamb of God,” when Paul says Christ died “as an offering for sin” (Romans 8:3), when Hebrews spends five chapters on priests, blood, and the Day of Atonement, and when Jesus touches a leper and says “go, show yourself to the priest” (Mark 1:44), they assume that their readers know how Israel's worship worked. This guide explains the offerings, the priesthood, and the laws of clean and unclean, and why they mattered to Israel and to the first Christians.\n\nLeviticus sits at the center of the five books of Moses, and its setting is the tabernacle that Exodus has just finished describing. The problem the book addresses is stated at the end of Exodus: the glory of the LORD filled the tabernacle, and even Moses could not enter (Exodus 40:34-35). How can a holy God live among an unholy people without destroying them? Leviticus answers with a system of sacrifice, priesthood, and purity, all of it given by God himself, not devised by Israel to win him over. Its refrain is “Be holy because I, the LORD your God, am holy.” (Leviticus 19:2).\n\nSacrifice was universal in the ancient world. Every nation around Israel offered animals and food to its gods, and Israel's rituals share much vocabulary and practice with them. The differences are telling. Israel's God did not need feeding (Psalm 50:12-13); the offerings were not meals for a hungry deity. There was no image in the sanctuary, no sacrifice for the dead, no ritual to manipulate or coerce the god, and no human sacrifice, which the Law condemns as an abomination (Leviticus 18:21; Deuteronomy 12:31). And sacrifice was bound up with moral life: the same book that regulates the altar commands Israel to love the neighbor and the foreigner as oneself (Leviticus 19:18, 34).",
+      "refs": [
+        "Exodus 40:34-35",
+        "Leviticus 19:2",
+        "Psalm 50:12-13",
+        "Leviticus 19:18",
+        "Leviticus 19:34"
+      ]
+    },
+    {
+      "h": "The five offerings",
+      "body": "Leviticus 1 to 7 describes five kinds of offering, twice: chapters 1:1 to 6:7 from the point of view of the worshiper who brings them, and 6:8 to 7:38 as instructions for the priests who handle them. In the Hebrew Bible the chapter division falls differently, so that English 6:1-7 is Hebrew 5:20-26, and English 6:8-30 is Hebrew 6:1-23; commentaries that follow the Hebrew will cite the verses accordingly. The general word for an offering is qorban, from the verb ‘to bring near’, the same word Jesus quotes in Mark 7:11 for money declared ‘devoted to God’.\n\nThe first three offerings are ‘a pleasing aroma to the LORD’ and are brought voluntarily, as worship, thanksgiving, or dedication. The burnt offering was burned entire on the altar except for its hide, and so expressed complete devotion; it was offered every morning and evening for the whole nation (Exodus 29:38-42). The grain offering, the offering of the fruit of the worker's labor, usually accompanied the burnt offering. The peace offering was the one sacrifice the worshiper ate: the fat was burned, the priests received the breast and right thigh, and the family and friends of the one who brought it feasted on the rest before the LORD. It came in three kinds, the thanksgiving offering, the vow offering, and the freewill offering (Leviticus 7:11-18).\n\nThe last two are required when something has gone wrong. The sin offering (Hebrew chatta't) dealt with unintentional sins and with certain kinds of uncleanness, such as the end of a woman's purification after childbirth (Leviticus 12:6-8). Its blood was not simply poured at the base of the altar; it was daubed on the horns of the altar, or for sins of the high priest or the whole people, sprinkled before the curtain and put on the incense altar inside the tent (Leviticus 4). The guilt offering (asham) covered offenses that did damage: misuse of holy things, or cheating a neighbor and swearing falsely about it. It required a ram plus full restitution and an added fifth (Leviticus 6:5). Isaiah uses this word when he says of the Servant that “His soul is made a guilt offering” (Isaiah 53:10).\n\nThe system was graded by means. A person who could not afford a lamb for a sin offering could bring two turtledoves or two young pigeons, and one who could not afford the birds could bring a tenth of an ephah of flour (Leviticus 5:7, 11). When Mary and Joseph presented Jesus at the temple, they offered the birds (Luke 2:24), the offering of the poor. The order of the offerings in Leviticus 1 to 5 is not the order in which they were performed. The scholar Anson Rainey showed in 1970 (Biblica 51) that when several were offered together, the ritual texts put the sin offering first, then the burnt offering, then the peace offering: cleansing, then dedication, then fellowship at the table.",
+      "table": {
+        "caption": "The five offerings of Leviticus 1 to 7",
+        "columns": [
+          "Offering",
+          "Hebrew and meaning",
+          "What was offered",
+          "What happened to it",
+          "Purpose",
+          "Texts"
+        ],
+        "rows": [
+          [
+            "Burnt offering",
+            "olah, ‘what goes up’ (in smoke)",
+            "A male without blemish: bull, ram or male goat, or for the poor a dove or pigeon",
+            "All burned on the altar; the hide went to the priest",
+            "Atonement and complete dedication; offered every morning and evening",
+            "Leviticus 1; 6:8-13"
+          ],
+          [
+            "Grain offering",
+            "minchah, ‘gift’ or ‘tribute’",
+            "Fine flour with oil and frankincense, raw or baked; no leaven or honey; always salted",
+            "A token handful burned; the rest eaten by the priests in the holy place",
+            "Gratitude and homage; usually accompanied a burnt or peace offering",
+            "Leviticus 2; 6:14-23"
+          ],
+          [
+            "Peace offering (also ‘fellowship’ or ‘well-being’ offering)",
+            "zevach shelamim, related to shalom",
+            "Male or female from the herd or flock, without blemish",
+            "Fat and kidneys burned; breast and right thigh to the priests; the rest eaten by the worshiper's household",
+            "Thanksgiving, a vow fulfilled, or a freewill gift; a meal of fellowship",
+            "Leviticus 3; 7:11-36"
+          ],
+          [
+            "Sin offering (purification offering)",
+            "chatta't, ‘sin’ or ‘purification’",
+            "Graded by rank: a bull for the high priest or the people; a male goat for a leader; a female goat or lamb for others; birds or flour for the poor",
+            "Blood put on the altar's horns or sprinkled in the tent; fat burned; meat eaten by the priests, or burned outside the camp when the blood entered the tent",
+            "Cleansing for unintentional sin and certain impurities",
+            "Leviticus 4:1 to 5:13; 6:24-30"
+          ],
+          [
+            "Guilt offering (reparation offering)",
+            "asham, ‘guilt’ or ‘compensation’",
+            "A ram without blemish, valued in silver",
+            "Handled like the sin offering; the meat eaten by the priests",
+            "Reparation for damage to holy things or to a neighbor, with restitution plus one fifth",
+            "Leviticus 5:14 to 6:7; 7:1-7"
+          ]
+        ]
+      },
+      "refs": [
+        "Leviticus 1:3-9",
+        "Leviticus 3:1-5",
+        "Leviticus 4:27-31",
+        "Leviticus 5:7-13",
+        "Luke 2:22-24"
+      ]
+    },
+    {
+      "h": "What the rituals meant",
+      "body": "The procedure for an animal offering had a common pattern. The worshiper brought the animal to the entrance of the tabernacle, pressed a hand on its head, and killed it himself; the priest then handled the blood, placed the parts on the altar, and burned them. The laying on of the hand has been read in several ways: as identifying the worshiper with the animal, as transferring sin to it, or, as Jacob Milgrom argued, as declaring ownership, so that the benefit of the offering went to the one who brought it. On the Day of Atonement the high priest laid both hands on the goat for Azazel and confessed the people's sins over it (Leviticus 16:21), which makes the idea of transfer explicit in that rite, though whether every laying on of hands carried the same meaning is debated.\n\nThe key to the blood is Leviticus 17:11: “For the life of the flesh is in the blood, and I have given it to you to make atonement for your souls upon the altar; for it is the blood that makes atonement for the soul.” Three things stand out. The blood represents life; atonement is achieved by life given up in death; and God himself has given the blood for this purpose, so that sacrifice is his provision, not Israel's bribe. The verb translated ‘make atonement’ is kipper. Its exact sense is debated: some relate it to an Akkadian word meaning ‘wipe off’ or ‘cleanse’, others to the noun kopher, a ransom payment that spares a life (Exodus 30:12). Jay Sklar (Sin, Impurity, Sacrifice, Atonement, 2005) argued that in Leviticus the verb carries both ideas at once: sin both endangers the sinner, who needs ransom, and pollutes, so that cleansing is needed.\n\nThe most influential modern interpreter of these rituals was Jacob Milgrom, whose three-volume commentary on Leviticus in the Anchor Bible (1991 to 2001) remains the standard work. Milgrom argued that the chatta't should be called the ‘purification offering’, not the ‘sin offering’, because its blood purges the sanctuary rather than the person. In his picture, sin and impurity pollute God's sanctuary from a distance, the more serious the sin the deeper the pollution reaches, and if the sanctuary is never cleansed God will abandon it. Roy Gane (Cult and Character, 2005), Milgrom's student, agreed that the offering purifies but argued that the offerings made during the year cleanse the offerer, while the Day of Atonement cleanses the sanctuary itself. Others, including many evangelical scholars such as Gordon Wenham (The Book of Leviticus, 1979), keep a substitutionary element: the animal dies in the sinner's place. These readings are not always exclusive; Leviticus can speak of the same offering as cleansing the altar and as bringing forgiveness to the person (Leviticus 4:20).",
+      "refs": [
+        "Leviticus 1:4",
+        "Leviticus 16:20-22",
+        "Leviticus 17:11",
+        "Exodus 30:12",
+        "Leviticus 4:20"
+      ]
+    },
+    {
+      "h": "The Day of Atonement",
+      "body": "Once a year, on the tenth day of the seventh month, the whole system was reset (Leviticus 16). After Nadab and Abihu died for offering unauthorized fire (Leviticus 10:1-2), the LORD told Aaron not to enter the Most Holy Place whenever he chose, but only on this day and only in this way. The high priest put off his glorious garments and dressed in plain linen. He offered a bull as a sin offering for himself and his household, entered behind the curtain with a censer so that the cloud of incense covered the ark's lid, and sprinkled the bull's blood on and before the lid (the kapporet, traditionally the ‘mercy seat’). Then he did the same with the blood of a goat for the people, and he cleansed the tent and the outer altar with both.\n\nA second goat was chosen by lot ‘for Azazel’. The high priest laid both hands on its head, confessed over it “all the iniquities and rebellious acts of the Israelites in regard to all their sins,” and sent it into the wilderness (Leviticus 16:21). The meaning of Azazel is uncertain. The older translations took it as ‘the goat that departs’ (hence the English ‘scapegoat’, coined by William Tyndale in 1530), others as the name of a place, and many modern scholars as the name of a wilderness demon, a reading supported by the book of 1 Enoch, where Azazel is a fallen angel. In any case the goat was not a sacrifice to Azazel; it carried the sins away from the camp, back to the realm of chaos and death to which they belonged.\n\nThe day was a fast and a Sabbath for all Israel, and anyone who would not humble himself on it was cut off from the people (Leviticus 23:29). Two movements met in it: blood carried inward to cleanse the sanctuary, and sin carried outward, away from the people. The Letter to the Hebrews reads Christ's work as the fulfillment of both. He entered “the Most Holy Place once for all by His own blood, thus securing eternal redemption” (Hebrews 9:12), and he suffered “outside the city gate” like the bodies of the sin offerings burned outside the camp (Hebrews 13:11-12).",
+      "refs": [
+        "Leviticus 16:1-34",
+        "Leviticus 10:1-3",
+        "Leviticus 23:26-32",
+        "Hebrews 9:6-12",
+        "Hebrews 13:11-12"
+      ]
+    },
+    {
+      "h": "Priests and Levites",
+      "body": "Aaron and his sons were set apart as priests in a seven-day ordination (Exodus 29; Leviticus 8), and only his male descendants could serve at the altar. The rest of the tribe of Levi, the Levites, assisted them: in the wilderness they carried the tabernacle and guarded it (Numbers 3 to 4), and later they served as gatekeepers, musicians, treasurers, and teachers. Levi received no territory. The priests lived from portions of the offerings and the firstfruits, the Levites from the tithes of the other tribes (Numbers 18), and forty-eight towns with their pasturelands were assigned to them across the land (Numbers 35:1-8).\n\nThe priest's work went beyond the altar. He was to “distinguish between the holy and the common, between the clean and the unclean” and to “teach the Israelites all the statutes that the LORD has given them through Moses” (Leviticus 10:10-11). Malachi, rebuking the priests of his day, says that “the lips of a priest should preserve knowledge, and people should seek instruction from his mouth” (Malachi 2:7). Priests diagnosed skin diseases, judged hard cases (Deuteronomy 17:8-9), and blessed the people with the words the LORD gave Aaron: “May the LORD bless you and keep you” (Numbers 6:24). A pair of small silver scrolls found at Ketef Hinnom in Jerusalem in 1979, dated to around 600 BC, carry a form of that blessing, the oldest surviving text of any passage of the Bible.\n\nThe high priest wore garments ‘for glory and for beauty’ (Exodus 28): an ephod, a breastpiece set with twelve stones engraved with the names of the tribes, so that he carried Israel over his heart into God's presence, the Urim and Thummim for seeking God's decision, and a gold plate on his turban engraved “HOLY TO THE LORD” (Exodus 28:36). In the monarchy the family of Zadok held the high priesthood in Jerusalem, and Ezekiel limits the altar to Zadok's sons (Ezekiel 44:15). By the end of the Old Testament period the priests were organized into twenty-four divisions that served in the temple by turns, a week at a time (1 Chronicles 24). Zechariah, the father of John the Baptist, belonged to the division of Abijah and was chosen by lot to burn incense when the angel appeared to him (Luke 1:5-9).\n\nThe New Testament speaks of priesthood in two ways. Hebrews presents Jesus as the great high priest, not from Aaron's line but ‘in the order of Melchizedek’ (Psalm 110:4; Hebrews 7), who offered himself once for all (Hebrews 7:27). And the whole people of God inherit the calling Israel received at Sinai, to be a kingdom of priests (Exodus 19:6): “you are a chosen people, a royal priesthood, a holy nation” (1 Peter 2:9). Christian traditions differ on how this bears on ordained ministry. Catholic and Orthodox churches call their presbyters priests who share in Christ's priesthood at the Eucharist, while Protestant churches, following Luther's teaching on the priesthood of all believers, generally reserve priestly language for Christ and for the whole church.",
+      "refs": [
+        "Leviticus 8:1-13",
+        "Numbers 18:1-7",
+        "Leviticus 10:10-11",
+        "Luke 1:5-9",
+        "Hebrews 7:23-27"
+      ]
+    },
+    {
+      "h": "Holy and common, clean and unclean",
+      "body": "The priest's task of distinguishing “between the holy and the common, between the clean and the unclean” (Leviticus 10:10) gives the basic map of Israel's world. Things were either holy (set apart to God) or common (ordinary); common things were either clean or unclean. Holiness and uncleanness were opposites that must never touch: an unclean person could not eat holy food or enter the sanctuary. The movement God desired was upward, from unclean to clean and from clean to holy, and sacrifice and washing were the means.\n\nUncleanness in Leviticus is usually not sin. It came from ordinary and often unavoidable parts of life: childbirth (Leviticus 12), a skin disease or a spreading mildew (Leviticus 13 to 14), bodily discharges including menstruation and seminal emission (Leviticus 15), touching a dead body (Numbers 19), and eating or touching certain animals (Leviticus 11). A person who buried a parent was unclean for a week, and so was a priest who did so for a close relative, though the high priest could not do even that. Uncleanness was contagious, passing by touch, but it was also temporary: it ended with the passage of time, washing, and in the more serious cases an offering. What was sinful was to ignore it, bringing uncleanness into contact with the holy.\n\nThe skin disease of Leviticus 13 to 14, traditionally translated ‘leprosy’, is a broader term (tsara'at) covering several conditions that make the skin scale or flake, and the same word is used of mildew on cloth and walls. It is almost certainly not, or not only, Hansen's disease, the modern leprosy. Its sufferer lived outside the camp with torn clothes and uncovered head, crying “Unclean, unclean!” (Leviticus 13:45), the signs of mourning, as if for his own death. When Miriam was struck with it, Aaron pleaded, “Please do not let her be like a stillborn infant” (Numbers 12:12).\n\nWhy these things? Scholars have offered several explanations. Medieval Jewish thinkers, notably Maimonides in his Guide for the Perplexed (3.48), gave reasons of health for some of the food laws, but that cannot account for the whole system, and the New Testament's release of the food laws would make little sense if they were hygiene. The anthropologist Mary Douglas (Purity and Danger, 1966) argued that clean animals are those that fit their category (fish with fins and scales, land animals that chew the cud and have split hooves), while anomalies are unclean; holiness means wholeness and order. She later revised her view in Leviticus as Literature (1999). Milgrom and Wenham, among others, noted that most sources of impurity are associated with death: corpses, the loss of blood or seed that carries life, skin that looks like a dying body. The God of Israel is the living God, and the sanctuary is the place of life. These explanations are not rivals so much as partial views of one conviction: that Israel's whole bodily life was to be lived in the presence of a holy God.\n\nAlongside this ritual impurity, the Old Testament speaks of a moral impurity caused by grave sins: sexual sins, idolatry, and murder defile the sinner, the sanctuary, and the land itself, until “the land will vomit out its inhabitants” (Leviticus 18:25; see also Numbers 35:33-34). Jonathan Klawans (Impurity and Sin in Ancient Judaism, 2000) showed how the two kinds differ: ritual impurity is contagious, temporary, and not sinful, while moral impurity is not contagious by touch, is not removed by washing, and can be removed only by atonement or punishment.",
+      "refs": [
+        "Leviticus 10:10",
+        "Leviticus 11:44-45",
+        "Leviticus 13:45-46",
+        "Numbers 19:11-13",
+        "Leviticus 18:24-28"
+      ]
+    },
+    {
+      "h": "The prophets and the sacrifices",
+      "body": "Israel's prophets spoke sharply about sacrifice. Samuel told Saul that “obedience is better than sacrifice” (1 Samuel 15:22). Amos heard God say, “I hate, I despise your feasts” and demand instead that “justice roll on like a river, and righteousness like an ever-flowing stream” (Amos 5:21, 24). Hosea's words, “For I desire mercy, not sacrifice, and the knowledge of God rather than burnt offerings” (Hosea 6:6), were quoted twice by Jesus (Matthew 9:13; 12:7). Isaiah called the offerings of a people with blood on their hands meaningless (Isaiah 1:11-17), and Micah summed up what the LORD requires: “to act justly, to love mercy, and to walk humbly with your God” (Micah 6:8).\n\nSome nineteenth- and twentieth-century critics read these passages as the prophets rejecting sacrifice outright, and set prophetic religion against priestly religion. Most scholars today read them differently. The prophets attacked sacrifice offered by people who oppressed the poor and worshiped other gods, as if ritual could buy off God while injustice went on; the same prophets looked forward to restored worship at the temple (Isaiah 56:7; Jeremiah 33:18; Ezekiel 40 to 48). The form of the Hebrew saying ‘not this but that’ often means ‘that more than this’, as the second half of Hosea 6:6 shows. Psalm 51, which says “You take no pleasure in burnt offerings” and that “The sacrifices of God are a broken spirit” (Psalm 51:16-17), ends by looking forward to right sacrifices offered on the altar again (Psalm 51:19). What God wanted was never the smoke without the heart.",
+      "refs": [
+        "1 Samuel 15:22",
+        "Amos 5:21-24",
+        "Hosea 6:6",
+        "Micah 6:6-8",
+        "Psalm 51:16-19"
+      ]
+    },
+    {
+      "h": "Purity in the time of Jesus",
+      "body": "By the first century, concern for purity had spread well beyond the temple. Archaeologists have found hundreds of stepped ritual baths (Hebrew miqva'ot) from this period in Jerusalem, in the villages of Judea and Galilee, and at Qumran, many of them in private homes and a cluster near the southern steps of the temple mount, where pilgrims would immerse before going up. They have also found workshops and large quantities of stone vessels, because by rabbinic law stone, unlike pottery, could not become unclean. The “six stone water jars” set out at Cana “for the Jewish rites of purification” (John 2:6) are exactly such vessels.\n\nJewish groups disagreed about how far purity should extend. The Qumran community lived in a state of constant purity and treated its common meal like a priestly meal. The Pharisees washed hands before eating (Mark 7:3), and Jacob Neusner argued that they sought to eat ordinary food in the purity required of priests in the temple; E. P. Sanders (Jewish Law from Jesus to the Mishnah, 1990) argued that their practice was more modest than that, and that most ordinary Jews observed the biblical purity laws chiefly when going to the temple. Scholars still debate how widely the stricter practices were kept.\n\nJesus' own conduct pressed against these boundaries without simply denying them. He touched a man with skin disease and then sent him to the priest with the offering Moses commanded (Mark 1:40-44). A woman with a flow of blood, unclean for twelve years, touched his garment, and instead of her uncleanness passing to him, his power passed to her and she was healed (Mark 5:25-34). He took a dead girl by the hand and raised her (Mark 5:41). And he taught that what defiles a person comes from within, from the heart, not from food, which Mark takes to mean that he declared all foods clean (Mark 7:14-23). The early church came to that conclusion only gradually, through Peter's vision (“Do not call anything impure that God has made clean,” Acts 10:15) and the council at Jerusalem (Acts 15). The dividing wall that the food laws built between Jew and gentile came down, and the holiness they taught was now to be sought in the heart and the whole of life.",
+      "refs": [
+        "John 2:6",
+        "Mark 7:1-23",
+        "Mark 1:40-44",
+        "Mark 5:25-34",
+        "Acts 10:9-16"
+      ]
+    },
+    {
+      "h": "Why the sacrifices matter for the New Testament",
+      "body": "The New Testament writers interpret the death of Jesus above all through the sacrifices. Jesus himself spoke of his coming death in the language of covenant sacrifice at the Last Supper, “This is My blood of the covenant, which is poured out for many” (Mark 14:24), echoing the blood with which Moses sealed the covenant at Sinai (Exodus 24:8). Paul calls Christ “our Passover lamb” (1 Corinthians 5:7) and says God sent him “as an offering for sin” (Romans 8:3), the phrase the Septuagint uses for the sin offering. He says God presented Christ as a hilasterion (Romans 3:25), the Greek word the Septuagint uses for the lid of the ark sprinkled on the Day of Atonement; English translations render it ‘propitiation’, ‘expiation’, ‘sacrifice of atonement’, or ‘mercy seat’. The choice was hotly debated in the twentieth century: C. H. Dodd (The Bible and the Greeks, 1935) argued that the word means expiation, the removal of sin, not the appeasing of God's anger, while Leon Morris (The Apostolic Preaching of the Cross, 1955) argued that in context it includes the turning aside of God's just wrath. Both agreed that it is God himself who provides the sacrifice.\n\nHebrews makes the argument at greatest length. The old sacrifices were a shadow of the good things to come, repeated because they could never finish the work: “it is impossible for the blood of bulls and goats to take away sins” (Hebrews 10:4). Christ, both priest and offering, “offered for all time one sacrifice for sins” and “sat down at the right hand of God” (Hebrews 10:12), a priest seated because his work was done. The whole Levitical system, in this reading, was not a mistake later corrected but a God-given pattern that taught Israel what sin costs, what holiness requires, and how God provides a way into his presence.\n\nThe language of sacrifice then passes to the Christian life. Believers are to present their bodies “as living sacrifices, holy and pleasing to God” (Romans 12:1), to offer “a sacrifice of praise” (Hebrews 13:15), and to do good and share, “for with such sacrifices God is pleased” (Hebrews 13:16). Paul calls a church's gift to him “a fragrant offering, an acceptable sacrifice” (Philippians 4:18).\n\nJudaism, too, had to live without sacrifice after the Romans destroyed the temple in AD 70. A well-known rabbinic tradition (Avot de-Rabbi Natan 4) tells of Rabbi Yohanan ben Zakkai consoling a disciple at the ruins by pointing to Hosea 6:6: deeds of loving-kindness now make atonement. Prayer, the study of Torah, and acts of kindness took the place of the altar in Jewish life, and the synagogue liturgy for the Day of Atonement still recites the high priest's service. Jews and Christians thus both read Leviticus as a book about drawing near to the holy God, and differ over where, since AD 70, the way into his presence is found.",
+      "refs": [
+        "Mark 14:24",
+        "Exodus 24:8",
+        "Romans 3:25",
+        "Hebrews 10:1-14",
+        "Romans 12:1"
+      ]
+    }
+  ]
+}

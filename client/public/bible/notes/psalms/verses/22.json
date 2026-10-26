@@ -1,0 +1,359 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After the heading, the psalm opens with the most famous cry of dereliction in Scripture. The sufferer does not doubt that God exists or that God is his; he asks why his God has left him and stays far from his groaning. Jesus prayed this line from the cross.",
+      "grammar": "Eli Eli lamah azavtani, ‘my God, my God, why have you forsaken me?’ Eli is the short divine name El with ‘my’, repeated for intensity; the relationship is claimed twice in the same breath as the abandonment. Azavtani is a perfect of azav, ‘to leave, abandon’, with the suffix ‘me’: the forsaking is felt as an accomplished fact. The second line has no verb: rachoq mishuati divre shaagati, literally ‘far from my salvation, the words of my roaring’. Sheagah, ‘roaring’, is the noise of a lion (the same root appears in verse 13). The sufferer roars like the beasts that will roar at him.",
+      "words": ["H0410G", "H5800A", "H7350", "H3444", "H7581"],
+      "history": "The heading's ‘Doe of the Dawn’ (ayyelet hashachar) is probably a tune name. The Septuagint read it differently, ‘concerning the help that comes at dawn’, linking the word to eyaluti, ‘my strength’ or ‘my help’, in verse 19. The Babylonian Talmud (Megillah 15b) pictures Queen Esther praying this verse as she went unsummoned into the king's presence, and rabbinic tradition connected the ‘doe of the dawn’ with Esther (b. Yoma 29a).",
+      "text": "Hebrew Bibles count the heading as verse 1, so every verse of this psalm is numbered one higher in Hebrew than in English: the English 22:1 is Hebrew 22:2, and the English 22:16 is Hebrew 22:17. The Septuagint and the Latin Vulgate number the psalm itself as Psalm 21, because they join Psalms 9 and 10.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The Bible puts the language of abandonment into the mouth of faith. The sufferer does not stop saying ‘my God’; the complaint is itself an act of trust addressed to the one who seems absent."
+        },
+        {
+          "id": "atonement",
+          "note": "Christians have long disagreed about what Jesus' use of this line means. Some stress that citing a psalm's opening evoked the whole psalm, including its vindication; others, including Luther and Calvin, held that Christ truly bore God's judgment on sin and experienced abandonment in his human soul; Jürgen Moltmann (The Crucified God, 1972) read the cry as God's own entry into godforsakenness. Classical theology adds that the Son's cry does not divide the Trinity; it is the true cry of his human nature bearing sin."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Mark 15:34",
+          "note": "Mark gives the cry in Aramaic, Eloi, Eloi, lema sabachthani, then translates it; the Aramaic Targum of the psalm uses the same verb, shevaqtani. Matthew 27:46 has Eli, closer to the Hebrew, which explains why bystanders thought he was calling Elijah (Eliyahu). The Gospels do not soften the cry; they record it and let the rest of the psalm, echoed throughout the passion story, interpret it."
+        }
+      ],
+      "refs": ["Mark 15:34", "Matthew 27:46", "Psalm 42:9", "Psalm 88:14", "Hebrews 5:7"]
+    },
+    {
+      "v": "2",
+      "context": "The complaint extends through day and night. The sufferer keeps calling, and God keeps not answering. The unanswered prayer is the problem the whole psalm works through, and verse 21 will reverse it with ‘you have answered me’.",
+      "grammar": "Eqra, ‘I call’, and lo taaneh, ‘you do not answer’, are imperfects describing repeated action: I keep calling, you keep not answering. Yomam and laylah, ‘by day’ and ‘by night’, cover the whole of time. Dumiyyah, the last word, means ‘silence’ or ‘stillness’, so the line can be read ‘there is no rest for me’ (BSB) or ‘I am not silent’. Either way, he cannot stop crying out.",
+      "words": ["H7121G", "H6030B", "H3915", "H1747"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Persistent prayer in the face of silence is presented as faithful, not faithless. The psalm does not explain the silence; it keeps praying through it."
+        }
+      ],
+      "refs": ["Psalm 88:1-2", "Luke 18:1-7", "Lamentations 3:8", "Psalm 42:3"]
+    },
+    {
+      "v": "3",
+      "context": "The first turn toward trust. Against his own experience, the sufferer confesses what God is: holy, enthroned on Israel's praises. The confession does not solve the problem; it sharpens it, since this holy God has always answered his people.",
+      "grammar": "Veattah qadosh, ‘yet you are holy’, fronts the pronoun ‘you’ against the ‘I’ of the complaint. Yoshev tehillot Yisrael, ‘sitting (enthroned on) the praises of Israel’, adapts the familiar title of God ‘enthroned between the cherubim’ above the ark (1 Samuel 4:4; Psalm 80:1): here Israel's praises are his throne. The Septuagint divided the line differently, ‘you dwell in the holy place, the praise of Israel’.",
+      "words": ["H0859A", "H6918G", "H3427", "H8416"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "God's throne among his people is their praise. The sufferer, who cannot now praise, remembers where God is found, and the psalm will end with him restored to that praise (verses 22-25)."
+        }
+      ],
+      "refs": ["1 Samuel 4:4", "Psalm 80:1", "Isaiah 6:3", "Psalm 99:1-3"]
+    },
+    {
+      "v": "4-5",
+      "context": "The sufferer remembers Israel's history: the fathers trusted, cried out, and were delivered. The memory is both comfort and accusation, since his own crying is not being answered.",
+      "grammar": "The verb batach, ‘trust’, appears three times in two verses: bekha batchu avotenu, batchu, ‘in you our fathers trusted, they trusted’, and bekha vatchu, ‘in you they trusted’. The repetition sounds like a creed. The verbs of rescue vary: vattefallatemo, ‘and you delivered them’ (Piel of palat, with the poetic suffix -emo), and nimlatu, ‘they escaped’. Velo voshu, ‘and they were not put to shame’, uses bosh, the shame of disappointed hope. Zaaqu, ‘they cried out’, is the verb of Israel's cry in Egypt (Exodus 2:23).",
+      "words": ["H0982", "H6403", "H2199", "H4422", "H0954"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Trust draws on the memory of God's past faithfulness to his people. Paul uses the same language of hope that is not put to shame (Romans 5:5; 10:11)."
+        }
+      ],
+      "refs": ["Exodus 2:23-25", "Psalm 44:1-3", "Romans 5:5", "Romans 10:11", "Isaiah 49:23"]
+    },
+    {
+      "v": "6",
+      "context": "The contrast turns bitter: the fathers were delivered, but I am a worm, not a man. The sufferer is despised by others and has lost even his standing as a human being in their eyes.",
+      "grammar": "Veanokhi tolaat velo ish, ‘but I am a worm and not a man’, fronts the pronoun against ‘our fathers’ in verse 4. Tolaat is an ordinary worm or maggot (Job 25:6), and the same word names the insect from which crimson dye was made (Exodus 25:4). Some preachers build lessons on the dye insect, but the psalm's point is only lowliness, as when God calls Israel ‘you worm Jacob’ (Isaiah 41:14). Cherpat adam uvezui am, ‘a reproach of men and despised of the people’: bezui is a passive participle of bazah, ‘to despise’, the verb used of the servant in Isaiah 53:3.",
+      "words": ["H0595", "H8438B", "H2781", "H0959"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Contempt can strip a person of their humanity in others' eyes, and the sufferer feels it. The psalm will answer that God has not despised the afflicted (verse 24), using the same verb."
+        }
+      ],
+      "refs": ["Isaiah 53:3", "Isaiah 41:14", "Job 25:6", "Isaiah 49:7"]
+    },
+    {
+      "v": "7-8",
+      "context": "The mockery is described and then quoted. Onlookers sneer, shake their heads, and taunt the sufferer with his own trust: let the LORD rescue him, if he delights in him. The Gospels record the same gestures and words at the cross.",
+      "grammar": "Yaligu, ‘they mock’, is the verb of Psalm 2:4, where God mocked the nations; here the mockery is turned on God's faithful one. Yaftiru vesafah, ‘they part the lip’, and yaniu rosh, ‘they shake the head’, are gestures of scorn (Lamentations 2:15). In verse 8 the Hebrew has gol el YHWH, an imperative, ‘commit (your way) to the LORD’, spoken in sarcasm. The Septuagint and other ancient versions read a perfect, ‘he trusted in the LORD’, which the BSB follows with \"He trusts in the LORD\". Ki chafets bo, ‘since he delights in him’, turns God's favor into a taunt.",
+      "words": ["H3932", "H6362", "H5128", "H1556", "H6403", "H5337", "H2654A"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The cruelest mockery attacks the sufferer's faith: if God loved you, he would rescue you. The psalm lets the taunt stand, and the rest of the psalm answers it."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Matthew 27:39-43",
+          "note": "Passersby shake their heads at Jesus (Matthew 27:39; Mark 15:29), and the chief priests say he trusts in God, let God deliver him now if he wants him, for he said ‘I am the Son of God’. Matthew's wording follows the Septuagint of verse 8 closely. The taunt also recalls the Wisdom of Solomon 2:18, where the wicked say that if the righteous man is God's son, God will help him. Matthew presents Jesus' enemies speaking the psalm's lines without knowing it."
+        }
+      ],
+      "refs": ["Matthew 27:39-43", "Mark 15:29-32", "Luke 23:35", "Lamentations 2:15", "Psalm 109:25"]
+    },
+    {
+      "v": "9-10",
+      "context": "The second turn toward trust. Against the mockers' taunt, the sufferer answers from his own life: God drew him from the womb and made him trust at his mother's breast. God was his God before he could know it.",
+      "grammar": "Ki attah gochi mibbaten, ‘for you are the one who drew me from the womb’: gochi is a participle of a rare verb (giach) for bursting or drawing forth, picturing God as the midwife. Mavtichi, ‘who made me trust’, is a Hiphil participle of batach, the verb of verses 4 and 5: the trust of the fathers was given to him at the breast. Alekha hoshlakhti merachem, ‘on you I was cast from birth’, a Hophal (passive) of shalakh, may reflect the custom of placing a newborn on a father's knees to acknowledge it (Genesis 50:23; Job 3:12). Eli attah, ‘my God are you’, echoes the opening cry, now as confession.",
+      "words": ["H1518", "H0990H", "H0982", "H7993", "H7358", "H0410G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The sufferer's relationship with God began before he could choose it. God's care from birth becomes the ground for trusting him when he seems absent (compare Psalm 71:5-6; Jeremiah 1:5)."
+        }
+      ],
+      "refs": ["Psalm 71:5-6", "Psalm 139:13-16", "Jeremiah 1:5", "Galatians 1:15", "Isaiah 46:3-4"]
+    },
+    {
+      "v": "11",
+      "context": "The first direct plea: be not far from me. The verse is a hinge, turning from memory to the present danger, which verses 12 to 18 describe.",
+      "grammar": "Al tirchaq mimmenni, ‘do not be far from me’, uses al with the jussive for an urgent negative request, answering rachoq, ‘far’, in verse 1. Ki tsarah qerovah, ‘for trouble is near’: qarov, ‘near’, is the opposite of rachoq, so the verse sets the far God against the near trouble. Ki en ozer, ‘for there is no helper’, prepares for verse 19, where God is called ‘my help’.",
+      "words": ["H0408", "H7368", "H6869B", "H7138", "H5826"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "The plea ‘be not far’ occurs three times (verses 1, 11, 19), marking the structure of the lament. Prayer here is the refusal to accept God's distance as final."
+        }
+      ],
+      "refs": ["Psalm 35:22", "Psalm 38:21", "Psalm 71:12", "Psalm 72:12"]
+    },
+    {
+      "v": "12-13",
+      "context": "The enemies appear as beasts: powerful bulls of Bashan surround him, and lions open their mouths to tear and roar. The images describe the experience of being hemmed in by overwhelming, hostile strength.",
+      "grammar": "Sevavuni parim rabbim, ‘many bulls have surrounded me’, and abbire Vashan kitteruni, ‘mighty ones of Bashan have encircled me’: abbir, ‘mighty’, is used of bulls and warhorses, and kitter, ‘encircle’, is related to keter, ‘crown’. In verse 13 patsu alay pihem, ‘they have opened their mouth against me’, and aryeh toref vesoeg, ‘a lion tearing and roaring’, with participles for ongoing menace. The roaring (shoeg) answers the sufferer's own ‘roaring’ (sheagah) in verse 1.",
+      "words": ["H5437H", "H6499", "H0047G", "H1316", "H3803", "H0738B", "H2963", "H7580"],
+      "history": "Bashan, the fertile plateau east of the Sea of Galilee (the modern Golan and the Hauran), was famous for cattle and oaks (Amos 4:1; Ezekiel 39:18). It had been the kingdom of Og, whom Israel defeated (Numbers 21:33-35), and in later poetry it stands for arrogant strength.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The psalm describes suffering not only as pain but as helplessness before powers that encircle. The beast imagery gives words to that experience without naming specific enemies, which is why any sufferer can pray it."
+        }
+      ],
+      "refs": ["Amos 4:1", "Numbers 21:33-35", "1 Peter 5:8", "Psalm 17:12", "Psalm 68:30"]
+    },
+    {
+      "v": "14",
+      "context": "The focus shifts from the enemies outside to the body within. He is poured out like water, his bones are out of joint, and his heart melts like wax. The language is of complete physical and inward collapse.",
+      "grammar": "Kammayim nishpakhti, ‘like water I have been poured out’: a Niphal of shafakh, the image of life spilled on the ground that cannot be gathered up (2 Samuel 14:14). Vehitparedu kol atsmotay, ‘and all my bones have come apart’, a Hithpael of parad, ‘to separate’. Libbi kaddonag names melting wax, the image used for the mountains melting before God (Psalm 97:5). The verb namas, ‘it melts’, is a Niphal of masas, the verb used when the people's hearts melt in fear in Joshua 7:5.",
+      "words": ["H4325G", "H8210G", "H6504", "H6106G", "H1749", "H4549"],
+      "theology": [
+        {
+          "id": "humanity",
+          "note": "Scripture describes suffering in bodily terms: bones, heart, inward parts. The psalm treats the body as part of the person who suffers and who will be restored, not as a shell to be escaped."
+        }
+      ],
+      "refs": ["2 Samuel 14:14", "Psalm 97:5", "Joshua 7:5", "Job 30:16-17"]
+    },
+    {
+      "v": "15",
+      "context": "The collapse reaches its end. His strength is dried like a broken pot, his tongue sticks to his jaws with thirst, and God has laid him in the dust of death. The last line names God as the one who has brought him there.",
+      "grammar": "Yavesh kacheres kochi, ‘my strength is dried up like a potsherd’. Some scholars suggest that kochi, ‘my strength’, was originally chikki, ‘my palate’, the same letters in a different order, which would fit the next line about the tongue. Uleshoni mudbaq malqochay, ‘and my tongue is made to cling to my jaws’, a Hophal participle of davaq. Velaafar mavet tishpeteni, ‘and to the dust of death you set me’: shafat means to set something down, used for setting a pot on the fire (2 Kings 4:38; Ezekiel 24:3). The second person ‘you’ is startling: God is the agent.",
+      "words": ["H3001", "H2789", "H3581B", "H3956G", "H1692", "H6083", "H4194", "H8239"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The psalmist does not explain his suffering as chance or as the enemies' work alone; he says ‘you’ laid me in the dust. The same God who is blamed is the one appealed to, which is how biblical lament holds God's rule and human anguish together."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "John 19:28",
+          "note": "John says that Jesus, knowing that all was now accomplished, said ‘I thirst’ so that the Scripture would be fulfilled. John does not name the text, and interpreters point both to this verse's parched tongue and to Psalm 69:21, where the sufferer is given sour wine for his thirst."
+        }
+      ],
+      "refs": ["John 19:28", "Psalm 69:21", "Genesis 3:19", "Psalm 90:3"]
+    },
+    {
+      "v": "16",
+      "context": "The enemies close in again, now as dogs and a gang of evildoers. The third line, concerning his hands and feet, is the most disputed line of the psalm.",
+      "grammar": "Ki sevavuni kelavim, ‘for dogs have surrounded me’; adat mereim hiqqifuni, ‘a company of evildoers has encircled me’. Adah, ‘company’, is the word often used for Israel's own congregation, set here against the true assembly (qahal) of verse 22. The disputed words are kaari yaday veraglay. As the standard Hebrew text is pointed, kaari means ‘like the lion’, giving ‘like the lion, my hands and my feet’, a line with no verb. Those who keep it supply one, such as ‘like lions they maul my hands and feet’ (compare the lion in verses 13 and 21 and Isaiah 38:13). Those who read a verb take the consonants as a form of karah, ‘to dig’ (as in Psalm 40:6), or of a related root, giving ‘they pierced’ or ‘they gouged’, or of a verb meaning ‘to shrivel’.",
+      "words": ["H3611", "H5712", "H7489A", "H5362B", "H0738B", "H3027G", "H7272"],
+      "text": "The evidence divides. The Masoretic Text reads kaari (‘like a lion’). A few medieval Hebrew manuscripts read kaaru or karu, both verb forms. The Septuagint, translated by Jewish scholars before the Christian era, reads oryxan, ‘they dug’; the Syriac Peshitta also has a verb meaning pierce. Symmachus's Greek version and Jerome's Latin translation from the Hebrew render a verb meaning ‘bind’. A Psalms scroll from Nahal Hever near the Dead Sea (5/6HevPs), copied around the first century AD, reads kaaru, which many scholars take as a verb. Translations follow different paths: ‘pierced’ (BSB, ESV, KJV), ‘my hands and feet have shriveled’ (NRSV), and ‘like lions they maul my hands and feet’ (NJPS). No Gospel quotes the verse, though John 20:25-27 and Luke 24:39 draw attention to the wounds in Jesus' hands and feet.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "Whichever reading is right, the verse pictures the sufferer's hands and feet exposed to his attackers. Christian readers have seen in it the shape of the crucifixion, but the church's reading of Psalm 22 as a passion psalm rests on the Gospels' use of verses 1, 7-8, and 18, not on this verse alone."
+        }
+      ],
+      "refs": ["Isaiah 38:13", "Psalm 40:6", "John 20:25-27", "Luke 24:39", "Zechariah 12:10"]
+    },
+    {
+      "v": "17",
+      "context": "The sufferer is so emaciated or exposed that he can count his bones, and his enemies stand and stare at him. Being looked at in helplessness is part of the humiliation.",
+      "grammar": "Asapper kol atsmotay, ‘I can count all my bones’: asapper is the Piel imperfect of safar, the same verb used in verse 22 for ‘recounting’ God's name, a painful echo. Hemmah yabbitu yiru vi, ‘they look, they gaze on me’: two verbs of seeing are stacked, and raah with the preposition be often means to look with gloating satisfaction (Psalm 54:7; 118:7).",
+      "words": ["H5608A", "H6106G", "H5027", "H7200G"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "Public exposure compounds pain. The psalm names the humiliation of being stared at, and Luke records that at the cross the people stood watching (Luke 23:35)."
+        }
+      ],
+      "refs": ["Luke 23:35", "Psalm 118:7", "Job 33:21", "Psalm 54:7"]
+    },
+    {
+      "v": "18",
+      "context": "The enemies divide his garments and cast lots for his clothing, as if he were already dead. Garments were valuable property, and taking them is the last act of dispossession.",
+      "grammar": "The verse is a pair of parallel lines: yechalleqa vegaday lahem, ‘they divide my garments among themselves’, and veal levushi yappilu goral, ‘and for my clothing they cast a lot’. In Hebrew poetry the second line typically restates the first, so beged (garment) and levush (clothing) are synonyms here. Yappilu goral, ‘they make fall a lot’, is the Hiphil of nafal, the idiom for casting lots.",
+      "words": ["H2505A", "H0899B", "H3830", "H5307I", "H1486"],
+      "text": "Some later manuscripts of Matthew 27:35, followed by the King James Version, add a fulfillment formula quoting this verse. The earliest manuscripts lack it, and it was probably added from John 19:24.",
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The Gospels saw in this verse the literal dispossession of Jesus at his execution. The one who was stripped of everything is, in the psalm's movement, the one whose rescue brings the nations to worship."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "John 19:23-24",
+          "note": "John quotes the verse in the Septuagint's wording and reads its two lines as two actions: the soldiers divided Jesus' garments into four shares and cast lots for the seamless tunic. Mark 15:24, Matthew 27:35, and Luke 23:34 describe the dividing and casting of lots in the psalm's language without a formal quotation. John's reading of the parallel lines as distinct events is a characteristic way of showing Scripture fulfilled in detail."
+        }
+      ],
+      "refs": ["John 19:23-24", "Mark 15:24", "Matthew 27:35", "Luke 23:34"]
+    },
+    {
+      "v": "19-20",
+      "context": "The third plea not to be far away, now addressed to the LORD by name and to God as ‘my strength’. The sufferer asks to be rescued from the sword and from the dogs, naming his enemies in reverse order from verses 12 to 16.",
+      "grammar": "Veattah YHWH al tirchaq, ‘but you, LORD, do not be far’, repeats verse 11 with the divine name added. Eyaluti, ‘my strength’ or ‘my help’, occurs only here; its root is related to the heading's ayyelet (‘doe’). Chushah, ‘hurry’, and hatsilah, ‘deliver’, are imperatives lengthened with a final he, a form of urgent appeal. In verse 20 yechidati, ‘my only one’, parallels nafshi, ‘my life’: yachid means ‘only, unique’, the word used of Isaac as Abraham's only son (Genesis 22:2). The sufferer's life is the one thing he has left.",
+      "words": ["H0360", "H2363A", "H5337", "H2719", "H3611", "H3173"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The plea asks God to deliver the whole of what the sufferer is, his one life. Rescue in the Psalms is the saving of a life, not merely relief from pain."
+        }
+      ],
+      "refs": ["Psalm 35:17", "Psalm 70:1", "Genesis 22:2", "Psalm 38:22"]
+    },
+    {
+      "v": "21",
+      "context": "The turning point of the psalm. The plea continues, ‘save me from the lion's mouth’, and then, in the middle of the verse, the sufferer says, ‘from the horns of the wild oxen you have answered me’. The unanswered prayer of verse 2 has been answered.",
+      "grammar": "Hoshieni mippi aryeh, ‘save me from the mouth of the lion’, is an imperative; umiqqarne remim anitani, ‘and from the horns of wild oxen you have answered me’, is a perfect. The abrupt shift from plea to report is the hinge of the psalm, and the BSB marks it with an exclamation. Some grammarians read anitani as a ‘precative perfect’, a perfect used as a request (‘answer me’), a category whose existence in Hebrew is debated. The Septuagint read the consonants as aniyyati, ‘my lowliness’, continuing the plea (‘save my lowliness from the horns of the unicorns’). The Masoretic reading makes the answer burst in mid-sentence, as if God responds while the sufferer is still speaking.",
+      "words": ["H3467", "H6310G", "H0738B", "H7161A", "H7214", "H6030B"],
+      "history": "The reem was the aurochs, the great wild ox of the ancient Near East, now extinct; Assyrian kings boasted of hunting it (Akkadian rimu). The Septuagint rendered it monokeros, ‘one-horned’, and through the Latin the King James Version gave English readers ‘unicorns’ here and in Job 39:9-10.",
+      "theology": [
+        {
+          "id": "resurrection",
+          "note": "The psalm's turn from death's dust to praise, with the answer arriving at the last moment, became for the church the shape of Good Friday turning to Easter. Hebrews 5:7 says Jesus offered prayers with loud cries to the one able to save him from death and was heard."
+        }
+      ],
+      "refs": ["Hebrews 5:7", "Job 39:9-10", "Psalm 28:6", "Isaiah 65:24"]
+    },
+    {
+      "v": "22",
+      "context": "The praise begins. The rescued sufferer will tell God's name to his brothers and praise him in the assembly. The one who was mocked by the crowd now leads worship in the congregation.",
+      "grammar": "Asapperah shimkha leechay, ‘I will recount your name to my brothers’: asapperah is a cohortative of safar, the verb of Psalm 2:7 (‘I will proclaim the decree’). Betokh qahal ahalleleka, ‘in the midst of the assembly I will praise you’: qahal is the gathered worshiping people, which the Septuagint regularly renders ekklesia, the New Testament's word for the church. Ahallel is a Piel of halal, the root of hallelujah.",
+      "words": ["H5608A", "H8034", "H0251G", "H6951", "H1984B"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "Rescue leads to the assembly. The sufferer's private deliverance becomes public praise that builds up God's people."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 2:12",
+          "note": "Hebrews puts this verse on the lips of the risen Christ, following the Septuagint closely with ekklesia for ‘assembly’. The writer's point is that Jesus is not ashamed to call his people brothers, because he shared their flesh and suffering. After the resurrection, Jesus sends Mary to tell ‘my brothers’ (John 20:17), a phrase many readers connect with this verse."
+        }
+      ],
+      "refs": ["Hebrews 2:11-12", "John 20:17", "Psalm 40:9-10", "Romans 15:9"]
+    },
+    {
+      "v": "23",
+      "context": "The rescued one calls on all who fear the LORD, all the offspring of Jacob and Israel, to praise, honor, and stand in awe of God.",
+      "grammar": "Three plural imperatives: hallelhu, ‘praise him’, kabbeduhu, ‘honor him’ (a Piel of kavad, to give weight or glory), and veguru mimmennu, ‘and stand in awe of him’. Gur here means ‘to fear’, a different verb from gur, ‘to sojourn’. Yire YHWH, ‘you who fear the LORD’, is a standard designation of the faithful in Israel's worship.",
+      "words": ["H3373", "H1984B", "H3513G", "H1481C", "H2233H"],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "Praise and awe belong together. Those who fear the LORD are invited to rejoice in what he has done for one of them."
+        }
+      ],
+      "refs": ["Psalm 135:19-20", "Psalm 115:11-13", "Revelation 19:5"]
+    },
+    {
+      "v": "24",
+      "context": "The reason for praise: God has not despised the afflicted one's suffering, has not hidden his face, and has heard his cry. Each clause reverses an earlier complaint.",
+      "grammar": "Lo vazah, ‘he has not despised’, answers bezui am, ‘despised by the people’, in verse 6: people despised him, God did not. Velo shiqqats, ‘and has not abhorred’, is a strong Piel of shaqats. Enut ani, ‘the affliction of the afflicted’, pairs two words from the same root (anah, to be bowed down). Velo histir panav mimmennu, ‘he has not hidden his face from him’, answers the sense of abandonment in verse 1. Uveshavveo elav shamea, ‘and when he cried to him, he heard’, answers verse 2.",
+      "words": ["H0959", "H8262", "H6039", "H6041", "H5641", "H7768", "H8085G"],
+      "theology": [
+        {
+          "id": "justice-poor",
+          "note": "The God of Israel attends to the afflicted whom others despise. This conviction runs through the Psalms (Psalm 9:12; 34:6) and shapes the Magnificat's praise of the God who lifts the lowly (Luke 1:52)."
+        }
+      ],
+      "refs": ["Psalm 9:12", "Psalm 34:6", "Psalm 69:33", "Luke 1:52", "Hebrews 5:7"]
+    },
+    {
+      "v": "25",
+      "context": "The sufferer's praise in the great assembly and the payment of his vows. In distress he had promised offerings; now he fulfills them before the congregation.",
+      "grammar": "Meittekha tehillati, ‘from you is my praise’: the praise itself is God's gift. Beqahal rav, ‘in the great assembly’, widens verse 22's ‘assembly’. Nedaray ashallem, ‘my vows I will pay’, uses the Piel of shalam, ‘to complete, repay’, the verb connected with the shelamim, the peace offerings eaten in a shared meal (Leviticus 7:16).",
+      "words": ["H0854", "H8416", "H6951", "H5088", "H7999A"],
+      "history": "A vow (neder) in Israel was a promise to God, often made in trouble, to offer a sacrifice when delivered (Jonah 2:9; Psalm 66:13-14). The vow offering was a form of peace offering, and its meat was eaten by the worshiper with family and guests within two days (Leviticus 7:16-17). Psalm 116:14 and 18 show the same public payment of vows after rescue.",
+      "refs": ["Leviticus 7:16", "Psalm 116:14", "Psalm 66:13-16", "Jonah 2:9"]
+    },
+    {
+      "v": "26",
+      "context": "The thanksgiving meal is shared with the poor, who eat and are satisfied, and all who seek the LORD praise him. The verse ends with a blessing spoken over the guests: may your hearts live forever.",
+      "grammar": "Yokhlu anavim veyisbau, ‘the humble will eat and be satisfied’: anavim, ‘the poor’ or ‘humble’, is a term the Psalms use for the pious poor who depend on God. Yehalelu YHWH doreshav, ‘those who seek him will praise the LORD’. Yechi levavkhem laad, ‘may your heart live forever’, is a jussive, a wish or blessing, addressed in the second person plural to the guests at the meal.",
+      "words": ["H0398", "H6035", "H7646", "H1875", "H2421", "H5703"],
+      "theology": [
+        {
+          "id": "sacraments",
+          "note": "The rescued sufferer's feast shared with the poor became, for many Christian readers, a picture of the Lord's Supper. Augustine, in his Expositions of the Psalms, read the eating of the poor and of the rich (verse 29) in that light. The psalm itself describes the Old Testament thanksgiving meal; the link is typological."
+        }
+      ],
+      "refs": ["Psalm 69:32", "Isaiah 25:6", "Luke 14:13-14", "Matthew 5:3-6"]
+    },
+    {
+      "v": "27-28",
+      "context": "The circle of praise widens to the whole world. All the ends of the earth will remember and turn to the LORD, and all the families of the nations will bow before him, because kingship belongs to the LORD.",
+      "grammar": "Yizkeru veyashuvu, ‘they will remember and turn’: remembering and turning (shuv, the Bible's word for repentance) are paired as the nations' response. Kol afse arets, ‘all the ends of the earth’, is the phrase of Psalm 2:8, where the ends of the earth were promised to the king. Kol mishpechot goyim, ‘all the families of the nations’, echoes God's promise that all the families of the earth would be blessed in Abraham (Genesis 12:3). Veyishtachavu, ‘and they will bow down’, is a form often analyzed as a rare stem (called Hishtaphel) of chavah. In verse 28 ki laYHWH hammelukhah, ‘for the kingship belongs to the LORD’, uses the same words as Obadiah 21.",
+      "words": ["H2142", "H7725O", "H0657A", "H7812", "H4940", "H4410", "H4910"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "One person's rescue becomes the occasion for the nations' conversion. The psalm moves from Israel to the ends of the earth, as the Abrahamic promise did, and the New Testament sees this movement carried out through the proclamation of the risen Christ."
+        },
+        {
+          "id": "sovereignty",
+          "note": "The ground of the nations' worship is that God already rules them. His kingship is not created by their submission; their submission acknowledges what is true."
+        },
+        {
+          "id": "kingdom",
+          "note": "The psalm closes the lament of one sufferer with the universal reign of God. The pairing of the suffering one and the coming kingdom anticipates the Gospels' proclamation of a kingdom that comes through the cross."
+        }
+      ],
+      "refs": ["Genesis 12:3", "Psalm 2:8", "Obadiah 1:21", "Psalm 86:9", "Revelation 11:15"]
+    },
+    {
+      "v": "29",
+      "context": "The worship reaches even further: the prosperous of the earth eat and worship, and those who go down to the dust, who cannot keep themselves alive, kneel before him. The verse is difficult, but it seems to include both the living and the dying or dead in the praise of God.",
+      "grammar": "Akhlu vayyishtachavu kol dishne erets, ‘all the fat ones of the earth have eaten and bowed down’: dishne, ‘fat ones’, means the prosperous. Lefanav yikhreu kol yorde afar, ‘before him will kneel all who go down to the dust’, the dying or dead. Venafsho lo chiyyah, literally ‘and his soul he did not keep alive’. Many scholars redivide the consonants of the first words to read akh lo yishtachavu kol yeshene erets, ‘surely to him will bow all who sleep in the earth’, which the NRSV follows. On that reading, the dead themselves join in worship, a rare thought in the Psalms, which elsewhere say the dead cannot praise God (Psalm 6:5; 88:10-12).",
+      "words": ["H0398", "H7812", "H1879", "H3766", "H3381", "H6083", "H2421"],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "If the dust-bound worship God, then death does not set a boundary to his praise. The verse opens the psalm's horizon toward the hope of resurrection that later Scripture states plainly (Isaiah 26:19; Daniel 12:2; Philippians 2:10)."
+        }
+      ],
+      "refs": ["Psalm 6:5", "Psalm 88:10-12", "Isaiah 26:19", "Philippians 2:10-11", "Isaiah 45:23"]
+    },
+    {
+      "v": "30-31",
+      "context": "The psalm ends with generations yet to come. Descendants will serve God, the Lord will be proclaimed to the next generation, and a people not yet born will hear of his righteousness: that he has done it.",
+      "grammar": "Zera yaavdennu, ‘offspring will serve him’; yesuppar laAdonai laddor, ‘it will be recounted of the Lord to the generation’, a Pual of safar, the verb of verses 17 and 22. The Septuagint divides the verses differently, joining the first word of verse 31 to verse 30: ‘to the Lord will be announced a generation that is coming’. Leam nolad, ‘to a people to be born’, uses a Niphal participle of yalad. The last words, ki asah, ‘for he has done it’, end the psalm with a verb of completed action. Many Christian readers have heard in them an echo of Jesus' last word in John 19:30, ‘It is finished’; the link is thematic, not a quotation, since John uses a different verb.",
+      "words": ["H2233H", "H5647H", "H5608A", "H1755", "H6666", "H3205", "H6213A"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's righteousness, his faithfulness in keeping his promises, is the story passed from generation to generation. The psalm that began with one voice crying alone ends with an unborn people hearing what God has done."
+        }
+      ],
+      "refs": ["Psalm 78:4-6", "Psalm 102:18", "Isaiah 53:10", "John 19:30"]
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "Pharisees and scribes come from Jerusalem, the seat of religious authority, and charge Jesus' disciples with breaking the tradition of the elders by eating without washing their hands. The Sabbath disputes of chapter 12 now give way to a dispute over purity. Matthew, unlike Mark, does not stop to explain Jewish washings to his readers (Mark 7:3-4).",
+      "grammar": "Tote proserchontai, ‘then there come’, is a historic present that opens the scene vividly. Apo Hierosolumōn, ‘from Jerusalem’, marks the visitors as an official delegation. Dia ti ... parabainousin, ‘why do they transgress?’, uses parabainō, literally ‘to step over’, a verb for breaking a law or boundary. Hē paradosis tōn presbuterōn, ‘the tradition of the elders’, uses presbuteroi for the teachers of earlier generations, not the council elders of 16:21. The charge is explained with gar: ou gar niptontai tas cheiras hotan arton esthiōsin, ‘for they do not wash their hands when they eat bread’. Niptontai is middle voice, ‘wash for themselves’, and ‘to eat bread’ is a Hebrew idiom for having a meal.",
+      "words": ["G5119", "G4334", "G2414", "G5330", "G1122", "G3845", "G3862", "G4245G", "G3538", "G5495", "G0740", "G2068"],
+      "history": "The Mishnah shows how seriously handwashing came to be taken. It lists among those placed under a ban by the sages a teacher named Eleazar ben Hanoch (some texts read Eliezer), because he cast doubt on the purity of hands, and says that when he died the court laid a stone on his coffin (m. Eduyot 5:6). The chapter note discusses the tractate Yadayim, the dispute of the schools of Shammai and Hillel (m. Berakhot 8:2), and Yair Furstenberg's argument that washing before ordinary meals was a recent Pharisaic development.",
+      "text": "The earliest manuscripts read ‘Pharisees and scribes from Jerusalem’. The later manuscripts behind the King James Version put the scribes first and add a relative clause, giving the KJV's ‘scribes and Pharisees, which were of Jerusalem’. The difference does not affect the meaning.",
+      "parallels": ["Mark 7:1-5"],
+      "refs": ["Mark 7:3-4", "Exodus 30:17-21", "Galatians 1:14", "Colossians 2:8"]
+    },
+    {
+      "v": "3-4",
+      "context": "Jesus answers the charge with a counter-charge. They ask why his disciples transgress the elders' tradition; he asks why they transgress God's command for the sake of that tradition. He then quotes the fifth commandment and its sanction as God's own words.",
+      "grammar": "Dia ti kai humeis parabainete, ‘why do you also transgress?’, takes up the leaders' own verb and turns it on them; kai humeis, ‘you also’, is emphatic. Tēn entolēn tou theou, ‘the commandment of God’, is set against tēn paradosin humōn, ‘your tradition’: not ‘of the elders’ now, but ‘yours’. Verse 4 opens ho gar theos eipen, ‘for God said’, and verse 5 answers humeis de legete, ‘but you say’, a pairing that recalls the antitheses of the Sermon on the Mount (5:21-48) in reverse: there Jesus' word deepened the law; here their word empties it. Tima, a present imperative, is ‘honor’. The penalty, thanatō teleutatō, literally ‘let him end by death’, uses a dative noun with an imperative to render the Hebrew idiom mot yumat, a verb doubled with its own infinitive, ‘he shall surely be put to death’.",
+      "words": ["G3845", "G1785", "G2316", "G3862", "G5091", "G2551", "G2288", "G5053"],
+      "ot": [
+        {
+          "ref": "Exodus 20:12",
+          "note": "Jesus quotes the fifth commandment, “Honor your father and mother,” and the sanction of Exodus 21:17, “Anyone who curses his father or mother must surely be put to death.” In Hebrew the verb for honor, kabbed, comes from the root for weight, and the law understood honor to include support in old age. The Septuagint renders the sanction with kakologeō, ‘to speak evil of’, the verb Matthew uses. Where Mark introduces the quotation with ‘Moses said’ (Mark 7:10), Matthew writes ‘God said’, so that the contrast in verses 4 and 5 is between God's word and human tradition in its sharpest form. The note on Mark 7:10 gives the Hebrew of the sanction."
+        }
+      ],
+      "text": "The earliest witnesses read ho theos eipen, ‘God said’. The later manuscripts behind the King James Version read ‘God commanded, saying’, which matches the word ‘commandment’ in verse 3. The sense is the same.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus treats the written commandment as God's own speech and the elders' tradition as human, and he refuses to let the second overrule the first. He does not attack the law; he defends it against a practice that let people keep a rule while breaking a command."
+        },
+        {
+          "id": "family",
+          "note": "The test case Jesus chooses is care for parents. By quoting both the command and its sanction, he shows how weighty the law makes the parents' claim, a claim no religious practice may cancel."
+        }
+      ],
+      "parallels": ["Mark 7:8-10"],
+      "refs": ["Exodus 20:12", "Exodus 21:17", "Leviticus 20:9", "Deuteronomy 5:16", "Ephesians 6:1-3"]
+    },
+    {
+      "v": "5-6",
+      "context": "Jesus describes the tradition at issue: a son declares to his parents that whatever support they would have received from him is a gift devoted to God, and so he no longer honors them with it. The result, Jesus says, is that the tradition nullifies the word of God. Mark gives the Hebrew term Corban; Matthew gives only its Greek meaning, ‘gift’.",
+      "grammar": "Hos an eipē tō patri ē tē mētri, ‘whoever says to father or mother’, is a general relative clause with the subjunctive. The formula itself is compressed: dōron ho ean ex emou ōphelēthēs, ‘a gift, whatever you might have been helped by from me’. Dōron is the Septuagint's usual rendering of the Hebrew qorban, ‘offering’ (Leviticus 1:2). Ou mē timēsei ton patera autou, ‘he shall certainly not honor his father’, uses ou mē with a future indicative, a strong negation; it can mean that the tradition frees him from the duty (‘he need not honor’, as the BSB) or that the vow now forbids him to use the property for them. Ēkurōsate, ‘you have annulled’, is a legal verb, akuroō, used by Paul of a covenant that the later law cannot annul (Galatians 3:17): the tradition has cancelled God's word as a court voids a contract.",
+      "words": ["G1435", "G5623", "G5091", "G0208", "G3056", "G3862"],
+      "history": "Josephus explains korban to Greek readers as meaning ‘a gift’ (Antiquities 4.73) and says the word was known abroad as a Jewish form of oath (Against Apion 1.167). The chapter note gives the Mishnah's evidence for such vows made against parents and the later ruling of the sages that they could be released on the ground of the honor owed to father and mother (m. Nedarim 5:6, 9:1), which shows rabbinic law moving toward Jesus' position.",
+      "text": "The earliest witnesses read “the word of God”; others read ‘the law of God’ or, as in the King James Version, ‘the commandment of God’, matching verse 3. Some early manuscripts have only ‘his father’, while others add ‘or his mother’ from verse 5.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "A gift to God cannot be paid with what is owed to one's parents. The verse forbids using religious devotion as a way out of the ordinary duties of love, a principle Paul applies when he tells believers to provide for their own relatives (1 Timothy 5:4, 8)."
+        }
+      ],
+      "parallels": ["Mark 7:11-13"],
+      "refs": ["Leviticus 1:2", "Numbers 30:2", "1 Timothy 5:4", "1 Timothy 5:8", "Galatians 3:17"]
+    },
+    {
+      "v": "7-9",
+      "context": "Jesus calls his questioners hypocrites and applies Isaiah's words to them: honor with the lips, hearts far away, worship in vain because it teaches human precepts as doctrine. Matthew puts the quotation after the Corban example, so that it comes as the verdict on the case.",
+      "grammar": "Hupokritai, ‘actors’, is a vocative. Kalōs eprophēteusen peri humōn Ēsaias, ‘Isaiah prophesied well about you’, does not mean Isaiah foresaw these particular men, but that his words fit them exactly. In the quotation, ho laos houtos tois cheilesin me tima, ‘this people honors me with the lips’, has a singular verb with the collective laos, then hē de kardia autōn, ‘but their heart’, shifts to the plural. Porrō apechei ap' emou, ‘is far distant from me’, uses apechō, the verb of the boat's distance from land in 14:24. Matēn de sebontai me, ‘in vain they worship me’, uses matēn, ‘to no purpose’, and didaskontes didaskalias entalmata anthrōpōn, ‘teaching as teachings the commandments of men’, uses a double accusative: human precepts are passed off as doctrine.",
+      "words": ["G5273", "G2573", "G4395", "G2268", "G2992", "G5491", "G2588", "G4206", "G0568", "G3155", "G4576", "G1319", "G1778"],
+      "ot": [
+        {
+          "ref": "Isaiah 29:13",
+          "note": "Isaiah addressed Jerusalem in the years of the Assyrian threat, late in the eighth century BC, when the city's leaders kept up worship while making policy without God (Isaiah 29:14-15). The Hebrew says the people draw near with their mouth and honor God with their lips while their heart is far, and ends, ‘their fear of me is a commandment of men learned by rote’ (mitswat anashim melummadah). The Septuagint turns the last line into ‘in vain do they worship me, teaching commandments of men and teachings’. Matthew follows the Greek closely, shortening its opening: he omits ‘draws near to me with its mouth’ and keeps only the lips. The note on Mark 7:6-7 discusses how the Greek may have read the Hebrew. Jesus uses the passage as a pattern that recurs, not a prediction of Pharisees, and the same chapter of Isaiah goes on to promise that the deaf will hear and the blind see (Isaiah 29:18), which Matthew 15:30-31 will show happening."
+        }
+      ],
+      "text": "The later manuscripts behind the King James Version begin the quotation, ‘This people draweth nigh unto me with their mouth, and honoureth me with their lips’, restoring words found in the Septuagint of Isaiah. The earliest witnesses have the shorter form the BSB translates.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Worship is measured by the heart, not the lips, and worship built on human rules taught as God's is empty. The prophets said the same of sacrifice without obedience (Hosea 6:6, which Matthew quotes in 9:13 and 12:7). The verse warns every tradition that performs devotion while the heart is elsewhere."
+        }
+      ],
+      "parallels": ["Mark 7:6-7"],
+      "refs": ["Isaiah 29:13-14", "Ezekiel 33:31", "Hosea 6:6", "Matthew 6:1-6", "Colossians 2:20-23"]
+    },
+    {
+      "v": "10-11",
+      "context": "Jesus turns from the leaders to the crowd and states the principle in a single saying: what goes into the mouth does not defile a person; what comes out of the mouth does. The disciples will ask for an explanation in verse 15.",
+      "grammar": "Proskalesamenos ton ochlon, ‘having called the crowd to himself’, is an aorist middle participle. Akouete kai suniete, ‘hear and understand’, are present imperatives, and suniēmi is the key verb of chapter 13, where understanding marks the good soil (13:23). The saying is an antithesis built like a proverb: ou to eiserchomenon eis to stoma koinoi ton anthrōpon, ‘not what goes into the mouth defiles the person’, alla to ekporeuomenon ek tou stomatos, touto koinoi ton anthrōpon, ‘but what comes out of the mouth, this defiles the person’. Touto, ‘this’, picks up the subject again for emphasis. Koinoō means to make common, in Jewish usage to make ritually unclean. Matthew has ‘mouth’ in both halves, where Mark says ‘from outside’ and ‘out of the person’ (Mark 7:15), which ties the saying to words: Jesus has said that the mouth speaks from the overflow of the heart (12:34).",
+      "words": ["G4341", "G3793", "G0191", "G4920", "G1525", "G4750", "G2840", "G1607"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "How far this saying reaches is debated. Daniel Boyarin and others read it as a ruling about handwashing, the Pharisees' tradition, which leaves the Torah's food laws in place; Matthew's closing words in verse 20 support that reading. Others hold that the principle stated here is broader and that the church drew its full conclusion later, as Mark's comment (Mark 7:19) and Paul's conviction that nothing is unclean in itself (Romans 14:14) show. Both readings agree that Jesus moves the question of defilement from the hands to the heart."
+        }
+      ],
+      "parallels": ["Mark 7:14-15"],
+      "refs": ["Matthew 12:34-37", "Mark 7:19", "Acts 10:14-15", "Romans 14:14"]
+    },
+    {
+      "v": "12-14",
+      "context": "The disciples report that the Pharisees were offended. Jesus answers with two images: every plant his Father did not plant will be uprooted, and the Pharisees are blind guides who will fall into a pit with those they lead. This exchange is found only in Matthew.",
+      "grammar": "Oidas hoti ... eskandalisthēsan, ‘do you know that ... they were offended?’, uses skandalizō, the verb of Nazareth's offense (13:57). Pasa phuteia hēn ouk ephuteusen ho patēr mou ho ouranios, ‘every plant that my heavenly Father did not plant’, pairs phuteia, a word found only here in the New Testament, with its own verb phuteuō. Ekrizōthēsetai, ‘will be uprooted’, is a future passive with God as the actor; it is the verb the owner forbade his servants in 13:29, so the uprooting is God's, not the disciples'. Aphete autous, ‘leave them’, is the same verb as ‘let both grow together’ (13:30). Tuphlos de tuphlon ean hodēgē, ‘if a blind man guides a blind man’, is a conditional with the subjunctive, and amphoteroi eis bothunon pesountai, ‘both will fall into a pit’, gives the certain result.",
+      "words": ["G3101", "G6063", "G5330", "G4624", "G5451", "G5452", "G3770", "G1610", "G0863G", "G5185", "G3595", "G3594", "G0999", "G4098"],
+      "text": "Many manuscripts read ‘blind guides of the blind’, the KJV's ‘blind leaders of the blind’, while some early witnesses have simply “blind guides”, the reading Westcott and Hort printed. The added words make explicit what the next clause says.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Jesus leaves the judgment of false teachers to his Father, who will uproot what he did not plant. The disciples are told to leave them alone, not to fight them. The image draws on Israel as God's planting (Isaiah 60:21, 61:3) and warns that a religious community can be judged not a planting of God at all."
+        }
+      ],
+      "parallels": ["Luke 6:39"],
+      "refs": ["Isaiah 60:21", "Isaiah 61:3", "Matthew 13:29-30", "Matthew 23:16-24", "Romans 2:19"]
+    },
+    {
+      "v": "15-16",
+      "context": "Peter asks Jesus to explain the saying, which Matthew calls a parable, and Jesus replies with a rebuke: even now the disciples lack understanding. Only Matthew names Peter as the one who asks.",
+      "grammar": "Phrason hēmin tēn parabolēn, ‘explain the parable to us’, uses phrazō, ‘to declare, to make plain’. Calling the saying of verse 11 a parabolē shows the word's range, like the Hebrew mashal, from long story to short riddling saying. Jesus' answer opens with akmēn, ‘even now’, an adverb found only here in the New Testament and at home in the everyday Greek of the period. Kai humeis asunetoi este, ‘are you also without understanding?’, uses asunetos, the negative adjective from the family of suniēmi: after saying yes in 13:51, the disciples are shown still learning.",
+      "words": ["G4074G", "G5419", "G3850", "G0188", "G0801"],
+      "text": "Most modern editions read ‘this parable’ (tēn parabolēn tautēn); Westcott and Hort and some other editions omit ‘this’, following early witnesses. The sense is the same.",
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Understanding in Matthew is given and also grown into. The disciples who said they understood in 13:51 must still be taught, and Jesus explains again rather than withdrawing. The verses picture revelation as patient instruction of slow learners."
+        }
+      ],
+      "parallels": ["Mark 7:17-18"],
+      "refs": ["Matthew 13:51", "Matthew 16:8-12", "Mark 8:17-21"]
+    },
+    {
+      "v": "17-18",
+      "context": "Jesus explains: food passes through the stomach and out of the body, but what comes out of the mouth comes from the heart, and that is what defiles. He moves the question from the table to the self.",
+      "grammar": "Ou noeite hoti, ‘do you not perceive that?’, uses ou, expecting ‘yes, we should’. Pan to eisporeuomenon eis to stoma, ‘everything that goes into the mouth’, eis tēn koilian chōrei, ‘goes into the stomach’, kai eis aphedrōna ekballetai, ‘and is thrown out into the latrine’. Aphedrōn is a rare word, found in the New Testament only here and in Mark 7:19, and its bluntness makes the point: food ends in the drain, not in the heart. Ta de ekporeuomena ek tou stomatos ek tēs kardias exerchetai, ‘the things that come out of the mouth come out of the heart’, makes the mouth the outlet of the heart. Kakeina koinoi ton anthrōpon, ‘and those defile the person’, uses kakeina, a contraction of kai ekeina, with the demonstrative for emphasis.",
+      "words": ["G3539", "G1531", "G4750", "G2836", "G5562", "G0856", "G1544", "G1607", "G2588", "G1831", "G2840"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Jesus locates the source of defilement inside, in the heart, the center of thought and will in biblical speech. The Old Testament already said that every inclination of the human heart is evil from youth (Genesis 8:21) and that the heart is deceitful above all things (Jeremiah 17:9). No washing of hands can reach the place where evil starts."
+        }
+      ],
+      "parallels": ["Mark 7:18-20"],
+      "refs": ["Matthew 12:34-35", "Genesis 8:21", "Jeremiah 17:9", "Proverbs 4:23"]
+    },
+    {
+      "v": "19-20",
+      "context": "Jesus lists what comes from the heart: evil thoughts, then murder, adultery, sexual immorality, theft, false testimony, and slander. The list follows the second table of the Ten Commandments. He ends where the dispute began: eating with unwashed hands does not defile. Matthew does not repeat Mark's comment that Jesus declared all foods clean (Mark 7:19).",
+      "grammar": "Ek gar tēs kardias exerchontai, ‘for out of the heart come’, grounds verse 18 with gar. Dialogismoi ponēroi, ‘evil thoughts’, heads the list as the root of what follows, and the other nouns are plural, phonoi, moicheiai, porneiai, klopai, pseudomarturiai, blasphēmiai, ‘murders, adulteries, immoralities, thefts, false testimonies, slanders’, naming repeated acts rather than abstractions. Pseudomarturia occurs in the New Testament only here and in 26:59, where the council seeks false testimony against Jesus. Blasphēmia can mean speech against God or against a neighbor; here, in a list shaped by the commandments, it most likely means slander. Verse 20 closes with an articular infinitive, to de aniptois chersin phagein, ‘but eating with unwashed hands’, ou koinoi ton anthrōpon, ‘does not defile the person’.",
+      "words": ["G2588", "G1831", "G1261", "G4190", "G5408", "G3430", "G4202", "G2829", "G5577", "G0988", "G2840", "G0449", "G5495", "G5315"],
+      "ot": [
+        {
+          "ref": "Exodus 20:13-16",
+          "note": "The Hebrew text of the Ten Commandments runs murder, adultery, theft, false witness (Exodus 20:13-16; Deuteronomy 5:17-20). Greek-speaking tradition often put adultery before murder: Codex Vaticanus of the Septuagint does so, and so do Luke 18:20, Romans 13:9, and James 2:11. Matthew's list keeps the Hebrew order, murder then adultery, adds sexual immorality beside adultery, and follows theft with false testimony and slander; he keeps the same Hebrew order when Jesus lists the commandments for the rich young man (19:18). The effect is to show that what defiles is exactly what God's law forbids, and that the law's commands are broken first in the heart, as the Sermon on the Mount taught of anger and lust (5:21-28)."
+        }
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin is traced from its source in thought to its fruit in deed. The heart produces what the hands then do, so the cure must reach the heart. The list is of actions against neighbors, which shows that for Jesus inward purity is proved in outward love."
+        },
+        {
+          "id": "law",
+          "note": "Jesus measures defilement by the Ten Commandments rather than by rules of washing, which confirms that the moral law remains the standard of holiness in his teaching. By ending with handwashing (verse 20), Matthew limits the ruling to the question the Pharisees raised."
+        }
+      ],
+      "parallels": ["Mark 7:21-23"],
+      "refs": ["Exodus 20:13-16", "Matthew 5:21-28", "Matthew 19:18-19", "Matthew 26:59-60", "Galatians 5:19-21"]
+    },
+    {
+      "v": "21-22",
+      "context": "Jesus withdraws to the district of Tyre and Sidon, and a Canaanite woman comes out from that region crying for mercy for her daughter, who is severely troubled by a demon. Right after teaching about what makes a person unclean, Jesus meets a woman whom tradition counted unclean by descent.",
+      "grammar": "Anechōrēsen eis ta merē Turou kai Sidōnos, ‘he withdrew into the parts of Tyre and Sidon’, uses Matthew's verb of withdrawal and merē, ‘parts, districts’, which may mean the border region. Idou, ‘behold’, marks her arrival. Gunē Chananaia apo tōn horiōn ekeinōn exelthousa, ‘a Canaanite woman having come out from those borders’, has her come out to Jesus. Ekrazen, an imperfect, ‘she kept crying out’, shows persistence. Eleēson me, kurie, huios Dauid, ‘have mercy on me, Lord, Son of David’, uses the aorist imperative of the Psalms' cry for mercy; the nominative huios stands where a vocative would be expected, a common usage. Daimonizetai kakōs, ‘is badly demonized’, uses the adverb kakōs, ‘severely’.",
+      "words": ["G0402", "G3313", "G5184", "G4605", "G2400", "G5478", "G3725", "G1831", "G2896", "G1653", "G2962G", "G1138", "G1139"],
+      "history": "Tyre's territory bordered the hills of Upper Galilee, and people from around Tyre and Sidon had already come to hear Jesus in Galilee (Mark 3:8, Luke 6:17). Jesus had said that if his mighty works had been done in Tyre and Sidon they would have repented long ago (11:21-22). Genesis makes Sidon the firstborn of Canaan (Genesis 10:15), and Matthew's word Canaanite, found nowhere else in the New Testament, recalls the peoples of the land Israel entered. The chapter note discusses the Phoenicians' own use of the name.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "A Gentile woman calls Jesus ‘Son of David’, the royal title that Israel's leaders refuse him. In Matthew the title comes from the blind (9:27, 20:30), the crowds (12:23, 21:9), and children in the temple (21:15), those at the edges, and now from a Canaanite, which shows that Israel's Messiah is recognized by outsiders before many insiders see him."
+        }
+      ],
+      "parallels": ["Mark 7:24-26"],
+      "refs": ["Matthew 11:21-22", "Mark 3:8", "Matthew 9:27", "Matthew 20:30-31", "Genesis 10:15"]
+    },
+    {
+      "v": "23-24",
+      "context": "Jesus answers her not a word. The disciples urge him to send her away because she keeps crying after them, and Jesus says he was sent only to the lost sheep of the house of Israel. Matthew adds these two obstacles to Mark's account.",
+      "grammar": "Ho de ouk apekrithē autē logon, ‘but he did not answer her a word’, is emphatic silence. Ērōtoun, an imperfect, ‘they kept asking’. Apoluson autēn, ‘send her away’, uses apoluō, which can mean to dismiss or to release by granting a request; some commentators think the disciples meant ‘give her what she wants and let her go’, which would explain why Jesus answers with a refusal to help, while others take it as a plain request to be rid of her. Hoti krazei opisthen hēmōn, ‘because she cries out after us’, gives their reason. Ouk apestalēn ei mē, ‘I was not sent except’, uses a divine passive: the Father sent him. Ta probata ta apolōlota oikou Israēl, ‘the lost sheep of the house of Israel’, uses a perfect participle, ‘lost’ or ‘perishing’. The genitive may mean the lost sheep who are the whole house of Israel or the lost sheep within it; the same phrase in 10:6 has the same ambiguity.",
+      "words": ["G0611", "G3056", "G3101", "G2065", "G0630G", "G2896", "G0649", "G4263", "G0622", "G3624H", "G2474"],
+      "ot": [
+        {
+          "ref": "Jeremiah 50:6",
+          "note": "“My people are lost sheep; their shepherds have led them astray,” says the LORD through Jeremiah. The Septuagint (Jeremiah 27:6 in its numbering) has probata apolōlota, the very phrase of Matthew 10:6 and 15:24. Ezekiel 34 condemns Israel's false shepherds and promises that God himself will seek the lost (Ezekiel 34:4, 16). Jesus' words claim that shepherd's mission for himself and place it, during his earthly ministry, first with Israel."
+        }
+      ],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Jesus' mission has an order. He was sent first to Israel, as he sent the Twelve (10:5-6), and the command to go to all nations comes after the resurrection (28:19). Paul keeps the same order, to the Jew first and also to the Greek (Romans 1:16). The verse states that order plainly, and the rest of the story shows a Gentile receiving mercy before the order is complete."
+        }
+      ],
+      "parallels": ["Mark 7:26-27"],
+      "refs": ["Matthew 10:5-6", "Jeremiah 50:6", "Ezekiel 34:11-16", "Romans 1:16", "Romans 15:8-9"]
+    },
+    {
+      "v": "25",
+      "context": "The woman comes, kneels before Jesus, and says only, “Lord, help me!” Silence and refusal have not stopped her; her prayer becomes shorter and more direct.",
+      "grammar": "Hē de elthousa prosekunei autō, ‘but she came and knelt before him’, uses proskuneō in the imperfect; it is the verb of worship Matthew uses of the Magi (2:11) and the disciples in the boat (14:33), and it can also mean bowing low in petition. Kurie, boēthei moi, ‘Lord, help me’, uses a present imperative of boētheō, the verb of the Psalms' cries for help, and the plea is now for herself, since her daughter's need has become hers.",
+      "words": ["G2064", "G4352", "G2962G", "G0997"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Her prayer is three words in Greek, the cry of the psalmist, “Help me, O LORD my God” (Psalm 109:26). It asks for nothing she can claim but mercy, and it keeps asking. The father of the convulsed boy will pray the same verb, ‘help my unbelief’ (Mark 9:24)."
+        }
+      ],
+      "parallels": ["Mark 7:25"],
+      "refs": ["Psalm 109:26", "Mark 9:24", "Matthew 8:2", "Hebrews 4:16"]
+    },
+    {
+      "v": "26-27",
+      "context": "Jesus answers that it is not right to take the children's bread and throw it to the dogs. She takes his picture and turns it: yes, Lord, but even the dogs eat the crumbs that fall from their masters' table. The chapter note sets out how readers have weighed the harshness of the saying.",
+      "grammar": "Ouk estin kalon, ‘it is not right’ or ‘fitting’, uses kalos in the sense of what is proper. Ton arton tōn teknōn, ‘the children's bread’, pictures Israel as God's children (Exodus 4:22), and tois kunariois uses the diminutive kunarion, whose force (small household dogs or simply dogs) is debated. Her reply begins nai kurie, ‘yes, Lord’, an assent. Kai gar, ‘for even’ or ‘and indeed’, is debated: most grammarians take it as agreeing with Jesus' statement and building on it (she does not ask for the children's bread, only what falls), while some hear a gentle contradiction, ‘yes, but’. Ta kunaria esthiei apo tōn psichiōn, ‘the dogs eat from the crumbs’, uses another diminutive, psichion, ‘a little crumb’. Tōn kuriōn autōn, ‘of their masters’, is plural: she calls the owners of the table kurioi, the word she has three times addressed to Jesus. Mark has ‘the children's crumbs’ (Mark 7:28).",
+      "words": ["G2570G", "G2983", "G0740", "G5043", "G0906G", "G2952", "G3483", "G1063", "G2068", "G5589", "G4098", "G5132", "G2962H"],
+      "history": "Dogs in the Bible are usually street scavengers, and ‘dog’ could be an insult, but household dogs were known too: in the book of Tobit, written by a Jew probably in the third or second century BC, a dog goes along on Tobias's travels and comes home with him (Tobit 6:1, 11:4). The woman's picture is of such a house dog under the family table, fed with what falls, not of a stray driven off.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Her faith accepts the order Jesus states without resentment and argues from it: if Israel's Messiah has bread for his children, there is enough to spare for her. Luther's sermon on the text (1525) described her as taking Jesus at his own word. Faith here is humble, persistent, and theologically sharp all at once."
+        },
+        {
+          "id": "mission",
+          "note": "The crumbs that fall to the dogs picture the overflow of blessing to the nations that God promised Abraham (Genesis 12:3). The table belongs to Israel's children, and yet it is so full that Gentiles are fed from it, as Paul pictures the Gentiles grafted into Israel's olive tree (Romans 11:17-18)."
+        }
+      ],
+      "parallels": ["Mark 7:27-28"],
+      "refs": ["Exodus 4:22", "Matthew 7:6", "Matthew 8:11", "Genesis 12:3", "Romans 11:17-18"]
+    },
+    {
+      "v": "28",
+      "context": "Jesus praises her great faith and grants her request, and her daughter is healed from that hour. The Canaanite's great faith stands one chapter after Peter's little faith on the water (14:31).",
+      "grammar": "Ō gunai, ‘O woman’, uses the interjection ō with the vocative, a mark of strong feeling (compare 17:17). Megalē sou hē pistis, ‘great is your faith’, puts the adjective first for emphasis and needs no verb. Genēthētō soi hōs theleis, ‘let it be done for you as you wish’, uses an aorist passive imperative of ginomai, the form of the Lord's Prayer, ‘your will be done’ (6:10), and of Jesus' word to the Gentile centurion, ‘let it be done for you as you believed’ (8:13). Iathē hē thugatēr autēs apo tēs hōras ekeinēs, ‘her daughter was healed from that hour’, uses Matthew's formula for healing at a distance or at once (8:13, 9:22, 17:18).",
+      "words": ["G5599", "G1135G", "G3173", "G4102G", "G1096", "G2309", "G2390", "G2364", "G5610"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Jesus calls no one else's faith great in Matthew, though he marveled at the Gentile centurion's (8:10). Both are Gentiles, both ask for someone else, both are healed at a distance. The verse shows that faith, not ancestry, is what receives the Messiah's mercy, and it answers the chapter's opening question about clean and unclean."
+        }
+      ],
+      "parallels": ["Mark 7:29-30"],
+      "refs": ["Matthew 8:10-13", "Matthew 6:10", "Matthew 14:31", "Romans 10:12-13"]
+    },
+    {
+      "v": "29-31",
+      "context": "Jesus returns along the Sea of Galilee, goes up a mountain, and sits. Crowds bring the lame, blind, crippled, and mute and lay them at his feet, and he heals them, so that the crowd marvels and glorifies the God of Israel. Mark sets his parallel healing in the Decapolis (Mark 7:31); Matthew does not name the region, and readers disagree whether he pictures a Gentile or a Jewish crowd.",
+      "grammar": "Metabas ekeithen, ‘having moved on from there’, and anabas eis to oros ekathēto ekei, ‘having gone up the mountain, he sat there’, recall the setting of the Sermon on the Mount (5:1). Echontes meth' heautōn chōlous, tuphlous, kullous, kōphous, ‘having with them lame, blind, maimed, mute’: kullos means crippled or maimed, and Matthew uses it in 18:8 of entering life with a limb lost. Erripsan autous para tous podas autou, ‘they flung them at his feet’, uses rhiptō, ‘to throw’, a vivid word for the haste of those who carried them. Verse 31 is a result clause, hōste ton ochlon thaumasai, ‘so that the crowd marveled’, with four present participles describing what they saw: mute speaking, maimed whole, lame walking, blind seeing. Edoxasan ton theon Israēl, ‘they glorified the God of Israel’, uses a phrase common in the Psalms.",
+      "words": ["G3327", "G2281", "G1056H", "G0305", "G3735", "G2521", "G5560", "G5185", "G2948", "G2974", "G4496", "G2323", "G2296", "G1392", "G2474"],
+      "ot": [
+        {
+          "ref": "Isaiah 35:5-6",
+          "note": "Isaiah pictures God coming to save his people: “the eyes of the blind will be opened and the ears of the deaf unstopped,” and “the lame will leap like a deer and the mute tongue will shout for joy.” Matthew's four groups match Isaiah's, with the maimed added, and the note on Mark 7:32 gives the Septuagint's word for the mute. Matthew does not quote the prophecy, but Jesus had answered John the Baptist with the same list (11:4-5). Isaiah 29, which Jesus quoted against the leaders in verses 8 and 9, also promises that on that day “the deaf will hear the words of the scroll” and “the eyes of the blind will see” (Isaiah 29:18): the prophet who exposed lip-worship foresaw this healing."
+        }
+      ],
+      "text": "The manuscripts list the four kinds of sufferers in several different orders in verses 30 and 31, and Westcott and Hort's edition omits the words ‘the maimed made whole’ in verse 31. Variation of this kind in lists is common and does not affect the sense.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Jesus does the works that Isaiah said would mark God's coming to save, and the crowd responds by glorifying the God of Israel. In Matthew these healings are the Messiah's credentials, the same signs he pointed to when John asked whether he was the one to come (11:2-6)."
+        }
+      ],
+      "parallels": ["Mark 7:31-37"],
+      "refs": ["Isaiah 35:5-6", "Isaiah 29:18", "Matthew 11:4-5", "Matthew 5:1", "Matthew 18:8"]
+    },
+    {
+      "v": "32-33",
+      "context": "Jesus calls his disciples and says that he has compassion on the crowd, who have been with him three days and have nothing to eat. The disciples ask where in a desolate place they could find enough bread. Having seen the five thousand fed, they still ask Moses' question.",
+      "grammar": "Splagchnizomai epi ton ochlon, ‘I have compassion on the crowd’, is the only place in Matthew where Jesus names his own compassion in the first person; in 9:36, 14:14, and 20:34 the narrator reports it. Hoti ēdē hēmerai treis prosmenousin moi, literally ‘because already three days they remain with me’, uses a nominative of time inserted into the sentence, an unusual construction that grammarians describe as a parenthetic nominative. Apolusai autous nēsteis ou thelō, ‘I do not want to send them away hungry’, uses nēstis, ‘fasting, without food’, found only here and in Mark 8:3. Mēpote eklutōsin en tē hodō, ‘lest they faint on the way’, uses eklutō, ‘to give out, collapse’. In verse 33 pothen hēmin en erēmia artoi tosoutoi, ‘from where do we have in a wilderness so many loaves?’, uses erēmia, ‘desolate place’, and pothen, ‘from where’.",
+      "words": ["G4341", "G4697", "G3793", "G2250", "G5140", "G4357", "G3523", "G2309", "G1590", "G3598", "G4159", "G2047", "G0740", "G5118", "G5526"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Jesus' compassion is the stated motive of the miracle, and it notices physical need: hunger, fatigue, the long road home. The love that heals the sick on the mountain also cares whether people faint on the way. It does not run out after one feeding."
+        }
+      ],
+      "parallels": ["Mark 8:1-4"],
+      "refs": ["Numbers 11:13", "Psalm 78:19", "Matthew 14:14", "Matthew 16:9-10"]
+    },
+    {
+      "v": "34-36",
+      "context": "Jesus asks how many loaves they have: seven, and a few small fish. He has the crowd sit on the ground, gives thanks, breaks the loaves, and gives them to the disciples, who give them to the crowds. The actions repeat 14:19 with small changes.",
+      "grammar": "Posous artous echete, ‘how many loaves do you have?’, turns attention to what they have. Hepta kai oliga ichthudia, ‘seven, and a few small fish’, uses ichthudion, a diminutive of ichthus. Parangeilas tō ochlō anapesein epi tēn gēn, ‘having ordered the crowd to recline on the ground’, has the ground where 14:19 had grass. Elaben ... kai eucharistēsas eklasen kai edidou, ‘he took ... and having given thanks he broke and kept giving’, uses eucharisteō, ‘give thanks’, where 14:19 has eulogeō, ‘bless’; Matthew will use both at the Last Supper, one over the bread and the other over the cup (26:26-27). Edidou, an imperfect, pictures the giving as continuous, loaf after loaf.",
+      "words": ["G4214", "G0740", "G2033", "G3641", "G2485", "G3853", "G0377", "G1093I", "G2983", "G2168", "G2806", "G1325"],
+      "text": "Modern editions read the imperfect edidou, ‘he kept giving’, and a few other small differences in the wording of verse 36; the later manuscripts behind the King James Version read the aorist edōke, ‘he gave’. The meaning does not change.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Before he breaks the bread Jesus gives thanks, as Jewish custom did at every meal. Paul later tells Timothy that everything God created is good and received with thanksgiving (1 Timothy 4:4-5), and he himself gave thanks before eating on the storm-tossed ship (Acts 27:35)."
+        }
+      ],
+      "parallels": ["Mark 8:5-7"],
+      "refs": ["Matthew 14:19", "Matthew 26:26-27", "1 Timothy 4:4-5", "Acts 27:35"]
+    },
+    {
+      "v": "37-39",
+      "context": "All eat and are satisfied, seven baskets of pieces are left, and Matthew counts four thousand men besides women and children. Jesus dismisses the crowds and crosses by boat to the region of Magadan. Jesus will recall both feedings, with their numbers and baskets, when the disciples again worry about bread (16:9-10).",
+      "grammar": "The wording of verse 37 repeats 14:20 almost exactly: ephagon pantes kai echortasthēsan, ‘they all ate and were satisfied’, and to perisseuon tōn klasmatōn, ‘what was left over of the pieces’. But the baskets are spurides, not kophinoi: spuris is a larger basket, big enough for Paul to be lowered over the Damascus wall in one (Acts 9:25). Verse 38 repeats the counting formula of 14:21, andres chōris gunaikōn kai paidiōn, ‘men apart from women and children’, with tetrakischilioi, ‘four thousand’. Enebē eis to ploion, ‘he got into the boat’, and eis ta horia Magadan, ‘into the region of Magadan’, close the scene.",
+      "words": ["G5315", "G5526", "G4052", "G2801", "G2033", "G4711", "G4134", "G5070", "G0435G", "G3813", "G0630G", "G1684", "G3093"],
+      "history": "Many critical scholars since Rudolf Bultmann (The History of the Synoptic Tradition, German 1921) have treated the two feedings as two tellings of one event, pointing to the similar outline and the disciples' question in verse 33, which seems to forget chapter 14. Others note that Matthew and Mark keep the two meals distinct in numbers, setting, and even the word for basket, and that Jesus' later question (16:9-10; Mark 8:19-20) treats them as separate events. Interpreters who assign symbolic meanings to the seven loaves and seven baskets differ widely, and the text gives no key.",
+      "text": "The earliest witnesses read Magadan, a place otherwise unknown; later manuscripts, followed by the King James Version, read Magdala, the well-known town on the western shore, and Mark 8:10 names Dalmanutha, also unknown. Scribes probably replaced the unfamiliar name with the familiar one.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The second feeding shows that Jesus' provision is not a single event but a pattern: he feeds again, with a different crowd and fewer loaves, and again there is more than enough. The disciples' forgetfulness (verse 33) is met not by a lecture but by another meal."
+        }
+      ],
+      "parallels": ["Mark 8:8-10"],
+      "refs": ["Matthew 14:20-21", "Matthew 16:9-10", "Mark 8:19-20", "Acts 9:25"]
+    }
+  ]
+}

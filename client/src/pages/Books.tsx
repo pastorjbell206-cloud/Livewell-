@@ -12,36 +12,9 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SITE_URL } from "@/lib/site";
+import { BOOK_SHELF } from "@/lib/bookShelf";
 
-const BOOKS = [
-  {
-    slug: "when-god-bless-america",
-    href: "/books/when-god-bless-america",
-    cover: "/books/when-god-bless-america.jpg",
-    title: "When God Bless America Replaces Thy Kingdom Come",
-    kicker: "Politics and the church",
-    blurb:
-      "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",
-  },
-  {
-    slug: "the-monster-in-the-mirror",
-    href: "/books/the-monster-in-the-mirror",
-    cover: "/books/the-monster-in-the-mirror.jpg",
-    title: "The Monster in the Mirror",
-    kicker: "Reading the Bible honestly",
-    blurb:
-      "Every generation reads the Bible with blind spots, and every generation is sure it is the one that finally sees clearly. This book asks the harder question: what will our grandchildren say we missed?",
-  },
-  {
-    slug: "believe",
-    href: "/books/believe",
-    cover: "/books/believe.jpg",
-    title: "Believe",
-    kicker: "For skeptics",
-    blurb:
-      "Rational answers to the hardest questions skeptics ask — God, the Bible, the resurrection, suffering, hell — from a pastor who spent years on the other side of the argument and remembers what it sounds like from there.",
-  },
-];
+const BOOKS = BOOK_SHELF;
 
 export default function Books() {
   return (
@@ -181,8 +154,7 @@ export default function Books() {
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.78)", maxWidth: "62ch", marginBottom: "20px" }}>
             I took the rest of the shelf down to rewrite it in my own hand, one book at
-            a time. The essays behind those books are still here, all of them, free.
-            When a book is finished, it comes back.
+            a time. When a book is finished, it comes back.
           </p>
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
             <Link

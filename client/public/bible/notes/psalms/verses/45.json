@@ -1,0 +1,250 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The heading and the poet's own preface. Before he says a word about the king, the singer tells us how he feels and what he is doing: his heart is full, and he is composing for the king. The psalm is framed by this voice, which returns in verse 17 to promise the king lasting fame.",
+      "grammar": "The opening verb, rachash (\"is stirred\"), occurs only here in the Hebrew Bible; a related noun (marchešet) names a cooking pan in Leviticus 2:7, so the sense is of something bubbling over, a heart that cannot keep the words in. \"I recite my verses\" is literally ‘I say my works to the king’, a participle (omer) that pictures the poet in the act of performing. The closing image, et sofer mahir, ‘the stylus of a quick scribe’, uses the same phrase that describes Ezra as a \"skilled scribe\" (Ezra 7:6): mahir means quick, practiced, expert, and the poet claims his tongue works as fluently as a trained scribe's pen.",
+      "words": [
+        "H7370",
+        "H0559",
+        "H4639K",
+        "H5842",
+        "H4106"
+      ],
+      "history": "The heading gives four pieces of information. The sons of Korah were a guild of Levitical singers (1 Chronicles 6:31-38 traces Heman the singer to Korah), credited with Psalms 42 to 49, 84 to 85, and 87 to 88. Maskil is a psalm label of uncertain meaning, perhaps a skillful or instructive song. \"The Lilies\" (shoshannim) is a tune name that also heads Psalms 69 and 80. And the psalm is called a shir yedidot, a song of loves: yedid is the word for beloved that God built into Solomon's second name, Jedidiah (2 Samuel 12:25), though that link does not by itself prove the psalm was written for Solomon. In Hebrew Bibles the heading is verse 1 and the poet's line is verse 2, so every verse of this psalm is numbered one higher in Hebrew than in English.",
+      "refs": [
+        "Ezra 7:6",
+        "Psalm 42",
+        "Psalm 69",
+        "2 Samuel 12:25"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Praise of the king begins with his person: his beauty and his speech. The line then gives the reason behind both, that God has blessed him forever. The eternal note sounded here prepares for the throne that endures forever in verse 6.",
+      "grammar": "Yafyafita (\"You are the most handsome\") is an unusual doubled form of the verb yafah, ‘to be beautiful’, found nowhere else. The reduplication intensifies: not merely handsome but surpassingly so, \"of men\" (literally ‘more than the sons of Adam’). \"Grace has anointed your lips\" is a free rendering of hutsaq chen besiftotekha, ‘grace has been poured on your lips’; hutsaq is a Hophal (passive causative) of yatsaq, the verb for pouring oil (Genesis 28:18, 1 Samuel 10:1), so the image anticipates the anointing of verse 7. The connecting phrase al-ken normally means ‘therefore’. Read that way, the king's grace is the evidence that God has blessed him; the BSB's \"since\" takes it the other way round, making the blessing the ground of the grace. Both readings end in the same place: whatever is lovely in the king comes from God.",
+      "words": [
+        "H3302",
+        "H3332G",
+        "H2580",
+        "H3651C",
+        "H1288"
+      ],
+      "history": "The Aramaic Targum of Psalms, a Jewish paraphrase from the early centuries AD, renders this line as an address to the King Messiah, whose beauty surpasses that of other men and upon whose lips the spirit of prophecy is given. It is one of the clearest witnesses that Jewish readers heard this psalm messianically long before, and independently of, Christian use.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The king is lovely because God has poured grace on him and blessed him forever. The messianic hope in Israel was never only for a strong ruler but for a good one, whose speech carries grace. Luke says the crowds at Nazareth marveled at the gracious words that came from Jesus' lips (Luke 4:22); Isaiah, by contrast, says the Servant had no beauty to attract us (Isaiah 53:2), and the New Testament holds both portraits together."
+        }
+      ],
+      "refs": [
+        "Luke 4:22",
+        "Isaiah 53:2",
+        "1 Samuel 16:12",
+        "Isaiah 33:17"
+      ]
+    },
+    {
+      "v": "3-5",
+      "context": "The king is called to battle. He girds on his sword, rides out in splendor, and wins, but the poet defines the war by its cause: \"on behalf of truth and humility and justice.\" Verse 5 pictures the victory itself, arrows in the enemy's heart and peoples falling beneath him. The warlike stanza leads straight into the throne and scepter of justice in verses 6 and 7.",
+      "grammar": "The king is addressed as gibbor, ‘mighty one’ or ‘warrior’, the word Isaiah uses in the royal title El Gibbor, \"Mighty God\" (Isaiah 9:6). \"Majesty and splendor\" (hod vehadar) is a pair used most often of God himself (Psalm 96:6, Psalm 104:1), here lent to God's king. Verse 4 is compressed: al-devar emet veanvah-tsedeq reads literally ‘for the cause of truth, and humility-righteousness’, with no ‘and’ before the last word; some take the pair as ‘humble righteousness’, while the Greek translators and most English Bibles make three coordinated nouns. \"May your right hand show your awesome deeds\" renders vetorekha, a Hiphil of yarah, ‘to teach’: literally ‘and let your right hand teach you awesome things’, as if the king learns what he can do by doing it. Verse 5 scatters its words (‘your arrows sharpened, peoples under you fall, in the heart of the king's enemies’), and English Bibles regroup them.",
+      "words": [
+        "H1368",
+        "H1935",
+        "H1926",
+        "H6037",
+        "H3384B",
+        "H8150"
+      ],
+      "history": "The picture of the king in his war chariot shooting arrows at his enemies is a stock scene of ancient Near Eastern royal art; the palace reliefs of the Assyrian king Ashurnasirpal II at Nimrud (ninth century BC) show the king drawing his bow from a chariot while enemies fall beneath the horses. Israel's poet borrows the familiar image but ties the king's warfare to truth and justice rather than to conquest for its own sake.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The king's power is measured by what it serves. Humility (anvah) is an unexpected virtue in a war song, and it anticipates the Messiah of Zechariah 9:9 who comes to Zion righteous and humble, and Revelation 19:11, where the rider on the white horse judges and wages war in righteousness."
+        }
+      ],
+      "refs": [
+        "Isaiah 9:6",
+        "Psalm 96:6",
+        "Zechariah 9:9",
+        "Revelation 19:11",
+        "Psalm 110:5-6"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "At the center of the psalm the poet turns from the king's deeds to his throne and addresses him with the most striking words in the Psalter: \"Your throne, O God, endures forever and ever.\" The second line defines the reign by its scepter, justice. Verse 7 will immediately distinguish this king from the God who anointed him.",
+      "grammar": "The Hebrew is four words, kis'akha elohim olam vaed, ‘your throne, God, forever and ever’, with no verb. Grammarians have proposed four readings. The first, and the most natural, takes elohim as a vocative, ‘your throne, O God’, addressed to the king; this is how the Greek, the Latin, and most English Bibles read it. The second makes elohim the predicate, ‘your throne is God’, meaning God upholds it; the image is not impossible (God is called a rock and a fortress), but no other text calls God a throne. The third supplies a missing construct, ‘your throne is a throne of God’, or ‘your throne given of God’ (the 1917 Jewish Publication Society version), or adjectivally ‘your divine throne’ (the RSV); its defenders point to 1 Chronicles 29:23, where Solomon sits on the throne of the LORD, while its critics note that a noun carrying a pronoun suffix, as kis'akha does, cannot normally stand in a construct chain, so the reading needs an unexpressed second throne. The fourth emends the text. On the first reading the question becomes what it means to call a man elohim. The word is used in Scripture of beings other than the one God: of Moses in relation to Pharaoh (Exodus 7:1), of the spirit Saul's medium saw (1 Samuel 28:13), and, on many readings, of human judges (Exodus 21:6, Psalm 82:6); Zechariah 12:8 says the house of David will be like God. Psalm 45 belongs to the Elohistic Psalter (Psalms 42 to 83), where elohim often stands where other psalms would have the divine name.",
+      "words": [
+        "H3678G",
+        "H0430G",
+        "H5769G",
+        "H7626G",
+        "H4334"
+      ],
+      "text": "The Septuagint renders the line ho thronos sou ho theos eis ton aiona tou aionos. Greek regularly uses the nominative with the article (ho theos) as a vocative, as in Thomas's confession in John 20:28, so the Greek most naturally reads ‘your throne, O God’, and Hebrews takes it that way. The conjecture that the Hebrew once read kis'akha yihyeh, ‘your throne will be (forever)’, and that yhyh was misread as the divine name and then replaced by elohim under the Elohistic editing, has no support in any manuscript or ancient version. In Hebrew Bibles this is verse 7.",
+      "history": "Jewish interpretation has read the line in several ways. The Targum of Psalms reads the whole psalm of the King Messiah, addressing him by that title in verse 2 and again in verse 7. Rashi reads the psalm as praise of Torah scholars, and medieval Jewish commentators generally took elohim here in its sense of a ruler or judge, a use they found in Exodus 21:6 and 22:8. Christian readers from the second century onward, following Hebrews, took the verse as the Father's address to the Son.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Whatever the first singer intended, the verse holds together two things the church would later confess of Christ: the one addressed is called God, and in the next breath God is his God who anoints him. Hebrews reads that tension as the relation of the eternal Son to the Father, a relation the creeds of Nicaea (325) and Chalcedon (451) set in words."
+        },
+        {
+          "id": "kingdom",
+          "note": "The throne lasts forever, echoing God's promise to David (2 Samuel 7:13-16), and its scepter is mishor, level uprightness, a word used for level ground and for fair judgment (Isaiah 11:4). An everlasting reign is good news only if it is a just one."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 1:8",
+          "note": "Hebrews introduces verses 6 and 7 with ‘but to the Son’ and places them in a chain of Old Testament texts showing that the Son is greater than the angels: the angels are made winds and flames (Psalm 104:4), but the Son is addressed as God with an everlasting throne. The writer follows the Septuagint closely, reading ho theos as a vocative, which is its most natural sense in Greek. Two small changes appear: Hebrews puts the article on the scepter of uprightness and makes it the subject of the second line, and in some of the oldest manuscripts (the papyrus P46, Codex Sinaiticus, and Codex Vaticanus) the last word is ‘his kingdom’ rather than ‘your kingdom’. Some scholars have argued that ‘his’ would favor reading ‘God is your throne’, though most modern editors print ‘your’. Murray J. Harris, in Jesus as God (1992), weighs every option at length and concludes that the vocative is the right reading in both the psalm and Hebrews. For Hebrews the psalm is not a remote parallel but a word spoken to the enthroned Son."
+        }
+      ],
+      "refs": [
+        "Hebrews 1:8",
+        "2 Samuel 7:16",
+        "Isaiah 9:7",
+        "1 Chronicles 29:23",
+        "John 20:28"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The king's anointing is grounded in his character. He has loved righteousness and hated wickedness, and therefore God has anointed him with the oil of joy above his companions. The verse completes the throne saying of verse 6 and turns the psalm toward the wedding feast with its oil and gladness.",
+      "grammar": "\"You have loved\" (ahavta) is a Hebrew perfect, followed by a consecutive form, vattisna, \"and hated\": the pair describes the king's settled disposition, not a single act. \"Therefore\" (al-ken) makes the anointing the consequence of that disposition. Meshachakha, \"has anointed you\", is from mashach, the root of mashiach, ‘anointed one’, the word behind Messiah and, through the Greek christos, Christ. \"God, your God\" (elohim eloheykha) repeats the word of verse 6 but now puts the king under God: in the Elohistic Psalter the phrase most likely stands where other psalms have ‘the LORD your God’ (Psalm 50:7 has the same wording). \"Above your companions\" (mechaverekha) uses the preposition min in its comparative sense: the king is set apart from his peers, whether fellow kings or the members of his court.",
+      "words": [
+        "H0157G",
+        "H8130",
+        "H4886",
+        "H0430G",
+        "H8081",
+        "H8342",
+        "H2270"
+      ],
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Anointing marked a king as God's chosen (1 Samuel 16:13). Here the anointing is with the oil of joy, the phrase Isaiah 61:3 uses for the gladness the anointed messenger brings to mourners. The Messiah is anointed not only to rule but to rejoice, and to give joy."
+        },
+        {
+          "id": "trinity",
+          "note": "The one addressed as God in verse 6 has a God in verse 7 who anoints him. Christian theology, following Hebrews 1:9, reads the pair as the Son addressed by the Father; Acts 10:38 speaks of God anointing Jesus with the Holy Spirit. The verse does not by itself teach the doctrine, but it is one of the Old Testament lines the early church found it could only read in that light."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Hebrews 1:9",
+          "note": "Hebrews quotes this verse from the Septuagint almost word for word: loving righteousness and hating lawlessness, therefore ‘God, your God’ anointed you with the oil of gladness beyond your companions. The Greek word for companions, metochoi, becomes a key term in Hebrews itself, where believers are called partakers of a heavenly calling (Hebrews 3:1) and partakers of Christ (Hebrews 3:14). The writer thus hints that the Son's companions, above whom he is anointed, are the very people he has made his own."
+        }
+      ],
+      "refs": [
+        "Hebrews 1:9",
+        "Isaiah 61:1-3",
+        "Acts 10:38",
+        "Hebrews 3:14"
+      ]
+    },
+    {
+      "v": "8-9",
+      "context": "The scene moves from battlefield and throne to the wedding day. The king's robes are scented, music sounds from the ivory palaces, royal daughters stand among his attendants, and the queen takes her place at his right hand in gold. Verse 9 introduces the bride's side of the court, preparing for the direct address to her in verse 10.",
+      "grammar": "The Hebrew opens with the spices themselves, mor vaahalot qetsiot, ‘myrrh and aloes, cassia, all your garments’, a verbless line in which the robes simply are fragrance. Qetsiot, \"cassia\", occurs only here in this form; the aromatic bark in the holy anointing oil of Exodus 30:24 is a different word (qiddah). Minni, \"the harps\", is a rare word for stringed instruments, found again in Psalm 150:4. In verse 9 the queen is shegal, a word used for a royal consort (Nehemiah 2:6 uses it of the Persian queen beside Artaxerxes), and she \"stands\" (nitsevah, a Niphal of natsav) in the place of highest honor, at the king's right hand, where Bathsheba sat when Solomon received her (1 Kings 2:19).",
+      "words": [
+        "H4753",
+        "H0174",
+        "H7102",
+        "H4482",
+        "H7694",
+        "H5324",
+        "H0211H"
+      ],
+      "history": "Ophir was a distant land famous for fine gold, reached by Solomon's fleet from Ezion-geber (1 Kings 9:26-28); its location (southern Arabia, the Horn of Africa, or India) is still debated. The name is not only literary: an eighth century BC ostracon found at Tell Qasile, near modern Tel Aviv, records a consignment of gold of Ophir to Beth-horon. Palaces decorated with ivory are attested for Ahab (1 Kings 22:39) and condemned by Amos as the luxury of the rich (Amos 3:15, 6:4).",
+      "refs": [
+        "1 Kings 9:28",
+        "1 Kings 22:39",
+        "Amos 6:4",
+        "John 19:39",
+        "1 Kings 2:19"
+      ]
+    },
+    {
+      "v": "10-12",
+      "context": "The poet turns to the bride and speaks to her as a father might: listen, consider, forget your people and your father's house. The king will desire her beauty, and she is to honor him as her lord. Verse 12 promises that wealthy neighbors, Tyre among them, will come with gifts to seek her favor. The stanza sets up the procession of verses 13 to 15.",
+      "grammar": "The address is a rapid string of feminine imperatives: shim'i (\"listen\"), re'i (\"consider\", literally ‘see’), hatti oznekh (\"incline your ear\"), shikhchi (\"forget\"). The call to forget is not a command to despise her family but to transfer her primary loyalty, the same movement as Genesis 2:24. \"He is your lord\" uses adonayikh, a plural form of adon used of a single master, as when Joseph's brothers speak of him as ‘the lord of the land’ (Genesis 42:30). \"Bow to him\" is hishtachavi, the verb of prostration used both for honoring a superior and for worshiping God. \"Seek your favor\" (panayikh yechallu) is an idiom, literally ‘they will soften your face’, used for entreating a powerful person (Proverbs 19:6) and, in Exodus 32:11, for Moses entreating the LORD.",
+      "words": [
+        "H8085G",
+        "H7911",
+        "H0113",
+        "H7812",
+        "H6865",
+        "H2470B"
+      ],
+      "history": "Tyre was the great Phoenician trading city on the coast north of Israel. Its king Hiram supplied David and Solomon with cedar and craftsmen (2 Samuel 5:11, 1 Kings 5:1-12), and a Phoenician princess, Jezebel, daughter of Ethbaal king of the Sidonians, married Ahab (1 Kings 16:31). \"The Daughter of Tyre\" personifies the city, as \"Daughter Zion\" does Jerusalem, though some translators read it as a vocative addressed to the bride herself, making her a Tyrian princess.",
+      "theology": [
+        {
+          "id": "family",
+          "note": "Marriage begins with a leaving. The bride's call echoes Genesis 2:24 and the choice of Ruth, whom Boaz praised because she left her father and mother and her native land (Ruth 2:11). Scripture treats that leaving as costly and honorable, not as a loss of identity but as the start of a new household."
+        },
+        {
+          "id": "mission",
+          "note": "The nations come bringing gifts to the king's court, a picture the Psalms and prophets widen into the ingathering of the nations to God's king (Psalm 72:10-11, Isaiah 60:5-6)."
+        }
+      ],
+      "refs": [
+        "Genesis 2:24",
+        "Ruth 2:11",
+        "Psalm 72:10-11",
+        "Isaiah 60:5-6"
+      ]
+    },
+    {
+      "v": "13-15",
+      "context": "The bride's procession. She waits in splendor within, is led to the king in embroidered robes, and enters the palace with her companions amid joy. The second-person address in verse 14 (\"before you\") shows the poet is again speaking to the king, so the procession is presented to him.",
+      "grammar": "The opening phrase, kol-kevuddah vat-melekh penimah, is literally ‘all glorious is the king's daughter within’. The adverb penimah, ‘inside’, most likely means inside the palace, in her chamber before the procession; the King James rendering, ‘all glorious within’, was long read of inner character, a fine thought but not the grammar's point. The verbs of verses 14 and 15 are passive: tuval, ‘she is brought’ (a Hophal of yaval), and muvaot, ‘being brought’ (a Hophal participle of bo). The bride does not march in; she is led, as brides were, to her husband. Rikmot, \"colorful garments\", is embroidered or many-colored work, the craft named for the tabernacle hangings (Exodus 26:36). The \"palace\" of verse 15, hekhal, is the same word used for the temple of the LORD.",
+      "words": [
+        "H3520A",
+        "H6441",
+        "H7553",
+        "H2986",
+        "H1330",
+        "H0935G",
+        "H1964H"
+      ],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The New Testament takes up the image of a bride prepared and presented to her husband for the church: Paul speaks of Christ presenting the church to himself in splendor (Ephesians 5:27), and Revelation of the bride clothed in fine linen for the marriage of the Lamb (Revelation 19:7-8). The psalm supplies the picture; the application to the church is the New Testament's."
+        }
+      ],
+      "refs": [
+        "Ephesians 5:25-27",
+        "Revelation 19:7-8",
+        "Revelation 21:2",
+        "Exodus 26:36"
+      ]
+    },
+    {
+      "v": "16-17",
+      "context": "The poet closes by turning back to the king with two promises. Sons will take the place of his fathers and rule as princes, and the singer will make the king's name remembered in every generation, so that the nations praise him forever. The psalm ends where verse 2 began, on the everlasting.",
+      "grammar": "The pronouns in verse 16 are masculine: \"your sons\" and \"your fathers\" are the king's, not the bride's. Tachat avotekha, ‘in place of your fathers’, turns the wedding into dynastic hope: the marriage matters because through it the line continues. In verse 17 azkirah (\"I will commemorate\") is a Hiphil, ‘I will cause to be remembered’: the poet vows to keep the name alive through his song, which the psalm itself now does. Yehodukha, \"will praise you\", is the verb normally used for giving thanks to God, and \"forever and ever\" (leolam vaed) repeats the phrase of verse 6.",
+      "words": [
+        "H8478H",
+        "H0001G",
+        "H8269",
+        "H2142",
+        "H3034",
+        "H5703"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The psalm closes on a dynasty that lasts and a name praised forever. No king of Judah fulfilled that; the line of David ended in exile in 586 BC. The closing promise is one reason later readers, Jewish and Christian, looked beyond the first wedding to a king still to come whose name the peoples would praise (Psalm 72:17)."
+        }
+      ],
+      "refs": [
+        "Psalm 72:17",
+        "2 Samuel 7:12-16",
+        "Philippians 2:9-11"
+      ]
+    }
+  ]
+}

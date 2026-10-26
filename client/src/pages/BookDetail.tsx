@@ -145,7 +145,7 @@ export default function BookDetail() {
         </section>
 
         {/* Book Hero */}
-        <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
+        <section className="py-16" style={{ backgroundColor: "var(--card)" }}>
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
               {/* Book Cover */}
@@ -177,7 +177,7 @@ export default function BookDetail() {
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium transition-colors"
                       style={{ backgroundColor: "var(--bone)", color: "var(--ink)" }}
                     >
-                      <BookOpen size={18} /> Read Sample
+                      <BookOpen size={18} /> Read a sample
                     </button>
                   )}
                   {book.purchaseUrl && (
@@ -188,7 +188,7 @@ export default function BookDetail() {
                       className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded font-ui font-medium no-underline transition-colors"
                       style={{ backgroundColor: "var(--ink)", color: "var(--bone)" }}
                     >
-                      <ExternalLink size={18} /> Purchase Now
+                      <ExternalLink size={18} /> Buy the book
                     </a>
                   )}
                 </div>
@@ -250,7 +250,7 @@ export default function BookDetail() {
             <NewsletterSignup
               variant="inline"
               title="If this book is your kind of reading"
-              description="One serious essay a week in the same vein — theology that meets the actual Tuesday afternoon. No spam, ever."
+              description="One serious essay a week in the same vein — theology that meets the weight of everyday life. No spam, ever."
               source={`book-${book.slug ?? "detail"}`}
             />
           </div>
@@ -269,7 +269,7 @@ export default function BookDetail() {
                 marginBottom: "16px",
               }}
             >
-              The work the book asks of you starts now.
+              Before you buy it, read it.
             </h2>
             <p
               style={{

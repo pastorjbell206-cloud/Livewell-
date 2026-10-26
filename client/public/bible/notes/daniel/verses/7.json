@@ -1,0 +1,296 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter steps back in time to Belshazzar's first year, before the feast of chapter 5, and turns the book from stories about Daniel to visions given to him. Daniel writes the dream down, and the chapter presents itself as his written summary.",
+      "grammar": "The chapter is still in Aramaic, the international language of the Babylonian and Persian empires, which the book has used since the Chaldeans addressed the king in 2:4. Chapter 7 is the last Aramaic chapter; Hebrew resumes at 8:1. The Aramaic section (2:4b-7:28) is arranged in matching pairs, as Arnold Lenglet showed in 1972: chapters 2 and 7 on four kingdoms, 3 and 6 on faithful Jews delivered, 4 and 5 on proud kings judged. Chapter 7 therefore closes the Aramaic unit by answering chapter 2. Resh millin ’amar, literally ‘the head of the matters he said’, means ‘he told the gist’: what follows is presented as a summary. The dream came as chezvei re’sheh, ‘visions of his head’, the phrase used of Nebuchadnezzar's dreams (2:28; 4:5, 10).",
+      "words": ["H1113", "H2493", "H2376", "H7217", "H3790", "H4406"],
+      "history": "Babylonian texts explain how Belshazzar could be called king. His father Nabonidus, the last king of Babylon (556-539 BC), spent about ten years at the oasis of Tema in Arabia. The Verse Account of Nabonidus says that before leaving he entrusted the kingship to his eldest son, and the Nabonidus Chronicle notes year after year that the king was in Tema while the crown prince stayed in Babylon. Belshazzar's ‘first year’ in this sense was probably around 553 BC. The linguistic date of Daniel's Aramaic is debated: Kenneth Kitchen (1965) argued that it is Imperial Aramaic that could have been written any time from the late sixth century on, while H. H. Rowley (1929) and later critical scholars argued for later features consistent with the second century BC.",
+      "refs": ["Daniel 5:1", "Daniel 2:28", "Daniel 8:1", "Habakkuk 2:2"]
+    },
+    {
+      "v": "2-3",
+      "context": "Daniel sees the four winds of heaven stirring up the great sea, and four great beasts rising from it, each different from the others. The scene is cosmic: the winds from every direction and the sea, ancient symbol of chaos, produce the empires.",
+      "grammar": "The vision is narrated with the Aramaic periphrastic construction chazeh havet, ‘I was seeing’, a participle with the verb ‘to be’, which recurs through the chapter (verses 2, 4, 6, 7, 9, 11, 13, 21) and gives it a slow, watching rhythm. Va’aru, ‘and behold’, a particle found in biblical Aramaic only in this chapter, introduces each new sight. Megichan, “churning up”, is a causative (Haphel) participle of a verb that means to burst forth; the Hebrew cognate describes the river bursting out of the womb and the sea breaking forth in Job 38:8. Yamma rabba, ‘the great sea’, is the name Israel gave the Mediterranean (Numbers 34:6), but here it is the cosmic deep. The beasts are shanyan da min-da, ‘different, this from this’, each one unlike the others.",
+      "words": ["H2370", "H1934", "H0718", "H0703", "H7308", "H1519", "H3221", "H2423", "H5559", "H8133"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The winds that stir the sea are ‘the four winds of heaven’. Even the chaos that throws up empires is set in motion from above. The vision does not deny the terror of the beasts; it places their rise inside God's rule."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Revelation 13:1-2",
+          "note": "John sees a single beast rising from the sea with ten horns, like a leopard, with feet like a bear's and a mouth like a lion's. He has fused Daniel's four beasts into one, naming them in reverse order, and his beast has seven heads, the total of heads in Daniel 7 (one, one, four, one). Revelation reads the Roman power of John's day as the sum of all the empires Daniel saw."
+        }
+      ],
+      "refs": ["Isaiah 17:12-13", "Psalm 74:13", "Isaiah 27:1", "Job 38:8", "Revelation 13:1-2"]
+    },
+    {
+      "v": "4",
+      "context": "The first beast is a lion with eagle's wings. Its wings are torn off, it is made to stand on two feet like a man, and it is given a human mind. The picture reverses chapter 4, where Nebuchadnezzar was given the mind of a beast until he acknowledged heaven's rule.",
+      "grammar": "The passives describe what is done to the beast, not by it: merittu, ‘they were plucked’ (a Peil, the Aramaic internal passive), netilat, ‘it was lifted up’, hoqimat, ‘it was made to stand’ (Hophal), and yehiv, ‘it was given’. The last verb, yehav, ‘give’, becomes the key verb of the chapter: dominion is ‘given’ to the leopard (verse 6), to the son of man (verse 14), and to the saints (verses 22, 27). Levav ’enash, ‘the heart of a man’, reverses 4:16, where Nebuchadnezzar was given levav cheivah, ‘the heart of a beast’.",
+      "words": ["H0744", "H1611", "H5403", "H4804", "H5191", "H6966I", "H3825", "H0606", "H3052"],
+      "history": "The lion was Babylon's own emblem. The Processional Way and the Ishtar Gate that Nebuchadnezzar built in Babylon were decorated with striding lions in glazed brick. The prophets had already pictured Babylon's king as a lion (Jeremiah 4:7; 50:17) and as a great eagle (Ezekiel 17:3, 12; Habakkuk 1:8). Interpreters of every school agree that the first beast is Babylon.",
+      "refs": ["Daniel 4:16", "Daniel 4:34-36", "Jeremiah 4:7", "Ezekiel 17:3", "Daniel 2:37-38"]
+    },
+    {
+      "v": "5",
+      "context": "The second beast is like a bear, raised up on one side, with three ribs in its mouth, and a voice urges it to devour much flesh. It is a picture of heavy, violent appetite given permission.",
+      "grammar": "Lestar-chad hoqimat, ‘it was raised on one side’, is another Hophal passive: something raises it. Telat ‘il‘in, ‘three ribs’, is between its teeth. The command is plural and impersonal, ve-khen ’amerin lah, ‘and thus they were saying to it’, a common Aramaic way of expressing a passive or an unnamed heavenly voice. Qumi ’akhuli besar saggi’, ‘arise, devour much flesh’, uses two feminine imperatives, since cheivah, ‘beast’, is feminine.",
+      "words": ["H2423", "H1678", "H7859", "H6966H", "H5967", "H6966G", "H0399", "H1321"],
+      "history": "The two main schools divide here. Readers who take the fourth beast as Rome (the traditional Jewish and Christian reading, from 4 Ezra and Josephus to Jerome, Calvin, and modern conservative commentators such as E. J. Young) take the bear as the Medo-Persian empire, raised on one side because Persia came to dominate Media, and often read the three ribs as its major conquests, such as Lydia (546 BC), Babylon (539 BC), and Egypt (525 BC). Readers who take the fourth beast as Greece (Porphyry in antiquity, and most critical scholars since S. R. Driver, James Montgomery, and John J. Collins) take the bear as Media, which the book treats as a kingdom of its own under ‘Darius the Mede’ (5:31; 6:28). Daniel 8:20 names the two-horned ram as ‘the kings of Media and Persia’, and each side reads that verse as support.",
+      "refs": ["Daniel 8:20", "Daniel 5:28", "Daniel 5:31", "Isaiah 13:17", "Jeremiah 51:11"]
+    },
+    {
+      "v": "6",
+      "context": "The third beast is a leopard with four bird's wings on its back and four heads, and dominion is given to it. Speed and division are its marks.",
+      "grammar": "The leopard's wings are ’arba‘ di-‘of, ‘four of a bird’, and its heads are ’arbe‘ah re’shin. The verse closes veshaltan yehiv lah, ‘and dominion was given to it’, using the chapter's two key words, sholtan (dominion) and yehav (give). The theme is announced here in passing: every beast's dominion is granted, not seized, and what is granted can be withdrawn (verse 12). The Old Greek reads ‘a tongue was given to it’ where the Aramaic has ‘dominion’.",
+      "words": ["H5245", "H1611", "H5776", "H1355", "H0703", "H7217", "H7985", "H3052"],
+      "history": "On the traditional reading, the leopard is the Greek empire of Alexander the Great, whose conquests from 334 to 323 BC were famously swift, and the four heads are the four kingdoms into which his generals divided it (Daniel 8:8, 22 speaks of four horns replacing one). On the critical reading, the leopard is Persia, and the four heads correspond to the four Persian kings of 11:2 or to the four corners of the empire. The speed of the leopard was proverbial (Habakkuk 1:8).",
+      "refs": ["Daniel 8:5-8", "Daniel 8:21-22", "Daniel 11:2-4", "Habakkuk 1:8"]
+    },
+    {
+      "v": "7",
+      "context": "The fourth beast is not compared to any animal. It is dreadful, terrifying, and extremely strong, with great iron teeth; it devours, crushes, and tramples, and it has ten horns. It is different from everything before it, and the rest of the vision concentrates on it.",
+      "grammar": "Three adjectives pile up without an animal to anchor them: dechilah (\"terrifying\", a passive participle, ‘feared’), ’eimtani (\"dreadful\", a word found only here in the Bible), and taqqifa’ yattira’ (‘exceedingly strong’). Its three actions are participles, describing ongoing habit: ’akhelah, ‘devouring’; maddeqah, ‘crushing’; rafsah, ‘trampling’. The iron teeth recall the legs of iron in the statue, the fourth kingdom that ‘crushes and shatters all things’ (2:40), where the same verb daqaq is used. Qarnayin ‘aser, ‘ten horns’, uses the dual form of qeren; the horn is the Old Testament's standard image of strength and of kings (1 Samuel 2:10; Psalm 75:10).",
+      "words": ["H7244", "H1763", "H0574", "H8624", "H6523", "H0399", "H1855", "H7512", "H7162", "H6236"],
+      "history": "Four main identifications of the fourth beast have been held. The Roman reading appears in 4 Ezra 12:11-12 (late first century AD), which says the eagle of its own vision is the fourth kingdom shown to Daniel; Josephus (Antiquities 10.276) reads Daniel as writing of Roman rule; the rabbis identified the fourth kingdom with Rome (Babylonian Talmud, Avodah Zarah 2b), as did Rashi; and so did Irenaeus (Against Heresies 5.25-26), Hippolytus, Jerome, Luther, and Calvin. The Greek reading, with the fourth kingdom as Alexander's empire and its successors, goes back to the pagan critic Porphyry (third century AD), whom Jerome answered in his commentary on Daniel (407); it is also found in the Syriac tradition and is held by most modern critical scholars. Historicist interpreters, among them Isaac Newton (Observations upon the Prophecies of Daniel, 1733), read the Roman beast and its horns as a map of church history. Dispensational futurists, such as John F. Walvoord (1971), hold that the ten horns belong to a revived Roman order at the end of the age.",
+      "refs": ["Daniel 2:40", "Daniel 8:21-22", "1 Samuel 2:10", "Revelation 12:3", "Revelation 17:12"]
+    },
+    {
+      "v": "8",
+      "context": "While Daniel studies the horns, a little horn comes up among them, uproots three, and has human eyes and a mouth speaking arrogant things. The small becomes the most dangerous, and its weapon is speech.",
+      "grammar": "Mistakkal havet, ‘I was considering’, is a Hithpaal participle of a verb meaning to look intently or ponder. The new horn is qeren ’ochori ze‘eirah, ‘another horn, a small one’. Three of the earlier horns ’et‘aqaru, ‘were uprooted’, a Hithpeel passive of ‘aqar, the image of pulling up a plant. The horn has ‘eyes like the eyes of a man’, a sign of intelligence and perhaps of presumption, and pum memallil ravrevan, ‘a mouth speaking great things’. Ravrevan, ‘great things’, is plural of the word used for the ‘great’ beasts: the horn talks as big as the beasts are big. Chapter 8 will describe a little horn in Hebrew (8:9-12), and 11:36 will say the king speaks ‘monstrous things against the God of gods’.",
+      "words": ["H7920", "H7162", "H0317", "H2192", "H5559", "H6132", "H5870", "H6433", "H4449", "H7260"],
+      "text": "The Old Greek adds at the end of verse 7 that there were ‘many counsels in its horns’ and at the end of verse 8 that the horn ‘made war against the holy ones’, anticipating verse 21. Theodotion's later Greek version, which replaced the Old Greek in the church's Bibles, follows the Aramaic more closely.",
+      "refs": ["Daniel 8:9-12", "Daniel 11:36", "Revelation 13:5-6", "2 Thessalonians 2:3-4"]
+    },
+    {
+      "v": "9",
+      "context": "The scene shifts from sea to heaven. Thrones are set, and the Ancient of Days takes his seat, clothed in white, his hair like pure wool, his throne flames of fire on burning wheels. The verse and the next are written as poetry.",
+      "grammar": "Kharsavan remiv, ‘thrones were set’, uses a Peil passive of rema’, the verb for ‘throwing’ that the book used for casting the three men into the furnace (3:20-21) and Daniel into the lions' den (6:16, 24). Here the same verb places thrones for judgment. The thrones are plural, and the text does not say who sits on the others; verse 10 mentions a court, and verse 26 says ‘the court will sit’. ‘Attiq yomin, ‘one advanced in days’, has no article here (it is ‘the Ancient of Days’ in verses 13 and 22): Daniel first sees an aged one before he names him. The throne's galgillin, ‘wheels’, recall Ezekiel's chariot-throne, with its wheels and fire (Ezekiel 1:15-21, 26-27; 10:2).",
+      "words": ["H3764", "H7412", "H6268", "H3118", "H3488", "H8517", "H6015", "H7631", "H5135", "H1535"],
+      "history": "The plural thrones provoked a famous rabbinic debate. The Babylonian Talmud (Hagigah 14a; Sanhedrin 38b) reports that Rabbi Akiva explained them as one throne for God and one for David, that is, for the Messiah, and that Rabbi Yose the Galilean rebuked him for making the divine presence common. Alan Segal's Two Powers in Heaven (1977) studied how later rabbis came to resist readings of such texts that seemed to put a second figure beside God. Among the Dead Sea Scrolls, the Aramaic Book of Giants (4Q530) contains a throne and judgment scene with books opened that closely resembles verses 9-10, and 1 Enoch 14 describes the Great Glory on a throne with streams of fire flowing from beneath it; scholars debate whether Daniel draws on these or all three draw on a shared tradition.",
+      "theology": [
+        {
+          "id": "god",
+          "note": "The Ancient of Days is not described as a warrior but as a judge, aged, pure, and surrounded by fire. Against beasts that are new, loud, and violent, God is presented as the one who was there before all of them. White and fire together mean purity and consuming holiness (Deuteronomy 4:24)."
+        }
+      ],
+      "refs": ["Ezekiel 1:26-28", "1 Kings 22:19", "Psalm 90:2", "Revelation 1:14", "Revelation 20:4"]
+    },
+    {
+      "v": "10",
+      "context": "A river of fire streams from God's presence, countless attendants serve him, and the court sits and the books are opened. The judgment of the beasts is a legal proceeding, decided from written record.",
+      "grammar": "Nehar di-nur nagid, ‘a river of fire was streaming’, uses participles for continuing motion. The numbers are hyperbole built on doubling: ’elef ’alfin, ‘a thousand thousands’, and ribbo ribbevan, ‘a myriad of myriads’ (a myriad is ten thousand). Yeshammeshuneh, ‘they were serving him’, is the verb for attendants at a royal court. Dina’ yetiv, ‘the court sat’, uses din, ‘judgment’, for the court itself, and sifrin petichu, ‘books were opened’, is another Peil passive.",
+      "words": ["H5103H", "H5135", "H5047", "H0506", "H8120", "H7240", "H1780", "H3488", "H5609", "H6606"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The books opened in God's court mean that the judgment of the powers is not arbitrary; it rests on a record. Scripture uses the image for God's knowledge of all deeds (Malachi 3:16; Revelation 20:12). For persecuted readers the point is comfort: nothing the beasts have done is unrecorded."
+        },
+        {
+          "id": "angels",
+          "note": "The thousands who serve and the myriads who stand are the heavenly host, the angels who attend God's throne (Deuteronomy 33:2; Psalm 68:17). Revelation 5:11 echoes the numbers in its vision of the angels around the throne and the Lamb."
+        }
+      ],
+      "refs": ["Deuteronomy 33:2", "Psalm 50:3", "Revelation 5:11", "Revelation 20:12", "Malachi 3:16"]
+    },
+    {
+      "v": "11-12",
+      "context": "Daniel keeps watching because of the horn's boasting, and the court's verdict falls: the fourth beast is killed and its body burned. The other beasts lose their dominion but are allowed to live a while longer.",
+      "grammar": "Min-qal millayya ravrevata’, ‘because of the sound of the great words’, makes the horn's speech the cause of Daniel's attention and, by implication, of the verdict. Qetilat cheivta’, ‘the beast was killed’, is a Peil passive, and huvad gishmah, ‘its body was destroyed’, a Hophal: the executioner is unnamed. Yeqedat ’esha’, ‘the burning of fire’, echoes the furnace of chapter 3, where the fire meant for God's servants consumed their accusers (3:22). In verse 12 the other beasts' dominion he‘dyu, ‘they removed’, but ’arkhah vechayyin, ‘a lengthening in life’, was granted to them, ‘for a season and a time’ (‘ad-zeman ve‘iddan).",
+      "words": ["H7032G", "H4406", "H7260", "H6992", "H0007", "H1655", "H3346", "H0785", "H5709", "H0754", "H2166", "H5732"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The fourth beast is destroyed, while the earlier ones lose their power but not their existence. Many interpreters see here the historical fact that conquered peoples survived their empires, and a theological one: God's judgment is measured, not indiscriminate. Revelation 19:20 draws on this verse for the beast thrown alive into the lake of fire."
+        }
+      ],
+      "refs": ["Daniel 3:22", "Daniel 2:35", "Revelation 19:20", "Isaiah 66:24"]
+    },
+    {
+      "v": "13",
+      "context": "The central moment of the book. In the night vision Daniel sees one like a son of man coming with the clouds of heaven. He approaches the Ancient of Days and is presented before him. After four beasts from the sea, a human figure comes from heaven's side.",
+      "grammar": "Kevar ’enash, “One like the Son of Man”, is literally ‘like a son of man’. Bar is Aramaic for ‘son’, and bar ’enash, ‘son of man’, is an ordinary idiom for ‘a human being’, just as the beasts were ‘like’ a lion or a bear. The phrase has no article, so it is a description, not yet a title. ‘Im-‘ananei shemayya’, ‘with the clouds of heaven’, is the striking element: in the Old Testament the one who rides or comes on clouds is God himself (Psalm 104:3; Isaiah 19:1; Exodus 19:9). ’Ateh havah, ‘he was coming’, is another periphrastic participle. The direction matters: he comes ‘ad-‘Attiq yomayya’ meta’, ‘up to the Ancient of Days he reached’, so in the vision he moves toward God's throne, not from it toward earth. Uqedamohi haqrevuhi, ‘and before him they presented him’, is a Haphel of qerav, ‘bring near’, the verb used in Aramaic for presenting offerings (Ezra 6:10, 17): he is formally presented at court.",
+      "words": ["H2376", "H3916", "H0718", "H6050", "H8065", "H1247I", "H0606", "H0858", "H6268", "H4291", "H7127"],
+      "text": "The two ancient Greek versions differ here in ways that shaped the New Testament. Theodotion, following the Aramaic, has the figure coming ‘with the clouds’ (meta tōn nephelōn) and reaching ‘up to the Ancient of Days’. The Old Greek, preserved in Papyrus 967, Codex Chisianus (manuscript 88), and the Syro-Hexapla, has ‘on the clouds’ (epi tōn nephelōn) and says he came ‘as (hōs) the Ancient of Days’, with the attendants waiting on him. Scholars debate whether the Old Greek reading arose from a scribal confusion (the Greek words for ‘up to’ and ‘as’ look alike in some forms) or reflects a deliberate interpretation that assimilates the figure to God. The Gospels use both prepositions: Mark 14:62 has ‘with the clouds’, and Matthew 24:30 and 26:64 have ‘on the clouds’.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "Three main identifications of the figure are held. A collective reading takes him as a symbol of Israel, since the kingdom is given to the saints in verses 18 and 27 (Maurice Casey, Son of Man, 1979). An angelic reading identifies him with Michael, Israel's heavenly prince (10:21; 12:1), the view of John J. Collins. An individual messianic reading is ancient: the Similitudes of 1 Enoch (chapters 37-71) speak of ‘that Son of Man’ seated on a throne of glory; 4 Ezra 13 sees a man coming up from the sea and flying with the clouds; the Talmud (Sanhedrin 98a) says that if Israel is worthy the Messiah will come with the clouds of heaven, and if not, lowly and riding on a donkey (Zechariah 9:9); and Rashi on this verse names him the King Messiah. The readings can overlap, since a king represents his people."
+        },
+        {
+          "id": "exaltation",
+          "note": "Because the figure travels to the Ancient of Days, some interpreters, including N. T. Wright (Jesus and the Victory of God, 1996), argue that Jesus' use of the verse speaks first of his vindication and enthronement, fulfilled in his resurrection and ascension, rather than only of a descent to earth."
+        },
+        {
+          "id": "return",
+          "note": "Most Christian interpreters from the early church on have also read Jesus' use of the verse of his return in glory (Matthew 24:30; Revelation 1:7). The two readings are often combined: the enthronement Daniel describes is made visible to the world when Christ comes."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Mark 14:62",
+          "note": "Asked by the high priest whether he is the Christ, Jesus answers ‘I am’ and adds that they will see the Son of Man seated at the right hand of Power and coming with the clouds of heaven, combining Psalm 110:1 and this verse. The high priest's charge of blasphemy fits the claim: to come with the clouds and sit beside God is to claim the place Daniel gives this figure. Matthew 26:64 has ‘on the clouds’, the Old Greek preposition; Mark has ‘with’, the Aramaic and Theodotion's."
+        },
+        {
+          "ref": "John 5:27",
+          "note": "Jesus says the Father has given him authority to judge ‘because He is the Son of Man’. This is the only place in the Gospels where the Greek phrase lacks both articles, huios anthrōpou, exactly as in Daniel 7:13, and the context (authority given, judgment, resurrection) matches Daniel 7:9-14."
+        },
+        {
+          "ref": "Revelation 1:13-14",
+          "note": "John sees ‘one like a son of man’ whose head and hair are white like wool, as white as snow: features Daniel 7:9 gave to the Ancient of Days. Revelation attributes both figures' characteristics to the risen Christ, whether or not it knew the Old Greek's merging of them in 7:13."
+        }
+      ],
+      "refs": ["Psalm 104:3", "Isaiah 19:1", "Psalm 110:1", "Acts 1:9-11", "Revelation 1:7"]
+    },
+    {
+      "v": "14",
+      "context": "The one like a son of man is given dominion, glory, and a kingdom; all peoples, nations, and languages serve him; and his dominion will never pass away or be destroyed. Everything the beasts grasped, and more, is given to him.",
+      "grammar": "Three nouns name what is given: sholtan (dominion), yeqar (glory, honor), and malkhu (kingdom). They repeat the gifts God gave Nebuchadnezzar in 2:37 and 5:18, now given without end. ‘Peoples, nations, and languages’ (‘ammayya’ ’ummayya’ velishnayya’) is the formula of the royal decrees in chapter 3 (3:4, 7, 29), where all peoples were ordered to worship the golden image. The verb for their service is yiflechun, from pelach. Every other use of pelach in biblical Aramaic is religious: serving God or gods (3:12, 14, 17, 18, 28; 6:16, 20) or temple service (Ezra 7:24). The Old Greek sharpens the point with latreuousa, the Greek word for worship, while Theodotion has douleusousin, ‘they will serve’. Whether the verse implies worship of the figure is debated, since the same verb reappears in verse 27. The last clauses use two negated imperfects: la’ ye‘deh, ‘will not pass away’, and la’ titchabbal, ‘will not be destroyed’, echoing 2:44 and 6:26.",
+      "words": ["H3052", "H7985", "H3367", "H4437", "H5972", "H0524", "H3961", "H6399", "H5957", "H5709", "H2255"],
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom of God in Daniel is not an abstraction; it is given to a person and shared with a people. Jesus' announcement that the kingdom of God has come near (Mark 1:15) and his claim that all authority in heaven and on earth had been given to him (Matthew 28:18) stand on this verse."
+        },
+        {
+          "id": "exaltation",
+          "note": "The universal service given to this figure is the Old Testament background for Philippians 2:9-11, where every knee bows and every tongue confesses Jesus as Lord. The early church's worship of Christ drew on texts like this one in which God shares his kingdom and honor with a human figure at his side."
+        }
+      ],
+      "refs": ["Daniel 2:44", "Daniel 3:4", "Daniel 6:26", "Matthew 28:18", "Philippians 2:9-11"]
+    },
+    {
+      "v": "15-16",
+      "context": "Daniel is shaken by what he has seen. He approaches one of the attendants standing by the throne and asks for the truth of it, and the attendant explains. The book's pattern of vision followed by angelic interpretation begins here.",
+      "grammar": "’Etkeriyat ruchi, ‘my spirit was distressed’, is followed by an unusual phrase, begoa nidneh, literally ‘in the midst of its sheath’: the spirit is pictured in the body as a sword in its scabbard. The same expression appears in the Aramaic Genesis Apocryphon from Qumran (1QapGen 2:10), which shows it was a genuine Aramaic idiom. Yevahalunnani, ‘they alarmed me’, is the verb used of Nebuchadnezzar and Belshazzar's terror (4:5; 5:6). In verse 16 Daniel asks for yatstsiva’, ‘the certainty’, and receives peshar millayya’, ‘the interpretation of the matters’. Peshar is the word for interpretation throughout Daniel's Aramaic, and the Qumran community later used its Hebrew form, pesher, for its commentaries on the prophets.",
+      "words": ["H3735", "H7308", "H1459", "H5085", "H0927", "H7127", "H3330", "H6591"],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "Even a prophet needs the vision explained. Daniel's distress and his question show that revelation in Scripture engages the mind; it is not received by passive awe but by asking and being told."
+        }
+      ],
+      "refs": ["Zechariah 1:9", "Daniel 8:15-16", "Daniel 4:5", "Revelation 7:13-14"]
+    },
+    {
+      "v": "17-18",
+      "context": "The first interpretation is brief. The four beasts are four kings who arise from the earth, but the saints of the Most High will receive the kingdom and possess it forever. The whole vision is compressed into a before and after.",
+      "grammar": "The beasts are ’arbe‘ah malkhin, ‘four kings’, where verse 23 will speak of a fourth ‘kingdom’: in the vision's symbolism king and kingdom are interchangeable. Qaddishei ‘elyonin, “the saints of the Most High”, uses a plural form for ‘Most High’ (‘elyonin), which grammarians explain as a plural of majesty modeled on the Hebrew ’elohim; in verse 25 the singular ‘illaya’ is used for God himself. Qaddishin, ‘holy ones’, refers to angels in 4:13, 17, 23, and Martin Noth (1955) argued that the holy ones here are angels too; Collins holds a similar view, taking ‘the people of the holy ones’ in verse 27 as Israel on earth. Most interpreters take the saints as God's faithful people, since in verses 21 and 25 they are persecuted and defeated. Vechasnun, ‘they will possess’, is the verb of taking possession of an inheritance. The ending piles up ‘forever, and forever of forevers’ (‘ad-‘alma’ ve‘ad ‘alam ‘almayya’).",
+      "words": ["H2423", "H4430", "H6966G", "H6902", "H4437", "H6922", "H5946", "H2631", "H5957"],
+      "text": "Both Greek versions read ‘four kingdoms’ in verse 17, and several English translations follow them. The Old Greek also says the kingdoms ‘will perish from the earth’ rather than ‘arise’, anticipating their end.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The kingdom is received, not seized. The saints do not overthrow the beasts; the court removes the beasts and the kingdom is given. Jesus' promise that the Father is pleased to give the little flock the kingdom (Luke 12:32) has the same shape."
+        },
+        {
+          "id": "church",
+          "note": "The New Testament applies the saints' reign to the church: believers will reign with Christ (2 Timothy 2:12; Revelation 20:4) and will judge the world (1 Corinthians 6:2). Christians differ on how much of this is present and how much awaits Christ's return."
+        }
+      ],
+      "refs": ["Luke 12:32", "1 Corinthians 6:2", "Revelation 20:4", "Revelation 22:5", "Daniel 4:17"]
+    },
+    {
+      "v": "19-20",
+      "context": "Daniel wants to know more about the fourth beast and its horns, especially the little horn. His question retells the vision with new details: the beast had bronze claws as well as iron teeth, and the little horn looked larger than the others.",
+      "grammar": "Tsevit leyatstsava’, ‘I wished to make certain’, repeats the word for ‘certainty’ from verse 16. Two new details enter: tifrah di-nechash, ‘its claws of bronze’, not mentioned in verse 7, and the horn's chezvah rav min-chavratah, ‘its appearance greater than its companions’. The horn called ‘little’ in verse 8 now looks bigger than the rest. Nefalu, ‘fell’, replaces ‘were uprooted’, a different image for the same event. Iron and bronze together recall the statue of chapter 2 (2:32-33, 40).",
+      "words": ["H6634", "H3321", "H7244", "H6523", "H2953", "H5174", "H7162", "H5308", "H2376", "H2273"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The little horn grows in appearance as it grows in arrogance. Scripture repeatedly shows pride as a false enlargement, a self that looks greater than it is, and Daniel's book is built on the downfall of kings who exalt themselves (4:30-33; 5:20)."
+        }
+      ],
+      "refs": ["Daniel 2:32-33", "Daniel 2:40", "Daniel 4:30-33", "Daniel 5:20"]
+    },
+    {
+      "v": "21-22",
+      "context": "Daniel now sees something the first account did not mention: the horn making war on the saints and prevailing, until the Ancient of Days comes, judgment is given for the saints, and the time arrives for them to possess the kingdom. Persecution is real and limited.",
+      "grammar": "‘Avedah qerav ‘im-qaddishin, ‘making war with the holy ones’, and yakhelah lehon, ‘prevailing over them’, are participles: the vision shows the persecution in progress. The turning point is ‘ad di-’atah, ‘until he came’, the Ancient of Days. The phrase dina’ yehiv leqaddishei ‘elyonin can be read two ways: ‘judgment was given in favor of the saints’ (the BSB's reading) or ‘judgment, that is, the authority to judge, was given to the saints’. Both Greek versions say he ‘gave the judgment to the saints’, which allows either. Zimna’ meta’, ‘the appointed time arrived’, uses the same verb as the son of man ‘reaching’ the Ancient of Days in verse 13.",
+      "words": ["H7162", "H5648", "H7129", "H6922", "H3201", "H0858", "H6268", "H1780", "H3052", "H2166", "H2631"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The saints are not spared persecution, and for a time the horn prevails. The vision's comfort is that the persecution has a limit set by God and ends in a verdict for those who suffered."
+        },
+        {
+          "id": "justice-poor",
+          "note": "The judgment given ‘for’ the saints means God takes the side of the oppressed in his court. The biblical picture of God as the judge who vindicates the defenseless (Psalm 82:3-4) is applied here to a persecuted people."
+        }
+      ],
+      "nt": [
+        {
+          "ref": "Revelation 13:7",
+          "note": "The beast from the sea ‘was permitted to wage war against the saints and to conquer them’. The Greek follows Theodotion's wording of Daniel 7:21 closely (making war with the holy ones and prevailing). Revelation sets the persecution of Christians in Daniel's frame, including the limited time of forty-two months (Revelation 13:5)."
+        }
+      ],
+      "refs": ["Revelation 11:7", "Revelation 13:7", "1 Corinthians 6:2", "Psalm 82:3-4", "Matthew 19:28"]
+    },
+    {
+      "v": "23",
+      "context": "The interpreter explains the fourth beast: a fourth kingdom, different from all others, which will devour, trample, and crush the whole earth. The language of verse 7 is now applied to history.",
+      "grammar": "Malkhu revi‘aya’, ‘a fourth kingdom’, now uses ‘kingdom’ where verse 17 had ‘kings’. The three verbs, tekhul, ‘it will devour’, tedushinnah, ‘it will trample it’, and taddeqinnah, ‘it will crush it’, have ‘the whole earth’ as their object, a claim of universal rule. The verb dush, ‘trample’ or ‘thresh’, is new, the image of an animal treading grain. Tishne’, ‘it will be different’, repeats the chapter's keyword shena’, ‘be different’, used of the beasts (verses 3, 7, 19) and of the horn (verse 24).",
+      "words": ["H7244", "H4437", "H8133", "H0399", "H1759", "H1855", "H0772I"],
+      "history": "What made the fourth kingdom ‘different’ is read differently by each school. For those who read it as Rome, it is Rome's unprecedented extent and its long endurance. For those who read it as Alexander's Greek empire and its Seleucid and Ptolemaic successors, it is the cultural program of Hellenism, which aimed not only to rule but to remake the peoples it ruled, and which came to a head for Jews in Antiochus IV's decrees (1 Maccabees 1:41-50). The Talmud (Avodah Zarah 2b) applies ‘devour the whole earth’ to Rome, whose fame had spread through the world.",
+      "refs": ["Daniel 2:40", "Daniel 7:7", "Daniel 11:21-24", "Revelation 17:18"]
+    },
+    {
+      "v": "24",
+      "context": "The ten horns are ten kings from this kingdom. After them another king rises, different from the earlier ones, who will bring down three kings. The little horn is a ruler who comes to power by displacing others.",
+      "grammar": "Minnah malkhutah, ‘from it, the kingdom’, locates the ten kings within the fourth kingdom, not after it. ’Ochoran yequm ’achareihon, ‘another will rise after them’, and hu’ yishne’ min-qadmaye’, ‘he will be different from the former ones’. Yehashpil, ‘he will bring low’, is a Haphel (causative) of shefal, the verb used when God humbles the proud (4:37; 5:19, 22). The horn does to three kings what God does to proud kings.",
+      "words": ["H7162", "H6236", "H4430", "H6966G", "H0321", "H8133", "H6933", "H8532", "H8214"],
+      "history": "On the critical reading, the ten horns are rulers of the Seleucid line descended from Alexander's empire, and the three uprooted are commonly taken as those who stood between Antiochus IV and the throne in 175 BC: his brother Seleucus IV (murdered by his minister Heliodorus), Seleucus's son Demetrius (then a hostage in Rome), and another son of Seleucus, a child named Antiochus, later killed. On the traditional reading, the ten horns are kings or kingdoms arising from the Roman empire and the little horn is a later ruler, the antichrist of 2 Thessalonians 2, as Irenaeus (Against Heresies 5.25-26) and Hippolytus held. Protestant historicists often identified the little horn with the papacy, and Luther, in his preface to Daniel (1530), with the Turkish empire. Futurists expect the ten kings and the little horn at the end of the age.",
+      "refs": ["Daniel 8:23-25", "Daniel 11:21", "2 Thessalonians 2:3-4", "Revelation 17:12-13"]
+    },
+    {
+      "v": "25",
+      "context": "The little horn's program: words against the Most High, the wearing down of the saints, and an attempt to change the appointed times and the law. The saints are handed over to him for a time, times, and half a time. The limit is stated in the same breath as the suffering.",
+      "grammar": "Millin letsad ‘illaya’ yemallil, ‘words to the side of the Most High he will speak’: letsad, ‘beside’ or ‘toward’, here means ‘against’, and ‘illaya’ is the singular form for God. Yevalle’, ‘he will wear out’, is a Pael of the verb used for clothes worn thin (the Hebrew cognate in Deuteronomy 8:4); persecution is pictured as slow attrition. Veyisbar lehashnayah zimnin vedat, ‘he will intend to change times and law’: zimnin are the appointed times, and dat is a Persian loanword for law, the word for ‘the law of the Medes and Persians’ (6:8) and for the law of God (Ezra 7:26; Daniel 6:5). The period ‘iddan ve‘iddanin ufelag ‘iddan, ‘a time and times and half a time’, is usually taken as three and a half years, reading ‘iddanin as a dual (‘two times’); 4:16 uses ‘iddan for the ‘seven times’ of Nebuchadnezzar's madness.",
+      "words": ["H4406", "H6655", "H5943", "H4449", "H6922", "H1080", "H5452", "H8133", "H2166", "H1882", "H3052", "H5732", "H6387"],
+      "history": "The verse fits closely what Antiochus IV Epiphanes did to the Jews. In 167 BC he outlawed the Sabbath, the festivals, circumcision, and the temple sacrifices, and in the month of Kislev that year an altar to a foreign god was set up in the temple (1 Maccabees 1:41-54; 2 Maccabees 6:1-11). The temple was rededicated by Judas Maccabeus in Kislev 164 BC (1 Maccabees 4:52), a span of about three years, the origin of the festival of Hanukkah. Critical scholars read the verse as describing Antiochus; many traditional interpreters see Antiochus as a type, a real historical anticipation, of a final persecutor, a reading Jerome already held.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The saints are ‘given into his hand’, a divine passive: even the persecution happens under God's permission and for a measured time. Revelation adopts the three and a half as the symbolic length of the church's persecution (Revelation 12:14; 11:2-3; 13:5)."
+        }
+      ],
+      "refs": ["Daniel 12:7", "Revelation 12:14", "Revelation 13:5-7", "Daniel 11:31-36", "2 Thessalonians 2:4"]
+    },
+    {
+      "v": "26-27",
+      "context": "The court sits, the horn's dominion is taken away and destroyed, and the kingdom under the whole heaven is given to the people of the saints of the Most High. The interpretation ends where the vision did, with an everlasting kingdom and all rulers serving and obeying.",
+      "grammar": "Verse 26 repeats the courtroom language of verse 10 (dina’ yitiv, ‘the court will sit’) and uses two infinitives of destruction, lehashmadah ulehoba‘dah, ‘to annihilate and to destroy’, ‘ad-sofa’, ‘to the end’. In verse 27 three nouns name what is given, malkhutah, sholtana’, and revuta’ (kingdom, dominion, greatness), echoing verse 14. It is given le‘am qaddishei ‘elyonin, ‘to the people of the saints of the Most High’. The next clause, malkhuteh malkhut ‘alam, ‘his kingdom is an everlasting kingdom’, has an ambiguous pronoun: ‘his’ may refer to the Most High, as the BSB takes it (“His kingdom”), or to the people, treated as a collective singular (so some translations: ‘their kingdom’). The final verbs, yiflechun veyishtamme‘un, ‘they will serve and obey’, use pelach again, as in verse 14.",
+      "words": ["H1780", "H3488", "H7985", "H5709", "H8046", "H0007", "H5491", "H4437", "H7238", "H5972", "H6922", "H5946", "H6399", "H8086"],
+      "history": "The Aramaic ‘Son of God’ text from Qumran (4Q246) speaks of one who will be called son of God and son of the Most High, and says that his kingdom will be an everlasting kingdom, language drawn from this chapter (verses 14, 27) and from 2:44. Luke 1:32-33 uses strikingly similar language in the angel's announcement to Mary.",
+      "theology": [
+        {
+          "id": "kingdom",
+          "note": "The same everlasting kingdom is given to the son of man (verse 14) and to the people of the saints (verse 27). The New Testament holds the two together: the kingdom belongs to Christ and is shared with those who belong to him (Luke 22:29-30; Revelation 3:21)."
+        },
+        {
+          "id": "judgment",
+          "note": "The last word on the persecuting power is God's court, not the power's own boast. Judgment in Daniel is the necessary condition of the saints' reign: the kingdom cannot be given until the beast's dominion is taken away."
+        }
+      ],
+      "refs": ["Daniel 2:44", "Daniel 7:14", "Luke 1:32-33", "Luke 22:29-30", "Revelation 11:15"]
+    },
+    {
+      "v": "28",
+      "context": "The Aramaic section of the book ends here. Daniel is deeply troubled, his face pales, and he keeps the matter in his heart. The vision gives hope but not ease; the one who received it is shaken by what it says about the suffering to come.",
+      "grammar": "‘Ad-kah sofa’ di-millta’, ‘here is the end of the matter’, is a closing formula, and the Hebrew section begins with the next verse. Ziwai yishtannon ‘alai, ‘my brightness was changed on me’, is the idiom used of Belshazzar's face in 5:6, 9: Daniel reacts to God's word as the king reacted to the writing on the wall. Umillta’ belibbi nitret, ‘and the matter in my heart I kept’, uses natar, ‘guard’ or ‘keep’. Theodotion renders it ‘I kept (synetērēsa) the matter in my heart’, and Luke uses the same verb of Mary, who ‘treasured up all these things and pondered them in her heart’ (Luke 2:19). Jacob kept Joseph's dreams in mind in the same way (Genesis 37:11).",
+      "words": ["H5491", "H4406", "H7476", "H0927", "H2122", "H8133", "H3821", "H5202"],
+      "theology": [
+        {
+          "id": "prophecy",
+          "note": "Daniel neither broadcasts nor dismisses the vision; he keeps it. The book presents prophecy as something to be guarded and pondered until its time (12:4, 9), and the New Testament's picture of Mary pondering the words about her son stands in the same tradition of patient reception."
+        }
+      ],
+      "refs": ["Daniel 5:6", "Daniel 8:27", "Daniel 12:4", "Genesis 37:11", "Luke 2:19"]
+    }
+  ]
+}

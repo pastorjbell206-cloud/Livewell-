@@ -9,8 +9,10 @@
  * - Bookmark + reading progress persist in localStorage
  */
 import { useEffect, useRef, useState } from "react";
+import { scrollBehavior } from "@/lib/motion";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
+import { useQuery } from "@tanstack/react-query";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
@@ -22,21 +24,35 @@ import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
 import { AuthorBio } from "@/components/AuthorBio";
+import ChannelLine from "@/components/ChannelLine";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
-import { AudienceLabel } from "@/components/AudienceLabel";
-import { TrackChip } from "@/components/TrackChip";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
-import ArticleNextSteps from "@/components/ArticleNextSteps";
+import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
 import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
-import { pillarForPost } from "@/lib/taxonomy";
+import { pillarForPost, pillarToTrack } from "@/lib/taxonomy";
+import {
+  cleanExcerpt,
+  essayDate,
+  essayVisibility,
+  isEssayOverride,
+  nearestSection,
+  overrideMeta,
+  overrideUrl,
+  sectionBySlug,
+  sectionHref,
+  shelfEntry,
+} from "@/lib/shelf";
+import { fetchJson } from "@/lib/fetch-json";
+import { RetiredEssayNotice } from "@/components/RetiredEssayNotice";
 import { articleUrl, OG_DEFAULT_IMAGE, SITE_URL } from "@/lib/site";
 import { trackEssayComplete, trackPathStep } from "@/lib/telemetry";
 import { markEssayRead } from "@/lib/readProgress";
-import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isArrayOf, readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { normalizeEssayBody, opensWithProse, stripDuplicateTitle } from "@/lib/html-body";
 
 /**
  * Per-slug byline overrides. Every essay not listed here is authored by
@@ -95,38 +111,26 @@ function ShareButton({ title, url }: { title: string; url: string }) {
 }
 
 function readBookmarked(slug: string): boolean {
-  try {
-    const stored = JSON.parse(
-      localStorage.getItem("livewell:bookmarks") || "[]"
-    ) as string[];
-    return stored.includes(slug);
-  } catch {
-    // localStorage may be unavailable (private mode, sandbox)
-    return false;
-  }
+  return readStoredJSON("livewell:bookmarks", isStringArray, [] as string[]).includes(slug);
 }
+
+const isStringArray = isArrayOf((x): x is string => typeof x === "string");
 
 // Rendered with key={slug} so navigating between articles remounts it and
 // re-reads the stored bookmarks for the new slug.
 function BookmarkButton({ slug }: { slug: string }) {
   const [bookmarked, setBookmarked] = useState(() => readBookmarked(slug));
+  const [saveFailed, setSaveFailed] = useState(false);
 
   const toggle = () => {
-    setBookmarked(prev => {
-      const next = !prev;
-      try {
-        const stored = JSON.parse(
-          localStorage.getItem("livewell:bookmarks") || "[]"
-        ) as string[];
-        const updated = next
-          ? Array.from(new Set([...stored, slug]))
-          : stored.filter(s => s !== slug);
-        localStorage.setItem("livewell:bookmarks", JSON.stringify(updated));
-      } catch {
-        // ignore
-      }
-      return next;
-    });
+    // Flip only when the write lands, so "Saved" and aria-pressed stay
+    // truthful in private mode / blocked storage.
+    const next = !bookmarked;
+    const stored = readStoredJSON("livewell:bookmarks", isStringArray, [] as string[]);
+    const updated = next ? Array.from(new Set([...stored, slug])) : stored.filter(s => s !== slug);
+    const ok = writeStoredJSON("livewell:bookmarks", updated);
+    setSaveFailed(!ok);
+    if (ok) setBookmarked(next);
   };
 
   return (
@@ -157,6 +161,11 @@ function BookmarkButton({ slug }: { slug: string }) {
         fill={bookmarked ? "currentColor" : "none"}
       />
       {bookmarked ? "Saved" : "Save"}
+      {saveFailed && (
+        <span role="status" style={{ fontWeight: 400, color: "var(--ink-muted)" }}>
+          — couldn't save to this browser
+        </span>
+      )}
     </button>
   );
 }
@@ -171,10 +180,13 @@ function ShareableQuote({
   children,
   shareTitle,
   shareUrl,
+  author,
 }: {
   children?: React.ReactNode;
   shareTitle: string;
   shareUrl: string;
+  /** The essay's resolved byline; shared quotes are attributed to the person who wrote them. */
+  author: string;
 }) {
   const textRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
@@ -182,7 +194,7 @@ function ShareableQuote({
   const onShare = async () => {
     const quote = textRef.current?.textContent?.trim() ?? "";
     if (!quote) return;
-    const attributed = `"${quote}" — James Bell`;
+    const attributed = `"${quote}" — ${author}`;
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({ title: shareTitle, text: attributed, url: shareUrl });
@@ -229,10 +241,13 @@ function QuoteSelectionShare({
   title,
   url,
   bodyRef,
+  author,
 }: {
   title: string;
   url: string;
   bodyRef: React.RefObject<HTMLDivElement | null>;
+  /** The essay's resolved byline; a highlighted sentence is attributed to its writer. */
+  author: string;
 }) {
   const [pop, setPop] = useState<{ text: string; top: number; left: number } | null>(null);
   const [copied, setCopied] = useState(false);
@@ -271,7 +286,7 @@ function QuoteSelectionShare({
   if (!pop) return null;
 
   const share = async () => {
-    const attributed = `“${pop.text}” — James Bell`;
+    const attributed = `“${pop.text}” — ${author}`;
     if (typeof navigator !== "undefined" && navigator.share) {
       try { await navigator.share({ title, text: attributed, url }); setPop(null); return; } catch { /* fall through to copy */ }
     }
@@ -330,7 +345,9 @@ function TableOfContents({
     const root = bodyRef.current;
     if (!root) return;
     const seen = new Set<string>();
-    const headings = Array.from(root.querySelectorAll("h2")).map((node, i) => {
+    // An empty heading (a stray "##" in an imported body) is not a section.
+    const nodes = Array.from(root.querySelectorAll("h2")).filter((node) => node.textContent?.trim());
+    const headings = nodes.map((node, i) => {
       const text = node.textContent?.trim() || `Section ${i + 1}`;
       let id = node.id || slugifyHeading(text, i);
       while (seen.has(id)) id = `${id}-${i}`;
@@ -348,7 +365,7 @@ function TableOfContents({
     e.preventDefault();
     const el = document.getElementById(id);
     if (!el) return;
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    el.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     if (typeof history !== "undefined") {
       history.replaceState(null, "", `#${id}`);
     }
@@ -357,7 +374,15 @@ function TableOfContents({
   return (
     <nav
       aria-label="In this essay"
-      style={{ maxWidth: "var(--w-prose)", margin: "0 auto var(--s-5)" }}
+      // The site-header rule in index.css styles every bare <nav> as a 70px
+      // flex bar; reset it here or the card overflows onto the hero and body.
+      style={{
+        display: "block",
+        height: "auto",
+        padding: 0,
+        maxWidth: "var(--w-prose)",
+        margin: "0 auto var(--s-5)",
+      }}
     >
       <details
         open
@@ -420,15 +445,77 @@ function TableOfContents({
   );
 }
 
+/** What the page renders: the database post, or the shelf's rewrite of it. */
+interface EssayView {
+  slug: string;
+  title: string;
+  excerpt: string | null;
+  body: string | null;
+  pillar: string | null;
+  coverImage: string | null;
+  audience: string | null;
+  readingTimeMinutes: number | null;
+  publishedAt: Date | string | null;
+  createdAt: Date | string | null;
+  updatedAt: Date | string | null;
+}
+
 export default function ArticleDetail() {
   const { slug } = useParams<{ slug: string }>();
   const bodyRef = useRef<HTMLDivElement>(null);
   const [, navigate] = useLocation();
+
+  // The shelf decides what this URL shows (lib/shelf.ts). A pending shelf
+  // essay with no rewrite yet needs nothing from the server; one with a
+  // rewrite renders that file instead of the database body.
+  const entry = shelfEntry(slug);
+  const rewrite = overrideMeta(slug);
+  const waitingOnRewrite = entry?.status === "pending" && !rewrite;
+
   const postQuery = trpc.posts.getBySlug.useQuery(
     { slug: slug ?? "" },
-    { enabled: Boolean(slug) }
+    { enabled: Boolean(slug) && !waitingOnRewrite }
   );
-  const post = postQuery.data ?? null;
+  const rewriteQuery = useQuery({
+    queryKey: ["essay-rewrite", slug],
+    queryFn: () => fetchJson(overrideUrl(slug ?? ""), isEssayOverride),
+    enabled: Boolean(slug && rewrite),
+  });
+
+  const dbPost = postQuery.data ?? null;
+  const rewritten = rewriteQuery.data ?? null;
+  const post: EssayView | null = rewritten
+    ? {
+        slug: rewritten.slug,
+        title: rewritten.title,
+        excerpt: rewritten.excerpt || null,
+        body: rewritten.body,
+        pillar: dbPost?.pillar ?? null,
+        coverImage: dbPost?.coverImage ?? null,
+        audience: dbPost?.audience ?? null,
+        readingTimeMinutes: Math.max(1, Math.round(rewritten.body.split(/\s+/).filter(Boolean).length / 225)),
+        publishedAt: dbPost?.publishedAt ?? rewritten.updated,
+        createdAt: dbPost?.createdAt ?? rewritten.updated,
+        updatedAt: rewritten.updated,
+      }
+    : dbPost
+      ? {
+          slug: dbPost.slug,
+          title: dbPost.title,
+          // The shelf's own line when it has one (blurb "" means no line);
+          // otherwise the excerpt, with the entities Substack left decoded.
+          excerpt:
+            entry?.blurb !== undefined ? entry.blurb || null : cleanExcerpt(dbPost.excerpt) || null,
+          body: dbPost.body ?? null,
+          pillar: dbPost.pillar ?? null,
+          coverImage: dbPost.coverImage ?? null,
+          audience: dbPost.audience ?? null,
+          readingTimeMinutes: dbPost.readingTimeMinutes ?? null,
+          publishedAt: dbPost.publishedAt ?? null,
+          createdAt: dbPost.createdAt ?? null,
+          updatedAt: dbPost.updatedAt ?? null,
+        }
+      : null;
 
   // Reading-focus mode (board rec #10): a page-level calm that reduces the
   // article to title + body, persisted so the preference survives a reload.
@@ -484,7 +571,20 @@ export default function ArticleDetail() {
     return () => observer.disconnect();
   }, [postSlug]);
 
-  if (postQuery.isLoading) {
+  if (waitingOnRewrite && entry) {
+    return (
+      <RetiredEssayNotice
+        slug={entry.slug}
+        title={entry.title}
+        pending
+        section={nearestSection(entry.slug)}
+      />
+    );
+  }
+
+  // With a rewrite, wait for the file and for the database row (its pillar and
+  // dates); a missing or failed row does not hold the rewrite back.
+  if (postQuery.isLoading || rewriteQuery.isLoading) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
@@ -497,15 +597,15 @@ export default function ArticleDetail() {
   // A request that failed is not an article that does not exist. Telling a
   // reader the piece is gone when the server simply did not answer is a lie
   // the reader has no way to check, and it loses them for good.
-  if (postQuery.isError) {
+  if (rewrite ? rewriteQuery.isError : postQuery.isError) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)" }}>
           <LoadFailed
             what="This essay"
-            onRetry={() => void postQuery.refetch()}
+            onRetry={() => void (rewrite ? rewriteQuery.refetch() : postQuery.refetch())}
             backHref="/writing"
-            backLabel="Back to the writing"
+            backLabel="All essays"
           />
         </div>
       </Layout>
@@ -525,7 +625,7 @@ export default function ArticleDetail() {
               marginBottom: "20px",
             }}
           >
-            Article not found
+            Essay not found
           </h2>
           <button
             type="button"
@@ -542,12 +642,31 @@ export default function ArticleDetail() {
               fontSize: "13px",
             }}
           >
-            Back to Writing
+            All essays
           </button>
         </div>
       </Layout>
     );
   }
+
+  // Off the shelf: the URL still answers, with a short notice that points on.
+  const visibility = essayVisibility(post.slug, essayDate(post));
+  if (visibility === "retired" || visibility === "pending") {
+    return (
+      <RetiredEssayNotice
+        slug={post.slug}
+        title={post.title}
+        pending={visibility === "pending"}
+        section={nearestSection(post.slug, pillarToTrack(post.pillar))}
+      />
+    );
+  }
+
+  // The body as Markdown, with the import's broken structure repaired and a
+  // repeated title dropped; the drop cap only when it opens on real prose.
+  const bodyMarkdown = post.body ? stripDuplicateTitle(normalizeEssayBody(post.body), post.title) : "";
+  const dropCap = opensWithProse(bodyMarkdown);
+  const kickerSection = sectionBySlug(entry?.section);
 
   const canonical = articleUrl(post.slug);
   const description = post.excerpt || post.title;
@@ -582,7 +701,7 @@ export default function ArticleDetail() {
           ),
           getBreadcrumbSchema([
             { name: "Home", url: SITE_URL },
-            { name: "Writing", url: `${SITE_URL}/writing` },
+            { name: "Essays", url: `${SITE_URL}/writing` },
             { name: post.title, url: canonical },
           ]),
         ]}
@@ -619,7 +738,7 @@ export default function ArticleDetail() {
             }
           >
             <ArrowLeft size={16} aria-hidden />
-            Back to Writing
+            All essays
           </button>
         </div>
         )}
@@ -639,7 +758,8 @@ export default function ArticleDetail() {
               textAlign: "center",
             }}
           >
-            {/* Kicker — pillar */}
+            {/* Kicker: the shelf section the essay sits in, or Latest for a
+                new post off the shelf (the names /writing uses). */}
             <div
               style={{
                 display: "flex",
@@ -647,7 +767,24 @@ export default function ArticleDetail() {
                 marginBottom: "24px",
               }}
             >
-              <TrackChip pillarOrTrack={post.pillar} slug={post.slug} />
+              <Link
+                href={kickerSection ? sectionHref(kickerSection) : "/writing"}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  fontFamily: "var(--U)",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.18em",
+                  color: "var(--mustard-text)",
+                  textDecoration: "none",
+                }}
+              >
+                <span aria-hidden style={{ width: "24px", height: "1px", background: "var(--mustard)" }} />
+                {kickerSection ? kickerSection.name : "Latest"}
+              </Link>
             </div>
 
             {/* Title */}
@@ -711,10 +848,7 @@ export default function ArticleDetail() {
                 {author}
               </span>
               <span aria-hidden style={{ opacity: 0.5 }}>·</span>
-              <AudienceLabel
-                audience={post.audience}
-                readingTimeMinutes={post.readingTimeMinutes ?? 5}
-              />
+              <span>{post.readingTimeMinutes ?? 5} min read</span>
               {post.publishedAt && (
                 <>
                   <span aria-hidden style={{ opacity: 0.5 }}>·</span>
@@ -812,10 +946,10 @@ export default function ArticleDetail() {
               {focus ? "Exit focus" : "Focus"}
             </button>
           </div>
-          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
+          <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} author={author} />
           {!focus && <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />}
           <div
-            className="article-body"
+            className={dropCap ? "article-body" : "article-body prose-section"}
             ref={bodyRef}
             style={{
               maxWidth: focus ? "68ch" : "var(--w-prose)",
@@ -830,13 +964,13 @@ export default function ArticleDetail() {
               <Markdown
                 components={{
                   blockquote: ({ children }: { children?: React.ReactNode }) => (
-                    <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
+                    <ShareableQuote shareTitle={post.title} shareUrl={canonical} author={author}>
                       {children}
                     </ShareableQuote>
                   ),
                 }}
               >
-                {post.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}
+                {bodyMarkdown}
               </Markdown>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
@@ -895,10 +1029,21 @@ export default function ArticleDetail() {
           <>
             {/* NEXT STEPS — the matched tool and reading path for this essay
                 (built long ago, never imported; revived by QW-16) */}
-            <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-
-            {/* KEEP READING — the book, then another essay */}
-            <KeepReadingBook post={post} />
+            {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
+                peak intent, so exactly one ask leads, chosen by where they
+                are: mid-path, the next essay in that path; otherwise the book
+                that carries the argument. The other demotes to a quiet line. */}
+            {isArticleOnPath(post.slug ?? "") ? (
+              <>
+                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+                <KeepReadingBook post={post} quiet />
+              </>
+            ) : (
+              <>
+                <KeepReadingBook post={post} />
+                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
+              </>
+            )}
             <RelatedEssays post={post} />
 
             {/* NEWSLETTER (single CTA — no fake form) */}
@@ -915,6 +1060,7 @@ export default function ArticleDetail() {
 
             {/* AUTHOR BIO */}
             <AuthorBio author={author} />
+            <ChannelLine />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
           </>

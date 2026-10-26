@@ -1,0 +1,526 @@
+{
+  "verses": [
+    {
+      "v": "1-2",
+      "context": "After the triumph of 8:31-39, Paul turns abruptly to grief. He swears to the truth of what he is about to say, calling on Christ, his own conscience, and the Holy Spirit as witnesses, because what follows might sound like a Jewish apostle who has abandoned his people. The sorrow is constant and deep, and it sets the tone for chapters 9-11.",
+      "grammar": "Aletheian lego en Christo, ou pseudomai, ‘I speak truth in Christ, I do not lie’, is an oath formula; Paul uses similar wording in 2 Corinthians 11:31 and Galatians 1:20 when his integrity is questioned. The genitive absolute symmartyrouses moi tes syneideseos mou, ‘my conscience bearing witness with me’, uses the verb of 8:16 (‘testifies with’): as the Spirit testified with the believer's spirit, here the conscience testifies with Paul, and en pneumati hagio (‘in the Holy Spirit’) makes the Spirit the sphere of that testimony. Verse 2 pairs lype megale (‘great sorrow’) with adialeiptos odyne (‘unceasing anguish’); odyne is a word for sharp pain, and adialeiptos (‘unceasing’) is used of Paul's constant prayer (1:9).",
+      "words": ["G0225", "G5574", "G4828", "G4893", "G3077", "G0088", "G3601"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Paul's discussion of Israel begins not with argument but with grief. Whatever he goes on to say about God's choosing, he says it as one who mourns his people's unbelief, not as one who has written them off."
+        }
+      ],
+      "refs": ["2 Corinthians 11:31", "Galatians 1:20", "Romans 1:9", "Luke 19:41-44", "Romans 10:1"]
+    },
+    {
+      "v": "3",
+      "context": "Paul says he could wish to be accursed and cut off from Christ for the sake of his fellow Jews. The wish is stated as something he cannot actually do, but it shows the depth of his love. It echoes Moses' plea after the golden calf.",
+      "grammar": "Euchomen, an imperfect indicative, is used here for an unfulfilled or unattainable wish: ‘I could wish’ or ‘I was on the point of praying’, not ‘I did pray’. Grammarians compare Acts 25:22 and Galatians 4:20. Paul knows the wish cannot be granted, since 8:38-39 has just said nothing can separate him from Christ's love. Anathema einai autos ego apo tou Christou, ‘to be accursed, I myself, from Christ’, uses anathema, the Septuagint word for something devoted to destruction under God's ban (Hebrew cherem, as in Leviticus 27:28-29 and Joshua 6:17). Autos ego (‘I myself’) is emphatic. Hyper ton adelphon mou (‘for the sake of my brothers’) uses hyper, ‘on behalf of’, the preposition of substitution in 5:6-8.",
+      "words": ["G2172", "G0331", "G5547", "G0080", "G4773", "G4561"],
+      "theology": [
+        {
+          "id": "love",
+          "note": "Paul's wish reflects the love of Christ, who did become a curse for others (Galatians 3:13). Paul cannot take that place, but his willingness shows what Christlike love for the unbelieving looks like."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 32:32",
+          "note": "After Israel worshiped the golden calf, Moses prayed that God would forgive the people, ‘but if not, please blot me out of the book You have written’. The Hebrew mecheni na missifrekha (‘blot me, please, from your book’) becomes exaleipson me ek tes biblou sou in the Septuagint. Paul does not quote the words, but the situation is the same: a leader offering himself for a people who have turned from God. God refused Moses' offer (Exodus 32:33), and Paul knows his own wish cannot be granted either."
+        }
+      ],
+      "refs": ["Exodus 32:32", "Galatians 3:13", "1 Corinthians 16:22", "Romans 16:7", "Romans 11:14"]
+    },
+    {
+      "v": "4",
+      "context": "Paul lists what belongs to Israel: the name itself, adoption, glory, covenants, law, worship, and promises. Each is a privilege God gave, and many of them Paul has just described as the inheritance of believers in chapter 8 (adoption, glory). That is the problem: these gifts belonged to Israel first.",
+      "grammar": "Hoitines eisin Israelitai, ‘who are Israelites’, uses the honorable covenant name rather than ‘Jews’, and the present tense eisin (‘are’) insists that these privileges are still theirs, not were. Paul then uses a series of relative clauses, hon (‘whose’), with six nouns in two sets of three, with similar endings in Greek: huiothesia (‘adoption’), doxa (‘glory’), diathekai (‘covenants’), nomothesia (‘giving of the law’), latreia (‘worship’, the service of the tabernacle and temple), and epangeliai (‘promises’). Huiothesia is the word of 8:15 and 8:23; doxa probably means God's glorious presence in the tabernacle and temple (Exodus 40:34-35, 1 Kings 8:10-11), which later Jewish writers called the Shekinah.",
+      "words": ["G2475", "G5206", "G1391", "G1242", "G3548", "G2999", "G1860"],
+      "history": "Every item names a feature of Israel's national life. Israel was called God's firstborn son at the exodus (Exodus 4:22, Hosea 11:1). The glory of the LORD filled the tabernacle (Exodus 40:34) and Solomon's temple (1 Kings 8:10-11). The covenants include those with Abraham (Genesis 15, 17), at Sinai (Exodus 24), with David (2 Samuel 7), and the promised new covenant (Jeremiah 31:31-34). When Paul wrote, the temple in Jerusalem still stood and its daily sacrifices still continued; it would be destroyed by the Romans in AD 70.",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "Paul affirms Israel's privileges in the present tense. The list shows that the church's blessings (adoption, glory, covenant, promise) were first Israel's, which is the reason Paul must explain why most of Israel has not received the Messiah."
+        },
+        {
+          "id": "covenant",
+          "note": "‘The covenants’, plural, most likely refers to the series of covenants God made with Abraham, at Sinai, and with David, with the new covenant in view. God's covenant faithfulness to Israel is the question chapters 9-11 answer."
+        }
+      ],
+      "text": "Some early manuscripts, including the papyrus P46 and Codex Vaticanus, read the singular ‘the covenant’. Most witnesses and modern editions read the plural. The plural is the more unusual expression (the Hebrew Old Testament never uses it, though later Jewish writings such as Sirach 44 do), which is why many editors think scribes changed it to the familiar singular.",
+      "refs": ["Exodus 4:22", "Exodus 40:34", "Ephesians 2:12", "Romans 3:1-2", "Hebrews 9:1"]
+    },
+    {
+      "v": "5",
+      "context": "The list ends with the patriarchs and with the Messiah, who came from Israel according to his human descent. Then comes a clause that has been argued over for centuries: either Paul calls Christ ‘God over all, forever worthy of praise’, or he adds a separate blessing of God at the end of the list.",
+      "grammar": "Hon hoi pateres, ‘whose are the fathers’, and ex hon ho Christos to kata sarka, ‘from whom is the Christ according to the flesh’, change the pattern: the Messiah does not belong to them, but comes from them. To kata sarka (‘as far as the flesh is concerned’) is a limiting phrase that seems to invite a contrast, as in 1:3-4, where Christ is David's son according to the flesh and Son of God in power. The disputed words are ho on epi panton theos eulogetos eis tous aionas. Ancient manuscripts were written with little or no punctuation, so the decision rests on grammar and context. If a comma follows ‘flesh’, the participle ho on (‘who is’) most naturally refers back to Christ, the nearest noun: ‘Christ, who is God over all, blessed forever’. If a full stop follows ‘flesh’, the words become a separate doxology: ‘God who is over all be blessed forever’. Two arguments favor the first reading: Greek doxologies that stand alone almost always put eulogetos (‘blessed’) first (as in 2 Corinthians 1:3, Ephesians 1:3, and Luke 1:68), and Paul's other doxologies attach to a subject already named (1:25, 2 Corinthians 11:31). The main argument for the second is that Paul rarely if ever calls Christ theos directly, and elsewhere reserves ‘God over all’ for the Father (1 Corinthians 15:28, Ephesians 4:6).",
+      "words": ["G3962", "G5547", "G4561", "G1510", "G3956", "G2316", "G2128", "G0165H", "G0281"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "‘According to the flesh’ places the Messiah's human descent in Israel. If the clause that follows refers to Christ, the verse states both natures in one sentence: descended from the patriarchs as man, and God over all. That is how almost all the church fathers read it, including Irenaeus, Tertullian, and Origen."
+        },
+        {
+          "id": "trinity",
+          "note": "The punctuation question has been decided both ways by faithful scholars. Erasmus in the sixteenth century raised doubts about the traditional reading, and the Revised Standard Version (1946) put the separate doxology in its text. Most modern translations (NIV, ESV, NRSV, BSB) read it of Christ; the committee behind the United Bible Societies' Greek text was divided, and Bruce Metzger, in a note in his Textual Commentary and in a 1973 essay, set out the case for the Christological reading, which Murray Harris also defends in Jesus as God (1992). The confession of Christ's deity does not rest on this verse alone (John 1:1, 20:28, Titus 2:13, Hebrews 1:8)."
+        }
+      ],
+      "text": "There is no difference in the Greek words among the manuscripts here, only in how editors and translators punctuate them. The main options are: (1) a comma after ‘flesh’, so that Christ is ‘God over all, blessed forever’ (most modern versions and the King James Version); (2) a full stop after ‘flesh’, making a separate doxology, ‘God who is over all be blessed forever’ (the Revised Standard Version's text and some modern scholars); and (3) a full stop after ‘over all’, so that Christ is ‘over all’ and the rest is a doxology to God, ‘God be blessed forever’ (a minority view).",
+      "refs": ["Romans 1:3-4", "Romans 1:25", "2 Corinthians 11:31", "John 1:1", "Titus 2:13"]
+    },
+    {
+      "v": "6",
+      "context": "Here is the thesis of chapters 9-11: God's word has not failed. The rest of chapter 9 defends it by a distinction Paul draws from Israel's own history: not everyone descended from Israel is Israel. God's promise was never to every physical descendant automatically.",
+      "grammar": "Ouch hoion de hoti ekpeptoken ho logos tou theou is an unusual expression, literally ‘but it is not such as that the word of God has fallen’. Ekpeptoken, a perfect of ekpipto, means ‘has fallen off’, ‘failed’, ‘come to nothing’, used of flowers falling (James 1:11) or a ship running aground (Acts 27:17). Ho logos tou theou (‘the word of God’) here means God's promises to Israel. The second sentence has a play on the name: ou gar pantes hoi ex Israel, houtoi Israel, ‘for not all who are from Israel, these are Israel’. The first ‘Israel’ probably means the patriarch Jacob (renamed Israel) or the nation as descended from him; the second means the true people of promise. Whether that second ‘Israel’ includes Gentile believers, as some hold, or means a faithful remnant within ethnic Israel, as the context of 9:27 and 11:5 suggests to most interpreters, is debated.",
+      "words": ["G3634", "G1601", "G3056", "G2474"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God's covenant word stands. Paul defends his faithfulness by showing that the promise always worked through a line of promise within Abraham's family, not by denying the promise to Israel."
+        },
+        {
+          "id": "election",
+          "note": "The distinction between Israel and the Israel of promise introduces the theme of election. Readings divide from here: whether the chapter concerns individuals chosen for salvation, the formation of a people and its role in history, or both."
+        }
+      ],
+      "refs": ["Romans 2:28-29", "Romans 3:3-4", "Numbers 23:19", "Isaiah 55:11", "Galatians 6:16"]
+    },
+    {
+      "v": "7",
+      "context": "The first example: Abraham had more than one son, but the promised line ran through Isaac, not Ishmael. Physical descent from Abraham did not make every descendant a child of the promise.",
+      "grammar": "Oud hoti eisin sperma Abraam, pantes tekna, ‘nor because they are Abraham's seed are they all children’, distinguishes sperma (‘seed’, ‘offspring’) from tekna (‘children’). Paul will reverse the terms in verse 8, where the children of promise are ‘counted as seed’, so the distinction is not between the words themselves but between physical descent and the line of promise. The quotation begins with all' (‘but’, ‘on the contrary’) without an introductory formula; Paul simply lets Scripture speak. Klethesetai (‘will be called’, ‘will be named’) is a future passive of kaleo, the verb of calling that runs through the chapter (verses 11, 12, 24, 25, 26).",
+      "words": ["G4690G", "G0011", "G5043", "G2464", "G2564H"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "The choice of Isaac shows that God's promise was never simply a matter of descent. Paul's first example involves two sons of one father by different mothers; the next (verses 10-13) removes even that difference."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 21:12",
+          "note": "When Sarah demanded that Hagar and Ishmael be sent away, God told Abraham to do as she said, ‘for through Isaac your offspring will be reckoned’. The Hebrew ki veyitschaq yiqqare lekha zara, literally ‘for in Isaac will seed be called to you’, is rendered exactly by the Septuagint, en Isaak klethesetai soi sperma, and Paul follows the Septuagint word for word. In Genesis, God also promises to make Ishmael a nation (21:13), so the verse does not reject Ishmael from God's care; it identifies the line through which the covenant promise would run. Hebrews 11:18 quotes the same words."
+        }
+      ],
+      "refs": ["Genesis 21:12", "Galatians 4:22-31", "Hebrews 11:17-18", "Galatians 3:29", "John 8:39"]
+    },
+    {
+      "v": "8",
+      "context": "Paul spells out the principle in verse 7: the children of God are not the children of the flesh but the children of the promise. Isaac was born because of God's promise, against nature, and that makes him the pattern.",
+      "grammar": "Tout estin, ‘that is’, introduces an explanation. Ta tekna tes sarkos (‘the children of the flesh’) are those born by ordinary descent; ta tekna tes epangelias (‘the children of the promise’) are those whose existence depends on God's word. Logizetai eis sperma, ‘are counted as seed’, uses logizomai, the verb of reckoning from Romans 4 (4:3-5): as righteousness was counted to Abraham, so belonging to his seed is counted by God, not produced by nature.",
+      "words": ["G5043", "G4561", "G1860", "G3049", "G4690G"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "‘Children of the promise’ links this chapter to Romans 4 and Galatians 4, where Abraham's true children are those who share his faith in God's promise. Belonging to God's people rests on God's word received, not on birth."
+        }
+      ],
+      "refs": ["Galatians 4:23", "Galatians 4:28", "Romans 4:13-17", "John 1:12-13", "Galatians 3:7"]
+    },
+    {
+      "v": "9",
+      "context": "Paul quotes the promise that made Isaac a child of promise: at the set time God will return and Sarah will have a son. The quotation proves verse 8 by showing that Isaac's birth was God's doing, announced beforehand.",
+      "grammar": "Epangelias gar ho logos houtos, ‘for this word is (a word) of promise’, places epangelias first for emphasis. The quotation's verbs are future: eleusomai (‘I will come’) and estai (‘there will be’). Kata ton kairon touton (‘at this time’, BSB ‘at the appointed time’) refers to the season of the next year.",
+      "words": ["G1860", "G3056", "G2540", "G2064", "G4564", "G5207"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Isaac's birth to a woman past childbearing (Genesis 18:11) was God's act, not nature's. Paul makes that the model of how God forms his people: by promise and power, not by human capacity."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 18:10",
+          "note": "Paul's quotation combines Genesis 18:10 and 18:14. In Hebrew, 18:10 reads shov ashuv elekha kaet chayyah vehinneh ben lesarah, ‘I will surely return to you at the time of life (that is, next year), and behold, Sarah will have a son’, and 18:14 repeats the promise with lammoed (‘at the appointed time’). The Septuagint renders the time phrases as kata ton kairon touton eis horas (‘at this season, in due time’) and in 18:14 ends kai estai te Sarra huios (‘and Sarah will have a son’). Paul takes the time phrase from 18:10 and the ending from 18:14, and shortens the verb to eleusomai (‘I will come’). The words come from the visit of the three men at Mamre, where Sarah laughed at the promise."
+        }
+      ],
+      "refs": ["Genesis 18:10-14", "Genesis 17:19-21", "Genesis 21:1-2", "Hebrews 11:11", "Romans 4:19-21"]
+    },
+    {
+      "v": "10",
+      "context": "The second example is sharper. Ishmael and Isaac had different mothers, and someone might say that explains the choice. Rebecca's sons had the same father and the same mother, and were conceived at the same time.",
+      "grammar": "Ou monon de, alla kai, ‘not only that, but also’, is the construction of 5:3 and 8:23, introducing a stronger case. The sentence is left grammatically incomplete (Rebecca is the subject, but the main verb never comes; verse 12's ‘she was told’ supplies the sense). Ex henos koiten echousa, literally ‘having a bed from one’, uses koite (‘bed’, and by extension ‘conception’) to say that both sons were conceived from one man in one act. Isaak tou patros hemon, ‘Isaac our father’, includes Paul and his Jewish readers as Isaac's descendants.",
+      "words": ["G3441", "G4479", "G1520", "G2845", "G2464", "G3962"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "By choosing an example with one father, one mother, and one conception, Paul removes every natural ground for the distinction God made. Whatever election means, it is not based on ancestry."
+        }
+      ],
+      "refs": ["Genesis 25:21-24", "Romans 4:1", "Malachi 1:2"]
+    },
+    {
+      "v": "11-12",
+      "context": "Before the twins were born or had done anything good or bad, God said the older would serve the younger. Paul explains why the word came so early: so that God's purpose in election would stand, based not on works but on the one who calls.",
+      "grammar": "Two genitive absolutes set the time: meto gennethenton (‘not yet having been born’) and mede praxanton ti agathon e phaulon (‘nor having done anything good or bad’). The purpose clause is the theological center of the chapter: hina he kat eklogen prothesis tou theou mene, ‘in order that the according-to-election purpose of God might stand’. Prothesis (‘purpose’) is the word of 8:28; kat eklogen (‘according to choice’) describes the kind of purpose it is. Mene, a present subjunctive of meno (‘remain’, ‘stand’), contrasts with ekpeptoken (‘failed’) in verse 6. Verse 12 adds ouk ex ergon all ek tou kalountos, ‘not from works but from the one who calls’, the contrast of 4:4-5 and 11:6. Interpreters dispute whether Paul contrasts works with calling to exclude all human conditions, including foreseen faith (the Augustinian and Reformed reading), or to exclude works of the law as a ground of belonging to God's people (a common reading among recent interpreters of Paul).",
+      "words": ["G1080", "G4238", "G0018", "G5337", "G1589", "G4286", "G3306", "G2041", "G2564G", "G3173", "G1398", "G1640"],
+      "theology": [
+        {
+          "id": "election",
+          "note": "These verses are the classic text for unconditional election. Augustine's reply To Simplician (396) worked through Romans 9:10-29 and concluded that God's choice precedes and causes faith, a reading Calvin and the Canons of Dort (1619) followed. Arminian readers answer that Paul excludes works, not faith, and that the choice concerns Jacob and Esau as heads of nations and their roles in history, as Genesis 25:23 says. John Piper's The Justification of God (1983) is a detailed modern defense of the individual reading; William Klein's The New Chosen People (1990) and Brian Abasciano's studies of Romans 9 argue for corporate election."
+        },
+        {
+          "id": "sovereignty",
+          "note": "God's purpose ‘stands’, not dependent on what the twins would do. On every reading Paul locates the origin of God's people in God's free calling rather than in human performance."
+        }
+      ],
+      "text": "Where most editions read phaulon (‘bad’, ‘worthless’), the Textus Receptus has kakon (‘evil’). The meaning is the same.",
+      "ot": [
+        {
+          "ref": "Genesis 25:23",
+          "note": "When Rebecca asked the LORD why the twins struggled within her, he answered that two nations were in her womb and two peoples would be separated, ‘and the older shall serve the younger’. The Hebrew verav yaavod tsair uses rav (‘the great’, ‘the elder’) and tsair (‘the little’, ‘the younger’); the Septuagint's ho meizon douleusei to elassoni (‘the greater will serve the lesser’) follows it closely, and Paul quotes the Septuagint exactly. In Genesis the oracle concerns two nations, Israel and Edom, and its fulfillment came in Edom's subjection to Israel under David (2 Samuel 8:14). Esau personally never served Jacob; if anything, Jacob bowed to Esau (Genesis 33:3). Corporate readings of Romans 9 build on that; individual readings reply that Paul applies the oracle to the twins before birth and before any works."
+        }
+      ],
+      "refs": ["Genesis 25:23", "Romans 8:28", "Romans 11:5-6", "2 Timothy 1:9", "Ephesians 1:11"]
+    },
+    {
+      "v": "13",
+      "context": "Paul confirms the oracle with a word from the last book of the prophets: ‘Jacob I loved, but Esau I hated’. The quotation supports God's choice from Israel's own Scriptures, and its harshness raises the objection of verse 14.",
+      "grammar": "Kathos gegraptai (‘just as it is written’) introduces the quotation, which in Greek puts the names first for emphasis: ton Iakob egapesa, ton de Esau emisesa. Both verbs are aorists. Misein (‘hate’) is a strong word, and interpreters debate its sense. In Hebrew idiom ‘love’ and ‘hate’ can express preference or choice rather than emotion: Genesis 29:30-31 says Jacob loved Rachel more than Leah and then says Leah was ‘hated’ (the BSB has ‘unloved’); Luke 14:26 has ‘hate his father and mother’ where Matthew 10:37 has ‘love more’. Many interpreters therefore read ‘hated’ as ‘not chosen’. Others hold that Malachi's context, which speaks of God's lasting judgment on Edom, requires more than a comparative love.",
+      "words": ["G2531", "G1125", "G2384H", "G0025", "G2269H", "G3404"],
+      "history": "Esau was the ancestor of the Edomites, Israel's neighbors south and east of the Dead Sea, who were often at war with Judah and were remembered for joining in Jerusalem's fall in 587 or 586 BC (Obadiah 10-14, Psalm 137:7). By Malachi's time, probably the fifth century BC in the Persian period, Edom's old heartland had been laid waste, and Arab groups, later the Nabataeans, were moving in. Many Edomites settled in southern Judah, in the region later called Idumea; the Hasmonean ruler John Hyrcanus conquered them in the late second century BC and required them to be circumcised (Josephus, Antiquities 13.257-258). Herod the Great was of Idumean descent.",
+      "ot": [
+        {
+          "ref": "Malachi 1:2-3",
+          "note": "Malachi opens with God's declaration of love to Israel. When the people ask how he has loved them, God answers: ‘Was not Esau Jacob's brother? Yet I have loved Jacob, but Esau I have hated’, and points to Edom's ruined land (1:3-5). The Hebrew vaohav et yaaqov veet esav saneti is rendered by the Septuagint kai egapesa ton Iakob, ton de Esau emisesa. Paul follows the Septuagint's words but moves Jacob's name before the verb, making the two clauses parallel. In Malachi the names stand for the nations Israel and Edom, and the love is shown in history, which supports corporate readings; the Augustinian tradition answers that Paul uses the text of the individuals named in Genesis 25."
+        }
+      ],
+      "refs": ["Malachi 1:2-5", "Genesis 29:30-31", "Luke 14:26", "Obadiah 1:10-14", "Hebrews 12:16-17"]
+    },
+    {
+      "v": "14",
+      "context": "The objection comes at once: if God chooses before anyone has done good or bad, is he unjust? Paul rejects the charge with his strongest denial and answers in the next verses from God's own words to Moses and to Pharaoh.",
+      "grammar": "Ti oun eroumen (‘what then shall we say?’) introduces a wrong inference, as in 6:1 and 7:7. Me adikia para to theo, ‘there is not injustice with God, is there?’, uses the particle me, which in a question expects a negative answer; the grammar already signals that the answer is no, and me genoito makes it emphatic. Adikia (‘injustice’, ‘unrighteousness’) is the opposite of dikaiosyne, God's righteousness, the theme of the letter (1:17, 3:5, 3:25-26). Para to theo, ‘with God’ or ‘in God's presence’, locates the question in God's own character.",
+      "words": ["G5101", "G4483", "G0093", "G2316", "G1096"],
+      "theology": [
+        {
+          "id": "attributes",
+          "note": "Paul raises the question of God's justice himself and refuses to answer it by denying what he has said about election. His answer (verses 15-18) is that mercy, by definition, cannot be owed, so choosing whom to show it to is not injustice."
+        }
+      ],
+      "refs": ["Romans 3:5-6", "Deuteronomy 32:4", "Genesis 18:25", "Job 34:10-12", "Psalm 92:15"]
+    },
+    {
+      "v": "15",
+      "context": "Paul answers verse 14 with God's own words to Moses. God is not unjust, because he has declared himself free to have mercy on whom he will. The words come from the moment when God revealed his name and glory to Moses after Israel's great sin.",
+      "grammar": "To Mousei gar legei, ‘for to Moses he says’, puts ‘Moses’ first: even Israel's greatest mediator received mercy as mercy. The two lines use eleeo (‘have mercy’) and oiktiro (‘have compassion’) in a construction repeated twice: a future indicative followed by hon an with a present subjunctive, ‘I will have mercy on whomever I have mercy’. The construction, called an idem per idem formula (the same verb repeated), is used in Hebrew to leave the choice open and grounded in the speaker himself, as in God's name ‘I AM WHO I AM’ (Exodus 3:14).",
+      "words": ["G3475", "G3004G", "G1653", "G0302", "G3627"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God's mercy is free and sovereign. The verse does not describe God as arbitrary; in Exodus the same words accompany the proclamation of his goodness and his name. It says that mercy is God's to give, not humanity's to claim."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 33:19",
+          "note": "After the golden calf, Moses asked to see God's glory, and God answered that he would make his goodness pass before him and proclaim his name, adding: ‘I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion’. The Hebrew vechannoti et asher achon verichamti et asher arachem uses chanan (‘be gracious’) and racham (‘have compassion’, related to the word for womb). The Septuagint renders it with eleeo and oiktiro, and Paul quotes the Septuagint exactly. The context matters: God spoke these words while restoring a people that deserved destruction. Mercy in Exodus 33 is what spared Israel, which is the point Paul will return to in 11:30-32."
+        }
+      ],
+      "refs": ["Exodus 33:19", "Exodus 34:6-7", "Exodus 3:14", "Romans 11:30-32", "Ephesians 2:4-5"]
+    },
+    {
+      "v": "16",
+      "context": "‘So then’ draws the conclusion from verse 15: salvation, or God's choosing, does not depend on human willing or running but on God who shows mercy. The verse is compressed, and the reader must supply the subject.",
+      "grammar": "Ara oun, ‘so then’, is a strong inference. The Greek has no subject and no verb: ou tou thelontos oude tou trechontos alla tou eleontos theou, literally ‘not of the one willing nor of the one running, but of the one showing mercy, God’. Something like ‘it’ (God's choice, or the receiving of mercy) must be supplied. The three present participles in the genitive describe the source on which something depends. Trecho (‘run’) is an athletic image Paul uses for effort (1 Corinthians 9:24-26, Galatians 2:2, Philippians 2:16). Thelo (‘will’, ‘want’) is the verb of the divided ‘I’ in 7:15-21, and it returns in verse 18 of God's will.",
+      "words": ["G2309", "G5143", "G1653", "G2316"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation's origin is God's mercy, not human desire or effort. Augustinian and Reformed readers hold that this excludes any human contribution to God's choice, including the will to believe; Arminian and Wesleyan readers hold that it excludes human merit but not the response of faith that grace enables. Both agree that no one can claim mercy as a right."
+        }
+      ],
+      "refs": ["John 1:13", "Ephesians 2:8-9", "Titus 3:5", "1 Corinthians 9:24-26", "Philippians 2:12-13"]
+    },
+    {
+      "v": "17",
+      "context": "‘For’ adds the other side of God's freedom, shown in Pharaoh. God raised Pharaoh up so that his power and name would be displayed through him in all the earth. Pharaoh's resistance served God's purpose of making himself known.",
+      "grammar": "Legei gar he graphe to Pharao, ‘for the Scripture says to Pharaoh’, personifies Scripture as speaking, which amounts to ‘God says’ (compare Galatians 3:8). The quotation begins with eis auto touto, ‘for this very purpose’, an emphatic phrase. Exegeira se, ‘I raised you up’, is an aorist of exegeiro, a verb that in the Septuagint can mean to bring someone onto the stage of history (Habakkuk 1:6, of the Babylonians). Hopos endeixomai en soi ten dynamin mou, ‘that I might display in you my power’, and hopos diangele to onoma mou, ‘that my name might be proclaimed’, are purpose clauses. Endeiknymi (‘display’, ‘demonstrate’) returns in verse 22.",
+      "words": ["G1124", "G5328I", "G1825", "G1731", "G1411", "G1229", "G3686"],
+      "history": "The words were spoken to Pharaoh before the seventh plague, the hailstorm (Exodus 9:13-35). Which pharaoh ruled at the exodus depends on how the exodus is dated. Those who follow the figure of 480 years in 1 Kings 6:1 place it in the fifteenth century BC, under a ruler of the Eighteenth Dynasty such as Thutmose III or Amenhotep II; those who read the city name Rameses in Exodus 1:11 as a sign of date place it in the thirteenth century BC, usually under Ramesses II. Exodus does not name him, and Paul's argument does not depend on it.",
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "God's purpose includes even those who oppose him. Pharaoh's rise and resistance became the occasion for God's name to be declared among the nations, which Israel remembered in song (Exodus 15:14-16) and which Rahab heard of in Jericho (Joshua 2:9-11)."
+        },
+        {
+          "id": "mission",
+          "note": "The goal of God's dealings with Pharaoh was that his name be proclaimed ‘in all the earth’. Even the hardening serves God's desire to be known among the nations, a theme Paul returns to in 11:11-15."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 9:16",
+          "note": "Paul's quotation changes the Septuagint in three places. The Hebrew reads veulam baavur zot heemadtikha baavur harotekha et kochi ulmaan sapper shemi bekhol haarets, ‘but for this reason I have let you stand, to show you my power and that my name may be declared in all the earth’. Heemadtikha, a causative form of amad (‘stand’), means ‘I have kept you standing’: God had spared Pharaoh when he could have destroyed him (9:15). The Septuagint reads heneken toutou dieteretheis, ‘for this reason you were preserved’, and ten ischyn mou (‘my strength’). Paul writes eis auto touto (‘for this very purpose’), exegeira se (‘I raised you up’), and ten dynamin mou (‘my power’). His verb is active, with God as subject, and it moves the emphasis from Pharaoh's survival to God's raising him up for a role, a change that fits Paul's argument about God's purpose and stays close to the Hebrew's causative verb. ‘Power’ (dynamis) links the text to 1:16, the gospel as God's power."
+        }
+      ],
+      "refs": ["Exodus 9:16", "Exodus 9:13-15", "Exodus 15:14-16", "Joshua 2:9-11", "Proverbs 16:4"]
+    },
+    {
+      "v": "18",
+      "context": "‘Therefore’ gathers verses 15-17 into a single statement: God has mercy on whom he wills and hardens whom he wills. Mercy is illustrated by Moses, hardening by Pharaoh. The statement provokes the objection of verse 19.",
+      "grammar": "Ara oun (‘so then’) repeats verse 16's inference formula. The two clauses are parallel: hon thelei eleei, hon de thelei sklerynei, ‘whom he wills he has mercy on, and whom he wills he hardens’. Both verbs are present tense, stating what God does, and thelei (‘he wills’) answers the human thelontos of verse 16: it is God's will, not man's, that decides. Skleryno (‘harden’, ‘make stubborn’) is the Septuagint's word for God hardening Pharaoh's heart (Exodus 4:21, 9:12). Paul uses a different verb, poroo, for Israel's partial hardening in 11:7 and 11:25.",
+      "words": ["G2309", "G1653", "G4645"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Hardening is a form of God's judgment: giving a person over to the resistance he has chosen, and confirming it. Exodus says both that Pharaoh hardened his own heart (8:15, 8:32) and that God hardened it (9:12, 10:1). Reformed interpreters stress that God's hardening is sovereign and just; Arminian interpreters stress that in Exodus God's hardening follows Pharaoh's own refusals. Both keep Pharaoh responsible."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 4:21",
+          "note": "God tells Moses before the plagues, ‘I will harden his heart so that he will not let the people go’ (Exodus 4:21, again at 7:3). Exodus uses three Hebrew verbs for the hardening: chazaq (‘make strong’, ‘make firm’), kaved (‘make heavy’), and qashah (‘make hard’, ‘stiff’). The narrative first says that Pharaoh's heart was hard or that he hardened it (7:13, 7:22, 8:15, 8:32); the first time the narrator says God hardened it is 9:12, after the sixth plague. The Septuagint uses skleryno for several of these. Paul does not quote a specific verse here but summarizes the pattern; which strand he stresses is part of the debate over the chapter."
+        }
+      ],
+      "refs": ["Exodus 4:21", "Exodus 9:12", "Exodus 8:32", "Romans 11:7-8", "Romans 1:24-28"]
+    },
+    {
+      "v": "19",
+      "context": "The objector pushes further: if God hardens whom he wills, why does he still blame anyone? Who can resist his will? The question is the natural reaction to verse 18, and Paul voices it plainly before answering it.",
+      "grammar": "Ereis moi oun, ‘you will say to me then’, is the diatribe style: an imagined dialogue partner raises the objection in the second person singular. Ti eti memphetai, ‘why does he still find fault?’, uses memphomai (‘blame’, ‘find fault’), used of God finding fault with Israel in Hebrews 8:8. To gar boulemati autou tis anthesteken, ‘for who has resisted his will?’, uses the perfect anthesteken (‘has withstood’, ‘stands in resistance’) and boulema, a word for a settled intention or plan. The objection assumes that if God's will cannot be resisted, human beings cannot be blamed.",
+      "words": ["G4483", "G3201", "G1013", "G0436"],
+      "history": "Paul's contemporaries argued over the same question. Josephus, describing the Jewish schools of his day, says the Essenes held that fate (heimarmene, his Greek term for divine determination) governs all things, the Sadducees denied fate altogether, and the Pharisees held that some things are the work of fate and some are in human power (Antiquities 13.171-173; also Jewish War 2.162-165). The Qumran Community Rule teaches that from the God of knowledge comes all that is and will be (1QS 3:15). Paul, trained as a Pharisee (Philippians 3:5), holds both God's sovereignty and human responsibility and refuses to resolve the tension by giving up either.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Paul voices the strongest objection to his teaching in its sharpest form. That he raises it at all shows he knows his teaching sounds like fatalism; that he does not withdraw the teaching shows he thinks God's sovereignty and human guilt both stand."
+        }
+      ],
+      "refs": ["Romans 3:5-8", "Job 9:12", "Daniel 4:35", "Isaiah 14:27", "Acts 2:23"]
+    },
+    {
+      "v": "20",
+      "context": "Paul does not answer the objection by explaining the mechanics of God's will. He challenges the right of the creature to put the Creator on trial, using the potter's image from Isaiah.",
+      "grammar": "O anthrope, ‘O man’, recalls 2:1 and 2:3, where Paul addressed the one who judges others. Menounge (‘rather’, ‘on the contrary’) is a strong particle of correction. Sy tis ei ho antapokrinomenos to theo, ‘who are you, the one answering back to God?’, uses antapokrinomai, ‘reply in turn’, ‘dispute’, with the sense of talking back. The second question begins with me, expecting ‘no’: me erei to plasma to plasanti, ‘the thing formed will not say to the one who formed it, will it?’. Plasma (‘thing molded’) and plasanti (‘the one who molded’) come from plasso, the Septuagint's verb for God forming Adam from the dust (Genesis 2:7).",
+      "words": ["G0444", "G3304", "G0470", "G2316", "G4110", "G4111", "G4160H"],
+      "theology": [
+        {
+          "id": "creation",
+          "note": "The answer rests on the relation between Creator and creature. The creature may cry out, as Job and the psalmists do, but may not stand over God as his judge. Paul's point is not that God is arbitrary but that human beings are not in a position to indict him."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 29:16",
+          "note": "Paul's words come from two passages in Isaiah. Isaiah 29:16 rebukes those who hide their plans from the LORD: ‘Shall what is formed say to him who formed it, “He did not make me”?’ The Hebrew hayomar maaseh leosehu lo asani uses asah (‘make’), and the Septuagint renders me erei to plasma to plasanti auto, ‘ou sy me eplasas?’, which gives Paul his wording. Isaiah 45:9 adds, ‘Does the clay ask the potter, “What are you making?”’, where the Septuagint has ti poieis (‘what are you doing?’). Paul's question, ‘Why did You make me like this?’, blends the two. In both places Isaiah is rebuking Israel for questioning God's plans, not describing God's choice of individuals."
+        }
+      ],
+      "refs": ["Isaiah 29:16", "Isaiah 45:9", "Job 40:2", "Job 33:12-13", "Romans 2:1"]
+    },
+    {
+      "v": "21",
+      "context": "The potter image continues. A potter has the right to make from the same lump one vessel for honored use and another for ordinary use. The question expects agreement: of course he has that right.",
+      "grammar": "E ouk echei exousian, ‘or does not the potter have authority?’, uses ouk, which expects the answer ‘yes’. Exousia (‘right’, ‘authority’) is the key word: the question is about the potter's rightful authority, not his power. Ek tou autou phyramatos, ‘from the same lump’, uses phyrama, the lump of kneaded clay or dough, the word Paul uses of the dough offering in 11:16. Ho men eis timen skeuos, ho de eis atimian, ‘one vessel for honor, another for dishonor’, describes the use of the vessels (fine ware and common ware), not their eternal destiny, though interpreters differ on how far the image extends. 2 Timothy 2:20-21 uses the same phrases of household vessels.",
+      "words": ["G2192", "G1849", "G2763G", "G4081", "G5445", "G5092", "G4632", "G0819"],
+      "theology": [
+        {
+          "id": "sovereignty",
+          "note": "The image asserts God's right over his creatures. Augustine made ‘the same lump’ the lump of fallen humanity, from which God justly leaves some and mercifully saves others; corporate and Arminian readers point to Jeremiah 18, where the potter reshapes a vessel according to how a nation responds."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 18:6",
+          "note": "At the potter's house, Jeremiah watched a vessel spoiled in the potter's hand and reshaped into another, and God said: ‘Like clay in the potter's hand, so are you in My hand, O house of Israel’. The Hebrew hinneh chachomer beyad hayyotser ken attem beyadi is rendered closely by the Septuagint. Paul does not quote the verse, but it is the fullest Old Testament use of the image. In Jeremiah the point is followed at once by a condition: if a nation God has threatened turns from evil, he will relent, and if a nation he has promised to build does evil, he will relent of the good (18:7-10). The Wisdom of Solomon, a Jewish work of about the first century BC, uses the same image of a potter making from the same clay vessels for clean and common uses (Wisdom 15:7)."
+        }
+      ],
+      "refs": ["Jeremiah 18:1-10", "2 Timothy 2:20-21", "Isaiah 64:8", "Romans 11:16", "Lamentations 4:2"]
+    },
+    {
+      "v": "22",
+      "context": "Paul applies the potter image, but in a sentence he never finishes. What if God, wanting to show his wrath and power, endured with much patience the vessels of wrath prepared for destruction? The question leaves the reader to complete it: would God then be unjust?",
+      "grammar": "Ei de, ‘but if’ or ‘what if’, begins a conditional sentence with no main clause (an anacoluthon); the reader must supply something like ‘what can you say against that?’. Thelon, a present participle (‘wanting’, ‘willing’), can be concessive (‘although he wanted to show his wrath, he endured with patience’, stressing that God held back his wrath to give time for repentance, as 2:4 says) or causal (‘because he wanted to show his wrath, he endured them’, so that his wrath and power would be displayed more fully). Enenken en polle makrothymia, ‘bore with much patience’, uses makrothymia, the patience of 2:4. Skeue orges (‘vessels of wrath’) may mean objects of wrath, or, in the light of Jeremiah 50:25, instruments through which wrath comes. The crucial word is katertismena eis apoleian, ‘prepared for destruction’. Katertismena is a perfect participle from katartizo (‘fit’, ‘prepare’, ‘make ready’), and its form can be passive (‘having been prepared’, by someone unnamed) or middle (‘having prepared themselves’). John Chrysostom (Homilies on Romans 16) read it as middle: the vessels fitted themselves for destruction. Most modern grammarians take it as passive, and interpreters then divide over who the unnamed agent is, God, the vessels' own sin, or both.",
+      "words": ["G2309", "G1731", "G3709", "G1107", "G1415", "G5342", "G3115", "G4632", "G2675", "G0684"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's wrath is real, and so is his patience toward those under it. The verse's grammar has divided the church: Augustinian and Reformed readers hold that God prepared the vessels of wrath by his just decree, while Chrysostom, the Arminian tradition, and many others hold that they prepared themselves by persistent rebellion, and that God's patience (2:4) gave them room to repent."
+        },
+        {
+          "id": "election",
+          "note": "Karl Barth, in Church Dogmatics II/2 (1942), read Romans 9-11 as describing the one elect community in two forms: Israel, which reflects the judgment God took upon himself in Christ, and the church, which reflects his mercy. For Barth, Jesus Christ is both the electing God and the elected man, the rejected one and the chosen one, and vessels of wrath and mercy are both held within God's purpose in him. Barth's reading is a distinct fourth position beside the Augustinian, Arminian, and corporate readings."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Jeremiah 50:25",
+          "note": "The phrase ‘vessels of wrath’ (skeue orges) occurs in the Septuagint of Jeremiah 50:25 (27:25 in the Septuagint's numbering), where the LORD opens his armory and brings out ‘the weapons of His wrath’ against Babylon. The Hebrew kele zaamo means ‘instruments’ or ‘weapons of his indignation’, and the Greek skeue can mean vessels, tools, or equipment. If Paul had this verse in mind, as several scholars have argued, the phrase may carry the sense of instruments God uses in judgment, not only objects on whom judgment falls. The echo is verbal, and how much weight it can carry is debated."
+        }
+      ],
+      "refs": ["Romans 2:4-5", "2 Peter 3:9", "Jeremiah 50:25", "Proverbs 16:4", "1 Thessalonians 5:9"]
+    },
+    {
+      "v": "23-24",
+      "context": "The unfinished question continues: God's patience with vessels of wrath served his purpose of making known the riches of his glory to vessels of mercy, prepared beforehand for glory. Verse 24 names who they are: ‘us’, called not only from the Jews but also from the Gentiles. The argument turns here from Israel's past to the church's present.",
+      "grammar": "Kai hina gnorise, ‘and in order that he might make known’, continues the purpose of verse 22 (the kai is missing in some manuscripts, which makes the connection looser). Ton plouton tes doxes autou (‘the riches of his glory’) echoes 2:4 (‘the riches of his kindness’). Skeue eleous (‘vessels of mercy’) balances skeue orges in verse 22. The contrast with verse 22 is often noted: there the participle katertismena (‘prepared’) is passive or middle and names no agent; here ha proetoimasen eis doxan, ‘which he prepared beforehand for glory’, is an active aorist with God as the subject and the prefix pro- (‘beforehand’). Many interpreters, among them Chrysostom and many modern commentators, take the difference as deliberate: God is the one who prepares for glory, while destruction is not described the same way. Others, including many in the Reformed tradition, hold that the potter image implies God as the agent in both and that the change of form should not be pressed. Verse 24's hous kai ekalesen hemas, ‘whom he also called, us’, shifts to the masculine plural because the vessels are people, and ekalesen links to 8:30 (‘those he predestined, he also called’).",
+      "words": ["G1107", "G4149", "G1391", "G4632", "G1656", "G4282", "G2564G", "G2453", "G1484"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "God's purpose in all his dealings, patience and wrath included, is to make known the riches of his glory to those who receive mercy. The glory prepared for them is the glory of 8:18 and 8:30."
+        },
+        {
+          "id": "church",
+          "note": "The vessels of mercy are a people called from Jews and Gentiles together. Verse 24 turns the argument from the patriarchs to the present church, which is the evidence that God's word has not failed (verse 6)."
+        }
+      ],
+      "refs": ["Ephesians 1:18", "Ephesians 2:4-7", "Romans 8:29-30", "2 Timothy 2:20-21", "Romans 3:29-30"]
+    },
+    {
+      "v": "25",
+      "context": "Paul supports the calling of Gentiles (verse 24) from Hosea. God said he would call ‘not my people’ his people and ‘not beloved’ his beloved. In Hosea the words promised the restoration of the northern kingdom of Israel; Paul sees in them the pattern of God's calling of Gentiles.",
+      "grammar": "Hos kai en to Osee legei, ‘as he also says in Hosea’, makes God the speaker and Hosea the book. Kaleso (‘I will call’) is a future of kaleo, the verb of verses 7, 12, and 24; Paul has chosen it deliberately (see the Old Testament note). The quotation uses naming: ton ou laon mou laon mou, ‘the not-my-people, my people’, and ten ouk egapemenen egapemenen, ‘the not-beloved, beloved’. Egapemenen is a perfect passive participle, ‘one who has been loved’, a lasting status.",
+      "words": ["G5617", "G2564G", "G2992", "G0025"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "The God who named his own people ‘not my people’ in judgment can name outsiders ‘my people’ in mercy. Paul reads Hosea's promise as fulfilled in the Gentile mission, and Peter uses the same text of Gentile believers (1 Peter 2:10)."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Hosea 2:23",
+          "note": "Hosea gave his children names announcing judgment on the northern kingdom: Lo-ruhamah (‘not pitied’) and Lo-ammi (‘not my people’) (Hosea 1:6-9). Hosea 2:23 (2:25 in Hebrew) reverses them: verichamti et lo ruchamah veamarti lelo ammi ammi attah, ‘I will have mercy on Not-Pitied, and I will say to Not-My-People, You are my people’. The Septuagint follows the Hebrew with eleeso (‘I will have mercy’), though some Septuagint manuscripts read agapeso ten ouk egapemenen (‘I will love the not-beloved’), the form closer to Paul. Paul reverses the order of the two lines, uses the ‘beloved’ wording, and replaces ‘I will say’ with kaleso (‘I will call’), tying the quotation to the language of calling in verses 7, 12, and 24. Hosea spoke of Israel restored; Paul, seeing Gentiles who were not God's people become his people, applies the principle to them."
+        }
+      ],
+      "refs": ["Hosea 2:23", "Hosea 1:6-9", "1 Peter 2:10", "Ephesians 2:11-13", "Romans 15:9-12"]
+    },
+    {
+      "v": "26",
+      "context": "A second quotation from Hosea adds that in the very place where they were told ‘you are not my people’, they will be called sons of the living God. The ‘sons of God’ language joins this chapter to 8:14-19.",
+      "grammar": "Kai estai, ‘and it will be’, is the Septuagint's rendering of a Hebrew formula for future events (vehayah). En to topo hou errethe autois, ‘in the place where it was said to them’, is taken over from Hosea, where the place is the land of Israel. Paul does not explain what ‘the place’ means for Gentiles; some see the whole world as the place, others the place of their former exclusion. Klethesontai huioi theou zontos, ‘they will be called sons of the living God’, repeats the calling verb and uses huioi, the word for adopted heirs in 8:14.",
+      "words": ["G5117", "G2046", "G2992", "G1563", "G2564G", "G5207", "G2198"],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Sonship, described in 8:14-17 as the privilege of all who are led by the Spirit, is here offered to those who were once outside God's people. The promise to Israel becomes the door through which Gentiles enter."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Hosea 1:10",
+          "note": "Hosea 1:10 (2:1 in the Hebrew and the Septuagint) promises that Israel's number will be like the sand of the sea and that ‘in the place where it was said to them, “You are not My people,” they will be called “sons of the living God”’. The Hebrew bimqom asher yeamer lahem lo ammi attem yeamer lahem bene el chai is rendered closely by the Septuagint, and Paul follows the Septuagint. In Hosea the promise is for the northern tribes, and the next verse speaks of Judah and Israel gathered under one head. Paul applies it to the calling of Gentiles, as he did with 2:23. Some interpreters hold that Paul uses the Hosea quotations for the Gentiles and the Isaiah quotations of verses 27-29 for Israel, following the order ‘Jews and Gentiles’ in verse 24 in reverse."
+        }
+      ],
+      "refs": ["Hosea 1:10", "Romans 8:14", "Galatians 3:26", "John 1:12", "2 Corinthians 6:18"]
+    },
+    {
+      "v": "27",
+      "context": "Paul turns to Israel. Isaiah cries out that though the Israelites are as many as the sand of the sea, only a remnant will be saved. The word shows that the unbelief of most in Israel was foreseen and does not mean God's word has failed.",
+      "grammar": "Esaias de krazei hyper tou Israel, ‘and Isaiah cries out concerning Israel’, uses krazo (‘cry out’), the verb of 8:15, suggesting urgency. Hyper can mean ‘concerning’ or ‘on behalf of’; the second would make Isaiah's cry an intercession. The quotation opens with ean e (‘though it be’), a concession. To hypoleimma sothesetai, ‘the remnant will be saved’, uses the definite article: ‘the remnant’, a known idea in the prophets. Whether ‘only’ belongs in translation is debated: the Greek has no word for ‘only’, and some think the verse offers hope (a remnant will be saved) as much as warning.",
+      "words": ["G2268", "G2896", "G2474", "G0706", "G0285", "G9577", "G4982"],
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The remnant is a theme Paul develops in 11:1-6: ‘a remnant chosen by grace’. The existence of believing Jews, Paul among them, shows that God has not abandoned his people."
+        }
+      ],
+      "text": "Most editions read hypoleimma (‘remnant’); the Textus Receptus has kataleimma, the word used in the Septuagint of Isaiah 10:22. The two words mean the same thing.",
+      "ot": [
+        {
+          "ref": "Isaiah 10:22",
+          "note": "In Isaiah 10:20-23 the prophet foresees that after the Assyrian invasion only a remnant of Israel will return to the LORD. The Hebrew of 10:22 reads ki im yihyeh ammekha yisrael kechol hayyam shear yashuv bo, ‘for though your people Israel be like the sand of the sea, a remnant within it will return’; shear yashuv (‘a remnant will return’) was also the name of Isaiah's son (Isaiah 7:3). The Septuagint reads to kataleimma auton sothesetai, ‘their remnant will be saved’, turning ‘return’ into ‘be saved’, and Paul follows it. Paul also changes the opening: in place of the Septuagint's ‘the people of Israel’ he writes ‘the number of the sons of Israel’, words taken from Hosea 1:10 (2:1 in the Septuagint), the verse he has just quoted. The two prophecies are joined by the shared image of sand and the shared phrase ‘sons of Israel’."
+        }
+      ],
+      "refs": ["Isaiah 10:20-22", "Isaiah 7:3", "Romans 11:5", "Genesis 22:17", "Hosea 1:10"]
+    },
+    {
+      "v": "28",
+      "context": "Paul completes the quotation from Isaiah: the Lord will carry out his word on the earth fully and swiftly. The remnant is saved in the midst of judgment, not apart from it.",
+      "grammar": "Logon gar synteleon kai syntemnon, ‘for a word completing and cutting short’, is an obscure phrase in Greek. Synteleo means ‘bring to completion’, ‘finish’, and syntemno means ‘cut short’, ‘cut off’, ‘decide’. The BSB's ‘carry out his sentence... thoroughly and decisively’ takes logos as God's decree of judgment and the participles as describing how it is carried out, completely and without delay. Others read ‘a word that is final and brief’, a judgment summed up in few words. Poiesei kyrios epi tes ges, ‘the Lord will do (it) on the earth’, is future.",
+      "words": ["G3056", "G4931", "G4932", "G4160G", "G2962G", "G1093G"],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "God's word of judgment is sure and swift. Paul sets the saving of the remnant within that judgment, the prophetic pattern in which God's mercy preserves a people through, not around, his judgment on sin."
+        }
+      ],
+      "text": "The Textus Receptus, followed by the King James Version (‘For he will finish the work, and cut it short in righteousness: because a short work will the Lord make upon the earth’), has a longer text that matches the Septuagint of Isaiah 10:22-23 more fully. The earliest manuscripts have the shorter form printed in modern editions, and the longer form is probably a scribal filling out from the Septuagint.",
+      "ot": [
+        {
+          "ref": "Isaiah 10:23",
+          "note": "The Hebrew of Isaiah 10:22b-23 is compact: killayon charuts shotef tsedaqah, ki khalah venecheratsah Adonai YHWH tsevaot oseh beqerev kol haarets, ‘destruction is decreed, overflowing with righteousness; for the Lord GOD of Hosts will carry out the destruction decreed in the midst of all the land’. The Septuagint renders the decree language with logon synteleon kai syntemnon en dikaiosyne, hoti logon syntetmemenon kyrios poiesei en te oikoumene hole, ‘a word completing and cutting short in righteousness, for the Lord will make a shortened word in all the world’. Paul abbreviates the Septuagint, omitting ‘in righteousness’ and the repeated phrase, and writes ‘on the earth’. In Isaiah the verse concerns the Assyrian judgment on Israel in the eighth century BC; Paul reads it as the pattern of God's dealings with Israel in every age."
+        }
+      ],
+      "refs": ["Isaiah 10:23", "Isaiah 28:22", "Daniel 9:27", "Romans 2:5-6"]
+    },
+    {
+      "v": "29",
+      "context": "A last word from Isaiah: if the Lord of Hosts had not left Israel descendants, it would have become like Sodom and Gomorrah, wiped out completely. That a remnant exists at all is mercy.",
+      "grammar": "Kathos proeireken Esaias, ‘just as Isaiah said beforehand’, uses a perfect, ‘has foretold’, as a word that still stands. The quotation is a contrary-to-fact condition: ei me... enkatelipen (‘if he had not left’), followed by an with aorist indicatives (egenethemen, homoiothemen), ‘we would have become... we would have been made like’. Kyrios Sabaoth transliterates the Hebrew tsevaot (‘hosts’, ‘armies’) instead of translating it; it appears only here and in James 5:4 in the New Testament. Sperma (‘seed’, ‘descendants’) links to the ‘seed’ of Abraham in verses 7-8.",
+      "words": ["G4280", "G2268", "G2962G", "G4519", "G1459", "G4690G", "G4670", "G1116", "G3666"],
+      "history": "Isaiah 1:7-9 describes a land devastated by invaders, with Jerusalem left like a hut in a cucumber field. Many scholars connect the passage with the Assyrian king Sennacherib's campaign against Judah in 701 BC, when, by his own annals, he took forty-six fortified towns and shut Hezekiah up in Jerusalem ‘like a bird in a cage’ (as the Sennacherib Prism reports), though Jerusalem itself survived (2 Kings 18:13-19:36). Sodom and Gomorrah (Genesis 19) were the standing examples of total destruction.",
+      "theology": [
+        {
+          "id": "israel",
+          "note": "The survival of a remnant is God's doing, not Israel's. Paul uses Isaiah to show that mercy, not merit, has always preserved God's people, which sets up the argument of 11:1-6."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 1:9",
+          "note": "The Hebrew lule YHWH tsevaot hotir lanu sarid kimat kisdom hayinu laamorah daminu reads ‘unless the LORD of Hosts had left us a few survivors, we would have been like Sodom, we would have resembled Gomorrah’. The Septuagint changes sarid (‘survivor’) to sperma (‘seed’) and keeps the transliterated Sabaoth; Paul quotes the Septuagint exactly. ‘Seed’ lets Paul tie the verse to the theme of Abraham's seed in verses 7-8: the true seed is the remnant God has kept."
+        }
+      ],
+      "refs": ["Isaiah 1:9", "Genesis 19:24-25", "James 5:4", "Lamentations 3:22", "Romans 11:4-5"]
+    },
+    {
+      "v": "30-31",
+      "context": "Paul asks what all this means and answers with a paradox. Gentiles who were not pursuing righteousness have obtained it, a righteousness by faith. Israel, pursuing a law of righteousness, has not reached it. The argument now moves from God's choosing to human response, which chapter 10 develops.",
+      "grammar": "Ti oun eroumen, ‘what then shall we say?’, here introduces Paul's own conclusion, not an objection. The verbs come from the racecourse: dioko (‘pursue’, ‘run after’), katalambano (‘obtain’, ‘seize’, ‘overtake’), and phthano (‘arrive’, ‘reach’). The Gentiles ‘did not pursue’ (me diokonta, a present participle) yet ‘obtained’ (katelaben, aorist). Dikaiosynen de ten ek pisteos, ‘but the righteousness that is by faith’, defines what they obtained. Israel pursued nomon dikaiosynes, ‘a law of righteousness’, an unusual phrase: some take it as the law that promises righteousness, others as righteousness as a law to be kept. Eis nomon ouk ephthasen, ‘did not arrive at the law’, is surprising; Paul does not say Israel failed to reach righteousness but failed to reach the law, that is, the law's true goal (10:4).",
+      "words": ["G4483", "G1484", "G1377", "G1343", "G2638", "G4102G", "G2474", "G3551", "G5348"],
+      "theology": [
+        {
+          "id": "justification",
+          "note": "Righteousness comes by faith, not by pursuit. The Gentiles who received it were not seeking it; the gift came to them in the gospel. Paul uses the verses as a bridge back to the justification by faith of chapters 3-4."
+        }
+      ],
+      "refs": ["Romans 10:3-4", "Philippians 3:9", "Galatians 2:16", "Romans 10:20", "Isaiah 65:1"]
+    },
+    {
+      "v": "32",
+      "context": "Why did Israel fail to arrive? Because they pursued it not by faith but as if it were by works. They stumbled over the stumbling stone. Paul places the cause of Israel's failure in their response, alongside the divine choosing of verses 6-29.",
+      "grammar": "Dia ti, ‘why?’, gets a compressed answer: hoti ouk ek pisteos all hos ex ergon, ‘because not from faith but as from works’, with the verb ‘they pursued’ to be supplied. Hos (‘as if’) suggests that pursuing the law by works misunderstood what the law was: it was never meant to be kept as a way of earning righteousness. Prosekopsan to litho tou proskommatos, ‘they stumbled over the stone of stumbling’, uses a verb and noun from the same root (proskopto, proskomma), which Paul will use again in 14:13, 20-21. The stone is identified in verse 33 by the quotation; Paul means Christ.",
+      "words": ["G4102G", "G2041", "G4350", "G3037", "G4348"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The failure Paul identifies is not a lack of zeal (10:2 grants that Israel is zealous for God) but a wrong way of pursuit. Faith receives what works cannot earn. The debate over whether ‘works’ means any human effort (the Reformation reading) or the law's boundary markers of Jewish identity (the New Perspective on Paul, associated with James Dunn and N. T. Wright) continues here as in Galatians."
+        }
+      ],
+      "text": "The Textus Receptus adds nomou (‘of the law’), giving ‘by the works of the law’, as in the King James Version. The shorter text, ‘by works’, is earlier and better supported, and the addition probably conforms the phrase to Paul's usual ‘works of the law’.",
+      "refs": ["Romans 10:2-3", "Romans 3:27-28", "Romans 11:11", "1 Corinthians 1:23", "1 Peter 2:7-8"]
+    },
+    {
+      "v": "33",
+      "context": "Paul closes with a quotation that combines two passages in Isaiah: God lays in Zion a stone that makes people stumble, and whoever believes in him will not be put to shame. The same stone is foundation for some and stumbling block for others, and chapter 10 will explain the difference as faith.",
+      "grammar": "Idou tithemi en Sion, ‘behold, I lay in Zion’, is a present tense (‘I am laying’). Lithon proskommatos kai petran skandalou, ‘a stone of stumbling and a rock of offense’: skandalon was originally the stick of a trap, then anything that trips or offends, the word Paul uses of the cross in 1 Corinthians 1:23. Ho pisteuon ep auto, ‘the one who believes in him’, can also be read ‘in it’ (the stone), but the personal reading is natural, given that Paul identifies the stone with Christ. Ou kataischynthesetai, ‘will not be put to shame’, is a future passive: the believer will not be disgraced at the judgment.",
+      "words": ["G1125", "G2400", "G5087", "G4622", "G3037", "G4348", "G4073", "G4625", "G4100", "G2617"],
+      "history": "Isaiah's stone in Zion was read as a figure by other Jewish communities too. The Qumran Community Rule applies the language of Isaiah 28:16 to the community itself as the tested wall and precious cornerstone (1QS 8:7-8). The first Christians applied it to Jesus, as Paul does here and again in 10:11, and as 1 Peter 2:6-8 does with the same combination of Isaiah 28:16 and 8:14.",
+      "theology": [
+        {
+          "id": "faith",
+          "note": "Faith in the stone God has laid is the dividing line. Those who trust him will not be put to shame; those who reject him stumble over him. Paul will repeat the promise in 10:11 with ‘everyone’, extending it to Jew and Gentile alike."
+        },
+        {
+          "id": "messiah",
+          "note": "Christ is the stone God himself has laid in Zion. The Messiah Israel awaited is both the foundation of God's people and the stumbling block over which many in Israel fell, which is the tragedy chapters 9-11 grieve and the mystery chapter 11 resolves."
+        }
+      ],
+      "text": "The Textus Receptus adds pas (‘everyone’) before ‘who believes’, as in the King James Version (‘whosoever believeth on him’). The word is missing in the earliest manuscripts here and was probably taken from 10:11, where Paul quotes the same verse with ‘everyone’.",
+      "ot": [
+        {
+          "ref": "Isaiah 28:16",
+          "note": "In Isaiah 28:16 God answers Jerusalem's rulers, who trusted a ‘covenant with death’, by laying in Zion a tested, precious cornerstone, a sure foundation, and adds: hammaamin lo yachish, ‘the one who believes will not hurry’ (or ‘will not be shaken’, ‘will not panic’). The Septuagint reads ho pisteuon ep auto ou me kataischynthe, ‘the one who believes in him will not be put to shame’, which may reflect a different Hebrew verb (yevosh, ‘be ashamed’) or an interpretation; Paul follows the Septuagint's ‘put to shame’ and its ‘in him’. Paul keeps the opening ‘Behold, I lay in Zion’ and the closing promise, but replaces the middle, the precious cornerstone, with words from Isaiah 8:14."
+        },
+        {
+          "ref": "Isaiah 8:14",
+          "note": "Isaiah 8:14 says the LORD of Hosts will be a sanctuary, but also a stone of stumbling and a rock of offense to both houses of Israel. The Hebrew uleeven negef ultsur mikhshol means ‘a stone of striking and a rock of stumbling’. The Septuagint turns the sense around: ouch hos lithou proskommati synantesesthe auto, ‘you will not encounter him as a stumbling stone’. Paul's lithon proskommatos kai petran skandalou is closer to the Hebrew than to the Septuagint, and 1 Peter 2:8 has the identical Greek wording, which suggests that early Christians used a common Greek form of these stone texts. In Isaiah the stone is the LORD himself; Paul applies the words to Christ."
+        }
+      ],
+      "refs": ["Isaiah 28:16", "Isaiah 8:14", "1 Peter 2:6-8", "Romans 10:11", "Matthew 21:42-44"]
+    }
+  ]
+}

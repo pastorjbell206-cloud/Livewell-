@@ -1,0 +1,457 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "Luke widens the frame from a Judean household to the emperor in Rome. A decree issued for the empire's purposes becomes, without the emperor knowing it, the means by which the promise of Bethlehem is kept.",
+      "grammar": "Dogma (‘decree’) is the word for an official ordinance, used again of Caesar's decrees in Acts 17:7. Apographesthai is a present infinitive, middle or passive, ‘to be registered’ or ‘to register oneself’: an enrollment of persons and property, which could serve taxation, not necessarily a tax itself. Pasan tēn oikoumenēn, ‘the whole inhabited world’, was the standard way to speak of the Roman Empire (Acts 11:28, 24:5). Luke need not mean one simultaneous census of every province; it can describe Augustus's policy of registering the provinces.",
+      "words": ["G1378", "G2541G", "G0828", "G0583", "G3625"],
+      "history": "Augustus, sole ruler from 31 BC and emperor until AD 14, recorded in his Res Gestae (8) three censuses of Roman citizens, in 28 BC, 8 BC, and AD 14. Provincial censuses for tribute were held in Gaul, Egypt, and elsewhere during his reign. Herod's kingdom, however, was a client kingdom, and no ancient source outside Luke describes a Roman census there in Herod's lifetime. Defenders of Luke point out that Augustus wrote to Herod about 8 BC that he would henceforth treat him as a subject rather than a friend (Josephus, Antiquities 16.290), and that Josephus mentions an oath of loyalty to Caesar taken in Herod's last years that some six thousand Pharisees refused (Antiquities 17.42); critics answer that neither amounts to a census.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The most powerful man in the world issues an order, and its unintended result is that a promise about Bethlehem comes true. Luke shows God's rule working through rulers who do not know him, the conviction of Proverbs 21:1."
+        }
+      ],
+      "parallels": ["Matthew 1:18-25", "Matthew 2:1"],
+      "refs": ["Proverbs 21:1", "Acts 17:7", "Acts 11:28", "Micah 5:2"]
+    },
+    {
+      "v": "2",
+      "context": "Luke dates the census by the governor of Syria. This is the most debated historical note in the Gospels, because Quirinius's known governorship of Syria began in AD 6, about ten years after the death of Herod the Great, under whom Luke (1:5) and Matthew (2:1) place Jesus' birth.",
+      "grammar": "Hautē apographē prōtē egeneto hēgemoneuontos tēs Surias Kurēniou is most naturally ‘this census was the first while Quirinius was governing Syria’, with a genitive absolute (hēgemoneuontos ... Kurēniou) giving the time. Nigel Turner (Grammatical Insights into the New Testament, 1965) argued that prōtē can mean ‘before’ when followed by a genitive, as prōtos does in John 1:15 and 15:18, giving ‘this census took place before Quirinius was governor’. Most grammarians find this strained, since the genitive here is already occupied as a genitive absolute and Luke would more naturally have written ‘before the census under Quirinius’. Hēgemoneuō is a general verb, ‘to lead, govern’, not the technical title of a legate, so some argue it could cover another official role in the region.",
+      "words": ["G0582", "G4413G", "G2230", "G4947", "G2958"],
+      "history": "Publius Sulpicius Quirinius, consul in 12 BC, became legate of Syria in AD 6 when Archelaus was deposed and Judea became a Roman province; Josephus describes his census of Judea that year (Antiquities 17.355, 18.1-2, 18.26), which provoked Judas the Galilean's revolt (Acts 5:37). An inscription (the Lapis Venetus) records a census of Apamea in Syria taken on his orders. Proposed solutions: that Luke confused this census with the time of Jesus' birth (Emil Schürer, Raymond Brown, Joseph Fitzmyer); Turner's ‘before’; that Quirinius held an earlier command in Syria, defended by William Ramsay and supported by an anonymous career inscription from Tivoli (the Lapis Tiburtinus) that mentions a second governorship, which Theodor Mommsen assigned to Quirinius, though Ronald Syme (1973) and others assign it to another consular; Tertullian's statement (Against Marcion 4.19) that the census was taken under Sentius Saturninus, governor about 9 to 6 BC; and that a registration begun under Herod was completed later. Justin Martyr (1 Apology 34) appealed to the Quirinius census records as if they could be checked.",
+      "text": "No Greek manuscript alters Quirinius's name or the word prōtē; the difficulty is historical, not textual. Some English versions reflect the grammatical options: most read ‘first census’, while a few offer ‘before’ in a note.",
+      "refs": ["Acts 5:37", "Luke 1:5", "Luke 3:1", "Matthew 2:1"]
+    },
+    {
+      "v": "3",
+      "context": "Everyone goes to register in ‘his own town’. The verse sets the reason for the move to Bethlehem, and the honest difficulty of the census extends to it.",
+      "grammar": "Eporeuonto is an imperfect, describing a movement going on across the land. Eis tēn heautou polin, ‘to his own city’, uses the reflexive to stress the tie of each man to a particular town. Luke does not say whether that means the place of residence, of property, or of ancestral origin.",
+      "words": ["G4198", "G0583", "G1538", "G4172"],
+      "history": "A papyrus edict of Gaius Vibius Maximus, prefect of Egypt, dated AD 104, ordered everyone living away from home to return to their own districts for the household census (P.London 904). That shows returning home for a census was a Roman practice. What it does not show is a return to an ancestral town a thousand years after one's ancestor; critics press this point. Replies suggest Joseph had property or family in Bethlehem, which Matthew's account, where the family is living in a house in Bethlehem (Matthew 2:11), might support.",
+      "refs": ["Matthew 2:11", "Luke 2:39"]
+    },
+    {
+      "v": "4-5",
+      "context": "Joseph goes up from Nazareth to Bethlehem because he is of David's house, and Mary goes with him, pregnant and still called betrothed. The narrative brings the child of David's line to David's town.",
+      "grammar": "Anebē (‘went up’) is the regular verb for travel toward Jerusalem's highlands. Polin Dauid, ‘city of David’, is in the Old Testament almost always Jerusalem's citadel (2 Samuel 5:7); Luke uses it of Bethlehem, David's birthplace (1 Samuel 16:1, 17:12), as the angels will (verse 11). Ex oikou kai patrias Dauid, ‘of the house and family of David’, pairs two words for lineage. Emnēsteumenē (‘betrothed’) is a perfect passive participle, and egkuō (‘pregnant’) appears only here in the New Testament.",
+      "words": ["G0305", "G1138", "G0965", "G3624H", "G3965", "G3423", "G1471"],
+      "history": "Bethlehem lay about six miles south of Jerusalem. Whether women had to appear for a census is disputed. The Roman jurist Ulpian (Digest 50.15.3) records that in the province of Syria women from twelve and men from fourteen were liable to the poll tax up to age sixty-five, and Egyptian household returns list women and children. Others think Mary went because her condition and her situation in Nazareth made it better not to be left behind.",
+      "text": "The earliest manuscripts read ‘with Mary, who was betrothed to him’. The Byzantine manuscripts add ‘wife’ (‘his espoused wife’ in the King James Version), and some Old Latin and Old Syriac witnesses read simply ‘his wife’, smoothing the tension with Matthew 1:24.",
+      "parallels": ["Matthew 1:24-25"],
+      "refs": ["1 Samuel 16:1", "1 Samuel 17:12", "2 Samuel 5:7", "Micah 5:2", "John 7:42"]
+    },
+    {
+      "v": "6-7",
+      "context": "The birth itself is told in one plain sentence of three verbs: she bore, she wrapped, she laid. The only explanation Luke gives is for the manger, and it turns on a single word.",
+      "grammar": "Prōtotokon (‘firstborn’) states the child's legal status as the one who opens the womb (verse 23) and does not by itself imply later children. Esparganōsen (‘she wrapped in cloths’) describes ordinary care for a newborn. Aneklinen auton en phatnē, ‘she laid him in a manger’: phatnē is a feeding trough, and by extension a stall. Kataluma, traditionally ‘inn’, is Luke's word for the guest room of the Last Supper (22:11), while he uses pandocheion for the Samaritan's inn (10:34). Kenneth Bailey (Jesus Through Middle Eastern Eyes, 2008) argued the family stayed in a village house whose guest room was full, with the manger in the main room where animals were brought at night. Stephen Carlson (New Testament Studies, 2010) argued kataluma simply means their ‘place to stay’, too small for a birth.",
+      "words": ["G5088", "G4416", "G4683", "G0347", "G5336", "G5117", "G2646"],
+      "history": "A Jewish epitaph from Leontopolis in Egypt, dated about 5 BC, speaks of a young mother named Arsinoe who died giving birth to her firstborn child, though he was her only one; it shows ‘firstborn’ used without implying later siblings. Justin Martyr (Dialogue with Trypho 78), writing about AD 155, says Jesus was born in a cave near the village, and Origen (Against Celsus 1.51) says the cave was being shown in his day. Constantine built the Church of the Nativity over that cave in the 330s.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of the Most High (1:32) is wrapped in cloths and laid in a feeding trough. Luke tells the incarnation not by explaining it but by the plainest details of a birth, the humility Paul describes in Philippians 2:6-8."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 1:3",
+          "note": "The Septuagint of Isaiah 1:3 reads that the ox knows its owner and the donkey its lord's phatnē, ‘manger’, while Israel does not know. The word is the same as Luke's, and the verse is the source of the ox and donkey in Christian art (they appear in the later Gospel of Pseudo-Matthew). Whether Luke intends the echo is uncertain; if so, the manger marks the place where God's people should recognize their Lord. Wisdom 7:4-5 has Solomon say he too was nursed in swaddling cloths, since no king has a different beginning."
+        }
+      ],
+      "parallels": ["Matthew 1:25", "Matthew 2:1"],
+      "refs": ["Luke 22:11", "Luke 10:34", "Philippians 2:6-8", "2 Corinthians 8:9"]
+    },
+    {
+      "v": "8",
+      "context": "The scene moves to the fields. The first to hear of the birth are shepherds working the night shift, not priests, scholars, or officials.",
+      "grammar": "Agraulountes (‘living in the fields’) means staying outdoors, camping with the flocks. Phulassontes phulakas tēs nuktos, ‘keeping the watches of the night’, uses a cognate construction (guarding guards) with the plural phulakas, the watches into which the night was divided. The verb and noun are from the same root, a Semitic style common in the Septuagint.",
+      "words": ["G4166", "G0063", "G5442I", "G5438H", "G3571", "G4167"],
+      "history": "Later rabbinic sources are suspicious of herdsmen: the Mishnah lists herding among trades a father should not teach his son, since they invite dishonesty (m. Qiddushin 4:14), and the Talmud excludes certain herdsmen as witnesses (b. Sanhedrin 25b). How far these later texts describe first-century attitudes is debated, and Luke's readers also knew David the shepherd and the LORD as Israel's shepherd (Psalm 23, Ezekiel 34). The Mishnah mentions animals found between Jerusalem and Migdal Eder (‘tower of the flock’, Genesis 35:21, Micah 4:8) as sacrificial (m. Shekalim 7:4), and Alfred Edersheim suggested these shepherds kept temple flocks; the text says nothing of it. Flocks in the fields do not settle the season; the December date is first clearly attested in the Roman Chronograph of 354.",
+      "refs": ["Psalm 23:1", "Ezekiel 34:23", "Micah 5:4", "Micah 4:8", "1 Samuel 16:11"]
+    },
+    {
+      "v": "9",
+      "context": "An angel stands over the shepherds and the Lord's glory blazes around them. The night scene becomes a scene of revelation, and the shepherds' fear matches that of Zechariah and Mary.",
+      "grammar": "Epestē (‘stood by’) suggests suddenness. Doxa kuriou (‘the glory of the Lord’) is the Old Testament's kavod YHWH, the visible radiance of God's presence at Sinai and in the tabernacle. Perielampsen (‘shone around’) is used again only of the light around Paul on the Damascus road (Acts 26:13). Ephobēthēsan phobon megan, literally ‘they feared a great fear’, is a cognate accusative intensifying the verb.",
+      "words": ["G2186", "G1391", "G4034", "G5399", "G5401"],
+      "theology": [
+        {
+          "id": "glory",
+          "note": "The glory that filled the tabernacle (Exodus 40:34) appears over a field near Bethlehem. Luke puts the presence of God's glory at the birth, a glory John will say was seen in the Word made flesh (John 1:14)."
+        }
+      ],
+      "refs": ["Exodus 40:34", "Exodus 24:16-17", "Acts 26:13", "John 1:14"]
+    },
+    {
+      "v": "10-11",
+      "context": "The angel's announcement is the Gospel's first full proclamation: good news, great joy, for all the people, today, in David's city, a Savior who is Christ the Lord. Every word is chosen.",
+      "grammar": "Euangelizomai (‘I proclaim good news’) is present, the announcement happening as it is spoken. Panti tō laō (‘to all the people’) means Israel, the usual sense of laos; the widening to the Gentiles comes in verse 32. Sēmeron (‘today’) is a Lucan keyword for salvation arriving in the present (4:21, 19:9, 23:43). Sōtēr, christos, kurios stand side by side without articles. The pair christos kurios, ‘Christ the Lord’ or ‘an anointed lord’, occurs in the Septuagint of Lamentations 4:20 and in the Psalms of Solomon 17:32 (a Jewish collection of the first century BC), where it describes the coming Davidic king. In Luke, where kurios is repeatedly God's name (2:9), the title carries more weight.",
+      "words": ["G2097", "G5479", "G2992", "G4594", "G4990", "G5547", "G2962G", "G5088"],
+      "history": "An inscription set up about 9 BC in Priene and other cities of Asia Minor, proposing that the province's calendar begin on Augustus's birthday, calls him a savior (sōtēr) who ended war and says his birth was the beginning of good news (euangelia) for the world. Luke's angel uses the same political vocabulary for a child in a manger. Whether Luke knew such inscriptions is unknown, but the contrast would not have been lost on readers under Rome.",
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "Salvation arrives as a person, born ‘today’. The angel does not describe a program or a principle; he names a child and gives him the titles of rescue, royal anointing, and lordship."
+        },
+        {
+          "id": "messiah",
+          "note": "He is born in David's city and called Christ, the anointed king. The announcement fulfills Gabriel's promise of David's throne (1:32) at the place where David was anointed."
+        }
+      ],
+      "refs": ["Luke 4:21", "Luke 19:9", "Acts 2:36", "Philippians 2:11", "Isaiah 9:6"]
+    },
+    {
+      "v": "12",
+      "context": "The angel gives a sign, and it is ordinary: a baby in swaddling cloths lying in a manger. The detail repeats verse 7, so the shepherds will know they have found the right child by the one thing no king's child would have.",
+      "grammar": "Touto humin to sēmeion, ‘this is the sign for you’, recalls the Old Testament pattern of a sign given with a promise (Exodus 3:12, Isaiah 7:14). Esparganōmenon is a perfect passive participle, ‘having been wrapped’, and keimenon (‘lying’) is present. The sign's force lies in its humility: the Savior is identified by a feeding trough.",
+      "words": ["G4592", "G2147", "G1025", "G4683", "G2749", "G5336"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "God's sign of the Messiah is his poverty. The mark by which he is recognized is the lowliness Mary sang of (1:48, 1:52)."
+        }
+      ],
+      "refs": ["Exodus 3:12", "Isaiah 7:14", "1 Samuel 10:1-7", "Luke 1:52"]
+    },
+    {
+      "v": "13-14",
+      "context": "A multitude of angels joins the messenger in praise. Their song, in two balanced lines, sets God's glory in heaven beside peace on earth for those he favors.",
+      "grammar": "Stratia ouraniou, ‘heavenly army’, uses the military word for host; the army of heaven announces peace. The song is built as two parallel lines: glory (doxa) with peace (eirēnē), in the highest (en hupsistois) with on earth (epi gēs), to God (theō) with among people (en anthrōpois). The last word is disputed. The earliest manuscripts read eudokias (genitive), ‘people of good pleasure’, meaning the people on whom God's favor rests. The Qumran Thanksgiving Hymns (1QH) use the Hebrew equivalent, ‘sons of his good pleasure’, of God's chosen, which Joseph Fitzmyer took as confirming the sense. The Latin Vulgate's hominibus bonae voluntatis, ‘men of good will’, shifted the meaning toward human goodwill.",
+      "words": ["G4756", "G0134", "G1391", "G5310", "G1515", "G0444", "G2107"],
+      "text": "The Byzantine manuscripts read eudokia (nominative), which makes three lines: glory to God, peace on earth, goodwill toward men (the King James Version). Sinaiticus, Alexandrinus, Vaticanus (first hand), Bezae, and the Latin tradition read eudokias, and the difference is one letter, a final sigma easily lost in copying. Modern editions print eudokias.",
+      "history": "The angels' song is the opening of the Gloria in excelsis, a hymn attested in Greek by the fourth century (Apostolic Constitutions 7.47) and sung in the Western Mass. Rome celebrated Augustus's peace with the Ara Pacis, the Altar of Augustan Peace, dedicated in 9 BC.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Heaven's first response to the birth is praise. The song orders worship rightly: God's glory first, then peace as his gift."
+        }
+      ],
+      "refs": ["Luke 19:38", "Isaiah 9:6-7", "Isaiah 52:7", "Ephesians 2:14-17"]
+    },
+    {
+      "v": "15-16",
+      "context": "When the angels leave, the shepherds decide at once to go and see, and they find everything as they were told. The response to revelation is movement.",
+      "grammar": "Dielthōmen dē heōs Bēthleem, ‘let us go over now to Bethlehem’, uses the hortatory subjunctive with the particle dē, which adds urgency. To rhēma touto to gegonos, ‘this word that has happened’, uses rhēma in the Hebrew sense of davar, both word and event: the message and the thing it names are one. Speusantes (‘hurrying’) matches Mary's haste in 1:39. Aneuran (‘they found’) often implies finding after searching.",
+      "words": ["G1330", "G1211", "G4487", "G1096", "G1107", "G4692", "G0429"],
+      "theology": [
+        {
+          "id": "faith",
+          "note": "The shepherds act on what the Lord ‘has made known’ before they see anything. Faith in Luke is a response to God's word that goes and looks."
+        }
+      ],
+      "refs": ["Luke 1:39", "Luke 1:38", "John 1:46"]
+    },
+    {
+      "v": "17-18",
+      "context": "Having seen, the shepherds tell what they heard, and everyone who hears is amazed. The first human proclaimers of Jesus' birth are these field hands.",
+      "grammar": "Egnōrisan (‘they made known’) is the verb used in verse 15 for what the Lord made known to them; the revelation passes on through them. Peri tou rhēmatos tou lalēthentos, ‘about the word spoken’, stresses the message rather than their experience. Ethaumasan (‘were amazed’) is Luke's common verb for wonder, which in his Gospel is a beginning, not yet faith.",
+      "words": ["G1107", "G4487", "G2980", "G2296", "G4166"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Witness begins with people of low standing telling what they have seen and heard, the pattern of Acts 4:20. God's news does not wait for credentialed messengers."
+        }
+      ],
+      "refs": ["Acts 4:20", "1 John 1:1-3", "Luke 8:39"]
+    },
+    {
+      "v": "19",
+      "context": "Against the crowd's passing amazement Luke sets Mary's lasting reflection. The verse is quiet and deliberate, and it will be repeated in verse 51.",
+      "grammar": "Sunetērei (‘she kept, treasured’) is an imperfect of continued action. Sumballousa, from sumballō, ‘to throw together’, means to compare, interpret, or put things together to find their meaning. The Septuagint says Jacob kept the matter of Joseph's dreams (Genesis 37:11), and Daniel kept the matter in his heart (Daniel 7:28): both are people holding a revelation whose meaning is not yet clear.",
+      "words": ["G4933", "G4487", "G4820", "G2588"],
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Mary models a faith that does not force understanding. She keeps God's words and turns them over, waiting for their meaning to unfold, the wisdom of Psalm 119:11."
+        }
+      ],
+      "refs": ["Genesis 37:11", "Daniel 7:28", "Luke 2:51", "Psalm 119:11"]
+    },
+    {
+      "v": "20",
+      "context": "The shepherds go back to their flocks, changed only in that they now glorify and praise God. Everything was as they had been told, the note of fulfillment that runs through these chapters.",
+      "grammar": "Doxazontes kai ainountes (‘glorifying and praising’) are present participles of continuing action; ainountes repeats the verb used of the angels in verse 13, so the shepherds now join the heavenly song. Kathōs elalēthē pros autous, ‘just as it had been told to them’, confirms the angel's word by experience.",
+      "words": ["G5290", "G1392", "G0134", "G2980"],
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Earth echoes heaven. The shepherds return to the same work in the same fields, and what has changed is that they praise."
+        }
+      ],
+      "refs": ["Luke 5:25-26", "Luke 18:43", "Luke 24:52-53"]
+    },
+    {
+      "v": "21",
+      "context": "On the eighth day Jesus is circumcised and named, as John was (1:59-63). Luke stresses that the name came from the angel before the conception.",
+      "grammar": "Hote eplēsthēsan hēmerai oktō, ‘when eight days were fulfilled’, uses the fulfillment verb that Luke attaches to the stages of these births (1:23, 1:57, 2:6, 2:22). Eklēthē to onoma autou Iēsous (‘his name was called Jesus’) is passive, leaving the naming to the parents in obedience. Klēthen hupo tou angelou pro tou sullēmphthēnai, ‘given by the angel before he was conceived’, uses an articular infinitive with pro for time.",
+      "words": ["G4130", "G3638", "G4059", "G2564H", "G2424G", "G4815"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "Jesus receives the sign of the Abrahamic covenant as every Jewish boy did. Paul's words that God's Son was ‘born of a woman, born under the law’ (Galatians 4:4) are narrated here."
+        }
+      ],
+      "parallels": ["Matthew 1:25"],
+      "refs": ["Genesis 17:12", "Leviticus 12:3", "Galatians 4:4-5", "Luke 1:31"]
+    },
+    {
+      "v": "22-24",
+      "context": "Forty days after the birth, the family goes to Jerusalem to fulfill two laws: the mother's purification and the dedication of the firstborn. Luke cites the Law three times in three verses, placing the family firmly within Israel's obedience.",
+      "grammar": "Hai hēmerai tou katharismou autōn, ‘the days of their purification’, puzzles readers, since Leviticus 12 speaks only of the mother's purification. Some take ‘their’ to include Joseph as the one who brought the offering, some the child, some the family generally. Parastēsai tō kuriō (‘to present to the Lord’) recalls Hannah bringing Samuel to Eli (1 Samuel 1:22-28). Luke does not mention the redemption payment of five shekels for a firstborn (Numbers 18:15-16), and speaks instead of presentation, which may suggest Jesus is given to God rather than bought back.",
+      "words": ["G2512", "G3551", "G3475", "G0321", "G3936", "G1125", "G1272", "G3388", "G2378", "G5167", "G4058"],
+      "text": "A few late manuscripts, followed by the Textus Receptus (the printed Greek text behind the King James Version), read autēs, ‘her purification’, which is what Leviticus 12 would lead a copyist to expect. The Greek manuscripts overwhelmingly read autōn, ‘their’.",
+      "history": "The Mishnah places the purification of women after childbirth at the Nicanor Gate, between the Court of the Women and the inner courts (m. Sotah 1:5). A mother offered a lamb and a pigeon or dove; if she could not afford a lamb, two turtledoves or two young pigeons (Leviticus 12:6-8). Mary's offering marks the family as poor.",
+      "theology": [
+        {
+          "id": "law",
+          "note": "The one who will fulfill the Law is first placed under it by his parents' obedience. Luke's repeated ‘according to the Law’ answers any suspicion that Jesus' movement began in disregard of Moses."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 13:2",
+          "note": "God claims every firstborn male, the first to open the womb, because he spared Israel's firstborn at the Passover (Exodus 13:2, 13:12-15). Luke's quotation, ‘Every firstborn male shall be consecrated to the Lord’, blends the wording of Exodus 13:2 and 13:12 in the Septuagint, using ‘opening the womb’ (dianoigon mētran) and adding ‘shall be called holy’, which echoes Gabriel's ‘holy one’ (1:35)."
+        },
+        {
+          "ref": "Leviticus 12:8",
+          "note": "The law of purification allows a woman who cannot afford a lamb to bring two turtledoves or two young pigeons, one for a burnt offering and one for a sin offering. Luke quotes the Septuagint's zeugos trugonōn ē duo neossous peristerōn, and by omitting the lamb shows the family's poverty."
+        }
+      ],
+      "refs": ["Leviticus 12:2-8", "Numbers 18:15-16", "1 Samuel 1:22-28", "2 Corinthians 8:9"]
+    },
+    {
+      "v": "25-26",
+      "context": "Simeon is introduced by his character, his hope, and his gift: righteous, devout, waiting for Israel's consolation, and under the Spirit. A private promise that he would see the Messiah before death sets up the scene.",
+      "grammar": "Eulabēs (‘devout’) describes reverent carefulness toward God and is used only by Luke in the New Testament (Acts 2:5, 8:2). Prosdechomenos paraklēsin tou Israēl, ‘waiting for the consolation of Israel’, uses paraklēsis, comfort or encouragement, the word of Isaiah 40:1 in the Septuagint (parakaleite). Ēn kechrēmatismenon is a periphrastic pluperfect passive of chrēmatizō, a verb used for divine warnings and revelations (Matthew 2:12, Hebrews 8:5): ‘it had been revealed’. Ton christon kuriou, ‘the Lord's anointed’, is the Old Testament's phrase for Israel's king (1 Samuel 24:6, Psalm 2:2).",
+      "words": ["G2126", "G4327", "G3874", "G5537", "G5547", "G2962G", "G4151G"],
+      "theology": [
+        {
+          "id": "spirit",
+          "note": "Three times in three verses the Spirit rests on, reveals to, and leads Simeon. Before Pentecost the Spirit is already at work among faithful Israelites waiting for God's promise."
+        },
+        {
+          "id": "hope",
+          "note": "Simeon's life is defined by what he is waiting for. Luke shows hope as a patient, specific expectation that God will keep his word."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 40:1",
+          "note": "Isaiah 40 opens the prophecies of comfort for the exiles: ‘Comfort, comfort My people’ (Hebrew nachamu, Septuagint parakaleite). ‘The consolation of Israel’ is Luke's shorthand for the hope these chapters of Isaiah raise, and Simeon's song will draw on them directly (Isaiah 42:6, 49:6, 52:10)."
+        }
+      ],
+      "refs": ["Isaiah 40:1", "Isaiah 49:13", "Luke 2:38", "Luke 23:51", "Psalm 2:2"]
+    },
+    {
+      "v": "27-28",
+      "context": "Led by the Spirit, Simeon arrives in the temple courts at the moment the parents bring in the child. He takes the child in his arms and blesses God.",
+      "grammar": "En tō pneumati (‘in the Spirit’) describes guidance, not ecstasy. To hieron here is the temple complex with its courts, where laypeople could go. Luke calls Joseph and Mary hoi goneis (‘the parents’) without hesitation, since Joseph is Jesus' legal father. Kata to eithismenon tou nomou, ‘according to the custom of the law’, uses a perfect passive participle, what the law had made customary. Edexato auto eis tas agkalas, ‘he received him into his arms’, uses a verb of welcome.",
+      "words": ["G2411", "G1118", "G1480", "G1209", "G0043", "G2127"],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The Lord comes to his temple (Malachi 3:1) as a forty-day-old infant carried by poor parents, and only a Spirit-led old man recognizes him."
+        }
+      ],
+      "refs": ["Malachi 3:1", "Luke 4:1", "Mark 10:16"]
+    },
+    {
+      "v": "29-32",
+      "context": "Simeon's song, the Nunc Dimittis, is the shortest of Luke's canticles. It moves from Simeon's own release to God's salvation seen, and then to its range: Gentiles and Israel together. It is the first time in Luke that the nations are named.",
+      "grammar": "Nun apolueis ton doulon sou, despota: apoluō means to release, including a slave's release from service and, as a euphemism, release in death; despotēs (‘master’) is the matching term for the owner of a slave (doulos). The verb is present, ‘now you are releasing’. To sōtērion sou (‘your salvation’) is the neuter noun of the Septuagint's Isaiah 40:5 and 52:10, and Luke uses it again at 3:6 and in Paul's last words in Acts 28:28, framing his two volumes. In verse 32, phōs eis apokalupsin ethnōn kai doxan laou sou Israēl can be read with ‘light’ and ‘glory’ both in apposition to ‘salvation’, or with ‘revelation’ and ‘glory’ both governed by eis, ‘a light for revelation to the Gentiles and for glory to Israel’, as the BSB takes it.",
+      "words": ["G3568", "G0630G", "G1401", "G1203", "G4992", "G2090", "G2992", "G5457", "G0602", "G1484", "G1391"],
+      "history": "The Nunc Dimittis has been sung at Compline, the night office of the Western church, since the early Middle Ages, and at Evening Prayer in the Book of Common Prayer; in Eastern Orthodox Vespers it is said near the end of the service. Its placement at the close of the day matches Simeon's words.",
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Salvation is prepared ‘in the sight of all people’. From the child's first visit to the temple, Luke announces that the nations are included, the promise Acts carries out from Jerusalem to Rome."
+        },
+        {
+          "id": "salvation",
+          "note": "Simeon sees salvation by seeing the child. The verse identifies salvation with the person of Jesus before he has done anything, because God has sent him."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 49:6",
+          "note": "God tells his servant that restoring Jacob's tribes is too small a thing: he will make him a light for the nations, so that his salvation may reach the ends of the earth. The Septuagint reads eis phōs ethnōn, ‘for a light of nations’. Isaiah 42:6 has the same phrase, and Isaiah 52:10 promises that all the ends of the earth will see the salvation of our God, before the eyes of all the nations. Isaiah 46:13 in the Septuagint speaks of salvation given in Zion to Israel for glory. Simeon's song gathers these servant texts, and Paul applies Isaiah 49:6 to his own mission in Acts 13:47."
+        }
+      ],
+      "refs": ["Isaiah 52:10", "Isaiah 42:6", "Isaiah 40:5", "Acts 13:47", "Acts 28:28"]
+    },
+    {
+      "v": "33",
+      "context": "The parents marvel at what is said. Even after the annunciations, the widening of the promise to the nations is news to them.",
+      "grammar": "Ēn ... thaumazontes (‘they were marveling’) is a periphrastic imperfect with a singular verb and a plural participle, agreeing first with ‘his father’. Luke's phrase ho patēr autou kai hē mētēr (‘his father and mother’) uses ordinary family language, as Mary does in verse 48.",
+      "words": ["G3962", "G3384", "G2296", "G2980"],
+      "text": "The earliest manuscripts read ‘his father and mother’. The Byzantine manuscripts read ‘Joseph and his mother’ (so the King James Version), a change most scholars attribute to scribes protecting the virgin birth; the same kind of change occurs in verse 43.",
+      "refs": ["Luke 2:48", "Luke 3:23", "Luke 4:22"]
+    },
+    {
+      "v": "34-35",
+      "context": "Simeon blesses the parents and then speaks only to Mary, and his words darken. The child will divide Israel, be opposed, and expose hearts, and Mary will suffer. This is the first shadow of the cross in Luke.",
+      "grammar": "Keitai eis ptōsin kai anastasin pollōn, ‘is set for the falling and rising of many’, can mean that some will fall and others rise, or that the same people will fall and then rise (humbled, then raised). Sēmeion antilegomenon, ‘a sign spoken against’, uses a present passive participle; in Acts 28:22 the Jews of Rome say the Christian sect is ‘spoken against’ everywhere, the same verb. The clause about the sword is a parenthesis, which the BSB marks by setting it at the end. Rhomphaia is a large broadsword. Hopōs an apokaluphthōsin ... dialogismoi, ‘so that the thoughts of many hearts may be revealed’, states the purpose of the opposition.",
+      "words": ["G2749", "G4431", "G0386", "G4592", "G0483", "G5590G", "G1330", "G4501", "G0601", "G1261"],
+      "history": "The sword has been read in several ways. Origen (Homilies on Luke 17) took it as the doubt that would pierce Mary at the cross, later healed; Epiphanius (Panarion 78.11) wondered whether it meant a martyr's death, which no tradition records. The most common reading, from the patristic period onward and behind the Western devotion of Our Lady of Sorrows, sees Mary's grief at the crucifixion (John 19:25). Raymond Brown read it in light of Ezekiel 14:17, where a sword passes through the land to divide it, so that Mary too must choose within a divided Israel (compare Luke 8:19-21).",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The joy of the birth includes the promise of pain. Simeon tells the mother of the Messiah that her own life will be pierced by what happens to her son."
+        },
+        {
+          "id": "judgment",
+          "note": "Jesus' coming reveals hearts. Judgment in Luke begins as exposure: how people respond to Jesus shows what they are."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 8:14-15",
+          "note": "Isaiah warns that the LORD himself will be a stone that causes stumbling for both houses of Israel, and many will stumble and fall. Isaiah 28:16 speaks of a tested cornerstone laid in Zion. Luke's ‘fall and rise’ recalls this stone imagery, which Jesus applies to himself in 20:17-18, quoting Psalm 118:22."
+        }
+      ],
+      "refs": ["Isaiah 28:16", "Luke 20:17-18", "John 19:25", "Acts 28:22", "Hebrews 4:12"]
+    },
+    {
+      "v": "36-37",
+      "context": "Luke pairs Simeon with Anna, as he often pairs a man and a woman. She is a prophetess, old, widowed, and constantly in the temple, and her description reads like a portrait of faithful Israel waiting.",
+      "grammar": "Prophētis (‘prophetess’) puts Anna with Miriam, Deborah, and Huldah. Zēsasa meta andros etē hepta apo tēs parthenias autēs, ‘having lived with a husband seven years from her virginity’, describes a single short marriage. The phrase heōs etōn ogdoēkonta tessarōn can mean she was a widow ‘until the age of eighty-four’ (the BSB) or a widow ‘for eighty-four years’, which with an early marriage would make her about a hundred and five. Ouk aphistato tou hierou, ‘she did not depart from the temple’, is a hyperbole of devotion; latreuousa (‘serving, worshiping’) is present, a continuing life.",
+      "words": ["G0451", "G4398", "G5323", "G5443", "G0768", "G3932", "G5503", "G3589", "G0868", "G3521", "G3000"],
+      "text": "The earliest manuscripts read heōs (‘until’ or ‘up to’); the Byzantine manuscripts read hōs (‘about’), giving ‘a widow of about eighty-four years’ (the King James Version).",
+      "history": "Phanuel is the Greek form of Penuel, ‘face of God’ (Genesis 32:30). Asher was one of the northern tribes deported by Assyria after 722 BC; Anna's tribal identity shows that some families still traced descent from the northern tribes, as the book of Tobit (from Naphtali) also assumes. The book of Judith, whose heroine was widowed young, fasted through her widowhood, and lived to a hundred and five (Judith 8:4-6, 16:23), offers a close literary parallel to Anna's picture.",
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "Anna's worship is night and day, with fasting and prayer. Luke later commends persistent prayer through a widow who will not stop asking (18:1-8)."
+        }
+      ],
+      "refs": ["Judges 4:4", "2 Kings 22:14", "1 Timothy 5:5", "Luke 18:1-8", "Genesis 32:30"]
+    },
+    {
+      "v": "38",
+      "context": "Anna arrives at the same hour, gives thanks, and speaks about the child to everyone waiting for Jerusalem's redemption. She is the first in Luke to speak of Jesus to others in the temple.",
+      "grammar": "Autē tē hōra epistasa, ‘at that very hour, coming up’, uses the same verb (ephistēmi) as the angel's sudden appearance in verse 9. Anthōmologeito (‘she gave thanks’) is an imperfect of a verb found only here in the New Testament, meaning to respond in praise. Elalei peri autou, ‘she kept speaking about him’, is another continuing imperfect. Lutrōsin Ierousalēm (‘the redemption of Jerusalem’) echoes Zechariah's ‘redemption’ (1:68).",
+      "words": ["G5610", "G2186", "G0437", "G2980", "G4327", "G3085", "G2419"],
+      "history": "Redemption was a charged political word. Coins struck by the Jewish rebels in the fourth year of the revolt against Rome (AD 69-70) bear the Hebrew inscription ‘For the redemption of Zion’. Anna's hearers waited for the same thing, and Luke's Gospel will redefine how it comes (24:21).",
+      "theology": [
+        {
+          "id": "hope",
+          "note": "Luke names a whole circle of people waiting for Jerusalem's redemption. Hope in these chapters is a community's shared expectation, kept alive in prayer until God answers it."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Isaiah 52:9",
+          "note": "Isaiah calls the ruins of Jerusalem to break into song because the LORD has comforted his people and redeemed Jerusalem (Hebrew ga'al; the Septuagint uses a form of rhuomai). The two hopes of this scene, ‘consolation of Israel’ (verse 25) and ‘redemption of Jerusalem’, both come from this verse, and Simeon and Anna between them announce that it is being fulfilled."
+        }
+      ],
+      "refs": ["Luke 1:68", "Luke 24:21", "Luke 23:51", "Isaiah 52:9"]
+    },
+    {
+      "v": "39-40",
+      "context": "With the Law's requirements complete, the family returns to Nazareth, and a summary describes Jesus' growth. Luke says nothing of the Magi or the flight to Egypt that Matthew narrates.",
+      "grammar": "Etelesan panta ta kata ton nomon, ‘they completed everything according to the law’, closes the presentation as it began (verse 22). In verse 40, ēuxanen kai ekrataiouto (‘he grew and became strong’) repeats the summary about John (1:80), but plēroumenon sophia (‘being filled with wisdom’, a present passive participle) and charis theou ēn ep' auto (‘the grace of God was upon him’) go further. The present participle describes continuing growth, not a completed state.",
+      "words": ["G5055", "G3551", "G3478", "G0837", "G2901", "G4137", "G4678", "G5485"],
+      "text": "The earliest manuscripts read ‘became strong, filled with wisdom’. The Byzantine text adds pneumati, ‘in spirit’, borrowed from 1:80 (so the King James Version: ‘waxed strong in spirit’).",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "The Son of God grows. Luke's description of a real childhood, with real development in wisdom, is part of the church's confession that Christ is truly human."
+        }
+      ],
+      "parallels": ["Matthew 2:13-23"],
+      "refs": ["Luke 1:80", "Luke 2:52", "1 Samuel 2:21", "Hebrews 5:8"]
+    },
+    {
+      "v": "41-42",
+      "context": "The one story of Jesus' boyhood in the canonical Gospels begins with a family habit: the annual Passover in Jerusalem. At twelve, Jesus goes up with them.",
+      "grammar": "Eporeuonto ... kat' etos, ‘they used to go every year’, is a customary imperfect. Anabainontōn autōn, ‘as they were going up’, is a genitive absolute. Kata to ethos tēs heortēs, ‘according to the custom of the feast’, uses ethos, a Luke favorite for customary practice (1:9, 22:39).",
+      "words": ["G4198", "G1118", "G2094", "G1859", "G3957", "G1427", "G0305", "G1485"],
+      "history": "The Law required men to appear before the LORD at three festivals each year (Exodus 23:14-17, Deuteronomy 16:16); Mary's going too shows the family's devotion, since women were not obligated. The Mishnah says a boy becomes obligated to the commandments at thirteen (m. Avot 5:21), and the bar mitzvah ceremony is much later. Josephus says Samuel began to prophesy when he had completed his twelfth year (Antiquities 5.348), which may make twelve a resonant age for Luke's readers.",
+      "theology": [
+        {
+          "id": "worship",
+          "note": "Jesus is raised within Israel's yearly rhythm of worship. His later Passover in Jerusalem (22:7-20) will give the feast its fulfillment."
+        }
+      ],
+      "refs": ["Deuteronomy 16:16", "Exodus 23:14-17", "1 Samuel 1:3", "Luke 22:7-15"]
+    },
+    {
+      "v": "43-45",
+      "context": "After the festival the parents start home, assuming Jesus is in the traveling group. After a day they look for him and, not finding him, return to Jerusalem.",
+      "grammar": "Teleiōsantōn tas hēmeras, ‘when they had completed the days’, suggests the full seven days of Passover and Unleavened Bread. Hupemeinen Iēsous ho pais, ‘the boy Jesus stayed behind’: pais can mean child or servant, and here stresses his youth. Sunodia (‘traveling company’) is a caravan of pilgrims. Anezētoun (‘they began looking’) is an imperfect, and anazētountes (‘searching’) repeats it, stressing anxious searching.",
+      "words": ["G5048", "G5278", "G3816", "G1097", "G3543", "G4923", "G0327", "G4773", "G2147"],
+      "text": "The earliest manuscripts read ‘his parents did not know’; the Byzantine text has ‘Joseph and his mother did not know’, the same kind of change as in verse 33.",
+      "refs": ["Luke 2:33", "Psalm 122:1-4", "Psalm 84:1-2"]
+    },
+    {
+      "v": "46-47",
+      "context": "After three days the parents find him in the temple courts among the teachers, listening and asking questions. Everyone is astonished at his understanding.",
+      "grammar": "Meta hēmeras treis (‘after three days’) probably counts the day out, the day back, and the day of searching; some interpreters, among them René Laurentin, have heard an anticipation of the resurrection on the third day, though Luke's usual phrase for that is ‘on the third day’. Kathezomenon en mesō tōn didaskalōn, akouonta ... kai eperōtōnta, ‘sitting among the teachers, listening and asking’, portrays a pupil's posture, not a boy lecturing his elders, however later art imagined it. Existanto (‘they were astounded’) is a strong verb of amazement, and sunesis (‘understanding’) is insight.",
+      "words": ["G5140", "G2147", "G2411", "G2516", "G1320", "G0191", "G1905", "G1839", "G4907", "G0612"],
+      "history": "Teachers of the Law held sessions in the temple courts, and the Babylonian Talmud recalls that on Sabbaths and festivals the court sat on the temple terrace (b. Sanhedrin 88b). The Infancy Gospel of Thomas, a second-century collection of stories about Jesus' childhood, retells this episode (chapter 19) with the boy silencing the elders, which shows how quickly the restrained account was embellished.",
+      "theology": [
+        {
+          "id": "wisdom",
+          "note": "Jesus' wisdom is shown in listening and asking as well as answering. The verse presents a real human learning, the growth verse 52 describes."
+        }
+      ],
+      "refs": ["Luke 2:52", "Luke 20:39-40", "Isaiah 11:2", "Psalm 119:99"]
+    },
+    {
+      "v": "48",
+      "context": "Mary's words are a rebuke full of fear. She speaks of ‘your father and I’, and Jesus' answer will turn on the word ‘father’.",
+      "grammar": "Exeplagēsan (‘they were astonished’) describes the parents' shock. Teknon (‘child’) is affectionate. Ti epoiēsas hēmin houtōs, ‘why have you treated us like this?’, echoes accusing questions in the Old Testament (Genesis 12:18). Ho patēr sou kagō, ‘your father and I’, is ordinary speech. Odunōmenoi (‘in anguish’) is from odunaō, used of the rich man's torment in the flames (16:24-25) and of the Ephesian elders' grief at Paul's departure (Acts 20:38): the BSB's ‘anxiously’ is mild.",
+      "words": ["G1605", "G5043", "G3962", "G3600", "G2212"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The holy family knows fear, misunderstanding, and rebuke. Luke does not hide the strain that Jesus' vocation places on his parents, a strain he will name later (8:19-21, 14:26)."
+        }
+      ],
+      "refs": ["Luke 8:19-21", "Luke 16:24", "Acts 20:38", "John 2:4"]
+    },
+    {
+      "v": "49-50",
+      "context": "Jesus' first words in Luke are two questions, and the second names God as ‘My Father’. His parents do not understand. The boy's self-understanding outruns theirs.",
+      "grammar": "En tois tou patros mou is literally ‘in the things of my Father’. A neuter plural article with a genitive is a Greek idiom attested in papyri and literature for ‘at the house of’ someone, so most modern versions read ‘in my Father's house’, meaning the temple. The King James Version's ‘about my Father's business’ takes it as ‘the affairs of my Father’, which the grammar also allows. Dei (‘it is necessary’, ‘I had to’) is Luke's word for divine necessity, used of Jesus' preaching (4:43), suffering (9:22), and rising (24:7). Mary's ‘your father’ and Jesus' ‘My Father’ stand side by side. Ou sunēkan (‘they did not understand’) anticipates the disciples' failure to understand the passion predictions (9:45, 18:34).",
+      "words": ["G2212", "G1492I", "G3962", "G1163", "G4920", "G4487"],
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "A twelve-year-old calls God his Father in a unique sense and says he ‘must’ be in his house. The verse shows the Son's awareness of his relation to the Father within a truly human childhood."
+        },
+        {
+          "id": "temple",
+          "note": "The temple is ‘My Father's house’. Jesus' claim anticipates his cleansing of it (19:45-46), where he calls it ‘My house’, quoting Isaiah."
+        }
+      ],
+      "refs": ["John 2:16", "Luke 4:43", "Luke 9:22", "Luke 24:7", "Luke 18:34"]
+    },
+    {
+      "v": "51-52",
+      "context": "Jesus goes home and lives in submission to his parents. Mary keeps these things in her heart, and a final summary covers the silent years until his public ministry.",
+      "grammar": "Ēn hupotassomenos autois, ‘he was being subject to them’, is a periphrastic imperfect of lasting obedience, the fifth commandment kept by the Son who has just spoken of his Father. Dietērei (‘she kept carefully’) intensifies sunetērei in verse 19. In verse 52, proekopten (‘he kept advancing’) is imperfect. Hēlikia can mean ‘age’ or ‘stature’ (it clearly means stature of Zacchaeus in 19:3), and either fits. Chariti para theō kai anthrōpois, ‘in favor with God and men’, echoes both 1 Samuel 2:26 and Proverbs 3:4.",
+      "words": ["G2597", "G5293", "G1301", "G4298", "G4678", "G2244", "G5485"],
+      "history": "The verse was central in the fourth-century debates about Christ. Arian writers cited it to argue that one who grows cannot be fully God. Athanasius (Against the Arians 3.51-53) answered that the growth belongs to his human nature, in which the Word truly shared, so the verse shows the reality of the incarnation rather than denying Christ's deity. The later Chalcedonian definition (AD 451) confessed Christ in two natures, fully divine and fully human, which gives this verse room to mean what it says.",
+      "theology": [
+        {
+          "id": "incarnation",
+          "note": "Luke says plainly that Jesus grew in wisdom. The church's confession that he is true God does not erase the verse; it affirms that he had a real human mind that learned."
+        },
+        {
+          "id": "family",
+          "note": "The Son of God spends his youth obeying his parents in a village home. Ordinary family life is where he grows in favor with God."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "1 Samuel 2:26",
+          "note": "The boy Samuel, serving at the sanctuary at Shiloh, grew in stature and in favor with the LORD and with men. Luke's summary follows it closely and completes the parallel between the birth stories and Samuel's: a barren mother's song, a child given to God, growth at the sanctuary. Proverbs 3:4 in the Septuagint promises favor before the Lord and men to one who keeps wisdom."
+        }
+      ],
+      "refs": ["1 Samuel 2:26", "Proverbs 3:4", "Luke 2:19", "Hebrews 2:17", "Hebrews 5:8"]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "After the seventh trumpet and the glimpse of the ark in the heavenly temple (11:19), John sees the first of three signs in chapters 12 to 15. The woman is introduced by her clothing before anything is said of what she does, and every item of it is drawn from the sky: sun, moon, and stars. The next verse turns from her splendor to her pain.",
+      "grammar": "Ōphthē (\"appeared\") is an aorist passive of horaō, literally ‘was seen’, the verb the Septuagint uses for God's appearing to the patriarchs; it presents the vision as something shown, not invented. Sēmeion mega, ‘a great sign’, marks what follows as symbolic: it points beyond itself. Peribeblēmenē is a perfect participle, ‘having been clothed’, describing a settled state rather than an act of dressing. Her crown is a stephanos, the wreath of victory or honor, which Revelation gives to the faithful (2:10, 4:4); the dragon in verse 3 wears diadēmata, the royal crowns of claimed sovereignty. The two words set honor given against power seized.",
+      "words": ["G3700H", "G4592", "G4016", "G4735"],
+      "history": "The woman has been identified three ways since the early church. Hippolytus of Rome, in his treatise On Christ and Antichrist (early third century), read her as the church, which continually brings forth Christ. The earliest surviving Greek commentary on Revelation, by Oecumenius (sixth century), read her as Mary, the mother of the Lord, and that reading shaped Catholic and Orthodox devotion; the Roman Catholic lectionary reads verses 1 to 6 on the feast of the Assumption (15 August). Protestant and many modern commentators have tended to read her as the messianic community, Israel and then the church.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The twelve stars tie the woman to the twelve tribes, and the heavenly clothing shows how God sees his people even while, on earth, they are in labor, hunted, and hidden. Her glory is given, not earned: she is clothed with it."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 37:9",
+          "note": "In Joseph's second dream the sun, the moon, and eleven stars bow down to him; Jacob at once reads the sun and moon as himself and Joseph's mother and the stars as the brothers. The Hebrew and the Septuagint agree closely. John's figure wears twelve stars, Joseph included, so the image stands for the whole family of Israel. The Old Testament setting supplies the identity; Revelation supplies the new event, the birth of the Messiah from that people."
+        }
+      ],
+      "refs": ["Genesis 37:9-10", "Song of Solomon 6:10", "Isaiah 60:19-20", "Revelation 2:10"]
+    },
+    {
+      "v": "2",
+      "context": "The splendid figure of verse 1 is in labor and crying out. The contrast between glory and agony is the point: the people of God bring forth the Messiah through suffering, and the dragon of verse 3 is waiting.",
+      "grammar": "En gastri echousa, ‘having in the womb’, is the standard Greek idiom for pregnancy, used in the Septuagint of Isaiah 7:14. The three participles and the main verb are all present tense (krazei, ‘she cries out’; ōdinousa, ‘in labor’; basanizomenē, ‘in torment’), so the scene is held in the moment of crisis. Basanizō is striking: elsewhere in Revelation it names torment inflicted as judgment (9:5, 14:10, 20:10). Here the same verb describes the woman's birth pangs, the suffering of the righteous rather than of the condemned.",
+      "words": ["G1064", "G2896", "G5605", "G0928H"],
+      "history": "The picture of the faithful community in labor was already used in the Judaism of John's day. In one of the Thanksgiving Hymns from Qumran (1QHa 11, in the older numbering 1QH 3), the speaker compares his distress to a woman in her first childbirth, bringing forth a male child through the breakers of death. The image of Zion in labor was common coin, and John's hearers would have recognized a people, not only a single mother.",
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The Messiah comes into the world through the pain of God's people. The verse places suffering inside God's purposes from the start of the story, not as an interruption of it."
+        }
+      ],
+      "refs": ["Isaiah 26:17-18", "Isaiah 66:7-9", "Micah 4:9-10", "John 16:21", "Galatians 4:19"]
+    },
+    {
+      "v": "3-4",
+      "context": "A second sign answers the first. The dragon's first act is a display of cosmic power, sweeping stars from the sky; his second is to take up position in front of the woman, waiting for the child. The enemy's whole aim, in this chapter, is the Messiah.",
+      "grammar": "The dragon is purros, ‘fiery red’, the color of the second horseman who takes peace from the earth (6:4). He has seven diadēmata, royal crowns, on his heads, a claim to rule that the beast of 13:1 will copy. Surei, ‘drags’, is present tense, a vivid present in the middle of a past-tense vision. Hestēken is a perfect, ‘has taken his stand and stays there’: the dragon is posted, not passing by. The purpose clause ends with the verb kataphagē, ‘he may devour’, a strong compound of esthiō; the same verb returns in 20:9 when fire from heaven devours the armies that surround the saints, so the devourer is finally devoured.",
+      "words": ["G1404", "G4450", "G1238", "G4951", "G2476", "G2719"],
+      "history": "Many readers have taken the third of the stars as angels who fell with Satan. That reading entered popular imagination through John Milton's Paradise Lost (1667), where Satan draws a third part of heaven's host after him in rebellion. The text itself says only that the stars are thrown to the earth; the one clear background, Daniel 8:10, is about a persecuting king rather than a fall of angels.",
+      "ot": [
+        {
+          "ref": "Daniel 8:10",
+          "note": "In Daniel's vision the little horn, Antiochus IV Epiphanes (who ruled 175 to 164 BC), grows up to the host of heaven and throws some of the host and of the stars down to the earth and tramples them. The Septuagint uses the same verb for throwing (ballō) that John uses here. The Old Testament picture is of an arrogant ruler assaulting heaven itself; John gives the same gesture to the power behind all such rulers."
+        }
+      ],
+      "refs": ["Daniel 7:7", "Daniel 8:10", "Matthew 2:13-16", "Revelation 13:1"]
+    },
+    {
+      "v": "5",
+      "context": "The whole earthly life of Jesus is compressed into a birth and an ascension. The dragon's waiting in verse 4 comes to nothing: the child is born and snatched out of his reach to the throne of God.",
+      "grammar": "Huion arsen, ‘a son, a male’, is grammatically odd, since arsen is neuter while huion is masculine. The phrase echoes the Septuagint of Isaiah 66:7, where Zion ‘gave birth to a male’ (eteken arsen) before her labor pains came, and the repetition makes the child's identity emphatic. Mellei poimainein, ‘is about to shepherd’, puts the rule in the future: he is destined for it. Hērpasthē, an aorist passive of harpazō, ‘was snatched up’, is a divine passive: God is the one who takes him. Paul uses the same verb of believers being caught up to meet the Lord (1 Thessalonians 4:17).",
+      "words": ["G5207", "G0730", "G3195", "G4165", "G4464", "G0726"],
+      "text": "Because arsen is neuter, a number of later manuscripts correct it to the masculine arrena. The older, harder reading is almost certainly original, and it is the one printed by the critical editions.",
+      "theology": [
+        {
+          "id": "exaltation",
+          "note": "The verse passes straight from birth to the throne, so that the ascension becomes the answer to the dragon's threat. Christ's exaltation to God's throne is the event that decides the war the rest of the chapter describes."
+        },
+        {
+          "id": "messiah",
+          "note": "By quoting Psalm 2, the verse names the child as the anointed king whom the nations rage against and whom God installs on Zion. His rule over the nations is still future in the verse, and Revelation 19:15 shows it arriving."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Psalm 2:9",
+          "note": "The Hebrew of Psalm 2:9 reads teroem beshevet barzel, ‘you will break them with a rod of iron’, from the verb raa, to smash. The Septuagint translators read the same consonants as from raah, to shepherd, and rendered poimaneis autous en rhabdō sidēra, ‘you will shepherd them with an iron rod’. Revelation follows the Greek wording here and in 2:27 and 19:15. The psalm's setting is the coronation of David's heir, whom the nations resist in vain; John applies it to Jesus at his ascension, when he takes his place on the throne."
+        }
+      ],
+      "refs": ["Psalm 2:7-9", "Isaiah 66:7", "Revelation 2:27", "Revelation 19:15", "Acts 1:9-11"]
+    },
+    {
+      "v": "6",
+      "context": "The woman escapes to the wilderness. The verse anticipates the fuller account in verses 13 to 16, which resumes after the war in heaven; John tells the outcome first and the explanation after.",
+      "grammar": "Hētoimasmenon apo tou theou is a perfect passive participle, ‘prepared by God’ and ready in advance: the place of refuge exists before the flight. Trephōsin, ‘they may nourish her’, is a third person plural with no stated subject, a Semitic way of expressing an action whose agent is left unnamed, much like an English passive (the BSB renders it \"to be nourished\"). The 1,260 days equal forty-two months of thirty days, or three and a half years, the same span given to the two witnesses (11:3) and the trampling of the holy city (11:2).",
+      "words": ["G2048", "G2090", "G5142", "G2250"],
+      "history": "Some interpreters, especially those who read Revelation against the events of the 60s, connect the woman's flight with a tradition recorded by Eusebius (Church History 3.5.3): before the Roman siege of Jerusalem in AD 70, the Christians of the city were warned by a revelation and moved to Pella, east of the Jordan. Most commentators treat the wilderness here as a symbol with deeper roots, the place where God fed Israel after the exodus and fed Elijah when he fled from Jezebel.",
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The wilderness is a place of danger, but God has prepared it in advance and feeds his people there. The verse joins exposure and protection: the woman is not removed from the world, she is kept in it."
+        }
+      ],
+      "refs": ["Exodus 16:35", "1 Kings 17:2-6", "1 Kings 19:3-8", "Hosea 2:14", "Revelation 11:2-3"]
+    },
+    {
+      "v": "7-8",
+      "context": "The scene shifts from earth to heaven. The dragon's attempt on the child has failed, and now he loses his place above. Michael, not Christ, fights the battle, which fits the chapter's logic: the decisive victory has already been won by the Lamb (verse 11), and the angelic war carries out its result.",
+      "grammar": "The Greek of verse 7 is famously irregular: literally ‘Michael and his angels to make war with the dragon’, a nominative subject with an articular infinitive (tou polemēsai) and no finite verb. R. H. Charles, in his commentary of 1920, explained it as a Hebrew construction (lamed with the infinitive, expressing what had to be done) carried into Greek. Verse 8 answers with ouk ischusen, ‘he was not strong enough’, and oude topos heurethē, ‘nor was a place found’. The last phrase repeats almost word for word Theodotion's Greek of Daniel 2:35, where the statue of the empires is struck by the stone and ‘no place was found for them’. The same words return in 20:11 for the old heaven and earth.",
+      "words": ["G4171", "G3413", "G4170", "G2480", "G5117", "G2147"],
+      "history": "Michael, whose name means ‘Who is like God?’, is the angelic prince who stands for Israel in Daniel (10:13, 10:21, 12:1). In the War Scroll from Qumran (1QM 17:6-8), God promises to exalt the authority of Michael among the heavenly beings in the final battle. Jude 9 names him archangel. Revelation keeps him in a supporting role: he wins in heaven because of what the Lamb has done on earth.",
+      "theology": [
+        {
+          "id": "angels",
+          "note": "The angels fight on God's side, and their victory is real but derivative. The verse shows the unseen dimension of the church's conflict without making angels the center; the hymn that follows credits the victory to the blood of the Lamb."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Daniel 12:1",
+          "note": "In the Hebrew, Michael ‘the great prince who stands over the sons of your people’ arises at a time of distress unlike any before, and at that time the people written in the book are delivered. The Septuagint and Theodotion both keep Michael's name and role. John draws on this passage for Michael's appearance at the decisive crisis and, later, for the book in which the saved are written (13:8, 20:12)."
+        }
+      ],
+      "refs": ["Daniel 10:13", "Daniel 10:21", "Jude 1:9", "Luke 10:18", "Daniel 2:35"]
+    },
+    {
+      "v": "9",
+      "context": "The dragon is thrown down, and John now names him with a string of titles that gather up the Bible's whole account of evil. This is the clearest statement anywhere in Scripture that the serpent of Eden and the devil are one.",
+      "grammar": "Eblēthē, ‘was thrown’, is an aorist passive of ballō, and it comes three times in one verse. The dragon who threw a third of the stars to the earth (verse 4, ebalen) is now himself thrown. The titles stand in apposition, one after another: ho ophis ho archaios, ‘the serpent, the ancient one’; ho kaloumenos diabolos, ‘the one called devil’, the Greek word that translates the Hebrew satan in the Septuagint of Job and Zechariah; and ho Satanas, the Hebrew name brought over into Greek. The last title, ho planōn, is a present participle used as a noun: ‘the deceiver’, one whose ongoing work is to mislead the oikoumenē, the whole inhabited world.",
+      "words": ["G0906G", "G3789", "G0744", "G1228", "G4567", "G4105", "G3625"],
+      "history": "Genesis 3 never calls the serpent Satan. The identification grew in Jewish reflection before the New Testament: the Wisdom of Solomon, written in Greek probably in the first century BC, says that death entered the world through the devil's envy (Wisdom 2:24). Paul assumes the link (Romans 16:20; 2 Corinthians 11:3), and Revelation states it outright here and in 20:2.",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse names deception as the devil's characteristic work, from Eden to the whole world. Sin in Revelation is not merely wrongdoing but believing a lie about God and about power, which is why the book so often speaks of deceiving the nations."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 3:1",
+          "note": "The Hebrew nachash, ‘serpent’, becomes ophis in the Septuagint, the same word John uses. Genesis describes the serpent as more crafty than any beast of the field and shows it deceiving the woman (3:13, where Eve says the serpent deceived her). John's title ‘the ancient serpent’ reaches back to that moment, and his word ‘deceiver’ picks up Eve's confession."
+        }
+      ],
+      "refs": ["Genesis 3:1-15", "John 8:44", "Romans 16:20", "2 Corinthians 11:3", "Revelation 20:2-3"]
+    },
+    {
+      "v": "10",
+      "context": "A loud voice in heaven interprets what John has just seen. The expulsion of the dragon is not an isolated angelic event; it is the arrival of God's salvation and kingdom, and it means the accuser can no longer prosecute believers before God.",
+      "grammar": "Arti egeneto, ‘now has come’: the adverb arti fixes the moment, and the hymn treats it as the turning point of history. The four nouns (salvation, power, kingdom, authority) belong to \"our God\" and to \"His Christ\", a phrase from Psalm 2:2, the same psalm quoted in verse 5. Katēgōr, ‘accuser’, is a rare form of the usual katēgoros; it appears as a loanword in rabbinic Hebrew, qategor, and the Mishnah (m. Avot 4:11) contrasts the advocate a person gains by keeping a commandment with the accuser gained by a transgression. Ho katēgorōn, a present participle, and \"day and night\" describe prosecution that never stopped until now.",
+      "words": ["G0737", "G4991", "G0932", "G5547", "G6051", "G2723"],
+      "text": "Codex Alexandrinus reads the unusual form katēgōr, which the critical editions print; most other manuscripts have the ordinary katēgoros. A copyist was more likely to normalize the rare word than to introduce it, so katēgōr is probably original. The meaning is the same.",
+      "theology": [
+        {
+          "id": "justification",
+          "note": "The accuser's work was legal: to charge God's people before God. His expulsion means that no charge against them can stand, which is Paul's argument in Romans 8:33-34. The verse pictures justification from the courtroom's side: the prosecutor has been thrown out."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Zechariah 3:1-2",
+          "note": "In Zechariah's vision the high priest Joshua stands before the angel of the LORD in filthy garments, and hassatan, ‘the accuser’, stands at his right hand to accuse him. The LORD rebukes the accuser, and Joshua's filthy garments are removed. The Septuagint renders the title ho diabolos. John's heavenly courtroom draws on this scene and on Job 1 and 2, but where Zechariah's accuser is rebuked, Revelation's is expelled."
+        }
+      ],
+      "refs": ["Job 1:9-11", "Zechariah 3:1-2", "Romans 8:33-34", "Psalm 2:2", "Revelation 11:15"]
+    },
+    {
+      "v": "11",
+      "context": "The hymn names what defeated the accuser: the Lamb's blood and the believers' testimony. The victory Michael won in heaven (verses 7 to 9) is here traced to the cross and to faithful witness on earth, which is the chapter's interpretive key.",
+      "grammar": "Dia to haima, ‘because of the blood’, uses dia with the accusative, which normally gives the ground or reason (‘on account of’) rather than the means (which would be dia with the genitive). The saints conquered on the basis of what the Lamb's blood achieved, and on the basis of their own testimony. Enikēsan, ‘they conquered’, answers the promises to ‘the one who conquers’ in all seven letters (chapters 2 and 3). Ouk ēgapēsan tēn psuchēn autōn achri thanatou, literally ‘they did not love their life up to death’: they did not hold life so dear that they would deny Christ to keep it.",
+      "words": ["G3528", "G0129G", "G0721", "G3141", "G0025", "G5590H", "G2288"],
+      "theology": [
+        {
+          "id": "atonement",
+          "note": "The ground of victory over Satan is the Lamb's blood. The accuser loses because Christ's death has answered the charges he brings; the verse ties the atonement directly to the defeat of evil, not only to the forgiveness of sins."
+        },
+        {
+          "id": "perseverance",
+          "note": "The saints' part is testimony that holds even to death. Revelation's picture of perseverance is not survival but faithfulness: they conquer by refusing to love their lives more than their Lord."
+        }
+      ],
+      "refs": ["Revelation 5:9", "Revelation 2:10", "John 12:25", "Mark 8:35", "1 John 5:4-5"]
+    },
+    {
+      "v": "12",
+      "context": "The hymn ends by dividing the universe into two responses. Heaven rejoices because the dragon is gone; the earth and sea are warned because he has arrived there, furious. This verse explains why the church suffers after Christ's victory.",
+      "grammar": "Dia touto, ‘because of this’, draws the conclusion from verses 10 and 11. Euphrainesthe is a present imperative, a call to go on rejoicing. The heavenly beings are hoi en autois skēnountes, ‘those who tabernacle in them’: skēnoō, to dwell in a tent, is the verb John's Gospel uses for the Word dwelling among us (John 1:14), and Revelation reserves it for those who dwell with God (7:15, 13:6, 21:3). Ouai, ‘woe’, takes the accusative here, as it does in 8:13. The final participle, eidōs, a perfect of oida, means ‘knowing’: the devil's rage is the rage of someone who has read the clock. Oligon kairon, ‘a short time’, is the same span that verses 6 and 14 measure in days and ‘times’.",
+      "words": ["G2165", "G4637", "G3759", "G2372", "G6063", "G2540"],
+      "theology": [
+        {
+          "id": "suffering",
+          "note": "The church's suffering is explained here as the fury of a defeated enemy with little time left. The verse does not make suffering less painful, but it denies that suffering means the enemy is winning."
+        }
+      ],
+      "refs": ["Isaiah 49:13", "Psalm 96:11", "Revelation 8:13", "Revelation 13:6", "1 Peter 5:8-10"]
+    },
+    {
+      "v": "13-14",
+      "context": "The narrative resumes from verse 6. Thrown to earth, the dragon turns on the woman, and God gives her the means to escape. The two verses explain the flight already announced.",
+      "grammar": "Ediōxen, from diōkō, can mean ‘pursued’ or ‘persecuted’, and both senses fit: the church's experience of persecution is the dragon's pursuit. Edothēsan, ‘were given’, is another divine passive; the wings come from God. The period kairon kai kairous kai hēmisu kairou, ‘a time, and times, and half a time’, is taken word for word from Daniel's Greek, and it equals the 1,260 days of verse 6. Apo prosōpou tou opheōs, ‘from the face of the serpent’, is a Hebrew-style expression for ‘out of the serpent's presence’, and the switch from ‘dragon’ to ‘serpent’ recalls Genesis 3 just before the next verse's flood from its mouth.",
+      "words": ["G1377", "G4420", "G0105", "G5142", "G2540", "G2255", "G3789"],
+      "theology": [
+        {
+          "id": "church",
+          "note": "The woman, now clearly the persecuted community after the Messiah's ascension, is carried as Israel was carried out of Egypt. The church lives through a limited season of pursuit, and God sets both its length and its protection."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Exodus 19:4",
+          "note": "At Sinai God tells Israel that he bore them on eagles' wings and brought them to himself, and Deuteronomy 32:11 pictures the eagle bearing its young on its pinions. The Septuagint of Exodus 19:4 speaks of ‘wings of eagles’ (pterugōn aetōn). John's single great eagle echoes the exodus: the church's escape is a new deliverance through the wilderness."
+        },
+        {
+          "ref": "Daniel 7:25",
+          "note": "The Aramaic of Daniel 7:25 gives the little horn power over the holy ones for ‘a time, times, and half a time’, and Daniel 12:7 repeats the phrase in Hebrew. Theodotion's Greek of both verses has the same words John uses. In Daniel the period measures the persecution under Antiochus IV; Revelation takes it as the standard length of the church's trial, limited and set by God."
+        }
+      ],
+      "refs": ["Exodus 19:4", "Deuteronomy 32:10-11", "Isaiah 40:31", "Daniel 12:7"]
+    },
+    {
+      "v": "15-16",
+      "context": "The serpent tries a flood; the earth itself takes the woman's side. Creation fights for God's people, as it did at the Red Sea and in the wilderness.",
+      "grammar": "Potamophorēton, ‘river-borne’ or ‘swept away by a river’, is a rare compound found nowhere else in the New Testament; with poiēsē it means ‘to make her carried off by the current’. The flood comes ek tou stomatos, ‘out of the mouth’, and the earth answers by opening its own stoma, ‘mouth’, to swallow it (katepien). The matching mouths are deliberate. Since the serpent's weapon in Eden was words, some interpreters (G. K. Beale among them, in his 1999 commentary) take the flood as a torrent of lies and false teaching aimed at the church; others read it simply as a picture of overwhelming persecution.",
+      "words": ["G4215", "G4216", "G4750", "G0997", "G0455", "G2666"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "The earth ‘helped the woman’. God's protection is carried out through his creation, which in the end refuses to cooperate with evil. The verse gives no timetable, but it assures the church that the deluge aimed at it will not finally carry it away."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Numbers 16:32",
+          "note": "In the rebellion of Korah the earth ‘opened its mouth’ and swallowed the rebels; the Hebrew phrase is the same one Exodus 15:12 uses when the earth swallows Pharaoh's army. The Septuagint of Numbers 16:32 has ēnoichthē hē gē, ‘the earth was opened’. John reverses the direction: in Numbers the earth swallows God's opponents; here it swallows the opponent's weapon to save God's people."
+        }
+      ],
+      "refs": ["Exodus 15:12", "Psalm 124:2-5", "Isaiah 43:2", "Isaiah 59:19"]
+    },
+    {
+      "v": "17",
+      "context": "Frustrated in his pursuit of the woman, the dragon turns on \"the rest of her children\", believers on earth, and takes his stand by the sea, from which the beast will rise in 13:1. The verse is a hinge between the dragon's story and the beasts' story.",
+      "grammar": "Ōrgisthē, an aorist passive of orgizō, ‘was enraged’, marks the turn from pursuit to war. The rest of her children are literally tōn loipōn tou spermatos autēs, ‘the rest of her seed’. Sperma is the word the Septuagint uses in Genesis 3:15 for the woman's offspring set against the serpent's, and John's phrase reaches back to that promise. The two present participles describe them: tērountōn tas entolas tou theou, ‘who keep the commandments of God’, and echontōn tēn marturian Iēsou, ‘who hold the testimony of Jesus’. That last genitive can mean the testimony about Jesus or the testimony Jesus himself gave; Revelation 19:10 and 1:2 suggest both, the witness Jesus bore which his people go on bearing.",
+      "words": ["G3710", "G3062", "G4690G", "G5083G", "G1785", "G3141"],
+      "text": "The last sentence of the BSB's verse 17 is 12:18 in most modern Greek editions. The oldest witnesses (among them Papyrus 47, Codex Sinaiticus, and Codex Alexandrinus) read estathē, ‘he stood’, so the dragon waits on the shore. Later manuscripts, followed by the King James Version, read estathēn, ‘I stood’, and attach it to 13:1, so that John stands on the sand as he watches the beast rise. The difference is a single letter; the earlier reading links the dragon directly to the beast he summons.",
+      "theology": [
+        {
+          "id": "church",
+          "note": "The woman's other children are defined by two marks: obedience to God's commandments and loyalty to Jesus' testimony. The church in Revelation is the offspring of Genesis 3:15, in the line of the one who crushes the serpent and therefore the target of his hatred."
+        }
+      ],
+      "ot": [
+        {
+          "ref": "Genesis 3:15",
+          "note": "The Hebrew promises enmity between the serpent and the woman, and between the serpent's zera, ‘seed’, and hers; the Septuagint renders zera as sperma. The offspring in Genesis is both collective and individual, and Revelation keeps both: the male child of verse 5 is the one who defeats the serpent, and the rest of her seed are those who belong to him."
+        }
+      ],
+      "refs": ["Genesis 3:15", "Romans 16:20", "Revelation 14:12", "Revelation 19:10", "Revelation 13:1"]
+    }
+  ]
+}

@@ -1,81 +1,81 @@
 {
   "slug": "marriage",
   "title": "Eight Weeks Toward Each Other",
-  "subtitle": "An eight week guided plan for marriage from James Bell. One focus, one small daily practice, one reading, one tool, and one honest question each week.",
-  "intro": "This is an eight week walk toward the person you married. Not a program to fix them, and not a list of techniques. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one question worth answering honestly. The aim is not a perfect marriage in two months. The aim is a direction, two people turning toward each other again after years of turning away.\n\nIt is not a cure, and it is not a substitute for a counselor, a pastor, or the people who actually know the two of you. Walk it imperfectly. A missed week is not failure, you just pick it back up where you left it. This is not a scorecard. Grace is the ground the whole thing stands on, which is good, because grace is the ground the marriage stands on too.",
-  "careNote": "Where there is betrayal, abuse, or a wall neither of you can move, see a licensed marriage counselor, and where there is abuse, safety comes first, not this plan.",
+  "subtitle": "An eight week plan from James Bell for a marriage gone cold, loud, or broken by betrayal. Safety first, honest about what we ask marriage to carry, and slow to rebuild trust.",
+  "intro": "This is an eight week walk for a marriage that has gone cold, loud, or broken by betrayal, for a husband or a wife who wants to turn toward the other again, whether or not the other walks it too. Each week holds one focus, one small daily practice, one thing to read, one tool to use, and one honest question. It moves from naming what kind of trouble you are in, through the old habit of hiding and what we have asked marriage to carry, to listening, the fight that keeps coming back, confession and the slow return of trust, closeness in ordinary weeks, and a promise looked at with clearer eyes. It is written for two people who are safe with each other. If you're afraid of your spouse, or someone at home hits, threatens, controls, or isolates you, presses you into sex, or uses Scripture to keep you quiet, set the plan aside and start with the first practice in week one. Nothing here asks you to stay in danger to keep a marriage together, and couples counseling isn't safe with an abusive partner.\n\nIt is not a cure, and it is not a substitute for a licensed counselor, a pastor, a doctor, or the people who know you both. It won't tell you whether your marriage can be saved; that question deserves more than a plan, and you shouldn't answer it alone. If your spouse won't walk it with you, walk it anyway. In a marriage that's troubled but safe, one person growing wiser can change the pattern between you. Walk it imperfectly. A missed week is not failure; you just pick it back up.",
+  "careNote": "If you're afraid of your spouse, start with the Domestic Violence Hotline on Find Help, not couples counseling. For betrayal or a fight that won't end, see a licensed counselor; for drinking, drugs, or gambling, a doctor or SAMHSA's helpline. If either of you talks of suicide or of hurting the other or the children, call or text 988, or 911 if anyone is in danger.",
   "weeks": [
     {
       "n": 1,
-      "focus": "An honest look",
-      "why": "You cannot move toward each other from a place you have not named. Most marriages drift not through one great betrayal but through a thousand small evasions. This week you stop evading. You look at what is actually there, together if you can, alone if you must.",
-      "practice": "Each day, write one sentence about the state of your marriage that you have not said out loud. Just one sentence. You do not have to show anyone yet.",
-      "read": { "label": "The Marriage page, start to finish", "href": "/marriage" },
-      "tool": { "label": "Take the Marriage Assessment, both of you if possible", "href": "/tools/marriage-assessment" },
-      "reflection": "What have I been pretending not to see in this marriage, and what has the pretending cost us?"
+      "focus": "What kind of trouble this is",
+      "why": "Marriage trouble isn't one thing, and the right first step for one kind can be the wrong step for another. For some couples it's distance: two people who have become roommates running a household. For others it's the same fight in a hundred costumes, or a betrayal that came to light, or drinking, drugs, gambling, or pornography crowding everything else out. An addiction has to be treated, not only prayed about, and a doctor or SAMHSA's helpline on Find Help can point you toward treatment. And some homes are more than troubled. If your spouse hits, chokes, threatens, or frightens you, controls the money, the phone, or the car, cuts you off from family and friends, presses you into sex, or uses Scripture and words like submission to keep you quiet, the problem isn't that you haven't loved well enough, and safety comes before anything else in this plan.",
+      "practice": "If you're afraid of your spouse, start here: call or text the National Domestic Violence Hotline listed on Find Help, even if you aren't sure it's abuse, from a phone your spouse can't check. An advocate can help you make a safety plan for you and any children; talk with one before you say anything about leaving, because leaving is often the most dangerous time, and call 911 if you're in danger now. If you're safe with each other, write one sentence a day about your marriage that you haven't said out loud, and keep it private.",
+      "read": { "label": "My marriage is falling apart, the care page this plan walks beside, with what to do first if you're afraid", "href": "/help/marriage" },
+      "tool": { "label": "The Marriage Health Self-Check, whose results open with a question about safety", "href": "/tools/marriage-assessment" },
+      "reflection": "What kind of trouble is our marriage in, named honestly, and am I safe at home?"
     },
     {
       "n": 2,
-      "focus": "Speaking and hearing",
-      "why": "Most couples do not have a love problem. They have a hearing problem. Words spoken in the same kitchen can land in two different countries, and until you relearn the slow work of listening, nothing else in this plan will hold.",
-      "practice": "Once a day, ask your spouse one question about their inner life, then listen for two full minutes without correcting, defending, or fixing. When they finish, say back what you heard.",
-      "read": { "label": "Friendship Against Isolation, because marriage is friendship before it is anything else", "href": "/life/friendship-against-isolation" },
-      "tool": { "label": "The Emotional Health tool, to name what you are carrying into the room", "href": "/tools/emotional-health" },
-      "reflection": "When my spouse talks, what am I usually doing instead of listening, and what am I afraid I would hear if I stopped?"
+      "focus": "The habit of hiding",
+      "why": "The first marriage in Scripture begins with a man and a woman who \"were both naked, and they were not ashamed\" (Genesis 2:25). One chapter later they are hiding among the trees, and when God asks what happened, the man answers, \"The woman whom You gave me, she gave me fruit from the tree, and I ate it\" (Genesis 3:12). Hiding and blaming are the oldest habits a marriage inherits, and the church has often made them worse. I'm a pastor, so this includes me: we let the Christian family become a kind of performance, and couples in trouble learned to smile through the lobby and come apart in the car. Trouble grows where no one is allowed to see it.",
+      "practice": "This week, tell one person what is really happening in your marriage: a friend, a pastor, or a counselor who will believe you and who wants good for you both, not someone who will feed your anger or pass the story along. If you're afraid at home, choose someone who will put your safety ahead of keeping the marriage together. If your spouse has told you not to tell anyone, notice that.",
+      "read": { "label": "How to Know When to Get Help, including what changes when there is abuse", "href": "/how-tos/marriage-how-to-know-when-to-get-help" },
+      "tool": { "label": "Genesis 3 in the Study Bible, where the first couple learns to hide and to blame", "href": "/study/bible/genesis/3" },
+      "reflection": "What am I hiding about our marriage, and from whom, and what has the hiding cost us?"
     },
     {
       "n": 3,
-      "focus": "Conflict handled, not avoided",
-      "why": "Conflict is not the enemy of a marriage. Unhandled conflict is. Couples who never fight are often couples who have quietly stopped hoping, and couples who fight to win are slowly losing each other. This week you learn to disagree in a way that moves you toward each other.",
-      "practice": "When tension rises this week, pause and name one thing that is true in your spouse's view before you state your own. Ten seconds of honesty before the argument begins.",
-      "read": { "label": "Return to the Marriage page and sit with what it says about conflict", "href": "/marriage" },
-      "tool": { "label": "The Conflict Guide, walk one live disagreement through it", "href": "/tools/conflict-guide" },
-      "reflection": "What do I do when conflict starts, attack, withdraw, or keep score, and where did I first learn to do that?"
+      "focus": "What we asked marriage to carry",
+      "why": "When a marriage is failing, the easiest explanation is that you married the wrong person. Yet marriages were breaking long before our age; the prophet Malachi told the men of Judah that the LORD had been \"a witness between you and the wife of your youth, against whom you have broken faith\" (Malachi 2:14). What our age adds is the hope that marriage will make us whole, a bond worth keeping for as long as it keeps fulfilling the two people in it. There is real good in insisting on love and consent, because older arrangements trapped many people, often women, in cruelty. But when a marriage exists to complete me, every hard season becomes a verdict on the whole marriage. No marriage can carry the weight of being someone's salvation.",
+      "practice": "Each day, write down one thing you have expected your spouse to give you that no person can give, such as your worth, your peace, or your whole happiness. Then name one ordinary thing you could give them today without being asked, and give it without announcing it. The practice holds even if you are walking these weeks alone.",
+      "read": { "label": "Why Do Marriages Drift Apart, and How Do You Stop It? On marriage as covenant rather than contract", "href": "/life/marriage-the-long-covenant" },
+      "tool": { "label": "Malachi 2 in the Study Bible, on broken faith and the wife of your youth", "href": "/study/bible/malachi/2" },
+      "reflection": "What have I asked my marriage to give me that only God can give, and what has that cost us both?"
     },
     {
       "n": 4,
-      "focus": "The long work of forgiveness",
-      "why": "Every marriage carries debts. Some are small and some have been compounding for years. Forgiveness is not pretending the debt never existed. It is deciding, daily, to stop making your spouse pay it.",
-      "practice": "Each day, name one specific thing you are holding against your spouse, then pray for them by name about that exact thing. Under five minutes. No announcing it, no expecting credit.",
-      "read": { "label": "The Lament page, because forgiveness begins with telling God the truth about the wound", "href": "/lament" },
-      "tool": { "label": "The Prayer Generator, for the days you have no words for what you are forgiving", "href": "/tools/prayer-generator" },
-      "reflection": "What am I still making my spouse pay for, and what would it cost me to cancel the debt?"
+      "focus": "Hearing before answering",
+      "why": "Two people can talk every day and not be heard for years. Words spoken in the same kitchen land in different places, and each of you answers the argument you expected instead of the person in front of you. The letter of James puts it plainly: \"Everyone should be quick to listen, slow to speak, and slow to anger\" (James 1:19), and nothing tests that like a kitchen at eleven at night. Listening is slower than talking and costs more, because it means letting your spouse finish before you defend yourself. If your spouse won't do this with you, you can still do it toward them, and one person listening can change the temperature of a home.",
+      "practice": "Once a day, ask your spouse one question about how they really are, then listen for two full minutes without correcting, defending, or fixing. When they finish, say back what you heard and ask whether you got it right. If honest conversation leaves you afraid of what your spouse will do, stop here and go back to week one.",
+      "read": { "label": "How to Love a Spouse Who Has Gone Cold, with what changes if there is abuse", "href": "/how-tos/marriage-how-to-love-a-cold-spouse" },
+      "tool": { "label": "The Prayer Generator's prayers before a hard conversation", "href": "/tools/prayer-generator" },
+      "reflection": "When my spouse talks, what am I usually doing instead of listening, and what am I afraid I would hear if I stopped?"
     },
     {
       "n": 5,
-      "focus": "Intimacy and friendship",
-      "why": "Most marriages do not die of hatred. They die of distance. Two people become roommates who manage logistics and call it a life together. Intimacy is rebuilt the same way it was first built, through unhurried attention with nothing else competing for it.",
-      "practice": "Spend ten minutes a day together with no screen, no task, and no agenda. Walk, sit on the porch, share coffee in silence if that is all you have. Let it be enough.",
-      "read": { "label": "The Marriage page once more, this time reading for delight rather than repair", "href": "/marriage" },
-      "tool": { "label": "The Verse Finder, look up what Scripture actually says about love that lasts", "href": "/tools/verse-finder" },
-      "reflection": "When did we last enjoy each other for no reason, and what have we allowed to take that place?"
+      "focus": "The fight that keeps coming back",
+      "why": "Some marriages are loud: the same argument about money, chores, or the children, with both of you keeping score. That is exhausting, and it is more fixable than it feels, because patterns can be unlearned. The letter to the Ephesians, written to people who belonged to one another, says, \"Do not let the sun set upon your anger, and do not give the devil a foothold\" (Ephesians 4:26-27). It doesn't forbid anger; it forbids letting anger settle in, where it hardens into bitterness. All of this assumes you're safe with each other. If your fights include threats, intimidation, breaking things, or any physical harm, that isn't a conflict to resolve. It's a safety problem, and week one comes first.",
+      "practice": "When an argument starts circling, stop and say you want to finish it well, then name a set time to come back to it, such as tomorrow at eight, and keep it. When you come back, one of you speaks while the other listens and says back what they heard before answering. Stay on one subject. If the fight leaves you afraid, set this aside and go back to week one.",
+      "read": { "label": "Marriage: A Bible Study on Covenant Love, session two, Conflict, Forgiveness, and the Long Obedience", "href": "/studyguides/marriage" },
+      "tool": { "label": "The Conflict Resolution Guide, five steps for people who are safe with each other", "href": "/tools/conflict-guide" },
+      "reflection": "What do I do when conflict starts, attack, withdraw, or keep score, and where did I first learn to do that?"
     },
     {
       "n": 6,
-      "focus": "A shared rhythm",
-      "why": "A marriage is not held together by feelings. It is held together by rhythms, the small repeated things two people do until the doing becomes who they are. Rest is part of this. A couple that never stops working never actually meets.",
-      "practice": "Choose one daily anchor you keep together, a table prayer, a short walk after dinner, ten quiet minutes before bed. Keep it every day this week, and guard one real block of rest together on the weekend.",
-      "read": { "label": "The Body and the Rhythms, on rest as something commanded rather than earned", "href": "/life/the-body-and-the-rhythms" },
-      "tool": { "label": "Family Devotions, build one simple shared rhythm of prayer for your home", "href": "/family/devotions" },
-      "reflection": "What rhythm has quietly shaped our marriage so far, and is it one we chose or one that chose us?"
+      "focus": "Confession, forgiveness, and trust",
+      "why": "If you've been hiding an affair, pornography, gambling, debt, or drinking, the hiding is its own betrayal. Proverbs is blunt: \"He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy\" (Proverbs 28:13). If you're the one betrayed, you aren't overreacting; the ground really did move. Forgiveness, trust, and reconciliation are three different things. Forgiveness starts with giving up the right to make your spouse pay. Trust is rebuilt by evidence over time, on the betrayed spouse's timetable, and reconciliation takes both of you. You can forgive and still not be ready to trust, no one owes anyone a quick recovery, and none of it ever requires staying within reach of harm.",
+      "practice": "If you've been hiding a sin, meet with a pastor or counselor this week to plan how to tell the whole truth at once and end what you've hidden, not only to unload your guilt. If you've been betrayed, write down what you would need to see, over time, before trust could return, and if anything you found involves someone under eighteen, report it to the police. If you're quietly preparing to get safe, keep that private and work it out with the Hotline.",
+      "read": { "label": "How Do You Heal After Betrayal by Someone Close? On forgiveness, reconciliation, and trust as three different things", "href": "/life/betrayal-and-broken-trust" },
+      "tool": { "label": "I can't forgive them, the care page on what forgiveness asks and what it never does", "href": "/help/cant-forgive" },
+      "reflection": "What am I hiding from my spouse or holding against them, and what would it take to bring it into the light?"
     },
     {
       "n": 7,
-      "focus": "Money together",
-      "why": "Money fights are almost never about money. They are about fear, control, childhood, and what each of you secretly believes will keep you safe. Until you can talk about money without flinching, a locked room remains in the middle of the house.",
-      "practice": "Each day, tell your spouse one true thing about money and you, a fear, a habit, something your parents did, something you regret. Small confessions, no lectures in return.",
-      "read": { "label": "Money and the Heart, on what spending reveals that words conceal", "href": "/life/money-and-the-heart" },
-      "tool": { "label": "The Financial Health tool, look at the numbers together without blame", "href": "/tools/financial-health" },
-      "reflection": "What does my handling of money say I actually trust, and what does it say to my spouse?"
+      "focus": "Turning toward each other again",
+      "why": "A marriage rarely comes apart in one night. More often two people drift apart by inches, trading schedules and calling it a life, and the quiet gets comfortable. Closeness is rebuilt the way it was first built, by unhurried attention with nothing else competing for it, and it usually returns in small steps before large ones. Money belongs in this week too, because it so often carries fear and family history, and a couple who can't talk about it keeps a locked room in the middle of the house. That conversation is for spouses who are safe with each other. If your spouse controls the money to control you, that is a safety matter, and week one comes first.",
+      "practice": "Spend ten minutes a day together with no screen, no task, and no agenda: a walk, the porch, coffee before work. Once this week, each of you tells the other one true thing about money and yourself, a fear, a habit, or something your parents did, and the other only listens. If your spouse won't join you, keep the ten minutes anyway and spend them praying for your spouse by name.",
+      "read": { "label": "How to Have the Money Conversation Without a War, with a word for anyone whose spouse is financially abusive", "href": "/how-tos/marriage-how-to-money-conversation" },
+      "tool": { "label": "A Weekend for Two, a marriage retreat guide to print, for couples who are safe with each other (PDF)", "href": "/downloads/workbooks/a-weekend-for-two-letter.pdf" },
+      "reflection": "When did we last enjoy each other for no reason, and what have we allowed to take its place?"
     },
     {
       "n": 8,
-      "focus": "Covenant renewed",
-      "why": "You did not promise to feel a certain way for the rest of your life. You promised to stay, to keep choosing this person when choosing them is hard. This last week is not a finish line. It is a renewal of the vow, with clearer eyes than you had at the altar.",
-      "practice": "Each day, thank God for one specific thing about your spouse, out loud or on paper. At the end of the week, tell them what made the list.",
-      "read": { "label": "The Discipleship page, because a covenant is a long obedience kept in ordinary days", "href": "/discipleship" },
-      "tool": { "label": "Retake the Marriage Assessment and compare it with week one", "href": "/tools/marriage-assessment" },
-      "reflection": "Knowing what these eight weeks have shown me, what am I willing to promise again, and what will keeping it require of me this year?"
+      "focus": "A promise seen with clearer eyes",
+      "why": "Scripture's word for marriage is covenant, a promise made before God to seek one person's good for life. That is sturdier than a feeling and more personal than a contract, which is why a marriage can outlast seasons when the feeling is gone, and why real repentance can carry it even through betrayal. It is also why abuse can't be treated as one more hard season to endure, because a promise to seek someone's good is broken, not tested, by the one who makes the other afraid. Whether a broken covenant ends a marriage is a question faithful churches answer differently, and the marriage care page sets out how. That it frees you to get safe is not in question, and separating to be safe is not a sin. This last week isn't a finish line. It is a look at what you promised, with clearer eyes than you had at the altar.",
+      "practice": "Each day, thank God for one specific thing about your spouse, out loud or on paper. At the end of the week, if you're safe with each other, tell your spouse what made the list, and choose together one practice from these weeks to keep, such as the ten minutes, a set time for hard conversations, or a weekly check-in.",
+      "read": { "label": "How to Have a Weekly Marriage Check-In, a habit to keep after these weeks, for couples who are safe with each other", "href": "/how-tos/marriage-how-to-weekly-check-in" },
+      "tool": { "label": "Retake the Marriage Health Self-Check and set it beside week one", "href": "/tools/marriage-assessment" },
+      "reflection": "Knowing what these weeks have shown me, what can I honestly promise now, and what would keeping it require of me?"
     }
   ]
 }

@@ -11,6 +11,7 @@
 import mysql from "mysql2/promise";
 import fs from "node:fs";
 import dotenv from "dotenv";
+import { essayDate, loadEssayShelf, loadTakenDown } from "./lib/shelf.mjs";
 
 dotenv.config();
 
@@ -23,7 +24,7 @@ const OUTPUT_PATH = "client/public/sitemap.xml";
 function loadStaticLibrary() {
   try {
     const raw = fs.readFileSync("content/static-library.generated.json", "utf8");
-    return JSON.parse(raw).map(r => ({ slug: r.slug, updatedAt: r.updatedAt }));
+    return JSON.parse(raw).map(r => ({ slug: r.slug, updatedAt: r.updatedAt, createdAt: r.createdAt, publishedAt: r.publishedAt }));
   } catch {
     return [];
   }
@@ -31,27 +32,75 @@ function loadStaticLibrary() {
 const STATIC_ARTICLES = loadStaticLibrary();
 
 // Honor the emergency-takedown blocklist (launch-gate P2): a slug in
-// api/index.ts's TAKEN_DOWN set 404s in prod, so it must not stay advertised
-// in the sitemap. The set lives in prod-only TypeScript this build script
-// can't import, so parse the single-line declaration; fail soft to [] — the
-// worst case is today's behavior (a 404ing URL listed), never a broken build.
-function loadTakenDown() {
+// api/index.ts's TAKEN_DOWN set is never served from the static library, so
+// its static copy must not be advertised. (DB rows under the same slug are
+// unaffected, as in the API.) Parsed by scripts/lib/shelf.mjs; fails soft.
+const TAKEN_DOWN = loadTakenDown();
+
+/**
+ * URLs vercel.json 301s away must never be advertised: a sitemap entry whose
+ * URL redirects is an instruction the crawler can only disobey (the audit in
+ * scripts/audit-canonicals.mjs walks what this file emits). Literal redirect
+ * sources are enough — every essay/static collision is a literal source.
+ */
+function loadRedirectSources() {
   try {
-    const src = fs.readFileSync("api/index.ts", "utf8");
-    const m = src.match(/const TAKEN_DOWN = new Set<string>\(\[([\s\S]*?)\]\)/);
-    if (!m) return new Set();
-    return new Set([...m[1].matchAll(/["']([^"']+)["']/g)].map(x => x[1]));
+    const cfg = JSON.parse(fs.readFileSync("vercel.json", "utf8"));
+    return new Set(
+      (cfg.redirects || [])
+        .map((r) => r.source)
+        .filter((s) => typeof s === "string" && !s.includes(":") && !s.includes("*") && !s.includes("("))
+    );
   } catch {
     return new Set();
   }
 }
-const TAKEN_DOWN = loadTakenDown();
+const REDIRECT_SOURCES = loadRedirectSources();
 
-function mergeArticles(dbArticles) {
+// The essay shelf (client/src/lib/shelf.json): only public essays belong in
+// the sitemap. Retired essays keep their URLs but answer with a noindex
+// notice, so advertising them would only spend crawl budget on dead ends.
+const SHELF = loadEssayShelf();
+
+// `unpublished` holds the slugs of database rows the admin has unpublished.
+// That is the takedown lever: the API 404s such a slug and never falls back to
+// a static copy, so the sitemap must not advertise it either, even when it is
+// a live shelf essay.
+function mergeArticles(dbArticles, unpublished = new Set()) {
   const have = new Set((dbArticles || []).map(a => a.slug));
-  const extra = STATIC_ARTICLES.filter(a => !have.has(a.slug) && !TAKEN_DOWN.has(a.slug));
-  return [...(dbArticles || []), ...extra];
+  const extra = STATIC_ARTICLES.filter(
+    a => !have.has(a.slug) && !unpublished.has(a.slug) && !TAKEN_DOWN.has(a.slug)
+  );
+  const merged = [...(dbArticles || []), ...extra].filter(a => SHELF.isPublic(a.slug, essayDate(a)));
+  // A public shelf essay is listed even when this build has no database row
+  // for it (a rewrite stands alone; a no-DB build still knows the shelf), but
+  // never when its row exists and has been unpublished.
+  const listed = new Set(merged.map(a => a.slug));
+  for (const e of SHELF.liveEssays()) {
+    if (listed.has(e.slug) || unpublished.has(e.slug)) continue;
+    const rewrite = SHELF.overrideRecords.get(e.slug);
+    merged.push({ slug: e.slug, updatedAt: rewrite ? rewrite.updated : null });
+  }
+  // A rewrite's date is the essay's last change.
+  return merged.map(a => {
+    const rewrite = SHELF.overrideRecords.get(a.slug);
+    return rewrite ? { ...a, updatedAt: rewrite.updated } : a;
+  });
 }
+
+// The skeptic track is advertised only while every stop is an essay on the
+// public shelf (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts, whose
+// stops are read here the way scripts/validate-skeptic-track.mjs reads them).
+function skepticTrackLive() {
+  try {
+    const src = fs.readFileSync("client/src/lib/skepticTrack.ts", "utf8");
+    const slugs = [...src.matchAll(/slug:\s*(?:"([^"]+)"|null)/g)].map(m => m[1] ?? null);
+    return slugs.length > 0 && slugs.every(s => s !== null && SHELF.isPublic(s));
+  } catch {
+    return false;
+  }
+}
+const UNLISTED = new Set(skepticTrackLive() ? [] : ["/skeptic-track"]);
 
 const STATIC_PAGES = [
   { url: "", priority: "1.0", changefreq: "weekly" },
@@ -60,30 +109,23 @@ const STATIC_PAGES = [
   // LiveWell series ebooks (code-only product pages, not DB-backed).
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
   { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
-  { url: "/library", priority: "0.8", changefreq: "weekly" },
   { url: "/diagnostic", priority: "0.8", changefreq: "monthly" },
+  { url: "/study", priority: "0.9", changefreq: "monthly" },
   { url: "/about", priority: "0.7", changefreq: "monthly" },
+  { url: "/speaking", priority: "0.6", changefreq: "monthly" },
+  { url: "/contact", priority: "0.5", changefreq: "monthly" },
   { url: "/marriage", priority: "0.7", changefreq: "monthly" },
   { url: "/parenting", priority: "0.7", changefreq: "monthly" },
-  { url: "/doubt", priority: "0.7", changefreq: "monthly" },
-  { url: "/writing?track=manhood", priority: "0.7", changefreq: "weekly" },
-  { url: "/writing?track=womanhood", priority: "0.7", changefreq: "weekly" },
-  { url: "/writing?track=finances", priority: "0.7", changefreq: "weekly" },
-  { url: "/for-pastors", priority: "0.75", changefreq: "weekly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
-  { url: "/work-with-james", priority: "0.6", changefreq: "monthly" },
   { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
-  // Five-pillar listing pages (current nav taxonomy) + Study Guides.
-  { url: "/writing?pillar=theological-depth", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=prophetic-justice", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=prophetic-disruption", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?pillar=integrated-life", priority: "0.85", changefreq: "weekly" },
-  { url: "/writing?series=true", priority: "0.8", changefreq: "weekly" },
+  // (The /writing?pillar=, ?track= and ?series= listing variants are gone:
+  // /writing is now the essay shelf, and those views canonicalize to it.)
   // Static content libraries (file-driven, no DB needed).
   { url: "/resources/context", priority: "0.9", changefreq: "weekly" },
   { url: "/resources/creeds", priority: "0.8", changefreq: "monthly" },
   { url: "/help", priority: "0.9", changefreq: "monthly" },
+  { url: "/plans", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/marriage", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/anxiety", priority: "0.8", changefreq: "monthly" },
   { url: "/plans/grief", priority: "0.8", changefreq: "monthly" },
@@ -97,12 +139,8 @@ const STATIC_PAGES = [
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
-  { url: "/framework", priority: "0.85", changefreq: "monthly" },
-  { url: "/historic-faith", priority: "0.85", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
-  { url: "/theology", priority: "0.8", changefreq: "monthly" },
-  { url: "/theology/biblical", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
   { url: "/start", priority: "0.8", changefreq: "monthly" },
@@ -111,9 +149,10 @@ const STATIC_PAGES = [
   { url: "/tools/prayer-generator", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/family-devotions", priority: "0.65", changefreq: "monthly" },
   // ── Added by site-elevation QW-10: every indexable static route belongs here.
-  // (Thank-you pages, redirect sources, /search, and device-local pages excluded.)
+  // (Thank-you pages, redirect sources, /search, and device-local pages excluded.
+  // A page folded by a vercel.json redirect leaves this list in the same change;
+  // client/src/lib/site-structure.test.ts fails if a redirect source is listed.)
   // FAQ landing pages (built to win search)
-  { url: "/faq", priority: "0.8", changefreq: "monthly" },
   { url: "/faq/can-science-and-faith-coexist", priority: "0.8", changefreq: "monthly" },
   { url: "/faq/catholic-vs-protestant", priority: "0.8", changefreq: "monthly" },
   { url: "/faq/does-god-exist", priority: "0.8", changefreq: "monthly" },
@@ -132,17 +171,12 @@ const STATIC_PAGES = [
   { url: "/compare/liturgical-vs-contemporary", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/orthodox-vs-catholic", priority: "0.8", changefreq: "monthly" },
   // Crisis and topic landing pages
-  { url: "/church-history", priority: "0.8", changefreq: "monthly" },
   { url: "/church-hurt", priority: "0.8", changefreq: "monthly" },
   { url: "/deconstruction", priority: "0.8", changefreq: "monthly" },
   { url: "/faith-crisis", priority: "0.8", changefreq: "monthly" },
   { url: "/grief", priority: "0.8", changefreq: "monthly" },
-  { url: "/honest-questions", priority: "0.8", changefreq: "monthly" },
   { url: "/marriage-crisis", priority: "0.8", changefreq: "monthly" },
   { url: "/parenting-help", priority: "0.8", changefreq: "monthly" },
-  { url: "/pastoral-burnout", priority: "0.8", changefreq: "monthly" },
-  { url: "/post-christian", priority: "0.8", changefreq: "monthly" },
-  { url: "/sermon-series", priority: "0.75", changefreq: "monthly" },
   // Ebook product pages previously missing
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
   { url: "/books/bible-and-homosexuality", priority: "0.8", changefreq: "monthly" },
@@ -153,17 +187,10 @@ const STATIC_PAGES = [
   { url: "/books/the-reliability-of-scripture", priority: "0.8", changefreq: "monthly" },
   { url: "/books/when-god-bless-america", priority: "0.8", changefreq: "monthly" },
   // Justice / Disruption / Nation hubs
-  { url: "/justice", priority: "0.85", changefreq: "monthly" },
-  { url: "/justice/glossary", priority: "0.7", changefreq: "monthly" },
-  { url: "/justice/posture", priority: "0.7", changefreq: "monthly" },
-  { url: "/justice/timeline", priority: "0.7", changefreq: "monthly" },
-  { url: "/justice/witnesses", priority: "0.7", changefreq: "monthly" },
-  { url: "/lament", priority: "0.7", changefreq: "monthly" },
-  { url: "/disruption", priority: "0.85", changefreq: "monthly" },
   { url: "/disruption/consistency", priority: "0.7", changefreq: "monthly" },
-  { url: "/disruption/glossary", priority: "0.7", changefreq: "monthly" },
-  { url: "/disruption/posture", priority: "0.7", changefreq: "monthly" },
-  { url: "/disruption/questions", priority: "0.7", changefreq: "monthly" },
+  // Church history James kept (linked from /study's church-history group).
+  { url: "/justice/timeline", priority: "0.75", changefreq: "monthly" },
+  { url: "/justice/witnesses", priority: "0.7", changefreq: "monthly" },
   { url: "/disruption/witnesses", priority: "0.7", changefreq: "monthly" },
   { url: "/nation", priority: "0.85", changefreq: "monthly" },
   { url: "/nation/state-of-the-american-church", priority: "0.9", changefreq: "monthly" },
@@ -183,10 +210,8 @@ const STATIC_PAGES = [
   { url: "/theology/compare", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/creeds", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/glossary", priority: "0.7", changefreq: "monthly" },
-  { url: "/theology/hermeneutics", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/how-to-use", priority: "0.7", changefreq: "monthly" },
   { url: "/theology/passage", priority: "0.75", changefreq: "monthly" },
-  { url: "/theology/paths", priority: "0.7", changefreq: "monthly" },
   { url: "/theology/traditions", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/which-view", priority: "0.7", changefreq: "monthly" },
   // Tools previously missing
@@ -194,6 +219,10 @@ const STATIC_PAGES = [
   { url: "/tools/bible-says", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/bible-study", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/conflict-guide", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/worry-journal", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/spiritual-gifts", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/prayer-planner", priority: "0.65", changefreq: "monthly" },
+  { url: "/tools/parent-teen-conversation", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/deep-bible", priority: "0.7", changefreq: "monthly" },
   { url: "/tools/emotional-health", priority: "0.65", changefreq: "monthly" },
   { url: "/tools/financial-health", priority: "0.65", changefreq: "monthly" },
@@ -209,24 +238,13 @@ const STATIC_PAGES = [
   { url: "/tools/wisdom-finder", priority: "0.7", changefreq: "monthly" },
   // Leadership instruments previously missing
   // Entry points, hubs, and misc previously missing
-  { url: "/start-here", priority: "0.85", changefreq: "monthly" },
-  { url: "/pathways", priority: "0.75", changefreq: "monthly" },
-  { url: "/map", priority: "0.8", changefreq: "monthly" },
-  { url: "/capture-by-the-right", priority: "0.8", changefreq: "monthly" },
-  { url: "/capture-by-the-left", priority: "0.8", changefreq: "monthly" },
-  { url: "/after-christendom", priority: "0.8", changefreq: "monthly" },
-  { url: "/theology/explorer", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/which-lens", priority: "0.8", changefreq: "monthly" },
   { url: "/tools/test-the-case", priority: "0.8", changefreq: "monthly" },
-  { url: "/explore", priority: "0.75", changefreq: "monthly" },
-  { url: "/pillars", priority: "0.8", changefreq: "monthly" },
-  { url: "/exile", priority: "0.7", changefreq: "monthly" },
-  { url: "/living-well", priority: "0.75", changefreq: "monthly" },
+  { url: "/downloads", priority: "0.75", changefreq: "weekly" },
+  { url: "/study/bible", priority: "0.9", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
-  { url: "/article-collections", priority: "0.7", changefreq: "monthly" },
-  { url: "/substack", priority: "0.6", changefreq: "monthly" },
   { url: "/subscribe", priority: "0.7", changefreq: "monthly" },
   { url: "/resources/hard-issues-series", priority: "0.75", changefreq: "monthly" },
   // Legal
@@ -234,6 +252,8 @@ const STATIC_PAGES = [
   { url: "/terms", priority: "0.3", changefreq: "monthly" },
   { url: "/accessibility", priority: "0.3", changefreq: "monthly" },
 ];
+const LISTED_PAGES = STATIC_PAGES.filter(p => !UNLISTED.has(p.url));
+
 
 /**
  * Article-style pages whose content lives as JSON in client/public rather than
@@ -257,30 +277,54 @@ function manifestPages() {
     // The contested-doctrine library (/theology/doctrine/:slug), manifest
     // from scripts/build-theology-index.mjs.
     { file: "client/public/theology/index.json", key: "docs", prefix: "/theology/doctrine/" },
-    // Sermon series for all 66 books of the Bible (/leadership/bible-sermons/:id),
-    // and the Prophetic Justice / Disruption per-topic pages
-    // (/justice/topic/:slug, /disruption/topic/:slug). The sermons manifest keys
-    // by `id`, so map it with slugField.
-    { file: "client/public/justice/topics-index.json", key: "topics", prefix: "/justice/topic/" },
-    { file: "client/public/disruption/topics-index.json", key: "topics", prefix: "/disruption/topic/" },
+    // (The Prophetic Justice / Disruption per-topic pages, /justice/topic/:slug
+    // and /disruption/topic/:slug, are folded into the essay shelf and 301 in
+    // vercel.json, so they are no longer listed.)
     // The 208 wisdom topics (/wisdom/:id) — "what the Bible says about X" pages,
     // rendered from client/public/wisdom/topics.json which keys by `id`.
     { file: "client/public/wisdom/topics.json", key: "topics", slugField: "id", prefix: "/wisdom/" },
     // The Topic Pathways (/pathways/:slug) — guided reading routes. Their
     // manifest is a bare array, handled by the Array.isArray fallback below.
     { file: "client/public/pathways/index.json", prefix: "/pathways/" },
+    // Care plans (/plans/:slug), so a new plan is listed without an edit here,
+    // and the Find Help care pages (/help/:slug): only registry entries with a
+    // written page are routes.
+    { file: "client/public/plans/plans-index.json", key: "plans", prefix: "/plans/" },
+    { file: "client/public/needs/index.json", key: "needs", prefix: "/help/", filter: (e) => e.page === true },
   ];
   for (const s of sources) {
     try {
       const data = JSON.parse(fs.readFileSync(s.file, "utf8"));
       const items = Array.isArray(data) ? data : data[s.key] || [];
       for (const entry of items) {
+        if (s.filter && !s.filter(entry)) continue;
         const slug = entry.slug || (s.slugField ? entry[s.slugField] : undefined);
         if (slug) pages.push({ url: `${s.prefix}${slug}`, priority: "0.75", changefreq: "monthly" });
       }
     } catch (err) {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
+  }
+  // The Study Bible: every book, every chapter, the eleven acts of the story,
+  // and the doctrine pages (client/public/bible/*).
+  try {
+    const books = JSON.parse(fs.readFileSync("client/public/bible/books.json", "utf8"));
+    for (const b of books) {
+      pages.push({ url: `/study/bible/${b.slug}`, priority: "0.8", changefreq: "monthly" });
+      for (let c = 1; c <= b.chapters; c++) pages.push({ url: `/study/bible/${b.slug}/${c}`, priority: "0.7", changefreq: "monthly" });
+    }
+    pages.push({ url: "/study/bible/story", priority: "0.9", changefreq: "monthly" });
+    for (const a of JSON.parse(fs.readFileSync("client/public/bible/story.json", "utf8")).acts)
+      pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
+    if (fs.existsSync("client/public/bible/guides/index.json"))
+      for (const g of JSON.parse(fs.readFileSync("client/public/bible/guides/index.json", "utf8")).groups)
+        for (const x of g.guides) if (fs.existsSync(`client/public/bible/guides/${x.id}.json`)) pages.push({ url: `/study/bible/guides/${x.id}`, priority: "0.7", changefreq: "monthly" });
+    for (const d of JSON.parse(fs.readFileSync("client/public/bible/doctrines.json", "utf8")).doctrines)
+      pages.push({ url: `/study/bible/doctrines/${d.id}`, priority: "0.7", changefreq: "monthly" });
+  } catch (err) {
+    console.warn(`[sitemap] could not read the Study Bible: ${err.message}`);
   }
   return pages;
 }
@@ -305,23 +349,39 @@ function buildXml(staticPages, articles, books, readingPaths) {
     seen.add(p.url);
     return true;
   });
+  // A URL vercel.json 301s away, or one whose canonical is another URL
+  // (query strings), must never be advertised.
+  let excluded = 0;
+  const advertisable = (path) => {
+    if (path.includes("?") || REDIRECT_SOURCES.has(path)) {
+      excluded += 1;
+      return false;
+    }
+    return true;
+  };
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   for (const page of allStatic) {
+    if (!advertisable(page.url)) continue;
     xml += urlEntry(`${BASE_URL}${page.url}`, null, page.changefreq, page.priority);
   }
   for (const a of articles) {
-    const lastmod = new Date(a.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/writing/${a.slug}`)) continue;
+    const when = a.updatedAt ? new Date(a.updatedAt) : null;
+    const lastmod = when && !Number.isNaN(when.getTime()) ? when.toISOString().split("T")[0] : null;
     xml += urlEntry(`${BASE_URL}/writing/${a.slug}`, lastmod, "monthly", "0.8");
   }
   for (const b of books) {
     const lastmod = new Date(b.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/books/${b.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/books/${b.slug}`, lastmod, "monthly", "0.7");
   }
   for (const p of readingPaths) {
     const lastmod = new Date(p.updatedAt).toISOString().split("T")[0];
+    if (!advertisable(`/reading-paths/${p.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/reading-paths/${p.slug}`, lastmod, "monthly", "0.7");
   }
+  if (excluded > 0) console.log(`[sitemap] excluded ${excluded} redirect-source or query-string URLs`);
   xml += "</urlset>\n";
   return xml;
 }
@@ -340,7 +400,7 @@ async function main() {
     // does not need essay URLs, and hard-failing here is what turned every
     // branch deploy red.
     console.error("[sitemap] writing static fallback (non-production build without a database).");
-    const xml = buildXml(STATIC_PAGES, mergeArticles([]), [], []);
+    const xml = buildXml(LISTED_PAGES, mergeArticles([]), [], []);
     fs.writeFileSync(OUTPUT_PATH, xml);
     return;
   }
@@ -353,7 +413,7 @@ async function main() {
     });
   } catch (err) {
     console.warn(`[sitemap] DB connect failed (${err.message}) — writing fallback sitemap`);
-    fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
+    fs.writeFileSync(OUTPUT_PATH, buildXml(LISTED_PAGES, mergeArticles([]), [], []));
     return;
   }
 
@@ -362,8 +422,10 @@ async function main() {
       // CHAR_LENGTH guard keeps catalog stubs (a title over a ~40-word abstract,
       // no essay behind it) out of the sitemap so search engines never index
       // them — see docs/audit-corpus/. Real essays clear 600 chars easily.
-      "SELECT slug, updatedAt FROM posts WHERE published = true AND CHAR_LENGTH(body) >= 600 ORDER BY updatedAt DESC"
+      "SELECT slug, updatedAt, createdAt, publishedAt FROM posts WHERE published = true AND CHAR_LENGTH(body) >= 600 ORDER BY updatedAt DESC"
     );
+    const [unpublishedRows] = await conn.query("SELECT slug FROM posts WHERE published = false");
+    const unpublished = new Set(unpublishedRows.map(r => r.slug));
     const [books] = await conn.query(
       "SELECT slug, updatedAt FROM books WHERE published = true AND slug IS NOT NULL ORDER BY updatedAt DESC"
     );
@@ -378,12 +440,12 @@ async function main() {
       // table may not exist on legacy DBs — skip silently
     }
 
-    const xml = buildXml(STATIC_PAGES, mergeArticles(articles), books, readingPaths);
+    const xml = buildXml(LISTED_PAGES, mergeArticles(articles, unpublished), books, readingPaths);
     fs.writeFileSync(OUTPUT_PATH, xml);
 
     console.log("[sitemap] generated");
-    console.log(`  static: ${STATIC_PAGES.length}`);
-    console.log(`  articles: ${articles.length}`);
+    console.log(`  static: ${LISTED_PAGES.length}`);
+    console.log(`  articles: ${articles.length} in the database, ${mergeArticles(articles, unpublished).length} public (shelf + latest)`);
     console.log(`  books: ${books.length}`);
     console.log(`  reading paths: ${readingPaths.length}`);
     console.log(`  written to: ${OUTPUT_PATH}`);
@@ -405,6 +467,6 @@ main().catch(err => {
   }
   // Write the static fallback (static routes + library manifests + the static
   // essay library) so the build can proceed.
-  fs.writeFileSync(OUTPUT_PATH, buildXml(STATIC_PAGES, mergeArticles([]), [], []));
+  fs.writeFileSync(OUTPUT_PATH, buildXml(LISTED_PAGES, mergeArticles([]), [], []));
   process.exit(0);
 });

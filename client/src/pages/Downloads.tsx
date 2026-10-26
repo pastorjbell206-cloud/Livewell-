@@ -1,119 +1,129 @@
 /**
- * /downloads — every printable file on the site, in one place.
+ * /downloads — every downloadable file on the site, on one shelf.
  *
- * The build generates roughly 167 PDFs on every deploy: a leader guide and a
- * participant handout for each study, a printable for each Reading Scripture in
- * Context guide. Before this page
- * they were reachable only from deep inside the individual guide pages, so a
- * reader looking for "the curriculum" or "the PDFs" had no way to see that any
- * of it existed.
- *
- * Built from the same manifests the PDF builder reads, so the list can never
- * drift from what actually ships. Each family fails soft: a manifest that will
- * not load simply omits its section rather than breaking the page.
+ * Reads the Library catalogue (/catalogue/index.json, built on every deploy by
+ * scripts/build-catalogue.mjs), so the shelf lists exactly what the Library
+ * lists and neither can drift: the free Hard Issues booklets (PDF + EPUB), a
+ * leader's guide and participant handout for every study, a printable for
+ * every Reading Scripture in Context guide, the Find Help printables, the
+ * plan booklets, Bible reading plans, worksheets, workbooks, and card sets,
+ * each with its file size once the deploy has built it. The books themselves
+ * are sold, so they appear last as links to their pages, never as files.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
+import { Download } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { fetchJson } from "@/lib/fetch-json";
+import { LoadFailed } from "@/components/LoadFailed";
+import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
-interface Row {
-  title: string;
-  /** One or more downloadable files for this row. */
-  files: { label: string; href: string }[];
-  /** Where the reader can read it online instead. */
-  readHref?: string;
+/** Section copy for each kind that carries files; wording from the pages that own them. */
+const SHELVES: Record<string, { label: string; blurb: string }> = {
+  Booklet: {
+    label: "The Hard Issues booklets",
+    blurb: "Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Each as a PDF and an EPUB.",
+  },
+  "Study guide": {
+    label: "Study guides and curriculum",
+    blurb: "Every study ships two printables: a leader's guide with the full teaching and the reasoning behind each question, and a participant handout for the room.",
+  },
+  "Care page": {
+    label: "Find Help printables",
+    blurb: "For every care page: a one-page guide, prayer cards, Scripture cards, and a worksheet for the week, in US Letter and A4.",
+  },
+  "Care plan": {
+    label: "Eight-week plans, as booklets",
+    blurb: "Every care plan printed as a booklet, one week to a page with room to write, in US Letter and A4.",
+  },
+  Worksheet: {
+    label: "Worksheets to print",
+    blurb: "Pages for the work that happens on paper: a worry log, a weekly prayer list, a month of prayer journal pages, a rule of life, a budget, a grief journal page, a plan for the first holidays after a loss, a conversation guide for couples, and, for church leaders, a referral list and a first response for when someone says they are not safe at home.",
+  },
+  Workbook: {
+    label: "Workbooks",
+    blurb: "Longer printables for a couple or a small group to work through over several sessions, with Scripture printed in full and room for each person to write.",
+  },
+  "Card set": {
+    label: "Cards to cut and keep",
+    blurb: "Scripture to carry, one verse for each hard place, and cards for the family table, each passage in full from the Berean Standard Bible.",
+  },
+  "Reading plan": {
+    label: "Bible reading plans",
+    blurb: "From a month in the Psalms to the whole Bible in a year, each day balanced by length, to print and keep in your Bible.",
+  },
+  Family: {
+    label: "For families",
+    blurb: "The Advent and Holy Week family devotions as printable booklets, one day to a page.",
+  },
+  "Context guide": {
+    label: "Reading Scripture in context",
+    blurb: "The historical and cultural background a passage assumes you already know. One printable per guide.",
+  },
+};
+
+const idFor = (kind: string) => kind.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+/**
+ * A card's files, one line per document: "One-page guide (Letter)" and
+ * "One-page guide (A4)" become "One-page guide: Letter · A4". Files with no
+ * paper size in the label (a leader's guide, a PDF and an EPUB) share a line.
+ */
+export function fileLines(files: CatalogueFile[]): { name: string; files: { label: string; file: CatalogueFile }[] }[] {
+  const lines: { name: string; files: { label: string; file: CatalogueFile }[] }[] = [];
+  for (const file of files) {
+    const m = file.label.match(/^(.*\S)\s*\((Letter|A4)\)$/);
+    const name = m ? m[1] : "";
+    const label = m ? m[2] : file.label;
+    const line = lines.find((l) => l.name === name);
+    if (line) line.files.push({ label, file });
+    else lines.push({ name, files: [{ label, file }] });
+  }
+  return lines;
 }
-
-interface Family {
-  id: string;
-  label: string;
-  blurb: string;
-  rows: Row[];
-}
-
-const hasSlugTitle = (x: unknown): x is { slug: string; title: string } =>
-  typeof x === "object" && x !== null &&
-  typeof (x as Record<string, unknown>).slug === "string" &&
-  typeof (x as Record<string, unknown>).title === "string";
-
-const isGuideIndex = (x: unknown): x is { guides: { slug: string; title: string }[] } =>
-  typeof x === "object" && x !== null && Array.isArray((x as { guides?: unknown }).guides);
-
-const isSeriesIndex = (x: unknown): x is ({ id: string; title: string }[] | { series: { id: string; title: string }[] }) =>
-  Array.isArray(x) || (typeof x === "object" && x !== null && Array.isArray((x as { series?: unknown }).series));
 
 export default function Downloads() {
-  const [studies, setStudies] = useState<Row[] | null>(null);
-  const [context, setContext] = useState<Row[] | null>(null);
+  const [catalogue, setCatalogue] = useState<Catalogue | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [nonce, setNonce] = useState(0);
 
   useEffect(() => {
     let stale = false;
-    fetchJson("/studyguides/index.json", isGuideIndex)
-      .then((d) => {
-        if (stale) return;
-        setStudies(
-          d.guides.filter(hasSlugTitle).map((g) => ({
-            title: g.title,
-            readHref: `/studyguides/${g.slug}`,
-            files: [
-              { label: "Leader's guide", href: `/downloads/studyguides/${g.slug}-leader.pdf` },
-              { label: "Participant handout", href: `/downloads/studyguides/${g.slug}-participant.pdf` },
-            ],
-          }))
-        );
-      })
-      .catch(() => { if (!stale) setStudies([]); });
-
-    fetchJson("/context/guides-index.json", isGuideIndex)
-      .then((d) => {
-        if (stale) return;
-        setContext(
-          d.guides.filter(hasSlugTitle).map((g) => ({
-            title: g.title,
-            readHref: `/resources/context/${g.slug}`,
-            files: [{ label: "Printable PDF", href: `/downloads/context/${g.slug}.pdf` }],
-          }))
-        );
-      })
-      .catch(() => { if (!stale) setContext([]); });
-
-
+    fetchCatalogue()
+      .then((c) => { if (!stale) setCatalogue(c); })
+      .catch(() => { if (!stale) setFailed(true); });
     return () => { stale = true; };
-  }, []);
+  }, [nonce]);
 
-  const families: Family[] = useMemo(() => {
-    const out: Family[] = [];
-    if (studies?.length) {
-      out.push({
-        id: "studies",
-        label: "Study guides and curriculum",
-        blurb: "Every study ships two printables: a leader's guide with the full teaching and the reasoning behind each question, and a participant handout for the room.",
-        rows: studies,
-      });
+  const { shelves, books } = useMemo(() => {
+    const byKind = new Map<string, CatalogueItem[]>();
+    const books: CatalogueItem[] = [];
+    for (const it of catalogue?.items ?? []) {
+      if (it.kind === "Book") books.push(it);
+      if (!it.files?.length) continue;
+      byKind.set(it.kind, [...(byKind.get(it.kind) ?? []), it]);
     }
-    if (context?.length) {
-      out.push({
-        id: "context",
-        label: "Reading Scripture in context",
-        blurb: "The historical and cultural background a passage assumes you already know. One printable per guide.",
-        rows: context,
-      });
-    }
-    return out;
-  }, [studies, context]);
+    const shelves = Array.from(byKind.entries())
+      .sort((a, b) => kindRank(a[0]) - kindRank(b[0]))
+      .map(([kind, rows]) => ({
+        id: idFor(kind),
+        label: SHELVES[kind]?.label ?? kind,
+        blurb: SHELVES[kind]?.blurb ?? "",
+        rows: [...rows].sort((a, b) => a.title.localeCompare(b.title)),
+      }));
+    return { shelves, books };
+  }, [catalogue]);
 
-  const loading = studies === null && context === null;
-  const fileCount = families.reduce((n, f) => n + f.rows.reduce((m, r) => m + r.files.length, 0), 0);
+  const fileCount = shelves.reduce((n, s) => n + s.rows.reduce((m, r) => m + (r.files?.length ?? 0), 0), 0);
+  const jump = [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])];
 
   return (
     <Layout>
       <SEOMeta
         title="Free Downloads: Study Guides, Curriculum, and Printable PDFs"
-        description="Every printable file in one place: leader's guides and participant handouts for each study, plus Reading Scripture in Context printables. All free."
+        description="Every printable in one place, free: study guides, Find Help guides and worksheets, plan booklets, Bible reading plans, workbooks, and Scripture cards."
         url="https://www.livewellbyjamesbell.co/downloads"
       />
 
@@ -126,18 +136,23 @@ export default function Downloads() {
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
             {fileCount > 0
               ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
-              : "Study guides and context printables. Free, and nothing is gated."}
+              : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
+          </p>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", marginTop: "14px" }}>
+            <Link href="/search" style={{ color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+              Search the whole site
+            </Link>
           </p>
         </div>
       </section>
 
-      {families.length > 1 && (
+      {jump.length > 1 && (
         <nav aria-label="Jump to a section" style={{ background: "var(--bone-warm)", padding: "var(--s-4)", borderBottom: "1px solid var(--border)" }}>
           <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "10px" }}>
-            {families.map((f) => (
+            {jump.map((j) => (
               <a
-                key={f.id}
-                href={`#${f.id}`}
+                key={j.id}
+                href={`#${j.id}`}
                 style={{
                   fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600,
                   letterSpacing: "0.08em", textTransform: "uppercase",
@@ -146,7 +161,7 @@ export default function Downloads() {
                   padding: "8px 16px", background: "var(--card)",
                 }}
               >
-                {f.label} <span style={{ color: "var(--ink-muted)" }}>{f.rows.length}</span>
+                {j.label} <span style={{ color: "var(--ink-muted)" }}>{j.n}</span>
               </a>
             ))}
           </div>
@@ -155,64 +170,94 @@ export default function Downloads() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
-          {loading && (
-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Gathering the files…</p>
+          {failed && !catalogue && (
+            <LoadFailed
+              what="The download list"
+              onRetry={() => { setFailed(false); setNonce((n) => n + 1); }}
+              backHref="/studyguides"
+              backLabel="Read the study guides online"
+            />
+          )}
+          {!failed && !catalogue && (
+            <p role="status" style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Gathering the files…</p>
           )}
 
-          {!loading && families.length === 0 && (
-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>
-              The download list could not be loaded just now. The study guides are still readable{" "}
-              <Link href="/studyguides" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>here</Link>.
-            </p>
-          )}
-
-          {families.map((f) => (
-            <div key={f.id} id={f.id} style={{ marginBottom: "var(--s-7)", scrollMarginTop: "80px" }}>
+          {shelves.map((s) => (
+            <div key={s.id} id={s.id} style={{ marginBottom: "var(--s-7)", scrollMarginTop: "80px" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "8px" }}>
-                {f.label}
+                {s.label}
               </h2>
-              <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
-                {f.blurb}
-              </p>
+              {s.blurb && (
+                <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
+                  {s.blurb}
+                </p>
+              )}
 
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "12px" }}>
-                {f.rows.map((r) => (
-                  <div
-                    key={r.title}
-                    style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "16px 18px" }}
-                  >
-                    <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.25, marginBottom: "10px" }}>
+                {s.rows.map((r) => (
+                  <div key={`${r.href}|${r.title}`} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "16px 18px" }}>
+                    <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.25, marginBottom: r.kind === "Booklet" && r.summary ? "4px" : "10px" }}>
                       {r.title}
                     </div>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
-                      {r.files.map((file) => (
-                        <a
-                          key={file.href}
-                          href={file.href}
-                          download
-                          style={{
-                            fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600,
-                            color: "var(--mustard-text)", textDecoration: "none",
-                            borderBottom: "1px solid var(--mustard)", paddingBottom: "1px",
-                          }}
-                        >
-                          {file.label}
-                        </a>
-                      ))}
-                      {r.readHref && (
-                        <Link
-                          href={r.readHref}
-                          style={{ fontFamily: "var(--U)", fontSize: "12.5px", color: "var(--ink-muted)", textDecoration: "none" }}
-                        >
-                          Read online
+                    {r.summary && r.kind === "Booklet" && (
+                      <div style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "10px" }}>{r.summary}</div>
+                    )}
+                    {fileLines(r.files ?? []).map((line) => (
+                      <div key={line.name || "files"} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
+                        {line.name && <span style={{ marginRight: "8px" }}>{line.name}:</span>}
+                        {line.files.map(({ label, file }, i) => (
+                          <span key={file.href}>
+                            {i > 0 && <span aria-hidden style={{ margin: "0 8px" }}>·</span>}
+                            <a
+                              href={file.href}
+                              download
+                              aria-label={line.name ? `${line.name}, ${label}` : label}
+                              style={{
+                                display: "inline-flex", alignItems: "center", gap: "5px", minHeight: "32px",
+                                fontSize: "13px", fontWeight: 600,
+                                color: "var(--mustard-text)", textDecoration: "none",
+                              }}
+                            >
+                              <Download size={12} aria-hidden />
+                              <span style={{ borderBottom: "1px solid var(--mustard)" }}>{label}</span>
+                              {file.bytes ? <span style={{ fontWeight: 400, color: "var(--ink-muted)" }}>{formatBytes(file.bytes)}</span> : null}
+                            </a>
+                          </span>
+                        ))}
+                      </div>
+                    ))}
+                    {r.kind !== "Booklet" && (
+                      <div style={{ marginTop: "4px" }}>
+                        <Link href={r.href} style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", textDecoration: "none" }}>
+                          {r.kind === "Worksheet" || r.kind === "Workbook" || r.kind === "Card set" ? "The page it goes with" : "Read online"}
                         </Link>
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
             </div>
           ))}
+
+          {books.length > 0 && (
+            <div id="books" style={{ scrollMarginTop: "80px" }}>
+              <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "8px" }}>
+                The books
+              </h2>
+              <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
+                The books James Bell wrote himself are for purchase, not download.
+              </p>
+              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "12px" }}>
+                {books.map((b) => (
+                  <li key={b.href}>
+                    <Link href={b.href} style={{ display: "block", height: "100%", boxSizing: "border-box", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "16px 18px", textDecoration: "none" }}>
+                      <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.25 }}>{b.title}</div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </section>
     </Layout>

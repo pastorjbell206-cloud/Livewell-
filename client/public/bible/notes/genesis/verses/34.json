@@ -1,0 +1,336 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with Dinah, the only daughter of Jacob whose birth Genesis records (30:21). Naming her as Leah's daughter matters at once: Simeon and Levi, who act in verse 25, are her full brothers, sons of the same unloved mother (29:33-34).",
+      "grammar": "Vatetse, ‘and she went out’, is an ordinary verb of movement, and the purpose clause lirot bivnot haarets, ‘to see the daughters of the land’, describes a social visit among the local women. Some later interpreters read blame into the phrase ‘went out’, but the Hebrew carries no such hint, and the narrator places all the guilt of the next verse on the man who acts. The clause asher yaledah leYaaqov, ‘whom she had borne to Jacob’, ties Dinah to her father as well as her mother, which makes his silence in verse 5 more striking.",
+      "words": [
+        "H3318G",
+        "H1783",
+        "H3205",
+        "H7200G"
+      ],
+      "history": "Josephus, the first-century Jewish historian, retells the story with Dinah going into Shechem during a festival to see the dress of the local women. The detail is his own expansion, not something the Hebrew says, but it shows how early readers pictured an innocent outing.",
+      "refs": [
+        "Genesis 30:21",
+        "Genesis 29:33-34",
+        "Genesis 46:15"
+      ]
+    },
+    {
+      "v": "2",
+      "context": "Shechem sees, takes, lies with, and violates. The verse names who he is (son of the local ruler) before naming what he does, so the reader understands that the man who wronged Dinah is also the man with power in the region.",
+      "grammar": "The verbs run in a quick sequence of narrative forms: vayyar (‘he saw’), vayyiqqach (‘he took’), vayyishkav (‘he lay’), vayeanneha (‘he humbled her’). ‘Saw’ and ‘took’ is the same pairing used of the sons of God in 6:2 and of Eve with the fruit in 3:6, a pattern of desire acting without restraint. Hebrew normally says a man lay ‘with’ (im) a woman; the Masoretic vowels here read otah, which looks like the direct-object marker, ‘lay her’, and many grammarians take this as stressing force (the same wording describes Amnon in 2 Samuel 13:14). The last verb, anah in the Piel, means to humble, abase, or violate. Scholars debate whether it always implies force, but in this sequence the BSB's \"by force\" represents the main reading.",
+      "words": [
+        "H3947G",
+        "H7901I",
+        "H6031B",
+        "H5387A"
+      ],
+      "text": "The Septuagint calls Hamor a Horite rather than a Hivite, as it does again in Joshua 9:7. The two names differ in Hebrew by one similar-looking letter, and most scholars keep the Hebrew reading ‘Hivite’, which matches the lists of Canaan's peoples (10:17).",
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The narrator uses a verb of degradation for what Shechem does, whatever he feels afterward. Scripture names sexual violence as a wrong done to the woman first, not merely an offense against her family's honor."
+        }
+      ],
+      "refs": [
+        "Genesis 3:6",
+        "Genesis 6:2",
+        "2 Samuel 13:14",
+        "Deuteronomy 22:25-27"
+      ]
+    },
+    {
+      "v": "3",
+      "context": "After the act comes attachment. Shechem clings to Dinah, loves her, and speaks tenderly to her. The verse is unsettling precisely because it is sincere: desire and feeling are real, but they come after the wrong and do not undo it.",
+      "grammar": "Three verbs describe his attachment. Vattidbaq nafsho, ‘his soul clung’, uses davaq, the verb of Genesis 2:24, where a man holds fast to his wife. Vayyeehav is ahav, ‘love’. Vaydabber al lev hanaarah, ‘he spoke to the heart of the girl’, is an idiom for reassuring or winning speech, used of the Levite seeking his concubine (Judges 19:3), Boaz comforting Ruth (Ruth 2:13), and God comforting Jerusalem (Isaiah 40:2). The language of marriage and courtship is placed on the far side of violence, and the reader is meant to feel the wrong order.",
+      "words": [
+        "H1692",
+        "H5315G",
+        "H0157G",
+        "H3820A"
+      ],
+      "text": "In the Torah the word naarah (‘girl’) is usually written without its final letter, so it looks like the masculine naar, while the reading tradition pronounces it as feminine. It happens here and in most places in the five books of Moses. English Bibles simply translate ‘girl’ or ‘young woman’.",
+      "refs": [
+        "Genesis 2:24",
+        "Judges 19:3",
+        "Ruth 2:13",
+        "Isaiah 40:2"
+      ]
+    },
+    {
+      "v": "4",
+      "context": "Shechem asks his father to arrange the marriage. His request is the whole of his speech: a command in three words, with Dinah as the object.",
+      "grammar": "Qach li et hayyaldah hazzot leishah, ‘take for me this girl as a wife’, is a blunt imperative. The noun yaldah, ‘girl’, is the feminine of yeled, ‘child’, and points to her youth. The same demand in almost the same words comes from Samson to his parents about a Philistine woman (Judges 14:2), another marriage across the covenant line decided by a young man's wanting.",
+      "words": [
+        "H3947G",
+        "H3207",
+        "H0802H"
+      ],
+      "refs": [
+        "Judges 14:2-3",
+        "Genesis 24:3-4"
+      ]
+    },
+    {
+      "v": "5",
+      "context": "Jacob hears and says nothing. The narrator gives a reason (his sons were in the field) but the silence stands out, since it is his daughter and the verse calls her so.",
+      "grammar": "Timme, ‘he had defiled’, is a Piel of tame, the verb for making something ritually unclean, used later in the purity laws (Leviticus 18:20 uses the same root for sexual sin). The narrator repeats it in verses 13 and 27, so the chapter's verdict on the act is spoken in the language of holiness. Vehecherish, ‘and he kept silent’, is a Hiphil of charash, used for deliberate silence or holding one's peace. It is the key to Jacob in this chapter: he does not speak again until verse 30.",
+      "words": [
+        "H2930A",
+        "H2790B",
+        "H1323G"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "A father's silence is part of what the chapter exposes. David's inaction after the rape of his daughter Tamar (2 Samuel 13:21-22) repeats the pattern, and in both stories the brothers take matters into their own hands with bloody results."
+        }
+      ],
+      "refs": [
+        "2 Samuel 13:21-22",
+        "Leviticus 18:20",
+        "Genesis 34:30"
+      ]
+    },
+    {
+      "v": "6-7",
+      "context": "Hamor goes out to negotiate, but the sons arrive first and the narrative lingers on their reaction. Verse 7 gives the narrator's own judgment of Shechem's act, spoken from the moral world of the later nation.",
+      "grammar": "Vayyitatsevu, ‘they were grieved’, is the verb used of God's grief over human evil in 6:6 and of the brothers' distress in 45:5. Vayyichar lahem meod, ‘it burned to them greatly’, is the idiom for anger. Nevalah asah veYisrael, ‘he did an outrage in Israel’, uses a formula that appears again for sexual crimes and grave betrayals within the community (Deuteronomy 22:21, Judges 20:6, 2 Samuel 13:12). Since ‘Israel’ is still the name of one man, the phrase reads as the narrator's verdict in the vocabulary of the people to come. Vekhen lo yeaseh, ‘and so it is not done’, is the language of moral custom, like Abimelech's complaint in 20:9 and Laban's excuse in 29:26.",
+      "words": [
+        "H6087A",
+        "H2734",
+        "H5039",
+        "H3478"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The verse names an act as folly against the community, not only a private wrong. Israel's law will treat sexual violation as something that damages the whole people's life before God."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 22:21",
+        "Judges 20:6",
+        "2 Samuel 13:12",
+        "Genesis 20:9"
+      ]
+    },
+    {
+      "v": "8-10",
+      "context": "Hamor's offer widens from one marriage to a whole alliance: intermarriage, residence, freedom of movement, and property. He never mentions what his son did.",
+      "grammar": "Chasheqah nafsho, ‘his soul is attached’, uses chashaq, a verb for a deep desire that Deuteronomy uses for the LORD setting his affection on Israel (Deuteronomy 7:7, 10:15). Vehitchattenu, ‘intermarry’, is a Hithpael of the root that gives chatan, a son-in-law or bridegroom: ‘become in-laws with us’. It is the verb Deuteronomy 7:3 uses to forbid marriage alliances with the peoples of Canaan, including the Hivites (Deuteronomy 7:1). In verse 10 the land is ‘before you’, open for the taking; secharuha is often rendered ‘trade in it’ but may mean ‘move about in it’, and veheachazu bah, ‘acquire property in it’, is the verb used when Israel settles in Goshen (47:27).",
+      "words": [
+        "H2836A",
+        "H2859B",
+        "H5503",
+        "H0270"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Hamor offers Jacob's family a place in the land on Canaanite terms, by merging into Shechem. God has promised the land on his own terms, to a distinct people. The offer is a shortcut to the promise that would dissolve the people the promise was for."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 7:1-3",
+        "Deuteronomy 7:7",
+        "Genesis 47:27",
+        "Genesis 24:3-4"
+      ]
+    },
+    {
+      "v": "11-12",
+      "context": "Shechem speaks for himself to Dinah's father and brothers, offering any price. His eagerness is real, but it is an eagerness to pay, not to confess.",
+      "grammar": "Emtsa chen beeneikhem, ‘let me find favor in your eyes’, is the courteous formula Jacob used with Esau in chapter 33. Harbu alai meod mohar umattan, ‘multiply on me greatly bride-price and gift’, uses the Hiphil imperative of ravah. The mohar was the payment from the groom's side to the bride's family; the mattan was an additional gift on top of it.",
+      "words": [
+        "H4672",
+        "H2580",
+        "H4119",
+        "H4976"
+      ],
+      "history": "The mohar appears in Israel's law for a man who seduces an unbetrothed girl: he must pay it and marry her, unless her father refuses, in which case he still pays (Exodus 22:16-17). Saul later sets the bride-price for his daughter Michal at a hundred Philistine foreskins, meaning to have David killed (1 Samuel 18:25), another bride-price in which circumcision and bloodshed are tangled together.",
+      "refs": [
+        "Exodus 22:16-17",
+        "Deuteronomy 22:28-29",
+        "1 Samuel 18:25",
+        "Genesis 29:18"
+      ]
+    },
+    {
+      "v": "13-14",
+      "context": "The brothers answer, and the narrator tells us before they speak that they answer in deceit. Their stated objection is religious: an uncircumcised man is no match for their sister.",
+      "grammar": "Bemirmah, ‘in deceit’, is the word Isaac used of Jacob's theft of the blessing (27:35). The narrator repeats timme, ‘he had defiled’, as the reason, so the reader holds both the provocation and the lie at once. In verse 14 arelah is literally ‘foreskin’: ‘a man who has a foreskin’. Cherpah, ‘a reproach’ or ‘disgrace’, is the word God uses at Gilgal when Israel's men are circumcised before entering Canaan and he rolls away ‘the reproach of Egypt’ (Joshua 5:9).",
+      "words": [
+        "H4820",
+        "H2930A",
+        "H6190H",
+        "H2781"
+      ],
+      "refs": [
+        "Genesis 27:35",
+        "Joshua 5:9",
+        "Genesis 17:10-14"
+      ]
+    },
+    {
+      "v": "15-17",
+      "context": "The brothers set their condition: every male of Shechem must be circumcised, and then the two peoples will become one. The alternative they name is to take ‘our daughter’ and leave, which tells the reader that Dinah is still in Shechem's hands.",
+      "grammar": "Neot, ‘we will consent’, is a Niphal of a rare verb, ut, that occurs only in this chapter (verses 15, 22, 23) and once in 2 Kings 12. Lehimmol lakhem kol zakhar, ‘by every male of yours being circumcised’, echoes the command in 17:10, where every male among Abraham's household is to be circumcised. Vehayinu leam echad, ‘and we will become one people’, is striking: the phrase am echad last appeared at Babel (11:6), and the promise to Abraham was that he would become a great nation of his own, not merge with another.",
+      "words": [
+        "H0225",
+        "H4135A",
+        "H2145",
+        "H0259"
+      ],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Circumcision marked entry into God's covenant with Abraham (17:9-14). Here it is offered as a condition of a marriage deal and meant as a trap, with no mention of God at all. The sign is kept and its meaning abandoned, a danger the prophets and Paul later name directly (Jeremiah 9:25-26, Romans 2:28-29)."
+        }
+      ],
+      "refs": [
+        "Genesis 17:9-14",
+        "Genesis 11:6",
+        "Jeremiah 9:25-26",
+        "Romans 2:28-29"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "The proposal pleases Hamor and Shechem, and Shechem acts on it at once. The narrator notes that he was the most honored member of his father's house, which explains why the city will follow him.",
+      "grammar": "Velo echar hannaar, ‘and the young man did not delay’, uses a Piel of achar. Ki chafets bevat Yaaqov, ‘for he delighted in Jacob's daughter’, uses chafets, a verb for taking pleasure in someone, the word used when Jonathan ‘delighted’ in David (1 Samuel 19:1). Vehu nikhbad, ‘and he was honored’, is a Niphal participle of kavad, weighty or honored: Shechem's standing is exactly what makes his crime a political matter.",
+      "words": [
+        "H0309",
+        "H2654A",
+        "H3513G"
+      ],
+      "refs": [
+        "1 Samuel 19:1",
+        "Genesis 34:24"
+      ]
+    },
+    {
+      "v": "20-23",
+      "context": "At the city gate Hamor and Shechem present the deal to their men, and the speech is not the one they made to Jacob. They stress how peaceful the newcomers are, how roomy the land is, and, finally, how much of Jacob's wealth will become theirs.",
+      "grammar": "Sheleim hem ittanu, ‘they are at peace with us’, uses the plural of shalem, the word for Jacob's safe arrival in 33:18, now spoken with heavy irony. Rachavat yadayim, ‘wide of both hands’, is an idiom for spaciousness also used of the sea in Psalm 104:25. The order of marriages flips from verse 9: to Jacob they said ‘give us your daughters’; to their own men they say first ‘let us take their daughters’. Verse 23 opens with a rhetorical question, halo lanu hem, ‘will they not be ours?’, the motive they did not mention at Jacob's tent.",
+      "words": [
+        "H8003",
+        "H7342H",
+        "H3027K",
+        "H7075"
+      ],
+      "history": "The city gate was where a town's free men met for public business, and Genesis uses the same formula here and in Abraham's purchase from the Hittites, ‘all who went in or out at the gate of his city’ (23:10, 23:18). Decisions made there bound the town. By the gate's standards the proposal was legitimate and public; its motives were not.",
+      "refs": [
+        "Genesis 23:10",
+        "Genesis 23:18",
+        "Ruth 4:1-2",
+        "Psalm 104:25"
+      ]
+    },
+    {
+      "v": "24",
+      "context": "The men of Shechem agree, and every male is circumcised. The verse repeats its key phrase twice, ‘all who went out of the gate of his city’, to stress that the whole male population is now bound and vulnerable.",
+      "grammar": "Vayyimmolu, ‘and they were circumcised’, is a Niphal, the passive stem, used in Genesis 17 for Abraham's household (17:26-27). The verbal echo is deliberate: the sign that made Abraham's household God's covenant people is performed on a Canaanite town, but with no word of God, faith, or promise.",
+      "words": [
+        "H4135A",
+        "H3318G",
+        "H8179G"
+      ],
+      "refs": [
+        "Genesis 17:23-27",
+        "Genesis 23:10"
+      ]
+    },
+    {
+      "v": "25-26",
+      "context": "On the third day, when the men are most disabled, Simeon and Levi enter the city with swords and kill every male, Hamor and Shechem among them. Then they take Dinah from Shechem's house, the first time we learn plainly that she was held there.",
+      "grammar": "Bihyotam koavim, ‘while they were in pain’, uses a participle of kaav, to be sore or aching. The city is betach, ‘in security’ or ‘unsuspecting’, the word used of the peaceful town of Laish before the Danites destroyed it (Judges 18:27). Lefi charev, ‘by the mouth of the sword’, is the stock phrase of total slaughter in the conquest accounts (Joshua 6:21). Genesis identifies the killers as achei Dinah, ‘Dinah's brothers’, her full brothers by Leah.",
+      "words": [
+        "H3510",
+        "H0983",
+        "H6310G",
+        "H2719"
+      ],
+      "history": "Later Jewish writings admired the brothers. The book of Jubilees, from the second century BC, retells the chapter approvingly and links Levi's zeal with his descendants' priesthood, and the prayer of Judith (Judith 9:2) praises Simeon. Genesis itself pronounces a curse on their anger (49:5-7). Their tribes' later histories fit that curse: Levi received no territory of its own but towns scattered among the tribes, and Simeon's allotment lay inside Judah's (Joshua 19:1-9).",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Punishment falls on every man of a town for one man's crime. Israel's law later insists that each person is put to death only for his own sin (Deuteronomy 24:16), and Jacob's deathbed words condemn the brothers' anger. Genesis refuses to call this justice."
+        }
+      ],
+      "refs": [
+        "Genesis 49:5-7",
+        "Judges 18:27",
+        "Joshua 19:1-9",
+        "Deuteronomy 24:16"
+      ]
+    },
+    {
+      "v": "27-29",
+      "context": "The rest of Jacob's sons come upon the dead and plunder the city: flocks, herds, donkeys, wealth, houses, and the women and children. The deal that promised ‘your daughters’ ends in the seizure of their wives.",
+      "grammar": "Al hachalalim, ‘upon the slain’, uses chalal, a word for the pierced or fallen in battle. Vayyavozzu, ‘and they plundered’, comes twice (verses 27 and 29) and frames the list of what was taken. In verse 29 shavu, ‘they took captive’, has as its objects kol tappam veet neshehem, ‘all their little ones and their wives’. The narrator gives the brothers' reason in the same terms as before, asher timmeu achotam, ‘because they had defiled their sister’, now with a plural verb: the whole city is held guilty.",
+      "words": [
+        "H2491A",
+        "H0962",
+        "H7617",
+        "H2945"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The wrong done to one woman is answered by capturing many women and children who had done nothing. The chapter shows how vengeance multiplies victims. Abraham, by contrast, refused to profit from the spoils of war (14:22-23)."
+        }
+      ],
+      "refs": [
+        "Genesis 14:22-23",
+        "Numbers 31:9",
+        "Genesis 49:5-7"
+      ]
+    },
+    {
+      "v": "30",
+      "context": "Jacob finally speaks, and his complaint is about consequences to himself. Again and again in one sentence he says ‘me’, ‘I’, or ‘my’. He does not mention Dinah, or the dead, or God.",
+      "grammar": "Akhartem oti, ‘you have troubled me’, uses akhar, a strong verb for bringing ruin on a community. It is the word Joshua uses for Achan, whose theft brought disaster on Israel (Joshua 7:25), and Elijah and Ahab's argument over who is the ‘troubler of Israel’ (1 Kings 18:17-18). Lehavisheni, ‘to make me stink’, is a Hiphil of baash, the idiom for becoming odious to others (Exodus 5:21, 1 Samuel 13:4). Ani mete mispar, ‘I am men of number’, means few enough to count, the same phrase Moses uses for Israel's future smallness (Deuteronomy 4:27).",
+      "words": [
+        "H5916",
+        "H0887",
+        "H4962",
+        "H8045"
+      ],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Jacob's fear is realistic: a clan of herdsmen could not survive a coalition of cities. The next chapter answers it not with strategy but with God's own terror falling on the towns around them (35:5)."
+        }
+      ],
+      "refs": [
+        "Joshua 7:25",
+        "1 Kings 18:17-18",
+        "Exodus 5:21",
+        "Psalm 105:12-15"
+      ]
+    },
+    {
+      "v": "31",
+      "context": "The brothers get the last word with a question, and the chapter ends without anyone answering it. Genesis lets both failures stand: a father who counted the cost to himself, and sons who counted no cost at all.",
+      "grammar": "Hakhzonah yaaseh et achotenu, ‘like a prostitute should he treat our sister?’, packs a question particle, a preposition, and a participle into one word at the head of the sentence, where Hebrew puts emphasis. The verb is an imperfect, which can be read ‘should he treat’ or ‘should he be allowed to treat’. The brothers frame the wrong as treating Dinah as a woman who could be bought, which is exactly what Shechem's offer of a high bride-price seemed to them to do.",
+      "words": [
+        "H2181",
+        "H6213A",
+        "H0269"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "The question has force, and the narrator leaves it hanging because the chapter's verdict comes later. When Jacob blesses his sons he judges this deed (49:5-7), and the Law and the Prophets will teach that justice for the wronged must not become a new injustice."
+        }
+      ],
+      "refs": [
+        "Genesis 49:5-7",
+        "Romans 12:17-19"
+      ]
+    }
+  ]
+}

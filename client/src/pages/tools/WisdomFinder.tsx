@@ -32,6 +32,7 @@ import {
   Quote,
 } from "lucide-react";
 import { copyToClipboard } from "@/lib/clipboard";
+import ScriptureNote from "@/components/ScriptureNote";
 import { fetchJson } from "@/lib/fetch-json";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
@@ -112,12 +113,14 @@ function topicForToday(topics: Topic[]): Topic | null {
   return topics[Math.abs(h) % topics.length];
 }
 
-/** Route a pull quote to its source work: essays under /writing, books under
- *  /read, study guides under /studyguides (same mapping as the Quote Library). */
-function quoteSourcePath(q: SocialQuote): string {
+/** Route a pull quote to its source work: essays under /writing, study
+ *  guides under /studyguides (same mapping as the Quote Library). Book quotes
+ *  return null — the free on-site library was retired with the shelf
+ *  reduction, so the source is named without a link. */
+function quoteSourcePath(q: SocialQuote): string | null {
   switch (q.sourceType) {
     case "book":
-      return `/read/${q.articleSlug}`;
+      return null;
     case "studyguide":
       return `/studyguides/${q.articleSlug}`;
     default:
@@ -195,9 +198,9 @@ function TopicPanel({
   }
 
   async function copyVerse(v: Verse) {
-    // Not wrapped in quotation marks: v.text is shortened to the line in view,
-    // not the verbatim verse — copying it as a quotation would misrepresent it.
-    const ok = await copyToClipboard(`${v.ref} — ${v.text} (shortened; read the full passage)`);
+    // The text is the whole passage, verbatim from the Berean Standard Bible
+    // (client/public/wisdom/topics/*.json), so it copies as a quotation.
+    const ok = await copyToClipboard(`"${v.text}" (${v.ref}, BSB)`);
     if (!ok) {
       setCopyFailed(true);
       return;
@@ -238,11 +241,9 @@ function TopicPanel({
         <BookOpen size={16} style={{ color: "var(--mustard-text)" }} />
         <span style={{ ...eyebrow, color: "var(--ink)" }}>What Scripture says</span>
       </div>
-      {/* Integrity: these texts are shortened to the line in view, not verbatim.
-          Say so plainly and send the reader to the full passage. */}
-      <p style={{ fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 12px", maxWidth: "60ch" }}>
-        The verse text below is shortened to the line in view. Tap any reference to read the whole passage.
-      </p>
+      {/* The passages are verbatim Berean Standard Bible; each reference opens
+          it in context. */}
+      <ScriptureNote rendering="bsb" />
       <div style={{ display: "grid", gap: "8px", marginBottom: "var(--s-4)" }}>
         {topic.verses.map((v) => (
           <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
@@ -292,9 +293,13 @@ function TopicPanel({
                 </blockquote>
                 <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
                   — {q.author ?? "James Bell"},{" "}
-                  <Link href={quoteSourcePath(q)} style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>
+                  {quoteSourcePath(q) ? (
+                    <Link href={quoteSourcePath(q)!} style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>
                     {q.articleTitle}
                   </Link>
+                  ) : (
+                    <span style={{ color: "var(--ink)" }}>{q.articleTitle}</span>
+                  )}
                 </p>
               </div>
             ))}
@@ -430,7 +435,7 @@ export default function WisdomFinder() {
   }
 
   const loadingLine = (
-    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>Loading the wisdom library…</p>
+    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }} role="status">Loading the wisdom library…</p>
   );
   const loadFailedPanel = (
     <LoadFailed what="The wisdom library" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
@@ -482,13 +487,12 @@ export default function WisdomFinder() {
         <section style={{ background: "var(--bone-warm)", padding: "var(--s-4) var(--s-4)" }}>
           <div style={wrap}>
             <div style={{ ...eyebrow, marginBottom: "10px" }}>An entry for today</div>
-            {/* No quotation marks: the text is shortened to the line in view, not the
-                verbatim verse — the reference links to the whole passage to check it. */}
+            {/* Verbatim Berean Standard Bible; the reference opens the passage in context. */}
             <p style={{ fontFamily: "var(--F)", fontSize: "clamp(19px, 2.6vw, 24px)", lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)", margin: "0 0 10px", maxWidth: "68ch" }}>
               {today.verses[0].text}
             </p>
             <p style={{ fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", margin: "0 0 14px" }}>
-              <Link href={`/theology/passage?ref=${encodeURIComponent(today.verses[0].ref)}`} style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{today.verses[0].ref} →</Link> · {today.label} · shortened; read the full passage
+              <Link href={`/theology/passage?ref=${encodeURIComponent(today.verses[0].ref)}`} style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{today.verses[0].ref} →</Link> · {today.label} · Berean Standard Bible
             </p>
             <button onClick={() => openTopic(today.id, "browse")} style={{ ...smallActionStyle }}>
               Read the whole entry

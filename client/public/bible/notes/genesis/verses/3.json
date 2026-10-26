@@ -1,0 +1,435 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "A new character enters without introduction beyond one adjective: the serpent is crafty, and it is one of the creatures \"the LORD God had made\". Its first words are a question that distorts the command of 2:16-17, turning God's generous ‘every tree but one’ into a suspicion that God withholds.",
+      "grammar": "Arum (\"crafty\") echoes arummim, ‘naked’, in the verse just before (2:25). The serpent's opening, af ki, is hard to translate. It can be a question, as in the BSB (‘Is it really true that...?’), or an exclamation of mock surprise (‘So God has actually said...’), possibly left unfinished. Either way it plants doubt without making a claim. The serpent speaks of ‘God’ (Elohim) and never uses the personal name, and the woman follows him; through verses 1 to 5 the covenant name ‘the LORD God’ disappears from the conversation. The verb \"You must not eat\" is plural (tokhelu), addressed to both the woman and the man.",
+      "words": [
+        "H5175",
+        "H6175",
+        "H0637",
+        "H0430G"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The first temptation is not a direct denial but a question that recasts God's word as a restriction and God himself as stingy. Sin begins in the mind's picture of God before it reaches the hand."
+        },
+        {
+          "id": "angels",
+          "note": "Genesis presents the serpent as a creature, not a god, and does not name a power behind it. Later Scripture identifies the tempter with the devil, calling him the ancient serpent (Revelation 12:9) and warning that he deceived Eve by his cunning (2 Corinthians 11:3)."
+        }
+      ],
+      "refs": [
+        "2 Corinthians 11:3",
+        "Revelation 12:9",
+        "Numbers 22:28",
+        "Matthew 10:16"
+      ]
+    },
+    {
+      "v": "2-3",
+      "context": "The woman corrects the serpent: they may eat from the trees, only one is forbidden. But her version differs from God's in three small ways. She drops ‘freely’ and ‘every’, she adds ‘or touch it’, and she softens ‘you will surely die’ to ‘or you will die’.",
+      "grammar": "God's permission in 2:16 used an intensive construction, akhol tokhal, ‘eating you may eat’; the woman says simply nokhel, ‘we may eat’. His warning was mot tamut, ‘dying you will die’; she says pen temutun, ‘lest you die’, which states the consequence without the emphatic doubling God used. The added clause \"or touch it\" (tigge'u) is not in the original command. She also identifies the tree only by location, ‘in the middle of the garden’, the place where 2:9 set the tree of life as well.",
+      "words": [
+        "H0398",
+        "H5060",
+        "H6435",
+        "H4191"
+      ],
+      "theology": [
+        {
+          "id": "revelation",
+          "note": "The scene turns on the exact wording of God's word. Once the command is shrunk in generosity, sharpened in strictness, and softened in consequence, it is easier to set aside. Interpreters differ on whether ‘or touch it’ is a distortion or a well-meant fence around the command, but either way the conversation is now about a reshaped word."
+        }
+      ],
+      "refs": [
+        "Genesis 2:16-17",
+        "Deuteronomy 4:2",
+        "Proverbs 30:5-6"
+      ]
+    },
+    {
+      "v": "4-5",
+      "context": "The serpent now contradicts God outright and supplies a motive: God knows that eating will open their eyes and make them like God. The lie is mixed with truth, since their eyes will be opened (verse 7) and God himself will say they have become like one of us (verse 22).",
+      "grammar": "\"You will not surely die\" puts the negative lo before the very construction God used in 2:17, lo mot temutun, so the denial targets the certainty itself: ‘you will not die, not surely’. In verse 5 \"God knows\" is a participle (yodea), a continuing knowing, and \"knowing good and evil\" is also a participle, plural (yode'e). Because the participle is plural, kelohim can be read ‘like God’ (most modern versions) or ‘like gods’ or ‘like divine beings’ (the King James Version reads ‘as gods’). \"Will be opened\" (nifkechu) is a Niphal, the passive of the verb for opening eyes.",
+      "words": [
+        "H4191",
+        "H3045",
+        "H6491",
+        "H0430G"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "The heart of the temptation is to become like God by taking what he has not given, deciding good and evil apart from him. Jesus calls the devil a liar and a murderer from the beginning (John 8:44), and this verse is the pattern: a lie that leads to death."
+        }
+      ],
+      "refs": [
+        "John 8:44",
+        "Genesis 3:22",
+        "Isaiah 14:13-14",
+        "Philippians 2:6"
+      ]
+    },
+    {
+      "v": "6",
+      "context": "The decisive act is told in a rush of short verbs: she saw, she took, she ate, she gave, he ate. The three things she sees about the tree echo 2:9, where God made trees pleasing to the eye and good for food; this tree adds a third attraction, the promise of wisdom.",
+      "grammar": "\"Pleasing\" here is ta'avah, a word for strong longing or craving, stronger than the word used in 2:9. \"Desirable\" is nechmad, the same Niphal participle as 2:9, from chamad, the verb of the tenth commandment. \"For obtaining wisdom\" is lehaskil, a Hiphil infinitive of sakal, the verb for insight and success in Proverbs; the tree offers wisdom as something to be grasped. The phrase \"who was with her\" ('immah) raises the question of where the man was. Many interpreters read it, together with the plural verbs of verses 1 to 5, to mean he was present and silent throughout; others think it means only that he was nearby when she gave him the fruit.",
+      "words": [
+        "H8378",
+        "H2530A",
+        "H7919A",
+        "H5973A"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Sin works through goods rightly made: food, beauty, and wisdom are all God's gifts. The wrong lies in seizing them against his word. Readers have long noticed a thematic parallel in 1 John 2:16 (the desires of the flesh, the desires of the eyes, the pride of life), though John does not cite this verse."
+        }
+      ],
+      "refs": [
+        "Genesis 2:9",
+        "1 John 2:16",
+        "James 1:14-15",
+        "1 Timothy 2:14",
+        "Romans 5:12"
+      ]
+    },
+    {
+      "v": "7",
+      "context": "The serpent's promise comes true in the worst way: their eyes are opened, and what they see is their own nakedness. Their first act as people who know good and evil is to cover themselves.",
+      "grammar": "\"Were opened\" (vattippakachnah) is the same passive verb the serpent used, now fulfilled. \"Naked\" here is erummim, a slightly different form from 2:25's arummim; elsewhere this form often describes the shameful exposure of the poor or the defeated (Deuteronomy 28:48, Ezekiel 16:7). \"Coverings\" is chagorot, belts or loincloths, the word used elsewhere for a girded waist; they cover only what they must.",
+      "words": [
+        "H6491",
+        "H5903",
+        "H8384",
+        "H2290B"
+      ],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Knowledge gained by disobedience brings shame, not freedom. The couple's openness to one another is lost first, before God even appears, and their response is to hide themselves behind something they have made."
+        }
+      ],
+      "refs": [
+        "Genesis 2:25",
+        "Genesis 3:21",
+        "Revelation 3:18"
+      ]
+    },
+    {
+      "v": "8",
+      "context": "They hear God coming and hide among the trees. The garden that God planted with every tree for their food now serves as a place to hide from him.",
+      "grammar": "Qol means both \"voice\" and ‘sound’, so the verse may describe the sound of God moving through the garden. \"Walking\" is mithallekh, a Hithpael participle of halakh, to walk about or go to and fro. The same form describes God walking among Israel in the camp (Deuteronomy 23:14) and moving about in the tent and tabernacle (2 Samuel 7:6). \"Hid themselves\" (vayyitchabbe) is reflexive: they are both the ones hiding and the ones hidden.",
+      "words": [
+        "H6963H",
+        "H1980I",
+        "H7307H",
+        "H2244"
+      ],
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The verb for God's walking is the language of his presence in Israel's sanctuary (Leviticus 26:11-12). Eden is where God and humanity met, and the tragedy of this verse is that the people flee the very presence they were made for."
+        }
+      ],
+      "refs": [
+        "Leviticus 26:11-12",
+        "Deuteronomy 23:14",
+        "2 Samuel 7:6",
+        "Psalm 139:7-12"
+      ]
+    },
+    {
+      "v": "9",
+      "context": "God calls to the man with a question. The man is the one who received the command in 2:16-17, and God addresses him first.",
+      "grammar": "Ayyekkah (\"Where are you?\") is one word in Hebrew, the question particle with a singular ‘you’. It is not a request for information, as the following questions make clear, but a summons: an invitation to come out and answer.",
+      "words": [
+        "H0335",
+        "H7121G"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "The first word God speaks to fallen humanity is a question that seeks them out. Before judgment comes a call, and the pattern holds through Scripture to the Son of Man who came to seek and to save the lost (Luke 19:10)."
+        }
+      ],
+      "refs": [
+        "Luke 19:10",
+        "Genesis 4:9",
+        "Luke 15:4"
+      ]
+    },
+    {
+      "v": "10-11",
+      "context": "The man's answer tells the sequence: I heard, I was afraid, I was naked, I hid. God answers with two questions, the second of which names the real issue by quoting his own command.",
+      "grammar": "Va'ira (\"I was afraid\") is the first time fear is mentioned in the Bible. The man explains his fear by nakedness, not by disobedience. God's first question, \"Who told you...?\" uses higgid, a Hiphil of the verb to declare or inform, as if asking where this new knowledge came from. The second repeats the wording of 2:17 exactly, the tree \"of which I commanded you not to eat\" (tsivvitikha), so the man is confronted with the word he broke.",
+      "words": [
+        "H3372G",
+        "H5903",
+        "H5046",
+        "H6680"
+      ],
+      "theology": [
+        {
+          "id": "fear-of-god",
+          "note": "The first fear in Scripture is the terror of a guilty conscience, which drives the sinner away from God. The Bible later speaks of a different fear of the LORD, reverent trust that draws near, and the New Testament speaks of love that casts out fear (1 John 4:18)."
+        }
+      ],
+      "refs": [
+        "1 John 4:18",
+        "Genesis 2:17",
+        "Psalm 32:3-5"
+      ]
+    },
+    {
+      "v": "12-13",
+      "context": "Neither confesses plainly. The man blames the woman, and behind her God, who gave her. The woman blames the serpent. Both end with the same two words, ‘and I ate’, the truth that sits at the bottom of every excuse.",
+      "grammar": "The man's phrase \"whom You gave me\" is literally ‘whom you gave to be with me’, natattah 'immadi. He places the gift, and so the giver, at the start of his defense. God's question to the woman, \"What is this you have done?\", is a form of accusation repeated later in Genesis (4:10, 12:18, 29:25). \"Deceived\" is hishshi'ani, a Hiphil of nasha, to lead astray by false promises; it is used of the Assyrian taunt that Hezekiah is deceiving Jerusalem about God's help (2 Kings 18:29) and of false prophets (Jeremiah 29:8). Paul uses the idea when he says Eve was deceived (2 Corinthians 11:3, 1 Timothy 2:14).",
+      "words": [
+        "H5414G",
+        "H5978",
+        "H5377",
+        "H6213A"
+      ],
+      "theology": [
+        {
+          "id": "repentance",
+          "note": "The verses show sin's instinct to explain rather than confess. The rest of Scripture treats honest confession as the way back to God (Psalm 32:5, 1 John 1:9), exactly what neither the man nor the woman offers here."
+        }
+      ],
+      "refs": [
+        "Psalm 32:5",
+        "1 John 1:8-9",
+        "Proverbs 28:13",
+        "2 Corinthians 11:3"
+      ]
+    },
+    {
+      "v": "14",
+      "context": "God questions the serpent not at all. He pronounces judgment directly, beginning the three sentences that run from serpent to woman to man. The serpent alone, of the three, is cursed.",
+      "grammar": "Arur attah, \"cursed are you\", uses the passive participle of arar, the form of the formal curses in Deuteronomy 27:15-26. The preposition min (\"above\") can be read as a comparison, ‘more cursed than’ all animals, or as separation, ‘cursed and set apart from’ them. \"On your belly will you go, and dust you will eat\" are imperfects describing a lasting condition. Eating dust is an image of humiliation and defeat elsewhere (Psalm 72:9, Micah 7:17).",
+      "words": [
+        "H0779",
+        "H1512",
+        "H6083"
+      ],
+      "history": "In the ancient Near East, to put a foot on an enemy or have him lick the dust was the standard picture of conquest, and royal images show defeated kings bowing to the ground. Whether Genesis implies the serpent once moved differently is not said; the point is that its posture becomes a permanent sign of defeat.",
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Judgment begins with the tempter. God does not treat the serpent as a partner to be reasoned with; he condemns it outright. Isaiah's vision of the new creation keeps this sentence in force, with dust as the serpent's food even when wolf and lamb feed together (Isaiah 65:25)."
+        }
+      ],
+      "refs": [
+        "Deuteronomy 27:15",
+        "Micah 7:17",
+        "Psalm 72:9",
+        "Isaiah 65:25"
+      ]
+    },
+    {
+      "v": "15",
+      "context": "The heart of the serpent's sentence, and the first promise in Scripture. God himself will set lasting hostility between the serpent and the woman, and between their offspring, and the conflict will end with the serpent's head struck by the woman's seed.",
+      "grammar": "\"Enmity\" (evah) is a strong word, used of deadly hostility between persons (Numbers 35:21-22). God is the subject, \"I will put\", so the conflict is his doing, not merely a natural aversion. Zera, \"seed\", is grammatically singular and can mean one offspring or many, so the pronoun that follows, hu (\"He\"), is masculine singular in agreement. The same verb, shuf, is used for both blows, which is why some translations read ‘bruise’ twice and the BSB distinguishes \"crush\" and \"strike\". The verb is rare and its exact sense is debated. The contrast of body parts, head and heel, carries the weight: a wound to the heel is survivable, a blow to the head is not.",
+      "words": [
+        "H0342",
+        "H2233H",
+        "H1931",
+        "H7779",
+        "H7218A"
+      ],
+      "text": "The Septuagint renders the pronoun with the masculine autos (‘he’) even though its word for seed is neuter, a choice some scholars see as an early personal reading of the promise. It also translates the verb as ‘watch for’ or ‘lie in wait for’. The Latin Vulgate reads ipsa, ‘she’, which shaped later readings of the verse about Mary; the Hebrew pronoun is masculine.",
+      "theology": [
+        {
+          "id": "messiah",
+          "note": "The promise names no individual, but it establishes that evil will be defeated by a human descendant of the woman, and that the victory will come through suffering. Christian readers since the second century have heard here the first announcement of Christ's victory at the cross."
+        },
+        {
+          "id": "atonement",
+          "note": "The one who crushes the serpent is himself wounded. The New Testament presents Christ's death as the defeat of the devil (Hebrews 2:14, Colossians 2:15), a victory won through being struck."
+        }
+      ],
+      "refs": [
+        "Romans 16:20",
+        "Galatians 4:4",
+        "Hebrews 2:14",
+        "Revelation 12:9-17",
+        "1 John 3:8"
+      ]
+    },
+    {
+      "v": "16",
+      "context": "The woman's sentence touches the two centers of her life in the ancient world, bearing children and her marriage. Neither is taken away; both are made painful.",
+      "grammar": "\"I will sharply increase\" is harbah arbeh, an infinitive absolute with the finite verb, the same intensifying construction as ‘you will surely die’. \"Pain in childbirth\" is literally ‘your pain and your conception’ (itsvonekh veheronekh), usually read as a pair expressing one idea, ‘your pain in pregnancy’. Itsavon is the same word the man's sentence uses for his toil in verse 17. The last line is built exactly like 4:7, where sin's desire (teshuqah) is for Cain and he must rule (mashal) over it. The verb \"will rule\" (yimshol) is an imperfect, which here describes what will happen, not what God commands.",
+      "words": [
+        "H7235A",
+        "H6093",
+        "H2032",
+        "H8669",
+        "H4910"
+      ],
+      "theology": [
+        {
+          "id": "family",
+          "note": "The verse describes a marriage marred by sin: love bent toward control or dependence, and headship bent toward domination. Christians who differ on the roles of husbands and wives agree that ‘he will rule over you’ is part of the curse's disorder, not the ideal of 2:24, and that the gospel works against its harshness (Ephesians 5:25, Colossians 3:19)."
+        }
+      ],
+      "refs": [
+        "Genesis 4:7",
+        "Song of Solomon 7:10",
+        "John 16:21",
+        "Ephesians 5:25-28"
+      ]
+    },
+    {
+      "v": "17",
+      "context": "The man's sentence is the longest and begins with the charge: he listened to his wife's voice rather than God's command. The curse falls not on him but on the ground he was made from and was made to serve.",
+      "grammar": "\"Listened to the voice of\" (shamata leqol) is the Hebrew idiom for obeying; the man obeyed the wrong voice. The ground is \"cursed\" with the same passive participle as the serpent (arurah). \"Because of you\" (ba'avurekha) can also be read ‘for your sake’, and interpreters differ on whether the curse on the ground is only a punishment or also a discipline for the man's good. \"Through toil\" is be'itsavon, the woman's word for pain in verse 16.",
+      "words": [
+        "H8085G",
+        "H0779",
+        "H0127G",
+        "H6093"
+      ],
+      "text": "The Septuagint reads ‘cursed is the ground in your works’, apparently reading a Hebrew word with one letter different (the letters for r and d are easily confused in Hebrew script). The standard Hebrew text's ‘because of you’ is followed by most translations.",
+      "theology": [
+        {
+          "id": "work",
+          "note": "Work itself is not the curse; it was given in 2:15. What changes is that the ground now resists, and labor becomes toil. Paul says that creation was subjected to frustration and waits for its own release (Romans 8:20-22)."
+        }
+      ],
+      "refs": [
+        "Romans 8:20-22",
+        "Genesis 5:29",
+        "Ecclesiastes 2:22-23"
+      ]
+    },
+    {
+      "v": "18-19",
+      "context": "The sentence continues: thorns and thistles, bread by sweat, and at the end a return to the ground. The man was taken from the ground in 2:7, and now he will go back to it. The death threatened in 2:17 is pronounced here as the end of every human life.",
+      "grammar": "Qots vedardar, \"thorns and thistles\", appear together again in Hosea 10:8 over ruined altars. \"The plants of the field\" (esev hassadeh) is the phrase of 2:5, where such plants had not yet appeared because no one worked the ground; now they come only by hard labor. \"Brow\" is literally af, ‘nostrils’ or ‘face’, the same word as the nostrils into which God breathed life in 2:7. The face that received God's breath will now sweat until it returns to dust. \"For dust you are\" is a verbless clause, stating what the man is, and \"you shall return\" (tashuv) closes the sentence.",
+      "words": [
+        "H6975",
+        "H1863",
+        "H6212",
+        "H0639I",
+        "H7725G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Death is presented as God's sentence on sin, the unmaking of what 2:7 made. Scripture keeps this verse's words (Psalm 90:3, Ecclesiastes 3:20) and treats death as an enemy, the last to be destroyed (1 Corinthians 15:26)."
+        },
+        {
+          "id": "humanity",
+          "note": "Human beings remain dust, bound to the earth they came from. The New Testament's hope does not deny this but answers it with resurrection: the body sown in weakness is raised in power (1 Corinthians 15:42-49)."
+        }
+      ],
+      "refs": [
+        "Psalm 90:3",
+        "Ecclesiastes 3:20",
+        "Psalm 104:29",
+        "1 Corinthians 15:21-22",
+        "1 Corinthians 15:26"
+      ]
+    },
+    {
+      "v": "20",
+      "context": "Immediately after the sentence of death, the man names his wife Eve, ‘life’, and explains the name: she would be the mother of all the living. Placed here, the name reads as hope spoken in the shadow of death.",
+      "grammar": "Chavvah (\"Eve\") sounds like the Hebrew root for life (chay), and the narrator draws the connection with \"all the living\" (kol chay). This is the full naming formula, ‘called her name’ with shem, which 2:23 did not use. Hayetah (\"would be\") is a perfect, literally ‘she was’. It may be the narrator's comment from a later vantage point, or a way of speaking of the future as settled; either way the name looks forward to children not yet born.",
+      "words": [
+        "H2332",
+        "H2416A",
+        "H8034"
+      ],
+      "theology": [
+        {
+          "id": "hope",
+          "note": "The man has just heard that he will return to dust, yet he names his wife for life. Many interpreters read this as the first response of faith to the promise of verse 15, trusting that the woman's seed will come."
+        }
+      ],
+      "refs": [
+        "Genesis 4:1",
+        "Genesis 3:15",
+        "Acts 17:26"
+      ]
+    },
+    {
+      "v": "21",
+      "context": "Before sending them out, God makes clothing for the man and the woman and dresses them himself. The fig-leaf belts of verse 7 are replaced with garments God provides.",
+      "grammar": "\"Garments\" is kotnot, plural of kuttonet, a long tunic. It is the word for the tunics of Aaron and his sons (Exodus 28:40) and for Joseph's robe (37:3). The verb \"clothed\" (vayyalbishem) is a Hiphil of lavash, to put on clothes, and the same form describes Moses clothing Aaron's sons for their priesthood (Leviticus 8:13). The text says nothing about how the skins were obtained.",
+      "words": [
+        "H3801",
+        "H5785",
+        "H3847"
+      ],
+      "theology": [
+        {
+          "id": "salvation",
+          "note": "God covers the shame they could not adequately cover themselves. Many Christian interpreters have seen in the skins the first death of an animal on humanity's behalf and a hint of sacrifice; the text does not say so, and others read the act simply as God's care for people he is sending into a harsher world. Either way the image of God clothing sinners runs through Scripture (Isaiah 61:10, Galatians 3:27)."
+        }
+      ],
+      "refs": [
+        "Isaiah 61:10",
+        "Zechariah 3:3-5",
+        "Galatians 3:27",
+        "Revelation 3:18"
+      ]
+    },
+    {
+      "v": "22",
+      "context": "God speaks, as in 1:26, in the plural, and concludes that the man has become like one of us in knowing good and evil. The danger is that he might now take from the tree of life and live forever in his fallen state.",
+      "grammar": "\"Like one of Us\" returns to the plural of 1:26, explained in the same ways (God speaking to his heavenly court, a plural of deliberation, or, in Christian reading, a hint of plurality in God). Ve'attah pen, \"And now, lest\", begins a sentence that never finishes. The Hebrew breaks off, which the BSB marks with an ellipsis, and the next verse supplies God's action in place of the missing clause. Grammarians call this a broken-off sentence (aposiopesis). \"Forever\" is le'olam, into the far, unseen future.",
+      "words": [
+        "H0259",
+        "H6435",
+        "H2416E",
+        "H5769G"
+      ],
+      "theology": [
+        {
+          "id": "judgment",
+          "note": "Exclusion from the tree of life is judgment, but many readers have seen mercy in it as well: endless life in a state of sin and alienation would be no gift. The tree reappears in Revelation, open to those who have been washed (Revelation 22:14)."
+        }
+      ],
+      "refs": [
+        "Genesis 1:26",
+        "Genesis 11:7",
+        "Revelation 22:14",
+        "Revelation 2:7"
+      ]
+    },
+    {
+      "v": "23-24",
+      "context": "God sends the man out of Eden to work the ground he came from, and drives him out. Cherubim and a flaming sword now guard the way to the tree of life. The man who was put in the garden to work and keep it is outside, and others keep its way.",
+      "grammar": "Two verbs describe the expulsion. Vayshallechehu (\"banished\") is a Piel of shalach, to send away; vaygaresh (\"drove out\") is stronger, used of Cain being driven from the ground (4:14) and of Pharaoh driving Israel out (Exodus 6:1). \"Stationed\" is vayyashken, a Hiphil of shakan, to dwell, the root of mishkan, the tabernacle. \"Whirling\" is mithhappekhet, a Hithpael participle, ‘turning this way and that’. \"To guard\" is lishmor, the same verb as ‘keep’ in 2:15: the guarding the man was given is now done against him.",
+      "words": [
+        "H7971G",
+        "H1644G",
+        "H7931",
+        "H3742",
+        "H8104H"
+      ],
+      "history": "Cherubim (keruvim) in the Old Testament are guardian beings associated with God's throne and presence. Two golden cherubim stood over the ark (Exodus 25:18-22), cherubim were woven into the veil of the tabernacle (Exodus 26:31), and Ezekiel describes them in his visions of God's glory (Ezekiel 10). The tabernacle's entrance faced east (Numbers 3:38), so Eden's eastern gate guarded by cherubim anticipates the way into Israel's sanctuary.",
+      "theology": [
+        {
+          "id": "temple",
+          "note": "The guarded eastern entrance and the cherubim make Eden the pattern for the tabernacle, where access to God's presence was barred by a curtain woven with cherubim. The New Testament says that way was opened by Christ's death (Hebrews 10:19-20), and the last chapter of the Bible reopens the tree of life (Revelation 22:2)."
+        },
+        {
+          "id": "exile",
+          "note": "The story of humanity outside the garden begins here. Genesis will keep moving people east, away from God's presence (4:16, 11:2), and Israel's own later exile from its land repeats this first banishment."
+        }
+      ],
+      "refs": [
+        "Exodus 26:31",
+        "Hebrews 10:19-20",
+        "Ezekiel 28:14",
+        "Revelation 22:1-3",
+        "Genesis 4:16"
+      ]
+    }
+  ]
+}

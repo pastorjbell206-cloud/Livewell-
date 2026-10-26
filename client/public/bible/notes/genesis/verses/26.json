@@ -1,0 +1,215 @@
+{
+  "verses": [
+    {
+      "v": "1",
+      "context": "The chapter opens with a famine and immediately separates it from the one in Abraham's day (Genesis 12:10), as if to warn the reader that what follows will sound familiar. Isaac heads not straight for Egypt but to Gerar, on the edge of the Negev, where his father had once lived (Genesis 20:1).",
+      "grammar": "The Hebrew is careful to say this is a famine ‘besides the first famine’ (millevad haraav harishon). The narrator knows the story will echo Genesis 12 and 20 and wants the reader to hear the echo as deliberate. Gerarah ends with the Hebrew directional suffix, ‘toward Gerar’, so the verse can be read as describing the direction of travel: Isaac was moving south and west, the road that led on to Egypt.",
+      "words": ["H7458", "H7223H", "H1642"],
+      "history": "Gerar is usually located in the western Negev between Gaza and Beersheba, and many archaeologists identify it with Tel Haror. The title \"king of the Philistines\" raises the question already discussed for Genesis 21: the Philistines known from later history settled on the southern coast of Canaan around 1200 BC, long after the usual dates for the patriarchs. Some take the title as a later writer naming the region by the people his readers knew there; others think earlier Aegean-related groups had already settled in the area. Unlike the later Philistines with their five cities, this Abimelech rules one town and deals with Isaac as a neighbor.",
+      "refs": ["Genesis 12:10", "Genesis 20:1-2", "Genesis 21:32-34", "Ruth 1:1"]
+    },
+    {
+      "v": "2-3",
+      "context": "The LORD appears to Isaac for the first time and blocks the road to Egypt. Isaac is to stay in the land as a foreigner, and in return God promises his presence, his blessing, the land, and the fulfillment of the oath sworn to Abraham on Mount Moriah (Genesis 22:16-18).",
+      "grammar": "\"Do not go down\" is al plus an imperfect, the form Hebrew uses for an immediate, specific prohibition (the more general, lasting prohibition uses lo). Two verbs for living follow. Shekhon (\"settle\") means to dwell or camp; gur (\"Stay in this land as a foreigner\") means to live as a ger, a resident alien without full rights of ownership, which is exactly how Hebrews 11:9 describes the patriarchs. \"I will be with you\" is veehyeh immakh; the verb form ehyeh is the one God uses when he promises Moses ‘I will be with you’ in Exodus 3:12 and then names himself in 3:14. \"These lands\" uses haël, a rare short form of ‘these’ found mostly in the books of Moses.",
+      "words": ["H0408", "H3381", "H7931", "H1481A", "H1961", "H0411"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "God does not give Isaac a new covenant; he confirms \"the oath that I swore to your father Abraham\". The promise passes to the next generation by God's own renewed word, and Isaac's first step as its heir is simply to stay where God puts him."
+        }
+      ],
+      "refs": ["Genesis 22:16-18", "Hebrews 11:9", "Exodus 3:12", "Genesis 28:15", "Psalm 105:8-11"]
+    },
+    {
+      "v": "4",
+      "context": "The promise continues with its three familiar parts: descendants like the stars, the land, and blessing for all nations. The wording follows God's oath after the binding of Isaac almost exactly (Genesis 22:17-18), so the son who lay on the altar now hears the promise that was sworn over him.",
+      "grammar": "\"Will be blessed\" translates vehitbarekhu, a Hithpael form of barakh. In Genesis 12:3, 18:18, and 28:14 the same promise uses the Niphal, but here and in 22:18 it is the Hithpael, which is often reflexive: ‘all nations will bless themselves by your offspring’, meaning they will invoke Isaac's descendants as the model when they pray for blessing. Other grammarians hold that both stems can carry a passive sense here, ‘will be blessed through’. The Septuagint translated with a passive, and Paul follows that line when he reads the promise as the gospel announced in advance to the nations (Galatians 3:8). The word for offspring, zera, is a collective singular, a point Paul presses in Galatians 3:16.",
+      "words": ["H1288", "H2233H", "H1471A", "H3556"],
+      "theology": [
+        {
+          "id": "mission",
+          "note": "Even at a moment of famine and fear, the promise to one family reaches past it to \"all nations of the earth\". God's dealings with Isaac are never only about Isaac's household; they are the channel of blessing for the world."
+        }
+      ],
+      "refs": ["Genesis 12:3", "Genesis 22:17-18", "Galatians 3:8", "Galatians 3:16", "Acts 3:25"]
+    },
+    {
+      "v": "5",
+      "context": "God gives the reason for the promise's continuation: Abraham's obedience. The verse closes the divine speech by looking back to the man whose trust showed itself in action, especially in Genesis 22, where the same reason was given (22:18).",
+      "grammar": "The verse opens with eqev asher, \"because\", a conjunction built on the noun aqev, ‘heel’ or ‘consequence’, the same word that gave Jacob his name in 25:26. It stresses result: this follows on from that. The four nouns that follow, mishmeret (\"charge\"), mitsvot (\"commandments\"), chuqqot (\"statutes\"), and torot (\"laws\"), are the vocabulary of the law of Moses, grouped in a way that recalls Deuteronomy 11:1. The first verb, shama beqoli, \"listened to My voice\", is the idiom for obeying.",
+      "words": ["H6118", "H8085H", "H4931", "H4687", "H2708", "H8451"],
+      "theology": [
+        {
+          "id": "law",
+          "note": "The verse describes a man before Sinai in the language of Sinai, which suggests that the law did not introduce a new kind of relationship with God. It gave shape to the same listening obedience that Abraham already practiced."
+        },
+        {
+          "id": "faith",
+          "note": "Genesis 15:6 says Abraham believed and it was counted to him as righteousness; this verse says he obeyed. James 2:21-23 reads the two together from Genesis 22: faith that is real acts, and Abraham's acts showed his faith complete."
+        }
+      ],
+      "refs": ["Genesis 22:18", "Genesis 15:6", "Deuteronomy 11:1", "James 2:21-23", "Hebrews 11:8"]
+    },
+    {
+      "v": "6-7",
+      "context": "Isaac obeys and stays in Gerar, and at once repeats his father's fear. Asked about Rebekah, he calls her his sister. Abraham's claim had been half true, since Sarah was his half sister (Genesis 20:12); Isaac's has no such cover, since Rebekah is his cousin's daughter.",
+      "grammar": "The verse lets the reader hear Isaac's inner reasoning in direct speech: ‘lest the men of the place kill me’, introduced by pen (\"lest\"), the Hebrew particle of fear and precaution. His reason, tovat mareh hi, ‘she is good of appearance’, repeats the description of Rebekah at the well in Genesis 24:16 and of Sarah in 12:11. The fear is the same as Abraham's in 20:11, almost word for word.",
+      "words": ["H3372G", "H6435", "H2896A", "H4758"],
+      "theology": [
+        {
+          "id": "sin",
+          "note": "Isaac has just been told \"I will be with you\" and still lies to protect himself. The verse is a plain picture of how sin runs in families: the son repeats his father's failure in his father's words, a generation after God rescued the father from it."
+        }
+      ],
+      "refs": ["Genesis 12:11-13", "Genesis 20:2", "Genesis 20:11-12", "Genesis 24:16"]
+    },
+    {
+      "v": "8",
+      "context": "Time passes and the lie holds, until the king happens to look out of a window. Unlike Pharaoh and the earlier Abimelech, who learned the truth through plague and a dream (Genesis 12:17, 20:3), this Abimelech learns it by seeing an ordinary moment of affection between husband and wife.",
+      "grammar": "Vehinneh (\"and look\") again puts the reader beside the observer: we see what Abimelech sees. Metsacheq (\"caressing\") is a Piel participle of tsachaq, the verb behind Isaac's name. The Piel of this verb has a wide range in Genesis: joking (19:14), playing or mocking (21:9), and making sport of someone (39:14). Here the context makes plain it is intimate play, the kind of touch no one gives a sister. \"Looked down\" is the Hiphil of shaqaf, a verb used in several stems for looking out from a height or through a window (as in 2 Kings 9:30-32 and Proverbs 7:6).",
+      "words": ["H6711", "H2009", "H8259", "H2474"],
+      "refs": ["Genesis 21:9", "Genesis 20:3", "Proverbs 5:18-19", "Proverbs 7:6"]
+    },
+    {
+      "v": "9-11",
+      "context": "Abimelech confronts Isaac, Isaac admits his fear, and the foreign king speaks with the clearer conscience: a lie about a wife could have brought guilt on a whole people. He then puts Isaac and Rebekah under royal protection, so the danger Isaac tried to avoid by lying is removed by the man he feared.",
+      "grammar": "Abimelech's \"really\" is akh, an emphatic particle, ‘surely, after all’. In verse 10, kimat (\"easily\") means ‘almost, a little more and’: one of the people very nearly lay with her. The word for guilt is asham, which later names the guilt offering required for wrongs against God's holy things or against a neighbor (Leviticus 5:14-6:7). The decree in verse 11 is mot yumat, an infinitive absolute with a passive imperfect, ‘dying he shall be put to death’, the exact formula of capital cases in the law of Moses (Exodus 21:12). \"Harms\" is literally ‘touches’ (hannogea), the verb Abimelech will pick up again in verse 29.",
+      "words": ["H0389", "H4592", "H0817", "H5060", "H4191"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "God protects the promised mother through the conscience of a Philistine king. No plague or dream is needed; God works through ordinary moral sense in people outside the covenant family, and the story does not flatter the covenant family by comparison."
+        }
+      ],
+      "refs": ["Genesis 20:9", "Genesis 12:18-19", "Exodus 21:12", "Leviticus 5:15", "Romans 2:14-15"]
+    },
+    {
+      "v": "12-14",
+      "context": "Isaac turns farmer in a dry land and reaps a hundredfold in the same year. The narrator attributes it at once to the LORD's blessing, and describes his rising wealth in flocks, herds, and servants, which makes his neighbors envious.",
+      "grammar": "Verse 13 uses a Hebrew construction for steady progress: vayyelekh halokh vegadel, literally ‘he went, going and growing great’, an infinitive absolute of halakh that expresses continuing action. The root gadal (‘to be great’) appears three times in the verse, so the grammar itself swells as his wealth does. \"Servants\" in verse 14 is avuddah, a collective word for a household of servants, used again of Job's great household (Job 1:3). \"Envied\" is the Piel of qana, the verb for jealousy or zeal.",
+      "words": ["H1980L", "H1431", "H1432", "H5657", "H7065"],
+      "theology": [
+        {
+          "id": "wealth",
+          "note": "Isaac's wealth is presented as a gift of the LORD, not an achievement, yet it immediately brings envy and conflict. The verse neither despises prosperity nor treats it as safe; blessing in the land still has to be lived out among resentful neighbors."
+        }
+      ],
+      "text": "The Hebrew says Isaac found ‘a hundred measures’ (meah shearim), an unusual expression. The Septuagint reads ‘a hundredfold of barley’, which appears to read the same consonants as seorim, ‘barley’. Most translations keep the Hebrew and render the sense as \"a hundredfold\".",
+      "refs": ["Matthew 13:8", "Proverbs 10:22", "Job 1:3", "Deuteronomy 8:17-18"]
+    },
+    {
+      "v": "15-17",
+      "context": "Envy turns into sabotage: the Philistines fill in the old wells Abraham's servants had dug. Abimelech then asks Isaac to leave, and Isaac moves only as far as the valley of Gerar, withdrawing without leaving the region.",
+      "grammar": "Abimelech's words in verse 16, atsamta mimmennu meod, \"you are much too powerful for us\", use the same verb that Pharaoh uses of the Israelites in Exodus 1:9, \"too numerous and too powerful for us\". The echo is striking: in both places a foreign ruler sees God's blessing on Abraham's family as a threat. \"Valley\" in verse 17 is nachal, a wadi, a streambed that runs with water only in the rainy season; digging in its bed could reach water below the surface, which is why Isaac's servants dig there in verse 19.",
+      "words": ["H6105A", "H5640A", "H6083", "H5158N"],
+      "history": "Stopping a well with earth was a recognized act of hostility in the ancient world, a way of making land unusable to someone else. Israel later used the same tactic in war: 2 Kings 3:19 and 3:25 describe stopping up every spring in Moab.",
+      "refs": ["Exodus 1:9", "2 Kings 3:19", "2 Kings 3:25", "Genesis 21:25"]
+    },
+    {
+      "v": "18",
+      "context": "Isaac reopens his father's wells and gives them back their old names. The act asserts continuity: Isaac is Abraham's heir in practice, restoring what his father had established and claiming it again under the names his father gave.",
+      "grammar": "The verse begins vayyashov ... vayyachpor, literally ‘he returned and dug’. When shuv is joined to a second verb like this it often means ‘to do again’, so the BSB renders it \"reopened\". The naming at the end is carefully symmetrical: he called them names ‘like the names that his father called them’. Two forms of the same verb, qara, frame the clause.",
+      "words": ["H7725J", "H2658", "H7121H", "H8034"],
+      "refs": ["Genesis 21:25-30", "Jeremiah 6:16", "Isaiah 12:3"]
+    },
+    {
+      "v": "19-21",
+      "context": "In the valley Isaac's servants strike a spring, and the herdsmen of Gerar claim it. Isaac names the well after the quarrel and digs another; that one is disputed too, and he names it after the hostility. The names turn each place into a record of what happened there.",
+      "grammar": "The well of verse 19 is a be'er mayim chayyim, literally ‘a well of living water’: flowing, spring-fed water rather than water collected in a cistern. The phrase is the one Jeremiah uses for God himself (Jeremiah 2:13) and that Jesus takes up in John 4:10. Esek is explained by hitasqu, a Hithpael of asaq, ‘they contended with him’, a verb found only here in the Old Testament. Sitnah comes from the root satan, ‘to oppose, accuse’, the root that gives the noun satan, ‘adversary’; Ezra 4:6 uses sitnah for a written accusation.",
+      "words": ["H2416A", "H6229", "H6230", "H7856", "H7378"],
+      "refs": ["Jeremiah 2:13", "John 4:10-14", "Ezra 4:6", "Romans 12:18"]
+    },
+    {
+      "v": "22",
+      "context": "Isaac moves further off and digs again, and this time there is no quarrel. His naming of Rehoboth is the first speech of his in the chapter that is not about fear, and it gives the LORD the credit for the space.",
+      "grammar": "\"Moved on\" is vayyatteq, a Hiphil of ataq, ‘to move away, shift’. Isaac's explanation turns on two verbs. Hirchiv (\"has made room\") is the Hiphil of rachav, ‘to make wide’, the verb the Psalms use for God bringing someone out of distress into a broad place. Ufarinu (\"we will be fruitful\") is the verb of the creation blessing (Genesis 1:28) and of the promise to Abraham (17:6). \"At last\" renders ki attah, literally ‘for now’.",
+      "words": ["H6275", "H7337", "H6509", "H7344G"],
+      "theology": [
+        {
+          "id": "providence",
+          "note": "Isaac does not win the wells by force; he yields until God gives room. The verse names God as the one who makes space for his people in a hostile land, a confession that recurs in the Psalms: \"In my distress I called to the LORD\", and the Hebrew goes on to say that he answered in a broad place (Psalm 118:5)."
+        }
+      ],
+      "refs": ["Psalm 4:1", "Psalm 18:19", "Psalm 118:5", "Genesis 1:28", "Matthew 5:5"]
+    },
+    {
+      "v": "23-24",
+      "context": "Isaac goes up to Beersheba, the place of Abraham's oath and tamarisk tree (Genesis 21:31-33), and that same night the LORD appears to him a second time. The words answer the chapter's tension: the man who lied from fear is told not to fear.",
+      "grammar": "\"I am the God of your father Abraham\" is the first time God identifies himself by a patriarch's name in this way; the formula grows with each generation until God introduces himself to Moses as the God of Abraham, Isaac, and Jacob (Exodus 3:6). \"Do not be afraid\" (al tira) repeats what God said to Abraham in Genesis 15:1. \"For I am with you\" (ki ittekha anokhi) puts the pronoun ‘I’ last for emphasis. \"My servant Abraham\" is God's first use in Genesis of the title avdi, ‘my servant’, later given to Moses, David, and the servant of Isaiah.",
+      "words": ["H0430G", "H3372G", "H0595", "H5650", "H5668"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "The blessing is promised \"for the sake of My servant Abraham\". God's covenant with one generation carries weight for the next; Isaac receives what God promised another man, and the same logic runs through God's later mercy to Judah for David's sake (1 Kings 11:12-13)."
+        }
+      ],
+      "refs": ["Genesis 15:1", "Exodus 3:6", "Numbers 12:7", "1 Kings 11:12-13", "Isaiah 41:8-10"]
+    },
+    {
+      "v": "25",
+      "context": "Isaac answers God's appearance with the three marks of a settled life under God: an altar, a tent, and a well. It is the only altar Isaac builds in Genesis, and the phrase \"called on the name of the LORD\" repeats what Abraham did at Bethel and at Beersheba itself (Genesis 12:8, 21:33).",
+      "grammar": "\"Called on the name\" (qara beshem) means to worship by invoking God by name, in prayer and praise; it first appears in Genesis 4:26. For the digging, the verse uses karah, a different and less common verb than chafar, which the chapter has used for all the other wells. Karah is also used in the Song of the Well in Numbers 21:18, alongside chafar, so the two verbs are near synonyms, but the change of word marks this well as a new beginning.",
+      "words": ["H4196", "H7121G", "H3738B", "H0875"],
+      "theology": [
+        {
+          "id": "prayer",
+          "note": "God's word to Isaac is answered with worship before anything else. The order of the verse, altar, then tent, then well, is the order of a life that puts calling on God before securing its own needs."
+        }
+      ],
+      "refs": ["Genesis 4:26", "Genesis 12:8", "Genesis 21:33", "Numbers 21:16-18"]
+    },
+    {
+      "v": "26-27",
+      "context": "The men who drove Isaac off now come to him: the king, his adviser, and his army commander. Isaac's reply is blunt and names the hostility they would prefer to forget.",
+      "grammar": "Ahuzzath is called mereehu, \"his adviser\", literally ‘his friend’. The ‘friend’ of a king was a title of a trusted royal counselor: Hushai is \"David's friend\" (2 Samuel 15:37), and Zabud is \"adviser to the king\" under Solomon (1 Kings 4:5), where the BSB renders the same title. Isaac's question uses maddua (\"why\"), which asks for a reason, and his charge is sharp: ‘you hated me’ (senetem) ‘and sent me away’ (the Piel of shalach, the verb for driving someone off).",
+      "words": ["H4828", "H6369", "H8130", "H7971G"],
+      "history": "Phicol also appears with an Abimelech of Gerar in Genesis 21:22, around eighty years earlier by the story's timeline. Interpreters differ on whether these are the same men, living very long lives, or whether Abimelech and perhaps Phicol were names or titles used in the ruling family over generations. Ahuzzath appears only here.",
+      "refs": ["Genesis 21:22", "2 Samuel 15:37", "1 Kings 4:5"]
+    },
+    {
+      "v": "28-29",
+      "context": "Abimelech's party explains why they have come: they can see that the LORD is with Isaac, and they want a sworn treaty. Their account of their own behavior is generous to themselves, but they end by calling Isaac \"blessed by the LORD\", the confession the chapter has been building toward.",
+      "grammar": "\"We can plainly see\" is raoh rainu, an infinitive absolute with the finite verb, ‘seeing we have seen’, a Hebrew way of adding certainty. The treaty has two names: alah (\"oath\"), a sworn agreement carrying a curse on whoever breaks it, and berit (\"covenant\"). In verse 29 the clause \"that you will not harm us\" begins with im, ‘if’; in Hebrew oaths a bare ‘if you do harm’ means ‘you will not’, with the curse left unspoken. Their claim ‘we have not touched you’ picks up nagah from verse 11. \"Blessed by the LORD\" is berukh YHWH, a passive participle naming a settled state.",
+      "words": ["H7200G", "H0423", "H1285", "H5060", "H1288"],
+      "theology": [
+        {
+          "id": "covenant",
+          "note": "Outsiders now recognize the covenant blessing and seek peace with its bearer, a small first instance of the promise in verse 4 that the nations would find blessing in relation to Abraham's family. The recognition comes before Isaac has done anything to earn it."
+        }
+      ],
+      "refs": ["Genesis 21:22-24", "Genesis 12:2-3", "Proverbs 16:7", "Genesis 31:44"]
+    },
+    {
+      "v": "30-31",
+      "context": "Isaac responds with hospitality. A feast seals the agreement, oaths follow in the morning, and Isaac sends his visitors away in peace. The verb Isaac used for being driven out in verse 27 is now used of him sending them home.",
+      "grammar": "\"Feast\" is mishteh, a noun from shatah, ‘to drink’, so it means a banquet or drinking feast. The oath is sworn ‘each man to his brother’ (ish leachiv), the Hebrew idiom for ‘to one another’, which puts Isaac and the Philistines on terms of formal brotherhood. The Piel of shalach, used in verse 27 for Isaac's expulsion, now describes Isaac sending them away \"in peace\" (beshalom), a quiet reversal.",
+      "words": ["H4960", "H7650", "H0251G", "H7971G", "H7965G"],
+      "history": "Covenants in the ancient Near East were commonly sealed with a shared meal, which bound the parties as those who had eaten together. Genesis 31:54 shows Jacob and Laban doing the same after their treaty, and at Sinai Israel's elders eat and drink before God when the covenant is ratified (Exodus 24:11).",
+      "refs": ["Genesis 31:44-54", "Exodus 24:11", "Genesis 21:27"]
+    },
+    {
+      "v": "32-33",
+      "context": "On the very day of the treaty, Isaac's servants report water. Isaac names the well Shibah, and the narrator explains that the town is still called Beersheba. The oath and the water arrive together, as if God were confirming the peace.",
+      "grammar": "Shibah is shivah, which can mean both ‘oath’ and ‘seven’, the same wordplay Genesis 21:28-31 builds on seven lambs and a sworn oath. Beersheba is then heard as ‘well of the oath’. The phrase ad hayyom hazzeh, \"to this day\", speaks from the standpoint of a later narrator for whom Beersheba was a known city.",
+      "words": ["H7656", "H0884", "H4672", "H3117L"],
+      "history": "Beersheba lay at the southern edge of settled Israel; \"from Dan to Beersheba\" became the stock expression for the whole land (Judges 20:1, 1 Samuel 3:20). The excavated site of Tel Beersheba, a few miles east of the modern city, was a fortified town of the Israelite monarchy, with a large well near its gate. Genesis records two naming stories, here and in 21:31. Some interpreters see Isaac renewing the name his father gave, just as he renamed the other wells in verse 18; others see two traditions about the name's origin preserved side by side.",
+      "text": "The Septuagint reads ‘we did not find water’ in verse 32. The Hebrew for ‘to him’ (lo) and ‘not’ (lo) sound the same and differ by one letter, and the Greek translators apparently read the negative. The standard Hebrew, followed by the BSB, has the servants report success.",
+      "refs": ["Genesis 21:28-31", "Judges 20:1", "1 Samuel 3:20", "Amos 5:5"]
+    },
+    {
+      "v": "34-35",
+      "context": "The chapter ends with a two-verse notice that looks forward rather than back. Esau marries two Hittite women at forty, the age at which Isaac married (25:20), and the marriages grieve both parents. The note prepares for Rebekah's complaint in 27:46 and Isaac's instruction to Jacob in 28:1.",
+      "grammar": "Verse 35 says the wives were morat ruach, literally ‘bitterness of spirit’, to Isaac and Rebekah. Morah is related to the verb marar, ‘to be bitter’, and ruach here means the inner life, the mood or spirit. The phrase names a lasting sorrow, not a single quarrel.",
+      "words": ["H4786", "H7307G", "H2850", "H3947I"],
+      "theology": [
+        {
+          "id": "family",
+          "note": "Abraham had gone to great lengths to find Isaac a wife from his own kin, not from the Canaanites (24:3-4). Esau marries without regard for that concern, and the text records the effect on his parents. Marriage in Genesis is never only a private matter; it shapes whether a household carries the promise forward."
+        }
+      ],
+      "text": "Genesis 36:2-3 lists Esau's wives differently: Adah daughter of Elon the Hittite, Oholibamah, and Basemath daughter of Ishmael, while 28:9 names Ishmael's daughter Mahalath. The names do not line up neatly. Suggested explanations include women known by more than one name, which was common, and different family records preserved side by side; the text itself does not resolve it.",
+      "refs": ["Genesis 24:3-4", "Genesis 27:46", "Genesis 28:1", "Genesis 28:8-9", "Genesis 36:2-3"]
+    }
+  ]
+}

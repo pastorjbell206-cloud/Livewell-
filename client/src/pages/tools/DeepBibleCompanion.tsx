@@ -35,7 +35,7 @@ const BOOKS: BibleBook[] = [
         ref: "Genesis 1:1-2:3",
         summary: "Creation and the God who speaks order into chaos",
         text: "In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters. And God said, 'Let there be light,' and there was light...",
-        paraphrase: "Before anything existed, there was God. And the first thing God did was speak. Not command. Not demand. Speak. The universe is the overflow of a God who talks. Creation is not an accident. It is an utterance. And everything God spoke, God called good.",
+        paraphrase: "Before anything existed, there was God, and the first thing God did was speak. The universe is the overflow of a God who talks. Creation is not an accident; it is an utterance, and everything God spoke, God called good.",
         keyWords: [
           { word: "created", original: "bara (Hebrew)", meaning: "To create from nothing. Only God is the subject of bara in the Old Testament. Humans make (asah) and form (yatsar), but only God creates ex nihilo. The word carries divine exclusivity." },
           { word: "formless and void", original: "tohu wabohu (Hebrew)", meaning: "Chaos, emptiness, wasteland. A rhyming pair that describes the pre-creation state as disordered potential. God does not create from a blank canvas. God creates by ordering chaos. The pattern repeats through the entire Bible." },
@@ -189,7 +189,7 @@ const BOOKS: BibleBook[] = [
           structure: "The psalm moves in four movements: plea for mercy (v.1-2), confession of sin (v.3-6), petition for cleansing (v.7-12), and vow of praise (v.13-17). The climax is not the confession but the request for a new heart. David does not just want forgiveness. He wants transformation.",
         },
         scholars: [
-          { view: "Davidic authorship", summary: "David wrote this psalm after Nathan's confrontation. It is raw, personal, and historically grounded. The emotional authenticity makes it the model for all subsequent prayers of repentance.", proponents: "Derek Kidner, Willem VanGemeren, James Hamilton" },
+          { view: "Davidic authorship", summary: "David wrote this psalm after Nathan's confrontation. It is raw, personal, and historically grounded. The rawness of it makes it the model for all subsequent prayers of repentance.", proponents: "Derek Kidner, Willem VanGemeren, James Hamilton" },
           { view: "Liturgical adaptation", summary: "Whatever its original occasion, Psalm 51 was adapted for communal worship. The 'broken spirit' and 'contrite heart' (v.17) became Israel's understanding of what God actually wants — not more sacrifices but genuine repentance.", proponents: "Walter Brueggemann, James Mays" },
           { view: "New covenant anticipation", summary: "David's request for a 'new heart' and 'new spirit' anticipates Ezekiel 36 and Jeremiah 31 — the new covenant promise. David is asking for something the old covenant could not provide. The psalm points beyond itself to Christ.", proponents: "Tremper Longman, Bruce Waltke" },
         ],
@@ -213,7 +213,7 @@ const BOOKS: BibleBook[] = [
         ref: "Romans 8:1-17",
         summary: "No condemnation and the life the Spirit actually gives",
         text: "Therefore, there is now no condemnation for those who are in Christ Jesus, because through Christ Jesus the law of the Spirit who gives life has set you free from the law of sin and death...",
-        paraphrase: "The verdict is in. It is not guilty. Not 'not guilty because you tried really hard.' Not 'not guilty pending future review.' No condemnation. Period. And the reason is not your performance. It is your position — in Christ. The Spirit who raised Jesus from the dead now lives in you. Not as a guest. As a resident. And that Spirit is not a feeling you chase. It is a power that has already declared you free.",
+        paraphrase: "The verdict is in, and it is not guilty. Not 'not guilty because you tried really hard,' and not 'not guilty pending future review,' but no condemnation at all. And the reason is not your performance. It is your position, in Christ. The Spirit who raised Jesus from the dead now lives in you, not as a guest but as a resident, and that Spirit is not a feeling you chase. It is a power that has already declared you free.",
         keyWords: [
           { word: "no condemnation", original: "ouden katakrima (Greek)", meaning: "No verdict of guilt. A judicial declaration. The courtroom has spoken. The case is closed. Paul does not say 'less condemnation' or 'conditional acquittal.' He says none. Zero. The word is absolute." },
           { word: "in Christ Jesus", original: "en Christō Iēsou (Greek)", meaning: "Paul's shorthand for union with Christ. Not a location but an identity. To be 'in Christ' is to have your status, your future, and your identity determined by his story rather than your own." },
@@ -255,7 +255,7 @@ const BOOKS: BibleBook[] = [
         ref: "Romans 12:1-2",
         summary: "The transformed mind and what worship actually looks like on a Tuesday",
         text: "Therefore, I urge you, brothers and sisters, in view of God's mercy, to offer your bodies as a living sacrifice, holy and pleasing to God — this is your true and proper worship. Do not conform to the pattern of this world, but be transformed by the renewing of your mind.",
-        paraphrase: "After eleven chapters of theology, Paul finally says 'therefore.' Everything that follows is built on everything that came before. And the first command is not 'believe the right things' or 'attend the right church.' It is: give God your body. Your actual, physical, Monday-through-Saturday body. That is worship. Not a song. Not a feeling. Your life.",
+        paraphrase: "After eleven chapters of theology, Paul finally says 'therefore.' Everything that follows is built on everything that came before. And the first command is not 'believe the right things' or 'attend the right church.' It is: give God your body. Your actual, physical, Monday-through-Saturday body. That is worship, not a song or a feeling but your life.",
         keyWords: [
           { word: "living sacrifice", original: "thysian zōsan (Greek)", meaning: "In the old system, sacrifices were killed. They were done. Paul says: you are a sacrifice that stays alive. Which means you have to keep choosing it. A dead sacrifice is offered once. A living sacrifice crawls off the altar every morning and has to climb back on." },
           { word: "transformed", original: "metamorphousthe (Greek)", meaning: "Metamorphosis. The same word used for Jesus' transfiguration (Matthew 17:2). Not cosmetic change but fundamental alteration of form. Present tense: be being transformed. It is ongoing, not instantaneous." },
@@ -391,7 +391,7 @@ const BOOKS: BibleBook[] = [
         ref: "John 1:1-18",
         summary: "The Prologue and the scandal of God becoming flesh",
         text: "In the beginning was the Word, and the Word was with God, and the Word was God...",
-        paraphrase: "Before anything existed, there was a Word. Not a book. Not a statement. A person. And that person was with God and was God. And then the unthinkable happened: the Word became flesh. God moved into the neighborhood.",
+        paraphrase: "Before anything existed, there was a Word. Not a book. Not a statement. A person. And that person was with God and was God. And then the unthinkable happened: the Word became flesh. God, as Eugene Peterson rendered it in The Message, moved into the neighborhood.",
         keyWords: [
           { word: "Word", original: "logos (Greek)", meaning: "Word, Reason, Logic. In Stoic philosophy, logos was the rational principle holding the universe together. In Jewish wisdom tradition, it echoes the creative speech of Genesis 1 and personified Wisdom in Proverbs 8. John takes a Greek concept and fills it with Jewish meaning." },
           { word: "became flesh", original: "sarx (Greek)", meaning: "Flesh. Scandalous to Greeks who saw the physical as inferior to the spiritual. God did not merely appear in a body. God became flesh — vulnerable, tired, hungry, mortal. The scandal is not that God exists but that God became material." },
@@ -569,7 +569,7 @@ const BOOKS: BibleBook[] = [
         ref: "Ephesians 2:1-10",
         summary: "Dead, alive, and saved by grace through faith",
         text: "As for you, you were dead in your transgressions and sins, in which you used to live when you followed the ways of this world... But because of his great love for us, God, who is rich in mercy, made us alive with Christ even when we were dead in transgressions — it is by grace you have been saved. And God raised us up with Christ and seated us with him in the heavenly realms... For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works, so that no one can boast. For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.",
-        paraphrase: "You were dead. Not sick. Not struggling. Dead. And dead people do not save themselves. God did it. While you were still in the grave of your own making, God — out of sheer, unreasonable love — made you alive. Raised you up. Seated you in a position of honor you did not earn. You are saved by grace through faith. Not by your effort. Not by your resume. It is a gift. And the good works you do afterward? God prepared those in advance too. Even your obedience is a gift. You contribute nothing but the need.",
+        paraphrase: "You were dead. Not sick or struggling, but dead, and dead people do not save themselves. God did it. While you were still in the grave of your own making, God — out of sheer, unreasonable love — made you alive. Raised you up. Seated you in a position of honor you did not earn. You are saved by grace through faith. Not by your effort. Not by your resume. It is a gift. And the good works you do afterward? God prepared those in advance too. Even your obedience is a gift. You contribute nothing but the need.",
         keyWords: [
           { word: "dead", original: "nekros (Greek)", meaning: "Dead, lifeless, corpse. Not 'sick' or 'struggling' but dead. The metaphor is absolute: a dead person cannot contribute to their own resurrection. Spiritual death means total inability apart from God's intervention." },
           { word: "grace", original: "charis (Greek)", meaning: "Unmerited favor, gift. The word carries the sense of something beautiful freely given. Grace is not God overlooking your sin. Grace is God acting at full cost to himself while you contributed nothing but the need." },
@@ -883,7 +883,7 @@ const BOOKS: BibleBook[] = [
         ref: "Isaiah 52:13-53:12",
         summary: "The Suffering Servant and the God who saves through pain",
         text: "See, my servant will act wisely; he will be raised and lifted up and highly exalted... He was despised and rejected by mankind, a man of suffering, and familiar with pain... Surely he took up our pain and bore our suffering, yet we considered him punished by God... But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed.",
-        paraphrase: "This is the servant nobody wanted. Despised. Rejected. Acquainted with grief. And here is the scandal: his suffering was not his own punishment. It was ours. He carried what we deserved. He was pierced for what we did. And by his wounds — not despite them, but by them — we are healed. Pain became the instrument of salvation.",
+        paraphrase: "This is the servant nobody wanted. Despised. Rejected. Acquainted with grief. The scandal is that his suffering was not his own punishment; it was ours. He carried what we deserved. He was pierced for what we did. And by his wounds — not despite them, but by them — we are healed. Pain became the instrument of salvation.",
         keyWords: [
           { word: "servant", original: "eved (Hebrew)", meaning: "Servant, slave. The title carries echoes of Moses, David, and the prophets — all called 'servants.' But this servant surpasses them all: he does not merely speak God's word. He embodies God's redemption in his body." },
           { word: "pierced", original: "mecholal (Hebrew)", meaning: "To be pierced through, fatally wounded. The passive voice matters: this was done to him. He did not stumble into suffering. He was subjected to it — for our transgressions, not his own." },
@@ -1295,7 +1295,7 @@ const BOOKS: BibleBook[] = [
         historical: [
           "Jeremiah writes this letter around 597 BC, after Nebuchadnezzar's first deportation of Jews to Babylon. False prophets were telling the exiles that the captivity would be brief — two years, maybe less (Jeremiah 28: Hananiah's false prophecy). Jeremiah's letter contradicts them: settle in. This will last seventy years. The truth was harder than the lie, but it was the truth.",
           "The command to 'seek the peace of the city' was radical. Babylon had destroyed their temple, killed their people, and carried them from their homeland. God tells them not to resist, not to revolt, but to pray for their captors and invest in their city's welfare. This is the Old Testament root of Jesus' command to love your enemies.",
-          "Jeremiah 29:11 ('I know the plans I have for you') is the most quoted verse in America — printed on coffee mugs, graduation cards, and Instagram posts. But in context, it is addressed to exiles who will not see the fulfillment in their lifetime. The promise is corporate (to the community, not an individual) and delayed (seventy years). Quoting it as a personal promise of immediate comfort strips it of its actual power: God's faithfulness endures across generations.",
+          "Jeremiah 29:11 ('I know the plans I have for you') is printed on coffee mugs, graduation cards, and Instagram posts. But in context, it is addressed to exiles who will not see the fulfillment in their lifetime. The promise is corporate (to the community, not an individual) and delayed (seventy years). Quoting it as a personal promise of immediate comfort strips it of its actual power: God's faithfulness endures across generations.",
           "The false prophets in Babylon were telling the exiles what they wanted to hear: God will rescue you soon. Jeremiah tells them what they need to hear: God will sustain you through. The distinction between false comfort and true hope runs through the entire prophetic tradition. False prophets say 'peace, peace' when there is no peace (Jeremiah 6:14). True prophets say: the road is long, but God is faithful.",
         ],
         literary: {
@@ -1845,7 +1845,7 @@ function buildNotesText(book: BibleBook, ws: Workspace): string {
 
 const quietBtn = {
   padding: "0.6rem 1rem", minHeight: "44px", background: "none",
-  border: "1px solid var(--border, #e5e0d5)", borderRadius: "2px",
+  border: "1px solid var(--border)", borderRadius: "2px",
   color: "var(--ink, #14110C)", fontSize: "0.8rem",
   fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500, cursor: "pointer",
 } as const;
@@ -1858,7 +1858,7 @@ const panelEyebrow = {
 function StorageNote({ problem }: { problem: StorageProblem }) {
   if (problem === "none") return null;
   return (
-    <p style={{ fontSize: "0.8rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted, #666)", maxWidth: "560px", margin: "0 0 1.5rem" }}>
+    <p style={{ fontSize: "0.8rem", fontStyle: "italic", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "560px", margin: "0 0 1.5rem" }}>
       {problem === "blocked"
         ? "This browser is not letting the tool store anything, so notes and marks last only as long as this visit. Print or copy anything you want to keep."
         : "The notes saved earlier in this browser could not be read, so the workspace starts fresh. New notes will save as usual."}
@@ -1877,9 +1877,9 @@ function MarkToggle({ marked, label, onToggle }: { marked: boolean; label: strin
         display: "inline-flex", alignItems: "center", gap: "0.5rem",
         padding: "0.5rem 0.9rem", minHeight: "44px",
         background: marked ? "var(--charcoal, #1a1a1a)" : "none",
-        border: `1px solid ${marked ? "var(--charcoal, #1a1a1a)" : "var(--border, #e5e0d5)"}`,
+        border: `1px solid ${marked ? "var(--charcoal, #1a1a1a)" : "var(--border)"}`,
         borderRadius: "2px",
-        color: marked ? "var(--bone, #F5F0E6)" : "var(--ink-muted, #666)",
+        color: marked ? "var(--bone, #F5F0E6)" : "var(--ink-muted)",
         fontSize: "0.75rem", fontFamily: "var(--U, Inter, sans-serif)", fontWeight: 500,
         cursor: "pointer", whiteSpace: "nowrap",
       }}
@@ -1934,8 +1934,8 @@ function NoteField({ ariaLabel, initial, savedWord, onCommit }: {
   return (
     <div style={{ marginTop: "1.25rem" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "1rem", marginBottom: "0.4rem" }}>
-        <span style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted, #666)" }}>Your notes</span>
-        <span aria-live="polite" style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", color: "var(--ink-muted, #666)" }}>{showSaved ? savedWord : ""}</span>
+        <span style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--ink-muted)" }}>Your notes</span>
+        <span aria-live="polite" style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.7rem", color: "var(--ink-muted)" }}>{showSaved ? savedWord : ""}</span>
       </div>
       <textarea
         aria-label={ariaLabel}
@@ -1952,7 +1952,7 @@ function NoteField({ ariaLabel, initial, savedWord, onCommit }: {
         onBlur={() => commit(latest.current)}
         style={{
           width: "100%", boxSizing: "border-box", minHeight: "96px", padding: "0.75rem",
-          background: "var(--card)", border: "1px solid var(--border, #e5e0d5)", borderRadius: "2px",
+          background: "var(--card)", border: "1px solid var(--border)", borderRadius: "2px",
           fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.9rem", lineHeight: 1.6,
           color: "var(--ink, #14110C)", resize: "vertical",
         }}
@@ -2089,7 +2089,7 @@ export default function DeepBibleCompanion() {
     <Layout>
       <SEOMeta
         title="Deep Bible Study Companion — Seminary Depth, Kitchen-Table Language"
-        description="Study any passage with 6 layers: text, historical context, literary structure, scholarly views, application, and resources. PhD-level depth made accessible."
+        description="Study any passage with 6 layers: text, historical context, literary structure, scholarly views, application, and resources. Serious depth in plain language."
         structuredData={{ "@context": "https://schema.org", "@type": "WebApplication", name: "Deep Bible Study Companion", applicationCategory: "ReligiousApp", offers: { "@type": "Offer", price: "0" } }}
       />
 
@@ -2129,7 +2129,7 @@ export default function DeepBibleCompanion() {
             Deep Bible Study Companion
           </h1>
           <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.6, maxWidth: "560px" }}>
-            Seminary-level depth. Kitchen-table language. Six layers of analysis for every passage. No pastor required. No seminary required. Just you, the text, and the tools to understand it.
+            Seminary-level depth in kitchen-table language. Six layers of analysis for every passage, built so an ordinary reader with an open Bible can follow the argument all the way down.
           </p>
         </div>
       </section>
@@ -2139,9 +2139,9 @@ export default function DeepBibleCompanion() {
           <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
             <StorageNote problem={storageProblem} />
             {workspaceBooks.length > 0 && (
-              <div style={{ marginBottom: "2.5rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
+              <div style={{ marginBottom: "2.5rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
                 <div style={panelEyebrow}>Your workspace</div>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted, #666)", margin: "0 0 1rem", maxWidth: "560px" }}>
+                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 1rem", maxWidth: "560px" }}>
                   Your notes and marks from earlier study, kept in this browser. Pick up where you left off.
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
@@ -2153,12 +2153,12 @@ export default function DeepBibleCompanion() {
                       style={{
                         display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline",
                         gap: "0.25rem 1rem", padding: "0.75rem 1rem", minHeight: "44px",
-                        background: "var(--bone, #F5F0E6)", border: "1px solid var(--border, #e5e0d5)",
+                        background: "var(--bone, #F5F0E6)", border: "1px solid var(--border)",
                         borderRadius: "2px", cursor: "pointer", textAlign: "left", width: "100%",
                       }}
                     >
                       <span style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.05rem", color: "var(--ink, #14110C)" }}>{a.book.name}</span>
-                      <span style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>
+                      <span style={{ fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U, Inter, sans-serif)" }}>
                         {countsLine(a.noteCount, a.markCount)}{a.touched ? ` · last touched ${fmtDate(a.touched)}` : ""}
                       </span>
                     </button>
@@ -2186,7 +2186,7 @@ export default function DeepBibleCompanion() {
                     const hasContent = book.passages.length > 0;
                     return (
                       <button key={book.name} onClick={() => hasContent && setSelectedBook(book)} style={{
-                        padding: "1.25rem", background: "var(--card)", border: "1px solid #e5e0d5",
+                        padding: "1.25rem", background: "var(--card)", border: "1px solid var(--border)",
                         borderRadius: "2px", cursor: hasContent ? "pointer" : "default", textAlign: "left",
                         opacity: hasContent ? 1 : 0.5, transition: "all 240ms ease",
                       }}>
@@ -2210,9 +2210,9 @@ export default function DeepBibleCompanion() {
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.5rem" }}>{selectedBook.name}</h2>
             <p style={{ fontSize: "0.85rem", color: "var(--ink-muted)", marginBottom: "2rem" }}>{selectedBook.hook}</p>
             {bookAct !== null && bookAct.noteCount + bookAct.markCount > 0 && (
-              <div style={{ marginBottom: "2rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border, #e5e0d5)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
+              <div style={{ marginBottom: "2rem", padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard, #D4A017)", borderRadius: "2px" }}>
                 <div style={panelEyebrow}>Your marks and notes</div>
-                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted, #666)", margin: "0 0 1rem", maxWidth: "560px" }}>
+                <p style={{ fontSize: "0.85rem", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 1rem", maxWidth: "560px" }}>
                   {countsLine(bookAct.noteCount, bookAct.markCount)}
                   {bookAct.touched ? ` · last touched ${fmtDate(bookAct.touched)}` : ""}. What struck you is kept here so you can return to it.
                 </p>
@@ -2226,12 +2226,12 @@ export default function DeepBibleCompanion() {
                         style={{
                           display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline",
                           gap: "0.25rem 1rem", padding: "0.6rem 1rem", minHeight: "44px",
-                          background: "var(--bone, #F5F0E6)", border: "1px solid var(--border, #e5e0d5)",
+                          background: "var(--bone, #F5F0E6)", border: "1px solid var(--border)",
                           borderRadius: "2px", cursor: "pointer", textAlign: "left", width: "100%",
                         }}
                       >
                         <span style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "0.95rem", color: "var(--ink, #14110C)" }}>{m.ref}</span>
-                        <span style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>{TABS[m.layer]}</span>
+                        <span style={{ fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U, Inter, sans-serif)" }}>{TABS[m.layer]}</span>
                       </button>
                     ))}
                   </div>
@@ -2241,7 +2241,7 @@ export default function DeepBibleCompanion() {
                   {bookAct.noteCount > 0 && (
                     <button onClick={() => copyNotes(selectedBook)} style={quietBtn}>Copy my notes</button>
                   )}
-                  <span aria-live="polite" style={{ fontSize: "0.75rem", color: "var(--ink-muted, #666)", fontFamily: "var(--U, Inter, sans-serif)" }}>
+                  <span aria-live="polite" style={{ fontSize: "0.75rem", color: "var(--ink-muted)", fontFamily: "var(--U, Inter, sans-serif)" }}>
                     {copyState === "copied"
                       ? "Copied to your clipboard."
                       : copyState === "blocked"
@@ -2254,7 +2254,7 @@ export default function DeepBibleCompanion() {
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {selectedBook.passages.map((p, i) => (
                 <button key={i} onClick={() => { setSelectedPassage(p); setActiveTab(0); }} style={{
-                  padding: "1.5rem", background: "var(--card)", border: "1px solid #e5e0d5", borderLeft: "3px solid var(--mustard, #D4A017)",
+                  padding: "1.5rem", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard, #D4A017)",
                   borderRadius: "2px", cursor: "pointer", textAlign: "left", transition: "all 240ms ease",
                 }}>
                   <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.1rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>{p.ref}</div>
@@ -2273,7 +2273,7 @@ export default function DeepBibleCompanion() {
             <h2 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1.75rem", fontWeight: 400, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.ref}</h2>
             <StorageNote problem={storageProblem} />
 
-            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #e5e0d5", marginBottom: "2rem", overflowX: "auto" }}>
+            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid var(--border)", marginBottom: "2rem", overflowX: "auto" }}>
               {TABS.map((tab, i) => (
                 <button key={tab} onClick={() => setActiveTab(i)} aria-current={activeTab === i ? "true" : undefined} style={{
                   padding: "0.75rem 1rem", background: "none", border: "none", borderBottom: activeTab === i ? "2px solid var(--mustard, #D4A017)" : "2px solid transparent",
@@ -2282,7 +2282,7 @@ export default function DeepBibleCompanion() {
               ))}
             </div>
 
-            <div style={{ background: "var(--card)", border: "1px solid #e5e0d5", borderRadius: "2px", padding: "2rem" }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "2px", padding: "2rem" }}>
               <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "1.25rem" }}>
                 <MarkToggle
                   marked={(ws.marks[selectedBook.name] ?? []).includes(`${selectedPassage.ref}::${activeTab}`)}
@@ -2319,7 +2319,7 @@ export default function DeepBibleCompanion() {
                   <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "var(--ink, #14110C)", marginBottom: "2rem" }}>{selectedPassage.paraphrase}</p>
                   <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Key Words</h4>
                   {selectedPassage.keyWords.map((kw, i) => (
-                    <div key={i} style={{ marginBottom: "1.25rem", paddingLeft: "1rem", borderLeft: "2px solid #e5e0d5" }}>
+                    <div key={i} style={{ marginBottom: "1.25rem", paddingLeft: "1rem", borderLeft: "2px solid var(--border)" }}>
                       <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)", marginBottom: "0.25rem" }}>"{kw.word}" — <span style={{ fontStyle: "italic", color: "var(--mustard, #D4A017)" }}>{kw.original}</span></div>
                       <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "var(--ink-muted)" }}>{kw.meaning}</p>
                     </div>
@@ -2353,7 +2353,7 @@ export default function DeepBibleCompanion() {
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.5rem" }}>Key Terms</h4>
                     {selectedPassage.literary.keyTerms.map((kt, i) => (
-                      <div key={i} style={{ marginBottom: "1rem", paddingLeft: "1rem", borderLeft: "2px solid #e5e0d5" }}>
+                      <div key={i} style={{ marginBottom: "1rem", paddingLeft: "1rem", borderLeft: "2px solid var(--border)" }}>
                         <div style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "1rem", fontWeight: 500, color: "var(--ink, #14110C)" }}>{kt.term} <span style={{ fontStyle: "italic", fontSize: "0.85rem", color: "var(--mustard, #D4A017)" }}>({kt.language})</span></div>
                         <p style={{ fontSize: "0.85rem", lineHeight: 1.65, color: "var(--ink-muted)" }}>{kt.meaning}</p>
                       </div>
@@ -2418,7 +2418,7 @@ export default function DeepBibleCompanion() {
                   <div style={{ marginBottom: "1.5rem" }}>
                     <h4 style={{ fontFamily: "var(--U, Inter, sans-serif)", fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", marginBottom: "0.75rem" }}>Recommended Books</h4>
                     {selectedPassage.deeper.books.map((b, i) => (
-                      <p key={i} style={{ fontSize: "0.9rem", color: "var(--ink, #14110C)", marginBottom: "0.5rem", paddingLeft: "1rem", borderLeft: "1px solid #e5e0d5" }}>{b}</p>
+                      <p key={i} style={{ fontSize: "0.9rem", color: "var(--ink, #14110C)", marginBottom: "0.5rem", paddingLeft: "1rem", borderLeft: "1px solid var(--border)" }}>{b}</p>
                     ))}
                   </div>
                   <div style={{ marginBottom: "1.5rem" }}>
@@ -2441,10 +2441,10 @@ export default function DeepBibleCompanion() {
             </div>
 
             <div style={{ display: "flex", justifyContent: "space-between", marginTop: "1.5rem" }}>
-              <button onClick={() => setActiveTab(Math.max(0, activeTab - 1))} disabled={activeTab === 0} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid #e5e0d5", borderRadius: "2px", color: activeTab === 0 ? "#ccc" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 0 ? "default" : "pointer" }}>
+              <button onClick={() => setActiveTab(Math.max(0, activeTab - 1))} disabled={activeTab === 0} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid var(--border)", borderRadius: "2px", color: activeTab === 0 ? "var(--ink-muted)" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 0 ? "default" : "pointer" }}>
                 Previous Layer
               </button>
-              <button onClick={() => setActiveTab(Math.min(5, activeTab + 1))} disabled={activeTab === 5} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid #e5e0d5", borderRadius: "2px", color: activeTab === 5 ? "#ccc" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 5 ? "default" : "pointer" }}>
+              <button onClick={() => setActiveTab(Math.min(5, activeTab + 1))} disabled={activeTab === 5} style={{ padding: "0.5rem 1rem", background: "none", border: "1px solid var(--border)", borderRadius: "2px", color: activeTab === 5 ? "var(--ink-muted)" : "var(--ink, #14110C)", fontSize: "0.8rem", fontFamily: "var(--U, Inter, sans-serif)", cursor: activeTab === 5 ? "default" : "pointer" }}>
                 Next Layer
               </button>
             </div>
@@ -2498,10 +2498,10 @@ export default function DeepBibleCompanion() {
         <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "16px" }}>GO DEEPER</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)", maxWidth: "56ch", margin: "0 auto 22px" }}>
-            If this companion is your kind of study, the book behind it is <em>How to Read the Bible — Without Making It Say What You Already Believe</em>.
+            If this companion is your kind of study, go further in the Study Bible: every book and every chapter, with notes, and the Hebrew and Greek beneath the words.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/how-to-read-the-bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Read about the book</Link>
+            <Link href="/study/bible" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "12px 22px", borderRadius: "3px", textDecoration: "none" }}>Open the Study Bible</Link>
           </div>
         </div>
       </section>
