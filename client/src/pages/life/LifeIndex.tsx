@@ -112,8 +112,8 @@ export default function LifeIndex() {
           </div>
 
           <div style={{ marginTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
-            <Link href="/marriage" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Marriage</Link>
-            <Link href="/parenting" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Parenting</Link>
+            <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Marriage</Link>
+            <Link href="/life/raising-children-in-grace" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Parenting</Link>
             <Link href="/family" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Family Discipleship</Link>
             <Link href="/how-tos?topic=discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>How-Tos for Making Disciples</Link>
             <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom for All of Life</Link>

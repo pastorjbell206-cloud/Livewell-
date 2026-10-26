@@ -234,7 +234,7 @@ export default function Family() {
             label="Parenting guides and tools"
             items={[
               { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." },
-              { href: "/parenting", title: "On parenting", dek: "Essays on raising children in the faith without crushing them." },
+              { href: "/help/parenting", title: "When parenting is hard", dek: "For worn-out parents of little ones, of a teen who has gone quiet, or of a grown child who has left the faith." },
               { href: "/tools/parenting-guide", title: "Parenting stage guide", dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
               { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
               { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." },
@@ -257,7 +257,7 @@ export default function Family() {
             min={440}
             label="Marriage guides and tools"
             items={[
-              { href: "/marriage", title: "On marriage", dek: "Covenant, not contract. Marriage through the long middle." },
+              { href: "/help/marriage", title: "When a marriage is in trouble", dek: "For the marriage that has gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help." },
               { href: "/tools/marriage-assessment", title: "Marriage health assessment", dek: "A 15-question diagnostic across communication, trust, conflict, and shared vision." },
               { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
               { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },

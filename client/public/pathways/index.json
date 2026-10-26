@@ -2,7 +2,7 @@
   {
     "slug": "anxiety",
     "title": "Anxiety and the Peace of Christ",
-    "subtitle": "A guided route through the worry that will not turn off: four essays and two studies.",
+    "subtitle": "A guided route through the worry that will not turn off: an essay on fear, and two studies to work through.",
     "forWhom": "For the reader who lies awake running the same loop, and who knows the difference between the fear a doctor should hear and the fear only the Father can quiet.",
     "steps": [
       "what-jesus-said-about-worry-and-money",
@@ -16,7 +16,7 @@
   {
     "slug": "christian-nationalism",
     "title": "Faith and the Flag",
-    "subtitle": "When the cross gets conscripted: four essays, a study, and a book.",
+    "subtitle": "When the cross gets conscripted: a look at the state of the American church, a study, and a book.",
     "forWhom": "For the reader in a church that has started to sound like a campaign, and for the one who suspects their own side is not innocent either.",
     "steps": [
       "state-of-the-american-church",
@@ -31,20 +31,20 @@
   {
     "slug": "discipleship",
     "title": "Making Disciples at the Table",
-    "subtitle": "Discipleship without a program: four essays, a study, and a devotion builder for your home.",
+    "subtitle": "Discipleship without a program: a study to take someone through, and a devotion builder for your home.",
     "forWhom": "For the ordinary Christian with no title and no training who suspects that following Jesus was always meant to be handed on, not just attended.",
     "steps": [
       "culture-discipleship-not-attendance",
       "the-table-that-divides",
       "why-hearing-isnt-enough",
       "the-machine-that-forms-you",
-      "family-devotion-builder"
+      "family-devotions"
     ]
   },
   {
     "slug": "doubt-and-deconstruction",
     "title": "When Faith Has Questions",
-    "subtitle": "For the reader taking the faith apart: four essays, a study, and a book.",
+    "subtitle": "For the reader taking the faith apart: a study on doubt, and the book Believe.",
     "forWhom": "For the Christian with real questions and the skeptic who left over them — anyone who would rather have an honest doubt than a dishonest certainty.",
     "steps": [
       "deconstruction-without-reconstruction",
@@ -58,7 +58,7 @@
   {
     "slug": "manhood",
     "title": "Manhood, the Father Wound, and Raising Sons",
-    "subtitle": "Two essays, a study, and every essay on manhood, from a man raised without a father, raising five sons.",
+    "subtitle": "A study on manhood, from a man raised without a father, raising five sons.",
     "forWhom": "For the man carrying a wound he never named, and for anyone raising a boy toward a manhood the culture keeps counterfeiting.",
     "steps": [
       "the-father-wound-and-the-god-question",
@@ -69,7 +69,7 @@
   {
     "slug": "marriage",
     "title": "Marriage, Past the Tips",
-    "subtitle": "For a marriage that needs more than technique: four essays, a study, and an assessment to take together.",
+    "subtitle": "For a marriage that needs more than technique: a study, and an assessment to take together.",
     "forWhom": "For two people who are not in crisis and not fine either, and who suspect the slow drift is more dangerous than the loud fight.",
     "steps": [
       "the-covenant-you-didnt-understand",
@@ -83,7 +83,7 @@
   {
     "slug": "money",
     "title": "Money and the Heart",
-    "subtitle": "What the heart does with treasure: four essays, a study, and a financial health check.",
+    "subtitle": "What the heart does with treasure: a study, and a financial health check.",
     "forWhom": "For the worried and the comfortable alike — the reader who suspects their bank statement is a truer confession than their doctrine.",
     "steps": [
       "what-the-bible-says-about-money",
@@ -97,7 +97,7 @@
   {
     "slug": "parenting",
     "title": "Raising Kids Who Keep the Faith",
-    "subtitle": "Forming a child's heart, not just their behavior: four essays and two studies.",
+    "subtitle": "Forming a child's heart, not just their behavior: two studies for parents.",
     "forWhom": "For the parent less worried about raising a well-behaved child than a child whose faith survives contact with the world.",
     "steps": [
       "the-weight-of-what-you-model",
@@ -111,7 +111,7 @@
   {
     "slug": "prayer",
     "title": "Learning to Pray Again",
-    "subtitle": "How do you actually pray? Four essays and two studies for the reader whose prayers have gone quiet.",
+    "subtitle": "How do you actually pray? Two studies for the reader whose prayers have gone quiet.",
     "forWhom": "For the one who believes prayer matters and cannot remember the last time it felt like anything.",
     "steps": [
       "how-do-you-actually-pray",
@@ -125,7 +125,7 @@
   {
     "slug": "progressive-captivity",
     "title": "Faith and the Cause",
-    "subtitle": "When the gospel gets recruited to a cause: five essays, a study, and a reading path.",
+    "subtitle": "When the gospel gets recruited to a cause: an essay on the faith dissolving into a cause, a study, and a reading path.",
     "forWhom": "For the reader in a church that has started to sound like a movement, and for the one honest enough to ask whether their own side has a captivity too.",
     "steps": [
       "when-justice-becomes-a-gospel",
@@ -140,7 +140,7 @@
   {
     "slug": "rest-and-rhythm",
     "title": "Rest, Sabbath, and the Cure for Hurry",
-    "subtitle": "You do not have a time problem. Three essays, a study, and a rule of life for the rhythm the church forgot.",
+    "subtitle": "You do not have a time problem. A study, and a rule of life for the rhythm the church forgot.",
     "forWhom": "For the tired — and for the one who cannot tell the difference between tired and done.",
     "steps": [
       "a-day-of-doing-nothing",
@@ -153,7 +153,7 @@
   {
     "slug": "suffering-and-grief",
     "title": "When the Weight Doesn't Lift",
-    "subtitle": "For grief that has outlasted everyone's patience: four essays, a grief companion, and a study.",
+    "subtitle": "For grief that has outlasted everyone's patience: an eight-week grief companion, and a study.",
     "forWhom": "For the reader carrying a loss the world expected them to be over by now, and for anyone sitting beside them with nothing to say.",
     "steps": [
       "the-weight-that-stays",
@@ -167,7 +167,7 @@
   {
     "slug": "work-and-vocation",
     "title": "Work and the Weight of Monday",
-    "subtitle": "Is your job just a paycheck? Three essays, a study, and a guide on the work God actually sees.",
+    "subtitle": "Is your job just a paycheck? A study, and a guide on the work God actually sees.",
     "forWhom": "For the reader whose Monday feels like a different world than their Sunday — and suspects it should not.",
     "steps": [
       "is-your-job-just-a-paycheck",
