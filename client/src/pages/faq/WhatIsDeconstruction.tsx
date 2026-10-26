@@ -130,13 +130,13 @@ export default function WhatIsDeconstruction() {
       <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>GO DEEPER</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Read the full essay</h2>
+          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>If you are the one deconstructing</h2>
           <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
-            The full article examines deconstruction through the lens of church history, pastoral theology, and the real stories of people who went through it.
+            No panic and no shame. The Find Help page takes your questions seriously, helps you sort what you were handed, and digs for what is older.
           </p>
-          <Link href="/deconstruction" style={{ textDecoration: "none" }}>
+          <Link href="/help/deconstructing" style={{ textDecoration: "none" }}>
             <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
-              Read the full article
+              Open the page
             </span>
           </Link>
         </div>

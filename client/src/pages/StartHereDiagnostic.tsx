@@ -158,9 +158,9 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     tagline: "Before theology, safety",
     description:
       "What happened to you in the church was real. Before you can think clearly about God, you need to know that the writing here will not repeat the harm. It was written by a pastor who knows what a church can do to a person, and it takes your account of it seriously before it asks anything of you.",
-    primaryCta: { label: "Start with Healing", href: "/church-hurt" },
+    primaryCta: { label: "Start with Healing", href: "/help/church-hurt" },
     secondarySuggestions: [
-      { label: "When Faith Falls Apart", href: "/deconstruction", note: "A reading path for rebuilding, at the pace the wound allows" },
+      { label: "When Faith Falls Apart", href: "/help/deconstructing", note: "Sorting what you were handed and digging for what is older, at the pace the wound allows" },
       { label: "Care Plans", href: "/help", note: "Pastoral resources for specific seasons of crisis" },
       { label: "Answers to Hard Questions", href: "/answers", note: "When you are ready to ask the harder questions" },
     ],
@@ -210,9 +210,9 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
     tagline: "What you lost was real. What comes next might be too.",
     description:
       "Deconstruction is not a destination. You took apart what you were given because it stopped holding weight. The question now is whether anything can be rebuilt that is honest enough to stand on. This path does not rush you back to certainty. It walks with you through the rubble.",
-    primaryCta: { label: "Begin Rebuilding", href: "/deconstruction" },
+    primaryCta: { label: "Begin Rebuilding", href: "/help/deconstructing" },
     secondarySuggestions: [
-      { label: "Healing First", href: "/church-hurt", note: "If the wound is still open, start here instead" },
+      { label: "Healing First", href: "/help/church-hurt", note: "If the wound is still open, start here instead" },
       { label: "Answers to Hard Questions", href: "/answers", note: "The hardest questions, taken seriously rather than managed" },
       { label: "Essays", href: "/writing", note: "The essay shelf, arranged in sections, so you can start where you are" },
     ],

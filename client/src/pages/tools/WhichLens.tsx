@@ -4,13 +4,17 @@ import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { isPublicEssayHref } from "@/lib/shelf";
 
 /**
  * Which Lens Has You? — the flagship diagnostic from the 2026 board audit
  * (program item P8). Thirteen forced choices; five lenses that do a reader's
  * thinking before the reader does: the Flag, the Cause, the Highlighter, the
- * Rearview, the Marketplace. It ends not in a score but in the pillar built
- * to dismantle the lens it found.
+ * Rearview, the Marketplace. It ends not in a score but in the reading that
+ * takes apart the lens it found: a shelf section, a tool, or church history,
+ * linked directly (the old pillars are gone, and their URLs only redirect).
+ * The optional second link may be an essay; it shows only while that essay
+ * is public on the shelf.
  *
  * Scoring is normalized per lens (picked / available) so no lens wins merely
  * by appearing in more items. Mid-flow state survives a reload via
@@ -95,48 +99,64 @@ const LENSES: Record<LensId, {
   name: string;
   verdict: string;
   body: string;
+  /** The main door: a live page that is never an essay, so it cannot retire. */
   ctaLabel: string;
+  /** The same door as a noun phrase, for the runner-up line. */
+  ctaName: string;
   ctaHref: string;
-  pathHref?: string;
+  /** A second door, often one essay; hidden when the essay is off the shelf. */
+  alsoLabel?: string;
+  alsoHref?: string;
 }> = {
   flag: {
     name: "The Flag",
     verdict: "The nation has been doing some of your believing for you.",
-    body: "This is not an accusation from across the room; most of us who grew up in American churches carried this lens for years without feeling its weight, and the man who built this site is not exempt. The Flag reads the gospel through the country: the church's wins are the party's wins, the church's enemies are the nation's enemies, and somewhere along the way defending one started to feel identical to defending the other. Nobody chose it on purpose. It was handed to us, dressed as loyalty. The pillar below exists to take it apart slowly — history first, verdict last.",
-    ctaLabel: "Enter the pillar: The Capture by the Right",
-    ctaHref: "/capture-by-the-right",
-    pathHref: "/reading-paths/capture-by-the-right",
+    body: "This is not an accusation from across the room; most of us who grew up in American churches carried this lens for years without feeling its weight, and the man who built this site is not exempt. The Flag reads the gospel through the country: the church's wins are the party's wins, the church's enemies are the nation's enemies, and somewhere along the way defending one started to feel identical to defending the other. Nobody chose it on purpose. It was handed to us, dressed as loyalty. The essays below take it apart slowly, the history first and the judgment last.",
+    ctaLabel: "Read the Faith and Power essays",
+    ctaName: "the Faith and Power essays",
+    ctaHref: "/writing?section=faith-and-power",
+    alsoLabel: "Or begin with When Patriotism Becomes a Gospel",
+    alsoHref: "/writing/when-patriotism-becomes-a-gospel",
   },
   cause: {
     name: "The Cause",
     verdict: "The critique has been doing some of your believing for you.",
-    body: "This lens is harder to catch because its vocabulary sounds like the Sermon on the Mount — justice, compassion, the wounded believed. Those words are Scripture's own. But somewhere the critique of the church quietly became the creed, the platform stopped being negotiable while the doctrines started, and the faith began apologizing for things Jesus never apologized for. Anyone who has stood in front of a room and felt it go cold knows the pull to soften a hard word, and pastors are not exempt. The pillar below turns the same instrument the right receives the other way, with the same grief.",
-    ctaLabel: "Enter the pillar: The Capture by the Left",
-    ctaHref: "/capture-by-the-left",
-    pathHref: "/reading-paths/capture-by-the-left",
+    body: "This lens is harder to catch because its vocabulary sounds like the Sermon on the Mount — justice, compassion, the wounded believed. Those words are Scripture's own. But somewhere the critique of the church quietly became the creed, the platform stopped being negotiable while the doctrines started, and the faith began apologizing for things Jesus never apologized for. Anyone who has stood in front of a room and felt it go cold knows the pull to soften a hard word, and pastors are not exempt. The essays below turn on the left the same instrument they turn on the right, with the same grief.",
+    ctaLabel: "Read The Mirror essays",
+    ctaName: "The Mirror essays",
+    ctaHref: "/writing?section=the-mirror",
+    alsoLabel: "Or begin with The Progressive Blind Spot",
+    alsoHref: "/writing/the-progressive-blind-spot",
   },
   highlighter: {
     name: "The Highlighter",
     verdict: "Your Bible has been edited — by your own hand, in your own favor.",
-    body: "Verses as ammunition. A canon within the canon — the passages that win arguments bright yellow, the ones that would cost you something left unmarked. Everyone reads this way until someone shows them they are doing it, and we were most of us discipled by people who read the same way and never noticed. The pillar below is a course in reading again: context before conclusions, the whole arc before the favorite shelf, and the discipline of letting the text say what your side wishes it didn't.",
-    ctaLabel: "Enter the pillar: Reading Scripture Past Our Politics",
-    ctaHref: "/reading-scripture-past-our-politics",
-    pathHref: "/reading-paths/reading-scripture-past-our-politics",
+    body: "Verses as ammunition. A canon within the canon — the passages that win arguments bright yellow, the ones that would cost you something left unmarked. Everyone reads this way until someone shows them they are doing it, and we were most of us discipled by people who read the same way and never noticed. What follows is a course in reading again: context before conclusions, the whole arc before the favorite shelf, and the discipline of letting the text say what your side wishes it didn't.",
+    ctaLabel: "Read the essays on the Bible in its world",
+    ctaName: "the essays on the Bible in its world",
+    ctaHref: "/writing?section=bible-in-its-world",
+    alsoLabel: "Or open Misused Verses, the passages we quote most and read least",
+    alsoHref: "/tools/bible-says",
   },
   rearview: {
     name: "The Rearview",
     verdict: "Some of what you are defending is not the faith. It is the memory of its furniture.",
-    body: "This lens grieves — and the grief is real, and nothing here mocks it. A world where the culture did half the church's work is gone, and it took the hymns, the assumptions, and the full pews with it. But Christendom and Christianity were never the same thing, and a faith spent guarding the arrangement cannot spend itself on the kingdom. The church has been small before, strange before, unofficial before — and those were not its worst centuries. The pillar below starts with the grief and refuses to stay there.",
-    ctaLabel: "Enter the pillar: After Christendom",
-    ctaHref: "/after-christendom",
-    pathHref: "/reading-paths/the-church-after-christendom",
+    body: "This lens grieves — and the grief is real, and nothing here mocks it. A world where the culture did half the church's work is gone, and it took the hymns, the assumptions, and the full pews with it. But Christendom and Christianity were never the same thing, and a faith spent guarding the arrangement cannot spend itself on the kingdom. The church has been small before, strange before, unofficial before — and those were not its worst centuries. The reading below starts with the grief and refuses to stay there.",
+    ctaLabel: "Read the After Christendom essays",
+    ctaName: "the After Christendom essays",
+    ctaHref: "/writing?section=after-christendom",
+    alsoLabel: "Or walk through the church's long history",
+    alsoHref: "/theology/history",
   },
   marketplace: {
     name: "The Marketplace",
     verdict: "Somewhere along the way, you became the customer — and the customer is always right.",
     body: "This is the lens the culture hands out free at the door: church as service provider, sermon as product, God as a very effective life coach. It is why 'fed' became the test of a congregation and 'fit' became the test of a faith. No one is sneered at here — the entire American religious economy was built to disciple us into this, and it worked on most of us, the writer included. The way out is not a better product. It is formation — the slow, unglamorous practices that turn a consumer back into a disciple.",
-    ctaLabel: "Enter the formation pillar: Living Well",
-    ctaHref: "/living-well",
+    ctaLabel: "Build a rule of life",
+    ctaName: "the Rule of Life Builder",
+    ctaHref: "/tools/rule-of-life",
+    alsoLabel: "Or read a chapter of Proverbs a day",
+    alsoHref: "/tools/proverbs-31",
   },
 };
 
@@ -261,16 +281,16 @@ export default function WhichLens() {
               </p>
               {result.close && (
                 <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "1.6rem" }}>
-                  A second lens runs close in you — <b style={{ color: "var(--ink)", fontWeight: 500 }}>{LENSES[result.runnerUp.lens].name}</b>. When you finish the first pillar, read {LENSES[result.runnerUp.lens].name === "The Marketplace" ? "the formation pillar" : "its pillar"} too; the two usually feed each other.
+                  A second lens runs close in you: <b style={{ color: "var(--ink)", fontWeight: 500 }}>{LENSES[result.runnerUp.lens].name}</b>. The two usually feed each other, so when you have finished with the first, open <Link href={LENSES[result.runnerUp.lens].ctaHref} style={{ color: "var(--ink)", textDecoration: "underline", textUnderlineOffset: "3px" }}>{LENSES[result.runnerUp.lens].ctaName}</Link> as well.
                 </p>
               )}
               <div style={{ display: "flex", gap: "1.6rem", flexWrap: "wrap", alignItems: "center", marginBottom: "2.2rem" }}>
-                <Link href={LENSES[result.top.lens].ctaHref} style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
-                  {LENSES[result.top.lens].ctaLabel} <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }} />
+                <Link href={LENSES[result.top.lens].ctaHref} style={{ fontFamily: "var(--U)", fontSize: "0.875rem", fontWeight: 500, color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "0.25rem" }}>
+                  {LENSES[result.top.lens].ctaLabel} <ArrowRight size={14} aria-hidden style={{ display: "inline", verticalAlign: "middle" }} />
                 </Link>
-                {LENSES[result.top.lens].pathHref && (
-                  <Link href={LENSES[result.top.lens].pathHref!} style={{ fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none", borderBottom: "1px solid var(--ink-muted)", paddingBottom: "0.25rem" }}>
-                    Or start its reading path, in order
+                {LENSES[result.top.lens].alsoHref && isPublicEssayHref(LENSES[result.top.lens].alsoHref) && (
+                  <Link href={LENSES[result.top.lens].alsoHref!} style={{ fontFamily: "var(--U)", fontSize: "0.85rem", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none", borderBottom: "1px solid var(--ink-muted)", paddingBottom: "0.25rem" }}>
+                    {LENSES[result.top.lens].alsoLabel}
                   </Link>
                 )}
               </div>

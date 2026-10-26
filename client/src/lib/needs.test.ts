@@ -1,10 +1,10 @@
 /**
  * The Find Help search has one job: meet a reader in their own words. These
- * pin that everyday phrasing finds the right need, that nothing matches on
- * filler words alone, and that Scripture references open the right chapter.
+ * pin that everyday phrasing finds the right need and that nothing matches on
+ * filler words alone. (Scripture links are scripture-ref.test.ts.)
  */
 import { describe, it, expect } from "vitest";
-import { searchNeeds, studyBibleHref, type NeedEntry } from "./needs";
+import { searchNeeds, type NeedEntry } from "./needs";
 
 const need = (slug: string, title: string, askedAs: string[], rank: number): NeedEntry => ({
   slug, title, summary: title, askedAs, states: ["carrying"], sensitivity: "ordinary", page: true, rank,
@@ -27,14 +27,5 @@ describe("searchNeeds", () => {
   it("matches nothing on filler words or a single letter", () => {
     expect(searchNeeds("i", NEEDS)).toEqual([]);
     expect(searchNeeds("what does the bible say", NEEDS)).toEqual([]);
-  });
-});
-
-describe("studyBibleHref", () => {
-  it("opens the chapter in the Study Bible", () => {
-    expect(studyBibleHref("Psalm 23:4")).toBe("/study/bible/psalms/23");
-    expect(studyBibleHref("1 John 4:18")).toBe("/study/bible/1-john/4");
-    expect(studyBibleHref("Song of Songs 8:6")).toBe("/study/bible/song-of-solomon/8");
-    expect(studyBibleHref("not a reference")).toBeNull();
   });
 });

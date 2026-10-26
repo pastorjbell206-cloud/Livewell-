@@ -741,7 +741,7 @@
     },
     {
       "source": "/for-families",
-      "destination": "/parenting",
+      "destination": "/family",
       "permanent": true
     },
     {
@@ -996,7 +996,7 @@
     },
     {
       "source": "/writing/young-adults-leaving-faith",
-      "destination": "/parenting",
+      "destination": "/life/the-wayward-child",
       "permanent": true
     },
     {
@@ -1016,7 +1016,7 @@
     },
     {
       "source": "/writing/parenting-when-your-child-doubts-or-walks-away",
-      "destination": "/parenting",
+      "destination": "/life/the-wayward-child",
       "permanent": true
     },
     {
@@ -1192,6 +1192,46 @@
     {
       "source": "/connect",
       "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/parenting",
+      "destination": "/family",
+      "permanent": true
+    },
+    {
+      "source": "/marriage",
+      "destination": "/help/marriage",
+      "permanent": true
+    },
+    {
+      "source": "/grief",
+      "destination": "/help/grief",
+      "permanent": true
+    },
+    {
+      "source": "/faith-crisis",
+      "destination": "/help/doubt",
+      "permanent": true
+    },
+    {
+      "source": "/marriage-crisis",
+      "destination": "/help/marriage",
+      "permanent": true
+    },
+    {
+      "source": "/parenting-help",
+      "destination": "/help/parenting",
+      "permanent": true
+    },
+    {
+      "source": "/deconstruction",
+      "destination": "/help/deconstructing",
+      "permanent": true
+    },
+    {
+      "source": "/church-hurt",
+      "destination": "/help/church-hurt",
       "permanent": true
     }
   ],

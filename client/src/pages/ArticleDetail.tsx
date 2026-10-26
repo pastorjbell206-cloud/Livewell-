@@ -12,6 +12,11 @@
  * - Listen (the device's own voice), Text size, and Focus sit above the body;
  *   Focus mode keeps every action reachable
  * - Printing gives the title, byline, and text; the rest is .no-print
+ * - On a phone the essay's first sentence is on the first screen (U04): a 16px
+ *   gutter and tighter air (.essay-* in index.css), the reading tools in one
+ *   row, the contents card closed under 760px, and no art before the text. A
+ *   real cover sits after the opening section; generated art is not drawn.
+ * - Crossway's notice follows an essay that quotes the ESV (lib/esv)
  */
 import { useEffect, useRef, useState } from "react";
 import { scrollBehavior } from "@/lib/motion";
@@ -40,9 +45,9 @@ import { AudienceShare } from "@/components/AudienceShare";
 import { KeepReadingBook } from "@/components/KeepReadingBook";
 import { RelatedEssays } from "@/components/RelatedEssays";
 import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
-import { GeneratedHero } from "@/components/GeneratedHero";
 import { trpc } from "@/lib/trpc";
-import { pillarForPost, pillarToTrack } from "@/lib/taxonomy";
+import { pillarToTrack } from "@/lib/taxonomy";
+import { ESV_NOTICE, owesEsvNotice } from "@/lib/esv";
 import {
   cleanExcerpt,
   essayDate,
@@ -227,6 +232,27 @@ function QuoteSelectionShare({
   );
 }
 
+/**
+ * The essay's opening section and the rest: the split falls on the first
+ * section heading ("## "). With no heading the whole essay is its opening, and
+ * the rest is empty. A body with footnote or link definitions ("[^1]: …",
+ * "[ref]: …") is not split, since each half is rendered on its own and a
+ * reference must share a document with its definition.
+ */
+export function splitAtFirstSection(markdown: string): [opening: string, rest: string] {
+  if (/^ {0,3}\[[^\]\n]+\]:/m.test(markdown)) return [markdown, ""];
+  const heading = /^##\s/m.exec(markdown);
+  if (!heading || heading.index === 0) return [markdown, ""];
+  return [markdown.slice(0, heading.index), markdown.slice(heading.index)];
+}
+
+/** The contents card starts closed on a phone, where it would push the first sentence off the screen. */
+const PHONE_WIDTH = "(max-width: 760px)";
+function contentsOpenAtFirst(): boolean {
+  if (typeof window === "undefined" || typeof window.matchMedia !== "function") return true;
+  return !window.matchMedia(PHONE_WIDTH).matches;
+}
+
 function slugifyHeading(text: string, index: number) {
   const base = text
     .toLowerCase()
@@ -254,6 +280,7 @@ function TableOfContents({
   contentKey: string;
 }) {
   const [items, setItems] = useState<{ id: string; text: string }[]>([]);
+  const [open, setOpen] = useState(contentsOpenAtFirst);
 
   useEffect(() => {
     const root = bodyRef.current;
@@ -286,25 +313,23 @@ function TableOfContents({
   };
 
   return (
-    <nav
-      aria-label="In this essay"
-      style={{
-        maxWidth: "var(--w-prose)",
-        margin: "0 auto var(--s-5)",
-      }}
-    >
+    <nav aria-label="In this essay" className="essay-contents" style={{ maxWidth: "var(--w-prose)" }}>
       <details
-        open
+        open={open}
+        onToggle={e => setOpen(e.currentTarget.open)}
         style={{
           background: "var(--card)",
           border: "1px solid var(--border)",
           borderLeft: "2px solid var(--mustard)",
           borderRadius: "var(--radius-sm)",
-          padding: "16px 20px",
         }}
       >
+        {/* The card's padding sits on the summary, so the whole closed card
+            is the tap target (it starts closed on a phone), not one line of
+            11px text. */}
         <summary
           style={{
+            padding: "16px 20px",
             fontFamily: "var(--U)",
             fontSize: "11px",
             fontWeight: 600,
@@ -319,7 +344,7 @@ function TableOfContents({
         <ol
           style={{
             listStyle: "none",
-            margin: "16px 0 0",
+            margin: "0 20px 16px",
             padding: 0,
             display: "flex",
             flexDirection: "column",
@@ -580,6 +605,16 @@ export default function ArticleDetail() {
   const kickerSection = sectionBySlug(entry?.section);
 
   const canonical = articleUrl(post.slug);
+  // The body in two parts only when a real cover sits after the opening section.
+  const [opening, rest] = post.coverImage ? splitAtFirstSection(bodyMarkdown) : [bodyMarkdown, ""];
+  const bodyComponents = {
+    blockquote: ({ children }: { children?: React.ReactNode }) => (
+      <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
+        {children}
+      </ShareableQuote>
+    ),
+  };
+  const esvNotice = owesEsvNotice(bodyMarkdown, { rewrite: Boolean(rewritten) });
   const description = post.excerpt || post.title;
   const ogImage = post.coverImage || OG_DEFAULT_IMAGE;
   const publishedIso = String(post.publishedAt || post.createdAt || "");
@@ -630,13 +665,7 @@ export default function ArticleDetail() {
       <article className={focus ? "lw-reading-focus print-paper" : "print-paper"}>
         {/* BACK BUTTON — hidden in reading-focus mode (breadcrumb chrome) */}
         {!focus && (
-        <div
-          className="no-print"
-          style={{
-            padding: "8px var(--s-4)",
-            borderBottom: "1px solid var(--border)",
-          }}
-        >
+        <div className="no-print essay-back" style={{ borderBottom: "1px solid var(--border)" }}>
           <button
             type="button"
             onClick={() => navigate("/writing")}
@@ -666,11 +695,12 @@ export default function ArticleDetail() {
         </div>
         )}
 
-        {/* HEADER — centered editorial. A little less air above the kicker on
-            a phone, so save and send land on the first screen. */}
+        {/* HEADER — centered editorial. On a phone, a 16px gutter and less
+            air (.essay-head in index.css), so save and send and then the
+            essay's first sentence land on the first screen. */}
         <section
+          className="essay-head"
           style={{
-            padding: "clamp(var(--s-4), 8vw, var(--s-6)) var(--s-4) var(--s-4)",
             background: "var(--bone)",
             borderBottom: "1px solid var(--border)",
           }}
@@ -684,13 +714,7 @@ export default function ArticleDetail() {
           >
             {/* Kicker: the shelf section the essay sits in, or Latest for a
                 new post off the shelf (the names /writing uses). */}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                marginBottom: "24px",
-              }}
-            >
+            <div className="essay-kicker" style={{ display: "flex", justifyContent: "center" }}>
               <Link
                 href={kickerSection ? sectionHref(kickerSection) : "/writing"}
                 style={{
@@ -713,6 +737,7 @@ export default function ArticleDetail() {
 
             {/* Title */}
             <h1
+              className={post.excerpt ? "essay-title" : "essay-title essay-title--alone"}
               style={{
                 fontFamily: "var(--F)",
                 fontSize: "clamp(36px, 5vw, 56px)",
@@ -720,23 +745,20 @@ export default function ArticleDetail() {
                 lineHeight: 1.1,
                 letterSpacing: "-0.02em",
                 color: "var(--ink)",
-                marginBottom: post.excerpt ? "24px" : "28px",
               }}
             >
               {post.title}
             </h1>
 
-            {/* Standfirst / dek */}
+            {/* Standfirst / dek (size and air in .essay-dek) */}
             {post.excerpt && (
               <p
+                className="essay-dek"
                 style={{
                   fontFamily: "var(--F)",
-                  fontSize: "22px",
-                  lineHeight: 1.5,
                   color: "var(--ink-muted)",
                   fontStyle: "italic",
                   maxWidth: "32em",
-                  margin: "0 auto 28px",
                 }}
               >
                 {post.excerpt}
@@ -746,11 +768,11 @@ export default function ArticleDetail() {
             {/* Mustard rule */}
             <div
               aria-hidden
+              className="essay-rule"
               style={{
                 width: "64px",
                 height: "2px",
                 background: "var(--mustard)",
-                margin: "0 auto 20px",
               }}
             />
 
@@ -791,56 +813,30 @@ export default function ArticleDetail() {
                 keep the essay or send it to themselves before scrolling.
                 Shown in Focus mode too. The wrapper centers the bar and lets
                 its panel's text sit flush left. */}
-            <div style={{ display: "flex", justifyContent: "center", marginTop: "24px", textAlign: "left" }}>
+            <div className="essay-actions" style={{ display: "flex", justifyContent: "center", textAlign: "left" }}>
               <TakeItWithYou title={post.title} kind="Essay" href={essayPath} summary={summary} date={publishedIso} print align="center" />
             </div>
           </div>
         </section>
 
-        {/* HERO IMAGE — real cover when present, on-brand generated art
-            otherwise. Art for the screen; a printed essay starts with its words. */}
-        <section className="no-print" style={{ padding: "var(--s-5) var(--s-4) 0" }}>
-          <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-            {post.coverImage ? (
-              <img
-                src={post.coverImage}
-                alt={post.title}
-                width={1200}
-                height={630}
-                loading="eager"
-                fetchPriority="high"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  aspectRatio: "16 / 9",
-                  objectFit: "cover",
-                  borderRadius: "var(--radius-sm)",
-                  display: "block",
-                }}
-              />
-            ) : (
-              <GeneratedHero
-                seed={post.slug}
-                pillarId={pillarForPost(post)?.id}
-                title={post.title}
-              />
-            )}
-          </div>
-        </section>
+        {/* No art between the header and the text: the reader meets the
+            essay's first sentence next. A real cover sits after the opening
+            section (below); generated art is not drawn on the essay page. */}
 
         {/* BODY */}
-        <section style={{ padding: "var(--s-6) var(--s-4)" }}>
+        <section className="essay-main">
           {/* Reading tools, above the measure so they are reachable in both
               modes: Listen (the device's own voice reads the body), Text size
               (kept on this device), and the Focus toggle (board rec #10),
-              which doubles as "Exit focus" since the body is never hidden. */}
+              which doubles as "Exit focus" since the body is never hidden.
+              One row on a phone: .essay-tools drops the visible "Text size"
+              word there (the group keeps it as its name). */}
           <div
-            className="no-print"
+            className="no-print essay-tools"
             role="group"
             aria-label="Reading tools"
             style={{
               maxWidth: measure,
-              margin: "0 auto var(--s-3)",
               display: "flex",
               flexWrap: "wrap",
               alignItems: "center",
@@ -886,23 +882,56 @@ export default function ArticleDetail() {
             }}
           >
             {post.body ? (
-              <Markdown
-                components={{
-                  blockquote: ({ children }: { children?: React.ReactNode }) => (
-                    <ShareableQuote shareTitle={post.title} shareUrl={canonical}>
-                      {children}
-                    </ShareableQuote>
-                  ),
-                }}
-              >
-                {bodyMarkdown}
-              </Markdown>
+              <>
+                <Markdown components={bodyComponents}>{opening}</Markdown>
+                {/* A real cover, after the opening section: art for the
+                    screen, never ahead of the first sentence or on paper. */}
+                {post.coverImage && (
+                  <figure className="no-print" style={{ margin: "2em 0" }}>
+                    <img
+                      src={post.coverImage}
+                      alt=""
+                      width={1200}
+                      height={630}
+                      loading="lazy"
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        aspectRatio: "16 / 9",
+                        objectFit: "cover",
+                        borderRadius: "var(--radius-sm)",
+                        display: "block",
+                        margin: 0,
+                      }}
+                    />
+                  </figure>
+                )}
+                {rest && <Markdown components={bodyComponents}>{rest}</Markdown>}
+              </>
             ) : (
               <p style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>
                 This article is in preparation.
               </p>
             )}
           </div>
+
+          {/* Crossway's notice, for an essay that quotes the ESV (lib/esv).
+              Printed with the essay, since the quotations are. */}
+          {esvNotice && (
+            <p
+              className="essay-esv-notice"
+              style={{
+                maxWidth: measure,
+                margin: "var(--s-4) auto 0",
+                fontFamily: "var(--U)",
+                fontSize: "12px",
+                lineHeight: 1.6,
+                color: "var(--ink-muted)",
+              }}
+            >
+              {ESV_NOTICE}
+            </p>
+          )}
 
           {/* Depth-telemetry sentinel — a 1px, aria-hidden anchor at the foot
               of the essay body; entering the viewport marks a completed read.

@@ -27,7 +27,7 @@ import { EditorialIndex, type IndexItem } from "@/components/editorial/Editorial
 import { LoadFailed } from "@/components/LoadFailed";
 import { TakeItWithYou } from "@/components/TakeItWithYou";
 import { fetchJson } from "@/lib/fetch-json";
-import { studyBibleHref } from "@/lib/needs";
+import { refHref } from "@/lib/scripture-ref";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import type { CarePageData, NeedsIndex } from "@/lib/needs";
@@ -284,8 +284,8 @@ export default function CarePage() {
             </blockquote>
             <figcaption style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "10px 0 14px 22px" }}>
               {p.ref} (BSB).{" "}
-              {studyBibleHref(p.ref) && (
-                <Link href={studyBibleHref(p.ref)!} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Read the whole chapter</Link>
+              {refHref(p.ref, { verse: false }) && (
+                <Link href={refHref(p.ref, { verse: false })!} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Read the whole chapter</Link>
               )}
             </figcaption>
             <Prose text={p.reading} />

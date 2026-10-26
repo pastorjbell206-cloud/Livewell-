@@ -1,9 +1,11 @@
 /**
  * The essay page as a reader on a phone meets it: save and send under the
- * byline (before the cover art) and again after the essay, one save store
- * (My Library) that also honors the older bookmarks, quote sharing that never
- * signs the words with James's name, actions that stay in Focus mode, a text
- * size of the reader's own, Listen, and a print that is the essay alone.
+ * byline and again after the essay, no art between the header and the first
+ * sentence, the contents card closed on a phone, one save store (My Library)
+ * that also honors the older bookmarks, quote sharing that never signs the
+ * words with James's name, actions that stay in Focus mode, a text size of
+ * the reader's own, Listen, Crossway's notice where the essay owes it, and a
+ * print that is the essay alone.
  */
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { fireEvent, screen, waitFor, within } from "@testing-library/react";
@@ -12,15 +14,24 @@ import superjson from "superjson";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { LEGACY_BOOKMARKS_KEY, LIBRARY_KEY } from "@/lib/library";
-import ArticleDetail, { quoteShareText } from "./ArticleDetail";
+import { ESV_NOTICE } from "@/lib/esv";
+import ArticleDetail, { quoteShareText, splitAtFirstSection } from "./ArticleDetail";
 
 const SLUG = "when-the-church-married-empire";
 const TITLE = "When the Church Married Empire";
 const CANONICAL = `https://www.livewellbyjamesbell.co/writing/${SLUG}`;
 const QUOTE = "I can do all things through him who strengthens me.";
 
-/** Answers posts.getBySlug with a live shelf essay; every other call is offline. */
-function essayFetch(): typeof fetch {
+const BODY =
+  "The first paragraph of the essay itself, long enough to read as prose and carry a drop cap.\n\n" +
+  `> ${QUOTE}\n\n` +
+  "## The Long Arc\n\nA second paragraph after the heading.";
+
+/**
+ * Answers posts.getBySlug with a live shelf essay (any of its fields replaced
+ * per test); every other call is offline.
+ */
+function essayFetch(post: Record<string, unknown> = {}): typeof fetch {
   const offline = offlineFetch();
   return (async (input: RequestInfo | URL, init?: RequestInit) => {
     const url = new URL(String(input instanceof Request ? input.url : input), "http://localhost");
@@ -39,10 +50,8 @@ function essayFetch(): typeof fetch {
                 readingTimeMinutes: 12,
                 createdAt: new Date("2026-06-09T02:40:57.000Z"),
                 publishedAt: new Date("2026-06-09T02:40:57.000Z"),
-                body:
-                  "The first paragraph of the essay itself, long enough to read as prose and carry a drop cap.\n\n" +
-                  `> ${QUOTE}\n\n` +
-                  "## The Long Arc\n\nA second paragraph after the heading.",
+                body: BODY,
+                ...post,
               }),
             },
           }
@@ -94,15 +103,14 @@ describe("quoteShareText", () => {
 });
 
 describe("/writing/:slug, save and send", () => {
-  it("puts save and send under the byline, before the cover art, and again after the essay", async () => {
+  it("puts save and send under the byline and again after the essay", async () => {
     await renderEssay();
     const [top, bottom] = sendButtons();
     expect(sendButtons()).toHaveLength(2);
 
     const header = screen.getByRole("heading", { level: 1 }).closest("section")!;
     expect(header.contains(top)).toBe(true);
-    const art = document.querySelector("article > section.no-print")!;
-    expect(top.compareDocumentPosition(art) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(top.compareDocumentPosition(articleBody()) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(articleBody().compareDocumentPosition(bottom) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
 
     // The bottom bar carries Print, Cite this, and Send to… beside save and send.
@@ -227,15 +235,119 @@ describe("/writing/:slug, printing", () => {
     for (const el of [title, byline, articleBody()]) {
       expect(el.closest(".no-print")).toBeNull();
     }
-    // Not printed: the bars, the reading tools, the cover art, and all that follows the essay.
+    // Not printed: the bars, the reading tools, and all that follows the essay.
     for (const el of [
       ...sendButtons(),
       screen.getByRole("group", { name: "Reading tools" }),
-      document.querySelector("article > section.no-print")!,
       screen.getByRole("button", { name: "Share this quote" }),
       screen.getByRole("complementary", { name: "About James Bell" }),
     ]) {
       expect(el.closest(".no-print"), el.textContent ?? "").not.toBeNull();
     }
+  });
+});
+
+describe("/writing/:slug, the first screen on a phone", () => {
+  const SECTIONS = "Opening words, the first sentence of the essay.\n\n## One\n\nA.\n\n## Two\n\nB.\n\n## Three\n\nC.";
+
+  /** A screen that is, or is not, at most 760px wide. */
+  function screenWidth(phone: boolean) {
+    vi.stubGlobal("matchMedia", (query: string) => ({
+      matches: query === "(max-width: 760px)" ? phone : false,
+      media: query,
+      onchange: null,
+      addListener: () => undefined,
+      removeListener: () => undefined,
+      addEventListener: () => undefined,
+      removeEventListener: () => undefined,
+      dispatchEvent: () => false,
+    }));
+  }
+
+  it("goes from the header straight to the essay, with no art before the first sentence", async () => {
+    await renderEssay();
+    const header = screen.getByRole("heading", { level: 1 }).closest("section")!;
+    expect(header.nextElementSibling?.contains(articleBody())).toBe(true);
+    expect(articleBody().querySelector("img")).toBeNull();
+  });
+
+  it("puts a real cover after the opening section, never ahead of the text or on paper", async () => {
+    vi.stubGlobal("fetch", vi.fn(essayFetch({ coverImage: "/images/cover.jpg" })));
+    await renderEssay();
+    const img = articleBody().querySelector<HTMLImageElement>("img")!;
+    expect(img).toHaveAttribute("src", "/images/cover.jpg");
+    expect(img.closest(".no-print")).not.toBeNull();
+    const firstParagraph = articleBody().querySelector("p")!;
+    const firstSection = screen.getByRole("heading", { level: 2, name: "The Long Arc" });
+    expect(firstParagraph.compareDocumentPosition(img) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(img.compareDocumentPosition(firstSection) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    // Both halves sit in the one body, so the drop cap still falls on the first paragraph alone.
+    expect(firstParagraph.parentElement).toBe(articleBody());
+    expect(firstSection.parentElement).toBe(articleBody());
+  });
+
+  it("starts the contents card closed on a phone and open on a wider screen", async () => {
+    vi.stubGlobal("fetch", vi.fn(essayFetch({ body: SECTIONS })));
+    const contents = () => screen.getByRole("navigation", { name: "In this essay" }).querySelector("details")!;
+
+    screenWidth(true);
+    const phone = await renderEssay();
+    await waitFor(() => expect(contents()).toBeInTheDocument());
+    expect(contents().open).toBe(false);
+    // Closed, the summary is the card's one door: it carries the card's
+    // padding, so the whole card is the tap target, not a line of 11px text.
+    expect(contents().querySelector("summary")!.style.padding).toBe("16px 20px");
+    expect(contents().style.padding).toBe("");
+    phone.unmount();
+
+    screenWidth(false);
+    await renderEssay();
+    await waitFor(() => expect(contents()).toBeInTheDocument());
+    expect(contents().open).toBe(true);
+  });
+
+  it("keeps the reading tools one group, whose Text size word a phone may hide", async () => {
+    await renderEssay();
+    const tools = screen.getByRole("group", { name: "Reading tools" });
+    expect(tools).toHaveClass("essay-tools");
+    const size = within(tools).getByRole("group", { name: "Text size" });
+    expect(size.querySelector(".text-size__label")).toHaveTextContent("Text size");
+  });
+});
+
+describe("/writing/:slug, Crossway's notice", () => {
+  it("is not claimed for an older essay that quotes Scripture without naming its translation", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(essayFetch({ body: 'Opening words.\n\n"Appoint for us a king to judge us like all the nations" (1 Samuel 8:5).' }))
+    );
+    await renderEssay();
+    expect(screen.queryByText(ESV_NOTICE)).not.toBeInTheDocument();
+  });
+
+  it("follows an essay that names the ESV, after the body, and prints with it", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(essayFetch({ body: 'Opening words.\n\nThe ESV reads, "seek the welfare of the city" (Jeremiah 29:7).' }))
+    );
+    await renderEssay();
+    const notice = screen.getByText(ESV_NOTICE);
+    expect(articleBody().contains(notice)).toBe(false);
+    expect(articleBody().compareDocumentPosition(notice) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(notice.closest(".no-print")).toBeNull();
+  });
+});
+
+describe("splitAtFirstSection", () => {
+  it("splits on the first section heading", () => {
+    expect(splitAtFirstSection("Intro.\n\n## One\n\nA.\n\n## Two\n\nB.")).toEqual(["Intro.\n\n", "## One\n\nA.\n\n## Two\n\nB."]);
+  });
+
+  it("leaves the essay whole with no section heading, a heading first, or footnote definitions", () => {
+    expect(splitAtFirstSection("Intro only.")).toEqual(["Intro only.", ""]);
+    expect(splitAtFirstSection("## One\n\nA.")).toEqual(["## One\n\nA.", ""]);
+    expect(splitAtFirstSection("Intro.\n\n### Sub\n\nA.")).toEqual(["Intro.\n\n### Sub\n\nA.", ""]);
+    const notes = "Intro.[^1]\n\n## One\n\nA.\n\n[^1]: A note.";
+    expect(splitAtFirstSection(notes)).toEqual([notes, ""]);
   });
 });

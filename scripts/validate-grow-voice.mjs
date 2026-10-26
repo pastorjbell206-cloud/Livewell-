@@ -11,54 +11,57 @@
  * a few ordinary senses are allowed (foster care, a literal journey in a
  * verse reference's neighborhood is still flagged, so rephrase it).
  *
- *   node scripts/validate-grow-voice.mjs          CI gate
- *   node scripts/validate-grow-voice.mjs --report print every hit, exit 0
+ * The rewritten essays (client/public/essays/*.json) are in scope too. They
+ * quote the ESV and named sources, not the BSB, so there every quotation is set
+ * aside (scripts/lib/essay-text.mjs), along with link targets; their own gate
+ * is validate-essays.mjs, which reads the same list.
+ *
+ *   node scripts/validate-grow-voice.mjs                 CI gate
+ *   node scripts/validate-grow-voice.mjs --report        print every hit, exit 0
+ *   node scripts/validate-grow-voice.mjs --essays <dir>  only the essay files in <dir> (the seeded-file test)
  */
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { join, resolve } from "node:path";
 import { ROOT, listFiles } from "./lib/site-routes.mjs";
 import { normalize } from "./lib/bsb.mjs";
+import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
+import { readEssayText } from "./lib/essay-text.mjs";
 
 const REPORT = process.argv.includes("--report");
+const essaysAt = process.argv.indexOf("--essays");
+const ESSAYS_ONLY = essaysAt > 0 ? resolve(process.argv[essaysAt + 1] ?? "") : null;
 
-const FILES = [
-  ...listFiles("client/public/wisdom/topics", [".json"]),
-  ...listFiles("client/public/life/domains", [".json"]),
-  ...listFiles("client/public/howtos/a", [".json"]),
-  ...listFiles("client/public/studyguides", [".json"]),
-  ...listFiles("client/public/plans", [".json"]),
-  ...listFiles("client/public/pathways", [".json"]),
-  ...listFiles("client/public/needs", [".json"]),
-];
+const essayFiles = ESSAYS_ONLY
+  ? (existsSync(ESSAYS_ONLY) ? readdirSync(ESSAYS_ONLY) : []).filter((f) => f.endsWith(".json")).map((f) => join(ESSAYS_ONLY, f))
+  : listFiles("client/public/essays", [".json"]);
+const ESSAYS = new Set(essayFiles);
+const FILES = ESSAYS_ONLY
+  ? essayFiles
+  : [
+      ...listFiles("client/public/wisdom/topics", [".json"]),
+      ...listFiles("client/public/life/domains", [".json"]),
+      ...listFiles("client/public/howtos/a", [".json"]),
+      ...listFiles("client/public/studyguides", [".json"]),
+      ...listFiles("client/public/plans", [".json"]),
+      ...listFiles("client/public/pathways", [".json"]),
+      ...listFiles("client/public/needs", [".json"]),
+      ...essayFiles,
+    ];
 
-const FORBIDDEN = [
-  "delve", "delves", "delving", "leverage", "leverages", "leveraging", "unlock", "unlocks", "unlocking",
-  "transformative", "navigate", "navigates", "navigating", "tapestry", "foster", "fosters", "fostering", "fostered",
-  "unpack", "unpacks", "unpacking", "landscape", "landscapes", "nuanced", "multifaceted", "authentic", "authenticity",
-  "holistic", "journey", "journeys", "in today's world", "now more than ever", "here's the thing",
-  "i want to be real with you", "god's got this", "gospel-centered", "authentic community", "hold space",
-  "your truth", "do the work", "your feelings are valid", "lean into", "leaning into", "showing up",
-];
-const forbiddenRe = new RegExp(`\\b(${FORBIDDEN.map((w) => w.replace(/'/g, "['’]")).join("|")})\\b`, "gi");
-// Ordinary senses the list does not mean: foster care; Richard Foster (a
-// name, capitalized); book titles and named concepts; the literal road.
-const ALLOWED = [
-  /\bfoster (care|parent|parents|parenting|child|children|home|homes|family|families|system|kids?)\b/gi,
-  /\bFoster\b/g,
-  /\bage of authenticity\b/gi,
-  /\bThe Ethics of Authenticity\b/g,
-  /\bUnpacking Forgiveness\b/g,
-  /\bUnlocking the Stress Cycle\b/g,
-  /\bjourney to Jerusalem\b/gi,
-];
 // Fields that hold Scripture text, search keywords, or other people's titles.
 const EXEMPT_PATH = /(^|\.)(verses\[\d+\]\.text|passages\[\d+\]\.text|keywords(\[\d+\])?|source|cite|sources\[\d+\]\.[a-z]+|bibliography\[\d+\]\.title)$/;
 
-const books = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8"));
-let bible = "";
-for (const b of books)
-  for (let c = 1; c <= b.chapters; c++)
-    bible += " " + JSON.parse(readFileSync(join(ROOT, "client/public/bible/ch", b.slug, `${c}.json`), "utf8")).verses.map((v) => normalize(v.t)).join(" ");
+// The whole BSB, normalized, read once and only when a non-essay file needs it.
+let bible = null;
+function bibleText() {
+  if (bible !== null) return bible;
+  const books = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8"));
+  bible = "";
+  for (const b of books)
+    for (let c = 1; c <= b.chapters; c++)
+      bible += " " + JSON.parse(readFileSync(join(ROOT, "client/public/bible/ch", b.slug, `${c}.json`), "utf8")).verses.map((v) => normalize(v.t)).join(" ");
+  return bible;
+}
 
 /** Every string value in a JSON document, with its path. */
 function* strings(value, path = "") {
@@ -76,13 +79,17 @@ const hits = [];
 for (const rel of FILES) {
   if (rel.endsWith("index.json") || rel.endsWith("plans-index.json")) continue;
   let doc;
-  try { doc = JSON.parse(readFileSync(join(ROOT, rel), "utf8")); } catch { continue; }
+  try { doc = JSON.parse(readFileSync(resolve(ROOT, rel), "utf8")); } catch { continue; }
   for (const [path, text] of strings(doc)) {
     if (/^(slug|href|url|id)$|\.(slug|href|url|id)$/.test(path)) continue;
     if (EXEMPT_PATH.test(path)) continue;
-    // Set aside verbatim Scripture in double quotes.
-    let prose = text.replace(/[“"]([^”"]+)[”"]/g, (m, q) => (bible.includes(normalize(q)) && normalize(q).split(" ").length >= 3 ? " " : m));
-    for (const re of ALLOWED) prose = prose.replace(re, " ");
+    // Set aside verbatim Scripture in double quotes; in an essay, every
+    // quotation and link target (the ESV and named sources are not ours to edit).
+    const prose = setAsideAllowed(
+      ESSAYS.has(rel)
+        ? readEssayText(text).prose
+        : text.replace(/[“"]([^”"]+)[”"]/g, (m, q) => (bibleText().includes(normalize(q)) && normalize(q).split(" ").length >= 3 ? " " : m))
+    );
     for (const m of prose.matchAll(forbiddenRe)) hits.push({ rel, path, word: m[1], at: prose.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });
     // A style note left in reader-facing text ("Not X. Y." is the name of a move, not a sentence).
     if (!/reviewed\.notes$/.test(path)) for (const m of text.matchAll(/\bNot X\. Y\./g)) hits.push({ rel, path, word: "Not X. Y.", at: text.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });

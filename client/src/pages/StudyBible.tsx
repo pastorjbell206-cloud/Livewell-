@@ -115,7 +115,7 @@ export default function StudyBible() {
       ) : book && Number.isFinite(chapterNum) ? (
         <Reader books={books} book={book} chapter={chapterNum} />
       ) : book ? (
-        <BookPage books={books} book={book} />
+        <BookPage book={book} />
       ) : (
         <BookIndex books={books} />
       )}
@@ -213,7 +213,7 @@ function BookIndex({ books }: { books: BibleBook[] }) {
 
 // ── a book ───────────────────────────────────────────────────────────────────
 
-function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
+function BookPage({ book }: { book: BibleBook }) {
   const { data: intro } = useLoad<BookIntro>(`intro-${book.slug}`, () => fetchIntro(book.slug));
   const { data: index } = useLoad("notes-index", fetchNotesIndex);
   const { data: act } = useLoad(`act-${book.slug}`, () =>
@@ -224,7 +224,7 @@ function BookPage({ books, book }: { books: BibleBook[]; book: BibleBook }) {
     })
   );
   const { data: related } = useLoad(`book-related-${book.slug}`, () =>
-    fetchCatalogue().then((c) => spreadKinds(itemsForPassage(c.items, books, book.slug), 8))
+    fetchCatalogue().then((c) => spreadKinds(itemsForPassage(c.items, book.slug), 8))
   );
   const { data: doctrines } = useLoad("doctrines", fetchDoctrines);
   const titles = index?.titles[book.slug] ?? [];
@@ -747,10 +747,10 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
   useEffect(() => {
     let stale = false;
     fetchCatalogue()
-      .then((c) => { if (!stale) setRelated(itemsForPassage(c.items, books, book.slug, chapter).slice(0, 8)); })
+      .then((c) => { if (!stale) setRelated(itemsForPassage(c.items, book.slug, chapter).slice(0, 8)); })
       .catch(() => { if (!stale) setRelated([]); });
     return () => { stale = true; };
-  }, [books, book.slug, chapter]);
+  }, [book.slug, chapter]);
 
   const script = lang === "H" ? HEB : GRK;
   const refLabel = `${book.name} ${chapter}:${verse.v}`;
@@ -763,7 +763,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
       {entry && (
         <>
           <div style={panelH}>Study notes{entry.v.includes("-") ? ` on ${chapter}:${entry.v.replace("-", "–")}` : ""}</div>
-          <VerseEntry entry={entry} books={books} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
+          <VerseEntry entry={entry} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
         </>
       )}
 

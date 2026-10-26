@@ -88,7 +88,7 @@ export default function Family() {
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             Disciple your whole family, in one place.
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
             Devotions you can actually do with your kids. Apologetics that give a teenager not just what to believe but why. Scripture and writing for parenting and marriage. The whole house, learning to carry the weight of faith together.
           </p>
         </div>
@@ -234,7 +234,7 @@ export default function Family() {
             label="Parenting guides and tools"
             items={[
               { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." },
-              { href: "/parenting", title: "On parenting", dek: "Essays on raising children in the faith without crushing them." },
+              { href: "/help/parenting", title: "When parenting is hard", dek: "For worn-out parents of little ones, of a teen who has gone quiet, or of a grown child who has left the faith." },
               { href: "/tools/parenting-guide", title: "Parenting stage guide", dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
               { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
               { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." },
@@ -257,7 +257,7 @@ export default function Family() {
             min={440}
             label="Marriage guides and tools"
             items={[
-              { href: "/marriage", title: "On marriage", dek: "Covenant, not contract. Marriage through the long middle." },
+              { href: "/help/marriage", title: "When a marriage is in trouble", dek: "For the marriage that has gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help." },
               { href: "/tools/marriage-assessment", title: "Marriage health assessment", dek: "A 15-question diagnostic across communication, trust, conflict, and shared vision." },
               { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
               { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },

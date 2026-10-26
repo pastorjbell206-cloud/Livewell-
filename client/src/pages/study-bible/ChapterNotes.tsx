@@ -137,7 +137,7 @@ export function ChapterNotesBody(props: {
   const { data: passages } = useLoad("notes-index", fetchNotesIndex);
   const { data: related } = useLoad<CatalogueItem[]>(doctrines === undefined ? null : `related-${key}`, () =>
     fetchCatalogue().then((c) => {
-      const direct = itemsForPassage(c.items, books, book.slug, chapter);
+      const direct = itemsForPassage(c.items, book.slug, chapter);
       const idx = buildIndex(c.items);
       const topical = note.doctrines.flatMap((d) => search(idx, doctrines?.find((x) => x.id === d.id)?.terms ?? d.id).results.slice(0, 4));
       return spreadKinds([...direct, ...topical], 6);
@@ -229,7 +229,7 @@ export function ChapterNotesBody(props: {
       </Section>
       {verseNotes && verseNotes.length > 0 && (
         <Section title="Verse by verse: context, language, history, doctrine" id="verse-by-verse">
-          <VerseByVerse notes={verseNotes} book={book} chapter={chapter} books={books} doctrines={doctrines} data={data} onVerse={onVerse} onWord={onWord} />
+          <VerseByVerse notes={verseNotes} book={book} chapter={chapter} doctrines={doctrines} data={data} onVerse={onVerse} onWord={onWord} />
         </Section>
       )}
       <Section title={lang === "H" ? "How it points to Christ" : "What it shows of Christ"}>
