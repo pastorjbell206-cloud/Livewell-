@@ -1,0 +1,379 @@
+[
+ {
+  "viewport": "390x844",
+  "slug": "strongman-theology",
+  "firstSentence": "The elders did not ask for a tyrant.",
+  "firstParagraphTop": 758,
+  "firstSentenceBottom": 784,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 390,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 147px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "390x844",
+  "slug": "when-fear-rewrites-theology",
+  "firstSentence": "The first thing fear does is dress itself as discernment.",
+  "firstParagraphTop": 702,
+  "firstSentenceBottom": 760,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 390,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 147px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "390x844",
+  "slug": "when-the-church-married-empire",
+  "firstSentence": "The ESV renders it plainly.",
+  "firstParagraphTop": 684,
+  "firstSentenceBottom": 710,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": true,
+  "scrollWidth": 390,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 147px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "390x844",
+  "slug": "when-the-church-married-empire",
+  "afterTap": true
+ },
+ {
+  "viewport": "1440x900",
+  "slug": "strongman-theology",
+  "firstSentence": "The elders did not ask for a tyrant.",
+  "firstParagraphTop": 1114,
+  "firstSentenceBottom": 1140,
+  "toolRows": 1,
+  "contentsOpen": true,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 1440,
+  "styles": {
+   "backPad": "8px 32px",
+   "headPad": "64px 32px 32px",
+   "kickerMb": "24px",
+   "titleMb": "24px",
+   "dek": [
+    "22px",
+    "33px",
+    "0px 0px 28px"
+   ],
+   "ruleMargin": "0px 308px 20px",
+   "actionsMt": "24px",
+   "mainPad": "64px 32px",
+   "toolsMargin": "0px 348px 24px",
+   "contentsMargin": "0px 348px 48px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": false
+ },
+ {
+  "viewport": "1440x900",
+  "slug": "when-fear-rewrites-theology",
+  "firstSentence": "The first thing fear does is dress itself as discernment.",
+  "firstParagraphTop": 986,
+  "firstSentenceBottom": 1012,
+  "toolRows": 1,
+  "contentsOpen": true,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 1440,
+  "styles": {
+   "backPad": "8px 32px",
+   "headPad": "64px 32px 32px",
+   "kickerMb": "24px",
+   "titleMb": "24px",
+   "dek": [
+    "22px",
+    "33px",
+    "0px 0px 28px"
+   ],
+   "ruleMargin": "0px 308px 20px",
+   "actionsMt": "24px",
+   "mainPad": "64px 32px",
+   "toolsMargin": "0px 348px 24px",
+   "contentsMargin": "0px 348px 48px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": false
+ },
+ {
+  "viewport": "1440x900",
+  "slug": "when-the-church-married-empire",
+  "firstSentence": "The ESV renders it plainly.",
+  "firstParagraphTop": 973,
+  "firstSentenceBottom": 999,
+  "toolRows": 1,
+  "contentsOpen": true,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": true,
+  "scrollWidth": 1440,
+  "styles": {
+   "backPad": "8px 32px",
+   "headPad": "64px 32px 32px",
+   "kickerMb": "24px",
+   "titleMb": "24px",
+   "dek": [
+    "22px",
+    "33px",
+    "0px 0px 28px"
+   ],
+   "ruleMargin": "0px 308px 20px",
+   "actionsMt": "24px",
+   "mainPad": "64px 32px",
+   "toolsMargin": "0px 348px 24px",
+   "contentsMargin": "0px 348px 48px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": false
+ },
+ {
+  "viewport": "360x780",
+  "slug": "strongman-theology",
+  "firstSentence": "The elders did not ask for a tyrant.",
+  "firstParagraphTop": 785,
+  "firstSentenceBottom": 843,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 360,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 132px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": false
+ },
+ {
+  "viewport": "360x780",
+  "slug": "when-fear-rewrites-theology",
+  "firstSentence": "The first thing fear does is dress itself as discernment.",
+  "firstParagraphTop": 702,
+  "firstSentenceBottom": 760,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 360,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 132px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "360x780",
+  "slug": "when-the-church-married-empire",
+  "firstSentence": "The ESV renders it plainly.",
+  "firstParagraphTop": 684,
+  "firstSentenceBottom": 710,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": true,
+  "scrollWidth": 360,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 132px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "600x900",
+  "slug": "strongman-theology",
+  "firstSentence": "The elders did not ask for a tyrant.",
+  "firstParagraphTop": 630,
+  "firstSentenceBottom": 656,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 600,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 252px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "600x900",
+  "slug": "when-fear-rewrites-theology",
+  "firstSentence": "The first thing fear does is dress itself as discernment.",
+  "firstParagraphTop": 575,
+  "firstSentenceBottom": 601,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": false,
+  "scrollWidth": 600,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 252px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "600x900",
+  "slug": "when-the-church-married-empire",
+  "firstSentence": "The ESV renders it plainly.",
+  "firstParagraphTop": 575,
+  "firstSentenceBottom": 601,
+  "toolRows": 1,
+  "contentsOpen": false,
+  "summaryBox": 50.6875,
+  "backButtonHeight": 44,
+  "esvNotice": true,
+  "scrollWidth": 600,
+  "styles": {
+   "backPad": "0px 16px",
+   "headPad": "24px 16px 0px",
+   "kickerMb": "16px",
+   "titleMb": "16px",
+   "dek": [
+    "19px",
+    "27.55px",
+    "0px 0px 20px"
+   ],
+   "ruleMargin": "0px 252px 16px",
+   "actionsMt": "20px",
+   "mainPad": "24px 16px 64px",
+   "toolsMargin": "0px 0px 16px",
+   "contentsMargin": "0px 0px 24px",
+   "firstChildMt": "0px"
+  },
+  "onFirstScreen": true
+ }
+]
