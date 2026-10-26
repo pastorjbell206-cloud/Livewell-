@@ -30,6 +30,7 @@ jobs:
       - name: Content gates (life + study-guide + pathways + theology + politics + scripture validators)
         run: |
           node scripts/validate-scripture.mjs
+          node scripts/validate-design.mjs
           node scripts/validate-life.mjs
           node scripts/validate-studyguides.mjs
           node scripts/validate-pathways.mjs
