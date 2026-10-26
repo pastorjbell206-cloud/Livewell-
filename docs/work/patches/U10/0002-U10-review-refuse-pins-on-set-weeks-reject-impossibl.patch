@@ -1,0 +1,142 @@
+From 09bf1ca646a7182c3e4c5af93e9673c2bdd734db Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 22:22:34 +0000
+Subject: [PATCH 2/2] U10 review: refuse pins on set weeks, reject impossible
+ dates, keep prettier off the map
+
+- scripts/lib/family-year.mjs: a hand override on a week a daily seasonal set
+  serves now stops the build with the reason. Before, the build accepted it
+  and wrote a week carrying both a set and a devotion, which the type's own
+  doc rules out and the map test then failed on with a bare "expected null".
+- client/src/lib/familyYear.ts: onFamilyMap and the readers return null for a
+  date that is not a real day ("2027-02-30"), as the doc comment promised;
+  Date used to roll it into March and answer for the wrong week.
+- .prettierignore: client/src/lib/*.generated.ts. The family map is not in
+  Prettier's style, so a format-on-save or `pnpm format` would rewrite it
+  and the new `build-family-year.mjs --check` CI step would then fail.
+- Tests for the first two.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .prettierignore                          | 2 ++
+ client/public/family-year-overrides.json | 2 +-
+ client/src/lib/familyYear.test.ts        | 5 +++++
+ client/src/lib/familyYear.ts             | 7 +++++--
+ scripts/lib/family-year.mjs              | 9 ++++++---
+ server/church-year.test.ts               | 5 +++++
+ 6 files changed, 24 insertions(+), 6 deletions(-)
+
+diff --git a/.prettierignore b/.prettierignore
+index 72842592..591fee00 100644
+--- a/.prettierignore
++++ b/.prettierignore
+@@ -10,6 +10,8 @@ build/
+ # Generated files
+ *.tsbuildinfo
+ coverage/
++# Written by scripts; CI compares them byte for byte with a fresh build.
++client/src/lib/*.generated.ts
+ 
+ # Package files
+ package-lock.json
+diff --git a/client/public/family-year-overrides.json b/client/public/family-year-overrides.json
+index 990d4b9e..ec90f1b2 100644
+--- a/client/public/family-year-overrides.json
++++ b/client/public/family-year-overrides.json
+@@ -1,4 +1,4 @@
+ {
+-  "about": "Hand overrides for the family year map (client/src/lib/familyYear.generated.ts). Each entry pins one devotion, by its id in any client/public/family-devotions*.json file, to the week that begins on the given Sunday, for example { \"week\": \"2027-01-10\", \"devotion\": \"forgiveness\", \"note\": \"why this week\" }. A pinned week does not use up a slot in the rotation. After editing, run: node scripts/build-family-year.mjs",
++  "about": "Hand overrides for the family year map (client/src/lib/familyYear.generated.ts). Each entry pins one devotion, by its id in any client/public/family-devotions*.json file, to the week that begins on the given Sunday (a week the rotation serves, not one a daily seasonal set serves), for example { \"week\": \"2027-01-10\", \"devotion\": \"forgiveness\", \"note\": \"why this week\" }. A pinned week does not use up a slot in the rotation. After editing, run: node scripts/build-family-year.mjs",
+   "weeks": []
+ }
+diff --git a/client/src/lib/familyYear.test.ts b/client/src/lib/familyYear.test.ts
+index 12f21870..60dbc339 100644
+--- a/client/src/lib/familyYear.test.ts
++++ b/client/src/lib/familyYear.test.ts
+@@ -27,6 +27,11 @@ describe("familyYear", () => {
+     expect(familyWeekOn("2099-01-01")).toBeNull();
+     expect(familyWeekOn("tonight")).toBeNull();
+     expect(onFamilyMap("2027-1-1")).toBe(false);
++    // Not a real day: Date would roll it into March.
++    expect(onFamilyMap("2027-02-30")).toBe(false);
++    expect(familyWeekOn("2027-02-30")).toBeNull();
++    expect(familySeasonOn("2027-02-31")).toBeNull();
++    expect(familySetDayOn("2026-12-32")).toBeNull();
+     expect(familySeasonOn("2099-01-01")).toBeNull();
+     expect(familySetDayOn("2099-12-01")).toBeNull();
+   });
+diff --git a/client/src/lib/familyYear.ts b/client/src/lib/familyYear.ts
+index f5ca9eee..6e8619f7 100644
+--- a/client/src/lib/familyYear.ts
++++ b/client/src/lib/familyYear.ts
+@@ -25,10 +25,13 @@ export type { FamilySeasonKey, FamilySetKey, FamilyWeek } from "./familyYear.gen
+ const DAY_MS = 86_400_000;
+ const ISO = /^(\d{4})-(\d{2})-(\d{2})$/;
+ 
++/** Days since 1970 for a real calendar date; null for "2027-02-30", which Date would roll into March. */
+ function dayNumber(iso: string): number | null {
+   const m = ISO.exec(iso);
+   if (!m) return null;
+-  return Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])) / DAY_MS;
++  const t = Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
++  if (new Date(t).toISOString().slice(0, 10) !== iso) return null;
++  return t / DAY_MS;
+ }
+ 
+ /** The reader's calendar date, in their own time zone. */
+@@ -39,7 +42,7 @@ export function localISODate(d: Date = new Date()): string {
+ 
+ /** True when the date is on the map. */
+ export function onFamilyMap(date: string): boolean {
+-  return ISO.test(date) && date >= FAMILY_YEAR_FROM && date <= FAMILY_YEAR_THROUGH;
++  return dayNumber(date) !== null && date >= FAMILY_YEAR_FROM && date <= FAMILY_YEAR_THROUGH;
+ }
+ 
+ /** The week (Sunday to Saturday) that holds the date, or null off the map. */
+diff --git a/scripts/lib/family-year.mjs b/scripts/lib/family-year.mjs
+index b322d6ec..5414d1d2 100644
+--- a/scripts/lib/family-year.mjs
++++ b/scripts/lib/family-year.mjs
+@@ -23,9 +23,9 @@
+  *   - The rotation counts from ROTATION_EPOCH, not from the first week the
+  *     map lists, so extending the map never reshuffles it.
+  *   - A hand override (client/public/family-year-overrides.json) pins one
+- *     devotion, from any family-devotions*.json file, to one week. A pinned
+- *     week does not use up a rotation slot: the devotion it displaced moves to
+- *     the next week.
++ *     devotion, from any family-devotions*.json file, to one week the rotation
++ *     would serve (never a week a daily set serves). A pinned week does not use
++ *     up a rotation slot: the devotion it displaced moves to the next week.
+  *
+  * Regenerating with the same inputs writes the same file (CI checks this), and
+  * CI fails once fewer than twelve months remain in the map: raise LAST_YEAR
+@@ -207,6 +207,9 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
+     const season = weekSeason(s);
+     const set = served.get(season);
+     const pinned = pins.get(s);
++    if (pinned && set) {
++      problems.push(`${OVERRIDES_FILE}: week ${s} is served by the daily "${set}" set in ${SEASONAL_FILE}; pin only a week the rotation serves`);
++    }
+     all.push({ start: s, season, set, pinned, rotates: !set && !pinned });
+   }
+   const found = all.findIndex((w) => w.start >= epoch);
+diff --git a/server/church-year.test.ts b/server/church-year.test.ts
+index 61724381..ad6da80e 100644
+--- a/server/church-year.test.ts
++++ b/server/church-year.test.ts
+@@ -308,6 +308,11 @@ describe("the year map's hand overrides and sets", () => {
+     expect(buildYearMap({ ...inputs, overrides: [] }).problems.join("\n")).toMatch(/expected \{ "weeks"/);
+   });
+ 
++  it("refuse a pin on a week a daily set serves", () => {
++    const onSet: Built = buildYearMap(withPins([{ week: "2026-11-22", devotion: "gratitude" }]));
++    expect(onSet.problems.join("\n")).toMatch(/week 2026-11-22 is served by the daily "thanksgiving" set/);
++  });
++
+   it("refuse a seasonal set it cannot place or whose length changed", () => {
+     expect(buildYearMap({ ...inputs, sets: { ...inputs.sets, lent: 40 } }).problems.join("\n")).toMatch(/"lent" has no place/);
+     expect(buildYearMap({ ...inputs, sets: { ...inputs.sets, advent: 26 } }).problems.join("\n")).toMatch(/"advent" has 26 days/);
+-- 
+2.43.0
+

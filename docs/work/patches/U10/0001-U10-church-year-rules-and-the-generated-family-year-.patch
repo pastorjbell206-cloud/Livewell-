@@ -1,7 +1,7 @@
 From 7656a16eae6b99e3ae2672c98db9faf713816e71 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Mon, 26 Oct 2026 21:23:46 +0000
-Subject: [PATCH] U10: church-year rules and the generated family year map
+Subject: [PATCH 1/2] U10: church-year rules and the generated family year map
 
 scripts/lib/church-year.mjs computes the church year from rules: Easter by
 the computus (checked against an independent algorithm for 1583 to 4099),
