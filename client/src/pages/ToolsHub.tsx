@@ -80,7 +80,7 @@ export const TOOLS = [
   },
   {
     title: "Proverbs in 31 Days",
-    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. You can set a daily reminder on your phone.",
+    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. A daily reminder can go in your own calendar.",
     href: "/tools/proverbs-31",
     icon: BookMarked,
     color: "var(--goldlt)",
