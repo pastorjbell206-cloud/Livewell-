@@ -463,7 +463,7 @@ export const LIBRARIES = {
   family: () => {
     const devotions = [...list("family-devotions.json"), ...list("family-devotions-2.json")].length;
     return [
-      item({ kind: "Family", title: "Family Catechism", summary: clip("A 52-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
+      item({ kind: "Family", title: "Family Catechism", summary: clip("A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
       item({
         kind: "Family", title: "Family Devotions", summary: clip("A full year of family devotions to do together, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."), href: "/family/devotions", period: `${devotions} devotions`,
         // The seasonal booklets, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.

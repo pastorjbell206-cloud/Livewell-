@@ -1,9 +1,9 @@
 /**
  * Family Catechism (/family/catechism) — a New City Catechism-style set of 76
- * questions a family learns and discusses together, one per week (the
- * "this week" pick walks weeks 1 to 52, so it never lands past question 52;
- * the full list below shows all of them). Each question
- * opens to an adult answer, a child's version, the Scripture, a short
+ * questions a family learns and discusses together, one per week. The "this
+ * week" pick walks every question in turn and starts again
+ * (lib/familyCatechism.ts), so questions 53 to 76 get their weeks too. Each
+ * question opens to an adult answer, a child's version, the Scripture, a short
  * commentary, and a prayer. Data: /family-catechism.json.
  */
 import { useEffect, useMemo, useState } from "react";
@@ -13,6 +13,9 @@ import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
+import LoadFailed from "@/components/LoadFailed";
+import { fetchJson } from "@/lib/fetch-json";
+import { catechismWeekIndex } from "@/lib/familyCatechism";
 
 interface Entry {
   number: number;
@@ -26,11 +29,8 @@ interface Entry {
   prayer?: string;
 }
 
-function weekOfYear(): number {
-  const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 1);
-  const days = Math.floor((now.getTime() - start.getTime()) / 86400000);
-  return Math.min(52, Math.max(1, Math.ceil((days + start.getDay() + 1) / 7)));
+function isEntries(x: unknown): x is Entry[] {
+  return Array.isArray(x) && x.every((e) => typeof e?.number === "number" && typeof e?.question === "string" && typeof e?.part === "string");
 }
 
 function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned }: {
@@ -80,17 +80,25 @@ function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned }:
 }
 
 export default function FamilyCatechism() {
-  const [entries, setEntries] = useState<Entry[]>([]);
+  // Loading, failed, and loaded are distinct states keyed to a retry nonce
+  // (the HowTos pattern), so a failed fetch offers a retry instead of
+  // "Loading…" forever.
+  const [loaded, setLoaded] = useState<Entry[] | null>(null);
+  const [failedAt, setFailedAt] = useState<number | null>(null);
+  const [nonce, setNonce] = useState(0);
+  const failed = failedAt === nonce;
   const [open, setOpen] = useState<number | null>(null);
   const { isDone, toggle, count, reset, persisted } = useProgress("lw-family-catechism-v1");
 
   useEffect(() => {
-    fetch("/family-catechism.json")
-      .then((r) => (r.ok ? r.json() : []))
-      .then((d) => Array.isArray(d) && setEntries(d))
-      .catch(() => {});
-  }, []);
+    let live = true;
+    fetchJson("/family-catechism.json", isEntries)
+      .then((d) => { if (live) setLoaded(d); })
+      .catch(() => { if (live) setFailedAt(nonce); });
+    return () => { live = false; };
+  }, [nonce]);
 
+  const entries = useMemo(() => loaded ?? [], [loaded]);
   const parts = useMemo(() => {
     const order: string[] = [];
     const map = new Map<string, Entry[]>();
@@ -101,7 +109,7 @@ export default function FamilyCatechism() {
     return order.map((p) => ({ part: p, items: map.get(p)! }));
   }, [entries]);
 
-  const ofTheWeek = entries.find((e) => e.number === weekOfYear()) ?? entries[0];
+  const ofTheWeek = entries.length > 0 ? entries[catechismWeekIndex(new Date(), entries.length)] : undefined;
 
   return (
     <Layout>
@@ -111,7 +119,7 @@ export default function FamilyCatechism() {
         url="https://www.livewellbyjamesbell.co/family/catechism"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Catechism
@@ -119,7 +127,7 @@ export default function FamilyCatechism() {
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>
             The Family Catechism
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
             Seventy-six questions, taken one a week. A family learns the faith the way it has always been learned, by question and answer, said out loud together until it lives in them. Each one has an answer for the grown-ups and a shorter one for the little ones, a verse, a short word for the parent, and a prayer.
           </p>
         </div>
@@ -138,7 +146,10 @@ export default function FamilyCatechism() {
       {/* EVERY QUESTION, BY PART */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          {entries.length === 0 && (
+          {failed && (
+            <LoadFailed what="The catechism" onRetry={() => setNonce((n) => n + 1)} backHref="/family" backLabel="Back to Family" />
+          )}
+          {!loaded && !failed && (
             <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the catechism…</p>
           )}
           {entries.length > 0 && (
