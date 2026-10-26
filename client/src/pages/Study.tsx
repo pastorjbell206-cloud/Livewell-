@@ -7,7 +7,8 @@
  * the church's history and its creeds, then reading Scripture in the world it
  * was written in, then studying with a group. Every link is an existing route;
  * the study tools that used to be listed here live in the /tools registry,
- * linked at the foot of the page.
+ * linked at the foot of the page. It opens on the compact PageHead, not a
+ * charcoal hero, so the Study Bible starts on a phone's first screen.
  *
  * The counts are the Study Bible's own (client/public/bible): 66 book
  * introductions, notes on all 1,189 chapters, 11 acts, 62 doctrine studies,
@@ -18,6 +19,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
+import { PageHead } from "@/components/editorial/PageHead";
 
 const gutter = "clamp(16px, 4vw, var(--s-4))";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
@@ -66,40 +68,21 @@ export default function Study() {
       />
       <HubStyles />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter} var(--s-5)` }}>
-        <div style={wrap}>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(38px, 5.4vw, 64px)",
-              fontWeight: 400,
-              lineHeight: 1.04,
-              letterSpacing: "-0.02em",
-              color: "var(--charcoal-fg)",
-              margin: "0 0 18px",
-              maxWidth: "18ch",
-            }}
-          >
-            Learn the whole Bible, and the church that carried it
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch", margin: 0 }}>
-            Start with the Study Bible, whether you have never opened it or have read it for years. Behind it
-            stand twenty centuries of Christians who read the same pages, the creeds they confessed, and the
-            ancient world the text assumes you already know.
-          </p>
-        </div>
-      </section>
+      <PageHead
+        eyebrow="Study"
+        title="Learn the whole Bible, and the church that carried it"
+        lede="Start with the Study Bible, whether you have never opened it or have read it for years."
+      />
 
       {/* THE STUDY BIBLE: first and biggest. */}
-      <section aria-labelledby="study-bible-title" style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter}` }}>
+      <section aria-labelledby="study-bible-title" style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
         <div style={wrap} className="study-bible">
           <div className="study-bible__lead">
             <h2
               id="study-bible-title"
               style={{
                 fontFamily: "var(--F)",
-                fontSize: "clamp(40px, 5vw, 60px)",
+                fontSize: "clamp(32px, 3.8vw, 44px)",
                 fontWeight: 400,
                 lineHeight: 1.04,
                 letterSpacing: "-0.02em",
