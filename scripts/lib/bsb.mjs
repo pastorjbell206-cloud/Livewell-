@@ -7,28 +7,39 @@
  *   import { passage, parseRef, normalize } from "./lib/bsb.mjs";
  *   passage("Philippians 4:6-7")   -> { ref, verses: [{ c, v, t }], text }
  *
- * Supported references: "Book C", "Book C:V", "Book C:V-V", "Book C:V-C:V",
- * and comma lists within one chapter ("Psalm 23:1,4"). Book names follow the
- * site's usage ("Psalm" or "Psalms", "Song of Songs", "1 John").
+ * References are read by readRef, with the same grammar and book table as the
+ * site's parser (client/src/lib/scripture-ref.ts; scripture-ref.test.ts holds
+ * the two together): "Book C", "Book C-C", "Book C:V", "Book C:V-V",
+ * "Book C:V-C:V", verse lists within a chapter ("Psalm 23:1,4"), chapters
+ * joined by semicolons ("Romans 5:1; 8:28"), loose spacing ("jn 3 16"), and
+ * the abbreviations in client/src/data/scripture-books.json ("Ps", "1 Cor").
  */
 import { readFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = new URL("../..", import.meta.url).pathname;
+// Not new URL("../..", import.meta.url): Vite rewrites that form, and the
+// site's tests import this file through Vite (scripture-ref.test.ts).
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
 const BIBLE = join(ROOT, "client/public/bible");
-const books = JSON.parse(readFileSync(join(BIBLE, "books.json"), "utf8"));
+const BOOK_TABLE = JSON.parse(readFileSync(join(ROOT, "client/src/data/scripture-books.json"), "utf8"));
+
+/** A book name as the alias table stores it: "1 Cor." and "I Corinthians" become "1 cor" and "1 corinthians". */
+export function bookKey(name) {
+  return name
+    .toLowerCase()
+    .replace(/\./g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^(?:first|1st|i) /, "1 ")
+    .replace(/^(?:second|2nd|ii) /, "2 ")
+    .replace(/^(?:third|3rd|iii) /, "3 ")
+    .replace(/^([1-3])(?=[a-z])/, "$1 ");
+}
 
 const ALIASES = new Map();
-for (const b of books) {
-  ALIASES.set(b.name.toLowerCase(), b);
-  ALIASES.set(b.slug.replace(/-/g, " "), b);
-  ALIASES.set(b.code.toLowerCase(), b);
-}
-ALIASES.set("psalm", ALIASES.get("psalms"));
-const song = books.find((b) => b.slug === "song-of-solomon");
-if (song) {
-  ALIASES.set("song of songs", song);
-  ALIASES.set("song of solomon", song);
+for (const { aliases, ...book } of BOOK_TABLE) {
+  for (const a of [book.name, book.slug.replace(/-/g, " "), book.code, ...aliases]) ALIASES.set(bookKey(a), book);
 }
 
 const chapters = new Map();
@@ -40,31 +51,66 @@ function chapter(slug, c) {
   return chapters.get(key);
 }
 
-/** "Philippians 4:6-7" -> { book, parts: [{ c1, v1, c2, v2 }] } or throws. */
-export function parseRef(ref) {
-  const m = ref.trim().match(/^((?:[1-3]\s)?[A-Za-z][A-Za-z ]*?)\s+(\d.*)$/);
-  if (!m) throw new Error(`Cannot read reference "${ref}"`);
-  const book = ALIASES.get(m[1].toLowerCase().replace(/\s+/g, " "));
-  if (!book) throw new Error(`Unknown book in "${ref}"`);
-  const loc = m[2].replace(/\s+/g, "");
+/** The book (letters, with an optional 1-3 in front), then everything from the first digit after it. */
+const SPLIT = /^(.*?[a-z][a-z.]*)\s*(\d[\s\S]*)$/i;
+const CHAPTERS = /^(\d+)(?:-(\d+))?$/;
+const VERSES = /^(\d+)(?:-(?:(\d+):)?(\d+))?$/;
+
+/**
+ * "Philippians 4:6-7" -> { book, parts: [{ c1, v1, c2, v2 }] } (v2 is
+ * Infinity when a part runs to the chapter's end), or null when it is not a
+ * reference to a chapter and verse that can exist. The same rules, line for
+ * line, as parseScriptureRef in client/src/lib/scripture-ref.ts.
+ */
+export function readRef(ref) {
+  if (typeof ref !== "string") return null;
+  const m = ref.trim().replace(/[‐-―−]/g, "-").match(SPLIT);
+  if (!m) return null;
+  const book = ALIASES.get(bookKey(m[1]));
+  if (!book) return null;
+  const loc = m[2]
+    .replace(/\s*([:.,;-])\s*/g, "$1")
+    .replace(/^(\d+)\s+(?=\d)/, "$1:")
+    .replace(/(\d)\.(?=\d)/g, "$1:");
+  if (/[^\d:,;-]/.test(loc)) return null;
   const parts = [];
-  if (!loc.includes(":")) {
-    const [a, b] = loc.split("-").map(Number);
-    for (let c = a; c <= (b || a); c++) parts.push({ c1: c, v1: 1, c2: c, v2: Infinity });
-    return { book, parts };
+  for (const seg of loc.split(";")) {
+    const colon = seg.indexOf(":");
+    if (colon < 0) {
+      const r = seg.match(CHAPTERS);
+      if (!r) return null;
+      const a = Number(r[1]);
+      const b = r[2] ? Number(r[2]) : a;
+      // A one-chapter book is cited by verse: "Jude 3" is Jude 1:3, "Jude 1" the whole letter.
+      if (book.chapters === 1 && seg !== "1") parts.push({ c1: 1, v1: a, c2: 1, v2: b });
+      else parts.push({ c1: a, v1: 1, c2: b, v2: Infinity });
+      continue;
+    }
+    const chap = seg.slice(0, colon);
+    if (!/^\d+$/.test(chap)) return null;
+    let c = Number(chap);
+    for (const v of seg.slice(colon + 1).split(",")) {
+      const r = v.match(VERSES);
+      if (!r) return null;
+      const v1 = Number(r[1]);
+      const c2 = r[2] ? Number(r[2]) : c;
+      const v2 = r[3] ? Number(r[3]) : v1;
+      parts.push({ c1: c, v1, c2, v2 });
+      c = c2;
+    }
   }
-  const [chap, rest] = loc.split(/:(.*)/s);
-  let c = Number(chap);
-  for (const seg of rest.split(",")) {
-    const range = seg.match(/^(\d+)(?:-(?:(\d+):)?(\d+))?$/);
-    if (!range) throw new Error(`Cannot read verses "${seg}" in "${ref}"`);
-    const v1 = Number(range[1]);
-    const c2 = range[2] ? Number(range[2]) : c;
-    const v2 = range[3] ? Number(range[3]) : v1;
-    parts.push({ c1: c, v1, c2, v2 });
-    c = c2;
+  for (const p of parts) {
+    if (p.c1 < 1 || p.c2 > book.chapters || p.c2 < p.c1 || p.v1 < 1 || p.v2 < 1) return null;
+    if (p.c2 === p.c1 && p.v2 < p.v1) return null;
   }
-  return { book, parts };
+  return parts.length ? { book, parts } : null;
+}
+
+/** readRef for callers that stop on a reference they cannot read: the parts, or throws. */
+export function parseRef(ref) {
+  const r = readRef(ref);
+  if (!r) throw new Error(`Cannot read reference "${ref}" (an unknown book, or a chapter or verse that cannot exist)`);
+  return r;
 }
 
 /** The verses a reference names, in order, with the joined text. */

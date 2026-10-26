@@ -11,7 +11,7 @@
  */
 import { fetchJson } from "@/lib/fetch-json";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
-import type { BibleBook } from "@/lib/bible";
+import { parseScriptureRef, type ScriptureRef } from "@/lib/scripture-ref";
 import type { CatalogueItem } from "@/lib/catalogue";
 
 export interface BookIntro {
@@ -209,14 +209,6 @@ export function noteForVerse(notes: VerseNote[], verse: number): VerseNote | nul
   }) ?? null;
 }
 
-/** "John 3:16", "Psalm 23", "Romans 1:18-3:20" → a Study Bible link, or null. */
-export function refHref(ref: string, books: BibleBook[]): string | null {
-  const m = ref.match(/^((?:[1-3] )?[A-Za-z]+(?: of [A-Za-z]+)?) (\d+)(?::(\d+))?/);
-  if (!m) return null;
-  const name = m[1].toLowerCase() === "psalm" ? "psalms" : m[1].toLowerCase();
-  const b = books.find((x) => x.name.toLowerCase() === name);
-  return b ? `/study/bible/${b.slug}/${m[2]}${m[3] ? `#v${m[3]}` : ""}` : null;
-}
 export const fetchNotesIndex = () => cached("/bible/notes-index.json", isIndex);
 
 // ── the story path ───────────────────────────────────────────────────────────
@@ -262,70 +254,45 @@ export function setRead(key: string, read: boolean): boolean {
 
 // ── Scripture references in the rest of the site ────────────────────────────
 
-const ALIASES: Record<string, string> = {
-  psalm: "psalms", ps: "psalms", psa: "psalms",
-  "song of songs": "song-of-solomon", "song of solomon": "song-of-solomon", song: "song-of-solomon", canticles: "song-of-solomon",
-  qoheleth: "ecclesiastes", eccl: "ecclesiastes", eccles: "ecclesiastes",
-  gen: "genesis", ex: "exodus", exod: "exodus", lev: "leviticus", num: "numbers", deut: "deuteronomy",
-  josh: "joshua", judg: "judges", isa: "isaiah", jer: "jeremiah", lam: "lamentations", ezek: "ezekiel", dan: "daniel",
-  hos: "hosea", obad: "obadiah", mic: "micah", nah: "nahum", hab: "habakkuk", zeph: "zephaniah", hag: "haggai",
-  zech: "zechariah", mal: "malachi", matt: "matthew", mt: "matthew", mk: "mark", lk: "luke", jn: "john",
-  rom: "romans", gal: "galatians", eph: "ephesians", phil: "philippians", col: "colossians", heb: "hebrews",
-  jas: "james", rev: "revelation", revelations: "revelation", philem: "philemon",
-};
-
-/** Book-name → slug, built once from the Study Bible's table of contents. */
-function bookLookup(books: BibleBook[]): Map<string, string> {
-  const m = new Map<string, string>();
-  for (const b of books) {
-    m.set(b.name.toLowerCase(), b.slug);
-    m.set(b.slug.replace(/-/g, " "), b.slug);
+/** The longest opening stretch of the text that reads as a reference. */
+function leadingRef(text: string): ScriptureRef | null {
+  const s = text.trim();
+  for (let end = s.length; end > 0; end--) {
+    if (end < s.length && !/[\s,;(]/.test(s[end])) continue;
+    const r = parseScriptureRef(s.slice(0, end));
+    if (r) return r;
   }
-  for (const [k, v] of Object.entries(ALIASES)) m.set(k, v);
-  // "1 Sam", "2 Cor", "1 Jn"
-  const numbered: Record<string, string> = { sam: "samuel", kgs: "kings", ki: "kings", chr: "chronicles", chron: "chronicles", cor: "corinthians", thess: "thessalonians", thes: "thessalonians", tim: "timothy", pet: "peter", pt: "peter", jn: "john" };
-  for (const n of ["1", "2", "3"]) for (const [k, v] of Object.entries(numbered)) if (m.has(`${n} ${v}`)) m.set(`${n} ${k}`, m.get(`${n} ${v}`)!);
-  return m;
+  return null;
 }
-
-let lookupFor: BibleBook[] | null = null;
-let lookup: Map<string, string> = new Map();
 
 /**
  * "Psalm 139:1-4", "Daniel 1 and 6", "Romans 8–9", "1 Cor. 13" → the book's
- * slug and every chapter the reference touches. Null when it isn't a
- * reference to a book of the Bible.
+ * slug and every chapter the reference touches. A catalogue line can run on
+ * into prose ("Acts 2 (Pentecost)") or a second reference ("Proverbs 16:33
+ * and 21:1"): the reference it opens with names the book, and each "and" that
+ * goes on in the same book adds its chapters. Null when it does not open with
+ * a reference (read by lib/scripture-ref.ts).
  */
-export function refChapters(ref: string, books: BibleBook[]): { slug: string; chapters: number[] } | null {
-  if (lookupFor !== books) {
-    lookup = bookLookup(books);
-    lookupFor = books;
+export function refChapters(ref: string): { slug: string; chapters: number[] } | null {
+  const [head, ...more] = ref.split(/\s+and\s+/);
+  const lead = leadingRef(head);
+  if (!lead) return null;
+  const spans = [...lead.parts];
+  for (const piece of more) {
+    const next = /^\d/.test(piece) ? leadingRef(`${lead.book.name} ${piece}`) : null;
+    if (!next) break;
+    spans.push(...next.parts);
   }
-  const s = ref.toLowerCase().replace(/\./g, "").replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
-  const m = s.match(/^((?:[1-3] )?[a-z]+(?: of [a-z]+)?)\s+(\d+)(.*)$/);
-  if (!m) return null;
-  const slug = lookup.get(m[1]);
-  if (!slug) return null;
-  const book = books.find((b) => b.slug === slug);
-  if (!book) return null;
-  const first = +m[2];
-  const chapters = new Set<number>([first]);
-  const rest = m[3];
-  // A chapter range "8-9" (not a verse range "8:1-4"), or "1 and 6".
-  const range = rest.match(/^-(\d+)(?!:)/);
-  if (range && !rest.startsWith(":")) for (let c = first + 1; c <= +range[1]; c++) chapters.add(c);
-  const cross = rest.match(/^:\d+\s*-\s*(\d+):\d+/);
-  if (cross) for (let c = first + 1; c <= +cross[1]; c++) chapters.add(c);
-  for (const a of Array.from(rest.matchAll(/\band (\d+)\b/g))) chapters.add(+a[1]);
-  const valid = Array.from(chapters).filter((c) => c >= 1 && c <= book.chapters).sort((a, b) => a - b);
-  return valid.length ? { slug, chapters: valid } : null;
+  const chapters = new Set<number>();
+  for (const p of spans) for (let c = p.c1; c <= p.c2; c++) chapters.add(c);
+  return { slug: lead.book.slug, chapters: Array.from(chapters).sort((a, b) => a - b) };
 }
 
 /** Catalogue items whose Scripture references touch this book (and chapter, when given). */
-export function itemsForPassage(items: CatalogueItem[], books: BibleBook[], slug: string, chapter?: number): CatalogueItem[] {
+export function itemsForPassage(items: CatalogueItem[], slug: string, chapter?: number): CatalogueItem[] {
   return items.filter((it) =>
     (it.scripture ?? []).some((ref) => {
-      const r = refChapters(ref, books);
+      const r = refChapters(ref);
       return r !== null && r.slug === slug && (chapter === undefined || r.chapters.includes(chapter));
     })
   );
