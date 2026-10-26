@@ -129,7 +129,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
  delete mode 100644 client/src/data/womanhood-articles.ts
 
 diff --git a/api/index.ts b/api/index.ts
-index 1253ffc..e2b3fc6 100644
+index 1253ffc5..e2b3fc61 100644
 --- a/api/index.ts
 +++ b/api/index.ts
 @@ -1122,7 +1122,7 @@ async function sitemap(_req: VercelRequest, res: VercelResponse) {
@@ -142,7 +142,7 @@ index 1253ffc..e2b3fc6 100644
      try {
        articles = await withConn(async (c) => {
 diff --git a/client/public/life/domains/divorce-and-its-aftermath.json b/client/public/life/domains/divorce-and-its-aftermath.json
-index 92e381e..58dca1e 100644
+index 92e381e9..58dca1e0 100644
 --- a/client/public/life/domains/divorce-and-its-aftermath.json
 +++ b/client/public/life/domains/divorce-and-its-aftermath.json
 @@ -21,8 +21,8 @@
@@ -157,7 +157,7 @@ index 92e381e..58dca1e 100644
    ],
    "parts": [
 diff --git a/client/public/life/domains/friendship-against-isolation.json b/client/public/life/domains/friendship-against-isolation.json
-index f490aab..a03d922 100644
+index f490aab7..a03d922c 100644
 --- a/client/public/life/domains/friendship-against-isolation.json
 +++ b/client/public/life/domains/friendship-against-isolation.json
 @@ -10,7 +10,7 @@
@@ -170,7 +170,7 @@ index f490aab..a03d922 100644
      {
        "label": "Loneliness and anxiety feed each other in the dark. The anxious mind has its own page.",
 diff --git a/client/public/life/domains/grief-and-loss.json b/client/public/life/domains/grief-and-loss.json
-index 32b6a1d..0d9febd 100644
+index 32b6a1d1..0d9febd7 100644
 --- a/client/public/life/domains/grief-and-loss.json
 +++ b/client/public/life/domains/grief-and-loss.json
 @@ -6,7 +6,7 @@
@@ -183,7 +183,7 @@ index 32b6a1d..0d9febd 100644
      {
        "label": "Lament is not a detour from worship. It is worship under the conditions of a broken world.",
 diff --git a/client/public/life/domains/marriage-the-long-covenant.json b/client/public/life/domains/marriage-the-long-covenant.json
-index 3128e48..86a889f 100644
+index 3128e482..86a889f9 100644
 --- a/client/public/life/domains/marriage-the-long-covenant.json
 +++ b/client/public/life/domains/marriage-the-long-covenant.json
 @@ -29,8 +29,8 @@
@@ -198,7 +198,7 @@ index 3128e48..86a889f 100644
    ],
    "parts": [
 diff --git a/client/public/life/domains/raising-children-in-grace.json b/client/public/life/domains/raising-children-in-grace.json
-index eccb52b..cf20822 100644
+index eccb52b6..cf208225 100644
 --- a/client/public/life/domains/raising-children-in-grace.json
 +++ b/client/public/life/domains/raising-children-in-grace.json
 @@ -17,8 +17,8 @@
@@ -213,7 +213,7 @@ index eccb52b..cf20822 100644
      {
        "label": "Family Catechism",
 diff --git a/client/public/life/domains/sex-and-the-body.json b/client/public/life/domains/sex-and-the-body.json
-index f9b1e35..d786f89 100644
+index f9b1e359..d786f891 100644
 --- a/client/public/life/domains/sex-and-the-body.json
 +++ b/client/public/life/domains/sex-and-the-body.json
 @@ -21,8 +21,8 @@
@@ -228,7 +228,7 @@ index f9b1e35..d786f89 100644
    ],
    "parts": [
 diff --git a/client/public/life/domains/the-anxious-mind.json b/client/public/life/domains/the-anxious-mind.json
-index f1fce90..6f66311 100644
+index f1fce903..6f663119 100644
 --- a/client/public/life/domains/the-anxious-mind.json
 +++ b/client/public/life/domains/the-anxious-mind.json
 @@ -17,8 +17,8 @@
@@ -243,7 +243,7 @@ index f1fce90..6f66311 100644
      {
        "label": "Pastoral Health: A Study for Leaders and Those Who Love Them",
 diff --git a/client/public/life/domains/the-body-and-the-rhythms.json b/client/public/life/domains/the-body-and-the-rhythms.json
-index cc54e72..a4d6ad3 100644
+index cc54e72c..a4d6ad30 100644
 --- a/client/public/life/domains/the-body-and-the-rhythms.json
 +++ b/client/public/life/domains/the-body-and-the-rhythms.json
 @@ -18,7 +18,7 @@
@@ -256,7 +256,7 @@ index cc54e72..a4d6ad3 100644
      {
        "label": "Build a shared table practice for your household with the devotion builder.",
 diff --git a/client/public/life/domains/the-marriage-bed.json b/client/public/life/domains/the-marriage-bed.json
-index c533541..39ce7f6 100644
+index c5335410..39ce7f60 100644
 --- a/client/public/life/domains/the-marriage-bed.json
 +++ b/client/public/life/domains/the-marriage-bed.json
 @@ -21,8 +21,8 @@
@@ -271,7 +271,7 @@ index c533541..39ce7f6 100644
    ],
    "parts": [
 diff --git a/client/public/life/domains/the-wayward-child.json b/client/public/life/domains/the-wayward-child.json
-index 30c3186..fb0b323 100644
+index 30c31864..fb0b3235 100644
 --- a/client/public/life/domains/the-wayward-child.json
 +++ b/client/public/life/domains/the-wayward-child.json
 @@ -21,8 +21,8 @@
@@ -286,7 +286,7 @@ index 30c3186..fb0b323 100644
    ],
    "parts": [
 diff --git a/client/public/needs/cant-forgive.json b/client/public/needs/cant-forgive.json
-index 47b1f16..9da264b 100644
+index 47b1f16b..9da264b5 100644
 --- a/client/public/needs/cant-forgive.json
 +++ b/client/public/needs/cant-forgive.json
 @@ -172,8 +172,8 @@
@@ -301,7 +301,7 @@ index 47b1f16..9da264b 100644
        },
        {
 diff --git a/client/public/needs/church-hurt.json b/client/public/needs/church-hurt.json
-index 7b1e013..c73545b 100644
+index 7b1e0132..c73545bb 100644
 --- a/client/public/needs/church-hurt.json
 +++ b/client/public/needs/church-hurt.json
 @@ -138,11 +138,6 @@
@@ -326,7 +326,7 @@ index 7b1e013..c73545b 100644
    ],
    "sources": [
 diff --git a/client/public/needs/doubt.json b/client/public/needs/doubt.json
-index 8939925..d59cd18 100644
+index 89399250..d59cd188 100644
 --- a/client/public/needs/doubt.json
 +++ b/client/public/needs/doubt.json
 @@ -179,8 +179,8 @@
@@ -341,7 +341,7 @@ index 8939925..d59cd18 100644
        },
        {
 diff --git a/client/public/needs/parenting.json b/client/public/needs/parenting.json
-index 6f5754f..5dd8603 100644
+index 6f5754f0..5dd86031 100644
 --- a/client/public/needs/parenting.json
 +++ b/client/public/needs/parenting.json
 @@ -196,11 +196,6 @@
@@ -357,7 +357,7 @@ index 6f5754f..5dd8603 100644
      ],
      "plan": {
 diff --git a/client/public/pathways/anxiety.json b/client/public/pathways/anxiety.json
-index 1c0ddcb..87a7df4 100644
+index 1c0ddcb7..87a7df4f 100644
 --- a/client/public/pathways/anxiety.json
 +++ b/client/public/pathways/anxiety.json
 @@ -1,7 +1,7 @@
@@ -370,7 +370,7 @@ index 1c0ddcb..87a7df4 100644
    "movements": [
      {
 diff --git a/client/public/pathways/christian-nationalism.json b/client/public/pathways/christian-nationalism.json
-index 513e229..135b11e 100644
+index 513e229f..135b11e4 100644
 --- a/client/public/pathways/christian-nationalism.json
 +++ b/client/public/pathways/christian-nationalism.json
 @@ -1,7 +1,7 @@
@@ -383,7 +383,7 @@ index 513e229..135b11e 100644
    "movements": [
      {
 diff --git a/client/public/pathways/discipleship.json b/client/public/pathways/discipleship.json
-index 23b2fa6..97ff14d 100644
+index 23b2fa6e..97ff14d9 100644
 --- a/client/public/pathways/discipleship.json
 +++ b/client/public/pathways/discipleship.json
 @@ -1,7 +1,7 @@
@@ -396,7 +396,7 @@ index 23b2fa6..97ff14d 100644
    "movements": [
      {
 diff --git a/client/public/pathways/doubt-and-deconstruction.json b/client/public/pathways/doubt-and-deconstruction.json
-index 5381664..643ca26 100644
+index 53816640..643ca268 100644
 --- a/client/public/pathways/doubt-and-deconstruction.json
 +++ b/client/public/pathways/doubt-and-deconstruction.json
 @@ -1,7 +1,7 @@
@@ -409,7 +409,7 @@ index 5381664..643ca26 100644
    "movements": [
      {
 diff --git a/client/public/pathways/index.json b/client/public/pathways/index.json
-index c2af0c9..c3838dd 100644
+index c2af0c96..c3838dd3 100644
 --- a/client/public/pathways/index.json
 +++ b/client/public/pathways/index.json
 @@ -2,7 +2,7 @@
@@ -536,7 +536,7 @@ index c2af0c9..c3838dd 100644
      "steps": [
        "is-your-job-just-a-paycheck",
 diff --git a/client/public/pathways/manhood.json b/client/public/pathways/manhood.json
-index f4861bb..767a465 100644
+index f4861bb5..767a4655 100644
 --- a/client/public/pathways/manhood.json
 +++ b/client/public/pathways/manhood.json
 @@ -1,7 +1,7 @@
@@ -549,7 +549,7 @@ index f4861bb..767a465 100644
    "movements": [
      {
 diff --git a/client/public/pathways/marriage.json b/client/public/pathways/marriage.json
-index cb104cb..8439658 100644
+index cb104cb8..84396587 100644
 --- a/client/public/pathways/marriage.json
 +++ b/client/public/pathways/marriage.json
 @@ -1,7 +1,7 @@
@@ -562,7 +562,7 @@ index cb104cb..8439658 100644
    "movements": [
      {
 diff --git a/client/public/pathways/money.json b/client/public/pathways/money.json
-index fb21910..6ade7ba 100644
+index fb219103..6ade7baf 100644
 --- a/client/public/pathways/money.json
 +++ b/client/public/pathways/money.json
 @@ -1,7 +1,7 @@
@@ -575,7 +575,7 @@ index fb21910..6ade7ba 100644
    "movements": [
      {
 diff --git a/client/public/pathways/parenting.json b/client/public/pathways/parenting.json
-index 6c88f66..70c4e4c 100644
+index 6c88f663..70c4e4cd 100644
 --- a/client/public/pathways/parenting.json
 +++ b/client/public/pathways/parenting.json
 @@ -1,7 +1,7 @@
@@ -588,7 +588,7 @@ index 6c88f66..70c4e4c 100644
    "movements": [
      {
 diff --git a/client/public/pathways/prayer.json b/client/public/pathways/prayer.json
-index 23e25a2..7647933 100644
+index 23e25a2b..76479333 100644
 --- a/client/public/pathways/prayer.json
 +++ b/client/public/pathways/prayer.json
 @@ -1,7 +1,7 @@
@@ -601,7 +601,7 @@ index 23e25a2..7647933 100644
    "movements": [
      {
 diff --git a/client/public/pathways/progressive-captivity.json b/client/public/pathways/progressive-captivity.json
-index 046b98f..7d05607 100644
+index 046b98f7..7d05607d 100644
 --- a/client/public/pathways/progressive-captivity.json
 +++ b/client/public/pathways/progressive-captivity.json
 @@ -1,7 +1,7 @@
@@ -614,7 +614,7 @@ index 046b98f..7d05607 100644
    "movements": [
      {
 diff --git a/client/public/pathways/rest-and-rhythm.json b/client/public/pathways/rest-and-rhythm.json
-index 7c97c69..8a51b27 100644
+index 7c97c693..8a51b278 100644
 --- a/client/public/pathways/rest-and-rhythm.json
 +++ b/client/public/pathways/rest-and-rhythm.json
 @@ -1,7 +1,7 @@
@@ -627,7 +627,7 @@ index 7c97c69..8a51b27 100644
    "movements": [
      {
 diff --git a/client/public/pathways/suffering-and-grief.json b/client/public/pathways/suffering-and-grief.json
-index fe33371..891776c 100644
+index fe333710..891776cc 100644
 --- a/client/public/pathways/suffering-and-grief.json
 +++ b/client/public/pathways/suffering-and-grief.json
 @@ -1,7 +1,7 @@
@@ -640,7 +640,7 @@ index fe33371..891776c 100644
    "movements": [
      {
 diff --git a/client/public/pathways/work-and-vocation.json b/client/public/pathways/work-and-vocation.json
-index 8d29cb3..207a372 100644
+index 8d29cb32..207a372d 100644
 --- a/client/public/pathways/work-and-vocation.json
 +++ b/client/public/pathways/work-and-vocation.json
 @@ -1,7 +1,7 @@
@@ -653,7 +653,7 @@ index 8d29cb3..207a372 100644
    "movements": [
      {
 diff --git a/client/public/wisdom/topics.json b/client/public/wisdom/topics.json
-index 34748a0..4d33de7 100644
+index 34748a03..4d33de74 100644
 --- a/client/public/wisdom/topics.json
 +++ b/client/public/wisdom/topics.json
 @@ -6565,8 +6565,8 @@
@@ -679,7 +679,7 @@ index 34748a0..4d33de7 100644
        ],
        "articles": [
 diff --git a/client/public/wisdom/topics/core.json b/client/public/wisdom/topics/core.json
-index 8dd00f6..547f01f 100644
+index 8dd00f6a..547f01f9 100644
 --- a/client/public/wisdom/topics/core.json
 +++ b/client/public/wisdom/topics/core.json
 @@ -217,8 +217,8 @@
@@ -694,7 +694,7 @@ index 8dd00f6..547f01f 100644
      ],
      "articles": [
 diff --git a/client/public/wisdom/topics/relationships.json b/client/public/wisdom/topics/relationships.json
-index b10bf29..c1bca24 100644
+index b10bf296..c1bca241 100644
 --- a/client/public/wisdom/topics/relationships.json
 +++ b/client/public/wisdom/topics/relationships.json
 @@ -50,8 +50,8 @@
@@ -709,7 +709,7 @@ index b10bf29..c1bca24 100644
      ],
      "articles": [
 diff --git a/client/src/App.tsx b/client/src/App.tsx
-index 7136b05..129eaea 100644
+index 7136b05f..129eaeaa 100644
 --- a/client/src/App.tsx
 +++ b/client/src/App.tsx
 @@ -95,8 +95,6 @@ const HowToArticle = lazy(() => import("./pages/HowToArticle"));
@@ -813,7 +813,7 @@ index 7136b05..129eaea 100644
          <Route path="/compare/calvinism-vs-arminianism" component={CalvinismVsArminianism} />
 diff --git a/client/src/data/devotionals-2.ts b/client/src/data/devotionals-2.ts
 deleted file mode 100644
-index 8ce3757..0000000
+index 8ce37573..00000000
 --- a/client/src/data/devotionals-2.ts
 +++ /dev/null
 @@ -1,164 +0,0 @@
@@ -983,7 +983,7 @@ index 8ce3757..0000000
 -];
 diff --git a/client/src/data/devotionals.ts b/client/src/data/devotionals.ts
 deleted file mode 100644
-index 5ed1586..0000000
+index 5ed15863..00000000
 --- a/client/src/data/devotionals.ts
 +++ /dev/null
 @@ -1,323 +0,0 @@
@@ -1312,7 +1312,7 @@ index 5ed1586..0000000
 -];
 diff --git a/client/src/data/doubt-articles-2.ts b/client/src/data/doubt-articles-2.ts
 deleted file mode 100644
-index a876f3f..0000000
+index a876f3f1..00000000
 --- a/client/src/data/doubt-articles-2.ts
 +++ /dev/null
 @@ -1,461 +0,0 @@
@@ -1779,7 +1779,7 @@ index a876f3f..0000000
 -];
 diff --git a/client/src/data/doubt-articles.ts b/client/src/data/doubt-articles.ts
 deleted file mode 100644
-index 0ee1806..0000000
+index 0ee18063..00000000
 --- a/client/src/data/doubt-articles.ts
 +++ /dev/null
 @@ -1,412 +0,0 @@
@@ -2197,7 +2197,7 @@ index 0ee1806..0000000
 -];
 diff --git a/client/src/data/manhood-articles.ts b/client/src/data/manhood-articles.ts
 deleted file mode 100644
-index a020b40..0000000
+index a020b407..00000000
 --- a/client/src/data/manhood-articles.ts
 +++ /dev/null
 @@ -1,950 +0,0 @@
@@ -3153,7 +3153,7 @@ index a020b40..0000000
 -];
 diff --git a/client/src/data/marriage-articles-2.ts b/client/src/data/marriage-articles-2.ts
 deleted file mode 100644
-index ac4202e..0000000
+index ac4202ec..00000000
 --- a/client/src/data/marriage-articles-2.ts
 +++ /dev/null
 @@ -1,1065 +0,0 @@
@@ -4224,7 +4224,7 @@ index ac4202e..0000000
 -];
 diff --git a/client/src/data/marriage-articles.ts b/client/src/data/marriage-articles.ts
 deleted file mode 100644
-index 8e7b5d6..0000000
+index 8e7b5d68..00000000
 --- a/client/src/data/marriage-articles.ts
 +++ /dev/null
 @@ -1,1187 +0,0 @@
@@ -5417,7 +5417,7 @@ index 8e7b5d6..0000000
 -];
 diff --git a/client/src/data/money-vocation-articles.ts b/client/src/data/money-vocation-articles.ts
 deleted file mode 100644
-index a22407a..0000000
+index a22407a9..00000000
 --- a/client/src/data/money-vocation-articles.ts
 +++ /dev/null
 @@ -1,1360 +0,0 @@
@@ -6783,7 +6783,7 @@ index a22407a..0000000
 -];
 diff --git a/client/src/data/parenting-articles-2.ts b/client/src/data/parenting-articles-2.ts
 deleted file mode 100644
-index f46c371..0000000
+index f46c3719..00000000
 --- a/client/src/data/parenting-articles-2.ts
 +++ /dev/null
 @@ -1,738 +0,0 @@
@@ -7527,7 +7527,7 @@ index f46c371..0000000
 -];
 diff --git a/client/src/data/parenting-articles.ts b/client/src/data/parenting-articles.ts
 deleted file mode 100644
-index b45b78d..0000000
+index b45b78d0..00000000
 --- a/client/src/data/parenting-articles.ts
 +++ /dev/null
 @@ -1,817 +0,0 @@
@@ -8350,7 +8350,7 @@ index b45b78d..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-1.ts b/client/src/data/post-christian-articles-1.ts
 deleted file mode 100644
-index 9f08a57..0000000
+index 9f08a570..00000000
 --- a/client/src/data/post-christian-articles-1.ts
 +++ /dev/null
 @@ -1,475 +0,0 @@
@@ -8831,7 +8831,7 @@ index 9f08a57..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-2.ts b/client/src/data/post-christian-articles-2.ts
 deleted file mode 100644
-index 79fc873..0000000
+index 79fc873c..00000000
 --- a/client/src/data/post-christian-articles-2.ts
 +++ /dev/null
 @@ -1,482 +0,0 @@
@@ -9319,7 +9319,7 @@ index 79fc873..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-7-8.ts b/client/src/data/post-christian-articles-7-8.ts
 deleted file mode 100644
-index 5ca62d8..0000000
+index 5ca62d8f..00000000
 --- a/client/src/data/post-christian-articles-7-8.ts
 +++ /dev/null
 @@ -1,198 +0,0 @@
@@ -9523,7 +9523,7 @@ index 5ca62d8..0000000
 -]
 diff --git a/client/src/data/post-christian-articles-9-10.ts b/client/src/data/post-christian-articles-9-10.ts
 deleted file mode 100644
-index 0f990e2..0000000
+index 0f990e27..00000000
 --- a/client/src/data/post-christian-articles-9-10.ts
 +++ /dev/null
 @@ -1,198 +0,0 @@
@@ -9727,7 +9727,7 @@ index 0f990e2..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-tier2.ts b/client/src/data/post-christian-articles-tier2.ts
 deleted file mode 100644
-index e7e4743..0000000
+index e7e47435..00000000
 --- a/client/src/data/post-christian-articles-tier2.ts
 +++ /dev/null
 @@ -1,543 +0,0 @@
@@ -10276,7 +10276,7 @@ index e7e4743..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-tier3.ts b/client/src/data/post-christian-articles-tier3.ts
 deleted file mode 100644
-index 5441199..0000000
+index 5441199c..00000000
 --- a/client/src/data/post-christian-articles-tier3.ts
 +++ /dev/null
 @@ -1,762 +0,0 @@
@@ -11044,7 +11044,7 @@ index 5441199..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-tier4.ts b/client/src/data/post-christian-articles-tier4.ts
 deleted file mode 100644
-index d44f6dd..0000000
+index d44f6ddd..00000000
 --- a/client/src/data/post-christian-articles-tier4.ts
 +++ /dev/null
 @@ -1,682 +0,0 @@
@@ -11732,7 +11732,7 @@ index d44f6dd..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-tier5.ts b/client/src/data/post-christian-articles-tier5.ts
 deleted file mode 100644
-index cf916b2..0000000
+index cf916b26..00000000
 --- a/client/src/data/post-christian-articles-tier5.ts
 +++ /dev/null
 @@ -1,644 +0,0 @@
@@ -12382,7 +12382,7 @@ index cf916b2..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-tier6.ts b/client/src/data/post-christian-articles-tier6.ts
 deleted file mode 100644
-index 797345b..0000000
+index 797345b9..00000000
 --- a/client/src/data/post-christian-articles-tier6.ts
 +++ /dev/null
 @@ -1,540 +0,0 @@
@@ -12928,7 +12928,7 @@ index 797345b..0000000
 -];
 diff --git a/client/src/data/post-christian-articles-tier7.ts b/client/src/data/post-christian-articles-tier7.ts
 deleted file mode 100644
-index 97109ef..0000000
+index 97109efd..00000000
 --- a/client/src/data/post-christian-articles-tier7.ts
 +++ /dev/null
 @@ -1,305 +0,0 @@
@@ -13239,7 +13239,7 @@ index 97109ef..0000000
 -];
 diff --git a/client/src/data/womanhood-articles-2.ts b/client/src/data/womanhood-articles-2.ts
 deleted file mode 100644
-index 0856e3a..0000000
+index 0856e3a3..00000000
 --- a/client/src/data/womanhood-articles-2.ts
 +++ /dev/null
 @@ -1,443 +0,0 @@
@@ -13688,7 +13688,7 @@ index 0856e3a..0000000
 -];
 diff --git a/client/src/data/womanhood-articles.ts b/client/src/data/womanhood-articles.ts
 deleted file mode 100644
-index 68c2dc8..0000000
+index 68c2dc85..00000000
 --- a/client/src/data/womanhood-articles.ts
 +++ /dev/null
 @@ -1,440 +0,0 @@
@@ -14133,7 +14133,7 @@ index 68c2dc8..0000000
 -  },
 -];
 diff --git a/client/src/lib/site-structure.test.ts b/client/src/lib/site-structure.test.ts
-index 31515bd..3a12f95 100644
+index 31515bd9..3a12f95c 100644
 --- a/client/src/lib/site-structure.test.ts
 +++ b/client/src/lib/site-structure.test.ts
 @@ -93,6 +93,17 @@ const FOLDED: Record<string, string> = {
@@ -14155,7 +14155,7 @@ index 31515bd..3a12f95 100644
  
  /** Kept routes: James asked for these to stay, or other kept pages depend on them. */
 diff --git a/client/src/pages/Family.tsx b/client/src/pages/Family.tsx
-index 47a3c27..5ea25fd 100644
+index 47a3c279..5ea25fd1 100644
 --- a/client/src/pages/Family.tsx
 +++ b/client/src/pages/Family.tsx
 @@ -234,7 +234,7 @@ export default function Family() {
@@ -14177,7 +14177,7 @@ index 47a3c27..5ea25fd 100644
                { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
                { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
 diff --git a/client/src/pages/StartHereDiagnostic.tsx b/client/src/pages/StartHereDiagnostic.tsx
-index ec5f171..f8045a3 100644
+index ec5f171a..f8045a3c 100644
 --- a/client/src/pages/StartHereDiagnostic.tsx
 +++ b/client/src/pages/StartHereDiagnostic.tsx
 @@ -158,9 +158,9 @@ const RESULTS: Record<ResultKey, ResultProfile> = {
@@ -14205,7 +14205,7 @@ index ec5f171..f8045a3 100644
        { label: "Essays", href: "/writing", note: "The essay shelf, arranged in sections, so you can start where you are" },
      ],
 diff --git a/client/src/pages/StartHereQuiz.tsx b/client/src/pages/StartHereQuiz.tsx
-index e4555de..5f20b99 100644
+index e4555de9..5f20b998 100644
 --- a/client/src/pages/StartHereQuiz.tsx
 +++ b/client/src/pages/StartHereQuiz.tsx
 @@ -287,8 +287,8 @@ export default function StartHereQuiz() {
@@ -14220,7 +14220,7 @@ index e4555de..5f20b99 100644
                    { label: "Disciple someone", href: "/studyguides" },
                    { label: "Grief", href: "/plans/grief" },
 diff --git a/client/src/pages/ToolsHub.tsx b/client/src/pages/ToolsHub.tsx
-index d3324ba..f9e6331 100644
+index d3324baa..f9e6331a 100644
 --- a/client/src/pages/ToolsHub.tsx
 +++ b/client/src/pages/ToolsHub.tsx
 @@ -17,7 +17,7 @@ export const TOOLS = [
@@ -14300,7 +14300,7 @@ index d3324ba..f9e6331 100644
      icon: BookMarked,
      color: "var(--goldlt)",
 diff --git a/client/src/pages/faq/WhatIsDeconstruction.tsx b/client/src/pages/faq/WhatIsDeconstruction.tsx
-index 60a7b3e..93bc027 100644
+index 60a7b3e2..93bc0270 100644
 --- a/client/src/pages/faq/WhatIsDeconstruction.tsx
 +++ b/client/src/pages/faq/WhatIsDeconstruction.tsx
 @@ -130,13 +130,13 @@ export default function WhatIsDeconstruction() {
@@ -14322,7 +14322,7 @@ index 60a7b3e..93bc027 100644
            </Link>
          </div>
 diff --git a/client/src/pages/life/LifeIndex.tsx b/client/src/pages/life/LifeIndex.tsx
-index 780fff7..7cf3bad 100644
+index 780fff79..7cf3bad2 100644
 --- a/client/src/pages/life/LifeIndex.tsx
 +++ b/client/src/pages/life/LifeIndex.tsx
 @@ -112,8 +112,8 @@ export default function LifeIndex() {
@@ -14337,7 +14337,7 @@ index 780fff7..7cf3bad 100644
              <Link href="/how-tos?topic=discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>How-Tos for Making Disciples</Link>
              <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom for All of Life</Link>
 diff --git a/client/src/pages/tools/WhichLens.tsx b/client/src/pages/tools/WhichLens.tsx
-index d7603fc..2a30d09 100644
+index d7603fc8..2a30d099 100644
 --- a/client/src/pages/tools/WhichLens.tsx
 +++ b/client/src/pages/tools/WhichLens.tsx
 @@ -4,13 +4,17 @@ import { ArrowRight } from "lucide-react";
@@ -14468,7 +14468,7 @@ index d7603fc..2a30d09 100644
                  )}
                </div>
 diff --git a/scripts/generate-sitemap.mjs b/scripts/generate-sitemap.mjs
-index a7a9790..cf6a84f 100644
+index a7a97904..cf6a84f7 100644
 --- a/scripts/generate-sitemap.mjs
 +++ b/scripts/generate-sitemap.mjs
 @@ -114,8 +114,6 @@ const STATIC_PAGES = [
@@ -14495,7 +14495,7 @@ index a7a9790..cf6a84f 100644
    { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
    { url: "/books/bible-and-homosexuality", priority: "0.8", changefreq: "monthly" },
 diff --git a/scripts/prerender-heads.mjs b/scripts/prerender-heads.mjs
-index 8a64312..eb7ea4a 100644
+index 8a64312c..eb7ea4a1 100644
 --- a/scripts/prerender-heads.mjs
 +++ b/scripts/prerender-heads.mjs
 @@ -74,18 +74,6 @@ const STATIC_PAGES = [
@@ -14518,7 +14518,7 @@ index 8a64312..eb7ea4a 100644
      path: "/tools",
      title: "Tools for Pastors and Readers",
 diff --git a/vercel.json b/vercel.json
-index 5a60176..beb6ee2 100644
+index 5a601760..beb6ee2e 100644
 --- a/vercel.json
 +++ b/vercel.json
 @@ -741,7 +741,7 @@

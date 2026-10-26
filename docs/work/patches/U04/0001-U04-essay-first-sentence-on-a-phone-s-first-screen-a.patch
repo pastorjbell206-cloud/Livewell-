@@ -42,7 +42,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
  create mode 100644 client/src/lib/esv.ts
 
 diff --git a/client/src/components/TextSize.tsx b/client/src/components/TextSize.tsx
-index 96a5c7f..e52f2db 100644
+index 96a5c7f9..e52f2dbc 100644
 --- a/client/src/components/TextSize.tsx
 +++ b/client/src/components/TextSize.tsx
 @@ -84,7 +84,8 @@ export function TextSize({
@@ -56,7 +56,7 @@ index 96a5c7f..e52f2db 100644
          </span>
          <button
 diff --git a/client/src/index.css b/client/src/index.css
-index 2c070b6..339f912 100644
+index 2c070b64..339f9127 100644
 --- a/client/src/index.css
 +++ b/client/src/index.css
 @@ -659,6 +659,39 @@ h1, h2, h3 { text-wrap: balance; }
@@ -101,7 +101,7 @@ index 2c070b6..339f912 100644
  .eyebrow::before{content:"";width:32px;height:1px;background:var(--mustard)}
 diff --git a/client/src/lib/esv.test.ts b/client/src/lib/esv.test.ts
 new file mode 100644
-index 0000000..a6853db
+index 00000000..a6853dbc
 --- /dev/null
 +++ b/client/src/lib/esv.test.ts
 @@ -0,0 +1,56 @@
@@ -163,7 +163,7 @@ index 0000000..a6853db
 +});
 diff --git a/client/src/lib/esv.ts b/client/src/lib/esv.ts
 new file mode 100644
-index 0000000..1a58ad5
+index 00000000..1a58ad5b
 --- /dev/null
 +++ b/client/src/lib/esv.ts
 @@ -0,0 +1,50 @@
@@ -218,7 +218,7 @@ index 0000000..1a58ad5
 +  return rewrite && quotesScripture(markdown);
 +}
 diff --git a/client/src/pages/ArticleDetail.test.tsx b/client/src/pages/ArticleDetail.test.tsx
-index a990bcc..16392a3 100644
+index a990bcc0..16392a36 100644
 --- a/client/src/pages/ArticleDetail.test.tsx
 +++ b/client/src/pages/ArticleDetail.test.tsx
 @@ -1,9 +1,11 @@
@@ -415,7 +415,7 @@ index a990bcc..16392a3 100644
 +  });
 +});
 diff --git a/client/src/pages/ArticleDetail.tsx b/client/src/pages/ArticleDetail.tsx
-index 22b6c89..c3fc85f 100644
+index 22b6c893..c3fc85fa 100644
 --- a/client/src/pages/ArticleDetail.tsx
 +++ b/client/src/pages/ArticleDetail.tsx
 @@ -12,6 +12,11 @@

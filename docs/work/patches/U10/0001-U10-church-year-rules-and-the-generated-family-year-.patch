@@ -49,7 +49,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
  create mode 100644 server/church-year.test.ts
 
 diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
-index c2e720e..ca2cad4 100644
+index c2e720e9..ca2cad41 100644
 --- a/.github/workflows/ci.yml
 +++ b/.github/workflows/ci.yml
 @@ -47,6 +47,7 @@ jobs:
@@ -62,7 +62,7 @@ index c2e720e..ca2cad4 100644
            pnpm exec tsx scripts/validate-catalogue.mjs
 diff --git a/client/public/family-year-overrides.json b/client/public/family-year-overrides.json
 new file mode 100644
-index 0000000..990d4b9
+index 00000000..990d4b9e
 --- /dev/null
 +++ b/client/public/family-year-overrides.json
 @@ -0,0 +1,4 @@
@@ -72,7 +72,7 @@ index 0000000..990d4b9
 +}
 diff --git a/client/src/lib/familyYear.generated.ts b/client/src/lib/familyYear.generated.ts
 new file mode 100644
-index 0000000..7c0c8e6
+index 00000000..7c0c8e68
 --- /dev/null
 +++ b/client/src/lib/familyYear.generated.ts
 @@ -0,0 +1,510 @@
@@ -588,7 +588,7 @@ index 0000000..7c0c8e6
 +];
 diff --git a/client/src/lib/familyYear.test.ts b/client/src/lib/familyYear.test.ts
 new file mode 100644
-index 0000000..12f2187
+index 00000000..12f21870
 --- /dev/null
 +++ b/client/src/lib/familyYear.test.ts
 @@ -0,0 +1,57 @@
@@ -651,7 +651,7 @@ index 0000000..12f2187
 +});
 diff --git a/client/src/lib/familyYear.ts b/client/src/lib/familyYear.ts
 new file mode 100644
-index 0000000..f5ca9ee
+index 00000000..f5ca9eee
 --- /dev/null
 +++ b/client/src/lib/familyYear.ts
 @@ -0,0 +1,73 @@
@@ -730,7 +730,7 @@ index 0000000..f5ca9ee
 +}
 diff --git a/scripts/build-family-year.mjs b/scripts/build-family-year.mjs
 new file mode 100644
-index 0000000..3e6e0be
+index 00000000..3e6e0be1
 --- /dev/null
 +++ b/scripts/build-family-year.mjs
 @@ -0,0 +1,61 @@
@@ -797,7 +797,7 @@ index 0000000..3e6e0be
 +console.log(`[family-year] ${CHECK ? "up to date" : `wrote ${MODULE}`} (${summary})`);
 diff --git a/scripts/lib/church-year.mjs b/scripts/lib/church-year.mjs
 new file mode 100644
-index 0000000..c47112c
+index 00000000..c47112c8
 --- /dev/null
 +++ b/scripts/lib/church-year.mjs
 @@ -0,0 +1,201 @@
@@ -1004,7 +1004,7 @@ index 0000000..c47112c
 +}
 diff --git a/scripts/lib/family-year.mjs b/scripts/lib/family-year.mjs
 new file mode 100644
-index 0000000..b322d6e
+index 00000000..b322d6ec
 --- /dev/null
 +++ b/scripts/lib/family-year.mjs
 @@ -0,0 +1,308 @@
@@ -1318,7 +1318,7 @@ index 0000000..b322d6e
 +}
 diff --git a/server/church-year.test.ts b/server/church-year.test.ts
 new file mode 100644
-index 0000000..6172438
+index 00000000..61724381
 --- /dev/null
 +++ b/server/church-year.test.ts
 @@ -0,0 +1,331 @@

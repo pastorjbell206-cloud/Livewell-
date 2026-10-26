@@ -65,7 +65,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
  create mode 100644 server/family-gate.test.ts
 
 diff --git a/client/public/family-devotions-2.json b/client/public/family-devotions-2.json
-index 4a4f07b..6cb3d2c 100644
+index 4a4f07b5..6cb3d2c9 100644
 --- a/client/public/family-devotions-2.json
 +++ b/client/public/family-devotions-2.json
 @@ -640,7 +640,7 @@
@@ -97,7 +97,7 @@ index 4a4f07b..6cb3d2c 100644
      "passageText": "In the beginning God created the heavens and the earth.",
 diff --git a/client/src/lib/familyCatechism.test.ts b/client/src/lib/familyCatechism.test.ts
 new file mode 100644
-index 0000000..3d6477e
+index 00000000..3d6477e3
 --- /dev/null
 +++ b/client/src/lib/familyCatechism.test.ts
 @@ -0,0 +1,45 @@
@@ -148,7 +148,7 @@ index 0000000..3d6477e
 +});
 diff --git a/client/src/lib/familyCatechism.ts b/client/src/lib/familyCatechism.ts
 new file mode 100644
-index 0000000..a1974fa
+index 00000000..a1974fa7
 --- /dev/null
 +++ b/client/src/lib/familyCatechism.ts
 @@ -0,0 +1,26 @@
@@ -179,7 +179,7 @@ index 0000000..a1974fa
 +  return ((week % count) + count) % count;
 +}
 diff --git a/client/src/pages/Family.tsx b/client/src/pages/Family.tsx
-index 47a3c27..7b1cb2e 100644
+index 47a3c279..7b1cb2ef 100644
 --- a/client/src/pages/Family.tsx
 +++ b/client/src/pages/Family.tsx
 @@ -88,7 +88,7 @@ export default function Family() {
@@ -192,7 +192,7 @@ index 47a3c27..7b1cb2e 100644
            </p>
          </div>
 diff --git a/client/src/pages/FamilyCatechism.tsx b/client/src/pages/FamilyCatechism.tsx
-index d5c3426..43afb3a 100644
+index d5c3426e..43afb3ac 100644
 --- a/client/src/pages/FamilyCatechism.tsx
 +++ b/client/src/pages/FamilyCatechism.tsx
 @@ -1,9 +1,9 @@
@@ -305,7 +305,7 @@ index d5c3426..43afb3a 100644
            )}
            {entries.length > 0 && (
 diff --git a/client/src/pages/FamilyDevotions.tsx b/client/src/pages/FamilyDevotions.tsx
-index 381ab53..4c6a306 100644
+index 381ab530..4c6a3061 100644
 --- a/client/src/pages/FamilyDevotions.tsx
 +++ b/client/src/pages/FamilyDevotions.tsx
 @@ -1,9 +1,11 @@
@@ -431,7 +431,7 @@ index 381ab53..4c6a306 100644
              <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
                Print every weekly devotion as a card for the table, two to a page, each passage in full:{" "}
 diff --git a/client/src/pages/FamilyReadingPlans.tsx b/client/src/pages/FamilyReadingPlans.tsx
-index 7206ae4..89d91ba 100644
+index 7206ae47..89d91ba2 100644
 --- a/client/src/pages/FamilyReadingPlans.tsx
 +++ b/client/src/pages/FamilyReadingPlans.tsx
 @@ -9,21 +9,35 @@ import { Link } from "wouter";
@@ -508,7 +508,7 @@ index 7206ae4..89d91ba 100644
            {plans.length > 0 && count > 0 && (
 diff --git a/client/src/pages/family-pages.test.tsx b/client/src/pages/family-pages.test.tsx
 new file mode 100644
-index 0000000..c5449ef
+index 00000000..c5449ef2
 --- /dev/null
 +++ b/client/src/pages/family-pages.test.tsx
 @@ -0,0 +1,90 @@
@@ -603,7 +603,7 @@ index 0000000..c5449ef
 +  });
 +});
 diff --git a/client/src/pages/tools/ParentingGuide.tsx b/client/src/pages/tools/ParentingGuide.tsx
-index 96104c4..00da914 100644
+index 96104c47..00da9148 100644
 --- a/client/src/pages/tools/ParentingGuide.tsx
 +++ b/client/src/pages/tools/ParentingGuide.tsx
 @@ -17,7 +17,7 @@ const AGE_GROUPS: AgeGroup[] = [
@@ -652,7 +652,7 @@ index 96104c4..00da914 100644
        {
          title: "A faith they can own, even if it looks different from yours",
 diff --git a/scripts/build-catalogue.mjs b/scripts/build-catalogue.mjs
-index 0f8d35c..4151280 100644
+index 0f8d35c0..4151280f 100644
 --- a/scripts/build-catalogue.mjs
 +++ b/scripts/build-catalogue.mjs
 @@ -463,7 +463,7 @@ export const LIBRARIES = {
@@ -666,7 +666,7 @@ index 0f8d35c..4151280 100644
          // The seasonal booklets, built by scripts/lib/help-printables.mjs inside `pnpm pdfs`.
 diff --git a/scripts/data/family-devotion-ids.json b/scripts/data/family-devotion-ids.json
 new file mode 100644
-index 0000000..fdc330e
+index 00000000..fdc330e3
 --- /dev/null
 +++ b/scripts/data/family-devotion-ids.json
 @@ -0,0 +1,77 @@
@@ -748,7 +748,7 @@ index 0000000..fdc330e
 +  ]
 +}
 diff --git a/scripts/validate-family.mjs b/scripts/validate-family.mjs
-index 7f80cf4..7b51c14 100644
+index 7f80cf43..7b51c146 100644
 --- a/scripts/validate-family.mjs
 +++ b/scripts/validate-family.mjs
 @@ -1,83 +1,444 @@
@@ -1262,7 +1262,7 @@ index 7f80cf4..7b51c14 100644
 -console.log(`Family Scripture: clean (${checked} passages, verbatim BSB; ${days} seasonal days, each reference in the BSB).`);
 diff --git a/server/family-gate.test.ts b/server/family-gate.test.ts
 new file mode 100644
-index 0000000..ce8b43e
+index 00000000..ce8b43ed
 --- /dev/null
 +++ b/server/family-gate.test.ts
 @@ -0,0 +1,191 @@

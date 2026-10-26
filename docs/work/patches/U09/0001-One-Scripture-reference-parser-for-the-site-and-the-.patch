@@ -58,7 +58,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
 
 diff --git a/client/src/data/scripture-books.json b/client/src/data/scripture-books.json
 new file mode 100644
-index 0000000..85e1910
+index 00000000..85e19107
 --- /dev/null
 +++ b/client/src/data/scripture-books.json
 @@ -0,0 +1,68 @@
@@ -131,7 +131,7 @@ index 0000000..85e1910
 +  {"code": "Rev", "slug": "revelation", "name": "Revelation", "testament": "NT", "chapters": 22, "aliases": ["rev", "rv", "revelations"]}
 +]
 diff --git a/client/src/lib/bible-notes.test.ts b/client/src/lib/bible-notes.test.ts
-index a77f47d..c4f81ea 100644
+index a77f47dd..c4f81ea0 100644
 --- a/client/src/lib/bible-notes.test.ts
 +++ b/client/src/lib/bible-notes.test.ts
 @@ -1,37 +1,37 @@
@@ -218,7 +218,7 @@ index a77f47d..c4f81ea 100644
 -  });
  });
 diff --git a/client/src/lib/bible-notes.ts b/client/src/lib/bible-notes.ts
-index efb07fe..378d504 100644
+index efb07feb..378d504f 100644
 --- a/client/src/lib/bible-notes.ts
 +++ b/client/src/lib/bible-notes.ts
 @@ -11,7 +11,7 @@
@@ -344,7 +344,7 @@ index efb07fe..378d504 100644
      })
    );
 diff --git a/client/src/lib/needs.test.ts b/client/src/lib/needs.test.ts
-index 31111d2..dd83319 100644
+index 31111d20..dd833195 100644
 --- a/client/src/lib/needs.test.ts
 +++ b/client/src/lib/needs.test.ts
 @@ -1,10 +1,10 @@
@@ -375,7 +375,7 @@ index 31111d2..dd83319 100644
 -  });
 -});
 diff --git a/client/src/lib/needs.ts b/client/src/lib/needs.ts
-index 48b86fb..75da0c8 100644
+index 48b86fb0..75da0c8a 100644
 --- a/client/src/lib/needs.ts
 +++ b/client/src/lib/needs.ts
 @@ -104,16 +104,6 @@ export function searchNeeds(query: string, needs: NeedEntry[]): NeedEntry[] {
@@ -397,7 +397,7 @@ index 48b86fb..75da0c8 100644
   * (docs/grow/GROW-PROMPT.md, Wave 0): the life pages and study guides a
 diff --git a/client/src/lib/scripture-ref.test.ts b/client/src/lib/scripture-ref.test.ts
 new file mode 100644
-index 0000000..c140cc4
+index 00000000..c140cc4a
 --- /dev/null
 +++ b/client/src/lib/scripture-ref.test.ts
 @@ -0,0 +1,167 @@
@@ -570,7 +570,7 @@ index 0000000..c140cc4
 +});
 diff --git a/client/src/lib/scripture-ref.ts b/client/src/lib/scripture-ref.ts
 new file mode 100644
-index 0000000..63da5be
+index 00000000..63da5be3
 --- /dev/null
 +++ b/client/src/lib/scripture-ref.ts
 @@ -0,0 +1,150 @@
@@ -725,7 +725,7 @@ index 0000000..63da5be
 +  return chapterHref(r.book.slug, p.c1, opts.verse === false || p.v2 === Infinity ? undefined : p.v1);
 +}
 diff --git a/client/src/pages/StudyBible.tsx b/client/src/pages/StudyBible.tsx
-index 405037c..3d44d69 100644
+index 405037c8..3d44d69c 100644
 --- a/client/src/pages/StudyBible.tsx
 +++ b/client/src/pages/StudyBible.tsx
 @@ -115,7 +115,7 @@ export default function StudyBible() {
@@ -778,7 +778,7 @@ index 405037c..3d44d69 100644
        )}
  
 diff --git a/client/src/pages/StudyBibleDoctrines.tsx b/client/src/pages/StudyBibleDoctrines.tsx
-index 591feb3..6208d0e 100644
+index 591feb36..6208d0e3 100644
 --- a/client/src/pages/StudyBibleDoctrines.tsx
 +++ b/client/src/pages/StudyBibleDoctrines.tsx
 @@ -23,7 +23,6 @@ import {
@@ -807,7 +807,7 @@ index 591feb3..6208d0e 100644
                    <li key={k.ref} style={{ ...card, padding: "12px var(--s-4)" }}>
                      <div style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, marginBottom: "4px" }}>{href ? <Link href={href} style={quietLink}>{k.ref}</Link> : k.ref}</div>
 diff --git a/client/src/pages/StudyBibleGuides.tsx b/client/src/pages/StudyBibleGuides.tsx
-index 29174ed..fae84d3 100644
+index 29174ed9..fae84d38 100644
 --- a/client/src/pages/StudyBibleGuides.tsx
 +++ b/client/src/pages/StudyBibleGuides.tsx
 @@ -10,13 +10,13 @@ import { Link, useRoute } from "wouter";
@@ -855,7 +855,7 @@ index 29174ed..fae84d3 100644
                    <span key={r}>
                      {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
 diff --git a/client/src/pages/help/CarePage.tsx b/client/src/pages/help/CarePage.tsx
-index cae5c60..c95f19d 100644
+index cae5c601..c95f19d0 100644
 --- a/client/src/pages/help/CarePage.tsx
 +++ b/client/src/pages/help/CarePage.tsx
 @@ -27,7 +27,7 @@ import { EditorialIndex, type IndexItem } from "@/components/editorial/Editorial
@@ -879,7 +879,7 @@ index cae5c60..c95f19d 100644
              </figcaption>
              <Prose text={p.reading} />
 diff --git a/client/src/pages/study-bible/ChapterNotes.tsx b/client/src/pages/study-bible/ChapterNotes.tsx
-index 186d86f..6af5bd2 100644
+index 186d86fd..6af5bd2b 100644
 --- a/client/src/pages/study-bible/ChapterNotes.tsx
 +++ b/client/src/pages/study-bible/ChapterNotes.tsx
 @@ -137,7 +137,7 @@ export function ChapterNotesBody(props: {
@@ -901,7 +901,7 @@ index 186d86f..6af5bd2 100644
        )}
        <Section title={lang === "H" ? "How it points to Christ" : "What it shows of Christ"}>
 diff --git a/client/src/pages/study-bible/VerseNotes.tsx b/client/src/pages/study-bible/VerseNotes.tsx
-index 10277af..66c620e 100644
+index 10277af2..66c620e6 100644
 --- a/client/src/pages/study-bible/VerseNotes.tsx
 +++ b/client/src/pages/study-bible/VerseNotes.tsx
 @@ -9,7 +9,8 @@ import { useMemo, useState, type CSSProperties } from "react";
@@ -975,7 +975,7 @@ index 10277af..66c620e 100644
            );
          })}
 diff --git a/scripts/lib/bsb.mjs b/scripts/lib/bsb.mjs
-index c115b40..61c74f3 100644
+index c115b40f..61c74f32 100644
 --- a/scripts/lib/bsb.mjs
 +++ b/scripts/lib/bsb.mjs
 @@ -7,28 +7,39 @@

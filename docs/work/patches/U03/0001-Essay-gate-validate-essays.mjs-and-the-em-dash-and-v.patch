@@ -50,7 +50,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
  create mode 100644 server/essay-gate.test.ts
 
 diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
-index c2e720e..50dbaf6 100644
+index c2e720e9..50dbaf64 100644
 --- a/.github/workflows/ci.yml
 +++ b/.github/workflows/ci.yml
 @@ -48,6 +48,7 @@ jobs:
@@ -62,7 +62,7 @@ index c2e720e..50dbaf6 100644
            pnpm exec tsx scripts/validate-catalogue.mjs
            node scripts/validate-bible.mjs
 diff --git a/CLAUDE.md b/CLAUDE.md
-index 57a3255..04bc0da 100644
+index 57a32559..04bc0dad 100644
 --- a/CLAUDE.md
 +++ b/CLAUDE.md
 @@ -488,11 +488,11 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
@@ -80,7 +80,7 @@ index 57a3255..04bc0da 100644
  prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
  Lighthouse + axe against the built site. Keep all five blocking steps green.
 diff --git a/client/public/essays/README.md b/client/public/essays/README.md
-index 3467ef8..2f164ca 100644
+index 3467ef87..2f164ca9 100644
 --- a/client/public/essays/README.md
 +++ b/client/public/essays/README.md
 @@ -1 +1,3 @@
@@ -89,7 +89,7 @@ index 3467ef8..2f164ca 100644
 +Then run `node scripts/validate-essays.mjs` (a CI gate). It holds every file to the shape above and to the house rules: no Forbidden Language and no rulebook leakage ("steelman," "verdict," "indictment," "self-implication," "both-sidesism") in our own prose; no em-dash in our own prose ("---", "--", and a spaced en-dash count too), and none at all in the title or excerpt; an exclamation point only inside quoted Scripture with its reference beside it; internal links only to public pages, never through a redirect; at least one Scripture reference; sections under `##`, since the page sets the title as the only H1; and Closing Texts written as *"Quote."* (Reference) on one line. A quotation, in double quotation marks or a `>` block quote, keeps its own words and punctuation.
 diff --git a/scripts/lib/essay-text.mjs b/scripts/lib/essay-text.mjs
 new file mode 100644
-index 0000000..16f9d8e
+index 00000000..16f9d8eb
 --- /dev/null
 +++ b/scripts/lib/essay-text.mjs
 @@ -0,0 +1,178 @@
@@ -273,7 +273,7 @@ index 0000000..16f9d8e
 +}
 diff --git a/scripts/lib/forbidden-language.mjs b/scripts/lib/forbidden-language.mjs
 new file mode 100644
-index 0000000..eb90432
+index 00000000..eb904320
 --- /dev/null
 +++ b/scripts/lib/forbidden-language.mjs
 @@ -0,0 +1,39 @@
@@ -318,7 +318,7 @@ index 0000000..eb90432
 +}
 diff --git a/scripts/validate-essays.mjs b/scripts/validate-essays.mjs
 new file mode 100644
-index 0000000..357b3ef
+index 00000000..357b3ef4
 --- /dev/null
 +++ b/scripts/validate-essays.mjs
 @@ -0,0 +1,227 @@
@@ -550,7 +550,7 @@ index 0000000..357b3ef
 +  console.log(`Essays: clean (${files} file${files === 1 ? "" : "s"}).`);
 +}
 diff --git a/scripts/validate-grow-voice.mjs b/scripts/validate-grow-voice.mjs
-index 8010201..265a853 100644
+index 80102016..265a853f 100644
 --- a/scripts/validate-grow-voice.mjs
 +++ b/scripts/validate-grow-voice.mjs
 @@ -11,54 +11,57 @@
@@ -672,7 +672,7 @@ index 8010201..265a853 100644
      // A style note left in reader-facing text ("Not X. Y." is the name of a move, not a sentence).
      if (!/reviewed\.notes$/.test(path)) for (const m of text.matchAll(/\bNot X\. Y\./g)) hits.push({ rel, path, word: "Not X. Y.", at: text.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });
 diff --git a/scripts/validate-no-emdash.mjs b/scripts/validate-no-emdash.mjs
-index 2170508..5760543 100644
+index 2170508c..57605437 100644
 --- a/scripts/validate-no-emdash.mjs
 +++ b/scripts/validate-no-emdash.mjs
 @@ -12,13 +12,25 @@
@@ -766,7 +766,7 @@ index 2170508..5760543 100644
 +console.log(`validate-no-emdash: clean (${targets.length + essayTargets.length} files, 0 em-dashes).`);
 diff --git a/server/essay-gate.test.ts b/server/essay-gate.test.ts
 new file mode 100644
-index 0000000..e0cf7f1
+index 00000000..e0cf7f1d
 --- /dev/null
 +++ b/server/essay-gate.test.ts
 @@ -0,0 +1,211 @@

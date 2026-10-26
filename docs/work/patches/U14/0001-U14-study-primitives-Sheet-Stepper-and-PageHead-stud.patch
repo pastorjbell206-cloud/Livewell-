@@ -51,7 +51,7 @@ Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
 
 diff --git a/client/src/components/editorial/PageHead.test.tsx b/client/src/components/editorial/PageHead.test.tsx
 new file mode 100644
-index 0000000..e613bbb
+index 00000000..e613bbba
 --- /dev/null
 +++ b/client/src/components/editorial/PageHead.test.tsx
 @@ -0,0 +1,60 @@
@@ -117,7 +117,7 @@ index 0000000..e613bbb
 +});
 diff --git a/client/src/components/editorial/PageHead.tsx b/client/src/components/editorial/PageHead.tsx
 new file mode 100644
-index 0000000..782ff09
+index 00000000..782ff09f
 --- /dev/null
 +++ b/client/src/components/editorial/PageHead.tsx
 @@ -0,0 +1,47 @@
@@ -170,7 +170,7 @@ index 0000000..782ff09
 +}
 diff --git a/client/src/components/study/Sheet.test.tsx b/client/src/components/study/Sheet.test.tsx
 new file mode 100644
-index 0000000..d4e86ff
+index 00000000..d4e86ff2
 --- /dev/null
 +++ b/client/src/components/study/Sheet.test.tsx
 @@ -0,0 +1,130 @@
@@ -306,7 +306,7 @@ index 0000000..d4e86ff
 +});
 diff --git a/client/src/components/study/Sheet.tsx b/client/src/components/study/Sheet.tsx
 new file mode 100644
-index 0000000..9a42c74
+index 00000000..9a42c743
 --- /dev/null
 +++ b/client/src/components/study/Sheet.tsx
 @@ -0,0 +1,89 @@
@@ -401,7 +401,7 @@ index 0000000..9a42c74
 +}
 diff --git a/client/src/components/study/Stepper.test.tsx b/client/src/components/study/Stepper.test.tsx
 new file mode 100644
-index 0000000..540c9f0
+index 00000000..540c9f05
 --- /dev/null
 +++ b/client/src/components/study/Stepper.test.tsx
 @@ -0,0 +1,106 @@
@@ -513,7 +513,7 @@ index 0000000..540c9f0
 +});
 diff --git a/client/src/components/study/Stepper.tsx b/client/src/components/study/Stepper.tsx
 new file mode 100644
-index 0000000..a5c5ede
+index 00000000..a5c5ede0
 --- /dev/null
 +++ b/client/src/components/study/Stepper.tsx
 @@ -0,0 +1,107 @@
@@ -625,7 +625,7 @@ index 0000000..a5c5ede
 +  );
 +}
 diff --git a/client/src/index.css b/client/src/index.css
-index 2c070b6..0da7f51 100644
+index 2c070b64..0da7f51d 100644
 --- a/client/src/index.css
 +++ b/client/src/index.css
 @@ -132,6 +132,7 @@
@@ -716,7 +716,7 @@ index 2c070b6..0da7f51 100644
  .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}
  .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
 diff --git a/client/src/pages/Study.tsx b/client/src/pages/Study.tsx
-index 7bca48f..fce9804 100644
+index 7bca48f1..fce9804f 100644
 --- a/client/src/pages/Study.tsx
 +++ b/client/src/pages/Study.tsx
 @@ -7,7 +7,8 @@
