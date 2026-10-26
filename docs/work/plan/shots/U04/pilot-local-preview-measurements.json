@@ -1,0 +1,50 @@
+[
+ {
+  "viewport": "390x844",
+  "slug": "the-early-church-under-rome",
+  "firstParagraphTop": 815,
+  "firstSentenceBottom": 936,
+  "firstSentence": "Sometime around the year 112, a Roman governor named Pliny the Younger wrote to the emperor Trajan for advice about the Christians.",
+  "toolRows": 1,
+  "contentsOpen": false,
+  "esvNotice": true,
+  "scrollWidth": 390,
+  "onFirstScreen": false
+ },
+ {
+  "viewport": "390x844",
+  "slug": "why-didnt-the-bible-ban-slavery",
+  "firstParagraphTop": 711,
+  "firstSentenceBottom": 800,
+  "firstSentence": "In 1845 Frederick Douglass, seven years out of slavery in Maryland, published his Narrative in Boston.",
+  "toolRows": 1,
+  "contentsOpen": false,
+  "esvNotice": true,
+  "scrollWidth": 390,
+  "onFirstScreen": true
+ },
+ {
+  "viewport": "1440x900",
+  "slug": "the-early-church-under-rome",
+  "firstParagraphTop": 1264,
+  "firstSentenceBottom": 1322,
+  "firstSentence": "Sometime around the year 112, a Roman governor named Pliny the Younger wrote to the emperor Trajan for advice about the Christians.",
+  "toolRows": 1,
+  "contentsOpen": true,
+  "esvNotice": true,
+  "scrollWidth": 1440,
+  "onFirstScreen": false
+ },
+ {
+  "viewport": "1440x900",
+  "slug": "why-didnt-the-bible-ban-slavery",
+  "firstParagraphTop": 1118,
+  "firstSentenceBottom": 1175,
+  "firstSentence": "In 1845 Frederick Douglass, seven years out of slavery in Maryland, published his Narrative in Boston.",
+  "toolRows": 1,
+  "contentsOpen": true,
+  "esvNotice": true,
+  "scrollWidth": 1440,
+  "onFirstScreen": false
+ }
+]
