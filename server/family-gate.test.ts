@@ -24,7 +24,12 @@ let tmp = "";
 let pub = "";
 const read = <T = unknown>(name: string): T => JSON.parse(fs.readFileSync(path.join(pub, name), "utf8"));
 const write = (name: string, data: unknown) => fs.writeFileSync(path.join(pub, name), JSON.stringify(data, null, 2));
-const errorsOf = (opts: Parameters<typeof checkFamily>[0] = {}) => checkFamily({ publicDir: pub, ...opts }).errors;
+// Seeded scenarios read no year map unless they pass one: the repo's generated
+// map (U10) names the committed ids, so a scenario that renames or removes a
+// devotion would otherwise fail on the map instead of on what it is testing.
+// The year-map test below seeds its own; "passes as committed" reads the real one.
+const errorsOf = (opts: Parameters<typeof checkFamily>[0] = {}) =>
+  checkFamily({ publicDir: pub, yearMapFile: path.join(tmp, "no-year-map.ts"), ...opts }).errors;
 
 beforeEach(() => {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), "family-gate-"));
@@ -108,27 +113,32 @@ describe("validate-family.mjs", () => {
     first[1].reflection = "A line with a pause — like this.";
     first[2].reflection = "Jesus said, “Come to Me—all of you,” and meant it.";
     first[3].reflection = "A line -- with two hyphens.";
+    first[4].reflection = "A line-- typed the other way.";
     write("family-devotions.json", first);
     const errors = errorsOf();
     expect(errors.some((e) => /family-devotions\.json\[1\]\.reflection: em-dash outside a quotation/.test(e))).toBe(true);
     expect(errors.some((e) => /family-devotions\.json\[2\]\.reflection/.test(e))).toBe(false);
     expect(errors.some((e) => /family-devotions\.json\[3\]\.reflection: "--" standing in/.test(e))).toBe(true);
+    expect(errors.some((e) => /family-devotions\.json\[4\]\.reflection: "--" standing in/.test(e))).toBe(true);
     // The committed passage text keeps the BSB's own em-dashes.
     expect(read<{ passageText: string }[]>("family-devotions.json").some((d) => d.passageText.includes("—"))).toBe(true);
   });
 
   it("fails when copy states the wrong count", () => {
     const copy: [string, string][] = [
-      ["seeded/catalogue.mjs", 'summary: clip("A 52-question family catechism in the New City Catechism tradition.")'],
+      ["seeded/catalogue.mjs", 'summary: clip("A 52-question family catechism in the New City Catechism tradition."), href: "/family/catechism"'],
       ["seeded/Hub.tsx", '{ href: "/family/catechism", note: "Seventy-six questions and answers, one at a time." }'],
       ["seeded/Devotions.tsx", "Seventy weekly devotions, more than a year of them."],
       ["seeded/Tools.tsx", 'title: "Marriage health assessment", dek: "A 15-question diagnostic across trust and conflict."'],
+      // Another catechism's own count, on a page that does not point at ours.
+      ["seeded/Glossary.tsx", "The Westminster Shorter Catechism (1647) puts the faith in 107 questions."],
     ];
     const errors = errorsOf({ copy });
     expect(errors).toContain('seeded/catalogue.mjs: says "52-question" about the catechism, which has 76 questions');
     expect(errors.some((e) => e.startsWith("seeded/Hub.tsx"))).toBe(false);
     expect(errors.some((e) => /seeded\/Devotions\.tsx: says "Seventy weekly devotions", but \/family\/devotions lists 72/.test(e))).toBe(true);
     expect(errors.some((e) => e.startsWith("seeded/Tools.tsx"))).toBe(false);
+    expect(errors.some((e) => e.startsWith("seeded/Glossary.tsx"))).toBe(false);
   });
 
   it("reads count words", () => {

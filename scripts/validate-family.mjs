@@ -27,8 +27,9 @@
  *     age carries both the younger and the older list; every catechism answer
  *     has its child's answer beside it.
  *   - Counts match copy: each reading plan's "N days" matches its days, and
- *     every page, script, or text that says how many catechism questions or
- *     weekly devotions there are says the number the data holds.
+ *     every page, script, or text that says how many catechism questions (in
+ *     copy that points at the family catechism) or weekly devotions there are
+ *     says the number the data holds.
  *   - One translation per surface: each family page that shows verse text
  *     names, in its <ScriptureNote>, exactly the translations of the libraries
  *     it shows (PAGES below), and a references-only page names none.
@@ -233,7 +234,7 @@ export function checkFamily({
       if (scriptureField && at.endsWith(`.${scriptureField}`)) continue;
       const prose = outsideQuotations(text);
       if (/—/.test(prose)) errors.push(`${label}${at}: em-dash outside a quotation (the em-dash rule; recast the sentence)`);
-      if (/\S--\S|\s--\s/.test(prose)) errors.push(`${label}${at}: "--" standing in for a dash (recast the sentence)`);
+      if (/--/.test(prose)) errors.push(`${label}${at}: "--" standing in for a dash (recast the sentence)`);
     }
 
     if (kind === "devotions") {
@@ -395,9 +396,13 @@ export function checkFamily({
     if (show(want) !== show(have)) errors.push(`${rel}: its <ScriptureNote> names ${show(have)}, but the libraries it shows are in ${show(want)}`);
   }
 
-  // Counts match copy.
+  // Counts match copy. A catechism count is read only in copy that points at
+  // the family catechism (its page or its data file), so a glossary or history
+  // page giving the Heidelberg or Westminster catechism's own count is not
+  // mistaken for a claim about this one.
   for (const [rel, text] of copy) {
-    for (const m of text.matchAll(CATECHISM_CLAIM)) {
+    const ours = /catechism/i.test(path.basename(rel)) || /\/family\/catechism|family-catechism/.test(text);
+    for (const m of ours ? text.matchAll(CATECHISM_CLAIM) : []) {
       const near = text.slice(Math.max(0, m.index - 160), m.index + m[0].length + 160);
       if (!/catechism/i.test(path.basename(rel)) && !/catechism/i.test(near)) continue;
       const n = countWord(m[1]);
