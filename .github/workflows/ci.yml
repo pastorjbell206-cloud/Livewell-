@@ -48,6 +48,7 @@ jobs:
           node scripts/validate-workbooks.mjs
           node scripts/validate-family.mjs
           node scripts/validate-grow-voice.mjs
+          node scripts/validate-essays.mjs
           node scripts/validate-verse-guides.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs
           node scripts/validate-bible.mjs
