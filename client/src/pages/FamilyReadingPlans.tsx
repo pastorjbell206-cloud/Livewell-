@@ -9,21 +9,35 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import LoadFailed from "@/components/LoadFailed";
+import { fetchJson } from "@/lib/fetch-json";
 
 interface Day { day: number; passage: string; prompt: string; }
 interface Plan { id: string; title: string; description: string; audience: string; length: string; days: Day[]; }
 
+function isPlans(x: unknown): x is Plan[] {
+  return Array.isArray(x) && x.every((p) => typeof p?.id === "string" && typeof p?.title === "string" && Array.isArray(p?.days));
+}
+
 export default function FamilyReadingPlans() {
-  const [plans, setPlans] = useState<Plan[]>([]);
+  // Loading, failed, and loaded are distinct states keyed to a retry nonce
+  // (the HowTos pattern), so a failed fetch offers a retry instead of
+  // "Loading plans…" forever.
+  const [loaded, setLoaded] = useState<Plan[] | null>(null);
+  const [failedAt, setFailedAt] = useState<number | null>(null);
+  const [nonce, setNonce] = useState(0);
+  const failed = failedAt === nonce;
+  const plans = loaded ?? [];
   const [open, setOpen] = useState<string | null>(null);
   const { isDone, toggle, count, reset, persisted } = useProgress("lw-family-reading-plans-v1");
 
   useEffect(() => {
-    fetch("/family-reading-plans.json")
-      .then((r) => (r.ok ? r.json() : []))
-      .then((d) => Array.isArray(d) && setPlans(d))
-      .catch(() => {});
-  }, []);
+    let live = true;
+    fetchJson("/family-reading-plans.json", isPlans)
+      .then((d) => { if (live) setLoaded(d); })
+      .catch(() => { if (live) setFailedAt(nonce); });
+    return () => { live = false; };
+  }, [nonce]);
 
   return (
     <Layout>
@@ -33,7 +47,7 @@ export default function FamilyReadingPlans() {
         url="https://www.livewellbyjamesbell.co/family/reading-plans"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Reading plans
@@ -41,7 +55,7 @@ export default function FamilyReadingPlans() {
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             Read the Bible together.
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
             A passage a day and a short prompt to talk about it. Walk the life of Jesus, the great Old Testament story, the Psalms, or a starter plan if your family is beginning or beginning again.
           </p>
         </div>
@@ -49,7 +63,10 @@ export default function FamilyReadingPlans() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexDirection: "column", gap: "16px" }}>
-          {plans.length === 0 && (
+          {failed && (
+            <LoadFailed what="The reading plans" onRetry={() => setNonce((n) => n + 1)} backHref="/family" backLabel="Back to Family" />
+          )}
+          {!loaded && !failed && (
             <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading plans…</p>
           )}
           {plans.length > 0 && count > 0 && (

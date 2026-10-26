@@ -17,7 +17,7 @@ const AGE_GROUPS: AgeGroup[] = [
   {
     id: "toddler",
     label: "Toddler",
-    range: "Ages 1--3",
+    range: "Ages 1 to 3",
     needs: [
       {
         title: "Safety as theology",
@@ -75,7 +75,7 @@ const AGE_GROUPS: AgeGroup[] = [
   {
     id: "preschool",
     label: "Preschool",
-    range: "Ages 4--5",
+    range: "Ages 4 to 5",
     needs: [
       {
         title: "A God who is not afraid of their questions",
@@ -133,7 +133,7 @@ const AGE_GROUPS: AgeGroup[] = [
   {
     id: "elementary",
     label: "Elementary",
-    range: "Ages 6--10",
+    range: "Ages 6 to 10",
     needs: [
       {
         title: "A faith that can handle their growing sense of justice",
@@ -191,7 +191,7 @@ const AGE_GROUPS: AgeGroup[] = [
   {
     id: "tween",
     label: "Tween",
-    range: "Ages 11--13",
+    range: "Ages 11 to 13",
     needs: [
       {
         title: "Permission to doubt without losing belonging",
@@ -249,7 +249,7 @@ const AGE_GROUPS: AgeGroup[] = [
   {
     id: "teen",
     label: "Teen",
-    range: "Ages 14--17",
+    range: "Ages 14 to 17",
     needs: [
       {
         title: "A faith they can own, even if it looks different from yours",

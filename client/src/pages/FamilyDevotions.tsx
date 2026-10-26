@@ -1,9 +1,11 @@
 /**
- * Family devotions (/family/devotions) — the full set: 52 weekly devotions for
- * the year, plus seasonal devotionals for Thanksgiving, Advent, and Holy Week.
+ * Family devotions (/family/devotions) — the full set: 72 weekly devotions
+ * (more than a year at one a week), plus seasonal devotionals for
+ * Thanksgiving, Advent, and Holy Week.
  * Data: /family-devotions.json + /family-devotions-2.json (weekly), and
  * /family-seasonal.json (thanksgiving, advent, holyWeek).
  * A seasonal tab appears only once its pack has days in the data.
+ * scripts/validate-family.mjs checks the counts this page states.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -12,6 +14,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { GeneratedCover } from "@/components/GeneratedCover";
 import ScriptureNote from "@/components/ScriptureNote";
+import LoadFailed from "@/components/LoadFailed";
+import { fetchJson } from "@/lib/fetch-json";
 
 interface Weekly {
   id: string; title: string; theme: string; passage: string; passageText: string;
@@ -32,25 +36,45 @@ const SEASONS: Record<Season, { label: string; file: string }> = {
   holyWeek: { label: "Holy Week", file: "holy-week" },
 };
 
+function isWeeklyList(x: unknown): x is Weekly[] {
+  return Array.isArray(x) && x.every((d) => typeof d?.id === "string" && typeof d?.title === "string" && Array.isArray(d?.questions));
+}
+function isSeasonalPacks(x: unknown): x is Partial<Record<Season, Daily[]>> {
+  return !!x && typeof x === "object" && !Array.isArray(x) && Object.values(x).every((v) => Array.isArray(v));
+}
+
+const NO_SEASONS: Record<Season, Daily[]> = { thanksgiving: [], advent: [], holyWeek: [] };
+
 export default function FamilyDevotions() {
-  const [weekly, setWeekly] = useState<Weekly[]>([]);
-  const [seasonal, setSeasonal] = useState<Record<Season, Daily[]>>({ thanksgiving: [], advent: [], holyWeek: [] });
+  // Loading, failed, and loaded are distinct states keyed to a retry nonce
+  // (the HowTos pattern): a failed fetch offers a retry instead of
+  // "Loading…" forever. The three files arrive together or not at all.
+  const [loaded, setLoaded] = useState<{ weekly: Weekly[]; seasonal: Record<Season, Daily[]> } | null>(null);
+  const [failedAt, setFailedAt] = useState<number | null>(null);
+  const [nonce, setNonce] = useState(0);
+  const failed = failedAt === nonce;
   const [tab, setTab] = useState<Tab>("weekly");
   const [open, setOpen] = useState<string | null>(null);
 
   useEffect(() => {
+    let live = true;
     Promise.all([
-      fetch("/family-devotions.json").then((r) => (r.ok ? r.json() : [])).catch(() => []),
-      fetch("/family-devotions-2.json").then((r) => (r.ok ? r.json() : [])).catch(() => []),
-    ]).then(([a, b]) => setWeekly([...(Array.isArray(a) ? a : []), ...(Array.isArray(b) ? b : [])]));
-    fetch("/family-seasonal.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => { if (d) setSeasonal({ thanksgiving: d.thanksgiving ?? [], advent: d.advent ?? [], holyWeek: d.holyWeek ?? [] }); })
-      .catch(() => {});
-  }, []);
+      fetchJson("/family-devotions.json", isWeeklyList),
+      fetchJson("/family-devotions-2.json", isWeeklyList),
+      fetchJson("/family-seasonal.json", isSeasonalPacks),
+    ])
+      .then(([a, b, s]) => {
+        if (live) setLoaded({ weekly: [...a, ...b], seasonal: { thanksgiving: s.thanksgiving ?? [], advent: s.advent ?? [], holyWeek: s.holyWeek ?? [] } });
+      })
+      .catch(() => { if (live) setFailedAt(nonce); });
+    return () => { live = false; };
+  }, [nonce]);
+
+  const weekly = useMemo(() => loaded?.weekly ?? [], [loaded]);
+  const seasonal = loaded?.seasonal ?? NO_SEASONS;
 
   const tabs: { id: Tab; label: string; count: number }[] = useMemo(() => [
-    { id: "weekly" as Tab, label: "Weekly (a year)", count: weekly.length },
+    { id: "weekly" as Tab, label: "Weekly", count: weekly.length },
     ...(Object.keys(SEASONS) as Season[])
       .filter((s) => seasonal[s].length > 0)
       .map((s) => ({ id: s as Tab, label: SEASONS[s].label, count: seasonal[s].length })),
@@ -93,8 +117,8 @@ export default function FamilyDevotions() {
   return (
     <Layout>
       <SEOMeta
-        title="Family Devotions: A Year of Devotions, Thanksgiving, Advent, and Holy Week"
-        description="A full year of family devotions to do together, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
+        title="Family Devotions: Weekly, Thanksgiving, Advent, and Holy Week"
+        description="Seventy-two weekly family devotions, more than a year of them, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
         url="https://www.livewellbyjamesbell.co/family/devotions"
       />
 
@@ -104,10 +128,10 @@ export default function FamilyDevotions() {
             <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Devotions
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            A year of devotions, together.
+            A devotion a week, together.
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            A devotion for every week of the year, plus daily readings to walk your family through Thanksgiving week, Advent, and Holy Week. Each one is short, a passage and a question and something to do together and a prayer, made for the table or the couch.
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
+            Seventy-two weekly devotions, more than a year of them, plus daily readings to walk your family through Thanksgiving week, Advent, and Holy Week. Each one is short, a passage and a question and something to do together and a prayer, made for the table or the couch.
           </p>
         </div>
       </section>
@@ -127,11 +151,16 @@ export default function FamilyDevotions() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexDirection: "column", gap: "10px" }}>
-          {list.length === 0 && (
+          {failed && (
+            <LoadFailed what="The family devotions" onRetry={() => setNonce((n) => n + 1)} backHref="/family" backLabel="Back to Family" />
+          )}
+          {!loaded && !failed && (
             <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>
           )}
+          {/* Numbered as a place in the set, not as weeks of a year: there
+              are more devotions than weeks. */}
           {tab === "weekly" && weekly.map((d, i) => (
-            <Accordion key={d.id} id={d.id} eyebrow={`Week ${i + 1} · ${d.theme}`} title={d.title}>
+            <Accordion key={d.id} id={d.id} eyebrow={`${i + 1} of ${weekly.length} · ${d.theme}`} title={d.title}>
               <Verse passage={d.passage} text={d.passageText} />
               <p style={{ fontFamily: "var(--F)", fontSize: "17px", color: "var(--ink)", marginBottom: "12px" }}>{d.bigIdea}</p>
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "16px", whiteSpace: "pre-line" }}>{d.reflection}</p>
@@ -146,7 +175,7 @@ export default function FamilyDevotions() {
           {/* The seasonal devotions retell each passage in plain words for
               children; the weekly ones quote the Berean Standard Bible word
               for word (scripts/validate-family.mjs). Say which. */}
-          <ScriptureNote rendering={tab === "weekly" ? "bsb" : "paraphrase"} />
+          {loaded && <ScriptureNote rendering={tab === "weekly" ? "bsb" : "paraphrase"} />}
           {tab === "weekly" && weekly.length > 0 && (
             <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
               Print every weekly devotion as a card for the table, two to a page, each passage in full:{" "}

@@ -640,7 +640,7 @@
     "prayer": "God, you did not rescue me just for me. Help me share the good news with the people around me. Send me, and give me the courage to go. Amen."
   },
   {
-    "id": "forgiveness",
+    "id": "when-someone-hurts-you",
     "title": "When Someone Hurts You",
     "theme": "Forgiveness",
     "passage": "Colossians 3:13",
@@ -704,7 +704,7 @@
     "prayer": "God, thank you for the Bible, where you speak to us. Help us love to read it and to follow the light it gives. Amen."
   },
   {
-    "id": "obedience",
+    "id": "trusting-enough-to-obey",
     "title": "Trusting Enough To Obey",
     "theme": "Obedience",
     "passage": "John 14:15",
@@ -785,7 +785,7 @@
   },
   {
     "id": "creation",
-    "title": "Made On Purpose",
+    "title": "God Called It Good",
     "theme": "Creation",
     "passage": "Genesis 1:1",
     "passageText": "In the beginning God created the heavens and the earth.",

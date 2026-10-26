@@ -88,7 +88,7 @@ export default function Family() {
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             Disciple your whole family, in one place.
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
+          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
             Devotions you can actually do with your kids. Apologetics that give a teenager not just what to believe but why. Scripture and writing for parenting and marriage. The whole house, learning to carry the weight of faith together.
           </p>
         </div>
