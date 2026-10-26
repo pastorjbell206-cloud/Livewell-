@@ -21,6 +21,10 @@ const plugins = [
     // for a frequently-updated content site, fresh-from-network wins.
     selfDestroying: true,
     registerType: "autoUpdate",
+    // registerSW.js only waits for "load" to register, so it need not block
+    // the parser: as a plain <script> in <head> it held up first paint on
+    // every page (U08).
+    injectRegister: "script-defer",
     includeAssets: ["robots.txt", "sitemap.xml"],
     manifest: {
       name: "LiveWell by James Bell",

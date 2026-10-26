@@ -104,6 +104,7 @@ export default function Home() {
               width={168}
               height={210}
               decoding="async"
+              fetchPriority="low"
             />
             <div>
               <p className="home-hero__name">James Bell</p>
