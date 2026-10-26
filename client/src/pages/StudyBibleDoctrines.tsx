@@ -23,7 +23,6 @@ import {
   fetchLoci,
   fetchNotesIndex,
   fetchStudy,
-  refHref,
   spreadKinds,
   type Doctrine,
   type DoctrineStudy,
@@ -32,6 +31,7 @@ import {
   type NotesIndex,
 } from "@/lib/bible-notes";
 import { buildIndex, fetchCatalogue, search, type CatalogueItem } from "@/lib/catalogue";
+import { refHref } from "@/lib/scripture-ref";
 import { Band, Credits, H2, H3, Hero, Lede, Prose, RelatedList, Status, card, kicker, quietLink, useLoad, wrap } from "@/pages/study-bible/shared";
 
 type Data = { doctrines: Doctrine[]; loci: Locus[]; index: NotesIndex; books: BibleBook[] };
@@ -215,7 +215,7 @@ function DoctrinePage({ data, id }: { data: Data; id: string }) {
           <Section id="texts" tone={tone()} title="Key texts">
             <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
               {study.keyTexts.map((k) => {
-                const href = refHref(k.ref, data.books);
+                const href = refHref(k.ref);
                 return (
                   <li key={k.ref} style={{ ...card, padding: "12px var(--s-4)" }}>
                     <div style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, marginBottom: "4px" }}>{href ? <Link href={href} style={quietLink}>{k.ref}</Link> : k.ref}</div>

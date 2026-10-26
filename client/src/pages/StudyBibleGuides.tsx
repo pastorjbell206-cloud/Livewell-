@@ -10,13 +10,13 @@ import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
-import { fetchBooks, type BibleBook } from "@/lib/bible";
-import { fetchGuide, fetchGuideIndex, refHref, type Guide, type GuideIndex } from "@/lib/bible-notes";
+import { fetchGuide, fetchGuideIndex, type Guide, type GuideIndex } from "@/lib/bible-notes";
+import { refHref } from "@/lib/scripture-ref";
 import { Band, Credits, H2, Hero, Lede, Prose, Status, card, kicker, quietLink, useLoad, wrap } from "@/pages/study-bible/shared";
 
 export default function StudyBibleGuides() {
   const [, params] = useRoute("/study/bible/guides/:id");
-  const { data, retry } = useLoad("guides-page", () => Promise.all([fetchGuideIndex(), fetchBooks()]).then(([index, books]) => ({ index, books })));
+  const { data, retry } = useLoad("guides-page", () => fetchGuideIndex().then((index) => ({ index })));
   return (
     <Layout>
       {!params && (
@@ -33,7 +33,7 @@ export default function StudyBibleGuides() {
       ) : data === undefined ? (
         <Status>Opening the guides…</Status>
       ) : params ? (
-        <GuidePage id={params.id} index={data.index} books={data.books} />
+        <GuidePage id={params.id} index={data.index} />
       ) : (
         <GuideIndexPage index={data.index} />
       )}
@@ -70,7 +70,7 @@ function GuideIndexPage({ index }: { index: GuideIndex }) {
   );
 }
 
-function GuidePage({ id, index, books }: { id: string; index: GuideIndex; books: BibleBook[] }) {
+function GuidePage({ id, index }: { id: string; index: GuideIndex }) {
   const { data: guide, retry } = useLoad<Guide>(`guide-${id}`, () => fetchGuide(id));
   const group = index.groups.find((g) => g.guides.some((x) => x.id === id));
   const all = index.groups.flatMap((g) => g.guides);
@@ -119,7 +119,7 @@ function GuidePage({ id, index, books }: { id: string; index: GuideIndex; books:
             <p style={{ margin: "var(--s-3) 0 0", fontFamily: "var(--U)", fontSize: "13.5px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
               Read:{" "}
               {s.refs.map((r, k) => {
-                const href = refHref(r, books);
+                const href = refHref(r);
                 return (
                   <span key={r}>
                     {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
