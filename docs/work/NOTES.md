@@ -145,3 +145,13 @@ study. Vertical slice first (How to Read the Dead, Rome on the approved pilot,
 Nicaea, Callinicum and Thessalonica as the first reckoning), then one Part per
 PR. Keep /theology/history URLs; no new redirects there. Current study: 7 eras,
 68 events, 11 councils, 10 heresies, 36 figures (2 women), 22 essays.
+
+## 2026-10-26
+
+- Closed the 36 old open PRs at James's request (518, 459, 441, 377, 376, 375,
+  374, 370, 368, 365, 270, 216, 214, 175, 110, 109, 108, 107, 106, 101, 100,
+  99, 40-30, 20, 19, 9). Branches were not deleted; any PR can be reopened.
+- James merged PR #534 ("Take it with you") the same day: Send, Save, Print
+  (`TakeItWithYou`, `ToolActions`) on essays, care pages, plans, study guides,
+  context guides and tools; essays gained save and send at the top, listen,
+  text size and print; phone reminders. Build on these; do not duplicate them.
