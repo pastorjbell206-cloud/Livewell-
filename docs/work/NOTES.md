@@ -155,3 +155,19 @@ PR. Keep /theology/history URLs; no new redirects there. Current study: 7 eras,
   (`TakeItWithYou`, `ToolActions`) on essays, care pages, plans, study guides,
   context guides and tools; essays gained save and send at the top, listen,
   text size and print; phone reminders. Build on these; do not duplicate them.
+
+## James's answers, 2026-10-26
+
+1. Review: **sample per section.** James reads a few pieces from each batch of
+   writing (essays, devotions, history sessions) on a preview; if they sound
+   right, the rest of the batch merges. Code-only changes merge once all checks
+   pass.
+2. Translation: **ESV, with an API key James will get** (api.esv.org). Used to
+   check quoted verses; never at build time. Until the key and network access
+   exist, quotes are checked by search and the ledger says so.
+3. Header doors: **Study, Topics, Family, Essays, About.** Books moves under
+   About (About: James, Books, Speaking, Contact). Resources folds into Topics
+   and Family. This supersedes the 2026-10-12 doors in the CLAUDE.md Decision
+   Log (update it in the doors unit, U19).
+4. Advent: **keep the December 1 to 25 calendar and fix it** (wording, order,
+   findable from home). No new writing.
