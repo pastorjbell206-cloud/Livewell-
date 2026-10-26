@@ -1,0 +1,986 @@
+From fd183402a70cb33b2d5e321e5594cac6e04c7351 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 20:37:33 +0000
+Subject: [PATCH] Essay gate: validate-essays.mjs, and the em-dash and voice
+ ratchets cover client/public/essays (U03)
+
+A rewrite turns a pending shelf essay public the moment its file lands, so
+every file in client/public/essays now passes a gate before readers see it.
+
+scripts/validate-essays.mjs checks the override shape (the same rule
+build-essays-index reads) and no unknown field, second H1, or opening that
+repeats the excerpt; Forbidden Language and the essay brief's rulebook
+leakage in our own prose; no em-dash in our prose, nor "---", "--", or a
+spaced en-dash in its place, and none at all in title or excerpt; an
+exclamation point only inside quoted Scripture with its reference beside it;
+internal links only to public pages, never through a redirect; at least one
+Scripture reference; and Closing Texts as *"Quote."* (Reference) on one line.
+
+A quotation keeps its own words and punctuation (ESV Philemon 16 and the
+Whitehead and Perry definition in the pilots carry em-dashes), so the checks
+read the prose around quotations (scripts/lib/essay-text.mjs). References
+are recognized by shape, not parsed; U09 and U27 tighten that later.
+
+validate-no-emdash.mjs and validate-grow-voice.mjs now include the essays
+folder with the same quotation rule. Grow voice's Forbidden Language list
+moved unchanged to scripts/lib/forbidden-language.mjs so both gates read one
+list, and it loads the Bible only when a BSB-checked file needs it. Both take
+--essays <dir> for the seeded-file test. The gate joins the CI content-gates
+step; CLAUDE.md's validator list says 23.
+
+server/essay-gate.test.ts: the three gates pass on the committed folder and
+on a seeded clean essay, and fail a seeded bad one naming each fault.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .github/workflows/ci.yml           |   1 +
+ CLAUDE.md                          |   4 +-
+ client/public/essays/README.md     |   2 +
+ scripts/lib/essay-text.mjs         | 178 ++++++++++++++++++++++
+ scripts/lib/forbidden-language.mjs |  39 +++++
+ scripts/validate-essays.mjs        | 227 +++++++++++++++++++++++++++++
+ scripts/validate-grow-voice.mjs    |  91 ++++++------
+ scripts/validate-no-emdash.mjs     |  54 ++++++-
+ server/essay-gate.test.ts          | 211 +++++++++++++++++++++++++++
+ 9 files changed, 759 insertions(+), 48 deletions(-)
+ create mode 100644 scripts/lib/essay-text.mjs
+ create mode 100644 scripts/lib/forbidden-language.mjs
+ create mode 100644 scripts/validate-essays.mjs
+ create mode 100644 server/essay-gate.test.ts
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index c2e720e..50dbaf6 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -48,6 +48,7 @@ jobs:
+           node scripts/validate-workbooks.mjs
+           node scripts/validate-family.mjs
+           node scripts/validate-grow-voice.mjs
++          node scripts/validate-essays.mjs
+           node scripts/validate-verse-guides.mjs
+           pnpm exec tsx scripts/validate-catalogue.mjs
+           node scripts/validate-bible.mjs
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 57a3255..04bc0da 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -488,11 +488,11 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
+ 
+ ### CI gates (`.github/workflows/ci.yml`)
+ 
+-On every PR, five blocking steps: `pnpm check` → the content-gates step (22
++On every PR, five blocking steps: `pnpm check` → the content-gates step (23
+ validators: scripture, life, studyguides, pathways, theology, politics,
+ no-emdash, content-integrity, skeptic-track, answers, argument-cases, links,
+ needs (pages and drafts), grow-links, plans, workbooks, family, grow-voice,
+-verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
++essays, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+ `pnpm build` → the canonical audit (sitemap +
+ prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
+ Lighthouse + axe against the built site. Keep all five blocking steps green.
+diff --git a/client/public/essays/README.md b/client/public/essays/README.md
+index 3467ef8..2f164ca 100644
+--- a/client/public/essays/README.md
++++ b/client/public/essays/README.md
+@@ -1 +1,3 @@
+ Rewritten essays live here as `<slug>.json` ({ slug, title, excerpt, body (Markdown), updated }), one per shelf essay; after adding one, run `node scripts/build-essays-index.mjs`.
++
++Then run `node scripts/validate-essays.mjs` (a CI gate). It holds every file to the shape above and to the house rules: no Forbidden Language and no rulebook leakage ("steelman," "verdict," "indictment," "self-implication," "both-sidesism") in our own prose; no em-dash in our own prose ("---", "--", and a spaced en-dash count too), and none at all in the title or excerpt; an exclamation point only inside quoted Scripture with its reference beside it; internal links only to public pages, never through a redirect; at least one Scripture reference; sections under `##`, since the page sets the title as the only H1; and Closing Texts written as *"Quote."* (Reference) on one line. A quotation, in double quotation marks or a `>` block quote, keeps its own words and punctuation.
+diff --git a/scripts/lib/essay-text.mjs b/scripts/lib/essay-text.mjs
+new file mode 100644
+index 0000000..16f9d8e
+--- /dev/null
++++ b/scripts/lib/essay-text.mjs
+@@ -0,0 +1,178 @@
++/**
++ * essay-text.mjs — reading a rewritten essay's Markdown the way the essay
++ * gates need to: validate-essays.mjs, and the essay scope of
++ * validate-grow-voice.mjs and validate-no-emdash.mjs.
++ *
++ * The one idea: our prose and other people's words are held to different
++ * rules. A quotation is verbatim (Scripture in the ESV, or a named source) and
++ * keeps its own words and punctuation (James's rule, recorded in
++ * docs/work/NOTES.md on the work branch: "Verbatim quotations keep their own
++ * punctuation"), so Forbidden Language, the em-dash
++ * rule, and the rulebook-leakage list read only the prose around it. An
++ * exclamation point may stand only inside quoted Scripture.
++ *
++ * A quotation is text between double quotation marks, straight or curly,
++ * inside one paragraph, or a Markdown block quote (a paragraph that opens
++ * with ">"). Single quotation marks are a quotation inside a quotation and
++ * need no pairing of their own.
++ *
++ * Scripture references are recognized by shape here (a book name from
++ * client/public/bible/books.json, then chapter and verse), not parsed. The
++ * shared reference parser (master plan U09) replaces SCRIPTURE_REF_SOURCE
++ * with a real parse.
++ */
++import { readFileSync } from "node:fs";
++import { join } from "node:path";
++
++const ROOT = new URL("../..", import.meta.url).pathname;
++
++/** A character-for-character copy with [start, end) blanked (newlines kept). */
++function blank(chars, start, end) {
++  for (let i = start; i < end; i++) if (chars[i] !== "\n") chars[i] = " ";
++}
++
++/**
++ * Link targets and bare URLs blanked, so a slug or address is never read as
++ * prose ("/writing/the-journey" is not the word "journey"). Link text stays.
++ */
++export function maskLinkTargets(text) {
++  const chars = text.split("");
++  for (const m of text.matchAll(/\]\((?:[^()\s]|\([^()\s]*\))*(?:\s+(?:"[^"]*"|'[^']*'))?\)/g)) blank(chars, m.index + 1, m.index + m[0].length);
++  for (const m of text.matchAll(/^[ \t]*\[[^\]]+\]:[ \t]*\S+.*$/gm)) blank(chars, m.index, m.index + m[0].length);
++  for (const m of text.matchAll(/<?\bhttps?:\/\/[^\s<>)]+>?/g)) blank(chars, m.index, m.index + m[0].length);
++  return chars.join("");
++}
++
++/**
++ * Split a text into its quotations and its own prose.
++ *
++ * Returns { prose, quotes, unbalanced }:
++ *   prose       the text with every quotation (marks included) blanked, same length;
++ *   quotes      [{ start, end, text, block }], start at the opening mark, end past the closing one;
++ *   unbalanced  [index] of each quotation mark that never pairs within its paragraph.
++ */
++export function maskQuotations(text) {
++  const chars = text.split("");
++  const quotes = [];
++  const unbalanced = [];
++  // Paragraphs are separated by blank lines; with one capture group, split()
++  // puts the separators at the odd indexes.
++  const parts = text.split(/(\n[ \t]*\n)/);
++  let offset = 0;
++  for (let p = 0; p < parts.length; p++) {
++    const block = parts[p];
++    const base = offset;
++    offset += block.length;
++    if (p % 2 === 1 || !block.trim()) continue;
++    const lead = block.length - block.trimStart().length;
++    if (block[lead] === ">") {
++      // A block quote (lazy continuation lines included): someone else's words.
++      const end = block.trimEnd().length;
++      quotes.push({ start: base + lead, end: base + end, text: block.slice(lead, end).replace(/^[ \t]*>[ \t]?/gm, ""), block: true });
++      blank(chars, base + lead, base + end);
++      continue;
++    }
++    let open = -1;
++    const close = (i) => {
++      quotes.push({ start: base + open, end: base + i + 1, text: block.slice(open + 1, i), block: false });
++      blank(chars, base + open, base + i + 1);
++      open = -1;
++    };
++    for (let i = 0; i < block.length; i++) {
++      const c = block[i];
++      if (c === "“") {
++        if (open < 0) open = i;
++        else unbalanced.push(base + i);
++      } else if (c === "”") {
++        if (open >= 0) close(i);
++        else unbalanced.push(base + i);
++      } else if (c === '"') {
++        if (open < 0) open = i;
++        else close(i);
++      }
++    }
++    if (open >= 0) unbalanced.push(base + open);
++  }
++  return { prose: chars.join(""), quotes, unbalanced };
++}
++
++/**
++ * Everything a gate needs from one field: link targets set aside, then
++ * quotations. `prose` keeps every index of `text`.
++ */
++export function readEssayText(text) {
++  return maskQuotations(maskLinkTargets(text));
++}
++
++// ── Scripture references, by shape ─────────────────────────────────────────
++const bookNames = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8")).map((b) => b.name);
++const BOOKS = [...new Set([...bookNames, "Psalm", "Song of Songs"])]
++  .sort((a, b) => b.length - a.length)
++  .map((n) => n.replace(/ /g, "\\s"));
++const VERSES = String.raw`\d{1,3}:\d{1,3}[a-c]?(?:[-–](?:\d{1,3}:)?\d{1,3}[a-c]?)?(?:,\s?\d{1,3}[a-c]?(?:[-–]\d{1,3}[a-c]?)?)*`;
++const CHAPTERS = String.raw`\d{1,3}(?:[-–]\d{1,3})?`;
++/** A Scripture reference by shape: "Luke 19:41–42", "1 Peter 2:9", "Psalm 23", "Hebrews 11:13, 16". */
++export const SCRIPTURE_REF_SOURCE = String.raw`(?<![A-Za-z0-9])(?:${BOOKS.join("|")})\.?\s(?:${VERSES}|${CHAPTERS})(?!\d|:\d)`;
++const REF = new RegExp(SCRIPTURE_REF_SOURCE);
++
++/** Does the text carry a Scripture reference anywhere? */
++export function hasScriptureRef(text) {
++  return REF.test(text);
++}
++
++const REF_PAREN = new RegExp(String.raw`\([^()]*${SCRIPTURE_REF_SOURCE}[^()]*\)`);
++const REF_AFTER = new RegExp(String.raw`^[*_.,;:!?\s]{0,6}\(([^()]{1,80})\)`);
++const REF_BEFORE = new RegExp(String.raw`${SCRIPTURE_REF_SOURCE}\)?[*_]*[,:.]?\s*[*_]*$`);
++
++/**
++ * Does a quotation carry its Scripture reference beside it? Either a
++ * parenthetical reference right after the closing mark ("…" (Luke 19:41–42),
++ * *"…"* (Amos 3:2)), or a reference right before the opening one
++ * (Psalm 33:12: "…"). A block quote may also end on its parenthetical
++ * reference.
++ */
++export function hasReferenceBeside(text, quote) {
++  const after = text.slice(quote.end, quote.end + 100).match(REF_AFTER);
++  if (after && REF.test(after[1])) return true;
++  if (REF_BEFORE.test(text.slice(Math.max(0, quote.start - 100), quote.start))) return true;
++  if (quote.block) {
++    const lines = quote.text.trimEnd().split("\n");
++    if (REF_PAREN.test(lines[lines.length - 1])) return true;
++  }
++  return false;
++}
++
++// ── Dashes ──────────────────────────────────────────────────────────────────
++const DASHES = [
++  { kind: "em-dash", re: /—/g },
++  // lib/html-body.ts normalizeEssayBody renders "word---word" as an em-dash.
++  { kind: '"---" (the page renders it as an em-dash)', re: /(?<=\S)---(?=\S)/g },
++];
++const STAND_INS = [
++  { kind: "double hyphen standing in for an em-dash", re: /(?<!-)--(?!-)/g },
++  { kind: "spaced en-dash standing in for an em-dash", re: /\s–\s/g },
++];
++
++/**
++ * Every em-dash in a text, as [{ index, kind }]. With standIns, also the
++ * double hyphen and the spaced en-dash a writer types in its place. An
++ * unspaced en-dash (1914–1918, Luke 19:41–42) is a range and never counted.
++ */
++export function dashesIn(text, { standIns = false } = {}) {
++  const out = [];
++  for (const { kind, re } of standIns ? [...DASHES, ...STAND_INS] : DASHES)
++    for (const m of text.matchAll(re)) if (!out.some((d) => Math.abs(d.index - m.index) < 3)) out.push({ index: m.index, kind });
++  return out.sort((a, b) => a.index - b.index);
++}
++
++/** 1-based line number of an index in a text. */
++export function lineAt(text, index) {
++  let n = 1;
++  for (let i = 0; i < index && i < text.length; i++) if (text[i] === "\n") n++;
++  return n;
++}
++
++/** A short single-line excerpt around an index, for messages. */
++export function around(text, index, width = 36) {
++  return text.slice(Math.max(0, index - width), index + width).replace(/\s+/g, " ").trim();
++}
+diff --git a/scripts/lib/forbidden-language.mjs b/scripts/lib/forbidden-language.mjs
+new file mode 100644
+index 0000000..eb90432
+--- /dev/null
++++ b/scripts/lib/forbidden-language.mjs
+@@ -0,0 +1,39 @@
++/**
++ * forbidden-language.mjs — CLAUDE.md's Forbidden Language list, literally, as
++ * the Grow and essay gates read it (validate-grow-voice.mjs,
++ * validate-essays.mjs). One list, so the two gates cannot drift apart.
++ *
++ * Moved here unchanged from validate-grow-voice.mjs. The older single-library
++ * validators keep their own copies; fold them in here when one is next edited.
++ */
++
++export const FORBIDDEN = [
++  "delve", "delves", "delving", "leverage", "leverages", "leveraging", "unlock", "unlocks", "unlocking",
++  "transformative", "navigate", "navigates", "navigating", "tapestry", "foster", "fosters", "fostering", "fostered",
++  "unpack", "unpacks", "unpacking", "landscape", "landscapes", "nuanced", "multifaceted", "authentic", "authenticity",
++  "holistic", "journey", "journeys", "in today's world", "now more than ever", "here's the thing",
++  "i want to be real with you", "god's got this", "gospel-centered", "authentic community", "hold space",
++  "your truth", "do the work", "your feelings are valid", "lean into", "leaning into", "showing up",
++];
++
++/** Every Forbidden Language hit; use with matchAll (it carries the g flag). */
++export const forbiddenRe = new RegExp(`\\b(${FORBIDDEN.map((w) => w.replace(/'/g, "['’]")).join("|")})\\b`, "gi");
++
++// Ordinary senses the list does not mean: foster care; Richard Foster (a
++// name, capitalized); book titles and named concepts; the literal road.
++export const ALLOWED = [
++  /\bfoster (care|parent|parents|parenting|child|children|home|homes|family|families|system|kids?)\b/gi,
++  /\bFoster\b/g,
++  /\bage of authenticity\b/gi,
++  /\bThe Ethics of Authenticity\b/g,
++  /\bUnpacking Forgiveness\b/g,
++  /\bUnlocking the Stress Cycle\b/g,
++  /\bjourney to Jerusalem\b/gi,
++];
++
++/** The text with each allowed sense blanked out, character for character. */
++export function setAsideAllowed(text) {
++  let out = text;
++  for (const re of ALLOWED) out = out.replace(re, (m) => " ".repeat(m.length));
++  return out;
++}
+diff --git a/scripts/validate-essays.mjs b/scripts/validate-essays.mjs
+new file mode 100644
+index 0000000..357b3ef
+--- /dev/null
++++ b/scripts/validate-essays.mjs
+@@ -0,0 +1,227 @@
++#!/usr/bin/env node
++/**
++ * validate-essays.mjs — the gate every rewritten essay passes before readers
++ * see it (client/public/essays/<slug>.json, master plan section 9.2).
++ *
++ * A rewrite turns a pending shelf essay public the moment its file lands, so
++ * this reads each file the way an editor would before it goes out:
++ *
++ *   shape       the override shape build-essays-index.mjs reads
++ *               (scripts/lib/shelf.mjs), no field the site ignores, no second
++ *               H1, and no opening paragraph that repeats the excerpt;
++ *   language    CLAUDE.md's Forbidden Language list
++ *               (scripts/lib/forbidden-language.mjs) and the essay brief's
++ *               rulebook leakage, in our own prose;
++ *   dashes      no em-dash in our own prose, nor the "---", "--", or spaced
++ *               en-dash typed in its place; the title and excerpt carry none at
++ *               all, since they feed the listings and llms-full.txt;
++ *   "!"         only inside quoted Scripture: a quotation with its reference
++ *               beside it;
++ *   links       every internal link reaches a public page directly: a public
++ *               shelf essay, or a live route that is not a redirect;
++ *   references  the essay cites Scripture by reference at least once, and a
++ *               Closing Texts line reads *"Quote."* (Reference) on one line.
++ *
++ * Quotations keep their own words and punctuation (scripts/lib/essay-text.mjs).
++ * References are recognized by shape, not yet parsed; the shared reference
++ * parser (U09) and the quotation verifier (U27) tighten this gate later.
++ *
++ *   node scripts/validate-essays.mjs                  every essay file (CI gate)
++ *   node scripts/validate-essays.mjs <file|dir> ...   only these (a draft, or the seeded-file test)
++ */
++import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
++import { basename, join, resolve } from "node:path";
++import { pathToFileURL } from "node:url";
++import { ROOT, OVERRIDES_DIR, createShelf, loadEssayShelf, overrideProblems } from "./lib/shelf.mjs";
++import { resolveHref } from "./lib/site-routes.mjs";
++import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
++import {
++  SCRIPTURE_REF_SOURCE,
++  around,
++  dashesIn,
++  hasReferenceBeside,
++  hasScriptureRef,
++  lineAt,
++  readEssayText,
++} from "./lib/essay-text.mjs";
++
++/** The fields an essay file holds; the site reads nothing else. */
++export const ESSAY_FIELDS = ["slug", "title", "excerpt", "body", "updated"];
++
++/**
++ * Rulebook leakage, from the essay writers' brief (docs/work/essays/BRIEF.md
++ * on the work branch): the editorial rules written into the prose. The fair
++ * thing is done, never announced.
++ */
++const RULEBOOK = [
++  /\bsteel[- ]?m[ae]n\w*/gi,
++  /\bverdicts?\b/gi,
++  /\bindictments?\b/gi,
++  /\bself-implicat\w*/gi,
++  /\bboth-?sides-?ism\b/gi,
++  /\bthe fair place to begin\b/gi,
++  /\bdeserves to be stated the way\b/gi,
++  /\bdeserves to be granted plainly\b/gi,
++  /\bthe objection runs like this\b/gi,
++  /\bNot X\. Y\./g,
++];
++
++const ITALIC_QUOTE_LINE = /^[ \t]*([*_])[“"].*?[”"][.,]?\1(.*)$/gm;
++const CLOSING_TEXT_TRAILER = new RegExp(String.raw`^\s+\([^()]*${SCRIPTURE_REF_SOURCE}[^()]*\)\s*$`);
++
++/** The rules every reader-facing field shares. `strictDashes`: no dash even inside a quotation. */
++function proseProblems(field, text, strictDashes) {
++  const out = [];
++  const at = (i) => (field === "body" ? `body line ${lineAt(text, i)}` : field);
++  const near = (i) => `("…${around(text, i)}…")`;
++  const { prose, quotes, unbalanced } = readEssayText(text);
++
++  for (const i of unbalanced)
++    out.push(`${at(i)}: a quotation mark with no partner in its paragraph ${near(i)}; the gate cannot tell the quotation from the prose`);
++  for (const m of setAsideAllowed(prose).matchAll(forbiddenRe))
++    out.push(`${at(m.index)}: Forbidden Language "${m[1]}" ${near(m.index)}`);
++  for (const re of RULEBOOK)
++    for (const m of prose.matchAll(re))
++      out.push(`${at(m.index)}: rulebook leakage "${m[0]}" ${near(m.index)}; do the fair thing without announcing it`);
++  for (const d of dashesIn(strictDashes ? text : prose, { standIns: true }))
++    out.push(`${at(d.index)}: ${d.kind} ${near(d.index)}; use a comma, colon, period, or parentheses`);
++
++  // "![" opens a Markdown image; it is not an exclamation.
++  for (const m of prose.matchAll(/!(?!\[)/g))
++    out.push(`${at(m.index)}: exclamation point outside quoted Scripture ${near(m.index)}`);
++  for (const q of quotes)
++    if (text.slice(q.start, q.end).includes("!") && !hasReferenceBeside(text, q))
++      out.push(`${at(q.start)}: exclamation point in a quotation with no Scripture reference beside it ${near(q.start)}; only quoted Scripture keeps one`);
++  return out;
++}
++
++/** Does an internal link reach a public page directly? null when it does. */
++function linkProblem(href, shelf) {
++  if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return null; // https:, mailto: (off the site)
++  if (href.startsWith("#")) return null;
++  if (!href.startsWith("/") || href.startsWith("//")) return `link "${href}" is not a site path (internal links start with /)`;
++  const path = href.split("#")[0].split("?")[0].replace(/\/+$/, "") || "/";
++  const essay = path.match(/^\/writing\/([^/]+)$/);
++  if (essay) {
++    let slug = essay[1];
++    try {
++      slug = decodeURIComponent(slug);
++    } catch {
++      return `link ${href} is not a readable address`;
++    }
++    const seen = shelf.visibility(slug);
++    if (seen === "shelf") return null;
++    const r = resolveHref(path);
++    if (r.status === "redirect") return `link ${href} redirects to ${r.to}; link there directly`;
++    return `link ${href} is not a public essay (${seen === "pending" ? "on the shelf with no rewrite yet" : "not on the shelf, so retired"})`;
++  }
++  const r = resolveHref(path);
++  if (r.status === "ok") return null;
++  if (r.status === "redirect") return `link ${href} redirects to ${r.to}; link there directly`;
++  if (r.status === "missing") return `link ${href} is not a page on the site`;
++  return `link ${href} cannot be confirmed as a public page; link to one the gate can check`;
++}
++
++/** The checks that belong to the body alone. */
++function bodyProblems(body, excerpt, shelf) {
++  const out = [];
++  const at = (i) => `body line ${lineAt(body, i)}`;
++
++  for (const m of body.matchAll(/^[ \t]{0,3}#[ \t]/gm))
++    out.push(`${at(m.index)}: an H1 heading; the page sets the title as the only H1, so sections use ##`);
++
++  const plain = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
++  const first = body.split(/\n[ \t]*\n/).map((b) => b.trim()).find((b) => b && !b.startsWith("#"));
++  if (excerpt.trim() && first && plain(first) === plain(excerpt))
++    out.push(`${at(body.indexOf(first))}: opens by repeating the excerpt, which the page already sets under the title`);
++
++  const hrefs = [
++    ...[...body.matchAll(/\]\(\s*<?([^()\s>]+)/g)].map((m) => ({ href: m[1], index: m.index })),
++    ...[...body.matchAll(/^[ \t]*\[[^\]]+\]:[ \t]*<?([^\s>]+)/gm)].map((m) => ({ href: m[1], index: m.index })),
++  ];
++  for (const { href, index } of hrefs) {
++    const p = linkProblem(href, shelf);
++    if (p) out.push(`${at(index)}: ${p}`);
++  }
++
++  if (!hasScriptureRef(body))
++    out.push("body: cites no Scripture by reference (Book chapter:verse); a quotation travels with its reference");
++  for (const m of body.matchAll(ITALIC_QUOTE_LINE)) {
++    const trailer = m[2];
++    // A line that goes on in prose after the italic quotation is not a Closing Text.
++    if (trailer.trim() && !trailer.trim().startsWith("(") && !/^\s*[—–-]/.test(trailer)) continue;
++    if (!CLOSING_TEXT_TRAILER.test(trailer))
++      out.push(`${at(m.index)}: a Closing Texts line reads *"Quote."* (Reference), the Scripture reference in parentheses on the same line`);
++  }
++  return out;
++}
++
++/** Every problem with one essay file's data, as reader-facing strings. */
++export function essayProblems(data, shelf) {
++  if (!data || typeof data !== "object" || Array.isArray(data)) return [];
++  const out = [];
++  for (const k of Object.keys(data))
++    if (!ESSAY_FIELDS.includes(k)) out.push(`unknown field "${k}" (an essay file holds only ${ESSAY_FIELDS.join(", ")})`);
++  const str = (k) => (typeof data[k] === "string" ? data[k] : "");
++  out.push(...proseProblems("title", str("title"), true));
++  out.push(...proseProblems("excerpt", str("excerpt"), true));
++  if (str("body")) out.push(...proseProblems("body", str("body"), false), ...bodyProblems(str("body"), str("excerpt"), shelf));
++  return out;
++}
++
++function jsonFilesIn(dir) {
++  if (!existsSync(dir)) return [];
++  return readdirSync(dir)
++    .filter((f) => f.endsWith(".json"))
++    .sort()
++    .map((f) => join(dir, f));
++}
++
++/** The files a run checks: the essays folder, or the files and folders named. */
++export function essayFiles(args = []) {
++  if (!args.length) return jsonFilesIn(join(ROOT, OVERRIDES_DIR));
++  return args.flatMap((a) => {
++    const p = resolve(a);
++    return existsSync(p) && statSync(p).isDirectory() ? jsonFilesIn(p) : [p];
++  });
++}
++
++/**
++ * Check essay files against the shelf as the repository holds it. The files
++ * being checked go public together with the rewrites already in place, so a
++ * link from one to another counts as public. Returns { files, problems }.
++ */
++export function checkEssayFiles(files) {
++  const current = loadEssayShelf();
++  const shelfSlugs = new Set(current.data.essays.map((e) => e.slug));
++  const problems = [];
++  const docs = [];
++  for (const file of files) {
++    const name = basename(file);
++    const fileSlug = name.replace(/\.json$/, "");
++    let data;
++    try {
++      data = JSON.parse(readFileSync(file, "utf8"));
++    } catch (err) {
++      problems.push(`${name}: not readable JSON (${err.message})`);
++      continue;
++    }
++    const shape = overrideProblems(data, fileSlug, shelfSlugs);
++    problems.push(...shape);
++    docs.push({ name, fileSlug, data, shapeOk: shape.length === 0 });
++  }
++  const shelf = createShelf(current.data, [...current.overrides, ...docs.filter((d) => d.shapeOk).map((d) => d.fileSlug)]);
++  for (const d of docs) problems.push(...essayProblems(d.data, shelf).map((p) => `${d.name}: ${p}`));
++  return { files: files.length, problems };
++}
++
++if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
++  const { files, problems } = checkEssayFiles(essayFiles(process.argv.slice(2).filter((a) => !a.startsWith("-"))));
++  if (problems.length) {
++    console.error(`\nEssays: ${problems.length} problem(s)\n`);
++    for (const p of problems) console.error(`  - ${p}`);
++    console.error("\nCLAUDE.md (Forbidden Language, Punctuation mechanics) and client/public/essays/README.md say how each should read.\n");
++    process.exit(1);
++  }
++  console.log(`Essays: clean (${files} file${files === 1 ? "" : "s"}).`);
++}
+diff --git a/scripts/validate-grow-voice.mjs b/scripts/validate-grow-voice.mjs
+index 8010201..265a853 100644
+--- a/scripts/validate-grow-voice.mjs
++++ b/scripts/validate-grow-voice.mjs
+@@ -11,54 +11,57 @@
+  * a few ordinary senses are allowed (foster care, a literal journey in a
+  * verse reference's neighborhood is still flagged, so rephrase it).
+  *
+- *   node scripts/validate-grow-voice.mjs          CI gate
+- *   node scripts/validate-grow-voice.mjs --report print every hit, exit 0
++ * The rewritten essays (client/public/essays/*.json) are in scope too. They
++ * quote the ESV and named sources, not the BSB, so there every quotation is set
++ * aside (scripts/lib/essay-text.mjs), along with link targets; their own gate
++ * is validate-essays.mjs, which reads the same list.
++ *
++ *   node scripts/validate-grow-voice.mjs                 CI gate
++ *   node scripts/validate-grow-voice.mjs --report        print every hit, exit 0
++ *   node scripts/validate-grow-voice.mjs --essays <dir>  only the essay files in <dir> (the seeded-file test)
+  */
+-import { readFileSync } from "node:fs";
+-import { join } from "node:path";
++import { existsSync, readFileSync, readdirSync } from "node:fs";
++import { join, resolve } from "node:path";
+ import { ROOT, listFiles } from "./lib/site-routes.mjs";
+ import { normalize } from "./lib/bsb.mjs";
++import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
++import { readEssayText } from "./lib/essay-text.mjs";
+ 
+ const REPORT = process.argv.includes("--report");
++const essaysAt = process.argv.indexOf("--essays");
++const ESSAYS_ONLY = essaysAt > 0 ? resolve(process.argv[essaysAt + 1] ?? "") : null;
+ 
+-const FILES = [
+-  ...listFiles("client/public/wisdom/topics", [".json"]),
+-  ...listFiles("client/public/life/domains", [".json"]),
+-  ...listFiles("client/public/howtos/a", [".json"]),
+-  ...listFiles("client/public/studyguides", [".json"]),
+-  ...listFiles("client/public/plans", [".json"]),
+-  ...listFiles("client/public/pathways", [".json"]),
+-  ...listFiles("client/public/needs", [".json"]),
+-];
++const essayFiles = ESSAYS_ONLY
++  ? (existsSync(ESSAYS_ONLY) ? readdirSync(ESSAYS_ONLY) : []).filter((f) => f.endsWith(".json")).map((f) => join(ESSAYS_ONLY, f))
++  : listFiles("client/public/essays", [".json"]);
++const ESSAYS = new Set(essayFiles);
++const FILES = ESSAYS_ONLY
++  ? essayFiles
++  : [
++      ...listFiles("client/public/wisdom/topics", [".json"]),
++      ...listFiles("client/public/life/domains", [".json"]),
++      ...listFiles("client/public/howtos/a", [".json"]),
++      ...listFiles("client/public/studyguides", [".json"]),
++      ...listFiles("client/public/plans", [".json"]),
++      ...listFiles("client/public/pathways", [".json"]),
++      ...listFiles("client/public/needs", [".json"]),
++      ...essayFiles,
++    ];
+ 
+-const FORBIDDEN = [
+-  "delve", "delves", "delving", "leverage", "leverages", "leveraging", "unlock", "unlocks", "unlocking",
+-  "transformative", "navigate", "navigates", "navigating", "tapestry", "foster", "fosters", "fostering", "fostered",
+-  "unpack", "unpacks", "unpacking", "landscape", "landscapes", "nuanced", "multifaceted", "authentic", "authenticity",
+-  "holistic", "journey", "journeys", "in today's world", "now more than ever", "here's the thing",
+-  "i want to be real with you", "god's got this", "gospel-centered", "authentic community", "hold space",
+-  "your truth", "do the work", "your feelings are valid", "lean into", "leaning into", "showing up",
+-];
+-const forbiddenRe = new RegExp(`\\b(${FORBIDDEN.map((w) => w.replace(/'/g, "['’]")).join("|")})\\b`, "gi");
+-// Ordinary senses the list does not mean: foster care; Richard Foster (a
+-// name, capitalized); book titles and named concepts; the literal road.
+-const ALLOWED = [
+-  /\bfoster (care|parent|parents|parenting|child|children|home|homes|family|families|system|kids?)\b/gi,
+-  /\bFoster\b/g,
+-  /\bage of authenticity\b/gi,
+-  /\bThe Ethics of Authenticity\b/g,
+-  /\bUnpacking Forgiveness\b/g,
+-  /\bUnlocking the Stress Cycle\b/g,
+-  /\bjourney to Jerusalem\b/gi,
+-];
+ // Fields that hold Scripture text, search keywords, or other people's titles.
+ const EXEMPT_PATH = /(^|\.)(verses\[\d+\]\.text|passages\[\d+\]\.text|keywords(\[\d+\])?|source|cite|sources\[\d+\]\.[a-z]+|bibliography\[\d+\]\.title)$/;
+ 
+-const books = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8"));
+-let bible = "";
+-for (const b of books)
+-  for (let c = 1; c <= b.chapters; c++)
+-    bible += " " + JSON.parse(readFileSync(join(ROOT, "client/public/bible/ch", b.slug, `${c}.json`), "utf8")).verses.map((v) => normalize(v.t)).join(" ");
++// The whole BSB, normalized, read once and only when a non-essay file needs it.
++let bible = null;
++function bibleText() {
++  if (bible !== null) return bible;
++  const books = JSON.parse(readFileSync(join(ROOT, "client/public/bible/books.json"), "utf8"));
++  bible = "";
++  for (const b of books)
++    for (let c = 1; c <= b.chapters; c++)
++      bible += " " + JSON.parse(readFileSync(join(ROOT, "client/public/bible/ch", b.slug, `${c}.json`), "utf8")).verses.map((v) => normalize(v.t)).join(" ");
++  return bible;
++}
+ 
+ /** Every string value in a JSON document, with its path. */
+ function* strings(value, path = "") {
+@@ -76,13 +79,17 @@ const hits = [];
+ for (const rel of FILES) {
+   if (rel.endsWith("index.json") || rel.endsWith("plans-index.json")) continue;
+   let doc;
+-  try { doc = JSON.parse(readFileSync(join(ROOT, rel), "utf8")); } catch { continue; }
++  try { doc = JSON.parse(readFileSync(resolve(ROOT, rel), "utf8")); } catch { continue; }
+   for (const [path, text] of strings(doc)) {
+     if (/^(slug|href|url|id)$|\.(slug|href|url|id)$/.test(path)) continue;
+     if (EXEMPT_PATH.test(path)) continue;
+-    // Set aside verbatim Scripture in double quotes.
+-    let prose = text.replace(/[“"]([^”"]+)[”"]/g, (m, q) => (bible.includes(normalize(q)) && normalize(q).split(" ").length >= 3 ? " " : m));
+-    for (const re of ALLOWED) prose = prose.replace(re, " ");
++    // Set aside verbatim Scripture in double quotes; in an essay, every
++    // quotation and link target (the ESV and named sources are not ours to edit).
++    const prose = setAsideAllowed(
++      ESSAYS.has(rel)
++        ? readEssayText(text).prose
++        : text.replace(/[“"]([^”"]+)[”"]/g, (m, q) => (bibleText().includes(normalize(q)) && normalize(q).split(" ").length >= 3 ? " " : m))
++    );
+     for (const m of prose.matchAll(forbiddenRe)) hits.push({ rel, path, word: m[1], at: prose.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });
+     // A style note left in reader-facing text ("Not X. Y." is the name of a move, not a sentence).
+     if (!/reviewed\.notes$/.test(path)) for (const m of text.matchAll(/\bNot X\. Y\./g)) hits.push({ rel, path, word: "Not X. Y.", at: text.slice(Math.max(0, m.index - 40), m.index + 50).replace(/\s+/g, " ") });
+diff --git a/scripts/validate-no-emdash.mjs b/scripts/validate-no-emdash.mjs
+index 2170508..5760543 100644
+--- a/scripts/validate-no-emdash.mjs
++++ b/scripts/validate-no-emdash.mjs
+@@ -12,13 +12,25 @@
+  * regenerates from (scripts/articles -> the how-to store). Book/leadership/creed
+  * stores are their own source, so listing the store covers them.
+  *
++ * The rewritten essays (client/public/essays/*.json) are in scope with one
++ * difference: a quotation keeps its own punctuation (the ESV and named
++ * sources use the em-dash), so in an essay body only the prose outside
++ * quotations is counted, along with "word---word", which the page renders as
++ * an em-dash. Title and excerpt carry none at all. validate-essays.mjs is
++ * their full gate.
++ *
+  * Run: node scripts/validate-no-emdash.mjs   (exits non-zero on any em-dash)
++ *      node scripts/validate-no-emdash.mjs --essays <dir>   only the essay files in <dir> (the seeded-file test)
+  */
+ import fs from "node:fs";
+ import path from "node:path";
+ import { fileURLToPath } from "node:url";
++import { dashesIn, readEssayText } from "./lib/essay-text.mjs";
+ 
+ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
++const essaysAt = process.argv.indexOf("--essays");
++const ESSAYS_ONLY = essaysAt > 0 ? path.resolve(process.argv[essaysAt + 1] ?? "") : null;
++const ESSAYS_DIR = ESSAYS_ONLY ?? path.join(ROOT, "client/public/essays");
+ 
+ // Directories globbed recursively for *.json, plus explicit single files.
+ const DIRS = [
+@@ -40,11 +52,34 @@ function walk(relDir, out) {
+ }
+ 
+ const targets = [];
+-for (const d of DIRS) walk(d, targets);
+-for (const f of FILES) if (fs.existsSync(path.join(ROOT, f))) targets.push(f);
++if (!ESSAYS_ONLY) {
++  for (const d of DIRS) walk(d, targets);
++  for (const f of FILES) if (fs.existsSync(path.join(ROOT, f))) targets.push(f);
++}
++
++/** Em-dashes in an essay file: none in title or excerpt, none outside quotations in the body. */
++function essayEmdashes(text) {
++  let doc;
++  try {
++    doc = JSON.parse(text);
++  } catch {
++    return (text.match(/—/g) || []).length; // unreadable: count them all (validate-essays names the error)
++  }
++  const field = (k) => (typeof doc?.[k] === "string" ? doc[k] : "");
++  return (
++    dashesIn(field("title")).length +
++    dashesIn(field("excerpt")).length +
++    dashesIn(readEssayText(field("body")).prose).length
++  );
++}
++
++const essayTargets = fs.existsSync(ESSAYS_DIR)
++  ? fs.readdirSync(ESSAYS_DIR).filter((f) => f.endsWith(".json")).sort().map((f) => path.join(ESSAYS_DIR, f))
++  : [];
+ 
+ let offenders = 0;
+ let total = 0;
++let essayOffenders = 0;
+ for (const rel of targets.sort()) {
+   const text = fs.readFileSync(path.join(ROOT, rel), "utf8");
+   const n = (text.match(/—/g) || []).length;
+@@ -54,12 +89,23 @@ for (const rel of targets.sort()) {
+     console.error(`  FAIL ${rel}: ${n} em-dash${n > 1 ? "es" : ""}`);
+   }
+ }
++for (const abs of essayTargets) {
++  const n = essayEmdashes(fs.readFileSync(abs, "utf8"));
++  if (n) {
++    offenders++;
++    essayOffenders++;
++    total += n;
++    const shown = abs.startsWith(ROOT + path.sep) ? path.relative(ROOT, abs) : abs;
++    console.error(`  FAIL ${shown}: ${n} em-dash${n > 1 ? "es" : ""} outside quotations`);
++  }
++}
+ 
+ if (offenders) {
+   console.error(
+     `\nvalidate-no-emdash: ${total} em-dash(es) across ${offenders} file(s).\n` +
+-      `Run: node scripts/purge-emdashes.mjs --write  (then rebuild the affected index).`
++      (offenders > essayOffenders ? `Run: node scripts/purge-emdashes.mjs --write  (then rebuild the affected index).\n` : "") +
++      (essayOffenders ? `In an essay, rewrite each with a comma, colon, period, or parentheses (node scripts/validate-essays.mjs lists them by line).` : "")
+   );
+   process.exit(1);
+ }
+-console.log(`validate-no-emdash: clean (${targets.length} files, 0 em-dashes).`);
++console.log(`validate-no-emdash: clean (${targets.length + essayTargets.length} files, 0 em-dashes).`);
+diff --git a/server/essay-gate.test.ts b/server/essay-gate.test.ts
+new file mode 100644
+index 0000000..e0cf7f1
+--- /dev/null
++++ b/server/essay-gate.test.ts
+@@ -0,0 +1,211 @@
++/**
++ * The essay gate (scripts/validate-essays.mjs) and the essay scope of
++ * validate-no-emdash.mjs and validate-grow-voice.mjs: they pass on the essays
++ * folder as committed, pass a seeded clean file, and fail a seeded bad one
++ * with the reason a writer can act on.
++ */
++import { describe, it, expect, beforeAll, afterAll } from "vitest";
++import { spawnSync } from "node:child_process";
++import fs from "node:fs";
++import os from "node:os";
++import path from "node:path";
++import shelfJson from "../client/src/lib/shelf.json";
++import vercelJson from "../vercel.json";
++import {
++  dashesIn,
++  hasReferenceBeside,
++  hasScriptureRef,
++  maskQuotations,
++  readEssayText,
++} from "../scripts/lib/essay-text.mjs";
++import { checkEssayFiles } from "../scripts/validate-essays.mjs";
++
++const ROOT = path.resolve(import.meta.dirname, "..");
++const run = (script: string, ...args: string[]) =>
++  spawnSync(process.execPath, [path.join(ROOT, "scripts", script), ...args], { cwd: ROOT, encoding: "utf8" });
++
++const LIVE = shelfJson.essays.find((e) => e.status === "live")!.slug;
++const PENDING = shelfJson.essays.find((e) => e.status === "pending")!.slug;
++const REDIRECT = vercelJson.redirects.find((r) => /^\/[a-z-]+$/.test(r.source))!.source;
++
++/** Plain filler so a seeded body clears the 600-character floor. */
++const FILLER = Array(6)
++  .fill("This paragraph is test text for the essay gate, written plainly so that only the seeded faults are found.")
++  .join(" ");
++
++const GOOD_BODY = `## Where It Starts
++
++${FILLER}
++
++The verse most often quoted is Psalm 33:12: "Blessed is the nation whose God is the LORD, the people whom he has chosen as his heritage!" The second line defines the first.
++
++Paul asks Philemon to take Onesimus back "no longer as a bondservant but more than a bondservant, as a beloved brother—especially to me" (Philemon 16). A quotation keeps its own punctuation.
++
++> Keep your conduct among the Gentiles honorable (1 Peter 2:12).
++
++Read [a live essay](/writing/${LIVE}), the [Study Bible](/study/bible), or [Find Help](/help).
++
++*"For here we have no lasting city, but we seek the city that is to come."* (Hebrews 13:14)
++`;
++
++const BAD_BODY = `# A Second Title
++
++${FILLER}
++
++We have to navigate this, and the verdict is not close. A pause — here, and word---word, and word--word.
++
++Look at this! And a quotation, "Hooray!" with no reference beside it.
++
++He said "this and never closed it.
++
++See [a pending essay](/writing/no-such-essay-for-the-gate), [an old page](${REDIRECT}), and [a relative one](writing/${LIVE}).
++
++*"For here we have no lasting city."*
++— Hebrews 13:14
++`;
++
++const essay = (body: string, extra: Record<string, unknown> = {}) => ({
++  slug: PENDING,
++  title: "A Seeded Essay for the Gate",
++  excerpt: "One plain sentence about what this seeded essay is for.",
++  body,
++  updated: "2026-10-26",
++  ...extra,
++});
++
++let tmp = "";
++const dirs = { good: "", bad: "", noRef: "" };
++
++beforeAll(() => {
++  tmp = fs.mkdtempSync(path.join(os.tmpdir(), "essay-gate-"));
++  const write = (name: keyof typeof dirs, data: object) => {
++    dirs[name] = path.join(tmp, name);
++    fs.mkdirSync(dirs[name]);
++    fs.writeFileSync(path.join(dirs[name], `${PENDING}.json`), JSON.stringify(data, null, 2));
++  };
++  write("good", essay(GOOD_BODY));
++  write("bad", essay(BAD_BODY, { excerpt: "A line — with a dash.", exerpt: "a typo" }));
++  write("noRef", essay(`## Plain\n\n${FILLER}\n\n${FILLER}\n`));
++});
++
++afterAll(() => {
++  if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
++});
++
++describe("essay-text helpers", () => {
++  it("separates quotations, curly or straight, from the prose around them", () => {
++    const t = 'He wrote, “a framework—a collection” and then "more—here" — and on.';
++    const { prose, quotes } = maskQuotations(t);
++    expect(quotes.map((q) => q.text)).toEqual(["a framework—a collection", "more—here"]);
++    expect(prose.length).toBe(t.length);
++    expect(dashesIn(prose).map((d) => d.kind)).toEqual(["em-dash"]);
++  });
++
++  it("treats a block quote as a quotation and reports an unpaired mark", () => {
++    const { quotes, unbalanced } = maskQuotations('> Someone else\'s words — kept.\n\nA "stray mark here.');
++    expect(quotes[0].block).toBe(true);
++    expect(unbalanced).toHaveLength(1);
++  });
++
++  it("finds a Scripture reference beside a quotation, before or after", () => {
++    for (const t of [
++      'Psalm 33:12: "Blessed is the nation!"',
++      '"Would that you had known!" (Luke 19:41–42).',
++      '*"Honor everyone."* (1 Peter 2:17)',
++    ]) {
++      const { quotes } = readEssayText(t);
++      expect(hasReferenceBeside(t, quotes[0]), t).toBe(true);
++    }
++    const t = 'He shouted "Hooray!" and left.';
++    expect(hasReferenceBeside(t, readEssayText(t).quotes[0])).toBe(false);
++  });
++
++  it("recognizes references by shape, not dates or names", () => {
++    expect(hasScriptureRef("as Hebrews 11:13, 16 says")).toBe(true);
++    expect(hasScriptureRef("Song of Songs 2:1")).toBe(true);
++    expect(hasScriptureRef("Psalm 23")).toBe(true);
++    expect(hasScriptureRef("ratified December 15, 1791")).toBe(false);
++  });
++
++  it("counts the dashes typed in an em-dash's place, never a range", () => {
++    const kinds = dashesIn("a---b, c--d, e – f, 1914–1918, Romans 9:2–3", { standIns: true }).map((d) => d.kind);
++    expect(kinds).toHaveLength(3);
++  });
++
++  it("never reads a link target as prose", () => {
++    expect(readEssayText("See [this](/writing/the-journey-home).").prose).not.toContain("journey");
++  });
++});
++
++describe("validate-essays", () => {
++  it("passes the essays folder as committed", () => {
++    const r = run("validate-essays.mjs");
++    expect(r.status, r.stderr).toBe(0);
++  });
++
++  it("passes a seeded clean essay", () => {
++    expect(checkEssayFiles([path.join(dirs.good, `${PENDING}.json`)]).problems).toEqual([]);
++    const r = run("validate-essays.mjs", dirs.good);
++    expect(r.status, r.stderr).toBe(0);
++  });
++
++  it("fails a seeded bad essay, naming each fault", () => {
++    const r = run("validate-essays.mjs", dirs.bad);
++    expect(r.status).toBe(1);
++    for (const reason of [
++      'unknown field "exerpt"',
++      "excerpt: em-dash",
++      "an H1 heading",
++      'Forbidden Language "navigate"',
++      'rulebook leakage "verdict"',
++      "body line 5: em-dash",
++      '"---" (the page renders it as an em-dash)',
++      "double hyphen standing in for an em-dash",
++      "exclamation point outside quoted Scripture",
++      "exclamation point in a quotation with no Scripture reference beside it",
++      "a quotation mark with no partner in its paragraph",
++      "/writing/no-such-essay-for-the-gate is not a public essay",
++      `${REDIRECT} redirects to`,
++      'link "writing/',
++      "a Closing Texts line reads",
++    ])
++      expect(r.stderr).toContain(reason);
++  });
++
++  it("reads a line that goes on in prose after an italic quotation as prose, not a Closing Text", () => {
++    const file = path.join(dirs.good, `${PENDING}.json`);
++    const data = JSON.parse(fs.readFileSync(file, "utf8"));
++    const line = '*"Grace,"* he said, and then *"peace."*';
++    const dir = fs.mkdtempSync(path.join(tmp, "prose-"));
++    fs.writeFileSync(path.join(dir, `${PENDING}.json`), JSON.stringify({ ...data, body: `${data.body}\n${line}\n` }));
++    expect(checkEssayFiles([path.join(dir, `${PENDING}.json`)]).problems).toEqual([]);
++  });
++
++  it("fails an essay that cites no Scripture by reference", () => {
++    const { problems } = checkEssayFiles([path.join(dirs.noRef, `${PENDING}.json`)]);
++    expect(problems.join("\n")).toContain("cites no Scripture by reference");
++  });
++});
++
++describe("the em-dash and Forbidden Language ratchets cover the essays", () => {
++  it("pass the essays folder as committed", () => {
++    expect(run("validate-no-emdash.mjs").status).toBe(0);
++    expect(run("validate-grow-voice.mjs", "--essays", path.join(ROOT, "client/public/essays")).status).toBe(0);
++  });
++
++  it("pass a seeded clean essay, whose quotations keep their own em-dashes", () => {
++    const e = run("validate-no-emdash.mjs", "--essays", dirs.good);
++    expect(e.status, e.stderr).toBe(0);
++    const v = run("validate-grow-voice.mjs", "--essays", dirs.good);
++    expect(v.status, v.stderr).toBe(0);
++  });
++
++  it("fail a seeded bad essay", () => {
++    const e = run("validate-no-emdash.mjs", "--essays", dirs.bad);
++    expect(e.status).toBe(1);
++    expect(e.stderr).toContain("outside quotations");
++    const v = run("validate-grow-voice.mjs", "--essays", dirs.bad);
++    expect(v.status).toBe(1);
++    expect(v.stderr).toContain('"navigate"');
++  });
++});
+-- 
+2.43.0
+
