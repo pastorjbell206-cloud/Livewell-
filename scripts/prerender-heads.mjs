@@ -75,18 +75,6 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
-    path: "/marriage",
-    title: "Marriage — Essays for Couples",
-    description: "Marriage essays for couples in ministry, midlife, and beyond. Honest, theologically grounded, never tip-shaped.",
-    type: "website",
-  },
-  {
-    path: "/parenting",
-    title: "Parenting — From a Father of Five",
-    description: "Essays on parenting from a pastor and father of five sons. Formation over performance, presence over advice.",
-    type: "website",
-  },
-  {
     path: "/tools",
     title: "Tools for Pastors and Readers",
     description: "Practical tools for serious readers: assessments, study guides, the wisdom library, verse finder, prayer generator, and more.",

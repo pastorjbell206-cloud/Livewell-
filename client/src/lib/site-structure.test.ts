@@ -93,6 +93,17 @@ const FOLDED: Record<string, string> = {
   "/substack": "/subscribe",
   "/work-with-james": "/speaking",
   "/connect": "/about",
+  // The no-decision cleanup (U06): the pre-elevation family and marriage hubs,
+  // and the six crisis landings that duplicated a Find Help page.
+  "/for-families": "/family",
+  "/parenting": "/family",
+  "/marriage": "/help/marriage",
+  "/grief": "/help/grief",
+  "/faith-crisis": "/help/doubt",
+  "/marriage-crisis": "/help/marriage",
+  "/parenting-help": "/help/parenting",
+  "/deconstruction": "/help/deconstructing",
+  "/church-hurt": "/help/church-hurt",
 };
 
 /** Kept routes: James asked for these to stay, or other kept pages depend on them. */
