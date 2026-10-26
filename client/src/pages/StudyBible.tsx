@@ -60,6 +60,7 @@ import {
 import { Band, Credits, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
 import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
 import { VerseEntry } from "@/pages/study-bible/VerseNotes";
+import { GoToPassage } from "@/pages/study-bible/GoToPassage";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -162,6 +163,9 @@ function BookIndex({ books }: { books: BibleBook[] }) {
           <p style={{ fontFamily: "var(--B)", fontSize: "1.12rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", margin: 0 }}>
             Whether you have never opened it or have read it for years. Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and where it sits in the one story that runs from Genesis to Revelation. Underneath every English word are the Hebrew and Greek it translates.
           </p>
+          <div style={{ marginTop: "var(--s-4)" }}>
+            <GoToPassage />
+          </div>
           {next && (
             <p style={{ margin: "var(--s-4) 0 0" }}>
               <Link href={`${chapterHref(next.slug, next.chapter)}?path=story`} style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "46px", padding: "0 20px", background: "var(--ink)", color: "var(--bone)", borderRadius: "999px", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
@@ -484,6 +488,14 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
 
   const panel = sel && data ? <StudyPanel books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} data={data} verseNotes={verseNotes ?? null} onClose={() => setSel(null)} /> : null;
   const onVerse = (v: BibleVerse) => setSel({ kind: "verse", verse: v });
+  // "Go to" a verse of this same chapter: select it and bring it on screen.
+  const goToVerse = (n: number) => {
+    const v = data?.verses.find((x) => x.v === n);
+    if (!v) return false;
+    onVerse(v);
+    requestAnimationFrame(() => document.getElementById(`v${n}`)?.scrollIntoView({ block: "center" }));
+    return true;
+  };
   const onWord = (v: BibleVerse, i: number) => setSel({ kind: "word", verse: v, index: i });
 
   return (
@@ -517,6 +529,9 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
               {next ? <NavBtn href={chapterHref(next.slug, next.ch)} label="Next chapter"><ChevronRight size={18} /></NavBtn> : null}
             </nav>
           </div>
+        </div>
+        <div style={{ ...wrap, marginTop: "14px" }}>
+          <GoToPassage here={chapterHref(book.slug, chapter)} onVerse={goToVerse} />
         </div>
       </section>
 
