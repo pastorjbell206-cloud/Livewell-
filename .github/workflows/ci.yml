@@ -36,6 +36,7 @@ jobs:
           node scripts/validate-theology.mjs
           node scripts/validate-politics.mjs
           node scripts/validate-no-emdash.mjs
+          node scripts/validate-essays.mjs
           node scripts/validate-content-integrity.mjs
           node scripts/validate-skeptic-track.mjs
           node scripts/validate-answers.mjs
