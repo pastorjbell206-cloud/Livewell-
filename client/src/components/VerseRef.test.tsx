@@ -153,8 +153,16 @@ describe("VerseRef, sheet mode", () => {
     renderAt(<VerseRef reference="Genesis 1-4" />);
     await user.click(screen.getByRole("link", { name: "Genesis 1-4" }));
     const dialog = await screen.findByRole("dialog", { name: "Genesis 1–4" });
-    expect(await within(dialog).findByText(/runs from chapter 1 to chapter 4\. Read it whole in the Study Bible\./)).toBeInTheDocument();
+    expect(await within(dialog).findByText("This passage covers 4 chapters. Read it whole in the Study Bible.")).toBeInTheDocument();
     expect(within(dialog).getByRole("link", { name: "Open in the Study Bible" })).toHaveAttribute("href", "/study/bible/genesis/1");
+    expect(asked).toEqual([]);
+  });
+
+  it("counts the chapters of a list, not the distance between them", async () => {
+    const user = userEvent.setup();
+    renderAt(<VerseRef reference="Psalms 1; 23; 91; 139" />);
+    await user.click(screen.getByRole("link", { name: "Psalms 1; 23; 91; 139" }));
+    expect(await screen.findByText("This passage covers 4 chapters. Read it whole in the Study Bible.")).toBeInTheDocument();
     expect(asked).toEqual([]);
   });
 
@@ -199,8 +207,18 @@ describe("Markdown verseRefs", () => {
     expect(screen.getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/somewhere"]);
   });
 
-  it("turns references in prose into verse sheets, leaving links and headings alone", () => {
+  it("reads as plain prose until the plugin arrives, then makes the references live", async () => {
     const { container } = renderAt(<Markdown verseRefs="sheet">{md}</Markdown>);
+    // The plugin is its own chunk: the first paint is the text, whole, with no live references yet.
+    expect(container).toHaveTextContent("Read Romans 8:28 and John 3:16, then Isaiah 40:31.");
+    expect(container.querySelector("a.st-verseref")).toBeNull();
+    await waitFor(() => expect(container.querySelectorAll("a.st-verseref")).toHaveLength(2));
+    expect(container).toHaveTextContent("Read Romans 8:28 and John 3:16, then Isaiah 40:31.");
+  });
+
+  it("turns references in prose into verse sheets, leaving links and headings alone", async () => {
+    const { container } = renderAt(<Markdown verseRefs="sheet">{md}</Markdown>);
+    await waitFor(() => expect(container.querySelector("a.st-verseref")).not.toBeNull());
     const refs = Array.from(container.querySelectorAll("a.st-verseref"));
     expect(refs.map((a) => [a.textContent, a.getAttribute("href"), a.getAttribute("aria-haspopup")])).toEqual([
       ["Romans 8:28", "/study/bible/romans/8#v28", "dialog"],
@@ -211,8 +229,9 @@ describe("Markdown verseRefs", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Psalm 23" }).querySelector("a")).toBeNull();
   });
 
-  it("links straight to the Study Bible in link mode", () => {
+  it("links straight to the Study Bible in link mode", async () => {
     const { container } = renderAt(<Markdown verseRefs="link">{md}</Markdown>);
+    await waitFor(() => expect(container.querySelector("a.st-verseref")).not.toBeNull());
     const refs = Array.from(container.querySelectorAll("a.st-verseref"));
     expect(refs.map((a) => a.getAttribute("aria-haspopup"))).toEqual([null, null]);
     expect(refs.map((a) => a.getAttribute("href"))).toEqual(["/study/bible/romans/8#v28", "/study/bible/isaiah/40#v31"]);

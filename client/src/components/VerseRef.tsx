@@ -23,7 +23,7 @@ import ScriptureNote from "@/components/ScriptureNote";
 import { LoadFailed } from "@/components/LoadFailed";
 import { formatRef, parseScriptureRef, refHref, type ScriptureRef } from "@/lib/scripture-ref";
 import { splitScriptureRefs } from "@/lib/scripture-find";
-import { loadPassage, type PassageVerse } from "@/lib/verse-text";
+import { chaptersOf, loadPassage, type PassageVerse } from "@/lib/verse-text";
 
 export type VerseRefMode = "sheet" | "link";
 
@@ -136,11 +136,10 @@ function Passage({ parsed }: { parsed: ScriptureRef }) {
   if (!result || result.nonce !== nonce) return <p className="st-passage__status" role="status">Loading the passage…</p>;
   const { verses } = result;
   if (verses === null) {
-    const first = parsed.parts[0].c1;
-    const last = parsed.parts[parsed.parts.length - 1].c2;
+    // Counted, not first-to-last: "Psalms 1; 23; 91; 139" is four chapters, not 139.
     return (
       <p className="st-passage__status">
-        This passage runs from chapter {first} to chapter {last}. Read it whole in the Study Bible.
+        This passage covers {chaptersOf(parsed).length} chapters. Read it whole in the Study Bible.
       </p>
     );
   }
