@@ -1,7 +1,7 @@
 From 416aacc79fb1e86911a44ef13c3bbe8e30d2c3a0 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 17:43:21 +0000
-Subject: [PATCH 2/3] History sources: the survey of every planned source,
+Subject: [PATCH 2/4] History sources: the survey of every planned source,
  Parts 0 to VIII (U07)
 
 136 planned sources, each stored, reachable (with where), reachable only in old spelling, not reachable, or in copyright. Reached through the Writings-Database, Perseus, Creeds.json, the Text Creation Partnership, and the Project Gutenberg mirror on GitHub; every other host was refused.

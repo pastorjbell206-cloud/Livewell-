@@ -1,7 +1,7 @@
 From a3973144f4a30f884a76e27a8ed0c8da79b5027d Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 17:44:01 +0000
-Subject: [PATCH 3/3] History sources: leave Scripture blocks to the quotation
+Subject: [PATCH 3/4] History sources: leave Scripture blocks to the quotation
  gate; normalize each text once (U07)
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
