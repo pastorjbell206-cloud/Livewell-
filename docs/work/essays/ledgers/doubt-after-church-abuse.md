@@ -13,7 +13,7 @@ Essay: docs/work/essays/doubt-after-church-abuse.md. Written 2026-10-26 as a rew
 
 ## Biography and stance
 
-- "I will write that way" / "I hold the same office these men held, and I am not immune to it." Kept: James is a pastor (docs/work/NOTES.md confirmed biography). No title, years, book count or scene stated.
+- "I will write that way" / "Anyone who leads a church knows the pull ... I lead one, and I am not immune to it." Kept: James is a pastor of a church (docs/work/NOTES.md confirmed biography). VOICE PASS 2026-10-27: was "I hold the same office these men held"; changed because the men named include a Catholic priest and an apologist who was not a pastor, so "the same office" was imprecise. No title, years, book count or scene stated.
 - "Baptist churches, mine included, prize that independence." Kept: NOTES.md allows Baptist self-identification. The sentence speaks of Baptist churches generally and does not imply Southern Baptist membership.
 - No anecdote, scene, congregant or biography beyond NOTES.md appears in the essay. Checked by reading the full text on 2026-10-27.
 
@@ -61,6 +61,7 @@ Essay: docs/work/essays/doubt-after-church-abuse.md. Written 2026-10-26 as a rew
 - Phrase "the LORD's anointed" (1 Samuel 24:6). ESV copy. Matched.
 - Quotations: Saul "sought to pin David to the wall with the spear"; David "fled and escaped that night" (1 Samuel 19:10). ESV copy. Both matched.
 - David stayed out of Saul's reach for the rest of Saul's life. ESV copy, 1 Samuel 27:4 ("he no longer sought him"); the rest is a summary of chapters 19 to 31. Supported.
+- VOICE PASS 2026-10-27: "you did what Israel's anointed king did" became "you did what David did." David had been anointed (1 Samuel 16:13) but was not yet king while he fled from Saul, so "anointed king" blurred the chronology.
 - David told Saul to his face that he had done him no wrong (1 Samuel 24:9–15). ESV copy, 24:8 (David went out and called after Saul; Saul looked behind him) and 24:11 ("I have not sinned against you"). Supported.
 - Quotation: "You know that those who are considered rulers of the Gentiles lord it over them, and their great ones exercise authority over them. But it shall not be so among you" (Mark 10:42–43). ESV copy. Matched.
 - Quotation: "not domineering over those in your charge, but being examples to the flock" (1 Peter 5:3). ESV copy. Matched.
@@ -106,7 +107,7 @@ Essay: docs/work/essays/doubt-after-church-abuse.md. Written 2026-10-26 as a rew
 - Paraphrase, no quotation marks: she told him she forgave him and that, if he ever faced what he had done, the gospel offered him a grace he needed far more than her forgiveness. Not checked this session. Kept (from memory of her statement, which spoke of God's forgiveness as what he needed far more than hers).
 - She asked the judge for the maximum sentence. Not checked this session. Kept (from memory she asked for the maximum under the plea agreement).
 
-## If you are carrying this now
+## If you were abused (heading was "If You Are Carrying This Now" before the 2026-10-27 voice pass)
 
 - Paraphrase: Herman describes recovery as beginning with safety, moving through remembering and mourning, and coming to reconnection with ordinary life and other people; it cannot happen in isolation. Not checked this session. Kept (from memory of the three stages in *Trauma and Recovery*).
 - Several psalms are headed as David's prayers from the years he fled from Saul. ESV copy headings: Psalm 52 (Doeg told Saul), 54 (the Ziphites told Saul), 56 (seized in Gath), 57 (fled from Saul, in the cave), 59 (Saul sent men to watch his house), 142 (in the cave). Verified.
@@ -135,6 +136,7 @@ Essay: docs/work/essays/doubt-after-church-abuse.md. Written 2026-10-26 as a rew
 - Ran scripts/validate-essays.mjs on 2026-10-27 against a scratch JSON copy of the verified text (scratchpad/dace/v/doubt-after-church-abuse.json). Forbidden language, rulebook words, dashes, exclamation points, Scripture references and Closing Texts format passed. It reported two problems, the same as on 2026-10-26: /writing/excavation-not-demolition and /writing/why-does-god-feel-far-away are "not a public essay (on the shelf with no rewrite yet)". They pass once those rewrites ship.
 - /writing/the-bible-assumes-you-will-be-wrong: "live" in docs/work/essays/link-targets.json. /help: allowed by BRIEF.md.
 - No em-dash (U+2014) in the file; the only exclamation points are inside quoted Scripture (Psalm 105:15, Mark 14:65). Checked with grep on 2026-10-27.
+- VOICE PASS 2026-10-27 (final reader): prose edited for rhythm and AI tells only; no fact, quotation, number, date, name or link added or removed. A script compared the 35 quoted strings, 33 Scripture references and 4 links with the verified text (git HEAD eae93470): identical. Headings changed to plain descriptions ("Why Abuse by a Leader Becomes Doubt About God", "If You Were Abused", "Ezekiel 34 and the Good Shepherd"). scripts/validate-essays.mjs rerun on a scratch JSON copy (scratchpad/dace2/v): the same two problems only, /writing/excavation-not-demolition and /writing/why-does-god-feel-far-away not yet public; both rewrites exist in docs/work/essays/ and pass once they ship. The arguments changed in wording only: "Most of the failures in these reports were not committed by abusers" became "Much of the failure those reports exposed belonged to bystanders rather than abusers" (softened from "most", which no source counted); Denhollander paragraph ends "and neither did Paul" (pointing back to Romans 12:19 and 13:4) instead of "the New Testament sees none either".
 
 ## Writer's notes kept from 2026-10-26
 
