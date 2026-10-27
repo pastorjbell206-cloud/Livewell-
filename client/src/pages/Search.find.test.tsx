@@ -42,7 +42,8 @@ afterEach(() => {
 describe("Find on /search", () => {
   it("opens a verse in the Study Bible before anything else", async () => {
     searchFor("jn 3 16");
-    const link = await screen.findByRole("link", { name: /John 3:16/ });
+    // The reference parser is a lazy import; under a full parallel run it can take past the 1s default.
+    const link = await screen.findByRole("link", { name: /John 3:16/ }, { timeout: 5000 });
     expect(link).toHaveAttribute("href", "/study/bible/john/3#v16");
     expect(screen.getByText("In the Study Bible")).toBeInTheDocument();
     // A passage is a result: the page does not also say it found nothing.
