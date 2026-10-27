@@ -16,7 +16,7 @@ Most of that is true, and the church doesn't help itself by pretending otherwise
 
 Before the Civil War, Southern pulpits produced a whole literature defending slavery from Scripture. Some of the best known of it came from a Virginia Baptist minister named Thornton Stringfellow, who built his case on Abraham's household, on Leviticus 25, and on Paul. The historian Mark Noll makes an uncomfortable point in *The Civil War as a Theological Crisis*. If you read the Bible the way most American Protestants had been taught to read it, verse by verse and at face value, the defenders of slavery often had the easier argument. The abolitionists had to appeal to the spirit and direction of Scripture, and to a great many devout people that sounded like an evasion.
 
-I pastor a Baptist church, and Baptists don't get to tell this story from a safe distance. A hundred and fifty years after Augusta, in 1995, the Southern Baptist Convention adopted a resolution acknowledging the part slavery had played in its founding and repenting of the racism it had condoned. Whatever answer a Christian gives to this question has to be given by someone who knows the skeptic is describing his own family.
+I pastor a Baptist church, and Baptists don't get to tell this story from a safe distance. A hundred and fifty years after Augusta, in 1995, the Southern Baptist Convention, by then the largest Baptist body in the country, adopted a resolution acknowledging the part slavery had played in its founding and repenting of the racism it had condoned. Whatever answer a Christian gives to this question has to be given by someone who knows the skeptic is describing his own family.
 
 ## The Usual Answer
 
