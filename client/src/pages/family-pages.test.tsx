@@ -72,7 +72,7 @@ describe("/family/devotions", () => {
     stubFamily({ online: true });
     renderWithProviders(<FamilyDevotions />);
     await waitFor(() => expect(screen.getByText(`1 of ${weeklyCount} · Who God Says You Are`)).toBeTruthy());
-    expect(screen.getByRole("button", { name: `Weekly · ${weeklyCount}` })).toBeTruthy();
+    expect(screen.getByRole("button", { name: `Foundations · ${weeklyCount}` })).toBeTruthy();
     expect(screen.queryByText(/^Week \d+/)).toBeNull();
   });
 
@@ -86,7 +86,7 @@ describe("/family/devotions", () => {
     // A list of references, so no verse text and no translation note.
     expect(screen.queryByText(/Scripture quoted from/)).toBeNull();
     // No accordion: the list holds links, not buttons that open in place.
-    expect(screen.getByRole("list", { name: "Weekly devotions" }).querySelectorAll("button")).toHaveLength(0);
+    expect(screen.getByRole("list", { name: "Hard days and big feelings" }).querySelectorAll("button")).toHaveLength(0);
 
     fireEvent.click(screen.getByRole("button", { name: /^Advent · \d+$/ }));
     await waitFor(() => expect(window.location.search).toBe("?tab=advent"));

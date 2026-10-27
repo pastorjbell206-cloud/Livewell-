@@ -24,8 +24,14 @@
  *     devotion titles are unique; catechism numbers run 1 to N and catechism
  *     questions are unique, except the repeats already flagged for U40 below.
  *   - Bands are present where claimed: a devotion whose questions are split by
- *     age carries both the younger and the older list; every catechism answer
+ *     age carries both the younger and the older list, three questions in
+ *     each (MASTER-PLAN 5.2), and never the same question twice, so an older
+ *     band cannot be faked by copying the younger one; every catechism answer
  *     has its child's answer beside it.
+ *   - The library's theme groups (U21): every Foundations devotion names one
+ *     of the groups in scripts/lib/family-index.mjs; a line "for the
+ *     grown-ups" is one short sentence and links a page that exists.
+ *   - No Forbidden Language (CLAUDE.md) in the family files' own prose.
  *   - Counts match copy: each reading plan's "N days" matches its days, and
  *     every page, script, or text that says how many catechism questions (in
  *     copy that points at the family catechism) or weekly devotions there are
@@ -51,6 +57,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { passage, quotesPassage } from "./lib/bsb.mjs";
+import { GROUPS, grownupsTarget } from "./lib/family-index.mjs";
+import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -119,6 +127,10 @@ const DEVOTION_FIELDS = ["id", "title", "theme", "passage", "passageText", "bigI
 const CATECHISM_FIELDS = ["part", "question", "answer", "kidsAnswer", "scripture", "scriptureText", "commentary"];
 const SEASONAL_FIELDS = ["label", "title", "passage", "passageText", "reflection", "question", "prayer"];
 const BANDS = ["together", "younger", "older"];
+/** Each age band carries this many questions (MASTER-PLAN 5.2). */
+export const QUESTIONS_PER_BAND = 3;
+/** A line "for the grown-ups" is one short sentence. */
+const GROWNUPS_MAX = 160;
 
 const TENS = { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90 };
 const ONES = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9 };
@@ -210,6 +222,7 @@ export function checkFamily({
   frozenFile = path.join(root, FROZEN_IDS),
   redirectsFile = path.join(root, "vercel.json"),
   yearMapFile = path.join(root, YEAR_MAP),
+  needsDir = path.join(root, "client/public/needs"),
   pages = PAGES.map(([p, kinds]) => [p, kinds, path.join(root, p)]),
   copy = defaultCopy(root),
 } = {}) {
@@ -219,7 +232,7 @@ export function checkFamily({
   const stem = (n) => n.replace(/\.json$/, "");
   const files = fs.readdirSync(publicDir).filter((n) => /^family-.*\.json$/.test(n)).sort((a, b) => (stem(a) < stem(b) ? -1 : 1));
   const devotionIds = [];
-  const counts = { files: files.length, devotions: 0, foundations: 0, passages: 0, catechism: 0, seasonalDays: 0, plans: 0 };
+  const counts = { files: files.length, devotions: 0, foundations: 0, banded: 0, passages: 0, catechism: 0, seasonalDays: 0, plans: 0 };
   const titles = new Map();
   const deferred = [];
 
@@ -240,6 +253,7 @@ export function checkFamily({
       const prose = outsideQuotations(text);
       if (/—/.test(prose)) errors.push(`${label}${at}: em-dash outside a quotation (the em-dash rule; recast the sentence)`);
       if (/--/.test(prose)) errors.push(`${label}${at}: "--" standing in for a dash (recast the sentence)`);
+      for (const m of setAsideAllowed(prose).matchAll(forbiddenRe)) errors.push(`${label}${at}: "${m[0]}" is on the Forbidden Language list (CLAUDE.md)`);
     }
 
     if (kind === "devotions") {
@@ -261,10 +275,37 @@ export function checkFamily({
           if (!isTextList(q)) errors.push(`${where}: questions must be a list of questions`);
         } else if (q && typeof q === "object") {
           for (const band of Object.keys(q)) if (!BANDS.includes(band)) errors.push(`${where}: questions.${band} is not a band (${BANDS.join(", ")})`);
-          for (const band of ["younger", "older"]) if (!isTextList(q[band])) errors.push(`${where}: questions are split by age, so questions.${band} needs its questions`);
+          for (const band of ["younger", "older"]) {
+            if (!isTextList(q[band])) errors.push(`${where}: questions are split by age, so questions.${band} needs its questions`);
+            else if (q[band].length !== QUESTIONS_PER_BAND) errors.push(`${where}: questions.${band} has ${q[band].length} questions; each age band carries ${QUESTIONS_PER_BAND}`);
+          }
           if (q.together !== undefined && !isTextList(q.together)) errors.push(`${where}: questions.together must be a list of questions`);
+          if (isTextList(q.younger) && isTextList(q.older)) counts.banded++;
+          // One question asked twice (most often the older band copied from
+          // the younger) is a band in name only.
+          const asked = new Map();
+          for (const band of BANDS) {
+            for (const text of Array.isArray(q[band]) ? q[band].filter(isText) : []) {
+              const key = normalizeQuestion(text);
+              if (asked.has(key)) errors.push(`${where}: questions.${band} repeats a question already in questions.${asked.get(key)} ("${text}")`);
+              else asked.set(key, band);
+            }
+          }
         } else {
           errors.push(`${where}: needs questions`);
+        }
+        // The library's theme groups, and the line for the grown-ups (U21).
+        if (d?.group !== undefined || FOUNDATIONS.includes(name)) {
+          if (!GROUPS.some((g) => g.key === d?.group)) errors.push(`${where}: group must be one of ${GROUPS.map((g) => g.key).join(", ")} (the library's theme groups, scripts/lib/family-index.mjs)`);
+        }
+        if (d?.grownups !== undefined) {
+          const g = d.grownups;
+          if (!g || typeof g !== "object" || !isText(g.line) || !isText(g.href)) errors.push(`${where}: grownups needs a line and an href`);
+          else {
+            if (g.line.length > GROWNUPS_MAX || !/[.?]$/.test(g.line.trim())) errors.push(`${where}: grownups.line is one short sentence (at most ${GROWNUPS_MAX} characters, ending in a period or a question mark)`);
+            const target = grownupsTarget(g.href, { needsDir });
+            if (target.problem) errors.push(`${where}: grownups.href ${target.problem}`);
+          }
         }
         if (isText(d?.passage) && isText(d?.passageText)) {
           counts.passages++;
@@ -446,7 +487,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
     process.exit(1);
   }
   console.log(
-    `Family libraries: clean (${counts.files} files; ${counts.devotions} devotions with unique, frozen ids; ` +
+    `Family libraries: clean (${counts.files} files; ${counts.devotions} devotions with unique, frozen ids, ${counts.banded} with questions for younger and older children; ` +
       `${counts.catechism} catechism questions; ${counts.seasonalDays} seasonal days; ${counts.plans} reading plans; ` +
       `${counts.passages} passages verbatim BSB; copy counts and translation labels match; ` +
       `${counts.yearMap === undefined ? "year map not generated yet" : `year map names ${counts.yearMap} devotions, all real`}).`,

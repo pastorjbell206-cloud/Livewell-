@@ -20,6 +20,7 @@ import {
   placeOf,
   readFamilyProgress,
   recordDevotionDone,
+  saveFamilyBand,
   tonightOn,
   weekOfYear,
   whenSaid,
@@ -110,6 +111,14 @@ describe("placeOf", () => {
     expect(placeOf(first, INDEX)).toEqual({ current: 1, total: INDEX.weekly });
     expect(placeOf(advent6, INDEX)).toEqual({ unit: "Day", current: 6, total: INDEX.sets.advent.days });
   });
+
+  it("counts a weekly devotion within its own strand (U21)", () => {
+    const first = INDEX.devotions.find((r) => r.id === "identity")!;
+    expect(first.strand).toBe("foundations");
+    const withWorld: FamilyIndex = { ...INDEX, strands: [...(INDEX.strands ?? []), { key: "world", label: "The world we live in", count: 12 }] };
+    expect(placeOf({ ...first, strand: "world", n: 3 }, withWorld)).toEqual({ current: 3, total: 12 });
+    expect(placeOf(first, { ...INDEX, strands: undefined })).toEqual({ current: 1, total: INDEX.weekly });
+  });
 });
 
 describe("catechismThisWeek", () => {
@@ -157,6 +166,15 @@ describe("what this device remembers", () => {
     expect(recordDevotionDone("identity", "2026-11-03")).toMatchObject({ ok: true, already: true });
     expect(recordDevotionDone("identity", "2026-11-04").already).toBe(false);
     expect(readFamilyProgress().done).toHaveLength(2);
+  });
+
+  it("keeps the band a family chose beside its dates (U21)", () => {
+    recordDevotionDone("identity", "2026-11-03");
+    expect(saveFamilyBand("older")).toMatchObject({ ok: true, progress: { band: "older" } });
+    expect(readFamilyProgress()).toEqual({ v: 1, start: "2026-11-03", band: "older", done: [{ id: "identity", date: "2026-11-03" }] });
+    // Marking another night done keeps the band.
+    recordDevotionDone("faith", "2026-11-10");
+    expect(readFamilyProgress().band).toBe("older");
   });
 
   it("ignores a value of the wrong shape", () => {

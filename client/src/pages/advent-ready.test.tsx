@@ -141,7 +141,7 @@ describe("/family/devotions?tab=advent", () => {
     expect(screen.getByText("Advent begins on the fourth Sunday before Christmas (November 29, 2026). This calendar has a reading for each day from December 1 to Christmas Day.")).toBeTruthy();
 
     // A tab chosen by hand goes into the address, so it can be shared.
-    fireEvent.click(screen.getByRole("button", { name: /^Weekly/ }));
+    fireEvent.click(screen.getByRole("button", { name: /^Foundations/ }));
     await waitFor(() => expect(window.location.search).toBe(""));
     expect(screen.queryByText(/^Advent begins on the fourth Sunday/)).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Holy Week · 8" }));
@@ -152,7 +152,7 @@ describe("/family/devotions?tab=advent", () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
     renderDevotions("/family/devotions?tab=lent&day=3");
-    await waitFor(() => expect(screen.getByRole("button", { name: /^Weekly · \d+$/ })).toHaveAttribute("aria-pressed", "true"));
+    await waitFor(() => expect(screen.getByRole("button", { name: /^Foundations · \d+$/ })).toHaveAttribute("aria-pressed", "true"));
     expect(window.location.pathname).toBe("/family/devotions");
   });
 });

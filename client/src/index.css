@@ -772,6 +772,35 @@ img{display:block;max-width:100%}
 .tb-done__note{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:10px 0 0}
 .tb-more{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:var(--s-3);border-top:1px solid var(--border)}
 
+/* The Table, part two (U21): whose questions to ask, three short nights, a
+ * line for the grown-ups, "If your table looks different", and the library
+ * by theme. */
+.tb-bands{border:0;margin:0 0 var(--s-2);padding:0;min-width:0}
+.tb-bands__legend{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 8px;padding:0}
+.tb-bands__options{display:flex;flex-wrap:wrap;gap:8px}
+.tb-band{position:relative;display:inline-flex}
+.tb-band input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.tb-band span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);border:1px solid var(--border);border-radius:999px;transition:border-color .2s var(--motion-ease),background .2s var(--motion-ease)}
+.tb-band input:hover+span{border-color:var(--ink)}
+.tb-band input:checked+span{border-color:var(--mustard);background:var(--bone-warm)}
+.tb-band input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}
+.tb-bands__note{font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
+.tb-table .tb-bands__note{font-size:14px}
+.tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 0}
+/* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them. */
+.tb-nights__link{color:var(--mustard-text);font-weight:600}
+.tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
+.tb-grownups__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0}
+.tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}
+.tb-different__title{font-family:var(--F);font-size:22px;font-weight:500;line-height:1.25;color:var(--ink);margin:0 0 6px}
+.tb-different__body{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
+.tb-different__more{font-family:var(--U);font-size:15px;line-height:1.7;color:var(--ink);margin:0;max-width:68ch}
+.tb-different__link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:.2em;padding:10px 0}
+.tb-lib__theme{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 var(--s-3);font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
+.tb-lib__theme select{min-height:44px;max-width:100%;padding:0 12px;font-family:var(--U);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);cursor:pointer}
+.tb-lib__shelf+.tb-lib__shelf{margin-top:var(--s-5)}
+.tb-lib__heading{font-family:var(--F);font-size:clamp(24px,3vw,30px);font-weight:400;line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
+
 /* Table mode: large type, one step per screen, the screen kept awake. */
 .tb-table{--st-stepper-top:57px;min-height:100vh;min-height:100svh;background:var(--bone);color:var(--ink)}
 .tb-table__bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;background:var(--bone);border-bottom:1px solid var(--border)}
@@ -803,7 +832,7 @@ img{display:block;max-width:100%}
   .tb-page .pg-head__lede{font-size:10pt;margin-top:3pt}
   .tb-page__body{padding:0 !important}
   .tb-devotion{max-width:100%}
-  .tb-section{padding:6pt 0 2pt;break-inside:avoid}
+  .tb-section{padding:5pt 0 1pt;break-inside:avoid}
   .tb-section__title{font-size:13pt;margin-bottom:3pt}
   .tb-ref,.tb-label{font-size:8pt;margin-bottom:2pt}
   .tb-passage{font-size:10.5pt;line-height:1.45;margin-bottom:4pt;padding-left:8pt}
@@ -813,6 +842,13 @@ img{display:block;max-width:100%}
   .tb-prayer{font-size:10.5pt;margin-bottom:2pt}
   .tb-devotion p[style]{font-size:8pt !important;margin-bottom:2pt !important}
   .tb-done,.tb-more,.tb-line{display:none !important}
+  /* Both age bands side by side, a little tighter, on a page with narrower
+   * margins than an essay's 2cm, so a devotion still prints on one page (U21). */
+  body:has(.tb-page){page:tb-card}
+  @page tb-card{margin:1.3cm 1.5cm}
+  .tb-asks--two{display:grid;grid-template-columns:1fr 1fr;gap:0 14pt}
+  .tb-asks--two .tb-questions{font-size:9pt;line-height:1.35;padding-left:1.2em;margin-bottom:2pt}
+  .tb-asks--two .tb-label{margin-bottom:1pt}
 }
 
 /* CARD */

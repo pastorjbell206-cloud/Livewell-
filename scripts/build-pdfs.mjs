@@ -8,6 +8,8 @@
  *   client/public/needs/*.json (care pages)      → client/public/downloads/help/<slug>-<kind>-<size>.pdf
  *   client/public/plans/*.json                   → client/public/downloads/plans/<slug>-booklet-<size>.pdf
  *   client/public/family-seasonal.json           → client/public/downloads/seasonal/<season>-family-<size>.pdf
+ *   client/public/family-devotions*.json         → client/public/downloads/tools/family-cards-<size>.pdf
+ *                                                  (two cards to a page, each with a code to /family/devotions/<id>)
  *   client/src/data/bible-reading-plans.json     → client/public/downloads/reading-plans/<id>-<size>.pdf
  *
  * Run:  node scripts/build-pdfs.mjs

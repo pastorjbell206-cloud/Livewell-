@@ -1,8 +1,9 @@
 /**
- * Family (/family): tonight's devotion first, then this week's catechism
- * question and the season's daily sets, then (from the Sunday before Advent
- * Sunday to Christmas) the Advent calendar card, then the library, the
- * catechism, reading plans, and the tools for the home.
+ * Family (/family): tonight's devotion first, with a weekly reminder for the
+ * family's own calendar, then this week's catechism question and the season's
+ * daily sets, then (from the Sunday before Advent Sunday to Christmas) the
+ * Advent calendar card, then the catechism, the library, "If your table looks
+ * different" (U21), reading plans, and the tools for the home.
  *
  * Tonight comes from the static year map and the reader's own calendar
  * (lib/familyTable); the titles and this week's question come from the family
@@ -15,6 +16,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import AdventAtTheTable from "@/components/AdventAtTheTable";
+import { RemindMe } from "@/components/RemindMe";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PageHead } from "@/components/editorial/PageHead";
@@ -28,6 +30,7 @@ import { localISODate } from "@/lib/familyYear";
 import { FAMILY_SETS } from "@/lib/familyYear.generated";
 import { catechismThisWeek, type FamilyIndex } from "@/lib/familyTable";
 import TonightCard from "./family/TonightCard";
+import TableLooksDifferent from "./family/TableLooksDifferent";
 import { useFamilyIndex } from "./family/useFamilyData";
 
 const card = {
@@ -111,6 +114,15 @@ export default function Family() {
       <section style={{ background: "var(--bone)", padding: "var(--s-4) 16px var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <TonightCard index={state} retry={retry} />
+          {/* A weekly reminder in the family's own calendar, back to tonight's devotion (U21). */}
+          <RemindMe
+            title="Family devotion"
+            details="Tonight's family devotion: a passage, a question to talk about, and a prayer, in about ten minutes."
+            href="/family/tonight"
+            freq="WEEKLY"
+            count={52}
+            schedule="once a week for a year"
+          />
         </div>
       </section>
 
@@ -156,6 +168,13 @@ export default function Family() {
               { href: "/tools/family-devotions", title: "Build a family devotion", dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." },
             ]}
           />
+        </div>
+      </section>
+
+      {/* IF YOUR TABLE LOOKS DIFFERENT (U21) */}
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+          <TableLooksDifferent />
         </div>
       </section>
 
