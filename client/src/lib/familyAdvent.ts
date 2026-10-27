@@ -90,9 +90,9 @@ export function longDate(iso: string, opts: { weekday?: boolean; year?: boolean 
 }
 
 /**
- * Where a day of the calendar opens: the Advent tab of /family/devotions, at
- * that day. `?tab=` is the name The Table's library (U17) reads too, so these
- * links keep landing on the Advent tab when that page is rebuilt.
+ * Where the calendar opens: The Table's library (/family/devotions, U17)
+ * reads `?tab=advent` as its Advent tab, and with `&day=N` opens that day's
+ * own page (/family/devotions/advent-N) in place of the list.
  */
 export function adventHref(day?: number | null): string {
   return day ? `/family/devotions?tab=advent&day=${day}` : "/family/devotions?tab=advent";

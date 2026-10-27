@@ -1,12 +1,15 @@
 /**
  * Advent ready (U13), with the clock set: the family Advent calendar appears
  * on Home and /family from November 22, 2026 (the Sunday a week before Advent
- * Sunday) through Christmas Day and not outside it; a link from either lands
- * on the Advent tab of /family/devotions at tonight's day; and that tab says
- * when Advent itself begins. Rendered from the real data files.
+ * Sunday) through Christmas Day and not outside it; a link from either
+ * (/family/devotions?tab=advent&day=N) lands on that day's own page, which
+ * The Table's library (U17) opens in place of the list; and the library's
+ * Advent tab marks tonight's day and says when Advent itself begins. Rendered
+ * from the real data files.
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { screen, waitFor, within, fireEvent } from "@testing-library/react";
+import { Route, Switch } from "wouter";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -14,9 +17,10 @@ import { renderWithProviders, offlineFetch } from "@/test/harness";
 import Home from "./Home";
 import Family from "./Family";
 import FamilyDevotions from "./FamilyDevotions";
+import DevotionPage from "./family/DevotionPage";
 
 const PUBLIC = path.resolve(__dirname, "../../public");
-const FILES = ["family-devotions.json", "family-devotions-2.json", "family-seasonal.json"];
+const FILES = ["family/index.json", "family-devotions.json", "family-devotions-2.json", "family-seasonal.json"];
 
 function serveFamilyFiles() {
   const base = offlineFetch();
@@ -101,32 +105,54 @@ describe("Home and /family before, during, and after the window", () => {
   });
 });
 
+/** The library and a devotion's own page, routed as App.tsx routes them. */
+function renderDevotions(url: string) {
+  window.history.replaceState(null, "", url);
+  return renderWithProviders(
+    <Switch>
+      <Route path="/family/devotions/:id" component={DevotionPage} />
+      <Route path="/family/devotions" component={FamilyDevotions} />
+    </Switch>,
+  );
+}
+
 describe("/family/devotions?tab=advent", () => {
-  it("opens the Advent tab at the day asked for, marks tonight, and says when Advent begins", async () => {
+  it("opens the day asked for on its own page, in the new order, marked tonight", async () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
-    window.history.replaceState(null, "", "/family/devotions?tab=advent&day=20");
-    renderWithProviders(<FamilyDevotions />);
-    await waitFor(() => expect(screen.getByText("The Night Before")).toBeTruthy());
-    expect(screen.getByRole("button", { name: "Advent · 25" })).toHaveAttribute("aria-pressed", "true");
-    const day20 = screen.getByRole("button", { name: /December 20 · Tonight\s*The Night Before/ });
-    expect(day20).toHaveAttribute("aria-expanded", "true");
+    renderDevotions("/family/devotions?tab=advent&day=20");
+    expect(await screen.findByRole("heading", { level: 1, name: "The Night Before" })).toBeTruthy();
+    expect(window.location.pathname).toBe("/family/devotions/advent-20");
+    expect(window.location.search).toBe("");
+    expect(screen.getByText("· Tonight")).toBeTruthy();
     expect(screen.getByText(/a tired couple was walking a hard road/)).toBeTruthy();
-    expect(screen.getByText("Advent begins on the fourth Sunday before Christmas (November 29, 2026). This calendar has a reading for each day from December 1 to Christmas Day.")).toBeTruthy();
     expect(screen.getByText(/The wording here is a paraphrase/)).toBeTruthy();
+  });
+
+  it("opens the Advent tab, marks tonight's day, and says when Advent begins", async () => {
+    setToday(2026, 12, 20);
+    serveFamilyFiles();
+    renderDevotions("/family/devotions?tab=advent");
+    const day20 = await screen.findByRole("link", { name: /December 20 · Tonight/ });
+    expect(day20).toHaveAttribute("href", "/family/devotions/advent-20");
+    expect(day20).toHaveTextContent("The Night Before");
+    expect(screen.getByRole("button", { name: "Advent · 25" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getAllByText(/· Tonight/)).toHaveLength(1);
+    expect(screen.getByText("Advent begins on the fourth Sunday before Christmas (November 29, 2026). This calendar has a reading for each day from December 1 to Christmas Day.")).toBeTruthy();
 
     // A tab chosen by hand goes into the address, so it can be shared.
     fireEvent.click(screen.getByRole("button", { name: /^Weekly/ }));
-    expect(window.location.search).toBe("");
+    await waitFor(() => expect(window.location.search).toBe(""));
+    expect(screen.queryByText(/^Advent begins on the fourth Sunday/)).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Holy Week · 8" }));
-    expect(window.location.search).toBe("?tab=holy-week");
+    await waitFor(() => expect(window.location.search).toBe("?tab=holy-week"));
   });
 
   it("stays on the weekly devotions without a season, or with one it does not have", async () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
-    window.history.replaceState(null, "", "/family/devotions?tab=lent&day=3");
-    renderWithProviders(<FamilyDevotions />);
+    renderDevotions("/family/devotions?tab=lent&day=3");
     await waitFor(() => expect(screen.getByRole("button", { name: /^Weekly · \d+$/ })).toHaveAttribute("aria-pressed", "true"));
+    expect(window.location.pathname).toBe("/family/devotions");
   });
 });
