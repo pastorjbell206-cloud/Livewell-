@@ -2,11 +2,26 @@
 
 Essay: `docs/work/essays/what-post-christian-means.md` ("What "Post-Christian" Actually Means"). Approved pilot. No writer's ledger survived, so the verifier built this one from the text on 2026-10-26.
 
-## Read this first: no web search was available for this check
+## Search run, 2026-10-27 (read this first)
+
+This run closed the open lines it could. Before it began, 73 item lines below were open (not checked, generalized, resting on the benchmark note or the sibling ledger, or with ESV wording matched only against a GitHub copy). After it: 33 verified from a source seen in this run, 1 generalized further, and 39 still open. Of the 39, 11 are Scripture quotations whose ESV wording still awaits James's ESV API key (the BSB confirms each one's sense, and each matches the GitHub ESV copy), and 28 are dates, names and reference-knowledge items that no source in this run reached.
+
+The search budget ran out early. Twenty-two WebSearch calls ran, spent in order on the two non-Scripture quotations (Taylor, Newbigin), then the Gallup and Pew figures, then the opening's dates and names. The twenty-third, twenty-fourth and twenty-fifth (Berger's 1968 wording via Rodney Stark, Berger's later retraction, and the 2009 Newsweek cover) came back "this turn's web search budget is used up (limit: 200 WebSearch calls per turn, shared by every agent in it)": other agents in the same workflow turn had spent the shared allowance. No primary page could be opened either. The sandbox proxy refused news.gallup.com, www.pewresearch.org, www.thegospelcoalition.org and richardbeck.substack.com, and WebFetch could not resolve news.gallup.com, www.pew.org or richardbeck.substack.com.
+
+Methods used in this run, in the words used below:
+
+- **"Search-verified (2026-10-27)"**: the claim matched the text of WebSearch results run on 2026-10-27. The sites named are the ones the results cited. The results are summaries that quote the pages; no primary page was opened.
+- **"ESV copy, re-run"**: this run cloned the same GitHub copy the first check used (lguenth/mdbible, commit fd66568, parsed from javascripture's ESV JSON) into the scratchpad and compared every Scripture quotation in the essay with it by script, after normalizing case, punctuation and spacing. All ten distinct quotations matched. The copy's ESV edition is not stated and it prints LORD as "Lord". It is not esv.org or the ESV API.
+- **"BSB"**: the site's own Berean Standard Bible text in `client/public/bible/ch/<book>/<chapter>.json`, read in this run. It confirms where a verse is and what it says, not ESV wording.
+- **"Gutenberg"**: a public-domain text read in this run from a GITenberg clone in the scratchpad: *United States Bill of Rights* (ebook 2), George Willis Cooke, *Unitarianism in America* (1902, ebook 8605), and Joseph Cullen Ayer, *A Source Book for Ancient Church History* (1913, ebook 24979).
+
+Where a line below says "ESV wording not confirmed by search; BSB confirms the sense", the quotation stays in the essay because the BSB says the same thing and the GitHub ESV copy matches it word for word; James's API key should settle the wording.
+
+## First check, 2026-10-26 (no web search was available)
 
 The workflow's shared web-search budget was already used up when this check began. Three WebSearch calls (the Taylor quotation, the Newbigin quotation, the Gallup 2021 report) all came back "this turn's web search budget is used up." No search result was seen for this essay. Opening the primary pages directly failed too: curl to news.gallup.com and www.pewresearch.org got a 403 from the sandbox proxy, and WebFetch could not resolve news.gallup.com or www.pewresearch.org.
 
-This matters more here than for the other pilots. The review page James approved ("LiveWell Voice Pilots" artifact, read on 2026-10-26) says of this essay: "The web-search allowance ran out partway, so the Pew 2025 and Gallup 2021 figures were checked from memory. I'll verify each one against the live reports before this goes up." This run could not do that either. So, as the brief requires, every survey figure that nothing could confirm has been generalized, and both non-Scripture quotations have become marked paraphrase. The original wording is kept below under "Original wording, for restoring" so a later run with search or the source pages can put it back word for word.
+This matters more here than for the other pilots. The review page James approved ("LiveWell Voice Pilots" artifact, read on 2026-10-26) says of this essay: "The web-search allowance ran out partway, so the Pew 2025 and Gallup 2021 figures were checked from memory. I'll verify each one against the live reports before this goes up." This run could not do that either. So, as the brief requires, every survey figure that nothing could confirm has been generalized, and both non-Scripture quotations have become marked paraphrase. The original wording is kept below under "Original wording, for restoring" (renamed on 2026-10-27 "Original wording: what was restored and what was not") so a later run with search or the source pages can put it back word for word.
 
 The methods actually used, and what the words below mean:
 
@@ -48,140 +63,150 @@ Wording only. No fact, quotation, number, date, name or link was added, and ever
 9. Same paragraph: "He had spent more than three decades carrying the gospel in a country where Christians had always been a small minority" became "He had spent most of his working life ...". Newbigin's years in India were broken by years based in London and Geneva with the International Missionary Council (the verifier recalls 1959 to 1965; not checked), so a count of years could not be confirmed.
 10. Same section: the Newbigin quotation became marked paraphrase without quotation marks ("Newbigin's reply, in substance, was that the only hermeneutic of the gospel is a congregation whose people believe the gospel and live by it."). The term "hermeneutic of the gospel" stays, named as his. Reason: the quotation could not be matched to any source.
 
-No claim was found to be wrong. Every change above was made because a quotation, figure or detail could not be checked, not because a check failed.
+No claim was found to be wrong in that first check. Every change in items 1 to 10 was made because a quotation, figure or detail could not be checked, not because a check failed.
 
-## Original wording, for restoring
 
-When search or the sources are available, check these and, if they match, restore them exactly:
+### Corrections made on 2026-10-27 (search run)
 
-- Gallup (Jeffrey M. Jones, "U.S. Church Membership Falls Below Majority for First Time," news.gallup.com, March 2021): report month March 2021; question first asked in 1937; 47 percent in 2020; 73 percent in 1937; "near 70 percent for six decades" before falling around the turn of the century; by generation in 2018 to 2020 data, 66 percent (born before 1946), 58 percent (baby boomers), 50 percent (Generation X), 36 percent (millennials); and Gallup's own attribution of much of the drop to generational replacement.
-- Pew 2023-24 religion survey (released 2025): 29 percent unaffiliated, up from 16 percent in 2007; 5 percent atheist, 6 percent agnostic, 19 percent "nothing in particular"; 83 percent believe in God or a universal spirit; 86 percent believe people have a soul; 44 percent pray daily; a third attend monthly.
-- Charles Taylor, *A Secular Age* (2007), the quotation as the pilot had it: He asks "why was it virtually impossible not to believe in God in, say, 1500 in our Western society, while in 2000 many of us find this not only easy, but even inescapable?" (The verifier recalls it from the book's opening chapter, around p. 25; not checked.)
-- Taylor's term in quotation marks: "subtraction stories."
+Each restores wording James approved in the pilot, now that a source seen in this run confirms it, or changes a figure to what the sources support. No voice or structure was changed beyond these sentences, and the essay still has no em-dash or exclamation point.
+
+11. Opening, Gallup: correction 1 reversed. The essay again reads "In March 2021 Gallup reported that for the first time since it began asking in 1937, fewer than half of American adults belonged to a church, synagogue, or mosque. The figure for 2020 was 47 percent. It had been 73 percent in 1937, and it stayed near 70 percent for six decades before it started falling around the turn of the century." Search-verified (see the Opening lines below). The generalized wording it replaces ("For most of the twentieth century the figure had stood at around seven in ten") also reached back before 1937, which Gallup never measured.
+12. Three Ways to Be Secular: correction 2 reversed. The Taylor quotation is restored verbatim: He asks "why was it virtually impossible not to believe in God in, say, 1500 in our Western society, while in 2000 many of us find this not only easy, but even inescapable?" Search-verified.
+13. Same paragraph: "The book runs close to nine hundred pages" became "The book runs well past seven hundred pages". The search results gave 776 pages (a reviewer's count) and "the next 800 pages" (a newspaper column); neither confirmed "close to nine hundred", so the figure was generalized to what both support.
+14. Where America Actually Stands: correction 5 reversed. "In its 2018 to 2020 data, 66 percent of Americans born before 1946 belonged to a church, compared with 58 percent of baby boomers, 50 percent of Generation X, and 36 percent of millennials." Search-verified.
+15. Same paragraph: corrections 6 and 7 reversed, with one arithmetic fix. The essay now reads "Pew found that 29 percent of adults are now religiously unaffiliated, up from 16 percent in 2007. But the unaffiliated are not mostly atheists. Five percent of American adults call themselves atheists and six percent agnostics. Nineteen percent describe their religion as "nothing in particular." The same survey found that 83 percent of American adults believe in God or a universal spirit, and 86 percent believe people have a soul. About a third attend religious services at least once a month. Forty-four percent pray every day." The pilot's "The other 19 percent" became "Nineteen percent", because 5, 6 and 19 add to 30 against Pew's rounded 29. "About a third" is kept (the pilot said "A third"), because the monthly figure seen in this run is a sum of two Pew numbers, 25 and 8.
+16. Lesslie Newbigin and the West as a Mission Field: correction 10 reversed. The Newbigin quotation is restored verbatim: "And he answered that the only hermeneutic of the gospel "is a congregation of men and women who believe it and live by it."" Search-verified.
+
+## Original wording: what was restored and what was not
+
+Restored on 2026-10-27, each matched to search results seen in this run: the Gallup month, 1937, 47 percent, 73 percent and "near 70 percent for six decades"; the Gallup generation figures; the Pew figures (29 and 16 percent unaffiliated; 5 percent atheist, 6 agnostic, 19 "nothing in particular"; 83 percent God or a universal spirit; 86 percent a soul; 44 percent daily prayer); the Taylor quotation; the Newbigin quotation.
+
+Not restored, because nothing in this run confirmed them (restore exactly if a later check does):
+
+- Taylor's term in quotation marks: "subtraction stories." The search results confirmed only that Taylor rejects the "subtraction" story or theory, not the plural phrase verbatim.
 - C. S. Lewis, inaugural lecture at Cambridge ("De Descriptione Temporum"): "on November 29, 1954".
-- Lesslie Newbigin, *The Gospel in a Pluralist Society* (1989), the quotation as the pilot had it: the only hermeneutic of the gospel "is a congregation of men and women who believe it and live by it." (The verifier recalls it from the chapter "The Congregation as Hermeneutic of the Gospel," around p. 227; not checked.)
 - Newbigin's congregation "across the road from Winson Green prison"; "more than three decades" in India.
 
 ## Opening
 
-- April 8, 1966: Time ran a cover with no picture, the first in its history. Not checked (reference knowledge).
-- Three words in red type on a black field: "Is God Dead?" A cover line, not a quotation from a person. Not checked (reference knowledge).
-- Five years earlier (1961), the theologian Gabriel Vahanian published *The Death of God*. Not checked (reference knowledge). Arithmetic checked (1966 minus 5).
-- Its subtitle: *The Culture of Our Post-Christian Era*. Not checked (reference knowledge).
-- The phrase would outlast the movement the book helped start. Interpretation.
-- 1968: Peter Berger, quoted in the New York Times, predicted that by the twenty-first century religious believers would be found only in small sects, huddled together against a secular world. Paraphrase, no quotation marks. Not checked (reference knowledge; it is the standard citation in the secularization debate).
-- Decades later Berger said publicly he had been wrong about secularization. Not checked (reference knowledge).
-- Berger argued that what modernity reliably produces is pluralism. Paraphrase. Not checked (reference knowledge).
-- April 2009: Newsweek cover story "The End of Christian America." Not checked (reference knowledge).
-- 2021: Gallup reported that fewer than half of American adults belonged to a church, synagogue, or mosque, the first time in the more than eighty years Gallup had been asking. Generalized (see correction 1). Not checked.
-- For most of the twentieth century the figure stood at around seven in ten; the slide began around the turn of the century. Generalized. Not checked.
-- Four years later (2025) Pew released the third round of its large study of American religion. Corroborated by the benchmark note ("released February 26, 2025"; "Pew's third Religious Landscape Study").
-- A survey of nearly 37,000 adults. Corroborated by the benchmark note (36,908 adults).
-- Conducted between July 2023 and March 2024. Corroborated by the benchmark note.
-- The Christian share fell from 78 percent in 2007 to 62 percent. Corroborated by the benchmark note (62 percent, "down ... 16 since 2007").
-- It had held roughly steady since about 2019. Corroborated by the benchmark note ("holding in a 60 to 64% band since 2019").
-- Pew said the decline had slowed and may have leveled off. Corroborated by the benchmark note ("The decline has paused, not reversed"; the cited summary's address reads "the-decline-of-christianity-has-slowed"). Pew's own headline was not opened.
+- April 8, 1966: Time ran a cover with no picture, the first in its history. Search-verified (2026-10-27): Wikipedia "Is God Dead?" ("the first cover in the magazine's history to feature only type, and no photo"); bahai-library.com chronology for 1966-04-08; a Commonweal caption, "The controversial Time magazine cover of April 8, 1966". One result hedged that the cover "is said to be" the first; the claim rests on Time's own history as reported.
+- Three words in red type on a black field: "Is God Dead?" A cover line, not a quotation from a person. Search-verified (2026-10-27): "blood-red letters against a black background" (Wikipedia "Is God Dead?" and John T. Elson).
+- Five years earlier (1961), the theologian Gabriel Vahanian published *The Death of God*. Search-verified (2026-10-27): Wikipedia "The Death of God" ("a 1961 book by Gabriel Vahanian"; George Braziller); Wikipedia "Gabriel Vahanian" (a Presbyterian who taught at Syracuse University); timeshighereducation.com obituary. Arithmetic checked (1966 minus 5).
+- Its subtitle: *The Culture of Our Post-Christian Era*. Search-verified (2026-10-27): Université de Nantes catalogue record "The death of God : the culture of our post-Christian era".
+- The phrase would outlast the movement the book helped start. Interpretation. (The results add that Time linked the book to the "death of God" movement and that Vahanian rejected the label; the essay's "helped start" stays an interpretation.)
+- 1968: Peter Berger, quoted in the New York Times, predicted that by the twenty-first century religious believers would be found only in small sects, huddled together against a secular world. Paraphrase, no quotation marks. Search-verified in substance only (2026-10-27): culture.wursten.be cites a New York Times piece of February 25, 1968, "A Bleak Outlook Is Seen for Religion", in which Berger expected religion to survive only in small sectarian groups banding together against secularization. STILL OPEN for the "twenty-first century" horizon and the "huddled together" wording: the search results showed the familiar quotation ("By the 21st century, religious believers are likely to be found only in small sects, huddled together to resist a worldwide secular culture") only on pages of low reliability that do not cite the Times. A search through Rodney Stark's "Secularization, R.I.P.", which quotes it, was refused when the budget ran out.
+- Decades later Berger said publicly he had been wrong about secularization. Search-verified (2026-10-27): culture.wursten.be reports that Berger later said he had been wrong about secularization but right about pluralism; christiancentury.org (2017) notes that he came to see secularization as far less inevitable than he once thought.
+- Berger argued that what modernity reliably produces is pluralism. Paraphrase. Search-verified (2026-10-27): the same culture.wursten.be account (not a quotation of Berger) reports that he said he had been right about pluralism, arguing that pluralism undercuts taken-for-granted certainties.
+- April 2009: Newsweek cover story "The End of Christian America." STILL OPEN. Not checked (reference knowledge): the one search planned for it was refused when the budget ran out. The verifier recalls Jon Meacham's cover story, issue dated April 13, 2009.
+- 2021: Gallup reported, for the first time since it began asking in 1937, that fewer than half of American adults belonged to a church, synagogue, or mosque. Search-verified (2026-10-27): result text quoting news.gallup.com/poll/341963 ("Americans' membership in houses of worship continued to decline last year, dropping below 50% for the first time in Gallup's eight-decade trend"; "47% of Americans said they belonged to a church, synagogue or mosque"), with foxnews.com, baptistnews.com, ecfa.org and ministrywatch.com. The results give publication in March 2021 (one summary named March 29, without quoting the page's date line); "March 2021" restored (correction 11).
+- 47 percent in 2020; 73 percent in 1937; near 70 percent for six decades, falling from around the turn of the century. Search-verified (2026-10-27): "U.S. church membership was 73% when Gallup first measured it in 1937 and remained near 70% for the next six decades, before beginning a steady decline around the turn of the 21st century"; "to 61% in 2010 and 47% in 2020." Restored (correction 11).
+- Four years later (2025) Pew released the third round of its large study of American religion. Search-verified (2026-10-27): pewresearch.org pages dated 2025/02/26 (executive summary; "Decline of Christianity in the U.S. Has Slowed, May Have Leveled Off"); the pew.org Trust summary, summer 2025 ("The Center's third Religious [...] Study (RLS), released in February").
+- A survey of nearly 37,000 adults. Search-verified (2026-10-27): 36,908 U.S. adults (Pew executive summary; pew.org summary).
+- Conducted between July 2023 and March 2024. Search-verified (2026-10-27): July 17, 2023, to March 4, 2024 (pew.org summary; Pew practices page).
+- The Christian share fell from 78 percent in 2007 to 62 percent. Search-verified (2026-10-27): "62% of U.S. adults describe themselves as Christians" (executive summary); "fell from 78% in 2007 to 71% in 2014" (Pew introductory essay).
+- It had held roughly steady since about 2019. Search-verified (2026-10-27): "Between 2019 and 2024, the Christian share of the adult population has been relatively stable, hovering between 60% and 64%."
+- Pew said the decline had slowed and may have leveled off. Search-verified (2026-10-27): Pew's headline, in its page address, "decline-of-christianity-in-the-us-has-slowed-may-have-leveled-off"; the pew.org summary ("appears to have leveled off, at least temporarily").
 - Some Christians and some secular readers read the numbers through their own frames. Characterization, no source claimed.
 
 ## Three Ways to Be Secular
 
-- Charles Taylor, *A Secular Age*, published 2007. Not checked (reference knowledge).
-- Taylor is a Canadian philosopher and a Catholic. Not checked (reference knowledge).
-- The book runs close to nine hundred pages. Not checked. Already a round figure; kept.
-- Taylor's central question (why belief was nearly unavoidable in the West around 1500 and unbelief easy by 2000). Marked paraphrase now (see correction 2). Not checked.
-- Taylor's three senses of secular: public institutions, belief and practice, the conditions of belief, the third being his main concern. Paraphrase. Not checked (reference knowledge).
+- Charles Taylor, *A Secular Age*, published 2007. STILL OPEN. Not checked (reference knowledge); no result seen in this run gave the year.
+- Taylor is a Canadian philosopher and a Catholic. STILL OPEN. Not checked (reference knowledge).
+- The book runs well past seven hundred pages (was "close to nine hundred pages"). Generalized on 2026-10-27 (correction 13). Search results: one blogger in the results gives 776 pages; a newspaper column in the same results says Taylor answers his question over the next 800 pages. The essay's new wording is true on either count.
+- Taylor's central question, quoted: "why was it virtually impossible not to believe in God in, say, 1500 in our Western society, while in 2000 many of us find this not only easy, but even inescapable?" Search-verified (2026-10-27): commonwealmagazine.org quotes it word for word ("Why was it virtually impossible not to believe in God in, say, 1500 in our Western society," Taylor asks, "while in 2000 many of us find this not only easy, but even inescapable?"); johnpiippo.com and the Las Vegas Sun quote the first half as the opening of chapter 1; an exact-phrase search for "not only easy, but even inescapable" returned reviews of the book (eternitynews.com.au, bethinking.org, namb.net, Goodreads quotations, Commonweal). One First Things review renders the end without "even"; the essay follows Commonweal and the exact-phrase results. Restored (correction 12). The lowercase "why" after "He asks" is the pilot's.
+- Taylor's three senses of secular: public institutions, belief and practice, the conditions of belief, the third being his main concern. Paraphrase. Partly search-verified (2026-10-27): First Things ("Uncomfortable Unbelief") describes the move from a world where belief was unchallenged to one where it is "one option among others" as a change in "the conditions of belief", and Wikipedia's summary of the book says the same. STILL OPEN for the first two senses, which no result named.
 - The English villager in 1500 and the coworkers today. The essay's own illustrations.
-- Subtraction stories, Taylor's term for the view that secularism is what is left once religion is scraped away. Paraphrase; quotation marks removed (correction 3). Not checked (reference knowledge).
-- The immanent frame. Taylor's term; paraphrase of its meaning. Not checked (reference knowledge).
-- Modern people as cross-pressured. Taylor's language of cross-pressures; paraphrase. Not checked (reference knowledge).
-- "That is the pluralism Berger came to put in secularization's place." Interpretation, joining two thinkers' accounts; no source claimed.
-- C. S. Lewis gave his inaugural lecture at Cambridge in 1954. Not checked (textbook). Day removed (correction 4).
-- In it he argued the deepest break in Western history lay not between the Middle Ages and the Renaissance but between Jane Austen's age and his own. Paraphrase, no quotation marks. Not checked (reference knowledge).
-- Christians and pagans had more in common with each other than either with a post-Christian. Paraphrase, no quotation marks. Not checked (reference knowledge).
+- Subtraction stories, Taylor's term for the view that secularism is what is left once religion is scraped away. Paraphrase, no quotation marks. Search-verified in substance (2026-10-27): search results summarizing reviews of the book (Commonweal, First Things, PBS Religion and Ethics) say Taylor rejects the standard "subtraction" story, and Wikipedia's summary says he rejects the "subtraction" theory of secularization. The plural phrase itself was not seen, so the quotation marks stay off.
+- The immanent frame. Taylor's term; paraphrase of its meaning. STILL OPEN. Not checked (reference knowledge).
+- Modern people as cross-pressured. Taylor's language of cross-pressures; paraphrase. STILL OPEN. Not checked (reference knowledge).
+- "That is the pluralism Berger came to put in secularization's place." Interpretation, joining two thinkers' accounts; no source claimed. (Berger's turn to pluralism is search-verified above.)
+- C. S. Lewis gave his inaugural lecture at Cambridge in 1954. STILL OPEN. Not checked (textbook). Day removed (correction 4).
+- In it he argued the deepest break in Western history lay not between the Middle Ages and the Renaissance but between Jane Austen's age and his own. Paraphrase, no quotation marks. STILL OPEN. Not checked (reference knowledge).
+- Christians and pagans had more in common with each other than either with a post-Christian. Paraphrase, no quotation marks. STILL OPEN. Not checked (reference knowledge).
 - A post-Christian society is a different mission field from first-century Corinth. Interpretation.
 
 ## Where America Actually Stands
 
-- The First Amendment barred a national church. Not checked (textbook).
-- The last state establishments were gone by the 1830s. Not checked (textbook; Massachusetts, 1833, also marked "not checked (textbook)" in the was-america-founded ledger).
-- Many public schools opened the day with prayer and Bible reading. General statement. Not checked.
-- *Engel v. Vitale*, 1962, ended school-sponsored prayer. Not checked (textbook).
-- *Abington School District v. Schempp*, 1963, ended devotional Bible reading. Not checked (textbook).
-- Congress added "under God" to the Pledge in 1954. Per the sibling ledger (signed June 14, 1954).
-- Congress made "In God We Trust" the national motto in 1956. Per the sibling ledger (July 30, 1956).
-- Will Herberg, sociologist, *Protestant-Catholic-Jew*, 1955: the operative faith of Americans was the American Way of Life, with Protestantism, Catholicism and Judaism as its three expressions. Paraphrase, no quotation marks. Not checked (reference knowledge).
-- Gallup's membership falls with each younger generation: a clear majority of those born before 1946, a minority of millennials. Generalized (correction 5). Not checked.
-- Gallup tied much of the overall drop to generational replacement. Attribution kept as a general characterization. Not checked.
-- Pew: the unaffiliated grew from about one adult in six in 2007 to roughly three in ten. Generalized (correction 6). Not checked. (The benchmark note says only that the unaffiliated "have also plateaued.")
-- Most of the unaffiliated are not atheists or agnostics; the largest group describe their religion as "nothing in particular." Generalized. "Nothing in particular" is Pew's name for that response category. Not checked.
-- Large majorities believe in God or a universal spirit and believe people have a soul. Generalized. Not checked.
-- About a third attend religious services at least monthly. Corroborated by the benchmark note ("monthly attendance (about 33%)").
-- More than four in ten pray every day. Corroborated by the benchmark note ("Daily prayer (about 44%)").
-- Pew stopped short of calling the plateau a recovery; younger Americans remain far less religious; the researchers left open whether the leveling off would last. Corroborated by the benchmark note ("Pew's own caution: the young remain far less religious than older adults, so further decline is likely").
+- The First Amendment barred a national church. Gutenberg (2026-10-27): *United States Bill of Rights*, ebook 2, line 192: "Congress shall make no law respecting an establishment of religion". Verified.
+- The last state establishments were gone by the 1830s. Gutenberg (2026-10-27): Cooke, *Unitarianism in America* (1902), ebook 8605: Connecticut "after an exciting agitation in 1818"; in Massachusetts "In November, 1833, the legislature submitted to the people a revision of the bill of rights, which provided for the separation of state and church ... and it became the law in 1834. Massachusetts was the last of all the states to arrive at this result." Verified.
+- Many public schools opened the day with prayer and Bible reading. General statement. STILL OPEN. Not checked.
+- *Engel v. Vitale*, 1962, ended school-sponsored prayer. STILL OPEN. Not checked (textbook).
+- *Abington School District v. Schempp*, 1963, ended devotional Bible reading. STILL OPEN. Not checked (textbook).
+- Congress added "under God" to the Pledge in 1954. Per the sibling ledger (search-checked there on 2026-10-26: signed June 14, 1954). Not searched in this run. STILL OPEN for this run.
+- Congress made "In God We Trust" the national motto in 1956. Per the sibling ledger (search-checked there on 2026-10-26: July 30, 1956). Not searched in this run. STILL OPEN for this run.
+- Will Herberg, sociologist, *Protestant-Catholic-Jew*, 1955: the operative faith of Americans was the American Way of Life, with Protestantism, Catholicism and Judaism as its three expressions. Paraphrase, no quotation marks. STILL OPEN. Not checked (reference knowledge).
+- Gallup by generation, 2018 to 2020 data: 66 percent of those born before 1946, 58 percent of baby boomers, 50 percent of Generation X, 36 percent of millennials. Search-verified (2026-10-27): result text quoting news.gallup.com/poll/341963 ("66% of traditionalists [U.S. adults born before 1946] belong to a church, compared with 58% of baby boomers, 50% of those in Generation X, and 36% of millennials"), with Gallup's note that its analysis "relies on three-year aggregates from 1998-2000 ..., 2008-2010 ..., and 2018-2020". Restored (correction 14).
+- Gallup tied much of the overall drop to older, churchgoing generations being replaced by younger ones. Search-verified (2026-10-27): Gallup says the decline "appears largely tied to population change". (Gallup also reports declines within each generation and calls the rise of people with no religious preference the primary factor; the essay's "much of" stays within that.)
+- Pew: 29 percent unaffiliated, up from 16 percent in 2007. Search-verified (2026-10-27): "29% are religiously unaffiliated" (Pew executive summary, 2025/02/26); the 2007 baseline of 16 percent (16.1 percent in the 2007 survey, per a Discover magazine excerpt; "from 16% in 2007" in coverage of Pew's January 2024 report). One result also showed a separate Pew page with 28 percent, from a different survey; the essay follows the 2023-24 study. Restored (correction 15).
+- 5 percent atheist, 6 percent agnostic, 19 percent "nothing in particular." Search-verified (2026-10-27): "29% are religiously unaffiliated: 5% are atheist, 6% are agnostic, and 19% identify religiously as 'nothing in particular.'" (Pew executive summary). "Nothing in particular" is Pew's name for the category. Restored, with "Nineteen percent" for "The other 19 percent" (correction 15).
+- 83 percent believe in God or a universal spirit; 86 percent believe people have a soul. Search-verified (2026-10-27): Pew, "Religious and spiritual beliefs" (2025/02/26): 83 percent believe in God or a universal spirit; 86 percent believe people have a soul or spirit in addition to their physical body. Restored (correction 15).
+- About a third attend religious services at least monthly. Search-verified (2026-10-27) as a sum: Pew's "If the U.S. had 100 people" (short read, 2026/01/29) gives 25 who attend in person weekly or more and 8 who go once or twice a month, 33 in all. The sum is arithmetic, not a figure Pew states in what was seen; "About a third" kept.
+- Forty-four percent pray every day. Search-verified (2026-10-27): Pew's 2023-24 study, "fewer than half of Americans (44%) say they pray each day", down from 58 percent in 2007. Restored (correction 15).
+- Pew stopped short of calling the plateau a recovery; younger Americans remain far less religious; the researchers left open whether the leveling off would last. Search-verified (2026-10-27): the pew.org summary ("Other indicators suggest we may see further declines in the American religious landscape in future years"; younger adults far less likely than the oldest to identify as Christian, 46 percent against 80).
 - The reading that much of what fell away was affiliation held for social reasons. Marked in the essay as an interpretation, not a finding.
 - Nobody is a Christian by default; belief is one option among others. Interpretation drawing on Taylor.
 - America is post-Christendom rather than post-Christian. The essay's thesis.
 
 ## What the Church Is Grieving
 
-- Children who never attended church learned the Lord's Prayer and hymns; a shared moral vocabulary; churches founded hospitals, colleges, orphanages and rescue missions. General historical statements. Not checked.
+- Children who never attended church learned the Lord's Prayer and hymns; a shared moral vocabulary; churches founded hospitals, colleges, orphanages and rescue missions. General historical statements. STILL OPEN. Not checked.
 - Herberg's diagnosis applied to the mid-century consensus. Interpretation.
-- 1961, *Torcaso v. Watkins*: the Supreme Court stopped Maryland from denying Roy Torcaso his commission as a notary public because he would not declare a belief in God. Not checked (textbook).
+- 1961, *Torcaso v. Watkins*: the Supreme Court stopped Maryland from denying Roy Torcaso his commission as a notary public because he would not declare a belief in God. STILL OPEN. Not checked (textbook).
 - "We pastors have something else to admit" (was "Those of us who pastor"): James is a pastor (confirmed in docs/work/NOTES.md). No scene, title or years in ministry stated.
 
-## A Missionary Comes Home
+## Lesslie Newbigin and the West as a Mission Field (was "A Missionary Comes Home")
 
-- Lesslie Newbigin went to India in 1936 as a missionary of the Church of Scotland. Not checked (reference knowledge).
-- In 1947 he became one of the first bishops of the newly formed Church of South India. Not checked (reference knowledge).
-- He retired in 1974, returned to Britain and taught at the Selly Oak Colleges in Birmingham. Not checked (reference knowledge).
-- At about seventy he took the pastorate of a small United Reformed congregation in Winson Green, in inner-city Birmingham. Not checked (reference knowledge). Prison detail removed (correction 8).
-- He had spent most of his working life carrying the gospel in a country where Christians had always been a small minority. Generalized (correction 9). Not checked.
+- Lesslie Newbigin went to India in 1936 as a missionary of the Church of Scotland. STILL OPEN. Not checked (reference knowledge).
+- In 1947 he became one of the first bishops of the newly formed Church of South India. STILL OPEN. Not checked (reference knowledge).
+- He retired in 1974, returned to Britain and taught at the Selly Oak Colleges in Birmingham. STILL OPEN. Not checked (reference knowledge).
+- At about seventy he took the pastorate of a small United Reformed congregation in Winson Green, in inner-city Birmingham. STILL OPEN. Not checked (reference knowledge). Prison detail removed (correction 8).
+- He had spent most of his working life carrying the gospel in a country where Christians had always been a small minority. Generalized (correction 9). STILL OPEN. Not checked.
 - He came home to find his own country no longer Christian, though its churches assumed it was. Interpretation of his account.
-- He argued the modern West had to be approached as a missionary approaches any culture. Paraphrase. Not checked (reference knowledge).
-- Two books from the late 1980s, *Foolishness to the Greeks* and *The Gospel in a Pluralist Society*. Not checked (reference knowledge; the verifier recalls 1986 and 1989).
-- Public facts and private values, with the gospel filed among the values. Paraphrase of his best-known distinction. Not checked (reference knowledge).
-- His question: how anyone could come to believe that the power with the last word in human affairs is represented by a man hanging on a cross. Attributed paraphrase, no quotation marks, as the pilot had it. The wording was not checked; it stays close to his.
-- His answer: the only hermeneutic of the gospel is a congregation that believes the gospel and lives by it. Marked paraphrase now (correction 10). Not checked.
+- He argued the modern West had to be approached as a missionary approaches any culture. Paraphrase. STILL OPEN. Not checked (reference knowledge); one result (emergentkiwi.org.nz) speaks of his thesis as serving the "re-missionalisation" of the West, which is close but was not taken as a check.
+- Two books from the late 1980s, *Foolishness to the Greeks* and *The Gospel in a Pluralist Society*. Half verified: *The Gospel in a Pluralist Society*, 1989, search-verified (2026-10-27; Eerdmans 1989 per the results, and an alisonmorgan.co.uk study outline titled "Lesslie Newbigin The Gospel in a Pluralist Society SPCK 1989"). STILL OPEN for *Foolishness to the Greeks* (the verifier recalls 1986; no result gave the year).
+- Public facts and private values, with the gospel filed among the values. Paraphrase of his best-known distinction. STILL OPEN. Not checked (reference knowledge).
+- His question: how anyone could come to believe that the power with the last word in human affairs is represented by a man hanging on a cross. Attributed paraphrase, no quotation marks. Search-verified (2026-10-27): the results give his sentence as "how is it possible that the gospel should be credible, that people should come to believe that the power which has the last word in human affairs is represented by a man hanging on a cross?" (*The Gospel in a Pluralist Society*, p. 227, per results citing the Logos product page and cfc.sebts.edu, Christ and Culture). The essay's indirect question follows it closely and is attributed.
+- His answer, quoted: the only hermeneutic of the gospel "is a congregation of men and women who believe it and live by it." Search-verified (2026-10-27): the full sentence, "I am suggesting that the only answer, the only hermeneutic of the gospel, is a congregation of men and women who believe it and live by it", p. 227 (results citing the Logos product page and cfc.sebts.edu, Christ and Culture); an exact-phrase search for the quoted words returned emergentkiwi.org.nz, thegospelcoalition.org (Trevin Wax) and others attributing them to the 1989 book. Restored (correction 16). (An alisonmorgan.co.uk study outline paraphrases it as "a congregation of people who believe it and live by it"; that is a note, not the book.)
 - Newbigin's meaning: people will learn how to read the gospel from a congregation's common life more than from arguments or campaigns. Paraphrase of his account; the separate definition sentence ("A hermeneutic is a way of interpreting something") was folded in on 2026-10-27.
 
-## A Letter to Babylon
+## Jeremiah's Letter to the Exiles (was "A Letter to Babylon")
 
-- 597 BC: Nebuchadnezzar carried King Jehoiachin to Babylon. Not checked (textbook; 2 Kings 24:10–15).
-- Jeremiah calls him Jeconiah. Checked against the ESV copy (Jeremiah 29:2; 28:4).
-- With him went the queen mother, the officials of Judah and the craftsmen of Jerusalem. Paraphrase. Checked against the ESV copy (Jeremiah 29:2: "King Jeconiah and the queen mother, the eunuchs, the officials of Judah and Jerusalem, the craftsmen, and the metal workers").
-- The temple still stood and fell about a decade later. Not checked (textbook; 587/586 BC).
-- Hananiah spoke in the house of the LORD in front of the priests and the people. Checked against the ESV copy (Jeremiah 28:1).
-- Jeremiah 28:3, "Within two years I will bring back to this place all the vessels of the LORD's house." Matched against the ESV copy (partial verse; the quotation stops before "which Nebuchadnezzar").
-- Prophets among the exiles were saying the same thing. Checked against the ESV copy (Jeremiah 29:8–9, 15, 21, 31).
-- Jeremiah 29:4–7, the block quotation. Matched against the ESV copy.
-- "whom I have sent" (Jeremiah 29:4). Matched against the ESV copy.
-- The word the ESV translates "welfare" three times in verse 7 is the Hebrew *shalom*. Checked: the ESV copy has "welfare" three times in 29:7, and the Hebrew (STEPBible) has three forms tagged H7965 (*shalom*) in that verse.
+- 597 BC: Nebuchadnezzar carried King Jehoiachin to Babylon. The event is checked against the BSB (2 Kings 24:12, "in the eighth year of his reign, the king of Babylon took him captive"; 24:15, "Nebuchadnezzar carried away Jehoiachin to Babylon"). STILL OPEN for the year 597 BC. Not checked (textbook).
+- Jeremiah calls him Jeconiah. Checked against the ESV copy (Jeremiah 29:2; 28:4) and, in this run, the BSB (29:2, "King Jeconiah").
+- With him went the queen mother, the officials of Judah and the craftsmen of Jerusalem. Paraphrase. Checked against the ESV copy and, in this run, the BSB (Jeremiah 29:2: "the queen mother, the court officials, the officials of Judah and Jerusalem, the craftsmen, and the metalsmiths").
+- The temple still stood and fell about a decade later. STILL OPEN. Not checked (textbook; 587/586 BC).
+- Hananiah spoke in the house of the LORD in front of the priests and the people. Checked against the ESV copy and, in this run, the BSB (Jeremiah 28:1).
+- Jeremiah 28:3, "Within two years I will bring back to this place all the vessels of the LORD's house." ESV copy, re-run: matches (partial verse; the quotation stops before "which Nebuchadnezzar"). ESV wording not confirmed by search; BSB confirms the sense ("Within two years I will restore to this place all the articles of the house of the LORD").
+- Prophets among the exiles were saying the same thing. Checked against the ESV copy (Jeremiah 29:8–9, 15, 21, 31) and, in this run, the BSB (29:15, "The LORD has raised up for us prophets in Babylon").
+- Jeremiah 29:4–7, the block quotation. ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense. (The sibling ledger for what-christian-nationalism-is-and-is-not records 29:7 matched to esv.org search results on 2026-10-26; not seen in this run.)
+- "whom I have sent" (Jeremiah 29:4). ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense (the BSB's 29:4 reads "who were carried away", and its 29:7 has the Lord's "to which I have sent you as exiles").
+- The word the ESV translates "welfare" three times in verse 7 is the Hebrew *shalom*. Checked: the ESV copy has "welfare" three times in 29:7, and, re-read in this run, the site's Hebrew (STEPBible) has three words tagged H7965 in that verse.
 - *Shalom* as the full flourishing of a people under God. Gloss; interpretation.
-- Jeremiah 29:8–9, "Do not let your prophets ... declares the LORD." Matched against the ESV copy (begins mid-verse, after "For thus says the LORD of hosts, the God of Israel:").
-- Jeremiah 29:10–11. Matched against the ESV copy.
+- Jeremiah 29:8–9, "Do not let your prophets ... declares the LORD." ESV copy, re-run: matches (begins mid-verse, after "For thus says the LORD of hosts, the God of Israel:"). ESV wording not confirmed by search; BSB confirms the sense.
+- Jeremiah 29:10–11. ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense.
 - The verse was first addressed to people most of whom would die in Babylon. Inference from the seventy years; interpretation.
-- "do not decrease" (Jeremiah 29:6). Matched against the ESV copy.
+- "do not decrease" (Jeremiah 29:6). ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense (the BSB has the same words, "do not decrease").
 - The two temptations and their political drift. Interpretation.
-- Christians remain a majority of the population. Corroborated by the benchmark note (62 percent).
-- Peter wrote to largely Gentile congregations across five regions of Asia Minor. Five regions checked against the ESV copy (1 Peter 1:1: Pontus, Galatia, Cappadocia, Asia, Bithynia). "Largely Gentile" is the common reading of 1:14, 1:18 and 4:3; interpretation, not checked.
-- They had once joined in the idolatry of their towns and were now maligned for refusing (1 Peter 4:3–4). Paraphrase. Checked against the ESV copy ("lawless idolatry"; "they are surprised when you do not join them ... and they malign you").
-- 1 Peter 1:1, "elect exiles of the dispersion." Matched word for word against the ESV copy, except that the copy capitalizes "Dispersion." Unresolved: the copy's edition is not stated, so the essay's lowercase is left as it was. Check with the ESV API.
+- Christians remain a majority of the population. Search-verified (2026-10-27): 62 percent (Pew executive summary).
+- Peter wrote to largely Gentile congregations across five regions of Asia Minor. Five regions checked against the ESV copy and, in this run, the BSB (1 Peter 1:1: Pontus, Galatia, Cappadocia, Asia, and Bithynia). "Largely Gentile" is the common reading of 1:14, 1:18 and 4:3 (BSB 4:3: "the same desires as the Gentiles"); interpretation.
+- They had once joined in the idolatry of their towns and were now maligned for refusing (1 Peter 4:3–4). Paraphrase. Checked against the ESV copy and, in this run, the BSB ("detestable idolatry"; "they consider it strange of you not to plunge with them ... and they heap abuse on you").
+- 1 Peter 1:1, "elect exiles of the dispersion." ESV copy, re-run: matches word for word, except that the copy capitalizes "Dispersion" (the BSB also capitalizes it). ESV wording not confirmed by search; BSB confirms the sense ("the elect who are exiles of the Dispersion"). The lowercase is left as the pilot had it; the ESV API should settle it.
 
 ## How to Live After Christendom
 
-- Build houses, plant gardens, marry, seek the city's welfare, do not decrease. Paraphrases of Jeremiah 29:5–7, checked against the ESV copy.
-- The gospel traveled without a culture to carry it for the church's first three centuries. General statement. Not checked (textbook in outline; Constantine's favor came in the early fourth century).
-- Babylon's army had besieged Jerusalem and carried off their king. Not checked (textbook; 2 Kings 24:10–15); the king's departure is checked against the ESV copy (Jeremiah 29:2).
-- 1 Peter 2:12, "Keep your conduct among the Gentiles honorable ... on the day of visitation." Matched against the ESV copy.
-- The exiles of Psalm 137 refused to forget Zion by the rivers of Babylon. Paraphrase, no quotation marks. Checked against the ESV copy (Psalm 137:1, "By the waters of Babylon ... when we remembered Zion"; 137:5, "If I forget you, O Jerusalem").
-- Daniel prayed toward Jerusalem three times a day, windows open (Daniel 6:10). Paraphrase. Checked against the ESV copy.
-- Most of the exiles never saw the return; their grandchildren did ("The faith their grandchildren carried home ..." and the last line, "Most of the exiles never saw theirs"). Interpretation (the return under Cyrus came roughly sixty years after 597 BC; not checked, textbook).
+- Build houses, plant gardens, marry, seek the city's welfare, do not decrease. Paraphrases of Jeremiah 29:5–7, checked against the ESV copy and the BSB.
+- The gospel traveled without a culture to carry it for the church's first three centuries. General statement. Gutenberg (2026-10-27): Ayer, *A Source Book for Ancient Church History* (1913), ebook 24979, gives the Edict of Galerius, April 30, 311, and Constantine's so-called Edict of Milan, 313, "granting toleration to the Christians". Verified in outline.
+- Babylon's army had besieged Jerusalem and carried off their king. Checked in this run against the BSB (2 Kings 24:10, "the city came under siege"; 24:12 and 24:15, Jehoiachin taken captive and carried to Babylon) and the ESV copy (Jeremiah 29:2). Verified.
+- 1 Peter 2:12, "Keep your conduct among the Gentiles honorable ... on the day of visitation." ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense.
+- The exiles of Psalm 137 refused to forget Zion by the rivers of Babylon. Paraphrase, no quotation marks. Checked against the ESV copy and, in this run, the BSB (137:1, "By the rivers of Babylon we sat and wept when we remembered Zion"; 137:5, "If I forget you, O Jerusalem").
+- Daniel prayed toward Jerusalem three times a day, windows open (Daniel 6:10). Paraphrase. Checked against the ESV copy and, in this run, the BSB.
+- Most of the exiles never saw the return ("The faith their grandchildren carried home ..." and the last line, "Most of the exiles never saw theirs"). Interpretation, grounded in the seventy years of Jeremiah 29:10 (ESV copy and BSB). The essay gives no date for the return.
 
 ## Closing Texts
 
-- Jeremiah 29:7. Matched against the ESV copy.
-- 1 Peter 2:12. Matched against the ESV copy.
-- Hebrews 13:14, "For here we have no lasting city, but we seek the city that is to come." Matched against the ESV copy.
+- Jeremiah 29:7. ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense.
+- 1 Peter 2:12. ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense.
+- Hebrews 13:14, "For here we have no lasting city, but we seek the city that is to come." ESV copy, re-run: matches. ESV wording not confirmed by search; BSB confirms the sense ("For here we do not have a permanent city, but we are looking for the city that is to come").
 
 ## Biography and integrity
 
@@ -189,6 +214,15 @@ When search or the sources are available, check these and, if they match, restor
 - No exclamation points.
 - No links to check (the essay has none).
 
+
 ## Before this essay publishes
 
-Check, with WebSearch when budget allows or with the source pages: everything under "Original wording, for restoring"; the Pew figures marked "corroborated by the benchmark note" (no Pew page was opened); the "Not checked (reference knowledge)" items in the opening (Time, Vahanian, Berger, Newsweek) and on Newbigin's life. Check every Scripture quotation against the ESV API once James's key exists, and settle "dispersion" in 1 Peter 1:1.
+Still open after 2026-10-27, for a run with search budget or the source pages:
+
+- Scripture: check every quotation against the ESV API once James's key exists (Jeremiah 28:3; 29:4–7; "whom I have sent"; "do not decrease"; 29:8–9; 29:10–11; 29:7; 1 Peter 1:1; 1 Peter 2:12; Hebrews 13:14), and settle "dispersion" against "Dispersion" in 1 Peter 1:1.
+- Opening: the 2009 Newsweek cover; the "twenty-first century" horizon and "huddled together" wording of Berger's 1968 prediction (best checked in Rodney Stark's "Secularization, R.I.P.", which quotes it).
+- Taylor: *A Secular Age* (2007); Canadian, Catholic; the first two of his three senses of secular; the immanent frame; cross-pressures; whether to restore quotation marks on "subtraction stories".
+- Lewis: the 1954 inaugural lecture, its day (November 29) and the two paraphrased points.
+- Where America stands: *Engel v. Vitale* (1962), *Abington v. Schempp* (1963), *Torcaso v. Watkins* (1961), the school-prayer generalization, Herberg's *Protestant-Catholic-Jew* (1955); "under God" (1954) and the motto (1956) rest only on the sibling ledger.
+- Newbigin: India 1936, bishop 1947, retirement 1974, Selly Oak, Winson Green at about seventy, *Foolishness to the Greeks* (1986), the public facts and private values distinction, his call for a missionary approach to the West.
+- History: 597 BC for the first deportation; the temple's fall about a decade later; the general goods of the old arrangement named in "What the Church Is Grieving".
