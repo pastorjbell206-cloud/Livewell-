@@ -14,7 +14,7 @@
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { SITE_NAV_GROUPS, HELP_LINK, SEARCH_SHORTCUTS } from "./siteNav";
+import { SITE_NAV_GROUPS, HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS } from "./siteNav";
 import { SHELF_ESSAYS, isPublicEssay } from "./shelf";
 
 const ROOT = path.resolve(__dirname, "../../..");
@@ -284,7 +284,14 @@ describe("crawl surfaces", () => {
   });
 
   it("the nav links nothing that only redirects", () => {
-    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, ...SEARCH_SHORTCUTS].filter((l) => l.href.startsWith("/"));
+    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS].filter((l) => l.href.startsWith("/"));
     expect(links.filter((l) => redirectFor(l.href)).map((l) => l.href)).toEqual([]);
+  });
+
+  it("never redirects a door James chose on 2026-10-26, or the page Resources folded from", () => {
+    // Study, Topics, Family, Essays, About, and /resources, which stays live
+    // as the one page of everything to use after its door folded.
+    const doors = ["/study", "/topics", "/family", "/writing", "/about", "/books", "/resources"];
+    expect(doors.filter((u) => redirectFor(u))).toEqual([]);
   });
 });

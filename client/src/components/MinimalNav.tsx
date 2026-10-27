@@ -1,5 +1,5 @@
 /**
- * Primary navigation: Study, Essays, Books, Resources, About, with one source
+ * Primary navigation: Study, Topics, Family, Essays, About, with one source
  * of truth in lib/siteNav.ts so the header and footer never drift. A group
  * with several header links opens as a menu; a group with one renders as that
  * plain link. Utility actions (Find Help, search, Subscribe) sit to the right.
@@ -12,6 +12,7 @@ import { BookmarkCheck, ChevronDown, Menu, Search, X } from "lucide-react";
 
 import {
   HELP_LINK,
+  LIBRARY_LINK,
   SEARCH_SHORTCUTS,
   SITE_NAV_GROUPS,
   headerLinks,
@@ -69,6 +70,10 @@ export default function MinimalNav() {
   const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  // The phone menu. A tap inside it is not "outside": with four doors that
+  // open, closing one group on mousedown shifts the panel, and the click
+  // that should open the next group lands on whatever moved under it.
+  const mobilePanelRef = useRef<HTMLDivElement>(null);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
@@ -94,6 +99,7 @@ export default function MinimalNav() {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
+      if (mobilePanelRef.current?.contains(e.target as Node)) return;
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setOpenDropdown(null);
       }
@@ -582,6 +588,7 @@ export default function MinimalNav() {
         {mobileOpen && (
           <div
             id="mobile-nav-panel"
+            ref={mobilePanelRef}
             style={{
               position: "absolute",
               top: "100%",
@@ -721,7 +728,7 @@ export default function MinimalNav() {
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               {/* What this reader saved and started, kept on this device (/my-library). */}
               <Link
-                href="/my-library"
+                href={LIBRARY_LINK.href}
                 onClick={() => setMobileOpen(false)}
                 style={{
                   flex: 1,
@@ -739,7 +746,7 @@ export default function MinimalNav() {
                   borderRadius: "var(--radius-sm)",
                 }}
               >
-                <BookmarkCheck size={16} aria-hidden /> My Library
+                <BookmarkCheck size={16} aria-hidden /> {LIBRARY_LINK.label}
               </Link>
               <Link
                 href="/subscribe"
@@ -766,8 +773,9 @@ export default function MinimalNav() {
       </nav>
 
       <style>{
-        // The five-door header needs ~770px (logo 106 + links 606 + gutters,
-        // measured at 1280); the hamburger takes over at 860 to leave air.
+        // The five-door header needs ~800px (logo 106 + links 638 + gutters,
+        // measured at 861 and 1280 with Study, Topics, Family, Essays, and
+        // About); the hamburger takes over at 860 to leave air.
         "@media (max-width: 860px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
         "@media (min-width: 861px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
       }</style>

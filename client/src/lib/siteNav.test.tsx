@@ -1,17 +1,18 @@
 /**
  * The simplified site's front matter: the committed nav map (header and
  * footer), the home page, the two hubs, and every place that points a reader
- * at a book. These hold the shape James approved: five header doors, Find
- * Help one click away everywhere, links only to routes that exist, and book
- * links only to titles on the /books shelf.
+ * at a book. These hold the shape James approved: the five header doors he
+ * chose on 2026-10-26 (Study, Topics, Family, Essays, About), Find Help one
+ * click away everywhere, links only to routes that exist, and book links only
+ * to titles on the /books shelf.
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { screen, within } from "@testing-library/react";
+import { fireEvent, screen, within } from "@testing-library/react";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
-import { HELP_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
+import { HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
 import { BOOK_SHELF, isShelfBookHref } from "./bookShelf";
 import { START_WITH, SHELF_ESSAYS, isPublicEssay } from "./shelf";
 import { HOME_HEADLINE, HOME_WHO, HOME_WHY } from "./positioning";
@@ -45,30 +46,79 @@ function isRoute(href: string): boolean {
 
 const internal = (href: string) => href.startsWith("/");
 
+/**
+ * The Topics door opens /topics, which U25 builds in the same wave. Until that
+ * route is in App.tsx it is the one nav link allowed to wait for its page;
+ * once it is routed this set changes nothing and can go. Never add to it.
+ */
+const AWAITING_ITS_PAGE = new Set(["/topics"]);
+
+/** The 2026-10-12 Resources group, every link of which now lives elsewhere. */
+const FORMER_RESOURCES = [
+  "/resources",
+  "/my-library",
+  "/downloads",
+  "/resources/hard-issues-series",
+  "/tools",
+  "/assessments",
+  "/how-tos",
+  "/help",
+  "/plans",
+  "/family",
+];
+
+const group = (title: string) => SITE_NAV_GROUPS.find((g) => g.title === title)!;
+
 afterEach(() => {
   vi.unstubAllGlobals();
   window.history.pushState({}, "", "/");
 });
 
 describe("the nav map", () => {
-  it("has the five header doors, in order", () => {
+  it("has the five header doors James chose, in order", () => {
     const header = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0).map((g) => g.title);
-    expect(header).toEqual(["Study", "Essays", "Books", "Resources", "About"]);
+    expect(header).toEqual(["Study", "Topics", "Family", "Essays", "About"]);
+    expect(SITE_NAV_GROUPS.map((g) => g.title)).toEqual(header);
   });
 
-  it("opens Study as a menu and renders every other door as a plain link", () => {
+  it("opens Study, Topics, Family, and About as menus, each led by its own page, and Essays as a plain link", () => {
+    const leads: Record<string, string> = { Study: "/study", Topics: "/topics", Family: "/family", About: "/about" };
     for (const g of SITE_NAV_GROUPS) {
-      if (g.title === "Study") expect(soleHeaderLink(g)).toBeNull();
-      else expect(soleHeaderLink(g)?.href).toBe(
-        { Essays: "/writing", Books: "/books", Resources: "/resources", About: "/about" }[g.title]
-      );
+      if (g.title === "Essays") {
+        expect(soleHeaderLink(g)?.href).toBe("/writing");
+        continue;
+      }
+      expect(soleHeaderLink(g), g.title).toBeNull();
+      expect(headerLinks(g)[0].href, g.title).toBe(leads[g.title]);
+      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(7);
     }
   });
 
   it("points every internal link at a route that exists", () => {
-    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, ...SEARCH_SHORTCUTS];
-    const dead = links.filter((l) => internal(l.href) && !isRoute(l.href)).map((l) => l.href);
+    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS];
+    const dead = links
+      .filter((l) => internal(l.href) && !isRoute(l.href) && !AWAITING_ITS_PAGE.has(l.href))
+      .map((l) => l.href);
     expect(dead).toEqual([]);
+  });
+
+  it("folds Resources into Topics and Family, and keeps /resources at the foot of the Topics menu", () => {
+    const hrefs = new Set([...SITE_NAV_GROUPS.flatMap((g) => g.links.map((l) => l.href)), LIBRARY_LINK.href]);
+    expect(FORMER_RESOURCES.filter((h) => !hrefs.has(h))).toEqual([]);
+    expect(headerLinks(group("Topics")).at(-1)?.href).toBe("/resources");
+    expect(group("Topics").links.at(-1)?.href).toBe("/resources");
+    for (const h of ["/answers", "/plans", "/assessments", "/tools"]) {
+      expect(headerLinks(group("Topics")).map((l) => l.href), h).toContain(h);
+    }
+    for (const h of ["/family/tonight", "/family/devotions", "/family/catechism", "/family/reading-plans"]) {
+      expect(headerLinks(group("Family")).map((l) => l.href), h).toContain(h);
+    }
+  });
+
+  it("puts Books under About, beside Speaking and Contact, with the three titles in the footer", () => {
+    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/contact"]);
+    const about = group("About").links.map((l) => l.href);
+    for (const b of BOOK_SHELF) expect(about, b.href).toContain(b.href);
   });
 
   it("marks outbound and mailto links external, and nothing else", () => {
@@ -93,13 +143,41 @@ describe("the header and footer", () => {
     expect(screen.getAllByRole("link", { name: "Find Help" })[0].getAttribute("href")).toBe("/help");
     expect(screen.getAllByRole("button", { name: /search/i }).length).toBeGreaterThan(0);
     expect(screen.getAllByRole("link", { name: "Subscribe" })[0].getAttribute("href")).toBe("/subscribe");
-    expect(screen.getByRole("button", { name: /Study/ }).getAttribute("aria-haspopup")).toBe("menu");
-    for (const [name, href] of [["Essays", "/writing"], ["Books", "/books"], ["Resources", "/resources"], ["About", "/about"]]) {
-      expect(screen.getByRole("link", { name }).getAttribute("href")).toBe(href);
+    for (const name of ["Study", "Topics", "Family", "About"]) {
+      expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-haspopup"), name).toBe("menu");
+    }
+    expect(screen.getByRole("link", { name: "Essays" }).getAttribute("href")).toBe("/writing");
+    for (const name of ["Books", "Resources"]) expect(screen.queryByRole("link", { name }), name).toBeNull();
+  });
+
+  it("opens each door's menu on its own links", () => {
+    renderWithProviders(<MinimalNav />);
+    for (const title of ["Topics", "Family", "About"]) {
+      fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
+      const menu = screen.getByRole("menu");
+      const shown = within(menu).getAllByRole("link").map((a) => a.getAttribute("href"));
+      expect(shown, title).toEqual(headerLinks(group(title)).map((l) => l.href));
+      fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
     }
   });
 
-  it("mirrors every group in the footer and keeps Find Help in it", () => {
+  it("on a phone, a tap on the next door's toggle does not first fold the open one", () => {
+    // Folding on mousedown shifts the panel, so the click lands on whatever
+    // moved under the finger and the next door never opens.
+    renderWithProviders(<MinimalNav />);
+    fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
+    fireEvent.click(screen.getByRole("button", { name: "Show Topics links" }));
+    const panel = document.getElementById("mobile-nav-panel")!;
+    expect(within(panel).getByRole("link", { name: "Start here: every topic" })).toBeTruthy();
+    const family = screen.getByRole("button", { name: "Show Family links" });
+    fireEvent.mouseDown(family);
+    expect(within(panel).getByRole("link", { name: "Start here: every topic" })).toBeTruthy();
+    fireEvent.click(family);
+    expect(within(panel).getByRole("link", { name: "Tonight at the table" }).getAttribute("href")).toBe("/family/tonight");
+    expect(within(panel).queryByRole("link", { name: "Start here: every topic" })).toBeNull();
+  });
+
+  it("mirrors every group in the footer and keeps Find Help and My Library in it", () => {
     renderWithProviders(<Footer />);
     const footer = screen.getByRole("contentinfo");
     for (const g of SITE_NAV_GROUPS) {
@@ -110,6 +188,7 @@ describe("the header and footer", () => {
       }
     }
     expect(within(footer).getByRole("link", { name: "Find Help" }).getAttribute("href")).toBe("/help");
+    expect(within(footer).getByRole("link", { name: "My Library" }).getAttribute("href")).toBe("/my-library");
   });
 });
 
