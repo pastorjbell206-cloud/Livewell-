@@ -460,10 +460,10 @@ img{display:block;max-width:100%}
 .home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
 .home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
 .home-tonight{margin:0 0 var(--s-4)}
-.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px var(--s-4)}
+.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px var(--s-4)}
 .home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
 .home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
-.home-tonight__link{padding:10px 0}
+.home-tonight__link{padding:13px 0}
 
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the

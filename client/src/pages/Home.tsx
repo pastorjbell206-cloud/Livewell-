@@ -150,7 +150,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          {/* Not a fourth door: one quiet line to the things people use. */}
+          {/* Not another door: one quiet line to the things people use. */}
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-4) 0 0" }}>
             Also here, all free:{" "}
             <Link href="/resources" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>

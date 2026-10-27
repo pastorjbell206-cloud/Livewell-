@@ -135,15 +135,27 @@ export interface ContinueItem {
   when: string;
 }
 
-const isDraft = (x: unknown): x is { answers: Record<string, unknown>; savedAt: string } =>
-  isObject(x) && typeof x.savedAt === "string" && isObject(x.answers);
+type Draft = { answers: Record<string, unknown>; savedAt: string; setAside?: unknown };
+const isDraft = (x: unknown): x is Draft => isObject(x) && typeof x.savedAt === "string" && isObject(x.answers);
+const isKeyedRuns = isArrayOf((x): x is { date: string; key?: unknown } => isObject(x) && typeof x.date === "string");
+
+/**
+ * The answers' fingerprint as SelfCheckHistory records it (each page's
+ * `answersKey`): the answers alone, or with the Life Audit's set-aside areas.
+ */
+const draftKey = (d: Draft) =>
+  Array.isArray(d.setAside) && d.setAside.length ? JSON.stringify({ answers: d.answers, setAside: d.setAside }) : JSON.stringify(d.answers);
 
 /**
  * The one thing on this device to continue, for Home: an eight-week plan not
  * yet walked through, or a self-check left part-way (answers saved after its
- * last finished result, or never finished). The most recent wins; null when
- * there is nothing. Essays are not offered, because the site remembers only
- * the essays a reader finished (lib/readProgress), never one begun.
+ * last finished result, or never finished). A self-check whose saved answers
+ * are the ones its last result was taken from is finished, however recently
+ * they were saved: opening the results again, or "Change my answers" and
+ * changing nothing, saves them again without a new result. The most recent
+ * wins; null when there is nothing. Essays are not offered, because the site
+ * remembers only the essays a reader finished (lib/readProgress), never one
+ * begun.
  */
 export function continueHere(): ContinueItem | null {
   if (typeof window === "undefined") return null;
@@ -159,8 +171,9 @@ export function continueHere(): ContinueItem | null {
   for (const [id, key] of Object.entries(SELF_CHECK_DRAFTS)) {
     const draft = readStoredJSON(key, isDraft, null);
     if (!draft || Object.keys(draft.answers).length === 0) continue;
-    const runs = readStoredJSON(`livewell-history-${id}`, isRuns, []);
-    const finished = runs.length > 0 && runs[runs.length - 1].date >= draft.savedAt;
+    const runs = readStoredJSON(`livewell-history-${id}`, isKeyedRuns, []);
+    const last = runs[runs.length - 1];
+    const finished = !!last && (last.date >= draft.savedAt || last.key === draftKey(draft));
     if (!finished) items.push({ href: SELF_CHECKS[id].href, label: `the ${SELF_CHECKS[id].title}`, when: draft.savedAt });
   }
 

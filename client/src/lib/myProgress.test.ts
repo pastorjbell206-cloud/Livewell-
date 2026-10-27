@@ -57,6 +57,23 @@ describe("continueHere", () => {
     expect(continueHere()?.href).toBe("/tools/life-audit");
   });
 
+  it("does not offer a finished self-check whose same answers were saved again", () => {
+    // Seeing the results again, or "Change my answers" and changing nothing,
+    // saves the answers later than the result, and SelfCheckHistory records no new run.
+    const answers = { 0: 3, 1: 5 };
+    localStorage.setItem("livewell-history-emotional-health", JSON.stringify([{ date: "2026-10-20T12:00:00.000Z", total: 0.5, areas: {}, key: JSON.stringify(answers) }]));
+    localStorage.setItem("livewell-progress-emotional-health", draft("2026-10-25T08:00:00.000Z", answers));
+    expect(continueHere()).toBeNull();
+    // The Life Audit's fingerprint carries the areas set aside.
+    const setAside = ["work"];
+    localStorage.setItem("livewell-history-life-audit", JSON.stringify([{ date: "2026-10-20T12:00:00.000Z", total: 0.5, areas: {}, key: JSON.stringify({ answers, setAside }) }]));
+    localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers, step: 0, savedAt: "2026-10-25T08:00:00.000Z", setAside }));
+    expect(continueHere()).toBeNull();
+    // One answer changed: part-way again.
+    localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers: { ...answers, 1: 2 }, step: 0, savedAt: "2026-10-25T09:00:00.000Z", setAside }));
+    expect(continueHere()?.href).toBe("/tools/life-audit");
+  });
+
   it("ignores a self-check with no answers yet, and values it cannot trust", () => {
     localStorage.setItem("livewell-progress-marriage-assessment", draft("2026-10-20T12:00:00.000Z", {}));
     localStorage.setItem("livewell-progress-emotional-health", "{oops");
