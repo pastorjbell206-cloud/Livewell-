@@ -15,6 +15,9 @@
  *  - nation essays: title/subtitle, >= 4 sections each >= 120 words, and
  *    >= 3 furtherReading entries carrying BOTH a title and a real author
  *    (citation integrity: this surface claims to be historical and factual).
+ *  - topic pages flagged politics: true (U25, scripts/lib/topics-politics.mjs):
+ *    bothWays.right and .left, each a line, an essay, and a guided path, the
+ *    lines within the same 55% word band; the short answer names both.
  *  - disruption/justice topics with captureDetail: BOTH .right and .left
  *    populated, each with whatItLooksLike/inThePast/now, and the two sides'
  *    descriptions within a 55% word band (no side gets a strawman by
@@ -24,6 +27,7 @@
  *
  * Exits non-zero with a findings list so CI fails loudly.
  */
+import { checkTopicPolitics } from "./lib/topics-politics.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -85,6 +89,11 @@ if (fs.existsSync(NATION)) {
     walkStrings(rel, e);
   }
 }
+
+/* ---------------- topic pages on politics (the same instrument on /topics) ---------------- */
+const topicPolitics = checkTopicPolitics({ publicDir: PUB, forbidden: FORBIDDEN_WORDS });
+for (const [file, msg] of topicPolitics.findings) note(file, msg);
+if (!topicPolitics.findings.length) console.log(`[validate-politics] ${topicPolitics.pages} politics topic page(s) hold both directions.`);
 
 /* ---------------- disruption / justice topics (the symmetry gate) ---------------- */
 for (const section of ["disruption", "justice"]) {
