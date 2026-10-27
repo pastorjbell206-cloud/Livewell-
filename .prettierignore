@@ -12,6 +12,9 @@ build/
 coverage/
 # Written by scripts; CI compares them byte for byte with a fresh build.
 client/src/lib/*.generated.ts
+# Stored byte for byte as fetched (verify-sources.mjs checks each sha256);
+# PROVENANCE.md's list is generated from manifest.json.
+scripts/data/history-sources/
 
 # Package files
 package-lock.json

@@ -48,9 +48,21 @@ the public domain.
   quotation-mark style, dash style and spacing are ignored; every word and
   every other mark must match. Footnote numbers are not part of the text.
 - An omission is marked with an ellipsis ("...", "…" or "[...]"); the pieces
-  either side are each found, in order, in one passage. A note is searched on
-  its own, never joined to the body. Each piece must be at least eight
-  characters.
+  either side are each found, in order, in one passage, and each begins no
+  more than 2,000 characters (about 350 words) after the end of the one
+  before. A longer omission makes two excerpts. Each piece must be at least
+  eight characters.
+- An excerpt is looked for in the author's text. The notes are the editors'
+  and translators' words, so a card that quotes a note says so with
+  `"inNote": true` and is matched against the notes alone; each note is
+  searched on its own, never joined to the body. Pliny's letter, translated in
+  full in McGiffert's note to Eusebius 3.33, is quoted this way. (A bracketed
+  editor's note in the stored *Apology* reads "The blood of Christians is the
+  seed of the Church"; Tertullian's text, in chapter 50, reads "the blood of
+  Christians is seed". Only the second can go on a card as Tertullian's.)
+- The author's text as stored still includes the editors' chapter headings and
+  the italic summaries at the head of some letters. The gate cannot tell them
+  apart from the author's words; a writer must not quote them as the author's.
 - No editorial insertions inside an excerpt. Put a clarification outside it.
 - A stored text is never edited to make a quotation pass. Fix the quotation.
 
@@ -60,8 +72,10 @@ the public domain.
 `client/public/history/sources/` and `client/public/history/sessions/`. In
 them, any object with an `"excerpt"` key, and every source card (an object
 with `"type": "source"`), is checked against the stored text named by its
-`"corpus"` key, or by the nearest enclosing object's `"corpus"`. Scripture
-blocks (`"type": "scripture"`) are left to the quotation gate (U27). A source
+`"corpus"` key, or by the nearest enclosing object's `"corpus"`, and against
+the notes rather than the author's text when it carries its own
+`"inNote": true`. Scripture blocks (`"type": "scripture"`) are left to the
+quotation gate (U27). A source
 card with no stored text fails: where a source could not be reached, the session
 tells it in the narrative and says so, rather than carrying a card no gate can
 check (master plan 7.2). Sources still in copyright are quoted briefly in the

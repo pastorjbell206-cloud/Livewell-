@@ -16,7 +16,9 @@
  *   excerpts    every excerpt in client/public/history/sources/ and
  *               client/public/history/sessions/ (the registry and the session
  *               pages, U30 and U32) is a normalized substring of the stored
- *               text it names, and every source card names one.
+ *               text it names (of the author's words, or of the notes when
+ *               the card says "inNote": true), and every source card names
+ *               one.
  *
  * The rules for matching are in scripts/lib/history-sources.mjs. A stored text
  * is never edited to make a quotation pass: fix the quotation.

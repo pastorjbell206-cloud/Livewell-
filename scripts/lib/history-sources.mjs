@@ -18,8 +18,14 @@
  * case, curly and straight quotation marks, dash forms, and runs of white
  * space are ignored; every word and every other mark must match. An ellipsis
  * ("...", "…", or "[...]") marks an omission: the pieces either side must each
- * be found, in order, within one passage. Footnote numbers are not part of the
- * text, and a note is searched on its own, never joined to the body.
+ * be found, in order, within one passage, each no more than MAX_GAP characters
+ * after the one before. Footnote numbers are not part of the text, and a note
+ * is searched on its own, never joined to the body.
+ *
+ * The notes are the editors' and translators' words, not the author's, so an
+ * excerpt is looked for in the author's text unless its card says it quotes a
+ * note ("inNote": true; Pliny's letter, translated in full in McGiffert's note
+ * to Eusebius 3.33, is the case the course needs).
  *
  * Plain node, no dependencies: CI runs it on main without a build.
  */
@@ -42,6 +48,12 @@ const GENERATED_END = "<!-- end of generated list -->";
 
 /** Shortest piece of an excerpt (between omissions) worth checking. */
 export const MIN_PIECE = 8;
+/**
+ * Longest stretch of the text, in normalized characters (about 350 words), one
+ * omission may pass over. Without it, pieces from opposite ends of a book
+ * could be joined into a sentence its author never wrote.
+ */
+export const MAX_GAP = 2000;
 
 /* ------------------------------------------------------------------ text */
 
@@ -85,10 +97,11 @@ function fragmentToText(html) {
 }
 
 /**
- * A Writings-Database page as plain passages: the body first, then each note
- * on its own. Handles the repository's standard fragment (footnote references
- * in <sup>, notes in <section class="notes">) and the older pages mirrored from
- * Word documents (endnote anchors to #_edn, notes in mso-element:endnote divs).
+ * A Writings-Database page as plain passages: the body first (passage 0), then
+ * each note on its own. Handles the repository's standard fragment (footnote
+ * references in <sup>, notes in <section class="notes">) and the older pages
+ * mirrored from Word documents (endnote anchors to #_edn, notes in
+ * mso-element:endnote divs).
  */
 export function wdbHtmlToPassages(html) {
   let s = html
@@ -110,10 +123,11 @@ export function wdbHtmlToPassages(html) {
       .replace(/<a\b[^>]*href=["']?#(?:fn|r|_edn|_ftn)[^>]*>[\s\S]*?<\/a>/gi, "");
   const body = fragmentToText(dropRefs(s));
   const notePassages = notes.map((n) => fragmentToText(dropRefs(n))).filter(Boolean);
-  return [body, ...notePassages].filter(Boolean);
+  // The body is always passage 0, even if empty, so the notes are always 1 onward.
+  return [body, ...notePassages];
 }
 
-/** A plain text file (a Project Gutenberg text, say) is one passage. */
+/** A plain text file (a Project Gutenberg text, say) is one passage, the body, with no notes. */
 export function plainTextToPassages(text) {
   return [text.replace(/\r\n?/g, "\n")];
 }
@@ -150,32 +164,66 @@ export function excerptPieces(excerpt) {
 const NORMALIZED = new WeakMap();
 
 /**
- * Look for an excerpt in a text's passages. Returns { ok: true, passage } or
- * { ok: false, reason, agreesTo } where agreesTo is the longest opening of the
- * first missing piece that the text does contain (to show a writer where the
- * quotation departs from the source).
+ * Whether the pieces sit in one normalized passage in order, each starting no
+ * more than maxGap characters after the end of the one before. Every
+ * occurrence of each piece is tried (the first is not always the one that
+ * fits), and a position already ruled out is not tried twice.
  */
-export function findExcerpt(passages, excerpt) {
+function piecesInOrder(hay, pieces, maxGap) {
+  const failed = new Set();
+  const place = (k, from, limit) => {
+    if (k === pieces.length) return true;
+    for (let at = hay.indexOf(pieces[k], from); at >= 0 && at <= limit; at = hay.indexOf(pieces[k], at + 1)) {
+      const end = at + pieces[k].length;
+      const key = `${k}:${end}`;
+      if (failed.has(key)) continue;
+      if (place(k + 1, end, end + maxGap)) return true;
+      failed.add(key);
+    }
+    return false;
+  };
+  return place(0, 0, Infinity);
+}
+
+/**
+ * Look for an excerpt in a text's passages: in the author's text (passage 0)
+ * or, with { inNote: true }, in the notes (passages 1 onward). Returns
+ * { ok: true, passage } or { ok: false, reason, agreesTo } where agreesTo is
+ * the longest opening of the first missing piece that the text does contain
+ * (to show a writer where the quotation departs from the source).
+ */
+export function findExcerpt(passages, excerpt, { inNote = false } = {}) {
   const pieces = excerptPieces(excerpt);
   if (!pieces.length) return { ok: false, reason: "the excerpt is empty" };
   const short = pieces.find((p) => p.length < MIN_PIECE);
   if (short !== undefined) {
     return { ok: false, reason: `"${short}" is too short to check on its own; quote more around each omission` };
   }
-  let hay = NORMALIZED.get(passages);
-  if (!hay) {
-    hay = passages.map(normalizeForMatch);
-    NORMALIZED.set(passages, hay);
+  let all = NORMALIZED.get(passages);
+  if (!all) {
+    all = passages.map(normalizeForMatch);
+    NORMALIZED.set(passages, all);
   }
-  for (let i = 0; i < hay.length; i++) {
-    let from = 0;
-    let all = true;
-    for (const piece of pieces) {
-      const at = hay[i].indexOf(piece, from);
-      if (at < 0) { all = false; break; }
-      from = at + piece.length;
-    }
-    if (all) return { ok: true, passage: i };
+  const indexes = (notes) => all.map((_, i) => i).filter((i) => (i > 0) === notes);
+  const within = indexes(inNote);
+  const found = within.find((i) => piecesInOrder(all[i], pieces, MAX_GAP));
+  if (found !== undefined) return { ok: true, passage: found };
+
+  if (indexes(!inNote).some((i) => piecesInOrder(all[i], pieces, MAX_GAP))) {
+    const reason = inNote
+      ? `is in the author's text, not in a note; drop "inNote"`
+      : `is only in the editors' or translators' notes, not in the author's text; a card that quotes a note says so with "inNote": true`;
+    return { ok: false, reason, agreesTo: "" };
+  }
+
+  const hay = within.map((i) => all[i]);
+  if (!hay.length) return { ok: false, reason: "is not in the stored text, which has no notes", agreesTo: "" };
+  if (pieces.length > 1 && hay.some((h) => piecesInOrder(h, pieces, Infinity))) {
+    return {
+      ok: false,
+      reason: `has pieces that are in the text in this order, but more than ${MAX_GAP} characters apart; an omission that long makes two excerpts, not one`,
+      agreesTo: "",
+    };
   }
   const missing = pieces.find((p) => !hay.some((h) => h.includes(p))) ?? pieces[0];
   const words = missing.split(" ");
@@ -331,8 +379,9 @@ function jsonFiles(dir) {
  * source card (an object with type "source"). Each is checked against the
  * stored text named by its own "corpus" key or, failing that, the nearest
  * enclosing object's, so a sources file can name its text once above a list
- * of excerpts. Scripture blocks (type "scripture") are the quotation gate's
- * (U27), not this one's.
+ * of excerpts. An excerpt quoting a note rather than the author says so with
+ * its own "inNote": true. Scripture blocks (type "scripture") are the quotation
+ * gate's (U27), not this one's.
  */
 export function collectExcerpts(value) {
   const found = [];
@@ -341,7 +390,7 @@ export function collectExcerpts(value) {
     if (!v || typeof v !== "object") return;
     const here = Object.hasOwn(v, "corpus") ? v.corpus : corpus;
     const isCard = v.type === "source" || (Object.hasOwn(v, "excerpt") && v.type !== "scripture");
-    if (isCard) found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt });
+    if (isCard) found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt, inNote: v.inNote });
     for (const [k, x] of Object.entries(v)) walk(x, p ? `${p}.${k}` : k, here);
   };
   walk(value, "", undefined);
@@ -379,10 +428,11 @@ export function excerptProblems(texts, root = ROOT, files = null) {
       const t = byId.get(x.corpus);
       if (!t) { problems.push(`${where}: "${x.corpus}" is not a stored text in ${CORPUS_DIR}/${MANIFEST_FILE}`); continue; }
       if (!nonEmpty(x.excerpt)) { problems.push(`${where}: "excerpt" is missing or empty`); continue; }
+      if (x.inNote !== undefined && typeof x.inNote !== "boolean") { problems.push(`${where}: "inNote" must be true or false`); continue; }
       const passages = passagesOf(t);
       if (!passages) { problems.push(`${where}: the stored text "${t.id}" cannot be read`); continue; }
       checked++;
-      const r = findExcerpt(passages, x.excerpt);
+      const r = findExcerpt(passages, x.excerpt, { inNote: x.inNote === true });
       if (!r.ok) {
         const agree = r.agreesTo ? ` The text agrees as far as "…${r.agreesTo.slice(-60)}" and then differs.` : "";
         problems.push(`${where}: excerpt ${r.reason} (${t.id}).${agree}`);

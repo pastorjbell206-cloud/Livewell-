@@ -33,8 +33,10 @@ the first 3 KB) was fetched on 2026-10-27 and its title read:
 No commit id could be read for TCP or PG repositories (GitHub's API was
 refused), so a text from them is pinned by its sha256 when it is stored.
 
-The printed works are all long out of copyright. Project Gutenberg clears each
-text as public domain in the United States. The TCP index marks the
+Most of the printed works are long out of copyright; a few translations are
+twentieth-century (the 1947 Rule of Benedict, Smith's Small Catechism), and
+those rows say so. Project Gutenberg clears each text as public domain in the
+United States. The TCP index marks the
 transcriptions it released freely as "Free"; for those it marks "Restricted"
 (its second phase), confirm the TCP's current terms before storing one.
 
@@ -123,7 +125,7 @@ copyright.
 | Aristides, *Apology* 15 (how Christians live) | Reachable | WDB `Aristides the Philosopher/The Apology/Translation from the Syriac_1891.html` | *Texts and Studies* vol. 1 (Cambridge, 1891), edited by J. Armitage Robinson, as its prefatory matter says | Confirm the translator there before use |
 | Dionysius of Alexandria on the plague (Eusebius 7.22) | Stored | `eusebius-church-history-7` | NPNF, McGiffert | |
 | Cyprian, *On the Mortality*; Minucius Felix, *Octavius* | Reachable | WDB `Cyprian/Treatise 7. On the Mortality.html`; `Marcus Minucius Felix/The Octavius of Minucius Felix.html` | ANF vols. 5 and 4 | Ordinary life, the plague |
-| Julian, letter to Arsacius (on Christian care for the poor) | Not reachable | Wilmer Cave Wright's Loeb translation (1913): PG's volumes 1 and 2 (#48664, #48768) never mention Arsacius, and the volume with the letters is not in the mirror list; Perseus lists no Julian texts | | Tell it in the narrative |
+| Julian, letter to Arsacius (on Christian care for the poor) | Not reachable | Wilmer Cave Wright's Loeb translation (three volumes, 1913 to 1923; the letters are in the third): PG's volumes 1 and 2 (#48664, #48768) never mention Arsacius, and the volume with the letters is not in the mirror list; Perseus lists no Julian texts | | Tell it in the narrative |
 | Eusebius on the long peace (8.1) | Stored | `eusebius-church-history-8` | NPNF, McGiffert | |
 
 ## Part II. The Church Given Power (313 to 600)

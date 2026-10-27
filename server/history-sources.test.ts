@@ -1,7 +1,8 @@
 /**
  * The history sources gate (scripts/verify-sources.mjs, unit U07): it passes
  * on the stored texts as committed, finds real excerpts in them, and fails a
- * seeded altered excerpt, a card with no stored text, a stored text edited
+ * seeded altered excerpt, an editor's note quoted as the author, pieces joined
+ * across a long omission, a card with no stored text, a stored text edited
  * after it was fetched, and a manifest that has lost a provenance field.
  */
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
@@ -11,6 +12,7 @@ import os from "node:os";
 import path from "node:path";
 import {
   CORPUS_DIR,
+  MAX_GAP,
   collectExcerpts,
   excerptPieces,
   findExcerpt,
@@ -79,7 +81,8 @@ describe("the committed corpus", () => {
   });
 
   it("finds real excerpts, across footnote markers, notes, and marked omissions", () => {
-    expect(findExcerpt(read("eusebius-church-history-3"), PLINY).ok).toBe(true);
+    // Pliny's letter is in McGiffert's note, so its card says it quotes a note.
+    expect(findExcerpt(read("eusebius-church-history-3"), PLINY, { inNote: true }).ok).toBe(true);
     expect(findExcerpt(read("martyrdom-of-polycarp"), "Eighty and six years have I served Him").ok).toBe(true);
     expect(findExcerpt(read("tertullian-apology"), "the blood of Christians is seed").ok).toBe(true);
     // An endnote anchor sits after "Macarius" in this Word-exported page.
@@ -90,7 +93,7 @@ describe("the committed corpus", () => {
   });
 
   it("fails an altered excerpt and says how far it agrees", () => {
-    const r = findExcerpt(read("eusebius-church-history-3"), PLINY_ALTERED);
+    const r = findExcerpt(read("eusebius-church-history-3"), PLINY_ALTERED, { inNote: true });
     expect(r.ok).toBe(false);
     expect(r.agreesTo).toBe("it is my custom, my lord, to refer to");
   });
@@ -103,6 +106,27 @@ describe("the committed corpus", () => {
     const swapped = findExcerpt(d, `${b} ... ${a}`);
     expect(swapped.ok).toBe(false);
     expect(swapped.reason).toMatch(/not in this order/);
+  });
+
+  it("does not take an editor's note for the author's words", () => {
+    const t = read("tertullian-apology");
+    // Tertullian's text (chapter 50) against the popular form a bracketed note gives.
+    expect(findExcerpt(t, "the blood of Christians is seed").ok).toBe(true);
+    const misquote = findExcerpt(t, "The blood of Christians is the seed of the Church.");
+    expect(misquote.ok).toBe(false);
+    expect(misquote.reason).toMatch(/only in the editors' or translators' notes/);
+    expect(findExcerpt(t, "the blood of Christians is seed", { inNote: true }).reason).toMatch(/drop "inNote"/);
+    expect(findExcerpt(read("eusebius-church-history-3"), PLINY).reason).toMatch(/"inNote": true/);
+  });
+
+  it("will not join pieces from far apart in a book into one sentence", () => {
+    // Both pieces are in City of God 5, about 112,000 characters apart.
+    const r = findExcerpt(read("augustine-city-of-god-5"), "the Christian emperors ... are to be worshipped");
+    expect(r.ok).toBe(false);
+    expect(r.reason).toMatch(new RegExp(`more than ${MAX_GAP} characters apart`));
+    // A whole chapter (Diognetus 5, about 2,000 characters) can still be quoted with its middle left out.
+    const d = read("epistle-to-diognetus");
+    expect(findExcerpt(d, "For the Christians are distinguished from other men ... They are evil spoken of, and yet are justified").ok).toBe(true);
   });
 });
 
@@ -130,8 +154,16 @@ describe("the matching rules", () => {
     const passages = wdbHtmlToPassages(html);
     expect(passages).toHaveLength(3);
     expect(findExcerpt(passages, "First words run on here").ok).toBe(true);
-    expect(findExcerpt(passages, "A note that says one thing.").ok).toBe(true);
-    expect(findExcerpt(passages, "says one thing. Another note").ok).toBe(false);
+    expect(findExcerpt(passages, "First words run on here", { inNote: true }).ok).toBe(false);
+    expect(findExcerpt(passages, "A note that says one thing.", { inNote: true }).ok).toBe(true);
+    expect(findExcerpt(passages, "A note that says one thing.").ok).toBe(false);
+    expect(findExcerpt(passages, "says one thing. Another note", { inNote: true }).ok).toBe(false);
+  });
+
+  it("finds pieces in order even when the first place a piece appears is not the one that fits", () => {
+    const filler = "and so on. ".repeat(300);
+    const text = [`the first piece sits here, ${filler} the first piece sits here again, then the second piece close by.`];
+    expect(findExcerpt(text, "the first piece sits here ... the second piece close by").ok).toBe(true);
   });
 
   it("finds excerpts in sources files and session blocks, naming the text once or per card", () => {
@@ -145,6 +177,7 @@ describe("the matching rules", () => {
       ["b", "y"],
       ["a", undefined],
     ]);
+    expect(collectExcerpts({ type: "source", corpus: "c", excerpt: "v", inNote: true })[0].inNote).toBe(true);
   });
 });
 
@@ -153,7 +186,7 @@ describe("seeded files", () => {
     const root = fixture("good", {
       "client/public/history/sessions/test-session.json": session([
         { type: "prose", text: "Pliny wrote to Trajan." },
-        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY },
+        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY, inNote: true },
       ]),
       "client/public/history/sources/polycarp.json": {
         id: "polycarp",
@@ -170,7 +203,7 @@ describe("seeded files", () => {
   it("fails a seeded altered excerpt, naming the file, the card and the text", () => {
     const root = fixture("altered", {
       "client/public/history/sessions/test-session.json": session([
-        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY_ALTERED },
+        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY_ALTERED, inNote: true },
       ]),
     });
     const r = verify("--root", root);
@@ -178,6 +211,19 @@ describe("seeded files", () => {
     expect(r.stderr).toContain("client/public/history/sessions/test-session.json blocks[0]");
     expect(r.stderr).toContain("is not in the stored text (eusebius-church-history-3)");
     expect(r.stderr).toContain("to refer to");
+  });
+
+  it("fails a card that quotes a note as the author, and an inNote that is not true or false", () => {
+    const root = fixture("note-as-author", {
+      "client/public/history/sessions/test-session.json": session([
+        { type: "source", corpus: "tertullian-apology", excerpt: "The blood of Christians is the seed of the Church." },
+        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY, inNote: "yes" },
+      ]),
+    });
+    const r = verify("--root", root);
+    expect(r.status).toBe(1);
+    expect(r.stderr).toMatch(/blocks\[0\]: excerpt is only in the editors' or translators' notes/);
+    expect(r.stderr).toMatch(/blocks\[1\]: "inNote" must be true or false/);
   });
 
   it("fails a source card with no stored text, and one that names a text not stored", () => {
