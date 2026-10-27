@@ -60,7 +60,7 @@ Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suf
 - Hume, *Dialogues*, a skeptic remarks: "Epicurus's old questions are yet unanswered." Verified verbatim in Gutenberg (GITenberg) #4583, Part X, spoken by Philo, the skeptic of the dialogue (the edition prints "EPICURUS's").
 - "Fourteen centuries later": arithmetic from the early fourth century to the *Dialogues* (published 1779). Textbook.
 - Twentieth-century philosophers pressed it as a strict contradiction; Plantinga's free will defense persuaded many on both sides, atheists among them, that there is none. Textbook in philosophy of religion. Not re-checked (writer's 2026-10-26 search record: Mackie's concession in *The Miracle of Theism*, 1982, as quoted in secondary sources).
-- "God cannot make creatures truly free and also guarantee what they will choose." Plain summary of the free will defense. Interpretation.
+- "His argument was that God cannot make creatures truly free and also guarantee what they will choose." Plain summary of the free will defense, now attributed to Plantinga rather than asserted in the essay's own voice (voice edit, 2026-10-27), so the essay does not take a side on the Reformed and Arminian question it later leaves open. Interpretation.
 - William Rowe, 1979, the fawn burned in a lightning-started forest fire, in terrible agony for several days before it dies; such suffering appears, so far as we can see, pointless. Attributed paraphrase, no quotation marks. Year textbook. Wording not re-checked (writer's 2026-10-26 search record: excerpt of Rowe, "The Problem of Evil and Some Varieties of Atheism", *American Philosophical Quarterly* 16, 1979). Rowe described as an atheist: textbook.
 - Darwin, 1860 letter to the botanist Asa Gray: could not persuade himself a good and all-powerful God would have designed wasps that feed inside living caterpillars. Attributed paraphrase. Year and Gray: textbook. Wording not re-checked (writer's 2026-10-26 search record: secondary quotations of the letter of 22 May 1860 on the Ichneumonidae; no GitHub copy of Darwin's letters could be located).
 
@@ -117,7 +117,7 @@ Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suf
 - *When Bad Things Happen to Good People*, published 1981. Textbook.
 - Kushner's conclusion that God is wholly loving and just but limited in power. Not re-checked (writer's 2026-10-26 search record: JTA).
 - "millions of readers": general. Not re-checked (writer's record: about four million copies).
-- "Some Christians have since reached a gentler form of his conclusion." General; no names. Not checked.
+- "Some Christians have since reached a gentler form of his conclusion." Cut in the voice edit of 2026-10-27: vague, unsourced, and not needed for the argument.
 
 ## Providence
 
@@ -150,7 +150,7 @@ Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suf
 - Psalm 88 never turns to praise; its last line, Psalm 88:18 "You have caused my beloved and my friend to shun me; my companions have become darkness". ESV copy: match, and 88:18 is the psalm's last verse in the copy.
 - Matthew 27:46 "My God, my God, why have you forsaken me?", the first line of Psalm 22. ESV copy: match in both Matthew 27:46 and Psalm 22:1.
 - "Many American churches have stopped praying this way." Characterization; no statistic claimed.
-- Holy Saturday kept by the church. Textbook.
+- Holy Saturday kept in the church's calendar (wording narrowed from "The church keeps" in the voice edit of 2026-10-27, since not every church observes it). Textbook.
 - Romans 12:15 "Rejoice with those who rejoice, weep with those who weep." ESV copy: match, comma and all (other site files use a semicolon).
 
 ## Nicholas Wolterstorff
@@ -173,6 +173,14 @@ Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suf
 - Revelation 21:4 "He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away". ESV copy: match.
 - "still carry the marks of the nails": John 20:25-27 and theological inference. Not a factual claim.
 - Closing Texts, Romans 8:18 "For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us." ESV copy: match.
+
+## Voice edit (2026-10-27)
+
+- Wording changes only; no fact, quotation, number, date, name or link was added or removed except the cut Kushner sentence above. A script compared every quotation and every link before and after the edit: all 33 quotations and all four links identical.
+- Standfirst: "the strongest objection" became "the hardest objection", and "most of its defenders" became "many of its defenders" (overclaims).
+- Job 2:13: "the best thing anyone does in the book" became "the wisest thing they do in the whole book" (overclaim; God and Job act in the book too).
+- Romans 8:28: "That is what Paul means" became "Paul says something close to this" (the verse is related to Genesis 50:20 and Acts 2:23, not a restatement of them).
+- Headings made plain: "Jesus and the Question of Blame", "Natural Evil and Animal Suffering", "The Psalms of Lament", "The Cross and the Resurrection".
 
 ## Mechanics and links
 
