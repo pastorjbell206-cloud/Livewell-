@@ -1,7 +1,7 @@
 From 4b4a5232db882d253e9b06e8dbba1acffcb8f6a1 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 16:10:17 +0000
-Subject: [PATCH] Home: Find and tonight (U18)
+Subject: [PATCH 1/2] Home: Find and tonight (U18)
 
 One field under the hero sends a reference to the verse in the Study Bible and anything else to /search, with the search module and reference parser loaded when the field is focused. Beneath it, tonight's family devotion by name, from the year map alone (titles added to familyYear.generated.ts), Continue beside it when this device has an eight-week plan or a self-check left part-way (myProgress.continueHere), and the Advent line folded in from AdventAtTheTable. Family joins Home's doors. The static hero and first paint are unchanged.
 
