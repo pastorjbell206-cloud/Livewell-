@@ -18,6 +18,7 @@ import { leadMagnetsRouter } from "./routers/lead-magnets";
 import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
+import { listPublishedInput, pickListing } from "./posts-listing";
 import {
   // Files
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
@@ -108,8 +109,15 @@ export const appRouter = router({
 
   // ─── Posts (Writing) ─────────────────────────────────────────────
   posts: router({
-    /** Public: list published posts (FULL — includes body; use sparingly) */
-    listPublished: publicProcedure.query(async () => listPosts(true)),
+    /**
+     * Public: list published posts (FULL — includes body; use sparingly).
+     * Optional input { slugs, since } narrows it to the rows named by slug or
+     * dated at or after `since` (/writing asks for its shelf this way). The
+     * production function applies the same rule (api/index.ts pickListing).
+     */
+    listPublished: publicProcedure
+      .input(listPublishedInput)
+      .query(async ({ input }) => pickListing(await listPosts(true), input)),
 
     /** Public: slim list for the /writing index — no body */
     listForIndex: publicProcedure.query(async () => listPostsForIndex()),
