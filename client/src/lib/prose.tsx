@@ -6,9 +6,16 @@
  * index.css) plus `.prose-section`, a modifier that suppresses the lead-article
  * drop cap — a drop cap belongs to the top of an article, not to every section
  * block. Plain-text fields are split into readable paragraphs (honoring real
- * breaks, else grouping sentences); pass `markdown` to render Markdown instead.
+ * breaks, else grouping sentences); pass `markdown` to render Markdown instead,
+ * and `verseRefs` to make the Scripture references in it live (VerseRef).
+ * VerseRef loads only when a page passes `verseRefs`; until it arrives the
+ * paragraphs read as plain prose.
  */
+import { lazy, Suspense } from "react";
 import { Markdown } from "@/components/Markdown";
+import type { VerseRefMode } from "@/components/VerseRef";
+
+const RefText = lazy(() => import("@/components/VerseRef").then((m) => ({ default: m.RefText })));
 
 /**
  * Turn a prose field into readable paragraphs. Honors explicit blank-line
@@ -39,16 +46,27 @@ export function Prose({
   text,
   markdown = false,
   className = "",
+  verseRefs,
 }: {
   text: string;
   markdown?: boolean;
   className?: string;
+  /** "sheet" on pages that quote the BSB or nothing; "link" on pages that quote the ESV. */
+  verseRefs?: VerseRefMode;
 }) {
+  const paragraphs = markdown ? [] : toParagraphs(text);
+  const plain = paragraphs.map((p, i) => <p key={i}>{p}</p>);
   return (
     <div className={`article-body prose-section ${className}`.trim()}>
-      {markdown
-        ? <Markdown>{text}</Markdown>
-        : toParagraphs(text).map((p, i) => <p key={i}>{p}</p>)}
+      {markdown ? (
+        <Markdown verseRefs={verseRefs}>{text}</Markdown>
+      ) : verseRefs ? (
+        <Suspense fallback={plain}>
+          {paragraphs.map((p, i) => <p key={i}><RefText text={p} mode={verseRefs} /></p>)}
+        </Suspense>
+      ) : (
+        plain
+      )}
     </div>
   );
 }

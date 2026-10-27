@@ -63,8 +63,23 @@ const isChapter = (x: unknown): x is BibleChapter =>
   typeof x === "object" && x !== null && Array.isArray((x as BibleChapter).verses);
 const isRecord = <T,>(x: unknown): x is Record<string, T> => typeof x === "object" && x !== null && !Array.isArray(x);
 
+/**
+ * A chapter's text alone: verse numbers and the BSB words, without the
+ * original words and cross-references (scripts/build-bible-text.mjs). The
+ * verse sheet reads these: John 3 is about 4 KB here and 42 KB in full.
+ */
+export interface BibleTextChapter {
+  book: string;
+  chapter: number;
+  verses: Pick<BibleVerse, "v" | "t" | "later">[];
+}
+const isTextChapter = (x: unknown): x is BibleTextChapter =>
+  isChapter(x) && x.verses.every((v) => typeof v?.v === "number" && typeof v?.t === "string");
+
 export const fetchBooks = () => cached("/bible/books.json", isArray);
 export const fetchChapter = (slug: string, chapter: number) => cached(`/bible/ch/${slug}/${chapter}.json`, isChapter);
+export const fetchChapterText = (slug: string, chapter: number) =>
+  cached(`/bible/text/${slug}/${chapter}.json`, isTextChapter);
 export const fetchMorph = (lang: "H" | "G") => cached(`/bible/morph/${lang}.json`, isRecord<string>);
 
 export const langOf = (strong: string): "H" | "G" | null =>
