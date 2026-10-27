@@ -1,0 +1,248 @@
+From 07a4f593024eff003f4836306cba040cd90120e4 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 19:08:13 +0000
+Subject: [PATCH 2/2] U19 review: doors that open as menus behave like the
+ links they replaced
+
+About, Topics, and Family were plain links or did not exist before
+2026-10-26; as menus they lost three things a reader had:
+
+- Desktop: a mouse that hovered a door and then clicked it folded the
+  menu the hover had just opened (About most of all, which used to be a
+  link). The click after a hover now keeps it open; a second click, or
+  Enter from the keyboard, toggles as before.
+- Desktop: the door holding the page in view reads as current
+  (mustard-text and aria-current), by the longest matching header link,
+  so /resources/creeds is Study and /books is About.
+- Phone: the whole row of a door is its toggle, not only the chevron at
+  the right edge; rows keep their 48px rhythm.
+
+Three tests in siteNav.test.tsx, each failing without its fix.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/components/MinimalNav.tsx | 111 ++++++++++++++++-----------
+ client/src/lib/siteNav.test.tsx      |  48 ++++++++++++
+ 2 files changed, 113 insertions(+), 46 deletions(-)
+
+diff --git a/client/src/components/MinimalNav.tsx b/client/src/components/MinimalNav.tsx
+index 610ce175..ab6e3b74 100644
+--- a/client/src/components/MinimalNav.tsx
++++ b/client/src/components/MinimalNav.tsx
+@@ -74,10 +74,27 @@ export default function MinimalNav() {
+   // open, closing one group on mousedown shifts the panel, and the click
+   // that should open the next group lands on whatever moved under it.
+   const mobilePanelRef = useRef<HTMLDivElement>(null);
++  // The door a mouse opened by hovering. The click that usually follows
++  // (About was a plain link until 2026-10-26) keeps that menu open instead
++  // of folding it.
++  const hoverOpened = useRef<string | null>(null);
+ 
+   const isActive = (href: string) =>
+     location === href || location.startsWith(href + "/");
+ 
++  // The door that holds the page in view, by its longest matching header
++  // link, so /resources/creeds reads as Study and not Topics.
++  let currentDoor = "";
++  let currentLen = 0;
++  for (const g of HEADER_GROUPS) {
++    for (const l of headerLinks(g)) {
++      if (!l.external && isActive(l.href) && l.href.length > currentLen) {
++        currentDoor = g.title;
++        currentLen = l.href.length;
++      }
++    }
++  }
++
+   const prepareSearch = () => {
+     if (readPassage) return;
+     loadFind()
+@@ -369,21 +386,33 @@ export default function MinimalNav() {
+               <div key={group.title} style={{ display: "contents" }}>
+               <div
+                 style={{ position: "relative" }}
+-                onMouseLeave={() => openDropdown === group.title && setOpenDropdown(null)}
++                onMouseLeave={() => {
++                  hoverOpened.current = null;
++                  if (openDropdown === group.title) setOpenDropdown(null);
++                }}
+               >
+                 <button
+-                  onClick={() =>
+-                    setOpenDropdown(openDropdown === group.title ? null : group.title)
+-                  }
+-                  onMouseEnter={() => setOpenDropdown(group.title)}
++                  onClick={() => {
++                    if (hoverOpened.current === group.title) {
++                      hoverOpened.current = null;
++                      setOpenDropdown(group.title);
++                      return;
++                    }
++                    setOpenDropdown(openDropdown === group.title ? null : group.title);
++                  }}
++                  onMouseEnter={() => {
++                    if (openDropdown !== group.title) hoverOpened.current = group.title;
++                    setOpenDropdown(group.title);
++                  }}
+                   aria-haspopup="menu"
+                   aria-expanded={openDropdown === group.title}
++                  aria-current={currentDoor === group.title ? "true" : undefined}
+                   style={{
+                     display: "flex",
+                     alignItems: "center",
+                     gap: "4px",
+                     color:
+-                      openDropdown === group.title
++                      openDropdown === group.title || currentDoor === group.title
+                         ? "var(--mustard-text)"
+                         : "var(--ink)",
+                     fontFamily: "var(--U)",
+@@ -646,55 +675,45 @@ export default function MinimalNav() {
+               }
+               return (
+               <div key={group.title}>
+-                <div
++                {/* The whole row is the toggle: four of the five doors open
++                    here, and a tap on the name should do what the chevron does. */}
++                <button
++                  type="button"
++                  aria-label={`Show ${group.title} links`}
++                  aria-expanded={openDropdown === group.title}
++                  onClick={() =>
++                    setOpenDropdown(openDropdown === group.title ? null : group.title)
++                  }
+                   style={{
+                     display: "flex",
+                     alignItems: "center",
+                     justifyContent: "space-between",
++                    width: "100%",
++                    minHeight: "44px",
++                    background: "none",
++                    border: "none",
+                     borderBottom: "1px solid var(--border)",
++                    cursor: "pointer",
++                    padding: "12px 4px 12px 0",
++                    fontFamily: "var(--U)",
++                    color: "var(--ink)",
++                    fontSize: "14px",
++                    fontWeight: 600,
++                    lineHeight: "inherit",
++                    textAlign: "left",
+                   }}
+                 >
+-                  <span
+-                    style={{
+-                      flex: 1,
+-                      fontFamily: "var(--U)",
+-                      color: "var(--ink)",
+-                      fontSize: "14px",
+-                      fontWeight: 600,
+-                      padding: "12px 0",
+-                    }}
+-                  >
+-                    {group.title}
+-                  </span>
+-                  <button
+-                    type="button"
+-                    aria-label={`Show ${group.title} links`}
+-                    aria-expanded={openDropdown === group.title}
+-                    onClick={() =>
+-                      setOpenDropdown(openDropdown === group.title ? null : group.title)
+-                    }
++                  <span>{group.title}</span>
++                  <ChevronDown
++                    size={18}
++                    aria-hidden
+                     style={{
+-                      background: "none",
+-                      border: "none",
+-                      color: "var(--ink)",
+-                      cursor: "pointer",
+-                      padding: "12px 4px 12px 20px",
+-                      minHeight: "44px",
+-                      display: "inline-flex",
+-                      alignItems: "center",
++                      transform:
++                        openDropdown === group.title ? "rotate(180deg)" : "none",
++                      transition: "transform 0.2s",
+                     }}
+-                  >
+-                    <ChevronDown
+-                      size={18}
+-                      aria-hidden
+-                      style={{
+-                        transform:
+-                          openDropdown === group.title ? "rotate(180deg)" : "none",
+-                        transition: "transform 0.2s",
+-                      }}
+-                    />
+-                  </button>
+-                </div>
++                  />
++                </button>
+                 {openDropdown === group.title && (
+                   <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
+                     {headerLinks(group).map(item => (
+diff --git a/client/src/lib/siteNav.test.tsx b/client/src/lib/siteNav.test.tsx
+index 136758d6..546754cf 100644
+--- a/client/src/lib/siteNav.test.tsx
++++ b/client/src/lib/siteNav.test.tsx
+@@ -161,6 +161,54 @@ describe("the header and footer", () => {
+     }
+   });
+ 
++  it("keeps a door's menu open when a mouse hovers and then clicks it", () => {
++    // About was a plain link until 2026-10-26. The click a mouse makes after
++    // hovering must not fold the menu the hover just opened.
++    renderWithProviders(<MinimalNav />);
++    const about = screen.getByRole("button", { name: /^About$/ });
++    fireEvent.mouseEnter(about);
++    expect(within(screen.getByRole("menu")).getByRole("link", { name: "About James" })).toBeTruthy();
++    fireEvent.click(about);
++    expect(within(screen.getByRole("menu")).getByRole("link", { name: "About James" })).toBeTruthy();
++    fireEvent.click(about);
++    expect(screen.queryByRole("menu")).toBeNull();
++    // By keyboard (no hover), Enter on the door toggles it as before.
++    const family = screen.getByRole("button", { name: /^Family$/ });
++    fireEvent.click(family);
++    expect(within(screen.getByRole("menu")).getByRole("link", { name: "Tonight at the table" })).toBeTruthy();
++    fireEvent.click(family);
++    expect(screen.queryByRole("menu")).toBeNull();
++  });
++
++  it("marks the door that holds the page in view", () => {
++    const cases = [
++      ["/books/believe", "About"],
++      ["/family/tonight", "Family"],
++      ["/resources/creeds", "Study"],
++      ["/resources", "Topics"],
++      ["/writing", ""],
++    ] as const;
++    for (const [path, door] of cases) {
++      window.history.pushState({}, "", path);
++      const { unmount } = renderWithProviders(<MinimalNav />);
++      for (const name of ["Study", "Topics", "Family", "About"]) {
++        const current = screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-current");
++        expect(current, `${path}: ${name}`).toBe(name === door ? "true" : null);
++      }
++      unmount();
++    }
++  });
++
++  it("on a phone, a door's whole row is its toggle, not only the chevron", () => {
++    renderWithProviders(<MinimalNav />);
++    fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
++    const row = screen.getByRole("button", { name: "Show About links" });
++    expect(row.textContent).toBe("About");
++    fireEvent.click(row);
++    const panel = document.getElementById("mobile-nav-panel")!;
++    expect(within(panel).getByRole("link", { name: "About James" }).getAttribute("href")).toBe("/about");
++  });
++
+   it("on a phone, a tap on the next door's toggle does not first fold the open one", () => {
+     // Folding on mousedown shifts the panel, so the click lands on whatever
+     // moved under the finger and the next door never opens.
+-- 
+2.43.0
+

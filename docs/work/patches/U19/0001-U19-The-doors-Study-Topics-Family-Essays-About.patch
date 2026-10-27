@@ -1,7 +1,7 @@
 From 3aac1c600d2f87fd20e63e51b2ad8241a925a57e Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 18:06:30 +0000
-Subject: [PATCH] U19 The doors: Study, Topics, Family, Essays, About
+Subject: [PATCH 1/2] U19 The doors: Study, Topics, Family, Essays, About
 
 The header doors James chose on 2026-10-26. Books moves under About with
 Speaking and Contact; Resources folds into the Topics and Family menus;
