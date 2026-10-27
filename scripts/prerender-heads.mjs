@@ -638,7 +638,10 @@ const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
  * SPA it only existed after the JS bundle downloaded and ran, which under a
  * throttled mobile connection put LCP near four seconds against a 90-score
  * budget. Painting it from the HTML, inside the existing static shell, moves
- * the largest paint to the first paint.
+ * the largest paint to the first paint. main.tsx waits for that paint to be
+ * recorded before React replaces it (lib/static-hero.ts), and the portrait is
+ * fetchpriority="low" in both copies so the photograph never competes with
+ * the CSS, fonts, and text for the first paint (U08).
  */
 function positioningString(name) {
   const src = fs.readFileSync(
@@ -663,7 +666,7 @@ function homeHeroHtml() {
         <section class="home-hero">
           <div class="home-hero__inner">
             <div class="home-hero__byline">
-              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async">` : ""}
+              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async" fetchpriority="low">` : ""}
               <div>
                 <p class="home-hero__name">James Bell</p>
                 <a href="/about" class="home-hero__about">About James</a>

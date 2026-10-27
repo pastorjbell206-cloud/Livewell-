@@ -7,10 +7,10 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { createRoot } from "react-dom/client";
 import superjson from "superjson";
 import App from "./App";
-import { getLoginUrl } from "./const";
 import "./index.css";
 import "./brand-override.css";
 import { captureInstallPrompt } from "@/lib/install";
+import { mountAfterStaticHero } from "@/lib/static-hero";
 
 // The browser offers to install the site only once, early; keep that offer
 // for the "Add to your home screen" card on My Library (lib/install).
@@ -74,12 +74,16 @@ const trpcClient = trpc.createClient({
   ],
 });
 
-createRoot(document.getElementById("root")!).render(
-  <trpc.Provider client={trpcClient} queryClient={queryClient}>
-    <QueryClientProvider client={queryClient}>
-      <App />
-      <Analytics />
-      <SpeedInsights />
-    </QueryClientProvider>
-  </trpc.Provider>
-);
+// On "/", let the static hero's first paint be recorded before React replaces
+// it (lib/static-hero.ts); everywhere else this mounts at once.
+mountAfterStaticHero(() => {
+  createRoot(document.getElementById("root")!).render(
+    <trpc.Provider client={trpcClient} queryClient={queryClient}>
+      <QueryClientProvider client={queryClient}>
+        <App />
+        <Analytics />
+        <SpeedInsights />
+      </QueryClientProvider>
+    </trpc.Provider>
+  );
+});
