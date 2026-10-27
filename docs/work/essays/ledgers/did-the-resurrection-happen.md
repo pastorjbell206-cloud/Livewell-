@@ -131,13 +131,13 @@ Can a Historian Say a Miracle Happened?
 - Hume gave the argument its classic form in "Of Miracles," published in 1748. Not checked (textbook).
 - Hume's argument: uniform experience that the dead stay dead; weigh whether the witness deceives or is deceived. Matched against the Hume text (§90, "a dead man should come to life ... has never been observed in any age or country"; §91, "whether it be more probable, that this person should either deceive or be deceived"). Paraphrase.
 - Hume on the limits of testimony. Matched against the Hume text, §§98–99 (correction 9).
-- Hume's Queen Elizabeth example. Matched against the Hume text, §99 (correction 10).
+- Hume's Queen Elizabeth example. Matched against the Hume text, §99 (correction 10). The essay's inference now reads "in a case like this no testimony could have moved him" (voice pass), since Hume allows in the same paragraph that some other miracles might admit of proof.
 - Peter's first sermon in Jerusalem. Matched against the ESV copy (Acts 2:14, 24).
 - The eleven saw Jesus on a mountain in Galilee. Matched against the ESV copy (Matthew 28:16–17).
 
 What the Church Has Done With Easter
 
-- Marcus Borg, a widely read scholar, wrote a book with Wright setting their two views side by side, and treated the empty-tomb stories as parables whose truth did not depend on what happened to the body. Paraphrase; the essay does not name the book. Not checked in this run; the writer's ledger records search summaries naming *The Meaning of Jesus: Two Visions* (1999).
+- Marcus Borg, a scholar, wrote a book with Wright setting their two views side by side, and treated the empty-tomb stories as parables whose truth did not depend on what happened to the body. Paraphrase; the essay does not name the book. Not checked in this run; the writer's ledger records search summaries naming *The Meaning of Jesus: Two Visions* (1999).
 - Paul's "Let us eat and drink, for tomorrow we die" repeats Isaiah 22:13, set in Jerusalem. Matched against the ESV copy (Isaiah 22:9–14) (correction 12).
 - Paul wrote to believers in Thessalonica. Matched against the ESV copy (1 Thessalonians 4:13).
 - Mary Magdalene came to the tomb weeping, took him for the gardener, and he said her name. Matched against the ESV copy (John 20:11–16).
@@ -186,6 +186,18 @@ Every quotation below was compared by script with the ESV copy on 2026-10-27, an
 ## Links
 
 - /writing/the-historical-jesus, /writing/the-first-christians-died-for-this, /writing/did-christianity-copy-pagan-myths: all three found in the "shelf" list of `docs/work/essays/link-targets.json` on 2026-10-27. The link text "Why Were the Early Christian Martyrs Willing to Die?" matches the title in NOTES.md.
+- [Find Help](/help): added in the voice pass of 2026-10-27, in the paragraph on grief (1 Thessalonians 4:13), as the crisis path BRIEF.md asks for. /help is one of the brief's permitted non-essay links.
+
+## Voice pass, 2026-10-27
+
+The final reader's voice edit changed no quotation, reference, number, date or name. Changes that touch a claim:
+
+- Opening: "a remarkable thing for a religion's first great teacher to put in writing" became "for an apostle to put in writing." Reason: the old phrase could be read as ranking Paul above Jesus as the faith's teacher.
+- The Other Explanations: "They rule out fraud. They don't rule out a mistake" became "They make fraud very hard to believe and leave a sincere mistake possible." A softer claim; nothing new asserted.
+- Can a Historian Say a Miracle Happened?: "Most skeptics who reject the resurrection haven't weighed the vision theory ... Their reason comes before any of the evidence" became "For many skeptics, the reason to reject the resurrection comes before any of this evidence is weighed." Reason: "most" was an unsourced count. The new wording is narrower and is also unchecked.
+- Same section: "no testimony could have moved him" became "in a case like this no testimony could have moved him" (see the Hume line above).
+- What the Church Has Done With Easter: "Marcus Borg, a widely read scholar" became "Marcus Borg, a scholar" (repetition of "widely read" with Ehrman).
+- Same section: a care line and [Find Help](/help) added after 1 Thessalonians 4:13. No fact is stated in it.
 
 ## Original wording, for restoring
 
