@@ -57,7 +57,8 @@ export const LIBRARY_LINK: SiteNavLink = { label: "My Library", href: "/my-libra
 export const SITE_NAV_GROUPS: SiteNavGroup[] = [
   {
     // The anchor of the site: the whole Bible, the church's long memory, and
-    // how to read Scripture in the world it was written in.
+    // how to read Scripture in the world it was written in, with the year's
+    // plan through the whole story (U28) at the foot.
     title: "Study",
     links: [
       { label: "Start here: study the Bible", href: "/study", primary: true },
@@ -66,6 +67,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Creeds and confessions", href: "/resources/creeds", primary: true },
       { label: "The Bible in its context", href: "/resources/context", primary: true },
       { label: "Study with a group", href: "/studyguides", primary: true },
+      { label: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", primary: true },
     ],
   },
   {

@@ -93,11 +93,16 @@ describe("build-family-index", () => {
 
   it("names each weekly row's strand and theme group, and counts them for the library (U21)", () => {
     const weekly = (index.devotions as Array<Row & { strand?: string; group?: string }>).filter((r) => r.kind === "weekly");
-    expect(index.strands).toEqual([{ key: "foundations", label: "Foundations", count: 72 }]);
-    expect(weekly.every((r) => r.strand === "foundations")).toBe(true);
+    // Foundations first; another strand is listed only once its file is live
+    // (U11's world strand), so this holds whichever way that flag is committed.
+    const strands: Array<{ key: string; label: string; count: number }> = index.strands;
+    expect(strands[0]).toEqual({ key: "foundations", label: "Foundations", count: 72 });
+    for (const st of strands) expect(weekly.filter((r) => r.strand === st.key), st.key).toHaveLength(st.count);
+    expect(weekly.every((r) => strands.some((st) => st.key === r.strand))).toBe(true);
+    const foundations = weekly.filter((r) => r.strand === "foundations");
     const groups: Array<{ key: string; count: number }> = index.groups;
-    expect(groups.reduce((n, g) => n + g.count, 0)).toBe(weekly.length);
-    for (const g of groups) expect(weekly.filter((r) => r.group === g.key)).toHaveLength(g.count);
+    expect(groups.reduce((n, g) => n + g.count, 0)).toBe(foundations.length);
+    for (const g of groups) expect(foundations.filter((r) => r.group === g.key)).toHaveLength(g.count);
     expect(index.weekly).toBe(72);
   });
 

@@ -204,5 +204,6 @@ describe("lib/topics", () => {
     ];
     expect(rankEntries(entries, "christian nationalism")[0].href).toBe("/topics/faith-politics-and-the-flag");
     expect(rankEntries(entries, "post christian")[0].href).toBe("/topics/living-after-christendom");
+    expect(rankEntries(entries, "post-christian")[0].href).toBe("/topics/living-after-christendom");
   });
 });

@@ -3,8 +3,9 @@
  *
  * Who James is and why the site exists, in his own words from /about; then
  * Find (one field: a passage or a question) and tonight's family devotion
- * with "Continue" beside it (pages/home/, U18); four doors (the Study Bible,
- * the essays, family devotions, the books); three essays from the shelf to
+ * with "Continue" beside it (pages/home/, U18); five doors (the Study Bible,
+ * the hard questions (/topics, U25), the essays, family devotions, the
+ * books); three essays from the shelf to
  * start with; the books; one newsletter form; and a quiet way to help for a
  * reader in a hard season. Everything here is committed data (positioning.ts,
  * shelf.json, bookShelf.ts, the family year map), so the page paints in full
@@ -38,6 +39,11 @@ const DOORS = [
     title: "Study the Bible",
     href: "/study/bible",
     note: "An introduction to every book, notes on all 1,189 chapters, and the one story that runs from Genesis to Revelation.",
+  },
+  {
+    title: "Hard questions",
+    href: "/topics",
+    note: "Christian nationalism, raising children in a secular age, living after Christendom, doubt, suffering, and more. Each question opens the one page on the site that answers it best.",
   },
   {
     title: "Read the essays",

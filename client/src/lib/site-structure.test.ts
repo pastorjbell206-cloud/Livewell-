@@ -116,6 +116,7 @@ const KEPT = [
   "/study/bible/story",
   "/study/bible/doctrines",
   "/study/bible/guides",
+  "/study/bible/guides/whole-story-2027",
   "/theology/history",
   "/theology/history/the-reformation",
   "/theology/glossary",

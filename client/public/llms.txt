@@ -52,13 +52,6 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   divorce and blended families, addiction and recovery, and a guide for
   teenagers): https://www.livewellbyjamesbell.co/studyguides
 
-## Essays
-
-- The essay shelf (a short, curated shelf of essays, in sections from the church after Christendom to the ancient church and
-  reading the Bible in its world): https://www.livewellbyjamesbell.co/writing
-- Honest answers to hard questions (short answers, with the essay or book that
-  goes further where one is on the site): https://www.livewellbyjamesbell.co/answers
-
 ## Topics
 
 - Topics (the hard questions of faith in post-Christian America, in the words
@@ -70,19 +63,8 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   politics? https://www.livewellbyjamesbell.co/topics/faith-politics-and-the-flag
 - How do we hand the faith to our kids in a secular age?
   https://www.livewellbyjamesbell.co/topics/raising-children-in-a-secular-age
-
-## Books
-
-- Books (the titles on the shelf now, listed below): https://www.livewellbyjamesbell.co/books
-- When God Bless America Replaces Thy Kingdom Come (civil religion and the
-  kingdom): https://www.livewellbyjamesbell.co/books/when-god-bless-america
-- The Monster in the Mirror (why every generation gets the Bible wrong):
-  https://www.livewellbyjamesbell.co/books/the-monster-in-the-mirror
-- Believe (answers to the hardest questions skeptics ask):
-  https://www.livewellbyjamesbell.co/books/believe
-
-## Resources
-
+- Honest answers to hard questions (short answers, with the essay or book that
+  goes further where one is on the site): https://www.livewellbyjamesbell.co/answers
 - Resources (the hub): https://www.livewellbyjamesbell.co/resources
 - Downloads and PDFs (every printable, free: study-guide leader guides and
   participant handouts, Find Help guides and worksheets, eight-week plan
@@ -100,6 +82,9 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   https://www.livewellbyjamesbell.co/help
 - Integrated Life (one undivided life: the inner life, the body and rhythms,
   home, work and money, the world): https://www.livewellbyjamesbell.co/life
+
+## Family
+
 - For families (devotions, the catechism, reading plans):
   https://www.livewellbyjamesbell.co/family
 - Tonight's family devotion (always the one for tonight's date, by the church
@@ -108,6 +93,11 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   about, questions, something to do, and a prayer), for example
   https://www.livewellbyjamesbell.co/family/devotions/identity; the full list:
   https://www.livewellbyjamesbell.co/family/devotions
+
+## Essays
+
+- The essay shelf (a short, curated shelf of essays, in sections from the church after Christendom to the ancient church and
+  reading the Bible in its world): https://www.livewellbyjamesbell.co/writing
 
 ## Reference tools
 
@@ -122,6 +112,13 @@ doors: Study, Topics, Family, Essays, and About (with the books).
 ## About James Bell
 
 - About: https://www.livewellbyjamesbell.co/about
+- Books (the titles on the shelf now, listed below): https://www.livewellbyjamesbell.co/books
+- When God Bless America Replaces Thy Kingdom Come (civil religion and the
+  kingdom): https://www.livewellbyjamesbell.co/books/when-god-bless-america
+- The Monster in the Mirror (why every generation gets the Bible wrong):
+  https://www.livewellbyjamesbell.co/books/the-monster-in-the-mirror
+- Believe (answers to the hardest questions skeptics ask):
+  https://www.livewellbyjamesbell.co/books/believe
 - Speaking (preaching, conferences, retreats, and pulpit supply; coaching and
   consulting): https://www.livewellbyjamesbell.co/speaking
 - Contact: https://www.livewellbyjamesbell.co/contact

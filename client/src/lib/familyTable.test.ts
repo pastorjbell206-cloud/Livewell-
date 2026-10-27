@@ -133,7 +133,11 @@ describe("placeOf", () => {
   it("counts a weekly devotion within its own strand (U21)", () => {
     const first = INDEX.devotions.find((r) => r.id === "identity")!;
     expect(first.strand).toBe("foundations");
-    const withWorld: FamilyIndex = { ...INDEX, strands: [...(INDEX.strands ?? []), { key: "world", label: "The world we live in", count: 12 }] };
+    // Replace the committed world strand, if its flag is live, with a made-up count.
+    const withWorld: FamilyIndex = {
+      ...INDEX,
+      strands: [...(INDEX.strands ?? []).filter((s) => s.key !== "world"), { key: "world", label: "The world we live in", count: 12 }],
+    };
     expect(placeOf({ ...first, strand: "world", n: 3 }, withWorld)).toEqual({ current: 3, total: 12 });
     expect(placeOf(first, { ...INDEX, strands: undefined })).toEqual({ current: 1, total: INDEX.weekly });
   });

@@ -25,6 +25,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { devotionsIn } from "./lib/family-devotion-file.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 
@@ -32,12 +33,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUB = path.join(ROOT, "client/public");
 export const OUT = "client/public/search-index.json";
 
-/**
- * Where a weekly devotion opens. Today that is the library page that holds
- * all of them; when The Table core (U17) gives each devotion its own page at
- * /family/devotions/:id, point this at it and rerun the script.
- */
-const devotionHref = () => "/family/devotions";
+/** Where a weekly devotion opens: its own page (The Table, U17). */
+const devotionHref = (id) => `/family/devotions/${id}`;
 
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(PUB, rel), "utf8"));
 const str = (x) => (typeof x === "string" ? x.trim() : "");
@@ -78,7 +75,7 @@ function answers() {
 }
 
 function devotions() {
-  const weekly = [...readJson("family-devotions.json"), ...readJson("family-devotions-2.json")];
+  const weekly = ["family-devotions.json", "family-devotions-2.json"].flatMap((f) => devotionsIn(readJson(f)).devotions);
   return weekly.map((d) => ({
     title: str(d.title),
     blurb: clip(d.bigIdea),

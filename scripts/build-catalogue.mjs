@@ -36,6 +36,7 @@ import { ARGUMENT_CASES } from "../client/src/data/argumentCases.ts";
 import { DISCUSSION_GUIDES } from "../client/src/data/discussion-guides.ts";
 import { BOOKLETS } from "../client/src/data/booklets.ts";
 import { essayDate, loadEssayShelf } from "./lib/shelf.mjs";
+import { devotionsIn } from "./lib/family-devotion-file.mjs";
 
 dotenv.config();
 
@@ -461,7 +462,7 @@ export const LIBRARIES = {
         return item({ kind: "Nation", title: n.title, summary: clip(n.subtitle), href: `/nation/${n.slug ?? f.replace(/\.json$/, "")}` });
       }),
   family: () => {
-    const devotions = [...list("family-devotions.json"), ...list("family-devotions-2.json")].length;
+    const devotions = ["family-devotions.json", "family-devotions-2.json"].flatMap((f) => devotionsIn(readJson(f)).devotions).length;
     return [
       item({ kind: "Family", title: "Family Catechism", summary: clip("A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
       item({

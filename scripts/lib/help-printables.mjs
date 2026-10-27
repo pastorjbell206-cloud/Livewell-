@@ -27,6 +27,7 @@ import path from "node:path";
 import PDFDocument from "pdfkit";
 import qrcode from "qrcode-generator";
 import { readingText } from "./bsb.mjs";
+import { devotionsIn } from "./family-devotion-file.mjs";
 
 const INK = "#14110C";
 const MUTED = "#5A5448";
@@ -1203,7 +1204,7 @@ export async function buildSectionPrintables(root) {
     })
     .filter(Boolean);
   const devotions = ["family-devotions.json", "family-devotions-2.json"]
-    .flatMap((f) => JSON.parse(fs.readFileSync(path.join(root, "client/public", f), "utf8")));
+    .flatMap((f) => devotionsIn(JSON.parse(fs.readFileSync(path.join(root, "client/public", f), "utf8"))).devotions);
   const written = [];
   for (const [name, size] of Object.entries(SIZES)) {
     for (const [file, make] of [

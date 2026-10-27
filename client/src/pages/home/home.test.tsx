@@ -123,11 +123,12 @@ describe("Home's tonight line", () => {
 });
 
 describe("Home's doors", () => {
-  it("include Family", () => {
+  it("include Topics and Family", () => {
     setToday(2026, 10, 27);
     renderHome();
     const doors = screen.getByRole("heading", { name: "Where to begin" }).nextElementSibling as HTMLElement;
-    expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/study/bible", "/writing", "/family", "/books"]);
+    expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/study/bible", "/topics", "/writing", "/family", "/books"]);
+    expect(within(doors).getByRole("link", { name: /^Hard questions/ }).getAttribute("href")).toBe("/topics");
   });
 });
 

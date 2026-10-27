@@ -46,13 +46,6 @@ function isRoute(href: string): boolean {
 
 const internal = (href: string) => href.startsWith("/");
 
-/**
- * The Topics door opens /topics, which U25 builds in the same wave. Until that
- * route is in App.tsx it is the one nav link allowed to wait for its page;
- * once it is routed this set changes nothing and can go. Never add to it.
- */
-const AWAITING_ITS_PAGE = new Set(["/topics"]);
-
 /** The 2026-10-12 Resources group, every link of which now lives elsewhere. */
 const FORMER_RESOURCES = [
   "/resources",
@@ -97,7 +90,7 @@ describe("the nav map", () => {
   it("points every internal link at a route that exists", () => {
     const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS];
     const dead = links
-      .filter((l) => internal(l.href) && !isRoute(l.href) && !AWAITING_ITS_PAGE.has(l.href))
+      .filter((l) => internal(l.href) && !isRoute(l.href))
       .map((l) => l.href);
     expect(dead).toEqual([]);
   });
@@ -113,6 +106,12 @@ describe("the nav map", () => {
     for (const h of ["/family/tonight", "/family/devotions", "/family/catechism", "/family/reading-plans"]) {
       expect(headerLinks(group("Family")).map((l) => l.href), h).toContain(h);
     }
+  });
+
+  it("puts the year's plan through the whole story at the foot of the Study menu", () => {
+    const plan = headerLinks(group("Study")).at(-1);
+    expect(plan).toEqual({ label: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", primary: true });
+    expect(isRoute(plan!.href)).toBe(true);
   });
 
   it("puts Books under About, beside Speaking and Contact, with the three titles in the footer", () => {
@@ -152,7 +151,7 @@ describe("the header and footer", () => {
 
   it("opens each door's menu on its own links", () => {
     renderWithProviders(<MinimalNav />);
-    for (const title of ["Topics", "Family", "About"]) {
+    for (const title of ["Study", "Topics", "Family", "About"]) {
       fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
       const menu = screen.getByRole("menu");
       const shown = within(menu).getAllByRole("link").map((a) => a.getAttribute("href"));
