@@ -12,7 +12,10 @@
  * Advent itself begins, since the set is a December 1 to 25 calendar. Data:
  * the family index (client/public/family/index.json,
  * scripts/build-family-index.mjs); the list shows references, not verse text.
- * scripts/validate-family.mjs checks the counts this page states.
+ * scripts/validate-family.mjs checks the counts this page states. A strand
+ * beside Foundations (The world we live in, ?tab=world, U11) gets its tab only
+ * once its file is live and the index lists it; until then the tab is not
+ * there and ?tab=world opens Foundations.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useSearch } from "wouter";

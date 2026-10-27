@@ -39,7 +39,8 @@ afterEach(() => {
 describe("the committed family index", () => {
   it("passes the page's own shape guard", () => {
     expect(isFamilyIndex(INDEX)).toBe(true);
-    expect(INDEX.weekly).toBe(INDEX.devotions.filter((r) => r.kind === "weekly").length);
+    // `weekly` counts the Foundations set; a live strand beside it is counted in `strands`.
+    expect(INDEX.weekly).toBe(INDEX.devotions.filter((r) => r.kind === "weekly" && (r.strand ?? "foundations") === "foundations").length);
   });
 });
 

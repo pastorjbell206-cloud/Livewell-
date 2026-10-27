@@ -23,8 +23,10 @@ export const FAMILY_INDEX_URL = "/family/index.json";
 export interface FamilyIndexRow {
   id: string;
   kind: "weekly" | "seasonal";
-  /** Weekly: its place in the set, from 1. */
+  /** Weekly: its place in the set (or in its strand), from 1. */
   n?: number;
+  /** Weekly: its strand (MASTER-PLAN 5.4), "foundations" for the 72 or one beside them ("world"), listed in FamilyIndex.strands. */
+  strand?: string;
   /** Seasonal: the set and the day in it, from 1. */
   set?: FamilySetKey;
   day?: number;
@@ -38,8 +40,6 @@ export interface FamilyIndexRow {
   /** The library file that holds the devotion itself. */
   file: string;
   description: string;
-  /** Weekly: its strand (MASTER-PLAN 5.4), "foundations" today. */
-  strand?: string;
   /** Weekly: its theme group in the library. */
   group?: string;
   /** Some weeks: one line for the parents and the page behind tonight. */
@@ -59,6 +59,9 @@ export interface FamilySetInfo {
   days: number;
 }
 
+/** A strand of weekly devotions (MASTER-PLAN 5.4), listed once its file is live. */
+export type FamilyStrandInfo = FamilyShelf;
+
 export interface CatechismLine {
   number: number;
   question: string;
@@ -67,7 +70,7 @@ export interface CatechismLine {
 
 export interface FamilyIndex {
   weekly: number;
-  /** The weekly strands that have devotions, in library order (U21). */
+  /** The weekly strands that have devotions, in library order (U21); a hidden strand is not listed (U11). */
   strands?: FamilyShelf[];
   /** The Foundations theme groups, in library order (U21). */
   groups?: FamilyShelf[];
@@ -82,6 +85,7 @@ const isText = (x: unknown): x is string => typeof x === "string" && x.length > 
 export function isFamilyIndex(x: unknown): x is FamilyIndex {
   if (!isObject(x) || typeof x.weekly !== "number" || !isObject(x.sets)) return false;
   if (!Array.isArray(x.devotions) || !Array.isArray(x.catechism)) return false;
+  if (x.strands !== undefined && !(Array.isArray(x.strands) && x.strands.every((s) => isObject(s) && isText(s.key) && isText(s.label) && typeof s.count === "number"))) return false;
   return (
     x.devotions.every((r) => isObject(r) && isText(r.id) && isText(r.title) && isText(r.passage) && isText(r.file) && (r.kind === "weekly" || r.kind === "seasonal")) &&
     x.catechism.every((q) => isObject(q) && typeof q.number === "number" && isText(q.question))
@@ -146,9 +150,18 @@ export function weekOfYear(date: string): number {
   return Math.floor((dayNumber(date) - firstSunday) / 7) + 1;
 }
 
-/** Where a devotion sits in its set: "12 of 72" for a weekly one, "Day 6 of 25" for a day of a set. */
+/** The strand a weekly devotion beside the 72 belongs to, or undefined for one of the 72. */
+export function strandOf(row: FamilyIndexRow, index: FamilyIndex): FamilyStrandInfo | undefined {
+  return row.strand && row.strand !== "foundations" ? index.strands?.find((s) => s.key === row.strand) : undefined;
+}
+
+/** Where a devotion sits in its set: "12 of 72" for a weekly one, "1 of 2" in a strand, "Day 6 of 25" for a day of a set. */
 export function placeOf(row: FamilyIndexRow, index: FamilyIndex): { unit?: string; current: number; total: number } | null {
-  if (row.kind === "weekly" && row.n) return { current: row.n, total: index.strands?.find((s) => s.key === row.strand)?.count ?? index.weekly };
+  if (row.kind === "weekly" && row.n && row.strand && row.strand !== "foundations") {
+    const strand = strandOf(row, index);
+    return strand ? { current: row.n, total: strand.count } : null;
+  }
+  if (row.kind === "weekly" && row.n) return { current: row.n, total: index.weekly };
   if (row.kind === "seasonal" && row.set && row.day) {
     const days = index.sets[row.set]?.days;
     if (days) return { unit: "Day", current: row.day, total: days };

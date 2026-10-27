@@ -24,12 +24,18 @@
  *    brevity). This is the same-instrument rule, mechanized.
  *  - house style everywhere: zero exclamation points outside quoted
  *    Scripture (this corpus quotes none, so zero), zero forbidden words.
+ *  - family devotions on politics (U11, scripts/lib/family-politics.mjs):
+ *    marked politics: true, two sides read in turn within the same 55% word
+ *    band, no exclamation point and no Forbidden Language (the full
+ *    CLAUDE.md list) outside the quoted passage. A devotion
+ *    that talks about voting or politics without the mark fails.
  *
  * Exits non-zero with a findings list so CI fails loudly.
  */
 import { checkTopicPolitics } from "./lib/topics-politics.mjs";
 import fs from "node:fs";
 import path from "node:path";
+import { checkFamilyPolitics } from "./lib/family-politics.mjs";
 
 const PUB = path.resolve(process.cwd(), "client", "public");
 const findings = [];
@@ -125,10 +131,14 @@ for (const section of ["disruption", "justice"]) {
   }
 }
 
+/* ---------------- family devotions on politics (the same instrument at the table) ---------------- */
+const family = checkFamilyPolitics({ publicDir: PUB });
+for (const [file, msg] of family.findings) note(file, msg);
+
 /* ---------------- verdict ---------------- */
 if (findings.length) {
   console.error(`[validate-politics] ${findings.length} finding(s):`);
   for (const f of findings) console.error("  - " + f);
   process.exit(1);
 }
-console.log(`[validate-politics] clean: ${nationEssays} nation essays + disruption/justice topics pass structure, citation, symmetry, and style.`);
+console.log(`[validate-politics] clean: ${nationEssays} nation essays + disruption/justice topics + ${family.pieces} family politics devotions pass structure, citation, symmetry, and style.`);

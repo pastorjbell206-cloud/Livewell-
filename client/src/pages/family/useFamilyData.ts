@@ -22,6 +22,13 @@ export interface Devotion {
   bands?: { younger: string[]; older: string[] };
   /** Weekly devotions only. */
   activity?: string;
+  /**
+   * A devotion on politics (U11): two short paragraphs read in turn, one to
+   * each side of the table ("If you are glad about how it went", "If you are
+   * sad about how it went"). scripts/validate-politics.mjs holds them to the
+   * same length.
+   */
+  sides?: { label: string; text: string }[];
   prayer: string;
   /** The weekly set quotes the BSB word for word; the daily sets retell each passage for children. */
   rendering: "bsb" | "paraphrase";
@@ -46,11 +53,26 @@ function questionsOf(q: unknown): Pick<Devotion, "questions" | "bands"> {
   return { questions: together.length ? together : [...younger, ...older], bands };
 }
 
+/** Two labelled paragraphs, or nothing: a politics devotion's sides. */
+function sidesOf(x: unknown): { label: string; text: string }[] | undefined {
+  if (!Array.isArray(x)) return undefined;
+  const sides = x.filter((s): s is { label: string; text: string } => isObject(s) && isText(s.label) && isText(s.text));
+  return sides.length === 2 ? sides.map((s) => ({ label: s.label, text: s.text })) : undefined;
+}
+
+/** The devotions in a weekly file: a plain list, or a strand file's { live, devotions } (U11). */
+function weeklyList(data: unknown): unknown[] | null {
+  if (Array.isArray(data)) return data;
+  if (isObject(data) && Array.isArray(data.devotions)) return data.devotions;
+  return null;
+}
+
 /** The devotion a row names, out of its library file, or null when the file does not hold it. */
 export function devotionFrom(row: FamilyIndexRow, data: unknown): Devotion | null {
   if (row.kind === "weekly") {
-    if (!Array.isArray(data)) return null;
-    const d = data.find((x) => isObject(x) && x.id === row.id);
+    const list = weeklyList(data);
+    if (!list) return null;
+    const d = list.find((x) => isObject(x) && x.id === row.id);
     if (!isObject(d) || !isText(d.passageText) || !isText(d.reflection) || !isText(d.prayer)) return null;
     return {
       row,
@@ -59,6 +81,7 @@ export function devotionFrom(row: FamilyIndexRow, data: unknown): Devotion | nul
       reflection: d.reflection,
       ...questionsOf(d.questions),
       activity: isText(d.activity) ? d.activity : undefined,
+      sides: sidesOf(d.sides),
       prayer: d.prayer,
       rendering: "bsb",
     };

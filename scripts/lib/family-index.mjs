@@ -17,12 +17,20 @@
  * grown-ups" carries it here with the title of the page it links, read from
  * that page's own data so the link can never name a page that is not there.
  *
+ * A strand beside the weekly set (family-devotions-world.json, U11) adds its
+ * devotions as weekly rows that name their strand, numbered within it, and a
+ * `strands` entry with its label and count, but only once its file is live
+ * (./family-devotion-file.mjs). While it is hidden the index is exactly what it
+ * would be without the file, so nothing on the site can link, prerender, or
+ * list a devotion James has not read.
+ *
  * Built by scripts/build-family-index.mjs; CI runs it with --check.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { readRef } from "./bsb.mjs";
+import { devotionsIn } from "./family-devotion-file.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const INDEX = "client/public/family/index.json";
@@ -136,8 +144,8 @@ export function buildFamilyIndex(root = ROOT) {
       if (!fs.existsSync(path.join(root, "client/public", file))) continue;
       // A strand file is a plain list, or { live, devotions } held back until
       // `live` is true (U11's world strand): a held-back strand has no rows.
-      const data = read(root, file);
-      const list = Array.isArray(data) ? data : data?.live === true && Array.isArray(data.devotions) ? data.devotions : [];
+      const { live, devotions: all } = devotionsIn(read(root, file));
+      const list = live ? all : [];
       for (const d of list) {
         n += 1;
         const where = `client/public/${file} ${d.id}`;
