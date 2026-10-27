@@ -1,0 +1,117 @@
+From e817415c9f594362f5e651df24d22f099b7c7db8 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 19:03:56 +0000
+Subject: [PATCH 2/2] U25 review: the same instrument, a crawlable body that
+ names no hidden essay, a 44px crumb
+
+- Politics short answer: the temptation "can fuse" faith with the nation on
+  the right, as it "can make" a platform the measure of faithfulness on the
+  left; one side was stated as fact and the other hedged.
+- Prerendered topic bodies leave out the essay slots, so a crawler never
+  reads the title and first line of a lead that is not public (the page
+  shows its stand-in). The /topics listing picks a stand-in only for a row
+  to an essay, the same rule as lib/topics rowTarget.
+- validate-topics: a standIn on a row that does not open an essay fails
+  (the page would never open it); seeded case added to the gate test.
+- The "Topics" crumb above each topic's question is a 44px target without
+  moving the layout.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .../public/topics/faith-politics-and-the-flag.json |  2 +-
+ client/src/index.css                               |  1 +
+ scripts/prerender-heads.mjs                        | 14 ++++++++++----
+ scripts/validate-topics.mjs                        |  1 +
+ server/topics-gate.test.ts                         |  3 +++
+ 5 files changed, 16 insertions(+), 5 deletions(-)
+
+diff --git a/client/public/topics/faith-politics-and-the-flag.json b/client/public/topics/faith-politics-and-the-flag.json
+index 34908a6a..09d399d0 100644
+--- a/client/public/topics/faith-politics-and-the-flag.json
++++ b/client/public/topics/faith-politics-and-the-flag.json
+@@ -17,7 +17,7 @@
+   "short": [
+     "Love of country isn't the problem. Scripture assumes it. Jeremiah told the exiles to seek the welfare of Babylon and pray for it, and Jesus wept over Jerusalem while He told the city the truth about itself. Christian nationalism is something else: a fusion of Christian faith and national belonging, held more as identity than as doctrine. It holds that the nation is Christian in a covenant sense, that its real people are Christians, that its laws and symbols should secure that status, and that its decline is a spiritual fall to be reversed by taking power back.",
+     "The test is where a person's love of country sits. Can it hear the nation criticized, by Scripture or by its own history, without treating that as an attack on God? Can a believer feel a deeper kinship with a Christian in Nigeria than with a neighbor who shares the flag but not the faith? Israel is the one nation Scripture calls chosen, and Amos told it that the covenant made it more accountable, not less.",
+-    "The temptation to fuse a political cause with the kingdom of God belongs to no single party. On the right it fuses faith with the nation; on the left it can make a platform the measure of faithfulness just as easily. A Christian can vote, sing the anthem, and pray for whoever holds office, and still belong first to a people no president will ever govern."
++    "The temptation to fuse a political cause with the kingdom of God belongs to no single party. On the right it can fuse faith with the nation; on the left it can make a platform the measure of faithfulness just as easily. A Christian can vote, sing the anthem, and pray for whoever holds office, and still belong first to a people no president will ever govern."
+   ],
+   "essay": {
+     "href": "/writing/what-christian-nationalism-is-and-is-not",
+diff --git a/client/src/index.css b/client/src/index.css
+index b324df98..e6b9cf58 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -571,6 +571,7 @@ img{display:block;max-width:100%}
+ .tp-foot a,.tp-text a,.tp-companion a,.tp-ways__links a,.tp-witness__name a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+ .tp-status{font-family:var(--U);color:var(--ink-muted);text-align:center;padding:var(--s-6) 0;margin:0}
+ .tp-col{max-width:var(--w-prose);margin:0 auto}
++.tp-page .pg-head__eyebrow a{padding:12px 0;margin:-12px 0}
+ .tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
+ .tp-short{margin:0 0 var(--s-3)}
+ .tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+diff --git a/scripts/prerender-heads.mjs b/scripts/prerender-heads.mjs
+index 2a39ea1a..8fd3e093 100644
+--- a/scripts/prerender-heads.mjs
++++ b/scripts/prerender-heads.mjs
+@@ -519,8 +519,11 @@ const HUB_LISTINGS = {
+   "/topics": { label: "Topics", cap: 40, load: () => {
+     const d = readJsonSafe("client/public/topics/index.json");
+     const shelf = loadEssayShelf(REPO_ROOT);
+-    // A row to an essay not public yet opens its stand-in, as the page does.
+-    const opens = (r) => (r.standIn && !shelf.isPublic(String(r.href).replace(/^\/writing\//, "")) ? r.standIn : r.href);
++    // A row to an essay not public yet opens its stand-in, as the page does (lib/topics rowTarget).
++    const opens = (r) => {
++      const essay = /^\/writing\/([^/?#]+)$/.exec(String(r.href));
++      return r.standIn && essay && !shelf.isPublic(decodeURIComponent(essay[1])) ? r.standIn : r.href;
++    };
+     return ((d && d.rows) || []).map((r) => ({ title: r.askedAs, href: opens(r), blurb: r.line || "" }));
+   } },
+   "/studyguides": { label: "Study guides", cap: 80, load: () => {
+@@ -1034,11 +1037,14 @@ async function main() {
+     // The topic pages (/topics/:slug), from the topics index
+     // (scripts/build-topics-index.mjs). The title is the question, as the
+     // page's own SEOMeta has it; the page file's prose (the short answer and
+-    // the lines under each part) is the crawlable body.
++    // the lines under each part) is the crawlable body. The essay slots are
++    // left out: which of them the page shows depends on the shelf (a lead not
++    // public yet shows its stand-in), so the body never names an essay the
++    // reader cannot open.
+     {
+       file: "client/public/topics/index.json", key: "pages", route: "/topics/", ogPrefix: "topics", desc: "description",
+       contentDir: "client/public/topics",
+-      omitKeys: ["slug", "title", "description", "askedAs", "politics", "sensitive", "folds", "updated", "reviewed"],
++      omitKeys: ["slug", "title", "description", "askedAs", "essay", "essayStandIn", "alsoEssays", "politics", "sensitive", "folds", "updated", "reviewed"],
+     },
+   ];
+   let withBody = 0;
+diff --git a/scripts/validate-topics.mjs b/scripts/validate-topics.mjs
+index 2fa350f7..7e485345 100644
+--- a/scripts/validate-topics.mjs
++++ b/scripts/validate-topics.mjs
+@@ -238,6 +238,7 @@ export function rowProblems(rows, ctx) {
+       else waiting.push(`index: ${r.href}`);
+     } else if (s !== "ok") problems.push(`${where}: ${r.href} ${s}`);
+     if (r.standIn) {
++      if (!/^\/writing\/[^/?#]+$/.test(r.href)) problems.push(`${where}: standIn is only for a row to an essay (/writing/<slug>); the page never opens it here`);
+       const t = hrefStatus(r.standIn, ctx);
+       if (t !== "ok") problems.push(`${where}: standIn ${r.standIn} ${t}`);
+     }
+diff --git a/server/topics-gate.test.ts b/server/topics-gate.test.ts
+index a8f22f84..286eb1c0 100644
+--- a/server/topics-gate.test.ts
++++ b/server/topics-gate.test.ts
+@@ -121,6 +121,9 @@ describe("a seeded bad page fails, with its reason", () => {
+   it("an essay row with no stand-in while the essay is not public", () => {
+     const rows = rowProblems([{ askedAs: "Q?", href: "/writing/why-didnt-the-bible-ban-slavery", kind: "essay", line: "A line." }], ctx).problems.join("\n");
+     expect(rows).toMatch(/is not public yet and the row names no standIn/);
++    // A stand-in on a row that opens anything but an essay would never be opened.
++    const notEssay = rowProblems([{ askedAs: "Q?", href: "/help/anxiety", kind: "care", line: "A line.", standIn: "/help/grief" }], ctx).problems.join("\n");
++    expect(notEssay).toMatch(/standIn is only for a row to an essay/);
+   });
+ 
+   it("a seventh topic page, and a page no row lists", () => {
+-- 
+2.43.0
+

@@ -1,7 +1,7 @@
 From 81072d56c83e7240f2ad0171a926ff90802121cd Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 17:44:26 +0000
-Subject: [PATCH] U25 Topics: the index and three pages
+Subject: [PATCH 1/2] U25 Topics: the index and three pages
 
 /topics lists the hard questions people bring, in their own words, each
 opening the one best page the site already has (a topic page, a care page,
