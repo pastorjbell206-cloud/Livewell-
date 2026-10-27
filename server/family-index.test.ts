@@ -23,6 +23,7 @@ const pub = (name: string) => JSON.parse(fs.readFileSync(path.join(ROOT, "client
 interface Row {
   id: string;
   kind: string;
+  strand?: string;
   set?: string;
   day?: number;
   href: string;
@@ -52,7 +53,8 @@ describe("build-family-index", () => {
   it("has a row for every weekly devotion, by its frozen id, and every day of every set", () => {
     const weekly = [...pub("family-devotions.json"), ...pub("family-devotions-2.json")].map((d: { id: string }) => d.id);
     const rows: Row[] = index.devotions;
-    expect(rows.filter((r) => r.kind === "weekly").map((r) => r.id)).toEqual(weekly);
+    // The 72 Foundations rows; a live strand beside them (family-devotions-world.json) adds its own.
+    expect(rows.filter((r) => r.kind === "weekly" && (r.strand ?? "foundations") === "foundations").map((r) => r.id)).toEqual(weekly);
     const frozen: string[] = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/data/family-devotion-ids.json"), "utf8")).ids;
     for (const id of weekly) expect(frozen).toContain(id);
     const seasonal = pub("family-seasonal.json");

@@ -26,6 +26,8 @@
  *     devotion, from any family-devotions*.json file, to one week the rotation
  *     would serve (never a week a daily set serves). A pinned week does not use
  *     up a rotation slot: the devotion it displaced moves to the next week.
+ *     Before ROTATION_EPOCH, where the rotation counts backward, a pinned week
+ *     keeps its slot instead, so a pin there never moves an earlier week.
  *     A pin naming a devotion in a strand file that is not live yet
  *     (./family-devotion-file.mjs) waits: the week keeps the rotation, with a
  *     note, until the strand goes live and the map is regenerated. A pin for a
@@ -235,7 +237,14 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
   const atEpoch = found === -1 ? all.length : found;
   const slot = new Map();
   for (let i = atEpoch, n = 0; i < all.length; i++) if (all[i].rotates) slot.set(i, n++);
-  for (let i = atEpoch - 1, n = -1; i >= 0; i--) if (all[i].rotates) slot.set(i, n--);
+  // Before the epoch the rotation counts backward, so a pin there that gave up
+  // its slot would move every week before it, weeks a family may be in the
+  // middle of or already have done. There a pin keeps its week's slot: setting
+  // it (or a strand going live under it) changes that week and no other.
+  for (let i = atEpoch - 1, n = -1; i >= 0; i--) {
+    if (all[i].rotates) slot.set(i, n--);
+    else if (all[i].pinned) n--;
+  }
 
   const weeks = [];
   all.forEach((w, i) => {

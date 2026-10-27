@@ -6,6 +6,10 @@
  * Once the index lists the strand (the flag set true and the index rebuilt),
  * each has its own page, numbered in its strand, with both sides of the table
  * read in turn under Talk, and the library gives the strand its own tab.
+ *
+ * The hidden and live indexes are both derived from the committed one, so
+ * these tests hold whichever way the flag is committed and publishing needs
+ * no edit here.
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { screen, within } from "@testing-library/react";
@@ -35,10 +39,22 @@ const WORLD = JSON.parse(read(WORLD_FILE)) as {
   }[];
 };
 
+/** The index as scripts/build-family-index.mjs writes it while the strand is hidden. */
+const HIDDEN: FamilyIndex = (() => {
+  const { strands, ...rest } = COMMITTED;
+  const others = (strands ?? []).filter(s => s.key !== "world");
+  return {
+    ...rest,
+    ...(others.length ? { strands: others } : {}),
+    devotions: COMMITTED.devotions.filter(r => r.file !== `/${WORLD_FILE}`),
+  };
+})();
+
 /** The index as scripts/build-family-index.mjs writes it once the strand is live. */
 const LIVE: FamilyIndex = {
-  ...COMMITTED,
+  ...HIDDEN,
   strands: [
+    ...(HIDDEN.strands ?? []),
     {
       key: "world",
       label: "The world we live in",
@@ -46,7 +62,7 @@ const LIVE: FamilyIndex = {
     },
   ],
   devotions: [
-    ...COMMITTED.devotions,
+    ...HIDDEN.devotions,
     ...WORLD.devotions.map<FamilyIndexRow>((d, i) => ({
       id: d.id,
       kind: "weekly",
@@ -103,25 +119,27 @@ afterEach(() => {
   window.history.pushState({}, "", "/");
 });
 
-describe("the after-the-vote devotions while hidden (as committed)", () => {
-  it("are behind the flag: the file says live false and the index has no row for them", () => {
-    expect(WORLD.live).toBe(false);
+describe("the after-the-vote devotions behind the flag", () => {
+  it("are in the committed index exactly when the file says live", () => {
+    expect(typeof WORLD.live).toBe("boolean");
     expect(WORLD.devotions.map(d => d.id)).toEqual([
       "grown-ups-voted-differently",
       "praying-for-leaders",
     ]);
-    expect(
-      COMMITTED.devotions.some(
-        r =>
-          r.file === `/${WORLD_FILE}` ||
-          WORLD.devotions.some(d => d.id === r.id)
-      )
-    ).toBe(false);
-    expect(COMMITTED.strands).toBeUndefined();
+    const rows = COMMITTED.devotions.filter(r =>
+      WORLD.devotions.some(d => d.id === r.id)
+    );
+    expect(rows.every(r => r.file === `/${WORLD_FILE}`)).toBe(true);
+    expect(rows).toHaveLength(WORLD.live ? WORLD.devotions.length : 0);
+    expect(COMMITTED.strands?.some(s => s.key === "world") ?? false).toBe(
+      WORLD.live
+    );
   });
+});
 
+describe("the after-the-vote devotions while hidden", () => {
   it("have no page", async () => {
-    serve(COMMITTED);
+    serve(HIDDEN);
     renderAt("/family/devotions/grown-ups-voted-differently");
     expect(
       await screen.findByRole("heading", {
@@ -132,7 +150,7 @@ describe("the after-the-vote devotions while hidden (as committed)", () => {
   });
 
   it("have no tab in the library, and ?tab=world opens the weekly list", async () => {
-    serve(COMMITTED);
+    serve(HIDDEN);
     renderAt("/family/devotions?tab=world");
     expect(
       await screen.findByRole("button", { name: /^Weekly · 72$/ })

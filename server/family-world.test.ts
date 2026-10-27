@@ -13,6 +13,10 @@
  * - The politics gate holds a politics devotion's two sides to one word band,
  *   refuses one side only, and refuses a devotion that talks about voting
  *   without the mark.
+ *
+ * Every test holds whichever way the flag is committed: the hidden and live
+ * cases run on copies with the flag set for them, so publishing (the four
+ * steps in scripts/lib/family-devotion-file.mjs) needs no edit here.
  */
 import { describe, it, expect, afterEach } from "vitest";
 import { spawnSync } from "node:child_process";
@@ -79,6 +83,13 @@ const writeStrand = (pub: string, data: unknown) =>
   fs.writeFileSync(path.join(pub, WORLD), JSON.stringify(data, null, 2));
 const goLive = (pub: string) =>
   writeStrand(pub, { ...readStrand(pub), live: true });
+const hide = (pub: string) =>
+  writeStrand(pub, { ...readStrand(pub), live: false });
+/** The two weeks after the vote that family-year-overrides.json pins. */
+const PINNED = ["2026-11-08", "2026-11-15"];
+type Week = { start: string; devotion: string | null; pinned?: true };
+const weekOf = (map: { weeks: Week[] }, start: string) =>
+  map.weeks.find(w => w.start === start);
 const familyErrors = (
   root: string,
   pub: string,
@@ -96,45 +107,30 @@ const familyErrors = (
   }).errors;
 
 describe("the after-the-vote devotions, as committed", () => {
-  it("are two devotions in the strand file, hidden", () => {
-    const strand = JSON.parse(
-      fs.readFileSync(path.join(PUBLIC, WORLD), "utf8")
-    );
-    expect(devotionsIn(strand)).toMatchObject({ shape: "strand", live: false });
-    expect(strand.devotions.map((d: Devotion) => d.id)).toEqual(IDS);
+  const strand = readStrand(PUBLIC);
+
+  it("are two devotions in the strand file, behind one flag", () => {
+    expect(typeof strand.live).toBe("boolean");
+    expect(devotionsIn(strand)).toMatchObject({
+      shape: "strand",
+      live: strand.live,
+    });
+    expect(strand.devotions.map(d => d.id)).toEqual(IDS);
     const { hidden, ids } = checkFamily();
-    expect(hidden).toEqual(IDS);
-    for (const id of IDS) expect(ids).not.toContain(id);
+    expect(hidden).toEqual(strand.live ? [] : IDS);
+    for (const id of IDS) expect(ids.includes(id)).toBe(strand.live);
   });
 
-  it("leave the family index exactly as it is without them", () => {
-    const { root } = seeded(pub => fs.rmSync(path.join(pub, WORLD)));
-    fs.mkdirSync(path.join(root, "client/public/needs"), { recursive: true });
-    const without = buildFamilyIndex(root);
-    const withHidden = buildFamilyIndex(ROOT);
-    expect(withHidden.problems).toEqual([]);
-    expect(renderFamilyIndex(withHidden.index)).toBe(
-      renderFamilyIndex(without.index)
+  it("are in the committed family index exactly when the flag is live", () => {
+    const committed = JSON.parse(
+      fs.readFileSync(path.join(ROOT, INDEX), "utf8")
     );
-    expect(fs.readFileSync(path.join(ROOT, INDEX), "utf8")).toBe(
-      renderFamilyIndex(withHidden.index)
+    const rows = committed.devotions.filter(
+      (r: { file: string }) => r.file === `/${WORLD}`
     );
-  });
-
-  it("are pinned to the two weeks after the vote, and the pins wait", () => {
-    const inputs = loadInputs();
-    const { map, problems, notes } = buildYearMap(inputs);
-    expect(problems).toEqual([]);
-    expect(notes.join("\n")).toMatch(
-      /week 2026-11-08 is pinned to "grown-ups-voted-differently", which is hidden/
+    expect(rows.map((r: { id: string }) => r.id)).toEqual(
+      strand.live ? IDS : []
     );
-    expect(notes.join("\n")).toMatch(
-      /week 2026-11-15 is pinned to "praying-for-leaders", which is hidden/
-    );
-    const week = (s: string) =>
-      map.weeks.find((w: { start: string }) => w.start === s);
-    expect(week("2026-11-08")).toMatchObject({ devotion: "perseverance" });
-    expect(week("2026-11-08").pinned).toBeUndefined();
   });
 
   it("pass the politics gate (both sides, one band, house style)", () => {
@@ -148,9 +144,48 @@ describe("the after-the-vote devotions, as committed", () => {
   });
 });
 
+describe("the after-the-vote devotions while hidden", () => {
+  it("leave the family index exactly as it is without them", () => {
+    const { root: without } = seeded(pub => fs.rmSync(path.join(pub, WORLD)));
+    const { root: hidden } = seeded(hide);
+    for (const r of [without, hidden])
+      fs.mkdirSync(path.join(r, "client/public/needs"), { recursive: true });
+    const withHidden = buildFamilyIndex(hidden);
+    expect(withHidden.problems).toEqual([]);
+    expect(renderFamilyIndex(withHidden.index)).toBe(
+      renderFamilyIndex(buildFamilyIndex(without).index)
+    );
+  });
+
+  it("are pinned to the two weeks after the vote, and the pins wait: the map is the one without them", () => {
+    const { root } = seeded(hide);
+    const inputs = loadInputs(root);
+    const { map, problems, notes } = buildYearMap(inputs);
+    expect(problems).toEqual([]);
+    expect(notes.join("\n")).toMatch(
+      /week 2026-11-08 is pinned to "grown-ups-voted-differently", which is hidden/
+    );
+    expect(notes.join("\n")).toMatch(
+      /week 2026-11-15 is pinned to "praying-for-leaders", which is hidden/
+    );
+    const unpinned = buildYearMap({ ...inputs, overrides: { weeks: [] } });
+    for (const s of PINNED) expect(weekOf(map, s)?.pinned).toBeUndefined();
+    expect(map.weeks).toEqual(unpinned.map.weeks);
+  });
+});
+
 describe("going live", () => {
   it("asks for the freeze, then passes the family gate", () => {
     const { root, pub } = seeded(goLive);
+    // The record as it stands before the first publish, whichever way the repo is committed.
+    const record = JSON.parse(
+      fs.readFileSync(path.join(root, FROZEN_IDS), "utf8")
+    );
+    const before = record.ids.filter((id: string) => !IDS.includes(id));
+    fs.writeFileSync(
+      path.join(root, FROZEN_IDS),
+      JSON.stringify({ ...record, ids: before })
+    );
     const errors = familyErrors(root, pub);
     for (const id of IDS)
       expect(
@@ -158,12 +193,9 @@ describe("going live", () => {
           e.includes(`devotion id "${id}" is not in ${FROZEN_IDS} yet`)
         )
       ).toBe(true);
-    const frozen = JSON.parse(
-      fs.readFileSync(path.join(root, FROZEN_IDS), "utf8")
-    );
     fs.writeFileSync(
       path.join(root, FROZEN_IDS),
-      JSON.stringify({ ...frozen, ids: [...frozen.ids, ...IDS] })
+      JSON.stringify({ ...record, ids: [...before, ...IDS] })
     );
     expect(familyErrors(root, pub)).toEqual([]);
   });
@@ -208,11 +240,10 @@ describe("going live", () => {
     ]);
   });
 
-  it("pins the two weeks after the vote, and changes no week after them", () => {
-    const { root } = seeded(goLive);
+  it("pins the two weeks after the vote, and changes no other week", () => {
     // loadInputs reads the Foundations, the seasonal sets and the overrides from the same root.
-    const live = buildYearMap(loadInputs(root));
-    const hidden = buildYearMap(loadInputs());
+    const live = buildYearMap(loadInputs(seeded(goLive).root));
+    const hidden = buildYearMap(loadInputs(seeded(hide).root));
     expect(live.problems).toEqual([]);
     const at = (b: typeof live, s: string) =>
       b.map.weeks.find((w: { start: string }) => w.start === s);
@@ -224,11 +255,13 @@ describe("going live", () => {
       devotion: "praying-for-leaders",
       pinned: true,
     });
-    // The rotation counts from Advent Sunday 2026 and backward before it, so
-    // two pinned weeks in November move only the weeks before them.
-    const after = (b: typeof live) =>
-      b.map.weeks.filter((w: { start: string }) => w.start > "2026-11-15");
-    expect(after(live)).toEqual(after(hidden));
+    // The rotation counts backward before Advent Sunday 2026, and a pin there
+    // keeps its week's slot, so going live moves no week before the pins (a
+    // family partway through the week of November 1 keeps its devotion) and
+    // none after them.
+    const others = (b: typeof live) =>
+      b.map.weeks.filter((w: Week) => !PINNED.includes(w.start));
+    expect(others(live)).toEqual(others(hidden));
     expect(live.notes.join("\n")).not.toMatch(/hidden/);
   });
 });
@@ -250,7 +283,7 @@ describe("the pins after the vote, later", () => {
 describe("the family gate on a strand file", () => {
   it("still checks a hidden devotion's Scripture and id", () => {
     const { root, pub } = seeded(p => {
-      const s = readStrand(p);
+      const s = { ...readStrand(p), live: false };
       s.devotions[0].passageText = s.devotions[0].passageText.replace(
         "tax collector",
         "publican"
@@ -294,13 +327,13 @@ describe("the family gate on a strand file", () => {
   });
 
   it("refuses to hide a devotion that has been frozen", () => {
-    const { root, pub } = seeded();
+    const { root, pub } = seeded(hide);
     const frozen = JSON.parse(
       fs.readFileSync(path.join(root, FROZEN_IDS), "utf8")
     );
     fs.writeFileSync(
       path.join(root, FROZEN_IDS),
-      JSON.stringify({ ...frozen, ids: [...frozen.ids, IDS[0]] })
+      JSON.stringify({ ...frozen, ids: [...new Set([...frozen.ids, IDS[0]])] })
     );
     expect(
       familyErrors(root, pub).some(
@@ -312,7 +345,7 @@ describe("the family gate on a strand file", () => {
   });
 
   it("refuses a year map that names a hidden devotion", () => {
-    const { root, pub } = seeded();
+    const { root, pub } = seeded(hide);
     const map = path.join(root, "year.ts");
     fs.writeFileSync(
       map,

@@ -19,7 +19,11 @@
  *   3. node scripts/build-family-index.mjs         (rows, pages, sitemap, library)
  *   4. node scripts/build-family-year.mjs          (any week pinned to them in family-year-overrides.json)
  *
- * and committing what they write. CI fails until steps 2 to 4 are done.
+ * and committing what they write. CI fails until steps 2 to 4 are done, and
+ * passes once they are: no test or other file needs an edit (the tests run the
+ * hidden and live cases on copies, whichever way the flag is committed). On
+ * the year map, going live changes only the weeks pinned to the strand's
+ * devotions; every other week keeps its devotion.
  */
 
 /**
