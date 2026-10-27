@@ -1,0 +1,131 @@
+From a8611c2206b103733485fffa7d4c75c78208f836 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 00:28:37 +0000
+Subject: [PATCH 2/2] U08 review: axe waits for the app, the hero gate is
+ guarded, the portrait script fails cleanly
+
+- ci.yml: the Axe step passes --load-delay 1000. On "/" React now mounts
+  once the static hero's paint is recorded (up to 300 ms after the bundle
+  runs), so "load" can come first when the portrait answers quickly; axe
+  then audits the static shell, which has no <main>, and fails
+  landmark-one-main and region. Reproduced in 1 of 15 emulated runs at
+  delay 0, none at 1000. The step has been skipped while Lighthouse
+  failed; with U08 it runs again.
+- static-hero.test.ts: a guard that the marker sits inside #lw-shell, the
+  prerendered hero is a section.home-hero (the gate's selector), and the
+  portrait is fetchpriority low in both Home.tsx and prerender-heads.mjs.
+- bring-portrait-home.mjs: an unreachable URL and a second run after the
+  move now end with a plain message instead of a stack trace or an ENOENT
+  on the site path.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .github/workflows/ci.yml           |  6 +++++-
+ client/src/lib/static-hero.test.ts | 30 +++++++++++++++++++++++++++++-
+ scripts/bring-portrait-home.mjs    | 15 +++++++++++----
+ 3 files changed, 45 insertions(+), 6 deletions(-)
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 1cdbdf82..c0b3d0f3 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -126,9 +126,13 @@ jobs:
+           # rendered in time. It exercises the shared Layout, nav, footer, and a
+           # hero h1 — the design system's a11y. Full-route a11y is covered by
+           # axe/Lighthouse against live Vercel previews, per docs/ARCHITECTURE.
++          # On "/" React mounts up to 300 ms after the bundle runs, once the
++          # static hero's paint is recorded (client/src/lib/static-hero.ts), so
++          # "load" can come first; audited then, the static shell (no <main>)
++          # fails landmark-one-main and region. --load-delay waits for the app.
+           sleep 3
+           set +e
+-          npx --yes @axe-core/cli http://localhost:4173/ --exit
++          npx --yes @axe-core/cli http://localhost:4173/ --load-delay 1000 --exit
+           code=$?
+           if [ "$code" = "2" ]; then
+             echo "::warning::axe skipped — Chrome/ChromeDriver version mismatch (environment, not a content failure)"
+diff --git a/client/src/lib/static-hero.test.ts b/client/src/lib/static-hero.test.ts
+index 6dec134e..12cfb349 100644
+--- a/client/src/lib/static-hero.test.ts
++++ b/client/src/lib/static-hero.test.ts
+@@ -1,5 +1,10 @@
+ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+-import { mountAfterStaticHero } from "./static-hero";
++import fs from "node:fs";
++import path from "node:path";
++import { mountAfterStaticHero, STATIC_HERO_SELECTOR } from "./static-hero";
++
++const ROOT = path.resolve(__dirname, "../../..");
++const read = (file: string) => fs.readFileSync(path.join(ROOT, file), "utf8");
+ 
+ /** A PerformanceObserver stand-in the test can feed LCP entries to. */
+ function fakeObserver(supported: string[] = ["largest-contentful-paint"]) {
+@@ -143,3 +148,26 @@ describe("mountAfterStaticHero", () => {
+     expect(instances[0].disconnected).toBe(true);
+   });
+ });
++
++describe("the static hero the gate watches", () => {
++  it("is still where the selector looks, with the portrait low priority in both copies", () => {
++    // The marker prerender-heads.mjs replaces sits inside #lw-shell...
++    const html = read("client/index.html");
++    const shell = html.indexOf('<div id="lw-shell"');
++    const marker = html.indexOf("<!-- prerender:home-hero");
++    expect(shell).toBeGreaterThan(-1);
++    expect(marker).toBeGreaterThan(shell);
++    expect(html.indexOf("</div>", html.indexOf("</div>", shell) + 1)).toBeGreaterThan(marker);
++
++    // ...and is replaced by a section the selector matches.
++    const prerender = read("scripts/prerender-heads.mjs");
++    expect(STATIC_HERO_SELECTOR).toBe("#lw-shell .home-hero");
++    expect(prerender).toContain('<section class="home-hero">');
++
++    // A high-priority portrait is charged to LCP; keep both copies low.
++    expect(prerender).toMatch(/<img class="home-hero__portrait"[^>]*fetchpriority="low"/);
++    expect(read("client/src/pages/Home.tsx")).toMatch(
++      /className="home-hero__portrait"[\s\S]{0,200}?fetchPriority="low"/
++    );
++  });
++});
+diff --git a/scripts/bring-portrait-home.mjs b/scripts/bring-portrait-home.mjs
+index 442a2398..d817720e 100644
+--- a/scripts/bring-portrait-home.mjs
++++ b/scripts/bring-portrait-home.mjs
+@@ -32,15 +32,22 @@ const LEGACY_HOST = "d2xsxph8kpxj0f.cloudfront.net";
+ 
+ const positioning = fs.readFileSync(POSITIONING, "utf8");
+ const current = positioning.match(/export const PORTRAIT_URL\s*=\s*"([^"]+)"/)?.[1];
+-const source = process.argv[2] ?? current;
++const source = process.argv[2] ?? (/^https?:\/\//.test(current ?? "") ? current : undefined);
+ if (!source) {
+-  console.error("No source: pass a URL or a file, or set PORTRAIT_URL in positioning.ts.");
++  console.error(
++    current === PUBLIC_PATH
++      ? `PORTRAIT_URL already names "${PUBLIC_PATH}"; pass a URL or a file to replace the photograph.`
++      : "No source: pass a URL or a file, or set PORTRAIT_URL in positioning.ts."
++  );
+   process.exit(1);
+ }
+ 
+ let input;
+ if (/^https?:\/\//.test(source)) {
+-  const res = await fetch(source);
++  const res = await fetch(source).catch((err) => {
++    console.error(`Could not reach ${source} (${err.cause?.code ?? err.message}). Pass a file instead.`);
++    process.exit(1);
++  });
+   const type = res.headers.get("content-type") ?? "";
+   if (!res.ok || !type.startsWith("image/")) {
+     console.error(`Could not fetch an image from ${source} (HTTP ${res.status}, ${type || "no type"}).`);
+@@ -71,6 +78,6 @@ console.log(
+ if (current?.includes(LEGACY_HOST)) {
+   fs.writeFileSync(POSITIONING, positioning.replace(`"${current}"`, `"${PUBLIC_PATH}"`));
+   console.log(`PORTRAIT_URL now "${PUBLIC_PATH}" in ${path.relative(ROOT, POSITIONING)}.`);
+-} else {
++} else if (current !== PUBLIC_PATH) {
+   console.log(`PORTRAIT_URL left as "${current}"; point it at "${PUBLIC_PATH}" if that is the intent.`);
+ }
+-- 
+2.43.0
+

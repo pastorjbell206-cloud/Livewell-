@@ -18,6 +18,14 @@ import {
   soleHeaderLink,
   type SiteNavLink,
 } from "@/lib/siteNav";
+import type { PassageMatch } from "@/lib/siteSearch";
+
+/**
+ * Search, with the reference parser behind it. Both load the first time the
+ * search field is focused (lib/siteSearch.ts), never with the header itself,
+ * so first paint carries none of it.
+ */
+const loadFind = () => import("@/lib/siteSearch");
 
 /** Header and mobile menus show only groups that carry primary links. */
 const HEADER_GROUPS = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0);
@@ -57,19 +65,32 @@ export default function MinimalNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  // Reads a typed reference once the parser has loaded; null until then.
+  const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
 
-  const handleSearch = (e: React.FormEvent) => {
+  const prepareSearch = () => {
+    if (readPassage) return;
+    loadFind()
+      .then((find) => find.loadPassageParser().then((parser) => setReadPassage(() => (q: string) => find.passageFor(q, parser))))
+      .catch(() => {});
+  };
+
+  // "John 3:16" or "jn 3 16" goes straight to the verse; anything else to /search.
+  const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      navigate("/search?q=" + encodeURIComponent(searchQuery.trim()));
+    const q = searchQuery.trim();
+    if (q) {
+      const fallback = "/search?q=" + encodeURIComponent(q);
+      navigate(await loadFind().then((find) => find.findHref(q), () => fallback));
     }
     setSearchOpen(false);
   };
+  const typedPassage = readPassage && searchQuery.trim() ? readPassage(searchQuery) : null;
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -141,7 +162,7 @@ export default function MinimalNav() {
                 marginBottom: "16px",
               }}
             >
-              Search the writing
+              Look up a passage or ask a question
             </p>
             <form onSubmit={handleSearch}>
               <label
@@ -160,8 +181,9 @@ export default function MinimalNav() {
                 id="nav-search-input"
                 autoFocus
                 type="text"
-                placeholder="What are you looking for?"
+                placeholder="John 3:16, or your question"
                 value={searchQuery}
+                onFocus={prepareSearch}
                 onChange={e => setSearchQuery(e.target.value)}
                 style={{
                   width: "100%",
@@ -177,6 +199,26 @@ export default function MinimalNav() {
                 }}
               />
             </form>
+            {typedPassage && (
+              <Link
+                href={typedPassage.href}
+                onClick={() => setSearchOpen(false)}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  minHeight: "44px",
+                  marginTop: "12px",
+                  fontFamily: "var(--U)",
+                  fontSize: "15px",
+                  fontWeight: 600,
+                  color: "var(--charcoal-fg)",
+                  textDecoration: "none",
+                  borderBottom: "1px solid var(--mustard)",
+                }}
+              >
+                Open {typedPassage.label} in the Study Bible
+              </Link>
+            )}
             <div
               style={{
                 display: "flex",
@@ -432,7 +474,7 @@ export default function MinimalNav() {
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              aria-label="Search essays and books"
+              aria-label="Search, or look up a passage"
               title="Search"
               style={{
                 background: "none",

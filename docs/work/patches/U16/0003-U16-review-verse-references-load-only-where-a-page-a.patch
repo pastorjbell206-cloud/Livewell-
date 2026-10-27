@@ -1,0 +1,394 @@
+From 002acc9e86da9b0cccb13445878d81abd9c8f98c Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 00:46:46 +0000
+Subject: [PATCH 3/3] U16 review: verse references load only where a page asks
+ for them
+
+Markdown.tsx and Prose imported VerseRef statically, so every Markdown or
+Prose page (essays, books, care pages, history and nation essays) loaded
+the verse sheet, Radix (vendor-ui, 11 KB gzip), and the book table (about
+18 KB gzip in all) without using any of it. The remark plugin moves to
+MarkdownVerseRefs.tsx, loaded lazily by Markdown only with verseRefs, and
+Prose loads RefText the same way; until it arrives the text reads as
+plain prose. A built essay page now requests none of it.
+
+The too-long sheet now counts chapters ("Psalms 1; 23; 91; 139" covers 4
+chapters) instead of naming the first and last as a range. The
+.st-verseref block moves beside the Sheet rules so it no longer lands at
+the line U17 also appends to.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/components/Markdown.tsx          | 77 ++++---------------
+ client/src/components/MarkdownVerseRefs.tsx | 84 +++++++++++++++++++++
+ client/src/components/VerseRef.test.tsx     | 25 +++++-
+ client/src/components/VerseRef.tsx          |  7 +-
+ client/src/index.css                        | 24 +++---
+ client/src/lib/prose.tsx                    | 21 +++++-
+ 6 files changed, 154 insertions(+), 84 deletions(-)
+ create mode 100644 client/src/components/MarkdownVerseRefs.tsx
+
+diff --git a/client/src/components/Markdown.tsx b/client/src/components/Markdown.tsx
+index 28eb9fcc..41f45412 100644
+--- a/client/src/components/Markdown.tsx
++++ b/client/src/components/Markdown.tsx
+@@ -13,65 +13,16 @@
+  * `verseRefs` turns the Scripture references in the text into VerseRef
+  * ("sheet" opens the verse over the page; "link" goes to the Study Bible).
+  * Off unless a page asks: a page that quotes the ESV uses "link" (master
+- * plan 2), and text already inside a link, code, or a heading is left alone.
++ * plan 2). The remark plugin that does it lives in MarkdownVerseRefs.tsx and
++ * loads only when asked for, so a page without `verseRefs` pays nothing for
++ * it; until it arrives the text reads as plain prose.
+  */
+-import { useMemo, type ReactNode } from "react";
++import { lazy, Suspense } from "react";
+ import ReactMarkdown, { type Components } from "react-markdown";
+ import remarkGfm from "remark-gfm";
+-import { VerseRef, type VerseRefMode } from "@/components/VerseRef";
+-import { splitScriptureRefs } from "@/lib/scripture-find";
++import type { VerseRefMode } from "@/components/VerseRef";
+ 
+-/** The few mdast fields the plugin touches. */
+-interface MdNode {
+-  type: string;
+-  value?: string;
+-  children?: MdNode[];
+-  data?: Record<string, unknown>;
+-}
+-
+-/** Nodes whose text is not running prose: a reference there stays as written. */
+-const LEAVE = new Set(["link", "linkReference", "definition", "heading", "code", "inlineCode", "html"]);
+-
+-/** Cut each prose text node at its references; a reference becomes a <verse-ref> element. */
+-function markRefs(node: MdNode) {
+-  if (!node.children) return;
+-  const next: MdNode[] = [];
+-  for (const child of node.children) {
+-    if (child.type === "text" && child.value) {
+-      const parts = splitScriptureRefs(child.value);
+-      if (parts.length === 1 && typeof parts[0] === "string") {
+-        next.push(child);
+-        continue;
+-      }
+-      for (const part of parts) {
+-        next.push(
+-          typeof part === "string"
+-            ? { type: "text", value: part }
+-            : { type: "text", value: part.text, data: { hName: "verse-ref", hProperties: { reference: part.reference } } },
+-        );
+-      }
+-      continue;
+-    }
+-    if (!LEAVE.has(child.type)) markRefs(child);
+-    next.push(child);
+-  }
+-  node.children = next;
+-}
+-
+-/** The in-house remark plugin: no dependency beyond the parser the site already has. */
+-function remarkVerseRefs() {
+-  return (tree: MdNode) => markRefs(tree);
+-}
+-
+-const refNode = (mode: VerseRefMode) =>
+-  function VerseRefNode({ reference, children }: { reference?: string; children?: ReactNode }) {
+-    return (
+-      <VerseRef reference={reference ?? ""} mode={mode}>
+-        {children}
+-      </VerseRef>
+-    );
+-  };
+-const REF_NODES: Record<VerseRefMode, ReturnType<typeof refNode>> = { sheet: refNode("sheet"), link: refNode("link") };
++const MarkdownVerseRefs = lazy(() => import("@/components/MarkdownVerseRefs"));
+ 
+ export function Markdown({
+   children,
+@@ -84,15 +35,19 @@ export function Markdown({
+   /** Make Scripture references live, as a verse sheet or a link to the Study Bible. */
+   verseRefs?: VerseRefMode;
+ }) {
+-  const all = useMemo(
+-    () => (verseRefs ? ({ ...components, "verse-ref": REF_NODES[verseRefs] } as Components) : components),
+-    [components, verseRefs],
+-  );
+-  return (
+-    <ReactMarkdown remarkPlugins={verseRefs ? [remarkGfm, remarkVerseRefs] : [remarkGfm]} components={all}>
++  const plain = (
++    <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+       {children}
+     </ReactMarkdown>
+   );
++  if (!verseRefs) return plain;
++  return (
++    <Suspense fallback={plain}>
++      <MarkdownVerseRefs components={components} mode={verseRefs}>
++        {children}
++      </MarkdownVerseRefs>
++    </Suspense>
++  );
+ }
+ 
+ export default Markdown;
+diff --git a/client/src/components/MarkdownVerseRefs.tsx b/client/src/components/MarkdownVerseRefs.tsx
+new file mode 100644
+index 00000000..d8c268a7
+--- /dev/null
++++ b/client/src/components/MarkdownVerseRefs.tsx
+@@ -0,0 +1,84 @@
++/**
++ * Markdown with its Scripture references made live: the body of
++ * `<Markdown verseRefs>`, in its own module so the reference finder, the book
++ * table, and the verse sheet load only on a page that asks for them. Markdown
++ * pages that do not ask (essays, books, care pages) never download any of it.
++ *
++ * The remark plugin is in-house, with no dependency beyond the parser the site
++ * already has: each prose text node is cut at its references, and a reference
++ * becomes a <verse-ref> element that renders as VerseRef. Text inside a link,
++ * code, or a heading is left as written.
++ */
++import { useMemo, type ReactNode } from "react";
++import ReactMarkdown, { type Components } from "react-markdown";
++import remarkGfm from "remark-gfm";
++import { VerseRef, type VerseRefMode } from "@/components/VerseRef";
++import { splitScriptureRefs } from "@/lib/scripture-find";
++
++/** The few mdast fields the plugin touches. */
++interface MdNode {
++  type: string;
++  value?: string;
++  children?: MdNode[];
++  data?: Record<string, unknown>;
++}
++
++/** Nodes whose text is not running prose: a reference there stays as written. */
++const LEAVE = new Set(["link", "linkReference", "definition", "heading", "code", "inlineCode", "html"]);
++
++/** Cut each prose text node at its references; a reference becomes a <verse-ref> element. */
++function markRefs(node: MdNode) {
++  if (!node.children) return;
++  const next: MdNode[] = [];
++  for (const child of node.children) {
++    if (child.type === "text" && child.value) {
++      const parts = splitScriptureRefs(child.value);
++      if (parts.length === 1 && typeof parts[0] === "string") {
++        next.push(child);
++        continue;
++      }
++      for (const part of parts) {
++        next.push(
++          typeof part === "string"
++            ? { type: "text", value: part }
++            : { type: "text", value: part.text, data: { hName: "verse-ref", hProperties: { reference: part.reference } } },
++        );
++      }
++      continue;
++    }
++    if (!LEAVE.has(child.type)) markRefs(child);
++    next.push(child);
++  }
++  node.children = next;
++}
++
++function remarkVerseRefs() {
++  return (tree: MdNode) => markRefs(tree);
++}
++
++const refNode = (mode: VerseRefMode) =>
++  function VerseRefNode({ reference, children }: { reference?: string; children?: ReactNode }) {
++    return (
++      <VerseRef reference={reference ?? ""} mode={mode}>
++        {children}
++      </VerseRef>
++    );
++  };
++const REF_NODES: Record<VerseRefMode, ReturnType<typeof refNode>> = { sheet: refNode("sheet"), link: refNode("link") };
++
++export default function MarkdownVerseRefs({
++  children,
++  components,
++  mode,
++}: {
++  children: string;
++  components?: Components;
++  mode: VerseRefMode;
++}) {
++  const all = useMemo(() => ({ ...components, "verse-ref": REF_NODES[mode] }) as Components, [components, mode]);
++  return (
++    <ReactMarkdown remarkPlugins={[remarkGfm, remarkVerseRefs]} components={all}>
++      {children}
++    </ReactMarkdown>
++  );
++}
+diff --git a/client/src/components/VerseRef.test.tsx b/client/src/components/VerseRef.test.tsx
+index cb623e10..9e1ecf08 100644
+--- a/client/src/components/VerseRef.test.tsx
++++ b/client/src/components/VerseRef.test.tsx
+@@ -153,11 +153,19 @@ describe("VerseRef, sheet mode", () => {
+     renderAt(<VerseRef reference="Genesis 1-4" />);
+     await user.click(screen.getByRole("link", { name: "Genesis 1-4" }));
+     const dialog = await screen.findByRole("dialog", { name: "Genesis 1–4" });
+-    expect(await within(dialog).findByText(/runs from chapter 1 to chapter 4\. Read it whole in the Study Bible\./)).toBeInTheDocument();
++    expect(await within(dialog).findByText("This passage covers 4 chapters. Read it whole in the Study Bible.")).toBeInTheDocument();
+     expect(within(dialog).getByRole("link", { name: "Open in the Study Bible" })).toHaveAttribute("href", "/study/bible/genesis/1");
+     expect(asked).toEqual([]);
+   });
+ 
++  it("counts the chapters of a list, not the distance between them", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="Psalms 1; 23; 91; 139" />);
++    await user.click(screen.getByRole("link", { name: "Psalms 1; 23; 91; 139" }));
++    expect(await screen.findByText("This passage covers 4 chapters. Read it whole in the Study Bible.")).toBeInTheDocument();
++    expect(asked).toEqual([]);
++  });
++
+   it("says so when the chapter has no such verse", async () => {
+     const user = userEvent.setup();
+     renderAt(<VerseRef reference="John 3:99" />);
+@@ -199,8 +207,18 @@ describe("Markdown verseRefs", () => {
+     expect(screen.getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/somewhere"]);
+   });
+ 
+-  it("turns references in prose into verse sheets, leaving links and headings alone", () => {
++  it("reads as plain prose until the plugin arrives, then makes the references live", async () => {
++    const { container } = renderAt(<Markdown verseRefs="sheet">{md}</Markdown>);
++    // The plugin is its own chunk: the first paint is the text, whole, with no live references yet.
++    expect(container).toHaveTextContent("Read Romans 8:28 and John 3:16, then Isaiah 40:31.");
++    expect(container.querySelector("a.st-verseref")).toBeNull();
++    await waitFor(() => expect(container.querySelectorAll("a.st-verseref")).toHaveLength(2));
++    expect(container).toHaveTextContent("Read Romans 8:28 and John 3:16, then Isaiah 40:31.");
++  });
++
++  it("turns references in prose into verse sheets, leaving links and headings alone", async () => {
+     const { container } = renderAt(<Markdown verseRefs="sheet">{md}</Markdown>);
++    await waitFor(() => expect(container.querySelector("a.st-verseref")).not.toBeNull());
+     const refs = Array.from(container.querySelectorAll("a.st-verseref"));
+     expect(refs.map((a) => [a.textContent, a.getAttribute("href"), a.getAttribute("aria-haspopup")])).toEqual([
+       ["Romans 8:28", "/study/bible/romans/8#v28", "dialog"],
+@@ -211,8 +229,9 @@ describe("Markdown verseRefs", () => {
+     expect(screen.getByRole("heading", { level: 1, name: "Psalm 23" }).querySelector("a")).toBeNull();
+   });
+ 
+-  it("links straight to the Study Bible in link mode", () => {
++  it("links straight to the Study Bible in link mode", async () => {
+     const { container } = renderAt(<Markdown verseRefs="link">{md}</Markdown>);
++    await waitFor(() => expect(container.querySelector("a.st-verseref")).not.toBeNull());
+     const refs = Array.from(container.querySelectorAll("a.st-verseref"));
+     expect(refs.map((a) => a.getAttribute("aria-haspopup"))).toEqual([null, null]);
+     expect(refs.map((a) => a.getAttribute("href"))).toEqual(["/study/bible/romans/8#v28", "/study/bible/isaiah/40#v31"]);
+diff --git a/client/src/components/VerseRef.tsx b/client/src/components/VerseRef.tsx
+index f50f3703..9c9934e3 100644
+--- a/client/src/components/VerseRef.tsx
++++ b/client/src/components/VerseRef.tsx
+@@ -23,7 +23,7 @@ import ScriptureNote from "@/components/ScriptureNote";
+ import { LoadFailed } from "@/components/LoadFailed";
+ import { formatRef, parseScriptureRef, refHref, type ScriptureRef } from "@/lib/scripture-ref";
+ import { splitScriptureRefs } from "@/lib/scripture-find";
+-import { loadPassage, type PassageVerse } from "@/lib/verse-text";
++import { chaptersOf, loadPassage, type PassageVerse } from "@/lib/verse-text";
+ 
+ export type VerseRefMode = "sheet" | "link";
+ 
+@@ -136,11 +136,10 @@ function Passage({ parsed }: { parsed: ScriptureRef }) {
+   if (!result || result.nonce !== nonce) return <p className="st-passage__status" role="status">Loading the passage…</p>;
+   const { verses } = result;
+   if (verses === null) {
+-    const first = parsed.parts[0].c1;
+-    const last = parsed.parts[parsed.parts.length - 1].c2;
++    // Counted, not first-to-last: "Psalms 1; 23; 91; 139" is four chapters, not 139.
+     return (
+       <p className="st-passage__status">
+-        This passage runs from chapter {first} to chapter {last}. Read it whole in the Study Bible.
++        This passage covers {chaptersOf(parsed).length} chapters. Read it whole in the Study Bible.
+       </p>
+     );
+   }
+diff --git a/client/src/index.css b/client/src/index.css
+index f37ab545..f4f3a30f 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -585,18 +585,6 @@ img{display:block;max-width:100%}
+   .st-sheet__foot{padding:16px 24px}
+ }
+ 
+-/* Stepper: the step fills the screen (less the header) so Back and Next sit
+- * at the bottom in thumb reach; the bar stays in view while a long step
+- * scrolls. --st-stepper-top lets a full-screen mode drop the header's 70px. */
+-.st-stepper{display:flex;flex-direction:column;min-height:calc(100vh - var(--st-stepper-top,70px));min-height:calc(100svh - var(--st-stepper-top,70px))}
+-.st-stepper__step{flex:1;padding:var(--s-3) 0 var(--s-4);animation:st-rise var(--dur) var(--motion-ease)}
+-.st-stepper__title{font-family:var(--F);font-size:clamp(28px,3.4vw,40px);font-weight:400;line-height:1.12;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
+-.st-stepper__title:focus{outline:none}
+-.st-stepper__bar{position:sticky;bottom:0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:12px 0 max(12px,env(safe-area-inset-bottom));background:var(--bone);border-top:1px solid var(--border)}
+-.st-stepper__back{justify-self:start}
+-.st-stepper__next{justify-self:end}
+-.st-stepper__position{font-family:var(--U);font-size:14px;color:var(--ink-muted);font-variant-numeric:tabular-nums;margin:0;text-align:center}
+-
+ /* VerseRef: a reference in running text, in the text's own color with a
+  * dotted mustard underline (a page link is solid), so it reads as a door
+  * without shouting. It works on cream and on charcoal alike. Inside an
+@@ -614,6 +602,18 @@ img{display:block;max-width:100%}
+ .st-passage__later{font-family:var(--U);font-size:.8em;font-style:italic;color:var(--ink-muted)}
+ .st-passage__status{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
+ 
++/* Stepper: the step fills the screen (less the header) so Back and Next sit
++ * at the bottom in thumb reach; the bar stays in view while a long step
++ * scrolls. --st-stepper-top lets a full-screen mode drop the header's 70px. */
++.st-stepper{display:flex;flex-direction:column;min-height:calc(100vh - var(--st-stepper-top,70px));min-height:calc(100svh - var(--st-stepper-top,70px))}
++.st-stepper__step{flex:1;padding:var(--s-3) 0 var(--s-4);animation:st-rise var(--dur) var(--motion-ease)}
++.st-stepper__title{font-family:var(--F);font-size:clamp(28px,3.4vw,40px);font-weight:400;line-height:1.12;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
++.st-stepper__title:focus{outline:none}
++.st-stepper__bar{position:sticky;bottom:0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:12px 0 max(12px,env(safe-area-inset-bottom));background:var(--bone);border-top:1px solid var(--border)}
++.st-stepper__back{justify-self:start}
++.st-stepper__next{justify-self:end}
++.st-stepper__position{font-family:var(--U);font-size:14px;color:var(--ink-muted);font-variant-numeric:tabular-nums;margin:0;text-align:center}
++
+ /* CARD */
+ .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}
+ .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+diff --git a/client/src/lib/prose.tsx b/client/src/lib/prose.tsx
+index 4ce71150..56985af9 100644
+--- a/client/src/lib/prose.tsx
++++ b/client/src/lib/prose.tsx
+@@ -8,9 +8,14 @@
+  * block. Plain-text fields are split into readable paragraphs (honoring real
+  * breaks, else grouping sentences); pass `markdown` to render Markdown instead,
+  * and `verseRefs` to make the Scripture references in it live (VerseRef).
++ * VerseRef loads only when a page passes `verseRefs`; until it arrives the
++ * paragraphs read as plain prose.
+  */
++import { lazy, Suspense } from "react";
+ import { Markdown } from "@/components/Markdown";
+-import { RefText, type VerseRefMode } from "@/components/VerseRef";
++import type { VerseRefMode } from "@/components/VerseRef";
++
++const RefText = lazy(() => import("@/components/VerseRef").then((m) => ({ default: m.RefText })));
+ 
+ /**
+  * Turn a prose field into readable paragraphs. Honors explicit blank-line
+@@ -49,11 +54,19 @@ export function Prose({
+   /** "sheet" on pages that quote the BSB or nothing; "link" on pages that quote the ESV. */
+   verseRefs?: VerseRefMode;
+ }) {
++  const paragraphs = markdown ? [] : toParagraphs(text);
++  const plain = paragraphs.map((p, i) => <p key={i}>{p}</p>);
+   return (
+     <div className={`article-body prose-section ${className}`.trim()}>
+-      {markdown
+-        ? <Markdown verseRefs={verseRefs}>{text}</Markdown>
+-        : toParagraphs(text).map((p, i) => <p key={i}>{verseRefs ? <RefText text={p} mode={verseRefs} /> : p}</p>)}
++      {markdown ? (
++        <Markdown verseRefs={verseRefs}>{text}</Markdown>
++      ) : verseRefs ? (
++        <Suspense fallback={plain}>
++          {paragraphs.map((p, i) => <p key={i}><RefText text={p} mode={verseRefs} /></p>)}
++        </Suspense>
++      ) : (
++        plain
++      )}
+     </div>
+   );
+ }
+-- 
+2.43.0
+

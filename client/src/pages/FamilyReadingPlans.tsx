@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
+import { RefText } from "@/components/VerseRef";
 import { fetchJson } from "@/lib/fetch-json";
 
 interface Day { day: number; passage: string; prompt: string; }
@@ -102,7 +103,8 @@ export default function FamilyReadingPlans() {
                           {isDone(`${plan.id}:${d.day}`) ? `✓ Day ${d.day}` : `Day ${d.day}`}
                         </button>
                         <span>
-                          <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}>{d.passage}</span>
+                          {/* The page quotes nothing, so the day's passage opens in a verse sheet. */}
+                          <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}><RefText text={d.passage} /></span>
                           <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "2px" }}>{d.prompt}</span>
                         </span>
                       </div>

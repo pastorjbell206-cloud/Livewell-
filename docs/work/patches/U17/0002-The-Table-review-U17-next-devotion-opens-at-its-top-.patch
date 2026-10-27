@@ -1,0 +1,449 @@
+From ef4de72a05de4b4dee90b1ed5731517ce2c3bb74 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 00:59:49 +0000
+Subject: [PATCH 2/2] The Table review (U17): next devotion opens at its top,
+ one event a night, steadier wake lock
+
+- Before this / Next on a devotion page kept the page mounted and left the
+  reader at the bottom of the next devotion; it now starts at the top.
+- "We did this tonight" sends family_devotion_complete once per devotion per
+  night on this device, however many taps (recordDevotionDone reports
+  `already`).
+- The wake lock is asked again on the next tap or key when the browser
+  refused the first ask (it is made after a fetch, away from the tap), and is
+  dropped from memory when the browser lets it go.
+- /family/devotions?tab=<set>&day=N opens that day's own page, so U13's
+  Advent links land on the devotion rather than the list.
+- The season list on /family comes from the static year map without waiting
+  for the index; the tonight card is labelled by its always-present eyebrow.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/lib/familyTable.test.ts       |  8 ++-
+ client/src/lib/familyTable.ts            | 14 +++--
+ client/src/lib/useWakeLock.test.ts       | 77 ++++++++++++++++++++++++
+ client/src/lib/useWakeLock.ts            | 40 +++++++++---
+ client/src/pages/Family.tsx              |  9 +--
+ client/src/pages/FamilyDevotions.tsx     | 18 ++++--
+ client/src/pages/family-pages.test.tsx   | 16 +++++
+ client/src/pages/family/DevotionPage.tsx | 14 ++++-
+ client/src/pages/family/TonightCard.tsx  |  8 +--
+ client/src/pages/family/table.test.tsx   | 15 +++++
+ 10 files changed, 190 insertions(+), 29 deletions(-)
+ create mode 100644 client/src/lib/useWakeLock.test.ts
+
+diff --git a/client/src/lib/familyTable.test.ts b/client/src/lib/familyTable.test.ts
+index b0307a56..9caaf2ca 100644
+--- a/client/src/lib/familyTable.test.ts
++++ b/client/src/lib/familyTable.test.ts
+@@ -144,8 +144,8 @@ describe("what this device remembers", () => {
+ 
+   it("writes through lib/storage and reads it back", () => {
+     expect(readFamilyProgress()).toEqual(EMPTY_PROGRESS);
+-    const { ok } = recordDevotionDone("identity", "2026-11-03");
+-    expect(ok).toBe(true);
++    const first = recordDevotionDone("identity", "2026-11-03");
++    expect(first).toMatchObject({ ok: true, already: false });
+     expect(JSON.parse(window.localStorage.getItem(FAMILY_PROGRESS_KEY)!)).toEqual({
+       v: 1,
+       start: "2026-11-03",
+@@ -153,6 +153,10 @@ describe("what this device remembers", () => {
+       done: [{ id: "identity", date: "2026-11-03" }],
+     });
+     expect(readFamilyProgress().done).toHaveLength(1);
++    // A second tap the same night is known as one, so it is not counted twice.
++    expect(recordDevotionDone("identity", "2026-11-03")).toMatchObject({ ok: true, already: true });
++    expect(recordDevotionDone("identity", "2026-11-04").already).toBe(false);
++    expect(readFamilyProgress().done).toHaveLength(2);
+   });
+ 
+   it("ignores a value of the wrong shape", () => {
+diff --git a/client/src/lib/familyTable.ts b/client/src/lib/familyTable.ts
+index 9ee96ce9..9efea741 100644
+--- a/client/src/lib/familyTable.ts
++++ b/client/src/lib/familyTable.ts
+@@ -193,10 +193,16 @@ export function withDone(progress: FamilyProgress, id: string, date: string): Fa
+   return { ...progress, start: progress.start ?? date, done };
+ }
+ 
+-/** Record "We did this tonight". False when the browser would not keep it. */
+-export function recordDevotionDone(id: string, date: string): { ok: boolean; progress: FamilyProgress } {
+-  const progress = withDone(readFamilyProgress(), id, date);
+-  return { ok: writeStoredJSON(FAMILY_PROGRESS_KEY, progress), progress };
++/**
++ * Record "We did this tonight". `ok` is false when the browser would not keep
++ * it; `already` is true when this device had it for that date, so a second
++ * tap is not counted twice.
++ */
++export function recordDevotionDone(id: string, date: string): { ok: boolean; already: boolean; progress: FamilyProgress } {
++  const before = readFamilyProgress();
++  const already = before.done.some((d) => d.id === id && d.date === date);
++  const progress = withDone(before, id, date);
++  return { ok: writeStoredJSON(FAMILY_PROGRESS_KEY, progress), already, progress };
+ }
+ 
+ /** The most recent devotion done, by date (the later entry on a tie). */
+diff --git a/client/src/lib/useWakeLock.test.ts b/client/src/lib/useWakeLock.test.ts
+new file mode 100644
+index 00000000..c3d2f7b4
+--- /dev/null
++++ b/client/src/lib/useWakeLock.test.ts
+@@ -0,0 +1,77 @@
++/**
++ * useWakeLock (table mode, U17): asks for one screen lock while active, asks
++ * again on the next tap when the browser refused the first ask, asks again
++ * when the page comes back into view, and lets go on leaving. Silent where
++ * the browser has no Wake Lock API.
++ */
++import { describe, it, expect, vi, afterEach } from "vitest";
++import { renderHook, act } from "@testing-library/react";
++import { useWakeLock } from "./useWakeLock";
++
++function stubWakeLock(answers: ("grant" | "refuse")[]) {
++  const releases: ReturnType<typeof vi.fn>[] = [];
++  const request = vi.fn(async () => {
++    if ((answers.shift() ?? "grant") === "refuse") throw new DOMException("refused", "NotAllowedError");
++    const release = vi.fn(async () => {});
++    releases.push(release);
++    return { release, addEventListener: vi.fn() };
++  });
++  Object.defineProperty(navigator, "wakeLock", { value: { request }, configurable: true });
++  return { request, releases };
++}
++
++const flush = () => act(async () => {});
++
++afterEach(() => {
++  // @ts-expect-error: the stub is ours to remove
++  delete navigator.wakeLock;
++});
++
++describe("useWakeLock", () => {
++  it("holds one lock while active and lets go on leaving", async () => {
++    const { request, releases } = stubWakeLock(["grant"]);
++    const { unmount } = renderHook(() => useWakeLock(true));
++    await flush();
++    expect(request).toHaveBeenCalledTimes(1);
++    expect(request).toHaveBeenCalledWith("screen");
++    document.dispatchEvent(new Event("pointerdown")); // a tap while held asks for nothing more
++    await flush();
++    expect(request).toHaveBeenCalledTimes(1);
++    unmount();
++    expect(releases[0]).toHaveBeenCalledTimes(1);
++  });
++
++  it("asks again on the next tap when the first ask was refused", async () => {
++    const { request } = stubWakeLock(["refuse", "grant"]);
++    renderHook(() => useWakeLock(true));
++    await flush();
++    expect(request).toHaveBeenCalledTimes(1);
++    document.dispatchEvent(new Event("pointerdown"));
++    await flush();
++    expect(request).toHaveBeenCalledTimes(2);
++  });
++
++  it("asks again when the page comes back into view", async () => {
++    const { request } = stubWakeLock(["grant", "grant"]);
++    renderHook(() => useWakeLock(true));
++    await flush();
++    const visibility = vi.spyOn(document, "visibilityState", "get");
++    visibility.mockReturnValue("hidden");
++    document.dispatchEvent(new Event("visibilitychange"));
++    visibility.mockReturnValue("visible");
++    document.dispatchEvent(new Event("visibilitychange"));
++    await flush();
++    expect(request).toHaveBeenCalledTimes(2);
++    visibility.mockRestore();
++  });
++
++  it("does nothing when inactive or where the browser has no Wake Lock", async () => {
++    const { request } = stubWakeLock([]);
++    renderHook(() => useWakeLock(false));
++    await flush();
++    expect(request).not.toHaveBeenCalled();
++    // @ts-expect-error: the stub is ours to remove
++    delete navigator.wakeLock;
++    expect(() => renderHook(() => useWakeLock(true))).not.toThrow();
++  });
++});
+diff --git a/client/src/lib/useWakeLock.ts b/client/src/lib/useWakeLock.ts
+index 3b5a67c8..abfbd287 100644
+--- a/client/src/lib/useWakeLock.ts
++++ b/client/src/lib/useWakeLock.ts
+@@ -3,13 +3,16 @@
+  * the salt shaker should not go dark mid-prayer). Uses the Screen Wake Lock
+  * API where the browser has it, and does nothing where it does not. The
+  * browser drops the lock whenever the page is hidden, so it is asked for
+- * again when the page comes back; it is let go when `active` turns false or
+- * the component leaves.
++ * again when the page comes back. A browser that refuses a lock asked for
++ * without a tap (the page opens after a fetch) is asked again on the next
++ * tap or key, such as Next. The lock is let go when `active` turns false or the
++ * component leaves.
+  */
+ import { useEffect } from "react";
+ 
+ interface Sentinel {
+   release: () => Promise<void>;
++  addEventListener?: (type: "release", listener: () => void) => void;
+ }
+ interface WakeLockApi {
+   request: (type: "screen") => Promise<Sentinel>;
+@@ -29,24 +32,43 @@ export function useWakeLock(active: boolean): void {
+     const wl = active ? api() : null;
+     if (!wl) return;
+     let sentinel: Sentinel | null = null;
++    let asking = false;
+     let live = true;
+     const ask = () => {
+-      if (document.visibilityState !== "visible") return;
++      if (!live || sentinel || asking || document.visibilityState !== "visible") return;
++      asking = true;
+       wl.request("screen")
+         .then((s) => {
+-          if (live) sentinel = s;
+-          else s.release().catch(() => {});
++          asking = false;
++          if (!live) {
++            s.release().catch(() => {});
++            return;
++          }
++          sentinel = s;
++          // The browser lets go on its own (the page hidden, battery saver).
++          s.addEventListener?.("release", () => {
++            if (sentinel === s) sentinel = null;
++          });
+         })
+         .catch(() => {
+-          // Refused (battery saver, no user gesture yet, a frame without
+-          // permission): the screen simply sleeps as it always has.
++          // Refused (battery saver, no tap yet, a frame without permission):
++          // the screen sleeps as it always has, until the next tap asks again.
++          asking = false;
+         });
+     };
++    const onVisibility = () => {
++      if (document.visibilityState === "visible") ask();
++      else sentinel = null; // released by the browser when the page hides
++    };
+     ask();
+-    document.addEventListener("visibilitychange", ask);
++    document.addEventListener("visibilitychange", onVisibility);
++    document.addEventListener("pointerdown", ask);
++    document.addEventListener("keydown", ask);
+     return () => {
+       live = false;
+-      document.removeEventListener("visibilitychange", ask);
++      document.removeEventListener("visibilitychange", onVisibility);
++      document.removeEventListener("pointerdown", ask);
++      document.removeEventListener("keydown", ask);
+       sentinel?.release().catch(() => {});
+     };
+   }, [active]);
+diff --git a/client/src/pages/Family.tsx b/client/src/pages/Family.tsx
+index 74ea881a..328590aa 100644
+--- a/client/src/pages/Family.tsx
++++ b/client/src/pages/Family.tsx
+@@ -34,8 +34,9 @@ const card = {
+   color: "inherit", display: "block",
+ } as const;
+ 
+-/** The library tab for each daily set. */
++/** The library tab for each daily set, and its name until the index says it (scripts/lib/family-index.mjs). */
+ const SET_TAB = { thanksgiving: "thanksgiving", advent: "advent", holyWeek: "holy-week" } as const;
++const SET_NAME = { thanksgiving: "Thanksgiving week", advent: "Advent", holyWeek: "Holy Week" } as const;
+ 
+ const MONTH = new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" });
+ const dateParts = (iso: string) => ({ y: Number(iso.slice(0, 4)), m: MONTH.format(new Date(`${iso}T12:00:00Z`)), d: Number(iso.slice(8, 10)) });
+@@ -48,7 +49,7 @@ function spanSaid(start: string, end: string, thisYear: number): string {
+   return a.m === b.m ? `${a.m} ${a.d} to ${b.d}${tail}` : `${a.m} ${a.d} to ${b.m} ${b.d}${tail}`;
+ }
+ 
+-/** This week's catechism question, and the daily sets running now or next. */
++/** This week's catechism question, and the daily sets running now or next (from the static year map, so they need no network). */
+ function ThisWeek({ index }: { index: FamilyIndex | null }) {
+   const [today] = useState(() => localISODate());
+   const line = index ? catechismThisWeek(index.catechism) : null;
+@@ -70,12 +71,12 @@ function ThisWeek({ index }: { index: FamilyIndex | null }) {
+       </div>
+       <div>
+         <h2 className="tb-section__title">The season</h2>
+-        {index && sets.length > 0 && (
++        {sets.length > 0 && (
+           <ul className="tb-sets">
+             {sets.map((w) => (
+               <li key={w.start}>
+                 <Link href={`/family/devotions?tab=${SET_TAB[w.set]}`}>
+-                  <span className="tb-sets__name">{index.sets[w.set]?.label ?? w.set}</span>
++                  <span className="tb-sets__name">{index?.sets[w.set]?.label ?? SET_NAME[w.set]}</span>
+                   <span className="tb-sets__when">
+                     {spanSaid(w.start, w.end, year)}
+                     {w.start <= today ? " · now" : ""}
+diff --git a/client/src/pages/FamilyDevotions.tsx b/client/src/pages/FamilyDevotions.tsx
+index 42585916..6de34dd2 100644
+--- a/client/src/pages/FamilyDevotions.tsx
++++ b/client/src/pages/FamilyDevotions.tsx
+@@ -3,12 +3,12 @@
+  * own page (/family/devotions/:id), so this is a list of doors: 72 weekly
+  * devotions (more than a year at one a week), plus the daily sets for
+  * Thanksgiving week, Advent, and Holy Week. The tab is in the URL (?tab=), so
+- * a link can open the Advent list; a devotion done on this device carries a
+- * quiet mark. Data: the family index (client/public/family/index.json,
++ * a link can open the Advent list, and &day=N opens that day's page; a
++ * devotion done on this device carries a quiet mark. Data: the family index (client/public/family/index.json,
+  * scripts/build-family-index.mjs); the list shows references, not verse text.
+  * scripts/validate-family.mjs checks the counts this page states.
+  */
+-import { useMemo, useState } from "react";
++import { useEffect, useMemo, useState } from "react";
+ import { Link, useLocation, useSearch } from "wouter";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+@@ -34,10 +34,20 @@ export default function FamilyDevotions() {
+   const index = state.status === "ready" ? state.value : null;
+   const search = useSearch();
+   const [, navigate] = useLocation();
+-  const param = new URLSearchParams(search).get("tab");
++  const query = new URLSearchParams(search);
++  const param = query.get("tab");
+   const tab: Tab = TABS.find((t) => t.param === param)?.id ?? "weekly";
++  const day = Number(query.get("day"));
+   const [done] = useState(() => new Set(readFamilyProgress().done.map((d) => d.id)));
+ 
++  // ?tab=advent&day=6 names one day of a set (U13's Advent links use it):
++  // open that day's own page in place of the list.
++  useEffect(() => {
++    if (!index || tab === "weekly" || !Number.isInteger(day) || day < 1) return;
++    const row = index.devotions.find((r) => r.set === tab && r.day === day);
++    if (row) navigate(devotionHref(row.id), { replace: true });
++  }, [index, tab, day, navigate]);
++
+   const rows = useMemo(() => {
+     if (!index) return [];
+     return index.devotions.filter((r) => (tab === "weekly" ? r.kind === "weekly" : r.set === tab));
+diff --git a/client/src/pages/family-pages.test.tsx b/client/src/pages/family-pages.test.tsx
+index f282a3ef..3753bf80 100644
+--- a/client/src/pages/family-pages.test.tsx
++++ b/client/src/pages/family-pages.test.tsx
+@@ -94,6 +94,22 @@ describe("/family/devotions", () => {
+     window.localStorage.clear();
+   });
+ 
++  it("opens a day's own page when the URL names one (?tab=advent&day=6)", async () => {
++    stubFamily({ online: true });
++    window.history.pushState({}, "", "/family/devotions?tab=advent&day=6");
++    renderWithProviders(<FamilyDevotions />);
++    await waitFor(() => expect(window.location.pathname).toBe("/family/devotions/advent-6"));
++    expect(window.location.search).toBe("");
++  });
++
++  it("stays on the list for a day the set does not have", async () => {
++    stubFamily({ online: true });
++    window.history.pushState({}, "", "/family/devotions?tab=holy-week&day=40");
++    renderWithProviders(<FamilyDevotions />);
++    expect(await screen.findByRole("link", { name: /Palm Sunday/ })).toBeInTheDocument();
++    expect(window.location.pathname).toBe("/family/devotions");
++  });
++
+   it("opens the tab the URL names", async () => {
+     stubFamily({ online: true });
+     window.history.pushState({}, "", "/family/devotions?tab=holy-week");
+diff --git a/client/src/pages/family/DevotionPage.tsx b/client/src/pages/family/DevotionPage.tsx
+index acc2c98a..a891a6a8 100644
+--- a/client/src/pages/family/DevotionPage.tsx
++++ b/client/src/pages/family/DevotionPage.tsx
+@@ -11,7 +11,7 @@
+  * this device (lib/familyTable): where the devotion sits in its set, the week
+  * of the year when it is tonight's, and the last one done; never a streak.
+  */
+-import { useState, type ReactNode } from "react";
++import { useEffect, useRef, useState, type ReactNode } from "react";
+ import { Link, useLocation, useParams, useSearch } from "wouter";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+@@ -67,6 +67,15 @@ export default function DevotionPage() {
+   const [, navigate] = useLocation();
+   const { state, retry } = useDevotion(id);
+ 
++  // "Before this" and "Next" keep this page mounted and only change the id:
++  // start the new devotion at its top, not at the bottom where the link was.
++  const shownId = useRef(id);
++  useEffect(() => {
++    if (shownId.current === id) return;
++    shownId.current = id;
++    window.scrollTo({ top: 0, left: 0, behavior: "instant" }); // a new page, not a glide up through the last one
++  }, [id]);
++
+   // The reader's own calendar and what this device remembers. There is no
+   // server render to agree with, so both are read as the page first renders.
+   const [today] = useState(() => localISODate());
+@@ -79,7 +88,8 @@ export default function DevotionPage() {
+     const result = recordDevotionDone(id, today);
+     setProgress(result.progress);
+     setFinished({ key: finishKey, ok: result.ok });
+-    trackFamilyDevotionComplete(id, table ? "table" : "page");
++    // One event per devotion per night on this device, however many taps.
++    if (!result.already) trackFamilyDevotionComplete(id, table ? "table" : "page");
+   };
+ 
+   if (state.status !== "ready") {
+diff --git a/client/src/pages/family/TonightCard.tsx b/client/src/pages/family/TonightCard.tsx
+index 336c6842..dd83375f 100644
+--- a/client/src/pages/family/TonightCard.tsx
++++ b/client/src/pages/family/TonightCard.tsx
+@@ -30,13 +30,13 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
+   const setLabel = data && row?.set ? data.sets[row.set]?.label : undefined;
+ 
+   return (
+-    <section className="tb-tonight" aria-labelledby="tb-tonight-title" aria-busy={!data}>
+-      <p className="eyebrow" style={{ margin: 0 }}>
++    <section className="tb-tonight" aria-labelledby="tb-tonight-label" aria-busy={!data}>
++      <p id="tb-tonight-label" className="eyebrow" style={{ margin: 0 }}>
+         Tonight at the table
+       </p>
+       {data && !row && (
+         <>
+-          <h2 id="tb-tonight-title" className="tb-tonight__title">
++          <h2 className="tb-tonight__title">
+             Choose tonight's devotion
+           </h2>
+           <p className="tb-tonight__meta">No devotion is set for this date yet.</p>
+@@ -49,7 +49,7 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
+       )}
+       {row && (
+         <>
+-          <h2 id="tb-tonight-title" className="tb-tonight__title">
++          <h2 className="tb-tonight__title">
+             {row.title}
+           </h2>
+           <p className="tb-tonight__meta">{[row.label, row.passage, row.kind === "weekly" ? "About ten minutes" : null].filter(Boolean).join(" · ")}</p>
+diff --git a/client/src/pages/family/table.test.tsx b/client/src/pages/family/table.test.tsx
+index fab2db1b..9766bb9c 100644
+--- a/client/src/pages/family/table.test.tsx
++++ b/client/src/pages/family/table.test.tsx
+@@ -188,6 +188,21 @@ describe("/family/devotions/:id", () => {
+     fireEvent.click(screen.getByRole("button", { name: "We did this tonight" }));
+     expect(await screen.findByText("Done. This device will remember that you did this one tonight.")).toBeInTheDocument();
+     expect(vercelTrack).toHaveBeenCalledWith("family_devotion_complete", { id: "identity", mode: "page" });
++    // A second tap the same night is not a second event.
++    fireEvent.click(screen.getByRole("button", { name: "We did this tonight" }));
++    expect(vercelTrack).toHaveBeenCalledTimes(1);
++  });
++
++  it("starts the next devotion at its top", async () => {
++    serveFamily();
++    const scrollTo = vi.spyOn(window, "scrollTo");
++    renderAt("/family/devotions/identity");
++    await screen.findByRole("heading", { level: 1, name: row("identity").title });
++    expect(scrollTo).not.toHaveBeenCalled();
++    fireEvent.click(screen.getByRole("link", { name: `Next: ${row("fear-and-anxiety").title}` }));
++    expect(await screen.findByRole("heading", { level: 1, name: row("fear-and-anxiety").title })).toBeInTheDocument();
++    expect(scrollTo).toHaveBeenCalledWith({ top: 0, left: 0, behavior: "instant" });
++    scrollTo.mockRestore();
+   });
+ 
+   it("gives a day of a daily set its own page, named as the paraphrase it is", async () => {
+-- 
+2.43.0
+

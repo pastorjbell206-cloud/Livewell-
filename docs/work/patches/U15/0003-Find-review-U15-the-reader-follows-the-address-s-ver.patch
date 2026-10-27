@@ -1,0 +1,114 @@
+From 073f8702d153d0a1f70967db33f1aca366c0ce92 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 00:38:45 +0000
+Subject: [PATCH 3/3] Find review (U15): the reader follows the address's verse
+ as it changes
+
+The header's search sends "John 3:16" to /study/bible/john/3#v16. On John 3 itself that changed only the hash, and the reader read the hash once, on load, so nothing opened. The reader now follows the hash through wouter's location events, and a new hash wins over an earlier pick. Back and Forward between verses follow it too.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/pages/StudyBible.hash.test.tsx | 43 +++++++++++++++++++++++
+ client/src/pages/StudyBible.tsx           | 18 ++++++----
+ 2 files changed, 54 insertions(+), 7 deletions(-)
+ create mode 100644 client/src/pages/StudyBible.hash.test.tsx
+
+diff --git a/client/src/pages/StudyBible.hash.test.tsx b/client/src/pages/StudyBible.hash.test.tsx
+new file mode 100644
+index 00000000..ec3ce78b
+--- /dev/null
++++ b/client/src/pages/StudyBible.hash.test.tsx
+@@ -0,0 +1,43 @@
++/**
++ * The reader follows the address's #v16 as it changes, not only on arrival:
++ * the header's search (U15) can open a verse of the chapter already on screen,
++ * and that changes nothing but the hash.
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { afterEach, describe, expect, it, vi } from "vitest";
++import { act, screen, waitFor } from "@testing-library/react";
++
++import { renderWithProviders } from "@/test/harness";
++import StudyBible from "./StudyBible";
++
++const PUBLIC = path.resolve(__dirname, "../../public");
++
++/** Serves the committed Study Bible files from disk; anything else is offline. */
++const diskFetch = (async (input: RequestInfo | URL) => {
++  const url = new URL(String(input instanceof Request ? input.url : input), "http://localhost");
++  const file = path.join(PUBLIC, decodeURIComponent(url.pathname));
++  if (url.pathname.startsWith("/bible/") && file.startsWith(PUBLIC) && fs.existsSync(file)) {
++    return new Response(fs.readFileSync(file, "utf8"), { status: 200, headers: { "Content-Type": "application/json" } });
++  }
++  return new Response("{}", { status: 404, headers: { "Content-Type": "application/json" } });
++}) as typeof fetch;
++
++afterEach(() => {
++  vi.unstubAllGlobals();
++  window.history.replaceState({}, "", "/");
++});
++
++describe("the Study Bible reader", () => {
++  it("opens a verse of the chapter on screen when only the hash changes", async () => {
++    vi.stubGlobal("fetch", diskFetch);
++    window.history.replaceState({}, "", "/study/bible/john/3");
++    renderWithProviders(<StudyBible />);
++    await waitFor(() => expect(document.getElementById("v16")).not.toBeNull(), { timeout: 5000 });
++    expect(screen.queryByRole("button", { name: "Close the study panel" })).toBeNull();
++
++    act(() => window.history.pushState(null, "", "/study/bible/john/3#v16"));
++    expect(await screen.findByRole("button", { name: "Close the study panel" })).toBeInTheDocument();
++    expect(screen.getAllByText("John 3:16").length).toBeGreaterThan(0);
++  });
++});
+diff --git a/client/src/pages/StudyBible.tsx b/client/src/pages/StudyBible.tsx
+index 6f6fe7d0..89e29fed 100644
+--- a/client/src/pages/StudyBible.tsx
++++ b/client/src/pages/StudyBible.tsx
+@@ -15,6 +15,7 @@
+  */
+ import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
+ import { Link, useRoute } from "wouter";
++import { useLocationProperty } from "wouter/use-browser-location";
+ import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
+ 
+ import Layout from "@/components/Layout";
+@@ -428,7 +429,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
+   const [failedKey, setFailedKey] = useState<string | null>(null);
+   const [nonce, setNonce] = useState(0);
+   const [mode, setMode] = useState<Mode>(() => readStoredJSON<Mode>(MODE_KEY, (x): x is Mode => x === "reading" || x === "interlinear", "reading"));
+-  const [picked, setPicked] = useState<{ key: string; sel: Selection } | null>(null);
++  const [picked, setPicked] = useState<{ key: string; hash: string; sel: Selection } | null>(null);
+   const wide = useWide();
+   const lang = book.testament === "OT" ? "H" : "G";
+   const valid = chapter >= 1 && chapter <= book.chapters;
+@@ -449,14 +450,17 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
+     return () => { stale = true; };
+   }, [book.slug, chapter, nonce, valid]);
+ 
+-  // A #v16 link opens that verse until the reader picks something else.
++  // A #v16 link opens that verse until the reader picks something else. The
++  // hash is followed as it changes: the header's search can open a verse of
++  // the chapter already on screen, and that changes nothing but the hash.
++  const hash = useLocationProperty(() => window.location.hash, () => "");
+   const hashVerse = useMemo(() => {
+-    if (!data || typeof window === "undefined") return null;
+-    const m = window.location.hash.match(/^#v(\d+)$/);
++    if (!data) return null;
++    const m = hash.match(/^#v(\d+)$/);
+     return m ? data.verses.find((x) => x.v === +m[1]) ?? null : null;
+-  }, [data]);
+-  const sel: Selection = picked?.key === key ? picked.sel : hashVerse ? { kind: "verse", verse: hashVerse } : null;
+-  const setSel = (s: Selection) => setPicked({ key, sel: s });
++  }, [data, hash]);
++  const sel: Selection = picked?.key === key && picked.hash === hash ? picked.sel : hashVerse ? { kind: "verse", verse: hashVerse } : null;
++  const setSel = (s: Selection) => setPicked({ key, hash, sel: s });
+ 
+   useEffect(() => {
+     if (hashVerse) requestAnimationFrame(() => document.getElementById(`v${hashVerse.v}`)?.scrollIntoView({ block: "center" }));
+-- 
+2.43.0
+

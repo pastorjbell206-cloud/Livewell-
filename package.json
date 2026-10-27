@@ -49,7 +49,8 @@
     "validate:verse-guides": "node scripts/validate-verse-guides.mjs",
     "llms:full": "node scripts/build-llms-full.mjs",
     "theology-index": "node scripts/build-theology-index.mjs",
-    "catalogue": "tsx scripts/build-catalogue.mjs"
+    "catalogue": "tsx scripts/build-catalogue.mjs",
+    "search:index": "tsx scripts/build-search-index.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

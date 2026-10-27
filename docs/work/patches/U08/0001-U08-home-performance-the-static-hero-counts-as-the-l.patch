@@ -1,0 +1,496 @@
+From b87714496f92e8af4cbad3613f742a7c4ae47b76 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 23:21:36 +0000
+Subject: [PATCH 1/2] U08: home performance, the static hero counts as the
+ largest paint again
+
+Diagnosis (the failing quality job on main, run 40382670533, and three
+others): only Lighthouse performance fails, at 73, 74, 83 and 88 against
+90; accessibility, best practices and SEO pass. Reproduced locally with
+CI's flags (Lighthouse 13.5.0, mobile, simulated throttling): 87 to 90,
+LCP 3.3 to 3.7 s. Two causes:
+
+1. A race between the static hero and React. prerender-heads.mjs paints
+   the hero into "/" so the largest paint is the first paint, but the
+   bundle arrives before that frame's paint is recorded and React
+   replaces the paragraph; Chrome drops the static paint as an LCP
+   candidate and counts React's identical copy, so Lantern charges the
+   whole bundle and its 4x-throttled evaluation to LCP. Delaying the
+   bundle by 60 ms or more, or blocking it, makes the static paragraph
+   the LCP at first paint.
+2. The portrait, served from the legacy CloudFront host. A high-priority
+   image that finishes before the observed LCP is charged to LCP: with a
+   local stand-in for the CDN, a 2 MB portrait gave LCP 12.6 s and 73
+   (the CI pattern); 184 KB gave 87 to 88.
+
+Fixes:
+- lib/static-hero.ts: on "/" only, main.tsx mounts React once the static
+  hero's LCP entry is recorded (usually already buffered; at most 300 ms).
+  Other paths (vercel.json serves the home HTML as the fallback), browsers
+  without LCP, and hidden tabs mount at once. Tested in static-hero.test.ts.
+- The portrait is fetchpriority="low" in Home.tsx and the prerendered
+  hero: a thumbnail beside the name never competes with CSS, fonts and
+  text, and stays out of LCP whatever its size.
+- registerSW.js is deferred (vite-plugin-pwa injectRegister
+  "script-defer"); it only waits for "load", so it no longer blocks the
+  parser on every page.
+
+Result, three runs each: 96 to 97 with the portrait unreachable; 92 to 95
+with a 2 MB stand-in; 95 with 184 KB. LCP 2.4 to 2.8 s, FCP 1.8 to 2.0 s.
+
+Moving the portrait in-house was blocked: this sandbox cannot reach
+CloudFront. scripts/bring-portrait-home.mjs makes it one command where
+the source is reachable (a URL, or the file James supplies): a 640 x 800
+crop in client/public/images/ and PORTRAIT_URL repointed. AuthorBio now
+reads PORTRAIT_URL, so the photograph is one constant. The other
+CloudFront references are retired pages, admin data and seed scripts.
+
+main.tsx drops an unused import (getLoginUrl) so the file lints clean.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/components/AuthorBio.tsx |   5 +-
+ client/src/lib/static-hero.test.ts  | 145 ++++++++++++++++++++++++++++
+ client/src/lib/static-hero.ts       |  72 ++++++++++++++
+ client/src/main.tsx                 |  24 +++--
+ client/src/pages/Home.tsx           |   1 +
+ scripts/bring-portrait-home.mjs     |  76 +++++++++++++++
+ scripts/prerender-heads.mjs         |   7 +-
+ vite.config.ts                      |   4 +
+ 8 files changed, 320 insertions(+), 14 deletions(-)
+ create mode 100644 client/src/lib/static-hero.test.ts
+ create mode 100644 client/src/lib/static-hero.ts
+ create mode 100644 scripts/bring-portrait-home.mjs
+
+diff --git a/client/src/components/AuthorBio.tsx b/client/src/components/AuthorBio.tsx
+index 5d08f943..13805162 100644
+--- a/client/src/components/AuthorBio.tsx
++++ b/client/src/components/AuthorBio.tsx
+@@ -6,6 +6,7 @@
+  */
+ import { Link } from "wouter";
+ import { SITE_STATS } from "@/config/siteStats";
++import { PORTRAIT_URL } from "@/lib/positioning";
+ 
+ interface AuthorBioProps {
+   author?: string;
+@@ -17,8 +18,8 @@ interface AuthorBioProps {
+ const JAMES_BELL_BIO =
+   `James Bell has pastored First Baptist Church of Fenton, Michigan, for twelve years. He founded the Pastors Connection Network, now close to eighteen thousand pastors, and ENDS, which equips pastors in remote regions around the world. He was an atheist before he was a Christian. He and Susanna have five sons. He hosts the Following the Way podcast and has written ${SITE_STATS.bookCountWord} books.`;
+ 
+-const JAMES_BELL_IMAGE =
+-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
++/** The same photograph Home and /about use; one constant, so it moves once. */
++const JAMES_BELL_IMAGE = PORTRAIT_URL;
+ 
+ const SUSANNA_BELL_BIO =
+   "Susanna Bell is married to James Bell and the mother of their five sons. She writes on motherhood and womanhood — out of a fundamentalist girlhood that preached rules as gospel, and the long work of reading for herself the book that world weaponized.";
+diff --git a/client/src/lib/static-hero.test.ts b/client/src/lib/static-hero.test.ts
+new file mode 100644
+index 00000000..6dec134e
+--- /dev/null
++++ b/client/src/lib/static-hero.test.ts
+@@ -0,0 +1,145 @@
++import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
++import { mountAfterStaticHero } from "./static-hero";
++
++/** A PerformanceObserver stand-in the test can feed LCP entries to. */
++function fakeObserver(supported: string[] = ["largest-contentful-paint"]) {
++  const instances: FakeObserver[] = [];
++  class FakeObserver {
++    static supportedEntryTypes = supported;
++    callback: PerformanceObserverCallback;
++    observed: PerformanceObserverInit | null = null;
++    disconnected = false;
++    constructor(callback: PerformanceObserverCallback) {
++      this.callback = callback;
++      instances.push(this);
++    }
++    observe(init: PerformanceObserverInit) {
++      this.observed = init;
++    }
++    disconnect() {
++      this.disconnected = true;
++    }
++    takeRecords() {
++      return [];
++    }
++    /** Deliver LCP entries for these elements, as the browser would. */
++    emit(...elements: Element[]) {
++      const entries = elements.map((element) => ({ entryType: "largest-contentful-paint", element }));
++      this.callback(
++        { getEntries: () => entries } as unknown as PerformanceObserverEntryList,
++        this as unknown as PerformanceObserver
++      );
++    }
++  }
++  return { Observer: FakeObserver as unknown as typeof PerformanceObserver, instances };
++}
++
++/** The prerendered "/" shell: the masthead bar and the static hero. */
++function renderShell() {
++  document.body.innerHTML = `
++    <div id="root"><div id="lw-shell">
++      <div class="lw-shell-bar"><span>LiveWell</span></div>
++      <section class="home-hero"><div class="home-hero__inner">
++        <h1 class="home-hero__title">Headline</h1>
++        <p class="home-hero__text">Why the site exists.</p>
++      </div></section>
++    </div></div>`;
++  return {
++    bar: document.querySelector(".lw-shell-bar span")!,
++    text: document.querySelector(".home-hero__text")!,
++  };
++}
++
++function setVisibility(state: DocumentVisibilityState) {
++  Object.defineProperty(document, "visibilityState", { value: state, configurable: true });
++}
++
++beforeEach(() => {
++  vi.useFakeTimers();
++  setVisibility("visible");
++});
++
++afterEach(() => {
++  vi.useRealTimers();
++  document.body.innerHTML = "";
++});
++
++describe("mountAfterStaticHero", () => {
++  it("mounts at once on a page without the static hero", () => {
++    document.body.innerHTML = `<div id="root"><div id="lw-shell"></div></div>`;
++    const { Observer, instances } = fakeObserver();
++    const mount = vi.fn();
++    mountAfterStaticHero(mount, { path: "/", Observer });
++    expect(mount).toHaveBeenCalledTimes(1);
++    expect(instances).toHaveLength(0);
++  });
++
++  it("mounts at once on any other path, even though the fallback HTML carries the hero", () => {
++    renderShell();
++    const { Observer, instances } = fakeObserver();
++    const mount = vi.fn();
++    mountAfterStaticHero(mount, { path: "/admin", Observer });
++    expect(mount).toHaveBeenCalledTimes(1);
++    expect(instances).toHaveLength(0);
++  });
++
++  it("mounts at once where the browser has no LCP or no PerformanceObserver", () => {
++    renderShell();
++    const noLcp = vi.fn();
++    mountAfterStaticHero(noLcp, { path: "/", Observer: fakeObserver(["paint"]).Observer });
++    expect(noLcp).toHaveBeenCalledTimes(1);
++
++    const noObserver = vi.fn();
++    vi.stubGlobal("PerformanceObserver", undefined);
++    try {
++      mountAfterStaticHero(noObserver, { path: "/" });
++    } finally {
++      vi.unstubAllGlobals();
++    }
++    expect(noObserver).toHaveBeenCalledTimes(1);
++  });
++
++  it("mounts at once in a tab that is not visible (no LCP is reported there)", () => {
++    renderShell();
++    setVisibility("hidden");
++    const mount = vi.fn();
++    mountAfterStaticHero(mount, { path: "/", Observer: fakeObserver().Observer });
++    expect(mount).toHaveBeenCalledTimes(1);
++  });
++
++  it("on '/', waits for the hero's LCP entry, then mounts once and stops observing", () => {
++    const { text } = renderShell();
++    const { Observer, instances } = fakeObserver();
++    const mount = vi.fn();
++    mountAfterStaticHero(mount, { path: "/", Observer });
++
++    expect(mount).not.toHaveBeenCalled();
++    const [observer] = instances;
++    expect(observer.observed).toEqual({ type: "largest-contentful-paint", buffered: true });
++
++    observer.emit(text);
++    expect(mount).toHaveBeenCalledTimes(1);
++    expect(observer.disconnected).toBe(true);
++
++    // A later entry, or the timer, never mounts a second time.
++    observer.emit(text);
++    vi.advanceTimersByTime(1000);
++    expect(mount).toHaveBeenCalledTimes(1);
++  });
++
++  it("does not count a paint outside the hero (the masthead), and falls back to the timer", () => {
++    const { bar } = renderShell();
++    const { Observer, instances } = fakeObserver();
++    const mount = vi.fn();
++    mountAfterStaticHero(mount, { path: "/", Observer, maxWaitMs: 300 });
++
++    instances[0].emit(bar);
++    expect(mount).not.toHaveBeenCalled();
++
++    vi.advanceTimersByTime(299);
++    expect(mount).not.toHaveBeenCalled();
++    vi.advanceTimersByTime(1);
++    expect(mount).toHaveBeenCalledTimes(1);
++    expect(instances[0].disconnected).toBe(true);
++  });
++});
+diff --git a/client/src/lib/static-hero.ts b/client/src/lib/static-hero.ts
+new file mode 100644
+index 00000000..19ed7cf9
+--- /dev/null
++++ b/client/src/lib/static-hero.ts
+@@ -0,0 +1,72 @@
++/**
++ * Mount the app only once the static home hero's paint has been recorded.
++ *
++ * scripts/prerender-heads.mjs writes the home hero into the HTML of "/" so
++ * the largest paint on the front page is the first paint. But when the
++ * bundle arrives quickly (a fast connection, or a cached bundle on a return
++ * visit), React replaced that HTML within a frame of its first paint, before
++ * Chrome had recorded when the frame reached the screen. Chrome then drops
++ * the static paragraph as a Largest Contentful Paint candidate and counts
++ * React's identical copy instead, so LCP waits on the whole bundle. That is
++ * why the home Lighthouse step failed on main (performance 73 to 88; U08).
++ *
++ * So on "/", where the static hero is the real page, wait for an LCP entry
++ * inside it. It is usually already buffered by the time the bundle runs;
++ * otherwise it comes a frame or two later; never wait longer than
++ * `maxWaitMs`. Every other path mounts at once: vercel.json serves the home
++ * HTML (hero included) for any path without its own prerendered file, and
++ * there the hero must not be held on screen. A browser without LCP, and a tab
++ * that is not visible (which reports no LCP), mount at once too.
++ */
++export interface StaticHeroOptions {
++  doc?: Document;
++  path?: string;
++  Observer?: typeof PerformanceObserver;
++  maxWaitMs?: number;
++}
++
++/** The static hero's root, present only in the prerendered "/" before mount. */
++export const STATIC_HERO_SELECTOR = "#lw-shell .home-hero";
++
++export function mountAfterStaticHero(mount: () => void, options: StaticHeroOptions = {}): void {
++  const doc = options.doc ?? document;
++  const path = options.path ?? doc.location?.pathname ?? "";
++  const Observer =
++    options.Observer ?? (typeof PerformanceObserver === "undefined" ? undefined : PerformanceObserver);
++  const maxWaitMs = options.maxWaitMs ?? 300;
++
++  const hero = doc.querySelector(STATIC_HERO_SELECTOR);
++  const lcpSupported = Observer?.supportedEntryTypes?.includes("largest-contentful-paint") ?? false;
++  if (path !== "/" || !hero || !Observer || !lcpSupported || doc.visibilityState !== "visible") {
++    mount();
++    return;
++  }
++
++  let done = false;
++  let observer: PerformanceObserver | null = null;
++  let timer: ReturnType<typeof setTimeout> | null = null;
++  const go = () => {
++    if (done) return;
++    done = true;
++    observer?.disconnect();
++    if (timer !== null) clearTimeout(timer);
++    mount();
++  };
++
++  try {
++    observer = new Observer((list) => {
++      const painted = list
++        .getEntries()
++        .some((entry) => {
++          const el = (entry as LargestContentfulPaint).element;
++          return el != null && hero.contains(el);
++        });
++      if (painted) go();
++    });
++    observer.observe({ type: "largest-contentful-paint", buffered: true });
++  } catch {
++    go();
++    return;
++  }
++  timer = setTimeout(go, maxWaitMs);
++}
+diff --git a/client/src/main.tsx b/client/src/main.tsx
+index cb057b45..57bf50c9 100644
+--- a/client/src/main.tsx
++++ b/client/src/main.tsx
+@@ -7,10 +7,10 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
+ import { createRoot } from "react-dom/client";
+ import superjson from "superjson";
+ import App from "./App";
+-import { getLoginUrl } from "./const";
+ import "./index.css";
+ import "./brand-override.css";
+ import { captureInstallPrompt } from "@/lib/install";
++import { mountAfterStaticHero } from "@/lib/static-hero";
+ 
+ // The browser offers to install the site only once, early; keep that offer
+ // for the "Add to your home screen" card on My Library (lib/install).
+@@ -74,12 +74,16 @@ const trpcClient = trpc.createClient({
+   ],
+ });
+ 
+-createRoot(document.getElementById("root")!).render(
+-  <trpc.Provider client={trpcClient} queryClient={queryClient}>
+-    <QueryClientProvider client={queryClient}>
+-      <App />
+-      <Analytics />
+-      <SpeedInsights />
+-    </QueryClientProvider>
+-  </trpc.Provider>
+-);
++// On "/", let the static hero's first paint be recorded before React replaces
++// it (lib/static-hero.ts); everywhere else this mounts at once.
++mountAfterStaticHero(() => {
++  createRoot(document.getElementById("root")!).render(
++    <trpc.Provider client={trpcClient} queryClient={queryClient}>
++      <QueryClientProvider client={queryClient}>
++        <App />
++        <Analytics />
++        <SpeedInsights />
++      </QueryClientProvider>
++    </trpc.Provider>
++  );
++});
+diff --git a/client/src/pages/Home.tsx b/client/src/pages/Home.tsx
+index 01ebbccb..8491be03 100644
+--- a/client/src/pages/Home.tsx
++++ b/client/src/pages/Home.tsx
+@@ -104,6 +104,7 @@ export default function Home() {
+               width={168}
+               height={210}
+               decoding="async"
++              fetchPriority="low"
+             />
+             <div>
+               <p className="home-hero__name">James Bell</p>
+diff --git a/scripts/bring-portrait-home.mjs b/scripts/bring-portrait-home.mjs
+new file mode 100644
+index 00000000..442a2398
+--- /dev/null
++++ b/scripts/bring-portrait-home.mjs
+@@ -0,0 +1,76 @@
++#!/usr/bin/env node
++/**
++ * bring-portrait-home.mjs: serve James's portrait from this site (U08).
++ *
++ * The home hero, /about, and the author card under every essay load the
++ * portrait from a legacy CloudFront host (d2xsxph8kpxj0f.cloudfront.net), a
++ * single point of failure this repo does not control, at whatever size it was
++ * uploaded. This writes one 4:5 crop, cut the way the pages already show it
++ * (centred, as object-fit: cover does), at 640 x 800: about 4x the home
++ * byline (168 x 210 on a computer), and enough for /about's figure.
++ *
++ *   node scripts/bring-portrait-home.mjs                 # from PORTRAIT_URL
++ *   node scripts/bring-portrait-home.mjs <url or file>   # another source
++ *
++ * It writes client/public/images/james-bell-portrait.jpg and, only when that
++ * succeeds and PORTRAIT_URL still names the CloudFront file, points
++ * PORTRAIT_URL (client/src/lib/positioning.ts) at it. Home, /about, the author
++ * card, and the prerendered home hero all read that one constant. Run it from
++ * a machine that can reach the source (the agent sandbox cannot reach
++ * CloudFront), look at the image, then commit both files.
++ */
++import sharp from "sharp";
++import fs from "node:fs";
++import path from "node:path";
++import { fileURLToPath } from "node:url";
++
++const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
++const POSITIONING = path.join(ROOT, "client/src/lib/positioning.ts");
++const OUT = path.join(ROOT, "client/public/images/james-bell-portrait.jpg");
++const PUBLIC_PATH = "/images/james-bell-portrait.jpg";
++const LEGACY_HOST = "d2xsxph8kpxj0f.cloudfront.net";
++
++const positioning = fs.readFileSync(POSITIONING, "utf8");
++const current = positioning.match(/export const PORTRAIT_URL\s*=\s*"([^"]+)"/)?.[1];
++const source = process.argv[2] ?? current;
++if (!source) {
++  console.error("No source: pass a URL or a file, or set PORTRAIT_URL in positioning.ts.");
++  process.exit(1);
++}
++
++let input;
++if (/^https?:\/\//.test(source)) {
++  const res = await fetch(source);
++  const type = res.headers.get("content-type") ?? "";
++  if (!res.ok || !type.startsWith("image/")) {
++    console.error(`Could not fetch an image from ${source} (HTTP ${res.status}, ${type || "no type"}).`);
++    process.exit(1);
++  }
++  input = Buffer.from(await res.arrayBuffer());
++} else {
++  input = fs.readFileSync(source);
++}
++
++const meta = await sharp(input).metadata();
++if (!meta.width || !meta.height) {
++  console.error(`${source} is not an image sharp can read.`);
++  process.exit(1);
++}
++fs.mkdirSync(path.dirname(OUT), { recursive: true });
++await sharp(input)
++  .rotate() // honor the camera's orientation before cropping
++  .resize({ width: 640, height: 800, fit: "cover", position: "centre", withoutEnlargement: true })
++  .jpeg({ quality: 80, progressive: true, mozjpeg: true })
++  .toFile(OUT);
++const out = await sharp(OUT).metadata();
++console.log(
++  `${path.relative(ROOT, OUT)}: ${out.width} x ${out.height}, ${(fs.statSync(OUT).size / 1024).toFixed(0)} kB ` +
++    `(source ${meta.width} x ${meta.height}, ${(input.length / 1024).toFixed(0)} kB)`
++);
++
++if (current?.includes(LEGACY_HOST)) {
++  fs.writeFileSync(POSITIONING, positioning.replace(`"${current}"`, `"${PUBLIC_PATH}"`));
++  console.log(`PORTRAIT_URL now "${PUBLIC_PATH}" in ${path.relative(ROOT, POSITIONING)}.`);
++} else {
++  console.log(`PORTRAIT_URL left as "${current}"; point it at "${PUBLIC_PATH}" if that is the intent.`);
++}
+diff --git a/scripts/prerender-heads.mjs b/scripts/prerender-heads.mjs
+index eb7ea4a1..23d77291 100644
+--- a/scripts/prerender-heads.mjs
++++ b/scripts/prerender-heads.mjs
+@@ -638,7 +638,10 @@ const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
+  * SPA it only existed after the JS bundle downloaded and ran, which under a
+  * throttled mobile connection put LCP near four seconds against a 90-score
+  * budget. Painting it from the HTML, inside the existing static shell, moves
+- * the largest paint to the first paint.
++ * the largest paint to the first paint. main.tsx waits for that paint to be
++ * recorded before React replaces it (lib/static-hero.ts), and the portrait is
++ * fetchpriority="low" in both copies so the photograph never competes with
++ * the CSS, fonts, and text for the first paint (U08).
+  */
+ function positioningString(name) {
+   const src = fs.readFileSync(
+@@ -663,7 +666,7 @@ function homeHeroHtml() {
+         <section class="home-hero">
+           <div class="home-hero__inner">
+             <div class="home-hero__byline">
+-              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async">` : ""}
++              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async" fetchpriority="low">` : ""}
+               <div>
+                 <p class="home-hero__name">James Bell</p>
+                 <a href="/about" class="home-hero__about">About James</a>
+diff --git a/vite.config.ts b/vite.config.ts
+index d4e8f88e..9c8fa4da 100644
+--- a/vite.config.ts
++++ b/vite.config.ts
+@@ -21,6 +21,10 @@ const plugins = [
+     // for a frequently-updated content site, fresh-from-network wins.
+     selfDestroying: true,
+     registerType: "autoUpdate",
++    // registerSW.js only waits for "load" to register, so it need not block
++    // the parser: as a plain <script> in <head> it held up first paint on
++    // every page (U08).
++    injectRegister: "script-defer",
+     includeAssets: ["robots.txt", "sitemap.xml"],
+     manifest: {
+       name: "LiveWell by James Bell",
+-- 
+2.43.0
+
