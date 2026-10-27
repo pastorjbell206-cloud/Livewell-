@@ -17,12 +17,13 @@ The methods actually used, and what the words below mean:
 - **"Checked against NOTES"**: checked against the biography rules in `docs/work/NOTES.md` and `docs/work/essays/BRIEF.md`.
 - **"Not checked (textbook)"**: no source was opened or searched. The verifier judged it standard reference knowledge. That judgment is not a check.
 
-Not in scope here and left for the voice and audit step: the essay's em-dashes in James's own prose (thirteen, plus three opening the Closing Texts attribution lines; the em-dash inside the Philemon 16 quotation is the ESV's own and stays), the Closing Texts layout (the pilot predates the no-em-dash rule and the one-line *"Quote."* (Reference) format), and the stamp "the record," which appears twice ("This one needs only the text and the record"; "The answer the record supports").
+Voice and audit step, 2026-10-27: the thirteen em-dashes in the essay's own prose were replaced with commas, colons, periods or a recast sentence (the one inside the Philemon 16 quotation is the ESV's own and stays); the Closing Texts now read *"Quote."* (Reference) on one line; the standfirst is now one plain sentence; four headings were renamed to plain descriptive ones ("The Line Leviticus Draws" became "Brother and Foreigner in Leviticus 25", "The Law That Was Already There" became "The Law Against Stealing People", "Hardness of Heart" became "Why the Law Permitted Slavery", "How It Actually Ended" became "How Abolition Actually Happened"), and the section headings below follow the new names. The stamp "the record" is gone from both places ("the text and the history"; "The answer the texts and the history support"), as are "None of this", "The objection goes like this", "any account of this history has to say so" and "indict". The skeptic-and-slaveholder paragraph now says what the two share is "a way of reading and not a moral standing" and limits the comparison to "a skeptic who rests his case on the missing ban". No fact, quotation, number, date or name was added or removed; the list of double-quoted passages was compared before and after and is identical, and every claim below still stands as worded except where a line says otherwise.
 
 ## Corrections made in the essay
 
-1. How It Actually Ended, Douglass: "impartial Christianity of Christ; I therefore hate" became "impartial Christianity of Christ: I therefore hate." The Gutenberg text of the 1845 Boston edition prints a colon there. Every word of the quotation already matched.
-2. How It Actually Ended, Wilberforce: the diary entry was quoted in quotation marks. No reachable source carries it (the web search budget was gone, and no public-domain text of the 1838 *Life of William Wilberforce* by his sons could be located on GitHub without searching). As the brief requires, it is now marked paraphrase without quotation marks: "wrote in his diary two years later that God Almighty had set before him two great objects, the suppression of the slave trade and the reformation of manners." The original wording is kept below for restoring.
+1. How Abolition Actually Happened, Douglass: "impartial Christianity of Christ; I therefore hate" became "impartial Christianity of Christ: I therefore hate." The Gutenberg text of the 1845 Boston edition prints a colon there. Every word of the quotation already matched.
+2. How Abolition Actually Happened, Wilberforce: the diary entry was quoted in quotation marks. No reachable source carries it (the web search budget was gone, and no public-domain text of the 1838 *Life of William Wilberforce* by his sons could be located on GitHub without searching). As the brief requires, it is now marked paraphrase without quotation marks: "wrote in his diary two years later that God Almighty had set before him two great objects, the suppression of the slave trade and the reformation of manners." The original wording is kept below for restoring.
+3. Voice and audit step, 2026-10-27, The Law Against Stealing People: "In *The Monster in the Mirror* I've written at length about the slaveholder who kept a Bible on his desk" now reads "The slaveholder I wrote about in *The Monster in the Mirror* kept a Bible on his desk." "At length" was never confirmed (the manuscript is not in the repo), so it was dropped; the claim that the book treats this figure stands as checked below.
 
 No claim was found to be wrong. The second change was made because the quotation could not be checked, not because a check failed.
 
@@ -80,7 +81,7 @@ When a search or the source is available, check this against *The Life of Willia
 - A master who beat a slave to death on the spot was to be punished. Paraphrase of Exodus 21:20. ESV copy: "When a man strikes his slave, male or female, with a rod and the slave dies under his hand, he shall be avenged."
 - Exodus 21:21, "if the slave survives a day or two, he is not to be avenged, for the slave is his money." ESV copy: matched on 2026-10-26.
 
-## The Line Leviticus Draws
+## Brother and Foreigner in Leviticus 25
 
 - Leviticus 25:39, "If your brother becomes poor beside you and sells himself to you, you shall not make him serve as a slave." ESV copy: matched on 2026-10-26.
 - Leviticus 25:42, "For they are my servants, whom I brought out of the land of Egypt; they shall not be sold as slaves," three verses later. ESV copy: matched on 2026-10-26; the verse count is right.
@@ -92,7 +93,7 @@ When a search or the source is available, check this against *The Life of Willia
 - Colossians 3:11, "Here there is not Greek and Jew, circumcised and uncircumcised, barbarian, Scythian, slave, free; but Christ is all, and in all." ESV copy: matched on 2026-10-26.
 - Enslaved and free Christians had been baptized into the same body in American churches. Not checked (textbook general statement).
 
-## The Law That Was Already There
+## The Law Against Stealing People
 
 - Exodus 21:16, "Whoever steals a man and sells him, and anyone found in possession of him, shall be put to death." ESV copy: matched on 2026-10-26. Also used in Closing Texts. The essay ties the "possession" reading to the ESV's rendering; KJV copy shows the older rendering ("or if he be found in his hand"), which can be read of the kidnapper, so the essay's qualification is needed and is kept.
 - 1 Timothy 1:10, "enslavers." ESV copy: matched on 2026-10-26.
@@ -102,13 +103,13 @@ When a search or the source is available, check this against *The Life of Willia
 - Douglass, 1845 appendix: "We have men-stealers for ministers, women-whippers for missionaries, and cradle-plunderers for church members." Gutenberg (Douglass), Appendix: matched word for word.
 - Many defenders of slavery conceded the African trade had been wicked. General characterization. Not checked.
 - The United States outlawed the importation of slaves in 1808. Not checked (textbook: the act of March 1807 took effect January 1, 1808).
-- *The Monster in the Mirror* treats the slaveholder who kept a Bible on his desk, a sincere man whose community had wrapped its conclusions in Scripture. Repo book description: `docs/kdp/monster.md` ("He kept a Bible on his desk ... He also owned other human beings, and believed Scripture sanctioned it. He was not a monster.") and `TheMonsterInTheMirror.tsx` ("wrapped a cultural conviction in chapter and verse"). The book is James's (`bookShelf.ts`). The full manuscript is not in the repo, so "at length" was not confirmed. This is the book's composite figure, not an invented scene.
+- *The Monster in the Mirror* treats the slaveholder who kept a Bible on his desk, a sincere man whose community had wrapped its conclusions in Scripture (essay, after the 2026-10-27 voice edit: "The slaveholder I wrote about in *The Monster in the Mirror* kept a Bible on his desk"). Repo book description: `docs/kdp/monster.md` ("He kept a Bible on his desk ... He also owned other human beings, and believed Scripture sanctioned it. He was not a monster.") and `TheMonsterInTheMirror.tsx` ("wrapped a cultural conviction in chapter and verse"). The book is James's (`bookShelf.ts`). The full manuscript is not in the repo, so "at length" was not confirmed, and the voice edit dropped it. This is the book's composite figure, not an invented scene.
 - The capital law sits in the same chapter of Exodus (21) that was cited for a master's rights. ESV copy: Exodus 21:16 and 21:20–21 are in one chapter.
 - 1 Timothy 6:1, slaves to "regard their own masters as worthy of all honor," in the same letter as 1 Timothy 1:10. ESV copy: matched on 2026-10-26.
 - What God intended "from the beginning." Matthew 19:8 (see below). ESV copy: matched.
 - Enslaved Christians of the American South, and Douglass, read the Bible as one story. Interpretive; no factual claim beyond the Douglass appendix above.
 
-## Hardness of Heart
+## Why the Law Permitted Slavery
 
 - Matthew 19:8, "Because of your hardness of heart Moses allowed you to divorce your wives, but from the beginning it was not so," said to the Pharisees. ESV copy: matched on 2026-10-26; the questioners in Matthew 19:3 and 19:7 are Pharisees.
 - Genesis 1:27, "So God created man in his own image." ESV copy: matched on 2026-10-26.
@@ -125,7 +126,7 @@ When a search or the source is available, check this against *The Life of Willia
 - Israel was commanded to retell the story every year at Passover. Not checked (textbook; Exodus 12–13).
 - Exodus 21:16 was explained away. Interpretive; follows from the section above.
 
-## How It Actually Ended
+## How Abolition Actually Happened
 
 - Gregory of Nyssa, in the late fourth century, was the first Christian writer we know of to condemn slavery itself and not just its cruelties. Not checked (reference knowledge; the claim is hedged "we know of").
 - He preached on Ecclesiastes 2:7, "I bought male and female slaves." ESV copy: matched on 2026-10-26. Commentaries library: the file for Ecclesiastes 2:7 is titled "Homilies on Ecclesiastes 4" and treats that verse.
