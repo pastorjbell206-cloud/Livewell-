@@ -302,7 +302,7 @@ export function checkFamily({
           const g = d.grownups;
           if (!g || typeof g !== "object" || !isText(g.line) || !isText(g.href)) errors.push(`${where}: grownups needs a line and an href`);
           else {
-            if (g.line.length > GROWNUPS_MAX || !/[.?]$/.test(g.line.trim())) errors.push(`${where}: grownups.line is one short sentence (at most ${GROWNUPS_MAX} characters, ending in a period)`);
+            if (g.line.length > GROWNUPS_MAX || !/[.?]$/.test(g.line.trim())) errors.push(`${where}: grownups.line is one short sentence (at most ${GROWNUPS_MAX} characters, ending in a period or a question mark)`);
             const target = grownupsTarget(g.href, { needsDir });
             if (target.problem) errors.push(`${where}: grownups.href ${target.problem}`);
           }
