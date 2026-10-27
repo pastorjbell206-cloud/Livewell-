@@ -15,13 +15,16 @@ So the methods actually used were these, and the words below mean only this:
 
 **Before this essay publishes**, every item marked "QUOTATION NOT VERIFIED" and every Scripture line marked "ESV wording not checked" has to be checked against a source (WebSearch when budget allows, or the ESV API once James's key exists). Any quotation that cannot then be matched becomes marked paraphrase without quotation marks, or is cut, as the brief requires. This run did not convert them. Every one is a well-known primary text, the verifier found no reason to doubt any of them, and the essay is a pilot James has approved. Rewriting it because a quota ran out, not because a match failed, would have been the wrong trade.
 
-Not in scope here and left for the voice and audit step: the essay's em-dashes and the Closing Texts layout (the pilot predates the no-em-dash rule).
+The voice and audit step (2026-10-27) removed the essay's em-dashes, set the Closing Texts as *"Quote."* (Reference) on one line, and renamed five headings to plain descriptive ones; the section headings below follow the new names. No quotation, number, date or name was added, cut or changed; the list of double-quoted passages was compared before and after and is identical.
 
 ## Corrections made in the essay
 
 1. Great Awakening paragraph: "nobody disputes what the revivals did" became "few historians dispute what the revivals did." Butler's 1982 case questioned how much the revivals added up to, and a claim that nobody disputes their effects could not be verified. The softer wording states what the essay can support.
 
-No other change was made. No claim was found to be wrong.
+No other change was made by the verifier. No claim was found to be wrong.
+
+2. Voice and audit step, 2026-10-27, Danbury Baptists: the essay had said they were "asking for the wall" and "asked Jefferson for a wall." Their letter asked for religious liberty held as a right; the wall image is Jefferson's, in his reply. It now reads "the Christians whose letter Jefferson answered with the wall" (The Plain Answer) and "They wanted the magistrate out of the church's business" (What Scripture Calls a Holy Nation). The closing line "A Christian people built a government that declined to be Christian ..." was cut as a repeat of the standfirst; it made no claim not made elsewhere.
+3. Voice and audit step, 2026-10-27, Franklin's prayer motion: "The record says the motion died" now reads "What actually happened is that the motion died." Same claim; see that section.
 
 ## Opening
 
@@ -32,11 +35,11 @@ No other change was made. No claim was found to be wrong.
 - "Ninety-five years earlier": 1892 minus 1797. Arithmetic checked.
 - June 7, 1797: the Senate approved the Treaty of Tripoli without a dissenting vote. Not checked in this run (textbook; the recorded vote was 23 to 0).
 - Tripoli is on the coast of North Africa. Not checked (textbook).
-- Quotation (Treaty, English text): "the Government of the United States of America is not, in any sense, founded on the Christian religion." QUOTATION NOT VERIFIED in this run; see Article 11 below.
+- Quotation (Treaty, English text): "the Government of the United States of America is not, in any sense, founded on the Christian religion." QUOTATION NOT VERIFIED in this run; see The Treaty of Tripoli below.
 - Adams signed it three days later, on June 10, 1797. Not checked in this run (textbook).
 - Proverbs 18:17, "The one who states his case first seems right, until the other comes and examines him." ESV wording not checked (search budget exhausted). Checked against the local BSB: reference and sense confirmed ("The first to state his case seems right until another comes and cross-examines him").
 
-## A People Steeped in Scripture
+## The Case for a Christian Founding
 
 - Mayflower Compact, 1620, said the voyage was undertaken for the glory of God and the advancement of the Christian faith. Paraphrase, not quoted. Not checked in this run (textbook; the Compact reads "for the Glory of God, and Advancement of the Christian Faith").
 - John Winthrop, ten years later (1630), told the Puritans bound for Massachusetts Bay they would be "as a city upon a hill." QUOTATION NOT VERIFIED in this run. The verifier recalls "we shall be as a city upon a hill" in "A Model of Christian Charity." The source in Matthew 5:14 was checked against the local BSB ("A city on a hill cannot be hidden").
@@ -61,7 +64,7 @@ No other change was made. No claim was found to be wrong.
 - Quotation (Adams): "Our Constitution was made only for a moral and religious People. It is wholly inadequate to the government of any other." QUOTATION NOT VERIFIED in this run, including the capitalization of "People" and "government."
 - The Revolution was made by a people formed by the Bible and the pulpit. Interpretation; no separate check.
 
-## The Founders Were Not One Man
+## What the Founders Believed
 
 - John Witherspoon, Presbyterian minister and president of the College of New Jersey at Princeton, was the only active clergyman to sign the Declaration, and Madison studied under him. Not checked in this run (textbook).
 - John Jay, the first Chief Justice, later served as president of the American Bible Society. Not checked in this run (textbook; 1821 to 1827).
@@ -78,7 +81,7 @@ No other change was made. No claim was found to be wrong.
 - Mark Noll, Nathan Hatch and George Marsden, *The Search for Christian America*, 1983. Not checked in this run (textbook).
 - Their conclusion: if "Christian" means a society reflecting the ideals of Scripture, early America does not deserve the name, uniquely or even predominantly. Paraphrase, not quoted. Not checked in this run.
 
-## The Government They Wrote Down
+## What the Constitution Says About Religion
 
 - September 17, 1787, the delegates signed. Library-checked (Gutenberg #5): "Done in Convention ... the Seventeenth Day of September in the Year of our Lord one thousand seven hundred and eighty seven."
 - The Constitution does not mention God or Christianity apart from "in the Year of our Lord." Library-checked (Gutenberg #5): no occurrence of "God," "Christian" or "Christianity" in the text; "in the Year of our Lord" appears in the attestation.
@@ -89,7 +92,7 @@ No other change was made. No claim was found to be wrong.
 - First Amendment, ratified December 15, 1791: "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof." QUOTATION NOT VERIFIED in this run (textbook). The amendments are not in Gutenberg #5. The same words appear inside Jefferson's Danbury reply, which the sibling ledger search-checked.
 - The amendment bound the national government, not the states, several of which kept official churches or religious tests for decades. Not checked in this run (textbook).
 
-## Article 11
+## The Treaty of Tripoli
 
 - In the 1780s and 1790s Barbary corsairs seized American ships and held crews for ransom, and the United States, without a navy, bought peace with treaties and tribute. Not checked in this run (textbook).
 - The treaty was negotiated under Washington and signed at Tripoli on November 4, 1796, with an English translation credited to Joel Barlow, the American consul in Algiers. Not checked in this run (the verifier recalls this from Hunter Miller's notes).
@@ -100,7 +103,7 @@ No other change was made. No claim was found to be wrong.
 - The 1805 treaty, after four years of war, kept the promise of no religious hostility and dropped the sentence about the Christian religion. Not checked in this run (the verifier recalls Article 14 of the treaty of June 4, 1805; the war ran 1801 to 1805).
 - The Constitution neither established Christianity nor required it of officeholders. Library-checked (Gutenberg #5, Article VI) for the test clause. Establishment: see the First Amendment above.
 
-## The Baptists and the Wall
+## The Baptists and the Wall of Separation
 
 - On the eve of the Revolution most colonies supported an established church, Anglican in the South and Congregational across most of New England. Not checked in this run (textbook).
 - Quotation (South Carolina constitution, 1778): "The Christian Protestant religion shall be deemed, and is hereby constituted and declared to be, the established religion of this State." QUOTATION NOT VERIFIED in this run.
@@ -152,7 +155,7 @@ No other change was made. No claim was found to be wrong.
 - Thomas Kidd has written a biography of Henry. Not checked in this run (the verifier recalls *Patrick Henry: First Among Patriots*, 2011).
 - Kidd has said Henry was devout and the quotation is still a modern invention. Paraphrase. Not checked in this run.
 - Exodus 20:16, "You shall not bear false witness against your neighbor." ESV wording not checked (search budget exhausted). Checked against the local BSB: the BSB reads the same words. "Ninth commandment" follows the Protestant (Reformed) numbering. Not checked (textbook).
-- Biography: "preachers, and I'm one of them" (a pastor) and "Baptists like me" (he pastors a Baptist church). Both are within NOTES.md. No title, years, book count, Southern Baptist tie or invented scene appears. Checked against NOTES.md.
+- Biography: "Preachers, and I'm one of them" (a pastor) and "Baptists like me" (he pastors a Baptist church). Both are within NOTES.md. No title, years, book count, Southern Baptist tie or invented scene appears. Checked against NOTES.md.
 
 ## Closing Texts
 
