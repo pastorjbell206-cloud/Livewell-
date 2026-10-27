@@ -63,13 +63,13 @@ describe("Home and /family before, during, and after the window", () => {
     const home = renderWithProviders(<Home />);
     const line = screen.getByTestId("advent-at-the-table");
     expect(line).toHaveTextContent("Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.");
-    expect(within(line).getByRole("link", { name: "see the readings" })).toHaveAttribute("href", "/family/devotions?season=advent");
+    expect(within(line).getByRole("link", { name: "see the readings" })).toHaveAttribute("href", "/family/devotions?tab=advent");
     home.unmount();
 
     renderWithProviders(<Family />);
     const card = screen.getByRole("region", { name: "Advent begins Sunday, November 29" });
     expect(card).toHaveTextContent("a short reading for each day from December 1 to Christmas");
-    expect(within(card).getByRole("link", { name: "See the readings" })).toHaveAttribute("href", "/family/devotions?season=advent");
+    expect(within(card).getByRole("link", { name: "See the readings" })).toHaveAttribute("href", "/family/devotions?tab=advent");
     expect(within(card).getByRole("link", { name: "US Letter" })).toHaveAttribute("href", "/downloads/seasonal/advent-family-letter.pdf");
     expect(within(card).getByRole("link", { name: "A4" })).toHaveAttribute("href", "/downloads/seasonal/advent-family-a4.pdf");
   });
@@ -84,14 +84,14 @@ describe("Home and /family before, during, and after the window", () => {
     setToday(2026, 12, 6);
     serveFamilyFiles();
     const home = renderWithProviders(<Home />);
-    expect(screen.getByRole("link", { name: "December 6 in the family Advent calendar" })).toHaveAttribute("href", "/family/devotions?season=advent&day=6");
+    expect(screen.getByRole("link", { name: "December 6 in the family Advent calendar" })).toHaveAttribute("href", "/family/devotions?tab=advent&day=6");
     expect(screen.getByTestId("advent-at-the-table")).toHaveTextContent(/^Tonight at the table:/);
     home.unmount();
 
     renderWithProviders(<Family />);
     const card = screen.getByRole("region", { name: "Tonight, December 6" });
-    expect(within(card).getByRole("link", { name: "Open the reading" })).toHaveAttribute("href", "/family/devotions?season=advent&day=6");
-    expect(within(card).getByRole("link", { name: "All the readings" })).toHaveAttribute("href", "/family/devotions?season=advent");
+    expect(within(card).getByRole("link", { name: "Open the reading" })).toHaveAttribute("href", "/family/devotions?tab=advent&day=6");
+    expect(within(card).getByRole("link", { name: "All the readings" })).toHaveAttribute("href", "/family/devotions?tab=advent");
   });
 
   it("name Christmas Day on December 25", () => {
@@ -101,11 +101,11 @@ describe("Home and /family before, during, and after the window", () => {
   });
 });
 
-describe("/family/devotions?season=advent", () => {
+describe("/family/devotions?tab=advent", () => {
   it("opens the Advent tab at the day asked for, marks tonight, and says when Advent begins", async () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
-    window.history.replaceState(null, "", "/family/devotions?season=advent&day=20");
+    window.history.replaceState(null, "", "/family/devotions?tab=advent&day=20");
     renderWithProviders(<FamilyDevotions />);
     await waitFor(() => expect(screen.getByText("The Night Before")).toBeTruthy());
     expect(screen.getByRole("button", { name: "Advent · 25" })).toHaveAttribute("aria-pressed", "true");
@@ -119,13 +119,13 @@ describe("/family/devotions?season=advent", () => {
     fireEvent.click(screen.getByRole("button", { name: /^Weekly/ }));
     expect(window.location.search).toBe("");
     fireEvent.click(screen.getByRole("button", { name: "Holy Week · 8" }));
-    expect(window.location.search).toBe("?season=holy-week");
+    expect(window.location.search).toBe("?tab=holy-week");
   });
 
   it("stays on the weekly devotions without a season, or with one it does not have", async () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
-    window.history.replaceState(null, "", "/family/devotions?season=lent&day=3");
+    window.history.replaceState(null, "", "/family/devotions?tab=lent&day=3");
     renderWithProviders(<FamilyDevotions />);
     await waitFor(() => expect(screen.getByRole("button", { name: /^Weekly · \d+$/ })).toHaveAttribute("aria-pressed", "true"));
   });

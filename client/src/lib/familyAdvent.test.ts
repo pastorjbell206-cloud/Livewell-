@@ -84,8 +84,8 @@ describe("the words", () => {
   });
 
   it("links to the Advent tab, and to a day of it", () => {
-    expect(adventHref()).toBe("/family/devotions?season=advent");
-    expect(adventHref(6)).toBe("/family/devotions?season=advent&day=6");
+    expect(adventHref()).toBe("/family/devotions?tab=advent");
+    expect(adventHref(6)).toBe("/family/devotions?tab=advent&day=6");
   });
 
   it("says what tonight is in each part of the window", () => {
@@ -96,7 +96,7 @@ describe("the words", () => {
     expect(begun.line.lead).toBe("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
     const sixth = adventCopy(adventTonight("2026-12-06")!);
     expect(sixth.line).toEqual({ lead: "Tonight at the table:", link: "December 6 in the family Advent calendar" });
-    expect(sixth.href).toBe("/family/devotions?season=advent&day=6");
+    expect(sixth.href).toBe("/family/devotions?tab=advent&day=6");
     expect(adventCopy(adventTonight("2026-12-25")!).heading).toBe("Christmas Day");
     expect(adventCopy(adventTonight("2028-12-01")!).line.lead).toBe("Advent begins Sunday, December 3. Tonight at the table:");
   });

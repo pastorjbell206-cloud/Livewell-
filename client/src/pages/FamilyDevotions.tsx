@@ -6,7 +6,7 @@
  * /family-seasonal.json (thanksgiving, advent, holyWeek).
  * A seasonal tab appears only once its pack has days in the data.
  * scripts/validate-family.mjs checks the counts this page states.
- * ?season=advent (or thanksgiving, holy-week) opens that tab, and &day=N
+ * ?tab=advent (or thanksgiving, holy-week) opens that tab, and &day=N
  * opens that day, so Home and /family can link straight to tonight.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -49,11 +49,11 @@ function isSeasonalPacks(x: unknown): x is Partial<Record<Season, Daily[]>> {
 
 const NO_SEASONS: Record<Season, Daily[]> = { thanksgiving: [], advent: [], holyWeek: [] };
 
-/** The tab and day named in ?season= and &day=, when they are ones this page has. */
+/** The tab and day named in ?tab= and &day=, when they are ones this page has. */
 function fromUrl(): { tab: Tab; open: string | null } {
   try {
     const p = new URLSearchParams(window.location.search);
-    const season = (Object.keys(SEASONS) as Season[]).find((s) => SEASONS[s].file === p.get("season"));
+    const season = (Object.keys(SEASONS) as Season[]).find((s) => SEASONS[s].file === p.get("tab"));
     if (!season) return { tab: "weekly", open: null };
     const day = Number(p.get("day"));
     return { tab: season, open: Number.isInteger(day) && day > 0 ? `${season}-${day}` : null };
@@ -65,7 +65,7 @@ function fromUrl(): { tab: Tab; open: string | null } {
 /** Keep the open tab in the address, so "the Advent readings" can be shared. */
 function writeTab(tab: Tab) {
   try {
-    const qs = tab === "weekly" ? "" : `?season=${SEASONS[tab].file}`;
+    const qs = tab === "weekly" ? "" : `?tab=${SEASONS[tab].file}`;
     window.history.replaceState(window.history.state, "", `${window.location.pathname}${qs}`);
   } catch {
     /* the address stays as it was */

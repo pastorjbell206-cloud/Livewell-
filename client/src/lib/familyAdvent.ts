@@ -89,7 +89,11 @@ export function longDate(iso: string, opts: { weekday?: boolean; year?: boolean 
   });
 }
 
-/** Where a day of the calendar opens: the Advent tab of /family/devotions, at that day. */
+/**
+ * Where a day of the calendar opens: the Advent tab of /family/devotions, at
+ * that day. `?tab=` is the name The Table's library (U17) reads too, so these
+ * links keep landing on the Advent tab when that page is rebuilt.
+ */
 export function adventHref(day?: number | null): string {
-  return day ? `/family/devotions?season=advent&day=${day}` : "/family/devotions?season=advent";
+  return day ? `/family/devotions?tab=advent&day=${day}` : "/family/devotions?tab=advent";
 }
