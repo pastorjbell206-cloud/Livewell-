@@ -852,8 +852,7 @@ Box host guide.
 
 **On LiveWell.** Printed through *Take it with you*; distributed through PCN.
 PCT names it *Host a table* to keep it apart from The Table's family
-devotions; James may prefer another name. No
-sign-up. No session is built as a climax: the sixth ends with the track's last
+devotions; James may prefer another name. No sign-up. No session is built as a climax: the sixth ends with the track's last
 stop and the weight it leaves. No public directory of circles now (it needs a
 database, moderation and James's consent: a question for him). A 16's room mode
 runs any of the three on a screen. The mixed-room kit becomes the Skeptic's
@@ -1421,7 +1420,7 @@ breaks on a phone, and load weight.
 - **The Orthodox calendar.** The Greek Orthodox Archdiocese's saints and feasts
   pages (or the OCA's lives of the saints): how the East remembers its
   witnesses, for pattern 14 and for the grid's Greek East and Asia rows. The
-  history cluster saw Episcopal, Lutheran and one ecumenical bracket only.
+  history cluster saw Western calendars only (Episcopal and Lutheran).
 - **The household table outside Christianity.** OneTable, a nonprofit that helps
   young adults host Shabbat dinners, with a guides library and a dinner guide
   that breaks the meal into five sections for beginners (a 2025 *OneTable
