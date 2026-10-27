@@ -13,6 +13,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { RemindMe } from "@/components/RemindMe";
 import { SAVE_FAILED, TakeItWithYou } from "@/components/TakeItWithYou";
+import { RefText } from "@/components/VerseRef";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { ArrowDown, BookOpen, Wrench, PenLine, Check, RotateCcw, Printer } from "lucide-react";
 
@@ -128,11 +129,11 @@ export default function CarePlan() {
             </p>
           )}
           {data && data.intro.split("\n\n").map((p, i) => (
-            <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "12px" }}>{p}</p>
+            <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "12px" }}><RefText text={p} /></p>
           ))}
           {/* When to get more help: first, not after week eight. */}
           {data?.careNote && (
-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", margin: "4px 0 12px", paddingLeft: "12px", borderLeft: "2px solid var(--mustard)" }}>{data.careNote}</p>
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", margin: "4px 0 12px", paddingLeft: "12px", borderLeft: "2px solid var(--mustard)" }}><RefText text={data.careNote} /></p>
           )}
           {data && !progress && (
             <button
@@ -221,16 +222,17 @@ export default function CarePlan() {
                       </button>
                     )}
                   </div>
-                  <p style={{ ...body, color: "var(--ink-muted)", marginBottom: "12px", maxWidth: "68ch" }}>{w.why}</p>
+                  {/* The plans quote the BSB, so a reference opens its verses in a sheet. */}
+                  <p style={{ ...body, color: "var(--ink-muted)", marginBottom: "12px", maxWidth: "68ch" }}><RefText text={w.why} /></p>
                   <div style={lbl}>This week's practice</div>
-                  <p style={{ ...body, marginBottom: "14px", maxWidth: "68ch" }}>{w.practice}</p>
+                  <p style={{ ...body, marginBottom: "14px", maxWidth: "68ch" }}><RefText text={w.practice} /></p>
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(240px, 100%), 1fr))", gap: "10px" }}>
                     <WeekLink href={w.read.href}><BookOpen size={15} /> {w.read.label}</WeekLink>
                     <WeekLink href={w.tool.href}><Wrench size={15} /> {w.tool.label}</WeekLink>
                   </div>
                   <div style={{ marginTop: "14px", borderLeft: "2px solid rgba(20,17,12,0.12)", paddingLeft: "12px" }}>
                     <div style={{ ...lbl, display: "flex", alignItems: "center", gap: "6px" }}><PenLine size={12} /> Reflect</div>
-                    <p style={{ ...body, fontStyle: "italic", color: "var(--ink-muted)", margin: 0 }}>{w.reflection}</p>
+                    <p style={{ ...body, fontStyle: "italic", color: "var(--ink-muted)", margin: 0 }}><RefText text={w.reflection} /></p>
                   </div>
                 </div>
               );

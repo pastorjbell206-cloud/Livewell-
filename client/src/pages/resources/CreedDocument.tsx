@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
+import { RefText } from "@/components/VerseRef";
 
 const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 
@@ -55,7 +56,8 @@ export default function CreedDocument() {
         <>
           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
             <div style={wrap}>
-              <Prose text={data.intro} />
+              {/* These pages quote no translation, so a reference opens its verses in a sheet. */}
+              <Prose text={data.intro} verseRefs="sheet" />
             </div>
           </section>
 
@@ -63,7 +65,7 @@ export default function CreedDocument() {
             <div style={wrap}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "var(--s-3)" }}>The text</div>
               {data.text.split("\n\n").map((p, i) => (
-                <p key={i} style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.7, color: "var(--ink)", maxWidth: "62ch", marginBottom: "18px" }}>{p}</p>
+                <p key={i} style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.7, color: "var(--ink)", maxWidth: "62ch", marginBottom: "18px" }}><RefText text={p} /></p>
               ))}
             </div>
           </section>
@@ -75,7 +77,7 @@ export default function CreedDocument() {
                 {data.annotations.map((a, i) => (
                   <div key={i} style={{ borderLeft: "2px solid var(--mustard)", paddingLeft: "16px", marginBottom: "var(--s-3)" }}>
                     <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontStyle: "italic", color: "var(--ink)", marginBottom: "6px" }}>{a.phrase}</div>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0 }}>{a.note}</p>
+                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0 }}><RefText text={a.note} /></p>
                   </div>
                 ))}
               </div>

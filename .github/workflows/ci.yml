@@ -37,6 +37,7 @@ jobs:
           node scripts/validate-theology.mjs
           node scripts/validate-politics.mjs
           node scripts/validate-no-emdash.mjs
+          node scripts/validate-essays.mjs
           node scripts/validate-content-integrity.mjs
           node scripts/validate-skeptic-track.mjs
           node scripts/validate-answers.mjs
@@ -48,10 +49,14 @@ jobs:
           node scripts/validate-plans.mjs
           node scripts/validate-workbooks.mjs
           node scripts/validate-family.mjs
+          node scripts/build-family-year.mjs --check
+          node scripts/build-family-index.mjs --check
           node scripts/validate-grow-voice.mjs
           node scripts/validate-verse-guides.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs
+          pnpm exec tsx scripts/build-search-index.mjs --check
           node scripts/validate-bible.mjs
+          node scripts/build-bible-text.mjs --check
           node scripts/validate-bible-notes.mjs
 
       - name: Test
@@ -156,9 +161,13 @@ jobs:
           # rendered in time. It exercises the shared Layout, nav, footer, and a
           # hero h1 — the design system's a11y. Full-route a11y is covered by
           # axe/Lighthouse against live Vercel previews, per docs/ARCHITECTURE.
+          # On "/" React mounts up to 300 ms after the bundle runs, once the
+          # static hero's paint is recorded (client/src/lib/static-hero.ts), so
+          # "load" can come first; audited then, the static shell (no <main>)
+          # fails landmark-one-main and region. --load-delay waits for the app.
           sleep 3
           set +e
-          npx --yes @axe-core/cli http://localhost:4173/ --exit
+          npx --yes @axe-core/cli http://localhost:4173/ --load-delay 1000 --exit
           code=$?
           if [ "$code" = "2" ]; then
             echo "::warning::axe skipped — Chrome/ChromeDriver version mismatch (environment, not a content failure)"

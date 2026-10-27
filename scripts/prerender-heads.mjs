@@ -75,18 +75,6 @@ const STATIC_PAGES = [
     type: "website",
   },
   {
-    path: "/marriage",
-    title: "Marriage — Essays for Couples",
-    description: "Marriage essays for couples in ministry, midlife, and beyond. Honest, theologically grounded, never tip-shaped.",
-    type: "website",
-  },
-  {
-    path: "/parenting",
-    title: "Parenting — From a Father of Five",
-    description: "Essays on parenting from a pastor and father of five sons. Formation over performance, presence over advice.",
-    type: "website",
-  },
-  {
     path: "/tools",
     title: "Tools for Pastors and Readers",
     description: "Practical tools for serious readers: assessments, study guides, the wisdom library, verse finder, prayer generator, and more.",
@@ -502,6 +490,7 @@ const SECTION_BY_ROUTE = {
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
   "/help/": { name: "Find Help", path: "/help" },
+  "/family/devotions/": { name: "Family Devotions", path: "/family/devotions" },
 };
 
 // ---------------------------------------------------------------------------
@@ -650,7 +639,10 @@ const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
  * SPA it only existed after the JS bundle downloaded and ran, which under a
  * throttled mobile connection put LCP near four seconds against a 90-score
  * budget. Painting it from the HTML, inside the existing static shell, moves
- * the largest paint to the first paint.
+ * the largest paint to the first paint. main.tsx waits for that paint to be
+ * recorded before React replaces it (lib/static-hero.ts), and the portrait is
+ * fetchpriority="low" in both copies so the photograph never competes with
+ * the CSS, fonts, and text for the first paint (U08).
  */
 function positioningString(name) {
   const src = fs.readFileSync(
@@ -675,7 +667,7 @@ function homeHeroHtml() {
         <section class="home-hero">
           <div class="home-hero__inner">
             <div class="home-hero__byline">
-              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async">` : ""}
+              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async" fetchpriority="low">` : ""}
               <div>
                 <p class="home-hero__name">James Bell</p>
                 <a href="/about" class="home-hero__about">About James</a>
@@ -1024,6 +1016,12 @@ async function main() {
       filter: (e) => e.page === true,
       omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
     },
+    // A page per family devotion (/family/devotions/:id): the 72 weekly ones
+    // and each day of the daily sets, from the family index
+    // (scripts/build-family-index.mjs). The title matches the page's own
+    // "{title}: A Family Devotion"; the description is the big idea, or the
+    // opening of a daily reflection. Head only (no per-devotion content file).
+    { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {

@@ -9,7 +9,8 @@ import { useMemo, useState, type CSSProperties } from "react";
 import { Link } from "wouter";
 
 import type { BibleBook, BibleChapter, BibleVerse, BibleWord } from "@/lib/bible";
-import { paragraphs, refHref, verseRange, type Doctrine, type VerseNote } from "@/lib/bible-notes";
+import { paragraphs, verseRange, type Doctrine, type VerseNote } from "@/lib/bible-notes";
+import { refHref } from "@/lib/scripture-ref";
 import { kicker, quietLink } from "@/pages/study-bible/shared";
 
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -34,14 +35,13 @@ function Paras({ text }: { text: string }) {
 /** One entry's layers. `only` narrows it to one layer (context always shows). */
 export function VerseEntry(props: {
   entry: VerseNote;
-  books: BibleBook[];
   doctrines: Doctrine[] | null | undefined;
   data: BibleChapter | null;
   lang: "H" | "G";
   only?: Layer;
   onWord?: (v: BibleVerse, i: number) => void;
 }) {
-  const { entry, books, doctrines, data, lang, only = "all", onWord } = props;
+  const { entry, doctrines, data, lang, only = "all", onWord } = props;
   const show = (l: Layer) => only === "all" || only === l;
   const [a, z] = verseRange(entry.v);
   const script = lang === "H" ? HEB : GRK;
@@ -110,7 +110,7 @@ export function VerseEntry(props: {
           <div key={k}>
             <div style={label}>{k === "ot" ? "The Old Testament behind it" : "Where the New Testament takes it up"}</div>
             {entry[k]!.map((x) => {
-              const href = refHref(x.ref, books);
+              const href = refHref(x.ref);
               return (
                 <p key={x.ref} style={body}>
                   {href ? <Link href={href} style={{ ...quietLink, fontWeight: 600 }}>{x.ref}</Link> : <strong>{x.ref}</strong>}. {x.note}
@@ -124,7 +124,7 @@ export function VerseEntry(props: {
         <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
           Parallel accounts:{" "}
           {entry.parallels.map((r, i) => {
-            const href = refHref(r, books);
+            const href = refHref(r);
             return (
               <span key={r}>
                 {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
@@ -138,7 +138,7 @@ export function VerseEntry(props: {
         <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
           See also:{" "}
           {entry.refs.map((r, i) => {
-            const href = refHref(r, books);
+            const href = refHref(r);
             return (
               <span key={r}>
                 {href ? <Link href={href} style={quietLink}>{r}</Link> : r}
@@ -161,7 +161,6 @@ export function VerseByVerse(props: {
   notes: VerseNote[];
   book: BibleBook;
   chapter: number;
-  books: BibleBook[];
   doctrines: Doctrine[] | null | undefined;
   data: BibleChapter | null;
   onVerse: (v: BibleVerse) => void;
@@ -196,7 +195,7 @@ export function VerseByVerse(props: {
                   <a href={`#v${a}`} onClick={() => onVerse(verse)} style={{ ...quietLink, fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700 }}>{book.name} {chapter}:{e.v.replace("-", "–")}</a>
                 ) : `${book.name} ${chapter}:${e.v.replace("-", "–")}`}
               </h3>
-              <VerseEntry entry={e} books={props.books} doctrines={props.doctrines} data={data} lang={lang} only={layer} onWord={props.onWord} />
+              <VerseEntry entry={e} doctrines={props.doctrines} data={data} lang={lang} only={layer} onWord={props.onWord} />
             </li>
           );
         })}

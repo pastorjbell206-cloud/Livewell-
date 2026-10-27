@@ -104,16 +104,6 @@ export function searchNeeds(query: string, needs: NeedEntry[]): NeedEntry[] {
     .map((s) => s.n);
 }
 
-/** "Psalm 23:4" -> "/study/bible/psalms/23"; null when the reference will not parse. */
-export function studyBibleHref(ref: string): string | null {
-  const m = ref.trim().match(/^((?:[1-3]\s)?[A-Za-z][A-Za-z ]*?)\s+(\d+)/);
-  if (!m) return null;
-  let book = m[1].toLowerCase().replace(/\s+/g, " ");
-  if (book === "psalm") book = "psalms";
-  if (book === "song of songs") book = "song of solomon";
-  return `/study/bible/${book.replace(/ /g, "-")}/${m[2]}`;
-}
-
 /**
  * Library pages on heavy subjects carry the compact help block
  * (docs/grow/GROW-PROMPT.md, Wave 0): the life pages and study guides a

@@ -287,8 +287,8 @@ export default function StartHereQuiz() {
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                 {[
-                  { label: "Marriage", href: "/marriage" },
-                  { label: "Parenting", href: "/parenting" },
+                  { label: "Marriage", href: "/help/marriage" },
+                  { label: "Parenting", href: "/help/parenting" },
                   { label: "Doubt", href: "/answers" },
                   { label: "Disciple someone", href: "/studyguides" },
                   { label: "Grief", href: "/plans/grief" },

@@ -242,7 +242,7 @@ export default function Resources() {
               {
                 label: "Family devotions",
                 href: "/family/devotions",
-                note: "A devotion for every week of the year, plus Thanksgiving, Advent, and Holy Week.",
+                note: "Seventy-two weekly devotions, more than a year of them, plus Thanksgiving, Advent, and Holy Week.",
               },
               {
                 label: "A family catechism",

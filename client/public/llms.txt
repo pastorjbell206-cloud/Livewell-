@@ -86,6 +86,12 @@ doors: Study, Essays, Books, Resources, and About.
   home, work and money, the world): https://www.livewellbyjamesbell.co/life
 - For families (devotions, the catechism, reading plans):
   https://www.livewellbyjamesbell.co/family
+- Tonight's family devotion (always the one for tonight's date, by the church
+  year): https://www.livewellbyjamesbell.co/family/tonight
+- Every family devotion, each on its own page (a passage, one idea to talk
+  about, questions, something to do, and a prayer), for example
+  https://www.livewellbyjamesbell.co/family/devotions/identity; the full list:
+  https://www.livewellbyjamesbell.co/family/devotions
 
 ## Reference tools
 

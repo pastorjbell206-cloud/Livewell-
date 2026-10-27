@@ -84,7 +84,8 @@ export function TextSize({
   return (
     <div className="no-print" style={{ display: "inline-flex", flexWrap: "wrap", alignItems: "center", gap: "6px 8px" }}>
       <div role="group" aria-labelledby={labelId} style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
-        <span id={labelId} style={{ ...quiet, fontWeight: 600, marginRight: "2px" }}>
+        {/* .text-size__label: a page may hide the word on a phone (index.css); it stays the group's name. */}
+        <span id={labelId} className="text-size__label" style={{ ...quiet, fontWeight: 600, marginRight: "2px" }}>
           Text size
         </span>
         <button

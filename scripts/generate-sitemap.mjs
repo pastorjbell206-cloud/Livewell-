@@ -114,8 +114,6 @@ const STATIC_PAGES = [
   { url: "/about", priority: "0.7", changefreq: "monthly" },
   { url: "/speaking", priority: "0.6", changefreq: "monthly" },
   { url: "/contact", priority: "0.5", changefreq: "monthly" },
-  { url: "/marriage", priority: "0.7", changefreq: "monthly" },
-  { url: "/parenting", priority: "0.7", changefreq: "monthly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
   { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
@@ -170,13 +168,6 @@ const STATIC_PAGES = [
   { url: "/compare/evangelical-vs-mainline", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/liturgical-vs-contemporary", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/orthodox-vs-catholic", priority: "0.8", changefreq: "monthly" },
-  // Crisis and topic landing pages
-  { url: "/church-hurt", priority: "0.8", changefreq: "monthly" },
-  { url: "/deconstruction", priority: "0.8", changefreq: "monthly" },
-  { url: "/faith-crisis", priority: "0.8", changefreq: "monthly" },
-  { url: "/grief", priority: "0.8", changefreq: "monthly" },
-  { url: "/marriage-crisis", priority: "0.8", changefreq: "monthly" },
-  { url: "/parenting-help", priority: "0.8", changefreq: "monthly" },
   // Ebook product pages previously missing
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
   { url: "/books/bible-and-homosexuality", priority: "0.8", changefreq: "monthly" },
@@ -292,6 +283,9 @@ function manifestPages() {
     // written page are routes.
     { file: "client/public/plans/plans-index.json", key: "plans", prefix: "/plans/" },
     { file: "client/public/needs/index.json", key: "needs", prefix: "/help/", filter: (e) => e.page === true },
+    // A page per family devotion (/family/devotions/:id), from the family
+    // index (scripts/build-family-index.mjs), which keys each row by `id`.
+    { file: "client/public/family/index.json", key: "devotions", slugField: "id", prefix: "/family/devotions/" },
   ];
   for (const s of sources) {
     try {

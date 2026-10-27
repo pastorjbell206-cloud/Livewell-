@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "U01",
+    "title": "Work hygiene: worktree and per-unit status",
+    "phase": 0,
+    "priority": 1,
+    "scope": "Lane: Lead. Target Oct 27. Commit and push docs/work; switch the main checkout to main; git worktree add /home/user/livewell-work claude/todo-implementation-hhp4bm; point autosave.sh at the worktree (stages only docs/work); create plan/units/, a STATUS.md generator that reads each unit file's status line, james/, essays/LEDGER.md (52 rows from NOTES); add the do-not-reuse line for the archive data files to NOTES. Done when a feature-branch checkout in the main tree leaves docs/work untouched and autosave pushes a test commit from the worktree.",
+    "files": [
+      "docs/work/autosave.sh",
+      "docs/work/plan/STATUS.md",
+      "docs/work/plan/units/",
+      "docs/work/james/",
+      "docs/work/essays/LEDGER.md",
+      "docs/work/NOTES.md"
+    ],
+    "depends_on": [],
+    "size": "S",
+    "parallelizable": false
+  },
+  {
+    "id": "U02",
+    "title": "Questions to James, dated, with two pictures of the doors",
+    "phase": 0,
+    "priority": 2,
+    "scope": "Lane: Lead. Target Oct 28. Section 12 as james/QUESTIONS.md in deadline order, each with what it unblocks and its default; two header pictures (options A and B) rendered from a throwaway local branch at 390 and 1440 px. The lead relays them to James and records the send date. Answers go verbatim to james/ANSWERS.md; gated units read them there.",
+    "files": [
+      "docs/work/james/QUESTIONS.md",
+      "docs/work/james/ANSWERS.md",
+      "docs/work/james/doors-a.png",
+      "docs/work/james/doors-b.png"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U03",
+    "title": "Essay gate (without the ESV cache)",
+    "phase": 0,
+    "priority": 3,
+    "scope": "Lane: Essays. Target Oct 29. scripts/validate-essays.mjs: override shape and fields, Forbidden Language, no em-dash, no exclamation outside quoted Scripture, links only to public pages, references present, the BRIEF's rulebook-leakage list. Extend validate-grow-voice.mjs and validate-no-emdash.mjs to client/public/essays only. Add to ci.yml. Done when the gates pass on the current essays folder and fail on a seeded bad file in a test.",
+    "files": [
+      "scripts/validate-essays.mjs",
+      "scripts/validate-grow-voice.mjs",
+      "scripts/validate-no-emdash.mjs",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U04",
+    "title": "Essay first screen and the ESV notice",
+    "phase": 0,
+    "priority": 4,
+    "scope": "Lane: Essays. Target Oct 30. Contents card closed by default under 760 px; reading tools in one row; generated art below the opening section or dropped where there is no real cover; Crossway's notice on essays that quote the ESV, copied verbatim from Crossway's current permissions page (source recorded). Done when the first sentence of two live essays is on the first 390 px screen, measured on a preview.",
+    "files": [
+      "client/src/pages/ArticleDetail.tsx",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U05",
+    "title": "Ship the five pilots",
+    "phase": 0,
+    "priority": 5,
+    "scope": "Lane: Essays. Preview to James Oct 30, live Nov 2. Rebuild each pilot's quotation-and-date ledger with the method actually used; remove the 79 em-dashes without changing meaning; shelf entries for what-post-christian-means and was-america-founded-as-a-christian-nation; essay JSON; build-essays-index; 301s for absorbed slugs only where the destination is public and the old slug is not a shelf entry; surface /help/politics and the politics pilots on /family and the Faith and Power shelf. Byline rule: James approves the preview. Done when all five render and validators and validate-links pass.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "client/src/lib/essayOverrides.generated.ts",
+      "vercel.json",
+      "client/src/App.tsx",
+      "client/src/pages/Family.tsx",
+      "docs/work/essays/ledgers/"
+    ],
+    "depends_on": [
+      "U03",
+      "U04"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U06",
+    "title": "Cleanup that needs no decision",
+    "phase": 0,
+    "priority": 6,
+    "scope": "Lane: Frame. Target Nov 3. Delete client/src/data/*-articles*.ts (20) and devotionals*.ts (2) after grep and pnpm check confirm nothing imports them (keep client/src/data/articles/). Rewrite the nine stale tool descriptions and Which Lens's 'Enter the pillar' ending. One-hop redirects with redirectTo stubs: six crisis landings to their care pages; /for-families and /parenting to /family; /marriage to /help/marriage; re-point existing redirects that land on /parenting. Re-point Start Here diagnostic links. Pathway subtitles say what is actually there. Update site-structure.test.ts folded lists. Done when the structure test, links validator, and canonical audit pass.",
+    "files": [
+      "client/src/data/",
+      "client/src/pages/ToolsHub.tsx",
+      "client/src/pages/tools/WhichLens.tsx",
+      "vercel.json",
+      "client/src/App.tsx",
+      "client/src/pages/StartHereDiagnostic.tsx",
+      "client/public/pathways/index.json",
+      "client/src/lib/site-structure.test.ts"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U07",
+    "title": "History sources survey, corpus, and verifier",
+    "phase": 0,
+    "priority": 7,
+    "scope": "Lane: History. Survey by Nov 13, verifier by Nov 20. For every planned source in Parts 0 to VIII: a reachable public-domain text with provenance, or 'not reachable' (docs/work/history/sources/SURVEY.md). Fetch the texts the slice and Part I need from the Writings-Database ANF/NPNF (no machine-translated Migne) into scripts/data/history-sources/ with PROVENANCE.md; write scripts/verify-sources.mjs and add it to CI. Done when the survey is complete and a seeded altered excerpt fails.",
+    "files": [
+      "scripts/data/history-sources/",
+      "scripts/data/history-sources/PROVENANCE.md",
+      "scripts/verify-sources.mjs",
+      ".github/workflows/ci.yml",
+      "docs/work/history/sources/SURVEY.md"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U08",
+    "title": "Home performance diagnosis",
+    "phase": 1,
+    "priority": 8,
+    "scope": "Lane: Platform. Target Nov 10. Read the failing Lighthouse step on main (CI run 40382670533); reproduce on a preview; record the cause; fix what the diagnosis shows, starting with moving the portrait and other CloudFront assets into client/public. Runs before U18 touches Home. Done when the Lighthouse step passes on the PR or the unit file says exactly why not.",
+    "files": [
+      "client/public/",
+      "client/src/pages/Home.tsx",
+      "client/index.html"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U09",
+    "title": "One Scripture reference parser",
+    "phase": 1,
+    "priority": 9,
+    "scope": "Lane: Platform. Target Nov 6. client/src/lib/scripture-ref.ts built from scripts/lib/bsb.mjs's alias table and logic, plus common abbreviations and loose spacing; bsb.mjs gains the same aliases; a test runs both on one fixture list (the shelf.ts/shelf.mjs precedent); retire refHref and studyBibleHref onto it; OSIS parseRef stays for Study Bible internals; validate-essays parses references. Done when 'John 3:16', 'jn 3 16', '1 cor 13', 'Romans 13', 'Ps 23:1-3' parse identically in both and an unknown book returns null.",
+    "files": [
+      "client/src/lib/scripture-ref.ts",
+      "client/src/lib/scripture-ref.test.ts",
+      "scripts/lib/bsb.mjs",
+      "client/src/lib/bible-notes.ts",
+      "client/src/lib/needs.ts",
+      "scripts/validate-essays.mjs"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U10",
+    "title": "Church-year rules and the generated year map",
+    "phase": 1,
+    "priority": 10,
+    "scope": "Lane: Family. Target Nov 6. scripts/lib/church-year.mjs (Advent Sunday, computus Easter, Ash Wednesday, Holy Week, Pentecost, All Saints, US Thanksgiving); scripts/build-family-year.mjs writes client/src/lib/familyYear.generated.ts five years ahead, imported statically (no network); hand overrides in a separate file. Tests: known dates (Advent 2026-11-29, Easter 2027-03-28, Ash Wednesday 2027-02-10, Pentecost 2027-05-16), regeneration is a no-op, fails with under twelve months left.",
+    "files": [
+      "scripts/lib/church-year.mjs",
+      "scripts/lib/church-year.test.mjs",
+      "scripts/build-family-year.mjs",
+      "client/src/lib/familyYear.generated.ts",
+      "client/public/family-year-overrides.json",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U11",
+    "title": "After the vote (two family pieces)",
+    "phase": 1,
+    "priority": 11,
+    "scope": "Lane: Family. Target Nov 8, James gate (he reads both; live only with his yes, otherwise they open the world strand in U22). 'When the grown-ups voted differently' (conversation card) and 'Praying for leaders we did not choose' (1 Timothy 2:1-2) in the existing devotion shape, mature register, both directions, BSB verified, ledgered. validate-family.mjs globs family-*.json (whichever of U11/U12 lands first); validate-politics.mjs extended to them; a short panel on /family reads the file until The Table does.",
+    "files": [
+      "client/public/family-devotions-world.json",
+      "scripts/validate-family.mjs",
+      "scripts/validate-politics.mjs",
+      "client/src/pages/Family.tsx",
+      "docs/work/family/world/"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U12",
+    "title": "Family repairs and the structural validator",
+    "phase": 1,
+    "priority": 12,
+    "scope": "Lane: Family. Target Nov 10. Duplicate devotion ids fixed and then frozen (test: no id removed or renamed without a redirect entry); '72 weeks' copy; catechism weekOfYear cap so Q53 to Q76 appear; catalogue '52-question' copy; LoadFailed on the three family pages; each surface's translation named; hardcoded rgba() in heroes; 'Ages 1--3'. Root family-*.json naming kept; validator globs it and checks unique ids and questions, counts matching copy, bands where claimed, the year map resolving, em-dashes outside quoted Scripture. Catechism duplicates flagged only (U40 removes them).",
+    "files": [
+      "client/public/family-devotions.json",
+      "client/public/family-devotions-2.json",
+      "client/public/family-catechism.json",
+      "client/src/pages/FamilyDevotions.tsx",
+      "client/src/pages/FamilyCatechism.tsx",
+      "client/src/pages/FamilyReadingPlans.tsx",
+      "client/src/pages/Family.tsx",
+      "scripts/build-catalogue.mjs",
+      "scripts/validate-family.mjs",
+      "client/src/pages/tools/ParentingGuide.tsx"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U13",
+    "title": "Advent ready",
+    "phase": 1,
+    "priority": 13,
+    "scope": "Lane: Family. Target Nov 18. Gate: question 3 (default by Nov 13: keep the Dec 1 to 25 calendar, correct every line that says Advent begins Dec 1, no new writing). Either way fix the day 24 order (Luke 2:1-5 after 2:6-11) and the booklet copy; surface the set on /family and Home from Nov 22, date-gated after mount from the generated year map. Independent of The Table. Done when a date-mocked test shows the surfacing window and no copy misstates the start.",
+    "files": [
+      "client/public/family-seasonal.json",
+      "client/src/pages/FamilyDevotions.tsx",
+      "scripts/lib/help-printables.mjs",
+      "client/src/pages/Family.tsx",
+      "client/src/pages/Home.tsx"
+    ],
+    "depends_on": [
+      "U02",
+      "U10"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U14",
+    "title": "Study primitives, first three (Sheet, Stepper, PageHead)",
+    "phase": 1,
+    "priority": 14,
+    "scope": "Lane: Platform. Target Nov 10. Sheet (bottom sheet on phones, side panel from 1024 px, focus trap), Stepper (one step per screen, Back and Next at the bottom), PageHead (eyebrow, H1, one line, actions, left-aligned) on Radix, styled under .st- and .pg- with tokens only; testing-library tests for keyboard and ARIA; PageHead adopted on one existing page. No other primitives until a unit needs them.",
+    "files": [
+      "client/src/components/study/Sheet.tsx",
+      "client/src/components/study/Stepper.tsx",
+      "client/src/components/editorial/PageHead.tsx",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U15",
+    "title": "Find: passage lookup and plain-language search",
+    "phase": 1,
+    "priority": 15,
+    "scope": "Lane: Platform. Target Nov 13. siteSearch recognizes references first (to the verse), stop words for plain questions, and adds wisdom topics, Honest Answers, family devotions and catechism, Christ and the Nation, and the essays override manifest (rewrites found by their own title and excerpt; server essay results with an override dropped; no server change). Header search, /search, and a 'Go to' field on the Study Bible. Parser loaded on focus. Done when 'John 3:16', 'jn 3 16', 'how to talk to my kids about God', and 'is america a christian nation' each return the right thing in a test.",
+    "files": [
+      "client/src/lib/siteSearch.ts",
+      "client/src/lib/siteSearch.test.ts",
+      "client/src/pages/Search.tsx",
+      "client/src/components/MinimalNav.tsx",
+      "client/src/pages/StudyBible.tsx"
+    ],
+    "depends_on": [
+      "U09"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U16",
+    "title": "VerseRef and text-only chapter shards",
+    "phase": 1,
+    "priority": 16,
+    "scope": "Lane: Platform. Target Nov 20. VerseRef link mode and sheet mode; sheet renders <ScriptureNote> so validate-scripture passes; sheet only on pages that quote nothing or quote the BSB, link mode on ESV pages; text-only shards (verse and text) generated from bible/ch into bible/text, committed, with a drift check; in-house remark plugin in Markdown.tsx; ScriptureRef points at the Study Bible; references live in devotions, catechism, reading plans, plans, context guides, creeds. Done when John 3:16 in a context guide opens the sheet then the Study Bible and an unparseable reference renders as plain text.",
+    "files": [
+      "client/src/components/VerseRef.tsx",
+      "client/src/components/Markdown.tsx",
+      "client/src/components/ScriptureRef.tsx",
+      "scripts/build-bible-text-shards.mjs",
+      "client/public/bible/text/",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U09",
+      "U14"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U17",
+    "title": "The Table, core",
+    "phase": 1,
+    "priority": 17,
+    "scope": "Lane: Family. Target Nov 24. /family/tonight; /family/devotions/:id (route checklist 9.3); table mode on the Stepper with Wake Lock and a plain 'We did this tonight'; position on the device, never a streak; reads the generated year map; /family gets PageHead and Tonight first; removes the empty essay rows and the posts.listPublished call; print stylesheet per devotion; family_devotion_complete event. Retires the accordion. Done when a phone goes from Home to step one in two taps and finishes at the table, and the canonical audit passes.",
+    "files": [
+      "client/src/pages/family/Tonight.tsx",
+      "client/src/pages/family/DevotionPage.tsx",
+      "client/src/pages/family/TableMode.tsx",
+      "client/src/pages/Family.tsx",
+      "client/src/pages/FamilyDevotions.tsx",
+      "client/src/App.tsx",
+      "scripts/prerender-heads.mjs",
+      "scripts/generate-sitemap.mjs",
+      "scripts/lib/site-routes.mjs",
+      "client/public/llms.txt",
+      "client/src/lib/telemetry.ts",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U10",
+      "U12",
+      "U14"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U18",
+    "title": "Home: Find and tonight",
+    "phase": 1,
+    "priority": 18,
+    "scope": "Lane: Frame. Target Nov 25. Add the Find field (parser on focus) and one tonight line (Advent day in season, else Tonight at the table) with Continue only when the device has something; doors row gains Family (Topics when U25 ships). No Today in Proverbs, no questions list. Done when first paint is unchanged, Lighthouse is no worse than after U08, and the tonight line is empty-safe.",
+    "files": [
+      "client/src/pages/Home.tsx",
+      "client/src/index.css",
+      "scripts/prerender-heads.mjs"
+    ],
+    "depends_on": [
+      "U08",
+      "U13",
+      "U15",
+      "U17"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U19",
+    "title": "The doors",
+    "phase": 1,
+    "priority": 19,
+    "scope": "Lane: Frame. Target Nov 24. James gate: question 6 (option A, option B, or the interim: For families primary under Resources, Topics primary under Essays once U25 ships, Family door on Home). Decision Log line in CLAUDE.md only after his yes. Not run beside U06 or U66.",
+    "files": [
+      "client/src/lib/siteNav.ts",
+      "client/src/lib/siteNav.test.tsx",
+      "client/src/lib/site-structure.test.ts",
+      "client/src/components/Footer.tsx",
+      "client/src/components/MinimalNav.tsx",
+      "CLAUDE.md"
+    ],
+    "depends_on": [
+      "U02"
+    ],
+    "size": "S",
+    "parallelizable": false
+  },
+  {
+    "id": "U20",
+    "title": "This week at your table",
+    "phase": 2,
+    "priority": 20,
+    "scope": "Lane: Family. Target Dec 2. /family/this-week, print-first, with Take It With You and a QR code to /family/tonight; one week from the year map: the devotion, the catechism question, one question for the table, the essay behind it. Channel per question 14. Done when it prints on one page at Letter and A4.",
+    "files": [
+      "client/src/pages/family/ThisWeek.tsx",
+      "client/src/App.tsx",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U17"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U21",
+    "title": "The Table, part two",
+    "phase": 2,
+    "priority": 21,
+    "scope": "Lane: Family. Target Dec 18. Band switch with older questions only where real (Builder teen band or written new, never faked); library by strand and theme; 'If your table looks different'; Remind me via lib/calendar.ts; 'For the grown-ups' lines; one combined PDF of the year's cards with QR codes in pnpm pdfs (no per-devotion PDFs). Done when every devotion claiming an older band has one and the combined PDF builds.",
+    "files": [
+      "client/public/family-devotions.json",
+      "client/public/family-devotions-2.json",
+      "client/src/pages/family/",
+      "client/src/pages/Family.tsx",
+      "scripts/build-pdfs.mjs",
+      "scripts/validate-family.mjs"
+    ],
+    "depends_on": [
+      "U17"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U22",
+    "title": "The world we live in (family strand)",
+    "phase": 2,
+    "priority": 22,
+    "scope": "Lane: Family. First four to James Dec 18, live Jan 8; the other eight by Apr 30. Twelve devotions on the world a Christian child now meets, each with younger and older questions, a witness where one fits, a topic link, and crisis care where needed; mature register, both directions on politics, BSB verified, ledgered. Opens with U11's pieces if they did not ship. Body and identity waits on question 11.",
+    "files": [
+      "client/public/family-devotions-world.json",
+      "docs/work/family/world/",
+      "docs/work/family/ledgers/"
+    ],
+    "depends_on": [
+      "U12"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U23",
+    "title": "Essay page, part one",
+    "phase": 2,
+    "priority": 23,
+    "scope": "Lane: Essays. Target Dec 4. References in the body as VerseRef link mode; block Scripture as Scripture; pullQuotes field for the share card; progress bar measures the body with minutes left; place remembered on the device with 'Pick up where you left off' on /writing and Home's Continue; series kicker; honest revised date. No sticky section line on essays. Done when references in each pilot link into the Study Bible.",
+    "files": [
+      "client/src/pages/ArticleDetail.tsx",
+      "client/src/components/ReadingProgressBar.tsx",
+      "client/src/lib/shelf.ts",
+      "client/src/lib/useEssayCompletion.ts",
+      "client/src/pages/Writing.tsx",
+      "client/src/lib/html-body.ts",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U05",
+      "U16"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U24",
+    "title": "Essay page, part two",
+    "phase": 2,
+    "priority": 24,
+    "scope": "Lane: Essays. Target Dec 11. questions (with group guide link), sources, related (replaces RelatedEssays), Next in this section (replaces ArticleNextSteps), Write to James; the fixed foot order of 6.2; the fields in essay JSON, build-essays-index.mjs, and validate-essays.mjs. Done when a pilot shows the foot exactly in order.",
+    "files": [
+      "client/src/pages/ArticleDetail.tsx",
+      "client/src/components/RelatedEssays.tsx",
+      "client/src/components/ArticleNextSteps.tsx",
+      "scripts/build-essays-index.mjs",
+      "scripts/validate-essays.mjs",
+      "client/public/essays/README.md"
+    ],
+    "depends_on": [
+      "U23"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U25",
+    "title": "Topics: the index and three pages",
+    "phase": 2,
+    "priority": 25,
+    "scope": "Lane: Frame. Preview to James Dec 11, live Dec 18. Gate: question 6 (label, pathway folds). One index of questions, each row opening the one best page; three pages (faith-politics-and-the-flag, raising-children-in-a-secular-age, living-after-christendom) with the six-section anatomy; validate-topics (shared parser, site-routes resolveHref, no statistics, sensitive needs care, politics both-directions, cap six); route checklist; search entries; Test the Case on its row; public-square tools on the politics page; topic_lead_open event; politics page folds christian-nationalism and progressive-captivity pathways, raising-children folds parenting (if James agrees). PR states what the 10-12 fold decided and why this differs.",
+    "files": [
+      "client/public/topics/",
+      "client/src/pages/Topics.tsx",
+      "client/src/pages/Topic.tsx",
+      "scripts/build-topics-index.mjs",
+      "scripts/validate-topics.mjs",
+      "scripts/validate-politics.mjs",
+      "client/src/App.tsx",
+      "vercel.json",
+      "scripts/prerender-heads.mjs",
+      "scripts/generate-sitemap.mjs",
+      "scripts/lib/site-routes.mjs",
+      "client/public/llms.txt",
+      "client/src/lib/siteSearch.ts",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U02",
+      "U05",
+      "U09",
+      "U14",
+      "U16"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U26",
+    "title": "Essays: Doubt, part A (five)",
+    "phase": 2,
+    "priority": 26,
+    "scope": "Lane: Essays. To James Dec 4 on a preview of the current essay page; live from Jan 1 with the U24 fields. excavation-not-demolition, why-trust-the-bible, the-historical-jesus, did-the-resurrection-happen, can-you-be-good-without-god through the full process (draft, ledger with method, voice edit, second read, convert); questions, sources, related, discussion guide each; re-derive the matching Honest Answers; 301s from NOTES. Drafting starts Oct 28 in the worktree.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "client/src/data/answers.ts",
+      "client/src/data/discussion-guides.ts",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U03",
+      "U24"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U27",
+    "title": "Quotation verifier",
+    "phase": 2,
+    "priority": 27,
+    "scope": "Lane: Essays. Target Jan 15. James gate: question 2. With an ESV API key: an agent fills scripts/data/esv-verified.json once (date and method recorded), verify-esv.mjs checks essays, topics, sessions; the build never calls the API. With BSB allowed: verify quotations word for word against the site's BSB. Neither: match against search results, ledger says so, gate checks consistency only and the PR says it cannot catch a wrong entry. Done when a seeded wrong quotation fails.",
+    "files": [
+      "scripts/data/esv-verified.json",
+      "scripts/verify-esv.mjs",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U02",
+      "U03"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U28",
+    "title": "Read the whole story in 2027",
+    "phase": 2,
+    "priority": 28,
+    "scope": "Lane: Platform. Target Dec 20. A schedule derived by script from client/public/bible/story.json (chapters per day, each day linking its context guide where one exists), per-day position on the device, a phone reminder via lib/calendar.ts, under /study/bible/guides. Done when days 1 to 365 resolve to real chapters.",
+    "files": [
+      "scripts/build-story-plan.mjs",
+      "client/public/bible/guides/",
+      "client/src/pages/StudyBibleGuides.tsx",
+      "client/src/lib/calendar.ts"
+    ],
+    "depends_on": [
+      "U09"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U29",
+    "title": "/writing asks for the shelf only (both runtimes)",
+    "phase": 2,
+    "priority": 29,
+    "scope": "Lane: Essays. Target Dec 4. Optional slugs input on posts.listPublished in the dev router and both handlers in api/index.ts (about lines 1657 and 2562); Writing.tsx passes the shelf's slugs. This needs both runtimes; api-parity.test.ts stays green.",
+    "files": [
+      "server/routers.ts",
+      "api/index.ts",
+      "client/src/pages/Writing.tsx",
+      "server/api-parity.test.ts"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U30",
+    "title": "History registry and validator",
+    "phase": 2,
+    "priority": 30,
+    "scope": "Lane: History. Target Dec 4. Registry files and schema (people, events, places, councils, controversies, sources); migrate the four church-history files and regenerate them from the registry with a drift check; scripts/validate-history.mjs (unique ids, cross-references, citations, the person-page threshold of 150 words and a cited source, view-name collisions). Done when the legacy pages render unchanged from generated files.",
+    "files": [
+      "client/public/history/registry/",
+      "client/public/theology/",
+      "scripts/build-history-legacy.mjs",
+      "scripts/validate-history.mjs",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U07"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U31",
+    "title": "History views: front door, pages and sheets, timeline",
+    "phase": 2,
+    "priority": 31,
+    "scope": "Lane: History. Target Dec 18. Course front door with PageHead and the one ordered reading list (retires the 22-row list); pages for councils, controversies, and people over the threshold (route checklist 9.3); sheets by query parameter for events, places, sources, and short people entries; list-first timeline with URL filters including 'alive in a given year'; Tabs and EntityChip; LoadFailed fix at TheologyHistory.tsx:50; no unrelated indexes loaded. Done when the front door's first screen holds the course and every sheet has a URL.",
+    "files": [
+      "client/src/pages/TheologyHistory.tsx",
+      "client/src/pages/history/",
+      "client/src/components/study/Tabs.tsx",
+      "client/src/components/study/EntityChip.tsx",
+      "client/src/App.tsx",
+      "scripts/prerender-heads.mjs",
+      "scripts/generate-sitemap.mjs",
+      "scripts/lib/site-routes.mjs",
+      "client/public/llms.txt"
+    ],
+    "depends_on": [
+      "U14",
+      "U30"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U32",
+    "title": "History session template",
+    "phase": 2,
+    "priority": 32,
+    "scope": "Lane: History. Target Dec 18. /theology/history/session/:slug (route checklist); blocks renderer (prose, source, scripture); SourceCard, CheckYourself, MythCheck, Disclosure; leader toggle; print handout; Crossway notice; the mirror rule ('we', never a supplied first person) in the template README; history_session_complete event. Done with one test session exercising every block type.",
+    "files": [
+      "client/src/pages/history/Session.tsx",
+      "client/src/components/study/SourceCard.tsx",
+      "client/src/components/study/CheckYourself.tsx",
+      "client/src/components/study/MythCheck.tsx",
+      "client/src/components/study/Disclosure.tsx",
+      "client/public/history/sessions/",
+      "client/src/App.tsx",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U14",
+      "U30"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U33",
+    "title": "History vertical slice",
+    "phase": 2,
+    "priority": 33,
+    "scope": "Lane: History. To James Jan 11 (earlier only if ready). Gate: question 9 (the course's voice; default no first person). How to Read the Dead; the Rome session on the approved pilot; Nicaea; Callinicum and Thessalonica as the first reckoning; their registry entries, claims and quotation ledgers; the U07 survey attached. Three questions to James: is the voice his, is the depth right, is the length right.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "docs/work/history/sessions/",
+      "docs/work/history/ledgers/"
+    ],
+    "depends_on": [
+      "U07",
+      "U31",
+      "U32"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U34",
+    "title": "Accessibility on lazy routes",
+    "phase": 2,
+    "priority": 34,
+    "scope": "Lane: Platform. Target Jan 8. Playwright with @axe-core/playwright on ten key routes against the local build in the quality job, waiting for each route's main landmark; non-blocking at first.",
+    "files": [
+      ".github/workflows/ci.yml",
+      "scripts/a11y-routes.mjs",
+      "package.json"
+    ],
+    "depends_on": [
+      "U01"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U35",
+    "title": "Payload budgets",
+    "phase": 2,
+    "priority": 35,
+    "scope": "Lane: Platform. Target Jan 8. scripts/check-payload-budget.mjs: per-route JSON and JS budgets (one chapter plus the shards it opens; no unrelated indexes), warning first, blocking once green; lazy catalogue loading where U37 has not done it.",
+    "files": [
+      "scripts/check-payload-budget.mjs",
+      ".github/workflows/ci.yml"
+    ],
+    "depends_on": [
+      "U08"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U36",
+    "title": "Essays: Doubt, part B (four)",
+    "phase": 3,
+    "priority": 36,
+    "scope": "Lane: Essays. To James Jan 15, live Jan 29. why-does-god-allow-suffering, why-does-god-feel-far-away, did-god-command-genocide, doubt-after-church-abuse (crisis care and the report-to-authorities line) through the full process; re-point the Skeptic's Track and switch it on if every stop is public.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "client/src/data/answers.ts",
+      "client/src/data/discussion-guides.ts",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U26"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U37",
+    "title": "Study Bible for thumbs",
+    "phase": 3,
+    "priority": 37,
+    "scope": "Lane: Platform. Target Jan 29. Whole verse as the tap target; text on screen one with the summary behind 'About this chapter'; sticky two-tap book and chapter picker; related content loaded only when asked (not the 372 KB catalogue); save a verse or note to My Library; StickyContext only if it earns its line; /theology/doctrine pages cross-linked to their Study Bible counterparts. Done when John 3 shows text on the first phone screen and every verse is a 44 px target.",
+    "files": [
+      "client/src/pages/StudyBible.tsx",
+      "client/src/pages/study-bible/ChapterNotes.tsx",
+      "client/src/pages/study-bible/VerseNotes.tsx",
+      "client/src/pages/study-bible/shared.tsx",
+      "client/src/lib/library.ts"
+    ],
+    "depends_on": [
+      "U14"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U38",
+    "title": "Tools registry tightening",
+    "phase": 3,
+    "priority": 38,
+    "scope": "Lane: Platform. Target Jan 15. Study Bible first in the registry; public-square instruments second under a plain title; Passage Context reads the site's BSB instead of bible-api.com and lazy-loads its 710 KB notes. No redirects.",
+    "files": [
+      "client/src/pages/ToolsHub.tsx",
+      "client/src/pages/ToolsHub.test.ts",
+      "client/src/pages/tools/PassageContext.tsx"
+    ],
+    "depends_on": [
+      "U14"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U39",
+    "title": "Cleanup, second pass",
+    "phase": 3,
+    "priority": 39,
+    "scope": "Lane: Platform. Target Jan 15. Delete the four retired tool files (redirects stay; about 5,600 lines), the thirty fontWeight: 300 requests, and one of each duplicate how-to pair with a redirect.",
+    "files": [
+      "client/src/pages/tools/",
+      "client/public/howtos/",
+      "vercel.json",
+      "client/src/App.tsx"
+    ],
+    "depends_on": [
+      "U06"
+    ],
+    "size": "S",
+    "parallelizable": true
+  },
+  {
+    "id": "U40",
+    "title": "Catechism you can learn",
+    "phase": 3,
+    "priority": 40,
+    "scope": "Lane: Family. Target Jan 22. James gate: question 7 (baptism, Q47 and Q61). De-duplicate to distinct questions; recite mode on the Stepper; 'this week' reaching every question; fridge cards printed from the page.",
+    "files": [
+      "client/public/family-catechism.json",
+      "client/src/pages/FamilyCatechism.tsx",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U02",
+      "U12",
+      "U14"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U41",
+    "title": "One devotion system",
+    "phase": 3,
+    "priority": 41,
+    "scope": "Lane: Family. Target Jan 29. James gate: question 8 (translation). Move the Builder's 40 age-banded pieces into the family data; convert KJV to BSB from the site's own text; the Builder reads the shared data and becomes 'plan a term'. The /tools/family-devotions route stays.",
+    "files": [
+      "client/src/pages/tools/FamilyDevotionBuilder.tsx",
+      "client/public/family-devotions-builder.json",
+      "scripts/validate-family.mjs"
+    ],
+    "depends_on": [
+      "U02",
+      "U21"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U42",
+    "title": "Page heads on tools and self-checks",
+    "phase": 3,
+    "priority": 42,
+    "scope": "Lane: Platform. Target Jan 29. PageHead in place of the charcoal hero on the ten most-used tools and the self-checks; boxed left-rule cards replaced on the tools hub and Deep Bible with EditorialIndex or CardGrid. Two PRs (tools, self-checks). Not run beside U19 or U66.",
+    "files": [
+      "client/src/pages/tools/",
+      "client/src/pages/Assessments.tsx",
+      "client/src/pages/ToolsHub.tsx",
+      "client/src/index.css"
+    ],
+    "depends_on": [
+      "U14",
+      "U38"
+    ],
+    "size": "M",
+    "parallelizable": false
+  },
+  {
+    "id": "U43",
+    "title": "Lent for households",
+    "phase": 3,
+    "priority": 43,
+    "scope": "Lane: Family. To James Jan 27, live Feb 3 (Ash Wednesday Feb 10). A Lent set and booklet placed by the year map; Holy Week's existing set placed by date; BSB verified; ledgered.",
+    "files": [
+      "client/public/family-seasonal.json",
+      "scripts/lib/help-printables.mjs",
+      "client/public/family-year-overrides.json",
+      "docs/work/family/lent/"
+    ],
+    "depends_on": [
+      "U10",
+      "U17"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U44",
+    "title": "Creeds you can learn",
+    "phase": 3,
+    "priority": 44,
+    "scope": "Lane: Platform. Target Feb 5. Tap a phrase to open its annotation in place; compare Nicaea 325 with 381 and the Apostles' with the Nicene; memorize mode reusing Scripture Memory's first-letter drill; each creed linked to its council page.",
+    "files": [
+      "client/src/pages/resources/CreedDocument.tsx",
+      "client/src/pages/resources/CreedsLibrary.tsx",
+      "client/public/creeds/"
+    ],
+    "depends_on": [
+      "U14",
+      "U30"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U45",
+    "title": "Context guides that reveal",
+    "phase": 3,
+    "priority": 45,
+    "scope": "Lane: Platform. Target Feb 12. On the ten 'verses everyone quotes' guides, a 'what we hear / what the first readers heard' reveal with the verse one tap away.",
+    "files": [
+      "client/src/pages/resources/ContextGuide.tsx",
+      "client/public/context/"
+    ],
+    "depends_on": [
+      "U14",
+      "U16"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U46",
+    "title": "Essays: Faith and Power",
+    "phase": 3,
+    "priority": 46,
+    "scope": "Lane: Essays. To James Feb 5, live Feb 19. The section's pending essays plus baptists-and-the-wall-of-separation, what-romans-13-says, is-it-wrong-to-love-your-country, end-times-israel-and-american-politics; point the four study guides at the rewrites; 301s; politics topic page updated to lead with them.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "client/public/studyguides/",
+      "client/public/topics/faith-politics-and-the-flag.json",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U24"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U47",
+    "title": "Essays: After Christendom",
+    "phase": 3,
+    "priority": 47,
+    "scope": "Lane: Essays. To James Feb 19, live Mar 5. The section's pending essays through the full process; 301s; the living-after-christendom topic page updated.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "client/public/topics/living-after-christendom.json",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U24"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U48",
+    "title": "Topics, second wave, and the AI discernment guide",
+    "phase": 3,
+    "priority": 48,
+    "scope": "Lane: Frame. Target Feb 19. James gate: question 5 (search data). Up to three pages (cap six total) chosen by search data from phones-screens-and-ai, race-and-the-churchs-past, neighbors-who-believe-differently, each retiring what it replaces; the AI discernment guide as a context-guide-style page; FAQ pages linked from /answers; the care pages the index rows open improved in place.",
+    "files": [
+      "client/public/topics/",
+      "client/public/context/",
+      "client/public/needs/",
+      "client/src/pages/Answers.tsx",
+      "scripts/validate-topics.mjs"
+    ],
+    "depends_on": [
+      "U02",
+      "U25"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U49",
+    "title": "The church remembers (family strand)",
+    "phase": 3,
+    "priority": 49,
+    "scope": "Lane: Family. To James Feb 26. Twelve family devotions from the registry, each linked to its session and person page, under the mirror and biography rules, every fact verified.",
+    "files": [
+      "client/public/family-devotions-church.json",
+      "docs/work/family/church/"
+    ],
+    "depends_on": [
+      "U12",
+      "U33"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U50",
+    "title": "When the news comes to dinner",
+    "phase": 3,
+    "priority": 50,
+    "scope": "Lane: Family. To James Feb 26. Short conversation cards (an election, a shooting, a scandal at a church, a death in the news), each with Scripture, a witness, questions by band, crisis care, and the politics both-directions check; the card on a friend who comes out waits on question 11. Under /family, linked from topics.",
+    "files": [
+      "client/public/family-news-cards.json",
+      "client/src/pages/family/NewsCards.tsx",
+      "scripts/validate-family.mjs",
+      "scripts/validate-politics.mjs"
+    ],
+    "depends_on": [
+      "U21",
+      "U25"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U51",
+    "title": "History Part I",
+    "phase": 3,
+    "priority": 51,
+    "scope": "Lane: History. To James Mar 5, live Mar 12 (before Holy Week). Six sessions on the approved template with registry entries, sources (only where the survey found a reachable text), ledgers, handouts, readings linked; drafted entirely in the worktree before conversion.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U33"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U52",
+    "title": "Easter to Pentecost for households",
+    "phase": 3,
+    "priority": 52,
+    "scope": "Lane: Family. Live Mar 19. Easter's fifty days, Pentecost (May 16), and All Saints, placed by the year map; BSB verified; ledgered.",
+    "files": [
+      "client/public/family-seasonal.json",
+      "client/public/family-year-overrides.json",
+      "docs/work/family/easter/"
+    ],
+    "depends_on": [
+      "U43"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U53",
+    "title": "History Part II",
+    "phase": 4,
+    "priority": 53,
+    "scope": "Lane: History. To James Apr 8, live Apr 22. Six sessions (313 to 600) on the template, as U51.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U51"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U54",
+    "title": "Councils and controversies explorer",
+    "phase": 4,
+    "priority": 54,
+    "scope": "Lane: History. Target Apr 30. /theology/history/controversies: each question, each position at full strength, what was decided, the creed text, where it returns today.",
+    "files": [
+      "client/src/pages/history/Controversies.tsx",
+      "client/public/history/registry/controversies.json",
+      "client/src/App.tsx"
+    ],
+    "depends_on": [
+      "U31"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U55",
+    "title": "Weekly devotions voice pass",
+    "phase": 4,
+    "priority": 55,
+    "scope": "Lane: Family. Target May 6. James gate: question 10. Voice pass on the sixteen plain weeks served from May 17, measured against the catechism parent notes and the Builder's teen band; two PRs of eight; ids unchanged.",
+    "files": [
+      "client/public/family-devotions.json",
+      "client/public/family-devotions-2.json",
+      "docs/work/family/foundations/"
+    ],
+    "depends_on": [
+      "U02",
+      "U12"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U56",
+    "title": "Essays: The Ancient Church",
+    "phase": 4,
+    "priority": 56,
+    "scope": "Lane: Essays. To James May 13. The section's pending and new essays, written as essays, coordinated with the course; 301s.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U24",
+      "U33"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U57",
+    "title": "Essays: The American Church",
+    "phase": 4,
+    "priority": 57,
+    "scope": "Lane: Essays. To James Jun 3. The section's essays; 301s; joins the race-and-the-churchs-past topic if built.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U24"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U58",
+    "title": "Essays: Reading the Bible in Its World",
+    "phase": 4,
+    "priority": 58,
+    "scope": "Lane: Essays. To James Jun 24. The section's essays; 301s.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U24"
+    ],
+    "size": "L",
+    "parallelizable": true
+  },
+  {
+    "id": "U59",
+    "title": "Essays: Marriage, Family and Ordinary Faithfulness",
+    "phase": 4,
+    "priority": 59,
+    "scope": "Lane: Essays. Target Jul 15. James gate: questions 11 and 13. Excludes the held essays (women-and-leadership-church, what-the-bible-says-about-submission, how-to-read-genesis-one, what-fatherhood-requires, raising sons) until he answers.",
+    "files": [
+      "client/public/essays/",
+      "client/src/lib/shelf.json",
+      "vercel.json",
+      "docs/work/essays/"
+    ],
+    "depends_on": [
+      "U02",
+      "U24"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U60",
+    "title": "History Part III",
+    "phase": 4,
+    "priority": 60,
+    "scope": "Lane: History. Target Jun. Part III, The Long Middle (600 to 1500), one PR on the approved template; source cards only where U07's survey found a reachable public-domain text, otherwise the narrative tells the source and says so; ledgers; handouts; readings linked.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U53"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U61",
+    "title": "History Part IV",
+    "phase": 4,
+    "priority": 61,
+    "scope": "Lane: History. Target Jul. Part IV, Reformations (1500 to 1650), one PR on the approved template; source cards only where U07's survey found a reachable public-domain text, otherwise the narrative tells the source and says so; ledgers; handouts; readings linked.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U60"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U62",
+    "title": "History Part V",
+    "phase": 4,
+    "priority": 62,
+    "scope": "Lane: History. Target Jul. Part V, Revival, Reason, and Mission (1650 to 1900), one PR on the approved template; source cards only where U07's survey found a reachable public-domain text, otherwise the narrative tells the source and says so; ledgers; handouts; readings linked.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U61"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U63",
+    "title": "History Part VI",
+    "phase": 4,
+    "priority": 63,
+    "scope": "Lane: History. Target Aug. Part VI, The American Experiment, one PR on the approved template; source cards only where U07's survey found a reachable public-domain text, otherwise the narrative tells the source and says so; ledgers; handouts; readings linked.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U62"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U64",
+    "title": "History Part VII",
+    "phase": 4,
+    "priority": 64,
+    "scope": "Lane: History. Target Sep. Part VII, The Twentieth Century, one PR on the approved template; source cards only where U07's survey found a reachable public-domain text, otherwise the narrative tells the source and says so; ledgers; handouts; readings linked.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U63"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U65",
+    "title": "History Part VIII",
+    "phase": 4,
+    "priority": 65,
+    "scope": "Lane: History. Target Sep. Part VIII, After Christendom, one PR on the approved template; source cards only where U07's survey found a reachable public-domain text, otherwise the narrative tells the source and says so; ledgers; handouts; readings linked.",
+    "files": [
+      "client/public/history/sessions/",
+      "client/public/history/registry/",
+      "client/public/history/sources/",
+      "scripts/data/history-sources/",
+      "docs/work/history/"
+    ],
+    "depends_on": [
+      "U64"
+    ],
+    "size": "XL",
+    "parallelizable": true
+  },
+  {
+    "id": "U66",
+    "title": "Folds James approved",
+    "phase": 4,
+    "priority": 66,
+    "scope": "Lane: Frame. After his answers. James gate: question 12. Each fold a one-hop permanent redirect in vercel.json, a redirectTo stub in App.tsx, the FOLDED and KEPT lists in site-structure.test.ts, and the registry test. Not run beside U19 or U42.",
+    "files": [
+      "vercel.json",
+      "client/src/App.tsx",
+      "client/src/lib/site-structure.test.ts",
+      "client/src/pages/ToolsHub.test.ts"
+    ],
+    "depends_on": [
+      "U02"
+    ],
+    "size": "M",
+    "parallelizable": false
+  },
+  {
+    "id": "U67",
+    "title": "One reading-order source",
+    "phase": 4,
+    "priority": 67,
+    "scope": "Lane: Frame. Target Jun. Replace reading-paths/index.json, lib/readingPaths.ts, and data/reading-paths-post-christian.ts with one source; the pathways not already folded by topic pages follow question 12.",
+    "files": [
+      "client/public/reading-paths/index.json",
+      "client/src/lib/readingPaths.ts",
+      "client/src/data/reading-paths-post-christian.ts",
+      "client/public/pathways/index.json"
+    ],
+    "depends_on": [
+      "U25",
+      "U66"
+    ],
+    "size": "M",
+    "parallelizable": true
+  },
+  {
+    "id": "U68",
+    "title": "History atlas, if James wants it",
+    "phase": 4,
+    "priority": 68,
+    "scope": "Lane: History. After Part II. James gate: his verdict on the slice. A few inline SVG base maps converted once from public-domain Natural Earth outlines and committed, colored from tokens, places plotted from the registry; no map library.",
+    "files": [
+      "client/src/pages/history/Atlas.tsx",
+      "client/public/history/maps/",
+      "scripts/build-history-maps.mjs"
+    ],
+    "depends_on": [
+      "U31",
+      "U33"
+    ],
+    "size": "L",
+    "parallelizable": true
+  }
+]

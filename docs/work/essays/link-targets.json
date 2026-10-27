@@ -1,0 +1,294 @@
+{
+ "live": [
+  "every-generation-was-sure-it-was",
+  "the-monster-is-never-the-one-in-the",
+  "blind-spots",
+  "the-conservative-blind-spot",
+  "the-progressive-blind-spot",
+  "when-fear-becomes-theology",
+  "when-patriotism-becomes-a-gospel",
+  "how-christian-nationalism-rewrites",
+  "when-fear-rewrites-theology",
+  "strongman-theology",
+  "when-the-church-married-empire",
+  "women-in-church-history",
+  "how-the-bible-gets-translated-by",
+  "how-american-individualism-distorts",
+  "the-bible-assumes-you-will-be-wrong"
+ ],
+ "hold": [
+  "women-and-leadership-church",
+  "what-the-bible-says-about-submission",
+  "how-to-read-genesis-one"
+ ],
+ "shelf": [
+  {
+   "slug": "every-generation-was-sure-it-was",
+   "title": "Every Generation Was Sure It Was Right"
+  },
+  {
+   "slug": "the-monster-is-never-the-one-in-the",
+   "title": "The Monster Is Never the One in the Mirror"
+  },
+  {
+   "slug": "blind-spots",
+   "title": "Blind Spots"
+  },
+  {
+   "slug": "the-conservative-blind-spot",
+   "title": "The Conservative Blind Spot"
+  },
+  {
+   "slug": "the-progressive-blind-spot",
+   "title": "The Progressive Blind Spot"
+  },
+  {
+   "slug": "when-fear-becomes-theology",
+   "title": "When Fear Becomes Theology"
+  },
+  {
+   "slug": "when-patriotism-becomes-a-gospel",
+   "title": "When Patriotism Becomes a Gospel"
+  },
+  {
+   "slug": "how-christian-nationalism-rewrites",
+   "title": "How Christian Nationalism Rewrites Doctrine"
+  },
+  {
+   "slug": "when-fear-rewrites-theology",
+   "title": "When Fear Rewrites Theology"
+  },
+  {
+   "slug": "strongman-theology",
+   "title": "Why a Frightened Church Wants a King"
+  },
+  {
+   "slug": "what-christian-nationalism-is-and-is-not",
+   "title": "What Christian Nationalism Is and What It Is Not"
+  },
+  {
+   "slug": "when-god-bless-america-replaces-thy-kingdom-come",
+   "title": "When God Bless America Replaces Thy Kingdom Come"
+  },
+  {
+   "slug": "what-render-unto-caesar-actually-means",
+   "title": "What Did Jesus Mean by \"Render Unto Caesar\"?"
+  },
+  {
+   "slug": "when-the-pulpit-became-a-precinct",
+   "title": "When Your Church Becomes a Voting Bloc"
+  },
+  {
+   "slug": "when-the-church-married-empire",
+   "title": "When the Church Married Empire"
+  },
+  {
+   "slug": "the-end-of-home-field-advantage",
+   "title": "How Do You Share Your Faith in a Post-Christian America?"
+  },
+  {
+   "slug": "the-rise-of-the-nones",
+   "title": "Why Are People Leaving the Church?"
+  },
+  {
+   "slug": "what-a-christian-owes-the-city",
+   "title": "What Does It Mean to Seek the Welfare of the City?"
+  },
+  {
+   "slug": "the-persecution-we-invented",
+   "title": "Is the American Church Really Being Persecuted?"
+  },
+  {
+   "slug": "the-anabaptist-option",
+   "title": "Who Were the Anabaptists, and Why Do They Still Matter?"
+  },
+  {
+   "slug": "how-american-christianity-became-american",
+   "title": "How American Christianity Became American"
+  },
+  {
+   "slug": "when-politics-replaced-theology",
+   "title": "Where Did the Religious Right Come From?"
+  },
+  {
+   "slug": "where-church-was-silent-history-injustice-reckoning",
+   "title": "Where Was the Church During Slavery and Jim Crow?"
+  },
+  {
+   "slug": "doctrine-of-discovery",
+   "title": "What Is the Doctrine of Discovery?"
+  },
+  {
+   "slug": "black-church-prophetic-justice",
+   "title": "The Black Church and Prophetic Justice"
+  },
+  {
+   "slug": "prosperity-gospel-is-not-the-gospel",
+   "title": "What's Wrong with the Prosperity Gospel?"
+  },
+  {
+   "slug": "the-early-church-under-rome",
+   "title": "The Early Church Under Rome: Faith Without Power"
+  },
+  {
+   "slug": "the-first-christians-died-for-this",
+   "title": "Why Were the Early Christian Martyrs Willing to Die?"
+  },
+  {
+   "slug": "the-council-of-nicaea-what-was-decided-in-325",
+   "title": "What Was Decided at the Council of Nicaea?"
+  },
+  {
+   "slug": "why-people-fled-to-the-desert",
+   "title": "Why Did the Desert Fathers Leave Everything?"
+  },
+  {
+   "slug": "augustine-the-restless-man",
+   "title": "Augustine's Confessions and the Restless Heart"
+  },
+  {
+   "slug": "christianity-was-never-western",
+   "title": "Is Christianity a White Man's Religion?"
+  },
+  {
+   "slug": "women-in-church-history",
+   "title": "Women in Church History: The Voices They Silenced"
+  },
+  {
+   "slug": "the-crusades-what-actually-happened",
+   "title": "The Crusades: What Actually Happened"
+  },
+  {
+   "slug": "reformation-actually-about",
+   "title": "What Was the Reformation Actually About?"
+  },
+  {
+   "slug": "how-the-bible-gets-translated-by",
+   "title": "How the Bible Gets Translated by the Room You\u2019re In"
+  },
+  {
+   "slug": "how-american-individualism-distorts",
+   "title": "How American Individualism Distorts the Bible"
+  },
+  {
+   "slug": "the-bible-assumes-you-will-be-wrong",
+   "title": "The Bible Assumes You Will Be Wrong"
+  },
+  {
+   "slug": "what-the-original-audience-heard",
+   "title": "What the First Readers of the Bible Actually Heard"
+  },
+  {
+   "slug": "church-megaproject-widow-mite",
+   "title": "What Does the Widow's Mite Really Mean?"
+  },
+  {
+   "slug": "why-didnt-the-bible-ban-slavery",
+   "title": "Why Didn't the Bible Just Ban Slavery?"
+  },
+  {
+   "slug": "how-to-read-genesis-one",
+   "title": "How Should a Christian Read Genesis 1?"
+  },
+  {
+   "slug": "psalm-82-unjust-systems",
+   "title": "What Psalm 82 Says About Unjust Systems"
+  },
+  {
+   "slug": "women-and-leadership-church",
+   "title": "Can Women Be Pastors?"
+  },
+  {
+   "slug": "excavation-not-demolition",
+   "title": "Deconstructing Your Faith: What to Tear Down and What to Keep"
+  },
+  {
+   "slug": "why-trust-the-bible",
+   "title": "Can You Trust the Bible?"
+  },
+  {
+   "slug": "the-historical-jesus",
+   "title": "Was Jesus Real? What Historians Actually Know"
+  },
+  {
+   "slug": "did-the-resurrection-happen",
+   "title": "Did the Resurrection Actually Happen?"
+  },
+  {
+   "slug": "why-does-god-allow-suffering",
+   "title": "Why Does God Allow Suffering?"
+  },
+  {
+   "slug": "why-does-god-feel-far-away",
+   "title": "Why Does God Feel So Far Away?"
+  },
+  {
+   "slug": "can-you-be-good-without-god",
+   "title": "Can You Be Good Without God?"
+  },
+  {
+   "slug": "did-god-command-genocide",
+   "title": "Did God Command Genocide?"
+  },
+  {
+   "slug": "doubt-after-church-abuse",
+   "title": "Doubt After Being Abused by a Church Leader"
+  },
+  {
+   "slug": "covenant-vs-contract-what-marriage-is",
+   "title": "Is Marriage a Covenant or a Contract?"
+  },
+  {
+   "slug": "what-the-bible-says-about-submission",
+   "title": "What Does the Bible Say About Submission in Marriage?"
+  },
+  {
+   "slug": "what-fatherhood-requires",
+   "title": "What Does the Bible Say About Being a Father?"
+  },
+  {
+   "slug": "the-machine-that-forms-you",
+   "title": "What Is Your Phone Doing to Your Soul?"
+  },
+  {
+   "slug": "the-theology-of-saturday",
+   "title": "What Holy Saturday Teaches About Grief"
+  },
+  {
+   "slug": "baptists-and-the-wall-of-separation",
+   "title": "Why Baptists Built the Wall Between Church and State"
+  },
+  {
+   "slug": "what-romans-13-says",
+   "title": "What Romans 13 Actually Says"
+  },
+  {
+   "slug": "who-decided-what-books-are-in-the-bible",
+   "title": "Who Decided What Books Are in the Bible?"
+  },
+  {
+   "slug": "is-it-wrong-to-love-your-country",
+   "title": "Is It Wrong for a Christian to Love Their Country?"
+  },
+  {
+   "slug": "end-times-israel-and-american-politics",
+   "title": "End Times, Israel and American Politics"
+  },
+  {
+   "slug": "the-children-rome-threw-away",
+   "title": "What the First Christians Did About the Children Rome Threw Away"
+  },
+  {
+   "slug": "did-christianity-copy-pagan-myths",
+   "title": "Did Christianity Copy Pagan Myths?"
+  },
+  {
+   "slug": "was-america-founded-as-a-christian-nation",
+   "title": "Was America Founded as a Christian Nation?"
+  },
+  {
+   "slug": "what-post-christian-means",
+   "title": "What \"Post-Christian\" Actually Means"
+  }
+ ]
+}

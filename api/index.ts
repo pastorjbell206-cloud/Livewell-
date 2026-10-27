@@ -1122,7 +1122,7 @@ async function sitemap(_req: VercelRequest, res: VercelResponse) {
     const base = "https://www.livewellbyjamesbell.co";
     // Fallback sitemap only (vercel serves the committed file first). No
     // redirect sources here: a 301ing URL must never be advertised.
-    const staticPaths = ["/", "/writing", "/books", "/about", "/search", "/marriage", "/parenting", "/doubt", "/start", "/tools", "/membership", "/reading-paths", "/resources"];
+    const staticPaths = ["/", "/writing", "/books", "/about", "/search", "/start", "/tools", "/membership", "/resources"];
     let articles: any[] = [];
     try {
       articles = await withConn(async (c) => {

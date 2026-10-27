@@ -95,8 +95,6 @@ const HowToArticle = lazy(() => import("./pages/HowToArticle"));
 const LifeIndex = lazy(() => import("./pages/life/LifeIndex"));
 const LifeDomain = lazy(() => import("./pages/life/LifeDomain"));
 const WholeLifeAssessment = lazy(() => import("./pages/life/WholeLifeAssessment"));
-const Marriage = lazy(() => import("./pages/Marriage"));
-const Parenting = lazy(() => import("./pages/Parenting"));
 const Help = lazy(() => import("./pages/Help"));
 const CarePlan = lazy(() => import("./pages/plans/CarePlan"));
 const PlansIndex = lazy(() => import("./pages/plans/PlansIndex"));
@@ -118,6 +116,8 @@ const Family = lazy(() => import("./pages/Family"));
 const FamilyCatechism = lazy(() => import("./pages/FamilyCatechism"));
 const FamilyDevotions = lazy(() => import("./pages/FamilyDevotions"));
 const FamilyReadingPlans = lazy(() => import("./pages/FamilyReadingPlans"));
+const FamilyTonight = lazy(() => import("./pages/family/Tonight"));
+const FamilyDevotionPage = lazy(() => import("./pages/family/DevotionPage"));
 const TheologyMethodology = lazy(() => import("./pages/TheologyMethodology"));
 const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
@@ -165,14 +165,8 @@ const StudyBible = lazy(() => import("./pages/StudyBible"));
 const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
 const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
 const StudyBibleGuides = lazy(() => import("./pages/StudyBibleGuides"));
-const FaithCrisis = lazy(() => import("./pages/landing/FaithCrisis"));
-const MarriageCrisis = lazy(() => import("./pages/landing/MarriageCrisis"));
-const GriefLanding = lazy(() => import("./pages/landing/Grief"));
-const ParentingStruggles = lazy(() => import("./pages/landing/ParentingStruggles"));
-const Deconstruction = lazy(() => import("./pages/landing/Deconstruction"));
 const Answers = lazy(() => import("./pages/Answers"));
 const Assessments = lazy(() => import("./pages/Assessments"));
-const ChurchHurt = lazy(() => import("./pages/landing/ChurchHurt"));
 const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
 const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
 const FAQIsBibleHistoricallyAccurate = lazy(() => import("./pages/faq/IsBibleHistoricallyAccurate"));
@@ -269,11 +263,6 @@ function ToChurchHistoryRedirect() {
   useEffect(() => { navigate("/theology/history", { replace: true }); }, [navigate]);
   return null;
 }
-function ForFamiliesRedirect() {
-  const [, navigate] = useLocation();
-  useEffect(() => { navigate("/parenting", { replace: true }); }, [navigate]);
-  return null;
-}
 
 /**
  * Folded pages (the simplified site James approved on 2026-10-12). Each stub
@@ -305,6 +294,15 @@ const ToSubscribeRedirect = redirectTo("/subscribe");
 const ToSpeakingRedirect = redirectTo("/speaking");
 const ToAboutRedirect = redirectTo("/about");
 const ToLamentRedirect = redirectTo("/studyguides/lament");
+// The no-decision cleanup (U06, 2026-10-26): the pre-elevation family and
+// marriage hubs, and the six crisis landings that duplicated a Find Help page.
+const ToFamilyRedirect = redirectTo("/family");
+const ToHelpMarriageRedirect = redirectTo("/help/marriage");
+const ToHelpGriefRedirect = redirectTo("/help/grief");
+const ToHelpDoubtRedirect = redirectTo("/help/doubt");
+const ToHelpParentingRedirect = redirectTo("/help/parenting");
+const ToHelpDeconstructingRedirect = redirectTo("/help/deconstructing");
+const ToHelpChurchHurtRedirect = redirectTo("/help/church-hurt");
 
 function PageFallback() {
   return (
@@ -376,13 +374,15 @@ function Router() {
     <Suspense fallback={<PageFallback />}>
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/marriage" component={Marriage} />
+        <Route path="/marriage" component={ToHelpMarriageRedirect} />
         <Route path="/life/assessment" component={WholeLifeAssessment} />
         <Route path="/life/:slug" component={LifeDomain} />
         <Route path="/life" component={LifeIndex} />
         <Route path="/exile" component={ToAfterChristendomRedirect} />
-        <Route path="/parenting" component={Parenting} />
+        <Route path="/parenting" component={ToFamilyRedirect} />
         <Route path="/family/catechism" component={FamilyCatechism} />
+        <Route path="/family/tonight" component={FamilyTonight} />
+        <Route path="/family/devotions/:id" component={FamilyDevotionPage} />
         <Route path="/family/devotions" component={FamilyDevotions} />
         <Route path="/family/reading-plans" component={FamilyReadingPlans} />
         <Route path="/family" component={Family} />
@@ -479,7 +479,7 @@ function Router() {
         <Route path="/heaven-is-not-your-reward" component={ToBooksRedirect} />
         <Route path="/prayer-in-the-dark" component={ToBooksRedirect} />
         <Route path="/the-body-you-left" component={ToBooksRedirect} />
-        <Route path="/for-families" component={ForFamiliesRedirect} />
+        <Route path="/for-families" component={ToFamilyRedirect} />
         <Route path="/pillars" component={ToWritingRedirect} />
         <Route path="/living-well" component={ToWritingRedirect} />
         <Route path="/map" component={ToWritingRedirect} />
@@ -618,16 +618,16 @@ function Router() {
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />
         <Route path="/pastoral-burnout" component={PastorsMovedRedirect} />
-        <Route path="/faith-crisis" component={FaithCrisis} />
-        <Route path="/marriage-crisis" component={MarriageCrisis} />
-        <Route path="/grief" component={GriefLanding} />
-        <Route path="/parenting-help" component={ParentingStruggles} />
-        <Route path="/deconstruction" component={Deconstruction} />
+        <Route path="/faith-crisis" component={ToHelpDoubtRedirect} />
+        <Route path="/marriage-crisis" component={ToHelpMarriageRedirect} />
+        <Route path="/grief" component={ToHelpGriefRedirect} />
+        <Route path="/parenting-help" component={ToHelpParentingRedirect} />
+        <Route path="/deconstruction" component={ToHelpDeconstructingRedirect} />
         <Route path="/church-history" component={ToChurchHistoryRedirect} />
         <Route path="/historic-faith" component={ToStudyRedirect} />
         <Route path="/answers" component={Answers} />
         <Route path="/assessments" component={Assessments} />
-        <Route path="/church-hurt" component={ChurchHurt} />
+        <Route path="/church-hurt" component={ToHelpChurchHurtRedirect} />
         <Route path="/honest-questions" component={ToAnswersRedirect} />
         <Route path="/compare/catholic-vs-protestant" component={CatholicVsProtestant} />
         <Route path="/compare/calvinism-vs-arminianism" component={CalvinismVsArminianism} />

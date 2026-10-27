@@ -139,11 +139,6 @@
     ],
     "read": [
       {
-        "href": "/church-hurt",
-        "label": "Church Hurt: Resources for Survivors of Spiritual Abuse and Religious Trauma",
-        "kind": "Page"
-      },
-      {
         "href": "/resources/context/matthew-18-20-in-context",
         "label": "What Does ‘Where Two or Three Are Gathered’ Really Mean? Matthew 18 read whole, and why it is no rule that a harmed person must meet the one who harmed them",
         "kind": "Page"
@@ -215,7 +210,7 @@
     },
     {
       "section": "helping",
-      "note": "At the end of the part for leaders: a sentence of pastoral conviction from James, as a lead pastor and the founder of the Pastors Connection Network, on what a church owes someone who discloses abuse. If he wishes, he can also name organizations he trusts to train churches or to investigate independently (the /church-hurt page already lists GRACE), and any local counselors or survivor groups he would recommend (Grow prompt Section 12)."
+      "note": "At the end of the part for leaders: a sentence of pastoral conviction from James, as a lead pastor and the founder of the Pastors Connection Network, on what a church owes someone who discloses abuse. If he wishes, he can also name organizations he trusts to train churches or to investigate independently (the old /church-hurt landing listed GRACE; it now redirects to this page), and any local counselors or survivor groups he would recommend (Grow prompt Section 12)."
     }
   ],
   "sources": [

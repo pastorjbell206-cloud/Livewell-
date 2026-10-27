@@ -1,0 +1,1520 @@
+From 7871311aa43aaa1f03787839e8a07f3a531f0d1e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 23:55:08 +0000
+Subject: [PATCH 1/3] VerseRef and text-only chapter shards (U16)
+
+A Scripture reference becomes a door. VerseRef has two modes: link mode
+goes to the chapter in the Study Bible; sheet mode is a real link to the
+chapter that, on a plain click, opens the verses in the Sheet (U14), read
+from a text-only chapter shard, names the Berean Standard Bible with
+ScriptureNote, and offers "Open in the Study Bible". A reference the
+parser (U09) cannot read stays plain text.
+
+- scripts/build-bible-text.mjs and scripts/lib/bible-text.mjs write
+  client/public/bible/text/<book>/<n>.json (verse number and text; John 3
+  is 4.5 KB against 42 KB) from bible/ch; --check is the drift gate in CI.
+  The shards themselves are the next commit.
+- lib/scripture-find.ts finds references in running text and hands each
+  to the one parser; RefText and an in-house remark plugin in Markdown.tsx
+  (opt-in via verseRefs) make them live; Prose takes verseRefs too.
+- ScriptureRef now points at the Study Bible (link mode), not the Passage
+  Context tool, and makes each reference in a mixed field live.
+- Live references: context guides (body and key texts, sheet), creed
+  documents (intro, text, notes, sheet), care plans (sheet), family reading
+  plans (sheet), family catechism (link: the verse is printed beside it).
+- Tests: shard drift (server), finder, VerseRef, Markdown, ScriptureRef,
+  and the pages on real data, including John 3:16 in a context guide.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .github/workflows/ci.yml                     |   1 +
+ client/src/components/Markdown.tsx           |  69 +++-
+ client/src/components/ScriptureRef.tsx       |  38 +--
+ client/src/components/VerseRef.test.tsx      | 313 +++++++++++++++++++
+ client/src/components/VerseRef.tsx           | 177 +++++++++++
+ client/src/index.css                         |  17 +
+ client/src/lib/bible.ts                      |  15 +
+ client/src/lib/prose.tsx                     |  11 +-
+ client/src/lib/scripture-find.test.ts        | 109 +++++++
+ client/src/lib/scripture-find.ts             | 113 +++++++
+ client/src/lib/verse-text.ts                 |  52 +++
+ client/src/pages/FamilyCatechism.tsx         |   4 +-
+ client/src/pages/FamilyReadingPlans.tsx      |   4 +-
+ client/src/pages/plans/CarePlan.tsx          |  12 +-
+ client/src/pages/resources/ContextGuide.tsx  |   6 +-
+ client/src/pages/resources/CreedDocument.tsx |   8 +-
+ scripts/build-bible-text.mjs                 |  37 +++
+ scripts/build-bible.mjs                      |   3 +
+ scripts/lib/bible-text.mjs                   |  83 +++++
+ server/bible-text.test.ts                    |  91 ++++++
+ 20 files changed, 1123 insertions(+), 40 deletions(-)
+ create mode 100644 client/src/components/VerseRef.test.tsx
+ create mode 100644 client/src/components/VerseRef.tsx
+ create mode 100644 client/src/lib/scripture-find.test.ts
+ create mode 100644 client/src/lib/scripture-find.ts
+ create mode 100644 client/src/lib/verse-text.ts
+ create mode 100644 scripts/build-bible-text.mjs
+ create mode 100644 scripts/lib/bible-text.mjs
+ create mode 100644 server/bible-text.test.ts
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 1cdbdf82..136ee6a7 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -54,6 +54,7 @@ jobs:
+           node scripts/validate-verse-guides.mjs
+           pnpm exec tsx scripts/validate-catalogue.mjs
+           node scripts/validate-bible.mjs
++          node scripts/build-bible-text.mjs --check
+           node scripts/validate-bible-notes.mjs
+ 
+       - name: Test
+diff --git a/client/src/components/Markdown.tsx b/client/src/components/Markdown.tsx
+index cc40f1d5..28eb9fcc 100644
+--- a/client/src/components/Markdown.tsx
++++ b/client/src/components/Markdown.tsx
+@@ -9,20 +9,87 @@
+  * through lib/htmlToMarkdown.ts first.
+  * Typography comes from the surrounding scope (.article-body, .book-prose,
+  * .prose), never from this component.
++ *
++ * `verseRefs` turns the Scripture references in the text into VerseRef
++ * ("sheet" opens the verse over the page; "link" goes to the Study Bible).
++ * Off unless a page asks: a page that quotes the ESV uses "link" (master
++ * plan 2), and text already inside a link, code, or a heading is left alone.
+  */
++import { useMemo, type ReactNode } from "react";
+ import ReactMarkdown, { type Components } from "react-markdown";
+ import remarkGfm from "remark-gfm";
++import { VerseRef, type VerseRefMode } from "@/components/VerseRef";
++import { splitScriptureRefs } from "@/lib/scripture-find";
++
++/** The few mdast fields the plugin touches. */
++interface MdNode {
++  type: string;
++  value?: string;
++  children?: MdNode[];
++  data?: Record<string, unknown>;
++}
++
++/** Nodes whose text is not running prose: a reference there stays as written. */
++const LEAVE = new Set(["link", "linkReference", "definition", "heading", "code", "inlineCode", "html"]);
++
++/** Cut each prose text node at its references; a reference becomes a <verse-ref> element. */
++function markRefs(node: MdNode) {
++  if (!node.children) return;
++  const next: MdNode[] = [];
++  for (const child of node.children) {
++    if (child.type === "text" && child.value) {
++      const parts = splitScriptureRefs(child.value);
++      if (parts.length === 1 && typeof parts[0] === "string") {
++        next.push(child);
++        continue;
++      }
++      for (const part of parts) {
++        next.push(
++          typeof part === "string"
++            ? { type: "text", value: part }
++            : { type: "text", value: part.text, data: { hName: "verse-ref", hProperties: { reference: part.reference } } },
++        );
++      }
++      continue;
++    }
++    if (!LEAVE.has(child.type)) markRefs(child);
++    next.push(child);
++  }
++  node.children = next;
++}
++
++/** The in-house remark plugin: no dependency beyond the parser the site already has. */
++function remarkVerseRefs() {
++  return (tree: MdNode) => markRefs(tree);
++}
++
++const refNode = (mode: VerseRefMode) =>
++  function VerseRefNode({ reference, children }: { reference?: string; children?: ReactNode }) {
++    return (
++      <VerseRef reference={reference ?? ""} mode={mode}>
++        {children}
++      </VerseRef>
++    );
++  };
++const REF_NODES: Record<VerseRefMode, ReturnType<typeof refNode>> = { sheet: refNode("sheet"), link: refNode("link") };
+ 
+ export function Markdown({
+   children,
+   components,
++  verseRefs,
+ }: {
+   children: string;
+   /** Per-element overrides, same shape react-markdown takes. */
+   components?: Components;
++  /** Make Scripture references live, as a verse sheet or a link to the Study Bible. */
++  verseRefs?: VerseRefMode;
+ }) {
++  const all = useMemo(
++    () => (verseRefs ? ({ ...components, "verse-ref": REF_NODES[verseRefs] } as Components) : components),
++    [components, verseRefs],
++  );
+   return (
+-    <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
++    <ReactMarkdown remarkPlugins={verseRefs ? [remarkGfm, remarkVerseRefs] : [remarkGfm]} components={all}>
+       {children}
+     </ReactMarkdown>
+   );
+diff --git a/client/src/components/ScriptureRef.tsx b/client/src/components/ScriptureRef.tsx
+index 92b693c4..8e17822c 100644
+--- a/client/src/components/ScriptureRef.tsx
++++ b/client/src/components/ScriptureRef.tsx
+@@ -1,18 +1,17 @@
+ /**
+- * ScriptureRef — a Scripture citation that reads its own context.
++ * ScriptureRef: a Scripture citation held as data (a doctrine's key texts, a
++ * passage under discussion) rendered as a link into the Study Bible chapter
++ * (master plan 7.1; it used to open the Passage Context tool).
+  *
+- * Renders a reference (e.g. "John 3:16", "Romans 13:1-7") as a quiet link into
+- * the Passage Context tool, which already resolves `?ref=` deep links and shows
+- * the passage's background, flow, and the debates around it. A dotted mustard
+- * underline signals it is live; the title gives the hover hint. No network
+- * fetch here — the tool does the work — so it never fails or half-loads.
+- *
+- * Use it anywhere a Scripture reference is rendered as structured data (a
+- * doctrine's key texts, a question's passages, a topic's proof texts) to turn
+- * every citation into a door to its context instead of dead text.
++ * The field is not always one clean reference: "Jonah 3:10 with Jeremiah
++ * 18:7-10" makes both references live, "Acts 2 (Pentecost and Peter's
++ * sermon)" links the reference and keeps the note as text, and a book outside
++ * the Protestant canon ("Wisdom 2:12-20") stays plain text. Link mode, so the
++ * page's own translation is never set beside another.
+  */
+-import { Link } from "wouter";
+ import type { CSSProperties } from "react";
++import { RefText, VerseRef } from "@/components/VerseRef";
++import { parseScriptureRef } from "@/lib/scripture-ref";
+ 
+ export function ScriptureRef({
+   reference,
+@@ -23,20 +22,11 @@ export function ScriptureRef({
+ }) {
+   const ref = (reference ?? "").trim();
+   if (!ref) return null;
++  if (parseScriptureRef(ref)) return <VerseRef reference={ref} mode="link" style={style} />;
+   return (
+-    <Link
+-      href={`/theology/passage?ref=${encodeURIComponent(ref)}`}
+-      title={`Read ${ref} in context`}
+-      style={{
+-        color: "inherit",
+-        borderBottom: "1px dotted var(--mustard)",
+-        textDecoration: "none",
+-        cursor: "help",
+-        ...style,
+-      }}
+-    >
+-      {ref}
+-    </Link>
++    <span style={style}>
++      <RefText text={ref} mode="link" />
++    </span>
+   );
+ }
+ 
+diff --git a/client/src/components/VerseRef.test.tsx b/client/src/components/VerseRef.test.tsx
+new file mode 100644
+index 00000000..cb623e10
+--- /dev/null
++++ b/client/src/components/VerseRef.test.tsx
+@@ -0,0 +1,313 @@
++/**
++ * VerseRef contract (master plan 7.1, U16). Link mode goes straight to the
++ * Study Bible chapter. Sheet mode is a real link to the chapter that, on a
++ * plain click, opens the verses in a Sheet read from the text-only shard (not
++ * the full chapter), names the Berean Standard Bible with ScriptureNote, and
++ * offers "Open in the Study Bible". A reference the parser cannot read is
++ * plain text. The shards and the context guide page are the real ones.
++ */
++import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
++import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
++import userEvent from "@testing-library/user-event";
++import { Router } from "wouter";
++import { memoryLocation } from "wouter/memory-location";
++import fs from "node:fs";
++import path from "node:path";
++import type { ReactNode } from "react";
++import { TestProviders } from "@/test/harness";
++import { RefText, VerseRef } from "./VerseRef";
++import { ScriptureRef } from "./ScriptureRef";
++import { Markdown } from "./Markdown";
++import ContextGuide from "@/pages/resources/ContextGuide";
++import CreedDocument from "@/pages/resources/CreedDocument";
++import CarePlan from "@/pages/plans/CarePlan";
++import FamilyCatechism from "@/pages/FamilyCatechism";
++import FamilyReadingPlans from "@/pages/FamilyReadingPlans";
++
++const PUBLIC = path.resolve(__dirname, "../../public");
++const json = (body: string, status = 200) => new Response(body, { status, headers: { "Content-Type": "application/json" } });
++
++/** Paths the page asked for, so a test can say what was (and was not) downloaded. */
++let asked: string[] = [];
++/** Paths that answer 503 until a test clears them. */
++let down = new Set<string>();
++/** Extra files a test serves (a fixture guide). */
++let extra: Record<string, unknown> = {};
++
++beforeEach(() => {
++  asked = [];
++  down = new Set();
++  extra = {};
++  vi.stubGlobal(
++    "fetch",
++    vi.fn(async (input: RequestInfo | URL) => {
++      const url = new URL(String(input), "http://localhost");
++      asked.push(url.pathname);
++      if (down.has(url.pathname)) return json("{}", 503);
++      if (url.pathname in extra) return json(JSON.stringify(extra[url.pathname]));
++      const file = path.join(PUBLIC, url.pathname);
++      if (/^\/(bible|context|plans|creeds)\/|^\/family-[\w-]+\.json$/.test(url.pathname) && fs.existsSync(file)) return json(fs.readFileSync(file, "utf8"));
++      return json("{}", 404);
++    }),
++  );
++});
++afterEach(() => vi.unstubAllGlobals());
++
++function renderAt(ui: ReactNode, at = "/resources/context/x") {
++  const loc = memoryLocation({ path: at, record: true });
++  const view = render(<Router hook={loc.hook}>{ui}</Router>);
++  return { ...view, history: loc.history };
++}
++
++describe("VerseRef, link mode", () => {
++  it("links to the chapter in the Study Bible, at the verse", () => {
++    renderAt(<VerseRef reference="John 3:16" mode="link" />);
++    expect(screen.getByRole("link", { name: "John 3:16" })).toHaveAttribute("href", "/study/bible/john/3#v16");
++  });
++
++  it("links a whole chapter to its top", () => {
++    renderAt(<VerseRef reference="Psalm 23" mode="link">the shepherd psalm</VerseRef>);
++    expect(screen.getByRole("link", { name: "the shepherd psalm" })).toHaveAttribute("href", "/study/bible/psalms/23");
++  });
++});
++
++describe("VerseRef, an unreadable reference", () => {
++  it("renders as plain text in both modes", () => {
++    const { container } = renderAt(
++      <p>
++        <VerseRef reference="Wisdom 2:12-20" /> and <VerseRef reference="John 22:1" mode="link" /> and <VerseRef reference="" />
++      </p>,
++    );
++    expect(container.querySelector("a")).toBeNull();
++    expect(container).toHaveTextContent("Wisdom 2:12-20 and John 22:1 and");
++  });
++});
++
++describe("VerseRef, sheet mode", () => {
++  it("is a real link to the chapter that says it opens a dialog", () => {
++    renderAt(<VerseRef reference="John 3:16" />);
++    const link = screen.getByRole("link", { name: "John 3:16" });
++    expect(link).toHaveAttribute("href", "/study/bible/john/3#v16");
++    expect(link).toHaveAttribute("aria-haspopup", "dialog");
++    expect(screen.queryByRole("dialog")).toBeNull();
++    expect(asked).toEqual([]);
++  });
++
++  it("opens the verse from the text shard, names the BSB, and offers the Study Bible", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="John 3:16" />);
++    await user.click(screen.getByRole("link", { name: "John 3:16" }));
++    const dialog = await screen.findByRole("dialog", { name: "John 3:16" });
++    expect(dialog).toHaveAccessibleDescription("Berean Standard Bible");
++    expect(await within(dialog).findByText(/For God so loved the world that He gave His one and only Son/)).toBeInTheDocument();
++    expect(within(dialog).getByText(/Scripture quoted from the Berean Standard Bible/)).toBeInTheDocument();
++    expect(within(dialog).getByRole("link", { name: "Open in the Study Bible" })).toHaveAttribute("href", "/study/bible/john/3#v16");
++    // One small shard, never the 42 KB chapter with its original words.
++    expect(asked).toEqual(["/bible/text/john/3.json"]);
++    expect(within(dialog).queryByText(/Now there was a man of the Pharisees/)).toBeNull();
++  });
++
++  it("closes on Escape and gives focus back to the reference", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="Philippians 4:6-7" />);
++    const link = screen.getByRole("link", { name: "Philippians 4:6-7" });
++    await user.click(link);
++    await screen.findByRole("dialog", { name: "Philippians 4:6–7" });
++    await user.keyboard("{Escape}");
++    await waitFor(() => expect(screen.queryByRole("dialog")).toBeNull());
++    expect(screen.getByRole("link", { name: "Philippians 4:6-7" })).toHaveFocus();
++  });
++
++  it("leaves a modified click to the browser, as a link", () => {
++    const stop = (e: Event) => e.preventDefault();
++    document.addEventListener("click", stop);
++    renderAt(<VerseRef reference="John 3:16" />);
++    fireEvent.click(screen.getByRole("link", { name: "John 3:16" }), { ctrlKey: true });
++    fireEvent.click(screen.getByRole("link", { name: "John 3:16" }), { metaKey: true });
++    document.removeEventListener("click", stop);
++    expect(screen.queryByRole("dialog")).toBeNull();
++  });
++
++  it("shows a passage across two chapters with each chapter named", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="Romans 7:24-8:1" />);
++    await user.click(screen.getByRole("link", { name: "Romans 7:24-8:1" }));
++    const dialog = await screen.findByRole("dialog", { name: "Romans 7:24–8:1" });
++    expect(await within(dialog).findByText("Chapter 7")).toBeInTheDocument();
++    expect(within(dialog).getByText("Chapter 8")).toBeInTheDocument();
++    expect(within(dialog).getByText(/What a wretched man I am/)).toBeInTheDocument();
++    expect(within(dialog).getByText(/Therefore, there is now no condemnation/)).toBeInTheDocument();
++    expect(within(dialog).queryByText(/I do not understand what I do/)).toBeNull();
++    expect(asked.sort()).toEqual(["/bible/text/romans/7.json", "/bible/text/romans/8.json"]);
++  });
++
++  it("marks a verse the earliest manuscripts leave out", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="Mark 7:15-16" />);
++    await user.click(screen.getByRole("link", { name: "Mark 7:15-16" }));
++    expect(await screen.findByText("[Not in the earliest manuscripts]")).toBeInTheDocument();
++  });
++
++  it("sends a passage longer than three chapters to the Study Bible without fetching it", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="Genesis 1-4" />);
++    await user.click(screen.getByRole("link", { name: "Genesis 1-4" }));
++    const dialog = await screen.findByRole("dialog", { name: "Genesis 1–4" });
++    expect(await within(dialog).findByText(/runs from chapter 1 to chapter 4\. Read it whole in the Study Bible\./)).toBeInTheDocument();
++    expect(within(dialog).getByRole("link", { name: "Open in the Study Bible" })).toHaveAttribute("href", "/study/bible/genesis/1");
++    expect(asked).toEqual([]);
++  });
++
++  it("says so when the chapter has no such verse", async () => {
++    const user = userEvent.setup();
++    renderAt(<VerseRef reference="John 3:99" />);
++    await user.click(screen.getByRole("link", { name: "John 3:99" }));
++    expect(await screen.findByText("This chapter has no verse by that number.")).toBeInTheDocument();
++  });
++
++  it("offers a retry when the shard does not arrive, and then shows the verse", async () => {
++    const user = userEvent.setup();
++    down.add("/bible/text/jude/1.json");
++    renderAt(<VerseRef reference="Jude 24" />);
++    await user.click(screen.getByRole("link", { name: "Jude 24" }));
++    const dialog = await screen.findByRole("dialog", { name: "Jude 1:24" });
++    expect(await within(dialog).findByRole("alert")).toHaveTextContent("The passage didn't load.");
++    down.clear();
++    await user.click(within(dialog).getByRole("button", { name: /try again/i }));
++    expect(await within(dialog).findByText(/Now to Him who is able to keep you from stumbling/)).toBeInTheDocument();
++  });
++});
++
++describe("RefText", () => {
++  it("makes each reference in a string live and keeps the rest as written", () => {
++    const { container } = renderAt(
++      <p>
++        <RefText text="Read Psalm 136:1-9 and 23-26 tonight, then Wisdom 2:12 if you like." />
++      </p>,
++    );
++    const links = screen.getAllByRole("link");
++    expect(links.map((a) => [a.textContent, a.getAttribute("href")])).toEqual([["Psalm 136:1-9 and 23-26", "/study/bible/psalms/136#v1"]]);
++    expect(container).toHaveTextContent("Read Psalm 136:1-9 and 23-26 tonight, then Wisdom 2:12 if you like.");
++  });
++});
++
++describe("Markdown verseRefs", () => {
++  const md = "# Psalm 23\n\nRead **Romans 8:28** and [John 3:16](/somewhere), then Isaiah 40:31.";
++
++  it("is off unless the page asks", () => {
++    renderAt(<Markdown>{md}</Markdown>);
++    expect(screen.getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/somewhere"]);
++  });
++
++  it("turns references in prose into verse sheets, leaving links and headings alone", () => {
++    const { container } = renderAt(<Markdown verseRefs="sheet">{md}</Markdown>);
++    const refs = Array.from(container.querySelectorAll("a.st-verseref"));
++    expect(refs.map((a) => [a.textContent, a.getAttribute("href"), a.getAttribute("aria-haspopup")])).toEqual([
++      ["Romans 8:28", "/study/bible/romans/8#v28", "dialog"],
++      ["Isaiah 40:31", "/study/bible/isaiah/40#v31", "dialog"],
++    ]);
++    expect(refs[0].closest("strong")).not.toBeNull();
++    expect(screen.getByRole("link", { name: "John 3:16" })).toHaveAttribute("href", "/somewhere");
++    expect(screen.getByRole("heading", { level: 1, name: "Psalm 23" }).querySelector("a")).toBeNull();
++  });
++
++  it("links straight to the Study Bible in link mode", () => {
++    const { container } = renderAt(<Markdown verseRefs="link">{md}</Markdown>);
++    const refs = Array.from(container.querySelectorAll("a.st-verseref"));
++    expect(refs.map((a) => a.getAttribute("aria-haspopup"))).toEqual([null, null]);
++    expect(refs.map((a) => a.getAttribute("href"))).toEqual(["/study/bible/romans/8#v28", "/study/bible/isaiah/40#v31"]);
++  });
++});
++
++describe("ScriptureRef", () => {
++  it("points at the Study Bible, not the Passage Context tool", () => {
++    renderAt(<ScriptureRef reference="Romans 13:1-7" />);
++    expect(screen.getByRole("link", { name: "Romans 13:1-7" })).toHaveAttribute("href", "/study/bible/romans/13#v1");
++  });
++
++  it("makes each reference in a mixed field live and keeps the note", () => {
++    const { container } = renderAt(
++      <>
++        <ScriptureRef reference="Jonah 3:10 with Jeremiah 18:7-10" />
++        <ScriptureRef reference="Acts 2 (Pentecost and Peter's sermon)" />
++        <ScriptureRef reference="Wisdom 2:12-20" />
++      </>,
++    );
++    expect(screen.getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([
++      "/study/bible/jonah/3#v10",
++      "/study/bible/jeremiah/18#v7",
++      "/study/bible/acts/2",
++    ]);
++    expect(container).toHaveTextContent("Acts 2 (Pentecost and Peter's sermon)");
++    expect(container).toHaveTextContent("Wisdom 2:12-20");
++    expect(container.querySelector('a[href^="/theology/passage"]')).toBeNull();
++  });
++});
++
++describe("a context guide (the U16 done-when)", () => {
++  it("opens John 3:16 in its prose as a verse sheet with the translation named, then the Study Bible", async () => {
++    const user = userEvent.setup();
++    extra["/context/guides/a-guide.json"] = {
++      slug: "a-guide",
++      title: "A guide",
++      subtitle: "A fixture guide for the verse sheet.",
++      kicker: "Test",
++      group: "Test",
++      sections: [{ id: "one", title: "The verse", body: "Few verses are quoted more than John 3:16, and few are read with less of John 3 around them." }],
++      keyTexts: ["John 3:1-21"],
++    };
++    const { history } = renderAt(
++      <TestProviders>
++        <ContextGuide />
++      </TestProviders>,
++      "/resources/context/a-guide",
++    );
++    const ref = await screen.findByRole("link", { name: "John 3:16" });
++    expect(screen.getByRole("link", { name: "John 3" })).toHaveAttribute("href", "/study/bible/john/3");
++    expect(screen.getByRole("link", { name: "John 3:1-21" })).toHaveAttribute("aria-haspopup", "dialog");
++    await user.click(ref);
++    const dialog = await screen.findByRole("dialog", { name: "John 3:16" });
++    expect(await within(dialog).findByText(/For God so loved the world/)).toBeInTheDocument();
++    expect(within(dialog).getByText(/Scripture quoted from the Berean Standard Bible/)).toBeInTheDocument();
++    await user.click(within(dialog).getByRole("link", { name: "Open in the Study Bible" }));
++    await waitFor(() => expect(screen.queryByRole("dialog")).toBeNull());
++    expect(history[history.length - 1]).toMatch(/^\/study\/bible\/john\/3(#v16)?$/);
++  });
++});
++
++describe("the other pages that gain live references (real data)", () => {
++  const page = (ui: ReactNode, at: string) => renderAt(<TestProviders>{ui}</TestProviders>, at);
++  const sheetLink = async (name: string) => {
++    const a = await screen.findByRole("link", { name });
++    expect(a).toHaveAttribute("aria-haspopup", "dialog");
++    return a;
++  };
++
++  it("a care plan: the references in a week open verse sheets", async () => {
++    page(<CarePlan />, "/plans/grief");
++    expect(await sheetLink("John 11:35")).toHaveAttribute("href", "/study/bible/john/11#v35");
++  });
++
++  it("a creed: the references in its notes open verse sheets", async () => {
++    page(<CreedDocument />, "/resources/creeds/apostles-creed");
++    expect(await sheetLink("1 Peter 3:19")).toHaveAttribute("href", "/study/bible/1-peter/3#v19");
++  });
++
++  it("the reading plans: each day's passage opens in a verse sheet", async () => {
++    const user = userEvent.setup();
++    page(<FamilyReadingPlans />, "/family/reading-plans");
++    await user.click(await screen.findByRole("button", { name: /The Life of Jesus/ }));
++    expect(await sheetLink("Mark 1:1-13")).toHaveAttribute("href", "/study/bible/mark/1#v1");
++  });
++
++  it("the catechism: the verse is printed, so its reference links to the chapter", async () => {
++    const user = userEvent.setup();
++    page(<FamilyCatechism />, "/family/catechism");
++    // Question 1 in the list (the "this week" card above may hold another).
++    const buttons = await screen.findAllByRole("button", { name: /Who made you\?/ });
++    await user.click(buttons[buttons.length - 1]);
++    const link = await screen.findByRole("link", { name: "Genesis 1:1" });
++    expect(link).toHaveAttribute("href", "/study/bible/genesis/1#v1");
++    expect(link).not.toHaveAttribute("aria-haspopup");
++  });
++});
+diff --git a/client/src/components/VerseRef.tsx b/client/src/components/VerseRef.tsx
+new file mode 100644
+index 00000000..f50f3703
+--- /dev/null
++++ b/client/src/components/VerseRef.tsx
+@@ -0,0 +1,177 @@
++/**
++ * VerseRef: a Scripture reference that is a door (master plan 7.1).
++ *
++ *   <VerseRef reference="John 3:16" />               sheet: the verse opens over the page
++ *   <VerseRef reference="John 3:16" mode="link" />   link: straight to the Study Bible chapter
++ *   <RefText text={paragraph} />                     every reference in a string made live
++ *
++ * Sheet mode shows the verses in a Sheet, read from the text-only chapter
++ * shards (/bible/text/, a few KB), names the translation with ScriptureNote,
++ * and offers "Open in the Study Bible". The trigger is a real link to the
++ * chapter, so a new tab, a crawler, or a reader without script still lands
++ * there. Use sheet mode only on pages that quote nothing or quote the BSB; on
++ * a page that quotes the ESV, use link mode, so one page never shows two
++ * translations (master plan 2).
++ *
++ * A reference the site's parser cannot read (lib/scripture-ref.ts) renders as
++ * plain text: never a link to nowhere.
++ */
++import { Fragment, useEffect, useMemo, useState, type CSSProperties, type MouseEvent, type ReactNode } from "react";
++import { Link } from "wouter";
++import { Sheet } from "@/components/study/Sheet";
++import ScriptureNote from "@/components/ScriptureNote";
++import { LoadFailed } from "@/components/LoadFailed";
++import { formatRef, parseScriptureRef, refHref, type ScriptureRef } from "@/lib/scripture-ref";
++import { splitScriptureRefs } from "@/lib/scripture-find";
++import { loadPassage, type PassageVerse } from "@/lib/verse-text";
++
++export type VerseRefMode = "sheet" | "link";
++
++export function VerseRef({
++  reference,
++  children,
++  mode = "sheet",
++  style,
++}: {
++  /** The reference as the parser should read it ("John 3:16", "Ps 23"). */
++  reference: string;
++  /** What the reader sees; the reference itself when omitted. */
++  children?: ReactNode;
++  mode?: VerseRefMode;
++  style?: CSSProperties;
++}) {
++  const ref = useMemo(() => parseScriptureRef(reference ?? ""), [reference]);
++  const label = children ?? reference;
++  if (!ref) return <>{label}</>;
++  const href = refHref(ref) ?? "/study";
++  // A short reference never breaks across lines ("1 Peter / 3:19"); a long list may.
++  const className = typeof label === "string" && label.length <= 24 ? "st-verseref st-verseref--keep" : "st-verseref";
++  if (mode === "link") {
++    return (
++      <Link href={href} className={className} style={style}>
++        {label}
++      </Link>
++    );
++  }
++  return <SheetRef parsed={ref} href={href} label={label} className={className} style={style} />;
++}
++
++/** A string with every Scripture reference in it made live; the rest stays as written. */
++export function RefText({ text, mode = "sheet" }: { text: string; mode?: VerseRefMode }) {
++  const parts = useMemo(() => splitScriptureRefs(text ?? ""), [text]);
++  return (
++    <>
++      {parts.map((p, i) =>
++        typeof p === "string" ? (
++          <Fragment key={i}>{p}</Fragment>
++        ) : (
++          <VerseRef key={i} reference={p.reference} mode={mode}>
++            {p.text}
++          </VerseRef>
++        ),
++      )}
++    </>
++  );
++}
++
++function SheetRef({
++  parsed,
++  href,
++  label,
++  className,
++  style,
++}: {
++  parsed: ScriptureRef;
++  href: string;
++  label: ReactNode;
++  className: string;
++  style?: CSSProperties;
++}) {
++  const [open, setOpen] = useState(false);
++  const onClick = (e: MouseEvent<HTMLAnchorElement>) => {
++    // A new tab, a new window, or a download goes to the Study Bible as a link would.
++    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
++    e.preventDefault();
++    // Safari does not focus a link on click; the sheet returns focus to what had it.
++    e.currentTarget.focus();
++    setOpen(true);
++  };
++  return (
++    <>
++      <a href={href} className={className} aria-haspopup="dialog" onClick={onClick} style={style}>
++        {label}
++      </a>
++      <Sheet
++        open={open}
++        onOpenChange={setOpen}
++        title={formatRef(parsed)}
++        description="Berean Standard Bible"
++        footer={
++          <Link href={href} className="st-action" onClick={() => setOpen(false)}>
++            Open in the Study Bible
++          </Link>
++        }
++      >
++        <Passage parsed={parsed} />
++      </Sheet>
++    </>
++  );
++}
++
++/** The sheet's body: loading, failed (with a retry), or the verses and the translation's name. */
++function Passage({ parsed }: { parsed: ScriptureRef }) {
++  const [nonce, setNonce] = useState(0);
++  const [result, setResult] = useState<{ nonce: number; verses: PassageVerse[] | null } | null>(null);
++  const [failedAt, setFailedAt] = useState<number | null>(null);
++
++  useEffect(() => {
++    let live = true;
++    loadPassage(parsed)
++      .then((verses) => { if (live) setResult({ nonce, verses }); })
++      .catch(() => { if (live) setFailedAt(nonce); });
++    return () => { live = false; };
++  }, [parsed, nonce]);
++
++  if (failedAt === nonce) return <LoadFailed what="The passage" onRetry={() => setNonce((n) => n + 1)} />;
++  if (!result || result.nonce !== nonce) return <p className="st-passage__status" role="status">Loading the passage…</p>;
++  const { verses } = result;
++  if (verses === null) {
++    const first = parsed.parts[0].c1;
++    const last = parsed.parts[parsed.parts.length - 1].c2;
++    return (
++      <p className="st-passage__status">
++        This passage runs from chapter {first} to chapter {last}. Read it whole in the Study Bible.
++      </p>
++    );
++  }
++  if (!verses.length) return <p className="st-passage__status">This chapter has no verse by that number.</p>;
++
++  // Grouped by chapter; a chapter label only when the passage crosses one.
++  const groups: { c: number; verses: PassageVerse[] }[] = [];
++  for (const v of verses) {
++    const last = groups[groups.length - 1];
++    if (last && last.c === v.c) last.verses.push(v);
++    else groups.push({ c: v.c, verses: [v] });
++  }
++  const labelled = new Set(groups.map((g) => g.c)).size > 1;
++  return (
++    <>
++      {groups.map((g, i) => (
++        <div key={`${g.c}-${i}`} className="st-passage">
++          {labelled && <p className="st-passage__chapter">Chapter {g.c}</p>}
++          <p className="st-passage__text">
++            {g.verses.map((v) => (
++              <Fragment key={v.v}>
++                <sup className="st-passage__n">{v.v}</sup>
++                {v.t || <span className="st-passage__later">[Not in the earliest manuscripts]</span>}{" "}
++              </Fragment>
++            ))}
++          </p>
++        </div>
++      ))}
++      <ScriptureNote rendering="bsb" />
++    </>
++  );
++}
++
++export default VerseRef;
+diff --git a/client/src/index.css b/client/src/index.css
+index 1d02f9a6..f37ab545 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -597,6 +597,23 @@ img{display:block;max-width:100%}
+ .st-stepper__next{justify-self:end}
+ .st-stepper__position{font-family:var(--U);font-size:14px;color:var(--ink-muted);font-variant-numeric:tabular-nums;margin:0;text-align:center}
+ 
++/* VerseRef: a reference in running text, in the text's own color with a
++ * dotted mustard underline (a page link is solid), so it reads as a door
++ * without shouting. It works on cream and on charcoal alike. Inside an
++ * article body it drops the body's solid link rule. */
++.st-verseref{color:inherit;text-decoration:underline dotted var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.22em;cursor:pointer;transition:text-decoration-color .2s var(--motion-ease)}
++.st-verseref:hover{text-decoration-style:solid}
++.st-verseref--keep{white-space:nowrap}
++.article-body a.st-verseref{color:inherit;border-bottom:0}
++.article-body a.st-verseref:hover{background:none}
++/* The verses in the sheet: serif, numbered quietly, one paragraph a chapter. */
++.st-passage + .st-passage{margin-top:var(--s-3)}
++.st-passage__chapter{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 8px}
++.st-passage__text{font-family:var(--F);font-size:1.2rem;line-height:1.7;color:var(--ink);margin:0 0 var(--s-3)}
++.st-passage__n{font-family:var(--U);font-size:.6em;font-weight:600;color:var(--mustard-text);line-height:0;margin-right:.3em}
++.st-passage__later{font-family:var(--U);font-size:.8em;font-style:italic;color:var(--ink-muted)}
++.st-passage__status{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
++
+ /* CARD */
+ .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}
+ .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+diff --git a/client/src/lib/bible.ts b/client/src/lib/bible.ts
+index 0f31900d..107ee692 100644
+--- a/client/src/lib/bible.ts
++++ b/client/src/lib/bible.ts
+@@ -63,8 +63,23 @@ const isChapter = (x: unknown): x is BibleChapter =>
+   typeof x === "object" && x !== null && Array.isArray((x as BibleChapter).verses);
+ const isRecord = <T,>(x: unknown): x is Record<string, T> => typeof x === "object" && x !== null && !Array.isArray(x);
+ 
++/**
++ * A chapter's text alone: verse numbers and the BSB words, without the
++ * original words and cross-references (scripts/build-bible-text.mjs). The
++ * verse sheet reads these: John 3 is about 4 KB here and 42 KB in full.
++ */
++export interface BibleTextChapter {
++  book: string;
++  chapter: number;
++  verses: Pick<BibleVerse, "v" | "t" | "later">[];
++}
++const isTextChapter = (x: unknown): x is BibleTextChapter =>
++  isChapter(x) && x.verses.every((v) => typeof v?.v === "number" && typeof v?.t === "string");
++
+ export const fetchBooks = () => cached("/bible/books.json", isArray);
+ export const fetchChapter = (slug: string, chapter: number) => cached(`/bible/ch/${slug}/${chapter}.json`, isChapter);
++export const fetchChapterText = (slug: string, chapter: number) =>
++  cached(`/bible/text/${slug}/${chapter}.json`, isTextChapter);
+ export const fetchMorph = (lang: "H" | "G") => cached(`/bible/morph/${lang}.json`, isRecord<string>);
+ 
+ export const langOf = (strong: string): "H" | "G" | null =>
+diff --git a/client/src/lib/prose.tsx b/client/src/lib/prose.tsx
+index afd6ae77..4ce71150 100644
+--- a/client/src/lib/prose.tsx
++++ b/client/src/lib/prose.tsx
+@@ -6,9 +6,11 @@
+  * index.css) plus `.prose-section`, a modifier that suppresses the lead-article
+  * drop cap — a drop cap belongs to the top of an article, not to every section
+  * block. Plain-text fields are split into readable paragraphs (honoring real
+- * breaks, else grouping sentences); pass `markdown` to render Markdown instead.
++ * breaks, else grouping sentences); pass `markdown` to render Markdown instead,
++ * and `verseRefs` to make the Scripture references in it live (VerseRef).
+  */
+ import { Markdown } from "@/components/Markdown";
++import { RefText, type VerseRefMode } from "@/components/VerseRef";
+ 
+ /**
+  * Turn a prose field into readable paragraphs. Honors explicit blank-line
+@@ -39,16 +41,19 @@ export function Prose({
+   text,
+   markdown = false,
+   className = "",
++  verseRefs,
+ }: {
+   text: string;
+   markdown?: boolean;
+   className?: string;
++  /** "sheet" on pages that quote the BSB or nothing; "link" on pages that quote the ESV. */
++  verseRefs?: VerseRefMode;
+ }) {
+   return (
+     <div className={`article-body prose-section ${className}`.trim()}>
+       {markdown
+-        ? <Markdown>{text}</Markdown>
+-        : toParagraphs(text).map((p, i) => <p key={i}>{p}</p>)}
++        ? <Markdown verseRefs={verseRefs}>{text}</Markdown>
++        : toParagraphs(text).map((p, i) => <p key={i}>{verseRefs ? <RefText text={p} mode={verseRefs} /> : p}</p>)}
+     </div>
+   );
+ }
+diff --git a/client/src/lib/scripture-find.test.ts b/client/src/lib/scripture-find.test.ts
+new file mode 100644
+index 00000000..800e8929
+--- /dev/null
++++ b/client/src/lib/scripture-find.test.ts
+@@ -0,0 +1,109 @@
++/**
++ * The reference finder proposes, the parser decides: references in running
++ * text are found where they are written, read as the parser reads them, and
++ * prose that only looks like a reference stays prose.
++ */
++import { describe, it, expect } from "vitest";
++import fs from "node:fs";
++import path from "node:path";
++import { findScriptureRefs, splitScriptureRefs } from "./scripture-find";
++import { formatRef } from "./scripture-ref";
++
++const texts = (s: string) => findScriptureRefs(s).map((f) => f.text);
++const read = (s: string) => findScriptureRefs(s).map((f) => formatRef(f.ref));
++
++describe("findScriptureRefs", () => {
++  it("finds references in a sentence, as written", () => {
++    const s = "In the Berean Standard Bible it reads: “if My people ... heal their land” (2 Chronicles 7:14). Compare John 3:16-17 and Romans 8.";
++    expect(texts(s)).toEqual(["2 Chronicles 7:14", "John 3:16-17", "Romans 8"]);
++    const [first] = findScriptureRefs(s);
++    expect(s.slice(first.start, first.end)).toBe("2 Chronicles 7:14");
++    expect(first.ref.book.slug).toBe("2-chronicles");
++  });
++
++  it("reads ranges, lists, chapter ranges, and semicolons", () => {
++    expect(read("Psalm 71:9, 17-18 says it twice.")).toEqual(["Psalm 71:9, 17–18"]);
++    expect(read("See Romans 7:24-8:1 for the turn.")).toEqual(["Romans 7:24–8:1"]);
++    expect(read("Read Matthew 5–7 in one sitting.")).toEqual(["Matthew 5–7"]);
++    expect(read("(Romans 5:1; 8:28)")).toEqual(["Romans 5:1; 8:28"]);
++    expect(read("(Deuteronomy 11:16-17; 28:21-24, 38)")).toEqual(["Deuteronomy 11:16–17; 28:21–24, 38"]);
++  });
++
++  it("joins one 'and' in the same book, and never across books", () => {
++    expect(read("Malachi 3:1-4 and 4:5-6")).toEqual(["Malachi 3:1–4; 4:5–6"]);
++    expect(read("Psalm 136:1-9 and 23-26")).toEqual(["Psalm 136:1–9, 23–26"]);
++    expect(read("the genealogies of Genesis 5 and 11")).toEqual(["Genesis 5; 11"]);
++    expect(texts("Genesis 1 and 2 Samuel 7 tell it")).toEqual(["Genesis 1", "2 Samuel 7"]);
++    expect(texts("John 1:1 and John 1:14")).toEqual(["John 1:1", "John 1:14"]);
++  });
++
++  it("does not swallow the numeral of the next book", () => {
++    expect(texts("John 11:17-27, 1 Corinthians 15:50-58, Psalm 23")).toEqual(["John 11:17-27", "1 Corinthians 15:50-58", "Psalm 23"]);
++    expect(texts("Romans 8:28, 2 Cor 4:17")).toEqual(["Romans 8:28", "2 Cor 4:17"]);
++  });
++
++  it("knows numbered books written every way", () => {
++    expect(read("1 John 4:8, 1John 4:19, I John 1:9, First Corinthians 13, II Kings 22")).toEqual([
++      "1 John 4:8",
++      "1 John 4:19",
++      "1 John 1:9",
++      "1 Corinthians 13",
++      "2 Kings 22",
++    ]);
++  });
++
++  it("takes a short form only with a chapter and verse", () => {
++    expect(read("Rom 8:28, Ps 23:1, 1 Cor. 13:4, Jn 3:16, Isa 53:5")).toEqual([
++      "Romans 8:28",
++      "Psalm 23:1",
++      "1 Corinthians 13:4",
++      "John 3:16",
++      "Isaiah 53:5",
++    ]);
++    expect(texts("Gen 1 and Ex 3 are not references here, and Num 4 is a number.")).toEqual([]);
++  });
++
++  it("reads a one-chapter book by verse", () => {
++    expect(read("Jude 3 and Philemon 15-16")).toEqual(["Jude 1:3", "Philemon 1:15–16"]);
++  });
++
++  it("lets a reference end at a colon before a quotation", () => {
++    expect(texts("the father in Proverbs 4:26: “Make straight paths”")).toEqual(["Proverbs 4:26"]);
++  });
++
++  it("leaves prose, dates, and books outside the canon alone", () => {
++    expect(texts("In 325 the bishops met; by 451 Chalcedon had spoken.")).toEqual([]);
++    expect(texts("Chapter 11 of the confession, Article 6, Question 2")).toEqual([]);
++    expect(texts("Wisdom 2:12-20 and 2 Maccabees 12:39-45")).toEqual([]);
++    expect(texts("Psalm 151 and John 22:1 do not exist")).toEqual([]);
++    expect(texts("Johnson 3:16 and Marks 2:1")).toEqual([]);
++    expect(texts("lowercase john 3:16 is a search query, not prose")).toEqual([]);
++    expect(texts("Psalm 23:1as")).toEqual([]);
++  });
++
++  it("finds every reference the context guides' key texts hold", () => {
++    const dir = path.resolve(__dirname, "../../public/context/guides");
++    let n = 0;
++    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
++      const g = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as { keyTexts?: string[] };
++      for (const t of g.keyTexts ?? []) {
++        n++;
++        expect(texts(t), `${f}: ${t}`).toEqual([t]);
++      }
++    }
++    expect(n).toBeGreaterThan(40);
++  });
++});
++
++describe("splitScriptureRefs", () => {
++  it("returns the text around each reference, in order, losing nothing", () => {
++    const s = "Paul wrote Romans 13:1-7 to a church in Rome.";
++    const parts = splitScriptureRefs(s);
++    expect(parts.map((p) => (typeof p === "string" ? p : `[${p.text}]`)).join("")).toBe("Paul wrote [Romans 13:1-7] to a church in Rome.");
++  });
++
++  it("returns the text alone when it holds no reference", () => {
++    expect(splitScriptureRefs("No verses here.")).toEqual(["No verses here."]);
++    expect(splitScriptureRefs("")).toEqual([]);
++  });
++});
+diff --git a/client/src/lib/scripture-find.ts b/client/src/lib/scripture-find.ts
+new file mode 100644
+index 00000000..3d70bf0a
+--- /dev/null
++++ b/client/src/lib/scripture-find.ts
+@@ -0,0 +1,113 @@
++/**
++ * Finding Scripture references inside running text, so a page can make them
++ * live (VerseRef, master plan 7.1): "as Paul says in Romans 8:28, ..." ->
++ * "as Paul says in " + [Romans 8:28] + ", ...".
++ *
++ * The finder only proposes; the site's one parser decides. Every candidate
++ * goes through parseScriptureRef, and anything it cannot read stays text. To
++ * keep ordinary prose from turning into links, a candidate needs a capitalized
++ * book name, and a short form ("Rom", "1 Cor.", "Ps") needs a chapter and
++ * verse ("Rom 8:28"); a full name may stand with a chapter alone ("Romans 8",
++ * "Psalm 23", "Matthew 5-7"). It reads verse ranges and lists ("Psalm 71:9,
++ * 17-18"), cross-chapter ranges ("Romans 7:24-8:1"), chapters joined by
++ * semicolons ("Romans 5:1; 8:28"), and one "and" in the same book ("Malachi
++ * 3:1-4 and 4:5-6", "Genesis 5 and 11").
++ */
++import BOOK_TABLE from "@/data/scripture-books.json";
++import { parseScriptureRef, type ScriptureRef } from "@/lib/scripture-ref";
++
++/** A stretch of text that reads as a reference: where it is, what it says, and what it names. */
++export interface FoundRef {
++  start: number;
++  end: number;
++  /** The words as written ("Rom. 8:28"). */
++  text: string;
++  /** What the parser was given ("Rom. 8:28", or "Malachi 3:1-4; 4:5-6" for "Malachi 3:1-4 and 4:5-6"). */
++  reference: string;
++  ref: ScriptureRef;
++}
++
++type Row = { name: string; code: string; aliases: string[] };
++
++const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
++/** "1 Corinthians" -> "Corinthians"; the numeral is matched separately. */
++const base = (name: string) => name.replace(/^[1-3]\s?/, "");
++const capitalized = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
++const alternation = (names: Set<string>) =>
++  Array.from(names)
++    .sort((a, b) => b.length - a.length)
++    .map((n) => escape(n).replace(/ /g, "\\s+"))
++    .join("|");
++
++const FULL = new Set<string>(["Psalm", "Song of Songs"]);
++const SHORT = new Set<string>();
++for (const row of BOOK_TABLE as Row[]) {
++  FULL.add(base(row.name));
++  for (const a of [row.code, ...row.aliases]) {
++    const b = capitalized(base(a));
++    if (b.length > 1) SHORT.add(b);
++  }
++}
++FULL.forEach((f) => SHORT.delete(f));
++
++const N = "\\d{1,3}";
++const DASH = "\\s?[-‐‑‒–—]\\s?";
++const VERSE = `${N}[a-c]?`;
++const SPAN = `${VERSE}(?:${DASH}(?:${N}:)?${VERSE})?`;
++/** A verse list goes on only while each item is a number that is not the start of the next reference ("2 Cor"). */
++const MORE = `(?:,\\s?${SPAN}(?![\\d:])(?!\\s?[A-Z]))*`;
++const CV = `${N}:${SPAN}${MORE}(?:;\\s?${N}:${SPAN}${MORE})*`;
++const C = `${N}(?:${DASH}${N})?`;
++const PREFIX = "(?:[1-3]\\s?|(?:I{1,3}|First|Second|Third)\\s)";
++/** Nothing word-like may run on from the end of a reference ("Proverbs 4:26: “Make ...” is fine). */
++const END = "(?![A-Za-z0-9]|:\\d)";
++/** "and 4:5-6", "and 23-26", "and 11" (never "and 2 Samuel"). */
++const AND = `\\s+(?:and|&)\\s+(${N}:${SPAN}|${C})(?![\\d:])(?!\\s?[A-Z])`;
++
++const FULL_RE = `\\b(${PREFIX}?(?:${alternation(FULL)}))\\s(${CV}|${C})${END}`;
++const SHORT_RE = `\\b(${PREFIX}?(?:${alternation(SHORT)})\\.?)\\s?(${CV})${END}`;
++const FIND = new RegExp(`${FULL_RE}|${SHORT_RE}`, "g");
++const AND_RE = new RegExp(`^${AND}`);
++
++/** Every reference in a stretch of text, in order; a candidate the parser cannot read is left out. */
++export function findScriptureRefs(text: string): FoundRef[] {
++  if (typeof text !== "string" || !/\d/.test(text)) return [];
++  const out: FoundRef[] = [];
++  FIND.lastIndex = 0;
++  for (let m = FIND.exec(text); m; m = FIND.exec(text)) {
++    const book = m[1] ?? m[3];
++    const loc = m[2] ?? m[4];
++    const reference = `${book} ${loc}`.replace(/\s+/g, " ");
++    const ref = parseScriptureRef(reference);
++    if (!ref) continue;
++    let found: FoundRef = { start: m.index, end: m.index + m[0].length, text: m[0], reference, ref };
++    // One "and" in the same book: verses after a verse ("23:1-9 and 23-26"), otherwise a new chapter.
++    const and = text.slice(found.end).match(AND_RE);
++    if (and) {
++      const joined = `${reference}${!and[1].includes(":") && loc.includes(":") ? ", " : "; "}${and[1]}`;
++      const both = parseScriptureRef(joined);
++      if (both) {
++        const end = found.end + and[0].length;
++        found = { start: found.start, end, text: text.slice(found.start, end), reference: joined, ref: both };
++      }
++    }
++    out.push(found);
++    FIND.lastIndex = found.end;
++  }
++  return out;
++}
++
++/** Text cut at its references: plain strings between found references, in order. */
++export function splitScriptureRefs(text: string): (string | FoundRef)[] {
++  const found = findScriptureRefs(text);
++  if (!found.length) return text ? [text] : [];
++  const parts: (string | FoundRef)[] = [];
++  let at = 0;
++  for (const f of found) {
++    if (f.start > at) parts.push(text.slice(at, f.start));
++    parts.push(f);
++    at = f.end;
++  }
++  if (at < text.length) parts.push(text.slice(at));
++  return parts;
++}
+diff --git a/client/src/lib/verse-text.ts b/client/src/lib/verse-text.ts
+new file mode 100644
+index 00000000..51d0085c
+--- /dev/null
++++ b/client/src/lib/verse-text.ts
+@@ -0,0 +1,52 @@
++/**
++ * The words a Scripture reference names, for the verse sheet (VerseRef): read
++ * from the text-only chapter shards, never the full Study Bible chapters. The
++ * same selection as passage() in scripts/lib/bsb.mjs.
++ */
++import { fetchChapterText, type BibleTextChapter } from "@/lib/bible";
++import type { ScriptureRef } from "@/lib/scripture-ref";
++
++/** A sheet shows a passage of up to this many chapters; a longer one is read in the Study Bible. */
++export const SHEET_MAX_CHAPTERS = 3;
++
++export interface PassageVerse {
++  c: number;
++  v: number;
++  t: string;
++  /** The critical text omits this verse (its text is empty). */
++  later?: boolean;
++}
++
++/** The chapters a reference touches, in reading order, each once. */
++export function chaptersOf(ref: ScriptureRef): number[] {
++  const out: number[] = [];
++  for (const p of ref.parts) for (let c = p.c1; c <= p.c2; c++) if (!out.includes(c)) out.push(c);
++  return out;
++}
++
++/** The verses a reference names, in order, from its chapters' text. */
++export function selectVerses(ref: ScriptureRef, chapters: Map<number, BibleTextChapter>): PassageVerse[] {
++  const out: PassageVerse[] = [];
++  for (const p of ref.parts) {
++    for (let c = p.c1; c <= p.c2; c++) {
++      for (const v of chapters.get(c)?.verses ?? []) {
++        const after = c > p.c1 || v.v >= p.v1;
++        const before = c < p.c2 || v.v <= p.v2;
++        if (after && before) out.push(v.later ? { c, v: v.v, t: v.t, later: true } : { c, v: v.v, t: v.t });
++      }
++    }
++  }
++  return out;
++}
++
++/**
++ * Fetch and select a reference's verses; null when the passage is longer than
++ * a sheet should hold. An empty list means the chapter has no such verse
++ * ("John 3:99" parses, since the parser does not know verse counts).
++ */
++export async function loadPassage(ref: ScriptureRef): Promise<PassageVerse[] | null> {
++  const list = chaptersOf(ref);
++  if (list.length > SHEET_MAX_CHAPTERS) return null;
++  const texts = await Promise.all(list.map((c) => fetchChapterText(ref.book.slug, c)));
++  return selectVerses(ref, new Map(list.map((c, i) => [c, texts[i]])));
++}
+diff --git a/client/src/pages/FamilyCatechism.tsx b/client/src/pages/FamilyCatechism.tsx
+index 43afb3ac..7a8c108f 100644
+--- a/client/src/pages/FamilyCatechism.tsx
++++ b/client/src/pages/FamilyCatechism.tsx
+@@ -13,6 +13,7 @@ import { ChevronDown } from "lucide-react";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import ScriptureNote from "@/components/ScriptureNote";
++import { VerseRef } from "@/components/VerseRef";
+ import LoadFailed from "@/components/LoadFailed";
+ import { fetchJson } from "@/lib/fetch-json";
+ import { catechismWeekIndex } from "@/lib/familyCatechism";
+@@ -60,7 +61,8 @@ function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned }:
+             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "4px" }}>{e.kidsAnswer}</p>
+           </div>
+           <div style={{ marginBottom: "16px" }}>
+-            <span className="eyebrow">{e.scripture}</span>
++            {/* The verse is printed below it, so the reference goes to its chapter. */}
++            <span className="eyebrow"><VerseRef reference={e.scripture} mode="link" /></span>
+             <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", fontStyle: "italic", marginTop: "4px" }}>{e.scriptureText}</p>
+           </div>
+           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: e.prayer ? "16px" : 0 }}>{e.commentary}</p>
+diff --git a/client/src/pages/FamilyReadingPlans.tsx b/client/src/pages/FamilyReadingPlans.tsx
+index 89d91ba2..1da4fc9a 100644
+--- a/client/src/pages/FamilyReadingPlans.tsx
++++ b/client/src/pages/FamilyReadingPlans.tsx
+@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import LoadFailed from "@/components/LoadFailed";
++import { RefText } from "@/components/VerseRef";
+ import { fetchJson } from "@/lib/fetch-json";
+ 
+ interface Day { day: number; passage: string; prompt: string; }
+@@ -102,7 +103,8 @@ export default function FamilyReadingPlans() {
+                           {isDone(`${plan.id}:${d.day}`) ? `✓ Day ${d.day}` : `Day ${d.day}`}
+                         </button>
+                         <span>
+-                          <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}>{d.passage}</span>
++                          {/* The page quotes nothing, so the day's passage opens in a verse sheet. */}
++                          <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)" }}><RefText text={d.passage} /></span>
+                           <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "2px" }}>{d.prompt}</span>
+                         </span>
+                       </div>
+diff --git a/client/src/pages/plans/CarePlan.tsx b/client/src/pages/plans/CarePlan.tsx
+index 0ca2beb8..06249982 100644
+--- a/client/src/pages/plans/CarePlan.tsx
++++ b/client/src/pages/plans/CarePlan.tsx
+@@ -13,6 +13,7 @@ import { SEOMeta } from "@/components/SEOMeta";
+ import { CrisisHelp } from "@/components/CrisisHelp";
+ import { RemindMe } from "@/components/RemindMe";
+ import { SAVE_FAILED, TakeItWithYou } from "@/components/TakeItWithYou";
++import { RefText } from "@/components/VerseRef";
+ import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+ import { ArrowDown, BookOpen, Wrench, PenLine, Check, RotateCcw, Printer } from "lucide-react";
+ 
+@@ -128,11 +129,11 @@ export default function CarePlan() {
+             </p>
+           )}
+           {data && data.intro.split("\n\n").map((p, i) => (
+-            <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "12px" }}>{p}</p>
++            <p key={i} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "12px" }}><RefText text={p} /></p>
+           ))}
+           {/* When to get more help: first, not after week eight. */}
+           {data?.careNote && (
+-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", margin: "4px 0 12px", paddingLeft: "12px", borderLeft: "2px solid var(--mustard)" }}>{data.careNote}</p>
++            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", margin: "4px 0 12px", paddingLeft: "12px", borderLeft: "2px solid var(--mustard)" }}><RefText text={data.careNote} /></p>
+           )}
+           {data && !progress && (
+             <button
+@@ -221,16 +222,17 @@ export default function CarePlan() {
+                       </button>
+                     )}
+                   </div>
+-                  <p style={{ ...body, color: "var(--ink-muted)", marginBottom: "12px", maxWidth: "68ch" }}>{w.why}</p>
++                  {/* The plans quote the BSB, so a reference opens its verses in a sheet. */}
++                  <p style={{ ...body, color: "var(--ink-muted)", marginBottom: "12px", maxWidth: "68ch" }}><RefText text={w.why} /></p>
+                   <div style={lbl}>This week's practice</div>
+-                  <p style={{ ...body, marginBottom: "14px", maxWidth: "68ch" }}>{w.practice}</p>
++                  <p style={{ ...body, marginBottom: "14px", maxWidth: "68ch" }}><RefText text={w.practice} /></p>
+                   <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(240px, 100%), 1fr))", gap: "10px" }}>
+                     <WeekLink href={w.read.href}><BookOpen size={15} /> {w.read.label}</WeekLink>
+                     <WeekLink href={w.tool.href}><Wrench size={15} /> {w.tool.label}</WeekLink>
+                   </div>
+                   <div style={{ marginTop: "14px", borderLeft: "2px solid rgba(20,17,12,0.12)", paddingLeft: "12px" }}>
+                     <div style={{ ...lbl, display: "flex", alignItems: "center", gap: "6px" }}><PenLine size={12} /> Reflect</div>
+-                    <p style={{ ...body, fontStyle: "italic", color: "var(--ink-muted)", margin: 0 }}>{w.reflection}</p>
++                    <p style={{ ...body, fontStyle: "italic", color: "var(--ink-muted)", margin: 0 }}><RefText text={w.reflection} /></p>
+                   </div>
+                 </div>
+               );
+diff --git a/client/src/pages/resources/ContextGuide.tsx b/client/src/pages/resources/ContextGuide.tsx
+index 04bec90f..64d3b521 100644
+--- a/client/src/pages/resources/ContextGuide.tsx
++++ b/client/src/pages/resources/ContextGuide.tsx
+@@ -12,6 +12,7 @@ import { Prose } from "@/lib/prose";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import PageEndNav from "@/components/PageEndNav";
+ import { TakeItWithYou } from "@/components/TakeItWithYou";
++import { VerseRef } from "@/components/VerseRef";
+ 
+ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+ 
+@@ -86,7 +87,8 @@ export default function ContextGuide() {
+           <div style={wrap}>
+             {s.kicker && <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{s.kicker}</div>}
+             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.1, marginBottom: "var(--s-3)" }}>{s.title}</h2>
+-            <Prose text={s.body} />
++            {/* The guides quote the BSB or nothing, so a reference opens its verses in a sheet. */}
++            <Prose text={s.body} verseRefs="sheet" />
+           </div>
+         </section>
+       ))}
+@@ -97,7 +99,7 @@ export default function ContextGuide() {
+             {data.keyTexts?.length ? (
+               <div>
+                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Key texts</div>
+-                {data.keyTexts.map((t, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.6, color: "rgba(245,240,230,0.9)", marginBottom: "8px" }}>{t}</p>)}
++                {data.keyTexts.map((t, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.6, color: "rgba(245,240,230,0.9)", marginBottom: "8px" }}><VerseRef reference={t} /></p>)}
+               </div>
+             ) : null}
+             {data.sources?.length ? (
+diff --git a/client/src/pages/resources/CreedDocument.tsx b/client/src/pages/resources/CreedDocument.tsx
+index d023663e..2e3f8448 100644
+--- a/client/src/pages/resources/CreedDocument.tsx
++++ b/client/src/pages/resources/CreedDocument.tsx
+@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
+ import { Prose } from "@/lib/prose";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import PageEndNav from "@/components/PageEndNav";
++import { RefText } from "@/components/VerseRef";
+ 
+ const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
+ 
+@@ -55,7 +56,8 @@ export default function CreedDocument() {
+         <>
+           <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+             <div style={wrap}>
+-              <Prose text={data.intro} />
++              {/* These pages quote no translation, so a reference opens its verses in a sheet. */}
++              <Prose text={data.intro} verseRefs="sheet" />
+             </div>
+           </section>
+ 
+@@ -63,7 +65,7 @@ export default function CreedDocument() {
+             <div style={wrap}>
+               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "var(--s-3)" }}>The text</div>
+               {data.text.split("\n\n").map((p, i) => (
+-                <p key={i} style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.7, color: "var(--ink)", maxWidth: "62ch", marginBottom: "18px" }}>{p}</p>
++                <p key={i} style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.7, color: "var(--ink)", maxWidth: "62ch", marginBottom: "18px" }}><RefText text={p} /></p>
+               ))}
+             </div>
+           </section>
+@@ -75,7 +77,7 @@ export default function CreedDocument() {
+                 {data.annotations.map((a, i) => (
+                   <div key={i} style={{ borderLeft: "2px solid var(--mustard)", paddingLeft: "16px", marginBottom: "var(--s-3)" }}>
+                     <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontStyle: "italic", color: "var(--ink)", marginBottom: "6px" }}>{a.phrase}</div>
+-                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0 }}>{a.note}</p>
++                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0 }}><RefText text={a.note} /></p>
+                   </div>
+                 ))}
+               </div>
+diff --git a/scripts/build-bible-text.mjs b/scripts/build-bible-text.mjs
+new file mode 100644
+index 00000000..33b2d965
+--- /dev/null
++++ b/scripts/build-bible-text.mjs
+@@ -0,0 +1,37 @@
++#!/usr/bin/env node
++/**
++ * build-bible-text.mjs
++ *
++ * Writes the text-only chapter shards (client/public/bible/text/<book>/<n>.json:
++ * verse numbers and the Berean Standard Bible text) from the Study Bible's
++ * chapter files (client/public/bible/ch/). The verse sheet (VerseRef) reads a
++ * shard instead of the full chapter, which also carries the original words.
++ * Run it after scripts/build-bible.mjs rebuilds the chapters:
++ *
++ *   node scripts/build-bible-text.mjs           write the shards
++ *   node scripts/build-bible-text.mjs --check   exit 1 if regenerating would change any shard (CI)
++ */
++import { OUT_DIR, ROOT, shardDrift, writeShards } from "./lib/bible-text.mjs";
++import path from "node:path";
++
++const rel = path.relative(ROOT, OUT_DIR);
++
++if (process.argv.includes("--check")) {
++  const { count, stale, missing, extra } = shardDrift();
++  const problems = [
++    ...stale.map((f) => `${f} differs from its chapter`),
++    ...missing.map((f) => `${f} is missing`),
++    ...extra.map((f) => `${f} has no chapter behind it`),
++  ];
++  if (problems.length) {
++    console.error(`[bible-text] ${problems.length} of the shards in ${rel} are out of date:`);
++    for (const p of problems.slice(0, 20)) console.error(`  - ${p}`);
++    if (problems.length > 20) console.error(`  ... and ${problems.length - 20} more`);
++    console.error("Run: node scripts/build-bible-text.mjs");
++    process.exit(1);
++  }
++  console.log(`[bible-text] ok: ${count} text shards match their chapters`);
++} else {
++  const { count, written, removed } = writeShards();
++  console.log(`[bible-text] ${count} shards in ${rel}: ${written} written, ${removed} removed`);
++}
+diff --git a/scripts/build-bible.mjs b/scripts/build-bible.mjs
+index b647e0c6..5ed1ee37 100644
+--- a/scripts/build-bible.mjs
++++ b/scripts/build-bible.mjs
+@@ -19,6 +19,9 @@
+  *   bible/lex/<H|G>/<bucket>.json         lexicon shards (250 numbers each) + occurrence counts
+  *   bible/morph/<H|G>.json                grammar code -> plain-language expansion
+  *
++ * Then run scripts/build-bible-text.mjs: it writes the text-only shards
++ * (bible/text/) the verse sheet reads, and CI fails until it has.
++ *
+  * Word tuple in a chapter file: [original, transliteration, gloss, strong, grammar, editions?]
+  * (editions only on Greek words that differ between the major editions).
+  */
+diff --git a/scripts/lib/bible-text.mjs b/scripts/lib/bible-text.mjs
+new file mode 100644
+index 00000000..0291cdc2
+--- /dev/null
++++ b/scripts/lib/bible-text.mjs
+@@ -0,0 +1,83 @@
++/**
++ * bible-text.mjs: the text-only chapter shards the verse sheet reads.
++ *
++ * A Study Bible chapter file (client/public/bible/ch/<book>/<n>.json) carries
++ * every verse's original-language words and cross-references; John 3 is about
++ * 42 KB. A verse sheet needs only the verse numbers and the English text, so
++ * each chapter gets a shard at client/public/bible/text/<book>/<n>.json:
++ *
++ *   { "book": "Jhn", "chapter": 3, "verses": [{ "v": 1, "t": "Now there was ..." }, ...] }
++ *
++ * A verse the critical text omits keeps its empty text and `"later": true`,
++ * as in the chapter file. The shards are generated, never edited by hand:
++ * scripts/build-bible-text.mjs writes them, and its --check (in CI) fails when
++ * regenerating them would change anything.
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { fileURLToPath } from "node:url";
++
++export const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "../..");
++export const SRC_DIR = path.join(ROOT, "client/public/bible/ch");
++export const OUT_DIR = path.join(ROOT, "client/public/bible/text");
++
++/** One chapter file's text-only shard, as the file is written. */
++export function renderShard(chapter) {
++  const verses = chapter.verses.map((v) => (v.later ? { v: v.v, t: v.t, later: true } : { v: v.v, t: v.t }));
++  return `${JSON.stringify({ book: chapter.book, chapter: chapter.chapter, verses })}\n`;
++}
++
++const jsonFiles = (dir) => (fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith(".json")) : []);
++const dirs = (dir) =>
++  fs.existsSync(dir) ? fs.readdirSync(dir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name) : [];
++
++/** Every shard the chapter files call for: "<book>/<n>.json" -> its contents. */
++export function expectedShards(srcDir = SRC_DIR) {
++  const out = new Map();
++  for (const book of dirs(srcDir).sort()) {
++    for (const f of jsonFiles(path.join(srcDir, book))) {
++      const chapter = JSON.parse(fs.readFileSync(path.join(srcDir, book, f), "utf8"));
++      out.set(`${book}/${f}`, renderShard(chapter));
++    }
++  }
++  return out;
++}
++
++/** The shards on disk now: "<book>/<n>.json" -> its contents. */
++function currentShards(outDir) {
++  const out = new Map();
++  for (const book of dirs(outDir)) {
++    for (const f of jsonFiles(path.join(outDir, book))) out.set(`${book}/${f}`, fs.readFileSync(path.join(outDir, book, f), "utf8"));
++  }
++  return out;
++}
++
++/** What regenerating would change: shards that differ, are missing, or have no chapter behind them. */
++export function shardDrift({ srcDir = SRC_DIR, outDir = OUT_DIR } = {}) {
++  const want = expectedShards(srcDir);
++  const have = currentShards(outDir);
++  const stale = [];
++  const missing = [];
++  for (const [rel, text] of want) {
++    if (!have.has(rel)) missing.push(rel);
++    else if (have.get(rel) !== text) stale.push(rel);
++  }
++  const extra = [...have.keys()].filter((rel) => !want.has(rel));
++  return { count: want.size, stale, missing, extra };
++}
++
++/** Write every shard and remove any without a chapter behind it. */
++export function writeShards({ srcDir = SRC_DIR, outDir = OUT_DIR } = {}) {
++  const want = expectedShards(srcDir);
++  const have = currentShards(outDir);
++  let written = 0;
++  for (const [rel, text] of want) {
++    if (have.get(rel) === text) continue;
++    fs.mkdirSync(path.join(outDir, path.dirname(rel)), { recursive: true });
++    fs.writeFileSync(path.join(outDir, rel), text);
++    written++;
++  }
++  const removed = [...have.keys()].filter((rel) => !want.has(rel));
++  for (const rel of removed) fs.rmSync(path.join(outDir, rel));
++  return { count: want.size, written, removed: removed.length };
++}
+diff --git a/server/bible-text.test.ts b/server/bible-text.test.ts
+new file mode 100644
+index 00000000..9626b408
+--- /dev/null
++++ b/server/bible-text.test.ts
+@@ -0,0 +1,91 @@
++/**
++ * The text-only chapter shards (client/public/bible/text/, read by the verse
++ * sheet) are generated from the Study Bible's chapter files and committed. The
++ * drift check in CI (scripts/build-bible-text.mjs --check) passes on the shards
++ * as committed and fails when a shard differs from its chapter, is missing, or
++ * has no chapter behind it.
++ */
++import { describe, it, expect, beforeEach, afterEach } from "vitest";
++import { spawnSync } from "node:child_process";
++import fs from "node:fs";
++import os from "node:os";
++import path from "node:path";
++import { OUT_DIR, SRC_DIR, renderShard, shardDrift, writeShards } from "../scripts/lib/bible-text.mjs";
++
++const ROOT = path.resolve(import.meta.dirname, "..");
++const readJson = (p: string) => JSON.parse(fs.readFileSync(p, "utf8"));
++
++let tmp = "";
++let src = "";
++let out = "";
++
++beforeEach(() => {
++  tmp = fs.mkdtempSync(path.join(os.tmpdir(), "bible-text-"));
++  src = path.join(tmp, "ch");
++  out = path.join(tmp, "text");
++  for (const [book, n] of [["john", 3], ["jude", 1], ["mark", 7]] as const) {
++    fs.mkdirSync(path.join(src, book), { recursive: true });
++    fs.copyFileSync(path.join(SRC_DIR, book, `${n}.json`), path.join(src, book, `${n}.json`));
++  }
++});
++
++afterEach(() => {
++  if (tmp) fs.rmSync(tmp, { recursive: true, force: true });
++});
++
++describe("text-only chapter shards", () => {
++  it("as committed, regenerating them changes nothing", () => {
++    const run = spawnSync(process.execPath, [path.join(ROOT, "scripts/build-bible-text.mjs"), "--check"], { cwd: ROOT, encoding: "utf8" });
++    expect(run.status, run.stderr).toBe(0);
++    expect(run.stdout).toMatch(/1189 text shards match/);
++  });
++
++  it("hold each verse's number and text, and nothing else", () => {
++    const chapter = readJson(path.join(SRC_DIR, "john/3.json"));
++    const shard = readJson(path.join(OUT_DIR, "john/3.json"));
++    expect(shard.book).toBe("Jhn");
++    expect(shard.chapter).toBe(3);
++    expect(shard.verses).toEqual(chapter.verses.map((v: { v: number; t: string }) => ({ v: v.v, t: v.t })));
++    expect(shard.verses[15].t).toMatch(/^For God so loved the world/);
++    // A tenth of the chapter file: five references cost about 20 KB, not 200.
++    expect(fs.statSync(path.join(OUT_DIR, "john/3.json")).size).toBeLessThan(fs.statSync(path.join(SRC_DIR, "john/3.json")).size / 5);
++  });
++
++  it("keep the mark on a verse the critical text omits", () => {
++    const shard = JSON.parse(renderShard(readJson(path.join(SRC_DIR, "mark/7.json"))));
++    expect(shard.verses.find((v: { v: number }) => v.v === 16)).toEqual({ v: 16, t: "", later: true });
++  });
++
++  it("are written for every chapter and then pass the check", () => {
++    expect(shardDrift({ srcDir: src, outDir: out }).missing).toHaveLength(3);
++    expect(writeShards({ srcDir: src, outDir: out })).toEqual({ count: 3, written: 3, removed: 0 });
++    expect(shardDrift({ srcDir: src, outDir: out })).toEqual({ count: 3, stale: [], missing: [], extra: [] });
++    expect(writeShards({ srcDir: src, outDir: out }).written).toBe(0);
++  });
++
++  it("fail the check when a shard is edited by hand, deleted, or orphaned", () => {
++    writeShards({ srcDir: src, outDir: out });
++    const shard = readJson(path.join(out, "john/3.json"));
++    shard.verses[15].t = "For God so loved the world.";
++    fs.writeFileSync(path.join(out, "john/3.json"), JSON.stringify(shard));
++    fs.rmSync(path.join(out, "jude/1.json"));
++    fs.mkdirSync(path.join(out, "tobit"));
++    fs.writeFileSync(path.join(out, "tobit/1.json"), "{}");
++    expect(shardDrift({ srcDir: src, outDir: out })).toEqual({
++      count: 3,
++      stale: ["john/3.json"],
++      missing: ["jude/1.json"],
++      extra: ["tobit/1.json"],
++    });
++    expect(writeShards({ srcDir: src, outDir: out })).toEqual({ count: 3, written: 2, removed: 1 });
++    expect(shardDrift({ srcDir: src, outDir: out }).stale).toEqual([]);
++  });
++
++  it("fail the check when a chapter changes and its shard is not rebuilt", () => {
++    writeShards({ srcDir: src, outDir: out });
++    const chapter = readJson(path.join(src, "mark/7.json"));
++    chapter.verses[0].t += " (revised)";
++    fs.writeFileSync(path.join(src, "mark/7.json"), JSON.stringify(chapter));
++    expect(shardDrift({ srcDir: src, outDir: out }).stale).toEqual(["mark/7.json"]);
++  });
++});
+-- 
+2.43.0
+

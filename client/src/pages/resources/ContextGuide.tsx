@@ -12,6 +12,7 @@ import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
 import { TakeItWithYou } from "@/components/TakeItWithYou";
+import { VerseRef } from "@/components/VerseRef";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
@@ -86,7 +87,8 @@ export default function ContextGuide() {
           <div style={wrap}>
             {s.kicker && <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{s.kicker}</div>}
             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.1, marginBottom: "var(--s-3)" }}>{s.title}</h2>
-            <Prose text={s.body} />
+            {/* The guides quote the BSB or nothing, so a reference opens its verses in a sheet. */}
+            <Prose text={s.body} verseRefs="sheet" />
           </div>
         </section>
       ))}
@@ -97,7 +99,7 @@ export default function ContextGuide() {
             {data.keyTexts?.length ? (
               <div>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Key texts</div>
-                {data.keyTexts.map((t, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.6, color: "rgba(245,240,230,0.9)", marginBottom: "8px" }}>{t}</p>)}
+                {data.keyTexts.map((t, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "17px", lineHeight: 1.6, color: "rgba(245,240,230,0.9)", marginBottom: "8px" }}><VerseRef reference={t} /></p>)}
               </div>
             ) : null}
             {data.sources?.length ? (
