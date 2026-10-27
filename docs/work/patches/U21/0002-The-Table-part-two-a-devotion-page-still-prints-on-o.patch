@@ -1,7 +1,7 @@
 From 79fbc594b50fdc30ca0fc2f463cdf388728afdc4 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 16:43:42 +0000
-Subject: [PATCH 2/3] The Table, part two: a devotion page still prints on one
+Subject: [PATCH 2/4] The Table, part two: a devotion page still prints on one
  page with both age bands
 
 In print the younger and older questions sit side by side on a page with 1.3 cm margins, so all 112 devotion pages print as one page at Letter and A4; the three-nights links take the article's own underline.

@@ -1,0 +1,71 @@
+From 9db0ab14650ae61e2543007f6eb8bb7e195aae00 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 18:20:01 +0000
+Subject: [PATCH 4/4] The Table, part two: review fixes (U21)
+
+- perseverance: the older question no longer places the phrase "great
+  cloud of witnesses" in Hebrews 11; it is tonight's verse (Hebrews 12:1),
+  naming the people of chapter 11.
+- validate-family: the grown-ups line message says what the rule allows
+  (a period or a question mark).
+- index.css: one print padding rule for .tb-section instead of a second
+  rule overriding the first.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/public/family-devotions-2.json | 2 +-
+ client/src/index.css                  | 3 +--
+ scripts/validate-family.mjs           | 2 +-
+ 3 files changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/client/public/family-devotions-2.json b/client/public/family-devotions-2.json
+index 0b13a475..62aeb5ee 100644
+--- a/client/public/family-devotions-2.json
++++ b/client/public/family-devotions-2.json
+@@ -1435,7 +1435,7 @@
+         "What is one hard thing right now where you need to take just the next step?"
+       ],
+       "older": [
+-        "The “great cloud of witnesses” in Hebrews 11 includes people who failed badly and kept going. Whose story gives you courage to keep running?",
++        "The “great cloud of witnesses” are the people of Hebrews 11, and some of them failed badly and kept going. Whose story gives you courage to keep running?",
+         "Hebrews says to throw off “every encumbrance” as well as sin. What slows you down that is not sin, just weight?",
+         "What is the difference between quitting something that is bad for you and quitting because it got hard?"
+       ]
+diff --git a/client/src/index.css b/client/src/index.css
+index 2fdeb0a7..44b17fc5 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -717,7 +717,7 @@ img{display:block;max-width:100%}
+   .tb-page .pg-head__lede{font-size:10pt;margin-top:3pt}
+   .tb-page__body{padding:0 !important}
+   .tb-devotion{max-width:100%}
+-  .tb-section{padding:6pt 0 2pt;break-inside:avoid}
++  .tb-section{padding:5pt 0 1pt;break-inside:avoid}
+   .tb-section__title{font-size:13pt;margin-bottom:3pt}
+   .tb-ref,.tb-label{font-size:8pt;margin-bottom:2pt}
+   .tb-passage{font-size:10.5pt;line-height:1.45;margin-bottom:4pt;padding-left:8pt}
+@@ -731,7 +731,6 @@ img{display:block;max-width:100%}
+    * margins than an essay's 2cm, so a devotion still prints on one page (U21). */
+   body:has(.tb-page){page:tb-card}
+   @page tb-card{margin:1.3cm 1.5cm}
+-  .tb-section{padding:5pt 0 1pt}
+   .tb-asks--two{display:grid;grid-template-columns:1fr 1fr;gap:0 14pt}
+   .tb-asks--two .tb-questions{font-size:9pt;line-height:1.35;padding-left:1.2em;margin-bottom:2pt}
+   .tb-asks--two .tb-label{margin-bottom:1pt}
+diff --git a/scripts/validate-family.mjs b/scripts/validate-family.mjs
+index 6fa3b50c..b5e67d25 100644
+--- a/scripts/validate-family.mjs
++++ b/scripts/validate-family.mjs
+@@ -302,7 +302,7 @@ export function checkFamily({
+           const g = d.grownups;
+           if (!g || typeof g !== "object" || !isText(g.line) || !isText(g.href)) errors.push(`${where}: grownups needs a line and an href`);
+           else {
+-            if (g.line.length > GROWNUPS_MAX || !/[.?]$/.test(g.line.trim())) errors.push(`${where}: grownups.line is one short sentence (at most ${GROWNUPS_MAX} characters, ending in a period)`);
++            if (g.line.length > GROWNUPS_MAX || !/[.?]$/.test(g.line.trim())) errors.push(`${where}: grownups.line is one short sentence (at most ${GROWNUPS_MAX} characters, ending in a period or a question mark)`);
+             const target = grownupsTarget(g.href, { needsDir });
+             if (target.problem) errors.push(`${where}: grownups.href ${target.problem}`);
+           }
+-- 
+2.43.0
+

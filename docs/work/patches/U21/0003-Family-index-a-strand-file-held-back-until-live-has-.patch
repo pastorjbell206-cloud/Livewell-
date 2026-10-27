@@ -1,7 +1,7 @@
 From 98d11442214efd3a202b0f9e3ffa074375d80533 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 16:45:33 +0000
-Subject: [PATCH 3/3] Family index: a strand file held back until live has no
+Subject: [PATCH 3/4] Family index: a strand file held back until live has no
  rows (U21 with U11's world strand)
 
 A strand file may be a plain list or { live, devotions }; held back, it adds no rows and no shelf, so the index builds the same at merge with U11's hidden world strand. Tested with a seeded world strand, held back and live.
