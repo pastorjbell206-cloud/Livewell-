@@ -313,6 +313,7 @@ function manifestPages() {
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/guides/whole-story-2027", priority: "0.8", changefreq: "monthly" });
     if (fs.existsSync("client/public/bible/guides/index.json"))
       for (const g of JSON.parse(fs.readFileSync("client/public/bible/guides/index.json", "utf8")).groups)
         for (const x of g.guides) if (fs.existsSync(`client/public/bible/guides/${x.id}.json`)) pages.push({ url: `/study/bible/guides/${x.id}`, priority: "0.7", changefreq: "monthly" });

@@ -526,6 +526,15 @@ const HUB_LISTINGS = {
     return ((c && c.items) || []).filter((i) => i.files && i.files.length)
       .map((i) => ({ title: i.title, href: i.files[0].href, blurb: i.summary || "" }));
   } },
+  // Read the whole story in 2027 (scripts/build-story-plan.mjs): each day
+  // with its date and chapters, linked to the day's first chapter.
+  "/study/bible/guides/whole-story-2027": { label: "The days", cap: 365, load: () => {
+    const p = readJsonSafe("client/public/bible/guides/whole-story-2027.json");
+    return ((p && p.days) || []).map((d, i) => {
+      const when = new Date(2027, 0, i + 1).toLocaleDateString("en-US", { month: "long", day: "numeric" });
+      return { title: `Day ${i + 1}, ${when}: ${d.label}`, href: `/study/bible/${d.read[0][0]}/${d.read[0][1]}`, blurb: "" };
+    });
+  } },
 };
 
 function readJsonSafe(rel) {

@@ -24,6 +24,11 @@ describe("collectProgress", () => {
     expect(rows.find((r) => r.href === "/tools/connection-planner")?.detail).toBe("3 people you're reaching toward");
   });
 
+  it("lists the 2027 reading plan by the reader's place", () => {
+    localStorage.setItem("livewell-progress-story-2027", JSON.stringify([1, 2, 4]));
+    expect(collectProgress()).toEqual([expect.objectContaining({ href: "/study/bible/guides/whole-story-2027", kind: "Reading plan", detail: "Day 3 is next" })]);
+  });
+
   it("skips corrupt or unfamiliar values", () => {
     localStorage.setItem("lw-plan-anxiety", "{oops");
     localStorage.setItem("livewell-history-marriage", JSON.stringify("not a list"));

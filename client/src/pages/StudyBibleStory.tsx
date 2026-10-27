@@ -27,6 +27,7 @@ import {
   type Story,
   type StorylineAct,
 } from "@/lib/bible-notes";
+import { PLAN_PATH } from "@/lib/storyPlan";
 import { Band, Credits, H2, Hero, Lede, Prose, Status, card, kicker, quietLink, wrap } from "@/pages/study-bible/shared";
 import { useLoad } from "@/pages/study-bible/shared";
 
@@ -92,6 +93,9 @@ function StoryIndex({ data, progress }: { data: Data; progress: Set<string> }) {
             </span>
           )}
         </div>
+        <p style={{ margin: "var(--s-3) 0 0", fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>
+          Or read it a day at a time: <Link href={PLAN_PATH} style={quietLink}>the whole story in 2027</Link>, every chapter in a year.
+        </p>
       </Hero>
       {rest.length > 0 && (
         <Band>

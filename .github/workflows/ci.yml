@@ -57,6 +57,7 @@ jobs:
           pnpm exec tsx scripts/build-search-index.mjs --check
           node scripts/validate-bible.mjs
           node scripts/build-bible-text.mjs --check
+          node scripts/build-story-plan.mjs --check
           node scripts/validate-bible-notes.mjs
 
       - name: Test
