@@ -92,13 +92,42 @@ jobs:
       # (build:vercel runs prerender; the static home hero lives there).
       - run: pnpm run sitemap && pnpm run build && pnpm run prerender
       - name: Serve built site
+        id: serve
         run: npx serve -s dist/public -l 4173 &
       - name: Lighthouse (home)
+        # One run on a shared runner swings by 20+ points (87, then 63, on the
+        # same build), so take three and keep the run with the median
+        # performance score, as Lighthouse CI does with numberOfRuns. A run
+        # that errors out (NO_FCP, PAGE_HUNG) is left out rather than failing
+        # the step; the step fails only if no run produced a report.
         run: |
-          npx --yes lighthouse http://localhost:4173/ \
-            --chrome-flags="--headless --no-sandbox" \
-            --only-categories=performance,accessibility,best-practices,seo \
-            --output=json --output-path=./lh.json --quiet
+          for i in 1 2 3; do
+            npx --yes lighthouse http://localhost:4173/ \
+              --chrome-flags="--headless --no-sandbox" \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json --output-path=./lh-$i.json --quiet \
+              || echo "::warning::Lighthouse run $i failed"
+          done
+          node -e "
+            const fs = require('fs');
+            const runs = [];
+            for (const i of [1, 2, 3]) {
+              try {
+                const r = JSON.parse(fs.readFileSync('./lh-' + i + '.json', 'utf8'));
+                if (r.runtimeError) throw new Error(r.runtimeError.code);
+                const score = r.categories.performance.score ?? 0;
+                runs.push({ i, score });
+                console.log('run ' + i + ': performance ' + Math.round(score * 100));
+              } catch (e) {
+                console.log('run ' + i + ': no usable report (' + e.message + ')');
+              }
+            }
+            if (runs.length === 0) { console.error('No Lighthouse run produced a usable report'); process.exit(1); }
+            runs.sort((a, b) => a.score - b.score);
+            const mid = runs[Math.floor((runs.length - 1) / 2)];
+            fs.copyFileSync('./lh-' + mid.i + '.json', './lh.json');
+            console.log('using run ' + mid.i + ' (the median of ' + runs.length + ')');
+          "
           node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
       - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |
@@ -115,6 +144,9 @@ jobs:
             if (bad) { console.error(bad + ' Lighthouse category(ies) below threshold'); process.exit(1); }
           "
       - name: Axe (home)
+        # Runs whenever the site is being served, even when a Lighthouse step
+        # fails, so a slow score never hides an accessibility violation.
+        if: ${{ !cancelled() && steps.serve.outcome == 'success' }}
         run: |
           # axe exits 1 on real accessibility violations and 2 on environment
           # errors (e.g. ChromeDriver/Chrome major-version skew when upstream
