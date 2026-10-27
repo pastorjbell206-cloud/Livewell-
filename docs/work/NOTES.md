@@ -197,8 +197,11 @@ its own.
 
 ## Verification status (2026-10-27)
 
-Ledgers fully closed: excavation-not-demolition, can-you-be-good-without-god,
-the-early-church-under-rome. Genocide closed but for James's position.
+All fifteen ledgers closed by 2026-10-27 evening (five pilots, ten Doubt), with
+confirmed originals restored where sources allowed. Open only: ESV wording to
+recheck once with James's API key (every essay), Plutarch's date (pagan myths,
+"early in the second century"), and James's position on did-god-command-genocide.
+Pilots landing via land-wf.js run wf_532a85b2-afb (worktree /home/user/livewell-land).
 Second passes are launched one per main-session turn (see the budget note).
 Landing workflow for finished essays: docs/work/essays/land-wf.js (args
 {essays:[{slug,section?}], redirects:[{from,to}], extra}); verifier:
