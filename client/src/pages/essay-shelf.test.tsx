@@ -9,7 +9,7 @@ import { Route, Switch } from "wouter";
 import superjson from "superjson";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
-import { shelfListingInput } from "@/lib/shelf";
+import { SHELF_ESSAYS, essayVisibility, shelfListingInput } from "@/lib/shelf";
 import Writing from "./Writing";
 import ArticleDetail from "./ArticleDetail";
 import Search from "./Search";
@@ -141,8 +141,12 @@ describe("/writing", () => {
     const asked = superjson.deserialize(sent) as { slugs: string[]; since: string };
     expect(asked).toEqual(shelfListingInput());
     // The public shelf by slug, nothing pending or retired, and the Latest cutoff.
+    // The pending essay is read from the shelf, not named, because landing a
+    // rewrite makes a named one public.
+    const pending = SHELF_ESSAYS.filter((e) => essayVisibility(e.slug) === "pending").map((e) => e.slug);
+    expect(pending.length).toBeGreaterThan(0);
     expect(asked.slugs).toContain("when-the-church-married-empire");
-    expect(asked.slugs).not.toContain("what-christian-nationalism-is-and-is-not");
+    for (const slug of pending) expect(asked.slugs).not.toContain(slug);
     expect(asked.slugs).not.toContain("the-atheist-in-the-pulpit");
     expect(asked.since).toBe("2026-10-13T00:00:00.000Z");
   });
