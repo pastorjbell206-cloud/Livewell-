@@ -31,6 +31,16 @@ The methods actually used, and what the words below mean:
 10. Sallman: "The USO and the Salvation Army" became "Christian groups"; "by some estimates ... more than half a billion times by the century's end" became "printed by the millions."
 11. Jesus Seminar: "Critics such as the New Testament scholar Richard Hays objected" became "Other New Testament scholars objected."
 
+## Voice pass and final audit (2026-10-27)
+
+A later reader revised the prose for voice. No fact, quotation, number, date, name or link was added; a script confirmed all 35 quoted strings, all three links and every Scripture reference are unchanged. What changed that touches a claim:
+
+1. Sanders: "his 1985 book *Jesus and Judaism*" became "his book *Jesus and Judaism*" (year dropped to thin the run of title-and-year citations; the date itself was not in question).
+2. Celsus and the Gospel opponents: "a real village, a real mother and a real trade" became "a man Celsus plainly took to be real, a man with a home village and a mother who spun for her living," which tracks the WDB wording of *Against Celsus* 1.28 already matched below. "Called Jesus illegitimate, a sorcerer, a deceiver" became "illegitimate and a sorcerer"; "deceiver" had no line in this ledger and was cut, not checked.
+3. Schweitzer: "Most Christians have rejected that reconstruction, with good reason" lost "with good reason," an unargued judgment.
+4. Paul: "his letters are the earliest Christian writings we have" became "his letters are older than any of the Gospels," which rests on the datings already listed (most letters in the 50s; Mark around 70).
+5. Wording only, no claim: two headings ("What the Skeptic Gets Right" became "The Case That Jesus Never Lived"; "The Jesus We Keep Inventing" became "Why the Portraits of Jesus Keep Changing"), "That's a fair question" removed, the church-portraits paragraph and the Caesarea Philippi lead-in reworded, and the closing line now confesses the resurrection in the first person ("Christians confess that he did not stay dead, and I believe it").
+
 ## Original wording, for restoring
 
 Restore only after a run that can see the source confirms it word for word.
@@ -136,6 +146,7 @@ Restore only after a run that can see the source confirms it word for word.
 - Quotation "born in a certain Jewish village, of a poor woman of the country, who gained her subsistence by spinning". Matched word for word in WDB (1.28).
 - Paraphrase: husband a carpenter threw her out for adultery; Jesus hired himself out as a servant in Egypt, acquired miraculous powers, came home calling himself a god. Matched in substance against WDB (1.28: "turned out of doors by her husband, a carpenter by trade, because she was convicted of adultery ... having hired himself out as a servant in Egypt ... acquired some miraculous powers ... proclaimed himself a God"). No quotation marks.
 - "The first pagan writer we know of who attacked Christianity at length." Not rechecked (characterization; Celsus is standardly called the earliest known comprehensive pagan critic).
+- Celsus plainly took Jesus to be real, a man with a home village and a mother who spun for her living. Gloss on the 1.28 quotation above (WDB); no quotation marks.
 - As far as the surviving sources show, no ancient opponent said Jesus never lived. Characterization, hedged in the text; not rechecked.
 
 ## Gospel evidence
@@ -156,7 +167,7 @@ Restore only after a run that can see the source confirms it word for word.
 
 ## Sanders
 
-- E. P. Sanders, *Jesus and Judaism* (1985), near the start of the book, lists facts he thought almost beyond dispute: baptized by John; a Galilean who preached and healed; called disciples and spoke of twelve; confined his work to Israel; involved in a controversy over the temple; crucified outside Jerusalem by the Roman authorities; his followers continued as an identifiable movement; some Jews persecuted parts of it. Not rechecked in this run (paraphrase of a well-known list, no quotation marks; the writer's 2026-10-26 search summaries confirmed four of the eight items and the count).
+- E. P. Sanders, *Jesus and Judaism* (1985; the essay no longer prints the year), near the start of the book, lists facts he thought almost beyond dispute: baptized by John; a Galilean who preached and healed; called disciples and spoke of twelve; confined his work to Israel; involved in a controversy over the temple; crucified outside Jerusalem by the Roman authorities; his followers continued as an identifiable movement; some Jews persecuted parts of it. Not rechecked in this run (paraphrase of a well-known list, no quotation marks; the writer's 2026-10-26 search summaries confirmed four of the eight items and the count).
 - Sanders described as one of the most influential scholars of Jesus' Jewish world in the last century. Characterization; not rechecked.
 - Most historians would add the kingdom of God, parables, and a reputation as healer and exorcist. Characterization; not rechecked.
 
@@ -199,5 +210,5 @@ Restore only after a run that can see the source confirms it word for word.
 ## Links and mechanics
 
 - /writing/did-christianity-copy-pagan-myths, /writing/why-trust-the-bible, /writing/did-the-resurrection-happen. All three slugs found in `docs/work/essays/link-targets.json` by script in this run.
-- No em-dashes (U+2014) in the essay after edits (counted by grep). The only exclamation point is inside Mark 8:33. "Fair" appears once ("That's a fair question"). None of the CLAUDE.md forbidden words found by grep.
+- No em-dashes (U+2014) in the essay after edits (counted by grep). The only exclamation point is inside Mark 8:33. After the voice pass, "fair" and "honest" do not appear, no BRIEF.md stamp phrase appears, and the only en-dash is the verse range in "Mark 8:27–29". None of the CLAUDE.md forbidden words found by grep.
 - No biography of James is used. No contested second-order question is argued; the resurrection is confessed and handed to its own essay.
