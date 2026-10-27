@@ -1,0 +1,1342 @@
+From b5fdc486ea525d717e1adacbf7de4cc739761cf5 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 23:40:25 +0000
+Subject: [PATCH 1/3] Find: passage lookup and plain-language search (U15)
+
+A Scripture reference now comes first in every search box the card names.
+"John 3:16", "jn 3 16", and "Romans 13" go straight to the passage in the
+Study Bible from the header search, show as the first result on /search,
+and open from a new "Go to" field on the Study Bible front door and in the
+reader. The parser stays its own chunk and loads when a search field is
+focused, never with the header.
+
+Plain questions lose their small words before matching ("how to talk to
+my kids about God" is talk, kids, God), with a light stem, a few word
+families (kids and children), a bonus for every word in a care page's
+askedAs, and whole title words ahead of partial ones.
+
+/search gains the wisdom topics, Honest Answers, the family devotions and
+catechism, and Christ and the Nation through one small generated index
+(client/public/search-index.json, 40 KB gzipped, built by
+scripts/build-search-index.mjs and checked in CI), and the rewritten
+essays from essayOverrides.generated.ts; a server essay row with a
+rewrite is dropped. /answers#<slug> now scrolls to its answer. The
+family-devotions care page gains the askedAs phrase "how to talk to my
+kids about God".
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .github/workflows/ci.yml                      |   1 +
+ client/public/needs/family-devotions.json     |   1 +
+ client/public/needs/index.json                |   1 +
+ client/public/search-index.json               |   1 +
+ .../src/components/MinimalNav.find.test.tsx   |  45 ++++
+ client/src/components/MinimalNav.tsx          |  54 ++++-
+ client/src/lib/siteSearch.test.ts             | 126 ++++++++++-
+ client/src/lib/siteSearch.ts                  | 202 ++++++++++++++++--
+ client/src/pages/Answers.tsx                  |   8 +
+ client/src/pages/Search.find.test.tsx         |  66 ++++++
+ client/src/pages/Search.tsx                   | 141 +++++++-----
+ client/src/pages/StudyBible.tsx               |  15 ++
+ .../pages/study-bible/GoToPassage.test.tsx    |  44 ++++
+ client/src/pages/study-bible/GoToPassage.tsx  |  78 +++++++
+ package.json                                  |   3 +-
+ scripts/build-search-index.mjs                | 148 +++++++++++++
+ 16 files changed, 854 insertions(+), 80 deletions(-)
+ create mode 100644 client/public/search-index.json
+ create mode 100644 client/src/components/MinimalNav.find.test.tsx
+ create mode 100644 client/src/pages/Search.find.test.tsx
+ create mode 100644 client/src/pages/study-bible/GoToPassage.test.tsx
+ create mode 100644 client/src/pages/study-bible/GoToPassage.tsx
+ create mode 100644 scripts/build-search-index.mjs
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 1cdbdf82..4b0f21cf 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -53,6 +53,7 @@ jobs:
+           node scripts/validate-grow-voice.mjs
+           node scripts/validate-verse-guides.mjs
+           pnpm exec tsx scripts/validate-catalogue.mjs
++          pnpm exec tsx scripts/build-search-index.mjs --check
+           node scripts/validate-bible.mjs
+           node scripts/validate-bible-notes.mjs
+ 
+diff --git a/client/public/needs/family-devotions.json b/client/public/needs/family-devotions.json
+index 566488f2..6cfba46d 100644
+--- a/client/public/needs/family-devotions.json
++++ b/client/public/needs/family-devotions.json
+@@ -14,6 +14,7 @@
+     "devotions with teenagers",
+     "reading the Bible with kids",
+     "how to teach kids the Bible",
++    "how to talk to my kids about God",
+     "family Bible study",
+     "family prayer",
+     "bedtime prayers",
+diff --git a/client/public/needs/index.json b/client/public/needs/index.json
+index 6ec49c1d..5264c9e5 100644
+--- a/client/public/needs/index.json
++++ b/client/public/needs/index.json
+@@ -623,6 +623,7 @@
+         "devotions with teenagers",
+         "reading the Bible with kids",
+         "how to teach kids the Bible",
++        "how to talk to my kids about God",
+         "family Bible study",
+         "family prayer",
+         "bedtime prayers",
+diff --git a/client/public/search-index.json b/client/public/search-index.json
+new file mode 100644
+index 00000000..06c2a3b1
+--- /dev/null
++++ b/client/public/search-index.json
+@@ -0,0 +1 @@
++{"sources":[{"label":"Honest Answers","indexHref":"/answers","entries":[{"title":"Did the resurrection actually happen?","blurb":"The resurrection is the best historical explanation of facts nearly all serious scholars — skeptical ones included — already grant. Not a proof. The best explanation.","href":"/answers#did-the-resurrection-actually-happen"},{"title":"Why would anyone trust the Bible?","blurb":"The case against the Bible rests almost entirely on claims the relevant scholarship — much of it produced by skeptics — does not support.","href":"/answers#why-would-anyone-trust-the-bible"},{"title":"If God is good, why is there so much suffering?","blurb":"Suffering does not disprove God, but it does not need to be solved to be survived. It is the best reason not to believe.","href":"/answers#if-god-is-good-why-suffering"},{"title":"What if Christianity is wrong?","blurb":"If Christianity is wrong, everything falls — Paul says if Christ has not been raised the faith is futile and the dead are simply dead.","href":"/answers#what-if-christianity-is-wrong"},{"title":"Was Jesus just a good teacher?","blurb":"No. The great-teacher verdict is the one position the historical Jesus makes almost impossible to hold, because the teaching you admire and the claims you want to discard come from the same mouth.","href":"/answers#was-jesus-just-a-good-teacher"},{"title":"Do I have to choose between faith and science?","blurb":"No. The war between faith and science is not a finding of science.","href":"/answers#do-i-have-to-choose-between-faith-and-science"},{"title":"Is it okay to be angry at God?","blurb":"Yes — the prayer book of the Bible says so. Roughly a third of the Psalms are laments, raw complaints flung at God. How long, O Lord? Will you forget me forever?","href":"/answers#is-it-okay-to-be-angry-at-god"},{"title":"Can you be a Christian without going to church?","blurb":"You can believe alone — the thief on the cross believed alone, and Jesus received him without a membership card. But believing alone and being a Christian alone are not the same sentence.","href":"/answers#can-you-be-a-christian-without-church"},{"title":"What if I'm done with church but not with Jesus?","blurb":"You are not rare, and you are not outside the reach of the God you still love.","href":"/answers#done-with-church-but-not-jesus"},{"title":"What happens after you deconstruct your faith?","blurb":"The swept house does not stay empty — that is what happens. But first: the people deconstructing their faith are usually right about why.","href":"/answers#what-happens-after-deconstruction"},{"title":"How can God be three and one?","blurb":"God is one in being and three in persons — the oneness and the threeness are not at the same level, so they do not collide.","href":"/answers#how-can-god-be-three-and-one"},{"title":"Should a Christian follow a political party?","blurb":"Hold your convictions; do not let a party hold your conscience.","href":"/answers#should-a-christian-follow-a-political-party"},{"title":"What does the Bible actually say about money?","blurb":"The Bible treats wealth as a genuine good, a serious danger, and a thing you cannot finally serve alongside God — all three at once.","href":"/answers#what-does-the-bible-say-about-money"},{"title":"What does the Bible say about anxiety?","blurb":"Jesus treats anxiety not as a mood to manage but as a belief about the universe that happens to be false. There is a Father. He runs the place.","href":"/answers#what-does-the-bible-say-about-anxiety"},{"title":"What do I do when my teenager says they don't believe?","blurb":"Do not argue them back, and do not grieve them gone; both come from love, and both will fail. The sentence is a door, not a verdict. What is being tested is not the case for the resurrection.","href":"/answers#when-your-teenager-says-they-dont-believe"},{"title":"Is Jesus really the only way to God?","blurb":"Yes, and the claim you were told was arrogant is closer to Christianity's whole hope. The question rarely arrives as a doctrine.","href":"/answers#is-jesus-the-only-way"},{"title":"Does God actually exist?","blurb":"God exists, and I say that as a man who spent most of his life certain no one was there. Not because someone won an argument.","href":"/answers#does-god-actually-exist"},{"title":"What about those who never heard of Jesus?","blurb":"I do not know, and the people who told you they knew, in either direction, told you something the text withholds. The question that undoes people is not whether God exists.","href":"/answers#what-about-those-who-never-heard"},{"title":"Can you be good without God?","blurb":"You can be good without God, and pretending otherwise is the lie that discredits every true thing standing near it.","href":"/answers#can-you-be-good-without-god"},{"title":"Is believing anything on faith irrational?","blurb":"No, though a good deal of what gets called faith is exactly the credulous thing the charge names, and I will not defend it.","href":"/answers#is-faith-irrational"},{"title":"Are miracles believable?","blurb":"A rational person can believe in them. Miracles are rare by definition; if they were common they would not be miracles, because the word names the exception, not the schedule.","href":"/answers#are-miracles-believable"},{"title":"Did God command genocide in the Old Testament?","blurb":"On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly. I will not hand you a comfort I could not accept myself.","href":"/answers#did-god-command-genocide"},{"title":"Why didn't the Bible just ban slavery?","blurb":"It never says the four words a good book should manage: own no human being. It regulates the thing instead, telling masters how to treat their slaves and slaves how to obey.","href":"/answers#why-didnt-the-bible-just-ban-slavery"},{"title":"Is faith just wishful thinking?","blurb":"Sometimes, yes. Religion can be a crutch, and it constantly is for people who make it one.","href":"/answers#is-faith-just-wishful-thinking"},{"title":"What did the New Atheists get right?","blurb":"They got a great deal right, and a believer who cannot say so has understood neither the men nor the faith he imagines he is defending. I owned the books.","href":"/answers#what-did-the-new-atheists-get-right"},{"title":"Can a life mean anything without God?","blurb":"Yes, and any Christian who says otherwise is protecting his comfort by slandering better men. I was an atheist.","href":"/answers#can-life-mean-anything-without-god"},{"title":"What do Christianity and Islam actually dispute?","blurb":"They are neither the same faith nor strangers, and both slogans dodge the conversation. When I was an atheist, lumping every religion together kept all of them at arm's length.","href":"/answers#christianity-and-islam-differences"},{"title":"Can you lose your salvation?","blurb":"Faithful churches divide on this, and they divide hard, so I will tell you honestly that this is second-order ground and not the confessional floor.","href":"/answers#can-you-lose-your-salvation"},{"title":"Is my anxiety a spiritual failure?","blurb":"No. Anxiety is not a verdict on your faith, and the person who told you it was did you real harm.","href":"/answers#is-anxiety-a-spiritual-failure"},{"title":"Is hell forever, or does it end?","blurb":"The reality of judgment and of being finally separated from God is the church's historic teaching and sits near the confessional core.","href":"/answers#is-hell-forever-or-does-it-end"},{"title":"Does God choose us, or do we choose him?","blurb":"This is a second-order question. It divides Calvinist and Arminian churches that preach the same gospel and confess the same creeds, and it is not the confessional floor.","href":"/answers#does-god-choose-us-or-do-we-choose-him"},{"title":"How should a Christian read Genesis 1?","blurb":"Start by separating what is binding from what is open, because most of the heat in this argument comes from confusing the two.","href":"/answers#how-should-a-christian-read-genesis-1"},{"title":"What does the Bible say about divorce and remarriage?","blurb":"Jesus begins where we would rather not, with the permanence. \"So they are no longer two but one flesh. What therefore God has joined together, let not man separate\" (Matthew 19:6).","href":"/answers#what-does-the-bible-say-about-divorce-and-remarriage"},{"title":"Why does God allow earthquakes, cancer, and animal suffering?","blurb":"This is the harder half of the problem of evil, and most answers never reach it. Free will can be offered as an account of the torturer.","href":"/answers#why-does-god-allow-natural-disasters"},{"title":"What makes us human in the age of AI?","blurb":"The functionalist case deserves to be stated at full strength before anyone answers it.","href":"/answers#what-makes-us-human-in-the-age-of-ai"}]},{"label":"Christ and the Nation","indexHref":"/nation","entries":[{"title":"Was America Founded as a Christian Nation?","blurb":"The strongest case for yes, the strongest case for no, and the deeper question both sides forget to ask.","href":"/nation/christian-nation"},{"title":"What Christian Nationalism Actually Is","blurb":"A definition built on the research, the lines that keep the word honest, and why the same idol waits on the other side of the aisle.","href":"/nation/christian-nationalism"},{"title":"When Compassion Hardens Into Coercion","blurb":"A real virtue does not turn dangerous by being false. It turns dangerous when it fuses with power to compel. This is the mirror the left holds up to the right's will to power.","href":"/nation/compassion-and-coercion"},{"title":"The Danger of Empire","blurb":"Every kingdom that asks you to kneel is asking for something that was never theirs.","href":"/nation/empire"},{"title":"How We Got Here: A History of Christian Nationalism in America","blurb":"From a Puritan sermon to a modern rallying cry, the long story of how the faith kept getting recruited to bless the nation, and the one distinction that tells worship from idolatry.","href":"/nation/nationalism-history"},{"title":"When Power Takes the Church: What History Keeps Showing Us","blurb":"From Constantine to apartheid, the recurring bargain in which the church trades its independent voice for a place beside power, and the few who refused to make it.","href":"/nation/power-and-church"},{"title":"The Other Captivity: When the Faith Dissolves Into a Cause","blurb":"The right makes Christianity the conservative platform at prayer. The left makes it the progressive platform at prayer. By opposite doors, both hand over the same thing.","href":"/nation/progressive-captivity"},{"title":"Render to Caesar","blurb":"What a Christian owes the state, what a Christian owes God, and the difference that orders a whole life.","href":"/nation/render"},{"title":"The State of the American Church","blurb":"Captive, and not finished. The two captivities that keep trading a crucified God for the things that can be weaponized, and the older faith underneath them both.","href":"/nation/state-of-the-american-church"},{"title":"What an Old Testament Theocracy Actually Was","blurb":"A people God ruled directly, a moment that pointed past itself, and why no one can build it again.","href":"/nation/theocracy"},{"title":"Which Party Fits the Bible More?","blurb":"A straight answer to a loaded question, and the test it sets for you.","href":"/nation/which-party"}]},{"label":"Family Devotions","indexHref":"/family/devotions","entries":[{"title":"Made On Purpose","blurb":"You were not an accident or a mistake. God made you on purpose, and He likes what He made.","facet":"Who God Says You Are","keywords":"Psalm 139:13-14","href":"/family/devotions"},{"title":"When The Lights Go Out","blurb":"Being scared is not a sin or a failure. The verse does not say if I am afraid, it says when.","facet":"Fear And Anxiety","keywords":"Psalm 56:3-4","href":"/family/devotions"},{"title":"The Weight You Put Down","blurb":"Forgiving someone is not saying what they did was okay. It is choosing to stop making them pay for it.","facet":"Forgiveness","keywords":"Ephesians 4:32","href":"/family/devotions"},{"title":"Counting What You Already Have","blurb":"Thankful people are not the ones with the most stuff. They are the ones who actually notice what they have.","facet":"Gratitude","keywords":"1 Thessalonians 5:18","href":"/family/devotions"},{"title":"The Empty Seat","blurb":"God notices the person standing alone, and He wants us to walk over there.","facet":"Kindness To Outsiders","keywords":"Luke 14:13-14","href":"/family/devotions"},{"title":"Why, Not Just What","blurb":"God cares about why you obey, not just whether you obey.","facet":"Obedience And Heart","keywords":"1 Samuel 16:7","href":"/family/devotions"},{"title":"More Than A Good Teacher","blurb":"Jesus is not just a kind man from history. He is God you can actually see.","facet":"Who Jesus Is","keywords":"Colossians 1:15-16","href":"/family/devotions"},{"title":"Talking To Someone Who Is There","blurb":"Prayer is not magic words. It is talking to a Father who is actually listening.","facet":"Why We Pray","keywords":"Matthew 6:6","href":"/family/devotions"},{"title":"Can We Trust This Book","blurb":"The Bible is not a book of made up stories. It is one long true story that has held up under hard questions for a very long time.","facet":"Is The Bible True","keywords":"2 Timothy 3:16-17","href":"/family/devotions"},{"title":"What To Do With The Fire","blurb":"Anger is not always wrong, but it makes a terrible boss.","facet":"Handling Anger","keywords":"James 1:19-20","href":"/family/devotions"},{"title":"Where Your Eyes Go","blurb":"What you keep looking at slowly becomes what you think about, and what you think about becomes who you are.","facet":"Screens And Attention","keywords":"Philippians 4:8","href":"/family/devotions"},{"title":"The Towel And The Basin","blurb":"In God's family, the great ones are not the ones being waited on. They are the ones doing the serving.","facet":"Serving Others","keywords":"Mark 10:45","href":"/family/devotions"},{"title":"Walking Before You See","blurb":"Faith is trusting Someone enough to take the next step before you can see the whole staircase.","facet":"Faith","keywords":"Hebrews 11:1","href":"/family/devotions"},{"title":"An Anchor In The Storm","blurb":"Hope is being held by something steady while the waves are still moving.","facet":"Hope","keywords":"Hebrews 6:19","href":"/family/devotions"},{"title":"Love That Costs Something","blurb":"Love is something you do, not just something you feel or say.","facet":"Love","keywords":"1 John 3:18","href":"/family/devotions"},{"title":"The Slow Growing Things","blurb":"The best things in life grow slowly, and being patient is trusting that the wait is doing something.","facet":"Patience","keywords":"James 5:7","href":"/family/devotions"},{"title":"The City With No Walls","blurb":"Self control is being strong enough to choose what you do instead of just reacting, and there is nothing boring about that kind of strength.","facet":"Self Control","keywords":"Proverbs 25:28","href":"/family/devotions"},{"title":"Nothing To Hide","blurb":"Telling the truth keeps you free, because you never have to remember which story you told.","facet":"Honesty","keywords":"Proverbs 12:22","href":"/family/devotions"},{"title":"Open Hands","blurb":"Generosity has less to do with how much you have than with how tightly you hold it.","facet":"Generosity","keywords":"2 Corinthians 9:7","href":"/family/devotions"},{"title":"The Lowest Seat","blurb":"A humble person does not need to be noticed, which leaves them free to notice everyone else.","facet":"Humility","keywords":"Philippians 2:3","href":"/family/devotions"},{"title":"Brave Is Not Fearless","blurb":"You can be afraid and still do the right thing, because God goes with you. That is what courage is.","facet":"Courage","keywords":"Joshua 1:9","href":"/family/devotions"},{"title":"Enough Right Here","blurb":"Contentment is a thing you learn, not a thing you are born with.","facet":"Contentment","keywords":"Philippians 4:11-12","href":"/family/devotions"},{"title":"The Friend Who Stays","blurb":"A real friend is the one who is still there when things get hard, not just when things are fun.","facet":"Friendship","keywords":"Proverbs 17:17","href":"/family/devotions"},{"title":"Working For The Right Boss","blurb":"How you do your work says something about you, even when nobody is watching.","facet":"Work","keywords":"Colossians 3:23-24","href":"/family/devotions"},{"title":"Permission To Stop","blurb":"God built rest into the week on purpose, because He made us to need it.","facet":"Rest And Sabbath","keywords":"Mark 2:27","href":"/family/devotions"},{"title":"Taking Care Of The Garden","blurb":"God gave us His world to look after, not to use up and throw away.","facet":"Caring For Creation","keywords":"Genesis 2:15","href":"/family/devotions"},{"title":"Not A Building","blurb":"The church is people who belong to each other, long before it is a building you go to.","facet":"The Church","keywords":"1 Corinthians 12:27","href":"/family/devotions"},{"title":"The Meal That Remembers","blurb":"The bread and the cup are a way of remembering what Jesus gave for us.","facet":"The Lord's Supper","keywords":"Luke 22:19","href":"/family/devotions"},{"title":"Every Sad Thing Undone","blurb":"Heaven is not floating on clouds. It is the day God makes everything that is broken right again.","facet":"Heaven","keywords":"Revelation 21:4","href":"/family/devotions"},{"title":"What Love Was Willing To Do","blurb":"The cross is where God showed exactly how far His love was willing to go.","facet":"The Cross","keywords":"Romans 5:8","href":"/family/devotions"},{"title":"The Stone Was Moved","blurb":"Jesus did not stay dead, and that changes everything about what is possible.","facet":"The Empty Tomb","keywords":"Matthew 28:6","href":"/family/devotions"},{"title":"God Who Lives Close","blurb":"When Jesus went back to heaven, He did not leave us alone. He sent His Spirit to live with us.","facet":"The Holy Spirit","keywords":"John 14:16-17","href":"/family/devotions"},{"title":"What You Are Made Of","blurb":"Worship is giving God the biggest place in your heart, and the singing is only one way that shows.","facet":"Worship","keywords":"Psalm 95:6","href":"/family/devotions"},{"title":"The Gift You Cannot Earn","blurb":"Grace is getting something good you could never have earned, just because God is generous.","facet":"Grace","keywords":"Ephesians 2:8-9","href":"/family/devotions"},{"title":"Turning Around","blurb":"Repentance is turning around and going the other way, which asks more of you than feeling sorry.","facet":"Repentance","keywords":"Acts 3:19-20","href":"/family/devotions"},{"title":"Not Getting What You Deserve","blurb":"Mercy is choosing kindness when someone has earned the opposite.","facet":"Mercy","keywords":"Micah 6:8","href":"/family/devotions"},{"title":"Whose Voice Gets Heard","blurb":"God cares deeply about the people the world forgets, and He wants us to speak up for them.","facet":"Justice And The Poor","keywords":"Proverbs 31:8-9","href":"/family/devotions"},{"title":"The Hardest Love","blurb":"Anyone can love the people who are nice to them. Jesus calls us to love even the people who are not.","facet":"Loving Your Enemies","keywords":"Matthew 5:44-45","href":"/family/devotions"},{"title":"Small But Powerful","blurb":"Words are tiny, but they can build people up or burn them down.","facet":"The Words We Say","keywords":"James 3:5","href":"/family/devotions"},{"title":"The Thief Of Glad","blurb":"Comparing yourself to others will steal your joy faster than almost anything.","facet":"Jealousy And Comparison","keywords":"Galatians 6:4","href":"/family/devotions"},{"title":"The Right Kind Of Awe","blurb":"Fearing God means taking Him seriously, with awe, the way you feel small and glad at the edge of the ocean.","facet":"The Fear Of The Lord","keywords":"Proverbs 9:10","href":"/family/devotions"},{"title":"More Than Being Smart","blurb":"Being smart is knowing a lot. Being wise is knowing what to do with what you know.","facet":"Wisdom","keywords":"James 1:5","href":"/family/devotions"},{"title":"When It Really Hurts","blurb":"God does not waste our pain. He can bring good even out of the hard things.","facet":"Suffering","keywords":"Romans 8:28","href":"/family/devotions"},{"title":"Strength In The Waiting","blurb":"Waiting on God is its own kind of work, gathering strength for what comes next.","facet":"Waiting On God","keywords":"Isaiah 40:31","href":"/family/devotions"},{"title":"He Keeps His Word","blurb":"God's love does not run out, and His mercy is new every single morning.","facet":"God's Faithfulness","keywords":"Lamentations 3:22-23","href":"/family/devotions"},{"title":"Dressed For The Day","blurb":"There is a real struggle between good and evil, and God gives us everything we need to stand strong.","facet":"The Armor Of God","keywords":"Ephesians 6:11","href":"/family/devotions"},{"title":"What Grows On The Tree","blurb":"Good character grows in you when the Spirit is at work, like fruit on a tree, and no one has ever forced a tree to bear.","facet":"The Fruit Of The Spirit","keywords":"Galatians 5:22-23","href":"/family/devotions"},{"title":"Upside Down Happy","blurb":"Jesus says the truly happy people are the opposite of who the world says they are.","facet":"The Beatitudes","keywords":"Matthew 5:3-4","href":"/family/devotions"},{"title":"The One Who Comes Looking","blurb":"Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind.","facet":"The Good Shepherd","keywords":"John 10:11","href":"/family/devotions"},{"title":"The Father Who Runs","blurb":"No matter how far you have run from God, He is already looking down the road for you.","facet":"The Prodigal Son","keywords":"Luke 15:20","href":"/family/devotions"},{"title":"Everyone You Meet","blurb":"Every single person you meet carries the image of God, so every single person matters.","facet":"The Image Of God","keywords":"Genesis 1:27","href":"/family/devotions"},{"title":"You Are Not Just A Keeper","blurb":"God does not just want us to keep the good news to ourselves. He sends us out to share it.","facet":"Being Sent","keywords":"Matthew 28:19-20","href":"/family/devotions"},{"title":"When Someone Hurts You","blurb":"Forgiving someone means you hand the debt to God instead of making them pay, and it never says that what they did was okay.","facet":"Forgiveness","keywords":"Colossians 3:13","href":"/family/devotions"},{"title":"The Cure For A Grumpy Heart","blurb":"Thankfulness is choosing to notice the good gifts God has already given, even on a day when plenty is wrong.","facet":"Thankfulness","keywords":"1 Thessalonians 5:18","href":"/family/devotions"},{"title":"Talking With God","blurb":"Prayer is talking with a Father who loves to hear you, with no magic words and no fancy speech required.","facet":"Prayer","keywords":"Matthew 7:7","href":"/family/devotions"},{"title":"A Light For The Path","blurb":"The Bible is how God talks to us. It is a light that shows us the way to go.","facet":"God's Word","keywords":"Psalm 119:105","href":"/family/devotions"},{"title":"Trusting Enough To Obey","blurb":"We obey God not to make him love us, but because we trust that he loves us and knows what is best.","facet":"Obedience","keywords":"John 14:15","href":"/family/devotions"},{"title":"Small Things With Great Love","blurb":"Kindness is love you can see. It is noticing other people and doing the small good thing.","facet":"Kindness","keywords":"Ephesians 4:32","href":"/family/devotions"},{"title":"A Happiness That Holds","blurb":"Joy is deeper than happy feelings. It is a settled gladness that comes from belonging to God, even on hard days.","facet":"Joy","keywords":"Nehemiah 8:10","href":"/family/devotions"},{"title":"When Your Heart Is Worried","blurb":"Jesus gives a peace that does not wait for the problems to go away, because it rests on him and not on them.","facet":"Peace","keywords":"John 14:27","href":"/family/devotions"},{"title":"Three And Yet One","blurb":"There is one God who lives forever as Father, Son, and Holy Spirit, three persons who have always loved each other.","facet":"The Trinity","keywords":"Matthew 28:19-20","href":"/family/devotions"},{"title":"God Called It Good","blurb":"The world was spoken into being by a God who meant to make it and called it good.","facet":"Creation","keywords":"Genesis 1:1","href":"/family/devotions"},{"title":"How It All Went Wrong","blurb":"The world is broken because people stopped trusting God and went their own way, and that same pull lives in all of us.","facet":"The Fall","keywords":"Genesis 3:6","href":"/family/devotions"},{"title":"The God Who Keeps His Word","blurb":"God always keeps his promises, every single one, no matter how long it takes.","facet":"God's Promises","keywords":"Joshua 21:45","href":"/family/devotions"},{"title":"God Came Close","blurb":"God did not stay far away. He became one of us, with skin and a heartbeat, so we could know him.","facet":"The Incarnation","keywords":"John 1:14","href":"/family/devotions"},{"title":"A Glimpse Of The Mender","blurb":"The miracles of Jesus were small previews of the day he makes everything broken whole again.","facet":"The Miracles Of Jesus","keywords":"Matthew 11:5","href":"/family/devotions"},{"title":"He Is Coming Back","blurb":"Jesus came once as a baby to save us, and he is coming again as a King to set everything right.","facet":"The Second Coming","keywords":"Acts 1:11","href":"/family/devotions"},{"title":"Everything New Again","blurb":"God is going to make the world new, the way it was always meant to be, rather than throw it away.","facet":"The New Creation","keywords":"Revelation 21:5","href":"/family/devotions"},{"title":"Strong Enough To Be Gentle","blurb":"Gentleness is strength that chooses to be careful with people, and it takes more strength than shoving does.","facet":"Gentleness","keywords":"Philippians 4:5","href":"/family/devotions"},{"title":"Good All The Way Through","blurb":"Goodness is choosing to do the right thing, again and again, even when no one notices and it would be easier not to.","facet":"Goodness","keywords":"Galatians 6:9","href":"/family/devotions"},{"title":"Keep Going","blurb":"Perseverance is keeping on, one step at a time, all the way to the end, when quitting would be easier.","facet":"Perseverance","keywords":"Hebrews 12:1","href":"/family/devotions"},{"title":"Taking Care Of What Is Not Yours","blurb":"Everything we have is really God's, given to us to take care of well, not to use up however we please.","facet":"Stewardship","keywords":"1 Corinthians 4:2","href":"/family/devotions"}]},{"label":"Family Catechism","indexHref":"/family/catechism","entries":[{"title":"Who made you?","blurb":"God made me. I am his creature, called into being by the One who is from everlasting to everlasting, and I belong to him before I belong to anyone else.","facet":"God, Creation, and Humanity","keywords":"Genesis 1:1","href":"/family/catechism"},{"title":"Is there a God, and how can we know?","blurb":"Yes, there is one true and living God, and we know him because he has made himself known in all he has made and most fully in his Word and in his Son.","facet":"God, Creation, and Humanity","keywords":"Psalm 19:1","href":"/family/catechism"},{"title":"What is God?","blurb":"God is Spirit, infinite, eternal, and unchanging in his being, wisdom, power, holiness, justice, goodness, and truth.","facet":"God, Creation, and Humanity","keywords":"John 4:24","href":"/family/catechism"},{"title":"Is God one, or is God three?","blurb":"There is one God who exists eternally as three persons, the Father, the Son, and the Holy Spirit, each fully God, equal in power and glory, yet one in being.","facet":"God, Creation, and Humanity","keywords":"Matthew 28:19-20","href":"/family/catechism"},{"title":"Did God create everything?","blurb":"Yes, God created all things visible and invisible out of nothing, by the word of his power, and everything he made was very good.","facet":"God, Creation, and Humanity","keywords":"Genesis 1:31","href":"/family/catechism"},{"title":"How did God create human beings?","blurb":"God created human beings, male and female, in his own image, forming us from the dust and breathing into us life, so that we alone among his creatures bear his likeness.","facet":"God, Creation, and Humanity","keywords":"Genesis 1:27","href":"/family/catechism"},{"title":"What does it mean to be made in God's image?","blurb":"To be made in God's image means we were made to know him, to reflect his character, and to rule over and care for his world as those who answer to him.","facet":"God, Creation, and Humanity","keywords":"Genesis 1:28","href":"/family/catechism"},{"title":"Why did God make you?","blurb":"God made me to glorify him and to enjoy him forever, finding my deepest life in loving and being loved by the One who made me.","facet":"God, Creation, and Humanity","keywords":"Isaiah 43:7","href":"/family/catechism"},{"title":"Does God control all that happens?","blurb":"Yes, God rules over all things by his wise and holy will, so that nothing happens by chance, and even hard things are held within the purpose of a good Father.","facet":"God, Creation, and Humanity","keywords":"Ephesians 1:11-12","href":"/family/catechism"},{"title":"Is God good even when life is hard?","blurb":"Yes, God is always good, for his goodness does not depend on our circumstances, and he works even our suffering toward our good and his glory.","facet":"God, Creation, and Humanity","keywords":"Romans 8:28","href":"/family/catechism"},{"title":"What does God require of us?","blurb":"God requires that we love him with all our heart, soul, mind, and strength, and that we love our neighbor as ourselves.","facet":"God, Creation, and Humanity","keywords":"Mark 12:30","href":"/family/catechism"},{"title":"How has God spoken to us?","blurb":"God has spoken to us in his written Word, the Bible, which is breathed out by God, true in all it teaches, and sufficient to make us wise for salvation.","facet":"God, Creation, and Humanity","keywords":"2 Timothy 3:16-17","href":"/family/catechism"},{"title":"What is the Bible mainly about?","blurb":"The Bible is mainly about God's plan to rescue sinners through Jesus Christ, so that from beginning to end its true subject is the saving love of God.","facet":"God, Creation, and Humanity","keywords":"John 5:39-40","href":"/family/catechism"},{"title":"How did sin come into the world?","blurb":"Sin came into the world when our first parents, tempted by the serpent, disobeyed God and ate the fruit he had forbidden, breaking trust with the One who had given them everything.","facet":"Sin, the Law, and Our Need","keywords":"Genesis 3:6","href":"/family/catechism"},{"title":"What is sin?","blurb":"Sin is any failure to love God and others as we should, whether by doing what God forbids or by failing to do what he commands.","facet":"Sin, the Law, and Our Need","keywords":"1 John 3:4","href":"/family/catechism"},{"title":"Did everyone fall into sin?","blurb":"Yes, in Adam all of us fell, so that every person is born with a sinful nature and apart from grace turns away from God.","facet":"Sin, the Law, and Our Need","keywords":"Romans 5:12","href":"/family/catechism"},{"title":"What has sin done to us?","blurb":"Sin has broken our relationship with God, twisted our desires, brought death into the world, and left us guilty and unable to save ourselves.","facet":"Sin, the Law, and Our Need","keywords":"Isaiah 59:2","href":"/family/catechism"},{"title":"What is God's law?","blurb":"God's law is his good and perfect will for human life, summed up in the Ten Commandments, showing us how to love God and our neighbor.","facet":"Sin, the Law, and Our Need","keywords":"Exodus 20:1-2","href":"/family/catechism"},{"title":"What does the law require of us toward God?","blurb":"The first table of the law requires that we worship God alone, honor his name, keep no idols, and set apart time to rest in him and remember his works.","facet":"Sin, the Law, and Our Need","keywords":"Exodus 20:3","href":"/family/catechism"},{"title":"What does the law require of us toward others?","blurb":"The second table of the law requires that we honor our parents, protect life, keep our promises, tell the truth, respect what belongs to others, and refuse to covet.","facet":"Sin, the Law, and Our Need","keywords":"Exodus 20:12","href":"/family/catechism"},{"title":"Can we keep God's law perfectly?","blurb":"No, because of our sinful nature we cannot keep God's law perfectly, and even our best efforts fall short of his holiness.","facet":"Sin, the Law, and Our Need","keywords":"Romans 3:23-24","href":"/family/catechism"},{"title":"Then why did God give us the law?","blurb":"God gave the law to show us his holiness, to expose our sin, and to drive us to Christ, who alone kept it perfectly on our behalf.","facet":"Sin, the Law, and Our Need","keywords":"Galatians 3:24","href":"/family/catechism"},{"title":"What do our sins deserve?","blurb":"Our sins deserve God's righteous judgment, for a holy God cannot overlook evil, and the wages of sin is death.","facet":"Sin, the Law, and Our Need","keywords":"Romans 6:23","href":"/family/catechism"},{"title":"Is there any hope for sinners like us?","blurb":"Yes, our only hope is in the mercy of God, who in love sent his Son to save sinners, not because we deserved it but because he is gracious.","facet":"Sin, the Law, and Our Need","keywords":"1 Timothy 1:15","href":"/family/catechism"},{"title":"Who is Jesus Christ?","blurb":"Jesus Christ is the eternal Son of God, the second person of the Trinity, who became man to save us, fully God and fully man in one person forever.","facet":"Christ and Redemption","keywords":"John 1:14","href":"/family/catechism"},{"title":"Why did the Son of God become a man?","blurb":"The Son of God became a man so that he might stand in our place, obeying where we failed and bearing the punishment our sin deserved.","facet":"Christ and Redemption","keywords":"Hebrews 2:17","href":"/family/catechism"},{"title":"How was Jesus born?","blurb":"Jesus was conceived by the Holy Spirit and born of the virgin Mary, truly human yet without the sin we inherit from Adam.","facet":"Christ and Redemption","keywords":"Luke 1:35","href":"/family/catechism"},{"title":"What kind of life did Jesus live?","blurb":"Jesus lived a life of perfect obedience, loving God and people fully, resisting every temptation, and fulfilling all righteousness on our behalf.","facet":"Christ and Redemption","keywords":"Hebrews 4:15","href":"/family/catechism"},{"title":"Why did Jesus have to die?","blurb":"Jesus had to die because the penalty for sin is death, and in love he took that penalty in our place, satisfying God's justice and opening the way to God.","facet":"Christ and Redemption","keywords":"1 Peter 3:18","href":"/family/catechism"},{"title":"What happened on the cross?","blurb":"On the cross Jesus bore the wrath of God against our sin, was forsaken in our place, and cried out that it is finished, completing the work of our salvation.","facet":"Christ and Redemption","keywords":"John 19:30","href":"/family/catechism"},{"title":"Did Jesus stay dead?","blurb":"No, on the third day Jesus rose bodily from the grave, conquering death, proving he is the Son of God, and securing the resurrection of all who trust him.","facet":"Christ and Redemption","keywords":"1 Corinthians 15:20","href":"/family/catechism"},{"title":"Where is Jesus now?","blurb":"Jesus has ascended into heaven, where he reigns as Lord over all and intercedes for his people as our great High Priest.","facet":"Christ and Redemption","keywords":"Hebrews 7:25","href":"/family/catechism"},{"title":"What does it mean that Jesus is Lord?","blurb":"To say Jesus is Lord means he holds all authority in heaven and on earth, so that he has the right to rule every part of our lives.","facet":"Christ and Redemption","keywords":"Matthew 28:18","href":"/family/catechism"},{"title":"How are we saved?","blurb":"We are saved by grace alone, through faith alone, in Christ alone, not by anything we have done but as a free gift from God.","facet":"Christ and Redemption","keywords":"Ephesians 2:8-9","href":"/family/catechism"},{"title":"What is grace?","blurb":"Grace is the free and undeserved favor of God, by which he gives sinners what they could never earn and forgives what they could never repay.","facet":"Christ and Redemption","keywords":"Romans 5:8","href":"/family/catechism"},{"title":"What is faith?","blurb":"Faith is trusting in Jesus Christ alone for salvation, resting not on our own works but on his finished work, receiving him as Savior and Lord.","facet":"Christ and Redemption","keywords":"John 3:16","href":"/family/catechism"},{"title":"What is repentance?","blurb":"Repentance is a change of heart and direction, in which we turn away from sin and turn toward God, grieving our sin and longing to obey him.","facet":"Christ and Redemption","keywords":"Acts 3:19-20","href":"/family/catechism"},{"title":"What is justification?","blurb":"Justification is God's act of declaring us righteous in his sight, forgiving all our sins and crediting to us the perfect righteousness of Christ, received by faith.","facet":"Christ and Redemption","keywords":"Romans 5:1-2","href":"/family/catechism"},{"title":"Can anything separate us from God's love in Christ?","blurb":"No, nothing in all creation can separate us from the love of God in Christ Jesus, for those he saves he holds securely to the end.","facet":"Christ and Redemption","keywords":"Romans 8:38-39","href":"/family/catechism"},{"title":"What does Jesus give us besides forgiveness?","blurb":"Besides forgiveness, Jesus gives us himself, making us right with God, adopting us as children, and granting us eternal life that begins even now.","facet":"Christ and Redemption","keywords":"John 10:10","href":"/family/catechism"},{"title":"Who is the Holy Spirit?","blurb":"The Holy Spirit is the third person of the Trinity, fully God, who applies the work of Christ to us, dwells in believers, and gives us life with God.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"John 14:26","href":"/family/catechism"},{"title":"What is the new birth?","blurb":"The new birth, or regeneration, is the work of the Holy Spirit by which he gives spiritual life to those who were dead in sin, making them new creations in Christ.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"John 3:7","href":"/family/catechism"},{"title":"What does it mean to be adopted by God?","blurb":"To be adopted means God makes us his own children, giving us his name, his care, and a sure place in his family forever.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Galatians 4:6","href":"/family/catechism"},{"title":"What is sanctification?","blurb":"Sanctification is the lifelong work of the Spirit by which we grow to be more like Jesus, putting sin to death and coming alive to righteousness.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Philippians 1:6","href":"/family/catechism"},{"title":"How does the Spirit change us?","blurb":"The Spirit changes us by uniting us to Christ, producing his fruit in us, and giving us the desire and power to obey God from the heart.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Galatians 5:22-23","href":"/family/catechism"},{"title":"What is the church?","blurb":"The church is the whole company of God's people, gathered by the Spirit around Christ, called to worship God, love one another, and make him known to the world.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"1 Peter 2:9","href":"/family/catechism"},{"title":"What is baptism?","blurb":"Baptism is the sign God gives to mark his people, picturing our union with Christ in his death and resurrection and our cleansing from sin.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Romans 6:4","href":"/family/catechism"},{"title":"What is the Lord's Supper?","blurb":"The Lord's Supper is the meal Jesus gave his church, where bread and cup point us to his body broken and his blood shed, and we feed on him by faith.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"1 Corinthians 11:26","href":"/family/catechism"},{"title":"Why and how should we pray?","blurb":"We pray because God is our Father who invites us to come to him, and we pray in Jesus name with honest hearts, asking, thanking, confessing, and praising.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Philippians 4:6","href":"/family/catechism"},{"title":"What did Jesus teach us to pray?","blurb":"Jesus taught us the Lord's Prayer, in which we honor God's name, seek his kingdom and will, ask for our daily needs, seek forgiveness, and ask for his deliverance.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Matthew 6:9-10","href":"/family/catechism"},{"title":"Will Jesus return?","blurb":"Yes, Jesus will return in glory to judge the living and the dead, to make all things new, and to dwell forever with his people.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Acts 1:11","href":"/family/catechism"},{"title":"What is our hope for the life to come?","blurb":"Our hope is the resurrection of the body and life everlasting, when God will wipe away every tear and his people will see him and be with him forever.","facet":"The Spirit, New Life, the Church, and Last Things","keywords":"Revelation 21:4","href":"/family/catechism"},{"title":"What is prayer?","blurb":"Prayer is talking with God, who is our Father. We bring him our worship, our thanks, our confession, and our requests, and we trust that he hears us because of Jesus.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Philippians 4:6","href":"/family/catechism"},{"title":"How did Jesus teach us to pray?","blurb":"Jesus gave us the Lord's Prayer, where we hallow God's name, ask for his kingdom and his will, ask for our daily bread, ask forgiveness as we forgive others, and ask to be kept from evil.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Matthew 6:9","href":"/family/catechism"},{"title":"Why do we call God Father?","blurb":"Because in Jesus, God has adopted us as his children. We do not come to him as strangers or servants only, but as sons and daughters who are loved, welcomed, and safe.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Romans 8:15","href":"/family/catechism"},{"title":"What does God require of us?","blurb":"God gave us his commandments, summed up in two: to love the Lord our God with all our heart, soul, mind, and strength, and to love our neighbor as ourselves.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Mark 12:30-31","href":"/family/catechism"},{"title":"What are the Ten Commandments?","blurb":"God's good law, given at Sinai: to have no other gods, make no idols, honor his name, keep the Sabbath, honor parents, and not to murder, commit adultery, steal, lie, or covet.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Exodus 20:2-3","href":"/family/catechism"},{"title":"Can we keep God's law perfectly?","blurb":"No. We all break God's law in what we do and fail to do, and the law shows us our sin and our need for a Savior. Only Jesus kept it perfectly, in our place.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Romans 3:23-24","href":"/family/catechism"},{"title":"What should we do when we sin?","blurb":"We confess our sin to God, who is faithful and just to forgive us because of Jesus, and we turn from it. We do not hide or pretend, because there is no sin too big for the cross.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"1 John 1:9","href":"/family/catechism"},{"title":"Why do we gather with the church?","blurb":"Because God saves us into a family, not alone. With the church we worship God, hear his Word, share the Lord's Supper, and help one another follow Jesus all the way home.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Hebrews 10:24-25","href":"/family/catechism"},{"title":"What is baptism?","blurb":"Baptism is a sign of belonging to God. The water points to being washed clean by Jesus and joined to his death and resurrection, marking us as members of God's covenant family.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Matthew 28:19-20","href":"/family/catechism"},{"title":"What is the Lord's Supper?","blurb":"The Lord's Supper is a meal Jesus gave us, where bread and cup point to his body broken and his blood shed for us. We receive it together to remember him and feed on him by faith.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Luke 22:19","href":"/family/catechism"},{"title":"How does the Holy Spirit change us?","blurb":"The Spirit lives in every believer, giving us new life and slowly growing his fruit in us: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Galatians 5:22-23","href":"/family/catechism"},{"title":"Why did God make you?","blurb":"God made me to know him, love him, enjoy him, and live for his glory forever. My deepest happiness and his glory are not two things but one, found in him.","facet":"Prayer, the Commandments, and the Christian Life","keywords":"Isaiah 43:7","href":"/family/catechism"},{"title":"If God is good, why is there suffering and evil?","blurb":"Suffering and evil are real, and God did not make a broken world. The world went wrong when people turned away from God, and that ruin spread into everything.","facet":"Hard Questions Children Ask","keywords":"Revelation 21:4","href":"/family/catechism"},{"title":"Is the Bible really true?","blurb":"Yes, the Bible is true, given by God through real people over many centuries, written down, copied carefully, and read and questioned by every generation since.","facet":"Hard Questions Children Ask","keywords":"John 17:17","href":"/family/catechism"},{"title":"How do we know God is real if we cannot see him?","blurb":"We cannot see God with our eyes because he is Spirit, but we know real things we cannot see all the time, like love, or the wind, or our own thoughts.","facet":"Hard Questions Children Ask","keywords":"John 1:18","href":"/family/catechism"},{"title":"What about people who never heard about Jesus?","blurb":"This is a question we can trust to God, who is more just and more merciful than we are.","facet":"Hard Questions Children Ask","keywords":"Genesis 18:25","href":"/family/catechism"},{"title":"Is Jesus really the only way to God?","blurb":"Yes, Jesus is the only way to God, not because God is narrow but because the problem of our sin is so deep that only God himself could fix it, and he did, in Jesus.","facet":"Hard Questions Children Ask","keywords":"John 14:6","href":"/family/catechism"},{"title":"What happens when we die?","blurb":"When we die our bodies stop, but we do not stop existing. Those who trust Jesus go to be with him, which is a joy beyond anything here, and they wait for the day he raises their bodies new and whole.","facet":"Hard Questions Children Ask","keywords":"Philippians 1:23","href":"/family/catechism"},{"title":"Did God make dinosaurs, and how does science fit with the Bible?","blurb":"Yes, God made everything, including dinosaurs, and all that is true in science is simply discovering more of the world he made.","facet":"Hard Questions Children Ask","keywords":"Colossians 1:16","href":"/family/catechism"},{"title":"Why does God sometimes say no to our prayers?","blurb":"God always hears our prayers, and like a good father he answers in the way that is truly best, which is sometimes yes, sometimes wait, and sometimes no.","facet":"Hard Questions Children Ask","keywords":"2 Corinthians 12:9","href":"/family/catechism"},{"title":"What about other religions?","blurb":"People in every place have searched for God, and many religions hold pieces of truth and real longing.","facet":"Hard Questions Children Ask","keywords":"Acts 4:12","href":"/family/catechism"},{"title":"Will God ever stop loving me if I am bad?","blurb":"No, God will never stop loving you. His love for his children does not rise when you are good or fall when you are bad, because it was never based on you in the first place.","facet":"Hard Questions Children Ask","keywords":"Romans 8:38-39","href":"/family/catechism"},{"title":"Why do bad things happen to good people?","blurb":"The Bible tells us honestly that hard things happen to people who do not deserve them, and it does not pretend otherwise.","facet":"Hard Questions Children Ask","keywords":"Romans 8:28","href":"/family/catechism"},{"title":"How can God be three and one at the same time?","blurb":"We call this the Trinity, that God is one God who lives forever as three persons, the Father, the Son, and the Holy Spirit. This is not a riddle to solve but a wonder to receive.","facet":"Hard Questions Children Ask","keywords":"2 Corinthians 13:14","href":"/family/catechism"}]},{"label":"What the Bible Says","indexHref":"/wisdom","entries":[{"title":"A Wayward Child","blurb":"Few griefs cut like watching a child you raised walk away from the faith, the family, or the life you hoped for them. Scripture does not hand you a formula to fix it.","keywords":"wayward child · prodigal · rebellious child · child left the faith · son walked away · daughter rebelling · estranged child · child in trouble · lost my kid · child addiction · praying for my child · child far from god","href":"/wisdom/wayward-child"},{"title":"After a Breakup","blurb":"A breakup is a real loss, and Scripture never tells the wounded to pretend otherwise.","keywords":"breakup · broke up · broken heart · heartbroken · rejected · rejection · ended · ex · dumped · lost love · moving on · left me","href":"/wisdom/breakup"},{"title":"Aging and the Changing Body","blurb":"Scripture does not flatter age and it does not despise it. It names the body's decline honestly, the strong men stooping and the grinders ceasing, and it crowns the same head with gray as a glory, the…","keywords":"aging · getting older · old age · elderly · mortality · gray hair · decline · frailty · weakness · later years · growing old · wrinkles","href":"/wisdom/aging"},{"title":"Alcohol and Drinking","blurb":"Scripture blesses wine as a gift that gladdens the heart and warns in the same breath against the cup that masters a person.","keywords":"alcohol · drinking · drunk · drunkenness · alcoholic · alcoholism · cannot stop drinking · wine · beer · sobriety · drinking problem · addicted to alcohol","href":"/wisdom/alcohol-and-drinking"},{"title":"Anger and Resentment","blurb":"Scripture does not forbid all anger, but it puts a clock on it and a guard around it.","keywords":"anger · angry · rage · furious · resentment · bitter · bitterness · temper · irritated · frustrated · mad · hate","href":"/wisdom/anger"},{"title":"Anger at God","blurb":"You are allowed to be angry at God. Scripture is full of believers who brought their rage straight to him rather than away from him, and the surprising thing is that he does not strike them down for…","keywords":"anger at god · angry at god · where was god · betrayed by god · unanswered prayer · why me · feeling abandoned · god let me down · lament · protest · disappointment with god · silence","href":"/wisdom/anger-at-god"},{"title":"Anxiety and Worry","blurb":"Anxiety is not a faith failure. Scripture meets the anxious not with a scolding but with an invitation to bring everything, and a promise of a peace that stands guard over the mind.","keywords":"anxious · anxiety · worry · worried · fear · afraid · panic · stress · stressed · overwhelmed · nervous · fearful · scared","href":"/wisdom/anxiety"},{"title":"Apologizing Well","blurb":"A real apology names the wrong without softening it, owns it without excusing it, and asks for nothing back. Scripture calls this repentance, and it is not groveling.","keywords":"apology · apologize · sorry · repentance · admitting wrong · i was wrong · making amends · confession · owning it · saying sorry · repair · accountability","href":"/wisdom/apologizing-well"},{"title":"Assurance of Faith","blurb":"Assurance does not rest on the strength of your feelings but on the finished work of Christ and the faithfulness of the God who keeps you.","keywords":"am i saved · assurance · doubt my salvation · is my faith real · good enough for god · fear of hell · lose my salvation · not sure i believe · security · saved · do i really believe · afraid god rejects me","href":"/wisdom/assurance-of-faith"},{"title":"Backsliding and Drifting","blurb":"Few people decide to leave God. They drift, the way a boat drifts from a dock no one tied it to, until one day the shore is small and strange.","keywords":"backsliding · backslidden · drifting · drifted away · falling away · cold heart · lost my faith · wandered · far from god · slipping · left the church · lukewarm again","href":"/wisdom/backsliding"},{"title":"Beauty and Appearance","blurb":"We are told the body is a project to be perfected and a product to be displayed. Scripture refuses both lies.","keywords":"beauty · appearance · body image · looks · vanity · self-image · aging · comparison · insecurity · filters · attractiveness · mirror","href":"/wisdom/beauty-and-appearance"},{"title":"Being Discipled","blurb":"No one grows up in the faith alone. Scripture assumes the Christian life is learned the way every deep thing is learned, beside someone further along who lets you watch how it is done.","keywords":"discipleship · mentor · growing in faith · spiritual growth · discipled · follow jesus · maturity · learning · accountability · spiritual mother · spiritual father · formation","href":"/wisdom/being-discipled"},{"title":"Being Reliable","blurb":"Reliability is faithfulness in the small thing, repeated until it becomes a character.","keywords":"reliable · reliability · dependable · showing up · on time · consistent · follow through · flaky · faithful · steady · count on me · punctual","href":"/wisdom/reliability"},{"title":"Betrayal","blurb":"Betrayal is a wound the betrayer chose to give you, and Scripture does not rush past it.","keywords":"betrayed · betrayal · cheated on · affair · lied to · backstabbed · trust broken · deceived · stabbed in the back · friend betrayed me · unfaithful · let down","href":"/wisdom/betrayal"},{"title":"Body Image and Worth","blurb":"Your worth was never set by the mirror. Scripture says you were knit together with intention and called very good, and it locates your value not in a body that ages but in a God who made it and a…","keywords":"body image · appearance · ugly · fat · weight · self-conscious · mirror · insecure · vanity · looks · comparison · shame","href":"/wisdom/body-image"},{"title":"Breaking Bad Habits","blurb":"A habit is a groove worn into the soul by repetition, and it will not be broken by a single burst of willpower but by a new pattern practiced over time, with grace.","keywords":"habit · habits · addiction · self-control · willpower · discipline · stuck in a cycle · keep failing · can't stop · temptation · vice · change","href":"/wisdom/breaking-bad-habits"},{"title":"Busyness and Overwhelm","blurb":"Busyness is not the same as fruitfulness, and the hurried life is often a way of hiding from the very things that matter most.","keywords":"busyness · busy · overwhelmed · burnout · too much · exhausted · no time · hurry · overcommitted · rest · margin · stretched thin","href":"/wisdom/busyness-and-overwhelm"},{"title":"Calling and Purpose","blurb":"Calling is wider than a career and deeper than a job you happen to like.","keywords":"calling · purpose · meaning · what am i here for · vocation · wasting my life · no purpose · feel useless · god's plan for me · find my calling · is my work meaningful · lost","href":"/wisdom/calling-and-purpose"},{"title":"Cancel Culture and Shame","blurb":"We have built a machine for public shaming and called it accountability. It can expose a real wrong, but it offers no road back, no confession that ends in mercy, no door marked grace.","keywords":"cancel culture · shame · public shaming · mob · reputation · judgment · condemnation · exposed · pile-on · guilt · redemption · second chance","href":"/wisdom/cancel-culture-and-shame"},{"title":"Caring for Aging Parents","blurb":"There comes a day when the parent who carried you cannot carry themselves, and you become the strong one in a relationship that ran the other way your whole life.","keywords":"caregiving · aging parents · elderly parent · caring for parents · caregiver · sandwich generation · dementia · mom and dad aging · caregiver burnout · long-term care · honoring parents · frail parent","href":"/wisdom/caregiving"},{"title":"Caring for Aging Parents","blurb":"Caring for the parents who once cared for you is heavy, slow, often thankless work, and Scripture counts it as honor rendered to God himself.","keywords":"aging parents · elderly parent · caregiver · caring for mom · caring for dad · dementia · sandwich generation · caregiver burnout · role reversal · parent declining · looking after parents · exhausted caregiver","href":"/wisdom/caring-for-aging-parents"},{"title":"Changing Careers","blurb":"To change your work is to ask what your work was ever for. Scripture refuses to split the sacred from the so-called secular, treating the daily labor of ordinary hands as something done for the Lord…","keywords":"career change · new job · changing careers · calling · vocation · quitting · starting over at work · career crossroads · should i change jobs · midlife career · new field · work transition","href":"/wisdom/career-change"},{"title":"Cheating and Betrayal of Trust","blurb":"Cheating is the quiet breaking of a promise someone trusted you to keep.","keywords":"cheating · cheated · affair · adultery · unfaithful · infidelity · betrayed trust · cheating spouse · tempted to cheat · emotional affair · broke my vows","href":"/wisdom/cheating"},{"title":"Chronic Pain and Illness","blurb":"Pain that does not end is its own kind of work, and Scripture does not pretend it away.","keywords":"chronic pain · pain · illness · sick · suffering · disease · hurting · body · fatigue · disability · ache · unwell · thorn","href":"/wisdom/chronic-pain"},{"title":"Church Hurt","blurb":"If the church wounded you, your pain is not a sign of weak faith. It is the wound that comes from having loved something that was supposed to be safe.","keywords":"church hurt · wounded by the church · betrayed · spiritual abuse · leaving church · hypocrisy · burned · religious trauma · disillusioned · pastor failed me · broken trust · done with church","href":"/wisdom/church-hurt"},{"title":"Closeness in Marriage","blurb":"Intimacy is not first a matter of the body but of being fully known and not turned away.","keywords":"intimacy · closeness · marriage · spouse · distant · roommates · disconnected · passion · affection · drifting apart · one flesh · lonely in marriage","href":"/wisdom/marriage-intimacy"},{"title":"Codependency and Losing Yourself","blurb":"There is a love that gives itself away and a love that disappears itself, and the two are not the same.","keywords":"codependency · codependent · people pleasing · enabling · losing myself · rescuing · boundaries · control · caretaking · approval · self-worth","href":"/wisdom/codependency"},{"title":"Comparison and Envy Online","blurb":"Comparison is the thief that arrives the moment you measure your ordinary life against someone else's edited one.","keywords":"comparison · comparing · envy · jealous · not enough · everyone else · highlight reel · feel behind · fomo · inadequate · discontent · their life","href":"/wisdom/comparison-online"},{"title":"Complaining and Grumbling","blurb":"Complaining feels like honesty, but Scripture treats the grumbling heart as a serious thing.","keywords":"complaining · complain · grumbling · grumble · murmuring · ungrateful · negativity · discontent · whining · bitter · always something","href":"/wisdom/complaining"},{"title":"Conflict at Work","blurb":"The workplace is where most of us spend our days under people we did not choose, and Scripture has more to say about it than we expect.","keywords":"work conflict · coworker · boss · difficult coworker · office · workplace · job tension · colleague · manager · unfair · passed over · politics at work","href":"/wisdom/conflict-at-work"},{"title":"Conflict With Others","blurb":"Conflict is not a sign that something has gone wrong with you.","keywords":"conflict · argument · fight · disagreement · tension · fell out · falling out · someone hurt me · coworker · neighbor · church conflict · how to confront · hard conversation","href":"/wisdom/conflict-with-others"},{"title":"Consumerism and Stuff","blurb":"The ad does not sell you a thing. It sells you a self you do not yet have, and tells you the gap can be closed with a purchase.","keywords":"consumerism · shopping · stuff · materialism · spending · clutter · possessions · buying · more · greed · wants · accumulation","href":"/wisdom/consumerism-and-stuff"},{"title":"Contentment","blurb":"Contentment is not the absence of wanting but a peace that does not depend on getting.","keywords":"contentment · content · discontent · restless · never satisfied · always want more · ungrateful · comparison · enough · peace · grateful · settled","href":"/wisdom/contentment"},{"title":"Courage and Fear","blurb":"Courage in Scripture is not the absence of fear but the presence of something stronger than fear.","keywords":"courage · courageous · brave · bravery · fear · afraid · boldness · bold · cowardice · fearful · standing firm · intimidated","href":"/wisdom/courage"},{"title":"Crude and Cutting Talk","blurb":"Scripture takes the tongue more seriously than we do, calling it a small thing that sets a whole life on fire.","keywords":"cursing · swearing · crude talk · foul language · bad mouth · gossip · coarse joking · filthy talk · watch my mouth · controlling my tongue · vulgar","href":"/wisdom/crude-talk"},{"title":"Dating a Nonbeliever","blurb":"This is one of the tender ones, because the heart has usually moved before the question gets asked.","keywords":"dating nonbeliever · unequally yoked · mixed faith · missionary dating · boyfriend not christian · girlfriend not christian · different faith · marriage discernment · unbeliever · relationship faith","href":"/wisdom/dating-a-nonbeliever"},{"title":"Dating and Discernment","blurb":"Dating is not in the Bible, but discernment is, and so is the kind of love Scripture means to build toward.","keywords":"dating · date · relationship · boyfriend · girlfriend · courting · single and dating · should i date · finding a spouse · discernment · attraction · compatibility","href":"/wisdom/dating"},{"title":"Decision Fatigue and Overwhelm","blurb":"An endless menu of choices is not freedom but a kind of exhaustion, and a heart that must decide everything from scratch wears thin by noon.","keywords":"decision · decisions · overwhelmed · indecision · can't decide · too many choices · paralyzed · fatigue · stuck · what should i do · options · discernment","href":"/wisdom/decision-fatigue"},{"title":"Decisions and Guidance","blurb":"God's guidance is more often a settled character than a secret map. Scripture promises wisdom to those who ask and a light for the next step, not a blueprint of the whole road.","keywords":"decision · decisions · guidance · what should i do · god's will · which choice · crossroads · discernment · stuck · wisdom · should i · can't decide · uncertain","href":"/wisdom/decisions-and-guidance"},{"title":"Deep Friendship","blurb":"Real friendship is one of the great gifts and great losses of a life, and Scripture takes it seriously enough to honor it as a love in its own right.","keywords":"friendship · best friend · close friend · want real friends · shallow friendships · how to make friends · loyal friend · true friendship · friend · deep connection · brotherhood · being known","href":"/wisdom/deep-friendship"},{"title":"Defensiveness","blurb":"Defensiveness is the reflex to protect a self that does not feel safe enough to be wrong.","keywords":"defensive · defensiveness · can't take criticism · thin-skinned · make excuses · blame-shifting · deflect · won't admit · easily offended · justify myself · touchy · rationalize","href":"/wisdom/defensiveness"},{"title":"Depression and Despair","blurb":"Depression is not a sin and it is not a lack of faith. Scripture gives the despairing their own voice in the darkest of the Psalms, and shows us prophets and apostles who wanted to die and were not…","keywords":"depression · depressed · despair · hopeless · empty · numb · no point · darkness · cannot get up · want to give up · tired of living · heavy · bleak","href":"/wisdom/depression"},{"title":"Difficult Family","blurb":"The Bible is not a book of tidy families. Its pages are full of jealous brothers, scheming parents, and households that wound, and it tells the truth about them rather than smoothing it over, while…","keywords":"difficult family · toxic family · family drama · estranged · dysfunctional family · siblings fighting · in-laws · family hurt me · broken family · no contact · family conflict · hard relatives","href":"/wisdom/difficult-family"},{"title":"Disappointment","blurb":"Disappointment is the ache of the gap between what you hoped for and what came.","keywords":"disappointment · disappointed · let down · hopes dashed · did not work out · deferred hope · discouraged · things fell through · expectations · disillusioned · broken dreams · crushed hope","href":"/wisdom/disappointment"},{"title":"Division in the Church","blurb":"Division is the oldest disease in the church, and it almost never arrives wearing the name of pride. It comes dressed as principle, as discernment, as standing for truth.","keywords":"division · church split · conflict · gossip · factions · disagreement · fighting · politics in church · taking sides · quarrel · unity · schism","href":"/wisdom/division-in-the-church"},{"title":"Doubt and Questions","blurb":"Doubt is not the opposite of faith. It is often faith under pressure, honestly facing its questions, and Scripture is full of believers who brought their doubts straight to God rather than away from…","keywords":"doubt · doubts · doubting · unbelief · questions · faith struggle · deconstructing · is god real · skeptic · uncertain","href":"/wisdom/doubt"},{"title":"Encouraging Others","blurb":"Encouragement is not flattery but the steady gift of telling someone the truth that holds them up.","keywords":"encouragement · encourage · build up · speak life · comfort · support · lift up · affirm · discouraged friend · kind words · cheer","href":"/wisdom/encouraging-others"},{"title":"Envy and Comparison","blurb":"Envy is grief at another person's good, and it eats the one who carries it.","keywords":"envy · envious · jealous · jealousy · comparison · comparing myself · they have it better · resentful of others · covet · discontent · social media · left behind","href":"/wisdom/envy-and-comparison"},{"title":"Estrangement and the Cut-Off","blurb":"An empty chair at the table is its own kind of grief, the loss of someone who is still alive.","keywords":"estrangement · estranged · cut off · no contact · family rift · not speaking · rejected · disowned · broken family · father wound · abandoned · reconciliation","href":"/wisdom/estrangement"},{"title":"Exhaustion and Burnout","blurb":"Exhaustion is not a badge and it is not a sin, but it is a signal.","keywords":"exhausted · exhaustion · burnout · tired · weary · drained · overworked · rest · depleted · running on empty · fatigue · spent","href":"/wisdom/exhaustion"},{"title":"Facing a Big Decision","blurb":"Some choices set the course of years, and the weight of them can freeze a person at the fork.","keywords":"big decision · decision · crossroads · discernment · guidance · god's will · what should i do · choosing · uncertain future · wisdom for a choice · fork in the road · seeking direction","href":"/wisdom/big-decisions"},{"title":"Facing a Terminal Diagnosis","blurb":"To be told your time is short is to have the thing we all push away brought suddenly near, and the fear, the grief, and the disbelief that follow are not a failure of faith but the honest weight of a…","keywords":"terminal · terminal diagnosis · dying · incurable · cancer · hospice · end of life · months to live · palliative · facing death · no cure","href":"/wisdom/terminal-diagnosis"},{"title":"Fear of Missing Out","blurb":"The fear of missing out is the old sin of envy fitted with a screen.","keywords":"fomo · missing out · envy · comparison · left out · restless · discontent · social media · other people's lives · regret · options · everyone else","href":"/wisdom/fear-of-missing-out"},{"title":"Fear of the Future","blurb":"Some of what we dread is real, and Scripture does not arm us against tomorrow by showing it to us in advance.","keywords":"fear of the future · what if · uncertainty · dread · tomorrow · scared · the unknown · worry about future · anxious about future · afraid · no security · what lies ahead","href":"/wisdom/fear-of-the-future"},{"title":"Feeling Far From God","blurb":"Feeling far from God is not the same as being far from him. Scripture is full of saints who felt forsaken at the very moment they were being held, and it teaches you to keep walking by what is true…","keywords":"far from god · god feels distant · spiritual dryness · god is silent · empty prayers · lost my faith feeling · cold heart · no presence · god abandoned me · spiritually numb · where is god · distant","href":"/wisdom/feeling-far-from-god"},{"title":"Feeling Stuck","blurb":"Feeling stuck is not the same as being abandoned. Scripture is full of long stretches where nothing seemed to move, and it teaches that God works as much in the waiting as in the breakthrough, growing…","keywords":"stuck · stagnant · trapped · no progress · spinning wheels · rut · stalled · going nowhere · paralyzed · dead end · treading water","href":"/wisdom/feeling-stuck"},{"title":"Financial Hardship","blurb":"Scripture does not pretend that want is easy, and it never blames the poor for their poverty.","keywords":"financial hardship · broke · debt · bills · cannot pay · poverty · money trouble · behind on rent · scarcity · struggling financially · tight money · making ends meet","href":"/wisdom/financial-hardship"},{"title":"Finding a Church","blurb":"Finding a church is not finding a perfect church, because none exists and you would not fit it if it did.","keywords":"find a church · church shopping · new church · looking for a church · moved · where to go · denomination · visiting churches · no church home · good church · choosing a church","href":"/wisdom/finding-a-church"},{"title":"Finishing What You Start","blurb":"Beginnings are cheap. The crowd is always large at the start and thin at the finish, and Scripture reserves its honor for the one who endures to the end, who counts the cost before he builds and then…","keywords":"finishing · perseverance · completion · quitting · giving up · unfinished · follow through · endurance · see it through · started but never finished · discipline · stick with it","href":"/wisdom/finishing-what-you-start"},{"title":"Food and Eating","blurb":"Food in Scripture is never merely fuel. It is gift, fellowship, and a daily reminder that you do not feed yourself from nothing, and the table is one of the chief places where grace becomes visible…","keywords":"food · eating · hunger · appetite · gluttony · overeating · diet · fasting · table · meal · comfort eating · feast","href":"/wisdom/food-and-eating"},{"title":"Gambling and the Bet","blurb":"Scripture never names the lottery, but it names the heart that wants wealth without work and money it has not earned.","keywords":"gambling · gamble · betting · bet · casino · lottery · slots · sports betting · poker · addicted to gambling · lost money gambling · quick money","href":"/wisdom/gambling"},{"title":"Generosity and Giving","blurb":"Generosity is not mainly a transfer of money but a loosening of the grip, the proof that you trust the Giver more than the gift.","keywords":"generosity · giving · tithe · tithing · open hand · cheerful giver · charity · share · sacrifice · first fruits · stinginess · hospitality","href":"/wisdom/generosity-and-giving"},{"title":"Generosity with Time","blurb":"We guard our time more fiercely than our money, and call it stewardship when it is often hoarding.","keywords":"generosity with time · giving time · interruptions · availability · presence · too busy · making time · attention · my time · being present · unhurried · interrupted","href":"/wisdom/generosity-with-time"},{"title":"Gentleness and Meekness","blurb":"Gentleness is not weakness, and meekness is not timidity. Scripture means by them a strength held under control, power that chooses restraint, and it puts the gentle answer forward as the thing that…","keywords":"gentleness · gentle · meekness · meek · humility · softness · tender · harsh · gentle spirit · restraint · soft answer · lowliness","href":"/wisdom/gentleness"},{"title":"Giving to the Church","blurb":"Giving is not the church collecting a fee from you. It is the slow loosening of money's grip on your heart, a discipline Scripture treats as worship and warns against treating as obligation.","keywords":"giving · tithe · offering · generosity · money · stewardship · supporting the church · cannot afford · ten percent · sacrificial giving · first fruits","href":"/wisdom/giving-to-the-church"},{"title":"God's Sovereignty","blurb":"Scripture insists that God reigns over all things, and that this is comfort rather than fatalism.","keywords":"sovereignty · is god in control · providence · god's plan · free will · predestination · everything happens for a reason · god's will · control · fate · purpose · trust god's plan","href":"/wisdom/gods-sovereignty"},{"title":"Gossip and the Tongue","blurb":"Scripture gives more weight to the tongue than we ever do, calling it a fire and a world of harm set among the members of the body.","keywords":"gossip · gossiping · slander · rumors · talking behind · the tongue · words · venting · spreading · reputation · speech · backbiting","href":"/wisdom/gossip-and-the-tongue"},{"title":"Grace and Works","blurb":"Grace and works have been pitted against each other for so long that many people no longer know how they fit.","keywords":"grace · works · faith and works · salvation · earning salvation · free grace · cheap grace · good deeds · justification · saved by grace · obedience and grace · faith without works","href":"/wisdom/grace-and-works"},{"title":"Gratitude and Thankfulness","blurb":"Gratitude is not a mood that arrives on good days. Scripture treats it as a discipline, a deliberate turning toward what you have been given, commanded even in hard seasons because it reorders the…","keywords":"gratitude · thankful · thanksgiving · ungrateful · cant be grateful · count my blessings · appreciate · entitled · discontent · grumbling · thank god · praise for blessings","href":"/wisdom/gratitude"},{"title":"Greed and the Grasping Hand","blurb":"Greed is the hunger that never says enough. Scripture names it not as a sin of the poor or the rich alone but of the human heart, which keeps mistaking the next acquisition for the rest it is actually…","keywords":"greed · greedy · covet · coveting · more · money · hoarding · stingy · materialism · never enough · possessions · want","href":"/wisdom/greed"},{"title":"Grief and Loss","blurb":"Scripture never tells the grieving to pretend. It gives them a third of the Psalms as lament, walks them to a graveside where Jesus himself wept, and promises not the absence of the valley but a…","keywords":"grief · grieving · loss · death · died · mourning · sorrow · heartbroken · bereaved · sad · miss","href":"/wisdom/grief"},{"title":"Guilt and Conscience","blurb":"Scripture takes guilt seriously enough to name it real and not merely a feeling to be managed away.","keywords":"guilt · guilty · conscience · regret · remorse · i sinned · did something wrong · cannot forgive myself · haunted · convicted · wrong · weight of sin","href":"/wisdom/guilt-and-conscience"},{"title":"Hardness of Heart","blurb":"Hardness of heart is not a sudden state but the slow result of a thousand small refusals. Each time conscience is overruled, the heart grows a little less able to feel.","keywords":"hardness of heart · hard heart · hardened · callous · cold · unfeeling · numb · stubborn · unrepentant · indifferent · calloused · can't feel","href":"/wisdom/hardness-of-heart"},{"title":"Hearing From God","blurb":"God has already spoken, fully and clearly, in his word, and that is where you go first to hear him.","keywords":"hear from god · gods voice · does god speak · how does god speak · listen to god · is that god or me · discern gods voice · promptings · god told me · speaking · still small voice · guidance","href":"/wisdom/hearing-from-god"},{"title":"Heaven and Eternity","blurb":"Heaven in Scripture is less a misty escape from earth than the healing of it.","keywords":"heaven · eternity · afterlife · eternal life · what happens when we die · paradise · new heavens · new earth · everlasting · the world to come · dead loved ones · resurrection of the body","href":"/wisdom/heaven-and-eternity"},{"title":"Hell and Judgment","blurb":"Hell is the hardest doctrine the church holds, and it should never be held lightly or with relish.","keywords":"hell · judgment · damnation · wrath · eternal punishment · lake of fire · final judgment · is hell real · condemnation · justice of god · second death · accountability","href":"/wisdom/hell-and-judgment"},{"title":"Honesty and Integrity","blurb":"Integrity is what you are when no one is watching, the whole self matching from the inside out.","keywords":"honesty · honest · integrity · truth · truthful · lying · lie · deceit · trustworthy · character · hypocrisy · keeping your word","href":"/wisdom/honesty-and-integrity"},{"title":"Hospitality When You Are Tired","blurb":"Hospitality is not entertaining, and the difference is everything. Entertaining waits until the house and the host are impressive.","keywords":"hospitality · tired · guests · welcome · open home · exhausted · having people over · table · stranger · weary · entertaining · too tired to host","href":"/wisdom/hospitality-when-tired"},{"title":"Hurry and Rush","blurb":"Hurry is not a schedule problem. It is a condition of the soul, the steady refusal to live inside the limits God gave a creature, and it quietly erodes the very things that cannot be rushed, prayer…","keywords":"hurry · rush · busy · busyness · pace · frantic · overcommitted · exhausted · no time · rushing · pressure · slow down","href":"/wisdom/hurry-and-rush"},{"title":"Hypocrisy and the Mask","blurb":"Hypocrisy is the gap between the face we show and the life we live. The word itself comes from the stage, where an actor spoke behind a mask.","keywords":"hypocrisy · hypocrite · two-faced · pretending · fake · phony · double life · mask · appearances · inconsistent · say one thing","href":"/wisdom/hypocrisy"},{"title":"Identity and Worth","blurb":"The world tells you to build a self out of your achievements, your image, or your performance, and then defend it forever.","keywords":"identity · who am i · worth · self-worth · value · purpose · do i matter · feel invisible · not good enough · self-esteem · find myself · meaning","href":"/wisdom/identity-and-worth"},{"title":"Idolatry of the Heart","blurb":"An idol is not only a statue. It is anything that takes the place meant for God, a good thing made into an ultimate thing, the love that runs your life from underneath.","keywords":"idolatry · idol · idols · false god · worship · ultimate · functional god · approval · control · success · good things gone wrong · first place","href":"/wisdom/idolatry"},{"title":"Immaturity","blurb":"Maturity is not about age. It is the slow work of becoming a person whose wants no longer rule him, who can keep a promise, carry a weight, and put another before himself.","keywords":"immature · immaturity · grow up · childish · irresponsible · won't take responsibility · selfish · petty · no follow-through · stunted · adolescent · growing up","href":"/wisdom/immaturity"},{"title":"Indecision","blurb":"Indecision often dresses itself as caution, but underneath it is usually fear, the fear of the wrong choice, the fear of regret, the fear of being responsible for a road that goes badly.","keywords":"indecision · indecisive · can't decide · paralyzed · second-guessing · overthinking · stuck · what should i do · double-minded · torn · afraid to choose · analysis paralysis","href":"/wisdom/indecision"},{"title":"Infertility and Childlessness","blurb":"This is a grief the world rarely lets you name out loud, a loss with no funeral and a hope that aches every month. Scripture does not look away from it.","keywords":"infertility · infertile · childless · barren · miscarriage · trying to conceive · ivf · longing for a child · empty arms · pregnancy loss · waiting · grief","href":"/wisdom/infertility"},{"title":"Information Overload","blurb":"We were promised that more information would make us wise. It has mostly made us anxious.","keywords":"information overload · news · doomscrolling · distraction · overwhelmed · noise · headlines · feeds · attention · scrolling · screens · input","href":"/wisdom/information-overload"},{"title":"Insecurity and Low Self-Worth","blurb":"Insecurity is the nagging sense that you are not enough, measured against everyone you have ever envied.","keywords":"insecurity · insecure · low self-worth · self-esteem · not enough · comparison · inadequate · worthless · self-doubt · identity · unworthy · feeling small","href":"/wisdom/insecurity"},{"title":"Jealousy and Envy","blurb":"Envy is the grief we feel at another's good, and Scripture treats it not as a quirk but as rot in the bones. The cure is not to win the comparison but to be set free from the scoreboard altogether.","keywords":"jealousy · jealous · envy · envious · comparison · covet · coveting · resentment · insecure · possessive · left behind · their life","href":"/wisdom/jealousy"},{"title":"Job Loss","blurb":"Losing a job takes more than a paycheck. It can take the role you wore, the worth you measured by it, and the place you held in the world, and Scripture knows the difference between what you do and…","keywords":"job loss · fired · laid off · unemployed · lost my job · out of work · redundant · no income · career ended · let go · looking for work · vocation lost","href":"/wisdom/job-loss"},{"title":"Joy and Gladness","blurb":"Joy in Scripture is not the same as a good mood, and it does not depend on good circumstances.","keywords":"joy · joyful · gladness · rejoice · happiness · happy · delight · cheerful · celebration · gratitude · thankful · contentment","href":"/wisdom/joy"},{"title":"Justice and the Poor","blurb":"God's concern for the poor and the wronged is not a wing of the Bible. It runs through the whole of it, in the law, the prophets, the wisdom, and the words of Jesus.","keywords":"justice · the poor · poverty · injustice · oppression · inequality · helping the poor · social justice · fairness · the marginalized · compassion · advocacy","href":"/wisdom/justice-and-the-poor"},{"title":"Keeping a Confidence","blurb":"When someone tells you a hard thing, they hand you a piece of themselves to hold.","keywords":"confidence · secret · gossip · trust · betrayed a confidence · discretion · tale bearer · told someone · private · loose lips · kept it quiet · spilled","href":"/wisdom/keeping-confidence"},{"title":"Keeping Your Word","blurb":"A promise is a small covenant, and covenant is how God has dealt with us from the beginning.","keywords":"promises · keeping your word · commitment · vow · oath · broke a promise · follow through · integrity · trustworthy · flaky · letting people down · dependable","href":"/wisdom/keeping-promises"},{"title":"Kindness and Compassion","blurb":"Kindness in Scripture is not mere niceness, a smoothing over of things.","keywords":"kindness · kind · compassion · compassionate · mercy · gentle · caring · tender · generous spirit · considerate · cruel · harsh","href":"/wisdom/kindness"},{"title":"Knowing God's Will","blurb":"Most of God's will is already revealed and rarely the thing we ask about.","keywords":"gods will · what does god want · big decision · which way to go · calling · gods plan for my life · discern · should i · guidance · cant decide · direction · purpose","href":"/wisdom/knowing-gods-will"},{"title":"Knowing the Bible","blurb":"Scripture presents itself not as a rulebook to consult but as living words meant to be lived in, read slowly and obeyed, more dwelling than reference.","keywords":"bible · scripture · reading the bible · word of god · study · understanding scripture · devotions · hard passages · interpretation · where to start · quiet time · meditation","href":"/wisdom/knowing-the-bible"},{"title":"Learning to Trust God","blurb":"Trust is not pretending you are not afraid. It is choosing to lean your weight on God's character when his ways are hidden, and Scripture grounds that lean not in good outcomes but in who he has shown…","keywords":"trust god · hard to trust · cant trust god · surrender · let go · control · god in control · uncertainty · fear of the future · faith when scared · rely on god · depend","href":"/wisdom/trusting-god"},{"title":"Leaving for College","blurb":"You are leaving the house you were formed in to become someone in a place no one knows you.","keywords":"college · university · leaving for college · young adult · moving out · freshman · campus · first time away · student · faith in college · starting college · homesick","href":"/wisdom/going-to-college"},{"title":"Legalism and Rule-Keeping","blurb":"Legalism is the quiet conviction that God's love is a wage to be earned and a debt that can be paid.","keywords":"legalism · legalistic · rules · rule-keeping · performance · earning · self-righteous · pharisee · religious · duty · checklist faith · never enough · trying to be good enough","href":"/wisdom/legalism"},{"title":"Life Transitions","blurb":"There is a kind of suffering that comes not from loss but from change, the ground shifting under a settled life.","keywords":"transition · change · new chapter · moving · uncertainty · in between · season changing · empty nest · new city · leaving · threshold · what now","href":"/wisdom/life-transitions"},{"title":"Loneliness","blurb":"You were not made to be alone. Scripture knows you become the average of the people you keep close, and it honors the faithful friend over the flatterer and says a brother is born for the hard day.","keywords":"lonely · loneliness · alone · isolated · isolation · no friends · friendless · disconnected · left out · unseen","href":"/wisdom/loneliness"},{"title":"Longing for Marriage","blurb":"The desire for a spouse is good and God-given, and the ache of it unmet is not a sign of failure or low faith.","keywords":"want to be married · longing · single · singleness · still single · waiting · lonely · marriage · find someone · unmarried · spouse · hope deferred","href":"/wisdom/longing-for-marriage"},{"title":"Losing a Child","blurb":"There is no grief like the death of a child, the loss that breaks the order of things and leaves a parent burying the one they were meant to raise.","keywords":"lost a child · death of a child · my child died · losing a son · losing a daughter · bereaved parent · child death · outlived my child · grieving a child · buried my child","href":"/wisdom/losing-a-child"},{"title":"Losing a Parent","blurb":"When a parent dies, you lose more than a person, you lose the one who knew you first and longest, and a generation steps aside leaving you suddenly at the front of the line.","keywords":"lost a parent · my mother died · my father died · losing mom · losing dad · orphaned · death of a parent · grieving a parent · buried my mother · buried my father","href":"/wisdom/losing-a-parent"},{"title":"Losing a Spouse","blurb":"To lose a spouse is to lose the one you became one flesh with, and the tearing is felt in the body, the bed, the empty chair, the thousand small habits built around a person no longer there.","keywords":"lost my spouse · widow · widower · my husband died · my wife died · death of a spouse · widowed · grieving my husband · grieving my wife · lost my partner","href":"/wisdom/losing-a-spouse"},{"title":"Loving Your Enemies","blurb":"The command to love your enemies is the hardest thing Jesus ever said, and he meant it without an exit clause.","keywords":"enemies · enemy · love your enemy · hatred · those who hurt you · persecution · retaliation · revenge · opponent · bless those · hostile · mistreated","href":"/wisdom/loving-your-enemies"},{"title":"Low Motivation","blurb":"Low motivation is rarely just laziness, and it is rarely just one thing.","keywords":"low motivation · unmotivated · no drive · lazy · can't get started · procrastination · apathy · listless · sluggish · no energy · stuck · going through the motions","href":"/wisdom/low-motivation"},{"title":"Lukewarm Faith","blurb":"Lukewarm faith is the most respectable failure in the church, because it looks like nothing is wrong. The fire has not gone out; it has banked to a comfortable warmth that asks little and costs less.","keywords":"lukewarm · apathy · spiritually dry · going through the motions · indifferent · complacent · comfortable christian · half-hearted · numb faith · spiritually flat · no passion · coasting","href":"/wisdom/lukewarm-faith"},{"title":"Lust and the Wandering Eye","blurb":"Lust is not the same as desire, which is a gift. It is desire detached from the person, turning someone made in God's image into a thing to be used.","keywords":"lust · lustful · porn · pornography · desire · tempted · temptation · fantasy · craving · wandering eye · objectify · purity","href":"/wisdom/lust"},{"title":"Lying and Honesty","blurb":"A lie is rarely told to harm. It is told to be safe, to be liked, to avoid the cost of the truth, and that is exactly why it is so hard to stop.","keywords":"lying · lie · lies · dishonest · dishonesty · deceit · telling the truth · cannot stop lying · white lies · hiding the truth · deception","href":"/wisdom/lying"},{"title":"Marriage After an Affair","blurb":"An affair breaks something that cannot simply be glued back; what is built after is a new thing, made slowly, out of repentance and a thousand small proofs.","keywords":"affair · infidelity · adultery · cheating · unfaithful · betrayal · broken trust · rebuild marriage · reconciliation · covenant · repentance","href":"/wisdom/marriage-after-an-affair"},{"title":"Marriage Trouble","blurb":"Most marriages do not end in a blowup but in a slow drift no one decided on.","keywords":"marriage · spouse · husband · wife · married · divorce · fighting · cold marriage · drifting · contempt · marital","href":"/wisdom/marriage-conflict"},{"title":"Mending What Broke","blurb":"Reconciliation is not forgetting the wrong but doing the harder thing, facing it together and refusing to let it have the last word.","keywords":"reconciliation · reconcile · broken relationship · estrangement · estranged · make peace · repair · apology · fallen out · mend · restore · conflict","href":"/wisdom/reconciliation"},{"title":"Mental Exhaustion and Burnout","blurb":"Exhaustion is not a character flaw to push through but a limit to be honored.","keywords":"exhausted · exhaustion · burnout · burned out · drained · depleted · worn out · running on empty · no energy · spent · overwhelmed · weary","href":"/wisdom/mental-exhaustion"},{"title":"Mentoring and Discipling","blurb":"Mentoring is not a program but a life lived close enough to be copied.","keywords":"mentoring · mentor · discipling · investing in others · spiritual guidance · teaching · passing it on · younger believer · apprentice · guiding · raising leaders","href":"/wisdom/mentoring"},{"title":"Miscarriage and Pregnancy Loss","blurb":"A miscarriage is the death of a child whom you loved before you ever held, and the grief is real even when others cannot see what was lost.","keywords":"miscarriage · pregnancy loss · stillbirth · lost the baby · lost a pregnancy · empty womb · no heartbeat · infant loss · early loss · babyloss · ectopic","href":"/wisdom/miscarriage"},{"title":"Money and Provision","blurb":"Scripture treats money as a matter of the heart, where the treasure is, there the heart will be also.","keywords":"money · finances · financial · debt · poor · broke · wealth · rich · greed · possessions · bills · provision · poverty","href":"/wisdom/money"},{"title":"Moving and Relocation","blurb":"To move is to pull up roots, and the ache of it is real even when the move is good.","keywords":"moving · relocation · relocating · new city · new home · leaving home · uprooted · starting over · far from family · transplant · new town · displaced","href":"/wisdom/relocation"},{"title":"New Parenthood","blurb":"A child arrives and the floor of your life shifts under you.","keywords":"new baby · newborn · first child · new parent · parenthood · exhausted · sleepless · overwhelmed parent · new mom · new dad · postpartum · raising a baby","href":"/wisdom/new-parenthood"},{"title":"Nostalgia and Longing for the Past","blurb":"Longing for the past is a kind of homesickness, and not all of it is a lie.","keywords":"nostalgia · nostalgic · the good old days · miss the past · longing for before · homesick · regret the past · yearning · wish things were · looking back · sentimental","href":"/wisdom/nostalgia"},{"title":"Numbness and Feeling Nothing","blurb":"Numbness is not the same as peace. It is often the heart's way of bracing against more pain than it can hold, and Scripture does not shame the one who has gone quiet inside but speaks of a heart of…","keywords":"numb · numbness · feel nothing · empty · emptiness · flat · deadened · hollow · disconnected · cold heart · no feeling · shut down","href":"/wisdom/numbness"},{"title":"Obedience and Following God","blurb":"Obedience has fallen on hard times, mistaken for either grim duty or earning a place we already have.","keywords":"obedience · obey · following god · doing god's will · submission to god · discipline · faithfulness · hard obedience · costly obedience · trust and obey · walking with god · do what god says","href":"/wisdom/obedience"},{"title":"Opening Your Home","blurb":"Hospitality in Scripture is not entertaining, which performs for the admiration of guests, but welcome, which makes room for the stranger at real cost.","keywords":"hospitality · welcome · open home · guests · the table · strangers · neighbors · host · invite · shared meals · newcomer · open door","href":"/wisdom/hospitality"},{"title":"Outrage Culture","blurb":"Outrage feels like conviction, and that is its danger. It dresses itself in the clothes of justice while it trains the heart in contempt, and it spreads faster than any sober truth.","keywords":"outrage · anger online · polarization · tribalism · controversy · viral anger · contempt · us versus them · rage · hot takes · division · offended","href":"/wisdom/outrage-culture"},{"title":"Overeating and the Table","blurb":"Food is a good gift, and the table is one of Scripture's most honored places.","keywords":"overeating · overeat · gluttony · food addiction · binge eating · cannot stop eating · comfort eating · emotional eating · stress eating · self control food · eating too much","href":"/wisdom/overeating"},{"title":"Overthinking","blurb":"Overthinking is the mind trying to control by rehearsal what it cannot control at all.","keywords":"overthinking · rumination · ruminating · racing thoughts · obsessing · spiraling · cannot stop thinking · analysis paralysis · circular thoughts · mind racing · indecision","href":"/wisdom/overthinking"},{"title":"Parenting Adult Children","blurb":"There comes a day when the parent must stop steering and start blessing, when the open hand replaces the firm grip.","keywords":"adult children · grown kids · adult son · adult daughter · letting go · empty nest · advice unwanted · boundaries · in-laws · estranged child · prodigal","href":"/wisdom/parenting-adult-children"},{"title":"Parenting Struggles","blurb":"No one parents from a position of mastery. Scripture hands the work to ordinary parents, tells them to teach as they walk and sit and lie down, and never pretends it will be clean or finished by…","keywords":"parenting · kids · children · child · raising kids · exhausted parent · bad parent · discipline · toddler · teenager · failing my kids · overwhelmed mom · tired dad · no patience","href":"/wisdom/parenting-struggles"},{"title":"Parenting Young Children","blurb":"The early years are not a delay before the real parenting begins. They are the parenting, the slow patient shaping of a small soul by ten thousand ordinary moments no one will applaud.","keywords":"parenting · children · toddler · kids · young children · discipline · exhausted parent · patience · raising kids · tantrums · mother · father","href":"/wisdom/parenting-young-children"},{"title":"Patience and Waiting","blurb":"Patience is not a passive temperament you either have or lack.","keywords":"patience · patient · impatient · waiting · slow · endurance · longsuffering · restless · hurry · self-control · delay · frustrated","href":"/wisdom/patience"},{"title":"Peace and Calm","blurb":"The peace Scripture offers is not mainly the absence of conflict but the presence of a wholeness, the Hebrew shalom, things set right with God, with others, and within.","keywords":"peace · peaceful · calm · rest · tranquility · shalom · stillness · inner peace · turmoil · restless · settled · reconciliation","href":"/wisdom/peace"},{"title":"People-Pleasing and the Fear of Man","blurb":"Scripture has an old, exact name for this: the fear of man, the dread of others' opinion that lays a snare for the feet.","keywords":"people-pleasing · people pleaser · fear of man · approval · validation · can't say no · boundaries · rejection · what others think · codependent · appeasing · insecurity","href":"/wisdom/people-pleasing"},{"title":"Perfectionism","blurb":"Perfectionism looks like high standards but often runs on fear, the dread of being found wanting, of resting only when the work is flawless and you with it.","keywords":"perfectionism · perfectionist · never good enough · high standards · self-criticism · fear of failure · all or nothing · control · inadequacy · scrupulosity · performance · flawless","href":"/wisdom/perfectionism"},{"title":"Persecution and Opposition","blurb":"Jesus never promised his followers the favor of the crowd. He promised the opposite, and then called it blessing, telling those who are reviled and shut out to rejoice rather than to recoil.","keywords":"persecution · persecuted · opposition · hostility · mocked · rejected for faith · hated · suffering for christ · enemies · slander · pressure · standing alone","href":"/wisdom/persecution-and-opposition"},{"title":"Perseverance and Endurance","blurb":"Perseverance is not gritting your teeth alone. Scripture treats it as the long obedience that suffering itself produces, the muscle that grows under load, and it promises that the one who does not…","keywords":"perseverance · persevere · endurance · endure · giving up · quitting · steadfast · persistence · weary · burnout · keep going · discouraged","href":"/wisdom/perseverance"},{"title":"Politics and Division","blurb":"The deepest line the Bible draws is not between left and right but between the kingdom of God and every kingdom that would claim your final loyalty.","keywords":"politics · political · division · divided · arguing · polarization · us versus them · election · tribalism · contempt · family fights about politics · outrage","href":"/wisdom/politics-and-division"},{"title":"Pornography and Its Grip","blurb":"If this has hold of you, hear first that you are not beyond reach and you are not alone in it.","keywords":"pornography · porn · addiction · habit · compulsion · lust · shame · secret · struggle · hooked · relapse · accountability","href":"/wisdom/pornography"},{"title":"Pride","blurb":"Pride is not loud confidence so much as the quiet conviction that the world should orbit you.","keywords":"pride · prideful · arrogant · arrogance · ego · self-righteous · have to be right · boastful · stubborn · superior · humble · humility","href":"/wisdom/pride"},{"title":"Procrastination and Laziness","blurb":"Scripture has a hard, almost comic honesty about the person who will not start, sending the sluggard to school under the ant and watching him roll on his bed like a door on its hinges.","keywords":"procrastination · procrastinating · laziness · lazy · sluggard · putting off · avoidance · idle · unmotivated · slacking · diligence · delay","href":"/wisdom/procrastination-and-laziness"},{"title":"Purpose and Meaning","blurb":"The Bible does not hand you a private purpose to discover so much as a maker who already knows what you are for. Meaning is not invented out of your own head.","keywords":"purpose · meaning · calling · why am i here · point of life · direction · vocation · significance · empty · aimless · destiny · what matters","href":"/wisdom/purpose-and-meaning"},{"title":"Raising Teenagers","blurb":"Raising a teenager is the slow, deliberate work of handing over the controls before you are ready, so that the child becomes an adult who can stand on their own faith and not just yours.","keywords":"teenager · teens · adolescent · my teen · rebellious · rebellion · parenting teens · pulling away · boundaries · letting go · growing up · defiant","href":"/wisdom/raising-teenagers"},{"title":"Regret and the Past","blurb":"Regret is grief aimed backward, the ache of a road not taken or a wrong that cannot be undone.","keywords":"regret · regrets · the past · what if · mistakes · wasted years · if only · remorse · missed chances · looking back · second-guessing · guilt","href":"/wisdom/regret"},{"title":"Rest and Sabbath","blurb":"Rest is not the reward for finishing your work. It is a command, given by a God who rested when nothing forced him to, and a weekly declaration that the world holds together without you.","keywords":"rest · sabbath · can't rest · always busy · no downtime · restless · workaholic · need a break · guilt about resting · slow down · never stop · weary","href":"/wisdom/rest-and-sabbath"},{"title":"Restlessness","blurb":"Restlessness is not always a problem to be solved. It is often the soul telling the truth, that it was made for more than it has found, and Scripture treats that ache not as a flaw to suppress but as…","keywords":"restless · restlessness · unsettled · agitated · cannot sit still · discontent · antsy · searching · unease · wanderlust · never satisfied","href":"/wisdom/restlessness"},{"title":"Retirement","blurb":"The work that defined your days ends, and the question underneath the gold watch is what your life is for now.","keywords":"retirement · retiring · retired · stopped working · end of career · last third of life · no longer working · what next · aging · golden years · purpose in retirement · winding down","href":"/wisdom/retirement"},{"title":"Returning to God","blurb":"The whole of Scripture turns on one repeated mercy: that the way back is always open. Repentance is not crawling back to a reluctant God but turning toward a Father who has been watching the road.","keywords":"return to god · coming back · repentance · prodigal · homecoming · second chance · start again · restoration · come home · ran away from god · renew faith · rededication","href":"/wisdom/returning-to-god"},{"title":"Revenge and Getting Even","blurb":"The wish to get even feels like justice from the inside, but it almost never restores what was taken and almost always costs the one who carries it.","keywords":"revenge · getting even · payback · vengeance · want them to pay · they hurt me · settle the score · retaliation · grudge · make them suffer · vindication","href":"/wisdom/revenge"},{"title":"Saving and Spending","blurb":"How you handle money is a window into the heart, and the question is not only how much you have but what owns you.","keywords":"saving · spending · budget · money · debt · frugal · overspending · impulse · consumer · shopping · finances · stewardship","href":"/wisdom/saving-and-spending"},{"title":"Saying No","blurb":"A no you mean is worth more than a yes you resent. Scripture does not praise the man who carries everything, but the one who knows his limits, keeps his word, and does not let his speech swell beyond…","keywords":"saying no · boundaries · overcommitted · people pleasing · burnout · yes · limits · too busy · guilt · obligation · stretched thin · spread too thin","href":"/wisdom/saying-no"},{"title":"Self-Control and Discipline","blurb":"Self-control is not white-knuckled willpower but a fruit grown slowly by the Spirit, the steady governance of a life that has learned to want the right things.","keywords":"self-control · discipline · willpower · self-discipline · temptation · restraint · habits · impulse · appetite · moderation · self-mastery · indulgence","href":"/wisdom/self-control"},{"title":"Self-Doubt","blurb":"Self-doubt asks the right question of the wrong judge. The issue was never whether you are enough on your own, you are not, and neither am I, but whose verdict you will finally trust, and Scripture…","keywords":"self-doubt · insecure · insecurity · not good enough · imposter · second-guessing · unsure of myself · low confidence · inadequate · questioning myself · doubt myself","href":"/wisdom/self-doubt"},{"title":"Self-Hatred","blurb":"Self-hatred is not humility, though it often disguises itself as such.","keywords":"self-hatred · self-loathing · worthless · i hate myself · self-disgust · self-harm · contempt · ashamed of myself · i am a failure · no good · despise myself · self-condemnation","href":"/wisdom/self-hatred"},{"title":"Self-Pity","blurb":"Self-pity is the grief that curdled, the sorrow that stopped looking for God and began collecting evidence against him.","keywords":"self-pity · feeling sorry for myself · victim · poor me · nobody cares · it's not fair · woe is me · resentful · wallowing · martyr · hard done by · bitter","href":"/wisdom/self-pity"},{"title":"Self-Righteousness","blurb":"Self-righteousness is the sin that hides inside obedience, the quiet conviction that I have earned what others have not.","keywords":"self-righteous · self-righteousness · judgmental · superior · looking down · holier than thou · moralistic · smug · better than · earning · merit · religious pride","href":"/wisdom/self-righteousness"},{"title":"Selfishness","blurb":"Selfishness is the gravity of the fallen heart, the slow pull that bends everything back toward the self. It is not always loud.","keywords":"selfish · selfishness · self-centered · self-absorbed · me first · self-interest · inconsiderate · ego · self-seeking · looking out for myself · self-focused","href":"/wisdom/selfishness"},{"title":"Sensitivity and Feeling Too Much","blurb":"To feel things deeply is not a defect to be hardened out of you.","keywords":"sensitive · sensitivity · feel too much · easily hurt · thin-skinned · overwhelmed by emotion · tender-hearted · deeply affected · take things hard · empathy overload · fragile","href":"/wisdom/sensitivity"},{"title":"Serving in the Church","blurb":"You were given gifts that were never meant to stay yours alone.","keywords":"serving · volunteer · burnout · ministry · spiritual gifts · helping · overcommitted · tired of serving · where to serve · saying no · calling","href":"/wisdom/serving-in-the-church"},{"title":"Serving Others","blurb":"In the kingdom Jesus describes, greatness runs in reverse, the first becoming last and the leader becoming the servant of all. Service is not a lower task for those without a platform.","keywords":"serving · service · servanthood · helping others · volunteer · ministry · gifts · use my gifts · humility · wash feet · the least of these · love your neighbor","href":"/wisdom/serving-others"},{"title":"Setting Boundaries","blurb":"A boundary is not a wall against love but a fence around a life, so that the love you give is given on purpose and not bled out by accident.","keywords":"boundaries · saying no · overcommitted · people pleasing · burnout · limits · guilt · drained · stretched thin · self-protection · yes to everything","href":"/wisdom/setting-boundaries"},{"title":"Sexual Purity and Desire","blurb":"Scripture takes desire seriously precisely because it takes the body seriously, treating sex not as dirty but as so weighty it belongs inside covenant.","keywords":"sexual purity · lust · desire · sex · temptation · self-control · celibacy · chastity · fornication · abstinence · longing · flesh","href":"/wisdom/sexual-purity"},{"title":"Shame","blurb":"Guilt says you did a bad thing. Shame says you are a bad thing.","keywords":"shame · ashamed · worthless · dirty · exposed · humiliated · self-loathing · not enough · disgrace · embarrassed · i hate myself · feel unworthy","href":"/wisdom/shame"},{"title":"Sibling Conflict","blurb":"No one knows your wounds like the people who grew up beside you, and no rift cuts quite like the one with a brother or sister.","keywords":"sibling · siblings · brother · sister · family conflict · favoritism · rivalry · inheritance · jealousy · old wounds · family feud","href":"/wisdom/sibling-conflict"},{"title":"Singleness","blurb":"Singleness is not a waiting room or a lesser state. Scripture treats it as a full life with its own freedom and calling, and it never measures a person's worth by whether someone chose to marry them.","keywords":"single · singleness · unmarried · never married · lonely single · will i ever marry · wanting a spouse · no partner · left behind · waiting · celibate · alone","href":"/wisdom/singleness"},{"title":"Social Media and Attention","blurb":"Your attention is not a neutral thing you happen to spend. It is the soil your soul grows in, and these tools are built by careful people to capture it and sell it.","keywords":"social media · phone · scrolling · distraction · screen time · instagram · addicted to phone · doom scroll · attention · notifications · feed · online","href":"/wisdom/social-media"},{"title":"Spiritual Growth","blurb":"Growth in the Christian life is not self-improvement with a religious coat of paint.","keywords":"growth · maturity · sanctification · discipleship · spiritual formation · change · stuck · stagnant · becoming · transformed · fruit · godliness","href":"/wisdom/spiritual-growth"},{"title":"Spiritual Pride","blurb":"Spiritual pride is the most dangerous sin precisely because it grows in the soil of real devotion.","keywords":"spiritual pride · self-righteous · judgmental · superior · holier than thou · looking down on others · religious pride · smug · arrogant faith · comparison · better than · pride in faith","href":"/wisdom/spiritual-pride"},{"title":"Spiritual Warfare","blurb":"The Bible tells you that you live on a contested ground, that there is a real enemy who is a liar and an accuser, and that the fight is fought not mainly in dramatic moments but in the daily work of…","keywords":"spiritual warfare · temptation · the devil · satan · evil · spiritual attack · darkness · demonic · resist · armor of god · stand firm · battle","href":"/wisdom/spiritual-warfare"},{"title":"Starting Over","blurb":"The God of Scripture is in the business of beginning again. He does not write people off at their lowest point but specializes in the second chapter, making new things out of ruined ones and people…","keywords":"starting over · fresh start · new beginning · second chance · rebuild · begin again · blank slate · after failure · reset · from scratch · redemption · trying again","href":"/wisdom/starting-over"},{"title":"Status and Recognition","blurb":"The hunger to be recognized is not a modern invention, only a newly measured one, now counted in followers and likes.","keywords":"status · recognition · approval · applause · followers · validation · ambition · pride · reputation · being seen · achievement · praise","href":"/wisdom/status-and-recognition"},{"title":"Stealing and Taking","blurb":"Stealing is bigger than the empty pocket of the person robbed.","keywords":"stealing · steal · theft · stole · taking what isn't mine · shoplifting · cheating on taxes · fraud · embezzling · dishonest gain · cannot stop stealing","href":"/wisdom/stealing"},{"title":"Stewardship","blurb":"Stewardship begins with a single fact, that nothing you hold is finally your own.","keywords":"stewardship · steward · managing · resources · time management · talents · responsibility · trust · accountability · gifts · creation care · owner not","href":"/wisdom/stewardship"},{"title":"Stubbornness","blurb":"Stubbornness is the strength of conviction turned to stone. There is a holy firmness that holds the line when everything pushes against it, and there is a hardness that simply refuses to bend because…","keywords":"stubborn · stubbornness · won't budge · hard-headed · set in my ways · obstinate · inflexible · always right · won't change my mind · rigid · dig in · unyielding","href":"/wisdom/stubbornness"},{"title":"Submitting to Leaders","blurb":"Scripture asks Christians to honor and submit to their leaders, and the command makes many of us flinch, because we have seen authority abused and called holy.","keywords":"submission · church leaders · elders · authority · pastor · obey leaders · accountability · honoring leadership · trust · headship · discipline","href":"/wisdom/submitting-to-leaders"},{"title":"Success and Failure","blurb":"Scripture refuses both the worship of success and the despair of failure.","keywords":"failure · failed · success · not good enough · let everyone down · ambition · fear of failing · comparison · behind in life · lost everything · starting over · ashamed","href":"/wisdom/success-and-failure"},{"title":"Sudden and Traumatic Loss","blurb":"When death comes without warning, there is no time to brace, no chance to say goodbye, only the shock of a world that was whole this morning and shattered by night.","keywords":"sudden death · unexpected loss · no goodbye · accident · sudden loss · traumatic death · they were just here · shock · out of nowhere · no warning · violent death","href":"/wisdom/sudden-loss"},{"title":"Suicidal Thoughts","blurb":"If you are thinking of ending your life, your pain is real and it deserves to be taken seriously, but the thought it is telling you, that there is no way through, is lying to you.","keywords":"suicidal · suicide · want to die · kill myself · end my life · no reason to live · better off dead · hopeless · self harm · cannot go on · thoughts of dying","href":"/wisdom/suicidal-thoughts"},{"title":"Surrender and Letting Go","blurb":"Surrender is the word the modern ear most resists, because it sounds like defeat.","keywords":"surrender · letting go · giving up control · yielding · trust god · not my will · release control · submit to god · thy will be done · control freak · holding on too tight · give it to god","href":"/wisdom/surrender"},{"title":"Survivor's Guilt","blurb":"When others died and you lived, the heart often turns on itself, replaying what you might have done, certain you do not deserve the breath still in your lungs.","keywords":"survivors guilt · why did i live · should have been me · i survived · guilt over surviving · self blame · could have saved them · blame myself · they died and i lived · haunted","href":"/wisdom/survivors-guilt"},{"title":"Talking with Your Spouse","blurb":"Most marriages do not break for lack of love but for lack of being heard.","keywords":"communication · marriage · spouse · husband · wife · listening · misunderstood · talking past · silence · stonewalling · shutting down · not heard","href":"/wisdom/marriage-communication"},{"title":"Technology and Distraction","blurb":"Your attention is not a small thing. It is the shape of your soul over time, since what you behold is what you become.","keywords":"distraction · distracted · phone addiction · screen time · social media · can't focus · scrolling · always online · attention · doomscrolling · comparison online · restless mind","href":"/wisdom/technology-and-distraction"},{"title":"Temptation","blurb":"Temptation itself is not sin, Jesus was tempted in every way and did not fall.","keywords":"temptation · tempted · lust · addiction · habit · keep falling · cannot stop · willpower · struggle with sin · relapse · trapped · vice","href":"/wisdom/temptation"},{"title":"The Empty Nest","blurb":"The house goes quiet and you are not sure who you are in the silence.","keywords":"empty nest · kids moved out · children grown · last child left · quiet house · midlife · purpose after kids · marriage after children · letting go · grown children · what now","href":"/wisdom/empty-nest"},{"title":"The End Times","blurb":"Scripture promises that the same Jesus who left will return to set the world right, and that this hope should make Christians awake rather than anxious.","keywords":"end times · second coming · return of christ · rapture · tribulation · antichrist · armageddon · last days · prophecy · apocalypse · revelation · millennium","href":"/wisdom/the-end-times"},{"title":"The Fear of the Lord","blurb":"The fear of the Lord is not the cringing dread of a slave before a tyrant.","keywords":"fear of the lord · reverence · awe · holiness of god · wisdom · fear god · worship · trembling · majesty · the holy · obedience · humility before god","href":"/wisdom/the-fear-of-the-lord"},{"title":"The Love of God","blurb":"The love of God in Scripture is not a sentiment but a costly action, measured at the cross. It does not wait for you to clean yourself up.","keywords":"love of god · does god love me · grace · unconditional love · god cares · loved · acceptance · father heart · mercy · god's affection · am i loved · favor","href":"/wisdom/gods-love"},{"title":"The Need for Control","blurb":"The need to control is fear wearing the mask of responsibility.","keywords":"control · controlling · control freak · can't let go · micromanage · anxious control · have to fix it · trust · surrender · white-knuckle · grip · let go","href":"/wisdom/need-for-control"},{"title":"The News and Fear","blurb":"The news is built to keep you afraid, because fear holds attention and attention is the product being sold.","keywords":"news · fear · afraid · doom · headlines · media · anxious about world · catastrophe · outrage · current events · world is ending · fearful","href":"/wisdom/the-news-and-fear"},{"title":"The Problem of Evil","blurb":"If God is good and able, why is there so much that is neither. Scripture does not hand the sufferer a tidy answer to that question.","keywords":"evil · suffering · why does god allow · pain · theodicy · innocent suffering · where is god · tragedy · injustice · god allows evil · natural disaster · cancer","href":"/wisdom/the-problem-of-evil"},{"title":"The Resurrection","blurb":"Christianity stands or falls on one event in history, that a crucified man walked out of his tomb.","keywords":"resurrection · did jesus rise · empty tomb · easter · rose from the dead · historical evidence · appearances · raised · is the resurrection real · third day · risen · eyewitnesses","href":"/wisdom/the-resurrection"},{"title":"Time and Priorities","blurb":"The problem is rarely that you have too little time. It is that you have never decided what the time is for, so it gets spent by whoever asks last and loudest.","keywords":"time · priorities · busy · busyness · calendar · schedule · overcommitted · no time · hurried · stretched thin · wasting time · urgent","href":"/wisdom/time-and-priorities"},{"title":"Toxic and Harmful Relationships","blurb":"Love is patient, but love is not a doormat, and Scripture never asks you to call harm by the name of devotion.","keywords":"toxic · abuse · abusive · manipulation · controlling · narcissist · harmful relationship · unsafe · boundaries · gaslighting · fear · trapped","href":"/wisdom/toxic-relationships"},{"title":"Welcoming Newcomers","blurb":"Most people decide whether they belong in a church before they hear a word of the sermon.","keywords":"welcome · hospitality · newcomer · visitor · stranger · outsider · feeling unwelcome · fitting in · greeting · belonging · the new person","href":"/wisdom/welcoming-newcomers"},{"title":"When God Feels Far Away","blurb":"There are seasons when prayer feels like talking to the ceiling and the old joy has gone cold.","keywords":"spiritual dryness · dry · empty · god feels far · no feeling · prayer feels dead · distant · cold heart · wilderness · barren · going through the motions · where is god","href":"/wisdom/spiritual-dryness"},{"title":"When Life Is Unfair","blurb":"There is a particular bitterness in suffering you did not earn while those who deserve worse seem to flourish. Scripture does not wave this away.","keywords":"unfair · injustice · not fair · why me · wicked prosper · undeserved · wronged · no justice · betrayed · good people suffer · unjust · where is god","href":"/wisdom/when-life-is-unfair"},{"title":"When Prayer Is Hard","blurb":"Prayer is not a performance you have to get right. Scripture shows it as a child speaking to a Father, and it promises that when you have no words at all, the Spirit himself prays in you with…","keywords":"cant pray · prayer is hard · dont know how to pray · no words to pray · prayer feels pointless · distracted in prayer · prayer life dead · want to pray · praying feels empty · talking to god · wandering mind · boring prayer","href":"/wisdom/prayer-struggles"},{"title":"When Someone Won't Change","blurb":"You cannot repent for another person, no matter how much you love them, and some of the hardest grief is loving someone who will not turn.","keywords":"won't change · addiction · enabling · broken promises · disappointment · letting go · acceptance · powerless · hope and grief · release · boundaries","href":"/wisdom/when-someone-wont-change"},{"title":"When You Are Afraid","blurb":"Scripture says do not be afraid again and again, and it is never spoken to deny the danger.","keywords":"fear · afraid · scared · terrified · courage · be strong · frightened · dread · what if · intimidated · fearful · facing the unknown","href":"/wisdom/fear-and-courage"},{"title":"When You Are Facing Death","blurb":"Scripture does not pretend death is nothing. It calls death an enemy, the last one.","keywords":"death · dying · terminal · end of life · afraid to die · mortality · passing away · hospice · last days · facing the end · fear of death · my death","href":"/wisdom/facing-death"},{"title":"When You Are Seriously Ill","blurb":"Scripture does not promise that the faithful are spared sickness, and it refuses to read illness as a verdict on your worth.","keywords":"illness · sick · disease · cancer · diagnosis · chronic pain · hospital · suffering body · healing · terminal · pain · my health · incurable","href":"/wisdom/serious-illness"},{"title":"When You Are Suffering","blurb":"Scripture does not explain your suffering away or hand you a reason that makes the wound smaller.","keywords":"suffering · pain · why me · hurting · affliction · trial · hardship · broken · wounded · anguish · why does god allow · ordeal","href":"/wisdom/suffering"},{"title":"When You Are Trapped by Addiction","blurb":"Scripture is honest about the chains we cannot break ourselves, naming the misery of doing the very thing we hate.","keywords":"addiction · addicted · alcohol · drinking · drugs · porn · cant stop · relapse · habit · bondage · dependency · compulsion · substance · recovery","href":"/wisdom/addiction"},{"title":"When You Are Waiting on God","blurb":"Scripture takes waiting seriously, because it knows how long God's people have had to wait.","keywords":"waiting · waiting on god · delay · unanswered prayer · how long · stuck · nothing is happening · patience · silence of god · still waiting · no answer · weary of waiting","href":"/wisdom/waiting-on-god"},{"title":"When You Cannot Forgive","blurb":"Forgiveness does not mean what was done was acceptable. It means you stop trying to collect the debt, and Scripture sets the standard not at what the other person deserves but at what you have already…","keywords":"forgive · forgiveness · forgiving · bitterness · resentment · hurt · wronged · betrayed · grudge · cannot forgive","href":"/wisdom/forgiveness"},{"title":"When You Have Lost Hope","blurb":"Scripture meets despair without flinching and without scolding. It records God's own people praying that they would rather die, and it answers not with a rebuke but with food, rest, and presence.","keywords":"despair · hopeless · no hope · give up · want to die · suicidal · cant go on · end it all · darkness · worthless · no way out · tired of living · rock bottom","href":"/wisdom/despair-and-hope"},{"title":"Why Follow Jesus","blurb":"The case for following Jesus rests finally on the kind of person he was and the claims he made, which were not the claims of a mere teacher.","keywords":"why follow jesus · who is jesus · why christianity · is jesus god · claims of christ · why believe · discipleship · lord and savior · is christianity true · salvation · born again · becoming a christian","href":"/wisdom/why-follow-jesus"},{"title":"Work and Burnout","blurb":"Burnout is not always a sign you are doing too little. Often it is the sign of a body and soul kept under load that God never asked you to carry, with no rhythm to set it down.","keywords":"burnout · burned out · exhausted · overworked · tired of my job · no energy · work stress · drained · can't keep up · hate my job · running on empty · depleted","href":"/wisdom/work-and-burnout"},{"title":"Work and Life Balance","blurb":"Work is a good thing that becomes a hard master the moment it stops being one part of life and starts being all of it.","keywords":"work life balance · overworked · burnout · workaholic · no boundaries · always on · rest · exhausted · career and family · boundaries · too much work · drained","href":"/wisdom/work-life-balance"},{"title":"Worship and Praise","blurb":"Worship is not a feeling you generate but a response you owe, the turning of the whole self toward the worth of God.","keywords":"worship · praise · cant worship · going through the motions · empty worship · adore god · sing to god · heart not in it · reverence · glorify god · distracted in church · worship feels fake","href":"/wisdom/worship-and-praise"}]}]}
+diff --git a/client/src/components/MinimalNav.find.test.tsx b/client/src/components/MinimalNav.find.test.tsx
+new file mode 100644
+index 00000000..5c1841f6
+--- /dev/null
++++ b/client/src/components/MinimalNav.find.test.tsx
+@@ -0,0 +1,45 @@
++/**
++ * The header search is Find (master plan U15): a reference goes straight to
++ * the verse in the Study Bible, anything else to /search, and the parser
++ * arrives only when the field is focused.
++ */
++import { afterEach, describe, expect, it, vi } from "vitest";
++import { fireEvent, screen, waitFor } from "@testing-library/react";
++
++import { offlineFetch, renderWithProviders } from "@/test/harness";
++import MinimalNav from "./MinimalNav";
++
++function openSearch() {
++  vi.stubGlobal("fetch", offlineFetch());
++  renderWithProviders(<MinimalNav />);
++  fireEvent.click(screen.getByRole("button", { name: "Search, or look up a passage" }));
++  return screen.getByRole("textbox", { name: "Search LiveWell" });
++}
++
++afterEach(() => {
++  vi.unstubAllGlobals();
++  window.history.replaceState({}, "", "/");
++});
++
++describe("the header search", () => {
++  it("goes straight to a verse", async () => {
++    const box = openSearch();
++    fireEvent.change(box, { target: { value: "jn 3 16" } });
++    fireEvent.submit(box);
++    await waitFor(() => expect(window.location.pathname + window.location.hash).toBe("/study/bible/john/3#v16"));
++  });
++
++  it("offers the passage as a link while it is typed", async () => {
++    const box = openSearch();
++    fireEvent.focus(box);
++    fireEvent.change(box, { target: { value: "Romans 13" } });
++    expect(await screen.findByRole("link", { name: "Open Romans 13 in the Study Bible" })).toHaveAttribute("href", "/study/bible/romans/13");
++  });
++
++  it("sends a question to /search", async () => {
++    const box = openSearch();
++    fireEvent.change(box, { target: { value: "is america a christian nation" } });
++    fireEvent.submit(box);
++    await waitFor(() => expect(window.location.pathname + window.location.search).toBe("/search?q=is%20america%20a%20christian%20nation"));
++  });
++});
+diff --git a/client/src/components/MinimalNav.tsx b/client/src/components/MinimalNav.tsx
+index 66cd22d7..815d5205 100644
+--- a/client/src/components/MinimalNav.tsx
++++ b/client/src/components/MinimalNav.tsx
+@@ -18,6 +18,14 @@ import {
+   soleHeaderLink,
+   type SiteNavLink,
+ } from "@/lib/siteNav";
++import type { PassageMatch } from "@/lib/siteSearch";
++
++/**
++ * Search, with the reference parser behind it. Both load the first time the
++ * search field is focused (lib/siteSearch.ts), never with the header itself,
++ * so first paint carries none of it.
++ */
++const loadFind = () => import("@/lib/siteSearch");
+ 
+ /** Header and mobile menus show only groups that carry primary links. */
+ const HEADER_GROUPS = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0);
+@@ -57,19 +65,32 @@ export default function MinimalNav() {
+   const [mobileOpen, setMobileOpen] = useState(false);
+   const [searchOpen, setSearchOpen] = useState(false);
+   const [searchQuery, setSearchQuery] = useState("");
++  // Reads a typed reference once the parser has loaded; null until then.
++  const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
+   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+   const dropdownRef = useRef<HTMLDivElement>(null);
+ 
+   const isActive = (href: string) =>
+     location === href || location.startsWith(href + "/");
+ 
+-  const handleSearch = (e: React.FormEvent) => {
++  const prepareSearch = () => {
++    if (readPassage) return;
++    loadFind()
++      .then((find) => find.loadPassageParser().then((parser) => setReadPassage(() => (q: string) => find.passageFor(q, parser))))
++      .catch(() => {});
++  };
++
++  // "John 3:16" or "jn 3 16" goes straight to the verse; anything else to /search.
++  const handleSearch = async (e: React.FormEvent) => {
+     e.preventDefault();
+-    if (searchQuery.trim()) {
+-      navigate("/search?q=" + encodeURIComponent(searchQuery.trim()));
++    const q = searchQuery.trim();
++    if (q) {
++      const fallback = "/search?q=" + encodeURIComponent(q);
++      navigate(await loadFind().then((find) => find.findHref(q), () => fallback));
+     }
+     setSearchOpen(false);
+   };
++  const typedPassage = readPassage && searchQuery.trim() ? readPassage(searchQuery) : null;
+ 
+   useEffect(() => {
+     const handleClickOutside = (e: MouseEvent) => {
+@@ -141,7 +162,7 @@ export default function MinimalNav() {
+                 marginBottom: "16px",
+               }}
+             >
+-              Search the writing
++              Look up a passage or ask a question
+             </p>
+             <form onSubmit={handleSearch}>
+               <label
+@@ -160,8 +181,9 @@ export default function MinimalNav() {
+                 id="nav-search-input"
+                 autoFocus
+                 type="text"
+-                placeholder="What are you looking for?"
++                placeholder="John 3:16, or your question"
+                 value={searchQuery}
++                onFocus={prepareSearch}
+                 onChange={e => setSearchQuery(e.target.value)}
+                 style={{
+                   width: "100%",
+@@ -177,6 +199,26 @@ export default function MinimalNav() {
+                 }}
+               />
+             </form>
++            {typedPassage && (
++              <Link
++                href={typedPassage.href}
++                onClick={() => setSearchOpen(false)}
++                style={{
++                  display: "inline-flex",
++                  alignItems: "center",
++                  minHeight: "44px",
++                  marginTop: "12px",
++                  fontFamily: "var(--U)",
++                  fontSize: "15px",
++                  fontWeight: 600,
++                  color: "var(--charcoal-fg)",
++                  textDecoration: "none",
++                  borderBottom: "1px solid var(--mustard)",
++                }}
++              >
++                Open {typedPassage.label} in the Study Bible
++              </Link>
++            )}
+             <div
+               style={{
+                 display: "flex",
+@@ -432,7 +474,7 @@ export default function MinimalNav() {
+             <button
+               type="button"
+               onClick={() => setSearchOpen(true)}
+-              aria-label="Search essays and books"
++              aria-label="Search, or look up a passage"
+               title="Search"
+               style={{
+                 background: "none",
+diff --git a/client/src/lib/siteSearch.test.ts b/client/src/lib/siteSearch.test.ts
+index 542ddf26..ca2b7f52 100644
+--- a/client/src/lib/siteSearch.test.ts
++++ b/client/src/lib/siteSearch.test.ts
+@@ -3,7 +3,25 @@
+  * actually type, and puts the closest title first.
+  */
+ import { describe, expect, it } from "vitest";
+-import { crisisTopicsFor, hasWordStarts, normalizeText, queryWords, rankEntries, scoreEntry } from "./siteSearch";
++import fs from "node:fs";
++import path from "node:path";
++
++import { LIBRARY_SOURCES } from "./catalog";
++import {
++  crisisTopicsFor,
++  essayEntries,
++  findHref,
++  hasWordStarts,
++  indexEntries,
++  libraryEntries,
++  loadPassageParser,
++  normalizeText,
++  passageFor,
++  queryWords,
++  rankEntries,
++  scoreEntry,
++  searchWords,
++} from "./siteSearch";
+ 
+ const worryJournal = { title: "The Worry Journal", blurb: "Five minutes before bed.", sourceLabel: "Tools" };
+ const anxietyCare = { title: "I can't stop worrying", blurb: "For the worry that won't switch off.", keywords: "anxiety worry can't sleep Philippians 4:6", sourceLabel: "Find Help" };
+@@ -65,3 +83,109 @@ describe("crisis words", () => {
+     expect(crisisTopicsFor("Deuteronomy")).toEqual([]);
+   });
+ });
++
++describe("plain questions", () => {
++  it("drops the small words of a question and keeps what is asked", () => {
++    expect(searchWords("how to talk to my kids about God")).toEqual(["talk", "kids", "god"]);
++    expect(searchWords("is america a christian nation")).toEqual(["america", "christian", "nation"]);
++    // Negatives change the question, so they stay.
++    expect(searchWords("I can't forgive")).toEqual(["cant", "forgive"]);
++    // A query of nothing but small words is still searched.
++    expect(searchWords("who am I")).toEqual(["who", "am"]);
++  });
++
++  it("lets kids find children, and a plural find its singular", () => {
++    const study = { title: "Raising Children Who Pray", blurb: "", sourceLabel: "Study Guides" };
++    expect(scoreEntry(study, "praying with my kids")).toBeGreaterThan(0);
++    expect(scoreEntry({ title: "One Nation Under God", blurb: "" }, "nations")).toBeGreaterThan(0);
++  });
++
++  it("puts a whole word of the title ahead of a word it only starts", () => {
++    const question = { title: "Was America Founded as a Christian Nation?", blurb: "" };
++    const history = { title: "How We Got Here: A History of Christian Nationalism in America", blurb: "" };
++    expect(rankEntries([history, question], "is america a christian nation")).toEqual([question, history]);
++  });
++});
++
++describe("the sources", () => {
++  const source = { url: "/x.json", listKey: "items", label: "How-To Library", type: "How-To", buildHref: (s: string) => `/how-tos/${s}`, indexHref: "/how-tos" };
++
++  it("reads a library manifest and skips what is malformed", () => {
++    const entries = libraryEntries(source, { items: [{ slug: "pray", title: "How to Pray", excerpt: "Start small.", askedAs: ["prayer", 4] }, { title: "no slug" }, null] });
++    expect(entries).toEqual([{ title: "How to Pray", blurb: "Start small.", facet: "", keywords: "prayer", sourceLabel: "How-To Library", href: "/how-tos/pray", indexHref: "/how-tos" }]);
++    expect(libraryEntries(source, null)).toEqual([]);
++  });
++
++  it("reads the search index and skips entries with no title or an outside link", () => {
++    const entries = indexEntries({ sources: [{ label: "Honest Answers", indexHref: "/answers", entries: [{ title: "Q?", href: "/answers#q" }, { title: "", href: "/answers" }, { title: "Out", href: "https://example.com" }] }, { label: "Bad" }] });
++    expect(entries).toEqual([{ title: "Q?", blurb: "", facet: "", keywords: "", sourceLabel: "Honest Answers", href: "/answers#q", indexHref: "/answers" }]);
++    expect(indexEntries("nonsense")).toEqual([]);
++  });
++
++  it("finds a rewritten essay by its own title, only while it is public", () => {
++    const overrides = [{ slug: "a", title: "Why Does God Feel So Far Away?", excerpt: "Silence is not absence." }, { slug: "b", title: "Retired", excerpt: "" }];
++    const entries = essayEntries(overrides, (slug) => slug === "a");
++    expect(entries.map((e) => e.href)).toEqual(["/writing/a"]);
++    expect(rankEntries(entries, "god feel far away")[0]?.title).toBe("Why Does God Feel So Far Away?");
++  });
++});
++
++describe("passages", () => {
++  it("opens a reference at its verse or chapter, and a book named alone at the book", async () => {
++    const p = await loadPassageParser();
++    expect(passageFor("John 3:16", p)).toEqual({ label: "John 3:16", href: "/study/bible/john/3#v16", book: false });
++    expect(passageFor("jn 3 16", p)).toEqual({ label: "John 3:16", href: "/study/bible/john/3#v16", book: false });
++    expect(passageFor("Romans 13", p)).toEqual({ label: "Romans 13", href: "/study/bible/romans/13", book: false });
++    expect(passageFor("ps 23:1-3", p)?.href).toBe("/study/bible/psalms/23#v1");
++    expect(passageFor("Romans", p)).toEqual({ label: "Romans", href: "/study/bible/romans", book: true });
++    expect(passageFor("1 John", p)?.href).toBe("/study/bible/1-john");
++    expect(passageFor("psalm", p)?.href).toBe("/study/bible/psalms");
++  });
++
++  it("leaves everything else to search, abbreviations on their own included", async () => {
++    const p = await loadPassageParser();
++    for (const q of ["ps", "mk", "how to talk to my kids about God", "is america a christian nation", "Romans 13 and the state", "Hezekiah 1:1", ""]) {
++      expect(passageFor(q, p), q).toBeNull();
++    }
++  });
++
++  it("sends a chapter or verse straight to the Study Bible and anything else to /search", async () => {
++    expect(await findHref("John 3:16")).toBe("/study/bible/john/3#v16");
++    expect(await findHref(" jn 3 16 ")).toBe("/study/bible/john/3#v16");
++    expect(await findHref("Romans 13")).toBe("/study/bible/romans/13");
++    expect(await findHref("Romans")).toBe("/search?q=Romans");
++    expect(await findHref("is america a christian nation")).toBe("/search?q=is%20america%20a%20christian%20nation");
++  });
++});
++
++describe("the whole site, as a reader searches it", () => {
++  const ROOT = path.resolve(__dirname, "../../..");
++  const readPublic = (url: string) => JSON.parse(fs.readFileSync(path.join(ROOT, "client/public", url), "utf8"));
++  // The same sources /search reads, from the committed files.
++  const entries = [
++    ...LIBRARY_SOURCES.flatMap((s) => libraryEntries(s, readPublic(s.url))),
++    ...indexEntries(readPublic("/search-index.json")),
++  ];
++  const top = (q: string) => rankEntries(entries, q)[0]?.href;
++
++  it("holds every source the search index promises", () => {
++    const labels = new Set(entries.map((e) => e.sourceLabel));
++    for (const l of ["What the Bible Says", "Honest Answers", "Family Devotions", "Family Catechism", "Christ and the Nation", "Find Help"]) expect(labels, l).toContain(l);
++  });
++
++  it("answers a parent's plain question with the page on faith at home", () => {
++    expect(top("how to talk to my kids about God")).toBe("/help/family-devotions");
++    expect(top("how do I talk to my children about God")).toBe("/help/family-devotions");
++  });
++
++  it("answers the Christian-nation question with the essay that asks it", () => {
++    expect(top("is america a christian nation")).toBe("/nation/christian-nation");
++  });
++
++  it("finds a wisdom topic, an Honest Answer, a devotion, and a catechism question by their own words", () => {
++    expect(top("wayward child")).toBe("/wisdom/wayward-child");
++    expect(top("did the resurrection actually happen")).toBe("/answers#did-the-resurrection-actually-happen");
++    expect(rankEntries(entries, "made on purpose").some((e) => e.sourceLabel === "Family Devotions")).toBe(true);
++    expect(rankEntries(entries, "who made you").some((e) => e.sourceLabel === "Family Catechism")).toBe(true);
++  });
++});
+diff --git a/client/src/lib/siteSearch.ts b/client/src/lib/siteSearch.ts
+index b434241d..4a269ffb 100644
+--- a/client/src/lib/siteSearch.ts
++++ b/client/src/lib/siteSearch.ts
+@@ -1,17 +1,30 @@
+ /**
+- * Ranking for on-site search (pages/Search.tsx) over the static libraries,
+- * Find Help, the plans, and the tools.
++ * On-site search: the header search, /search, and the "Go to" fields.
+  *
+- * Every word the reader types must appear somewhere (title, summary, facet, or
+- * the everyday phrasings a care page lists in askedAs), so "worry journal"
+- * finds The Worry Journal and "cant sleep" finds "can't sleep". Titles that
+- * hold the whole phrase rank first, then titles holding every word, then
+- * askedAs phrasings, then the rest; on ties, a Find Help page or a tool comes
+- * before a library entry, because a reader in need is the one most likely to
+- * type a plain sentence.
++ * A Scripture reference comes first. "John 3:16", "jn 3 16", and "Romans 13"
++ * go to the passage in the Study Bible (passageFor, findHref); the reference
++ * parser is its own small chunk, loaded the first time a search field is
++ * focused (loadPassageParser), never on first paint.
++ *
++ * Everything else is ranked over the static libraries, Find Help, the plans,
++ * the tools, the rewritten essays, and public/search-index.json (wisdom
++ * topics, Honest Answers, family devotions and the catechism, Christ and the
++ * Nation; scripts/build-search-index.mjs). A plain question loses its small
++ * words first ("how to talk to my kids about God" is talk, kids, God), and
++ * every word left must appear somewhere (title, summary, facet, or the
++ * everyday phrasings a care page lists in askedAs), so "worry journal" finds
++ * The Worry Journal and "cant sleep" finds "can't sleep". Titles that hold the
++ * whole phrase rank first, then titles holding every word, then askedAs
++ * phrasings (the whole phrase, then every word), then the rest, with a word
++ * that is a whole word of the title
++ * ("nation") ahead of one that only starts one ("nationalism"); on ties, a
++ * Find Help page or a tool comes before a library entry, because a reader in
++ * need is the one most likely to type a plain sentence.
+  */
+ 
+ import type { CrisisTopic } from "@/components/CrisisBlock";
++import { pickString, type LibrarySource } from "@/lib/catalog";
++import type * as ScriptureRefModule from "@/lib/scripture-ref";
+ 
+ export interface Searchable {
+   title: string;
+@@ -23,6 +36,13 @@ export interface Searchable {
+   sourceLabel?: string;
+ }
+ 
++/** A search result: where it opens, and the page that lists everything of its kind. */
++export interface SearchEntry extends Searchable {
++  href: string;
++  indexHref: string;
++  sourceLabel: string;
++}
++
+ /** Lowercase, apostrophes dropped, punctuation to spaces. */
+ export function normalizeText(s: string): string {
+   return s
+@@ -46,23 +66,67 @@ export function hasWordStarts(text: string, words: string[]): boolean {
+   return words.every((w) => hay.includes(` ${w}`));
+ }
+ 
+-const PRIORITY: Record<string, number> = { "Find Help": 3, Tools: 2, "Eight-Week Plans": 1 };
++/**
++ * The small words of a plain question. Negatives ("not", "cant") and words
++ * that are also nouns ("will", "might") are kept, because they change what
++ * is being asked.
++ */
++const STOP_WORDS = new Set(
++  ("a an the and or but if of to in on at by for from with about into as is are was were be been am " +
++    "do does did have has had i im ive me my we us our you your he him his she her it its they them their " +
++    "this that these those there what whats which who when where why how can could should would " +
++    "so just really very say says tell").split(" ")
++);
+ 
+-export function scoreEntry(item: Searchable, q: string): number {
++/** The words of a query that carry what is asked: queryWords without the small words of a question. */
++export function searchWords(q: string): string[] {
+   const words = queryWords(q);
++  const content = words.filter((w) => !STOP_WORDS.has(w));
++  return content.length ? content : words;
++}
++
++/** Words people use for one another in a search: "kids" finds "children". */
++const SAME_WORDS: string[][] = [
++  ["kid", "kids", "child", "children"],
++  ["mom", "moms", "mother", "mothers"],
++  ["dad", "dads", "father", "fathers"],
++];
++const FAMILY = new Map(SAME_WORDS.flatMap((f) => f.map((w) => [w, f] as const)));
++
++/** A light stem, so "praying" finds "pray", "worries" finds "worry", and "nations" finds "nation". */
++function stem(w: string): string {
++  if (w.length > 5 && w.endsWith("ing")) return w.slice(0, -3);
++  if (w.length > 4 && /ie[sd]$/.test(w)) return `${w.slice(0, -3)}y`;
++  if (w.length > 3 && /[^su]s$/.test(w)) return w.slice(0, -1);
++  return w;
++}
++
++/** The forms a query word is matched by: its family ("kids" finds "children"), or itself and its stem. */
++function forms(w: string): readonly string[] {
++  const s = stem(w);
++  return FAMILY.get(w) ?? (s === w ? [w] : [w, s]);
++}
++
++const PRIORITY: Record<string, number> = { "Find Help": 3, Tools: 2, "Honest Answers": 2, "Eight-Week Plans": 1 };
++
++export function scoreEntry(item: Searchable, q: string): number {
++  const words = searchWords(q);
+   if (!words.length) return 0;
+   // The whole query, short words and all, so "is divorce a sin" meets its own phrasing.
+   const phrase = normalizeText(q);
+   // Every part starts with a space, so a match can be held to the start of a word.
+-  const title = ` ${normalizeText(item.title)}`;
++  const title = ` ${normalizeText(item.title)} `;
+   const keywords = ` ${normalizeText(item.keywords ?? "")}`;
+-  const all = `${title} ${normalizeText(item.blurb)} ${normalizeText(item.facet ?? "")}${keywords}`;
+-  const has = (hay: string, w: string) => hay.includes(` ${w}`);
++  const all = `${title}${normalizeText(item.blurb)} ${normalizeText(item.facet ?? "")}${keywords}`;
++  const has = (hay: string, w: string) => forms(w).some((f) => hay.includes(` ${f}`));
++  const whole = (w: string) => forms(w).some((f) => title.includes(` ${f} `) || title.includes(` ${f}s `));
+   if (!words.every((w) => has(all, w))) return 0;
+   let score = 10;
+-  if (has(title, phrase)) score += 100;
++  if (title.includes(` ${phrase}`)) score += 100;
+   else if (words.every((w) => has(title, w))) score += 50;
+-  if (has(keywords, phrase)) score += 40;
++  if (keywords.includes(` ${phrase}`)) score += 40;
++  else if (words.every((w) => has(keywords, w))) score += 20;
++  score += 5 * words.filter(whole).length;
+   return score + (PRIORITY[item.sourceLabel ?? ""] ?? 0);
+ }
+ 
+@@ -94,3 +158,109 @@ export function rankEntries<T extends Searchable>(items: T[], q: string): T[] {
+     .sort((a, b) => b.score - a.score || a.i - b.i)
+     .map((x) => x.item);
+ }
++
++// ── the sources ──────────────────────────────────────────────────────────────
++
++const isRecord = (x: unknown): x is Record<string, unknown> => !!x && typeof x === "object" && !Array.isArray(x);
++const text = (x: unknown) => (typeof x === "string" ? x : "");
++
++/** One static library manifest (lib/catalog.ts) as search entries; anything malformed is skipped. */
++export function libraryEntries(source: LibrarySource, data: unknown): SearchEntry[] {
++  const list = isRecord(data) ? data[source.listKey] : null;
++  if (!Array.isArray(list)) return [];
++  return list.filter(isRecord).flatMap((item) => {
++    if (typeof item.slug !== "string" || typeof item.title !== "string") return [];
++    return [{
++      title: item.title,
++      // Each library names its summary and facet fields differently; take the first present.
++      blurb: pickString(item.blurb, item.excerpt, item.summary, item.subtitle),
++      facet: pickString(item.group, item.pillar, item.topic, item.era, item.audience),
++      keywords: Array.isArray(item.askedAs) ? item.askedAs.filter((w) => typeof w === "string").join(" ") : "",
++      sourceLabel: source.label,
++      href: source.buildHref(item.slug),
++      indexHref: source.indexHref,
++    }];
++  });
++}
++
++/** public/search-index.json (scripts/build-search-index.mjs) as search entries. */
++export function indexEntries(data: unknown): SearchEntry[] {
++  const sources = isRecord(data) && Array.isArray(data.sources) ? data.sources : [];
++  return sources.filter(isRecord).flatMap((s) => {
++    const label = text(s.label);
++    const indexHref = text(s.indexHref);
++    if (!label || !indexHref.startsWith("/") || !Array.isArray(s.entries)) return [];
++    return s.entries.filter(isRecord).flatMap((e) => {
++      const href = text(e.href);
++      if (!text(e.title) || !href.startsWith("/")) return [];
++      return [{ title: text(e.title), blurb: text(e.blurb), facet: text(e.facet), keywords: text(e.keywords), sourceLabel: label, href, indexHref }];
++    });
++  });
++}
++
++/** The rewritten essays (essayOverrides.generated.ts), found by their own title and excerpt. */
++export function essayEntries(overrides: { slug: string; title: string; excerpt: string }[], isPublic: (slug: string) => boolean): SearchEntry[] {
++  return overrides
++    .filter((o) => isPublic(o.slug))
++    .map((o) => ({ title: o.title, blurb: o.excerpt, sourceLabel: "Essays", href: `/writing/${o.slug}`, indexHref: "/writing" }));
++}
++
++// ── passages ─────────────────────────────────────────────────────────────────
++
++type Parser = typeof ScriptureRefModule;
++let parser: Promise<Parser> | null = null;
++
++/**
++ * The reference parser and its book table, a chunk of their own, fetched the
++ * first time a search field is focused. A failed load is forgotten, so the
++ * next focus tries again.
++ */
++export function loadPassageParser(): Promise<Parser> {
++  parser ??= import("@/lib/scripture-ref").catch((err: unknown) => {
++    parser = null;
++    throw err;
++  });
++  return parser;
++}
++
++export interface PassageMatch {
++  /** "John 3:16", "Psalm 23", "Romans". */
++  label: string;
++  /** The verse or chapter in the Study Bible, or the book's page. */
++  href: string;
++  /** A whole book named alone ("Romans"), as opposed to a chapter or verse. */
++  book: boolean;
++}
++
++/**
++ * The passage a query names: a reference ("jn 3 16", "Romans 13") or a book
++ * named in full on its own ("Romans", "1 John", "Psalm"). Null for anything
++ * else, including an abbreviation on its own ("ps", "mk"), which is too easily
++ * a word.
++ */
++export function passageFor(q: string, p: Parser): PassageMatch | null {
++  const ref = p.parseScriptureRef(q);
++  const href = ref && p.refHref(ref);
++  if (ref && href) return { label: p.formatRef(ref), href, book: false };
++  const book = p.findBook(q);
++  const key = p.bookKey(q);
++  const name = book && p.bookKey(book.name);
++  // The name itself, or it with or without a final "s" ("Psalm", "Revelations").
++  if (book && name && [name, `${name}s`, name.replace(/s$/, "")].includes(key)) return { label: book.name, href: `/study/bible/${book.slug}`, book: true };
++  return null;
++}
++
++/**
++ * Where a search field sends what was typed: a chapter or verse straight to
++ * the Study Bible, anything else (a book named alone included) to /search.
++ */
++export async function findHref(q: string): Promise<string> {
++  const query = q.trim();
++  try {
++    const match = passageFor(query, await loadPassageParser());
++    if (match && !match.book) return match.href;
++  } catch {
++    // The parser did not load (offline, a stale deploy); search still answers.
++  }
++  return `/search?q=${encodeURIComponent(query)}`;
++}
+diff --git a/client/src/pages/Answers.tsx b/client/src/pages/Answers.tsx
+index 339ba434..851bfc1b 100644
+--- a/client/src/pages/Answers.tsx
++++ b/client/src/pages/Answers.tsx
+@@ -7,6 +7,7 @@
+  * is denied them. Data lives in client/src/data/answers.ts; FAQPage JSON-LD is
+  * built from the same array so search and the page can never disagree.
+  */
++import { useEffect } from "react";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import { ANSWERS } from "@/data/answers";
+@@ -26,6 +27,13 @@ const faqSchema = {
+ };
+ 
+ export default function Answers() {
++  // A search result or a shared link (/answers#<slug>) opens on its answer;
++  // the page arrives after the address does, so the browser cannot do it.
++  useEffect(() => {
++    const id = window.location.hash.slice(1);
++    if (id) requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
++  }, []);
++
+   return (
+     <Layout>
+       <SEOMeta
+diff --git a/client/src/pages/Search.find.test.tsx b/client/src/pages/Search.find.test.tsx
+new file mode 100644
+index 00000000..1f795ebc
+--- /dev/null
++++ b/client/src/pages/Search.find.test.tsx
+@@ -0,0 +1,66 @@
++/**
++ * /search as Find (master plan U15): a reference opens the passage first, and
++ * a rewritten essay is found by the rewrite's own title, never twice.
++ */
++import { afterEach, describe, expect, it, vi } from "vitest";
++import { screen } from "@testing-library/react";
++import superjson from "superjson";
++
++import { offlineFetch, renderWithProviders } from "@/test/harness";
++import Search from "./Search";
++
++// One rewrite on the shelf, as essayOverrides.generated.ts lists it once a pilot lands.
++vi.mock("@/lib/essayOverrides.generated", () => ({
++  ESSAY_OVERRIDES: [
++    { slug: "what-render-unto-caesar-actually-means", title: "What Did Jesus Mean by \"Render Unto Caesar\"?", excerpt: "A coin, a trap, and a question about whose image you bear.", updated: "2026-10-30" },
++  ],
++}));
++
++/** The server's search answers with these rows; everything else is offline. */
++function serverSearch(results: Record<string, unknown>[]): typeof fetch {
++  const offline = offlineFetch();
++  return (async (input: RequestInfo | URL, init?: RequestInit) => {
++    const url = new URL(String(input instanceof Request ? input.url : input), "http://localhost");
++    if (!url.pathname.startsWith("/api/trpc/")) return offline(input, init);
++    const procs = decodeURIComponent(url.pathname.slice("/api/trpc/".length)).split(",");
++    const body = procs.map(() => ({ result: { data: superjson.serialize({ results, total: results.length }) } }));
++    return new Response(JSON.stringify(body), { status: 200, headers: { "Content-Type": "application/json" } });
++  }) as typeof fetch;
++}
++
++function searchFor(q: string, results: Record<string, unknown>[] = []) {
++  window.history.replaceState({}, "", `/search?q=${encodeURIComponent(q)}`);
++  vi.stubGlobal("fetch", serverSearch(results));
++  renderWithProviders(<Search />);
++}
++
++afterEach(() => {
++  vi.unstubAllGlobals();
++  window.history.replaceState({}, "", "/");
++});
++
++describe("Find on /search", () => {
++  it("opens a verse in the Study Bible before anything else", async () => {
++    searchFor("jn 3 16");
++    const link = await screen.findByRole("link", { name: /John 3:16/ });
++    expect(link).toHaveAttribute("href", "/study/bible/john/3#v16");
++    expect(screen.getByText("In the Study Bible")).toBeInTheDocument();
++    // A passage is a result: the page does not also say it found nothing.
++    expect(screen.queryByText(/Nothing here for/)).toBeNull();
++  });
++
++  it("shows no passage for a plain question", async () => {
++    searchFor("is america a christian nation");
++    expect(await screen.findByText(/Nothing here for/)).toBeInTheDocument();
++    expect(screen.queryByText("In the Study Bible")).toBeNull();
++  });
++
++  it("finds a rewrite by its own title and drops the database's older row for it", async () => {
++    searchFor("render unto caesar", [
++      { id: 1, type: "article", slug: "what-render-unto-caesar-actually-means", title: "What Render Unto Caesar Actually Means", createdAt: new Date("2025-01-01T00:00:00.000Z") },
++    ]);
++    const rewrite = await screen.findByRole("link", { name: /What Did Jesus Mean by "Render Unto Caesar"\?/ });
++    expect(rewrite).toHaveAttribute("href", "/writing/what-render-unto-caesar-actually-means");
++    expect(screen.queryByText("What Render Unto Caesar Actually Means")).toBeNull();
++  });
++});
+diff --git a/client/src/pages/Search.tsx b/client/src/pages/Search.tsx
+index 36092e43..1d00d51b 100644
+--- a/client/src/pages/Search.tsx
++++ b/client/src/pages/Search.tsx
+@@ -7,71 +7,57 @@ import { SEOMeta } from "@/components/SEOMeta";
+ import { Link } from "wouter";
+ import { ArrowLeft, Search as SearchIcon } from "lucide-react";
+ 
+-import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
++import { LIBRARY_SOURCES, type LibrarySource } from "@/lib/catalog";
++import { ESSAY_OVERRIDES } from "@/lib/essayOverrides.generated";
+ import { essayDate, isPublicEssay } from "@/lib/shelf";
+-import { crisisTopicsFor, rankEntries } from "@/lib/siteSearch";
++import {
++  crisisTopicsFor,
++  essayEntries,
++  indexEntries,
++  libraryEntries,
++  loadPassageParser,
++  passageFor,
++  rankEntries,
++  type SearchEntry,
++} from "@/lib/siteSearch";
+ import { CrisisBlock } from "@/components/CrisisBlock";
+ import { TOOLS } from "@/pages/ToolsHub";
+ 
+ // --- Library manifest search (static JSON content libraries) ---
+ // The source registry lives in @/lib/catalog so search and the unified
+-// /explore browse page read one list and never drift apart.
+-
+-interface LibraryEntry {
+-  slug: string;
+-  title: string;
+-  blurb: string;
+-  /** group (leadership/context) or pillar (life/formation) */
+-  facet: string;
+-  sourceLabel: string;
+-  href: string;
+-  indexHref: string;
+-  /** The everyday phrasings people use for it (a care page's askedAs). */
+-  keywords: string;
+-}
++// /explore browse page read one list and never drift apart. The wisdom
++// topics, Honest Answers, the family devotions and catechism, and Christ and
++// the Nation come from one small index (public/search-index.json), and the
++// rewritten essays from essayOverrides.generated.ts.
+ 
+ const LIBRARY_RESULT_CAP = 16;
+ 
+ // The tools, from the /tools registry, so "worry journal" finds the Worry Journal.
+-const TOOL_ENTRIES: LibraryEntry[] = TOOLS.map((t) => ({
+-  slug: t.href,
++const TOOL_ENTRIES: SearchEntry[] = TOOLS.map((t) => ({
+   title: t.title,
+   blurb: t.description,
+   facet: "Tool",
+   sourceLabel: "Tools",
+   href: t.href,
+   indexHref: "/tools",
+-  keywords: "",
+ }));
+ 
+-async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]> {
++// A rewrite is found by its own title and excerpt, here, not by the server.
++const ESSAY_ENTRIES: SearchEntry[] = essayEntries(ESSAY_OVERRIDES, (slug) => isPublicEssay(slug));
++const REWRITTEN = new Set(ESSAY_OVERRIDES.map((o) => o.slug));
++
++// Graceful per-manifest failure: a missing or malformed manifest should never break search.
++async function fetchEntries(url: string, read: (data: unknown) => SearchEntry[]): Promise<SearchEntry[]> {
+   try {
+-    const res = await fetch(source.url);
+-    if (!res.ok) return [];
+-    const data = await res.json();
+-    const list = data?.[source.listKey];
+-    if (!Array.isArray(list)) return [];
+-    return list
+-      .filter((item: Record<string, unknown>) => item && typeof item.slug === "string" && typeof item.title === "string")
+-      .map((item: Record<string, unknown>) => ({
+-        slug: item.slug as string,
+-        title: item.title as string,
+-        // Each library names its summary/facet fields differently — take the
+-        // first present so every source searches on its real text.
+-        blurb: pickString(item.blurb, item.excerpt, item.summary, item.subtitle),
+-        facet: pickString(item.group, item.pillar, item.topic, item.era, item.audience),
+-        sourceLabel: source.label,
+-        href: source.buildHref(item.slug as string),
+-        indexHref: source.indexHref,
+-        keywords: Array.isArray(item.askedAs) ? (item.askedAs as unknown[]).filter((w) => typeof w === "string").join(" ") : "",
+-      }));
++    const res = await fetch(url);
++    return res.ok ? read(await res.json()) : [];
+   } catch {
+-    // Graceful per-manifest failure: a missing or malformed manifest
+-    // should never break essay search.
+     return [];
+   }
+ }
+ 
++const fetchLibrarySource = (source: LibrarySource) => fetchEntries(source.url, (data) => libraryEntries(source, data));
++
+ export default function SearchPage() {
+   const [, navigate] = useLocation();
+   // A deep link (/search?q=Genesis 1, from the Study Bible) opens on its query.
+@@ -87,14 +73,14 @@ export default function SearchPage() {
+   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
+ 
+   // Library manifests: fetched once on mount, filtered client-side per query
+-  const [libraryEntries, setLibraryEntries] = useState<LibraryEntry[]>([]);
++  const [entries, setEntries] = useState<SearchEntry[]>([]);
+   const [libraryLoaded, setLibraryLoaded] = useState(false);
+ 
+   useEffect(() => {
+     let cancelled = false;
+-    Promise.all(LIBRARY_SOURCES.map(fetchLibrarySource)).then((lists) => {
++    Promise.all([...LIBRARY_SOURCES.map(fetchLibrarySource), fetchEntries("/search-index.json", indexEntries)]).then((lists) => {
+       if (cancelled) return;
+-      setLibraryEntries([...lists.flat(), ...TOOL_ENTRIES]);
++      setEntries([...ESSAY_ENTRIES, ...lists.flat(), ...TOOL_ENTRIES]);
+       setLibraryLoaded(true);
+     });
+     return () => {
+@@ -102,10 +88,21 @@ export default function SearchPage() {
+     };
+   }, []);
+ 
++  // "John 3:16" or "jn 3 16" opens the verse before anything else. The parser
++  // is its own small chunk; this page asks for it at once, since it is the
++  // whole point of the page and a deep link may already hold a reference.
++  const [parser, setParser] = useState<Awaited<ReturnType<typeof loadPassageParser>> | null>(null);
++  useEffect(() => {
++    let live = true;
++    loadPassageParser().then((p) => { if (live) setParser(p); }).catch(() => {});
++    return () => { live = false; };
++  }, []);
++  const passage = useMemo(() => (parser && query.trim() ? passageFor(query, parser) : null), [parser, query]);
++
+   const libraryMatches = useMemo(() => {
+     if (query.trim().length === 0) return [];
+-    return rankEntries(libraryEntries, query);
+-  }, [libraryEntries, query]);
++    return rankEntries(entries, query);
++  }, [entries, query]);
+ 
+   const visibleLibraryMatches = libraryMatches.slice(0, LIBRARY_RESULT_CAP);
+   // A reader who types their trouble here ("I want to die") sees how to reach
+@@ -115,7 +112,7 @@ export default function SearchPage() {
+     if (libraryMatches.length <= LIBRARY_RESULT_CAP) return [];
+     const visible = new Set(visibleLibraryMatches);
+     const hidden = libraryMatches.filter((entry) => !visible.has(entry));
+-    const seen = new Map<string, LibraryEntry>();
++    const seen = new Map<string, SearchEntry>();
+     for (const entry of hidden) {
+       if (!seen.has(entry.indexHref)) seen.set(entry.indexHref, entry);
+     }
+@@ -145,9 +142,11 @@ export default function SearchPage() {
+         ? articleResults.data?.results || []
+         : resourceResults.data?.results || [];
+   // Retired essays never surface in search (lib/shelf.ts). The post-cutoff
+-  // rule reads the same date everywhere: publishedAt, else createdAt.
++  // rule reads the same date everywhere: publishedAt, else createdAt. An
++  // essay with a rewrite is already among the matches above, by the rewrite's
++  // own title and excerpt, so the database's older row is dropped.
+   const results = rawResults.filter(
+-    (r) => r.type !== "article" || isPublicEssay(r.slug ?? "", essayDate(r))
++    (r) => r.type !== "article" || (isPublicEssay(r.slug ?? "", essayDate(r)) && !REWRITTEN.has(r.slug ?? ""))
+   );
+ 
+   const isLoading =
+@@ -230,8 +229,8 @@ export default function SearchPage() {
+             />
+             <input
+               type="text"
+-              aria-label="Search the site"
+-              placeholder="Search help, essays, plans, tools…"
++              aria-label="Search the site, or look up a passage"
++              placeholder="Look up a passage or ask a question"
+               value={query}
+               onChange={(e) => setQuery(e.target.value)}
+               className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
+@@ -266,7 +265,7 @@ export default function SearchPage() {
+         <div>
+           {query === "" ? (
+             <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
+-              <p className="text-lg">Type a word or a topic. Find Help, the essays, the plans, the guides, and the tools are all in here.</p>
++              <p className="text-lg">Ask in your own words, or type a passage like John 3:16. Find Help, the essays, the answers, the plans, the guides, the family devotions, and the tools are all in here.</p>
+               {/* /help searches in the browser; this page also asks the server about essays. */}
+               <p className="text-lg" style={{ marginTop: "12px" }}>
+                 For what you're going through, <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find Help</Link> starts from your own words.
+@@ -279,6 +278,35 @@ export default function SearchPage() {
+                   <CrisisBlock id="help-now" topics={crisisTopics} heading="If you need help now" />
+                 </div>
+               )}
++              {/* A reference opens the passage itself, ahead of any page about it. */}
++              {passage && (
++                <div className="mb-12">
++                  <p
++                    className="font-ui text-xs font-medium uppercase mb-6"
++                    style={{ color: "var(--mustard-text)", letterSpacing: "0.18em" }}
++                  >
++                    In the Study Bible
++                  </p>
++                  <Link
++                    href={passage.href}
++                    className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
++                    style={{
++                      borderColor: "var(--border)",
++                      borderLeft: "2px solid var(--mustard)",
++                      backgroundColor: "var(--bone)",
++                    }}
++                  >
++                    <h3 className="font-display font-bold mb-2" style={{ color: "var(--ink)" }}>
++                      {passage.label}
++                    </h3>
++                    <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
++                      {passage.book
++                        ? `The introduction to ${passage.label} and every chapter, with notes.`
++                        : "Read it in the Study Bible, with the notes on its chapter."}
++                    </p>
++                  </Link>
++                </div>
++              )}
+               {/* Library results from the static JSON manifests */}
+               {visibleLibraryMatches.length > 0 && (
+                 <div className="mb-12">
+@@ -286,12 +314,13 @@ export default function SearchPage() {
+                     className="font-ui text-xs font-medium uppercase mb-6"
+                     style={{ color: "var(--gold)", letterSpacing: "0.18em" }}
+                   >
+-                    Help, plans, tools, and guides
++                    Across the site
+                   </p>
+                   <div className="space-y-4">
+-                    {visibleLibraryMatches.map((entry) => (
++                    {visibleLibraryMatches.map((entry, i) => (
+                       <Link
+-                        key={`library-${entry.sourceLabel}-${entry.slug}`}
++                        // Several entries share a page (the catechism's questions), so the place in the list keys them.
++                        key={`library-${i}-${entry.href}`}
+                         href={entry.href}
+                         className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
+                         style={{
+@@ -345,7 +374,7 @@ export default function SearchPage() {
+                   <p className="text-lg">Searching…</p>
+                 </div>
+               ) : results.length === 0 ? (
+-                visibleLibraryMatches.length === 0 ? (
++                visibleLibraryMatches.length === 0 && !passage ? (
+                   isError ? (
+                     <LoadFailed
+                       what="The search"
+diff --git a/client/src/pages/StudyBible.tsx b/client/src/pages/StudyBible.tsx
+index 3d44d69c..6f6fe7d0 100644
+--- a/client/src/pages/StudyBible.tsx
++++ b/client/src/pages/StudyBible.tsx
+@@ -60,6 +60,7 @@ import {
+ import { Band, Credits, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
+ import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
+ import { VerseEntry } from "@/pages/study-bible/VerseNotes";
++import { GoToPassage } from "@/pages/study-bible/GoToPassage";
+ 
+ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+ const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
+@@ -162,6 +163,9 @@ function BookIndex({ books }: { books: BibleBook[] }) {
+           <p style={{ fontFamily: "var(--B)", fontSize: "1.12rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", margin: 0 }}>
+             Whether you have never opened it or have read it for years. Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and where it sits in the one story that runs from Genesis to Revelation. Underneath every English word are the Hebrew and Greek it translates.
+           </p>
++          <div style={{ marginTop: "var(--s-4)" }}>
++            <GoToPassage />
++          </div>
+           {next && (
+             <p style={{ margin: "var(--s-4) 0 0" }}>
+               <Link href={`${chapterHref(next.slug, next.chapter)}?path=story`} style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "46px", padding: "0 20px", background: "var(--ink)", color: "var(--bone)", borderRadius: "999px", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
+@@ -484,6 +488,14 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
+ 
+   const panel = sel && data ? <StudyPanel books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} data={data} verseNotes={verseNotes ?? null} onClose={() => setSel(null)} /> : null;
+   const onVerse = (v: BibleVerse) => setSel({ kind: "verse", verse: v });
++  // "Go to" a verse of this same chapter: select it and bring it on screen.
++  const goToVerse = (n: number) => {
++    const v = data?.verses.find((x) => x.v === n);
++    if (!v) return false;
++    onVerse(v);
++    requestAnimationFrame(() => document.getElementById(`v${n}`)?.scrollIntoView({ block: "center" }));
++    return true;
++  };
+   const onWord = (v: BibleVerse, i: number) => setSel({ kind: "word", verse: v, index: i });
+ 
+   return (
+@@ -518,6 +530,9 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
+             </nav>
+           </div>
+         </div>
++        <div style={{ ...wrap, marginTop: "14px" }}>
++          <GoToPassage here={chapterHref(book.slug, chapter)} onVerse={goToVerse} />
++        </div>
+       </section>
+ 
+       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+diff --git a/client/src/pages/study-bible/GoToPassage.test.tsx b/client/src/pages/study-bible/GoToPassage.test.tsx
+new file mode 100644
+index 00000000..876b1e0a
+--- /dev/null
++++ b/client/src/pages/study-bible/GoToPassage.test.tsx
+@@ -0,0 +1,44 @@
++/**
++ * The Study Bible's "Go to" field: a reference or a book opens in place, and
++ * anything else says so and offers the site search.
++ */
++import { afterEach, describe, expect, it, vi } from "vitest";
++import { fireEvent, render, screen } from "@testing-library/react";
++
++import { GoToPassage } from "./GoToPassage";
++
++function go(q: string) {
++  fireEvent.change(screen.getByRole("textbox", { name: "Go to a passage" }), { target: { value: q } });
++  fireEvent.click(screen.getByRole("button", { name: "Go" }));
++}
++
++afterEach(() => window.history.replaceState({}, "", "/"));
++
++describe("GoToPassage", () => {
++  it("opens a verse, a chapter, and a book", () => {
++    render(<GoToPassage />);
++    go("jn 3 16");
++    expect(window.location.pathname + window.location.hash).toBe("/study/bible/john/3#v16");
++    go("Romans 8");
++    expect(window.location.pathname).toBe("/study/bible/romans/8");
++    go("1 John");
++    expect(window.location.pathname).toBe("/study/bible/1-john");
++  });
++
++  it("shows a verse of the chapter on screen in place", () => {
++    window.history.replaceState({}, "", "/study/bible/john/3");
++    const onVerse = vi.fn(() => true);
++    render(<GoToPassage here="/study/bible/john/3" onVerse={onVerse} />);
++    go("John 3:16");
++    expect(onVerse).toHaveBeenCalledWith(16);
++    expect(window.location.pathname + window.location.hash).toBe("/study/bible/john/3#v16");
++  });
++
++  it("says plainly when it cannot open something, and offers the site search", () => {
++    render(<GoToPassage />);
++    go("grace");
++    expect(screen.getByRole("status")).toHaveTextContent("“grace” isn’t a passage this can open.");
++    expect(screen.getByRole("link", { name: "search the site for it" })).toHaveAttribute("href", "/search?q=grace");
++    expect(window.location.pathname).toBe("/");
++  });
++});
+diff --git a/client/src/pages/study-bible/GoToPassage.tsx b/client/src/pages/study-bible/GoToPassage.tsx
+new file mode 100644
+index 00000000..7452bd7b
+--- /dev/null
++++ b/client/src/pages/study-bible/GoToPassage.tsx
+@@ -0,0 +1,78 @@
++/**
++ * "Go to" on the Study Bible's front door and in the reader (master plan 7.1,
++ * U15). A reference ("John 3:16", "jn 3 16", "Romans 8", "Ps 23:1-3") opens
++ * at its verse or chapter, and a book named on its own ("Romans", "1 John")
++ * opens the book. Anything else says so plainly and offers the site search.
++ *
++ * The reference parser already travels with the Study Bible (lib/bible-notes
++ * reads catalogue lines through it), so it is imported here, not fetched.
++ */
++import { useState, type FormEvent } from "react";
++import { Link, useLocation } from "wouter";
++
++import * as scriptureRef from "@/lib/scripture-ref";
++import { passageFor } from "@/lib/siteSearch";
++import { quietLink } from "@/pages/study-bible/shared";
++
++export function GoToPassage({ here, onVerse }: {
++  /** The chapter on screen ("/study/bible/john/3"), so a verse in it is shown in place. */
++  here?: string;
++  /** Shows a verse of the chapter on screen; returns false when the chapter has no such verse. */
++  onVerse?: (verse: number) => boolean;
++}) {
++  const [, navigate] = useLocation();
++  const [value, setValue] = useState("");
++  const [missed, setMissed] = useState<string | null>(null);
++
++  const submit = (e: FormEvent) => {
++    e.preventDefault();
++    const q = value.trim();
++    if (!q) return;
++    const match = passageFor(q, scriptureRef);
++    if (!match) {
++      setMissed(q);
++      return;
++    }
++    setMissed(null);
++    const [path, hash] = match.href.split("#");
++    const verse = hash?.startsWith("v") ? Number(hash.slice(1)) : NaN;
++    // The same chapter: the address does not change, so the reader is told directly.
++    if (path === here && onVerse && Number.isFinite(verse) && onVerse(verse)) {
++      window.history.replaceState(window.history.state, "", match.href);
++      return;
++    }
++    navigate(match.href);
++  };
++
++  return (
++    <form role="search" aria-label="Go to a passage" onSubmit={submit} style={{ display: "grid", gap: "8px", maxWidth: "420px", width: "100%" }}>
++      <div style={{ display: "flex", gap: "8px" }}>
++        <label htmlFor="study-bible-goto" style={{ position: "absolute", width: "1px", height: "1px", overflow: "hidden", clip: "rect(0,0,0,0)" }}>
++          Go to a passage
++        </label>
++        <input
++          id="study-bible-goto"
++          type="text"
++          inputMode="text"
++          autoComplete="off"
++          spellCheck={false}
++          placeholder="Go to: John 3:16, Romans 8"
++          value={value}
++          onChange={(e) => { setValue(e.target.value); setMissed(null); }}
++          style={{ flex: "1 1 auto", minWidth: 0, minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "15px" }}
++        />
++        <button type="submit" style={{ flex: "0 0 auto", minHeight: "44px", padding: "0 18px", border: "none", borderRadius: "999px", background: "var(--ink)", color: "var(--bone)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
++          Go
++        </button>
++      </div>
++      <p role="status" style={{ margin: 0, fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.5, color: "var(--ink-muted)" }}>
++        {missed && (
++          <>
++            “{missed}” isn’t a passage this can open. Try John 3:16, Romans 8, or Psalm 23, or{" "}
++            <Link href={`/search?q=${encodeURIComponent(missed)}`} style={quietLink}>search the site for it</Link>.
++          </>
++        )}
++      </p>
++    </form>
++  );
++}
+diff --git a/package.json b/package.json
+index 3b8338f0..270b81e8 100644
+--- a/package.json
++++ b/package.json
+@@ -49,7 +49,8 @@
+     "validate:verse-guides": "node scripts/validate-verse-guides.mjs",
+     "llms:full": "node scripts/build-llms-full.mjs",
+     "theology-index": "node scripts/build-theology-index.mjs",
+-    "catalogue": "tsx scripts/build-catalogue.mjs"
++    "catalogue": "tsx scripts/build-catalogue.mjs",
++    "search:index": "tsx scripts/build-search-index.mjs"
+   },
+   "dependencies": {
+     "@hookform/resolvers": "^5.2.2",
+diff --git a/scripts/build-search-index.mjs b/scripts/build-search-index.mjs
+new file mode 100644
+index 00000000..13e38b0c
+--- /dev/null
++++ b/scripts/build-search-index.mjs
+@@ -0,0 +1,148 @@
++#!/usr/bin/env node
++/**
++ * build-search-index.mjs
++ *
++ * Writes client/public/search-index.json: the sources on-site search (/search)
++ * reads that are too large, or too scattered, to fetch whole when a reader
++ * types a question. The wisdom topics alone are 700 KB in full; search needs
++ * only each one's name, the words people use for it, and a line to show.
++ *
++ *   Wisdom topics        client/public/wisdom/topics.json      -> /wisdom/<id>
++ *   Honest Answers       client/src/data/answers.ts            -> /answers#<slug>
++ *   Family devotions     client/public/family-devotions*.json  -> the devotions library
++ *   Family Catechism     client/public/family-catechism.json   -> /family/catechism
++ *   Christ and the Nation client/public/nation/<slug>.json     -> /nation/<slug>
++ *
++ * Nothing here is written copy: every title and line is read from the source
++ * the page itself renders. The rewritten essays are searched from
++ * essayOverrides.generated.ts, and the other libraries from their own
++ * manifests (lib/catalog.ts), so neither is repeated here.
++ *
++ * Run with tsx, because Honest Answers is a TypeScript data module:
++ *   pnpm run search:index            write the index
++ *   pnpm run search:index --check    exit 1 if the index is stale (a CI gate)
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { fileURLToPath } from "node:url";
++
++import { ANSWERS } from "../client/src/data/answers.ts";
++
++const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
++const PUB = path.join(ROOT, "client/public");
++export const OUT = "client/public/search-index.json";
++
++/**
++ * Where a weekly devotion opens. Today that is the library page that holds
++ * all of them; when The Table core (U17) gives each devotion its own page at
++ * /family/devotions/:id, point this at it and rerun the script.
++ */
++const devotionHref = () => "/family/devotions";
++
++const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(PUB, rel), "utf8"));
++const str = (x) => (typeof x === "string" ? x.trim() : "");
++
++/**
++ * A line short enough to show under a result: whole sentences up to about
++ * 200 characters, or, when that leaves too little ("No."), the text cut at a
++ * word break.
++ */
++export function clip(text, max = 200) {
++  const s = str(text).replace(/\s+/g, " ");
++  if (s.length <= max) return s;
++  let out = "";
++  for (const sentence of s.match(/[^.?!]+[.?!]+(?=\s|$)|[^.?!]+$/g) ?? []) {
++    if ((out + sentence).length > max) break;
++    out += sentence;
++  }
++  if (out.trim().length >= 60) return out.trim();
++  const cut = s.slice(0, max + 1);
++  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:]$/, "")}…`;
++}
++
++function wisdom() {
++  return readJson("wisdom/topics.json").topics.map((t) => ({
++    title: str(t.label),
++    blurb: clip(t.framing),
++    keywords: (t.keywords ?? []).map(str).filter(Boolean).join(" · "),
++    href: `/wisdom/${t.id}`,
++  }));
++}
++
++function answers() {
++  return ANSWERS.map((a) => ({
++    title: str(a.question),
++    blurb: clip(a.paragraphs?.[0]),
++    href: `/answers#${a.slug}`,
++  }));
++}
++
++function devotions() {
++  const weekly = [...readJson("family-devotions.json"), ...readJson("family-devotions-2.json")];
++  return weekly.map((d) => ({
++    title: str(d.title),
++    blurb: clip(d.bigIdea),
++    facet: str(d.theme),
++    keywords: str(d.passage),
++    href: devotionHref(d.id),
++  }));
++}
++
++function catechism() {
++  return readJson("family-catechism.json").map((q) => ({
++    title: str(q.question),
++    blurb: clip(q.answer || q.kidsAnswer),
++    facet: str(q.part),
++    keywords: str(q.scripture),
++    href: "/family/catechism",
++  }));
++}
++
++function nation() {
++  return fs
++    .readdirSync(path.join(PUB, "nation"))
++    .filter((f) => f.endsWith(".json"))
++    .sort()
++    .map((f) => readJson(`nation/${f}`))
++    // The scorecard and the policy page are tools, and the tools are searched from the /tools registry.
++    .filter((n) => str(n.slug) && str(n.title))
++    .map((n) => ({ title: str(n.title), blurb: clip(n.subtitle), href: `/nation/${n.slug}` }));
++}
++
++/** The index, sources in the order a tie between them should fall. */
++export function buildSearchIndex() {
++  const drop = (e) => Object.fromEntries(Object.entries(e).filter(([, v]) => v !== ""));
++  const source = (label, indexHref, entries) => ({ label, indexHref, entries: entries.filter((e) => e.title).map(drop) });
++  return {
++    sources: [
++      source("Honest Answers", "/answers", answers()),
++      source("Christ and the Nation", "/nation", nation()),
++      source("Family Devotions", "/family/devotions", devotions()),
++      source("Family Catechism", "/family/catechism", catechism()),
++      source("What the Bible Says", "/wisdom", wisdom()),
++    ],
++  };
++}
++
++export function renderSearchIndex(index = buildSearchIndex()) {
++  return `${JSON.stringify(index)}\n`;
++}
++
++const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
++if (isMain) {
++  const out = path.join(ROOT, OUT);
++  const index = buildSearchIndex();
++  const text = renderSearchIndex(index);
++  const count = index.sources.reduce((n, s) => n + s.entries.length, 0);
++  if (process.argv.includes("--check")) {
++    const current = fs.existsSync(out) ? fs.readFileSync(out, "utf8") : "";
++    if (current !== text) {
++      console.error(`[search-index] ${OUT} is stale. Run: pnpm run search:index`);
++      process.exit(1);
++    }
++    console.log(`[search-index] up to date (${count} entries)`);
++  } else {
++    fs.writeFileSync(out, text);
++    console.log(`[search-index] wrote ${count} entries (${(text.length / 1024).toFixed(1)} KB) to ${OUT}`);
++  }
++}
+-- 
+2.43.0
+
