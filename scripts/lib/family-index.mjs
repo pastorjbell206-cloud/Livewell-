@@ -12,12 +12,20 @@
  * The catechism's questions and the children's answers ride along, so /family
  * and table mode can show this week's question without the whole catechism.
  *
+ * A strand beside the weekly set (family-devotions-world.json, U11) adds its
+ * devotions as weekly rows that name their strand, numbered within it, and a
+ * `strands` entry with its label and count, but only once its file is live
+ * (./family-devotion-file.mjs). While it is hidden the index is exactly what it
+ * would be without the file, so nothing on the site can link, prerender, or
+ * list a devotion James has not read.
+ *
  * Built by scripts/build-family-index.mjs; CI runs it with --check.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { readRef } from "./bsb.mjs";
+import { devotionsIn } from "./family-devotion-file.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const INDEX = "client/public/family/index.json";
@@ -25,6 +33,8 @@ export const INDEX = "client/public/family/index.json";
 /** The weekly files, in the order the site has always listed them. */
 const WEEKLY_FILES = ["family-devotions.json", "family-devotions-2.json"];
 const SEASONAL_FILE = "family-seasonal.json";
+/** The strands beside the weekly set (MASTER-PLAN 5.4), each in its own file, listed once live. */
+export const STRAND_FILES = [{ key: "world", label: "The world we live in", file: "family-devotions-world.json" }];
 
 /** Each daily set: its key in family-seasonal.json, its address, and its name. */
 export const SETS = [
@@ -99,6 +109,31 @@ export function buildFamilyIndex(root = ROOT) {
     }
   }
 
+  const strands = [];
+  for (const s of STRAND_FILES) {
+    if (!fs.existsSync(path.join(root, "client/public", s.file))) continue;
+    const { live, devotions: list } = devotionsIn(read(root, s.file));
+    if (!live || list.length === 0) continue;
+    strands.push({ key: s.key, label: s.label, count: list.length });
+    list.forEach((d, i) => {
+      add(
+        {
+          id: d.id,
+          kind: "weekly",
+          n: i + 1,
+          strand: s.key,
+          title: d.title,
+          theme: d.theme,
+          passage: d.passage,
+          href: studyHref(d.passage),
+          file: `/${s.file}`,
+          description: d.bigIdea,
+        },
+        `client/public/${s.file} ${d.id}`,
+      );
+    });
+  }
+
   const seasonal = read(root, SEASONAL_FILE);
   const sets = {};
   for (const s of SETS) {
@@ -133,6 +168,7 @@ export function buildFamilyIndex(root = ROOT) {
     index: {
       about: "Written by scripts/build-family-index.mjs from the family libraries in client/public. Do not edit by hand.",
       weekly: n,
+      ...(strands.length ? { strands } : {}),
       sets,
       devotions,
       catechism,

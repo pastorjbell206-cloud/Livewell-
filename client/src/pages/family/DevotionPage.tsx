@@ -28,6 +28,7 @@ import {
   placeOf,
   readFamilyProgress,
   recordDevotionDone,
+  strandOf,
   tableHref,
   tonightOn,
   weekOfYear,
@@ -43,9 +44,9 @@ import { useDevotion, type Devotion } from "./useFamilyData";
 
 const SITE = "https://www.livewellbyjamesbell.co";
 
-/** The devotion before and after this one in its own set. */
+/** The devotion before and after this one in its own set (or strand). */
 function neighbours(row: FamilyIndexRow, index: FamilyIndex): { prev?: FamilyIndexRow; next?: FamilyIndexRow } {
-  const same = index.devotions.filter((r) => r.kind === row.kind && r.set === row.set);
+  const same = index.devotions.filter((r) => r.kind === row.kind && r.set === row.set && strandOf(r, index)?.key === strandOf(row, index)?.key);
   const at = same.findIndex((r) => r.id === row.id);
   return { prev: same[at - 1], next: same[at + 1] };
 }
@@ -200,7 +201,7 @@ function DevotionView({
       <section className="tb-page__body" style={{ background: "var(--bone)", padding: "var(--s-3) 16px var(--s-7)" }}>
         <article className="tb-devotion print-paper">
           <p className="tb-line" style={{ margin: "0 0 var(--s-3)" }}>
-            {place && <Position current={place.current} total={place.total} unit={place.unit} of={row.kind === "weekly" ? "Weekly devotions" : setInfo?.label} />}
+            {place && <Position current={place.current} total={place.total} unit={place.unit} of={row.kind === "weekly" ? strandOf(row, index)?.label ?? "Weekly devotions" : setInfo?.label} />}
             {tonight && row.kind === "weekly" && <span> · Week {weekOfYear(today)} of the year</span>}
             {lastRow && last && (
               <>

@@ -38,6 +38,12 @@
  *     their own punctuation.
  *   - The year map, once U10 generates it, names only devotions that exist.
  *
+ * Strand files (family-devotions-<strand>.json, U11) are { live, devotions }:
+ * every devotion in one is checked like any other, and its id is unique across
+ * all of them, but while live is false it is not frozen yet and the year map
+ * may not name it (a hand override may pin it; the pin waits for live). See
+ * scripts/lib/family-devotion-file.mjs for publishing one.
+ *
  * The id freeze (5.6): a printed card's QR code points at
  * /family/devotions/<id> and cannot be recalled, so every devotion id ever
  * committed is recorded in scripts/data/family-devotion-ids.json. An id may
@@ -51,6 +57,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { passage, quotesPassage } from "./lib/bsb.mjs";
+import { devotionsIn } from "./lib/family-devotion-file.mjs";
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -219,7 +226,7 @@ export function checkFamily({
   const stem = (n) => n.replace(/\.json$/, "");
   const files = fs.readdirSync(publicDir).filter((n) => /^family-.*\.json$/.test(n)).sort((a, b) => (stem(a) < stem(b) ? -1 : 1));
   const devotionIds = [];
-  const counts = { files: files.length, devotions: 0, foundations: 0, passages: 0, catechism: 0, seasonalDays: 0, plans: 0 };
+  const counts = { files: files.length, devotions: 0, foundations: 0, hidden: 0, passages: 0, catechism: 0, seasonalDays: 0, plans: 0 };
   const titles = new Map();
   const deferred = [];
 
@@ -243,13 +250,21 @@ export function checkFamily({
     }
 
     if (kind === "devotions") {
-      if (!Array.isArray(data)) { errors.push(`${label}: expected a list of devotions`); continue; }
-      data.forEach((d, i) => {
-        const where = `${label}[${i}] ${d?.id ?? "(no id)"}`;
+      const file = devotionsIn(data);
+      if (!file.shape) { errors.push(`${label}: expected a list of devotions, or a strand { "live": true or false, "devotions": [...] }`); continue; }
+      if (file.shape === "strand") {
+        if (typeof data.live !== "boolean") errors.push(`${label}: "live" must be true or false`);
+        if (FOUNDATIONS.includes(name)) errors.push(`${label}: the Foundations set is always live; keep it a plain list`);
+        if (!file.live) counts.hidden += file.devotions.length;
+      }
+      const list = file.devotions;
+      const at = file.shape === "strand" ? ".devotions" : "";
+      list.forEach((d, i) => {
+        const where = `${label}${at}[${i}] ${d?.id ?? "(no id)"}`;
         for (const k of DEVOTION_FIELDS) if (!isText(d?.[k])) errors.push(`${where}: needs ${k}`);
         if (isText(d?.id)) {
           if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(d.id)) errors.push(`${where}: id must be lowercase words joined by hyphens (it becomes /family/devotions/${d.id})`);
-          devotionIds.push([d.id, where]);
+          devotionIds.push([d.id, where, file.live]);
         }
         if (isText(d?.title)) {
           const key = d.title.trim().toLowerCase();
@@ -268,11 +283,11 @@ export function checkFamily({
         }
         if (isText(d?.passage) && isText(d?.passageText)) {
           counts.passages++;
-          checkScripture(errors, `${label}[${i}] ${d.passage}`, d.passage, d.passageText, "passageText");
+          checkScripture(errors, `${label}${at}[${i}] ${d.passage}`, d.passage, d.passageText, "passageText");
         }
       });
-      counts.devotions += data.length;
-      if (FOUNDATIONS.includes(name)) counts.foundations += data.length;
+      counts.devotions += list.length;
+      if (FOUNDATIONS.includes(name)) counts.foundations += list.length;
     }
 
     if (kind === "catechism") {
@@ -348,13 +363,19 @@ export function checkFamily({
     if (kind === "year-overrides") deferred.push([label, data]);
   }
 
-  // Devotion ids are unique across every devotion file.
+  // Devotion ids are unique across every devotion file, hidden or live.
   const byId = new Map();
-  for (const [id, where] of devotionIds) {
+  const hidden = new Set();
+  for (const [id, where, live] of devotionIds) {
     if (byId.has(id)) errors.push(`${where}: id "${id}" is also ${byId.get(id)} (each devotion gets its own page and printed card)`);
-    else byId.set(id, where);
+    else {
+      byId.set(id, where);
+      if (!live) hidden.add(id);
+    }
   }
-  const ids = [...byId.keys()];
+  const everyId = new Set(byId.keys());
+  // The devotions the site shows: the year map may name only these, and only these are frozen.
+  const ids = [...byId.keys()].filter((id) => !hidden.has(id));
   const known = new Set(ids);
 
   // The year map and its hand overrides name only devotions that exist.
@@ -362,11 +383,15 @@ export function checkFamily({
   if (fs.existsSync(yearMapFile)) {
     const refs = devotionRefs(fs.readFileSync(yearMapFile, "utf8"));
     if (refs.length === 0) errors.push(`${path.relative(root, yearMapFile)}: no devotion ids found; teach scripts/validate-family.mjs how to read the year map`);
-    for (const id of new Set(refs)) if (!known.has(id)) errors.push(`${path.relative(root, yearMapFile)}: names devotion "${id}", which does not exist`);
+    for (const id of new Set(refs)) {
+      if (hidden.has(id)) errors.push(`${path.relative(root, yearMapFile)}: names devotion "${id}", which is hidden until its strand file goes live; regenerate the map (node scripts/build-family-year.mjs)`);
+      else if (!known.has(id)) errors.push(`${path.relative(root, yearMapFile)}: names devotion "${id}", which does not exist`);
+    }
     counts.yearMap = new Set(refs).size;
   }
   for (const [label, data] of deferred) {
-    for (const id of new Set(devotionRefs(JSON.stringify(data)))) if (!known.has(id)) errors.push(`${label}: names devotion "${id}", which does not exist`);
+    // A hand override may pin a hidden devotion; the year map leaves the pin out until it goes live.
+    for (const id of new Set(devotionRefs(JSON.stringify(data)))) if (!everyId.has(id)) errors.push(`${label}: names devotion "${id}", which does not exist`);
   }
 
   // The freeze: every devotion id ever committed still resolves.
@@ -385,6 +410,10 @@ export function checkFamily({
     if (seenFrozen.has(id)) errors.push(`${FROZEN_IDS}: "${id}" is listed twice`);
     seenFrozen.add(id);
     if (known.has(id)) continue;
+    if (hidden.has(id)) {
+      errors.push(`devotion id "${id}" is frozen (it has been live, and a printed card may point at /family/devotions/${id}), but its strand file is no longer live. Set "live" back to true, or move the devotion to a live file.`);
+      continue;
+    }
     const to = redirects.get(id);
     if (to === undefined) errors.push(`devotion id "${id}" was removed or renamed without a redirect entry. A printed card's QR code points at /family/devotions/${id}: restore the id, or add a vercel.json redirect from /family/devotions/${id} to the devotion that replaces it.`);
     else if (to === null || !known.has(to)) errors.push(`vercel.json: /family/devotions/${id} must redirect to /family/devotions/<id> of a devotion that exists${to ? ` ("${to}" does not)` : ""}`);
@@ -419,7 +448,7 @@ export function checkFamily({
     }
   }
 
-  return { errors, notes, counts, ids, unfrozen };
+  return { errors, notes, counts, ids, unfrozen, hidden: [...hidden] };
 }
 
 /** Add every current devotion id missing from the freeze record. Never removes one. */
@@ -446,7 +475,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
     process.exit(1);
   }
   console.log(
-    `Family libraries: clean (${counts.files} files; ${counts.devotions} devotions with unique, frozen ids; ` +
+    `Family libraries: clean (${counts.files} files; ${counts.devotions} devotions with unique, frozen ids` +
+      `${counts.hidden ? ` (${counts.hidden} of them hidden until their strand goes live, so not frozen yet)` : ""}; ` +
       `${counts.catechism} catechism questions; ${counts.seasonalDays} seasonal days; ${counts.plans} reading plans; ` +
       `${counts.passages} passages verbatim BSB; copy counts and translation labels match; ` +
       `${counts.yearMap === undefined ? "year map not generated yet" : `year map names ${counts.yearMap} devotions, all real`}).`,

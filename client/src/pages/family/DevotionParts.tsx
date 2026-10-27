@@ -61,6 +61,13 @@ export function TalkPart({ devotion }: { devotion: Devotion }) {
             <p key={i}>{p}</p>
           ))}
       </div>
+      {/* A devotion on politics speaks to both sides of the table, in turn (U11). */}
+      {devotion.sides?.map((side) => (
+        <div key={side.label} className="tb-side">
+          <p className="tb-label">{side.label}</p>
+          <p className="tb-text">{side.text}</p>
+        </div>
+      ))}
     </>
   );
 }

@@ -10,7 +10,9 @@
  * since the set is a December 1 to 25 calendar. Data: the family index
  * (client/public/family/index.json, scripts/build-family-index.mjs); the list
  * shows references, not verse text. scripts/validate-family.mjs checks the
- * counts this page states.
+ * counts this page states. A strand beside the 72 (The world we live in,
+ * ?tab=world, U11) gets its tab only once its file is live and the index lists
+ * it; until then the tab is not there.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useSearch } from "wouter";
@@ -24,11 +26,13 @@ import { familySetDayOn, localISODate, type FamilySetKey } from "@/lib/familyYea
 import { adventSeasonFor, longDate } from "@/lib/familyAdvent";
 import { useFamilyIndex } from "./family/useFamilyData";
 
-type Tab = "weekly" | FamilySetKey;
+type Tab = "weekly" | "world" | FamilySetKey;
+const isSetTab = (t: Tab): t is FamilySetKey => t !== "weekly" && t !== "world";
 
 /** Each tab's address, and the booklet files scripts/lib/help-printables.mjs builds for each daily set. */
 const TABS: { id: Tab; param: string; file?: string }[] = [
   { id: "weekly", param: "weekly" },
+  { id: "world", param: "world" },
   { id: "thanksgiving", param: "thanksgiving", file: "thanksgiving" },
   { id: "advent", param: "advent", file: "advent" },
   { id: "holyWeek", param: "holy-week", file: "holy-week" },
@@ -41,7 +45,10 @@ export default function FamilyDevotions() {
   const [, navigate] = useLocation();
   const query = new URLSearchParams(search);
   const param = query.get("tab");
-  const tab: Tab = TABS.find((t) => t.param === param)?.id ?? "weekly";
+  const world = index?.strands?.find((s) => s.key === "world");
+  const asked: Tab = TABS.find((t) => t.param === param)?.id ?? "weekly";
+  // The world tab is there only once its strand is live (U11); before that ?tab=world opens the weekly list.
+  const tab: Tab = asked === "world" && index && !world ? "weekly" : asked;
   const day = Number(query.get("day"));
   const [done] = useState(() => new Set(readFamilyProgress().done.map((d) => d.id)));
   // Tonight's day of a daily set, and this year's Advent Sunday, from the
@@ -53,21 +60,23 @@ export default function FamilyDevotions() {
   // ?tab=advent&day=6 names one day of a set (U13's Advent links use it):
   // open that day's own page in place of the list.
   useEffect(() => {
-    if (!index || tab === "weekly" || !Number.isInteger(day) || day < 1) return;
+    if (!index || !isSetTab(tab) || !Number.isInteger(day) || day < 1) return;
     const row = index.devotions.find((r) => r.set === tab && r.day === day);
     if (row) navigate(devotionHref(row.id), { replace: true });
   }, [index, tab, day, navigate]);
 
   const rows = useMemo(() => {
     if (!index) return [];
-    return index.devotions.filter((r) => (tab === "weekly" ? r.kind === "weekly" : r.set === tab));
+    return index.devotions.filter((r) =>
+      tab === "weekly" ? r.kind === "weekly" && (r.strand ?? "foundations") === "foundations" : tab === "world" ? r.strand === "world" : r.set === tab,
+    );
   }, [index, tab]);
 
   const tabs = index
     ? TABS.map((t) => ({
         ...t,
-        label: t.id === "weekly" ? "Weekly" : index.sets[t.id]?.label ?? t.param,
-        count: t.id === "weekly" ? index.weekly : index.sets[t.id]?.days ?? 0,
+        label: t.id === "weekly" ? "Weekly" : t.id === "world" ? world?.label ?? t.param : index.sets[t.id]?.label ?? t.param,
+        count: t.id === "weekly" ? index.weekly : t.id === "world" ? world?.count ?? 0 : index.sets[t.id]?.days ?? 0,
       })).filter((t) => t.count > 0)
     : [];
 
@@ -77,7 +86,7 @@ export default function FamilyDevotions() {
     href: devotionHref(r.id),
     kicker:
       r.kind === "weekly"
-        ? `${r.n} of ${index?.weekly} · ${r.theme}`
+        ? `${r.n} of ${index?.strands?.find((s) => s.key === r.strand)?.count ?? index?.weekly} · ${r.theme}`
         : tonight && tonight.set === r.set && tonight.day === r.day
           ? `${r.label} · Tonight`
           : r.label,
@@ -91,7 +100,7 @@ export default function FamilyDevotions() {
   });
 
   const current = TABS.find((t) => t.id === tab);
-  const setLabel = tab !== "weekly" ? index?.sets[tab]?.label : undefined;
+  const setLabel = isSetTab(tab) ? index?.sets[tab]?.label : undefined;
 
   return (
     <Layout>
@@ -173,7 +182,7 @@ export default function FamilyDevotions() {
                   </>
                 )
               )}
-              <EditorialIndex label={tab === "weekly" ? "Weekly devotions" : `${setLabel} devotions`} items={rows.map(item)} compact />
+              <EditorialIndex label={tab === "weekly" ? "Weekly devotions" : tab === "world" ? world?.label ?? "Devotions" : `${setLabel} devotions`} items={rows.map(item)} compact />
             </>
           )}
         </div>
