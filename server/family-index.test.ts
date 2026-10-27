@@ -37,6 +37,8 @@ function seeded(change: (dir: string) => void): string {
   for (const f of ["family-devotions.json", "family-devotions-2.json", "family-seasonal.json", "family-catechism.json"]) {
     fs.copyFileSync(path.join(ROOT, "client/public", f), path.join(dir, f));
   }
+  // The care pages the grown-ups lines link (U21).
+  fs.cpSync(path.join(ROOT, "client/public/needs"), path.join(dir, "needs"), { recursive: true });
   change(dir);
   return root;
 }
@@ -121,6 +123,28 @@ describe("build-family-index", () => {
     expect(problems).toMatch(/identity: group "nowhere" is not one of the library's groups/);
     expect(problems).toMatch(/fear-and-anxiety: grownups link "\/help\/not-a-page" has no care page/);
     expect(problems).toMatch(/family-devotions-recipes\.json: no strand reads this file/);
+  });
+
+  it("adds a new strand as its own shelf, numbered within it, and leaves out one held back", () => {
+    const first = pub("family-devotions.json")[0];
+    const world = [
+      { ...first, id: "only-christian-in-class", title: "The Only Christian in Class", group: undefined, grownups: undefined },
+      { ...first, id: "praying-for-leaders", title: "Praying for Leaders", group: undefined, grownups: undefined },
+    ];
+    const held = buildFamilyIndex(seeded((dir) => fs.writeFileSync(path.join(dir, "family-devotions-world.json"), JSON.stringify({ live: false, devotions: world }))));
+    expect(held.problems).toEqual([]);
+    expect(held.index.strands.map((s: { key: string }) => s.key)).toEqual(["foundations"]);
+    expect(held.index.devotions.some((r: Row) => r.id === "praying-for-leaders")).toBe(false);
+
+    const live = buildFamilyIndex(seeded((dir) => fs.writeFileSync(path.join(dir, "family-devotions-world.json"), JSON.stringify(world))));
+    expect(live.problems).toEqual([]);
+    expect(live.index.strands).toEqual([
+      { key: "foundations", label: "Foundations", count: 72 },
+      { key: "world", label: "The world we live in", count: 2 },
+    ]);
+    const row = live.index.devotions.find((r: Row) => r.id === "praying-for-leaders");
+    expect(row).toMatchObject({ kind: "weekly", strand: "world", n: 2 });
+    expect(live.index.weekly).toBe(72);
   });
 
   it("refuses a daily set it has no address for", () => {

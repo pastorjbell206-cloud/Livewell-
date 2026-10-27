@@ -134,7 +134,11 @@ export function buildFamilyIndex(root = ROOT) {
     let n = 0;
     for (const file of strand.files) {
       if (!fs.existsSync(path.join(root, "client/public", file))) continue;
-      for (const d of read(root, file)) {
+      // A strand file is a plain list, or { live, devotions } held back until
+      // `live` is true (U11's world strand): a held-back strand has no rows.
+      const data = read(root, file);
+      const list = Array.isArray(data) ? data : data?.live === true && Array.isArray(data.devotions) ? data.devotions : [];
+      for (const d of list) {
         n += 1;
         const where = `client/public/${file} ${d.id}`;
         if (d.group !== undefined || strand.key === "foundations") {
