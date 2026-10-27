@@ -816,6 +816,10 @@ export async function seasonalPdf(root, season, size, passageText) {
   tag(doc, root_, "P", () => doc.font("Times-Roman").fontSize(11).fillColor(INK).text(
     "Ten minutes a day, around the table or at bedtime. Read the passage aloud, then the few lines that follow. Ask the question and let everyone answer, the youngest first. Close with the prayer. Miss a day and simply pick up where you are.",
     { width, align: "left", lineGap: 2 }));
+  if (meta.note) {
+    doc.moveDown(0.6);
+    tag(doc, root_, "P", () => doc.font("Times-Roman").fontSize(11).fillColor(INK).text(meta.note, { width, align: "left", lineGap: 2 }));
+  }
   doc.moveDown(0.6);
   tag(doc, root_, "P", () => doc.font("Times-Italic").fontSize(9.5).fillColor(MUTED).text(
     "Scripture is quoted from the Berean Standard Bible (public domain). The lines marked \"In other words\" retell the passage for children; they are a paraphrase, not a quotation.",
@@ -846,7 +850,14 @@ export async function seasonalPdf(root, season, size, passageText) {
 
 const SEASON_META = {
   thanksgiving: { file: "thanksgiving-family", title: "Thanksgiving at the Table", sub: "Seven days for families, the week of Thanksgiving" },
-  advent: { file: "advent-family", title: "Advent at the Table", sub: "Twenty-five days for families, December 1 to Christmas" },
+  // The set is a December 1 to 25 calendar (James, 2026-10-26); Advent
+  // itself starts on Advent Sunday, so the booklet says so.
+  advent: {
+    file: "advent-family",
+    title: "Advent at the Table",
+    sub: "Twenty-five days for families, December 1 to Christmas",
+    note: "Advent begins on the fourth Sunday before Christmas, which falls between November 27 and December 3. This booklet is an Advent calendar: one reading for each day from December 1 to Christmas Day.",
+  },
   holyWeek: { file: "holy-week-family", title: "Holy Week at the Table", sub: "Eight days for families, Palm Sunday to Easter" },
 };
 

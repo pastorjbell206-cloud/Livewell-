@@ -1,0 +1,105 @@
+# Can You Be Good Without God?
+
+*Unbelievers can be good, and the harder question is what makes anything good at all.*
+
+On a rainy evening in May 1873, George Eliot walked in the Fellows' Garden of Trinity College, Cambridge, with a young scholar named Frederic Myers. She was by then one of the most admired novelists in England, and *Middlemarch* had finished its serial run a few months earlier. She had been an earnest evangelical as a girl, gave up the faith in her early twenties, and later translated David Friedrich Strauss's *Life of Jesus*, the German study that treated much of the Gospels as myth. Myers wrote about the walk years afterward. Eliot took three words as her text, God, Immortality and Duty, and told him, as he remembered it, that the first was inconceivable and the second unbelievable, and yet the third was peremptory and absolute.
+
+That is about as clear a picture as history gives us of a person determined to be good without God. Eliot was not careless or cynical about morality. Her novels are some of the most morally serious books in the English language, full of ordinary people learning that small choices add up to a life and that selfishness is a kind of blindness. She did not think duty needed heaven to back it up. She thought it bound her anyway, absolutely, whether or not anyone was keeping score. Myers wrote that he had perhaps never heard anyone speak more sternly for the rule of a law that was impersonal and promised no reward.
+
+So can you be good without God? The question comes in two forms, and much of the heat in the argument comes from people answering one while the other is being asked. The first asks whether a person who doesn't believe in God can live a good life: keep his promises, tell the truth, stay faithful to his wife, give to the poor, take a risk for a stranger. The second asks what goodness is, and whether it can be what Eliot believed it was, peremptory and absolute, in a universe with no God in it.
+
+## Good People Who Don't Believe in God
+
+Christians have often answered the first question badly. Unbelievers can be good. Most of us know people who believe nothing about God and who are kinder, more truthful and more generous with their time than plenty of people in church on Sunday. Unbelievers notice that, and they are right to. I was an atheist before I was a Christian, so the person on the other side of this question is someone I used to be, and nothing in the Christian faith asks me to pretend that unbelief makes a person cruel.
+
+Americans have slowly come around to the same conclusion. In 2011 the Pew Research Center found that about half of American adults said a person doesn't need to believe in God to be moral and have good values. By 2017 a majority said so, and the share had grown even among white evangelical Protestants, though most of them still said belief in God was necessary. The suspicion runs deeper than surveys, though. In a study published in 2017, a team led by the psychologist Will Gervais described to thousands of people in countries around the world a man who had tortured animals as a boy and later killed several homeless people. Participants were much more likely to connect him with atheism than with religious belief. Even atheists did it.
+
+Paul would not have been surprised that unbelievers can be good. Writing to the church in Rome, he said that Gentiles who had never been given the law of Moses still knew a good deal of what it required:
+
+> "For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law. They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them." (Romans 2:14–15)
+
+In Paul's account the knowledge of right and wrong is not the private property of believers. It belongs to every human being, because every human being was made by God. A Christian who says an atheist can't know right from wrong is contradicting the apostle he claims to follow.
+
+## When Christians Were Called Atheists
+
+The suspicion that people without God can't be trusted is far older than the modern argument, and it has not always pointed at atheists. In the second century it pointed at Christians. Romans called them atheists because they refused to honor the gods of the city. The charge meant they were dangerous, people who had cut themselves loose from the pieties that held a society together.
+
+In Smyrna, in the middle of that century, a crowd in the stadium demanded the arrest of the aged bishop Polycarp with the cry, "Away with the Atheists." When he was brought in, the proconsul urged him to swear by the fortune of Caesar and say those words himself. According to the letter the church at Smyrna sent out about his death, Polycarp looked sternly at the crowd, waved his hand toward them, groaned, looked up to heaven, and said, "Away with the Atheists."
+
+Justin Martyr answered the same accusation in an apology addressed to the emperor Antoninus Pius in the 150s. "Hence are we called atheists," he wrote. "And we confess that we are atheists, so far as gods of this sort are concerned, but not with respect to the most true God, the Father of righteousness and temperance and the other virtues." He asked the emperor to judge Christians by what they did and not by the name they carried. The first Christians were the people of whom it was said that without the gods they could not be good. They had [no power to speak of](/writing/the-early-church-under-rome), and their conduct was the only answer they could give.
+
+By the end of the seventeenth century the suspicion had changed sides. John Locke's *Letter Concerning Toleration*, published in English in 1689, is one of the founding arguments for religious liberty in the English-speaking world. It made room for far more people than most of Locke's contemporaries would have, and then it stopped short. The last people Locke refused to tolerate were those who denied that God exists. His reason, in substance, was that promises, covenants and oaths are what bind a society together, that none of them can hold an atheist, and that taking God away, even only in thought, dissolves everything.
+
+Not everyone agreed. Earlier in that decade the French Protestant exile Pierre Bayle had argued from Rotterdam that an atheist could be virtuous and that a society of atheists was possible, and he was later accused of atheism himself for saying so. Still, it isn't hard to see why Locke's instinct took hold. When a society's courts and contracts ran on oaths sworn before God, a man who denied God looked like a man whose word meant nothing. Christians inherited Locke's half of the argument and have been slow to set it down. We rarely stop to notice that Polycarp's crowd made the same mistake about him.
+
+## What We Mean When We Call Something Wrong
+
+The second question is harder, and it is the one Eliot's sentence raises. When she called duty peremptory and absolute, she did not mean she happened to feel strongly about it. She meant it bound her whether she felt it or not, and that it would bind anyone. Most of us mean something like that when we use moral words in earnest. If you say it is wrong to torment a child for fun, you aren't reporting a taste, the way you might report that you don't like olives. You mean it would still be wrong if the whole town voted for it. It was wrong before anyone wrote a law against it, and the person who does it is mistaken, not merely different from you.
+
+There is a serious account of where that conviction comes from, and it doesn't need God. We are social animals. Our ancestors lived or died in small groups, and the groups whose members protected their young, punished cheats and kept faith with one another tended to survive. Over a very long time, the account goes, that pressure gave us strong moral emotions: outrage at cruelty, guilt at betrayal, the sense that a promise binds. Culture refined those emotions, and reason extended them to strangers. On this view morality is real in roughly the way language is real, a deep feature of human life that needs no explanation beyond biology and history.
+
+Christians differ over how much of that history to accept, and the question here doesn't depend on settling it. A Christian who accepts all of it has no reason to fear it, since God can form moral creatures through a long natural history, just as he forms each child through parents and a culture. Grant the whole account, and it still explains only why we feel what we feel. What it can't do by itself is tell us whether the feeling is right.
+
+A history of how I came to believe something is not a ruling on whether the belief is true. You learned that seven times eight is fifty-six from a teacher and a lot of repetition, and that history doesn't make the answer a matter of opinion. But if our sense that cruelty is wrong is nothing but the residue of what helped our ancestors survive, it is a useful feeling and no more, and a society that trained itself out of the feeling would not have made any mistake in doing so. Hardly anyone who makes the evolutionary argument lives as though that were so. They go on speaking of cruelty as wrong, really wrong, the way Eliot spoke of duty.
+
+## Moral Facts Without God
+
+The best unbelieving philosophers know this, and they don't rest their case on the evolutionary story. They argue instead that moral truths are simply true, the way mathematical truths are. The philosopher Erik Wielenberg, an atheist, has defended this view at length. The most basic ethical facts, he argues, hold necessarily, and they need no foundation beneath them. Every explanation has to stop somewhere, and where the theist stops at God, Wielenberg stops at the moral facts themselves. People who hold this view take right and wrong at least as seriously as most Christians do.
+
+Two difficulties press on it, and both were raised by philosophers who did not accept the Christian answer. The first came from J. L. Mackie, an Australian-born philosopher at Oxford who did not believe objective moral values existed. His 1977 book *Ethics: Inventing Right and Wrong* argued that such values, if they were real, would be very odd things, unlike anything else in the universe: facts that carry a demand inside them, so that merely knowing one gives you a reason to act. He called this the argument from queerness.
+
+Mackie took it as grounds for giving up objective morality altogether. But in a book on the arguments for God's existence, published in 1982 after his death, he allowed that if there were objective moral values of that kind, they would be very unlikely to have arisen in the ordinary course of events without a god to create them. He kept his atheism by denying the values.
+
+The second difficulty came from the philosopher Sharon Street, who asked in a 2006 paper how creatures shaped by natural selection could come to know moral truths that exist independently of us. Selection rewards whatever helps an animal survive and reproduce, and it has no reason to track timeless moral facts. If such facts exist, our confidence that we perceive them would be a remarkable coincidence. Street concluded that we should stop thinking of values as existing independently of us at all. A Christian agrees with her about the problem. He thinks it has a solution she does not adopt: the God who is the source of goodness made human beings able to know it.
+
+That leaves the unbeliever with a harder choice than the popular argument admits. He can say with Mackie that morality is invented and the sense of an absolute demand is an illusion, which is coherent and very hard to live. He can follow Wielenberg in holding that moral facts are simply there, necessary and unexplained, and still owe Street an answer about how creatures shaped by selection came to know them. Or he can take seriously the possibility that goodness has a source, and that the source has made himself known.
+
+## The Euthyphro Dilemma
+
+A thoughtful skeptic will answer with an objection that was already ancient when Christianity began. Plato's dialogue *Euthyphro* is set in 399 BC outside the office of the Athenian magistrate who heard charges of impiety, where Socrates has come to answer the accusation that will end in his death. There he meets Euthyphro, a man so certain he knows what piety requires that he is prosecuting his own father over the death of a hired man. Socrates asks him whether the holy is holy because the gods love it, or whether the gods love it because it is holy.
+
+Put in terms of one God, the question becomes whether a thing is good because God commands it, or whether God commands it because it is good. Either answer seems to cost the believer something. If goodness is whatever God happens to command, then had he commanded cruelty, cruelty would have been good, and calling God good means only that he does what he likes. If God commands things because they are already good, then goodness is a standard that stands over God, and it looks as though you can have it without him.
+
+The classical Christian answer refuses both options. Thomas Aquinas taught that God alone is good by his very essence, and that everything else is good by sharing in his goodness. On that view goodness is not a rule God might have written differently, and it is not a law above him that he obeys. It is what God is. His commands are good because they come from his own character, and he will not command cruelty for the same reason he will not lie. The letter of James puts it in the language of a gift: "Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change" (James 1:17).
+
+The skeptic can press back. Hasn't the believer just moved the question somewhere else? Why should God's character be the measure? It's a real objection, and the answer is that every account stops somewhere, as Wielenberg himself says. What matters is where it stops. A brute moral fact is an abstract thing, and an abstract thing can't command you or forgive you. A good God can do both. We experience obligation less as the existence of an abstract truth than as being answerable, which is why guilt feels so much like owing someone. That isn't a proof, and Christians shouldn't sell it as one. It is a question about which account makes better sense of what all of us already know.
+
+## What Nietzsche Said About George Eliot
+
+Friedrich Nietzsche saw what was at stake more clearly than almost anyone, and he had no love for Christianity. Sixteen years after that evening in Cambridge, he published *Twilight of the Idols*, and in it he named George Eliot. His charge, in substance, was that she and the English moralists like her had got rid of the Christian God and now believed they had to cling all the harder to Christian morality, and that anyone who gives up the Christian faith has pulled the right to that morality out from under his own feet. Nietzsche thought Christianity was a single system, and that no one could pull out the belief in God and keep the rest standing. He wasn't recommending cruelty. His point was that the Victorian unbelievers were living on an inheritance whose source they had renounced.
+
+He was right about more than the English. Much of what modern people take to be plain decency was not plain to the ancient world. The conviction that a slave, an unwanted newborn or a foreigner has the same worth as a senator's son was not the common sense of Rome. The church carried it into that world because it believed every human being bears the image of God. The Bible grounds the prohibition of murder there, in the covenant with Noah: "Whoever sheds the blood of man, by man shall his blood be shed, for God made man in his own image" (Genesis 9:6).
+
+The early Christians acted on that belief long before they had any power, as [what they did for the children Rome threw away](/writing/the-children-rome-threw-away) shows. The secular person who takes the equal dignity of every human being for granted is still drawing on what the church carried into Rome, whether or not he would put it that way.
+
+A skeptic is entitled to two replies. Many secular people have kept that conviction with great faithfulness, and a person doesn't need the theology to love his neighbor. And Christians have kept the theology while betraying it in practice more often than we like to remember, in [the slavery our preachers defended from the pulpit](/writing/why-didnt-the-bible-ban-slavery) and in churches that protected their own reputation at the expense of the people they had harmed. Both replies are true, and the second brings us back to Romans 2.
+
+## What Paul Actually Says in Romans 2
+
+Romans 2:14–15 is the passage Christians reach for when they want to explain how unbelievers can be good. It is the right passage. But it sits inside an argument, and the argument is not mainly about unbelievers. Paul has just spent the end of Romans 1 describing the idolatry and cruelty of the pagan world, and a devout reader in Rome would have been nodding along. Then Paul turns on him: "Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things" (Romans 2:1).
+
+The Gentiles with the law written on their hearts appear in that chapter as witnesses against the religious. Paul's point is that the knowledge of good and evil is everywhere, and that this makes everyone accountable, beginning with the people who have the Scriptures. He presses until it hurts: "you then who teach others, do you not teach yourself?" (Romans 2:21). Then he turns Scripture on his own people: "The name of God is blasphemed among the Gentiles because of you" (Romans 2:24).
+
+That sentence describes a good deal of American church history. When a skeptic says he has found more decency among his unbelieving friends than among the Christians he grew up with, he is often describing exactly what Paul warned about. If goodness is grounded in God, then a Christian who is cruel, dishonest or contemptuous of unbelievers is doing more than falling short of a standard. He is misrepresenting God's character to people who are watching to see what it looks like. We have often had a sound account of morality without the life to match it.
+
+Paul's argument arrives where it was heading from the start: "for all have sinned and fall short of the glory of God" (Romans 3:23). That is where the Christian answer finally lands, and it is harder on everyone than either side usually wants. Can you be decent, brave, faithful and kind without believing in God? Yes. Can you be good enough to stand before God on the strength of it? Paul says no, and he says the same of everyone who does believe. The law written on the heart is what lets an unbeliever do good, and the same law leaves none of us able to claim we have done enough of it.
+
+## The Rich Young Man
+
+Mark tells of a man who ran up to Jesus, knelt in front of him, and asked, "Good Teacher, what must I do to inherit eternal life?" Jesus answered with a question first: "Why do you call me good? No one is good except God alone" (Mark 10:17–18). Then he listed commandments, and the man said he had kept them all since he was young. By any ordinary measure he was a good man. Jesus did not dispute it. Mark adds a detail the other Gospels leave out: "And Jesus, looking at him, loved him" (Mark 10:21).
+
+Jesus didn't despise the man's goodness. He told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him. The man went away grieving, because he had great wealth. When the disciples asked who could possibly be saved, Jesus said, "With man it is impossible, but not with God. For all things are possible with God" (Mark 10:27).
+
+"No one is good except God alone" tells us where goodness comes from, and it was spoken by the one person who could have said it of himself. It takes nothing away from George Eliot or from the decent unbeliever down the street. The duty Eliot felt so absolutely was real. But the law she served was not impersonal after all. It comes from the same God who, in Jesus, looked at a man who had kept the commandments all his life and loved him enough to tell him the truth.
+
+If you don't believe, no one is asking you to stop being good. The question is what your goodness is answering to.
+
+For Christians the question is harder. What does our goodness tell the people watching us about God?
+
+None of us will become good enough to deserve him. The hope of the gospel is that the only one who is good came looking for people who were not.
+
+*"Why do you call me good? No one is good except God alone."* (Mark 10:18)
+
+*"They show that the work of the law is written on their hearts, while their conscience also bears witness."* (Romans 2:15)
+
+*"For the Son of Man came to seek and to save the lost."* (Luke 19:10)

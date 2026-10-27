@@ -19,6 +19,9 @@
  *   bible/lex/<H|G>/<bucket>.json         lexicon shards (250 numbers each) + occurrence counts
  *   bible/morph/<H|G>.json                grammar code -> plain-language expansion
  *
+ * Then run scripts/build-bible-text.mjs: it writes the text-only shards
+ * (bible/text/) the verse sheet reads, and CI fails until it has.
+ *
  * Word tuple in a chapter file: [original, transliteration, gloss, strong, grammar, editions?]
  * (editions only on Greek words that differ between the major editions).
  */

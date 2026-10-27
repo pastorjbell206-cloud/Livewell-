@@ -283,6 +283,9 @@ function manifestPages() {
     // written page are routes.
     { file: "client/public/plans/plans-index.json", key: "plans", prefix: "/plans/" },
     { file: "client/public/needs/index.json", key: "needs", prefix: "/help/", filter: (e) => e.page === true },
+    // A page per family devotion (/family/devotions/:id), from the family
+    // index (scripts/build-family-index.mjs), which keys each row by `id`.
+    { file: "client/public/family/index.json", key: "devotions", slugField: "id", prefix: "/family/devotions/" },
   ];
   for (const s of sources) {
     try {

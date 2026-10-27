@@ -116,6 +116,8 @@ const Family = lazy(() => import("./pages/Family"));
 const FamilyCatechism = lazy(() => import("./pages/FamilyCatechism"));
 const FamilyDevotions = lazy(() => import("./pages/FamilyDevotions"));
 const FamilyReadingPlans = lazy(() => import("./pages/FamilyReadingPlans"));
+const FamilyTonight = lazy(() => import("./pages/family/Tonight"));
+const FamilyDevotionPage = lazy(() => import("./pages/family/DevotionPage"));
 const TheologyMethodology = lazy(() => import("./pages/TheologyMethodology"));
 const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
@@ -379,6 +381,8 @@ function Router() {
         <Route path="/exile" component={ToAfterChristendomRedirect} />
         <Route path="/parenting" component={ToFamilyRedirect} />
         <Route path="/family/catechism" component={FamilyCatechism} />
+        <Route path="/family/tonight" component={FamilyTonight} />
+        <Route path="/family/devotions/:id" component={FamilyDevotionPage} />
         <Route path="/family/devotions" component={FamilyDevotions} />
         <Route path="/family/reading-plans" component={FamilyReadingPlans} />
         <Route path="/family" component={Family} />

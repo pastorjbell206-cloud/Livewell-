@@ -7,70 +7,57 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
 import { ArrowLeft, Search as SearchIcon } from "lucide-react";
 
-import { LibrarySource, LIBRARY_SOURCES, pickString } from "@/lib/catalog";
+import { LIBRARY_SOURCES, type LibrarySource } from "@/lib/catalog";
+import { ESSAY_OVERRIDES } from "@/lib/essayOverrides.generated";
 import { essayDate, isPublicEssay } from "@/lib/shelf";
-import { crisisTopicsFor, rankEntries } from "@/lib/siteSearch";
+import {
+  crisisTopicsFor,
+  essayEntries,
+  indexEntries,
+  libraryEntries,
+  loadPassageParser,
+  passageFor,
+  rankEntries,
+  type SearchEntry,
+} from "@/lib/siteSearch";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { TOOLS } from "@/pages/ToolsHub";
 
 // --- Library manifest search (static JSON content libraries) ---
 // The source registry lives in @/lib/catalog so search and the unified
-// /explore browse page read one list and never drift apart.
-
-interface LibraryEntry {
-  slug: string;
-  title: string;
-  blurb: string;
-  /** group (leadership/context) or pillar (life/formation) */
-  facet: string;
-  sourceLabel: string;
-  href: string;
-  indexHref: string;
-  /** The everyday phrasings people use for it (a care page's askedAs). */
-  keywords: string;
-}
+// /explore browse page read one list and never drift apart. The wisdom
+// topics, Honest Answers, the family devotions and catechism, and Christ and
+// the Nation come from one small index (public/search-index.json), and the
+// rewritten essays from essayOverrides.generated.ts.
 
 const LIBRARY_RESULT_CAP = 16;
 
 // The tools, from the /tools registry, so "worry journal" finds the Worry Journal.
-const TOOL_ENTRIES: LibraryEntry[] = TOOLS.map((t) => ({
-  slug: t.href,
+const TOOL_ENTRIES: SearchEntry[] = TOOLS.map((t) => ({
   title: t.title,
   blurb: t.description,
   facet: "Tool",
   sourceLabel: "Tools",
   href: t.href,
   indexHref: "/tools",
-  keywords: "",
 }));
 
-async function fetchLibrarySource(source: LibrarySource): Promise<LibraryEntry[]> {
+// A rewrite is found by its own title and excerpt, here, not by the server.
+const ESSAY_ENTRIES: SearchEntry[] = essayEntries(ESSAY_OVERRIDES, (slug) => isPublicEssay(slug));
+// Only a rewrite found above replaces the server's row, so no essay is lost from search.
+const REWRITTEN = new Set(ESSAY_OVERRIDES.filter((o) => isPublicEssay(o.slug)).map((o) => o.slug));
+
+// Graceful per-manifest failure: a missing or malformed manifest should never break search.
+async function fetchEntries(url: string, read: (data: unknown) => SearchEntry[]): Promise<SearchEntry[]> {
   try {
-    const res = await fetch(source.url);
-    if (!res.ok) return [];
-    const data = await res.json();
-    const list = data?.[source.listKey];
-    if (!Array.isArray(list)) return [];
-    return list
-      .filter((item: Record<string, unknown>) => item && typeof item.slug === "string" && typeof item.title === "string")
-      .map((item: Record<string, unknown>) => ({
-        slug: item.slug as string,
-        title: item.title as string,
-        // Each library names its summary/facet fields differently — take the
-        // first present so every source searches on its real text.
-        blurb: pickString(item.blurb, item.excerpt, item.summary, item.subtitle),
-        facet: pickString(item.group, item.pillar, item.topic, item.era, item.audience),
-        sourceLabel: source.label,
-        href: source.buildHref(item.slug as string),
-        indexHref: source.indexHref,
-        keywords: Array.isArray(item.askedAs) ? (item.askedAs as unknown[]).filter((w) => typeof w === "string").join(" ") : "",
-      }));
+    const res = await fetch(url);
+    return res.ok ? read(await res.json()) : [];
   } catch {
-    // Graceful per-manifest failure: a missing or malformed manifest
-    // should never break essay search.
     return [];
   }
 }
+
+const fetchLibrarySource = (source: LibrarySource) => fetchEntries(source.url, (data) => libraryEntries(source, data));
 
 export default function SearchPage() {
   const [, navigate] = useLocation();
@@ -87,14 +74,14 @@ export default function SearchPage() {
   const [searchType, setSearchType] = useState<"all" | "articles" | "resources">("all");
 
   // Library manifests: fetched once on mount, filtered client-side per query
-  const [libraryEntries, setLibraryEntries] = useState<LibraryEntry[]>([]);
+  const [entries, setEntries] = useState<SearchEntry[]>([]);
   const [libraryLoaded, setLibraryLoaded] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all(LIBRARY_SOURCES.map(fetchLibrarySource)).then((lists) => {
+    Promise.all([...LIBRARY_SOURCES.map(fetchLibrarySource), fetchEntries("/search-index.json", indexEntries)]).then((lists) => {
       if (cancelled) return;
-      setLibraryEntries([...lists.flat(), ...TOOL_ENTRIES]);
+      setEntries([...ESSAY_ENTRIES, ...lists.flat(), ...TOOL_ENTRIES]);
       setLibraryLoaded(true);
     });
     return () => {
@@ -102,10 +89,21 @@ export default function SearchPage() {
     };
   }, []);
 
+  // "John 3:16" or "jn 3 16" opens the verse before anything else. The parser
+  // is its own small chunk; this page asks for it at once, since it is the
+  // whole point of the page and a deep link may already hold a reference.
+  const [parser, setParser] = useState<Awaited<ReturnType<typeof loadPassageParser>> | null>(null);
+  useEffect(() => {
+    let live = true;
+    loadPassageParser().then((p) => { if (live) setParser(p); }).catch(() => {});
+    return () => { live = false; };
+  }, []);
+  const passage = useMemo(() => (parser && query.trim() ? passageFor(query, parser) : null), [parser, query]);
+
   const libraryMatches = useMemo(() => {
     if (query.trim().length === 0) return [];
-    return rankEntries(libraryEntries, query);
-  }, [libraryEntries, query]);
+    return rankEntries(entries, query);
+  }, [entries, query]);
 
   const visibleLibraryMatches = libraryMatches.slice(0, LIBRARY_RESULT_CAP);
   // A reader who types their trouble here ("I want to die") sees how to reach
@@ -115,7 +113,7 @@ export default function SearchPage() {
     if (libraryMatches.length <= LIBRARY_RESULT_CAP) return [];
     const visible = new Set(visibleLibraryMatches);
     const hidden = libraryMatches.filter((entry) => !visible.has(entry));
-    const seen = new Map<string, LibraryEntry>();
+    const seen = new Map<string, SearchEntry>();
     for (const entry of hidden) {
       if (!seen.has(entry.indexHref)) seen.set(entry.indexHref, entry);
     }
@@ -145,9 +143,11 @@ export default function SearchPage() {
         ? articleResults.data?.results || []
         : resourceResults.data?.results || [];
   // Retired essays never surface in search (lib/shelf.ts). The post-cutoff
-  // rule reads the same date everywhere: publishedAt, else createdAt.
+  // rule reads the same date everywhere: publishedAt, else createdAt. An
+  // essay with a rewrite is already among the matches above, by the rewrite's
+  // own title and excerpt, so the database's older row is dropped.
   const results = rawResults.filter(
-    (r) => r.type !== "article" || isPublicEssay(r.slug ?? "", essayDate(r))
+    (r) => r.type !== "article" || (isPublicEssay(r.slug ?? "", essayDate(r)) && !REWRITTEN.has(r.slug ?? ""))
   );
 
   const isLoading =
@@ -197,7 +197,7 @@ export default function SearchPage() {
   return (
     <Layout>
       <SEOMeta title="Search" description="Search the essays, libraries, tools, and books on LiveWell." />
-      <div className="container py-16 max-w-4xl mx-auto">
+      <div className="container px-4 py-16 max-w-4xl mx-auto">
         {/* Back button */}
         <button
           onClick={() => navigate("/")}
@@ -230,8 +230,8 @@ export default function SearchPage() {
             />
             <input
               type="text"
-              aria-label="Search the site"
-              placeholder="Search help, essays, plans, tools…"
+              aria-label="Search the site, or look up a passage"
+              placeholder="Look up a passage or ask a question"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
@@ -266,7 +266,7 @@ export default function SearchPage() {
         <div>
           {query === "" ? (
             <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
-              <p className="text-lg">Type a word or a topic. Find Help, the essays, the plans, the guides, and the tools are all in here.</p>
+              <p className="text-lg">Ask in your own words, or type a passage like John 3:16. Find Help, the essays, the answers, the plans, the guides, the family devotions, and the tools are all in here.</p>
               {/* /help searches in the browser; this page also asks the server about essays. */}
               <p className="text-lg" style={{ marginTop: "12px" }}>
                 For what you're going through, <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find Help</Link> starts from your own words.
@@ -279,6 +279,35 @@ export default function SearchPage() {
                   <CrisisBlock id="help-now" topics={crisisTopics} heading="If you need help now" />
                 </div>
               )}
+              {/* A reference opens the passage itself, ahead of any page about it. */}
+              {passage && (
+                <div className="mb-12">
+                  <p
+                    className="font-ui text-xs font-medium uppercase mb-6"
+                    style={{ color: "var(--mustard-text)", letterSpacing: "0.18em" }}
+                  >
+                    In the Study Bible
+                  </p>
+                  <Link
+                    href={passage.href}
+                    className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
+                    style={{
+                      borderColor: "var(--border)",
+                      borderLeft: "2px solid var(--mustard)",
+                      backgroundColor: "var(--bone)",
+                    }}
+                  >
+                    <h3 className="font-display font-bold mb-2" style={{ color: "var(--ink)" }}>
+                      {passage.label}
+                    </h3>
+                    <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
+                      {passage.book
+                        ? `The introduction to ${passage.label} and every chapter, with notes.`
+                        : "Read it in the Study Bible, with the notes on its chapter."}
+                    </p>
+                  </Link>
+                </div>
+              )}
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (
                 <div className="mb-12">
@@ -286,12 +315,13 @@ export default function SearchPage() {
                     className="font-ui text-xs font-medium uppercase mb-6"
                     style={{ color: "var(--gold)", letterSpacing: "0.18em" }}
                   >
-                    Help, plans, tools, and guides
+                    Across the site
                   </p>
                   <div className="space-y-4">
-                    {visibleLibraryMatches.map((entry) => (
+                    {visibleLibraryMatches.map((entry, i) => (
                       <Link
-                        key={`library-${entry.sourceLabel}-${entry.slug}`}
+                        // Several entries share a page (the catechism's questions), so the place in the list keys them.
+                        key={`library-${i}-${entry.href}`}
                         href={entry.href}
                         className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
                         style={{
@@ -345,7 +375,7 @@ export default function SearchPage() {
                   <p className="text-lg">Searching…</p>
                 </div>
               ) : results.length === 0 ? (
-                visibleLibraryMatches.length === 0 ? (
+                visibleLibraryMatches.length === 0 && !passage ? (
                   isError ? (
                     <LoadFailed
                       what="The search"

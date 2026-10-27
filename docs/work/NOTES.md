@@ -185,3 +185,11 @@ PR. Keep /theology/history URLs; no new redirects there. Current study: 7 eras,
      id in the test's temp scenario. Fix: let the validator take an injectable
      year-map path (or skip it) and have the test pass a copy with the id
      renamed.
+
+## Web-search budget (learned 2026-10-27)
+
+The ~200-search WebSearch allowance is shared by everything launched in the
+same main-session turn, not per workflow run: fifteen verification runs
+launched together shared one budget (the Christian nationalism run got 3
+searches). To give a verification run a full budget, launch it in a turn of
+its own.

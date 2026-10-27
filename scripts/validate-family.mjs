@@ -99,8 +99,13 @@ export const KNOWN_CATECHISM_REPEATS = [
 
 /** Each family page that shows verse text, and the libraries it shows. */
 export const PAGES = [
-  ["client/src/pages/Family.tsx", ["devotions"]],
-  ["client/src/pages/FamilyDevotions.tsx", ["devotions", "seasonal"]],
+  // /family and the library list titles and references, no verse text (U17).
+  ["client/src/pages/Family.tsx", []],
+  ["client/src/pages/FamilyDevotions.tsx", []],
+  // A devotion's page and table mode show a weekly devotion (BSB) or a day of
+  // a daily set (paraphrase).
+  ["client/src/pages/family/DevotionPage.tsx", ["devotions", "seasonal"]],
+  ["client/src/pages/family/TableMode.tsx", ["devotions", "seasonal"]],
   ["client/src/pages/FamilyCatechism.tsx", ["catechism"]],
   ["client/src/pages/FamilyReadingPlans.tsx", ["reading-plans"]],
 ];

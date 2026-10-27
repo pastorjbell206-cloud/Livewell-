@@ -7,6 +7,7 @@
  * is denied them. Data lives in client/src/data/answers.ts; FAQPage JSON-LD is
  * built from the same array so search and the page can never disagree.
  */
+import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ANSWERS } from "@/data/answers";
@@ -26,6 +27,13 @@ const faqSchema = {
 };
 
 export default function Answers() {
+  // A search result or a shared link (/answers#<slug>) opens on its answer;
+  // the page arrives after the address does, so the browser cannot do it.
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (id) requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
+  }, []);
+
   return (
     <Layout>
       <SEOMeta
