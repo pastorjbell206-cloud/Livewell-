@@ -203,3 +203,9 @@ Second passes are launched one per main-session turn (see the budget note).
 Landing workflow for finished essays: docs/work/essays/land-wf.js (args
 {essays:[{slug,section?}], redirects:[{from,to}], extra}); verifier:
 docs/work/essays/verify-wf.js (args {slug}).
+
+Restorations owed before the Doubt section goes to James: earlier verifier runs
+generalized figures that later runs confirmed but left as "a voice choice"
+(why-trust-the-bible: the Isaiah scroll "about a thousand years older", P52's
+size; check every ledger's "Original wording, for restoring" section). From
+2026-10-27 verify-wf.js restores confirmed originals itself.
