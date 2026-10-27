@@ -37,7 +37,8 @@ runs. Nothing here is read by the site build.
 - Contested second-order questions are stated fairly and left open. Hold for
   James (do not publish until he gives his position or says to publish open):
   women-and-leadership-church, what-the-bible-says-about-submission,
-  how-to-read-genesis-one.
+  how-to-read-genesis-one, did-god-command-genocide (its three readings of the
+  conquest commands are left open; ledger closed 2026-10-27 except that).
 - "Raising sons in a post-Christian country" needs James's own story; not
   written.
 - Scripture is ESV verbatim. esv.org is unreachable from the sandbox; verify
@@ -193,3 +194,12 @@ same main-session turn, not per workflow run: fifteen verification runs
 launched together shared one budget (the Christian nationalism run got 3
 searches). To give a verification run a full budget, launch it in a turn of
 its own.
+
+## Verification status (2026-10-27)
+
+Ledgers fully closed: excavation-not-demolition, can-you-be-good-without-god,
+the-early-church-under-rome. Genocide closed but for James's position.
+Second passes are launched one per main-session turn (see the budget note).
+Landing workflow for finished essays: docs/work/essays/land-wf.js (args
+{essays:[{slug,section?}], redirects:[{from,to}], extra}); verifier:
+docs/work/essays/verify-wf.js (args {slug}).
