@@ -519,8 +519,11 @@ const HUB_LISTINGS = {
   "/topics": { label: "Topics", cap: 40, load: () => {
     const d = readJsonSafe("client/public/topics/index.json");
     const shelf = loadEssayShelf(REPO_ROOT);
-    // A row to an essay not public yet opens its stand-in, as the page does.
-    const opens = (r) => (r.standIn && !shelf.isPublic(String(r.href).replace(/^\/writing\//, "")) ? r.standIn : r.href);
+    // A row to an essay not public yet opens its stand-in, as the page does (lib/topics rowTarget).
+    const opens = (r) => {
+      const essay = /^\/writing\/([^/?#]+)$/.exec(String(r.href));
+      return r.standIn && essay && !shelf.isPublic(decodeURIComponent(essay[1])) ? r.standIn : r.href;
+    };
     return ((d && d.rows) || []).map((r) => ({ title: r.askedAs, href: opens(r), blurb: r.line || "" }));
   } },
   "/studyguides": { label: "Study guides", cap: 80, load: () => {
@@ -1034,11 +1037,14 @@ async function main() {
     // The topic pages (/topics/:slug), from the topics index
     // (scripts/build-topics-index.mjs). The title is the question, as the
     // page's own SEOMeta has it; the page file's prose (the short answer and
-    // the lines under each part) is the crawlable body.
+    // the lines under each part) is the crawlable body. The essay slots are
+    // left out: which of them the page shows depends on the shelf (a lead not
+    // public yet shows its stand-in), so the body never names an essay the
+    // reader cannot open.
     {
       file: "client/public/topics/index.json", key: "pages", route: "/topics/", ogPrefix: "topics", desc: "description",
       contentDir: "client/public/topics",
-      omitKeys: ["slug", "title", "description", "askedAs", "politics", "sensitive", "folds", "updated", "reviewed"],
+      omitKeys: ["slug", "title", "description", "askedAs", "essay", "essayStandIn", "alsoEssays", "politics", "sensitive", "folds", "updated", "reviewed"],
     },
   ];
   let withBody = 0;

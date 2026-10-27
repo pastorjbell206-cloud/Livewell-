@@ -571,6 +571,7 @@ img{display:block;max-width:100%}
 .tp-foot a,.tp-text a,.tp-companion a,.tp-ways__links a,.tp-witness__name a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .tp-status{font-family:var(--U);color:var(--ink-muted);text-align:center;padding:var(--s-6) 0;margin:0}
 .tp-col{max-width:var(--w-prose);margin:0 auto}
+.tp-page .pg-head__eyebrow a{padding:12px 0;margin:-12px 0}
 .tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
 .tp-short{margin:0 0 var(--s-3)}
 .tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}

@@ -121,6 +121,9 @@ describe("a seeded bad page fails, with its reason", () => {
   it("an essay row with no stand-in while the essay is not public", () => {
     const rows = rowProblems([{ askedAs: "Q?", href: "/writing/why-didnt-the-bible-ban-slavery", kind: "essay", line: "A line." }], ctx).problems.join("\n");
     expect(rows).toMatch(/is not public yet and the row names no standIn/);
+    // A stand-in on a row that opens anything but an essay would never be opened.
+    const notEssay = rowProblems([{ askedAs: "Q?", href: "/help/anxiety", kind: "care", line: "A line.", standIn: "/help/grief" }], ctx).problems.join("\n");
+    expect(notEssay).toMatch(/standIn is only for a row to an essay/);
   });
 
   it("a seventh topic page, and a page no row lists", () => {

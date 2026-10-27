@@ -238,6 +238,7 @@ export function rowProblems(rows, ctx) {
       else waiting.push(`index: ${r.href}`);
     } else if (s !== "ok") problems.push(`${where}: ${r.href} ${s}`);
     if (r.standIn) {
+      if (!/^\/writing\/[^/?#]+$/.test(r.href)) problems.push(`${where}: standIn is only for a row to an essay (/writing/<slug>); the page never opens it here`);
       const t = hrefStatus(r.standIn, ctx);
       if (t !== "ok") problems.push(`${where}: standIn ${r.standIn} ${t}`);
     }
