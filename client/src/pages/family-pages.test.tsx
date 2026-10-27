@@ -17,7 +17,7 @@ import FamilyCatechism from "./FamilyCatechism";
 import FamilyReadingPlans from "./FamilyReadingPlans";
 
 const PUBLIC = path.resolve(__dirname, "../../public");
-const FILES = ["family-devotions.json", "family-devotions-2.json", "family-seasonal.json", "family-catechism.json", "family-reading-plans.json"];
+const FILES = ["family/index.json", "family-devotions.json", "family-devotions-2.json", "family-seasonal.json", "family-catechism.json", "family-reading-plans.json"];
 const catechism: { number: number; question: string }[] = JSON.parse(fs.readFileSync(path.join(PUBLIC, "family-catechism.json"), "utf8"));
 const weeklyCount = ["family-devotions.json", "family-devotions-2.json"]
   .map((f) => (JSON.parse(fs.readFileSync(path.join(PUBLIC, f), "utf8")) as unknown[]).length)
@@ -66,13 +66,40 @@ describe("family pages when the data does not arrive", () => {
 });
 
 describe("/family/devotions", () => {
+  afterEach(() => window.history.pushState({}, "", "/"));
+
   it("numbers the weekly devotions as a place in the set, not as weeks of a year", async () => {
     stubFamily({ online: true });
     renderWithProviders(<FamilyDevotions />);
     await waitFor(() => expect(screen.getByText(`1 of ${weeklyCount} · Who God Says You Are`)).toBeTruthy());
     expect(screen.getByRole("button", { name: `Weekly · ${weeklyCount}` })).toBeTruthy();
     expect(screen.queryByText(/^Week \d+/)).toBeNull();
-    expect(screen.getByText(/Scripture quoted from the Berean Standard Bible/)).toBeTruthy();
+  });
+
+  it("is a list of doors, one page per devotion, with the tab in the URL (U17)", async () => {
+    stubFamily({ online: true });
+    window.localStorage.setItem("livewell-progress-family-v1", JSON.stringify({ v: 1, start: "2026-11-03", band: "together", done: [{ id: "identity", date: "2026-11-03" }] }));
+    renderWithProviders(<FamilyDevotions />);
+    const first = await screen.findByRole("link", { name: /Made On Purpose/ });
+    expect(first).toHaveAttribute("href", "/family/devotions/identity");
+    expect(first).toHaveTextContent("Done on this device");
+    // A list of references, so no verse text and no translation note.
+    expect(screen.queryByText(/Scripture quoted from/)).toBeNull();
+    // No accordion: the list holds links, not buttons that open in place.
+    expect(screen.getByRole("list", { name: "Weekly devotions" }).querySelectorAll("button")).toHaveLength(0);
+
+    fireEvent.click(screen.getByRole("button", { name: /^Advent · \d+$/ }));
+    await waitFor(() => expect(window.location.search).toBe("?tab=advent"));
+    expect(screen.getByRole("link", { name: /December 1(?!\d)/ })).toHaveAttribute("href", "/family/devotions/advent-1");
+    window.localStorage.clear();
+  });
+
+  it("opens the tab the URL names", async () => {
+    stubFamily({ online: true });
+    window.history.pushState({}, "", "/family/devotions?tab=holy-week");
+    renderWithProviders(<FamilyDevotions />);
+    expect(await screen.findByRole("link", { name: /Palm Sunday/ })).toHaveAttribute("href", "/family/devotions/holy-week-1");
+    expect(screen.getByRole("button", { name: /^Holy Week · \d+$/ })).toHaveAttribute("aria-pressed", "true");
   });
 });
 

@@ -597,6 +597,92 @@ img{display:block;max-width:100%}
 .st-stepper__next{justify-self:end}
 .st-stepper__position{font-family:var(--U);font-size:14px;color:var(--ink-muted);font-variant-numeric:tabular-nums;margin:0;text-align:center}
 
+/* Position: a quiet "3 of 6" (components/study/Position.tsx). */
+.st-position{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+
+/* ─── THE TABLE (.tb-) ───────────────────────────────────────────────
+ * Family devotions at home (pages/family/, MASTER-PLAN 5.5): tonight's card
+ * on /family, a page per devotion, and table mode (?mode=table). Tokens only.
+ * Table mode drops the site header for its own 56px bar, so the stepper's
+ * Back and Next still sit at the bottom of the screen. */
+.tb-tonight{background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm);padding:clamp(20px,3vw,32px);min-height:236px}
+.tb-tonight__title{font-family:var(--F);font-size:clamp(30px,4vw,44px);font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:var(--ink);margin:10px 0 8px;text-wrap:balance}
+.tb-tonight__meta{font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink);margin:0}
+.tb-tonight__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
+.tb-line{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:6px 0 0}
+.tb-line .st-position{font-size:inherit}
+.tb-week{display:grid;gap:var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.tb-week__q{font-family:var(--F);font-size:clamp(22px,2.6vw,28px);font-weight:400;line-height:1.25;color:var(--ink);margin:8px 0 6px}
+.tb-sets{list-style:none;margin:8px 0 0;padding:0}
+.tb-sets li{border-top:1px solid var(--border)}
+.tb-sets li:last-child{border-bottom:1px solid var(--border)}
+.tb-sets a{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;min-height:48px;align-items:center;padding:8px 0;font-family:var(--U);font-size:15px;color:var(--ink);text-decoration:none}
+.tb-sets a:hover .tb-sets__name{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.tb-sets__name{font-weight:600}
+.tb-sets__when{color:var(--ink-muted)}
+.tb-link{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tb-link:hover{text-decoration-color:currentColor}
+
+/* One devotion, on its page. */
+.tb-devotion{max-width:var(--w-prose);margin:0 auto}
+.tb-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border)}
+.tb-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-ref{font-family:var(--U);font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--mustard-text);margin:0 0 8px}
+.tb-passage{font-family:var(--B);font-size:19px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2);padding-left:16px;border-left:2px solid var(--mustard)}
+.tb-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin:0 0 var(--s-2)}
+.tb-big{font-family:var(--F);font-size:clamp(22px,2.4vw,26px);font-weight:400;line-height:1.35;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-body p,.tb-text{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 8px}
+.tb-questions{margin:0 0 var(--s-2);padding-left:1.4em;font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink)}
+.tb-questions li+li{margin-top:10px}
+.tb-prayer{font-family:var(--F);font-size:clamp(20px,2.2vw,23px);font-style:italic;line-height:1.55;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-done{padding:var(--s-4) 0;border-top:1px solid var(--border)}
+.tb-done__note{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:10px 0 0}
+.tb-more{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:var(--s-3);border-top:1px solid var(--border)}
+
+/* Table mode: large type, one step per screen, the screen kept awake. */
+.tb-table{--st-stepper-top:57px;min-height:100vh;min-height:100svh;background:var(--bone);color:var(--ink)}
+.tb-table__bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;background:var(--bone);border-bottom:1px solid var(--border)}
+.tb-table__leave{flex-shrink:0;display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink);text-decoration:none;border:1px solid var(--border);border-radius:var(--radius-sm);transition:border-color .2s var(--motion-ease)}
+.tb-table__leave:hover{border-color:var(--ink)}
+.tb-table__name{min-width:0;flex:1;font-family:var(--F);font-size:18px;font-weight:500;line-height:1.2;color:var(--ink);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-table__main{max-width:720px;margin:0 auto;padding:0 16px}
+.tb-table .st-stepper__title{font-size:clamp(36px,7vw,52px)}
+/* "We did this tonight" is wider than Next: let it take the room, so it stays on one line on a phone. */
+.tb-table .st-stepper__bar{grid-template-columns:auto 1fr auto}
+.tb-table .tb-passage{font-size:clamp(23px,4.6vw,30px);line-height:1.55}
+.tb-table .tb-big{font-size:clamp(26px,5vw,34px)}
+.tb-table .tb-body p,.tb-table .tb-text,.tb-table .tb-questions{font-size:clamp(21px,4.2vw,25px);line-height:1.6}
+.tb-table .tb-prayer{font-size:clamp(24px,4.8vw,32px)}
+.tb-table .tb-ref{font-size:16px}
+.tb-table__done{padding:var(--s-5) 0}
+.tb-table__done h2{font-family:var(--F);font-size:clamp(36px,7vw,52px);font-weight:400;line-height:1.12;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-table__done h2:focus{outline:none}
+.tb-table__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
+@media (min-width:768px){.tb-table__bar{padding:0 24px}}
+
+/* A devotion printed from its page reads as one card: the steps in order,
+ * nothing for the screen. Tokens hold their light values (.print-paper). */
+@media print {
+  .tb-page .pg-head{padding:0}
+  .tb-page .pg-head__inner{max-width:100%;padding-bottom:6pt}
+  .tb-page .pg-head__eyebrow{margin-bottom:4pt}
+  .tb-page .pg-head__title{font-size:22pt}
+  .tb-page .pg-head__lede{font-size:10pt;margin-top:3pt}
+  .tb-page__body{padding:0 !important}
+  .tb-devotion{max-width:100%}
+  .tb-section{padding:6pt 0 2pt;break-inside:avoid}
+  .tb-section__title{font-size:13pt;margin-bottom:3pt}
+  .tb-ref,.tb-label{font-size:8pt;margin-bottom:2pt}
+  .tb-passage{font-size:10.5pt;line-height:1.45;margin-bottom:4pt;padding-left:8pt}
+  .tb-big{font-size:11.5pt;margin-bottom:4pt}
+  .tb-body p,.tb-text,.tb-questions{font-size:9.5pt;line-height:1.45;margin-bottom:4pt}
+  .tb-questions li+li{margin-top:2pt}
+  .tb-prayer{font-size:10.5pt;margin-bottom:2pt}
+  .tb-devotion p[style]{font-size:8pt !important;margin-bottom:2pt !important}
+  .tb-done,.tb-more,.tb-line{display:none !important}
+}
+
 /* CARD */
 .card{background:var(--card);border:1px solid var(--border);border-radius:2px;overflow:hidden;transition:all 240ms cubic-bezier(0.22,1,0.36,1)}
 .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}

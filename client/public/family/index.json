@@ -1,0 +1,1677 @@
+{
+  "about": "Written by scripts/build-family-index.mjs from the family libraries in client/public. Do not edit by hand.",
+  "weekly": 72,
+  "sets": {
+    "thanksgiving": {
+      "slug": "thanksgiving",
+      "label": "Thanksgiving week",
+      "days": 7
+    },
+    "advent": {
+      "slug": "advent",
+      "label": "Advent",
+      "days": 25
+    },
+    "holyWeek": {
+      "slug": "holy-week",
+      "label": "Holy Week",
+      "days": 8
+    }
+  },
+  "devotions": [
+    {
+      "id": "identity",
+      "kind": "weekly",
+      "n": 1,
+      "title": "Made On Purpose",
+      "theme": "Who God Says You Are",
+      "passage": "Psalm 139:13-14",
+      "href": "/study/bible/psalms/139#v13",
+      "file": "/family-devotions.json",
+      "description": "You were not an accident or a mistake. God made you on purpose, and He likes what He made."
+    },
+    {
+      "id": "fear-and-anxiety",
+      "kind": "weekly",
+      "n": 2,
+      "title": "When The Lights Go Out",
+      "theme": "Fear And Anxiety",
+      "passage": "Psalm 56:3-4",
+      "href": "/study/bible/psalms/56#v3",
+      "file": "/family-devotions.json",
+      "description": "Being scared is not a sin or a failure. The verse does not say if I am afraid, it says when."
+    },
+    {
+      "id": "forgiveness",
+      "kind": "weekly",
+      "n": 3,
+      "title": "The Weight You Put Down",
+      "theme": "Forgiveness",
+      "passage": "Ephesians 4:32",
+      "href": "/study/bible/ephesians/4#v32",
+      "file": "/family-devotions.json",
+      "description": "Forgiving someone is not saying what they did was okay. It is choosing to stop making them pay for it."
+    },
+    {
+      "id": "gratitude",
+      "kind": "weekly",
+      "n": 4,
+      "title": "Counting What You Already Have",
+      "theme": "Gratitude",
+      "passage": "1 Thessalonians 5:18",
+      "href": "/study/bible/1-thessalonians/5#v18",
+      "file": "/family-devotions.json",
+      "description": "Thankful people are not the ones with the most stuff. They are the ones who actually notice what they have."
+    },
+    {
+      "id": "kindness-to-the-outsider",
+      "kind": "weekly",
+      "n": 5,
+      "title": "The Empty Seat",
+      "theme": "Kindness To Outsiders",
+      "passage": "Luke 14:13-14",
+      "href": "/study/bible/luke/14#v13",
+      "file": "/family-devotions.json",
+      "description": "God notices the person standing alone, and He wants us to walk over there."
+    },
+    {
+      "id": "obedience",
+      "kind": "weekly",
+      "n": 6,
+      "title": "Why, Not Just What",
+      "theme": "Obedience And Heart",
+      "passage": "1 Samuel 16:7",
+      "href": "/study/bible/1-samuel/16#v7",
+      "file": "/family-devotions.json",
+      "description": "God cares about why you obey, not just whether you obey."
+    },
+    {
+      "id": "who-is-jesus",
+      "kind": "weekly",
+      "n": 7,
+      "title": "More Than A Good Teacher",
+      "theme": "Who Jesus Is",
+      "passage": "Colossians 1:15-16",
+      "href": "/study/bible/colossians/1#v15",
+      "file": "/family-devotions.json",
+      "description": "Jesus is not just a kind man from history. He is God you can actually see."
+    },
+    {
+      "id": "why-we-pray",
+      "kind": "weekly",
+      "n": 8,
+      "title": "Talking To Someone Who Is There",
+      "theme": "Why We Pray",
+      "passage": "Matthew 6:6",
+      "href": "/study/bible/matthew/6#v6",
+      "file": "/family-devotions.json",
+      "description": "Prayer is not magic words. It is talking to a Father who is actually listening."
+    },
+    {
+      "id": "is-the-bible-true",
+      "kind": "weekly",
+      "n": 9,
+      "title": "Can We Trust This Book",
+      "theme": "Is The Bible True",
+      "passage": "2 Timothy 3:16-17",
+      "href": "/study/bible/2-timothy/3#v16",
+      "file": "/family-devotions.json",
+      "description": "The Bible is not a book of made up stories. It is one long true story that has held up under hard questions for a very long time."
+    },
+    {
+      "id": "handling-anger",
+      "kind": "weekly",
+      "n": 10,
+      "title": "What To Do With The Fire",
+      "theme": "Handling Anger",
+      "passage": "James 1:19-20",
+      "href": "/study/bible/james/1#v19",
+      "file": "/family-devotions.json",
+      "description": "Anger is not always wrong, but it makes a terrible boss."
+    },
+    {
+      "id": "screens-and-attention",
+      "kind": "weekly",
+      "n": 11,
+      "title": "Where Your Eyes Go",
+      "theme": "Screens And Attention",
+      "passage": "Philippians 4:8",
+      "href": "/study/bible/philippians/4#v8",
+      "file": "/family-devotions.json",
+      "description": "What you keep looking at slowly becomes what you think about, and what you think about becomes who you are."
+    },
+    {
+      "id": "serving-others",
+      "kind": "weekly",
+      "n": 12,
+      "title": "The Towel And The Basin",
+      "theme": "Serving Others",
+      "passage": "Mark 10:45",
+      "href": "/study/bible/mark/10#v45",
+      "file": "/family-devotions.json",
+      "description": "In God's family, the great ones are not the ones being waited on. They are the ones doing the serving."
+    },
+    {
+      "id": "faith",
+      "kind": "weekly",
+      "n": 13,
+      "title": "Walking Before You See",
+      "theme": "Faith",
+      "passage": "Hebrews 11:1",
+      "href": "/study/bible/hebrews/11#v1",
+      "file": "/family-devotions-2.json",
+      "description": "Faith is trusting Someone enough to take the next step before you can see the whole staircase."
+    },
+    {
+      "id": "hope",
+      "kind": "weekly",
+      "n": 14,
+      "title": "An Anchor In The Storm",
+      "theme": "Hope",
+      "passage": "Hebrews 6:19",
+      "href": "/study/bible/hebrews/6#v19",
+      "file": "/family-devotions-2.json",
+      "description": "Hope is being held by something steady while the waves are still moving."
+    },
+    {
+      "id": "love",
+      "kind": "weekly",
+      "n": 15,
+      "title": "Love That Costs Something",
+      "theme": "Love",
+      "passage": "1 John 3:18",
+      "href": "/study/bible/1-john/3#v18",
+      "file": "/family-devotions-2.json",
+      "description": "Love is something you do, not just something you feel or say."
+    },
+    {
+      "id": "patience",
+      "kind": "weekly",
+      "n": 16,
+      "title": "The Slow Growing Things",
+      "theme": "Patience",
+      "passage": "James 5:7",
+      "href": "/study/bible/james/5#v7",
+      "file": "/family-devotions-2.json",
+      "description": "The best things in life grow slowly, and being patient is trusting that the wait is doing something."
+    },
+    {
+      "id": "self-control",
+      "kind": "weekly",
+      "n": 17,
+      "title": "The City With No Walls",
+      "theme": "Self Control",
+      "passage": "Proverbs 25:28",
+      "href": "/study/bible/proverbs/25#v28",
+      "file": "/family-devotions-2.json",
+      "description": "Self control is being strong enough to choose what you do instead of just reacting, and there is nothing boring about that kind of strength."
+    },
+    {
+      "id": "honesty",
+      "kind": "weekly",
+      "n": 18,
+      "title": "Nothing To Hide",
+      "theme": "Honesty",
+      "passage": "Proverbs 12:22",
+      "href": "/study/bible/proverbs/12#v22",
+      "file": "/family-devotions-2.json",
+      "description": "Telling the truth keeps you free, because you never have to remember which story you told."
+    },
+    {
+      "id": "generosity",
+      "kind": "weekly",
+      "n": 19,
+      "title": "Open Hands",
+      "theme": "Generosity",
+      "passage": "2 Corinthians 9:7",
+      "href": "/study/bible/2-corinthians/9#v7",
+      "file": "/family-devotions-2.json",
+      "description": "Generosity has less to do with how much you have than with how tightly you hold it."
+    },
+    {
+      "id": "humility",
+      "kind": "weekly",
+      "n": 20,
+      "title": "The Lowest Seat",
+      "theme": "Humility",
+      "passage": "Philippians 2:3",
+      "href": "/study/bible/philippians/2#v3",
+      "file": "/family-devotions-2.json",
+      "description": "A humble person does not need to be noticed, which leaves them free to notice everyone else."
+    },
+    {
+      "id": "courage",
+      "kind": "weekly",
+      "n": 21,
+      "title": "Brave Is Not Fearless",
+      "theme": "Courage",
+      "passage": "Joshua 1:9",
+      "href": "/study/bible/joshua/1#v9",
+      "file": "/family-devotions-2.json",
+      "description": "You can be afraid and still do the right thing, because God goes with you. That is what courage is."
+    },
+    {
+      "id": "contentment",
+      "kind": "weekly",
+      "n": 22,
+      "title": "Enough Right Here",
+      "theme": "Contentment",
+      "passage": "Philippians 4:11-12",
+      "href": "/study/bible/philippians/4#v11",
+      "file": "/family-devotions-2.json",
+      "description": "Contentment is a thing you learn, not a thing you are born with."
+    },
+    {
+      "id": "friendship",
+      "kind": "weekly",
+      "n": 23,
+      "title": "The Friend Who Stays",
+      "theme": "Friendship",
+      "passage": "Proverbs 17:17",
+      "href": "/study/bible/proverbs/17#v17",
+      "file": "/family-devotions-2.json",
+      "description": "A real friend is the one who is still there when things get hard, not just when things are fun."
+    },
+    {
+      "id": "work",
+      "kind": "weekly",
+      "n": 24,
+      "title": "Working For The Right Boss",
+      "theme": "Work",
+      "passage": "Colossians 3:23-24",
+      "href": "/study/bible/colossians/3#v23",
+      "file": "/family-devotions-2.json",
+      "description": "How you do your work says something about you, even when nobody is watching."
+    },
+    {
+      "id": "rest-and-sabbath",
+      "kind": "weekly",
+      "n": 25,
+      "title": "Permission To Stop",
+      "theme": "Rest And Sabbath",
+      "passage": "Mark 2:27",
+      "href": "/study/bible/mark/2#v27",
+      "file": "/family-devotions-2.json",
+      "description": "God built rest into the week on purpose, because He made us to need it."
+    },
+    {
+      "id": "caring-for-creation",
+      "kind": "weekly",
+      "n": 26,
+      "title": "Taking Care Of The Garden",
+      "theme": "Caring For Creation",
+      "passage": "Genesis 2:15",
+      "href": "/study/bible/genesis/2#v15",
+      "file": "/family-devotions-2.json",
+      "description": "God gave us His world to look after, not to use up and throw away."
+    },
+    {
+      "id": "the-church",
+      "kind": "weekly",
+      "n": 27,
+      "title": "Not A Building",
+      "theme": "The Church",
+      "passage": "1 Corinthians 12:27",
+      "href": "/study/bible/1-corinthians/12#v27",
+      "file": "/family-devotions-2.json",
+      "description": "The church is people who belong to each other, long before it is a building you go to."
+    },
+    {
+      "id": "the-lords-supper",
+      "kind": "weekly",
+      "n": 28,
+      "title": "The Meal That Remembers",
+      "theme": "The Lord's Supper",
+      "passage": "Luke 22:19",
+      "href": "/study/bible/luke/22#v19",
+      "file": "/family-devotions-2.json",
+      "description": "The bread and the cup are a way of remembering what Jesus gave for us."
+    },
+    {
+      "id": "heaven",
+      "kind": "weekly",
+      "n": 29,
+      "title": "Every Sad Thing Undone",
+      "theme": "Heaven",
+      "passage": "Revelation 21:4",
+      "href": "/study/bible/revelation/21#v4",
+      "file": "/family-devotions-2.json",
+      "description": "Heaven is not floating on clouds. It is the day God makes everything that is broken right again."
+    },
+    {
+      "id": "the-cross",
+      "kind": "weekly",
+      "n": 30,
+      "title": "What Love Was Willing To Do",
+      "theme": "The Cross",
+      "passage": "Romans 5:8",
+      "href": "/study/bible/romans/5#v8",
+      "file": "/family-devotions-2.json",
+      "description": "The cross is where God showed exactly how far His love was willing to go."
+    },
+    {
+      "id": "the-empty-tomb",
+      "kind": "weekly",
+      "n": 31,
+      "title": "The Stone Was Moved",
+      "theme": "The Empty Tomb",
+      "passage": "Matthew 28:6",
+      "href": "/study/bible/matthew/28#v6",
+      "file": "/family-devotions-2.json",
+      "description": "Jesus did not stay dead, and that changes everything about what is possible."
+    },
+    {
+      "id": "the-holy-spirit",
+      "kind": "weekly",
+      "n": 32,
+      "title": "God Who Lives Close",
+      "theme": "The Holy Spirit",
+      "passage": "John 14:16-17",
+      "href": "/study/bible/john/14#v16",
+      "file": "/family-devotions-2.json",
+      "description": "When Jesus went back to heaven, He did not leave us alone. He sent His Spirit to live with us."
+    },
+    {
+      "id": "worship",
+      "kind": "weekly",
+      "n": 33,
+      "title": "What You Are Made Of",
+      "theme": "Worship",
+      "passage": "Psalm 95:6",
+      "href": "/study/bible/psalms/95#v6",
+      "file": "/family-devotions-2.json",
+      "description": "Worship is giving God the biggest place in your heart, and the singing is only one way that shows."
+    },
+    {
+      "id": "grace",
+      "kind": "weekly",
+      "n": 34,
+      "title": "The Gift You Cannot Earn",
+      "theme": "Grace",
+      "passage": "Ephesians 2:8-9",
+      "href": "/study/bible/ephesians/2#v8",
+      "file": "/family-devotions-2.json",
+      "description": "Grace is getting something good you could never have earned, just because God is generous."
+    },
+    {
+      "id": "repentance",
+      "kind": "weekly",
+      "n": 35,
+      "title": "Turning Around",
+      "theme": "Repentance",
+      "passage": "Acts 3:19-20",
+      "href": "/study/bible/acts/3#v19",
+      "file": "/family-devotions-2.json",
+      "description": "Repentance is turning around and going the other way, which asks more of you than feeling sorry."
+    },
+    {
+      "id": "mercy",
+      "kind": "weekly",
+      "n": 36,
+      "title": "Not Getting What You Deserve",
+      "theme": "Mercy",
+      "passage": "Micah 6:8",
+      "href": "/study/bible/micah/6#v8",
+      "file": "/family-devotions-2.json",
+      "description": "Mercy is choosing kindness when someone has earned the opposite."
+    },
+    {
+      "id": "justice-and-the-poor",
+      "kind": "weekly",
+      "n": 37,
+      "title": "Whose Voice Gets Heard",
+      "theme": "Justice And The Poor",
+      "passage": "Proverbs 31:8-9",
+      "href": "/study/bible/proverbs/31#v8",
+      "file": "/family-devotions-2.json",
+      "description": "God cares deeply about the people the world forgets, and He wants us to speak up for them."
+    },
+    {
+      "id": "loving-your-enemies",
+      "kind": "weekly",
+      "n": 38,
+      "title": "The Hardest Love",
+      "theme": "Loving Your Enemies",
+      "passage": "Matthew 5:44-45",
+      "href": "/study/bible/matthew/5#v44",
+      "file": "/family-devotions-2.json",
+      "description": "Anyone can love the people who are nice to them. Jesus calls us to love even the people who are not."
+    },
+    {
+      "id": "the-words-we-say",
+      "kind": "weekly",
+      "n": 39,
+      "title": "Small But Powerful",
+      "theme": "The Words We Say",
+      "passage": "James 3:5",
+      "href": "/study/bible/james/3#v5",
+      "file": "/family-devotions-2.json",
+      "description": "Words are tiny, but they can build people up or burn them down."
+    },
+    {
+      "id": "jealousy-and-comparison",
+      "kind": "weekly",
+      "n": 40,
+      "title": "The Thief Of Glad",
+      "theme": "Jealousy And Comparison",
+      "passage": "Galatians 6:4",
+      "href": "/study/bible/galatians/6#v4",
+      "file": "/family-devotions-2.json",
+      "description": "Comparing yourself to others will steal your joy faster than almost anything."
+    },
+    {
+      "id": "the-fear-of-the-lord",
+      "kind": "weekly",
+      "n": 41,
+      "title": "The Right Kind Of Awe",
+      "theme": "The Fear Of The Lord",
+      "passage": "Proverbs 9:10",
+      "href": "/study/bible/proverbs/9#v10",
+      "file": "/family-devotions-2.json",
+      "description": "Fearing God means taking Him seriously, with awe, the way you feel small and glad at the edge of the ocean."
+    },
+    {
+      "id": "wisdom",
+      "kind": "weekly",
+      "n": 42,
+      "title": "More Than Being Smart",
+      "theme": "Wisdom",
+      "passage": "James 1:5",
+      "href": "/study/bible/james/1#v5",
+      "file": "/family-devotions-2.json",
+      "description": "Being smart is knowing a lot. Being wise is knowing what to do with what you know."
+    },
+    {
+      "id": "suffering",
+      "kind": "weekly",
+      "n": 43,
+      "title": "When It Really Hurts",
+      "theme": "Suffering",
+      "passage": "Romans 8:28",
+      "href": "/study/bible/romans/8#v28",
+      "file": "/family-devotions-2.json",
+      "description": "God does not waste our pain. He can bring good even out of the hard things."
+    },
+    {
+      "id": "waiting-on-god",
+      "kind": "weekly",
+      "n": 44,
+      "title": "Strength In The Waiting",
+      "theme": "Waiting On God",
+      "passage": "Isaiah 40:31",
+      "href": "/study/bible/isaiah/40#v31",
+      "file": "/family-devotions-2.json",
+      "description": "Waiting on God is its own kind of work, gathering strength for what comes next."
+    },
+    {
+      "id": "gods-faithfulness",
+      "kind": "weekly",
+      "n": 45,
+      "title": "He Keeps His Word",
+      "theme": "God's Faithfulness",
+      "passage": "Lamentations 3:22-23",
+      "href": "/study/bible/lamentations/3#v22",
+      "file": "/family-devotions-2.json",
+      "description": "God's love does not run out, and His mercy is new every single morning."
+    },
+    {
+      "id": "the-armor-of-god",
+      "kind": "weekly",
+      "n": 46,
+      "title": "Dressed For The Day",
+      "theme": "The Armor Of God",
+      "passage": "Ephesians 6:11",
+      "href": "/study/bible/ephesians/6#v11",
+      "file": "/family-devotions-2.json",
+      "description": "There is a real struggle between good and evil, and God gives us everything we need to stand strong."
+    },
+    {
+      "id": "the-fruit-of-the-spirit",
+      "kind": "weekly",
+      "n": 47,
+      "title": "What Grows On The Tree",
+      "theme": "The Fruit Of The Spirit",
+      "passage": "Galatians 5:22-23",
+      "href": "/study/bible/galatians/5#v22",
+      "file": "/family-devotions-2.json",
+      "description": "Good character grows in you when the Spirit is at work, like fruit on a tree, and no one has ever forced a tree to bear."
+    },
+    {
+      "id": "the-beatitudes",
+      "kind": "weekly",
+      "n": 48,
+      "title": "Upside Down Happy",
+      "theme": "The Beatitudes",
+      "passage": "Matthew 5:3-4",
+      "href": "/study/bible/matthew/5#v3",
+      "file": "/family-devotions-2.json",
+      "description": "Jesus says the truly happy people are the opposite of who the world says they are."
+    },
+    {
+      "id": "the-good-shepherd",
+      "kind": "weekly",
+      "n": 49,
+      "title": "The One Who Comes Looking",
+      "theme": "The Good Shepherd",
+      "passage": "John 10:11",
+      "href": "/study/bible/john/10#v11",
+      "file": "/family-devotions-2.json",
+      "description": "Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind."
+    },
+    {
+      "id": "the-prodigal-son",
+      "kind": "weekly",
+      "n": 50,
+      "title": "The Father Who Runs",
+      "theme": "The Prodigal Son",
+      "passage": "Luke 15:20",
+      "href": "/study/bible/luke/15#v20",
+      "file": "/family-devotions-2.json",
+      "description": "No matter how far you have run from God, He is already looking down the road for you."
+    },
+    {
+      "id": "the-image-of-god",
+      "kind": "weekly",
+      "n": 51,
+      "title": "Everyone You Meet",
+      "theme": "The Image Of God",
+      "passage": "Genesis 1:27",
+      "href": "/study/bible/genesis/1#v27",
+      "file": "/family-devotions-2.json",
+      "description": "Every single person you meet carries the image of God, so every single person matters."
+    },
+    {
+      "id": "being-sent",
+      "kind": "weekly",
+      "n": 52,
+      "title": "You Are Not Just A Keeper",
+      "theme": "Being Sent",
+      "passage": "Matthew 28:19-20",
+      "href": "/study/bible/matthew/28#v19",
+      "file": "/family-devotions-2.json",
+      "description": "God does not just want us to keep the good news to ourselves. He sends us out to share it."
+    },
+    {
+      "id": "when-someone-hurts-you",
+      "kind": "weekly",
+      "n": 53,
+      "title": "When Someone Hurts You",
+      "theme": "Forgiveness",
+      "passage": "Colossians 3:13",
+      "href": "/study/bible/colossians/3#v13",
+      "file": "/family-devotions-2.json",
+      "description": "Forgiving someone means you hand the debt to God instead of making them pay, and it never says that what they did was okay."
+    },
+    {
+      "id": "thankfulness",
+      "kind": "weekly",
+      "n": 54,
+      "title": "The Cure For A Grumpy Heart",
+      "theme": "Thankfulness",
+      "passage": "1 Thessalonians 5:18",
+      "href": "/study/bible/1-thessalonians/5#v18",
+      "file": "/family-devotions-2.json",
+      "description": "Thankfulness is choosing to notice the good gifts God has already given, even on a day when plenty is wrong."
+    },
+    {
+      "id": "prayer",
+      "kind": "weekly",
+      "n": 55,
+      "title": "Talking With God",
+      "theme": "Prayer",
+      "passage": "Matthew 7:7",
+      "href": "/study/bible/matthew/7#v7",
+      "file": "/family-devotions-2.json",
+      "description": "Prayer is talking with a Father who loves to hear you, with no magic words and no fancy speech required."
+    },
+    {
+      "id": "the-bible",
+      "kind": "weekly",
+      "n": 56,
+      "title": "A Light For The Path",
+      "theme": "God's Word",
+      "passage": "Psalm 119:105",
+      "href": "/study/bible/psalms/119#v105",
+      "file": "/family-devotions-2.json",
+      "description": "The Bible is how God talks to us. It is a light that shows us the way to go."
+    },
+    {
+      "id": "trusting-enough-to-obey",
+      "kind": "weekly",
+      "n": 57,
+      "title": "Trusting Enough To Obey",
+      "theme": "Obedience",
+      "passage": "John 14:15",
+      "href": "/study/bible/john/14#v15",
+      "file": "/family-devotions-2.json",
+      "description": "We obey God not to make him love us, but because we trust that he loves us and knows what is best."
+    },
+    {
+      "id": "kindness",
+      "kind": "weekly",
+      "n": 58,
+      "title": "Small Things With Great Love",
+      "theme": "Kindness",
+      "passage": "Ephesians 4:32",
+      "href": "/study/bible/ephesians/4#v32",
+      "file": "/family-devotions-2.json",
+      "description": "Kindness is love you can see. It is noticing other people and doing the small good thing."
+    },
+    {
+      "id": "joy",
+      "kind": "weekly",
+      "n": 59,
+      "title": "A Happiness That Holds",
+      "theme": "Joy",
+      "passage": "Nehemiah 8:10",
+      "href": "/study/bible/nehemiah/8#v10",
+      "file": "/family-devotions-2.json",
+      "description": "Joy is deeper than happy feelings. It is a settled gladness that comes from belonging to God, even on hard days."
+    },
+    {
+      "id": "peace",
+      "kind": "weekly",
+      "n": 60,
+      "title": "When Your Heart Is Worried",
+      "theme": "Peace",
+      "passage": "John 14:27",
+      "href": "/study/bible/john/14#v27",
+      "file": "/family-devotions-2.json",
+      "description": "Jesus gives a peace that does not wait for the problems to go away, because it rests on him and not on them."
+    },
+    {
+      "id": "the-trinity",
+      "kind": "weekly",
+      "n": 61,
+      "title": "Three And Yet One",
+      "theme": "The Trinity",
+      "passage": "Matthew 28:19-20",
+      "href": "/study/bible/matthew/28#v19",
+      "file": "/family-devotions-2.json",
+      "description": "There is one God who lives forever as Father, Son, and Holy Spirit, three persons who have always loved each other."
+    },
+    {
+      "id": "creation",
+      "kind": "weekly",
+      "n": 62,
+      "title": "God Called It Good",
+      "theme": "Creation",
+      "passage": "Genesis 1:1",
+      "href": "/study/bible/genesis/1#v1",
+      "file": "/family-devotions-2.json",
+      "description": "The world was spoken into being by a God who meant to make it and called it good."
+    },
+    {
+      "id": "the-fall",
+      "kind": "weekly",
+      "n": 63,
+      "title": "How It All Went Wrong",
+      "theme": "The Fall",
+      "passage": "Genesis 3:6",
+      "href": "/study/bible/genesis/3#v6",
+      "file": "/family-devotions-2.json",
+      "description": "The world is broken because people stopped trusting God and went their own way, and that same pull lives in all of us."
+    },
+    {
+      "id": "gods-promises",
+      "kind": "weekly",
+      "n": 64,
+      "title": "The God Who Keeps His Word",
+      "theme": "God's Promises",
+      "passage": "Joshua 21:45",
+      "href": "/study/bible/joshua/21#v45",
+      "file": "/family-devotions-2.json",
+      "description": "God always keeps his promises, every single one, no matter how long it takes."
+    },
+    {
+      "id": "the-incarnation",
+      "kind": "weekly",
+      "n": 65,
+      "title": "God Came Close",
+      "theme": "The Incarnation",
+      "passage": "John 1:14",
+      "href": "/study/bible/john/1#v14",
+      "file": "/family-devotions-2.json",
+      "description": "God did not stay far away. He became one of us, with skin and a heartbeat, so we could know him."
+    },
+    {
+      "id": "the-miracles-of-jesus",
+      "kind": "weekly",
+      "n": 66,
+      "title": "A Glimpse Of The Mender",
+      "theme": "The Miracles Of Jesus",
+      "passage": "Matthew 11:5",
+      "href": "/study/bible/matthew/11#v5",
+      "file": "/family-devotions-2.json",
+      "description": "The miracles of Jesus were small previews of the day he makes everything broken whole again."
+    },
+    {
+      "id": "the-second-coming",
+      "kind": "weekly",
+      "n": 67,
+      "title": "He Is Coming Back",
+      "theme": "The Second Coming",
+      "passage": "Acts 1:11",
+      "href": "/study/bible/acts/1#v11",
+      "file": "/family-devotions-2.json",
+      "description": "Jesus came once as a baby to save us, and he is coming again as a King to set everything right."
+    },
+    {
+      "id": "the-new-creation",
+      "kind": "weekly",
+      "n": 68,
+      "title": "Everything New Again",
+      "theme": "The New Creation",
+      "passage": "Revelation 21:5",
+      "href": "/study/bible/revelation/21#v5",
+      "file": "/family-devotions-2.json",
+      "description": "God is going to make the world new, the way it was always meant to be, rather than throw it away."
+    },
+    {
+      "id": "gentleness",
+      "kind": "weekly",
+      "n": 69,
+      "title": "Strong Enough To Be Gentle",
+      "theme": "Gentleness",
+      "passage": "Philippians 4:5",
+      "href": "/study/bible/philippians/4#v5",
+      "file": "/family-devotions-2.json",
+      "description": "Gentleness is strength that chooses to be careful with people, and it takes more strength than shoving does."
+    },
+    {
+      "id": "goodness",
+      "kind": "weekly",
+      "n": 70,
+      "title": "Good All The Way Through",
+      "theme": "Goodness",
+      "passage": "Galatians 6:9",
+      "href": "/study/bible/galatians/6#v9",
+      "file": "/family-devotions-2.json",
+      "description": "Goodness is choosing to do the right thing, again and again, even when no one notices and it would be easier not to."
+    },
+    {
+      "id": "perseverance",
+      "kind": "weekly",
+      "n": 71,
+      "title": "Keep Going",
+      "theme": "Perseverance",
+      "passage": "Hebrews 12:1",
+      "href": "/study/bible/hebrews/12#v1",
+      "file": "/family-devotions-2.json",
+      "description": "Perseverance is keeping on, one step at a time, all the way to the end, when quitting would be easier."
+    },
+    {
+      "id": "stewardship",
+      "kind": "weekly",
+      "n": 72,
+      "title": "Taking Care Of What Is Not Yours",
+      "theme": "Stewardship",
+      "passage": "1 Corinthians 4:2",
+      "href": "/study/bible/1-corinthians/4#v2",
+      "file": "/family-devotions-2.json",
+      "description": "Everything we have is really God's, given to us to take care of well, not to use up however we please."
+    },
+    {
+      "id": "thanksgiving-1",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 1,
+      "label": "The Friday before Thanksgiving",
+      "title": "Where It All Came From",
+      "passage": "Deuteronomy 8:10-14",
+      "href": "/study/bible/deuteronomy/8#v10",
+      "file": "/family-seasonal.json",
+      "description": "Moses said this to people who had eaten manna in the desert for forty years, one day's food at a time, and were about to sit down at full tables of their own."
+    },
+    {
+      "id": "thanksgiving-2",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 2,
+      "label": "The Saturday before",
+      "title": "The One Who Came Back",
+      "passage": "Luke 17:14-18",
+      "href": "/study/bible/luke/17#v14",
+      "file": "/family-seasonal.json",
+      "description": "Leprosy meant living apart from everyone, even your own family. These men could only call to Jesus from a distance."
+    },
+    {
+      "id": "thanksgiving-3",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 3,
+      "label": "The Sunday before",
+      "title": "Thanks in the Middle of It",
+      "passage": "1 Thessalonians 5:16-18",
+      "href": "/study/bible/1-thessalonians/5#v16",
+      "file": "/family-seasonal.json",
+      "description": "Paul wrote this to a young church that was suffering for following Jesus. He knew how hard things were for them."
+    },
+    {
+      "id": "thanksgiving-4",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 4,
+      "label": "Monday",
+      "title": "The Year the Fig Tree Did Not Bud",
+      "passage": "Habakkuk 3:17-18",
+      "href": "/study/bible/habakkuk/3#v17",
+      "file": "/family-seasonal.json",
+      "description": "Habakkuk wrote this knowing an army was coming, and the verse before says his whole body shook with fear."
+    },
+    {
+      "id": "thanksgiving-5",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 5,
+      "label": "Tuesday",
+      "title": "The Guests Who Cannot Pay You Back",
+      "passage": "Luke 14:12-14",
+      "href": "/study/bible/luke/14#v12",
+      "file": "/family-seasonal.json",
+      "description": "Most of us make guest lists the way Jesus describes: friends, family, people who will ask us back."
+    },
+    {
+      "id": "thanksgiving-6",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 6,
+      "label": "Wednesday",
+      "title": "The Empty Chair",
+      "passage": "John 11:32-35",
+      "href": "/study/bible/john/11#v32",
+      "file": "/family-seasonal.json",
+      "description": "Tomorrow some of us will set the table with a chair missing. Maybe someone died this year, or long ago and it still hurts."
+    },
+    {
+      "id": "thanksgiving-7",
+      "kind": "seasonal",
+      "set": "thanksgiving",
+      "day": 7,
+      "label": "Thanksgiving Day",
+      "title": "His Love Lasts Forever",
+      "passage": "Psalm 136:1-3",
+      "href": "/study/bible/psalms/136#v1",
+      "file": "/family-seasonal.json",
+      "description": "Psalm 136 has twenty-six verses, and every one ends the same way: his loving devotion endures forever."
+    },
+    {
+      "id": "advent-1",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 1,
+      "label": "December 1",
+      "title": "The Long Wait Begins",
+      "passage": "Genesis 3:15",
+      "href": "/study/bible/genesis/3#v15",
+      "file": "/family-seasonal.json",
+      "description": "On the worst day in the story, when everything had already broken, God made a promise. Nothing about that afternoon got fixed, and the promise would take thousands of years to come true."
+    },
+    {
+      "id": "advent-2",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 2,
+      "label": "December 2",
+      "title": "A Family for the World",
+      "passage": "Genesis 12:1-3",
+      "href": "/study/bible/genesis/12#v1",
+      "file": "/family-seasonal.json",
+      "description": "Abram was old and had no children, and God told him his family would bless the whole world."
+    },
+    {
+      "id": "advent-3",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 3,
+      "label": "December 3",
+      "title": "God Hears in the Dark",
+      "passage": "Exodus 3:7-8",
+      "href": "/study/bible/exodus/3#v7",
+      "file": "/family-seasonal.json",
+      "description": "The people had been slaves for four hundred years. Four hundred years is longer than the United States has existed."
+    },
+    {
+      "id": "advent-4",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 4,
+      "label": "December 4",
+      "title": "A King Who Lasts",
+      "passage": "2 Samuel 7:12-13",
+      "href": "/study/bible/2-samuel/7#v12",
+      "file": "/family-seasonal.json",
+      "description": "David was a real king with a real throne, and God told him a son from his line would reign forever."
+    },
+    {
+      "id": "advent-5",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 5,
+      "label": "December 5",
+      "title": "Out of Bethlehem",
+      "passage": "Micah 5:2",
+      "href": "/study/bible/micah/5#v2",
+      "file": "/family-seasonal.json",
+      "description": "Bethlehem was a small town, the kind of place travelers passed through on the way to somewhere bigger."
+    },
+    {
+      "id": "advent-6",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 6,
+      "label": "December 6",
+      "title": "A Child Is Given",
+      "passage": "Isaiah 9:6",
+      "href": "/study/bible/isaiah/9#v6",
+      "file": "/family-seasonal.json",
+      "description": "Isaiah said these words seven hundred years before the first Christmas. He had never seen a manger."
+    },
+    {
+      "id": "advent-7",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 7,
+      "label": "December 7",
+      "title": "A Light in Deep Darkness",
+      "passage": "Isaiah 9:2",
+      "href": "/study/bible/isaiah/9#v2",
+      "file": "/family-seasonal.json",
+      "description": "Isaiah did not pretend the darkness was not real. He called it deep, he called it shadow, he did not soften it."
+    },
+    {
+      "id": "advent-8",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 8,
+      "label": "December 8",
+      "title": "A Branch from a Stump",
+      "passage": "Isaiah 11:1",
+      "href": "/study/bible/isaiah/11#v1",
+      "file": "/family-seasonal.json",
+      "description": "A stump is what is left after a tree gets cut down. It looks finished, dead, done. Israel had been cut down to a stump, the old royal family reduced to almost nothing."
+    },
+    {
+      "id": "advent-9",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 9,
+      "label": "December 9",
+      "title": "Comfort My People",
+      "passage": "Isaiah 40:1-3",
+      "href": "/study/bible/isaiah/40#v1",
+      "file": "/family-seasonal.json",
+      "description": "After many hard chapters, God says one word twice. Comfort, comfort. He is not embarrassed to comfort his people."
+    },
+    {
+      "id": "advent-10",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 10,
+      "label": "December 10",
+      "title": "The Servant Who Carries It",
+      "passage": "Isaiah 53:4-5",
+      "href": "/study/bible/isaiah/53#v4",
+      "file": "/family-seasonal.json",
+      "description": "This is the strangest promise of Advent. The one who is coming will not just rule, he will suffer."
+    },
+    {
+      "id": "advent-11",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 11,
+      "label": "December 11",
+      "title": "A New Heart",
+      "passage": "Ezekiel 36:26",
+      "href": "/study/bible/ezekiel/36#v26",
+      "file": "/family-seasonal.json",
+      "description": "Notice what God promised here. He could have promised us better rules, and we would have taken them."
+    },
+    {
+      "id": "advent-12",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 12,
+      "label": "December 12",
+      "title": "How Long, O Lord",
+      "passage": "Psalm 13:1-2",
+      "href": "/study/bible/psalms/13#v1",
+      "file": "/family-seasonal.json",
+      "description": "Even in Advent, full of promises, the people of God asked hard questions out loud. How long."
+    },
+    {
+      "id": "advent-13",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 13,
+      "label": "December 13",
+      "title": "The Messenger Comes First",
+      "passage": "Malachi 3:1",
+      "href": "/study/bible/malachi/3#v1",
+      "file": "/family-seasonal.json",
+      "description": "Malachi is the last book before a long silence. After he spoke, four hundred years passed with no prophet, no new word."
+    },
+    {
+      "id": "advent-14",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 14,
+      "label": "December 14",
+      "title": "An Old Man Hears Good News",
+      "passage": "Luke 1:13",
+      "href": "/study/bible/luke/1#v13",
+      "file": "/family-seasonal.json",
+      "description": "Zechariah and Elizabeth were old and had prayed for a child for years with no answer. They had probably stopped expecting one."
+    },
+    {
+      "id": "advent-15",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 15,
+      "label": "December 15",
+      "title": "Let It Be",
+      "passage": "Luke 1:38",
+      "href": "/study/bible/luke/1#v38",
+      "file": "/family-seasonal.json",
+      "description": "Mary was young, probably a teenager, and the angel asked her to carry the Son of God, which would turn her whole life upside down."
+    },
+    {
+      "id": "advent-16",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 16,
+      "label": "December 16",
+      "title": "The Lowly Lifted",
+      "passage": "Luke 1:52-53",
+      "href": "/study/bible/luke/1#v52",
+      "file": "/family-seasonal.json",
+      "description": "When Mary found out what God was doing, she did not sing a quiet little lullaby. She sang about a world turned upside down, where the proud get knocked off their thrones and the forgotten get a seat at the table."
+    },
+    {
+      "id": "advent-17",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 17,
+      "label": "December 17",
+      "title": "Joseph Stays",
+      "passage": "Matthew 1:20-21",
+      "href": "/study/bible/matthew/1#v20",
+      "file": "/family-seasonal.json",
+      "description": "Joseph could have walked away, and no one would have blamed him. Instead he stayed, took on a son who was not his by blood, and raised the Savior of the world in a carpenter shop."
+    },
+    {
+      "id": "advent-18",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 18,
+      "label": "December 18",
+      "title": "The Word Was God",
+      "passage": "John 1:1-3",
+      "href": "/study/bible/john/1#v1",
+      "file": "/family-seasonal.json",
+      "description": "Before Bethlehem, before the manger, before there was a sky to hang stars in, Jesus already was."
+    },
+    {
+      "id": "advent-19",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 19,
+      "label": "December 19",
+      "title": "The Word Moved In",
+      "passage": "John 1:14",
+      "href": "/study/bible/john/1#v14",
+      "file": "/family-seasonal.json",
+      "description": "God could have saved us from far away, with a wave of his hand. Instead he came and lived among us, in a real town, on a real street, with people who knew his face."
+    },
+    {
+      "id": "advent-20",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 20,
+      "label": "December 20",
+      "title": "No Room",
+      "passage": "Luke 2:6-7",
+      "href": "/study/bible/luke/2#v6",
+      "file": "/family-seasonal.json",
+      "description": "The King of the universe was born in a place where animals ate, because no one had a room for him."
+    },
+    {
+      "id": "advent-21",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 21,
+      "label": "December 21",
+      "title": "Good News for Shepherds",
+      "passage": "Luke 2:10-11",
+      "href": "/study/bible/luke/2#v10",
+      "file": "/family-seasonal.json",
+      "description": "When God announced the most important birth in history, he sent the news past the palace and the temple to shepherds working the night shift in a field."
+    },
+    {
+      "id": "advent-22",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 22,
+      "label": "December 22",
+      "title": "Mary Treasured It",
+      "passage": "Luke 2:19",
+      "href": "/study/bible/luke/2#v19",
+      "file": "/family-seasonal.json",
+      "description": "After the shepherds left and the noise died down, Mary did not rush on to the next thing. She held it all quietly and turned it over in her heart."
+    },
+    {
+      "id": "advent-23",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 23,
+      "label": "December 23",
+      "title": "A Light to Everyone",
+      "passage": "Luke 2:30-32",
+      "href": "/study/bible/luke/2#v30",
+      "file": "/family-seasonal.json",
+      "description": "Simeon was old and had waited his whole life to see God keep his promise. When he finally held the baby Jesus, he said he could die in peace now."
+    },
+    {
+      "id": "advent-24",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 24,
+      "label": "December 24",
+      "title": "The Night Before",
+      "passage": "Luke 2:1-5",
+      "href": "/study/bible/luke/2#v1",
+      "file": "/family-seasonal.json",
+      "description": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes."
+    },
+    {
+      "id": "advent-25",
+      "kind": "seasonal",
+      "set": "advent",
+      "day": 25,
+      "label": "December 25",
+      "title": "He Is Here",
+      "passage": "Luke 2:11",
+      "href": "/study/bible/luke/2#v11",
+      "file": "/family-seasonal.json",
+      "description": "Today. After Genesis and the garden, after Abraham and David, after Isaiah and the long silence, after Mary and Joseph and the road to Bethlehem, the word is today."
+    },
+    {
+      "id": "holy-week-1",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 1,
+      "label": "Palm Sunday",
+      "title": "The Wrong Kind of King",
+      "passage": "Matthew 21:8-9",
+      "href": "/study/bible/matthew/21#v8",
+      "file": "/family-seasonal.json",
+      "description": "The crowd wanted a king who would ride in on a war horse and throw out the Romans. Jesus came in on a young donkey, slow and humble, the way kings came when they came in peace."
+    },
+    {
+      "id": "holy-week-2",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 2,
+      "label": "Monday",
+      "title": "Turning Over the Tables",
+      "passage": "Matthew 21:12-13",
+      "href": "/study/bible/matthew/21#v12",
+      "file": "/family-seasonal.json",
+      "description": "The temple was supposed to be the one place where anyone could come close to God, and people had turned it into a marketplace where the poor got cheated."
+    },
+    {
+      "id": "holy-week-3",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 3,
+      "label": "Tuesday",
+      "title": "The Greatest Command",
+      "passage": "Matthew 22:37-39",
+      "href": "/study/bible/matthew/22#v37",
+      "file": "/family-seasonal.json",
+      "description": "People kept trying to trap Jesus with hard questions that week, hoping he would say something they could arrest him for."
+    },
+    {
+      "id": "holy-week-4",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 4,
+      "label": "Wednesday",
+      "title": "A Friend Walks Away",
+      "passage": "Matthew 26:14-16",
+      "href": "/study/bible/matthew/26#v14",
+      "file": "/family-seasonal.json",
+      "description": "Judas had walked with Jesus for three years. He had seen the miracles, eaten the meals, heard every word."
+    },
+    {
+      "id": "holy-week-5",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 5,
+      "label": "Maundy Thursday",
+      "title": "Bread, Cup, and Basin",
+      "passage": "John 13:14-15",
+      "href": "/study/bible/john/13#v14",
+      "file": "/family-seasonal.json",
+      "description": "On his last night, Jesus took off his outer robe, knelt down, and washed the dirty feet of his friends, a job usually left to the lowest servant."
+    },
+    {
+      "id": "holy-week-6",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 6,
+      "label": "Good Friday",
+      "title": "It Is Finished",
+      "passage": "John 19:30",
+      "href": "/study/bible/john/19#v30",
+      "file": "/family-seasonal.json",
+      "description": "This is the hardest day, and we should not rush past it. Jesus, who had done nothing wrong, was nailed to a cross and died."
+    },
+    {
+      "id": "holy-week-7",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 7,
+      "label": "Holy Saturday",
+      "title": "The Day of Silence",
+      "passage": "Matthew 27:59-60",
+      "href": "/study/bible/matthew/27#v59",
+      "file": "/family-seasonal.json",
+      "description": "Saturday is the day nobody talks about much. Jesus was in the tomb, and his friends did not know yet that Sunday was coming."
+    },
+    {
+      "id": "holy-week-8",
+      "kind": "seasonal",
+      "set": "holyWeek",
+      "day": 8,
+      "label": "Easter Sunday",
+      "title": "He Is Not Here",
+      "passage": "Matthew 28:5-6",
+      "href": "/study/bible/matthew/28#v5",
+      "file": "/family-seasonal.json",
+      "description": "The women came to the tomb in the dark, expecting to care for a dead body. Instead they found the stone rolled away and the grave empty."
+    }
+  ],
+  "catechism": [
+    {
+      "number": 1,
+      "question": "Who made you?",
+      "kidsAnswer": "God made me."
+    },
+    {
+      "number": 2,
+      "question": "Is there a God, and how can we know?",
+      "kidsAnswer": "Yes, there is one true God, and he shows us who he is."
+    },
+    {
+      "number": 3,
+      "question": "What is God?",
+      "kidsAnswer": "God is the Spirit who never began and never ends."
+    },
+    {
+      "number": 4,
+      "question": "Is God one, or is God three?",
+      "kidsAnswer": "There is one God, the Father, the Son, and the Holy Spirit."
+    },
+    {
+      "number": 5,
+      "question": "Did God create everything?",
+      "kidsAnswer": "Yes, God made everything, and it was good."
+    },
+    {
+      "number": 6,
+      "question": "How did God create human beings?",
+      "kidsAnswer": "God made people, boys and girls, in his own image."
+    },
+    {
+      "number": 7,
+      "question": "What does it mean to be made in God's image?",
+      "kidsAnswer": "Being God's image means I was made to know him and show what he is like."
+    },
+    {
+      "number": 8,
+      "question": "Why did God make you?",
+      "kidsAnswer": "God made me to love him and to be happy in him forever."
+    },
+    {
+      "number": 9,
+      "question": "Does God control all that happens?",
+      "kidsAnswer": "Yes, God is in charge of everything that happens."
+    },
+    {
+      "number": 10,
+      "question": "Is God good even when life is hard?",
+      "kidsAnswer": "Yes, God is always good, even when things are hard."
+    },
+    {
+      "number": 11,
+      "question": "What does God require of us?",
+      "kidsAnswer": "God wants me to love him with all I am and to love other people."
+    },
+    {
+      "number": 12,
+      "question": "How has God spoken to us?",
+      "kidsAnswer": "God speaks to us in the Bible, his true Word."
+    },
+    {
+      "number": 13,
+      "question": "What is the Bible mainly about?",
+      "kidsAnswer": "The Bible is one big story about Jesus saving us."
+    },
+    {
+      "number": 14,
+      "question": "How did sin come into the world?",
+      "kidsAnswer": "Sin came when the first people disobeyed God."
+    },
+    {
+      "number": 15,
+      "question": "What is sin?",
+      "kidsAnswer": "Sin is when I do not love God and others the way I should."
+    },
+    {
+      "number": 16,
+      "question": "Did everyone fall into sin?",
+      "kidsAnswer": "Yes, everyone is born with sin in their heart."
+    },
+    {
+      "number": 17,
+      "question": "What has sin done to us?",
+      "kidsAnswer": "Sin breaks us and keeps us away from God."
+    },
+    {
+      "number": 18,
+      "question": "What is God's law?",
+      "kidsAnswer": "God's law shows us how to love him and other people."
+    },
+    {
+      "number": 19,
+      "question": "What does the law require of us toward God?",
+      "kidsAnswer": "God wants us to worship and love only him."
+    },
+    {
+      "number": 20,
+      "question": "What does the law require of us toward others?",
+      "kidsAnswer": "God wants us to be kind, honest, and fair to other people."
+    },
+    {
+      "number": 21,
+      "question": "Can we keep God's law perfectly?",
+      "kidsAnswer": "No, I cannot keep God's law perfectly on my own."
+    },
+    {
+      "number": 22,
+      "question": "Then why did God give us the law?",
+      "kidsAnswer": "The law shows me my sin and points me to Jesus."
+    },
+    {
+      "number": 23,
+      "question": "What do our sins deserve?",
+      "kidsAnswer": "Sin is serious, and it brings God's judgment."
+    },
+    {
+      "number": 24,
+      "question": "Is there any hope for sinners like us?",
+      "kidsAnswer": "Yes, God loves sinners and sent Jesus to save us."
+    },
+    {
+      "number": 25,
+      "question": "Who is Jesus Christ?",
+      "kidsAnswer": "Jesus is the Son of God who became a man to save us."
+    },
+    {
+      "number": 26,
+      "question": "Why did the Son of God become a man?",
+      "kidsAnswer": "Jesus became a man to take our place and save us."
+    },
+    {
+      "number": 27,
+      "question": "How was Jesus born?",
+      "kidsAnswer": "Jesus was born of Mary, with no sin of his own."
+    },
+    {
+      "number": 28,
+      "question": "What kind of life did Jesus live?",
+      "kidsAnswer": "Jesus lived a perfect life and never sinned."
+    },
+    {
+      "number": 29,
+      "question": "Why did Jesus have to die?",
+      "kidsAnswer": "Jesus died to take the punishment for our sin."
+    },
+    {
+      "number": 30,
+      "question": "What happened on the cross?",
+      "kidsAnswer": "On the cross Jesus paid for our sin completely."
+    },
+    {
+      "number": 31,
+      "question": "Did Jesus stay dead?",
+      "kidsAnswer": "No, Jesus rose from the dead and is alive."
+    },
+    {
+      "number": 32,
+      "question": "Where is Jesus now?",
+      "kidsAnswer": "Jesus is in heaven, ruling over everything and praying for us."
+    },
+    {
+      "number": 33,
+      "question": "What does it mean that Jesus is Lord?",
+      "kidsAnswer": "Jesus is Lord means Jesus is the King of everything."
+    },
+    {
+      "number": 34,
+      "question": "How are we saved?",
+      "kidsAnswer": "We are saved by trusting in Jesus, not by being good enough."
+    },
+    {
+      "number": 35,
+      "question": "What is grace?",
+      "kidsAnswer": "Grace is God's love that I do not have to earn."
+    },
+    {
+      "number": 36,
+      "question": "What is faith?",
+      "kidsAnswer": "Faith is trusting Jesus to save me."
+    },
+    {
+      "number": 37,
+      "question": "What is repentance?",
+      "kidsAnswer": "Repentance is being sorry for sin and turning back to God."
+    },
+    {
+      "number": 38,
+      "question": "What is justification?",
+      "kidsAnswer": "Justification means God sees me as forgiven because of Jesus."
+    },
+    {
+      "number": 39,
+      "question": "Can anything separate us from God's love in Christ?",
+      "kidsAnswer": "No, nothing can take God's love away from me."
+    },
+    {
+      "number": 40,
+      "question": "What does Jesus give us besides forgiveness?",
+      "kidsAnswer": "Jesus gives us forgiveness and a whole new life with God."
+    },
+    {
+      "number": 41,
+      "question": "Who is the Holy Spirit?",
+      "kidsAnswer": "The Holy Spirit is God living in those who belong to Jesus."
+    },
+    {
+      "number": 42,
+      "question": "What is the new birth?",
+      "kidsAnswer": "The new birth is when God gives me a new heart that loves him."
+    },
+    {
+      "number": 43,
+      "question": "What does it mean to be adopted by God?",
+      "kidsAnswer": "Adopted means God has made me his own child."
+    },
+    {
+      "number": 44,
+      "question": "What is sanctification?",
+      "kidsAnswer": "Sanctification is God slowly making me more like Jesus."
+    },
+    {
+      "number": 45,
+      "question": "How does the Spirit change us?",
+      "kidsAnswer": "The Spirit helps me love God and grow good fruit in my life."
+    },
+    {
+      "number": 46,
+      "question": "What is the church?",
+      "kidsAnswer": "The church is God's family who follow Jesus together."
+    },
+    {
+      "number": 47,
+      "question": "What is baptism?",
+      "kidsAnswer": "Baptism is a sign that I belong to Jesus."
+    },
+    {
+      "number": 48,
+      "question": "What is the Lord's Supper?",
+      "kidsAnswer": "The Lord's Supper helps us remember Jesus died for us."
+    },
+    {
+      "number": 49,
+      "question": "Why and how should we pray?",
+      "kidsAnswer": "We pray because God is our Father who loves to hear us."
+    },
+    {
+      "number": 50,
+      "question": "What did Jesus teach us to pray?",
+      "kidsAnswer": "Jesus taught us to pray, Our Father in heaven, hallowed be your name."
+    },
+    {
+      "number": 51,
+      "question": "Will Jesus return?",
+      "kidsAnswer": "Yes, Jesus is coming back to make everything right."
+    },
+    {
+      "number": 52,
+      "question": "What is our hope for the life to come?",
+      "kidsAnswer": "Our hope is to live with God forever with no more crying or pain."
+    },
+    {
+      "number": 53,
+      "question": "What is prayer?",
+      "kidsAnswer": "Prayer is talking with God, who loves to hear us."
+    },
+    {
+      "number": 54,
+      "question": "How did Jesus teach us to pray?",
+      "kidsAnswer": "Jesus taught us the Lord's Prayer."
+    },
+    {
+      "number": 55,
+      "question": "Why do we call God Father?",
+      "kidsAnswer": "Because God has made us his children through Jesus."
+    },
+    {
+      "number": 56,
+      "question": "What does God require of us?",
+      "kidsAnswer": "To love God with everything, and to love others as ourselves."
+    },
+    {
+      "number": 57,
+      "question": "What are the Ten Commandments?",
+      "kidsAnswer": "God's ten good rules that teach us to love him and love others."
+    },
+    {
+      "number": 58,
+      "question": "Can we keep God's law perfectly?",
+      "kidsAnswer": "No, only Jesus kept it perfectly, for us."
+    },
+    {
+      "number": 59,
+      "question": "What should we do when we sin?",
+      "kidsAnswer": "We tell God we are sorry, and he forgives us because of Jesus."
+    },
+    {
+      "number": 60,
+      "question": "Why do we gather with the church?",
+      "kidsAnswer": "Because God makes us part of his family, the church."
+    },
+    {
+      "number": 61,
+      "question": "What is baptism?",
+      "kidsAnswer": "Baptism is a sign that we belong to God and are washed clean by Jesus."
+    },
+    {
+      "number": 62,
+      "question": "What is the Lord's Supper?",
+      "kidsAnswer": "It is the meal where we remember Jesus gave his body and blood for us."
+    },
+    {
+      "number": 63,
+      "question": "How does the Holy Spirit change us?",
+      "kidsAnswer": "The Holy Spirit lives in us and grows his good fruit in our lives."
+    },
+    {
+      "number": 64,
+      "question": "Why did God make you?",
+      "kidsAnswer": "God made me to know him, love him, and be happy in him forever."
+    },
+    {
+      "number": 65,
+      "question": "If God is good, why is there suffering and evil?",
+      "kidsAnswer": "God is good, and one day he will end all suffering for good."
+    },
+    {
+      "number": 66,
+      "question": "Is the Bible really true?",
+      "kidsAnswer": "Yes, the Bible is God speaking to us, and it is true."
+    },
+    {
+      "number": 67,
+      "question": "How do we know God is real if we cannot see him?",
+      "kidsAnswer": "We cannot see God, but he has shown us who he is in Jesus."
+    },
+    {
+      "number": 68,
+      "question": "What about people who never heard about Jesus?",
+      "kidsAnswer": "We do not know everything, but we know God is always fair and kind."
+    },
+    {
+      "number": 69,
+      "question": "Is Jesus really the only way to God?",
+      "kidsAnswer": "Yes, Jesus is the only way home to God, and the door is open to all."
+    },
+    {
+      "number": 70,
+      "question": "What happens when we die?",
+      "kidsAnswer": "When those who love Jesus die, they go to be with him."
+    },
+    {
+      "number": 71,
+      "question": "Did God make dinosaurs, and how does science fit with the Bible?",
+      "kidsAnswer": "Yes, God made everything, even dinosaurs, and science studies his world."
+    },
+    {
+      "number": 72,
+      "question": "Why does God sometimes say no to our prayers?",
+      "kidsAnswer": "God answers every prayer in the way that is best, even when it is no."
+    },
+    {
+      "number": 73,
+      "question": "What about other religions?",
+      "kidsAnswer": "Other people search for God, and we believe Jesus is the one God sent."
+    },
+    {
+      "number": 74,
+      "question": "Will God ever stop loving me if I am bad?",
+      "kidsAnswer": "No, God will never, ever stop loving you."
+    },
+    {
+      "number": 75,
+      "question": "Why do bad things happen to good people?",
+      "kidsAnswer": "Hard things happen in a broken world, and God is with us in them."
+    },
+    {
+      "number": 76,
+      "question": "How can God be three and one at the same time?",
+      "kidsAnswer": "There is one God who is the Father, the Son, and the Holy Spirit."
+    }
+  ]
+}

@@ -23,6 +23,8 @@
  *   - "argument_objection_raised"  — which pushback a reader actually holds.
  *   - "argument_case_complete"     — a reader reached a case verdict.
  *   - "group_guide_view"           — a discussion guide was opened.
+ *   - "family_devotion_complete"   — a family marked a devotion done
+ *                                    ("We did this tonight").
  */
 import { track as vercelTrack } from "@vercel/analytics";
 
@@ -81,6 +83,15 @@ export function trackCaseComplete(caseSlug: string): void {
  */
 export function trackGroupGuideView(slug: string): void {
   track("group_guide_view", { slug });
+}
+
+/**
+ * A family marked a devotion done ("We did this tonight"). The devotion's id
+ * and where it was done (table mode or the page); nothing about the family,
+ * and never the dates this device keeps. Event: "family_devotion_complete".
+ */
+export function trackFamilyDevotionComplete(id: string, mode: "table" | "page"): void {
+  track("family_devotion_complete", { id, mode });
 }
 
 /** A returning reader was seen (a count only — no identity, no PII). */
