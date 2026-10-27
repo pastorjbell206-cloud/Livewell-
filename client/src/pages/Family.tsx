@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
+import AdventAtTheTable from "@/components/AdventAtTheTable";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
@@ -93,6 +94,9 @@ export default function Family() {
           </p>
         </div>
       </section>
+
+      {/* ADVENT: from the Sunday before Advent Sunday to Christmas only. */}
+      <AdventAtTheTable variant="card" />
 
       {/* CATECHISM — featured */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>

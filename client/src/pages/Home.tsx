@@ -14,6 +14,7 @@
  */
 import { Link } from "wouter";
 
+import AdventAtTheTable from "@/components/AdventAtTheTable";
 import Layout from "@/components/Layout";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
@@ -124,6 +125,8 @@ export default function Home() {
       {/* THE THREE DOORS: set like a book's contents page. */}
       <section style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
         <div style={wrap}>
+          {/* From the Sunday before Advent Sunday to Christmas only; empty otherwise. */}
+          <AdventAtTheTable variant="line" />
           <h2 id="home-doors-title" className="sr-only">
             Where to begin
           </h2>

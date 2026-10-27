@@ -6,8 +6,10 @@
  * /family-seasonal.json (thanksgiving, advent, holyWeek).
  * A seasonal tab appears only once its pack has days in the data.
  * scripts/validate-family.mjs checks the counts this page states.
+ * ?tab=advent (or thanksgiving, holy-week) opens that tab, and &day=N
+ * opens that day, so Home and /family can link straight to tonight.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -16,6 +18,8 @@ import { GeneratedCover } from "@/components/GeneratedCover";
 import ScriptureNote from "@/components/ScriptureNote";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { familySetDayOn, localISODate } from "@/lib/familyYear";
+import { adventSeasonFor, longDate } from "@/lib/familyAdvent";
 
 interface Weekly {
   id: string; title: string; theme: string; passage: string; passageText: string;
@@ -45,6 +49,29 @@ function isSeasonalPacks(x: unknown): x is Partial<Record<Season, Daily[]>> {
 
 const NO_SEASONS: Record<Season, Daily[]> = { thanksgiving: [], advent: [], holyWeek: [] };
 
+/** The tab and day named in ?tab= and &day=, when they are ones this page has. */
+function fromUrl(): { tab: Tab; open: string | null } {
+  try {
+    const p = new URLSearchParams(window.location.search);
+    const season = (Object.keys(SEASONS) as Season[]).find((s) => SEASONS[s].file === p.get("tab"));
+    if (!season) return { tab: "weekly", open: null };
+    const day = Number(p.get("day"));
+    return { tab: season, open: Number.isInteger(day) && day > 0 ? `${season}-${day}` : null };
+  } catch {
+    return { tab: "weekly", open: null };
+  }
+}
+
+/** Keep the open tab in the address, so "the Advent readings" can be shared. */
+function writeTab(tab: Tab) {
+  try {
+    const qs = tab === "weekly" ? "" : `?tab=${SEASONS[tab].file}`;
+    window.history.replaceState(window.history.state, "", `${window.location.pathname}${qs}`);
+  } catch {
+    /* the address stays as it was */
+  }
+}
+
 export default function FamilyDevotions() {
   // Loading, failed, and loaded are distinct states keyed to a retry nonce
   // (the HowTos pattern): a failed fetch offers a retry instead of
@@ -53,8 +80,15 @@ export default function FamilyDevotions() {
   const [failedAt, setFailedAt] = useState<number | null>(null);
   const [nonce, setNonce] = useState(0);
   const failed = failedAt === nonce;
-  const [tab, setTab] = useState<Tab>("weekly");
-  const [open, setOpen] = useState<string | null>(null);
+  const [initial] = useState(fromUrl);
+  const [tab, setTab] = useState<Tab>(initial.tab);
+  const [open, setOpen] = useState<string | null>(initial.open);
+  // Tonight's day of a seasonal set, from the reader's own clock and the year map.
+  const [today] = useState(() => localISODate());
+  const tonight = familySetDayOn(today);
+  const advent = adventSeasonFor(today);
+  // A day opened from a link is scrolled to once the data is in.
+  const scrolled = useRef(false);
 
   useEffect(() => {
     let live = true;
@@ -70,6 +104,12 @@ export default function FamilyDevotions() {
     return () => { live = false; };
   }, [nonce]);
 
+  useEffect(() => {
+    if (!loaded || scrolled.current || !initial.open) return;
+    scrolled.current = true;
+    document.getElementById(initial.open)?.scrollIntoView?.({ block: "start" });
+  }, [loaded, initial.open]);
+
   const weekly = useMemo(() => loaded?.weekly ?? [], [loaded]);
   const seasonal = loaded?.seasonal ?? NO_SEASONS;
 
@@ -80,10 +120,10 @@ export default function FamilyDevotions() {
       .map((s) => ({ id: s as Tab, label: SEASONS[s].label, count: seasonal[s].length })),
   ], [weekly.length, seasonal]);
 
-  const Accordion = ({ id, eyebrow, title, children }: { id: string; eyebrow: string; title: string; children: React.ReactNode }) => {
+  const Accordion = ({ id, anchor, eyebrow, title, children }: { id: string; anchor?: string; eyebrow: string; title: string; children: React.ReactNode }) => {
     const isOpen = open === id;
     return (
-      <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
+      <div id={anchor} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", scrollMarginTop: "var(--s-6)" }}>
         <button type="button" onClick={() => setOpen(isOpen ? null : id)} aria-expanded={isOpen}
           style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>
           <span style={{ display: "flex", alignItems: "center", gap: "14px", minWidth: 0 }}>
@@ -140,7 +180,7 @@ export default function FamilyDevotions() {
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "8px" }}>
           {tabs.map((t) => (
-            <button key={t.id} type="button" aria-pressed={tab === t.id} onClick={() => { setTab(t.id); setOpen(null); }}
+            <button key={t.id} type="button" aria-pressed={tab === t.id} onClick={() => { setTab(t.id); setOpen(null); writeTab(t.id); }}
               style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "10px 16px", borderRadius: "999px", cursor: "pointer",
                 border: `1px solid ${tab === t.id ? "var(--mustard)" : "var(--border)"}`, background: tab === t.id ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
               {t.label}{t.count ? ` · ${t.count}` : ""}
@@ -183,6 +223,13 @@ export default function FamilyDevotions() {
               <a href="/downloads/tools/family-cards-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
             </p>
           )}
+          {/* The set is a December 1 to 25 calendar; Advent itself begins on
+              Advent Sunday. Say both, so no one reads December 1 as Advent's start. */}
+          {tab === "advent" && seasonal.advent.length > 0 && (
+            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0, maxWidth: "68ch" }}>
+              Advent begins on the fourth Sunday before Christmas{advent ? ` (${longDate(advent.adventSunday, { weekday: false, year: true })})` : ""}. This calendar has a reading for each day from December 1 to Christmas Day.
+            </p>
+          )}
           {tab !== "weekly" && (
             <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
               Print the whole {SEASONS[tab].label} booklet, one day to a page, with each passage in full from the Berean Standard Bible:{" "}
@@ -191,7 +238,8 @@ export default function FamilyDevotions() {
             </p>
           )}
           {tab !== "weekly" && (list as Daily[]).map((d) => (
-            <Accordion key={`${tab}-${d.day}`} id={`${tab}-${d.day}`} eyebrow={d.label} title={d.title}>
+            <Accordion key={`${tab}-${d.day}`} id={`${tab}-${d.day}`} anchor={`${tab}-${d.day}`}
+              eyebrow={tonight?.set === tab && tonight.day === d.day ? `${d.label} · Tonight` : d.label} title={d.title}>
               <Verse passage={d.passage} text={d.passageText} />
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "16px" }}>{d.reflection}</p>
               <div className="eyebrow" style={{ marginBottom: "8px" }}>Talk about it</div>
