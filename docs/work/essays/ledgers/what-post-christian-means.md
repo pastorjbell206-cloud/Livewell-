@@ -17,7 +17,23 @@ The methods actually used, and what the words below mean:
 - **"Not checked (textbook)"** or **"Not checked (reference knowledge)"**: no source was opened or searched. The verifier judged it standard reference knowledge. That judgment is not a check.
 - **"Generalized"**: a precise figure that could not be checked was replaced by a rounder statement that stays true across any plausible error in the verifier's recollection. The generalized statement is itself unchecked.
 
-Not in scope here and left for the voice and audit step: the essay's em-dashes, the Closing Texts layout (the pilot predates the no-em-dash rule), and the stock phrases "Those of us who pastor" and "I do not exempt myself."
+Left for the voice and audit step, and done there on 2026-10-27 (see "Voice and audit pass" below): the essay's em-dashes, the Closing Texts layout (the pilot predates the no-em-dash rule), and the stock phrases "Those of us who pastor" and "I do not exempt myself."
+
+## Voice and audit pass (2026-10-27)
+
+Wording only. No fact, quotation, number, date, name or link was added, and every quotation is unchanged (checked by script against the committed text). Changes that touch claims below:
+
+- Every em-dash outside quotations replaced with a comma, colon or full stop; the remaining en-dashes are verse ranges. Closing Texts now read *"Quote."* (Reference) on one line.
+- Standfirst rewritten as one declarative sentence (it was a two-sentence "not X. Y." antithesis).
+- "The most careful attempt to answer the question is Charles Taylor's *A Secular Age*" became "One of the most careful attempts ...". Overclaim softened.
+- "Unbelief is not the neutral ground ... Belief is not the natural state of a society that has not yet gotten sophisticated. Both are choices now" became "Unbelief turns out not to be the neutral ground a person reaches once he grows up, and belief is no longer the default it was for the villager who could not opt out of it. Each is a choice now". Interpretation drawing on Taylor and the essay's own villager illustration; no source claimed.
+- "In the first sense, America was never formally Christian" became "In the first sense, the national government was never formally Christian, and the country has ...". Narrowed so it does not contradict the state establishments named in the next sentence.
+- "The honest answer ..." lost "honest"; "It would also be unfair" and "A skeptic will push back here, and he has a point" were cut (the concession about Torcaso stands); "That is what it means to live well after Christendom" and the epigram after it were cut.
+- "Those of us who pastor have to admit something else, and I do not exempt myself" became "We pastors have something else to admit." See Biography below.
+- "Then Jeremiah named the competing prophets" became "Then Jeremiah warned them about the competing prophets" (29:8–9 names no one).
+- "A hermeneutic is a way of interpreting something" was folded into the next sentence ("people will not learn how to read the gospel mainly from arguments or campaigns").
+- The ending no longer repeats the "The question is not whether ... The question is whether" close of what-christian-nationalism-is-and-is-not. "Most of them never saw the return. Their grandchildren did." became "The faith their grandchildren carried home ..." with "Most of the exiles never saw theirs" kept in the last line.
+- Headings "A Missionary Comes Home" and "A Letter to Babylon" became "Lesslie Newbigin and the West as a Mission Field" and "Jeremiah's Letter to the Exiles".
 
 ## Corrections made in the essay
 
@@ -111,7 +127,7 @@ When search or the sources are available, check these and, if they match, restor
 - Children who never attended church learned the Lord's Prayer and hymns; a shared moral vocabulary; churches founded hospitals, colleges, orphanages and rescue missions. General historical statements. Not checked.
 - Herberg's diagnosis applied to the mid-century consensus. Interpretation.
 - 1961, *Torcaso v. Watkins*: the Supreme Court stopped Maryland from denying Roy Torcaso his commission as a notary public because he would not declare a belief in God. Not checked (textbook).
-- "Those of us who pastor": James is a pastor (confirmed in docs/work/NOTES.md). No scene, title or years in ministry stated.
+- "We pastors have something else to admit" (was "Those of us who pastor"): James is a pastor (confirmed in docs/work/NOTES.md). No scene, title or years in ministry stated.
 
 ## A Missionary Comes Home
 
@@ -126,7 +142,7 @@ When search or the sources are available, check these and, if they match, restor
 - Public facts and private values, with the gospel filed among the values. Paraphrase of his best-known distinction. Not checked (reference knowledge).
 - His question: how anyone could come to believe that the power with the last word in human affairs is represented by a man hanging on a cross. Attributed paraphrase, no quotation marks, as the pilot had it. The wording was not checked; it stays close to his.
 - His answer: the only hermeneutic of the gospel is a congregation that believes the gospel and lives by it. Marked paraphrase now (correction 10). Not checked.
-- "A hermeneutic is a way of interpreting something." Definition.
+- Newbigin's meaning: people will learn how to read the gospel from a congregation's common life more than from arguments or campaigns. Paraphrase of his account; the separate definition sentence ("A hermeneutic is a way of interpreting something") was folded in on 2026-10-27.
 
 ## A Letter to Babylon
 
@@ -159,7 +175,7 @@ When search or the sources are available, check these and, if they match, restor
 - 1 Peter 2:12, "Keep your conduct among the Gentiles honorable ... on the day of visitation." Matched against the ESV copy.
 - The exiles of Psalm 137 refused to forget Zion by the rivers of Babylon. Paraphrase, no quotation marks. Checked against the ESV copy (Psalm 137:1, "By the waters of Babylon ... when we remembered Zion"; 137:5, "If I forget you, O Jerusalem").
 - Daniel prayed toward Jerusalem three times a day, windows open (Daniel 6:10). Paraphrase. Checked against the ESV copy.
-- Most of the exiles never saw the return; their grandchildren did. Interpretation (the return under Cyrus came roughly sixty years after 597 BC; not checked, textbook).
+- Most of the exiles never saw the return; their grandchildren did ("The faith their grandchildren carried home ..." and the last line, "Most of the exiles never saw theirs"). Interpretation (the return under Cyrus came roughly sixty years after 597 BC; not checked, textbook).
 
 ## Closing Texts
 
@@ -169,7 +185,7 @@ When search or the sources are available, check these and, if they match, restor
 
 ## Biography and integrity
 
-- No biography of James beyond docs/work/NOTES.md: the essay says he pastors ("Those of us who pastor") and is raising children ("Those of us raising children in this country"), both confirmed. No invented scene, conversation, congregant or anecdote was found.
+- No biography of James beyond docs/work/NOTES.md: the essay says he pastors ("We pastors have something else to admit") and is raising children ("Those of us raising children in this country"), both confirmed. No invented scene, conversation, congregant or anecdote was found.
 - No exclamation points.
 - No links to check (the essay has none).
 
