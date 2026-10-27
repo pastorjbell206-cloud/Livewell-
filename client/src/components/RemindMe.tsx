@@ -19,6 +19,8 @@ interface RemindMeProps {
   freq: "DAILY" | "WEEKLY";
   /** How many reminders in all (eight for a plan's weeks, thirty for a month of evenings). */
   count: number;
+  /** The first day (local), for a plan that begins on a set date; defaults to tomorrow. */
+  start?: Date;
   /** Plain words for the schedule: "every week for eight weeks". */
   schedule: string;
   /** Which time to suggest first. */
@@ -33,7 +35,7 @@ const TIMES = [
   { id: "evening", label: "Evening, 8:00", hour: 20 },
 ] as const;
 
-export function RemindMe({ title, details, href, freq, count, schedule, defaultTime = "evening", onDark = false }: RemindMeProps) {
+export function RemindMe({ title, details, href, freq, count, start, schedule, defaultTime = "evening", onDark = false }: RemindMeProps) {
   const [open, setOpen] = useState(false);
   const [time, setTime] = useState<(typeof TIMES)[number]["id"]>(defaultTime);
   const [status, setStatus] = useState<"" | IcsResult>("");
@@ -42,7 +44,7 @@ export function RemindMe({ title, details, href, freq, count, schedule, defaultT
   const muted = onDark ? "var(--charcoal-fg-muted)" : "var(--ink-muted)";
   const line = onDark ? "var(--charcoal-line)" : "var(--border)";
   const path = href ?? (typeof window !== "undefined" ? window.location.pathname : "/");
-  const reminder: Reminder = { title, details, url: absoluteUrl(path), freq, count, hour: TIMES.find((t) => t.id === time)!.hour };
+  const reminder: Reminder = { title, details, url: absoluteUrl(path), freq, count, start, hour: TIMES.find((t) => t.id === time)!.hour };
 
   const button: React.CSSProperties = {
     display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", minHeight: "44px", padding: "10px 16px",

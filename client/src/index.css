@@ -617,6 +617,62 @@ img{display:block;max-width:100%}
 /* Position: a quiet "3 of 6" (components/study/Position.tsx). */
 .st-position{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);font-variant-numeric:tabular-nums}
 
+/* ─── READ THE WHOLE STORY IN 2027 (.sy-) ─────────────────────────────
+ * The Study Bible's story path as 365 days (pages/StudyBibleYear.tsx): one
+ * day's card, then the year by month. Tokens only; every control is at least
+ * 44px tall for a thumb. */
+.sy-band{background:var(--bone);padding:var(--s-5) clamp(16px,4vw,var(--s-4))}
+.sy-band--warm{background:var(--bone-warm)}
+.sy-wrap{max-width:var(--w-prose);margin:0 auto}
+.sy-day{max-width:var(--w-prose);margin:0 auto;background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm);padding:clamp(20px,3vw,32px);scroll-margin-top:90px}
+.sy-day__when{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);margin:0}
+.sy-day__when .st-position{font-size:inherit;color:var(--ink)}
+.sy-day__title{font-family:var(--F);font-size:clamp(30px,4vw,44px);font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:var(--ink);margin:8px 0 6px;text-wrap:balance}
+.sy-day__title:focus{outline:none}
+.sy-day__act{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink);margin:0 0 var(--s-2)}
+.sy-link{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sy-chapters{list-style:none;margin:0 0 var(--s-2);padding:0}
+.sy-chapters li{border-top:1px solid var(--border)}
+.sy-chapters li:last-child{border-bottom:1px solid var(--border)}
+.sy-chapter{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:8px 0;color:var(--ink);text-decoration:none}
+.sy-chapter__ref{font-family:var(--U);font-size:15px;font-weight:600}
+.sy-chapter__title{font-family:var(--B);font-size:15px;line-height:1.45;color:var(--ink-muted)}
+.sy-chapter:hover .sy-chapter__ref{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sy-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-2) 0 6px}
+.sy-guides ul{list-style:none;margin:0;padding:0}
+.sy-guides li{font-family:var(--U);font-size:15px;line-height:1.5}
+.sy-guides a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
+.sy-day__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
+.sy-step{display:flex;justify-content:space-between;gap:12px;margin-top:var(--s-3);padding-top:var(--s-2);border-top:1px solid var(--border)}
+.sy-step__btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);background:transparent;border:none;cursor:pointer}
+.sy-places{margin-top:var(--s-2)}
+.sy-note{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:6px 0 0}
+.sy-note--alert{color:var(--alert)}
+.sy-inline{display:inline-flex;align-items:center;min-height:44px;padding:0;font:inherit;font-weight:600;color:var(--ink);background:transparent;border:none;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em;cursor:pointer;vertical-align:middle}
+.sy-h2{font-family:var(--F);font-size:clamp(28px,3vw,36px);font-weight:400;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.sy-intro{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
+.sy-month{border-top:1px solid var(--border)}
+.sy-month:last-of-type{border-bottom:1px solid var(--border)}
+.sy-month>summary{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px;min-height:52px;padding:12px 0;cursor:pointer;list-style:none}
+.sy-month>summary::-webkit-details-marker{display:none}
+.sy-month>summary::after{content:"+";font-family:var(--U);font-size:20px;line-height:1;color:var(--ink-muted)}
+.sy-month[open]>summary::after{content:"\2212"}
+.sy-month__name{font-family:var(--F);font-size:clamp(22px,2.4vw,26px);font-weight:500;color:var(--ink);margin-right:auto}
+.sy-month__span{font-family:var(--U);font-size:13px;color:var(--ink-muted)}
+.sy-days{list-style:none;margin:0 0 var(--s-2);padding:0}
+.sy-row{display:flex;align-items:center;gap:12px;border-top:1px solid var(--border)}
+.sy-row--on{background:var(--card)}
+.sy-check{position:relative;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:none;cursor:pointer;color:var(--bone)}
+.sy-check::before{content:"";position:absolute;width:26px;height:26px;border-radius:50%;border:1px solid var(--borderdk);background:transparent}
+.sy-check[aria-pressed="true"]::before{background:var(--ink);border-color:var(--ink)}
+.sy-check svg{position:relative}
+.sy-pick{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:52px;padding:8px 4px;text-align:left;background:transparent;border:none;cursor:pointer;color:var(--ink)}
+.sy-pick__day{font-family:var(--U);font-size:13px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.sy-pick__label{font-family:var(--U);font-size:15px;font-weight:600;line-height:1.4}
+.sy-pick[aria-current="true"] .sy-pick__label{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sy-prose{max-width:var(--w-prose);margin:0 auto}
+.sy-prose p{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+
 /* ─── THE TABLE (.tb-) ───────────────────────────────────────────────
  * Family devotions at home (pages/family/, MASTER-PLAN 5.5): tonight's card
  * on /family, a page per devotion, and table mode (?mode=table). Tokens only.

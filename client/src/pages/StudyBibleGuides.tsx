@@ -12,6 +12,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchGuide, fetchGuideIndex, type Guide, type GuideIndex } from "@/lib/bible-notes";
 import { refHref } from "@/lib/scripture-ref";
+import { PLAN_PATH } from "@/lib/storyPlan";
 import { Band, Credits, H2, Hero, Lede, Prose, Status, card, kicker, quietLink, useLoad, wrap } from "@/pages/study-bible/shared";
 
 export default function StudyBibleGuides() {
@@ -49,6 +50,10 @@ function GuideIndexPage({ index }: { index: GuideIndex }) {
         <Lede>
           The Bible is a library written over a thousand years in three languages. These guides give you what a first-year seminary course would: where the books came from, how the text reached us, how to read each kind of writing, and the facts of the ancient world the writers took for granted.
         </Lede>
+        <p style={{ margin: "var(--s-3) 0 0", fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>
+          A plan for the new year:{" "}
+          <Link href={PLAN_PATH} style={quietLink}>Read the whole story in 2027</Link>, every chapter of the Bible in the order the story happened.
+        </p>
       </Hero>
       {index.groups.map((g, i) => (
         <Band key={g.id} tone={i % 2 === 0 ? "warm" : "bone"}>
