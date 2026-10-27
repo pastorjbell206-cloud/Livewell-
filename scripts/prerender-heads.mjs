@@ -491,6 +491,7 @@ const SECTION_BY_ROUTE = {
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
   "/help/": { name: "Find Help", path: "/help" },
   "/family/devotions/": { name: "Family Devotions", path: "/family/devotions" },
+  "/topics/": { name: "Topics", path: "/topics" },
 };
 
 // ---------------------------------------------------------------------------
@@ -514,6 +515,14 @@ const HUB_LISTINGS = {
     { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
+  // Every question on /topics, opening the page it opens today.
+  "/topics": { label: "Topics", cap: 40, load: () => {
+    const d = readJsonSafe("client/public/topics/index.json");
+    const shelf = loadEssayShelf(REPO_ROOT);
+    // A row to an essay not public yet opens its stand-in, as the page does.
+    const opens = (r) => (r.standIn && !shelf.isPublic(String(r.href).replace(/^\/writing\//, "")) ? r.standIn : r.href);
+    return ((d && d.rows) || []).map((r) => ({ title: r.askedAs, href: opens(r), blurb: r.line || "" }));
+  } },
   "/studyguides": { label: "Study guides", cap: 80, load: () => {
     const d = readJsonSafe("client/public/studyguides/index.json");
     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
@@ -1022,6 +1031,15 @@ async function main() {
     // "{title}: A Family Devotion"; the description is the big idea, or the
     // opening of a daily reflection. Head only (no per-devotion content file).
     { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion" },
+    // The topic pages (/topics/:slug), from the topics index
+    // (scripts/build-topics-index.mjs). The title is the question, as the
+    // page's own SEOMeta has it; the page file's prose (the short answer and
+    // the lines under each part) is the crawlable body.
+    {
+      file: "client/public/topics/index.json", key: "pages", route: "/topics/", ogPrefix: "topics", desc: "description",
+      contentDir: "client/public/topics",
+      omitKeys: ["slug", "title", "description", "askedAs", "politics", "sensitive", "folds", "updated", "reviewed"],
+    },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {

@@ -555,6 +555,64 @@ img{display:block;max-width:100%}
 .st-action:disabled:hover{background:var(--ink)}
 .st-action--quiet:disabled:hover{background:transparent;border-color:var(--borderdk)}
 
+/* ─── TOPICS (.tp-) ──────────────────────────────────────────────────
+ * pages/Topics.tsx (/topics, one list of questions) and pages/Topic.tsx (one
+ * question, one assembled answer; MASTER-PLAN 4.3). One reading column on
+ * cream; hairlines between parts; mustard only on rules and link underlines.
+ * Tokens only. */
+.tp-index-page,.tp-page__body{background:var(--bone);padding:var(--s-3) 16px var(--s-7)}
+.tp-index-wrap{max-width:var(--w-content);margin:0 auto}
+.tp-index > li{flex-direction:column}
+.tp-index > li:first-child{border-top:0}
+.tp-index__q{font-size:clamp(1.3rem,1.15rem + .5vw,1.55rem)}
+.tp-also{align-self:flex-start;display:inline-flex;align-items:center;gap:.35em;min-height:44px;margin:-14px 0 14px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tp-also:hover,.tp-also:focus-visible{text-decoration-color:currentColor}
+.tp-foot{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:var(--s-4) 0 0}
+.tp-foot a,.tp-text a,.tp-companion a,.tp-ways__links a,.tp-witness__name a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.tp-status{font-family:var(--U);color:var(--ink-muted);text-align:center;padding:var(--s-6) 0;margin:0}
+.tp-col{max-width:var(--w-prose);margin:0 auto}
+.tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
+.tp-short{margin:0 0 var(--s-3)}
+.tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+.tp-text{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0 0 var(--s-1)}
+.tp-note{font-family:var(--U);font-size:13px;line-height:1.6;color:var(--ink-muted);margin:var(--s-2) 0 0}
+.tp-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
+.tp-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.tp-companion{color:var(--ink-muted);margin-bottom:var(--s-2)}
+.tp-lead{display:block;padding:var(--s-2) 0 var(--s-3);border-top:2px solid var(--mustard);text-decoration:none;color:inherit}
+.tp-lead .ed-kicker{margin:0 0 6px}
+.tp-lead__title{display:block;font-family:var(--F);font-size:clamp(1.5rem,1.25rem + .8vw,1.9rem);font-weight:500;line-height:1.2;color:var(--ink);text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tp-lead:hover .tp-lead__title,.tp-lead:focus-visible .tp-lead__title{text-decoration-color:var(--mustard)}
+.tp-lead__line{display:block;font-family:var(--B);font-size:1rem;line-height:1.6;color:var(--ink-muted);margin:8px 0 0}
+.tp-lead__meta{display:block;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:10px 0 0}
+.tp-ways{margin:var(--s-3) 0 0}
+.tp-ways__title{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);line-height:1.2;color:var(--ink);margin:0 0 var(--s-1)}
+.tp-ways__list{list-style:none;margin:0;padding:0}
+.tp-ways__list li{padding:14px 0;border-top:1px solid var(--border)}
+.tp-ways__line{font-family:var(--F);font-size:clamp(1.15rem,1rem + .4vw,1.3rem);font-weight:500;line-height:1.3;color:var(--ink);margin:0 0 6px}
+.tp-ways__links{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
+.tp-verses{list-style:none;margin:0;padding:0}
+.tp-verses li{padding:var(--s-2) 0;border-top:1px solid var(--border)}
+.tp-verses li:first-child{border-top:0;padding-top:0}
+.tp-verses__ref{font-family:var(--U);font-size:15px;font-weight:600;margin:0 0 4px}
+.tp-more{display:inline-flex;align-items:center;gap:.35em;min-height:44px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tp-more:hover,.tp-more:focus-visible{text-decoration-color:currentColor}
+.tp-witness__name{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0 0 8px}
+.tp-actions{display:flex;flex-wrap:wrap;gap:12px;margin:var(--s-2) 0 var(--s-2)}
+.tp-table-also{color:var(--ink-muted);font-size:16px}
+.tp-back{padding-top:var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
+@media print{
+  .tp-page .pg-head{padding:0}
+  .tp-page .pg-head__inner{max-width:100%;padding-bottom:6pt}
+  .tp-page .pg-head__title{font-size:20pt}
+  .tp-page__body{padding:0 !important}
+  .tp-col{max-width:100%}
+  .tp-section{padding:6pt 0 2pt;margin-top:4pt;break-inside:avoid}
+  .tp-section__title{font-size:13pt;margin-bottom:3pt}
+  .tp-short p,.tp-text{font-size:10pt;line-height:1.45;margin-bottom:4pt}
+  .tp-actions,.tp-note,.tp-back{display:none !important}
+}
+
 /* ─── STUDY PRIMITIVES (.st-) ────────────────────────────────────────
  * components/study/: Sheet and Stepper. Built just in time, each by the
  * first unit that needs it (MASTER-PLAN 8.2). Tokens only; the reduced-motion

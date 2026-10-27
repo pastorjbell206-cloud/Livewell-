@@ -68,6 +68,7 @@ function paramSources() {
     "/group-guide/:slug": groupGuideSlugs(),
     "/help/:slug": slugsFrom(needs),
     "/family/devotions/:id": slugsFrom(json("client/public/family/index.json")?.devotions, "id"),
+    "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
     "/study/bible/:book": new Set(books.keys()),
   };
 }

@@ -53,6 +53,8 @@ jobs:
           node scripts/build-family-index.mjs --check
           node scripts/validate-grow-voice.mjs
           node scripts/validate-verse-guides.mjs
+          node scripts/build-topics-index.mjs --check
+          node scripts/validate-topics.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs
           pnpm exec tsx scripts/build-search-index.mjs --check
           node scripts/validate-bible.mjs

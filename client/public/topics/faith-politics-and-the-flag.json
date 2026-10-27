@@ -1,0 +1,133 @@
+{
+  "slug": "faith-politics-and-the-flag",
+  "title": "What is Christian nationalism, and how should a Christian think about politics?",
+  "description": "What Christian nationalism is and is not, how it differs from the love of country Scripture assumes, and how a Christian can think about politics without fusing faith and nation.",
+  "askedAs": [
+    "christian nationalism",
+    "what is christian nationalism",
+    "is america a christian nation",
+    "faith and politics",
+    "christianity and politics",
+    "how should a christian think about politics",
+    "patriotism and faith",
+    "church and state",
+    "civil religion",
+    "a flag in church"
+  ],
+  "short": [
+    "Love of country isn't the problem. Scripture assumes it. Jeremiah told the exiles to seek the welfare of Babylon and pray for it, and Jesus wept over Jerusalem while He told the city the truth about itself. Christian nationalism is something else: a fusion of Christian faith and national belonging, held more as identity than as doctrine. It holds that the nation is Christian in a covenant sense, that its real people are Christians, that its laws and symbols should secure that status, and that its decline is a spiritual fall to be reversed by taking power back.",
+    "The test is where a person's love of country sits. Can it hear the nation criticized, by Scripture or by its own history, without treating that as an attack on God? Can a believer feel a deeper kinship with a Christian in Nigeria than with a neighbor who shares the flag but not the faith? Israel is the one nation Scripture calls chosen, and Amos told it that the covenant made it more accountable, not less.",
+    "The temptation to fuse a political cause with the kingdom of God belongs to no single party. On the right it fuses faith with the nation; on the left it can make a platform the measure of faithfulness just as easily. A Christian can vote, sing the anthem, and pray for whoever holds office, and still belong first to a people no president will ever govern."
+  ],
+  "essay": {
+    "href": "/writing/what-christian-nationalism-is-and-is-not",
+    "label": "What Christian Nationalism Is, and What It Is Not",
+    "line": "Christian nationalism is a fusion of Christian faith and national belonging, and it is a different thing from the love of country that Scripture assumes."
+  },
+  "essayStandIn": {
+    "href": "/writing/how-christian-nationalism-rewrites",
+    "label": "How Christian Nationalism Rewrites Doctrine",
+    "line": "The most dangerous heresies are not the ones that contradict the faith openly. They are the ones that rearrange it subtly."
+  },
+  "alsoEssays": [
+    {
+      "href": "/writing/was-america-founded-as-a-christian-nation",
+      "label": "Was America Founded as a Christian Nation?",
+      "line": "A deeply Protestant people built a national government that declined to call itself Christian, and some of the Christians most determined to keep it that way were Baptists."
+    },
+    {
+      "href": "/writing/when-the-church-married-empire",
+      "label": "When the Church Married Empire",
+      "line": "Why the church's alliance with empire began long before the modern culture wars."
+    }
+  ],
+  "bothWays": {
+    "right": {
+      "line": "When the cross gets conscripted into the flag",
+      "essay": { "href": "/writing/the-conservative-blind-spot", "label": "The Conservative Blind Spot" },
+      "path": { "href": "/pathways/christian-nationalism", "label": "Faith and the Flag" }
+    },
+    "left": {
+      "line": "When the gospel gets recruited to a cause",
+      "essay": { "href": "/writing/the-progressive-blind-spot", "label": "The Progressive Blind Spot" },
+      "path": { "href": "/pathways/progressive-captivity", "label": "Faith and the Cause" }
+    }
+  },
+  "scripture": [
+    {
+      "ref": "Luke 19:41-42",
+      "line": "Jesus wept over the city of His own people and still told it the truth about itself."
+    },
+    {
+      "ref": "Amos 3:2",
+      "line": "Israel's covenant made it more accountable to God, not less."
+    },
+    {
+      "ref": "2 Chronicles 7:14",
+      "line": "Spoken to Solomon and to Israel when the temple was dedicated. The wicked ways it names belong to the people doing the praying.",
+      "context": { "href": "/resources/context/2-chronicles-7-14-in-context", "label": "Is 2 Chronicles 7:14 a Promise to America?" }
+    },
+    {
+      "ref": "Romans 13:1",
+      "line": "Paul told a small church in Nero's Rome to submit to rulers. It never meant obeying every order.",
+      "context": { "href": "/resources/context/romans-13-1-in-context", "label": "Does Romans 13 Mean Christians Must Obey Every Government?" }
+    },
+    {
+      "ref": "John 18:36",
+      "line": "Before Pilate, Jesus said His kingdom is not of this world, or His servants would be fighting.",
+      "context": { "href": "/resources/context/the-kingdom-is-not-a-platform", "label": "Does the Kingdom of God Belong to a Political Party?" }
+    }
+  ],
+  "witness": {
+    "name": "Barmen, 1934",
+    "line": "When most German Protestants welcomed Hitler and a movement set out to merge church and regime, a minority met at Barmen and confessed that no other power or figure stands beside Christ as God's revelation. It defended the church's freedom, and it said nothing directly about the persecution of the Jews.",
+    "href": "/theology/history/the-global-church",
+    "label": "The Modern Church and the Global Shift"
+  },
+  "table": {
+    "devotion": "the-image-of-god",
+    "label": "Everyone You Meet",
+    "line": "Every person you meet carries the image of God, so every person matters, whoever they voted for."
+  },
+  "use": {
+    "study": {
+      "href": "/studyguides/christian-nationalism",
+      "label": "Christian Nationalism: An 8-Week Study",
+      "line": "For small groups, classes, and anyone tired of a phrase thrown like a rock in two directions who wants to know what it actually names."
+    },
+    "tools": [
+      {
+        "href": "/disruption/consistency",
+        "label": "The Consistency Check",
+        "line": "Do you hold your own side to the standard you hold the other side to? A mirror, not a weapon."
+      },
+      {
+        "href": "/tools/which-lens",
+        "label": "Which Lens Has You?",
+        "line": "Thirteen choices that name the lens doing your reading for you: the flag, the cause, the highlighter, the rearview, or the marketplace."
+      },
+      {
+        "href": "/nation/scorecard",
+        "label": "The Party Scorecard",
+        "line": "How close each party is to the Bible, theme by theme, and where your own side falls short."
+      },
+      {
+        "href": "/nation/policy",
+        "label": "If We Had a Biblical Government",
+        "line": "Jubilee, gleaning, and the warning against kings as policy, and why both parties would hate the result."
+      }
+    ]
+  },
+  "care": [
+    {
+      "href": "/help/politics",
+      "label": "Politics is tearing my family apart",
+      "line": "When the fight at the table is about the flag or the cause: an older allegiance than either."
+    }
+  ],
+  "politics": true,
+  "sensitive": false,
+  "folds": [],
+  "updated": "2026-10-27",
+  "reviewed": null
+}

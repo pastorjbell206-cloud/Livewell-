@@ -102,6 +102,17 @@ export const LIBRARY_SOURCES: LibrarySource[] = [
     buildHref: (slug) => `/plans/${slug}`,
     indexHref: "/plans",
   },
+  {
+    // The topic pages (/topics/:slug), found by the question and the words
+    // people search for it (each page's askedAs), so "christian nationalism"
+    // opens the topic (scripts/build-topics-index.mjs).
+    url: "/topics/index.json",
+    listKey: "pages",
+    label: "Topics",
+    type: "Topic",
+    buildHref: (slug) => `/topics/${slug}`,
+    indexHref: "/topics",
+  },
 ];
 
 /** First value that is a non-empty string, else "". */
@@ -123,6 +134,10 @@ export interface CatalogItem {
   source: string;
 }
 
+type ManifestRow = { slug: string; title: string; blurb?: unknown; excerpt?: unknown; summary?: unknown; subtitle?: unknown };
+const isManifestRow = (i: unknown): i is ManifestRow =>
+  !!i && typeof (i as ManifestRow).slug === "string" && typeof (i as ManifestRow).title === "string";
+
 async function fetchLibrary(source: LibrarySource): Promise<CatalogItem[]> {
   try {
     const res = await fetch(source.url);
@@ -131,8 +146,8 @@ async function fetchLibrary(source: LibrarySource): Promise<CatalogItem[]> {
     const list = data?.[source.listKey];
     if (!Array.isArray(list)) return [];
     return list
-      .filter((i: any) => i && typeof i.slug === "string" && typeof i.title === "string")
-      .map((i: any) => ({
+      .filter(isManifestRow)
+      .map((i) => ({
         title: i.title,
         blurb: pickString(i.blurb, i.excerpt, i.summary, i.subtitle),
         href: source.buildHref(i.slug),

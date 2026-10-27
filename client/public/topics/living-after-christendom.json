@@ -1,0 +1,99 @@
+{
+  "slug": "living-after-christendom",
+  "title": "What does it mean that America is post-Christian, and how do we live in it?",
+  "description": "What has ended in America is Christendom, not the faith. What that means, what the church is grieving, and how Jeremiah's letter to the exiles shows a way to live now.",
+  "askedAs": [
+    "post-christian america",
+    "what does post-christian mean",
+    "is america post-christian",
+    "christendom",
+    "end of christian america",
+    "decline of christianity in america",
+    "secular age",
+    "christians as exiles",
+    "how to live as a christian in a secular culture",
+    "jeremiah 29 exile"
+  ],
+  "short": [
+    "What has ended in America is Christendom: the arrangement in which the culture handed people the faith, or at least its vocabulary, along with their citizenship. The faith itself has not ended. Belief is still widespread here, and belonging is thinning. What has changed most is the condition of belief. Nobody is a Christian by default anymore. Faith is one live option among others, held beside neighbors who are neither foolish nor wicked and who chose otherwise.",
+    "The old arrangement had real goods in it, a shared moral vocabulary and churches that founded hospitals and colleges, and the people who grieve them aren't wrong to. But some of what is dying was the religion of being a decent American, dressed for church, and the church should not spend its strength trying to revive it.",
+    "Scripture has been here before. Jeremiah wrote to exiles in Babylon who were being promised a quick return, and told them to build houses, plant gardens, raise children, and seek the welfare of the city where God had sent them (Jeremiah 29:4-7). The church faces both temptations he refused: the promise of a quick restoration, one election away, and settling so comfortably into Babylon that it dissolves into the city. Lesslie Newbigin's answer was a congregation whose common life makes no sense unless the gospel is true."
+  ],
+  "essay": {
+    "href": "/writing/what-post-christian-means",
+    "label": "What \"Post-Christian\" Actually Means",
+    "line": "What has ended in America is Christendom, the old arrangement in which the culture handed people the faith, and Jeremiah's letter to the exiles shows the church how to live after it."
+  },
+  "essayStandIn": {
+    "href": "/writing/when-the-church-married-empire",
+    "label": "When the Church Married Empire",
+    "line": "Why the church's alliance with empire began long before the modern culture wars."
+  },
+  "section": {
+    "slug": "after-christendom",
+    "label": "After Christendom",
+    "line": "What it means to follow Christ now that Christian America is ending, and what the church learned the last time it lived without power."
+  },
+  "alsoEssays": [
+    {
+      "href": "/writing/the-early-church-under-rome",
+      "label": "When the Church Had Nothing to Lose",
+      "line": "For almost three centuries the church lived under an empire that could kill it whenever it chose, and how it lived and grew there is history a post-Christian America needs to learn."
+    }
+  ],
+  "scripture": [
+    {
+      "ref": "Jeremiah 29:4-7",
+      "line": "To exiles promised a quick return, God said to build houses, plant gardens, raise children, and seek the welfare of the city where He had sent them.",
+      "context": { "href": "/resources/context/exile-not-empire", "label": "What Does It Mean That Christians Are Exiles?" }
+    },
+    {
+      "ref": "Jeremiah 29:11",
+      "line": "A promise of a future and a hope, first sent to people most of whom would die in Babylon.",
+      "context": { "href": "/resources/context/jeremiah-29-11-in-context", "label": "What Does Jeremiah 29:11 Really Mean?" }
+    },
+    {
+      "ref": "Daniel 6:10",
+      "line": "Daniel kept praying toward Jerusalem three times a day, windows open, in the capital of an empire full of other gods."
+    },
+    {
+      "ref": "1 Peter 2:11-12",
+      "line": "Peter called scattered believers sojourners and exiles, and told them to live so that their neighbors would see their good deeds."
+    },
+    {
+      "ref": "Hebrews 13:14",
+      "line": "The church has no lasting city here. It seeks the city that is to come."
+    }
+  ],
+  "witness": {
+    "name": "The Letter to Diognetus",
+    "line": "An unnamed Christian of the second or third century tried to explain Christians to a curious pagan. They live in their own cities as sojourners, he wrote; every foreign land is a homeland to them, and every homeland a foreign land.",
+    "href": "/theology/history/apostolic-and-persecuted",
+    "label": "The Apostolic and Persecuted Church"
+  },
+  "table": {
+    "devotion": "being-sent",
+    "label": "You Are Not Just A Keeper",
+    "line": "Being sent mostly means living so the people around you, your school, your street, your team, get to see what Jesus is like."
+  },
+  "use": {
+    "study": {
+      "href": "/studyguides/after-christendom",
+      "label": "After Christendom: A Study on Post-Christian Faith",
+      "line": "For thoughtful Christians, pastors who feel the ground shifting, and small groups willing to look at the present honestly."
+    },
+    "tools": []
+  },
+  "care": [
+    {
+      "href": "/help/fear-of-the-future",
+      "label": "I'm scared about the future",
+      "line": "For the dread that won't let go of tomorrow: what Scripture promises about the future, what it doesn't, and what to do this week."
+    }
+  ],
+  "politics": false,
+  "sensitive": false,
+  "folds": [],
+  "updated": "2026-10-27",
+  "reviewed": null
+}

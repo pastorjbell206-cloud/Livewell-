@@ -166,6 +166,8 @@ const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
 const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
 const StudyBibleGuides = lazy(() => import("./pages/StudyBibleGuides"));
 const Answers = lazy(() => import("./pages/Answers"));
+const Topics = lazy(() => import("./pages/Topics"));
+const Topic = lazy(() => import("./pages/Topic"));
 const Assessments = lazy(() => import("./pages/Assessments"));
 const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
 const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
@@ -626,6 +628,8 @@ function Router() {
         <Route path="/church-history" component={ToChurchHistoryRedirect} />
         <Route path="/historic-faith" component={ToStudyRedirect} />
         <Route path="/answers" component={Answers} />
+        <Route path="/topics/:slug" component={Topic} />
+        <Route path="/topics" component={Topics} />
         <Route path="/assessments" component={Assessments} />
         <Route path="/church-hurt" component={ToHelpChurchHurtRedirect} />
         <Route path="/honest-questions" component={ToAnswersRedirect} />
