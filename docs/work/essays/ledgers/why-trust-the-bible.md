@@ -1,201 +1,261 @@
 # Claims ledger: why-trust-the-bible
 
-Essay: `docs/work/essays/why-trust-the-bible.md` ("Can You Trust the Bible?"). The writer drafted a ledger on 2026-10-26. The verifier rewrote it on 2026-10-26 after checking the essay. Every line below records the result and the method this verification actually used.
+Essay: `docs/work/essays/why-trust-the-bible.md` ("Can You Trust the Bible?"). The writer drafted a ledger on 2026-10-26. The verifier rewrote it on 2026-10-26 after checking the essay. A closing run on 2026-10-27 worked through every line that was still open. Every line below records the result and the method actually used.
 
-## Read this first: no web search was available for this check
+## Read this first: what each run could see
 
-The workflow's shared web-search budget was already used up when this check began. Three WebSearch calls were tried (the Cullen Story line, the "floodgates" line and the "more variations" line), and each came back "this turn's web search budget is used up." This check saw no search result. It opened no page on esv.org, Wikipedia or any other website; a direct request to en.wikipedia.org from the sandbox got no response. Every check below was made against texts reachable through GitHub, or against files already in this repository or the session scratchpad.
+**2026-10-26 (verifier).** The workflow's shared web-search budget was already used up. Three WebSearch calls were tried and each came back "this turn's web search budget is used up." That check saw no search result and opened no website. It worked only from texts on GitHub and files in this repository or the session scratchpad. The writer's ledger reported search results (Wikipedia, UNC Endeavors, Bible Archaeology Review, Christianity Today and others); the verifier did not see them, and where they appear below they are marked "writer reported" and nothing rests on them.
 
-The writer's ledger reported search results for several claims (Wikipedia, UNC Endeavors, Bible Archaeology Review, Christianity Today and others, all seen by the writer on 2026-10-26). This check did not see those results. Where they bear on a claim, they are noted as "writer reported", and nothing here rests on them.
+**2026-10-27 (closing run).** Thirteen WebSearch calls returned results, all spent on the riskiest items (the Ehrman lines, Ehrman's biography, the manuscript and variant figures). The fourteenth and later calls came back "this turn's web search budget is used up (limit: 200 WebSearch calls per turn, shared by every agent in it)": other agents in the same workflow turn had spent the rest. No website could be fetched directly (WebFetch could not resolve hosts; the proxy refused other sites). The run then worked from public-domain books mirrored on GitHub by the GITenberg project, the patristic library, and the Bible texts already in the scratchpad and the repository. Lines that no reachable source settles are marked **Still open** and listed at the end.
 
-The methods actually used, and what the words below mean:
+The methods, and what the words below mean:
 
-- **"ESV copy"**: compared with the ESV text in the public GitHub repository lguenth/mdbible ("ESV Bible in Markdown"). The clone was already in the session scratchpad (`scratchpad/esv-mdbible`, commit fd66568, dated 2022-01-20), made by an earlier run. This check read its chapter files with `git show` on 2026-10-26. A script (`scratchpad/trustcheck/q.py`) compared each quotation with the verse text, keeping case and punctuation. It normalized only curly quotes, the copy's stray spaces before punctuation and its spacing around dashes. The copy leaves out quotation marks inside verses and prints LORD as "Lord". It does not say which ESV edition it is. It is not esv.org or the ESV API, so recheck with James's API key once that exists.
-- **"KJV copy"**: compared with `scratchpad/kjv/en_kjv.json` (from the public GitHub repository thiagobodruk/bible), already in the scratchpad. This check read it with Python on 2026-10-26.
-- **"Patristic library"**: read in the public GitHub repository HistoricalChristianFaith/Writings-Database. The clone was already in the scratchpad (`scratchpad/wdb`, commit 328918a, dated 2026-10-25). This check read the files with `git show` on 2026-10-26. The files used were Irenaeus, *Against Heresies* Book 3; Athanasius, "From Letter 39 (for 367)"; Augustine, *The Harmony of the Gospels* Book 1; and Eusebius, *Church History* Book 3. Going by their wording and translator's notes (McGiffert's numbered notes in Eusebius; "Augustin" and the "-Tr." notes in Augustine), these are the ANF/NPNF translations. They are not the library's ChatGPT-translated Migne material.
-- **"Creeds.json"**: read in the public GitHub repository NonlinearFruit/Creeds.json. This check cloned it on 2026-10-26 (`--depth 1 --filter=blob:none --no-checkout`, commit 2ae21a4) and read `creeds/chicago_statement_on_biblical_inerrancy.json` with `git show`. The file's metadata gives the year as 1978, the author as the International Council on Biblical Inerrancy, and its source as the Dallas Theological Seminary library PDF (library.dts.edu, ICBI_1.pdf). That PDF was not opened.
-- **"Site Greek data"**: read in this repository's `client/public/bible/ch/mark/2.json` and `client/public/bible/ch/mark/12.json` (STEPBible tagged Greek).
-- **"Live chapter copy"**: read in `scratchpad/live-posts.json`, a copy of the site's `posts.getBySlug` API responses that an earlier run saved on 2026-10-26. This check did not fetch it.
-- **"Link list"**: checked against `docs/work/essays/link-targets.json` and the links BRIEF.md allows.
-- **"Mechanical scan"**: grep of the essay for U+2014 em-dashes, exclamation points, the CLAUDE.md forbidden words and phrases, and the BRIEF.md stamps. After the edits: no em-dashes, no exclamation points, no forbidden words, no stamps. Length is about 3,570 words. Rescanned on 2026-10-27 after the voice pass: same result (the only en-dashes are in verse ranges), about 3,600 words.
-- **"Not checked (textbook)"**: no source was opened or searched. The verifier judged the claim to be standard reference knowledge. That judgment is not a check.
+- **"ESV copy"**: compared with the ESV text in the public GitHub repository lguenth/mdbible (scratchpad `sources/esv-mdbible`, commit fd66568, dated 2022-01-20), read with `git show`. A script (`scratchpad/trustcheck/q.py`) compared each quotation with the verse text, keeping case and punctuation and normalizing only curly quotes and the copy's spacing. The copy leaves out quotation marks inside verses and prints LORD as "Lord". Its README says it was parsed from the Javascripture JSON; a SWORD-module JSON of the same text in the scratchpad (`dl-suffering/raw-ESV.json`, same token format, 1 Corinthians 15:6 identical) gives the copyright line "English Standard Version ©2011", so this is the 2011 ESV text, not the 2016 permanent text. Recheck with James's API key once that exists.
+- **"KJV copy"**: `scratchpad/kjv/en_kjv.json` (public GitHub repository thiagobodruk/bible), read with Python.
+- **"BSB"**: the site's Berean Standard Bible in `client/public/bible/ch/`.
+- **"Patristic library"**: the public GitHub repository HistoricalChristianFaith/Writings-Database (scratchpad `sources/Writings-Database` and `wdb`, commit 328918a, dated 2026-10-25), read with `git show`. Only its ANF/NPNF translations were used (identified by McGiffert's numbered notes in Eusebius, "Augustin" and the "-Tr." and "-R." notes in Augustine, the ANF wording of Tatian).
+- **"Creeds.json"**: the public GitHub repository NonlinearFruit/Creeds.json (commit 2ae21a4), `creeds/chicago_statement_on_biblical_inerrancy.json`.
+- **"Site Greek data"**: `client/public/bible/ch/mark/2.json` and `12.json` (STEPBible tagged Greek).
+- **"Live chapter copy"**: `scratchpad/live-posts.json`, a copy of the site's `posts.getBySlug` responses saved by an earlier run on 2026-10-26.
+- **"Link list"**: `docs/work/essays/link-targets.json` and the links BRIEF.md allows.
+- **"Search (2026-10-27)"**: a WebSearch result seen in the closing run. The search tool returns a summary of the pages it found, quoting them; the line names the page the result quoted. These are secondary sources quoting Ehrman's books, not the books themselves.
+- **Public-domain books (2026-10-27)**, each cloned from `github.com/GITenberg/<title>_<ebook number>` into `scratchpad/sources/` and read as plain text:
+  - **"Scrivener"**: F. H. A. Scrivener, *A Plain Introduction to the Criticism of the New Testament*, 4th ed., ed. E. Miller (1894), vol. I (PG #36548) and vol. II (PG #36549).
+  - **"EB1911"**: *Encyclopaedia Britannica*, 11th ed. (1910-11): "Bible" (vol. 3, PG #34702), "Athanasius" (vol. 2, PG #34209), "Augustine" (vol. 2, PG #34312), "Gallio" (vol. 11, PG #37160), "Irenaeus" (vol. 14, PG #39775).
+  - **"Ayer"**: J. C. Ayer, *A Source Book for Ancient Church History* (1913), PG #24979.
+  - **"Lightfoot"**: J. B. Lightfoot, *Essays on the Work Entitled "Supernatural Religion"* (1889), PG #18191.
+  - **"Sanday"**: W. Sanday, *The Gospels in the Second Century* (1876), PG #10955.
+  - **"Davidson"**: S. Davidson, *The Canon of the Bible*, 3rd ed. (1880), PG #30132.
+  - **"Gordon edition"**: *The Reign of Tiberius, Out of the First Six Annals of Tacitus*, trans. Thomas Gordon, with an editor's introduction (PG #7959).
+  - **"Ross"**: J. W. Ross, *Tacitus and Bracciolini* (1878), PG #9098. Ross argues the *Annals* are a Renaissance forgery, a fringe view; he is used here only for the uncontested fact that the first six books come from one manuscript.
+  - **"Suetonius"**: Suetonius, *Augustus* (the Thomson/Forester translation), PG #6387.
+  - **"WEB"**: World English Bible, 1 John, PG #8289.
+- **"Word count"**: the four Gospels' words counted in the ESV copy (Matthew 23,976; Mark 15,245; Luke 25,909; John 19,905) and the BSB (22,193; 13,823; 23,879; 18,418).
+- **"Mechanical scan"**: grep of the essay for U+2014 em-dashes, exclamation points, the CLAUDE.md forbidden words and phrases, and the BRIEF.md stamps. Rescanned on 2026-10-27 after the closing run's edits: no em-dashes, no exclamation points, no forbidden words, no stamps (the only en-dashes are in verse ranges); about 3,570 words.
+- **"Not checked (textbook)"**: kept only where it describes what the 2026-10-26 check did. No line that is still open rests on it as if it were a check.
 
 ## Corrections made in the essay
 
-1. Opening, Cullen Story's comment: no reachable source carries *Misquoting Jesus*, so the quoted line is now a marked paraphrase without quotation marks: "His professor, Cullen Story, wrote one line at the end. Maybe, he suggested, Mark had just made a mistake."
-2. Opening, Ehrman's "floodgates" sentence: also unverifiable, so it is now a paraphrase: "Once he admitted that much, he wrote, the floodgates opened."
-3. Do We Have What They Wrote?, Ehrman's line on variants: also unverifiable, so it is now a paraphrase: "One of Ehrman's most quoted lines is that our manuscripts contain more variations than there are words in the New Testament."
-4. Do We Have What They Wrote?, Ehrman on Metzger: also unverifiable, so it is now a paraphrase: "he said his position did not stand at odds with that of his old teacher, Bruce Metzger, who held that the essential Christian beliefs are not affected by the variants in the New Testament manuscripts."
-5. Do We Have What They Wrote?, P52: "The oldest surviving piece of the New Testament is a scrap of John's Gospel" became "is usually thought to be a scrap of John's Gospel," and "usually dated" became "commonly dated." The flat claim overreached, since the same paragraph grants that the fragment's date is disputed and other early papyri compete for the title.
-6. What About the Contradictions?, Mark 12:26: "a few chapters later" became "later in his Gospel." Mark 2:26 and Mark 12:26 are ten chapters apart.
+1. Opening, Cullen Story's comment: no reachable source on 2026-10-26, so the quoted line became a marked paraphrase: "His professor, Cullen Story, wrote one line at the end. Maybe, he suggested, Mark had just made a mistake."
+2. Opening, Ehrman's "floodgates" sentence became a paraphrase: "Once he admitted that much, he wrote, the floodgates opened."
+3. Do We Have What They Wrote?, Ehrman's line on variants became a paraphrase.
+4. Do We Have What They Wrote?, Ehrman on Metzger became a paraphrase.
+5. Do We Have What They Wrote?, P52: "is a scrap" became "is usually thought to be a scrap," and "usually dated" became "commonly dated."
+6. What About the Contradictions?, Mark 12:26: "a few chapters later" became "later in his Gospel."
 
-Corrections 1 to 4 were made because the quotations could not be checked, not because a check failed. Corrections 5 and 6 fix wording that claimed more than the facts allow. No other claim was found to be wrong.
+Corrections 1 to 4 were made because the quotations could not be checked, not because a check failed. The closing run has since matched all four against search results (see "Original wording" below); the paraphrases are accurate and stay as written.
 
-## Voice pass, 2026-10-27
+### Voice pass, 2026-10-27
 
 The final reader revised the prose for voice. No fact, quotation, number, date, name or link was added or removed; a script confirmed all 19 quoted strings, all 6 links, the headings and every number match the pre-pass text. Changes that touch a claim:
 
-7. Do We Have What They Wrote?: "With one copy, a scribe's slip is invisible" overclaimed (the same paragraph says classicists correct slips in Tacitus's single copy). It now reads "A slip in a single copy can easily go unseen."
-8. Do We Have What They Wrote?: "a gap of generations, not a thousand years" compared the gap with a figure the essay never gave for the New Testament. It now compares it with the seven centuries between Tacitus and his manuscript, the figure already in the essay.
-9. The Comma Johanneum: "a verse most Christians have never heard of" became "a verse whose history few Christians know," and "the church let it go" became "most of the church let it go" (the NKJV and KJV readers keep it).
-10. Ehrman and Metzger: "They disagreed about God, but not about what the manuscripts show" claimed more agreement than Ehrman's appendix states. It now reads "On that point, at least, they still agreed," meaning the point just paraphrased (the variants do not touch the essential beliefs).
-11. What About the Contradictions?: "the differences between the Gospels, which is where Ehrman's trouble started" was wrong, because Mark 2:26 conflicts with 1 Samuel 21, not with another Gospel. It now reads "the apparent contradictions, which is where Ehrman's trouble started. Many of them are between the Gospels."
-12. Chicago Statement: "The most careful modern statement" became "A careful modern statement," and the closing line now draws only the inference Article XIII supports (see that section).
-13. Removed or reworded paragraph-end epigrams, one tidy triplet, the repeated "nobody was hiding" motif, and a vague framing sentence ("That changes what the question is finally asking"). These carried no claims.
+7. "With one copy, a scribe's slip is invisible" became "A slip in a single copy can easily go unseen."
+8. "a gap of generations, not a thousand years" became a comparison with the Tacitus gap already in the essay (since generalized, correction 17).
+9. The Comma Johanneum: "a verse most Christians have never heard of" became "a verse whose history few Christians know," and "the church let it go" became "most of the church let it go."
+10. Ehrman and Metzger: "They disagreed about God, but not about what the manuscripts show" became "On that point, at least, they still agreed."
+11. "the differences between the Gospels, which is where Ehrman's trouble started" became "the apparent contradictions, which is where Ehrman's trouble started. Many of them are between the Gospels." (Mark 2:26 conflicts with 1 Samuel 21, not with another Gospel.)
+12. Chicago Statement: "The most careful modern statement" became "A careful modern statement."
+13. Paragraph-end epigrams, one tidy triplet, a repeated motif and a vague framing sentence were removed or reworded. These carried no claims.
+
+### Closing run, 2026-10-27
+
+14. Do We Have What They Wrote?: "thousands more in early translations" became "many more in early translations." No reachable source gave a count of the Latin, Syriac and Coptic manuscripts (Scrivener lists Vulgate copies but gives no total).
+15. Do We Have What They Wrote?, Tacitus: "some seven hundred years after Tacitus wrote" became "many centuries after Tacitus wrote." The interval rests on two dates no reachable source confirmed.
+16. Do We Have What They Wrote?, P52: "a scrap of John's Gospel about the size of a credit card" became "a small scrap of John's Gospel." The size was not confirmed.
+17. Do We Have What They Wrote?: "not the seven centuries that separate Tacitus from his manuscript" became "not the many centuries," to match correction 15.
+18. Dead Sea Scrolls: "brought hundreds of scrolls out of caves" became "brought a great many scrolls out of caves." The count was not confirmed.
+19. Dead Sea Scrolls: "It is about a thousand years older than any Hebrew copy of Isaiah known before" became "It is centuries older than any Hebrew copy of Isaiah known before." The interval was not confirmed.
+20. Did It Happen?, Tel Dan: the quotation marks around "House of David" were removed. The phrase renders an inscription whose wording no reachable source showed, so it now reads as plain description: "boasts of a victory over the House of David."
+21. What About the Contradictions?: "a Syrian Christian named Tatian" became "an Assyrian Christian named Tatian." The sources differ from the essay: Tatian says of himself, "I was born in the land of the Assyrians" (patristic library, *Address to the Greeks* 42, ANF); Sanday calls him "an Assyrian by birth"; Lightfoot's index has "Tatian; an Assyrian."
+
+Corrections 14 to 19 follow the rule that a number which cannot be confirmed is generalized. Correction 20 follows the rule for an unmatched non-Scripture quotation. Correction 21 corrects the essay to the source.
 
 ## Original wording, for restoring
 
-When *Misquoting Jesus* (HarperSanFrancisco, 2005) or a search quoting it is available, check these. If they match exactly, restore them with their quotation marks. The writer reported the first three as quoted in secondary sources, and the fourth as quoted on Wikipedia's "Misquoting Jesus" page and elsewhere. The verifier recalls the first three from the book's introduction and its chapter on the variants, and the fourth from the question-and-answer section of the paperback edition.
+The closing run matched these four against search results that quote *Misquoting Jesus*. The paraphrases now in the essay are accurate and were left alone, because restoring the quotations is a voice choice, not an accuracy fix. If an editor wants the quotations back, these are the wordings the search results showed.
 
 > His professor, Cullen Story, wrote one line at the end: "Maybe Mark just made a mistake."
 
+Search (2026-10-27): results from Bible Archaeology Review ("Ehrman on Abiathar"), UNC *Endeavors* (Spring 2006) and others quote the professor's line as "Maybe Mark just made a mistake" and name him as Cullen Story.
+
 > "Once I made that admission," he wrote, "the floodgates opened."
+
+Search (2026-10-27): results for the exact phrase (monergism.com, UNC *Endeavors*, Christianity Today, Goodreads) and Bible Archaeology Review quote "Once I made that admission, the floodgates opened," one citing *Misquoting Jesus* (HarperCollins, 2005), pp. 8-9. Note that the essay's paraphrase follows the book's sentence; restoring it as a quotation would need the sentence exactly as above.
 
 > One of Ehrman's most quoted lines is that "there are more variations among our manuscripts than there are words in the New Testament."
 
+Search (2026-10-27): results (Stand to Reason pieces by Greg Koukl and Tim Barnett, Bill Mounce, Christian Post) reproduce the line and call it widely cited. No result gave the page number.
+
 > In a question-and-answer appendix to *Misquoting Jesus*, he said his position did not stand at odds with that of his old teacher, Bruce Metzger, that "essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament."
 
-The writer's ledger left these out of the replaced essays, unverified: the "99.5 percent" figure attributed to Metzger (commonly misattributed), Homer manuscript counts, "more than 700 languages," Bauckham's name-frequency argument, Luke's titles "flagged as errors" by earlier critics, and a first-person story of the writer's unbelief (biography beyond NOTES.md). They stay out.
+Search (2026-10-27): results (A Voice for Arran, which reproduces the appendix passage and gives p. 252; Cross Examined; Wikipedia's "Misquoting Jesus" page, which dates the interview to the 2005 paperback) report that Ehrman said his argument "does not actually stand at odds with Prof. Metzger's position" that the essential Christian beliefs are not affected by textual variants. The exact closing words of the sentence were not shown verbatim, so a restored quotation should stop where the search results did or be checked against the book.
+
+The writer's ledger left these out of the replaced essays, unverified: the "99.5 percent" figure attributed to Metzger, Homer manuscript counts, "more than 700 languages," Bauckham's name-frequency argument, Luke's titles "flagged as errors" by earlier critics, and a first-person story of the writer's unbelief. They stay out.
 
 ## Opening: Bart Ehrman and Mark 2:26
 
-- As a young student at Princeton Theological Seminary, Ehrman wrote a paper on Mark 2:26. Not checked (reference knowledge of the story Ehrman tells in *Misquoting Jesus*; writer reported UNC Endeavors and Bible Archaeology Review).
-- He had come from Moody Bible Institute and Wheaton College. Not checked (textbook biography; writer reported Wikipedia). No years are given in the essay.
-- He believed, as he had been taught, that the Bible was without error in every detail. Paraphrase of his own account, not quoted. Not checked (reference knowledge).
-- Mark 2:26, Jesus says David entered the house of God and ate the bread of the Presence "in the time of Abiathar the high priest." ESV copy: the quoted phrase matched; the paraphrase matches the verse.
-- 1 Samuel 21 tells the story, and the priest who gave David the bread was Ahimelech. ESV copy: 1 Samuel 21:1 ("Then David came to Nob to Ahimelech the priest") and 21:6 ("So the priest gave him the holy bread"). Confirmed.
-- Ahimelech was Abiathar's father. ESV copy: 1 Samuel 22:20 ("one of the sons of Ahimelech the son of Ahitub, named Abiathar"). Confirmed.
-- Ehrman built a long and careful argument that Mark didn't mean what he seemed to say. Paraphrase. Not checked (reference knowledge: Ehrman describes his paper's argument as long and complicated).
-- His professor, Cullen Story, wrote one line at the end suggesting Mark had made a mistake. Name and substance: not checked (reference knowledge). The quotation was turned into paraphrase (correction 1).
-- Once he admitted that much, the floodgates opened. Paraphrase, attributed (correction 2). Not checked.
-- *Misquoting Jesus*, his 2005 book on how the New Testament was copied, became a surprise bestseller. Not checked (textbook: HarperSanFrancisco, November 2005, a New York Times bestseller; writer reported Wikipedia). "Surprise" is a common characterization.
-- He became one of the best-known New Testament scholars in the country, and eventually an agnostic. Not checked (textbook).
-- What finally ended his faith was suffering, not the manuscripts. Paraphrase, not quoted. Not checked (reference knowledge: Ehrman says so in *God's Problem*, 2008; writer reported Christianity Today, 2008).
-- Many of his readers closed his book convinced the Bible couldn't be trusted. General characterization; no figure. Not checked.
-- *The Orthodox Corruption of Scripture* argued that scribes sometimes altered a passage to make it say more plainly what they already believed about Christ. Not checked (textbook: Oxford University Press, 1993, subtitled *The Effect of Early Christological Controversies on the Text of the New Testament*). No year is given in the essay.
+- As a young student at Princeton Theological Seminary, Ehrman wrote a paper on Mark 2:26. **Verified.** Search (2026-10-27): the results for the "long and complicated argument" query (Bible Archaeology Review, UNC *Endeavors* and others) place the paper in Ehrman's account of his time at Princeton Theological Seminary.
+- He had come from Moody Bible Institute and Wheaton College. **Verified.** Search (2026-10-27): the Wikipedia result gives Moody's three-year diploma (1976), a Wheaton BA (1978), and an MDiv (1981) and PhD (1985) at Princeton Theological Seminary; the *Christian Century* review result says he "studied at Moody Bible Institute, Wheaton College and Princeton Theological Seminary."
+- He believed, as he had been taught, that the Bible was without error in every detail. Paraphrase, not quoted. **Verified** in substance. Search (2026-10-27): the result for Ehrman's own episode "What Moody Bible College Didn't Prepare Me For" (bartehrman.com) summarizes him as saying Moody gave him a fundamentally mistaken view of biblical inerrancy (the result's words, not his). The book's own wording was not shown.
+- Mark 2:26, "in the time of Abiathar the high priest." ESV copy: matched.
+- 1 Samuel 21 tells the story, and the priest who gave David the bread was Ahimelech. ESV copy: 1 Samuel 21:1 and 21:6. Confirmed.
+- Ahimelech was Abiathar's father. ESV copy: 1 Samuel 22:20. Confirmed.
+- Ehrman built a long and careful argument that Mark didn't mean what he seemed to say. Paraphrase. **Verified.** Search (2026-10-27): results report that Ehrman developed "a 'long and complicated argument' to explain away the apparent mistake," arguing that Jesus didn't really say Abiathar was high priest.
+- His professor, Cullen Story, wrote one line suggesting Mark had made a mistake. Paraphrase (correction 1). **Verified.** Search (2026-10-27): see "Original wording."
+- Once he admitted that much, the floodgates opened. Paraphrase (correction 2). **Verified.** Search (2026-10-27): see "Original wording."
+- *Misquoting Jesus*, his 2005 book on how the New Testament was copied, became a surprise bestseller. **Verified.** Search (2026-10-27): a library record (University of Southern Indiana) lists HarperSanFrancisco, 2005; Ehrman's blog post "My best best-selling fluke" says it reached the *New York Times* list at no. 16 and calls the timing "almost purely a fluke"; Timothy Paul Jones calls it a surprise bestseller.
+- He became one of the best-known New Testament scholars in the country, and eventually an agnostic. **Verified.** Search (2026-10-27): the Wikipedia and Christianity Today results describe his move from evangelical faith to agnosticism; the bestseller and national radio results above support "best-known," which is a characterization.
+- What finally ended his faith was suffering, not the manuscripts. Paraphrase. **Verified.** Search (2026-10-27): results drawn from *God's Problem* (2008; Goodreads, NPR excerpt) summarize his account as saying suffering was ultimately the reason he lost his faith, and another reports a 2020 blog post in which he says he left the faith because he could not understand why there is so much suffering (the results' wording). One critic (EPM) notes that he lost faith in the Bible's inerrancy before he lost faith in God; the essay already tells that sequence in the paragraph before, so "The manuscripts weren't the reason" stands as a statement about what ended his faith.
+- Many of his readers closed his book convinced the Bible couldn't be trusted. General characterization; no figure. **Still open**: no source seen.
+- *The Orthodox Corruption of Scripture* argued that scribes sometimes altered a passage to say more plainly what they believed about Christ. **Still open**: not searched before the budget ran out, and no public-domain source covers it (Oxford University Press, 1993).
 
 ## Do We Have What They Wrote?
 
-- Ehrman's line that our manuscripts contain more variations than there are words in the New Testament. Paraphrase (correction 3). Not checked. That the claim itself is true (common estimates of hundreds of thousands of variants against about 138,000 words of Greek text) is also not checked (textbook).
-- More than five thousand Greek manuscripts of the New Testament, whole or in part. Not checked (textbook: the INTF register lists about 5,800; writer reported Daniel Wallace and INTF figures).
-- Thousands more in early translations such as Latin, Syriac and Coptic. Not checked (textbook; stated generally, no figure).
-- Most variants are spelling, word order, a skipped line or a slip of the pen, and many don't show in English. Not checked (textbook consensus).
-- The first six books of Tacitus's *Annals* survive in a single manuscript copied in the ninth century. Not checked (textbook: the first Medicean manuscript, Florence, Laurentian Library Plut. 68.1; writer reported Wikipedia and Roger Pearse's "Tacitus and his manuscripts").
-- They are one of our main sources for the reign of Tiberius. Not checked (textbook: Books 1 to 6 cover AD 14 to 37).
-- "Some seven hundred years after Tacitus wrote." Arithmetic only: *Annals* written about AD 115 to 120, manuscript about AD 850, so roughly 730 years. Dates not checked (textbook).
-- The papyrus usually thought to be the oldest surviving piece of the New Testament is a scrap of John's Gospel about the size of a credit card, in Manchester, commonly dated to the second century, though some papyrologists argue it could be later. Wording corrected (correction 5). Not checked (textbook: P52, John Rylands Library, John 18, about 8.9 by 6 cm; Brent Nongbri's 2005 article argued for a wider date range; writer reported Nongbri's articles).
-- Larger papyri survive from the late second and third centuries. Not checked (textbook: P46, P66, P75).
-- Codex Sinaiticus, the oldest complete New Testament, was copied in the fourth century. Not checked (textbook; writer reported Leipzig University Library).
-- The early papyri and the fourth-century codices carry substantially the same text. General statement. Not checked (textbook: for example, P75's close agreement with Codex Vaticanus).
-- The gap is "of generations, not the seven centuries that separate Tacitus from his manuscript" (voice pass, correction 8). Comparison of two figures already in the essay: the late second and third century papyri and Sinaiticus against the roughly 730-year Tacitus gap above. Not checked beyond that arithmetic.
-- A slip in a single copy can easily go unseen; among thousands of copies made in Egypt, Syria and Italy, a mistake stands out (voice pass, correction 7). General statement of method. Not checked (textbook).
-- Modern Bibles note that some of the earliest manuscripts end Mark at 16:8. Paraphrase of the note, not quoted. ESV copy: Mark 16:9 opens with the double bracket "[[" that marks 16:9 to 20; the copy does not carry the note's wording. Note wording not checked (reference knowledge: the ESV note reads that some of the earliest manuscripts do not include 16:9 to 20).
-- John 8, the woman caught in adultery, set off in brackets with a note that the earliest manuscripts don't include it. Paraphrase, not quoted. ESV copy: John 7:53 opens with "[[". Note wording not checked.
-- KJV 1 John 5:7: "For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one." KJV copy: matched word for word and point for point. The translation is named because the KJV wording is the point. ESV copy, for contrast: 1 John 5:7 reads "For there are three that testify," without the Comma.
-- It is the most explicit statement of the Trinity in that Bible. Characterization. Not checked.
-- The Comma came into the text through Latin copies and appears in only a handful of late Greek manuscripts. Not checked (textbook: Metzger's *Textual Commentary* counts eight late manuscripts, four with the words in the margin; writer reported a summary of Metzger).
-- Erasmus left it out of his printed Greek New Testament in 1516 and added it in his third edition in 1522; from there it passed into the King James. Not checked (textbook; writer reported H. J. de Jonge, "Erasmus and the Comma Johanneum"). The essay does not repeat the disputed story of Erasmus's promise.
-- The Greek theologians of the fourth-century Trinitarian debates never quoted it. Paraphrase, not quoted. Not checked (textbook: Metzger's *Textual Commentary*, as the writer reported it).
-- Most modern translations, made by scholars who confess the Trinity, have taken it out. ESV copy confirms that the ESV omits it. Other translations not checked (textbook: NIV, CSB, NRSV and NASB omit it; NKJV keeps it).
-- The doctrine never rested on the verse, and "most of the church let it go" (voice pass, correction 9; was "the church let it go"). Inference from the two lines above. Not checked.
+- Ehrman's line that our manuscripts contain more variations than there are words in the New Testament. Paraphrase (correction 3). **Verified.** Search (2026-10-27): see "Original wording." That the claim is true is also supported: the results put the variants at about 400,000 against about 138,000 words of Greek text, and report that Koukl grants Ehrman is right on the facts as far as they go.
+- More than five thousand Greek manuscripts of the New Testament, whole or in part. **Verified.** Search (2026-10-27): among the results for the variants query (Stand to Reason, Bill Mounce, Christian Post, BiblicalTraining.org), one is quoted as saying: "Today, we have about 5,800 Greek New Testament manuscripts in our possession."
+- Many more in early translations such as Latin, Syriac and Coptic. Generalized from "thousands more" (correction 14). Scrivener vol. II describes the Latin, Syriac and Coptic versions and their many manuscripts but gives no total. The generalized wording needs no figure.
+- Every difference counts as a variant; most are spelling, word order, a skipped line or a slip of the pen, and many don't show in English. **Verified** for the counting and the kinds of variants. Search (2026-10-27): results explain that one misspelling shared by 2,000 copies counts as 2,000 variants, and (Christian Post) that "the overwhelming majority of variants consist of spelling and numerical differences, sentence word order changes, etc.," with Ehrman conceding in his last lecture that "most of them don't matter." That spelling and word-order differences mostly vanish in English is an inference from those kinds.
+- The first six books of Tacitus's *Annals* survive in a single manuscript copied in the ninth century. Single manuscript **verified**: Gordon edition, introduction: "a great portion of him was reduced to the single manuscript, which lay hidden within a German monastery"; Ross: the "First Florence" manuscript "stated to have been found in the Abbey of Corvey" supplied "the opening six books." The ninth-century date is **still open**: Ross disputes the manuscript's age and no other reachable source dates it.
+- They are one of our main sources for the reign of Tiberius. **Verified**: the Gordon edition is titled *The Reign of Tiberius, Out of the First Six Annals of Tacitus*.
+- "Many centuries after Tacitus wrote." Generalized from "some seven hundred years" (correction 15).
+- The papyrus usually thought to be the oldest piece of the New Testament is a small scrap of John's Gospel in Manchester, commonly dated to the second century, though some papyrologists argue it could be later. Size generalized (correction 16). The second-century date, Manchester, and the later-date argument are **still open**: P52 was published in 1935, after every public-domain source reachable here.
+- Larger papyri survive from the late second and third centuries. **Still open**: these papyri were published after the public-domain sources reachable here.
+- Codex Sinaiticus, the oldest complete New Testament, was copied in the fourth century. **Verified.** Scrivener vol. I: "the Codex Sinaiticus of the fourth century," and "The Codex Sinaiticus of Tischendorf is the more precious, in that it happily exhibits the whole New Testament complete ... no other uncial copies have this advantage." The papyri found since are all partial.
+- The early papyri and the fourth-century codices carry substantially the same text. **Still open** (same reason as the papyri above).
+- The gap is "of generations, not the many centuries that separate Tacitus from his manuscript" (correction 17). The comparison now rests only on the generalized Tacitus interval.
+- A slip in a single copy can easily go unseen; among thousands of copies made in Egypt, Syria and Italy, a mistake stands out. General statement of method. **Verified.** Scrivener vol. I, §5: the copies are "far more numerous than those of the most celebrated writers of Greece or Rome," and "So far is the copiousness of our stores from causing doubt or perplexity ... that it leads him to recognize the more fully its general integrity in the midst of partial variation"; Scrivener vol. II describes the Coptic, Syriac and Latin witnesses from those regions.
+- Modern Bibles note that some of the earliest manuscripts end Mark at 16:8. Paraphrase of the note. **Verified.** ESV copy: Mark 16:9 opens with the double bracket "[[". Scrivener vol. II, on Mark 16:9-20: "Out of all the great manuscripts, the two oldest (אB) stand alone in omitting vers. 9-20 altogether." (Scrivener himself defended the passage; the fact he reports is what matters here.) The note's exact ESV wording was not seen and is not quoted.
+- John 8, the woman caught in adultery, set off in brackets with a note that the earliest manuscripts don't include it. Paraphrase. **Verified.** ESV copy: John 7:53 opens with "[[". Scrivener vol. II, on John 7:53-8:11: "It is entirely omitted ... in the uncial Codd. אABCT (all very old authorities)."
+- KJV 1 John 5:7: "For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one." KJV copy: matched word for word. ESV copy omits it.
+- It is the most explicit statement of the Trinity in that Bible. **Verified** as far as a text search can show it. KJV copy, scanned for verses naming the Father, the Son or Word, and the Holy Ghost or Spirit together: only Matthew 28:19 and 1 John 5:7, and only 1 John 5:7 says "these three are one."
+- The Comma came into the text through Latin copies and appears in only a handful of late Greek manuscripts. **Verified.** Scrivener vol. II, §50: the words are "found ... in no more than three Greek manuscripts, and those of very late date ... and in the margin of a fourth, in a hand as late as the sixteenth century"; the passage "had no place in ancient Greek manuscripts, but came into some of the Latin at least as early as the sixth century"; the Complutensian editor Stunica "virtually admits that ver. 7 was translated in that edition from the Latin." (Later finds have raised the count a little; "a handful" covers both.)
+- Erasmus left it out of his printed Greek New Testament in 1516 and added it in his third edition in 1522; from there it passed into the King James. **Verified.** Scrivener vol. II: the first edition "is dated February, 1516"; "Erasmus, after excluding the passage from his first two editions, inserted it in his third"; "The third edition (1522) is chiefly remarkable for its insertion of 1 John v. 7, 8 in the Greek text," after which the received text "long remained" in that shape. KJV copy: the Comma stands in 1 John 5:7.
+- The Greek theologians of the fourth-century Trinitarian debates never quoted it, because their Bibles didn't have it. Paraphrase. **Verified**, with one caveat recorded here. Scrivener vol. II: "Of the Greek Fathers it has been said that no one has cited it, even when it might be supposed to be most required by his argument," with a bracketed exception for an undated Greek *Synopsis* and the pseudonymous *Disputation with Arius*, neither by the fourth-century theologians the essay means.
+- Most modern translations, made by scholars who confess the Trinity, have taken it out. **Verified** by spot check: the ESV copy ("For there are three that testify"), the BSB ("For there are three that testify:") and the WEB (which notes "Only a few recent manuscripts add" the words) all omit it. "Made by scholars who confess the Trinity" describes these translations' sponsors; not separately checked.
+- The doctrine never rested on the verse, and most of the church let it go. Inference. **Verified** as an inference from Scrivener vol. II, who says the Greek Fathers argued without it and that its authenticity "will, perhaps, no longer be maintained by any one whose judgement ought to have weight." "Most" allows for the KJV and NKJV readers.
 
 ## Dead Sea Scrolls
 
-- The Leningrad Codex, the oldest complete manuscript of the Hebrew Bible, was copied in 1008. Not checked (textbook: its colophon gives 1008 or 1009; writer reported Wikipedia).
-- Beginning in 1947, Bedouin shepherds and later archaeologists brought hundreds of scrolls out of caves near Qumran above the Dead Sea. Not checked (textbook: the first cave was found in the winter of 1946 to 1947; "hundreds" is deliberately general).
-- A complete scroll of Isaiah, usually dated to the second century before Christ. Not checked (textbook: 1QIsa-a, commonly dated about 125 BC; writer reported Wikipedia).
-- About a thousand years older than any Hebrew copy of Isaiah known before. Not checked (textbook: the usual round figure for the gap between the scroll and the medieval Masoretic manuscripts; writer reported Wikipedia).
-- Most of its differences from the later text are spelling and small points of grammar. Not checked (textbook).
-- Some books, Jeremiah among them, circulated in more than one form before the text settled. Not checked (textbook: the Qumran Jeremiah fragments that agree with the shorter Septuagint form).
-- Isaiah 53 is in the scroll. Not checked (textbook: the scroll contains all 66 chapters).
+- The Leningrad Codex, the oldest complete manuscript of the Hebrew Bible, was copied in 1008. **Still open.** EB1911 ("Bible") says "the oldest dated MS., the *Codex Babylonicus Petropolitanus*, only goes back to the year A.D. 916." It does not mention the Leningrad Codex or say which manuscript is the oldest complete one, so it neither confirms nor contradicts the essay; nothing reachable dates the Leningrad Codex.
+- Beginning in 1947, Bedouin shepherds and later archaeologists brought a great many scrolls out of caves near Qumran. Count generalized (correction 18). The year and the finders are **still open**: no public-domain source covers the 1947 finds.
+- A complete scroll of Isaiah, usually dated to the second century before Christ. **Still open.**
+- It is centuries older than any Hebrew copy of Isaiah known before. Generalized from "about a thousand years" (correction 19). Still rests on the open dates above.
+- Most of its differences from the later text are spelling and small points of grammar. **Still open.**
+- Some books, Jeremiah among them, circulated in more than one form before the text settled. **Still open.**
+- Isaiah 53 is in the scroll. **Still open** (follows from the scroll being complete, which is open).
 
 ## Ehrman and Metzger
 
-- Ehrman, in a question-and-answer appendix to *Misquoting Jesus*, said his position did not stand at odds with Metzger's that the essential Christian beliefs are not affected by the variants. Paraphrase (correction 4). Not checked, and neither is the appendix's location in later paperback editions.
-- Metzger was Ehrman's old teacher. Not checked (textbook: he supervised Ehrman's Princeton PhD).
-- Metzger was an ordained Presbyterian minister. Not checked (textbook; writer reported his 2007 obituaries).
-- "On that point, at least, they still agreed" (voice pass, correction 10). Restates only the paraphrased appendix claim above. Not checked.
+- Ehrman, in a question-and-answer appendix to *Misquoting Jesus*, said his position did not stand at odds with Metzger's that the essential Christian beliefs are not affected by the variants. Paraphrase (correction 4). **Verified.** Search (2026-10-27): see "Original wording"; the Wikipedia result places the Q&A in the 2005 paperback and another result notes it appears in some editions as an appendix.
+- Metzger was Ehrman's old teacher. **Verified.** Search (2026-10-27): the Wikipedia result lists Bruce M. Metzger as his doctoral advisor at Princeton Theological Seminary.
+- Metzger was an ordained Presbyterian minister. **Still open**: not searched before the budget ran out.
+- "On that point, at least, they still agreed." Restates the appendix claim. **Verified.** Search (2026-10-27): results report Ehrman saying he and Metzger agree that most variants have no bearing on what a passage means.
 
 ## Who Chose the Books?
 
-- The Council of Nicaea in 325 argued about whether the Son is fully God and drew up no list of books. Not checked (textbook).
-- Around 180, Irenaeus, bishop of Lyon, argued there are four Gospels, no more and no fewer, and treated it as settled. Paraphrase, not quoted. Patristic library, *Against Heresies* 3.11.8 (ANF): "It is not possible that the Gospels can be either more or fewer in number than they are," argued from the four zones of the world and the four winds. Confirmed. The date about 180 and the see of Lyon: not checked (textbook).
-- Paul's letters were being read as Scripture even earlier. General statement, supported in the essay by 2 Peter 3:16. Not checked beyond that verse.
-- 2 Peter 3:16, "the other Scriptures" and "there are some things in them that are hard to understand." ESV copy: matched. The ESV begins that sentence "There are"; the essay lowercases "there" inside its own sentence.
-- Athanasius of Alexandria's letter for Easter in 367 is the first list we know of that names exactly the twenty-seven books. Patristic library, "From Letter 39 (for 367)" (NPNF), section 5: four Gospels, Acts, seven catholic epistles, fourteen epistles of Paul (Hebrews among them) and Revelation, which makes twenty-seven. The heading calls it the thirty-ninth letter "on the Paschal festival." Confirmed. "First we know of" is the common scholarly framing; not checked.
-- Hebrews, James and Revelation were questioned for a long time in some places, and the church's own historians wrote the arguments down (the essay now says so in the sentence after the arguments, before the councils). Patristic library, Eusebius, *Church History* (NPNF), 3.3.5: "some have rejected the Epistle to the Hebrews, saying that it is disputed by the church of Rome"; 3.25.3: James "among the disputed writings, which are nevertheless recognized by many"; 3.25.2 and 3.25.4: the Apocalypse of John placed among the accepted books "if it really seem proper," while "some, as I said, reject" it. Confirmed.
-- The councils that came later mostly put in writing what the churches had already been reading. General statement (Hippo 393 and Carthage 397 not named). Not checked (textbook).
-- Link to /writing/who-decided-what-books-are-in-the-bible. Link list: present in link-targets.json.
+- The Council of Nicaea in 325 argued about whether the Son is fully God and drew up no list of books. **Verified.** Ayer, §63: "The Outbreak of the Arian Controversy and the Council of Nicæa, A. D. 325." Ayer prints the council's own synodical letter (from Socrates, *Hist. Ec.* I, 9), which reports "what subjects were brought under consideration ... and also what was eventually determined on and decreed": Arius's teaching that the Son "sprang from nothing, and that there was a time when He was not," the Meletian schism, and the date of Easter. It mentions no list of books. EB1911 ("Athanasius") confirms that *Homousios* "had been added to the creed at Nicaea."
+- Around 180, Irenaeus, the bishop of Lyon, argued there are four Gospels, no more and no fewer, and treated it as settled. Patristic library, *Against Heresies* 3.11.8 (ANF): "It is not possible that the Gospels can be either more or fewer in number than they are." Confirmed on 2026-10-26. Date and see **verified**: EB1911 ("Irenaeus"): "IRENAEUS, bishop of Lyons at the end of the 2nd century ... The chief work of Irenaeus, written about 180." (EB1911's "Bible" article puts the passage "c. A.D. 185"; "around 180" fits both.)
+- Paul's letters were being read as Scripture even earlier. Supported in the essay by 2 Peter 3:16 (verified below). **Still open** as a historical claim, because it rests on the date of 2 Peter, which was not checked; Davidson (1880), a critical scholar, held that the New Testament was not regarded as a divine and infallible guide "till towards the close of the second century."
+- 2 Peter 3:16, "the other Scriptures" and "there are some things in them that are hard to understand." ESV copy: matched; the essay lowercases "there" inside its own sentence.
+- Athanasius's letter for Easter in 367 is the first list we know of that names exactly the twenty-seven books. Patristic library, "From Letter 39 (for 367)" (NPNF), section 5. Confirmed on 2026-10-26. EB1911 ("Bible") adds that Athanasius laid down "a list identical with our New Testament as we have it now." Davidson dates the festal letter 365; the NPNF heading's 367 is kept.
+- Hebrews, James and Revelation were questioned for a long time in some places, and the church's own historians wrote the arguments down. Patristic library, Eusebius, *Church History* 3.3.5, 3.25.2-4 (NPNF). Confirmed on 2026-10-26.
+- The councils that came later mostly put in writing what the churches had already been reading. **Verified.** EB1911 ("Bible"): a synod at Rome in 382 "drew up a list corresponding to the present Canon," which was "independently confirmed for the province of Africa by a series of Synods held at Hippo Regius in 393, and at Carthage in 397 and 419"; and "behind these was the practice of the greater churches."
+- Link to /writing/who-decided-what-books-are-in-the-bible. Link list: present.
 
 ## Did It Happen?
 
-- Luke 1:1–4 (block quotation, "Inasmuch as many have undertaken ... the things you have been taught."). ESV copy: matched word for word and point for point.
-- Luke 3:1–2: John began preaching in the fifteenth year of Tiberius, when Pontius Pilate governed Judea and Annas and Caiaphas held the high priesthood. Paraphrase, not quoted. ESV copy: 3:1 to 2 name the fifteenth year of Tiberius Caesar, Pilate as governor of Judea, and the high priesthood of Annas and Caiaphas, and 3:3 has John "proclaiming a baptism of repentance." Confirmed.
-- In 1961, archaeologists at Caesarea Maritima, the seat of the Roman governors, found a limestone block reused in a theater, inscribed with Pilate's name and his title, prefect of Judea. Not checked (textbook: the Italian excavation of 1961; writer reported several archaeology sites).
-- An inscription from Delphi places Gallio's term as proconsul of Achaia around AD 51 to 52, one of the firmest dates in Paul's life. Not checked (textbook; writer reported several sources).
-- Paul's hearing before Gallio in Corinth (Acts 18:12). ESV copy: Acts 18:12, "when Gallio was proconsul of Achaia ... brought him before the tribunal"; Acts 18:1 places Paul in Corinth. Confirmed.
-- In 1993, excavators at Tel Dan in northern Israel found part of a ninth-century BC Aramaic inscription in which a foreign king boasts of a victory over the "House of David"; as most scholars read it, the earliest mention of David's dynasty outside the Bible. Not checked (textbook: the first fragment was found in 1993 by Avraham Biran's team; the phrase is the standard rendering of *bytdwd*; the hedge "as most scholars read it" stays because a minority reads the phrase differently).
-- The archaeology of the exodus and the conquest is argued over intensely, and believing scholars disagree among themselves. General statement. Not checked (textbook).
-- Paul wrote to the Corinthians in the mid-50s. Not checked (textbook: commonly dated about 53 to 55).
-- Paul passes on a summary he received: Christ died for our sins, was buried, was raised on the third day, and appeared to Peter and then to the Twelve. Paraphrase, not quoted. ESV copy: 1 Corinthians 15:3 to 5 ("what I also received," "Cephas, then to the twelve"). Confirmed; Cephas is Peter.
-- 1 Corinthians 15:6, "Then he appeared to more than five hundred brothers at one time, most of whom are still alive, though some have fallen asleep." ESV copy: matched.
-- 1 Corinthians 15:17, "And if Christ has not been raised, your faith is futile and you are still in your sins." ESV copy: matched.
+- Luke 1:1-4 (block quotation). ESV copy: matched word for word.
+- Luke 3:1-2: the fifteenth year of Tiberius, Pilate governing Judea, Annas and Caiaphas. ESV copy. Confirmed.
+- In 1961, archaeologists at Caesarea Maritima, the seat of the Roman governors on the coast, found a limestone block reused in a theater, inscribed with Pilate's name and his title, prefect of Judea. Caesarea as the governors' seat **verified**: ESV copy, Acts 23:33 ("When they had come to Caesarea and delivered the letter to the governor") and 25:1, 6 (Festus goes up to Jerusalem "from Caesarea" and back, and takes "his seat on the tribunal"). The 1961 find and its wording are **still open**: no public-domain source covers them.
+- An inscription from Delphi places Gallio's term as proconsul of Achaia around AD 51 to 52. **Still open.** EB1911 ("Gallio"), written before the Delphi fragments were used for this dating, gives his tenure "in 53" and does not mention Delphi; it neither confirms nor refutes the inscription.
+- Paul's hearing before Gallio in Corinth (Acts 18:12). ESV copy. Confirmed.
+- In 1993, excavators at Tel Dan found part of a ninth-century BC Aramaic inscription in which a foreign king boasts of a victory over the House of David; as most scholars read it, the earliest mention of David's dynasty outside the Bible. Quotation marks removed (correction 20). The find, its date and its reading are **still open**.
+- The archaeology of the exodus and the conquest is argued over intensely, and believing scholars disagree. General statement. **Still open.**
+- Paul wrote to the Corinthians in the mid-50s. **Still open.**
+- Paul passes on a summary he received (1 Corinthians 15:3-5). ESV copy. Confirmed.
+- 1 Corinthians 15:6 and 15:17. ESV copy: matched.
 - Link to /writing/did-the-resurrection-happen. Link list: present.
 
 ## What About the Contradictions?
 
-- The apparent contradictions are where Ehrman's trouble started, and many of them are between the Gospels (voice pass, correction 11). Mark 2:26 against 1 Samuel 21, as confirmed in the opening section; the earlier wording wrongly made it a difference between Gospels.
-- Matthew has Mary Magdalene and "the other Mary" at the tomb, and an angel sitting on the stone. ESV copy: Matthew 28:1 (the quoted phrase matched) and 28:2 ("rolled back the stone and sat on it"). Confirmed.
-- Mark has three women and a young man in a white robe inside the tomb. ESV copy: Mark 16:1 (Mary Magdalene, Mary the mother of James, and Salome) and 16:5 ("entering the tomb, they saw a young man ... dressed in a white robe"). Confirmed.
-- Luke has a larger group of women and two men in dazzling clothes. Paraphrase. ESV copy: Luke 24:4 ("two men stood by them in dazzling apparel") and 24:10 (Mary Magdalene, Joanna, Mary the mother of James "and the other women with them"). Confirmed.
-- John tells it through Mary Magdalene, who later sees two angels where the body had been. Paraphrase. ESV copy: John 20:1, 11 to 12 ("two angels in white, sitting where the body of Jesus had lain"). Confirmed.
-- In the second half of the second century, a Syrian Christian named Tatian wove the four Gospels into the *Diatessaron*, for a long time the Gospel many Syriac-speaking churches read. Not checked (textbook: about 170; writer reported Wikipedia and the ANF introduction).
-- In the fifth century Theodoret, bishop of Cyrrhus, wrote that he had found more than two hundred copies in the churches of his region, collected them, and put the Gospels of the four evangelists in their place. Paraphrase, not quoted. Not checked: the source, his *Compendium of Heretical Fables* 1.20, has no ANF/NPNF translation in the patristic library, and the library holds only his other works. The verifier judges it standard reference knowledge; the writer reported it as quoted by McFall (WTJ, 1994) and Drum (*Bibliotheca Sacra*, 1918). The essay says "collected," not "destroyed."
-- Around 400, Augustine wrote a long work on the agreement of the Gospels, answering critics who had noticed the same differences. Patristic library, *The Harmony of the Gospels* (NPNF), Book 1.54: "let us now rather proceed to examine into the real character of those passages in which these critics suppose the evangelists to have given contradictory accounts." Purpose confirmed. The date about 400: not checked (textbook).
-- Ancient biographers arranged material by theme, compressed events and summarized speeches as a matter of course. General statement; no scholar named. Not checked (textbook).
-- Mark 2:26 still has no explanation everyone accepts. Not checked (textbook).
-- Mark uses the same Greek construction later in his Gospel to mean "in the passage about" (Mark 12:26). Wording corrected (correction 6). ESV copy: Mark 12:26, "in the passage about the bush," matched. Site Greek data: Mark 2:26 reads ἐπὶ Ἀβιαθὰρ ἀρχιερέως and Mark 12:26 reads ἐπὶ τοῦ βάτου, both *epi* with the genitive. Confirmed.
-- Some scholars read Mark 2:26 that way; others find it unconvincing. Not checked (reference knowledge; writer reported the BYU New Testament Commentary and *Themelios* 47.2).
-- On what matters most the four agree: crucified and buried, the tomb found empty by women, followers convinced they had seen him alive. ESV copy: confirmed by the Easter chapters read above (Matthew 28, Mark 16, Luke 24, John 20).
+- The apparent contradictions are where Ehrman's trouble started, and many of them are between the Gospels. Mark 2:26 against 1 Samuel 21, confirmed above.
+- Matthew, Mark, Luke and John on Easter morning (Matthew 28:1-2; Mark 16:1, 5; Luke 24:4, 10; John 20:1, 11-12). ESV copy. Confirmed.
+- In the second half of the second century, an Assyrian Christian named Tatian wove the four Gospels into the *Diatessaron*, for a long time the Gospel many Syriac-speaking churches read. "Syrian" corrected to "Assyrian" (correction 21). Date and use **verified**: Davidson: "Justin's disciple, Tatian (160-180 A.D.), wrote a *Diatessaron* or harmony of the gospels"; EB1911 ("Bible"): "About A.D. 170 Tatian, the disciple of Justin, composed out of these Gospels his *Diatessaron*," and, in its account of the Syriac versions, "from the end of the 2nd to the beginning of the 5th century the Diatessaron was the popular form of the gospels."
+- In the fifth century Theodoret, the bishop of Cyrrhus, wrote that he had found more than two hundred copies in the churches of his region, collected them, and put the Gospels of the four evangelists in their place. Paraphrase. **Verified.** Lightfoot, translating Theodoret's treatise on heresies (written in 453): "And I myself found more than two hundred such copies held in respect in the churches in our parts. All these I collected and put away, and I replaced them by the Gospels of the Four Evangelists." Lightfoot: Theodoret "became bishop of Cyrus or Cyrrhus, near the Euphrates, in the year 420 or 423." Sanday agrees: "Theodoret found more than two hundred copies in the churches of his diocese (Cyrrhus in Syria), which he removed and replaced with the works of the four Evangelists." EB1911 ("Bible"): the Diatessaron "was only driven out by Theodoret and Rabbula in the 5th century."
+- Around 400, Augustine wrote a long work on the agreement of the Gospels, answering critics who had noticed the differences. Purpose: patristic library, *The Harmony of the Gospels* 1.54 (NPNF), confirmed on 2026-10-26. Date **verified** by inference: the *Harmony* itself refers back to "what I have written in opposition to Faustus the Manichaean" (patristic library, Book 1), and EB1911 ("Augustine") dates *Contra Faustum Manichaeum* to "A.D. 400."
+- Ancient biographers arranged material by theme, compressed events and summarized speeches as a matter of course, and the Gospel writers wrote within those habits. Thematic arrangement **verified**: Suetonius, *Augustus* 9: "I shall prosecute the several parts of it, not in order of time, but arranging his acts into distinct classes." The compressing and the speeches, and the claim about the Gospel writers, are **still open**.
+- Several people describing the same confusing morning will each remember it a little differently, and investigators grow suspicious when witnesses agree too neatly. General observation, listed for the first time in this run. **Still open** (no source; a common-sense claim with no figure).
+- Mark 2:26 still has no explanation everyone accepts. **Verified.** Search (2026-10-27): results show competing proposals still argued (a *Themelios* article, vol. 47, issue 2, revisiting "the time of Abiathar the high priest"; Hank Hanegraaff at equip.org; Bill Pratt citing Geisler and Howe), while Ehrman holds that it is a mistake.
+- Mark uses the same Greek construction later in his Gospel to mean "in the passage about" (Mark 12:26). ESV copy: matched. Site Greek data: both verses use *epi* with the genitive. Confirmed.
+- Some scholars read Mark 2:26 that way; others find it unconvincing. **Verified.** Search (2026-10-27): results report that Ehrman's own seminary paper argued from "the idea that the event was placed in a passage where Abiathar is a main character," and that he and his professor later found it unconvincing; the *Themelios* article revisits the question.
+- On what matters most the four agree. ESV copy: confirmed from the Easter chapters.
 
 ## Chicago Statement
 
-- The Chicago Statement on Biblical Inerrancy, 1978. Creeds.json metadata: year 1978, International Council on Biblical Inerrancy, Chicago. Confirmed.
-- It says inerrancy is not negated by "the topical arrangement of material, variant selections of material in parallel accounts, or the use of free citations." Creeds.json, Article XIII (denial): "We further deny that inerrancy is negated by Biblical phenomena such as ... the topical arrangement of material, variant selections of material in parallel accounts, or the use of free citations." Matched word for word.
-- A careful modern statement of inerrancy, drafted by scholars who knew these passages well (voice pass, correction 12; was "The most careful"). Characterization. Not checked.
-- "As its own framers stated it, the doctrine never required the four Gospels to tell the story the same way." Inference from Article XIII's denial quoted above ("variant selections of material in parallel accounts"). Supported by that text.
-- Many evangelical churches confess that Scripture is without error. General statement. Not checked (textbook).
-- One apostle admits another is sometimes hard to understand. ESV copy: 2 Peter 3:15 to 16 (Peter on "our beloved brother Paul"). Confirmed.
+- The Chicago Statement on Biblical Inerrancy, 1978. Creeds.json metadata. Confirmed.
+- "the topical arrangement of material, variant selections of material in parallel accounts, or the use of free citations." Creeds.json, Article XIII. Matched word for word.
+- A careful modern statement of inerrancy, drafted by scholars who knew these passages well. Characterization. **Still open.**
+- "As its own framers stated it, the doctrine never required the four Gospels to tell the story the same way." Inference from Article XIII. Supported by that text.
+- Many evangelical churches confess that Scripture is without error. General statement. **Still open.**
+- One apostle admits another is sometimes hard to understand. ESV copy: 2 Peter 3:15-16. Confirmed.
 
 ## What About the Hard Passages?
 
-- Laws that regulate slavery, commands in Joshua to destroy whole towns, psalms that ask God to break the teeth of enemies. No references in the essay. ESV copy: Psalm 58:6, "O God, break the teeth in their mouths," and Psalm 3:7, "you break the teeth of the wicked." Confirmed for the psalms. The slavery laws (Exodus 21, Leviticus 25) and the Joshua commands (Joshua 6, 8): not checked in this essay's check (textbook).
-- Job asks the question chapter after chapter; Jeremiah and Habakkuk put it to God. ESV copy: Jeremiah 12:1 ("Why does the way of the wicked prosper?"), Habakkuk 1:2 and 1:13. Confirmed. Job: not checked (textbook).
-- Link to /writing/why-didnt-the-bible-ban-slavery and to /help. Link list: present.
+- Laws that regulate slavery, commands in Joshua to destroy whole towns, psalms that ask God to break the teeth of enemies. **Verified.** ESV copy: Exodus 21:2 ("When you buy a Hebrew slave"), 21:20-21; Leviticus 25:44-46 ("you may buy male and female slaves from among the nations"); Joshua 6:17 ("the city and all that is within it shall be devoted to the Lord for destruction"), 6:21, 8:2, 8:24-26, 10:40; Psalm 58:6 and 3:7 (confirmed on 2026-10-26).
+- Job asks the question chapter after chapter; Jeremiah and Habakkuk put it to God. **Verified.** ESV copy: Job 3:11, 3:20, 7:20, 10:2-3, 13:24, 21:7 ("Why do the wicked live"), 23:3, 24:1; Jeremiah 12:1; Habakkuk 1:2, 1:13.
+- Links to /writing/why-didnt-the-bible-ban-slavery and /help. Link list: present.
 
 ## Why It Comes Back to Jesus
 
-- The first Christians had no New Testament; they had the Scriptures of Israel. Not checked (textbook).
-- Jesus rested his case on a phrase from Psalm 82 and said "Scripture cannot be broken" (John 10:35). ESV copy: John 10:34 ("I said, you are gods"), Psalm 82:6 ("I said, You are gods"), and John 10:35 (the quoted phrase matched). Confirmed.
-- John 5:39–40, "You search the Scriptures because you think that in them you have eternal life; and it is they that bear witness about me, yet you refuse to come to me that you may have life." ESV copy: matched across both verses.
-- Luke 24:27, "beginning with Moses and all the Prophets, he interpreted to them in all the Scriptures the things concerning himself." ESV copy: matched (the ESV verse begins "And").
-- On the road to Emmaus after the resurrection, walking with two of his followers. ESV copy: Luke 24:13 ("two of them were going to a village named Emmaus"). Confirmed.
+- The first Christians had no New Testament; they had the Scriptures of Israel. **Verified.** ESV copy: Luke 24:27 ("beginning with Moses and all the Prophets ... in all the Scriptures"); Davidson, on a Christian writer of about 150-160: "His *Scripture* was the Old Testament." The New Testament books were written after the first Christian generation began, as the essay's own dates show.
+- Jesus rested his case on Psalm 82 and said "Scripture cannot be broken" (John 10:35). ESV copy. Confirmed.
+- John 5:39-40. ESV copy: matched.
+- Luke 24:27. ESV copy: matched.
+- The road to Emmaus, after the resurrection, two followers. ESV copy: Luke 24:13. Confirmed.
 
 ## What Trust Looks Like
 
-- Mark is the shortest Gospel. Not checked (textbook).
-- Mark keeps disciples who don't understand, Peter's denial, and women running from the tomb too afraid to speak. ESV copy: Mark 16:8 ("they went out and fled from the tomb ... and they said nothing to anyone, for they were afraid") and Mark 14:68 to 72 (Peter's denials). Confirmed. The disciples' misunderstanding: not checked (textbook).
-- The description of *The Bible Assumes You Will Be Wrong*: Scripture expects its readers to get it wrong and keeps sending prophets to people who already have the Scriptures. Live chapter copy: the chapter says the biblical witness "assumes" communities will go wrong and that "the people who had the Scriptures" consistently met the prophetic word with hostility. Matches. Link list: present.
+- Mark is the shortest Gospel. **Verified.** Word count: ESV 15,245 words against 19,905 to 25,909 for the others; BSB 13,823 against 18,418 to 23,879.
+- Mark keeps disciples who don't understand, Peter's denial, and women running from the tomb too afraid to speak. **Verified.** ESV copy: Mark 6:52 ("for they did not understand about the loaves"), 8:17-21 ("Do you not yet understand?"), 9:32 ("But they did not understand the saying"); 14:68-72; 16:8.
+- The description of *The Bible Assumes You Will Be Wrong*. Live chapter copy. Matches. Link list: present.
 - Link to /study/bible. Allowed by BRIEF.md.
-- Luke 24:32, "Did not our hearts burn within us while he talked to us on the road, while he opened to us the Scriptures?" ESV copy: matched.
-- The two on the road to Emmaus had known the Scriptures all their lives. An inference, not a claim the text states. Kept as the writer's reading.
+- Luke 24:32. ESV copy: matched.
+- The two on the road to Emmaus had known the Scriptures all their lives. An inference the text does not state. **Still open** (kept as the writer's reading).
 
 ## Closing Texts
 
-- Isaiah 40:8, "The grass withers, the flower fades, but the word of our God will stand forever." ESV copy: matched.
-- John 20:31, "These are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name." ESV copy: matched from "these" on. The ESV verse begins "but these are written"; the Closing Texts line drops the opening "but" and capitalizes "These." No word inside the quotation is changed.
+- Isaiah 40:8. ESV copy: matched.
+- John 20:31. ESV copy: matched from "these" on; the ESV verse begins "but these are written," and the line drops "but" and capitalizes "These."
 
 ## Biography and integrity
 
-- The essay contains no biography of James and no anecdote other than Ehrman's own published story. Checked against NOTES: nothing beyond the confirmed facts is stated. The one first-person line ("and I think they do") is a judgment, not biography.
+- The essay contains no biography of James and no anecdote other than Ehrman's own published story. Checked against NOTES. The one first-person line ("and I think they do") is a judgment, not biography.
 - Contested second-order questions: none asserted. The essay states inerrancy as what "many evangelical churches confess" and leaves the Mark 2:26 solution open.
+
+## Still open after the closing run
+
+None of these is a quotation. Each needs a search or a source this run could not reach (the shared search budget ran out after 13 searches, and the public-domain books end before the finds of 1935 to 1993).
+
+1. Many readers closed *Misquoting Jesus* convinced the Bible couldn't be trusted (characterization).
+2. What *The Orthodox Corruption of Scripture* (1993) argued.
+3. The ninth-century date of the Tacitus manuscript.
+4. P52: second-century date, Manchester, and the argument for a later date.
+5. Larger papyri from the late second and third centuries.
+6. The early papyri and the fourth-century codices carry substantially the same text.
+7. The Leningrad Codex, 1008, oldest complete Hebrew Bible.
+8. Qumran: 1947, Bedouin shepherds and archaeologists.
+9. The complete Isaiah scroll, second century BC, with Isaiah 53.
+10. The Isaiah scroll's differences are mostly spelling and grammar.
+11. Jeremiah circulated in more than one form.
+12. Metzger was an ordained Presbyterian minister.
+13. Paul's letters were read as Scripture before about 180 (rests on the date of 2 Peter).
+14. The Pilate inscription: 1961, limestone, reused in a theater, "prefect of Judea."
+15. The Delphi inscription and Gallio's term around AD 51 to 52.
+16. Tel Dan: 1993, ninth century BC, Aramaic, the reading "House of David."
+17. Exodus and conquest archaeology argued; believing scholars disagree.
+18. 1 Corinthians written in the mid-50s.
+19. Ancient biographers compressed events and summarized speeches, and the Gospel writers wrote within those habits.
+20. Investigators grow suspicious when witnesses agree too neatly (added in this run).
+21. The Chicago Statement was drafted by scholars who knew these passages well (characterization).
+22. Many evangelical churches confess that Scripture is without error.
+23. The two on the road to Emmaus had known the Scriptures all their lives (the writer's reading).
