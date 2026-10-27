@@ -1,0 +1,918 @@
+From c7106724d7dd10ca465cd0d7ab257f8148924665 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 26 Oct 2026 23:13:58 +0000
+Subject: [PATCH 1/2] Advent ready (U13): the calendar in order, honest about
+ its dates, and findable from Home
+
+James kept the December 1 to 25 family Advent calendar (2026-10-26) and
+asked for it fixed: wording, order, findable from home. No new writing.
+
+- Order: the road to Bethlehem (Luke 2:1-5) now comes on December 20,
+  before the birth, the shepherds, Mary, and Simeon; it had come on
+  December 24, after them. Every day's text is unchanged; only its place
+  and label moved.
+- Wording: the booklet's cover says Advent begins on the fourth Sunday
+  before Christmas (November 27 to December 3) and that the booklet is a
+  December 1 to Christmas calendar; the Advent tab names this year's
+  Advent Sunday; the "How to Keep Advent" how-to lit its first candle on
+  "the first Sunday of December" (December 6 this year) and now says
+  "the first Sunday of Advent".
+- Findable: from the Sunday a week before Advent Sunday (November 22 in
+  2026) through Christmas Day, one line on Home and a card on /family,
+  read from the generated year map and the reader's clock, never the
+  network. Both link to /family/devotions?season=advent&day=N, which
+  opens the Advent tab at tonight's day and marks it.
+- Tests: the window, the days, and the copy for every year on the map;
+  Luke's story read in order through Christmas Eve; Home, /family, and
+  /family/devotions rendered with the clock set.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/public/family-seasonal.json            |  32 ++--
+ .../a/fam-how-to-keep-advent-as-a-family.json |   2 +-
+ client/src/components/AdventAtTheTable.tsx    | 171 ++++++++++++++++++
+ client/src/lib/familyAdvent.test.ts           | 143 +++++++++++++++
+ client/src/lib/familyAdvent.ts                |  95 ++++++++++
+ client/src/pages/Family.tsx                   |   4 +
+ client/src/pages/FamilyDevotions.tsx          |  62 ++++++-
+ client/src/pages/Home.tsx                     |   3 +
+ client/src/pages/advent-ready.test.tsx        | 132 ++++++++++++++
+ .../articles/family-discipleship-howtos.json  |   2 +-
+ scripts/lib/help-printables.mjs               |  13 +-
+ 11 files changed, 633 insertions(+), 26 deletions(-)
+ create mode 100644 client/src/components/AdventAtTheTable.tsx
+ create mode 100644 client/src/lib/familyAdvent.test.ts
+ create mode 100644 client/src/lib/familyAdvent.ts
+ create mode 100644 client/src/pages/advent-ready.test.tsx
+
+diff --git a/client/public/family-seasonal.json b/client/public/family-seasonal.json
+index c2f1207a..952f0518 100644
+--- a/client/public/family-seasonal.json
++++ b/client/public/family-seasonal.json
+@@ -193,6 +193,16 @@
+     {
+       "day": 20,
+       "label": "December 20",
++      "title": "The Night Before",
++      "passage": "Luke 2:1-5",
++      "passageText": "In those days a decree went out that all the world should be counted, and Joseph went up from Nazareth to Bethlehem with Mary, who was expecting a child.",
++      "reflection": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes. They had no idea they were walking straight into the center of the whole story. Most world changing things do not feel grand while they are happening. They feel like a long, ordinary, tiring day. Tonight we wait the way they waited, on the edge of something we cannot fully see yet.",
++      "question": "What are you most looking forward to about tomorrow?",
++      "prayer": "God, as we wait tonight, fill our hearts with quiet hope."
++    },
++    {
++      "day": 21,
++      "label": "December 21",
+       "title": "No Room",
+       "passage": "Luke 2:6-7",
+       "passageText": "While they were in Bethlehem the time came for the baby to be born, and Mary wrapped him in cloths and laid him in a manger, because there was no room for them in the inn.",
+@@ -201,8 +211,8 @@
+       "prayer": "Jesus, thank you for making room for us when the world would not."
+     },
+     {
+-      "day": 21,
+-      "label": "December 21",
++      "day": 22,
++      "label": "December 22",
+       "title": "Good News for Shepherds",
+       "passage": "Luke 2:10-11",
+       "passageText": "The angel told the shepherds not to be afraid, because he brought good news of great joy for all people, that a Savior had been born in the town of David.",
+@@ -211,8 +221,8 @@
+       "prayer": "God, thank you for bringing good news to ordinary people like us."
+     },
+     {
+-      "day": 22,
+-      "label": "December 22",
++      "day": 23,
++      "label": "December 23",
+       "title": "Mary Treasured It",
+       "passage": "Luke 2:19",
+       "passageText": "Mary treasured all these things and pondered them in her heart.",
+@@ -221,8 +231,8 @@
+       "prayer": "God, help us slow down and treasure the good things you give us."
+     },
+     {
+-      "day": 23,
+-      "label": "December 23",
++      "day": 24,
++      "label": "December 24",
+       "title": "A Light to Everyone",
+       "passage": "Luke 2:30-32",
+       "passageText": "Old Simeon held the baby and said his eyes had seen God's salvation, a light to the nations and the glory of God's people Israel.",
+@@ -230,16 +240,6 @@
+       "question": "What is something you would be willing to wait your whole life for?",
+       "prayer": "God, thank you for keeping every promise you ever made."
+     },
+-    {
+-      "day": 24,
+-      "label": "December 24",
+-      "title": "The Night Before",
+-      "passage": "Luke 2:1-5",
+-      "passageText": "In those days a decree went out that all the world should be counted, and Joseph went up from Nazareth to Bethlehem with Mary, who was expecting a child.",
+-      "reflection": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes. They had no idea they were walking straight into the center of the whole story. Most world changing things do not feel grand while they are happening. They feel like a long, ordinary, tiring day. Tonight we wait the way they waited, on the edge of something we cannot fully see yet.",
+-      "question": "What are you most looking forward to about tomorrow?",
+-      "prayer": "God, as we wait tonight, fill our hearts with quiet hope."
+-    },
+     {
+       "day": 25,
+       "label": "December 25",
+diff --git a/client/public/howtos/a/fam-how-to-keep-advent-as-a-family.json b/client/public/howtos/a/fam-how-to-keep-advent-as-a-family.json
+index faea688d..6ee767f4 100644
+--- a/client/public/howtos/a/fam-how-to-keep-advent-as-a-family.json
++++ b/client/public/howtos/a/fam-how-to-keep-advent-as-a-family.json
+@@ -4,5 +4,5 @@
+   "excerpt": "Advent is not a countdown to presents. It is four weeks of teaching your children to wait in the dark for a light that is coming, which is the whole shape of the Christian life.",
+   "topic": "family",
+   "readTime": "6 min read",
+-  "body": "December arrives and the culture has one instruction for your family: consume, and hurry while you do it. The lights go up, the lists go out, and by the time the actual day arrives, your children are exhausted by a holiday they were promised would be magic. There is an older way, and it runs in the opposite direction.\n\nAdvent is the church's long practice of waiting. The word means coming, and the four weeks before Christmas were set apart not to celebrate early but to wait well, to feel the ache of a world that is not yet right and a King who has not yet come. It is the one season that teaches children something the rest of the year cannot. How to want the right thing, and how to wait for it.\n\n## Why waiting is the lesson\n\nWe have built a world with no waiting in it. Every want is answered before it has time to deepen. A child raised on instant everything does not know how to long for anything, and a person who cannot long cannot hope. Hope is desire stretched across time. Advent is training in hope.\n\nThe whole of Israel's story was a waiting. Centuries of prophets promising a deliverer who did not come, generations living and dying in the in-between, the long silence between Malachi and Matthew. When Jesus finally came, he came to people who had almost stopped expecting him. Advent puts your family inside that waiting on purpose, so that Christmas lands not as a scheduled event but as an answer to a longing you actually felt.\n\n## A simple Advent practice\n\nGet a wreath with four candles, or just four candles in a row. One for each Sunday of December. The point is the growing light. You light one the first week, two the second, and so on, so that the room gets brighter as the day draws near. Children feel this in their bodies before they understand it in their heads. The dark is real, and the light is winning.\n\nEach evening, or each Sunday if every evening is too much, light the candles and read a short passage. Walk the prophecies of the coming King. Isaiah's child who is born to us. Micah's ruler from little Bethlehem. The angel's word to Mary. Read them in order across the weeks so the story builds toward the manger.\n\nThen say one sentence and pray. \"We are waiting for Jesus, like Israel waited, and he always comes.\" Keep it short. The candles do most of the teaching.\n\n## Resist the urge to rush to Christmas\n\nThe hardest part of Advent is not doing it. It is not skipping to the end. Everything around you is already singing about the birth, already opened, already finished. Advent asks your family to stay in the waiting a little longer than is comfortable, to let the longing build before the relief comes.\n\nThis is countercultural and it will feel strange, and your children may complain that other families are further along. Let them. You are teaching them that the best things are worth waiting for, and that the waiting itself is part of the gift. A child who learns this in December has learned something that will steady them in every dark season of their life, when the light is promised but not yet visible.\n\nFamilies rush Advent. They light all the candles early because the waiting feels pointless and the kids are impatient. It is a mistake, and most of us know it even as we make it. The waiting is the point we are throwing away.\n\n## Let the longing be honest\n\nAdvent is allowed to be heavy. It names a world that is broken and a rescue that is not finished. If your family has known loss, Advent does not paper over it. It says the King is coming to set all of it right, and he has not finished yet, and we wait. Children can hold this. They live closer to longing than adults do. Give them words for it.\n\n## This week\n\nBefore the first Sunday of December, set four candles where your family eats. On that Sunday, light one, read Isaiah 9, and say a sentence about waiting for the King. Each week add a candle and read the next prophecy. Hold the line. Do not light them all early. Let the room grow brighter as Christmas approaches, and let your children feel, in their own small bodies, the ache of waiting for a light that is surely coming.\n\nThen on Christmas morning, light them all. They will understand, without being told, what the brightness means."
++  "body": "December arrives and the culture has one instruction for your family: consume, and hurry while you do it. The lights go up, the lists go out, and by the time the actual day arrives, your children are exhausted by a holiday they were promised would be magic. There is an older way, and it runs in the opposite direction.\n\nAdvent is the church's long practice of waiting. The word means coming, and the four weeks before Christmas were set apart not to celebrate early but to wait well, to feel the ache of a world that is not yet right and a King who has not yet come. It is the one season that teaches children something the rest of the year cannot. How to want the right thing, and how to wait for it.\n\n## Why waiting is the lesson\n\nWe have built a world with no waiting in it. Every want is answered before it has time to deepen. A child raised on instant everything does not know how to long for anything, and a person who cannot long cannot hope. Hope is desire stretched across time. Advent is training in hope.\n\nThe whole of Israel's story was a waiting. Centuries of prophets promising a deliverer who did not come, generations living and dying in the in-between, the long silence between Malachi and Matthew. When Jesus finally came, he came to people who had almost stopped expecting him. Advent puts your family inside that waiting on purpose, so that Christmas lands not as a scheduled event but as an answer to a longing you actually felt.\n\n## A simple Advent practice\n\nGet a wreath with four candles, or just four candles in a row. One for each Sunday of Advent. The point is the growing light. You light one the first week, two the second, and so on, so that the room gets brighter as the day draws near. Children feel this in their bodies before they understand it in their heads. The dark is real, and the light is winning.\n\nEach evening, or each Sunday if every evening is too much, light the candles and read a short passage. Walk the prophecies of the coming King. Isaiah's child who is born to us. Micah's ruler from little Bethlehem. The angel's word to Mary. Read them in order across the weeks so the story builds toward the manger.\n\nThen say one sentence and pray. \"We are waiting for Jesus, like Israel waited, and he always comes.\" Keep it short. The candles do most of the teaching.\n\n## Resist the urge to rush to Christmas\n\nThe hardest part of Advent is not doing it. It is not skipping to the end. Everything around you is already singing about the birth, already opened, already finished. Advent asks your family to stay in the waiting a little longer than is comfortable, to let the longing build before the relief comes.\n\nThis is countercultural and it will feel strange, and your children may complain that other families are further along. Let them. You are teaching them that the best things are worth waiting for, and that the waiting itself is part of the gift. A child who learns this in December has learned something that will steady them in every dark season of their life, when the light is promised but not yet visible.\n\nFamilies rush Advent. They light all the candles early because the waiting feels pointless and the kids are impatient. It is a mistake, and most of us know it even as we make it. The waiting is the point we are throwing away.\n\n## Let the longing be honest\n\nAdvent is allowed to be heavy. It names a world that is broken and a rescue that is not finished. If your family has known loss, Advent does not paper over it. It says the King is coming to set all of it right, and he has not finished yet, and we wait. Children can hold this. They live closer to longing than adults do. Give them words for it.\n\n## This week\n\nBefore the first Sunday of Advent, set four candles where your family eats. On that Sunday, light one, read Isaiah 9, and say a sentence about waiting for the King. Each week add a candle and read the next prophecy. Hold the line. Do not light them all early. Let the room grow brighter as Christmas approaches, and let your children feel, in their own small bodies, the ache of waiting for a light that is surely coming.\n\nThen on Christmas morning, light them all. They will understand, without being told, what the brightness means."
+ }
+\ No newline at end of file
+diff --git a/client/src/components/AdventAtTheTable.tsx b/client/src/components/AdventAtTheTable.tsx
+new file mode 100644
+index 00000000..2850a954
+--- /dev/null
++++ b/client/src/components/AdventAtTheTable.tsx
+@@ -0,0 +1,171 @@
++/**
++ * AdventAtTheTable: the family Advent calendar, put in front of a household
++ * from the Sunday a week before Advent Sunday through Christmas Day.
++ *
++ * Two shapes: a quiet line for Home (`variant="line"`) and a card for
++ * /family (`variant="card"`). Outside that window both render nothing.
++ *
++ * The date comes from the reader's own clock on the client's first render
++ * (lib/familyYear.ts localISODate) and the year map, never the network. The
++ * app mounts with createRoot and the prerendered HTML never contains this,
++ * so reading the clock here is already after mount and shifts nothing.
++ *
++ * The copy keeps Advent and the calendar apart: Advent begins on Advent
++ * Sunday; the calendar runs December 1 to 25 (lib/familyAdvent.ts).
++ */
++import { useState } from "react";
++import { Link } from "wouter";
++import { ArrowRight } from "lucide-react";
++
++import { localISODate } from "@/lib/familyYear";
++import { addDaysISO, adventHref, adventTonight, longDate, type AdventTonight } from "@/lib/familyAdvent";
++
++const BOOKLET = {
++  letter: "/downloads/seasonal/advent-family-letter.pdf",
++  a4: "/downloads/seasonal/advent-family-a4.pdf",
++};
++
++export interface AdventCopy {
++  /** The line for Home: lead text, then a link, then a full stop. */
++  line: { lead: string; link: string };
++  /** The card for /family. */
++  heading: string;
++  text: string;
++  /** Where the line and the card's first link go. */
++  href: string;
++  /** The card's first link. */
++  action: string;
++  /** True on a day of the calendar. */
++  onDay: boolean;
++}
++
++/** The words for a date in the window. Pure, so it is tested without rendering. */
++export function adventCopy(a: AdventTonight): AdventCopy {
++  const sunday = longDate(a.adventSunday);
++  const begins = `Advent begins ${sunday}.`;
++  if (a.day) {
++    const date = addDaysISO(a.calendarStart, a.day - 1);
++    const dayName = longDate(date, { weekday: false });
++    const christmas = date === a.calendarEnd;
++    return {
++      line: {
++        lead: `${a.beforeAdvent ? `${begins} ` : ""}${christmas ? "Christmas Day" : "Tonight"} at the table:`,
++        link: `${dayName} in the family Advent calendar`,
++      },
++      heading: christmas ? "Christmas Day" : `Tonight, ${dayName}`,
++      text: `${a.beforeAdvent ? `${begins} ` : ""}The reading for ${dayName} in the family Advent calendar, with a question to talk about and a prayer.`,
++      href: adventHref(a.day),
++      action: "Open the reading",
++      onDay: true,
++    };
++  }
++  const startDay = longDate(a.calendarStart, { weekday: false });
++  if (a.beforeAdvent) {
++    return {
++      line: { lead: `${begins} The family Advent calendar runs from ${startDay} to Christmas:`, link: "see the readings" },
++      heading: `Advent begins ${sunday}`,
++      text: `The family Advent calendar has a short reading for each day from ${startDay} to Christmas, with a question to talk about and a prayer.`,
++      href: adventHref(),
++      action: "See the readings",
++      onDay: false,
++    };
++  }
++  const start = longDate(a.calendarStart);
++  return {
++    line: { lead: `Advent has begun. The family Advent calendar starts ${start}:`, link: "see the readings" },
++    heading: "Advent has begun",
++    text: `The family Advent calendar starts ${start}, with a short reading for each day to Christmas, a question to talk about, and a prayer.`,
++    href: adventHref(),
++    action: "See the readings",
++    onDay: false,
++  };
++}
++
++const quietLink = {
++  fontFamily: "var(--U)",
++  fontWeight: 500,
++  color: "var(--ink)",
++  textDecoration: "none",
++  borderBottom: "1px solid var(--mustard)",
++  paddingBottom: "2px",
++} as const;
++
++const cardLink = {
++  fontFamily: "var(--U)",
++  fontSize: "14px",
++  fontWeight: 600,
++  color: "var(--mustard-text)",
++  display: "inline-flex",
++  alignItems: "center",
++  gap: "6px",
++  minHeight: "44px",
++} as const;
++
++export default function AdventAtTheTable({ variant }: { variant: "line" | "card" }) {
++  const [today] = useState(() => localISODate());
++  const advent = adventTonight(today);
++  if (!advent) return null;
++  const copy = adventCopy(advent);
++
++  if (variant === "line") {
++    return (
++      <p
++        data-testid="advent-at-the-table"
++        style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-4)" }}
++      >
++        {copy.line.lead}{" "}
++        <Link href={copy.href} style={{ ...quietLink, fontSize: "16px" }}>
++          {copy.line.link}
++        </Link>
++        .
++      </p>
++    );
++  }
++
++  return (
++    <section
++      data-testid="advent-at-the-table"
++      aria-labelledby="advent-at-the-table-title"
++      style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}
++    >
++      <div
++        style={{
++          maxWidth: "var(--w-default)",
++          margin: "0 auto",
++          background: "var(--card)",
++          border: "1px solid var(--border)",
++          borderTop: "2px solid var(--mustard)",
++          borderRadius: "var(--radius-sm)",
++          padding: "var(--s-5) var(--s-4)",
++        }}
++      >
++        <div className="eyebrow" style={{ marginBottom: "10px" }}>Advent at the table</div>
++        <h2
++          id="advent-at-the-table-title"
++          style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 10px" }}
++        >
++          {copy.heading}
++        </h2>
++        <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", margin: "0 0 8px" }}>
++          {copy.text}
++        </p>
++        <div style={{ display: "flex", flexWrap: "wrap", columnGap: "24px", alignItems: "center" }}>
++          <Link href={copy.href} style={cardLink}>
++            {copy.action} <ArrowRight size={14} aria-hidden />
++          </Link>
++          {copy.onDay && (
++            <Link href={adventHref()} style={cardLink}>
++              All the readings
++            </Link>
++          )}
++          <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px" }}>
++            Print the booklet:
++            <a href={BOOKLET.letter} style={cardLink}>US Letter</a>
++            <span aria-hidden="true">·</span>
++            <a href={BOOKLET.a4} style={cardLink}>A4</a>
++          </span>
++        </div>
++      </div>
++    </section>
++  );
++}
+diff --git a/client/src/lib/familyAdvent.test.ts b/client/src/lib/familyAdvent.test.ts
+new file mode 100644
+index 00000000..5e15d7a1
+--- /dev/null
++++ b/client/src/lib/familyAdvent.test.ts
+@@ -0,0 +1,143 @@
++/**
++ * The family Advent calendar on the year map (U13): when Home and /family
++ * show it, which day tonight is, that no copy says Advent begins December 1
++ * unless it does that year, and that the calendar tells Luke's story in order.
++ */
++import { describe, it, expect } from "vitest";
++import fs from "node:fs";
++import path from "node:path";
++
++import { FAMILY_SEASONS, FAMILY_SETS } from "./familyYear.generated";
++import { ADVENT_LEAD_DAYS, addDaysISO, adventHref, adventSeasonFor, adventTonight, longDate } from "./familyAdvent";
++import { adventCopy } from "@/components/AdventAtTheTable";
++
++const seasonal = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../public/family-seasonal.json"), "utf8")) as {
++  advent: { day: number; label: string; title: string; passage: string }[];
++};
++
++describe("adventTonight", () => {
++  it("shows the calendar from November 22, 2026, a week before Advent Sunday, through Christmas", () => {
++    expect(adventTonight("2026-11-21")).toBeNull();
++    expect(adventTonight("2026-11-22")).toEqual({
++      adventSunday: "2026-11-29",
++      calendarStart: "2026-12-01",
++      calendarEnd: "2026-12-25",
++      day: null,
++      beforeAdvent: true,
++    });
++    expect(adventTonight("2026-11-29")).toMatchObject({ day: null, beforeAdvent: false });
++    expect(adventTonight("2026-11-30")).toMatchObject({ day: null, beforeAdvent: false });
++    expect(adventTonight("2026-12-01")).toMatchObject({ day: 1, beforeAdvent: false });
++    expect(adventTonight("2026-12-24")).toMatchObject({ day: 24 });
++    expect(adventTonight("2026-12-25")).toMatchObject({ day: 25 });
++    expect(adventTonight("2026-12-26")).toBeNull();
++    expect(adventTonight("2026-10-26")).toBeNull();
++  });
++
++  it("follows Advent Sunday as it moves, even when the calendar starts first", () => {
++    expect(adventTonight("2027-11-20")).toBeNull();
++    expect(adventTonight("2027-11-21")).toMatchObject({ adventSunday: "2027-11-28", day: null, beforeAdvent: true });
++    // 2028: Advent Sunday is December 3, after the calendar's first two days.
++    expect(adventTonight("2028-11-26")).toMatchObject({ adventSunday: "2028-12-03", day: null, beforeAdvent: true });
++    expect(adventTonight("2028-12-01")).toMatchObject({ day: 1, beforeAdvent: true });
++    expect(adventTonight("2028-12-03")).toMatchObject({ day: 3, beforeAdvent: false });
++  });
++
++  it("answers null off the map or for a date that is not one", () => {
++    expect(adventTonight("2099-12-01")).toBeNull();
++    expect(adventTonight("2026-12-32")).toBeNull();
++    expect(adventTonight("tonight")).toBeNull();
++  });
++
++  it("opens every year's window on the Sunday a week before Advent Sunday, for a December 1 to 25 calendar", () => {
++    const calendars = FAMILY_SETS.filter((s) => s.set === "advent");
++    expect(calendars.length).toBeGreaterThanOrEqual(5);
++    for (const c of calendars) {
++      const year = c.end.slice(0, 4);
++      expect(c).toEqual({ set: "advent", start: `${year}-12-01`, end: `${year}-12-25` });
++      const sunday = FAMILY_SEASONS.find((s) => s.key === "advent" && s.end === `${year}-12-24`)?.start;
++      expect(sunday, year).toBeTruthy();
++      const opens = addDaysISO(sunday!, -ADVENT_LEAD_DAYS);
++      expect(new Date(`${opens}T12:00:00Z`).getUTCDay(), opens).toBe(0);
++      if (adventSeasonFor(opens)) {
++        expect(adventTonight(addDaysISO(opens, -1)), opens).toBeNull();
++        expect(adventTonight(opens)?.adventSunday, opens).toBe(sunday);
++      }
++      expect(adventTonight(c.end)?.day, c.end).toBe(25);
++    }
++  });
++});
++
++describe("adventSeasonFor", () => {
++  it("keeps this year's Advent through Christmas Day, then turns to next year's", () => {
++    expect(adventSeasonFor("2026-12-25")?.adventSunday).toBe("2026-11-29");
++    expect(adventSeasonFor("2026-12-26")?.adventSunday).toBe("2027-11-28");
++    expect(adventSeasonFor("2026-10-26")?.adventSunday).toBe("2026-11-29");
++  });
++});
++
++describe("the words", () => {
++  it("formats dates in full", () => {
++    expect(longDate("2026-11-29")).toBe("Sunday, November 29");
++    expect(longDate("2026-12-01", { weekday: false })).toBe("December 1");
++    expect(longDate("2026-11-29", { weekday: false, year: true })).toBe("November 29, 2026");
++  });
++
++  it("links to the Advent tab, and to a day of it", () => {
++    expect(adventHref()).toBe("/family/devotions?season=advent");
++    expect(adventHref(6)).toBe("/family/devotions?season=advent&day=6");
++  });
++
++  it("says what tonight is in each part of the window", () => {
++    const before = adventCopy(adventTonight("2026-11-22")!);
++    expect(before.line.lead).toBe("Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas:");
++    expect(before.heading).toBe("Advent begins Sunday, November 29");
++    const begun = adventCopy(adventTonight("2026-11-30")!);
++    expect(begun.line.lead).toBe("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
++    const sixth = adventCopy(adventTonight("2026-12-06")!);
++    expect(sixth.line).toEqual({ lead: "Tonight at the table:", link: "December 6 in the family Advent calendar" });
++    expect(sixth.href).toBe("/family/devotions?season=advent&day=6");
++    expect(adventCopy(adventTonight("2026-12-25")!).heading).toBe("Christmas Day");
++    expect(adventCopy(adventTonight("2028-12-01")!).line.lead).toBe("Advent begins Sunday, December 3. Tonight at the table:");
++  });
++
++  it("never says Advent begins on any day but that year's Advent Sunday", () => {
++    for (const c of FAMILY_SETS.filter((s) => s.set === "advent")) {
++      for (let d = addDaysISO(c.start, -14); d <= c.end; d = addDaysISO(d, 1)) {
++        const a = adventTonight(d);
++        if (!a) continue;
++        const copy = adventCopy(a);
++        const said = [copy.line.lead, copy.line.link, copy.heading, copy.text].join(" ");
++        for (const m of said.matchAll(/Advent begins ([A-Z][a-z]+, [A-Z][a-z]+ \d+)/g)) {
++          expect(m[1], d).toBe(longDate(a.adventSunday));
++        }
++        expect(said, d).not.toMatch(/—/);
++      }
++    }
++  });
++});
++
++describe("the Advent readings in family-seasonal.json", () => {
++  it("are twenty-five days, numbered and labeled December 1 to 25", () => {
++    expect(seasonal.advent.map((d) => d.day)).toEqual(Array.from({ length: 25 }, (_, i) => i + 1));
++    expect(seasonal.advent.map((d) => d.label)).toEqual(Array.from({ length: 25 }, (_, i) => `December ${i + 1}`));
++  });
++
++  it("tell Luke's birth story in order through Christmas Eve: the road to Bethlehem before the birth", () => {
++    const at = (passage: string) => {
++      const m = /^Luke ([12]):(\d+)/.exec(passage);
++      return m ? Number(m[1]) * 1000 + Number(m[2]) : null;
++    };
++    const luke = seasonal.advent
++      .filter((d) => d.day <= 24)
++      .map((d) => ({ day: d.day, at: at(d.passage), passage: d.passage }))
++      .filter((d): d is { day: number; at: number; passage: string } => d.at !== null);
++    expect(luke.length).toBeGreaterThan(5);
++    for (let i = 1; i < luke.length; i++) {
++      expect(luke[i].at, `day ${luke[i].day} (${luke[i].passage}) after day ${luke[i - 1].day} (${luke[i - 1].passage})`).toBeGreaterThan(luke[i - 1].at);
++    }
++    const journey = seasonal.advent.find((d) => d.passage === "Luke 2:1-5");
++    const birth = seasonal.advent.find((d) => d.passage === "Luke 2:6-7");
++    expect(journey!.day).toBeLessThan(birth!.day);
++  });
++});
+diff --git a/client/src/lib/familyAdvent.ts b/client/src/lib/familyAdvent.ts
+new file mode 100644
+index 00000000..7fd5059e
+--- /dev/null
++++ b/client/src/lib/familyAdvent.ts
+@@ -0,0 +1,95 @@
++/**
++ * The family Advent calendar on the year map: when to put it in front of a
++ * household, and which of its days tonight is.
++ *
++ * The set in family-seasonal.json is a December 1 to 25 calendar (James,
++ * 2026-10-26), while Advent itself begins on Advent Sunday, the fourth
++ * Sunday before Christmas (November 27 to December 3). So the two dates are
++ * kept apart here and in the copy: nothing says Advent begins December 1.
++ *
++ * Home and /family show the calendar from the Sunday a week before Advent
++ * Sunday (November 22 in 2026) through its last day, December 25. Everything
++ * is read from familyYear.generated.ts, so it needs no network.
++ */
++import { FAMILY_SEASONS, FAMILY_SETS } from "./familyYear.generated";
++import { familySetDayOn, onFamilyMap } from "./familyYear";
++
++/** How many days before Advent Sunday the calendar is surfaced. */
++export const ADVENT_LEAD_DAYS = 7;
++
++export interface AdventSeason {
++  /** Advent Sunday, the first day of Advent. */
++  adventSunday: string;
++  /** The calendar's first and last days (December 1 and December 25). */
++  calendarStart: string;
++  calendarEnd: string;
++}
++
++export interface AdventTonight extends AdventSeason {
++  /** Today's day of the calendar (1 is December 1), or null before it starts. */
++  day: number | null;
++  /** True before Advent Sunday. */
++  beforeAdvent: boolean;
++}
++
++const ISO = /^(\d{4})-(\d{2})-(\d{2})$/;
++
++function utc(iso: string): Date | null {
++  const m = ISO.exec(iso);
++  if (!m) return null;
++  const d = new Date(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3])));
++  return d.toISOString().slice(0, 10) === iso ? d : null;
++}
++
++/** The calendar date `days` after (or before) a YYYY-MM-DD date. */
++export function addDaysISO(iso: string, days: number): string {
++  const d = utc(iso);
++  if (!d) return iso;
++  d.setUTCDate(d.getUTCDate() + days);
++  return d.toISOString().slice(0, 10);
++}
++
++/**
++ * The Advent whose calendar has not yet ended on this date: this year's
++ * through December 25, then next year's. Null off the map.
++ */
++export function adventSeasonFor(date: string): AdventSeason | null {
++  if (!onFamilyMap(date)) return null;
++  const calendar = FAMILY_SETS.find((s) => s.set === "advent" && s.end >= date);
++  if (!calendar) return null;
++  const year = calendar.end.slice(0, 4);
++  const season = FAMILY_SEASONS.find((s) => s.key === "advent" && s.end.slice(0, 4) === year);
++  if (!season) return null;
++  return { adventSunday: season.start, calendarStart: calendar.start, calendarEnd: calendar.end };
++}
++
++/** The calendar to put in front of a household on this date, or null when it is not the time. */
++export function adventTonight(date: string): AdventTonight | null {
++  const season = adventSeasonFor(date);
++  if (!season) return null;
++  if (date < addDaysISO(season.adventSunday, -ADVENT_LEAD_DAYS)) return null;
++  const today = familySetDayOn(date);
++  return {
++    ...season,
++    day: today?.set === "advent" ? today.day : null,
++    beforeAdvent: date < season.adventSunday,
++  };
++}
++
++/** "Sunday, November 29" (with { year: true }, "Sunday, November 29, 2026"). */
++export function longDate(iso: string, opts: { weekday?: boolean; year?: boolean } = {}): string {
++  const d = utc(iso);
++  if (!d) return iso;
++  return d.toLocaleDateString("en-US", {
++    timeZone: "UTC",
++    month: "long",
++    day: "numeric",
++    ...(opts.weekday === false ? {} : { weekday: "long" }),
++    ...(opts.year ? { year: "numeric" } : {}),
++  });
++}
++
++/** Where a day of the calendar opens: the Advent tab of /family/devotions, at that day. */
++export function adventHref(day?: number | null): string {
++  return day ? `/family/devotions?season=advent&day=${day}` : "/family/devotions?season=advent";
++}
+diff --git a/client/src/pages/Family.tsx b/client/src/pages/Family.tsx
+index a29af838..3715c56f 100644
+--- a/client/src/pages/Family.tsx
++++ b/client/src/pages/Family.tsx
+@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
+ import { Link } from "wouter";
+ import { ArrowRight, ChevronDown } from "lucide-react";
+ import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
++import AdventAtTheTable from "@/components/AdventAtTheTable";
+ import Layout from "@/components/Layout";
+ import { SEOMeta } from "@/components/SEOMeta";
+ import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
+@@ -94,6 +95,9 @@ export default function Family() {
+         </div>
+       </section>
+ 
++      {/* ADVENT: from the Sunday before Advent Sunday to Christmas only. */}
++      <AdventAtTheTable variant="card" />
++
+       {/* CATECHISM — featured */}
+       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
+         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+diff --git a/client/src/pages/FamilyDevotions.tsx b/client/src/pages/FamilyDevotions.tsx
+index aeadec1d..8a560e1e 100644
+--- a/client/src/pages/FamilyDevotions.tsx
++++ b/client/src/pages/FamilyDevotions.tsx
+@@ -6,8 +6,10 @@
+  * /family-seasonal.json (thanksgiving, advent, holyWeek).
+  * A seasonal tab appears only once its pack has days in the data.
+  * scripts/validate-family.mjs checks the counts this page states.
++ * ?season=advent (or thanksgiving, holy-week) opens that tab, and &day=N
++ * opens that day, so Home and /family can link straight to tonight.
+  */
+-import { useEffect, useMemo, useState } from "react";
++import { useEffect, useMemo, useRef, useState } from "react";
+ import { Link } from "wouter";
+ import { ChevronDown } from "lucide-react";
+ import Layout from "@/components/Layout";
+@@ -16,6 +18,8 @@ import { GeneratedCover } from "@/components/GeneratedCover";
+ import ScriptureNote from "@/components/ScriptureNote";
+ import LoadFailed from "@/components/LoadFailed";
+ import { fetchJson } from "@/lib/fetch-json";
++import { familySetDayOn, localISODate } from "@/lib/familyYear";
++import { adventSeasonFor, longDate } from "@/lib/familyAdvent";
+ 
+ interface Weekly {
+   id: string; title: string; theme: string; passage: string; passageText: string;
+@@ -45,6 +49,29 @@ function isSeasonalPacks(x: unknown): x is Partial<Record<Season, Daily[]>> {
+ 
+ const NO_SEASONS: Record<Season, Daily[]> = { thanksgiving: [], advent: [], holyWeek: [] };
+ 
++/** The tab and day named in ?season= and &day=, when they are ones this page has. */
++function fromUrl(): { tab: Tab; open: string | null } {
++  try {
++    const p = new URLSearchParams(window.location.search);
++    const season = (Object.keys(SEASONS) as Season[]).find((s) => SEASONS[s].file === p.get("season"));
++    if (!season) return { tab: "weekly", open: null };
++    const day = Number(p.get("day"));
++    return { tab: season, open: Number.isInteger(day) && day > 0 ? `${season}-${day}` : null };
++  } catch {
++    return { tab: "weekly", open: null };
++  }
++}
++
++/** Keep the open tab in the address, so "the Advent readings" can be shared. */
++function writeTab(tab: Tab) {
++  try {
++    const qs = tab === "weekly" ? "" : `?season=${SEASONS[tab].file}`;
++    window.history.replaceState(window.history.state, "", `${window.location.pathname}${qs}`);
++  } catch {
++    /* the address stays as it was */
++  }
++}
++
+ export default function FamilyDevotions() {
+   // Loading, failed, and loaded are distinct states keyed to a retry nonce
+   // (the HowTos pattern): a failed fetch offers a retry instead of
+@@ -53,8 +80,15 @@ export default function FamilyDevotions() {
+   const [failedAt, setFailedAt] = useState<number | null>(null);
+   const [nonce, setNonce] = useState(0);
+   const failed = failedAt === nonce;
+-  const [tab, setTab] = useState<Tab>("weekly");
+-  const [open, setOpen] = useState<string | null>(null);
++  const [initial] = useState(fromUrl);
++  const [tab, setTab] = useState<Tab>(initial.tab);
++  const [open, setOpen] = useState<string | null>(initial.open);
++  // Tonight's day of a seasonal set, from the reader's own clock and the year map.
++  const [today] = useState(() => localISODate());
++  const tonight = familySetDayOn(today);
++  const advent = adventSeasonFor(today);
++  // A day opened from a link is scrolled to once the data is in.
++  const scrolled = useRef(false);
+ 
+   useEffect(() => {
+     let live = true;
+@@ -70,6 +104,12 @@ export default function FamilyDevotions() {
+     return () => { live = false; };
+   }, [nonce]);
+ 
++  useEffect(() => {
++    if (!loaded || scrolled.current || !initial.open) return;
++    scrolled.current = true;
++    document.getElementById(initial.open)?.scrollIntoView?.({ block: "start" });
++  }, [loaded, initial.open]);
++
+   const weekly = useMemo(() => loaded?.weekly ?? [], [loaded]);
+   const seasonal = loaded?.seasonal ?? NO_SEASONS;
+ 
+@@ -80,10 +120,10 @@ export default function FamilyDevotions() {
+       .map((s) => ({ id: s as Tab, label: SEASONS[s].label, count: seasonal[s].length })),
+   ], [weekly.length, seasonal]);
+ 
+-  const Accordion = ({ id, eyebrow, title, children }: { id: string; eyebrow: string; title: string; children: React.ReactNode }) => {
++  const Accordion = ({ id, anchor, eyebrow, title, children }: { id: string; anchor?: string; eyebrow: string; title: string; children: React.ReactNode }) => {
+     const isOpen = open === id;
+     return (
+-      <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
++      <div id={anchor} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", scrollMarginTop: "var(--s-6)" }}>
+         <button type="button" onClick={() => setOpen(isOpen ? null : id)} aria-expanded={isOpen}
+           style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>
+           <span style={{ display: "flex", alignItems: "center", gap: "14px", minWidth: 0 }}>
+@@ -140,7 +180,7 @@ export default function FamilyDevotions() {
+       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
+         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexWrap: "wrap", gap: "8px" }}>
+           {tabs.map((t) => (
+-            <button key={t.id} type="button" aria-pressed={tab === t.id} onClick={() => { setTab(t.id); setOpen(null); }}
++            <button key={t.id} type="button" aria-pressed={tab === t.id} onClick={() => { setTab(t.id); setOpen(null); writeTab(t.id); }}
+               style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "10px 16px", borderRadius: "999px", cursor: "pointer",
+                 border: `1px solid ${tab === t.id ? "var(--mustard)" : "var(--border)"}`, background: tab === t.id ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
+               {t.label}{t.count ? ` · ${t.count}` : ""}
+@@ -183,6 +223,13 @@ export default function FamilyDevotions() {
+               <a href="/downloads/tools/family-cards-a4.pdf" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>A4</a>
+             </p>
+           )}
++          {/* The set is a December 1 to 25 calendar; Advent itself begins on
++              Advent Sunday. Say both, so no one reads December 1 as Advent's start. */}
++          {tab === "advent" && seasonal.advent.length > 0 && (
++            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", margin: 0, maxWidth: "68ch" }}>
++              Advent begins on the fourth Sunday before Christmas{advent ? ` (${longDate(advent.adventSunday, { weekday: false, year: true })})` : ""}. This calendar has a reading for each day from December 1 to Christmas Day.
++            </p>
++          )}
+           {tab !== "weekly" && (
+             <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 var(--s-3)" }}>
+               Print the whole {SEASONS[tab].label} booklet, one day to a page, with each passage in full from the Berean Standard Bible:{" "}
+@@ -191,7 +238,8 @@ export default function FamilyDevotions() {
+             </p>
+           )}
+           {tab !== "weekly" && (list as Daily[]).map((d) => (
+-            <Accordion key={`${tab}-${d.day}`} id={`${tab}-${d.day}`} eyebrow={d.label} title={d.title}>
++            <Accordion key={`${tab}-${d.day}`} id={`${tab}-${d.day}`} anchor={`${tab}-${d.day}`}
++              eyebrow={tonight?.set === tab && tonight.day === d.day ? `${d.label} · Tonight` : d.label} title={d.title}>
+               <Verse passage={d.passage} text={d.passageText} />
+               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "16px" }}>{d.reflection}</p>
+               <div className="eyebrow" style={{ marginBottom: "8px" }}>Talk about it</div>
+diff --git a/client/src/pages/Home.tsx b/client/src/pages/Home.tsx
+index 01ebbccb..75f2e644 100644
+--- a/client/src/pages/Home.tsx
++++ b/client/src/pages/Home.tsx
+@@ -14,6 +14,7 @@
+  */
+ import { Link } from "wouter";
+ 
++import AdventAtTheTable from "@/components/AdventAtTheTable";
+ import Layout from "@/components/Layout";
+ import { NewsletterSignup } from "@/components/NewsletterSignup";
+ import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
+@@ -123,6 +124,8 @@ export default function Home() {
+       {/* THE THREE DOORS: set like a book's contents page. */}
+       <section style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
+         <div style={wrap}>
++          {/* From the Sunday before Advent Sunday to Christmas only; empty otherwise. */}
++          <AdventAtTheTable variant="line" />
+           <h2 id="home-doors-title" className="sr-only">
+             Where to begin
+           </h2>
+diff --git a/client/src/pages/advent-ready.test.tsx b/client/src/pages/advent-ready.test.tsx
+new file mode 100644
+index 00000000..45a6da71
+--- /dev/null
++++ b/client/src/pages/advent-ready.test.tsx
+@@ -0,0 +1,132 @@
++/**
++ * Advent ready (U13), with the clock set: the family Advent calendar appears
++ * on Home and /family from November 22, 2026 (the Sunday a week before Advent
++ * Sunday) through Christmas Day and not outside it; a link from either lands
++ * on the Advent tab of /family/devotions at tonight's day; and that tab says
++ * when Advent itself begins. Rendered from the real data files.
++ */
++import { describe, it, expect, vi, afterEach } from "vitest";
++import { screen, waitFor, within, fireEvent } from "@testing-library/react";
++import fs from "node:fs";
++import path from "node:path";
++
++import { renderWithProviders, offlineFetch } from "@/test/harness";
++import Home from "./Home";
++import Family from "./Family";
++import FamilyDevotions from "./FamilyDevotions";
++
++const PUBLIC = path.resolve(__dirname, "../../public");
++const FILES = ["family-devotions.json", "family-devotions-2.json", "family-seasonal.json"];
++
++function serveFamilyFiles() {
++  const base = offlineFetch();
++  vi.stubGlobal(
++    "fetch",
++    vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
++      const name = String(input).replace(/^\//, "");
++      if (FILES.includes(name)) {
++        return new Response(fs.readFileSync(path.join(PUBLIC, name), "utf8"), { status: 200, headers: { "Content-Type": "application/json" } });
++      }
++      return base(input, init);
++    }),
++  );
++}
++
++/** Noon on a calendar day in the reader's own time zone. */
++function setToday(y: number, m: number, d: number) {
++  vi.useFakeTimers({ toFake: ["Date"] });
++  vi.setSystemTime(new Date(y, m - 1, d, 12));
++}
++
++afterEach(() => {
++  vi.useRealTimers();
++  vi.unstubAllGlobals();
++  window.history.replaceState(null, "", "/");
++});
++
++describe("Home and /family before, during, and after the window", () => {
++  for (const [y, m, d] of [[2026, 11, 21], [2026, 12, 26], [2026, 10, 26]] as const) {
++    it(`show nothing on ${y}-${m}-${d}`, () => {
++      setToday(y, m, d);
++      serveFamilyFiles();
++      const home = renderWithProviders(<Home />);
++      expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
++      home.unmount();
++      renderWithProviders(<Family />);
++      expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
++    });
++  }
++
++  it("show Advent Sunday and the calendar from November 22", () => {
++    setToday(2026, 11, 22);
++    serveFamilyFiles();
++    const home = renderWithProviders(<Home />);
++    const line = screen.getByTestId("advent-at-the-table");
++    expect(line).toHaveTextContent("Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.");
++    expect(within(line).getByRole("link", { name: "see the readings" })).toHaveAttribute("href", "/family/devotions?season=advent");
++    home.unmount();
++
++    renderWithProviders(<Family />);
++    const card = screen.getByRole("region", { name: "Advent begins Sunday, November 29" });
++    expect(card).toHaveTextContent("a short reading for each day from December 1 to Christmas");
++    expect(within(card).getByRole("link", { name: "See the readings" })).toHaveAttribute("href", "/family/devotions?season=advent");
++    expect(within(card).getByRole("link", { name: "US Letter" })).toHaveAttribute("href", "/downloads/seasonal/advent-family-letter.pdf");
++    expect(within(card).getByRole("link", { name: "A4" })).toHaveAttribute("href", "/downloads/seasonal/advent-family-a4.pdf");
++  });
++
++  it("say Advent has begun on Advent Sunday, before the calendar starts", () => {
++    setToday(2026, 11, 29);
++    renderWithProviders(<Home />);
++    expect(screen.getByTestId("advent-at-the-table")).toHaveTextContent("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
++  });
++
++  it("point at tonight's day during the calendar", () => {
++    setToday(2026, 12, 6);
++    serveFamilyFiles();
++    const home = renderWithProviders(<Home />);
++    expect(screen.getByRole("link", { name: "December 6 in the family Advent calendar" })).toHaveAttribute("href", "/family/devotions?season=advent&day=6");
++    expect(screen.getByTestId("advent-at-the-table")).toHaveTextContent(/^Tonight at the table:/);
++    home.unmount();
++
++    renderWithProviders(<Family />);
++    const card = screen.getByRole("region", { name: "Tonight, December 6" });
++    expect(within(card).getByRole("link", { name: "Open the reading" })).toHaveAttribute("href", "/family/devotions?season=advent&day=6");
++    expect(within(card).getByRole("link", { name: "All the readings" })).toHaveAttribute("href", "/family/devotions?season=advent");
++  });
++
++  it("name Christmas Day on December 25", () => {
++    setToday(2026, 12, 25);
++    renderWithProviders(<Family />);
++    expect(screen.getByRole("region", { name: "Christmas Day" })).toBeTruthy();
++  });
++});
++
++describe("/family/devotions?season=advent", () => {
++  it("opens the Advent tab at the day asked for, marks tonight, and says when Advent begins", async () => {
++    setToday(2026, 12, 20);
++    serveFamilyFiles();
++    window.history.replaceState(null, "", "/family/devotions?season=advent&day=20");
++    renderWithProviders(<FamilyDevotions />);
++    await waitFor(() => expect(screen.getByText("The Night Before")).toBeTruthy());
++    expect(screen.getByRole("button", { name: "Advent · 25" })).toHaveAttribute("aria-pressed", "true");
++    const day20 = screen.getByRole("button", { name: /December 20 · Tonight\s*The Night Before/ });
++    expect(day20).toHaveAttribute("aria-expanded", "true");
++    expect(screen.getByText(/a tired couple was walking a hard road/)).toBeTruthy();
++    expect(screen.getByText("Advent begins on the fourth Sunday before Christmas (November 29, 2026). This calendar has a reading for each day from December 1 to Christmas Day.")).toBeTruthy();
++    expect(screen.getByText(/The wording here is a paraphrase/)).toBeTruthy();
++
++    // A tab chosen by hand goes into the address, so it can be shared.
++    fireEvent.click(screen.getByRole("button", { name: /^Weekly/ }));
++    expect(window.location.search).toBe("");
++    fireEvent.click(screen.getByRole("button", { name: "Holy Week · 8" }));
++    expect(window.location.search).toBe("?season=holy-week");
++  });
++
++  it("stays on the weekly devotions without a season, or with one it does not have", async () => {
++    setToday(2026, 12, 20);
++    serveFamilyFiles();
++    window.history.replaceState(null, "", "/family/devotions?season=lent&day=3");
++    renderWithProviders(<FamilyDevotions />);
++    await waitFor(() => expect(screen.getByRole("button", { name: /^Weekly · \d+$/ })).toHaveAttribute("aria-pressed", "true"));
++  });
++});
+diff --git a/scripts/articles/family-discipleship-howtos.json b/scripts/articles/family-discipleship-howtos.json
+index 34ede6bc..f2a860b2 100644
+--- a/scripts/articles/family-discipleship-howtos.json
++++ b/scripts/articles/family-discipleship-howtos.json
+@@ -27,7 +27,7 @@
+     "title": "How to Keep Advent as a Family",
+     "slug": "fam-how-to-keep-advent-as-a-family",
+     "excerpt": "Advent is not a countdown to presents. It is four weeks of teaching your children to wait in the dark for a light that is coming, which is the whole shape of the Christian life.",
+-    "body": "December arrives and the culture has one instruction for your family: consume, and hurry while you do it. The lights go up, the lists go out, and by the time the actual day arrives, your children are exhausted by a holiday they were promised would be magic. There is an older way, and it runs in the opposite direction.\n\nAdvent is the church's long practice of waiting. The word means coming, and the four weeks before Christmas were set apart not to celebrate early but to wait well, to feel the ache of a world that is not yet right and a King who has not yet come. It is the one season that teaches children something the rest of the year cannot. How to want the right thing, and how to wait for it.\n\n## Why waiting is the lesson\n\nWe have built a world with no waiting in it. Every want is answered before it has time to deepen. A child raised on instant everything does not know how to long for anything, and a person who cannot long cannot hope. Hope is desire stretched across time. Advent is training in hope.\n\nThe whole of Israel's story was a waiting. Centuries of prophets promising a deliverer who did not come, generations living and dying in the in-between, the long silence between Malachi and Matthew. When Jesus finally came, he came to people who had almost stopped expecting him. Advent puts your family inside that waiting on purpose, so that Christmas lands not as a scheduled event but as an answer to a longing you actually felt.\n\n## A simple Advent practice\n\nGet a wreath with four candles, or just four candles in a row. One for each Sunday of December. The point is the growing light. You light one the first week, two the second, and so on, so that the room gets brighter as the day draws near. Children feel this in their bodies before they understand it in their heads. The dark is real, and the light is winning.\n\nEach evening, or each Sunday if every evening is too much, light the candles and read a short passage. Walk the prophecies of the coming King. Isaiah's child who is born to us. Micah's ruler from little Bethlehem. The angel's word to Mary. Read them in order across the weeks so the story builds toward the manger.\n\nThen say one sentence and pray. \"We are waiting for Jesus, like Israel waited, and he always comes.\" Keep it short. The candles do most of the teaching.\n\n## Resist the urge to rush to Christmas\n\nThe hardest part of Advent is not doing it. It is not skipping to the end. Everything around you is already singing about the birth, already opened, already finished. Advent asks your family to stay in the waiting a little longer than is comfortable, to let the longing build before the relief comes.\n\nThis is countercultural and it will feel strange, and your children may complain that other families are further along. Let them. You are teaching them that the best things are worth waiting for, and that the waiting itself is part of the gift. A child who learns this in December has learned something that will steady them in every dark season of their life, when the light is promised but not yet visible.\n\nFamilies rush Advent. They light all the candles early because the waiting feels pointless and the kids are impatient. It is a mistake, and most of us know it even as we make it. The waiting is the point we are throwing away.\n\n## Let the longing be honest\n\nAdvent is allowed to be heavy. It names a world that is broken and a rescue that is not finished. If your family has known loss, Advent does not paper over it. It says the King is coming to set all of it right, and he has not finished yet, and we wait. Children can hold this. They live closer to longing than adults do. Give them words for it.\n\n## This week\n\nBefore the first Sunday of December, set four candles where your family eats. On that Sunday, light one, read Isaiah 9, and say a sentence about waiting for the King. Each week add a candle and read the next prophecy. Hold the line. Do not light them all early. Let the room grow brighter as Christmas approaches, and let your children feel, in their own small bodies, the ache of waiting for a light that is surely coming.\n\nThen on Christmas morning, light them all. They will understand, without being told, what the brightness means.",
++    "body": "December arrives and the culture has one instruction for your family: consume, and hurry while you do it. The lights go up, the lists go out, and by the time the actual day arrives, your children are exhausted by a holiday they were promised would be magic. There is an older way, and it runs in the opposite direction.\n\nAdvent is the church's long practice of waiting. The word means coming, and the four weeks before Christmas were set apart not to celebrate early but to wait well, to feel the ache of a world that is not yet right and a King who has not yet come. It is the one season that teaches children something the rest of the year cannot. How to want the right thing, and how to wait for it.\n\n## Why waiting is the lesson\n\nWe have built a world with no waiting in it. Every want is answered before it has time to deepen. A child raised on instant everything does not know how to long for anything, and a person who cannot long cannot hope. Hope is desire stretched across time. Advent is training in hope.\n\nThe whole of Israel's story was a waiting. Centuries of prophets promising a deliverer who did not come, generations living and dying in the in-between, the long silence between Malachi and Matthew. When Jesus finally came, he came to people who had almost stopped expecting him. Advent puts your family inside that waiting on purpose, so that Christmas lands not as a scheduled event but as an answer to a longing you actually felt.\n\n## A simple Advent practice\n\nGet a wreath with four candles, or just four candles in a row. One for each Sunday of Advent. The point is the growing light. You light one the first week, two the second, and so on, so that the room gets brighter as the day draws near. Children feel this in their bodies before they understand it in their heads. The dark is real, and the light is winning.\n\nEach evening, or each Sunday if every evening is too much, light the candles and read a short passage. Walk the prophecies of the coming King. Isaiah's child who is born to us. Micah's ruler from little Bethlehem. The angel's word to Mary. Read them in order across the weeks so the story builds toward the manger.\n\nThen say one sentence and pray. \"We are waiting for Jesus, like Israel waited, and he always comes.\" Keep it short. The candles do most of the teaching.\n\n## Resist the urge to rush to Christmas\n\nThe hardest part of Advent is not doing it. It is not skipping to the end. Everything around you is already singing about the birth, already opened, already finished. Advent asks your family to stay in the waiting a little longer than is comfortable, to let the longing build before the relief comes.\n\nThis is countercultural and it will feel strange, and your children may complain that other families are further along. Let them. You are teaching them that the best things are worth waiting for, and that the waiting itself is part of the gift. A child who learns this in December has learned something that will steady them in every dark season of their life, when the light is promised but not yet visible.\n\nFamilies rush Advent. They light all the candles early because the waiting feels pointless and the kids are impatient. It is a mistake, and most of us know it even as we make it. The waiting is the point we are throwing away.\n\n## Let the longing be honest\n\nAdvent is allowed to be heavy. It names a world that is broken and a rescue that is not finished. If your family has known loss, Advent does not paper over it. It says the King is coming to set all of it right, and he has not finished yet, and we wait. Children can hold this. They live closer to longing than adults do. Give them words for it.\n\n## This week\n\nBefore the first Sunday of Advent, set four candles where your family eats. On that Sunday, light one, read Isaiah 9, and say a sentence about waiting for the King. Each week add a candle and read the next prophecy. Hold the line. Do not light them all early. Let the room grow brighter as Christmas approaches, and let your children feel, in their own small bodies, the ache of waiting for a light that is surely coming.\n\nThen on Christmas morning, light them all. They will understand, without being told, what the brightness means.",
+     "topic": "family",
+     "readTime": "6 min read"
+   },
+diff --git a/scripts/lib/help-printables.mjs b/scripts/lib/help-printables.mjs
+index 2dfdd94f..313bda52 100644
+--- a/scripts/lib/help-printables.mjs
++++ b/scripts/lib/help-printables.mjs
+@@ -816,6 +816,10 @@ export async function seasonalPdf(root, season, size, passageText) {
+   tag(doc, root_, "P", () => doc.font("Times-Roman").fontSize(11).fillColor(INK).text(
+     "Ten minutes a day, around the table or at bedtime. Read the passage aloud, then the few lines that follow. Ask the question and let everyone answer, the youngest first. Close with the prayer. Miss a day and simply pick up where you are.",
+     { width, align: "left", lineGap: 2 }));
++  if (meta.note) {
++    doc.moveDown(0.6);
++    tag(doc, root_, "P", () => doc.font("Times-Roman").fontSize(11).fillColor(INK).text(meta.note, { width, align: "left", lineGap: 2 }));
++  }
+   doc.moveDown(0.6);
+   tag(doc, root_, "P", () => doc.font("Times-Italic").fontSize(9.5).fillColor(MUTED).text(
+     "Scripture is quoted from the Berean Standard Bible (public domain). The lines marked \"In other words\" retell the passage for children; they are a paraphrase, not a quotation.",
+@@ -846,7 +850,14 @@ export async function seasonalPdf(root, season, size, passageText) {
+ 
+ const SEASON_META = {
+   thanksgiving: { file: "thanksgiving-family", title: "Thanksgiving at the Table", sub: "Seven days for families, the week of Thanksgiving" },
+-  advent: { file: "advent-family", title: "Advent at the Table", sub: "Twenty-five days for families, December 1 to Christmas" },
++  // The set is a December 1 to 25 calendar (James, 2026-10-26); Advent
++  // itself starts on Advent Sunday, so the booklet says so.
++  advent: {
++    file: "advent-family",
++    title: "Advent at the Table",
++    sub: "Twenty-five days for families, December 1 to Christmas",
++    note: "Advent begins on the fourth Sunday before Christmas, which falls between November 27 and December 3. This booklet is an Advent calendar: one reading for each day from December 1 to Christmas Day.",
++  },
+   holyWeek: { file: "holy-week-family", title: "Holy Week at the Table", sub: "Eight days for families, Palm Sunday to Easter" },
+ };
+ 
+-- 
+2.43.0
+
