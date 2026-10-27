@@ -29,6 +29,10 @@ What the method words below mean:
 
 No Scripture quotation was found to be wrong, and no non-Scripture quotation was found to be wrong. All six changes are wording only; no quotation, date, number or link was changed.
 
+## Voice edit (2026-10-27, final reader)
+
+Wording only. A script compared the essay with the committed version afterward: all 37 quoted strings, all 16 Scripture references and both links are byte-identical; the only number removed is Ehrman's 2012. Changes that touch a ledger line: Ehrman's year dropped (see Bart Ehrman); "Paul gave names" sentence replaced (see Easter); "the Athenians laughed" became "some of them laughed" (see Paul in Athens); "a god who never dies" became "a god whose story has no death in it," which matches the ledger's Mithras line ("no surviving source tells a story of Mithras dying") more exactly. Lines cut without replacement, none carrying a fact: "Even the scholar who defended the category didn't think it explained Easter" (restated the sentence before it); "The baptism at thirty and the crucifixion are nowhere in the account" (folded into the list before it); "It was God's promise to raise human bodies out of human graves" (restated "they meant it bodily"); "A myth is set once upon a time"; "The Christian story works only if Jesus never dies again."
+
 ## Biography
 
 - "My own side of the Reformation." Verified as permitted. Checked against NOTES: James pastors a Baptist church, so "Protestant" self-identification is confirmed; the phrase implies no denomination beyond that. No other biography appears in the essay.
@@ -50,7 +54,7 @@ No Scripture quotation was found to be wrong, and no non-Scripture quotation was
 - Acts 17:23 "To the unknown god." Verified. ESV copy.
 - Paul quoted their own poets. Verified. ESV copy, Acts 17:28 ("as even some of your own poets have said"). No quotation used.
 - Acts 17:31 "has fixed a day on which he will judge the world in righteousness by a man whom he has appointed; and of this he has given assurance to all by raising him from the dead." Verified. ESV copy.
-- Acts 17:32 "some mocked." Verified. ESV copy ("when they heard of the resurrection of the dead, some mocked"); the essay's "When Paul reached the resurrection" matches the verse.
+- Acts 17:32 "some mocked." Verified. ESV copy ("when they heard of the resurrection of the dead, some mocked"); the essay's "When Paul reached the resurrection" matches the verse. The closing section's paraphrase now reads "that is where some of them laughed" (voice edit), not "where the Athenians laughed," since the verse says only that some mocked.
 - Temples of Isis stood in port cities around the Mediterranean; mystery cults offered initiation and the hope of a better lot after death. Not checked (textbook). Babbitt's introduction (Perseus) notes Isis worship in Greece before 330 BC from an inscription at the Peiraeus, the port of Athens.
 
 ## Celsus and Origen
@@ -165,7 +169,7 @@ All quotations checked in Perseus against the Babbitt translation (Loeb), tlg000
 
 ## Bart Ehrman
 
-- Agnostic; *Did Jesus Exist?* (2012) argued against the idea that Jesus was invented. Not checked (memory), kept. The sibling ledger for the-historical-jesus carries the same claim, also not checked.
+- Agnostic; *Did Jesus Exist?* argued against the idea that Jesus was invented. Not checked (memory), kept. The voice edit of 2026-10-27 dropped the year (2012) from the essay, so no date rides on this line now. The sibling ledger for the-historical-jesus carries the same claim, also not checked.
 - In that book he took up the pagan parallels, found many popular claims not locatable in the ancient sources and the real parallels weaker than they look, read the resurrection belief as arising from Jewish hope for the end of the age, and does not believe Jesus rose. Paraphrase. Not checked (memory), kept. This is the paragraph most in need of a check against the book; if it does not match, cut the two sentences on the pagan parallels and the Jewish hope.
 
 ## Easter and the historical claim
@@ -181,7 +185,7 @@ All quotations checked in Perseus against the Babbitt translation (Loeb), tlg000
 - Jews went to their deaths rather than sacrifice to a Greek god. Verified in substance, Swete LXX, 2 Maccabees 6:7-9 (Jews compelled to take part in the king's monthly sacrifice and the procession for Dionysus; those who would not adopt Greek ways were to be put to death). Wording kept.
 - 1 Corinthians 15:4 "was raised on the third day in accordance with the Scriptures." Verified. ESV copy. Paul "handed on ... what he had received": ESV copy, 15:3.
 - 1 Corinthians 15:6 "more than five hundred brothers at one time, most of whom are still alive." Verified. ESV copy.
-- Paul gave names. Verified. ESV copy, 15:5 (Cephas) and 15:7 (James).
+- Paul listed the appearances "naming some and counting others." Verified. ESV copy, 15:5 (Cephas, the twelve), 15:6 (the five hundred), 15:7 (James, all the apostles). (Voice edit wording; it replaced "Paul gave names, and he told his readers that most of the witnesses were still living," which only restated the quotation.)
 - Heracles on the pyre: see Justin above.
 - Galatians 3:13 "Cursed is everyone who is hanged on a tree," Paul quoting the law of Moses. Verified. ESV copy (Galatians 3:13, "for it is written"; Deuteronomy 21:23, "a hanged man is cursed by God").
 - Rome crucified slaves and rebels. Not checked (textbook).
