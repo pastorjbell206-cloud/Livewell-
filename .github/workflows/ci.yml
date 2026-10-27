@@ -89,11 +89,24 @@ jobs:
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
       - name: Lighthouse (home)
+        id: lh
+        # One run on a shared runner swings by 20+ points (87, then 63, on the
+        # same build), so take three and keep the run with the median
+        # performance score, as Lighthouse CI does with numberOfRuns.
         run: |
-          npx --yes lighthouse http://localhost:4173/ \
-            --chrome-flags="--headless --no-sandbox" \
-            --only-categories=performance,accessibility,best-practices,seo \
-            --output=json --output-path=./lh.json --quiet
+          for i in 1 2 3; do
+            npx --yes lighthouse http://localhost:4173/ \
+              --chrome-flags="--headless --no-sandbox" \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json --output-path=./lh-$i.json --quiet
+          done
+          node -e "
+            const runs = [1, 2, 3].map((i) => ({ i, score: require('./lh-' + i + '.json').categories.performance.score ?? 0 }));
+            for (const r of runs) console.log('run ' + r.i + ': performance ' + Math.round(r.score * 100));
+            runs.sort((a, b) => a.score - b.score);
+            require('fs').copyFileSync('./lh-' + runs[1].i + '.json', './lh.json');
+            console.log('using run ' + runs[1].i + ' (the median)');
+          "
           node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
       - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |
@@ -110,6 +123,9 @@ jobs:
             if (bad) { console.error(bad + ' Lighthouse category(ies) below threshold'); process.exit(1); }
           "
       - name: Axe (home)
+        # Runs even when the thresholds step fails, so a slow score never
+        # hides an accessibility violation.
+        if: ${{ !cancelled() && steps.lh.outcome == 'success' }}
         run: |
           # axe exits 1 on real accessibility violations and 2 on environment
           # errors (e.g. ChromeDriver/Chrome major-version skew when upstream

@@ -21,6 +21,9 @@ const plugins = [
     // for a frequently-updated content site, fresh-from-network wins.
     selfDestroying: true,
     registerType: "autoUpdate",
+    // A deferred <script> in <head>: registration (which only installs the
+    // self-destroying worker) waits for parsing instead of blocking first paint.
+    injectRegister: "script-defer",
     includeAssets: ["robots.txt", "sitemap.xml"],
     manifest: {
       name: "LiveWell by James Bell",
