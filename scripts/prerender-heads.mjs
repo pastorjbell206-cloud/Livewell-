@@ -490,6 +490,7 @@ const SECTION_BY_ROUTE = {
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
   "/help/": { name: "Find Help", path: "/help" },
+  "/family/devotions/": { name: "Family Devotions", path: "/family/devotions" },
 };
 
 // ---------------------------------------------------------------------------
@@ -1015,6 +1016,12 @@ async function main() {
       filter: (e) => e.page === true,
       omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
     },
+    // A page per family devotion (/family/devotions/:id): the 72 weekly ones
+    // and each day of the daily sets, from the family index
+    // (scripts/build-family-index.mjs). The title matches the page's own
+    // "{title}: A Family Devotion"; the description is the big idea, or the
+    // opening of a daily reflection. Head only (no per-devotion content file).
+    { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion" },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {

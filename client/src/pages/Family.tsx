@@ -1,42 +1,34 @@
 /**
- * Family Discipleship hub (/family) — the one place a family finds what it
- * needs to disciple the household: teen apologetics (why we believe), family
- * devotions to do together, parenting in the faith, marriage, and the tools.
+ * Family (/family): tonight's devotion first, then this week's catechism
+ * question and the season's daily sets, then (from the Sunday before Advent
+ * Sunday to Christmas) the Advent calendar card, then the library, the
+ * catechism, reading plans, and the tools for the home.
  *
- * Curated links always render. Teen apologetics are featured live from
- * published posts (slug prefix "teen-"); the family devotions render from
- * /family-devotions.json when present.
+ * Tonight comes from the static year map and the reader's own calendar
+ * (lib/familyTable); the titles and this week's question come from the family
+ * index (client/public/family/index.json, scripts/build-family-index.mjs).
+ * The page no longer downloads the published-posts list: the four essay rows
+ * it fed (teen-, apologetics-, parenting-, marriage-) were empty.
  */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import AdventAtTheTable from "@/components/AdventAtTheTable";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import { PageHead } from "@/components/editorial/PageHead";
 import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
-import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { CardGrid } from "@/components/editorial/CardGrid";
 import { SectionHead } from "@/components/editorial/SectionHead";
-import { trpc } from "@/lib/trpc";
-import { filterPublicPosts, isPublicEssayHref } from "@/lib/shelf";
+import { isPublicEssayHref } from "@/lib/shelf";
 import SubjectShelf from "@/components/SubjectShelf";
-import ScriptureNote from "@/components/ScriptureNote";
 import { subjectById } from "@/lib/subjects";
-import { getReadEssays } from "@/lib/readProgress";
-
-interface Devotion {
-  id: string;
-  title: string;
-  theme: string;
-  passage: string;
-  passageText: string;
-  bigIdea: string;
-  reflection: string;
-  questions: string[];
-  activity: string;
-  prayer: string;
-}
+import { localISODate } from "@/lib/familyYear";
+import { FAMILY_SETS } from "@/lib/familyYear.generated";
+import { catechismThisWeek, type FamilyIndex } from "@/lib/familyTable";
+import TonightCard from "./family/TonightCard";
+import { useFamilyIndex } from "./family/useFamilyData";
 
 const card = {
   background: "var(--card)", border: "1px solid var(--border)",
@@ -44,35 +36,66 @@ const card = {
   color: "inherit", display: "block",
 } as const;
 
+/** The library tab for each daily set, and its name until the index says it (scripts/lib/family-index.mjs). */
+const SET_TAB = { thanksgiving: "thanksgiving", advent: "advent", holyWeek: "holy-week" } as const;
+const SET_NAME = { thanksgiving: "Thanksgiving week", advent: "Advent", holyWeek: "Holy Week" } as const;
+
+const MONTH = new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" });
+const dateParts = (iso: string) => ({ y: Number(iso.slice(0, 4)), m: MONTH.format(new Date(`${iso}T12:00:00Z`)), d: Number(iso.slice(8, 10)) });
+
+/** "November 20 to 26", "March 29 to April 5", with the year when it is not this one. */
+function spanSaid(start: string, end: string, thisYear: number): string {
+  const a = dateParts(start);
+  const b = dateParts(end);
+  const tail = b.y !== thisYear ? `, ${b.y}` : "";
+  return a.m === b.m ? `${a.m} ${a.d} to ${b.d}${tail}` : `${a.m} ${a.d} to ${b.m} ${b.d}${tail}`;
+}
+
+/** This week's catechism question, and the daily sets running now or next (from the static year map, so they need no network). */
+function ThisWeek({ index }: { index: FamilyIndex | null }) {
+  const [today] = useState(() => localISODate());
+  const line = index ? catechismThisWeek(index.catechism) : null;
+  const sets = FAMILY_SETS.filter((w) => w.end >= today).slice(0, 2);
+  const year = Number(today.slice(0, 4));
+  return (
+    <div className="tb-week">
+      <div>
+        <h2 className="tb-section__title">This week</h2>
+        {line && (
+          <>
+            <p className="tb-label">The catechism · Question {line.number}</p>
+            <p className="tb-week__q">{line.question}</p>
+            <Link href="/family/catechism" className="tb-link">
+              Learn it together
+            </Link>
+          </>
+        )}
+      </div>
+      <div>
+        <h2 className="tb-section__title">The season</h2>
+        {sets.length > 0 && (
+          <ul className="tb-sets">
+            {sets.map((w) => (
+              <li key={w.start}>
+                <Link href={`/family/devotions?tab=${SET_TAB[w.set]}`}>
+                  <span className="tb-sets__name">{index?.sets[w.set]?.label ?? SET_NAME[w.set]}</span>
+                  <span className="tb-sets__when">
+                    {spanSaid(w.start, w.end, year)}
+                    {w.start <= today ? " · now" : ""}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Family() {
-  const postsQuery = trpc.posts.listPublished.useQuery();
-  // Only essays on the public shelf (lib/shelf.ts); retired ones stay unlisted.
-  const posts = filterPublicPosts(postsQuery.data ?? []);
-  const teen = posts.filter((p) => p.slug.startsWith("teen-"));
-  const apologetics = posts.filter((p) => p.slug.startsWith("apologetics-"));
-  const parentingArticles = posts.filter((p) => p.slug.startsWith("parenting-"));
-  const marriageArticles = posts.filter((p) => p.slug.startsWith("marriage-"));
-
-  // Published essays read as an index (one link per row, the excerpt at
-  // reading size, a quiet mark on the ones this reader has finished).
-  const [readSlugs] = useState<Set<string>>(() => getReadEssays());
-  const essayRows = (list: typeof posts): IndexItem[] =>
-    list.map((p) => ({
-      href: `/writing/${p.slug}`,
-      title: p.title,
-      dek: p.excerpt,
-      read: readSlugs.has(p.slug),
-      meta: p.readingTimeMinutes ? <span>{p.readingTimeMinutes} min read</span> : undefined,
-    }));
-
-  const [devotions, setDevotions] = useState<Devotion[]>([]);
-  const [openDev, setOpenDev] = useState<string | null>(null);
-  useEffect(() => {
-    fetch("/family-devotions.json")
-      .then((r) => (r.ok ? r.json() : []))
-      .then((d) => Array.isArray(d) && setDevotions(d))
-      .catch(() => {});
-  }, []);
+  const { state, retry } = useFamilyIndex();
+  const index = state.status === "ready" ? state.value : null;
 
   return (
     <Layout>
@@ -82,20 +105,26 @@ export default function Family() {
         url="https://www.livewellbyjamesbell.co/family"
       />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
+      <PageHead eyebrow="Family" title="Disciple your whole family, in one place." lede="Devotions you can actually do with your kids." />
+
+      {/* TONIGHT */}
+      <section style={{ background: "var(--bone)", padding: "var(--s-4) 16px var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Integrated Life · Family</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Disciple your whole family, in one place.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
-            Devotions you can actually do with your kids. Apologetics that give a teenager not just what to believe but why. Scripture and writing for parenting and marriage. The whole house, learning to carry the weight of faith together.
-          </p>
+          <TonightCard index={state} retry={retry} />
         </div>
       </section>
 
-      {/* ADVENT: from the Sunday before Advent Sunday to Christmas only. */}
+      {/* THIS WEEK AND THE SEASON */}
+      {state.status !== "failed" && (
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) 16px" }}>
+          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+            <ThisWeek index={index} />
+          </div>
+        </section>
+      )}
+
+      {/* ADVENT: from the Sunday before Advent Sunday to Christmas only. It
+          reads the year map, not the index, so it shows even if that fails. */}
       <AdventAtTheTable variant="card" />
 
       {/* CATECHISM — featured */}
@@ -116,58 +145,17 @@ export default function Family() {
         </div>
       </section>
 
-      {/* FAMILY DEVOTIONS */}
+      {/* FAMILY DEVOTIONS: the library, a page per devotion */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="Do this together" title="Family devotions" intro="Short, warm devotions for the table or the couch — a passage, a question that actually starts a conversation, something to do together, and a prayer a child can pray. Tap one to open it." />
-          {devotions.length === 0 ? (
-            <CardGrid
-              items={[{ href: "/tools/family-devotions", title: "Build a family devotion", dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." }]}
-            />
-          ) : (
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              {devotions.map((d) => {
-                const open = openDev === d.id;
-                return (
-                  <div key={d.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
-                    <button type="button" onClick={() => setOpenDev(open ? null : d.id)} aria-expanded={open}
-                      style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>
-                      <span>
-                        <span style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{d.theme}</span>
-                        <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "20px", fontWeight: 500, color: "var(--ink)", marginTop: "4px" }}>{d.title}</span>
-                      </span>
-                      <ChevronDown size={18} aria-hidden style={{ flexShrink: 0, color: "var(--ink-muted)", transform: open ? "rotate(180deg)" : "none", transition: "transform .2s" }} />
-                    </button>
-                    {open && (
-                      <div style={{ padding: "0 var(--s-4) var(--s-4)", borderTop: "1px solid var(--border)" }}>
-                        <p style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)", margin: "16px 0 4px" }}>{d.passage}</p>
-                        <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", fontStyle: "italic", marginBottom: "16px" }}>{d.passageText}</p>
-                        <p style={{ fontFamily: "var(--F)", fontSize: "17px", color: "var(--ink)", marginBottom: "12px" }}>{d.bigIdea}</p>
-                        <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "16px", whiteSpace: "pre-line" }}>{d.reflection}</p>
-                        <div style={{ marginBottom: "16px" }}>
-                          <div className="eyebrow" style={{ marginBottom: "8px" }}>Talk about it</div>
-                          <ul style={{ margin: 0, paddingLeft: "20px", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.8, color: "var(--ink)" }}>
-                            {d.questions.map((q, i) => <li key={i}>{q}</li>)}
-                          </ul>
-                        </div>
-                        <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "12px" }}><strong>Try this together.</strong> {d.activity}</p>
-                        <p style={{ fontFamily: "var(--F)", fontSize: "15px", fontStyle: "italic", lineHeight: 1.7, color: "var(--ink-muted)", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px" }}>{d.prayer}</p>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
-          <ScriptureNote rendering="bsb" />
-          <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "20px" }}>
-            <Link href="/family/devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              See the full year, plus Thanksgiving, Advent, and Holy Week <ArrowRight size={14} />
-            </Link>
-            <Link href="/tools/family-devotions" style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              Or build your own <ArrowRight size={14} />
-            </Link>
-          </div>
+          <SectionHead eyebrow="Do this together" title="Family devotions" intro="Short devotions for the table or the couch: a passage, a question that starts a conversation, something to do together, and a prayer a child can pray." />
+          <CardGrid
+            label="Family devotions"
+            items={[
+              { href: "/family/devotions", title: "Every family devotion", dek: "Seventy-two weekly devotions, more than a year of them, plus daily readings for Thanksgiving week, Advent, and Holy Week. Each has its own page to send or print." },
+              { href: "/tools/family-devotions", title: "Build a family devotion", dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." },
+            ]}
+          />
         </div>
       </section>
 
@@ -197,31 +185,17 @@ export default function Family() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="For teenagers" title="Why we believe" intro="Faith does not survive on what alone. A teenager needs the why. Honest answers to the hard questions — the resurrection, the Bible, suffering, science, other religions, and doubt itself." />
-          {teen.length > 0 ? (
-            <EditorialIndex label="Why we believe" items={essayRows(teen)} />
-          ) : (
-            <CardGrid
-              min={440}
-              items={[
-                ...(SKEPTIC_TRACK_LIVE
-                  ? [{ href: "/skeptic-track", title: "Start here if you're a skeptic", dek: "Seven essays in argument order, for anyone working out whether this is true." }]
-                  : []),
-                { href: "/answers", title: "On doubt and hard questions", dek: "Doubt is not the enemy of faith. Short, honest answers to the questions." },
-              ]}
-            />
-          )}
+          <CardGrid
+            min={440}
+            items={[
+              ...(SKEPTIC_TRACK_LIVE
+                ? [{ href: "/skeptic-track", title: "Start here if you're a skeptic", dek: "Seven essays in argument order, for anyone working out whether this is true." }]
+                : []),
+              { href: "/answers", title: "On doubt and hard questions", dek: "Doubt is not the enemy of faith. Short, honest answers to the questions." },
+            ]}
+          />
         </div>
       </section>
-
-      {/* APOLOGETICS LIBRARY */}
-      {apologetics.length > 0 && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-            <SectionHead eyebrow="For the asking" title="The apologetics library" intro="The hardest questions, answered honestly — morality, suffering, hell, miracles, the hiddenness of God, the failures of the church, and whether faith is reasonable at all. For the teenager and the skeptic both." />
-            <EditorialIndex label="The apologetics library" items={essayRows(apologetics)} />
-          </div>
-        </section>
-      )}
 
       <PullQuote>The household is the first church a child ever attends.</PullQuote>
 
@@ -229,11 +203,6 @@ export default function Family() {
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="Raising them in the faith" title="Parenting" intro="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
-          {parentingArticles.length > 0 && (
-            <div style={{ marginBottom: "var(--s-5)" }}>
-              <EditorialIndex label="Parenting essays" items={essayRows(parentingArticles)} />
-            </div>
-          )}
           <CardGrid
             label="Parenting guides and tools"
             items={[
@@ -252,11 +221,6 @@ export default function Family() {
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="The center of the home" title="Marriage" intro="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
-          {marriageArticles.length > 0 && (
-            <div style={{ marginBottom: "var(--s-5)" }}>
-              <EditorialIndex label="Marriage essays" items={essayRows(marriageArticles)} />
-            </div>
-          )}
           <CardGrid
             min={440}
             label="Marriage guides and tools"
