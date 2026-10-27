@@ -74,9 +74,26 @@ export default function MinimalNav() {
   // open, closing one group on mousedown shifts the panel, and the click
   // that should open the next group lands on whatever moved under it.
   const mobilePanelRef = useRef<HTMLDivElement>(null);
+  // The door a mouse opened by hovering. The click that usually follows
+  // (About was a plain link until 2026-10-26) keeps that menu open instead
+  // of folding it.
+  const hoverOpened = useRef<string | null>(null);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
+
+  // The door that holds the page in view, by its longest matching header
+  // link, so /resources/creeds reads as Study and not Topics.
+  let currentDoor = "";
+  let currentLen = 0;
+  for (const g of HEADER_GROUPS) {
+    for (const l of headerLinks(g)) {
+      if (!l.external && isActive(l.href) && l.href.length > currentLen) {
+        currentDoor = g.title;
+        currentLen = l.href.length;
+      }
+    }
+  }
 
   const prepareSearch = () => {
     if (readPassage) return;
@@ -369,21 +386,33 @@ export default function MinimalNav() {
               <div key={group.title} style={{ display: "contents" }}>
               <div
                 style={{ position: "relative" }}
-                onMouseLeave={() => openDropdown === group.title && setOpenDropdown(null)}
+                onMouseLeave={() => {
+                  hoverOpened.current = null;
+                  if (openDropdown === group.title) setOpenDropdown(null);
+                }}
               >
                 <button
-                  onClick={() =>
-                    setOpenDropdown(openDropdown === group.title ? null : group.title)
-                  }
-                  onMouseEnter={() => setOpenDropdown(group.title)}
+                  onClick={() => {
+                    if (hoverOpened.current === group.title) {
+                      hoverOpened.current = null;
+                      setOpenDropdown(group.title);
+                      return;
+                    }
+                    setOpenDropdown(openDropdown === group.title ? null : group.title);
+                  }}
+                  onMouseEnter={() => {
+                    if (openDropdown !== group.title) hoverOpened.current = group.title;
+                    setOpenDropdown(group.title);
+                  }}
                   aria-haspopup="menu"
                   aria-expanded={openDropdown === group.title}
+                  aria-current={currentDoor === group.title ? "true" : undefined}
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "4px",
                     color:
-                      openDropdown === group.title
+                      openDropdown === group.title || currentDoor === group.title
                         ? "var(--mustard-text)"
                         : "var(--ink)",
                     fontFamily: "var(--U)",
@@ -646,55 +675,45 @@ export default function MinimalNav() {
               }
               return (
               <div key={group.title}>
-                <div
+                {/* The whole row is the toggle: four of the five doors open
+                    here, and a tap on the name should do what the chevron does. */}
+                <button
+                  type="button"
+                  aria-label={`Show ${group.title} links`}
+                  aria-expanded={openDropdown === group.title}
+                  onClick={() =>
+                    setOpenDropdown(openDropdown === group.title ? null : group.title)
+                  }
                   style={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
+                    width: "100%",
+                    minHeight: "44px",
+                    background: "none",
+                    border: "none",
                     borderBottom: "1px solid var(--border)",
+                    cursor: "pointer",
+                    padding: "12px 4px 12px 0",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink)",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    lineHeight: "inherit",
+                    textAlign: "left",
                   }}
                 >
-                  <span
+                  <span>{group.title}</span>
+                  <ChevronDown
+                    size={18}
+                    aria-hidden
                     style={{
-                      flex: 1,
-                      fontFamily: "var(--U)",
-                      color: "var(--ink)",
-                      fontSize: "14px",
-                      fontWeight: 600,
-                      padding: "12px 0",
+                      transform:
+                        openDropdown === group.title ? "rotate(180deg)" : "none",
+                      transition: "transform 0.2s",
                     }}
-                  >
-                    {group.title}
-                  </span>
-                  <button
-                    type="button"
-                    aria-label={`Show ${group.title} links`}
-                    aria-expanded={openDropdown === group.title}
-                    onClick={() =>
-                      setOpenDropdown(openDropdown === group.title ? null : group.title)
-                    }
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "var(--ink)",
-                      cursor: "pointer",
-                      padding: "12px 4px 12px 20px",
-                      minHeight: "44px",
-                      display: "inline-flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    <ChevronDown
-                      size={18}
-                      aria-hidden
-                      style={{
-                        transform:
-                          openDropdown === group.title ? "rotate(180deg)" : "none",
-                        transition: "transform 0.2s",
-                      }}
-                    />
-                  </button>
-                </div>
+                  />
+                </button>
                 {openDropdown === group.title && (
                   <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
                     {headerLinks(group).map(item => (

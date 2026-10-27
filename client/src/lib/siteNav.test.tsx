@@ -161,6 +161,54 @@ describe("the header and footer", () => {
     }
   });
 
+  it("keeps a door's menu open when a mouse hovers and then clicks it", () => {
+    // About was a plain link until 2026-10-26. The click a mouse makes after
+    // hovering must not fold the menu the hover just opened.
+    renderWithProviders(<MinimalNav />);
+    const about = screen.getByRole("button", { name: /^About$/ });
+    fireEvent.mouseEnter(about);
+    expect(within(screen.getByRole("menu")).getByRole("link", { name: "About James" })).toBeTruthy();
+    fireEvent.click(about);
+    expect(within(screen.getByRole("menu")).getByRole("link", { name: "About James" })).toBeTruthy();
+    fireEvent.click(about);
+    expect(screen.queryByRole("menu")).toBeNull();
+    // By keyboard (no hover), Enter on the door toggles it as before.
+    const family = screen.getByRole("button", { name: /^Family$/ });
+    fireEvent.click(family);
+    expect(within(screen.getByRole("menu")).getByRole("link", { name: "Tonight at the table" })).toBeTruthy();
+    fireEvent.click(family);
+    expect(screen.queryByRole("menu")).toBeNull();
+  });
+
+  it("marks the door that holds the page in view", () => {
+    const cases = [
+      ["/books/believe", "About"],
+      ["/family/tonight", "Family"],
+      ["/resources/creeds", "Study"],
+      ["/resources", "Topics"],
+      ["/writing", ""],
+    ] as const;
+    for (const [path, door] of cases) {
+      window.history.pushState({}, "", path);
+      const { unmount } = renderWithProviders(<MinimalNav />);
+      for (const name of ["Study", "Topics", "Family", "About"]) {
+        const current = screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-current");
+        expect(current, `${path}: ${name}`).toBe(name === door ? "true" : null);
+      }
+      unmount();
+    }
+  });
+
+  it("on a phone, a door's whole row is its toggle, not only the chevron", () => {
+    renderWithProviders(<MinimalNav />);
+    fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
+    const row = screen.getByRole("button", { name: "Show About links" });
+    expect(row.textContent).toBe("About");
+    fireEvent.click(row);
+    const panel = document.getElementById("mobile-nav-panel")!;
+    expect(within(panel).getByRole("link", { name: "About James" }).getAttribute("href")).toBe("/about");
+  });
+
   it("on a phone, a tap on the next door's toggle does not first fold the open one", () => {
     // Folding on mousedown shifts the panel, so the click lands on whatever
     // moved under the finger and the next door never opens.
