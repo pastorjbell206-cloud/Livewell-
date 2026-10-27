@@ -11,4 +11,10 @@ export interface EssayOverrideMeta {
   updated: string;
 }
 
-export const ESSAY_OVERRIDES: EssayOverrideMeta[] = [];
+export const ESSAY_OVERRIDES: EssayOverrideMeta[] = [
+  {"slug":"the-early-church-under-rome","title":"When the Church Had Nothing to Lose","excerpt":"For almost three centuries the church lived under an empire that could kill it whenever it chose, and how it lived and grew there is history a post-Christian America needs to learn.","updated":"2026-10-27T00:00:00.000Z"},
+  {"slug":"was-america-founded-as-a-christian-nation","title":"Was America Founded as a Christian Nation?","excerpt":"A deeply Protestant people built a national government that declined to call itself Christian, and some of the Christians most determined to keep it that way were Baptists.","updated":"2026-10-27T00:00:00.000Z"},
+  {"slug":"what-christian-nationalism-is-and-is-not","title":"What Christian Nationalism Is, and What It Is Not","excerpt":"Christian nationalism is a fusion of Christian faith and national belonging, and it is a different thing from the love of country that Scripture assumes.","updated":"2026-10-27T00:00:00.000Z"},
+  {"slug":"what-post-christian-means","title":"What \"Post-Christian\" Actually Means","excerpt":"What has ended in America is Christendom, the old arrangement in which the culture handed people the faith, and Jeremiah's letter to the exiles shows the church how to live after it.","updated":"2026-10-27T00:00:00.000Z"},
+  {"slug":"why-didnt-the-bible-ban-slavery","title":"Why Didn't the Bible Just Ban Slavery?","excerpt":"The Bible never bans slavery outright, and the American Christians who defended slavery passed over the texts in that same Bible that condemned what they were doing.","updated":"2026-10-27T00:00:00.000Z"},
+];
