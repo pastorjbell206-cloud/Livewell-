@@ -212,3 +212,35 @@ generalized figures that later runs confirmed but left as "a voice choice"
 (why-trust-the-bible: the Isaiah scroll "about a thousand years older", P52's
 size; check every ledger's "Original wording, for restoring" section). From
 2026-10-27 verify-wf.js restores confirmed originals itself.
+
+## James's redesign brief (2026-10-27)
+
+"I want Live Well to be the most organized design, well-designed website that
+helps people to study the Bible, to understand doctrine, to be able to
+understand what a post-Christian world is in America, how to live it. I want
+the tools and the resources to be available. I want this to be an elite and
+world-class website made by some of the best designers in the world that are
+very critical of what currently is and have a fresh vision how to make this. I
+want you to research all of other websites that might be in this niche and
+take the best things. I would like it to be interactive and have things that
+draw people's attention, and I really want this to become like a useful tool
+for people to use to study and learn and grow."
+
+Design program (docs/work/design/):
+1. Research in three waves, one per main-session turn for the search budget
+   (research-wf.js, args {wave,title,searches,clusters}). A: Bible study and
+   doctrine (run wf_e9f2da1b-b0d). B: post-Christian thought, church history,
+   family discipleship, skeptic-facing. C: best-in-class design outside the
+   niche (editorial, learning UX, organization and design systems, devotional
+   habit UX). Competitor sites cannot be fetched from this sandbox (network
+   policy); research uses web search plus open-source code on GitHub. James
+   can widen network access in the environment settings.
+2. Critique of the current site from real screenshots by seven critics
+   (critique-wf.js, run wf_6e98ce65-60b) -> CRITIQUE.md.
+3. Vision: independent design directions, judged and merged, within the brand
+   contract (palette, type, "Unhurried. Weighted. Grown-up."); proposals to
+   change the contract go to James, not into code.
+4. A clickable prototype for James, then the master plan revised and built in
+   waves.
+Tension to resolve, not dodge: "draw people's attention" against "Unhurried.
+Weighted. Grown-up." Attention through depth and real interactivity, not bait.
