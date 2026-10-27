@@ -1129,11 +1129,11 @@
       "set": "advent",
       "day": 20,
       "label": "December 20",
-      "title": "No Room",
-      "passage": "Luke 2:6-7",
-      "href": "/study/bible/luke/2#v6",
+      "title": "The Night Before",
+      "passage": "Luke 2:1-5",
+      "href": "/study/bible/luke/2#v1",
       "file": "/family-seasonal.json",
-      "description": "The King of the universe was born in a place where animals ate, because no one had a room for him."
+      "description": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes."
     },
     {
       "id": "advent-21",
@@ -1141,11 +1141,11 @@
       "set": "advent",
       "day": 21,
       "label": "December 21",
-      "title": "Good News for Shepherds",
-      "passage": "Luke 2:10-11",
-      "href": "/study/bible/luke/2#v10",
+      "title": "No Room",
+      "passage": "Luke 2:6-7",
+      "href": "/study/bible/luke/2#v6",
       "file": "/family-seasonal.json",
-      "description": "When God announced the most important birth in history, he sent the news past the palace and the temple to shepherds working the night shift in a field."
+      "description": "The King of the universe was born in a place where animals ate, because no one had a room for him."
     },
     {
       "id": "advent-22",
@@ -1153,11 +1153,11 @@
       "set": "advent",
       "day": 22,
       "label": "December 22",
-      "title": "Mary Treasured It",
-      "passage": "Luke 2:19",
-      "href": "/study/bible/luke/2#v19",
+      "title": "Good News for Shepherds",
+      "passage": "Luke 2:10-11",
+      "href": "/study/bible/luke/2#v10",
       "file": "/family-seasonal.json",
-      "description": "After the shepherds left and the noise died down, Mary did not rush on to the next thing. She held it all quietly and turned it over in her heart."
+      "description": "When God announced the most important birth in history, he sent the news past the palace and the temple to shepherds working the night shift in a field."
     },
     {
       "id": "advent-23",
@@ -1165,11 +1165,11 @@
       "set": "advent",
       "day": 23,
       "label": "December 23",
-      "title": "A Light to Everyone",
-      "passage": "Luke 2:30-32",
-      "href": "/study/bible/luke/2#v30",
+      "title": "Mary Treasured It",
+      "passage": "Luke 2:19",
+      "href": "/study/bible/luke/2#v19",
       "file": "/family-seasonal.json",
-      "description": "Simeon was old and had waited his whole life to see God keep his promise. When he finally held the baby Jesus, he said he could die in peace now."
+      "description": "After the shepherds left and the noise died down, Mary did not rush on to the next thing. She held it all quietly and turned it over in her heart."
     },
     {
       "id": "advent-24",
@@ -1177,11 +1177,11 @@
       "set": "advent",
       "day": 24,
       "label": "December 24",
-      "title": "The Night Before",
-      "passage": "Luke 2:1-5",
-      "href": "/study/bible/luke/2#v1",
+      "title": "A Light to Everyone",
+      "passage": "Luke 2:30-32",
+      "href": "/study/bible/luke/2#v30",
       "file": "/family-seasonal.json",
-      "description": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes."
+      "description": "Simeon was old and had waited his whole life to see God keep his promise. When he finally held the baby Jesus, he said he could die in peace now."
     },
     {
       "id": "advent-25",
