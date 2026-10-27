@@ -15,6 +15,7 @@
  */
 import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
+import { useLocationProperty } from "wouter/use-browser-location";
 import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -428,7 +429,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const [failedKey, setFailedKey] = useState<string | null>(null);
   const [nonce, setNonce] = useState(0);
   const [mode, setMode] = useState<Mode>(() => readStoredJSON<Mode>(MODE_KEY, (x): x is Mode => x === "reading" || x === "interlinear", "reading"));
-  const [picked, setPicked] = useState<{ key: string; sel: Selection } | null>(null);
+  const [picked, setPicked] = useState<{ key: string; hash: string; sel: Selection } | null>(null);
   const wide = useWide();
   const lang = book.testament === "OT" ? "H" : "G";
   const valid = chapter >= 1 && chapter <= book.chapters;
@@ -449,14 +450,17 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
     return () => { stale = true; };
   }, [book.slug, chapter, nonce, valid]);
 
-  // A #v16 link opens that verse until the reader picks something else.
+  // A #v16 link opens that verse until the reader picks something else. The
+  // hash is followed as it changes: the header's search can open a verse of
+  // the chapter already on screen, and that changes nothing but the hash.
+  const hash = useLocationProperty(() => window.location.hash, () => "");
   const hashVerse = useMemo(() => {
-    if (!data || typeof window === "undefined") return null;
-    const m = window.location.hash.match(/^#v(\d+)$/);
+    if (!data) return null;
+    const m = hash.match(/^#v(\d+)$/);
     return m ? data.verses.find((x) => x.v === +m[1]) ?? null : null;
-  }, [data]);
-  const sel: Selection = picked?.key === key ? picked.sel : hashVerse ? { kind: "verse", verse: hashVerse } : null;
-  const setSel = (s: Selection) => setPicked({ key, sel: s });
+  }, [data, hash]);
+  const sel: Selection = picked?.key === key && picked.hash === hash ? picked.sel : hashVerse ? { kind: "verse", verse: hashVerse } : null;
+  const setSel = (s: Selection) => setPicked({ key, hash, sel: s });
 
   useEffect(() => {
     if (hashVerse) requestAnimationFrame(() => document.getElementById(`v${hashVerse.v}`)?.scrollIntoView({ block: "center" }));
