@@ -238,8 +238,12 @@ describe("the pins after the vote, later", () => {
     const { root } = seeded(goLive);
     const later = buildYearMap(loadInputs(root), { first: 2028 });
     expect(later.problems).toEqual([]);
-    expect(later.notes.join("\n")).toMatch(/week 2026-11-08 is before the map begins .* can be removed/);
-    expect(later.notes.join("\n")).toMatch(/week 2026-11-15 is before the map begins/);
+    expect(later.notes.join("\n")).toMatch(
+      /week 2026-11-08 is before the map begins .* can be removed/
+    );
+    expect(later.notes.join("\n")).toMatch(
+      /week 2026-11-15 is before the map begins/
+    );
   });
 });
 
@@ -323,22 +327,22 @@ describe("the family gate on a strand file", () => {
 });
 
 describe("the politics gate on family devotions", () => {
-  const FORBIDDEN = ["leverage", "unpack"];
   const findings = (change: (s: Strand) => void) => {
     const { pub } = seeded(p => {
       const s = readStrand(p);
       change(s);
       writeStrand(p, s);
     });
-    return checkFamilyPolitics({ publicDir: pub, forbidden: FORBIDDEN })
+    return checkFamilyPolitics({ publicDir: pub })
       .findings.map(([f, m]: [string, string]) => `${f}: ${m}`)
       .join("\n");
   };
 
   it("passes the committed pieces", () => {
-    expect(
-      checkFamilyPolitics({ publicDir: PUBLIC, forbidden: FORBIDDEN })
-    ).toEqual({ findings: [], pieces: 2 });
+    expect(checkFamilyPolitics({ publicDir: PUBLIC })).toEqual({
+      findings: [],
+      pieces: 2,
+    });
   });
 
   it("refuses one side much longer than the other", () => {
@@ -366,11 +370,12 @@ describe("the politics gate on family devotions", () => {
   it("holds the house style outside the quoted passage", () => {
     const text = findings(s => {
       s.devotions[0].activity += " Do it tonight!";
-      s.devotions[1].reflection += " Let us unpack that.";
+      s.devotions[1].reflection += " Let us unpack that, and lean into it.";
       s.devotions[1].passageText += "!";
     });
     expect(text).toMatch(/activity: exclamation point/);
-    expect(text).toMatch(/reflection: forbidden word "unpack"/);
+    expect(text).toMatch(/reflection: Forbidden Language "unpack"/);
+    expect(text).toMatch(/reflection: Forbidden Language "lean into"/);
     expect(text).not.toMatch(/passageText/);
   });
 });

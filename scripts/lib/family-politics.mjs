@@ -16,11 +16,14 @@
  * voting, elections, parties, or politics without `politics: true` fails, so
  * the rule cannot be skipped by leaving the flag off. Quoted Scripture
  * (passageText) is exempt from the style check; everything else carries no
- * exclamation point and none of the gate's forbidden words.
+ * exclamation point and none of CLAUDE.md's Forbidden Language (the shared
+ * list in ./forbidden-language.mjs, which is longer than the politics gate's
+ * own).
  */
 import fs from "node:fs";
 import path from "node:path";
 import { devotionsIn } from "./family-devotion-file.mjs";
+import { forbiddenRe, setAsideAllowed } from "./forbidden-language.mjs";
 
 /** Words that make a family devotion a politics piece. */
 export const POLITICS_WORDS = /\b(vot(?:e|ed|es|ing|er|ers)|elections?|ballots?|republicans?|democrats?|partisan|politics|political|politicians?)\b/i;
@@ -40,7 +43,7 @@ function* strings(value, at) {
  * Check every family devotion file in publicDir. Returns { findings: [file,
  * message][], pieces } where pieces counts the politics devotions checked.
  */
-export function checkFamilyPolitics({ publicDir, forbidden = [] }) {
+export function checkFamilyPolitics({ publicDir }) {
   const findings = [];
   let pieces = 0;
   const files = fs.existsSync(publicDir) ? fs.readdirSync(publicDir).filter((n) => /^family-devotions(-[a-z0-9-]+)?\.json$/.test(n)).sort() : [];
@@ -84,7 +87,7 @@ export function checkFamilyPolitics({ publicDir, forbidden = [] }) {
 
       for (const [at, text] of prose) {
         if (text.includes("!")) note(`${at}: exclamation point (outside quoted Scripture the verdict lands on a period)`);
-        for (const w of forbidden) if (new RegExp(`\\b${w}\\b`, "i").test(text)) note(`${at}: forbidden word "${w}"`);
+        for (const m of setAsideAllowed(text).matchAll(forbiddenRe)) note(`${at}: Forbidden Language "${m[0]}"`);
       }
     });
   }

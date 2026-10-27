@@ -23,7 +23,8 @@
  *    Scripture (this corpus quotes none, so zero), zero forbidden words.
  *  - family devotions on politics (U11, scripts/lib/family-politics.mjs):
  *    marked politics: true, two sides read in turn within the same 55% word
- *    band, and the same house style outside the quoted passage. A devotion
+ *    band, no exclamation point and no Forbidden Language (the full
+ *    CLAUDE.md list) outside the quoted passage. A devotion
  *    that talks about voting or politics without the mark fails.
  *
  * Exits non-zero with a findings list so CI fails loudly.
@@ -122,7 +123,7 @@ for (const section of ["disruption", "justice"]) {
 }
 
 /* ---------------- family devotions on politics (the same instrument at the table) ---------------- */
-const family = checkFamilyPolitics({ publicDir: PUB, forbidden: FORBIDDEN_WORDS });
+const family = checkFamilyPolitics({ publicDir: PUB });
 for (const [file, msg] of family.findings) note(file, msg);
 
 /* ---------------- verdict ---------------- */
