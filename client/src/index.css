@@ -672,8 +672,8 @@ img{display:block;max-width:100%}
 .tb-bands__note{font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
 .tb-table .tb-bands__note{font-size:14px}
 .tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 0}
-.tb-nights__link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;padding:10px 0;transition:text-decoration-color .2s var(--motion-ease)}
-.tb-nights__link:hover{text-decoration-color:currentColor}
+/* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them. */
+.tb-nights__link{color:var(--mustard-text);font-weight:600}
 .tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
 .tb-grownups__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0}
 .tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}
@@ -727,6 +727,14 @@ img{display:block;max-width:100%}
   .tb-prayer{font-size:10.5pt;margin-bottom:2pt}
   .tb-devotion p[style]{font-size:8pt !important;margin-bottom:2pt !important}
   .tb-done,.tb-more,.tb-line{display:none !important}
+  /* Both age bands side by side, a little tighter, on a page with narrower
+   * margins than an essay's 2cm, so a devotion still prints on one page (U21). */
+  body:has(.tb-page){page:tb-card}
+  @page tb-card{margin:1.3cm 1.5cm}
+  .tb-section{padding:5pt 0 1pt}
+  .tb-asks--two{display:grid;grid-template-columns:1fr 1fr;gap:0 14pt}
+  .tb-asks--two .tb-questions{font-size:9pt;line-height:1.35;padding-left:1.2em;margin-bottom:2pt}
+  .tb-asks--two .tb-label{margin-bottom:1pt}
 }
 
 /* CARD */

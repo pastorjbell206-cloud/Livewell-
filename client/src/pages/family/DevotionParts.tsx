@@ -139,11 +139,22 @@ export function AskPart({ devotion, ask }: { devotion: Devotion; ask?: AskChoice
   const { bands } = devotion;
   if (!bands) return <Questions label="Together" list={devotion.questions} />;
   const band = ask?.band ?? "together";
+  // Both bands sit side by side on paper, so the page still prints as one card.
   return (
     <>
       {ask && <BandSwitch {...ask} />}
-      {band !== "older" && <Questions label="For younger children" list={bands.younger} />}
-      {band !== "younger" && <Questions label="For older children" list={bands.older} />}
+      <div className={band === "together" ? "tb-asks tb-asks--two" : "tb-asks"}>
+        {band !== "older" && (
+          <div>
+            <Questions label="For younger children" list={bands.younger} />
+          </div>
+        )}
+        {band !== "younger" && (
+          <div>
+            <Questions label="For older children" list={bands.older} />
+          </div>
+        )}
+      </div>
     </>
   );
 }
