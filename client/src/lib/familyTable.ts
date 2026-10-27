@@ -9,9 +9,9 @@
  * - Position: where the family is ("Week 48 of the year", "Day 6 of 25",
  *   "Last time: Made On Purpose, Tuesday"), never a streak or a score.
  * - What this device remembers (livewell-progress-family-v1): the day the
- *   family first marked a devotion done, the band ("together" until the age
- *   bands land), and the dates devotions were done. Nothing else, and only in
- *   this browser, through lib/storage.
+ *   family first marked a devotion done, the band whose questions it wants
+ *   ("together", "younger", or "older"; U21), and the dates devotions were
+ *   done. Nothing else, and only in this browser, through lib/storage.
  */
 import { familySetDayOn, familyWeekOn, onFamilyMap, type FamilySetKey } from "./familyYear";
 import { FAMILY_SETS } from "./familyYear.generated";
@@ -38,6 +38,19 @@ export interface FamilyIndexRow {
   /** The library file that holds the devotion itself. */
   file: string;
   description: string;
+  /** Weekly: its strand (MASTER-PLAN 5.4), "foundations" today. */
+  strand?: string;
+  /** Weekly: its theme group in the library. */
+  group?: string;
+  /** Some weeks: one line for the parents and the page behind tonight. */
+  grownups?: { line: string; href: string; title: string };
+}
+
+/** A strand or a theme group, with how many devotions it holds. */
+export interface FamilyShelf {
+  key: string;
+  label: string;
+  count: number;
 }
 
 export interface FamilySetInfo {
@@ -54,6 +67,10 @@ export interface CatechismLine {
 
 export interface FamilyIndex {
   weekly: number;
+  /** The weekly strands that have devotions, in library order (U21). */
+  strands?: FamilyShelf[];
+  /** The Foundations theme groups, in library order (U21). */
+  groups?: FamilyShelf[];
   sets: Record<FamilySetKey, FamilySetInfo>;
   devotions: FamilyIndexRow[];
   catechism: CatechismLine[];
@@ -131,7 +148,7 @@ export function weekOfYear(date: string): number {
 
 /** Where a devotion sits in its set: "12 of 72" for a weekly one, "Day 6 of 25" for a day of a set. */
 export function placeOf(row: FamilyIndexRow, index: FamilyIndex): { unit?: string; current: number; total: number } | null {
-  if (row.kind === "weekly" && row.n) return { current: row.n, total: index.weekly };
+  if (row.kind === "weekly" && row.n) return { current: row.n, total: index.strands?.find((s) => s.key === row.strand)?.count ?? index.weekly };
   if (row.kind === "seasonal" && row.set && row.day) {
     const days = index.sets[row.set]?.days;
     if (days) return { unit: "Day", current: row.day, total: days };
@@ -220,4 +237,19 @@ export function whenSaid(date: string, today: string): string {
   const d = new Date(dayNumber(date) * DAY_MS);
   if (gap > 1 && gap < 7) return d.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: d.getUTCFullYear() === Number(today.slice(0, 4)) ? undefined : "numeric", timeZone: "UTC" });
+}
+
+// Who the questions are for (MASTER-PLAN 5.3, U21).
+
+/** A devotion's questions for younger children (about 4 to 10) and older (about 11 to 17); "together" shows both. */
+export const BAND_LABELS: Record<FamilyBand, string> = { together: "Together", younger: "Younger", older: "Older" };
+
+/**
+ * Keep the band a family chose on this device, beside its dates. `ok` is
+ * false when the browser would not keep it; the choice still holds while the
+ * page is open.
+ */
+export function saveFamilyBand(band: FamilyBand): { ok: boolean; progress: FamilyProgress } {
+  const progress: FamilyProgress = { ...readFamilyProgress(), band };
+  return { ok: writeStoredJSON(FAMILY_PROGRESS_KEY, progress), progress };
 }

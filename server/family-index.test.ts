@@ -87,6 +87,42 @@ describe("build-family-index", () => {
     );
   });
 
+  it("names each weekly row's strand and theme group, and counts them for the library (U21)", () => {
+    const weekly = (index.devotions as Array<Row & { strand?: string; group?: string }>).filter((r) => r.kind === "weekly");
+    expect(index.strands).toEqual([{ key: "foundations", label: "Foundations", count: 72 }]);
+    expect(weekly.every((r) => r.strand === "foundations")).toBe(true);
+    const groups: Array<{ key: string; count: number }> = index.groups;
+    expect(groups.reduce((n, g) => n + g.count, 0)).toBe(weekly.length);
+    for (const g of groups) expect(weekly.filter((r) => r.group === g.key)).toHaveLength(g.count);
+    expect(index.weekly).toBe(72);
+  });
+
+  it("carries each line for the grown-ups with the title of the care page it links", () => {
+    const withLine = (index.devotions as Array<Row & { grownups?: { line: string; href: string; title: string } }>).filter((r) => r.grownups);
+    expect(withLine.length).toBeGreaterThan(0);
+    for (const r of withLine) {
+      const slug = r.grownups!.href.replace(/^\/help\//, "");
+      const need = pub(`needs/${slug}.json`);
+      expect(need.page, r.id).toBe(true);
+      expect(r.grownups!.title, r.id).toBe(need.title);
+    }
+    expect(withLine.find((r) => r.id === "fear-and-anxiety")?.grownups?.title).toBe("I can't stop worrying");
+  });
+
+  it("refuses an unknown theme group, a grown-ups link to no page, and a devotion file no strand reads", () => {
+    const root = seeded((dir) => {
+      const list = JSON.parse(fs.readFileSync(path.join(dir, "family-devotions.json"), "utf8"));
+      list[0].group = "nowhere";
+      list[1].grownups = { line: "If this is you, start here.", href: "/help/not-a-page" };
+      fs.writeFileSync(path.join(dir, "family-devotions.json"), JSON.stringify(list));
+      fs.writeFileSync(path.join(dir, "family-devotions-recipes.json"), "[]");
+    });
+    const problems = buildFamilyIndex(root).problems.join("\n");
+    expect(problems).toMatch(/identity: group "nowhere" is not one of the library's groups/);
+    expect(problems).toMatch(/fear-and-anxiety: grownups link "\/help\/not-a-page" has no care page/);
+    expect(problems).toMatch(/family-devotions-recipes\.json: no strand reads this file/);
+  });
+
   it("refuses a daily set it has no address for", () => {
     const root = seeded((dir) => {
       const s = JSON.parse(fs.readFileSync(path.join(dir, "family-seasonal.json"), "utf8"));

@@ -9,7 +9,7 @@ import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 // @ts-expect-error: a plain .mjs build module without types
-import { guidePdf, scripturePdf, prayerPdf, weekPdf, prayerJournalPdf, ruleOfLifePdf, memoryCardsPdf, familyCardsPdf, holidaysAfterLossPdf, firstResponsePdf, MEMORY_VERSES } from "../scripts/lib/help-printables.mjs";
+import { guidePdf, scripturePdf, prayerPdf, weekPdf, prayerJournalPdf, ruleOfLifePdf, memoryCardsPdf, familyCardsPdf, cardUrl, holidaysAfterLossPdf, firstResponsePdf, MEMORY_VERSES } from "../scripts/lib/help-printables.mjs";
 // @ts-expect-error: a plain .mjs build module without types
 import { workbookPdf, listWorkbooks } from "../scripts/lib/workbooks.mjs";
 // @ts-expect-error: a plain .mjs build module without types
@@ -116,6 +116,21 @@ describe("section-wide printables", () => {
     const b: Buffer = await familyCardsPdf(devotions, "A4");
     expect(tagged(b)).toBe(true);
     expect(pages(b)).toBe(1 + Math.ceil(devotions.length / 2));
+  });
+
+  it("family table cards: both age bands and a code on every card, each card on its own half page (U21)", async () => {
+    const devotions = ["family-devotions.json", "family-devotions-2.json"].flatMap((f) => JSON.parse(fs.readFileSync(path.join(ROOT, "client/public", f), "utf8")));
+    // Every card fits its half of a Letter page with the bands side by side (the build throws otherwise).
+    const b: Buffer = await familyCardsPdf(devotions, "LETTER");
+    expect(pages(b)).toBe(1 + Math.ceil(devotions.length / 2));
+    // The code opens the card's own page, at the canonical host.
+    expect(cardUrl("identity")).toBe("https://www.livewellbyjamesbell.co/family/devotions/identity");
+    // A card with one list for the whole table still prints.
+    const plain = { ...devotions[0], questions: devotions[0].questions.younger };
+    expect(pages(await familyCardsPdf([plain], "A4"))).toBe(2);
+    // A card too long for half a page stops the build instead of running into the next card.
+    const long = { ...devotions[0], reflection: "", passageText: devotions[0].passageText.repeat(12) };
+    await expect(familyCardsPdf([long], "LETTER")).rejects.toThrow(/family table card "identity" does not fit on half a page/);
   });
 
   for (const wb of listWorkbooks(ROOT) as { id: string; sessions: unknown[] }[]) {

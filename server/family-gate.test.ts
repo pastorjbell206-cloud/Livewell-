@@ -167,11 +167,56 @@ describe("validate-family.mjs", () => {
   it("requires both age bands where a devotion claims them", () => {
     const first = read<Devotion[]>("family-devotions.json");
     first[0].questions = { together: ["What did you hear?"], younger: ["Who made you?"] };
-    first[1].questions = { younger: ["Who made you?"], older: ["What does it mean to be made on purpose?"] };
+    first[1].questions = {
+      younger: ["Who made you?", "What scares you?", "Who keeps you safe?"],
+      older: ["What does it mean to be made on purpose?", "What do you do with fear?", "Whom do you trust, and why?"],
+    };
     write("family-devotions.json", first);
     const errors = errorsOf();
     expect(errors.some((e) => /family-devotions\.json\[0\] identity: questions are split by age, so questions\.older needs its questions/.test(e))).toBe(true);
     expect(errors.some((e) => /family-devotions\.json\[1\]/.test(e))).toBe(false);
+  });
+
+  it("holds every band to three questions and never asks one twice (U21: an older band cannot be a copy)", () => {
+    const first = read<Devotion[]>("family-devotions.json");
+    const q = first[0].questions as { younger: string[]; older: string[] };
+    first[0].questions = { younger: q.younger, older: q.older.slice(0, 2) };
+    first[1].questions = { younger: (first[1].questions as { younger: string[] }).younger, older: [...(first[1].questions as { younger: string[] }).younger] };
+    write("family-devotions.json", first);
+    const errors = errorsOf();
+    expect(errors).toContain("client/public/family-devotions.json[0] identity: questions.older has 2 questions; each age band carries 3");
+    expect(errors.some((e) => /family-devotions\.json\[1\] fear-and-anxiety: questions\.older repeats a question already in questions\.younger/.test(e))).toBe(true);
+  });
+
+  it("gives every Foundations devotion a theme group the library knows", () => {
+    const first = read<Array<Devotion & { group?: string }>>("family-devotions.json");
+    delete first[0].group;
+    first[1].group = "feelings-and-such";
+    write("family-devotions.json", first);
+    const errors = errorsOf();
+    expect(errors.some((e) => /family-devotions\.json\[0\] identity: group must be one of god, story/.test(e))).toBe(true);
+    expect(errors.some((e) => /family-devotions\.json\[1\] fear-and-anxiety: group must be one of/.test(e))).toBe(true);
+  });
+
+  it("checks each line for the grown-ups and the page it links", () => {
+    type WithGrownups = Devotion & { grownups?: { line: string; href: string } };
+    const first = read<WithGrownups[]>("family-devotions.json");
+    const at = (id: string) => first.find((d) => d.id === id)!;
+    expect(at("fear-and-anxiety").grownups?.href).toBe("/help/anxiety");
+    at("fear-and-anxiety").grownups = { line: "If worry keeps you awake, start here.", href: "/help/no-such-page" };
+    at("identity").grownups = { line: "A line with no end", href: "/writing/some-essay" };
+    write("family-devotions.json", first);
+    const errors = errorsOf();
+    expect(errors.some((e) => /fear-and-anxiety: grownups\.href "\/help\/no-such-page" has no care page/.test(e))).toBe(true);
+    expect(errors.some((e) => /identity: grownups\.line is one short sentence/.test(e))).toBe(true);
+    expect(errors.some((e) => /identity: grownups\.href "\/writing\/some-essay" is not a page a grown-ups line can link yet/.test(e))).toBe(true);
+  });
+
+  it("fails Forbidden Language in the family files' own prose", () => {
+    const first = read<Devotion[]>("family-devotions.json");
+    first[0].reflection = `${first[0].reflection} Growing up is a journey.`;
+    write("family-devotions.json", first);
+    expect(errorsOf()).toContain('client/public/family-devotions.json[0].reflection: "journey" is on the Forbidden Language list (CLAUDE.md)');
   });
 
   it("flags the known catechism repeats and fails a new one", () => {
