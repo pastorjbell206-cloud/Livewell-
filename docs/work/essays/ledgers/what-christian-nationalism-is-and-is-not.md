@@ -9,7 +9,7 @@ Methods, in the words used below:
 - "Not checked (textbook)" means the claim was not searched; it is kept because it is standard reference knowledge, and it is marked so a later reader can check it.
 - The run's shared web-search budget ran out before the last two planned searches (the Baylor survey year behind the four-group figures, and the year Augustine began *The City of God*). Both are handled below.
 
-Not in scope here and left for the voice and audit step: the essay's em-dashes and the Closing Texts layout (the pilot predates the no-em-dash rule).
+Voice and audit step, 2026-10-27: the essay's em-dashes in our own prose were replaced with commas, colons and parentheses (the one inside the Whitehead and Perry definition is verbatim and kept); Closing Texts now read *"Quote."* (Reference) on one line; the standfirst was rewritten as one sentence; two section headings were renamed ("Civil Religion and Its Two Faces" became "Bellah and Civil Religion", "'You Only Have I Known'" became "What Scripture Says About a Covenant Nation"). No fact, quotation, number, date or name was added or removed, and every claim below still stands as worded except where a line says otherwise.
 
 ## Corrections made in the essay
 
@@ -82,7 +82,7 @@ Not in scope here and left for the voice and audit step: the essay's em-dashes a
 - 1 Corinthians 1:23, "we preach Christ crucified." Search-checked: matched search results from esv.org, christianity.com (ESV) and biblestudytools.com (ESV) on 2026-10-26.
 - Two of the phrases many Christians defend as the founders' faith were written into law in the 1950s. Follows from the 1954 and 1956 items above.
 
-## Civil Religion and Its Two Faces
+## Bellah and Civil Religion
 
 - Robert Bellah, 1967, "Civil Religion in America," in *Daedalus*. Search-checked (amacad.org: Winter 1967 issue).
 - A religion alongside and distinct from the churches. Search-checked (Bellah as quoted: "alongside of and rather clearly differentiated from the churches").
@@ -99,7 +99,7 @@ Not in scope here and left for the voice and audit step: the essay's em-dashes a
 - Quotation (Lincoln): "The Almighty has His own purposes." Search-checked (NPS text; some editions print "his").
 - 1975, *The Broken Covenant*, eight years after the essay. Search-checked (Seabury Press, 1975; sojo.net review; cambridge.org review).
 
-## "You Only Have I Known"
+## What Scripture Says About a Covenant Nation
 
 - Amos 3:2, "You only have I known of all the families of the earth; therefore I will punish you for all your iniquities." Search-checked: matched search results from esv.org, blueletterbible.org (ESV) and biblestudytools.com (ESV) on 2026-10-26. Also used in Closing Texts.
 - Amos 9:7, "'Are you not like the Cushites to me, O people of Israel?' declares the LORD. 'Did I not bring up Israel from the land of Egypt, and the Philistines from Caphtor and the Syrians from Kir?'" Search-checked: matched search results from esv.org and biblestudytools.com (ESV) on 2026-10-26 (summary noted only capitalization and punctuation differences).
@@ -115,7 +115,7 @@ Not in scope here and left for the voice and audit step: the essay's em-dashes a
 - 1801, the Danbury Baptist Association of Connecticut wrote to the new president that their religious privileges were held as favors, not rights. Search-checked (letter of October 7, 1801; "as favors granted"). Paraphrase, not quoted. Wording corrected; see above.
 - Jefferson's reply of January 1, 1802: "a wall of separation between Church & State." Search-checked (founders.archives.gov; au.org; constitution.org).
 - Why Baptists wanted the wall. Interpretation; no factual claim beyond the letters.
-- Biography: "I came to faith out of atheism"; "my own tradition" (Baptist); decisions about Fourth of July Sundays made by "people like me" (a pastor). All within NOTES.md (came to faith from atheism; pastors a Baptist church). No title, years, book count, Southern Baptist tie or invented scene. Checked against NOTES.md.
+- Biography: "I came to faith out of atheism"; "my own tradition" (Baptist); pastors are "the ones who decide what gets sung and preached on the Sunday nearest the Fourth of July," with James inside that "we" (a pastor; the voice edit of 2026-10-27 replaced "and I include myself ... made by people like me" with this wording). All within NOTES.md (came to faith from atheism; pastors a Baptist church). No title, years, book count, Southern Baptist tie or invented scene. Checked against NOTES.md.
 - Hebrews 11:13, "that they were strangers and exiles on the earth." Search-checked: matched search results from esv.org, biblestudytools.com (ESV) and biblia.com (ESV) on 2026-10-26.
 - Hebrews 11:16, "But as it is, they desire a better country, that is, a heavenly one. Therefore God is not ashamed to be called their God, for he has prepared for them a city." Search-checked: matched search results from esv.org and biblia.com (ESV) on 2026-10-26. Also used in Closing Texts.
 - Hebrews 11 refers to Abraham, Sarah and their children, promised a land (Hebrews 11:8–12). Not checked (textbook).
