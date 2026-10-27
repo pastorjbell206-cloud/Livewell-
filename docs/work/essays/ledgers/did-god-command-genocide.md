@@ -24,7 +24,7 @@ What the method words below mean:
 1. Opening: "Several hundred Pequots died, most of them women, children and old men" became "Several hundred Pequots died, women and children among them." The proportion could not be checked. Underhill's own account says "downe fell men, women, and children" (TCP Underhill), which supports the new wording.
 2. The word genocide: the Genocide Convention's Article II wording was in quotation marks ("committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such"). The Convention's text could not be opened (un.org and ohchr.org refused by the proxy; no search). It is now paraphrase without quotation marks: "defines it as acts committed with intent to destroy, in whole or in part, a national, ethnic, racial or religious group." Restore the verbatim quotation once the text is checked.
 3. Ancient war reports: "he says he killed the seven thousand people of Nebo" became "he says he killed the people of Nebo." The number could not be checked against any reachable translation of the Mesha inscription, so it was cut.
-4. A Canaanite woman: "coastland the tribes of Israel never took (Judges 1:31)" became "coastland the tribes of Israel never took (Judges 1:31 lists Sidon among the towns Asher did not drive out)." ESV copy: Judges 1:31 names Sidon (with Acco, Ahlab, Achzib and others) but not Tyre, so the bare reference overstated what the verse says.
+4. Jesus and the Canaanite woman (section headed "A Canaanite Woman" until the voice pass): "coastland the tribes of Israel never took (Judges 1:31)" became "coastland the tribes of Israel never took (Judges 1:31 lists Sidon among the towns Asher did not drive out)." ESV copy: Judges 1:31 names Sidon (with Acco, Ahlab, Achzib and others) but not Tyre, so the bare reference overstated what the verse says.
 5. Use and misuse: "the verse after the walls fall is left out" became "is usually left out." The claim about children's Bibles is a general observation no source here could test; the absolute form was an overclaim.
 
 No Scripture quotation was found to be wrong, and no non-Scripture quotation that could be opened was found to be wrong.
@@ -154,7 +154,7 @@ No Scripture quotation was found to be wrong, and no non-Scripture quotation tha
 - Children's Bibles tell Joshua 6 as the walls falling and usually leave out the next verse. Corrected (softened; see Corrections, item 5). Not checked (memory), kept. The verse order is verified: ESV copy, the wall falls at 6:20 and the killing is 6:21.
 - "Plenty of lifelong churchgoers have never heard a sermon on 1 Samuel 15:3." Not checked (memory), kept. General observation.
 
-## A Canaanite woman
+## Jesus and the Canaanite woman
 
 - The name Jesus is the Greek form of Joshua. Not checked (textbook).
 - The Greek Old Testament spells Joshua's name as the Gospels spell Jesus. Verified. Swete LXX, Joshua 1:1 onward: Ἰησοῦς (over a hundred times in the nominative in Joshua); Site Greek/Hebrew data, Matthew 1:16: Ἰησοῦς. (The Septuagint's dative is Ἰησοῖ where the New Testament has Ἰησοῦ; the name itself is the same.)
@@ -188,6 +188,12 @@ No Scripture quotation was found to be wrong, and no non-Scripture quotation tha
 ## Links
 
 - /writing/why-trust-the-bible, /writing/doctrine-of-discovery and /writing/why-didnt-the-bible-ban-slavery: all three slugs are in `docs/work/essays/link-targets.json`. Verified by reading that file on 2026-10-27.
+- [Find Help](/help), added in the voice pass where the essay names people who have left the faith over these chapters. /help is allowed by BRIEF.md. "has real people you can call" matches the page's own description ("real people to call", `client/src/pages/Help.tsx`, SEOMeta), and the page lists doubt among what it covers. Verified by reading that file on 2026-10-27.
+- `node scripts/validate-essays.mjs`, run on 2026-10-27 against a scratch JSON copy of the essay (no repo file written): language, dashes, "!", references and Closing Texts all pass. Its only three problems are that the three /writing links above point to shelf essays with no rewrite yet in `client/public/essays/`. Those rewrites must land in the same batch as this essay or before it, or the CI gate will fail.
+
+## Voice pass (2026-10-27)
+
+The final reader changed wording only. No fact, quotation, number, date, name or existing link changed, and all 52 quoted passages are byte-identical to the verified text (checked by script against HEAD). The changes: removed announced turns ("What the skeptic may not expect...", "The text also shows something easier to miss", "That matters here", "something with them most readers miss", "There is a quieter way to get these chapters wrong"); removed the "Whatever we say about..." frame, used twice and close to a sentence in the slavery pilot; replaced "the tone of a man pleased to have found the answer", which echoed the slavery pilot; cut the rulebook phrase "The sharpest form of the objection" and the two-beat closer "Christians tell them to"; softened "the easiest way out of Joshua anyone has ever proposed" to "the simplest way out of Joshua"; replaced the third "children of Jericho" concession with "Matthew's story doesn't erase Joshua 6:21" (Joshua 6:21 is verified above); clarified "offered him violence on his behalf"; renamed the last section heading to plain words; turned the closing mirror into a real question and cut the redundant line "He met her that way."
 
 ## Mechanics
 
