@@ -49,6 +49,8 @@ type Built = {
     sets: { set: string; start: string; end: string }[];
     weeks: Week[];
     rotation: string[];
+    titles: Record<string, string>;
+    setTitles: Record<string, string[]>;
   };
   problems: string[];
   notes: string[];
@@ -326,6 +328,27 @@ describe("the year map's hand overrides and sets", () => {
     expect(w?.set).toBeUndefined();
     expect(typeof w?.devotion).toBe("string");
     expect(noThanks.map.sets.some((s) => s.set === "thanksgiving")).toBe(false);
+  });
+
+  it("carry a title for every devotion a week names and every day of every set", () => {
+    const named = new Set(built.map.weeks.map((w) => w.devotion).filter((id): id is string => !!id));
+    expect(Object.keys(built.map.titles).sort()).toEqual([...named].sort());
+    for (const id of named) expect(built.map.titles[id]).toBe(inputs.titles[id]);
+    for (const [key, days] of Object.entries(inputs.sets as Record<string, number>)) {
+      expect(built.map.setTitles[key]).toHaveLength(days);
+      expect(built.map.setTitles[key].every((t) => typeof t === "string" && t.length > 0)).toBe(true);
+    }
+    expect(built.map.setTitles.advent[5]).toBe("A Child Is Given");
+  });
+
+  it("refuse a devotion or a set day with no title", () => {
+    const id = built.map.weeks.find((w) => w.devotion)!.devotion!;
+    const noTitle: Built = buildYearMap({ ...inputs, titles: { ...inputs.titles, [id]: "" } });
+    expect(noTitle.problems.join("\n")).toMatch(new RegExp(`devotion "${id}" is on the year map but has no title`));
+    const advent = [...inputs.setTitles.advent];
+    advent[2] = undefined;
+    const noDay: Built = buildYearMap({ ...inputs, setTitles: { ...inputs.setTitles, advent } });
+    expect(noDay.problems.join("\n")).toMatch(/set "advent" day 3 has no title/);
   });
 
   it("note a devotion id used twice and keep it once", () => {

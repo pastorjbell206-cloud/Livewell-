@@ -2,11 +2,14 @@
  * Home: one calm page.
  *
  * Who James is and why the site exists, in his own words from /about; then
- * three doors (the Study Bible, the essays, the books); three essays from the
- * shelf to start with; the books; one newsletter form; and a quiet way to
- * help for a reader in a hard season. Everything here is committed data
- * (positioning.ts, shelf.json, bookShelf.ts), so the page paints in full
- * without waiting on the API, and it imports nothing heavy.
+ * Find (one field: a passage or a question) and tonight's family devotion
+ * with "Continue" beside it (pages/home/, U18); four doors (the Study Bible,
+ * the essays, family devotions, the books); three essays from the shelf to
+ * start with; the books; one newsletter form; and a quiet way to help for a
+ * reader in a hard season. Everything here is committed data (positioning.ts,
+ * shelf.json, bookShelf.ts, the family year map), so the page paints in full
+ * without waiting on the API, and it imports nothing heavy: Find's search and
+ * reference parser load when its field is focused.
  *
  * The hero's markup and classes (index.css, .home-hero*) are mirrored by the
  * static hero scripts/prerender-heads.mjs writes into "/", so the first paint
@@ -14,7 +17,6 @@
  */
 import { Link } from "wouter";
 
-import AdventAtTheTable from "@/components/AdventAtTheTable";
 import Layout from "@/components/Layout";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
@@ -27,8 +29,10 @@ import {
   PORTRAIT_URL,
 } from "@/lib/positioning";
 import { START_WITH, cleanExcerpt, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
+import HomeFind from "./home/HomeFind";
+import HomeTonight from "./home/HomeTonight";
 
-/** The three doors, in the order the site is built around. */
+/** The doors, in the order the site is built around. */
 const DOORS = [
   {
     title: "Study the Bible",
@@ -39,6 +43,11 @@ const DOORS = [
     title: "Read the essays",
     href: "/writing",
     note: "A short shelf on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
+  },
+  {
+    title: "Family devotions",
+    href: "/family",
+    note: "A devotion for tonight's table, about ten minutes long: a passage, one idea to talk about, questions, and a prayer. There is one for every week of the year.",
   },
   {
     title: "The books",
@@ -122,11 +131,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE THREE DOORS: set like a book's contents page. */}
+      {/* FIND AND TONIGHT, then THE DOORS: set like a book's contents page. */}
       <section style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
         <div style={wrap}>
-          {/* From the Sunday before Advent Sunday to Christmas only; empty otherwise. */}
-          <AdventAtTheTable variant="line" />
+          <HomeFind />
+          {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
+          <HomeTonight />
           <h2 id="home-doors-title" className="sr-only">
             Where to begin
           </h2>
@@ -140,7 +150,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          {/* Not a fourth door: one quiet line to the things people use. */}
+          {/* Not another door: one quiet line to the things people use. */}
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-4) 0 0" }}>
             Also here, all free:{" "}
             <Link href="/resources" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>
