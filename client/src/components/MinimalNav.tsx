@@ -1,5 +1,5 @@
 /**
- * Primary navigation: Study, Essays, Books, Resources, About, with one source
+ * Primary navigation: Study, Topics, Family, Essays, About, with one source
  * of truth in lib/siteNav.ts so the header and footer never drift. A group
  * with several header links opens as a menu; a group with one renders as that
  * plain link. Utility actions (Find Help, search, Subscribe) sit to the right.
@@ -12,6 +12,7 @@ import { BookmarkCheck, ChevronDown, Menu, Search, X } from "lucide-react";
 
 import {
   HELP_LINK,
+  LIBRARY_LINK,
   SEARCH_SHORTCUTS,
   SITE_NAV_GROUPS,
   headerLinks,
@@ -69,9 +70,30 @@ export default function MinimalNav() {
   const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  // The phone menu. A tap inside it is not "outside": with four doors that
+  // open, closing one group on mousedown shifts the panel, and the click
+  // that should open the next group lands on whatever moved under it.
+  const mobilePanelRef = useRef<HTMLDivElement>(null);
+  // The door a mouse opened by hovering. The click that usually follows
+  // (About was a plain link until 2026-10-26) keeps that menu open instead
+  // of folding it.
+  const hoverOpened = useRef<string | null>(null);
 
   const isActive = (href: string) =>
     location === href || location.startsWith(href + "/");
+
+  // The door that holds the page in view, by its longest matching header
+  // link, so /resources/creeds reads as Study and not Topics.
+  let currentDoor = "";
+  let currentLen = 0;
+  for (const g of HEADER_GROUPS) {
+    for (const l of headerLinks(g)) {
+      if (!l.external && isActive(l.href) && l.href.length > currentLen) {
+        currentDoor = g.title;
+        currentLen = l.href.length;
+      }
+    }
+  }
 
   const prepareSearch = () => {
     if (readPassage) return;
@@ -94,6 +116,7 @@ export default function MinimalNav() {
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
+      if (mobilePanelRef.current?.contains(e.target as Node)) return;
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setOpenDropdown(null);
       }
@@ -363,21 +386,33 @@ export default function MinimalNav() {
               <div key={group.title} style={{ display: "contents" }}>
               <div
                 style={{ position: "relative" }}
-                onMouseLeave={() => openDropdown === group.title && setOpenDropdown(null)}
+                onMouseLeave={() => {
+                  hoverOpened.current = null;
+                  if (openDropdown === group.title) setOpenDropdown(null);
+                }}
               >
                 <button
-                  onClick={() =>
-                    setOpenDropdown(openDropdown === group.title ? null : group.title)
-                  }
-                  onMouseEnter={() => setOpenDropdown(group.title)}
+                  onClick={() => {
+                    if (hoverOpened.current === group.title) {
+                      hoverOpened.current = null;
+                      setOpenDropdown(group.title);
+                      return;
+                    }
+                    setOpenDropdown(openDropdown === group.title ? null : group.title);
+                  }}
+                  onMouseEnter={() => {
+                    if (openDropdown !== group.title) hoverOpened.current = group.title;
+                    setOpenDropdown(group.title);
+                  }}
                   aria-haspopup="menu"
                   aria-expanded={openDropdown === group.title}
+                  aria-current={currentDoor === group.title ? "true" : undefined}
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "4px",
                     color:
-                      openDropdown === group.title
+                      openDropdown === group.title || currentDoor === group.title
                         ? "var(--mustard-text)"
                         : "var(--ink)",
                     fontFamily: "var(--U)",
@@ -582,6 +617,7 @@ export default function MinimalNav() {
         {mobileOpen && (
           <div
             id="mobile-nav-panel"
+            ref={mobilePanelRef}
             style={{
               position: "absolute",
               top: "100%",
@@ -639,55 +675,45 @@ export default function MinimalNav() {
               }
               return (
               <div key={group.title}>
-                <div
+                {/* The whole row is the toggle: four of the five doors open
+                    here, and a tap on the name should do what the chevron does. */}
+                <button
+                  type="button"
+                  aria-label={`Show ${group.title} links`}
+                  aria-expanded={openDropdown === group.title}
+                  onClick={() =>
+                    setOpenDropdown(openDropdown === group.title ? null : group.title)
+                  }
                   style={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
+                    width: "100%",
+                    minHeight: "44px",
+                    background: "none",
+                    border: "none",
                     borderBottom: "1px solid var(--border)",
+                    cursor: "pointer",
+                    padding: "12px 4px 12px 0",
+                    fontFamily: "var(--U)",
+                    color: "var(--ink)",
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    lineHeight: "inherit",
+                    textAlign: "left",
                   }}
                 >
-                  <span
+                  <span>{group.title}</span>
+                  <ChevronDown
+                    size={18}
+                    aria-hidden
                     style={{
-                      flex: 1,
-                      fontFamily: "var(--U)",
-                      color: "var(--ink)",
-                      fontSize: "14px",
-                      fontWeight: 600,
-                      padding: "12px 0",
+                      transform:
+                        openDropdown === group.title ? "rotate(180deg)" : "none",
+                      transition: "transform 0.2s",
                     }}
-                  >
-                    {group.title}
-                  </span>
-                  <button
-                    type="button"
-                    aria-label={`Show ${group.title} links`}
-                    aria-expanded={openDropdown === group.title}
-                    onClick={() =>
-                      setOpenDropdown(openDropdown === group.title ? null : group.title)
-                    }
-                    style={{
-                      background: "none",
-                      border: "none",
-                      color: "var(--ink)",
-                      cursor: "pointer",
-                      padding: "12px 4px 12px 20px",
-                      minHeight: "44px",
-                      display: "inline-flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    <ChevronDown
-                      size={18}
-                      aria-hidden
-                      style={{
-                        transform:
-                          openDropdown === group.title ? "rotate(180deg)" : "none",
-                        transition: "transform 0.2s",
-                      }}
-                    />
-                  </button>
-                </div>
+                  />
+                </button>
                 {openDropdown === group.title && (
                   <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
                     {headerLinks(group).map(item => (
@@ -721,7 +747,7 @@ export default function MinimalNav() {
             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
               {/* What this reader saved and started, kept on this device (/my-library). */}
               <Link
-                href="/my-library"
+                href={LIBRARY_LINK.href}
                 onClick={() => setMobileOpen(false)}
                 style={{
                   flex: 1,
@@ -739,7 +765,7 @@ export default function MinimalNav() {
                   borderRadius: "var(--radius-sm)",
                 }}
               >
-                <BookmarkCheck size={16} aria-hidden /> My Library
+                <BookmarkCheck size={16} aria-hidden /> {LIBRARY_LINK.label}
               </Link>
               <Link
                 href="/subscribe"
@@ -766,8 +792,9 @@ export default function MinimalNav() {
       </nav>
 
       <style>{
-        // The five-door header needs ~770px (logo 106 + links 606 + gutters,
-        // measured at 1280); the hamburger takes over at 860 to leave air.
+        // The five-door header needs ~800px (logo 106 + links 638 + gutters,
+        // measured at 861 and 1280 with Study, Topics, Family, Essays, and
+        // About); the hamburger takes over at 860 to leave air.
         "@media (max-width: 860px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
         "@media (min-width: 861px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
       }</style>

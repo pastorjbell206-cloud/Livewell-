@@ -15,7 +15,7 @@ lived experience.
 
 The site exists to help people live well in post-Christian America and to
 understand the long history of the Christian faith. It is organized as five
-doors: Study, Essays, Books, Resources, and About.
+doors: Study, Topics, Family, Essays, and About (with the books).
 
 ## Study
 
