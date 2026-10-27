@@ -6,7 +6,7 @@ In late July 2019 Joshua Harris told his followers on Instagram that he no longe
 
 He gave two names to one experience, and most of the argument about deconstruction since then has been over which name is right. To many in the church, the word is a gentler label for apostasy, a way of leaving that sounds like thinking. To many outside the church, it means growing up and finally telling the truth about what you were taught. I don't know how Harris's story ends. Nobody does, and it isn't ours to finish for him. But both readings assume that what is being taken apart is Christianity. Very often it is something else.
 
-The word itself came from the French philosopher Jacques Derrida, who used it in the late 1960s for a way of reading texts against their own assumptions. In American churches it now means something plainer. People take apart the faith they were raised in, piece by piece, to see what holds. Some of them leave. Others come back to a deeper faith than the one they left, and many are still somewhere in between. Where does deconstruction usually start? What deserves to come down? And what is underneath when it does?
+The word in its modern sense came from the French philosopher Jacques Derrida, who used it in the late 1960s for a way of reading texts against their own assumptions. In American churches it now means something plainer. People take apart the faith they were raised in, piece by piece, to see what holds. Some of them leave. Others come back to a deeper faith than the one they left, and many are still somewhere in between. Where does deconstruction usually start? What deserves to come down? And what is underneath when it does?
 
 ## Where It Usually Starts
 
