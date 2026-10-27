@@ -1,7 +1,7 @@
 From cbae07ee57a0bc452af0a28095b08135bdf9b2b4 Mon Sep 17 00:00:00 2001
 From: Claude <noreply@anthropic.com>
 Date: Tue, 27 Oct 2026 17:07:31 +0000
-Subject: [PATCH] U29: /writing asks for the shelf only (both API runtimes)
+Subject: [PATCH 1/2] U29: /writing asks for the shelf only (both API runtimes)
 
 posts.listPublished takes an optional { slugs, since }. With either field
 it returns only the rows named by slug, or whose essay date (publishedAt,
