@@ -9,6 +9,7 @@ import { Route, Switch } from "wouter";
 import superjson from "superjson";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { shelfListingInput } from "@/lib/shelf";
 import Writing from "./Writing";
 import ArticleDetail from "./ArticleDetail";
 import Search from "./Search";
@@ -120,6 +121,30 @@ describe("/writing", () => {
 
     expect(await screen.findByRole("heading", { level: 2, name: "Latest" })).toBeInTheDocument();
     expect(screen.getByText("A Draft Finished Later")).toBeInTheDocument();
+  });
+
+  it("asks the API for the shelf only, not every published row", async () => {
+    const fetchSpy = vi.fn(trpcFetch({ "posts.listPublished": [] }));
+    vi.stubGlobal("fetch", fetchSpy);
+    at("/writing");
+    renderWithProviders(<Writing />);
+
+    await waitFor(() =>
+      expect(fetchSpy.mock.calls.some(([u]) => String(u).includes("posts.listPublished"))).toBe(true)
+    );
+    const url = new URL(
+      String(fetchSpy.mock.calls.find(([u]) => String(u).includes("posts.listPublished"))![0]),
+      "http://localhost"
+    );
+    const procs = decodeURIComponent(url.pathname.slice("/api/trpc/".length)).split(",");
+    const sent = JSON.parse(url.searchParams.get("input") ?? "{}")[String(procs.indexOf("posts.listPublished"))];
+    const asked = superjson.deserialize(sent) as { slugs: string[]; since: string };
+    expect(asked).toEqual(shelfListingInput());
+    // The public shelf by slug, nothing pending or retired, and the Latest cutoff.
+    expect(asked.slugs).toContain("when-the-church-married-empire");
+    expect(asked.slugs).not.toContain("what-christian-nationalism-is-and-is-not");
+    expect(asked.slugs).not.toContain("the-atheist-in-the-pulpit");
+    expect(asked.since).toBe("2026-10-13T00:00:00.000Z");
   });
 
   it("narrows to one section with ?section=", () => {

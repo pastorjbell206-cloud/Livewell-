@@ -153,6 +153,20 @@ export function liveShelfEssays(): ShelfEssay[] {
     .map(({ e }) => e);
 }
 
+/**
+ * What /writing asks posts.listPublished for: the public shelf essays by slug,
+ * and anything that went out at or after the cutoff (the Latest group), so the
+ * API sends the shelf rather than every published row. Both runtimes answer it
+ * (server/posts-listing.ts, api/index.ts); the page still applies the shelf
+ * rule to whatever comes back.
+ */
+export function shelfListingInput(): { slugs: string[]; since: string } {
+  return {
+    slugs: liveShelfEssays().map((e) => e.slug),
+    since: new Date(LATEST_CUTOFF).toISOString(),
+  };
+}
+
 /** Sections that have at least one public essay, in display order. */
 export function liveSections(): ShelfSection[] {
   const withEssays = new Set(liveShelfEssays().map((e) => e.section));
