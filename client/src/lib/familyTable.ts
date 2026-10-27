@@ -14,7 +14,7 @@
  *   this browser, through lib/storage.
  */
 import { familySetDayOn, familyWeekOn, onFamilyMap, type FamilySetKey } from "./familyYear";
-import { FAMILY_SETS } from "./familyYear.generated";
+import { FAMILY_SETS, FAMILY_SET_TITLES, FAMILY_TITLES } from "./familyYear.generated";
 import { catechismWeekIndex } from "./familyCatechism";
 import { readStoredJSON, writeStoredJSON } from "./storage";
 
@@ -116,6 +116,15 @@ export function tonightOn(date: string): Tonight | null {
     if (!best || gap < best.gap) best = { set: w.set, day, gap };
   }
   return best ? { id: seasonalId(best.set, best.day), set: best.set, day: best.day } : null;
+}
+
+/**
+ * Tonight's title from the year map alone (no index fetch), for Home's
+ * tonight line. Null only if the map has none, which its generator refuses.
+ */
+export function tonightTitle(t: Tonight): string | null {
+  if (t.set && t.day) return FAMILY_SET_TITLES[t.set]?.[t.day - 1] ?? null;
+  return FAMILY_TITLES[t.id] ?? null;
 }
 
 /**

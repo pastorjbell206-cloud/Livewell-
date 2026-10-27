@@ -114,6 +114,59 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
   return rows.sort((a, b) => b.when.localeCompare(a.when));
 }
 
+/**
+ * The self-checks that keep their answers part-way through, each on its own
+ * page's key, by SELF_CHECKS id. Each saves { answers, savedAt } as the reader
+ * goes and once more on finishing, just before its result is recorded.
+ */
+export const SELF_CHECK_DRAFTS: Record<string, string> = {
+  "life-audit": "livewell-progress-life-audit",
+  "emotional-health": "livewell-progress-emotional-health",
+  "spiritual-gifts": "livewell-progress-spiritual-gifts",
+  marriage: "livewell-progress-marriage-assessment",
+  "financial-health": "livewell-progress-financial-health",
+};
+
+/** One thing to pick up again: where it opens, how to name it after "Continue", and when it was last touched. */
+export interface ContinueItem {
+  href: string;
+  /** "the Life Audit", "your eight-week plan". */
+  label: string;
+  when: string;
+}
+
+const isDraft = (x: unknown): x is { answers: Record<string, unknown>; savedAt: string } =>
+  isObject(x) && typeof x.savedAt === "string" && isObject(x.answers);
+
+/**
+ * The one thing on this device to continue, for Home: an eight-week plan not
+ * yet walked through, or a self-check left part-way (answers saved after its
+ * last finished result, or never finished). The most recent wins; null when
+ * there is nothing. Essays are not offered, because the site remembers only
+ * the essays a reader finished (lib/readProgress), never one begun.
+ */
+export function continueHere(): ContinueItem | null {
+  if (typeof window === "undefined") return null;
+  const items: ContinueItem[] = [];
+
+  for (const key of storageKeys()) {
+    const m = key.match(/^lw-plan-(.+)$/);
+    if (!m) continue;
+    const p = readStoredJSON(key, isPlanProgress, null);
+    if (p && Object.values(p.done).filter(Boolean).length < 8) items.push({ href: `/plans/${m[1]}`, label: "your eight-week plan", when: p.startedAt });
+  }
+
+  for (const [id, key] of Object.entries(SELF_CHECK_DRAFTS)) {
+    const draft = readStoredJSON(key, isDraft, null);
+    if (!draft || Object.keys(draft.answers).length === 0) continue;
+    const runs = readStoredJSON(`livewell-history-${id}`, isRuns, []);
+    const finished = runs.length > 0 && runs[runs.length - 1].date >= draft.savedAt;
+    if (!finished) items.push({ href: SELF_CHECKS[id].href, label: `the ${SELF_CHECKS[id].title}`, when: draft.savedAt });
+  }
+
+  return items.sort((a, b) => b.when.localeCompare(a.when))[0] ?? null;
+}
+
 /** Saved verses, prayers, quotes, and wisdom entries, shown in full at /tools/saved. */
 export function savedSnippetCount(): number {
   const n = (key: string) => readStoredJSON(key, isList, []).length;

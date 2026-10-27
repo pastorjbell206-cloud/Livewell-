@@ -445,6 +445,26 @@ img{display:block;max-width:100%}
   .home-hero__name{margin:0 0 4px}
 }
 
+/* Home: Find and tonight (pages/home/, U18), the first things under the hero,
+   on the cream of the doors section. Not in the static hero, so first paint
+   is unchanged. Links are underlined in mustard; inline links get vertical
+   padding so a thumb has a 44 px target without changing the line. */
+.home-find{margin:0 0 var(--s-4)}
+.home-find__label{display:block;font-family:var(--F);font-weight:400;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px}
+.home-find__row{display:flex;gap:10px;max-width:680px}
+.home-find__input{flex:1 1 auto;min-width:0;min-height:52px;padding:0 16px;font-family:var(--U);font-size:17px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);-webkit-appearance:none;appearance:none}
+.home-find__input::placeholder{color:var(--ink-muted);opacity:1}
+.home-find__input:focus-visible{border-color:var(--ink)}
+.home-find__go{flex:0 0 auto;min-height:52px}
+.home-find__passage,.home-tonight__link{font-family:var(--U);font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.22em}
+.home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
+.home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
+.home-tonight{margin:0 0 var(--s-4)}
+.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px var(--s-4)}
+.home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
+.home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
+.home-tonight__link{padding:10px 0}
+
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the
  * hierarchy, hairlines replace borders, the whole row is the link (no

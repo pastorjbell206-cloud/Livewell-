@@ -22,6 +22,9 @@
  *     below hands those weeks to it.
  *   - The rotation counts from ROTATION_EPOCH, not from the first week the
  *     map lists, so extending the map never reshuffles it.
+ *   - Each devotion a week names, and each day of each daily set, carries its
+ *     title (FAMILY_TITLES, FAMILY_SET_TITLES), so Home can say tonight's
+ *     devotion by name without fetching the family index.
  *   - A hand override (client/public/family-year-overrides.json) pins one
  *     devotion, from any family-devotions*.json file, to one week the rotation
  *     would serve (never a week a daily set serves). A pinned week does not use
@@ -108,17 +111,26 @@ export function loadInputs(root = ROOT) {
     readJSON(root, rel).map((d) => ({ id: d?.id, file: rel })),
   );
   const devotionIds = new Set();
+  const titles = {};
   for (const name of fs.readdirSync(path.join(root, "client/public")).sort()) {
     if (!DEVOTION_FILE_RE.test(name)) continue;
     const list = readJSON(root, `client/public/${name}`);
-    if (Array.isArray(list)) for (const d of list) if (typeof d?.id === "string") devotionIds.add(d.id);
+    if (!Array.isArray(list)) continue;
+    for (const d of list) {
+      if (typeof d?.id !== "string") continue;
+      devotionIds.add(d.id);
+      if (!(d.id in titles)) titles[d.id] = d.title;
+    }
   }
   const seasonal = readJSON(root, SEASONAL_FILE);
   const sets = Object.fromEntries(
     Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.length : -1]),
   );
+  const setTitles = Object.fromEntries(
+    Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.map((d) => d?.title) : []]),
+  );
   const overrides = fs.existsSync(path.join(root, OVERRIDES_FILE)) ? readJSON(root, OVERRIDES_FILE) : { weeks: [] };
-  return { foundations, devotionIds, sets, overrides };
+  return { foundations, devotionIds, sets, overrides, titles, setTitles };
 }
 
 /** The ordered rotation: Foundations ids, a repeated id kept at its first place. */
@@ -230,7 +242,29 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
     weeks.push(row);
   });
 
-  return { map: { from, through, seasons, sets, weeks, rotation }, problems, notes: repeated };
+  // Titles, so a page can name tonight's devotion from the map alone. Only
+  // checked when the inputs carry them (tests may build from ids alone).
+  const titles = {};
+  const setTitles = {};
+  const hasTitle = (t) => typeof t === "string" && t.trim() !== "";
+  if (inputs.titles) {
+    for (const id of [...new Set(weeks.map((w) => w.devotion).filter(Boolean))].sort()) {
+      if (hasTitle(inputs.titles[id])) titles[id] = inputs.titles[id];
+      else problems.push(`devotion "${id}" is on the year map but has no title in any client/public/family-devotions*.json file`);
+    }
+  }
+  if (inputs.setTitles) {
+    for (const key of Object.keys(SETS)) {
+      if (served.get(SETS[key].season) !== key) continue;
+      const list = inputs.setTitles[key] ?? [];
+      list.forEach((t, i) => {
+        if (!hasTitle(t)) problems.push(`${SEASONAL_FILE}: set "${key}" day ${i + 1} has no title`);
+      });
+      setTitles[key] = list;
+    }
+  }
+
+  return { map: { from, through, seasons, sets, weeks, rotation, titles, setTitles }, problems, notes: repeated };
 }
 
 /** A reason the map is too short, or null: it must reach at least a year past today. */
@@ -306,6 +340,12 @@ export function renderYearModule(map) {
     "",
     "/** Every week on the map, consecutive, in order. */",
     `export const FAMILY_WEEKS: FamilyWeek[] = [\n${map.weeks.map(row).join("\n")}\n];`,
+    "",
+    "/** The title of every devotion a week above names, by id. */",
+    `export const FAMILY_TITLES: Record<string, string> = {\n${Object.entries(map.titles ?? {}).map(([id, t]) => `  ${JSON.stringify(id)}: ${JSON.stringify(t)},`).join("\n")}\n};`,
+    "",
+    "/** The title of each day of each daily set, day 1 first. */",
+    `export const FAMILY_SET_TITLES: Partial<Record<FamilySetKey, string[]>> = {\n${Object.entries(map.setTitles ?? {}).map(([key, list]) => `  ${key}: ${JSON.stringify(list)},`).join("\n")}\n};`,
     "",
   ].join("\n");
 }

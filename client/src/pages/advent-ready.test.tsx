@@ -1,7 +1,8 @@
 /**
  * Advent ready (U13), with the clock set: the family Advent calendar appears
  * on Home and /family from November 22, 2026 (the Sunday a week before Advent
- * Sunday) through Christmas Day and not outside it; a link from either
+ * Sunday) through Christmas Day and not outside it (on Home, from December 1
+ * it is tonight's line, linking the day's own page, U18); a link from /family
  * (/family/devotions?tab=advent&day=N) lands on that day's own page, which
  * The Table's library (U17) opens in place of the list; and the library's
  * Advent tab marks tonight's day and says when Advent itself begins. Rendered
@@ -88,8 +89,10 @@ describe("Home and /family before, during, and after the window", () => {
     setToday(2026, 12, 6);
     serveFamilyFiles();
     const home = renderWithProviders(<Home />);
-    expect(screen.getByRole("link", { name: "December 6 in the family Advent calendar" })).toHaveAttribute("href", "/family/devotions?tab=advent&day=6");
-    expect(screen.getByTestId("advent-at-the-table")).toHaveTextContent(/^Tonight at the table:/);
+    // Home folds the calendar into tonight's line (U18): the day by name, straight to its page.
+    expect(screen.getByTestId("home-tonight")).toHaveTextContent("Tonight at the table: A Child Is Given, December 6 in the family Advent calendar.");
+    expect(screen.getByRole("link", { name: "A Child Is Given" })).toHaveAttribute("href", "/family/devotions/advent-6");
+    expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
     home.unmount();
 
     renderWithProviders(<Family />);

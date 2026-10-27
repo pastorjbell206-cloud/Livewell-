@@ -3,7 +3,7 @@
  * browser, and skips anything it cannot trust.
  */
 import { afterEach, describe, expect, it } from "vitest";
-import { collectProgress, recentEssays, savedSnippetCount } from "./myProgress";
+import { collectProgress, continueHere, recentEssays, savedSnippetCount } from "./myProgress";
 
 afterEach(() => localStorage.clear());
 
@@ -28,6 +28,47 @@ describe("collectProgress", () => {
     localStorage.setItem("lw-plan-anxiety", "{oops");
     localStorage.setItem("livewell-history-marriage", JSON.stringify("not a list"));
     expect(collectProgress()).toEqual([]);
+  });
+});
+
+describe("continueHere", () => {
+  const draft = (savedAt: string, answers: Record<number, number> = { 0: 3 }) => JSON.stringify({ answers, step: 1, savedAt });
+  const runs = (...dates: string[]) => JSON.stringify(dates.map((date, i) => ({ date, total: 0.5, areas: {}, key: String(i) })));
+
+  it("is null with nothing on this device", () => {
+    expect(continueHere()).toBeNull();
+  });
+
+  it("offers an eight-week plan not yet walked through, and not one finished", () => {
+    localStorage.setItem("lw-plan-anxiety", JSON.stringify({ startedAt: "2026-10-01T12:00:00.000Z", done: { 1: true } }));
+    expect(continueHere()).toEqual({ href: "/plans/anxiety", label: "your eight-week plan", when: "2026-10-01T12:00:00.000Z" });
+    const all = Object.fromEntries([1, 2, 3, 4, 5, 6, 7, 8].map((n) => [n, true]));
+    localStorage.setItem("lw-plan-anxiety", JSON.stringify({ startedAt: "2026-10-01T12:00:00.000Z", done: all }));
+    expect(continueHere()).toBeNull();
+  });
+
+  it("offers a self-check left part-way, and not one whose result came after its last save", () => {
+    localStorage.setItem("livewell-progress-life-audit", draft("2026-10-20T12:00:00.000Z"));
+    expect(continueHere()).toEqual({ href: "/tools/life-audit", label: "the Life Audit", when: "2026-10-20T12:00:00.000Z" });
+    localStorage.setItem("livewell-history-life-audit", runs("2026-10-20T12:00:00.000Z"));
+    expect(continueHere()).toBeNull();
+    // Answers changed after that result: part-way again.
+    localStorage.setItem("livewell-progress-life-audit", draft("2026-10-22T09:00:00.000Z"));
+    expect(continueHere()?.href).toBe("/tools/life-audit");
+  });
+
+  it("ignores a self-check with no answers yet, and values it cannot trust", () => {
+    localStorage.setItem("livewell-progress-marriage-assessment", draft("2026-10-20T12:00:00.000Z", {}));
+    localStorage.setItem("livewell-progress-emotional-health", "{oops");
+    localStorage.setItem("lw-plan-grief", JSON.stringify({ done: {} }));
+    expect(continueHere()).toBeNull();
+  });
+
+  it("takes the most recent of several", () => {
+    localStorage.setItem("lw-plan-anxiety", JSON.stringify({ startedAt: "2026-10-01T12:00:00.000Z", done: {} }));
+    localStorage.setItem("livewell-progress-marriage-assessment", draft("2026-10-05T12:00:00.000Z"));
+    localStorage.setItem("livewell-progress-financial-health", draft("2026-09-05T12:00:00.000Z"));
+    expect(continueHere()).toEqual(expect.objectContaining({ href: "/tools/marriage-assessment", label: "the Marriage Health Self-Check" }));
   });
 });
 

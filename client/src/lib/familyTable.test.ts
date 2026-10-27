@@ -21,6 +21,7 @@ import {
   readFamilyProgress,
   recordDevotionDone,
   tonightOn,
+  tonightTitle,
   weekOfYear,
   whenSaid,
   withDone,
@@ -83,6 +84,22 @@ describe("tonightOn", () => {
     }
     expect(nights).toBeGreaterThan(365 * 5);
     expect(missing).toEqual([]);
+  });
+
+  it("has tonight's title from the year map, the same as the index's, on every night", () => {
+    const titles = new Map(INDEX.devotions.map((r) => [r.id, r.title]));
+    const wrong: string[] = [];
+    const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
+    const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
+    while (day <= last) {
+      const iso = day.toISOString().slice(0, 10);
+      const t = tonightOn(iso);
+      if (t && tonightTitle(t) !== titles.get(t.id)) wrong.push(`${iso}: ${t.id} is "${tonightTitle(t)}"`);
+      day.setUTCDate(day.getUTCDate() + 1);
+    }
+    expect(wrong).toEqual([]);
+    expect(tonightTitle({ id: "advent-6", set: "advent", day: 6 })).toBe("A Child Is Given");
+    expect(tonightTitle({ id: "no-such-devotion" })).toBeNull();
   });
 
   it("is null off the map and for a date that cannot exist", () => {
