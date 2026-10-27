@@ -17,7 +17,7 @@ The methods actually used, and what the words below mean:
 - **"Site Greek data"**: read in this repository's `client/public/bible/ch/mark/2.json` and `client/public/bible/ch/mark/12.json` (STEPBible tagged Greek).
 - **"Live chapter copy"**: read in `scratchpad/live-posts.json`, a copy of the site's `posts.getBySlug` API responses that an earlier run saved on 2026-10-26. This check did not fetch it.
 - **"Link list"**: checked against `docs/work/essays/link-targets.json` and the links BRIEF.md allows.
-- **"Mechanical scan"**: grep of the essay for U+2014 em-dashes, exclamation points, the CLAUDE.md forbidden words and phrases, and the BRIEF.md stamps. After the edits: no em-dashes, no exclamation points, no forbidden words, no stamps. Length is about 3,570 words.
+- **"Mechanical scan"**: grep of the essay for U+2014 em-dashes, exclamation points, the CLAUDE.md forbidden words and phrases, and the BRIEF.md stamps. After the edits: no em-dashes, no exclamation points, no forbidden words, no stamps. Length is about 3,570 words. Rescanned on 2026-10-27 after the voice pass: same result (the only en-dashes are in verse ranges), about 3,600 words.
 - **"Not checked (textbook)"**: no source was opened or searched. The verifier judged the claim to be standard reference knowledge. That judgment is not a check.
 
 ## Corrections made in the essay
@@ -30,6 +30,18 @@ The methods actually used, and what the words below mean:
 6. What About the Contradictions?, Mark 12:26: "a few chapters later" became "later in his Gospel." Mark 2:26 and Mark 12:26 are ten chapters apart.
 
 Corrections 1 to 4 were made because the quotations could not be checked, not because a check failed. Corrections 5 and 6 fix wording that claimed more than the facts allow. No other claim was found to be wrong.
+
+## Voice pass, 2026-10-27
+
+The final reader revised the prose for voice. No fact, quotation, number, date, name or link was added or removed; a script confirmed all 19 quoted strings, all 6 links, the headings and every number match the pre-pass text. Changes that touch a claim:
+
+7. Do We Have What They Wrote?: "With one copy, a scribe's slip is invisible" overclaimed (the same paragraph says classicists correct slips in Tacitus's single copy). It now reads "A slip in a single copy can easily go unseen."
+8. Do We Have What They Wrote?: "a gap of generations, not a thousand years" compared the gap with a figure the essay never gave for the New Testament. It now compares it with the seven centuries between Tacitus and his manuscript, the figure already in the essay.
+9. The Comma Johanneum: "a verse most Christians have never heard of" became "a verse whose history few Christians know," and "the church let it go" became "most of the church let it go" (the NKJV and KJV readers keep it).
+10. Ehrman and Metzger: "They disagreed about God, but not about what the manuscripts show" claimed more agreement than Ehrman's appendix states. It now reads "On that point, at least, they still agreed," meaning the point just paraphrased (the variants do not touch the essential beliefs).
+11. What About the Contradictions?: "the differences between the Gospels, which is where Ehrman's trouble started" was wrong, because Mark 2:26 conflicts with 1 Samuel 21, not with another Gospel. It now reads "the apparent contradictions, which is where Ehrman's trouble started. Many of them are between the Gospels."
+12. Chicago Statement: "The most careful modern statement" became "A careful modern statement," and the closing line now draws only the inference Article XIII supports (see that section).
+13. Removed or reworded paragraph-end epigrams, one tidy triplet, the repeated "nobody was hiding" motif, and a vague framing sentence ("That changes what the question is finally asking"). These carried no claims.
 
 ## Original wording, for restoring
 
@@ -75,6 +87,8 @@ The writer's ledger left these out of the replaced essays, unverified: the "99.5
 - Larger papyri survive from the late second and third centuries. Not checked (textbook: P46, P66, P75).
 - Codex Sinaiticus, the oldest complete New Testament, was copied in the fourth century. Not checked (textbook; writer reported Leipzig University Library).
 - The early papyri and the fourth-century codices carry substantially the same text. General statement. Not checked (textbook: for example, P75's close agreement with Codex Vaticanus).
+- The gap is "of generations, not the seven centuries that separate Tacitus from his manuscript" (voice pass, correction 8). Comparison of two figures already in the essay: the late second and third century papyri and Sinaiticus against the roughly 730-year Tacitus gap above. Not checked beyond that arithmetic.
+- A slip in a single copy can easily go unseen; among thousands of copies made in Egypt, Syria and Italy, a mistake stands out (voice pass, correction 7). General statement of method. Not checked (textbook).
 - Modern Bibles note that some of the earliest manuscripts end Mark at 16:8. Paraphrase of the note, not quoted. ESV copy: Mark 16:9 opens with the double bracket "[[" that marks 16:9 to 20; the copy does not carry the note's wording. Note wording not checked (reference knowledge: the ESV note reads that some of the earliest manuscripts do not include 16:9 to 20).
 - John 8, the woman caught in adultery, set off in brackets with a note that the earliest manuscripts don't include it. Paraphrase, not quoted. ESV copy: John 7:53 opens with "[[". Note wording not checked.
 - KJV 1 John 5:7: "For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one." KJV copy: matched word for word and point for point. The translation is named because the KJV wording is the point. ESV copy, for contrast: 1 John 5:7 reads "For there are three that testify," without the Comma.
@@ -83,6 +97,7 @@ The writer's ledger left these out of the replaced essays, unverified: the "99.5
 - Erasmus left it out of his printed Greek New Testament in 1516 and added it in his third edition in 1522; from there it passed into the King James. Not checked (textbook; writer reported H. J. de Jonge, "Erasmus and the Comma Johanneum"). The essay does not repeat the disputed story of Erasmus's promise.
 - The Greek theologians of the fourth-century Trinitarian debates never quoted it. Paraphrase, not quoted. Not checked (textbook: Metzger's *Textual Commentary*, as the writer reported it).
 - Most modern translations, made by scholars who confess the Trinity, have taken it out. ESV copy confirms that the ESV omits it. Other translations not checked (textbook: NIV, CSB, NRSV and NASB omit it; NKJV keeps it).
+- The doctrine never rested on the verse, and "most of the church let it go" (voice pass, correction 9; was "the church let it go"). Inference from the two lines above. Not checked.
 
 ## Dead Sea Scrolls
 
@@ -99,6 +114,7 @@ The writer's ledger left these out of the replaced essays, unverified: the "99.5
 - Ehrman, in a question-and-answer appendix to *Misquoting Jesus*, said his position did not stand at odds with Metzger's that the essential Christian beliefs are not affected by the variants. Paraphrase (correction 4). Not checked, and neither is the appendix's location in later paperback editions.
 - Metzger was Ehrman's old teacher. Not checked (textbook: he supervised Ehrman's Princeton PhD).
 - Metzger was an ordained Presbyterian minister. Not checked (textbook; writer reported his 2007 obituaries).
+- "On that point, at least, they still agreed" (voice pass, correction 10). Restates only the paraphrased appendix claim above. Not checked.
 
 ## Who Chose the Books?
 
@@ -107,7 +123,7 @@ The writer's ledger left these out of the replaced essays, unverified: the "99.5
 - Paul's letters were being read as Scripture even earlier. General statement, supported in the essay by 2 Peter 3:16. Not checked beyond that verse.
 - 2 Peter 3:16, "the other Scriptures" and "there are some things in them that are hard to understand." ESV copy: matched. The ESV begins that sentence "There are"; the essay lowercases "there" inside its own sentence.
 - Athanasius of Alexandria's letter for Easter in 367 is the first list we know of that names exactly the twenty-seven books. Patristic library, "From Letter 39 (for 367)" (NPNF), section 5: four Gospels, Acts, seven catholic epistles, fourteen epistles of Paul (Hebrews among them) and Revelation, which makes twenty-seven. The heading calls it the thirty-ninth letter "on the Paschal festival." Confirmed. "First we know of" is the common scholarly framing; not checked.
-- Hebrews, James and Revelation were questioned for a long time in some places, and the church's own historians preserved the arguments. Patristic library, Eusebius, *Church History* (NPNF), 3.3.5: "some have rejected the Epistle to the Hebrews, saying that it is disputed by the church of Rome"; 3.25.3: James "among the disputed writings, which are nevertheless recognized by many"; 3.25.2 and 3.25.4: the Apocalypse of John placed among the accepted books "if it really seem proper," while "some, as I said, reject" it. Confirmed.
+- Hebrews, James and Revelation were questioned for a long time in some places, and the church's own historians wrote the arguments down (the essay now says so in the sentence after the arguments, before the councils). Patristic library, Eusebius, *Church History* (NPNF), 3.3.5: "some have rejected the Epistle to the Hebrews, saying that it is disputed by the church of Rome"; 3.25.3: James "among the disputed writings, which are nevertheless recognized by many"; 3.25.2 and 3.25.4: the Apocalypse of John placed among the accepted books "if it really seem proper," while "some, as I said, reject" it. Confirmed.
 - The councils that came later mostly put in writing what the churches had already been reading. General statement (Hippo 393 and Carthage 397 not named). Not checked (textbook).
 - Link to /writing/who-decided-what-books-are-in-the-bible. Link list: present in link-targets.json.
 
@@ -128,6 +144,7 @@ The writer's ledger left these out of the replaced essays, unverified: the "99.5
 
 ## What About the Contradictions?
 
+- The apparent contradictions are where Ehrman's trouble started, and many of them are between the Gospels (voice pass, correction 11). Mark 2:26 against 1 Samuel 21, as confirmed in the opening section; the earlier wording wrongly made it a difference between Gospels.
 - Matthew has Mary Magdalene and "the other Mary" at the tomb, and an angel sitting on the stone. ESV copy: Matthew 28:1 (the quoted phrase matched) and 28:2 ("rolled back the stone and sat on it"). Confirmed.
 - Mark has three women and a young man in a white robe inside the tomb. ESV copy: Mark 16:1 (Mary Magdalene, Mary the mother of James, and Salome) and 16:5 ("entering the tomb, they saw a young man ... dressed in a white robe"). Confirmed.
 - Luke has a larger group of women and two men in dazzling clothes. Paraphrase. ESV copy: Luke 24:4 ("two men stood by them in dazzling apparel") and 24:10 (Mary Magdalene, Joanna, Mary the mother of James "and the other women with them"). Confirmed.
@@ -145,7 +162,8 @@ The writer's ledger left these out of the replaced essays, unverified: the "99.5
 
 - The Chicago Statement on Biblical Inerrancy, 1978. Creeds.json metadata: year 1978, International Council on Biblical Inerrancy, Chicago. Confirmed.
 - It says inerrancy is not negated by "the topical arrangement of material, variant selections of material in parallel accounts, or the use of free citations." Creeds.json, Article XIII (denial): "We further deny that inerrancy is negated by Biblical phenomena such as ... the topical arrangement of material, variant selections of material in parallel accounts, or the use of free citations." Matched word for word.
-- The most careful modern statement of inerrancy, drafted by scholars who knew these passages well. Characterization. Not checked.
+- A careful modern statement of inerrancy, drafted by scholars who knew these passages well (voice pass, correction 12; was "The most careful"). Characterization. Not checked.
+- "As its own framers stated it, the doctrine never required the four Gospels to tell the story the same way." Inference from Article XIII's denial quoted above ("variant selections of material in parallel accounts"). Supported by that text.
 - Many evangelical churches confess that Scripture is without error. General statement. Not checked (textbook).
 - One apostle admits another is sometimes hard to understand. ESV copy: 2 Peter 3:15 to 16 (Peter on "our beloved brother Paul"). Confirmed.
 
