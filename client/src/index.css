@@ -640,7 +640,8 @@ img{display:block;max-width:100%}
 .sy-chapter:hover .sy-chapter__ref{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .sy-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-2) 0 6px}
 .sy-guides ul{list-style:none;margin:0;padding:0}
-.sy-guides li{font-family:var(--U);font-size:15px;line-height:1.5;padding:6px 0}
+.sy-guides li{font-family:var(--U);font-size:15px;line-height:1.5}
+.sy-guides a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
 .sy-day__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
 .sy-step{display:flex;justify-content:space-between;gap:12px;margin-top:var(--s-3);padding-top:var(--s-2);border-top:1px solid var(--border)}
 .sy-step__btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);background:transparent;border:none;cursor:pointer}

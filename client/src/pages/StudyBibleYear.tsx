@@ -28,16 +28,17 @@ import { chapterHref } from "@/lib/bible";
 import {
   PLAN_DAYS,
   PLAN_PATH,
+  chapterName,
   chaptersOf,
   dayFromQuery,
   dateForDay,
   fetchStoryPlan,
   longDate,
-  nextUnreadDay,
   openingDay,
   planDayFor,
   planMonths,
   readPlanDays,
+  readerPlace,
   setPlanDay,
   shortDate,
   type StoryPlan,
@@ -50,7 +51,7 @@ export default function StudyBibleYear() {
     <Layout>
       <SEOMeta
         title="Read the Whole Story of the Bible in 2027"
-        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, the guide to their world, your place kept on this device, and a reminder on your phone."
+        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, a guide to their world where one belongs, your place kept on this device, and a reminder on your phone."
         url="https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027"
       />
       <PageHead
@@ -119,9 +120,8 @@ function Plan({ plan }: { plan: StoryPlan }) {
   const guides = d.guides
     .map(slug => plan.guides.find(g => g.slug === slug))
     .filter((g): g is { slug: string; title: string } => !!g);
-  const place = nextUnreadDay(done);
+  const place = readerPlace(done);
   const read = done.has(day);
-  const name = (slug: string) => plan.books[slug] ?? slug;
   const inYear = today >= 1 && today <= PLAN_DAYS;
   const reminder =
     today < 1
@@ -156,7 +156,7 @@ function Plan({ plan }: { plan: StoryPlan }) {
           {act &&
             (actBegins ? (
               <p className="sy-day__act">
-                {act.act} begins today:{" "}
+                {act.act} begins here:{" "}
                 <Link href={`/study/bible/story/${act.id}`} className="sy-link">
                   {act.title}
                 </Link>
@@ -177,7 +177,7 @@ function Plan({ plan }: { plan: StoryPlan }) {
                   className="sy-chapter"
                 >
                   <span className="sy-chapter__ref">
-                    {name(c.slug)} {c.chapter}
+                    {chapterName(plan.books, c.slug, c.chapter)}
                   </span>
                   {c.title && (
                     <span className="sy-chapter__title">{c.title}</span>
@@ -353,20 +353,26 @@ function Year({
 }) {
   const first = (n: number) => {
     const [slug, from] = plan.days[n - 1].read[0];
-    return `${plan.books[slug] ?? slug} ${from}`;
+    return chapterName(plan.books, slug, from);
   };
   const last = (n: number) => {
     const runs = plan.days[n - 1].read;
     const [slug, , to] = runs[runs.length - 1];
-    return `${plan.books[slug] ?? slug} ${to}`;
+    return chapterName(plan.books, slug, to);
   };
   // Only an open month renders its days, so the page holds a month of rows, not a year of them.
   const months = planMonths();
   const monthOf = (n: number) =>
     months.find(m => n >= m.first && n <= m.last)?.name ?? "";
   const [open, setOpen] = useState(() => new Set([monthOf(day)]));
-  const current = monthOf(day);
-  if (!open.has(current)) setOpen(new Set(open).add(current));
+  // When the day changes (a step, a pick, today's day), open its month so its
+  // row shows; the reader can still close any month, this one included.
+  const [shownDay, setShownDay] = useState(day);
+  if (shownDay !== day) {
+    setShownDay(day);
+    const current = monthOf(day);
+    if (!open.has(current)) setOpen(new Set(open).add(current));
+  }
   const toggle = (name: string, isOpen: boolean) => {
     if (open.has(name) === isOpen) return;
     const next = new Set(open);

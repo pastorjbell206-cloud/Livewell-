@@ -139,4 +139,38 @@ describe("Read the whole story in 2027", () => {
     expect(await dayCard(PLAN.days[39].label)).toBeInTheDocument();
   });
 
+  it("keeps the place of a reader who joined late after the furthest day read, not at day 1", async () => {
+    at(new Date(2027, 1, 12, 7)); // day 43
+    window.localStorage.setItem(PLAN_PROGRESS_KEY, JSON.stringify([40, 41, 42]));
+    serve();
+    renderAt(PLAN_PATH);
+    const card = await dayCard(PLAN.days[42].label);
+    expect(card.querySelector(".sy-day__when")?.textContent).toBe("Day 43 of 365 · Friday, February 12");
+    expect(within(card).queryByText("Your place on this device:", { exact: false })).toBeNull();
+    expect(card.textContent).not.toMatch(/day 1\b/);
+  });
+
+  it("lets the reader close the month the day sits in", async () => {
+    at(new Date(2026, 9, 27, 9));
+    serve();
+    renderAt(PLAN_PATH);
+    await dayCard(PLAN.days[0].label);
+    const year = screen.getByRole("region", { name: "The year, day by day" });
+    const january = within(year).getByText("January").closest("details")!;
+    expect(within(year).getAllByRole("listitem")).toHaveLength(31);
+    january.open = false;
+    fireEvent(january, new Event("toggle"));
+    expect(within(year).queryAllByRole("listitem")).toHaveLength(0);
+    expect(january.open).toBe(false);
+  });
+
+  it("names a single psalm as the day's label does", async () => {
+    const n = PLAN.days.findIndex((d) => d.read.some(([slug, a, b]) => slug === "psalms" && a === 51 && b === 51)) + 1;
+    at(new Date(2026, 9, 27, 9));
+    serve();
+    renderAt(`${PLAN_PATH}?day=${n}`);
+    const card = await dayCard(PLAN.days[n - 1].label);
+    expect(within(card).getByRole("link", { name: /^Psalm 51/ })).toHaveAttribute("href", "/study/bible/psalms/51?path=story");
+  });
+
 });

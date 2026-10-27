@@ -28,7 +28,7 @@ doors: Study, Essays, Books, Resources, and About.
   https://www.livewellbyjamesbell.co/study/bible
 - Read the whole story in 2027 (a daily reading plan: all 1,189 chapters in
   365 days, in the order the story happened, each day linked to its chapters
-  and to the context guide that belongs to it):
+  and, where one belongs, to a context guide):
   https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027
 - Church history (the councils, the figures, the heresies, and the arc from
   Pentecost to today): https://www.livewellbyjamesbell.co/theology/history

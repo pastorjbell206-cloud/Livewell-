@@ -92,6 +92,11 @@ export function dayFromQuery(search: string): number | null {
   return n >= 1 && n <= PLAN_DAYS ? n : null;
 }
 
+/** "Genesis 3", "Psalm 51" (one psalm, as the day's label prints it). */
+export function chapterName(books: Record<string, string>, slug: string, chapter: number): string {
+  return `${slug === "psalms" ? "Psalm" : (books[slug] ?? slug)} ${chapter}`;
+}
+
 /** Each chapter of a day: { slug, chapter, title }. */
 export function chaptersOf(day: PlanDay): { slug: string; chapter: number; title: string }[] {
   const out: { slug: string; chapter: number; title: string }[] = [];
@@ -128,8 +133,19 @@ export function setPlanDay(day: number, read: boolean): boolean {
   return writeStoredJSON(PLAN_PROGRESS_KEY, Array.from(s).sort((a, b) => a - b));
 }
 
-/** The reader's place: the first day not yet marked read, or null when every day is. */
-export function nextUnreadDay(done: Set<number>): number | null {
+/**
+ * The reader's place: the day after the furthest day marked read, so a reader
+ * who joins on day 40, or skips a week, is not sent back to the first gap.
+ * When the last day is read but some are not, the first of those; null when
+ * every day is read.
+ */
+export function readerPlace(done: Set<number>): number | null {
+  if (done.size >= PLAN_DAYS) return null;
+  let furthest = 0;
+  done.forEach((d) => {
+    if (d > furthest) furthest = d;
+  });
+  if (furthest < PLAN_DAYS) return furthest + 1;
   for (let d = 1; d <= PLAN_DAYS; d++) if (!done.has(d)) return d;
   return null;
 }
@@ -140,7 +156,7 @@ export function nextUnreadDay(done: Set<number>): number | null {
  */
 export function openingDay(query: number | null, done: Set<number>, today: number): number {
   if (query) return query;
-  if (done.size) return nextUnreadDay(done) ?? PLAN_DAYS;
+  if (done.size) return readerPlace(done) ?? PLAN_DAYS;
   if (today >= 1 && today <= PLAN_DAYS) return today;
   return 1;
 }

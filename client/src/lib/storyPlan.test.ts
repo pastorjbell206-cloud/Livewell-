@@ -8,19 +8,20 @@ import { afterEach, describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 
-import { planProblems } from "../../../scripts/lib/story-plan.mjs";
+import { chapterTitle, planProblems } from "../../../scripts/lib/story-plan.mjs";
 import {
   PLAN_DAYS,
   PLAN_PROGRESS_KEY,
+  chapterName,
   chaptersOf,
   dateForDay,
   dayFromQuery,
   longDate,
-  nextUnreadDay,
   openingDay,
   planDayFor,
   planMonths,
   readPlanDays,
+  readerPlace,
   setPlanDay,
   type StoryPlan,
 } from "./storyPlan";
@@ -56,6 +57,14 @@ describe("the committed plan", () => {
     expect(PLAN.chapters).toBe(1189);
   });
 
+  it("lists a psalm's title without repeating the reference it sits under", () => {
+    expect(chapterTitle("Psalm 51: Create in Me a Clean Heart", "psalms", 51)).toBe("Create in Me a Clean Heart");
+    expect(chapterTitle("Psalm 51", "psalms", 51)).toBe("Psalm 51");
+    expect(chapterTitle("Hannah's Prayer and Samuel's Birth", "1-samuel", 1)).toBe("Hannah's Prayer and Samuel's Birth");
+    const repeats = PLAN.days.flatMap((d) => chaptersOf(d)).filter((c) => c.slug === "psalms" && c.title.startsWith(`Psalm ${c.chapter}:`));
+    expect(repeats).toEqual([]);
+  });
+
   it("starts in Genesis, ends in Revelation, and opens each act on a day of its own", () => {
     expect(PLAN.days[0].read[0]).toEqual(["genesis", 1, 2]);
     expect(PLAN.days[PLAN_DAYS - 1].read.at(-1)).toEqual(["revelation", 20, 22]);
@@ -82,6 +91,11 @@ describe("days and dates", () => {
     expect(planDayFor(new Date(2027, 11, 31, 22))).toBe(365);
     expect(planDayFor(new Date(2026, 11, 31))).toBe(0);
     expect(planDayFor(new Date(2028, 0, 1))).toBe(366);
+  });
+
+  it("names one psalm as the day's label does", () => {
+    expect(chapterName(PLAN.books, "psalms", 51)).toBe("Psalm 51");
+    expect(chapterName(PLAN.books, "2-samuel", 12)).toBe("2 Samuel 12");
   });
 
   it("dates a day in the reader's calendar", () => {
@@ -123,14 +137,20 @@ describe("the reader's place", () => {
     expect(readPlanDays().size).toBe(0);
   });
 
-  it("names the first day not yet read, and nothing once all are", () => {
-    expect(nextUnreadDay(new Set([1, 2, 4]))).toBe(3);
-    expect(nextUnreadDay(new Set(Array.from({ length: PLAN_DAYS }, (_, i) => i + 1)))).toBeNull();
+  it("puts the reader after the furthest day read, never back at a gap", () => {
+    expect(readerPlace(new Set([1, 2, 3]))).toBe(4);
+    expect(readerPlace(new Set([1, 2, 4]))).toBe(5);
+    // Joined the plan on day 40 and read on: the place is day 43, not day 1.
+    expect(readerPlace(new Set([40, 41, 42]))).toBe(43);
+    // The last day read with some left: the first of those.
+    expect(readerPlace(new Set([1, 2, 365]))).toBe(3);
+    expect(readerPlace(new Set(Array.from({ length: PLAN_DAYS }, (_, i) => i + 1)))).toBeNull();
   });
 
   it("opens on the address, then the reader's place, then today, then day 1", () => {
     expect(openingDay(90, new Set([1]), 40)).toBe(90);
     expect(openingDay(null, new Set([1, 2]), 40)).toBe(3);
+    expect(openingDay(null, new Set([40]), 45)).toBe(41);
     expect(openingDay(null, new Set(), 40)).toBe(40);
     expect(openingDay(null, new Set(), -65)).toBe(1);
     expect(openingDay(null, new Set(), 366)).toBe(1);

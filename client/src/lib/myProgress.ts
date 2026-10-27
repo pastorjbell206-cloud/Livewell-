@@ -9,7 +9,7 @@
  */
 import { isArrayOf, readStoredJSON } from "@/lib/storage";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
-import { PLAN_PATH, nextUnreadDay, readPlanDays } from "@/lib/storyPlan";
+import { PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
 
 export interface ProgressRow {
   href: string;
@@ -115,7 +115,7 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
   // Read the whole story in 2027 (lib/storyPlan): the reader's place, never a count behind.
   const planDays = readPlanDays();
   if (planDays.size) {
-    const next = nextUnreadDay(planDays);
+    const next = readerPlace(planDays);
     rows.push({ href: PLAN_PATH, title: "Read the whole story in 2027", kind: "Reading plan", detail: next ? `Day ${next} is next` : "Every day read", when: "" });
   }
 

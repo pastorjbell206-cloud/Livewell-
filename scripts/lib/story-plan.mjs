@@ -115,6 +115,17 @@ export function labelOf(runs, book) {
     .join("; ");
 }
 
+/**
+ * A chapter's title as the day lists it, under its reference: most psalm
+ * titles repeat the reference ("Psalm 51: Create in Me a Clean Heart"), so the
+ * repeat is dropped.
+ */
+export function chapterTitle(title, slug, chapter) {
+  if (slug !== "psalms") return title;
+  const bare = title.replace(new RegExp(`^Psalm ${chapter}:\\s*`), "");
+  return bare || title;
+}
+
 function wordCount(slug, chapter) {
   const shard = readJson(`client/public/bible/text/${slug}/${chapter}.json`);
   let n = 0;
@@ -153,7 +164,7 @@ export function buildPlan() {
       act: own[0].act,
       label: labelOf(runs, book),
       read: runs,
-      titles: own.map((s) => index.titles?.[s.slug]?.[s.chapter - 1] ?? ""),
+      titles: own.map((s) => chapterTitle(index.titles?.[s.slug]?.[s.chapter - 1] ?? "", s.slug, s.chapter)),
       guides: [],
     });
   }
