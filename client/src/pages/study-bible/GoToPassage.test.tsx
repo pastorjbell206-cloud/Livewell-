@@ -34,6 +34,16 @@ describe("GoToPassage", () => {
     expect(window.location.pathname + window.location.hash).toBe("/study/bible/john/3#v16");
   });
 
+  it("says so when the chapter on screen has no such verse", () => {
+    window.history.replaceState({}, "", "/study/bible/john/3");
+    const onVerse = vi.fn(() => false);
+    render(<GoToPassage here="/study/bible/john/3" onVerse={onVerse} />);
+    go("John 3:99");
+    expect(onVerse).toHaveBeenCalledWith(99);
+    expect(screen.getByRole("status")).toHaveTextContent("“John 3:99” isn’t a passage this can open.");
+    expect(window.location.pathname + window.location.hash).toBe("/study/bible/john/3");
+  });
+
   it("says plainly when it cannot open something, and offers the site search", () => {
     render(<GoToPassage />);
     go("grace");

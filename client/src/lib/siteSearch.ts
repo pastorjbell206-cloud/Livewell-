@@ -85,9 +85,12 @@ export function searchWords(q: string): string[] {
   return content.length ? content : words;
 }
 
-/** Words people use for one another in a search: "kids" finds "children". */
+/**
+ * Words people use for one another in a search: "kids" finds "children".
+ * These match whole words only, so "mom" does not find "moment".
+ */
 const SAME_WORDS: string[][] = [
-  ["kid", "kids", "child", "children"],
+  ["kid", "kids", "child", "children", "childrens"],
   ["mom", "moms", "mother", "mothers"],
   ["dad", "dads", "father", "fathers"],
 ];
@@ -118,7 +121,8 @@ export function scoreEntry(item: Searchable, q: string): number {
   const title = ` ${normalizeText(item.title)} `;
   const keywords = ` ${normalizeText(item.keywords ?? "")}`;
   const all = `${title}${normalizeText(item.blurb)} ${normalizeText(item.facet ?? "")}${keywords}`;
-  const has = (hay: string, w: string) => forms(w).some((f) => hay.includes(` ${f}`));
+  const has = (hay: string, w: string) =>
+    FAMILY.has(w) ? forms(w).some((f) => `${hay} `.includes(` ${f} `)) : forms(w).some((f) => hay.includes(` ${f}`));
   const whole = (w: string) => forms(w).some((f) => title.includes(` ${f} `) || title.includes(` ${f}s `));
   if (!words.every((w) => has(all, w))) return 0;
   let score = 10;

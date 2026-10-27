@@ -44,7 +44,8 @@ const TOOL_ENTRIES: SearchEntry[] = TOOLS.map((t) => ({
 
 // A rewrite is found by its own title and excerpt, here, not by the server.
 const ESSAY_ENTRIES: SearchEntry[] = essayEntries(ESSAY_OVERRIDES, (slug) => isPublicEssay(slug));
-const REWRITTEN = new Set(ESSAY_OVERRIDES.map((o) => o.slug));
+// Only a rewrite found above replaces the server's row, so no essay is lost from search.
+const REWRITTEN = new Set(ESSAY_OVERRIDES.filter((o) => isPublicEssay(o.slug)).map((o) => o.slug));
 
 // Graceful per-manifest failure: a missing or malformed manifest should never break search.
 async function fetchEntries(url: string, read: (data: unknown) => SearchEntry[]): Promise<SearchEntry[]> {
@@ -196,7 +197,7 @@ export default function SearchPage() {
   return (
     <Layout>
       <SEOMeta title="Search" description="Search the essays, libraries, tools, and books on LiveWell." />
-      <div className="container py-16 max-w-4xl mx-auto">
+      <div className="container px-4 py-16 max-w-4xl mx-auto">
         {/* Back button */}
         <button
           onClick={() => navigate("/")}

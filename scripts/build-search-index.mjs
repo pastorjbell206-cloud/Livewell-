@@ -112,7 +112,10 @@ function nation() {
 /** The index, sources in the order a tie between them should fall. */
 export function buildSearchIndex() {
   const drop = (e) => Object.fromEntries(Object.entries(e).filter(([, v]) => v !== ""));
-  const source = (label, indexHref, entries) => ({ label, indexHref, entries: entries.filter((e) => e.title).map(drop) });
+  // One result per question per page: the catechism asks five of its questions
+  // twice (once in their part, again in the last), and both open the same page.
+  const once = (e, i, all) => all.findIndex((x) => x.title === e.title && x.href === e.href) === i;
+  const source = (label, indexHref, entries) => ({ label, indexHref, entries: entries.filter((e) => e.title).filter(once).map(drop) });
   return {
     sources: [
       source("Honest Answers", "/answers", answers()),

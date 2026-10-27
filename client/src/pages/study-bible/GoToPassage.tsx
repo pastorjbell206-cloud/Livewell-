@@ -37,7 +37,12 @@ export function GoToPassage({ here, onVerse }: {
     const [path, hash] = match.href.split("#");
     const verse = hash?.startsWith("v") ? Number(hash.slice(1)) : NaN;
     // The same chapter: the address does not change, so the reader is told directly.
-    if (path === here && onVerse && Number.isFinite(verse) && onVerse(verse)) {
+    if (path === here && onVerse && Number.isFinite(verse)) {
+      if (!onVerse(verse)) {
+        // "John 3:99": the chapter is on screen and has no such verse.
+        setMissed(q);
+        return;
+      }
       window.history.replaceState(window.history.state, "", match.href);
       return;
     }
@@ -59,7 +64,7 @@ export function GoToPassage({ here, onVerse }: {
           placeholder="Go to: John 3:16, Romans 8"
           value={value}
           onChange={(e) => { setValue(e.target.value); setMissed(null); }}
-          style={{ flex: "1 1 auto", minWidth: 0, minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "15px" }}
+          style={{ flex: "1 1 auto", minWidth: 0, minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "16px" }}
         />
         <button type="submit" style={{ flex: "0 0 auto", minHeight: "44px", padding: "0 18px", border: "none", borderRadius: "999px", background: "var(--ink)", color: "var(--bone)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
           Go

@@ -100,6 +100,12 @@ describe("plain questions", () => {
     expect(scoreEntry({ title: "One Nation Under God", blurb: "" }, "nations")).toBeGreaterThan(0);
   });
 
+  it("matches those family words whole, so mom does not find moment", () => {
+    expect(scoreEntry({ title: "A Moment of Quiet", blurb: "" }, "mom")).toBe(0);
+    expect(scoreEntry({ title: "When Your Mother Has Died", blurb: "" }, "my mom died")).toBeGreaterThan(0);
+    expect(scoreEntry({ title: "The Children's Sermon", blurb: "" }, "kids sermon")).toBeGreaterThan(0);
+  });
+
   it("puts a whole word of the title ahead of a word it only starts", () => {
     const question = { title: "Was America Founded as a Christian Nation?", blurb: "" };
     const history = { title: "How We Got Here: A History of Christian Nationalism in America", blurb: "" };
@@ -167,6 +173,11 @@ describe("the whole site, as a reader searches it", () => {
     ...indexEntries(readPublic("/search-index.json")),
   ];
   const top = (q: string) => rankEntries(entries, q)[0]?.href;
+
+  it("lists a page once for a question it asks twice", () => {
+    const keys = indexEntries(readPublic("/search-index.json")).map((e) => `${e.title}|${e.href}`);
+    expect(keys.length).toBe(new Set(keys).size);
+  });
 
   it("holds every source the search index promises", () => {
     const labels = new Set(entries.map((e) => e.sourceLabel));
