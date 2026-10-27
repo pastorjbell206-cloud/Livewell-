@@ -32,15 +32,22 @@ const LEGACY_HOST = "d2xsxph8kpxj0f.cloudfront.net";
 
 const positioning = fs.readFileSync(POSITIONING, "utf8");
 const current = positioning.match(/export const PORTRAIT_URL\s*=\s*"([^"]+)"/)?.[1];
-const source = process.argv[2] ?? current;
+const source = process.argv[2] ?? (/^https?:\/\//.test(current ?? "") ? current : undefined);
 if (!source) {
-  console.error("No source: pass a URL or a file, or set PORTRAIT_URL in positioning.ts.");
+  console.error(
+    current === PUBLIC_PATH
+      ? `PORTRAIT_URL already names "${PUBLIC_PATH}"; pass a URL or a file to replace the photograph.`
+      : "No source: pass a URL or a file, or set PORTRAIT_URL in positioning.ts."
+  );
   process.exit(1);
 }
 
 let input;
 if (/^https?:\/\//.test(source)) {
-  const res = await fetch(source);
+  const res = await fetch(source).catch((err) => {
+    console.error(`Could not reach ${source} (${err.cause?.code ?? err.message}). Pass a file instead.`);
+    process.exit(1);
+  });
   const type = res.headers.get("content-type") ?? "";
   if (!res.ok || !type.startsWith("image/")) {
     console.error(`Could not fetch an image from ${source} (HTTP ${res.status}, ${type || "no type"}).`);
@@ -71,6 +78,6 @@ console.log(
 if (current?.includes(LEGACY_HOST)) {
   fs.writeFileSync(POSITIONING, positioning.replace(`"${current}"`, `"${PUBLIC_PATH}"`));
   console.log(`PORTRAIT_URL now "${PUBLIC_PATH}" in ${path.relative(ROOT, POSITIONING)}.`);
-} else {
+} else if (current !== PUBLIC_PATH) {
   console.log(`PORTRAIT_URL left as "${current}"; point it at "${PUBLIC_PATH}" if that is the intent.`);
 }

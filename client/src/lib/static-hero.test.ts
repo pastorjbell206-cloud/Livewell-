@@ -1,5 +1,10 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { mountAfterStaticHero } from "./static-hero";
+import fs from "node:fs";
+import path from "node:path";
+import { mountAfterStaticHero, STATIC_HERO_SELECTOR } from "./static-hero";
+
+const ROOT = path.resolve(__dirname, "../../..");
+const read = (file: string) => fs.readFileSync(path.join(ROOT, file), "utf8");
 
 /** A PerformanceObserver stand-in the test can feed LCP entries to. */
 function fakeObserver(supported: string[] = ["largest-contentful-paint"]) {
@@ -141,5 +146,28 @@ describe("mountAfterStaticHero", () => {
     vi.advanceTimersByTime(1);
     expect(mount).toHaveBeenCalledTimes(1);
     expect(instances[0].disconnected).toBe(true);
+  });
+});
+
+describe("the static hero the gate watches", () => {
+  it("is still where the selector looks, with the portrait low priority in both copies", () => {
+    // The marker prerender-heads.mjs replaces sits inside #lw-shell...
+    const html = read("client/index.html");
+    const shell = html.indexOf('<div id="lw-shell"');
+    const marker = html.indexOf("<!-- prerender:home-hero");
+    expect(shell).toBeGreaterThan(-1);
+    expect(marker).toBeGreaterThan(shell);
+    expect(html.indexOf("</div>", html.indexOf("</div>", shell) + 1)).toBeGreaterThan(marker);
+
+    // ...and is replaced by a section the selector matches.
+    const prerender = read("scripts/prerender-heads.mjs");
+    expect(STATIC_HERO_SELECTOR).toBe("#lw-shell .home-hero");
+    expect(prerender).toContain('<section class="home-hero">');
+
+    // A high-priority portrait is charged to LCP; keep both copies low.
+    expect(prerender).toMatch(/<img class="home-hero__portrait"[^>]*fetchpriority="low"/);
+    expect(read("client/src/pages/Home.tsx")).toMatch(
+      /className="home-hero__portrait"[\s\S]{0,200}?fetchPriority="low"/
+    );
   });
 });
