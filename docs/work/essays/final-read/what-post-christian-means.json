@@ -1,0 +1,236 @@
+{
+ "slug": "what-post-christian-means",
+ "reads": [
+  {
+   "lens": "Last read before publication of /home/user/livewell-land/client/public/essays/what-post-christian-means.json, checked against docs/work/essays/BRIEF.md, docs/VOICE-JAMES-BELL.md and the CLAUDE.md Forb",
+   "findings": [
+    {
+     "where": "What the Church Is Grieving, start of the last paragraph: \"We pastors have something else to admit.\"",
+     "problem": "This is a variant of the shelf stamp (\"pastors like me\", \"Those of us who preach\"), and it announces the confession before making it. The brief wants him to implicate himself by doing it, not by announcing it. The next sentences already confess (\"Our programs\", \"many of us\"), so this sentence only advertises the move.",
+     "fix": "Delete the sentence. The paragraph then opens: \"Most American churches, including the ones that think of themselves as countercultural, were organized for a world where the culture delivered people to the front door.\" The following \"Our programs\" and \"many of us\" now read as the whole church's \"we\", which is the order the brief asks for.",
+     "severity": "should"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles, the two-temptations paragraph: \"It is to settle so comfortably into Babylon that the people of God dissolve into it, keeping the name while living by the city's assumptions about money, sex, power, and the self. The first temptation tends to gather on the political right...\"",
+     "problem": "Both temptations are measured against Jeremiah's letter, but only one side gets grief. The right-leaning temptation is granted that its people \"usually love their country and their churches, and some of what they want restored is worth wanting.\" The left-leaning temptation gets no concession at all. A progressive reader will see the guardrail firing one way.",
+     "fix": "After \"...money, sex, power, and the self.\" insert one sentence: \"The people drawn that way usually want a church that welcomes its neighbors instead of fighting them, and the letter wants that too.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Where America Actually Stands, standalone line: \"Whatever the obituaries predicted, this is a country where belief is still widespread and belonging is thinning.\"",
+     "problem": "The belief/belonging pair echoes Grace Davie's \"believing without belonging\" without credit; a sociology-literate pastor or skeptic will hear it. It is also a two-beat aphoristic line on its own, the section's second verdict line next to \"The faith itself is not.\", and the third use of the obituary image after \"The obituary has been drafted many times\" and \"An obituary or a plateau?\"",
+     "fix": "\"Whatever the headlines predicted, most Americans still believe in God, even as fewer of them join a church.\"",
+     "severity": "should"
+    },
+    {
+     "where": "What the Church Is Grieving, end of the Torcaso paragraph: \"Christians ought to be able to say so without flinching, since a faith worth holding is one a person was free to refuse.\"",
+     "problem": "This is an epigram closer, and the section already has its verdict (\"Part of what is dying is a counterfeit...\"). It also leans toward a free-church, voluntarist position on faith and establishment without naming it as a position other traditions dispute.",
+     "fix": "\"Christians ought to be able to say so without flinching.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Three Ways to Be Secular, paragraph 4: \"That description is uncomfortable for both sides, which is one reason to trust it.\"",
+     "problem": "This vouches for its own source's even-handedness: both sides being uncomfortable is offered as evidence. That is the stock both-sides-mad line and a cousin of the \"honest/fair\" adjective the judges caught. A skeptic will notice he is being told to trust it.",
+     "fix": "\"That description is uncomfortable for both sides.\" The next two sentences already show why.",
+     "severity": "should"
+    },
+    {
+     "where": "Lesslie Newbigin and the West as a Mission Field: \"He asked how anyone could come to believe that the power with the last word in human affairs is represented by a man hanging on a cross.\"",
+     "problem": "This is Newbigin's sentence almost word for word (\"the power which has the last word in human affairs is represented by a man hanging on a cross\"), presented as paraphrase with no quotation marks. That breaks the integrity rule: paraphrase in our own words, verbatim inside quotation marks. The next sentence correctly quotes the same passage.",
+     "fix": "Either quote it: He asked how people could \"come to believe that the power which has the last word in human affairs is represented by a man hanging on a cross.\" (same page as the hermeneutic quotation; confirm in the ledger). Or paraphrase it for real: \"He asked how a modern person could ever be persuaded that a crucified man holds the final say over human affairs.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles, second-to-last paragraph before the closing lines: \"...had been kept alive in Babylon by people who built houses, raised children, and prayed for a city that had conquered them.\"",
+     "problem": "A tidy triplet that recaps the letter's three commands and the previous section in the ending. The brief asks for an ending that is not a recap.",
+     "fix": "\"The faith their grandchildren carried home had been kept alive in Babylon by ordinary households, in a city that had conquered them.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Where America Actually Stands, third-sense paragraph: \"Belief has become what Taylor described: one option among others, and seldom the easiest.\"",
+     "problem": "This repeats nearly word for word the earlier paraphrase (\"one option among several... frequently not the easiest option to hold\"). Both echo Taylor's own words (\"one option among others, and frequently not the easiest to embrace\") without quotation marks. The repeated line becomes a motif and sits close to unquoted borrowing.",
+     "fix": "Delete the sentence. The paragraph ends on \"...the culture will not be sending anyone to replace them.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Three Ways to Be Secular: \"In his inaugural lecture at Cambridge on November 29, 1954,\" and \"Charles Taylor's *A Secular Age*, published in 2007.\"",
+     "problem": "Scholar-parade markers. Six thinkers arrive with titles and dates in the first third (Vahanian, Berger, Taylor, Lewis, Herberg, Newbigin). The day of Lewis's lecture and the year of Taylor's book do no work, and the brief says to give the year only when it matters. The Vahanian and Herberg dates do matter.",
+     "fix": "\"In his inaugural lecture at Cambridge in 1954,\" and \"Charles Taylor's *A Secular Age*.\" (The verifier restored the full Lewis date as a confirmed original, so this is James's call.)",
+     "severity": "consider"
+    },
+    {
+     "where": "What the Church Is Grieving, first sentence: \"It would be easy to dismiss the Christians who grieve this as people nostalgic for power, but the old arrangement had genuine goods in it.\"",
+     "problem": "\"It would be easy to dismiss X, but\" announces the fair move before making it, close to the rulebook leakage the judges caught. The paragraph's own close (\"the people who mourn them are not wrong to\") already does the work.",
+     "fix": "\"The old arrangement had genuine goods in it.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "What the Church Is Grieving, last line: \"Much of it was simply the end of a subsidy we had not noticed we were living on.\"",
+     "problem": "A fresh literary image (\"subsidy\") stacked on the delivery image, ending in an epigram twist. It is the section's third paragraph-end epigram.",
+     "fix": "\"Much of it was simply the end of an advantage we had taken for granted.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles: \"The prophets of the quick return spoke in the name of the right God, and they got His timing wrong.\"",
+     "problem": "A pastor reading Jeremiah 29:9 (\"it is a lie... I did not send them\") will hear this as softening false prophecy into a scheduling error, just after the essay quotes the verse.",
+     "fix": "\"The prophets of the quick return spoke in the name of the right God, but He had not sent them, and their timetable was a lie.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles: \"The second is the one Jeremiah warned against with the words \"do not decrease.\"\"",
+     "problem": "In context, Jeremiah 29:6 (\"multiply there, and do not decrease\") is about numbers, not assimilation. Saying Jeremiah \"warned against\" dissolving into Babylon with those words is a proof-text stretch a careful reader will catch. The idea holds if it is put as a consequence.",
+     "fix": "\"The second would make the letter's \"do not decrease\" impossible to keep.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles: \"The famous verse comes right after that, and where it sits changes how it reads.\"",
+     "problem": "An announced turn that tells the reader a revelation is coming. The next sentences show it without help.",
+     "fix": "\"The famous verse comes right after that.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles, end of the 1 Peter paragraph: \"Christendom let the church forget that it had always been exiled in that sense, and the end of Christendom is making it remember.\"",
+     "problem": "A forget/remember two-beat chiastic closer. The section already has its verdict in \"would be a false prophecy of its own.\"",
+     "fix": "\"Christendom let the church forget that it had always been exiled in that sense.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "How to Live After Christendom, children paragraph: \"...and faith chosen in Babylon is no lesser faith than faith absorbed in Jerusalem.\"",
+     "problem": "A balanced antithesis epigram (chosen/absorbed, Babylon/Jerusalem) inside a plain paragraph.",
+     "fix": "End the sentence at \"...which was the case for its first three centuries.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "How to Live After Christendom, first paragraph: \"a community that stays in one place, teaches its children the faith patiently, and is still there when the neighborhood changes around it.\"",
+     "problem": "A limping triplet: the first and third elements say the same thing.",
+     "fix": "\"a community that teaches its children the faith patiently and is still there when the neighborhood changes around it.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "How to Live After Christendom, shalom paragraph: \"to work for the good of neighbors who don't share its faith, to want the city to flourish even when the city does not want the church, and to pray by name for leaders it did not vote for.\"",
+     "problem": "A tidy triplet whose middle element is a want/want chiasmus; the first and second elements overlap.",
+     "fix": "\"to work for the good of neighbors who don't share its faith and to pray by name for leaders it did not vote for.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Lesslie Newbigin and the West as a Mission Field, paragraph 1: \"He came home to find that his own country was no longer Christian either, though its churches still assumed it was.\"",
+     "problem": "Read aloud, \"either\" implies India had once been Christian too. That is a small chronology and logic snag.",
+     "fix": "\"He came home to find that his own country was no longer Christian, though its churches still assumed it was.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Where America Actually Stands, third-sense paragraph: \"Nobody in this country is a Christian by default anymore.\"",
+     "problem": "An absolute that a reader from a small Southern town will contest; the brief lists overclaims among the AI tells.",
+     "fix": "\"Hardly anyone in this country is a Christian by default anymore.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Closing Texts, last line: *\"For here we have no lasting city, but we seek the city that is to come.\"* (Hebrews 13:14)",
+     "problem": "The same verse closes the-early-church-under-rome, which is landing in the same batch. A reader moving along the shelf meets the same closing text twice. (1 Peter 2:12 in the Closing Texts also repeats a verse already quoted verbatim in the body.)",
+     "fix": "Replace with: *\"These all died in faith, not having received the things promised, but having seen them and greeted them from afar, and having acknowledged that they were strangers and exiles on the earth.\"* (Hebrews 11:13). It fits the line \"Most of the exiles never saw theirs.\" Confirm the wording in the pending ESV recheck.",
+     "severity": "consider"
+    },
+    {
+     "where": "Body, \"actually\" (5 uses including the title and a heading): \"fewer and fewer people actually had\" and \"where God has actually placed us\"",
+     "problem": "A verbal tic. The title and the heading can keep it for search; the two in the body add nothing.",
+     "fix": "\"fewer and fewer people had\" and \"where God has placed us\"",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "Forbidden words: a literal search of title, standfirst and body for all 14 (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic) found 0",
+    "Forbidden phrases and therapy-speak (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community, hold space, your truth, do the work, your feelings are valid, lean into, showing up): 0",
+    "Em-dashes (U+2014): 0. En-dashes appear only in verse ranges (29:4\u20137, 29:8\u20139, 29:10\u201311, 4:3\u20134)",
+    "Exclamation points: 0 anywhere, including the Scripture quotations",
+    "Rulebook words (steelman, verdict, indictment, self-implication, deserves): 0. 'honest' and 'fair' as self-certifying adjectives: 0 (the one 'fair' hit is inside 'affairs')",
+    "Shelf stamps ('Those of us who preach', 'pastors like me', 'This is not both-sidesism', 'Consider ...', 'none of this', 'the record', 'I don't exempt myself'): 0 exact uses. The 'We pastors' variant is flagged above",
+    "Biography: no title, years in ministry, book count or Southern Baptist reference; no invented scene. 'Those of us raising children' is plain and is not used as a credential",
+    "Headings: all six are plain and descriptive (Three Ways to Be Secular; Where America Actually Stands; What the Church Is Grieving; Lesslie Newbigin and the West as a Mission Field; Jeremiah's Letter to the Exiles; How to Live After Christendom)",
+    "Standfirst (excerpt): one plain declarative sentence, not a balanced antithesis",
+    "Title uses the plain words people search",
+    "Contested second-order doctrine (baptism, Supper, millennium, gender and office, sovereignty, the unevangelized): none asserted. The one lean, the 'free to refuse' clause, is flagged above",
+    "Not a crisis-facing piece; no help path is needed",
+    "Register statistics are inside the brief's targets: 44 paragraphs averaging 86 words; 206 sentences averaging 18.4 words, 22% at 8 words or fewer. Real questions are asked in runs, and 'you' is addressed directly in the Newbigin and How to Live sections",
+    "Political criticism fires in both directions with the same instrument: the Hananiah temptation and the false persecution claim on the right, assimilation on the left, and 'leaders it did not vote for' cuts both ways. Only the concession is one-sided (flagged)",
+    "Ending: the final lines turn the mirror on 'our generation' and land on God keeping His word (Jeremiah 29:10). The last two lines are not a recap; the recap triplet just before them is flagged",
+    "Quotations that carry quotation marks are verbatim: Taylor's 1500/2000 question; Newbigin's 'is a congregation of men and women who believe it and live by it'",
+    "Scripture against my reading of the ESV: Jeremiah 28:3, 29:4\u20137, 29:8\u20139, 29:10\u201311, 1 Peter 2:12 and Hebrews 13:14 match. For 1 Peter 1:1, web search results support the capitalized 'Dispersion' now in the published text. The ESV API recheck noted in NOTES.md is still pending for every essay",
+    "The dates and figures I spot-checked from my own knowledge are consistent: Time's 'Is God Dead?' (April 8, 1966); Vahanian (1961); Berger in the NYT (1968); Newsweek (April 2009); Gallup 47% for 2020, 73% in 1937, generational 66/58/50/36; Pew's 2023-24 study (about 37,000 adults, Christians 78% to 62%, unaffiliated 29%, atheist 5, agnostic 6, nothing in particular 19, God or a universal spirit 83, soul 86, monthly attendance about a third, daily prayer 44); Engel (1962), Schempp (1963), Torcaso (1961); 'under God' (1954), the motto (1956); Herberg (1955); Newbigin's dates and Winson Green",
+    "No internal links. This matches all five approved pilots, none of which carry links, so it is not a fail",
+    "No hedges ('perhaps', 'I think', 'in many ways', 'arguably', 'it could be argued'): 0. 'I hold that loosely' is a real, labeled interpretation, not a hedge",
+    "Length is about 4,000 words including the Jeremiah block quote and the Closing Texts, just over the usual 2,500 to 3,800 range; not a rule failure"
+   ]
+  },
+  {
+   "lens": "Fact audit of the published text (client/public/essays/what-post-christian-means.json; body identical to docs/work/essays/what-post-christian-means.md) against its claims ledger, the BSB/STEPBible cha",
+   "findings": [
+    {
+     "where": "Where America Actually Stands, second-sense paragraph: \"About a third attend religious services at least once a month.\"",
+     "problem": "(g) Restoration. The pilot read \"A third attend\"; correction 15 kept \"About a third\" because the only figure seen was a sum (25 + 8) from Pew's 2026 short read \"If the U.S. had 100 people.\" A search in this run (Pew Religious Landscape Study executive summary, pewresearch.org/religion/2025/02/26/religious-landscape-study-executive-summary, and the companion page \"Religious attendance and congregational involvement\") gives the figure directly from the 2023-24 survey: 33% say they attend religious services at least once a month (in person; 40% counting online or TV). The essay's \"The same survey found\" framing is now literally supported.",
+     "fix": "Restore the pilot wording: \"A third attend religious services at least once a month.\" In the ledger, change the line \"About a third attend religious services at least monthly\" to cite the RLS executive summary (33 percent at least monthly, in person) instead of the 25 + 8 arithmetic from the 2026 short read, and record the restoration as a new correction.",
+     "severity": "should"
+    },
+    {
+     "where": "Lesslie Newbigin and the West as a Mission Field, second paragraph: \"In his account the Western churches had largely made their peace with that arrangement. But a church content to be a private preference has already surrendered the one thing a missionary can never surrender: the claim that the gospel is true for everyone, whether they choose it or not.\"",
+     "problem": "(a) No ledger line. This attributes a view to Newbigin (that Western churches accepted the fact/value split), and the ledger's Newbigin lines cover only the split itself. Searches here support it in substance but not as a quotation: a Themelios review of Foolishness to the Greeks says he asks readers to identify the assumptions \"too readily accepted within our churches\"; Graham Kettle's reading (Anvil 18:2, biblicalstudies.org.uk) holds that Newbigin believed Western churches had taken on Enlightenment presuppositions; Newbigin confessed to having \"domesticated\" the gospel himself (whitehorseinn.org). The follow-on sentence reads as the essay's own argument building on his \"public truth\" theme.",
+     "fix": "Keep both sentences as written (paraphrase, attributed with \"In his account\", no quotation marks). Add a ledger line: \"Western churches had largely made their peace with the fact/value arrangement. Attributed paraphrase. Search-verified in substance (2026-10-27): Themelios review of Foolishness to the Greeks (assumptions 'too readily accepted within our churches'); Kettle, Anvil 18:2 (Western churches absorbed Enlightenment presuppositions). The next sentence ('the claim that the gospel is true for everyone') is the essay's argument drawing on Newbigin's 'public truth'; no source claimed.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Lesslie Newbigin and the West as a Mission Field, second paragraph: \"He made the case in two books from the late 1980s, *Foolishness to the Greeks* and *The Gospel in a Pluralist Society*.\"",
+     "problem": "(c) The ledger dates Foolishness to the Greeks to 1986 (Eerdmans/SPCK; the 1984 Warfield Lectures), and a search in this run confirms 1986. \"Late 1980s\" stretches to cover it, and the brief asks for accuracy down to the date. The ledger left this as a choice for James.",
+     "fix": "\"He made the case in two books from the second half of the 1980s, *Foolishness to the Greeks* and *The Gospel in a Pluralist Society*.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Opening paragraph: \"In 1968 the sociologist Peter Berger was quoted in the New York Times predicting that by the twenty-first century religious believers would be found only in small sects, huddled together against a secular world.\"",
+     "problem": "(c) The ledger records the reported wording as \"By the 21st century, religious believers are likely to be found only in small sects.\" The essay's paraphrase drops Berger's hedge (\"likely\") and so makes his forecast sound more certain than the reported words. Searches here found the same secondhand record (culture.wursten.be: New York Times, February 25, 1968, \"A Bleak Outlook Is Seen for Religion\"). The full sentence turned up only on a spam aggregator, so the essay is right to keep this as unquoted paraphrase.",
+     "fix": "\"In 1968 the sociologist Peter Berger was quoted in the New York Times predicting that by the twenty-first century religious believers were likely to be found only in small sects, huddled together against a secular world.\" Keep it without quotation marks.",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles: \"the Lord says the exiles are people \"whom I have sent.\"\" and \"The second is the one Jeremiah warned against with the words \"do not decrease.\"\"",
+     "problem": "(e) Two verbatim ESV fragments are quoted with no reference beside them. The brief wants the reference beside each Scripture quotation. Both come from the block quotation just above (29:4 and 29:6), and the wording and sense are right: STEPBible tags 29:4 as \"whom I sent into exile\" (first person), and the BSB has \"do not decrease\" in 29:6.",
+     "fix": "\"...the Lord says the exiles are people \"whom I have sent\" (Jeremiah 29:4).\" and \"...the one Jeremiah warned against with the words \"do not decrease\" (Jeremiah 29:6).\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Where America Actually Stands, first-sense paragraph: \"But a Protestant cultural establishment outlived them by more than a century.\"",
+     "problem": "(a) A historical claim with no ledger line of its own. It is supported by arithmetic from ledgered dates: Massachusetts disestablished in 1833-34, and Engel v. Vitale (1962) and Schempp (1963) ended school prayer and devotional Bible reading, about 129 years later.",
+     "fix": "No change to the essay. Add a ledger line: \"A Protestant cultural establishment outlived the state establishments by more than a century. Interpretation; arithmetic from the ledgered dates (Massachusetts 1833-34; Engel 1962; Schempp 1963).\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles: \"The plans for shalom were real.\"",
+     "problem": "(a) This implies that the \"welfare\" of Jeremiah 29:11 (\"plans for welfare\") is also shalom. The ledger counts only the three uses in 29:7. The site's STEPBible Hebrew in client/public/bible/ch/jeremiah/29.json tags 29:11's word as H7965 (shalom, \"well-being\"), so the claim is correct but has no ledger line.",
+     "fix": "No change to the essay. Add a ledger line: \"Jeremiah 29:11's 'welfare' is also shalom: STEPBible Hebrew in jeremiah/29.json tags H7965 in 29:11.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Jeremiah's Letter to the Exiles: \"We print that verse on graduation cards.\"",
+     "problem": "(a) A general cultural observation with no ledger line. It is low risk and widely true, but every checkable claim should have a ledger line.",
+     "fix": "No change to the essay. Add a ledger line marking it as a general observation (Jeremiah 29:11 as a common graduation verse), no source claimed.",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "Published JSON body is word for word the ledgered docs/work/essays/what-post-christian-means.md (diffed by script). No em-dashes, no exclamation points, no links, and no forbidden-list words.",
+    "Opening: Time cover of April 8, 1966 (first type-only cover, red letters on black, \"Is God Dead?\"); Vahanian, The Death of God, 1961 (five years earlier), subtitle The Culture of Our Post-Christian Era; Berger's later admission that he was wrong about secularization and his turn to pluralism (paraphrase); Newsweek's April 2009 cover story \"The End of Christian America.\" All match ledger lines marked verified, with no wording drift.",
+    "Gallup: March 2021; first time below half since 1937; 47% in 2020; 73% in 1937; near 70% for six decades; decline from around 2000; generation figures 66/58/50/36 from 2018-2020 data; decline tied largely to generational replacement. All match the verified ledger lines word for word.",
+    "Pew 2023-24 Religious Landscape Study: released 2025 (\"four years later\"), third round, nearly 37,000 adults (36,908), July 2023 to March 2024, Christians 78% (2007) to 62%, stable since about 2019, slowed and may have leveled off; 29% vs 16% unaffiliated; 5% atheist, 6% agnostic, 19% \"nothing in particular\"; 83% God or a universal spirit; 86% a soul; 44% daily prayer. All match the ledger. This run's search also confirmed 36,908 adults, July 17, 2023 to March 4, 2024, and 33% monthly attendance.",
+    "Charles Taylor: A Secular Age (2007), close to nine hundred pages (x, 874), Canadian, Catholic. The quotation (\"why was it virtually impossible ... but even inescapable?\") matches the ledger's Commonweal wording and punctuation exactly. \"Subtraction stories\" in quotation marks, the immanent frame, cross-pressure and the three senses are all ledgered as verified paraphrase. This run's search shows no report of Taylor's death, so the present tense \"Taylor is\" stands, and the description of this living person is fair and sourced.",
+    "C. S. Lewis: Cambridge inaugural lecture on November 29, 1954; the Jane Austen divide; Christians and pagans having more in common than either with a post-Christian. All paraphrase without quotation marks, matching the verified ledger lines.",
+    "First Amendment; last state establishment gone by the 1830s (Massachusetts 1833-34); Engel v. Vitale 1962; Abington v. Schempp 1963; \"under God\" 1954; \"In God We Trust\" 1956; Torcaso v. Watkins 1961 (Maryland notary commission). All match the ledger.",
+    "Herberg, Protestant-Catholic-Jew (1955), and the American Way of Life as the operative faith: matches the ledger. This run's search adds a stronger source than the ledger's Goodreads highlight: the MDPI Religions 6(2):434 article describes Herberg's American Way of Life as \"the operative faith of the American people.\" The ledger may cite it.",
+    "Newbigin: India from 1936 (Church of Scotland); one of the first CSI bishops in 1947; retired in 1974; Selly Oak Colleges; Winson Green URC pastorate at about seventy; \"most of his working life\"; public facts and private values; the paraphrased question about the man hanging on a cross. All match the ledger. The quotation \"is a congregation of men and women who believe it and live by it.\" matches the ledgered p. 227 wording exactly.",
+    "Restorations searched and not proposed: the Winson Green prison detail (a search found the Lodge Road URC address but nothing placing it opposite HMP Birmingham, so the ledger's single Wikipedia source remains the only one) and \"more than three decades\" in India (no source in this run states a count of years). Both stay out, as the ledger says.",
+    "Scripture wording against the ledger and the ESV wording I know: Jeremiah 28:3, 29:4-7 (block), 29:8-9, 29:10-11, 1 Peter 2:12 (twice), Jeremiah 29:7 and Hebrews 13:14 (Closing Texts) match the ledger's esv.org-verified text, with LORD in capitals and references beside each.",
+    "1 Peter 1:1 \"elect exiles of the Dispersion\" (capital D, correction 17): this run's search on esv.org returned the verse with \"Dispersion\" capitalized, consistent with the ledger and the sibling ledger for the-early-church-under-rome. Primary esv.org could not be opened. Aside, outside this essay: client/public/context/guides/exile-not-empire.json prints it lowercase.",
+    "Senses checked in the BSB (client/public/bible/ch): Jeremiah 28:1 and 28:3 (Hananiah in the temple before the priests and people; two years; the vessels), 29:2 (Jeconiah, queen mother, officials, craftsmen), 29:4-11, 29:15/21/31 (prophets in Babylon), 1 Peter 1:1 (five regions), 1 Peter 2:12, 1 Peter 4:3-4, Hebrews 13:14, Daniel 6:10 (three times a day, windows toward Jerusalem), Psalm 137:1 and 5, and 2 Kings 24:10-16 (siege; Jehoiachin carried off). Every reference matches the verse it is attached to. STEPBible confirms shalom three times in Jeremiah 29:7 and once in 29:11, and the first-person \"I sent into exile\" in 29:4.",
+    "597 BC, the temple's fall about a decade later (587/586), and the gospel without cultural carriage for three centuries (Galerius 311, Milan 313) all match the verified ledger lines.",
+    "Biography: only \"We pastors\" and \"Those of us raising children\", both confirmed in NOTES. No invented scene, title, years in ministry or book count.",
+    "(b) None: no ledger line is still marked unverified, unchecked, open or resting on memory where the essay states the claim as fact. (d) None: every quotation's wording and punctuation matches what the ledger says was matched. (f) None: Taylor is the only living person named, and the sentence about him is factual and sourced. The groups described (some Christians, some secular readers, those who preach a quick restoration) are characterized charitably, with right and left criticized evenly."
+   ]
+  }
+ ]
+}

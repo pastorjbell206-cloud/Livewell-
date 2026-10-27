@@ -1,0 +1,221 @@
+{
+ "slug": "was-america-founded-as-a-christian-nation",
+ "note": "Most of these were judged and applied in commit 9cd9a457 (Essays: final read fixes); its rejected list explains the rest. Judge only what that pass did not reach.",
+ "reads": [
+  {
+   "lens": "Last read before publishing, as the skeptic and as a pastor deciding whether to hand it to a congregation. Read against docs/work/essays/BRIEF.md (register, stamps, AI tells, integrity, biography), do",
+   "findings": [
+    {
+     "where": "## The Plain Answer, second paragraph, opening three sentences",
+     "problem": "Exact words: \"The yes side is right about the people, the culture and the states. The no side is right about the national government, and right that the founders' convictions ran from Witherspoon's Calvinism to Paine's contempt. Each goes wrong when it treats its half as the whole.\" This is a balanced yes/no antithesis pair, plus a tidy triplet (people, culture, states) that recaps the paragraph before it, plus an aphoristic closer. It is followed by two more mirrored pairs (the secularist who must account for... / the Christian who has... to explain, then the secularist's mistake / the Christian's mistake). Three symmetrical pairs in a row is the most generated-sounding stretch in the essay. The third pair is the real verdict, the one that refuses false symmetry, and it should stay.",
+     "fix": "Replace those three sentences with: \"Each slogan takes part of that history for the whole of it.\" Leave the rest of the paragraph (\"A secularist who imagines a godless founding...\") as it is.",
+     "severity": "should"
+    },
+    {
+     "where": "Final section, the last two prose paragraphs before the Closing Texts",
+     "problem": "Exact words: \"If this answer disappoints you, the disappointment is worth examining. It says less about the founders than about where we have been looking for our security.\" followed by the one-line paragraph \"And if it pleases you because it seems to hand your side the argument, examine that too.\" The ending is a mirrored if/if pair (the Both/Neither shape the judges flagged), and the last prose words are \"examine that too\", not Christ, Scripture or the gospel. The security line already sets up Philippians 3:20 in the Closing Texts, so the line that should land last is that one.",
+     "fix": "Merge the two into one paragraph that reads: \"If this answer disappoints you, or pleases you because it seems to hand your side the argument, the feeling is worth examining. It says less about the founders than about where we have been looking for our security.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Final section, the one-sentence paragraph before the ending",
+     "problem": "Exact words: \"The letter from Danbury belongs to Baptists like me, and it's a strange inheritance for us to have forgotten.\" \"Baptists like me\" is the \"pastors like me\" stamp with one word changed. The same move, Baptist self-identification followed by our having forgotten Danbury, already appears in the sibling pilot what-christian-nationalism-is-and-is-not (\"My own tradition ought to know better than most... We haven't always remembered why.\"). A reader who reads both will notice the repeat. It is also the third stand-alone kicker in a row at the end of the essay. This essay already implicates James twice: \"Preachers, and I'm one of them\" and the Beecher question.",
+     "fix": "Delete the paragraph. If James wants to keep it, use instead: \"The letter from Danbury belongs to Baptists, my own church among them, and it's a strange inheritance for us to have forgotten.\" Then cut the matching \"We haven't always remembered why.\" from the sibling essay.",
+     "severity": "should"
+    },
+    {
+     "where": "## The Case for a Christian Founding, last paragraph",
+     "problem": "Exact words: \"is its own kind of myth. It's lazy history. The Revolution\". \"Lazy history\" is a stamp used twice on the shelf: the-early-church-under-rome has \"but that is lazy history\". Here it also stacks a second verdict on top of \"its own kind of myth\". It is the only contemptuous adjective in the essay, and it is aimed at the skeptic, the reader James most writes toward. The Christian error gets grief and the secular one gets heat, which is the wrong way round for this platform.",
+     "fix": "Delete \"It's lazy history.\" so the passage reads: \"...is its own kind of myth. The Revolution was made by a people formed by the Bible and the pulpit.\"",
+     "severity": "should"
+    },
+    {
+     "where": "## The Treaty of Tripoli, paragraph after the block quote, first sentence",
+     "problem": "Exact words: \"Does that settle it? Not by itself, and the people who say yes have good answers here.\" This announces the concession instead of making it, which is rulebook leakage of the \"the skeptic has a point that deserves to be granted\" kind. It is also one of five score-keeping lines about \"the people who say yes\" or \"the yes side\" stamped through the essay. Keep the opening signpost (\"The people who say yes have more on their side...\") and \"On this part of the question...\". Trim the others.",
+     "fix": "\"Does that settle it? Not by itself.\" The next sentence (\"A treaty is a diplomatic instrument...\") makes the concession on its own.",
+     "severity": "should"
+    },
+    {
+     "where": "## The Baptists and the Wall of Separation, first sentence",
+     "problem": "Exact words: \"If you want to find a Christian nation in early American law, the place to look is the states, and there the yes side has its strongest evidence.\" More score-keeping in the same yes-side motif, announcing a fairness move before the evidence arrives.",
+     "fix": "\"If you want to find a Christian nation in early American law, the place to look is the states.\"",
+     "severity": "should"
+    },
+    {
+     "where": "## What Scripture Calls a Holy Nation, third paragraph, first sentence",
+     "problem": "Exact words: \"The founding presses a harder question too.\" This is an announced turn, the same species as \"There is one more lesson\". The next sentence does the turning.",
+     "fix": "Delete the sentence. The paragraph then opens: \"If \"Christian nation\" means a nation whose public life obeys Christ, the summer of 1787 can't bear the name.\"",
+     "severity": "should"
+    },
+    {
+     "where": "## What Scripture Calls a Holy Nation, first paragraph, first sentence",
+     "problem": "Exact words: \"The deeper question for the church isn't historical.\" This is an announced turn (\"this is where it stops being about history\") placed directly under a heading that already makes the turn. It also opens on a \"Not X\" construction.",
+     "fix": "Delete the sentence. The paragraph then opens: \"What does the Bible itself call a holy nation? The verse most often quoted...\"",
+     "severity": "should"
+    },
+    {
+     "where": "## What the Constitution Says About Religion, second paragraph",
+     "problem": "Exact words: \"Earlier that summer, on June 28, Franklin had moved\". The sentences just before are about the state ratifying conventions, which met from late 1787 into 1790, so \"earlier that summer\" has no clear summer to refer to. This is the ambiguous chronology the brief warns against.",
+     "fix": "\"Back in Philadelphia, on June 28, 1787, Franklin had moved that the Convention open each day with prayer.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Final section, paragraph beginning \"It doesn't.\"",
+     "problem": "Exact words: \"They wanted the magistrate out of the church's business, not because they wanted God out of public life but because they had felt what it was to hold their faith as a favor from the state.\" The \"not out of public life\" point is already made in this essay through Dreisbach (\"not as a demand that religion disappear from public life\"). It is also nearly the sentence in the sibling Christian nationalism essay (\"The Baptists wanted that wall for the sake of faith, not to push faith out of public life\"). Cutting the clause keeps the ledger's correction about the magistrate intact.",
+     "fix": "\"They wanted the magistrate out of the church's business because they had felt what it was to hold their faith as a favor from the state.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "## The Case for a Christian Founding, third paragraph, last sentence",
+     "problem": "Exact words: \"That thread runs straight to the wall of separation.\" This is a forward-hook closer and a mild overclaim. The Sandy Creek Separate Baptists lead to Virginia and Madison's fight. The wall image comes from Jefferson's reply to Connecticut Baptists, who did not descend from Sandy Creek. \"Straight\" is more than the essay can show.",
+     "fix": "Delete the sentence, so the paragraph ends: \"...and from there Baptist preaching spread into Virginia.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "## The Case for a Christian Founding, third paragraph",
+     "problem": "Exact words: \"The historian Jon Butler made the case in 1982 that \"the Great Awakening\" was a label applied afterward to scattered regional revivals, and the evangelical historian Thomas Kidd answered him in 2007 with a full history defending their importance.\" Two names, two years and an argued/answered pair in one sentence, inside a digression the paragraph then sets aside (\"Whoever is right about the label\"). This is the one place the scholar-parade pattern shows, and the years do no work here.",
+     "fix": "\"The historian Jon Butler has argued that \"the Great Awakening\" was a label applied afterward to scattered regional revivals, and the evangelical historian Thomas Kidd has answered him with a full history defending their importance.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "## The Case for a Christian Founding, last paragraph, last sentence",
+     "problem": "Exact words: \"Even the skeptics among their leaders drew their moral vocabulary, including their sense of what power does to sinful men, from a Christian inheritance they couldn't have escaped if they had wanted to.\" This is a sweeping overclaim that the skeptic will catch at once. Jefferson, Franklin and Paine also drew on classical republican and Enlightenment sources (Montesquieu and Locke on power). A small qualifier keeps the claim and removes the opening for a rebuttal.",
+     "fix": "\"Even the skeptics among their leaders drew much of their moral vocabulary, including their sense of what power does to sinful men, from a Christian inheritance few of them could have escaped if they had wanted to.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "## What the Founders Believed, Noll/Hatch/Marsden paragraph",
+     "problem": "Exact words: \"If \"Christian\" means a society that reflects the ideals of Scripture, early America does not deserve the name, either uniquely or even predominantly.\" This is an attributed paraphrase, so it passes the rule. But \"does not deserve\" and \"uniquely or even predominantly\" are the authors' own words (as I recall the book: \"does not deserve to be considered uniquely, or even predominantly, Christian\"), used without quotation marks. The ledger marks it as an unchecked paraphrase.",
+     "fix": "Check the sentence in The Search for Christian America first. If it matches, mark the borrowed words: \"If \"Christian\" means a society that reflects the ideals of Scripture, early America does not deserve to be considered Christian \"uniquely, or even predominantly.\"\" If it cannot be checked, leave the line as it stands.",
+     "severity": "consider"
+    },
+    {
+     "where": "Standfirst (excerpt field)",
+     "problem": "Exact words: \"...and some of the Christians most determined to keep it that way were Baptists.\" \"Keep it that way\" points back to the national government. The body shows Baptists taking apart state establishments in Virginia and Connecticut, not guarding the federal arrangement (the essay never mentions Leland's 1788 pressure on Madison). It is a small mismatch between promise and evidence, ending on a reveal. It is not a balanced antithesis.",
+     "fix": "\"A deeply Protestant people built a national government that declined to call itself Christian, and some of the Christians who fought hardest to keep church and state apart were Baptists.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "OUTSIDE THIS ESSAY: /home/user/livewell-land/client/public/essays/why-didnt-the-bible-ban-slavery.json, paragraph beginning \"I pastor a Baptist church\"",
+     "problem": "Seen while checking for repeats across the shelf. Exact words: \"I pastor a Baptist church, and Baptists don't get to tell this story from a safe distance. A hundred and fifty years after Augusta, in 1995, the Southern Baptist Convention adopted a resolution...\" Putting his own church directly beside the SBC's repentance implies Southern Baptist membership, which NOTES.md says is unconfirmed and must never be implied. Not part of this essay. Do not apply this fix here.",
+     "fix": "In that sibling file only: \"Baptists don't get to tell this story from a safe distance, and I pastor a Baptist church. A hundred and fifty years after Augusta, in 1995, the largest Baptist body in the country, the Southern Baptist Convention, adopted a resolution...\" If any implication remains, cut \"I pastor a Baptist church\" and hold for James.",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "Forbidden Language, searched literally for every word (delve, leverage, unlock, transformative, navigate/navigat-, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), every phrase and every therapy-speak item: zero hits in James's prose. The only match is \"Blessed\" inside the verbatim ESV quotation of Psalm 33:12.",
+    "Em-dashes: zero U+2014, zero en-dashes, zero \"--\" anywhere, including the title and excerpt.",
+    "Exclamation points: one, inside the verbatim ESV quotation of Psalm 33:12 with the reference beside it.",
+    "Rulebook words (steelman, verdict, indictment, self-implication, both-sidesism) and \"honest\" or \"fair\" as self-certifying adjectives: zero.",
+    "Brief stamps, searched literally (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\"): none appear. Variants: \"Preachers, and I'm one of them\" once, and \"Baptists like me\" once (flagged above).",
+    "Headings: all seven are plain and descriptive (The Case for a Christian Founding; What the Founders Believed; What the Constitution Says About Religion; The Treaty of Tripoli; The Baptists and the Wall of Separation; The Plain Answer; What Scripture Calls a Holy Nation).",
+    "Standfirst: one declarative sentence, not a balanced antithesis. There is a small accuracy note above.",
+    "Biography: limited to \"Preachers, and I'm one of them\" (a pastor), \"Baptists like me\" (Baptist church) and a hypothetical (\"if I had been a Congregational minister in Connecticut in 1818\"). It reads as self-implication, not credential. No title, years in ministry, book count, church name, PCN, invented scene, or Southern Baptist tie.",
+    "Political direction: the secular myth (a godless founding) and the Christian myth (a Christian national government) are both corrected with the same instrument, the documents, and Proverbs 18:17 is applied to both sides. The asymmetry (\"The two mistakes don't cost the same\") is argued, not assumed, as VOICE-JAMES-BELL allows. Once \"It's lazy history\" goes, the heat is not one-sided.",
+    "Contested second-order questions: no position is asserted on church establishment as such (\"Whether a state should have one was left to the state\"). Baptist convictions are attributed (\"They believed...\"). The holy-nation reading of 1 Peter 2:9 sits on first-order and guardrail ground, not second-order.",
+    "Crisis-facing: not a crisis piece, so no Find Help or 988 line is required.",
+    "Ending: it does not recap. It turns the mirror on both kinds of reader. Closing Texts are in the *\"Quote.\"* (Reference) one-line format, and repeating body verses there matches the other pilots.",
+    "Scripture: Proverbs 18:17, Psalm 33:12, 1 Peter 2:9, Revelation 7:9 (partial), John 18:36, Exodus 20:16 and Philippians 3:20 match ESV wording as I know it, each with its reference. I did not open esv.org.",
+    "Facts I checked from memory with no error found (sources not opened): Holy Trinity 1892 and Brewer; Tripoli approved June 7 and signed June 10, 1797, signed at Tripoli November 4, 1796, Barlow, Hunter Miller 1931 and the 1930 Arabic translation, the 1805 treaty; Northwest Ordinance art. 3 and its 1789 re-enactment; the thanksgiving proclamation of October 3, 1789; Farewell Address; Adams to the militia, 1798; Article VI; Franklin's June 28 motion and note; First Amendment ratified December 15, 1791; Jefferson to Rush, 1803; Franklin to Stiles, 1790; Finke and Stark 17 percent; South Carolina 1778, North Carolina 1776, Massachusetts 1780; Madison 1774 (age 22), 1785, the 1786 Statute; Danbury October 7, 1801 and the reply January 1, 1802; Levi Lincoln; Leland on January 3; Williams 1644; disestablishment 1818 and 1833; the Beecher quotation; the three-fifths clause, 1808, the 1790 census; the fake Henry quote traced to The Virginian, 1956.",
+    "Register: about 3,840 words; 39 paragraphs averaging about 93 words; mean sentence about 19 words; about 17 percent of sentences at 8 words or fewer (a little under the quarter target, not a failure); contractions light; semicolons only inside the Article 11 block quote; real questions asked; direct address to \"you\" present.",
+    "Tidy triplets elsewhere: \"They taught... They split churches. And they produced the Separate Baptists\" lists three real effects. \"At one end / At the other end / In between\" is a real spectrum. Only the Plain Answer triplet is flagged.",
+    "Scholar parade: Frazer, Finke and Stark, Noll/Hatch/Marsden, Hunter Miller, Dreisbach and Kidd on Henry each advance the argument. Only the Butler/Kidd sentence is flagged."
+   ]
+  },
+  {
+   "lens": "Fact audit of the published text (client/public/essays/was-america-founded-as-a-christian-nation.json; its body is identical to docs/work/essays/was-america-founded-as-a-christian-nation.md) against i",
+   "findings": [
+    {
+     "where": "What the Founders Believed, paragraph 2, sentence 2: \"He told Benjamin Rush in 1803 that he was \"a Christian, in the only sense in which he wished any one to be,\" meaning an admirer of Jesus' moral teaching...\"",
+     "problem": "(c) The quotation's sense is distorted. In Jefferson's letter of April 21, 1803 the \"he\" in \"in which he wished any one to be\" is Jesus; the full sentence is \"I am a Christian, in the only sense in which he wished any one to be\" (ledger line, Gutenberg #16783; my search found Founders Online and let.rug.nl giving the same). In the essay the nearest antecedent is Jefferson himself, so a reader takes it to mean Jefferson wished everyone to be his kind of Christian. Jefferson did not say that.",
+     "fix": "Replace the sentence with: \"Writing to Benjamin Rush in 1803 about Jesus, he said, \"I am a Christian, in the only sense in which he wished any one to be,\" meaning an admirer of Jesus' moral teaching who did not believe Jesus had ever claimed to be divine.\" (Or, with no quotation marks: \"He told Benjamin Rush in 1803 that he was a Christian in the only sense Jesus himself intended, meaning an admirer of Jesus' moral teaching who did not believe Jesus had ever claimed to be divine.\")",
+     "severity": "should"
+    },
+    {
+     "where": "The Baptists and the Wall of Separation, last paragraph: \"It cut the churches loose from dependence on state support,\" he recalled. \"It threw them wholly on their own resources and on God.\"",
+     "problem": "(b)/(d) The verbatim wording rests on secondary sources that disagree, and no run has seen the primary text. The only source seen that cites the Autobiography by page is Greene (Gutenberg #7436, note [am], citing \"Autobiography, i, pp. 344\"). It reads \"dependence upon state support--It threw them...\". The web quotation pages (PBS, Christianity Today, wist.info) read \"on\". My two searches found scans of the 1864 Autobiography but no page text to settle it. The ledger records this as a variant left for James, yet the essay still presents \"on\" as verbatim.",
+     "fix": "Check vol. 1, p. 344 of the 1864 Autobiography (Internet Archive or HathiTrust) and print whichever word it uses. Until then, quote only the clause every source agrees on: \"Years later he called the defeat the best thing that ever happened to the state. It had cut the churches loose from the state's support, he recalled, and \"threw them wholly on their own resources and on God.\"\"",
+     "severity": "should"
+    },
+    {
+     "where": "What the Founders Believed, paragraph 3: \"calls the working creed of the central founders *theistic rationalism*:\"",
+     "problem": "(g) Restoration. James's approved pilot (commit 23425fe7) set the term in double quotation marks: \"theistic rationalism\". Run 2 changed it to italics only because the term could not be checked (correction 6). Run 3 then search-checked it: Frazer coined \"theistic rationalism\" in The Religious Beliefs of America's Founders (2012), per The Master's University site, the Claremont Review and Kirk Center reviews, and the Mohler interview. Both forms are accurate now.",
+     "fix": "Restore the approved wording: \"Gregg Frazer, a historian at The Master's University, an evangelical school in California, calls the working creed of the central founders \"theistic rationalism\": belief in a God who governs history, joined to the conviction that reason judges revelation and that the heart of religion is morality.\" Update correction 6 in the ledger to say the quotation marks were restored once the term was verified. If James prefers italics for a named idea, keep them; nothing factual changes.",
+     "severity": "should"
+    },
+    {
+     "where": "What the Founders Believed, paragraph 4: \"Membership was demanding then, and many more attended than joined, so the figure understates how Christian the culture was.\"",
+     "problem": "(b)/(c) The ledger's own note (line 87) calls \"understates\" a judgment on a contested question. Finke and Stark dispute Bonomi and Eisenstadt's much higher estimate of 59 percent for 1780. The essay states the judgment as settled fact.",
+     "fix": "\"Membership was demanding then, and many more attended than joined, so other historians think the figure understates how Christian the culture was.\" (Bonomi and Eisenstadt are already on ledger line 87 and can be named if wanted.)",
+     "severity": "consider"
+    },
+    {
+     "where": "The Treaty of Tripoli, the block quotation of Article 11",
+     "problem": "(d) The ledger matched different clauses of the block quotation against different modern transcriptions: Foster and au.org for the opening and closing, Jewish Currents and Prospect for \"tranquility, of Mussulmen\", Foster for \"Mahometan\". No single printed text was matched. The spellings vary by source. One search summary said Avalon (Hunter Miller's State Department text) and MTSU give \"Musselmen\" and \"tranquility\" and Wikisource (Annals of Congress) gives \"tranquillity\". Another summary gave discourse.net's Barlow transcription as \"tranquillity, of Mussulmen\". No search summary confirmed \"Mehomitan\". Only spelling is at stake; no words differ.",
+     "fix": "Take Article 11 from one printed source (Miller, Treaties and Other International Acts, vol. 2, 1931, as on Avalon bar1796t.asp, or Statutes at Large vol. 8). Copy its spellings of Mussulmen/Musselmen, tranquility/tranquillity and Mahometan/Mahomitan, and name that source on the ledger line. If neither page can be opened, leave the text as it is; the wording is sound.",
+     "severity": "consider"
+    },
+    {
+     "where": "The Case for a Christian Founding, paragraph 1: \"Ten years later John Winthrop told the Puritans bound for Massachusetts Bay that they would be \"as a city upon a hill,\"\"",
+     "problem": "(b) The ledger's note for James is still open. Wikipedia describes the sermon's authorship as disputed (John Wilson or George Phillips are suggested). The Reformed Journal essay doubts it was ever delivered whole. The manuscript note places it \"heere in England.\" The essay's wording holds under the standard attribution, and \"bound for\" covers delivery in England, so this is low risk.",
+     "fix": "The sentence can stand. To remove all exposure: \"Ten years later a lay sermon credited to John Winthrop told the Puritans bound for Massachusetts Bay that they would be \"as a city upon a hill,\" borrowing the words of Jesus.\" (If changed, \"Even Winthrop's city on a hill\" later in the essay can stay.)",
+     "severity": "consider"
+    },
+    {
+     "where": "What the Constitution Says About Religion, paragraph 2: \"Earlier that summer, on June 28, Franklin had moved...\"",
+     "problem": "(c) Ambiguous chronology. The sentences just before describe the ratifying conventions and printed complaints of late 1787 and 1788; the North Carolina objections the ledger cites came at Hillsborough in July 1788. So \"that summer\" can be read as 1788. The motion was June 28, 1787.",
+     "fix": "\"Earlier, on June 28, 1787, while the Convention was still sitting, Franklin had moved that the Convention open each day with prayer.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "The Treaty of Tripoli, paragraph 4: \"None of them changes what happened in Philadelphia in June 1797.\"",
+     "problem": "(a) No ledger line covers the place. The claim is true: my search found that the Fifth Congress met at Congress Hall, Philadelphia, with its first session opening May 15, 1797 and running into July (Wikipedia, \"5th United States Congress\").",
+     "fix": "No change to the text. Add a ledger line: \"Philadelphia, June 1797: the Fifth Congress's first session met at Congress Hall, Philadelphia, from May 15, 1797 (search-checked, Wikipedia '5th United States Congress').\"",
+     "severity": "consider"
+    },
+    {
+     "where": "What the Constitution Says About Religion, paragraph 1: \"Its one explicit reference to religion is a prohibition.\"",
+     "problem": "(a) No ledger line covers this claim. The local Gutenberg #5 text shows Article I, sec. 7 \"within ten Days (Sundays excepted)\". Yes-side writers routinely cite that clause as a religious acknowledgment. It is implicit, so the essay's \"explicit\" holds, but the ledger should record why.",
+     "fix": "No change to the text. Add a ledger line: \"Only explicit reference to religion is Art. VI's test ban (Gutenberg #5); Art. I, sec. 7 'Sundays excepted' is an implicit nod to Sabbath custom, not an explicit reference.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "What Scripture Calls a Holy Nation, paragraph 5: \"They wanted the magistrate out of the church's business ... They believed the God who saves sinners has never needed a legislature's permission.\"",
+     "problem": "(a) These sentences attribute views to the Danbury Baptists, and the ledger has no line for them; it covers only the \"favors granted\" quotation. The letter supports them. My search found the October 7, 1801 address saying their chief Magistrate \"will not, dare not assume the prerogatives of Jehovah and make Laws to govern the Kingdom of Christ\" (Wikipedia, Liberty Magazine, Founders Online; one copy reads \"prerogative\"). The ledger's sources also give \"Religion is at all times and places a matter between God and individuals\".",
+     "fix": "No change to the text (it is paraphrase, without quotation marks). Add a ledger line citing those two passages of the Danbury address as support.",
+     "severity": "consider"
+    },
+    {
+     "where": "The Baptists and the Wall of Separation, paragraph 6: \"The historian Daniel Dreisbach has argued...\"",
+     "problem": "(a)/(f) The ledger checks Dreisbach's argument (NYU Press, 2002) but not the descriptor. He is a living scholar. American University lists him as a professor in the Department of Justice, Law & Criminology (J.D. Virginia, D.Phil. Oxford), working on constitutional history and church-state relations. \"Historian\" is loose but not unfair. The argument as stated (a jurisdictional line between the federal government and the states, not religion stripped from public life) matches his Heritage report and the Harvard JLPP review I saw.",
+     "fix": "\"Daniel Dreisbach, a scholar of church and state at American University, has argued that the wall was meant first as a line between the federal government and the states' own religious arrangements, not as a demand that religion disappear from public life.\" Add the descriptor to ledger line 133.",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "The published JSON body is word for word the same as docs/work/essays/was-america-founded-as-a-christian-nation.md, the text the ledger was built on.",
+    "Opening: Church of the Holy Trinity, 1892, Brewer writing for the Court, the English rector, the contract-labor law, and \"this is a Christian nation\" all match ledger lines 38-41. 'Ninety-five years earlier' is correct (1892 - 1797). June 7, 1797, unanimous: Voteview gives 23-0 (line 43). Adams signed three days later, June 10 (line 46). The Tripoli clause quotation is on line 45.",
+    "Proverbs 18:17 is ESV per the ledger, and the reference fits the sense in the local BSB ('The first to state his case seems right until another comes and cross-examines him').",
+    "Mayflower Compact 1620 (paraphrase); Winthrop in 1630 (subject to the 'consider' above); church-member franchise in Massachusetts; Virginia establishment by law and taxes: all on ledger lines with library sources.",
+    "Revivals: Edwards at Northampton 1734-35; Whitefield 1739 and his route; Franklin's 'gold and all' in Philadelphia; Butler 1982 and Kidd 2007; 'few historians dispute' (correction 1); Separate Baptists; Shubal Stearns and Sandy Creek 1755. My search found sources saying Stearns was 'likely converted under Whitefield's ministry' in 1745, so 'converted under Whitefield's influence' is fair.",
+    "Declaration quotations (lower-case 'protection of divine Providence' matches the ACLU and Leaderu transcriptions); Continental Congress chaplains and fast days; Northwest Ordinance, July 1787, in New York, with the art. 3 quotation matching comma for comma; re-enactment in 1789; Washington's thanksgiving request and proclamation of October 3, 1789 in the same week as the amendments; Farewell Address 1796 'indispensable supports'; Adams to the Massachusetts militia, October 11, 1798, with the capital P in 'People'.",
+    "Witherspoon, Jay and the American Bible Society, Samuel Adams, Henry as Anglican; the Jefferson Bible c. 1820 ending at the tomb; Franklin to Stiles in 1790; Adams as Unitarian; Paine; Washington as vestryman who often left before communion: all have ledger lines with sources.",
+    "Finke and Stark: 17 percent in 1776, roughly doubled by 1850 (34 percent); restored per correction 7 and matching the ledger.",
+    "Noll, Hatch and Marsden, The Search for Christian America (1983): the conclusion is paraphrase without quotation marks and matches the introduction's sense ('uniquely, distinctly or even predominately'). Describing them as living believers is fair.",
+    "Constitution: signed September 17, 1787; no 'God' or 'Christian' except 'in the Year of our Lord'; the Article VI quotation matches with its capitals; state religious tests; ratifying-convention objections; Franklin's June 28 motion, the adjournment without a vote, and 'three or four persons' (paraphrase); First Amendment ratified December 15, 1791, with the quotation matching; establishments surviving in the states.",
+    "Tripoli: Barbary corsairs and tribute; negotiated under Washington; signed November 4, 1796; Barlow as consul at Algiers; Miller 1931 and the 1930 Hurgronje translation; the Dey's letter in place of Article 11; the 1805 treaty after four years of war dropping the clause: all on ledger lines. My searches again confirmed 'no counterpart in the Arabic' and the letter from the Dey of Algiers to the Pasha of Tripoli.",
+    "States: the South Carolina 1778 quotation; North Carolina 1776 art. 32 (paraphrase); Massachusetts 1780 'public Protestant teachers of piety, religion and morality' with Adams as principal drafter; Virginia jailings; Madison's 1774 letter at age 22; Henry's 1784 assessment; Memorial and Remonstrance 1785; Baptist and Presbyterian petitions; the Statute adopted January 1786.",
+    "Danbury: October 7, 1801; 'as favors granted, and not as inalienable rights'; Jefferson's reply of January 1, 1802 with the wall quotation word for word ('Church & State' per the manuscript); Levi Lincoln and the cut passage on fasts; Leland's sermon on Sunday, January 3, 1802; Roger Williams 1644 'hedge or wall of separation' (paraphrase, read in the EEBO-TCP text); Connecticut 1818 and Massachusetts 1833 (the year of the vote); Beecher's first reaction and later reversal; the churches growing afterward.",
+    "Plain Answer arithmetic: 1787 to 1797 is 'ten years later'; 1776 to 1833 fits 'within two generations'.",
+    "Scripture, all ESV with the reference beside the quotation, and each reference matches the sense of the local BSB verse: Psalm 33:12 (the nation God chose as his inheritance); 1 Peter 2:9 (chosen race, holy nation; BSB 'chosen people'); 1 Peter 1:1 (exiles of the Dispersion in Pontus, Galatia, Cappadocia, Asia, Bithynia, so 'Asia Minor' is right); Revelation 7:9 ('from every nation, from all tribes and peoples and languages'); Matthew 5:14 with 5:1 (spoken to the disciples on the mountain); John 18:36; Exodus 19:6 for Sinai and 'holy nation'; Exodus 20:16 as the ninth commandment in Reformed numbering; Philippians 3:20 (the ESV verse ends in a comma; the closing period is the quoter's).",
+    "Closing Texts are set as *\"Quote.\"* (Reference), one per line, and match the ESV.",
+    "The only exclamation point is inside Psalm 33:12, quoted Scripture. The essay has no em-dashes.",
+    "Slavery facts: Northwest Ordinance art. 6; three-fifths (Art. I sec. 2); 1808 slave-trade clause (Art. I sec. 9); 1790 census 697,897, so 'nearly 700,000' is right.",
+    "False Patrick Henry quotation 'not by religionists, but by Christians': traced to the April 1956 issue of The Virginian (correction 5); circulating for decades (it is in Federer's 1994 quote book). Kidd's biography is Patrick Henry: First Among Patriots (Basic Books, 2011). My search found Checkyourfact quoting Kidd's 2012 HuffPost piece: Henry was devout but the quotation is 'of relatively recent origin'. The Washington Times (2012) reports him calling such quotations apocryphal. The essay's paraphrase 'a modern invention all the same' is fair to a living person, and it does not use quotation marks.",
+    "Living persons named (Butler, Kidd, Frazer, Finke, Noll, Hatch, Marsden, Dreisbach): each characterization is supported and none is unfair. Barton and Hawley appear in the ledger but not in the essay.",
+    "Biography: only 'Preachers, and I'm one of them', 'Baptists like me' and a hypothetical 'if I had been a Congregational minister', all within NOTES.md. No title, years, book count, Southern Baptist tie or invented scene appears.",
+    "Restorations reviewed: correction 1 ('nobody disputes') has no source, so it is not restored. Correction 5 ('Virginia magazine') is less specific than the current text and unsupported, so it is not restored. Corrections 4 and 7 (Finke and Stark) are already restored. Correction 6 is proposed above."
+   ]
+  }
+ ]
+}
