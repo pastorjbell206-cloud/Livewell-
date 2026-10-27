@@ -1,188 +1,176 @@
 # Claims ledger: why-does-god-allow-suffering
 
-Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suffering?"). Rewrite of the machine essay of the same slug; folds in is-god-in-control and natural-evil-and-animal-suffering. Drafted 2026-10-26; this ledger was rewritten by the verifier on 2026-10-27 and records what the verifier actually did.
+Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suffering?"). Rewrite of the machine essay of the same slug; folds in is-god-in-control and natural-evil-and-animal-suffering. Drafted 2026-10-26. The first verifier rewrote this ledger on 2026-10-27 with no web search available. A second pass (the "closing pass", also 2026-10-27) worked through every line that was still open and records here what it actually saw.
 
-## Read this first: what could and could not be reached on 2026-10-27
+## Status at a glance (closing pass, 2026-10-27)
 
-- **No web search.** The workflow's shared WebSearch budget was used up before this check began. All four WebSearch calls made (Darwin to Gray, Rowe's fawn, Lisbon 1755, Rousseau's letter) came back "this turn's web search budget is used up". No search result was seen by the verifier.
-- **No web pages.** WebFetch could not resolve en.wikipedia.org (ENOTFOUND). curl to darwinproject.ac.uk, archive.org, en.wikipedia.org, britannica.com, fadedpage.com and darwin-online.org.uk was refused by the proxy (403). No page on any of those sites was opened.
-- **What was reachable:** GitHub (raw.githubusercontent.com and git clones) and files already in this repository or the session scratchpad.
-- **The writer's searches.** The 2026-10-26 draft ledger recorded WebSearch matches for several claims. Where a line below says "writer's 2026-10-26 search record", that is the writer's report, repeated here; the verifier did not see those results and did not re-check them.
+- 37 lines were open when the closing pass began (marked "Not re-checked", "Textbook", "Not checked", or resting only on the writer's 2026-10-26 search record).
+- 23 are now verified against a source the closing pass saw, 9 were corrected, cut or generalized in the essay, and 5 remain open (listed under "Still open" at the end).
+- The 25 Scripture quotations, already matched by the first verifier, were matched again by the closing pass (25 of 25, words and punctuation).
 
-## Method key (used in the lines below)
+## What each pass could reach
 
-- **"ESV copy"**: compared by script with the ESV text in the public GitHub repository lguenth/mdbible, file `json/ESV.json` (its own metadata: "English Standard Version 2011", SWORD module 1.0.2). The verifier downloaded it from raw.githubusercontent.com on 2026-10-27; it is byte-identical to the clone already in the scratchpad (commit fd66568), which the verifier also read with `git show`. The script compared each quotation with the verse text twice: words only (case and punctuation ignored), and with punctuation kept (only quotation marks and dash characters normalized, because the copy drops the quotation marks inside verses and prints LORD as "Lord"). A negative control (NIV "bondage to decay", a semicolon in Romans 12:15, "with the hearing" in Job 42:5) failed as it should. This is not esv.org or the ESV API; recheck with James's API key once it exists.
-- **"WDB"**: read with `git show` on 2026-10-27 in the scratchpad clone of github.com/HistoricalChristianFaith/Writings-Database (commit 328918a). Files used are ANF/NPNF translations (the Lactantius file carries the Ante-Nicene Fathers notes; the Augustine file is the NPNF Enchiridion "By the Editor", not the Outler translation in the same folder).
-- **"Gutenberg (GITenberg)"**: Project Gutenberg texts downloaded by the verifier on 2026-10-27 from the GITenberg mirrors on raw.githubusercontent.com: Hume, *Dialogues Concerning Natural Religion*, eBook #4583 (`GITenberg/Dialogues-Concerning-Natural-Religion_4583/master/4583.txt`); Dostoevsky, *The Brothers Karamazov*, Constance Garnett translation, eBook #28054 (`GITenberg/The-Brothers-Karamazov_28054/master/28054-0.txt`, title page "Translated from the Russian of Fyodor Dostoyevsky by Constance Garnett").
-- **"Creeds.json"**: Westminster Confession downloaded by the verifier on 2026-10-27 from raw.githubusercontent.com/NonlinearFruit/Creeds.json/master/creeds/westminster_confession_of_faith.json (metadata: year 1647, source an archive.org scan of the Assembly's "humble advice"; spelling modernized).
-- **"Textbook"**: kept without a source opened this session because it is a standard reference fact. Listed so James can see which these are.
-- **"Not re-checked"**: the verifier could reach no source for it. Kept only where the claim is paraphrase or a textbook fact, and said so.
+- **First verifier.** No web search (the workflow's shared budget was spent) and no web pages; GitHub and local files only. Where a line says "writer's 2026-10-26 search record", that is the writer's report, repeated.
+- **Closing pass.** 16 WebSearch queries returned results before the workflow's shared budget of 200 ran out; four more were refused ("this turn's web search budget is used up"), so a few lines that needed search are left open below. Web pages themselves could not be opened: gutenberg.ca, fadedpage.com, pbs.org, talkorigins.org and collections.libraries.indiana.edu were refused by the proxy (403). Matches marked "search" rest on the result titles and quoted text the search tool returned, not on the pages. GitHub was reachable, and the closing pass found several public-domain books through the GITenberg catalog (`gitenberg/data/GITenberg_repo_list.tsv` in github.com/gitenberg-dev/gitberg).
 
-## Changes the verifier made (2026-10-27)
+## Method key
 
-- Tsunami "About forty minutes later" became "Within the hour": the number could not be re-checked (writer's 2026-10-26 search record gives about 40 minutes, which the general wording covers).
-- Death toll "from about ten thousand to sixty thousand" became "vary widely, into the tens of thousands": the range could not be re-checked, and the writer's own record showed sources disagreeing (10,000 to 50,000; 30,000 to 50,000; about 60,000; 5,000 to over 50,000).
-- Malagrida's pamphlet: "in 1756" cut (could not be re-checked; not load-bearing).
-- Rousseau: "twenty thousand houses six and seven stories high" became "thousands of tall houses": the figures could not be re-checked against his letter.
-- Rowe: the sentence "No one sees it, and no one learns anything from it." cut. It added detail to Rowe's scenario that neither the writer's record nor any source reached this session supports.
-- Lewis, *A Grief Observed*: the three quotations ("The real danger is of coming to believe such dreadful things about Him"; "So there's no God after all"; "So this is what God's really like") became attributed paraphrase without quotation marks. The book is in copyright, no copy was reachable, and the writer's record flagged the second fragment as only partly matched.
-- Wolterstorff: the quotations "I have no explanation", "I cannot fit these pieces together" and "Death is awful, demonic" became attributed paraphrase; "what he called his mourning bench" became "sit beside him in his grief". "In 1983", "twenty-five years old" and "in Austria" cut (numbers and a place that could not be re-checked; "died young" kept). "knew every argument in this essay" softened to "knew the arguments in this essay" (overclaim).
-- Kushner: "diagnosed at three ... died in 1977, two days after his fourteenth birthday" became "diagnosed as a small child ... died in his early teens" (numbers could not be re-checked).
-- Job 42:8: "the friends are sent to ask Job to pray for them" became "the friends are sent to Job so that he can pray for them" (ESV copy: they are to go to Job with a burnt offering, "And my servant Job shall pray for you").
-- "Job's last words aren't that he finally understands" became "Job's last speech isn't a claim that he finally understands": the quoted Job 42:5 is not his last verse (42:6 follows, ESV copy).
-- "Jesus was asked the friends' question at least twice" became "Jesus faced ...": in Luke 13:1-4 he is told about the Galileans and raises the question himself (ESV copy); only John 9:2 is a question put to him.
+- **"ESV copy"**: compared by script with the ESV text in the public GitHub repository lguenth/mdbible, file `json/ESV.json` (metadata: "English Standard Version 2011", SWORD module 1.0.2), commit fd66568 in the scratchpad clone. The closing pass re-ran the comparison with its own script (words only, then with punctuation kept, quotation marks and dashes normalized, LORD read as "Lord"), with three negative controls that failed as they should (NIV "bondage to decay"; a semicolon in Romans 12:15; "with the hearing" in Job 42:5). This is not esv.org or the ESV API; recheck with James's API key once it exists.
+- **"BSB"**: the site's own Berean Standard Bible text in client/public/bible/ch/, read to confirm each verse's location and sense (not ESV wording).
+- **"WDB"**: read with `git show` in the scratchpad clone of github.com/HistoricalChristianFaith/Writings-Database (commit 328918a), ANF/NPNF translations only.
+- **"Gutenberg (GITenberg)"**: Project Gutenberg texts cloned from the GITenberg mirrors on GitHub. First verifier: Hume, *Dialogues Concerning Natural Religion* (#4583); Dostoevsky, *The Brothers Karamazov*, Garnett translation (#28054). Closing pass: *The Life and Letters of Charles Darwin*, vol. II (#2088, `Life-and-Letters-of-Charles-Darwin---Volume-2_2088`); Voltaire, *Toleration and Other Essays*, tr. Joseph McCabe (#64858), which includes "Poem on the Lisbon Disaster"; Diogenes Laertius, *Lives and Opinions of Eminent Philosophers*, tr. C. D. Yonge (#57342); T. H. Huxley, *Hume* (#18819); Edwin J. Houston, *The Wonder Book of Volcanoes and Earthquakes* (#43320); *Factos Notaveis da Historia Portugueza e Biographia do Marquez de Pombal* (#32869); Maurice Baring, *An Outline of Russian Literature* (#33005) and *Landmarks in Russian Literature* (#68597); William Lyon Phelps, *Essays on Russian Novelists* (#5996); John Stoughton, *Ecclesiastical History of England from the Opening of the Long Parliament* (#64226); *The Book of Common Prayer and the Scottish Liturgy* (#29622).
+- **"Creeds.json"**: Westminster Confession from raw.githubusercontent.com/NonlinearFruit/Creeds.json (first verifier).
+- **"Search"**: a WebSearch the closing pass ran on 2026-10-27; the line names what the results showed.
+
+## Changes made to the essay
+
+First verifier (2026-10-27):
+
+- Tsunami "About forty minutes later" became "Within the hour"; death toll "from about ten thousand to sixty thousand" became "vary widely, into the tens of thousands"; Malagrida's "in 1756" cut; Rousseau's "twenty thousand houses six and seven stories high" became "thousands of tall houses".
+- Rowe: the sentence "No one sees it, and no one learns anything from it." cut (not in Rowe's scenario).
+- Lewis, *A Grief Observed*, and Wolterstorff, *Lament for a Son*: quotations became attributed paraphrase; Wolterstorff's "mourning bench" became "sit beside him in his grief"; "In 1983", "twenty-five years old" and "in Austria" cut; "knew every argument" softened to "knew the arguments".
+- Kushner: "diagnosed at three ... died in 1977, two days after his fourteenth birthday" became "diagnosed as a small child ... died in his early teens".
+- Job 42:8 paraphrase corrected ("sent to Job so that he can pray for them"); "Job's last words" became "Job's last speech"; "Jesus was asked the friends' question" became "Jesus faced".
+
+Closing pass (2026-10-27):
+
+- Lisbon: "a tsunami surged up the Tagus into the lower city, and fires started by fallen candles and kitchen hearths burned for days in the districts the water didn't reach" became "a tsunami surged up the Tagus onto the waterfront, and fires broke out across the city and burned for days". The sources seen put the wave in the river and over the quays, and record many fires burning five or six days; none of them gives the candles-and-hearths cause or "districts the water didn't reach".
+- Malagrida: "urged Lisbon toward processions and penance before rebuilding" became "called the city to penance". Search confirmed penance as the pamphlet's remedy; it showed nothing on processions or rebuilding.
+- Dostoevsky: "*The Brothers Karamazov*, published in 1880" became "*The Brothers Karamazov*, his last novel". No source seen gives the publication year; Phelps and Baring confirm it was his last work.
+- Lewis: "died of cancer in July 1960" became "died in 1960". Search confirmed 1960; month and cause were not seen.
+- Kushner: "was diagnosed as a small child with progeria ... and died in his early teens" became "had progeria ... and died young"; "published in 1981" cut; "millions of readers" became "many readers". No Kushner source could be reached this pass.
+- Lament: "Dozens of psalms are complaints" became "Many psalms are complaints" (see that line).
+- No em-dash added (grep for U+2014 after the edits: zero). Forbidden-language words: zero. No exclamation point in the essay.
 
 ## Biography
 
-- "I came to faith as an adult, out of atheism." Matches the confirmed biography in docs/work/NOTES.md (read 2026-10-27). The rest of that sentence is a stance, not an event; James should confirm he is comfortable with it.
-- "Baptists, my own tradition." NOTES.md allows Baptist self-identification; no Southern Baptist claim is made. Checked against NOTES.md.
-- "Most of us who have stood with a grieving family" and "better than I do": general, no scene or person invented. No other biography in the essay.
+- "I came to faith as an adult, out of atheism." Matches the confirmed biography in docs/work/NOTES.md. The rest of that sentence is a stance, not an event; James should confirm he is comfortable with it.
+- "Baptists, my own tradition." NOTES.md allows Baptist self-identification; no Southern Baptist claim is made.
+- "Most of us who have stood with a grieving family" and "better than I do": general, no scene or person invented.
 
 ## Lisbon, 1755
 
-- Earthquake on the morning of November 1, 1755, All Saints' Day, with many churches full for Mass; roofs fell on worshipers. Textbook. Not re-checked (writer's 2026-10-26 search record: Britannica, EBSCO).
-- Tsunami "within the hour" up the Tagus into the lower city. Generalized by the verifier (see Changes). Not re-checked.
-- Fires from fallen candles and kitchen hearths burned for days in districts the water did not reach. Not re-checked (writer's 2026-10-26 search record: Wikipedia, five days).
-- Dead "into the tens of thousands", estimates vary widely. Generalized by the verifier. Not re-checked.
-- Lisbon "one of the great Catholic cities of Europe." General characterization. Not re-checked.
-- Gabriel Malagrida, Jesuit, published a pamphlet blaming the city's sins, not nature, and urged processions and penance before rebuilding. Not re-checked (writer's 2026-10-26 search record: Wikipedia "Gabriel Malagrida", archive.org listing of *Juízo da verdadeira causa do terramoto*). Year cut by the verifier.
-- Voltaire's long poem against the philosophers of the best of all possible worlds; he asked what crime the children crushed and bleeding on their mothers' breasts had committed. Attributed paraphrase, no quotation marks. Not re-checked (writer's 2026-10-26 search record: two English translations quoted in results).
-- Rousseau answered Voltaire; nature had not crowded thousands of tall houses onto that spot; much of the "act of God" was arranged by people. Attributed paraphrase. Not re-checked (writer's 2026-10-26 search record: herodote.net summary of the letter of 18 August 1756). Figures generalized by the verifier.
-- "God needed another angel", "everything happens for a reason": common sayings, not attributed to anyone. No check needed.
+- Earthquake on the morning of November 1, 1755, All Saints' Day, churches full for Mass, roofs falling on worshipers. **Verified (closing pass).** British envoy's letter of 15 November 1755, quoted in Portuguese in *Biographia do Marquez de Pombal* (GITenberg #32869): the first shock began "pelas dez horas menos um quarto da manhã" (a quarter to ten in the morning). Same book: "Era dia de Todos os Santos, o povo da capital corria para as egrejas para ouvir missa" (All Saints' Day, people hurrying to church to hear Mass). McCabe's introduction (GITenberg #64858): "the Feast of All Saints (November 1), and the crowded churches were in the very act of worship, when the ground shook". Houston (GITenberg #43320): "most of these buildings fell and buried the worshippers".
+- Tsunami "within the hour" up the Tagus "onto the waterfront". **Corrected (closing pass)** from "into the lower city". Houston: the wave "did not reach the mouth of the Tagus River until about half an hour after the most severe shocks"; the envoy's letter: the quay from the customs house to the palace sank and the waters rose twenty to thirty feet.
+- Fires "broke out across the city and burned for days". **Corrected (closing pass)**: the cause (candles and kitchen hearths) and "the districts the water didn't reach" cut. The envoy's letter: "rebentaram muitos incendios, que no espaço de cinco ou seis dias consumiram todos os generos" (many fires broke out, which in five or six days consumed everything); the Pombal biography: fire appeared "em differentes sitios da cidade" (in different parts of the city).
+- Dead "into the tens of thousands", estimates vary widely. **Verified (closing pass).** The sources seen disagree: the Pombal biography gives "mais de dez mil" (more than ten thousand) and quotes the envoy's "trinta mil" (thirty thousand); McCabe gives 30,000 to 40,000; Houston, following Lyell, gives 60,000.
+- Lisbon "one of the great Catholic cities of Europe." General characterization, consistent with the Pombal biography's list of ruined churches and the patriarchal see; not a checkable figure.
+- Gabriel Malagrida, Jesuit, published a pamphlet blaming the city's sins, not nature, and called the city to penance. **Verified, wording corrected (closing pass).** Search: the 1756 pamphlet *Juízo da verdadeira causa do terramoto* (archive.org listing; USP and Brown University articles in the results) attributed the earthquake to the people's sins, denied natural causes, and presented penance as the remedy (with the Nineveh analogy); "None of the results mention processions." Jesuit: the Pombal biography and *O Marquez de Pombal á luz da Philosophia* (GITenberg #27255, "embora fosse um padre, embora um jesuita").
+- Voltaire's long poem against the philosophers of the best of all possible worlds; he asked what crime the children crushed and bleeding on their mothers' breasts had committed. Attributed paraphrase, no quotation marks. **Verified (closing pass)** in McCabe's translation, "Poem on the Lisbon Disaster; or an Examination of the Axiom, 'All Is Well'" (GITenberg #64858): "Come, ye philosophers, who cry, 'All's well,'"; "What crime, what sin, had those young hearts conceived / That lie, bleeding and torn, on mother's breast?"; "From Leibnitz learn we not by what unseen / Bonds, in this best of all imagined worlds". The essay's "crushed" fits the poem's "child and mother heaped in common wreck"; McCabe's word is "torn".
+- Rousseau answered Voltaire; nature had not crowded thousands of tall houses onto that spot; much of the "act of God" was arranged by people. Attributed paraphrase. **Verified (closing pass).** Search: Rousseau's letter to Voltaire of 18 August 1756, translated "It was hardly nature who assembled there twenty-thousand houses of six or seven stories", with his point that a less dense city would have lost fewer or none. McCabe's introduction also records that "Rousseau made a feeble and friendly reply to the poem". (The figures could now be restored if James wants them.)
+- "God needed another angel", "everything happens for a reason": common sayings, not attributed. No check needed.
 
 ## The argument from Epicurus to Rowe
 
-- The argument is usually credited to Epicurus but survives in nothing he wrote. Not re-checked this session; consistent with WDB, where Lactantius gives it as "that argument also of Epicurus" with no work of Epicurus cited. Writer's 2026-10-26 search record: Wikipedia "Epicurean paradox" and secondary sources.
-- Epicurus taught in Athens about three hundred years before Christ. Textbook.
-- Lactantius, "a Christian teacher", quoted it "early in the fourth century" in a treatise on the anger of God. The treatise and its address are confirmed in WDB (*A Treatise on the Anger of God*, chapter XIII, "Of the Advantage and Use of the World and of the Seasons"). His being a teacher of rhetoric and the dating: textbook.
-- Block quotation from Lactantius, "If He is willing and is unable ... or why does He not remove them?" Verified verbatim in WDB, chapter XIII (ANF). The ANF sentence before it ("God, he says, either wishes to take away evils ...") is omitted, not altered.
-- Lactantius's answer: God allows evils because he gives wisdom, and virtue grows only by enduring and overcoming what is hard. Paraphrase checked against WDB, same chapter ("He does not take them away, because He at the same time gives wisdom"; virtue's nature "consists in enduring and overcoming the bitterness of evils").
-- Hume, *Dialogues*, a skeptic remarks: "Epicurus's old questions are yet unanswered." Verified verbatim in Gutenberg (GITenberg) #4583, Part X, spoken by Philo, the skeptic of the dialogue (the edition prints "EPICURUS's").
-- "Fourteen centuries later": arithmetic from the early fourth century to the *Dialogues* (published 1779). Textbook.
-- Twentieth-century philosophers pressed it as a strict contradiction; Plantinga's free will defense persuaded many on both sides, atheists among them, that there is none. Textbook in philosophy of religion. Not re-checked (writer's 2026-10-26 search record: Mackie's concession in *The Miracle of Theism*, 1982, as quoted in secondary sources).
-- "His argument was that God cannot make creatures truly free and also guarantee what they will choose." Plain summary of the free will defense, now attributed to Plantinga rather than asserted in the essay's own voice (voice edit, 2026-10-27), so the essay does not take a side on the Reformed and Arminian question it later leaves open. Interpretation.
-- William Rowe, 1979, the fawn burned in a lightning-started forest fire, in terrible agony for several days before it dies; such suffering appears, so far as we can see, pointless. Attributed paraphrase, no quotation marks. Year textbook. Wording not re-checked (writer's 2026-10-26 search record: excerpt of Rowe, "The Problem of Evil and Some Varieties of Atheism", *American Philosophical Quarterly* 16, 1979). Rowe described as an atheist: textbook.
-- Darwin, 1860 letter to the botanist Asa Gray: could not persuade himself a good and all-powerful God would have designed wasps that feed inside living caterpillars. Attributed paraphrase. Year and Gray: textbook. Wording not re-checked (writer's 2026-10-26 search record: secondary quotations of the letter of 22 May 1860 on the Ichneumonidae; no GitHub copy of Darwin's letters could be located).
+- The argument is usually credited to Epicurus but survives in nothing he wrote. **Verified as far as the surviving works reach (closing pass).** Lactantius gives it as "that argument also of Epicurus" with no work named (WDB). Diogenes Laertius, Book X (GITenberg #57342), preserves Epicurus's letters to Herodotus, Pythocles and Menoeceus and his fundamental maxims; the closing pass searched and read them, and none contains the argument. Its absence from the other fragments rests on standard scholarship (writer's 2026-10-26 search record: Wikipedia "Epicurean paradox").
+- Epicurus taught in Athens about three hundred years before Christ. **Verified (closing pass)**, Diogenes Laertius X (Yonge): born "in the third year of the hundred and ninth olympiad" (342/341 BC by the usual reckoning), taught at Mitylene and Lampsacus before coming to Athens, and died "in the second year of the hundred and twenty-seventh olympiad" (271/270 BC), having presided over his school thirty-two years.
+- Lactantius, "a Christian teacher", quoted it "early in the fourth century" in a treatise on the anger of God. Treatise and chapter confirmed in WDB (*A Treatise on the Anger of God*, ch. XIII). **Teacher and date verified (closing pass)** from internal evidence in WDB: *Divine Institutes* 5.2, "When I was teaching rhetorical learning in Bithynia, having been called thither, and it had happened that at the same time the temple of God was overthrown" (the overthrow of the church at the start of the Great Persecution, which textbooks date to 303), and *On the Anger of God* refers back to "our Institutions" twice, so it was written after them.
+- Block quotation from Lactantius, "If He is willing and is unable ... or why does He not remove them?" Verified verbatim in WDB, ch. XIII (ANF) by the first verifier.
+- Lactantius's answer (wisdom and virtue grow by overcoming evils). Paraphrase checked against WDB, same chapter.
+- Hume, *Dialogues*: "Epicurus's old questions are yet unanswered." Verified verbatim in Gutenberg #4583, Part X, spoken by Philo (first verifier).
+- "Fourteen centuries later." **Verified (closing pass).** Huxley's *Hume* (GITenberg #18819): the *Dialogues* were "written at least as early as 1751, though not published till after his death", and Hume "died in Edinburgh on the 25th of August, 1776". Either date is about fourteen and a half centuries after the early fourth century.
+- Twentieth-century philosophers pressed it as a strict contradiction; Plantinga's free will defense persuaded many on both sides, atheists among them, that there is none. **Still open.** Textbook in philosophy of religion; the closing pass reached no source (writer's 2026-10-26 search record: Mackie's concession in *The Miracle of Theism*, 1982).
+- "His argument was that God cannot make creatures truly free and also guarantee what they will choose." Plain summary of the free will defense, attributed to Plantinga. Interpretation.
+- William Rowe, 1979, the fawn burned in a lightning-started forest fire, in terrible agony for several days before it dies; such suffering appears, so far as we can see, pointless. Attributed paraphrase. **Verified (closing pass), search:** results cite "The Problem of Evil and Some Varieties of Atheism", *American Philosophical Quarterly* 16.4 (1979), 335-41, the example at p. 337, quoted as "Suppose in some distant forest lightning strikes a dead tree, resulting in a forest fire. In the fire a fawn is trapped ...", returned for the exact-phrase query "horribly burned, and lies in terrible agony for several days before death relieves its suffering", and summarized as "a good candidate for a pointless evil". Rowe as an atheist: the results list his 2006 paper "Friendly Atheism, Skeptical Theism, and the Problem of Evil".
+- Darwin, 1860 letter to the botanist Asa Gray: could not persuade himself a good and all-powerful God would have designed wasps that feed inside living caterpillars. Attributed paraphrase. **Verified (closing pass)** in *Life and Letters*, vol. II (GITenberg #2088), "CHARLES DARWIN TO ASA GRAY. Down, May 22nd 1860": "I cannot persuade myself that a beneficent and omnipotent God would have designedly created the Ichneumonidae with the express intention of their feeding within the living bodies of Caterpillars". Search confirmed the same date and wording. "Wasps" glosses Ichneumonidae; "botanist" is the standard description of Gray.
 
 ## Dostoevsky
 
-- *The Brothers Karamazov*, published 1880. Textbook.
-- The chapter "Rebellion", Ivan to his brother Alyosha. Verified in Gutenberg (GITenberg) #28054, Book V, chapter IV, "Rebellion".
-- A general set his hounds on an eight-year-old serf boy in front of the boy's mother. Verified in the same text ("a serf-boy, a little child of eight"; "he sets the whole pack of hounds on the child. The hounds catch him, and tear him to pieces before his mother's eyes").
-- A five-year-old girl shut all night in an outhouse in the freezing cold by her own parents. Verified in the same text ("This poor child of five ... those cultivated parents ... shut her up all night in the cold and frost in a privy"; the passage later calls it a "stinking outhouse").
-- Ivan allows a final harmony and refuses one bought at that price. Paraphrase checked against the same chapter ("too high a price is asked for harmony").
-- Quotation: "It's not God that I don't accept, Alyosha, only I most respectfully return Him the ticket." Verified verbatim in the same text (Garnett).
-- Dostoevsky a believer. Textbook.
+- *The Brothers Karamazov* "published in 1880". **Corrected (closing pass)** to "his last novel": no source seen gives the publication year. Baring, *Landmarks* (GITenberg #68597): "he did not begin to write it until 1879, and when he died in 1881, only half the book was finished"; Phelps (GITenberg #5996): "Dostoevski's last work, 'The Karamazov Brothers'".
+- The chapter "Rebellion", Ivan to Alyosha; the general's hounds and the eight-year-old serf boy; the five-year-old girl shut in the outhouse; the harmony refused; "It's not God that I don't accept, Alyosha, only I most respectfully return Him the ticket." All verified in Gutenberg #28054 (Garnett), Book V, ch. IV, by the first verifier.
+- Dostoevsky a believer. **Verified (closing pass)**, Baring, *An Outline of Russian Literature* (GITenberg #33005): "Dostoyevsky was a practising believer, a vehement apostle of orthodoxy, and died fortified by the Sacraments".
 
 ## The classic answers
 
-- Much suffering is what people do to each other; a God who made creatures able to love made them able to refuse it. Argument, not a factual claim.
-- C. S. Lewis, *The Problem of Pain*, 1940: a shared world needs fixed natural laws. Year textbook. Not re-checked (writer's 2026-10-26 search record).
-- Lewis's conclusion, as paraphrase without quotation marks: remove every possibility of suffering that comes with a stable natural order and free wills and you remove life itself. Not re-checked (writer's 2026-10-26 search record of Lewis's sentence, "Try to exclude the possibility of suffering which the order of nature and the existence of free wills involve, and you find that you have excluded life itself"). The book is in copyright; no copy reachable.
+- Much suffering is what people do to each other. Argument, not a factual claim.
+- C. S. Lewis, *The Problem of Pain*, 1940: a shared world needs fixed natural laws. **Verified (closing pass), search:** results describe it as "his 1940 book The Problem of Pain" and summarize the argument from fixed laws and free will.
+- Lewis's conclusion, as paraphrase: remove every possibility of suffering that comes with a stable natural order and free wills and you remove life itself. **Verified (closing pass), search:** "Try to exclude the possibility of suffering which the order of nature and the existence of free wills involve, and you find that you have excluded life itself" (Marginalian wording; Goodreads has "you will find" and "free-wills"). The essay keeps it as paraphrase without quotation marks.
 - "The water that carries a boat can drown a child." The essay's own illustration, not attributed to Lewis.
-- Irenaeus, bishop of Lyon near the end of the second century. Textbook.
-- Irenaeus: God could have made human beings perfect from the start, as a mother could give solid food to an infant who cannot take it. Paraphrase checked against WDB, *Against Heresies* 4.38.1 (ANF: "as it certainly is in the power of a mother to give strong food to her infant, [but she does not do so], as the child is not yet able to receive more substantial nourishment; so also it was possible for God Himself to have made man perfect from the first, but man could not receive this").
-- "We were made young, in order to grow, and courage and mercy can only be formed in a world with real danger in it." The first clause follows 4.38.1; the second is the essay's summary of the soul-making line of thought, not a quotation. Interpretation.
-- Augustine: God would never permit evil "if He were not so omnipotent and good that He can bring good even out of evil." Verified verbatim in WDB, *The Enchiridion*, chapter 11 (NPNF: "would never permit the existence of anything evil among His works, if He were not so omnipotent and good that He can bring good even out of evil").
+- Irenaeus, bishop of Lyon near the end of the second century. **Verified (closing pass)**, Eusebius, *Church History* V (NPNF, WDB): "Pothinus having died with the other martyrs in Gaul at ninety years of age, Irenaeus succeeded him in the episcopate of the church at Lyons" (5.5.8); the NPNF notes date the martyrs of Lyons to 177; Irenaeus is still bishop in the Easter controversy under Victor of Rome (5.24).
+- Irenaeus's mother-and-infant image (*Against Heresies* 4.38.1). Paraphrase checked against WDB (first verifier).
+- "We were made young, in order to grow ..." Interpretation.
+- Augustine, *Enchiridion* 11: "if He were not so omnipotent and good that He can bring good even out of evil." Verified verbatim in WDB (first verifier).
 
 ## Lewis's grief
 
-- Joy Davidman, Lewis's wife, died of cancer in July 1960. Textbook. Not re-checked (writer's 2026-10-26 search record).
-- *A Grief Observed* published under the made-up name N. W. Clerk. Textbook.
-- Lewis wrote that the real danger was coming to believe dreadful things about God, and that the conclusion he dreaded was not that there is no God but that this is what God is really like. Attributed paraphrase (changed from quotation by the verifier). Not re-checked; no copy reachable.
+- Joy Davidman, Lewis's wife, died in 1960. **Year verified (closing pass), search:** "after the death of his wife, Helen Joy, in 1960, after only three years of marriage". "Of cancer" and "July" cut (not seen). The surname Davidman did not appear in what the closing pass saw: still open, textbook.
+- *A Grief Observed* published under the made-up name N. W. Clerk. **Still open.** Textbook; not seen this pass.
+- Lewis wrote that the real danger was coming to believe dreadful things about God; the conclusion he dreaded was not that there is no God but that this is what God is really like. Attributed paraphrase. **Verified (closing pass), search:** "The real danger is of coming to believe such dreadful things about Him" and "So there's no God after all" / "So this is what God's really like", consistent across the Project Gutenberg Canada, Fadedpage and PBS texts the results named. Could return to quotation marks if James wants.
 
-## Job (all quotations: ESV copy, matched words and punctuation)
+## Job (all quotations: ESV copy, matched words and punctuation; re-matched by the closing pass)
 
-- Flocks, servants and ten children lost in one day; a great wind collapsed the house where the children were eating; sores; three friends come to comfort him. Reading checked against the ESV copy (Job 1:2-3, 1:13-19, 2:7, 2:11).
-- Job 2:13 "And they sat with him on the ground seven days and seven nights, and no one spoke a word to him, for they saw that his suffering was very great". ESV copy: match.
-- Job 4:7 "Remember: who that was innocent ever perished? Or where were the upright cut off?" ESV copy: match.
-- Job 22: Eliphaz accuses Job of stripping the poor of their clothing and sending widows away empty-handed. Paraphrase checked against the ESV copy (22:6 "stripped the naked of their clothing", 22:9 "You have sent widows away empty").
-- Job 42:7 "My anger burns against you and against your two friends, for you have not spoken of me what is right, as my servant Job has". ESV copy: match.
-- Job 42:8, the friends sent to Job so that he can pray for them. Paraphrase corrected by the verifier against the ESV copy.
-- The heavenly court of chapters 1-2, never told to Job. Reading.
-- God's questions: foundations of the earth, the lion's prey, young ravens crying to God, the eagle's young where the slain are. Paraphrase checked against the ESV copy (38:4, 38:39-41, 39:27-30).
-- Job 42:5 "I had heard of you by the hearing of the ear, but now my eye sees you". ESV copy: match (the ESV continues with a semicolon; the essay ends the quotation there).
-- Job's last speech isn't a claim to understand (42:3 "I have uttered what I did not understand"). Corrected wording by the verifier; reading checked against the ESV copy.
+- Flocks, servants and ten children lost in one day; a great wind; sores; three friends come to comfort him. Reading checked against the ESV copy (Job 1:2, 1:13-19, 2:7, 2:11).
+- Job 2:13; Job 4:7; Job 42:7; Job 42:5. ESV copy: match (closing pass, 4 of 4). BSB confirms each verse and its sense.
+- Job 22: Eliphaz's accusations. Paraphrase checked against the ESV copy (22:6, 22:9).
+- Job 42:8, the friends sent to Job so that he can pray for them. Paraphrase checked against the ESV copy.
+- God's questions (foundations, lion, ravens, eagle). Paraphrase checked against the ESV copy (38:4, 38:39-41, 39:27-30).
+- Job's last speech isn't a claim to understand (42:3, 42:6). Reading checked against the ESV copy.
 
 ## Jesus and the question
 
-- Luke 13:1, Galileans killed by Pilate; Luke 13:4, the eighteen killed when the tower in Siloam fell. Paraphrase checked against the ESV copy.
-- Luke 13:4-5 "do you think that they were worse offenders than all the others who lived in Jerusalem? No, I tell you; but unless you repent, you will all likewise perish". ESV copy: match.
-- John 9:2 "Rabbi, who sinned, this man or his parents, that he was born blind?" ESV copy: match. John 9:3, Jesus rejects both options: reading checked against the ESV copy.
+- Luke 13:1-5 (Galileans, Siloam) and the quotation of 13:4-5; John 9:2 quotation and 9:3. ESV copy: match (closing pass); readings checked; BSB confirms.
 - Preachers reading disasters as judgment; the prosperity preacher; "softer churches". General characterizations, no names or numbers.
 
 ## Harold Kushner
 
-- His son Aaron was diagnosed as a small child with progeria, a disease of rapid aging, and died in his early teens. Generalized by the verifier. Not re-checked (writer's 2026-10-26 search record: JTA obituary, Columbia College Today, giving diagnosis at three and death in 1977 two days after his fourteenth birthday).
-- *When Bad Things Happen to Good People*, published 1981. Textbook.
-- Kushner's conclusion that God is wholly loving and just but limited in power. Not re-checked (writer's 2026-10-26 search record: JTA).
-- "millions of readers": general. Not re-checked (writer's record: about four million copies).
-- "Some Christians have since reached a gentler form of his conclusion." Cut in the voice edit of 2026-10-27: vague, unsourced, and not needed for the argument.
+- His son Aaron had progeria, a disease of rapid aging, and died young. **Numbers generalized (closing pass)** from "diagnosed as a small child ... died in his early teens". **The fact itself is still open:** no Kushner source could be reached this pass (writer's 2026-10-26 search record: JTA obituary and Columbia College Today, diagnosis at three, death in 1977 two days after his fourteenth birthday).
+- *When Bad Things Happen to Good People*: "published in 1981" **cut (closing pass)**, not seen.
+- Kushner's conclusion that God is wholly loving and just but limited in power. **Still open** (writer's 2026-10-26 search record: JTA).
+- "millions of readers" became "many readers" (closing pass; writer's record said about four million copies).
 
 ## Providence
 
-- After their father died, Joseph's brothers came to him afraid. Reading checked against the ESV copy (Genesis 50:15-18).
-- Genesis 50:20 "As for you, you meant evil against me, but God meant it for good, to bring it about that many people should be kept alive, as they are today." ESV copy: match.
-- Acts 2:23 "delivered up according to the definite plan and foreknowledge of God," and "you crucified and killed by the hands of lawless men", in one sentence. ESV copy: both match, same verse and sentence.
-- Romans 8:28 "And we know that for those who love God all things work together for good, for those who are called according to his purpose." ESV copy: match.
-- Romans 8:35 "tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword". ESV copy: match.
-- "a verse often quoted at funerals": general observation.
-- Westminster Confession: God ordains whatever comes to pass; "neither is God the author of sin." Verified verbatim in Creeds.json, chapter 3, section 1 ("yet so as thereby neither is God the author of sin").
-- Reformed view includes the evil acts of free creatures under God's ordaining. Checked against Creeds.json, chapter 5, section 4 (providence "extendeth itself even to the first fall, and all other sins of angels and men, and that not by a bare permission").
-- Wesleyan and Arminian view: God foreknows and permits evil without willing it. Characterization; textbook.
-- Baptists have had churches on both sides since the seventeenth century (General and Particular Baptists). Textbook.
-- James 1:13 "cannot be tempted with evil, and he himself tempts no one". ESV copy: match.
+- Genesis 50:15-20; Acts 2:23 (both phrases, one sentence); Romans 8:28; Romans 8:35; James 1:13. ESV copy: match (closing pass, 6 of 6); BSB confirms each.
+- Westminster Confession 3.1, "neither is God the author of sin", and 5.4 on providence over sin "not by a bare permission". Verified in Creeds.json (first verifier).
+- Wesleyan and Arminian view: God foreknows and permits evil without willing it, because he has given creatures a real freedom he will not override. **Still open.** A doctrinal characterization; the closing pass looked in the first six volumes of Wesley's *Works* on GITenberg and did not reach a passage that states it.
+- Baptists have had churches on both sides since the seventeenth century. **Verified (closing pass)**, Stoughton (GITenberg #64226): "Some Arminian Baptists published a Confession of Faith in 1611. Another confession, issued by the Calvinistic Baptists, containing fifty-two articles, appeared in 1644. The Calvinistic doctrine of predestination is distinctly affirmed".
 - The question is left open; no position is asserted for James.
 
 ## A creation that groans
 
-- Romans 8:20-22 block quotation ("For the creation was subjected to futility ... in the pains of childbirth until now."). ESV copy: match.
-- "all is well": the optimists' axiom ("Tout est bien") examined in Voltaire's poem. Not re-checked; kept as the standard English of the axiom.
-- Romans 8:23 "we ourselves, who have the firstfruits of the Spirit, groan inwardly". ESV copy: match.
-- Romans 8:26 "the Spirit himself intercedes for us with groanings too deep for words". ESV copy: match.
-- Two readings of Genesis 3 and Romans 5:12 on animal death; the first usually held with a young earth. Characterization of positions, stated for each side and left open. Romans 5:12 wording read in the ESV copy for context.
-- Isaiah 11:6, "the wolf will dwell with the lamb": paraphrase (ESV copy reads "shall dwell"; no quotation marks in the essay). Isaiah 11:9 "They shall not hurt or destroy in all my holy mountain". ESV copy: match.
+- Romans 8:20-22 block quotation; Romans 8:23; Romans 8:26. ESV copy: match (closing pass).
+- "all is well": the axiom Voltaire's poem examines. **Verified (closing pass):** McCabe's title, "an Examination of the Axiom, 'All Is Well'" (GITenberg #64858); search gave the French title *Poème sur le désastre de Lisbonne, ou examen de cet axiome : « Tout est bien »*.
+- Two readings of Genesis 3 and Romans 5:12 on animal death. Positions stated for each side and left open. Romans 5:12 read in the ESV copy.
+- Isaiah 11:6 paraphrase ("the wolf will dwell with the lamb"; ESV "shall dwell", no quotation marks in the essay). Isaiah 11:9 quotation: ESV copy match (closing pass).
 
 ## Lament
 
-- "Dozens of psalms are complaints." General. Not checked.
-- Psalm 13:1 "How long, O LORD? Will you forget me forever? How long will you hide your face from me?" (body and Closing Texts). ESV copy: match.
-- Psalm 88 never turns to praise; its last line, Psalm 88:18 "You have caused my beloved and my friend to shun me; my companions have become darkness". ESV copy: match, and 88:18 is the psalm's last verse in the copy.
-- Matthew 27:46 "My God, my God, why have you forsaken me?", the first line of Psalm 22. ESV copy: match in both Matthew 27:46 and Psalm 22:1.
-- "Many American churches have stopped praying this way." Characterization; no statistic claimed.
-- Holy Saturday kept in the church's calendar (wording narrowed from "The church keeps" in the voice edit of 2026-10-27, since not every church observes it). Textbook.
-- Romans 12:15 "Rejoice with those who rejoice, weep with those who weep." ESV copy: match, comma and all (other site files use a semicolon).
+- "Many psalms are complaints addressed straight to God." **Generalized (closing pass)** from "Dozens". A rough count in the BSB by the closing pass found 16 psalms with explicit complaint to God ("How long, O LORD", "Why do You", "hide Your face", "forsaken me" and similar) and 31 with complaint or a lament petition; that crude count did not cleanly support "dozens", so the word was generalized.
+- Psalm 13:1 (body and Closing Texts); Psalm 88:18, and 88:18 is the psalm's last verse; Matthew 27:46 and Psalm 22:1. ESV copy: match (closing pass).
+- "Many American churches have stopped praying this way." Characterization; no statistic.
+- The church's calendar keeps Holy Saturday. **Verified (closing pass)**: *The Book of Common Prayer* (GITenberg #29622) appoints "Easter Even" its own collect ("that as we are baptized into the death of thy blessed Son ... we may be buried with him") and lessons (Luke 23:50, the burial).
+- Romans 12:15. ESV copy: match, comma and all (closing pass).
 
 ## Nicholas Wolterstorff
 
-- Christian philosopher. Textbook.
-- His son Eric died young in a climbing accident. Not re-checked (writer's 2026-10-26 search record: Wikipedia, giving 1983, age twenty-five, Austria; those details cut by the verifier).
-- *Lament for a Son* offers no theodicy. Characterization. Not re-checked.
-- He wrote that he had no explanation and could not fit the pieces together; he asked friends not to say it wasn't really so bad; death is awful, even demonic; he wanted comforters who would sit beside him in his grief. Attributed paraphrase (changed from quotation by the verifier). Not re-checked; the book is in copyright and no copy was reachable.
+- Christian philosopher. **Verified (closing pass), search:** results on *Lament for a Son* report that "as a philosopher he finds the philosophical explanations unconvincing" (Public Christianity) and that he "drew on his Christian faith" in his grief (book summary); a Wikipedia entry titled "Nicholas Wolterstorff" was among the results.
+- His son Eric died young in a climbing accident. **Verified (closing pass), search:** Eric died in a mountain-climbing accident in 1983, aged twenty-five, in Austria; the book appeared in 1987 (Eerdmans). (The year, age and place could be restored if James wants them.)
+- *Lament for a Son* offers no theodicy. **Verified (closing pass), search:** TTF's excerpt has him say he has read the theodicies and finds them unconvincing.
+- He wrote that he had no explanation and could not fit the pieces together; he asked friends not to say it wasn't really so bad; death is awful, even demonic; he wanted comforters who would sit beside him in his grief. Attributed paraphrase. **Verified (closing pass), search:** "I have no explanation" and "I cannot fit these pieces together" (40th-anniversary edition listing; TTF); "Don't say it's not really so bad. Because it is. Death is awful, demonic." and "if you think your task as comforter is to tell me that really, all things considered, it's not so bad, you do not sit with me in my grief" (Goodreads quotations); "Come sit beside me on my mourning bench" (Grand Rapids Press column; Goodreads). These are secondary reproductions; the essay keeps paraphrase.
 
 ## Help line
 
-- In the US, call or text 988 to reach the Suicide and Crisis Lifeline; [Find Help](/help). Wording as given in docs/work/essays/BRIEF.md (read 2026-10-27). Not re-checked against 988lifeline.org.
+- In the US, call or text 988 to reach the Suicide and Crisis Lifeline; [Find Help](/help). **Still open:** wording as BRIEF.md requires for crisis-facing pieces; not checked against 988lifeline.org this pass.
 
 ## God inside the suffering
 
-- Jesus came to Bethany already intending to wake Lazarus; Mary weeping. Reading checked against the ESV copy (John 11:11, 11:32-33).
-- John 11:33 "he was deeply moved in his spirit and greatly troubled". ESV copy: match.
-- John 11:35 "Jesus wept". ESV copy: match.
+- John 11:11, 11:32-33, 11:35; Revelation 21:4; Closing Texts Romans 8:18. ESV copy: match (closing pass); readings checked.
 - The innocent suffered while the guilty went free (Barabbas). Reading.
-- Revelation 21:4 "He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away". ESV copy: match.
-- "still carry the marks of the nails": John 20:25-27 and theological inference. Not a factual claim.
-- Closing Texts, Romans 8:18 "For I consider that the sufferings of this present time are not worth comparing with the glory that is to be revealed to us." ESV copy: match.
+- "still carry the marks of the nails": John 20:25-27 and theological inference.
 
-## Voice edit (2026-10-27)
+## Voice edit (first verifier, 2026-10-27)
 
-- Wording changes only; no fact, quotation, number, date, name or link was added or removed except the cut Kushner sentence above. A script compared every quotation and every link before and after the edit: all 33 quotations and all four links identical.
-- Standfirst: "the strongest objection" became "the hardest objection", and "most of its defenders" became "many of its defenders" (overclaims).
-- Job 2:13: "the best thing anyone does in the book" became "the wisest thing they do in the whole book" (overclaim; God and Job act in the book too).
-- Romans 8:28: "That is what Paul means" became "Paul says something close to this" (the verse is related to Genesis 50:20 and Acts 2:23, not a restatement of them).
-- Headings made plain: "Jesus and the Question of Blame", "Natural Evil and Animal Suffering", "The Psalms of Lament", "The Cross and the Resurrection".
+- Wording changes only (standfirst "the hardest objection", "many of its defenders"; Job 2:13 "the wisest thing they do in the whole book"; Romans 8:28 "Paul says something close to this"; plain headings). One vague Kushner sentence cut.
 
 ## Mechanics and links
 
-- No em-dashes in the essay after the edits (grep for U+2014 on 2026-10-27: zero). The forbidden-language words were searched with grep on 2026-10-27: none found. The scripts/validate-essays.mjs gate was not rerun by the verifier.
-- Links /writing/prosperity-gospel-is-not-the-gospel, /writing/the-theology-of-saturday, /writing/did-the-resurrection-happen: each slug found in docs/work/essays/link-targets.json by grep on 2026-10-27. The writer's ledger reports all three as pending shelf entries until their rewrites land; that status was not re-checked. /help is allowed by the brief. Four links in all, within the brief's limit.
+- After the closing pass: no em-dashes (grep for U+2014: zero), no forbidden-language words (grep of the CLAUDE.md list: zero), no exclamation point. scripts/validate-essays.mjs reads client/public/essays/*.json, not drafts in docs/work, so it was not run on this draft.
+- Links /writing/prosperity-gospel-is-not-the-gospel, /writing/the-theology-of-saturday, /writing/did-the-resurrection-happen: each slug is in docs/work/essays/link-targets.json. **Checked (closing pass)** in client/src/lib/shelf.json: all three are "pending", as is this essay, so they must land together or before this one (the essay gate requires every internal link to reach a public page). /help is allowed by the brief. Four links in all.
+
+## Still open (for James or a later pass with search budget)
+
+1. Plantinga's free will defense persuading many, atheists among them, that there is no strict contradiction (textbook; no source reached).
+2. *A Grief Observed* first published under the name N. W. Clerk, and the surname Davidman (textbook; search showed only "Helen Joy").
+3. Harold Kushner: son Aaron had progeria and died young; the book concludes God is loving but limited in power (writer's record only).
+4. The Wesleyan and Arminian characterization (doctrinal summary; no Wesley or Arminius passage reached).
+5. The 988 Suicide and Crisis Lifeline line (brief-mandated wording; not checked against 988lifeline.org).
