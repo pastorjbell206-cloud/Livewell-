@@ -34,8 +34,9 @@ const card = {
   color: "inherit", display: "block",
 } as const;
 
-/** The library tab for each daily set. */
+/** The library tab for each daily set, and its name until the index says it (scripts/lib/family-index.mjs). */
 const SET_TAB = { thanksgiving: "thanksgiving", advent: "advent", holyWeek: "holy-week" } as const;
+const SET_NAME = { thanksgiving: "Thanksgiving week", advent: "Advent", holyWeek: "Holy Week" } as const;
 
 const MONTH = new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" });
 const dateParts = (iso: string) => ({ y: Number(iso.slice(0, 4)), m: MONTH.format(new Date(`${iso}T12:00:00Z`)), d: Number(iso.slice(8, 10)) });
@@ -48,7 +49,7 @@ function spanSaid(start: string, end: string, thisYear: number): string {
   return a.m === b.m ? `${a.m} ${a.d} to ${b.d}${tail}` : `${a.m} ${a.d} to ${b.m} ${b.d}${tail}`;
 }
 
-/** This week's catechism question, and the daily sets running now or next. */
+/** This week's catechism question, and the daily sets running now or next (from the static year map, so they need no network). */
 function ThisWeek({ index }: { index: FamilyIndex | null }) {
   const [today] = useState(() => localISODate());
   const line = index ? catechismThisWeek(index.catechism) : null;
@@ -70,12 +71,12 @@ function ThisWeek({ index }: { index: FamilyIndex | null }) {
       </div>
       <div>
         <h2 className="tb-section__title">The season</h2>
-        {index && sets.length > 0 && (
+        {sets.length > 0 && (
           <ul className="tb-sets">
             {sets.map((w) => (
               <li key={w.start}>
                 <Link href={`/family/devotions?tab=${SET_TAB[w.set]}`}>
-                  <span className="tb-sets__name">{index.sets[w.set]?.label ?? w.set}</span>
+                  <span className="tb-sets__name">{index?.sets[w.set]?.label ?? SET_NAME[w.set]}</span>
                   <span className="tb-sets__when">
                     {spanSaid(w.start, w.end, year)}
                     {w.start <= today ? " · now" : ""}

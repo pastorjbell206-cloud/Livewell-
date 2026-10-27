@@ -193,10 +193,16 @@ export function withDone(progress: FamilyProgress, id: string, date: string): Fa
   return { ...progress, start: progress.start ?? date, done };
 }
 
-/** Record "We did this tonight". False when the browser would not keep it. */
-export function recordDevotionDone(id: string, date: string): { ok: boolean; progress: FamilyProgress } {
-  const progress = withDone(readFamilyProgress(), id, date);
-  return { ok: writeStoredJSON(FAMILY_PROGRESS_KEY, progress), progress };
+/**
+ * Record "We did this tonight". `ok` is false when the browser would not keep
+ * it; `already` is true when this device had it for that date, so a second
+ * tap is not counted twice.
+ */
+export function recordDevotionDone(id: string, date: string): { ok: boolean; already: boolean; progress: FamilyProgress } {
+  const before = readFamilyProgress();
+  const already = before.done.some((d) => d.id === id && d.date === date);
+  const progress = withDone(before, id, date);
+  return { ok: writeStoredJSON(FAMILY_PROGRESS_KEY, progress), already, progress };
 }
 
 /** The most recent devotion done, by date (the later entry on a tie). */

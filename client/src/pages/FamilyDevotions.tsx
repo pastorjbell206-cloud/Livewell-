@@ -3,12 +3,12 @@
  * own page (/family/devotions/:id), so this is a list of doors: 72 weekly
  * devotions (more than a year at one a week), plus the daily sets for
  * Thanksgiving week, Advent, and Holy Week. The tab is in the URL (?tab=), so
- * a link can open the Advent list; a devotion done on this device carries a
- * quiet mark. Data: the family index (client/public/family/index.json,
+ * a link can open the Advent list, and &day=N opens that day's page; a
+ * devotion done on this device carries a quiet mark. Data: the family index (client/public/family/index.json,
  * scripts/build-family-index.mjs); the list shows references, not verse text.
  * scripts/validate-family.mjs checks the counts this page states.
  */
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useSearch } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -34,9 +34,19 @@ export default function FamilyDevotions() {
   const index = state.status === "ready" ? state.value : null;
   const search = useSearch();
   const [, navigate] = useLocation();
-  const param = new URLSearchParams(search).get("tab");
+  const query = new URLSearchParams(search);
+  const param = query.get("tab");
   const tab: Tab = TABS.find((t) => t.param === param)?.id ?? "weekly";
+  const day = Number(query.get("day"));
   const [done] = useState(() => new Set(readFamilyProgress().done.map((d) => d.id)));
+
+  // ?tab=advent&day=6 names one day of a set (U13's Advent links use it):
+  // open that day's own page in place of the list.
+  useEffect(() => {
+    if (!index || tab === "weekly" || !Number.isInteger(day) || day < 1) return;
+    const row = index.devotions.find((r) => r.set === tab && r.day === day);
+    if (row) navigate(devotionHref(row.id), { replace: true });
+  }, [index, tab, day, navigate]);
 
   const rows = useMemo(() => {
     if (!index) return [];

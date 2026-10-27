@@ -30,13 +30,13 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
   const setLabel = data && row?.set ? data.sets[row.set]?.label : undefined;
 
   return (
-    <section className="tb-tonight" aria-labelledby="tb-tonight-title" aria-busy={!data}>
-      <p className="eyebrow" style={{ margin: 0 }}>
+    <section className="tb-tonight" aria-labelledby="tb-tonight-label" aria-busy={!data}>
+      <p id="tb-tonight-label" className="eyebrow" style={{ margin: 0 }}>
         Tonight at the table
       </p>
       {data && !row && (
         <>
-          <h2 id="tb-tonight-title" className="tb-tonight__title">
+          <h2 className="tb-tonight__title">
             Choose tonight's devotion
           </h2>
           <p className="tb-tonight__meta">No devotion is set for this date yet.</p>
@@ -49,7 +49,7 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
       )}
       {row && (
         <>
-          <h2 id="tb-tonight-title" className="tb-tonight__title">
+          <h2 className="tb-tonight__title">
             {row.title}
           </h2>
           <p className="tb-tonight__meta">{[row.label, row.passage, row.kind === "weekly" ? "About ten minutes" : null].filter(Boolean).join(" · ")}</p>

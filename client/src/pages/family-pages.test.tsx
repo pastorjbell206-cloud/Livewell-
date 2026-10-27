@@ -94,6 +94,22 @@ describe("/family/devotions", () => {
     window.localStorage.clear();
   });
 
+  it("opens a day's own page when the URL names one (?tab=advent&day=6)", async () => {
+    stubFamily({ online: true });
+    window.history.pushState({}, "", "/family/devotions?tab=advent&day=6");
+    renderWithProviders(<FamilyDevotions />);
+    await waitFor(() => expect(window.location.pathname).toBe("/family/devotions/advent-6"));
+    expect(window.location.search).toBe("");
+  });
+
+  it("stays on the list for a day the set does not have", async () => {
+    stubFamily({ online: true });
+    window.history.pushState({}, "", "/family/devotions?tab=holy-week&day=40");
+    renderWithProviders(<FamilyDevotions />);
+    expect(await screen.findByRole("link", { name: /Palm Sunday/ })).toBeInTheDocument();
+    expect(window.location.pathname).toBe("/family/devotions");
+  });
+
   it("opens the tab the URL names", async () => {
     stubFamily({ online: true });
     window.history.pushState({}, "", "/family/devotions?tab=holy-week");

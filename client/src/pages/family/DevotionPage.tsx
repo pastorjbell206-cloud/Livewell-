@@ -11,7 +11,7 @@
  * this device (lib/familyTable): where the devotion sits in its set, the week
  * of the year when it is tonight's, and the last one done; never a streak.
  */
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation, useParams, useSearch } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -67,6 +67,15 @@ export default function DevotionPage() {
   const [, navigate] = useLocation();
   const { state, retry } = useDevotion(id);
 
+  // "Before this" and "Next" keep this page mounted and only change the id:
+  // start the new devotion at its top, not at the bottom where the link was.
+  const shownId = useRef(id);
+  useEffect(() => {
+    if (shownId.current === id) return;
+    shownId.current = id;
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" }); // a new page, not a glide up through the last one
+  }, [id]);
+
   // The reader's own calendar and what this device remembers. There is no
   // server render to agree with, so both are read as the page first renders.
   const [today] = useState(() => localISODate());
@@ -79,7 +88,8 @@ export default function DevotionPage() {
     const result = recordDevotionDone(id, today);
     setProgress(result.progress);
     setFinished({ key: finishKey, ok: result.ok });
-    trackFamilyDevotionComplete(id, table ? "table" : "page");
+    // One event per devotion per night on this device, however many taps.
+    if (!result.already) trackFamilyDevotionComplete(id, table ? "table" : "page");
   };
 
   if (state.status !== "ready") {

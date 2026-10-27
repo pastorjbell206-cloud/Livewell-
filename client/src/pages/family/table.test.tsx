@@ -188,6 +188,21 @@ describe("/family/devotions/:id", () => {
     fireEvent.click(screen.getByRole("button", { name: "We did this tonight" }));
     expect(await screen.findByText("Done. This device will remember that you did this one tonight.")).toBeInTheDocument();
     expect(vercelTrack).toHaveBeenCalledWith("family_devotion_complete", { id: "identity", mode: "page" });
+    // A second tap the same night is not a second event.
+    fireEvent.click(screen.getByRole("button", { name: "We did this tonight" }));
+    expect(vercelTrack).toHaveBeenCalledTimes(1);
+  });
+
+  it("starts the next devotion at its top", async () => {
+    serveFamily();
+    const scrollTo = vi.spyOn(window, "scrollTo");
+    renderAt("/family/devotions/identity");
+    await screen.findByRole("heading", { level: 1, name: row("identity").title });
+    expect(scrollTo).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("link", { name: `Next: ${row("fear-and-anxiety").title}` }));
+    expect(await screen.findByRole("heading", { level: 1, name: row("fear-and-anxiety").title })).toBeInTheDocument();
+    expect(scrollTo).toHaveBeenCalledWith({ top: 0, left: 0, behavior: "instant" });
+    scrollTo.mockRestore();
   });
 
   it("gives a day of a daily set its own page, named as the paraphrase it is", async () => {

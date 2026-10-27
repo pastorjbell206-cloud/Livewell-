@@ -144,8 +144,8 @@ describe("what this device remembers", () => {
 
   it("writes through lib/storage and reads it back", () => {
     expect(readFamilyProgress()).toEqual(EMPTY_PROGRESS);
-    const { ok } = recordDevotionDone("identity", "2026-11-03");
-    expect(ok).toBe(true);
+    const first = recordDevotionDone("identity", "2026-11-03");
+    expect(first).toMatchObject({ ok: true, already: false });
     expect(JSON.parse(window.localStorage.getItem(FAMILY_PROGRESS_KEY)!)).toEqual({
       v: 1,
       start: "2026-11-03",
@@ -153,6 +153,10 @@ describe("what this device remembers", () => {
       done: [{ id: "identity", date: "2026-11-03" }],
     });
     expect(readFamilyProgress().done).toHaveLength(1);
+    // A second tap the same night is known as one, so it is not counted twice.
+    expect(recordDevotionDone("identity", "2026-11-03")).toMatchObject({ ok: true, already: true });
+    expect(recordDevotionDone("identity", "2026-11-04").already).toBe(false);
+    expect(readFamilyProgress().done).toHaveLength(2);
   });
 
   it("ignores a value of the wrong shape", () => {
