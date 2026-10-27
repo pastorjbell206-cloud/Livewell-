@@ -244,3 +244,8 @@ Design program (docs/work/design/):
    waves.
 Tension to resolve, not dodge: "draw people's attention" against "Unhurried.
 Weighted. Grown-up." Attention through depth and real interactivity, not bait.
+
+Design program status (2026-10-27 evening): research waves A, B, C done
+(research/*-SYNTHESIS.md); critique done (CRITIQUE.md, 12 questions for James
+in section 5); vision workflow running (vision-wf.js, run wf_6cbf5b15-51f).
+Pilots PR #539 (claude/essays) green, waiting on James's sample read.
