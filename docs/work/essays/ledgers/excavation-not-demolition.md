@@ -29,6 +29,17 @@ So this check rests on local sources and on the writer's own search record. Wher
 9. How People Rebuild: "told a restless brother to go and sit in his cell" became "told a brother to go and sit in his cell". Reason: "restless" is not in the saying as the writer's ledger gives it, and no text of the saying was available to check.
 10. Same section: "what they confess is the creed of Nicaea" became "the faith most of them confess is the faith of Nicaea". Reason: overclaim; not every Christian body in the global South confesses the Nicene faith (Oneness Pentecostal churches reject it, for example: not checked, reference knowledge).
 
+## Voice edit, 2026-10-27 (final read)
+
+The last reader revised the prose for voice. No fact, quotation, number, date or name was added; every quotation and link is unchanged (checked by script against the previous commit). Changes that touch lines below:
+
+- Where It Usually Starts: the three abuse cases now run in date order (Boston 2002, Zacharias February 2021, Guidepost May 2022). Wording of each claim unchanged.
+- "Most people who deconstruct have torn down two different things" became "Many people ..."; "Most are somewhere in between" became "many are still somewhere in between". Softened generalizations, no source involved.
+- N. T. Wright and James K. A. Smith: the years (2003, 2016) were dropped from the prose; titles and claims unchanged. The ledger lines below keep the years for reference.
+- Augustine: correction 8's sentence now reads "When Augustine came back, he didn't invent a faith of his own. He came to the same faith his mother held and found it far deeper than the version he had rejected." The clause about the faith "as he had understood it when he walked away" was cut, not changed.
+- Global church: "not the subculture of one American decade" became "not an American subculture"; "will almost certainly be older and wider" became "can be older and wider". Interpretive only.
+- Headings made plain: "Why Some Christians Are Worried", "What the Creeds Confess", "If You Are Hurting", "Where Deconstruction Can Lead".
+
 ## Opening: Joshua Harris
 
 - Harris announced on Instagram in late July 2019 that he no longer considered himself a Christian. Kept. Per the writer's ledger (Fox 5 Atlanta, Religion News Service, Crosswalk). The exact day (July 26 or 27) is not given in the essay.
@@ -104,7 +115,7 @@ So this check rests on local sources and on the writer's own search record. Wher
 - The tradition in 1 Corinthians 15:3-5 is one of the oldest Christian confessions we have, already fixed before Paul wrote it down. Kept. Not checked (standard scholarly view); "received" is in the verse.
 - 1 Corinthians 15:3-5, "For I delivered to you as of first importance what I also received: that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures, and that he appeared to Cephas, then to the twelve." Matched the ESV copy word for word.
 - 1 Corinthians 15:17, "And if Christ has not been raised, your faith is futile and you are still in your sins". Matched the ESV copy word for word.
-- N. T. Wright, *The Resurrection of the Son of God* (2003), argues that the empty tomb and the appearances best explain how the earliest church began. Kept. Not checked (reference knowledge).
+- N. T. Wright, *The Resurrection of the Son of God* (2003), argues that the empty tomb and the appearances best explain how the earliest church began. Kept. Not checked (reference knowledge). The essay no longer gives the year (voice edit, 2026-10-27).
 - Around 318 Arius, a presbyter of Alexandria, began teaching that the Son was a created being. Kept. Not checked (textbook; usually dated 318 or 319).
 - The slogan "there was a time when he was not", condemned by name in 325. Library: the creed of 325 as given in Socrates, *Ecclesiastical History* 1.8, anathematizes "those who say 'There was a time when he was not'". The essay gives the slogan without quotation marks.
 - Arianism as a reverent position meant to protect the oneness of God, which keeps coming back. Interpretive; corrected (correction 6).
@@ -131,7 +142,7 @@ So this check rests on local sources and on the writer's own search record. Wher
 - Ambrose received him kindly, like a father. Library: *Confessions* 5.13 ("That man of God received me like a father"). Matches.
 - Summer 386, a garden in Milan, a child's voice chanting "take up and read", Romans 13:13-14. Library: *Confessions* 8.12 ("the voice as of a boy or girl, I know not which ... chanting, and oft repeating, 'Take up and read; take up and read'"; the passage read is Romans 13:13-14, "Not in rioting and drunkenness ... but put ye on the Lord Jesus Christ"). The season and year are not checked (textbook).
 - Ambrose baptized him at Easter 387. Not checked (textbook). The library's *Confessions* 9.6 records the baptism at Milan without naming the day.
-- He came back to his mother's faith, not the version he rejected; corrected (correction 8). Library: *On the Profit of Believing* 1.2.
+- He came back to his mother's faith, not the version he rejected; corrected (correction 8), then reworded in the voice edit ("When Augustine came back, he didn't invent a faith of his own"). Library: *On the Profit of Believing* 1.2.
 - "More than a decade" (from the Hortensius, about 373, to 386). Arithmetic from the above; the dates are textbook.
 - He preached the Bible for the rest of his life. Not checked (textbook; bishop of Hippo).
 - A bishop Monica begged to argue her son out of his errors told her to leave him alone for a while and pray, and said the son of so many tears could not be lost. Unquoted paraphrase. Library: *Confessions* 3.12 ("But leave him alone for a time ... only pray God for him"; "it is not possible that the son of these tears should perish"; she was "shedding copious tears"). Matches as paraphrase.
@@ -148,7 +159,7 @@ So this check rests on local sources and on the writer's own search record. Wher
 ## How People Rebuild
 
 - 1 Thessalonians 5:20-21, "Do not despise prophecies, but test everything; hold fast what is good." Matched the ESV copy word for word. The setting (prophetic words in the gathering) follows 5:19-20 in the same copy.
-- James K. A. Smith, *You Are What You Love* (2016): we are formed less by ideas than by what we love, and habit trains our loves. Kept. Not checked (reference knowledge).
+- James K. A. Smith, *You Are What You Love* (2016): we are formed less by ideas than by what we love, and habit trains our loves. Kept. Not checked (reference knowledge). The essay no longer gives the year (voice edit, 2026-10-27).
 - Desert saying attributed to Abba Moses: go and sit in your cell, and your cell will teach you everything. Unquoted paraphrase; "restless" removed (correction 9). Not checked (reference knowledge: the alphabetical collection, Moses 6). The library's *Sayings* (Alcock's Coptic collection) was searched with pdftotext and grep; it has Apa Moses sayings 184 and 185 but not this one.
 - Luke 15: the younger son rehearses a speech ending "Treat me as one of your hired servants" (15:18-19); his spoken confession stops before that line (15:21); the father calls for the best robe, a ring and shoes (15:22). Checked against the ESV copy: matches.
 - Luke 15:20, "But while he was still a long way off, his father saw him and felt compassion, and ran and embraced him and kissed him". Matched the ESV copy word for word.
@@ -177,8 +188,9 @@ So this check rests on local sources and on the writer's own search record. Wher
 
 ## Mechanics checked in this run
 
-- No em-dash (U+2014) in the essay: counted with grep, 0. The verse ranges use en-dashes.
-- Exclamation points: two, both inside verbatim Scripture (Mark 9:24 in the body and in Closing Texts).
+- No em-dash (U+2014) in the essay: counted with grep, 0. The verse ranges use en-dashes; no en-dash or double hyphen stands in for an em-dash. Recounted after the voice edit on 2026-10-27: still 0.
+- Exclamation points: two, both inside verbatim Scripture (Mark 9:24 in the body and in Closing Texts). Unchanged after the voice edit.
+- Stamp phrases from BRIEF.md and the CLAUDE.md forbidden-language list: searched after the voice edit, none found.
 
 ## Old-essay facts the writer did not carry over (writer's record, kept for reference)
 
