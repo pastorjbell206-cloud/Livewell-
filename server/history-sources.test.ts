@@ -138,7 +138,7 @@ describe("the matching rules", () => {
     const found = collectExcerpts({
       corpus: "a",
       excerpts: [{ excerpt: "x" }, { corpus: "b", excerpt: "y" }],
-      blocks: [{ type: "prose", text: "z" }, { type: "source" }],
+      blocks: [{ type: "prose", text: "z" }, { type: "source" }, { type: "scripture", ref: "Romans 13:1", excerpt: "w" }],
     });
     expect(found.map((f: { corpus?: string; excerpt?: string }) => [f.corpus, f.excerpt])).toEqual([
       ["a", "x"],

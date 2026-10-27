@@ -60,8 +60,9 @@ the public domain.
 `client/public/history/sources/` and `client/public/history/sessions/`. In
 them, any object with an `"excerpt"` key, and every source card (an object
 with `"type": "source"`), is checked against the stored text named by its
-`"corpus"` key, or by the nearest enclosing object's `"corpus"`. A source card
-with no stored text fails: where a source could not be reached, the session
+`"corpus"` key, or by the nearest enclosing object's `"corpus"`. Scripture
+blocks (`"type": "scripture"`) are left to the quotation gate (U27). A source
+card with no stored text fails: where a source could not be reached, the session
 tells it in the narrative and says so, rather than carrying a card no gate can
 check (master plan 7.2). Sources still in copyright are quoted briefly in the
 narrative or summarized, never on a card.

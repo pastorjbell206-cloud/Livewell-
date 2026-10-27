@@ -146,6 +146,9 @@ export function excerptPieces(excerpt) {
     .filter(Boolean);
 }
 
+/** Normalized passages, kept per passages array so a text read once is normalized once. */
+const NORMALIZED = new WeakMap();
+
 /**
  * Look for an excerpt in a text's passages. Returns { ok: true, passage } or
  * { ok: false, reason, agreesTo } where agreesTo is the longest opening of the
@@ -159,7 +162,11 @@ export function findExcerpt(passages, excerpt) {
   if (short !== undefined) {
     return { ok: false, reason: `"${short}" is too short to check on its own; quote more around each omission` };
   }
-  const hay = passages.map(normalizeForMatch);
+  let hay = NORMALIZED.get(passages);
+  if (!hay) {
+    hay = passages.map(normalizeForMatch);
+    NORMALIZED.set(passages, hay);
+  }
   for (let i = 0; i < hay.length; i++) {
     let from = 0;
     let all = true;
@@ -324,7 +331,8 @@ function jsonFiles(dir) {
  * source card (an object with type "source"). Each is checked against the
  * stored text named by its own "corpus" key or, failing that, the nearest
  * enclosing object's, so a sources file can name its text once above a list
- * of excerpts.
+ * of excerpts. Scripture blocks (type "scripture") are the quotation gate's
+ * (U27), not this one's.
  */
 export function collectExcerpts(value) {
   const found = [];
@@ -332,7 +340,8 @@ export function collectExcerpts(value) {
     if (Array.isArray(v)) { v.forEach((x, i) => walk(x, `${p}[${i}]`, corpus)); return; }
     if (!v || typeof v !== "object") return;
     const here = Object.hasOwn(v, "corpus") ? v.corpus : corpus;
-    if (Object.hasOwn(v, "excerpt") || v.type === "source") found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt });
+    const isCard = v.type === "source" || (Object.hasOwn(v, "excerpt") && v.type !== "scripture");
+    if (isCard) found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt });
     for (const [k, x] of Object.entries(v)) walk(x, p ? `${p}.${k}` : k, here);
   };
   walk(value, "", undefined);
