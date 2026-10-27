@@ -1,0 +1,78 @@
+From 98d11442214efd3a202b0f9e3ffa074375d80533 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 16:45:33 +0000
+Subject: [PATCH 3/3] Family index: a strand file held back until live has no
+ rows (U21 with U11's world strand)
+
+A strand file may be a plain list or { live, devotions }; held back, it adds no rows and no shelf, so the index builds the same at merge with U11's hidden world strand. Tested with a seeded world strand, held back and live.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ scripts/lib/family-index.mjs |  6 +++++-
+ server/family-index.test.ts  | 24 ++++++++++++++++++++++++
+ 2 files changed, 29 insertions(+), 1 deletion(-)
+
+diff --git a/scripts/lib/family-index.mjs b/scripts/lib/family-index.mjs
+index e2ff72bf..8a5c4a42 100644
+--- a/scripts/lib/family-index.mjs
++++ b/scripts/lib/family-index.mjs
+@@ -134,7 +134,11 @@ export function buildFamilyIndex(root = ROOT) {
+     let n = 0;
+     for (const file of strand.files) {
+       if (!fs.existsSync(path.join(root, "client/public", file))) continue;
+-      for (const d of read(root, file)) {
++      // A strand file is a plain list, or { live, devotions } held back until
++      // `live` is true (U11's world strand): a held-back strand has no rows.
++      const data = read(root, file);
++      const list = Array.isArray(data) ? data : data?.live === true && Array.isArray(data.devotions) ? data.devotions : [];
++      for (const d of list) {
+         n += 1;
+         const where = `client/public/${file} ${d.id}`;
+         if (d.group !== undefined || strand.key === "foundations") {
+diff --git a/server/family-index.test.ts b/server/family-index.test.ts
+index 71198537..18a352d6 100644
+--- a/server/family-index.test.ts
++++ b/server/family-index.test.ts
+@@ -37,6 +37,8 @@ function seeded(change: (dir: string) => void): string {
+   for (const f of ["family-devotions.json", "family-devotions-2.json", "family-seasonal.json", "family-catechism.json"]) {
+     fs.copyFileSync(path.join(ROOT, "client/public", f), path.join(dir, f));
+   }
++  // The care pages the grown-ups lines link (U21).
++  fs.cpSync(path.join(ROOT, "client/public/needs"), path.join(dir, "needs"), { recursive: true });
+   change(dir);
+   return root;
+ }
+@@ -123,6 +125,28 @@ describe("build-family-index", () => {
+     expect(problems).toMatch(/family-devotions-recipes\.json: no strand reads this file/);
+   });
+ 
++  it("adds a new strand as its own shelf, numbered within it, and leaves out one held back", () => {
++    const first = pub("family-devotions.json")[0];
++    const world = [
++      { ...first, id: "only-christian-in-class", title: "The Only Christian in Class", group: undefined, grownups: undefined },
++      { ...first, id: "praying-for-leaders", title: "Praying for Leaders", group: undefined, grownups: undefined },
++    ];
++    const held = buildFamilyIndex(seeded((dir) => fs.writeFileSync(path.join(dir, "family-devotions-world.json"), JSON.stringify({ live: false, devotions: world }))));
++    expect(held.problems).toEqual([]);
++    expect(held.index.strands.map((s: { key: string }) => s.key)).toEqual(["foundations"]);
++    expect(held.index.devotions.some((r: Row) => r.id === "praying-for-leaders")).toBe(false);
++
++    const live = buildFamilyIndex(seeded((dir) => fs.writeFileSync(path.join(dir, "family-devotions-world.json"), JSON.stringify(world))));
++    expect(live.problems).toEqual([]);
++    expect(live.index.strands).toEqual([
++      { key: "foundations", label: "Foundations", count: 72 },
++      { key: "world", label: "The world we live in", count: 2 },
++    ]);
++    const row = live.index.devotions.find((r: Row) => r.id === "praying-for-leaders");
++    expect(row).toMatchObject({ kind: "weekly", strand: "world", n: 2 });
++    expect(live.index.weekly).toBe(72);
++  });
++
+   it("refuses a daily set it has no address for", () => {
+     const root = seeded((dir) => {
+       const s = JSON.parse(fs.readFileSync(path.join(dir, "family-seasonal.json"), "utf8"));
+-- 
+2.43.0
+
