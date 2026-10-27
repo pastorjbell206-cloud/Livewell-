@@ -58,6 +58,7 @@ jobs:
           node scripts/validate-bible.mjs
           node scripts/build-bible-text.mjs --check
           node scripts/validate-bible-notes.mjs
+          node scripts/verify-sources.mjs
 
       - name: Test
         run: pnpm test
