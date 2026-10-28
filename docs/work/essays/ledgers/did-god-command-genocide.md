@@ -2,6 +2,12 @@
 
 Essay: `docs/work/essays/did-god-command-genocide.md` ("Did God Command Genocide?"). Rewrite of the earlier essay of the same slug; NOTES.md lists no essays folded into it. The writer's ledger of 2026-10-26 marked most items "memory, unverified." The verifier rechecked every claim on 2026-10-27 and rewrote this ledger. A second pass the same day worked on almost no search; a third pass the same day, with a web-search budget of its own, took every line still open (see "Third pass" below). Each line gives the result and the method actually used.
 
+## Withheld links (landing, 2026-10-28)
+
+The target below was still not public when this essay landed, and the essay gate fails a link to a page that is not public. The sentence was taken out of the draft and the essay landed from the draft, so draft and published file match. Restore it word for word when its target goes public. (James decided on 2026-10-28 that this essay publishes with its three readings left open; no position was added for him.)
+
+- Withheld links: target `doctrine-of-discovery`. Taken out after "Underhill was not the last American Christian to read Canaan onto the people whose land he wanted." Restore, word for word, between that sentence and "The habit survives in smaller forms": "The church's long habit of blessing that kind of taking is its own story, told in [What Is the Doctrine of Discovery?](/writing/doctrine-of-discovery)"
+
 ## Read this first: no web search was available for the first check
 
 (This section describes the first check only. The third pass had search; its methods are listed under "Third pass".)

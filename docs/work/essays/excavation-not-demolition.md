@@ -88,7 +88,7 @@ The church you rebuild in can be older and wider than the one you left. Most of 
 
 For some readers this isn't an intellectual project at all. Taking apart the faith you were raised in can cost you friendships and the whole way you made sense of your life, and that loneliness is real. If it has gone so far that you wonder whether there is any reason to keep going, set the theology aside for tonight and reach for a person. In the US, you can call or text 988 to reach the Suicide and Crisis Lifeline. An essay is not counseling, and you deserve a real person beside you. [Find Help](/help) lists places to start.
 
-If your doubt began with abuse by a pastor or another church leader, that abuse should be reported to the police or other civil authorities, not handled quietly inside the church. Matthew applies to Jesus an old promise from Isaiah about the servant of the Lord: "a bruised reed he will not break, and a faintly burning wick he will not quench" (Isaiah 42:3). A faith bruised by the people who should have protected it is exactly the kind he does not throw away.
+If your doubt began with abuse by a pastor or another church leader, that abuse should be reported to the police or other civil authorities, not handled quietly inside the church. [Doubt After Being Abused by a Church Leader](/writing/doubt-after-church-abuse) was written for you. Matthew applies to Jesus an old promise from Isaiah about the servant of the Lord: "a bruised reed he will not break, and a faintly burning wick he will not quench" (Isaiah 42:3). A faith bruised by the people who should have protected it is exactly the kind he does not throw away.
 
 ## Where Deconstruction Can Lead
 

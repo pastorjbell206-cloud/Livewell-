@@ -780,6 +780,41 @@
       "permanent": true
     },
     {
+      "source": "/writing/is-god-in-control",
+      "destination": "/writing/why-does-god-allow-suffering",
+      "permanent": true
+    },
+    {
+      "source": "/writing/natural-evil-and-animal-suffering",
+      "destination": "/writing/why-does-god-allow-suffering",
+      "permanent": true
+    },
+    {
+      "source": "/writing/apologetics-why-is-god-hidden",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/can-you-have-faith-and-doubt",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/emotional-doubter",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/sexual-abuse-crisis-in-the-church",
+      "destination": "/writing/doubt-after-church-abuse",
+      "permanent": true
+    },
+    {
+      "source": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
+      "destination": "/writing/doubt-after-church-abuse",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true

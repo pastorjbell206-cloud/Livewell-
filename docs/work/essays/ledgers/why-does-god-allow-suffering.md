@@ -2,6 +2,13 @@
 
 Essay: docs/work/essays/why-does-god-allow-suffering.md ("Why Does God Allow Suffering?"). Rewrite of the machine essay of the same slug; folds in is-god-in-control and natural-evil-and-animal-suffering. Drafted 2026-10-26. The first verifier rewrote this ledger on 2026-10-27 with no web search available. A second pass (the "closing pass", also 2026-10-27) worked through every line that was still open and records here what it actually saw. A third pass (the "search pass", also 2026-10-27) had a web-search budget of its own and closed what the closing pass left open. A fourth pass (the "restoration pass", also 2026-10-27) took up every detail the earlier passes had generalized, cut or turned into paraphrase only because no source was reachable at the time, and restored the writer's wording wherever a source it saw confirmed it.
 
+## Withheld links (landing, 2026-10-28)
+
+Both targets below were still not public when this essay landed, and the essay gate fails a link to a page that is not public. The link was taken out of the draft (the words stay, unlinked) and the essay landed from the draft, so draft and published file match. Restore each sentence word for word when its target goes public.
+
+- Withheld links: target `prosperity-gospel-is-not-the-gospel`. The draft now reads "The prosperity preacher tells a sick woman that healing is hers if her faith is strong enough, so that if she stays sick, the failure is hers." Restore to: "The [prosperity preacher](/writing/prosperity-gospel-is-not-the-gospel) tells a sick woman that healing is hers if her faith is strong enough, so that if she stays sick, the failure is hers."
+- Withheld links: target `the-theology-of-saturday`. The draft now reads "The church's calendar keeps a whole day, Holy Saturday, for the grief between the cross and the empty tomb." Restore to: "The church's calendar keeps a whole day, [Holy Saturday](/writing/the-theology-of-saturday), for the grief between the cross and the empty tomb."
+
 ## Status at a glance (restoration pass, 2026-10-27)
 
 - 17 items were open when the restoration pass began: the writer's original numbers, dates, details and quotations that the first verifier and the closing pass had generalized, cut or made paraphrase for want of a reachable source (listed under "Changes made to the essay" below). The search pass had confirmed several of them but left the essay's wording alone.

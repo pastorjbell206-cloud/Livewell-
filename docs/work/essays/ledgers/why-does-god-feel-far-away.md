@@ -2,6 +2,12 @@
 
 Essay: docs/work/essays/why-does-god-feel-far-away.md ("Why Does God Feel So Far Away?"). It rewrites the machine essay of the same slug and folds in apologetics-why-is-god-hidden, can-you-have-faith-and-doubt and emotional-doubter (the writer read emotional-doubter live via posts.getBySlug because it is not in content/static-library.generated.json). Written 2026-10-26. Verified 2026-10-27 in a first pass with no search, then in a closing pass with 22 searches, then closed the same day in a final pass with its own search budget. This ledger was rewritten after the final pass.
 
+## Withheld links (landing, 2026-10-28)
+
+The target below was still not public when this essay landed, and the essay gate fails a link to a page that is not public. The link was taken out of the draft (the words stay, unlinked) and the essay landed from the draft, so draft and published file match. Restore the sentence word for word when its target goes public.
+
+- Withheld links: target `the-theology-of-saturday`. The draft now reads "For the disciples that turn would not come until the third day, and Saturday came first, a whole day when heaven seemed to have nothing to say." Restore to: "For the disciples that turn would not come until the third day, and [Saturday came first](/writing/the-theology-of-saturday), a whole day when heaven seemed to have nothing to say."
+
 ## Status after the final pass (2026-10-27)
 
 Nothing is open. Before the final pass, 31 ledger lines were not yet verified:
