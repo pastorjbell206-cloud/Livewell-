@@ -488,11 +488,14 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (24
-validators: scripture, design, life, studyguides, pathways, theology,
-politics, no-emdash, essays, content-integrity, skeptic-track, answers,
-argument-cases, links, needs (pages and drafts), grow-links, plans, workbooks,
-family, grow-voice, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+On every PR, five blocking steps: `pnpm check` → the content-gates step (33
+commands: 25 validators: scripture, design, life, studyguides, pathways,
+theology, politics, no-emdash, essays, content-integrity, skeptic-track,
+answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
+workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
+bible-notes; the history-source verifier `verify-sources`; and the `--check`
+drift checks for the family year map, family index, topics index, search
+index, Bible text and the 2027 story plan) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.
