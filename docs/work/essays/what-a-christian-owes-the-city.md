@@ -38,7 +38,7 @@ In Jeremiah's vocabulary, then, a city is well when the weakest people in it are
 
 Daniel shows what that looked like for an exile who had the king's ear. He was taken to Babylon as a youth, given a Babylonian name and trained in "the literature and language of the Chaldeans" (Daniel 1:4), and the book notes that he was still there "until the first year of King Cyrus" (1:21). He was good at the work. He also drew a line at the king's table, where he resolved "that he would not defile himself with the king's food" (1:8).
 
-When Nebuchadnezzar told him a dream that meant disaster for the king, Daniel's first words were a wish for his good: "My lord, may the dream be for those who hate you and its interpretation for your enemies!" (4:19). Then he told him the truth anyway: "break off your sins by practicing righteousness, and your iniquities by showing mercy to the oppressed, that there may perhaps be a lengthening of your prosperity" (4:27). Daniel asked nothing for himself. He wanted the king to prosper, and he was clear that the king's prosperity depended on mercy to the oppressed.
+When Nebuchadnezzar told him a dream that meant disaster for the king, Daniel's first words were a wish for his good: "My lord, may the dream be for those who hate you and its interpretation for your enemies!" (Daniel 4:19). Then he told him the truth anyway: "break off your sins by practicing righteousness, and your iniquities by showing mercy to the oppressed, that there may perhaps be a lengthening of your prosperity" (4:27). Daniel asked nothing for himself. He wanted the king to prosper, and he was clear that the king's prosperity depended on mercy to the oppressed.
 
 ## Augustine and the Peace of Babylon
 

@@ -830,6 +830,51 @@
       "permanent": true
     },
     {
+      "source": "/writing/the-church-captive-to-the-culture-war",
+      "destination": "/writing/what-render-unto-caesar-actually-means",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-third-temptation",
+      "destination": "/writing/what-render-unto-caesar-actually-means",
+      "permanent": true
+    },
+    {
+      "source": "/writing/church-abandoned-public-square",
+      "destination": "/writing/what-a-christian-owes-the-city",
+      "permanent": true
+    },
+    {
+      "source": "/writing/exile-is-not-the-end",
+      "destination": "/writing/what-a-christian-owes-the-city",
+      "permanent": true
+    },
+    {
+      "source": "/writing/jeremiah-letter-exiles",
+      "destination": "/writing/what-a-christian-owes-the-city",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-trinity-is-not-optional",
+      "destination": "/writing/the-council-of-nicaea-what-was-decided-in-325",
+      "permanent": true
+    },
+    {
+      "source": "/writing/six-verses-we-memorized",
+      "destination": "/writing/what-the-original-audience-heard",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-whole-counsel",
+      "destination": "/writing/what-the-original-audience-heard",
+      "permanent": true
+    },
+    {
+      "source": "/writing/what-dies-when-christendom-dies",
+      "destination": "/writing/the-persecution-we-invented",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true

@@ -176,7 +176,7 @@ Essay: `docs/work/essays/what-render-unto-caesar-actually-means.md` ("What Did J
 ## Links
 
 - /writing/the-early-church-under-rome, /writing/when-the-church-married-empire, /writing/the-conservative-blind-spot, /writing/the-progressive-blind-spot. The verifier confirmed all four slugs appear in `docs/work/essays/link-targets.json` on 2026-10-28. (The writer also ran `node scripts/validate-essays.mjs` on a scratch copy and reported it clean; not rerun by the verifier.)
-- Not linked: /writing/what-romans-13-says (natural sibling for Romans 13:7), because it was not public when written. Add it at landing if that essay is live by then.
+- Not linked: /writing/what-romans-13-says (natural sibling for Romans 13:7), because it was not public when written. Add it at landing if that essay is live by then. Added at landing (2026-10-28), when what-romans-13-says was public: the existing words "the Christians in Rome" in the Romans 13:7 sentence ("Paul uses the same verb when he tells [the Christians in Rome](/writing/what-romans-13-says), ...") now carry the link. No word of the essay changed and no sentence was added. The essay now has five site-essay links, one more than the brief's two to four. Draft and published file match.
 
 ## What the old essays said that this rewrite dropped or corrected (writer's record, kept)
 

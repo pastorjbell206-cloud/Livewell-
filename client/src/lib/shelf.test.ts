@@ -45,7 +45,7 @@ import {
 } from "../../../scripts/lib/shelf.mjs";
 
 const LIVE_KEEP = "when-the-church-married-empire";
-const PENDING = "what-render-unto-caesar-actually-means";
+const PENDING = "when-god-bless-america-replaces-thy-kingdom-come";
 const RETIRED = "the-atheist-in-the-pulpit";
 const BEFORE = "2026-07-08T01:06:22.000Z";
 const AFTER = "2026-10-20T15:00:00.000Z";
@@ -157,7 +157,7 @@ describe("essay visibility", () => {
 
   it("orders the live shelf by section, then shelf order", () => {
     const live = liveShelfEssays();
-    expect(live).toHaveLength(35);
+    expect(live).toHaveLength(40);
     expect(live[0].slug).toBe("every-generation-was-sure-it-was");
     const ranks = live.map((e) => SHELF_SECTIONS.findIndex((s) => s.slug === e.section));
     expect([...ranks].sort((a, b) => a - b)).toEqual(ranks);

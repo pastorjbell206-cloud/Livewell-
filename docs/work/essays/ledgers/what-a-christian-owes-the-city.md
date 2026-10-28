@@ -226,3 +226,7 @@ A last reader revised the essay for voice after the verification above. No fact,
 ## Before this essay publishes
 
 Nothing is open (closing run, 2026-10-28: the ten lines that rested on textbook judgment, a sibling ledger or search summaries are now verified, and every non-Scripture quotation has been matched against a copy of its source read in this sandbox, except Pontius, who is paraphrased and whose wording was matched in search results). Optional, not blocking: when James's ESV API key exists, the 26 Scripture quotations can be rechecked against the API (all match the GitHub ESV copy, an ESV 2011 text, and were confirmed by esv.org searches).
+
+## Landing (2026-10-28)
+
+- "My lord, may the dream be for those who hate you and its interpretation for your enemies!" (4:19) became "(Daniel 4:19)", because the essay gate recognizes Scripture beside an exclamation point only by a full reference. No word of the essay or the quotation changed. Draft and published file match.
