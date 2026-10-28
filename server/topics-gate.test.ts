@@ -30,11 +30,23 @@ beforeAll(() => {
 afterAll(() => fs.rmSync(tmp, { recursive: true, force: true }));
 
 /** The problems the gate finds in one page, changed by `edit`. */
-function problemsAfter(slug: string, edit: (p: Page) => void): string {
+function problemsAfter(slug: string, edit: (p: Page) => void, context = ctx): string {
   const p = page(slug);
   edit(p);
-  return topicProblems(p, slug, ctx).problems.join("\n");
+  return topicProblems(p, slug, context).problems.join("\n");
 }
+
+/**
+ * The gate's context with the shelf seeded over the committed state: `held`
+ * essays are not public, `published` ones are. The cases below then hold
+ * whichever way shelf.json and client/public/essays stand.
+ */
+function seeded({ held = [], published = [] }: { held?: string[]; published?: string[] }): typeof ctx {
+  const isPublic = (slug: string, date?: unknown) => !held.includes(slug) && (published.includes(slug) || ctx.shelf.isPublic(slug, date));
+  return { ...ctx, shelf: { ...ctx.shelf, isPublic } };
+}
+const CN_LEAD = "what-christian-nationalism-is-and-is-not";
+const SLAVERY = "why-didnt-the-bible-ban-slavery";
 
 describe("the topics as committed", () => {
   it("pass the gate, the index check, and the politics gate", () => {
@@ -75,14 +87,20 @@ describe("a seeded bad page fails, with its reason", () => {
   });
 
   it("an empty slot: a lead that is not public with no stand-in, too few passages, no witness", () => {
-    const out = problemsAfter("faith-politics-and-the-flag", (p) => {
-      delete p.essayStandIn;
-      p.scripture = p.scripture.slice(0, 2);
-      delete p.witness;
-    });
+    const out = problemsAfter(
+      "faith-politics-and-the-flag",
+      (p) => {
+        delete p.essayStandIn;
+        p.scripture = p.scripture.slice(0, 2);
+        delete p.witness;
+      },
+      seeded({ held: [CN_LEAD] }),
+    );
     expect(out).toMatch(/essayStandIn: is needed: the lead essay is not public/);
     expect(out).toMatch(/scripture: has 2 passages/);
     expect(out).toMatch(/witness: needs one witness/);
+    // Once the lead is public the page needs no stand-in.
+    expect(problemsAfter("faith-politics-and-the-flag", (p) => delete p.essayStandIn, seeded({ published: [CN_LEAD] }))).toBe("");
   });
 
   it("a stand-in that is not live, a redirect, an address that goes nowhere, an Honest Answer that does not exist", () => {
@@ -119,8 +137,10 @@ describe("a seeded bad page fails, with its reason", () => {
   });
 
   it("an essay row with no stand-in while the essay is not public", () => {
-    const rows = rowProblems([{ askedAs: "Q?", href: "/writing/why-didnt-the-bible-ban-slavery", kind: "essay", line: "A line." }], ctx).problems.join("\n");
+    const row = { askedAs: "Q?", href: `/writing/${SLAVERY}`, kind: "essay", line: "A line." };
+    const rows = rowProblems([row], seeded({ held: [SLAVERY] })).problems.join("\n");
     expect(rows).toMatch(/is not public yet and the row names no standIn/);
+    expect(rowProblems([row], seeded({ published: [SLAVERY] })).problems).toEqual([]);
     // A stand-in on a row that opens anything but an essay would never be opened.
     const notEssay = rowProblems([{ askedAs: "Q?", href: "/help/anxiety", kind: "care", line: "A line.", standIn: "/help/grief" }], ctx).problems.join("\n");
     expect(notEssay).toMatch(/standIn is only for a row to an essay/);

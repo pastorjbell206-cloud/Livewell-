@@ -51,7 +51,7 @@ export default function StudyBibleYear() {
     <Layout>
       <SEOMeta
         title="Read the Whole Story of the Bible in 2027"
-        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, a guide to their world where one belongs, your place kept on this device, and a reminder on your phone."
+        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, a guide to their world where one belongs, your place kept on this device, and a reminder in your calendar."
         url="https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027"
       />
       <PageHead

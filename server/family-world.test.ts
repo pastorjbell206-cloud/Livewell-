@@ -270,6 +270,39 @@ describe("going live", () => {
     expect(others(live)).toEqual(others(hidden));
     expect(live.notes.join("\n")).not.toMatch(/hidden/);
   });
+
+  it("pins a week after the rotation epoch the same way: going live changes that week and no other", () => {
+    // A waiting week from Advent Sunday 2026 on already gives up its slot, as the pin will.
+    const later = { week: "2027-01-17", devotion: "praying-for-leaders" };
+    const pinLater = (pub: string) => {
+      const file = path.join(pub, "family-year-overrides.json");
+      const o = JSON.parse(fs.readFileSync(file, "utf8"));
+      fs.writeFileSync(
+        file,
+        JSON.stringify({ ...o, weeks: [...o.weeks, later] })
+      );
+    };
+    const live = buildYearMap(
+      loadInputs(seeded(p => (pinLater(p), goLive(p))).root)
+    );
+    const hidden = buildYearMap(
+      loadInputs(seeded(p => (pinLater(p), hide(p))).root)
+    );
+    expect(live.problems).toEqual([]);
+    expect(hidden.problems).toEqual([]);
+    expect(weekOf(live.map, later.week)).toMatchObject({
+      devotion: later.devotion,
+      pinned: true,
+    });
+    // While it waits, the week shows the devotion the next rotating week shows.
+    const i = hidden.map.weeks.findIndex((w: Week) => w.start === later.week);
+    expect(hidden.map.weeks[i].devotion).toBe(hidden.map.weeks[i + 1].devotion);
+    const others = (b: typeof live) =>
+      b.map.weeks.filter(
+        (w: Week) => ![...PINNED, later.week].includes(w.start)
+      );
+    expect(others(live)).toEqual(others(hidden));
+  });
 });
 
 describe("the pins after the vote, later", () => {

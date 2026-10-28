@@ -12,14 +12,15 @@
  * gives them no row (so no page, no prerendered head, no sitemap entry, no
  * place in the library), the year map does not pin them, and their ids are
  * not frozen. The family gate and the politics gate still check every one, so
- * a hidden devotion is ready the day it goes live. Publishing is four steps:
+ * a hidden devotion is ready the day it goes live. Publishing is five steps:
  *
  *   1. set "live": true in the strand file
  *   2. node scripts/validate-family.mjs --freeze   (records the new ids; a printed card's QR code cannot be recalled)
  *   3. node scripts/build-family-index.mjs         (rows, pages, sitemap, library)
  *   4. node scripts/build-family-year.mjs          (any week pinned to them in family-year-overrides.json)
+ *   5. pnpm run search:index                       (their results in on-site search)
  *
- * and committing what they write. CI fails until steps 2 to 4 are done, and
+ * and committing what they write. CI fails until steps 2 to 5 are done, and
  * passes once they are: no test or other file needs an edit (the tests run the
  * hidden and live cases on copies, whichever way the flag is committed). On
  * the year map, going live changes only the weeks pinned to the strand's

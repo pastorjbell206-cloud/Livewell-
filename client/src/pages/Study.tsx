@@ -34,7 +34,7 @@ const STUDY_BIBLE: HubLink[] = [
   {
     label: "Read the whole story in 2027",
     href: "/study/bible/guides/whole-story-2027",
-    note: "The same story a day at a time: every chapter of the Bible in a year, with your place kept on this device and a reminder on your phone.",
+    note: "The same story a day at a time: every chapter of the Bible in a year, with your place kept on this device and a reminder in your calendar.",
   },
   {
     label: "An introduction to every book",

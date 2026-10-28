@@ -9,7 +9,7 @@
  *
  *   Wisdom topics        client/public/wisdom/topics.json      -> /wisdom/<id>
  *   Honest Answers       client/src/data/answers.ts            -> /answers#<slug>
- *   Family devotions     client/public/family-devotions*.json  -> the devotions library
+ *   Family devotions     client/public/family-devotions*.json  -> /family/devotions/<id> (every live strand)
  *   Family Catechism     client/public/family-catechism.json   -> /family/catechism
  *   Christ and the Nation client/public/nation/<slug>.json     -> /nation/<slug>
  *
@@ -26,6 +26,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { devotionsIn } from "./lib/family-devotion-file.mjs";
+import { STRANDS } from "./lib/family-index.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 
@@ -75,7 +76,14 @@ function answers() {
 }
 
 function devotions() {
-  const weekly = ["family-devotions.json", "family-devotions-2.json"].flatMap((f) => devotionsIn(readJson(f)).devotions);
+  // Every strand the family index reads, and only while it is live: a held-back
+  // strand (U11) has no page, so it has no result either.
+  const weekly = STRANDS.flatMap((s) => s.files)
+    .filter((f) => fs.existsSync(path.join(PUB, f)))
+    .flatMap((f) => {
+      const { live, devotions: list } = devotionsIn(readJson(f));
+      return live ? list : [];
+    });
   return weekly.map((d) => ({
     title: str(d.title),
     blurb: clip(d.bigIdea),

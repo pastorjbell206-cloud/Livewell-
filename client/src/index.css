@@ -591,7 +591,7 @@ img{display:block;max-width:100%}
 .tp-foot a,.tp-text a,.tp-companion a,.tp-ways__links a,.tp-witness__name a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .tp-status{font-family:var(--U);color:var(--ink-muted);text-align:center;padding:var(--s-6) 0;margin:0}
 .tp-col{max-width:var(--w-prose);margin:0 auto}
-.tp-page .pg-head__eyebrow a{padding:12px 0;margin:-12px 0}
+.pg-head__eyebrow a{padding:12px 0;margin:-12px 0}
 .tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
 .tp-short{margin:0 0 var(--s-3)}
 .tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
@@ -612,16 +612,20 @@ img{display:block;max-width:100%}
 .tp-ways__list li{padding:14px 0;border-top:1px solid var(--border)}
 .tp-ways__line{font-family:var(--F);font-size:clamp(1.15rem,1rem + .4vw,1.3rem);font-weight:500;line-height:1.3;color:var(--ink);margin:0 0 6px}
 .tp-ways__links{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
+.tp-ways__links a,.tp-witness__name a{padding:10px 0}
 .tp-verses{list-style:none;margin:0;padding:0}
 .tp-verses li{padding:var(--s-2) 0;border-top:1px solid var(--border)}
 .tp-verses li:first-child{border-top:0;padding-top:0}
-.tp-verses__ref{font-family:var(--U);font-size:15px;font-weight:600;margin:0 0 4px}
+.tp-verses__ref{font-family:var(--U);font-size:15px;font-weight:600;margin:-10px 0 0}
+.tp-verses__ref .st-verseref{display:inline-flex;align-items:center;min-height:44px}
 .tp-more{display:inline-flex;align-items:center;gap:.35em;min-height:44px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
 .tp-more:hover,.tp-more:focus-visible{text-decoration-color:currentColor}
 .tp-witness__name{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0 0 8px}
 .tp-actions{display:flex;flex-wrap:wrap;gap:12px;margin:var(--s-2) 0 var(--s-2)}
 .tp-table-also{color:var(--ink-muted);font-size:16px}
-.tp-back{padding-top:var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
+.tp-back{padding-top:var(--s-2);margin-top:var(--s-1)}
+/* A topic page's rows are written to be read whole: no clamp mid-sentence. */
+.tp-page .ed-index--compact .ed-dek{display:block;overflow:visible}
 @media print{
   .tp-page .pg-head{padding:0}
   .tp-page .pg-head__inner{max-width:100%;padding-bottom:6pt}
@@ -807,9 +811,11 @@ img{display:block;max-width:100%}
 .tb-band input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}
 .tb-bands__note{font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
 .tb-table .tb-bands__note{font-size:14px}
-.tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 0}
-/* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them. */
-.tb-nights__link{color:var(--mustard-text);font-weight:600}
+.tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 var(--s-1)}
+/* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them,
+   drawn at the foot of the text (content-box), while the padding makes each night a 44px target
+   that never breaks across lines. */
+.tb-nights__link{display:inline-block;padding:13px 0;line-height:1.3;white-space:nowrap;background-origin:content-box;color:var(--mustard-text);font-weight:600}
 .tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
 .tb-grownups__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0}
 .tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}

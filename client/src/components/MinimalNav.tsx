@@ -374,6 +374,9 @@ export default function MinimalNav() {
                       fontSize: "13px",
                       fontWeight: 500,
                       padding: "8px 12px",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      minHeight: "44px",
                       whiteSpace: "nowrap",
                       textDecoration: "none",
                     }}
@@ -418,6 +421,7 @@ export default function MinimalNav() {
                     fontFamily: "var(--U)",
                     fontSize: "13px",
                     padding: "8px 12px",
+                    minHeight: "44px",
                     borderRadius: "var(--radius-sm)",
                     background: "none",
                     border: "none",
@@ -500,6 +504,9 @@ export default function MinimalNav() {
                 fontSize: "13px",
                 fontWeight: 600,
                 padding: "8px 12px",
+                display: "inline-flex",
+                alignItems: "center",
+                minHeight: "44px",
                 whiteSpace: "nowrap",
               }}
             >
@@ -519,6 +526,9 @@ export default function MinimalNav() {
                 padding: "8px",
                 display: "flex",
                 alignItems: "center",
+                justifyContent: "center",
+                minWidth: "44px",
+                minHeight: "44px",
                 marginLeft: "4px",
                 borderRadius: "var(--radius-sm)",
                 transition: "color 0.2s, background 0.2s",

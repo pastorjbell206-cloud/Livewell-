@@ -5,7 +5,9 @@
  * holds its six parts in order, shows the stand-in until the lead essay is
  * public and only public essays after it, asks the politics question of both
  * sides, makes every reference a link into the Study Bible, and sends one
- * anonymous event when the lead is opened. Rendered from the committed data.
+ * anonymous event when the lead is opened. Rendered from the committed data,
+ * with the shelf seeded per test (`held`, `published`) so the stand-in and the
+ * live cases both hold whichever way shelf.json and the essay files stand.
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { screen, fireEvent, within } from "@testing-library/react";
@@ -23,6 +25,24 @@ import Topics from "./Topics";
 import Topic from "./Topic";
 
 vi.mock("@vercel/analytics", () => ({ track: vi.fn() }));
+
+/** Essay slugs a test holds off the shelf, or puts on it, over the committed state. */
+const seed = vi.hoisted(() => ({ held: new Set<string>(), published: new Set<string>() }));
+vi.mock("@/lib/shelf", async (importOriginal) => {
+  const real = await importOriginal<typeof import("@/lib/shelf")>();
+  const seeded = (slug: string, committed: boolean) => !seed.held.has(slug) && (seed.published.has(slug) || committed);
+  return {
+    ...real,
+    isPublicEssay: (slug: string, date?: unknown) => seeded(slug, real.isPublicEssay(slug, date)),
+    isPublicEssayHref: (href: string | null | undefined) =>
+      seeded(href?.match(/^\/writing\/([^/?#]+)/)?.[1] ?? "", real.isPublicEssayHref(href)),
+  };
+});
+const CN_LEAD = "what-christian-nationalism-is-and-is-not";
+const CN_ALSO = "was-america-founded-as-a-christian-nation";
+const SLAVERY = "why-didnt-the-bible-ban-slavery";
+const hold = (...slugs: string[]) => slugs.forEach((s) => seed.held.add(s));
+const publish = (...slugs: string[]) => slugs.forEach((s) => seed.published.add(s));
 
 const PUBLIC = path.resolve(__dirname, "../../public");
 const read = (name: string) => fs.readFileSync(path.join(PUBLIC, name), "utf8");
@@ -54,6 +74,8 @@ function renderAt(url: string) {
 }
 
 afterEach(() => {
+  seed.held.clear();
+  seed.published.clear();
   vi.unstubAllGlobals();
   vi.mocked(vercelTrack).mockClear();
   window.history.pushState({}, "", "/");
@@ -76,6 +98,7 @@ describe("/topics", () => {
   });
 
   it("opens the stand-in while a row's essay is not public, and puts Test the Case on the Honest Answers row", async () => {
+    hold(SLAVERY);
     serve();
     renderAt("/topics");
     const list = await screen.findByRole("list", { name: "Questions" });
@@ -84,6 +107,16 @@ describe("/topics", () => {
     expect(within(slavery).getByText("Honest answers")).toBeTruthy();
     const trueRow = within(list).getByRole("link", { name: /Is Christianity actually true/ }).closest("li")!;
     expect(within(trueRow).getByRole("link", { name: /Test the Case/ }).getAttribute("href")).toBe("/tools/test-the-case");
+  });
+
+  it("opens the essay itself once it is public", async () => {
+    publish(SLAVERY);
+    serve();
+    renderAt("/topics");
+    const list = await screen.findByRole("list", { name: "Questions" });
+    const slavery = within(list).getByRole("link", { name: /Sunday mornings/ });
+    expect(slavery.getAttribute("href")).toBe(`/writing/${SLAVERY}`);
+    expect(within(slavery).getByText("Essay")).toBeTruthy();
   });
 
   it("says so, with a retry, when the list does not arrive", async () => {
@@ -112,6 +145,7 @@ describe("/topics/:slug", () => {
   });
 
   it("shows the stand-in until the lead essay is public, and no essay that is not public", async () => {
+    hold(CN_LEAD, CN_ALSO);
     serve();
     renderAt("/topics/faith-politics-and-the-flag");
     const lead = await screen.findByRole("link", { name: /How Christian Nationalism Rewrites Doctrine/ });
@@ -124,6 +158,22 @@ describe("/topics/:slug", () => {
       topic: "faith-politics-and-the-flag",
       lead: "/writing/how-christian-nationalism-rewrites",
       stand_in: true,
+    });
+  });
+
+  it("leads with the essay once it is public, and lists the public essays after it", async () => {
+    publish(CN_LEAD, CN_ALSO);
+    serve();
+    renderAt("/topics/faith-politics-and-the-flag");
+    const lead = await screen.findByRole("link", { name: /What Christian Nationalism Is, and What It Is Not/ });
+    expect(lead.getAttribute("href")).toBe(`/writing/${CN_LEAD}`);
+    expect(screen.getByRole("link", { name: /Was America Founded/ }).getAttribute("href")).toBe(`/writing/${CN_ALSO}`);
+    expect(screen.getByRole("link", { name: /When the Church Married Empire/ })).toBeTruthy();
+    fireEvent.click(lead);
+    expect(vi.mocked(vercelTrack)).toHaveBeenCalledWith("topic_lead_open", {
+      topic: "faith-politics-and-the-flag",
+      lead: `/writing/${CN_LEAD}`,
+      stand_in: false,
     });
   });
 
@@ -182,12 +232,19 @@ describe("/topics/:slug", () => {
 describe("lib/topics", () => {
   it("leads with the essay once it is public, and drops further essays that are not", () => {
     const t = topic("faith-politics-and-the-flag");
+    const row = INDEX.rows.find((r) => r.standIn)!;
+    hold(CN_LEAD, CN_ALSO, SLAVERY);
     expect(leadOf(t)).toMatchObject({ standIn: true, link: { href: "/writing/how-christian-nationalism-rewrites" } });
     expect(leadOf({ ...t, essay: { href: "/writing/when-the-church-married-empire", label: "x" } })).toMatchObject({ standIn: false });
     expect(publicEssays(t.alsoEssays).map((l) => l.href)).toEqual(["/writing/when-the-church-married-empire"]);
-    const row = INDEX.rows.find((r) => r.standIn)!;
     expect(rowTarget(row)).toBe(row.standIn);
     expect(rowTarget({ ...row, href: "/writing/when-the-church-married-empire" })).toBe("/writing/when-the-church-married-empire");
+    // The pilots' case: the same data once the essays are public.
+    seed.held.clear();
+    publish(CN_LEAD, CN_ALSO, SLAVERY);
+    expect(leadOf(t)).toMatchObject({ standIn: false, link: { href: `/writing/${CN_LEAD}` } });
+    expect(publicEssays(t.alsoEssays).map((l) => l.href)).toEqual([`/writing/${CN_ALSO}`, "/writing/when-the-church-married-empire"]);
+    expect(rowTarget(row)).toBe(row.href);
   });
 
   it("sends topic_lead_open with the slugs only", () => {
