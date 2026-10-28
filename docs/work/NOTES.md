@@ -37,8 +37,8 @@ runs. Nothing here is read by the site build.
 - Contested second-order questions are stated fairly and left open. Hold for
   James (do not publish until he gives his position or says to publish open):
   women-and-leadership-church, what-the-bible-says-about-submission,
-  how-to-read-genesis-one, did-god-command-genocide (its three readings of the
-  conquest commands are left open; ledger closed 2026-10-27 except that).
+  how-to-read-genesis-one. (did-god-command-genocide: James said on
+  2026-10-28 to publish it with its three readings left open.)
 - "Raising sons in a post-Christian country" needs James's own story; not
   written.
 - Scripture is ESV verbatim. esv.org is unreachable from the sandbox; verify
@@ -290,3 +290,6 @@ who-decided-what-books-are-in-the-bible (Reading the Bible in Its World). Each
 goes write -> verify -> voice (essay-wf.js), then a verify-wf.js pass in its own
 turn, then land-wf.js from claude/essays (copy the draft and ledger from the
 code branch's docs/work/essays into the essays worktree first).
+
+2026-10-28: James: 25 essays of the pilots' quality on the site in total; plan
+and status in docs/work/essays/PROGRAM-25.md.

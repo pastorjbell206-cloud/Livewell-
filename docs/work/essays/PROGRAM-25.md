@@ -3,8 +3,8 @@
 "i want you to keep writing articles like this. i want 25 of these up on my
 webstie and make sure they follow the same quality."
 
-Taken as 25 essays of the pilots' quality live on the site (asked James to
-confirm whether he meant 25 more). The bar for every one is the pilots' process:
+James confirmed 2026-10-28: 25 in total (8 more beyond the 17 written or in
+hand), and did-god-command-genocide publishes with its three readings left open. The bar for every one is the pilots' process:
 draft in his register (BRIEF.md) with a claims ledger -> verification (essay-wf)
 -> at least one more ledger-closing pass in its own turn (verify-wf, which also
 restores confirmed specifics) -> landing with two final readers, voice and fact
@@ -27,7 +27,7 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 12 | why-does-god-feel-far-away | doubt | ledger closed; to land |
 | 13 | doubt-after-church-abuse | doubt | ledger closed, restored; to land |
 | 14 | did-christianity-copy-pagan-myths | doubt | ledger closed, restored; to land |
-| 15 | did-god-command-genocide | doubt | ledger closed; HELD for James's position or "publish open" |
+| 15 | did-god-command-genocide | doubt | ledger closed; James: publish open; to land |
 | 16 | what-romans-13-says | faith-and-power | writing (wf_10a51019-0ed) |
 | 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | writing (wf_35743ddb-cf2) |
 | 18 | is-it-wrong-to-love-your-country | faith-and-power | writing (batch 1, wf_dd884a78-a8c) |
@@ -43,3 +43,8 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 Rewrites fold in the slugs NOTES.md lists under "Essays each rewrite folds in"
 (301s added at landing). Topics chosen for the mission: Bible study, church
 history, living faithfully in post-Christian America; James's Substack register.
+
+Landing plan: the ten Doubt essays land from claude/essays in two land-wf runs
+of five (each in its own main-session turn for the search budget), then one
+Doubt PR for James's sample read. New essays land after their verify-wf pass,
+copied from the code branch's docs/work/essays into the essays worktree first.
