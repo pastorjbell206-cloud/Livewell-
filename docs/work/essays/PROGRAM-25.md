@@ -34,7 +34,7 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 19 | the-children-rome-threw-away | ancient-church | ledger closed (second pass, 18 of 23 verified; 2 writer wordings not restorable, verified versions kept); to land |
 | 20 | what-render-unto-caesar-actually-means | faith-and-power | ledger closed (second pass, 24 of 24); to land |
 | 21 | the-rise-of-the-nones | after-christendom | ledger closed (second pass, 6 of 6); to land |
-| 22 | what-a-christian-owes-the-city | after-christendom | written, verified (136), voiced 8; second pass running (wf_6d1122e6-99b) |
+| 22 | what-a-christian-owes-the-city | after-christendom | ledger closed (second pass, 10 of 10); to land |
 | 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | ledger closed (second pass, 9 of 9; two writer specifics restored); to land |
 | 24 | what-the-original-audience-heard | bible-in-its-world | writing (batch 4, wf_aa4917d2-715) |
 | 25 | the-persecution-we-invented | after-christendom | writing (batch 4, wf_aa4917d2-715) |
@@ -44,7 +44,7 @@ Rewrites fold in the slugs NOTES.md lists under "Essays each rewrite folds in"
 (301s added at landing). Topics chosen for the mission: Bible study, church
 history, living faithfully in post-Christian America; James's Substack register.
 
-Landing plan: the ten Doubt essays land from claude/essays in two land-wf runs
+Landing plan (updated 2026-10-28): after doubt-2, the eight new essays whose ledgers are closed (16 to 23) land in two land-wf runs of four, each in its own turn, then batch 4 after its second pass. Original plan: the ten Doubt essays land from claude/essays in two land-wf runs
 of five (each in its own main-session turn for the search budget), then one
 Doubt PR for James's sample read. New essays land after their verify-wf pass,
 copied from the code branch's docs/work/essays into the essays worktree first.
