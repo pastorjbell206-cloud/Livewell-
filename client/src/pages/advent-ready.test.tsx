@@ -43,6 +43,9 @@ function setToday(y: number, m: number, d: number) {
   vi.setSystemTime(new Date(y, m - 1, d, 12));
 }
 
+/** Home's tonight line loads on its own after first paint; wait until its slot is filled. */
+const tonightSettled = () => waitFor(() => expect(document.querySelector(".home-tonight--slot")).toBeNull());
+
 afterEach(() => {
   vi.useRealTimers();
   vi.unstubAllGlobals();
@@ -51,10 +54,11 @@ afterEach(() => {
 
 describe("Home and /family before, during, and after the window", () => {
   for (const [y, m, d] of [[2026, 11, 21], [2026, 12, 26], [2026, 10, 26]] as const) {
-    it(`show nothing on ${y}-${m}-${d}`, () => {
+    it(`show nothing on ${y}-${m}-${d}`, async () => {
       setToday(y, m, d);
       serveFamilyFiles();
       const home = renderWithProviders(<Home />);
+      await tonightSettled();
       expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
       home.unmount();
       renderWithProviders(<Family />);
@@ -62,11 +66,11 @@ describe("Home and /family before, during, and after the window", () => {
     });
   }
 
-  it("show Advent Sunday and the calendar from November 22", () => {
+  it("show Advent Sunday and the calendar from November 22", async () => {
     setToday(2026, 11, 22);
     serveFamilyFiles();
     const home = renderWithProviders(<Home />);
-    const line = screen.getByTestId("advent-at-the-table");
+    const line = await screen.findByTestId("advent-at-the-table");
     expect(line).toHaveTextContent("Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.");
     expect(within(line).getByRole("link", { name: "see the readings" })).toHaveAttribute("href", "/family/devotions?tab=advent");
     home.unmount();
@@ -79,18 +83,18 @@ describe("Home and /family before, during, and after the window", () => {
     expect(within(card).getByRole("link", { name: "A4" })).toHaveAttribute("href", "/downloads/seasonal/advent-family-a4.pdf");
   });
 
-  it("say Advent has begun on Advent Sunday, before the calendar starts", () => {
+  it("say Advent has begun on Advent Sunday, before the calendar starts", async () => {
     setToday(2026, 11, 29);
     renderWithProviders(<Home />);
-    expect(screen.getByTestId("advent-at-the-table")).toHaveTextContent("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
+    expect(await screen.findByTestId("advent-at-the-table")).toHaveTextContent("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
   });
 
-  it("point at tonight's day during the calendar", () => {
+  it("point at tonight's day during the calendar", async () => {
     setToday(2026, 12, 6);
     serveFamilyFiles();
     const home = renderWithProviders(<Home />);
     // Home folds the calendar into tonight's line (U18): the day by name, straight to its page.
-    expect(screen.getByTestId("home-tonight")).toHaveTextContent("Tonight at the table: A Child Is Given, December 6 in the family Advent calendar.");
+    expect(await screen.findByTestId("home-tonight")).toHaveTextContent("Tonight at the table: A Child Is Given, December 6 in the family Advent calendar.");
     expect(screen.getByRole("link", { name: "A Child Is Given" })).toHaveAttribute("href", "/family/devotions/advent-6");
     expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
     home.unmount();

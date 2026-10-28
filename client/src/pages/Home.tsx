@@ -10,12 +10,14 @@
  * reader in a hard season. Everything here is committed data (positioning.ts,
  * shelf.json, bookShelf.ts, the family year map), so the page paints in full
  * without waiting on the API, and it imports nothing heavy: Find's search and
- * reference parser load when its field is focused.
+ * reference parser load when its field is focused, and the tonight line loads
+ * just after first paint (below).
  *
  * The hero's markup and classes (index.css, .home-hero*) are mirrored by the
  * static hero scripts/prerender-heads.mjs writes into "/", so the first paint
  * is the real hero and React's mount moves nothing.
  */
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
@@ -31,7 +33,48 @@ import {
 } from "@/lib/positioning";
 import { START_WITH, cleanExcerpt, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import HomeFind from "./home/HomeFind";
-import HomeTonight from "./home/HomeTonight";
+
+/*
+ * The tonight line (pages/home/HomeTonight) reads the family year map with
+ * its titles, the Advent calendar, and this device's progress for Continue:
+ * about 45 kB that every route's entry script would otherwise carry, for a
+ * line that sits below the first screen. It loads on its own, starting as
+ * this module runs on "/", into a slot one line tall (index.css,
+ * .home-tonight--slot), which is the line's height on an ordinary night
+ * wherever it can reach the first screen, so the doors below do not move.
+ */
+type TonightModule = typeof import("./home/HomeTonight");
+let tonightModule: TonightModule | null = null;
+let tonightLoading: Promise<TonightModule> | null = null;
+function loadTonight(): Promise<TonightModule> {
+  tonightLoading ??= import("./home/HomeTonight").then(
+    (m) => (tonightModule = m),
+    (e) => {
+      tonightLoading = null;
+      throw e;
+    },
+  );
+  return tonightLoading;
+}
+if (typeof window !== "undefined" && window.location.pathname === "/") loadTonight().catch(() => {});
+
+function Tonight() {
+  const [loaded, setLoaded] = useState(tonightModule);
+  useEffect(() => {
+    if (loaded) return;
+    let live = true;
+    loadTonight().then(
+      (m) => live && setLoaded(m),
+      () => {},
+    );
+    return () => {
+      live = false;
+    };
+  }, [loaded]);
+  if (!loaded) return <div className="home-tonight home-tonight--slot" aria-hidden="true" />;
+  const HomeTonight = loaded.default;
+  return <HomeTonight />;
+}
 
 /** The doors, in the order the site is built around. */
 const DOORS = [
@@ -142,7 +185,7 @@ export default function Home() {
         <div style={wrap}>
           <HomeFind />
           {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
-          <HomeTonight />
+          <Tonight />
           <h2 id="home-doors-title" className="sr-only">
             Where to begin
           </h2>
