@@ -187,7 +187,7 @@ Essay: `docs/work/essays/what-romans-13-says.md` ("What Does Romans 13 Say About
 - Forbidden language: `scripts/lib/forbidden-language.mjs` regex (after `setAsideAllowed`) over the text: no hits.
 - Shelf stamps ("Those of us who preach", "pastors like me", "This is not both-sidesism", "Consider ...", "none of this", "the record", "I don't exempt myself"): none (one "considered", the Tacitus line, is not the stamp). "Fair" once ("could fairly conclude"); "honest" not used.
 - ESV copy script rerun after the edits: 35 of 35 OK.
-- Voice pass (2026-10-28, final reader): 21 wording edits for AI tells (announced turn, two-beat closers, a four-part "It asks" run, the repeated "no vote" motif, paired parallel sentences, four over-long sentences split). Script check against the pre-pass text: all 58 quoted strings, all three links and every number identical; no em-dash, en-dash or double hyphen; forbidden language none; one exclamation point, inside Daniel 6:21.
+- Voice pass (2026-10-28, final reader): 22 wording edits for AI tells (announced turn, two-beat closers, a four-part "It asks" run, the repeated "no vote" motif, paired parallel sentences, four over-long sentences split). Script check against the pre-pass text: all 58 quoted strings, all three links and every number identical; no em-dash, en-dash or double hyphen; forbidden language none; one exclamation point, inside Daniel 6:21.
 
 ## Still open
 
