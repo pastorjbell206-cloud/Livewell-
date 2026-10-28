@@ -1,0 +1,123 @@
+{
+ "slug": "doubt-after-church-abuse",
+ "lens": "Voice read, last reader before publishing. Read-only on the essay. Text checked: /home/user/livewell-land/client/public/essays/doubt-after-church-abuse.json (title, excerpt as standfirst, Markdown body). Read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md, searched literally. I read it once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it by 6-word overlap (Scripture quotations excluded) with every other landed essay in /home/user/livewell-land/client/public/essays/ and the drafts in /home/user/Livewell-/docs/work/essays/. The heaviest overlap is with excavation-not-demolition, which tells the same Guidepost and Zacharias facts in near-identical words, and the two essays link to each other. Every quoted old string in the fixes occurs exactly once in the body. Applied in order on a scratch copy, the fixes leave no em-dash and no forbidden word and bring the body to about 4,070 words. One must (the Southern Baptist implication), nine should, six consider. Two findings carry needs_james: the forgiveness definition (should) and restoration to ministry (consider, no change recommended).",
+ "findings": [
+  {
+   "where": "What the Church Did When It Knew, paragraph 3, sentence 1: \"Baptist churches, mine included, prize that independence, and the conviction has an honorable history.\"",
+   "problem": "This sentence comes straight after the paragraph on the Southern Baptist Convention: its messengers, its Executive Committee, its leaders' argument from local-church independence. The next sentence says \"The report showed what that conviction turns into\", and \"the report\" is the SBC report. A reader will take \"mine included\" to mean that James's church is in that convention. NOTES.md allows Baptist self-identification but says never to imply Southern Baptist membership, which is unconfirmed. The fix widens the sentence to all Baptists. It does not imply either membership or non-membership.",
+   "fix": "Replace \"Baptist churches, mine included, prize that independence\" with \"Baptist churches of every kind, mine included, prize that independence\".",
+   "severity": "must"
+  },
+  {
+   "where": "Forgiveness and Reporting, paragraph 2, sentence 4: \"Forgiveness in Scripture means giving up your claim to pay someone back yourself.\"",
+   "problem": "Faithful churches divide on whether forgiveness is conditional on the wrongdoer's repentance. One side reads Luke 17:3 as setting the order, and the other reads Mark 11:25 and Colossians 3:13 as asking for forgiveness that comes first. The paragraph quotes Luke 17:3, says \"The rebuke comes first\", and then defines forgiveness flatly as giving up the claim to pay back. That asserts one answer as settled. It also creates a tension a pastor will notice: three paragraphs later the essay commends Denhollander for forgiving Nassar, who had not repented. The brief says to name the question, leave it open and not assert James's position. The fix names the disagreement and keeps the essay's real claim, which holds on both views. That claim is that forgiveness is not silence, reconciliation or restoration. needs_james: true. James may want to state his own position or publish it open.",
+   "fix": "Replace \"Forgiveness in Scripture means giving up your claim to pay someone back yourself.\" with \"Christians disagree about whether forgiveness has to wait for the wrongdoer's repentance, and faithful churches answer that question differently. On either view, forgiveness means giving up your claim to pay someone back yourself.\" The next sentence (\"It does not mean pretending nothing happened ...\") still reads correctly after the change.",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Did When It Knew, paragraph 8 (the one beginning \"Anyone who leads a church knows the pull\"), sentence 2: \"I lead one, and I am not immune to it.\"",
+   "problem": "This announces self-implication instead of doing it. \"I am not immune to it\" is a near-twin of the banned stamp \"I don't exempt myself\", a formula that tells the reader the writer is inside the indictment. The brief says he implicates himself by doing it, not by announcing it. The replacement makes the same confession in plain words and claims no more than the original: he feels the pull just named. It invents no scene.",
+   "fix": "Replace \"I lead one, and I am not immune to it.\" with \"I lead one, and I feel that pull too.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Paragraph-ending \"Whatever ..., [verdict]\" lines. Why Abuse by a Leader Becomes Doubt About God, paragraph 1, last sentence: \"Whatever anyone has told you, that reaction is not weakness or bitterness.\" Was Any of It Real?, paragraph 4, last sentence: \"Whatever was done to you in God's name, Jesus knows it from the inside.\"",
+   "problem": "Three paragraphs end on the same move: a \"Whatever X,\" clause and then a consoling verdict. The third is What Happened at Shiloh, last sentence: \"Whatever your abuser told you about God being on his side ...\". Read through, the move becomes a motif, and the brief lists a motif stamped through the piece as an AI tell. Keep the Shiloh one and recast the other two. The meaning does not change.",
+   "fix": "Replace \"Whatever anyone has told you, that reaction is not weakness or bitterness.\" with \"That reaction is not weakness or bitterness.\" Replace \"Whatever was done to you in God's name, Jesus knows it from the inside.\" with \"Jesus knows from the inside what it is to be hurt in God's name.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Did When It Knew, paragraph 7 (the one beginning \"But the skeptic's case passes over the book itself\"), sentences 2 and 3: \"The sharpest words against abusive religious authority do not come from the Bible's critics. They come from its prophets, and from Jesus, ...\"",
+   "problem": "This is a second \"Not X. Y.\" in a row. The paragraph before ends \"The Boston and Southern Baptist reports were not about a few verses misread. They were about institutions that made silence easy.\" Two hard-period antitheses back to back across the hinge is the tic CLAUDE.md and VOICE-JAMES-BELL.md warn against: one per movement. The point (the critique comes from inside the book) survives without the antithesis.",
+   "fix": "Replace \"The sharpest words against abusive religious authority do not come from the Bible's critics. They come from its prophets,\" with \"The sharpest words against abusive religious authority come from inside the Bible: from its prophets,\". The rest of the sentence stays as it is.",
+   "severity": "should"
+  },
+  {
+   "where": "Forgiveness and Reporting, paragraph 5 (Denhollander), last sentence: \"She saw no contradiction between the two, and neither did Paul.\"",
+   "problem": "This is an aphoristic two-beat kicker built on a \"neither\" pair. The Forgiveness section already lands a verdict at the end of almost every paragraph (\"A man can be forgiven and still go to prison ...\", \"She is handing the matter to the authority ...\", \"the church was never told to hide them ...\"), so a clever closer here is one too many. The Romans 12 and 13 pairing has already been made two paragraphs up, so cutting the second beat loses nothing.",
+   "fix": "Replace \"She saw no contradiction between the two, and neither did Paul.\" with \"She saw no contradiction between the two.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Did When It Knew, paragraph 2, last sentence: \"Meanwhile the denomination's leaders resisted calls for a database of abusers on the grounds that the independence of local churches made one impossible.\"",
+   "problem": "The chronology is ambiguous. The sentence before is set in May 2022, so \"Meanwhile\" reads as \"at that time\". The resistance it describes ran through the same years the private list was kept: the database proposal was rejected in 2008, and leaders were still arguing from autonomy until the 2021 vote. The brief lists ambiguous chronology among the AI tells. The fix ties the sentence to the years the list was kept and uses the pluperfect.",
+   "fix": "Replace \"Meanwhile the denomination's leaders resisted calls\" with \"During those same years the denomination's leaders had resisted calls\".",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Did When It Knew, paragraph 2, sentence 3 (\"...reported that Executive Committee staff had for years kept a private list of ministers accused of abuse.\"), and paragraph 4, sentence 2 (\"Ravi Zacharias was one of the best-known Christian apologists in the world when he died in May 2020.\")",
+   "problem": "Both phrasings nearly duplicate excavation-not-demolition, which uses \"kept a private list of ministers accused of sexual abuse\" and \"one of the best-known Christian apologists of his generation\". The two essays link to each other: excavation-not-demolition says \"Doubt After Being Abused by a Church Leader was written for you\", and this essay links back. A reader who follows the link meets the same sentences twice. The brief bans reused sentences, and the shelf's judges have caught stamps when the set is read together. The facts stay. Only the wording changes.",
+   "fix": "Replace \"had for years kept a private list of ministers accused of abuse.\" with \"had for years maintained their own list of accused ministers, out of public view.\" Replace \"Ravi Zacharias was one of the best-known Christian apologists in the world when he died in May 2020.\" with \"When Ravi Zacharias died in May 2020, he was famous around the world for defending the Christian faith.\"",
+   "severity": "should"
+  },
+  {
+   "where": "If You Were Abused, paragraph 1, sentence 3: \"A counselor who understands trauma, and ideally what religious abuse does, can help you in ways a pastor can't.\"",
+   "problem": "This is the most crisis-facing section, written directly to the survivor, but its only path to help is a general mention of a counselor. The 988 line and the Find Help link sit near the top of the essay, about 3,000 words earlier. CLAUDE.md says to keep a path to real help visible on crisis-facing pages. /help includes the Domestic Violence Hotline and RAINN for abuse (CrisisBlock topics \"abuse\" and \"sexual-assault\"), so the added line is true to the page. It is one plain added sentence. This is the essay's second /help link, which the brief allows.",
+   "fix": "Replace \"can help you in ways a pastor can't.\" with \"can help you in ways a pastor can't. If you need someone sooner, [Find Help](/help) lists hotlines for abuse and sexual assault.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Opening, paragraph 3 (the \"First, a few plain things\" paragraph), last sentence: \"Nothing here is legal or counseling advice.\"",
+   "problem": "The brief's crisis-facing rule reads \"Not legal, medical or counseling advice.\" The essay discusses trauma responses in the body and recommends trauma counseling, so \"medical\" belongs in the disclaimer. Sibling essays (why-does-god-feel-far-away) include it.",
+   "fix": "Replace \"Nothing here is legal or counseling advice.\" with \"Nothing here is legal, medical or counseling advice.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Did When It Knew, paragraph 5 (the one beginning \"Most of the people who cover for abusers are not cynics\"), sentence 4: \"Those are real goods.\"",
+   "problem": "\"Real goods\" is the vocabulary of VOICE-JAMES-BELL.md's method (\"the real goods or wounds that motivated them\") and of moral philosophy, not the words a thoughtful neighbor uses. It reads as the concession rule surfacing in the prose. The concession itself is right and should stay.",
+   "fix": "Replace \"Those are real goods.\" with \"Those things are worth caring about.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Forgiveness and Reporting, paragraph 6 (what a church would do), last sentence: \"These steps are not complicated, only costly, and the cost falls on the church instead of on the person who was harmed, which is where it belongs.\"",
+   "problem": "\"Not complicated, only costly\" is an epigrammatic antithesis stacked on a second contrast (\"instead of\"). It closes a section that already has several verdict lines. Dropping the first beat keeps the real point, which is where the cost falls.",
+   "fix": "Replace \"These steps are not complicated, only costly, and the cost falls\" with \"These steps are costly, and the cost falls\".",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## How True Doctrine Gets Turned Into a Weapon\"",
+   "problem": "Every other heading is plain and descriptive. This one is built on a metaphor (\"Turned Into a Weapon\"). The brief asks for plain descriptive headings.",
+   "fix": "Replace \"## How True Doctrine Gets Turned Into a Weapon\" with \"## How Abusers Use True Doctrine\".",
+   "severity": "consider"
+  },
+  {
+   "where": "What Happened at Shiloh, last paragraph, last sentence: \"Whatever your abuser told you about God being on his side, Scripture said otherwise long before he was born.\"",
+   "problem": "The section's verdict is already \"God took sides.\" two sentences earlier. \"Long before he was born\" adds a flourish that turns this sentence into a second, aphoristic closer. Plain is stronger here. This is also the \"Whatever\" closer to keep once the other two are recast.",
+   "fix": "Replace \"Scripture said otherwise long before he was born.\" with \"Scripture says otherwise.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "How True Doctrine Gets Turned Into a Weapon, paragraph 1, last two sentences: \"The person who raises a concern is told she has a rebellious spirit. The person who leaves is told he has stepped out from under spiritual covering.\"",
+   "problem": "The paired sentences are perfectly parallel (\"The person who ... is told ... The person who ... is told ...\"). VOICE-JAMES-BELL.md warns that this kind of symmetry makes prose sound generated. Changing the second one is enough to break it.",
+   "fix": "Replace \"The person who leaves is told he has stepped out from under spiritual covering.\" with \"Someone who leaves may hear that he has stepped out from under spiritual covering.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Forgiveness and Reporting, paragraph 2 (\"It is never restoration to the position he abused.\") and paragraph 6 (\"A leader found guilty does not return to ministry.\")",
+   "problem": "Whether a minister who has fallen into sexual sin can ever be restored to office is a question some faithful churches answer differently. Here the essay states permanent disqualification flatly. For abuse in the essay's sense (power used against someone in his care, and above all against children), this matches the protection standard in VOICE-JAMES-BELL.md: never make reconciliation a shortcut around protection. A pastor from a restoration tradition could still bristle. This is flagged for James rather than changed. needs_james: true (light).",
+   "fix": "No text change recommended. If James wants it softened, change \"A leader found guilty does not return to ministry.\" to \"A leader found to have abused someone in his care does not return to ministry.\" That narrows it to the essay's own definition without opening the question.",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language (CLAUDE.md), literal search of title, excerpt and body: none of the 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), none of the phrases (\"in today's world\", \"now more than ever\", \"here's the thing\", \"I want to be real with you\", \"God's got this\", \"blessed\", \"gospel-centered\", \"authentic community\"), and no therapy-speak (\"hold space\", \"your truth\", \"do the work\", \"your feelings are valid\", \"lean into\", \"showing up\"). No \"here is what I mean\" or \"let me explain\" signposting.",
+  "Em-dashes: none (U+2014 count 0). En-dashes appear only in verse ranges (1 Samuel 2:13–16, Mark 10:42–43 and so on). No double hyphens.",
+  "Exclamation points: two, both inside verbatim ESV Scripture (\"do my prophets no harm!\" Psalm 105:15; \"Prophesy!\" Mark 14:65). None in the essay's own prose.",
+  "Semicolons: five, all inside quoted Scripture (1 Samuel 3:1, Psalm 105:14, Psalm 55:14, Psalm 55:21, Psalm 55:22). None in the essay's own prose.",
+  "Stamps: none of \"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\" (\"considered\" appears only inside Mark 10:42), \"none of this\", \"the record\", \"I don't exempt myself\". The near-twin \"I am not immune to it\" is listed above.",
+  "Rulebook vocabulary: no steelman, verdict, indictment or self-implication in the prose. \"Honest\" appears once (\"Some of the most honest prayers in the Bible\") and describes the psalms, not the essay. \"Fair\" is not used (only inside \"affair\"). The \"real goods\" near-miss is listed above.",
+  "Announced turns: none of the banned kind. \"First, a few plain things\", \"The church has faced a version of that question before\" and \"Then it turns to the ministers\" are plain signposting in his habit, not staged reveals.",
+  "Biography: only one confirmed fact, that he pastors a Baptist church (\"mine included\", \"I lead one\"), and it is used for self-implication, not as a credential. No title, years in ministry, book count, invented scene or congregant. Atheism, fatherlessness, Susanna and the sons are not used. The Southern Baptist implication from placement is listed above as the one must-fix.",
+  "Standfirst (excerpt): \"Abuse by a pastor or church leader often leaves a person doubting God himself, and the Bible has a great deal to say to that doubt.\" One plain declarative sentence, not a balanced antithesis. The title (\"Doubt After Being Abused by a Church Leader\") uses plain search words.",
+  "Headings: seven of eight are plain and descriptive (What Happened at Shiloh; Why Abuse by a Leader Becomes Doubt About God; What the Church Did When It Knew; Was Any of It Real?; Forgiveness and Reporting; If You Were Abused; Ezekiel 34 and the Good Shepherd). The one metaphorical heading is listed above.",
+  "Scholar parade: none. Johnson and VanVonderen, Herman, Augustine and Bullinger each appear once as a witness inside the argument, with the idea named (spiritual abuse and the no-talk rule; the bystander; the Donatist answer; deposing unworthy ministers). The only date given is \"the 1560s\" for the Second Helvetic Confession, where it orients the reader.",
+  "Political criticism: the essay makes none. Its institutional criticism fires at Catholic hierarchy (Boston 2002), the Southern Baptist Convention, evangelical apologetics (Zacharias), the writer's own Baptist conviction and the writer himself (\"I lead one\"; \"The rest of us, the church that knew or chose not to know\"). It is the same instrument and the same grief throughout, and the essay does not invent a false symmetry.",
+  "Skeptic read: the objection that the system produces abusers is voiced in its strongest form (\"maybe the bending is the faith working as designed\"), and the concession is real (\"He is right that churches built cultures that taught people to defer\"). The answer does not use \"abuse happens elsewhere too\" as comfort (\"That should give a Christian no comfort\"). A thoughtful unbeliever is met, not handled.",
+  "Pastor read: the essay survives a \"can I hand this to my people\" read. It implicates church leaders (Eli, the coverers' sincere motives, \"I lead one\"), gives concrete practice (police or CPS first, independent investigation, no NDAs, no return to ministry), and does not flatter the reader's tribe.",
+  "Contested questions otherwise: Donatism and sacramental validity are handled as historic consensus (Augustine, the Reformers), not as a live second-order dispute. The KJV/ESV readings of 1 Samuel 2:17 are left open (\"Either reading is true to ...\"). Polity is treated with respect (\"the conviction has an honorable history\") and its misuse is criticized, not the conviction. The forgiveness definition and restoration are listed above.",
+  "Crisis care: the opening paragraph gives police or child protective services first, says that abuse by a church leader should be reported to the authorities, gives the 988 line for the US, links [Find Help](/help), and includes a not-advice line. The essay does not diagnose the reader, never validates despair (\"I would only ask you not to let the man who hurt you decide who God is\"), and keeps the survivor's blamelessness explicit (\"what was done to you was not your fault\"). The second help path and the \"medical\" word are listed above.",
+  "Ending: no recap of the sections. The final stack turns first to the survivor (\"God has already said whose side he is on\"), then turns the mirror on the church including the writer (\"The rest of us ... have Eli's story to answer for\"), and lands on Christ the Shepherd (\"He keeps his word\"), as the brief asks. The Closing Texts are three lines in the *\"Quote.\"* (Reference) form, ESV wording.",
+  "Links: three essay links, all in docs/work/essays/link-targets.json (the-bible-assumes-you-will-be-wrong, excavation-not-demolition, why-does-god-feel-far-away), plus /help. That is within the two-to-four limit.",
+  "Register measures: average paragraph about 89 words, mean sentence about 17.4 words, about 15 percent of sentences at 8 words or fewer. This is on target for paragraph and sentence length and a little light on short sentences, which is acceptable for a pastoral piece. Body is about 4,050 words, a little over the usual 3,800 but within reason for a crisis piece that also carries the history. The proposed fixes add about 20 words."
+ ]
+}
