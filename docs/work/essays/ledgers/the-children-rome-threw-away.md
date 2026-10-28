@@ -77,8 +77,8 @@ What the verifier could and could not reach:
 25. Quotation: "almost all so exposed (not only the girls, but also the males) are brought up to prostitution," Verified verbatim: ANF (repo), Chapter XXVII. Justin calls this the "first" reason, which supports "His first reasons".
 26. Paraphrase: a man who visits prostitutes may be lying with his own abandoned child without knowing it. Verified: ANF (repo), Chapter XXVII: "any one who uses such persons ... may possibly be having intercourse with his own child, or relative, or brother."
 27. Quotation: "lest some of them be not picked up, but die, and we become murderers" Verified verbatim: ANF (repo), Chapter XXIX ("Continence of Christians"); the bracketed "[we fear to expose children]" before it is the editor's. Citation "First Apology 27 and 29" correct.
-28. Tertullian "writing in Carthage around 197". Textbook; the approved pilot says the same.
-29. Christians accused of killing and eating babies at secret meetings. Verified: ANF (repo), Apology VII: "we are accused of observing a holy rite in which we kill a little child and then eat it".
+28. Tertullian's Apology "written at Carthage around 197" (voice pass: was "Tertullian, writing in Carthage around 197", a tag the approved pilot uses word for word). Textbook; the approved pilot gives the same place and year.
+29. Christians accused of killing and eating babies at secret meetings (now "he took up the charge that Christians killed and ate babies at their secret meetings, and he turned it back on the people who made it"). Verified: ANF (repo), Apology VII: "we are accused of observing a holy rite in which we kill a little child and then eat it".
 30. Paraphrase: how many of the crowd shouting for Christian blood, and of the rulers severe with Christians. Verified: ANF (repo), Apology IX: "How many, think you, of those crowding around and gaping for Christian blood,-how many even of your rulers, notable for their justice to you and for their severe measures against us". Outside quotation marks.
 31. Quotation: "with the sin of putting their offspring to death" Verified verbatim: ANF (repo), Apology IX.
 32. Quotation: "by drowning, or by exposure to cold and hunger and dogs." Verified verbatim: ANF (repo), Apology IX.
@@ -158,7 +158,7 @@ Every quotation was matched against the ESV copy and then searched with its exac
 89. Every state has a safe haven law; Texas passed the first in 1999, the Baby Moses law; designated places include hospitals and, in many states, fire stations. Verified: Search (Wikipedia "Safe-haven law": Texas first, 1999, signed 19 June 1999; all 50 states; Texas sites include hospitals, EMS stations and fire departments; requirements vary by state). Corrected (correction 8).
 90. More than 325,000 children in foster care on 30 September 2024. Verified: Search (ACF FY 2024 AFCARS dashboard: 328,947, preliminary; ACF FY 2025 dashboard, as summarized: FY 2024 revised to 327,364). Corrected (correction 9). Neither PDF could be opened.
 91. More than fifteen thousand young people aged out of foster care in 2025 without a permanent family, by the National Council for Adoption's count. Verified: Search (adoptioncouncil.org, *Adoption Statistics 2026*: 15,030 aged out without a permanent family in 2025). Corrected (correction 10).
-92. "Every one of those children is in the state's care because a family could not, for a time or for good, keep them safe." General characterization; not checked. Kept.
+92. "Every one of those children came into the state's care because a family could not, for a time or for good, keep them safe." General characterization; not checked. Kept. Voice pass: "is in" became "came into", since the young people who aged out are no longer in care; the sentence before it now reads "children who cannot stay with their own families are still with us" (was "unwanted children"), because a child in foster care is not necessarily unwanted.
 93. The Didache and Tertullian put the unborn and the newborn together; the church's opposition to abortion goes back to them. Verified for the texts (lines 18 and 33). Corrected (correction 11).
 94. "Many churches and ministries quietly help women after an abortion." Verified in general: Search (Rachel's Vineyard, offered in 49 states; the Catholic Church's Project Rachel; diocesan programs).
 
@@ -189,6 +189,19 @@ Restore only if a later check confirms it against a source.
 
 ## Biography and voice notes
 
-- No biography used. "I have written about" and "I've written elsewhere" refer only to James's own essays on the site.
+- No biography used. "I've written elsewhere" refers only to James's own essay on the site (the-early-church-under-rome). The two blind-spot links now sit in a sentence without "I have written about"; their text and targets are unchanged.
 - No em-dashes. One semicolon outside quotations (the Datheus sentence). Exclamation points only inside quoted Ezekiel 16:6, each with its reference.
-- Corrections changed wording only where accuracy required it; structure, headings and the ending are as the writer left them.
+- Corrections changed wording only where accuracy required it; structure and headings are as the writer left them. The ending lost one line in the voice pass (below).
+
+## Voice pass (2026-10-28, final read)
+
+Wording only. Every quotation, Scripture reference and link is byte-identical to the verified text (checked by script against the previous commit); no fact, number, date, name or source was added. Changes that touch a claim:
+
+- "Nobody around him would have asked him to" became "Few people around him would have expected him to" (Alexandria had Jewish neighbors who, by line 36, did not expose children).
+- "The community accused of eating children was the one place in town where a child could not be put out" became "The people accused of eating children lived by a rule that would not let them put a child out at all". The old line claimed the church was the only such place, which the next paragraph (the Jews, line 36) contradicts.
+- Tertullian and the accusation: lines 28 and 29.
+- Foster care: line 92.
+- Kept as they were: the Kertzer, Boswell and Harris claims (Boswell's book title moved into the 20-to-40-percent sentence; Harris's "study" moved into the second half of its sentence).
+
+Voice-only changes: removed an announced turn ("Then comes the sentence that made the letter famous"), announced fairness ("It's worth slowing down"), a sentence frame reused from the early-church pilot ("Put most of us in ... place"), the "monsters and saints" antithesis, the epigrams "Each is loving half of what the early church loved" and "Whatever else Jesus' warning covers, it covers that", the image "Here the blind spot has a face", the anaphora "It would look like" (three times) and "You may have" (four times), and the framing line "So the question this history leaves is not really about Rome."
+
