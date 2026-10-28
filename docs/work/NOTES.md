@@ -310,3 +310,13 @@ and status in docs/work/essays/PROGRAM-25.md.
 ## Vercel daily deployment limit (2026-10-28, 19:29 UTC)
 
 The project hit the Hobby plan's 100-deployments-a-day limit ("api-deployments-free-per-day"); every push to a branch creates a preview deployment, and the essay workflows' work-in-progress saves were pushing to the PR #540 branch every few minutes. Production is unaffected (last production deploy: #539, READY). vercel.json now carries `git.deploymentEnabled: {"claude/todo-implementation-hhp4bm": false}`, so pushes to the PR #540 branch create no deployments; its existing preview (livewell-tn9v-git-claude-978329-...) already holds all of #540's site code (last code commit 794ef60f). claude/essays still deploys, for James's essay previews. Remove the entry from vercel.json before #540 merges, so later PRs from this branch get previews again.
+
+## For James at the read of the new essays (final read, local batch 1, 2026-10-28)
+
+- Romans 13: keep "Whoever takes office in January" (tied to this election) or "Whoever holds office over us is owed", so the essay does not date after January?
+- Love of country: keep the ending line "He was never ashamed of His nation, and He never worshiped it"? One reader heard it as a slogan.
+- Love of country: "I'm raising five sons in this country, and I want them to love it" as written?
+- Why are people leaving: the Bengtson paragraph ends on "I was raised without a father, and I am raising five sons." without comment.
+- Why are people leaving: "a church cannot drop a teaching it believes Christ gave in order to keep a member" (sex and marriage), worded as he wants?
+- Children Rome threw away: the pastoral section speaks to men who "pressed someone else to end" a pregnancy, and calls abortion sin while leaving the law open. Tone and position?
+- Who decided the books: Closing Texts now open with Romans 15:4.

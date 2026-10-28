@@ -28,16 +28,16 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 13 | doubt-after-church-abuse | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
 | 14 | did-christianity-copy-pagan-myths | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
 | 15 | did-god-command-genocide | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read (James: publish open) |
-| 16 | what-romans-13-says | faith-and-power | landing locally on land-next (new-1, wf_0eb3be74-519); James: publish as written |
-| 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | landing locally on land-next (new-1, wf_0eb3be74-519); James: publish open |
-| 18 | is-it-wrong-to-love-your-country | faith-and-power | landing locally on land-next (new-1, wf_0eb3be74-519) |
-| 19 | the-children-rome-threw-away | ancient-church | landing locally on land-next (new-1, wf_0eb3be74-519) |
-| 20 | what-render-unto-caesar-actually-means | faith-and-power | ledger closed (second pass, 24 of 24); to land |
-| 21 | the-rise-of-the-nones | after-christendom | landing locally on land-next (new-1, wf_0eb3be74-519) |
-| 22 | what-a-christian-owes-the-city | after-christendom | ledger closed (second pass, 10 of 10); to land |
-| 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | ledger closed (second pass, 9 of 9; two writer specifics restored); to land |
-| 24 | what-the-original-audience-heard | bible-in-its-world | ledger closed (second pass, 14 of 14); to land (local batch 2) |
-| 25 | the-persecution-we-invented | after-christendom | ledger closed (second pass, 19 of 20; ESV API recheck open shelf-wide); to land |
+| 16 | what-romans-13-says | faith-and-power | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
+| 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
+| 18 | is-it-wrong-to-love-your-country | faith-and-power | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
+| 19 | the-children-rome-threw-away | ancient-church | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
+| 20 | what-render-unto-caesar-actually-means | faith-and-power | landing locally on land-next (new-2) |
+| 21 | the-rise-of-the-nones | after-christendom | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
+| 22 | what-a-christian-owes-the-city | after-christendom | landing locally on land-next (new-2) |
+| 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | landing locally on land-next (new-2) |
+| 24 | what-the-original-audience-heard | bible-in-its-world | landing locally on land-next (new-2) |
+| 25 | the-persecution-we-invented | after-christendom | landing locally on land-next (new-2) |
 | spare | when-the-pulpit-became-a-precinct | faith-and-power | if one is held |
 
 Rewrites fold in the slugs NOTES.md lists under "Essays each rewrite folds in"
