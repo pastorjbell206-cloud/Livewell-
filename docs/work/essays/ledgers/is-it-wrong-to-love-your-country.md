@@ -1,6 +1,6 @@
 # Claims ledger: is-it-wrong-to-love-your-country
 
-Essay: `docs/work/essays/is-it-wrong-to-love-your-country.md` ("Is It Wrong to Love Your Country?"). New essay, Faith and Power. Writer's ledger of 2026-10-28, rewritten by the verifier on 2026-10-28 after checking every claim again. Each line below gives the result and the method this verification pass actually used. Where a line rests on the writer's own check and was not repeated here, it says so.
+Essay: `docs/work/essays/is-it-wrong-to-love-your-country.md` ("Is It Wrong to Love Your Country?"). New essay, Faith and Power. Writer's ledger of 2026-10-28, rewritten by the verifier on 2026-10-28 after checking every claim again. Each line below gives the result and the method this verification pass actually used. Where a line rests on the writer's own check and was not repeated here, it says so. Voice-edited by the last reader on 2026-10-28: headings, the standfirst and some connecting sentences were reworded, Chesterton's *Orthodoxy* lost its unchecked year, and no quotation, link, number or claim was added; the lines below that the edit touched now quote the new wording.
 
 ## Methods, in the words used below
 
@@ -16,7 +16,7 @@ Searches used in this pass: 46 WebSearch calls and 1 site fetch.
 ## Corrections made in the essay (this pass)
 
 1. Opening, Gallup by generation. "A year earlier Gallup found that 41 percent of adults in Generation Z were extremely or very proud to be American, against 75 percent of baby boomers" became "In its polls from 2021 through 2025, Gallup found that 41 percent ...". Search results show these generational figures are averages of Gallup's polls from 2021 through 2025, not results of the 2025 poll alone.
-2. The Case That It Turns Into Idolatry. "Twenty years later a movement calling itself the German Christians set out to fit the Protestant church to Hitler's Reich" became "By 1933 a movement calling itself the German Christians had set out to fit ...". Hitler's Reich began in January 1933 and the movement's program dates from 1932 and 1933, so "twenty years" after October 1914 fit only Barmen (1934), not the movement's start.
+2. Why Other Christians Distrust Patriotism (then headed "The Case That It Turns Into Idolatry"). "Twenty years later a movement calling itself the German Christians set out to fit the Protestant church to Hitler's Reich" became "By 1933 a movement calling itself the German Christians had set out to fit ...". Hitler's Reich began in January 1933 and the movement's program dates from 1932 and 1933, so "twenty years" after October 1914 fit only Barmen (1934), not the movement's start.
 3. Frederick Douglass and Dietrich Bonhoeffer. "That is why he could tell the nation, on the day it most wanted praise" became "at the holiday when it most wanted praise". The essay itself dates the speech July 5, 1852, the day after the Fourth. Search results give two accounts of why (Douglass's own choice, or the society moving its celebration because July 4, 1852 fell on a Sunday; the weekday was computed in this pass). Either way it was a holiday oration delivered on July 5, which the new wording states without the contradiction.
 
 ## Original wording, for restoring
