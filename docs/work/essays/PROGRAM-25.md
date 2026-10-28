@@ -32,12 +32,12 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | ledger closed (second pass); James 2026-10-28: publish open; to land |
 | 18 | is-it-wrong-to-love-your-country | faith-and-power | ledger closed (second pass, 27 of 27); to land |
 | 19 | the-children-rome-threw-away | ancient-church | ledger closed (second pass, 18 of 23 verified; 2 writer wordings not restorable, verified versions kept); to land |
-| 20 | what-render-unto-caesar-actually-means | faith-and-power | written, verified (120), voiced 9; second pass running (wf_23a4b649-32b) |
+| 20 | what-render-unto-caesar-actually-means | faith-and-power | ledger closed (second pass, 24 of 24); to land |
 | 21 | the-rise-of-the-nones | after-christendom | ledger closed (second pass, 6 of 6); to land |
 | 22 | what-a-christian-owes-the-city | after-christendom | written, verified (136), voiced 8; second pass running (wf_6d1122e6-99b) |
 | 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | written, verified (164), voiced 9; second pass running |
-| 24 | what-the-original-audience-heard | bible-in-its-world | rewrite (batch 4) |
-| 25 | the-persecution-we-invented | after-christendom | rewrite (batch 4) |
+| 24 | what-the-original-audience-heard | bible-in-its-world | writing (batch 4, wf_aa4917d2-715) |
+| 25 | the-persecution-we-invented | after-christendom | writing (batch 4, wf_aa4917d2-715) |
 | spare | when-the-pulpit-became-a-precinct | faith-and-power | if one is held |
 
 Rewrites fold in the slugs NOTES.md lists under "Essays each rewrite folds in"
