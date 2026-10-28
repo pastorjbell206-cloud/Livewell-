@@ -15,7 +15,7 @@
    "severity": "should"
   },
   {
-   "where": "What the Church Did When It Knew, paragraph 8 (the one beginning \"Anyone who leads a church knows the pull\"), sentence 2: \"I lead one, and I am not immune to it.\"",
+   "where": "What the Church Did When It Knew, paragraph 9 (the one beginning \"Anyone who leads a church knows the pull\"), sentence 2: \"I lead one, and I am not immune to it.\"",
    "problem": "This announces self-implication instead of doing it. \"I am not immune to it\" is a near-twin of the banned stamp \"I don't exempt myself\", a formula that tells the reader the writer is inside the indictment. The brief says he implicates himself by doing it, not by announcing it. The replacement makes the same confession in plain words and claims no more than the original: he feels the pull just named. It invents no scene.",
    "fix": "Replace \"I lead one, and I am not immune to it.\" with \"I lead one, and I feel that pull too.\"",
    "severity": "should"
@@ -27,7 +27,7 @@
    "severity": "should"
   },
   {
-   "where": "What the Church Did When It Knew, paragraph 7 (the one beginning \"But the skeptic's case passes over the book itself\"), sentences 2 and 3: \"The sharpest words against abusive religious authority do not come from the Bible's critics. They come from its prophets, and from Jesus, ...\"",
+   "where": "What the Church Did When It Knew, paragraph 8 (the one beginning \"But the skeptic's case passes over the book itself\"), sentences 2 and 3: \"The sharpest words against abusive religious authority do not come from the Bible's critics. They come from its prophets, and from Jesus, ...\"",
    "problem": "This is a second \"Not X. Y.\" in a row. The paragraph before ends \"The Boston and Southern Baptist reports were not about a few verses misread. They were about institutions that made silence easy.\" Two hard-period antitheses back to back across the hinge is the tic CLAUDE.md and VOICE-JAMES-BELL.md warn against: one per movement. The point (the critique comes from inside the book) survives without the antithesis.",
    "fix": "Replace \"The sharpest words against abusive religious authority do not come from the Bible's critics. They come from its prophets,\" with \"The sharpest words against abusive religious authority come from inside the Bible: from its prophets,\". The rest of the sentence stays as it is.",
    "severity": "should"
