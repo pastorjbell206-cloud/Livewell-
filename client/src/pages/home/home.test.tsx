@@ -8,6 +8,8 @@
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { screen, fireEvent, waitFor, within } from "@testing-library/react";
+import fs from "node:fs";
+import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import Home from "../Home";
@@ -18,6 +20,9 @@ function setToday(y: number, m: number, d: number) {
   vi.useFakeTimers({ toFake: ["Date"] });
   vi.setSystemTime(new Date(y, m - 1, d, 12));
 }
+
+/** The tonight line loads on its own after first paint (Home.tsx); wait until its slot is filled. */
+const tonightSettled = () => waitFor(() => expect(document.querySelector(".home-tonight--slot")).toBeNull());
 
 function renderHome() {
   const fetch = vi.fn(offlineFetch());
@@ -99,26 +104,38 @@ describe("homeTonight", () => {
 });
 
 describe("Home's tonight line", () => {
-  it("names tonight's devotion and links its page, without fetching anything for it", () => {
+  it("names tonight's devotion and links its page, without fetching anything for it", async () => {
     setToday(2026, 10, 27);
     const fetch = renderHome();
-    expect(screen.getByTestId("home-tonight")).toHaveTextContent("Tonight at the table: Strong Enough To Be Gentle.");
+    expect(await screen.findByTestId("home-tonight")).toHaveTextContent("Tonight at the table: Strong Enough To Be Gentle.");
     expect(screen.getByRole("link", { name: "Strong Enough To Be Gentle" })).toHaveAttribute("href", "/family/devotions/gentleness");
     expect(fetch.mock.calls.map(([url]) => String(url)).filter((u) => u.includes("family"))).toEqual([]);
     expect(screen.queryByTestId("home-continue")).toBeNull();
   });
 
-  it("offers Continue beside it when this device has a self-check left part-way", () => {
+  it("offers Continue beside it when this device has a self-check left part-way", async () => {
     setToday(2026, 10, 27);
     window.localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers: { 0: 4 }, step: 2, savedAt: "2026-10-26T20:00:00.000Z" }));
     renderHome();
-    expect(screen.getByRole("link", { name: "Continue the Life Audit" })).toHaveAttribute("href", "/tools/life-audit");
+    expect(await screen.findByRole("link", { name: "Continue the Life Audit" })).toHaveAttribute("href", "/tools/life-audit");
   });
 
-  it("shows nothing at all when there is nothing to show", () => {
+  it("shows nothing at all when there is nothing to show", async () => {
     setToday(2040, 1, 1);
     const { container } = renderWithProviders(<Home />);
+    await tonightSettled();
     expect(container.querySelector(".home-tonight")).toBeNull();
+  });
+
+  it("stays out of the entry script, and its slot holds one line", () => {
+    // Home is in the entry every route loads; the line, the year map, and Continue are not.
+    const home = fs.readFileSync(path.resolve(__dirname, "../Home.tsx"), "utf8");
+    expect(home).not.toMatch(/^import[^;]*from "\.\/home\/HomeTonight";/m);
+    expect(home).toContain('import("./home/HomeTonight")');
+    // The slot is one .home-tonight__line tall, so the doors do not move when the line arrives.
+    const css = fs.readFileSync(path.resolve(__dirname, "../../index.css"), "utf8");
+    expect(css).toMatch(/\.home-tonight__line\{[^}]*font-size:17px;line-height:1\.6;/);
+    expect(css).toContain(".home-tonight--slot{min-height:calc(17px * 1.6)}");
   });
 });
 
