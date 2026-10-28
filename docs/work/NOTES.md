@@ -306,3 +306,7 @@ and status in docs/work/essays/PROGRAM-25.md.
 - excavation-not-demolition: the Joshua Harris timeline detail (posted days after announcing his separation) was cut; "still owe the resurrection a hearing" became "still give".
 - did-the-resurrection-happen: Borg's reading described as "offered as a way to keep Easter for people who could no longer believe in an empty tomb."
 - Withheld link sentences (targets not yet public) are recorded word for word in each ledger.
+
+## Vercel daily deployment limit (2026-10-28, 19:29 UTC)
+
+The project hit the Hobby plan's 100-deployments-a-day limit ("api-deployments-free-per-day"); every push to a branch creates a preview deployment, and the essay workflows' work-in-progress saves were pushing to the PR #540 branch every few minutes. Production is unaffected (last production deploy: #539, READY). vercel.json now carries `git.deploymentEnabled: {"claude/todo-implementation-hhp4bm": false}`, so pushes to the PR #540 branch create no deployments; its existing preview (livewell-tn9v-git-claude-978329-...) already holds all of #540's site code (last code commit 794ef60f). claude/essays still deploys, for James's essay previews. Remove the entry from vercel.json before #540 merges, so later PRs from this branch get previews again.
