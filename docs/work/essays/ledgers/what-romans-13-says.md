@@ -216,3 +216,5 @@ Not restored, with reasons: the Sessions audience (no report's wording seen name
 - Romans 12:1 "brothers": the local ESV copy and the BSB have it; no search summary printed the word. Covered by the API check above.
 - Nothing else is open. The Ansbach date, the Barmen count, Calvin (now read in a primary text), Boucher, King, Spencer, Luther, Franklin, Barth, the 2026 election date and the January terms were closed in the closing pass; see the lines above.
 - Publication timing: after the voice pass the opening and application assume only an election season (November 3, 2026) and a January swearing-in; no line names a week.
+- Settled: James decided on 2026-10-28 to publish it as written, with its named public examples (Sessions in 2018 and the church responses, the sanctuary movement, Grace Community Church in 2020), not held for the November 3 election. The essay landed on 2026-10-28.
+- Landing (2026-10-28): "O king, live forever!" (6:21) became "(Daniel 6:21)", because the essay gate recognizes Scripture beside an exclamation point only by a full reference. No word of the essay or the quotation changed. Draft and published file match.

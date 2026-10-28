@@ -235,3 +235,5 @@ Nothing open for accuracy after the closing run. Lines 82 and 139 were closed (s
 ## Needs James
 
 The Old Testament Apocrypha (deuterocanon) question is stated from both sides and left open as a second-order question, as BRIEF.md requires. James may want to give his own position, or say to publish it open as he did for did-god-command-genocide. The authorship of 2 Peter is mentioned and left open.
+
+Settled: James decided on 2026-10-28 to publish it open. The Apocrypha question stays a two-sided account with no position stated for him, and 2 Peter's authorship stays unsettled. The essay landed on 2026-10-28.

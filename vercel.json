@@ -815,6 +815,21 @@
       "permanent": true
     },
     {
+      "source": "/writing/why-churches-close-and-what-comes-next",
+      "destination": "/writing/the-rise-of-the-nones",
+      "permanent": true
+    },
+    {
+      "source": "/writing/why-people-are-leaving-the-church",
+      "destination": "/writing/the-rise-of-the-nones",
+      "permanent": true
+    },
+    {
+      "source": "/writing/why-young-adults-arent-coming-back",
+      "destination": "/writing/the-rise-of-the-nones",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true

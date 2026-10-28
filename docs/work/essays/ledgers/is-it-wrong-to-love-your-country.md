@@ -35,6 +35,10 @@ Searches used in the first verification pass: 46 WebSearch calls and 1 site fetc
 - Newly verified (were textbook-only, writer's search only, local ESV only, or a summary that did not reproduce the words): Psalm 137:1, 137:3 and 137:9; 1 Samuel 8:5 and 8:7; the fifth-commandment numbering; Aquinas's century; Barth as a young Swiss pastor; Harnack as church historian; the pacifist roots of *Resident Aliens*; the January 1933 start of Hitler's Reich; "generations after the exile"; the Roman colony description; Bonhoeffer's June 1939 arrival, his July return and his standing as a Lutheran pastor; V-E Day; the January 2025 change of administration; Pimlico as a London district; the 75 percent baby-boomer figure.
 - Rechecked and still verified: the four Gallup readings; Lewis's "begins to be a demon ..."; Weil's "To be rooted ..."; Douglass's "The signers ...", "GLORIOUS LIBERTY DOCUMENT", "I do not despair of this country" and the 1855 extract; Bonhoeffer's "I must live through ..."; the society that hosted Douglass; *The Defendant*'s last essay.
 
+## Landing (2026-10-28)
+
+- Three short Scripture references beside quotations that end in an exclamation point now name their book, because the essay gate recognizes Scripture only by a full reference beside the quotation: "(2:3)" became "(Nehemiah 2:3)", "(137:3–5)" became "(Psalm 137:3–5)" and "(137:9)" became "(Psalm 137:9)". No word of the essay or of any quotation changed. Draft and published file match.
+
 ## Opening
 
 - Gallup has asked Americans how proud they are to be American since 2001. Search-checked 2026-10-28 (Fox stations' syndicated story on Gallup's June 30, 2025 release: "The first reading in January 2001 was 87%"; Washington Examiner, IBTimes and other 2026 coverage: the lowest reading "since Gallup began its patriotism poll in 2001"). Verified.
