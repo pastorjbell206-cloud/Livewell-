@@ -28,15 +28,15 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 13 | doubt-after-church-abuse | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
 | 14 | did-christianity-copy-pagan-myths | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
 | 15 | did-god-command-genocide | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read (James: publish open) |
-| 16 | what-romans-13-says | faith-and-power | ledger closed (second pass); James 2026-10-28: publish as written; to land |
-| 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | ledger closed (second pass); James 2026-10-28: publish open; to land |
-| 18 | is-it-wrong-to-love-your-country | faith-and-power | ledger closed (second pass, 27 of 27); to land |
-| 19 | the-children-rome-threw-away | ancient-church | ledger closed (second pass, 18 of 23 verified; 2 writer wordings not restorable, verified versions kept); to land |
+| 16 | what-romans-13-says | faith-and-power | landing locally on land-next (new-1, wf_0eb3be74-519); James: publish as written |
+| 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | landing locally on land-next (new-1, wf_0eb3be74-519); James: publish open |
+| 18 | is-it-wrong-to-love-your-country | faith-and-power | landing locally on land-next (new-1, wf_0eb3be74-519) |
+| 19 | the-children-rome-threw-away | ancient-church | landing locally on land-next (new-1, wf_0eb3be74-519) |
 | 20 | what-render-unto-caesar-actually-means | faith-and-power | ledger closed (second pass, 24 of 24); to land |
-| 21 | the-rise-of-the-nones | after-christendom | ledger closed (second pass, 6 of 6); to land |
+| 21 | the-rise-of-the-nones | after-christendom | landing locally on land-next (new-1, wf_0eb3be74-519) |
 | 22 | what-a-christian-owes-the-city | after-christendom | ledger closed (second pass, 10 of 10); to land |
 | 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | ledger closed (second pass, 9 of 9; two writer specifics restored); to land |
-| 24 | what-the-original-audience-heard | bible-in-its-world | written (3258), verified (122), voiced 8; second pass running (wf_d2e331b7-2aa) |
+| 24 | what-the-original-audience-heard | bible-in-its-world | ledger closed (second pass, 14 of 14); to land (local batch 2) |
 | 25 | the-persecution-we-invented | after-christendom | ledger closed (second pass, 19 of 20; ESV API recheck open shelf-wide); to land |
 | spare | when-the-pulpit-became-a-precinct | faith-and-power | if one is held |
 
@@ -48,3 +48,6 @@ Landing plan (updated 2026-10-28): after doubt-2, the eight new essays whose led
 of five (each in its own main-session turn for the search budget), then one
 Doubt PR for James's sample read. New essays land after their verify-wf pass,
 copied from the code branch's docs/work/essays into the essays worktree first.
+
+
+Local landing (2026-10-28): the ten new essays land with land-wf in local mode on the branch land-next (worktree /home/user/livewell-land, based on land-next-base = claude/essays at 55046cfa), five per run, nothing pushed, until James says whether they join PR #541 or wait for their own read. For the second batch, point land-next-base at land-next first.
