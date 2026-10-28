@@ -41,7 +41,7 @@ Essay: `docs/work/essays/what-romans-13-says.md` ("What Does Romans 13 Say About
 - Within days more than 600 United Methodist clergy and laypeople filed a church-law complaint against Sessions, a United Methodist. Verified by search summary (NBC News, NCR, UM News: complaint sent June 18, 2018).
 - Franklin Graham called the separations "disgraceful" in an interview two days before the speech. Verified by search summary (CBN News interview; Christian Post dates it June 12, 2018; Hot Air of June 15 says "on Tuesday"; Mediaite).
 - Graham as "one of the president's most loyal evangelical supporters". Characterization; supported by search summary (Mediaite headline "Pro-Trump Evangelist Franklin Graham"; commentators noted his closeness to Trump).
-- "In the week of an election" and "Whoever takes office in January": the next US general election is Tuesday, November 3, 2026 (textbook). These lines hold only if the essay is published that week. Flag for landing; not changed.
+- "In an election season" (voice pass, 2026-10-28; was "In the week of an election"), "So what does the passage ask of us now?" (was "this week") and "Whoever takes office in January": the next US general election is Tuesday, November 3, 2026 (textbook). The voice pass removed the two "this week" anchors so the opening and the application read true whenever the essay lands between the campaign and the January swearing-in; "Whoever takes office in January" holds after any November general election.
 
 ## Who Paul Was Writing To
 
@@ -82,7 +82,7 @@ Essay: `docs/work/essays/what-romans-13-says.md` ("What Does Romans 13 Say About
 - Quotation: "Be subject for the Lord's sake to every human institution, whether it be to the emperor as supreme" (1 Peter 2:13). ESV copy: OK. Search summary said the wording matches esv.org. "The churches of Asia Minor": ESV copy, 1 Peter 1:1 read in this pass (Pontus, Galatia, Cappadocia, Asia, Bithynia).
 - Polycarp of Smyrna, before the proconsul around 155, refused to swear by the fortune of Caesar. Verified against the patristic library, *Martyrdom of Polycarp* 9-10 (ANF): "Swear by the fortune of Caesar". Date: search summary (most experts place the death on 23 February 155 or 22 February 156; Eusebius's Chronicle and some scholars put it later). "Around 155" stands.
 - Quotation: "we are taught to give all due honour (which entails no injury upon ourselves) to the powers and authorities which are ordained of God." Verified verbatim against the patristic library, *Martyrdom of Polycarp* 10 (ANF), British spelling as printed.
-- "He died rather than swear ... honoring the office of the governor who let him be burned." Verified against the patristic library (ANF chs. 11-13: the proconsul's herald proclaims his confession, the crowd demands he be burned alive, and it is done; the ANF heading reads "Polycarp is Sentenced to Be Burned"). Interpretive summary.
+- "He would not swear, and he died for it, still honoring the office of the governor who let him be burned." (voice pass wording; same claim as "He died rather than swear. But he died honoring ...") Verified against the patristic library (ANF chs. 11-13: the proconsul's herald proclaims his confession, the crowd demands he be burned alive, and it is done; the ANF heading reads "Polycarp is Sentenced to Be Burned"). Interpretive summary.
 - Calvin spent much of the last chapter of the *Institutes* teaching that private Christians owe obedience even to wicked rulers; a bad king may be God's judgment on a people's sins; the private person's part is to repent and pray, not take up arms. Verified by search summary, secondary sources only (Cambridge abstract: largely unquestioning obedience even to tyrannical superiors; a study outline: patience 4.20.25, prayer 4.20.29; Boer paper: tyranny may be divine punishment for sin, citing 4.20.7 and 25, and private citizens may not resist; a forum post reproducing the text: vengeance is not committed to private men). The *Institutes* text itself was not opened.
 - The practical-wisdom paragraph. Interpretive; no factual claim.
 
@@ -187,6 +187,7 @@ Essay: `docs/work/essays/what-romans-13-says.md` ("What Does Romans 13 Say About
 - Forbidden language: `scripts/lib/forbidden-language.mjs` regex (after `setAsideAllowed`) over the text: no hits.
 - Shelf stamps ("Those of us who preach", "pastors like me", "This is not both-sidesism", "Consider ...", "none of this", "the record", "I don't exempt myself"): none (one "considered", the Tacitus line, is not the stamp). "Fair" once ("could fairly conclude"); "honest" not used.
 - ESV copy script rerun after the edits: 35 of 35 OK.
+- Voice pass (2026-10-28, final reader): 21 wording edits for AI tells (announced turn, two-beat closers, a four-part "It asks" run, the repeated "no vote" motif, paired parallel sentences, four over-long sentences split). Script check against the pre-pass text: all 58 quoted strings, all three links and every number identical; no em-dash, en-dash or double hyphen; forbidden language none; one exclamation point, inside Daniel 6:21.
 
 ## Still open
 
@@ -194,4 +195,4 @@ Essay: `docs/work/essays/what-romans-13-says.md` ("What Does Romans 13 Say About
 - Date of the Ansbacher Ratschlag (believed 11 June 1934); if confirmed, restore the original timing words (see above).
 - Barmen delegate count (138 or 139).
 - Calvin, *Institutes* 4.20.25 and 4.20.32: checked only through secondary summaries.
-- Publication timing: the opening and ending assume the week of the November 3, 2026 election.
+- Publication timing: after the voice pass the opening and application assume only an election season (November 3, 2026) and a January swearing-in; no line names a week.

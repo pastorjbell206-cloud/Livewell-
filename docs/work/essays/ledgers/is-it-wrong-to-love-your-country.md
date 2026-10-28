@@ -173,7 +173,7 @@ Searches used in this pass: 46 WebSearch calls and 1 site fetch.
 
 - "God made every nation and gave each of us a place to be born." Echo of Acts 17:26, not a quotation.
 - Jesus "kept their feasts and prayed their psalms." ESV-local 2026-10-28 for two instances (John 2:13, Jesus went up to Jerusalem for the Passover; Matthew 27:46, "My God, my God, why have you forsaken me?", the opening of Psalm 22:1). Verified as general Gospel content.
-- "He was never ashamed of His nation, and He never let it take His Father's place." Interpretation.
+- "He was never ashamed of His nation, and He never worshiped it." Interpretation.
 - Revelation 21:23, the city needs no sun, "for the glory of God gives it light, and its lamp is the Lamb." ESV-local 2026-10-28; matched search results from esv.org and biblestudytools (ESV) on 2026-10-28 ("has no need of sun or moon" is paraphrased outside the quotation). Verified.
 - Closing Texts: Nehemiah 1:4, Ruth 1:16 (final sentence), Revelation 21:26. Each verified above (ESV-local and search). Each line reads *"Quote."* (Reference).
 
@@ -181,7 +181,7 @@ Searches used in this pass: 46 WebSearch calls and 1 site fetch.
 
 - Still open: ESV wording is to be rechecked once with James's ESV API key (every essay). For this essay the lines that rest most on the local ESV text are Psalm 137:1, 137:3 and the opening of 137:9, where search summaries did not reproduce the words.
 - Quotations checked against search results rather than a primary text: Lewis ("begins to be a demon ..."), Weil ("To be rooted ..."; the essay uses the American spelling "recognized"), Douglass ("The signers ...", "GLORIOUS LIBERTY DOCUMENT", "I do not despair of this country", all from the 1852 oration and absent from the 1855 extract), Bonhoeffer ("I must live through ...", not checked against DBW 15). Each matched several independent results.
-- Textbook items not searched in this pass: the fifth-commandment numbering, Aquinas's century, Barth's Safenwil pastorate, Harnack as church historian, Hauerwas's pacifism, Bonhoeffer's June arrival and his standing as a Lutheran pastor, the Roman colony description, Orthodoxy's year, V-E Day, the change of administration in January 2025.
+- Textbook items not searched in this pass: the fifth-commandment numbering, Aquinas's century, Barth's Safenwil pastorate, Harnack as church historian, Hauerwas's pacifism, Bonhoeffer's June arrival and his standing as a Lutheran pastor, the Roman colony description, V-E Day, the change of administration in January 2025.
 - Title: NOTES.md lists this slug under "New" without a title; link-targets.json has "Is It Wrong for a Christian to Love Their Country?". The essay's "Is It Wrong to Love Your Country?" was kept.
 - Not reused from the Christian nationalism pilot (writer's note, confirmed by reading the pilot's opening sections): Jeremiah 29:7, Romans 9:2–3, Luke 19:41–42, Augustine's ordered love, Orwell. Philippians 3:20 is a Closing Text in was-america-founded-as-a-christian-nation and appears here only in the body.
 - Cut by the writer and not claimed: Tolstoy's "Christianity and Patriotism," Richard Mouw, Isaiah 60:3, Weil's "beautiful, precious, fragile and perishable," Bonhoeffer's ship and arrival date, Douglass's 1847 "I have no love for America."
