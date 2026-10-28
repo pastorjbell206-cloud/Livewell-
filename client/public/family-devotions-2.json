@@ -3,31 +3,51 @@
     "id": "faith",
     "title": "Walking Before You See",
     "theme": "Faith",
+    "group": "following",
     "passage": "Hebrews 11:1",
     "passageText": "Now faith is the assurance of what we hope for and the certainty of what we do not see.",
     "bigIdea": "Faith is trusting Someone enough to take the next step before you can see the whole staircase.",
     "reflection": "We trust things we cannot see all the time. You sit in a chair without checking the screws. You eat dinner without watching it get cooked. You trust because of who made it and what they have done before. Faith in God works the same way. It is not a leap into the dark. It is a step toward Someone who has already proven He keeps His word.\n\nThe people in Hebrews 11 did not have all the answers. They had a God who had been faithful, and they decided to act on that. Faith is less about feeling certain and more about who you lean your weight on when the ground feels shaky.",
-    "questions": [
-      "What is something you trust without being able to see it work?",
-      "When is it hardest for you to believe God is really there and really cares?",
-      "What is one thing God might be asking you to trust Him with right now, even though you cannot see how it ends?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something you trust without being able to see it work?",
+        "When is it hardest for you to believe God is really there and really cares?",
+        "What is one thing God might be asking you to trust Him with right now, even though you cannot see how it ends?"
+      ],
+      "older": [
+        "Some people say faith means believing something with no reason at all. Is that what Hebrews means? Why or why not?",
+        "Is doubt the opposite of faith, or can the two live in the same person? What makes you think so?",
+        "Hebrews 11 says many of these people “died in faith, without having received the things they were promised.” What would keep someone going like that?"
+      ]
+    },
     "activity": "Blindfold one person and have someone they trust guide them safely across the room using only their voice, then talk about what made it possible to keep walking.",
-    "prayer": "God, I cannot see everything, but I can see that you are good. Help me trust you with the next step even when the rest is dark. Amen."
+    "prayer": "God, I cannot see everything, but I can see that you are good. Help me trust you with the next step even when the rest is dark. Amen.",
+    "grownups": {
+      "line": "If you are leading your family while carrying doubts of your own, start here.",
+      "href": "/help/doubt"
+    }
   },
   {
     "id": "hope",
     "title": "An Anchor In The Storm",
     "theme": "Hope",
+    "group": "feelings",
     "passage": "Hebrews 6:19",
     "passageText": "We have this hope as an anchor for the soul, firm and secure.",
     "bigIdea": "Hope is being held by something steady while the waves are still moving.",
     "reflection": "An anchor does not stop the storm. The wind still blows and the boat still rocks. But an anchor keeps the boat from being dragged out to sea while it waits for morning. That is what real hope does. It does not make the hard thing disappear. It holds you in place until you make it through.\n\nA lot of what people call hope is really just a good mood about the future. The Bible means something tougher. Christian hope is anchored to a Person who already walked through death and came out the other side. That is why it can hold when everything else is moving.",
-    "questions": [
-      "What is the difference between hoping for good weather and hoping in God?",
-      "When have you felt like a boat in a storm, getting pulled in a direction you did not want to go?",
-      "What is one hard thing right now that you need God to hold you steady through?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between hoping for good weather and hoping in God?",
+        "When have you felt like a boat in a storm, getting pulled in a direction you did not want to go?",
+        "What is one hard thing right now that you need God to hold you steady through?"
+      ],
+      "older": [
+        "Where does your generation look for hope, and how is that working?",
+        "What is the actual difference between optimism and hope grounded in the resurrection?",
+        "What is one area of your life where you have quietly stopped hoping? What would it mean to bring it back to God?"
+      ]
+    },
     "activity": "Fill a cup with water and try to carry it across the room without spilling, then talk about how being held steady matters more than the water staying calm.",
     "prayer": "God, you are my anchor. When things feel like they are moving too fast, hold me steady and remind me you are not letting go. Amen."
   },
@@ -35,15 +55,23 @@
     "id": "love",
     "title": "Love That Costs Something",
     "theme": "Love",
+    "group": "character",
     "passage": "1 John 3:18",
     "passageText": "Little children, let us love not in word and speech, but in action and truth.",
     "bigIdea": "Love is something you do, not just something you feel or say.",
     "reflection": "It is easy to say I love you and mean very little by it. Words are cheap. The verse here is not against saying it. It is against stopping there. Real love shows up in actions, in the things that cost you a little. Sharing the last cookie. Helping clean up a mess you did not make. Sitting with someone who is sad when you would rather go play.\n\nGod did not just tell us He loved us from a safe distance. He showed it. He came close and He gave everything. When we love with our actions and not only our words, we start to look like the One who loved us first.",
-    "questions": [
-      "What is something someone did for you that made you feel truly loved?",
-      "Is it easier for you to say I love you or to show it, and why?",
-      "Who in your life is hard to love right now, and what is one action that would show love to them this week?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something someone did for you that made you feel truly loved?",
+        "Is it easier for you to say I love you or to show it, and why?",
+        "Who in your life is hard to love right now, and what is one action that would show love to them this week?"
+      ],
+      "older": [
+        "Where is it easy for you to say the right thing and hard to do it?",
+        "John asks for love “in action and truth.” What is the difference between doing something kind and loving someone truly?",
+        "Posting about a cause is a kind of speech. When does it become love in action, and when does it stay words?"
+      ]
+    },
     "activity": "Each person secretly does one helpful thing for another family member today without being asked, and you guess at dinner who did what.",
     "prayer": "God, you loved me with more than words. Help me love the people around me with my hands and my time, not just my mouth. Amen."
   },
@@ -51,15 +79,23 @@
     "id": "patience",
     "title": "The Slow Growing Things",
     "theme": "Patience",
+    "group": "character",
     "passage": "James 5:7",
     "passageText": "Be patient, then, brothers, until the Lord’s coming. See how the farmer awaits the precious fruit of the soil—how patient he is for the fall and spring rains.",
     "bigIdea": "The best things in life grow slowly, and being patient is trusting that the wait is doing something.",
     "reflection": "A farmer cannot yell at a seed to make it hurry. He plants, he waters, and then he waits, because that is just how growing works. Some things cannot be rushed. Friendships, skills, becoming the kind of person you want to be. The waiting is not wasted time. The waiting is part of the growing.\n\nWe live in a world built for fast. Fast food, fast videos, fast everything. So patience feels almost impossible. But God is not in a hurry, and He is doing things in you that take time. Being patient is believing that what is happening under the soil is real, even before you see the green.",
-    "questions": [
-      "What is something you wish would happen faster?",
-      "What feels harder to wait for, a thing you want or a person to change?",
-      "How might God be using a wait you are in right now to grow something good in you?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something you wish would happen faster?",
+        "What feels harder to wait for, a thing you want or a person to change?",
+        "How might God be using a wait you are in right now to grow something good in you?"
+      ],
+      "older": [
+        "What are you most impatient for right now, and what would grabbing it early cost?",
+        "What is the difference between waiting passively and waiting like the farmer?",
+        "Do you actually believe the story ends well? How would your hurry change if you did?"
+      ]
+    },
     "activity": "Plant a few seeds in a cup of dirt together and put it on the windowsill, then check it daily and resist the urge to dig it up to look.",
     "prayer": "God, I do not like waiting. Help me trust that you are growing good things in me even when I cannot see them yet. Amen."
   },
@@ -67,15 +103,23 @@
     "id": "self-control",
     "title": "The City With No Walls",
     "theme": "Self Control",
+    "group": "character",
     "passage": "Proverbs 25:28",
     "passageText": "Like a city whose walls are broken down is a man who does not control his temper.",
     "bigIdea": "Self control is being strong enough to choose what you do instead of just reacting, and there is nothing boring about that kind of strength.",
     "reflection": "An old city had walls so that the people inside got to decide who came in and what went out. A city with broken walls had no say. Anyone could walk in and take whatever they wanted. The proverb says a person without self control is like that. Every feeling that shows up gets to run the place.\n\nSelf control is not squashing your feelings. It is the space between feeling something and doing something. You feel angry, and instead of throwing the controller, you pause. That pause is the wall. It is what keeps you in charge of you, instead of letting your worst moment make the call.",
-    "questions": [
-      "What is something you do too fast, before you stop to think?",
-      "What feeling is hardest for you to control when it shows up?",
-      "What is one small thing you could practice pausing on this week before you react?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something you do too fast, before you stop to think?",
+        "What feeling is hardest for you to control when it shows up?",
+        "What is one small thing you could practice pausing on this week before you react?"
+      ],
+      "older": [
+        "Which feeling most often walks through your broken wall: anger, worry, wanting, or boredom? What usually happens next?",
+        "Paul lists self-control as fruit of the Spirit, not a feat of willpower. What difference does that make when you are trying to change a habit?",
+        "What habits or settings could work like walls for you, so you are not deciding everything in the heat of the moment?"
+      ]
+    },
     "activity": "Put a treat in front of each person and see who can wait the longest before eating it, then talk about what the waiting felt like.",
     "prayer": "God, help me find the pause between what I feel and what I do. Make me strong enough to choose well instead of just reacting. Amen."
   },
@@ -83,15 +127,23 @@
     "id": "honesty",
     "title": "Nothing To Hide",
     "theme": "Honesty",
+    "group": "character",
     "passage": "Proverbs 12:22",
     "passageText": "Lying lips are detestable to the LORD, but those who deal faithfully are His delight.",
     "bigIdea": "Telling the truth keeps you free, because you never have to remember which story you told.",
     "reflection": "A lie always needs more lies to protect it. You tell one, then you have to tell another to cover it, and pretty soon you are exhausted from keeping track. Honesty is lighter than that. When you tell the truth, there is nothing to manage and nothing to hide. You can sleep.\n\nThe hard part is that honesty sometimes costs you in the moment. You have to admit you broke it. You have to say you were wrong. But a person people can trust is worth more than a person who never gets caught. God delights in the truth teller, even the one who has to tell a hard truth about himself.",
-    "questions": [
-      "Why do you think lying feels easier in the moment even though it makes things harder later?",
-      "Has someone ever told you a hard truth that you needed to hear?",
-      "Is there something you have not been fully honest about that you need to make right?"
-    ],
+    "questions": {
+      "younger": [
+        "Why do you think lying feels easier in the moment even though it makes things harder later?",
+        "Has someone ever told you a hard truth that you needed to hear?",
+        "Is there something you have not been fully honest about that you need to make right?"
+      ],
+      "older": [
+        "Where do you edit yourself the most, and who actually knows the unedited version?",
+        "Is there a difference between lying and letting people believe something false about you?",
+        "When has someone told you a hard truth in a way you could receive? What made it work?"
+      ]
+    },
     "activity": "Play two truths and a lie, then talk about how it felt trying to make the lie sound believable.",
     "prayer": "God, help me tell the truth even when it costs me. I would rather be someone people can trust than someone who never gets caught. Amen."
   },
@@ -99,15 +151,23 @@
     "id": "generosity",
     "title": "Open Hands",
     "theme": "Generosity",
+    "group": "everyday",
     "passage": "2 Corinthians 9:7",
     "passageText": "Each one should give what he has decided in his heart to give, not out of regret or compulsion. For God loves a cheerful giver.",
     "bigIdea": "Generosity has less to do with how much you have than with how tightly you hold it.",
     "reflection": "You can give with a closed fist or an open hand. The closed fist gives because it has to and resents every bit of it. The open hand gives because it has discovered something. The more tightly we clutch what is ours, the smaller our world gets, and the more we share, the bigger it feels.\n\nGod is the most generous giver there is. He gave us a whole world, and then He gave us His Son. When we give cheerfully, we are not losing. We are practicing being like our Father, who never runs out and never gives grudgingly.",
-    "questions": [
-      "What is something of yours that is hard to share, and why?",
-      "How does it feel different to give because you want to versus because you have to?",
-      "Who is someone you could give something to this week, expecting nothing back?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something of yours that is hard to share, and why?",
+        "How does it feel different to give because you want to versus because you have to?",
+        "Who is someone you could give something to this week, expecting nothing back?"
+      ],
+      "older": [
+        "What do you actually spend your money on, and what does that say about what you treasure?",
+        "Why does cheerfulness matter to God? Why is a resentful gift worth less?",
+        "What would generosity look like for someone your age with little money? What else do you have to give?"
+      ]
+    },
     "activity": "Each person picks one thing they own that is still good and gives it away to someone who could use it more.",
     "prayer": "God, you gave me everything I have. Help me hold it with open hands and give the way you give, gladly and without keeping score. Amen."
   },
@@ -115,15 +175,23 @@
     "id": "humility",
     "title": "The Lowest Seat",
     "theme": "Humility",
+    "group": "character",
     "passage": "Philippians 2:3",
     "passageText": "Do nothing out of selfish ambition or empty pride, but in humility consider others more important than yourselves.",
     "bigIdea": "A humble person does not need to be noticed, which leaves them free to notice everyone else.",
     "reflection": "People get humility wrong. They think it means putting yourself down, saying you are no good at anything. That is not it. A humble person can know they are good at something and still not need everyone to notice. Humility is forgetting yourself long enough to actually see the people around you.\n\nJesus had every right to the highest seat and took the lowest one, washing feet and eating with people nobody wanted at the table, and it came from a heart that was simply not occupied with itself. That is the humility we are after in this house, and the parents need it at least as much as the children do.",
-    "questions": [
-      "What is the difference between being humble and just putting yourself down?",
-      "When do you find yourself wanting other people to notice how good you are at something?",
-      "How did Jesus, who had every right to be first, choose to live among people?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between being humble and just putting yourself down?",
+        "When do you find yourself wanting other people to notice how good you are at something?",
+        "How did Jesus, who had every right to be first, choose to live among people?"
+      ],
+      "older": [
+        "How much of what you do is shaped by wanting to be noticed, and how would you even know?",
+        "A few verses later Paul says Jesus “humbled Himself and became obedient to death.” What does Jesus' example add to the command?",
+        "Is there someone you quietly compete with? What would it look like to want them to do well?"
+      ]
+    },
     "activity": "Take turns bragging about each other instead of yourself, telling one true good thing about the person next to you.",
     "prayer": "God, help me stop needing to be noticed. Teach me to forget myself long enough to actually see the people you have put around me. Amen."
   },
@@ -131,15 +199,23 @@
     "id": "courage",
     "title": "Brave Is Not Fearless",
     "theme": "Courage",
+    "group": "character",
     "passage": "Joshua 1:9",
     "passageText": "Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.",
     "bigIdea": "You can be afraid and still do the right thing, because God goes with you. That is what courage is.",
     "reflection": "Joshua was about to lead a whole nation into something terrifying. God did not tell him there was nothing to fear. God told him something better. He said I will be with you. That is the reason for the courage. Not that the danger was gone, but that Joshua was not facing it alone.\n\nReal courage is usually quiet. It is telling the truth when a lie would be easier. It is standing next to the kid everyone is picking on. It is admitting you were wrong. You can be scared and brave at the same time. In fact, that is the only kind of brave there is.",
-    "questions": [
-      "What is something that takes courage that has nothing to do with fighting or danger?",
-      "When was a time you did the right thing even though you were scared?",
-      "What is one brave thing God might be asking of you this week?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something that takes courage that has nothing to do with fighting or danger?",
+        "When was a time you did the right thing even though you were scared?",
+        "What is one brave thing God might be asking of you this week?"
+      ],
+      "older": [
+        "Where in your life right now does doing the right thing cost something socially?",
+        "What is the difference between confidence in yourself and courage that rests on God being with you?",
+        "Has fear ever made a decision for you that you regret? What happened?"
+      ]
+    },
     "activity": "Each person names one fear, then the family stands together and says to that person, you will not face it alone.",
     "prayer": "God, I do not have to wait until I am not scared to be brave. Thank you that you go with me wherever I go. Amen."
   },
@@ -147,15 +223,23 @@
     "id": "contentment",
     "title": "Enough Right Here",
     "theme": "Contentment",
+    "group": "everyday",
     "passage": "Philippians 4:11-12",
     "passageText": "I am not saying this out of need, for I have learned to be content regardless of my circumstances. I know how to live humbly, and I know how to abound. I am accustomed to any and every situation—to being filled and being hungry, to having plenty and having need.",
     "bigIdea": "Contentment is a thing you learn, not a thing you are born with.",
     "reflection": "Paul says he learned to be content. That means he was not always good at it. Nobody is. We are born wanting the next thing, and the next, and the world is happy to keep selling it to us. Contentment is the slow discovery that you can be okay with what you have right now, even if it is not everything.\n\nNotice Paul learned it in plenty and in need. Being content is not about having a lot. Plenty of people who have everything are still restless. What Paul found was not in his stuff at all. It was in knowing he already had the One thing that does not run out.",
-    "questions": [
-      "What is something you really wanted that did not make you as happy as you thought it would?",
-      "Why do you think having more rarely makes people feel like they have enough?",
-      "What would change if you believed you already had enough today?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something you really wanted that did not make you as happy as you thought it would?",
+        "Why do you think having more rarely makes people feel like they have enough?",
+        "What would change if you believed you already had enough today?"
+      ],
+      "older": [
+        "Paul learned contentment both in need and in plenty. Which of those would be harder for you, and why?",
+        "A lot of what you see online is built to make you feel one thing short. Where do you feel that pull most?",
+        "Paul wrote this letter in chains, as he says earlier in it. What do you think he had found that made contentment possible there?"
+      ]
+    },
     "activity": "Go around and have each person finish the sentence, I already have enough of, and try not to repeat what someone else said.",
     "prayer": "God, teach me to be content with what I have today. Help me find my enough in you and not in the next thing I want. Amen."
   },
@@ -163,15 +247,23 @@
     "id": "friendship",
     "title": "The Friend Who Stays",
     "theme": "Friendship",
+    "group": "others",
     "passage": "Proverbs 17:17",
     "passageText": "A friend loves at all times, and a brother is born for adversity.",
     "bigIdea": "A real friend is the one who is still there when things get hard, not just when things are fun.",
     "reflection": "It is easy to be friends when everything is going well. The test of a friend is what happens when things fall apart. When you mess up. When you are not fun to be around. When you have nothing to offer them. A friend who loves at all times is rare, and being that kind of friend is even rarer.\n\nMost of us want good friends without working at being one. But friendship is a two way thing. The way to have the friend who stays is to be the friend who stays. Be there for the hard moments, not just the parties, and you will become the kind of person people are glad to call a friend.",
-    "questions": [
-      "What makes someone a good friend in your opinion?",
-      "Have you ever had a friend disappear when things got hard, and how did that feel?",
-      "Are you the kind of friend who stays when things get hard, or do you need to grow there?"
-    ],
+    "questions": {
+      "younger": [
+        "What makes someone a good friend in your opinion?",
+        "Have you ever had a friend disappear when things got hard, and how did that feel?",
+        "Are you the kind of friend who stays when things get hard, or do you need to grow there?"
+      ],
+      "older": [
+        "How do friendships online and friendships in person test “loves at all times” differently?",
+        "The proverb says “a brother is born for adversity.” Who would you call if things fell apart tonight, and who would call you?",
+        "What does a friend owe you when you are wrong: agreement, or the truth?"
+      ]
+    },
     "activity": "Each person writes a short note to a friend who has stuck by them and actually sends or gives it this week.",
     "prayer": "God, thank you for the friends who stay. Help me be that kind of friend, the one who stays when it is hard, not just when it is fun. Amen."
   },
@@ -179,15 +271,23 @@
     "id": "work",
     "title": "Working For The Right Boss",
     "theme": "Work",
+    "group": "everyday",
     "passage": "Colossians 3:23-24",
     "passageText": "Whatever you do, work at it with your whole being, for the Lord and not for men, because you know that you will receive an inheritance from the Lord as your reward. It is the Lord Christ you are serving.",
     "bigIdea": "How you do your work says something about you, even when nobody is watching.",
     "reflection": "There is a difference between doing a job and doing it well. Anyone can shove the toys under the bed and call the room clean. But the verse says to work at it with all your heart, as if God Himself were the one you were working for. That changes things. Suddenly the half effort does not feel okay anymore.\n\nThis is not about being perfect or never resting. It is about caring. A person who does small things well becomes someone who can be trusted with big things. And the secret is that the boss you are really working for already sees the effort nobody else noticed.",
-    "questions": [
-      "What is a job you tend to rush through or do halfway?",
-      "Why do you think it matters how we work even when no one is checking?",
-      "What would it look like to do one of your chores this week as if God were your boss?"
-    ],
+    "questions": {
+      "younger": [
+        "What is a job you tend to rush through or do halfway?",
+        "Why do you think it matters how we work even when no one is checking?",
+        "What would it look like to do one of your chores this week as if God were your boss?"
+      ],
+      "older": [
+        "Where are you tempted to do just enough to get by: school, a job, a team, home? What drives that?",
+        "Paul says to work “for the Lord and not for men.” What would that look like on a group project where others slack off?",
+        "Paul says the reward is an inheritance from the Lord. How does that change what counts as success in your work?"
+      ]
+    },
     "activity": "Pick one chore and do it together to the very best of your ability, then step back and admire the difference real effort makes.",
     "prayer": "God, help me do my work well, even the small stuff, even when no one is watching. I want to work like I am working for you. Amen."
   },
@@ -195,31 +295,51 @@
     "id": "rest-and-sabbath",
     "title": "Permission To Stop",
     "theme": "Rest And Sabbath",
+    "group": "everyday",
     "passage": "Mark 2:27",
     "passageText": "Then Jesus declared, “The Sabbath was made for man, not man for the Sabbath.”",
     "bigIdea": "God built rest into the week on purpose, because He made us to need it.",
     "reflection": "Even God rested. After making the whole world, He stopped on the seventh day, not because He was tired, but to show us something. Rest is not laziness. Rest is trusting that the world keeps spinning even when you stop pushing it. We are not machines, and we were never meant to run without stopping.\n\nJesus said the Sabbath was made for us, like a gift. It is permission to put down the work and just be. To play. To be with the people we love. To remember that our worth is not in how much we get done. A family that never stops is a family that forgets how to be glad together.",
-    "questions": [
-      "What does your family do to actually rest, not just to be busy with fun stuff?",
-      "Why do you think it is hard for people to stop and rest?",
-      "What is one thing you could set down this week to make room for real rest?"
-    ],
+    "questions": {
+      "younger": [
+        "What does your family do to actually rest, not just to be busy with fun stuff?",
+        "Why do you think it is hard for people to stop and rest?",
+        "What is one thing you could set down this week to make room for real rest?"
+      ],
+      "older": [
+        "Do you ever feel guilty for resting, or restless when there is nothing to do? Where do you think that comes from?",
+        "What would one day a week look like if it were set apart to rest and enjoy God, and what would you have to say no to?",
+        "If your worth does not come from how much you get done, where does it come from? Do you believe that in a busy week?"
+      ]
+    },
     "activity": "Pick an evening this week to do nothing productive together, no screens, no chores, just rest and be a family.",
-    "prayer": "God, thank you that you built rest into the week. Help me stop pushing and trust that you are holding the world while I rest. Amen."
+    "prayer": "God, thank you that you built rest into the week. Help me stop pushing and trust that you are holding the world while I rest. Amen.",
+    "grownups": {
+      "line": "If you are the one in your house who never stops, start here.",
+      "href": "/help/work-burnout"
+    }
   },
   {
     "id": "caring-for-creation",
     "title": "Taking Care Of The Garden",
     "theme": "Caring For Creation",
+    "group": "everyday",
     "passage": "Genesis 2:15",
     "passageText": "Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it.",
     "bigIdea": "God gave us His world to look after, not to use up and throw away.",
     "reflection": "The very first job God gave a person was to take care of a garden. Before anything went wrong, before any rules about right and wrong, there was this. Look after what I made. The world is not ours to trash. It is a gift we were trusted with, and how we treat it says something about how we feel about the One who made it.\n\nTaking care of creation is not a strange new idea. It is one of the oldest jobs there is. Picking up litter, not wasting, being kind to animals, noticing the beauty of a sky we did not paint. These are small ways of saying thank you to God for the home He gave us.",
-    "questions": [
-      "What is your favorite part of the natural world that God made?",
-      "What is one way people treat the earth carelessly?",
-      "What is one small thing your family could do to take better care of God's world?"
-    ],
+    "questions": {
+      "younger": [
+        "What is your favorite part of the natural world that God made?",
+        "What is one way people treat the earth carelessly?",
+        "What is one small thing your family could do to take better care of God's world?"
+      ],
+      "older": [
+        "God put the man in the garden “to cultivate and keep it.” What is the difference between using something and caring for it?",
+        "Some people shrug at caring for the earth, and some treat the earth as if it were God. What does Genesis 2 say that corrects both?",
+        "What is one habit of yours that treats the world as disposable, and what would change it?"
+      ]
+    },
     "activity": "Go outside together and pick up any litter you find, or plant something, treating one small patch of the world with care.",
     "prayer": "God, thank you for the beautiful world you made. Help me take care of it the way someone takes care of a gift they love. Amen."
   },
@@ -227,31 +347,51 @@
     "id": "the-church",
     "title": "Not A Building",
     "theme": "The Church",
+    "group": "following",
     "passage": "1 Corinthians 12:27",
     "passageText": "Now you are the body of Christ, and each of you is a member of it.",
     "bigIdea": "The church is people who belong to each other, long before it is a building you go to.",
     "reflection": "When people say church, they usually point at a building. But the Bible never does. It calls the church a body, made of many people who each do something different. A hand cannot do what an eye does. An ear cannot do what a foot does. And the body needs all of them. No part gets to say it does not matter.\n\nThat means you are not just a visitor at church. You are a part of it. There is something only you bring. And it also means you need the others, because no one is a whole body by themselves. We were never meant to follow God all alone. We were meant to belong to each other.",
-    "questions": [
-      "If the church is a body, what part do you think you might be and why?",
-      "Why do you think God made it so we need each other instead of following Him alone?",
-      "Who is someone at church who is different from you but still important to the body?"
-    ],
+    "questions": {
+      "younger": [
+        "If the church is a body, what part do you think you might be and why?",
+        "Why do you think God made it so we need each other instead of following Him alone?",
+        "Who is someone at church who is different from you but still important to the body?"
+      ],
+      "older": [
+        "Many people your age say they can follow Jesus without the church. According to this passage, what would they miss?",
+        "Is there anyone at church you would rather not need? What does Paul's picture of the body say about that?",
+        "What could you bring to the church now, not someday when you are older?"
+      ]
+    },
     "activity": "Try to do a simple task using only one hand or with your eyes closed, then talk about how every part of a body is needed.",
-    "prayer": "God, thank you that I belong to your people. Help me bring my part and need the others, because we are one body together. Amen."
+    "prayer": "God, thank you that I belong to your people. Help me bring my part and need the others, because we are one body together. Amen.",
+    "grownups": {
+      "line": "If a church has hurt you and it is hard to bring your children back, start here.",
+      "href": "/help/church-hurt"
+    }
   },
   {
     "id": "the-lords-supper",
     "title": "The Meal That Remembers",
     "theme": "The Lord's Supper",
+    "group": "following",
     "passage": "Luke 22:19",
     "passageText": "And He took the bread, gave thanks and broke it, and gave it to them, saying, “This is My body, given for you; do this in remembrance of Me.”",
     "bigIdea": "The bread and the cup are a way of remembering what Jesus gave for us.",
     "reflection": "On the night before He died, Jesus did not give His friends a speech to memorize. He gave them a meal. Take this bread, He said, and remember me. He knew how easily we forget the things that matter most. So He gave us something we can taste and hold, a way to keep the most important thing close.\n\nThe broken bread stands for His body. The cup stands for His blood. When the church shares this meal, we are saying out loud, with our hands and our mouths, that Jesus gave everything for us. It is not just a snack. It is a family remembering the thing that made us a family.",
-    "questions": [
-      "Why do you think Jesus chose a meal to help us remember Him?",
-      "What is something your family does to remember an important person or event?",
-      "What does it mean to you that Jesus said his body was given for you?"
-    ],
+    "questions": {
+      "younger": [
+        "Why do you think Jesus chose a meal to help us remember Him?",
+        "What is something your family does to remember an important person or event?",
+        "What does it mean to you that Jesus said his body was given for you?"
+      ],
+      "older": [
+        "Jesus said, “do this in remembrance of Me.” Why do you think remembering takes a practice and not just a thought?",
+        "Christians have understood the Lord's Supper in different ways over the centuries. What does your church believe happens at the table, and what would you like to ask about it?",
+        "Jesus gave this meal to friends who would run away from Him that same night. What does that say about His love for people who fail Him?"
+      ]
+    },
     "activity": "Share a small piece of bread together and talk about what it means that Jesus gave Himself for each person in the room.",
     "prayer": "Jesus, thank you for giving everything for me. Help me never forget what the bread and the cup mean. You gave your body for me. Amen."
   },
@@ -259,31 +399,51 @@
     "id": "heaven",
     "title": "Every Sad Thing Undone",
     "theme": "Heaven",
+    "group": "story",
     "passage": "Revelation 21:4",
     "passageText": "‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away.",
     "bigIdea": "Heaven is not floating on clouds. It is the day God makes everything that is broken right again.",
     "reflection": "A lot of people picture heaven as boring, just sitting on a cloud forever. But that is not the picture the Bible gives. It gives us a world where every sad thing is undone. No more crying. No more goodbyes. No more of the things that break our hearts here. God Himself bends down and wipes the tears off your face.\n\nThat is not an escape from the real world. It is the real world finally made the way it was always meant to be. Everything we love here that gets ruined or lost, heaven is where it all gets put back together and stays that way. It is the happiest ending there is, and it is true.",
-    "questions": [
-      "What do you think heaven will be like?",
-      "What is something sad here that you would love to see made right in heaven?",
-      "How might remembering heaven change how you handle hard things now?"
-    ],
+    "questions": {
+      "younger": [
+        "What do you think heaven will be like?",
+        "What is something sad here that you would love to see made right in heaven?",
+        "How might remembering heaven change how you handle hard things now?"
+      ],
+      "older": [
+        "If God will wipe away every tear, does that make the grief we feel now matter less, or more? Why?",
+        "Revelation 21 begins with “a new heaven and a new earth,” not an escape from the world. How does that change the way you think about this world now?",
+        "What would you say to a friend who believes that when we die we are simply gone? How might this hope sound to someone who does not share it?"
+      ]
+    },
     "activity": "Each person names one sad or broken thing in the world and then imagines out loud what it will look like when God makes it right.",
-    "prayer": "God, thank you that one day you will wipe away every tear. Help me hold on to that hope when things here are hard. Amen."
+    "prayer": "God, thank you that one day you will wipe away every tear. Help me hold on to that hope when things here are hard. Amen.",
+    "grownups": {
+      "line": "If you are grieving someone you love, start here.",
+      "href": "/help/grief"
+    }
   },
   {
     "id": "the-cross",
     "title": "What Love Was Willing To Do",
     "theme": "The Cross",
+    "group": "story",
     "passage": "Romans 5:8",
     "passageText": "But God proves His love for us in this: While we were still sinners, Christ died for us.",
     "bigIdea": "The cross is where God showed exactly how far His love was willing to go.",
     "reflection": "We sometimes save our kindest acts for people who deserve it, people who have been good to us. The cross is the opposite of that. The verse says Jesus died for us while we were still in the wrong, before we cleaned up, before we said sorry, before we deserved a single thing. That is what makes it love and not a reward.\n\nThe cross was not an accident or a defeat. It was a choice. Jesus saw the whole weight of every wrong thing we would ever do, and He chose to carry it Himself so we would not have to. When you want to know how much God loves you, you do not have to guess. You can look at the cross.",
-    "questions": [
-      "Why does it matter that Jesus died for us before we ever did anything to earn it?",
-      "Have you ever done something kind for someone who did not deserve it, and what did that cost you?",
-      "What does the cross tell you about how God feels about you?"
-    ],
+    "questions": {
+      "younger": [
+        "Why does it matter that Jesus died for us before we ever did anything to earn it?",
+        "Have you ever done something kind for someone who did not deserve it, and what did that cost you?",
+        "What does the cross tell you about how God feels about you?"
+      ],
+      "older": [
+        "Paul says God “proves His love for us” at the cross. Why would anyone need proof that God loves them?",
+        "Some people ask why God could not simply forgive without a cross. What does the cross show that simple forgiveness would not?",
+        "“While we were still sinners” includes you. Is that hard to accept, or a relief? Why?"
+      ]
+    },
     "activity": "Make a simple cross out of two sticks or pencils and set it somewhere you will see it this week as a reminder of what love was willing to do.",
     "prayer": "Jesus, you died for me before I ever deserved it. Thank you for loving me that much. Help me never get used to the cross. Amen."
   },
@@ -291,15 +451,23 @@
     "id": "the-empty-tomb",
     "title": "The Stone Was Moved",
     "theme": "The Empty Tomb",
+    "group": "story",
     "passage": "Matthew 28:6",
     "passageText": "He is not here; He has risen, just as He said! Come, see the place where He lay.",
     "bigIdea": "Jesus did not stay dead, and that changes everything about what is possible.",
     "reflection": "The friends of Jesus watched Him die. They put His body in a tomb and rolled a heavy stone in front of it. As far as they knew, it was over. The saddest weekend in history. And then, on the third morning, the stone was moved and the tomb was empty, not because someone stole the body, but because Jesus was alive.\n\nThis is the hinge the whole faith turns on. If Jesus stayed dead, then He was just another sad story. But if He rose, then death is not the end of the story for anyone who belongs to Him. The empty tomb means that even death, the worst thing we know, did not get the last word. Jesus did.",
-    "questions": [
-      "How do you think the friends of Jesus felt when they found the tomb empty?",
-      "Why does it matter so much whether Jesus actually rose or not?",
-      "If Jesus really beat death, how should that change the way we face scary things?"
-    ],
+    "questions": {
+      "younger": [
+        "How do you think the friends of Jesus felt when they found the tomb empty?",
+        "Why does it matter so much whether Jesus actually rose or not?",
+        "If Jesus really beat death, how should that change the way we face scary things?"
+      ],
+      "older": [
+        "What are the strongest reasons people give for doubting the resurrection, and how would you begin to answer them?",
+        "Paul says that if Christ has not been raised, “your faith is futile.” Why would a faith stake everything on one event in history?",
+        "The angel says Jesus rose “just as He said.” What else did Jesus say that this makes you take more seriously?"
+      ]
+    },
     "activity": "Hide a small object under a cup, then lift the cup to reveal it is empty, talking about the surprise the women felt at the empty tomb.",
     "prayer": "Jesus, you did not stay in the tomb. You are alive. Because you beat death, I do not have to be afraid of the dark. Thank you. Amen."
   },
@@ -307,15 +475,23 @@
     "id": "the-holy-spirit",
     "title": "God Who Lives Close",
     "theme": "The Holy Spirit",
+    "group": "god",
     "passage": "John 14:16-17",
     "passageText": "And I will ask the Father, and He will give you another Advocate to be with you forever— the Spirit of truth. The world cannot receive Him, because it neither sees Him nor knows Him. But you do know Him, for He abides with you and will be in you.",
     "bigIdea": "When Jesus went back to heaven, He did not leave us alone. He sent His Spirit to live with us.",
     "reflection": "The friends of Jesus were sad He was leaving. But Jesus told them something amazing. It is actually better for you that I go, because I am going to send a Helper who will not just be near you, He will be in you. The Holy Spirit is God Himself, closer than a teacher in the room, closer than a friend on the phone.\n\nThe Spirit is the One who nudges your heart when something is wrong. He helps you understand the Bible. He gives you courage you did not have on your own. You cannot see Him, like you cannot see the wind, but you can see what He does. He is the proof that you are never, ever following God alone.",
-    "questions": [
-      "Have you ever felt a nudge inside that you should do the right thing or stop doing a wrong one?",
-      "Why do you think Jesus said it was better for Him to leave and send the Spirit?",
-      "What is one way the Holy Spirit could help you this week?"
-    ],
+    "questions": {
+      "younger": [
+        "Have you ever felt a nudge inside that you should do the right thing or stop doing a wrong one?",
+        "Why do you think Jesus said it was better for Him to leave and send the Spirit?",
+        "What is one way the Holy Spirit could help you this week?"
+      ],
+      "older": [
+        "Jesus calls the Spirit “the Spirit of truth.” Where in your life do you most need the truth told to you?",
+        "Jesus says the world cannot receive the Spirit because it “neither sees Him nor knows Him.” How would you explain the Holy Spirit to a friend who thinks it sounds made up?",
+        "Jesus calls the Spirit an Advocate, someone who stands beside you. When have you needed someone on your side, and what does it mean that God is?"
+      ]
+    },
     "activity": "Try to see the wind by watching what it moves, like leaves or a flag, then talk about how we see the Spirit by what He does.",
     "prayer": "God, thank you that I am never alone. Your Spirit lives close to me. Help me notice His nudges and follow where He leads. Amen."
   },
@@ -323,15 +499,23 @@
     "id": "worship",
     "title": "What You Are Made Of",
     "theme": "Worship",
+    "group": "following",
     "passage": "Psalm 95:6",
     "passageText": "O come, let us worship and bow down; let us kneel before the LORD our Maker.",
     "bigIdea": "Worship is giving God the biggest place in your heart, and the singing is only one way that shows.",
     "reflection": "Everyone worships something. We all build our lives around something we think is most important, whether it is money, being liked, being the best, or God. Worship is just whatever gets the center spot. The question is never whether you worship. The question is what.\n\nWhen the Bible says to worship God, it is calling us to put the right thing in the center. Not because God needs our applause, but because we were made to point our hearts at Him. A heart pointed at the wrong thing slowly bends out of shape. A heart pointed at God grows into what it was meant to be.",
-    "questions": [
-      "What is something people sometimes put in the center of their lives instead of God?",
-      "How can you tell what someone really worships by how they spend their time and money?",
-      "What gets the biggest place in your heart most days, honestly?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something people sometimes put in the center of their lives instead of God?",
+        "How can you tell what someone really worships by how they spend their time and money?",
+        "What gets the biggest place in your heart most days, honestly?"
+      ],
+      "older": [
+        "The psalm says to bow down and kneel. Why do you think the Bible cares what our bodies do in worship, and not only what we feel?",
+        "What do people your age give the center spot to: a team, an image, a future, a person? How can you tell when a good thing has become the main thing?",
+        "Do you find it easy or hard to worship at church? What would help you mean it?"
+      ]
+    },
     "activity": "Sing or play one song together that you actually enjoy, and let it be a moment of giving God the center for a few minutes.",
     "prayer": "God, you deserve the center of my heart. Help me worship you and not the things that pull at me. Be the biggest thing in my life. Amen."
   },
@@ -339,15 +523,23 @@
     "id": "grace",
     "title": "The Gift You Cannot Earn",
     "theme": "Grace",
+    "group": "god",
     "passage": "Ephesians 2:8-9",
     "passageText": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast.",
     "bigIdea": "Grace is getting something good you could never have earned, just because God is generous.",
     "reflection": "We are used to earning things. Work hard, get the reward. Behave, get the treat. So grace is hard to wrap our heads around, because grace is the one thing you cannot earn. It is a gift. If you could earn it, it would be a paycheck, not a gift.\n\nThis is the heart of the whole story. God does not love you because you are good enough. He loves you and then makes you good. You do not climb up to God by being impressive. He came down to you while you were not. That takes all the pressure off, and it also takes away any bragging, because no one earned their way in.",
-    "questions": [
-      "What is the difference between a gift and a paycheck?",
-      "Why is it sometimes hard to accept something you did not earn?",
-      "How does it change things to know God loves you before you do anything to earn it?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between a gift and a paycheck?",
+        "Why is it sometimes hard to accept something you did not earn?",
+        "How does it change things to know God loves you before you do anything to earn it?"
+      ],
+      "older": [
+        "Where do you feel pressure to earn your place: grades, sports, likes, your parents' approval? What does grace say to that?",
+        "If salvation is a gift and not a reward, why does Paul say in the next verse that we were “created in Christ Jesus to do good works”?",
+        "Grace means “no one can boast.” Who are we tempted to look down on, and what does grace do to that?"
+      ]
+    },
     "activity": "Give each person a small treat for no reason at all, just to taste what a gift feels like compared to a reward.",
     "prayer": "God, I cannot earn your love and I do not have to. Thank you for the gift of grace. Help me stop trying to impress you and just receive it. Amen."
   },
@@ -355,15 +547,23 @@
     "id": "repentance",
     "title": "Turning Around",
     "theme": "Repentance",
+    "group": "following",
     "passage": "Acts 3:19-20",
     "passageText": "Repent, then, and turn back, so that your sins may be wiped away, that times of refreshing may come from the presence of the Lord, and that He may send Jesus, the Christ, who has been appointed for you.",
     "bigIdea": "Repentance is turning around and going the other way, which asks more of you than feeling sorry.",
     "reflection": "Saying sorry is a start, but it is not the whole thing. You can be sorry you got caught and still keep doing the same thing tomorrow. Repentance is bigger than sorry. It means you were walking one direction, you realize it is the wrong way, and you turn around. You actually change where you are headed.\n\nThe good news in the verse is what happens after the turn. Times of refreshing. God is not waiting to scold you when you turn back. He is waiting to clean the slate and bring relief. Turning around is not a punishment. It is the door back to freedom, and God holds it open.",
-    "questions": [
-      "What is the difference between being sorry and actually changing?",
-      "Have you ever kept doing something you knew was wrong even after saying sorry?",
-      "Is there a direction in your life right now that you need to turn around from?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between being sorry and actually changing?",
+        "Have you ever kept doing something you knew was wrong even after saying sorry?",
+        "Is there a direction in your life right now that you need to turn around from?"
+      ],
+      "older": [
+        "Guilt can make you hide or make you turn around. What decides which way it goes?",
+        "Peter promises “times of refreshing” after turning back. Why do you think people expect punishment instead?",
+        "Who could you be honest with about a direction you need to change, so you are not turning around alone?"
+      ]
+    },
     "activity": "Have everyone walk one way across the room, then on the word turn, walk back the other direction, feeling what it means to change course.",
     "prayer": "God, I do not just want to feel sorry. I want to turn around. Help me change direction and walk back toward you. Thank you for the fresh start. Amen."
   },
@@ -371,15 +571,23 @@
     "id": "mercy",
     "title": "Not Getting What You Deserve",
     "theme": "Mercy",
+    "group": "others",
     "passage": "Micah 6:8",
     "passageText": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?",
     "bigIdea": "Mercy is choosing kindness when someone has earned the opposite.",
     "reflection": "Mercy and grace are close cousins, and the difference is worth knowing. Grace hands you a gift you had no claim on. Mercy sets down the punishment you had coming. When your sibling breaks your toy and you have every right to be furious, and you choose to forgive instead, that is mercy. You held back the punishment you could have given.\n\nThe verse does not say tolerate mercy or allow it. It says love it. God wants us to actually delight in being the kind of people who go easy on others. And the reason is simple. We have all been shown mercy we did not deserve. People who have been let off easy should be the quickest to let others off easy too.",
-    "questions": [
-      "What is the difference between mercy and just letting someone get away with something?",
-      "When has someone shown you mercy instead of giving you what you deserved?",
-      "Who is someone you could show mercy to this week instead of payback?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between mercy and just letting someone get away with something?",
+        "When has someone shown you mercy instead of giving you what you deserved?",
+        "Who is someone you could show mercy to this week instead of payback?"
+      ],
+      "older": [
+        "Micah puts justice and mercy side by side. How can you care about what is right and still love mercy?",
+        "Online, one mistake can follow a person for years. What would loving mercy look like in a culture that keeps screenshots?",
+        "Walking humbly with God is the third thing Micah names. How does humility make mercy easier?"
+      ]
+    },
     "activity": "Play a game where the winner gives up their prize to the person who lost, practicing what it feels like to choose mercy.",
     "prayer": "God, you have given me mercy I did not deserve. Help me love mercy too, and give it away to the people who have wronged me. Amen."
   },
@@ -387,15 +595,23 @@
     "id": "justice-and-the-poor",
     "title": "Whose Voice Gets Heard",
     "theme": "Justice And The Poor",
+    "group": "others",
     "passage": "Proverbs 31:8-9",
     "passageText": "Open your mouth for those with no voice, for the cause of all the dispossessed. Open your mouth, judge righteously, and defend the cause of the poor and needy.",
     "bigIdea": "God cares deeply about the people the world forgets, and He wants us to speak up for them.",
     "reflection": "Some people have a loud voice in the world. They have money, power, friends in high places. Others have almost no voice at all. The poor. The forgotten. The ones who cannot fight for themselves. The Bible says again and again that God pays special attention to those exact people, and He is angry when they get pushed aside.\n\nThe verse is a job for us. Speak up for those who cannot speak for themselves. That might mean standing up for the kid being treated unfairly. It might mean caring about people far away who are hungry. Following God has never been only about your own heart. It reaches out to the people the world steps over.",
-    "questions": [
-      "Who are some people in the world who do not have much of a voice?",
-      "Have you ever seen someone treated unfairly and wished someone would speak up?",
-      "What is one way your family could speak up for or help someone in need?"
-    ],
+    "questions": {
+      "younger": [
+        "Who are some people in the world who do not have much of a voice?",
+        "Have you ever seen someone treated unfairly and wished someone would speak up?",
+        "What is one way your family could speak up for or help someone in need?"
+      ],
+      "older": [
+        "These are “the words of King Lemuel,” taught to him by his mother. Why would a king need to be told to speak up for the poor?",
+        "Is it enough to feel bad about injustice? What does the passage ask for beyond feeling?",
+        "Speaking up can cost you something. Where would it cost you to defend someone, and what would make it worth it?"
+      ]
+    },
     "activity": "As a family, pick one way to help someone in need this month, like packing a meal box or standing up for a kid who gets picked on.",
     "prayer": "God, you care about the people the world forgets. Help me notice them and speak up for them. Give me a heart like yours for the poor. Amen."
   },
@@ -403,15 +619,23 @@
     "id": "loving-your-enemies",
     "title": "The Hardest Love",
     "theme": "Loving Your Enemies",
+    "group": "others",
     "passage": "Matthew 5:44-45",
     "passageText": "But I tell you, love your enemies and pray for those who persecute you, that you may be sons of your Father in heaven. He causes His sun to rise on the evil and the good, and sends rain on the righteous and the unrighteous.",
     "bigIdea": "Anyone can love the people who are nice to them. Jesus calls us to love even the people who are not.",
     "reflection": "This is one of the hardest things Jesus ever said. Loving people who love you back is easy and natural. But Jesus says love your enemies, the people who are mean to you, the ones who make your life harder. He even says to pray for them. That goes against everything inside us.\n\nBut Jesus knows something about hatred that we forget. Hating your enemy keeps you tied to them. It lets the meanest person in your life control your heart. Loving them, even praying for them, sets you free from that. It does not mean you let them hurt you. It means you refuse to become bitter. It is the strongest, hardest, most God like thing a person can do.",
-    "questions": [
-      "Who is someone that is hard for you to be kind to?",
-      "Why do you think Jesus would ask us to love and even pray for people who are mean to us?",
-      "What is one small kind thing you could do or pray for an enemy this week?"
-    ],
+    "questions": {
+      "younger": [
+        "Who is someone that is hard for you to be kind to?",
+        "Why do you think Jesus would ask us to love and even pray for people who are mean to us?",
+        "What is one small kind thing you could do or pray for an enemy this week?"
+      ],
+      "older": [
+        "Who do your friends, your feed, or your side of an argument treat as enemies? Does Jesus' command reach them too?",
+        "Jesus points to the sun and rain that fall on the evil and the good. What does that tell you about how God treats people?",
+        "Loving an enemy does not mean letting them hurt you. What does it mean, then, in practice?"
+      ]
+    },
     "activity": "Each person quietly says a short prayer for someone they find hard to like, asking God to bless them.",
     "prayer": "God, this is hard. Help me love even the people who are unkind to me. I do not want bitterness to control my heart. Soften me. Amen."
   },
@@ -419,15 +643,23 @@
     "id": "the-words-we-say",
     "title": "Small But Powerful",
     "theme": "The Words We Say",
+    "group": "others",
     "passage": "James 3:5",
     "passageText": "In the same way, the tongue is a small part of the body, but it boasts of great things. Consider how small a spark sets a great forest ablaze.",
     "bigIdea": "Words are tiny, but they can build people up or burn them down.",
     "reflection": "James compares our words to a spark. A spark is small, almost nothing, until it lands in a dry forest and the whole thing goes up in flames. Our words are like that. A single cruel sentence can ruin someone's whole day, or a whole friendship. We forget how much weight our words carry because they are so easy to say.\n\nBut the same small spark can light a fire that warms a cold room. Words can do that too. One kind sentence can change how a person feels about themselves for years. The mouth is small, but what comes out of it is one of the most powerful things you have. It is worth being careful with.",
-    "questions": [
-      "Can you remember a time someone's words really hurt you, or really helped you?",
-      "Why do you think it is so easy to say something mean and so hard to take it back?",
-      "What is one word or sentence you could say this week that would build someone up?"
-    ],
+    "questions": {
+      "younger": [
+        "Can you remember a time someone's words really hurt you, or really helped you?",
+        "Why do you think it is so easy to say something mean and so hard to take it back?",
+        "What is one word or sentence you could say this week that would build someone up?"
+      ],
+      "older": [
+        "Where do your words travel farther than you meant: a group chat, a screenshot, a rumor?",
+        "James says the tongue “boasts of great things.” When do you use words to make yourself look bigger?",
+        "Is it ever right to stay silent when your words could start a fire? When is it right to speak anyway?"
+      ]
+    },
     "activity": "Squeeze toothpaste out of a tube and then try to put it back in, talking about how words, once said, cannot be unsaid.",
     "prayer": "God, my words are small but powerful. Help me use them to build people up instead of burning them down. Guard my mouth today. Amen."
   },
@@ -435,15 +667,23 @@
     "id": "jealousy-and-comparison",
     "title": "The Thief Of Glad",
     "theme": "Jealousy And Comparison",
+    "group": "feelings",
     "passage": "Galatians 6:4",
     "passageText": "Each one should test his own work. Then he will have reason to boast in himself alone, and not in someone else.",
     "bigIdea": "Comparing yourself to others will steal your joy faster than almost anything.",
     "reflection": "Jealousy starts the moment we look sideways. As long as you are running your own race, you are fine. But the second you start watching the kid in the next lane, who is faster, who has more, who got picked first, something sours inside you. Comparison takes a good thing you have and makes it feel like nothing.\n\nThe verse offers a way out. Test your own actions. Run your own race. God did not make you to be a copy of someone else, and He is not grading you on a curve against your friends. The cure for jealousy is not getting more. It is looking up at God and across at the people you love, instead of sideways at the people you envy.",
-    "questions": [
-      "Who do you find yourself comparing yourself to, and about what?",
-      "How does jealousy actually make you feel inside?",
-      "What might change if you stopped looking sideways and ran your own race?"
-    ],
+    "questions": {
+      "younger": [
+        "Who do you find yourself comparing yourself to, and about what?",
+        "How does jealousy actually make you feel inside?",
+        "What might change if you stopped looking sideways and ran your own race?"
+      ],
+      "older": [
+        "Social media shows everyone's best moments. How does that make comparison worse, and what helps?",
+        "Paul says each one should “test his own work.” If not against other people, what are you measuring yourself against?",
+        "Is there someone you envy whose life you do not actually know very well? What might you be missing?"
+      ]
+    },
     "activity": "Have everyone run or hop across the room while staring sideways at each other, then again looking straight ahead, and notice which felt better.",
     "prayer": "God, comparing myself to others steals my joy. Help me run my own race and trust that you made me on purpose. Free me from jealousy. Amen."
   },
@@ -451,15 +691,23 @@
     "id": "the-fear-of-the-lord",
     "title": "The Right Kind Of Awe",
     "theme": "The Fear Of The Lord",
+    "group": "god",
     "passage": "Proverbs 9:10",
     "passageText": "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding.",
     "bigIdea": "Fearing God means taking Him seriously, with awe, the way you feel small and glad at the edge of the ocean.",
     "reflection": "The word fear confuses people here. It does not mean God is scary like a monster under the bed. It means the kind of awe you feel standing at the edge of the ocean or under a sky full of stars. You feel small, but in a good way. You realize you are in the presence of something far bigger than you, and you treat it with respect.\n\nJesus called God our Father and also told His friends that God, not people, is the one to fear, and He did not see any conflict between the two. A child who is safe with a strong father knows both feelings at once. That is why this fear is where wisdom starts. Once God is in His right place, everything else in your life begins to find its proper size.",
-    "questions": [
-      "Have you ever felt small in a good way, like standing somewhere huge or beautiful?",
-      "What is the difference between being scared of God and being in awe of God?",
-      "How might taking God seriously change a choice you make this week?"
-    ],
+    "questions": {
+      "younger": [
+        "Have you ever felt small in a good way, like standing somewhere huge or beautiful?",
+        "What is the difference between being scared of God and being in awe of God?",
+        "How might taking God seriously change a choice you make this week?"
+      ],
+      "older": [
+        "The proverb says this fear is the beginning of wisdom. What happens to a person who fears nothing above themselves?",
+        "Whose opinion do you fear most right now? What would change if God's mattered more?",
+        "How can a person be in awe of God and also come to Him as Father? Do those feel in tension to you?"
+      ]
+    },
     "activity": "Go outside at night and look up at the stars, or look at pictures of space, and let yourselves feel small before the God who made it all.",
     "prayer": "God, you are so much bigger than me, and that is good. Help me treat you with awe and respect. The fear of you is where wisdom starts. Amen."
   },
@@ -467,15 +715,23 @@
     "id": "wisdom",
     "title": "More Than Being Smart",
     "theme": "Wisdom",
+    "group": "character",
     "passage": "James 1:5",
     "passageText": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him.",
     "bigIdea": "Being smart is knowing a lot. Being wise is knowing what to do with what you know.",
     "reflection": "You can know all the facts and still make a foolish choice. Smart and wise are not the same thing. A smart person can tell you how an engine works. A wise person knows when to slow down. Wisdom is the skill of living well, of making good choices in real life, and it does not come automatically with age or smarts.\n\nThe wonderful thing in this verse is how you get wisdom. You ask. God does not roll His eyes at the question. He gives wisdom generously, gladly, to anyone who asks. So when you are stuck on a hard choice, you do not have to figure it out alone. You can stop and ask the One who knows best.",
-    "questions": [
-      "What is the difference between someone who is smart and someone who is wise?",
-      "Can you think of a wise choice you have seen someone make?",
-      "Is there a decision you are facing where you could stop and ask God for wisdom?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between someone who is smart and someone who is wise?",
+        "Can you think of a wise choice you have seen someone make?",
+        "Is there a decision you are facing where you could stop and ask God for wisdom?"
+      ],
+      "older": [
+        "Where do people your age go for advice: friends, influencers, search results? What makes a source of advice wise?",
+        "James says God gives wisdom “without finding fault.” Why might that matter to someone who feels foolish for asking?",
+        "What decision coming in the next few years will need wisdom, and who besides God could you ask about it?"
+      ]
+    },
     "activity": "Pose a tricky what would you do situation and have everyone give their wisest answer, then talk about why some choices are wiser than others.",
     "prayer": "God, I want to be wise, not just smart. Thank you that you give wisdom to anyone who asks. So I am asking. Help me live well. Amen."
   },
@@ -483,31 +739,51 @@
     "id": "suffering",
     "title": "When It Really Hurts",
     "theme": "Suffering",
+    "group": "feelings",
     "passage": "Romans 8:28",
     "passageText": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose.",
     "bigIdea": "God does not waste our pain. He can bring good even out of the hard things.",
     "reflection": "This verse is often said too quickly to hurting people, like a bandage slapped on without care. So let us be honest. It does not say everything that happens is good. Some things are genuinely terrible. What it says is that God can work in all things, even the worst ones, to bring good. That is different, and it is a much braver promise.\n\nGod does not promise we will skip the hard stuff. Jesus Himself did not. But He promises to be in it with us and to bring something good out of it eventually, even if we cannot see how yet. The pain is real. And so is the God who refuses to let it have the last word.",
-    "questions": [
-      "What is a hard thing you have been through, big or small?",
-      "Why do you think God lets hard things happen even though He loves us?",
-      "Can you think of a time something good came out of something hard, looking back?"
-    ],
+    "questions": {
+      "younger": [
+        "What is a hard thing you have been through, big or small?",
+        "Why do you think God lets hard things happen even though He loves us?",
+        "Can you think of a time something good came out of something hard, looking back?"
+      ],
+      "older": [
+        "This verse is sometimes quoted too quickly to people who are hurting. In a hard season, what would you want someone to say, or not say, to you?",
+        "What is the difference between saying “everything happens for a reason” and what Paul actually says here?",
+        "In the next verse Paul says God's purpose is for us “to be conformed to the image of His Son.” How does that change what good means here?"
+      ]
+    },
     "activity": "Look at how a piece of fruit gets crushed to make juice, then talk about how God can make something good even from things that get crushed.",
-    "prayer": "God, sometimes life really hurts and I do not understand. Thank you that you are with me in it and that you can bring good even out of the hard. Amen."
+    "prayer": "God, sometimes life really hurts and I do not understand. Thank you that you are with me in it and that you can bring good even out of the hard. Amen.",
+    "grownups": {
+      "line": "If your children's questions about pain are your questions too, start here.",
+      "href": "/help/suffering"
+    }
   },
   {
     "id": "waiting-on-god",
     "title": "Strength In The Waiting",
     "theme": "Waiting On God",
+    "group": "feelings",
     "passage": "Isaiah 40:31",
     "passageText": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint.",
     "bigIdea": "Waiting on God is its own kind of work, gathering strength for what comes next.",
     "reflection": "Waiting feels like wasted time. We hate it. We want the answer now, the thing now. But the verse flips that around. It says the people who wait on God do not run out of strength, they actually gain it. The waiting is where the strength gets built, like an eagle resting on the wind before the long flight.\n\nThere is a difference between just waiting and waiting on God. One is staring at the clock, getting more frustrated. The other is trusting that the One who made you is working even in the quiet, building you up for whatever is coming. Waiting on God turns out to be one of the strongest things a person can do.",
-    "questions": [
-      "What is something you are waiting for right now?",
-      "What is the difference between waiting impatiently and waiting on God?",
-      "How might God be building strength in you during a wait you are in?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something you are waiting for right now?",
+        "What is the difference between waiting impatiently and waiting on God?",
+        "How might God be building strength in you during a wait you are in?"
+      ],
+      "older": [
+        "Isaiah spoke to people who said, “My way is hidden from the LORD.” When have you felt forgotten, or stuck in a place you did not choose?",
+        "Isaiah says those who wait will run and not grow weary. Where are you most tired right now, and what would new strength look like?",
+        "Is it harder to wait on God or to wait on people? Why?"
+      ]
+    },
     "activity": "Hold a plank position together for as long as you can, feeling how staying still and steady actually builds strength.",
     "prayer": "God, waiting is hard for me. Help me wait on you and not just stare at the clock. Build strength in me while I wait. Amen."
   },
@@ -515,15 +791,23 @@
     "id": "gods-faithfulness",
     "title": "He Keeps His Word",
     "theme": "God's Faithfulness",
+    "group": "god",
     "passage": "Lamentations 3:22-23",
     "passageText": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!",
     "bigIdea": "God's love does not run out, and His mercy is new every single morning.",
     "reflection": "What is amazing about this verse is where it shows up. Lamentations is a book of crying. The writer has watched terrible things happen. And right in the middle of the worst, he stops and says this. His mercies are new every morning. Even here. Even now. God's faithfulness was the one thing the disaster could not take.\n\nFaithfulness means God keeps His word, morning after morning. Every time the sun rises, so does His mercy, fresh, not used up from yesterday. You do not have to ration God's love or worry it will run dry. Yesterday's failures do not lower tomorrow's supply. Every new day is proof that He has not given up on you.",
-    "questions": [
-      "What is something that happens faithfully every single day without fail?",
-      "Why do you think God made His mercy new every morning instead of all at once?",
-      "How does it help to know God's love does not run out, even on your worst days?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something that happens faithfully every single day without fail?",
+        "Why do you think God made His mercy new every morning instead of all at once?",
+        "How does it help to know God's love does not run out, even on your worst days?"
+      ],
+      "older": [
+        "Lamentations was written after Jerusalem was destroyed. Why do you think this hope sits in the middle of a book of grief and not at the end?",
+        "Is there something from yesterday or last week you are still carrying as if God's mercy had run out?",
+        "Faithfulness means keeping your word. Where do you struggle to be faithful, and what does God's faithfulness say to you there?"
+      ]
+    },
     "activity": "Wake up tomorrow morning and as a first thing, say great is your faithfulness, and notice the brand new day God has given.",
     "prayer": "God, your love never runs out and your mercy is new every morning. Thank you that you have never once given up on me. Great is your faithfulness. Amen."
   },
@@ -531,15 +815,23 @@
     "id": "the-armor-of-god",
     "title": "Dressed For The Day",
     "theme": "The Armor Of God",
+    "group": "following",
     "passage": "Ephesians 6:11",
     "passageText": "Put on the full armor of God, so that you can make your stand against the devil’s schemes.",
     "bigIdea": "There is a real struggle between good and evil, and God gives us everything we need to stand strong.",
     "reflection": "Paul pictures a soldier getting dressed for battle, but the battle is not against people. It is against the lies and the wrong that pull at all of us. And God does not send us out empty handed. He gives us armor. Truth like a belt. Faith like a shield. The Bible like a sword. Things to protect us and things to fight back with.\n\nNotice you have to put it on. The armor does nothing sitting in a pile. Every morning is a choice to get dressed in what God gives. To stand on the truth instead of the lies. To hold up faith when fear comes. You are not defenseless against the hard stuff. You just have to actually pick up what God has handed you.",
-    "questions": [
-      "What is a lie people sometimes believe that the truth can protect us from?",
-      "Which piece of armor do you think you need most right now and why?",
-      "What would it look like to put on God's armor before school or work tomorrow?"
-    ],
+    "questions": {
+      "younger": [
+        "What is a lie people sometimes believe that the truth can protect us from?",
+        "Which piece of armor do you think you need most right now and why?",
+        "What would it look like to put on God's armor before school or work tomorrow?"
+      ],
+      "older": [
+        "Paul says our struggle is “not against flesh and blood.” Why is it so easy to treat people as the enemy instead?",
+        "What are the devil's schemes most likely to look like for someone your age? Think about lies more than monsters.",
+        "Truth, righteousness, faith, the word of God, prayer: which do you most often leave at home?"
+      ]
+    },
     "activity": "Pretend to put on each piece of armor one at a time as you name it, the belt of truth, the shield of faith, the sword of the Spirit.",
     "prayer": "God, thank you that I am not defenseless. Help me put on your armor every day, standing on truth and holding up faith. Amen."
   },
@@ -547,15 +839,23 @@
     "id": "the-fruit-of-the-spirit",
     "title": "What Grows On The Tree",
     "theme": "The Fruit Of The Spirit",
+    "group": "character",
     "passage": "Galatians 5:22-23",
     "passageText": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law.",
     "bigIdea": "Good character grows in you when the Spirit is at work, like fruit on a tree, and no one has ever forced a tree to bear.",
     "reflection": "An apple tree does not strain and grunt to make apples. The fruit just grows because the tree is healthy and connected to its roots. The Bible says love, joy, peace and the rest are fruit. They grow in us when we stay connected to God, not when we white knuckle our way into being nice.\n\nThis takes the pressure off and puts the focus in the right place. You do not become patient by gritting your teeth harder. You become patient by staying close to the One who is patient, and over time it grows in you. The question is less try harder and more stay connected. Healthy roots, good fruit.",
-    "questions": [
-      "Which of these fruits, like love, joy, peace, kindness, comes easiest for you, and which is hardest?",
-      "Why do you think these grow over time instead of appearing all at once?",
-      "What does it mean to stay connected to God so this fruit can grow?"
-    ],
+    "questions": {
+      "younger": [
+        "Which of these fruits, like love, joy, peace, kindness, comes easiest for you, and which is hardest?",
+        "Why do you think these grow over time instead of appearing all at once?",
+        "What does it mean to stay connected to God so this fruit can grow?"
+      ],
+      "older": [
+        "Just before this list, Paul describes the acts of the flesh. Why do you think he calls one list acts and the other fruit?",
+        "Which of these would the people who know you best say is growing in you, and which is missing?",
+        "Can someone fake this fruit for a while? How would you tell the difference over time?"
+      ]
+    },
     "activity": "Cut open a piece of fruit and look at the seeds inside, talking about how each fruit of the Spirit can grow and spread to others.",
     "prayer": "God, I cannot force myself to be good. Help me stay close to you so your fruit grows in me, the love and joy and peace I cannot make on my own. Amen."
   },
@@ -563,15 +863,23 @@
     "id": "the-beatitudes",
     "title": "Upside Down Happy",
     "theme": "The Beatitudes",
+    "group": "character",
     "passage": "Matthew 5:3-4",
     "passageText": "Blessed are the poor in spirit, for theirs is the kingdom of heaven. Blessed are those who mourn, for they will be comforted.",
     "bigIdea": "Jesus says the truly happy people are the opposite of who the world says they are.",
     "reflection": "The world has a list of who is winning. The rich. The strong. The ones who never need anything. Then Jesus sat down on a hillside and turned the whole list upside down. He said the ones who know they need God, the ones who are sad, the gentle ones, the ones who hunger to see things made right, those are the truly blessed.\n\nIt sounds backward, and that is the point. Jesus is not describing who looks successful. He is describing who is actually close to God and headed for real joy. The kingdom of heaven does not run on the world's scoreboard. It runs on a different one, and on that scoreboard the last are often first.",
-    "questions": [
-      "Who does the world usually say is winning at life?",
-      "Why do you think Jesus called sad and humble people blessed?",
-      "Which of the things Jesus mentioned surprises you the most?"
-    ],
+    "questions": {
+      "younger": [
+        "Who does the world usually say is winning at life?",
+        "Why do you think Jesus called sad and humble people blessed?",
+        "Which of the things Jesus mentioned surprises you the most?"
+      ],
+      "older": [
+        "What does it mean to be “poor in spirit”? Is it the same as having low self-esteem?",
+        "Jesus says those who mourn will be comforted. Why do you think He calls them blessed now, and not only later?",
+        "If Jesus made a list of who is blessed at your school, who might be on it that no one expects?"
+      ]
+    },
     "activity": "Make a list of who the world calls a winner, then make Jesus's upside down list next to it and compare the two.",
     "prayer": "Jesus, you turned everything upside down. Help me stop chasing the world's scoreboard and want the kind of happy you are talking about. Amen."
   },
@@ -579,15 +887,23 @@
     "id": "the-good-shepherd",
     "title": "The One Who Comes Looking",
     "theme": "The Good Shepherd",
+    "group": "god",
     "passage": "John 10:11",
     "passageText": "I am the good shepherd. The good shepherd lays down His life for the sheep.",
     "bigIdea": "Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind.",
     "reflection": "Sheep are not very smart and they wander off easily. A good shepherd does not give up on the wandering one. He goes out looking, over the hills, into the dark, until he finds it and carries it home. Jesus calls Himself that kind of shepherd. Not one who counts losses and shrugs, but one who comes after you.\n\nAnd then He says something a normal shepherd would never say. He would die for the sheep. Most shepherds run when the wolf comes. This one stands between the danger and the flock. That is the kind of care Jesus has for you. You are not a number to Him. You are the one He would leave the ninety nine to find.",
-    "questions": [
-      "What does it tell you that Jesus would come looking for one wandering sheep?",
-      "When have you felt lost or like you wandered away from where you should be?",
-      "What is the difference between a boss who drives people and a shepherd who leads them?"
-    ],
+    "questions": {
+      "younger": [
+        "What does it tell you that Jesus would come looking for one wandering sheep?",
+        "When have you felt lost or like you wandered away from where you should be?",
+        "What is the difference between a boss who drives people and a shepherd who leads them?"
+      ],
+      "older": [
+        "Jesus calls Himself the good shepherd, as if there were bad ones. Who are the voices trying to lead people your age, and how can you tell a good one?",
+        "When have you wandered without meaning to, drifting more than deciding? What would it look like to be found?",
+        "The good shepherd “lays down His life for the sheep.” What does that say about your worth to Him on days you feel worth very little?"
+      ]
+    },
     "activity": "Play a game of hide and seek where the seeker does not stop until everyone is found, then talk about the shepherd who never quits looking.",
     "prayer": "Jesus, you are my good shepherd. Thank you that when I wander off, you come looking for me. Help me follow your voice and stay close. Amen."
   },
@@ -595,15 +911,23 @@
     "id": "the-prodigal-son",
     "title": "The Father Who Runs",
     "theme": "The Prodigal Son",
+    "group": "god",
     "passage": "Luke 15:20",
     "passageText": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.",
     "bigIdea": "No matter how far you have run from God, He is already looking down the road for you.",
     "reflection": "Jesus told about a son who took his dad's money, ran off, and wasted all of it on a foolish life. He ended up feeding pigs and starving. He decided to crawl home and beg to be a servant, sure his dad would be furious. But look at what the father does. While the son is still far off, the father sees him, which means he had been watching that road, every day, hoping.\n\nThen the father runs. In that culture grown men did not run. It was undignified. But this father did not care. He ran to his ruined, smelly, broke son and threw his arms around him before the boy could even finish his apology. That is the picture Jesus gives us of God. Not arms crossed. Arms open, running.",
-    "questions": [
-      "How do you think the son felt walking home, expecting to be in trouble?",
-      "What surprises you most about how the father responded?",
-      "Is there a way you have run from God or done wrong that you are afraid to bring back to Him?"
-    ],
+    "questions": {
+      "younger": [
+        "How do you think the son felt walking home, expecting to be in trouble?",
+        "What surprises you most about how the father responded?",
+        "Is there a way you have run from God or done wrong that you are afraid to bring back to Him?"
+      ],
+      "older": [
+        "The story goes on to an older brother who stayed home and was angry about the party. Which son are you more like right now?",
+        "The son planned a speech asking to be made one of the hired servants. Why do we try to earn our way back to God?",
+        "If you had wandered far, what would you want to hear from God, and what do you think He would actually say?"
+      ]
+    },
     "activity": "Stand at opposite ends of a hallway and have one person run to throw their arms around the other before they can finish saying sorry.",
     "prayer": "God, no matter how far I wander, you are watching the road for me. Thank you that you run to me with open arms. I am coming home. Amen."
   },
@@ -611,15 +935,23 @@
     "id": "the-image-of-god",
     "title": "Everyone You Meet",
     "theme": "The Image Of God",
+    "group": "others",
     "passage": "Genesis 1:27",
     "passageText": "So God created man in His own image; in the image of God He created him; male and female He created them.",
     "bigIdea": "Every single person you meet carries the image of God, so every single person matters.",
     "reflection": "When you look at a coin, you can tell whose face is stamped on it. The Bible says every person has God's image stamped on them. The cashier, the kid you do not like, the homeless man, the famous person, your annoying sibling. There is no human being walking around who is not carrying the image of the Maker.\n\nThis changes how you treat people. You cannot say someone does not matter, because God says they do. You cannot look down on a person, because they bear the same image you do. The way we treat people, especially the ones it is easy to ignore, shows what we really believe about the God whose picture they carry.",
-    "questions": [
-      "What does it mean that every person is made in God's image?",
-      "Is there a kind of person you tend to treat as if they do not matter much?",
-      "How would you treat people differently if you really saw God's image in them?"
-    ],
+    "questions": {
+      "younger": [
+        "What does it mean that every person is made in God's image?",
+        "Is there a kind of person you tend to treat as if they do not matter much?",
+        "How would you treat people differently if you really saw God's image in them?"
+      ],
+      "older": [
+        "Who is it easiest for people your age to treat as less than human: someone online, someone on the other side of an argument, someone who can do nothing for you?",
+        "Genesis says “male and female He created them,” both in God's image. What does it mean that neither one bears His image more than the other?",
+        "How should God's image in someone change the way you talk about them when they are not in the room?"
+      ]
+    },
     "activity": "Look at a coin and notice whose face is on it, then go through your day pointing out, that person bears God's image, about people you pass.",
     "prayer": "God, you put your image on every person. Help me see it, even in the people I find hard to like. Help me treat everyone like they matter, because they do. Amen."
   },
@@ -627,15 +959,23 @@
     "id": "being-sent",
     "title": "You Are Not Just A Keeper",
     "theme": "Being Sent",
+    "group": "following",
     "passage": "Matthew 28:19-20",
     "passageText": "Therefore go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit, and teaching them to obey all that I have commanded you. And surely I am with you always, even to the end of the age.",
     "bigIdea": "God does not just want us to keep the good news to ourselves. He sends us out to share it.",
     "reflection": "Imagine finding the cure to a sickness and keeping it in your pocket while people around you stayed sick. That would be cruel. The good news about Jesus is meant to be shared, not stored. The very last thing Jesus told His friends before going back to heaven was a single word with a lot of weight. Go.\n\nBeing sent does not mean you have to move across the world, though some do. Mostly it means living in such a way that the people around you, your school, your street, your team, get to see and hear what Jesus is like. You are not just someone who got rescued. You are someone who gets to point others toward the rescue too.",
-    "questions": [
-      "If you found something wonderful, would you keep it secret or tell people, and why?",
-      "Who in your life has never really heard about Jesus?",
-      "What is one way you could share or show the good news without being pushy or weird about it?"
-    ],
+    "questions": {
+      "younger": [
+        "If you found something wonderful, would you keep it secret or tell people, and why?",
+        "Who in your life has never really heard about Jesus?",
+        "What is one way you could share or show the good news without being pushy or weird about it?"
+      ],
+      "older": [
+        "What makes it hard to talk about Jesus with your friends: fear of looking strange, not knowing what to say, or not being sure yourself?",
+        "Jesus says to “make disciples,” not just converts. What is the difference?",
+        "The command ends with “I am with you always.” How does that promise change what the command asks of you?"
+      ]
+    },
     "activity": "Each person picks one friend they could invite to something or share something good with, and you check in next week on how it went.",
     "prayer": "God, you did not rescue me just for me. Help me share the good news with the people around me. Send me, and give me the courage to go. Amen."
   },
@@ -643,31 +983,51 @@
     "id": "when-someone-hurts-you",
     "title": "When Someone Hurts You",
     "theme": "Forgiveness",
+    "group": "others",
     "passage": "Colossians 3:13",
     "passageText": "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you.",
     "bigIdea": "Forgiving someone means you hand the debt to God instead of making them pay, and it never says that what they did was okay.",
     "reflection": "When someone hurts us, it feels like they owe us something, like there is a debt, and we want to collect. Forgiveness is the choice to stop trying to collect. It does not mean pretending you were not hurt, and it does not mean the wrong thing was fine. It means you let it go to God instead of holding it against the person forever.\n\nThe reason we can do something this hard is that it was done for us first. Jesus forgave a debt we could never have paid. When we remember how much we have been forgiven, the thing we are holding against someone else starts to look smaller. We forgive because we have been forgiven, and a heart that will not forgive has forgotten how much grace it has already received.",
-    "questions": [
-      "Is there someone you are holding something against right now?",
-      "How does it feel inside to stay angry at someone for a long time?",
-      "What is the difference between forgiving someone and saying what they did was okay?"
-    ],
+    "questions": {
+      "younger": [
+        "Is there someone you are holding something against right now?",
+        "How does it feel inside to stay angry at someone for a long time?",
+        "What is the difference between forgiving someone and saying what they did was okay?"
+      ],
+      "older": [
+        "Is there someone you have decided not to forgive? What is keeping the debt open?",
+        "How is forgiving someone different from trusting them again?",
+        "What does it do to a person, over years, to keep every score?"
+      ]
+    },
     "activity": "Each person thinks of one person they need to forgive, and prays silently to hand that hurt to God. No one has to say the name out loud.",
-    "prayer": "Jesus, you forgave me when I did not deserve it. Help me forgive the people who hurt me, the way you forgave me. Amen."
+    "prayer": "Jesus, you forgave me when I did not deserve it. Help me forgive the people who hurt me, the way you forgave me. Amen.",
+    "grownups": {
+      "line": "If there is a wrong you have not been able to forgive, start here.",
+      "href": "/help/cant-forgive"
+    }
   },
   {
     "id": "thankfulness",
     "title": "The Cure For A Grumpy Heart",
     "theme": "Thankfulness",
+    "group": "everyday",
     "passage": "1 Thessalonians 5:18",
     "passageText": "Give thanks in every circumstance, for this is God’s will for you in Christ Jesus.",
     "bigIdea": "Thankfulness is choosing to notice the good gifts God has already given, even on a day when plenty is wrong.",
     "reflection": "It is easy to notice what we do not have. We see the toy we want, the thing the other kid got, the day that did not go our way, and our heart gets grumpy and small. Thankfulness is the cure, not because it makes the hard things disappear, but because it opens our eyes to all the gifts we had stopped seeing.\n\nEverything good in your life is a gift from God, the people who love you, the food on your table, the body that carries you around, the morning that came again. A thankful person is simply someone who has started to notice. And the strange thing is that thankful people are happier people, not because they have more, but because they finally see what they already have.",
-    "questions": [
-      "What are three things you are thankful for right now that you usually forget about?",
-      "Who is someone you are thankful for, and have you ever told them?",
-      "Why do you think it is easier to notice what we do not have than what we do have?"
-    ],
+    "questions": {
+      "younger": [
+        "What are three things you are thankful for right now that you usually forget about?",
+        "Who is someone you are thankful for, and have you ever told them?",
+        "Why do you think it is easier to notice what we do not have than what we do have?"
+      ],
+      "older": [
+        "Paul told a suffering church to give thanks “in every circumstance.” Is there a circumstance right now where giving thanks feels hard?",
+        "Complaining can feel like being honest. When is it honest, and when is it just a habit?",
+        "How does a thankful person treat the people who serve them, like a cashier or a bus driver? What does that show about gratitude?"
+      ]
+    },
     "activity": "Go around the table and each person names one thing they are thankful for today that they have never mentioned before.",
     "prayer": "Father, thank you for all the good gifts you give me every day. Help me notice them and have a thankful heart. Amen."
   },
@@ -675,15 +1035,23 @@
     "id": "prayer",
     "title": "Talking With God",
     "theme": "Prayer",
+    "group": "following",
     "passage": "Matthew 7:7",
     "passageText": "Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you.",
     "bigIdea": "Prayer is talking with a Father who loves to hear you, with no magic words and no fancy speech required.",
     "reflection": "Some people think prayer has to use special words, or that you have to be really good for God to listen. Neither is true. Prayer is just talking with God, who is your Father. You can tell him you are scared, thank him for a good day, say sorry when you mess up, or ask him for help. You do not have to be fancy. You just have to be honest.\n\nAnd God always hears. That does not mean he always says yes, the way even a good parent does not say yes to everything, because he knows what is best better than we do. But he always listens, he is never too busy, and he loves it when his children come to talk to him. The most important thing about prayer is not getting it perfect. It is just starting.",
-    "questions": [
-      "What do you usually talk to God about, and what do you never talk to him about?",
-      "Why do you think God sometimes says no or wait instead of yes?",
-      "When is a good time for you to pray each day?"
-    ],
+    "questions": {
+      "younger": [
+        "What do you usually talk to God about, and what do you never talk to him about?",
+        "Why do you think God sometimes says no or wait instead of yes?",
+        "When is a good time for you to pray each day?"
+      ],
+      "older": [
+        "Ask, seek, knock: each takes more effort than the one before. What do you think Jesus is teaching about how to pray?",
+        "What do you do with a prayer that has not been answered the way you hoped?",
+        "Jesus goes on to say that no father would give his son a stone when he asks for bread. What does that tell you about the answers God gives?"
+      ]
+    },
     "activity": "Each person prays one short, honest sentence out loud, about anything, to practice that prayer does not have to be fancy.",
     "prayer": "Father, thank you that I can talk to you about anything, anytime. Help me remember to come to you every day. Amen."
   },
@@ -691,31 +1059,51 @@
     "id": "the-bible",
     "title": "A Light For The Path",
     "theme": "God's Word",
+    "group": "following",
     "passage": "Psalm 119:105",
     "passageText": "Your word is a lamp to my feet and a light to my path.",
     "bigIdea": "The Bible is how God talks to us. It is a light that shows us the way to go.",
     "reflection": "Imagine walking down a dark path at night with no flashlight. You would trip, get lost, and be afraid. Now imagine someone hands you a lamp. You can see the next step. That is what the Bible is. It is God's word to us, a light that shows us who he is, who we are, and how to live.\n\nThe Bible is not just an old book of rules. It is the true story of how God made the world, how people broke it, and how Jesus came to rescue it, and it is still rescuing people today. When we read it, God is actually speaking to us. That is why we read it together and on our own, not because we have to, but because it is how we hear the voice of the One who loves us most.",
-    "questions": [
-      "What is your favorite story or verse in the Bible, and why?",
-      "How is the Bible different from every other book?",
-      "What is one way we could read the Bible together more often?"
-    ],
+    "questions": {
+      "younger": [
+        "What is your favorite story or verse in the Bible, and why?",
+        "How is the Bible different from every other book?",
+        "What is one way we could read the Bible together more often?"
+      ],
+      "older": [
+        "A lamp to your feet lights the next step, not the whole road. What does that say about how the Bible guides you?",
+        "When you have a big question, where do you look first: a search, a friend, a video, the Bible? Why?",
+        "Psalm 119 is the longest chapter in the Bible, and all of it is about loving God's word. What would it take for you to want to read it, and not only know you should?"
+      ]
+    },
     "activity": "Each person picks one short verse to try to remember by the end of the week, and you say them together next time.",
-    "prayer": "God, thank you for the Bible, where you speak to us. Help us love to read it and to follow the light it gives. Amen."
+    "prayer": "God, thank you for the Bible, where you speak to us. Help us love to read it and to follow the light it gives. Amen.",
+    "grownups": {
+      "line": "If you want to read the Bible for yourself and do not know where to begin, start here.",
+      "href": "/help/reading-the-bible"
+    }
   },
   {
     "id": "trusting-enough-to-obey",
     "title": "Trusting Enough To Obey",
     "theme": "Obedience",
+    "group": "following",
     "passage": "John 14:15",
     "passageText": "If you love Me, you will keep My commandments.",
     "bigIdea": "We obey God not to make him love us, but because we trust that he loves us and knows what is best.",
     "reflection": "Obeying is hard, because sometimes we want to do the opposite of what we are told. But think about why a good parent gives rules, do not touch the hot stove, look both ways before you cross. The rules are not there to ruin your fun. They are there because they love you and can see what you cannot.\n\nGod is like that, only perfectly. His commands are always for our good, even when we do not understand them in the moment. We do not obey God to earn his love, because we already have it. We obey because we trust that the One who made us and loves us knows what is best, and that trusting him is always wiser than trusting ourselves.",
-    "questions": [
-      "When is it hardest for you to obey, and why?",
-      "Can you think of a rule that felt unfair but turned out to be for your good?",
-      "What is the difference between obeying to earn love and obeying because you are already loved?"
-    ],
+    "questions": {
+      "younger": [
+        "When is it hardest for you to obey, and why?",
+        "Can you think of a rule that felt unfair but turned out to be for your good?",
+        "What is the difference between obeying to earn love and obeying because you are already loved?"
+      ],
+      "older": [
+        "What do you actually obey right now? What voice or appetite or crowd has your reflexes trained?",
+        "Where have you seen discipline produce freedom in your own life?",
+        "Is there one command of Jesus you have been deliberately not looking at? What would obeying it cost?"
+      ]
+    },
     "activity": "Each person names one area where obeying is hard for them, and the family prays for each other in those exact spots.",
     "prayer": "Father, help me trust you enough to obey, even when it is hard, because I know you love me and want what is best. Amen."
   },
@@ -723,15 +1111,23 @@
     "id": "kindness",
     "title": "Small Things With Great Love",
     "theme": "Kindness",
+    "group": "character",
     "passage": "Ephesians 4:32",
     "passageText": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you.",
     "bigIdea": "Kindness is love you can see. It is noticing other people and doing the small good thing.",
     "reflection": "Kindness is not a big, dramatic thing most of the time. It is small. It is noticing the kid sitting alone and going to sit with them. It is helping without being asked. It is a gentle word when you could have said a sharp one. Kindness is just love made small enough to fit into an ordinary day.\n\nThe reason Christians are meant to be kind is that God was kind to us first. While we were still a mess, he was gentle and generous with us in Jesus. When we are kind to others, especially to people who cannot do anything for us in return, we are showing the world a little picture of what God is like. And you do not have to wait until you are grown up to start. You can be kind today.",
-    "questions": [
-      "Who showed you kindness recently, and how did it feel?",
-      "Who is someone at school or in your life who could use some kindness?",
-      "What is one small kind thing you could do tomorrow without being asked?"
-    ],
+    "questions": {
+      "younger": [
+        "Who showed you kindness recently, and how did it feel?",
+        "Who is someone at school or in your life who could use some kindness?",
+        "What is one small kind thing you could do tomorrow without being asked?"
+      ],
+      "older": [
+        "Is it harder to be kind to strangers, to friends, or to your own family? Why?",
+        "Paul says to be “tenderhearted.” Where being tough or sarcastic gets rewarded, what does tenderness cost you?",
+        "What is the difference between being nice and being kind? Can you be one without the other?"
+      ]
+    },
     "activity": "Each person commits to one secret act of kindness this week, done without telling anyone, and you check in next time.",
     "prayer": "God, you were kind to me first. Help me notice the people around me and show them your kindness in small ways. Amen."
   },
@@ -739,15 +1135,23 @@
     "id": "joy",
     "title": "A Happiness That Holds",
     "theme": "Joy",
+    "group": "character",
     "passage": "Nehemiah 8:10",
     "passageText": "Then Nehemiah told them, “Go and eat what is rich, drink what is sweet, and send out portions to those who have nothing prepared, since today is holy to our Lord. Do not grieve, for the joy of the LORD is your strength.”",
     "bigIdea": "Joy is deeper than happy feelings. It is a settled gladness that comes from belonging to God, even on hard days.",
     "reflection": "Being happy comes and goes. You feel happy when you get ice cream and sad when you drop it. That is normal. But joy is something deeper than a feeling that changes with the weather. Joy is a settled gladness that stays underneath, because it does not come from your circumstances. It comes from God.\n\nA person who knows they are loved by God, forgiven, and safe in his hands has a reason for joy that no bad day can take away. That is why Christians can have joy even in hard times, not by pretending the hard thing is not hard, but by knowing that the deepest thing about them is still true, they belong to God, and nothing can change that. That joy is not just a nice feeling. The Bible says it is our strength.",
-    "questions": [
-      "What is the difference between being happy and having joy?",
-      "What are some things that make you happy but do not last?",
-      "What is one thing about God that gives you joy even on a bad day?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between being happy and having joy?",
+        "What are some things that make you happy but do not last?",
+        "What is one thing about God that gives you joy even on a bad day?"
+      ],
+      "older": [
+        "Nehemiah tells the people to celebrate and to send food to “those who have nothing prepared.” How is joy connected to generosity?",
+        "Just before this, the people were weeping as they heard God's law read. Why would Nehemiah tell them to celebrate instead?",
+        "Can a person be sad and have joy at the same time? When have you seen that?"
+      ]
+    },
     "activity": "Each person shares one hard thing and one true thing about God that is still good even in the middle of it.",
     "prayer": "Father, thank you that joy comes from you and not from my circumstances. Be my strength and my joy today. Amen."
   },
@@ -755,15 +1159,23 @@
     "id": "peace",
     "title": "When Your Heart Is Worried",
     "theme": "Peace",
+    "group": "feelings",
     "passage": "John 14:27",
     "passageText": "Peace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid.",
     "bigIdea": "Jesus gives a peace that does not wait for the problems to go away, because it rests on him and not on them.",
     "reflection": "Everybody worries sometimes, even grown-ups, even brave people. Your mind starts running, what if this happens, what if that goes wrong, and your heart feels tight and scared. The world says you can find peace by fixing everything or controlling everything, but you cannot control everything, so that kind of peace never really comes.\n\nJesus offers a different kind. His peace does not depend on everything going right. It is the calm that comes from knowing that God is good, that he is in control, and that he is holding you, even when things are hard. When you are worried, you can tell God exactly what is scaring you, and ask him to trade your worry for his peace, the peace that the world cannot give and cannot take away.",
-    "questions": [
-      "What kinds of things make you worried or anxious?",
-      "What does it feel like in your body when you are worried?",
-      "What is one worry you could hand to God right now in prayer?"
-    ],
+    "questions": {
+      "younger": [
+        "What kinds of things make you worried or anxious?",
+        "What does it feel like in your body when you are worried?",
+        "What is one worry you could hand to God right now in prayer?"
+      ],
+      "older": [
+        "Jesus said this the night before he died. What does it tell you about his peace that he gave it then?",
+        "The world offers its own kinds of peace: distraction, control, staying busy, going numb. Which do you reach for?",
+        "Is worry a sign that someone lacks faith? How would you answer a friend who thinks so?"
+      ]
+    },
     "activity": "Each person writes or says one worry, and together you pray, handing each one to God, then take a slow deep breath as a sign of trusting him.",
     "prayer": "Jesus, thank you for giving a peace the world cannot give. When my heart is worried, help me trust that you are holding me. Amen."
   },
@@ -771,15 +1183,23 @@
     "id": "the-trinity",
     "title": "Three And Yet One",
     "theme": "The Trinity",
+    "group": "god",
     "passage": "Matthew 28:19-20",
     "passageText": "Therefore go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit, and teaching them to obey all that I have commanded you. And surely I am with you always, even to the end of the age.",
     "bigIdea": "There is one God who lives forever as Father, Son, and Holy Spirit, three persons who have always loved each other.",
     "reflection": "When Jesus told his friends to baptize people, he said one name, the name of the Father and the Son and the Holy Spirit. One name, three persons. This is one of the deepest things about God, and even the wisest grown-ups cannot fully wrap their minds around it. That is okay. A God small enough to fully understand would not be much of a God.\n\nBecause God has always been three persons loving each other, God has always been love, and that is the part worth holding onto. He did not need to make us to have someone to love. He already had it, forever. And then he made us anyway, just so we could come and share in that love.",
-    "questions": [
-      "What is something about God that is too big for us to fully understand?",
-      "If God has always been three persons loving each other, what does that tell us about God?",
-      "How does it feel to know God made you so you could share in his love?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something about God that is too big for us to fully understand?",
+        "If God has always been three persons loving each other, what does that tell us about God?",
+        "How does it feel to know God made you so you could share in his love?"
+      ],
+      "older": [
+        "Christians do not believe in three gods, or in one God wearing three masks. Why do you think the early church worked so hard to say it exactly right?",
+        "Some people picture God as a lonely being, others as a distant force. How is the God of the Trinity different from both?",
+        "Jesus says to baptize “in the name” of the Father, the Son, and the Holy Spirit: one name, not three. Why does that matter?"
+      ]
+    },
     "activity": "Look at one apple together and notice it has skin, fruit, and seeds, all one apple, then talk about how no picture fully shows the Trinity but God is still one God in three persons.",
     "prayer": "Father, Son, and Holy Spirit, thank you that you have always been love and that you made me to share in it. Amen."
   },
@@ -787,15 +1207,23 @@
     "id": "creation",
     "title": "God Called It Good",
     "theme": "Creation",
+    "group": "story",
     "passage": "Genesis 1:1",
     "passageText": "In the beginning God created the heavens and the earth.",
     "bigIdea": "The world was spoken into being by a God who meant to make it and called it good.",
     "reflection": "Before there was anything, there was God. No stars, no oceans, no light. And then God spoke, and there was a universe. He did not have to. He chose to. Every mountain, every bug, every color in a sunset came from a God who was making something on purpose and stepping back to call it good.\n\nThat means you are not an accident either. The same God who flung the stars into place made you on purpose, with care, knowing exactly what he was doing. A world that came from a good Maker is a world you can receive each morning as a gift, not just a thing that happens to be there.",
-    "questions": [
-      "What is your favorite thing God made, and why?",
-      "How is it different to think the world was made on purpose instead of by accident?",
-      "If God made you on purpose, what does that say about how much you matter?"
-    ],
+    "questions": {
+      "younger": [
+        "What is your favorite thing God made, and why?",
+        "How is it different to think the world was made on purpose instead of by accident?",
+        "If God made you on purpose, what does that say about how much you matter?"
+      ],
+      "older": [
+        "If the world was made on purpose, what changes about the way you study science, make art, or do anything else?",
+        "What would you say to a friend who thinks life has no meaning because the universe has no Maker?",
+        "God called his world good before anyone did anything in it. What does that say about enjoying ordinary things like food, a walk, or music?"
+      ]
+    },
     "activity": "Go outside and each person finds one small made thing, a leaf, a stone, a bug, and looks at it closely, noticing the care that went into it.",
     "prayer": "God, you made everything on purpose, including me. Thank you for a world I can receive as a gift each morning. Amen."
   },
@@ -803,15 +1231,23 @@
     "id": "the-fall",
     "title": "How It All Went Wrong",
     "theme": "The Fall",
+    "group": "story",
     "passage": "Genesis 3:6",
     "passageText": "When the woman saw that the tree was good for food and pleasing to the eyes, and that it was desirable for obtaining wisdom, she took the fruit and ate it. She also gave some to her husband who was with her, and he ate it.",
     "bigIdea": "The world is broken because people stopped trusting God and went their own way, and that same pull lives in all of us.",
     "reflection": "God gave the first people a whole world and only one rule. Trust me about this one tree. But they listened to a lie that said God was holding out on them, and they reached for the one thing he said no to. In that moment, trust broke, and the brokenness spread into everything, into people, into the world, into us.\n\nYou do not have to look far to see it. Nobody teaches a toddler to be selfish, it just comes out. That same pull to want our own way more than we want to obey God lives in every one of us. This is sad, but it is also the first honest step toward needing a rescuer. We cannot be helped until we admit what is actually wrong.",
-    "questions": [
-      "What was the lie that made the first people stop trusting God?",
-      "Have you ever wanted your own way so badly you did the wrong thing even though you knew better?",
-      "Why is it important to admit that something is broken in all of us?"
-    ],
+    "questions": {
+      "younger": [
+        "What was the lie that made the first people stop trusting God?",
+        "Have you ever wanted your own way so badly you did the wrong thing even though you knew better?",
+        "Why is it important to admit that something is broken in all of us?"
+      ],
+      "older": [
+        "The fruit was “good for food and pleasing to the eyes.” Do temptations in your life usually look bad at first? What do they look like?",
+        "The verse says her husband was with her. What does it mean to share in a wrong by going along with it?",
+        "A few verses later the man blames the woman and the woman blames the serpent. Why is blame so much easier than confession?"
+      ]
+    },
     "activity": "Carefully build a tall tower of blocks and then pull out one block near the bottom, watching it fall, and talk about how one broken trust made everything come down.",
     "prayer": "God, I admit there is a pull in me to go my own way. Thank you that admitting it is the first step toward you. Amen."
   },
@@ -819,15 +1255,23 @@
     "id": "gods-promises",
     "title": "The God Who Keeps His Word",
     "theme": "God's Promises",
+    "group": "god",
     "passage": "Joshua 21:45",
     "passageText": "Not one of all the LORD’s good promises to the house of Israel had failed; everything was fulfilled.",
     "bigIdea": "God always keeps his promises, every single one, no matter how long it takes.",
     "reflection": "People break promises all the time. They mean well, but they forget, or they change their minds, or they just cannot pull it off. God is not like that. The Bible says that of all the good things God promised his people, not even one failed to come true. Every single one. That is a record nobody else has.\n\nThis matters because God has made promises to you too. He promised to never leave you. He promised to forgive you when you come to him. He promised to make everything right one day. When you wonder whether you can really count on God, you can look back at his record. He has never once broken his word, and he is not going to start now.",
-    "questions": [
-      "Has anyone ever broken a promise to you, and how did that feel?",
-      "What is one promise God has made that you find hard to believe sometimes?",
-      "How does it help to know God has never broken a single promise?"
-    ],
+    "questions": {
+      "younger": [
+        "Has anyone ever broken a promise to you, and how did that feel?",
+        "What is one promise God has made that you find hard to believe sometimes?",
+        "How does it help to know God has never broken a single promise?"
+      ],
+      "older": [
+        "Israel waited generations for the land God promised to Abraham. How do you trust a promise that takes longer than a lifetime?",
+        "Are there promises people say God made that he never actually made? How can you tell the difference?",
+        "Which of God's promises do you most need to be true this year?"
+      ]
+    },
     "activity": "Write down one promise from the Bible on a piece of paper and put it somewhere you will see it all week as a reminder that God keeps his word.",
     "prayer": "God, you have never broken a single promise. Help me trust your word even when I have to wait. Thank you that I can count on you. Amen."
   },
@@ -835,15 +1279,23 @@
     "id": "the-incarnation",
     "title": "God Came Close",
     "theme": "The Incarnation",
+    "group": "story",
     "passage": "John 1:14",
     "passageText": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.",
     "bigIdea": "God did not stay far away. He became one of us, with skin and a heartbeat, so we could know him.",
     "reflection": "Think about how amazing this is. The God who made the entire universe, who needs nothing, who was never born and never dies, chose to become a tiny baby. He had to be fed and held and taught to walk, just like you once were. The Maker of the stars learned to count them on his fingers.\n\nWhy would God do that? Because he did not want to save us from a distance. He wanted to come close enough to be held. He knows what it is like to be tired, to be hungry, to cry, to have a friend let him down. So when you are going through something hard, you are not talking to a God who does not get it. You are talking to one who has been here.",
-    "questions": [
-      "Why do you think God chose to become a baby instead of just staying in heaven?",
-      "How does it change things to know Jesus knows what it feels like to be tired, sad, or hurt?",
-      "What is something hard you are going through that Jesus understands from the inside?"
-    ],
+    "questions": {
+      "younger": [
+        "Why do you think God chose to become a baby instead of just staying in heaven?",
+        "How does it change things to know Jesus knows what it feels like to be tired, sad, or hurt?",
+        "What is something hard you are going through that Jesus understands from the inside?"
+      ],
+      "older": [
+        "John says the Word “made His dwelling among us.” If God came close in a real body, what does that say about the ordinary places you live?",
+        "Jesus was “full of grace and truth.” Which of those comes easier to you, and which do people usually expect from Christians?",
+        "Why does it matter that Jesus was fully human, and not God pretending to be one?"
+      ]
+    },
     "activity": "Hold or look at a photo of a tiny baby and talk about how the God who made everything once started out that small, on purpose, for us.",
     "prayer": "Jesus, you came all the way down to be one of us. Thank you that you understand my life from the inside. Amen."
   },
@@ -851,15 +1303,23 @@
     "id": "the-miracles-of-jesus",
     "title": "A Glimpse Of The Mender",
     "theme": "The Miracles Of Jesus",
+    "group": "story",
     "passage": "Matthew 11:5",
     "passageText": "The blind receive sight, the lame walk, the lepers are cleansed, the deaf hear, the dead are raised, and the good news is preached to the poor.",
     "bigIdea": "The miracles of Jesus were small previews of the day he makes everything broken whole again.",
     "reflection": "When Jesus healed a blind man or calmed a storm or fed a hungry crowd, he was doing more than showing off his power. He was giving people a glimpse of what he came to do. Every miracle was a little picture of the big rescue, a world where eyes that could not see now can, where the hungry are fed, where what was broken gets mended.\n\nThat is also why the miracles never stayed. The people Jesus healed still died one day, and the crowd he fed was hungry again the next morning. The miracles were pointing past themselves, to a King who will one day mend the whole world and not just one afternoon of it. When something in your family is broken and stays broken, the miracles are still a promise that it will not stay that way forever.",
-    "questions": [
-      "Which miracle of Jesus is your favorite, and why?",
-      "How is a miracle a little preview of the world Jesus is coming to make?",
-      "What is something broken now that you cannot wait for Jesus to make whole?"
-    ],
+    "questions": {
+      "younger": [
+        "Which miracle of Jesus is your favorite, and why?",
+        "How is a miracle a little preview of the world Jesus is coming to make?",
+        "What is something broken now that you cannot wait for Jesus to make whole?"
+      ],
+      "older": [
+        "Jesus said this to messengers from John the Baptist, who was in prison and asking whether Jesus was really the one. What does it tell you that Jesus answered doubt with evidence and not a scolding?",
+        "Many people today find miracles hard to believe. What would it take for you to believe one happened?",
+        "If miracles are previews of a mended world, what do they mean for the things that have not been healed yet?"
+      ]
+    },
     "activity": "Fix something small together that is broken, like gluing a toy or mending a tear, and talk about how Jesus is in the business of making broken things whole.",
     "prayer": "Jesus, your miracles show me the kind of King you are, the One who mends what is broken. Thank you for the world you are coming to make. Amen."
   },
@@ -867,15 +1327,23 @@
     "id": "the-second-coming",
     "title": "He Is Coming Back",
     "theme": "The Second Coming",
+    "group": "story",
     "passage": "Acts 1:11",
     "passageText": "“Men of Galilee,” they said, “why do you stand here looking into the sky? This same Jesus, who has been taken from you into heaven, will come back in the same way you have seen Him go into heaven.”",
     "bigIdea": "Jesus came once as a baby to save us, and he is coming again as a King to set everything right.",
     "reflection": "The story of Jesus is not over. He came the first time quietly, born in a small town, to live and die and rise for us. But the Bible says he is coming back, and the second time will be different. He will come openly, as the King he really is, to judge what is wrong and to make all things new.\n\nThis is not meant to scare you if you belong to him. It is meant to give you hope. History is not just spinning in circles or fading into nothing. It is heading somewhere, toward a day when Jesus returns and every wrong thing gets put right. The last word does not belong to sadness or death. It belongs to him.",
-    "questions": [
-      "What is the difference between how Jesus came the first time and how he will come back?",
-      "Why is it good news, not scary news, that Jesus is coming back, for those who belong to him?",
-      "What is one wrong thing in the world you would love for Jesus to put right when he comes?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between how Jesus came the first time and how he will come back?",
+        "Why is it good news, not scary news, that Jesus is coming back, for those who belong to him?",
+        "What is one wrong thing in the world you would love for Jesus to put right when he comes?"
+      ],
+      "older": [
+        "The two men in white asked the disciples why they stood looking into the sky. What were the disciples supposed to do while they waited?",
+        "People have predicted the date of Jesus' return many times and been wrong. Why do you think Jesus said no one knows the day or the hour?",
+        "If Jesus is coming back to set things right, what wrongs should Christians work against now, instead of only waiting?"
+      ]
+    },
     "activity": "Talk about how you wait for someone you love to come home, then talk about how waiting for Jesus to return is the biggest homecoming of all.",
     "prayer": "Jesus, you are coming back to make everything right. Help me live ready and full of hope while I wait for you. Amen."
   },
@@ -883,15 +1351,23 @@
     "id": "the-new-creation",
     "title": "Everything New Again",
     "theme": "The New Creation",
+    "group": "story",
     "passage": "Revelation 21:5",
     "passageText": "And the One seated on the throne said, “Behold, I make all things new.” Then He said, “Write this down, for these words are faithful and true.”",
     "bigIdea": "God is going to make the world new, the way it was always meant to be, rather than throw it away.",
     "reflection": "Some people think the end of the story is everyone floating off to heaven while the world burns up. But that is not the picture the Bible gives. God does not say I am making all new things and throwing the old away. He says I am making everything new. The same world, healed. Mended. Made the way it was always supposed to be.\n\nThat means the things you love here are not lost forever. Laughter, friendship, oceans, music, the good of this world will be there in the new creation, only better, with all the sad parts taken out. The story does not end with an escape. It ends with a homecoming, a world remade, where God lives with his people forever.",
-    "questions": [
-      "What is the difference between making all new things and making everything new?",
-      "What is something good about this world that you are glad will be in the new creation?",
-      "How does it change things to know the world will be healed, not thrown away?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between making all new things and making everything new?",
+        "What is something good about this world that you are glad will be in the new creation?",
+        "How does it change things to know the world will be healed, not thrown away?"
+      ],
+      "older": [
+        "What work or art or kindness do you hope lasts into the new creation?",
+        "God says, “Write this down, for these words are faithful and true.” Why might people need this promise in writing?",
+        "What could “I make all things new” mean for a person who carries shame about the past?"
+      ]
+    },
     "activity": "Take something old and worn and clean it up or restore it as best you can, then talk about how God is going to make the whole world new like that, only perfectly.",
     "prayer": "God, thank you that you are making everything new. Help me look forward to the world you are going to heal. Amen."
   },
@@ -899,15 +1375,23 @@
     "id": "gentleness",
     "title": "Strong Enough To Be Gentle",
     "theme": "Gentleness",
+    "group": "character",
     "passage": "Philippians 4:5",
     "passageText": "Let your gentleness be apparent to all. The Lord is near.",
     "bigIdea": "Gentleness is strength that chooses to be careful with people, and it takes more strength than shoving does.",
     "reflection": "People think being gentle means being weak, but it is the opposite. A strong person can shove and shout and get their way. It takes real strength to hold back, to be careful with someone, to use a soft word when a sharp one was right there. Gentleness is strength that has decided to be careful, like a big dog being careful with a small child.\n\nJesus was the strongest person who ever lived, and he was gentle. He did not snuff out the weak or crush the struggling. He was tender with the people everyone else gave up on. When you choose to be gentle, with your hands, your words, your tone, you are showing what God is like, because our God is gentle with us.",
-    "questions": [
-      "What is the difference between being gentle and being weak?",
-      "When is it hardest for you to be gentle instead of rough or loud?",
-      "Who is someone in your life who needs you to be especially gentle with them?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between being gentle and being weak?",
+        "When is it hardest for you to be gentle instead of rough or loud?",
+        "Who is someone in your life who needs you to be especially gentle with them?"
+      ],
+      "older": [
+        "Paul follows “Let your gentleness be apparent to all” with “The Lord is near.” How might the nearness of God make gentleness possible?",
+        "Is it harder to be gentle with people online or in person? Why?",
+        "Gentleness is not the same as never disagreeing. How can you disagree with someone and still be gentle?"
+      ]
+    },
     "activity": "Practice holding something fragile, like an egg or a small flower, passing it carefully from person to person, and talk about handling people with that same care.",
     "prayer": "God, you are gentle with me even though you are so strong. Help me be gentle too, careful with people in my words and my hands. Amen."
   },
@@ -915,15 +1399,23 @@
     "id": "goodness",
     "title": "Good All The Way Through",
     "theme": "Goodness",
+    "group": "character",
     "passage": "Galatians 6:9",
     "passageText": "Let us not grow weary in well-doing, for in due time we will reap a harvest if we do not give up.",
     "bigIdea": "Goodness is choosing to do the right thing, again and again, even when no one notices and it would be easier not to.",
     "reflection": "It is easy to do good once, when people are watching and you get a thank you. It is harder to keep doing good when nobody notices and you are tired and it would be so much easier to stop. But that is what real goodness is, not a one time act but a habit, the slow steady choice to do right even when it costs you.\n\nThe verse warns us about getting weary, because we do get tired of doing good. We want to give up. But it promises that good is never wasted. Like seeds in a field, the good you do is growing something, even when you cannot see it yet. Keep going. Keep choosing right. The harvest is coming.",
-    "questions": [
-      "Why is it harder to keep doing good than to do good just once?",
-      "When do you most feel like giving up on doing the right thing?",
-      "What is one good thing you can keep doing this week even if no one notices?"
-    ],
+    "questions": {
+      "younger": [
+        "Why is it harder to keep doing good than to do good just once?",
+        "When do you most feel like giving up on doing the right thing?",
+        "What is one good thing you can keep doing this week even if no one notices?"
+      ],
+      "older": [
+        "Where are you tired of doing the right thing because it does not seem to change anything?",
+        "Paul says the harvest comes “in due time.” Why do you think God so often makes us wait to see it?",
+        "What is the difference between being good and looking good? Which one is this verse about?"
+      ]
+    },
     "activity": "Pick one quiet good deed to do every day this week, like making a bed or helping clear the table, and keep going even when no one says thank you.",
     "prayer": "God, help me not get tired of doing good. Even when no one notices, you do. Help me keep choosing right and never give up. Amen."
   },
@@ -931,15 +1423,23 @@
     "id": "perseverance",
     "title": "Keep Going",
     "theme": "Perseverance",
+    "group": "character",
     "passage": "Hebrews 12:1",
     "passageText": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off every encumbrance and the sin that so easily entangles, and let us run with endurance the race set out for us.",
     "bigIdea": "Perseverance is keeping on, one step at a time, all the way to the end, when quitting would be easier.",
     "reflection": "A race is not won by whoever starts fastest. It is won by whoever keeps going. Anyone can start. The hard part is the middle, when your legs burn and you cannot see the finish and everything in you wants to stop. Perseverance is the choice you make right there, to take one more step, and then another.\n\nFollowing God is like that race. There are easy parts and hard parts, and the hard parts are where a lot of people quit. But the Bible says to run with perseverance, not perfectly, not fast, just without quitting. You do not have to see the finish line to keep moving toward it. You just have to take the next step, and trust the One who is cheering you on.",
-    "questions": [
-      "What is something hard you wanted to quit but were glad you stuck with?",
-      "What makes you want to give up when things get difficult?",
-      "What is one hard thing right now where you need to take just the next step?"
-    ],
+    "questions": {
+      "younger": [
+        "What is something hard you wanted to quit but were glad you stuck with?",
+        "What makes you want to give up when things get difficult?",
+        "What is one hard thing right now where you need to take just the next step?"
+      ],
+      "older": [
+        "The “great cloud of witnesses” are the people of Hebrews 11, and some of them failed badly and kept going. Whose story gives you courage to keep running?",
+        "Hebrews says to throw off “every encumbrance” as well as sin. What slows you down that is not sin, just weight?",
+        "What is the difference between quitting something that is bad for you and quitting because it got hard?"
+      ]
+    },
     "activity": "Pick a physical challenge, like holding a wall sit or doing a puzzle, and cheer each other on to keep going past the point where you want to stop.",
     "prayer": "God, when things get hard I want to quit. Help me keep going, one step at a time, trusting that you are with me all the way to the end. Amen."
   },
@@ -947,16 +1447,28 @@
     "id": "stewardship",
     "title": "Taking Care Of What Is Not Yours",
     "theme": "Stewardship",
+    "group": "everyday",
     "passage": "1 Corinthians 4:2",
     "passageText": "Now it is required of stewards that they be found faithful.",
     "bigIdea": "Everything we have is really God's, given to us to take care of well, not to use up however we please.",
     "reflection": "Imagine a friend lets you borrow something they love and asks you to take good care of it. You would be careful with it, because it is not really yours. The Bible says that is how everything in our lives works. Our money, our time, our talents, even our bodies, are gifts God has trusted us with. We are caretakers, not owners.\n\nThat changes how a family talks about money and time. If it is all on loan, then the question is never only what we want to do with it, but what the Owner would want done. Parents, this lands on us first. Children believe what they watch, and they will learn what we think about who our things belong to long before they hear what we say about it.",
-    "questions": [
-      "What is the difference between owning something and being trusted to take care of it?",
-      "What is one thing God has given you that you could take better care of?",
-      "How might you use your time, money, or talents in a way that honors the One who gave them?"
-    ],
+    "questions": {
+      "younger": [
+        "What is the difference between owning something and being trusted to take care of it?",
+        "What is one thing God has given you that you could take better care of?",
+        "How might you use your time, money, or talents in a way that honors the One who gave them?"
+      ],
+      "older": [
+        "If your time, money, and talents are on loan from God, what would change about how you spend a Saturday?",
+        "Paul says stewards must be “found faithful,” not impressive. What is the difference?",
+        "Your phone, your body, your future: which is hardest to think of as God's and not only yours? Why?"
+      ]
+    },
     "activity": "Pick one thing your family has been given, like a home, some money, or a skill, and decide together on one way to use it well to bless someone else this week.",
-    "prayer": "God, everything I have is really yours, trusted to me to take care of. Help me be faithful with what you have given me. Amen."
+    "prayer": "God, everything I have is really yours, trusted to me to take care of. Help me be faithful with what you have given me. Amen.",
+    "grownups": {
+      "line": "If money is a worry in your house, start here.",
+      "href": "/help/money"
+    }
   }
 ]

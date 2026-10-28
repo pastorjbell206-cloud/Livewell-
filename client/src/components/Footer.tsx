@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
-import { HELP_LINK, SITE_NAV_GROUPS } from "@/lib/siteNav";
+import { HELP_LINK, LIBRARY_LINK, SITE_NAV_GROUPS } from "@/lib/siteNav";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 // Vertical padding brings each footer link to a ~44px tap target (Apple/Google
@@ -20,10 +20,11 @@ const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
 
 /**
  * Footer mirrors the header: the same five groups from lib/siteNav.ts (Study,
- * Essays, Books, Resources, About), each showing every link it holds, so the
- * destinations that sit behind a single header link are one click away here.
- * About carries Speaking, Contact, the newsletter, and the outbound homes of
- * PCN and ENDS. Find Help stays in the bottom bar on every page.
+ * Topics, Family, Essays, About), each showing every link it holds, so the
+ * destinations that sit behind a header menu are one click away here. Topics
+ * ends with /resources, the one page of everything to use. About carries the
+ * books, Speaking, Contact, the newsletter, and the outbound homes of PCN and
+ * ENDS. Find Help and My Library stay in the bottom bar on every page.
  */
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
@@ -81,6 +82,7 @@ export default function Footer() {
           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <Link href={HELP_LINK.href} style={{ ...legalLink, color: "var(--mustard)", fontWeight: 600 }}>{HELP_LINK.label}</Link>
+            <Link href={LIBRARY_LINK.href} style={legalLink}>{LIBRARY_LINK.label}</Link>
             <a href="/privacy" style={legalLink}>Privacy Policy</a>
             <a href="/terms" style={legalLink}>Terms of Service</a>
             <a href="/accessibility" style={legalLink}>Accessibility</a>

@@ -180,7 +180,7 @@ describe("/family/devotions/:id", () => {
     renderAt("/family/devotions/identity");
     expect(await screen.findByRole("heading", { level: 1, name: row("identity").title })).toBeInTheDocument();
     for (const t of ["Read", "Talk", "Ask", "Do", "Remember", "Pray"]) expect(screen.getByRole("heading", { level: 2, name: t })).toBeInTheDocument();
-    expect(screen.getByText("1 of 72 · Weekly devotions")).toBeInTheDocument();
+    expect(screen.getByText("1 of 72 · Foundations")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Start at the table" })).toHaveAttribute("href", "/family/devotions/identity?mode=table");
     expect(screen.getByRole("button", { name: "Print" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: `Next: ${INDEX.devotions[1].title}` })).toHaveAttribute("href", `/family/devotions/${INDEX.devotions[1].id}`);

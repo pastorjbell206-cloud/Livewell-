@@ -8,7 +8,9 @@
  * appear here (see lib/shelf.ts).
  *
  * The shelf itself comes from the committed list, so the sections paint before
- * the API answers; the listing only adds reading times and the Latest group.
+ * the API answers; the listing only adds reading times and the Latest group,
+ * and the page asks it for just those rows (shelfListingInput), not every
+ * published post.
  *
  * URL parameters: ?section=<slug> shows one section, ?track=<slug> shows the
  * sections that answer for a taxonomy track (old hub links land here), and
@@ -43,6 +45,7 @@ import {
   sectionBySlug,
   sectionHref,
   sectionsForTrack,
+  shelfListingInput,
   type ShelfSection,
 } from "@/lib/shelf";
 
@@ -86,9 +89,12 @@ function parseSearchParams(): URLSearchParams {
 
 const SITE = "https://www.livewellbyjamesbell.co";
 
+/** The listing rows this page can use: the public shelf by slug, and Latest. */
+const SHELF_LISTING = shelfListingInput();
+
 export default function Writing() {
   const [location] = useLocation();
-  const postsQuery = trpc.posts.listPublished.useQuery();
+  const postsQuery = trpc.posts.listPublished.useQuery(SHELF_LISTING);
 
   // URL-driven filters, re-read on route change during render (the "state
   // from previous renders" pattern) so a link between views updates at once.

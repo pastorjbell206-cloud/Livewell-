@@ -1321,6 +1321,34 @@ async function trpcListPosts(): Promise<any[]> {
   return listSlimPosts();
 }
 
+// posts.listPublished's optional input: { slugs?: string[], since?: ISO date }.
+// With either field, only the rows named by slug, or whose essay date
+// (publishedAt, else createdAt: the shelf's Latest rule) is at or after
+// `since`, come back, in the listing's order; /writing asks for its shelf this
+// way instead of every published row. With neither, the full listing, as
+// before. The dev router applies the same rule (server/posts-listing.ts), and
+// server/posts-listing.test.ts holds the two runtimes to it. Malformed fields
+// are ignored, as this file treats loose input elsewhere. Exported for that
+// test only; the handler is still the default export.
+export function pickListing<T extends { slug?: unknown; publishedAt?: unknown; createdAt?: unknown }>(
+  rows: T[],
+  input: unknown
+): T[] {
+  const ask = (input && typeof input === "object" ? input : {}) as { slugs?: unknown; since?: unknown };
+  const slugs = Array.isArray(ask.slugs) ? (ask.slugs as unknown[]) : null;
+  const since = typeof ask.since === "string" ? Date.parse(ask.since) : NaN;
+  if (!slugs && !Number.isFinite(since)) return rows;
+  const wanted = new Set((slugs ?? []).filter((x): x is string => typeof x === "string"));
+  const time = (d: unknown): number =>
+    d instanceof Date ? d.getTime() : typeof d === "number" ? d : typeof d === "string" && d ? Date.parse(d) : NaN;
+  return rows.filter((r) => {
+    if (typeof r?.slug === "string" && wanted.has(r.slug)) return true;
+    if (!Number.isFinite(since)) return false;
+    const published = time(r?.publishedAt);
+    return (Number.isFinite(published) ? published : time(r?.createdAt)) >= since;
+  });
+}
+
 // Slim list for index/listing pages — identical shape to trpcListPosts.
 async function trpcListPostsForIndex(): Promise<any[]> {
   return listSlimPosts();
@@ -1655,7 +1683,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, { ok: true });
       }
       case "posts.listPublished": {
-        const data = await trpcListPosts();
+        const data = pickListing(await trpcListPosts(), input);
         return trpcOk(res, data);
       }
       case "posts.listAll": {
@@ -2560,7 +2588,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize({ ok: true }) } };
     }
     case "posts.listPublished":
-      return { result: { data: superjson.serialize(await trpcListPosts()) } };
+      return { result: { data: superjson.serialize(pickListing(await trpcListPosts(), input)) } };
     case "posts.listAll": {
       if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       return { result: { data: superjson.serialize(await trpcListPosts()) } };

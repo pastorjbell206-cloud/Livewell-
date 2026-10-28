@@ -1,0 +1,113 @@
+{
+ "slug": "the-council-of-nicaea-what-was-decided-in-325",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/the-council-of-nicaea-what-was-decided-in-325.json (title, excerpt as standfirst, Markdown body). The standfirst line in /home/user/Livewell-/docs/work/essays/the-council-of-nicaea-what-was-decided-in-325.md is identical to the excerpt. I read it against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. To find lines repeated across the shelf, I compared it by 6-word overlap with the other landed essays in /home/user/livewell-land/client/public/essays/. Every quoted string below occurs exactly once in the field named, apart from the Colossians 2:9 wording, which is quoted in the body and again in the Closing Texts as the finding says. The fixes are independent and can be applied in any order. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "Standfirst (the excerpt field, and the italic line under the title in docs/work/essays/the-council-of-nicaea-what-was-decided-in-325.md): \"decided that Jesus Christ is not the first and greatest of God's creatures but God in the same full sense as the Father\"",
+   "problem": "The standfirst turns on a not-A-but-B antithesis, and the brief names a balanced-antithesis standfirst as a template tell. The rejected view (the Son as the first creature) is the body's job, and the body sets it out well. The standfirst only has to say plainly what was decided.",
+   "fix": "Delete \"not the first and greatest of God's creatures but \". The standfirst then reads: \"In 325 the bishops at Nicaea decided that Jesus Christ is God in the same full sense as the Father, and most of the world's churches still confess what they wrote.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Opening, paragraph 3, last sentence: \"sounds a good deal more like most American Christians than anything the bishops said\"",
+   "problem": "\"Most American Christians\" is an unsupported head-count, and a skeptic will ask for the survey. It also points at a group from outside. The final section makes the same claim with \"us\" (\"Constantine's letter sounds most like us\"), which is the brief's \"we before I\" habit, so the opening should start inside the group too.",
+   "fix": "Replace with: \"sounds a good deal more like many of us than anything the bishops said\"",
+   "severity": "should"
+  },
+  {
+   "where": "How the Argument Began in Alexandria, paragraph 1, second sentence: \"Socrates, writing about a century later, tells it this way.\"",
+   "problem": "On the pastor's read this is the first snag. Most people in a congregation know only one Socrates, the Athenian philosopher. A bare \"Socrates\" in a fourth-century story looks like an error until the reader works it out. One identifying phrase fixes it, and it tells the skeptic what kind of source this is.",
+   "fix": "Replace with: \"Socrates, a church historian writing in Constantinople about a century later, tells it this way.\"",
+   "severity": "should"
+  },
+  {
+   "where": "How the Bishops Chose Their Words, banquet paragraph, last sentence: \"Eusebius wrote, \"One might have thought\" ... and The Case Against Nicaea, paragraph 1: \"and by Eusebius's account pressed the decisive word\"",
+   "problem": "The essay has two Eusebii, and both bare uses here point the reader at the wrong one. The last Eusebius named before the banquet is Eusebius of Nicomedia (\"Eusebius of Nicomedia signed, and within three months he was exiled too\"), so the reader takes the exiled man to be the one rhapsodizing about the banquet. Before the skeptic's case, the last Eusebius named is again Nicomedia (\"baptized by Eusebius of Nicomedia\"). The account of the emperor pressing homoousios is Eusebius of Caesarea's letter.",
+   "fix": "Replace \"Eusebius wrote, \"One might have thought\" with \"Eusebius of Caesarea wrote, \"One might have thought\". Replace \"and by Eusebius's account pressed the decisive word\" with \"and by the account of Eusebius of Caesarea pressed the decisive word\".",
+   "severity": "should"
+  },
+  {
+   "where": "\"idle\" appears five times: the opening quotation, opening paragraph 2, the banquet reflection (\"The emperor kissing their wounds had called their question idle,\"), What Nicaea Asks paragraph 1 (\"Christians have divided over plenty of things that deserved the emperor's word \"idle.\"\") and the ending (\"They did not think the question was idle.\")",
+   "problem": "A motif stamped through the piece, which the brief lists as a tell. The opening sets the word up and the ending closes on it, and both earn their place. The two middle uses wear it out before the ending can land it.",
+   "fix": "Replace \"The emperor kissing their wounds had called their question idle,\" with \"The emperor kissing their wounds had called their question insignificant,\" (his own word in the letter quoted in the first paragraph). Replace \"Christians have divided over plenty of things that deserved the emperor's word \"idle.\"\" with \"Christians have divided over plenty of things the emperor would have been right to wave away.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Case Against Nicaea, paragraph 1, first sentence: \"A skeptic can build a serious case from all this.\"",
+   "problem": "Rulebook leakage. The sentence announces that the objection is about to be given its strongest form (\"serious case\") instead of just giving it, the same move as the judges' \"Made carefully, the objection runs like this\". The heading already announces the case. \"A skeptic can\" also opens a paragraph in did-god-command-genocide.",
+   "fix": "Delete the sentence (with its trailing space). The section then opens: \"An emperor called the council, paid for it, and by ...\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Case Against Nicaea, paragraph 1, sixth sentence: \"Bart Ehrman, a New Testament scholar who left the faith of his youth, argues in *How Jesus Became God* (2014) that\"",
+   "problem": "This has the scholar-parade shape the brief names (name, then *Title* (YEAR), then \"argues\"), and the year does no work. The opening words also repeat the linked sister essay word for word: who-decided-what-books-are-in-the-bible says \"Bart Ehrman, a New Testament scholar who taught for many years ...\", and this essay links to it in its third paragraph. The aside about his past faith reads to a skeptic as explaining the argument by the man's story instead of answering it.",
+   "fix": "Replace with: \"The New Testament scholar Bart Ehrman argues in *How Jesus Became God* that\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Case Against Nicaea, paragraph 2, first sentence: \"Much of that is true.\"",
+   "problem": "This is a shelf stamp. who-decided-what-books-are-in-the-bible answers its own Ehrman section with the same sentence, \"Much of that is true.\", in the same place, and this essay sends readers there. Someone reading both meets the same concession formula after the same scholar.",
+   "fix": "Replace with: \"Most of those charges hold.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Case Against Nicaea, paragraph 3, fifth sentence: \"Nor do the emperors explain the result.\"",
+   "problem": "This is an overclaim, and the essay itself contradicts it. It has just shown Theodosius's law of 380 enforcing the Nicene faith, \"delivered over to punishment\", and conceded that its defenders \"did not refuse it.\" A skeptic will answer that one emperor explains the result very well. The real argument is that the emperors alone cannot explain it, since for decades the palace backed the other side.",
+   "fix": "Replace with: \"Nor do the emperors explain the result on their own.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Why the Word Still Matters, paragraph 2, last sentence: \"Paul said it first: \"For in him the whole fullness of deity dwells bodily\" (Colossians 2:9).\"",
+   "problem": "This is a decorative proof-text closer. The \"it\" Paul supposedly said first is \"the love shown there is God's own\", and Colossians 2:9 does not say that. A careful reader sees a verse attached to a paragraph about the cross that it does not address. The verse is also repeated word for word as the second Closing Text, where it belongs.",
+   "fix": "Delete the sentence (with its leading space). The paragraph then ends: \"The creed says the one who \"suffered\" is God of God, so the love shown there is God's own.\" Keep Colossians 2:9 in the Closing Texts.",
+   "severity": "should"
+  },
+  {
+   "where": "What Nicaea Asks of Christians Today, political paragraph, second sentence: \"has little reason to care whether Jesus is of one substance with the Father, so long as he stands behind the flag\"",
+   "problem": "The criticism fires in both directions but with different heat. The right gets a sneer (Jesus as a flag-bearer). The left and the therapeutic churches get only a calm description (\"Jesus is preached as the great teacher of compassion or the strength for a hard week\"). A conservative pastor deciding whether to hand this to people will hear a jab, and the same instrument should be used on both sides. Without the clause the diagnosis still lands, because the paragraph's last sentence applies the real charge to every version.",
+   "fix": "Delete \", so long as he stands behind the flag\". The sentence then reads: \"On the right, a church that values Christianity mainly as the glue of a nation's morals has little reason to care whether Jesus is of one substance with the Father.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, third short paragraph: \"The question underneath it is older than any council. Jesus asked it: \"But who do you say that I am?\" (Matthew 16:15).\"",
+   "problem": "This repeats the pivot of a sister essay. the-historical-jesus turns on \"The temptation to fit Jesus into what we already believe is older than any of these books\", then brings in \"But who do you say that I am?\", and ends on that verse as its first Closing Text. Both are Christology essays and readers will take them together, so the second one meets the same move in its most exposed place. \"Older than any council\" is also an epigram line. The ending does not need it. The mirror question (\"Would our prayers or our preaching sound any different ...\") already puts the question to the reader.",
+   "fix": "Delete the paragraph. In the next paragraph replace \"The bishops gave John's answer in the language of their own century.\" with \"The bishops answered with John, in the language of their own century.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, Closing Texts, third line: *\"Thomas answered him, 'My Lord and my God!'\"* (John 20:28)",
+   "problem": "John 20:28 is already quoted in the body (\"My Lord and my God!\" in What Christians Already Believed About Jesus). A third Closing Text that repeats a body verse makes the block a recap. Two texts are within the brief's two or three.",
+   "fix": "Delete that line. The Closing Texts are then John 1:14 and Colossians 2:9.",
+   "severity": "consider"
+  },
+  {
+   "where": "What Nicaea Asks of Christians Today, Baptist paragraph: \"Nicaea shows what that slogan leaves out.\"",
+   "problem": "The antecedent is unclear. \"That slogan\" refers to \"no creed but the Bible\" two sentences back, but the sentence just before it is the 1677 confession's line (\"the foundation of all our Communion with God ...\"), which can read as the slogan meant.",
+   "fix": "Replace with: \"Nicaea shows what \"no creed but the Bible\" leaves out.\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), all 6 therapy-speak items (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and the signposting phrases (here is what I mean, let me explain).",
+  "Em-dash: no U+2014 anywhere. The one en-dash is a verse range (Philippians 2:10–11).",
+  "Exclamation points: two, both inside verbatim quotation of John 20:28 (\"My Lord and my God!\"), once in the body and once in the Closing Texts.",
+  "Semicolons: one, inside the quoted 1900 translation of the creed. None in his own prose.",
+  "The brief's stamps: none of the seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\" (only inside the quoted \"inconsiderable\"), \"none of this\", \"the record\", \"I don't exempt myself\"). The shelf-level repeats that do appear (\"Much of that is true.\", the Ehrman appositive, the \"older than any ... who do you say that I am\" pivot) are flagged above.",
+  "Rulebook leakage: zero uses of steelman, verdict, indictment or self-implication, and zero uses of \"honest\" or \"fair\". Arius's case is made by doing it (\"He saw himself as a defender of the one God\", \"And he had texts\", \"It is a tidy answer, and it still sounds reasonable\"), not by announcing it. The one announcing sentence (\"A skeptic can build a serious case\") is flagged above.",
+  "Announced turns: none of the judges' kind. The signposting is plain and in his habit (\"Here it is, in a translation printed in 1900:\", \"Each phrase answered Arius.\", \"Athanasius later put it plainly:\"). \"But the scene should trouble us more than it troubled him\" is a real argumentative hinge that brings in \"us\", and I left it.",
+  "Biography: one touch, \"I pastor a Baptist church\" (with \"free churches like mine\"). It is confirmed, plain, and used to put his own tradition inside the critique, not as a credential. No title, years in ministry, book count, Southern Baptist reference, invented scene or brand tie-in.",
+  "Title and headings: the title uses plain search words. All nine headings are plain and descriptive (How the Argument Began in Alexandria; What Arius Was Trying to Protect; What Christians Already Believed About Jesus; The Bishops Gather at Nicaea; How the Bishops Chose Their Words; Why the Argument Went On for Fifty Years; The Case Against Nicaea; Why the Word Still Matters; What Nicaea Asks of Christians Today).",
+  "Triplets: none forced. The three-part lists are factual (what the council also did, Philostorgius's sailors, millers and travelers, the emperor called, paid and pressed) or a real list (the MTD tenets, right, left and therapeutic). The carpenter/father pair is a teaching illustration of begotten and made, not a Both/Neither antithesis.",
+  "\"Not X. Y.\" constructions: about one per section, each at a real hinge (the myths in the opening, \"the question was never whether to worship Jesus\", \"Athanasius did not think he was defending a word\", \"He did not send someone else to save us. He came himself.\").",
+  "Second-order questions are not settled. The deity of Christ and the Trinity are first-order and confessed plainly. Whether churches should recite creeds is not decided: the Baptist point argues from Baptists' own 1677 confession and says only that repeating Scripture's words is not yet saying what they mean. The kneeling canon is reported without comment. Athanasius on deification is kept within limits (\"He was not saying that we stop being creatures\").",
+  "Criticism of right and left: both are named in the final section, and so is the therapeutic church of every politics (the heat asymmetry is flagged above). The essay also turns the same instrument on its own side's history: the Nicene party's use of Theodosius's coercive law (\"We shouldn't tell that part as a simple victory\"), Constantine's anti-Jewish language and its cost to Jewish communities, and the church accepting an imperial patron.",
+  "Skeptic read: the concessions are real. Arius is presented as defending monotheism, with real texts. Jehovah's Witnesses are described accurately and without contempt. The emperor's role, the absence of homoousios from Scripture, Arius's surviving only in his enemies' quotations, and Hanson's \"search\" are all granted. Ehrman's thesis is stated as he would state it. The places a checking skeptic would push back (\"most American Christians\", \"Nor do the emperors explain the result\", the Colossians proof-text, the ambiguous Eusebius) are flagged above.",
+  "Pastor read: it can be handed to a congregation once Socrates and Eusebius are identified. It corrects without sneering apart from the one flag clause. It puts preachers first (\"preachers slip first\") and the author's own Baptist tradition inside the critique, and it tells the Arian controversy so that a reader with a low Christology is met and not mocked.",
+  "Crisis path: not a crisis-facing piece. The torture of confessors is told historically without gratuitous detail. Self-harm and abuse are not in view, so no Find Help, 988 or reporting line is needed.",
+  "Ending: after the fixes above it is a short stack of plain lines. The callback to the maimed bishops is an image, not a summary. It turns the mirror on the reader (\"Would our prayers or our preaching sound any different ...\") and lands on Christ (\"He did not send someone else to save us. He came himself.\"), which pays off the Golgotha line in Why the Word Still Matters. It is not a recap. Closing Texts are in the *\"Quote.\"* (Reference) format, one per line.",
+  "Scripture is used inside the argument, not as decoration, apart from the Colossians closer flagged above. The Shema, 1 Corinthians 8:6, Isaiah 45:23 and 42:8, Romans 1:25, Proverbs 8:22 (the LXX reading set against the ESV's \"possessed\", the translation choice doing work), Hebrews 1:3, 2 Peter 1:4 and John 14:9 each carry a step. The ESV wording matched where I compared it from memory. Verification belongs to the integrity lens.",
+  "Scholar parade: the ancient witnesses (Socrates, Philostorgius, Theodoret, Eusebius, Sozomen, Jerome, Athanasius, Ambrose) are each tied to a specific fact, and the repeated \"writing N years later\" dating helps the skeptic weigh the sources. Among modern scholars, Hanson's title is cited because the title is his thesis, and Smith and Denton name the therapeutic faith the argument needs. Only the Ehrman title-and-year shape is flagged.",
+  "Links: three essay links (/writing/who-decided-what-books-are-in-the-bible, /writing/the-early-church-under-rome, /writing/when-the-church-married-empire). All are in docs/work/essays/link-targets.json and public on the shelf (one live, two pending with landed JSON). That is within the two-to-four limit.",
+  "Register numbers: 40 body paragraphs averaging 85 words. 213 sentences with a mean of 16.1 words, 18 percent of them 8 words or fewer, a little short of the 17-to-19 mean and quarter target but with no fragment stacks. Contractions are light and natural (isn't, hasn't, shouldn't)."
+ ]
+}

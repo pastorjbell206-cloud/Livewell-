@@ -1,0 +1,115 @@
+{
+  "slug": "the-rise-of-the-nones",
+  "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/the-rise-of-the-nones.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it by 6-word overlap with the other landed essays in /home/user/livewell-land/client/public/essays/ and the drafts and pilots in /home/user/Livewell-/docs/work/essays/, and diffed it against /home/user/Livewell-/docs/work/essays/the-rise-of-the-nones.md (the only changes at landing were two accuracy edits). Every quoted old string below occurs exactly once in the body. I applied all the fixes together to a scratch copy: they leave no forbidden word, no em-dash, and no exclamation point outside Ezekiel 34:2. The body comes to about 3,550 words, mean sentence 17.8 words, paragraphs averaging about 84 words. Scripture and fact verification belong to the integrity lens. The essay is in good shape. Nothing here blocks publication; the four 'should' items are each one sentence.",
+  "findings": [
+    {
+      "where": "The Faith We Handed Down, Bengtson paragraph (the section's last paragraph), last sentence: \"I don't read that finding as somebody else's problem.\"",
+      "problem": "This announces the self-implication instead of letting it stand. It is the brief's stamp \"I don't exempt myself\" in other words, and the brief says he implicates himself \"by doing it, not by announcing it.\" The sentence before it already does the work: two confirmed facts (raised without a father, raising five sons) placed right after Bengtson's finding about fathers. Ending there leaves the weight with the reader. The extra line explains it, and it also gives the section a fifth paragraph-end verdict.",
+      "fix": "Delete the sentence. The paragraph then ends: \"Asked why a father's warmth mattered so much, Bengtson said he didn't know. I was raised without a father, and I am raising five sons.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Faith We Handed Down, Smith and Denton paragraph, third and fourth sentences: \"In their account it runs roughly like this. A God exists who made the world and watches over it. He wants people to be good, nice and fair to each other.\"",
+      "problem": "This repeats a passage from another live essay. /home/user/livewell-land/client/public/essays/excavation-not-demolition.json has \"Its creed, as they summarized it, runs roughly like this. A God exists who made the world and watches over it. He wants people to be good and nice to each other.\" Both essays are on the shelf, and a reader who follows the doubt and After Christendom sections will meet the same lead-in and the same opening sentence twice. The brief treats repetition across the shelf as a stamp. Some overlap is unavoidable, because both essays paraphrase Smith and Denton's own five points (\"to be happy and to feel good about yourself. God doesn't need to be ...\" tracks their wording). The lead-in and the first sentence are what read as copied, and those are what this fix changes.",
+      "fix": "Replace with: \"Their summary of it goes something like this. There is a God who made the world and keeps watch over it, and He wants everyone to be good, nice and fair to each other.\"",
+      "severity": "should"
+    },
+    {
+      "where": "When People Walked Away From Jesus, Romans 2 paragraph, first sentence: \"Paul had a different kind of departure in view when he wrote to the church in Rome about his own people.\"",
+      "problem": "This overclaims what the text says, and a pastor who knows Romans will stop on it. Romans 2:17 to 24 is not about anyone departing. It is about the teacher of the law whose hypocrisy causes the Gentiles to blaspheme God's name. The essay's own last sentence in the paragraph gets this right (\"insiders whose conduct taught outsiders to despise the God they claimed to serve\"). The opening frame bends the passage to fit the section's theme, which is the proof-text reflex the essay elsewhere refuses (it reads 1 John 2:19 carefully in context).",
+      "fix": "Replace with: \"Paul had something else in view when he wrote to the church in Rome about his own people.\"",
+      "severity": "should"
+    },
+    {
+      "where": "When People Walked Away From Jesus, last paragraph (1 John 2:19), last sentence: \"It lets us stop looking for people the Lord has not stopped looking for.\"",
+      "problem": "This is a chiasmus closer (stop looking for / not stopped looking for), the aphoristic paragraph-end epigram the judges caught. The section already has three verdict lines at paragraph ends (\"He said there was no one else to go to\", \"because Christ never taught that\", \"No passage of Scripture asks us to call that faithfulness\"). Read aloud, the mirror sounds like a slogan, not a pastor. The point survives in plain words.",
+      "fix": "Replace with: \"It lets us stop looking for people the Lord has not given up on.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Faith We Handed Down, Smith and Denton second paragraph, last sentence: \"The teenagers had learned what they were taught.\"",
+      "problem": "This is a two-beat epigram (learned / taught) at a paragraph end, and it restates the sentence before it. The section ends nearly every paragraph on a landing line (\"survive the move\", this one, \"some of them saw through it\", \"how little of the faith they knew\", and the Bengtson line). The brief allows one genuine verdict per section. The paragraph is complete without it.",
+      "fix": "Delete the sentence. The paragraph then ends: \"Most said their beliefs were similar to their parents', and the strongest influence on their faith was their parents.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "When People Walked Away From Jesus, the \"Every church is tempted\" paragraph, fifth and sixth sentences: \"Plenty of the people who left were not taking a stand at all. They simply stopped coming, which\"",
+      "problem": "This is a second \"Not X. Y.\" that restates the introduction's \"A great many people didn't storm out of the church. They drifted.\" It is one of many antitheses in the piece, and the voice standard puts repeated antithesis on the avoid list once it has done its work. Read aloud, it also lands \"stand\" twice in a row (\"won't let either filing stand. ... not taking a stand at all\").",
+      "fix": "Replace \"Plenty of the people who left were not taking a stand at all. They simply stopped coming, which\" with \"Plenty of the people who left simply stopped coming, which\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Heading: \"## The Shepherds and the Scattered Sheep\"",
+      "problem": "This heading is literary (alliterative) where the brief wants plain, descriptive headings. The other headings in the piece are plain.",
+      "fix": "Replace with: \"## Ezekiel and the Shepherds of Israel\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Heading: \"## The Faith We Handed Down\"",
+      "problem": "This heading leans literary and doesn't tell the reader what the section covers: Smith and Denton's moralistic therapeutic deism, Luther's visitation and catechism, and Bengtson's research on families.",
+      "fix": "Replace with: \"## What Churches and Families Taught\"",
+      "severity": "consider"
+    },
+    {
+      "where": "How the Nones Grew and What the People Who Left Say: \"published an article in the *Journal for the Scientific Study of Religion* calling\", \"had made a similar case in *American Grace* in 2010.\", \"that Robert Putnam traced in *Bowling Alone* in 2000.\"",
+      "problem": "The first half reads as a scholar parade: about fifteen dated citations in a row, many opening \"In YEAR, X published ...\". Most of the dates are doing work, because this is a story told in numbers over time. These three are apparatus. The journal title adds nothing the skeptic needs. The 2010 is already carried by \"had made\" (before the 2014 follow-up). The 2000 is decoration, and Putnam was already introduced by full name. Trimming them lightens the run without touching the argument.",
+      "fix": "Replace \"published an article in the *Journal for the Scientific Study of Religion* calling\" with \"published an article calling\". Then replace \"had made a similar case in *American Grace* in 2010.\" with \"had made a similar case in *American Grace*.\" Then replace \"that Robert Putnam traced in *Bowling Alone* in 2000.\" with \"that Putnam traced in *Bowling Alone*.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Introduction, fourth paragraph, second and third sentences: \"It finds real disbelief, and it finds real injury. What it finds most often is something less dramatic.\"",
+      "problem": "This is triple anaphora (it finds / it finds / what it finds), a built-up rhetorical triad right at the thesis. The voice standard asks for full plain sentences and avoids perfect parallelism that sounds generated.",
+      "fix": "Replace with: \"It finds real disbelief and real injury. Most often it finds something less dramatic.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Ezekiel section, third paragraph, first sentence: \"Pastors stand where Ezekiel's shepherds stood, and I am one of them.\"",
+      "problem": "\"and I am one of them\" repeats an approved pilot's move (was-america-founded-as-a-christian-nation: \"Preachers, and I'm one of them, have carried ...\"), and the brief says not to reuse a sentence or image from a pilot. Pastor self-reference is also a stamp family across the shelf (\"pastors like me\", \"the church I pastor\", \"I pastor a Baptist church\"). The self-identification itself is a confirmed fact and right here. Only the construction needs to change.",
+      "fix": "Replace with: \"Pastors stand where Ezekiel's shepherds stood, me included.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Ezekiel section, third paragraph, second sentence: \"Long-time members are the strong sheep, and many of us reading this are among them.\"",
+      "problem": "\"us reading this\" puts the writer among the readers. Read aloud, it sounds slightly off, because James is writing it, not reading it. \"Us\" alone keeps him inside the charge.",
+      "fix": "Replace with: \"Long-time members are the strong sheep, and many of us are among them.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What a Church Can Actually Do, abuse paragraph, third sentence opening: \"In May 2022 an independent investigation commissioned by the Southern Baptist Convention reported that\"",
+      "problem": "\"In May 2022 an independent investigation\" opens the same Guidepost sentence in two other live essays (doubt-after-church-abuse.json and excavation-not-demolition.json). The fact belongs here, but the identical opening makes the shelf read as templated. Reordering is enough. The sentence names the SBC as a third party and implies no membership, which is correct.",
+      "fix": "Replace with: \"An independent investigation commissioned by the Southern Baptist Convention reported in May 2022 that\"",
+      "severity": "consider"
+    },
+    {
+      "where": "When People Walked Away From Jesus, second paragraph, second sentence opening: \"Jesus did not chase them with an easier sermon. He turned to the Twelve and asked,\"",
+      "problem": "The pending After Christendom essay /home/user/Livewell-/docs/work/essays/the-persecution-we-invented.md uses the same John 6:66 to 68 move with the same narration (\"He turned to the Twelve and asked, \\\"Do you want to go away as well?\\\" Peter answered\"). That essay isn't landed yet, so whoever lands it should also vary its use of the passage. Here the smallest change breaks the identical sentence.",
+      "fix": "Replace \"Jesus did not chase them with an easier sermon. He turned to the Twelve and asked,\" with \"Jesus did not chase them with an easier sermon. He asked the Twelve,\"",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Forbidden Language, searched literally in title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic, stems included), for the phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), for the therapy-speak (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and for the signposting phrases (here is what I mean, let me explain). Pew's survey is called \"Pew's large 2023-24 religion survey\", which avoids the forbidden word in its proper name, as the brief asks.",
+    "Em-dash: no U+2014 anywhere. En-dashes appear only in verse ranges (John 6:67–69, Ezekiel 34:4–5, Hebrews 10:24–25).",
+    "Exclamation points: one, inside the verbatim quotation of Ezekiel 34:2 (\"Ah, shepherds of Israel who have been feeding yourselves!\"). None outside Scripture.",
+    "Semicolons: one, inside the verbatim quotation of John 6:60. None in his own prose.",
+    "Brief stamps: \"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"none of this\", \"the record\" and \"I don't exempt myself\" do not occur. \"Consider\" appears only inside quoted Hebrews 10:24 (body and Closing Texts).",
+    "Rulebook leakage: no steelman, verdict, indictment, self-implication, \"deserves to be stated\" or similar. The one \"deserve\" (\"those stories deserve every bit of attention they get\") describes abuse survivors' stories, not the essay's own method.",
+    "\"Honest\" and \"fair\" as self-certifying adjectives: none. \"fairly conventional beliefs\" and \"good, nice and fair\" (Smith and Denton's tenet) are ordinary uses.",
+    "Biography: only confirmed facts. \"I was raised without a father, and I am raising five sons\" and the pastor self-identification in the Ezekiel section. No title, years in ministry, book count, wife's name, invented scene or invented congregant. \"The student who moved for college\" and \"the woman whose questions met a wall\" are explicitly types drawn from \"the people in the surveys\", and \"the boy without a father three rows ahead\" is a hypothetical. Biography is not used as a credential.",
+    "Southern Baptist membership: not implied. The SBC appears only as a third party in the abuse paragraph, set beside the Boston Catholic case under \"it was easy for Protestants\". Burge's First Baptist Church of Mount Vernon is clearly his church, not James's.",
+    "Standfirst: one plain declarative sentence (\"Millions of Americans have left the church since the 1990s, and many of them simply drifted away from a faith the church had made too thin to hold them.\"). It is not a balanced antithesis. It previews the thesis line in the introduction, which is normal for a standfirst and not a stamped motif.",
+    "Title: \"Why Are People Leaving the Church?\" is in the plain words people search. Five of the seven headings are plain and descriptive; the other two are covered above.",
+    "Political criticism fires in both directions with the same instrument. The introduction states the conservative account (culture, universities, softened churches) and the progressive account (party, abusers, contempt) each at strength and notes that each blames the other kind of Christian. The religious right is charged with \"something we did\", and \"we\" reads as the American church implicating itself. The mainline gets its decline, with the Hout, Greeley and Wilde birth-rate correction conceded in full. The filing paragraph names a conservative congregation and a progressive one. \"Keep the pulpit from becoming a campaign office for either party\" links both blind-spot essays. The essay refuses false symmetry where the evidence differs (driving people away vs. failing to keep them).",
+    "Contested second-order questions: none are asserted. The sentence on sex and marriage is framed as what \"a church ... believes Christ gave\". It asks repentance only for contempt and states no position of James's. The John 6 bread-of-life paraphrase takes no side on the Supper. The 1 John 2:19 paragraph corrects a pastoral misuse without ruling on perseverance or eternal security. needs_james is not triggered.",
+    "Crisis-facing care: abuse is in view, and the essay says plainly that \"Abuse by a pastor or any church leader should be reported to the authorities, not handled quietly inside the church,\" with \"[find help here](/help)\". Self-harm is not in view, so no 988 line is needed. Nothing diagnoses the reader or validates despair, and single parents are named as able to give what Bengtson describes.",
+    "Ending leaves weight and does not recap. It is a short stack of plain lines that turns the mirror on the reader (\"Someone you love is probably in these numbers\"), implicates everyone (\"most of us have been both\") and lands on Christ the Good Shepherd still searching. The Ezekiel questions (\"Who noticed when they stopped coming? Who went looking?\") are a real mirror, not an engagement question.",
+    "Closing Texts: three lines, each *\"Quote.\"* (Reference) on its own line. The verses repeat ones quoted in the body, as the approved pilots also do. The partial Hebrews 10:24–25 ends at a period mid-verse, the same practice as the pilot's John 18:36.",
+    "Scripture as diagnosis, in context: John 6, Romans 2 (after the framing fix above), Hebrews 10, 1 John 2 (explicitly read against its misuse), Ezekiel 34 in both its shepherd and flock halves, John 10 and Luke 15. Scripture carries the argument and isn't attached as decoration.",
+    "Skeptic read: the doubter is met, not handled. \"A person who leaves because he no longer believes in the resurrection has at least taken the resurrection seriously\", \"some of them saw through it\", and the confident skeptic is granted (\"Some nones fit it\"). The civic-participation gap is placed among the \"nothing in particular\", not among atheists and agnostics. \"The young adults who left over politics were right that something had gone badly wrong.\"",
+    "Pastor read: it can be handed to a congregation. Pastors are inside the charge first (Ezekiel 34, \"Pastors stand where Ezekiel's shepherds stood\"), long-time members next, and the practical section is prose, with each counsel tied to evidence the essay already gave (invitation, abuse, politics, catechesis, warmth at home). It is not a takeaway box.",
+    "Register metrics: the body has about 3,600 words, paragraphs averaging about 85 words (within the brief's 80 to 90), mean sentence 17.7 words, and about 17 percent of sentences at 8 words or fewer. Questions come in runs at the opening and in the Ezekiel section. Contractions are light. The survey paragraphs are dense with figures, but each one is used later in the argument.",
+    "Links: three /writing links (what-post-christian-means, the-conservative-blind-spot, the-progressive-blind-spot), all in link-targets.json and within the two-to-four limit, plus /help.",
+    "No brand tie-ins (\"When I talk about living well ...\"). The two \"I've written\" cross-references are ordinary link sentences.",
+    "Announced turns: none of the caught kind. \"The question here is narrower\" is the plain signposting the brief lists among his habits, and \"Then the prophet turns to the flock itself\" narrates the text."
+  ]
+}

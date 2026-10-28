@@ -491,6 +491,7 @@ const SECTION_BY_ROUTE = {
   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
   "/help/": { name: "Find Help", path: "/help" },
   "/family/devotions/": { name: "Family Devotions", path: "/family/devotions" },
+  "/topics/": { name: "Topics", path: "/topics" },
 };
 
 // ---------------------------------------------------------------------------
@@ -514,6 +515,17 @@ const HUB_LISTINGS = {
     { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
+  // Every question on /topics, opening the page it opens today.
+  "/topics": { label: "Topics", cap: 40, load: () => {
+    const d = readJsonSafe("client/public/topics/index.json");
+    const shelf = loadEssayShelf(REPO_ROOT);
+    // A row to an essay not public yet opens its stand-in, as the page does (lib/topics rowTarget).
+    const opens = (r) => {
+      const essay = /^\/writing\/([^/?#]+)$/.exec(String(r.href));
+      return r.standIn && essay && !shelf.isPublic(decodeURIComponent(essay[1])) ? r.standIn : r.href;
+    };
+    return ((d && d.rows) || []).map((r) => ({ title: r.askedAs, href: opens(r), blurb: r.line || "" }));
+  } },
   "/studyguides": { label: "Study guides", cap: 80, load: () => {
     const d = readJsonSafe("client/public/studyguides/index.json");
     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
@@ -525,6 +537,15 @@ const HUB_LISTINGS = {
     const c = readJsonSafe("client/public/catalogue/index.json");
     return ((c && c.items) || []).filter((i) => i.files && i.files.length)
       .map((i) => ({ title: i.title, href: i.files[0].href, blurb: i.summary || "" }));
+  } },
+  // Read the whole story in 2027 (scripts/build-story-plan.mjs): each day
+  // with its date and chapters, linked to the day's first chapter.
+  "/study/bible/guides/whole-story-2027": { label: "The days", cap: 365, load: () => {
+    const p = readJsonSafe("client/public/bible/guides/whole-story-2027.json");
+    return ((p && p.days) || []).map((d, i) => {
+      const when = new Date(2027, 0, i + 1).toLocaleDateString("en-US", { month: "long", day: "numeric" });
+      return { title: `Day ${i + 1}, ${when}: ${d.label}`, href: `/study/bible/${d.read[0][0]}/${d.read[0][1]}`, blurb: "" };
+    });
   } },
 };
 
@@ -1022,6 +1043,18 @@ async function main() {
     // "{title}: A Family Devotion"; the description is the big idea, or the
     // opening of a daily reflection. Head only (no per-devotion content file).
     { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion" },
+    // The topic pages (/topics/:slug), from the topics index
+    // (scripts/build-topics-index.mjs). The title is the question, as the
+    // page's own SEOMeta has it; the page file's prose (the short answer and
+    // the lines under each part) is the crawlable body. The essay slots are
+    // left out: which of them the page shows depends on the shelf (a lead not
+    // public yet shows its stand-in), so the body never names an essay the
+    // reader cannot open.
+    {
+      file: "client/public/topics/index.json", key: "pages", route: "/topics/", ogPrefix: "topics", desc: "description",
+      contentDir: "client/public/topics",
+      omitKeys: ["slug", "title", "description", "askedAs", "essay", "essayStandIn", "alsoEssays", "politics", "sensitive", "folds", "updated", "reviewed"],
+    },
   ];
   let withBody = 0;
   for (const src of LIBRARY_SOURCES) {

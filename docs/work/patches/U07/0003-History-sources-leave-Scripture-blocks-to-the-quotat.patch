@@ -1,0 +1,94 @@
+From a3973144f4a30f884a76e27a8ed0c8da79b5027d Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 17:44:01 +0000
+Subject: [PATCH 3/4] History sources: leave Scripture blocks to the quotation
+ gate; normalize each text once (U07)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ scripts/data/history-sources/PROVENANCE.md |  5 +++--
+ scripts/lib/history-sources.mjs            | 15 ++++++++++++---
+ server/history-sources.test.ts             |  2 +-
+ 3 files changed, 16 insertions(+), 6 deletions(-)
+
+diff --git a/scripts/data/history-sources/PROVENANCE.md b/scripts/data/history-sources/PROVENANCE.md
+index 6e94eeb2..1aa24f98 100644
+--- a/scripts/data/history-sources/PROVENANCE.md
++++ b/scripts/data/history-sources/PROVENANCE.md
+@@ -60,8 +60,9 @@ the public domain.
+ `client/public/history/sources/` and `client/public/history/sessions/`. In
+ them, any object with an `"excerpt"` key, and every source card (an object
+ with `"type": "source"`), is checked against the stored text named by its
+-`"corpus"` key, or by the nearest enclosing object's `"corpus"`. A source card
+-with no stored text fails: where a source could not be reached, the session
++`"corpus"` key, or by the nearest enclosing object's `"corpus"`. Scripture
++blocks (`"type": "scripture"`) are left to the quotation gate (U27). A source
++card with no stored text fails: where a source could not be reached, the session
+ tells it in the narrative and says so, rather than carrying a card no gate can
+ check (master plan 7.2). Sources still in copyright are quoted briefly in the
+ narrative or summarized, never on a card.
+diff --git a/scripts/lib/history-sources.mjs b/scripts/lib/history-sources.mjs
+index 00a327e2..d8bf1eb1 100644
+--- a/scripts/lib/history-sources.mjs
++++ b/scripts/lib/history-sources.mjs
+@@ -146,6 +146,9 @@ export function excerptPieces(excerpt) {
+     .filter(Boolean);
+ }
+ 
++/** Normalized passages, kept per passages array so a text read once is normalized once. */
++const NORMALIZED = new WeakMap();
++
+ /**
+  * Look for an excerpt in a text's passages. Returns { ok: true, passage } or
+  * { ok: false, reason, agreesTo } where agreesTo is the longest opening of the
+@@ -159,7 +162,11 @@ export function findExcerpt(passages, excerpt) {
+   if (short !== undefined) {
+     return { ok: false, reason: `"${short}" is too short to check on its own; quote more around each omission` };
+   }
+-  const hay = passages.map(normalizeForMatch);
++  let hay = NORMALIZED.get(passages);
++  if (!hay) {
++    hay = passages.map(normalizeForMatch);
++    NORMALIZED.set(passages, hay);
++  }
+   for (let i = 0; i < hay.length; i++) {
+     let from = 0;
+     let all = true;
+@@ -324,7 +331,8 @@ function jsonFiles(dir) {
+  * source card (an object with type "source"). Each is checked against the
+  * stored text named by its own "corpus" key or, failing that, the nearest
+  * enclosing object's, so a sources file can name its text once above a list
+- * of excerpts.
++ * of excerpts. Scripture blocks (type "scripture") are the quotation gate's
++ * (U27), not this one's.
+  */
+ export function collectExcerpts(value) {
+   const found = [];
+@@ -332,7 +340,8 @@ export function collectExcerpts(value) {
+     if (Array.isArray(v)) { v.forEach((x, i) => walk(x, `${p}[${i}]`, corpus)); return; }
+     if (!v || typeof v !== "object") return;
+     const here = Object.hasOwn(v, "corpus") ? v.corpus : corpus;
+-    if (Object.hasOwn(v, "excerpt") || v.type === "source") found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt });
++    const isCard = v.type === "source" || (Object.hasOwn(v, "excerpt") && v.type !== "scripture");
++    if (isCard) found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt });
+     for (const [k, x] of Object.entries(v)) walk(x, p ? `${p}.${k}` : k, here);
+   };
+   walk(value, "", undefined);
+diff --git a/server/history-sources.test.ts b/server/history-sources.test.ts
+index e4aead29..d2a3d387 100644
+--- a/server/history-sources.test.ts
++++ b/server/history-sources.test.ts
+@@ -138,7 +138,7 @@ describe("the matching rules", () => {
+     const found = collectExcerpts({
+       corpus: "a",
+       excerpts: [{ excerpt: "x" }, { corpus: "b", excerpt: "y" }],
+-      blocks: [{ type: "prose", text: "z" }, { type: "source" }],
++      blocks: [{ type: "prose", text: "z" }, { type: "source" }, { type: "scripture", ref: "Romans 13:1", excerpt: "w" }],
+     });
+     expect(found.map((f: { corpus?: string; excerpt?: string }) => [f.corpus, f.excerpt])).toEqual([
+       ["a", "x"],
+-- 
+2.43.0
+

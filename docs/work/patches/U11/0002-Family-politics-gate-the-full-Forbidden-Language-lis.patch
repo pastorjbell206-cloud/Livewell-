@@ -1,0 +1,144 @@
+From d7abcb099f4078c279ffc04ed3517d75478ca7d6 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 16:24:52 +0000
+Subject: [PATCH 2/3] Family politics gate: the full Forbidden Language list
+ (U11)
+
+The family devotions are held to CLAUDE.md's whole list
+(scripts/lib/forbidden-language.mjs), not the politics gate's shorter
+history-prose list.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ scripts/lib/family-politics.mjs |  9 ++++++---
+ scripts/validate-politics.mjs   |  5 +++--
+ server/family-world.test.ts     | 23 ++++++++++++++---------
+ 3 files changed, 23 insertions(+), 14 deletions(-)
+
+diff --git a/scripts/lib/family-politics.mjs b/scripts/lib/family-politics.mjs
+index e3dc9517..9108ac69 100644
+--- a/scripts/lib/family-politics.mjs
++++ b/scripts/lib/family-politics.mjs
+@@ -16,11 +16,14 @@
+  * voting, elections, parties, or politics without `politics: true` fails, so
+  * the rule cannot be skipped by leaving the flag off. Quoted Scripture
+  * (passageText) is exempt from the style check; everything else carries no
+- * exclamation point and none of the gate's forbidden words.
++ * exclamation point and none of CLAUDE.md's Forbidden Language (the shared
++ * list in ./forbidden-language.mjs, which is longer than the politics gate's
++ * own).
+  */
+ import fs from "node:fs";
+ import path from "node:path";
+ import { devotionsIn } from "./family-devotion-file.mjs";
++import { forbiddenRe, setAsideAllowed } from "./forbidden-language.mjs";
+ 
+ /** Words that make a family devotion a politics piece. */
+ export const POLITICS_WORDS = /\b(vot(?:e|ed|es|ing|er|ers)|elections?|ballots?|republicans?|democrats?|partisan|politics|political|politicians?)\b/i;
+@@ -40,7 +43,7 @@ function* strings(value, at) {
+  * Check every family devotion file in publicDir. Returns { findings: [file,
+  * message][], pieces } where pieces counts the politics devotions checked.
+  */
+-export function checkFamilyPolitics({ publicDir, forbidden = [] }) {
++export function checkFamilyPolitics({ publicDir }) {
+   const findings = [];
+   let pieces = 0;
+   const files = fs.existsSync(publicDir) ? fs.readdirSync(publicDir).filter((n) => /^family-devotions(-[a-z0-9-]+)?\.json$/.test(n)).sort() : [];
+@@ -84,7 +87,7 @@ export function checkFamilyPolitics({ publicDir, forbidden = [] }) {
+ 
+       for (const [at, text] of prose) {
+         if (text.includes("!")) note(`${at}: exclamation point (outside quoted Scripture the verdict lands on a period)`);
+-        for (const w of forbidden) if (new RegExp(`\\b${w}\\b`, "i").test(text)) note(`${at}: forbidden word "${w}"`);
++        for (const m of setAsideAllowed(text).matchAll(forbiddenRe)) note(`${at}: Forbidden Language "${m[0]}"`);
+       }
+     });
+   }
+diff --git a/scripts/validate-politics.mjs b/scripts/validate-politics.mjs
+index 543ba46e..dc5828cd 100644
+--- a/scripts/validate-politics.mjs
++++ b/scripts/validate-politics.mjs
+@@ -23,7 +23,8 @@
+  *    Scripture (this corpus quotes none, so zero), zero forbidden words.
+  *  - family devotions on politics (U11, scripts/lib/family-politics.mjs):
+  *    marked politics: true, two sides read in turn within the same 55% word
+- *    band, and the same house style outside the quoted passage. A devotion
++ *    band, no exclamation point and no Forbidden Language (the full
++ *    CLAUDE.md list) outside the quoted passage. A devotion
+  *    that talks about voting or politics without the mark fails.
+  *
+  * Exits non-zero with a findings list so CI fails loudly.
+@@ -122,7 +123,7 @@ for (const section of ["disruption", "justice"]) {
+ }
+ 
+ /* ---------------- family devotions on politics (the same instrument at the table) ---------------- */
+-const family = checkFamilyPolitics({ publicDir: PUB, forbidden: FORBIDDEN_WORDS });
++const family = checkFamilyPolitics({ publicDir: PUB });
+ for (const [file, msg] of family.findings) note(file, msg);
+ 
+ /* ---------------- verdict ---------------- */
+diff --git a/server/family-world.test.ts b/server/family-world.test.ts
+index 2c0c930f..80c7b877 100644
+--- a/server/family-world.test.ts
++++ b/server/family-world.test.ts
+@@ -238,8 +238,12 @@ describe("the pins after the vote, later", () => {
+     const { root } = seeded(goLive);
+     const later = buildYearMap(loadInputs(root), { first: 2028 });
+     expect(later.problems).toEqual([]);
+-    expect(later.notes.join("\n")).toMatch(/week 2026-11-08 is before the map begins .* can be removed/);
+-    expect(later.notes.join("\n")).toMatch(/week 2026-11-15 is before the map begins/);
++    expect(later.notes.join("\n")).toMatch(
++      /week 2026-11-08 is before the map begins .* can be removed/
++    );
++    expect(later.notes.join("\n")).toMatch(
++      /week 2026-11-15 is before the map begins/
++    );
+   });
+ });
+ 
+@@ -323,22 +327,22 @@ describe("the family gate on a strand file", () => {
+ });
+ 
+ describe("the politics gate on family devotions", () => {
+-  const FORBIDDEN = ["leverage", "unpack"];
+   const findings = (change: (s: Strand) => void) => {
+     const { pub } = seeded(p => {
+       const s = readStrand(p);
+       change(s);
+       writeStrand(p, s);
+     });
+-    return checkFamilyPolitics({ publicDir: pub, forbidden: FORBIDDEN })
++    return checkFamilyPolitics({ publicDir: pub })
+       .findings.map(([f, m]: [string, string]) => `${f}: ${m}`)
+       .join("\n");
+   };
+ 
+   it("passes the committed pieces", () => {
+-    expect(
+-      checkFamilyPolitics({ publicDir: PUBLIC, forbidden: FORBIDDEN })
+-    ).toEqual({ findings: [], pieces: 2 });
++    expect(checkFamilyPolitics({ publicDir: PUBLIC })).toEqual({
++      findings: [],
++      pieces: 2,
++    });
+   });
+ 
+   it("refuses one side much longer than the other", () => {
+@@ -366,11 +370,12 @@ describe("the politics gate on family devotions", () => {
+   it("holds the house style outside the quoted passage", () => {
+     const text = findings(s => {
+       s.devotions[0].activity += " Do it tonight!";
+-      s.devotions[1].reflection += " Let us unpack that.";
++      s.devotions[1].reflection += " Let us unpack that, and lean into it.";
+       s.devotions[1].passageText += "!";
+     });
+     expect(text).toMatch(/activity: exclamation point/);
+-    expect(text).toMatch(/reflection: forbidden word "unpack"/);
++    expect(text).toMatch(/reflection: Forbidden Language "unpack"/);
++    expect(text).toMatch(/reflection: Forbidden Language "lean into"/);
+     expect(text).not.toMatch(/passageText/);
+   });
+ });
+-- 
+2.43.0
+

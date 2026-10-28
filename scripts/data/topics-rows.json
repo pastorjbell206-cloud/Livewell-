@@ -1,0 +1,89 @@
+{
+  "$comment": "The topics index (/topics), in order: the rows people read, each in their own words, each opening the one best page on the site. A row naming a topic ({ \"topic\": slug }) takes its question and line from client/public/topics/<slug>.json. A row to an essay that is not public yet names a standIn the page opens until it is. scripts/build-topics-index.mjs writes client/public/topics/index.json from this file and the topic pages; scripts/validate-topics.mjs checks both. MASTER-PLAN 4.2.",
+  "rows": [
+    { "topic": "living-after-christendom" },
+    { "topic": "faith-politics-and-the-flag" },
+    { "topic": "raising-children-in-a-secular-age" },
+    {
+      "askedAs": "Is Christianity actually true?",
+      "href": "/answers",
+      "line": "Short answers to the hardest questions a skeptic asks, each with the essay or book that goes further.",
+      "also": {
+        "href": "/tools/test-the-case",
+        "label": "Test the Case",
+        "line": "The case for the resurrection, one move at a time, with room to push back at every step."
+      }
+    },
+    {
+      "askedAs": "Can I trust the Bible, and how do I read it?",
+      "href": "/help/trust-the-bible",
+      "line": "How the Bible came to us, what the old copies show, and what trusting it does and doesn't ask of you."
+    },
+    {
+      "askedAs": "Can I trust the church after what it did?",
+      "href": "/help/church-hurt",
+      "line": "When the people who spoke for God did the wounding: naming it honestly, and what can be rebuilt."
+    },
+    {
+      "askedAs": "What are phones and AI doing to us and our kids?",
+      "href": "/studyguides/attention",
+      "line": "A Bible study on technology and distraction, for anyone who picks up the phone to check one thing and surfaces an hour later."
+    },
+    {
+      "askedAs": "Why are Sunday mornings still divided, and what did the church do about slavery?",
+      "href": "/writing/why-didnt-the-bible-ban-slavery",
+      "standIn": "/answers#why-didnt-the-bible-just-ban-slavery",
+      "line": "Why the Bible never bans slavery outright, and how the Christians who defended it explained away the texts that condemned what they were doing."
+    },
+    {
+      "askedAs": "My neighbors believe something else. Is Christianity too narrow?",
+      "href": "/answers#is-jesus-the-only-way",
+      "line": "Is Jesus really the only way to God? The objection taken at its strongest, and an answer."
+    },
+    {
+      "askedAs": "Why are there so many denominations?",
+      "href": "/theology/traditions",
+      "line": "A charitable guide to the major traditions, Catholic to Pentecostal: what each one treasures, and the deep core they share."
+    },
+    {
+      "askedAs": "I can't stop worrying",
+      "href": "/help/anxiety",
+      "line": "For the worry that won't switch off: what's happening, what Scripture says, and what to do tonight and this week."
+    },
+    {
+      "askedAs": "I'm afraid of where the country is going",
+      "href": "/help/fear-of-the-future",
+      "line": "For the dread that won't let go of tomorrow: what Scripture promises about the future, what it doesn't, and what to do this week."
+    },
+    {
+      "askedAs": "Why does God allow suffering?",
+      "href": "/help/suffering",
+      "line": "For the graveside and the hard argument alike: what the Bible says when God doesn't explain, and why the question is allowed."
+    },
+    {
+      "askedAs": "I'm grieving",
+      "href": "/help/grief",
+      "line": "For the fog of the first weeks and the long year after: grief without hurry, honest prayer, and a hope that lets you cry."
+    },
+    {
+      "askedAs": "I feel alone, even at church",
+      "href": "/help/loneliness",
+      "line": "Lonely in a crowd, a marriage, or a church? What Scripture says, why it's so hard now, and small steps that help this week."
+    },
+    {
+      "askedAs": "My marriage is in trouble",
+      "href": "/help/marriage",
+      "line": "For the marriage that's gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help."
+    },
+    {
+      "askedAs": "Money and work",
+      "href": "/help/money",
+      "line": "For debt, bills you can't cover, and fights about money: what Scripture says, what to do this week, and where to find real help.",
+      "also": {
+        "href": "/help/purpose",
+        "label": "What's the point of my life?",
+        "line": "For anyone asking who they are and what they're for."
+      }
+    }
+  ]
+}

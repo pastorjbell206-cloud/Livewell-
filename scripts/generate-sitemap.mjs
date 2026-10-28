@@ -138,6 +138,7 @@ const STATIC_PAGES = [
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
+  { url: "/topics", priority: "0.9", changefreq: "monthly" },
   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
@@ -286,6 +287,9 @@ function manifestPages() {
     // A page per family devotion (/family/devotions/:id), from the family
     // index (scripts/build-family-index.mjs), which keys each row by `id`.
     { file: "client/public/family/index.json", key: "devotions", slugField: "id", prefix: "/family/devotions/" },
+    // The topic pages (/topics/:slug), from the topics index
+    // (scripts/build-topics-index.mjs).
+    { file: "client/public/topics/index.json", key: "pages", prefix: "/topics/" },
   ];
   for (const s of sources) {
     try {
@@ -313,6 +317,7 @@ function manifestPages() {
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/guides/whole-story-2027", priority: "0.8", changefreq: "monthly" });
     if (fs.existsSync("client/public/bible/guides/index.json"))
       for (const g of JSON.parse(fs.readFileSync("client/public/bible/guides/index.json", "utf8")).groups)
         for (const x of g.guides) if (fs.existsSync(`client/public/bible/guides/${x.id}.json`)) pages.push({ url: `/study/bible/guides/${x.id}`, priority: "0.7", changefreq: "monthly" });

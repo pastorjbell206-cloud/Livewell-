@@ -2,8 +2,9 @@
  * AdventAtTheTable: the family Advent calendar, put in front of a household
  * from the Sunday a week before Advent Sunday through Christmas Day.
  *
- * Two shapes: a quiet line for Home (`variant="line"`) and a card for
- * /family (`variant="card"`). Outside that window both render nothing.
+ * The card for /family (`variant="card"`); outside that window it renders
+ * nothing. Home's line is built from the same words (adventCopy) by
+ * pages/home/HomeTonight.tsx, which folds it into tonight's line (U18).
  *
  * The date comes from the reader's own clock on the client's first render
  * (lib/familyYear.ts localISODate) and the year map, never the network. The
@@ -81,15 +82,6 @@ export function adventCopy(a: AdventTonight): AdventCopy {
   };
 }
 
-const quietLink = {
-  fontFamily: "var(--U)",
-  fontWeight: 500,
-  color: "var(--ink)",
-  textDecoration: "none",
-  borderBottom: "1px solid var(--mustard)",
-  paddingBottom: "2px",
-} as const;
-
 const cardLink = {
   fontFamily: "var(--U)",
   fontSize: "14px",
@@ -101,26 +93,12 @@ const cardLink = {
   minHeight: "44px",
 } as const;
 
-export default function AdventAtTheTable({ variant }: { variant: "line" | "card" }) {
+// `variant` stays for the call on /family; the line Home showed is HomeTonight's now.
+export default function AdventAtTheTable(_props: { variant: "card" }) {
   const [today] = useState(() => localISODate());
   const advent = adventTonight(today);
   if (!advent) return null;
   const copy = adventCopy(advent);
-
-  if (variant === "line") {
-    return (
-      <p
-        data-testid="advent-at-the-table"
-        style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-4)" }}
-      >
-        {copy.line.lead}{" "}
-        <Link href={copy.href} style={{ ...quietLink, fontSize: "16px" }}>
-          {copy.line.link}
-        </Link>
-        .
-      </p>
-    );
-  }
 
   return (
     <section

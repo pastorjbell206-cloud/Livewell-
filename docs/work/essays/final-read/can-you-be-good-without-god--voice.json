@@ -1,0 +1,133 @@
+{
+  "slug": "can-you-be-good-without-god",
+  "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/can-you-be-good-without-god.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it by 5-word overlap with the other landed essays in /home/user/livewell-land/client/public/essays/ and the drafts in /home/user/Livewell-/docs/work/essays/, and diffed it against /home/user/Livewell-/docs/work/essays/can-you-be-good-without-god.md. Every quoted string below occurs exactly once in the body. I applied all the fixes together to a scratch copy: they leave no forbidden word, em-dash, exclamation point or semicolon, and the prose comes to about 3,560 words. Scripture and fact verification belong to the integrity lens.",
+  "findings": [
+    {
+      "where": "What Nietzsche Said About George Eliot, paragraph 3, first sentence: \"The early Christians acted on that belief long before they had any power, as what they did for the children Rome threw away shows.\"",
+      "problem": "This clause is left over from a link. The draft has \"as [what they did for the children Rome threw away](/writing/the-children-rome-threw-away) shows\". Landing removed the link because that essay isn't on the shelf, and the sentence now points at evidence the essay never gives: it says \"shows\" and nothing is shown. It also reads awkwardly aloud. This is exactly where a skeptic most doubts the argument (the claim that the church carried human dignity into Rome), and he is handed a claim resting on an example he can't see. Justin is already in the essay, and his apology states the practice plainly. The fix paraphrases Justin, First Apology 27 and 29, with no quotation marks, and the integrity lens should confirm it. If it can't be confirmed, the fallback is to end the sentence at \"long before they had any power.\"",
+      "fix": "Replace with: \"The early Christians acted on that belief long before they had any power. In the same apology, Justin told the emperor that Christians had been taught it was wicked to expose newborn children, leaving them outside to die or to be taken by strangers.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Moral Facts Without God, paragraph 5, third sentence: \"and still owe Street an answer about how creatures shaped by selection came to know them.\"",
+      "problem": "This is unfair to the unbeliever the essay has just praised, and a skeptic who knows the literature will catch it. Wielenberg has answered Street directly (\"On the Evolutionary Debunking of Morality,\" Ethics, 2010, and again in Robust Ethics, 2014). \"Still owe ... an answer\" implies he has offered none. The essay's point survives intact, because the realist does have to answer Street, so the fix grants the attempt and keeps the burden.",
+      "fix": "Replace with: \"and then answer Street about how creatures shaped by selection came to know them, as Wielenberg has tried to do.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Moral Facts Without God, paragraph 1, first sentence: \"The best unbelieving philosophers know this,\"",
+      "problem": "This is an overclaim, and the essay contradicts it within two paragraphs. The next sentence says these philosophers hold that moral truths are \"simply true\", but the essay then presents Mackie and Street, two serious unbelieving philosophers who deny exactly that. \"The best\" also quietly ranks every unbeliever who makes the evolutionary argument as second-rate, and the skeptic reader will feel handled.",
+      "fix": "Replace with: \"Many unbelieving philosophers know this,\"",
+      "severity": "should"
+    },
+    {
+      "where": "Ending, third short paragraph, first sentence: \"None of us will become good enough to deserve him.\"",
+      "problem": "The ending recaps here. The line restates the last sentence of the Romans 2 section (\"the same law leaves none of us able to claim we have done enough of it\"), down to \"none of us\", and it repeats Mark 10:18 and 10:27, which were told two paragraphs earlier. The gospel line after it carries the weight by itself and already holds the same truth (\"people who were not\").",
+      "fix": "Delete the sentence. The paragraph then reads: \"The hope of the gospel is that the only one who is good came looking for people who were not.\"",
+      "severity": "should"
+    },
+    {
+      "where": "What Nietzsche Said About George Eliot, paragraph 4, first sentence: \"A skeptic is entitled to two replies.\"",
+      "problem": "This is rulebook leakage. The essay grants the opponent permission to answer, which announces the fairness instead of simply doing it. It belongs to the same family as \"The skeptic has a point that deserves to be granted plainly\". It is also the fourth time \"the skeptic\" appears as a stock character (see also \"A thoughtful skeptic\", \"The skeptic can press back\" and \"When a skeptic says\"). \"Both replies are true\" already does the conceding.",
+      "fix": "Replace with: \"An unbeliever has two replies to this.\"",
+      "severity": "should"
+    },
+    {
+      "where": "What We Mean When We Call Something Wrong, paragraph 1, second sentence: \"When she called duty peremptory and absolute, she did not mean\"",
+      "problem": "This turns a motif into a stamp. \"Peremptory and absolute\" appears in the Myers quotation, again in the opening's third paragraph, and a third time here, all within about 350 words, and \"absolute/absolutely\" occurs six times in the essay. The Eliot frame is earning its place, but repeating the phrase verbatim is the kind of stamping the judges flag. The paragraph's next sentence explains what she meant anyway.",
+      "fix": "Replace with: \"When she spoke of duty that way, she did not mean\"",
+      "severity": "should"
+    },
+    {
+      "where": "What We Mean When We Call Something Wrong, paragraph 2, fifth sentence: \"outrage at cruelty, guilt at betrayal, the sense that a promise binds.\"",
+      "problem": "This is a tidy patterned triplet (X at Y, X at Y, then a third item), and it comes right after a second triplet in the sentence before (\"protected their young, punished cheats and kept faith with one another\"). Two three-part lists in a row give the steelman a generated cadence. A pair is enough, and \"a promise binds\" should be the item that stays because it picks up Locke's promises and oaths.",
+      "fix": "Replace with: \"outrage at cruelty and the sense that a promise binds.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Moral Facts Without God, paragraph 2, third sentence: \"His 1977 book *Ethics: Inventing Right and Wrong* argued\", and paragraph 4, first sentence: \"Sharon Street, who asked in a 2006 paper how creatures\"",
+      "problem": "This is the scholar-parade pattern. Within three paragraphs there are three dated works in a row (\"His 1977 book ...\", \"published in 1982 after his death\", \"in a 2006 paper\"). Only 1982 does any work, because \"after his death\" makes it his last word. The other two years are apparatus.",
+      "fix": "Replace \"His 1977 book *Ethics: Inventing Right and Wrong* argued\" with \"His book *Ethics: Inventing Right and Wrong* argued\", and replace \"Sharon Street, who asked in a 2006 paper how creatures\" with \"Sharon Street, who asked how creatures\".",
+      "severity": "consider"
+    },
+    {
+      "where": "What Paul Actually Says in Romans 2, paragraph 4, second sentence: \"That is where the Christian answer finally lands, and it is harder on everyone\"",
+      "problem": "This is a framing sentence that announces the landing, and it comes straight after another one (\"Paul's argument arrives where it was heading from the start\"). With it, the section has three verdict-type lines: this one, \"We have often had a sound account of morality without the life to match it\", and the closing \"same law\" sentence. Removing the announcement keeps the real claim.",
+      "fix": "Replace with: \"That is harder on everyone\". The sentence then reads: \"That is harder on everyone than either side usually wants.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What Nietzsche Said About George Eliot, paragraph 4, last sentence: \"Both replies are true, and the second brings us back to Romans 2.\"",
+      "problem": "This is an announced turn, and the heading that follows (\"What Paul Actually Says in Romans 2\") makes the same turn. The section ties itself back to the second reply on its own (\"That sentence describes a good deal of American church history\").",
+      "fix": "Replace with: \"Both replies are true.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Heading: \"## What We Mean When We Call Something Wrong\"",
+      "problem": "This heading follows the familiar \"What We Talk About When We Talk About ...\" title formula, which is a literary echo rather than a plain description. The other seven headings are plain.",
+      "fix": "Replace with: \"## What It Means to Call Something Wrong\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Ending, second short paragraph, first sentence: \"For Christians the question is harder.\"",
+      "problem": "\"Harder\" is a stock comparative in this essay: the standfirst (\"the harder question\"), \"The second question is harder\", \"a harder choice than the popular argument admits\", \"harder on everyone\", and now here. At the ending it reads as a formula. The line only needs to turn the mirror.",
+      "fix": "Replace with: \"For Christians there is a second question.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Closing Texts, first line: *\"Why do you call me good? No one is good except God alone.\"* (Mark 10:18)",
+      "problem": "This verse is already quoted twice in the body: in full in the Rich Young Man section, and again as \"No one is good except God alone\" to open the section's last paragraph. A third use makes the block feel padded. Romans 2:15 is also quoted in the body, but only once, and two Closing Texts meet the format.",
+      "fix": "Delete the Mark 10:18 line. Keep Romans 2:15 and Luke 19:10.",
+      "severity": "consider"
+    },
+    {
+      "where": "Good People Who Don't Believe in God, paragraph 2, fourth sentence: \"The suspicion runs deeper than surveys, though.\"",
+      "problem": "Two sentences in a row turn on \"though\" (\"though most of them still said belief in God was necessary. The suspicion runs deeper than surveys, though.\"). The ear catches it on a read-aloud.",
+      "fix": "Replace with: \"But the suspicion runs deeper than surveys.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What Nietzsche Said About George Eliot, paragraph 3, last sentence: \"is still drawing on what the church carried into Rome,\"",
+      "problem": "This repeats the previous paragraph almost word for word (\"The church carried it into that world\"). Nietzsche's own word, \"inheritance\" (\"living on an inheritance whose source they had renounced\"), is the one the argument is built on, so pick it up.",
+      "fix": "Replace with: \"is still drawing on that inheritance,\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Good People Who Don't Believe in God, paragraph 4, last sentence: \"is contradicting the apostle he claims to follow.\"",
+      "problem": "\"Claims to follow\" charges hypocrisy where the point is a mistake. It points outward at \"a Christian\" instead of diagnosing. A pastor whose people hold exactly this view will hear a sneer and hesitate to hand them the essay. The irony holds without it.",
+      "fix": "Replace with: \"is contradicting the apostle he follows.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "The Rich Young Man, paragraph 3, last sentence: \"and loved him enough to tell him the truth.\"",
+      "problem": "\"Loved him enough to tell him the truth\" is a stock phrase in Christian writing, and it sits at the essay's climax. Mark's own order is plainer and stronger (\"looking at him, loved him, and said to him, 'You lack one thing'\"), and \"still\" carries the weight the stock phrase was reaching for.",
+      "fix": "Replace \"looked at a man who had kept the commandments all his life and loved him enough to tell him the truth.\" with \"looked at a man who had kept the commandments all his life, loved him, and still told him what he lacked.\"",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), for all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), for all 6 therapy-speak items (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and for the signposting phrases (here is what I mean, let me explain).",
+    "Em-dash: no U+2014 anywhere. The three en-dashes are verse ranges (Romans 2:14–15 twice, Mark 10:17–18).",
+    "Exclamation points: none.",
+    "Semicolons: none.",
+    "The brief's stamps: none of the seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\"). \"None of us\" appears twice, and the ending fix above removes one.",
+    "Rulebook leakage: zero uses of steelman, verdict, indictment or self-implication. Zero uses of \"honest\" or \"fair\" as a self-certifying adjective (\"dishonest\" appears once, describing conduct). Concessions are made, not announced: \"Unbelievers can be good\", \"Unbelievers notice that, and they are right to\", \"There is a serious account ... and it doesn't need God\", \"People who hold this view take right and wrong at least as seriously as most Christians do\", \"It's a real objection\", \"That isn't a proof, and Christians shouldn't sell it as one\", \"Both replies are true\". The one exception, \"entitled\", is flagged above.",
+    "Announced turns: the signposting is plain and in his habit (\"The question comes in two forms\", \"The second question is harder\", \"Two difficulties press on it\", \"By the end of the seventeenth century the suspicion had changed sides\"). The two exceptions are flagged above.",
+    "Biography: one touch, confirmed and plain (\"I was an atheist before I was a Christian\"). It explains his sympathy with the reader and is not offered as a credential, and there is no invented scene. No title, years in ministry, book count, Southern Baptist reference or brand tie-in. \"The slavery our preachers defended\" puts the American church inside the critique and names no denomination. The same opening clause also appears in did-the-resurrection-happen, and the voice report for that essay changes its sentence, so this one should stay as written.",
+    "Standfirst (excerpt): one plain declarative sentence, a concession joined to the question, not a balanced antithesis.",
+    "Title and headings: the title is in plain search words. Seven of the eight headings are plain and descriptive. The eighth is flagged above. \"The Rich Young Man\" is the traditional name for the passage (Matthew 19:20 supplies \"young\"), and the body follows Mark and calls him \"a man\".",
+    "\"Not X. Y.\" constructions: about one per movement, each at a real hinge (Paul's account in the first section, the taste-versus-conviction distinction, Aquinas on goodness as what God is, \"was not impersonal after all\"). The third section uses two in one paragraph, but each does distinct work, so I did not flag it.",
+    "Triplets: the remaining lists are natural (a five-item list of good acts, \"kinder, more truthful and more generous\", \"a slave, an unwanted newborn or a foreigner\", \"cruel, dishonest or contemptuous\"). \"He can ... He can ... Or he can\" sets out three real options in the argument, not padding. The one patterned triplet is flagged above.",
+    "Scholar parade: each named witness does work. Eliot and Myers frame the question. Pew and Gervais measure the suspicion. Polycarp and Justin show the charge reversed. Locke and Bayle show it changing sides. Wielenberg, Mackie and Street are the three positions. Plato gives the objection, Aquinas the classical answer, Nietzsche the inheritance point. Years appear where chronology matters (1873, 1689, 399 BC, 2011 and 2017, 1982 \"after his death\"). The two decorative years are flagged above.",
+    "Second-order questions are not settled. Evolution is named as a question Christians differ on, set aside (\"doesn't depend on settling it\") and treated only conditionally (\"Grant the whole account\"), so a young-earth reader is not told James's view. Divine command and classical theism are presented as \"the classical Christian answer\", which names a tradition and does not rule on other Christians. Romans 2:14–15 is read the traditional way, as Gentiles without the law, though some commentators (Cranfield, Wright) read these Gentiles as Christians. The essay's turn also rests on Romans 1:32, 2:1, 2:21, 2:24 and 3:23, so I did not flag it, and the integrity lens may note it.",
+    "First-order matters are confessed plainly: universal sin (Romans 3:23), the goodness of God as his nature, Christ's deity (\"spoken by the one person who could have said it of himself\") and the gospel as God seeking the lost.",
+    "Criticism in both directions: there is no partisan politics. The same Romans 2 instrument lands on Christians (prejudice against atheists, Locke's exclusion inherited, slavery defended from the pulpit, churches protecting their reputation, cruelty toward unbelievers) and on the secular moralist (Nietzsche's point about a borrowed inheritance). The white evangelical figure is data, and the essay puts its own tradition inside it.",
+    "Crisis path: this is not a crisis-facing piece. Harm done by churches is alluded to in one clause, and no reader's abuse, grief or self-harm is addressed, so no Find Help link, 988 line or reporting line is required.",
+    "Ending: after the deletion above, it is a short stack of plain lines. The mirror turns first on the unbeliever (\"what your goodness is answering to\"), then on Christians (\"our goodness\"), and it lands on Christ seeking the lost. There is no recap and no clever kicker. Closing Texts follow the *\"Quote.\"* (Reference) format, one per line.",
+    "Scripture works inside the argument: Romans 1–3 is the controlling text across two sections, used as the Nathan move on the religious reader. Mark 10 is told as narrative. Genesis 9:6 grounds the image of God, and James 1:17 is tied to God's unchanging character. The ESV wording matched where I compared it from memory. Verification belongs to the integrity lens.",
+    "Skeptic read: the concessions are real and come early. Unbelievers can be good. Christians answered badly. The suspicion was once aimed at Christians. Locke's exclusion was inherited by Christians. Wielenberg is taken seriously. The moral argument \"isn't a proof\". The skeptic's two replies are granted. The places a checking skeptic would push back are flagged above (\"the best\", \"owe Street\", the orphaned clause, \"entitled\").",
+    "Pastor read: it can be handed to a congregation. It corrects believers who think atheists can't be moral without contempt (once \"claims to follow\" is softened), puts \"we\" inside the critique (\"We rarely stop to notice\", \"We have often had a sound account of morality without the life to match it\"), and ends on grace, not a scolding.",
+    "Links: two essay links, /writing/the-early-church-under-rome and /writing/why-didnt-the-bible-ban-slavery. Both are in link-targets.json, on the shelf, and landed in /home/user/livewell-land/client/public/essays/. The draft's third link (the-children-rome-threw-away) was correctly dropped at landing because that essay isn't public. The words it left behind are flagged above.",
+    "Register numbers: 39 prose paragraphs averaging 92 words. 186 sentences with a mean of 19.2 words, 18 percent of them 8 words or fewer. No fragment stacks. Contractions are light and natural. Prose length is about 3,575 words (about 3,560 with the fixes), inside the brief's 2,500 to 3,800."
+  ]
+}

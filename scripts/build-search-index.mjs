@@ -9,7 +9,7 @@
  *
  *   Wisdom topics        client/public/wisdom/topics.json      -> /wisdom/<id>
  *   Honest Answers       client/src/data/answers.ts            -> /answers#<slug>
- *   Family devotions     client/public/family-devotions*.json  -> the devotions library
+ *   Family devotions     client/public/family-devotions*.json  -> /family/devotions/<id> (every live strand)
  *   Family Catechism     client/public/family-catechism.json   -> /family/catechism
  *   Christ and the Nation client/public/nation/<slug>.json     -> /nation/<slug>
  *
@@ -25,6 +25,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { devotionsIn } from "./lib/family-devotion-file.mjs";
+import { STRANDS } from "./lib/family-index.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 
@@ -32,12 +34,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const PUB = path.join(ROOT, "client/public");
 export const OUT = "client/public/search-index.json";
 
-/**
- * Where a weekly devotion opens. Today that is the library page that holds
- * all of them; when The Table core (U17) gives each devotion its own page at
- * /family/devotions/:id, point this at it and rerun the script.
- */
-const devotionHref = () => "/family/devotions";
+/** Where a weekly devotion opens: its own page (The Table, U17). */
+const devotionHref = (id) => `/family/devotions/${id}`;
 
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(PUB, rel), "utf8"));
 const str = (x) => (typeof x === "string" ? x.trim() : "");
@@ -78,7 +76,14 @@ function answers() {
 }
 
 function devotions() {
-  const weekly = [...readJson("family-devotions.json"), ...readJson("family-devotions-2.json")];
+  // Every strand the family index reads, and only while it is live: a held-back
+  // strand (U11) has no page, so it has no result either.
+  const weekly = STRANDS.flatMap((s) => s.files)
+    .filter((f) => fs.existsSync(path.join(PUB, f)))
+    .flatMap((f) => {
+      const { live, devotions: list } = devotionsIn(readJson(f));
+      return live ? list : [];
+    });
   return weekly.map((d) => ({
     title: str(d.title),
     blurb: clip(d.bigIdea),

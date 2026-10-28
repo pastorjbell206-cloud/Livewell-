@@ -1,0 +1,538 @@
+From 3aac1c600d2f87fd20e63e51b2ad8241a925a57e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 18:06:30 +0000
+Subject: [PATCH 1/2] U19 The doors: Study, Topics, Family, Essays, About
+
+The header doors James chose on 2026-10-26. Books moves under About with
+Speaking and Contact; Resources folds into the Topics and Family menus;
+/resources stays live at the foot of the Topics menu and in the footer.
+The Topics door leads with /topics (U25 builds the page). Search
+shortcuts follow the new doors. My Library joins Find Help in the footer
+bottom bar. On a phone, tapping a second door's toggle no longer folds
+the open one first and misses. The CLAUDE.md Decision Log IA entry and
+the llms.txt doors line say what James chose.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ CLAUDE.md                             |  27 ++++--
+ client/public/llms.txt                |   2 +-
+ client/src/components/Footer.tsx      |  12 +--
+ client/src/components/MinimalNav.tsx  |  18 ++--
+ client/src/lib/site-structure.test.ts |  11 ++-
+ client/src/lib/siteNav.test.tsx       | 115 ++++++++++++++++++++++----
+ client/src/lib/siteNav.ts             |  89 +++++++++++---------
+ 7 files changed, 197 insertions(+), 77 deletions(-)
+
+diff --git a/CLAUDE.md b/CLAUDE.md
+index d6681d30..3f083854 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -679,17 +679,26 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
+ - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
+   static routes, the JSON-library manifests, and database content. `llms.txt`
+   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
+-- **IA (simplified site, approved by James on 2026-10-12, implemented)**: a
++- **IA (simplified site, approved by James on 2026-10-12; doors chosen by
++  James on 2026-10-26; implemented)**: a
+   simple site he keeps adding to, for living well in post-Christian America
+   and understanding the church's long history. The header has five doors from
+-  the committed map in `client/src/lib/siteNav.ts` (Study, Essays, Books,
+-  Resources, About) beside Find Help, search, and Subscribe; the footer
+-  mirrors every group. Study (/study) leads with the Study Bible, then church
+-  history (/theology/history), the creeds, the context guides, and group study
+-  guides. Essays (/writing) is the curated shelf in `client/src/lib/shelf.json`
+-  (see Strategic Reminders). Books shows the three titles in `bookShelf.ts`.
+-  Resources (/resources) holds downloads, tools, Find Help, and families.
+-  About is the person: /about, /speaking, /contact, /subscribe. Folded hubs
++  the committed map in `client/src/lib/siteNav.ts`: Study, Topics, Family,
++  Essays, About. James chose these on 2026-10-26 in place of the 2026-10-12
++  doors (Study, Essays, Books, Resources, About). They sit beside Find Help,
++  search, and Subscribe; the footer mirrors every group, with Find Help and
++  My Library in its bottom bar. Study (/study) leads with the Study Bible,
++  then church history (/theology/history), the creeds, the context guides,
++  and group study guides. Topics (/topics) is the index of hard questions,
++  with the Honest Answers, the eight-week plans, the self-checks, and the
++  tools. Family (/family) holds tonight's devotion, the year of devotions,
++  the catechism, and the reading plans. Essays (/writing) is the curated shelf
++  in `client/src/lib/shelf.json` (see Strategic Reminders). About is the
++  person: /about, Books (the three titles in `bookShelf.ts`), /speaking,
++  /contact, /subscribe. Resources folded into the Topics and Family menus;
++  /resources stays live as the one page of everything to use (downloads,
++  tools, Find Help, families), at the foot of the Topics menu and in the
++  footer. Folded hubs
+   (the reading hubs, the subject hubs, the /theology pages the Study Bible
+   replaces, /faq, /doubt, /substack, /work-with-james, /connect) are one-hop
+   permanent redirects in vercel.json mirrored by `redirectTo` stubs in App.tsx;
+diff --git a/client/public/llms.txt b/client/public/llms.txt
+index db2c532b..5a72da51 100644
+--- a/client/public/llms.txt
++++ b/client/public/llms.txt
+@@ -15,7 +15,7 @@ lived experience.
+ 
+ The site exists to help people live well in post-Christian America and to
+ understand the long history of the Christian faith. It is organized as five
+-doors: Study, Essays, Books, Resources, and About.
++doors: Study, Topics, Family, Essays, and About (with the books).
+ 
+ ## Study
+ 
+diff --git a/client/src/components/Footer.tsx b/client/src/components/Footer.tsx
+index 74bb8931..3e76d3b0 100644
+--- a/client/src/components/Footer.tsx
++++ b/client/src/components/Footer.tsx
+@@ -1,7 +1,7 @@
+ import { Link } from "wouter";
+ import { useTheme } from "@/contexts/ThemeContext";
+ import { Sun, Moon } from "lucide-react";
+-import { HELP_LINK, SITE_NAV_GROUPS } from "@/lib/siteNav";
++import { HELP_LINK, LIBRARY_LINK, SITE_NAV_GROUPS } from "@/lib/siteNav";
+ import { NewsletterSignup } from "@/components/NewsletterSignup";
+ 
+ // Vertical padding brings each footer link to a ~44px tap target (Apple/Google
+@@ -20,10 +20,11 @@ const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
+ 
+ /**
+  * Footer mirrors the header: the same five groups from lib/siteNav.ts (Study,
+- * Essays, Books, Resources, About), each showing every link it holds, so the
+- * destinations that sit behind a single header link are one click away here.
+- * About carries Speaking, Contact, the newsletter, and the outbound homes of
+- * PCN and ENDS. Find Help stays in the bottom bar on every page.
++ * Topics, Family, Essays, About), each showing every link it holds, so the
++ * destinations that sit behind a header menu are one click away here. Topics
++ * ends with /resources, the one page of everything to use. About carries the
++ * books, Speaking, Contact, the newsletter, and the outbound homes of PCN and
++ * ENDS. Find Help and My Library stay in the bottom bar on every page.
+  */
+ export default function Footer() {
+   const { theme, toggleTheme } = useTheme();
+@@ -81,6 +82,7 @@ export default function Footer() {
+           <span>&copy; 2026 LiveWell by James Bell. All rights reserved.</span>
+           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+             <Link href={HELP_LINK.href} style={{ ...legalLink, color: "var(--mustard)", fontWeight: 600 }}>{HELP_LINK.label}</Link>
++            <Link href={LIBRARY_LINK.href} style={legalLink}>{LIBRARY_LINK.label}</Link>
+             <a href="/privacy" style={legalLink}>Privacy Policy</a>
+             <a href="/terms" style={legalLink}>Terms of Service</a>
+             <a href="/accessibility" style={legalLink}>Accessibility</a>
+diff --git a/client/src/components/MinimalNav.tsx b/client/src/components/MinimalNav.tsx
+index 815d5205..610ce175 100644
+--- a/client/src/components/MinimalNav.tsx
++++ b/client/src/components/MinimalNav.tsx
+@@ -1,5 +1,5 @@
+ /**
+- * Primary navigation: Study, Essays, Books, Resources, About, with one source
++ * Primary navigation: Study, Topics, Family, Essays, About, with one source
+  * of truth in lib/siteNav.ts so the header and footer never drift. A group
+  * with several header links opens as a menu; a group with one renders as that
+  * plain link. Utility actions (Find Help, search, Subscribe) sit to the right.
+@@ -12,6 +12,7 @@ import { BookmarkCheck, ChevronDown, Menu, Search, X } from "lucide-react";
+ 
+ import {
+   HELP_LINK,
++  LIBRARY_LINK,
+   SEARCH_SHORTCUTS,
+   SITE_NAV_GROUPS,
+   headerLinks,
+@@ -69,6 +70,10 @@ export default function MinimalNav() {
+   const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
+   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+   const dropdownRef = useRef<HTMLDivElement>(null);
++  // The phone menu. A tap inside it is not "outside": with four doors that
++  // open, closing one group on mousedown shifts the panel, and the click
++  // that should open the next group lands on whatever moved under it.
++  const mobilePanelRef = useRef<HTMLDivElement>(null);
+ 
+   const isActive = (href: string) =>
+     location === href || location.startsWith(href + "/");
+@@ -94,6 +99,7 @@ export default function MinimalNav() {
+ 
+   useEffect(() => {
+     const handleClickOutside = (e: MouseEvent) => {
++      if (mobilePanelRef.current?.contains(e.target as Node)) return;
+       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+         setOpenDropdown(null);
+       }
+@@ -582,6 +588,7 @@ export default function MinimalNav() {
+         {mobileOpen && (
+           <div
+             id="mobile-nav-panel"
++            ref={mobilePanelRef}
+             style={{
+               position: "absolute",
+               top: "100%",
+@@ -721,7 +728,7 @@ export default function MinimalNav() {
+             <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
+               {/* What this reader saved and started, kept on this device (/my-library). */}
+               <Link
+-                href="/my-library"
++                href={LIBRARY_LINK.href}
+                 onClick={() => setMobileOpen(false)}
+                 style={{
+                   flex: 1,
+@@ -739,7 +746,7 @@ export default function MinimalNav() {
+                   borderRadius: "var(--radius-sm)",
+                 }}
+               >
+-                <BookmarkCheck size={16} aria-hidden /> My Library
++                <BookmarkCheck size={16} aria-hidden /> {LIBRARY_LINK.label}
+               </Link>
+               <Link
+                 href="/subscribe"
+@@ -766,8 +773,9 @@ export default function MinimalNav() {
+       </nav>
+ 
+       <style>{
+-        // The five-door header needs ~770px (logo 106 + links 606 + gutters,
+-        // measured at 1280); the hamburger takes over at 860 to leave air.
++        // The five-door header needs ~800px (logo 106 + links 638 + gutters,
++        // measured at 861 and 1280 with Study, Topics, Family, Essays, and
++        // About); the hamburger takes over at 860 to leave air.
+         "@media (max-width: 860px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
+         "@media (min-width: 861px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
+       }</style>
+diff --git a/client/src/lib/site-structure.test.ts b/client/src/lib/site-structure.test.ts
+index 3a12f95c..3861608a 100644
+--- a/client/src/lib/site-structure.test.ts
++++ b/client/src/lib/site-structure.test.ts
+@@ -14,7 +14,7 @@
+ import { describe, it, expect } from "vitest";
+ import fs from "node:fs";
+ import path from "node:path";
+-import { SITE_NAV_GROUPS, HELP_LINK, SEARCH_SHORTCUTS } from "./siteNav";
++import { SITE_NAV_GROUPS, HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS } from "./siteNav";
+ import { SHELF_ESSAYS, isPublicEssay } from "./shelf";
+ 
+ const ROOT = path.resolve(__dirname, "../../..");
+@@ -284,7 +284,14 @@ describe("crawl surfaces", () => {
+   });
+ 
+   it("the nav links nothing that only redirects", () => {
+-    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, ...SEARCH_SHORTCUTS].filter((l) => l.href.startsWith("/"));
++    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS].filter((l) => l.href.startsWith("/"));
+     expect(links.filter((l) => redirectFor(l.href)).map((l) => l.href)).toEqual([]);
+   });
++
++  it("never redirects a door James chose on 2026-10-26, or the page Resources folded from", () => {
++    // Study, Topics, Family, Essays, About, and /resources, which stays live
++    // as the one page of everything to use after its door folded.
++    const doors = ["/study", "/topics", "/family", "/writing", "/about", "/books", "/resources"];
++    expect(doors.filter((u) => redirectFor(u))).toEqual([]);
++  });
+ });
+diff --git a/client/src/lib/siteNav.test.tsx b/client/src/lib/siteNav.test.tsx
+index dc8eebe3..136758d6 100644
+--- a/client/src/lib/siteNav.test.tsx
++++ b/client/src/lib/siteNav.test.tsx
+@@ -1,17 +1,18 @@
+ /**
+  * The simplified site's front matter: the committed nav map (header and
+  * footer), the home page, the two hubs, and every place that points a reader
+- * at a book. These hold the shape James approved: five header doors, Find
+- * Help one click away everywhere, links only to routes that exist, and book
+- * links only to titles on the /books shelf.
++ * at a book. These hold the shape James approved: the five header doors he
++ * chose on 2026-10-26 (Study, Topics, Family, Essays, About), Find Help one
++ * click away everywhere, links only to routes that exist, and book links only
++ * to titles on the /books shelf.
+  */
+ import { describe, it, expect, vi, afterEach } from "vitest";
+ import fs from "node:fs";
+ import path from "node:path";
+-import { screen, within } from "@testing-library/react";
++import { fireEvent, screen, within } from "@testing-library/react";
+ 
+ import { renderWithProviders, offlineFetch } from "@/test/harness";
+-import { HELP_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
++import { HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
+ import { BOOK_SHELF, isShelfBookHref } from "./bookShelf";
+ import { START_WITH, SHELF_ESSAYS, isPublicEssay } from "./shelf";
+ import { HOME_HEADLINE, HOME_WHO, HOME_WHY } from "./positioning";
+@@ -45,32 +46,81 @@ function isRoute(href: string): boolean {
+ 
+ const internal = (href: string) => href.startsWith("/");
+ 
++/**
++ * The Topics door opens /topics, which U25 builds in the same wave. Until that
++ * route is in App.tsx it is the one nav link allowed to wait for its page;
++ * once it is routed this set changes nothing and can go. Never add to it.
++ */
++const AWAITING_ITS_PAGE = new Set(["/topics"]);
++
++/** The 2026-10-12 Resources group, every link of which now lives elsewhere. */
++const FORMER_RESOURCES = [
++  "/resources",
++  "/my-library",
++  "/downloads",
++  "/resources/hard-issues-series",
++  "/tools",
++  "/assessments",
++  "/how-tos",
++  "/help",
++  "/plans",
++  "/family",
++];
++
++const group = (title: string) => SITE_NAV_GROUPS.find((g) => g.title === title)!;
++
+ afterEach(() => {
+   vi.unstubAllGlobals();
+   window.history.pushState({}, "", "/");
+ });
+ 
+ describe("the nav map", () => {
+-  it("has the five header doors, in order", () => {
++  it("has the five header doors James chose, in order", () => {
+     const header = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0).map((g) => g.title);
+-    expect(header).toEqual(["Study", "Essays", "Books", "Resources", "About"]);
++    expect(header).toEqual(["Study", "Topics", "Family", "Essays", "About"]);
++    expect(SITE_NAV_GROUPS.map((g) => g.title)).toEqual(header);
+   });
+ 
+-  it("opens Study as a menu and renders every other door as a plain link", () => {
++  it("opens Study, Topics, Family, and About as menus, each led by its own page, and Essays as a plain link", () => {
++    const leads: Record<string, string> = { Study: "/study", Topics: "/topics", Family: "/family", About: "/about" };
+     for (const g of SITE_NAV_GROUPS) {
+-      if (g.title === "Study") expect(soleHeaderLink(g)).toBeNull();
+-      else expect(soleHeaderLink(g)?.href).toBe(
+-        { Essays: "/writing", Books: "/books", Resources: "/resources", About: "/about" }[g.title]
+-      );
++      if (g.title === "Essays") {
++        expect(soleHeaderLink(g)?.href).toBe("/writing");
++        continue;
++      }
++      expect(soleHeaderLink(g), g.title).toBeNull();
++      expect(headerLinks(g)[0].href, g.title).toBe(leads[g.title]);
++      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(7);
+     }
+   });
+ 
+   it("points every internal link at a route that exists", () => {
+-    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, ...SEARCH_SHORTCUTS];
+-    const dead = links.filter((l) => internal(l.href) && !isRoute(l.href)).map((l) => l.href);
++    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS];
++    const dead = links
++      .filter((l) => internal(l.href) && !isRoute(l.href) && !AWAITING_ITS_PAGE.has(l.href))
++      .map((l) => l.href);
+     expect(dead).toEqual([]);
+   });
+ 
++  it("folds Resources into Topics and Family, and keeps /resources at the foot of the Topics menu", () => {
++    const hrefs = new Set([...SITE_NAV_GROUPS.flatMap((g) => g.links.map((l) => l.href)), LIBRARY_LINK.href]);
++    expect(FORMER_RESOURCES.filter((h) => !hrefs.has(h))).toEqual([]);
++    expect(headerLinks(group("Topics")).at(-1)?.href).toBe("/resources");
++    expect(group("Topics").links.at(-1)?.href).toBe("/resources");
++    for (const h of ["/answers", "/plans", "/assessments", "/tools"]) {
++      expect(headerLinks(group("Topics")).map((l) => l.href), h).toContain(h);
++    }
++    for (const h of ["/family/tonight", "/family/devotions", "/family/catechism", "/family/reading-plans"]) {
++      expect(headerLinks(group("Family")).map((l) => l.href), h).toContain(h);
++    }
++  });
++
++  it("puts Books under About, beside Speaking and Contact, with the three titles in the footer", () => {
++    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/contact"]);
++    const about = group("About").links.map((l) => l.href);
++    for (const b of BOOK_SHELF) expect(about, b.href).toContain(b.href);
++  });
++
+   it("marks outbound and mailto links external, and nothing else", () => {
+     for (const l of SITE_NAV_GROUPS.flatMap((g) => g.links)) {
+       expect(Boolean(l.external), l.href).toBe(!internal(l.href));
+@@ -93,13 +143,41 @@ describe("the header and footer", () => {
+     expect(screen.getAllByRole("link", { name: "Find Help" })[0].getAttribute("href")).toBe("/help");
+     expect(screen.getAllByRole("button", { name: /search/i }).length).toBeGreaterThan(0);
+     expect(screen.getAllByRole("link", { name: "Subscribe" })[0].getAttribute("href")).toBe("/subscribe");
+-    expect(screen.getByRole("button", { name: /Study/ }).getAttribute("aria-haspopup")).toBe("menu");
+-    for (const [name, href] of [["Essays", "/writing"], ["Books", "/books"], ["Resources", "/resources"], ["About", "/about"]]) {
+-      expect(screen.getByRole("link", { name }).getAttribute("href")).toBe(href);
++    for (const name of ["Study", "Topics", "Family", "About"]) {
++      expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-haspopup"), name).toBe("menu");
++    }
++    expect(screen.getByRole("link", { name: "Essays" }).getAttribute("href")).toBe("/writing");
++    for (const name of ["Books", "Resources"]) expect(screen.queryByRole("link", { name }), name).toBeNull();
++  });
++
++  it("opens each door's menu on its own links", () => {
++    renderWithProviders(<MinimalNav />);
++    for (const title of ["Topics", "Family", "About"]) {
++      fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
++      const menu = screen.getByRole("menu");
++      const shown = within(menu).getAllByRole("link").map((a) => a.getAttribute("href"));
++      expect(shown, title).toEqual(headerLinks(group(title)).map((l) => l.href));
++      fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
+     }
+   });
+ 
+-  it("mirrors every group in the footer and keeps Find Help in it", () => {
++  it("on a phone, a tap on the next door's toggle does not first fold the open one", () => {
++    // Folding on mousedown shifts the panel, so the click lands on whatever
++    // moved under the finger and the next door never opens.
++    renderWithProviders(<MinimalNav />);
++    fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
++    fireEvent.click(screen.getByRole("button", { name: "Show Topics links" }));
++    const panel = document.getElementById("mobile-nav-panel")!;
++    expect(within(panel).getByRole("link", { name: "Start here: every topic" })).toBeTruthy();
++    const family = screen.getByRole("button", { name: "Show Family links" });
++    fireEvent.mouseDown(family);
++    expect(within(panel).getByRole("link", { name: "Start here: every topic" })).toBeTruthy();
++    fireEvent.click(family);
++    expect(within(panel).getByRole("link", { name: "Tonight at the table" }).getAttribute("href")).toBe("/family/tonight");
++    expect(within(panel).queryByRole("link", { name: "Start here: every topic" })).toBeNull();
++  });
++
++  it("mirrors every group in the footer and keeps Find Help and My Library in it", () => {
+     renderWithProviders(<Footer />);
+     const footer = screen.getByRole("contentinfo");
+     for (const g of SITE_NAV_GROUPS) {
+@@ -110,6 +188,7 @@ describe("the header and footer", () => {
+       }
+     }
+     expect(within(footer).getByRole("link", { name: "Find Help" }).getAttribute("href")).toBe("/help");
++    expect(within(footer).getByRole("link", { name: "My Library" }).getAttribute("href")).toBe("/my-library");
+   });
+ });
+ 
+diff --git a/client/src/lib/siteNav.ts b/client/src/lib/siteNav.ts
+index b33a67cf..0f90253d 100644
+--- a/client/src/lib/siteNav.ts
++++ b/client/src/lib/siteNav.ts
+@@ -1,19 +1,24 @@
+ /**
+- * The site's grouped navigation — one source of truth for the header and the
++ * The site's grouped navigation: one source of truth for the header and the
+  * footer.
+  *
+  * LiveWell is a simple site James keeps adding to: helping people live well in
+  * post-Christian America and understand the long history of the faith. The
+- * header carries five doors, named for what a reader came to do: Study (the
+- * Study Bible, church history, reading Scripture in its world), Essays, Books,
+- * Resources (downloads, tools, help, families), and About (the man behind it).
+- * Find Help, search, and Subscribe sit beside them on every page.
++ * header carries the five doors James chose on 2026-10-26, named for what a
++ * reader came to do: Study (the Study Bible, church history, reading
++ * Scripture in its world), Topics (the hard questions, with the answers,
++ * plans, self-checks, and tools), Family (the household at the table),
++ * Essays, and About (the man behind it, with his books, speaking, and
++ * contact). Find Help, search, and Subscribe sit beside them on every page.
++ * The old Resources door folded into Topics and Family; /resources stays live
++ * as the one page of everything to use, at the foot of the Topics menu and in
++ * the footer.
+  *
+  * Two surfaces, one map: `primary: true` puts a link in the header; the footer
+  * shows every link in the group. A group with exactly one primary link renders
+  * in the header as a plain link, not a one-item menu. Nothing is deleted: every
+  * destination that left the header is still a live route, reachable from the
+- * hub that now holds it (/study, /resources, /tools).
++ * hub that now holds it (/study, /topics, /family, /resources, /tools).
+  *
+  * The map is committed and static, so the header paints in full before any
+  * API call answers (the first-paint contract in CLAUDE.md).
+@@ -46,6 +51,9 @@ export function soleHeaderLink(group: SiteNavGroup): SiteNavLink | null {
+ /** Crisis care, one click from every page (header utility and footer). */
+ export const HELP_LINK: SiteNavLink = { label: "Find Help", href: "/help" };
+ 
++/** What this reader saved and started, kept on this device (phone menu and footer). */
++export const LIBRARY_LINK: SiteNavLink = { label: "My Library", href: "/my-library" };
++
+ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
+   {
+     // The anchor of the site: the whole Bible, the church's long memory, and
+@@ -61,48 +69,54 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
+     ],
+   },
+   {
+-    // A short shelf James has read and signed.
+-    title: "Essays",
++    // The hard questions of life in post-Christian America, in the words
++    // people bring them, and what to use on them: the topics index (/topics),
++    // the honest answers, the care plans, the self-checks, and the tools. Most
++    // of the old Resources door folded in here; /resources stays at the foot.
++    title: "Topics",
+     links: [
+-      { label: "Essays", href: "/writing", primary: true },
+-      { label: "Honest answers to hard questions", href: "/answers" },
++      { label: "Start here: every topic", href: "/topics", primary: true },
++      { label: "Honest answers", href: "/answers", primary: true },
++      { label: "Eight-week plans", href: "/plans", primary: true },
++      { label: "Self-checks", href: "/assessments", primary: true },
++      { label: "All tools", href: "/tools", primary: true },
++      { label: "Find help in a hard season", href: "/help" },
++      { label: "How-to guides", href: "/how-tos" },
++      { label: "Downloads and PDFs", href: "/downloads" },
++      { label: "The Hard Issues booklets", href: "/resources/hard-issues-series" },
++      { label: "All resources, on one page", href: "/resources", primary: true },
+     ],
+   },
+   {
+-    // The three books on the /books shelf.
+-    title: "Books",
++    // The household: tonight's devotion, the year of them, the catechism, and
++    // the reading plans, from the /family hub.
++    title: "Family",
+     links: [
+-      { label: "Books", href: "/books", primary: true },
+-      { label: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america" },
+-      { label: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror" },
+-      { label: "Believe", href: "/books/believe" },
++      { label: "Start here: for families", href: "/family", primary: true },
++      { label: "Tonight at the table", href: "/family/tonight", primary: true },
++      { label: "The year of devotions", href: "/family/devotions", primary: true },
++      { label: "The family catechism", href: "/family/catechism", primary: true },
++      { label: "Family reading plans", href: "/family/reading-plans", primary: true },
+     ],
+   },
+   {
+-    // Things people use: the downloads, the tools, help in a hard season, and
+-    // the household.
+-    title: "Resources",
+-    links: [
+-      { label: "Resources", href: "/resources", primary: true },
+-      { label: "My Library", href: "/my-library" },
+-      { label: "Downloads and PDFs", href: "/downloads" },
+-      { label: "The Hard Issues booklets", href: "/resources/hard-issues-series" },
+-      { label: "All tools", href: "/tools" },
+-      { label: "Self-checks", href: "/assessments" },
+-      { label: "How-to guides", href: "/how-tos" },
+-      { label: "Find help in a hard season", href: "/help" },
+-      { label: "Eight-week plans", href: "/plans" },
+-      { label: "For families", href: "/family" },
+-    ],
++    // A short shelf James has read and signed.
++    title: "Essays",
++    links: [{ label: "Essays", href: "/writing", primary: true }],
+   },
+   {
+-    // The person is the ministry: who James is, how to reach him, and the
+-    // work that lives at its own address.
++    // The person is the ministry: who James is, his books (the three titles
++    // on the /books shelf), how to reach him, and the work that lives at its
++    // own address.
+     title: "About",
+     links: [
+-      { label: "About", href: "/about", primary: true },
+-      { label: "Speaking", href: "/speaking" },
+-      { label: "Contact", href: "/contact" },
++      { label: "About James", href: "/about", primary: true },
++      { label: "Books", href: "/books", primary: true },
++      { label: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america" },
++      { label: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror" },
++      { label: "Believe", href: "/books/believe" },
++      { label: "Speaking", href: "/speaking", primary: true },
++      { label: "Contact", href: "/contact", primary: true },
+       { label: "Newsletter", href: "/subscribe" },
+       { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true },
+       { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
+@@ -115,8 +129,9 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
+ export const SEARCH_SHORTCUTS: SiteNavLink[] = [
+   { label: "The Study Bible", href: "/study/bible" },
+   { label: "Church history", href: "/theology/history" },
++  { label: "Topics", href: "/topics" },
++  { label: "Tonight at the table", href: "/family/tonight" },
+   { label: "Essays", href: "/writing" },
+   { label: "Books", href: "/books" },
+   { label: "Find help", href: "/help" },
+-  { label: "Tools", href: "/tools" },
+ ];
+-- 
+2.43.0
+

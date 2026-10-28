@@ -1,0 +1,55 @@
+{
+  "slug": "what-render-unto-caesar-actually-means",
+  "lens": "integrity (facts, quotations, Scripture, living persons, restorations)",
+  "findings": [
+    {
+      "where": "Is This the Separation of Church and State?, paragraph 1: \"...and Christians who have argued since then that no government may compel belief have reached for it too. They were right to.\"",
+      "problem": "(a) A historical claim (later Christians arguing against compelled belief cited the coin saying) has no verifying ledger line. The ledger only calls it 'a general description with no one named', and the writer left Luther's Temporal Authority (1523) out as unconfirmed. This run found secondary support only: a HistoryRise overview of Temporal Authority (1523) says Luther grounded the two governments in Romans 13:1-7 and Matthew 22:21 and held that the state cannot and must not try to compel belief; an LCMS essay reads 'render unto Caesar' as meaning conscience belongs to God, not the government. No primary text was seen: pages.uoregon.edu (Luther) and gutenberg.org (Williams, Bloudy Tenent) are blocked by the proxy, and the local Williams (Mr. Cottons letter, 1644) and Locke (Letter concerning toleration) copies never cite the saying.",
+      "fix": "Keep the essay sentence (it names no one and the secondary sources support it). Add a ledger line under 'Is This the Separation of Church and State?': 'Christians who argued that no government may compel belief reached for the saying: Search (final read, 2026-10-28): HistoryRise overview of Luther, Temporal Authority (1523), grounding the two governments in Matthew 22:21 and holding that the state must not compel belief; LCMS Reporter on Luther and church and state. Secondary summaries only; no one named in the essay.' If the fixer will not accept secondary support, generalize to Ambrose alone: replace \"Ambrose reached for it when an emperor's court demanded one of his churches, and Christians who have argued since then that no government may compel belief have reached for it too. They were right to.\" with \"Ambrose reached for it when an emperor's court demanded one of his churches, and he was right to.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Coin in Their Hands, last paragraph: \"\\\"And they marveled at him,\\\" Mark says.\"",
+      "problem": "(e) A quoted Scripture span has no reference beside it. The wording is exact ESV (Mark 12:17 in the local ESV copy), but the brief asks for the reference beside each Scripture quotation. The nearest earlier reference, (Mark 12:17), is two paragraphs back.",
+      "fix": "Replace '\"And they marveled at him,\" Mark says.' with '\"And they marveled at him,\" Mark says (Mark 12:17).'",
+      "severity": "consider"
+    },
+    {
+      "where": "Quotation endings: Whiston 'this taxation was no better than an introduction to slavery.' and 'our law forbids us the very making of images.'; Justin 'as we have been taught by Him.'; Ambrose 'that all things are his,'; Closing Texts Psalm 24:1 '...those who dwell therein.'",
+      "problem": "(d) The ledger calls these 'exact', but the punctuation at each quotation's close differs from the source: Whiston has 'slavery,' and 'images;'; ANF Justin has 'Him;'; NPNF Epistle 20.19 has 'his.'; ESV Psalm 24:1 ends with a comma. Every word is verbatim (checked by script this run), and changing terminal punctuation to fit the sentence is standard American style. The ledger records only the Justin and Psalm cases.",
+      "fix": "No change to the essay. Optionally add one ledger note: 'Terminal punctuation at the close of five quotations is adjusted to the sentence (Whiston 18.1.1 \"slavery,\", 18.3.1 \"images;\"; Justin ch. XVII \"Him;\"; Epistle 20.19 \"his.\"; Psalm 24:1 \",\"); words verbatim.'",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "All 18 non-Scripture quotations re-checked this run by my own script against the local primary texts, and every word is verbatim. Sources: Whiston, Antiquities (4 quotes); ANF Justin, First Apology XVII (2); ANF Tertullian, On Idolatry XV (2); Ayer, Passion of the Scilitan Martyrs (4); NPNF Ambrose, Epistle 20 (2) and Sermon Against Auxentius 35 and 36/37 (2); Garnett, Brothers Karamazov (2, including 'followed him' with Garnett's italic). Only the closing punctuation differs (see the third finding).",
+    "All 31 Scripture spans checked at verse level against the local ESV copy (esv-mdbible): Mark 12:12, 12:13, 3:6, 12:14 (both), Luke 20:20, Acts 5:37, Mark 12:15, Matthew 20:2, Mark 12:16 (both), 12:17 (both), Romans 13:7, Luke 20:26, 23:2, Genesis 1:26, 1:27, Mark 12:30, Psalm 24:1, Matthew 4:8-9, 4:10, John 6:15 (both), Amos 7:13, John 19:15 (both), Mark 15:26, Colossians 1:15 (body and Closing Texts), Mark 14:36, 2 Corinthians 3:18. All match exactly. Psalm 24:1 differs only by that copy's known 'Lord 's' artifact.",
+    "Every cited reference read against the BSB in client/public/bible/ch/. Each verse carries the sense the essay gives it, and no reference points to the wrong verse.",
+    "Matthew 22:21 is quoted in KJV and labeled KJV. The translation choice is doing work ('Most of us know it in the King James wording'), and the wording matches the KJV.",
+    "Greek claims re-checked in SBLGNT (MorphGNT files): Mark 12:14 has δοῦναι, δῶμεν (δίδωμι) and κῆνσον (κῆνσος); 12:16 has εἰκών; 12:17 has ἀπόδοτε (ἀποδίδωμι); Romans 13:7 has ἀπόδοτε; Colossians 1:15 has εἰκών. ἐπιγραφή occurs in Mark only at 12:16 and 15:26, which confirms 'only twice'. Herodians occur in Mark only at 3:6 and 12:13, which confirms 'once before'. Mark 12:13-17 is 106 Greek words against 104 for Luke 20:20-26 and 115 for Matthew, so 'five verses' (not 'shortest') is the right wording.",
+    "Josephus details re-read in Whiston: Archelaus's tenth year; Cyrenius 'a Roman senator'; Joazar's persuasion; Judas with Sadduc calling a revolt; the fourth sect; the ensigns brought in 'in the night time'; the crowds at Cesarea 'many days'; necks laid bare; images carried back.",
+    "Scillitan martyrs re-read in Ayer: July 17, 180; Scili a small city; judgment-hall at Carthage; proconsul Saturninus; 'put to the sword'; 'We give thanks to God' follows the decree. Speratus's tax answer actually follows Saturninus's second demand ('swear thou by the genius of our lord the Emperor'), which repeats the first. The essay's compression keeps the sense.",
+    "Ambrose re-read in NPNF: Epistle 20 is to his sister about the basilica (NPNF dates it Easter 385, and the essay's '385 and 386' covers the dispute); Sermon Against Auxentius 4 has soldiers surrounding the church; Letter 40.6 has the report blaming the bishop and the order that the synagogue be 'rebuilt by the Bishop himself'; Letter 41.1 has 'since I gained little by frequent endeavours, I wrote ... and when he went to church I delivered this discourse', which supports 'when that didn't settle the matter'; Letter 41.28 has the promise before the altar.",
+    "Garnett re-read: Seville in 'the most terrible time of the Inquisition'; the cardinal 'almost ninety'; Alyosha the listener; the prisoner's silence; 'enemies of the Roman Church' (supports 'aimed the story at Rome').",
+    "Living person (f): Michele Margolis. A search this run (Niskanen, Washington Monthly, Christianity Today, Religion News Service, Yale ISPS, religioninpublic.blog interview) agrees that partisanship settles before religious identity and shapes whether people return to religion when they have children. CT notes the effect is concentrated among white partisans with young children who follow politics, which the essay's hedged 'for many Americans' and 'helps decide' allow. No title, year or statistic is given, and the essay does not attribute the next sentence ('a congregation can become the religious wing...') to her. Fair and supported.",
+    "No other living person is named. The right and left paragraph names no one. 'The church I serve' fits the confirmed biography (a pastor). Nothing in the essay states his title, years or book count.",
+    "Every number and date (AD 6, AD 70, the 150s, around 200, July 17 180, 385 and 386, 388, five verses, a generation, a day's pay) and every name (Quirinius, Archelaus, Augustus, Judas, Sadduc, Gamaliel, Pilate, Tiberius, Justin, Antoninus Pius, Tertullian, Speratus, Donata, Saturninus, Ambrose, Valentinian II, Theodosius, Callinicum, Dostoevsky, Ivan, Amaziah) has a verified ledger line that matches the essay.",
+    "Restorations (g): the ledger records no original, more specific wording that an earlier run cut or generalized. 'Mark's version is the shortest' was a correction, wrong by word count, not a restoration candidate. Gelasius and Luther were never in the essay. Nothing to restore.",
+    "Mechanics: no em-dashes. The one exclamation point is inside quoted Scripture (Matthew 4:10).",
+    "Links: all five targets are public on shelf.json. the-conservative-blind-spot, the-progressive-blind-spot and when-the-church-married-empire are live; what-romans-13-says and the-early-church-under-rome are pending with their rewrites in client/public/essays/. There are five links against the brief's two to four, which the ledger records and accepts. This is not an integrity issue.",
+    "needs_james false is consistent: no contested second-order doctrine is settled."
+  ],
+  "web_searches_used": 4,
+  "sources_seen_this_run": [
+    "https://historyrise.com/article/luthers-views-on-the-relationship-between-church-and-state/",
+    "https://reporter.lcms.org/2016/luther-on-church-and-state",
+    "https://nlnrac.org/node/254",
+    "https://www.niskanencenter.org/how-americans-politics-drives-their-religious-views/",
+    "https://washingtonmonthly.com/2018/07/15/party-faithful/",
+    "https://www.christianitytoday.com/?p=103676",
+    "https://religionnews.com/2018/07/31/how-partisanship-drives-religious-attitudes-and-not-the-other-way-around/",
+    "https://isps.yale.edu/node/21734",
+    "https://religioninpublic.blog/2018/01/23/how-partisanship-and-the-political-environment-shape-religious-identity-an-interview-with-author-michele-margolis/",
+    "https://en.wikipedia.org/wiki/The_Bloudy_Tenent_of_Persecution_for_Cause_of_Conscience"
+  ]
+}

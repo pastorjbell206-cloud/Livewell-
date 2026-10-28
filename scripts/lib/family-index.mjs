@@ -12,18 +12,70 @@
  * The catechism's questions and the children's answers ride along, so /family
  * and table mode can show this week's question without the whole catechism.
  *
+ * The Table, part two (U21): each weekly row names its strand (MASTER-PLAN
+ * 5.4) and, for the library, its theme group; a devotion with a line "for the
+ * grown-ups" carries it here with the title of the page it links, read from
+ * that page's own data so the link can never name a page that is not there.
+ *
+ * A strand beside the weekly set (family-devotions-world.json, U11) adds its
+ * devotions as weekly rows that name their strand, numbered within it, and a
+ * `strands` entry with its label and count, but only once its file is live
+ * (./family-devotion-file.mjs). While it is hidden the index is exactly what it
+ * would be without the file, so nothing on the site can link, prerender, or
+ * list a devotion James has not read.
+ *
  * Built by scripts/build-family-index.mjs; CI runs it with --check.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { readRef } from "./bsb.mjs";
+import { devotionsIn } from "./family-devotion-file.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const INDEX = "client/public/family/index.json";
 
-/** The weekly files, in the order the site has always listed them. */
-const WEEKLY_FILES = ["family-devotions.json", "family-devotions-2.json"];
+/**
+ * The weekly strands (MASTER-PLAN 5.4), each read from its own files in this
+ * order. A strand whose file does not exist yet is left out of the index, so
+ * the world and church strands appear in the library the day their files land.
+ */
+export const STRANDS = [
+  { key: "foundations", label: "Foundations", files: ["family-devotions.json", "family-devotions-2.json"] },
+  { key: "world", label: "The world we live in", files: ["family-devotions-world.json"] },
+  { key: "church", label: "The church remembers", files: ["family-devotions-church.json"] },
+];
+
+/**
+ * The library's theme groups, in the order the library shows them. Every
+ * Foundations devotion names one as its `group`; another strand may.
+ */
+export const GROUPS = [
+  { key: "god", label: "Who God is" },
+  { key: "story", label: "The big story" },
+  { key: "following", label: "Following Jesus" },
+  { key: "character", label: "Growing in character" },
+  { key: "others", label: "Living with other people" },
+  { key: "feelings", label: "Hard days and big feelings" },
+  { key: "everyday", label: "Work, rest, and what we have" },
+];
+
+/**
+ * Where a devotion's line "for the grown-ups" may point, and the title the
+ * link shows: a care page (/help/<slug>, from client/public/needs/<slug>.json
+ * with page: true). Topic pages join once they exist (U25). Returns the title,
+ * or the reason the link cannot be made.
+ */
+export function grownupsTarget(href, { needsDir = path.join(ROOT, "client/public/needs") } = {}) {
+  const help = /^\/help\/([a-z0-9-]+)$/.exec(href ?? "");
+  if (!help) return { problem: `"${href}" is not a page a grown-ups line can link yet (a care page, /help/<slug>); teach grownupsTarget in scripts/lib/family-index.mjs` };
+  const file = path.join(needsDir, `${help[1]}.json`);
+  if (!fs.existsSync(file)) return { problem: `"${href}" has no care page (client/public/needs/${help[1]}.json)` };
+  const need = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (need.page !== true || typeof need.title !== "string") return { problem: `"${href}" is not a published care page` };
+  return { title: need.title };
+}
+
 const SEASONAL_FILE = "family-seasonal.json";
 
 /** Each daily set: its key in family-seasonal.json, its address, and its name. */
@@ -77,27 +129,58 @@ export function buildFamilyIndex(root = ROOT) {
     devotions.push(row);
   };
 
-  let n = 0;
-  for (const file of WEEKLY_FILES) {
-    const list = read(root, file);
-    for (const d of list) {
-      n += 1;
-      add(
-        {
-          id: d.id,
-          kind: "weekly",
-          n,
-          title: d.title,
-          theme: d.theme,
-          passage: d.passage,
-          href: studyHref(d.passage),
-          file: `/${file}`,
-          description: d.bigIdea,
-        },
-        `client/public/${file} ${d.id}`,
-      );
+  const groupKeys = new Set(GROUPS.map((g) => g.key));
+  const strands = [];
+  const groupCounts = new Map();
+  const claimed = new Set(STRANDS.flatMap((s) => s.files));
+  for (const name of fs.readdirSync(path.join(root, "client/public"))) {
+    if (/^family-devotions(-[a-z0-9-]+)?\.json$/.test(name) && !claimed.has(name)) {
+      problems.push(`client/public/${name}: no strand reads this file; add it to STRANDS in scripts/lib/family-index.mjs`);
     }
   }
+  for (const strand of STRANDS) {
+    let n = 0;
+    for (const file of strand.files) {
+      if (!fs.existsSync(path.join(root, "client/public", file))) continue;
+      // A strand file is a plain list, or { live, devotions } held back until
+      // `live` is true (U11's world strand): a held-back strand has no rows.
+      const { live, devotions: all } = devotionsIn(read(root, file));
+      const list = live ? all : [];
+      for (const d of list) {
+        n += 1;
+        const where = `client/public/${file} ${d.id}`;
+        if (d.group !== undefined || strand.key === "foundations") {
+          if (!groupKeys.has(d.group)) problems.push(`${where}: group "${d.group ?? ""}" is not one of the library's groups (${[...groupKeys].join(", ")})`);
+          else if (strand.key === "foundations") groupCounts.set(d.group, (groupCounts.get(d.group) ?? 0) + 1);
+        }
+        let grownups;
+        if (d.grownups !== undefined) {
+          const target = grownupsTarget(d.grownups?.href, { needsDir: path.join(root, "client/public/needs") });
+          if (target.problem) problems.push(`${where}: grownups link ${target.problem}`);
+          else grownups = { line: d.grownups.line, href: d.grownups.href, title: target.title };
+        }
+        add(
+          {
+            id: d.id,
+            kind: "weekly",
+            n,
+            strand: strand.key,
+            title: d.title,
+            theme: d.theme,
+            ...(d.group !== undefined ? { group: d.group } : {}),
+            passage: d.passage,
+            href: studyHref(d.passage),
+            file: `/${file}`,
+            description: d.bigIdea,
+            ...(grownups ? { grownups } : {}),
+          },
+          where,
+        );
+      }
+    }
+    if (n > 0) strands.push({ key: strand.key, label: strand.label, count: n });
+  }
+  const weekly = strands.find((s) => s.key === "foundations")?.count ?? 0;
 
   const seasonal = read(root, SEASONAL_FILE);
   const sets = {};
@@ -132,7 +215,9 @@ export function buildFamilyIndex(root = ROOT) {
   return {
     index: {
       about: "Written by scripts/build-family-index.mjs from the family libraries in client/public. Do not edit by hand.",
-      weekly: n,
+      weekly,
+      strands,
+      groups: GROUPS.map((g) => ({ ...g, count: groupCounts.get(g.key) ?? 0 })),
       sets,
       devotions,
       catechism,

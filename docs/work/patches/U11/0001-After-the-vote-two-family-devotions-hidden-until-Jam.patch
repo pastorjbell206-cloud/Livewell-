@@ -1,0 +1,1578 @@
+From 825deef32cd2a2473470ba4ff0da6f7e1f4a7b27 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 16:19:12 +0000
+Subject: [PATCH 1/3] After the vote: two family devotions, hidden until James
+ reads them (U11)
+
+"When the Grown-Ups Voted Differently" (Matthew 10:2-4) and "Praying for
+Leaders We Did Not Choose" (1 Timothy 2:1-4) in
+client/public/family-devotions-world.json, the weekly shape with younger and
+older questions, BSB verbatim, and a line for the grown-ups to
+/help/politics. Each speaks to both sides of the table in turn (two labelled
+paragraphs under Talk).
+
+One flag hides them: "live": false. While it is false the family index has
+no row for them (so no page, no prerendered head, no sitemap entry, no
+library tab), the year map does not pin them, and their ids are not frozen;
+the family and politics gates still check every line. Setting it true and
+running the freeze, the index and the year map (scripts/lib/family-
+devotion-file.mjs) publishes them through The Table: their own pages, a
+"The world we live in" tab in the library, and tonight's devotion for the
+weeks of November 8 and 15, 2026 (pinned in family-year-overrides.json,
+waiting until then).
+
+Gates: validate-family reads strand files ({ live, devotions }), keeps ids
+unique across hidden and live, refuses a year map naming a hidden devotion
+and a frozen id hidden again. validate-politics (scripts/lib/
+family-politics.mjs) holds a politics devotion's two sides to its 55% word
+band, refuses one side only, and refuses a devotion that talks about voting
+without the mark. The year map lets a pin before its first year expire with
+a note, so moving FIRST_YEAR on never fails on these.
+
+Family.tsx is untouched.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/public/family-devotions-world.json |  82 +++++
+ client/public/family-year-overrides.json  |   5 +-
+ client/src/index.css                      |   2 +
+ client/src/lib/familyTable.ts             |  24 +-
+ client/src/pages/FamilyDevotions.tsx      |  29 +-
+ client/src/pages/family/DevotionPage.tsx  |   7 +-
+ client/src/pages/family/DevotionParts.tsx |   7 +
+ client/src/pages/family/useFamilyData.ts  |  27 +-
+ client/src/pages/family/world.test.tsx    | 220 +++++++++++++
+ scripts/lib/family-devotion-file.mjs      |  35 ++
+ scripts/lib/family-index.mjs              |  36 +++
+ scripts/lib/family-politics.mjs           |  92 ++++++
+ scripts/lib/family-year.mjs               |  45 ++-
+ scripts/validate-family.mjs               |  62 +++-
+ scripts/validate-politics.mjs             |  11 +-
+ server/family-world.test.ts               | 376 ++++++++++++++++++++++
+ 16 files changed, 1012 insertions(+), 48 deletions(-)
+ create mode 100644 client/public/family-devotions-world.json
+ create mode 100644 client/src/pages/family/world.test.tsx
+ create mode 100644 scripts/lib/family-devotion-file.mjs
+ create mode 100644 scripts/lib/family-politics.mjs
+ create mode 100644 server/family-world.test.ts
+
+diff --git a/client/public/family-devotions-world.json b/client/public/family-devotions-world.json
+new file mode 100644
+index 00000000..354c88af
+--- /dev/null
++++ b/client/public/family-devotions-world.json
+@@ -0,0 +1,82 @@
++{
++  "about": "The world we live in (MASTER-PLAN 5.4): family devotions on what a Christian child now meets. Each devotion has the weekly shape, with questions for younger and older children. A devotion on politics carries politics: true and two sides, read aloud in turn, which scripts/validate-politics.mjs holds to the same word band. While live is false the site shows none of them: no row in the family index, no page, no sitemap entry, no week on the year map, no place in the library. James reads them first. To publish, set live to true and follow the steps at the top of scripts/lib/family-devotion-file.mjs.",
++  "live": false,
++  "devotions": [
++    {
++      "id": "grown-ups-voted-differently",
++      "title": "When the Grown-Ups Voted Differently",
++      "theme": "After the vote",
++      "passage": "Matthew 10:2-4",
++      "passageText": "These are the names of the twelve apostles: first Simon, called Peter, and his brother Andrew; James son of Zebedee, and his brother John; Philip and Bartholomew; Thomas and Matthew the tax collector; James son of Alphaeus, and Thaddaeus; Simon the Zealot, and Judas Iscariot, who betrayed Jesus.",
++      "bigIdea": "People who love Jesus can vote differently and still belong to each other, because they belong to Him first.",
++      "reflection": "Read the list slowly, because two of the names should surprise you. Matthew had been a tax collector. He collected money for the rulers of the land, and many people looked down on tax collectors for it. Simon was called the Zealot, a name for someone on fire with zeal for God. In those days that zeal sometimes meant wanting the Romans gone, though we don't know exactly what Simon believed. Still, it's hard to picture these two agreeing about much at dinner.\n\nJesus called them both. He didn't ask them to settle their arguments first. He asked them to follow Him, and following Him put them side by side.\n\nAfter an election you may find out that some of the grown-ups you love voted one way and some voted another. That can feel like a crack running through the family. It doesn't have to become one.",
++      "politics": true,
++      "sides": [
++        {
++          "label": "If you are glad about how it went",
++          "text": "Be glad without gloating. Someone you love may be sad tonight, and their sadness is real. The people who won can't save anyone; only Jesus can do that. So be gentle with the ones who are hurting, and pray for the winners, because they will need it."
++        },
++        {
++          "label": "If you are sad about how it went",
++          "text": "Be sad without despair. Someone you love may be glad tonight, and that doesn't make them your enemy. The people who won can't take Jesus off His throne. So be gentle with the ones who are happy, and pray for the winners, because God asks us to."
++        }
++      ],
++      "questions": {
++        "younger": [
++          "Matthew and Simon probably didn't agree about a lot of things. Why do you think Jesus wanted both of them?",
++          "Who is someone you love who thinks differently from you about something?",
++          "What could you say to someone in our family who feels sad this week?"
++        ],
++        "older": [
++          "What do you think it was like for Matthew and Simon to eat, walk, and pray together every day?",
++          "What is the difference between disagreeing with someone and looking down on them?",
++          "Is there anyone you have stopped listening to because of how they vote? What would it take to listen again?"
++        ]
++      },
++      "activity": "Write the names of two people your family loves who see politics differently, from each other or from you. Pray for both by name tonight, and this week do one kind thing for one of them: a call, a note, or a visit.",
++      "prayer": "Jesus, You called Matthew and Simon to follow You together. Keep our family together when we disagree. Make us glad without gloating and sad without despair, and help us love the people who voted differently from us. Amen.",
++      "grownups": {
++        "line": "If the election left a strain between you and someone you love, start here.",
++        "href": "/help/politics"
++      }
++    },
++    {
++      "id": "praying-for-leaders",
++      "title": "Praying for Leaders We Did Not Choose",
++      "theme": "After the vote",
++      "passage": "1 Timothy 2:1-4",
++      "passageText": "First of all, then, I urge that petitions, prayers, intercessions, and thanksgiving be offered for everyone— for kings and all those in authority—so that we may lead tranquil and quiet lives in all godliness and dignity. This is good and pleasing in the sight of God our Savior, who wants everyone to be saved and to come to the knowledge of the truth.",
++      "bigIdea": "God asks us to pray for the people in charge, the ones we chose and the ones we didn't, because He wants them to know Him too.",
++      "reflection": "Paul wrote these words to Timothy, whom he had left in the city of Ephesus to care for the church there. In those days the man over everyone was the emperor of Rome. No one in Timothy's church had chosen him. He didn't worship Jesus, and the officials under him could make life hard for Christians. Paul himself had been beaten and jailed by some of them.\n\nEven so, Paul tells the church to pray for kings and everyone in authority, and to do it first of all. He asks for thanksgiving too, which is harder. And he gives the reason: God wants everyone to be saved, and everyone includes the people at the top.\n\nPraying for someone changes the way you talk about them. It's hard to mock someone at breakfast when you prayed for them by name the night before.",
++      "politics": true,
++      "sides": [
++        {
++          "label": "If the people you voted for won",
++          "text": "Thank God, and keep praying for them. Pray that they tell the truth, keep their word, and remember the people who didn't vote for them. Don't ask them to be your savior. They are people, and sometimes they will let you down."
++        },
++        {
++          "label": "If the people you voted for lost",
++          "text": "Pray for the ones who won, by name. Pray for their families, and ask God to give them wisdom when they decide things. You can disagree with a leader and still pray for them. Paul asked the first Christians to pray for an emperor nobody chose."
++        }
++      ],
++      "questions": {
++        "younger": [
++          "Who are some of the people in charge of our town, our state, and our country?",
++          "Is it easier to pray for someone you like or someone you don't? Why?",
++          "What is one good thing we could ask God to do for a leader this week?"
++        ],
++        "older": [
++          "Paul asks for thanksgiving for kings, not only requests. What could you honestly thank God for about a leader you didn't want?",
++          "How might praying for a leader by name change the way you talk about them?",
++          "Paul says God wants everyone to be saved. What would it look like to want that for a leader you disagree with?"
++        ]
++      },
++      "activity": "Write down the names of three people in charge: one in your town, one in your state, and one in the country. Make sure at least one is someone your family didn't vote for. Keep the list where you eat, and pray for one name each night this week.",
++      "prayer": "Father, we pray for the people in charge of our town, our state, and our country, the ones we chose and the ones we didn't. Give them wisdom and honesty, and help them know You. Keep us from hating anyone You love. Amen.",
++      "grownups": {
++        "line": "If it is hard to pray for someone you voted against, start here.",
++        "href": "/help/politics"
++      }
++    }
++  ]
++}
+diff --git a/client/public/family-year-overrides.json b/client/public/family-year-overrides.json
+index ec90f1b2..bda4f2f0 100644
+--- a/client/public/family-year-overrides.json
++++ b/client/public/family-year-overrides.json
+@@ -1,4 +1,7 @@
+ {
+   "about": "Hand overrides for the family year map (client/src/lib/familyYear.generated.ts). Each entry pins one devotion, by its id in any client/public/family-devotions*.json file, to the week that begins on the given Sunday (a week the rotation serves, not one a daily seasonal set serves), for example { \"week\": \"2027-01-10\", \"devotion\": \"forgiveness\", \"note\": \"why this week\" }. A pinned week does not use up a slot in the rotation. After editing, run: node scripts/build-family-year.mjs",
+-  "weeks": []
++  "weeks": [
++    { "week": "2026-11-08", "devotion": "grown-ups-voted-differently", "note": "The week after the November 3 vote, when the results come to dinner (U11). Waits until family-devotions-world.json is live." },
++    { "week": "2026-11-15", "devotion": "praying-for-leaders", "note": "The second week after the vote (U11). Waits until family-devotions-world.json is live." }
++  ]
+ }
+diff --git a/client/src/index.css b/client/src/index.css
+index 56f1a10c..d03b70a9 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -650,6 +650,7 @@ img{display:block;max-width:100%}
+ .tb-big{font-family:var(--F);font-size:clamp(22px,2.4vw,26px);font-weight:400;line-height:1.35;color:var(--ink);margin:0 0 var(--s-2)}
+ .tb-body p,.tb-text{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+ .tb-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 8px}
++.tb-side{margin:var(--s-3) 0 0;padding-left:16px;border-left:1px solid var(--border)}
+ .tb-questions{margin:0 0 var(--s-2);padding-left:1.4em;font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink)}
+ .tb-questions li+li{margin-top:10px}
+ .tb-prayer{font-family:var(--F);font-size:clamp(20px,2.2vw,23px);font-style:italic;line-height:1.55;color:var(--ink);margin:0 0 var(--s-2)}
+@@ -695,6 +696,7 @@ img{display:block;max-width:100%}
+   .tb-big{font-size:11.5pt;margin-bottom:4pt}
+   .tb-body p,.tb-text,.tb-questions{font-size:9.5pt;line-height:1.45;margin-bottom:4pt}
+   .tb-questions li+li{margin-top:2pt}
++  .tb-side{margin-top:4pt;padding-left:8pt}
+   .tb-prayer{font-size:10.5pt;margin-bottom:2pt}
+   .tb-devotion p[style]{font-size:8pt !important;margin-bottom:2pt !important}
+   .tb-done,.tb-more,.tb-line{display:none !important}
+diff --git a/client/src/lib/familyTable.ts b/client/src/lib/familyTable.ts
+index 9efea741..514bbc77 100644
+--- a/client/src/lib/familyTable.ts
++++ b/client/src/lib/familyTable.ts
+@@ -23,8 +23,10 @@ export const FAMILY_INDEX_URL = "/family/index.json";
+ export interface FamilyIndexRow {
+   id: string;
+   kind: "weekly" | "seasonal";
+-  /** Weekly: its place in the set, from 1. */
++  /** Weekly: its place in the set (or in its strand), from 1. */
+   n?: number;
++  /** Weekly, beside the 72: the strand it belongs to ("world"), listed in FamilyIndex.strands. */
++  strand?: string;
+   /** Seasonal: the set and the day in it, from 1. */
+   set?: FamilySetKey;
+   day?: number;
+@@ -46,6 +48,13 @@ export interface FamilySetInfo {
+   days: number;
+ }
+ 
++/** A strand of weekly devotions beside the 72 (MASTER-PLAN 5.4), present once its file is live. */
++export interface FamilyStrandInfo {
++  key: string;
++  label: string;
++  count: number;
++}
++
+ export interface CatechismLine {
+   number: number;
+   question: string;
+@@ -54,6 +63,7 @@ export interface CatechismLine {
+ 
+ export interface FamilyIndex {
+   weekly: number;
++  strands?: FamilyStrandInfo[];
+   sets: Record<FamilySetKey, FamilySetInfo>;
+   devotions: FamilyIndexRow[];
+   catechism: CatechismLine[];
+@@ -65,6 +75,7 @@ const isText = (x: unknown): x is string => typeof x === "string" && x.length >
+ export function isFamilyIndex(x: unknown): x is FamilyIndex {
+   if (!isObject(x) || typeof x.weekly !== "number" || !isObject(x.sets)) return false;
+   if (!Array.isArray(x.devotions) || !Array.isArray(x.catechism)) return false;
++  if (x.strands !== undefined && !(Array.isArray(x.strands) && x.strands.every((s) => isObject(s) && isText(s.key) && isText(s.label) && typeof s.count === "number"))) return false;
+   return (
+     x.devotions.every((r) => isObject(r) && isText(r.id) && isText(r.title) && isText(r.passage) && isText(r.file) && (r.kind === "weekly" || r.kind === "seasonal")) &&
+     x.catechism.every((q) => isObject(q) && typeof q.number === "number" && isText(q.question))
+@@ -129,8 +140,17 @@ export function weekOfYear(date: string): number {
+   return Math.floor((dayNumber(date) - firstSunday) / 7) + 1;
+ }
+ 
+-/** Where a devotion sits in its set: "12 of 72" for a weekly one, "Day 6 of 25" for a day of a set. */
++/** The strand a weekly devotion beside the 72 belongs to, or undefined for one of the 72. */
++export function strandOf(row: FamilyIndexRow, index: FamilyIndex): FamilyStrandInfo | undefined {
++  return row.strand && row.strand !== "foundations" ? index.strands?.find((s) => s.key === row.strand) : undefined;
++}
++
++/** Where a devotion sits in its set: "12 of 72" for a weekly one, "1 of 2" in a strand, "Day 6 of 25" for a day of a set. */
+ export function placeOf(row: FamilyIndexRow, index: FamilyIndex): { unit?: string; current: number; total: number } | null {
++  if (row.kind === "weekly" && row.n && row.strand && row.strand !== "foundations") {
++    const strand = strandOf(row, index);
++    return strand ? { current: row.n, total: strand.count } : null;
++  }
+   if (row.kind === "weekly" && row.n) return { current: row.n, total: index.weekly };
+   if (row.kind === "seasonal" && row.set && row.day) {
+     const days = index.sets[row.set]?.days;
+diff --git a/client/src/pages/FamilyDevotions.tsx b/client/src/pages/FamilyDevotions.tsx
+index 0515b6e1..a77e0b49 100644
+--- a/client/src/pages/FamilyDevotions.tsx
++++ b/client/src/pages/FamilyDevotions.tsx
+@@ -10,7 +10,9 @@
+  * since the set is a December 1 to 25 calendar. Data: the family index
+  * (client/public/family/index.json, scripts/build-family-index.mjs); the list
+  * shows references, not verse text. scripts/validate-family.mjs checks the
+- * counts this page states.
++ * counts this page states. A strand beside the 72 (The world we live in,
++ * ?tab=world, U11) gets its tab only once its file is live and the index lists
++ * it; until then the tab is not there.
+  */
+ import { useEffect, useMemo, useState } from "react";
+ import { Link, useLocation, useSearch } from "wouter";
+@@ -24,11 +26,13 @@ import { familySetDayOn, localISODate, type FamilySetKey } from "@/lib/familyYea
+ import { adventSeasonFor, longDate } from "@/lib/familyAdvent";
+ import { useFamilyIndex } from "./family/useFamilyData";
+ 
+-type Tab = "weekly" | FamilySetKey;
++type Tab = "weekly" | "world" | FamilySetKey;
++const isSetTab = (t: Tab): t is FamilySetKey => t !== "weekly" && t !== "world";
+ 
+ /** Each tab's address, and the booklet files scripts/lib/help-printables.mjs builds for each daily set. */
+ const TABS: { id: Tab; param: string; file?: string }[] = [
+   { id: "weekly", param: "weekly" },
++  { id: "world", param: "world" },
+   { id: "thanksgiving", param: "thanksgiving", file: "thanksgiving" },
+   { id: "advent", param: "advent", file: "advent" },
+   { id: "holyWeek", param: "holy-week", file: "holy-week" },
+@@ -41,7 +45,10 @@ export default function FamilyDevotions() {
+   const [, navigate] = useLocation();
+   const query = new URLSearchParams(search);
+   const param = query.get("tab");
+-  const tab: Tab = TABS.find((t) => t.param === param)?.id ?? "weekly";
++  const world = index?.strands?.find((s) => s.key === "world");
++  const asked: Tab = TABS.find((t) => t.param === param)?.id ?? "weekly";
++  // The world tab is there only once its strand is live (U11); before that ?tab=world opens the weekly list.
++  const tab: Tab = asked === "world" && index && !world ? "weekly" : asked;
+   const day = Number(query.get("day"));
+   const [done] = useState(() => new Set(readFamilyProgress().done.map((d) => d.id)));
+   // Tonight's day of a daily set, and this year's Advent Sunday, from the
+@@ -53,21 +60,23 @@ export default function FamilyDevotions() {
+   // ?tab=advent&day=6 names one day of a set (U13's Advent links use it):
+   // open that day's own page in place of the list.
+   useEffect(() => {
+-    if (!index || tab === "weekly" || !Number.isInteger(day) || day < 1) return;
++    if (!index || !isSetTab(tab) || !Number.isInteger(day) || day < 1) return;
+     const row = index.devotions.find((r) => r.set === tab && r.day === day);
+     if (row) navigate(devotionHref(row.id), { replace: true });
+   }, [index, tab, day, navigate]);
+ 
+   const rows = useMemo(() => {
+     if (!index) return [];
+-    return index.devotions.filter((r) => (tab === "weekly" ? r.kind === "weekly" : r.set === tab));
++    return index.devotions.filter((r) =>
++      tab === "weekly" ? r.kind === "weekly" && (r.strand ?? "foundations") === "foundations" : tab === "world" ? r.strand === "world" : r.set === tab,
++    );
+   }, [index, tab]);
+ 
+   const tabs = index
+     ? TABS.map((t) => ({
+         ...t,
+-        label: t.id === "weekly" ? "Weekly" : index.sets[t.id]?.label ?? t.param,
+-        count: t.id === "weekly" ? index.weekly : index.sets[t.id]?.days ?? 0,
++        label: t.id === "weekly" ? "Weekly" : t.id === "world" ? world?.label ?? t.param : index.sets[t.id]?.label ?? t.param,
++        count: t.id === "weekly" ? index.weekly : t.id === "world" ? world?.count ?? 0 : index.sets[t.id]?.days ?? 0,
+       })).filter((t) => t.count > 0)
+     : [];
+ 
+@@ -77,7 +86,7 @@ export default function FamilyDevotions() {
+     href: devotionHref(r.id),
+     kicker:
+       r.kind === "weekly"
+-        ? `${r.n} of ${index?.weekly} · ${r.theme}`
++        ? `${r.n} of ${index?.strands?.find((s) => s.key === r.strand)?.count ?? index?.weekly} · ${r.theme}`
+         : tonight && tonight.set === r.set && tonight.day === r.day
+           ? `${r.label} · Tonight`
+           : r.label,
+@@ -91,7 +100,7 @@ export default function FamilyDevotions() {
+   });
+ 
+   const current = TABS.find((t) => t.id === tab);
+-  const setLabel = tab !== "weekly" ? index?.sets[tab]?.label : undefined;
++  const setLabel = isSetTab(tab) ? index?.sets[tab]?.label : undefined;
+ 
+   return (
+     <Layout>
+@@ -173,7 +182,7 @@ export default function FamilyDevotions() {
+                   </>
+                 )
+               )}
+-              <EditorialIndex label={tab === "weekly" ? "Weekly devotions" : `${setLabel} devotions`} items={rows.map(item)} compact />
++              <EditorialIndex label={tab === "weekly" ? "Weekly devotions" : tab === "world" ? world?.label ?? "Devotions" : `${setLabel} devotions`} items={rows.map(item)} compact />
+             </>
+           )}
+         </div>
+diff --git a/client/src/pages/family/DevotionPage.tsx b/client/src/pages/family/DevotionPage.tsx
+index a891a6a8..d6fb0014 100644
+--- a/client/src/pages/family/DevotionPage.tsx
++++ b/client/src/pages/family/DevotionPage.tsx
+@@ -28,6 +28,7 @@ import {
+   placeOf,
+   readFamilyProgress,
+   recordDevotionDone,
++  strandOf,
+   tableHref,
+   tonightOn,
+   weekOfYear,
+@@ -43,9 +44,9 @@ import { useDevotion, type Devotion } from "./useFamilyData";
+ 
+ const SITE = "https://www.livewellbyjamesbell.co";
+ 
+-/** The devotion before and after this one in its own set. */
++/** The devotion before and after this one in its own set (or strand). */
+ function neighbours(row: FamilyIndexRow, index: FamilyIndex): { prev?: FamilyIndexRow; next?: FamilyIndexRow } {
+-  const same = index.devotions.filter((r) => r.kind === row.kind && r.set === row.set);
++  const same = index.devotions.filter((r) => r.kind === row.kind && r.set === row.set && strandOf(r, index)?.key === strandOf(row, index)?.key);
+   const at = same.findIndex((r) => r.id === row.id);
+   return { prev: same[at - 1], next: same[at + 1] };
+ }
+@@ -200,7 +201,7 @@ function DevotionView({
+       <section className="tb-page__body" style={{ background: "var(--bone)", padding: "var(--s-3) 16px var(--s-7)" }}>
+         <article className="tb-devotion print-paper">
+           <p className="tb-line" style={{ margin: "0 0 var(--s-3)" }}>
+-            {place && <Position current={place.current} total={place.total} unit={place.unit} of={row.kind === "weekly" ? "Weekly devotions" : setInfo?.label} />}
++            {place && <Position current={place.current} total={place.total} unit={place.unit} of={row.kind === "weekly" ? strandOf(row, index)?.label ?? "Weekly devotions" : setInfo?.label} />}
+             {tonight && row.kind === "weekly" && <span> · Week {weekOfYear(today)} of the year</span>}
+             {lastRow && last && (
+               <>
+diff --git a/client/src/pages/family/DevotionParts.tsx b/client/src/pages/family/DevotionParts.tsx
+index 65220329..960ae39e 100644
+--- a/client/src/pages/family/DevotionParts.tsx
++++ b/client/src/pages/family/DevotionParts.tsx
+@@ -61,6 +61,13 @@ export function TalkPart({ devotion }: { devotion: Devotion }) {
+             <p key={i}>{p}</p>
+           ))}
+       </div>
++      {/* A devotion on politics speaks to both sides of the table, in turn (U11). */}
++      {devotion.sides?.map((side) => (
++        <div key={side.label} className="tb-side">
++          <p className="tb-label">{side.label}</p>
++          <p className="tb-text">{side.text}</p>
++        </div>
++      ))}
+     </>
+   );
+ }
+diff --git a/client/src/pages/family/useFamilyData.ts b/client/src/pages/family/useFamilyData.ts
+index 0a3d7bcf..f54bb7a7 100644
+--- a/client/src/pages/family/useFamilyData.ts
++++ b/client/src/pages/family/useFamilyData.ts
+@@ -19,6 +19,13 @@ export interface Devotion {
+   questions: string[];
+   /** Weekly devotions only. */
+   activity?: string;
++  /**
++   * A devotion on politics (U11): two short paragraphs read in turn, one to
++   * each side of the table ("If you are glad about how it went", "If you are
++   * sad about how it went"). scripts/validate-politics.mjs holds them to the
++   * same length.
++   */
++  sides?: { label: string; text: string }[];
+   prayer: string;
+   /** The weekly set quotes the BSB word for word; the daily sets retell each passage for children. */
+   rendering: "bsb" | "paraphrase";
+@@ -35,11 +42,26 @@ function questionsOf(q: unknown): string[] {
+   return [];
+ }
+ 
++/** Two labelled paragraphs, or nothing: a politics devotion's sides. */
++function sidesOf(x: unknown): { label: string; text: string }[] | undefined {
++  if (!Array.isArray(x)) return undefined;
++  const sides = x.filter((s): s is { label: string; text: string } => isObject(s) && isText(s.label) && isText(s.text));
++  return sides.length === 2 ? sides.map((s) => ({ label: s.label, text: s.text })) : undefined;
++}
++
++/** The devotions in a weekly file: a plain list, or a strand file's { live, devotions } (U11). */
++function weeklyList(data: unknown): unknown[] | null {
++  if (Array.isArray(data)) return data;
++  if (isObject(data) && Array.isArray(data.devotions)) return data.devotions;
++  return null;
++}
++
+ /** The devotion a row names, out of its library file, or null when the file does not hold it. */
+ export function devotionFrom(row: FamilyIndexRow, data: unknown): Devotion | null {
+   if (row.kind === "weekly") {
+-    if (!Array.isArray(data)) return null;
+-    const d = data.find((x) => isObject(x) && x.id === row.id);
++    const list = weeklyList(data);
++    if (!list) return null;
++    const d = list.find((x) => isObject(x) && x.id === row.id);
+     if (!isObject(d) || !isText(d.passageText) || !isText(d.reflection) || !isText(d.prayer)) return null;
+     return {
+       row,
+@@ -48,6 +70,7 @@ export function devotionFrom(row: FamilyIndexRow, data: unknown): Devotion | nul
+       reflection: d.reflection,
+       questions: questionsOf(d.questions),
+       activity: isText(d.activity) ? d.activity : undefined,
++      sides: sidesOf(d.sides),
+       prayer: d.prayer,
+       rendering: "bsb",
+     };
+diff --git a/client/src/pages/family/world.test.tsx b/client/src/pages/family/world.test.tsx
+new file mode 100644
+index 00000000..81c46636
+--- /dev/null
++++ b/client/src/pages/family/world.test.tsx
+@@ -0,0 +1,220 @@
++/**
++ * After the vote (U11): the two family devotions on politics ship hidden
++ * behind one flag (`live` in client/public/family-devotions-world.json). While
++ * the flag is false the committed index has no row for them, so their pages
++ * answer "That devotion isn't here" and the library shows no tab for them.
++ * Once the index lists the strand (the flag set true and the index rebuilt),
++ * each has its own page, numbered in its strand, with both sides of the table
++ * read in turn under Talk, and the library gives the strand its own tab.
++ */
++import { describe, it, expect, vi, afterEach } from "vitest";
++import { screen, within } from "@testing-library/react";
++import { Route, Switch } from "wouter";
++import fs from "node:fs";
++import path from "node:path";
++
++import { renderWithProviders, offlineFetch } from "@/test/harness";
++import type { FamilyIndex, FamilyIndexRow } from "@/lib/familyTable";
++import { devotionFrom } from "./useFamilyData";
++import DevotionPage from "./DevotionPage";
++import FamilyDevotions from "../FamilyDevotions";
++
++const PUBLIC = path.resolve(__dirname, "../../../public");
++const read = (name: string) => fs.readFileSync(path.join(PUBLIC, name), "utf8");
++const COMMITTED: FamilyIndex = JSON.parse(read("family/index.json"));
++const WORLD_FILE = "family-devotions-world.json";
++const WORLD = JSON.parse(read(WORLD_FILE)) as {
++  live: boolean;
++  devotions: {
++    id: string;
++    title: string;
++    theme: string;
++    passage: string;
++    bigIdea: string;
++    sides: { label: string; text: string }[];
++  }[];
++};
++
++/** The index as scripts/build-family-index.mjs writes it once the strand is live. */
++const LIVE: FamilyIndex = {
++  ...COMMITTED,
++  strands: [
++    {
++      key: "world",
++      label: "The world we live in",
++      count: WORLD.devotions.length,
++    },
++  ],
++  devotions: [
++    ...COMMITTED.devotions,
++    ...WORLD.devotions.map<FamilyIndexRow>((d, i) => ({
++      id: d.id,
++      kind: "weekly",
++      n: i + 1,
++      strand: "world",
++      title: d.title,
++      theme: d.theme,
++      passage: d.passage,
++      href: "/study/bible/matthew/10#v2",
++      file: `/${WORLD_FILE}`,
++      description: d.bigIdea,
++    })),
++  ],
++};
++
++function serve(index: FamilyIndex) {
++  const base = offlineFetch();
++  vi.stubGlobal(
++    "fetch",
++    vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
++      const name = String(input).replace(/^\//, "");
++      const body =
++        name === "family/index.json"
++          ? JSON.stringify(index)
++          : [
++                "family-devotions.json",
++                "family-devotions-2.json",
++                WORLD_FILE,
++              ].includes(name)
++            ? read(name)
++            : null;
++      return body === null
++        ? base(input, init)
++        : new Response(body, {
++            status: 200,
++            headers: { "Content-Type": "application/json" },
++          });
++    })
++  );
++}
++
++function renderAt(url: string) {
++  window.history.pushState({}, "", url);
++  return renderWithProviders(
++    <Switch>
++      <Route path="/family/devotions/:id" component={DevotionPage} />
++      <Route path="/family/devotions" component={FamilyDevotions} />
++    </Switch>
++  );
++}
++
++afterEach(() => {
++  vi.unstubAllGlobals();
++  window.history.pushState({}, "", "/");
++});
++
++describe("the after-the-vote devotions while hidden (as committed)", () => {
++  it("are behind the flag: the file says live false and the index has no row for them", () => {
++    expect(WORLD.live).toBe(false);
++    expect(WORLD.devotions.map(d => d.id)).toEqual([
++      "grown-ups-voted-differently",
++      "praying-for-leaders",
++    ]);
++    expect(
++      COMMITTED.devotions.some(
++        r =>
++          r.file === `/${WORLD_FILE}` ||
++          WORLD.devotions.some(d => d.id === r.id)
++      )
++    ).toBe(false);
++    expect(COMMITTED.strands).toBeUndefined();
++  });
++
++  it("have no page", async () => {
++    serve(COMMITTED);
++    renderAt("/family/devotions/grown-ups-voted-differently");
++    expect(
++      await screen.findByRole("heading", {
++        level: 1,
++        name: "That devotion isn't here",
++      })
++    ).toBeInTheDocument();
++  });
++
++  it("have no tab in the library, and ?tab=world opens the weekly list", async () => {
++    serve(COMMITTED);
++    renderAt("/family/devotions?tab=world");
++    expect(
++      await screen.findByRole("button", { name: /^Weekly · 72$/ })
++    ).toHaveAttribute("aria-pressed", "true");
++    expect(
++      screen.queryByRole("button", { name: /world we live in/i })
++    ).toBeNull();
++    expect(screen.queryByText(/Grown-Ups Voted Differently/)).toBeNull();
++  });
++});
++
++describe("the after-the-vote devotions once live", () => {
++  it("read from the strand file's { live, devotions } shape, with their two sides", () => {
++    const row = LIVE.devotions.find(r => r.id === "praying-for-leaders")!;
++    const d = devotionFrom(row, JSON.parse(read(WORLD_FILE)));
++    expect(d?.rendering).toBe("bsb");
++    expect(d?.sides?.map(s => s.label)).toEqual([
++      "If the people you voted for won",
++      "If the people you voted for lost",
++    ]);
++    expect(d?.questions).toHaveLength(6); // younger and older, shown together until the band switch (U21)
++  });
++
++  it("each have a page, numbered in their strand, with both sides read under Talk", async () => {
++    serve(LIVE);
++    renderAt("/family/devotions/grown-ups-voted-differently");
++    expect(
++      await screen.findByRole("heading", {
++        level: 1,
++        name: "When the Grown-Ups Voted Differently",
++      })
++    ).toBeInTheDocument();
++    expect(
++      screen.getByText("1 of 2 · The world we live in")
++    ).toBeInTheDocument();
++    const talk = screen
++      .getByRole("heading", { level: 2, name: "Talk" })
++      .closest("section")!;
++    for (const side of WORLD.devotions[0].sides) {
++      expect(within(talk).getByText(side.label)).toBeInTheDocument();
++      expect(within(talk).getByText(side.text)).toBeInTheDocument();
++    }
++    expect(screen.getByText(/Berean Standard Bible/)).toBeInTheDocument();
++    // Next stays inside the strand; the weekly set is not its neighbour.
++    expect(
++      screen.getByRole("link", {
++        name: "Next: Praying for Leaders We Did Not Choose",
++      })
++    ).toHaveAttribute("href", "/family/devotions/praying-for-leaders");
++    expect(screen.queryByRole("link", { name: /^Before this/ })).toBeNull();
++  });
++
++  it("get their own tab in the library, and stay out of the weekly list", async () => {
++    serve(LIVE);
++    renderAt("/family/devotions?tab=world");
++    expect(
++      await screen.findByRole("button", { name: "The world we live in · 2" })
++    ).toHaveAttribute("aria-pressed", "true");
++    const list = screen.getByRole("list", { name: "The world we live in" });
++    expect(
++      within(list).getByText("1 of 2 · After the vote")
++    ).toBeInTheDocument();
++    expect(
++      within(list).getByRole("link", {
++        name: /Praying for Leaders We Did Not Choose/,
++      })
++    ).toHaveAttribute("href", "/family/devotions/praying-for-leaders");
++  });
++
++  it("leave the weekly list as it was", async () => {
++    serve(LIVE);
++    renderAt("/family/devotions");
++    const weekly = await screen.findByRole("list", {
++      name: "Weekly devotions",
++    });
++    expect(screen.getByRole("button", { name: "Weekly · 72" })).toHaveAttribute(
++      "aria-pressed",
++      "true"
++    );
++    expect(within(weekly).getAllByRole("link")).toHaveLength(72);
++    expect(
++      within(weekly).queryByText(/Grown-Ups Voted Differently/)
++    ).toBeNull();
++  });
++});
+diff --git a/scripts/lib/family-devotion-file.mjs b/scripts/lib/family-devotion-file.mjs
+new file mode 100644
+index 00000000..38e61211
+--- /dev/null
++++ b/scripts/lib/family-devotion-file.mjs
+@@ -0,0 +1,35 @@
++/**
++ * family-devotion-file.mjs: reading a client/public/family-devotions*.json file.
++ *
++ * The Foundations files (family-devotions.json, family-devotions-2.json) are a
++ * plain list of devotions. A strand file beside them
++ * (family-devotions-world.json, MASTER-PLAN 5.4) carries one flag over the
++ * same list:
++ *
++ *   { "about": "...", "live": false, "devotions": [ ...the weekly shape... ] }
++ *
++ * While live is false the site shows none of its devotions: the family index
++ * gives them no row (so no page, no prerendered head, no sitemap entry, no
++ * place in the library), the year map does not pin them, and their ids are
++ * not frozen. The family gate and the politics gate still check every one, so
++ * a hidden devotion is ready the day it goes live. Publishing is four steps:
++ *
++ *   1. set "live": true in the strand file
++ *   2. node scripts/validate-family.mjs --freeze   (records the new ids; a printed card's QR code cannot be recalled)
++ *   3. node scripts/build-family-index.mjs         (rows, pages, sitemap, library)
++ *   4. node scripts/build-family-year.mjs          (any week pinned to them in family-year-overrides.json)
++ *
++ * and committing what they write. CI fails until steps 2 to 4 are done.
++ */
++
++/**
++ * The devotions in a family-devotions*.json file and whether the site shows
++ * them. `shape` is null when the file is neither a list nor a strand.
++ */
++export function devotionsIn(data) {
++  if (Array.isArray(data)) return { shape: "list", live: true, devotions: data };
++  if (data && typeof data === "object" && Array.isArray(data.devotions)) {
++    return { shape: "strand", live: data.live === true, devotions: data.devotions };
++  }
++  return { shape: null, live: false, devotions: [] };
++}
+diff --git a/scripts/lib/family-index.mjs b/scripts/lib/family-index.mjs
+index 813fe88d..8a7dd3dc 100644
+--- a/scripts/lib/family-index.mjs
++++ b/scripts/lib/family-index.mjs
+@@ -12,12 +12,20 @@
+  * The catechism's questions and the children's answers ride along, so /family
+  * and table mode can show this week's question without the whole catechism.
+  *
++ * A strand beside the weekly set (family-devotions-world.json, U11) adds its
++ * devotions as weekly rows that name their strand, numbered within it, and a
++ * `strands` entry with its label and count, but only once its file is live
++ * (./family-devotion-file.mjs). While it is hidden the index is exactly what it
++ * would be without the file, so nothing on the site can link, prerender, or
++ * list a devotion James has not read.
++ *
+  * Built by scripts/build-family-index.mjs; CI runs it with --check.
+  */
+ import fs from "node:fs";
+ import path from "node:path";
+ import { fileURLToPath } from "node:url";
+ import { readRef } from "./bsb.mjs";
++import { devotionsIn } from "./family-devotion-file.mjs";
+ 
+ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+ export const INDEX = "client/public/family/index.json";
+@@ -25,6 +33,8 @@ export const INDEX = "client/public/family/index.json";
+ /** The weekly files, in the order the site has always listed them. */
+ const WEEKLY_FILES = ["family-devotions.json", "family-devotions-2.json"];
+ const SEASONAL_FILE = "family-seasonal.json";
++/** The strands beside the weekly set (MASTER-PLAN 5.4), each in its own file, listed once live. */
++export const STRAND_FILES = [{ key: "world", label: "The world we live in", file: "family-devotions-world.json" }];
+ 
+ /** Each daily set: its key in family-seasonal.json, its address, and its name. */
+ export const SETS = [
+@@ -99,6 +109,31 @@ export function buildFamilyIndex(root = ROOT) {
+     }
+   }
+ 
++  const strands = [];
++  for (const s of STRAND_FILES) {
++    if (!fs.existsSync(path.join(root, "client/public", s.file))) continue;
++    const { live, devotions: list } = devotionsIn(read(root, s.file));
++    if (!live || list.length === 0) continue;
++    strands.push({ key: s.key, label: s.label, count: list.length });
++    list.forEach((d, i) => {
++      add(
++        {
++          id: d.id,
++          kind: "weekly",
++          n: i + 1,
++          strand: s.key,
++          title: d.title,
++          theme: d.theme,
++          passage: d.passage,
++          href: studyHref(d.passage),
++          file: `/${s.file}`,
++          description: d.bigIdea,
++        },
++        `client/public/${s.file} ${d.id}`,
++      );
++    });
++  }
++
+   const seasonal = read(root, SEASONAL_FILE);
+   const sets = {};
+   for (const s of SETS) {
+@@ -133,6 +168,7 @@ export function buildFamilyIndex(root = ROOT) {
+     index: {
+       about: "Written by scripts/build-family-index.mjs from the family libraries in client/public. Do not edit by hand.",
+       weekly: n,
++      ...(strands.length ? { strands } : {}),
+       sets,
+       devotions,
+       catechism,
+diff --git a/scripts/lib/family-politics.mjs b/scripts/lib/family-politics.mjs
+new file mode 100644
+index 00000000..e3dc9517
+--- /dev/null
++++ b/scripts/lib/family-politics.mjs
+@@ -0,0 +1,92 @@
++/**
++ * family-politics.mjs: the same-instrument rule for family devotions on
++ * politics (MASTER-PLAN 2 and 9.2, U11), run by scripts/validate-politics.mjs.
++ *
++ * A family devotion about politics is read aloud at a table where people may
++ * have voted differently, so it may not speak to one side only. It carries
++ * `politics: true` and exactly two `sides`, each a short paragraph with its
++ * own label, read in turn: the glad and the sad after a vote, the ones whose
++ * candidates won and lost, or right and left. The two sides are held to the
++ * word band validate-politics.mjs already applies to the disruption and
++ * justice topics (neither more than 55% longer than the other), so no side is
++ * a strawman by brevity.
++ *
++ * Every family-devotions*.json file is read, hidden strands too (a hidden
++ * devotion is ready the day it goes live). A devotion that talks about
++ * voting, elections, parties, or politics without `politics: true` fails, so
++ * the rule cannot be skipped by leaving the flag off. Quoted Scripture
++ * (passageText) is exempt from the style check; everything else carries no
++ * exclamation point and none of the gate's forbidden words.
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { devotionsIn } from "./family-devotion-file.mjs";
++
++/** Words that make a family devotion a politics piece. */
++export const POLITICS_WORDS = /\b(vot(?:e|ed|es|ing|er|ers)|elections?|ballots?|republicans?|democrats?|partisan|politics|political|politicians?)\b/i;
++/** The two sides may differ by no more than this share of the longer. */
++export const SIDE_BAND = 0.55;
++
++const wc = (s) => String(s ?? "").trim().split(/\s+/).filter(Boolean).length;
++const isText = (v) => typeof v === "string" && v.trim().length > 0;
++
++function* strings(value, at) {
++  if (typeof value === "string") yield [at, value];
++  else if (Array.isArray(value)) for (let i = 0; i < value.length; i++) yield* strings(value[i], `${at}[${i}]`);
++  else if (value && typeof value === "object") for (const [k, v] of Object.entries(value)) yield* strings(v, at ? `${at}.${k}` : k);
++}
++
++/**
++ * Check every family devotion file in publicDir. Returns { findings: [file,
++ * message][], pieces } where pieces counts the politics devotions checked.
++ */
++export function checkFamilyPolitics({ publicDir, forbidden = [] }) {
++  const findings = [];
++  let pieces = 0;
++  const files = fs.existsSync(publicDir) ? fs.readdirSync(publicDir).filter((n) => /^family-devotions(-[a-z0-9-]+)?\.json$/.test(n)).sort() : [];
++  for (const name of files) {
++    let data;
++    try {
++      data = JSON.parse(fs.readFileSync(path.join(publicDir, name), "utf8"));
++    } catch (e) {
++      findings.push([name, `unparseable JSON (${e.message})`]);
++      continue;
++    }
++    devotionsIn(data).devotions.forEach((d, i) => {
++      if (!d || typeof d !== "object") return;
++      const where = `${d.id ?? `[${i}]`}`;
++      const note = (msg) => findings.push([name, `${where}: ${msg}`]);
++      if (d.politics !== undefined && typeof d.politics !== "boolean") note("politics must be true or false");
++      // The writing itself: not the id, the reference, quoted Scripture, or a link.
++      const prose = [...strings(d, "")].filter(([at]) => !/(^|\.)(id|passage|passageText|href)$/.test(at));
++
++      if (d.politics !== true) {
++        const hit = prose.map(([, t]) => POLITICS_WORDS.exec(t)?.[0]).find(Boolean);
++        if (hit) note(`talks about politics ("${hit}") but is not marked politics: true; mark it and give it two sides, read in turn, so it speaks to the whole table`);
++        if (d.sides !== undefined) note("has sides but is not marked politics: true");
++      } else {
++        pieces++;
++        const sides = d.sides;
++        if (!Array.isArray(sides) || sides.length !== 2) {
++          note("a politics piece needs exactly two sides, each { label, text } (the same-instrument rule)");
++        } else {
++          sides.forEach((s, j) => {
++            if (!isText(s?.label) || !isText(s?.text)) note(`sides[${j}] needs a label and a text`);
++          });
++          if (isText(sides[0]?.label) && sides[0].label.trim() === sides[1]?.label?.trim()) note("the two sides need different labels");
++          const [a, b] = [wc(sides[0]?.text), wc(sides[1]?.text)];
++          const max = Math.max(a, b);
++          if (max > 0 && (max - Math.min(a, b)) / max > SIDE_BAND) {
++            note(`side imbalance: ${a}/${b} words differ by more than ${Math.round(SIDE_BAND * 100)}%; one side reads as a strawman`);
++          }
++        }
++      }
++
++      for (const [at, text] of prose) {
++        if (text.includes("!")) note(`${at}: exclamation point (outside quoted Scripture the verdict lands on a period)`);
++        for (const w of forbidden) if (new RegExp(`\\b${w}\\b`, "i").test(text)) note(`${at}: forbidden word "${w}"`);
++      }
++    });
++  }
++  return { findings, pieces };
++}
+diff --git a/scripts/lib/family-year.mjs b/scripts/lib/family-year.mjs
+index 5414d1d2..336c40f5 100644
+--- a/scripts/lib/family-year.mjs
++++ b/scripts/lib/family-year.mjs
+@@ -26,6 +26,11 @@
+  *     devotion, from any family-devotions*.json file, to one week the rotation
+  *     would serve (never a week a daily set serves). A pinned week does not use
+  *     up a rotation slot: the devotion it displaced moves to the next week.
++ *     A pin naming a devotion in a strand file that is not live yet
++ *     (./family-devotion-file.mjs) waits: the week keeps the rotation, with a
++ *     note, until the strand goes live and the map is regenerated. A pin for a
++ *     week before the map begins has done its work: a note, not a problem, so
++ *     moving FIRST_YEAR on never fails on an old pin.
+  *
+  * Regenerating with the same inputs writes the same file (CI checks this), and
+  * CI fails once fewer than twelve months remain in the map: raise LAST_YEAR
+@@ -49,6 +54,7 @@ import {
+   thanksgivingUS,
+   weekSeason,
+ } from "./church-year.mjs";
++import { devotionsIn } from "./family-devotion-file.mjs";
+ 
+ export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+ export const MODULE = "client/src/lib/familyYear.generated.ts";
+@@ -108,17 +114,18 @@ export function loadInputs(root = ROOT) {
+     readJSON(root, rel).map((d) => ({ id: d?.id, file: rel })),
+   );
+   const devotionIds = new Set();
++  const hiddenIds = new Set();
+   for (const name of fs.readdirSync(path.join(root, "client/public")).sort()) {
+     if (!DEVOTION_FILE_RE.test(name)) continue;
+-    const list = readJSON(root, `client/public/${name}`);
+-    if (Array.isArray(list)) for (const d of list) if (typeof d?.id === "string") devotionIds.add(d.id);
++    const { live, devotions } = devotionsIn(readJSON(root, `client/public/${name}`));
++    for (const d of devotions) if (typeof d?.id === "string") (live ? devotionIds : hiddenIds).add(d.id);
+   }
+   const seasonal = readJSON(root, SEASONAL_FILE);
+   const sets = Object.fromEntries(
+     Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.length : -1]),
+   );
+   const overrides = fs.existsSync(path.join(root, OVERRIDES_FILE)) ? readJSON(root, OVERRIDES_FILE) : { weeks: [] };
+-  return { foundations, devotionIds, sets, overrides };
++  return { foundations, devotionIds, hiddenIds, sets, overrides };
+ }
+ 
+ /** The ordered rotation: Foundations ids, a repeated id kept at its first place. */
+@@ -137,13 +144,19 @@ export function rotationOf(foundations) {
+   return { ids, repeated };
+ }
+ 
+-/** Problems with the overrides file, and the valid pins by week. */
+-export function readOverrides(overrides, devotionIds, from, through) {
++/**
++ * Problems with the overrides file, the valid pins by week, the weeks whose
++ * pin waits for a hidden devotion to go live, and notes (a waiting pin, a pin
++ * before the map begins).
++ */
++export function readOverrides(overrides, devotionIds, from, through, hiddenIds = new Set()) {
+   const problems = [];
++  const notes = [];
++  const waiting = new Set();
+   const pins = new Map();
+   const where = OVERRIDES_FILE;
+   if (!overrides || typeof overrides !== "object" || !Array.isArray(overrides.weeks)) {
+-    return { problems: [`${where}: expected { "weeks": [ ... ] }`], pins };
++    return { problems: [`${where}: expected { "weeks": [ ... ] }`], pins, waiting, notes };
+   }
+   overrides.weeks.forEach((o, i) => {
+     const at = `${where} weeks[${i}]`;
+@@ -151,15 +164,21 @@ export function readOverrides(overrides, devotionIds, from, through) {
+     const extra = Object.keys(o).filter((k) => !["week", "devotion", "note"].includes(k));
+     if (extra.length) problems.push(`${at}: unknown field(s) ${extra.join(", ")}`);
+     if (o.note !== undefined && typeof o.note !== "string") problems.push(`${at}: note must be a string`);
++    const hidden = typeof o.devotion === "string" && hiddenIds.has(o.devotion);
+     const known = typeof o.devotion === "string" && devotionIds.has(o.devotion);
+-    if (!known) problems.push(`${at}: devotion "${o.devotion}" is not an id in any client/public/family-devotions*.json file`);
++    if (!known && !hidden) problems.push(`${at}: devotion "${o.devotion}" is not an id in any client/public/family-devotions*.json file`);
+     if (!isISODate(o.week)) return problems.push(`${at}: week "${o.week}" is not a YYYY-MM-DD date`);
+     if (dayOfWeek(o.week) !== 0) return problems.push(`${at}: week ${o.week} is not a Sunday (a week is named by its Sunday)`);
+-    if (o.week < from || o.week > through) return problems.push(`${at}: week ${o.week} is outside the map (${from} to ${through})`);
+-    if (pins.has(o.week)) return problems.push(`${at}: week ${o.week} is pinned twice`);
++    if (o.week > through) return problems.push(`${at}: week ${o.week} is outside the map (${from} to ${through})`);
++    if (o.week < from) return notes.push(`${at}: week ${o.week} is before the map begins (${from}); the pin has done its work and can be removed`);
++    if (pins.has(o.week) || waiting.has(o.week)) return problems.push(`${at}: week ${o.week} is pinned twice`);
+     if (known) pins.set(o.week, o.devotion);
++    else if (hidden) {
++      waiting.add(o.week);
++      notes.push(`week ${o.week} is pinned to "${o.devotion}", which is hidden until its strand file goes live; the rotation serves that week for now`);
++    }
+   });
+-  return { problems, pins };
++  return { problems, pins, waiting, notes };
+ }
+ 
+ /**
+@@ -187,7 +206,7 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
+     }
+   }
+ 
+-  const { problems: pinProblems, pins } = readOverrides(inputs.overrides, inputs.devotionIds, from, through);
++  const { problems: pinProblems, pins, waiting, notes: pinNotes } = readOverrides(inputs.overrides, inputs.devotionIds, from, through, inputs.hiddenIds);
+   problems.push(...pinProblems);
+ 
+   const seasons = [];
+@@ -207,7 +226,7 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
+     const season = weekSeason(s);
+     const set = served.get(season);
+     const pinned = pins.get(s);
+-    if (pinned && set) {
++    if ((pinned || waiting.has(s)) && set) {
+       problems.push(`${OVERRIDES_FILE}: week ${s} is served by the daily "${set}" set in ${SEASONAL_FILE}; pin only a week the rotation serves`);
+     }
+     all.push({ start: s, season, set, pinned, rotates: !set && !pinned });
+@@ -230,7 +249,7 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
+     weeks.push(row);
+   });
+ 
+-  return { map: { from, through, seasons, sets, weeks, rotation }, problems, notes: repeated };
++  return { map: { from, through, seasons, sets, weeks, rotation }, problems, notes: [...repeated, ...pinNotes] };
+ }
+ 
+ /** A reason the map is too short, or null: it must reach at least a year past today. */
+diff --git a/scripts/validate-family.mjs b/scripts/validate-family.mjs
+index 4068e2aa..0d97551c 100644
+--- a/scripts/validate-family.mjs
++++ b/scripts/validate-family.mjs
+@@ -38,6 +38,12 @@
+  *     their own punctuation.
+  *   - The year map, once U10 generates it, names only devotions that exist.
+  *
++ * Strand files (family-devotions-<strand>.json, U11) are { live, devotions }:
++ * every devotion in one is checked like any other, and its id is unique across
++ * all of them, but while live is false it is not frozen yet and the year map
++ * may not name it (a hand override may pin it; the pin waits for live). See
++ * scripts/lib/family-devotion-file.mjs for publishing one.
++ *
+  * The id freeze (5.6): a printed card's QR code points at
+  * /family/devotions/<id> and cannot be recalled, so every devotion id ever
+  * committed is recorded in scripts/data/family-devotion-ids.json. An id may
+@@ -51,6 +57,7 @@ import fs from "node:fs";
+ import path from "node:path";
+ import { fileURLToPath, pathToFileURL } from "node:url";
+ import { passage, quotesPassage } from "./lib/bsb.mjs";
++import { devotionsIn } from "./lib/family-devotion-file.mjs";
+ 
+ const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+ 
+@@ -219,7 +226,7 @@ export function checkFamily({
+   const stem = (n) => n.replace(/\.json$/, "");
+   const files = fs.readdirSync(publicDir).filter((n) => /^family-.*\.json$/.test(n)).sort((a, b) => (stem(a) < stem(b) ? -1 : 1));
+   const devotionIds = [];
+-  const counts = { files: files.length, devotions: 0, foundations: 0, passages: 0, catechism: 0, seasonalDays: 0, plans: 0 };
++  const counts = { files: files.length, devotions: 0, foundations: 0, hidden: 0, passages: 0, catechism: 0, seasonalDays: 0, plans: 0 };
+   const titles = new Map();
+   const deferred = [];
+ 
+@@ -243,13 +250,21 @@ export function checkFamily({
+     }
+ 
+     if (kind === "devotions") {
+-      if (!Array.isArray(data)) { errors.push(`${label}: expected a list of devotions`); continue; }
+-      data.forEach((d, i) => {
+-        const where = `${label}[${i}] ${d?.id ?? "(no id)"}`;
++      const file = devotionsIn(data);
++      if (!file.shape) { errors.push(`${label}: expected a list of devotions, or a strand { "live": true or false, "devotions": [...] }`); continue; }
++      if (file.shape === "strand") {
++        if (typeof data.live !== "boolean") errors.push(`${label}: "live" must be true or false`);
++        if (FOUNDATIONS.includes(name)) errors.push(`${label}: the Foundations set is always live; keep it a plain list`);
++        if (!file.live) counts.hidden += file.devotions.length;
++      }
++      const list = file.devotions;
++      const at = file.shape === "strand" ? ".devotions" : "";
++      list.forEach((d, i) => {
++        const where = `${label}${at}[${i}] ${d?.id ?? "(no id)"}`;
+         for (const k of DEVOTION_FIELDS) if (!isText(d?.[k])) errors.push(`${where}: needs ${k}`);
+         if (isText(d?.id)) {
+           if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(d.id)) errors.push(`${where}: id must be lowercase words joined by hyphens (it becomes /family/devotions/${d.id})`);
+-          devotionIds.push([d.id, where]);
++          devotionIds.push([d.id, where, file.live]);
+         }
+         if (isText(d?.title)) {
+           const key = d.title.trim().toLowerCase();
+@@ -268,11 +283,11 @@ export function checkFamily({
+         }
+         if (isText(d?.passage) && isText(d?.passageText)) {
+           counts.passages++;
+-          checkScripture(errors, `${label}[${i}] ${d.passage}`, d.passage, d.passageText, "passageText");
++          checkScripture(errors, `${label}${at}[${i}] ${d.passage}`, d.passage, d.passageText, "passageText");
+         }
+       });
+-      counts.devotions += data.length;
+-      if (FOUNDATIONS.includes(name)) counts.foundations += data.length;
++      counts.devotions += list.length;
++      if (FOUNDATIONS.includes(name)) counts.foundations += list.length;
+     }
+ 
+     if (kind === "catechism") {
+@@ -348,13 +363,19 @@ export function checkFamily({
+     if (kind === "year-overrides") deferred.push([label, data]);
+   }
+ 
+-  // Devotion ids are unique across every devotion file.
++  // Devotion ids are unique across every devotion file, hidden or live.
+   const byId = new Map();
+-  for (const [id, where] of devotionIds) {
++  const hidden = new Set();
++  for (const [id, where, live] of devotionIds) {
+     if (byId.has(id)) errors.push(`${where}: id "${id}" is also ${byId.get(id)} (each devotion gets its own page and printed card)`);
+-    else byId.set(id, where);
++    else {
++      byId.set(id, where);
++      if (!live) hidden.add(id);
++    }
+   }
+-  const ids = [...byId.keys()];
++  const everyId = new Set(byId.keys());
++  // The devotions the site shows: the year map may name only these, and only these are frozen.
++  const ids = [...byId.keys()].filter((id) => !hidden.has(id));
+   const known = new Set(ids);
+ 
+   // The year map and its hand overrides name only devotions that exist.
+@@ -362,11 +383,15 @@ export function checkFamily({
+   if (fs.existsSync(yearMapFile)) {
+     const refs = devotionRefs(fs.readFileSync(yearMapFile, "utf8"));
+     if (refs.length === 0) errors.push(`${path.relative(root, yearMapFile)}: no devotion ids found; teach scripts/validate-family.mjs how to read the year map`);
+-    for (const id of new Set(refs)) if (!known.has(id)) errors.push(`${path.relative(root, yearMapFile)}: names devotion "${id}", which does not exist`);
++    for (const id of new Set(refs)) {
++      if (hidden.has(id)) errors.push(`${path.relative(root, yearMapFile)}: names devotion "${id}", which is hidden until its strand file goes live; regenerate the map (node scripts/build-family-year.mjs)`);
++      else if (!known.has(id)) errors.push(`${path.relative(root, yearMapFile)}: names devotion "${id}", which does not exist`);
++    }
+     counts.yearMap = new Set(refs).size;
+   }
+   for (const [label, data] of deferred) {
+-    for (const id of new Set(devotionRefs(JSON.stringify(data)))) if (!known.has(id)) errors.push(`${label}: names devotion "${id}", which does not exist`);
++    // A hand override may pin a hidden devotion; the year map leaves the pin out until it goes live.
++    for (const id of new Set(devotionRefs(JSON.stringify(data)))) if (!everyId.has(id)) errors.push(`${label}: names devotion "${id}", which does not exist`);
+   }
+ 
+   // The freeze: every devotion id ever committed still resolves.
+@@ -385,6 +410,10 @@ export function checkFamily({
+     if (seenFrozen.has(id)) errors.push(`${FROZEN_IDS}: "${id}" is listed twice`);
+     seenFrozen.add(id);
+     if (known.has(id)) continue;
++    if (hidden.has(id)) {
++      errors.push(`devotion id "${id}" is frozen (it has been live, and a printed card may point at /family/devotions/${id}), but its strand file is no longer live. Set "live" back to true, or move the devotion to a live file.`);
++      continue;
++    }
+     const to = redirects.get(id);
+     if (to === undefined) errors.push(`devotion id "${id}" was removed or renamed without a redirect entry. A printed card's QR code points at /family/devotions/${id}: restore the id, or add a vercel.json redirect from /family/devotions/${id} to the devotion that replaces it.`);
+     else if (to === null || !known.has(to)) errors.push(`vercel.json: /family/devotions/${id} must redirect to /family/devotions/<id> of a devotion that exists${to ? ` ("${to}" does not)` : ""}`);
+@@ -419,7 +448,7 @@ export function checkFamily({
+     }
+   }
+ 
+-  return { errors, notes, counts, ids, unfrozen };
++  return { errors, notes, counts, ids, unfrozen, hidden: [...hidden] };
+ }
+ 
+ /** Add every current devotion id missing from the freeze record. Never removes one. */
+@@ -446,7 +475,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
+     process.exit(1);
+   }
+   console.log(
+-    `Family libraries: clean (${counts.files} files; ${counts.devotions} devotions with unique, frozen ids; ` +
++    `Family libraries: clean (${counts.files} files; ${counts.devotions} devotions with unique, frozen ids` +
++      `${counts.hidden ? ` (${counts.hidden} of them hidden until their strand goes live, so not frozen yet)` : ""}; ` +
+       `${counts.catechism} catechism questions; ${counts.seasonalDays} seasonal days; ${counts.plans} reading plans; ` +
+       `${counts.passages} passages verbatim BSB; copy counts and translation labels match; ` +
+       `${counts.yearMap === undefined ? "year map not generated yet" : `year map names ${counts.yearMap} devotions, all real`}).`,
+diff --git a/scripts/validate-politics.mjs b/scripts/validate-politics.mjs
+index 16f7360d..543ba46e 100644
+--- a/scripts/validate-politics.mjs
++++ b/scripts/validate-politics.mjs
+@@ -21,11 +21,16 @@
+  *    brevity). This is the same-instrument rule, mechanized.
+  *  - house style everywhere: zero exclamation points outside quoted
+  *    Scripture (this corpus quotes none, so zero), zero forbidden words.
++ *  - family devotions on politics (U11, scripts/lib/family-politics.mjs):
++ *    marked politics: true, two sides read in turn within the same 55% word
++ *    band, and the same house style outside the quoted passage. A devotion
++ *    that talks about voting or politics without the mark fails.
+  *
+  * Exits non-zero with a findings list so CI fails loudly.
+  */
+ import fs from "node:fs";
+ import path from "node:path";
++import { checkFamilyPolitics } from "./lib/family-politics.mjs";
+ 
+ const PUB = path.resolve(process.cwd(), "client", "public");
+ const findings = [];
+@@ -116,10 +121,14 @@ for (const section of ["disruption", "justice"]) {
+   }
+ }
+ 
++/* ---------------- family devotions on politics (the same instrument at the table) ---------------- */
++const family = checkFamilyPolitics({ publicDir: PUB, forbidden: FORBIDDEN_WORDS });
++for (const [file, msg] of family.findings) note(file, msg);
++
+ /* ---------------- verdict ---------------- */
+ if (findings.length) {
+   console.error(`[validate-politics] ${findings.length} finding(s):`);
+   for (const f of findings) console.error("  - " + f);
+   process.exit(1);
+ }
+-console.log(`[validate-politics] clean: ${nationEssays} nation essays + disruption/justice topics pass structure, citation, symmetry, and style.`);
++console.log(`[validate-politics] clean: ${nationEssays} nation essays + disruption/justice topics + ${family.pieces} family politics devotions pass structure, citation, symmetry, and style.`);
+diff --git a/server/family-world.test.ts b/server/family-world.test.ts
+new file mode 100644
+index 00000000..2c0c930f
+--- /dev/null
++++ b/server/family-world.test.ts
+@@ -0,0 +1,376 @@
++/**
++ * After the vote (U11): two family devotions on politics in
++ * client/public/family-devotions-world.json, hidden behind one flag (`live`).
++ *
++ * - The family gate checks every hidden devotion (shape, BSB, unique id) but
++ *   does not freeze it, and asks for the freeze the moment it goes live; a
++ *   frozen id may not be hidden again; the year map may not name a hidden one.
++ * - The family index is exactly what it would be without the file while the
++ *   strand is hidden, and gives each devotion a numbered row in its strand
++ *   once it is live.
++ * - A hand override pinning a hidden devotion waits (a note, the rotation
++ *   keeps the week) and pins the week once the strand is live.
++ * - The politics gate holds a politics devotion's two sides to one word band,
++ *   refuses one side only, and refuses a devotion that talks about voting
++ *   without the mark.
++ */
++import { describe, it, expect, afterEach } from "vitest";
++import { spawnSync } from "node:child_process";
++import fs from "node:fs";
++import os from "node:os";
++import path from "node:path";
++import { checkFamily, FROZEN_IDS } from "../scripts/validate-family.mjs";
++// @ts-expect-error: a plain .mjs build module without types
++import {
++  buildFamilyIndex,
++  renderFamilyIndex,
++  INDEX,
++} from "../scripts/lib/family-index.mjs";
++// @ts-expect-error: a plain .mjs build module without types
++import { buildYearMap, loadInputs } from "../scripts/lib/family-year.mjs";
++// @ts-expect-error: a plain .mjs build module without types
++import { checkFamilyPolitics } from "../scripts/lib/family-politics.mjs";
++// @ts-expect-error: a plain .mjs build module without types
++import { devotionsIn } from "../scripts/lib/family-devotion-file.mjs";
++
++const ROOT = path.resolve(import.meta.dirname, "..");
++const PUBLIC = path.join(ROOT, "client/public");
++const WORLD = "family-devotions-world.json";
++const IDS = ["grown-ups-voted-differently", "praying-for-leaders"];
++
++type Side = { label: string; text: string };
++type Devotion = {
++  id: string;
++  passageText: string;
++  reflection: string;
++  politics?: boolean;
++  sides?: Side[];
++  activity: string;
++};
++type Strand = { about: string; live: boolean; devotions: Devotion[] };
++
++const dirs: string[] = [];
++afterEach(() => {
++  for (const d of dirs.splice(0))
++    fs.rmSync(d, { recursive: true, force: true });
++});
++
++/** A copy of client/public's family files (and the repo files the builders read) in a temp root. */
++function seeded(change: (pub: string) => void = () => {}): {
++  root: string;
++  pub: string;
++} {
++  const root = fs.mkdtempSync(path.join(os.tmpdir(), "family-world-"));
++  dirs.push(root);
++  const pub = path.join(root, "client/public");
++  fs.mkdirSync(pub, { recursive: true });
++  for (const f of fs
++    .readdirSync(PUBLIC)
++    .filter(n => /^family-.*\.json$/.test(n)))
++    fs.copyFileSync(path.join(PUBLIC, f), path.join(pub, f));
++  fs.mkdirSync(path.join(root, "scripts/data"), { recursive: true });
++  fs.copyFileSync(path.join(ROOT, FROZEN_IDS), path.join(root, FROZEN_IDS));
++  change(pub);
++  return { root, pub };
++}
++const readStrand = (pub: string): Strand =>
++  JSON.parse(fs.readFileSync(path.join(pub, WORLD), "utf8"));
++const writeStrand = (pub: string, data: unknown) =>
++  fs.writeFileSync(path.join(pub, WORLD), JSON.stringify(data, null, 2));
++const goLive = (pub: string) =>
++  writeStrand(pub, { ...readStrand(pub), live: true });
++const familyErrors = (
++  root: string,
++  pub: string,
++  extra: Parameters<typeof checkFamily>[0] = {}
++) =>
++  checkFamily({
++    root,
++    publicDir: pub,
++    frozenFile: path.join(root, FROZEN_IDS),
++    redirectsFile: path.join(ROOT, "vercel.json"),
++    yearMapFile: path.join(root, "no-year-map.ts"),
++    pages: [],
++    copy: [],
++    ...extra,
++  }).errors;
++
++describe("the after-the-vote devotions, as committed", () => {
++  it("are two devotions in the strand file, hidden", () => {
++    const strand = JSON.parse(
++      fs.readFileSync(path.join(PUBLIC, WORLD), "utf8")
++    );
++    expect(devotionsIn(strand)).toMatchObject({ shape: "strand", live: false });
++    expect(strand.devotions.map((d: Devotion) => d.id)).toEqual(IDS);
++    const { hidden, ids } = checkFamily();
++    expect(hidden).toEqual(IDS);
++    for (const id of IDS) expect(ids).not.toContain(id);
++  });
++
++  it("leave the family index exactly as it is without them", () => {
++    const { root } = seeded(pub => fs.rmSync(path.join(pub, WORLD)));
++    fs.mkdirSync(path.join(root, "client/public/needs"), { recursive: true });
++    const without = buildFamilyIndex(root);
++    const withHidden = buildFamilyIndex(ROOT);
++    expect(withHidden.problems).toEqual([]);
++    expect(renderFamilyIndex(withHidden.index)).toBe(
++      renderFamilyIndex(without.index)
++    );
++    expect(fs.readFileSync(path.join(ROOT, INDEX), "utf8")).toBe(
++      renderFamilyIndex(withHidden.index)
++    );
++  });
++
++  it("are pinned to the two weeks after the vote, and the pins wait", () => {
++    const inputs = loadInputs();
++    const { map, problems, notes } = buildYearMap(inputs);
++    expect(problems).toEqual([]);
++    expect(notes.join("\n")).toMatch(
++      /week 2026-11-08 is pinned to "grown-ups-voted-differently", which is hidden/
++    );
++    expect(notes.join("\n")).toMatch(
++      /week 2026-11-15 is pinned to "praying-for-leaders", which is hidden/
++    );
++    const week = (s: string) =>
++      map.weeks.find((w: { start: string }) => w.start === s);
++    expect(week("2026-11-08")).toMatchObject({ devotion: "perseverance" });
++    expect(week("2026-11-08").pinned).toBeUndefined();
++  });
++
++  it("pass the politics gate (both sides, one band, house style)", () => {
++    const run = spawnSync(
++      process.execPath,
++      [path.join(ROOT, "scripts/validate-politics.mjs")],
++      { cwd: ROOT, encoding: "utf8" }
++    );
++    expect(run.status, run.stderr).toBe(0);
++    expect(run.stdout).toMatch(/2 family politics devotions/);
++  });
++});
++
++describe("going live", () => {
++  it("asks for the freeze, then passes the family gate", () => {
++    const { root, pub } = seeded(goLive);
++    const errors = familyErrors(root, pub);
++    for (const id of IDS)
++      expect(
++        errors.some(e =>
++          e.includes(`devotion id "${id}" is not in ${FROZEN_IDS} yet`)
++        )
++      ).toBe(true);
++    const frozen = JSON.parse(
++      fs.readFileSync(path.join(root, FROZEN_IDS), "utf8")
++    );
++    fs.writeFileSync(
++      path.join(root, FROZEN_IDS),
++      JSON.stringify({ ...frozen, ids: [...frozen.ids, ...IDS] })
++    );
++    expect(familyErrors(root, pub)).toEqual([]);
++  });
++
++  it("gives each devotion a row numbered in its strand, and the strand its count", () => {
++    const { root } = seeded(goLive);
++    fs.mkdirSync(path.join(root, "client/public/needs"), { recursive: true });
++    const { index, problems } = buildFamilyIndex(root);
++    expect(problems).toEqual([]);
++    expect(index.weekly).toBe(72);
++    expect(index.strands).toEqual([
++      { key: "world", label: "The world we live in", count: 2 },
++    ]);
++    const rows = index.devotions.filter(
++      (r: { strand?: string }) => r.strand === "world"
++    );
++    expect(
++      rows.map(
++        (r: {
++          id: string;
++          n: number;
++          kind: string;
++          file: string;
++          href: string;
++        }) => [r.id, r.n, r.kind, r.file, r.href]
++      )
++    ).toEqual([
++      [
++        "grown-ups-voted-differently",
++        1,
++        "weekly",
++        `/${WORLD}`,
++        "/study/bible/matthew/10#v2",
++      ],
++      [
++        "praying-for-leaders",
++        2,
++        "weekly",
++        `/${WORLD}`,
++        "/study/bible/1-timothy/2#v1",
++      ],
++    ]);
++  });
++
++  it("pins the two weeks after the vote, and changes no week after them", () => {
++    const { root } = seeded(goLive);
++    // loadInputs reads the Foundations, the seasonal sets and the overrides from the same root.
++    const live = buildYearMap(loadInputs(root));
++    const hidden = buildYearMap(loadInputs());
++    expect(live.problems).toEqual([]);
++    const at = (b: typeof live, s: string) =>
++      b.map.weeks.find((w: { start: string }) => w.start === s);
++    expect(at(live, "2026-11-08")).toMatchObject({
++      devotion: "grown-ups-voted-differently",
++      pinned: true,
++    });
++    expect(at(live, "2026-11-15")).toMatchObject({
++      devotion: "praying-for-leaders",
++      pinned: true,
++    });
++    // The rotation counts from Advent Sunday 2026 and backward before it, so
++    // two pinned weeks in November move only the weeks before them.
++    const after = (b: typeof live) =>
++      b.map.weeks.filter((w: { start: string }) => w.start > "2026-11-15");
++    expect(after(live)).toEqual(after(hidden));
++    expect(live.notes.join("\n")).not.toMatch(/hidden/);
++  });
++});
++
++describe("the pins after the vote, later", () => {
++  it("expire with a note, not a problem, once the map's first year moves past them", () => {
++    const { root } = seeded(goLive);
++    const later = buildYearMap(loadInputs(root), { first: 2028 });
++    expect(later.problems).toEqual([]);
++    expect(later.notes.join("\n")).toMatch(/week 2026-11-08 is before the map begins .* can be removed/);
++    expect(later.notes.join("\n")).toMatch(/week 2026-11-15 is before the map begins/);
++  });
++});
++
++describe("the family gate on a strand file", () => {
++  it("still checks a hidden devotion's Scripture and id", () => {
++    const { root, pub } = seeded(p => {
++      const s = readStrand(p);
++      s.devotions[0].passageText = s.devotions[0].passageText.replace(
++        "tax collector",
++        "publican"
++      );
++      s.devotions[1].id = "identity";
++      writeStrand(p, s);
++    });
++    const errors = familyErrors(root, pub);
++    expect(
++      errors.some(e =>
++        /family-devotions-world\.json\.devotions\[0\] Matthew 10:2-4: passageText is not verbatim BSB/.test(
++          e
++        )
++      )
++    ).toBe(true);
++    expect(errors.some(e => /id "identity" is also/.test(e))).toBe(true);
++  });
++
++  it("needs live to be true or false, and keeps the Foundations a plain list", () => {
++    const { root, pub } = seeded(p => {
++      writeStrand(p, { ...readStrand(p), live: "soon" });
++      const first = JSON.parse(
++        fs.readFileSync(path.join(p, "family-devotions.json"), "utf8")
++      );
++      fs.writeFileSync(
++        path.join(p, "family-devotions.json"),
++        JSON.stringify({ live: true, devotions: first })
++      );
++    });
++    const errors = familyErrors(root, pub);
++    expect(
++      errors.some(e =>
++        /family-devotions-world\.json: "live" must be true or false/.test(e)
++      )
++    ).toBe(true);
++    expect(
++      errors.some(e =>
++        /family-devotions\.json: the Foundations set is always live/.test(e)
++      )
++    ).toBe(true);
++  });
++
++  it("refuses to hide a devotion that has been frozen", () => {
++    const { root, pub } = seeded();
++    const frozen = JSON.parse(
++      fs.readFileSync(path.join(root, FROZEN_IDS), "utf8")
++    );
++    fs.writeFileSync(
++      path.join(root, FROZEN_IDS),
++      JSON.stringify({ ...frozen, ids: [...frozen.ids, IDS[0]] })
++    );
++    expect(
++      familyErrors(root, pub).some(
++        e =>
++          e.includes(`devotion id "${IDS[0]}" is frozen`) &&
++          e.includes("no longer live")
++      )
++    ).toBe(true);
++  });
++
++  it("refuses a year map that names a hidden devotion", () => {
++    const { root, pub } = seeded();
++    const map = path.join(root, "year.ts");
++    fs.writeFileSync(
++      map,
++      `export const W = [{"start":"2026-11-08","devotion":"identity"},{"start":"2026-11-15","devotion":"${IDS[1]}"}];`
++    );
++    expect(
++      familyErrors(root, pub, { yearMapFile: map }).some(e =>
++        e.includes(`names devotion "${IDS[1]}", which is hidden`)
++      )
++    ).toBe(true);
++  });
++});
++
++describe("the politics gate on family devotions", () => {
++  const FORBIDDEN = ["leverage", "unpack"];
++  const findings = (change: (s: Strand) => void) => {
++    const { pub } = seeded(p => {
++      const s = readStrand(p);
++      change(s);
++      writeStrand(p, s);
++    });
++    return checkFamilyPolitics({ publicDir: pub, forbidden: FORBIDDEN })
++      .findings.map(([f, m]: [string, string]) => `${f}: ${m}`)
++      .join("\n");
++  };
++
++  it("passes the committed pieces", () => {
++    expect(
++      checkFamilyPolitics({ publicDir: PUBLIC, forbidden: FORBIDDEN })
++    ).toEqual({ findings: [], pieces: 2 });
++  });
++
++  it("refuses one side much longer than the other", () => {
++    const longer = " Then say it again.".repeat(20); // sixty more words on one side only
++    expect(findings(s => (s.devotions[0].sides![0].text += longer))).toMatch(
++      /grown-ups-voted-differently: side imbalance: \d+\/\d+ words differ by more than 55%/
++    );
++  });
++
++  it("refuses a politics piece with one side, or none", () => {
++    expect(findings(s => s.devotions[0].sides!.pop())).toMatch(
++      /needs exactly two sides/
++    );
++    expect(findings(s => delete s.devotions[1].sides)).toMatch(
++      /praying-for-leaders: a politics piece needs exactly two sides/
++    );
++  });
++
++  it("refuses a devotion that talks about voting without the mark", () => {
++    expect(findings(s => delete s.devotions[0].politics)).toMatch(
++      /grown-ups-voted-differently: talks about politics \("[^"]+"\) but is not marked politics: true/
++    );
++  });
++
++  it("holds the house style outside the quoted passage", () => {
++    const text = findings(s => {
++      s.devotions[0].activity += " Do it tonight!";
++      s.devotions[1].reflection += " Let us unpack that.";
++      s.devotions[1].passageText += "!";
++    });
++    expect(text).toMatch(/activity: exclamation point/);
++    expect(text).toMatch(/reflection: forbidden word "unpack"/);
++    expect(text).not.toMatch(/passageText/);
++  });
++});
+-- 
+2.43.0
+

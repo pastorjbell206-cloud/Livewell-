@@ -445,6 +445,28 @@ img{display:block;max-width:100%}
   .home-hero__name{margin:0 0 4px}
 }
 
+/* Home: Find and tonight (pages/home/, U18), the first things under the hero,
+   on the cream of the doors section. Not in the static hero, so first paint
+   is unchanged. Links are underlined in mustard; inline links get vertical
+   padding so a thumb has a 44 px target without changing the line. */
+.home-find{margin:0 0 var(--s-4)}
+.home-find__label{display:block;font-family:var(--F);font-weight:400;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px}
+.home-find__row{display:flex;gap:10px;max-width:680px}
+.home-find__input{flex:1 1 auto;min-width:0;min-height:52px;padding:0 16px;font-family:var(--U);font-size:17px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);-webkit-appearance:none;appearance:none}
+.home-find__input::placeholder{color:var(--ink-muted);opacity:1}
+.home-find__input:focus-visible{border-color:var(--ink)}
+.home-find__go{flex:0 0 auto;min-height:52px}
+.home-find__passage,.home-tonight__link{font-family:var(--U);font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.22em}
+.home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
+.home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
+.home-tonight{margin:0 0 var(--s-4)}
+/* Holds one line (.home-tonight__line's 17px at 1.6) while the line's module loads (Home.tsx). */
+.home-tonight--slot{min-height:calc(17px * 1.6)}
+.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px var(--s-4)}
+.home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
+.home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
+.home-tonight__link{padding:13px 0}
+
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the
  * hierarchy, hairlines replace borders, the whole row is the link (no
@@ -555,6 +577,69 @@ img{display:block;max-width:100%}
 .st-action:disabled:hover{background:var(--ink)}
 .st-action--quiet:disabled:hover{background:transparent;border-color:var(--borderdk)}
 
+/* ─── TOPICS (.tp-) ──────────────────────────────────────────────────
+ * pages/Topics.tsx (/topics, one list of questions) and pages/Topic.tsx (one
+ * question, one assembled answer; MASTER-PLAN 4.3). One reading column on
+ * cream; hairlines between parts; mustard only on rules and link underlines.
+ * Tokens only. */
+.tp-index-page,.tp-page__body{background:var(--bone);padding:var(--s-3) 16px var(--s-7)}
+.tp-index-wrap{max-width:var(--w-content);margin:0 auto}
+.tp-index > li{flex-direction:column}
+.tp-index > li:first-child{border-top:0}
+.tp-index__q{font-size:clamp(1.3rem,1.15rem + .5vw,1.55rem)}
+.tp-also{align-self:flex-start;display:inline-flex;align-items:center;gap:.35em;min-height:44px;margin:-14px 0 14px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tp-also:hover,.tp-also:focus-visible{text-decoration-color:currentColor}
+.tp-foot{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:var(--s-4) 0 0}
+.tp-foot a,.tp-text a,.tp-companion a,.tp-ways__links a,.tp-witness__name a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.tp-status{font-family:var(--U);color:var(--ink-muted);text-align:center;padding:var(--s-6) 0;margin:0}
+.tp-col{max-width:var(--w-prose);margin:0 auto}
+.pg-head__eyebrow a{padding:12px 0;margin:-12px 0}
+.tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
+.tp-short{margin:0 0 var(--s-3)}
+.tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+.tp-text{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0 0 var(--s-1)}
+.tp-note{font-family:var(--U);font-size:13px;line-height:1.6;color:var(--ink-muted);margin:var(--s-2) 0 0}
+.tp-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
+.tp-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.tp-companion{color:var(--ink-muted);margin-bottom:var(--s-2)}
+.tp-lead{display:block;padding:var(--s-2) 0 var(--s-3);border-top:2px solid var(--mustard);text-decoration:none;color:inherit}
+.tp-lead .ed-kicker{margin:0 0 6px}
+.tp-lead__title{display:block;font-family:var(--F);font-size:clamp(1.5rem,1.25rem + .8vw,1.9rem);font-weight:500;line-height:1.2;color:var(--ink);text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tp-lead:hover .tp-lead__title,.tp-lead:focus-visible .tp-lead__title{text-decoration-color:var(--mustard)}
+.tp-lead__line{display:block;font-family:var(--B);font-size:1rem;line-height:1.6;color:var(--ink-muted);margin:8px 0 0}
+.tp-lead__meta{display:block;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:10px 0 0}
+.tp-ways{margin:var(--s-3) 0 0}
+.tp-ways__title{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);line-height:1.2;color:var(--ink);margin:0 0 var(--s-1)}
+.tp-ways__list{list-style:none;margin:0;padding:0}
+.tp-ways__list li{padding:14px 0;border-top:1px solid var(--border)}
+.tp-ways__line{font-family:var(--F);font-size:clamp(1.15rem,1rem + .4vw,1.3rem);font-weight:500;line-height:1.3;color:var(--ink);margin:0 0 6px}
+.tp-ways__links{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
+.tp-ways__links a,.tp-witness__name a{padding:10px 0}
+.tp-verses{list-style:none;margin:0;padding:0}
+.tp-verses li{padding:var(--s-2) 0;border-top:1px solid var(--border)}
+.tp-verses li:first-child{border-top:0;padding-top:0}
+.tp-verses__ref{font-family:var(--U);font-size:15px;font-weight:600;margin:-10px 0 0}
+.tp-verses__ref .st-verseref{display:inline-flex;align-items:center;min-height:44px}
+.tp-more{display:inline-flex;align-items:center;gap:.35em;min-height:44px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.tp-more:hover,.tp-more:focus-visible{text-decoration-color:currentColor}
+.tp-witness__name{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0 0 8px}
+.tp-actions{display:flex;flex-wrap:wrap;gap:12px;margin:var(--s-2) 0 var(--s-2)}
+.tp-table-also{color:var(--ink-muted);font-size:16px}
+.tp-back{padding-top:var(--s-2);margin-top:var(--s-1)}
+/* A topic page's rows are written to be read whole: no clamp mid-sentence. */
+.tp-page .ed-index--compact .ed-dek{display:block;overflow:visible}
+@media print{
+  .tp-page .pg-head{padding:0}
+  .tp-page .pg-head__inner{max-width:100%;padding-bottom:6pt}
+  .tp-page .pg-head__title{font-size:20pt}
+  .tp-page__body{padding:0 !important}
+  .tp-col{max-width:100%}
+  .tp-section{padding:6pt 0 2pt;margin-top:4pt;break-inside:avoid}
+  .tp-section__title{font-size:13pt;margin-bottom:3pt}
+  .tp-short p,.tp-text{font-size:10pt;line-height:1.45;margin-bottom:4pt}
+  .tp-actions,.tp-note,.tp-back{display:none !important}
+}
+
 /* ─── STUDY PRIMITIVES (.st-) ────────────────────────────────────────
  * components/study/: Sheet and Stepper. Built just in time, each by the
  * first unit that needs it (MASTER-PLAN 8.2). Tokens only; the reduced-motion
@@ -617,6 +702,62 @@ img{display:block;max-width:100%}
 /* Position: a quiet "3 of 6" (components/study/Position.tsx). */
 .st-position{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);font-variant-numeric:tabular-nums}
 
+/* ─── READ THE WHOLE STORY IN 2027 (.sy-) ─────────────────────────────
+ * The Study Bible's story path as 365 days (pages/StudyBibleYear.tsx): one
+ * day's card, then the year by month. Tokens only; every control is at least
+ * 44px tall for a thumb. */
+.sy-band{background:var(--bone);padding:var(--s-5) clamp(16px,4vw,var(--s-4))}
+.sy-band--warm{background:var(--bone-warm)}
+.sy-wrap{max-width:var(--w-prose);margin:0 auto}
+.sy-day{max-width:var(--w-prose);margin:0 auto;background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm);padding:clamp(20px,3vw,32px);scroll-margin-top:90px}
+.sy-day__when{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);margin:0}
+.sy-day__when .st-position{font-size:inherit;color:var(--ink)}
+.sy-day__title{font-family:var(--F);font-size:clamp(30px,4vw,44px);font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:var(--ink);margin:8px 0 6px;text-wrap:balance}
+.sy-day__title:focus{outline:none}
+.sy-day__act{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink);margin:0 0 var(--s-2)}
+.sy-link{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sy-chapters{list-style:none;margin:0 0 var(--s-2);padding:0}
+.sy-chapters li{border-top:1px solid var(--border)}
+.sy-chapters li:last-child{border-bottom:1px solid var(--border)}
+.sy-chapter{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:8px 0;color:var(--ink);text-decoration:none}
+.sy-chapter__ref{font-family:var(--U);font-size:15px;font-weight:600}
+.sy-chapter__title{font-family:var(--B);font-size:15px;line-height:1.45;color:var(--ink-muted)}
+.sy-chapter:hover .sy-chapter__ref{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sy-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-2) 0 6px}
+.sy-guides ul{list-style:none;margin:0;padding:0}
+.sy-guides li{font-family:var(--U);font-size:15px;line-height:1.5}
+.sy-guides a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
+.sy-day__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
+.sy-step{display:flex;justify-content:space-between;gap:12px;margin-top:var(--s-3);padding-top:var(--s-2);border-top:1px solid var(--border)}
+.sy-step__btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);background:transparent;border:none;cursor:pointer}
+.sy-places{margin-top:var(--s-2)}
+.sy-note{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:6px 0 0}
+.sy-note--alert{color:var(--alert)}
+.sy-inline{display:inline-flex;align-items:center;min-height:44px;padding:0;font:inherit;font-weight:600;color:var(--ink);background:transparent;border:none;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em;cursor:pointer;vertical-align:middle}
+.sy-h2{font-family:var(--F);font-size:clamp(28px,3vw,36px);font-weight:400;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.sy-intro{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
+.sy-month{border-top:1px solid var(--border)}
+.sy-month:last-of-type{border-bottom:1px solid var(--border)}
+.sy-month>summary{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px;min-height:52px;padding:12px 0;cursor:pointer;list-style:none}
+.sy-month>summary::-webkit-details-marker{display:none}
+.sy-month>summary::after{content:"+";font-family:var(--U);font-size:20px;line-height:1;color:var(--ink-muted)}
+.sy-month[open]>summary::after{content:"\2212"}
+.sy-month__name{font-family:var(--F);font-size:clamp(22px,2.4vw,26px);font-weight:500;color:var(--ink);margin-right:auto}
+.sy-month__span{font-family:var(--U);font-size:13px;color:var(--ink-muted)}
+.sy-days{list-style:none;margin:0 0 var(--s-2);padding:0}
+.sy-row{display:flex;align-items:center;gap:12px;border-top:1px solid var(--border)}
+.sy-row--on{background:var(--card)}
+.sy-check{position:relative;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:none;cursor:pointer;color:var(--bone)}
+.sy-check::before{content:"";position:absolute;width:26px;height:26px;border-radius:50%;border:1px solid var(--borderdk);background:transparent}
+.sy-check[aria-pressed="true"]::before{background:var(--ink);border-color:var(--ink)}
+.sy-check svg{position:relative}
+.sy-pick{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:52px;padding:8px 4px;text-align:left;background:transparent;border:none;cursor:pointer;color:var(--ink)}
+.sy-pick__day{font-family:var(--U);font-size:13px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.sy-pick__label{font-family:var(--U);font-size:15px;font-weight:600;line-height:1.4}
+.sy-pick[aria-current="true"] .sy-pick__label{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sy-prose{max-width:var(--w-prose);margin:0 auto}
+.sy-prose p{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+
 /* ─── THE TABLE (.tb-) ───────────────────────────────────────────────
  * Family devotions at home (pages/family/, MASTER-PLAN 5.5): tonight's card
  * on /family, a page per devotion, and table mode (?mode=table). Tokens only.
@@ -650,12 +791,44 @@ img{display:block;max-width:100%}
 .tb-big{font-family:var(--F);font-size:clamp(22px,2.4vw,26px);font-weight:400;line-height:1.35;color:var(--ink);margin:0 0 var(--s-2)}
 .tb-body p,.tb-text{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
 .tb-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 8px}
+.tb-side{margin:var(--s-3) 0 0;padding-left:16px;border-left:1px solid var(--border)}
 .tb-questions{margin:0 0 var(--s-2);padding-left:1.4em;font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink)}
 .tb-questions li+li{margin-top:10px}
 .tb-prayer{font-family:var(--F);font-size:clamp(20px,2.2vw,23px);font-style:italic;line-height:1.55;color:var(--ink);margin:0 0 var(--s-2)}
 .tb-done{padding:var(--s-4) 0;border-top:1px solid var(--border)}
 .tb-done__note{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:10px 0 0}
 .tb-more{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:var(--s-3);border-top:1px solid var(--border)}
+
+/* The Table, part two (U21): whose questions to ask, three short nights, a
+ * line for the grown-ups, "If your table looks different", and the library
+ * by theme. */
+.tb-bands{border:0;margin:0 0 var(--s-2);padding:0;min-width:0}
+.tb-bands__legend{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 8px;padding:0}
+.tb-bands__options{display:flex;flex-wrap:wrap;gap:8px}
+.tb-band{position:relative;display:inline-flex}
+.tb-band input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.tb-band span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);border:1px solid var(--border);border-radius:999px;transition:border-color .2s var(--motion-ease),background .2s var(--motion-ease)}
+.tb-band input:hover+span{border-color:var(--ink)}
+.tb-band input:checked+span{border-color:var(--mustard);background:var(--bone-warm)}
+.tb-band input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}
+.tb-bands__note{font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
+.tb-table .tb-bands__note{font-size:14px}
+.tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 var(--s-1)}
+/* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them,
+   drawn at the foot of the text (content-box), while the padding makes each night a 44px target
+   that never breaks across lines. */
+.tb-nights__link{display:inline-block;padding:13px 0;line-height:1.3;white-space:nowrap;background-origin:content-box;color:var(--mustard-text);font-weight:600}
+.tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
+.tb-grownups__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0}
+.tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}
+.tb-different__title{font-family:var(--F);font-size:22px;font-weight:500;line-height:1.25;color:var(--ink);margin:0 0 6px}
+.tb-different__body{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
+.tb-different__more{font-family:var(--U);font-size:15px;line-height:1.7;color:var(--ink);margin:0;max-width:68ch}
+.tb-different__link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:.2em;padding:10px 0}
+.tb-lib__theme{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 var(--s-3);font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
+.tb-lib__theme select{min-height:44px;max-width:100%;padding:0 12px;font-family:var(--U);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);cursor:pointer}
+.tb-lib__shelf+.tb-lib__shelf{margin-top:var(--s-5)}
+.tb-lib__heading{font-family:var(--F);font-size:clamp(24px,3vw,30px);font-weight:400;line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
 
 /* Table mode: large type, one step per screen, the screen kept awake. */
 .tb-table{--st-stepper-top:57px;min-height:100vh;min-height:100svh;background:var(--bone);color:var(--ink)}
@@ -688,16 +861,24 @@ img{display:block;max-width:100%}
   .tb-page .pg-head__lede{font-size:10pt;margin-top:3pt}
   .tb-page__body{padding:0 !important}
   .tb-devotion{max-width:100%}
-  .tb-section{padding:6pt 0 2pt;break-inside:avoid}
+  .tb-section{padding:5pt 0 1pt;break-inside:avoid}
   .tb-section__title{font-size:13pt;margin-bottom:3pt}
   .tb-ref,.tb-label{font-size:8pt;margin-bottom:2pt}
   .tb-passage{font-size:10.5pt;line-height:1.45;margin-bottom:4pt;padding-left:8pt}
   .tb-big{font-size:11.5pt;margin-bottom:4pt}
   .tb-body p,.tb-text,.tb-questions{font-size:9.5pt;line-height:1.45;margin-bottom:4pt}
   .tb-questions li+li{margin-top:2pt}
+  .tb-side{margin-top:4pt;padding-left:8pt}
   .tb-prayer{font-size:10.5pt;margin-bottom:2pt}
   .tb-devotion p[style]{font-size:8pt !important;margin-bottom:2pt !important}
   .tb-done,.tb-more,.tb-line{display:none !important}
+  /* Both age bands side by side, a little tighter, on a page with narrower
+   * margins than an essay's 2cm, so a devotion still prints on one page (U21). */
+  body:has(.tb-page){page:tb-card}
+  @page tb-card{margin:1.3cm 1.5cm}
+  .tb-asks--two{display:grid;grid-template-columns:1fr 1fr;gap:0 14pt}
+  .tb-asks--two .tb-questions{font-size:9pt;line-height:1.35;padding-left:1.2em;margin-bottom:2pt}
+  .tb-asks--two .tb-label{margin-bottom:1pt}
 }
 
 /* CARD */

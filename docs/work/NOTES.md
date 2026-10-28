@@ -37,7 +37,8 @@ runs. Nothing here is read by the site build.
 - Contested second-order questions are stated fairly and left open. Hold for
   James (do not publish until he gives his position or says to publish open):
   women-and-leadership-church, what-the-bible-says-about-submission,
-  how-to-read-genesis-one.
+  how-to-read-genesis-one. (did-god-command-genocide: James said on
+  2026-10-28 to publish it with its three readings left open.)
 - "Raising sons in a post-Christian country" needs James's own story; not
   written.
 - Scripture is ESV verbatim. esv.org is unreachable from the sandbox; verify
@@ -193,3 +194,137 @@ same main-session turn, not per workflow run: fifteen verification runs
 launched together shared one budget (the Christian nationalism run got 3
 searches). To give a verification run a full budget, launch it in a turn of
 its own.
+
+## Verification status (2026-10-27)
+
+All fifteen ledgers closed by 2026-10-27 evening (five pilots, ten Doubt), with
+confirmed originals restored where sources allowed. Open only: ESV wording to
+recheck once with James's API key (every essay), Plutarch's date (pagan myths,
+"early in the second century"), and James's position on did-god-command-genocide.
+Pilots landing via land-wf.js run wf_532a85b2-afb (worktree /home/user/livewell-land).
+Second passes are launched one per main-session turn (see the budget note).
+Landing workflow for finished essays: docs/work/essays/land-wf.js (args
+{essays:[{slug,section?}], redirects:[{from,to}], extra}); verifier:
+docs/work/essays/verify-wf.js (args {slug}).
+
+Restorations owed before the Doubt section goes to James: earlier verifier runs
+generalized figures that later runs confirmed but left as "a voice choice"
+(why-trust-the-bible: the Isaiah scroll "about a thousand years older", P52's
+size; check every ledger's "Original wording, for restoring" section). From
+2026-10-27 verify-wf.js restores confirmed originals itself.
+
+## James's redesign brief (2026-10-27)
+
+"I want Live Well to be the most organized design, well-designed website that
+helps people to study the Bible, to understand doctrine, to be able to
+understand what a post-Christian world is in America, how to live it. I want
+the tools and the resources to be available. I want this to be an elite and
+world-class website made by some of the best designers in the world that are
+very critical of what currently is and have a fresh vision how to make this. I
+want you to research all of other websites that might be in this niche and
+take the best things. I would like it to be interactive and have things that
+draw people's attention, and I really want this to become like a useful tool
+for people to use to study and learn and grow."
+
+Design program (docs/work/design/):
+1. Research in three waves, one per main-session turn for the search budget
+   (research-wf.js, args {wave,title,searches,clusters}). A: Bible study and
+   doctrine (run wf_e9f2da1b-b0d). B: post-Christian thought, church history,
+   family discipleship, skeptic-facing. C: best-in-class design outside the
+   niche (editorial, learning UX, organization and design systems, devotional
+   habit UX). Competitor sites cannot be fetched from this sandbox (network
+   policy); research uses web search plus open-source code on GitHub. James
+   can widen network access in the environment settings.
+2. Critique of the current site from real screenshots by seven critics
+   (critique-wf.js, run wf_6e98ce65-60b) -> CRITIQUE.md.
+3. Vision: independent design directions, judged and merged, within the brand
+   contract (palette, type, "Unhurried. Weighted. Grown-up."); proposals to
+   change the contract go to James, not into code.
+4. A clickable prototype for James, then the master plan revised and built in
+   waves.
+Tension to resolve, not dodge: "draw people's attention" against "Unhurried.
+Weighted. Grown-up." Attention through depth and real interactivity, not bait.
+
+Design program status (2026-10-27 evening): research waves A, B, C done
+(research/*-SYNTHESIS.md); critique done (CRITIQUE.md, 12 questions for James
+in section 5); vision workflow running (vision-wf.js, run wf_6cbf5b15-51f).
+Pilots PR #539 (claude/essays) green, waiting on James's sample read.
+
+2026-10-28: James: "merge the pilots, they look good." PR #539 squash-merged as
+fea345a4. His open questions on the pilots (the CN closing line, the SBC pairing,
+the Monster in the Mirror citation, the early church title, Constantine) are
+answered by that approval: ship as written. claude/essays had main merged in
+(ab80c873; force-push was refused, a merge is equivalent) and is ready for the
+next essay batch. Follow-up owed: surface the two politics essays on /family
+once wave 3 (Family.tsx) merges.
+
+## James's direction on the prototype (2026-10-28)
+
+"why is there a focus on john 1? or is that just an example. i dont want my
+image on the frontpage or you can use the pictture from my facebook page. i
+want this webstite to be a page that people can go to and learn, people can
+study the bible. people can learn church history. also its a place with my
+facbook posts. and my essays from substack. with my books. etc. i want this to
+be the best bible study tool in the world."
+
+Taken as: order of weight is (1) Bible study, the best Bible study tool in the
+world; (2) church history; (3) his writing: Facebook posts, Substack essays,
+books. No photograph of him on the front page; his Facebook photo may be used
+elsewhere (About) if he sends it (Facebook is unreachable from the sandbox).
+Asked him for a Facebook "Download your information" export (Posts, JSON) and
+a Substack export, by attachment or Google Drive, and whether all Facebook
+posts go up or only the faith and teaching ones (recommended: we sort, he
+approves). Prototype: Home rebuilt to lead with Bible study, a new Study the
+Bible door (all 66 books; John 1 is only the example chapter page) and a new
+Writing door (essays, Facebook posts, books), via proto-revise-wf.js.
+Prototype canvas: https://claude.ai/artifact/RH3KcVUyTZUisLPmnRr8mS (private).
+
+2026-10-28, later: James: "no lets just keep the ones we have now and write a
+couple more that are fitting to the mission of the site and my substack."
+So: no Facebook or Substack import; the Writing door holds the essays on the
+shelf now plus new ones, and his books; no Facebook strip and no "archive will
+appear here" lines anywhere (remove them from the prototype's Writing and Home
+screens). New essays, in this order: what-romans-13-says (Faith and Power,
+launched 2026-10-28, run wf_10a51019-0ed), then
+who-decided-what-books-are-in-the-bible (Reading the Bible in Its World). Each
+goes write -> verify -> voice (essay-wf.js), then a verify-wf.js pass in its own
+turn, then land-wf.js from claude/essays (copy the draft and ledger from the
+code branch's docs/work/essays into the essays worktree first).
+
+2026-10-28: James: 25 essays of the pilots' quality on the site in total; plan
+and status in docs/work/essays/PROGRAM-25.md.
+
+## James, 2026-10-28 (essays 16 and 17)
+
+- who-decided-what-books-are-in-the-bible: "Publish it open". The Apocrypha question stays a fair two-sided account with no position stated for James; 2 Peter authorship stays unsettled.
+- what-romans-13-says: "Publish as written". The named public examples (Sessions 2018 and the church responses, the sanctuary movement, Grace Community Church 2020) stay; not held for the November 3 election.
+
+## For James at the Doubt sample read (from the doubt-1 final-read fix)
+
+- why-trust-the-bible now has one sentence naming the inerrancy division as second-order; his own position is not stated.
+- His atheism-to-faith sentence: cut from excavation-not-demolition (read as a credential), reworded in did-the-resurrection-happen, kept in can-you-be-good-without-god.
+- excavation-not-demolition: the Joshua Harris timeline detail (posted days after announcing his separation) was cut; "still owe the resurrection a hearing" became "still give".
+- did-the-resurrection-happen: Borg's reading described as "offered as a way to keep Easter for people who could no longer believe in an empty tomb."
+- Withheld link sentences (targets not yet public) are recorded word for word in each ledger.
+
+## Vercel daily deployment limit (2026-10-28, 19:29 UTC)
+
+The project hit the Hobby plan's 100-deployments-a-day limit ("api-deployments-free-per-day"); every push to a branch creates a preview deployment, and the essay workflows' work-in-progress saves were pushing to the PR #540 branch every few minutes. Production is unaffected (last production deploy: #539, READY). vercel.json now carries `git.deploymentEnabled: {"claude/todo-implementation-hhp4bm": false}`, so pushes to the PR #540 branch create no deployments; its existing preview (livewell-tn9v-git-claude-978329-...) already holds all of #540's site code (last code commit 794ef60f). claude/essays still deploys, for James's essay previews. Remove the entry from vercel.json before #540 merges, so later PRs from this branch get previews again.
+
+## For James at the read of the new essays (final read, local batch 1, 2026-10-28)
+
+- Romans 13: keep "Whoever takes office in January" (tied to this election) or "Whoever holds office over us is owed", so the essay does not date after January?
+- Love of country: keep the ending line "He was never ashamed of His nation, and He never worshiped it"? One reader heard it as a slogan.
+- Love of country: "I'm raising five sons in this country, and I want them to love it" as written?
+- Why are people leaving: the Bengtson paragraph ends on "I was raised without a father, and I am raising five sons." without comment.
+- Why are people leaving: "a church cannot drop a teaching it believes Christ gave in order to keep a member" (sex and marriage), worded as he wants?
+- Children Rome threw away: the pastoral section speaks to men who "pressed someone else to end" a pregnancy, and calls abortion sin while leaving the law open. Tone and position?
+- Who decided the books: Closing Texts now open with Romans 15:4.
+
+## For James at the read of the new essays (final read, local batch 2, 2026-10-28)
+
+- Render unto Caesar: name the unborn child beside "a border station" in the list of people who bear God's image (one reader suggested it for balance)?
+- Persecution: state the passage critics cited from Kelvin Cochran's book, or keep the book described only as teaching the traditional view of sex and marriage?
+- Persecution: add Pew's newer figure (58 percent felt conflict with mainstream culture by early 2025) beside the 2024 figure of 48 percent?
+- The city: whether Christians should hold civil office or go to law is left open; state his position or keep it open?
+- Render unto Caesar now links "the Christians in Rome" to the Romans 13 essay (five site links, one more than the brief's two to four).

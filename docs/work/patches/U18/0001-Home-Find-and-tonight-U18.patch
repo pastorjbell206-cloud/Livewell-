@@ -1,0 +1,1017 @@
+From 4b4a5232db882d253e9b06e8dbba1acffcb8f6a1 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 16:10:17 +0000
+Subject: [PATCH 1/2] Home: Find and tonight (U18)
+
+One field under the hero sends a reference to the verse in the Study Bible and anything else to /search, with the search module and reference parser loaded when the field is focused. Beneath it, tonight's family devotion by name, from the year map alone (titles added to familyYear.generated.ts), Continue beside it when this device has an eight-week plan or a self-check left part-way (myProgress.continueHere), and the Advent line folded in from AdventAtTheTable. Family joins Home's doors. The static hero and first paint are unchanged.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/components/AdventAtTheTable.tsx |  32 +---
+ client/src/index.css                       |  20 +++
+ client/src/lib/familyTable.test.ts         |  17 ++
+ client/src/lib/familyTable.ts              |  11 +-
+ client/src/lib/familyYear.generated.ts     |  83 ++++++++++
+ client/src/lib/myProgress.test.ts          |  43 +++++-
+ client/src/lib/myProgress.ts               |  53 +++++++
+ client/src/pages/Home.tsx                  |  30 ++--
+ client/src/pages/advent-ready.test.tsx     |   9 +-
+ client/src/pages/home/HomeFind.tsx         |  68 ++++++++
+ client/src/pages/home/HomeTonight.tsx      | 128 +++++++++++++++
+ client/src/pages/home/home.test.tsx        | 171 +++++++++++++++++++++
+ scripts/lib/family-year.mjs                |  46 +++++-
+ server/church-year.test.ts                 |  23 +++
+ 14 files changed, 689 insertions(+), 45 deletions(-)
+ create mode 100644 client/src/pages/home/HomeFind.tsx
+ create mode 100644 client/src/pages/home/HomeTonight.tsx
+ create mode 100644 client/src/pages/home/home.test.tsx
+
+diff --git a/client/src/components/AdventAtTheTable.tsx b/client/src/components/AdventAtTheTable.tsx
+index 2850a954..436ee246 100644
+--- a/client/src/components/AdventAtTheTable.tsx
++++ b/client/src/components/AdventAtTheTable.tsx
+@@ -2,8 +2,9 @@
+  * AdventAtTheTable: the family Advent calendar, put in front of a household
+  * from the Sunday a week before Advent Sunday through Christmas Day.
+  *
+- * Two shapes: a quiet line for Home (`variant="line"`) and a card for
+- * /family (`variant="card"`). Outside that window both render nothing.
++ * The card for /family (`variant="card"`); outside that window it renders
++ * nothing. Home's line is built from the same words (adventCopy) by
++ * pages/home/HomeTonight.tsx, which folds it into tonight's line (U18).
+  *
+  * The date comes from the reader's own clock on the client's first render
+  * (lib/familyYear.ts localISODate) and the year map, never the network. The
+@@ -81,15 +82,6 @@ export function adventCopy(a: AdventTonight): AdventCopy {
+   };
+ }
+ 
+-const quietLink = {
+-  fontFamily: "var(--U)",
+-  fontWeight: 500,
+-  color: "var(--ink)",
+-  textDecoration: "none",
+-  borderBottom: "1px solid var(--mustard)",
+-  paddingBottom: "2px",
+-} as const;
+-
+ const cardLink = {
+   fontFamily: "var(--U)",
+   fontSize: "14px",
+@@ -101,27 +93,13 @@ const cardLink = {
+   minHeight: "44px",
+ } as const;
+ 
+-export default function AdventAtTheTable({ variant }: { variant: "line" | "card" }) {
++// `variant` stays for the call on /family; the line Home showed is HomeTonight's now.
++export default function AdventAtTheTable(_props: { variant: "card" }) {
+   const [today] = useState(() => localISODate());
+   const advent = adventTonight(today);
+   if (!advent) return null;
+   const copy = adventCopy(advent);
+ 
+-  if (variant === "line") {
+-    return (
+-      <p
+-        data-testid="advent-at-the-table"
+-        style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "0 0 var(--s-4)" }}
+-      >
+-        {copy.line.lead}{" "}
+-        <Link href={copy.href} style={{ ...quietLink, fontSize: "16px" }}>
+-          {copy.line.link}
+-        </Link>
+-        .
+-      </p>
+-    );
+-  }
+-
+   return (
+     <section
+       data-testid="advent-at-the-table"
+diff --git a/client/src/index.css b/client/src/index.css
+index 56f1a10c..1a65ee6d 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -445,6 +445,26 @@ img{display:block;max-width:100%}
+   .home-hero__name{margin:0 0 4px}
+ }
+ 
++/* Home: Find and tonight (pages/home/, U18), the first things under the hero,
++   on the cream of the doors section. Not in the static hero, so first paint
++   is unchanged. Links are underlined in mustard; inline links get vertical
++   padding so a thumb has a 44 px target without changing the line. */
++.home-find{margin:0 0 var(--s-4)}
++.home-find__label{display:block;font-family:var(--F);font-weight:400;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px}
++.home-find__row{display:flex;gap:10px;max-width:680px}
++.home-find__input{flex:1 1 auto;min-width:0;min-height:52px;padding:0 16px;font-family:var(--U);font-size:17px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);-webkit-appearance:none;appearance:none}
++.home-find__input::placeholder{color:var(--ink-muted);opacity:1}
++.home-find__input:focus-visible{border-color:var(--ink)}
++.home-find__go{flex:0 0 auto;min-height:52px}
++.home-find__passage,.home-tonight__link{font-family:var(--U);font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.22em}
++.home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
++.home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
++.home-tonight{margin:0 0 var(--s-4)}
++.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px var(--s-4)}
++.home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
++.home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
++.home-tonight__link{padding:10px 0}
++
+ /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
+  * Collections read as an index, not a wall of boxes: type carries the
+  * hierarchy, hairlines replace borders, the whole row is the link (no
+diff --git a/client/src/lib/familyTable.test.ts b/client/src/lib/familyTable.test.ts
+index 9caaf2ca..ab17f9ef 100644
+--- a/client/src/lib/familyTable.test.ts
++++ b/client/src/lib/familyTable.test.ts
+@@ -21,6 +21,7 @@ import {
+   readFamilyProgress,
+   recordDevotionDone,
+   tonightOn,
++  tonightTitle,
+   weekOfYear,
+   whenSaid,
+   withDone,
+@@ -85,6 +86,22 @@ describe("tonightOn", () => {
+     expect(missing).toEqual([]);
+   });
+ 
++  it("has tonight's title from the year map, the same as the index's, on every night", () => {
++    const titles = new Map(INDEX.devotions.map((r) => [r.id, r.title]));
++    const wrong: string[] = [];
++    const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
++    const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
++    while (day <= last) {
++      const iso = day.toISOString().slice(0, 10);
++      const t = tonightOn(iso);
++      if (t && tonightTitle(t) !== titles.get(t.id)) wrong.push(`${iso}: ${t.id} is "${tonightTitle(t)}"`);
++      day.setUTCDate(day.getUTCDate() + 1);
++    }
++    expect(wrong).toEqual([]);
++    expect(tonightTitle({ id: "advent-6", set: "advent", day: 6 })).toBe("A Child Is Given");
++    expect(tonightTitle({ id: "no-such-devotion" })).toBeNull();
++  });
++
+   it("is null off the map and for a date that cannot exist", () => {
+     expect(tonightOn("2040-01-01")).toBeNull();
+     expect(tonightOn("2027-02-30")).toBeNull();
+diff --git a/client/src/lib/familyTable.ts b/client/src/lib/familyTable.ts
+index 9efea741..5705ea2a 100644
+--- a/client/src/lib/familyTable.ts
++++ b/client/src/lib/familyTable.ts
+@@ -14,7 +14,7 @@
+  *   this browser, through lib/storage.
+  */
+ import { familySetDayOn, familyWeekOn, onFamilyMap, type FamilySetKey } from "./familyYear";
+-import { FAMILY_SETS } from "./familyYear.generated";
++import { FAMILY_SETS, FAMILY_SET_TITLES, FAMILY_TITLES } from "./familyYear.generated";
+ import { catechismWeekIndex } from "./familyCatechism";
+ import { readStoredJSON, writeStoredJSON } from "./storage";
+ 
+@@ -118,6 +118,15 @@ export function tonightOn(date: string): Tonight | null {
+   return best ? { id: seasonalId(best.set, best.day), set: best.set, day: best.day } : null;
+ }
+ 
++/**
++ * Tonight's title from the year map alone (no index fetch), for Home's
++ * tonight line. Null only if the map has none, which its generator refuses.
++ */
++export function tonightTitle(t: Tonight): string | null {
++  if (t.set && t.day) return FAMILY_SET_TITLES[t.set]?.[t.day - 1] ?? null;
++  return FAMILY_TITLES[t.id] ?? null;
++}
++
+ /**
+  * Which week of the year a date is in: weeks run Sunday to Saturday, and week
+  * 1 is the week that holds January 1 of the date's own year.
+diff --git a/client/src/lib/familyYear.generated.ts b/client/src/lib/familyYear.generated.ts
+index 4fb5782f..7274e087 100644
+--- a/client/src/lib/familyYear.generated.ts
++++ b/client/src/lib/familyYear.generated.ts
+@@ -510,3 +510,86 @@ export const FAMILY_WEEKS: FamilyWeek[] = [
+   {"start":"2031-11-16","season":"ordinary","devotion":"love"},
+   {"start":"2031-11-23","season":"thanksgiving","devotion":null,"set":"thanksgiving"},
+ ];
++
++/** The title of every devotion a week above names, by id. */
++export const FAMILY_TITLES: Record<string, string> = {
++  "being-sent": "You Are Not Just A Keeper",
++  "caring-for-creation": "Taking Care Of The Garden",
++  "contentment": "Enough Right Here",
++  "courage": "Brave Is Not Fearless",
++  "creation": "God Called It Good",
++  "faith": "Walking Before You See",
++  "fear-and-anxiety": "When The Lights Go Out",
++  "forgiveness": "The Weight You Put Down",
++  "friendship": "The Friend Who Stays",
++  "generosity": "Open Hands",
++  "gentleness": "Strong Enough To Be Gentle",
++  "gods-faithfulness": "He Keeps His Word",
++  "gods-promises": "The God Who Keeps His Word",
++  "goodness": "Good All The Way Through",
++  "grace": "The Gift You Cannot Earn",
++  "gratitude": "Counting What You Already Have",
++  "handling-anger": "What To Do With The Fire",
++  "heaven": "Every Sad Thing Undone",
++  "honesty": "Nothing To Hide",
++  "hope": "An Anchor In The Storm",
++  "humility": "The Lowest Seat",
++  "identity": "Made On Purpose",
++  "is-the-bible-true": "Can We Trust This Book",
++  "jealousy-and-comparison": "The Thief Of Glad",
++  "joy": "A Happiness That Holds",
++  "justice-and-the-poor": "Whose Voice Gets Heard",
++  "kindness": "Small Things With Great Love",
++  "kindness-to-the-outsider": "The Empty Seat",
++  "love": "Love That Costs Something",
++  "loving-your-enemies": "The Hardest Love",
++  "mercy": "Not Getting What You Deserve",
++  "obedience": "Why, Not Just What",
++  "patience": "The Slow Growing Things",
++  "peace": "When Your Heart Is Worried",
++  "perseverance": "Keep Going",
++  "prayer": "Talking With God",
++  "repentance": "Turning Around",
++  "rest-and-sabbath": "Permission To Stop",
++  "screens-and-attention": "Where Your Eyes Go",
++  "self-control": "The City With No Walls",
++  "serving-others": "The Towel And The Basin",
++  "stewardship": "Taking Care Of What Is Not Yours",
++  "suffering": "When It Really Hurts",
++  "thankfulness": "The Cure For A Grumpy Heart",
++  "the-armor-of-god": "Dressed For The Day",
++  "the-beatitudes": "Upside Down Happy",
++  "the-bible": "A Light For The Path",
++  "the-church": "Not A Building",
++  "the-cross": "What Love Was Willing To Do",
++  "the-empty-tomb": "The Stone Was Moved",
++  "the-fall": "How It All Went Wrong",
++  "the-fear-of-the-lord": "The Right Kind Of Awe",
++  "the-fruit-of-the-spirit": "What Grows On The Tree",
++  "the-good-shepherd": "The One Who Comes Looking",
++  "the-holy-spirit": "God Who Lives Close",
++  "the-image-of-god": "Everyone You Meet",
++  "the-incarnation": "God Came Close",
++  "the-lords-supper": "The Meal That Remembers",
++  "the-miracles-of-jesus": "A Glimpse Of The Mender",
++  "the-new-creation": "Everything New Again",
++  "the-prodigal-son": "The Father Who Runs",
++  "the-second-coming": "He Is Coming Back",
++  "the-trinity": "Three And Yet One",
++  "the-words-we-say": "Small But Powerful",
++  "trusting-enough-to-obey": "Trusting Enough To Obey",
++  "waiting-on-god": "Strength In The Waiting",
++  "when-someone-hurts-you": "When Someone Hurts You",
++  "who-is-jesus": "More Than A Good Teacher",
++  "why-we-pray": "Talking To Someone Who Is There",
++  "wisdom": "More Than Being Smart",
++  "work": "Working For The Right Boss",
++  "worship": "What You Are Made Of",
++};
++
++/** The title of each day of each daily set, day 1 first. */
++export const FAMILY_SET_TITLES: Partial<Record<FamilySetKey, string[]>> = {
++  advent: ["The Long Wait Begins","A Family for the World","God Hears in the Dark","A King Who Lasts","Out of Bethlehem","A Child Is Given","A Light in Deep Darkness","A Branch from a Stump","Comfort My People","The Servant Who Carries It","A New Heart","How Long, O Lord","The Messenger Comes First","An Old Man Hears Good News","Let It Be","The Lowly Lifted","Joseph Stays","The Word Was God","The Word Moved In","The Night Before","No Room","Good News for Shepherds","Mary Treasured It","A Light to Everyone","He Is Here"],
++  holyWeek: ["The Wrong Kind of King","Turning Over the Tables","The Greatest Command","A Friend Walks Away","Bread, Cup, and Basin","It Is Finished","The Day of Silence","He Is Not Here"],
++  thanksgiving: ["Where It All Came From","The One Who Came Back","Thanks in the Middle of It","The Year the Fig Tree Did Not Bud","The Guests Who Cannot Pay You Back","The Empty Chair","His Love Lasts Forever"],
++};
+diff --git a/client/src/lib/myProgress.test.ts b/client/src/lib/myProgress.test.ts
+index c2e9c351..6bced44d 100644
+--- a/client/src/lib/myProgress.test.ts
++++ b/client/src/lib/myProgress.test.ts
+@@ -3,7 +3,7 @@
+  * browser, and skips anything it cannot trust.
+  */
+ import { afterEach, describe, expect, it } from "vitest";
+-import { collectProgress, recentEssays, savedSnippetCount } from "./myProgress";
++import { collectProgress, continueHere, recentEssays, savedSnippetCount } from "./myProgress";
+ 
+ afterEach(() => localStorage.clear());
+ 
+@@ -31,6 +31,47 @@ describe("collectProgress", () => {
+   });
+ });
+ 
++describe("continueHere", () => {
++  const draft = (savedAt: string, answers: Record<number, number> = { 0: 3 }) => JSON.stringify({ answers, step: 1, savedAt });
++  const runs = (...dates: string[]) => JSON.stringify(dates.map((date, i) => ({ date, total: 0.5, areas: {}, key: String(i) })));
++
++  it("is null with nothing on this device", () => {
++    expect(continueHere()).toBeNull();
++  });
++
++  it("offers an eight-week plan not yet walked through, and not one finished", () => {
++    localStorage.setItem("lw-plan-anxiety", JSON.stringify({ startedAt: "2026-10-01T12:00:00.000Z", done: { 1: true } }));
++    expect(continueHere()).toEqual({ href: "/plans/anxiety", label: "your eight-week plan", when: "2026-10-01T12:00:00.000Z" });
++    const all = Object.fromEntries([1, 2, 3, 4, 5, 6, 7, 8].map((n) => [n, true]));
++    localStorage.setItem("lw-plan-anxiety", JSON.stringify({ startedAt: "2026-10-01T12:00:00.000Z", done: all }));
++    expect(continueHere()).toBeNull();
++  });
++
++  it("offers a self-check left part-way, and not one whose result came after its last save", () => {
++    localStorage.setItem("livewell-progress-life-audit", draft("2026-10-20T12:00:00.000Z"));
++    expect(continueHere()).toEqual({ href: "/tools/life-audit", label: "the Life Audit", when: "2026-10-20T12:00:00.000Z" });
++    localStorage.setItem("livewell-history-life-audit", runs("2026-10-20T12:00:00.000Z"));
++    expect(continueHere()).toBeNull();
++    // Answers changed after that result: part-way again.
++    localStorage.setItem("livewell-progress-life-audit", draft("2026-10-22T09:00:00.000Z"));
++    expect(continueHere()?.href).toBe("/tools/life-audit");
++  });
++
++  it("ignores a self-check with no answers yet, and values it cannot trust", () => {
++    localStorage.setItem("livewell-progress-marriage-assessment", draft("2026-10-20T12:00:00.000Z", {}));
++    localStorage.setItem("livewell-progress-emotional-health", "{oops");
++    localStorage.setItem("lw-plan-grief", JSON.stringify({ done: {} }));
++    expect(continueHere()).toBeNull();
++  });
++
++  it("takes the most recent of several", () => {
++    localStorage.setItem("lw-plan-anxiety", JSON.stringify({ startedAt: "2026-10-01T12:00:00.000Z", done: {} }));
++    localStorage.setItem("livewell-progress-marriage-assessment", draft("2026-10-05T12:00:00.000Z"));
++    localStorage.setItem("livewell-progress-financial-health", draft("2026-09-05T12:00:00.000Z"));
++    expect(continueHere()).toEqual(expect.objectContaining({ href: "/tools/marriage-assessment", label: "the Marriage Health Self-Check" }));
++  });
++});
++
+ describe("recentEssays and saved snippets", () => {
+   it("shows only essays still on the public shelf, newest first", () => {
+     localStorage.setItem("livewell-read-essays", JSON.stringify(["a-retired-essay-slug", "every-generation-was-sure-it-was"]));
+diff --git a/client/src/lib/myProgress.ts b/client/src/lib/myProgress.ts
+index da98c64f..bee32aea 100644
+--- a/client/src/lib/myProgress.ts
++++ b/client/src/lib/myProgress.ts
+@@ -114,6 +114,59 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
+   return rows.sort((a, b) => b.when.localeCompare(a.when));
+ }
+ 
++/**
++ * The self-checks that keep their answers part-way through, each on its own
++ * page's key, by SELF_CHECKS id. Each saves { answers, savedAt } as the reader
++ * goes and once more on finishing, just before its result is recorded.
++ */
++export const SELF_CHECK_DRAFTS: Record<string, string> = {
++  "life-audit": "livewell-progress-life-audit",
++  "emotional-health": "livewell-progress-emotional-health",
++  "spiritual-gifts": "livewell-progress-spiritual-gifts",
++  marriage: "livewell-progress-marriage-assessment",
++  "financial-health": "livewell-progress-financial-health",
++};
++
++/** One thing to pick up again: where it opens, how to name it after "Continue", and when it was last touched. */
++export interface ContinueItem {
++  href: string;
++  /** "the Life Audit", "your eight-week plan". */
++  label: string;
++  when: string;
++}
++
++const isDraft = (x: unknown): x is { answers: Record<string, unknown>; savedAt: string } =>
++  isObject(x) && typeof x.savedAt === "string" && isObject(x.answers);
++
++/**
++ * The one thing on this device to continue, for Home: an eight-week plan not
++ * yet walked through, or a self-check left part-way (answers saved after its
++ * last finished result, or never finished). The most recent wins; null when
++ * there is nothing. Essays are not offered, because the site remembers only
++ * the essays a reader finished (lib/readProgress), never one begun.
++ */
++export function continueHere(): ContinueItem | null {
++  if (typeof window === "undefined") return null;
++  const items: ContinueItem[] = [];
++
++  for (const key of storageKeys()) {
++    const m = key.match(/^lw-plan-(.+)$/);
++    if (!m) continue;
++    const p = readStoredJSON(key, isPlanProgress, null);
++    if (p && Object.values(p.done).filter(Boolean).length < 8) items.push({ href: `/plans/${m[1]}`, label: "your eight-week plan", when: p.startedAt });
++  }
++
++  for (const [id, key] of Object.entries(SELF_CHECK_DRAFTS)) {
++    const draft = readStoredJSON(key, isDraft, null);
++    if (!draft || Object.keys(draft.answers).length === 0) continue;
++    const runs = readStoredJSON(`livewell-history-${id}`, isRuns, []);
++    const finished = runs.length > 0 && runs[runs.length - 1].date >= draft.savedAt;
++    if (!finished) items.push({ href: SELF_CHECKS[id].href, label: `the ${SELF_CHECKS[id].title}`, when: draft.savedAt });
++  }
++
++  return items.sort((a, b) => b.when.localeCompare(a.when))[0] ?? null;
++}
++
+ /** Saved verses, prayers, quotes, and wisdom entries, shown in full at /tools/saved. */
+ export function savedSnippetCount(): number {
+   const n = (key: string) => readStoredJSON(key, isList, []).length;
+diff --git a/client/src/pages/Home.tsx b/client/src/pages/Home.tsx
+index 7ec14d16..3b490f4f 100644
+--- a/client/src/pages/Home.tsx
++++ b/client/src/pages/Home.tsx
+@@ -2,11 +2,14 @@
+  * Home: one calm page.
+  *
+  * Who James is and why the site exists, in his own words from /about; then
+- * three doors (the Study Bible, the essays, the books); three essays from the
+- * shelf to start with; the books; one newsletter form; and a quiet way to
+- * help for a reader in a hard season. Everything here is committed data
+- * (positioning.ts, shelf.json, bookShelf.ts), so the page paints in full
+- * without waiting on the API, and it imports nothing heavy.
++ * Find (one field: a passage or a question) and tonight's family devotion
++ * with "Continue" beside it (pages/home/, U18); four doors (the Study Bible,
++ * the essays, family devotions, the books); three essays from the shelf to
++ * start with; the books; one newsletter form; and a quiet way to help for a
++ * reader in a hard season. Everything here is committed data (positioning.ts,
++ * shelf.json, bookShelf.ts, the family year map), so the page paints in full
++ * without waiting on the API, and it imports nothing heavy: Find's search and
++ * reference parser load when its field is focused.
+  *
+  * The hero's markup and classes (index.css, .home-hero*) are mirrored by the
+  * static hero scripts/prerender-heads.mjs writes into "/", so the first paint
+@@ -14,7 +17,6 @@
+  */
+ import { Link } from "wouter";
+ 
+-import AdventAtTheTable from "@/components/AdventAtTheTable";
+ import Layout from "@/components/Layout";
+ import { NewsletterSignup } from "@/components/NewsletterSignup";
+ import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
+@@ -27,8 +29,10 @@ import {
+   PORTRAIT_URL,
+ } from "@/lib/positioning";
+ import { START_WITH, cleanExcerpt, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
++import HomeFind from "./home/HomeFind";
++import HomeTonight from "./home/HomeTonight";
+ 
+-/** The three doors, in the order the site is built around. */
++/** The doors, in the order the site is built around. */
+ const DOORS = [
+   {
+     title: "Study the Bible",
+@@ -40,6 +44,11 @@ const DOORS = [
+     href: "/writing",
+     note: "A short shelf on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
+   },
++  {
++    title: "Family devotions",
++    href: "/family",
++    note: "A devotion for tonight's table, about ten minutes long: a passage, one idea to talk about, questions, and a prayer. There is one for every week of the year.",
++  },
+   {
+     title: "The books",
+     href: "/books",
+@@ -122,11 +131,12 @@ export default function Home() {
+         </div>
+       </section>
+ 
+-      {/* THE THREE DOORS: set like a book's contents page. */}
++      {/* FIND AND TONIGHT, then THE DOORS: set like a book's contents page. */}
+       <section style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
+         <div style={wrap}>
+-          {/* From the Sunday before Advent Sunday to Christmas only; empty otherwise. */}
+-          <AdventAtTheTable variant="line" />
++          <HomeFind />
++          {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
++          <HomeTonight />
+           <h2 id="home-doors-title" className="sr-only">
+             Where to begin
+           </h2>
+diff --git a/client/src/pages/advent-ready.test.tsx b/client/src/pages/advent-ready.test.tsx
+index b4507550..69491ec0 100644
+--- a/client/src/pages/advent-ready.test.tsx
++++ b/client/src/pages/advent-ready.test.tsx
+@@ -1,7 +1,8 @@
+ /**
+  * Advent ready (U13), with the clock set: the family Advent calendar appears
+  * on Home and /family from November 22, 2026 (the Sunday a week before Advent
+- * Sunday) through Christmas Day and not outside it; a link from either
++ * Sunday) through Christmas Day and not outside it (on Home, from December 1
++ * it is tonight's line, linking the day's own page, U18); a link from /family
+  * (/family/devotions?tab=advent&day=N) lands on that day's own page, which
+  * The Table's library (U17) opens in place of the list; and the library's
+  * Advent tab marks tonight's day and says when Advent itself begins. Rendered
+@@ -88,8 +89,10 @@ describe("Home and /family before, during, and after the window", () => {
+     setToday(2026, 12, 6);
+     serveFamilyFiles();
+     const home = renderWithProviders(<Home />);
+-    expect(screen.getByRole("link", { name: "December 6 in the family Advent calendar" })).toHaveAttribute("href", "/family/devotions?tab=advent&day=6");
+-    expect(screen.getByTestId("advent-at-the-table")).toHaveTextContent(/^Tonight at the table:/);
++    // Home folds the calendar into tonight's line (U18): the day by name, straight to its page.
++    expect(screen.getByTestId("home-tonight")).toHaveTextContent("Tonight at the table: A Child Is Given, December 6 in the family Advent calendar.");
++    expect(screen.getByRole("link", { name: "A Child Is Given" })).toHaveAttribute("href", "/family/devotions/advent-6");
++    expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
+     home.unmount();
+ 
+     renderWithProviders(<Family />);
+diff --git a/client/src/pages/home/HomeFind.tsx b/client/src/pages/home/HomeFind.tsx
+new file mode 100644
+index 00000000..874fd5db
+--- /dev/null
++++ b/client/src/pages/home/HomeFind.tsx
+@@ -0,0 +1,68 @@
++/**
++ * Find on Home (master plan 3.2, U15 and U18): one field. A reference
++ * ("John 3:16", "jn 3 16", "Romans 8") goes straight to the passage in the
++ * Study Bible; anything else, a bare book name included, goes to /search,
++ * which answers it across the site. The search module and the reference
++ * parser load the first time the field is focused (lib/siteSearch), never
++ * with Home itself, so first paint carries none of it.
++ */
++import { useState, type FormEvent } from "react";
++import { Link, useLocation } from "wouter";
++
++import type { PassageMatch } from "@/lib/siteSearch";
++
++const loadFind = () => import("@/lib/siteSearch");
++
++export default function HomeFind() {
++  const [, navigate] = useLocation();
++  const [query, setQuery] = useState("");
++  // Reads a typed reference once the parser has loaded; null until then.
++  const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
++
++  const prepare = () => {
++    if (readPassage) return;
++    loadFind()
++      .then((find) => find.loadPassageParser().then((parser) => setReadPassage(() => (q: string) => find.passageFor(q, parser))))
++      .catch(() => {});
++  };
++
++  const submit = async (e: FormEvent) => {
++    e.preventDefault();
++    const q = query.trim();
++    if (!q) return;
++    const fallback = `/search?q=${encodeURIComponent(q)}`;
++    navigate(await loadFind().then((find) => find.findHref(q), () => fallback));
++  };
++
++  const typed = readPassage && query.trim() ? readPassage(query) : null;
++
++  return (
++    <form role="search" aria-labelledby="home-find-label" className="home-find" onSubmit={submit}>
++      <label id="home-find-label" htmlFor="home-find-input" className="home-find__label">
++        Look up a passage or ask a question
++      </label>
++      <div className="home-find__row">
++        <input
++          id="home-find-input"
++          className="home-find__input"
++          type="search"
++          enterKeyHint="search"
++          autoComplete="off"
++          spellCheck={false}
++          placeholder="John 3:16, or your question"
++          value={query}
++          onFocus={prepare}
++          onChange={(e) => setQuery(e.target.value)}
++        />
++        <button type="submit" className="pg-action home-find__go">
++          Find
++        </button>
++      </div>
++      {typed && (
++        <Link href={typed.href} className="home-find__passage">
++          Open {typed.label} in the Study Bible
++        </Link>
++      )}
++    </form>
++  );
++}
+diff --git a/client/src/pages/home/HomeTonight.tsx b/client/src/pages/home/HomeTonight.tsx
+new file mode 100644
+index 00000000..1e46e01d
+--- /dev/null
++++ b/client/src/pages/home/HomeTonight.tsx
+@@ -0,0 +1,128 @@
++/**
++ * Home's tonight line (master plan 3.2, U18): tonight's family devotion by
++ * name, "Continue" beside it when this device has something to pick up
++ * again, and from the Sunday a week before Advent Sunday until the calendar
++ * starts, the Advent line (U13). Nothing at all when there is nothing to show.
++ *
++ * Tonight comes from the reader's own clock and the static year map
++ * (lib/familyTable, lib/familyAdvent), titles included, so it never waits on
++ * the network. The app mounts with createRoot and the prerendered HTML never
++ * holds this line, so the clock and this device's storage are read on the
++ * client's first render, after the static hero has painted; reading them
++ * there rather than in an effect keeps the doors below from jumping.
++ */
++import { useState } from "react";
++import { Link } from "wouter";
++
++import { adventCopy } from "@/components/AdventAtTheTable";
++import { adventTonight } from "@/lib/familyAdvent";
++import { devotionHref, seasonalId, tonightOn, tonightTitle, type Tonight } from "@/lib/familyTable";
++import type { FamilySetKey } from "@/lib/familyYear.generated";
++import { localISODate } from "@/lib/familyYear";
++import { continueHere, type ContinueItem } from "@/lib/myProgress";
++
++/** A line that names a devotion: lead text, the title as the link, then the rest. */
++export interface TonightLine {
++  lead: string;
++  title: string;
++  href: string;
++  after: string;
++}
++
++/** A line with a plain link: lead text, then the link. */
++export interface AdventLine {
++  lead: string;
++  link: string;
++  href: string;
++}
++
++export interface HomeTonightCopy {
++  tonight: TonightLine | null;
++  advent: AdventLine | null;
++}
++
++const SET_NAME: Record<FamilySetKey, string> = { advent: "Advent", holyWeek: "Holy Week", thanksgiving: "Thanksgiving week" };
++
++/** The Advent set is the December 1 to 25 calendar (lib/familyAdvent.ts), so its day N is December N. */
++const adventDay = (day: number) => `December ${day} in the family Advent calendar`;
++
++function lineFor(t: Tonight, lead = "Tonight at the table:"): TonightLine | null {
++  const title = tonightTitle(t);
++  if (!title) return null;
++  const after = t.set === "advent" && t.day ? `, ${adventDay(t.day)}` : t.set ? `, a reading for ${SET_NAME[t.set]}` : "";
++  return { lead, title, href: devotionHref(t.id), after };
++}
++
++/**
++ * What Home says on a calendar date (YYYY-MM-DD, the reader's own). Pure, so
++ * every case is tested without rendering:
++ *
++ * - On a day of the Advent calendar, tonight is that day, in U13's words
++ *   ("Tonight at the table:", "Christmas Day at the table:", and "Advent
++ *   begins ..." first in a year when the calendar starts before Advent).
++ * - From the Sunday a week before Advent Sunday until the calendar starts,
++ *   tonight's devotion (Thanksgiving week's, for one) and U13's Advent line
++ *   beneath it. On Advent Sunday and the nights after it before December 1,
++ *   the year map hands tonight December 1's reading early; Home leaves that to
++ *   /family and says only that the calendar starts December 1.
++ * - Any other night on the map, tonight's devotion. Off the map, nothing.
++ */
++export function homeTonight(date: string): HomeTonightCopy {
++  const tonight = tonightOn(date);
++  const advent = adventTonight(date);
++  if (!advent) return { tonight: tonight && lineFor(tonight), advent: null };
++
++  const copy = adventCopy(advent);
++  if (advent.day) {
++    const line = lineFor({ id: seasonalId("advent", advent.day), set: "advent", day: advent.day }, copy.line.lead);
++    if (line) return { tonight: line, advent: null };
++  }
++  return {
++    tonight: tonight && tonight.set !== "advent" ? lineFor(tonight) : null,
++    advent: { lead: copy.line.lead, link: copy.line.link, href: copy.href },
++  };
++}
++
++export default function HomeTonight() {
++  const [{ copy, next }] = useState<{ copy: HomeTonightCopy; next: ContinueItem | null }>(() => ({
++    copy: homeTonight(localISODate()),
++    next: continueHere(),
++  }));
++  const { tonight, advent } = copy;
++  if (!tonight && !advent && !next) return null;
++
++  return (
++    <div className="home-tonight">
++      {(tonight || next) && (
++        <div className="home-tonight__row">
++          {tonight && (
++            <p className="home-tonight__line" data-testid="home-tonight">
++              {tonight.lead}{" "}
++              <Link href={tonight.href} className="home-tonight__link">
++                {tonight.title}
++              </Link>
++              {tonight.after}
++              {/[.?!]$/.test(tonight.after || tonight.title) ? "" : "."}
++            </p>
++          )}
++          {next && (
++            <p className="home-tonight__line" data-testid="home-continue">
++              <Link href={next.href} className="home-tonight__link">
++                Continue {next.label}
++              </Link>
++            </p>
++          )}
++        </div>
++      )}
++      {advent && (
++        <p className="home-tonight__line home-tonight__line--quiet" data-testid="advent-at-the-table">
++          {advent.lead}{" "}
++          <Link href={advent.href} className="home-tonight__link">
++            {advent.link}
++          </Link>
++          .
++        </p>
++      )}
++    </div>
++  );
++}
+diff --git a/client/src/pages/home/home.test.tsx b/client/src/pages/home/home.test.tsx
+new file mode 100644
+index 00000000..1a46aa1f
+--- /dev/null
++++ b/client/src/pages/home/home.test.tsx
+@@ -0,0 +1,171 @@
++/**
++ * Home's Find and tonight (U18), with the clock set and this device's storage
++ * seeded: tonight's devotion by name from the year map alone (no fetch), the
++ * Advent line in its window, Continue only when there is something to pick
++ * up again, nothing at all when there is nothing to show, the Family door,
++ * and one field that sends a reference to the verse and anything else to
++ * /search, its parser loaded on focus.
++ */
++import { describe, it, expect, vi, afterEach } from "vitest";
++import { screen, fireEvent, waitFor, within } from "@testing-library/react";
++
++import { renderWithProviders, offlineFetch } from "@/test/harness";
++import Home from "../Home";
++import { homeTonight } from "./HomeTonight";
++
++/** Noon on a calendar day in the reader's own time zone. */
++function setToday(y: number, m: number, d: number) {
++  vi.useFakeTimers({ toFake: ["Date"] });
++  vi.setSystemTime(new Date(y, m - 1, d, 12));
++}
++
++function renderHome() {
++  const fetch = vi.fn(offlineFetch());
++  vi.stubGlobal("fetch", fetch);
++  renderWithProviders(<Home />);
++  return fetch;
++}
++
++afterEach(() => {
++  vi.useRealTimers();
++  vi.unstubAllGlobals();
++  window.localStorage.clear();
++  window.history.replaceState(null, "", "/");
++});
++
++const said = (date: string) => {
++  const { tonight, advent } = homeTonight(date);
++  return {
++    tonight: tonight && `${tonight.lead} ${tonight.title}${tonight.after}.`,
++    href: tonight?.href,
++    advent: advent && `${advent.lead} ${advent.link}.`,
++  };
++};
++
++describe("homeTonight", () => {
++  it("names the week's devotion on an ordinary night", () => {
++    expect(said("2026-10-27")).toEqual({
++      tonight: "Tonight at the table: Strong Enough To Be Gentle.",
++      href: "/family/devotions/gentleness",
++      advent: null,
++    });
++  });
++
++  it("names a day of a daily set, and says which set", () => {
++    expect(said("2027-03-26")).toMatchObject({ tonight: "Tonight at the table: It Is Finished, a reading for Holy Week.", href: "/family/devotions/holy-week-6" });
++    expect(said("2026-11-26").tonight).toBe("Tonight at the table: His Love Lasts Forever, a reading for Thanksgiving week.");
++  });
++
++  it("puts the Advent line beneath Thanksgiving week's devotion before Advent", () => {
++    expect(said("2026-11-22")).toEqual({
++      tonight: "Tonight at the table: Thanks in the Middle of It, a reading for Thanksgiving week.",
++      href: "/family/devotions/thanksgiving-3",
++      advent: "Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.",
++    });
++  });
++
++  it("says only that the calendar starts December 1 on the nights before it", () => {
++    expect(said("2026-11-29")).toEqual({
++      tonight: null,
++      href: undefined,
++      advent: "Advent has begun. The family Advent calendar starts Tuesday, December 1: see the readings.",
++    });
++  });
++
++  it("names the day of the Advent calendar, in U13's words", () => {
++    expect(said("2026-12-06")).toEqual({
++      tonight: "Tonight at the table: A Child Is Given, December 6 in the family Advent calendar.",
++      href: "/family/devotions/advent-6",
++      advent: null,
++    });
++    expect(said("2026-12-25").tonight).toBe("Christmas Day at the table: He Is Here, December 25 in the family Advent calendar.");
++    // A year whose calendar starts before Advent Sunday says so first.
++    expect(said("2028-12-01").tonight).toBe("Advent begins Sunday, December 3. Tonight at the table: The Long Wait Begins, December 1 in the family Advent calendar.");
++  });
++
++  it("is empty off the map", () => {
++    expect(homeTonight("2040-01-01")).toEqual({ tonight: null, advent: null });
++  });
++
++  it("never carries an em-dash", () => {
++    const day = new Date("2026-10-01T12:00:00Z");
++    const end = new Date("2027-12-31T12:00:00Z");
++    while (day <= end) {
++      const s = said(day.toISOString().slice(0, 10));
++      expect(`${s.tonight ?? ""} ${s.advent ?? ""}`).not.toContain("—");
++      day.setUTCDate(day.getUTCDate() + 1);
++    }
++  });
++});
++
++describe("Home's tonight line", () => {
++  it("names tonight's devotion and links its page, without fetching anything for it", () => {
++    setToday(2026, 10, 27);
++    const fetch = renderHome();
++    expect(screen.getByTestId("home-tonight")).toHaveTextContent("Tonight at the table: Strong Enough To Be Gentle.");
++    expect(screen.getByRole("link", { name: "Strong Enough To Be Gentle" })).toHaveAttribute("href", "/family/devotions/gentleness");
++    expect(fetch.mock.calls.map(([url]) => String(url)).filter((u) => u.includes("family"))).toEqual([]);
++    expect(screen.queryByTestId("home-continue")).toBeNull();
++  });
++
++  it("offers Continue beside it when this device has a self-check left part-way", () => {
++    setToday(2026, 10, 27);
++    window.localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers: { 0: 4 }, step: 2, savedAt: "2026-10-26T20:00:00.000Z" }));
++    renderHome();
++    expect(screen.getByRole("link", { name: "Continue the Life Audit" })).toHaveAttribute("href", "/tools/life-audit");
++  });
++
++  it("shows nothing at all when there is nothing to show", () => {
++    setToday(2040, 1, 1);
++    const { container } = renderWithProviders(<Home />);
++    expect(container.querySelector(".home-tonight")).toBeNull();
++  });
++});
++
++describe("Home's doors", () => {
++  it("include Family", () => {
++    setToday(2026, 10, 27);
++    renderHome();
++    const doors = screen.getByRole("heading", { name: "Where to begin" }).nextElementSibling as HTMLElement;
++    expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/study/bible", "/writing", "/family", "/books"]);
++  });
++});
++
++describe("Find on Home", () => {
++  const field = () => screen.getByRole("searchbox", { name: "Look up a passage or ask a question" });
++
++  it("is one labelled field in a search landmark", () => {
++    renderHome();
++    expect(screen.getByRole("search", { name: "Look up a passage or ask a question" })).toContainElement(field());
++    expect(screen.getByRole("button", { name: "Find" })).toBeTruthy();
++  });
++
++  it("offers the passage as it is typed, once focused", async () => {
++    renderHome();
++    fireEvent.focus(field());
++    fireEvent.change(field(), { target: { value: "jn 3 16" } });
++    expect(await screen.findByRole("link", { name: "Open John 3:16 in the Study Bible" })).toHaveAttribute("href", "/study/bible/john/3#v16");
++  });
++
++  it("sends a reference to the verse", async () => {
++    renderHome();
++    fireEvent.change(field(), { target: { value: "John 3:16" } });
++    fireEvent.submit(field());
++    await waitFor(() => expect(`${window.location.pathname}${window.location.hash}`).toBe("/study/bible/john/3#v16"));
++  });
++
++  it("sends a question to search", async () => {
++    renderHome();
++    fireEvent.change(field(), { target: { value: "is america a christian nation" } });
++    fireEvent.submit(field());
++    await waitFor(() => expect(window.location.pathname).toBe("/search"));
++    expect(new URLSearchParams(window.location.search).get("q")).toBe("is america a christian nation");
++  });
++
++  it("stays put when nothing is typed", async () => {
++    renderHome();
++    fireEvent.submit(field());
++    await new Promise((r) => setTimeout(r, 20));
++    expect(window.location.pathname).toBe("/");
++  });
++});
+diff --git a/scripts/lib/family-year.mjs b/scripts/lib/family-year.mjs
+index 5414d1d2..53926a27 100644
+--- a/scripts/lib/family-year.mjs
++++ b/scripts/lib/family-year.mjs
+@@ -22,6 +22,9 @@
+  *     below hands those weeks to it.
+  *   - The rotation counts from ROTATION_EPOCH, not from the first week the
+  *     map lists, so extending the map never reshuffles it.
++ *   - Each devotion a week names, and each day of each daily set, carries its
++ *     title (FAMILY_TITLES, FAMILY_SET_TITLES), so Home can say tonight's
++ *     devotion by name without fetching the family index.
+  *   - A hand override (client/public/family-year-overrides.json) pins one
+  *     devotion, from any family-devotions*.json file, to one week the rotation
+  *     would serve (never a week a daily set serves). A pinned week does not use
+@@ -108,17 +111,26 @@ export function loadInputs(root = ROOT) {
+     readJSON(root, rel).map((d) => ({ id: d?.id, file: rel })),
+   );
+   const devotionIds = new Set();
++  const titles = {};
+   for (const name of fs.readdirSync(path.join(root, "client/public")).sort()) {
+     if (!DEVOTION_FILE_RE.test(name)) continue;
+     const list = readJSON(root, `client/public/${name}`);
+-    if (Array.isArray(list)) for (const d of list) if (typeof d?.id === "string") devotionIds.add(d.id);
++    if (!Array.isArray(list)) continue;
++    for (const d of list) {
++      if (typeof d?.id !== "string") continue;
++      devotionIds.add(d.id);
++      if (!(d.id in titles)) titles[d.id] = d.title;
++    }
+   }
+   const seasonal = readJSON(root, SEASONAL_FILE);
+   const sets = Object.fromEntries(
+     Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.length : -1]),
+   );
++  const setTitles = Object.fromEntries(
++    Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.map((d) => d?.title) : []]),
++  );
+   const overrides = fs.existsSync(path.join(root, OVERRIDES_FILE)) ? readJSON(root, OVERRIDES_FILE) : { weeks: [] };
+-  return { foundations, devotionIds, sets, overrides };
++  return { foundations, devotionIds, sets, overrides, titles, setTitles };
+ }
+ 
+ /** The ordered rotation: Foundations ids, a repeated id kept at its first place. */
+@@ -230,7 +242,29 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
+     weeks.push(row);
+   });
+ 
+-  return { map: { from, through, seasons, sets, weeks, rotation }, problems, notes: repeated };
++  // Titles, so a page can name tonight's devotion from the map alone. Only
++  // checked when the inputs carry them (tests may build from ids alone).
++  const titles = {};
++  const setTitles = {};
++  const hasTitle = (t) => typeof t === "string" && t.trim() !== "";
++  if (inputs.titles) {
++    for (const id of [...new Set(weeks.map((w) => w.devotion).filter(Boolean))].sort()) {
++      if (hasTitle(inputs.titles[id])) titles[id] = inputs.titles[id];
++      else problems.push(`devotion "${id}" is on the year map but has no title in any client/public/family-devotions*.json file`);
++    }
++  }
++  if (inputs.setTitles) {
++    for (const key of Object.keys(SETS)) {
++      if (served.get(SETS[key].season) !== key) continue;
++      const list = inputs.setTitles[key] ?? [];
++      list.forEach((t, i) => {
++        if (!hasTitle(t)) problems.push(`${SEASONAL_FILE}: set "${key}" day ${i + 1} has no title`);
++      });
++      setTitles[key] = list;
++    }
++  }
++
++  return { map: { from, through, seasons, sets, weeks, rotation, titles, setTitles }, problems, notes: repeated };
+ }
+ 
+ /** A reason the map is too short, or null: it must reach at least a year past today. */
+@@ -307,5 +341,11 @@ export function renderYearModule(map) {
+     "/** Every week on the map, consecutive, in order. */",
+     `export const FAMILY_WEEKS: FamilyWeek[] = [\n${map.weeks.map(row).join("\n")}\n];`,
+     "",
++    "/** The title of every devotion a week above names, by id. */",
++    `export const FAMILY_TITLES: Record<string, string> = {\n${Object.entries(map.titles ?? {}).map(([id, t]) => `  ${JSON.stringify(id)}: ${JSON.stringify(t)},`).join("\n")}\n};`,
++    "",
++    "/** The title of each day of each daily set, day 1 first. */",
++    `export const FAMILY_SET_TITLES: Partial<Record<FamilySetKey, string[]>> = {\n${Object.entries(map.setTitles ?? {}).map(([key, list]) => `  ${key}: ${JSON.stringify(list)},`).join("\n")}\n};`,
++    "",
+   ].join("\n");
+ }
+diff --git a/server/church-year.test.ts b/server/church-year.test.ts
+index ad6da80e..349f4787 100644
+--- a/server/church-year.test.ts
++++ b/server/church-year.test.ts
+@@ -49,6 +49,8 @@ type Built = {
+     sets: { set: string; start: string; end: string }[];
+     weeks: Week[];
+     rotation: string[];
++    titles: Record<string, string>;
++    setTitles: Record<string, string[]>;
+   };
+   problems: string[];
+   notes: string[];
+@@ -328,6 +330,27 @@ describe("the year map's hand overrides and sets", () => {
+     expect(noThanks.map.sets.some((s) => s.set === "thanksgiving")).toBe(false);
+   });
+ 
++  it("carry a title for every devotion a week names and every day of every set", () => {
++    const named = new Set(built.map.weeks.map((w) => w.devotion).filter((id): id is string => !!id));
++    expect(Object.keys(built.map.titles).sort()).toEqual([...named].sort());
++    for (const id of named) expect(built.map.titles[id]).toBe(inputs.titles[id]);
++    for (const [key, days] of Object.entries(inputs.sets as Record<string, number>)) {
++      expect(built.map.setTitles[key]).toHaveLength(days);
++      expect(built.map.setTitles[key].every((t) => typeof t === "string" && t.length > 0)).toBe(true);
++    }
++    expect(built.map.setTitles.advent[5]).toBe("A Child Is Given");
++  });
++
++  it("refuse a devotion or a set day with no title", () => {
++    const id = built.map.weeks.find((w) => w.devotion)!.devotion!;
++    const noTitle: Built = buildYearMap({ ...inputs, titles: { ...inputs.titles, [id]: "" } });
++    expect(noTitle.problems.join("\n")).toMatch(new RegExp(`devotion "${id}" is on the year map but has no title`));
++    const advent = [...inputs.setTitles.advent];
++    advent[2] = undefined;
++    const noDay: Built = buildYearMap({ ...inputs, setTitles: { ...inputs.setTitles, advent } });
++    expect(noDay.problems.join("\n")).toMatch(/set "advent" day 3 has no title/);
++  });
++
+   it("note a devotion id used twice and keep it once", () => {
+     const twice: Built = buildYearMap({ ...inputs, foundations: [...inputs.foundations, { id: "hope", file: "x.json" }] });
+     expect(twice.notes.join("\n")).toMatch(/"hope" is used twice/);
+-- 
+2.43.0
+

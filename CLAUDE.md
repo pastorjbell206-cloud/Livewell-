@@ -488,11 +488,14 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (24
-validators: scripture, design, life, studyguides, pathways, theology,
-politics, no-emdash, essays, content-integrity, skeptic-track, answers,
-argument-cases, links, needs (pages and drafts), grow-links, plans, workbooks,
-family, grow-voice, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+On every PR, five blocking steps: `pnpm check` → the content-gates step (33
+commands: 25 validators: scripture, design, life, studyguides, pathways,
+theology, politics, no-emdash, essays, content-integrity, skeptic-track,
+answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
+workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
+bible-notes; the history-source verifier `verify-sources`; and the `--check`
+drift checks for the family year map, family index, topics index, search
+index, Bible text and the 2027 story plan) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.
@@ -679,17 +682,26 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
   static routes, the JSON-library manifests, and database content. `llms.txt`
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
-- **IA (simplified site, approved by James on 2026-10-12, implemented)**: a
+- **IA (simplified site, approved by James on 2026-10-12; doors chosen by
+  James on 2026-10-26; implemented)**: a
   simple site he keeps adding to, for living well in post-Christian America
   and understanding the church's long history. The header has five doors from
-  the committed map in `client/src/lib/siteNav.ts` (Study, Essays, Books,
-  Resources, About) beside Find Help, search, and Subscribe; the footer
-  mirrors every group. Study (/study) leads with the Study Bible, then church
-  history (/theology/history), the creeds, the context guides, and group study
-  guides. Essays (/writing) is the curated shelf in `client/src/lib/shelf.json`
-  (see Strategic Reminders). Books shows the three titles in `bookShelf.ts`.
-  Resources (/resources) holds downloads, tools, Find Help, and families.
-  About is the person: /about, /speaking, /contact, /subscribe. Folded hubs
+  the committed map in `client/src/lib/siteNav.ts`: Study, Topics, Family,
+  Essays, About. James chose these on 2026-10-26 in place of the 2026-10-12
+  doors (Study, Essays, Books, Resources, About). They sit beside Find Help,
+  search, and Subscribe; the footer mirrors every group, with Find Help and
+  My Library in its bottom bar. Study (/study) leads with the Study Bible,
+  then church history (/theology/history), the creeds, the context guides,
+  and group study guides. Topics (/topics) is the index of hard questions,
+  with the Honest Answers, the eight-week plans, the self-checks, and the
+  tools. Family (/family) holds tonight's devotion, the year of devotions,
+  the catechism, and the reading plans. Essays (/writing) is the curated shelf
+  in `client/src/lib/shelf.json` (see Strategic Reminders). About is the
+  person: /about, Books (the three titles in `bookShelf.ts`), /speaking,
+  /contact, /subscribe. Resources folded into the Topics and Family menus;
+  /resources stays live as the one page of everything to use (downloads,
+  tools, Find Help, families), at the foot of the Topics menu and in the
+  footer. Folded hubs
   (the reading hubs, the subject hubs, the /theology pages the Study Bible
   replaces, /faq, /doubt, /substack, /work-with-james, /connect) are one-hop
   permanent redirects in vercel.json mirrored by `redirectTo` stubs in App.tsx;

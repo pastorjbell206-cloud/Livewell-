@@ -15,7 +15,7 @@ lived experience.
 
 The site exists to help people live well in post-Christian America and to
 understand the long history of the Christian faith. It is organized as five
-doors: Study, Essays, Books, Resources, and About.
+doors: Study, Topics, Family, Essays, and About (with the books).
 
 ## Study
 
@@ -26,6 +26,10 @@ doors: Study, Essays, Books, Resources, and About.
   guides to reading each kind of writing; verse-by-verse notes are written for
   Genesis and the four Gospels so far):
   https://www.livewellbyjamesbell.co/study/bible
+- Read the whole story in 2027 (a daily reading plan: all 1,189 chapters in
+  365 days, in the order the story happened, each day linked to its chapters
+  and, where one belongs, to a context guide):
+  https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027
 - Church history (the councils, the figures, the heresies, and the arc from
   Pentecost to today): https://www.livewellbyjamesbell.co/theology/history
 - Creeds and confessions (full texts with plain-language notes):
@@ -48,25 +52,19 @@ doors: Study, Essays, Books, Resources, and About.
   divorce and blended families, addiction and recovery, and a guide for
   teenagers): https://www.livewellbyjamesbell.co/studyguides
 
-## Essays
+## Topics
 
-- The essay shelf (a short, curated shelf of essays, in sections from the church after Christendom to the ancient church and
-  reading the Bible in its world): https://www.livewellbyjamesbell.co/writing
+- Topics (the hard questions of faith in post-Christian America, in the words
+  people ask them; each question opens the one page on the site that answers
+  it best): https://www.livewellbyjamesbell.co/topics
+- What does it mean that America is post-Christian, and how do we live in it?
+  https://www.livewellbyjamesbell.co/topics/living-after-christendom
+- What is Christian nationalism, and how should a Christian think about
+  politics? https://www.livewellbyjamesbell.co/topics/faith-politics-and-the-flag
+- How do we hand the faith to our kids in a secular age?
+  https://www.livewellbyjamesbell.co/topics/raising-children-in-a-secular-age
 - Honest answers to hard questions (short answers, with the essay or book that
   goes further where one is on the site): https://www.livewellbyjamesbell.co/answers
-
-## Books
-
-- Books (the titles on the shelf now, listed below): https://www.livewellbyjamesbell.co/books
-- When God Bless America Replaces Thy Kingdom Come (civil religion and the
-  kingdom): https://www.livewellbyjamesbell.co/books/when-god-bless-america
-- The Monster in the Mirror (why every generation gets the Bible wrong):
-  https://www.livewellbyjamesbell.co/books/the-monster-in-the-mirror
-- Believe (answers to the hardest questions skeptics ask):
-  https://www.livewellbyjamesbell.co/books/believe
-
-## Resources
-
 - Resources (the hub): https://www.livewellbyjamesbell.co/resources
 - Downloads and PDFs (every printable, free: study-guide leader guides and
   participant handouts, Find Help guides and worksheets, eight-week plan
@@ -84,6 +82,9 @@ doors: Study, Essays, Books, Resources, and About.
   https://www.livewellbyjamesbell.co/help
 - Integrated Life (one undivided life: the inner life, the body and rhythms,
   home, work and money, the world): https://www.livewellbyjamesbell.co/life
+
+## Family
+
 - For families (devotions, the catechism, reading plans):
   https://www.livewellbyjamesbell.co/family
 - Tonight's family devotion (always the one for tonight's date, by the church
@@ -92,6 +93,11 @@ doors: Study, Essays, Books, Resources, and About.
   about, questions, something to do, and a prayer), for example
   https://www.livewellbyjamesbell.co/family/devotions/identity; the full list:
   https://www.livewellbyjamesbell.co/family/devotions
+
+## Essays
+
+- The essay shelf (a short, curated shelf of essays, in sections from the church after Christendom to the ancient church and
+  reading the Bible in its world): https://www.livewellbyjamesbell.co/writing
 
 ## Reference tools
 
@@ -106,6 +112,13 @@ doors: Study, Essays, Books, Resources, and About.
 ## About James Bell
 
 - About: https://www.livewellbyjamesbell.co/about
+- Books (the titles on the shelf now, listed below): https://www.livewellbyjamesbell.co/books
+- When God Bless America Replaces Thy Kingdom Come (civil religion and the
+  kingdom): https://www.livewellbyjamesbell.co/books/when-god-bless-america
+- The Monster in the Mirror (why every generation gets the Bible wrong):
+  https://www.livewellbyjamesbell.co/books/the-monster-in-the-mirror
+- Believe (answers to the hardest questions skeptics ask):
+  https://www.livewellbyjamesbell.co/books/believe
 - Speaking (preaching, conferences, retreats, and pulpit supply; coaching and
   consulting): https://www.livewellbyjamesbell.co/speaking
 - Contact: https://www.livewellbyjamesbell.co/contact

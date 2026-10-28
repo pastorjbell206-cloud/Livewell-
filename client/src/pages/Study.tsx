@@ -32,6 +32,11 @@ const STUDY_BIBLE: HubLink[] = [
     note: "The whole Bible as one story, from creation to new creation, with the history behind each act and every chapter placed where it happened.",
   },
   {
+    label: "Read the whole story in 2027",
+    href: "/study/bible/guides/whole-story-2027",
+    note: "The same story a day at a time: every chapter of the Bible in a year, with your place kept on this device and a reminder in your calendar.",
+  },
+  {
     label: "An introduction to every book",
     href: "/study/bible",
     note: "All sixty-six: who wrote it, when, why, and how it is built.",

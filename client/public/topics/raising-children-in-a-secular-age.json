@@ -1,0 +1,116 @@
+{
+  "slug": "raising-children-in-a-secular-age",
+  "title": "How do we hand the faith to our kids in a secular age?",
+  "description": "Faith at home when the culture no longer hands it on: start smaller than you think, welcome the questions, and start again when a night falls apart.",
+  "askedAs": [
+    "raising children in the faith",
+    "how to raise christian kids",
+    "passing on the faith to children",
+    "raising kids in a secular culture",
+    "kids leaving the church",
+    "teaching kids about god",
+    "christian parenting",
+    "family worship",
+    "family devotions"
+  ],
+  "short": [
+    "Whatever faith our children keep as adults, they will hold it as a choice made among other live options, beside friends who chose otherwise. The culture around them isn't handing them the faith. It is forming them into something else, so formation can't be left to it, and it can't simply be left to the church down the hall either. Sunday school was a real gift, but a gift can become a substitute, and then faith at home starts to look like a small church service in the living room, forced because it's borrowed.",
+    "Scripture's picture is plainer: God's words spoken in the ordinary hours a family already has, at home and on the road, at bedtime and first thing in the morning (Deuteronomy 6:7). Start smaller than you think. Pick one meal or one bedtime, read a few verses aloud, ask one question you don't know the answer to, and pray, even one sentence. Little ones need a story and a song. Teenagers need you to hear their questions first and talk less. Scripture keeps picturing a child who asks (Exodus 12:26), so welcome the questions.",
+    "Being born of the Spirit, Jesus told Nicodemus, is like the wind, which blows where it wishes (John 3:8). We can't give our children faith. We can make sure they never have to guess what we loved, and when a night falls apart, we can start again at the next meal."
+  ],
+  "essay": null,
+  "essayStandIn": {
+    "href": "/help/family-devotions",
+    "label": "How do we do family devotions?",
+    "line": "Five minutes at the table or bedtime: a few verses, a question, a prayer. Faith at home, by age, without the guilt."
+  },
+  "alsoEssays": [],
+  "scripture": [
+    {
+      "ref": "Deuteronomy 6:5-7",
+      "line": "The teaching starts with the parent's own love for God, then reaches the children in the ordinary hours of a day."
+    },
+    {
+      "ref": "Exodus 12:26-27",
+      "line": "Scripture expects children to ask what the family's worship means, and it gives the parent a story to tell."
+    },
+    {
+      "ref": "Mark 10:13-16",
+      "line": "Jesus was indignant when His disciples rebuked the people bringing children to Him, and He made a child the picture of receiving the kingdom."
+    },
+    {
+      "ref": "Joshua 24:15",
+      "line": "Joshua told the story of what God had done before he set the choice before Israel. After his generation died, another rose up that did not know the Lord (Judges 2:10)."
+    },
+    {
+      "ref": "2 Timothy 1:5",
+      "line": "Timothy's faith lived first in his grandmother Lois and his mother Eunice."
+    }
+  ],
+  "witness": {
+    "name": "The catechumenate",
+    "line": "The early church grew in a culture that gave it nothing, and it made joining slow. A newcomer was taught for a season that commonly ran for years, learning the Scriptures and the way of life before baptism. Formation came before belonging.",
+    "href": "/theology/history/apostolic-and-persecuted",
+    "label": "The Apostolic and Persecuted Church"
+  },
+  "table": {
+    "devotion": "tonight",
+    "label": "Tonight at the table",
+    "line": "A passage, one idea to talk about, questions for the table, and a prayer, in about ten minutes. It follows the church year.",
+    "also": [
+      {
+        "href": "/family/catechism",
+        "label": "The family catechism",
+        "line": "Seventy-six questions and answers to learn together, with one for this week."
+      }
+    ]
+  },
+  "use": {
+    "plan": {
+      "href": "/plans/parenting",
+      "label": "Eight Weeks for the Worn-Out Parent",
+      "line": "Rest and help, the temper and the apology, the table and the bedside, the screens, and children you cannot control."
+    },
+    "study": {
+      "href": "/studyguides/raising-believers",
+      "label": "Raising Believers: A Bible Study for Christian Parents",
+      "line": "For parents, grandparents, and small groups of families who want their children to know God."
+    },
+    "tools": [
+      {
+        "href": "/tools/parent-teen-conversation",
+        "label": "The Parent and Teen Conversation",
+        "line": "A parent and a teenager each answer twelve short statements about home, then see where they see things differently."
+      },
+      {
+        "href": "/tools/parenting-guide",
+        "label": "Parenting Stage Guide",
+        "line": "What a child needs at each age, from toddlers to young adults, and how to talk about God."
+      }
+    ],
+    "paths": [
+      {
+        "href": "/pathways/parenting",
+        "label": "Raising Kids Who Keep the Faith",
+        "line": "Forming a child's heart, not just their behavior: two studies for parents."
+      }
+    ]
+  },
+  "care": [
+    {
+      "href": "/help/parenting",
+      "label": "Parenting is harder than anyone said",
+      "line": "For worn-out parents of little ones, of a teen who's gone quiet, or of a grown child who has left the faith."
+    },
+    {
+      "href": "/help/fatherless",
+      "label": "How do I be a dad when I never had one?",
+      "line": "For anyone raised without a father, or by one who hurt them, who is raising children now or is afraid to."
+    }
+  ],
+  "politics": false,
+  "sensitive": false,
+  "folds": [],
+  "updated": "2026-10-27",
+  "reviewed": null
+}

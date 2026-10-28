@@ -3,6 +3,11 @@
   "outputDirectory": "dist/public",
   "trailingSlash": false,
   "installCommand": "pnpm install --frozen-lockfile",
+  "git": {
+    "deploymentEnabled": {
+      "claude/todo-implementation-hhp4bm": false
+    }
+  },
   "functions": {
     "api/index.ts": {
       "maxDuration": 60,

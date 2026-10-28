@@ -1,0 +1,510 @@
+From cbae07ee57a0bc452af0a28095b08135bdf9b2b4 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 17:07:31 +0000
+Subject: [PATCH 1/2] U29: /writing asks for the shelf only (both API runtimes)
+
+posts.listPublished takes an optional { slugs, since }. With either field
+it returns only the rows named by slug, or whose essay date (publishedAt,
+else createdAt: the shelf's Latest rule) is at or after `since`, in the
+listing's order; with neither, the full listing as before.
+
+- server/posts-listing.ts: the zod input and pickListing for the dev router.
+- server/routers.ts: listPublished takes the input and applies it.
+- api/index.ts: pickListing, applied in both handlers (trpcHandler and the
+  batch processProc). Malformed fields are ignored there.
+- client/src/lib/shelf.ts: shelfListingInput(), the live shelf slugs and
+  the Latest cutoff.
+- client/src/pages/Writing.tsx: asks with shelfListingInput() instead of
+  for every published row; the page still applies the shelf rule itself.
+- Tests: server/posts-listing.test.ts runs the real production handler
+  (no database, static library) and the dev router on the same listing and
+  checks they agree; essay-shelf.test.tsx checks what /writing sends.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ api/index.ts                          |  32 +++-
+ client/src/lib/shelf.ts               |  14 ++
+ client/src/pages/Writing.tsx          |  10 +-
+ client/src/pages/essay-shelf.test.tsx |  25 +++
+ server/posts-listing.test.ts          | 209 ++++++++++++++++++++++++++
+ server/posts-listing.ts               |  58 +++++++
+ server/routers.ts                     |  12 +-
+ 7 files changed, 354 insertions(+), 6 deletions(-)
+ create mode 100644 server/posts-listing.test.ts
+ create mode 100644 server/posts-listing.ts
+
+diff --git a/api/index.ts b/api/index.ts
+index e2b3fc61..19bdcedb 100644
+--- a/api/index.ts
++++ b/api/index.ts
+@@ -1321,6 +1321,34 @@ async function trpcListPosts(): Promise<any[]> {
+   return listSlimPosts();
+ }
+ 
++// posts.listPublished's optional input: { slugs?: string[], since?: ISO date }.
++// With either field, only the rows named by slug, or whose essay date
++// (publishedAt, else createdAt: the shelf's Latest rule) is at or after
++// `since`, come back, in the listing's order; /writing asks for its shelf this
++// way instead of every published row. With neither, the full listing, as
++// before. The dev router applies the same rule (server/posts-listing.ts), and
++// server/posts-listing.test.ts holds the two runtimes to it. Malformed fields
++// are ignored, as this file treats loose input elsewhere. Exported for that
++// test only; the handler is still the default export.
++export function pickListing<T extends { slug?: unknown; publishedAt?: unknown; createdAt?: unknown }>(
++  rows: T[],
++  input: unknown
++): T[] {
++  const ask = (input && typeof input === "object" ? input : {}) as { slugs?: unknown; since?: unknown };
++  const slugs = Array.isArray(ask.slugs) ? (ask.slugs as unknown[]) : null;
++  const since = typeof ask.since === "string" ? Date.parse(ask.since) : NaN;
++  if (!slugs && !Number.isFinite(since)) return rows;
++  const wanted = new Set((slugs ?? []).filter((x): x is string => typeof x === "string"));
++  const time = (d: unknown): number =>
++    d instanceof Date ? d.getTime() : typeof d === "number" ? d : typeof d === "string" && d ? Date.parse(d) : NaN;
++  return rows.filter((r) => {
++    if (typeof r?.slug === "string" && wanted.has(r.slug)) return true;
++    if (!Number.isFinite(since)) return false;
++    const published = time(r?.publishedAt);
++    return (Number.isFinite(published) ? published : time(r?.createdAt)) >= since;
++  });
++}
++
+ // Slim list for index/listing pages — identical shape to trpcListPosts.
+ async function trpcListPostsForIndex(): Promise<any[]> {
+   return listSlimPosts();
+@@ -1655,7 +1683,7 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
+         return trpcOk(res, { ok: true });
+       }
+       case "posts.listPublished": {
+-        const data = await trpcListPosts();
++        const data = pickListing(await trpcListPosts(), input);
+         return trpcOk(res, data);
+       }
+       case "posts.listAll": {
+@@ -2560,7 +2588,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
+       return { result: { data: superjson.serialize({ ok: true }) } };
+     }
+     case "posts.listPublished":
+-      return { result: { data: superjson.serialize(await trpcListPosts()) } };
++      return { result: { data: superjson.serialize(pickListing(await trpcListPosts(), input)) } };
+     case "posts.listAll": {
+       if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
+       return { result: { data: superjson.serialize(await trpcListPosts()) } };
+diff --git a/client/src/lib/shelf.ts b/client/src/lib/shelf.ts
+index d34122f8..ece6cdde 100644
+--- a/client/src/lib/shelf.ts
++++ b/client/src/lib/shelf.ts
+@@ -153,6 +153,20 @@ export function liveShelfEssays(): ShelfEssay[] {
+     .map(({ e }) => e);
+ }
+ 
++/**
++ * What /writing asks posts.listPublished for: the public shelf essays by slug,
++ * and anything that went out at or after the cutoff (the Latest group), so the
++ * API sends the shelf rather than every published row. Both runtimes answer it
++ * (server/posts-listing.ts, api/index.ts); the page still applies the shelf
++ * rule to whatever comes back.
++ */
++export function shelfListingInput(): { slugs: string[]; since: string } {
++  return {
++    slugs: liveShelfEssays().map((e) => e.slug),
++    since: new Date(LATEST_CUTOFF).toISOString(),
++  };
++}
++
+ /** Sections that have at least one public essay, in display order. */
+ export function liveSections(): ShelfSection[] {
+   const withEssays = new Set(liveShelfEssays().map((e) => e.section));
+diff --git a/client/src/pages/Writing.tsx b/client/src/pages/Writing.tsx
+index 39acbf46..95f43246 100644
+--- a/client/src/pages/Writing.tsx
++++ b/client/src/pages/Writing.tsx
+@@ -8,7 +8,9 @@
+  * appear here (see lib/shelf.ts).
+  *
+  * The shelf itself comes from the committed list, so the sections paint before
+- * the API answers; the listing only adds reading times and the Latest group.
++ * the API answers; the listing only adds reading times and the Latest group,
++ * and the page asks it for just those rows (shelfListingInput), not every
++ * published post.
+  *
+  * URL parameters: ?section=<slug> shows one section, ?track=<slug> shows the
+  * sections that answer for a taxonomy track (old hub links land here), and
+@@ -43,6 +45,7 @@ import {
+   sectionBySlug,
+   sectionHref,
+   sectionsForTrack,
++  shelfListingInput,
+   type ShelfSection,
+ } from "@/lib/shelf";
+ 
+@@ -86,9 +89,12 @@ function parseSearchParams(): URLSearchParams {
+ 
+ const SITE = "https://www.livewellbyjamesbell.co";
+ 
++/** The listing rows this page can use: the public shelf by slug, and Latest. */
++const SHELF_LISTING = shelfListingInput();
++
+ export default function Writing() {
+   const [location] = useLocation();
+-  const postsQuery = trpc.posts.listPublished.useQuery();
++  const postsQuery = trpc.posts.listPublished.useQuery(SHELF_LISTING);
+ 
+   // URL-driven filters, re-read on route change during render (the "state
+   // from previous renders" pattern) so a link between views updates at once.
+diff --git a/client/src/pages/essay-shelf.test.tsx b/client/src/pages/essay-shelf.test.tsx
+index bb099339..6eb1cd68 100644
+--- a/client/src/pages/essay-shelf.test.tsx
++++ b/client/src/pages/essay-shelf.test.tsx
+@@ -9,6 +9,7 @@ import { Route, Switch } from "wouter";
+ import superjson from "superjson";
+ 
+ import { renderWithProviders, offlineFetch } from "@/test/harness";
++import { shelfListingInput } from "@/lib/shelf";
+ import Writing from "./Writing";
+ import ArticleDetail from "./ArticleDetail";
+ import Search from "./Search";
+@@ -122,6 +123,30 @@ describe("/writing", () => {
+     expect(screen.getByText("A Draft Finished Later")).toBeInTheDocument();
+   });
+ 
++  it("asks the API for the shelf only, not every published row", async () => {
++    const fetchSpy = vi.fn(trpcFetch({ "posts.listPublished": [] }));
++    vi.stubGlobal("fetch", fetchSpy);
++    at("/writing");
++    renderWithProviders(<Writing />);
++
++    await waitFor(() =>
++      expect(fetchSpy.mock.calls.some(([u]) => String(u).includes("posts.listPublished"))).toBe(true)
++    );
++    const url = new URL(
++      String(fetchSpy.mock.calls.find(([u]) => String(u).includes("posts.listPublished"))![0]),
++      "http://localhost"
++    );
++    const procs = decodeURIComponent(url.pathname.slice("/api/trpc/".length)).split(",");
++    const sent = JSON.parse(url.searchParams.get("input") ?? "{}")[String(procs.indexOf("posts.listPublished"))];
++    const asked = superjson.deserialize(sent) as { slugs: string[]; since: string };
++    expect(asked).toEqual(shelfListingInput());
++    // The public shelf by slug, nothing pending or retired, and the Latest cutoff.
++    expect(asked.slugs).toContain("when-the-church-married-empire");
++    expect(asked.slugs).not.toContain("what-christian-nationalism-is-and-is-not");
++    expect(asked.slugs).not.toContain("the-atheist-in-the-pulpit");
++    expect(asked.since).toBe("2026-10-13T00:00:00.000Z");
++  });
++
+   it("narrows to one section with ?section=", () => {
+     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
+     at("/writing?section=ancient-church");
+diff --git a/server/posts-listing.test.ts b/server/posts-listing.test.ts
+new file mode 100644
+index 00000000..3c193e7e
+--- /dev/null
++++ b/server/posts-listing.test.ts
+@@ -0,0 +1,209 @@
++/**
++ * posts.listPublished's optional input (U29), in both runtimes.
++ *
++ * /writing asks for its shelf only ({ slugs, since }) instead of every
++ * published row. The dev router (server/routers.ts with ./posts-listing) and
++ * the production function (api/index.ts, both of its handlers) must answer the
++ * same question with the same rows. These tests run the real production
++ * handler with no database, so it serves the static essay library, and feed
++ * the dev router that same listing, then compare.
++ */
++import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
++import superjson from "superjson";
++
++import { appRouter } from "./routers";
++import type { TrpcContext } from "./_core/context";
++import { listPosts } from "./db";
++import { pickListing } from "./posts-listing";
++import { LATEST_CUTOFF, essayVisibility, essayDate, liveShelfEssays, shelfListingInput } from "@/lib/shelf";
++
++vi.mock("./db", async (importOriginal) => ({
++  ...(await importOriginal<typeof import("./db")>()),
++  listPosts: vi.fn(),
++}));
++
++type Row = { slug: string; publishedAt?: unknown; createdAt?: unknown };
++type Handler = (req: unknown, res: unknown) => Promise<unknown>;
++
++let prodHandler: Handler;
++let prodPick: (rows: Row[], input: unknown) => Row[];
++let listing: Row[] = [];
++
++/** Calls the production function as the browser does: a GET with ?batch=1&input=. */
++type TrpcAnswer = { result: { data: Parameters<typeof superjson.deserialize>[0] } };
++
++async function callProd(procs: string[], inputs: unknown[]): Promise<{ status: number; body: TrpcAnswer[] }> {
++  const encoded: Record<string, unknown> = {};
++  inputs.forEach((input, i) => {
++    encoded[String(i)] = superjson.serialize(input);
++  });
++  const input = JSON.stringify(encoded);
++  const req = {
++    method: "GET",
++    url: `/api/trpc/${procs.join(",")}?batch=1&input=${encodeURIComponent(input)}`,
++    query: { batch: "1", input },
++    headers: {},
++  };
++  let status = 0;
++  let sent = "";
++  const res = {
++    setHeader: () => res,
++    status(s: number) {
++      status = s;
++      return res;
++    },
++    send(b: string) {
++      sent = b;
++      return res;
++    },
++    json(o: unknown) {
++      sent = JSON.stringify(o);
++      return res;
++    },
++    end: () => res,
++  };
++  await prodHandler(req, res);
++  return { status, body: JSON.parse(sent) };
++}
++
++/** Production, the single-procedure handler (trpcHandler). */
++async function prodSingle(input: unknown): Promise<Row[]> {
++  const { status, body } = await callProd(["posts.listPublished"], [input]);
++  expect(status).toBe(200);
++  return superjson.deserialize(body[0].result.data) as Row[];
++}
++
++/** Production, the batch handler (processProc): the same question asked twice in one request. */
++async function prodBatch(input: unknown): Promise<Row[]> {
++  const { status, body } = await callProd(["posts.listPublished", "posts.listPublished"], [undefined, input]);
++  expect(status).toBe(200);
++  return superjson.deserialize(body[1].result.data) as Row[];
++}
++
++function devCaller() {
++  const ctx = {
++    user: null,
++    req: { protocol: "https", headers: {} } as TrpcContext["req"],
++    res: { clearCookie: () => {} } as TrpcContext["res"],
++  } as TrpcContext;
++  return appRouter.createCaller(ctx);
++}
++
++async function dev(input?: Parameters<ReturnType<typeof devCaller>["posts"]["listPublished"]>[0]): Promise<Row[]> {
++  return (await devCaller().posts.listPublished(input)) as unknown as Row[];
++}
++
++const slugs = (rows: Row[]) => rows.map((r) => r.slug);
++
++beforeAll(async () => {
++  // No database: production serves the static essay library behind it.
++  vi.stubEnv("DATABASE_URL", "");
++  const mod = (await import("../api/index")) as unknown as { default: Handler; pickListing: typeof prodPick };
++  prodHandler = mod.default;
++  prodPick = mod.pickListing;
++  listing = await prodSingle(undefined);
++  // The dev router reads the same listing, so any difference is the rule's.
++  vi.mocked(listPosts).mockResolvedValue(listing as never);
++}, 60_000);
++
++afterAll(() => {
++  vi.unstubAllEnvs();
++});
++
++describe("posts.listPublished without input", () => {
++  it("is the full listing in both runtimes, as before", async () => {
++    expect(listing.length).toBeGreaterThan(100);
++    expect(slugs(await prodBatch(undefined))).toEqual(slugs(listing));
++    expect(slugs(await dev())).toEqual(slugs(listing));
++    expect(slugs(await dev({}))).toEqual(slugs(listing));
++  });
++});
++
++describe("posts.listPublished with { slugs, since }", () => {
++  it("returns only the named rows, in the listing's order, in all three handlers", async () => {
++    const named = [listing[7].slug, listing[2].slug, "no-such-essay"];
++    const expected = [listing[2].slug, listing[7].slug];
++    expect(slugs(await prodSingle({ slugs: named }))).toEqual(expected);
++    expect(slugs(await prodBatch({ slugs: named }))).toEqual(expected);
++    expect(slugs(await dev({ slugs: named }))).toEqual(expected);
++  });
++
++  it("returns rows dated at or after `since` by publishedAt, else createdAt", async () => {
++    const dates = listing.map((r) => Date.parse(String(essayDate(r)))).filter(Number.isFinite).sort((a, b) => b - a);
++    const since = new Date(dates[10]).toISOString();
++    const expected = slugs(listing.filter((r) => Date.parse(String(essayDate(r))) >= dates[10]));
++    expect(expected.length).toBeGreaterThan(0);
++    expect(expected.length).toBeLessThan(listing.length);
++    expect(slugs(await prodSingle({ since }))).toEqual(expected);
++    expect(slugs(await prodBatch({ since }))).toEqual(expected);
++    expect(slugs(await dev({ since }))).toEqual(expected);
++  });
++
++  it("returns the union when both are given, and nothing for an empty list", async () => {
++    const dates = listing.map((r) => Date.parse(String(essayDate(r)))).filter(Number.isFinite).sort((a, b) => b - a);
++    const since = new Date(dates[3]).toISOString();
++    const old = listing[listing.length - 1].slug;
++    const input = { slugs: [old], since };
++    const expected = slugs(listing.filter((r) => r.slug === old || Date.parse(String(essayDate(r))) >= dates[3]));
++    expect(slugs(await prodSingle(input))).toEqual(expected);
++    expect(slugs(await dev(input))).toEqual(expected);
++
++    expect(await prodSingle({ slugs: [] })).toEqual([]);
++    expect(await dev({ slugs: [] })).toEqual([]);
++  });
++
++  it("answers the shelf's own question with the shelf and nothing retired", async () => {
++    const input = shelfListingInput();
++    expect(input.since).toBe(new Date(LATEST_CUTOFF).toISOString());
++    expect(input.slugs).toEqual(liveShelfEssays().map((e) => e.slug));
++
++    const prod = await prodSingle(input);
++    expect(slugs(await dev(input))).toEqual(slugs(prod));
++    expect(prod.length).toBeLessThan(listing.length);
++    // Every row that comes back is one /writing shows; every shelf essay the
++    // listing carries comes back.
++    for (const r of prod) expect(["shelf", "latest"]).toContain(essayVisibility(r.slug, essayDate(r)));
++    const carried = new Set(slugs(listing));
++    for (const slug of input.slugs) if (carried.has(slug)) expect(slugs(prod)).toContain(slug);
++  });
++
++  it("rejects a malformed field in dev; production ignores it and sends the full listing", async () => {
++    await expect(dev({ since: "last tuesday" })).rejects.toThrow();
++    expect((await prodSingle({ since: "last tuesday" })).length).toBe(listing.length);
++  });
++});
++
++describe("the rule itself, the same in both runtimes", () => {
++  // Database rows carry Date objects, and publishedAt is null for a post the
++  // editor created already published; static rows carry ISO strings.
++  const rows: Row[] = [
++    { slug: "new-from-admin", publishedAt: null, createdAt: new Date("2026-11-02T14:00:00Z") },
++    { slug: "draft-finished-later", publishedAt: new Date("2026-10-20T09:00:00Z"), createdAt: new Date("2026-10-01T09:00:00Z") },
++    { slug: "on-the-shelf", publishedAt: "2026-04-30T22:44:29.000Z", createdAt: "2026-04-30T22:44:29.000Z" },
++    { slug: "retired", publishedAt: "2026-07-07T20:02:19.000Z", createdAt: "2026-07-07T20:02:19.000Z" },
++    { slug: "exactly-at-the-cutoff", publishedAt: "2026-10-13T00:00:00.000Z", createdAt: "2026-10-13T00:00:00.000Z" },
++    { slug: "no-dates" },
++  ];
++  const cases: [string, Record<string, unknown> | undefined, string[]][] = [
++    ["no input", undefined, slugs(rows)],
++    ["empty object", {}, slugs(rows)],
++    ["slugs", { slugs: ["on-the-shelf", "no-dates"] }, ["on-the-shelf", "no-dates"]],
++    [
++      "since, at or after, by publishedAt else createdAt",
++      { since: "2026-10-13T00:00:00.000Z" },
++      ["new-from-admin", "draft-finished-later", "exactly-at-the-cutoff"],
++    ],
++    [
++      "both",
++      { slugs: ["on-the-shelf"], since: "2026-10-13T00:00:00.000Z" },
++      ["new-from-admin", "draft-finished-later", "on-the-shelf", "exactly-at-the-cutoff"],
++    ],
++    ["empty slugs", { slugs: [] }, []],
++  ];
++  for (const [name, input, expected] of cases) {
++    it(name, () => {
++      expect(slugs(pickListing(rows as never, input as never))).toEqual(expected);
++      expect(slugs(prodPick(rows, input))).toEqual(expected);
++    });
++  }
++});
+diff --git a/server/posts-listing.ts b/server/posts-listing.ts
+new file mode 100644
+index 00000000..57cb56f5
+--- /dev/null
++++ b/server/posts-listing.ts
+@@ -0,0 +1,58 @@
++/**
++ * posts.listPublished's optional input, and the rule that applies it.
++ *
++ * /writing used to ask for every published row (about 959 in production) to
++ * show a shelf of a few dozen. It now asks for the shelf only: the public shelf
++ * essays by slug, and anything that went out at or after the shelf's cutoff
++ * (the "Latest" group, posts James adds through the admin). Callers that pass
++ * no input get the whole listing, exactly as before.
++ *
++ * Two runtimes answer this procedure: the dev router (server/routers.ts, which
++ * uses this module) and the self-contained production function (api/index.ts,
++ * which repeats the same few lines in its own pickListing). The rule is the
++ * same in both, and server/posts-listing.test.ts runs one fixture through each
++ * and checks they agree.
++ *
++ * The essay date is the one client/src/lib/shelf.ts (essayDate) and
++ * scripts/lib/shelf.mjs judge "Latest" by: publishedAt, or createdAt when no
++ * publish time was recorded.
++ */
++import { z } from "zod";
++
++export const listPublishedInput = z
++  .object({
++    /** Rows whose slug is listed come back whatever their date. */
++    slugs: z.array(z.string().min(1).max(200)).max(500).optional(),
++    /** ISO instant: rows whose essay date is at or after it come back too. */
++    since: z.iso.datetime().optional(),
++  })
++  .optional();
++
++export type ListPublishedInput = z.infer<typeof listPublishedInput>;
++
++function toTime(date: unknown): number {
++  if (date instanceof Date) return date.getTime();
++  if (typeof date === "number") return date;
++  if (typeof date === "string" && date) return Date.parse(date);
++  return Number.NaN;
++}
++
++function essayTime(row: { publishedAt?: unknown; createdAt?: unknown }): number {
++  const published = toTime(row.publishedAt);
++  return Number.isFinite(published) ? published : toTime(row.createdAt);
++}
++
++/**
++ * The rows a listPublished call asked for. With neither field set, every row,
++ * in the order given; otherwise the rows named by slug or dated at or after
++ * `since`, in the same order.
++ */
++export function pickListing<T extends { slug: string; publishedAt?: unknown; createdAt?: unknown }>(
++  rows: T[],
++  input: ListPublishedInput
++): T[] {
++  if (!input || (input.slugs === undefined && input.since === undefined)) return rows;
++  const wanted = new Set(input.slugs ?? []);
++  const since = input.since === undefined ? Number.NaN : Date.parse(input.since);
++  return rows.filter((r) => wanted.has(r.slug) || (Number.isFinite(since) && essayTime(r) >= since));
++}
+diff --git a/server/routers.ts b/server/routers.ts
+index d00539d9..f77b4c81 100644
+--- a/server/routers.ts
++++ b/server/routers.ts
+@@ -18,6 +18,7 @@ import { leadMagnetsRouter } from "./routers/lead-magnets";
+ import { recommendationRouter } from "./recommendation-router";
+ import { analyticsRouter } from "./analytics-router";
+ import { emailRouter } from "./email-router";
++import { listPublishedInput, pickListing } from "./posts-listing";
+ import {
+   // Files
+   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
+@@ -108,8 +109,15 @@ export const appRouter = router({
+ 
+   // ─── Posts (Writing) ─────────────────────────────────────────────
+   posts: router({
+-    /** Public: list published posts (FULL — includes body; use sparingly) */
+-    listPublished: publicProcedure.query(async () => listPosts(true)),
++    /**
++     * Public: list published posts (FULL — includes body; use sparingly).
++     * Optional input { slugs, since } narrows it to the rows named by slug or
++     * dated at or after `since` (/writing asks for its shelf this way). The
++     * production function applies the same rule (api/index.ts pickListing).
++     */
++    listPublished: publicProcedure
++      .input(listPublishedInput)
++      .query(async ({ input }) => pickListing(await listPosts(true), input)),
+ 
+     /** Public: slim list for the /writing index — no body */
+     listForIndex: publicProcedure.query(async () => listPostsForIndex()),
+-- 
+2.43.0
+
