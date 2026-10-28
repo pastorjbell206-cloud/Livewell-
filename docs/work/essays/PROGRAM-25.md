@@ -18,11 +18,11 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 3 | what-post-christian-means | after-christendom | live (#539) |
 | 4 | the-early-church-under-rome | ancient-church | live (#539) |
 | 5 | why-didnt-the-bible-ban-slavery | bible-in-its-world | live (#539) |
-| 6 | excavation-not-demolition | doubt | ledger closed; to land |
-| 7 | why-trust-the-bible | doubt | ledger closed, restored; to land |
-| 8 | the-historical-jesus | doubt | ledger closed, restored; to land |
-| 9 | did-the-resurrection-happen | doubt | ledger closed, restored; to land |
-| 10 | can-you-be-good-without-god | doubt | ledger closed, restored; to land |
+| 6 | excavation-not-demolition | doubt | landing (doubt-1, wf_3a096e69-5ac) |
+| 7 | why-trust-the-bible | doubt | landing (doubt-1, wf_3a096e69-5ac) |
+| 8 | the-historical-jesus | doubt | landing (doubt-1, wf_3a096e69-5ac) |
+| 9 | did-the-resurrection-happen | doubt | landing (doubt-1, wf_3a096e69-5ac) |
+| 10 | can-you-be-good-without-god | doubt | landing (doubt-1, wf_3a096e69-5ac) |
 | 11 | why-does-god-allow-suffering | doubt | ledger closed; to land |
 | 12 | why-does-god-feel-far-away | doubt | ledger closed; to land |
 | 13 | doubt-after-church-abuse | doubt | ledger closed, restored; to land |
