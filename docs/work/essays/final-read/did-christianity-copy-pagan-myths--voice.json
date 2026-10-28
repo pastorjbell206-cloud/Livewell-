@@ -1,0 +1,126 @@
+{
+ "slug": "did-christianity-copy-pagan-myths",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/did-christianity-copy-pagan-myths.json (title, excerpt as standfirst, Markdown body, Closing Texts), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it by 5-word overlap with the other landed essays in /home/user/livewell-land/client/public/essays/ and the five pilots in /home/user/Livewell-/docs/work/essays/, to find lines repeated across the shelf. The two essays it links to (the-historical-jesus, did-the-resurrection-happen) both link back here, so a reader moves between all three. Every quoted string below occurs exactly once in the body. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "What the Old Stories Tell Us, fifth paragraph (the first of the two closing one-line paragraphs): \"If it happened, the longing in all those old myths wasn't foolish.\"",
+   "problem": "This is a shelf stamp in the most exposed spot. Every Doubt essay now turns its ending on the same conditional hinge. did-the-resurrection-happen: \"If he isn't, all of us are living in a world where death has already been undone once.\" the-historical-jesus: \"If it's true, that question is still open, and he is asking it of you.\" why-trust-the-bible: \"If he is, you can trust him with the hard verses too.\" This essay links to the first two and both link back, so a reader who follows the links meets the same closing move three times. Here the conditional also leaves a first-order matter hanging in the subjunctive at the one point where the brief wants it confessed plainly. The paragraph before has already left the skeptic free (\"it has to be weighed like any other claim about the past\"), and the mirror question has turned to \"we\", so the last two lines can confess without pressing anyone.",
+   "fix": "Replace with: \"The longing in all those old myths wasn't foolish.\" Keep the last line exactly as written: \"It was answered, once, by a man who will never die again.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Why Easter Does Not Fit the Pattern, sixth paragraph, second sentence: \"When Paul reached the resurrection in Athens, \"some mocked\" (Acts 17:32).\"",
+   "problem": "This sentence is near word for word in did-the-resurrection-happen (\"When Paul spoke of the resurrection of the dead in Athens, \"some mocked\" (Acts 17:32). Celsus understood the Christian claim exactly ...\"), in the same three-step order: a line on what pagans heard, the Athens mockery, then Celsus. That essay links here from its Celsus discussion. The same beat is also told again in this essay's last section (\"Then Paul came to the resurrection, and that is where some of them laughed.\"), where it frames the ending, and it loses force for having been spent here.",
+   "fix": "Delete the sentence. The paragraph then reads: \"The pagans who first heard it didn't hear something familiar. Celsus thought the Christian story a myth like the others, and his complaint shows that the Christians kept insisting it wasn't. The death itself was nothing like a hero's. ...\"",
+   "severity": "should"
+  },
+  {
+   "where": "Why Easter Does Not Fit the Pattern, second paragraph, fourth sentence: \"In 1961 archaeologists at Caesarea found a stone carved with Pilate's name and title.\"",
+   "problem": "This repeats why-trust-the-bible almost word for word (\"In 1961, archaeologists at Caesarea Maritima ... found a limestone block ... inscribed with Pilate's name and his title\"). The same paragraph already repeats the-historical-jesus's Tacitus quotation verbatim and its creed point (\"The Apostles' Creed confesses that Jesus \"suffered under Pontius Pilate.\"\"), so a reader of the three Doubt essays meets the whole Pilate dossier three times. The stone also does no work in this argument. The paragraph's claim is that the story is dated to a reign, and Luke, Tacitus and the creed already show that. Whether Pilate existed is not in question. The sentence is also one of the essay's \"In [year]\" openers (see the Mettinger finding).",
+   "fix": "Delete the sentence. The paragraph then runs from \"... at the hands of one of our procurators, Pontius Pilatus.\" straight to \"The church even wrote him into its creed: ...\"",
+   "severity": "should"
+  },
+  {
+   "where": "Opening, third paragraph, third sentence: \"A skeptic thinks it settles the matter.\"",
+   "problem": "The skeptic this essay is written for meets a caricature of himself in the third paragraph. The essay later cites skeptics who reject the lists outright (Carrier on Graves, Ehrman on the parallels), so the flat generalization is untrue by the essay's own evidence, and a thoughtful unbeliever will feel handled before the argument starts.",
+   "fix": "Replace with: \"A skeptic may think it settles the matter.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening, third paragraph, fifth sentence: \"That's a fair question.\"",
+   "problem": "This is the essay's one self-certifying \"fair\", which is within the allowance, but it reads as the rulebook (\"the skeptic has a point that deserves to be granted\"). It certifies the objection instead of answering it, and the sentence before it is a statement, not a question. The next sentence does the fair thing without announcing it.",
+   "fix": "Delete the sentence. The paragraph then ends: \"... and nobody believes in Horus anymore. The way to answer it is to read what the old sources actually say.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Is True in the Claim, last paragraph, first sentence: \"So the critics are right about a good deal.\"",
+   "problem": "This is a stock concession. why-trust-the-bible makes its concession in the same words (\"He is also right about a good deal.\"), and \"a good deal\" runs through six landed essays. Pointing at \"these points\" keeps the concession exact (the date and the customs just listed), and that sets up the \"But\" two sentences later.",
+   "fix": "Replace with: \"So on these points the critics are right.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Testing the Claims Against the Sources, sixth paragraph (Dionysus), last sentence: \"Even on the first reading, a wine miracle is a long way from an empty tomb.\"",
+   "problem": "This is a two-image epigram at the end of a paragraph. It is also the section's second \"Even ...\" closer, after \"Even in their reading, though, it's a story about what happens every year.\", in a section where nearly every paragraph ends on a verdict line. \"A long way from\" also closes lines in two other landed essays. Without the epigram, the paragraph ends on Amos and leaves the Cana question open, as it has just framed it. A separate note for the integrity read: the paragraph opens on the strongest parallel it names, Justin's report that Bacchus was torn to pieces and \"ascended into heaven\", and never comes back to it. A skeptic will notice. That gap needs a sourced sentence, which is beyond a voice fix.",
+   "fix": "Delete the sentence. The paragraph then ends: \"Others hear in it the prophets, who promised that \"the mountains shall drip sweet wine\" (Amos 9:13).\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Why Easter Does Not Fit the Pattern, first paragraph, first sentence: \"Set Plutarch's tiresome interpreters beside Paul and the difference is plain.\"",
+   "problem": "This is an announced turn at the head of the section. \"The difference is plain\" tells the reader what he is about to see, and \"tiresome\" is a callback wink. The heading already sets up the contrast, and the next sentence makes it.",
+   "fix": "Delete the sentence. The section then opens: \"A seasonal myth is about what always happens: the god goes into the ground with the grain and comes back when it sprouts, this year and next year and every year.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Specialists Concluded, second paragraph, second sentence, opening words: \"In 2001 the Swedish Old Testament scholar Tryggve Mettinger argued that\"",
+   "problem": "This is the scholar-parade formula. Two paragraphs in a row open their argument on \"In [year] ... argued\" (Smith 1987, then Mettinger 2001). Six sentences in the essay begin \"In [year]\", and four of them follow the same pattern, \"In [year] the/a [nationality or role] [name] published/released/argued\" (Joseph, Graves, Frazer, Mettinger). The 1875, 1890 and 2007 dates carry the history of the claim, but 2001 only tells the reader that Mettinger came after Smith, and \"later\" does that.",
+   "fix": "Replace with: \"Tryggve Mettinger, a Swedish Old Testament scholar, later argued that\". The rest of the sentence is unchanged.",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Specialists Concluded, first paragraph, first sentence, opening words: \"The scholar who did most to take Frazer's family apart\"",
+   "problem": "A motif is being stamped through the piece. Frazer's \"family\" is used four times (\"into a family of gods\", \"belonged in the same family\", \"Frazer's family came apart\", and here), and the literal \"his family's story\" (Horus) sits between them. Three uses are enough to carry the image. The fourth makes it a tic.",
+   "fix": "Replace with: \"The scholar who did most to take Frazer's scheme apart\". The rest of the sentence is unchanged.",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Specialists Concluded, first paragraph, last sentence: \"And much of the evidence for a celebrated rising, like Lucian's, comes from writers who lived after Christianity had begun.\"",
+   "problem": "Three paragraphs earlier the treatise is only \"traditionally credited to Lucian\". Calling it \"Lucian's\" here quietly firms up the attribution, and a careful skeptic will catch the slide.",
+   "fix": "Replace \"like Lucian's,\" with \"like the one at Byblos,\". The sentence then reads: \"And much of the evidence for a celebrated rising, like the one at Byblos, comes from writers who lived after Christianity had begun.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Specialists Concluded, third paragraph, second and third sentences: \"He is an agnostic, and his book *Did Jesus Exist?* argued against the idea that Jesus was invented. Along the way he took up the pagan parallels.\"",
+   "problem": "This is a shelf repeat. The essay this paragraph links to in its last sentence introduces him in nearly the same terms (the-historical-jesus: \"Bart Ehrman, an agnostic New Testament scholar, wrote *Did Jesus Exist?* as an argument against the mythicists.\"). The book's main argument is that essay's subject, and \"came at the question from outside the faith\" plus \"agnostic\" already give the credential this paragraph needs.",
+   "fix": "Replace both sentences with: \"He is an agnostic, and in *Did Jesus Exist?* he took up the pagan parallels.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Why Easter Does Not Fit the Pattern, fourth paragraph, last sentence: \"That hope was for the righteous together, at the end of history.\"",
+   "problem": "did-the-resurrection-happen says the same thing in nearly the same words (\"it meant the bodily raising of God's people together at the end of history\"), in the section this paragraph parallels. The replacement also picks up Ehrman's \"end of the age\" from the section before.",
+   "fix": "Replace with: \"That hope was for all the righteous together, when God brought this age to its end.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Why Easter Does Not Fit the Pattern, fifth paragraph, last sentence: \"Whether it happened is a further argument, made at length in [Did the Resurrection Actually Happen?](/writing/did-the-resurrection-happen)\"",
+   "problem": "This is a template. It copies the frame of the link line that closes the paragraph before the heading (\"Whether Jesus existed is its own question, taken up in [Was Jesus Real?](/writing/the-historical-jesus)\"). Both lines close paragraphs, and each is a \"Whether X is ..., [participle] in [link]\" deferral.",
+   "fix": "Replace with: \"The evidence for those appearances is weighed in [Did the Resurrection Actually Happen?](/writing/did-the-resurrection-happen)\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Where Christians Have Overstated Their Case, second paragraph, last sentence: \"A Christian who denies all of it to a well-read skeptic will lose him on the first point he checks.\"",
+   "problem": "Back-to-back paragraphs end on the same construction. The paragraph before closes with \"A Christian who reaches for something like it today hasn't looked at the sources ...\", and the essay uses the \"A Christian who ...\" frame four times. Turning this one into direct address breaks the ladder and gives the essay its only \"you\" in James's own voice, which the brief invites where it fits.",
+   "fix": "Replace with: \"Deny all of it to a well-read skeptic, and you'll lose him on the first point he checks.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Where Christians Have Overstated Their Case, seventh paragraph (Woodrow), sixth sentence, closing words: \"because they flattered the faith\"",
+   "problem": "\"Flatter\" has become a shelf word. excavation-not-demolition, the-early-church-under-rome, was-america-founded-as-a-christian-nation and why-didnt-the-bible-ban-slavery all use it, and the-historical-jesus read already cut one for that reason. The plain phrase says the same thing.",
+   "fix": "Replace with: \"because they made the faith look good\". The sentence then reads: \"If *Zeitgeist* makes us angry, we might ask how many unchecked claims we have passed along because they made the faith look good.\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language (CLAUDE.md), searched literally in the title, standfirst, body and Closing Texts: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), every listed phrase, and every therapy-speak phrase. \"Navigate\" and \"landscape\" do not appear even inside a name.",
+  "Em-dash (U+2014): none anywhere. No en-dashes or double hyphens standing in for one.",
+  "Exclamation points: none anywhere, inside or outside Scripture.",
+  "Semicolons: only inside verbatim Scripture (Romans 6:9, Isaiah 26:19, Acts 17:31).",
+  "Stamps: none of the listed stamps appear (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\").",
+  "Rulebook leakage: no steelman, verdict, indictment or self-implication language. \"Honest\" never appears and \"fair\" appears once (flagged above as consider). \"Granting\" and \"concedes\" describe Paul and Justin and are not rules.",
+  "Biography: the only first-person line is \"my own side of the Reformation\", a Protestant self-identification that a Baptist pastor may make. No title, years in ministry, book count, Southern Baptist implication, atheism story, sons, PCN or invented scene. Nothing is used as a credential.",
+  "Headings: all seven are plain and descriptive (What Is True in the Claim; Where the Lists Came From; Testing the Claims Against the Sources; What the Specialists Concluded; Why Easter Does Not Fit the Pattern; Where Christians Have Overstated Their Case; What the Old Stories Tell Us).",
+  "Title: \"Did Christianity Copy Pagan Myths?\" is in the plain words people search.",
+  "Standfirst: one plain declarative sentence about what the essay does, not a balanced antithesis.",
+  "Political direction: the essay has no partisan content. Its criticism of careless argument fires with the same instrument (go and check the sources) at skeptics (Zeitgeist, Graves), at Christians (Justin's demon theory, denying all parallels, the Mithras-came-later claim, the sealed-off-Judaism claim) and at James's own Protestant side (Hislop, the Protestant roots of the comparison Smith traced), with the same grief. Catholics are described, not attacked.",
+  "Contested second-order questions: none asserted. The origin of December 25 and the Cana and Dionysus question are each given both readings and left open. The resurrection is first-order and is not treated as a second-order dispute. needs_james: false.",
+  "Crisis care: not a crisis-facing piece. No grief, self-harm or abuse is in view, so no /help line is required. The shaken Christian in paragraph 3 is met with the sources, not diagnosed.",
+  "Scripture: integrated in the argument (Acts 17 as the frame, Romans 6:4 and 6:9, Galatians 3:13, 1 Corinthians 15:4 and 15:6, Isaiah 26:19, Amos 9:13, Luke 3:1, 1 Thessalonians 1:9), never decorative. Closing Texts: three lines in the *\"Quote.\"* (Reference) format, none repeated in the body or used as a Closing Text elsewhere on the shelf.",
+  "Links: two essay links (/writing/the-historical-jesus, /writing/did-the-resurrection-happen), both landed and within the two-to-four limit. No out-of-list slugs.",
+  "Self-implication is done, not announced: \"some of our answers have made things worse\", \"my own side of the Reformation\", \"Most of us are slow to check a claim that helps our side\", and \"Do we hold the resurrection the way Paul did?\"",
+  "Register measured on the body (Closing Texts excluded): about 3,720 words (inside 2,500 to 3,800), 42 paragraphs averaging about 88 words (target 80 to 90), mean sentence about 17 words, about 17% of sentences at 8 words or fewer (a little under the ~25% target, not a failure). The only one-line paragraphs are the two closing lines, a short stack the brief allows.",
+  "Tidy triplets: the lists are genuine (the film's claims, Celsus's list, the six \"no ...\" items that answer the film point for point). \"This year and next year and every year\" carries the once-against-every-year contrast and was left alone.",
+  "Announced turns: topic sentences such as \"Start with Horus, since he heads the list.\", \"Dionysus is a better candidate.\" and \"Plutarch does give the critics something.\" are plain signposting, which is his habit. Only the Plutarch-interpreters opener is flagged.",
+  "Ending: apart from the conditional flagged above, it does not recap. It turns the mirror on \"we\" (\"a lovely story about spring that nobody needs to check\") and lands on Christ.",
+  "Pilots: no sentence or image reused from the five approved pilots. The only 5-word overlaps are stock phrases (\"wanted to know whether the\", \"is a long way from\").",
+  "Read as the skeptic: he is conceded what is true (the borrowing of dates and customs, real resemblances in ritual, Mettinger's dissent), and the essay warns Christians against overclaiming Smith. Read as a pastor: safe to hand to a congregation. The Christian errors are named with the same care as the film's, and nothing caricatures Catholics, skeptics or pagans."
+ ]
+}
