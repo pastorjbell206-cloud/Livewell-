@@ -96,7 +96,7 @@ Paul thanked God that the Thessalonians, when they heard the apostles' preaching
 
 If you're a Christian who felt shaken when someone told you a council voted on your Bible, you can set that fear down. The process was slow and human, and Christians disagreed along the way. If you're a skeptic, the history won't make you believe. It does mean the question can't be settled by blaming an emperor. It has to be settled with the books themselves. Read Athanasius's letter, and then read a Gospel straight through in the [Study Bible](/study/bible).
 
-The Christians Justin described read the apostles and prophets "as long as time permits." Many American churches now read a few verses aloud on a Sunday and move on. Many of us would argue for every book in the canon and still hear very little of it read aloud.
+The Christians Justin described read the apostles and prophets "as long as time permits." Many American churches now read a few verses on a Sunday and move on. We will argue for every book in the canon and still hear very little of it read aloud.
 
 The churches held on to these books because they kept hearing a voice in them.
 
