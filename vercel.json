@@ -730,6 +730,21 @@
       "permanent": true
     },
     {
+      "source": "/writing/the-flag-in-the-sanctuary",
+      "destination": "/writing/what-christian-nationalism-is-and-is-not",
+      "permanent": true
+    },
+    {
+      "source": "/writing/two-kingdoms-one-pledge",
+      "destination": "/writing/what-christian-nationalism-is-and-is-not",
+      "permanent": true
+    },
+    {
+      "source": "/writing/witness-without-power",
+      "destination": "/writing/the-early-church-under-rome",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true

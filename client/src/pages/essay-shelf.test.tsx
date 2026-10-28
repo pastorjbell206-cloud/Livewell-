@@ -198,9 +198,9 @@ const robots = () => document.head.querySelector('meta[name="robots"]')?.getAttr
 describe("/writing/:slug off the shelf", () => {
   it("answers a pending shelf essay at once, noindex, pointing to its section and the Study Bible", () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
-    renderEssay("/writing/what-christian-nationalism-is-and-is-not");
+    renderEssay("/writing/what-render-unto-caesar-actually-means");
 
-    expect(screen.getByRole("heading", { level: 1, name: "What Christian Nationalism Is and What It Is Not" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "What Render Unto Caesar Actually Means" })).toBeInTheDocument();
     expect(screen.getByText(/James is revising this essay/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Read the essays" })).toHaveAttribute("href", "/writing");
     expect(screen.getByRole("link", { name: /Go to Faith and Power/ })).toHaveAttribute("href", "/writing?section=faith-and-power");

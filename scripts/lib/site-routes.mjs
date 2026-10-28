@@ -32,6 +32,10 @@ function essaySlugs() {
   for (const p of cd?.posts || (Array.isArray(cd) ? cd : [])) if (p?.slug) out.add(p.slug);
   const lib = json("content/static-library.generated.json");
   for (const r of Array.isArray(lib) ? lib : []) if (r?.slug) out.add(r.slug);
+  // A rewrite in client/public/essays is a page of its own, even for a new
+  // essay the database has no post for yet (client/src/lib/shelf.ts).
+  const rewrites = join(ROOT, "client/public/essays");
+  if (existsSync(rewrites)) for (const f of readdirSync(rewrites)) if (f.endsWith(".json")) out.add(f.slice(0, -5));
   return out;
 }
 
