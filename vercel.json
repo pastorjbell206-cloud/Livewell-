@@ -745,6 +745,41 @@
       "permanent": true
     },
     {
+      "source": "/writing/reconstruction-manual",
+      "destination": "/writing/excavation-not-demolition",
+      "permanent": true
+    },
+    {
+      "source": "/writing/when-apologetics-isnt-enough",
+      "destination": "/writing/excavation-not-demolition",
+      "permanent": true
+    },
+    {
+      "source": "/writing/can-you-trust-the-bible",
+      "destination": "/writing/why-trust-the-bible",
+      "permanent": true
+    },
+    {
+      "source": "/writing/teen-can-you-actually-trust-the-bible",
+      "destination": "/writing/why-trust-the-bible",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-historical-jesus-without-the-shortcuts",
+      "destination": "/writing/did-the-resurrection-happen",
+      "permanent": true
+    },
+    {
+      "source": "/writing/apologetics-where-does-morality-come-from",
+      "destination": "/writing/can-you-be-good-without-god",
+      "permanent": true
+    },
+    {
+      "source": "/writing/morality-without-god-and-with-him",
+      "destination": "/writing/can-you-be-good-without-god",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true

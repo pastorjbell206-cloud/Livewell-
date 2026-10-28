@@ -74,7 +74,7 @@ describe("/writing", () => {
     expect(screen.getByRole("heading", { level: 2, name: "The Mirror: How Sincere Believers Go Wrong" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "Faith and Power: Christian Nationalism and Politics" })).toBeInTheDocument();
     // Sections with nothing public yet stay hidden.
-    expect(screen.queryByRole("heading", { name: "Doubt and Hard Questions" })).not.toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "Marriage, Family and Ordinary Faithfulness" })).not.toBeInTheDocument();
     // Pending essays are not listed.
     expect(screen.queryByText("What Christian Nationalism Is and What It Is Not")).not.toBeInTheDocument();
     expect(screen.getAllByText("When the Church Married Empire").length).toBeGreaterThan(0);
