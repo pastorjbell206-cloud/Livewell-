@@ -1,0 +1,65 @@
+{
+ "slug": "did-christianity-copy-pagan-myths",
+ "lens": "facts and integrity: every quotation, number, date, name, title and attribution in the published JSON checked against the claims ledger, the BSB chapter files, local primary texts (WDB and Perseus clones in the scratchpad, re-read today) and 7 web searches",
+ "findings": [
+  {
+   "severity": "should",
+   "where": "## Why Easter Does Not Fit the Pattern, fourth paragraph, first sentence: \"Paul's word for what happened, resurrection, belonged to the Jews.\"",
+   "problem": "(a) No ledger line. As worded the sentence is about the word, and the word was ordinary Greek: pagans used it of rising from death, if only to deny it. Aeschylus, Eumenides 647-648, read today in the Perseus Greek (tlg0085.tlg007 grc2), says that once a man is dead \"there is no rising\" (οὔτις ἔστʼ ἀνάστασις). The essay itself quotes Tertullian on Mithras introducing \"an image of a resurrection.\" What the ledger supports, under \"Many Jews of Jesus' day hoped for a bodily resurrection\" (Acts 23:6-8, Daniel 12:2, 2 Maccabees 7, Isaiah 26:19), is that the hope and its meaning were Jewish, not the word.",
+   "fix": "Replace the sentence with: \"What Paul meant by resurrection came from the Jews.\" Then add a ledger line under Easter and the historical claim pointing to the Jewish-hope sources, with a note that the Greek word itself was not Jewish (Aeschylus, Eumenides 647-648)."
+  },
+  {
+   "severity": "consider",
+   "where": "## What the Specialists Concluded, Mettinger paragraph: \"He also wrote that, as far as he was aware, there was no evidence that the Christian proclamation of Jesus' death and resurrection had been built from those myths.\"",
+   "problem": "(c) Small mismatch with the ledger's matched source. The ledger (change 14, and the Mettinger line) gives his sentence as \"as far as I am aware, no prima facie evidence that the death and resurrection of Jesus is a mythological construct.\" The essay keeps the first hedge but drops \"prima facie.\" That makes Mettinger sound slightly more categorical than he was, and the ledger line says the paraphrase \"keeps his hedge.\" Mettinger may be living.",
+   "fix": "\"He also wrote that, as far as he was aware, there was no evidence, on the face of it, that the Christian proclamation of Jesus' death and resurrection had been built from those myths.\""
+  },
+  {
+   "severity": "consider",
+   "where": "## What the Specialists Concluded, Ehrman paragraph: \"Many writers who repeat lists like Graves's, he found, have taken them on without checking, and the ancient evidence for gods who died and rose again is thin.\"",
+   "problem": "(c) Attribution scope. The sentence follows \"Along the way he took up the pagan parallels,\" so it places both findings in *Did Jesus Exist?* The ledger's support differs for each half. The \"thin evidence\" half comes from a review of the book (the *Quest* review: \"skimpy or nonexistent\"). The \"without checking\" half comes from Ehrman's blog posts headed \"Did Jesus Exist?\" (ehrmanblog.org), not from the book. Two searches in this run found the blog critique of Graves (ehrmanblog.org/?p=2066) and nothing showing that the book itself discusses Graves. Ehrman is living.",
+   "fix": "Change \"he found\" to \"he has written\": \"Many writers who repeat lists like Graves's, he has written, have taken them on without checking, and the ancient evidence for gods who died and rose again is thin.\" Then note in the ledger that the Graves point is from his blog."
+  },
+  {
+   "severity": "consider",
+   "where": "## Where Christians Have Overstated Their Case, Hengel paragraph: \"Yet many Jews who spoke Greek and lived beside Greeks still went to their deaths rather than sacrifice to a Greek god.\"",
+   "problem": "(c) The ledger supports the deaths (Swete LXX, 2 Maccabees 6:7-9, where the decree goes to the neighboring Greek cities) but has no source saying that these martyrs spoke Greek. That detail is inference.",
+   "fix": "\"Yet many Jews who lived among Greeks still went to their deaths rather than sacrifice to a Greek god.\" Alternatively, keep \"spoke Greek\" and add a ledger line with a source for it."
+  },
+  {
+   "severity": "consider",
+   "where": "## Testing the Claims Against the Sources, first paragraph: \"The fullest ancient telling of his family's story comes from Plutarch\"",
+   "problem": "(a) No ledger line. A search in this run supports the claim, secondhand. The summary drew on Wikipedia's \"Osiris myth\" and the Perseus and andrewgadsden.com pages on *De Iside*. It called Plutarch's treatise the only coherent and complete telling of the myth to survive from antiquity, with the Egyptian sources fragmentary (the Great Hymn to Osiris is the fullest Egyptian one, with little detail).",
+   "fix": "Keep the sentence. Add a ledger line under Plutarch, Isis and Osiris citing that search."
+  },
+  {
+   "severity": "consider",
+   "where": "## Why Easter Does Not Fit the Pattern, fourth paragraph, last sentence: \"That hope was for the righteous together, at the end of history.\"",
+   "problem": "(a) No ledger line. It is defensible from texts already in the ledger. Daniel 12:1-2 (BSB) has the dead rising \"at that time\" at the end. 2 Maccabees 7:9 and 7:14 (Swete) have the righteous raised to life and no resurrection to life for the persecutor. Daniel also raises the wicked \"to shame,\" so the sentence must stay about the hope, which it does.",
+   "fix": "Keep the sentence. Add a ledger line citing Daniel 12:1-2 and 2 Maccabees 7:9, 14."
+  },
+  {
+   "severity": "consider",
+   "where": "## What the Specialists Concluded, Ehrman paragraph: \"He is an agnostic, and his book *Did Jesus Exist?* argued against the idea that Jesus was invented.\"",
+   "problem": "(g) Restoration candidate, with a caveat. The voice edit removed the writer's year, 2012. A search by the second closing run confirmed it (HarperOne, 20 March 2012). The ledger says the cut was a voice choice, not a budget generalization, and BRIEF.md says to give a year only when it matters. So this is optional.",
+   "fix": "Optional: \"He is an agnostic, and his 2012 book *Did Jesus Exist?* argued against the idea that Jesus was invented.\" Otherwise leave as is."
+  }
+ ],
+ "clean_checks": [
+  "Published JSON body equals docs/work/essays/did-christianity-copy-pagan-myths.md (only a trailing newline differs). No em-dash, en-dash or exclamation point.",
+  "All 37 quoted strings have ledger lines and match what the ledger says was matched.",
+  "Patristic quotations re-read today in the WDB clone (commit 328918a) and found verbatim: Against Celsus 2.55; First Apology 21, 54, 66; Dialogue 70; Prescription 40; On Baptism 5; Gregory, Register 11.76; Augustine, On the Trinity 4.5.9. Celsus's list is spoken by his Jew addressing converts, and the essay's \"a list that includes\" is accurate.",
+  "Gregory's \"It is undoubtedly impossible to cut away everything at once from hard hearts\": the source begins \"For it is ...\". Dropping \"For\" and capitalizing is standard and changes no sense.",
+  "Justin's \"those many women whom he had violated\" (Apology 21) concerns what the esteemed writers record of Jupiter, so \"the poets\" is a fair paraphrase. \"Ascended into heaven\" of Bacchus (Apology 54) is attributed by Justin to the demons' teaching, and the essay says Justin \"repeats the story,\" which is accurate.",
+  "Classical quotations re-read today in the Perseus clones and found verbatim: Plutarch, Isis and Osiris ch. 19, 65, 78 (Babbitt); Plutarch, Pompey 24 (Perrin, tlg0007.tlg045); Tacitus, Annals 15.44. Paraphrases of Pausanias 6.26.1-2 and Bacchae 1-42 match the texts. In Plutarch, \"numerous and tiresome\" refers to the seasonal interpreters, as the essay says.",
+  "All 16 Scripture references point to the right verse and sense in the BSB chapter files: Acts 17:16, 22, 23, 28, 31, 32; Romans 6:4, 9; Amos 9:13; Luke 3:1-2; Isaiah 26:19; 1 Corinthians 15:3-7, 14; Galatians 3:13 with Deuteronomy 21:23; 1 Thessalonians 1:9; 2 Peter 1:16; Luke 24:39. The ESV wording was matched by the ledger's ESV copy and ESV search, and agrees with the ESV as I know it. The Closing Texts are in the *\"Quote.\"* (Reference) format.",
+  "Dates and numbers agree with the ledger: 2007 (Zeitgeist), 1875 (Graves), a century and a half, 354 (Philocalian calendar), March 25, 601 (Gregory), more than a century later (Bede), 1890 (Frazer), fourteen pieces, the 60s BC (67 BC), AD 90 (Statius), the end of the fifth century BC (405 BC), 1987 (Smith), 2001 (Mettinger), 1961 (Pilate Stone), the 1960s (Hengel 1969; Woodrow 1966), 1853 (Hislop), Antiochus IV.",
+  "Ledger restorations 17 to 21 are present in the essay: three kings, at twelve, at thirty, no baptism at thirty, 1987, 2001, 1853. Carrier's \"has called the book unreliable\" correctly stays unrestored, since the warning to readers is the Secular Web's notice, not Carrier's.",
+  "Smith's \"like Lucian's\": the ledger said it was not seen that Smith himself named Lucian. A search in this run found the encyclopedia.com copy of \"Dying and Rising Gods\" saying the earliest possible account of a post-mortem celebration is Lucian's De dea Syria, which the entry calls ambiguous, and that claims of an Adonis resurrection appear only in late texts, many shaped by Christians. Secondhand, but it supports the sentence. Add it to the ledger.",
+  "\"Ehrman doesn't believe Jesus rose\" (about a living person): supported by this run's search, which summarized his blog (ehrmanblog.org/tag/christian/) as saying he does not believe Jesus was raised from the dead. Fair.",
+  "Sentences about the other living or possibly living people (Peter Joseph, Richard Carrier, Tryggve Mettinger, Ralph Woodrow) are supported by the ledger and fair. Woodrow is described accurately and with credit.",
+  "*Zeitgeist* numbers (three kings, twelve, thirty): one more search found critics quoting the narration again, but no transcript. It stays secondhand, as the ledger says. The essay paraphrases without quotation marks, so no change.",
+  "Links: the-historical-jesus and did-the-resurrection-happen are both in link-targets.json. Both are \"pending\" on shelf.json with rewrites present in client/public/essays/.",
+  "Biography: only \"my own side of the Reformation\" (Protestant), which NOTES permits."
+ ]
+}
