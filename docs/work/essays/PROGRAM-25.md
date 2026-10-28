@@ -34,8 +34,8 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 19 | the-children-rome-threw-away | ancient-church | writing (batch 1, wf_dd884a78-a8c) |
 | 20 | what-render-unto-caesar-actually-means | faith-and-power | writing (batch 2, wf_3d6f26d5-76d) |
 | 21 | the-rise-of-the-nones | after-christendom | writing (batch 2, wf_3d6f26d5-76d) |
-| 22 | what-a-christian-owes-the-city | after-christendom | rewrite (batch 3) |
-| 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | rewrite (batch 3) |
+| 22 | what-a-christian-owes-the-city | after-christendom | writing (batch 3, wf_e4bd97af-87e) |
+| 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | writing (batch 3, wf_e4bd97af-87e) |
 | 24 | what-the-original-audience-heard | bible-in-its-world | rewrite (batch 4) |
 | 25 | the-persecution-we-invented | after-christendom | rewrite (batch 4) |
 | spare | when-the-pulpit-became-a-precinct | faith-and-power | if one is held |
