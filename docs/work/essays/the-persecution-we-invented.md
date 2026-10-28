@@ -32,7 +32,7 @@ The New Testament also tells Christians what to do when the real thing comes, an
 
 In the New Testament, then, persecution sends the persecuted toward joy and toward prayer for the people hurting them. Nowhere does it teach them to answer with threats. What does the word do in us? If it makes us more afraid, angrier and quicker to treat our neighbors as enemies, we are using it in a way the apostles never did.
 
-That doesn't mean Christians must give up their rights. Paul didn't. When Roman soldiers had stretched him out to be flogged, he asked, "Is it lawful for you to flog a man who is a Roman citizen and uncondemned?" (Acts 22:25). Later, when the governor Festus proposed sending him to Jerusalem for trial, where his accusers were waiting, he said, "I appeal to Caesar" (Acts 25:11). Jack Phillips and Kelvin Cochran went to court, and they had every right to. What the New Testament presses on is something else: what we call the loss, and how we speak of the people who caused it.
+That doesn't mean Christians must give up their rights. Paul didn't. When Roman soldiers had stretched him out to be flogged, he asked, "Is it lawful for you to flog a man who is a Roman citizen and uncondemned?" (Acts 22:25). Later, when the governor Festus proposed sending him to Jerusalem for trial, where his accusers were waiting, he said, "I appeal to Caesar" (Acts 25:11). Jack Phillips and Kelvin Cochran went to court, and they had every right to. The New Testament's concern lies elsewhere: what we call the loss, and how we speak of the people who caused it.
 
 ## Who Has Been Persecuted in America
 

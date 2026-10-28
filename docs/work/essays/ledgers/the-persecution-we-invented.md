@@ -41,7 +41,9 @@ What the writer kept from the old texts (the question, the 1 Peter 4:15 distinct
 - Pew, 2024: 48 percent of US adults felt at least some conflict between their religious beliefs and mainstream culture, up from 42 percent in 2020. Verified. Search (2026-10-28): pewresearch.org, "8 in 10 Americans Say Religion Is Losing Influence in Public Life" (March 15, 2024; 12,693 adults, Feb. 13-25, 2024), with the 42 percent 2020 comparison in Fox News and Lifeway coverage ("a great deal" or "some" conflict).
 - February 6, 2025, the president signed an executive order creating a Task Force to Eradicate Anti-Christian Bias, chaired by the attorney general. Verified. Search (2026-10-28): govinfo (DCPD-202500233; Federal Register, Feb. 12, 2025, Executive Order 14202 of February 6, 2025, "Eradicating Anti-Christian Bias"); Justice Department release and report ("chaired by the Attorney General"). The task force was set to run two years unless extended, so "now has a federal task force attached to it" holds as of October 2026 on that schedule; its current status was not checked.
 
-## What Christians Are Right to Notice
+## The Cases Christians Point To
+
+(Heading was "What Christians Are Right to Notice" until the voice pass of 2026-10-28.)
 
 - January 2015 Atlanta fired its fire chief, Kelvin Cochran. Verified. Search (2026-10-28): Rough Draft Atlanta, WSB-TV, NBC News, Christian Post (suspended November 2014, fired January 2015).
 - He had published a devotional book for men that taught the traditional Christian view of sex and marriage. Verified in substance. Search (2026-10-28): a self-published 162-page men's devotional, *Who Told You That You Were Naked?*; Christian Post headline "fired over Christian views on sex, marriage". Note for James: several outlets report that the book grouped homosexuality with bestiality and called it "unclean"; the essay's neutral description is accurate but mild.
@@ -95,7 +97,7 @@ What the writer kept from the old texts (the question, the 1 Peter 4:15 distinct
 
 ## What Has Actually Been Lost
 
-- "Stores closed on Sunday. Politicians quoted Scripture ... A pastor's word carried weight." Interpretation (general characterization; no date or figure).
+- "Through most of the country's history Americans assumed their neighbors were Christians of one kind or another. Stores closed on Sunday. Politicians quoted Scripture ... A pastor's word carried weight." Interpretation (general characterization; no date or figure). The first sentence was reworded in the voice pass of 2026-10-28 (it had read "a respectable American was assumed to be some kind of Christian", too close to a line in the approved pilot the-early-church-under-rome).
 - Link /writing/what-post-christian-means: in `link-targets.json` (checked by script).
 - Lee Epstein and Eric Posner studied every Supreme Court decision on the religion clauses from 1953 through the 2020 term; the Roberts Court ruled for religious organizations more than 80 percent of the time, against about half before; earlier pro-religion rulings more often favored minority faiths, Roberts Court winners mostly mainstream Christian organizations. Verified. Search (2026-10-28): Epstein's project page (epstein.usc.edu and epstein.wustl.edu "religionincourt", abstract: "over 83% of the time, compared to about 50% for all previous eras since 1953"; "in most of these cases, the winning religion was a mainstream Christian organization, whereas in the past pro-religion outcomes more frequently favored minority or marginal religious organizations"); University of Chicago Law School and New York Times coverage of the earlier 81 percent figure; one source describes the dataset as every case with an opinion on the religion clauses from 1953 to the 2020 term. "More than 80 percent" is true on either figure. "Legal scholars": textbook.
 - "Lately they have mostly won." Rests on Epstein and Posner.
@@ -107,7 +109,7 @@ What the writer kept from the old texts (the question, the 1 Peter 4:15 distinct
 
 - Rome crucified slaves and rebels and regarded the cross as the most degrading death it could inflict; Tom Holland begins *Dominion* with that horror. Verified for slaves and the opening. Search (2026-10-28): a Townhall review describing the preface (dead slaves in a ditch outside Rome's walls; "the most excruciating, contemptible death Rome could offer: crucifixion"); the book's blurb ("a punishment reserved for slaves"); Holland interview (crucifixion as humiliating, fit for slaves). "Rebels": textbook (the crucifixion of rebels, such as Spartacus's followers, is standard Roman history).
 - Holland argues that many moral assumptions the modern West treats as universal are the inheritance of Christianity. Writer's search only (Hachette/Basic Books page: "our morals and ethics are not universal but are instead the fruits of a very distinctive civilization"), consistent with the verifier's results on the book. "A faith that worshiped a crucified man" is the essay's wording, not a quotation. "A culture formed that way listens ...": interpretation, in the essay's own voice.
-- Bradley Campbell and Jason Manning, *The Rise of Victimhood Culture* (2018): a newer moral culture gives victims the highest moral standing, which gives people a reason to publicize offenses; examples mostly from college campuses. Verified. Search (2026-10-28): Wikipedia, Palgrave page, catalog records (Palgrave Macmillan, 2018; subtitle *Microaggressions, Safe Spaces, and the New Culture Wars*; "increases the incentive to publicize grievances").
+- Bradley Campbell and Jason Manning, *The Rise of Victimhood Culture* (2018; since the voice pass of 2026-10-28 the essay names the book without its year): a newer moral culture gives victims the highest moral standing, which gives people a reason to publicize offenses; examples mostly from college campuses. Verified. Search (2026-10-28): Wikipedia, Palgrave page, catalog records (Palgrave Macmillan, 2018; subtitle *Microaggressions, Safe Spaces, and the New Culture Wars*; "increases the incentive to publicize grievances").
 - "American public life now runs on grievance in every direction, and the church has learned to speak that language too." Interpretation.
 - Christian Smith, *American Evangelicalism: Embattled and Thriving* (1998): evangelicals flourish because of, not in spite of, their sense of conflict with a pluralistic culture. Verified as paraphrase. Search (2026-10-28): Lauren Winner's review in *Books & Culture* (Nov./Dec. 1998) quoting Smith ("thriving very much because of and not in spite of its confrontation with modern pluralism"); Christianity Today, "Thriving on Conflict" (Nov. 1998); Publishers Weekly (subcultural identity). One 2025 article names Michael Emerson as co-author; Smith is the named author in the other results, and the essay names Smith alone.
 - Quotation: John 15:19 (partial). ESV copy (verifier): exact. ESV search (2026-10-28): esv.org and biblehub ESV.
@@ -129,6 +131,7 @@ What the writer kept from the old texts (the question, the 1 Peter 4:15 distinct
 - Quotation: Acts 9:4, on the road to Damascus (9:3). ESV copy (verifier): exact, context read. ESV search (2026-10-28): biblehub ESV, quoted in the results.
 - "Took the persecutor and made him an apostle" (Acts 9:15, ESV copy read by the verifier; Galatians 1:1, textbook); quotation Acts 9:16. ESV copy (verifier): exact. ESV search (2026-10-28): an ESV copy summarized ("how much he must suffer"), not quoted in full.
 - "Jesus was reviled and did not revile in return." Paraphrase of 1 Peter 2:23 (quoted and checked above).
+- "His kingdom cannot be shaken." Allusion, without quotation marks, to Hebrews 12:28 (quoted and checked above). Replaced "His kingdom does not depend on whether America defers to it" in the voice pass of 2026-10-28, which echoed the closing line of the approved pilot the-early-church-under-rome.
 
 ## Closing Texts
 
@@ -144,6 +147,10 @@ What the writer kept from the old texts (the question, the 1 Peter 4:15 distinct
 - Links (3): /writing/the-early-church-under-rome, /writing/what-post-christian-means, /writing/the-progressive-blind-spot; all present in `link-targets.json` (script).
 - Length about 3,530 words.
 - Biography used: only "mine among them" (his church), resting on NOTES.md's confirmed facts. No title, years, book count or scene.
+
+## Voice pass and final audit (2026-10-28)
+
+Sentence-level edits only; no fact, quotation, number, date, name or link added, and every quotation (33) and link (3) is unchanged (script comparison against the verified text). Removed: an announcing heading ("What Christians Are Right to Notice"), the "dishonest to pretend otherwise" aside, the scholar-parade pattern in the Campbell-Manning and Smith paragraphs (Campbell-Manning year dropped), two "Not X. Y." antitheses, a two-beat closer, a chiastic paragraph ending, a tidy triplet, a parallel "A church that ... A church that" pair, a fragment paragraph that announced the next section, and two echoes of the approved pilot the-early-church-under-rome (the "respectable American ... some kind of Christian" line and the closing "defers to it"). Rechecked after the edits: no em-dash, no double hyphen, en-dashes only in verse ranges; one exclamation point, inside Luke 6:22; forbidden-language script clean; no BRIEF.md stamp or rulebook word. About 3,480 words; mean sentence about 19 words; paragraphs average about 81 words. Not a crisis-facing piece (no /help path needed); no second-order question left for James.
 
 ## Still open
 
