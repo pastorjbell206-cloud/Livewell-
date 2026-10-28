@@ -97,21 +97,27 @@ jobs:
       - run: pnpm run sitemap && pnpm run build && pnpm run prerender
       - name: Serve built site
         run: npx serve -s dist/public -l 4173 &
-      - name: Lighthouse (home)
+      # Three runs, judged on the median: a single run on a shared runner swings
+      # by more than the thresholds' margin (the same commit has scored 54 and
+      # 91), so one slow machine could turn the job red with no code change.
+      - name: Lighthouse (home, three runs)
         run: |
-          npx --yes lighthouse http://localhost:4173/ \
-            --chrome-flags="--headless --no-sandbox" \
-            --only-categories=performance,accessibility,best-practices,seo \
-            --output=json --output-path=./lh.json --quiet
-          node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
-      - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
+          for i in 1 2 3; do
+            npx --yes lighthouse http://localhost:4173/ \
+              --chrome-flags="--headless --no-sandbox" \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --output=json --output-path=./lh-$i.json --quiet
+            node -e "const r=require('./lh-$i.json').categories; console.log('run $i: ' + Object.keys(r).map(k => k + ' ' + Math.round(r[k].score*100)).join(', '))"
+          done
+      - name: Lighthouse thresholds on the median of three (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
         run: |
           node -e "
-            const r = require('./lh.json').categories;
+            const runs = [1, 2, 3].map((i) => require('./lh-' + i + '.json').categories);
+            const median = (k) => runs.map((r) => Math.round((r[k]?.score ?? 0) * 100)).sort((a, b) => a - b)[1];
             const min = { performance: 90, accessibility: 90, 'best-practices': 95, seo: 95 };
             let bad = 0;
             for (const k in min) {
-              const s = Math.round((r[k]?.score ?? 0) * 100);
+              const s = median(k);
               const ok = s >= min[k];
               console.log((ok ? 'ok  ' : 'FAIL') + ' ' + k.padEnd(15) + s + ' (min ' + min[k] + ')');
               if (!ok) bad++;
