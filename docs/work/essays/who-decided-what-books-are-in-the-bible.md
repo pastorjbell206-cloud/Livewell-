@@ -92,17 +92,17 @@ A party shaping a collection to win an argument would hardly have kept four Gosp
 
 No single person or meeting decided. The churches recognized books that had already proved themselves in worship. The lists came after the reading. Protestant and Catholic teaching weigh that recognition differently, but both describe the church as receiving these books, not making them Scripture. The Church of England's articles put it simply: "All the Books of the New Testament, as they are commonly received, we do receive, and account them Canonical." The First Vatican Council taught in 1870 that the church holds these books sacred because they were written under the inspiration of the Holy Spirit, not because the church approved them afterward.
 
-Paul thanked God that the Thessalonians, when they heard the apostles' preaching, "accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers" (1 Thessalonians 2:13). That is the canon in small. The churches did not make these books the word of God by listing them. They found the books at work among them, Sunday after Sunday, and wrote down what they had already received.
+Paul thanked God that the Thessalonians, when they heard the apostles' preaching, "accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers" (1 Thessalonians 2:13). The lists the churches drew up centuries later record the same kind of hearing on a larger scale. The churches had found these books at work among them, Sunday after Sunday, and they wrote down what they had already received.
 
-If you're a Christian who felt shaken when someone told you a council voted on your Bible, you can set that fear down. The process was slow, human and argued over. The church never hid that. If you're a skeptic, the history won't make you believe. It does mean the question can't be settled by blaming an emperor. It has to be settled with the books themselves. Read Athanasius's letter, and then read a Gospel straight through in the [Study Bible](/study/bible).
+If you're a Christian who felt shaken when someone told you a council voted on your Bible, you can set that fear down. The process was slow and human, and Christians disagreed along the way. If you're a skeptic, the history won't make you believe. It does mean the question can't be settled by blaming an emperor. It has to be settled with the books themselves. Read Athanasius's letter, and then read a Gospel straight through in the [Study Bible](/study/bible).
 
-For those who already trust these books, the harder question is closer to home. The Christians Justin described read the apostles and prophets "as long as time permits." Many American churches now read a few verses aloud on a Sunday and move on. We defend the whole canon and live on a small part of it.
+The Christians Justin described read the apostles and prophets "as long as time permits." Many American churches now read a few verses aloud on a Sunday and move on. Many of us would argue for every book in the canon and still hear very little of it read aloud.
 
 The churches held on to these books because they kept hearing a voice in them.
 
 It was the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.
 
-He still speaks through all of it, to anyone who will read the whole.
+He still speaks through all of it, the Old Testament as much as the New, to anyone who will read it.
 
 *"And we also thank God constantly for this, that when you received the word of God, which you heard from us, you accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers."* (1 Thessalonians 2:13)
 
