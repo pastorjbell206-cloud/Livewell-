@@ -104,7 +104,7 @@ Who in your town is the child nobody planned for, and the mother nobody has aske
 
 Would either of them be safe with us?
 
-Every one of us came to God the way Jerusalem did in Ezekiel's story, cast out on the open field with no eye to pity us. In Christ he passed by and said, "Live!"
+Every one of us came to God the way Jerusalem did in Ezekiel's story, cast out on the open field with no eye to pity us. In Christ he passed by and said, "Live!" (Ezekiel 16:6).
 
 He still says it, to the child and to the mother, and to those of us who failed them both.
 
