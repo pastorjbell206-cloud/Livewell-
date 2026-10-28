@@ -18,7 +18,7 @@ Then it moved. In 2002 the sociologists Michael Hout and Claude Fischer reported
 
 Hout and Fischer's explanation for the 1990s had two parts. Most of the new nones, they found, had not stopped believing in God. They held fairly conventional beliefs and had dropped the label and the institution. Later researchers had a name for them: unchurched believers. The increase was also concentrated among political moderates and liberals. Through those same years the religious right had become the public face of American Christianity, and Hout and Fischer argued that people who didn't share its politics began declining a religious identity that now seemed to come bundled with them.
 
-In a 2014 follow-up they went further. Political identity, they concluded, was shaping religious identity, rather than the other way around. Robert Putnam and David Campbell made a similar case in *American Grace* in 2010. Young Americans, they argued, came to associate religion itself with conservative politics, especially on homosexuality, and many walked away from both.
+In a 2014 follow-up they went further. Political identity, they concluded, was shaping religious identity, rather than the other way around. Robert Putnam and David Campbell made a similar case in *American Grace* in 2010. Young Americans, they argued, came to associate religion itself with conservative politics, especially on homosexuality, and many of them walked away from religion.
 
 ## Politics and the Mainline
 
