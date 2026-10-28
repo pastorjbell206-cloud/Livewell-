@@ -28,16 +28,16 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 13 | doubt-after-church-abuse | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
 | 14 | did-christianity-copy-pagan-myths | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
 | 15 | did-god-command-genocide | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read (James: publish open) |
-| 16 | what-romans-13-says | faith-and-power | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
-| 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
-| 18 | is-it-wrong-to-love-your-country | faith-and-power | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
-| 19 | the-children-rome-threw-away | ancient-church | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
-| 20 | what-render-unto-caesar-actually-means | faith-and-power | landing locally on land-next (new-2) |
-| 21 | the-rise-of-the-nones | after-christendom | landed and final-read fixed on local land-next (71c198dd); not pushed, waiting on James (same PR or separate) |
-| 22 | what-a-christian-owes-the-city | after-christendom | landing locally on land-next (new-2) |
-| 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | landing locally on land-next (new-2) |
-| 24 | what-the-original-audience-heard | bible-in-its-world | landing locally on land-next (new-2) |
-| 25 | the-persecution-we-invented | after-christendom | landing locally on land-next (new-2) |
+| 16 | what-romans-13-says | faith-and-power | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 18 | is-it-wrong-to-love-your-country | faith-and-power | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 19 | the-children-rome-threw-away | ancient-church | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 20 | what-render-unto-caesar-actually-means | faith-and-power | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 21 | the-rise-of-the-nones | after-christendom | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 22 | what-a-christian-owes-the-city | after-christendom | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 24 | what-the-original-audience-heard | bible-in-its-world | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
+| 25 | the-persecution-we-invented | after-christendom | landed and final-read fixed on local land-next (38f59acf; patches in docs/work/essays/land-next-patches); not pushed, waiting on James (join #541 or own PR) |
 | spare | when-the-pulpit-became-a-precinct | faith-and-power | if one is held |
 
 Rewrites fold in the slugs NOTES.md lists under "Essays each rewrite folds in"

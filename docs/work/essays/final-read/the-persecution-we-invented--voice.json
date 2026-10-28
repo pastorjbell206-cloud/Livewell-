@@ -1,0 +1,80 @@
+{
+  "slug": "the-persecution-we-invented",
+  "lens": "Voice read, last reader before publishing. I read /home/user/livewell-land/client/public/essays/the-persecution-we-invented.json (title, excerpt as standfirst, Markdown body) against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list, the brief's stamps and the rulebook words literally (script, case-insensitive), then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I edited nothing except this report. Fact and Scripture verification belong to the integrity lens and its ledger. No hard rule fails (forbidden language, em-dashes, exclamations, biography, stamps, second-order assertion, crisis path). The findings are about register and wording, plus one place where the argument contradicts itself.",
+  "findings": [
+    {
+      "where": "The Church That Is Suffering Now, last paragraph: \"It also means refusing to borrow their word for our losses. When a lost lawsuit or a hostile headline in America gets called persecution, we tell Christians in Chengdu and in Nigeria that their suffering and our inconvenience belong in the same category. They don't.\"",
+      "problem": "This contradicts the essay's own argument. The first two sections establish that Scripture counts insult, exclusion and the loss of a job (\"Those are real losses\", \"Scripture counts it\") and that \"The size of the cost, then, can't be what decides whether a loss is persecution.\" Here the essay argues from size, and \"our inconvenience\" shrinks the Cochran-type losses it just honored. The skeptic will notice the test changing. A pastor whose member lost a job over the faith will hear that member dismissed. The essay's real line, from What Has Actually Been Lost, is between persecution and the loss of privilege, so the sentence should draw that line instead.",
+      "fix": "Make three replacements in this paragraph: \"for our losses\" becomes \"for the loss of our standing\"; \"When a lost lawsuit or a hostile headline in America\" becomes \"When every lost lawsuit and hostile headline in America\"; \"their suffering and our inconvenience\" becomes \"their suffering and our lost privilege\". The paragraph then reads: \"It also means refusing to borrow their word for the loss of our standing. When every lost lawsuit and hostile headline in America gets called persecution, we tell Christians in Chengdu and in Nigeria that their suffering and our lost privilege belong in the same category. They don't.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Headings: \"## What the New Testament Means by the Word\" and \"## Why the Word Is So Tempting\"",
+      "problem": "In title case, \"the Word\" in a Christian essay reads first as Christ (John 1:1) or as Scripture, not as the word \"persecution\". So both headings are coy instead of plain and descriptive, and a reader scanning the headings can't tell what either section is about. The body already uses the plain phrase \"the persecution story\".",
+      "fix": "Replace \"## What the New Testament Means by the Word\" with \"## What the New Testament Means by Persecution\". Replace \"## Why the Word Is So Tempting\" with \"## Why the Persecution Story Is So Tempting\".",
+      "severity": "should"
+    },
+    {
+      "where": "Why the Word Is So Tempting, paragraphs 2 to 4: \"The historian Tom Holland begins his book *Dominion* ...\" / \"The sociologists Bradley Campbell and Jason Manning have written ... Their book *The Rise of Victimhood Culture* argues ...\" / \"The sociologist Christian Smith saw another side of it in 1998. Evangelicals, he argued in *American Evangelicalism: Embattled and Thriving*, were flourishing ...\"",
+      "problem": "These are three paragraphs in a row with the same frame: \"The [discipline] [Name]\" followed by an italic book title. One section earlier, \"The legal scholars Lee Epstein and Eric Posner studied ...\" uses the frame a fourth time. That is the scholar parade the judges caught. Each witness does real work, so they all stay, but the repeated title-and-credential frame makes the section sound like a bibliography. Naming the idea instead of the book breaks the pattern for two of them.",
+      "fix": "Campbell and Manning: replace \"Their book *The Rise of Victimhood Culture* argues that a newer moral culture grants\" with \"They argue that a newer moral culture, which they call victimhood culture, grants\". Smith: replace \"Evangelicals, he argued in *American Evangelicalism: Embattled and Thriving*, were flourishing\" with \"Evangelicals, he argued, were flourishing\". Holland's *Dominion* stays as it is.",
+      "severity": "should"
+    },
+    {
+      "where": "Closing Texts, first line: *\"Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.\"* (Hebrews 13:3)",
+      "problem": "This is the verse's third appearance in the last 600 words. It is quoted in full in The Church That Is Suffering Now (\"The New Testament's instruction about Christians like him is direct\"), paraphrased in the ending stack (\"to remember the ones in prison as though we were there with them\"), and then repeated verbatim here. A third use turns the close into a recap. The brief allows two or three Closing Texts.",
+      "fix": "Delete the Hebrews 13:3 line from Closing Texts. Leave the 1 Corinthians 4:12–13 and Matthew 5:44 lines as they are.",
+      "severity": "should"
+    },
+    {
+      "where": "Who Has Been Persecuted in America, Paul paragraph, last sentence: \"The persecutors in Scripture are rarely cynics, and most of them are sure they are right.\"",
+      "problem": "This is a two-beat aphoristic closer. It falls between two other paragraph-end landings (\"That doesn't change who suffered in 1940, or who made them suffer.\" just before it, and the standalone verdict \"American Christians have stood where Saul stood more often than we like to remember.\" just after), which makes three verdicts in a row. John 16:2 has already made the point, and the section needs only its one real verdict line.",
+      "fix": "Delete the sentence. The paragraph ends on \"... will think he is offering service to God\" (John 16:2).",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening, paragraph 4, last sentence: \"The question now has a federal task force attached to it.\"",
+      "problem": "This is a wry kicker after a run of plain facts. Read aloud, it sounds arch about the executive order, and a pastor whose congregation welcomed the order will hear a partisan aside in the first 300 words. The essay is fair to the right everywhere else, so this is the one place the tone could tip the read. The facts carry the point without it. It also dates the essay: the ledger notes that the task force's current status was not checked.",
+      "fix": "Delete the sentence. The paragraph ends on \"... creating a Task Force to Eradicate Anti-Christian Bias, chaired by the attorney general.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What Has Actually Been Lost, paragraph 1, last two sentences: \"The [larger story of how that arrangement ended](/writing/what-post-christian-means) belongs to another essay. What matters here is that it was an arrangement, and it has ended.\"",
+      "problem": "\"What matters here is that\" is the essay steering itself, and it comes right after a sentence that points to \"another essay\". The link sentence is useful signposting. The second stage direction is not, and it buries a short verdict that stands on its own.",
+      "fix": "Replace \"What matters here is that it was an arrangement, and it has ended.\" with \"It was an arrangement, and it has ended.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Ending stack: \"Most of us will never be asked for what Paul gave.\"",
+      "problem": "\"Asked for what Paul gave\" is vague. The essay never says what Paul gave (his death is outside the text), and the line just before it is about \"how much he must suffer\" (Acts 9:16). Read aloud, the reader has to supply the referent at the moment the ending should be plainest.",
+      "fix": "Replace with: \"Most of us will never be asked to suffer what Paul suffered.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Heading: \"## How to Bear What Comes\"",
+      "problem": "\"What comes\" is vague and slightly literary. The section is about what American churches would change now (Peter's question, defending rights without contempt, dropping the word from fundraising letters, teaching children) and how to prepare in case persecution comes. The heading doesn't tell the reader that.",
+      "fix": "Replace with \"## How Christians Should Respond\".",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Forbidden Language, literal case-insensitive search of every word and phrase in CLAUDE.md (delve, leverage, unlock, transformative, navigate/navigat-, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic; in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed as adjective, gospel-centered, authentic community; hold space, your truth, do the work, your feelings are valid, lean into, showing up): zero hits in title, standfirst and body. \"Blessed\" appears only inside quoted Scripture (Matthew 5:11, Luke 6:22, 1 Peter 4:14). \"Bless\" and \"blessing\" appear only in quoted Romans 12:14 and 1 Corinthians 4:12, and as verbs (\"blessing its critics\", \"bless the people who mock us\").",
+    "Em-dashes (U+2014): none. En-dashes: four, all in verse ranges (Hebrews 10:33–34, 1 Peter 4:14–15, John 6:66–68, 1 Corinthians 4:12–13). Semicolons: only inside quoted Scripture.",
+    "Exclamation points: one, inside verbatim quoted Scripture (Luke 6:22 ESV, \"on account of the Son of Man!\").",
+    "Brief stamps (Those of us who preach, pastors like me, This is not both-sidesism, Consider ..., none of this, the record, I don't exempt myself): none used. No home-grown phrase repeats as a stamp. \"The meddler\" and \"Peter's question\" each return once as deliberate callbacks.",
+    "Rulebook leakage words (steelman, verdict, indictment, self-implication) and self-certifying \"honest\"/\"fair\": zero occurrences.",
+    "Biography: one first-person clause, \"Most churches, mine among them, believe the Witnesses' teaching about Christ departs from the faith of the creeds.\" It is within the confirmed facts (he pastors a church), and it is used to concede, not as a credential. The essay gives no title, years in ministry or book count, and implies no Southern Baptist membership. \"Baptist\" appears only in \"Sixteenth Street Baptist Church\". No invented scene.",
+    "Standfirst: \"Most of what American Christians now call persecution is the loss of a privileged place in the culture, and the New Testament teaches a different way to bear that loss than the one we have learned.\" One declarative sentence joined by \"and\". It is not a balanced antithesis or a Both/Neither template.",
+    "Title \"Is the American Church Really Being Persecuted?\" is in the plain words people search. These headings are plain and descriptive: The Cases Christians Point To; Who Has Been Persecuted in America; What Has Actually Been Lost; The Church That Is Suffering Now. The other three are flagged above.",
+    "Political direction: the persecution story is criticized mostly on the right, and the essay says why from data (PRRI 2017, the 2025 order). That asymmetry is supported, which VOICE-JAMES-BELL.md permits. The essay grants the right's strongest cases as real (Phillips, Cochran, the Richmond FBI memo). It applies the same instrument leftward: Campbell and Manning's campus examples, \"American public life now runs on grievance in every direction\", the /writing/the-progressive-blind-spot link, and \"The temptation underneath is the same\". It also names Christians as persecutors across the spectrum (Protestant mobs in 1834, nativist mobs in 1844, patriotic mobs in 1940). The criticism does not fire in only one direction.",
+    "Contested second-order questions: none asserted. The marriage dispute is described (\"the traditional Christian view\", \"the church's historic teaching on marriage\") without the essay arguing it. The Witnesses' Christology is a first-order matter and is stated plainly. needs_james not required.",
+    "Crisis-facing: not a crisis piece. No reader-in-distress passage, and no self-harm or abuse is in view (the passing \"the way its leaders treated the people under them\" describes public criticism of churches, not a survivor). No /help path required.",
+    "Self-implication is done, not announced: \"we\" carries the turn (\"it isn't what we usually do\", \"we should grieve that before we grieve our lost influence\", \"We like the feeling of being besieged more than we admit\", \"Most of us know from the inside\").",
+    "Scripture works inside the argument rather than as decoration: the meddler in 1 Peter 4:15 sets the test; Acts 22:25 and 25:11 ground the defense of rights; Hebrews 12:28 interprets the lost standing; Acts 9:4 carries the theological landing.",
+    "Announced turns: none of the judges' templates. Questions used as hinges (\"So is the American church being persecuted?\", \"Why do we reach for the word so quickly?\", \"What would change ...?\") are real questions, which the brief allows.",
+    "Ending: passes through Christ (Acts 9:4 and 9:16, 1 Peter 2:23, Hebrews 12:28), turns the mirror on the reader (\"We are asked to bless the people who mock us\") and leaves weight without a clever kicker. The only recap signal is the third Hebrews 13:3, flagged above.",
+    "Links: three (/writing/the-early-church-under-rome, /writing/what-post-christian-means, /writing/the-progressive-blind-spot), all in docs/work/essays/link-targets.json, within the two to four allowed.",
+    "Register numbers (script, body without headings and Closing Texts): about 3,340 words, 41 paragraphs averaging about 81 words, mean sentence about 19 words. About 16% of sentences are 8 words or fewer, under the pilots' quarter, but no fragment stacks. Contractions are light, and the deity pronouns He/His are capitalized consistently.",
+    "Skeptic read: the essay concedes the persecutor history, the Roberts Court record and the Open Doors caveat about Nigeria. A thoughtful unbeliever would not feel handled. Pastor read: a pastor could hand this to a congregation once the inconvenience contradiction is fixed, since that is the line a member who lost something real would stop on."
+  ]
+}

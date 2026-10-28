@@ -1,0 +1,130 @@
+{
+ "slug": "what-a-christian-owes-the-city",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/what-a-christian-owes-the-city.json (title, excerpt as standfirst, Markdown body; this is the published text and it differs in two small places from docs/work/essays/what-a-christian-owes-the-city.md, so every quoted string below is from the JSON body and occurs there exactly once), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, counted the register against the brief's targets, compared the piece by 6-word overlap with the 25 other landed essays and the drafts (including the five pilots), and read it once as the skeptic and once as a pastor deciding whether to hand it to a congregation. It is a strong essay: the Cyprian frame, the Shemaiah reply, Jeremiah 51 set beside Jeremiah 29, and the turn at Birmingham ('Often it has been closer to Babylon') are his register at its best. One finding is a rule breach (the essay asserts a position on the church-and-culture question it had just declared open). The rest are small: two sentences that reuse a pilot's sentence, a shelf stamp, extra paragraph-end kickers, a 'Most of us' tic, and list scaffolding in the practical section. None restructures the piece. Quotation and Scripture wording (Cyprian, Pontius, Augustine, King, the ESV) and the historical dates belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "What a Christian Owes the City, paragraph beginning \"Then there are the people Jeremiah named.\": \"That will lead some Christians onto school boards and city councils and into the courts. It should. The prophets were never shy about the conduct of kings.\"",
+   "problem": "\"It should.\" asserts James's position on the second-order question the essay itself declared open two sections earlier (\"How far the church should try to shape the culture around it is still a live question. Anabaptists, Lutherans and the Reformed, who love the same Lord, have argued about it for five centuries. Jeremiah's letter doesn't settle it.\"). Whether a Christian should hold civil office or go to law is precisely where the Anabaptist tradition the essay has just honored has historically said no (the Schleitheim Confession of 1527). A Mennonite reader, or a pastor with Anabaptist-leaning members, finishes the paragraph overruled rather than understood, and the brief makes this non-negotiable: state it, leave it open, never assert his position. The sentence before already describes what will happen, and the sentence after grounds prophetic speech, which every tradition shares, so cutting the two words keeps the paragraph's force without taking the side.",
+   "fix": "Replace \"That will lead some Christians onto school boards and city councils and into the courts. It should. The prophets were never shy about the conduct of kings.\" with: \"That will lead some Christians onto school boards and city councils and into the courts. The prophets were never shy about the conduct of kings.\"",
+   "severity": "must"
+  },
+  {
+   "where": "The Letter Jeremiah Sent, paragraph 2, second sentence: \"The Hebrew word for peace there is shalom, the same word the ESV translates \"welfare\" three times in Jeremiah's sentence.\"",
+   "problem": "Reuses a pilot's sentence. The approved pilot what-post-christian-means says \"The word the ESV translates \"welfare\" three times in verse 7 is the Hebrew *shalom*\", and this essay links to that pilot one paragraph earlier, so a reader who follows the link meets the same observation in nearly the same words. The frame \"the same word the ESV translates\" also appears in why-does-god-feel-far-away. The brief forbids reusing a sentence from a pilot. The Psalm 122 connection is this essay's own and stays; only the wording changes.",
+   "fix": "Replace \"The Hebrew word for peace there is shalom, the same word the ESV translates \"welfare\" three times in Jeremiah's sentence.\" with: \"The Hebrew word for peace there is shalom, and it stands behind all three uses of \"welfare\" in Jeremiah's sentence.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Jeremiah's Judgment on Babylon, paragraph 2: \"Seeking the welfare of a city was never the same as believing in it. It didn't require them to call Babylon's gods good or its conquests just.\"",
+   "problem": "Two problems in one line. It is the pilot what-post-christian-means's sentence frame (\"Seeking the city's welfare was never permission to become indistinguishable from it.\") with a new ending, and it is an aphorism dropped mid-paragraph in a section whose genuine verdict comes in the next paragraph (\"Most of us manage only half of it...\"). The plain sentences around it already make the point: the exiles worked for the city knowing it stood under judgment, and the command neither blessed Babylon's gods nor permitted withdrawal.",
+   "fix": "Replace \"Seeking the welfare of a city was never the same as believing in it. It didn't require them\" with: \"The command didn't require them\"",
+   "severity": "should"
+  },
+  {
+   "where": "What Makes a City Well, paragraph 2, last two sentences: \"So when the exiles were told to seek Babylon's shalom, they were not being told to make Babylon rich, or to make themselves comfortable there. They were told to want for Babylon what God had always wanted for Jerusalem.\"",
+   "problem": "Two \"not X. Y.\" antitheses in one paragraph (\"Its welfare isn't measured first by its skyline or its property values. It's measured by...\" and then this), which the voice standard puts on the avoid list once the first has done its work. The second is also redundant (\"make Babylon rich\" repeats \"skyline or property values\"), and \"or to make themselves comfortable there\" sits awkwardly against the verse itself, which promises \"in its welfare you will find your welfare.\" Keep the skyline line, which is concrete and modern, and let the section verdict land plainly.",
+   "fix": "Replace \"So when the exiles were told to seek Babylon's shalom, they were not being told to make Babylon rich, or to make themselves comfortable there. They were told to want for Babylon what God had always wanted for Jerusalem.\" with: \"So when the exiles were told to seek Babylon's shalom, they were being told to want for Babylon what God had always wanted for Jerusalem.\"",
+   "severity": "should"
+  },
+  {
+   "where": "American Protestants and the Public Square, paragraph 4: \"The left has its own version of the mistake, when a church takes its moral agenda from a party and its public voice starts to sound like [one side's talking points](/writing/the-progressive-blind-spot).\"",
+   "problem": "Shelf stamp and balance token. excavation-not-demolition already uses \"The left has its own version\" for the same move, so two essays on a short shelf now share the sentence. Here it also reads as a tacked-on line to even the ledger after the Moral Majority sentence. The criticism of the left belongs in the essay (the guardrail must fire both ways, and it does); it should be stated as plainly as the sentence about the right, with churches as the subject, not \"the left\" as a category.",
+   "fix": "Replace \"The left has its own version of the mistake, when a church takes its moral agenda from a party and its public voice starts to sound like [one side's talking points]\" with: \"Churches on the left have made their own version of the mistake, taking their moral agenda from a party until their public voice sounds like [one side's talking points]\" (the link target stays as it is).",
+   "severity": "should"
+  },
+  {
+   "where": "American Protestants and the Public Square, paragraph 3, second sentence: \"Historians call what followed the Great Reversal, a phrase Timothy Smith used and the sociologist David Moberg made the title of a book.\"",
+   "problem": "Scholar parade. This section names Rauschenbusch, Smith, Moberg, Henry, Falwell and Hunter in five paragraphs, with three titles and years. Rauschenbusch, Henry, Falwell and Hunter each move the argument. Smith and Moberg do not: remove them and the sentence says the same thing, which is the test for decoration. Cutting the clause also lightens the section's run of names without losing the term.",
+   "fix": "Replace \"Historians call what followed the Great Reversal, a phrase Timothy Smith used and the sociologist David Moberg made the title of a book.\" with: \"Historians call what followed the Great Reversal.\"",
+   "severity": "should"
+  },
+  {
+   "where": "American Protestants and the Public Square, paragraph 5, last sentence: \"Jeremiah's exiles would have understood him.\"",
+   "problem": "Aphoristic kicker at a paragraph end. The section already closes on its genuine verdict two paragraphs later (\"you are still told to pray for the city and work for its good, and you are still forbidden its gods\"), and Henry's paragraph ends on its own two-beat line. This one is the clever extra, and it claims more about what the exiles would have thought of a 2010 sociology book than the essay can show.",
+   "fix": "Delete \" Jeremiah's exiles would have understood him.\" so the paragraph ends: \"...because the question assumes history can be controlled.\"",
+   "severity": "should"
+  },
+  {
+   "where": "King and the Clergymen of Birmingham, paragraph 2: \"That is an argument about shalom. A city can be quiet and still not be well. Jeremiah had charged the prophets...\"",
+   "problem": "Redundant aphorism, and the start of a motif stamped through the section. King's own words have just made the point (negative peace versus positive peace) and Jeremiah 6:14 makes it again in the next sentence, so the essay's line says it a third time. Calm and quiet then recur in \"required calm\", \"his city calm\", \"his town quiet\" and \"Calm is easy to mistake for peace\". That last line is the section's earned landing in James's own voice; cutting this one lets it land.",
+   "fix": "Replace \"That is an argument about shalom. A city can be quiet and still not be well. Jeremiah had charged\" with: \"That is an argument about shalom. Jeremiah had charged\"",
+   "severity": "should"
+  },
+  {
+   "where": "What a Christian Owes the City, paragraphs 1 to 3: \"But it is owed far more than most of us give it.\" / \"Most of us have never been asked anything that hard.\" / \"Most of us can do far more good in our own county\"",
+   "problem": "\"Most of us\" appears five times in the essay and three times in three consecutive paragraphs here, where it becomes the device rather than the self-implication (it also closes the Jeremiah 51 section and opens the ending). \"Far more\" doubles in the same span. \"Most of us have never been asked anything that hard\" is also a paragraph-end kicker after Cyprian's line, which is stronger standing alone. Keep the first use (\"Most of us manage only half of it.\") and the one in the ending stack.",
+   "fix": "Three edits. (1) Replace \"But it is owed far more than most of us give it.\" with \"But it is owed far more than we usually give it.\" (2) Delete \" Most of us have never been asked anything that hard.\" so the paragraph ends \"Cyprian prayed day and night for people who blamed him for a plague.\" (3) Replace \"Most of us can do far more good in our own county\" with \"We can do more good in our own county\".",
+   "severity": "should"
+  },
+  {
+   "where": "What a Christian Owes the City, paragraph beginning \"The hardest part of the debt is good done to a city that doesn't want us.\"",
+   "problem": "Announced turn, the kind the judges caught (\"Then comes the charge that stings most\"). The practical section is already walking through its debts with enumerators (\"to begin with\", \"Daniel adds the work itself\", \"Then there are the people Jeremiah named\", \"Daniel also shows\"), and this one ranks the next item before saying it, which makes the section read as a list with the numbers taken out. A plain statement carries the same weight, and tying it back to Carthage's blame keeps Cyprian in view for the Pontius sentence that follows.",
+   "fix": "Replace \"The hardest part of the debt is good done to a city that doesn't want us.\" with: \"We owe the city good even when it blames us for its troubles.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What a Christian Owes the City, paragraph 2, first sentence: \"It is owed our prayers, to begin with, and not the vague kind.\"",
+   "problem": "List scaffolding. \"To begin with\" announces a numbered sequence, which is the clean application turn the CLAUDE.md formation standard warns against. The section reads as accumulated paragraphs once the enumerator goes.",
+   "fix": "Replace \"It is owed our prayers, to begin with, and not the vague kind.\" with: \"It is owed our prayers, and not the vague kind.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Cyprian and the Plague at Carthage, paragraph 4, last sentence: \"Nearly all of us reach for the same verse to explain it.\"",
+   "problem": "Overclaim. Those who want to take the country back more often reach for 2 Chronicles 7:14 than for Jeremiah 29:7, a verse about living in exile. A skeptic or a well-read pastor will notice that \"nearly all\" is not true, and the section that follows does not need it to be.",
+   "fix": "Replace \"Nearly all of us reach for the same verse to explain it.\" with: \"Many of us reach for the same verse to explain it.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Augustine and the Peace of Babylon, paragraph 1, second sentence: \"Rome had fallen, they said, because it had abandoned its gods.\"",
+   "problem": "Ambiguous chronology. The sack of 410 was not the fall of Rome, and a reader who knows the Western empire ended in 476 will stop here. The pagans' complaint was that the city had been taken.",
+   "fix": "Replace \"Rome had fallen, they said, because it had abandoned its gods.\" with: \"Rome had been taken, they said, because it had abandoned its gods.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Letter Jeremiah Sent, paragraph 2, opening: \"Start with a word the exiles already knew. Israel's psalter taught\"",
+   "problem": "Imperative signpost, the same move as the \"Consider ...\" stamp the brief lists. The paragraph works without it, and the past perfect carries the sense that the exiles already knew the prayer.",
+   "fix": "Replace \"Start with a word the exiles already knew. Israel's psalter taught\" with: \"Israel's psalter had taught\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Jonah and the City God Spared, paragraph 3: \"That is the deepest reason a Christian owes the city anything. We were Nineveh once, and God sought our welfare at the cost of his Son.\"",
+   "problem": "Announced verdict. \"That is the deepest reason\" ranks the line before it lands, and \"That is ...\" has already served as the hinge three times (\"That is the freedom the letter gives\", \"That is an argument about shalom\", \"That is the command Pontius says...\"). \"We were Nineveh once\" is the best sentence in the essay and does not need the introduction.",
+   "fix": "Delete \"That is the deepest reason a Christian owes the city anything. \" so the paragraph is: \"We were Nineveh once, and God sought our welfare at the cost of his Son.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Jonah and the City God Spared, paragraph 4, last sentence: \"Their mission would begin in the city that had crucified him.\"",
+   "problem": "The ending stack partly restates the two paragraphs before it. The sending is said three times in four short paragraphs (John 20:21, this sentence, and \"Then he sent his people back in, carrying his peace\"), and \"the city that had crucified him\" repeats \"the city that would reject him\" from two paragraphs earlier. Cutting this sentence lets the final line say it once, after the mirror has turned on the reader, which is where the brief wants the weight.",
+   "fix": "Delete \" Their mission would begin in the city that had crucified him.\" so the paragraph ends on the John 20:21 quotation.",
+   "severity": "consider"
+  },
+  {
+   "where": "Jonah and the City God Spared, paragraph 4, opening: \"On the evening of the resurrection, with the doors locked for fear,\"",
+   "problem": "Shelf phrase. who-decided-what-books-are-in-the-bible uses \"on the evening of the resurrection\" twice, including in its closing lines, so two endings on a short shelf open their last scene the same way. A plain variant keeps the scene.",
+   "fix": "Replace \"On the evening of the resurrection, with the doors locked for fear,\" with: \"On the evening of the day he rose, with the doors locked for fear,\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, literal search of title, standfirst and body: zero hits for every word (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), every phrase (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community) and every therapy-speak item (hold space, your truth, do the work, your feelings are valid, lean into, showing up). \"Blessing\" occurs only inside quoted Proverbs 11:11, as a noun.",
+  "Em-dashes: zero U+2014 anywhere. The only dashes are en-dashes in verse ranges (22:15–16, 5:44–45).",
+  "Exclamation points: two, both inside verbatim ESV Scripture (Psalm 122:6, Daniel 4:19). None in his prose.",
+  "Brief stamps: none of \"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\".",
+  "Rulebook leakage: no steelman, verdict, indictment or self-implication; \"honest\" absent; \"fair\" once, as \"a fair hearing\" for the widow, not self-certifying. Fairness is done, not announced: the Birmingham clergymen are \"not segregationist firebrands\", Rauschenbusch \"saw something many comfortable churches had missed\", and Pontius is flagged as an admiring biographer without fuss.",
+  "Headings are plain and descriptive: Cyprian and the Plague at Carthage; The Letter Jeremiah Sent; Jeremiah's Judgment on Babylon; What Makes a City Well; Augustine and the Peace of Babylon; American Protestants and the Public Square; King and the Clergymen of Birmingham; What a Christian Owes the City; Jonah and the City God Spared.",
+  "Standfirst is one plain declarative sentence, not a balanced antithesis.",
+  "Title uses plain search words (What Does It Mean to Seek the Welfare of the City?).",
+  "Biography: the only personal line is \"I pastor a Baptist church too\", a confirmed fact, used to put himself beside Stallings and doubt himself (\"I know myself well enough to doubt it\"), not as a credential. No title, years in ministry, book count, Southern Baptist membership, invented scene, or father/atheism material. No brand tie-in (\"living well\" never appears).",
+  "Political criticism fires both ways with the same instrument: the Social Gospel's drift and the left's party agenda; the Great Reversal and the Moral Majority; Hunter's critique of Right, Left and neo-Anabaptists; \"both parties reward it\"; and the \"people we trust\" / \"people we distrust\" pair. The Birmingham turn indicts the majority white church, which is where the evidence puts responsibility, without false symmetry.",
+  "Second-order question (how far the church should shape culture) is named as open, with the traditions that divide on it, and left open; the one place the essay then takes a side is the must finding above.",
+  "Self-implication is done rather than announced: \"We like to picture ourselves as the exiles\", \"Most of us manage only half of it\", and the Stallings paragraph.",
+  "Ending: a short stack of plain lines that turns the mirror on the reader (\"Most of us know what it is to sit with Jonah outside the city...\") and lands on Christ and the sending; it does not recap the essay. Closing Texts block (Jeremiah 22:16, Psalm 127:1) matches the shelf format.",
+  "Crisis care: not a crisis-facing piece; no self-harm, abuse or despair in view, so no Find Help line is needed.",
+  "Scripture is used inside the argument and in context (Jeremiah 29 with Shemaiah's reply in 29:24-32, Jeremiah 51:59-64, Jeremiah 22 on Jehoiakim, Daniel 4:27), never as decoration.",
+  "Links: three essay links (what-post-christian-means, the-conservative-blind-spot, the-progressive-blind-spot), all in link-targets.json, within the two-to-four limit, and the link text is accurate (the pilot does cover the letter's setting and the seventy years). The two political links are paired, one each direction.",
+  "Register against the brief's targets: 3,794 words; 44 paragraphs averaging 84 words; mean sentence 17.7 words; about 19 percent of sentences at 8 words or fewer. Within range.",
+  "Triplets: the lists of three that remain are factual (Hunter's three political theologies, the three Reformation traditions, Jeremiah's resident alien, fatherless and widow, the clergymen's three faiths), not padding.",
+  "6-word overlap with the other 25 landed essays and the drafts: apart from Scripture quotations and generic phrases, the only reused wording is what the findings above name (the pilot's shalom sentence, \"The left has its own version\", \"on the evening of the resurrection\").",
+  "All 17 fixes applied together to a scratch copy (not to the essay): each quoted string matched exactly once, the result has no forbidden-language hit, no em-dash, no new 6-word overlap with the shelf beyond Scripture and generic phrases, and \"Most of us\" drops from five uses to two."
+ ]
+}

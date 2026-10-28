@@ -320,3 +320,11 @@ The project hit the Hobby plan's 100-deployments-a-day limit ("api-deployments-f
 - Why are people leaving: "a church cannot drop a teaching it believes Christ gave in order to keep a member" (sex and marriage), worded as he wants?
 - Children Rome threw away: the pastoral section speaks to men who "pressed someone else to end" a pregnancy, and calls abortion sin while leaving the law open. Tone and position?
 - Who decided the books: Closing Texts now open with Romans 15:4.
+
+## For James at the read of the new essays (final read, local batch 2, 2026-10-28)
+
+- Render unto Caesar: name the unborn child beside "a border station" in the list of people who bear God's image (one reader suggested it for balance)?
+- Persecution: state the passage critics cited from Kelvin Cochran's book, or keep the book described only as teaching the traditional view of sex and marriage?
+- Persecution: add Pew's newer figure (58 percent felt conflict with mainstream culture by early 2025) beside the 2024 figure of 48 percent?
+- The city: whether Christians should hold civil office or go to law is left open; state his position or keep it open?
+- Render unto Caesar now links "the Christians in Rome" to the Romans 13 essay (five site links, one more than the brief's two to four).
