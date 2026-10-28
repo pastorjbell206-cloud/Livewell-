@@ -6,7 +6,7 @@ On July 21, 2024, First Baptist Church of Mount Vernon, Illinois, held its last 
 
 Burge is also a political scientist. He has spent years studying the Americans who answer "none" when a survey asks their religion, and in 2021 he published a book about them called *The Nones*. Few pastors could have read the trend line under their own pulpit as clearly as he could. The church closed anyway. Nearly a year later he wrote that he still wasn't over it.
 
-Why are people leaving? Most Christians who love the church have an answer ready. Many conservatives would say the culture turned. The universities, the entertainment industry and the sexual revolution taught a generation to see faith as backward, and the churches that softened their message to keep up only hurried people toward the door. Many progressives would say the church drove people out. It tied itself to a political party, protected its abusers, and met gay neighbors and doubting teenagers with contempt, so people with a conscience left. Each account has evidence behind it. Each also places the cause among the other kind of Christian, which should make us suspicious of both.
+Why are people leaving? Most churchgoers have an answer ready. Many conservatives would say the culture turned. The universities, the entertainment industry and the sexual revolution taught a generation to see faith as backward, and the churches that softened their message to keep up only hurried people toward the door. Many progressives would say the church drove people out. It tied itself to a political party, protected its abusers, and met gay neighbors and doubting teenagers with contempt, so people with a conscience left. Each account has evidence behind it. Each also places the cause among the other kind of Christian, which should make us suspicious of both.
 
 The research is less comfortable for everyone. It finds real disbelief and real injury. It also finds something larger than either, which neither camp likes to talk about. A great many people didn't storm out of the church. They drifted, and a good share of what they drifted away from was a faith we had made too thin to keep.
 
@@ -46,7 +46,7 @@ Christian Smith and Melinda Lundquist Denton saw the problem early. In *Soul Sea
 
 Smith and Denton did not find teenagers in revolt against their parents' religion. Most said their beliefs were similar to their parents', and the strongest influence on their faith was their parents. The teenagers had learned what they were taught.
 
-That is the uncomfortable center of the whole question. A faith whose main promise is that God will help you feel good about yourself gives no reason to get up on a Sunday morning once nobody expects you to. We tend to speak of the nones as people who left the church's faith. A good many of them left a substitute that churches and families had allowed to stand in its place. Some of them were right to find it thin.
+That is the uncomfortable center of it. A faith whose main promise is that God will help you feel good about yourself gives no reason to get up on a Sunday morning once nobody expects you to. We tend to speak of the nones as people who left the church's faith. A good many of them left a substitute that churches and families had allowed to stand in its place. Some of them were right to find it thin.
 
 Thin faith is older than the suburbs. In 1528 and 1529 Martin Luther took part in a visitation of the parishes of Saxony, and in the preface to his Small Catechism he described what he found. Ordinary people knew almost nothing of Christian teaching, and many pastors were unfit to teach it. Everyone called himself a Christian, had been baptized and received the sacrament, and yet many could not recite the Lord's Prayer, the Creed or the Ten Commandments. A Christian society had carried those villagers for centuries without teaching them much of anything. Luther's answer was a small book meant to be taught at home, line by line, by the head of the household. American Christendom carried people in much the same way for a long time. When the culture stopped carrying them, many discovered how little they had been taught.
 
@@ -96,7 +96,7 @@ The chapter doesn't end with the shepherds' failure. "For thus says the Lord GOD
 
 Someone you love is probably in these numbers. Some left because of Jesus and some because of us, and a great many simply drifted.
 
-The Lord is still searching for every one of them. The Good Shepherd laid down His life for sheep who wandered off and for sheep who pushed others out, and most of us have been both.
+The Lord is still searching for them. The Good Shepherd laid down His life for sheep who wandered off and for sheep who pushed others out, and most of us have been both.
 
 He is still going after the lost. The question is whether we will go with Him.
 
