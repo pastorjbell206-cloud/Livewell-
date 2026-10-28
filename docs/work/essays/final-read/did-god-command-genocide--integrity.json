@@ -1,0 +1,25 @@
+{
+  "slug": "did-god-command-genocide",
+  "lens": "Fact integrity: every checkable claim in the published essay (client/public/essays/did-god-command-genocide.json, byte-identical to the draft docs/work/essays/did-god-command-genocide.md) traced to its ledger line and, where risky, rechecked against primary texts (TCP Underhill A14203 and Mason N03314, WDB Tertullian and Augustine files, the ESV copy, the site's BSB chapter files) and 10 web searches this run.",
+  "findings": [
+    {
+      "where": "Section 'What These Chapters Have Been Used For', paragraph 3, first sentence: \"Underhill was not the last American Christian to read Canaan onto the people whose land he wanted.\" Also paragraph 1 of the same section: \"so that English soldiers could play Israel and the Pequots could play Canaan.\"",
+      "problem": "(c) Mismatch between ledger evidence and essay. The essay says Underhill read Canaan onto the Pequots and wanted their land. This run searched the full TCP transcription of Underhill's Newes from America (A14203): it never mentions Canaan, Joshua, Jericho, Amalek or the Amorites. At the point the essay quotes, his only named precedent is \"Davids warre\" (the Ammonite campaign, harrows and saws). The ledger itself notes this (Mystic section, 'Note for the editor'). The ledger's support for the sentence (section 'What these chapters have been used for') is John Mason, not Underhill: Mason's preface, signed \"Farewell John Mason,\" says \"the LORD was as it were pleased to say unto us, The Land of Canaan will I give unto thee\" (TCP N03314, reread this run). No seen source shows that Underhill personally wanted Pequot land.",
+      "fix": "Replace \"Underhill was not the last American Christian to read Canaan onto the people whose land he wanted.\" with \"The English at Mystic were not the last American Christians to read Canaan onto the people whose land they wanted.\" If the writer wants Mason named, use instead: \"Underhill's fellow captain, John Mason, opened his own history of the war by saying the Lord had as it were told the English, \"The Land of Canaan will I give unto thee.\" They were not the last American Christians to read Canaan onto the people whose land they wanted.\" (Mason's words are verbatim from TCP N03314; add a ledger line for the quotation.) In paragraph 1, replace \"so that English soldiers could play Israel and the Pequots could play Canaan.\" with \"so that English soldiers could play Israel and the Pequots could play Israel's enemies.\" Then update the ledger's 'Withheld links' restore instruction so it anchors on the new sentence instead of the old one.",
+      "severity": "should"
+    },
+    {
+      "where": "Section 'How Ancient War Reports Talk', paragraph 4: \"Paul Copan and Matthew Flannagan built a whole book on that reading, under nearly the same title as this essay.\"",
+      "problem": "(f) Overclaim about two living authors. The ledger verified only that chapters 6 to 8 of Did God Really Command Genocide? make the hyperbole case. Reviews seen this run show the book does more than that. An Academia.edu review says its Part 3 explores divine command theory and the killing of innocents. Pursuing Veritas says that part argues it is possible and morally permissible to affirm that God can, in certain instances, command the killing of innocents. So the book is not built wholly on the hyperbole reading.",
+      "fix": "Replace with: \"Paul Copan and Matthew Flannagan made that reading central to a book under nearly the same title as this essay.\" The next sentence (\"What God required, they argue, ...\") stays as it is.",
+      "severity": "should"
+    },
+    {
+      "where": "Section 'How Christians Have Answered', paragraph on the three readings: \"Others accept that God gave a real command of judgment ... and Paul had already pointed that way ... It also states 'and Paul ...'\"; the decisive sentence is \"Christians who hold the whole Bible to be the word of God still divide over these chapters, roughly along three lines.\" Specifically: \"In the middle of the second century ...\"",
+      "problem": "(d) Placeholder entry. Superseded by the next findings; no defect here.",
+      "fix": "No change.",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": []
+}
