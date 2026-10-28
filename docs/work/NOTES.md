@@ -293,3 +293,16 @@ code branch's docs/work/essays into the essays worktree first).
 
 2026-10-28: James: 25 essays of the pilots' quality on the site in total; plan
 and status in docs/work/essays/PROGRAM-25.md.
+
+## James, 2026-10-28 (essays 16 and 17)
+
+- who-decided-what-books-are-in-the-bible: "Publish it open". The Apocrypha question stays a fair two-sided account with no position stated for James; 2 Peter authorship stays unsettled.
+- what-romans-13-says: "Publish as written". The named public examples (Sessions 2018 and the church responses, the sanctuary movement, Grace Community Church 2020) stay; not held for the November 3 election.
+
+## For James at the Doubt sample read (from the doubt-1 final-read fix)
+
+- why-trust-the-bible now has one sentence naming the inerrancy division as second-order; his own position is not stated.
+- His atheism-to-faith sentence: cut from excavation-not-demolition (read as a credential), reworded in did-the-resurrection-happen, kept in can-you-be-good-without-god.
+- excavation-not-demolition: the Joshua Harris timeline detail (posted days after announcing his separation) was cut; "still owe the resurrection a hearing" became "still give".
+- did-the-resurrection-happen: Borg's reading described as "offered as a way to keep Easter for people who could no longer believe in an empty tomb."
+- Withheld link sentences (targets not yet public) are recorded word for word in each ledger.
