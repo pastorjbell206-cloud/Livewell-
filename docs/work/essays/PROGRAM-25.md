@@ -18,16 +18,16 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 3 | what-post-christian-means | after-christendom | live (#539) |
 | 4 | the-early-church-under-rome | ancient-church | live (#539) |
 | 5 | why-didnt-the-bible-ban-slavery | bible-in-its-world | live (#539) |
-| 6 | excavation-not-demolition | doubt | landed and final-read fixed on claude/essays (16702fef) |
-| 7 | why-trust-the-bible | doubt | landed and final-read fixed on claude/essays (16702fef) |
-| 8 | the-historical-jesus | doubt | landed and final-read fixed on claude/essays (16702fef) |
-| 9 | did-the-resurrection-happen | doubt | landed and final-read fixed on claude/essays (16702fef) |
-| 10 | can-you-be-good-without-god | doubt | landed and final-read fixed on claude/essays (16702fef) |
-| 11 | why-does-god-allow-suffering | doubt | landing (doubt-2, wf_a38825cc-681) |
-| 12 | why-does-god-feel-far-away | doubt | landing (doubt-2, wf_a38825cc-681) |
-| 13 | doubt-after-church-abuse | doubt | landing (doubt-2, wf_a38825cc-681) |
-| 14 | did-christianity-copy-pagan-myths | doubt | landing (doubt-2, wf_a38825cc-681) |
-| 15 | did-god-command-genocide | doubt | landing (doubt-2, wf_a38825cc-681); James: publish open |
+| 6 | excavation-not-demolition | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 7 | why-trust-the-bible | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 8 | the-historical-jesus | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 9 | did-the-resurrection-happen | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 10 | can-you-be-good-without-god | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 11 | why-does-god-allow-suffering | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 12 | why-does-god-feel-far-away | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 13 | doubt-after-church-abuse | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 14 | did-christianity-copy-pagan-myths | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read |
+| 15 | did-god-command-genocide | doubt | landed and final-read fixed on claude/essays; PR #541 (draft), waiting on James's sample read (James: publish open) |
 | 16 | what-romans-13-says | faith-and-power | ledger closed (second pass); James 2026-10-28: publish as written; to land |
 | 17 | who-decided-what-books-are-in-the-bible | bible-in-its-world | ledger closed (second pass); James 2026-10-28: publish open; to land |
 | 18 | is-it-wrong-to-love-your-country | faith-and-power | ledger closed (second pass, 27 of 27); to land |
