@@ -257,3 +257,24 @@ answered by that approval: ship as written. claude/essays had main merged in
 (ab80c873; force-push was refused, a merge is equivalent) and is ready for the
 next essay batch. Follow-up owed: surface the two politics essays on /family
 once wave 3 (Family.tsx) merges.
+
+## James's direction on the prototype (2026-10-28)
+
+"why is there a focus on john 1? or is that just an example. i dont want my
+image on the frontpage or you can use the pictture from my facebook page. i
+want this webstite to be a page that people can go to and learn, people can
+study the bible. people can learn church history. also its a place with my
+facbook posts. and my essays from substack. with my books. etc. i want this to
+be the best bible study tool in the world."
+
+Taken as: order of weight is (1) Bible study, the best Bible study tool in the
+world; (2) church history; (3) his writing: Facebook posts, Substack essays,
+books. No photograph of him on the front page; his Facebook photo may be used
+elsewhere (About) if he sends it (Facebook is unreachable from the sandbox).
+Asked him for a Facebook "Download your information" export (Posts, JSON) and
+a Substack export, by attachment or Google Drive, and whether all Facebook
+posts go up or only the faith and teaching ones (recommended: we sort, he
+approves). Prototype: Home rebuilt to lead with Bible study, a new Study the
+Bible door (all 66 books; John 1 is only the example chapter page) and a new
+Writing door (essays, Facebook posts, books), via proto-revise-wf.js.
+Prototype canvas: https://claude.ai/artifact/RH3KcVUyTZUisLPmnRr8mS (private).
