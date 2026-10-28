@@ -73,7 +73,7 @@ Only if a later check confirms the original:
 
 ## What Arius Was Trying to Protect
 
-27. The church made Arius the villain for centuries. **General.** A characterization; consistent with Search ("Arians" label results: Hanson, Williams, Ayres on the polemical picture inherited from Athanasius).
+27. For centuries the church remembered Arius as the arch-heretic and little more (voice pass wording; was "made Arius the villain for centuries"). **General.** A characterization; consistent with Search ("Arians" label results: Hanson, Williams, Ayres on the polemical picture inherited from Athanasius).
 28. Christians had just come through the worst persecution in their history. **Verified.** Search (Wikipedia "Diocletianic Persecution", Schaff on ccel.org, Lumen Learning: "the last and most severe persecution of Christians in the Roman Empire", 303 to 311/313).
 29. Quotation: "We acknowledge One God, alone Ingenerate, alone Everlasting, alone Unbegun, alone True, alone having Immortality, alone Wise, alone Good, alone Sovereign." **Verified verbatim.** Quote script against WDB desynodis §16 (Arius's letter "To Our Blessed Pope and Bishop, Alexander").
 30. Quotation: "perfect creature of God, but not as one of the creatures". **Verified verbatim.** Quote script against WDB desynodis §16.
@@ -153,7 +153,7 @@ Only if a later check confirms the original:
 95. The creed most churches recite under Nicaea's name is a longer form linked with Constantinople 381. **Verified.** WDB creed381; Search (Wikipedia "Nicene Creed" and catholic.org: the 381 form is the creed in common use; some historians doubt it was composed at that council, hence "linked with").
 96. Quotation: "the Lord and Giver-of-Life". **Verified verbatim.** Quote script against WDB creed381.
 97. The creed of 325 names the Holy Spirit and stops. **Verified.** WDB nicenecreed ("And [we believe] in the Holy Ghost." then the anathemas); Search (Wikipedia via results: "The 325 creed ended at its belief in the Holy Spirit").
-98. "Begotten, not made" and "Light of Light" are phrases of the creed. **Verified verbatim.** Quote script against WDB nicenecreed.
+98. "Begotten, not made" and "Light of Light" are phrases of the creed. **Verified verbatim.** Quote script against WDB nicenecreed. The paragraph now ends "the Son is God in the same sense the Father is God" (voice pass; was "Whatever the Father is, the Son is", which read as if the Son were also unbegotten); a gloss on *homoousios*, covered by line 2.
 99. "the radiance of the glory of God and the exact imprint of his nature" (Hebrews 1:3). **Verified.** ESV copy; ESV search (seven esv.org pages for Hebrews 1:3; summary: the wording matches).
 100. Only two bishops refused to sign, Secundus of Ptolemais and Theonas of Marmarica. **Verified.** WDB philost 1.9 ("with the exception of Secundus, bishop of Ptolemais, and Theon, bishop of Marmarica"); WDB thd1 1.6 ("with the exception of Secundus and Theonas"); WDB synodal (both condemned with Arius). Socrates 1.8 (WDB soc1) says five objected at first; the essay's "refused to sign" follows the outcome all three sources report.
 101. Both were from Libya. **Verified.** WDB alex (the synod of "the Bishops of Egypt and the Libyas" that condemned them); Ptolemais in the Libyan Pentapolis and Marmarica in Libya are standard geography. Theodoret 1.6 (WDB thd1) writes "Ptolemais in Egypt", meaning the Alexandrian province.
@@ -170,8 +170,8 @@ Only if a later check confirms the original:
 112. Soldiers lined the entrance with drawn swords; the bishops walked between them into the emperor's rooms. **Verified.** WDB vc3 3.15 ("surrounded the entrance of the palace with drawn swords, and through the midst of these the men of God proceeded without fear into the innermost of the imperial apartments").
 113. Theodoret: Constantine pressed his lips to the wounds of bishops whose eyes had been torn out for the faith. **Verified.** WDB thd1 1.10 ("some among them had had the right eye torn out, and learning that this mutilation had been undergone for the sake of religion, he placed his lips upon the wounds").
 114. Quotation: "One might have thought that a picture of Christ's kingdom was thus shadowed forth, and a dream rather than reality." **Verified verbatim.** Quote script against WDB vc3 3.15.
-115. A few years earlier some of those men had been in an emperor's prisons. **Verified in substance.** Lines 71 to 73 (mutilated confessors); Search on Licinius (line 72).
-116. Constantine wanted one church for one empire. **Interpretation.** Supported by WDB vc2 2.65 to 2.72 (the letter's appeal to unity) and vc3 3.12 (strife worse than war).
+115. A few years earlier some of those men had been in an emperor's prisons, and now Constantine's soldiers stood guard at their dinner (voice pass wording; the soldiers are line 112). **Verified in substance.** Lines 71 to 73 (mutilated confessors); Search on Licinius (line 72).
+116. Constantine wanted a united church to hold his empire together (voice pass wording; was "one church for one empire"). **Interpretation.** Supported by WDB vc2 2.65 to 2.72 (the letter's appeal to unity) and vc3 3.12 (strife worse than war).
 
 ## Why the Argument Went On for Fifty Years
 
@@ -196,7 +196,7 @@ Only if a later check confirms the original:
 135. Many bishops Athanasius called "Arians" had never followed Arius. **Verified.** Search (Wikipedia "Arian creeds" and "Arius", Theopolis "Did Arians Exist?": Hanson called "the Arian controversy" a misnomer; Williams and Ayres; Athanasius "labeled everyone he opposed 'Arian'"); WDB desynodis §41 (Athanasius himself distinguishes those who "doubt only about the Coessential").
 136. Some resisted *homoousios* because they feared it erased the difference between the Father and the Son. **Verified.** WDB soc1 1.23 ("Those who objected to the word homoousios, conceived that those who approved it favored the opinion of Sabellius ... as subverting the existence of the Son of God").
 
-## The Strongest Case Against Nicaea
+## The Case Against Nicaea
 
 137. An emperor called the council and paid for it. **Verified.** WDB vc3 3.6 (summons and transport) and 3.9 ("For the maintenance of all ample provision was daily furnished by the emperor's command").
 138. By Eusebius's account the emperor pressed the decisive word. **Verified.** Line 90.
@@ -221,7 +221,7 @@ Only if a later check confirms the original:
 154. The creed says the one who "suffered" is God of God. **Verified.** WDB nicenecreed.
 155. "For in him the whole fullness of deity dwells bodily" (Colossians 2:9). **Verified.** ESV copy (the verse ends with a comma; the essay closes the quotation with a period); ESV search (Blue Letter Bible and biblia.com ESV pages; summary: matches). No esv.org page appeared in these results.
 
-## The Question We Treat as Small
+## What Nicaea Asks of Christians Today
 
 156. Christian Smith and Melinda Lundquist Denton studied American teenagers in the early 2000s and named their faith moralistic therapeutic deism; the summary of its tenets (corrected; see Correction 5). **Verified.** Search (americamagazine.org and Notre Dame's youthandreligion.nd.edu: *Soul Searching*, Oxford University Press, 2005; National Study of Youth and Religion surveys July 2002 to March 2003; tenets quoted: "God wants people to be good, nice and fair to each other", "The central goal of life is to be happy and to feel good about oneself", "God does not need to be particularly involved in one's life except when God is needed to resolve a problem").
 157. James pastors a Baptist church. **Verified.** NOTES.md (confirmed biography; "Baptist" self-identification allowed; no Southern Baptist implication in the essay).
@@ -243,3 +243,7 @@ Only if a later check confirms the original:
 ## Mechanical scan (2026-10-28, after corrections)
 
 No em-dash (U+2014). Exclamation points only inside quoted Scripture (John 20:28, twice). No CLAUDE.md forbidden word, no "steelman", "verdict", "indictment", "honest" or "fair" (grep). About 3,720 words by `wc -w`, including title, standfirst and Closing Texts. The five corrections changed wording only in the five sentences named above; no heading, quotation, link or paragraph order changed.
+
+## Voice and audit pass (2026-10-28, final reader)
+
+Eleven sentence-level edits for AI tells; no fact, quotation, number, date, name or link added or changed (checked by diffing every double-quoted string, every link and the creed block against the committed version: identical). Changes: the opening's "narrower ... deeper" two-beat; the standalone echo "There was a time when the Son was not."; "It would be easy to make Arius the villain and move on" (too close to the Rome pilot's "It's easy to make Rome the villain of this story") rewritten as line 27; "at the door" became "today" for the Jehovah's Witnesses; "Whatever the Father is, the Son is" (line 98); "It isn't hard to understand him" (too close to the Rome pilot's "It's hard to blame him" about Eusebius) and the patron paragraph's two-beat closers (lines 115, 116); heading "The Strongest Case Against Nicaea" became "The Case Against Nicaea" (rulebook leakage); "He did not mean ... He meant" folded into one sentence; the framing line "The stakes are close at hand." cut; "We fail that test" (named before the test is stated) became "We slip into these versions"; heading "The Question We Treat as Small" became "What Nicaea Asks of Christians Today". Scan after the pass: no em-dash; the only en-dash is the verse range Philippians 2:10–11; exclamation points only in John 20:28; no forbidden word, stamp phrase, "honest", "fair", "steelman", "verdict" or "indictment". 3,708 words by `wc -w`.
