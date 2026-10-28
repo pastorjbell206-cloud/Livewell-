@@ -16,7 +16,7 @@ Essay: `docs/work/essays/what-render-unto-caesar-actually-means.md` ("What Did J
 ## Title and standfirst
 
 - Title "What Did Jesus Mean by "Render Unto Caesar"?" is the title NOTES.md lists for this slug. No check needed.
-- Standfirst: Jesus said it in the temple during the last week of his life, answering a question meant to get him killed. Verified from the text: Mark 11:27 ("as he was walking in the temple") and 12:13 precede the passion narrative of Mark 14-15; Luke 20:20 gives the aim of delivering him to the governor (local ESV copy; Luke 20:20 also matched against search results quoting esv.org on 2026-10-28).
+- Standfirst (reworded in the voice pass, 2026-10-28): Jesus said it in the temple during the last week of his life, when men who wanted him dead asked him whether to pay a Roman tax. Verified from the text: Mark 11:27 ("as he was walking in the temple") and 12:13 precede the passion narrative of Mark 14-15; the questioners' circle sought to destroy him (Mark 3:6) and to arrest him (Mark 12:12), and Luke 20:20 gives the aim of delivering him to the governor (local ESV copy; Luke 20:20 also matched against search results quoting esv.org on 2026-10-28); the question is Mark 12:14 and the tax the Roman *census* (below).
 
 ## Opening
 
@@ -134,7 +134,7 @@ Essay: `docs/work/essays/what-render-unto-caesar-actually-means.md` ("What Did J
 
 ## Is This the Separation of Church and State?
 
-- No checkable facts beyond those above (Ambrose reaching for the saying: Sermon Against Auxentius 35, Epistle 20.19, both read).
+- No checkable facts beyond those above (Ambrose reaching for the saying when the court demanded a church: Sermon Against Auxentius 35, Epistle 20.19, both read). Voice pass, 2026-10-28: the draft grouped Ambrose with Christians who argued that no government may compel belief; Ambrose made only the church-building argument, so the sentence now credits him with that alone and leaves the compelled-belief argument to "Christians who have argued since then", a general description with no one named.
 
 ## When a Party Asks for What Belongs to God
 
@@ -187,6 +187,12 @@ Essay: `docs/work/essays/what-render-unto-caesar-actually-means.md` ("What Did J
 
 - One correction: "Mark's version is the shortest" became "Mark tells it in five verses" (see The Question in the Temple). No other wording changed.
 - Checks after the edit: no em-dashes; no word from the CLAUDE.md forbidden list; the one exclamation point is inside quoted Scripture (Matthew 4:10).
+
+## Voice and audit pass (2026-10-28)
+
+- Wording only; no fact, quotation, number, date, name or link added. Script check: the 57 quotations, 30 Scripture references and 4 links match the verified draft exactly.
+- Changes that touch lines above: the standfirst (see Title and standfirst); Ambrose in the separation section (see that section); "carrying Caesar's money" became "could produce Caesar's money" (Mark 12:16 says only "they brought one"); "trading in his markets" cut; "the same bishop showed how easily the line can be moved" cut, so the Callinicum paragraph opens "Two years later, in 388"; "a party doesn't ask for incense" cut (the early-church pilot's controlling image).
+- Gates on a scratch JSON copy: `validate-essays.mjs`, `validate-grow-voice.mjs --essays` and `validate-no-emdash.mjs --essays` all clean.
 
 ## Still open
 
