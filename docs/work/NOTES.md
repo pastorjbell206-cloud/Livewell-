@@ -278,3 +278,15 @@ approves). Prototype: Home rebuilt to lead with Bible study, a new Study the
 Bible door (all 66 books; John 1 is only the example chapter page) and a new
 Writing door (essays, Facebook posts, books), via proto-revise-wf.js.
 Prototype canvas: https://claude.ai/artifact/RH3KcVUyTZUisLPmnRr8mS (private).
+
+2026-10-28, later: James: "no lets just keep the ones we have now and write a
+couple more that are fitting to the mission of the site and my substack."
+So: no Facebook or Substack import; the Writing door holds the essays on the
+shelf now plus new ones, and his books; no Facebook strip and no "archive will
+appear here" lines anywhere (remove them from the prototype's Writing and Home
+screens). New essays, in this order: what-romans-13-says (Faith and Power,
+launched 2026-10-28, run wf_10a51019-0ed), then
+who-decided-what-books-are-in-the-bible (Reading the Bible in Its World). Each
+goes write -> verify -> voice (essay-wf.js), then a verify-wf.js pass in its own
+turn, then land-wf.js from claude/essays (copy the draft and ledger from the
+code branch's docs/work/essays into the essays worktree first).
