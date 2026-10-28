@@ -8,9 +8,12 @@ export const meta = {
   ],
 }
 
-// args: { essays: [{slug, section?}], redirects: [{from, to}], extra: '...', label: 'pilots' }
+// args: { essays: [{slug, section?}], redirects: [{from, to}], extra: '...', label: 'pilots', local?: true }
+// local: land and fix on the local branch land-next without pushing (James has not yet said which PR they go in).
 const MAIN = '/home/user/Livewell-'
 const WT = '/home/user/livewell-land'
+const LOCAL = !!args.local
+const BR = LOCAL ? 'land-next' : 'land'
 const ESSAYS = args.essays
 const SLUGS = ESSAYS.map((e) => e.slug)
 const REDIRECTS = args.redirects || []
@@ -36,14 +39,14 @@ const FIX_SCHEMA = { type: 'object', properties: {
   for_james: { type: 'array', items: { type: 'string' } }, not_verified: { type: 'array', items: { type: 'string' } } },
   required: ['head_sha', 'applied', 'rejected', 'gates', 'for_james', 'not_verified'] }
 
-const PUSH = `push to origin claude/essays: git -C ${WT} push origin HEAD:claude/essays; if rejected, git -C ${WT} pull --rebase=merges origin claude/essays (keep the merge from main; other sessions push essay ledger commits to that branch; they touch only docs/work/essays/*.md and ledgers, so keep both sides) and push again, up to five tries`
+const PUSH = LOCAL ? `do not push anything: leave the commit on the local branch ${BR} in ${WT} (James has not yet decided which pull request these essays join)` : `push to origin claude/essays: git -C ${WT} push origin HEAD:claude/essays; if rejected, git -C ${WT} pull --rebase=merges origin claude/essays (keep the merge from main; other sessions push essay ledger commits to that branch; they touch only docs/work/essays/*.md and ledgers, so keep both sides) and push again, up to five tries`
 
 phase('Land')
 const land = await agent(`You land finished LiveWell essays so they go public. Read ${MAIN}/docs/work/essays/BRIEF.md, ${MAIN}/docs/work/NOTES.md, and the U05 card in ${MAIN}/docs/work/plan/MASTER-PLAN.md (search "U05 Ship the five pilots") first.
 
 Work in your own git worktree so you never touch the files other agents are editing in /home/user/livewell-essays:
   git -C ${MAIN} fetch -q origin claude/essays main
-  if [ -d ${WT} ]; then git -C ${WT} checkout -q -B land origin/claude/essays; else git -C ${MAIN} worktree add -B land ${WT} origin/claude/essays; fi
+  if [ -d ${WT} ]; then git -C ${WT} checkout -q -B ${BR} ${LOCAL ? 'land-next-base' : 'origin/claude/essays'}; else git -C ${MAIN} worktree add -B ${BR} ${WT} origin/claude/essays; fi
   cd ${WT} && git merge --no-edit origin/main   (resolve any conflict keeping both sides' intent; main's code wins on code, the branch wins on docs/work/essays)
   pnpm install --frozen-lockfile
 
@@ -71,7 +74,7 @@ const total = findings.reduce((n, r) => n + r.findings.length, 0)
 log(`${total} findings across ${findings.length} reads`)
 
 phase('Fix')
-const fix = await agent(`You make the final fixes to James Bell's essays before they go public. Work in the git worktree ${WT} (branch land, tracking claude/essays): git -C ${WT} pull --rebase origin claude/essays first (use --rebase=merges). Read ${MAIN}/docs/work/essays/BRIEF.md and CLAUDE.md's voice and integrity sections.
+const fix = await agent(`You make the final fixes to James Bell's essays before they go public. Work in the git worktree ${WT} (branch ${BR}${LOCAL ? ', local only: do not pull or push' : `, tracking claude/essays): git -C ${WT} pull --rebase origin claude/essays first (use --rebase=merges`}). Read ${MAIN}/docs/work/essays/BRIEF.md and CLAUDE.md's voice and integrity sections.
 
 Readers (a voice reader and an integrity auditor per essay) reported findings, read-only, in ${FR}/<slug>--voice.json and ${FR}/<slug>--integrity.json for these essays: ${SLUGS.join(', ')}. Read every one of those files in full (${findings.length} reads, ${total} findings); do not stop early. Work one essay at a time.
 
