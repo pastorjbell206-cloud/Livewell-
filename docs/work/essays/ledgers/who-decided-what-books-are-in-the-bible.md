@@ -25,6 +25,10 @@ Essay: `docs/work/essays/who-decided-what-books-are-in-the-bible.md` ("Who Decid
 
 No quotation, Scripture verse or link changed. No other wording changed.
 
+## Voice pass (2026-10-28, final reader)
+
+Wording only. No fact, quotation, number, date, name or link was added, and a script confirmed that all 54 quoted strings and all four links are identical to the verified text. Changes: the standfirst now says "The New Testament was gathered over about three centuries" (it said "The books of the Bible", which overreached for the Old Testament; see line 35); "His list isn't as tidy as it first looks" became "His Old Testament is another matter"; "Most people who think they know" became "Many people" (no count supports "most"); "the same Nicene words, whichever Old Testament lies open on the pulpit" became "the Nicene Creed, whichever Old Testament they read" (the filioque means East and West do not say identical words; see line 61); in the Marcion section the self-implication now reads "I have a shorter Bible of my own, and I could tell you which books are in it" (the old line echoed an approved pilot's image); "The councils didn't create a New Testament. They wrote down the one their churches had been reading" became "The list they sent was the New Testament their churches had already been reading" (line 124); "The strongest form of the skeptic's case" became "The scholarly version of the skeptic's case", and the year after *Lost Christianities* was dropped (line 126); Ehrman's summary lost its triplet (line 127); a missing period after the why-trust-the-bible link was added; the heading "Received More Than Chosen" became "So Who Decided?"; "That is the canon in small. The churches did not make these books the word of God by listing them" became "The lists drawn up centuries later record the same kind of hearing on a larger scale"; "The process was slow, human and argued over. The church never hid that" became "The process was slow and human, and Christians disagreed along the way"; the closing paragraph lost its announced turn and two-beat closer (line 142); the last line now reads "He still speaks through all of it, the Old Testament as much as the New, to anyone who will read it." Mechanical scan after the pass: no em-dash, no en-dash except the verse range 15:3–4, no double hyphen, no exclamation point, no semicolon outside quotations, no forbidden word, no stamp (the only "the record" is inside the Josephus quotation). About 4,000 words.
+
 ## Opening (Athanasius's letter of 367)
 
 1. The bishop of Alexandria wrote to the churches of Egypt every year about the date of Easter. Textbook (the festal letters); the library heading of Letter 39 reads "on the Paschal festival". Kept.
@@ -64,7 +68,7 @@ No quotation, Scripture verse or link changed. No other wording changed.
 32. Quotation "fifty copies of the sacred Scriptures". Quote script: 4.36.
 33. Quotation "on prepared parchment in a legible manner, and in a convenient, portable form." Quote script: 4.36.
 34. The letter covers trained copyists and two public carriages to bring the books, and nothing about contents. Read by the verifier, 4.36: "professional transcribers thoroughly practiced in their art"; "two of the public carriages for their conveyance"; the contents are named only as "the sacred Scriptures."
-35. The process took about three centuries. The writer's synthesis of the dated sources in this ledger (the apostolic letters to Athanasius in 367 and the African councils of 393 to 419). Kept.
+35. The process took about three centuries. The writer's synthesis of the dated sources in this ledger (the apostolic letters to Athanasius in 367 and the African councils of 393 to 419). Kept. Voice pass: the standfirst now applies the three centuries to the New Testament, which is what these dates measure; the Old Testament was already in hand.
 
 ## The Scriptures Jesus Read
 
@@ -96,7 +100,7 @@ No quotation, Scripture verse or link changed. No other wording changed.
 58. The King James Version of 1611 included them. Textbook. Not searched.
 59. English Baptists published their confession in 1677 and reaffirmed it in 1689. Search (2026-10-28): Wikipedia ("Confession of Faith (1689)"), reformedreader.org and others: first published in London in 1677; a General Assembly of Particular Baptist churches endorsed it in 1689. Creeds.json metadata gives Year 1677.
 60. Quotation "no part of the Canon (or rule) of the Scripture." Quote script: London Baptist Confession 1.3 (Creeds.json): "The Books commonly called Apocrypha not being of Divine inspiration, are no part of the Canon (or rule) of the Scripture."
-61. Faithful churches have divided over this for five centuries; it sits below the creeds. Judgment. Left open as a second-order question (see Needs James).
+61. Faithful churches have divided over this for five centuries; it sits below the creeds. Judgment. Left open as a second-order question (see Needs James). Voice pass: "confess the same Christ in the same Nicene words" became "confess the same Christ in the Nicene Creed", since the Western text adds the filioque and the Eastern does not. Textbook.
 
 ## The Gospels and Paul's Letters in Worship
 
@@ -171,13 +175,13 @@ No quotation, Scripture verse or link changed. No other wording changed.
 121. Quotation "For we, brethren, receive both Peter ... not handed down to us." Quote script: 6.12.3.
 122. Hippo met in 393 with Augustine present; Carthage in 397. Davidson, read by the verifier: "In 393, the African bishops held a council at Hippo ... The Council of Carthage (397) repeated the statute ... Augustine was the animating spirit of both councils." Augustine's presence at Hippo is textbook (he addressed it as a presbyter).
 123. In 419 the African bishops gathered their rulings into one code and sent the list to Boniface, bishop of Rome, and to others. Read by the verifier, African Code Canon 24 and its note ("Boniface," i.e., Bishop of Rome). Search (2026-10-28): a result notes that the Boniface reference is anachronistic for 397, which fits placing it in 419.
-124. Quotation "that they may confirm this canon, for these are the things which we have received from our fathers to be read in church." Quote script: African Code Canon 24.
+124. Quotation "that they may confirm this canon, for these are the things which we have received from our fathers to be read in church." Quote script: African Code Canon 24. The sentence after it now reads "The list they sent was the New Testament their churches had already been reading" (voice pass); it rests on the council's own words "received from our fathers to be read in church" and on lines 66 to 73 and 133.
 
 ## The Case for Lost Christianities
 
 125. Bart Ehrman is a New Testament scholar at the University of North Carolina at Chapel Hill. Textbook. Not searched this run; the closed ledger for why-trust-the-bible records search results from UNC's own *Endeavors* magazine.
-126. He made the case in *Lost Christianities* (2003). Search (2026-10-28): the result names *Lost Christianities* (2003); its *America* magazine review in the results carries the date 2003/12/22 in its URL. Oxford University Press as publisher is textbook and is not in the essay.
-127. Summary of his argument. Search (2026-10-28), as summarized from reviews (*America*, deliriumsrealm.com and others): the book treats the Jewish-Christian Ebionites, the Marcionites and various Gnostic groups, and the "proto-orthodox Christians," "those who eventually compiled the canonical books of the New Testament and standardized Christian belief," who won out. Matched in substance. Paraphrase, no quotation marks.
+126. He made the case in *Lost Christianities*. Search (2026-10-28): the result names *Lost Christianities* (2003); its *America* magazine review in the results carries the date 2003/12/22 in its URL. The voice pass dropped the year from the essay (the scholar-and-year pattern was repeating); it is verified here if it is wanted back. Oxford University Press as publisher is textbook and is not in the essay.
+127. Summary of his argument (voice pass: "It set the criteria and judged the books, and its historians, Eusebius among them, told the story afterward"; same substance). Search (2026-10-28), as summarized from reviews (*America*, deliriumsrealm.com and others): the book treats the Jewish-Christian Ebionites, the Marcionites and various Gnostic groups, and the "proto-orthodox Christians," "those who eventually compiled the canonical books of the New Testament and standardized Christian belief," who won out. Matched in substance. Paraphrase, no quotation marks.
 128. Ehrman builds on Walter Bauer, who argued in 1934 that in some regions what was later called heresy came first. Search (2026-10-28): results describe Bauer's challenge to Eusebius's model of an original orthodoxy and say much of Ehrman's writing concentrates on Bauer's thesis. The year 1934 is textbook (*Rechtgläubigkeit und Ketzerei im ältesten Christentum*); the result did not print it.
 129. Some losing books survive only in their opponents' summaries. General statement. Not checked.
 130. The Gospel of Thomas was found near Nag Hammadi in Egypt in 1945. Search (2026-10-28): Wikipedia ("Gospel of Thomas"): found at Nag Hammadi in December 1945.
@@ -189,13 +193,13 @@ No quotation, Scripture verse or link changed. No other wording changed.
 136. Paul's letters from the 50s are the earliest Christian writings we have. Textbook. Not checked.
 137. 1 Corinthians 15:3 to 4 quotation. ESV copy, exact. Search (2026-10-28): esv.org and biblia.com pages carry the wording.
 
-## Received More Than Chosen
+## So Who Decided? (heading was "Received More Than Chosen" before the voice pass)
 
 138. Quotation "All the Books of the New Testament, as they are commonly received, we do receive, and account them Canonical." Quote script: Article VI of the Articles of Religion (BCP).
 139. The First Vatican Council (1870) taught that the church holds these books sacred because written under the Holy Spirit's inspiration, not because the church approved them afterward. Partly matched. Search (2026-10-28): Wikipedia ("Dei Filius") gives 24 April 1870; a St. Paul Center page in the results renders the passage that the books are held sacred and canonical because, "being written under the inspiration of the Holy Spirit, they have God as their author"; a French encyclopedia page in the results prints the Latin "quod Spiritu Sancto inspirante conscripti Deum habent auctorem." No result printed the clause denying that the books are canonical because the church approved them afterward; that half rests on general knowledge of the text (Denzinger 3006). Paraphrase only, no quotation marks. Kept.
 140. 1 Thessalonians 2:13 quotation (body and Closing Texts). ESV copy, exact. Search (2026-10-28): the result says biblia.com and bible.com show the same ESV wording.
 141. Quotation "as long as time permits." Quote script: *First Apology* 67.
-142. Many American churches read only a few verses aloud on a Sunday. General observation, no figure. Not checked.
+142. Many American churches read only a few verses on a Sunday; "We will argue for every book in the canon and still hear very little of it read aloud" (voice pass wording, replacing "We defend the whole canon and live on a small part of it"). General observation, no figure. Not checked.
 143. On the evening of the resurrection the risen Christ opened the Scriptures to his frightened disciples. ESV copy, read by the verifier: Luke 24:36 to 37 ("startled and frightened"), 24:45 ("Then he opened their minds to understand the Scriptures").
 144. John 10:27 quotation (Closing Texts). ESV copy, exact. Search (2026-10-28): esv.org, biblia.com and BibleHub carry the wording.
 
