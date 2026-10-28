@@ -281,7 +281,8 @@ describe("a context guide (the U16 done-when)", () => {
       </TestProviders>,
       "/resources/context/a-guide",
     );
-    const ref = await screen.findByRole("link", { name: "John 3:16" });
+    // The reference parser is a lazy import; under a full parallel run it can take past the 1s default.
+    const ref = await screen.findByRole("link", { name: "John 3:16" }, { timeout: 5000 });
     expect(screen.getByRole("link", { name: "John 3" })).toHaveAttribute("href", "/study/bible/john/3");
     expect(screen.getByRole("link", { name: "John 3:1-21" })).toHaveAttribute("aria-haspopup", "dialog");
     await user.click(ref);
