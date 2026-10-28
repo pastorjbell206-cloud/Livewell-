@@ -249,3 +249,11 @@ Design program status (2026-10-27 evening): research waves A, B, C done
 (research/*-SYNTHESIS.md); critique done (CRITIQUE.md, 12 questions for James
 in section 5); vision workflow running (vision-wf.js, run wf_6cbf5b15-51f).
 Pilots PR #539 (claude/essays) green, waiting on James's sample read.
+
+2026-10-28: James: "merge the pilots, they look good." PR #539 squash-merged as
+fea345a4. His open questions on the pilots (the CN closing line, the SBC pairing,
+the Monster in the Mirror citation, the early church title, Constantine) are
+answered by that approval: ship as written. claude/essays had main merged in
+(ab80c873; force-push was refused, a merge is equivalent) and is ready for the
+next essay batch. Follow-up owed: surface the two politics essays on /family
+once wave 3 (Family.tsx) merges.
