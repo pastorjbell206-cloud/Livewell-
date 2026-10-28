@@ -100,13 +100,18 @@ jobs:
       # Three runs, judged on the median: a single run on a shared runner swings
       # by more than the thresholds' margin (the same commit has scored 54 and
       # 91), so one slow machine could turn the job red with no code change.
+      # Each run gets one retry: headless Chrome on the runner sometimes
+      # crashes the tab (LighthouseError: TARGET_CRASHED) before scoring.
       - name: Lighthouse (home, three runs)
         run: |
           for i in 1 2 3; do
-            npx --yes lighthouse http://localhost:4173/ \
-              --chrome-flags="--headless --no-sandbox" \
-              --only-categories=performance,accessibility,best-practices,seo \
-              --output=json --output-path=./lh-$i.json --quiet
+            for attempt in 1 2; do
+              npx --yes lighthouse http://localhost:4173/ \
+                --chrome-flags="--headless --no-sandbox" \
+                --only-categories=performance,accessibility,best-practices,seo \
+                --output=json --output-path=./lh-$i.json --quiet && break
+              echo "run $i, attempt $attempt: Lighthouse did not finish; retrying once"
+            done
             node -e "const r=require('./lh-$i.json').categories; console.log('run $i: ' + Object.keys(r).map(k => k + ' ' + Math.round(r[k].score*100)).join(', '))"
           done
       - name: Lighthouse thresholds on the median of three (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
