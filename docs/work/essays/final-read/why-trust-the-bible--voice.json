@@ -1,0 +1,112 @@
+{
+ "slug": "why-trust-the-bible",
+ "lens": "Voice read, last reader before publishing. I read /home/user/livewell-land/client/public/essays/why-trust-the-bible.json (title, excerpt as standfirst, Markdown body) against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read it once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I edited nothing. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "What About the Contradictions?, paragraph 5, first sentence: \"The church has to own its part in stories like Ehrman's.\"",
+   "problem": "This announces self-implication instead of doing it, which is rulebook leakage and an announced turn. It also leaves a promise hanging: the next three sentences praise the Chicago Statement and own nothing. The real owning comes a paragraph later, and it is done without announcement (\"We taught them that, usually without meaning to\").",
+   "fix": "Delete the sentence. The paragraph then begins: \"Many evangelical churches confess that Scripture is without error.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What About the Contradictions?, paragraph 1: \"Then there are the apparent contradictions, which is where Ehrman's trouble started. Many of them are between the Gospels. They're real.\"",
+   "problem": "It calls them apparent contradictions and two sentences later says \"They're real.\" A skeptic reads that as an admission of real contradictions. The section actually argues that the differences are real and are what testimony looks like. The sentence needs to name the differences, not the contradictions.",
+   "fix": "Replace \"Many of them are between the Gospels. They're real.\" with \"Many of them are between the Gospels, and the differences are real.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What About the Hard Passages?, first sentence: \"It was suffering, and not Abiathar, that finally ended Ehrman's faith.\"",
+   "problem": "This repeats the opening section almost word for word (\"what finally ended his faith was suffering ... The manuscripts weren't the reason\"). It also uses Abiathar as a token, and Abiathar is stamped through the piece: the opening, here, and \"every question about Abiathar\" in Why It Comes Back to Jesus. On top of that it adds another \"X, not Y\" antithesis to a piece that already has many.",
+   "fix": "Delete the sentence. The section then opens: \"For many skeptics the deepest problem with the Bible isn't that its words were changed.\" The later \"You could settle every question about Abiathar\" stays as the single callback.",
+   "severity": "should"
+  },
+  {
+   "where": "Opening section, paragraph 4: \"Ehrman matters here because he has asked the question from both sides.\"",
+   "problem": "This is a meta sentence: the essay explains why it chose its frame. That is an announced framing move, and it starts a tic. \"Matter(s)\" appears seven times in the piece: \"Ehrman matters here\", \"The differences that matter\", \"it still matters\", \"What matters here is\", \"as a matter of course\", \"on what matters most\", \"The order matters\".",
+   "fix": "Replace with: \"Ehrman has asked the question from both sides.\" (The next sentence, \"He is also right about a good deal.\", stays.)",
+   "severity": "should"
+  },
+  {
+   "where": "Did It Happen?, last paragraph: \"What matters here is that the New Testament doesn't ask to be excused from history.\"",
+   "problem": "This is a framing formula, and it is the second \"matters here\" in the essay (see the finding above). The sentence lands harder without the scaffolding.",
+   "fix": "Replace with: \"The New Testament doesn't ask to be excused from history.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Why It Comes Back to Jesus, paragraph 4: \"The manuscripts, the history of the canon and the archaeology can clear away bad reasons for dismissing the book, and I think they do.\"",
+   "problem": "This is a hedge. CLAUDE.md's revision pass names \"I think\" explicitly: delete or commit. The essay has just spent three sections showing that they do.",
+   "fix": "Replace \"and I think they do.\" with \"and they do.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What About the Contradictions?, the paragraph beginning \"Many evangelical churches confess that Scripture is without error.\" and ending \"As its own framers stated it, the doctrine never required the four Gospels to tell the story the same way.\"",
+   "problem": "How to state Scripture's truthfulness, as inerrancy in the Chicago Statement's sense or as the wording that Scripture is fully trustworthy in all it sets out to teach, is a second-order question that faithful churches divide on. The essay states the inerrantist position well and in its defenders' own words, and it does not assert James's view, which is right. But it gives only that one position and never says faithful churches divide here, which the brief requires. A Christian on the other side of that question gets no sentence. needs_james: true. James should decide whether he wants this named.",
+   "fix": "After \"As its own framers stated it, the doctrine never required the four Gospels to tell the story the same way.\" add: \"Other churches that hold Scripture just as high word the conviction differently, saying it is fully trustworthy in everything it sets out to teach, and faithful Christians still divide over which wording is right.\" Mark needs_james true.",
+   "severity": "should"
+  },
+  {
+   "where": "Do We Have What They Wrote?, end of the Metzger paragraph: \"Metzger was an ordained Presbyterian minister. Ehrman became an agnostic. On that point, at least, they still agreed.\"",
+   "problem": "This is a three-beat stack ending on a balanced minister/agnostic pair and a kicker. The section already lands several short verdict lines (\"It also doesn't belong there.\" \"The doctrine never rested on the verse.\" \"That complication is real.\"), and this one reads as crafted.",
+   "fix": "Replace the three sentences with: \"Metzger was an ordained Presbyterian minister and Ehrman became an agnostic, but on that point they still agreed.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Do We Have What They Wrote?, paragraph 5, first sentence: \"The plainest answer to the charge of a cover-up is a verse whose history few Christians know.\"",
+   "problem": "This is a teaser that holds back the verse, which gives it the feel of an announced turn. It also makes an unsupported claim about what Christians know.",
+   "fix": "Replace with: \"The plainest answer to the charge of a cover-up is the history of one verse.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What About the Contradictions?, end of paragraph 1: \"A Christian who says these differences aren't there hasn't read the chapters closely. The skeptic can tell.\"",
+   "problem": "This is a two-beat aphoristic closer. The second line winks at the skeptic, and that can read as handling him rather than meeting him. The first sentence already lands the point.",
+   "fix": "Delete \"The skeptic can tell.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Why It Comes Back to Jesus, paragraph 4: \"Christians trust the Bible because they have come to trust the one it is about. The order matters. You could settle every question about Abiathar and still have to decide what to do with Jesus.\"",
+   "problem": "This is the seventh \"matter(s)\" in the piece and a stamp-line verdict. The sentence after it already makes the point about order.",
+   "fix": "Delete \"The order matters.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## Did It Happen?\"",
+   "problem": "\"It\" has no clear referent at the head of a section. Every other heading names its subject (the copies, the books, the contradictions, the hard passages). The section asks whether these books describe real events.",
+   "fix": "Replace with: \"## Did These Things Happen?\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Why It Comes Back to Jesus, paragraph 2: \"In an argument with his opponents he rested his case on a phrase from Psalm 82 ... But he also told opponents who knew the Scriptures as well as anyone that they had missed what the book was for.\"",
+   "problem": "\"Opponents\" appears twice in back-to-back sentences, and the ear catches it.",
+   "fix": "Replace \"But he also told opponents who knew the Scriptures\" with \"But he also told critics who knew the Scriptures\".",
+   "severity": "consider"
+  },
+  {
+   "where": "What About the Hard Passages?, last paragraph: \"It was earned by people who quoted it to defend what they wanted, or used it as a club. ... If your questions about the Bible arrived with a loss or a wound and not only with an argument, you don't have to sort them out alone. [Find Help](/help) is a place to start.\"",
+   "problem": "The path to help is there, which is right. But \"used it as a club\" and \"a wound\" bring spiritual abuse into view for some readers. The brief asks that, where abuse is in view, the piece say that abuse by a church leader should be reported to the authorities.",
+   "fix": "After \"you don't have to sort them out alone.\" insert: \"If the wound came from abuse by a church leader, that should be reported to the authorities.\" Then keep \"[Find Help](/help) is a place to start.\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic, stems included), for the phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), for the therapy-speak (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and for the signposting phrases (here is what I mean, let me explain). \"Showing\" appears only as \"showing you exactly where the uncertainty is\".",
+  "Em-dash: no U+2014 anywhere. En-dashes appear only in verse ranges (Luke 1:1–4, Luke 3:1–2, John 5:39–40).",
+  "Exclamation points: none, inside or outside Scripture.",
+  "Semicolons: one, inside the verbatim quotation of John 5:39–40.",
+  "Stamps: none of the brief's seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\"). \"For those of us who already say we trust it\" is not the stamp.",
+  "\"Honest\" and \"fair\": zero uses. The rulebook words (steelman, verdict, indictment, self-implication): zero uses.",
+  "No scholar parade. Ehrman's two books are named once each, with one year (2005). Metzger, Cullen Story, Tacitus, Erasmus, Irenaeus, Athanasius, Tatian, Theodoret and Augustine each appear once as working witnesses, with no repeated \"In *Title* (YEAR), X argued\" pattern.",
+  "Biography: none. No title, years in ministry, book count, Southern Baptist reference, or James used as a credential. The only first person is \"I'd ask one thing of you\" and \"I think\" (flagged above).",
+  "Standfirst (excerpt): one plain declarative sentence, not a balanced antithesis. Its triplet (copied, collected and written) maps onto the three sections that follow.",
+  "Headings: six of seven are plain and descriptive (\"Do We Have What They Wrote?\", \"Who Chose the Books?\", \"What About the Contradictions?\", \"What About the Hard Passages?\", \"Why It Comes Back to Jesus\", \"What Trust Looks Like\"). The seventh, \"Did It Happen?\", is flagged above.",
+  "Political criticism: none in the piece. Criticism cuts both ways with the same instrument. It names believers who overclaim archaeology, the KJV's 1 John 5:7, and churches that taught a brittle all-or-nothing faith. It also names the skeptic's rumors about Nicaea and the scribal variants.",
+  "Other contested questions are left open, not settled: Mark 2:26 (\"no explanation everyone accepts\"), the archaeology of the exodus and conquest (\"believing scholars disagree among themselves\"), Jeremiah's two textual forms, and the dating of the Rylands fragment. First-order matters (the resurrection as the center, Jesus treating Scripture as God's word) are confessed plainly.",
+  "Self-implication is done, not announced (apart from the one sentence flagged above): \"Many of us have done a smaller version of the same thing. We reach for the verses that support us\", \"We taught them that, usually without meaning to\", \"For those of us who already say we trust it, the harder question is whether our lives show it.\"",
+  "Skeptic read: the concessions are real, not staged. Ehrman is right about a good deal; no originals survive; scribes changed words on purpose; there is a gap in the early centuries; the Easter differences are real; archaeology doesn't prove the Bible. The invitation to read Mark ends on \"You may finish unconvinced\", with no altar call and no manufactured urgency.",
+  "Pastor read: it can be handed to a congregation. The Chicago Statement is described carefully and generously, the KJV verse is handled without contempt, and the essay never makes a reader choose between honesty and Christ.",
+  "Ending: a short stack of plain lines that turns the question onto the reader and lands on Christ (\"It's whether the one it bears witness to is alive. If he is, you can trust him with the hard verses too.\"). It does not recap, and it matches the approved pilots' ending shape. The Closing Texts are in the right form, *\"Quote.\"* (Reference), two verses, each on its own line.",
+  "Crisis path: the Find Help link (/help) is visible in the hard-passages section. Self-harm is not in view, so the 988 line is not needed. The abuse-reporting line is suggested above as a consider.",
+  "Links: three essay links (did-the-resurrection-happen, why-didnt-the-bible-ban-slavery, the-bible-assumes-you-will-be-wrong), all in link-targets.json and on the shelf, plus /help and /study/bible. That is within the two-to-four limit. The draft's fourth link, to who-decided-what-books-are-in-the-bible, is missing from the published body; that slug is not on the shelf. The canon section still ends on its own sentence, so there is no voice problem.",
+  "Register numbers: 40 body paragraphs averaging 84 words; 193 sentences with a mean of 17.5 words; 17 percent of sentences at 8 words or fewer, on the developed side of the quarter target. No fragment stacks and no walls. Contractions are light and natural.",
+  "Scripture is used inside the argument, never as decoration: 2 Peter 3:16 on Paul being hard to understand, Luke 1:1–4 on checked sources, 1 Corinthians 15:6 and 15:17 as the falsifiable center, John 5:39–40 and Luke 24:27 and 24:32 on the Bible pointing to a person. The Emmaus image is held long enough to do work. The quoted wording matched the ESV as far as a read from memory can tell; the integrity lens owns verification."
+ ]
+}
