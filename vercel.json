@@ -745,6 +745,76 @@
       "permanent": true
     },
     {
+      "source": "/writing/reconstruction-manual",
+      "destination": "/writing/excavation-not-demolition",
+      "permanent": true
+    },
+    {
+      "source": "/writing/when-apologetics-isnt-enough",
+      "destination": "/writing/excavation-not-demolition",
+      "permanent": true
+    },
+    {
+      "source": "/writing/can-you-trust-the-bible",
+      "destination": "/writing/why-trust-the-bible",
+      "permanent": true
+    },
+    {
+      "source": "/writing/teen-can-you-actually-trust-the-bible",
+      "destination": "/writing/why-trust-the-bible",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-historical-jesus-without-the-shortcuts",
+      "destination": "/writing/did-the-resurrection-happen",
+      "permanent": true
+    },
+    {
+      "source": "/writing/apologetics-where-does-morality-come-from",
+      "destination": "/writing/can-you-be-good-without-god",
+      "permanent": true
+    },
+    {
+      "source": "/writing/morality-without-god-and-with-him",
+      "destination": "/writing/can-you-be-good-without-god",
+      "permanent": true
+    },
+    {
+      "source": "/writing/is-god-in-control",
+      "destination": "/writing/why-does-god-allow-suffering",
+      "permanent": true
+    },
+    {
+      "source": "/writing/natural-evil-and-animal-suffering",
+      "destination": "/writing/why-does-god-allow-suffering",
+      "permanent": true
+    },
+    {
+      "source": "/writing/apologetics-why-is-god-hidden",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/can-you-have-faith-and-doubt",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/emotional-doubter",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/sexual-abuse-crisis-in-the-church",
+      "destination": "/writing/doubt-after-church-abuse",
+      "permanent": true
+    },
+    {
+      "source": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
+      "destination": "/writing/doubt-after-church-abuse",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true
