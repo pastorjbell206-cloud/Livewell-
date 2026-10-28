@@ -1,0 +1,154 @@
+{
+ "slug": "why-does-god-feel-far-away",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/why-does-god-feel-far-away.json (title, excerpt as standfirst, Markdown body). Read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md, searched literally. I read it once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it by 5-word overlap with every other landed essay in /home/user/livewell-land/client/public/essays/ and the drafts in /home/user/Livewell-/docs/work/essays/. The heaviest overlap is with why-does-god-allow-suffering, which sits directly before this essay in the Doubt section of shelf.json. Every quoted old string in the fixes occurs exactly once in the body. Applied in order on a scratch copy, they leave no em-dash and bring the essay to about 3,710 words.",
+ "findings": [
+  {
+   "where": "The Argument from Hiddenness, paragraph 2, sentences 3 and 6 to 8: \"Christians have often answered by saying that nobody is really an innocent nonbeliever, and that everyone who does not believe is secretly suppressing what he knows.\" ... \"But as a description of every doubter, that reply is false to experience. ... A response that begins by calling that person a liar has already failed.\"",
+   "problem": "Two failures in one place. First, the Romans 1 answer is stated in a form its defenders would not sign. The Reformed reading holds that suppression of the truth is often hidden from the person himself, so it does not call the doubter a liar. \"Secretly suppressing what he knows\" and \"calling that person a liar\" set up a straw version and then knock it down. Second, whether every unbeliever is resisting God is a question faithful churches divide on: Reformed and Wesleyan or Arminian readings of Romans 1:18-20 and the noetic effects of sin come out differently. \"That reply is false to experience\" asserts James's side as settled. A Reformed Baptist pastor deciding whether to hand this to his people will stop here. The fix states the position in its defenders' form and keeps the pastoral point (it cannot be the first word to every doubter) without declaring the doctrine false. If the fixer cannot keep it open in one sentence, hold this paragraph for James.",
+   "fix": "Replace \"Christians have often answered by saying that nobody is really an innocent nonbeliever, and that everyone who does not believe is secretly suppressing what he knows.\" with: \"Christians have often answered that nobody is really an innocent nonbeliever, and that all unbelief involves some suppression of what a person knows, often hidden even from himself.\" Then Replace \"But as a description of every doubter, that reply is false to experience. Anyone who has sat with a person who prayed for years to believe and could not knows it. A response that begins by calling that person a liar has already failed.\" with: \"But offered as the first word to every doubter, that reply is hard to square with experience. Anyone who has sat with a person who prayed for years to believe and could not knows it. A response that begins by telling that person he is hiding from God will not be heard.\"",
+   "severity": "must"
+  },
+  {
+   "where": "Ending, second short paragraph: \"A church that leaves no room for those words has failed the people sitting in it. The failure is ours, not yours.\"",
+   "problem": "\"The failure is ours, not yours\" is an aphoristic two-beat closer that rhymes (ours/yours), in the most exposed spot of the essay. It announces self-implication instead of doing it, which the brief names as rulebook leakage. It also recaps the earlier \"We gave them that.\" And it absolves the reader in a way a pastor handing this to a congregation cannot use, since the congregation is the church too. The fix keeps the indictment and puts the writer inside it by grammar alone.",
+   "fix": "Replace \"A church that leaves no room for those words has failed the people sitting in it. The failure is ours, not yours.\" with: \"When we leave no room for those words in our churches, we fail the people sitting in them.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Opening, paragraph 2, sentence 2: \"He wrote that he did not think he was in much danger of ceasing to believe in God, and then he named what he did fear: \"The real danger is of coming to believe such dreadful things about Him.\"\"",
+   "problem": "Shelf repetition with the essay that sits directly before this one in the Doubt section. why-does-god-allow-suffering already tells the same Lewis story (Joy Davidman, cancer, 1960, N. W. Clerk, *A Grief Observed*) and quotes this exact sentence, \"the real danger is of coming to believe such dreadful things about Him.\" A reader moving from one to the next meets the same anecdote and the same quotation twice in a row. This essay's Lewis material is about absence (the slammed door, the silence, the gaze), not about God's goodness, so the duplicated line can go without loss. The door, the silence and the gaze are unique to this essay and stay. Note for the orchestrator: the two essays also share the Psalm 13:1 and Psalm 88:18 pairing, Job 42:7, Matthew 27:46 as the first line of Psalm 22, Holy Saturday, and the observation that churches have stopped praying lament. Those carry this essay's argument and cannot come out without restructuring. The phrase-level echoes are trimmed in the findings below.",
+   "fix": "Replace \"Lewis did not stop believing. He wrote that he did not think he was in much danger of ceasing to believe in God, and then he named what he did fear: \"The real danger is of coming to believe such dreadful things about Him.\" He kept writing anyway,\" with: \"Lewis did not stop believing, and he wrote that he did not think he was in much danger of it. He kept writing anyway,\"",
+   "severity": "should"
+  },
+  {
+   "where": "Two Answers That Come Too Quickly, paragraph 3, sentence 3: \"I came to faith as an adult, out of atheism, so I don't think that answer is stupid.\"",
+   "problem": "The biography is a confirmed fact and is not used as a credential, but this exact sentence is now a shelf stamp. \"I came to faith as an adult, out of atheism\" appears word for word in why-does-god-allow-suffering (directly before this essay) and in did-the-resurrection-happen, which follows it with the same frame: \", so I don't assume that a skeptic ...\". That makes three Doubt essays with the same biographical line, two of them back to back. The brief says to use biography rarely. The concession survives without it.",
+   "fix": "Replace \"I came to faith as an adult, out of atheism, so I don't think that answer is stupid.\" with: \"It isn't a stupid answer, and thoughtful people give it.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Opening, paragraph 3, sentence 6: \"The questions tend to come in a run, usually at night.\"",
+   "problem": "Two problems. The sentence lifts the brief's own vocabulary (\"Real questions, often asked in runs\"), which is rulebook leakage and an odd phrase for questions. It is also a near-copy of doubt-after-church-abuse, another Doubt essay: \"The questions tend to come at night, one after another,\" followed there too by a run of first-person questions.",
+   "fix": "Replace \"The questions tend to come in a run, usually at night.\" with: \"Most of them end up asking the same questions, usually late at night.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Two Answers That Come Too Quickly, paragraph 2, last sentence: \"Job, who kept saying God was hiding from him, had spoken rightly, and the friends who defended God with a tidy explanation had not.\"",
+   "problem": "A paragraph-end two-beat that restates Job 42:7, which was quoted in the sentence before, so it recaps. It also echoes why-does-god-allow-suffering's gloss on the same verse (\"The men who defended God with a formula are rebuked\"), and the two essays sit next to each other. The fix keeps the one new thing this sentence adds, that the man who complained of God's hiding was the one who spoke rightly.",
+   "fix": "Replace \"Job, who kept saying God was hiding from him, had spoken rightly, and the friends who defended God with a tidy explanation had not.\" with: \"The one who had spoken rightly was the man who kept saying God was hiding from him.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Lament in the Psalms, paragraph 2, last sentence: \"There is no resolution and no turn to praise, and Israel read that ending and kept it in the book anyway.\"",
+   "problem": "A phrase-level echo of the essay just before it: why-does-god-allow-suffering quotes the same Psalm 88:18 and says \"Israel kept it in the book it sang.\" The two essays already share the Psalm 13:1 and 88:18 pairing, and the matching gloss makes the seam audible.",
+   "fix": "Replace \"and Israel read that ending and kept it in the book anyway.\" with: \"and the people who gathered the Psalter let it end that way.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Lament in the Psalms, paragraph 3, last two sentences: \"And the people who prayed these words were not on the edges of Israel's faith. They were at its center, and the same book that taught Israel to praise God taught it to ask him how long.\"",
+   "problem": "This is the section's second \"Not X. Y.\" The section opens with \"The Bible does not treat the felt absence of God as an embarrassing exception. It writes it into the prayer book,\" and the antithesis in paragraph 1 (\"From a skeptic ... In the Psalter ...\") makes three in four paragraphs. The voice standard puts repeated antithesis on the avoid list once its work is done. Drop the ground-clearing and keep the claim and the verdict.",
+   "fix": "Replace \"And the people who prayed these words were not on the edges of Israel's faith. They were at its center, and the same book\" with: \"And the people who prayed these words stood at the center of Israel's faith. The same book\"",
+   "severity": "should"
+  },
+  {
+   "where": "Faith When the Feeling Is Gone, paragraph 5, sentence 2: \"It means praying when the prayers seem to stop at the ceiling, borrowing the words of the psalms when you have none of your own, and taking the Lord's Supper when it tastes like nothing but bread.\"",
+   "problem": "A tidy triplet in perfect parallel (\"X-ing when ..., Y-ing when ..., and Z-ing when ...\"), and then the anaphora \"It means ... It also means.\" The three items are real, but the matched cadence reads as generated. Break the symmetry and keep all three practices.",
+   "fix": "Replace \"It means praying when the prayers seem to stop at the ceiling, borrowing the words of the psalms when you have none of your own, and taking the Lord's Supper when it tastes like nothing but bread.\" with: \"It means praying when the prayers seem to stop at the ceiling, and borrowing the words of the psalms when you have none of your own. Some weeks the Lord's Supper will taste like nothing but bread, and you take it anyway.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Cry from the Cross, paragraph 1, last sentence: \"The word \"far\" is in the psalm, and the Son of God took it on his own lips.\"",
+   "problem": "An overclaim a skeptic can check in one minute. Matthew records Jesus speaking only the first line of Psalm 22, and \"far\" is in the second half of the verse. The essay can say he took the psalm on his lips, but not that he spoke the word.",
+   "fix": "Replace \"The word \"far\" is in the psalm, and the Son of God took it on his own lips.\" with: \"The word \"far\" is in the psalm the Son of God took on his own lips.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Faith When the Feeling Is Gone, paragraph 5, last two sentences: \"When a desperate father cried out to Jesus, \"I believe; help my unbelief!\" (Mark 9:24), Jesus did not send him away to sort out his feelings first. He healed his son.\"",
+   "problem": "Shelf repetition. excavation-not-demolition, in the same Doubt section, closes on the same verse and makes the same point: \"Jesus healed the boy without waiting for him to finish believing.\" This is also the section's second \"Not X. Y.\" (after \"faith is not finally a feeling of nearness. It is steadiness under weight.\"). The section ends cleanly on the line before.",
+   "fix": "Delete: \" When a desperate father cried out to Jesus, \"I believe; help my unbelief!\" (Mark 9:24), Jesus did not send him away to sort out his feelings first. He healed his son.\" The paragraph then ends: \"Keep worshiping with God's people, even when the songs feel like a foreign language.\" (This removes the essay's only exclamation point, which was inside quoted Scripture and was allowed.)",
+   "severity": "consider"
+  },
+  {
+   "where": "Closing Texts, third line: *\"Did not our hearts burn within us while he talked to us on the road, while he opened to us the Scriptures?\"* (Luke 24:32)",
+   "problem": "The verse is quoted in full in the body six paragraphs earlier, so the Closing Texts repeat it almost at once. It is also the verse why-trust-the-bible ends on, from the same Emmaus scene. Two verses meet the brief's \"two or three\", and the Emmaus scene stays in the body, where it belongs.",
+   "fix": "Delete: \"*\"Did not our hearts burn within us while he talked to us on the road, while he opened to us the Scriptures?\"* (Luke 24:32)\" Delete the whole line and the blank line before it. The Closing Texts are then Acts 17:27 and Psalm 22:24.",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## The Age We Live In\" and the section's first sentence: \"There is another cause, and it touches believers and unbelievers alike.\"",
+   "problem": "The heading is vague: it does not tell a reader scanning the page that this section is about Charles Taylor and the buffered self. The opening sentence is an announced turn of the kind the brief lists (\"There is one more lesson\"). Make the heading plain and let the first sentence carry the content.",
+   "fix": "Replace \"## The Age We Live In\" with: \"## Charles Taylor and the Modern Self\" Then Replace \"There is another cause, and it touches believers and unbelievers alike.\" with: \"Part of the distance comes from the age we live in, and it touches believers and unbelievers alike.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## Two Answers That Come Too Quickly\"",
+   "problem": "The heading is evaluative and faintly literary where the brief asks for plain and descriptive. The section body already makes the judgment (\"As a general explanation, though, the line is cruel\").",
+   "fix": "Replace \"## Two Answers That Come Too Quickly\" with: \"## Two Common Answers\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Lament in the Psalms, paragraph 3, first sentence: \"What matters most about these prayers, for anyone who feels God is far away, is that they are addressed to him.\"",
+   "problem": "An announced turn (\"What matters most ... is that\"). The claim lands harder stated plainly, and the next sentence already applies it.",
+   "fix": "Replace \"What matters most about these prayers, for anyone who feels God is far away, is that they are addressed to him.\" with: \"Every one of these prayers is addressed to God.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "When It Is More Than a Dry Season, paragraph 1, first sentence: \"John's warning reaches further than he could have known.\"",
+   "problem": "An announced literary turn that also patronizes its source. The essay has just said John named bodily disorder (the humors) as a cause of dryness, and melancholy was his age's word for much of what this section describes. Say it plainly.",
+   "fix": "Replace \"John's warning reaches further than he could have known.\" with: \"John's warning still holds.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Charles Taylor section (currently \"The Age We Live In\"), paragraph 2, sentence 4: \"We feel a distance from God partly because our age has taught us to feel distant from everything outside ourselves.\"",
+   "problem": "An overclaim that drifts from the Taylor it summarizes. The buffered self is sealed off and locates meaning inside the mind. It does not feel distant from everything. A reader who knows *A Secular Age* will catch it. The fix uses the essay's own summary of Taylor from the paragraph before.",
+   "fix": "Replace \"We feel a distance from God partly because our age has taught us to feel distant from everything outside ourselves.\" with: \"We feel a distance from God partly because our age has taught us to look for meaning only inside ourselves.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Charles Taylor section, paragraph 3, sentence 2: \"What it does show is that the feeling is not neutral data.\"",
+   "problem": "This is the stock pattern \"X doesn't prove Y. What it does show is Z.\" Smooth it into an ordinary sentence.",
+   "fix": "Replace \"What it does show is that the feeling is not neutral data.\" with: \"But it does show that the feeling is not neutral data.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Argument from Hiddenness, paragraph 1, sentences 1 and 2: \"The philosopher J. L. Schellenberg has given the skeptic's answer its most careful form. He first set it out in 1993 in *Divine Hiddenness and Human Reason* and restated it in 2015 in *The Hiddenness Argument*.\"",
+   "problem": "\"Its most careful form\" certifies the essay's fairness instead of showing it, close to the brief's \"Made carefully, the objection runs like this.\" The second sentence is the one scholar-parade spot in the essay: two titles and two years, where only the first matters. The 1993 date tells the reader this is a recent, formal argument. The 2015 restatement adds nothing the reader uses.",
+   "fix": "Replace \"The philosopher J. L. Schellenberg has given the skeptic's answer its most careful form.\" with: \"The philosopher J. L. Schellenberg has turned the skeptic's answer into a formal argument.\" Then Replace \"He first set it out in 1993 in *Divine Hiddenness and Human Reason* and restated it in 2015 in *The Hiddenness Argument*.\" with: \"He first set it out in 1993, in *Divine Hiddenness and Human Reason*.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Argument from Hiddenness, paragraph 5, sentence 5: \"The word \"perhaps\" is in Paul's own sentence, and he knew what groping in the dark was.\"",
+   "problem": "A vague framing clause. It hints at something in Paul's life (presumably the blindness of Acts 9) without saying it, and \"groping\" is not the ESV's word. The sentence is stronger ending on \"perhaps\".",
+   "fix": "Replace \"The word \"perhaps\" is in Paul's own sentence, and he knew what groping in the dark was.\" with: \"The word \"perhaps\" is in Paul's own sentence.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Charles Taylor section, paragraph 2, last sentence, link text: \"[a country where nobody is a Christian by default anymore](/writing/what-post-christian-means)\"",
+   "problem": "The link text reuses a line from an approved pilot. what-post-christian-means says \"Nobody in this country is a Christian by default anymore,\" and the brief says not to reuse a sentence or image from a pilot. Plain link text does the job.",
+   "fix": "Replace \"[a country where nobody is a Christian by default anymore](/writing/what-post-christian-means)\" with: \"[a post-Christian country](/writing/what-post-christian-means)\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language (CLAUDE.md), literal search of title, excerpt and body: none of the 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), none of the phrases (\"in today's world\", \"now more than ever\", \"here's the thing\", \"I want to be real with you\", \"God's got this\", \"blessed\", \"gospel-centered\", \"authentic community\"), and no therapy-speak (\"hold space\", \"your truth\", \"do the work\", \"your feelings are valid\", \"lean into\", \"showing up\"). No \"here is what I mean\" or \"let me explain\" signposting.",
+  "Em-dashes: none (U+2014 count 0). The only dash is the en-dash in the verse range \"Psalm 32:3–5\". No double hyphens.",
+  "Exclamation points: one, inside verbatim quoted Scripture (\"I believe; help my unbelief!\", Mark 9:24, ESV wording). None in the essay's own prose.",
+  "Semicolons: three, all inside quoted Scripture (Psalm 88:18, Habakkuk 3:18, Mark 9:24). None in the essay's own prose.",
+  "Stamps: none of \"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\". \"Honest\" and \"fair\" are not used at all.",
+  "Rulebook vocabulary: no steelman, verdict, indictment or self-implication in the prose. The one near-miss (\"its most careful form\") is listed above.",
+  "Biography: one use only, a confirmed fact (came to faith as an adult out of atheism), used to explain a posture, not as a credential. No title, years in ministry, book count, Southern Baptist membership, invented scene or congregant. The only issue is the shelf repetition listed above.",
+  "Standfirst (excerpt): \"Feeling that God is far away is one of the oldest experiences in the Bible and in the church, and it has more than one cause.\" One plain declarative sentence, not a balanced antithesis. The title uses the plain search words.",
+  "Political criticism: the essay makes none. Its criticism of the church fires at several targets with the same instrument and the writer inside it: moralistic \"guess who moved\" theology, emotionalist worship (\"We plan services to move people, and then we call the movement God ... We gave them that\"), and a certain apologetic reply to doubters.",
+  "Contested second-order questions: the cry of dereliction is explicitly left open (\"Christians have argued for centuries about what passed between the Father and the Son in that hour, and I won't settle it here\"). The Lord's Supper is mentioned without taking a view of what it is. The Romans 1 passage is the exception, listed above.",
+  "Crisis care: the depression and suicidal-thought paragraphs meet the reader without diagnosing (\"it may not be a spiritual problem at all, or not only one\"), do not validate despair, and keep the path to help visible: 988 call or text in the brief's exact wording, a [Find Help](/help) link, and a plain \"This essay can't give medical or counseling advice.\" Grief is met in the same paragraph block. No abuse is in view, so the reporting line is not required.",
+  "Ending: a short stack of plain lines that turns to the reader and lands on Christ's presence (Emmaus, Matthew 28:20). It is not a recap or a clever kicker, apart from the \"ours, not yours\" line listed above. Lewis's \"silent, certainly not uncompassionate, gaze\" closes the frame opened in paragraph 1 without resolving it cheaply.",
+  "Closing Texts format: each line is *\"Quote.\"* (Reference), and there are three, within the brief's two or three.",
+  "Links: two site essays, both in link-targets.json (what-post-christian-means, which does discuss Taylor, so \"I've written elsewhere\" is accurate; did-the-resurrection-happen), plus /help. Within the brief's two to four.",
+  "Headings: six of eight are plain and descriptive (Lament in the Psalms; What the Church Called the Dark Night; Faith When the Feeling Is Gone; When It Is More Than a Dry Season; The Argument from Hiddenness; The Cry from the Cross). Two are flagged above.",
+  "Scholar parade: seven named figures (Lewis, John of the Cross, Teresa of Ávila, Kolodiejchuk, Taylor, Schellenberg, Kierkegaard). Each does work in the argument, and Taylor, Schellenberg and John each get more than one paragraph. The \"In *Title* (YEAR), X argued\" pattern does not recur. The one parade-like sentence (Schellenberg's two titles and years) is listed above.",
+  "Register statistics: about 3,840 words with Closing Texts (about 3,710 after the fixes), at the brief's upper bound. Mean paragraph about 95 words (target 80 to 90, slightly long). Mean sentence 17.6 words (target 17 to 19). About 20% of sentences have 8 words or fewer (target about 25%, a little low, which suits a pastoral piece). Questions come in a real run in paragraph 3, and there is direct address to \"you\" in the practice, crisis and ending passages.",
+  "Skeptic read: the quick atheist answer is conceded before it is answered (\"The silence may well be evidence of something\"), Schellenberg's premises get real credit (\"Its premises are hard to wave off\"), the freedom defense is dropped where it fails, and the essay admits Kierkegaard \"doesn't fully answer Schellenberg\". A thoughtful unbeliever is met, not handled, apart from the Romans 1 sentence fixed above.",
+  "Pastor read: apart from the Romans 1 passage and the \"ours, not yours\" line, a pastor could hand this to a congregation. The practical counsel (tell someone, keep worshiping, let others hold up your hands, see a doctor) is concrete without becoming a takeaway box.",
+  "Applied together on a scratch copy, the fixes each match exactly once and leave no em-dash and no forbidden word. The only exclamation point goes out with the Mark 9:24 deletion. Scripture and fact verification (for example, the Mother Teresa letter wording and the Teresa of Ávila cell detail) belong to the integrity lens and were not re-checked here."
+ ]
+}
