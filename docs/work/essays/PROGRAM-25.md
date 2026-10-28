@@ -36,8 +36,8 @@ merge. Search budget: launch at most two search-heavy runs per main-session turn
 | 21 | the-rise-of-the-nones | after-christendom | ledger closed (second pass, 6 of 6); to land |
 | 22 | what-a-christian-owes-the-city | after-christendom | ledger closed (second pass, 10 of 10); to land |
 | 23 | the-council-of-nicaea-what-was-decided-in-325 | ancient-church | ledger closed (second pass, 9 of 9; two writer specifics restored); to land |
-| 24 | what-the-original-audience-heard | bible-in-its-world | writing (batch 4, wf_aa4917d2-715) |
-| 25 | the-persecution-we-invented | after-christendom | writing (batch 4, wf_aa4917d2-715) |
+| 24 | what-the-original-audience-heard | bible-in-its-world | written (3258), verified (122), voiced 8; second pass running (wf_d2e331b7-2aa) |
+| 25 | the-persecution-we-invented | after-christendom | written (3560), verified (81), voiced 9; second pass running (wf_37fc6a21-929) |
 | spare | when-the-pulpit-became-a-precinct | faith-and-power | if one is held |
 
 Rewrites fold in the slugs NOTES.md lists under "Essays each rewrite folds in"
