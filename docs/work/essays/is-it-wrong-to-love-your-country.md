@@ -1,6 +1,6 @@
 # Is It Wrong to Love Your Country?
 
-*Scripture treats love of country as a real good, and the love it commends is the kind that can still tell a country the truth.*
+*Scripture treats love of country as a real good, and the kind of love it honors grieves a country's sins and names them.*
 
 You may have loved America all your life without once wondering whether you should. You stand for the anthem. Perhaps you served, or your father did. You pray for the country by name, and you have never thought of that love as competing with your love for Christ. Lately, though, you keep hearing that it does. Books, sermons and maybe your own grandchildren have told you that patriotism is the doorway to idolatry. You want to know whether the love you've carried all these years was a sin.
 
