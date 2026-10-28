@@ -1,0 +1,87 @@
+{
+  "slug": "what-romans-13-says",
+  "lens": "integrity: facts, quotations, Scripture, living persons, restorations (read-only audit of client/public/essays/what-romans-13-says.json against docs/work/essays/ledgers/what-romans-13-says.md, 2026-10-28)",
+  "findings": [
+    {
+      "where": "What the Rest of Scripture Adds, Revelation paragraph: \"It makes war on the saints, and a second beast demands worship for its image and decides who may buy and sell.\"",
+      "problem": "\"its\" reads as the second beast's own image. Revelation 13:14-15 (ESV copy; BSB: \"the image of the first beast\") has the second beast order an image made for the first beast and kill those who will not worship the image of the beast. The ledger line records the claim as \"demands worship for the first beast's image\", so the essay and its ledger disagree.",
+      "fix": "Replace with: \"It makes war on the saints, and a second beast demands worship for the first beast's image and decides who may buy and sell.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Case for Obedience, first paragraph: \"Paul says \"every person.\" He says the authorities that exist \"have been instituted by God,\" not the good ones or the elected ones.\"",
+      "problem": "Two verbatim ESV fragments of Romans 13:1 (wording checked against the ESV copy and correct) are quoted with no reference beside them. The brief requires the reference beside each Scripture quotation; the next sentence's (13:2) covers only 13:2.",
+      "fix": "Replace with: \"Paul says \"every person.\" He says the authorities that exist \"have been instituted by God\" (13:1), not the good ones or the elected ones.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Romans 13 for Citizens Who Vote, second paragraph: \"to be God's servant \"for your good,\" a terror to bad conduct and not to good, under a law of love that \"does no wrong to a neighbor.\"\"",
+      "problem": "Two verbatim ESV fragments (Romans 13:4 and 13:10, wording correct) are quoted again with no reference beside them.",
+      "fix": "Replace with: \"Romans 13 tells us what that sword is for: to be God's servant \"for your good\" (13:4), a terror to bad conduct and not to good, under a law of love that \"does no wrong to a neighbor\" (13:10).\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Romans 13 for Citizens Who Vote, third paragraph: \"Paul told the Christians of Rome to give \"honor to whom honor is owed\" with Nero on the throne.\"",
+      "problem": "A verbatim ESV fragment of Romans 13:7 (wording correct) is quoted again with no reference beside it.",
+      "fix": "Replace with: \"Paul told the Christians of Rome to give \"honor to whom honor is owed\" (Romans 13:7) with Nero on the throne.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What the Rest of Scripture Adds, first paragraph after the section opener: \"When the council in Jerusalem ordered the apostles to stop teaching in Jesus' name, Peter answered, \"We must obey God rather than men\" (Acts 5:29).\"",
+      "problem": "The quoted words are right, but ESV Acts 5:29 gives the speakers as \"Peter and the apostles\" (BSB: \"Peter and the other apostles\"). Peter as spokesman is a defensible reading; the verse itself names them all.",
+      "fix": "Replace \"Peter answered,\" with \"Peter and the apostles answered,\". The later \"Peter's word in Acts 5:29\" can stay.",
+      "severity": "consider"
+    },
+    {
+      "where": "Ledger only (three essay claims with no ledger line): \"They had no vote and no say in who ruled them.\" / \"Love has to be genuine.\" / \"In Revelation 13 John sees a beast rise from the sea.\"",
+      "problem": "These checkable claims have no ledger line. Checked in this audit. (1) General historical claim: Roman residents had no vote in who ruled, and the emperor was not elected; low risk. (2) An unquoted paraphrase of Romans 12:9, ESV copy \"Let love be genuine.\"; correct. (3) Revelation 13:1, ESV copy \"And I saw a beast rising out of the sea\"; correct.",
+      "fix": "No change to the essay. Add three ledger lines recording these checks.",
+      "severity": "consider"
+    },
+    {
+      "where": "Ledger \"Still open\": ESV 2025 text edition and Romans 12:1 \"brothers\"",
+      "problem": "Still open: whether the ESV 2025 text edition changed any quoted verse. Two extended searches in this audit returned only Crossway's summary (68 word changes in 42 verses) and Old Testament excerpts of the change list. uploads.crossway.org was refused by the proxy (curl 403), so this remains unsettled. For \"brothers\" in Romans 12:1, a search summary in this audit reports that the current esv.org Romans 12-13 page prints verse 1 with \"brothers\" and its footnote, which closes that sub-item.",
+      "fix": "No change to the essay; every quotation is verbatim ESV (2016 text, 35 of 35 OK on rerun). In the ledger, mark Romans 12:1 \"brothers\" as confirmed by search summary of esv.org (2026-10-28 audit), and keep the API check for the 2025 edition as the one open item.",
+      "severity": "consider"
+    },
+    {
+      "where": "Ledger line on Southside Presbyterian (\"PC(USA) history: declaration read January 24, 1982\")",
+      "problem": "The ledger's January 24 conflicts with March 24, 1982, the anniversary of Archbishop Romero's assassination. Wikipedia \"Sanctuary movement\" and Zinn Education Project (search summary, this audit) both date the public declaration to March 1982 on that anniversary. The essay gives only \"1982\", so the essay is correct under either date.",
+      "fix": "No change to the essay. Correct the ledger line to March 24, 1982, or note the conflict.",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Published body matches docs/work/essays/what-romans-13-says.md line for line (difflib, 0 differences outside title and standfirst).",
+    "ESV: scratchpad/r13tools/esvcheck.py rerun on the published JSON body against the ESV copy (lguenth/mdbible fd66568): 35 of 35 referenced quotations OK, loose and strict. Unreferenced fragments checked by eye in the same copy: every person, have been instituted by God (13:1), for your good (13:4), does no wrong to a neighbor (13:10), honor to whom honor is owed (13:7), be subject (13:1): all verbatim.",
+    "BSB sense check (client/public/bible/ch/): every cited reference holds the verse the essay quotes or describes: Romans 16:3, 16:5, 12:1, 12:9, 12:14, 12:17, 12:19, 12:20, 13:1-14; Acts 18:1-2, 5:28-29, 5:40-41; 1 Peter 1:1, 2:13, 2:17; Titus 3:1; Daniel 3:18, 3:28, 6:7, 6:10, 6:19, 6:21-22; Revelation 13:1-17, 17:6, 17:9; 1 Timothy 2:1-2; John 19:10-11; Psalm 146:3; Romans 1:13, 15:22-23, 16:23.",
+    "Scripture mechanics: one exclamation point in the essay, inside verbatim Daniel 6:21 with its full reference; em-dash 0, en-dash 0; Closing Texts in the *\"Quote.\"* (Reference) form.",
+    "Mayhew (TCP N05197 XML, read again in this audit): title page \"the LORD'S DAY after the 30th of January, 1749/50\", \"Pastor of the West Church in Boston\"; quotations \"the slavish doctrine of passive obedience and non-resistance, is often warmly asserted\", \"the apostle was no sycophant, or parasite of power\", \"Rulers have no authority from God to do mischief\", \"It is blasphemy to call tyrants and oppressors, God's ministers\" are all verbatim, inner commas as printed; the closing period or comma inside the quotation marks follows standard American style for a quoted clause. The ill-managed and habitually paraphrases match the text.",
+    "Calvin (Allen tr., Gutenberg 64392, read in this audit): 4.20.31 private persons \"have received no other command than to obey and suffer\" and the Ephori who betray \"the liberty of the people\"; 4.20.32 Peter's \"We ought to obey God rather than men\", then Paul, then END OF THE INSTITUTES. Essay wording matches.",
+    "King (OpenStax m84542 copy): \"One who breaks an unjust law must do so openly, lovingly, and with a willingness to accept the penalty.\" verbatim; the essay's lowercase \"one\" is recorded in the ledger.",
+    "Barmen (EKD English text): \"the single and totalitarian order of human life\" verbatim; the paraphrases of thesis 5 carry no quotation marks.",
+    "Constitution (Gutenberg 5 and 18637): \"We the People of the United States\" (capital P in 18637), the oath \"preserve, protect and defend the Constitution of the United States\", and the Article VI oath binding legislators and all executive and judicial officers, federal and state.",
+    "Luther Small Catechism (Gutenberg 1670): \"devout and faithful rulers, good government\" in the daily-bread petition; \"The phrase is close to\" holds.",
+    "Spencer (Gutenberg 13988): Second Presbyterian Church, Brooklyn, Nov. 24, 1850; text Titus 3:1; M. W. Dodd 1850; title matches.",
+    "Tacitus (Perseus eng2 and lat2): Annals 13.50, the people's complaints against the revenue collectors and Nero's doubt about repealing all indirect taxes, checked by the senators (Latin \"attinuere senatores\"); the essay's \"advisers\" is the ledger's acknowledged rendering. Annals 15.44 matches the cruelty, pity and contempt for the sect.",
+    "Web search: Franklin Graham's \"disgraceful\" was in a CBN interview on Tuesday, June 12, 2018 (Christian Post, CBN, Mediaite, Hot Air), two days before Thursday, June 14. Graham blamed politicians of the past 20 to 30 years, not the president; the essay does not say otherwise, so the sentence is fair. \"Pro-Trump\" in the Mediaite headline and CBN's \"strong Trump supporter\" support \"one of the president's most loyal evangelical supporters\".",
+    "Web search: the Sessions speech is the DOJ's \"Attorney General Sessions Addresses Recent Criticisms of Zero Tolerance By Church Leaders\", Fort Wayne, June 14, 2018. WFYI and 95.3 MNC (search summary) describe an invited audience at Parkview Field. No source names the audience as law enforcement, so the writer's original wording is not restored; justice.gov itself could not be fetched (host not in the session's network allowlist). The speech defends enforcement and cites Romans 13 in answer to church leaders, so \"defended the administration's policy\" and \"quoted Romans 13 to defend enforcement\" are fair to Sessions.",
+    "Web search: gracechurch.org's own page title is \"Christ, not Caesar, Is Head of the Church\" (July 24, 2020), exactly as the essay quotes it.",
+    "Web search: Barmen delegate count is still unsettled (no result gave 139 or 138; one blog said 200+). \"Nearly 140\" stays, and the writer's \"139\" is not restored.",
+    "Web search: sanctuary congregations are described as \"liberal, pacifist, mainline Protestant, and Roman Catholic\" (Wikipedia via summary), with no \"religious left\" or \"most\" characterization, so the cut stays. Over 500 congregations at the peak supports \"Hundreds of congregations followed.\"",
+    "Web search: a German Christian pulpit use of Romans 13 (Hossenfelder, Kaiser Wilhelm Memorial Church, July 1933, from blog-level sources) supports the essay's deliberately general sentence; it names no example, so nothing further is needed.",
+    "Restorations (g): every \"Original wording, for restoring\" item was rechecked. Sessions law-enforcement audience: no confirming source. Calvin closing with Peter: the primary text ends with Paul. Barmen 139: unsettled. \"Religious left\": no source. Ansbach \"Soon afterward\" and \"Before that summer was over\" are already restored in the published text. Nothing new to restore.",
+    "Ledger-to-essay agreement: the opening (date, Fort Wayne, invited audience, both quotations, AME bishops, 600-plus United Methodists, Graham); Paul and Rome (50s, Corinth, Claudius, Prisca and Aquila first greeting, Nero at 16 in 54, 58 taxes, fire of 64, Paul's death under Nero); chapter break in the Middle Ages; the Greek word links (ekdikeo/ekdikos/orge; opheile/opheilo; hypotasso/peitharcheo); Polycarp around 155 and the ANF quotation with its British spelling; Boucher (pistols, September 1775); Franklin's capitalized motto; Spencer; German Christian elections of 1933; Barmen end of May 1934, nearly 140, Barth; Ansbach (June 11, 1934) and the Night of the Long Knives; Barth's 1967 letter, as paraphrase; Southside 1982, the 1985 indictments and the 1986 convictions; Grace Community 2020; Revelation 17 and Rome; the January terms; three centuries. All match the ledger as corrected and restored.",
+    "Living persons (f): Jeff Sessions, the unnamed press secretary, Franklin Graham, John Fife and Gavin Newsom (as \"California's Democratic governor\") are each described by documented public acts in neutral terms; no unsupported or unfair sentence found. The right/left paragraph criticizes both sides with the same instrument and names no individual.",
+    "Links: /writing/was-america-founded-as-a-christian-nation, /writing/what-christian-nationalism-is-and-is-not and /writing/the-early-church-under-rome (three, within the brief's two-to-four limit; the ledger records them as found in link-targets.json)."
+  ],
+  "web_searches": [
+    "Franklin Graham disgraceful CBN June 2018: interview Tuesday June 12, 2018 (Christian Post, CBN, Mediaite, Hot Air).",
+    "Sessions Fort Wayne remarks (twice, plus one extended): invited audience at Parkview Field; DOJ title 'Addresses Recent Criticisms of Zero Tolerance By Church Leaders'; no law-enforcement audience named.",
+    "Barmen 139/138 delegates: unsettled.",
+    "Grace Community statement title: gracechurch.org title matches the essay.",
+    "ESV 2025 change list (two extended searches): only summary and OT excerpts; esv.org Romans 12:1 still prints 'brothers'.",
+    "Sanctuary movement 'religious left': not found; March 1982, Romero anniversary; over 500 congregations.",
+    "German Christians and Romans 13: Hossenfelder July 1933 sermon (blog-level)."
+  ]
+}
