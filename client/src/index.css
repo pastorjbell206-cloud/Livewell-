@@ -955,6 +955,8 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .sb-text--poetry .sb-num { position: absolute; left: 0; top: 0.35em; }
 .sb-text--poetry .sb-line { display: block; padding-left: 1.2em; text-indent: -1.2em; }
 .sb-text--poetry .sb-line + .sb-line { padding-left: 2.6em; }
+/* On a phone the chapter summary keeps to three lines until asked for, so verse 1 is on the first screen. */
+@media (max-width: 999px) { .sb-summary:not([data-whole]) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; } }
 /* The phone study panel: about two fifths of the screen, so the verse stays in view above it. */
 .sb-panel { max-height: 42vh; max-height: 42dvh; }
 .sb-panel[data-tall] { max-height: 82vh; max-height: 82dvh; }

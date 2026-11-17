@@ -8,7 +8,7 @@
  * Greek words, how it points to Christ, LiveWell's writing on it, and the
  * next step in the story.
  */
-import { useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -60,6 +60,17 @@ export function useStoryPlace(slug: string, chapter: number): Place | null | und
 
 /** Above the text: the chapter's heading, summary, and place in the story. */
 export function ChapterHead({ note, place }: { note: ChapterNote | null | undefined; place: Place | null | undefined }) {
+  // On a phone the summary shows its first three lines (index.css,
+  // .sb-summary), so the chapter's first verse is on the first screen; the
+  // rest is one tap away, and the tap is offered only when something is cut.
+  const summary = useRef<HTMLParagraphElement>(null);
+  const [whole, setWhole] = useState(false);
+  const [cut, setCut] = useState(false);
+  const text = note?.summary;
+  useEffect(() => {
+    const el = summary.current;
+    if (el && !whole) setCut(el.scrollHeight > el.clientHeight + 2);
+  }, [text, whole]);
   if (!note) return null;
   const hard = hardQuestions(note).length;
   const jump: CSSProperties = { ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "36px", fontFamily: "var(--U)", fontSize: "13.5px" };
@@ -68,13 +79,18 @@ export function ChapterHead({ note, place }: { note: ChapterNote | null | undefi
       {place?.act && (
         <p style={{ margin: "0 0 6px" }}>
           <Link href={`/study/bible/story/${place.act.id}`} style={{ ...kicker, textDecoration: "none", backgroundImage: "none" }}>
-            {place.act.label} of the story · {place.act.title}
+            {place.act.label} · {place.act.title}
           </Link>
         </p>
       )}
       <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 1.9rem)", fontWeight: 400, lineHeight: 1.2, color: "var(--ink)", margin: "0 0 8px", textWrap: "balance" }}>{note.title}</h2>
-      <p style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.65, color: "var(--ink-muted)", margin: "0 0 4px" }}>{note.summary}</p>
+      <p ref={summary} className="sb-summary" data-whole={whole || undefined} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.65, color: "var(--ink-muted)", margin: "0 0 4px" }}>{note.summary}</p>
       <p style={{ display: "flex", flexWrap: "wrap", gap: "0 18px", margin: 0 }}>
+        {(cut || whole) && (
+          <button type="button" aria-expanded={whole} onClick={() => setWhole((w) => !w)} style={{ ...jump, border: "none", padding: 0, background: "none", cursor: "pointer", fontWeight: 600 }}>
+            {whole ? "Shorter summary" : "Whole summary"}
+          </button>
+        )}
         {hard > 0 && <a href="#hard-question" style={jump}>{hard > 1 ? `${hard} hard questions` : "A hard question"}</a>}
         <a href="#questions" style={jump}>Study questions</a>
         <a href="#notes" style={jump}>Study notes</a>
@@ -131,7 +147,7 @@ function ChapterQuestions({ note }: { note: ChapterNote }) {
     <section aria-label="Questions on this chapter" style={{ marginTop: "var(--s-5)", maxWidth: "72ch", display: "grid", gap: "var(--s-3)" }}>
       {hard.map((h, i) => (
         <div key={i} id={i === 0 ? "hard-question" : undefined} style={{ ...card, borderLeft: "2px solid var(--mustard)", padding: "var(--s-3) var(--s-3) 6px", scrollMarginTop: "90px" }}>
-          <h2 style={{ ...kicker, margin: "0 0 8px" }}>{hard.length > 1 ? `A hard question (${i + 1} of ${hard.length})` : "A hard question"}</h2>
+          <div role="heading" aria-level={2} style={{ ...kicker, margin: "0 0 8px" }}>{hard.length > 1 ? `A hard question (${i + 1} of ${hard.length})` : "A hard question"}</div>
           <p style={{ maxWidth: "62ch", fontFamily: "var(--F)", fontSize: "1.3rem", fontStyle: "italic", lineHeight: 1.35, color: "var(--ink)", margin: "0 0 6px" }}>{h.q}</p>
           <details className="sb-section">
             <summary style={{ cursor: "pointer", minHeight: "48px", display: "flex", alignItems: "center", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)" }}>Read an answer</summary>
@@ -140,7 +156,7 @@ function ChapterQuestions({ note }: { note: ChapterNote }) {
         </div>
       ))}
       <div id="questions" style={{ ...card, padding: "var(--s-3)", scrollMarginTop: "90px" }}>
-        <h2 style={{ ...kicker, margin: "0 0 10px" }}>{grouped ? "Questions for study or a group" : "For reflection or a group"}</h2>
+        <div role="heading" aria-level={2} style={{ ...kicker, margin: "0 0 10px" }}>{grouped ? "Questions for study or a group" : "For reflection or a group"}</div>
         {Array.isArray(note.questions) ? (
           <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "10px" }}>
             {note.questions.map((q, i) => <li key={i} style={question}>{q}</li>)}

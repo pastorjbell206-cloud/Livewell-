@@ -591,12 +591,14 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
               {next ? <NavBtn href={chapterHref(next.slug, next.ch)} label="Next chapter"><ChevronRight size={18} /></NavBtn> : null}
             </nav>
           </div>
-          <p style={{ margin: "6px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink-muted)" }}>
+          <p style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0 12px", margin: "4px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink-muted)" }}>
             <span style={{ color: "var(--ink)", fontWeight: 600 }}>{BIBLE_TRANSLATION}</span>
-            <span> · Also in </span>
-            {OTHER_TRANSLATIONS.map((t) => (
-              <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "6px 5px" }}>{t.name}</a>
-            ))}
+            <span>
+              Also in{" "}
+              {OTHER_TRANSLATIONS.map((t) => (
+                <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "5px 5px" }}>{t.name}</a>
+              ))}
+            </span>
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", gap: "10px", marginTop: "8px" }}>
             <div role="group" aria-label="How to show the text" style={{ display: "inline-flex", flex: "0 0 auto", border: "1px solid var(--border)", borderRadius: "999px", overflow: "hidden" }}>
