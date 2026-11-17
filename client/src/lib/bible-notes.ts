@@ -328,5 +328,14 @@ export function verseRange(v: string): [number, number] {
 }
 
 /** A link to other translations, which the site links to and never stores. */
-export const translationHref = (bookName: string, chapter: number, version: string) =>
-  `https://www.biblegateway.com/passage/?search=${encodeURIComponent(`${bookName} ${chapter}`)}&version=${version}`;
+export const translationHref = (bookName: string, chapter: number, version: string, verse?: number) =>
+  `https://www.biblegateway.com/passage/?search=${encodeURIComponent(`${bookName} ${chapter}${verse ? `:${verse}` : ""}`)}&version=${version}`;
+
+/** The translations offered beside the Berean Standard Bible: the version code a link takes, and the name shown. */
+export const OTHER_TRANSLATIONS: { code: string; name: string }[] = [
+  { code: "ESV", name: "ESV" },
+  { code: "NIV", name: "NIV" },
+  { code: "NASB1995", name: "NASB" },
+  { code: "CSB", name: "CSB" },
+  { code: "KJV", name: "KJV" },
+];
