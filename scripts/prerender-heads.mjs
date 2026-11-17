@@ -686,7 +686,8 @@ function positioningString(name) {
 function homeHeroHtml() {
   const esc = (s) =>
     s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  const headline = positioningString("HOME_HEADLINE");
+  // A dash keeps to the word before it, as in Home.tsx.
+  const headline = positioningString("HOME_HEADLINE").replace(/ \u2014/g, "\u00A0\u2014");
   const line = positioningString("HOME_LINE");
   const word = positioningString("HOME_LINKED_WORD");
   const href = positioningString("HOME_LINKED_HREF");

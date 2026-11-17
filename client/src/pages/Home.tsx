@@ -160,7 +160,8 @@ const quietLink = {
 export default function Home() {
   const essays = startEssays();
   // "post-Christian" in the headline opens the page that explains it.
-  const [headBefore, headAfter = ""] = HOME_HEADLINE.split(HOME_LINKED_WORD);
+  // A dash keeps to the word before it, so no line of the headline opens on one.
+  const [headBefore, headAfter = ""] = HOME_HEADLINE.replace(/ \u2014/g, "\u00A0\u2014").split(HOME_LINKED_WORD);
 
   return (
     <Layout>

@@ -279,7 +279,7 @@ describe("the home page", () => {
     vi.stubGlobal("fetch", offlineFetch());
     renderWithProviders(<Home />);
     const h1 = screen.getByRole("heading", { level: 1 });
-    expect(h1.textContent).toBe(HOME_HEADLINE);
+    expect(h1.textContent?.replace(/\u00A0/g, " ")).toBe(HOME_HEADLINE);
     // "post-Christian" in the headline opens the page that explains it.
     expect(within(h1).getByRole("link", { name: HOME_LINKED_WORD }).getAttribute("href")).toBe(HOME_LINKED_HREF);
     expect(isRoute(HOME_LINKED_HREF)).toBe(true);
