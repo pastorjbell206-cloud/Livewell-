@@ -133,7 +133,7 @@ describe("/family/devotions?tab=advent", () => {
     expect(window.location.search).toBe("");
     expect(screen.getByText("· Tonight")).toBeTruthy();
     expect(screen.getByText(/a tired couple was walking a hard road/)).toBeTruthy();
-    expect(screen.getByText(/The wording here is a paraphrase/)).toBeTruthy();
+    expect(screen.getByText(/Scripture quoted from the Berean Standard Bible/)).toBeTruthy();
   });
 
   it("opens the Advent tab, marks tonight's day, and says when Advent begins", async () => {

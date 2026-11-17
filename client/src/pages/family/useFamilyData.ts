@@ -13,6 +13,8 @@ import type { AskChoice } from "./DevotionParts";
 export interface Devotion {
   row: FamilyIndexRow;
   passageText: string;
+  /** A day of a daily set, when the passage above is the Bible text: the set's own retelling for children, shown under it as the printed booklets do. */
+  retelling?: string;
   /** Weekly devotions only. */
   bigIdea?: string;
   reflection: string;
@@ -30,7 +32,7 @@ export interface Devotion {
    */
   sides?: { label: string; text: string }[];
   prayer: string;
-  /** The weekly set quotes the BSB word for word; the daily sets retell each passage for children. */
+  /** The weekly set quotes the BSB word for word; a day of a daily set shows the BSB from the index, or its own retelling when the index has none. */
   rendering: "bsb" | "paraphrase";
 }
 
@@ -91,13 +93,17 @@ export function devotionFrom(row: FamilyIndexRow, data: unknown): Devotion | nul
   if (!Array.isArray(list)) return null;
   const d = list.find((x) => isObject(x) && x.day === row.day);
   if (!isObject(d) || !isText(d.passageText) || !isText(d.reflection) || !isText(d.prayer)) return null;
+  // The day's passage from the site's own Bible data where the index carries
+  // it (audit 2026-11, F5); otherwise the set's retelling, named as one.
+  const bsb = isText(row.bsb) ? row.bsb : null;
   return {
     row,
-    passageText: d.passageText,
+    passageText: bsb ?? d.passageText,
+    retelling: bsb ? d.passageText : undefined,
     reflection: d.reflection,
     questions: isText(d.question) ? [d.question] : [],
     prayer: d.prayer,
-    rendering: "paraphrase",
+    rendering: bsb ? "bsb" : "paraphrase",
   };
 }
 

@@ -26,10 +26,12 @@ import LoadFailed from "@/components/LoadFailed";
 import { SAVE_FAILED, TakeItWithYou } from "@/components/TakeItWithYou";
 import { Position } from "@/components/study/Position";
 import { localISODate } from "@/lib/familyYear";
+import { readCatechismPlace } from "@/lib/familyCatechism";
 import {
-  catechismThisWeek,
+  catechismFor,
   devotionHref,
   lastDone,
+  nightLabel,
   placeOf,
   readFamilyProgress,
   recordDevotionDone,
@@ -38,6 +40,7 @@ import {
   tonightOn,
   weekOfYear,
   whenSaid,
+  type CatechismLine,
   type FamilyIndex,
   type FamilyIndexRow,
   type FamilyProgress,
@@ -87,6 +90,8 @@ export default function DevotionPage() {
   // server render to agree with, so both are read as the page first renders.
   const [today] = useState(() => localISODate());
   const [progress, setProgress] = useState<FamilyProgress>(() => readFamilyProgress());
+  // Remember asks the question this family is on (its own place, from question 1), not the calendar's.
+  const [place] = useState(() => readCatechismPlace());
   const [finished, setFinished] = useState<{ key: string; ok: boolean } | null>(null);
   const finishKey = `${id}|${table ? "table" : "page"}`;
   const done = finished?.key === finishKey ? { ok: finished.ok } : null;
@@ -127,7 +132,9 @@ export default function DevotionPage() {
 
   const { index, devotion } = state;
   const { row } = devotion;
-  const catechism = catechismThisWeek(index.catechism);
+  const mine = catechismFor(index.catechism, place);
+  const catechism = mine?.line ?? null;
+  const own = mine?.own ?? false;
   const meta = (
     <SEOMeta title={`${row.title}: A Family Devotion`} description={row.description} url={`${SITE}/family/devotions/${row.id}`} type="article" />
   );
@@ -139,6 +146,7 @@ export default function DevotionPage() {
         <TableMode
           devotion={devotion}
           catechism={catechism}
+          own={own}
           ask={ask}
           step={step}
           onStepChange={(i) => navigate(`${devotionHref(row.id)}?mode=table&step=${i + 1}`, { replace: true })}
@@ -152,7 +160,7 @@ export default function DevotionPage() {
   return (
     <Layout>
       {meta}
-      <DevotionView devotion={devotion} index={index} catechism={catechism} ask={ask} today={today} progress={progress} done={done} onFinish={finish} />
+      <DevotionView devotion={devotion} index={index} catechism={catechism} own={own} ask={ask} today={today} progress={progress} done={done} onFinish={finish} />
     </Layout>
   );
 }
@@ -161,6 +169,7 @@ function DevotionView({
   devotion,
   index,
   catechism,
+  own,
   ask,
   today,
   progress,
@@ -169,7 +178,8 @@ function DevotionView({
 }: {
   devotion: Devotion;
   index: FamilyIndex;
-  catechism: ReturnType<typeof catechismThisWeek>;
+  catechism: CatechismLine | null;
+  own: boolean;
   ask: AskChoice;
   today: string;
   progress: FamilyProgress;
@@ -201,7 +211,7 @@ function DevotionView({
           </>
         }
         title={row.title}
-        lede={[row.label, row.passage, row.kind === "weekly" ? "About ten minutes" : null].filter(Boolean).join(" · ")}
+        lede={[nightLabel(row, today), row.passage, row.kind === "weekly" ? "About ten minutes" : null].filter(Boolean).join(" · ")}
         actions={
           <Link href={tableHref(row.id)} className="pg-action no-print">
             Start at the table
@@ -241,7 +251,7 @@ function DevotionView({
               <h2 id={`tb-${part.id}`} className="tb-section__title">
                 {part.title}
               </h2>
-              <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} />
+              <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} own={own} />
               {part.id === "read" && <ScriptureNote rendering={devotion.rendering === "bsb" ? "bsb" : "paraphrase"} />}
             </section>
           ))}
@@ -263,6 +273,11 @@ function DevotionView({
             <p className="tb-done__note" aria-live="polite">
               {done ? (done.ok ? "Done. This device will remember that you did this one tonight." : SAVE_FAILED) : doneTonight ? "Done tonight, on this device." : ""}
             </p>
+            {(done || doneTonight) && (
+              <Link href="/family/tonight" className="tb-link">
+                What the other nights this week hold
+              </Link>
+            )}
           </div>
           <nav className="tb-more no-print" aria-label="More family devotions">
             {prev ? (

@@ -118,7 +118,9 @@ export const PAGES = [
   ["client/src/pages/Family.tsx", []],
   ["client/src/pages/FamilyDevotions.tsx", []],
   // A devotion's page and table mode show a weekly devotion (BSB) or a day of
-  // a daily set (paraphrase).
+  // a daily set: its passage in the BSB from the family index (bsbReading in
+  // scripts/lib/family-index.mjs), or the set's own retelling (paraphrase)
+  // when the index has none.
   ["client/src/pages/family/DevotionPage.tsx", ["devotions", "seasonal"]],
   ["client/src/pages/family/TableMode.tsx", ["devotions", "seasonal"]],
   ["client/src/pages/FamilyCatechism.tsx", ["catechism"]],

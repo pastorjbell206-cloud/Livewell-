@@ -69,6 +69,12 @@ export function ReadPart({ devotion }: { devotion: Devotion }) {
           Open {row.passage} in the Study Bible
         </Link>
       </div>
+      {devotion.retelling && (
+        <>
+          <p className="tb-label">In other words (a retelling, not a quotation)</p>
+          <p className="tb-text">{devotion.retelling}</p>
+        </>
+      )}
     </>
   );
 }
@@ -170,11 +176,15 @@ export function DoPart({ devotion }: { devotion: Devotion }) {
   return <p className="tb-text">{devotion.activity}</p>;
 }
 
-/** This week's catechism question, the one /family/catechism features. */
-export function RememberPart({ line }: { line: CatechismLine }) {
+/**
+ * The catechism question the family is on: its own place (question 1 until it
+ * moves), or the calendar's weekly pick when it follows the calendar. The
+ * same question /family/catechism features.
+ */
+export function RememberPart({ line, own }: { line: CatechismLine; own?: boolean }) {
   return (
     <>
-      <p className="tb-label">This week's question · Question {line.number}</p>
+      <p className="tb-label">{own ? "Your family's question" : "This week's question"} · Question {line.number}</p>
       <p className="tb-big">{line.question}</p>
       {line.kidsAnswer && (
         <>
@@ -194,7 +204,7 @@ export function PrayPart({ devotion }: { devotion: Devotion }) {
 }
 
 /** One part's body, by id. */
-export function PartBody({ part, devotion, catechism, ask }: { part: Part; devotion: Devotion; catechism: CatechismLine | null; ask?: AskChoice }) {
+export function PartBody({ part, devotion, catechism, ask, own }: { part: Part; devotion: Devotion; catechism: CatechismLine | null; ask?: AskChoice; /** The question is the family's own place, not the calendar's. */ own?: boolean }) {
   switch (part.id) {
     case "read":
       return <ReadPart devotion={devotion} />;
@@ -205,7 +215,7 @@ export function PartBody({ part, devotion, catechism, ask }: { part: Part; devot
     case "do":
       return <DoPart devotion={devotion} />;
     case "remember":
-      return catechism ? <RememberPart line={catechism} /> : null;
+      return catechism ? <RememberPart line={catechism} own={own} /> : null;
     case "pray":
       return <PrayPart devotion={devotion} />;
   }

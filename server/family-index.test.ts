@@ -12,11 +12,15 @@ import path from "node:path";
 import {
   INDEX,
   ROOT,
+  bsbReading,
   buildFamilyIndex,
   opening,
   renderFamilyIndex,
   // @ts-expect-error: a plain .mjs build module without types
 } from "../scripts/lib/family-index.mjs";
+
+// @ts-expect-error: a plain .mjs build module without types
+import { quotesPassage } from "../scripts/lib/bsb.mjs";
 
 const pub = (name: string) => JSON.parse(fs.readFileSync(path.join(ROOT, "client/public", name), "utf8"));
 
@@ -152,6 +156,29 @@ describe("build-family-index", () => {
     const row = live.index.devotions.find((r: Row) => r.id === "praying-for-leaders");
     expect(row).toMatchObject({ kind: "weekly", strand: "world", n: 2 });
     expect(live.index.weekly).toBe(72);
+  });
+
+  it("gives every day of a daily set its passage word for word from the Berean Standard Bible", () => {
+    const { index } = buildFamilyIndex();
+    const seasonal = (index.devotions as (Row & { passage: string; bsb?: string })[]).filter((r) => r.kind === "seasonal");
+    expect(seasonal.length).toBeGreaterThan(0);
+    for (const r of seasonal) {
+      expect(r.bsb, r.id).toBeTruthy();
+      expect(quotesPassage(r.bsb, r.passage), `${r.id} ${r.passage}`).toBe(true);
+      // Marks open before they close and none is left open, and no psalm heading is read aloud.
+      let depth = 0;
+      for (const ch of r.bsb!) {
+        if (ch === "“") depth++;
+        if (ch === "”") expect(--depth, r.id).toBeGreaterThanOrEqual(0);
+      }
+      expect(depth, r.id).toBe(0);
+      expect(r.bsb).not.toMatch(/^For the choirmaster/);
+    }
+    // A weekly devotion carries its Bible text in its own file, not here.
+    expect((index.devotions as (Row & { bsb?: string })[]).filter((r) => r.kind === "weekly" && r.bsb)).toEqual([]);
+    // A passage that leaves a speech open is closed where it stops; one that cannot be read gives nothing.
+    expect(bsbReading("Isaiah 40:1-3")).toMatch(/^“Comfort, comfort My people,” says your God\..*in the desert\.”$/);
+    expect(bsbReading("Hezekiah 3:16")).toBeNull();
   });
 
   it("refuses a daily set it has no address for", () => {
