@@ -269,7 +269,7 @@ const DIM_META: Record<Dim, DimMeta> = {
           },
           {
             href: "/studyguides/deep-roots",
-            label: "Deep Roots: A Bible Study for Faith Beyond Slogans",
+            label: "Deep Roots: A Bible Study on the Basics of the Faith",
             note: "To take a small group deeper with you.",
           },
           {
