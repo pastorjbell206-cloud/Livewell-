@@ -127,7 +127,7 @@ export default function FamilyReadingPlans() {
                           Make today day {behind}
                         </button>
                       )}
-                      {!day && (
+                      {!day && !behind && (
                         <button type="button" className="pg-action pg-action--quiet" onClick={() => keep(withPlanStart(starts, plan.id, today))}>
                           Start it again today
                         </button>

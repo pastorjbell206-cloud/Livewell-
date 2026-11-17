@@ -6,7 +6,10 @@
  * different" (U21), reading plans, and the tools for the home. The 2026-11
  * audit added the chooser under Tonight ("A devotion for tonight"), the card
  * for the page on handing the faith to kids, the "How to" shelf, and a teen
- * section built from the pieces that exist.
+ * section built from the pieces that exist, and took the machine-sorted
+ * "Everything on this" shelf off the foot of the page (F13): it filed pieces
+ * about the nation and the church as family reading, and the hand-picked
+ * sections above already carry the pieces about the home.
  *
  * Tonight comes from the static year map and the reader's own calendar
  * (lib/familyTable); the titles and this week's question come from the family
@@ -27,8 +30,6 @@ import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBloc
 import { CardGrid } from "@/components/editorial/CardGrid";
 import { SectionHead } from "@/components/editorial/SectionHead";
 import { isPublicEssayHref } from "@/lib/shelf";
-import SubjectShelf from "@/components/SubjectShelf";
-import { subjectById } from "@/lib/subjects";
 import { localISODate } from "@/lib/familyYear";
 import { FAMILY_SETS } from "@/lib/familyYear.generated";
 import { readCatechismPlace } from "@/lib/familyCatechism";
@@ -217,7 +218,7 @@ export default function Family() {
       {/* WHY, AND HOW TO BEGIN: the page on handing the faith to kids (F14), then the How to shelf (F8). */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <Link href="/topics/raising-children-in-a-secular-age" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)", marginBottom: "var(--s-5)" }}>
+          <Link href="/topics/raising-children-in-a-secular-age" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "clamp(20px, 5vw, var(--s-5))", marginBottom: "var(--s-5)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Why this matters, and where to begin</div>
             <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.2, color: "var(--ink)", marginBottom: "10px" }}>
               How do we hand the faith to our kids in a secular age?
@@ -240,7 +241,7 @@ export default function Family() {
       {/* CATECHISM — featured */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <Link href="/family/catechism" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
+          <Link href="/family/catechism" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "clamp(20px, 5vw, var(--s-5))" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Learn the faith together</div>
             <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>
               The Family Catechism
@@ -283,7 +284,7 @@ export default function Family() {
       {/* READING PLANS */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <Link href="/family/reading-plans" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
+          <Link href="/family/reading-plans" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "clamp(20px, 5vw, var(--s-5))" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Read it together</div>
             <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>
               Family Bible reading plans
@@ -373,7 +374,6 @@ export default function Family() {
           />
         </div>
       </section>
-      {subjectById("family") && <SubjectShelf subject={subjectById("family")!} />}
     </Layout>
   );
 }
