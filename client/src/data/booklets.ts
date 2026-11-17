@@ -30,7 +30,7 @@ export const BOOKLETS: Booklet[] = [
   {
     group: "eldership",
     slug: "qualified-elder",
-    title: "Qualified",
+    title: "Qualified: What the Bible Requires of an Elder",
     subtitle:
       "Understanding the Elder Qualifications of 1 Timothy 3 and Titus 1 in Real Church Life",
     note: "The qualifications are not a checklist. They are a portrait of a man you would follow.",
@@ -103,7 +103,7 @@ export const BOOKLETS: Booklet[] = [
   {
     group: "governing",
     slug: "changing-the-unchangeable",
-    title: "Changing the Unchangeable",
+    title: "Changing the Unchangeable: Leading a Church Through a Hard Change",
     subtitle: "Leading Reform When 'We've Always Done It This Way'",
     note: "Every church has a wall marked do not touch. Some of those walls have to come down.",
     pdf: "/ebook/changing-the-unchangeable/Changing-the-Unchangeable.pdf",
