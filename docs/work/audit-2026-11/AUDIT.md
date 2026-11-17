@@ -12,6 +12,7 @@ Nine auditors each looked at the site through one lens. A second reviewer then r
 - **Pending** means work that is finished but not yet merged into the site. There are three batches: PR #540 (the new menu, the Topics pages, the family improvements, a one-year Bible reading plan), PR #541 (ten essays on doubt) and a branch called land-next (ten more essays). A "PR" is a batch of changes waiting for approval.
 - **Search title** means the line Google and Facebook show for a page. **Description** means the sentence under it.
 - **Redirect** means an old address that sends the visitor on to another page.
+- **Serif** means the kind of typeface books are printed in, with small strokes at the ends of the letters.
 - **Size:** S is under an hour of work, M is under a day, L is more.
 
 **What this audit could and could not see.** The auditors built the live site and the pending site and used both in a real browser, at phone size and at laptop size. They did not have your database, and they could not open outside websites. So nobody watched a contact message arrive, a Stripe sale complete, your Substack or Facebook pages, or the printable PDFs. Anything that rests on reading the code and not on watching it happen says so. The Substack comparison in the design section rests on the auditor's general knowledge of how Substack looks, not on your page.
@@ -20,7 +21,7 @@ Nine auditors each looked at the site through one lens. A second reviewer then r
 
 ## 1. The verdict
 
-The site already holds nearly everything you described, and most of it is good. There are notes on all 1,189 chapters of the Bible, 62 doctrine studies, 22 church history essays, 72 weekly family devotions with 40 seasonal ones, a 76-question family catechism, 68 group study guides, 35 honest answers, 36 tools and 619 free printables. Nothing hides behind a sign-up. What is not yet true is the sentence you gave: "one place for families to go to read, to study." On a phone, the live home page gives a door to the Bible, the essays and the books, and no door to family devotions, hard questions, church history or discipleship. Your Facebook is one link near the bottom of the About page. The two kinds of page that matter most, a Bible chapter and an essay, load badly on a phone. The Bible reader holds better notes than most free Bible sites, but a student cannot search the Bible for a word, see a psalm set as a poem, or keep a highlight. Church history reads well and is not yet a course. The design is careful and quiet, and it is not yet among the ten best. On an honest scale the site is about a 6 out of 10 against a world-class bar today, and about a 7 once the pending work merges. The pending work fixes the menu, the family door and the thin essay shelf. It does not fix the loading, the search, the Bible reader, church history, the look of the site, or the one-stop links to you.
+The site already holds nearly everything you described, and most of it is good. There are notes on all 1,189 chapters of the Bible, 62 doctrine studies, 22 church history essays, 72 weekly family devotions with 40 seasonal ones, a 76-question family catechism, 68 group study guides, 35 honest answers, 36 tools and 619 free printables. Nothing hides behind a sign-up. What is not yet true is the sentence you gave: "one place for families to go to read, to study." On a phone, the live home page gives a door to the Bible, the essays and the books, and no door to family devotions, hard questions, church history or discipleship. Your Facebook is linked in only two places: near the bottom of the About page, and in one small gray line at the end of each essay. The two kinds of page that matter most, a Bible chapter and an essay, load badly on a phone. The Bible reader holds better notes than most free Bible sites, but a student cannot search the Bible for a word, see a psalm set as a poem, or keep a highlight. Church history reads well and is not yet a course. The design is careful and quiet, and it is not yet among the ten best. On an honest scale the site is about a 6 out of 10 against a world-class bar today, and about a 7 once the pending work merges. The pending work fixes the menu, the family door and the thin essay shelf. It does not fix the loading, the search, the Bible reader, church history, the look of the site, or the one-stop links to you.
 
 ---
 
@@ -35,7 +36,7 @@ Each line is scored 1 to 10 against a world-class bar. The four lens scores at t
 | 3. Studying church history | 5 | 5 | Twenty-two well-written essays, but no door on the home page, two overlapping series in one list, no "next essay," no checkable sources, and the page teaches by reading only. |
 | 4. Answering hard questions | 6 | 7 | The Honest Answers and Test the Case are among the best things on the site; live, they are reachable only from the footer and the answers page is 65 phone screens long. PR #540 gives them a door. |
 | 5. Studying the Bible | 7 | 7 | The notes are a 9 and the tool that holds them is a 5: no word search, notes in closed drawers under the chapter, Scripture printed as one block, and chapters that load badly. |
-| 6. Resources | 7 | 8 | 619 free files and 36 tools, nothing gated; the live "Resources" door does not say what is inside and the hub pages are very long. |
+| 6. Resources | 7 | 8 | 619 free files and 36 tools, nothing gated; the live "Resources" door does not say what is inside and the main index pages are very long. |
 | 7. Books to read | 5 | 5 | Three books are presented clearly, but the "read the opening free" promise leads to no opening, five books the page says were taken down are still for sale, and the site gives three different book counts. |
 | 8. Family devotions and discipling kids | 6 | 7 | The devotions, Table mode and catechism are sound and usable tonight; nothing on the nightly path is written for a small child and the catechism repeats five questions. |
 | 9. One place for families | 4 | 7 | Live, the word "family" is not on the home page and the family page is four taps away; PR #540 adds a Family door and a line for tonight's devotion. |
@@ -74,11 +75,11 @@ In order. Each gives what a visitor meets, the fix, the size, and whether pendin
 
 **What a visitor meets.** On a phone, the live home page is a headline and two paragraphs. The first thing to tap sits past the first screen. The doors are "Study the Bible," "Read the essays" and "The books." The word "family" is not on the page. A mother who wants tonight's devotion has to guess "Resources," scroll about three screens, and tap twice more. Church history is promised in the paragraph ("learn the church's long history") and not linked. The title Google and Facebook show for the home page is an old tagline, "LiveWell by James Bell — Theology That Carries the Weight of Everyday Life," which names nothing the site offers. All three featured essays, and the first book, are about nationalism and power, so a stranger concludes the site is mainly about politics.
 
-**The fix.** Merge PR #540. Then cut the dark top section to the headline and one sentence, and bring the search field and tonight's devotion onto the first screen. Add a sixth door, "Church history." Give the home page one plain title. Choose three featured essays that span the mission.
+**The fix.** Merge PR #540. Then cut the dark top section to the headline and one sentence, and bring the search field and tonight's devotion onto the first screen. Add a sixth door to the home page's list, "Church history" (the header keeps your five). Link "post-Christian" in the headline to the page that explains it. Give the home page one plain title. Choose three featured essays that span the mission.
 
 **Size.** S to merge, S for the door and the title, M for the first screen.
 
-**Pending.** Partly. PR #540 adds the Family and Topics doors, "Hard questions" and "Family devotions" on the home page, a field labelled "Look up a passage or ask a question," and the line for tonight's devotion. It places them below the same two paragraphs, so the first door sits lower than it does today. The church history door, the first screen, the title and the featured essays stay open.
+**Pending.** Partly. PR #540 adds the Family and Topics doors, "Hard questions" and "Family devotions" on the home page, a field labelled "Look up a passage or ask a question," and the line for tonight's devotion. It places them below the same two paragraphs, so the first door sits lower than it does today. The church history door, the link from the headline, the first screen, the title and the featured essays stay open.
 
 ### 2. Bible chapters and essays load badly on a phone
 
@@ -140,7 +141,7 @@ In order. Each gives what a visitor meets, the fix, the size, and whether pendin
 
 ### 7. The Study Bible is hard to study in
 
-**What a visitor meets.** Verse 1 starts on the second phone screen. The chapter runs as one unbroken block; Psalm 23 is printed as a prose paragraph. The study notes sit after the last verse in fourteen closed drawers. Tapping a verse number opens that verse's notes and Greek in a panel, which is the best interactive thing on the site, but the only way in is a number 24 pixels square, and tapping the verse itself does nothing. Nothing near the text says which translation it is (the Berean Standard Bible). A student cannot copy a verse, highlight, or write a note. On a phone the study panel covers 72 percent of the screen.
+**What a visitor meets.** Verse 1 starts on the second phone screen. The chapter runs as one unbroken block; Psalm 23 is printed as a prose paragraph. The study notes sit after the last verse in fourteen drawers, all but one of them closed. Tapping a verse number opens that verse's notes and Greek in a panel, which is the best interactive thing on the site, but the only way in is a number 24 pixels square, and tapping the verse itself does nothing. Nothing near the text says which translation it is (the Berean Standard Bible). A student cannot copy a verse, highlight, or write a note. On a phone the study panel covers 72 percent of the screen.
 
 **The fix.** Make the whole verse tappable and mark the verses that have notes. Bring "A hard question" and the study questions up to the top as visible links. Name the translation in the chapter heading. Add "Copy verse." Open the phone panel at about 40 percent. Then the larger work: paragraphs, poetry in lines and section headings.
 
@@ -338,12 +339,12 @@ Labels that are already right: Church history, Creeds and confessions, The Study
 | /faq/can-science-and-faith-coexist | | | Can Science and Faith Coexist? 8 Questions Answered | Can Science and Faith Coexist? |
 | /books/believe | | | Believe: The Rational Case for Christian Faith — by James Bell | Believe: The Rational Case for Christian Faith |
 | /books/when-god-bless-america | | | When God Bless America Replaces Thy Kingdom Come — by James Bell | When God Bless America Replaces Thy Kingdom Come |
-| Three off-shelf book pages | | | ... — by James C. Bell | Drop "— by James C. Bell" (if the pages stay; decision 3) |
+| Three off-shelf book pages | | | ... — by James C. Bell | Drop the "by James C. Bell" ending (if the pages stay; decision 3) |
 | All 150 Psalm chapters | Psalms 23 | Psalm 23 | Psalms 23 Study Notes – The LORD Is My Shepherd | Psalm 23 Study Notes – The LORD Is My Shepherd |
 | 11 story pages | | | Creation: Act One | Creation: Part One of the Bible's Story |
 | 208 /wisdom pages | | | Anxiety and Worry — What the Bible Says | What the Bible Says About Anxiety and Worry |
 
-**The five new pages in PR #540** (fix before it merges):
+**New in PR #540** (four of its five new pages, two Topics rows and one label; fix before it merges):
 
 | Page | Search title in PR #540 | Proposed |
 |---|---|---|
@@ -353,7 +354,7 @@ Labels that are already right: Church history, Creeds and confessions, The Study
 | /study/bible/guides/whole-story-2027 | Read the Whole Story of the Bible in 2027 | Read the Bible in a Year: The 2027 Plan |
 | Topics row | Why are Sunday mornings still divided, and what did the church do about slavery? | Why didn't the Bible just ban slavery? (the title of the page it opens) |
 | Topics row | Money and work | I'm worried about money and work |
-| Family devotions chip | Foundations · 72 | Weekly · 72 (as it reads today; "Foundations" already names a reading plan) |
+| Family devotions filter label | Foundations · 72 | Weekly · 72 (as it reads today; "Foundations" already names a reading plan) |
 
 ### 5.4 Insider words, wherever they appear
 
@@ -500,13 +501,13 @@ The two auditors agree the plain words lead. They differ on what follows: A keep
 | The Apostolic and Persecuted Church | (covers the same years as two essays above it; settle with the two-series question, decision 19) |
 | The Long Middle | Nine Hundred Years: The Church from Rome's Fall to the Reformation (A: The Middle Ages: The Long Middle) |
 | Awakenings and Enlightenment | Revival and Reason: The Church from 1648 to 1800 |
-| The American Experiment | How Christianity Became American, 1800 to 1950 |
+| The American Experiment | How Christianity Became American, 1800 to 1950 (nearly the same words as an essay title in 5.6; change one) |
 | The Attractional Era | The Megachurch Years, 1950 to 2010 (A: The Megachurch Years: The Attractional Era; your wording wanted) |
 | After Christendom | The Church After Christian America, 2010 to Today |
 | Timeline entry: The Constantinian Shift | Constantine Makes the Church the Empire's Favorite |
 | Timeline entry: Democratic Socialism and the Honest Distinction | Democratic Socialism Is Not Soviet Communism |
 
-Until one series is chosen, show the two as two labeled lists: "The long course (14 essays)" and "The short course (8 essays)." The working titles for the planned course have the same trouble ("How to Read the Dead," "The Long Middle," "The American Experiment"); choose plain ones before those sessions are written. A one-line plain gloss on each heresy card would help: "Arianism: the teaching that Jesus was the highest creature, not God."
+Until one series is chosen, show the two as two labeled lists: "The long course (14 essays)" and "The short course (8 essays)." The working titles for the planned course have the same trouble ("How to Read the Dead," "The Long Middle," "The American Experiment"); choose plain ones before those sessions are written. A one-line plain explanation on each heresy card would help: "Arianism: the teaching that Jesus was the highest creature, not God."
 
 ### 5.9 Study guides (52 of 68 pass)
 
@@ -537,7 +538,7 @@ On the plans page each plan sits under the reader's own sentence, which is right
 
 | Title today | Proposed |
 |---|---|
-| Eight Weeks in the Waiting | Eight Weeks for a Couple Who Cannot Have Children |
+| Eight Weeks in the Waiting | Eight Weeks for a Couple Facing Infertility |
 | Eight Weeks of Beginnings | Eight Weeks for a New Christian |
 | Eight Weeks of Learning to Stop | Eight Weeks for When Work Has Burned You Out |
 | Eight Weeks of Reading Like an Adult | Eight Weeks for the Curious Skeptic |
@@ -569,7 +570,7 @@ On the plans page each plan sits under the reader's own sentence, which is right
 | /disruption/consistency | The Consistency Check | Do You Hold Both Sides to the Same Standard? A Self-Check | (see 5.3) |
 | /tools/quotes | Words Worth Sharing | Quotes from the essays and books | Quotes From James Bell's Essays and Books |
 | /tools/wisdom-finder | Wisdom Finder (headline "What are you facing," the same as Find Help) | What does the Bible say about what I am facing? | What Does the Bible Say About My Situation? |
-| /tools/family-devotions | Family Devotion Builder | A devotion for tonight | Build a 15-Minute Family Devotion |
+| /tools/family-devotions | Family Devotion Builder | (keep the name; "A devotion for tonight" sits too close to "Tonight's family devotion") | Build a 15-Minute Family Devotion |
 | /tools/conflict-guide | Conflict Resolution Guide | | Resolve a Conflict: Five Steps for Couples |
 | /tools/emotional-health | Emotional Health Self-Check | | Emotional Health Self-Check (15 Questions) |
 | /tools/financial-health | Financial Health Check | | Money and Faith Self-Check (12 Questions) |
@@ -593,7 +594,7 @@ On the plans page each plan sits under the reader's own sentence, which is right
 | Devotion search titles | The Weight You Put Down: A Family Devotion | A only: Forgiveness: The Weight You Put Down (Family Devotion). B passes the titles as long as the theme label always travels with them. |
 | Near twins | "He Keeps His Word" and "The God Who Keeps His Word" | Reword one |
 | Reading plan | Heroes and Promises | The Old Testament Story in 30 Days |
-| Reading plan | Foundations | Start Here: 21 Days for a Family New to Faith |
+| Reading plan | Foundations | 21 Days for a Family New to Faith |
 | Devotion page counters | "72 of 72 · Weekly devotions · Week 47 of the year" | One counter |
 | "Start" link on the family page | Start | Start tonight's devotion |
 
@@ -616,7 +617,7 @@ On the plans page each plan sits under the reader's own sentence, which is right
 | Context guide | What We Bring to the Text Without Knowing It | How Does Being Western Change the Way We Read the Bible? |
 | Context guide | Who the Pharisees Actually Were | Who Were the Pharisees, Sadducees and Essenes? |
 | Creed | The Heidelberg Catechism, Lord's Day 1 | The Heidelberg Catechism: Question 1, "What Is Your Only Comfort?" |
-| Creed cards | (name only) | Add one plain line under each name, for example under the Barmen Declaration: "What German pastors said to Hitler's church in 1934" |
+| Creed cards | (name only) | Add one plain line under each name, for example under the Barmen Declaration: "What German pastors declared against the Nazi takeover of the church in 1934" |
 | Doctrine page | How God Speaks | How Does God Speak to Us? |
 | Doctrine page | How the Whole Story Fits | How Does the Whole Bible Fit Together? Covenant Theology and Dispensationalism |
 | Doctrine page | What Inspired Means | What Does It Mean That the Bible Is Inspired? |
@@ -655,6 +656,8 @@ Thirteen group guides carry exactly the same title as an essay or an Honest Answ
 | What Following This Actually Costs | What Does It Cost to Follow Jesus? |
 | What Happened to the Historical Jesus | Was Jesus Real? What Historians Actually Know |
 
+Three of these new titles match the new title of the essay they belong to (the Anabaptists, "Why Are People Leaving the Church?" and "Was Jesus Real?"). Put "Discussion Guide:" in front of those three as well.
+
 ### 5.16 Older sections still reachable from links and search
 
 | Section | Title today | Proposed |
@@ -672,7 +675,7 @@ Thirteen group guides carry exactly the same title as an essay or an Honest Answ
 | Justice topic | The Prisoner and the Gate | Prisons, Justice and Mercy |
 | Justice topic | The Sin We Build Together | What Is Systemic Sin? |
 | Justice topic | The Wage and the Worker | Fair Pay and the Worker |
-| Church and power topic | Moralistic Therapeutic Deism | "God Wants Me to Be Happy and Nice": The Faith Many Americans Actually Hold |
+| Church and power topic | Moralistic Therapeutic Deism | The Faith Many Americans Actually Hold (Moralistic Therapeutic Deism) |
 | Church and power topic | The Comfortable Captivity | Consumer Christianity: When Comfort Runs the Church |
 | Church and power topic | The Platform and the Pedestal | Celebrity Pastors and the Cost of Fame |
 | Church and power topic | The Sword and the Plowshare | Should Christians Go to War? |
@@ -726,24 +729,24 @@ The palette and its restraint. The essay title block. The table-of-contents layo
 
 1. **No typeface for reading.** Essays, devotions and Bible chapters are set in Inter, the face used for "Subscribe." Italics are faked by the browser; no italic file exists. Quotation marks are the straight typewriter kind. Serious reading sites set long text in a book face, and so does Substack.
 2. **Nothing drawn.** On eighteen audited pages the only images are your portrait and three book covers. Church history is a list. The Bible index is 66 identical gray boxes. The tools page is 36 identical boxes.
-3. **No single set of parts.** Page titles appear at ten sizes on a laptop. The text column on a phone is five different widths, so the left edge jumps from page to page. Nine pages open on black and nine on cream with no rule a visitor could guess. Buttons are square here and round there. Mustard is used as fill on the 404 page and the footer button; the code holds 116 mustard backgrounds, against your own rule that mustard is punctuation.
+3. **No single set of parts.** Page titles appear at ten sizes on a laptop. The text column on a phone is five different widths, so the left edge jumps from page to page. Nine pages open on black and nine on cream with no rule a visitor could guess. Buttons are square here and round there. Mustard is used as fill on the "not found" page and the footer button; the code holds 116 mustard backgrounds, against your own rule that mustard is punctuation.
 4. **The first screen has nothing to touch.** The dark top of the home page is 912 pixels tall on a phone, taller than the screen. One line of the headline begins with a dash at each screen size.
 5. **The essay does not end.** Eight controls stand before the first sentence. After the last line come a second toolbar, a Find Help band, four more essays, a newsletter card, an author card, a line of links, a back link, and the footer with a second newsletter form.
 6. **The index pages are long columns of look-alike boxes.** The Study Bible front page is 15 phone screens, church history 18, Find Help 14, Family 14 (growing in PR #540), Tools 12.
-7. **Small unfinished things.** The 404 page has no header or footer. The footer email box cuts off its own hint text. The Subscribe button on the subscribe page looks dead until a label is chosen. No list of essays shows a date. Nothing has a pressed state: a tap on a phone gives no response. There is no night setting. The phone footer is 1.6 screens tall, 2.3 in PR #540. On a phone the header has no Subscribe.
+7. **Small unfinished things.** The "not found" page has no header or footer. The footer email box cuts off its own hint text. The Subscribe button on the subscribe page looks dead until a label is chosen. No list of essays shows a date. Nothing has a pressed state: a tap on a phone gives no response. There is no night setting. The phone footer is 1.6 screens tall, 2.3 in PR #540. On a phone the header has no Subscribe.
 
 ### "Match my Substack"
 
 Where the essay page already matches: one narrow column, a large serif title, an italic line under it, your name with reading time and date.
 
-Where it does not: the body is not a serif; controls stand between the byline and the first sentence; the ending carries many asks where Substack carries one; the essay list is grouped by theme with no dates, where a Substack home is a dated list, newest first; and the word "Substack" appears once per page, as a small footer link.
+Where it does not: the body is not a serif; controls stand between your name and the first sentence; the ending carries many asks where Substack carries one; the essay list is grouped by theme with no dates, where a Substack home is a dated list, newest first; and the word "Substack" appears once per page, as a small footer link.
 
 ### The ranked moves
 
 | # | Move | Size | Needs you? |
 |---|---|---|---|
 | 1 | Settle the portrait on the home page and keep the image file on the site's own server | S | Yes (decision 6) |
-| 2 | Fix the small unfinished things: 404 page, footer field, curly quotes, devotion title capitals, the gray Subscribe button, dates on the essay list, a pressed state, Subscribe in the phone header | S each | No |
+| 2 | Fix the small unfinished things: the "not found" page, footer field, curly quotes, devotion title capitals, the gray Subscribe button, dates on the essay list, a pressed state, Subscribe in the phone header | S each | No |
 | 3 | One book typeface with a true italic for essays, Scripture, notes and devotions (Source Serif 4 is proposed) | M | Yes (decision 13); it changes the type rules for the site |
 | 4 | Rebuild the essay's top and ending: one quiet row of tools, then after the last line one next essay, the sources, the newsletter once, and a "Find James" row | M | Yes (decision 14) |
 | 5 | Home's first screen: a shorter top, the search field and tonight's devotion in view | M | No |
@@ -754,7 +757,7 @@ Where it does not: the body is not a serif; controls stand between the byline an
 | 10 | Shorten each index page to one screen of clear choices, then "see all" | M each | No |
 | 11 | A night setting, offered as Paper or Night | M | No |
 | 12 | Collapse the phone footer into rows that open | M | No |
-| 13 | A drawn wordmark and one cover design for the book series | M, outside help | Yes |
+| 13 | A drawn logo of the site's name and one cover design for the book series | M, outside help | Yes |
 
 Moves 1 to 5 would change how the site feels to a Substack reader. Moves 6 to 9 are what "top ten" requires. Most are already specified in the October design vision; almost none is built.
 
@@ -785,10 +788,10 @@ The site has more working interactive things than its front page suggests. All o
 | I4 | Find Help's free-text box returns unrelated pages | A floor and a cap of three | S | No |
 | I5 | The same job is done several times: three starter quizzes, two whole-life checks, five verse lookups, four passage-study pages, two glossaries, two devotion makers, three places that remember things | Fold them, with your yes (decision 25) | M | No |
 | I6 | The 30-question Whole-Life Assessment forgets everything if the page reloads | Save answers as you go, like the other self-checks | S | No |
-| I7 | Tap targets are too small: verse numbers 24 pixels, reading-plan checkboxes 20 pixels tall, memory-tool buttons 27 | Make the whole verse tappable; raise the rest to 44 | M | No |
+| I7 | Many buttons are too small for a thumb: verse numbers 24 pixels, reading-plan checkboxes 20 pixels tall, memory-tool buttons 27 | Make the whole verse tappable; raise the rest to 44 | M | No |
 | I8 | Three tools say "The verse text here has not been checked word for word against one translation." One is the Scripture memory tool. The devotion builder gives small children the King James. | Draw the verses from the site's own Bible text | M | No |
-| I9 | The answers page has no search, no groups and no way back up after an answer | A find box, four or five headings, "Back to the questions" | S | No |
-| I10 | Search misses plain words: "timeline" returns an end-times study guide; the verse finder says no topics match "lonely" | Plain-word aliases and word forms | S to M | No |
+| I9 | The answers page has no search, no groups and no way back up after an answer | A find box, four or five headings, "Back to the questions"; later, a short page for each answer (M) | S | No |
+| I10 | Search misses plain words: "timeline" returns an end-times study guide; the verse finder says no topics match "lonely" | Teach the search the plain words and the other forms of a word | S to M | No |
 | I11 | Several "tools" are reading pages with an "Open the tool" button | Label them "Read"; label real tools "Start" | S | No |
 | I12 | A page nothing links to shows "0 DAY STREAK" | Send it to My Library | S | No |
 | I13 | Nothing a visitor makes can be shared as itself (no card, no image) | Quote and verse cards | S to M | No |
@@ -808,8 +811,8 @@ All run on what the site already has. None needs a login.
 | 5 | **"Ask a hard question."** Type or tap a question and get one best answer, then "argue it with me," "see where Christians differ," and "the long version." | Honest Answers, Test the Case, the compare page, essays | M |
 | 6 | **Quote and verse cards.** "Make a card" on any quote or verse: a cream-and-black card with the line, the source and the site's name, to save or post. | 399 quotes; the Bible text | S to M |
 | 7 | **Finish the tappable chapter.** Tap anywhere on a verse; cross-references that open in place; highlight and note; copy verse with reference. | Mostly existing | M |
-| 8 | **Reading paths that show your place.** "3 of 7 read," the next one marked. | The essay shelf | S to M |
-| 9 | **The church history timeline you can move through.** One line to scale from AD 30 to today. Step a year marker and see who was alive, which council met and which essay covers it. A second row for America. A plain list beside it for screen readers. | 68 dated events, 11 councils, 36 people, 10 heresies, 22 essays, 45 injustice events; each needs a start and end year added | L (a list with a year stepper first: M) |
+| 8 | **Essay sections that show your place.** "3 of 7 read," the next one marked. | The essay shelf | S to M |
+| 9 | **The church history timeline you can move through.** One line to scale from AD 30 to today. Step a year marker and see who was alive, which council met and which essay covers it. A second row for America. A plain list beside it for screen readers. | 68 dated events, 11 councils, 36 people, 10 heresies, 22 essays, 45 injustice events; each needs a start and end year added | L (a list you step through year by year first: M) |
 | 10 | **A doctrine explorer.** The Nicene Creed set large; tap a line to see the doctrine, the year it was fought over, the verses, the catechism question and where Christians still differ. | Creeds, 62 doctrine studies, 31 debates | M to L |
 | 11 | **Check yourself after a history essay.** Three or four private questions. | New writing you must read | M |
 | 12 | **Maps of the biblical world.** | No place data exists on the site | L, only if you want it |
@@ -878,7 +881,7 @@ This comparison rests on the auditor's knowledge of those tools.
 5. **Make church history one course:** one series, numbered, with previous and next, and every person and council linked to its entry. M.
 6. **Show the sources.** Put a short reference under each report of what an ancient writer said, using the 22 primary texts already checked in PR #540, and give each book in "Sources" its year. M for the first era, L for all.
 7. **Let a student keep things:** copy verse, copy link, then highlights and a note per verse, kept on the device and shown in My Library. S, then M.
-8. **Fix the phone study panel and the raw marks in the word study.** Open the panel at 40 percent with previous and next. Show supplied words in gray instead of in angle brackets (34,033 word glosses carry them). Fix the grammar label on Hebrew verbs. Print "53 times in 45 verses" on the 2,752 word lists that are complete but say "the first 45 are listed." M.
+8. **Fix the phone study panel and the raw marks in the word study.** Open the panel at 40 percent with previous and next. Show supplied words in gray instead of in angle brackets (34,033 word meanings carry them). Fix the grammar label on Hebrew verbs. Print "53 times in 45 verses" on the 2,752 word lists that are complete but say "the first 45 are listed." M.
 9. **Put the Study Bible and the history entries into the site search,** with an exact name ranked first. M.
 10. **Finish the layers in a published order.** Hebrews needs three more chapters of verse notes and Romans seven. Then the books you choose. "Further reading" for all 66 books. Four history essays for the missing regions. Study questions and one primary reading at the end of each history essay, as every Bible chapter already has. L.
 
@@ -1009,7 +1012,7 @@ Speed was measured on a copy of the site served the way the real host serves it,
 | Wrong-target links | 11 in Jude, 2 John and 3 John open "Jude has 1 chapter. Choose a chapter"; 8 quote cards link to essays that are off the shelf; 5 links pass through a redirect | | Re-point them | S |
 | Sideways scrolling on a phone | Good: none on 25 pages | | | |
 | Accessibility | Mostly clean: no faults on 11 main pages | On the search page, mustard labels on cream are too faint to read easily. Two labels on dark sections are too faint. The text-size buttons are named differently from what they show. | Use the darker mustard for text; rename the buttons | S |
-| Tap targets on a phone | Poor on the Bible chapter: 423 of 489 controls under the 44-pixel guideline | A thumb hits the wrong verse | Whole-verse tap; padding | M |
+| Button sizes on a phone | Poor on the Bible chapter: 423 of 489 controls under the 44-pixel guideline | A thumb hits the wrong verse | Whole-verse tap; padding | M |
 | Fonts | Kept on the site's own server; the same file is downloaded three times under three names | About 170 KB wasted on a first visit | One file per typeface | S |
 | The feed for reader apps (RSS) | Leaves out the newest essays (read from the code, not run) | | Section 10, C9 | M |
 | The map of pages for search engines (sitemap) | Clean: 2,268 addresses, all correct | Tonight's devotion is missing; only 6 entries carry a date | Add both | S |
@@ -1072,7 +1075,7 @@ Small fixes, each under an hour unless marked. None needs a decision from you ex
 26. Label the first three nights of Advent "Day 1" instead of "December 1." Advent begins November 29.
 27. Print "53 times in 45 verses" on complete word lists.
 28. Send the old pastor-burnout address to this site's own page for a worn-out pastor instead of to another site's front page.
-29. Send the orphan streak page to My Library and the leftover author page to About.
+29. Send the unlinked streak page to My Library and the leftover author page to About.
 
 **Speed and polish**
 
@@ -1113,7 +1116,7 @@ The large pieces, in the order this report would build them.
 
 1. **The Bible chapter as a study desk.** Scripture in paragraphs and poetry lines with headings; a second translation in a column; highlights and notes kept on the device; listening.
 2. **Church history as a course.** Sources under every claim, study questions and a primary reading per session, the timeline you can move through, and four essays for the missing regions (decision 19).
-3. **One design system.** One scale of headings, one margin, one set of buttons and cards; each index page cut to one screen; the night setting.
+3. **One set of design rules.** One scale of headings, one margin, one set of buttons and cards; each index page cut to one screen; the night setting.
 4. **The two drawings.** The church history line and the 66 books as bars (decision 24).
 5. **The little-ones line** on all 72 devotions, and short sets for Lent and Easter week.
 6. **More notes.** Finish verse-by-verse notes for Hebrews and Romans (ten chapters), then the books you choose. "Further reading" for all 66 books. Full texts of the older confessions.
@@ -1164,7 +1167,7 @@ The large pieces, in the order this report would build them.
 **Design and new pieces**
 
 23. May shareable quote and verse cards carry your name and the site's address onto Facebook?
-24. May the site carry drawings (the church history line, the 66 books as bars) and public-domain artwork? Should the timeline be built now as a simple list with a year stepper, or wait for the full drawing? Do you want maps?
+24. May the site carry drawings (the church history line, the 66 books as bars) and public-domain artwork? Should the timeline be built now as a simple list you step through year by year, or wait for the full drawing? Do you want maps?
 25. Which doubled tools fold into which? The tool addresses are on your never-redirect list, so the folds need your yes. Which three essays should a stranger meet first on the home page? Do you want a "Books worth your time" list of other authors?
 
 ---
