@@ -424,25 +424,22 @@ img{display:block;max-width:100%}
 .rule-draw::after{content:"";position:absolute;left:0;top:0;height:1px;width:0;background:var(--mustard);transition:width .35s var(--motion-ease)}
 .rule-draw:hover::after,.rule-draw:focus-within::after{width:100%}
 
-/* Home hero: who James is and why the site exists. These classes style both
-   the React hero (pages/Home.tsx) and the static copy scripts/prerender-heads.mjs
-   writes into "/", so the swap from HTML to React moves nothing. Portrait in
-   its own column on wide screens; a small byline row above the headline on
-   phones. */
-.home-hero{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-6) clamp(16px,4vw,var(--s-4))}
-.home-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:168px minmax(0,1fr);column-gap:var(--s-5);align-items:start}
-.home-hero__portrait{display:block;width:168px;height:210px;object-fit:cover;border-radius:var(--radius-sm);background:var(--charcoal-soft)}
-.home-hero__name{font-family:var(--U);font-size:15px;font-weight:500;color:var(--charcoal-fg);margin:14px 0 6px}
-.home-hero__about{font-family:var(--U);font-size:14px;color:var(--charcoal-fg-muted);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
-.home-hero__about:hover{color:var(--charcoal-fg)}
-.home-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(40px,6vw,78px);line-height:1.04;letter-spacing:-0.02em;color:var(--charcoal-fg);margin:0 0 var(--s-4);max-width:19ch;text-wrap:balance}
-.home-hero__text{font-family:var(--B);font-size:clamp(17px,1.4vw,19px);line-height:1.7;color:var(--charcoal-fg-muted);max-width:60ch;margin:0 0 var(--s-2)}
-@media (max-width:760px){
-  .home-hero{padding-top:var(--s-5);padding-bottom:var(--s-5)}
-  .home-hero__inner{grid-template-columns:minmax(0,1fr)}
-  .home-hero__byline{display:flex;align-items:center;gap:14px;margin-bottom:var(--s-3)}
-  .home-hero__portrait{width:56px;height:70px}
-  .home-hero__name{margin:0 0 4px}
+/* Home hero: James's headline and one sentence on what the site is for. These
+   classes style both the React hero (pages/Home.tsx) and the static copy
+   scripts/prerender-heads.mjs writes into "/", so the swap from HTML to React
+   moves nothing. Kept short so Find, tonight's devotion and the doors reach a
+   phone's first screen. On a wide screen the sentence sits beside the
+   headline, on its last line. */
+.home-hero{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-5) clamp(16px,4vw,var(--s-4))}
+.home-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);column-gap:var(--s-6);align-items:end}
+.home-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(34px,6vw,76px);line-height:1.05;letter-spacing:-0.02em;color:var(--charcoal-fg);margin:0;max-width:19ch;text-wrap:balance}
+.home-hero__title a{color:inherit;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:max(1px,0.03em);text-underline-offset:0.14em}
+.home-hero__title a:hover{text-decoration-thickness:max(2px,0.05em)}
+.home-hero__text{font-family:var(--B);font-size:clamp(16px,1.3vw,18px);line-height:1.6;color:var(--charcoal-fg-muted);max-width:44ch;margin:0 0 0.5em;padding-top:var(--s-2);border-top:1px solid var(--charcoal-line)}
+@media (max-width:900px){
+  .home-hero{padding-top:var(--s-3);padding-bottom:var(--s-3)}
+  .home-hero__inner{grid-template-columns:minmax(0,1fr);row-gap:var(--s-2)}
+  .home-hero__text{max-width:60ch;margin:0;padding-top:0;border-top:0}
 }
 
 /* Home: Find and tonight (pages/home/, U18), the first things under the hero,
@@ -450,7 +447,7 @@ img{display:block;max-width:100%}
    is unchanged. Links are underlined in mustard; inline links get vertical
    padding so a thumb has a 44 px target without changing the line. */
 .home-find{margin:0 0 var(--s-4)}
-.home-find__label{display:block;font-family:var(--F);font-weight:400;font-size:clamp(26px,3vw,32px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px}
+.home-find__label{display:block;font-family:var(--F);font-weight:400;font-size:clamp(22px,3vw,32px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px}
 .home-find__row{display:flex;gap:10px;max-width:680px}
 .home-find__input{flex:1 1 auto;min-width:0;min-height:52px;padding:0 16px;font-family:var(--U);font-size:17px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);-webkit-appearance:none;appearance:none}
 .home-find__input::placeholder{color:var(--ink-muted);opacity:1}
@@ -466,6 +463,7 @@ img{display:block;max-width:100%}
 .home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
 .home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
 .home-tonight__link{padding:13px 0}
+@media (max-width:760px){.home-find,.home-tonight{margin-bottom:var(--s-2)}.home-find__label{margin-bottom:8px}}
 
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the

@@ -42,6 +42,19 @@ export const HOME_HEADLINE =
 export const HOME_WHY =
   "What does it look like to follow Jesus when the culture around you no longer shares your assumptions? The early church knew. So did believers in every age who lived without power. This site is here to help you study the Bible in its context, learn the church's long history, and think through the hardest questions of our time with patience and depth.";
 
+/**
+ * The one sentence under the headline on the home page: the last sentence of
+ * HOME_WHY, word for word, so the hero says what the site is for and nothing
+ * James did not write. (siteNav.test.tsx holds the two together.) The full
+ * paragraph still opens /about. scripts/prerender-heads.mjs reads this too.
+ */
+export const HOME_LINE =
+  "This site is here to help you study the Bible in its context, learn the church's long history, and think through the hardest questions of our time with patience and depth.";
+
+/** The word in the headline that links to the page explaining it, and that page. */
+export const HOME_LINKED_WORD = "post‑Christian";
+export const HOME_LINKED_HREF = "/topics/living-after-christendom";
+
 /** Who is writing. */
 export const HOME_WHO =
   "I'm James Bell, a pastor, Susanna's husband, and dad to five sons. I was raised without a father and came to faith as an adult, after years as an atheist, so I know the objections from the inside. I founded the Pastors Connection Network, and I write for anyone who wants a faith deep enough to handle real questions.";

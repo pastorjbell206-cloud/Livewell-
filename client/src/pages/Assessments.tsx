@@ -50,7 +50,7 @@ const GROUPS: Group[] = [
         title: "Start Here",
         takeIf: "you are new to the site and want it to hand you a starting place.",
         gives: "Two minutes of honest questions, then a track that fits where you actually are.",
-        href: "/start",
+        href: "/start/quiz",
       },
     ],
   },

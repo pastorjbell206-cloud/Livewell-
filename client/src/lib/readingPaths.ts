@@ -68,7 +68,7 @@ export const READING_PATHS: ReadingPath[] = [
     title: "Start Here — Blind Spots",
     description:
       "The book, in order. American Christianity has been captured — by both the right and the left — and the first honest move is admitting it is happening in us, not just in them. Begin at the foundation and read through to the end of Christian America.",
-    externalHref: "/start",
+    externalHref: "/start/quiz",
     entries: [],
   },
   {

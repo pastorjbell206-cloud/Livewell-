@@ -150,7 +150,7 @@ describe("mountAfterStaticHero", () => {
 });
 
 describe("the static hero the gate watches", () => {
-  it("is still where the selector looks, with the portrait low priority in both copies", () => {
+  it("is still where the selector looks, and carries no image to compete for the largest paint", () => {
     // The marker prerender-heads.mjs replaces sits inside #lw-shell...
     const html = read("client/index.html");
     const shell = html.indexOf('<div id="lw-shell"');
@@ -164,10 +164,11 @@ describe("the static hero the gate watches", () => {
     expect(STATIC_HERO_SELECTOR).toBe("#lw-shell .home-hero");
     expect(prerender).toContain('<section class="home-hero">');
 
-    // A high-priority portrait is charged to LCP; keep both copies low.
-    expect(prerender).toMatch(/<img class="home-hero__portrait"[^>]*fetchpriority="low"/);
-    expect(read("client/src/pages/Home.tsx")).toMatch(
-      /className="home-hero__portrait"[\s\S]{0,200}?fetchPriority="low"/
-    );
+    // The hero is text only (no photograph of James on the front page), so
+    // the largest paint is the headline or the sentence under it.
+    const hero = prerender.slice(prerender.indexOf("function homeHeroHtml"), prerender.indexOf("function writeRoute"));
+    expect(hero).not.toContain("<img");
+    const home = read("client/src/pages/Home.tsx");
+    expect(home.slice(home.indexOf('<section className="home-hero">'), home.indexOf("</section>"))).not.toContain("<img");
   });
 });

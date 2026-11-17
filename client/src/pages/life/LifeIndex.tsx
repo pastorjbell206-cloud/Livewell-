@@ -117,7 +117,7 @@ export default function LifeIndex() {
             <Link href="/family" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Family Discipleship</Link>
             <Link href="/how-tos?topic=discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>How-Tos for Making Disciples</Link>
             <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom for All of Life</Link>
-            <Link href="/pathways/discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Making Disciples at the Table</Link>
+            <Link href="/start" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>New to Faith, or Coming Back</Link>
           </div>
         </div>
       </section>

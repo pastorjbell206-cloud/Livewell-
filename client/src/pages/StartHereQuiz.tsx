@@ -269,7 +269,7 @@ export default function StartHereQuiz() {
         title="Find Your Path | LiveWell by James Bell"
         description="Find where to start. Tell us what is weighing on you and we point you toward the writing that meets you there."
         keywords="where to start, Christian writing, marriage, parenting, doubt, pastoral burnout, LiveWell, James Bell"
-        url="https://www.livewellbyjamesbell.co/start"
+        url="https://www.livewellbyjamesbell.co/start/quiz"
         type="webpage"
       />
 

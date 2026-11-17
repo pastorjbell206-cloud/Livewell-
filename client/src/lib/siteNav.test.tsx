@@ -15,7 +15,7 @@ import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
 import { BOOK_SHELF, isShelfBookHref } from "./bookShelf";
 import { START_WITH, SHELF_ESSAYS, isPublicEssay } from "./shelf";
-import { HOME_HEADLINE, HOME_WHO, HOME_WHY } from "./positioning";
+import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, HOME_WHY } from "./positioning";
 import { ANSWERS } from "@/data/answers";
 import { bookFor } from "@/components/KeepReadingBook";
 import MinimalNav from "@/components/MinimalNav";
@@ -83,7 +83,8 @@ describe("the nav map", () => {
       }
       expect(soleHeaderLink(g), g.title).toBeNull();
       expect(headerLinks(g)[0].href, g.title).toBe(leads[g.title]);
-      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(7);
+      // Eight in Study since "New to faith? Start here" joined it (audit 2026-11, item 11).
+      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(8);
     }
   });
 
@@ -274,15 +275,23 @@ describe("book links", () => {
 });
 
 describe("the home page", () => {
-  it("says who and why, opens three doors, and starts with three shelf essays", () => {
+  it("says the headline and one sentence of James's, with no photograph, opens the doors, and starts with three shelf essays", () => {
     vi.stubGlobal("fetch", offlineFetch());
     renderWithProviders(<Home />);
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe(HOME_HEADLINE);
-    expect(screen.getByText(HOME_WHY)).toBeTruthy();
-    expect(screen.getByText(HOME_WHO)).toBeTruthy();
+    const h1 = screen.getByRole("heading", { level: 1 });
+    expect(h1.textContent).toBe(HOME_HEADLINE);
+    // "post-Christian" in the headline opens the page that explains it.
+    expect(within(h1).getByRole("link", { name: HOME_LINKED_WORD }).getAttribute("href")).toBe(HOME_LINKED_HREF);
+    expect(isRoute(HOME_LINKED_HREF)).toBe(true);
+    // The one sentence is the last sentence of the paragraph James chose, word for word.
+    expect(HOME_WHY.endsWith(HOME_LINE)).toBe(true);
+    expect(screen.getByText(HOME_LINE)).toBeTruthy();
+    expect(document.querySelectorAll(".home-hero p")).toHaveLength(1);
+    expect(document.querySelector(".home-hero img")).toBeNull();
 
-    for (const [name, href] of [[/Study the Bible/, "/study/bible"], [/Read the essays/, "/writing"], [/^The books/, "/books"]] as const) {
-      expect(screen.getByRole("link", { name }).getAttribute("href")).toBe(href);
+    const doors = screen.getByRole("heading", { name: "Where to begin" }).nextElementSibling as HTMLElement;
+    for (const [name, href] of [[/^Study the Bible/, "/study/bible"], [/^Essays/, "/writing"], [/^Books/, "/books"]] as const) {
+      expect(within(doors).getByRole("link", { name }).getAttribute("href")).toBe(href);
     }
 
     const starts = START_WITH.filter((s) => isPublicEssay(s)).slice(0, 3);
@@ -297,12 +306,15 @@ describe("the home page", () => {
 
   it("mirrors the hero strings in the prerendered HTML", () => {
     const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
-    for (const name of ["HOME_HEADLINE", "HOME_WHY", "HOME_WHO", "PORTRAIT_URL"]) {
+    for (const name of ["HOME_HEADLINE", "HOME_LINE", "HOME_LINKED_WORD", "HOME_LINKED_HREF"]) {
       expect(src, name).toContain(`positioningString("${name}")`);
     }
-    for (const cls of ["home-hero", "home-hero__title", "home-hero__text", "home-hero__portrait"]) {
+    for (const cls of ["home-hero", "home-hero__title", "home-hero__text"]) {
       expect(src, cls).toContain(`class="${cls}"`);
     }
+    // No photograph of James on the front page, in either copy.
+    const hero = src.slice(src.indexOf("function homeHeroHtml"), src.indexOf("function writeRoute"));
+    expect(hero).not.toContain("<img");
   });
 });
 

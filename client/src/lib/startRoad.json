@@ -1,0 +1,84 @@
+{
+  "$comment": "The road on /start (client/src/pages/Start.tsx): six steps in order, one sentence and one link each, then where the road goes on. Only pages that already exist. scripts/prerender-heads.mjs reads this file for the page's crawlable list, and start.test.tsx checks every link and count against the site's own data.",
+  "steps": [
+    {
+      "title": "Read the Gospel of John",
+      "line": "John has twenty-one chapters, so a chapter a day takes three weeks, and the Study Bible has notes on every one of them for the parts you don't follow yet.",
+      "link": "Open John in the Study Bible",
+      "href": "/study/bible/john"
+    },
+    {
+      "title": "Learn to pray",
+      "line": "If nobody ever taught you how to pray, begin with five minutes a day and the prayer Jesus gave his followers, one line at a time.",
+      "link": "Eight Weeks of Learning to Pray",
+      "href": "/plans/prayer"
+    },
+    {
+      "title": "Find a church",
+      "line": "This faith was never meant to be lived alone, so look for a faithful church, which isn't the same thing as a perfect one, and go more than once before you decide.",
+      "link": "Finding a church",
+      "href": "/wisdom/finding-a-church"
+    },
+    {
+      "title": "Walk the first eight weeks",
+      "line": "Eight Weeks of Beginnings gives each week one focus, one small daily practice and one thing to read, and it gets to baptism, the old habits, and the doubts that come back.",
+      "link": "Eight Weeks of Beginnings",
+      "href": "/plans/new-believer"
+    },
+    {
+      "title": "Learn what Christians believe",
+      "line": "The catechism teaches the faith in seventy-six short questions and answers, beginning with \"Who made you?\", and each one has an answer for an adult and a shorter one for a child.",
+      "link": "The catechism",
+      "href": "/family/catechism"
+    },
+    {
+      "title": "Go through it with someone",
+      "line": "New Believers is a five-session study on your first steps of faith, and it comes with a leader's guide, so you can ask a friend or a pastor to sit down and do it with you.",
+      "link": "New Believers: the study guide",
+      "href": "/studyguides/new-believer"
+    }
+  ],
+  "next": [
+    {
+      "lead": "See how the whole Bible fits together as one story:",
+      "link": "the story in eleven acts",
+      "href": "/study/bible/story"
+    },
+    {
+      "lead": "Read every chapter of the Bible in a year, beginning January 1, 2027:",
+      "link": "the reading plan",
+      "href": "/study/bible/guides/whole-story-2027"
+    },
+    {
+      "lead": "Learn a short summary of the faith by heart:",
+      "link": "the Apostles' Creed",
+      "href": "/resources/creeds/apostles-creed"
+    },
+    {
+      "lead": "Keep a few verses where you can reach them without a book:",
+      "link": "Scripture memory",
+      "href": "/tools/scripture-memory"
+    },
+    {
+      "lead": "Find out where your church came from:",
+      "link": "church history",
+      "href": "/theology/history"
+    },
+    {
+      "lead": "Bring the question you can't shake:",
+      "link": "hard questions",
+      "href": "/topics"
+    },
+    {
+      "lead": "Start at home, with whoever is at the table:",
+      "link": "tonight's family devotion",
+      "href": "/family/tonight"
+    }
+  ],
+  "quiz": {
+    "lead": "Not new to any of this, and still not sure where to go on the site?",
+    "link": "Answer three questions",
+    "href": "/start/quiz",
+    "after": "and it will point you to a place to begin."
+  }
+}
