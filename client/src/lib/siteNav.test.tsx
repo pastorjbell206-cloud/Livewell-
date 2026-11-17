@@ -83,7 +83,8 @@ describe("the nav map", () => {
       }
       expect(soleHeaderLink(g), g.title).toBeNull();
       expect(headerLinks(g)[0].href, g.title).toBe(leads[g.title]);
-      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(7);
+      // Eight in Study since "Compare the views" joined it (audit 2026-11).
+      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(8);
     }
   });
 

@@ -150,8 +150,9 @@ export default function RoadMap() {
               maxWidth: "22ch",
             }}
           >
-            What's been written. What's coming.
+            Books in progress
           </h1>
+          <p className="page-standfirst">What's been written. What's coming.</p>
           <p
             style={{
               fontFamily: "var(--B)",

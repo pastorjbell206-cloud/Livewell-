@@ -52,7 +52,7 @@ function GuideIndexPage({ index }: { index: GuideIndex }) {
         </Lede>
         <p style={{ margin: "var(--s-3) 0 0", fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>
           A plan for the new year:{" "}
-          <Link href={PLAN_PATH} style={quietLink}>Read the whole story in 2027</Link>, every chapter of the Bible in the order the story happened.
+          <Link href={PLAN_PATH} style={quietLink}>Read the Bible in a year (2027)</Link>, every chapter of the Bible in the order the story happened.
         </p>
       </Hero>
       {index.groups.map((g, i) => (
