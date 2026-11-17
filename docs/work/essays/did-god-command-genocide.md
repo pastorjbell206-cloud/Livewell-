@@ -6,7 +6,7 @@ In the early morning of May 26, 1637, English soldiers from Connecticut and Mass
 
 Underhill was wrong about what Scripture gave him, and I'll come back to why. But he didn't invent the passages he was leaning on. The Old Testament contains commands, spoken in God's name, to destroy whole peoples, and one of them names infants. That's why the question in the title isn't a trick. Christians who answer it with a quick "Of course not" probably haven't read Deuteronomy 20 or 1 Samuel 15 in a while. The plain answer is that the Bible says God commanded it. What that means is the hard part.
 
-The objection isn't that the Bible contains violence. So does the history of every nation. It's about what we can know. We are more sure that it's wrong to kill children for what their parents did than we could ever be that an ancient book speaks for God. So when a book says God ordered children killed, the reasonable conclusion is that the book has God wrong. People have left the faith on that reasoning, and most of them weren't looking for an excuse. They were taking their consciences seriously, which is what the church tells people to do. If these chapters have shaken your own faith and it's weighing on you, you don't have to carry that by yourself. [Find Help](/help) has real people you can call.
+The objection isn't that the Bible contains violence. So does the history of every nation. It's about what we can know. We are more sure that it's wrong to kill children for what their parents did than we could ever be that an ancient book speaks for God. So when a book says God ordered children killed, the reasonable conclusion is that the book has God wrong. People have left the faith on that reasoning, and most of them weren't looking for an excuse. They were taking their consciences seriously, which is what the church tells people to do. If these chapters have shaken your own faith, talk it through with someone. [Find Help](/help) has real people you can call.
 
 The Bible raises the objection before any skeptic does. When God tells Abraham that judgment is coming on Sodom, Abraham argues with him: "Far be it from you to do such a thing, to put the righteous to death with the wicked, so that the righteous fare as the wicked! Far be that from you! Shall not the Judge of all the earth do what is just?" (Genesis 18:25). He bargains from fifty righteous people down to ten, and God agrees to spare the city for ten (Genesis 18:32). The father of the faith assumed that God's justice could be appealed to, and that it knew the guilty from the innocent. We have to read Joshua with Abraham's question still open.
 
@@ -90,7 +90,7 @@ Abraham asked whether the Judge of all the earth would do what is just. The New 
 
 So did God command genocide? The Bible says he commanded Israel to destroy the peoples of Canaan, and Christians who love the Bible read those commands in more than one way. What no reading allows is what Underhill did.
 
-While we ask whether God was just to the Canaanites, we should also ask whom we have quietly cast as Canaanites ourselves. Would we want Jesus to meet them the way he met the woman from Tyre and Sidon?
+While we ask whether God was just to the Canaanites, we should also ask whom we ourselves have quietly cast as Canaanites. Would we want Jesus to meet them the way he met the woman from Tyre and Sidon?
 
 He has met the rest of us that way, at a cross where the Judge of all the earth did what is just and bore the judgment himself.
 

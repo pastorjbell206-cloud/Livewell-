@@ -28,7 +28,7 @@ The Greek theologians who argued out the doctrine of the Trinity in the fourth c
 
 The Old Testament has its own version of this story. The oldest complete manuscript of the Hebrew Bible, the Leningrad Codex, was copied in 1008. Then, beginning in 1947, Bedouin shepherds and later archaeologists brought hundreds of scrolls out of caves near Qumran, above the Dead Sea. Among them was a complete scroll of Isaiah, usually dated to the second century before Christ. It is about a thousand years older than any Hebrew copy of Isaiah known before. Most of its differences from the later text are spelling and small points of grammar.
 
-The scrolls also showed that a few books, Jeremiah among them, circulated in more than one form before the text settled, and scholars are still working out what that means. That complication is real. But someone reading Isaiah 53 from that scroll is reading substantially the chapter you can read tonight.
+The scrolls also showed that a few books, Jeremiah among them, circulated in more than one form before the text settled, and scholars are still working out what that means. But someone reading Isaiah 53 from that scroll is reading substantially the chapter you can read tonight.
 
 Ehrman agrees with more of this than his readers sometimes realize. In a question-and-answer appendix to *Misquoting Jesus*, he said his position did not stand at odds with that of his old teacher, Bruce Metzger, that "essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament." Metzger was an ordained Presbyterian minister. Ehrman became an agnostic. On that point, at least, they still agreed.
 
@@ -70,7 +70,7 @@ But a great many young Christians absorb a faith in which the Bible stands or fa
 
 ## What About the Hard Passages?
 
-For many skeptics the deepest problem with the Bible isn't that its words were changed. It's that they weren't, and some of them are hard to read: laws that regulate slavery, commands in Joshua to destroy whole towns, psalms that ask God to break the teeth of enemies. Those questions deserve more than a paragraph. One of them gets a full essay in [Why Didn't the Bible Just Ban Slavery?](/writing/why-didnt-the-bible-ban-slavery)
+For many skeptics the deepest problem with the Bible isn't that its words were changed. It's that they weren't, and some of them are hard to read: laws that regulate slavery, commands in Joshua to destroy whole towns, psalms that ask God to break the teeth of enemies. I can't do those questions justice in a paragraph. I take up one of them in [Why Didn't the Bible Just Ban Slavery?](/writing/why-didnt-the-bible-ban-slavery)
 
 A reader who asks them has moved from "Do we have the text?" to "Is the God of this text good?" That is a better question. The Bible asks it too. Job asks it chapter after chapter, and Jeremiah and Habakkuk put it to God to his face.
 
