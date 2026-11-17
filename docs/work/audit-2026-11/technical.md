@@ -16,7 +16,7 @@ Screenshots: `/home/user/Livewell-/docs/work/audit-2026-11/shots/technical/`.
 
 Score for this lens against a world-class bar: **6 out of 10 live, 6 out of 10 after the pending work lands.** The pending work is mostly content and navigation; it fixes very little in this lens and adds one small new problem.
 
-The foundation is better than most ministry sites I know of: the home page scores 100 for speed, nothing scrolls sideways on a phone on any of 25 pages tested, there is not one dead internal page link in 3,430 checked, and every one of 2,948 prerendered pages has its own title, description and canonical address.
+The foundation is sound: the home page scores 100 for speed, nothing scrolls sideways on a phone on any of 25 pages tested, there is not one dead internal page link in 3,430 checked, and every one of 2,948 prerendered pages has its own title, description and canonical address.
 
 Three things keep it from world-class, and all three sit on the pages James cares about most:
 
@@ -35,11 +35,12 @@ These are real and should be protected.
 - **No dead page links.** The crawl started at Home, followed the header, the footer and every hub two levels deep (1,164 pages opened, 3,430 distinct internal links checked). Not one landed on the not-found page.
 - **The sitemap is clean.** 2,268 addresses; every one answers directly (no redirect), every one has its own prerendered file, every canonical matches its address, none is marked noindex.
 - **Every page unfurls as itself.** 2,948 prerendered pages. In a sample of 42 routes every title and description was unique and every page had a canonical, Open Graph tags and a Twitter card. RESULTS.md counted 609 prerendered heads; it is now nearly five times that.
-- **Study Bible chapters and library pages carry their full text in the HTML.** 1,352 of 1,355 Study Bible pages, all 132 how-to guides, all 68 study guides, all 41 context guides, all 40 Find Help pages, all 22 church history era pages, all 14 creeds and all 29 plans have a real body and JSON-LD for a crawler to read.
+- **Study Bible chapters and library pages carry their full text in the HTML.** 1,352 of 1,356 Study Bible pages (the four without a body are the hubs `/study/bible`, `/study/bible/story`, `/study/bible/doctrines` and `/study/bible/guides`), all 132 how-to guides, all 68 study guides, all 41 context guides, all 40 Find Help pages, all 22 church history era pages, all 14 creeds and all 29 plans have a real body and JSON-LD for a crawler to read.
 - **Retired essays are handled correctly.** 673 old essay addresses still answer, each with `noindex`, and none is in the sitemap.
 - **Accessibility is mostly clean.** axe (WCAG 2.0, 2.1 and 2.2 A and AA plus best practices) found zero violations on Home, /study, the John 3 chapter, /writing, /tools, /family/tonight, /help, /answers, /books, /about and /resources/creeds at both phone and desktop width.
 - **Fonts are self-hosted and preloaded, the service worker cleans up after itself, security headers are set** (CSP, HSTS, no-sniff, frame rules in `vercel.json`).
 - **Scripture references work in search.** "john 3:16" puts "John 3:16, Read it in the Study Bible" first and links to the verse. "romans 8" and "genesis" also lead with the Study Bible.
+- **The header works from the keyboard.** At 1440 wide, Tab goes Skip to content, the logo, each door, Find Help, search, Subscribe, each with a visible 2 px focus ring. (Added in verification.)
 - **The shipped JavaScript for a reader is modest.** The entry file is 78 KB compressed (it was 96.5 KB in RESULTS.md) and falls to 74 KB in PR #540. The one 3.2 MB file in the build (`content-data`) is loaded only by the admin dashboard.
 
 ---
@@ -77,9 +78,11 @@ Screenshots: `live-cls_study_bible_john_3-400ms.png`, `-900ms.png`, `-2200ms.png
 
 **The fix.** Two steps. First (S): give every loading state the full height of the screen so the footer can never appear above the content, which removes almost all of the jump. Second (M): style the prerendered body with the site's own type and layout and leave it on screen until the real content is ready, instead of replacing it with "One moment". PR #540 does not touch this; its John 3 scores 53 with CLS 0.59, and the essay 48 with CLS 0.69.
 
+One cause worth naming for whoever builds the fix (added in verification): the prerendered chapter page preloads only the shared React file. The code for the chapter page itself is not preloaded, so the browser finds it late, and "One moment" is what shows while it downloads. Adding a preload line for the page's own code file to each prerendered page (S to M, in `scripts/prerender-heads.mjs`) shortens the blank stretch even before the larger fix.
+
 ### T2. Search cannot find the site's own main sections (high, M, STILL-OPEN-AFTER-PENDING)
 
-**Where.** `/search` and the header search. Files: `client/src/lib/siteSearch.ts`, `scripts/build-search-index.mjs`, `client/public/search-index.json` (five sources only: Honest Answers 35, Christ and the Nation 11, Family Devotions 72, Family Catechism 71, What the Bible Says 208).
+**Where.** `/search` and the header search. Files: `client/src/lib/siteSearch.ts`, `scripts/build-search-index.mjs`, `client/public/search-index.json` (five sources: Honest Answers 35, Christ and the Nation 11, Family Devotions 72, Family Catechism 71, What the Bible Says 208). Search also reads the libraries that already had their own lists (Find Help, tools, study guides, how-tos, context guides, creeds, Integrated Life, eight-week plans, the public essays). What it has no entry for is listed in the fix below.
 
 **What a visitor sees.** The twelve queries the brief asked for, on the live build:
 
@@ -98,7 +101,7 @@ Screenshots: `live-cls_study_bible_john_3-400ms.png`, `-900ms.png`, `-2200ms.png
 | advent | Two results: "How to Keep Advent as a Family", "Waiting for the Light: A Bible Study for Advent" | Thin. The Advent family devotions are not found, twelve days before Advent |
 | prayer | "When Prayer Is Hard", "The Prayer Planner", "Prayer Generator", study guides, catechism questions (16) | Good |
 
-Extra queries I ran to find the edges: "study bible" returns "Deep Bible Study Companion" and a list of study guides, not The Study Bible. "augustine" returns three Integrated Life pages and none of the 36 church history people. "trinity" does not return the doctrine study. "books" returns "Is the Bible an American Book?" and not James's books. "contact" returns "Difficult Family" and "Estrangement and the Cut-Off". "James Bell" returns sixteen eight-week plans. "christmas" returns one result.
+Extra queries I ran to find the edges: "study bible" returns "Deep Bible Study Companion" and a list of study guides, not The Study Bible. "augustine" returns three Integrated Life pages and none of the 36 church history people. "trinity" returns eight results but neither the doctrine study nor the Honest Answer "How can God be three and one?", because that title does not contain the word. "books" returns "Is the Bible an American Book?" and not James's books. "contact" returns "Difficult Family" and "Estrangement and the Cut-Off". "James Bell" returns sixteen eight-week plans. "christmas" returns one result.
 
 **Why it fails the goal.** A visitor holding one word (church history, family devotions, Augustine, Advent) is told, in effect, that the site does not have it, when it has it in depth. The October critique (CRITIQUE.md, the "grace" example) said the same; the reference-first jump has since been fixed, the coverage has not.
 
@@ -139,21 +142,23 @@ Also small: results stop at 16 with no "show more"; catechism results all link t
 | `/wisdom/<topic>` ("What the Bible Says") | 208 | 0 |
 | `/theology/doctrine/<id>` | 31 | 0 |
 | `/nation/<slug>` | 13 | 0 |
-| `/books` and `/books/<slug>` | 9 | 0 |
+| `/books/<slug>` (eight book folders in the local build; on Vercel these pages are written from the database, so the count there may differ) | 8 | 0 |
 | `/study`, `/study/bible`, `/tools`, `/resources/creeds`, `/resources/context`, `/about` | 6 | 0 |
 
-**What a crawler sees.** The right title and description, then `<div id="root">` with nothing in it.
+`/books` itself is not in this list: it has a short body naming the three books.
+
+**What a crawler sees.** The right title and description, then the masthead ("LiveWell BY JAMES BELL") and an empty `<div id="root">`. There is also no `<noscript>` line anywhere, so a person whose browser blocks the script, or fails to run it, sees the masthead and a blank page with no explanation.
 
 **Why it fails the goal.** Google runs JavaScript, so Google will usually get there. Most AI answer engines and many link-preview and archive tools do not. The site's `robots.txt` names sixteen of them (GPTBot, ClaudeBot, PerplexityBot and others) and says they "are explicitly welcomed". When someone asks one of those assistants "did the resurrection happen" or "family devotion on forgiveness", the pages James wrote for that question have no words on them. This is the single largest reach gain available in this lens.
 
-**The fix.** The mechanism already exists for the Study Bible, the guides and the Find Help pages. Extend it to the answers (one block per question, with the FAQ JSON-LD the page already builds at runtime), the family devotions and catechism, the "What the Bible Says" topics, the doctrine pages, the nation pages, the books, and a short text summary with links for each hub.
+**The fix.** The mechanism already exists for the Study Bible, the guides and the Find Help pages. Extend it to the answers (one block per question, with the FAQ JSON-LD the page already builds at runtime), the family devotions and catechism, the "What the Bible Says" topics, the doctrine pages, the nation pages, the books, and a short text summary with links for each hub. Add one `<noscript>` sentence to `client/index.html` (S).
 
 ### T6. Eleven Study Bible links and eight quote links land on the wrong thing (medium, S, STILL-OPEN-AFTER-PENDING)
 
 **Where and what a visitor sees.**
 
 - **Jude, 2 John, 3 John.** On `/study/bible/jude` the outline links "JUDE 3-4 Contend for the faith", "JUDE 5-16 Examples of judgment", "JUDE 17-23 Remember, build, keep", "JUDE 24-25 Doxology" go to `/study/bible/jude/3`, `/jude/5`, `/jude/17`, `/jude/24`: the verse number is used as a chapter number. The page that opens says **"Jude has 1 chapter. Choose a chapter"**, with no heading and the home page's title in the browser tab. The same happens for 2 John (`/2-john/4`, `/7`, `/12`) and 3 John (`/3-john/5`, `/9`, `/11`, `/13`). Obadiah and Philemon are correct. Screenshot: `live-jude-3-m.png`. Identical in PR #540 (`pr540-jude-3-m.png`). File: the outline link builder in `client/src/pages/StudyBible.tsx` and the book data in `client/public/bible/`.
-- **`/tools/quotes` ("Words Worth Sharing").** Eight quote cards link to essays that are off the shelf, so the reader lands on a "this essay is being revised" notice: "How to Read the Bible Without Making It Say What You Want", "What the Gospel Actually Is", "The Trinity Is Not Optional", "Inerrancy, Infallibility, and the Word You Can Trust", "Grace Is Not a Feeling", "How the Reformation Started and Why It Still Matters", "The Council of Nicaea: What Was Decided in 325" (this one becomes public on `land-next`), and "The Church Grew Fastest When It Had No Power" (redirects to another essay). File: `client/src/data/social-quotes.ts`. The link checker (`validate-links.mjs`) does not read this file.
+- **`/tools/quotes` ("Words Worth Sharing").** Eight quote cards link to essays that are off the shelf. Six are retired (their pages are marked `noindex` and, per `ArticleDetail.tsx` line 590, show the off-the-shelf notice once the database row loads; in this sandbox, with no database, they show "This essay didn't load" instead, so the words a live visitor sees were read from code, not seen), one is pending and shows "James is revising this essay. It is off the site until...", and one redirects: "How to Read the Bible Without Making It Say What You Want", "What the Gospel Actually Is", "The Trinity Is Not Optional", "Inerrancy, Infallibility, and the Word You Can Trust", "Grace Is Not a Feeling", "How the Reformation Started and Why It Still Matters", "The Council of Nicaea: What Was Decided in 325" (this one becomes public on `land-next`), and "The Church Grew Fastest When It Had No Power" (redirects to another essay). File: `client/src/data/social-quotes.ts`. The link checker (`validate-links.mjs`) does not read this file.
 - **Five internal links go through a redirect** instead of straight to the page: `/disciple-making` (from "Make Disciples" on `/how-tos`), `/books/raising-believers` (from two book pages), `/disruption` and `/disruption/topic/truth-and-tribe` (from `/disruption/consistency`), `/writing/witness-without-power`. No chains longer than one hop were found.
 
 **The fix.** For the one-chapter books, link the outline to `/study/bible/jude/1#v3`. Pass the quote links through `isPublicEssayHref` and drop the link (keep the quote) when the essay is not public; add the file to the link validator. Re-point the five redirected links.
@@ -166,13 +171,13 @@ axe results, both widths, live build:
 |---|---|---|
 | `/search?q=prayer` | color-contrast, serious, 30 elements | "BACK", the result labels ("WHAT THE BIBLE SAYS", "TOOLS"), "See all in..." and the selected "ALL" pill use mustard `#d4a017` on cream `#f5f0e6` or cream on mustard: **2.09 to 1**. The minimum for text is 4.5 to 1. File: `client/src/pages/Search.tsx` (`var(--gold)`). |
 | `/family`, `/theology/history` | color-contrast, serious, 1 each | The eyebrow in the dark band ("The oldest classroom", "The long memory") is `--mustard-text` `#7a6010` on `#1a1a1a`: **2.9 to 1**. That token is the dark mustard meant for cream backgrounds; on charcoal it needs the bright mustard. |
-| `/writing/<essay>` | label-content-name-mismatch, serious, 2 | The text-size buttons show "A" but are named "Smaller text" and "Larger text"; voice-control users who say what they see cannot press them. |
+| `/writing/<essay>` | label-content-name-mismatch, serious, 2 | The text-size buttons show "A−" and "A+" but are named "Smaller text" and "Larger text"; voice-control users who say what they see cannot press them. |
 | `/tools/theology-quiz` (error state, API) | landmark-one-main, page-has-heading-one | When the quiz fails to load, the "Try again" screen has no main landmark and no heading. |
 | `/search`, `/contact`, `/subscribe` | heading-order | A heading level is skipped. |
 
 **Why it matters.** The search page is the only place where the brand rule "mustard is punctuation, not body text" is broken for whole rows of text, and older readers will struggle to read the labels. RESULTS.md recorded zero violations, but on five pages that did not include these.
 
-**The fix.** In `Search.tsx` use `--mustard-text` for labels on cream and ink on the mustard pill; in the two dark heroes use `--mustard`; add the visible "A" to the accessible names ("A, smaller text"); give `LoadFailed` a heading inside `main`.
+**The fix.** In `Search.tsx` use `--mustard-text` for labels on cream and ink on the mustard pill; in the two dark heroes use `--mustard`; add the visible letters to the accessible names ("A minus, smaller text"); give `LoadFailed` a heading inside `main`.
 
 ### T8. Small tap targets where fingers matter most: the Study Bible chapter (medium, M, STILL-OPEN-AFTER-PENDING)
 
@@ -181,9 +186,9 @@ Script check at 390 pixels wide, 25 routes. Links inside running sentences are e
 | Page | Controls under 44 px | Under 24 px | The worst offenders |
 |---|---|---|---|
 | `/study/bible/john/3` | 423 of 489 | 198 | 36 verse-number buttons at 24 by 24; about 190 cross-reference links ("John 2:23-25", "Exodus 3:12") 16 to 19 px tall; "Read the study notes on this chapter" 16 px tall |
-| `/answers` | 49 | 22 | "The book behind it: Believe" 22 px tall, 21 times |
+| `/answers` | 49 | 22 | "The book behind it: Believe" 22 px tall, 20 times |
 | `/search?q=prayer` | 17 | 12 | "See all in Find Help" 17 px tall; "BACK" 20 px |
-| `/writing/<essay>` | 16 | 11 | "A" text-size buttons 19 px tall; "Read his books" 25 px |
+| `/writing/<essay>` | 12 to 16 | 8 to 11 | the section label "AFTER CHRISTENDOM" and five links beside it 19 px tall; "Find help for what you are facing" 23 px; "Read his books" 25 px. (The "A−" and "A+" text-size buttons are a full 44 by 44; the first draft of this row was wrong about them.) |
 | `/theology/history` | 14 | 4 | "Ignatius of Antioch, around 35 to 108" 22 px tall |
 | `/study/bible/john` | 21 | 3 | "Go to the chapters" 23 px; "John 1", "John 3" chips 24 px tall |
 | `/downloads` | 224 | 0 | "A4" buttons 38 by 44, 211 times |
@@ -219,20 +224,21 @@ Home, /study, /study/bible, /family, /family/tonight, /family/devotions, /family
 - `client/public/llms.txt` (live and PR #540): "Lead Pastor of First Baptist Church of Fenton, Michigan, founder of the Pastors Connection Network, and author of 21 books."
 - `client/src/pages/About.tsx` JSON-LD (line 98): `jobTitle: "Lead Pastor, Author, Founder"` and "Lead Pastor at First Baptist Church of Fenton for twelve years, author of [count] books, founder of the Pastors Connection Network (nearly 18,000 pastors)".
 - `client/index.html` default description: "By James Bell, Lead Pastor and founder of the Pastors Connection Network."
+- `scripts/prerender-heads.mjs` line 61, which becomes the description of `/about` that Google and Facebook show: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books." Line 220 of the same file has "author of twenty-one books". (Added in verification.)
 
 **Why it matters.** These are the lines search engines and AI assistants quote when asked who James Bell is. NOTES.md says the years (12 or 15) and the book count (21 or 25) are unresolved and must not be stated. I have not changed or judged the facts; only James can settle them.
 
-**The fix.** Either James confirms the numbers, or these three places are reduced to the confirmed biography (a pastor, founder of the Pastors Connection Network, came to faith from atheism).
+**The fix.** Either James confirms the numbers, or these places are reduced to the confirmed biography (a pastor, founder of the Pastors Connection Network, came to faith from atheism).
 
 ### T12. Smaller search-engine housekeeping (low to medium, S each, STILL-OPEN-AFTER-PENDING)
 
-- **The not-found page tells search engines to index it.** `/anything-wrong` shows "There is no page here." but the page's robots tag still says `index, follow`, its canonical points at the home page, and the server answers 200. Give `NotFound.tsx` a `noindex`.
+- **The not-found page tells search engines to index it.** `/anything-wrong` shows "There is no page here." but the page's robots tag still says `index, follow`, its canonical points at the home page, and the server answers 200. Give `NotFound.tsx` a `noindex`. The same is true of a chapter number that does not exist: `/study/bible/john/99` answers 200 with the home page's title, `index, follow`, and the words "John has 21 chapters. Choose a chapter" (the Jude links in T6 land on this same screen). (Added in verification.)
 - **`/family/tonight` is not in the sitemap** (live or PR #540), although `llms.txt` advertises it and it has its own title, "Tonight at the Table: A Family Devotion". It is the page most likely to match "family devotion tonight". Note that it immediately forwards the reader to the day's devotion page (today `/family/devotions/stewardship`), which is fine for people; add it to the sitemap anyway.
 - **Only 6 of 2,268 sitemap entries carry a last-modified date.** Search engines use it to decide what to re-read. The Study Bible and the libraries have dates in their data.
 - **The site-search hint given to Google points at the wrong page.** The WebSite JSON-LD in `SEOMeta.tsx` says search lives at `/writing?q=...`, which only filters essays. It should be `/search?q=...`.
 - **`llms-full.txt` (105 KB) lists essays, the nation pages, life, how-tos, study guides, context guides, church history and creeds, but not the Study Bible, the Honest Answers, the family devotions or Find Help.** `llms.txt` on the live site also still names the old doors ("Study, Essays, Books, Resources, and About"); PR #540 corrects that line (FIXED-IN-PENDING for that line only).
-- **No structured data on several pages that have a natural type.** `/books/believe` and the other book pages carry no `Book` JSON-LD though `SEOMeta.tsx` has a helper for it; `/theology/history`, `/study/bible`, `/family` and the tools have no breadcrumb. `/about` carries the `Person` block twice.
-- **Many titles are longer than Google shows** (about 60 characters). "John 3 Study Notes - Nicodemus, New Birth, and God's Love for the World | LiveWell by James Bell" is 100. The useful words come first, so this is cosmetic; dropping "| LiveWell by James Bell" on chapter pages would fit most of them.
+- **No structured data on several pages that have a natural type.** `/theology/history`, `/study/bible`, `/family` and the tools have no breadcrumb. `/about` carries the `Person` block twice. (The first draft said the book pages have no `Book` data. That was only true in this sandbox: `BookDetail.tsx` and the prerender both add `Book` and breadcrumb data once the book loads from the database.)
+- **Many titles are longer than Google shows** (about 60 characters). "John 3 Study Notes - Nicodemus, New Birth, and God's Love for the World | LiveWell by James Bell" is about 97. The useful words come first, so this is cosmetic; dropping "| LiveWell by James Bell" on chapter pages would fit most of them.
 - **`/family` loses SEO points for one link named "Start"** (Lighthouse SEO 92 instead of 100). Name it "Start tonight's devotion".
 - **The podcast link is `http://followingthewaypodcast.com/`**, not `https`. Check whether the secure address works and use it.
 
@@ -254,6 +260,8 @@ Otherwise PR #540's new pages are clean: `/topics`, `/topics/living-after-christ
 ### T15. An opportunity, not a fault: the family table does not work offline (L)
 
 The site declares itself an installable app (`manifest.webmanifest`, `display: standalone`) but the service worker only removes old caches. A family that added LiveWell to the home screen and opens it at a table with poor signal gets nothing. Caching tonight's devotion, the week's catechism question and the last chapter read would make "one place for families" true in the car and at the cabin. This is a real build and should be weighed against the rest.
+
+A small related tidy-up (S, added in verification): `registerSW.js` registers the service worker on every page load, and the worker's only job is to remove itself and clear caches (`sw.js`, 608 bytes). That was right while old caches were being cleared. If offline use is not going to be built, the registration can come out once old installs are gone.
 
 ---
 
@@ -326,6 +334,8 @@ Still open from RESULTS.md: the font-swap shift it deferred ("a metric-adjusted 
 - `/rss.xml`, `/feed`, `/feed.xml` (T4 is from reading the code).
 - Console errors for `/_vercel/insights/script.js`, `/_vercel/speed-insights/script.js` and `/api/track`, which cost 4 points of "best practices" locally.
 - 599 PDF links under `/downloads/` (`help` 320, `studyguides` 136, `plans` 58, `context` 41, `tools` 24, `reading-plans` 10, `seasonal` 6, `workbooks` 4). The folder is generated by `pnpm pdfs` during the Vercel build and is not committed. I did not verify them on the live site; one check of a few of these addresses on the real domain would close that.
+- Book pages (`/books/believe` and the others) have no `Book` structured data here because the book comes from the database; on the live site the code adds it.
+- The six retired essays linked from `/tools/quotes` show "This essay didn't load" here; on the live site the code shows the off-the-shelf notice.
 - The home portrait fails to load here because the CloudFront address is unreachable from the sandbox (T10 stands on other grounds).
 - The essay LCP of 5.4 s is inflated by the missing API; the dependency behind it (T3) is real.
 
@@ -337,3 +347,36 @@ Still open from RESULTS.md: the font-swap shift it deferred ("a metric-adjusted 
 2. Which is right for the machine-readable biography: no title, years or book count at all, or confirmed numbers (twelve or fifteen years; 21 or 25 books; "nearly 18,000 pastors")?
 3. Should the RSS feed carry the rewritten essays in full, or only an opening and a link back to the site (which matters if Substack is to remain the place where the full newsletter is read)?
 4. Is offline use at the family table (T15) worth a larger build?
+
+---
+
+## 9. Verification (second reviewer, 2026-11-17)
+
+A second reviewer re-checked this report against the code of `origin/main` (`fea345a4`) and PR #540, using a fresh copy of the Vercel-like server (ports 4341 live, 4342 PR #540) and a real browser at 390 and 1440 wide. Each finding was assumed wrong until seen.
+
+**The method correction at the top is right.** `localhost:4311/study/bible/john/3` returns the 9 KB home page with the home title; the real prerendered file for that page is 94 KB with its own title.
+
+| Finding | Verdict | What was checked |
+|---|---|---|
+| T1 loading flash and jump | CONFIRMED | Re-measured in a throttled browser: John 3 CLS 0.605, essay 0.693, `/studyguides/lament` 0.615, `/theology/history` 0.315, Home 0.000; PR #540 John 3 0.605, `/topics` 0.229. "One moment." appears on every one of them except Home. The Lighthouse scores quoted match the raw result files (43, 42, 51 and 45, 44, 49). The screenshots at 0.4 s and 0.9 s show what the report says. |
+| T2 search | CONFIRMED | Re-ran eleven of the queries on live and four on PR #540. Results match the table. Clarified that search reads more than the five sources in the JSON file; added the "trinity" detail. |
+| T3 essay waits for database | CONFIRMED | `ArticleDetail.tsx` line 523. In the browser "Loading article" appeared after "One moment". How long it holds on the live site could not be measured here (no API). |
+| T4 RSS | CONFIRMED from code only | `api/index.ts` lines 2919 to 2934. `shelf.json` has 15 live and 45 pending; all five essay files are pending. Not runnable here. |
+| T5 empty bodies | CONFIRMED, one row corrected | Counted every prerendered file. `/answers`, `/theology/history`, the five family hubs, 112 devotions, 208 topics, 31 doctrine pages, 13 nation pages and the six hubs have no text. `/books` does have a short body, so that row now reads 8 book pages, not 9. Study Bible count corrected to 1,352 of 1,356. `robots.txt` names 16 crawlers: correct. |
+| T6 wrong-target links | CONFIRMED, wording corrected | Jude, 2 John, 3 John outline links seen in the browser on live and PR #540 (11 links); Obadiah and Philemon correct. Eight quote links: six retired, one pending, one redirect; the notice wording for the six is from code because they need the database. The five redirected links answer with a redirect, one hop each. |
+| T7 contrast and labels | CONFIRMED, one detail corrected | `Search.tsx` uses `var(--gold)` (`#D4A017`) on cream in seven places; the "ALL" pill is cream on mustard; the two dark eyebrows are `rgb(122, 96, 16)` on `rgb(26, 26, 26)`. The buttons read "A−" and "A+", not "A". The heading-order and quiz-landmark items match the raw axe output; axe was not re-run. |
+| T8 tap targets | CONFIRMED, one row WRONG and fixed | John 3: 36 verse buttons at 24 by 24; 427 of 475 controls under 44 px on my count. `/answers`, `/downloads`, `/theology/history`, `/study/bible/john` match. The essay row said the "A" buttons are 19 px tall; they are 44 by 44. The 19 px items are a section label and five nearby links. |
+| T9 duplicate fonts | CONFIRMED | Checksums identical for the 400, 500 and 600 files of each family; the Lighthouse network logs show five font downloads on Home and John 3, three of them the same Inter file. |
+| T10 portrait | CONFIRMED | `Home.tsx` line 103, `positioning.ts` line 50, same on PR #540 and `land-next`. NOTES.md line 272 says no photograph on the front page. |
+| T11 biography text | CONFIRMED, two more places added | `llms.txt`, `About.tsx` and `index.html` read as quoted. The same claims are in the `/about` description written by `prerender-heads.mjs`. NOTES.md line 34 says not to state them. |
+| T12 housekeeping | Mostly CONFIRMED; one item API-ARTIFACT and removed | Not-found page: `index, follow`, canonical to Home. `/family/tonight` absent from both sitemaps. 6 of 2,268 entries have a date. Search hint points at `/writing?q=`. `llms-full.txt` has no Study Bible, answers, devotions or Find Help addresses. The "Start" link and the `http` podcast link confirmed. The "book pages have no Book data" item only looked true because there is no database here; it has been taken out. Title length corrected from 100 to about 97. |
+| T13 CI | CONFIRMED | `ci.yml`: `npx serve -s dist/public`, Lighthouse on `/` only, `continue-on-error: true`. |
+| T14 PR #540 drop-down | CONFIRMED | The theme drop-down on `/family/devotions` computes to 15 px in PR #540; live fields are 16 px. |
+| T15 offline | CONFIRMED as described | `sw.js` only unregisters and clears caches. |
+| Counts | CONFIRMED | 2,948 prerendered pages; 2,268 sitemap entries (2,273 in PR #540); 673 of 694 essay pages `noindex`; 36 church history people; in-page anchors on `/tools/glossary`, `/answers` and `/tools/connection-planner` all resolve. The 1,164-page crawl was not re-run; its raw output was read and agrees with the report. |
+
+**Removed or changed.** One comparison with other ministry sites, which had no evidence behind it, was removed from the short version. No claim about James was added; the biography lines in T11 are quoted from the site's own files and left for him to settle.
+
+**Added in this pass** (each marked "added in verification" where it sits): the missing preload for each page's own code (T1); "trinity" not finding the Honest Answer on the Trinity (T2); no `<noscript>` line (T5); the `/about` description that states the years and book count (T11); wrong chapter numbers answering as indexable pages (T12); the service worker that registers on every load only to remove itself (T15); and the keyboard strength in section 2.
+
+**Not verified.** Anything on the real domain (PDF links, the RSS feed's body format, live database timing). The Lighthouse runs were checked against their raw files, not run again. The scores of 6 and 6 stand.
