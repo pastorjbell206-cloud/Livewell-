@@ -129,12 +129,12 @@ export default function TheologyHistory() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--gutter) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Church history
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
             The story you were born into.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
@@ -145,7 +145,7 @@ export default function TheologyHistory() {
 
       {/* NARRATIVE ESSAYS */}
       {essays.length > 0 && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--gutter)" }}>
           <div style={wrap}>
             <SectionHead eyebrow="Read the story" title="The era essays" intro={`${essays.length} essays, from Pentecost to the present.`} />
             <EditorialIndex
@@ -161,7 +161,7 @@ export default function TheologyHistory() {
       </StatementBand>
 
       {/* TABS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) 0" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "8px" }}>
           {tabs.map((t) => (
             <button key={t.id} type="button" onClick={() => setTab(t.id)} aria-pressed={tab === t.id}
@@ -175,7 +175,7 @@ export default function TheologyHistory() {
 
       {/* TIMELINE */}
       {tab === "timeline" && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
+        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) var(--s-7)" }}>
           <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
             {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the story…</p>}
             {eras.map((era) => {
@@ -265,7 +265,7 @@ export default function TheologyHistory() {
 
       {/* COUNCILS */}
       {tab === "councils" && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
+        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) var(--s-7)" }}>
           <div style={{ ...wrap }}>
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "var(--s-4)", fontStyle: "italic" }}>
               The creeds were not handed down from the sky. The whole church gathered, usually in a crisis, and worked out how to say a true thing clearly. Here is what each council faced and what it gave us.
@@ -293,7 +293,7 @@ export default function TheologyHistory() {
 
       {/* HERESIES */}
       {tab === "heresies" && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
+        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) var(--s-7)" }}>
           <div style={{ ...wrap }}>
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "var(--s-4)", fontStyle: "italic" }}>
               The church often learned what it believed by facing what it could not accept. Each of these was sincere, attractive, and wrong in a way that mattered. Many still return today in new clothes.
@@ -322,7 +322,7 @@ export default function TheologyHistory() {
 
       {/* FIGURES */}
       {tab === "figures" && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
+        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) var(--s-7)" }}>
           <div style={{ ...wrap }}>
             {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             {figures.length > 0 && <SectionArt seed="history-figures" />}
@@ -347,7 +347,7 @@ export default function TheologyHistory() {
       )}
 
       {/* FOOTER NAV */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--charcoal-fg)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
           <Link href="/study" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Everything in Study</Link>
           <Link href="/theology/doctrine/god-and-trinity" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>See where the creeds came from →</Link>

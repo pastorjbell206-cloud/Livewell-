@@ -1,121 +1,39 @@
 import { Link } from "wouter";
+import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 
 /**
- * 404 — the one page a lost reader lands on. It keeps the room: cream,
- * Cormorant, quiet. No alarm icons; a wrong turn is not an emergency.
- * Three real paths forward instead of a single "Go Home" dead end.
+ * 404: the one page a lost reader lands on. It keeps the room: the site's own
+ * header and footer, cream, Cormorant, quiet. No alarm icons; a wrong turn is
+ * not an emergency. Three real ways on, the first an ink button (.nf-* and
+ * .pg-action in index.css). Search engines are told not to keep it (noindex).
  */
 export default function NotFound() {
   return (
-    <>
-      <SEOMeta title="Page Not Found" description="This page doesn't exist. The writing, the books, and the tools are still where they were." />
-      <div
-        style={{
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "var(--bone)",
-          padding: "48px 24px",
-        }}
-      >
-        <div style={{ maxWidth: "560px", textAlign: "center" }}>
-          <div
-            style={{
-              fontFamily: "var(--U)",
-              fontSize: "12px",
-              fontWeight: 500,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              color: "var(--mustard-text)",
-              marginBottom: "20px",
-            }}
-          >
-            404
-          </div>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontWeight: 400,
-              fontSize: "clamp(34px, 6vw, 52px)",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-              color: "var(--ink)",
-              margin: "0 0 20px",
-            }}
-          >
+    <Layout>
+      <SEOMeta title="Page Not Found" description="There is no page at this address. The writing, the Study Bible and the tools are still where they were." noindex />
+      <section className="nf" aria-labelledby="nf-title">
+        <div className="nf__inner">
+          <p className="eyebrow nf__eyebrow">Page not found</p>
+          <h1 id="nf-title" className="nf__title">
             There is no page here.
           </h1>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "17px",
-              lineHeight: 1.7,
-              color: "var(--ink-muted)",
-              margin: "0 0 36px",
-            }}
-          >
-            The address may have changed, or the link was wrong. Nothing is
-            lost — the writing, the books, and the tools are all still where
-            they were.
+          <p className="nf__text">
+            The address may have changed, or the link was wrong. The writing, the Study Bible and the tools are all still where they were.
           </p>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "12px",
-              justifyContent: "center",
-            }}
-          >
-            <Link
-              href="/"
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "14px",
-                fontWeight: 500,
-                background: "var(--mustard)",
-                color: "var(--ink)",
-                padding: "12px 24px",
-                borderRadius: "3px",
-                textDecoration: "none",
-              }}
-            >
+          <div className="nf__actions">
+            <Link href="/" className="pg-action">
               Back to the front page
             </Link>
-            <Link
-              href="/search"
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "14px",
-                fontWeight: 500,
-                border: "1px solid var(--border)",
-                color: "var(--ink)",
-                padding: "12px 24px",
-                borderRadius: "3px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/search" className="pg-action pg-action--quiet">
               Search the site
             </Link>
-            <Link
-              href="/writing"
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "14px",
-                fontWeight: 500,
-                border: "1px solid var(--border)",
-                color: "var(--ink)",
-                padding: "12px 24px",
-                borderRadius: "3px",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/writing" className="pg-action pg-action--quiet">
               The essays
             </Link>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </Layout>
   );
 }

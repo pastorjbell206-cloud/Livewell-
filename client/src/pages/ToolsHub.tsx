@@ -343,12 +343,12 @@ export default function ToolsHub() {
       `}</style>
 
       {/* Hero */}
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "700px" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--gutter) var(--s-5)", textAlign: "center" }}>
+        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "16px" }}>
             FREE TOOLS
           </div>
-          <h1 style={{ fontSize: "clamp(34px, 5vw, 52px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
+          <h1 style={{ fontSize: "var(--fs-h1)", fontWeight: 400, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
             Tools for the Life You Are <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em> Living
           </h1>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", fontFamily: "var(--B)", margin: "0 0 var(--s-4)" }}>
@@ -369,8 +369,8 @@ export default function ToolsHub() {
         </div>
       </section>
 
-      <section style={{ padding: "var(--s-5) var(--s-4) var(--s-6)", background: "var(--bone)" }}>
-        <div className="wrap" style={{ maxWidth: "1000px" }}>
+      <section style={{ padding: "var(--s-5) var(--gutter) var(--s-6)", background: "var(--bone)" }}>
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <Link href="/my-library" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", minHeight: "52px", padding: "12px 16px", marginBottom: "var(--s-5)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600 }}>
             <span>My Library{saved.length ? ` (${saved.length} saved)` : ""}: what you've saved and started, on this device</span>
             <span aria-hidden style={{ color: "var(--mustard-text)" }}>→</span>

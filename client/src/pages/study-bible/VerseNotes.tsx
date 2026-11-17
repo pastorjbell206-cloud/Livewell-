@@ -17,7 +17,7 @@ const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Fran
 const GRK: CSSProperties = { fontFamily: '"SBL Greek", "Gentium Plus", "Times New Roman", serif' };
 
 const label: CSSProperties = { ...kicker, fontSize: "10.5px", margin: "12px 0 4px" };
-const body: CSSProperties = { fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 8px" };
+const body: CSSProperties = { fontFamily: "var(--font-reading)", fontSize: "16.5px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 8px" };
 
 export type Layer = "all" | "grammar" | "history" | "theology" | "text";
 export const LAYERS: { id: Layer; name: string }[] = [

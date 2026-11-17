@@ -451,13 +451,13 @@ img{display:block;max-width:100%}
    writes into "/", so the swap from HTML to React moves nothing. Portrait in
    its own column on wide screens; a small byline row above the headline on
    phones. */
-.home-hero{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-6) clamp(16px,4vw,var(--s-4))}
+.home-hero{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-6) var(--gutter)}
 .home-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:168px minmax(0,1fr);column-gap:var(--s-5);align-items:start}
 .home-hero__portrait{display:block;width:168px;height:210px;object-fit:cover;border-radius:var(--radius-sm);background:var(--charcoal-soft)}
 .home-hero__name{font-family:var(--U);font-size:15px;font-weight:500;color:var(--charcoal-fg);margin:14px 0 6px}
 .home-hero__about{font-family:var(--U);font-size:14px;color:var(--charcoal-fg-muted);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
 .home-hero__about:hover{color:var(--charcoal-fg)}
-.home-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(40px,6vw,78px);line-height:1.04;letter-spacing:-0.02em;color:var(--charcoal-fg);margin:0 0 var(--s-4);max-width:19ch;text-wrap:balance}
+.home-hero__title{font-family:var(--F);font-weight:400;font-size:var(--fs-display);line-height:1.04;letter-spacing:-0.02em;color:var(--charcoal-fg);margin:0 0 var(--s-4);max-width:19ch;text-wrap:balance}
 .home-hero__text{font-family:var(--B);font-size:clamp(17px,1.4vw,19px);line-height:1.7;color:var(--charcoal-fg-muted);max-width:60ch;margin:0 0 var(--s-2)}
 @media (max-width:760px){
   .home-hero{padding-top:var(--s-5);padding-bottom:var(--s-5)}
@@ -498,7 +498,7 @@ img{display:block;max-width:100%}
  * Components: components/editorial/{EditorialIndex,CardGrid,SectionHead}.tsx.
  * Token-driven throughout, so dark mode and reduced motion come free. */
 .ed-section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:clamp(20px,3vw,32px)}
-.ed-section-head h2{font-family:var(--F);font-size:clamp(1.9rem,1.35rem + 1.5vw,2.6rem);font-weight:400;line-height:1.08;letter-spacing:-0.02em;color:var(--ink);margin:10px 0 0}
+.ed-section-head h2{font-family:var(--F);font-size:var(--fs-h2);font-weight:400;line-height:1.08;letter-spacing:-0.02em;color:var(--ink);margin:10px 0 0}
 .ed-section-intro{font-family:var(--B);font-size:1.0625rem;line-height:1.65;color:var(--ink-muted);max-width:60ch;margin:12px 0 0}
 .ed-see-all{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px;white-space:nowrap}
 .ed-see-all:hover{color:var(--mustard-text)}
@@ -571,17 +571,16 @@ img{display:block;max-width:100%}
  * charcoal prose hero is kept for Home and About; everywhere else the page's
  * own content starts on a phone's first screen. --pg-w matches the column of
  * the page below. */
-.pg-head{background:var(--bone);padding:var(--s-5) clamp(16px,4vw,var(--s-4)) 0}
+.pg-head{background:var(--bone);padding:var(--page-top) var(--gutter) 0}
 .pg-head__inner{max-width:var(--pg-w,var(--w-default));margin:0 auto;padding-bottom:var(--s-4);border-bottom:1px solid var(--border)}
 .pg-head__eyebrow{margin:0 0 14px}
 /* Two classes, so it outranks .eyebrow's inline-flex further down the file. */
 .eyebrow.pg-head__eyebrow{display:flex}
-.pg-head__title{font-family:var(--F);font-size:clamp(36px,4.4vw,56px);font-weight:400;line-height:1.06;letter-spacing:-0.02em;color:var(--ink);margin:0;max-width:22ch;text-wrap:balance}
+.pg-head__title{font-family:var(--F);font-size:var(--fs-h1);font-weight:400;line-height:1.06;letter-spacing:-0.02em;color:var(--ink);margin:0;max-width:22ch;text-wrap:balance}
 .pg-head__title:focus{outline:none}
 .pg-head__lede{font-family:var(--B);font-size:clamp(17px,1.3vw,19px);line-height:1.6;color:var(--ink-muted);max-width:60ch;margin:14px 0 0;text-wrap:pretty}
 .pg-head__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
 @media (max-width:760px){
-  .pg-head{padding-top:var(--s-3)}
   .pg-head__inner{padding-bottom:var(--s-3)}
   .pg-head__eyebrow{margin-bottom:10px}
   .pg-head__lede{margin-top:10px}
@@ -591,10 +590,10 @@ img{display:block;max-width:100%}
 /* One action style for the page head and the study primitives: bone on ink
  * with a mustard rule (the primary), or a hairline outline (--quiet). 44px
  * targets; a disabled step button stays in place, faded. */
-.pg-action,.st-action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:44px;padding:0 22px;font-family:var(--U);font-size:15px;font-weight:500;line-height:1.2;text-decoration:none;background:var(--ink);color:var(--bone);border:1px solid var(--ink);border-bottom:2px solid var(--mustard);border-radius:var(--radius-sm);cursor:pointer;transition:background .2s var(--motion-ease),border-color .2s var(--motion-ease)}
-.pg-action:hover,.st-action:hover{background:color-mix(in srgb,var(--ink) 86%,var(--bone))}
-.pg-action--quiet,.st-action--quiet{background:transparent;color:var(--ink);border:1px solid var(--borderdk)}
-.pg-action--quiet:hover,.st-action--quiet:hover{background:transparent;border-color:var(--ink)}
+.pg-action,.st-action,.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:44px;padding:0 22px;font-family:var(--U);font-size:15px;font-weight:500;line-height:1.2;text-decoration:none;background:var(--ink);color:var(--bone);border:1px solid var(--ink);border-bottom:2px solid var(--mustard);border-radius:var(--radius-sm);cursor:pointer;transition:background .2s var(--motion-ease),border-color .2s var(--motion-ease)}
+.pg-action:hover,.st-action:hover,.btn:hover{background:color-mix(in srgb,var(--ink) 86%,var(--bone))}
+.pg-action--quiet,.st-action--quiet,.btn--quiet{background:transparent;color:var(--ink);border:1px solid var(--borderdk)}
+.pg-action--quiet:hover,.st-action--quiet:hover,.btn--quiet:hover{background:transparent;border-color:var(--ink)}
 .st-action:disabled{opacity:.4;cursor:default}
 .st-action:disabled:hover{background:var(--ink)}
 .st-action--quiet:disabled:hover{background:transparent;border-color:var(--borderdk)}
@@ -604,7 +603,7 @@ img{display:block;max-width:100%}
  * question, one assembled answer; MASTER-PLAN 4.3). One reading column on
  * cream; hairlines between parts; mustard only on rules and link underlines.
  * Tokens only. */
-.tp-index-page,.tp-page__body{background:var(--bone);padding:var(--s-3) 16px var(--s-7)}
+.tp-index-page,.tp-page__body{background:var(--bone);padding:var(--s-3) var(--gutter) var(--s-7)}
 .tp-index-wrap{max-width:var(--w-content);margin:0 auto}
 .tp-index > li{flex-direction:column}
 .tp-index > li:first-child{border-top:0}
@@ -622,7 +621,7 @@ img{display:block;max-width:100%}
 .tp-text{font-family:var(--font-reading);font-size:1.125rem;line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-1)}
 .tp-note{font-family:var(--U);font-size:13px;line-height:1.6;color:var(--ink-muted);margin:var(--s-2) 0 0}
 .tp-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
-.tp-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.tp-section__title{font-family:var(--F);font-size:var(--fs-h2);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
 .tp-companion{color:var(--ink-muted);margin-bottom:var(--s-2)}
 .tp-lead{display:block;padding:var(--s-2) 0 var(--s-3);border-top:2px solid var(--mustard);text-decoration:none;color:inherit}
 .tp-lead .ed-kicker{margin:0 0 6px}
@@ -728,7 +727,7 @@ img{display:block;max-width:100%}
  * The Study Bible's story path as 365 days (pages/StudyBibleYear.tsx): one
  * day's card, then the year by month. Tokens only; every control is at least
  * 44px tall for a thumb. */
-.sy-band{background:var(--bone);padding:var(--s-5) clamp(16px,4vw,var(--s-4))}
+.sy-band{background:var(--bone);padding:var(--s-5) var(--gutter)}
 .sy-band--warm{background:var(--bone-warm)}
 .sy-wrap{max-width:var(--w-prose);margin:0 auto}
 .sy-day{max-width:var(--w-prose);margin:0 auto;background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm);padding:clamp(20px,3vw,32px);scroll-margin-top:90px}
@@ -756,7 +755,7 @@ img{display:block;max-width:100%}
 .sy-note{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:6px 0 0}
 .sy-note--alert{color:var(--alert)}
 .sy-inline{display:inline-flex;align-items:center;min-height:44px;padding:0;font:inherit;font-weight:600;color:var(--ink);background:transparent;border:none;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em;cursor:pointer;vertical-align:middle}
-.sy-h2{font-family:var(--F);font-size:clamp(28px,3vw,36px);font-weight:400;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.sy-h2{font-family:var(--F);font-size:var(--fs-h2);font-weight:400;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
 .sy-intro{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
 .sy-month{border-top:1px solid var(--border)}
 .sy-month:last-of-type{border-bottom:1px solid var(--border)}
@@ -806,7 +805,7 @@ img{display:block;max-width:100%}
 /* One devotion, on its page. */
 .tb-devotion{max-width:var(--w-prose);margin:0 auto}
 .tb-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border)}
-.tb-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-section__title{font-family:var(--F);font-size:var(--fs-h2);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
 .tb-ref{font-family:var(--U);font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--mustard-text);margin:0 0 8px}
 .tb-passage{font-family:var(--font-reading);font-size:1.25rem;line-height:1.6;color:var(--ink);margin:0 0 var(--s-2);padding-left:16px;border-left:2px solid var(--mustard)}
 .tb-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin:0 0 var(--s-2)}
@@ -1090,6 +1089,56 @@ h1, h2, h3 { text-wrap: balance; }
 
 /* Reading progress (top-of-viewport bar) */
 .reading-progress{position:fixed;top:0;left:0;right:0;height:2px;background:var(--mustard);transform-origin:0 50%;z-index:1000;transition:transform .1s linear}
+
+/* ─── ONE SET OF PARTS ───────────────────────────────────────────────
+ * The scale lives in :root (--fs-display, --fs-h1, --fs-h2, --fs-h3,
+ * --fs-read, --gutter, --page-top). The parts:
+ *   Buttons, three: .btn (ink, the one that matters on the page; .pg-action
+ *   and .st-action are the same button), .btn--quiet (a hairline outline),
+ *   .btn--text (a word with a mustard underline). .btn--on-dark is the ink
+ *   button turned over for a charcoal band. Square corners, 48px tall.
+ *   Card, one: .ed-card. Label, one: .eyebrow. Page head: .pg-head.
+ * A page adopts these; it does not restyle them. */
+.btn--text{display:inline-flex;align-items:center;gap:.4em;min-height:44px;padding:0;font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);background:transparent;border:0;cursor:pointer;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.25em}
+.btn--text:hover{text-decoration-thickness:2px}
+.btn--on-dark{background:var(--charcoal-fg);color:var(--charcoal);border-color:var(--charcoal-fg);border-bottom-color:var(--mustard)}
+.btn--on-dark:hover{background:var(--bone-bright)}
+/* A heading used as a label keeps the label's face (brand-override.css sets
+   every heading in Cormorant; at 12px in capitals that is too frail to read). */
+h2.eyebrow,h3.eyebrow,h4.eyebrow{font-family:var(--U) !important;font-weight:600 !important;letter-spacing:.18em !important}
+
+/* PRESSED. Hover does nothing on a phone, so everything that can be tapped
+ * answers the touch itself: it dims for as long as the finger is down, and a
+ * button also settles by a pixel. Zero specificity (:where), so a component's
+ * own states still win. The reduced-motion guard does not remove it: this is
+ * a response to the reader, and it is instant. */
+html{-webkit-tap-highlight-color:transparent}
+:where(a,button,summary,[role="button"],[role="tab"],[role="menuitem"]):active{opacity:.68}
+:where(button,[role="button"],.btn,.pg-action,.st-action):where(:not(:disabled):not([aria-disabled="true"])):active{transform:translateY(1px)}
+
+/* The page that is not there (pages/NotFound.tsx): the site's header and
+ * footer around one short column. */
+.nf{background:var(--bone);padding:clamp(var(--s-5),10vw,var(--s-8)) var(--gutter)}
+.nf__inner{max-width:var(--w-prose);margin:0 auto}
+.nf__eyebrow{margin:0 0 18px}
+.nf__title{font-family:var(--F);font-weight:400;font-size:var(--fs-h1);line-height:1.06;letter-spacing:-0.02em;color:var(--ink);margin:0 0 var(--s-2)}
+.nf__text{font-family:var(--B);font-size:var(--fs-lede);line-height:1.7;color:var(--ink-muted);max-width:52ch;margin:0 0 var(--s-4)}
+.nf__actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* The footer on a phone (components/Footer.tsx): each group of links is one
+ * closed row that opens. Fixed-dark surface, so the lines use --charcoal-line. */
+.ft-group{border-top:1px solid var(--charcoal-line)}
+.ft-group > summary{display:flex;align-items:center;justify-content:space-between;min-height:48px;cursor:pointer;list-style:none}
+.ft-group > summary::-webkit-details-marker{display:none}
+.ft-group > summary::after{content:"+";font-family:var(--U);font-size:20px;line-height:1;color:var(--charcoal-fg-muted)}
+.ft-group[open] > summary::after{content:"\2212"}
+.ft-group[open]{padding-bottom:10px}
+@media (max-width:640px){
+  /* One column, so the five rows stack as a list under the site's name. */
+  footer:has(.ft-group) > div > div:first-child{grid-template-columns:minmax(0,1fr) !important;gap:0 !important;margin-bottom:var(--s-3) !important}
+  footer:has(.ft-group) > div > div:first-child > div:first-child{margin-bottom:var(--s-2)}
+  footer:has(.ft-group) > div > div:first-child > div:last-child .ft-group{border-bottom:1px solid var(--charcoal-line)}
+}
 
 /*
   EASY EDITS

@@ -21,7 +21,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
 import { PageHead } from "@/components/editorial/PageHead";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** The parts of the Study Bible, in the order a newcomer should meet them. */

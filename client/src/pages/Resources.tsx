@@ -22,7 +22,7 @@ import { useLibrary } from "@/lib/library";
 import { collectProgress } from "@/lib/myProgress";
 import { trpc } from "@/lib/trpc";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 const FORMAT_LABELS: Record<string, string> = {
@@ -105,7 +105,7 @@ export default function Resources() {
           <h1
             style={{
               fontFamily: "var(--F)",
-              fontSize: "clamp(38px, 5.4vw, 64px)",
+              fontSize: "var(--fs-h1)",
               fontWeight: 400,
               lineHeight: 1.04,
               letterSpacing: "-0.02em",

@@ -113,7 +113,7 @@ export function NewsletterSignup({
               fontFamily: "var(--F)",
               fontWeight: 500,
               fontSize: "16px",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
             }}
           >
             {title}
@@ -126,21 +126,21 @@ export function NewsletterSignup({
             <input
               type="email"
               required
-              placeholder="you@example.com"
+              placeholder="Your email"
               value={email}
               onChange={e => setEmail(e.target.value)}
               aria-label="Email address"
               style={{
-                flex: "1 1 140px",
+                flex: "1 1 100%",
                 minWidth: 0,
+                minHeight: "44px",
                 padding: "10px 12px",
                 background: "var(--charcoal-soft)",
-                border: "1px solid var(--charcoal-soft)",
+                border: "1px solid var(--charcoal-line)",
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--B)",
                 fontSize: "16px",
-                color: "var(--bone)",
-                outline: "none",
+                color: "var(--charcoal-fg)",
               }}
             />
             <button
@@ -149,8 +149,8 @@ export function NewsletterSignup({
               style={{
                 padding: "13px 18px",
                 minHeight: "44px",
-                background: "var(--mustard)",
-                color: "var(--ink)",
+                background: "var(--charcoal-fg)",
+                color: "var(--charcoal)",
                 border: "none",
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--U)",

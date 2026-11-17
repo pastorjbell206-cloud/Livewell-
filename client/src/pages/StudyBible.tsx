@@ -104,13 +104,13 @@ export default function StudyBible() {
         />
       )}
       {failed && !books ? (
-        <div style={{ padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ padding: "var(--s-6) var(--gutter)" }}>
           <LoadFailed what="The Study Bible" onRetry={retry} backHref="/study" backLabel="Back to Study" />
         </div>
       ) : !books ? (
-        <p role="status" style={{ ...wrap, padding: "var(--s-6) var(--s-4)", fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening the Study Bible…</p>
+        <p role="status" style={{ ...wrap, padding: "var(--s-6) var(--gutter)", fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening the Study Bible…</p>
       ) : slug && !book ? (
-        <div style={{ ...wrap, padding: "var(--s-6) var(--s-4)" }}>
+        <div style={{ ...wrap, padding: "var(--s-6) var(--gutter)" }}>
           <p style={{ fontFamily: "var(--B)" }}>That book isn't in the Bible's table of contents.</p>
           <Link href="/study/bible" style={{ color: "var(--ink)", fontWeight: 600 }}>All the books</Link>
         </div>
@@ -157,10 +157,10 @@ function BookIndex({ books }: { books: BibleBook[] }) {
   ];
   return (
     <>
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>The Study Bible</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 16px", textWrap: "balance" }}>Learn the whole Bible</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 16px", textWrap: "balance" }}>Learn the whole Bible</h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "1.12rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", margin: 0 }}>
             Whether you have never opened it or have read it for years. Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and where it sits in the one story that runs from Genesis to Revelation. Underneath every English word are the Hebrew and Greek it translates.
           </p>
@@ -176,7 +176,7 @@ function BookIndex({ books }: { books: BibleBook[] }) {
           )}
         </div>
       </section>
-      <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--bone)", padding: "0 var(--gutter) var(--s-6)" }}>
         <ul style={{ ...wrap, listStyle: "none", padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "14px" }}>
           {doors.map((d) => (
             <li key={d.href}>
@@ -189,7 +189,7 @@ function BookIndex({ books }: { books: BibleBook[] }) {
           ))}
         </ul>
       </section>
-      <section id="books" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
+      <section id="books" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter)", scrollMarginTop: "70px" }}>
         <div style={{ ...wrap, display: "grid", gap: "var(--s-5)" }}>
           <H2>The Sixty-Six Books</H2>
           {SECTIONS.map((sec) => (
@@ -242,12 +242,12 @@ function BookPage({ book }: { book: BibleBook }) {
       ) : (
         <SEOMeta title={`${book.name}: Study Notes, Hebrew and Greek`} description={`Every chapter of ${book.name} with study notes and the original language beneath every word.`} url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}`} />
       )}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
             <span><Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link> · {testament}</span>
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 14px" }}>{book.name}</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 14px" }}>{book.name}</h1>
           {intro && <p style={{ fontFamily: "var(--B)", fontSize: "1.15rem", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 14px" }}>{intro.tagline}</p>}
           <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", display: "flex", flexWrap: "wrap", gap: "6px 14px" }}>
             <span>{book.chapters} chapter{book.chapters === 1 ? "" : "s"}</span>
@@ -283,7 +283,7 @@ function BookPage({ book }: { book: BibleBook }) {
         </>
       )}
 
-      <section id="chapters" style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
+      <section id="chapters" style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter)", scrollMarginTop: "70px" }}>
         <div style={wrap}>
           <H2>The chapters</H2>
           <ol aria-label={`Chapters of ${book.name}`} style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: titles.some(Boolean) ? "repeat(auto-fill, minmax(250px, 1fr))" : "repeat(auto-fill, minmax(56px, 1fr))", gap: "8px" }}>
@@ -483,7 +483,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
 
   if (!valid) {
     return (
-      <div style={{ ...wrap, padding: "var(--s-6) var(--s-4)" }}>
+      <div style={{ ...wrap, padding: "var(--s-6) var(--gutter)" }}>
         <p style={{ fontFamily: "var(--B)" }}>{book.name} has {book.chapters} chapter{book.chapters === 1 ? "" : "s"}.</p>
         <Link href={`/study/bible/${book.slug}`} style={{ color: "var(--ink)", fontWeight: 600 }}>Choose a chapter</Link>
       </div>
@@ -510,13 +510,13 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
         url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}/${chapter}`}
         type="article"
       />
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-3)", borderBottom: "1px solid var(--border)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-3)", borderBottom: "1px solid var(--border)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "14px" }}>
           <div>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>
               <Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link>
             </div>
-            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.5vw, 2.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: 0 }}>
+            <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: 0 }}>
               <Link href={`/study/bible/${book.slug}`} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{book.name}</Link> {chapter}
             </h1>
           </div>
@@ -539,7 +539,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-6)" }}>
         <div style={{ ...wrap, display: "flex", gap: "var(--s-5)", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
             <ChapterHead note={note} place={place} />
@@ -603,7 +603,7 @@ const verseNumStyle = (active: boolean): CSSProperties => ({
 
 function ReadingText({ data, sel, onVerse }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void }) {
   return (
-    <div style={{ maxWidth: "68ch", fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.85, color: "var(--ink)" }}>
+    <div style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: "calc(var(--fs-read) * 1.05)", lineHeight: 1.75, color: "var(--ink)" }}>
       {data.verses.map((v) => (
         <span key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", background: sel?.verse.v === v.v ? "var(--bone-warm)" : "transparent" }}>
           <button type="button" aria-label={`Study verse ${v.v}`} onClick={() => onVerse(v)} style={verseNumStyle(sel?.verse.v === v.v)}>{v.v}</button>
@@ -620,7 +620,7 @@ function Interlinear({ data, lang, sel, onVerse, onWord }: { data: BibleChapter;
     <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "var(--s-4)" }}>
       {data.verses.map((v) => (
         <li key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
-          <p style={{ margin: "0 0 10px", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", maxWidth: "68ch" }}>
+          <p style={{ margin: "0 0 10px", fontFamily: "var(--font-reading)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)", maxWidth: "68ch" }}>
             <button type="button" aria-label={`Study verse ${v.v}`} onClick={() => onVerse(v)} style={verseNumStyle(sel?.verse.v === v.v && sel.kind === "verse")}>{v.v}</button>
             {v.t || <span style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>{LATER_NOTE}</span>}
           </p>
@@ -777,7 +777,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
 
   return (
     <div>
-      <p style={{ margin: "10px 0 0", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>{verse.t || <i style={{ color: "var(--ink-muted)" }}>{LATER_NOTE}</i>}</p>
+      <p style={{ margin: "10px 0 0", fontFamily: "var(--font-reading)", fontSize: "18px", lineHeight: 1.6, color: "var(--ink)" }}>{verse.t || <i style={{ color: "var(--ink-muted)" }}>{LATER_NOTE}</i>}</p>
 
       {entry && (
         <>

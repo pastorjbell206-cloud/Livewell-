@@ -233,7 +233,7 @@ export default function Writing() {
       <section
         style={{
           background: "var(--charcoal)",
-          padding: "var(--s-6) var(--s-4) var(--s-5)",
+          padding: "var(--s-6) var(--gutter) var(--s-5)",
           color: "var(--charcoal-fg)",
         }}
       >
@@ -248,7 +248,7 @@ export default function Writing() {
           <h1
             style={{
               fontFamily: "var(--F)",
-              fontSize: "clamp(36px, 5vw, 56px)",
+              fontSize: "var(--fs-h1)",
               fontWeight: 400,
               lineHeight: 1.05,
               letterSpacing: "-0.02em",
@@ -301,7 +301,7 @@ export default function Writing() {
       )}
 
       {/* THE SHELF */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           {query ? (
             <div aria-live="polite">
@@ -375,7 +375,7 @@ export default function Writing() {
         </div>
       </section>
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <NewsletterSignup
             variant="inline"
