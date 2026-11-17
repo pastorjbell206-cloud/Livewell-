@@ -27,6 +27,13 @@
 @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Source Serif 4: the reading face (--font-reading). Loaded only by a page that sets text in it. */
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-italic-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-italic-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/source-serif-4-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/source-serif-4-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 
 /* The site reset lives in the lowest cascade layer so Tailwind utilities can
  * override it. Unlayered, this rule silently beat every layered margin/padding
@@ -125,6 +132,21 @@
   --U:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,monospace;
   --display:"Cormorant Garamond",Georgia,serif;--serif:"Cormorant Garamond","EB Garamond",Georgia,serif;--sans:"Inter",-apple-system,sans-serif;
+  /* The reading face: essays, Scripture, devotions, history, answers. Cormorant
+     stays the display voice and Inter the interface. */
+  --font-reading:"Source Serif 4","Source Serif Pro",Georgia,"Times New Roman",serif;
+  /* One scale (phone to desktop). Page titles, section titles and subheads
+     take these; --fs-display is for Home and About only. */
+  --fs-display:clamp(2.5rem,6vw,4.875rem);
+  --fs-h1:clamp(2.25rem,1.55rem + 2.9vw,3.5rem);
+  --fs-h2:clamp(1.75rem,1.45rem + 1.2vw,2.25rem);
+  --fs-h3:clamp(1.375rem,1.25rem + .5vw,1.625rem);
+  --fs-read:clamp(1.1875rem,1.15rem + .2vw,1.25rem);--lh-read:1.6;
+  --fs-lede:clamp(1.0625rem,1rem + .3vw,1.1875rem);
+  /* One side margin and one page top. */
+  --gutter:clamp(16px,4vw,32px);
+  --page-top:clamp(var(--s-3),5vw,var(--s-5));
+  --w-read:38.5rem;
 
   /*  Shape  */
   --radius-sm:2px;--radius-md:2px;--radius-pill:999px;
@@ -596,8 +618,8 @@ img{display:block;max-width:100%}
 .pg-head__eyebrow a{padding:12px 0;margin:-12px 0}
 .tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
 .tp-short{margin:0 0 var(--s-3)}
-.tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
-.tp-text{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0 0 var(--s-1)}
+.tp-short p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-2)}
+.tp-text{font-family:var(--font-reading);font-size:1.125rem;line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-1)}
 .tp-note{font-family:var(--U);font-size:13px;line-height:1.6;color:var(--ink-muted);margin:var(--s-2) 0 0}
 .tp-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
 .tp-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
@@ -682,7 +704,7 @@ img{display:block;max-width:100%}
 /* The verses in the sheet: serif, numbered quietly, one paragraph a chapter. */
 .st-passage + .st-passage{margin-top:var(--s-3)}
 .st-passage__chapter{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 8px}
-.st-passage__text{font-family:var(--F);font-size:1.2rem;line-height:1.7;color:var(--ink);margin:0 0 var(--s-3)}
+.st-passage__text{font-family:var(--font-reading);font-size:1.1875rem;line-height:1.65;color:var(--ink);margin:0 0 var(--s-3)}
 .st-passage__n{font-family:var(--U);font-size:.6em;font-weight:600;color:var(--mustard-text);line-height:0;margin-right:.3em}
 .st-passage__later{font-family:var(--U);font-size:.8em;font-style:italic;color:var(--ink-muted)}
 .st-passage__status{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
@@ -756,7 +778,7 @@ img{display:block;max-width:100%}
 .sy-pick__label{font-family:var(--U);font-size:15px;font-weight:600;line-height:1.4}
 .sy-pick[aria-current="true"] .sy-pick__label{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .sy-prose{max-width:var(--w-prose);margin:0 auto}
-.sy-prose p{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+.sy-prose p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-2)}
 
 /* ─── THE TABLE (.tb-) ───────────────────────────────────────────────
  * Family devotions at home (pages/family/, MASTER-PLAN 5.5): tonight's card
@@ -786,13 +808,13 @@ img{display:block;max-width:100%}
 .tb-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border)}
 .tb-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
 .tb-ref{font-family:var(--U);font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--mustard-text);margin:0 0 8px}
-.tb-passage{font-family:var(--B);font-size:19px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2);padding-left:16px;border-left:2px solid var(--mustard)}
+.tb-passage{font-family:var(--font-reading);font-size:1.25rem;line-height:1.6;color:var(--ink);margin:0 0 var(--s-2);padding-left:16px;border-left:2px solid var(--mustard)}
 .tb-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin:0 0 var(--s-2)}
 .tb-big{font-family:var(--F);font-size:clamp(22px,2.4vw,26px);font-weight:400;line-height:1.35;color:var(--ink);margin:0 0 var(--s-2)}
-.tb-body p,.tb-text{font-family:var(--B);font-size:17px;line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
+.tb-body p,.tb-text{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-2)}
 .tb-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 8px}
 .tb-side{margin:var(--s-3) 0 0;padding-left:16px;border-left:1px solid var(--border)}
-.tb-questions{margin:0 0 var(--s-2);padding-left:1.4em;font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink)}
+.tb-questions{margin:0 0 var(--s-2);padding-left:1.4em;font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink)}
 .tb-questions li+li{margin-top:10px}
 .tb-prayer{font-family:var(--F);font-size:clamp(20px,2.2vw,23px);font-style:italic;line-height:1.55;color:var(--ink);margin:0 0 var(--s-2)}
 .tb-done{padding:var(--s-4) 0;border-top:1px solid var(--border)}
@@ -819,7 +841,7 @@ img{display:block;max-width:100%}
    that never breaks across lines. */
 .tb-nights__link{display:inline-block;padding:13px 0;line-height:1.3;white-space:nowrap;background-origin:content-box;color:var(--mustard-text);font-weight:600}
 .tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
-.tb-grownups__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0}
+.tb-grownups__line{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0}
 .tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}
 .tb-different__title{font-family:var(--F);font-size:22px;font-weight:500;line-height:1.25;color:var(--ink);margin:0 0 6px}
 .tb-different__body{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
@@ -932,11 +954,9 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .grid-4{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;gap:16px;align-items:flex-start}
   /* Long-form reading at phone width: smaller body, calmer blockquotes. */
-  .article-body{font-size:16px;line-height:1.7}
   .article-body blockquote{font-size:19px}
   .article-body blockquote.quote-share .quote-share__text{font-size:21px}
   .article-body h2{font-size:24px}
-  .article-body p:first-of-type::first-letter{font-size:3.6em}
 }
 
 /* Study Bible note sections: a +/− affordance on the <details> summaries. */
@@ -969,13 +989,13 @@ h1, h2, h3 { text-wrap: balance; }
  * renderer's output (ArticleDetail, BookReader, the libraries). Designed for "the feeling of opening a serious
  * book in a quiet room where the light is good." */
 
-.article-body{font-family:var(--B);font-size:18px;line-height:1.75;color:var(--ink)}
-.article-body > * + *{margin-top:1.25em}
+.article-body{font-family:var(--font-reading);font-size:calc(var(--fs-read) * var(--read-scale,1));line-height:var(--lh-read);color:var(--ink);font-kerning:normal;font-variant-numeric:oldstyle-nums proportional-nums;hanging-punctuation:first}
+.article-body > * + *{margin-top:1.1em}
 .article-body h2{font-family:var(--F);font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.2;color:var(--ink);margin-top:2.4em;margin-bottom:.6em;position:relative;padding-top:.6em}
 .article-body h2::before{content:"";position:absolute;top:0;left:0;width:32px;height:1px;background:var(--mustard)}
 .article-body h3{font-family:var(--F);font-size:22px;font-weight:500;letter-spacing:-.005em;line-height:1.3;color:var(--ink);margin-top:1.8em;margin-bottom:.4em}
 .article-body p{max-width:62ch}
-.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:4.6em;float:left;line-height:.92;padding:.04em .08em 0 0;color:var(--ink);font-weight:400}
+.article-body p:first-of-type::first-letter{font-family:var(--F);font-size:5.5em;float:left;line-height:.76;padding:.085em .07em 0 0;margin-left:-.03em;color:var(--ink);font-weight:400}
 /* The drop cap belongs to the essay's opening paragraph only — :first-of-type
    also matches the first <p> inside every blockquote and list item. */
 .article-body blockquote p:first-of-type::first-letter,.article-body li p:first-of-type::first-letter{font-family:inherit;font-size:inherit;float:none;line-height:inherit;padding:0;color:inherit;font-weight:inherit}
@@ -989,6 +1009,7 @@ h1, h2, h3 { text-wrap: balance; }
 .article-body ul,.article-body ol{padding-left:1.6em;max-width:62ch}
 .article-body li{margin-top:.4em}
 .article-body strong{font-weight:600;color:var(--ink)}
+.article-body h2,.article-body h3,.article-body table,.article-body code{font-variant-numeric:normal}
 .article-body em{font-style:italic}
 .article-body code{font-family:var(--mono);font-size:.92em;background:var(--bone-warm);padding:.12em .35em;border-radius:2px}
 .article-body hr{border:0;height:1px;background:var(--border);margin:3em auto;max-width:120px}
@@ -1020,34 +1041,44 @@ h1, h2, h3 { text-wrap: balance; }
 .quote-share__btn{display:inline-flex;align-items:center;gap:7px;margin-top:1.1em;background:transparent;border:none;padding:0;cursor:pointer;font-family:var(--U);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard-text);transition:opacity .2s}
 .quote-share__btn:hover{opacity:.65}
 
-/* The essay page (ArticleDetail, U04). Desktop keeps its air; on a phone the
-   essay's first sentence is on the first screen: a 16px gutter, a smaller
-   standfirst, less space between the parts, and the reading tools in one row
-   (the visible "Text size" word goes; the group keeps it as its name). */
-.essay-back{padding:8px var(--s-4)}
-.essay-head{padding:clamp(var(--s-4),8vw,var(--s-6)) var(--s-4) var(--s-4)}
-.essay-kicker{margin-bottom:24px}
-.essay-title{margin-bottom:24px}
+/* The essay page (ArticleDetail). The title block of a publication, centered,
+   then one reading column: a quiet row of tools between two hairlines, a
+   closed contents line, and the text. Nothing competes with the first
+   sentence, which stays on the first screen of a phone (U04). */
+.essay-head{padding:clamp(var(--s-4),7vw,var(--s-6)) var(--gutter) var(--s-4)}
+.essay-kicker{margin-bottom:20px}
+.essay-title{margin-bottom:20px;text-wrap:balance}
 .essay-title--alone{margin-bottom:28px}
-.essay-dek{font-size:22px;line-height:1.5;margin:0 auto 28px}
+.essay-dek{font-size:var(--fs-h3);line-height:1.4;margin:0 auto 28px;text-wrap:pretty}
 .essay-rule{margin:0 auto 20px}
-.essay-actions{margin-top:24px}
-.essay-main{padding:var(--s-6) var(--s-4)}
-.essay-tools{margin:0 auto var(--s-3)}
-.essay-contents{margin:0 auto var(--s-5)}
+.essay-main{padding:0 var(--gutter) var(--s-6)}
+.essay-tools{margin:0 auto;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.essay-tools__row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0 8px;min-height:52px}
+.essay-tools__set{display:flex;flex-wrap:wrap;align-items:center;gap:0 4px;margin-left:auto}
+/* The shared buttons arrive boxed (inline styles); here they sit as plain words. */
+.essay-tools button{border-color:transparent !important;background:transparent !important;color:var(--ink-muted) !important;font-weight:500 !important;padding-left:10px !important;padding-right:10px !important;transition:color .2s var(--motion-ease)}
+.essay-tools button:hover,.essay-tools button[aria-pressed="true"]{color:var(--ink) !important}
+.essay-tools__row > :first-child button:first-child{padding-left:0 !important}
+.essay-tools__set > button:last-child{padding-right:0 !important}
+.essay-tools__status{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);margin:0}
+.essay-tools__status:not(:empty){padding:0 0 12px}
+.essay-tools__status a{color:var(--mustard-text);font-weight:600}
+.essay-contents{margin:0 auto;border-bottom:1px solid var(--border)}
+.essay-contents summary{list-style:none}
+.essay-contents summary::-webkit-details-marker{display:none}
+.essay-contents summary::after{content:"+";font-family:var(--U);font-size:20px;font-weight:400;letter-spacing:0;line-height:1;color:var(--ink-muted)}
+.essay-contents details[open] summary::after{content:"\2212"}
+.essay-contents summary:hover,.essay-contents a:hover{color:var(--ink) !important}
+.essay-main .article-body{padding-top:var(--s-5)}
+.essay-main .article-body p,.essay-main .article-body ul,.essay-main .article-body ol,.essay-main .article-body blockquote{max-width:none}
 /* An essay that opens on a section heading starts at the top of the column. */
 .essay-main .article-body > :first-child{margin-top:0}
 @media (max-width:760px){
-  .essay-back{padding:0 var(--s-2)}
-  /* No bottom padding: save and send (TakeItWithYou), the head's last
-     child, already carries its own space below. */
-  .essay-head{padding:var(--s-3) var(--s-2) 0}
+  .essay-head{padding:var(--s-3) var(--gutter) var(--s-3)}
   .essay-kicker,.essay-title,.essay-title--alone,.essay-rule{margin-bottom:16px}
-  .essay-dek{font-size:19px;line-height:1.45;margin-bottom:20px}
-  .essay-actions{margin-top:20px}
-  .essay-main{padding:var(--s-3) var(--s-2) var(--s-6)}
-  .essay-tools{margin-bottom:var(--s-2)}
-  .essay-contents{margin-bottom:var(--s-3)}
+  .essay-dek{line-height:1.4;margin-bottom:20px}
+  .essay-main{padding-bottom:var(--s-6)}
+  .essay-main .article-body{padding-top:var(--s-3)}
 }
 @media (max-width:480px){
   .essay-tools .text-size__label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -1079,12 +1110,12 @@ h1, h2, h3 { text-wrap: balance; }
 /*
   Reading-focus mode (board rec #10) — a page-level calm applied to the article
   container when the reader turns Focus on. The base measure and body size are
-  set inline on .article-body (68ch / 20px); this bumps the body's own children
-  a notch so headings and rhythm scale with it. The global nav/footer are
+  the reading tokens; this widens the measure a little (36em, set on the page)
+  and sets the type a notch larger with more air. The global nav/footer are
   deliberately untouched — this is a page-level focus, not a chrome takeover.
 */
-.lw-reading-focus .article-body{letter-spacing:.003em}
-.lw-reading-focus .article-body > * + *{margin-top:1.5em}
+.lw-reading-focus .article-body{font-size:calc(var(--fs-read) * 1.1 * var(--read-scale,1));line-height:1.7}
+.lw-reading-focus .article-body > * + *{margin-top:1.3em}
 .lw-reading-focus .article-body h2{font-size:34px}
 
 /* The persistent Find Help tab rides the right edge on desktop only; on a

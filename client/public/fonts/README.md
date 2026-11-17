@@ -1,7 +1,6 @@
 # Self-hosted fonts
 
-Subsetted woff2 files for the two brand families, downloaded from Google
-Fonts' serving CDN (fonts.gstatic.com) and committed here so no page load
+Subsetted woff2 files for the brand families, committed here so no page load
 ever contacts a third party for type.
 
 - **Cormorant Garamond** — upright 400/500/600 + italic 400, latin and
@@ -9,6 +8,13 @@ ever contacts a third party for type.
   under the SIL Open Font License 1.1.
 - **Inter** — 400/500/600, latin and latin-ext subsets. Copyright the
   Inter Project Authors; licensed under the SIL Open Font License 1.1.
+
+- **Source Serif 4** (the reading face, `--font-reading`): upright 400 and
+  600 and italic 400, latin and latin-ext subsets, taken from the npm
+  package `@fontsource/source-serif-4` 5.3.1 (`npm pack`, then the files
+  under `files/`). Licensed under the SIL Open Font License 1.1 (the
+  package's own LICENSE file). Not preloaded: only a page that sets long reading
+  (an essay, a Bible chapter, a devotion) downloads it.
 
 The matching `@font-face` rules (with the original `unicode-range` values,
 so latin-ext files download only when a page actually uses those

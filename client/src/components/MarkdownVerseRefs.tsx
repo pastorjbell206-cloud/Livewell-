@@ -14,6 +14,7 @@ import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { VerseRef, type VerseRefMode } from "@/components/VerseRef";
 import { splitScriptureRefs } from "@/lib/scripture-find";
+import { remarkSmartQuotes } from "@/lib/smartQuotes";
 
 /** The few mdast fields the plugin touches. */
 interface MdNode {
@@ -77,7 +78,7 @@ export default function MarkdownVerseRefs({
 }) {
   const all = useMemo(() => ({ ...components, "verse-ref": REF_NODES[mode] }) as Components, [components, mode]);
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm, remarkVerseRefs]} components={all}>
+    <ReactMarkdown remarkPlugins={[remarkGfm, remarkVerseRefs, remarkSmartQuotes]} components={all}>
       {children}
     </ReactMarkdown>
   );

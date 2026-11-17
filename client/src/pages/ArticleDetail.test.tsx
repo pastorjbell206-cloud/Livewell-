@@ -103,20 +103,25 @@ describe("quoteShareText", () => {
 });
 
 describe("/writing/:slug, save and send", () => {
-  it("puts save and send under the byline and again after the essay", async () => {
+  it("keeps the head to the title block: Save sits in the tools row, and send waits after the essay", async () => {
     await renderEssay();
-    const [top, bottom] = sendButtons();
-    expect(sendButtons()).toHaveLength(2);
-
     const header = screen.getByRole("heading", { level: 1 }).closest("section")!;
-    expect(header.contains(top)).toBe(true);
-    expect(top.compareDocumentPosition(articleBody()) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-    expect(articleBody().compareDocumentPosition(bottom) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(within(header).queryAllByRole("button")).toHaveLength(0);
 
-    // The bottom bar carries Print, Cite this, and Send to… beside save and send.
-    const bottomBar = bottom.closest('[role="group"]') as HTMLElement;
+    // One Save above the text, in the reading tools, and one after it.
+    const tools = screen.getByRole("group", { name: "Reading tools" });
+    const [top, after] = saveButtons();
+    expect(saveButtons()).toHaveLength(2);
+    expect(tools.contains(top)).toBe(true);
+    expect(top.compareDocumentPosition(articleBody()) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(articleBody().compareDocumentPosition(after) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+
+    // Send to my phone is asked once, after the essay, beside Print, Cite this, and Send to….
+    const [send] = sendButtons();
+    expect(sendButtons()).toHaveLength(1);
+    expect(articleBody().compareDocumentPosition(send) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    const bottomBar = send.closest('[role="group"]') as HTMLElement;
     for (const name of [/Print/, /Cite this/, /Send to…/]) expect(within(bottomBar).getByRole("button", { name })).toBeInTheDocument();
-    expect(within(header).getByRole("button", { name: /Print/ })).toBeInTheDocument();
   });
 
   it("saves to My Library, and every Save on the page agrees", async () => {
@@ -143,7 +148,8 @@ describe("/writing/:slug, save and send", () => {
     fireEvent.click(screen.getByRole("button", { name: "Focus" }));
 
     expect(screen.getByRole("button", { name: "Exit focus" })).toBeInTheDocument();
-    expect(sendButtons()).toHaveLength(2);
+    expect(saveButtons()).toHaveLength(2);
+    expect(sendButtons()).toHaveLength(1);
     expect(screen.getByRole("button", { name: /Cite this/ })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Send to…/ })).toBeInTheDocument();
   });
@@ -192,12 +198,16 @@ describe("/writing/:slug, sharing a quotation", () => {
 describe("/writing/:slug, reading tools", () => {
   it("lets the reader set the text size, kept apart from Focus", async () => {
     await renderEssay();
-    expect(articleBody().style.fontSize).toBe("18px");
+    // The size itself is a token (--fs-read); the reader's choice scales it.
+    const scale = () => articleBody().style.getPropertyValue("--read-scale");
+    expect(scale()).toBe("1");
+    expect(articleBody().style.fontSize).toBe("");
 
     fireEvent.click(screen.getByRole("button", { name: "Larger text" }));
-    expect(articleBody().style.fontSize).toBe("21px");
+    expect(scale()).toBe("1.15");
     fireEvent.click(screen.getByRole("button", { name: "Focus" }));
-    expect(articleBody().style.fontSize).toBe("23px");
+    expect(scale()).toBe("1.15");
+    expect(document.querySelector("article")).toHaveClass("lw-reading-focus");
     expect(JSON.parse(window.localStorage.getItem("livewell-text-size") ?? "null")).toBe("larger");
   });
 
@@ -286,7 +296,7 @@ describe("/writing/:slug, the first screen on a phone", () => {
     expect(firstSection.parentElement).toBe(articleBody());
   });
 
-  it("starts the contents card closed on a phone and open on a wider screen", async () => {
+  it("starts the contents line closed on a phone and on a wider screen alike", async () => {
     vi.stubGlobal("fetch", vi.fn(essayFetch({ body: SECTIONS })));
     const contents = () => screen.getByRole("navigation", { name: "In this essay" }).querySelector("details")!;
 
@@ -294,16 +304,14 @@ describe("/writing/:slug, the first screen on a phone", () => {
     const phone = await renderEssay();
     await waitFor(() => expect(contents()).toBeInTheDocument());
     expect(contents().open).toBe(false);
-    // Closed, the summary is the card's one door: it carries the card's
-    // padding, so the whole card is the tap target, not a line of 11px text.
-    expect(contents().querySelector("summary")!.style.padding).toBe("16px 20px");
-    expect(contents().style.padding).toBe("");
+    // Closed, the summary is the line's one door, a full 44px tap target.
+    expect(contents().querySelector("summary")!.style.minHeight).toBe("44px");
     phone.unmount();
 
     screenWidth(false);
     await renderEssay();
     await waitFor(() => expect(contents()).toBeInTheDocument());
-    expect(contents().open).toBe(true);
+    expect(contents().open).toBe(false);
   });
 
   it("keeps the reading tools one group, whose Text size word a phone may hide", async () => {
