@@ -49,7 +49,7 @@ const QUESTIONS = [
  * "Books" moves the book ahead of the essays. `help` is where "In Crisis"
  * sends the reader first, before any reading. */
 const FIRST_STEPS: Record<string, { help: { href: string; label: string }; tool: { href: string; label: string }; daily: { href: string; label: string } }> = {
-  marriage: { help: { href: "/help/marriage", label: "My marriage is falling apart" }, tool: { href: "/tools/marriage-assessment", label: "The Marriage Assessment" }, daily: { href: "/plans/marriage", label: "Eight Weeks Toward Each Other" } },
+  marriage: { help: { href: "/help/marriage", label: "My marriage is falling apart" }, tool: { href: "/tools/marriage-assessment", label: "The Marriage Assessment" }, daily: { href: "/plans/marriage", label: "Eight Weeks Toward a Stronger Marriage" } },
   parenting: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/parenting-guide", label: "The Parenting Stage Guide" }, daily: { href: "/tools/family-devotions", label: "The Family Devotion Builder" } },
   doubt: { help: { href: "/help/doubt", label: "I'm not sure I believe anymore" }, tool: { href: "/tools/test-the-case", label: "Test the Case: Push Back at Every Step" }, daily: { href: "/plans/deconstruction", label: "Eight Weeks of Taking Your Questions Seriously" } },
   calling: { help: { href: "/help/decisions", label: "How do I know what God wants me to do?" }, tool: { href: "/life/assessment", label: "The Whole-Life Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
@@ -71,7 +71,7 @@ export const READING_PATHS = {
     title: "Marriage Under Strain",
     pages: [
       { title: "My marriage is falling apart", href: "/help/marriage", kind: "Find Help" },
-      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+      { title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage", kind: "Eight-week plan" }
     ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
@@ -84,7 +84,7 @@ export const READING_PATHS = {
     title: "Building Covenant Strength",
     pages: [
       { title: "Why Do Marriages Drift Apart, and How Do You Stop It?", href: "/life/marriage-the-long-covenant", kind: "Everyday Life" },
-      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+      { title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage", kind: "Eight-week plan" }
     ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
