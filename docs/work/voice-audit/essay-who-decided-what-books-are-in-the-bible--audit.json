@@ -1,0 +1,64 @@
+{
+  "piece": "who-decided-what-books-are-in-the-bible",
+  "human_score": 8.5,
+  "voice_score": 7.5,
+  "verdict": "Clean. Literal searches found no Forbidden Language, no em-dash, no exclamation point, no hedges, no connective filler, no announced turns, no rulebook leakage, no biography or credential, and plain headings throughout. The second-order Old Testament question is stated from both sides and left open. What remains is small: one staged reveal across a paragraph break in the ending, and a handful of sentences where a balanced or abstract phrasing sits where James would say it plainly. The larger gap is voice, not machine tells: long stretches are accurate catalogue with no person in them, and the single first-person line promises a confession it does not make. Only James can supply that.",
+  "findings": [
+    {
+      "quote": "The churches held on to these books because they kept hearing a voice in them.\n\nIt was the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.",
+      "tell": "Staged reveal across a paragraph break (colon-then-reveal in paragraph form); one-sentence stack",
+      "why": "\"a voice\" is withheld for a beat and then identified in the next one-line paragraph. A careful reader hears the pause as engineered. VOICE-JAMES-BELL.md ranks full thoughts above one-sentence stacks, and the ending already has two more single-line paragraphs after this.",
+      "replacement": "The churches held on to these books because they kept hearing in them the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.",
+      "severity": "should"
+    },
+    {
+      "quote": "Either way, the church's answer is plain. He offered a shorter Bible, and the church kept a longer one: the whole Old Testament, read as Christian Scripture, four Gospels instead of one, and Paul's letters uncut.",
+      "tell": "Announcing sentence, then a symmetrical shorter/longer pair, then a colon list",
+      "why": "Three devices in two sentences. \"the church's answer is plain\" announces instead of saying, and \"shorter ... longer\" is the balanced pair the brief lists as a tell. The three items are real (they answer Marcion's three cuts), so the list stays.",
+      "replacement": "Either way, the church didn't take what he offered. It kept the whole Old Testament, read as Christian Scripture, four Gospels instead of one, and Paul's letters uncut.",
+      "severity": "consider"
+    },
+    {
+      "quote": "When councils finally spoke, they spoke for their own region and in the language of receiving.",
+      "tell": "Abstraction where a plain phrase belongs (essay voice)",
+      "why": "\"in the language of receiving\" is a seminar phrase. The quotation that follows (\"which we have received from our fathers\") already shows it; the sentence only needs to say it in ordinary words.",
+      "replacement": "When councils finally spoke, they spoke for their own region, and they said they were passing on what they had received.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The lists drawn up centuries later record the same kind of hearing on a larger scale.",
+      "tell": "Abstraction with no concrete case",
+      "why": "\"the same kind of hearing on a larger scale\" is a summarizing abstraction in the one section that should sound most like a person. The next sentence gives the concrete version, so this one can be plainer.",
+      "replacement": "The lists drawn up centuries later record the same thing across many churches.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Athanasius and Jerome kept most of these books outside the canon, Augustine and the African councils inside it.",
+      "tell": "Balanced antithesis with an elided verb",
+      "why": "The dropped verb in the second half is a written, literary symmetry; spoken English repeats the verb. It follows \"Both sides appeal ... and both can\", so the paragraph has two balanced constructions in a row.",
+      "replacement": "Athanasius and Jerome kept most of these books outside the canon, and Augustine and the African councils kept them in.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The churches kept what they went on reading.",
+      "tell": "Gnomic one-liner mid-paragraph",
+      "why": "Coming straight after the lost letter to Laodicea, it reads as an epigram, and \"what they went on reading\" is briefly unclear. The essay's thesis line on reading is better earned later (\"The lists came after the reading\").",
+      "replacement": "The churches kept the letters they went on reading.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Opens on a dated, concrete scene (Athanasius's Easter letter of 367) and lets the quotations carry it; no hook, no throat-clearing.",
+    "The fair account of the opposing case is done, never announced: Ehrman's argument is given at full strength, then \"Much of that is true\" with specifics, then the limits.",
+    "Criticism runs in both directions with the same instrument: the Constantine rumor and the tidy pious story are both set against the sources, and the Protestant is told he owes an account of Hippo and Carthage.",
+    "Sources are witnesses, not decoration: Harnack, Bauer, Hahneman and Ehrman each arrive with the idea they contributed.",
+    "The Marcion paragraph turns the history on \"most of us\" and then on \"I\" without ceremony, and Tertullian's question does the work a slogan would have done.",
+    "Natural contractions, varied paragraph lengths, plain descriptive headings, and an ending that indicts current practice (\"still hear very little of it read aloud\") before it lands on Christ."
+  ],
+  "for_james": [
+    "\"I have a shorter Bible of my own, and I could tell you which books are in it.\" This is the one personal line in 3,500 words, and it stops short. Naming the actual books you skip (two or three, in your own words) would do more for the human sound of this essay than any edit a reader can make. No one else can supply them.",
+    "The essay is close to impersonal from \"The Books That Were Argued Over\" through \"How the Churches Judged\": accurate, readable, and it could have been written by any careful historian. If you have a real moment behind this question (as a former atheist hearing the Constantine story, or someone bringing it to you), one or two sentences in \"What Happened at Nicaea\" would make it yours. It must be a true memory; none was invented here.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on this piece, and the essay follows the voice document: the profile asks for 1,500 to 2,500 words, two-to-four sentence paragraphs, a Greek or Hebrew word, a screenshot line, and three Monday-morning questions with a practice; this essay is longer, in developed paragraphs, with none of those. No rewrite toward the profile is proposed.",
+    "The ending is three single-line paragraphs before the Closing Texts. The first finding merges two of them. If you prefer the stacked lines as they are, that is a defensible choice under the essay brief; the reveal across the break is the only part that sounds staged."
+  ]
+}

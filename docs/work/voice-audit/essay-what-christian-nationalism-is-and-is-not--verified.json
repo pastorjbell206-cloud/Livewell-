@@ -1,0 +1,45 @@
+{
+ "piece": "what-christian-nationalism-is-and-is-not",
+ "human_score": 8.5,
+ "voice_score": 8,
+ "verdict": "Second read agrees with the first on the essay and disagrees on how much to touch. It is mechanically clean (no forbidden word, the only em-dashes are inside the verbatim Whitehead and Perry definition, the only exclamation is inside Luke 19:42, plain headings, contractions present) and the argument is his. Three small edits are worth making: one restated antithesis in the Amos paragraph, one epigram closer after the Lincoln quotation, one vague framing sentence in the Eisenhower paragraph. Five first-reader findings are dropped because the sentence was doing real work or the replacement was no better. The thin first-person paragraph is a real weakness that only James can fix.",
+ "keep": [
+  {
+   "quote": "The privilege didn't exempt Israel from judgment. It was the reason for the judgment.",
+   "tell": "'It is not X. It is Y.' antithesis restating a point the paragraph has just made",
+   "why": "The paragraph's first sentence already says the covenant made Israel 'more accountable, not less', the verse then says it with 'therefore', and this pair says it a third time in a second antithesis. The same section has three more balanced contrasts. The first reader was right about the tell but cut the wrong sentence: the lead is plain and sets up the verse, and its proposed replacement ('what that covenant meant') was a vague framing sentence. Collapsing the after-pair keeps the gloss on 'therefore' and removes the echo.",
+   "replacement": "The privilege was the reason for the judgment.",
+   "severity": "should"
+  },
+  {
+   "quote": "\"The Almighty has His own purposes.\" That is civil religion standing beneath God instead of beside Him.",
+   "tell": "Aphoristic preposition-swap closer; one of eight 'That is / That's' verdict sentences in the essay",
+   "why": "The paragraph already said civil religion at its best 'could place the nation under judgment' and that Lincoln 'declined to claim God for the Union'. The epigram restates that as a slogan after the quotation has landed. Ending on Lincoln's own words is stronger than any replacement sentence, so this is a cut, not a rewrite (the first reader's replacement restated the point again).",
+   "replacement": "\"The Almighty has His own purposes.\"",
+   "severity": "should"
+  },
+  {
+   "quote": "Still, the sentence people remember tells us something. Faith was prized as a national asset,",
+   "tell": "Vague framing sentence / announced point",
+   "why": "'Tells us something' announces that a point is coming instead of making it; BRIEF.md lists vague framing sentences among the tells earlier judges caught. Folding it into the next sentence loses nothing.",
+   "replacement": "Still, in the sentence people remember, faith was prized as a national asset,",
+   "severity": "should"
+  }
+ ],
+ "dropped": [
+  "\"Amos told Israel that the covenant made them more accountable, not less.\" -- tell is real, but the replacement ('Amos told Israel what that covenant meant.') is itself a vague framing sentence. Kept the lead; trimmed the restating pair after the verse instead (see keep 1).",
+  "\"This doesn't settle how a Christian should vote. It settles something prior, which is where the love of country sits.\" -- a real distinction at a true hinge (voting versus the order of loves), the shape VOICE-JAMES-BELL.md itself models. The replacement is stiffer, not more human.",
+  "\"I came to faith out of atheism. A Christianity that seems to exist to bless one country...\" -- the stub is real, but 'and I know that' turns the fact into a credential and edges back toward the personal-memory claim the ledger records as cut because it could not be confirmed. Left for James (for_james 1).",
+  "\"What the data describe is less a kind of devotion than a kind of belonging.\" -- 'consider' finding. The devotion/belonging contrast is the research finding itself; the replacement deletes it.",
+  "\"A Christian can love America deeply and still know...\" -- 'consider' finding. 'Deeply' is doing concessive work here (however much he loves it); not worth an edit.",
+  "\"That's the place from which a Christian can love America well.\" -- 'consider' finding. With the Lincoln closer cut the 'That is' pattern is no longer loud, and 'A Christian can love America well from there.' is flatter and less clear."
+ ],
+ "added": [],
+ "for_james": [
+  "The one first-person paragraph ('I came to faith out of atheism.') is thin because an earlier memory clause was cut as unconfirmed. If you remember how flag-and-cross Christianity looked to you before you believed, one true sentence there would do more than any edit. Nobody should write it for you.",
+  "'it will cost something in this one' is true but unspecific. A real cost you have paid or seen a pastor pay would make the line yours; only you can supply it.",
+  "'My own tradition ought to know better than most' plus the Baptist history tells the reader you are Baptist. That is confirmed and no convention is named; confirm you want it.",
+  "The criticism of the left is one linked sentence. Your voice standard refuses false symmetry and the subject justifies unequal space, but the call is yours.",
+  "Your saved Substack profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a Greek or Hebrew word, a screenshot line and three Monday-morning questions with one practice. VOICE-JAMES-BELL.md asks for developed paragraphs and no application box, and this essay (about 3,300 words) follows it. Judged by VOICE-JAMES-BELL.md; not rewritten toward the profile."
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "piece": "did-the-resurrection-happen",
+ "human_score": 8.5,
+ "voice_score": 8,
+ "verdict": "Second read agrees with the first: the essay is clean and in the mature register. Literal search of the body: no em-dash, no semicolon, no Forbidden Language word or phrase, no hedge or stock connective from the list, and one exclamation point, inside Acts 12:15. No title, years in ministry or book count; criticism falls on mainline and evangelical churches alike; the grief passage links Find Help. Three of the seven findings survive, all small: one repeated concession opener, one echoing section closer, one plural that outruns its evidence. The four 'consider' findings are dropped. Nothing new was found on the second pass that I would stake the essay on.",
+ "keep": [
+  {
+   "quote": "He's right to warn them. Still, the theory has trouble with the rest of the evidence.",
+   "tell": "Concession opener repeated in back-to-back paragraphs",
+   "replacement": "Even so, the theory has trouble with the rest of the evidence.",
+   "severity": "should",
+   "why": "The paragraph before opens 'He had a point, and modern research strengthens it.' and ends by reporting Allison's warning with approval already. Opening the next paragraph on a second short 'he is right' beat, in an essay that also has 'That's a reasonable line to draw', 'Some of that is simply true' and 'That is candid of him', is the one place the concession habit sounds mechanical (VOICE-JAMES-BELL.md: conversational turns are allowed, 'Do not repeat them mechanically'). The other four stay. No fact changes."
+  },
+  {
+   "quote": "That doesn't prove anyone saw anything. It does mean the claim was not a late growth. It was being repeated, in fixed form, while the people it named were still alive to be asked.",
+   "tell": "Deny-then-affirm section closer that restates the paragraph above",
+   "replacement": "That doesn't prove anyone saw anything, but it does mean the claim was being repeated, in fixed form, while the people it named were still alive to be asked.",
+   "severity": "should",
+   "why": "The paragraph above has just said the list 'doesn't have that shape. It is early, and it names names.' 'It does mean the claim was not a late growth' says the same thing a third time, and the three clipped beats make it the third section in the essay to close on a denial-then-affirmation pair. The other two ('They argued about how it got out.'; 'They said God had raised Jesus.') carry new information and stay. The replacement keeps the concession and the one new point and drops only the echo."
+  },
+  {
+   "quote": "Other Jewish messianic movements show the same thing from the outside.",
+   "tell": "Framing sentence larger than its evidence",
+   "replacement": "Another Jewish messianic movement shows the same thing from the outside.",
+   "severity": "should",
+   "why": "The plural promises several movements; the paragraph gives one, Bar Kokhba. The skeptic this essay is written for will notice. The ledger verifies only the Bar Kokhba case, so the singular is also the accurate claim."
+  }
+ ],
+ "dropped": [
+  "\"Ghost, angel, spirit, vision: the ancient world had a full vocabulary for seeing the dead, and resurrection was not part of it.\" Dropped. A 'consider' finding; the list of four words comes straight out of the two passages just quoted (angel, spirit) and the sentence is the hinge of the section. The replacement is slacker than the original.",
+  "\"What they actually said had no precedent: one man had been raised bodily, ahead of everyone else, while the world went on. Paul reached for a farmer's word:\" Dropped. The second colon only introduces a Scripture quotation, which is ordinary punctuation, so there is one reveal here and it sits at the section's real turn.",
+  "\"I came to faith as an adult, out of atheism, so I don't assume that a skeptic reading this is simply being stubborn.\" Dropped. The fact is confirmed, stated once and plainly, and it explains his sympathy for the skeptic; it is not offered as a reason to believe him. Swapping 'so' for 'and' makes the sentence a non sequitur. Left for James in for_james.",
+  "\"Evangelical churches, and Baptist churches like the one I pastor, tend to defend the empty tomb fiercely\" Dropped as an edit. The brief confirms he pastors a Baptist church, ledger correction 11 chose this wording on purpose, and it is the essay's one line that puts his own church inside the criticism. It does not state a title or imply Southern Baptist membership. Flagged in for_james as his decision."
+ ],
+ "added": [],
+ "for_james": [
+  "Your saved Substack profile and VOICE-JAMES-BELL.md disagree, and this essay follows the voice document: the profile asks for 2 to 4 sentence paragraphs, a Greek or Hebrew word, a screenshot line, three Monday-morning questions, 1,500 to 2,500 words and no exclamation marks ever; the essay has developed paragraphs, no word study, no takeaway questions, about 4,000 words (a little over the brief's 3,800), and one exclamation point inside Acts 12:15. Nothing was rewritten toward the profile.",
+  "\"Baptist churches like the one I pastor\" names your denomination in print. It is true and the brief allows it. If you'd rather not say it, \"churches like the one I pastor\" works.",
+  "\"I came to faith as an adult, out of atheism, so I don't assume that a skeptic reading this is simply being stubborn.\" I left it. If it reads to you as trading on your story, tell us and it can go.",
+  "The essay is nearly all exposition. If you remember which objection to the resurrection held you longest before you believed, a sentence or two of that near the Hume section would do more than any edit here. Only you can supply it.",
+  "\"That covers the care given to a dying parent, the forgiveness that cost you something, the faithfulness in a marriage nobody applauds, and the years of raising children who may never thank you.\" Sound, but it could run on any church's page. A real case from your own life or church would make it yours."
+ ]
+}

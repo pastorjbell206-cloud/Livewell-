@@ -1,0 +1,72 @@
+{
+ "piece": "what-romans-13-says",
+ "human_score": 8.5,
+ "voice_score": 8,
+ "verdict": "Clean. No em-dashes, no forbidden words, the one exclamation point is inside Daniel 6:21, headings are plain, antithesis stays at about one per section, and the politics fires both ways (Sessions 2018, sanctuary 1982, Grace Community 2020). What remains is small: one personified aphorism built to carry a link, one dangling Calvin sentence, two slightly essayistic framing lines, an orphaned 'First', and a learned aside that never says why it matters. The main gap is not a tell but an absence: the piece is even-tempered exposition from start to finish with no moment only James could have written.",
+ "findings": [
+  {
+   "quote": "[The love of country that Scripture assumes](/writing/what-christian-nationalism-is-and-is-not) knows the difference between honoring a government and belonging to it.",
+   "tell": "Aphoristic paragraph closer; personified abstraction",
+   "why": "The paragraph has already landed on 'Few of us can say we've never done it.' This sentence is tacked on after it to carry a link, and 'love ... knows the difference between X and Y' is a balanced epigram with an abstraction as its subject. It is the one line in the essay that sounds composed rather than said.",
+   "replacement": "[The love of country that Scripture assumes](/writing/what-christian-nationalism-is-and-is-not) can honor a government without belonging to it.",
+   "severity": "should"
+  },
+  {
+   "quote": "In the last section of the *Institutes* he appealed to Peter's words to the council in Jerusalem.",
+   "tell": "Vague framing sentence; a fact stated without its point",
+   "why": "The reader is not told which words until two sections later, so the sentence reads like a citation trimmed for safety rather than a person making an argument. The ledger confirms Calvin cites Acts 5:29 here, and the essay quotes that verse later in the ESV, so naming it in paraphrase adds no new fact.",
+   "replacement": "In the last section of the *Institutes* he appealed to Peter's words to the council in Jerusalem, that we must obey God rather than men.",
+   "severity": "should"
+  },
+  {
+   "quote": "And then he sets the whole thing in time.",
+   "tell": "Literary phrase where a plain one belongs; announced turn",
+   "why": "'Sets the whole thing in time' is an essayist's abstraction. Paul's own language in the next verses is about knowing the hour, and the plain version says the same thing in words James would use at a table.",
+   "replacement": "Then he tells them what time it is.",
+   "severity": "consider"
+  },
+  {
+   "quote": "That fact cuts in both directions.",
+   "tell": "Vague framing sentence as a section closer",
+   "why": "It promises a payoff without stating one, and 'cuts in both directions' is the stiff form of an idiom everyone says the short way.",
+   "replacement": "That cuts both ways.",
+   "severity": "consider"
+  },
+  {
+   "quote": "First, honor, including honor for officials we did not vote for.",
+   "tell": "Orphaned list signpost; fragment",
+   "why": "'First' is never followed by a second; the paragraph goes on with 'Taxes are owed too' and 'So are our prayers.' It reads like the stub of an outline.",
+   "replacement": "Honor comes first, including honor for officials we did not vote for.",
+   "severity": "consider"
+  },
+  {
+   "quote": "The phrase is close to the one Luther's Small Catechism uses when it lists good rulers among the things a Christian asks for in praying for daily bread.",
+   "tell": "Scholarship that does not say why it matters",
+   "why": "The detail is true and checked, but the sentence stops before its point, so it sits there as learning on display. One clause telling the reader what the echo did fixes it without adding a fact.",
+   "replacement": "The phrase is close to the one Luther's Small Catechism uses when it lists good rulers among the things a Christian asks for in praying for daily bread, which made thanking God for Hitler sound like ordinary piety.",
+   "severity": "consider"
+  },
+  {
+   "quote": "is disobedience to Scripture even when our policy disagreements are right.",
+   "tell": "Essay phrasing where speech would be plainer",
+   "why": "'Our policy disagreements are right' is not how anyone talks; a disagreement is not right, a person is.",
+   "replacement": "is disobedience to Scripture even when we're right about the policy.",
+   "severity": "consider"
+  }
+ ],
+ "strengths": [
+  "Mechanically clean: zero em-dashes, zero Forbidden Language hits, 'fair' and 'honest' never used as self-certifying adjectives, no announced method, no biography or title used as a credential.",
+  "The exegetical observation that 'avenge' in 12:19 and 'avenger' in 13:4 share a root does real work in the argument ('now he tells them where some of it has gone'). Original-language detail used as the standard asks.",
+  "Both readings are stated so that the reader cannot tell from the Case for Obedience or the Case for Resistance where the writer lands, and the Revolution question is left open.",
+  "Self-implication is done, not announced: 'Sometimes we have.' 'Most of us discover the limits of Romans 13 when a law costs us something.' 'Few of us can say we've never done it.'",
+  "Political criticism uses the same instrument on both sides, and the Barmen paragraph turns even the hero of the section into a warning about our own blind spots.",
+  "Paragraph lengths vary from 10 to 169 words; short sentences land after evidence ('It had been one for a long time.' 'The passage is in the Bible, and it says something.').",
+  "The ending lands on John 19:11 and the resurrection without recapping, and 'I can't tell you in advance where yours will draw that line' is the most human sentence in the piece."
+ ],
+ "for_james": [
+  "The essay is fair and accurate but emotionally level the whole way through. If there was a real moment when you quoted Romans 13 for your side, or went quiet about it when it was quoted against your side, one or two plain sentences of that in the 'Romans 13 for Citizens Who Vote' section would make this unmistakably yours. Only you can supply it; nothing was invented.",
+  "'In an election season' (opening) and 'Whoever takes office in January' (ending) read true now but will date the essay after January 2027. Decide whether to keep them or have them made timeless then.",
+  "Your saved Substack profile and VOICE-JAMES-BELL.md disagree on shape: the profile asks for 1,500 to 2,500 words, 2-to-4-sentence paragraphs, a screenshot line, a real person's story and three Monday-morning questions; this essay is about 3,750 words of developed paragraphs with no application list. VOICE-JAMES-BELL.md governs, so I did not push the essay toward the profile.",
+  "'A reading of Romans 13 that changes when the party in office changes isn't really a reading of Romans 13.' is the one earned verdict line and I left it alone, along with 'That is the trouble.' before it."
+ ]
+}

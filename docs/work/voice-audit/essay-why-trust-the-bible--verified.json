@@ -1,0 +1,33 @@
+{
+  "piece": "why-trust-the-bible",
+  "human_score": 9,
+  "voice_score": 7.5,
+  "verdict": "Literal checks re-run and clean: no forbidden word or phrase, no em-dash, no exclamation point, no listed stamp, no biography or credential, and the crisis passage carries Find Help and the reporting line. Two small edits kept, five dropped, none added on a second full read. The remaining gap is voice, not machine-ness: only a true memory from James would make this essay unmistakably his.",
+  "keep": [
+    {
+      "quote": "The scrolls also showed that a few books, Jeremiah among them, circulated in more than one form before the text settled, and scholars are still working out what that means. That complication is real. But someone reading Isaiah 53",
+      "tell": "Repeated concession stamp: a sentence certifying the concession the previous sentence already made",
+      "replacement": "The scrolls also showed that a few books, Jeremiah among them, circulated in more than one form before the text settled, and scholars are still working out what that means. But someone reading Isaiah 53",
+      "severity": "should"
+    },
+    {
+      "quote": "Those questions deserve more than a paragraph. One of them gets a full essay in [Why Didn't the Bible Just Ban Slavery?](/writing/why-didnt-the-bible-ban-slavery)",
+      "tell": "The essay describing its own layout; second of three link sentences on one template ('needs its own essay, and you'll find it in', 'gets a full essay in', 'That is the argument of')",
+      "replacement": "I can't do them justice in a paragraph. I take up one of them in [Why Didn't the Bible Just Ban Slavery?](/writing/why-didnt-the-bible-ban-slavery)",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "'Some distrust of the Bible was earned, though not by the book. It was earned by people who...' (second antithesis in the section): dropped. It names a real distinction in a natural aside, and the proposed fix put 'The book didn't earn it.' between the charge and 'Many of us have done a smaller version of the same thing', which muddies what 'the same thing' points to.",
+    "'investigators grow suspicious when witnesses agree too neatly' (stock apologetics line, consider): dropped. Familiar but plain and ledger-checked; the replacement added a new image ('one account copied three times') that is not in the essay.",
+    "'A church can defend the reliability of the Bible loudly and read it very little. It can also quote it constantly...' (symmetrical pair, consider): dropped. The two sentences are not mirror-built, and they carry the essay's only charge against its own side.",
+    "'That is a better question. The Bible asks it too.' ('That' opener run, consider): dropped. A short verdict at a true hinge; merging it flattens the turn.",
+    "'What the evidence does establish is narrower, and it still matters.' (vague framing, consider): dropped. The clause keeps the concession from reading as a retreat, and the next sentence pays it off."
+  ],
+  "added": [],
+  "for_james": [
+    "Nothing in the essay could only be yours. You came to faith from atheism, and this is the topic where that matters most. Two or three true sentences about what you thought of the Bible before you believed would fit just before 'If you're a skeptic, I'd ask one thing of you.' Nothing should be invented for you.",
+    "The inerrancy paragraph leaves your own position unstated on purpose. Add it only if you want it said.",
+    "Your saved Substack profile disagrees with docs/VOICE-JAMES-BELL.md (2 to 4 sentence paragraphs, a 2,500-word ceiling, a Greek or Hebrew word in every piece, a screenshot line, three Monday-morning questions, paid-subscriber depth, the .com domain). The essay was judged by VOICE-JAMES-BELL.md. The profile's paid-content note also conflicts with your no-membership-fee decision."
+  ]
+}

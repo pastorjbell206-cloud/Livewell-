@@ -1,0 +1,75 @@
+{
+  "piece": "the-rise-of-the-nones",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean, and close to the mature register. Read aloud as a skeptic, it sounds like a pastor who has done the reading and is troubled by it: the Mount Vernon opening is a real event told plainly, both tribes get the same instrument, the Vernon/Hout/Kelley history explains a mechanism instead of decorating, and Ezekiel 34 governs the ending instead of being tacked on. Literal searches found no Forbidden Language, no em-dash, and one exclamation point, inside Ezekiel 34:2. No title, years in ministry, book count or denomination; biography is one line and not a credential; the abuse passage carries the report-to-authorities line and the /help link. What a careful reader could still hear as machine-made is small: one point made three times and closed as a two-beat antithesis, one patched sentence around Bowling Alone, a tagged self-implication ('me included'), a filing image run four times, and a survey section that reads like a research summary. Seven findings, three worth making, four optional. What keeps it from a 10 on voice is not a tell but an absence: outside one sentence about his father and his sons, nothing here could only have come from James, and only he can supply that.",
+  "findings": [
+    {
+      "quote": "Many of the people Hout and Fischer studied had not given up on God. What they turned down was a religious label that had come to stand for a political side.",
+      "tell": "Paragraph that ends by restating itself; repeated 'not X. Y' antithesis",
+      "why": "The previous section already said this twice ('had not stopped believing in God... had dropped the label and the institution' and 'declining a religious identity that now seemed to come bundled with them'). Saying it a third time as a two-beat closer is the 'make sure the reader got it' move a model makes. The sentence before it is the real landing and is stronger alone.",
+      "replacement": "[Cut both sentences. The paragraph then ends: \"When a church lets its name become shorthand for a party, it loses the people who can't vote for that party.\"]",
+      "severity": "should"
+    },
+    {
+      "quote": "The larger group looks more like people whose ties to civic life have loosened in general, the same loosening of American association, religious participation included, that Putnam traced in *Bowling Alone*.",
+      "tell": "Patched sentence; a source bolted on by apposition",
+      "why": "This is the one sentence in the essay that doesn't read aloud. 'Loosened in general, the same loosening of... , religious participation included, that' stacks three qualifiers and reads like a fact-check repair, not a man talking. Splitting it keeps every checked fact and lets Putnam do his work as a witness.",
+      "replacement": "The larger group looks more like people whose ties to civic life have loosened across the board. Putnam traced that loosening of American association, religious participation included, in *Bowling Alone*.",
+      "severity": "should"
+    },
+    {
+      "quote": "Pastors stand where Ezekiel's shepherds stood, me included. Long-time members are the strong sheep, and many of us are among them.",
+      "tell": "Self-implication announced by a tag; symmetrical sentence pair",
+      "why": "Two matched sentences, each ending in an inclusion tag ('me included' / 'many of us are among them'). The brief asks that he implicate himself by doing it, and lists 'pastors like me' and 'I don't exempt myself' as stamps; 'me included' is the same stamp in two words. Said in the first person it is plainer and breaks the symmetry.",
+      "replacement": "I'm a pastor, which puts me where Ezekiel's shepherds stood. Long-time members are the strong sheep, and many of us are among them.",
+      "severity": "should"
+    },
+    {
+      "quote": "The scattering wasn't only the shepherds' doing. The comfortable members of the flock had shouldered the weak ones out.",
+      "tell": "Paragraph closer that glosses the quotation twice; negation-first setup",
+      "why": "Ezekiel 34:21 has just said exactly this, and 'Then the prophet turns to the flock itself' already told the reader the blame was moving. The 'wasn't only X' sentence is a second announcement. One plain gloss is enough. The essay leans on negation-first sentences throughout (didn't storm out / did not find teenagers in revolt / didn't say the teaching had become easy / was not writing about / doesn't end with); this is the one that does no work.",
+      "replacement": "The comfortable members of the flock had shouldered the weak ones out.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The data won't let either filing stand.",
+      "tell": "Motif stamped through a paragraph",
+      "why": "File, files, files, filing: four uses of one image in five sentences, on top of the third conservative/progressive matched pair in the essay. The image is good once ('whichever column flatters it'); by the fourth use the reader hears the device.",
+      "replacement": "The data won't support either one.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Sociologists have a name for people like this: unchurched believers.",
+      "tell": "Colon-then-reveal",
+      "why": "A small drumroll before a technical term. It is the only one of its kind here, so it is minor, but he would just say the term. (The ledger changed this sentence to stay true whoever coined the term; the replacement keeps that.)",
+      "replacement": "Sociologists call people like this unchurched believers.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The reason they gave most often was moving away to college (34 percent). Close behind came church members who seemed judgmental or hypocritical (32 percent) and no longer feeling connected to the people at church (29 percent).",
+      "tell": "Report formatting inside prose; emotional flatness",
+      "why": "Everywhere else the essay writes its numbers into sentences. Here three parenthetical percentages in a row turn a pastor's paragraph into a research summary, in the section that is already the flattest stretch of the piece (three paragraphs of figures with no voice between them).",
+      "replacement": "The reason they gave most often, at 34 percent, was moving away to college. Close behind came church members who seemed judgmental or hypocritical, at 32 percent, and no longer feeling connected to the people at church, at 29.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening is a dated, real event (Mount Vernon, July 21, 2024) and ends on 'The church closed anyway' and Burge still not being over it. No hook, no scene-painting.",
+    "Right and left are handled with the same instrument: each account is granted its evidence, then each is shown locating the problem 'among the other kind of Christian.' The mainline birth-rate correction is conceded against the essay's own convenience.",
+    "Sources work as witnesses. Remove Hout and Fischer, Kelley, Smith and Denton, Bengtson or Luther and the argument loses a step each time, so this is not a scholar parade despite the count.",
+    "'The teenagers had learned what they were taught' and 'because it won't' are earned verdicts, one per movement, not a drumbeat.",
+    "'Asked why a father's warmth mattered so much, Bengtson said he didn't know. I was raised without a father, and I am raising five sons.' The most human moment in the piece; biography stated and left alone, with no lesson drawn. Do not touch it.",
+    "1 John 2:19 is read in context against its common misuse, and Ezekiel 34 is stayed with long enough to indict shepherds, strong sheep and writer before the promise of 34:11.",
+    "The ending turns to 'you' with real questions, lands on Christ, and does not recap. The three closing lines are plain and carry weight.",
+    "Headings are plain and descriptive; contractions fall where speech would put them."
+  ],
+  "for_james": [
+    "The father line is the best sentence in the essay and it stops exactly where a machine could not go further. If there is one true thing you would say next (what you did not have, or what you are afraid of getting wrong with your sons), one sentence from you there would make this piece unmistakably yours. Nobody else should write it, and it is fine left as it is.",
+    "The essay names 'the student who moved for college' and 'the woman whose questions met a wall' as types from the surveys. If you have a real person in mind, someone who stopped coming and whom you did or did not call, a sentence or two in your own words near 'Who noticed when they stopped coming?' would do more than any edit. This must be a real memory; none was invented.",
+    "'What the People Who Left Say' is three straight paragraphs of percentages. Every figure is checked and I would not cut any, but it is the flattest stretch. A single sentence from you after the Pew paragraph saying which number bothers you most as a pastor would break it up. I did not write one because it would be putting a reaction in your mouth.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree, and I judged by VOICE-JAMES-BELL.md as it governs. The profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a line built to be screenshotted, a Greek or Hebrew word, and a 'Monday Morning' block of three questions and one practice. This essay runs about 3,700 words in developed paragraphs, has no word study, and puts its practice in prose under 'What a Church Can Actually Do.' I did not push it toward the profile. The profile also still says livewellbyjamesbell.com and describes paid subscriber content; the site is .co and you have said there is no membership fee, so the profile itself wants updating.",
+    "'Pastors stand where Ezekiel's shepherds stood, me included' says you are a pastor. That is a confirmed fact and not a title or credential, so it stays within the rules; the suggested rewording keeps it and only drops the tag.",
+    "The closing Hebrews 10:24-25 text stops at 'encouraging one another' with a period; the ESV sentence continues ('and all the more as you see the Day drawing near'). The words quoted are verbatim. Your call whether to finish the verse."
+  ]
+}

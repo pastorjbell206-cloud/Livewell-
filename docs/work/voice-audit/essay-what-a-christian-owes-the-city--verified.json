@@ -1,0 +1,35 @@
+{
+  "piece": "what-a-christian-owes-the-city",
+  "human_score": 9,
+  "voice_score": 8,
+  "keep": [
+    {
+      "quote": "Their care, in other words, could not stop at the church door.",
+      "tell": "Connective filler (\"in other words\") glossing a point the two sentences before it already made",
+      "replacement": "Their care could not stop at the church door.",
+      "severity": "should"
+    },
+    {
+      "quote": "Daniel also shows how to say the hard word: as a man who wants the king to prosper.",
+      "tell": "Colon-then-reveal sentence, the second in the closing section",
+      "replacement": "Daniel also shows how to say the hard word. He said it as a man who wanted the king to prosper.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "Shemaiah colon sentence: one colon in the section is ordinary once the Daniel colon is fixed.",
+    "\"Start with a word the exiles already knew.\": plain signposting, which the brief lists as his habit; used once.",
+    "\"Daniel adds the work itself.\": plain, and the proposed replacement is more awkward than the original.",
+    "Tuesday-night doors image: concrete enough; cutting it thins the paragraph. Left as a question for James.",
+    "Great Reversal attribution (Smith, Moberg): accurate sourcing of a named idea, per the ledger; \"Historians call\" alone would be vaguer.",
+    "\"Many of us reach for the same verse to explain it.\": a clarity nit, not a machine tell; not worth an edit."
+  ],
+  "added": [],
+  "for_james": [
+    "If your church does something specific on a weeknight for your town, name it in place of \"keeps its doors open on a Tuesday night\". Nothing should be invented.",
+    "The Stallings paragraph is the one first-person moment. One real sentence of your own memory there would lift the voice score more than any edit.",
+    "The right is named with a date (Falwell, 1979); the left's recent version gets one general sentence, though Rauschenbusch's heirs are criticized earlier. Match the detail only if you have a named example you stand behind.",
+    "Your saved Substack profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, three questions and a practice, and a screenshot line; docs/VOICE-JAMES-BELL.md asks for developed paragraphs and one earned verdict. The essay follows VOICE-JAMES-BELL.md, which governs. No change was made toward the profile."
+  ],
+  "checks": "Literal search: no Forbidden Language, no em-dash, exclamation points only in Psalm 122:6 and Daniel 4:19, the only \"perhaps\" is inside Daniel 4:27. Both kept quotes occur exactly once in the published body. Neither replacement touches a fact, quotation or reference in the ledger. Read-only: the essay was not changed."
+}

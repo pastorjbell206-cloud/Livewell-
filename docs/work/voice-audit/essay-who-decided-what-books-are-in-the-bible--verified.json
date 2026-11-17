@@ -1,0 +1,41 @@
+{
+  "piece": "who-decided-what-books-are-in-the-bible",
+  "human_score": 8.5,
+  "voice_score": 7.5,
+  "verdict": "Second reader agrees with the first: the essay is clean. A literal scan found no Forbidden Language, no em-dash, no exclamation point, no hedge, no connective filler, no vague intensifier, and semicolons only inside quotations. Three of the six findings are kept, all small; three are dropped as over-editing. Nothing new was added. The remaining gap is voice, not machine tells, and only James can close it.",
+  "keep": [
+    {
+      "quote": "The churches held on to these books because they kept hearing a voice in them.\n\nIt was the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.",
+      "tell": "Staged reveal across a paragraph break; one-sentence stack",
+      "why": "\"a voice\" is held back for a beat and named in the next one-line paragraph. It is the only engineered pause in the essay, and the ending already has another single-line paragraph after it. Merged, the ending is still a short stack of plain lines landing on Christ, as the brief asks. Luke 24 details unchanged (ledger line 143).",
+      "replacement": "The churches held on to these books because they kept hearing in them the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.",
+      "severity": "should"
+    },
+    {
+      "quote": "When councils finally spoke, they spoke for their own region and in the language of receiving.",
+      "tell": "Abstraction where a plain phrase belongs (essay voice)",
+      "why": "\"in the language of receiving\" is a seminar phrase in an otherwise plain paragraph. The canon quoted two sentences later (\"which we have received from our fathers\") shows the point; this sentence only has to say it in ordinary words. First reader's \"passing on\" changed to \"handing on\", which echoes the essay's own \"handed down\" and claims no more than the canon says (ledger line 124).",
+      "replacement": "When councils finally spoke, they spoke for their own region, and they said they were handing on what they had received.",
+      "severity": "should"
+    },
+    {
+      "quote": "The lists drawn up centuries later record the same kind of hearing on a larger scale.",
+      "tell": "Abstraction with no concrete case",
+      "why": "\"the same kind of hearing on a larger scale\" is a summarizing abstraction sitting right after Paul's plain words in 1 Thessalonians 2:13, in the section that should sound most like a person. The first reader's replacement is right in direction; \"happening across the churches\" is used so it does not collide with \"Sunday after Sunday\" in the next sentence.",
+      "replacement": "The lists drawn up centuries later record the same thing happening across the churches.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"Either way, the church's answer is plain. He offered a shorter Bible, and the church kept a longer one: ...\" Dropped. One shorter/longer contrast at the hinge of a section titled \"Marcion's Shorter Bible\" is his voice, the three items after the colon are a real list answering Marcion's three cuts, and the ledger's final read kept the first sentence on purpose. A \"consider\" finding not worth staking the essay on.",
+    "\"Athanasius and Jerome kept most of these books outside the canon, Augustine and the African councils inside it.\" Dropped. An elided verb is ordinary written English, not a machine tell, and the sentence was worded with care in the final read to state exactly what the two men share (ledger line 61a). Leave it.",
+    "\"The churches kept what they went on reading.\" Dropped. It is a short verdict after the evidence (the lost letter to Laodicea), which is what the voice standard reserves short sentences for. The replacement narrows it to letters and loses the point the essay is building."
+  ],
+  "added": [],
+  "for_james": [
+    "\"I have a shorter Bible of my own, and I could tell you which books are in it.\" This is the one personal line in the essay and it stops short of saying anything. Naming two or three books you actually skip, in your own words, would do more for the human sound of this piece than any edit a reader can make. Only you can supply them; none were invented.",
+    "From \"The Books That Were Argued Over\" through \"How the Churches Judged\" the essay is accurate and readable and could have been written by any careful historian. If there is a real moment behind this question (hearing the Constantine story as an atheist, or someone bringing it to you), one or two true sentences in \"What Happened at Nicaea\" would make it yours. It has to be a real memory.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on this piece, and the essay follows the voice document: the profile asks for 1,500 to 2,500 words, two-to-four sentence paragraphs, a Greek or Hebrew word, a line to screenshot, and three Monday-morning questions with a practice. This essay is longer, in developed paragraphs, with none of those. No rewrite toward the profile is proposed.",
+    "The first kept edit merges two of the three single-line paragraphs at the end. If you prefer the stacked lines as they stand, that is defensible; the reveal across the break is the only part that sounds staged."
+  ]
+}

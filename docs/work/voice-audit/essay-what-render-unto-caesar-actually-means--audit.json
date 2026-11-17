@@ -1,0 +1,50 @@
+{
+  "piece": "what-render-unto-caesar-actually-means",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "verdict": "Clean. Literal searches found no Forbidden Language, no em-dash, no exclamation point outside Matthew 4:10, no hedges and no connective filler. The essay reads as a person working through a text. Four small residues remain: one point made twice in the party section, one colon-reveal on a word the section has already used three times, one essayist's litotes, and one ambiguous 'Rome'. None is serious, and nothing here would make a careful reader suspect a machine.",
+  "findings": [
+    {
+      "quote": "He kept a house of worship whose real business had become blessing the throne. A congregation can drift into that arrangement without ever deciding to. I notice it faster",
+      "tell": "A paragraph restating a point already landed (repeated closer)",
+      "why": "Two paragraphs earlier the Margolis paragraph ends 'a congregation can become the religious wing of a political identity its members already had, without anyone intending it.' The same thought returns here in nearly the same shape ('without ever deciding to'). Said twice in 250 words it sounds like a refrain being stamped in, and it delays the one first-person sentence in the essay, which is the stronger line.",
+      "replacement": "He kept a house of worship whose real business had become blessing the throne. I notice it faster",
+      "severity": "should"
+    },
+    {
+      "quote": "That is where [the church before Constantine](/writing/the-early-church-under-rome) drew the line again and again: at worship.",
+      "tell": "Colon-then-reveal sentence; a motif word stamped through the section",
+      "why": "The section heading is 'Where the Church Drew the Line', its first sentence says 'the line was drawn in courtrooms', and this sentence draws it a third time and holds the answer back behind a colon. The two sentences before it have already said the answer plainly (tax paid, oath refused), so the reveal has nothing left to reveal.",
+      "replacement": "[The church before Constantine](/writing/the-early-church-under-rome) kept drawing the line at worship.",
+      "severity": "consider"
+    },
+    {
+      "quote": "It reads no more comfortably in any church that has decided it could do more good with the kingdoms than without them.",
+      "tell": "Literary phrasing where a plain one would be spoken",
+      "why": "'Reads no more comfortably' is a reviewer's litotes. Everywhere else in this essay he says the hard thing straight ('This sits hard on anyone who wants a more defiant Jesus').",
+      "replacement": "It's just as hard to read in any church that has decided it could do more good with the kingdoms than without them.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Dostoevsky aimed the story at Rome.",
+      "tell": "Ambiguous term (clarity, not an AI tell)",
+      "why": "Through the whole essay 'Rome' has meant the empire: the tax, the soldiers, the coin. Here it means the Roman Catholic Church. A reader stumbles for a beat, and a skeptic may think the essay has lost track of its own terms. The ledger (line 152) supports 'the Roman Church', which is Garnett's own phrase.",
+      "replacement": "Dostoevsky aimed the story at the Roman church.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening concedes the common reading before complicating it ('That reading isn't foolish, and part of it is true'), without announcing that it is being fair.",
+    "Contractions and plain verbs throughout ('wouldn't', 'didn't go away', 'backed down', 'gave way'); paragraph lengths run from 5 to 156 words, so nothing has the uniform shape of generated prose.",
+    "Sources work as witnesses, not as a parade: Josephus's own motive for blaming the rebels is named, the coded-refusal reading gets a real concession, and Margolis is cited for a mechanism, not a name.",
+    "The Callinicum paragraph turns Ambrose, the hero of the previous paragraph, into the cautionary case, so the church is inside the criticism before any party is.",
+    "Right and left get the same test in the same paragraph, and the one first-person sentence ('I notice it faster in churches across the political aisle than in the church I serve') puts the writer under it without using biography as a credential.",
+    "The ending moves through the inscription on the coin to the inscription on the cross, then to the resurrection, so the hope comes out of the text and not out of a recap.",
+    "The few verdict lines are earned and sparse: 'Caesar's things sit inside God's things, not in a second territory beside them' and 'Giving Caesar his coin was never a request for his sword.' I would keep both."
+  ],
+  "for_james": [
+    "The only personal sentence is 'I notice it faster in churches across the political aisle than in the church I serve.' If you have a real moment when you caught this in your own congregation or in yourself, one concrete sentence there would do more than any edit I can propose. I have not invented one.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree in a few places, and I judged by the voice document. The profile asks for 2-4 sentence paragraphs, 1,500-2,500 words, 'a real person in a real situation', three Monday-morning questions and one concrete practice, and a line built to be screenshotted. The voice document asks for developed paragraphs, as much length as the argument needs, and no clean application turn. This essay follows the voice document: about 3,700 words, full paragraphs, and an ending of four short lines with no practice list. Say so if you want the profile's Monday-morning questions added.",
+    "The closing lines 'Whose image is on you?' and 'Give God the things that are God's, which means all of you' are direct address in a preaching register. They follow the brief's ending pattern and I left them alone, but they are the nearest thing to a pulpit move in the piece. It is your call whether that is how you would end it on the page."
+  ]
+}

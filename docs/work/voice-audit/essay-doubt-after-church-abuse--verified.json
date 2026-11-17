@@ -1,0 +1,36 @@
+{
+  "piece": "doubt-after-church-abuse",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "verdict": "Second read agrees with the first: this is a clean essay. Two of the seven findings survive. The rest are dropped because the sentence is doing real work at a true hinge, or the proposed replacement reads worse than the original. Literal re-search found no Forbidden Language, no em-dash, no hedge or filler connective, and the only exclamation points are inside quoted Scripture (Psalm 105:15, Mark 14:65). Crisis lines are present (police or child protective services, 988, Find Help twice, not-advice). Biography stays inside the confirmed facts. Nothing new was found on the second pass.",
+  "keep": [
+    {
+      "quote": "That is hard to hear when it was a community that failed you, and it is also a reason for hope.",
+      "tell": "Generic hope attached without a reason; vague abstraction closing a paragraph",
+      "why": "The sentence asserts hope and never says what the hope is. To a reader a community failed, it sounds like the reassurance reflex the rest of the essay refuses, and docs/VOICE-JAMES-BELL.md says never to attach generic hope to an unresolved diagnosis. The first reader's replacement ('you don't have to do this alone') is a stock comfort line, so it is replaced here with a plain sentence that leads into the next paragraph ('You may need a different church entirely').",
+      "replacement": "That is hard to hear when it was a community that failed you. It doesn't have to be the same people.",
+      "severity": "should"
+    },
+    {
+      "quote": "Some of the accused were defenders of the faith itself.",
+      "tell": "Vague framing sentence; a plural with one case behind it",
+      "why": "'Some' promises several and the paragraph gives one man, Ravi Zacharias. It reads as a bridge written to join two sections. The first reader's replacement ('The accused have included a defender') is stiff; the singular says the same thing plainly and matches what follows.",
+      "replacement": "One of the accused was a defender of the faith itself.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"The Boston and Southern Baptist reports were not about a few verses misread. They were about institutions that made silence easy.\" Dropped. This is the concession to the skeptic, a true hinge, and it is the exact shape docs/VOICE-JAMES-BELL.md gives as his own ('The problem was not that... The problem was that...'). The replacement ('goes a long way past a few verses misread') is clumsier and buries the concession.",
+    "\"The person who reports abuse to the police is not taking revenge. She is handing the matter to the authority Paul says God appointed for it.\" Dropped. It answers a charge survivors are really given, and it is the point the Romans 12 and 13 paragraph exists to make. The other negations in the section are named distinctions (forgiveness, reconciliation, restoration), not a tic. The replacement ('has left vengeance alone, as Paul says to') is awkward and weakens the sentence a survivor most needs to hear plainly.",
+    "\"Either reading is true to what abuse at the altar does: it teaches people to recoil from God.\" Dropped (consider). One colon carrying the conclusion of a two-translation comparison is ordinary prose, and the brief asks for colons where an em-dash would have gone.",
+    "\"The report showed what that conviction turns into when protecting the institution comes first: a reason for no one to be responsible.\" Dropped (consider). It is the one verdict in a paragraph where he has just put his own church inside the charge. The rewrite is acceptable but not clearly better, and I would not stake the essay on it.",
+    "Contractions finding (\"did not stay\", \"cannot pray\", \"I would only ask\"). Dropped. The quote as given is stitched together with ellipses and is not in the essay as one string. On the merits, the essay already contracts where speech would, and 'I would only ask you' carries a deliberate weight after two 'I won't' clauses. The essay brief also says 'contractions light'."
+  ],
+  "added": [],
+  "for_james": [
+    "The gap between this and a 10 on voice is not wording. Nothing here is from your own life beyond 'I lead one, and I feel that pull too.' If you have a true sentence or two about a time you felt the pull to handle something quietly, the paragraph beginning 'Anyone who leads a church knows the pull' is where it belongs. None was written for you and none should be invented.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree in places: the profile asks for 2-to-4-sentence paragraphs, a screenshot line, a Greek or Hebrew word, 'three specific questions, one concrete practice' and 1,500 to 2,500 words; the voice document asks for developed paragraphs, one earned thesis line and no application box. This essay follows the voice document, and it was judged by that.",
+    "Two questions earlier passes left for you still stand: whether forgiveness must wait for repentance (the essay leaves it open), and whether 'A leader found guilty does not return to ministry' and 'It is never restoration to the position he abused' state your position as firmly as you want.",
+    "The Herman quotation, the Helvetic 'wolves' quotation and the Johnson and VanVonderen paraphrase rest on reproductions, not the printed books (see the ledger). Neither kept replacement touches a quotation, number, date, name or reference."
+  ]
+}
