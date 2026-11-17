@@ -237,8 +237,8 @@ export default function PassageContext() {
   return (
     <Layout>
       <SEOMeta
-        title="The Passage Context Tool — Read Any Verse in Context"
-        description="Enter any Bible reference and see it in context: who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of it."
+        title="Read Any Bible Verse in Context"
+        description="Enter any Bible reference and see it in context: who wrote it and why, its genre, the flow of the argument, and the questions to ask of it."
         url="https://www.livewellbyjamesbell.co/theology/passage"
       />
 
@@ -246,11 +246,12 @@ export default function PassageContext() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Passage Context Tool
+            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · A verse in context
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            Never read a verse alone again.
+            Read any Bible verse in context
           </h1>
+          <p className="page-standfirst">Never read a verse alone again.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch", marginBottom: "24px" }}>
             A verse pulled out of its context can be made to say almost anything. Enter any reference and this tool puts it back where it belongs: inside its paragraph, its book, its author's purpose, and the wider witness of Scripture. It will not tell you what a contested passage means. It will teach you the questions to ask.
           </p>

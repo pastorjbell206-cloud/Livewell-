@@ -881,8 +881,8 @@ export default function WholeLifeAssessment() {
   return (
     <Layout>
       <SEOMeta
-        title="The Whole-Life Assessment — The Annual Life Check-Up"
-        description="Thirty honest statements across five domains, taken once a year: the inner life, the body, the home, the work, the world. Scored in your browser, with a rule of life you keep week by week."
+        title="Whole-Life Self-Check: A Yearly Check-Up"
+        description="Thirty statements across five parts of life, taken once a year: the inner life, the body, the home, the work, the world. Scored in your browser."
         url="https://www.livewellbyjamesbell.co/life/assessment"
       />
 

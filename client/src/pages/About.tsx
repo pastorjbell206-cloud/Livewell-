@@ -87,8 +87,8 @@ export default function About() {
   return (
     <Layout>
       <SEOMeta
-        title="About James Bell — Pastor, Author, Writer"
-        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books on theology, church history, justice, and ordinary life.`}
+        title="About James Bell"
+        description="Who James Bell is and why he writes: his story in his own words, the church he pastors, and how to reach him."
         type="website"
         structuredData={{
           "@context": "https://schema.org",

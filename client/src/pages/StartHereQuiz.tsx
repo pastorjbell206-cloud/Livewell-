@@ -266,7 +266,7 @@ export default function StartHereQuiz() {
   return (
     <div style={{ background: "var(--paper)", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SEOMeta
-        title="Find Your Path | LiveWell by James Bell"
+        title="Where to Start on LiveWell"
         description="Find where to start. Tell us what is weighing on you and we point you toward the writing that meets you there."
         keywords="where to start, Christian writing, marriage, parenting, doubt, pastoral burnout, LiveWell, James Bell"
         url="https://www.livewellbyjamesbell.co/start"

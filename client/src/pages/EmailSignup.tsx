@@ -18,10 +18,10 @@ export default function EmailSignup() {
   return (
     <Layout>
       <SEOMeta
-        title="Subscribe — LiveWell by James Bell"
-        description="One serious essay a week, chosen for where you actually are — skeptic, doubter, pastor, or seeker. Plus self-paced reading paths through the whole library."
+        title="Subscribe"
+        description="One serious essay a week, chosen for where you actually are: skeptic, doubter, pastor, or seeker."
         url="https://www.livewellbyjamesbell.co/subscribe"
-        keywords="subscribe, newsletter, theology essays, reading paths, James Bell"
+        keywords="subscribe, newsletter, theology essays, James Bell"
       />
 
       {/* ── HERO ── */}
@@ -55,7 +55,7 @@ export default function EmailSignup() {
       <section style={{ background: "var(--bone)", padding: "72px 24px" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
           <SegmentedSignup
-            title="Subscribe — and tell us where you're standing"
+            title="Subscribe"
             description="Skeptic, doubter, pastor, or seeker. One essay a week either way; the first one is chosen for you."
           />
         </div>

@@ -844,7 +844,7 @@ export default function ConflictGuide() {
   return (
     <Layout>
       <SEOMeta
-        title="Conflict Resolution Guide -- A Five-Step Process for Couples and Families"
+        title="Resolve a Conflict: Five Steps for Couples"
         description="An interactive five-step guide to help couples and families work through conflict, from naming the issue to a concrete next step. Scripture-grounded."
         keywords="conflict resolution, marriage conflict, family conflict, communication, couples guide, relationship repair, Christian marriage"
         structuredData={{

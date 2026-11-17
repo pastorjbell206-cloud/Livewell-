@@ -20,8 +20,8 @@ export default function Books() {
   return (
     <Layout>
       <SEOMeta
-        title="Books by James Bell — Three Titles, Written by Hand"
-        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free, then get the ebook for $8.99."
+        title="Books by James Bell"
+        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe."
         url={`${SITE_URL}/books`}
       />
 
@@ -42,8 +42,9 @@ export default function Books() {
               marginBottom: "18px",
             }}
           >
-            Three books. Every word mine.
+            Books by James Bell
           </h1>
+          <p className="page-standfirst">Three books. Every word mine.</p>
           <p
             style={{
               fontFamily: "var(--B)",

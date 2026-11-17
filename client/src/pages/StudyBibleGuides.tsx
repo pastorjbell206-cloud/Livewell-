@@ -23,7 +23,7 @@ export default function StudyBibleGuides() {
       {!params && (
         <SEOMeta
           title="Guides to Reading the Bible"
-          description="Start here if you are new to the Bible: what it is, how the books were chosen, how we got the text, why translations differ, how to read each kind of writing, and reference tables for the ancient world."
+          description="Start here if you are new to the Bible: what it is, how the books were chosen, how we got the text, why translations differ, and how to read it."
           url="https://www.livewellbyjamesbell.co/study/bible/guides"
         />
       )}

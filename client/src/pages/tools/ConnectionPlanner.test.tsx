@@ -85,7 +85,7 @@ describe("ConnectionPlanner", () => {
 
   it("says on its first screen what it does, how long it takes, and that nothing leaves the device", () => {
     renderPlanner();
-    expect(screen.getByRole("heading", { level: 1, name: "The Connection Planner" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "A plan for when you feel alone" })).toBeInTheDocument();
     expect(screen.getByText(/about five minutes a week/)).toBeInTheDocument();
     expect(screen.getByText(/stays in this browser and is never sent anywhere/)).toBeInTheDocument();
     expect(screen.getByText(/thoughts of not wanting to be alive, don't wait/)).toBeInTheDocument();
@@ -93,7 +93,7 @@ describe("ConnectionPlanner", () => {
 
   it("puts 988 and 911 a tap away on its first screen", () => {
     renderPlanner();
-    const hero = screen.getByRole("heading", { level: 1, name: "The Connection Planner" }).closest("section")!;
+    const hero = screen.getByRole("heading", { level: 1, name: "A plan for when you feel alone" }).closest("section")!;
     expect(within(hero).getByRole("link", { name: "988" })).toHaveAttribute("href", "tel:988");
     expect(within(hero).getByRole("link", { name: "911" })).toHaveAttribute("href", "tel:911");
   });

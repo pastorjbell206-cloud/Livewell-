@@ -157,8 +157,8 @@ export default function HardIssuesSeries() {
   return (
     <Layout>
       <SEOMeta
-        title="The Hard Issues Series — Free Booklets for Church Leaders from PCN"
-        description="Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Free PDF and EPUB from the PCN."
+        title="Free Booklets on Elders and Church Government"
+        description="Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Free PDF and EPUB."
         image={`${SITE_URL}/books/${BOOKLETS[0].slug}.jpg`}
         url={`${SITE_URL}/resources/hard-issues-series`}
         structuredData={hardIssuesSchema}
@@ -179,8 +179,9 @@ export default function HardIssuesSeries() {
               maxWidth: "20ch",
             }}
           >
-            The Hard Issues Series
+            Free booklets for elders and church leaders
           </h1>
+          <p className="page-standfirst">The Hard Issues Series.</p>
           <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 28px", maxWidth: "52ch" }}>
             Ten booklets for the men who carry the weight of leading a church.
           </p>

@@ -586,7 +586,7 @@ export default function FinancialHealth() {
   return (
     <Layout>
       <SEOMeta
-        title="Financial Health Check: A Self-Check on Money and Faith"
+        title="Money and Faith Self-Check (12 Questions)"
         description="A 12-question self-check on money and faith: generosity, contentment, stewardship, and provision. Not a diagnosis or financial advice. Answers stay on your device."
         keywords="financial health check, financial health self-check, biblical stewardship, Christian finances, money and faith, generosity, contentment"
         structuredData={{

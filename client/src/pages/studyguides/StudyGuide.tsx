@@ -116,11 +116,11 @@ export default function StudyGuide() {
 
   return (
     <Layout>
-      {data && <SEOMeta title={`${data.title} — Leader's Toolkit`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/studyguides/${slug}`} />}
+      {data && <SEOMeta title={data.title} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/studyguides/${slug}`} />}
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guide · Leader's Toolkit</div>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study guide for groups</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That guide is not here yet." : "Loading the guide…")}</h1>
           {missing && (
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>

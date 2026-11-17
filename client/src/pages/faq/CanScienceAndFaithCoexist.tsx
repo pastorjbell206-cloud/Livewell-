@@ -82,7 +82,7 @@ export default function CanScienceAndFaithCoexist() {
   return (
     <Layout>
       <SEOMeta
-        title="Can Science and Faith Coexist? 8 Questions Answered"
+        title="Can Science and Faith Coexist?"
         description="Can science and religion coexist? Evolution, the Big Bang, miracles, the age of the earth, and famous believing scientists. Honest answers that refuse the false dilemma."
         keywords="can science and faith coexist, science vs religion, can Christians believe in evolution, Big Bang God, miracles science, age of earth Bible, scientists who believe in God"
         structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}

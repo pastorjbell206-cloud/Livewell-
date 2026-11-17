@@ -57,7 +57,7 @@ export default function SavedItems() {
   return (
     <Layout>
       <SEOMeta
-        title="Saved Items — LiveWell Tools"
+        title="Saved Items"
         description="Everything you saved across the LiveWell tools — verses, prayers, quotes, and wisdom entries — in one place."
       />
 

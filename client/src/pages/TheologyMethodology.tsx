@@ -50,7 +50,7 @@ export default function TheologyMethodology() {
   return (
     <Layout>
       <SEOMeta
-        title="How to Use This Section — Theological Depth"
+        title="How to Use the Doctrine Studies"
         description="Before the doctrines, the ground rules: the first, second, and third order triage framework, the author's interpretive lens, and how to disagree well."
         url="https://www.livewellbyjamesbell.co/theology/how-to-use"
       />

@@ -24,9 +24,13 @@ export default function PropheticWitnesses({ config }: { config: SectionConfig }
       .catch(() => {});
   }, [config.base]);
 
+  // One component, two pages: each is named for the people it holds.
+  const justice = config.base === "/justice";
+  const name = justice ? "Christians who fought injustice, and what it cost them" : "Christians who told the church the truth";
+
   return (
     <Layout>
-      <SEOMeta title={`The Witnesses — ${config.label}`} description="The people who told the church costly truth, or did justice at real cost, across history. Hopeful, concrete, and honest about their flaws." url={`https://www.livewellbyjamesbell.co${config.base}/witnesses`} />
+      <SEOMeta title={justice ? "Christians Who Fought Injustice, and What It Cost" : "Christians Who Told the Church the Truth"} description={justice ? "The people who did justice at real cost, across the church's history. Hopeful, concrete, and honest about their flaws." : "The people who told the church a costly truth, across its history. Hopeful, concrete, and honest about their flaws."} url={`https://www.livewellbyjamesbell.co${config.base}/witnesses`} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
@@ -34,8 +38,9 @@ export default function PropheticWitnesses({ config }: { config: SectionConfig }
             <Link href="/theology/history" style={{ color: "inherit" }}>Church history</Link> · The witnesses
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            It has been done before.
+            {name}
           </h1>
+          <p className="page-standfirst">It has been done before.</p>
           {data && (
             <div style={{ maxWidth: "64ch" }}>
               {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>)}

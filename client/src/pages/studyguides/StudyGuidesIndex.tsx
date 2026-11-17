@@ -68,7 +68,7 @@ export default function StudyGuidesIndex() {
   return (
     <Layout>
       <SEOMeta
-        title="Study Guides — Free Leader's Toolkits for Small Groups and Sunday School"
+        title="Free Bible Study Guides for Small Groups"
         description="Free, ready-to-run study guides on the questions the church tends to avoid. Each is a full leader's toolkit with handout, script, and printable PDFs."
         url="https://www.livewellbyjamesbell.co/studyguides"
       />
@@ -76,10 +76,11 @@ export default function StudyGuidesIndex() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guides · Leader's Toolkits</div>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study guides for groups</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            Teach the hard things well
+            Free Bible study guides for small groups
           </h1>
+          <p className="page-standfirst">Teach the hard things well.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
             Each guide is a full toolkit for the person at the front of the room: a leader's guide with the answer behind every question, a participant handout, a facilitator script, and printable PDFs. Run a class on Sunday with no prep. Every guide runs as four, five, or eight weeks, for a group or for one person reading alone. Every guide is free, and the PDFs download right here.
           </p>

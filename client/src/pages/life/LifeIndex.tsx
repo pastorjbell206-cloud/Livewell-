@@ -56,17 +56,18 @@ export default function LifeIndex() {
   return (
     <Layout>
       <SEOMeta
-        title="Integrated Life — Living the Whole of Life Well"
-        description="One undivided life before God: the inner life, the body, the home, work and money, and the world. Scripture, tradition, and tested knowledge for the Tuesday."
+        title="Christian Living: Home, Work, Money, Body, Soul"
+        description="One undivided life before God: the inner life, the body, the home, work and money, and the world. Scripture, tradition, and tested knowledge."
         url="https://www.livewellbyjamesbell.co/life"
       />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Integrated Life · The capstone</div>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Christian living</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            One life, offered whole
+            Following Jesus in every part of life
           </h1>
+          <p className="page-standfirst">One life, offered whole.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch", marginBottom: "12px" }}>
             The modern person lives in boxes. Faith in one, work in another, the body in another, money in a fourth that nobody opens in church. The gospel claims all of it. To live well is not to balance the boxes. It is to dissolve them.
           </p>

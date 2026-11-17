@@ -32,14 +32,15 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
 
   return (
     <Layout>
-      <SEOMeta title={`The Consistency Check — ${config.label}`} description="A searching self-examination of whether you defend truth selectively, one standard for your side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
+      <SEOMeta title="Do You Hold Your Own Side to the Same Standard?" description="A self-check on whether you defend truth selectively, with one standard for your side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · The consistency check
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>One standard, or two?</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>Do you hold your own side to the same standard?</h1>
+          <p className="page-standfirst">One standard, or two?</p>
           {data && (
             <div style={{ maxWidth: "64ch" }}>
               {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>)}

@@ -114,7 +114,7 @@ export default function TestTheCase() {
   return (
     <Layout>
       <SEOMeta
-        title="Test the Case: Push Back at Every Step"
+        title="Did the Resurrection Happen? Test the Case"
         description="An interactive, honest walkthrough of the case for the resurrection. Raise the objection you actually hold at each move and get the real answer, including what it does not prove. No altar call."
         url="https://www.livewellbyjamesbell.co/tools/test-the-case"
       />

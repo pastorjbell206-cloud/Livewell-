@@ -449,7 +449,7 @@ export default function WisdomFinder() {
   return (
     <Layout>
       <SEOMeta
-        title="Wisdom Finder — Tell Us What You Are Facing, and What the Bible Says"
+        title="What Does the Bible Say About My Situation?"
         description="Type in what you are struggling with and find the Bible's wisdom for it: the verses, the world they were written in, and the practical application for now."
         url="https://www.livewellbyjamesbell.co/tools/wisdom-finder"
       />
@@ -458,7 +458,7 @@ export default function WisdomFinder() {
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Wisdom · Finder</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            What are you facing
+            What does the Bible say about what I am facing?
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "22px" }}>
             Tell us what you are struggling with, in your own words. We will find what the Bible says about it: the verses, the world they were written in, how the church has understood them across the centuries, and what they mean for your life now.

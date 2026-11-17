@@ -1339,7 +1339,7 @@ export default function BibleReference() {
   return (
     <Layout>
       <SEOMeta
-        title="What the Bible Actually Says About… -- Topical Scripture Reference"
+        title="Misread Bible Topics: What the Text Says"
         description="A comprehensive topical reference covering 15 life topics with full biblical data, interpretive range, and practical application. Not proof-texts. Context, common misuses, and what the passages actually teach."
         keywords="what the Bible says about money, Bible and suffering, Bible marriage, Bible anxiety, Bible forgiveness, topical Bible study, Scripture in context"
         structuredData={{

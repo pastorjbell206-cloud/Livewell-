@@ -236,7 +236,7 @@ export default function PrayerGenerator() {
   return (
     <Layout>
       <SEOMeta
-        title="Prayer Generator — Guided Prayers for Every Occasion"
+        title="Written Prayers for Morning, Evening, Hard Days"
         description="Guided prayers for morning, evening, strength, guidance, gratitude, suffering, and pastoral ministry, each one honest enough to pray in your own words."
         keywords="prayer generator, morning prayer, evening prayer, prayer for strength, guided prayer, Christian prayer"
         structuredData={{
@@ -254,7 +254,7 @@ export default function PrayerGenerator() {
         <div className="wrap" style={{ maxWidth: "700px" }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>FREE TOOL</div>
           <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
-            Prayer <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Generator</em>
+            Prayers for when you have no words
           </h1>
           <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
             Select a prayer type and receive a guided prayer you can personalize and make your own.

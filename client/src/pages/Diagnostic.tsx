@@ -591,7 +591,7 @@ export default function Diagnostic() {
   return (
     <Layout>
       <SEOMeta
-        title="Where Are You With God Right Now? An Honest Self-Check"
+        title="Where Are You With God? A Short Self-Check"
         description="Eight questions in four areas, for reflection, not a test: how you treat people, handle doubt, work and rest, and pray. Your answers stay on your device."
         url="https://www.livewellbyjamesbell.co/diagnostic"
       />

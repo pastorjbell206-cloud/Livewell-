@@ -80,7 +80,7 @@ export default function HowTos() {
   return (
     <Layout>
       <SEOMeta
-        title="How-To Guides — Practical, Scripture-Grounded Help for Real Life"
+        title="How-To Guides: Marriage, Parenting, Prayer, Money"
         description="Short, practical how-to guides for marriage, parenting, money, the inner life, hard seasons, and making disciples. Plain help, grounded in Scripture."
         url="https://www.livewellbyjamesbell.co/how-tos"
       />
@@ -89,8 +89,9 @@ export default function HowTos() {
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>How-to guides</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
-            Practical help for real life
+            How-to guides for everyday Christian life
           </h1>
+          <p className="page-standfirst">Practical help for real life.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
             Short, plain guides for the things you actually have to do: start family worship, fight fair in marriage, get out of debt, share your faith without being weird, make a disciple at your table. Grounded in Scripture, written for the long obedience of an ordinary week.
           </p>

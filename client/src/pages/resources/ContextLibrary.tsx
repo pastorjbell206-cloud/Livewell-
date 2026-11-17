@@ -25,6 +25,15 @@ const GROUP_ORDER = [
   "Honor, Shame, and Culture",
 ];
 
+/** The scholar's name for each world, behind a plain one. The data keeps the scholar's name. */
+const GROUP_LABEL: Record<string, string> = {
+  "Ancient Near East": "The world of the Old Testament (Ancient Near East)",
+  "Second Temple Judaism": "Jewish life in Jesus's day (Second Temple Judaism)",
+  "The Greco-Roman World": "The Roman world of the New Testament",
+  "Honor, Shame, and Culture": "Honor and shame in the Bible's world",
+};
+const groupLabel = (g: string) => GROUP_LABEL[g] ?? g;
+
 export default function ContextLibrary() {
   const [items, setItems] = useState<Entry[]>([]);
   const [q, setQ] = useState("");
@@ -63,17 +72,18 @@ export default function ContextLibrary() {
   return (
     <Layout>
       <SEOMeta
-        title="Reading Scripture in Context — Biblical Background Guides"
-        description="Guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics. Free."
+        title="Bible Background: The World Behind the Bible"
+        description="Free guides to the world the Bible was written in: the Old Testament's neighbors, Jewish life in Jesus's day, the Roman world, and honor and shame."
         url="https://www.livewellbyjamesbell.co/resources/context"
       />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources · The signature library</div>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Bible background</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            Reading Scripture in Context
+            The world the Bible was written in
           </h1>
+          <p className="page-standfirst">Reading Scripture in context.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch", marginBottom: "12px" }}>
             The Bible was not written in English, in America, or in this century. It was written by Middle Eastern authors, to people living under empires they did not control, in cultures built on honor, kinship, and covenant. Most of what we misread, we misread because we never noticed the distance.
           </p>
@@ -102,7 +112,7 @@ export default function ContextLibrary() {
               </button>
               {groups.map((g) => (
                 <button key={g} onClick={() => setGroup(group === g ? null : g)} aria-pressed={group === g} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === g ? "var(--charcoal)" : "transparent", color: group === g ? "var(--bone)" : "var(--ink)" }}>
-                  {g}
+                  {groupLabel(g)}
                 </button>
               ))}
             </div>
@@ -119,7 +129,7 @@ export default function ContextLibrary() {
           ) : (
             grouped.map(([g, entries]) => (
               <div key={g} style={{ marginBottom: "var(--s-5)" }}>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>{g}</h2>
+                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>{groupLabel(g)}</h2>
                 <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
                   {entries.map((e) => (

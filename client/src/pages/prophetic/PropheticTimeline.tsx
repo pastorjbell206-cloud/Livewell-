@@ -50,19 +50,20 @@ export default function PropheticTimeline() {
   return (
     <Layout>
       <SEOMeta
-        title="The Injustice Timeline — An Honest Reckoning"
-        description="A long, honest reckoning with the injustices of history: those done in the name of Christ, of empire, of markets, of forced utopia. No system is the kingdom."
+        title="Timeline of Injustice, Inside the Church and Out"
+        description="A long reckoning with the injustices of history: those done in the name of Christ, of empire, of markets, of forced utopia. No system is the kingdom."
         url="https://www.livewellbyjamesbell.co/justice/timeline"
       />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology/history" style={{ color: "inherit" }}>Church history</Link> · The injustice timeline
+            <Link href="/theology/history" style={{ color: "inherit" }}>Church history</Link> · Timeline of injustice
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.03, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "18ch" }}>
-            No one's hands are clean.
+            A timeline of injustice, in the church and outside it
           </h1>
+          <p className="page-standfirst">No one's hands are clean.</p>
           {data && (
             <div style={{ maxWidth: "64ch" }}>
               {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>)}

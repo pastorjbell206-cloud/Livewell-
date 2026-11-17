@@ -122,7 +122,7 @@ export default function RoadMap() {
   return (
     <Layout>
       <SEOMeta
-        title="The Roadmap — 48 books"
+        title="Books in Progress"
         description="What James Bell has in print, what is being written, and what is planned next, on one page."
         url="https://www.livewellbyjamesbell.co/roadmap"
       />

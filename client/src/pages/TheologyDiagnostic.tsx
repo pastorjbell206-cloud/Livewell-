@@ -72,7 +72,7 @@ export default function TheologyDiagnostic() {
   return (
     <Layout>
       <SEOMeta
-        title="Which View Am I? A Theology Diagnostic"
+        title="Which Christian View Do You Lean Toward?"
         description="Answer a few plain questions and see which position you lean toward on a contested doctrine. A starting point for understanding yourself, never a verdict."
         url="https://www.livewellbyjamesbell.co/theology/which-view"
       />

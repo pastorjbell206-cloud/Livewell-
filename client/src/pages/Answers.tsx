@@ -37,8 +37,8 @@ export default function Answers() {
   return (
     <Layout>
       <SEOMeta
-        title="Honest Answers to Hard Questions About Christianity"
-        description="Did the resurrection happen? Why trust the Bible? If God is good, why suffering? Straight answers from a pastor who was an atheist first, with the essay or book that goes further where one is on the site."
+        title="Hard Questions About Christianity, Answered"
+        description="Did the resurrection happen? Can you trust the Bible? Why does God allow suffering? Straight answers from a pastor who was an atheist first."
         url="https://www.livewellbyjamesbell.co/answers"
         structuredData={faqSchema}
       />
@@ -48,8 +48,9 @@ export default function Answers() {
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Answers</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "22ch" }}>
-            The questions people actually ask.
+            Honest answers to hard questions about Christianity
           </h1>
+          <p className="page-standfirst">The questions people actually ask.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
             Straight answers first, two minutes each. Where the full essay is on
             the site, or a book takes the question further, it is linked beneath

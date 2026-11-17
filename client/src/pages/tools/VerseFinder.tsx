@@ -209,7 +209,7 @@ export default function VerseFinder() {
   return (
     <Layout>
       <SEOMeta
-        title="Bible Verse Finder — Find Scripture for Any Season"
+        title="Bible Verse Finder: Verses by Topic"
         description="Find Bible verses by topic. Search for Scripture on anxiety, hope, grief, courage, forgiveness, marriage, wisdom, and more."
         keywords="Bible verse finder, scripture by topic, Bible verses for anxiety, Bible verses for hope, topical Bible search"
         structuredData={{

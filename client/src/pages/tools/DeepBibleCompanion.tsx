@@ -2088,7 +2088,7 @@ export default function DeepBibleCompanion() {
   return (
     <Layout>
       <SEOMeta
-        title="Deep Bible Study Companion — Seminary Depth, Kitchen-Table Language"
+        title="Study a Bible Passage in Six Layers"
         description="Study any passage with 6 layers: text, historical context, literary structure, scholarly views, application, and resources. Serious depth in plain language."
         structuredData={{ "@context": "https://schema.org", "@type": "WebApplication", name: "Deep Bible Study Companion", applicationCategory: "ReligiousApp", offers: { "@type": "Offer", price: "0" } }}
       />
@@ -2126,7 +2126,7 @@ export default function DeepBibleCompanion() {
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <div style={{ fontSize: "0.75rem", fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--mustard, #D4A017)", fontFamily: "var(--U, Inter, sans-serif)", marginBottom: "1.5rem" }}>FLAGSHIP TOOL</div>
           <h1 style={{ fontFamily: "var(--F, 'Cormorant Garamond', serif)", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: "1rem" }}>
-            Deep Bible Study Companion
+            Book-by-book Bible study, in depth
           </h1>
           <p style={{ fontSize: "1rem", lineHeight: 1.7, color: "var(--charcoal-fg)", opacity: 0.6, maxWidth: "560px" }}>
             Seminary-level depth in kitchen-table language. Six layers of analysis for every passage, built so an ordinary reader with an open Bible can follow the argument all the way down.

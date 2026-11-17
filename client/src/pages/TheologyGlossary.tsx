@@ -55,8 +55,8 @@ export default function TheologyGlossary() {
   return (
     <Layout>
       <SEOMeta
-        title="Theology Glossary — Every Term, Defined Plainly"
-        description="A searchable glossary of theological terms for the new believer, from atonement to the Trinity, each defined warmly and linked to the doctrine it belongs to."
+        title="Theology Glossary: Christian Terms in Plain Words"
+        description="A searchable glossary of theological terms, from atonement to the Trinity, each defined in plain words and linked to the doctrine it belongs to."
         url="https://www.livewellbyjamesbell.co/theology/glossary"
       />
 

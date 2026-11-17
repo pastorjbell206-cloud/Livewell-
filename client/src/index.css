@@ -1111,3 +1111,17 @@ h1, h2, h3 { text-wrap: balance; }
   }
   .persistent-help-tab { display: none !important; }
 }
+
+/* The line under a page's plain name. The headline says what the page is; the
+   line James wrote for it sits directly beneath as the standfirst. It takes
+   the section's own text color, so it reads on bone and on charcoal alike. */
+.page-standfirst {
+  font-family: var(--F);
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: inherit;
+  max-width: 34ch;
+  margin: 0 0 16px;
+}

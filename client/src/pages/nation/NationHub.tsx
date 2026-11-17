@@ -39,14 +39,15 @@ export default function NationHub() {
   const itemSlug = (href: string) => href.split("/").filter(Boolean).pop() ?? "";
   return (
     <Layout>
-      <SEOMeta title="Christ and the Nation — The Bible, America, and Power" description="Was America founded as a Christian nation? How close is each party to the Bible? What would a biblical government mean? An even-handed look at the body politic." url="https://www.livewellbyjamesbell.co/nation" />
+      <SEOMeta title="The Bible and American Politics" description="Was America founded as a Christian nation? How close is each party to the Bible? What would a biblical government mean? An even-handed look." url="https://www.livewellbyjamesbell.co/nation" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Christ and the Nation</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 400, lineHeight: 1.02, letterSpacing: "-0.03em", marginBottom: "20px", maxWidth: "18ch" }}>
-            The Bible is not a party.
+            The Bible and American politics
           </h1>
+          <p className="page-standfirst">The Bible is not a party.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "19px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
             America is not the new Israel. Israel's theocracy was a one-time thing that pointed to Christ and cannot be rebuilt, and a biblical government coerced onto a free people would itself betray the gospel. And yet Scripture's vision still judges every party and leaves both the left and the right homeless. What follows tries to look at the Bible, the nation, and power with the same instrument turned on every side, the writer's own included.
           </p>

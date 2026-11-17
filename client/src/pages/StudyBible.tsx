@@ -27,6 +27,7 @@ import {
   chapterHref,
   editionSplit,
   expandGrammar,
+  chapterBookName,
   fetchBooks,
   fetchChapter,
   fetchMorph,
@@ -98,8 +99,8 @@ export default function StudyBible() {
     <Layout>
       {!slug && (
         <SEOMeta
-          title="The Study Bible: Learn the Whole Story, With Hebrew and Greek"
-          description="Learn the whole Bible: its one story in eleven acts, an introduction to every book, study notes on all 1,189 chapters with their history and culture, the doctrines they teach, and the Hebrew and Greek beneath every word."
+          title="Free Online Study Bible: Notes on Every Chapter"
+          description="A free online Study Bible: the story in eleven parts, an introduction to every book, notes on all 1,189 chapters, and the Hebrew and Greek."
           url="https://www.livewellbyjamesbell.co/study/bible"
         />
       )}
@@ -159,8 +160,11 @@ function BookIndex({ books }: { books: BibleBook[] }) {
     <>
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>The Study Bible</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 16px", textWrap: "balance" }}>Learn the whole Bible</h1>
+          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
+            <Link href="/study" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>Study</Link>
+          </div>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.3rem, 5.4vw, 3.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 16px", textWrap: "balance" }}>The Study Bible</h1>
+          <p className="page-standfirst">Learn the whole Bible.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "1.12rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", margin: 0 }}>
             Whether you have never opened it or have read it for years. Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and where it sits in the one story that runs from Genesis to Revelation. Underneath every English word are the Hebrew and Greek it translates.
           </p>
@@ -505,8 +509,8 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   return (
     <>
       <SEOMeta
-        title={note ? `${book.name} ${chapter} Study Notes \u2013 ${note.title}` : `${book.name} ${chapter} Study Notes, Hebrew and Greek`}
-        description={note?.summary ?? `${book.name} ${chapter} with study notes, cross-references, and the ${lang === "H" ? "Hebrew" : "Greek"} beneath every word.`}
+        title={note ? `${chapterBookName(book)} ${chapter} Study Notes \u2013 ${note.title}` : `${chapterBookName(book)} ${chapter} Study Notes, Hebrew and Greek`}
+        description={note?.summary ?? `${chapterBookName(book)} ${chapter} with study notes, cross-references, and the ${lang === "H" ? "Hebrew" : "Greek"} beneath every word.`}
         url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}/${chapter}`}
         type="article"
       />
@@ -517,7 +521,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
               <Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link>
             </div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.5vw, 2.8rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: 0 }}>
-              <Link href={`/study/bible/${book.slug}`} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{book.name}</Link> {chapter}
+              <Link href={`/study/bible/${book.slug}`} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{chapterBookName(book)}</Link> {chapter}
             </h1>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "10px" }}>
@@ -546,7 +550,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
             {failed && !data ? (
               <LoadFailed what={`${book.name} ${chapter}`} onRetry={() => { setFailedKey(null); setNonce((n) => n + 1); }} backHref={`/study/bible/${book.slug}`} backLabel={`All of ${book.name}`} />
             ) : !data ? (
-              <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {book.name} {chapter}…</p>
+              <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
             ) : mode === "reading" ? (
               <ReadingText data={data} sel={sel} onVerse={onVerse} />
             ) : (
@@ -772,7 +776,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
   }, [book.slug, chapter]);
 
   const script = lang === "H" ? HEB : GRK;
-  const refLabel = `${book.name} ${chapter}:${verse.v}`;
+  const refLabel = `${chapterBookName(book)} ${chapter}:${verse.v}`;
   const xrefs = useMemo(() => (verse.x ?? []).map((r) => parseRef(r, books)).filter(Boolean) as NonNullable<ReturnType<typeof parseRef>>[], [verse.x, books]);
 
   return (

@@ -36,7 +36,7 @@ export default function TheologyCompare() {
   return (
     <Layout>
       <SEOMeta
-        title="Compare the Views — Doctrine Comparison Table"
+        title="Compare Christian Views on Disputed Doctrines"
         description="Pick any contested doctrine and see every position side by side: the one-line summary, the case each makes, its advocates, and its key texts."
         url="https://www.livewellbyjamesbell.co/theology/compare"
       />
@@ -47,8 +47,9 @@ export default function TheologyCompare() {
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Compare the views
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            See the positions side by side.
+            Compare Christian views, side by side
           </h1>
+          <p className="page-standfirst">See the positions side by side.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch", marginBottom: "20px" }}>
             Pick a doctrine and lay its views in a row. The same fair treatment as the full doctrine pages, arranged so you can scan the differences at a glance.
           </p>

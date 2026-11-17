@@ -9,21 +9,21 @@ import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 
 export const TOOLS = [
   {
-    title: "Test the Case",
+    title: "Test the Case for Christianity",
     description: "The case for the resurrection, worked one move at a time. At every step you can push back with the objection you actually hold and get the honest answer, including what it does not prove. Argued with, not preached at. No altar call.",
     href: "/tools/test-the-case",
     icon: Shield,
     color: "var(--mustard)",
   },
   {
-    title: "Which Lens Has You?",
+    title: "What Shapes the Way You Read the Bible? A Self-Check",
     description: "Thirteen honest choices. Five lenses that do a reader's thinking before the reader does: the flag, the cause, the highlighter, the rearview, the marketplace. It ends not in a score but in a name for the lens it found and the reading that takes it apart.",
     href: "/tools/which-lens",
     icon: Search,
     color: "var(--mustard)",
   },
   {
-    title: "Deep Bible Study Companion",
+    title: "Book-by-Book Bible Study: 20 Books in Depth",
     description: "Seminary-level depth in kitchen-table language. 20 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
     href: "/tools/deep-bible",
     icon: Search,
@@ -51,28 +51,28 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
     {
-    title: "Wisdom for All of Life",
+    title: "Proverbs and Ecclesiastes: A Guide to Biblical Wisdom",
     description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs.",
     href: "/wisdom",
     icon: BookMarked,
     color: "var(--goldlt)",
   },
   {
-    title: "Wisdom Finder",
+    title: "What Does the Bible Say About What I Am Facing?",
     description: "Type in what you are struggling with, and find what the Bible says about it: the verses, the cultural world they were written in, how the church has understood them across history, and the practical application to your life now.",
     href: "/tools/wisdom-finder",
     icon: Search,
     color: "var(--ink2)",
   },
   {
-    title: "Rule of Life Builder",
+    title: "Build a Weekly Rhythm of Prayer and Rest (a Rule of Life)",
     description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can actually keep on an ordinary week. Your rule stays on this device.",
     href: "/tools/rule-of-life",
     icon: Target,
     color: "var(--goldlt)",
   },
   {
-    title: "What the Bible Says About",
+    title: "What the Bible Says About Money, Anger, Work and More",
     description: "A topical guide to Scripture for the arenas of ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart.",
     href: "/tools/bible-on",
     icon: BookOpen,
@@ -86,14 +86,14 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
-    title: "Reading Scripture in Context",
+    title: "Bible Background: The World the Bible Was Written In",
     description: "Background guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics.",
     href: "/resources/context",
     icon: BookOpen,
     color: "var(--ink)",
   },
   {
-    title: "Passage Context Tool",
+    title: "Read Any Bible Verse in Context",
     description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. The passage is the World English Bible.",
     href: "/theology/passage",
     icon: BookMarked,
@@ -128,14 +128,14 @@ export const TOOLS = [
     color: "var(--ink)",
   },
   {
-    title: "The Connection Planner",
+    title: "A Plan for When You Feel Alone",
     description: "For when you feel alone: name up to five people, choose one small step toward each this week, keep one place where the same faces gather, and check off what happened. Private to your browser.",
     href: "/tools/connection-planner",
     icon: HeartHandshake,
     color: "var(--goldlt)",
   },
   {
-    title: "Prayer Generator",
+    title: "Prayers for When You Have No Words",
     description: "Words for when you do not have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
     href: "/tools/prayer-generator",
     icon: Heart,
@@ -149,7 +149,7 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
-    title: "Bible Study Guide",
+    title: "How to Study a Book of the Bible: 12 Books",
     description: "Study any book of the Bible with theological depth. Key themes, study questions, and reading strategies for 12 essential books.",
     href: "/tools/bible-study",
     icon: Search,
@@ -163,7 +163,7 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
   {
-    title: "Financial Health Check",
+    title: "Financial Health Self-Check",
     description: "Twelve questions across generosity, contentment, stewardship, and family provision — and what your answers say about who you believe owns what you have.",
     href: "/tools/financial-health",
     icon: DollarSign,
@@ -198,7 +198,7 @@ export const TOOLS = [
     color: "var(--ink)",
   },
     {
-    title: "Scripture Memory System",
+    title: "Memorize Scripture: 40 Key Verses",
     description: "Memorize 40 key verses across 8 categories. First-letter mode, fill-in-the-blank, and full recall practice with progress tracking.",
     href: "/tools/scripture-memory",
     icon: BookMarked,
@@ -212,21 +212,21 @@ export const TOOLS = [
     color: "var(--goldlt)",
   },
     {
-    title: "Life Audit",
+    title: "A Quick Check on Eight Areas of Life",
     description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. It names what is strong and what is slipping.",
     href: "/tools/life-audit",
     icon: Target,
     color: "var(--goldlt)",
   },
     {
-    title: "Misused Verses — What the Bible Actually Says",
+    title: "Misused Bible Verses: What They Actually Mean",
     description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The deepest verse tool on the site.",
     href: "/tools/bible-says",
     icon: BookOpen,
     color: "var(--ink)",
   },
   {
-    title: "Quote Library",
+    title: "Quotes From the Essays and Books",
     description: "Four hundred lines and counting from the essays and books, filed by conviction, comfort, challenge, history, and wisdom — each tied to the piece it came from. Copy one, share one, follow one home.",
     href: "/tools/quotes",
     icon: MessageCircle,
@@ -240,21 +240,21 @@ export const TOOLS = [
     color: "var(--ink)",
   },
   {
-    title: "The Consistency Check",
+    title: "Do You Hold Both Sides to the Same Standard? A Self-Check",
     description: "A searching self-examination of whether you defend truth selectively — one standard for your own side, another for your opponents. A mirror, not a weapon, and explicitly not for scoring anyone else.",
     href: "/disruption/consistency",
     icon: Shield,
     color: "var(--ink)",
   },
   {
-    title: "The Party Scorecard",
+    title: "How Close Is Each Party to the Bible?",
     description: "How close is each party to the Bible, theme by theme? An honest tally that lands where the evidence puts it, not where either side would like. The real test is whether you can name where your own side falls short.",
     href: "/nation/scorecard",
     icon: Target,
     color: "var(--ink2)",
   },
   {
-    title: "If We Had a Biblical Government",
+    title: "What Would a Biblical Government Look Like?",
     description: "The Year of Jubilee, gleaning, the warning against kings — what Scripture's own economic principles might look like as policy, and why both parties would hate the result.",
     href: "/nation/policy",
     icon: Church,
@@ -264,13 +264,16 @@ export const TOOLS = [
 
 /** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
 export const TOOL_GROUPS = [
-  { title: "Start with an honest reading", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
+  { title: "Self-checks", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
   { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
-  { title: "Wisdom for a real situation", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/connection-planner","/tools/prayer-generator"].includes(t.href)) },
+  { title: "Help for a decision or a hard day", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/connection-planner","/tools/prayer-generator"].includes(t.href)) },
   { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parent-teen-conversation","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
-  { title: "The church and the public square", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
+  { title: "Faith and politics", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
 ];
 
+
+/** Tiles that open something to read say "Read"; the rest are tools you work, and say "Start". */
+const READING_PAGES = new Set(["/wisdom", "/resources/context", "/tools/quotes", "/tools/glossary", "/tools/bible-study", "/tools/deep-bible", "/tools/bible-says", "/tools/bible-on", "/tools/parenting-guide", "/tools/parenting-verses", "/tools/proverbs-31"]);
 
 const slug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
@@ -306,7 +309,7 @@ function ToolCard({ tool }: { tool: (typeof TOOLS)[number] }) {
         {tool.description}
       </p>
       <div style={{ marginTop: "auto", paddingTop: "14px", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", fontFamily: "var(--U)" }}>
-        Open the tool <span aria-hidden>→</span>
+        {READING_PAGES.has(tool.href) ? "Read" : "Start"} <span aria-hidden>→</span>
       </div>
     </Link>
   );
@@ -324,13 +327,13 @@ export default function ToolsHub() {
   return (
     <Layout>
       <SEOMeta
-        title="Free Christian Tools for Families"
-        description="Free tools for families and anyone practicing the faith: Bible verse finder, prayer generator, and family devotion builder, built for the week you are actually living."
+        title="Free Bible Study, Prayer, and Family Tools"
+        description="Free tools for Bible study, prayer, marriage, and family life: a verse finder, written prayers, a family devotion builder, and self-checks."
         keywords="Bible verse finder, prayer generator, family devotions, Christian tools, marriage tools, parenting tools"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Free Christian Tools for Families",
+          name: "Free Bible Study, Prayer, and Family Tools",
           description: "Free tools for families and anyone practicing the faith.",
           url: "https://www.livewellbyjamesbell.co/tools",
         }}
@@ -349,8 +352,9 @@ export default function ToolsHub() {
             FREE TOOLS
           </div>
           <h1 style={{ fontSize: "clamp(34px, 5vw, 52px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
-            Tools for the Life You Are <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em> Living
+            Free tools for Bible study, prayer, and family life
           </h1>
+          <p className="page-standfirst" style={{ marginInline: "auto" }}>Tools for the life you are actually living.</p>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", fontFamily: "var(--B)", margin: "0 0 var(--s-4)" }}>
             Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday. Every one is free and works on your phone, and the journals and planners keep what you write on your own device.
           </p>
