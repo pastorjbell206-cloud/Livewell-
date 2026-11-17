@@ -72,7 +72,7 @@ export default function HowToArticle() {
                 {article.title}
               </h1>
               <div style={{ width: "44px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-4)" }} />
-              <div className="prose" style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
+              <div className="prose" style={{ fontFamily: "var(--font-reading)", fontSize: "var(--fs-read)", lineHeight: "var(--lh-read)", color: "var(--ink)" }}>
                 <Markdown>{article.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Markdown>
               </div>
 
