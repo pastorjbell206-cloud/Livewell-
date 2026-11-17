@@ -8,7 +8,7 @@ The audit's rule is that a title says what the piece is about in the words a rea
 
 1. **Essay shelf** (`client/src/lib/shelf.json`). The three broken titles are fixed and the other 24 waiting essays now carry the titles the writers chose in October (docs/work/NOTES.md, "Titles the writers chose"). `RetiredEssayNotice` prints the shelf title as its heading and tab title, so the notice on each old address now reads properly. Live essays were not touched (see Skipped).
 2. **Church history** (`client/public/history/essays/*.json`). Fourteen era essays have a plain title. His first title is kept in a new optional `standfirst` field and printed in italic under the headline on the essay page (`client/src/pages/history/HistoryEssay.tsx`). The summary stays in `subtitle` where it was. Two timeline entries in `client/public/justice/timeline.json` were retitled. Where the two auditors differed I took the wording a stranger could follow without knowing the term (B's list), which also avoids two essays both called "The Middle Ages".
-3. **Study guides** (16), **eight-week plans** (10), **family devotions** (36 titles recapitalized, one question mark), **family reading plans** (2), **one Bible reading guide, three context guides, one creed, three doctrine pages, two booklets**, **one how-to**, **ten group guides**.
+3. **Study guides** (16), **eight-week plans** (10), **family devotions** (31 titles recapitalized, one given its question mark), **family reading plans** (2), **one Bible reading guide, three context guides, one creed, three doctrine pages, two booklets**, **one how-to**, **ten group guides**.
 4. Link labels that quote a changed title word for word were updated to match (needs pages, topic pages, three tool pages, the Start Here quiz, two landing pages, social-quotes). Labels that paraphrase were left alone.
 5. Two things seen in the browser and fixed: the church history essay hero used `--bone` for its text on a fixed-dark band, so the headline vanished in dark mode (now `--charcoal-fg`, the token made for that); and the booklet card gave the text about 95 pixels on a phone (the cover column now takes at most 32 percent).
 
@@ -116,7 +116,7 @@ The old title is also in each file's `standfirst` field. To reverse one, put it 
 
 ### Family devotions (32) — `client/public/family-devotions.json` and `family-devotions-2.json`, then `node scripts/build-family-year.mjs` and `node scripts/build-family-index.mjs`
 
-The other 36 weekly titles had no small word to lower and are unchanged.
+The other 40 weekly titles had no small word to lower and are unchanged.
 
 | Where | Old title | New title |
 |---|---|---|
