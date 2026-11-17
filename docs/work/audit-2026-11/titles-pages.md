@@ -20,7 +20,7 @@ James, this report reads every label a visitor sees before choosing where to go:
 
 The best labels on this site are as good as any I know: the Find Help pages are named in the words people say out loud ("I can't stop worrying", "My marriage is falling apart"), the Honest Answers are real questions, and the twenty pending essays are almost all titled as the question a person types ("Why Does God Allow Suffering?", "Who Decided What Books Are in the Bible?"). PR #540 puts Family and Topics in the menu, which is what your goals ask for.
 
-What holds the score down is everything around those. The home page's title names none of what the site offers. Nearly nine in ten indexed pages have a title too long to show in full, mostly because 25 characters of every title are spent on "| LiveWell by James Bell". About thirty hub and tool pages carry a slogan where a name should be ("An honest measure, before anything else", "A church without memory repeats old errors", "The deeper room"). The same thing goes by three or four names depending on which page you are on. And several descriptions still state your title, your years and a book count, which you asked the site never to do.
+What holds the score down is everything around those. The home page's title names none of what the site offers. Nearly nine in ten indexed pages have a title too long to show in full, mostly because 25 characters of every title are spent on "| LiveWell by James Bell". About twenty hub and tool pages carry a slogan where a name should be ("An honest measure, before anything else", "A church without memory repeats old errors", "The deeper room"). The same thing goes by three or four names depending on which page you are on. And several descriptions still state your title, your years and a book count, which you asked the site never to do.
 
 Almost none of this is fixed by the pending PRs. PR #540 changes the menu and adds two pages; it changes the title or headline of no existing page.
 
@@ -67,13 +67,14 @@ You asked that the site never state your title, your years in ministry, or a boo
 - `/roadmap` title: "The Roadmap — 48 books". The page opens: "Forty-eight books is the plan. Twenty-one are already in print." It is in the sitemap.
 - `/membership` (in the sitemap): "Curated reading guides for the 21 books".
 - `/books` says "Three books. Every word mine." A visitor who reads both sees 3, 21 and 48.
+- `/about` itself, in the lines under your name at the top of the page (`client/src/pages/About.tsx` lines 130 to 134): "Lead Pastor, First Baptist Church of Fenton", "Author of 21 books". Its browser-tab title is "About James Bell — Pastor, Author, Writer". These are labels, not your own sentences, so they fall under the same rule. (Added in verification.)
 - `client/public/llms.txt` line 9, read by AI answer engines: "James Bell: Lead Pastor of First Baptist Church of".
 
 **Fix:** `/about` description: **"Who James Bell is and why he writes: his story in his own words, the church he pastors, the Pastors Connection Network, and how to reach him."** (143). Fallback: **"Study the Bible, church history, family devotions, and honest answers to hard questions, by James Bell."** Retitle `/roadmap` "Books in Progress" and take it and `/membership` out of the sitemap until you decide what they say. The About page body itself ("I have pastored ... for twelve years") is your own sentence and I have left it for you to rule on.
 
 - **Size:** S. **Status:** STILL-OPEN-AFTER-PENDING. **Needs James.**
 
-### 4. About thirty pages have a slogan where the name should be
+### 4. About twenty pages have a slogan where the name should be
 
 A headline is the first thing a visitor reads to check "am I in the right place?" On these pages it does not say. Each line gives the page, the headline today, and the replacement. The clever line can stay as the sentence under the headline; it should not be the headline.
 
@@ -111,7 +112,7 @@ Each of these is a word your congregation would not use at the door. Replacement
 | Word or phrase | Where a visitor meets it | Plain replacement |
 |---|---|---|
 | "the table", "a Discipleship Table" | `/how-tos`: "How to Start a Discipleship Table This Week", "How to Multiply a Table by Sending People to Start Their Own", "Who to Invite to Your Table"; `/pathways/discipleship` "Making Disciples at the Table" | "a small discipleship group": "How to Start a Small Discipleship Group This Week", "How to Send People Out to Start Their Own Group", "Who to Invite to Your Group" |
-| "Tonight at the table" | PR #540 Family menu, Home line, search shortcut | "Tonight's family devotion" |
+| "Tonight at the table" | Live today as the small label on `/family` and the search title of `/family/tonight` ("Tonight at the Table: A Family Devotion"); PR #540 adds it to the Family menu, the Home line and the search shortcut | "Tonight's family devotion" |
 | "Formation" | `/dashboard` title "Your Formation"; description "your theological formation" | "Your reading and progress" |
 | "Integrated Life", "The Capstone" | `/life` title and label | "Christian living" |
 | "Prophetic Disruption", "Prophetic Justice" | titles of `/disruption/consistency`, `/disruption/witnesses`, `/justice/witnesses` | drop; see table in finding 4 |
@@ -126,14 +127,14 @@ Each of these is a word your congregation would not use at the door. Replacement
 | "Second Temple Judaism", "Ancient Near East", "The Greco-Roman World", "The Signature Library" | `/resources/context` section names and label | Keep the scholar's term, lead with the plain one: "Jewish life in Jesus's day (Second Temple Judaism)", "The world of the Old Testament (Ancient Near East)", "The Roman world of the New Testament". Drop "The Signature Library". |
 | "The Constantinian Turn", "The Long Middle", "The Attractional Era", "The Desert and the Rule", "The Fathers at Work" | `/theology/history` era titles, also the search titles of those pages | Lead with the plain name and keep yours after it: "When Rome Became Christian: The Constantinian Turn", "The Middle Ages: The Long Middle", "The First Monks: The Desert and the Rule", "The Church Fathers at Work". "The Attractional Era" needs your wording; I suggest "The Megachurch Years: The Attractional Era". |
 | "ENDS" | footer, with no explanation | "ENDS (training pastors in remote regions)", the wording `/about` already uses |
-| "The Hard Issues booklets" | menu and footer; the ten booklets are on eldership and governing the local church | "Booklets for elders and church leaders" |
+| "The Hard Issues booklets" | footer (in both builds; it is not in the header menu); the ten booklets are on eldership and governing the local church | "Booklets for elders and church leaders" |
 | "Leader's Toolkits", "Start with an honest reading", "The church and the public square", "Work a study" | `/studyguides` label; `/tools` section names; `/family` and `/theology/history` shelf labels "READ 42 / WORK A STUDY 20" | "Study guides for groups"; "Self-checks"; "Faith and politics"; "Essays (42) / Study guides (20)" |
 | "Words Worth Sharing" | `/tools/quotes` | "Quotes from the essays and books" |
 | "Prayer Generator" | `/tools/prayer-generator` | "Prayers for when you have no words" (the card on `/tools` already says "Words for when you do not have your own") |
 
 The 29 eight-week plan pages have the same trouble in their own titles. The hub lists them plainly ("I can't stop worrying"), but the page a search engine indexes is called "Eight Weeks of Small Mercies" (the plan for feeling empty), "Eight Weeks in the Waiting" (infertility), "Eight Weeks Out of Hiding" (pornography), "Eight Weeks Toward Enough" (money), "Eight Weeks of Reading Like an Adult" (the skeptic's plan), "Eight Weeks Toward Setting Down the Debt" (forgiveness), "Eight Weeks on the Long Road Back" (addiction). **Fix:** topic first, your line second: "Anxiety: An Eight-Week Plan Toward a Quieter Mind", "Infertility: Eight Weeks in the Waiting", "Pornography: An Eight-Week Plan Out of Hiding". All 29 plan descriptions are also over 160 characters (164 to 215).
 
-- **Size:** M. **Status:** STILL-OPEN-AFTER-PENDING. "Tonight at the table" is introduced by PR #540.
+- **Size:** M. **Status:** STILL-OPEN-AFTER-PENDING. "Tonight at the table" is already on `/family` today; PR #540 carries it into the menu and onto Home.
 
 ### 6. The same thing goes by several names, and "hard questions" has four front doors
 
@@ -156,7 +157,7 @@ A visitor learns a site's words once and expects them to hold. The design critiq
 ### 7. Church history and the one-stop links are not named where people look first
 
 - **Where:** `/` "Where to begin"; footer on every page (`client/src/components/Footer.tsx`).
-- **What a visitor sees:** Home's doors today: "Study the Bible", "Read the essays", "The books". PR #540 adds "Hard questions" and "Family devotions". "Church history" is not a door on Home in either build; it is inside Study. In the footer the only outside link by name is "Substack →". The word "Facebook" appears on one page of the site, `/about`.
+- **What a visitor sees:** Home's doors today: "Study the Bible", "Read the essays", "The books". PR #540 adds "Hard questions" and "Family devotions". "Church history" is not a door on Home in either build; it is inside Study. In the footer the only outside link by name is "Substack →". A Facebook link appears on one page a visitor can reach from the menu, `/about`. (The author-profile template at `/authors/<slug>` has one in its code; I did not open that page. `/membership` mentions Facebook in a sentence without a link.)
 - **Why it fails:** You named church history twice in your request and asked that this be the one place for your Facebook and Substack. A visitor has to open a menu to find the first and visit About to find the second.
 - **Fix:** Add a sixth door on Home, "Church history", with the line `/study` already uses ("The councils, the figures, the heresies..."). In the footer write "Read James on Substack" and add "Follow James on Facebook" beside it.
 - **Size:** S. **Status:** STILL-OPEN-AFTER-PENDING.
@@ -165,7 +166,7 @@ A visitor learns a site's words once and expects them to hold. The design critiq
 
 Full inventory is in the tables below. Verdicts:
 
-- **FIXED-IN-PENDING (PR #540):** Family has no door in the live header (it is the last line of the footer's Resources list, "For families"). PR #540 gives it a door with four items. The live "Resources" door, which does not say what is inside, becomes "Topics" and "Family".
+- **FIXED-IN-PENDING (PR #540):** Family has no door in the live header (it is the last line of the footer's Resources list, "For families"). PR #540 gives it a door with five items. The live "Resources" door, which does not say what is inside, becomes "Topics" and "Family".
 - **"Topics" (PR #540).** The page it opens is headed "Hard questions, and where to start", and Home calls the same door "Hard questions". "Topics" alone does not tell a skeptic that his questions are in there. You chose this word on 2026-10-26, so this is yours to rule on: keep "Topics" and make the first menu item **"Hard questions, by topic"**, or rename the door "Questions".
 - **"Honest answers"** (PR #540 shortened it from the live "Honest answers to hard questions"). Restore the longer label; the short one does not say answers to what.
 - **"Eight-week plans"** does not say for what. **"Eight-week plans for hard seasons"**.
@@ -187,7 +188,8 @@ Full inventory is in the tables below. Verdicts:
 
 ### 10. 506 descriptions are too long, and a few are too short
 
-- **Where and what:** every `/wisdom/*` page (208 of 208 over 160, up to 309 characters); every `/studyguides/*` page (68 of 68); 66 of 70 `/life/*` guides (up to 384); all 29 plans; 47 how-to guides; 24 context and creed pages; 18 of 22 church-history essays (up to 253); and on the hubs: `/study` (214), `/study/bible` (220), `/study/bible/doctrines` (224), `/answers` (204), `/tools/glossary` (212), `/tools/bible-says` (209). Six essay descriptions run the other way: "The Bible Assumes You Will Be Wrong" has 35 characters of description; four more have under 70.
+- **Where and what:** every `/wisdom/*` page (208 of 208 over 160, up to 403 characters); 66 of 70 `/life/*` guides (up to 469); all 29 plans (164 to 215); 47 how-to guides; 24 context and creed pages; 20 of 22 church-history essays (up to 253); and on the hubs: `/study` (214), `/study/bible` (220), `/study/bible/doctrines` (224), `/answers` (204), `/tools/glossary` (212), `/tools/bible-says` (209). Six essay descriptions run the other way: "The Bible Assumes You Will Be Wrong" has 35 characters of description, which is only its own title again; four more have under 70.
+- **The worst case is the study guides.** All 68 `/studyguides/*` pages send search engines the guide's whole opening section as the description: the shortest is 1,123 characters and the longest, `/studyguides/the-lords-prayer`, is 2,241. Google will show the first line and a half ("This study is for anyone who has said the Lord's Prayer a thousand times and stopped hearing a single word of it, for the small group that wants to learn to pray and does not know where to begin, ...") and discard the rest. These are the pages a small-group leader searches for, so they should be fixed first.
 - **Why it fails:** Google cuts the sentence mid-thought, and on these pages the cut usually removes what the reader gets. A 35-character description gives a skeptic nothing to decide on.
 - **Fix:** For the libraries, have the index builders write a description field capped at 155 characters, ending on a whole sentence, and gate it in the matching validator. For the hubs, hand-written lines. Three of them:
   - `/study`: "Study the whole Bible with notes on every chapter, then the church's history, its creeds, and the world the Bible was written in. Free." (137)
@@ -197,8 +199,8 @@ Full inventory is in the tables below. Verdicts:
 
 ### 11. Pages that should not be in search results, or show nothing
 
-- `/quiz` and `/tools/theology-quiz` are one tool at two addresses with one title. Locally both show "The quiz didn't load" with no headline, because they need the database; on the live site the API supplies the questions. Keep one address.
-- `/dashboard` ("Your Formation", "0 ARTICLES READ ... 0 DAY STREAK") is an empty personal page with an indexable head. Mark it noindex and retitle it "Your Reading and Progress".
+- `/quiz` and `/tools/theology-quiz` are one tool at two addresses with one title. Keep one address. (Locally both show "The quiz didn't load" with no headline; that is only because there is no database here, and is not a finding. On the live site the API supplies the questions.)
+- `/dashboard` ("Your Formation", "0 ARTICLES READ ... 0 DAY STREAK") and `/tools/saved` ("Saved Items", "0 items saved across your tools. Nothing saved yet.") are empty personal pages with indexable heads. Mark both noindex and retitle the first "Your Reading and Progress".
 - `/membership` is in the sitemap and offers "Join the waitlist" for "The deeper room", with "Curated reading guides for the 21 books". If membership is not open, take it out of the sitemap.
 - `/tools/connection-planner` has two H1 headlines ("The Connection Planner" twice).
 - `/my-library` and `/404` have no prerendered head, so a shared link shows the home page's title.
@@ -229,6 +231,30 @@ Full inventory is in the tables below. Verdicts:
 - `/downloads`: "Cards to cut and keep", "Worksheets to print" are good plain labels.
 
 - **Size:** S. **Status:** STILL-OPEN-AFTER-PENDING.
+
+### 14. Five books that are not on the shelf are still live, labeled "available now", and listed for search engines (added in verification)
+
+- **Where:** `/books/deconstruction-of-faith`, `/books/the-reliability-of-scripture`, `/books/bible-and-homosexuality`, `/books/bible-and-transgender-identity`, `/books/critical-race-theory-biblical` (all five in `scripts/generate-sitemap.mjs` lines 173 to 178 and in the built `sitemap.xml`); `/books` (`client/src/pages/Books.tsx` line 153).
+- **What a visitor sees:** `/books` says "Three books. Every word mine." and, lower down, "Looking for a book that used to be here? I took the rest of the shelf down to rewrite it in my own hand, one book at a time. When a book is finished, it comes back." But each of the five pages above opens from a search result with the label "NEW BOOK · EBOOK AVAILABLE NOW" and a button "Get the ebook — $8.99". Three of them carry the byline "JAMES C. BELL" where the rest of the site says "James Bell". Screenshot: `shots/titles-pages/verify-book-not-on-shelf-live-1440.png`.
+- **Why it fails:** The site tells a reader the shelf holds three books and that the others were taken down, then offers five of the others as new. A skeptic who notices will trust the three less. I could not test whether the button completes a sale, because checkout needs the API; the labels alone are the finding.
+- **Fix:** James decides: either these five are on the shelf (then `/books` says eight and the menu lists them) or they are down (then take the five addresses out of the sitemap and show the same "being rewritten" notice the retired essays get). Use one form of the name.
+- **Size:** S once decided. **Status:** STILL-OPEN-AFTER-PENDING (identical in PR #540). **Needs James.**
+
+### 15. Six main pages have one title in the browser and a different one in search (added in verification)
+
+- **Where:** `/`, `/about`, `/books`, `/tools`, `/nation`, `/writing`. The search title comes from `scripts/prerender-heads.mjs`; the browser title from each page's `SEOMeta`.
+- **What a visitor sees:** search and Facebook get "About James Bell", the tab says "About James Bell — Pastor, Author, Writer"; "Books — by James Bell" against "Books by James Bell — Three Titles, Written by Hand"; "Christ and the Nation" against "Christ and the Nation — The Bible, America, and Power"; "Essays by James Bell" against "Essays"; and the home and tools pairs given in findings 1 and 6.
+- **Why it fails:** Google reads both versions and picks one; you do not control which. Each of these pages should have one name.
+- **Fix:** Choose the plain title from Inventory 3 and put the same string in both places. A small check in `scripts/prerender-heads.mjs` that fails the build when the two differ would keep it so.
+- **Size:** S. **Status:** STILL-OPEN-AFTER-PENDING.
+
+### 16. PR #540's five new pages arrive with the same long titles and descriptions (added in verification)
+
+- **Where:** PR #540 build: `/topics`, the three `/topics/<slug>` pages, `/study/bible/guides/whole-story-2027`.
+- **What a visitor sees in search:** "Topics: The Hard Questions of Faith in Post-Christian America | LiveWell by James Bell" (86 characters); "What is Christian nationalism, and how should a Christian think about politics? | LiveWell by James Bell" (104); "What does it mean that America is post-Christian, and how do we live in it? | LiveWell by James Bell" (100); "Read the Whole Story of the Bible in 2027 | LiveWell by James Bell" (66). Four of the five descriptions are over 160 characters (148 to 232).
+- **Why it fails:** These are the pages built to answer what people type, and the titles are good questions, but the longest two will be cut before the question ends.
+- **Fix:** Before PR #540 merges: "What Is Christian Nationalism? A Christian View | LiveWell" (58), "What Does Post-Christian America Mean for Us? | LiveWell" (56), "Read the Bible in a Year: The 2027 Plan | LiveWell" (50), and trim the four descriptions to one sentence. The full question stays as the headline on the page.
+- **Size:** S. **Status:** introduced by PR #540; STILL-OPEN-AFTER-PENDING unless fixed in that PR.
 
 ## Inventory 1: header and footer labels
 
@@ -441,15 +467,15 @@ Columns: the title as search engines receive it with its full length including "
 | Doctrine studies `/study/bible/doctrines/*` | 63 | 51 | 89 | 1 | "Angels, Satan, and Spiritual Powers: What the Bible Teaches" | Good. |
 | Story acts `/study/bible/story/*` | 11 | 2 | 78 | 1 | "Creation: Act One" | Add the search phrase: "Creation: Part One of the Bible's Story". |
 | Reading guides `/study/bible/guides/*` | 24 | 0 | 59 | 1 | "How the Books Were Chosen", "Reading Apocalyptic" | Good. "Reading Apocalyptic" needs a gloss: "Reading Revelation and Daniel (Apocalyptic)". |
-| Church history essays `/theology/history/*` | 22 | few | | 18 | "The Constantinian Turn", "The Long Middle" | Insider names (finding 5); long descriptions. |
+| Church history essays `/theology/history/*` | 22 | 3 | | 20 | "The Constantinian Turn", "The Long Middle" | Insider names (finding 5); long descriptions. |
 | Older doctrine pages `/theology/doctrine/*` | 31 | some | 83 | some | "Who Is Jesus?", "What Is the Church?" | Plain questions. Three duplicate the reading guides. |
-| Find Help `/help/*` | 40 | 40 | 85 | 0 | "Can't Stop Worrying? Anxiety, the Bible, and What Helps" | The best on the site. Under 60 with the short ending. |
+| Find Help `/help/*` | 40 | 40 | 85 | 0 | "Can't Stop Worrying? Anxiety, the Bible, and What Helps" | The best on the site. With the short ending 37 of 40 are still over 60 (this one is 66), but the plain phrase comes first, so the cut does no harm. |
 | Eight-week plans `/plans/*` | 29 | 12 | 72 | 29 | "Eight Weeks of Small Mercies" | Topic missing (finding 5). |
 | How-to guides `/how-tos/*` | 132 | 74 | 86 | 47 | "How to Age With Grace" | Good, except the "Table" guides. |
-| Life guides `/life/*` | 70 | 70 | 83 | 66 | "Is Anger a Sin? What Scripture Actually Says" | Titles good. Descriptions run to 384. |
+| Life guides `/life/*` | 70 | 70 | 83 | 66 | "Is Anger a Sin? What Scripture Actually Says" | Titles good. Descriptions run to 469. |
 | Wisdom topics `/wisdom/*` | 208 | 181 | 82 | 208 | "Anxiety and Worry — What the Bible Says" | Put the phrase people type first: "What the Bible Says About Anxiety and Worry". One duplicate pair. |
-| Study guides `/studyguides/*` | 68 | 57 | 86 | 68 | "Anxiety: A Bible Study on Worry and the Peace of Christ" | Good titles. |
-| Family devotions `/family/devotions/*` | 112 | most | 86 | 8 | "The Long Wait Begins: A Family Devotion" | Subject missing (finding 12). 7 descriptions under 70. |
+| Study guides `/studyguides/*` | 68 | 57 | 86 | 68 | "Anxiety: A Bible Study on Worry and the Peace of Christ" | Good titles. Descriptions are 1,123 to 2,241 characters (finding 10). |
+| Family devotions `/family/devotions/*` | 112 | 86 | 86 | 7 | "The Long Wait Begins: A Family Devotion" | Subject missing (finding 12). 7 descriptions under 70. |
 | Context guides and creeds `/resources/*` | 58 | 47 | 91 | 24 | "Is 2 Chronicles 7:14 a Promise to America?" | Good. |
 | Essays `/writing/*` | 20 | 11 | 76 | 8 | "Why Didn't the Bible Just Ban Slavery?" | Mixed (finding 6). 6 descriptions under 70. |
 | Nation `/nation/*` | 13 | 10 | 89 | 0 | "Which Party Fits the Bible More?" | Mixed; replacements in Inventory 3. |
@@ -461,7 +487,7 @@ Totals: 1,984 of 2,274 titles over 60 characters (with the short ending "| LiveW
 
 ## Inventory 5: old addresses that redirect (86)
 
-These need no title of their own. Listed so you can see where each old name now lands. Seven of them land on the home page, which tells the visitor nothing about why they moved: `/for-leaders`, `/for-pastors`, `/pastors`, `/pastoral-burnout`, `/the-pastoral-angle`, `/pastors-resource-wall` and `/sermon-series`. `/pastoral-burnout` should land on `/help/pastors` ("Pastor Burnout, Depression, and Thinking About Quitting"), which exists.
+These need no title of their own. Listed so you can see where each old name now lands. Seven of them leave the site altogether: `/for-leaders`, `/for-pastors`, `/pastors`, `/pastoral-burnout`, `/the-pastoral-angle`, `/pastors-resource-wall` and `/sermon-series` all send the visitor to `https://pastorsconnectionnetwork.com` (`vercel.json`, and `PastorsMovedRedirect` in `client/src/App.tsx`, which shows "The pastors' library moved to the Pastors Connection Network. Taking you there now."). That is a deliberate move and it is explained. One of the seven deserves a second look: `/pastoral-burnout` sends a worn-out pastor to another site's front page when this site has the page for him, `/help/pastors` ("Pastor Burnout, Depression, and Thinking About Quitting"). Point that one address there.
 
 | Old address | Lands on |
 |---|---|
@@ -496,8 +522,8 @@ These need no title of their own. Listed so you can see where each old name now 
 | /family/tonight | /family/devotions/stewardship |
 | /faq | /answers |
 | /for-families | /family |
-| /for-leaders | / |
-| /for-pastors | / |
+| /for-leaders | pastorsconnectionnetwork.com (outside site) |
+| /for-pastors | pastorsconnectionnetwork.com (outside site) |
 | /framework | /writing |
 | /grief | /help/grief |
 | /healwell | /books |
@@ -518,9 +544,9 @@ These need no title of their own. Listed so you can see where each old name now 
 | /ordinary-holiness | /books |
 | /parenting | /family |
 | /parenting-help | /help/parenting |
-| /pastoral-burnout | / |
-| /pastors | / |
-| /pastors-resource-wall | / |
+| /pastoral-burnout | pastorsconnectionnetwork.com (outside site) |
+| /pastors | pastorsconnectionnetwork.com (outside site) |
+| /pastors-resource-wall | pastorsconnectionnetwork.com (outside site) |
 | /pathways | /writing |
 | /pillars | /writing |
 | /post-christian | /writing?section=after-christendom |
@@ -530,13 +556,13 @@ These need no title of their own. Listed so you can see where each old name now 
 | /reading-scripture-past-our-politics | /writing?section=faith-and-power |
 | /rule-of-life | /books |
 | /sermon-on-the-mount-as-politics | /books |
-| /sermon-series | / |
+| /sermon-series | pastorsconnectionnetwork.com (outside site) |
 | /start-here | /start |
 | /substack | /subscribe |
 | /the-body-you-left | /books |
 | /the-god-who-is-not-nice | /books |
 | /the-loneliness-of-the-pastor | /books |
-| /the-pastoral-angle | / |
+| /the-pastoral-angle | pastorsconnectionnetwork.com (outside site) |
 | /the-scandal-of-the-cross | /books |
 | /theology | /study |
 | /theology/biblical | /study/bible/story |
@@ -562,7 +588,8 @@ These need no title of their own. Listed so you can see where each old name now 
 6. **The two "When Fear ..." essays (finding 6).** Which keeps its title?
 7. **The site name at the end of titles (finding 2).** "| LiveWell" in place of "| LiveWell by James Bell"? Your name stays in the title of `/about`, `/books`, `/writing`, `/speaking` and `/contact`.
 8. **One tagline.** The footer says "Theology that carries the weight of everyday life." The home page says "Learning to follow Jesus — and live well — in post‑Christian America." Which one is the site's line?
-9. **A portrait on the front page.** Outside this lens, noted in passing: the home page in both builds shows a small portrait beside "James Bell / About James" (`client/src/pages/Home.tsx` line 103). Your standing note says no photograph of you on the front page. Another auditor may cover it; I flag it so it is not missed.
+9. **The five books not on the shelf (finding 14).** Are they on the shelf or down? Today the site says both.
+10. **A portrait on the front page.** Outside this lens, noted in passing: the home page in both builds shows a small portrait beside "James Bell / About James" (`client/src/pages/Home.tsx` line 103). Your standing note says no photograph of you on the front page. Another auditor may cover it; I flag it so it is not missed.
 
 ## What I did not verify
 
@@ -570,3 +597,34 @@ These need no title of their own. Listed so you can see where each old name now 
 - How Google actually displays any of these today. The 60 and 160 character limits are working rules.
 - The content of each church-history essay and each plan against my suggested plain names. Each replacement there is marked as a suggestion for you to confirm.
 - No repository file was changed. This report and the screenshots are the only files written.
+
+## Verification
+
+A second reviewer re-checked this report on 2026-11-17 against both running builds (live at `localhost:4311`, PR #540 at `localhost:4312`), the built pages in `dist/public`, and the code. Findings 1 to 4, 6, 7 and 9 were checked in full; 5, 8, 10, 11, 12 and Inventories 1, 4 and 5 were checked in the larger part; finding 13 and the row-by-row table in Inventory 3 were only sampled.
+
+**Confirmed as written**
+
+- The counts: 2,948 built pages, 2,274 open to search, 1,984 titles over 60 characters (87%), 1,345 still over with the short ending, 506 descriptions over 160, 7 duplicate titles (all seven pairs named in finding 6), 2 duplicate descriptions. Re-counted with a separate script.
+- Finding 1: both home titles, and the 168-character description.
+- Finding 3: every quoted line, including `docs/work/NOTES.md` lines 34 to 36, the two sitemap entries, and `llms.txt`.
+- Finding 4: all 22 headlines opened in the browser and read as quoted, in both builds.
+- Finding 6: the three names of `/tools`, both creeds pages and both glossaries in the sitemap, both "When Fear ..." essays live on the shelf.
+- Finding 7 and Inventory 1: header, footer and search-shortcut labels in both builds, read from the browser and from `siteNav.ts`.
+- Finding 9: "Psalms 23" as headline and title; 150 Psalm pages.
+- Finding 11: two H1s on `/tools/connection-planner`; five double-hyphen titles; three "by James C. Bell" titles; `/dashboard` indexable; no built head for `/my-library` and `/404`.
+- Finding 12: "Taking Care Of What Is Not Yours" on `/family`, on the devotion page, and on Home in PR #540.
+- The claim that PR #540 changes no existing title or description: compared all 2,948 built heads between the two builds; none differs. It adds five pages (see finding 16).
+
+**Corrected**
+
+- WRONG, Inventory 5: the seven pastors' addresses do not land on the home page. They go to `pastorsconnectionnetwork.com`, with a one-line notice. (The local browser shows a blank page because it cannot reach the outside site.) Text and table rows corrected; the advice about `/pastoral-burnout` is kept.
+- WRONG, Inventory 4: the Find Help titles are not "under 60 with the short ending"; 37 of 40 stay over. Corrected.
+- OVERSTATED, finding 4 and the short version: "about thirty" pages. The table lists 22. Now "about twenty".
+- Finding 10 numbers corrected: `/wisdom` runs to 403 characters (not 309), `/life` to 469 (not 384), church history is 20 of 22 (not 18), family devotions 7 (not 8). The study guides were understated: every one of the 68 descriptions is over 1,100 characters. Added as its own bullet.
+- Finding 5 and 8: "Tonight at the table" is already live on `/family`; PR #540 does not introduce it, it promotes it. The Family door has five items, not four. "The Hard Issues booklets" is in the footer only.
+- Finding 7: the Facebook sentence narrowed to what was seen.
+- API-ARTIFACT, finding 11: "The quiz didn't load" on `/quiz` and `/tools/theology-quiz` is the missing local database. Reworded so it is not read as a fault; the duplicate address is the finding. Essay pages show "This essay didn't load." here for the same reason.
+
+**Added:** `/tools/saved` to finding 11; the About page's own header lines to finding 3; findings 14, 15 and 16.
+
+**Not re-checked:** each replacement title in Inventory 3 for length and fit; the count of 86 redirects (I counted 85 fixed addresses that redirect in `App.tsx`, plus `/family/tonight`); the twenty pending essay titles beyond the twelve visible in the shelf files of the two essay branches; the portrait note in "What needs your decision" is true of both builds (`Home.tsx` line 103, and `NOTES.md` line 272 says no photograph on the front page). No claim about another website appears in this report. Screenshots added by this pass begin `verify-` in `shots/titles-pages/`.
