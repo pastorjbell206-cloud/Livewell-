@@ -35,7 +35,7 @@ Shared files touched: none (no edit to App.tsx, siteNav.ts, index.css, prerender
 - The canonical audit step (`pnpm sitemap`, `pnpm prerender`, `audit:canonicals`) was not run: no route, title or description changed.
 - The Listen button's voice on the new Bible text, and printing a seasonal day (the page still prints; I did not look at the printed sheet with the extra "In other words" lines).
 - The PDFs (made in the Vercel build) are untouched and were not rebuilt.
-- Not every screenshot was read at full size; I read the phone and desktop captures of each new state and relied on the overflow and page-error checks for the rest.
+- Not every screenshot was read. Read at full size: `/family` done-this-week (phone, desktop dark), the chooser answered (phone), the How to shelf (phone), the catechism and devotions cards (desktop), the teen section (phone), the catechism page (phone own place, desktop following the calendar), reading plans started (phone) and finished (phone, desktop), Advent day 1 on November 29 (phone, page and `/family`), Advent day 9 in table mode (phone), a weekly devotion done (phone). The rest, including the catechism and reading plans in dark mode and most desktop captures, were covered only by the page-error and overflow checks.
 - Real devices, and Safari.
 
 ## Skipped, with the reason
