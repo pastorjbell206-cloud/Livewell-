@@ -76,7 +76,7 @@ How did a church decide whether a book belonged? Who wrote it, and when? Was it 
 
 The tests worked slowly, and they could correct a mistake. Around 200, Serapion, bishop of Antioch, found the church at Rhossus quarreling over a gospel bearing Peter's name. He hadn't read it, and he told them that if that was all they were divided over, they could read it. Then he learned it had been used to teach a false view of Christ. He got a copy, read it through, and found much in it that was sound and some things added. He wrote to them: "For we, brethren, receive both Peter and the other apostles as Christ; but we reject intelligently the writings falsely ascribed to them, knowing that such were not handed down to us."
 
-When councils finally spoke, they spoke for their own region and in the language of receiving. The North African bishops met at Hippo in 393, with Augustine present, and at Carthage in 397. They named the books to be read in church as Scripture. When they gathered their rulings into one code in 419, they asked that the list be sent to Boniface, the bishop of Rome, and to other bishops "that they may confirm this canon, for these are the things which we have received from our fathers to be read in church."
+When councils finally spoke, they spoke for their own region, and they said they were handing on what they had received. The North African bishops met at Hippo in 393, with Augustine present, and at Carthage in 397. They named the books to be read in church as Scripture. When they gathered their rulings into one code in 419, they asked that the list be sent to Boniface, the bishop of Rome, and to other bishops "that they may confirm this canon, for these are the things which we have received from our fathers to be read in church."
 
 ## Bart Ehrman's Case
 
@@ -92,15 +92,13 @@ A party shaping a collection to win an argument would hardly have kept four Gosp
 
 No single person or meeting decided. The churches recognized books that had already proved themselves in worship. The lists came after the reading. Protestant and Catholic teaching weigh that recognition differently, but both describe the church as receiving these books, not making them Scripture. The Church of England's articles put it simply: "All the Books of the New Testament, as they are commonly received, we do receive, and account them Canonical." The First Vatican Council taught in 1870 that the church holds these books sacred because they were written under the inspiration of the Holy Spirit, not because the church approved them afterward.
 
-Paul thanked God that the Thessalonians, when they heard the apostles' preaching, "accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers" (1 Thessalonians 2:13). The lists drawn up centuries later record the same kind of hearing on a larger scale. The churches had found these books at work among them, Sunday after Sunday.
+Paul thanked God that the Thessalonians, when they heard the apostles' preaching, "accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers" (1 Thessalonians 2:13). The lists drawn up centuries later record the same thing happening across the churches. The churches had found these books at work among them, Sunday after Sunday.
 
 If you're a Christian who felt shaken when someone told you a council voted on your Bible, you can set that fear down. The process was slow and human, and Christians disagreed along the way. If you're a skeptic, the history won't make you believe. It does mean the question can't be settled by blaming an emperor. Read Athanasius's letter, and then read the books for yourself in the [Study Bible](/study/bible).
 
 The Christians Justin described read the apostles and prophets "as long as time permits." Many American churches now read a few verses on a Sunday and move on. We will argue for every book in the canon and still hear very little of it read aloud.
 
-The churches held on to these books because they kept hearing a voice in them.
-
-It was the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.
+The churches held on to these books because they kept hearing in them the voice of the risen Christ, who on the evening of the resurrection opened the Law and the Prophets and the Psalms to his frightened disciples.
 
 He still speaks through all of it, the Old Testament as much as the New, to anyone who will read it.
 

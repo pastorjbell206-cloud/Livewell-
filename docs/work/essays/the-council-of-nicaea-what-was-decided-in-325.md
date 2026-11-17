@@ -6,7 +6,7 @@ Late in 324, the emperor Constantine sent a letter to Alexandria. He had just de
 
 The letter settled nothing. By the next summer Constantine had summoned bishops from across the empire to the town of Nicaea, and the question he had called idle became the business of the largest council the church had yet held.
 
-Much of what people repeat about Nicaea isn't true. The emperor did not have the bishops vote Jesus into godhood, and the council did not choose the books of the Bible ([the canon came together another way](/writing/who-decided-what-books-are-in-the-bible)). What it actually decided was narrower than either story: whether the Son of God is a creature. That question matters to ordinary faith more than most people expect, and Constantine's first instinct, that this was a quarrel over words, sounds a good deal more like many American Christians than anything the bishops said.
+Much of what people repeat about Nicaea isn't true. The emperor did not have the bishops vote Jesus into godhood, and the council did not choose the books of the Bible ([the canon came together another way](/writing/who-decided-what-books-are-in-the-bible)). What it actually decided was narrower than either story: whether the Son of God is a creature. That question matters to ordinary faith more than most people expect, and Constantine's first instinct, that this was a quarrel over words, is a good deal closer to what many American Christians think than anything the bishops said.
 
 ## How the Argument Began in Alexandria
 
@@ -64,7 +64,7 @@ His son Constantius favored bishops who wanted *homoousios* dropped. In 359 the 
 
 The tide turned with Theodosius. In 380 he ordered his subjects to hold the faith of the bishops of Rome and Alexandria, and Sozomen says the law directed that dissenters "should be treated as heretics, regarded with contempt, and delivered over to punishment." In 381 a council at Constantinople confirmed the faith of Nicaea. Its defenders had survived decades of exile. Now they had imperial law on their side, and they did not refuse it. We shouldn't tell that part as a simple victory. The doctrine Athanasius kept through five exiles was true. The law that enforced it was something else, and Christians of every party would reach for laws like it.
 
-The historian R. P. C. Hanson titled his account of these years *The Search for the Christian Doctrine of God*, and the title is his argument: between 318 and 381 the church was not defending a settled orthodoxy but searching for one, by trial and error. Many bishops Athanasius called "Arians" had never followed Arius. Some resisted *homoousios* because they feared it erased the difference between the Father and the Son. The history is messier than the Sunday school version.
+The historian R. P. C. Hanson titled his account of these years *The Search for the Christian Doctrine of God*, and the title is his argument: between 318 and 381 the church was not defending a settled orthodoxy but searching for one, by trial and error. Many bishops Athanasius called "Arians" had never followed Arius. Some resisted *homoousios* because they feared it erased the difference between the Father and the Son.
 
 ## The Case Against Nicaea
 

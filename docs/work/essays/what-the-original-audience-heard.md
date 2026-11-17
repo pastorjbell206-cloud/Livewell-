@@ -6,7 +6,7 @@ Soon after Jerusalem's rebuilt walls were finished, in the fifth century before 
 
 One of the best-loved lines in the Bible comes out of that morning. Plenty of Christians who have never read Nehemiah know it by heart: "the joy of the LORD is your strength." It was first spoken to a crowd in tears. Nehemiah, Ezra and the Levites told them, "This day is holy to the LORD your God; do not mourn or weep," and one of them went on, "Go your way. Eat the fat and drink sweet wine and send portions to anyone who has nothing ready, for this day is holy to our Lord. And do not be grieved, for the joy of the LORD is your strength" (Nehemiah 8:9–10). The people who first heard it had just been undone by the law. They were told to stop weeping, keep the day as a feast, and feed the neighbors who had nothing.
 
-We usually hear the line alone, as encouragement for a hard week, without the tears in the square or the portions sent to the poor. It still comforts. But it has lost the thing that made it strong for the people who first heard it, which was a word from God that had brought them low before it lifted them up. That loss is the subject of this essay. When we hear a verse without the people it was first spoken to, it tends to drift toward whatever we already wanted it to mean.
+We usually hear the line alone, as encouragement for a hard week, without the tears in the square or the portions sent to the poor. It still comforts. But it has lost the thing that made it strong for the people who first heard it, which was a word from God that had brought them low before it lifted them up. That loss is what I want to look at here. When we hear a verse without the people it was first spoken to, it tends to drift toward whatever we already wanted it to mean.
 
 ## Who the Bible Was First Written To
 
@@ -70,13 +70,11 @@ A reader with the patience to read whole books of the Bible, and a church that t
 
 ## Reading With the First Hearers
 
-What would it look like to read this way? Mostly it means slowing down. Read whole books, aloud when you can and with other people, the way they were first received. Before you decide what a passage says to you, ask who first heard it, what they feared, and what it asked of them. When a verse you love turns up, read the chapter around it. And pay attention when you find yourself sitting comfortably in the hero's seat.
+Reading this way mostly means slowing down. Read whole books, aloud when you can and with other people, the way they were first received. Before you decide what a passage says to you, ask who first heard it, what they feared, and what it asked of them. When a verse you love turns up, read the chapter around it. And pay attention when you find yourself sitting comfortably in the hero's seat.
 
 The letter to the Hebrews opens by naming the distance between us and them. "Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son" (Hebrews 1:1–2). The fathers were the first hearers, and God spoke to them in their own languages and troubles. Hebrews was written to a church in danger of drifting, and it drew the conclusion for them plainly: "Therefore we must pay much closer attention to what we have heard, lest we drift away from it" (Hebrews 2:1).
 
 We come to the Bible late. Most of those who received it before us heard something harder than we usually let ourselves hear.
-
-That should make us slower readers, and humbler ones.
 
 The Son through whom God has spoken is the same Jesus who told the synagogue at Nazareth that the Scripture had been fulfilled in their hearing. It is fulfilled in ours as well.
 
