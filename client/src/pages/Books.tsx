@@ -11,7 +11,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { BOOK_SHELF } from "@/lib/bookShelf";
 
 const BOOKS = BOOK_SHELF;
@@ -21,7 +21,8 @@ export default function Books() {
     <Layout>
       <SEOMeta
         title="Books by James Bell — Three Titles, Written by Hand"
-        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free, then get the ebook for $8.99."
+        description="The three books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe."
+        image={ogImageUrl("Books by James Bell", "LiveWell")}
         url={`${SITE_URL}/books`}
       />
 

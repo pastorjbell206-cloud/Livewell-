@@ -28,8 +28,8 @@ interface NewsletterSignupProps {
 
 export function NewsletterSignup({
   variant = "inline",
-  title = "One serious essay a week",
-  description = "Theology that meets the weight of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
+  title = "New essays by email, through Substack",
+  description = "Leave your email here and finish on Substack, where the essays are sent from. You can unsubscribe there at any time.",
   source,
   audienceType,
 }: NewsletterSignupProps) {
@@ -47,7 +47,7 @@ export function NewsletterSignup({
       addToast?.({
         type: "success",
         title: "One more step",
-        message: "You're on our list — confirm on Substack to get the essays.",
+        message: "Your email is saved here. Confirm on Substack to get the essays.",
       });
       setEmail("");
     },
@@ -81,7 +81,7 @@ export function NewsletterSignup({
           margin: 0,
         }}
       >
-        You're on our list.{" "}
+        One more step. Your email is saved here.{" "}
         <a
           href={handoffUrl}
           target="_blank"

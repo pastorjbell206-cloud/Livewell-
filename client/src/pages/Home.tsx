@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
+import FollowRow from "@/components/FollowRow";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import { BOOK_SHELF } from "@/lib/bookShelf";
@@ -271,9 +272,11 @@ export default function Home() {
           <NewsletterSignup
             variant="inline"
             source="home"
-            title="One serious essay a week"
-            description="Serious theology, written for the week you are actually living. No filler, no funnel, and you can leave whenever you like."
+            title="New essays by email, through Substack"
+            description="Serious theology, written for the week you are actually living. Leave your email here and finish on Substack, and leave whenever you like."
           />
+          {/* Where else James writes: links only (lib/channels.ts). */}
+          <FollowRow style={{ marginTop: "var(--s-3)" }} />
         </div>
       </section>
 

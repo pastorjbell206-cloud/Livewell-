@@ -58,8 +58,10 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books.",
+    description: "James Bell is a pastor in Fenton, Michigan, and a writer. He came to faith from atheism, and he writes here about following Jesus in post-Christian America.",
     type: "profile",
+    // Its own share card, so a link to About unfurls as About (lazy: ogImageUrl is declared below).
+    get image() { return ogImageUrl("About James Bell", "LiveWell"); },
     schemas: [personSchema()],
   },
   {
@@ -67,12 +69,14 @@ const STATIC_PAGES = [
     title: "Essays by James Bell",
     description: "A short shelf of essays by James Bell on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
     type: "website",
+    get image() { return ogImageUrl("Essays by James Bell", "LiveWell"); },
   },
   {
     path: "/books",
     title: "Books — by James Bell",
-    description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free.",
+    description: "The three books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe.",
     type: "website",
+    get image() { return ogImageUrl("Books by James Bell", "LiveWell"); },
   },
   {
     path: "/tools",

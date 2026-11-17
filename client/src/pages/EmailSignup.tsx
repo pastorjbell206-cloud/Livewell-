@@ -5,23 +5,26 @@
  * a form whose submit handler was a setTimeout that showed success without
  * calling anything ("Backend not wired yet"). No sender exists in the stack,
  * so the sequences could not be delivered and the reader's choice went
- * nowhere. Until real transactional email ships (roadmap LT-4), this page
- * offers the two things that are real: the weekly essay list (recorded via
- * SegmentedSignup, completed on Substack) and the self-paced reading paths.
+ * nowhere. This page offers the two things that are real: the newsletter,
+ * which is James's Substack (the email is recorded via SegmentedSignup and the
+ * sign-up is completed on Substack), and the essay shelf. It promises no pace
+ * and no matched first essay: nothing in the stack sends one.
  */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
+import { channelUrl } from "@/lib/channels";
 
 export default function EmailSignup() {
+  const substack = channelUrl("substack");
   return (
     <Layout>
       <SEOMeta
-        title="Subscribe — LiveWell by James Bell"
-        description="One serious essay a week, chosen for where you actually are — skeptic, doubter, pastor, or seeker. Plus self-paced reading paths through the whole library."
+        title="Subscribe: New Essays by Email, Through Substack"
+        description="Get James Bell's new essays by email through his Substack. Leave your email here and confirm on Substack, or read there first and decide later."
         url="https://www.livewellbyjamesbell.co/subscribe"
-        keywords="subscribe, newsletter, theology essays, reading paths, James Bell"
+        keywords="subscribe, Substack, newsletter, theology essays, James Bell"
       />
 
       {/* ── HERO ── */}
@@ -30,24 +33,33 @@ export default function EmailSignup() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 28 }}>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
             <span style={{ fontFamily: "var(--U)", fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase" as const, color: "var(--mustard)" }}>
-              The Weekly Essay
+              Substack
             </span>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
           </div>
 
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
-            One serious essay
+            New essays by email,
             <br />
-            a week. Written slow,
-            <br />
-            sent <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>once</em>.
+            through Substack.
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "rgba(255,255,255,.65)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
-            Theology that meets the weight of marriage, money,
-            parenting, and doubt. Tell us who you are and the first essay you get
-            will match it. Nothing else comes with it, and you can leave the
-            moment it stops being worth your time.
+          <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "var(--charcoal-fg-muted)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
+            The newsletter is James&rsquo;s Substack. Leave your email below and you will finish the
+            sign-up there, where the essays are sent from. Nothing else comes with it, and you can
+            leave the moment it stops being worth your time.
           </p>
+          {substack && (
+            <p style={{ margin: "20px 0 0", fontFamily: "var(--U)", fontSize: "15px" }}>
+              <a
+                href={substack}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", color: "var(--charcoal-fg)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", backgroundImage: "none" }}
+              >
+                Read on Substack first
+              </a>
+            </p>
+          )}
         </div>
       </section>
 
@@ -55,8 +67,8 @@ export default function EmailSignup() {
       <section style={{ background: "var(--bone)", padding: "72px 24px" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
           <SegmentedSignup
-            title="Subscribe — and tell us where you're standing"
-            description="Skeptic, doubter, pastor, or seeker. One essay a week either way; the first one is chosen for you."
+            title="Subscribe on Substack"
+            description="Pick the line closest to where you stand. It tells James who is reading, and everyone gets the same essays."
           />
         </div>
       </section>

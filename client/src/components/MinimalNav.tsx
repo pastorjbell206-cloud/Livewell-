@@ -600,6 +600,29 @@ export default function MinimalNav() {
             >
               <Search size={20} aria-hidden />
             </button>
+            {/* Subscribe sits beside the menu button on a phone, so the
+                Substack signup is one tap from any page. */}
+            <Link
+              href="/subscribe"
+              className="mobile-subscribe"
+              style={{
+                background: "var(--ink)",
+                color: "var(--bone)",
+                borderBottom: "2px solid var(--mustard)",
+                borderRadius: "var(--radius-sm)",
+                fontFamily: "var(--U)",
+                fontSize: "13px",
+                fontWeight: 600,
+                padding: "0 12px",
+                minHeight: "36px",
+                display: "inline-flex",
+                alignItems: "center",
+                whiteSpace: "nowrap",
+                textDecoration: "none",
+              }}
+            >
+              Subscribe
+            </Link>
             <button
               type="button"
               onClick={() => setMobileOpen(!mobileOpen)}

@@ -37,14 +37,11 @@ import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
-import { AuthorBio } from "@/components/AuthorBio";
-import ChannelLine from "@/components/ChannelLine";
+import { EssayShare } from "@/components/EssayShare";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
-import { KeepReadingBook } from "@/components/KeepReadingBook";
-import { RelatedEssays } from "@/components/RelatedEssays";
-import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
+import { NextEssay } from "@/components/RelatedEssays";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack } from "@/lib/taxonomy";
 import { ESV_NOTICE, owesEsvNotice } from "@/lib/esv";
@@ -961,6 +958,8 @@ export default function ArticleDetail() {
               print
               extra={
                 <>
+                  {/* Plain sharing first: Facebook by name, and the link itself. */}
+                  <EssayShare url={canonical} />
                   <CitationCopy title={post.title} url={canonical} publishedDate={publishedIso} author={author} />
                   {/* Three-audience share: a skeptic, a pastor, a spouse */}
                   <AudienceShare title={post.title} url={canonical} />
@@ -976,46 +975,26 @@ export default function ArticleDetail() {
           </div>
         </section>
 
-        {/* POST-BODY CHROME — hidden in reading-focus mode, and never printed.
-            The book that carries this essay's argument, then a quiet list of
-            other essays (board rec #9), then the newsletter CTA, author bio,
-            and end nav. */}
+        {/* AFTER THE ESSAY: hidden in reading-focus mode, and never printed.
+            One next essay and one Substack box, then the way back to the
+            shelf (AUDIT 2026-11, decision 14). The book card, the tool card,
+            the list of four essays, the author card and the line of other
+            channels used to sit here too; six asks read as none. The footer
+            still carries the Follow James row on every page. */}
         {!focus && (
           <div className="no-print">
-            {/* NEXT STEPS — the matched tool and reading path for this essay
-                (built long ago, never imported; revived by QW-16) */}
-            {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
-                peak intent, so exactly one ask leads, chosen by where they
-                are: mid-path, the next essay in that path; otherwise the book
-                that carries the argument. The other demotes to a quiet line. */}
-            {isArticleOnPath(post.slug ?? "") ? (
-              <>
-                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-                <KeepReadingBook post={post} quiet />
-              </>
-            ) : (
-              <>
-                <KeepReadingBook post={post} />
-                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-              </>
-            )}
-            <RelatedEssays post={post} />
+            <NextEssay post={post} />
 
-            {/* NEWSLETTER (single CTA — no fake form) */}
             <section
               style={{
                 background: "var(--bone-warm)",
-                padding: "var(--s-6) var(--s-4)",
+                padding: "var(--s-5) var(--s-4)",
               }}
             >
               <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
                 <NewsletterSignup variant="inline" source="article" />
               </div>
             </section>
-
-            {/* AUTHOR BIO */}
-            <AuthorBio author={author} />
-            <ChannelLine />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
           </div>

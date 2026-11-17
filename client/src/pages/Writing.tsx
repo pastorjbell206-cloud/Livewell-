@@ -28,6 +28,8 @@ import { BookmarkCheck, Search, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import FollowRow from "@/components/FollowRow";
+import { ogImageUrl } from "@/lib/site";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { StartHereRow } from "@/components/StartHereRow";
 import { trpc } from "@/lib/trpc";
@@ -227,6 +229,7 @@ export default function Writing() {
             : "A short shelf of essays by James Bell on the church after Christendom, the long history of the faith, and reading the Bible in its world."
         }
         url={canonical}
+        image={ogImageUrl(filtering ? heading : "Essays by James Bell", "LiveWell")}
       />
 
       {/* HERO */}
@@ -272,6 +275,8 @@ export default function Writing() {
           >
             {intro}
           </p>
+          {/* Where else James writes, on the unfiltered shelf (lib/channels.ts). */}
+          {!filtering && <FollowRow tone="dark" label="Also on" connect={false} style={{ marginTop: "var(--s-2)" }} />}
           {/* Above "Start with these", so it does not move while the reader types. */}
           <SearchBox value={search} onChange={setSearch} />
           {filtering && (
@@ -380,8 +385,6 @@ export default function Writing() {
           <NewsletterSignup
             variant="inline"
             source="writing-index"
-            title="One essay a week, for the ones who finish."
-            description="The writing that starts at the root instead of the symptom, in your inbox. No conversion bait."
           />
         </div>
       </section>
