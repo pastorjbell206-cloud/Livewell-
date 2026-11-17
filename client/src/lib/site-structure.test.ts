@@ -92,7 +92,6 @@ const FOLDED: Record<string, string> = {
   "/doubt": "/answers",
   "/substack": "/subscribe",
   "/work-with-james": "/speaking",
-  "/connect": "/about",
   // The no-decision cleanup (U06): the pre-elevation family and marriage hubs,
   // and the six crisis landings that duplicated a Find Help page.
   "/for-families": "/family",
@@ -217,6 +216,12 @@ describe("App.tsx", () => {
   it("routes /speaking and /contact to real pages", () => {
     expect(ROUTE_COMPONENT.get("/speaking")).toBe("Speaking");
     expect(ROUTE_COMPONENT.get("/contact")).toBe("Contact");
+  });
+
+  it("routes /connect to its own page, in the About menu and the footer (James, 2026-11-17)", () => {
+    expect(ROUTE_COMPONENT.get("/connect")).toBe("Connect");
+    const about = SITE_NAV_GROUPS.find((g) => g.title === "About")!;
+    expect(about.links.find((l) => l.href === "/connect")?.primary).toBe(true);
   });
 
   it("keeps the route table above the smoke test's floor", () => {

@@ -2,8 +2,10 @@
  * ContactForm: the one form that reaches James, used by /speaking and
  * /contact. It posts { name, email, subject, message } to /api/contact, the
  * REST handler that exists only in the production runtime (api/index.ts saves
- * each message to contact_messages, read at /admin). `pnpm dev` has no such
- * route, so test a submission on a Vercel preview.
+ * each message to contact_messages, read at /admin; nothing emails it, so the
+ * page says "saved for James to read", never "sent"). `pnpm dev` has no such
+ * route, so test a submission on a Vercel preview. The saved state shows only
+ * when the handler answers { ok: true }.
  *
  * The subject values are the ones the old /work-with-james form sent, so the
  * admin inbox reads the same before and after the fold.
@@ -82,12 +84,15 @@ export default function ContactForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      if (res.ok) {
+      // "Saved" is shown only when the handler itself says so. A 200 alone is
+      // not proof: a static host or the dev server answers any address with
+      // the app's HTML, and that must never read as a delivered message.
+      const body = (await res.json().catch(() => null)) as { ok?: unknown; error?: unknown } | null;
+      if (res.ok && body?.ok === true) {
         setStatus("sent");
         setForm(empty);
         return;
       }
-      const body = (await res.json().catch(() => null)) as { error?: unknown } | null;
       setError(typeof body?.error === "string" ? body.error : "");
       setStatus("error");
     } catch {
@@ -99,10 +104,11 @@ export default function ContactForm({
     return (
       <div role="status" style={{ padding: "var(--s-4)", background: "var(--card)", border: "1px solid var(--border)", borderTop: "2px solid var(--mustard)", borderRadius: "var(--radius-sm)" }}>
         <p style={{ fontFamily: "var(--F)", fontSize: "28px", fontWeight: 400, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 8px" }}>
-          Message sent
+          Your message is saved
         </p>
         <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", margin: 0 }}>
-          Thank you for writing. I read everything and reply as soon as I can.
+          Thank you for writing. It is waiting for James to read. If it cannot wait, email{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} style={{ color: "var(--ink)", textDecorationColor: "var(--mustard)" }}>{CONTACT_EMAIL}</a>.
         </p>
       </div>
     );

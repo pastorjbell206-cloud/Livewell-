@@ -40,7 +40,7 @@ export default function Speaking() {
     <Layout>
       <SEOMeta
         title="Speaking — James Bell"
-        description="Invite James Bell to preach or speak: conferences, retreats, revivals, and pulpit supply. Pastoral coaching and church consulting too, with a form that reaches him directly."
+        description="Invite James Bell to preach or speak: conferences, retreats, revivals, and pulpit supply. Pastoral coaching and church consulting too, with a form that is saved for him to read."
         url="https://www.livewellbyjamesbell.co/speaking"
         structuredData={{
           "@context": "https://schema.org",
@@ -83,7 +83,7 @@ export default function Speaking() {
               Ask James to speak
             </h2>
             <p className="speak-p">
-              Tell him the occasion, the date, and the place. The form reaches James directly.
+              Tell him the occasion, the date, and the place. The form is saved for James to read.
             </p>
             <p className="speak-p">
               You can also email{" "}

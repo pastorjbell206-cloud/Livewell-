@@ -3,6 +3,7 @@ import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
 import { HELP_LINK, LIBRARY_LINK, SITE_NAV_GROUPS } from "@/lib/siteNav";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import FollowRow from "@/components/FollowRow";
 
 // Vertical padding brings each footer link to a ~44px tap target (Apple/Google
 // minimum) so the dense footer is easy to hit on a phone; the padding provides
@@ -23,8 +24,8 @@ const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
  * Topics, Family, Essays, About), each showing every link it holds, so the
  * destinations that sit behind a header menu are one click away here. Topics
  * ends with /resources, the one page of everything to use. About carries the
- * books, Speaking, Contact, the newsletter, and the outbound homes of PCN and
- * ENDS. Find Help and My Library stay in the bottom bar on every page.
+ * books, Speaking, Contact, and the Substack signup. The Follow James row
+ * (Substack, Facebook, RSS) sits above the bottom bar. Find Help and My Library stay in the bottom bar on every page.
  */
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
@@ -36,10 +37,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ fontSize: "22px", fontWeight: 500, color: "var(--gold)", marginBottom: "12px", fontFamily: "var(--F)" }}>LiveWell</div>
-            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", marginBottom: "16px" }}>Theology that carries the weight of everyday life.</p>
-            <div style={{ display: "flex", gap: "12px" }}>
-              <a href="https://substack.com/@jamesbell333289" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold)", fontSize: "12px", textDecoration: "none", fontWeight: "600", display: "inline-flex", alignItems: "center", minHeight: "44px" }}>Substack →</a>
-            </div>
+            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", marginBottom: "0" }}>Theology that carries the weight of everyday life.</p>
           </div>
 
           {/* The nav groups: one source of truth in lib/siteNav.ts, shared with
@@ -76,6 +74,10 @@ export default function Footer() {
             );
           })}
         </div>
+
+        {/* Follow James: Substack, Facebook and the feed, on every page
+            (one list in lib/channels.ts). */}
+        <FollowRow tone="dark" style={{ marginBottom: "20px" }} />
 
         {/* Bottom Bar */}
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", fontSize: "12px", color: "rgba(255,255,255,0.75)" }}>

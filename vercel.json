@@ -1210,11 +1210,6 @@
       "permanent": true
     },
     {
-      "source": "/connect",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
       "source": "/parenting",
       "destination": "/family",
       "permanent": true

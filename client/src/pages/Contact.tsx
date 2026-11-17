@@ -6,6 +6,8 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import CrisisNote from "@/components/CrisisNote";
+import FollowRow from "@/components/FollowRow";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
 
 const gutter = "clamp(16px, 4vw, var(--s-4))";
@@ -18,7 +20,7 @@ export default function Contact() {
     <Layout>
       <SEOMeta
         title="Contact James Bell"
-        description="Write to James Bell directly. A message here reaches him. To ask him to speak or preach, see the speaking page."
+        description="Write to James Bell. A message sent here is saved for him to read, and his address is on the page. To ask him to speak or preach, see the speaking page."
         url="https://www.livewellbyjamesbell.co/contact"
       />
 
@@ -39,7 +41,8 @@ export default function Contact() {
             >
               Write to James
             </h1>
-            <p style={p}>A message here reaches James directly.</p>
+            <FollowRow style={{ margin: "0 0 var(--s-3)", paddingBottom: "var(--s-2)", borderBottom: "1px solid var(--border)" }} />
+            <p style={p}>A message sent here is saved for James to read. If it cannot wait, write to the address below.</p>
             <p style={p}>
               Email{" "}
               <a href={`mailto:${CONTACT_EMAIL}`} style={link}>
@@ -56,14 +59,7 @@ export default function Contact() {
               has the details.
             </p>
             <div style={{ marginTop: "var(--s-4)", paddingTop: "var(--s-3)", borderTop: "1px solid var(--border)" }}>
-              <p style={{ ...p, color: "var(--ink)", margin: 0 }}>
-                If you are in crisis or thinking about ending your life, do not wait on a reply here. In the US, call
-                or text 988 for the Suicide and Crisis Lifeline.{" "}
-                <Link href="/help" style={link}>
-                  Find Help
-                </Link>{" "}
-                has more.
-              </p>
+              <CrisisNote />
             </div>
           </div>
           <div>
