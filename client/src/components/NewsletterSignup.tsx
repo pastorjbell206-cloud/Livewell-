@@ -113,7 +113,7 @@ export function NewsletterSignup({
               fontFamily: "var(--F)",
               fontWeight: 500,
               fontSize: "16px",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
             }}
           >
             {title}
@@ -139,7 +139,7 @@ export function NewsletterSignup({
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--B)",
                 fontSize: "16px",
-                color: "var(--bone)",
+                color: "var(--charcoal-fg)",
                 outline: "none",
               }}
             />

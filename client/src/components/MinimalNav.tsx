@@ -340,7 +340,9 @@ export default function MinimalNav() {
                 LiveWell
               </div>
               <div
+                className="lw-byline"
                 style={{
+                  whiteSpace: "nowrap",
                   fontFamily: "var(--U)",
                   fontSize: "11px",
                   color: "var(--ink-muted)",

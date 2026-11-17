@@ -277,6 +277,9 @@ img{display:block;max-width:100%}
 /* The static shell's masthead (index.html) matches the header's height, so
    the swap to React moves nothing below it. */
 .lw-shell-bar{height:70px;box-sizing:border-box}
+/* On a narrow phone the byline gives its room to Subscribe in the header;
+   the static shell (index.html) hides it too, so nothing shifts on mount. */
+@media (max-width:480px){.lw-byline{display:none}}
 .nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
 .nav__logo em{font-style:italic;color:var(--gold)}
 .nav__logo small{font-family:var(--U);font-size:12px;font-weight:300;color:var(--ink3);letter-spacing:.02em}

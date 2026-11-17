@@ -256,6 +256,8 @@ describe("crawl surfaces", () => {
     const bad = urls.filter((u) => {
       const file = path.join(ROOT, "client/public", u);
       if (fs.existsSync(file) && fs.statSync(file).isFile()) return false;
+      // The essay feed is answered by the API through a rewrite in vercel.json, not by a page.
+      if (u === "/rss.xml") return !JSON.parse(read("vercel.json")).rewrites.some((r: { source: string }) => r.source === "/rss.xml");
       return Boolean(redirectFor(u)) || !ROUTES.some((r) => sourceRegex(r).test(u));
     });
     expect(bad).toEqual([]);

@@ -52,8 +52,12 @@ describe("/about", () => {
     const reach = within(screen.getByRole("region", { name: "Reach James" }));
     expect(reach.getByRole("link", { name: /^Speaking/ }).getAttribute("href")).toBe("/speaking");
     expect(reach.getByRole("link", { name: /^Contact/ }).getAttribute("href")).toBe("/contact");
-    expect(reach.getByRole("link", { name: /^The newsletter/ }).getAttribute("href")).toBe("/subscribe");
+    expect(reach.getByRole("link", { name: /^Subscribe on Substack/ }).getAttribute("href")).toBe("/subscribe");
+    expect(reach.getByRole("link", { name: /^Find James/ }).getAttribute("href")).toBe("/connect");
     const elsewhere = within(screen.getByRole("region", { name: "Everywhere James is" }));
+    // Substack is named in the list, beside Facebook (links only).
+    expect(elsewhere.getByRole("link", { name: /^Substack/ }).getAttribute("href")).toBe("https://substack.com/@jamesbell333289");
+    expect(elsewhere.getByRole("link", { name: /^Facebook/ }).getAttribute("href")).toBe("https://www.facebook.com/james.bell.609252");
     expect(elsewhere.getByRole("link", { name: /^Pastors Connection Network/ }).getAttribute("href")).toBe("https://pastorsconnectionnetwork.com");
     expect(elsewhere.getByRole("link", { name: /^ENDS/ }).getAttribute("href")).toBe("https://endsinitiative.org");
   });
@@ -69,10 +73,21 @@ describe("/speaking", () => {
     fireEvent.change(screen.getByLabelText("Email (required)"), { target: { value: "ruth@example.com" } });
     fireEvent.change(screen.getByLabelText("Message (required)"), { target: { value: "A retreat in May." } });
     fireEvent.click(screen.getByRole("button", { name: "Send message" }));
-    await waitFor(() => expect(screen.getByRole("status").textContent).toContain("Message sent"));
+    await waitFor(() => expect(screen.getByRole("status").textContent).toContain("Your message is saved"));
     expect(calls).toEqual([
       { url: "/api/contact", body: { name: "Ruth", email: "ruth@example.com", subject: "Speaking", message: "A retreat in May." } },
     ]);
+  });
+
+  it("never says saved on a 200 the handler did not confirm (a static host answering with the app's HTML)", async () => {
+    stubContact(new Response("<!doctype html><html></html>", { status: 200, headers: { "Content-Type": "text/html" } }));
+    renderWithProviders(<Speaking />);
+    fireEvent.change(screen.getByLabelText("Email (required)"), { target: { value: "ruth@example.com" } });
+    fireEvent.change(screen.getByLabelText("Message (required)"), { target: { value: "Hello" } });
+    fireEvent.click(screen.getByRole("button", { name: "Send message" }));
+    const alert = await screen.findByRole("alert");
+    expect(alert.textContent).toContain("Your message did not send.");
+    expect(screen.queryByRole("status")).toBeNull();
   });
 
   it("says what went wrong and offers the email when the message does not save", async () => {

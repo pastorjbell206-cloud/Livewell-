@@ -240,7 +240,8 @@ describe("/writing/:slug, printing", () => {
       ...sendButtons(),
       screen.getByRole("group", { name: "Reading tools" }),
       screen.getByRole("button", { name: "Share this quote" }),
-      screen.getByRole("complementary", { name: "About James Bell" }),
+      screen.getByRole("link", { name: "Share on Facebook" }),
+      screen.getByRole("heading", { name: "New essays by email, through Substack" }),
     ]) {
       expect(el.closest(".no-print"), el.textContent ?? "").not.toBeNull();
     }

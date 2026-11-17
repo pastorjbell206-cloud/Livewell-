@@ -67,7 +67,7 @@ export default function Footer() {
                   footer. Anchored under About. */}
               {group.title === "About" && (
                 <div style={{ marginTop: "18px" }}>
-                  <NewsletterSignup variant="footer" source="footer" />
+                  <NewsletterSignup variant="footer" source="footer" title="Essays by email (Substack)" />
                 </div>
               )}
             </div>
