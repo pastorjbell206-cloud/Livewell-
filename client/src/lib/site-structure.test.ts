@@ -104,6 +104,18 @@ const FOLDED: Record<string, string> = {
   "/parenting-help": "/help/parenting",
   "/deconstruction": "/help/deconstructing",
   "/church-hurt": "/help/church-hurt",
+  // James, 2026-11-17: no membership; the author page folds into About; and
+  // the old pastors' addresses stay on this site (the Pastors Connection
+  // Network is kept outside it).
+  "/membership": "/subscribe",
+  "/authors/:slug": "/about",
+  "/pastoral-burnout": "/help/pastors",
+  "/sermon-series": "/study",
+  "/pastors": "/resources",
+  "/for-pastors": "/resources",
+  "/for-leaders": "/resources",
+  "/the-pastoral-angle": "/resources",
+  "/pastors-resource-wall": "/resources",
 };
 
 /** Kept routes: James asked for these to stay, or other kept pages depend on them. */
@@ -167,6 +179,12 @@ describe("vercel.json redirects", () => {
       expect(rule!.destination, source).toBe(destination);
       expect(rule!.permanent, source).toBe(true);
     }
+  });
+
+  it("keeps every path redirect on this site", () => {
+    // No old address sends a visitor to another site (James, 2026-11-17).
+    const offSite = PATH_RULES.filter((r) => !r.destination.startsWith("/")).map((r) => `${r.source} -> ${r.destination}`);
+    expect(offSite).toEqual([]);
   });
 
   it("never lands on another redirect", () => {
