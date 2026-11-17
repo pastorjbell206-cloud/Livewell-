@@ -1,7 +1,7 @@
 [
   {
     "id": "identity",
-    "title": "Made On Purpose",
+    "title": "Made on Purpose",
     "theme": "Who God Says You Are",
     "group": "feelings",
     "passage": "Psalm 139:13-14",
@@ -25,7 +25,7 @@
   },
   {
     "id": "fear-and-anxiety",
-    "title": "When The Lights Go Out",
+    "title": "When the Lights Go Out",
     "theme": "Fear And Anxiety",
     "group": "feelings",
     "passage": "Psalm 56:3-4",
@@ -149,7 +149,7 @@
   },
   {
     "id": "who-is-jesus",
-    "title": "More Than A Good Teacher",
+    "title": "More Than a Good Teacher",
     "theme": "Who Jesus Is",
     "group": "god",
     "passage": "Colossians 1:15-16",
@@ -173,7 +173,7 @@
   },
   {
     "id": "why-we-pray",
-    "title": "Talking To Someone Who Is There",
+    "title": "Talking to Someone Who Is There",
     "theme": "Why We Pray",
     "group": "following",
     "passage": "Matthew 6:6",
@@ -201,7 +201,7 @@
   },
   {
     "id": "is-the-bible-true",
-    "title": "Can We Trust This Book",
+    "title": "Can We Trust This Book?",
     "theme": "Is The Bible True",
     "group": "following",
     "passage": "2 Timothy 3:16-17",
@@ -229,7 +229,7 @@
   },
   {
     "id": "handling-anger",
-    "title": "What To Do With The Fire",
+    "title": "What to Do with the Fire",
     "theme": "Handling Anger",
     "group": "feelings",
     "passage": "James 1:19-20",
@@ -281,7 +281,7 @@
   },
   {
     "id": "serving-others",
-    "title": "The Towel And The Basin",
+    "title": "The Towel and the Basin",
     "theme": "Serving Others",
     "group": "others",
     "passage": "Mark 10:45",

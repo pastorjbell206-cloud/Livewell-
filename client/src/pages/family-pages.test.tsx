@@ -80,7 +80,7 @@ describe("/family/devotions", () => {
     stubFamily({ online: true });
     window.localStorage.setItem("livewell-progress-family-v1", JSON.stringify({ v: 1, start: "2026-11-03", band: "together", done: [{ id: "identity", date: "2026-11-03" }] }));
     renderWithProviders(<FamilyDevotions />);
-    const first = await screen.findByRole("link", { name: /Made On Purpose/ });
+    const first = await screen.findByRole("link", { name: /Made on Purpose/ });
     expect(first).toHaveAttribute("href", "/family/devotions/identity");
     expect(first).toHaveTextContent("Done on this device");
     // A list of references, so no verse text and no translation note.

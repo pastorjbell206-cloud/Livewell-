@@ -111,7 +111,7 @@ describe("Ask, by age", () => {
 describe("three short nights", () => {
   it("offers a weekly devotion as three nights, each starting table mode at its own step", async () => {
     renderAt("/family/devotions/identity");
-    await screen.findByRole("heading", { level: 1, name: "Made On Purpose" });
+    await screen.findByRole("heading", { level: 1, name: "Made on Purpose" });
     expect(screen.getByText(/Three short nights instead of one/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Read and Talk" })).toHaveAttribute("href", "/family/devotions/identity?mode=table&step=1");
     expect(screen.getByRole("link", { name: "Ask and Do" })).toHaveAttribute("href", "/family/devotions/identity?mode=table&step=3");
@@ -138,7 +138,7 @@ describe("for the grown-ups", () => {
 
   it("says nothing extra on a week without one", async () => {
     renderAt("/family/devotions/identity");
-    await screen.findByRole("heading", { level: 1, name: "Made On Purpose" });
+    await screen.findByRole("heading", { level: 1, name: "Made on Purpose" });
     expect(screen.queryByText("For the grown-ups")).toBeNull();
   });
 });
@@ -170,7 +170,7 @@ describe("the library by strand and theme", () => {
     expect(headings).toEqual(INDEX.groups!.map((g) => g.label));
     const story = screen.getByRole("list", { name: "The big story" });
     expect(within(story).getAllByRole("link")).toHaveLength(INDEX.groups!.find((g) => g.key === "story")!.count);
-    expect(within(story).getByRole("link", { name: /What Love Was Willing To Do/ })).toHaveAttribute("href", "/family/devotions/the-cross");
+    expect(within(story).getByRole("link", { name: /What Love Was Willing to Do/ })).toHaveAttribute("href", "/family/devotions/the-cross");
   });
 
   it("shows one theme when the reader chooses it, with the theme in the URL", async () => {
@@ -179,8 +179,8 @@ describe("the library by strand and theme", () => {
     fireEvent.change(select, { target: { value: "feelings" } });
     await waitFor(() => expect(window.location.search).toBe("?theme=feelings"));
     expect(screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent)).toEqual(["Hard days and big feelings"]);
-    expect(screen.getByRole("link", { name: /When The Lights Go Out/ })).toBeInTheDocument();
-    expect(screen.queryByRole("link", { name: /What Love Was Willing To Do/ })).toBeNull();
+    expect(screen.getByRole("link", { name: /When the Lights Go Out/ })).toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: /What Love Was Willing to Do/ })).toBeNull();
     fireEvent.change(select, { target: { value: "" } });
     await waitFor(() => expect(window.location.search).toBe(""));
     expect(screen.getAllByRole("heading", { level: 2 })).toHaveLength(INDEX.groups!.length);
