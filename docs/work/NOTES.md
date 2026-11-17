@@ -328,3 +328,13 @@ The project hit the Hobby plan's 100-deployments-a-day limit ("api-deployments-f
 - Persecution: add Pew's newer figure (58 percent felt conflict with mainstream culture by early 2025) beside the 2024 figure of 48 percent?
 - The city: whether Christians should hold civil office or go to law is left open; state his position or keep it open?
 - Render unto Caesar now links "the Christians in Rome" to the Romans 13 essay (five site links, one more than the brief's two to four).
+
+## James's decisions, 2026-11-17 (after the full audit)
+
+His words: "I want you to make this a 10 out of 10 on every score... a place where everyone comes and can find all my writing, all my social media posts, all to study the Bible, to learn, to grow, to be discipled. I don't want a membership fee, and I don't want them to support the Pastor's Connection Network. I want to keep the Pastor's Connection Network outside of it. I also want you to audit like the writings and make sure it fits my saved memory of what my writing profile is. Make sure there's no AI sounding indicators on this to sound extremely human."
+
+- **No membership fee.** The membership page and every paid-tier offer come down. (Book sales were not mentioned and are left as they are.)
+- **The Pastors Connection Network stays outside this site.** No links to it, no asks to support it, no redirects that send a visitor there.
+- **One place for all his writing and social posts.** A Connect page comes back (this reverses the 2026-10-12 fold of /connect into /about). Facebook and Substack are still linked, not imported: this session cannot read either site. Showing his posts on the site itself needs him to supply them or approve an embed.
+- **Go-ahead to build the audit roadmap** (docs/work/audit-2026-11/AUDIT.md). Reversible presentation choices take the report's recommendation and are listed for him afterwards; facts about him, doctrine wording and anything about money still wait for his word.
+- **Writing audit.** Every piece of writing is checked against his voice (docs/VOICE-JAMES-BELL.md governs; his saved Substack writing profile is copied at docs/work/essays/SKILL-PROFILE-substack.md as a supporting reference) and for AI tells.
