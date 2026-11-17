@@ -121,7 +121,6 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Contact", href: "/contact", primary: true },
       { label: "Newsletter", href: "/subscribe" },
       { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true },
-      { label: "Pastors Connection Network", href: "https://pastorsconnectionnetwork.com", external: true },
       { label: "ENDS", href: "https://endsinitiative.org", external: true },
     ],
   },

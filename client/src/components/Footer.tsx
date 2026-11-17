@@ -23,8 +23,8 @@ const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
  * Topics, Family, Essays, About), each showing every link it holds, so the
  * destinations that sit behind a header menu are one click away here. Topics
  * ends with /resources, the one page of everything to use. About carries the
- * books, Speaking, Contact, the newsletter, and the outbound homes of PCN and
- * ENDS. Find Help and My Library stay in the bottom bar on every page.
+ * books, Speaking, Contact, the newsletter, and the outbound home of ENDS.
+ * Find Help and My Library stay in the bottom bar on every page.
  */
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();

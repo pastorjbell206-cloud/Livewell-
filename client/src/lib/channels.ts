@@ -63,7 +63,4 @@ export function liveChannels(): Channel[] {
 }
 
 /** Canonical external profiles, for the Person schema's sameAs. */
-export const SAME_AS: string[] = [
-  "https://pastorsconnectionnetwork.com",
-  ...liveChannels().map((c) => c.url),
-];
+export const SAME_AS: string[] = liveChannels().map((c) => c.url);

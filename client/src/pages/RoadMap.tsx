@@ -1,21 +1,17 @@
 /**
- * /roadmap — the 48-book public roadmap.
+ * /roadmap: the books on the shelf and the ones planned.
  *
- * Stratechery-style transparency about the work. Shows the published books,
- * the in-development books, and the planned books on one page. Builds
- * anticipation, list growth, and trust.
- *
- * Published books come from the DB. The in-progress and planned lists are
- * hand-authored and edited as priorities change.
+ * Unlinked, noindex and out of the sitemap since 2026-11-17: the page used
+ * to state a 48-book plan and a count of books in print, and neither number
+ * is settled. The shelf shown is lib/bookShelf.ts, the same three as /books.
+ * The planned list is hand-authored.
  */
 import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { bookCountWordCap } from "@/config/siteStats";
+import { BOOK_SHELF } from "@/lib/bookShelf";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
-import { trpc } from "@/lib/trpc";
-import { bookUrl } from "@/lib/site";
 
 interface PlannedBook {
   title: string;
@@ -116,15 +112,16 @@ function PlannedRow({
 }
 
 export default function RoadMap() {
-  const booksQuery = trpc.books.listPublished.useQuery();
-  const published = (booksQuery.data ?? []).filter(b => b.bookType === "authored");
+  // The /books shelf, not the database list: the page agrees with /books.
+  const published = BOOK_SHELF;
 
   return (
     <Layout>
       <SEOMeta
-        title="The Roadmap — 48 books"
-        description="What James Bell has in print, what is being written, and what is planned next, on one page."
+        title="The Roadmap"
+        description="The books James Bell has on the shelf today and the ones he plans to write next, on one page."
         url="https://www.livewellbyjamesbell.co/roadmap"
+        noindex
       />
 
       {/* HERO */}
@@ -161,10 +158,9 @@ export default function RoadMap() {
               maxWidth: "62ch",
             }}
           >
-            Forty-eight books is the plan. {bookCountWordCap}
-            {" "}are already in print. The rest get listed here when they are
-            actually underway, not before, so this page will always run shorter
-            than the plan. Subscribe to the weekly letter to know when one lands.
+            The books on the shelf today are below. The rest get listed here
+            when they are actually underway, not before. Subscribe to the
+            newsletter to know when one lands.
           </p>
         </div>
       </section>
@@ -173,7 +169,7 @@ export default function RoadMap() {
       <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            Published — {published.length}
+            On the shelf
           </div>
           <h2
             style={{
@@ -196,14 +192,14 @@ export default function RoadMap() {
           >
             {published.map(book => (
               <Link
-                key={book.id}
-                href={book.slug ? bookUrl(book.slug) : "/books"}
+                key={book.slug}
+                href={book.href}
                 style={{ textDecoration: "none" }}
               >
                 <div style={{ cursor: "pointer" }}>
-                  {book.coverImage && (
+                  {book.thumb && (
                     <img
-                      src={book.coverImage}
+                      src={book.thumb}
                       alt={book.title}
                       loading="lazy"
                       style={{
@@ -234,7 +230,8 @@ export default function RoadMap() {
         </div>
       </section>
 
-      {/* IN DEVELOPMENT */}
+      {/* IN DEVELOPMENT: shown only when a title is being written. */}
+      {IN_DEVELOPMENT.length > 0 && (
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-7) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
@@ -257,12 +254,13 @@ export default function RoadMap() {
           ))}
         </div>
       </section>
+      )}
 
       {/* PLANNED */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-7) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "12px" }}>
-            Planned — {PLANNED.length}+ more
+            Planned
           </div>
           <h2
             style={{
@@ -289,7 +287,7 @@ export default function RoadMap() {
             variant="inline"
             source="roadmap"
             title="Know when the next one lands."
-            description="The weekly letter announces every new book. No marketing emails. Just the work."
+            description="The newsletter says when a new book is out."
           />
         </div>
       </section>
