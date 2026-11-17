@@ -1,0 +1,27 @@
+{
+  "essay": "the-constantinian-turn",
+  "cards": [
+    {
+      "type": "source",
+      "section": "the-line-that-held",
+      "about": "Ambrose to Theodosius after the massacre at Thessalonica.",
+      "author": "Ambrose of Milan",
+      "work": "Letter 51, to the Emperor Theodosius",
+      "reference": "section 13",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 10 (1896)",
+      "corpus": "ambrose-letter-51",
+      "excerpt": "I dare not offer the sacrifice if you intend to be present. Is that which is not allowed after shedding the blood of one innocent person, allowed after shedding the blood of many? I do not think so."
+    },
+    {
+      "type": "source",
+      "section": "the-line-that-held",
+      "about": "Augustine on the penance Theodosius did.",
+      "author": "Augustine of Hippo",
+      "work": "The City of God",
+      "reference": "book 5, chapter 26",
+      "translation": "Nicene and Post-Nicene Fathers, First Series, vol. 2 (1887)",
+      "corpus": "augustine-city-of-god-5",
+      "excerpt": "being laid hold of by the discipline of the church, did penance in such a way that the sight of his imperial loftiness prostrated made the people who were interceding for him weep more than the consciousness of offence had made them fear it when enraged"
+    }
+  ]
+}

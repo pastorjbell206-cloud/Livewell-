@@ -1,0 +1,49 @@
+{
+  "essay": "the-apostolic-age",
+  "cards": [
+    {
+      "type": "source",
+      "section": "the-apostolic-fathers",
+      "about": "Polycarp's answer when the proconsul told him to reproach Christ.",
+      "author": "The church at Smyrna",
+      "work": "The Martyrdom of Polycarp",
+      "reference": "chapter 9",
+      "translation": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "corpus": "martyrdom-of-polycarp",
+      "excerpt": "Eighty and six years have I served Him, and He never did me any injury: how then can I blaspheme my King and my Saviour?"
+    },
+    {
+      "type": "source",
+      "section": "the-apostolic-fathers",
+      "about": "Irenaeus, who saw Polycarp in his own youth, on where Polycarp learned the faith.",
+      "author": "Irenaeus of Lyon",
+      "work": "Against Heresies",
+      "reference": "book 3, chapter 3, section 4",
+      "translation": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "corpus": "irenaeus-against-heresies-3",
+      "excerpt": "But Polycarp also was not only instructed by apostles, and conversed with many who had seen Christ, but was also, by apostles in Asia, appointed bishop of the Church in Smyrna, whom I also saw in my early youth"
+    },
+    {
+      "type": "source",
+      "section": "what-held-them",
+      "about": "Irenaeus on the line of teachers that ran back to the apostles.",
+      "author": "Irenaeus of Lyon",
+      "work": "Against Heresies",
+      "reference": "book 3, chapter 3, section 3",
+      "translation": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "corpus": "irenaeus-against-heresies-3",
+      "excerpt": "In this order, and by this succession, the ecclesiastical tradition from the apostles, and the preaching of the truth, have come down to us."
+    },
+    {
+      "type": "source",
+      "section": "what-held-them",
+      "about": "Justin describes the Sunday gathering of the Christians.",
+      "author": "Justin Martyr",
+      "work": "The First Apology",
+      "reference": "chapter 67",
+      "translation": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "corpus": "justin-first-apology",
+      "excerpt": "And on the day called Sunday, all who live in cities or in the country gather together to one place, and the memoirs of the apostles or the writings of the prophets are read, as long as time permits"
+    }
+  ]
+}

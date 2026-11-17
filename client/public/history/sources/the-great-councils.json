@@ -1,0 +1,38 @@
+{
+  "essay": "the-great-councils",
+  "cards": [
+    {
+      "type": "source",
+      "section": "nicaea",
+      "about": "The saying of Arius that the council refused.",
+      "author": "The Council of Nicaea",
+      "work": "The creed of 325",
+      "reference": "the closing condemnation",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "corpus": "nicaea-325-creed",
+      "excerpt": "And whosoever shall say that there was a time when the Son of God was not"
+    },
+    {
+      "type": "source",
+      "section": "nicaea",
+      "about": "The words the council settled on.",
+      "author": "The Council of Nicaea",
+      "work": "The creed of 325",
+      "reference": "the creed",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "corpus": "nicaea-325-creed",
+      "excerpt": "God of God, Light of Light, very God of very God, begotten ... not made, being of one substance ... with the Father."
+    },
+    {
+      "type": "source",
+      "section": "nicaea",
+      "about": "The council's own letter on what it decided about Arius.",
+      "author": "The Council of Nicaea",
+      "work": "The Synodal Letter to the church of Alexandria",
+      "reference": "the opening of the letter",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "corpus": "nicaea-325-synodal-letter",
+      "excerpt": "it was unanimously decreed that he and his impious opinion should be anathematized"
+    }
+  ]
+}

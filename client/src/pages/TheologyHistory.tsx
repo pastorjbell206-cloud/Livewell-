@@ -1,12 +1,15 @@
 /**
- * Pillar 2 — Church history (/theology/history). A walkable narrative of the
- * church across two thousand years: the timeline by era, the great councils
- * that fixed the creeds, the heresies the church had to reject (used as a
- * teaching tool), and profiles of the people who carried the faith. Content:
+ * Pillar 2 — Church history (/theology/history). Two thousand years of the
+ * church as one course: fourteen essays in order (the eight longer ones sit
+ * under their era as "Go deeper"), a timeline to step through year by year,
+ * the councils that fixed the creeds, the heresies the church had to reject,
+ * and the people who carried the faith. The tab row sits at the top; every
+ * person, council and heresy has its own anchor (lib/historyCourse entryId),
+ * so a name tapped here or in an essay lands on that entry. Content:
  * /theology/church-history-timeline.json, -councils.json, -heresies.json,
- * and -figures.json.
+ * -figures.json and /history/essays-index.json.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type MouseEvent, type ReactNode } from "react";
 import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -16,15 +19,29 @@ import { StatementBand, SectionArt } from "@/components/EditorialBlocks";
 import { EditorialIndex } from "@/components/editorial/EditorialIndex";
 import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
+import HistoryTimeline from "@/components/history/HistoryTimeline";
 import { subjectById } from "@/lib/subjects";
+import { scrollBehavior } from "@/lib/motion";
+import { readStoredJSON } from "@/lib/storage";
+import {
+  COURSE_PLACE_KEY, buildNameIndex, courseEssays, deeperEssays, entryId, isCoursePlace, kindOfAnchor, splitNames,
+  type Council, type EntryKind, type Era, type Figure, type Heresy, type HistoryEssayEntry,
+} from "@/lib/historyCourse";
 
-interface EraEvent { year: string; title: string; note: string; }
-interface Era { id: string; name: string; range: string; summary: string; events: EraEvent[]; }
-interface Council { name: string; year: string; place: string; ecumenical: boolean; calledOver: string; decided: string; gaveUs: string; rejected: string; }
-interface Heresy { name: string; era: string; claim: string; whyItAppealed: string; theChurchSaid: string; answeredBy: string; stillSeenAs: string; }
-interface Figure { name: string; dates: string; era: string; place: string; role: string; summary: string; whyTheyMatter: string; }
+type Tab = "course" | "timeline" | "councils" | "heresies" | "figures";
 
-type Tab = "timeline" | "councils" | "heresies" | "figures";
+const TAB_OF_KIND: Record<EntryKind, Tab> = { person: "figures", council: "councils", heresy: "heresies" };
+// A link may also name a tab: /theology/history#timeline.
+const TAB_OF_HASH: Record<string, Tab> = { course: "course", timeline: "timeline", councils: "councils", heresies: "heresies", people: "figures" };
+
+/** What the address asks for: an entry (its tab and its anchor) or a tab. */
+function fromHash(): { tab: Tab; target: string | null } | null {
+  if (typeof window === "undefined") return null;
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  const kind = kindOfAnchor(id);
+  if (kind) return { tab: TAB_OF_KIND[kind], target: id };
+  return TAB_OF_HASH[id] ? { tab: TAB_OF_HASH[id], target: null } : null;
+}
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const cardStyle = { background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" } as const;
@@ -42,13 +59,50 @@ export default function TheologyHistory() {
   const [councils, setCouncils] = useState<Council[]>([]);
   const [heresies, setHeresies] = useState<Heresy[]>([]);
   const [figures, setFigures] = useState<Figure[]>([]);
-  const [tab, setTab] = useState<Tab>("timeline");
+  const [tab, setTab] = useState<Tab>(() => fromHash()?.tab ?? "course");
+  // The entry a link asked for; it is scrolled to once its tab has rendered.
+  const [target, setTarget] = useState<string | null>(() => fromHash()?.target ?? null);
   const [openEra, setOpenEra] = useState<string | null>(null);
-  const [essays, setEssays] = useState<{ slug: string; title: string; blurb: string; era: string; dateRange: string }[]>([]);
+  const [essays, setEssays] = useState<HistoryEssayEntry[]>([]);
+  // Where the reader stopped in the course, kept on this device by the essay page.
+  const [lastSlug] = useState<string | null>(() => readStoredJSON(COURSE_PLACE_KEY, isCoursePlace, null as { slug: string } | null)?.slug ?? null);
+
+  useEffect(() => {
+    const onHash = () => {
+      const want = fromHash();
+      if (!want) return;
+      setTab(want.tab);
+      setTarget(want.target);
+    };
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+
+  /** Go to a person's, council's or heresy's own entry, and leave its address in the bar. */
+  const openEntry = (kind: EntryKind, name: string) => {
+    const id = entryId(kind, name);
+    setTab(TAB_OF_KIND[kind]);
+    setTarget(id);
+    window.history.replaceState(null, "", `#${id}`);
+  };
+  const chooseTab = (t: Tab) => {
+    setTab(t);
+    setTarget(null);
+    const hash = Object.keys(TAB_OF_HASH).find((k) => TAB_OF_HASH[k] === t);
+    window.history.replaceState(null, "", t === "course" ? window.location.pathname : `#${hash}`);
+  };
+
+  useEffect(() => {
+    if (!target) return;
+    const el = document.getElementById(target);
+    if (!el) return;
+    el.scrollIntoView({ block: "start", behavior: scrollBehavior() });
+    el.focus({ preventScroll: true });
+  }, [target, tab, councils.length, heresies.length, figures.length]);
 
   useEffect(() => {
     const get = (f: string) => fetch(f).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    get("/theology/church-history-timeline.json").then((d) => { if (d?.eras) { setEras(d.eras); setOpenEra(d.eras[0]?.id ?? null); } });
+    get("/theology/church-history-timeline.json").then((d) => { if (d?.eras) setEras(d.eras); });
     get("/theology/church-history-councils.json").then((d) => d?.councils && setCouncils(d.councils));
     get("/theology/church-history-heresies.json").then((d) => d?.heresies && setHeresies(d.heresies));
     get("/theology/church-history-figures.json").then((d) => d?.figures && setFigures(d.figures));
@@ -113,8 +167,23 @@ export default function TheologyHistory() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [eras, essays, councils, figures, heresies, eraBounds]);
 
+  const course = useMemo(() => courseEssays(essays), [essays]);
+  const lastRead = lastSlug ? course.find((e) => e.slug === lastSlug) : undefined;
+  const names = useMemo(() => buildNameIndex(figures, councils), [figures, councils]);
+  /** A line of an entry with the people and councils it names linked to their own entries. */
+  const withNames = (text: string, self: string): ReactNode =>
+    splitNames(text, names, new Set([self])).map((piece, i) => {
+      if (typeof piece === "string") return piece;
+      const id = piece.href.slice(piece.href.indexOf("#") + 1);
+      const kind = kindOfAnchor(id);
+      const follow = (ev: MouseEvent) => { if (kind) { ev.preventDefault(); openEntry(kind, piece.name); } };
+      return <a key={i} href={`#${id}`} className="hx-link" onClick={follow}>{piece.text}</a>;
+    });
+  const entryClass = (id: string) => `hx-entry${target === id ? " is-target" : ""}`;
+
   const tabs: { id: Tab; label: string; count: number }[] = [
-    { id: "timeline", label: "The timeline", count: eras.length },
+    { id: "course", label: "The course", count: course.length },
+    { id: "timeline", label: "The timeline", count: 0 },
     { id: "councils", label: "The councils", count: councils.length },
     { id: "heresies", label: "The heresies", count: heresies.length },
     { id: "figures", label: "The people", count: figures.length },
@@ -143,41 +212,78 @@ export default function TheologyHistory() {
         </div>
       </section>
 
-      {/* NARRATIVE ESSAYS */}
-      {essays.length > 0 && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
-          <div style={wrap}>
-            <SectionHead eyebrow="Read the story" title="The era essays" intro={`${essays.length} essays, from Pentecost to the present.`} />
-            <EditorialIndex
-              label="The era essays"
-              items={essays.map((e) => ({ href: `/theology/history/${e.slug}`, title: e.title, dek: e.blurb, kicker: `${e.era} · ${e.dateRange}` }))}
-            />
-          </div>
-        </section>
-      )}
-
-      <StatementBand tone="dark" eyebrow="The long memory" width="24ch">
-        You did not start the faith. You were handed it.
-      </StatementBand>
-
-      {/* TABS */}
+      {/* TABS: the five ways in, straight under the heading */}
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
-        <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "8px" }}>
+        <div style={wrap} className="hx-tabs" role="tablist" aria-label="Church history">
           {tabs.map((t) => (
-            <button key={t.id} type="button" onClick={() => setTab(t.id)} aria-pressed={tab === t.id}
-              style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "10px 16px", borderRadius: "999px", cursor: "pointer",
-                border: `1px solid ${tab === t.id ? "var(--mustard)" : "var(--border)"}`, background: tab === t.id ? "var(--bone-warm)" : "transparent", color: "var(--ink)" }}>
+            <button key={t.id} type="button" role="tab" id={`hx-tab-${t.id}`} aria-selected={tab === t.id} aria-controls="hx-tabpanel" className="hx-tab" onClick={() => chooseTab(t.id)}>
               {t.label}{t.count ? ` · ${t.count}` : ""}
             </button>
           ))}
         </div>
       </section>
 
+      <div id="hx-tabpanel" role="tabpanel" aria-labelledby={`hx-tab-${tab}`}>
+      {/* THE COURSE */}
+      {tab === "course" && (
+        <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
+          <div style={wrap}>
+            {essays.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the course…</p>}
+            {essays.length > 0 && (
+              <>
+                <SectionHead
+                  eyebrow="Read the story in order"
+                  title="The course"
+                  intro={`${course.length} essays in order, from Pentecost to the present. Each one ends with a link to the next. The ${essays.length - course.length} longer essays sit under the era they belong to, for when you want to go deeper.`}
+                />
+                {lastRead && (
+                  <p className="hx-continue">
+                    You were last reading essay {lastRead.course}.
+                    <Link href={`/theology/history/${lastRead.slug}`}>Go back to {lastRead.title}</Link>
+                  </p>
+                )}
+                {eras.map((era) => {
+                  const inEra = course.filter((e) => e.era === era.name);
+                  const deeper = deeperEssays(essays, era.name);
+                  if (!inEra.length && !deeper.length) return null;
+                  return (
+                    <div key={era.id}>
+                      <div className="hx-era-head"><h3>{era.name}</h3><span>{era.range}</span></div>
+                      <EditorialIndex
+                        label={`${era.name}: the essays`}
+                        columns={1}
+                        headingAs="h4"
+                        items={[
+                          ...inEra.map((e) => ({ href: `/theology/history/${e.slug}`, title: e.title, dek: e.blurb, kicker: `Essay ${e.course} of ${course.length} · ${e.dateRange}` })),
+                          ...deeper.map((e) => ({ href: `/theology/history/${e.slug}`, title: e.title, dek: e.blurb, kicker: `Go deeper · ${e.dateRange}` })),
+                        ]}
+                      />
+                    </div>
+                  );
+                })}
+                {/* Before the timeline file arrives the course still reads, as one plain list. */}
+                {eras.length === 0 && (
+                  <EditorialIndex
+                    label="The course"
+                    columns={1}
+                    items={course.map((e) => ({ href: `/theology/history/${e.slug}`, title: e.title, dek: e.blurb, kicker: `Essay ${e.course} of ${course.length} · ${e.dateRange}` }))}
+                  />
+                )}
+              </>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* TIMELINE */}
       {tab === "timeline" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
+          <div style={{ ...wrap, marginBottom: "var(--s-5)" }}>
+            <HistoryTimeline eras={eras} councils={councils} figures={figures} essays={essays} onOpen={openEntry} />
+          </div>
           <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
             {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the story…</p>}
+            {eras.length > 0 && <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 8px" }}>Each era in full</h2>}
             {eras.map((era) => {
               const isOpen = openEra === era.id;
               return (
@@ -225,7 +331,7 @@ export default function TheologyHistory() {
                               <div>
                                 <div style={rowLabel}>Councils</div>
                                 {hung.councils.map((c) => (
-                                  <button key={c.name} type="button" onClick={() => setTab("councils")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                  <button key={c.name} type="button" onClick={() => openEntry("council", c.name)} style={{ ...quiet, display: "block", background: "none", border: "none", padding: "6px 0", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
                                     {c.name} <span style={{ color: "var(--ink-muted)" }}>· {c.year}</span>
                                   </button>
                                 ))}
@@ -233,9 +339,9 @@ export default function TheologyHistory() {
                             )}
                             {hung.figures.length > 0 && (
                               <div>
-                                <div style={rowLabel}>Figures</div>
+                                <div style={rowLabel}>People</div>
                                 {hung.figures.map((f) => (
-                                  <button key={f.name} type="button" onClick={() => setTab("figures")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                  <button key={f.name} type="button" onClick={() => openEntry("person", f.name)} style={{ ...quiet, display: "block", background: "none", border: "none", padding: "6px 0", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
                                     {f.name} <span style={{ color: "var(--ink-muted)" }}>· {f.dates}</span>
                                   </button>
                                 ))}
@@ -245,7 +351,7 @@ export default function TheologyHistory() {
                               <div>
                                 <div style={rowLabel}>What was disputed</div>
                                 {hung.heresies.map((h) => (
-                                  <button key={h.name} type="button" onClick={() => setTab("heresies")} style={{ ...quiet, display: "block", background: "none", border: "none", padding: 0, cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
+                                  <button key={h.name} type="button" onClick={() => openEntry("heresy", h.name)} style={{ ...quiet, display: "block", background: "none", border: "none", padding: "6px 0", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", cursor: "pointer", textAlign: "left", color: "var(--ink)", marginBottom: "4px" }}>
                                     {h.name}
                                   </button>
                                 ))}
@@ -273,7 +379,7 @@ export default function TheologyHistory() {
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               {councils.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
               {councils.map((c, i) => (
-                <div key={i} style={{ ...cardStyle, padding: "var(--s-4)", borderLeft: `3px solid ${c.ecumenical ? "var(--mustard)" : "var(--border)"}` }}>
+                <div key={i} id={entryId("council", c.name)} tabIndex={-1} className={entryClass(entryId("council", c.name))} style={{ ...cardStyle, padding: "var(--s-4)", borderLeft: `3px solid ${c.ecumenical ? "var(--mustard)" : "var(--border)"}` }}>
                   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "8px", alignItems: "baseline", marginBottom: "10px" }}>
                     <span style={{ fontFamily: "var(--F)", fontSize: "22px", fontWeight: 500, color: "var(--ink)" }}>{c.name}</span>
                     <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{c.year}{c.place ? ` · ${c.place}` : ""}</span>
@@ -301,7 +407,7 @@ export default function TheologyHistory() {
             {heresies.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
             <div className="ed-split" style={{ gap: "var(--s-3)" }}>
               {heresies.map((h, i) => (
-                <div key={i} style={refBlock}>
+                <div key={i} id={entryId("heresy", h.name)} tabIndex={-1} className={entryClass(entryId("heresy", h.name))} style={refBlock}>
                   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline", gap: "4px 16px", marginBottom: "14px" }}>
                     <h2 style={refName}>{h.name}</h2>
                     <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)" }}>{h.era}</span>
@@ -310,7 +416,7 @@ export default function TheologyHistory() {
                   <p style={{ ...refText, marginBottom: "12px" }}><strong style={{ color: "var(--ink)" }}>Why it appealed.</strong> {h.whyItAppealed}</p>
                   <p style={refText}><strong style={{ color: "var(--ink)" }}>What the church said.</strong> {h.theChurchSaid}</p>
                   <div style={{ marginTop: "16px", paddingTop: "14px", borderTop: "1px solid var(--border)" }}>
-                    {h.answeredBy && <p style={refNote}><strong style={{ color: "var(--ink)" }}>Answered by</strong> {h.answeredBy}</p>}
+                    {h.answeredBy && <p style={refNote}><strong style={{ color: "var(--ink)" }}>Answered by</strong> {withNames(h.answeredBy, h.name)}</p>}
                   </div>
                   {h.stillSeenAs && <p style={{ ...refNote, marginTop: "10px" }}><strong style={{ color: "var(--ink)" }}>Still seen as.</strong> {h.stillSeenAs}</p>}
                 </div>
@@ -331,11 +437,11 @@ export default function TheologyHistory() {
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{era}</h2>
                 <div className="ed-split" style={{ gap: "var(--s-3)" }}>
                   {items.map((f, i) => (
-                    <div key={i} style={refBlock}>
+                    <div key={i} id={entryId("person", f.name)} tabIndex={-1} className={entryClass(entryId("person", f.name))} style={refBlock}>
                       <h3 style={refName}>{f.name}</h3>
                       <div style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.02em", color: "var(--mustard-text)", margin: "6px 0 2px" }}>{f.dates}</div>
                       <div style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink-muted)", marginBottom: "14px" }}>{f.role}{f.place ? ` · ${f.place}` : ""}</div>
-                      <p style={{ ...refText, marginBottom: "12px" }}>{f.summary}</p>
+                      <p style={{ ...refText, marginBottom: "12px" }}>{withNames(f.summary, f.name)}</p>
                       <p style={{ ...refText, color: "var(--ink)" }}><strong>Why they matter.</strong> {f.whyTheyMatter}</p>
                     </div>
                   ))}
@@ -346,11 +452,17 @@ export default function TheologyHistory() {
         </section>
       )}
 
+      </div>
+
+      <StatementBand tone="dark" eyebrow="The long memory" width="24ch">
+        You did not start the faith. You were handed it.
+      </StatementBand>
+
       {/* FOOTER NAV */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--charcoal-fg)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
         <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
-          <Link href="/study" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Everything in Study</Link>
-          <Link href="/theology/doctrine/god-and-trinity" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>See where the creeds came from →</Link>
+          <Link href="/study" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Everything in Study</Link>
+          <Link href="/theology/doctrine/god-and-trinity" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>See where the creeds came from →</Link>
         </div>
       </section>
       {subjectById("church-history") && <SubjectShelf subject={subjectById("church-history")!} />}

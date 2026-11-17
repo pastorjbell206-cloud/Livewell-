@@ -1,0 +1,16 @@
+{
+  "essay": "the-fathers-at-work",
+  "cards": [
+    {
+      "type": "source",
+      "section": "contra-mundum",
+      "about": "Athanasius on why no one but the Word of God could save.",
+      "author": "Athanasius of Alexandria",
+      "work": "On the Incarnation of the Word",
+      "reference": "section 10",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 4 (1892)",
+      "corpus": "athanasius-on-the-incarnation",
+      "excerpt": "it belonged to none other to bring man back from the corruption which had begun, than the Word of God, Who had also made them from the beginning."
+    }
+  ]
+}
