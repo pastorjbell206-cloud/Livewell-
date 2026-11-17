@@ -22,7 +22,7 @@ const TIER_2_ARTICLES = [
   { title: "The Orthodox Way", href: "/theology/history/the-church-that-outlived-rome" },
   { title: "The Mainline Protestant Collapse", href: "/writing/the-numbers-behind-the-decline" },
   { title: "The Missionary Century", href: "/theology/history/the-missionary-century" },
-  { title: "The Attractional Era", href: "/theology/history/the-attractional-era" },
+  { title: "The Megachurch Years, 1950 to 2010", href: "/theology/history/the-attractional-era" },
   { title: "The Black Church Tradition", href: "/writing/black-church-prophetic-justice" },
   { title: "Christianity in the Global South", href: "/theology/history/the-global-church" },
 ];

@@ -15,6 +15,8 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 interface Section { id: string; kicker?: string; title: string; body: string }
 interface Essay {
   slug: string; title: string; subtitle: string; era: string; dateRange: string;
+  /** The essay's first title, kept under the plain one. */
+  standfirst?: string;
   sections: Section[]; keyFigures?: { name: string; note: string }[]; sources?: { title: string; author: string }[];
 }
 
@@ -54,6 +56,7 @@ export default function HistoryEssay() {
               <Link href="/theology/history" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Church History library</Link>.
             </p>
           )}
+          {data?.standfirst && <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "clamp(20px, 2.6vw, 26px)", lineHeight: 1.25, color: "var(--bone)", margin: "0 0 14px" }}>{data.standfirst}</p>}
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
         </div>
       </section>
