@@ -21,7 +21,6 @@ import { SectionHead } from "@/components/editorial/SectionHead";
 import SubjectShelf from "@/components/SubjectShelf";
 import HistoryTimeline from "@/components/history/HistoryTimeline";
 import { subjectById } from "@/lib/subjects";
-import { scrollBehavior } from "@/lib/motion";
 import { readStoredJSON } from "@/lib/storage";
 import {
   COURSE_PLACE_KEY, buildNameIndex, courseEssays, deeperEssays, entryId, isCoursePlace, kindOfAnchor, splitNames,
@@ -96,8 +95,13 @@ export default function TheologyHistory() {
     if (!target) return;
     const el = document.getElementById(target);
     if (!el) return;
-    el.scrollIntoView({ block: "start", behavior: scrollBehavior() });
-    el.focus({ preventScroll: true });
+    // Jump, do not glide: a glide started while the page is still laying out
+    // (a reader arriving from an essay) stops short of the entry.
+    const frame = requestAnimationFrame(() => {
+      el.scrollIntoView({ block: "start", behavior: "instant" });
+      el.focus({ preventScroll: true });
+    });
+    return () => cancelAnimationFrame(frame);
   }, [target, tab, councils.length, heresies.length, figures.length]);
 
   useEffect(() => {

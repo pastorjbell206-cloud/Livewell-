@@ -16,7 +16,6 @@ import { findAnswers } from "@/lib/findAnswers";
 import { Link } from "wouter";
 import { isPublicEssay } from "@/lib/shelf";
 import { copyToClipboard } from "@/lib/clipboard";
-import { scrollBehavior } from "@/lib/motion";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
@@ -50,7 +49,7 @@ export default function Answers() {
   };
   const backToQuestions = () => {
     const top = document.getElementById("questions");
-    top?.scrollIntoView({ block: "start", behavior: scrollBehavior() });
+    top?.scrollIntoView({ block: "start", behavior: "instant" });
     document.getElementById("answers-find")?.focus({ preventScroll: true });
     window.history.replaceState(null, "", window.location.pathname);
   };
