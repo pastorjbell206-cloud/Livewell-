@@ -102,7 +102,7 @@ function BookletCard({ b }: { b: Booklet }) {
     <article
       style={{
         display: "grid",
-        gridTemplateColumns: "minmax(min(120px, 100%), 180px) 1fr",
+        gridTemplateColumns: "minmax(96px, min(180px, 32%)) 1fr",
         gap: "var(--s-4)",
         alignItems: "start",
         background: "var(--card)",
