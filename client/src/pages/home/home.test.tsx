@@ -50,7 +50,7 @@ const said = (date: string) => {
 describe("homeTonight", () => {
   it("names the week's devotion on an ordinary night", () => {
     expect(said("2026-10-27")).toEqual({
-      tonight: "Tonight at the table: Strong Enough To Be Gentle.",
+      tonight: "Tonight at the table: Strong Enough to Be Gentle.",
       href: "/family/devotions/gentleness",
       advent: null,
     });
@@ -107,8 +107,8 @@ describe("Home's tonight line", () => {
   it("names tonight's devotion and links its page, without fetching anything for it", async () => {
     setToday(2026, 10, 27);
     const fetch = renderHome();
-    expect(await screen.findByTestId("home-tonight")).toHaveTextContent("Tonight at the table: Strong Enough To Be Gentle.");
-    expect(screen.getByRole("link", { name: "Strong Enough To Be Gentle" })).toHaveAttribute("href", "/family/devotions/gentleness");
+    expect(await screen.findByTestId("home-tonight")).toHaveTextContent("Tonight at the table: Strong Enough to Be Gentle.");
+    expect(screen.getByRole("link", { name: "Strong Enough to Be Gentle" })).toHaveAttribute("href", "/family/devotions/gentleness");
     expect(fetch.mock.calls.map(([url]) => String(url)).filter((u) => u.includes("family"))).toEqual([]);
     expect(screen.queryByTestId("home-continue")).toBeNull();
   });
