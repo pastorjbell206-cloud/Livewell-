@@ -57,7 +57,7 @@ Wording only. No fact, quotation, number, date, name or link was added, and ever
 - "The honest answer ..." lost "honest"; "It would also be unfair" and "A skeptic will push back here, and he has a point" were cut (the concession about Torcaso stands); "That is what it means to live well after Christendom" and the epigram after it were cut.
 - "Those of us who pastor have to admit something else, and I do not exempt myself" became "We pastors have something else to admit." See Biography below.
 - "Then Jeremiah named the competing prophets" became "Then Jeremiah warned them about the competing prophets" (29:8–9 names no one).
-- "A hermeneutic is a way of interpreting something" was folded into the next sentence ("people will not learn how to read the gospel mainly from arguments or campaigns").
+- "A hermeneutic is a way of interpreting something" was folded into the next sentence ("people will learn how to read the gospel less from arguments or campaigns than from a community ...", reworded in the voice pass; the meaning is unchanged).
 - The ending no longer repeats the "The question is not whether ... The question is whether" close of what-christian-nationalism-is-and-is-not. "Most of them never saw the return. Their grandchildren did." became "The faith their grandchildren carried home ..." with "Most of the exiles never saw theirs" kept in the last line.
 - Headings "A Missionary Comes Home" and "A Letter to Babylon" became "Lesslie Newbigin and the West as a Mission Field" and "Jeremiah's Letter to the Exiles".
 

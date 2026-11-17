@@ -96,6 +96,8 @@ Voice-only edits in the same pass (no fact changed): "Nobody needs a law against
 
 Not applied: "That means we can't pretend the verses aren't there, and we can't talk about them as if they were easy." was kept; the proposed replacement read less plainly than the sentence it replaced.
 
+Voice audit, 2026-11-17 (two wording edits, no fact changed): the help line of item 27 became "If these chapters have shaken your own faith, talk it through with someone."; "[Find Help](/help) has real people you can call." is unchanged. A proposed edit naming Copan and Flannagan's book by title was not applied (a voice pass adds no names); the essay still reads "a book under nearly the same title as this essay". Closing question: "whom we have quietly cast as Canaanites ourselves" became "whom we ourselves have quietly cast as Canaanites".
+
 ## Biography
 
 - "I have five sons." Verified. Checked against NOTES (confirmed biography). No other biography appears in the essay.

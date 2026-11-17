@@ -88,7 +88,7 @@ Paul's argument arrives where it was heading from the start: "for all have sinne
 
 Mark tells of a man who ran up to Jesus, knelt in front of him, and asked, "Good Teacher, what must I do to inherit eternal life?" Jesus answered with a question first: "Why do you call me good? No one is good except God alone" (Mark 10:17–18). Then he listed commandments, and the man said he had kept them all since he was young. By any ordinary measure he was a good man. Jesus did not dispute it. Mark adds a detail the other Gospels leave out: "And Jesus, looking at him, loved him" (Mark 10:21).
 
-Jesus didn't despise the man's goodness. He told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him. The man went away grieving, because he had great wealth. When the disciples asked who could possibly be saved, Jesus said, "With man it is impossible, but not with God. For all things are possible with God" (Mark 10:27).
+Then he told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him. The man went away grieving, because he had great wealth. When the disciples asked who could possibly be saved, Jesus said, "With man it is impossible, but not with God. For all things are possible with God" (Mark 10:27).
 
 "No one is good except God alone" tells us where goodness comes from, and it was spoken by the one person who could have said it of himself. It takes nothing away from George Eliot or from the decent unbeliever down the street. The duty Eliot felt so absolutely was real. But the law she served was not impersonal after all. It comes from the same God who, in Jesus, looked at a man who had kept the commandments all his life and loved him enough to tell him the truth.
 
@@ -96,7 +96,7 @@ If you don't believe, no one is asking you to stop being good. The question is w
 
 For Christians there is a second question. What does our goodness tell the people watching us about God?
 
-The hope of the gospel is that the only one who is good came looking for people who were not.
+The only one who is good came looking for people who were not.
 
 *"They show that the work of the law is written on their hearts, while their conscience also bears witness."* (Romans 2:15)
 
