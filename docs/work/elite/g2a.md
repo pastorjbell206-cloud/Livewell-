@@ -25,8 +25,8 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 ## Where this share stands
 
-Done, committed and pushed: 1 to 14 (after-christendom through deep-roots).
-Not started: 15 to 20 (doubt through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the fourth did contentment, deconstruction and deep-roots. The next run should start at doubt, then economic-justice.
+Done, committed and pushed: 1 to 17 (after-christendom through end-times).
+Not started: 18 to 20 (fatherhood, forgiveness, friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the fourth did contentment, deconstruction and deep-roots. The fifth run did doubt, economic-justice and end-times. The next run should start at fatherhood.
 
 Third run notes: christian-nationalism and church-and-empire each carry 25 short devotionals (five per session); these were rewritten too, keeping each day's title and passage, as the pastoral-health pilot did. Neither guide nor character-before-competence had help lines.
 
@@ -77,14 +77,20 @@ Third run (character-before-competence, christian-nationalism, church-and-empire
 
 Fourth run (contentment, deconstruction, deep-roots): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed after the last guide; pnpm check passed; pnpm test 144 files passed, 7 skipped, 1640 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 2 (Burroughs's definition of contentment, found; the authors of Surprised by Doubt, Chatraw and Carson). Deconstruction keeps all seven of its abuse and reporting sentences word for word, checked by script. Contentment and deep-roots had no help lines. Every case study in deconstruction was told as a real pastor's story; all five are now framed as "Suppose".
 
+
+Fifth run (doubt, economic-justice, end-times): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed after the last guide; pnpm check passed; pnpm test 144 files passed, 7 skipped, 1640 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 1 (Lewis, The Problem of Pain, the doors of hell locked on the inside; found). Doubt is crisis-facing but its old file carried no help lines (no 988, hotline, counselor or police sentence; checked by script), so none could be lost; its path to help is the Find Help block the page renders, which this work didn't touch. Because session 4 discusses abuse by church leaders, I added a few plain sentences (session 4 teaching and discussion note, the primer, one FAQ): believe the person, talk privately, and where someone is in danger help them reach police, child protective services, or an advocate outside the church. Economic-justice's 25 devotionals were rewritten, keeping each day's title and passage.
 ## What I did not do or verify
 
-- Guides 15 to 20 (doubt through friendship) are not rewritten.
+- Guides 18 to 20 (fatherhood, forgiveness, friendship) are not rewritten.
 - ESV wording was quoted from memory; there is no ESV in the repository to check against.
 - Book dates and titles marked "Known" in the ledger were not searched.
 - PDFs were not rebuilt (another unit owns pnpm pdfs).
 
 ## What only James can supply
+
+9. Doubt: I added sentences about responding to abuse (believe, talk privately, police or child protective services or an outside advocate). If he wants different wording, or a named help line, it's in session 4 and the leader primer.
+10. Economic-justice: the five-sons line is kept once (session 2, the shirt made by hands he'll never meet). Keller and Wright are no longer credited with two lines I couldn't verify; if he has the page references, the attributions can return.
+11. End-times: the old guide says he'll tell people privately where he leans on the millennium. I kept that sentence and stated no position. If he wants his view named, it belongs in session 2 with the objection he can't fully answer.
 
 7. Deep Roots: the guide was drawn from his book Deep Roots, which isn't on the three-book shelf, so the plugs are gone (the guide's own title stays). Tell me if the book should be offered.
 8. Contentment and deconstruction each gave his biography as a credential in the summary and FAQ; I cut it. Deep Roots keeps his atheism once, in the leader's primer, where it explains why the study translates terms.
