@@ -482,7 +482,7 @@ export const LIBRARIES = {
 
 function answerItems() {
   return ANSWERS.map((a) =>
-    item({ kind: "Answer", title: a.question, summary: clip(a.paragraphs?.[0]), href: `/answers#${a.slug}` })
+    item({ kind: "Answer", title: a.question, summary: clip(a.paragraphs?.[0]), href: `/answers/${a.slug}` })
   );
 }
 

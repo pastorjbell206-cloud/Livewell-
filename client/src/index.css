@@ -1644,3 +1644,186 @@ html{-webkit-tap-highlight-color:transparent}
 .hx-rooms{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media (max-width:900px){.hx-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hp-sec,.qa-index,.qa-page{padding-top:var(--s-4)}
+
+/* START WHERE YOU ARE (pages/Start.tsx): the five roads as picture cards, the
+   open road's steps with a tick each, and "Pick up where you left off". Then
+   Home's quiet row of the same five, under Find and tonight's line; those
+   chips are in the static hero too (scripts/prerender-heads.mjs). Tokens only. */
+.st-choose{background:var(--bone);padding:var(--s-2) var(--gutter) var(--s-5)}
+.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s-3)}
+.st-cards>li{display:flex}
+.st-card{flex:1;display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none}
+.st-card .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.st-card:hover .lw-frame,.st-card:focus-visible .lw-frame{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--art-ink)}
+.st-card[aria-current="true"] .lw-frame{box-shadow:6px 6px 0 var(--mustard);transform:translate(-3px,-3px)}
+.st-card__text{display:block;margin-top:12px}
+.st-card__name{display:block;font-family:var(--F);font-weight:400;font-size:clamp(1.3rem,1rem + .8vw,1.65rem);line-height:1.1;letter-spacing:-.01em}
+.st-card[aria-current="true"] .st-card__name{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:.18em}
+.st-card__note{display:block;font-family:var(--U);font-size:14px;line-height:1.4;color:var(--ink-muted);margin-top:4px}
+.st-resume{display:flex;align-items:center;gap:12px;margin:0 0 var(--s-4);padding:10px 16px;border:1.5px solid var(--ink);font-family:var(--U);font-size:16px;line-height:1.45}
+.st-resume svg{flex:none;color:var(--ink-muted)}
+.st-resume a{display:inline-flex;align-items:center;min-height:44px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.2em}
+.st-road{background:var(--bone-warm);padding:var(--s-6) var(--gutter);scroll-margin-top:72px;outline:none}
+.st-road__wrap{max-width:var(--w-content);margin:0 auto}
+.st-road__title{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.015em;color:var(--ink);margin:0}
+.st-road__how{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
+.st-steps{list-style:none;margin:var(--s-4) 0 0;padding:0;border-top:1.5px solid var(--ink)}
+.st-step{display:grid;grid-template-columns:52px minmax(0,1fr);gap:var(--s-3);padding:var(--s-3) 0;border-bottom:1px solid var(--borderdk)}
+.st-tick{display:grid;place-items:center;width:48px;height:48px;padding:0;border:1.5px solid var(--art-ink);border-radius:50%;background:var(--art-paper);color:var(--ink);font-family:var(--F);font-size:22px;line-height:1;cursor:pointer}
+.st-tick:hover{box-shadow:3px 3px 0 var(--art-clay)}
+.st-tick[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+.st-step.is-next .st-tick{border-color:var(--mustard);border-width:2px}
+.st-step__title{font-family:var(--F);font-weight:400;font-size:clamp(1.4rem,1.1rem + .9vw,1.85rem);line-height:1.12;letter-spacing:-.01em;color:var(--ink);margin:8px 0 6px}
+.st-step__line{font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink);max-width:62ch;margin:0 0 6px}
+.st-step.is-done .st-step__title,.st-step.is-done .st-step__line{color:var(--ink-muted)}
+.st-step.is-done .st-step__line{display:none}
+.st-step__go{gap:8px;margin-top:6px}
+.st-step__link{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-family:var(--U);font-size:16px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.22em}
+.st-step__link svg{color:var(--ink-muted)}
+.st-foot{margin-top:var(--s-5)}
+.st-foot p,.st-next{font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink-muted);max-width:62ch}
+.st-foot a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em;padding:12px 0}
+.st-foot__back{margin:0}
+.st-foot__title{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-4) 0 var(--s-1)}
+.st-next{list-style:none;margin:0;padding:0;color:var(--ink)}
+.st-next li{padding:10px 0;border-top:1px solid var(--borderdk)}
+.st-foot__quiz{margin:var(--s-3) 0 0}
+.st-help{background:var(--bone);padding:var(--s-4) var(--gutter) var(--s-6)}
+.st-road+.st-help{padding-top:var(--s-5)}
+@media (max-width:1000px){
+  .st-cards{grid-template-columns:minmax(0,1fr);gap:10px}
+  .st-card{flex-direction:row;align-items:center;gap:var(--s-2)}
+  .st-card .lw-frame-fig{flex:0 0 104px}
+  .st-card .lw-frame{padding:3px}
+  .st-card__text{margin:0}
+  .st-card:hover .lw-frame,.st-card:focus-visible .lw-frame{transform:none;box-shadow:none}
+  .st-card[aria-current="true"] .lw-frame{transform:none;box-shadow:3px 3px 0 var(--mustard)}
+}
+@media (max-width:760px){
+  .st-step{grid-template-columns:48px minmax(0,1fr);gap:12px}
+  .st-road{padding-top:var(--s-5);padding-bottom:var(--s-5)}
+}
+
+.home-roads{margin:var(--s-2) 0 0}
+.home-roads__label{font-family:var(--U);font-weight:500;font-size:.75rem;line-height:1.5;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 6px}
+.home-roads__list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.home-road{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--borderdk);border-radius:var(--radius-pill);background:transparent;color:var(--ink);font-family:var(--U);font-weight:500;font-size:14px;line-height:1.2;text-decoration:none;white-space:nowrap}
+.home-road:hover{border-color:var(--ink)}
+@media (max-width:900px){.home-roads{margin-top:var(--s-1)}}
+
+/* THE FAMILY DOOR (pages/Family.tsx, pages/family/WeekGlance.tsx): tonight
+   beside the table plate, the week in four rows, the How to shelf as four
+   ruled groups, and the rest of the home as closed rows. Tokens only. */
+.fm-tonight{padding-top:var(--s-6);padding-bottom:var(--s-6)}
+.fm-two{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s-6);align-items:start}
+.fm-two .tb-tonight{background:var(--card)}
+.fm-two__art .lw-frame__in{aspect-ratio:4 / 3}
+.fm-other{margin-top:var(--s-3);border-top:1px solid var(--borderdk)}
+.fm-other__btn,.fm-fold>summary{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:8px 0;border:0;background:transparent;color:var(--ink);font-family:var(--U);font-size:16px;font-weight:500;text-align:left;cursor:pointer;list-style:none}
+.fm-fold>summary::-webkit-details-marker{display:none}
+.fm-other__btn svg:first-child{color:var(--ink-muted)}
+.fm-chev{margin-left:auto;flex:none;color:var(--ink-muted);transition:transform .2s var(--motion-ease)}
+.fm-other__btn[aria-expanded="true"] .fm-chev,.fm-fold[open]>summary .fm-chev{transform:rotate(180deg)}
+.fm-other .tb-choose{padding-bottom:var(--s-2)}
+.fw-week{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s-5)}
+.fw-row{display:flex;align-items:center;gap:16px;min-height:84px;padding:14px 0;border-top:1px solid var(--borderdk);color:var(--ink);text-decoration:none}
+.fw-row__text{min-width:0}
+.fw-row__label{display:block;font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mustard-text)}
+.fw-row__title{display:block;font-family:var(--F);font-size:23px;line-height:1.15;margin-top:3px}
+.fw-row__note{display:block;font-family:var(--U);font-size:14px;line-height:1.4;color:var(--ink-muted);margin-top:3px}
+.fw-row:hover .lw-tile__icon,.fw-row:focus-visible .lw-tile__icon{transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--art-clay)}
+.fw-row:hover .fw-row__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.fm-howto{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-4) var(--s-5)}
+.fm-howto__title{display:flex;align-items:center;gap:14px;font-family:var(--F) !important;font-weight:400;font-size:24px;line-height:1.15;color:var(--ink);margin:0 0 8px}
+.fm-links{list-style:none;margin:0;padding:0}
+.fm-links li{border-top:1px solid var(--borderdk)}
+.fm-links a{display:flex;align-items:center;min-height:48px;padding:8px 0;font-family:var(--U);font-size:15px;line-height:1.35;color:var(--ink);text-decoration:none}
+.fm-links a:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.fm-more{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s-5);align-items:start}
+.fm-fold{border-top:1px solid var(--borderdk)}
+.fm-fold>summary{font-family:var(--F);font-size:23px;font-weight:400}
+.fm-fold__body{padding:0 0 var(--s-3)}
+.fm-fold__body .tb-different>.tb-section__title{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.fm-help{margin-top:var(--s-5)}
+@media (max-width:900px){
+  .fm-two{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
+  .fm-two__art{display:none}
+  .fm-tonight{padding-top:var(--s-4);padding-bottom:var(--s-4)}
+  .fw-week,.fm-howto,.fm-more{grid-template-columns:minmax(0,1fr)}
+  .fw-row{min-height:72px}
+  .fw-row__title{font-size:20px}
+}
+
+/* THE CATECHISM SAID ALOUD (pages/family/CatechismPractice.tsx): a card that
+   turns from the question to the answer. Both faces share one grid cell, so
+   the card holds the taller face's height and nothing moves when it turns;
+   the global reduced-motion rule removes the turn's transition. */
+.cp-howto{margin:var(--s-1) 0 0;font-family:var(--U);font-size:15px}
+.cp-howto a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.cp-sec{padding-top:var(--s-6);padding-bottom:var(--s-6)}
+.cp{max-width:760px}
+.cp-count{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--charcoal-fg-muted);margin:0 0 12px}
+.cp-card{display:block;width:100%;padding:0;border:0;background:transparent;color:var(--ink);text-align:left;cursor:pointer;perspective:1600px}
+.cp-card__inner{display:grid;transition:transform .5s var(--motion-ease);transform-style:preserve-3d}
+.cp-card.is-turned .cp-card__inner{transform:rotateY(180deg)}
+.cp-face{grid-area:1/1;display:flex;flex-direction:column;justify-content:center;gap:10px;min-height:280px;padding:clamp(22px,4vw,44px);background:var(--art-paper);border:1.5px solid var(--art-ink);box-shadow:inset 0 0 0 5px var(--art-paper),inset 0 0 0 6px var(--art-ink);backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.cp-face--back{transform:rotateY(180deg)}
+.cp-face__label{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text)}
+.cp-face__q{font-family:var(--F);font-weight:400;font-size:clamp(2rem,1.4rem + 2.4vw,3.25rem);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+.cp-face__hint{display:inline-flex;align-items:center;gap:8px;margin-top:8px;font-family:var(--U);font-size:14px;color:var(--ink-muted)}
+.cp-face__kids{font-family:var(--F);font-size:clamp(1.6rem,1.2rem + 1.4vw,2.25rem);line-height:1.15;margin-bottom:8px}
+.cp-face__a{font-family:var(--B);font-size:17px;line-height:1.6}
+.cp-card:focus-visible .cp-face{outline:2px solid var(--mustard);outline-offset:3px}
+.cp-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:var(--s-3)}
+.cp-controls .home-step{color:var(--charcoal-fg)}
+.cp-read{gap:8px;color:var(--charcoal-fg);border-color:var(--charcoal-line)}
+.cp-read:hover{border-color:var(--charcoal-fg)}
+@media (max-width:760px){.cp-face{min-height:240px}}
+
+/* THE ESSAY SHELF (pages/Writing.tsx): one essay to start with under its
+   plate, then each section under its own drawn mark, every essay dated. */
+.wr-all{margin:var(--s-2) 0 0;font-family:var(--U);font-size:15px}
+.wr-all a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wr-lead-sec{padding-top:var(--s-6);padding-bottom:var(--s-6)}
+.wr-lead{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:var(--s-5);align-items:center;color:var(--ink);text-decoration:none}
+.wr-lead .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.wr-lead:hover .lw-frame,.wr-lead:focus-visible .lw-frame{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--art-ink)}
+.wr-lead__text{display:block}
+.wr-lead__title{display:block;font-family:var(--F);font-weight:400;font-size:clamp(2rem,1.4rem + 2.2vw,3.25rem);line-height:1.04;letter-spacing:-.02em;text-wrap:balance}
+.wr-lead__blurb{display:block;font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink-muted);margin-top:12px;max-width:44ch}
+.wr-lead__go{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin-top:8px;font-family:var(--U);font-weight:500;font-size:15px;border-bottom:1.5px solid var(--mustard)}
+.wr-shelf{padding-top:var(--s-5)}
+.wr-group{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--s-3) var(--s-5);padding:var(--s-5) 0;border-top:1.5px solid var(--ink);scroll-margin-top:96px}
+.wr-group:first-child{border-top:0;padding-top:0}
+.wr-group__head{display:flex;flex-direction:column;gap:14px;min-width:0}
+.wr-group__mark{max-width:200px}
+.wr-group__name{font-family:var(--F);font-weight:400;font-size:clamp(1.5rem,1.2rem + 1vw,2rem);line-height:1.12;letter-spacing:-.01em;color:var(--ink);margin:0;text-wrap:balance}
+.wr-group__name a{color:inherit;text-decoration:none}
+.wr-group__name a:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.16em}
+.wr-list{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--borderdk)}
+.wr-item{display:block;padding:14px 0;border-top:1px solid var(--borderdk);color:var(--ink);text-decoration:none}
+.wr-list li:first-child .wr-item{border-top:1.5px solid var(--ink)}
+.wr-item__title{display:block;font-family:var(--F);font-weight:400;font-size:23px;line-height:1.2}
+.wr-item:hover .wr-item__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.wr-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;min-height:20px;margin-top:6px;font-family:var(--U);font-size:13px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.wr-meta__saved{display:inline-flex;align-items:center;gap:5px;color:var(--ink);font-weight:600}
+@media (max-width:900px){
+  .wr-lead{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
+  .wr-group{grid-template-columns:minmax(0,1fr);padding:var(--s-4) 0}
+  .wr-group__head{flex-direction:row;align-items:center}
+  .wr-group__mark{flex:0 0 96px}
+  .wr-group__mark .lw-frame{padding:3px}
+  .wr-item__title{font-size:21px}
+}
+
+/* THE ESSAY'S CONTROLS (pages/ArticleDetail.tsx): Listen and "Aa" above the
+   text; Save, Share and Print after it, with Share opening in place. */
+.essay-aa{font-family:var(--F) !important;font-size:20px !important;letter-spacing:.01em;min-width:44px}
+.essay-aa__panel{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:0 0 12px}
+.essay-aa__panel[hidden]{display:none}
+.essay-end{margin:var(--s-5) auto 0;padding-top:var(--s-4);border-top:1px solid var(--border)}
+.essay-end__row{display:flex;flex-wrap:wrap;gap:8px}
+.essay-end__status:not(:empty){padding:10px 0 0}
+.essay-end__share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card)}
+.essay-end__share[hidden]{display:none}
+.essay-end__share>a,.essay-end__share>button,.essay-end__share>div>button{color:var(--ink) !important;border-color:var(--border) !important}

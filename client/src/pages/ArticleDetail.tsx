@@ -8,11 +8,11 @@
  * - The body is one centered reading column (var(--w-read)) set in the
  *   reading face (--font-reading); its size is the --fs-read token scaled by
  *   the reader's own choice (--read-scale)
- * - The head is the title block alone. One quiet row of tools sits above the
- *   body: Listen (the device's own voice), Text size, Save and Focus. Save is
- *   My Library (lib/library), the one save store, which also reads the page's
- *   older bookmarks. Send, Print and Cite are after the essay; Focus mode
- *   keeps every action reachable
+ * - The head is the title block alone. Two controls sit above the body:
+ *   Listen (the device's own voice) and "Aa" (text size and Focus). One row
+ *   follows the essay: Save (My Library, lib/library, the one save store),
+ *   Share (Copy link, Facebook, Cite, Send to my phone, the three notes, the
+ *   group guide) and Print. Focus mode keeps every action reachable
  * - Printing gives the title, byline, and text; the rest is .no-print
  * - The essay's first sentence is on the first screen of a phone (U04): a
  *   16px gutter and tighter air (.essay-* in index.css), the contents line
@@ -20,7 +20,7 @@
  *   after the opening section; generated art is not drawn.
  * - Crossway's notice follows an essay that quotes the ESV (lib/esv)
  */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { scrollBehavior } from "@/lib/motion";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
@@ -28,10 +28,10 @@ import { useQuery } from "@tanstack/react-query";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
-import { Bookmark, BookmarkCheck, BookOpen, Share2 } from "lucide-react";
+import { Bookmark, BookmarkCheck, BookOpen, ChevronDown, Printer, Share2 } from "lucide-react";
 
 import Layout from "@/components/Layout";
-import { SAVE_FAILED, TakeItWithYou } from "@/components/TakeItWithYou";
+import { SAVE_FAILED, SendButton, takeButton } from "@/components/TakeItWithYou";
 import { libraryPath, removeFromLibrary, saveToLibrary, useLibrary } from "@/lib/library";
 import { smartQuotes } from "@/lib/smartQuotes";
 import { ListenButton } from "@/components/ListenButton";
@@ -371,16 +371,15 @@ function TableOfContents({
 }
 
 /**
- * EssayTools: the one row of reading tools above an essay. Listen, text size,
- * Save and Focus, set quietly between two hairlines (.essay-tools in
- * index.css) so nothing here competes with the first sentence. Save writes to
- * My Library on this device and says so, or says plainly that it could not.
+ * EssayTools: the one row above an essay, two controls only (WAVE-1, "Essay
+ * chrome"): Listen (the device's own voice) and "Aa", which opens the
+ * reader's text size and Focus in place. Set quietly between two hairlines
+ * (.essay-tools in index.css) so nothing here competes with the first
+ * sentence. Save, Share and Print wait at the end of the essay.
  */
 function EssayTools({
   title,
   author,
-  href,
-  date,
   bodyRef,
   measure,
   textSize,
@@ -389,38 +388,89 @@ function EssayTools({
 }: {
   title: string;
   author: string;
-  href: string;
-  date: string;
   bodyRef: React.RefObject<HTMLDivElement | null>;
   measure: string;
   textSize: ReturnType<typeof useTextSize>;
   focus: boolean;
   onFocus: () => void;
 }) {
-  const path = libraryPath(href);
-  const saved = useLibrary().some((i) => i.href === path);
-  const [status, setStatus] = useState<"" | "saved" | "removed" | "failed">("");
-  const toggleSave = () => {
-    const ok = saved ? removeFromLibrary(path) : saveToLibrary({ href: path, title, kind: "Essay", date: date || undefined });
-    setStatus(ok ? (saved ? "removed" : "saved") : "failed");
-  };
+  const [open, setOpen] = useState(false);
+  const panelId = useId();
   return (
     <div className="no-print essay-tools" role="group" aria-label="Reading tools" style={{ maxWidth: measure }}>
       <div className="essay-tools__row">
         <ListenButton target={bodyRef} title={title} byline={`By ${author}`} />
         <div className="essay-tools__set">
-          <TextSize size={textSize.size} onChange={textSize.setSize} saveFailed={textSize.saveFailed} />
-          <button type="button" onClick={toggleSave} aria-pressed={saved} style={shareTrigger}>
-            {saved ? <BookmarkCheck size={16} aria-hidden /> : <Bookmark size={16} aria-hidden />}
-            {saved ? "Saved" : "Save"}
-          </button>
-          <button type="button" onClick={onFocus} aria-pressed={focus} style={shareTrigger}>
-            <BookOpen size={16} aria-hidden />
-            {focus ? "Exit focus" : "Focus"}
+          <button type="button" className="essay-aa" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={panelId} style={shareTrigger}>
+            <span aria-hidden="true">Aa</span>
+            <span className="sr-only">Text size and focus</span>
           </button>
         </div>
       </div>
-      <p aria-live="polite" className="essay-tools__status">
+      <div id={panelId} hidden={!open} className="essay-aa__panel">
+        <TextSize size={textSize.size} onChange={textSize.setSize} saveFailed={textSize.saveFailed} />
+        <button type="button" onClick={onFocus} aria-pressed={focus} style={shareTrigger}>
+          <BookOpen size={16} aria-hidden />
+          {focus ? "Exit focus" : "Focus"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * EssayEnd: one row after the essay: Save, Share, Print. Share opens in place
+ * and holds every way to pass the essay on that the page had before: Copy
+ * link and Share on Facebook, Cite this, Send to my phone, the three notes
+ * (a skeptic, a pastor, a spouse), and the small-group guide where one
+ * exists. Save writes to My Library on this device and says so, or says
+ * plainly that it could not.
+ */
+function EssayEnd({
+  title,
+  author,
+  path,
+  url,
+  summary,
+  date,
+  groupGuide,
+  measure,
+}: {
+  title: string;
+  author: string;
+  path: string;
+  url: string;
+  summary?: string;
+  date: string;
+  groupGuide: string | null;
+  measure: string;
+}) {
+  const lib = libraryPath(path);
+  const saved = useLibrary().some((i) => i.href === lib);
+  const [status, setStatus] = useState<"" | "saved" | "removed" | "failed">("");
+  const [open, setOpen] = useState(false);
+  const panelId = useId();
+  const toggleSave = () => {
+    const ok = saved ? removeFromLibrary(lib) : saveToLibrary({ href: lib, title, kind: "Essay", date: date || undefined });
+    setStatus(ok ? (saved ? "removed" : "saved") : "failed");
+  };
+  return (
+    <div className="no-print essay-end" role="group" aria-label="Keep or pass on this essay" style={{ maxWidth: measure }}>
+      <div className="essay-end__row">
+        <button type="button" onClick={toggleSave} aria-pressed={saved} style={takeButton}>
+          {saved ? <BookmarkCheck size={16} aria-hidden /> : <Bookmark size={16} aria-hidden />}
+          {saved ? "Saved" : "Save"}
+        </button>
+        <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={panelId} style={takeButton}>
+          <Share2 size={16} aria-hidden />
+          Share
+          <ChevronDown size={16} aria-hidden style={{ transform: open ? "rotate(180deg)" : "none" }} />
+        </button>
+        <button type="button" onClick={() => window.print()} style={takeButton}>
+          <Printer size={16} aria-hidden /> Print
+        </button>
+      </div>
+      <p aria-live="polite" className="essay-tools__status essay-end__status">
         {status === "saved" && (
           <>
             Saved to <Link href="/my-library">My Library</Link>, in this browser.
@@ -429,6 +479,19 @@ function EssayTools({
         {status === "removed" && "Removed from My Library."}
         {status === "failed" && SAVE_FAILED}
       </p>
+      <div id={panelId} hidden={!open} className="essay-end__share" role="region" aria-label="Share this essay">
+        {/* Plain sharing first: the link itself, and Facebook by name. */}
+        <EssayShare url={url} />
+        <CitationCopy title={title} url={url} publishedDate={date} author={author} />
+        <SendButton title={title} href={path} summary={summary} label="Send to my phone" />
+        {/* Three-audience share: a skeptic, a pastor, a spouse */}
+        <AudienceShare title={title} url={url} />
+        {groupGuide && (
+          <Link href={groupGuide} style={{ ...shareTrigger, color: "var(--ink)" }}>
+            Use this with your small group
+          </Link>
+        )}
+      </div>
     </div>
   );
 }
@@ -843,8 +906,6 @@ export default function ArticleDetail() {
             key={post.slug}
             title={post.title}
             author={author}
-            href={essayPath}
-            date={publishedIso}
             bodyRef={bodyRef}
             measure={measure}
             textSize={textSize}
@@ -917,42 +978,19 @@ export default function ArticleDetail() {
               admin dashboard's "Essays finished" tile. */}
           <div ref={bodyEndRef} aria-hidden style={{ height: 1 }} />
 
-          {/* Reader actions after the essay, in both modes: save and send
-              (the same My Library entry as the bar under the byline), then
-              cite, send to someone else, and the small-group guide. */}
-          <div
-            className="no-print"
-            style={{
-              maxWidth: measure,
-              margin: "var(--s-5) auto 0",
-              paddingTop: "var(--s-4)",
-              borderTop: "1px solid var(--border)",
-            }}
-          >
-            <TakeItWithYou
-              title={post.title}
-              kind="Essay"
-              href={essayPath}
-              summary={summary}
-              date={publishedIso}
-              print
-              extra={
-                <>
-                  {/* Plain sharing first: Facebook by name, and the link itself. */}
-                  <EssayShare url={canonical} />
-                  <CitationCopy title={post.title} url={canonical} publishedDate={publishedIso} author={author} />
-                  {/* Three-audience share: a skeptic, a pastor, a spouse */}
-                  <AudienceShare title={post.title} url={canonical} />
-                  {/* Pastor distribution: hand this essay to a whole small group */}
-                  {post.slug && DISCUSSION_GUIDES[post.slug] && (
-                    <Link href={`/group-guide/${post.slug}`} style={{ ...shareTrigger, color: "var(--ink)" }}>
-                      Use this with your small group
-                    </Link>
-                  )}
-                </>
-              }
-            />
-          </div>
+          {/* After the essay, in both modes: Save, Share (Copy link, Facebook,
+              Cite, Send to my phone, the three notes, the group guide) and Print. */}
+          <EssayEnd
+            key={post.slug}
+            title={post.title}
+            author={author}
+            path={essayPath}
+            url={canonical}
+            summary={summary}
+            date={publishedIso}
+            groupGuide={post.slug && DISCUSSION_GUIDES[post.slug] ? `/group-guide/${post.slug}` : null}
+            measure={measure}
+          />
         </section>
 
         {/* AFTER THE ESSAY: hidden in reading-focus mode, and never printed.

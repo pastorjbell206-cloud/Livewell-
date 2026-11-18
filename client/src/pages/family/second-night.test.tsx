@@ -131,6 +131,8 @@ describe("a devotion for tonight", () => {
     at(new Date(2026, 10, 3, 19));
     serveFamily();
     const first = renderAt("/family");
+    // "A different night?" opens the chooser in place.
+    fireEvent.click(await screen.findByRole("button", { name: /A different night\?/ }));
     const chooser = (await screen.findByRole("heading", { level: 2, name: "A devotion for tonight" })).closest("section")!;
     expect(within(chooser).queryByRole("link", { name: "Start at the table" })).toBeNull();
 
@@ -149,6 +151,7 @@ describe("a devotion for tonight", () => {
 
     // The next night it is one tap, and an ordinary night is the calendar's devotion.
     renderAt("/family");
+    fireEvent.click(await screen.findByRole("button", { name: /A different night\?/ }));
     const again = (await screen.findByRole("heading", { level: 2, name: "A devotion for tonight" })).closest("section")!;
     expect(within(again).getByRole("radio", { name: "Eleven and up" })).toBeChecked();
     fireEvent.click(within(again).getByRole("radio", { name: "An ordinary night" }));

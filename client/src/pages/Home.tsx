@@ -37,7 +37,9 @@ import { useNear } from "@/components/art/useNear";
 import { BOOK_SHELF } from "@/lib/bookShelf";
 import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
 import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
+import { followHash } from "@/lib/followHash";
 import HomeFind from "./home/HomeFind";
+import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
 import "./home/home.css";
 
@@ -124,6 +126,26 @@ const MORE_DOORS: Door[] = [
   { title: "Find James", href: "/connect", plate: "letter" },
 ];
 
+/** "Start where you are": the five roads of /start as one quiet row of chips (home/roadChips.ts). */
+function RoadChips() {
+  return (
+    <nav className="home-roads" aria-labelledby="home-roads-label">
+      <p id="home-roads-label" className="home-roads__label">
+        Start where you are
+      </p>
+      <ul className="home-roads__list">
+        {ROAD_CHIPS.map((r) => (
+          <li key={r.id}>
+            <Link href={`/start#${r.id}`} className="home-road" onClick={() => followHash(`/start#${r.id}`)}>
+              {r.chip}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
 /** The first public essay the shelf says to start with, for the desk. */
 function leadEssay() {
   const slug = START_WITH.find((s) => isPublicEssay(s));
@@ -188,6 +210,8 @@ export default function Home() {
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />
+            {/* The five roads of /start, one chip each. */}
+            <RoadChips />
           </div>
           <PlateFrame className="home-hero__art" ratio={null} number="Plate I" title="The road">
             <RoadPlate />

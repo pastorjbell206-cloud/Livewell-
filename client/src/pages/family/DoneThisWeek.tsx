@@ -32,7 +32,7 @@ const isPlans = (x: unknown): x is Plan[] =>
   Array.isArray(x) && x.every((p) => typeof p?.id === "string" && typeof p?.title === "string" && Array.isArray(p?.days));
 
 /** Today's day in the first plan this family has started and not finished. */
-function usePlanToday(today: string): { title: string; day: number; total: number; passage: string } | null {
+export function usePlanToday(today: string): { title: string; day: number; total: number; passage: string } | null {
   const [starts] = useState(() => readPlanStarts().starts);
   const [plans, setPlans] = useState<Plan[] | null>(null);
   const any = Object.keys(starts).length > 0;

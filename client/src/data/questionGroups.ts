@@ -115,4 +115,4 @@ export const QUESTION_GROUPS: QuestionGroup[] = [
  * whole of /answers, which the door already offers; the neighbours row asks
  * the same question as the Honest Answer on Jesus as the only way.
  */
-export const ROWS_HELD_ELSEWHERE = new Set(["/answers", "/answers#is-jesus-the-only-way"]);
+export const ROWS_HELD_ELSEWHERE = new Set(["/answers", "/answers/is-jesus-the-only-way"]);

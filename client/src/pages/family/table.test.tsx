@@ -92,11 +92,12 @@ describe("/family", () => {
     // A family starts the catechism at question 1, not at the calendar's question (audit 2026-11, F4).
     const q = INDEX.catechism[0];
     expect(catechismWeekIndex(when, INDEX.catechism.length)).not.toBe(0);
-    expect(screen.getByText("Your place in the catechism · Question 1")).toBeInTheDocument();
-    expect(screen.getByText(q.question)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Thanksgiving week\s*November 20 to 26/ })).toHaveAttribute("href", "/family/devotions?tab=thanksgiving");
+    // The week at a glance: the family's question, and the season's sets.
+    const week = screen.getByRole("list", { name: "This week" });
+    expect(within(week).getByRole("link", { name: new RegExp(`Your question 1\\s*${q.question.replace(/[?]/g, "\\?")}`) })).toHaveAttribute("href", "/family/catechism");
+    expect(within(week).getByRole("link", { name: /Thanksgiving week\s*November 20 to 26/ })).toHaveAttribute("href", "/family/devotions?tab=thanksgiving");
 
-    expect(screen.getByRole("heading", { level: 1, name: "Disciple your whole family, in one place." })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "Faith at the family table" })).toBeInTheDocument();
     expect(requests.some((u) => u.includes("posts.listPublished"))).toBe(false);
     expect(requests.some((u) => u.includes("/family-devotions"))).toBe(false); // the card reads the index alone
   });

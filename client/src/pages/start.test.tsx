@@ -1,60 +1,159 @@
 /**
- * /start: the road for someone new. Every link is a registered route, the
- * steps come in order with one link each, the counts the copy states still
- * match the site's own data, and the path to help stays on the page.
+ * /start, "Start where you are": five roads, one for each person the site is
+ * for. Every step links a page that exists and does not redirect, every road
+ * is four to six steps, the road for someone new is the six steps it was,
+ * the road for someone who stepped back meets church hurt first, the counts
+ * the copy states still match the data, ticks survive a reload, and Home's
+ * chips name the same five roads.
  */
-import { describe, it, expect, vi, afterEach } from "vitest";
-import { screen, within } from "@testing-library/react";
+import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
+import { fireEvent, screen, within } from "@testing-library/react";
 import fs from "node:fs";
 import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { ROADS, START_ROADS_KEY, readRoadProgress } from "@/lib/startRoads";
+import { isPublicEssayHref } from "@/lib/shelf";
+import { ROAD_CHIPS } from "./home/roadChips";
 import Start, { START_NEXT, START_STEPS } from "./Start";
+import { ANSWERS } from "@/data/answers";
 
 const ROOT = path.resolve(__dirname, "../../..");
 const read = (file: string) => fs.readFileSync(path.join(ROOT, file), "utf8");
 const json = (file: string) => JSON.parse(read(file));
+const exists = (file: string) => fs.existsSync(path.join(ROOT, file));
 
+/** The routes App.tsx registers, and the redirects vercel.json holds. */
+const ROUTES: string[] = Array.from(read("client/src/App.tsx").matchAll(/<Route path="([^"]+)"/g), (m) => m[1]);
+const REDIRECTS = new Set((json("vercel.json").redirects as { source: string }[]).map((r) => r.source));
+
+/** Whether an address is a page that exists and answers without a redirect. */
+function resolveHref(href: string): { status: "ok" | "missing" | "redirect" } {
+  const p = href.split("#")[0];
+  if (REDIRECTS.has(p)) return { status: "redirect" };
+  const parts = p.split("/");
+  const route = ROUTES.find((r) => r === p) ?? ROUTES.find((r) => r.includes(":") && r.split("/").length === parts.length && r.split("/").every((x: string, i: number) => x.startsWith(":") || x === parts[i]));
+  if (!route) return { status: "missing" };
+  const slug = parts[parts.length - 1];
+  const files: Record<string, boolean> = {
+    "/answers/:slug": ANSWERS.some((a) => a.slug === slug),
+    "/help/:slug": exists(`client/public/needs/${slug}.json`),
+    "/plans/:slug": exists(`client/public/plans/${slug}.json`),
+    "/studyguides/:slug": exists(`client/public/studyguides/${slug}.json`),
+    "/wisdom/:id": read("client/public/wisdom/topics.json").includes(`"id": "${slug}"`),
+    "/study/bible/:book": (json("client/public/bible/books.json") as { slug: string }[]).some((b) => b.slug === slug),
+  };
+  if (route.includes(":") && files[route] === false) return { status: "missing" };
+  return { status: "ok" };
+}
+
+beforeEach(() => {
+  window.localStorage.clear();
+  window.history.replaceState(null, "", "/start");
+});
 afterEach(() => vi.unstubAllGlobals());
 
-describe("/start", () => {
-  it("sets six steps in order, one sentence and one link each, then what next and the way to help", () => {
-    vi.stubGlobal("fetch", offlineFetch());
-    renderWithProviders(<Start />);
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("New to faith, or coming back");
+describe("/start: the five roads", () => {
+  it("holds five roads of four to six steps, each a real, public page, one sentence and one link", () => {
+    expect(ROADS.map((r) => r.id)).toEqual(["skeptical", "new", "stepped-back", "deeper", "family"]);
+    for (const r of ROADS) {
+      expect(r.steps.length, r.id).toBeGreaterThanOrEqual(4);
+      expect(r.steps.length, r.id).toBeLessThanOrEqual(6);
+      for (const s of r.steps) {
+        expect(resolveHref(s.href).status, `${r.id}: ${s.href}`).toBe("ok");
+        expect(isPublicEssayHref(s.href), s.href).toBe(true);
+        expect(s.line.match(/[.?!](\s|$)/g) ?? [], s.title).toHaveLength(1);
+        expect(`${s.title} ${s.line} ${s.link}`).not.toMatch(/—/);
+      }
+    }
+    const hrefs = [...START_NEXT.map((n) => n.href), "/help", "/help/church-hurt", "/start/quiz"];
+    for (const h of hrefs) expect(resolveHref(h).status, h).toBe("ok");
+  });
 
-    const road = screen.getByRole("heading", { name: "The road" }).nextElementSibling as HTMLElement;
+  it("keeps the road for someone new as it was: John first, six steps", () => {
+    expect(START_STEPS.map((s) => s.href)).toEqual([
+      "/study/bible/john",
+      "/plans/prayer",
+      "/wisdom/finding-a-church",
+      "/plans/new-believer",
+      "/family/catechism",
+      "/studyguides/new-believer",
+    ]);
+  });
+
+  it("meets church hurt first on the road for someone who stepped back", () => {
+    const back = ROADS.find((r) => r.id === "stepped-back")!;
+    expect(back.steps[0].href).toBe("/help/church-hurt");
+  });
+
+  it("names the same five roads in Home's chips", () => {
+    expect(ROAD_CHIPS).toEqual(ROADS.map((r) => ({ id: r.id, chip: r.chip })));
+  });
+
+  it("opens with the five choices, opens a road from its address, and keeps the help line", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    window.history.replaceState(null, "", "/start#skeptical");
+    renderWithProviders(<Start />);
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Start where you are");
+    const cards = screen.getAllByRole("link", { name: /I'm skeptical|I'm new to this|I've stepped back|I want to go deeper|I'm leading a family/ });
+    expect(cards).toHaveLength(5);
+    const road = screen.getByRole("heading", { level: 2, name: "If you're skeptical" }).closest("section") as HTMLElement;
     const steps = within(road).getAllByRole("listitem");
     expect(steps).toHaveLength(6);
-    expect(steps.map((li) => within(li).getAllByRole("link").map((a) => a.getAttribute("href")))).toEqual(
-      START_STEPS.map((s) => [s.href])
-    );
-    expect(START_STEPS[0].href).toBe("/study/bible/john");
-    for (const s of START_STEPS) expect(s.line.match(/[.?!](\s|$)/g) ?? [], s.title).toHaveLength(1);
-
-    for (const n of START_NEXT) expect(screen.getByRole("link", { name: n.link }).getAttribute("href")).toBe(n.href);
     expect(screen.getByRole("link", { name: "Find help for what you are facing" }).getAttribute("href")).toBe("/help");
+  });
+
+  it("shows the road for someone new with what next, the line for church hurt and the quiz", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    renderWithProviders(<Start />);
+    fireEvent.click(screen.getByRole("link", { name: /I'm new to this/ }));
+    const road = screen.getByRole("heading", { level: 2, name: "New to faith, or coming back" }).closest("section") as HTMLElement;
+    const list = within(road).getAllByRole("list")[0];
+    expect(within(list).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(START_STEPS.map((s) => s.href));
+    for (const n of START_NEXT) expect(screen.getByRole("link", { name: n.link }).getAttribute("href")).toBe(n.href);
     expect(screen.getByRole("link", { name: "the page for people hurt by a church" }).getAttribute("href")).toBe("/help/church-hurt");
     expect(screen.getByRole("link", { name: "Answer three questions" }).getAttribute("href")).toBe("/start/quiz");
+    expect(window.location.hash).toBe("#new");
+  });
+
+  it("remembers a ticked step through a reload, and offers to pick up where you left off", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    window.history.replaceState(null, "", "/start#family");
+    const first = renderWithProviders(<Start />);
+    fireEvent.click(screen.getByRole("button", { name: "Done: Tonight's devotion" }));
+    expect(screen.getByRole("button", { name: "Done: Tonight's devotion" }).getAttribute("aria-pressed")).toBe("true");
+    expect(readRoadProgress().done.family).toEqual(["/family/tonight"]);
+    expect(window.localStorage.getItem(START_ROADS_KEY)).toContain("/family/tonight");
+    first.unmount();
+
+    window.history.replaceState(null, "", "/start");
+    renderWithProviders(<Start />);
+    fireEvent.click(screen.getByRole("link", { name: /I'm leading a family, step 2/ }));
+    expect(screen.getByRole("button", { name: "Done: Tonight's devotion" }).getAttribute("aria-pressed")).toBe("true");
   });
 
   it("states only what the linked pages hold", () => {
-    // John's twenty-one chapters, each with notes.
-    const john = json("client/public/bible/books.json").find((b: { slug: string }) => b.slug === "john");
-    expect(john.chapters).toBe(21);
+    // John's twenty-one chapters, each with notes; Mark the shortest Gospel.
+    const books: { slug: string; chapters: number }[] = json("client/public/bible/books.json");
+    const ch = (slug: string) => books.find((b) => b.slug === slug)!.chapters;
+    expect(ch("john")).toBe(21);
+    expect(Math.min(ch("matthew"), ch("luke"), ch("john"))).toBeGreaterThan(ch("mark"));
     // The catechism's seventy-six questions, the first one, and both answers.
     const catechism = json("client/public/family-catechism.json");
     expect(catechism).toHaveLength(76);
     expect(catechism[0].question).toBe("Who made you?");
     expect(catechism.every((q: { answer?: string; kidsAnswer?: string }) => q.answer && q.kidsAnswer)).toBe(true);
-    // The plans and the study, by the names the steps use.
+    // The plans, the care pages and the study, by the names the steps use.
     expect(json("client/public/plans/prayer.json").title).toBe("Eight Weeks of Learning to Pray");
     expect(json("client/public/plans/new-believer.json").title).toBe("Eight Weeks for a New Christian");
+    expect(json("client/public/plans/skeptic.json").title).toBe("Eight Weeks for the Curious Skeptic");
+    expect(json("client/public/plans/deconstruction.json").title).toBe("Eight Weeks of Taking Your Questions Seriously");
+    expect(json("client/public/needs/church-hurt.json").title).toBe("The church hurt me");
+    expect(json("client/public/needs/deconstructing.json").title).toBe("I'm deconstructing my faith");
     const guide = json("client/public/studyguides/new-believer.json");
     expect(guide.sessions).toHaveLength(5);
     expect(guide.leaderPrimer).toBeTruthy();
     expect(read("client/public/wisdom/topics.json")).toContain('"id": "finding-a-church"');
-    expect(fs.existsSync(path.join(ROOT, "client/public/needs/church-hurt.json"))).toBe(true);
     expect(read("client/public/creeds/documents-index.json")).toContain('"slug": "apostles-creed"');
   });
 

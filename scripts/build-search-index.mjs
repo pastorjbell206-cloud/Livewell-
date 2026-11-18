@@ -8,7 +8,7 @@
  * only each one's name, the words people use for it, and a line to show.
  *
  *   Wisdom topics        client/public/wisdom/topics.json      -> /wisdom/<id>
- *   Honest Answers       client/src/data/answers.ts            -> /answers#<slug>
+ *   Honest Answers       client/src/data/answers.ts            -> /answers/<slug>
  *   Family devotions     client/public/family-devotions*.json  -> /family/devotions/<id> (every live strand)
  *   Family Catechism     client/public/family-catechism.json   -> /family/catechism
  *   Christ and the Nation client/public/nation/<slug>.json     -> /nation/<slug>
@@ -87,7 +87,7 @@ function answers() {
     // The essay's title and address carry the plain name of the subject
     // ("trinity", "inerrancy") when the question itself does not use the word.
     keywords: `${str(a.essayTitle)} ${str(a.essaySlug).replace(/-/g, " ")} ${str(a.askedAs)}`.trim(),
-    href: `/answers#${a.slug}`,
+    href: `/answers/${a.slug}`,
   }));
 }
 

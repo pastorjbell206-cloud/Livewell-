@@ -1,36 +1,53 @@
 /**
- * /start: one road for someone new to the faith, or coming back to it.
+ * /start: "Start where you are". Five roads, one for each person the site is
+ * for (docs/work/elite/PROJECT-PROMPT.md, "Who it is for"): the skeptic, the
+ * person new to faith or coming back, the one who has stepped back from it,
+ * the believer who wants depth, and the parent at the table.
  *
- * Nothing here is new content. The page sets six things the site already has
- * in an order a beginner can walk: a Gospel to read (John, in the Study
- * Bible), a way to begin praying, a church, the eight-week plan for a new
- * Christian, the catechism, and a study to go through with someone. Each step
- * is one sentence and one link. "What next" lists where the road goes on, and
- * the last line keeps the path to help in view, because new faith often
- * arrives in the middle of a hard season.
+ * The page opens with the five choices as picture cards. Choosing one opens
+ * its road under them: four to six steps in order, each one sentence and one
+ * link, every link a page that exists and is public today. A road has its own
+ * address (/start#skeptical), so Home's chips and any link can open it. The
+ * device remembers the road and the steps the reader ticked (lib/startRoads,
+ * through lib/storage): no account, no score, no streak. Coming back, the page
+ * offers "Pick up where you left off".
  *
- * Every fact in the copy is the linked page's own: John's twenty-one
- * chapters, the plans' and the study's own descriptions, the catechism's 76
- * questions (client/public/family-catechism.json). The steps live in
- * lib/startRoad.json so the prerender script can list them; start.test.tsx checks that
- * each link is a registered route and that the counts still match the data.
+ * The road for someone new is the six steps /start carried before, word for
+ * word, with "What next", the line for someone hurt by a church, and the
+ * three-question quiz after it. The path to help is at the foot of every
+ * road. The roads live in lib/startRoad.json so the prerender script can list
+ * them; start.test.tsx checks every link and every count the copy states.
  */
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { Link } from "wouter";
+import { ArrowRight, Check, LifeBuoy, Milestone, RotateCcw } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
+import PlateFrame from "@/components/art/PlateFrame";
+import Plate from "@/components/art/Plate";
+import { SAVE_FAILED } from "@/components/TakeItWithYou";
+import { scrollBehavior } from "@/lib/motion";
 import road from "@/lib/startRoad.json";
+import {
+  ROADS,
+  nextStep,
+  readRoadProgress,
+  roadById,
+  saveRoadProgress,
+  withStep,
+  type Road,
+  type RoadId,
+  type RoadProgress,
+  type RoadStep,
+} from "@/lib/startRoads";
+import "./home/home.css";
 
-export interface StartStep {
-  title: string;
-  line: string;
-  link: string;
-  href: string;
-}
+export type StartStep = RoadStep;
 
-/** The road, in order. One sentence and one link a step (lib/startRoad.json). */
-export const START_STEPS: StartStep[] = road.steps;
+/** The road for someone new, in order (lib/startRoad.json, road "new"). */
+export const START_STEPS: StartStep[] = roadById("new")?.steps ?? [];
 
 export interface StartNext {
   lead: string;
@@ -38,12 +55,131 @@ export interface StartNext {
   href: string;
 }
 
-/** Where the road goes on. */
+/** Where the road for someone new goes on. */
 export const START_NEXT: StartNext[] = road.next;
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+function hashRoad(): Road | null {
+  if (typeof window === "undefined") return null;
+  return roadById(decodeURIComponent(window.location.hash.slice(1)));
+}
+
+function RoadCard({ r, open, onPick }: { r: Road; open: boolean; onPick: (id: RoadId, e: MouseEvent) => void }) {
+  return (
+    <a href={`#${r.id}`} className="st-card" aria-current={open ? "true" : undefined} onClick={(e) => onPick(r.id, e)}>
+      <PlateFrame>
+        <Plate name={r.plate} decorative />
+      </PlateFrame>
+      <span className="st-card__text">
+        <span className="st-card__name">{r.chip}</span>
+        <span className="st-card__note">{r.note}</span>
+      </span>
+    </a>
+  );
+}
+
+function Steps({ r, progress, onTick }: { r: Road; progress: RoadProgress; onTick: (href: string) => void }) {
+  const done = progress.done[r.id] ?? [];
+  const next = nextStep(r, progress);
+  return (
+    <ol className="st-steps">
+      {r.steps.map((s, i) => {
+        const isDone = done.includes(s.href);
+        const isNext = next?.n === i + 1;
+        return (
+          <li key={s.href} className={`st-step${isDone ? " is-done" : ""}${isNext ? " is-next" : ""}`}>
+            <button type="button" className="st-tick" aria-pressed={isDone} onClick={() => onTick(s.href)}>
+              <span className="sr-only">Done: {s.title}</span>
+              {isDone ? <Check aria-hidden="true" size={22} strokeWidth={1.75} /> : <span aria-hidden="true">{i + 1}</span>}
+            </button>
+            <div className="st-step__body">
+              <h3 className="st-step__title">{s.title}</h3>
+              <p className="st-step__line">{s.line}</p>
+              <Link href={s.href} className={isNext ? "btn st-step__go" : "st-step__link"}>
+                {s.link}
+                <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+              </Link>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+/** After the road for someone new: the line for someone hurt by a church, where the road goes on, and the quiz. */
+function NewRoadFoot() {
+  return (
+    <div className="st-foot">
+      <p className="st-foot__back">
+        If you're coming back after years away, the road is the same one. If a church is the reason you left, read{" "}
+        <Link href="/help/church-hurt">the page for people hurt by a church</Link> before step three.
+      </p>
+      <h3 className="st-foot__title">What next</h3>
+      <ul className="st-next">
+        {START_NEXT.map((n) => (
+          <li key={n.href}>
+            {n.lead} <Link href={n.href}>{n.link}</Link>.
+          </li>
+        ))}
+      </ul>
+      <p className="st-foot__quiz">
+        {road.quiz.lead} <Link href={road.quiz.href}>{road.quiz.link}</Link> {road.quiz.after}
+      </p>
+    </div>
+  );
+}
 
 export default function Start() {
+  const [open, setOpen] = useState<Road | null>(() => hashRoad());
+  const [progress, setProgress] = useState<RoadProgress>(() => readRoadProgress());
+  const [kept, setKept] = useState(true);
+  const panelRef = useRef<HTMLElement>(null);
+  const wantScroll = useRef(false);
+
+  // A link from Home (lib/followHash) or the browser's Back changes the hash.
+  useEffect(() => {
+    const onHash = () => {
+      const r = hashRoad();
+      if (r) setOpen(r);
+    };
+    window.addEventListener("hashchange", onHash);
+    window.addEventListener("popstate", onHash);
+    return () => {
+      window.removeEventListener("hashchange", onHash);
+      window.removeEventListener("popstate", onHash);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!wantScroll.current || !open) return;
+    wantScroll.current = false;
+    panelRef.current?.scrollIntoView?.({ behavior: scrollBehavior(), block: "start" });
+    panelRef.current?.focus({ preventScroll: true });
+  }, [open]);
+
+  const keep = (next: RoadProgress) => {
+    setProgress(next);
+    setKept(saveRoadProgress(next));
+  };
+
+  const pick = (id: RoadId, e?: MouseEvent) => {
+    e?.preventDefault();
+    const r = roadById(id);
+    if (!r) return;
+    if (window.location.hash !== `#${id}`) window.history.pushState(null, "", `#${id}`);
+    wantScroll.current = true;
+    setOpen(r);
+    if (progress.road !== id) keep({ ...progress, road: id });
+  };
+
+  const tick = (href: string) => {
+    if (open) keep(withStep(progress, open.id, href));
+  };
+
+  // "Pick up where you left off": the road this device last opened, while no road is open.
+  const last = !open ? roadById(progress.road) : null;
+  const lastNext = last ? nextStep(last, progress) : null;
+
   return (
     <Layout>
       <SEOMeta
@@ -52,98 +188,63 @@ export default function Start() {
         url="https://www.livewellbyjamesbell.co/start"
       />
 
-      <PageHead
-        door="Start here"
-        title="New to faith, or coming back"
-        line="Six steps, in order. Take them at your own pace."
-        plate="tree"
-        width="var(--w-content)"
-      />
+      <PageHead door="Start here" title="Start where you are" line="Pick the road that sounds like you. Each one is a few steps, in order." plate="tree" />
 
-      <section aria-labelledby="start-road-title" style={{ background: "var(--bone)", padding: `var(--s-4) ${gutter} var(--s-6)` }}>
-        <div className="start-wrap">
-          <h2 id="start-road-title" className="sr-only">
-            The road
+      <section className="st-choose" aria-labelledby="st-choose-title">
+        <div className="home-wrap">
+          <h2 id="st-choose-title" className="sr-only">
+            Five roads
           </h2>
-          <ol className="start-road">
-            {START_STEPS.map((step, i) => (
-              <li key={step.href} className="start-step">
-                <span className="start-step__n" aria-hidden="true">
-                  {i + 1}
-                </span>
-                <div>
-                  <h3 className="start-step__title">{step.title}</h3>
-                  <p className="start-step__line">{step.line}</p>
-                  <Link href={step.href} className="start-link">
-                    {step.link}
-                  </Link>
-                </div>
-              </li>
-            ))}
-          </ol>
-          <p className="start-back">
-            If you're coming back after years away, the road is the same one. If a church is the reason you left, read{" "}
-            <Link href="/help/church-hurt" className="start-link start-link--inline">
-              the page for people hurt by a church
-            </Link>{" "}
-            before step three.
-          </p>
-        </div>
-      </section>
-
-      <section aria-labelledby="start-next-title" style={{ background: "var(--bone-warm)", padding: `var(--s-6) ${gutter}` }}>
-        <div className="start-wrap">
-          <h2 id="start-next-title" className="start-next__title">
-            What next
-          </h2>
-          <ul className="start-next">
-            {START_NEXT.map((n) => (
-              <li key={n.href}>
-                {n.lead}{" "}
-                <Link href={n.href} className="start-link start-link--inline">
-                  {n.link}
-                </Link>
-                .
+          {last && (
+            <p className="st-resume">
+              <RotateCcw aria-hidden="true" size={20} strokeWidth={1.75} />
+              <span>
+                Pick up where you left off:{" "}
+                <a href={`#${last.id}`} onClick={(e) => pick(last.id, e)}>
+                  {last.chip}
+                  {lastNext ? `, step ${lastNext.n}` : ""}
+                </a>
+              </span>
+            </p>
+          )}
+          <ul className="st-cards">
+            {ROADS.map((r) => (
+              <li key={r.id}>
+                <RoadCard r={r} open={open?.id === r.id} onPick={pick} />
               </li>
             ))}
           </ul>
-          <p className="start-help">
-            {road.quiz.lead}{" "}
-            <Link href={road.quiz.href} className="start-link start-link--inline">
-              {road.quiz.link}
-            </Link>{" "}
-            {road.quiz.after}
-          </p>
-          <p className="start-help start-help--last">
-            In a hard season right now?{" "}
-            <Link href="/help" className="start-link start-link--inline">
-              Find help for what you are facing
-            </Link>
-            .
-          </p>
         </div>
       </section>
 
-      <style>{START_CSS}</style>
+      {open && (
+        <section ref={panelRef} id={open.id} tabIndex={-1} className="st-road" aria-labelledby="st-road-title">
+          <div className="st-road__wrap">
+            <p className="lw-sec-head__label">
+              <Milestone aria-hidden="true" size={18} strokeWidth={1.75} />
+              The road
+            </p>
+            <h2 id="st-road-title" className="st-road__title">
+              {open.title}
+            </h2>
+            <p className="st-road__how">Tick a step when it's done. This device remembers.</p>
+            <Steps r={open} progress={progress} onTick={tick} />
+            {!kept && <p className="st-road__how">{SAVE_FAILED}</p>}
+            {open.id === "new" && <NewRoadFoot />}
+          </div>
+        </section>
+      )}
+
+      <section className="st-help" aria-label="Help in a hard season">
+        <div className="st-road__wrap">
+          <p className="lw-newline">
+            <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              In a hard season right now? <Link href="/help">Find help for what you are facing</Link>.
+            </span>
+          </p>
+        </div>
+      </section>
     </Layout>
   );
 }
-
-const START_CSS = `
-.start-wrap{max-width:var(--w-content);margin:0 auto}
-.start-road{list-style:none;margin:0;padding:0}
-.start-step{display:grid;grid-template-columns:clamp(44px,8vw,96px) minmax(0,1fr);column-gap:var(--s-3);align-items:baseline;padding:var(--s-4) 0;border-bottom:1px solid var(--border)}
-.start-step__n{font-family:var(--F);font-weight:400;font-size:clamp(40px,6vw,72px);line-height:0.9;letter-spacing:-0.02em;color:var(--ink-muted)}
-.start-step__title{font-family:var(--F);font-weight:400;font-size:clamp(28px,3.4vw,38px);line-height:1.1;letter-spacing:-0.015em;color:var(--ink);margin:0 0 10px}
-.start-step__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);max-width:62ch;margin:0 0 6px}
-.start-link{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-size:16px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.22em}
-.start-link:hover{text-decoration-thickness:2px}
-.start-link--inline{display:inline;min-height:0;font-family:inherit;font-size:inherit;padding:12px 0}
-.start-back{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink-muted);max-width:62ch;margin:var(--s-4) 0 0}
-.start-next__title{font-family:var(--F);font-weight:400;font-size:clamp(28px,3.6vw,38px);line-height:1.1;letter-spacing:-0.015em;color:var(--ink);margin:0 0 var(--s-3)}
-.start-next{list-style:none;margin:0;padding:0;font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink)}
-.start-next li{padding:14px 0;border-top:1px solid var(--borderdk)}
-.start-next li:last-child{border-bottom:1px solid var(--borderdk)}
-.start-help{font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink-muted);margin:var(--s-4) 0 0}
-.start-help--last{margin-top:var(--s-1)}
-`;

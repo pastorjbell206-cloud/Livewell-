@@ -25,14 +25,16 @@
 import { smartQuotes } from "@/lib/smartQuotes";
 import { useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
-import { BookmarkCheck, Search, X } from "lucide-react";
+import { ArrowRight, BookmarkCheck, Search, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import FollowRow from "@/components/FollowRow";
 import { ogImageUrl } from "@/lib/site";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
-import { StartHereRow } from "@/components/StartHereRow";
+import PageHead from "@/components/art/PageHead";
+import PlateFrame from "@/components/art/PlateFrame";
+import Plate, { type PlateName } from "@/components/art/Plate";
 import { trpc } from "@/lib/trpc";
 import { useLibrary } from "@/lib/library";
 import { getReadEssays } from "@/lib/readProgress";
@@ -51,6 +53,7 @@ import {
   shelfListingInput,
   type ShelfSection,
 } from "@/lib/shelf";
+import "./home/home.css";
 
 /** What the page needs from a listing row. Dev returns full rows, prod slim ones. */
 interface ListingRow {
@@ -59,6 +62,7 @@ interface ListingRow {
   excerpt?: string | null;
   pillar?: string | null;
   createdAt?: unknown;
+  publishedAt?: unknown;
   readingTimeMinutes?: number | null;
   readTime?: string | null;
 }
@@ -70,6 +74,30 @@ interface ShelfItem {
   blurb: string;
   minutes: number | null;
   section: string | null;
+  /** The essay's date (published, else created; a rewrite the database never dated, the rewrite's), in ms. */
+  time: number | null;
+}
+
+/** Each section's drawn mark (components/art), one hand for the whole shelf. */
+const SECTION_PLATE: Record<string, PlateName> = {
+  "the-mirror": "lens",
+  "faith-and-power": "lectern",
+  "after-christendom": "arch",
+  "american-church": "basilica",
+  "ancient-church": "jars",
+  "bible-in-its-world": "jar",
+  doubt: "lantern",
+  "ordinary-faithfulness": "table",
+};
+
+function toTime(date: unknown): number | null {
+  const t = date instanceof Date ? date.getTime() : typeof date === "number" ? date : typeof date === "string" && date ? Date.parse(date) : Number.NaN;
+  return Number.isFinite(t) ? t : null;
+}
+
+/** "October 27, 2026", read in UTC so a date stored at midnight keeps its day. */
+function dateSaid(time: number): string {
+  return new Date(time).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
 }
 
 /** What this device knows about the reader's essays: finished (slugs) and saved (paths). */
@@ -144,6 +172,7 @@ export default function Writing() {
         blurb: rewrite ? rewrite.excerpt : e.blurb ?? cleanExcerpt(row?.excerpt),
         minutes: minutesOf(row),
         section: e.section,
+        time: toTime(row ? essayDate(row) : null) ?? toTime(rewrite?.updated),
       });
     }
     return out;
@@ -161,6 +190,7 @@ export default function Writing() {
           blurb: cleanExcerpt(r.excerpt),
           minutes: minutesOf(r),
           section: null,
+          time: toTime(essayDate(r)),
           track: pillarToTrack(r.pillar),
         })),
     [rows]
@@ -189,9 +219,9 @@ export default function Writing() {
     );
   }, [query, latestItems, shelfItems]);
 
-  const startWith = START_WITH.map((slug) => shelfItems.find((it) => it.slug === slug)).filter(
-    (it): it is ShelfItem => !!it
-  );
+  // One essay to start with: the first of the shelf's three that is public now.
+  // When none of the three is on the shelf right now, the first essay that is.
+  const lead = START_WITH.map((slug) => shelfItems.find((it) => it.slug === slug)).find((it): it is ShelfItem => !!it) ?? shelfItems[0] ?? null;
 
   // A track that spans several sections (theology, american-church) is
   // introduced by its own taxonomy title and description.
@@ -234,82 +264,53 @@ export default function Writing() {
         image={ogImageUrl(filtering ? heading : "Essays by James Bell", "LiveWell")}
       />
 
-      {/* HERO */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          padding: "var(--s-6) var(--gutter) var(--s-5)",
-          color: "var(--charcoal-fg)",
-        }}
+      {/* THE PAGE TOP: the Essays door (or a section's own head), the search box under it. */}
+      <PageHead
+        size={filtering ? "inner" : "door"}
+        door="Essays"
+        doorHref={filtering ? "/writing" : undefined}
+        title={heading}
+        line={filtering ? intro : "A short shelf, kept short on purpose."}
+        plate={sectionFilter ? SECTION_PLATE[sectionFilter.slug] ?? "quill" : "quill"}
       >
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          {/* The eyebrow names the shelf above a section's own title; on the
-              whole shelf the heading already says it. */}
-          {filtering && (
-            <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-              Essays
-            </div>
-          )}
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "var(--fs-h1)",
-              fontWeight: 400,
-              lineHeight: 1.05,
-              letterSpacing: "-0.02em",
-              margin: "0 0 16px",
-              maxWidth: "22ch",
-              color: "var(--charcoal-fg)",
-            }}
-          >
-            {heading}
-          </h1>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "17px",
-              lineHeight: 1.7,
-              color: "var(--charcoal-fg)",
-              opacity: 0.8,
-              maxWidth: "62ch",
-              margin: 0,
-            }}
-          >
-            {intro}
+        {/* Where else James writes, on the unfiltered shelf (lib/channels.ts). */}
+        {!filtering && <FollowRow label="Also on" connect={false} style={{ marginTop: "var(--s-1)" }} />}
+        {/* Above the shelf, so it does not move while the reader types. */}
+        <SearchBox value={search} onChange={setSearch} />
+        {filtering && (
+          <p className="wr-all">
+            <Link href="/writing">All essays</Link>
           </p>
-          {/* Where else James writes, on the unfiltered shelf (lib/channels.ts). */}
-          {!filtering && <FollowRow tone="dark" label="Also on" connect={false} style={{ marginTop: "var(--s-2)" }} />}
-          {/* Above "Start with these", so it does not move while the reader types. */}
-          <SearchBox value={search} onChange={setSearch} />
-          {filtering && (
-            <p style={{ margin: "20px 0 0", fontFamily: "var(--U)", fontSize: "14px" }}>
-              <Link
-                href="/writing"
-                style={{
-                  color: "var(--charcoal-fg)",
-                  textDecoration: "none",
-                  borderBottom: "1px solid var(--mustard)",
-                  paddingBottom: "2px",
-                }}
-              >
-                All essays
-              </Link>
-            </p>
-          )}
-        </div>
-      </section>
+        )}
+      </PageHead>
 
-      {/* START WITH THESE: the unfiltered shelf only. */}
-      {!filtering && !query && startWith.length > 0 && (
-        <StartHereRow
-          eyebrow="Start with these"
-          items={startWith.map((it) => ({ title: it.title, blurb: it.blurb, href: `/writing/${it.slug}` }))}
-        />
+      {/* ONE TO START WITH: the unfiltered shelf only. */}
+      {!filtering && !query && lead && (
+        <section className="home-sec home-sec--warm wr-lead-sec" aria-labelledby="wr-lead-title">
+          <div className="home-wrap">
+            <Link href={`/writing/${lead.slug}`} className="wr-lead">
+              <PlateFrame ratio="16 / 9">
+                <Plate name="arch" decorative />
+              </PlateFrame>
+              <span className="wr-lead__text">
+                <span className="lw-sec-head__label">Start with this one</span>
+                <span id="wr-lead-title" className="wr-lead__title">
+                  {lead.title}
+                </span>
+                {lead.blurb && <span className="wr-lead__blurb">{lead.blurb}</span>}
+                <EssayMeta item={lead} marks={marks} />
+                <span className="wr-lead__go">
+                  Read it <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                </span>
+              </span>
+            </Link>
+          </div>
+        </section>
       )}
 
       {/* THE SHELF */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-7)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+      <section className="home-sec wr-shelf">
+        <div className="home-wrap">
           {query ? (
             <div aria-live="polite">
               <p style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
@@ -343,14 +344,14 @@ export default function Writing() {
           ) : (
             <>
               {shownLatest.length > 0 && (
-                <ShelfGroup id="latest" name="Latest" description="New essays, as they are written." items={shownLatest} marks={marks} />
+                <ShelfGroup id="latest" name="Latest" plate="quill" items={shownLatest} marks={marks} />
               )}
               {sectionsWithItems.map(({ section, items }) => (
                 <ShelfGroup
                   key={section.slug}
                   id={section.slug}
                   name={section.name}
-                  description={section.description}
+                  plate={SECTION_PLATE[section.slug] ?? "quill"}
                   items={items}
                   marks={marks}
                   href={filtering ? undefined : sectionHref(section)}
@@ -444,21 +445,20 @@ function SearchBox({ value, onChange }: { value: string; onChange: (v: string) =
 }
 
 /**
- * One part of the shelf: the section's name and what it is about on the left,
- * its essays on the right, reading like a book's table of contents. The two
- * columns wrap into one on a phone.
+ * One part of the shelf: the section's drawn mark and its name, then its
+ * essays, each with its date. On a phone the mark sits small beside the name.
  */
 function ShelfGroup({
   id,
   name,
-  description,
+  plate,
   items,
   marks,
   href,
 }: {
   id: string;
   name: string;
-  description: string;
+  plate: PlateName;
   items: ShelfItem[];
   marks: ReaderMarks;
   /** Link the heading to the section's own view (the unfiltered shelf only). */
@@ -466,118 +466,51 @@ function ShelfGroup({
 }) {
   const headingId = `shelf-${id}`;
   return (
-    <section
-      id={id}
-      aria-labelledby={headingId}
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "var(--s-3) var(--s-5)",
-        padding: "var(--s-5) 0",
-        borderTop: "1px solid var(--border)",
-        scrollMarginTop: "96px",
-      }}
-    >
-      <div style={{ flex: "1 1 260px", maxWidth: "380px" }}>
-        <h2
-          id={headingId}
-          style={{
-            fontFamily: "var(--F)",
-            fontSize: "clamp(26px, 3vw, 32px)",
-            fontWeight: 400,
-            lineHeight: 1.15,
-            letterSpacing: "-0.01em",
-            color: "var(--ink)",
-            margin: "0 0 12px",
-          }}
-        >
-          {href ? (
-            <Link href={href} style={{ color: "inherit", textDecoration: "none" }}>
-              {name}
-            </Link>
-          ) : (
-            name
-          )}
+    <section id={id} aria-labelledby={headingId} className="wr-group">
+      <div className="wr-group__head">
+        <PlateFrame className="wr-group__mark">
+          <Plate name={plate} decorative />
+        </PlateFrame>
+        <h2 id={headingId} className="wr-group__name">
+          {href ? <Link href={href}>{name}</Link> : name}
         </h2>
-        <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", margin: 0 }}>
-          {description}
-        </p>
       </div>
-      <div style={{ flex: "2 1 420px", minWidth: 0 }}>
-        <EssayList items={items} marks={marks} />
-      </div>
+      <EssayList items={items} marks={marks} />
     </section>
+  );
+}
+
+/** Date, minutes, and this device's marks (Read, Saved), on one quiet line that holds its place. */
+function EssayMeta({ item, marks }: { item: ShelfItem; marks: ReaderMarks }) {
+  const read = marks.read.has(item.slug);
+  const saved = marks.saved.has(`/writing/${item.slug}`);
+  return (
+    <span className="wr-meta">
+      {item.time !== null && <time dateTime={new Date(item.time).toISOString().slice(0, 10)}>{dateSaid(item.time)}</time>}
+      {item.minutes ? <span>{item.minutes} min read</span> : null}
+      {/* The same mark the start row shows (index.css .ed-read). */}
+      {read && <span className="ed-read">✓ Read</span>}
+      {saved && (
+        <span className="wr-meta__saved">
+          <BookmarkCheck size={14} aria-hidden /> Saved
+        </span>
+      )}
+    </span>
   );
 }
 
 function EssayList({ items, marks }: { items: ShelfItem[]; marks: ReaderMarks }) {
   if (items.length === 0) return null;
   return (
-    <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-      {items.map((it, i) => {
-        const href = `/writing/${it.slug}`;
-        const read = marks.read.has(it.slug);
-        const saved = marks.saved.has(href);
-        return (
-          <li key={it.slug} style={{ borderTop: i === 0 ? "none" : "1px solid var(--border)" }}>
-            <Link
-              href={href}
-              style={{ display: "block", padding: i === 0 ? "0 0 20px" : "20px 0", textDecoration: "none", color: "var(--ink)" }}
-            >
-              <span
-                style={{
-                  display: "block",
-                  fontFamily: "var(--F)",
-                  fontSize: "23px",
-                  fontWeight: 500,
-                  lineHeight: 1.25,
-                  letterSpacing: "-0.005em",
-                }}
-              >
-                {it.title}
-              </span>
-              {it.blurb && (
-                <span
-                  style={{
-                    display: "block",
-                    marginTop: "6px",
-                    fontFamily: "var(--B)",
-                    fontSize: "15px",
-                    lineHeight: 1.6,
-                    color: "var(--ink-muted)",
-                    maxWidth: "62ch",
-                  }}
-                >
-                  {it.blurb}
-                </span>
-              )}
-              {(it.minutes || read || saved) && (
-                <span
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    alignItems: "center",
-                    gap: "4px 14px",
-                    marginTop: "8px",
-                    fontFamily: "var(--U)",
-                    fontSize: "13px",
-                    color: "var(--ink-muted)",
-                  }}
-                >
-                  {it.minutes ? <span>{it.minutes} min read</span> : null}
-                  {/* The same mark the start row shows (index.css .ed-read). */}
-                  {read && <span className="ed-read">✓ Read</span>}
-                  {saved && (
-                    <span style={{ display: "inline-flex", alignItems: "center", gap: "5px", color: "var(--ink)", fontWeight: 600 }}>
-                      <BookmarkCheck size={14} aria-hidden /> Saved
-                    </span>
-                  )}
-                </span>
-              )}
-            </Link>
-          </li>
-        );
-      })}
+    <ul className="wr-list">
+      {items.map((it) => (
+        <li key={it.slug}>
+          <Link href={`/writing/${it.slug}`} className="wr-item">
+            <span className="wr-item__title">{it.title}</span>
+            <EssayMeta item={it} marks={marks} />
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 }

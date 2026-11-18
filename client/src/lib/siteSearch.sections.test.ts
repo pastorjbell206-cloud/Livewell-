@@ -41,7 +41,7 @@ describe("search finds the site's own main things", () => {
 
   it("finds a doctrine by its plain name, and the answer whose question never uses the word", () => {
     expect(first("trinity")).toBe("/study/bible/doctrines/trinity");
-    expect(rankEntries(ENTRIES, "trinity").map((e) => e.href)).toContain("/answers#how-can-god-be-three-and-one");
+    expect(rankEntries(ENTRIES, "trinity").map((e) => e.href)).toContain("/answers/how-can-god-be-three-and-one");
   });
 
   it("finds a book's introduction by who wrote it", () => {

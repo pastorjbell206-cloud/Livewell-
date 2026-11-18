@@ -65,13 +65,13 @@ const row = (slug: string, title: string, createdAt: string, extra: Record<strin
 });
 
 describe("/writing", () => {
-  it("shows the shelf from the committed list before the API answers, with three to start", async () => {
+  it("shows the shelf from the committed list before the API answers, with one to start", async () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
     at("/writing");
     renderWithProviders(<Writing />);
 
     expect(screen.getByRole("heading", { level: 1, name: "Essays" })).toBeInTheDocument();
-    expect(screen.getByText("Start with these")).toBeInTheDocument();
+    expect(screen.getByText("Start with this one")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "The Mirror: How Sincere Believers Go Wrong" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "Faith and Power: Christian Nationalism and Politics" })).toBeInTheDocument();
     // Sections with nothing public yet stay hidden.
@@ -100,7 +100,7 @@ describe("/writing", () => {
     expect(await screen.findByRole("heading", { level: 2, name: "Latest" })).toBeInTheDocument();
     expect(screen.getByText("A New Essay From the Admin")).toBeInTheDocument();
     expect(screen.queryByText("The Atheist in the Pulpit")).not.toBeInTheDocument();
-    expect(screen.getByText("Why a Frightened Church Wants a King")).toBeInTheDocument();
+    expect(screen.getAllByText("Why a Frightened Church Wants a King").length).toBeGreaterThan(0);
   });
 
   it("counts a draft begun before the cutoff and published after it as Latest", async () => {
@@ -158,7 +158,7 @@ describe("/writing", () => {
 
     expect(screen.getByRole("heading", { level: 1, name: "The Ancient Church" })).toBeInTheDocument();
     expect(screen.getByText("Women in Church History: The Voices They Silenced")).toBeInTheDocument();
-    expect(screen.queryByText("Start with these")).not.toBeInTheDocument();
+    expect(screen.queryByText("Start with this one")).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: "All essays" })).toHaveAttribute("href", "/writing");
   });
 

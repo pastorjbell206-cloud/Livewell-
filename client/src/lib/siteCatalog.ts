@@ -117,10 +117,10 @@ export const DOORS: Door[] = [
         ],
       },
       { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
-      { id: "bible.guides", name: "Guides to reading the Bible", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" } },
+      { id: "bible.guides", name: "Guides to reading it", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" } },
       { id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" } },
       { id: "bible.background", name: "Bible background", line: "The world the Bible was written in: its places, peoples and customs.", href: "/resources/context", icon: "Map", count: { n: 41, of: "guides" } },
-      { id: "bible.year", name: "Read the Bible in a year", line: "A daily plan through the whole story in 2027.", href: "/study/bible/guides/whole-story-2027", icon: "CalendarDays" },
+      { id: "bible.year", name: "The Bible in a year", line: "A daily plan through the whole story in 2027.", href: "/study/bible/guides/whole-story-2027", icon: "CalendarDays" },
     ],
   },
   {
@@ -144,7 +144,7 @@ export const DOORS: Door[] = [
         ],
       },
       {
-        id: "history.people", name: "The people", line: "The men and women who carried the faith.", href: "/theology/history#people", icon: "Users", count: { n: 36, of: "people" },
+        id: "history.people", name: "The people", line: "The men and women who carried the faith.", href: "/theology/history/people", icon: "Users", count: { n: 36, of: "people" },
         inside: [
           { id: "history.witnesses-justice", name: "Christians who fought injustice", line: "People who did justice at real cost.", href: "/justice/witnesses", icon: "Users" },
           { id: "history.witnesses-truth", name: "Christians who told the church the truth", line: "People who spoke a costly truth to the church.", href: "/disruption/witnesses", icon: "Users" },
@@ -182,7 +182,7 @@ export const DOORS: Door[] = [
           { id: "faq.catholic-protestant", name: "Catholic and Protestant: eight differences", line: "The main differences, explained.", href: "/faq/catholic-vs-protestant", icon: "MessageCircleQuestion" },
         ],
       },
-      { id: "questions.skeptics", name: "For skeptics", line: "Where to start if you do not believe, or are not sure.", href: "/skeptic-track", icon: "ShieldQuestion" },
+      { id: "questions.skeptics", name: "For skeptics", line: "Where to start if you do not believe, or are not sure.", href: "/skeptics", icon: "ShieldQuestion" },
       {
         id: "questions.believe", name: "What Christians believe", line: "Short studies of what the Bible teaches, one belief at a time.", href: "/study/bible/doctrines", icon: "Lightbulb", count: { n: 62, of: "studies" },
         inside: [

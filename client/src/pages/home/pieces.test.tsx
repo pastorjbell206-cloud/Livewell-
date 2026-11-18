@@ -81,7 +81,7 @@ describe("ask it straight", () => {
   it("narrows the questions by a word and shows the start of the chosen answer", () => {
     renderWithProviders(<QuestionPicker />);
     expect(screen.getAllByRole("listitem")).toHaveLength(3);
-    expect(screen.getByRole("link", { name: /Read the whole answer/ })).toHaveAttribute("href", `/answers#${ANSWERS[0].slug}`);
+    expect(screen.getByRole("link", { name: /Read the whole answer/ })).toHaveAttribute("href", `/answers/${ANSWERS[0].slug}`);
 
     fireEvent.click(screen.getByRole("button", { name: `All ${ANSWERS.length} questions` }));
     expect(screen.getAllByRole("listitem")).toHaveLength(ANSWERS.length);
@@ -92,7 +92,7 @@ describe("ask it straight", () => {
     const last = ANSWERS[ANSWERS.length - 1];
     fireEvent.change(screen.getByRole("searchbox"), { target: { value: last.question } });
     fireEvent.click(screen.getByRole("button", { name: last.question }));
-    expect(screen.getByRole("link", { name: /Read the whole answer/ })).toHaveAttribute("href", `/answers#${last.slug}`);
+    expect(screen.getByRole("link", { name: /Read the whole answer/ })).toHaveAttribute("href", `/answers/${last.slug}`);
   });
 });
 

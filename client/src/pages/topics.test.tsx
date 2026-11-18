@@ -108,7 +108,7 @@ describe("/topics", () => {
     expect(screen.getByRole("link", { name: "Does God actually exist?" }).getAttribute("href")).toBe("/answers/does-god-actually-exist");
     // Every row of the index is on the door, or held by the page that already answers it.
     for (const row of INDEX.rows) {
-      if (row.href === "/answers" || row.href === "/answers#is-jesus-the-only-way" || row.standIn) continue;
+      if (row.href === "/answers" || row.href === "/answers/is-jesus-the-only-way" || row.standIn) continue;
       expect(screen.getAllByRole("link", { name: new RegExp(row.askedAs.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").slice(0, 30)) }).length).toBeGreaterThan(0);
     }
   });

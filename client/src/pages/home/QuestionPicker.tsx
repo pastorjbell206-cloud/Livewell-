@@ -82,7 +82,7 @@ export default function QuestionPicker() {
           <span className="sr-only">{answer.question} </span>
           {answerStart(answer.paragraphs[0])}
         </p>
-        <Link href={`/answers#${answer.slug}`} className="home-btn">
+        <Link href={`/answers/${answer.slug}`} className="home-btn">
           Read the whole answer <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
         </Link>
       </div>

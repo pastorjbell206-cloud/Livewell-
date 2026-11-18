@@ -12,11 +12,12 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useSearch } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { PageHead } from "@/components/editorial/PageHead";
+import PageHead from "@/components/art/PageHead";
 import { localISODate } from "@/lib/familyYear";
 import { devotionHref, doneThisWeek, readFamilyProgress, tonightOn, tonightTitle } from "@/lib/familyTable";
 import DoneThisWeek from "./DoneThisWeek";
 import { useFamilyIndex } from "./useFamilyData";
+import "../home/home.css";
 
 export default function Tonight() {
   const [, navigate] = useLocation();
@@ -44,22 +45,20 @@ export default function Tonight() {
         url="https://www.livewellbyjamesbell.co/family/tonight"
       />
       <PageHead
-        eyebrow={
-          <Link href="/family" style={{ color: "inherit" }}>
-            Family
-          </Link>
-        }
+        door="Family"
+        doorHref="/family"
         title="Tonight's family devotion"
-        lede={done ? undefined : tonight ? "Opening tonight's devotion." : "No devotion is set for this date yet. Choose one from the library."}
-        actions={
-          <Link href="/family/devotions" className="pg-action pg-action--quiet">
+        line={done ? undefined : tonight ? "Opening tonight's devotion." : "No devotion is set for this date yet. Choose one from the library."}
+        plate="table"
+        action={
+          <Link href="/family/devotions" className="btn btn--quiet">
             All family devotions
           </Link>
         }
       />
       {tonight && done && (
-        <section style={{ background: "var(--bone)", padding: "var(--s-3) 16px var(--s-7)" }}>
-          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
+        <section className="home-sec home-sec--warm fm-tonight">
+          <div className="home-wrap">
             <div className="tb-tonight">
               <DoneThisWeek
                 id={tonight.id}

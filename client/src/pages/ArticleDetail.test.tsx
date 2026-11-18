@@ -79,6 +79,9 @@ async function renderEssay() {
 }
 
 const sendButtons = () => screen.getAllByRole("button", { name: /Send to my phone/ });
+/** Open "Aa" (text size and Focus) above the essay, and Share after it. */
+const openAa = () => fireEvent.click(screen.getByRole("button", { name: "Text size and focus" }));
+const openShare = () => fireEvent.click(screen.getByRole("button", { name: "Share" }));
 const saveButtons = () => screen.getAllByRole("button", { name: /^(Save|Saved)$/ });
 const articleBody = () => document.querySelector<HTMLElement>(".article-body")!;
 
@@ -103,32 +106,39 @@ describe("quoteShareText", () => {
 });
 
 describe("/writing/:slug, save and send", () => {
-  it("keeps the head to the title block: Save sits in the tools row, and send waits after the essay", async () => {
+  it("keeps the head to the title block: Listen and Aa above the text, Save, Share and Print after it", async () => {
     await renderEssay();
     const header = screen.getByRole("heading", { level: 1 }).closest("section")!;
     expect(within(header).queryAllByRole("button")).toHaveLength(0);
 
-    // One Save above the text, in the reading tools, and one after it.
+    // Above the text: two controls only, Listen and Aa.
     const tools = screen.getByRole("group", { name: "Reading tools" });
-    const [top, after] = saveButtons();
-    expect(saveButtons()).toHaveLength(2);
-    expect(tools.contains(top)).toBe(true);
-    expect(top.compareDocumentPosition(articleBody()) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-    expect(articleBody().compareDocumentPosition(after) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    // (Listen shows only where the browser has a voice; this one has none.)
+    expect(within(tools).getAllByRole("button").map((b) => b.getAttribute("aria-label") ?? b.textContent?.trim())).toEqual(["AaText size and focus"]);
+    expect(within(tools).queryByRole("button", { name: /^(Save|Saved)$/ })).toBeNull();
 
-    // Send to my phone is asked once, after the essay, beside Print, Cite this, and Send to….
-    const [send] = sendButtons();
+    // After the text: one row of Save, Share, Print.
+    const end = screen.getByRole("group", { name: "Keep or pass on this essay" });
+    expect(articleBody().compareDocumentPosition(end) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(saveButtons()).toHaveLength(1);
+    expect(end.contains(saveButtons()[0])).toBe(true);
+    expect(within(end).getByRole("button", { name: /Print/ })).toBeInTheDocument();
+    expect(within(end).queryByRole("button", { name: /Send to my phone/ })).toBeNull();
+
+    // Share holds every way to pass it on: nothing that was here is lost.
+    openShare();
+    const share = screen.getByRole("region", { name: "Share this essay" });
     expect(sendButtons()).toHaveLength(1);
-    expect(articleBody().compareDocumentPosition(send) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-    const bottomBar = send.closest('[role="group"]') as HTMLElement;
-    for (const name of [/Print/, /Cite this/, /Send to…/]) expect(within(bottomBar).getByRole("button", { name })).toBeInTheDocument();
+    expect(share.contains(sendButtons()[0])).toBe(true);
+    for (const name of [/Cite this/, /Send to…/, /Copy link/]) expect(within(share).getByRole("button", { name })).toBeInTheDocument();
+    expect(within(share).getByRole("link", { name: "Share on Facebook" })).toBeInTheDocument();
   });
 
-  it("saves to My Library, and every Save on the page agrees", async () => {
+  it("saves to My Library, and says so", async () => {
     await renderEssay();
     fireEvent.click(saveButtons()[0]);
 
-    await waitFor(() => expect(saveButtons().map((b) => b.textContent)).toEqual(["Saved", "Saved"]));
+    await waitFor(() => expect(saveButtons().map((b) => b.textContent)).toEqual(["Saved"]));
     for (const b of saveButtons()) expect(b).toHaveAttribute("aria-pressed", "true");
     const stored = JSON.parse(window.localStorage.getItem(LIBRARY_KEY) ?? "[]");
     expect(stored).toEqual([expect.objectContaining({ href: `/writing/${SLUG}`, title: TITLE, kind: "Essay" })]);
@@ -140,15 +150,17 @@ describe("/writing/:slug, save and send", () => {
   it("shows an essay saved with the old bookmark as Saved", async () => {
     window.localStorage.setItem(LEGACY_BOOKMARKS_KEY, JSON.stringify([SLUG]));
     await renderEssay();
-    expect(saveButtons().map((b) => b.textContent)).toEqual(["Saved", "Saved"]);
+    expect(saveButtons().map((b) => b.textContent)).toEqual(["Saved"]);
   });
 
   it("keeps every action reachable in Focus mode", async () => {
     await renderEssay();
+    openAa();
     fireEvent.click(screen.getByRole("button", { name: "Focus" }));
 
     expect(screen.getByRole("button", { name: "Exit focus" })).toBeInTheDocument();
-    expect(saveButtons()).toHaveLength(2);
+    expect(saveButtons()).toHaveLength(1);
+    openShare();
     expect(sendButtons()).toHaveLength(1);
     expect(screen.getByRole("button", { name: /Cite this/ })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Send to…/ })).toBeInTheDocument();
@@ -203,6 +215,7 @@ describe("/writing/:slug, reading tools", () => {
     expect(scale()).toBe("1");
     expect(articleBody().style.fontSize).toBe("");
 
+    openAa();
     fireEvent.click(screen.getByRole("button", { name: "Larger text" }));
     expect(scale()).toBe("1.15");
     fireEvent.click(screen.getByRole("button", { name: "Focus" }));
@@ -246,6 +259,7 @@ describe("/writing/:slug, printing", () => {
       expect(el.closest(".no-print")).toBeNull();
     }
     // Not printed: the bars, the reading tools, and all that follows the essay.
+    openShare();
     for (const el of [
       ...sendButtons(),
       screen.getByRole("group", { name: "Reading tools" }),
@@ -319,6 +333,7 @@ describe("/writing/:slug, the first screen on a phone", () => {
     await renderEssay();
     const tools = screen.getByRole("group", { name: "Reading tools" });
     expect(tools).toHaveClass("essay-tools");
+    openAa();
     const size = within(tools).getByRole("group", { name: "Text size" });
     expect(size.querySelector(".text-size__label")).toHaveTextContent("Text size");
   });

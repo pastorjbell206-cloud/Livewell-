@@ -514,11 +514,11 @@ const HUB_LISTINGS = {
     { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
-  // The road on /start, step by step, then where it goes on.
-  "/start": { label: "New to faith, or coming back", cap: 20, load: () => {
+  // The five roads on /start, each step by step, then where the road for someone new goes on.
+  "/start": { label: "Start where you are", cap: 40, load: () => {
     const d = readJsonSafe("client/src/lib/startRoad.json") || {};
     return [
-      ...(d.steps || []).map((x) => ({ title: x.title, href: x.href, blurb: x.line })),
+      ...(d.roads || []).flatMap((r) => (r.steps || []).map((x) => ({ title: `${r.chip}: ${x.title}`, href: x.href, blurb: x.line }))),
       ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
     ];
   } },
@@ -1000,6 +1000,15 @@ function homeHeroHtml() {
   // Find works before the app runs: a plain GET to /search. Plate I's frame is
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
+  // Tonight's line arrives with the app into a slot of the same height (Home.tsx),
+  // and under it the five roads of /start as one row of chips, as Home draws them.
+  const chips = ((readJsonSafe("client/src/lib/startRoad.json") || {}).roads || [])
+    .map((r) => `<li><a class="home-road" href="/start#${esc(r.id)}">${esc(r.chip)}</a></li>`)
+    .join("");
+  const roads = chips
+    ? `
+              <nav class="home-roads" aria-labelledby="home-roads-label"><p id="home-roads-label" class="home-roads__label">Start where you are</p><ul class="home-roads__list">${chips}</ul></nav>`
+    : "";
   return `
         <section class="home-hero">
           <div class="home-hero__inner">
@@ -1012,6 +1021,7 @@ function homeHeroHtml() {
                   <button type="submit" class="home-find__go" aria-label="Find"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
                 </div>
               </form>
+              <div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${roads}
             </div>
             <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>

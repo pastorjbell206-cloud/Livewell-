@@ -105,7 +105,7 @@ export function RetiredEssayNotice({
               {stillHere.answer && (
                 <p style={{ margin: 0 }}>
                   The short answer to this question is still on the site:{" "}
-                  <Link href={`/answers#${stillHere.answer.slug}`} style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+                  <Link href={`/answers/${stillHere.answer.slug}`} style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
                     {stillHere.answer.question}
                   </Link>
                 </p>

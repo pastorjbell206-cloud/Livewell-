@@ -10,8 +10,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { useProgress } from "@/hooks/useProgress";
 import { Link } from "wouter";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Mic } from "lucide-react";
 import Layout from "@/components/Layout";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import CatechismPractice from "./family/CatechismPractice";
+import "./home/home.css";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
 import { VerseRef } from "@/components/VerseRef";
@@ -150,25 +154,27 @@ export default function FamilyCatechism() {
         url="https://www.livewellbyjamesbell.co/family/catechism"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Catechism
+      <PageHead
+        door="Family"
+        doorHref="/family"
+        title="The Family Catechism"
+        line="Short questions and answers that teach the faith."
+        plate="quill"
+      >
+        <p className="cp-howto">
+          <Link href="/how-tos/fam-how-to-use-a-family-catechism">New to this? How to use a family catechism</Link>
+        </p>
+      </PageHead>
+
+      {/* SAY IT ALOUD: one question on a card that turns to its answer. */}
+      {entries.length > 0 && ours && (
+        <section className="home-sec home-sec--dark cp-sec" aria-labelledby="cp-title">
+          <div className="home-wrap">
+            <SectionHead dark icon={Mic} label="Say it aloud" title="One question at a time." id="cp-title" />
+            <CatechismPractice entries={entries} startAt={ours.number} />
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>
-            The Family Catechism
-          </h1>
-          <p className="page-standfirst">Short questions and answers that teach the faith.</p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
-            Seventy-six questions, taken one a week. A family learns the faith the way it has always been learned, by question and answer, said out loud together until it lives in them. Each one has an answer for the grown-ups and a shorter one for the little ones, a verse, a short word for the parent, and a prayer.
-          </p>
-          <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, marginTop: "var(--s-2)" }}>
-            <Link href="/how-tos/fam-how-to-use-a-family-catechism" style={{ color: "var(--charcoal-fg)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "0.2em" }}>
-              New to this? How to use a family catechism
-            </Link>
-          </p>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* THE FAMILY'S OWN PLACE, OR THE CALENDAR'S QUESTION */}
       {ours && (
