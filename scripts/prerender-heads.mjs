@@ -86,7 +86,7 @@ const STATIC_PAGES = [
   },
   {
     path: "/connect",
-    title: "Find James Bell: Substack, Facebook, Podcast, and Books",
+    title: "Find James Bell: Substack, Facebook, Essays, and Contact",
     description: "Everything James Bell does, on one page: LiveWell, his Substack, his Facebook, the Following the Way podcast, ENDS, his books, speaking, and contact.",
     type: "website",
     // Its own share card: the address James puts in his Facebook and Substack profiles.
