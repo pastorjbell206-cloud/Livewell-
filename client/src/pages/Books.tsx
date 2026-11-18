@@ -14,6 +14,8 @@ import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { BOOK_SHELF } from "@/lib/bookShelf";
+import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { freeEbook } from "@/data/ebooks";
 
 const BOOKS = BOOK_SHELF;
 
@@ -22,7 +24,7 @@ export default function Books() {
     <Layout>
       <SEOMeta
         title="Books by James Bell"
-        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99."
+        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is a free ebook to download."
         image={ogImageUrl("Books by James Bell", "LiveWell")}
         url={`${SITE_URL}/books`}
       />
@@ -31,7 +33,7 @@ export default function Books() {
         <p className="pg-head__lede">
           I write about the church and the country, about reading the Bible without
           flattering ourselves, and about whether any of this holds up under honest
-          questions. Each one is an ebook for $8.99.
+          questions. Each one is a free ebook: a PDF to read anywhere and an EPUB for e-readers.
         </p>
       </PageHead>
 
@@ -91,21 +93,12 @@ export default function Books() {
               <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", marginBottom: "22px" }}>
                 {b.blurb}
               </p>
-              <Link
-                href={b.href}
-                style={{
-                  display: "inline-block",
-                  fontFamily: "var(--U)",
-                  fontWeight: 600,
-                  fontSize: "15px",
-                  color: "var(--bone)",
-                  background: "var(--ink)",
-                  padding: "13px 26px",
-                  borderRadius: "var(--radius-sm)",
-                  textDecoration: "none",
-                }}
-              >
-                See what is in the book →
+              {(() => {
+                const eb = freeEbook(b.slug);
+                return eb ? <FreeEbookButtons title={b.title} pdf={eb.pdf} epub={eb.epub} /> : null;
+              })()}
+              <Link href={b.href} className="btn--text" style={{ marginTop: "8px" }}>
+                See what is in the book
               </Link>
             </div>
           </div>
@@ -130,12 +123,21 @@ export default function Books() {
             I took the rest of the shelf down to rewrite it in my own hand, one book at
             a time. When a book is finished, it comes back.
           </p>
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.78)", maxWidth: "62ch", marginBottom: "20px" }}>
+            Until then, the older versions are free to download, with every other ebook on the site.
+          </p>
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
             <Link
               href="/writing"
               style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
             >
               Read the essays
+            </Link>
+            <Link
+              href="/downloads"
+              style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
+            >
+              The older ebooks, free
             </Link>
           </div>
         </div>
