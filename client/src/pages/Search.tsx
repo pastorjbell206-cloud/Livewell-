@@ -3,6 +3,8 @@ import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
 import { LoadFailed } from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import "@/pages/home/home.css";
 import { Link } from "wouter";
 import { Search as SearchIcon } from "lucide-react";
 
@@ -210,65 +212,34 @@ export default function SearchPage() {
   return (
     <Layout>
       <SEOMeta title="Search" description="Search the essays, libraries, tools, and books on LiveWell." />
-      <div className="container px-4 py-16 max-w-4xl mx-auto">
-        {/* Search header */}
-        <div className="mb-12">
-          <h1
-            className="font-display mb-6"
-            style={{
-              color: "var(--ink)",
-              fontSize: "var(--fs-h1)",
-              fontWeight: 400,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.1,
-            }}
-          >
-            Search LiveWell
-          </h1>
+      <InnerHead path="/search" title="Search LiveWell" plate="lens" />
 
-          {/* Search input */}
-          <div className="relative mb-8">
-            <SearchIcon
-              size={20}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 pointer-events-none"
-              style={{ color: "var(--ink-muted)" }}
-            />
-            <input
-              type="text"
-              aria-label="Search the site, or look up a passage"
-              placeholder="Look up a passage or ask a question"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 border focus:outline-none focus:ring-2 text-lg"
-              style={{
-                borderRadius: "var(--radius-sm)",
-                minHeight: "52px",
-                borderColor: "var(--border)",
-                backgroundColor: "var(--bone)",
-                color: "var(--ink)",
-              }}
-            />
+      {/* FIRST: the search box. */}
+      <section className="home-sec home-sec--dark lw-band-tight" aria-label="Search">
+        <div className="home-wrap">
+          <div className="lw-find" style={{ maxWidth: "720px" }}>
+            <div className="lw-find__field">
+              <SearchIcon size={20} strokeWidth={1.75} aria-hidden="true" />
+              <input
+                type="text"
+                aria-label="Search the site, or look up a passage"
+                placeholder="Look up a passage or ask a question"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+            </div>
           </div>
-
-          {/* Filter buttons */}
-          <div className="flex gap-3 flex-wrap">
+          <div className="lw-chips">
             {(["all", "articles", "resources"] as const).map((type) => (
-              <button
-                key={type}
-                onClick={() => setSearchType(type)}
-                aria-pressed={searchType === type}
-                className="px-4 rounded-full font-ui text-sm font-medium transition-all"
-                style={{
-                  minHeight: "44px",
-                  backgroundColor: searchType === type ? "var(--ink)" : "var(--bone-muted)",
-                  color: searchType === type ? "var(--bone)" : "var(--ink)",
-                }}
-              >
+              <button key={type} type="button" onClick={() => setSearchType(type)} aria-pressed={searchType === type} className="lw-chip">
                 {type === "all" ? "All" : type === "articles" ? "Articles" : "Resources"}
               </button>
             ))}
           </div>
         </div>
+      </section>
+
+      <div className="container px-4 py-16 max-w-4xl mx-auto">
 
         {/* Results */}
         <div>
