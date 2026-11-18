@@ -17,6 +17,7 @@ import PageHead from "@/components/art/PageHead";
 import SectionHead from "@/components/art/SectionHead";
 import { readLastChapter } from "@/lib/bible-desk";
 import { KEPT_HERE, STUDY_STEPS, walkHref, type StudyStep } from "@/lib/study-method";
+import "./how-to-study.css";
 
 const ICONS: Record<StudyStep["icon"], typeof BookOpen> = { BookOpen, Eye, Compass, Languages, Link2, CircleHelp, Footprints };
 

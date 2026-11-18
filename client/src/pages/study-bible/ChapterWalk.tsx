@@ -48,6 +48,7 @@ import { KEPT_HERE, NOTICE_QUESTIONS, STUDY_STEPS, type StudyStep } from "@/lib/
 import { LoadFailed } from "@/components/LoadFailed";
 import { Gloss, useLoad } from "@/pages/study-bible/shared";
 import { CrossRef } from "@/pages/study-bible/CrossRefs";
+import "./walk.css";
 
 const ICONS: Record<StudyStep["icon"], typeof BookOpen> = { BookOpen, Eye, Compass, Languages, Link2, CircleHelp, Footprints };
 const SAVE_FAILED = "Couldn't save to this browser — your work here will not survive a reload.";

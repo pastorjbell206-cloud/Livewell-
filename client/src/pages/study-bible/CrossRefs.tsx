@@ -11,6 +11,7 @@ import { ChevronDown } from "lucide-react";
 
 import { BIBLE_TRANSLATION, chapterHref, fetchChapterText, parseRef, type BibleBook, type BibleTextChapter } from "@/lib/bible";
 import { useLoad } from "@/pages/study-bible/shared";
+import "./walk.css";
 
 /** "Rom.5.8-10": the last verse of the range; "Rom.5.8": null. */
 const rangeEnd = (raw: string) => {
