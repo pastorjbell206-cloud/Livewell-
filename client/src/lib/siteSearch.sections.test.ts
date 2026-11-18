@@ -35,8 +35,8 @@ describe("search finds the site's own main things", () => {
   });
 
   it("finds the people and councils of church history by name", () => {
-    expect(first("augustine")).toBe("/theology/history?tab=figures");
-    expect(first("nicaea")).toBe("/theology/history?tab=councils");
+    expect(first("augustine")).toMatch(/^\/theology\/history#person-augustine/);
+    expect(first("nicaea")).toMatch(/^\/theology\/history#council-/);
   });
 
   it("finds a doctrine by its plain name, and the answer whose question never uses the word", () => {
@@ -59,7 +59,7 @@ describe("search finds the site's own main things", () => {
   });
 
   it("never shows a false teaching's own claim as the result line", () => {
-    const heresies = ENTRIES.filter((e) => e.href === "/theology/history?tab=heresies");
+    const heresies = ENTRIES.filter((e) => e.href.startsWith("/theology/history#heresy-"));
     expect(heresies.length).toBeGreaterThan(0);
     for (const h of heresies) expect(h.blurb).toMatch(/^A teaching the church answered and rejected/);
   });

@@ -16,7 +16,11 @@ const wrap = { maxWidth: "var(--w-wide)", margin: "0 auto" } as const;
 
 export default function TheologyCompare() {
   const ready = useMemo(() => DOCTRINE_INDEX.filter((d) => d.ready), []);
-  const [slug, setSlug] = useState<string>(ready[0]?.slug ?? "soteriology");
+  // A link can name the doctrine to open on: /theology/compare?doctrine=origins.
+  const [slug, setSlug] = useState<string>(() => {
+    const asked = typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("doctrine");
+    return (asked && ready.some((d) => d.slug === asked) ? asked : ready[0]?.slug) ?? "soteriology";
+  });
   // The fetched doctrine is tagged with the slug it answered; `doc` is derived
   // per render, so switching doctrines resets the view without a synchronous
   // setState in the effect.

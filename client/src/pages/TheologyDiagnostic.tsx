@@ -31,7 +31,9 @@ const isDiagnosticsFile = (x: unknown): x is { quizzes: Quiz[] } => {
 export default function TheologyDiagnostic() {
   // null = not loaded yet; [] = loaded but empty (distinct from loading)
   const [quizzes, setQuizzes] = useState<Quiz[] | null>(null);
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
+  // A link can name the quiz to open on: /theology/which-view?topic=origins.
+  const [activeSlug, setActiveSlug] = useState<string | null>(() =>
+    typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("topic"));
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [nonce, setNonce] = useState(0);
   // The attempt (retry nonce) that failed; deriving `loadError` from it means

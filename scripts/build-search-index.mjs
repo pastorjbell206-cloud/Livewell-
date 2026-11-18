@@ -16,7 +16,7 @@
  *   The Study Bible      bible/books.json + notes/<book>/intro.json, bible/guides, the story's acts
  *   Doctrine             bible/doctrines.json                  -> /study/bible/doctrines/<id>
  *   Compare the Views    theology/index.json                   -> /theology/doctrine/<slug>
- *   Church History       theology/church-history-*.json        -> /theology/history?tab=<people, councils, heresies>
+ *   Church History       theology/church-history-*.json        -> /theology/history#<person-, council-, heresy-><name>
  *   Seasonal devotions   client/public/family-seasonal.json    -> /family/devotions?tab=<set>&day=<n>
  *
  * A visitor who types the name of a section ("church history", "family
@@ -179,20 +179,23 @@ function debatedDoctrines() {
   }));
 }
 
-/** The people, councils and false teachings on the church history page, each opening its own tab. */
+/** The anchor of one entry on the church history page; the same rule as entryId in client/src/lib/historyCourse.ts. */
+const entryId = (kind, name) => `${kind}-${name.toLowerCase().replace(/,.*$/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`;
+
+/** The people, councils and false teachings on the church history page, each opening its own entry. */
 function history() {
   const people = readJson("theology/church-history-figures.json").figures.map((f) => ({
     title: str(f.name),
     blurb: clip(`${str(f.role)}, ${str(f.dates)}. ${str(f.summary)}`),
     facet: "People",
     keywords: str(f.era),
-    href: "/theology/history?tab=figures",
+    href: `/theology/history#${entryId("person", str(f.name))}`,
   }));
   const councils = readJson("theology/church-history-councils.json").councils.map((c) => ({
     title: str(c.name),
     blurb: clip(`${str(c.year)}, ${str(c.place)}. ${str(c.calledOver)}`),
     facet: "Councils",
-    href: "/theology/history?tab=councils",
+    href: `/theology/history#${entryId("council", str(c.name))}`,
   }));
   const heresies = readJson("theology/church-history-heresies.json").heresies.map((h) => ({
     title: str(h.name),
@@ -201,7 +204,7 @@ function history() {
     blurb: `A teaching the church answered and rejected, ${str(h.era)}.`,
     facet: "False teachings",
     keywords: "heresy heresies",
-    href: "/theology/history?tab=heresies",
+    href: `/theology/history#${entryId("heresy", str(h.name))}`,
   }));
   return [...people, ...councils, ...heresies];
 }

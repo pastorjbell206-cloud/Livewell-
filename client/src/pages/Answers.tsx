@@ -7,12 +7,15 @@
  * is denied them. Data lives in client/src/data/answers.ts; FAQPage JSON-LD is
  * built from the same array so search and the page can never disagree.
  */
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ANSWERS } from "@/data/answers";
+import { companionsFor } from "@/data/answerCompanions";
+import { findAnswers } from "@/lib/findAnswers";
 import { Link } from "wouter";
 import { isPublicEssay } from "@/lib/shelf";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
 
@@ -33,6 +36,23 @@ export default function Answers() {
     const id = window.location.hash.slice(1);
     if (id) requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
   }, []);
+
+  const [query, setQuery] = useState("");
+  const found = useMemo(() => findAnswers(query), [query]);
+  const listed = useMemo(() => found.map((slug) => ANSWERS.find((a) => a.slug === slug)!), [found]);
+  // The slug whose "Copy link" was pressed last, and whether the copy happened.
+  const [copied, setCopied] = useState<{ slug: string; ok: boolean } | null>(null);
+
+  const copyLink = async (slug: string) => {
+    const ok = await copyToClipboard(`${window.location.origin}/answers#${slug}`);
+    setCopied({ slug, ok });
+  };
+  const backToQuestions = () => {
+    const top = document.getElementById("questions");
+    top?.scrollIntoView({ block: "start", behavior: "instant" });
+    document.getElementById("answers-find")?.focus({ preventScroll: true });
+    window.history.replaceState(null, "", window.location.pathname);
+  };
 
   return (
     <Layout>
@@ -60,30 +80,33 @@ export default function Answers() {
         </div>
       </section>
 
-      {/* QUESTION INDEX */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-4) var(--s-4)", borderBottom: "1px solid var(--border)" }}>
+      {/* FIND A QUESTION: a box to type in and the full list to jump from */}
+      <section id="questions" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)", borderBottom: "1px solid var(--border)", scrollMarginTop: "84px" }}>
         <div style={wrap}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-            {ANSWERS.map(a => (
-              <a
-                key={a.slug}
-                href={`#${a.slug}`}
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "13px",
-                  fontWeight: 500,
-                  color: "var(--ink)",
-                  background: "var(--card)",
-                  border: "1px solid var(--border)",
-                  borderRadius: "999px",
-                  padding: "8px 16px",
-                  textDecoration: "none",
-                }}
-              >
-                {a.question}
-              </a>
-            ))}
+          <div className="ax-find">
+            <label htmlFor="answers-find">Find a question</label>
+            <input
+              id="answers-find"
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Type a word, like suffering or hell"
+              autoComplete="off"
+              enterKeyHint="search"
+            />
           </div>
+          <p className="ax-count" role="status">
+            {query.trim() === ""
+              ? `All ${ANSWERS.length} questions. Tap one to go to its answer.`
+              : listed.length === 0
+                ? "No question here uses those words. Try one word, or look through the list."
+                : `${listed.length} of ${ANSWERS.length} questions match.`}
+          </p>
+          <ul className="ax-jump" aria-label="The questions">
+            {(listed.length ? listed : ANSWERS).map((a) => (
+              <li key={a.slug}><a href={`#${a.slug}`}>{a.question}</a></li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -116,6 +139,21 @@ export default function Answers() {
                   )}
                 </div>
               )}
+              {companionsFor(a).length > 0 && (
+                <p className="ax-more">
+                  {companionsFor(a).map((c) => (
+                    <span key={c.href} style={{ display: "block" }}>
+                      {c.lead} <Link href={c.href}>{c.label}</Link>
+                    </span>
+                  ))}
+                </p>
+              )}
+              <div className="ax-foot">
+                <button type="button" className="ax-back" onClick={backToQuestions}>↑ Back to the questions</button>
+                <button type="button" className="ax-copy" onClick={() => copyLink(a.slug)}>
+                  {copied?.slug === a.slug ? (copied.ok ? "Copied" : "Couldn't copy. The link is in the address bar.") : "Copy a link to this answer"}
+                </button>
+              </div>
             </article>
           ))}
         </div>
