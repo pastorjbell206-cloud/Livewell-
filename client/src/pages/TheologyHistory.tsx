@@ -42,7 +42,12 @@ export default function TheologyHistory() {
   const [councils, setCouncils] = useState<Council[]>([]);
   const [heresies, setHeresies] = useState<Heresy[]>([]);
   const [figures, setFigures] = useState<Figure[]>([]);
-  const [tab, setTab] = useState<Tab>("timeline");
+  // ?tab=figures (or councils, heresies) opens that tab: the site search
+  // sends a person's or a council's name here (scripts/build-search-index.mjs).
+  const [tab, setTab] = useState<Tab>(() => {
+    const asked = typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("tab");
+    return asked === "councils" || asked === "heresies" || asked === "figures" ? asked : "timeline";
+  });
   const [openEra, setOpenEra] = useState<string | null>(null);
   const [essays, setEssays] = useState<{ slug: string; title: string; blurb: string; era: string; dateRange: string }[]>([]);
 

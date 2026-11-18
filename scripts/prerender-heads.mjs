@@ -397,9 +397,8 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
     `</div>`,
     `</article>`,
   ];
-  // A tiny style keeps the crawler-only content readable if JS ever fails to
-  // boot, without shifting the real SPA paint (React replaces #root on mount).
-  return `<div class="prerender-content" style="max-width:68ch;margin:0 auto;padding:2rem 1.25rem;font-family:Georgia,serif;line-height:1.7">${parts.filter(Boolean).join("\n")}</div>`;
+  // writeRoute wraps this in .prerender-content (styled in index.css).
+  return parts.filter(Boolean).join("\n");
 }
 
 /** Turn a content object (or raw markdown) into the injected body HTML. */
@@ -703,20 +702,84 @@ function homeHeroHtml() {
         </section>`;
 }
 
+/**
+ * The page's own code, preloaded from its prerendered HTML.
+ *
+ * Every page but Home is a lazy chunk (React.lazy in App.tsx). The browser
+ * only learned a chapter page needed StudyBible-<hash>.js after the entry
+ * bundle had downloaded and run, and "One moment." was what showed while it
+ * fetched. The route table says which page component an address renders and
+ * Vite names the chunk after the component's file, so the prerendered HTML
+ * can ask for that chunk, and the chunks it imports, at once.
+ */
+let routeChunks = null;
+function loadRouteChunks() {
+  const app = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
+  const fileOf = new Map();
+  for (const m of app.matchAll(/const\s+(\w+)\s*=\s*lazy\(\s*\(\)\s*=>\s*import\("([^"]+)"\)/g)) {
+    fileOf.set(m[1], path.basename(m[2]));
+  }
+  const routes = [];
+  for (const m of app.matchAll(/<Route\s+path="([^"]+)"\s+component=\{(\w+)\}/g)) {
+    const file = fileOf.get(m[2]);
+    if (!file) continue;
+    const pattern = m[1]
+      .replace(/[.+?^${}()|[\]\\]/g, "\\$&")
+      .replace(/:\w+\*/g, ".*")
+      .replace(/:\w+/g, "[^/]+");
+    routes.push({ re: new RegExp(`^${pattern}$`), file });
+  }
+  let assets = [];
+  try { assets = fs.readdirSync(path.join(DIST_DIR, "assets")).filter((f) => f.endsWith(".js")); } catch { /* no build */ }
+  return { routes, assets, cache: new Map() };
+}
+
+function chunkPreloads(routePath, template) {
+  routeChunks ??= loadRouteChunks();
+  const hit = routeChunks.routes.find((r) => r.re.test(routePath || "/"));
+  if (!hit) return "";
+  if (routeChunks.cache.has(hit.file)) return routeChunks.cache.get(hit.file);
+  let html = "";
+  // "<File>-<hash>.js": the hash is eight URL-safe characters with no dot.
+  const own = routeChunks.assets.filter((f) => new RegExp(`^${hit.file}-[A-Za-z0-9_-]{8}\\.js$`).test(f));
+  if (own.length === 1) {
+    let code = "";
+    try { code = fs.readFileSync(path.join(DIST_DIR, "assets", own[0]), "utf8"); } catch { /* skip */ }
+    const names = [own[0]];
+    for (const m of code.matchAll(/(?:from|import)"\.\/([^"]+\.js)"/g)) {
+      if (!names.includes(m[1])) names.push(m[1]);
+    }
+    html = names
+      // The entry and the React vendor file are already in the shell's head.
+      .filter((n) => !template.includes(`/assets/${n}`))
+      .map((n) => `<link rel="modulepreload" crossorigin href="/assets/${n}">`)
+      .join("\n    ");
+  }
+  routeChunks.cache.set(hit.file, html);
+  return html;
+}
+
 function writeRoute(template, route, head, bodyHtml = "") {
   const isHome = route.path === "" || route.path === "/";
   const target = isHome
     ? path.join(DIST_DIR, "index.html")
     : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  let html = rewriteIndexHtml(template, head);
+  const preloads = isHome ? "" : chunkPreloads(route.path, template);
+  let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
+  // The page's own text goes inside the static shell, under the masthead, in
+  // the site's own type (.prerender-content in index.css). A crawler, a link
+  // preview and a browser with scripts blocked read it there. For everyone
+  // else it is the first thing on screen, and main.tsx keeps it there until
+  // the real page has its content (lib/prerender-hold.ts), so a reader on a
+  // phone never watches the text vanish behind "One moment."
+  const body = bodyHtml ? `\n        <div class="prerender-content">\n${bodyHtml}\n        </div>` : "";
   // The static hero paints from the HTML on the front page only; every other
   // route drops the marker so a deep link never flashes the home hero.
-  html = html.replace(HOME_HERO_MARKER, isHome ? homeHeroHtml() : "");
-  // Inject crawlable article content at the top of #root. The client mounts
-  // with createRoot, which replaces #root entirely, so this is crawler-only.
-  if (bodyHtml) {
-    html = html.replace('<div id="root">', `<div id="root">\n${bodyHtml}`);
+  if (HOME_HERO_MARKER.test(html)) {
+    html = html.replace(HOME_HERO_MARKER, () => (isHome ? homeHeroHtml() : "") + body);
+  } else if (body) {
+    html = html.replace('<div id="root">', () => `<div id="root">${body}`);
   }
   fs.writeFileSync(target, html);
   return target;
@@ -787,12 +850,13 @@ function prerenderStudyBible(template) {
       const note = read(`notes/${b.slug}/${c}.json`);
       const vnotes = read(`notes/${b.slug}/verses/${c}.json`)?.verses ?? [];
       const text = read(`ch/${b.slug}/${c}.json`);
-      const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<li value="${v.v}">${escapeHtml(v.t)}</li>`).join("\n");
+      // One running block with the verse numbers raised, as the reader shows it.
+      const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<sup>${v.v}</sup>${escapeHtml(v.t)}`).join("\n");
       const lang = b.testament === "OT" ? "Hebrew" : "Greek";
       const body = [
         `<h1>${escapeHtml(`${b.name} ${c}`)}${note ? `: ${escapeHtml(note.title)}` : ""}</h1>`,
         note ? `<p>${escapeHtml(note.summary)}</p>` : "",
-        verses ? section(`${b.name} ${c} (Berean Standard Bible)`, `<ol>\n${verses}\n</ol>`) : "",
+        verses ? section(`${b.name} ${c} (Berean Standard Bible)`, `<p>\n${verses}\n</p>`) : "",
         note ? section("Where we are in the story", para(note.story)) : "",
         note ? section("The historical setting", para(note.historical)) : "",
         note ? section("The world behind the text", para(note.cultural)) : "",
@@ -920,7 +984,7 @@ function writeRetiredEssay(template, { slug, title, pending }) {
     `<li><a href="/study/bible">Open the Study Bible</a></li>`,
     `<li><a href="/help">Find Help</a></li>`,
   ].filter(Boolean).join("\n");
-  const body = `<div class="prerender-content" style="max-width:68ch;margin:0 auto;padding:2rem 1.25rem;font-family:Georgia,serif;line-height:1.7"><article><h1>${escapeHtml(title)}</h1>\n<p>${escapeHtml(sentence)}</p>\n<ul>\n${links}\n</ul></article></div>`;
+  const body = `<article><h1>${escapeHtml(title)}</h1>\n<p>${escapeHtml(sentence)}</p>\n<ul>\n${links}\n</ul></article>`;
   writeRoute(template, { path: `/writing/${slug}` }, head, body);
 }
 

@@ -25,7 +25,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
-      <main id="main" style={{ flex: 1 }}>
+      <main id="main" className="lw-main" style={{ flex: 1 }}>
         {children}
       </main>
       <PersistentHelpTab />

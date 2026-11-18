@@ -25,6 +25,7 @@ import { fetchJson } from "@/lib/fetch-json";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
+import { crisisTopicsFor } from "@/lib/siteSearch";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const isIndex = (x: unknown): x is NeedsIndex => !!x && Array.isArray((x as NeedsIndex).needs);
@@ -109,7 +110,10 @@ export default function Help() {
     requestAnimationFrame(() => document.getElementById("help-now")?.scrollIntoView({ block: "start" }));
   }, []);
 
-  const results = useMemo(() => (needs ? searchNeeds(query, needs).slice(0, 6) : []), [needs, query]);
+  const results = useMemo(() => (needs ? searchNeeds(query, needs) : []), [needs, query]);
+  // A reader who types their trouble here ("I want to die") is shown how to
+  // reach a person before any page, as on /search.
+  const typedCrisis = useMemo(() => crisisTopicsFor(query), [query]);
   const chips = useMemo(() => (needs ? needs.filter((n) => n.page).slice(0, 12) : []), [needs]);
   const inState = useMemo(() => (needs ? needs.filter((n) => n.states.includes(state)) : []), [needs, state]);
   const pages = inState.filter((n) => n.page);
@@ -166,6 +170,11 @@ export default function Help() {
             />
           </form>
           <div aria-live="polite" style={{ maxWidth: "640px" }}>
+            {typedCrisis.length > 0 && (
+              <div style={{ marginTop: "12px" }}>
+                <CrisisBlock id="help-now-typed" topics={typedCrisis} heading="If you need help now" />
+              </div>
+            )}
             {query.trim().length >= 2 && needs && (
               results.length ? (
                 <div style={{ marginTop: "12px", background: "var(--card)", borderRadius: "var(--radius-sm)", padding: "4px 16px", color: "var(--ink)" }}>

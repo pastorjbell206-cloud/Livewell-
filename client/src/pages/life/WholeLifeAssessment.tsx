@@ -7,14 +7,18 @@
  * kept-or-missed check-ins, a year-over-year trajectory, and a printable
  * record. Run history persists to localStorage ("lw-whole-life", the
  * original array shape, untouched); the living rule persists separately
- * ("lw-whole-life-rule", versioned, read defensively). Flourishing, not
- * optimization. God is not grading anyone here.
+ * ("lw-whole-life-rule", versioned, read defensively). The thirty answers of
+ * a check-up in progress are kept as the reader goes
+ * ("livewell-progress-whole-life"), so a reload or a closed tab loses
+ * nothing, and the results screen offers "Change my answers", which reopens
+ * the statements and redraws the same run instead of adding a second one.
+ * Flourishing, not optimization. God is not grading anyone here.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { writeStoredJSON } from "@/lib/storage";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { SafetyCheck } from "@/components/SafetyCheck";
 
 /* ------------------------------------------------------------------ */
@@ -25,6 +29,8 @@ const SCALE = ["Never", "Rarely", "Sometimes", "Often", "Always"] as const;
 const STORAGE_KEY = "lw-whole-life";
 const RULE_KEY = "lw-whole-life-rule";
 const RULE_STORE_VERSION = 1;
+/** The answers of a check-up in progress (the livewell-progress-* pattern). */
+const PROGRESS_KEY = "livewell-progress-whole-life";
 
 /** The check-up is annual. */
 const RETAKE_MONTHS = 12;
@@ -210,6 +216,44 @@ function loadHistory(): RunEntry[] {
   } catch {
     return [];
   }
+}
+
+/**
+ * A check-up in progress: the answers so far, the domain screen the reader was
+ * on, and, once the map has been drawn from these answers, the date of that
+ * run (so changing an answer redraws that run, not a new one).
+ */
+interface StoredProgress {
+  answers: Record<string, number>;
+  screen: number;
+  savedAt: string;
+  runDate?: string;
+}
+
+function isStoredProgress(x: unknown): x is StoredProgress {
+  if (typeof x !== "object" || x === null) return false;
+  const p = x as Record<string, unknown>;
+  return (
+    typeof p.screen === "number" &&
+    Number.isInteger(p.screen) &&
+    typeof p.savedAt === "string" &&
+    (p.runDate === undefined || typeof p.runDate === "string") &&
+    typeof p.answers === "object" &&
+    p.answers !== null &&
+    !Array.isArray(p.answers) &&
+    Object.values(p.answers).every((v) => typeof v === "number" && v >= 1 && v <= SCALE.length)
+  );
+}
+
+/**
+ * The saved check-up to pick up, or null. One that already reached its map is
+ * picked up only if the reader had gone back in to change an answer.
+ */
+function loadProgress(): StoredProgress | null {
+  const saved = readStoredJSON<StoredProgress | null>(PROGRESS_KEY, isStoredProgress, null);
+  if (!saved || Object.keys(saved.answers).length === 0) return null;
+  if (saved.screen < 0 || saved.screen >= RESULTS_SCREEN) return null;
+  return saved;
 }
 
 function saveHistory(history: RunEntry[]): boolean {
@@ -780,8 +824,13 @@ function PrintDocument({
 
 export default function WholeLifeAssessment() {
   // -1 = intro, 0..4 = one domain per screen, 5 = results.
-  const [screen, setScreen] = useState(-1);
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  // A check-up left part-way through opens where the reader stopped.
+  const [saved] = useState(() => loadProgress());
+  const [screen, setScreen] = useState(saved?.screen ?? -1);
+  const [answers, setAnswers] = useState<Record<string, number>>(saved?.answers ?? {});
+  const [resumed, setResumed] = useState(saved !== null);
+  const [runDate, setRunDate] = useState<string | null>(saved?.runDate ?? null);
+  const [progressFailed, setProgressFailed] = useState(false);
   const [history, setHistory] = useState<RunEntry[]>(() => loadHistory());
   const [rules, setRules] = useState<RuleEntry[]>(() => loadRules());
   const [previous, setPrevious] = useState<RunEntry | null>(null);
@@ -798,30 +847,73 @@ export default function WholeLifeAssessment() {
     return s;
   }, [answers]);
 
+  const persist = (nextAnswers: Record<string, number>, nextScreen: number, nextRunDate: string | null = runDate) => {
+    setProgressFailed(
+      !writeStoredJSON(PROGRESS_KEY, {
+        answers: nextAnswers,
+        screen: nextScreen,
+        savedAt: new Date().toISOString(),
+        ...(nextRunDate ? { runDate: nextRunDate } : {}),
+      })
+    );
+  };
+
+  const answer = (id: string, value: number) => {
+    const next = { ...answers, [id]: value };
+    setAnswers(next);
+    setResumed(false);
+    persist(next, screen);
+  };
+
+  /** Move between the introduction and the domain screens, keeping the place. */
+  const goTo = (next: number) => {
+    setScreen(next);
+    if (Object.keys(answers).length > 0) persist(answers, Math.max(next, 0));
+  };
+
   const finish = () => {
     const prior = loadHistory();
-    setPrevious(prior.length > 0 ? prior[prior.length - 1] : null);
-    const now = new Date().toISOString();
+    const priorRules = loadRules();
+    const practices = sortedByScore(scores).map((d) => ({ domain: d.id, name: d.name, text: d.practices[0] }));
+    // "Change my answers" leads back here with the same run: its map and its
+    // rule are redrawn in place (the weeks already marked are kept), so one
+    // sitting never counts as two check-ups.
+    const redraw = runDate !== null && prior.length > 0 && prior[prior.length - 1].date === runDate;
+    const now = redraw ? runDate : new Date().toISOString();
+    const earlier = redraw ? prior.slice(0, -1) : prior;
+    setPrevious(earlier.length > 0 ? earlier[earlier.length - 1] : null);
     const entry: RunEntry = { date: now, scores };
-    const next = [...prior, entry];
+    const next = [...earlier, entry];
     setHistory(next);
     const savedRun = saveHistory(next);
     // Draw the rule for this season and keep it, versioned by attempt date.
-    const rule: RuleEntry = {
-      date: now,
-      practices: sortedByScore(scores).map((d) => ({ domain: d.id, name: d.name, text: d.practices[0] })),
-      checks: {},
-    };
-    const nextRules = [...loadRules(), rule];
+    const lastRule = priorRules.length > 0 ? priorRules[priorRules.length - 1] : null;
+    const sameRule = redraw && lastRule !== null && lastRule.date === runDate;
+    const rule: RuleEntry = { date: now, practices, checks: sameRule ? lastRule.checks : {} };
+    const nextRules = [...(sameRule ? priorRules.slice(0, -1) : priorRules), rule];
     setRules(nextRules);
     const savedRule = saveRules(nextRules);
     setSaveFailed(!(savedRun && savedRule));
     setCopied(false);
+    setRunDate(now);
+    setResumed(false);
+    persist(answers, RESULTS_SCREEN, now);
     setScreen(RESULTS_SCREEN);
   };
 
+  /** Back into the statements with every answer still in place. */
+  const changeAnswers = () => {
+    setCopied(false);
+    setScreen(0);
+    persist(answers, 0);
+  };
+
   const retake = () => {
+    removeStoredJSON(PROGRESS_KEY);
     setAnswers({});
+    setRunDate(null);
+    setResumed(false);
+    setProgressFailed(false);
     setPrevious(null);
     setCopied(false);
     setScreen(-1);
@@ -959,7 +1051,7 @@ export default function WholeLifeAssessment() {
             )}
 
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
-              <button onClick={() => setScreen(0)} style={primaryBtn}>Begin the assessment</button>
+              <button onClick={() => goTo(0)} style={primaryBtn}>{Object.keys(answers).length > 0 ? "Go on with the assessment" : "Begin the assessment"}</button>
               {(history.length > 0 || rules.length > 0) && (
                 <button onClick={clearHistory} style={quietBtn}>Clear history</button>
               )}
@@ -1031,6 +1123,20 @@ export default function WholeLifeAssessment() {
                 </div>
               </div>
 
+              {resumed && (
+                <div role="status" style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "14px 16px", marginBottom: "var(--s-4)", display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between" }}>
+                  <p style={{ ...bodyText, fontSize: "15px", margin: 0 }}>
+                    Your answers so far were kept on this device, so you can go on from where you stopped.
+                  </p>
+                  <button onClick={retake} style={quietBtn}>Start over</button>
+                </div>
+              )}
+              {progressFailed && (
+                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
+                  Couldn't save to this browser — your work here will not survive a reload.
+                </p>
+              )}
+
               <h2 style={{ ...h2Style, marginBottom: "6px" }}>{domain.name}</h2>
               <p style={{ ...mutedText, fontSize: "15px", marginBottom: "var(--s-4)" }}>{domain.framing}</p>
 
@@ -1052,7 +1158,7 @@ export default function WholeLifeAssessment() {
                             value={val}
                             checked={on}
                             aria-label={label}
-                            onChange={() => setAnswers((a) => ({ ...a, [s.id]: val }))}
+                            onChange={() => answer(s.id, val)}
                           />
                           <span style={{
                             display: "flex", alignItems: "center", justifyContent: "center", minHeight: "44px",
@@ -1070,12 +1176,12 @@ export default function WholeLifeAssessment() {
               ))}
 
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
-                <button onClick={() => setScreen(screen - 1)} style={quietBtn}>
+                <button onClick={() => goTo(screen - 1)} style={quietBtn}>
                   {screen === 0 ? "Back to the introduction" : "Back"}
                 </button>
                 <button
                   disabled={!complete}
-                  onClick={() => (isLast ? finish() : setScreen(screen + 1))}
+                  onClick={() => (isLast ? finish() : goTo(screen + 1))}
                   style={{
                     ...primaryBtn,
                     background: complete ? "var(--mustard)" : "var(--border)",
@@ -1119,6 +1225,7 @@ export default function WholeLifeAssessment() {
 
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
                   <button onClick={() => window.print()} style={quietBtn}>Print your results</button>
+                  <button onClick={changeAnswers} style={quietBtn}>Change my answers</button>
                   <button onClick={retake} style={quietBtn}>Retake the assessment</button>
                   {history.length > 0 && <button onClick={clearHistory} style={quietBtn}>Clear history</button>}
                 </div>

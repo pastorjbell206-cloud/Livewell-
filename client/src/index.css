@@ -270,6 +270,34 @@ img{display:block;max-width:100%}
 /* The static shell's masthead (index.html) matches the header's height, so
    the swap to React moves nothing below it. */
 .lw-shell-bar{height:70px;box-sizing:border-box}
+/* A page's own text, written into the static shell by
+   scripts/prerender-heads.mjs. It is the first thing on screen on a chapter,
+   an essay or a guide, in the site's type and column, and main.tsx keeps it
+   there until the real page is ready (lib/prerender-hold.ts). */
+.prerender-content{max-width:calc(var(--w-prose) + 2 * var(--s-3));margin:0 auto;padding:var(--s-5) var(--s-3) var(--s-7);font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);overflow-wrap:break-word}
+.prerender-content h1{font-family:var(--F);font-weight:400;font-size:clamp(2.1rem,6vw,3.25rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 var(--s-2)}
+.prerender-content h2{font-family:var(--F);font-weight:400;font-size:1.75rem;line-height:1.2;margin:var(--s-5) 0 var(--s-2)}
+.prerender-content h3,.prerender-content h4,.prerender-content h5,.prerender-content h6{font-family:var(--F);font-weight:500;font-size:1.35rem;line-height:1.25;margin:var(--s-4) 0 var(--s-1)}
+.prerender-content p,.prerender-content ul,.prerender-content ol,.prerender-content dl{margin:0 0 1.1em}
+.prerender-content ul,.prerender-content ol{padding-left:1.3em}
+.prerender-content li{margin-bottom:.45em}
+.prerender-content li>p{margin:0;color:var(--ink-muted);font-size:15px}
+.prerender-content blockquote{margin:var(--s-3) 0;padding-left:var(--s-2);border-left:2px solid var(--mustard);font-family:var(--F);font-size:1.3rem;line-height:1.45}
+.prerender-content a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
+.prerender-content dt{font-weight:600}
+.prerender-content dd{margin:0 0 .9em}
+.prerender-content sup{font-family:var(--U);font-size:.68em;color:var(--ink-muted);margin-right:.25em}
+.prerender-content .pre-eyebrow{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin-bottom:var(--s-2)}
+.prerender-content .pre-subtitle{font-size:1.125rem;line-height:1.55;color:var(--ink-muted)}
+.prerender-content .pre-byline{font-family:var(--U);font-size:.8125rem;color:var(--ink-muted);padding-bottom:var(--s-3);border-bottom:1px solid var(--border);margin-bottom:var(--s-4)}
+/* While the prerendered text is held on screen the app renders underneath it,
+   laid out but not painted, so nothing the reader can see moves until the
+   swap. */
+#root.lw-root-wait{position:absolute;top:0;left:0;width:100%;visibility:hidden}
+/* The footer starts at or below the bottom of the screen on every page, so a
+   page that is still loading its content cannot show the footer and then
+   throw it down the page when the content arrives. */
+.lw-main{min-height:calc(100vh - 70px)}
 .nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
 .nav__logo em{font-style:italic;color:var(--gold)}
 .nav__logo small{font-family:var(--U);font-size:12px;font-weight:300;color:var(--ink3);letter-spacing:.02em}
@@ -920,6 +948,8 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .wrap{padding:0 16px}
   .site-nav{padding:0 16px;height:60px}
   .lw-shell-bar{height:60px}
+  .lw-main{min-height:calc(100vh - 60px)}
+  .prerender-content{font-size:16px;padding-left:var(--s-2);padding-right:var(--s-2)}
   .hero-h{font-size:32px}
   .hero-ctas{flex-direction:column;align-items:flex-start}
   .grid-4{grid-template-columns:1fr}

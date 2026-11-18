@@ -518,9 +518,10 @@ export default function ArticleDetail() {
     );
   }
 
-  // With a rewrite, wait for the file and for the database row (its pillar and
-  // dates); a missing or failed row does not hold the rewrite back.
-  if (postQuery.isLoading || rewriteQuery.isLoading) {
+  // An essay with a rewrite shows as soon as its file loads. The database row
+  // (its pillar, dates and cover image) fills in when the server answers, and
+  // a slow, missing or failed row never holds the essay back.
+  if (rewrite ? rewriteQuery.isLoading : postQuery.isLoading) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
