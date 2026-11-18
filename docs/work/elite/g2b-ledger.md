@@ -270,3 +270,28 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Scripture quoted: Proverbs 4:23, Matthew 6:5, 6:21, 6:24, 7:24, Deuteronomy 6:5, Luke 6:40, 6:45, 16:10, Romans 12:1-2, Philippians 2:12-13, 3:19, 4:8, Psalm 1:2-3, 37:4, 90:12, 115:8, Isaiah 29:13, Exodus 20:3-4, Colossians 1:29, 3:2, 1 John 2:16 (phrase only, the verse has dashes), 1 Corinthians 9:25, 9:27, 15:10, Hebrews 5:14, 12:11, 1 Timothy 4:7-8, Mark 1:35, Titus 2:11-12, 2 Peter 1:5, Ephesians 2:8-10, Galatians 6:9, Daniel 6:10, Acts 2:42 | ESV from memory | Quoted with references; Psalm 1:1 ("Blessed") not quoted |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help box | Not on the sensitive list; no help lines in the old guide ("988" was only the year 1988) | Nothing to keep |
+
+## Holy Spirit
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp (atheism) in summary, FAQ x3, facilitator script, closing prayer, primer | Credential use | Kept once, in session 2 teaching, in the first person ("I came to faith from atheism, and I can't take credit for it"), where the new-birth argument needs it; removed everywhere else. FAQ "Why does the writer keep bringing up his own atheism?" reframed as "Why does the study say no one can simply be argued into new life?" |
+| "Bell takes the strong form / Bell grants / Bell will not break the tie" throughout | Narrator calling him "Bell" | Removed; teaching in first person |
+| 1 Corinthians 13:1 "clanging gong" (old guide, several places) | ESV reads "a noisy gong or a clanging cymbal" | Corrected everywhere, including the quote card |
+| Bibliography "Surprised by the Spirit", N. T. Wright | No such Wright title; Wright's book on new-creation hope is Surprised by Hope (2008) ("Surprised by the Power of the Spirit" is Jack Deere's) | Made Surprised by Hope; "Leader to confirm" removed |
+| Bibliography "The Cessation of the Charismata, and broader writing", Warfield | That is the first chapter of Counterfeit Miracles (1918) | Made Counterfeit Miracles |
+| Gaffin, Perspectives on Pentecost; Storms, Practicing the Power; Fee, God's Empowering Presence (1994); Ferguson, The Holy Spirit; Sproul, The Mystery of the Holy Spirit; Packer, Keep in Step with the Spirit (1984); Ortlund, Gentle and Lowly; Chan, Forgotten God (2009) | Known titles | Kept; "and broader writing" padding removed from titles; Gaffin dated 1979 |
+| Timeline "1546 Luther dies" as the anchor for Word-and-Spirit teaching | A death date is no event for the claim | Made 1525, Against the Heavenly Prophets (Luther against the radical reformers on Spirit and outward Word) |
+| Timeline Ezekiel "circa 590 BC" | Ezekiel 36 falls after 586 | "Early sixth century BC" |
+| Timeline Jesus and Pentecost "circa AD 30"; 1 Corinthians "circa AD 55" | Exact years unknowable | "About AD 30 to 33"; "About AD 53 to 55" |
+| "Spirit-fighters" called so by Athanasius | The name Pneumatomachi is later; Athanasius wrote against such views in the letters to Serapion | Restated that way |
+| Basil, On the Holy Spirit, about 375; Constantinople 381, "the Lord and giver of life" | Known | Kept; creed phrase quoted as creed text |
+| Azusa Street 1906; Warfield 1918 | Known | Kept |
+| Old guide cited 1 Corinthians 13:8-10 "perfect" as the closing of the canon for cessationists | Cessationists differ (some read canon, some maturity, Gaffin and others read Christ's return) | Note now says "many cessationists" read it as the completed New Testament or the church's maturity |
+| Spirit and breath share a word | Known: ruach, pneuma | Kept, both languages named |
+| Gifts question (continuationist vs cessationist) | Contested, second-order | Both cases set out at full strength, tie left unbroken as in the old guide; named as dividing faithful churches, not a creedal matter |
+| Order of salvation (regeneration and faith) | Contested, second-order | Left open as the old guide left it; Wesleyan and Arminian view named beside the Reformed |
+| "Equal-weight steelman" glossary term; "verdict" as method word; "the constitution of this whole platform requires" | Rulebook words | Replaced with plain words ("Stating the other side fairly") |
+| "Leader to confirm" (7) | Bibliography and further reading | Removed; notes describe the books only |
+| Scripture quoted: John 1:12-13, 3:1-8, 14:16-18, 15:4-5, 16:13-14, Genesis 1:2, Ezekiel 36:26-27, Acts 5:3-4, 7:51, 13:2, Matthew 12:31 (cited), Romans 8:9, 8:13, 8:15-16, 8:20-28, 10:17, 1 Corinthians 6:19, 12:4-11, 13:1-2, 13:8-12, 14:1, 2 Corinthians 1:22, 3:18, 12:12, Galatians 5:16, 5:22-25, Ephesians 1:13-14, 2:4-5, 2:20, 4:30, Colossians 3:5, Philippians 1:6, Titus 3:5, Hebrews 2:3-4, 1 Thessalonians 5:19, 1 Peter 1:3 | ESV from memory | Quoted with references; Romans 8:15 "Abba! Father!" not quoted (described) |
+| Help box | Not on the sensitive list; no help lines in the old guide | Nothing to keep |
