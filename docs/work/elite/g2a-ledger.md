@@ -491,3 +491,73 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | James 2:23 | ESV has an em-dash | Quoted in two parts |
 | Genesis 2:18, Ecclesiastes 4:9-12, Proverbs 18:24, 27:5-10, 27:17, 28:23, 1 Samuel 18:1-4, 19:1-2, 20:16-17, 20:42, 23:16, 2 Samuel 1:26, John 1:3, 11:35, 15:12-15, Exodus 33:11, Luke 7:34, Galatians 6:1-2, Ephesians 4:15, Hebrews 10:24-25, Romans 12:15, 1 Thessalonians 2:8, 3 John 14 | ESV, from memory | Quoted with references |
 | Every case study | Told as a real person in the group | Framed as "Suppose", ending in questions for the leader |
+
+## Helping with g2b's share
+
+### parenting-formation
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (31); atheism, fatherless and five sons as credential (summary, primer, FAQ 0, 4, 9, 10, script, three promo texts) | Brief: each fact at most once, only where it does work; no invented memory or feeling | Each kept once in first person (s1 five sons, s2 fatherless, s3 atheism); every other use cut; FAQ 10 ("I didn't have a good father") now answers without his biography |
+| Help and safety sentences (17) | Script against the old file (help_parenting-formation.txt) | All word for word, same places |
+| "Spare the rod and spoil the child" | Not a verse; Proverbs 13:24 is the nearest | Said so in the session 2 objection |
+| Keller, The Prodigal God (2008): "prodigal" means recklessly extravagant; the father is the prodigal one | Known | Paraphrase |
+| National Study of Youth and Religion (Christian Smith): parents' lived faith the strongest influence; "moralistic therapeutic deism" | Known; the phrase is Smith and Denton, Soul Searching (2005) | Named with the book |
+| Baumrind, authoritative style, 1960s (1966 paper) | Known | Kept |
+| Harsh physical punishment goes with worse behavior over time | Known (meta-analyses of spanking research); no study named in the old guide | Kept as a general finding, no study named |
+| Haidt, The Anxious Generation (2024) | Known; causation is disputed by other researchers | Haidt named as a social psychologist; the dispute noted |
+| "Technoference" | A researchers' term for parental device interruption (McDaniel and others) | Kept as "a word researchers use"; no study named |
+| Locke 1693; Rousseau, Emile 1762; Luther, Small Catechism 1529 | Known | Kept |
+| Augustine's Confessions "circa AD 400"; Monica | Written about 397 to 400 | "Late 390s AD" |
+| Shema "circa 1400 BC"; Hannah "circa 1100 BC"; Proverbs "circa 950 BC"; Ephesians and Colossians "circa AD 60" | Traditional or approximate | Marked traditional; Proverbs "from Solomon's reign, with later additions"; "early 60s AD" |
+| Luke 15:12 request as near a wish for the father's death; the father's running as undignified | A common reading of the culture, not stated in the text | "Many students of that culture read..." |
+| "Leader to confirm" (6: Tripp, Tripp, Fitzpatrick and Thompson, Crouch, Cloud and Townsend, Luther) | Titles and authors known; the guide attributes no specific claim to them | Notes removed; entries describe each book in general terms |
+| Scripture: Deuteronomy 6:5, 6:6-7, 6:20-21; Psalm 127:3-4, 23:4, 78:4, 119:37; 1 Samuel 1:27-28, 3:13, 16:7; Proverbs 4:23, 13:24, 22:6, 22:15, 29:15; Luke 2:52, 11:13, 15:12, 15:20; Mark 6:31, 9:24, 10:14; Matthew 6:22-23; John 6:44; Acts 17:11; Romans 8:15, 10:17, 12:2; Ephesians 6:4; Colossians 3:2, 3:21; Philippians 4:8; Hebrews 12:6, 12:11; Genesis 2:24; 2 Timothy 1:5; 3 John 4 | ESV, from memory | Quoted with references |
+| Case studies | Told as real people in the group | Framed as "Suppose", ending in questions for the group |
+
+### providence
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (26); atheism as credential (summary, s1 summary, primer, FAQ 2, script); "I am a Christian pastor"; pulpit line "the wall I could not climb for a long time" | Brief: biography once, only where it does work; no invented recollection | Atheism kept once (s1 teaching); the rest cut; "pastor" title dropped; pulpit recollection cut |
+| Help sentences (5: fresh-grief FAQ question and answer, script close, leader FAQ line, week 8 cadence) | Script against the old file | Word for word |
+| Bonhoeffer, "only the suffering God can help" | Web search (Letters and Papers from Prison; several sources give "The Bible directs man to God's powerlessness and suffering; only the suffering God can help") | Quoted; the surrounding thought paraphrased |
+| Bonhoeffer, "the God who is with us is the God who forsakes us" | Same search; not found in results | Not quoted; idea paraphrased in the teaching |
+| Bonhoeffer arrested and executed | Arrested April 1943; hanged at Flossenbürg 9 April 1945 | "Arrested in 1943", "hanged at Flossenbürg... April 1945" |
+| Dostoevsky, The Brothers Karamazov (1880), Ivan returns his ticket | Known (Book 5, chapter 4, "Rebellion") | Paraphrase, no quotation marks; bibliography points to the chapter |
+| Epicurus framing | Known: attributed by later writers (Lactantius); authenticity debated | "Later writers attributed a version of it to Epicurus" |
+| Hume; logical and evidential forms; Plantinga, God, Freedom, and Evil (1974) | Known; Hume's Dialogues published 1779 | Kept, dated |
+| Augustine, evil as privation of good | Known (Confessions 7, Enchiridion) | Kept |
+| Reformed "ordains whatsoever comes to pass... not the author of sin" | Westminster Confession 3.1 (1646) | Named as the source |
+| Moltmann, The Crucified God | Known (German 1972, English 1974) | Dated |
+| Hart, The Doors of the Sea (2005), written after the 2004 tsunami | Known | Kept in s2 going deeper and bibliography |
+| "Religion is an opiate" | Marx (1843-44) | Attributed to Marx without quotation marks |
+| "The moral arc of the universe bends toward justice" (unmarked) | King, after Theodore Parker; carried without attribution | Cut; replaced with plain statement |
+| "The first Christians died insisting they had witnessed" | Overstated; martyrdom of several apostles is early tradition | "kept proclaiming... at great cost, and, by early tradition, death" |
+| Paul "by reliable tradition executed in Rome" | Early tradition (1 Clement, Eusebius) | "early tradition says" |
+| Luke 22:44 | Absent from some early manuscripts (ESV note) | Note added; Mark 14:33-34 cited |
+| Romans 8:28 read as "God works in all things" | ESV: "all things work together for good" | ESV wording quoted; point unchanged |
+| Lewis timeline "1955... publishes nothing" | The Problem of Pain 1940; A Grief Observed 1961 | Entry redated |
+| Joseph about 1800 BC; Job undated; Psalms about 1000 BC; Romans about AD 57; Revelation about AD 95 | Traditional or approximate | Marked |
+| "Leader to confirm" (4: Dostoevsky, Yancey, Keller, Wolterstorff) | Titles known; no specific claim attributed to them except Dostoevsky, which is paraphrased | Notes removed |
+| Scripture: Psalm 13:1-2, 22:1; Habakkuk 1:2-3; Job 1:8, 1:21, 2:9, 2:13, 3:11, 13:15, 38:1-4, 38:12, 38:31, 42:5, 42:7, 42:11; Lamentations 3:17-18, 3:32-33; Jeremiah 12:1; Genesis 18:25, 50:20; Romans 8:18, 8:22-23, 8:28; Acts 2:23; Isaiah 25:8, 53:3-4, 55:8-9; Deuteronomy 29:29; Matthew 27:46; Luke 22:44; Hebrews 2:18, 4:15; Philippians 2:6-8; John 9:2-3, 11:35, 20:27; 2 Corinthians 11:24-25; 1 Corinthians 15:54-55; 1 Peter 1:3; Revelation 21:3-5 | ESV, from memory | Quoted with references |
+
+### raising-believers
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (30); five sons (summary, s1 teaching, s5 teaching, FAQ 11, script, pulpit); "raised without a father" (primer); "a father who cannot save his own children" | Brief: each fact once where it does work; no added feeling | Five sons kept once (s1 teaching, with the old script's "can't save a single one of them"); fatherless cut; the rest cut |
+| Book plug, "drawn from James Bell's book Raising Believers" (summary, bulletin, pulpit, invite) | client/src/lib/bookShelf.ts: not on the shelf | Plugs cut; guide title unchanged |
+| Help lines | Searched the old file for counselor, crisis, abuse, danger, police: none | Script's grief sentence kept word for word |
+| Sticky Faith (2011), Powell and Clark: room to voice doubt in warm relationships went with lasting faith | Known (Fuller Youth Institute, College Transition Project) | Kept as reported, with the caveat that research promises nothing |
+| "The thing one writer called a Christianity emptied of the gospel" | Unattributed quotation | Cut |
+| Bushnell, Christian Nurture, "1830s" | Discourses on Christian Nurture 1847; Christian Nurture 1861 | Dated 1847 (and 1861) |
+| Luther's catechisms "circa 1520s"; Westminster Shorter Catechism 1647; Susanna Wesley "circa 1700s" | Known: 1529; 1647; early 1700s | Dated |
+| Augustine and Monica "circa 400" | Confessions about 397 to 400 | "Late 390s AD" |
+| Taylor, A Secular Age (2007), "conditions of belief" | Known | Named in s4 going deeper (old: "a generation of thinkers") |
+| James K. A. Smith, You Are What You Love (2016) | Known; already in the old bibliography | Named in s2 going deeper |
+| Shema, Hannah, Ephesians, 2 Timothy dates | Traditional or approximate | Marked |
+| "Leader to confirm" (6: Powell and Clark, Tripp, Fitzpatrick and Thompson, Farley, Keller, Earley) | Titles and authors known; no specific claim attributed except Sticky Faith's general finding | Notes removed; "Disappearance of Childhood... Various, leader to select" placeholder cut |
+| Romans 8:38-39 "the love that holds the believer holds their wandering child too" | Overreach; Paul speaks of those in Christ | Note reworded |
+| Covenant promise to children of believers | Second-order; read differently by different traditions | Both readings named, left open |
+| Scripture: Deuteronomy 6:4-7, 6:20-21, 7:9; Genesis 25:27-28, 25:34; 1 Samuel 1:27-28, 8:1-3; 2 Samuel 18:33; Proverbs 22:6; John 1:12-13; Psalm 13:1-2, 78:4-7, 145:4; Exodus 12:26-27; 2 Timothy 1:5, 1:12, 3:14-15; Job 38:1-3; Matthew 11:2-6, 13:20-21; Mark 9:24; 1 Peter 3:15; Ephesians 2:8-9, 6:1-4; Colossians 2:6-7; Jeremiah 17:7-8; Luke 15:13, 15:17, 15:20; Romans 8:38-39; Philippians 1:6; Isaiah 1:2, 49:15-16; Acts 2:39 | ESV, from memory | Quoted with references |
