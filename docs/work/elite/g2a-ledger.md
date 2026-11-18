@@ -97,3 +97,24 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Powlison (2016), Chapman, Brauns (2008), Allender, Allender and Longman (1994), Bancroft (2002), Ingram and Johnson | Known | Kept; "Leader to confirm" removed. Brauns's title contains "Unpacking", a forbidden word, kept only because it is the book's title |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help sentences (domestic violence hotline, private way to reach the leader, forgiveness never requires returning to harm) | Word for word | Kept unchanged in the primer, FAQ and opening script |
+
+## anxiety
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Consider the Birds" (summary, promo) | Not on the three-book shelf | Plug dropped; the kicker "Consider the Birds" kept as a label (it is Jesus' phrase) |
+| "Bell does not stand outside this" | Rulebook | Removed |
+| Luke 22:44 (sweat like drops of blood) used as proof that distress is not sin | Known: some early manuscripts lack Luke 22:43-44; the ESV brackets them | Argument now rests on Mark 14:33-34; Luke 22:44 kept in the Scripture notes with the manuscript note |
+| Paul "very likely chained to a Roman guard," facing possible execution | Philippians 1:13, 1:20 | Restated from the letter itself |
+| "Cast" used elsewhere only of the cloaks on the colt | Known (epiriptō, Luke 19:35) | Kept |
+| Peter "quoting" Psalm 55:22 | An echo, not a formal quotation | "Echoing" |
+| Burroughs, The Rare Jewel of Christian Contentment, "1656" | Known: Burroughs died 1646; published 1648 | Corrected to 1648 |
+| Kierkegaard "1855" entry (his death) | Known: The Concept of Anxiety is 1844 | Replaced with the 1844 book |
+| Luther's Anfechtungen, 1527 | Known | Kept |
+| Thomas à Kempis, The Imitation of Christ, "circa 1400s" | Known (about 1418 to 1427; attribution traditional) | "Early 1400s, attributed to" |
+| "1969 recovery of grief studies" | Vague, no event | Cut |
+| Welch, "Reformed Preaching, and broader writing on the fear of man" | Wrong title; Welch's book on the fear of man is When People Are Big and God Is Small | Corrected |
+| Ortlund (2020), Welch (A Small Book for the Anxious Heart; Running Scared), Piper (2006), Eswine, Thompson (2010), Amadi, Lewis (1942) | Known | Kept; "Leader to confirm" removed; Amadi's subtitle dropped (not checked) |
+| Matthew 11:29 the only place Jesus describes his own heart | Widely observed (Ortlund) | Kept as "the one time in the Gospels" |
+| FAQ "Why does the study keep implicating the writer" | About method | Cut |
+| Help lines (988) | Word for word | Three sentences unchanged in the primer, FAQ and closing script |
