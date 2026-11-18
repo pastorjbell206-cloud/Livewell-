@@ -338,3 +338,12 @@ His words: "I want you to make this a 10 out of 10 on every score... a place whe
 - **One place for all his writing and social posts.** A Connect page comes back (this reverses the 2026-10-12 fold of /connect into /about). Facebook and Substack are still linked, not imported: this session cannot read either site. Showing his posts on the site itself needs him to supply them or approve an embed.
 - **Go-ahead to build the audit roadmap** (docs/work/audit-2026-11/AUDIT.md). Reversible presentation choices take the report's recommendation and are listed for him afterwards; facts about him, doctrine wording and anything about money still wait for his word.
 - **Writing audit.** Every piece of writing is checked against his voice (docs/VOICE-JAMES-BELL.md governs; his saved Substack writing profile is copied at docs/work/essays/SKILL-PROFILE-substack.md as a supporting reference) and for AI tells.
+
+## James's decisions, 2026-11-18
+
+- **He approved the new home page** ("This is so much better... I like what you did on this. I want you to continue it") and asked for the same look on every page, with interactive illustrations.
+- **Reorganize everything so nothing is buried.** Tools were hard to find under long menus, and he could not tell what the whole site holds. The five doors of 2026-10-26 give way to seven plain ones (Bible, History, Questions, Family, Tools, Essays, About), six rooms or fewer in each, plus one page that shows everything. The map is in docs/work/elite/PROJECT-PROMPT.md.
+- **The site's distinct purpose is learning how to study and understand the Bible**, for skeptics, millennials, believers, new believers and people who have deconstructed.
+- **Tie in all he does** (LiveWell, Substack, Facebook, the ENDS Initiative) as one thing. Spoken aloud; the transcript said "the Ant initiative", read as ENDS and awaiting his confirmation.
+- **Liberty to write and rewrite** articles and subheadings to the standard of the best essays (given earlier the same day). His read on the preview before anything goes public still holds.
+- **The ten held essays join PR #541** so they are on a preview for his read and no longer exist on one machine only. He had been asked twice which pull request they should join and asked instead for everything to be finished and shown.

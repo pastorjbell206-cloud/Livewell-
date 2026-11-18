@@ -79,3 +79,39 @@ What this changes:
 - **Home is rebuilt first,** then the main doors (Study, Church history, Hard questions, Family, Essays, Tools), so the whole site looks like one designed thing.
 - **Tools are to be exhaustive and organized:** every job a studying person, a parent or a new Christian would want, each in its place, none doubled.
 - **Liberty to write.** Subheadings may be written. Articles that do not fit may be rewritten, and new ones written, to the standard of the best essays on the site. The rules that do not bend still hold: nothing invented, his voice, his read of the writing on the preview before it goes public.
+
+## James's word on the new home page, later on 2026-11-18 (this adds to the section above and overrides the five doors of 2026-10-26)
+
+> "This is so much better. I want you to go full-blown and design all the websites. I want there to have interactive images and illustrations, and I want the design to be out of this world. I like what you did on this. I want you to continue it. I want it to be organized. I want the tools to be easy to find. I feel like sometimes it gets buried under like long tabs, and it's hard to find or know what's fully on this website. So I want you to reorganize everything and make it easy to find, easy to operate, easy to accomplish this mission... Make it easier to disciple people, easier for them to read, easier for them to study and understand the scriptures. My ultimate goal is to kind of tie in all that I do, like the [ENDS] initiative, LiveWell by James Bell, Substack, Facebook, all of those things into kind of one thing... I want this to be kind of distinct to like how to study and how to understand the Bible, and for it to be easy to access. I want people to understand the purpose of it. I want it to be designed very well, very modern... people would think of it as a top website of study... skeptics, millennials, believers, new believers, people that have deconstructed."
+
+(He spoke this aloud; the transcript read "the Ant initiative" and "Live Well by Jim Spall". They are read here as the ENDS Initiative, endsinitiative.org, and LiveWell by James Bell. He has been asked to confirm the first.)
+
+### What this decides
+
+1. **The look is approved.** The engraved plates, the picture cards and the things to touch on the new home page are the look of the whole site. Every main page gets it. The art kit is `client/src/components/art/`; one hand, one icon family.
+2. **The purpose, in one sentence.** LiveWell is a free place to learn how to study and understand the Bible: its text, the world it was written in, and the story of the church that carried it. Home and About say so plainly, near the top.
+3. **Who it is for.** The skeptic, the new believer, the person who has taken their faith apart, the believer who wants depth, and the parent at the table. Most of them are in their twenties to forties and read on a phone. Each of the five gets a road of their own from the first screen ("Start where you are").
+4. **Nothing buried.** No menu shows more than six things. Tools get a door of their own. One page shows everything the site holds ("Everything on LiveWell"). Every tool, page and library has one name, used everywhere.
+5. **One home for all he does.** LiveWell is the home. His Substack, his Facebook, the Following the Way podcast, the ENDS Initiative, his books and his speaking each have a place on one page (Find James) that he can link from anywhere. Posts are linked, not copied in; the newest Substack titles may be listed with links if Substack's feed answers.
+
+### The map (seven doors, six rooms or fewer in each)
+
+| Door | Its page | The rooms, in order |
+|---|---|---|
+| **Bible** | `/study` ("Study the Bible") | Read the Study Bible · Search the Bible · How to study the Bible · The Bible's story · Bible background · Reading plans |
+| **History** | `/theology/history` | The course · The timeline · People · Creeds and confessions · Christian traditions |
+| **Questions** | `/topics` ("Hard questions") | Hard questions by topic · Honest Answers · For skeptics · What Christians believe · Where Christians differ · Everyday life |
+| **Family** | `/family` | Tonight · All devotions · The catechism · Reading plans |
+| **Tools** | `/tools` ("Tools and resources") | Study · Pray and practise · Check yourself · Plans for a hard season · For groups and churches · Downloads |
+| **Essays** | `/writing` | The shelf, by section |
+| **About** | `/about` | About James · Books · Speaking · Find James · Contact · Subscribe |
+
+Beside the doors on every page: Find Help, Search, Subscribe. "New here? Start here" (`/start`) and "Everything on LiveWell" (`/explore`) are offered from Home, from every door's menu, from the phone menu and from the footer.
+
+Rules of the map:
+
+- **Six or fewer.** A door never lists more than six rooms. Everything else is one tap inside the room that holds it.
+- **One home, one name.** A page belongs to one door and one room, and is called the same thing in the menu, on its own page, in search and in My Library.
+- **A room is listed only when its page exists.** A planned room joins the menu when it is built.
+- **Addresses do not move.** Old addresses keep working. Tool addresses are never redirected: a tool that is folded into another stays live at its address, carries one line pointing to the tool that replaced it, and is listed once.
+- The fuller plan for folds and indexes is `docs/work/elite/plan/SITE-MAP.md`; where it keeps five doors, this section wins.
