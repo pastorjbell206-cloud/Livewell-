@@ -4,7 +4,8 @@
  * the essay that carries the full argument, laddering short answer → essay →
  * book (where a book on the shelf takes the question up). The paragraphs are compressions of their source essays: no claim,
  * citation, or verse appears here that is not in the essay. Edit the answer
- * by editing its essay first; this layer only surfaces it.
+ * by editing its essay first; this layer only surfaces it. The exception is
+ * an argued answer (`sections`, below), which carries its own checked claims.
  */
 export interface Answer {
   /** URL anchor + FAQ identity: the question in kebab form. */
@@ -28,6 +29,54 @@ export interface Answer {
    * they are never shown.
    */
   askedAs?: string;
+  /**
+   * The argued form (James, 2026-11-18: "more logical, more academic... but
+   * also someone that would convince a non-believer"). When present, the
+   * `paragraphs` above are the short answer, and these parts follow it on the
+   * answer's page: the objection at full strength, the argument laid out, the
+   * evidence, the best reply and what the argument does not prove. Unlike the
+   * three-paragraph answers, an argued answer may carry claims beyond its
+   * essay; each is checked in docs/work/elite/apol-ledger.md.
+   */
+  sections?: AnswerSection[];
+  /** "Sources and further reading", shown under the sections. Every entry real and checked. */
+  sources?: AnswerSource[];
+}
+
+/** An argument set out so a reader can check each step. */
+export interface AnswerSteps {
+  /** What kind of argument it is, in plain words. */
+  kind: string;
+  premises: string[];
+  conclusion: string;
+}
+
+/** One part of an argued answer: a heading, then paragraphs, with an argument laid out where one belongs. */
+export interface AnswerSection {
+  heading: string;
+  body: (string | AnswerSteps)[];
+}
+
+export interface AnswerSource {
+  author: string;
+  /** A book's title, or an article's title when `in` names the journal. */
+  title: string;
+  in?: string;
+  year: string;
+  /** One short line on why it is listed. */
+  note?: string;
+}
+
+/** Every sentence of an answer, short answer and argued parts alike (for the indexes that scan the text). */
+export function answerText(a: Answer): string[] {
+  const out = [...a.paragraphs];
+  for (const s of a.sections ?? []) {
+    for (const b of s.body) {
+      if (typeof b === "string") out.push(b);
+      else out.push(...b.premises, b.conclusion);
+    }
+  }
+  return out;
 }
 
 export const ANSWERS: Answer[] = [
@@ -49,9 +98,67 @@ export const ANSWERS: Answer[] = [
     slug: "why-would-anyone-trust-the-bible",
     question: "Why would anyone trust the Bible?",
     paragraphs: [
-      "The case against the Bible rests almost entirely on claims the relevant scholarship, much of it produced by skeptics, does not support. The telephone game is the wrong picture. The texts spread as a branching tree of copies, and thousands of manuscripts are how scholars catch errors. No council voted the canon in. It emerged by recognition, from below, and the alternative gospels arrived late and lost.",
-      "None of that makes the contents true, and the contradictions objection has real weight. Pretending the differences away is a kind of lying. Independent witnesses differ at the edges and converge at the center. They differ on the angels. They do not differ on the crucifixion, the empty tomb, or the appearances. All four put women first at the tomb, though their culture discounted women as witnesses, and fabricators edit that out. You can grant every point and still conclude the witnesses were sincerely mistaken.",
-      "My unbelief felt like the brave option, but it was the credulous one. I was trusting secular folklore about the Bible on worse evidence than the thing I was rejecting. Have you read it with the attention you would give a hostile witness you suspected of telling the truth, or been quoting the trailer and calling it the film? All the book asks first is that you open it.",
+      "Because the evidence for how the Bible was copied, collected and written is stronger than the rumors about it, and much of that evidence comes from skeptical scholars. We have what was written, with the uncertain places marked in the margins. The books were recognized by the churches over generations, not voted in by a council. Where the history can be checked, it has often held up. None of that proves the Bible's claims true. It clears away the bad reasons for dismissing it, and it leaves the real question standing: what to make of Jesus.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The strongest critic is Bart Ehrman, and he deserves a hearing in his own terms, because he knows the manuscripts better than most of the Bible's defenders. He came from Moody Bible Institute and Wheaton College, studied at Princeton Theological Seminary under Bruce Metzger, and became an agnostic. In Misquoting Jesus (2005) he pointed out that no original manuscript of any book of the Bible survives, that every copy we have was made by hand from earlier copies, and that \"there are more variations among our manuscripts than there are words in the New Testament.\" In The Orthodox Corruption of Scripture (1993) he argued that scribes sometimes changed a passage to make it say more plainly what they already believed about Christ.",
+          "Then there are the differences between the Gospels. In Mark 2:26 Jesus says David ate the bread of the Presence \"in the time of Abiathar the high priest,\" but 1 Samuel 21 names the priest as Ahimelech, Abiathar's father. Ehrman has said that verse was where his belief in a Bible without error began to give way. Put it all together and a careful skeptic has a fair case: if we can't be sure what the authors wrote, if the books were chosen late by the winners, and if the accounts disagree, the Bible is a poor source for anything that happened, let alone a miracle. Every fact in that paragraph is true, and a Christian loses nothing by admitting it. The question is what the facts add up to.",
+        ],
+      },
+      {
+        heading: "The case, step by step",
+        body: [
+          "This is a historical argument, not a deductive one. It comes in four steps, and each can be checked against evidence anyone can look up. The first three answer the skeptic's three charges. The fourth deals with the differences.",
+          {
+            kind: "A cumulative historical case",
+            premises: [
+              "The text we read is substantially the text that was written, and the places where it is uncertain are known and marked.",
+              "The books of the New Testament were recognized by the churches over generations, not chosen late by a council.",
+              "Where the Bible's history can be checked against outside evidence, it has often held up, and its central claim is one that could have been shown false.",
+              "The Gospels differ the way independent witnesses differ, and they agree on the events that matter most.",
+            ],
+            conclusion: "The usual reasons for dismissing the Bible fail. What remains is the question the book itself presses: who Jesus is, and whether he rose.",
+          },
+          "The first step carries the most weight, because if it fails nothing else can be checked. It is also where the evidence is strongest.",
+        ],
+      },
+      {
+        heading: "The evidence",
+        body: [
+          "There are more than five thousand Greek manuscripts of the New Testament, whole or in part, and thousands more in early translations such as Latin, Syriac and Coptic. That is why the count of variants is so high: with that many copies, every slip counts, and most are spelling, word order or a skipped line. Set that beside the books historians trust every day. The first six books of Tacitus's Annals, one of our main sources for the emperor Tiberius, survive in a single medieval manuscript. The New Testament has a gap too, and nobody should hide it. The oldest piece, a scrap of John's Gospel about the size of a credit card now in Manchester, is commonly dated to the second century, and the oldest complete New Testament, Codex Sinaiticus, was copied in the fourth. But it is a gap of generations, not many centuries, and the early papyri and the great fourth-century copies carry substantially the same text. The Old Testament tells the same story. Before 1947 the oldest complete Hebrew Bible was the Leningrad Codex, copied in 1008. Then the caves near Qumran gave up a complete scroll of Isaiah usually dated to the second century before Christ, about a thousand years older, and most of its differences from the later text are spelling and small points of grammar.",
+          "The uncertain places aren't hidden. Open a modern Bible to the end of Mark or to John 8 and a note tells you the earliest manuscripts lack those passages. The plainest statement of the Trinity in the King James Version, 1 John 5:7, is not in the early Greek manuscripts. Erasmus left it out of his printed Greek New Testament in 1516 and added it in 1522, and most modern translations, made by scholars who confess the Trinity, have taken it out again. The doctrine never rested on it. Ehrman himself, in an appendix to Misquoting Jesus, said his position did not stand at odds with Metzger's, that \"essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament.\"",
+          "On the second step: the Council of Nicaea in 325 argued about whether the Son is fully God. It didn't draw up a list of books. Around 180, Irenaeus of Lyon could treat four Gospels, no more and no fewer, as settled. Paul's letters were read as Scripture even earlier; 2 Peter sets them beside \"the other Scriptures\" (2 Peter 3:16). The first list we know of with exactly our twenty-seven books comes from Athanasius of Alexandria in 367, and the arguments over books such as Hebrews, James and Revelation were held in the open and written down by the church's own historians.",
+          "On the third: Luke says he \"followed all things closely for some time past\" in order to write \"an orderly account\" (Luke 1:3), and he dates his story the way ancient historians did, \"in the fifteenth year of the reign of Tiberius Caesar, Pontius Pilate being governor of Judea\" (Luke 3:1). Claims like that can be tested. In 1961 a stone at Caesarea Maritima was found inscribed with Pilate's name and his title, prefect of Judea. An inscription at Delphi puts Gallio's term in Achaia around AD 51 to 52, the setting of Paul's hearing in Acts 18:12. An Aramaic inscription from Tel Dan, found in 1993, mentions the \"House of David.\" Writers outside the church confirm the center. Tacitus, early in the second century and with no sympathy for the movement, recorded that \"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus.\" Josephus, a Jewish historian writing in the 90s, mentions \"the brother of Jesus, the so-called Christ, James by name.\" And Paul, writing to Corinth in the mid-50s, passes on a summary of the faith he had himself received (1 Corinthians 15:3-7), naming witnesses, \"most of whom are still alive\" (1 Corinthians 15:6). That is a claim made where it could be checked.",
+          "On the fourth: the Gospels do differ. Matthew has an angel sitting on the stone, Mark a young man inside the tomb, Luke two men in dazzling clothes, and John tells it through Mary Magdalene. The church always knew this. Around 400 Augustine wrote a long work on the agreement of the Gospels, answering critics who had spotted the same differences, and when Tatian wove the four into one smooth account in the second century, the church in the end kept the four that don't line up perfectly. Independent witnesses to a confusing morning usually differ at the edges, and investigators grow suspicious when they agree too neatly. These differ on the angels. They don't differ on the crucifixion, the burial, the empty tomb or the appearances. All four put women first at the tomb, in a world where, as Josephus summarized the law, a woman's testimony was not to be admitted in court. People inventing evidence edit that out.",
+        ],
+      },
+      {
+        heading: "The best reply, and an answer",
+        body: [
+          "The strongest reply goes like this: grant all of it. A text can be copied perfectly and still be legend. Luke can have Pilate right and the resurrection wrong. That's fair, and I accept it. Careful copying and accurate background don't make a miracle true. But they do change what kind of document we're holding. Most scholars now read the Gospels as ancient biographies, the kind of Lives that Greek and Roman readers knew, and Richard Burridge's What Are the Gospels? (1992) is the study that turned that view into the consensus. Most critical scholars date Mark around 70, within the lifetime of people who had known Jesus, and Paul's letters are earlier still. So the question isn't whether a late, garbled myth can be trusted. It's what to make of early testimony, with names attached, about a crucifixion everyone agrees happened and a resurrection its witnesses were willing to die for. That question has its own page.",
+          "The second reply is Ehrman's own: if the Bible can be wrong in one place, how do you know it's right in any? That only bites if trusting the Bible stands or falls with winning every argument about every verse. Many evangelical churches confess that Scripture is without error, and the careful modern statement of that conviction, the Chicago Statement of 1978, says it is not negated by \"the topical arrangement of material, variant selections of material in parallel accounts, or the use of free citations.\" Other churches that also confess Scripture as the word of God put the conviction differently, and faithful Christians still divide over which wording is right. That is a family argument among Christians. It isn't the same question as whether the Gospels are a reliable witness to Jesus, and the two shouldn't be confused. Mark 2:26 still has no explanation everyone accepts. I can live with that, the way a historian lives with a hard passage in any good source.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this proves the Bible is the word of God. It shows that the book is what it presents itself as: a carefully kept record, written close to the events, by people who expected to be checked. It doesn't touch the hardest reason many people distrust it, which isn't that the words were changed but that they weren't: laws that regulate slavery, commands in Joshua to destroy whole towns. Those questions have pages of their own, and they deserve more than a paragraph.",
+          "The first Christians couldn't have trusted Jesus because of the New Testament, since they didn't have one. They trusted him because they believed God had raised him, and then they received the Scriptures the way he did, as the book that bears \"witness about me\" (John 5:39). Some of the distrust of the Bible was earned, though not by the book. We who defend it loudly often read it very little and quote it most when it agrees with us. The two on the road to Emmaus had heard the Scriptures all their lives; what they lacked was the one who could open them (Luke 24:27). You can settle every question about Abiathar and still have to decide what to do with him. Read one Gospel whole, the way you would read any ancient source, and argue with the book instead of with a rumor about it.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Bart D. Ehrman", title: "Misquoting Jesus", year: "2005", note: "The best popular case against." },
+      { author: "Bart D. Ehrman", title: "The Orthodox Corruption of Scripture", year: "1993" },
+      { author: "Bruce M. Metzger and Bart D. Ehrman", title: "The Text of the New Testament", year: "4th ed., 2005" },
+      { author: "Bruce M. Metzger", title: "The Canon of the New Testament", year: "1987" },
+      { author: "Richard A. Burridge", title: "What Are the Gospels?", year: "1992" },
+      { author: "Richard Bauckham", title: "Jesus and the Eyewitnesses", year: "2006" },
+      { author: "Peter J. Williams", title: "Can We Trust the Gospels?", year: "2018" },
+      { author: "K. A. Kitchen", title: "On the Reliability of the Old Testament", year: "2003" },
     ],
     essaySlug: "why-trust-the-bible",
     essayTitle: "Why Would Anyone Trust the Bible?",
@@ -63,9 +170,76 @@ export const ANSWERS: Answer[] = [
     question: "If God is good, why is there so much suffering?",
     askedAs: "why does god allow suffering why does god let people suffer why do bad things happen to good people pain evil",
     paragraphs: [
-      "Suffering does not disprove God, but it does not need to be solved to be survived. It is the best reason not to believe. The logical version has weakened. Plantinga showed a world of free creatures may be worth more than a world of puppets, because forced love is a contradiction. What remains is less a proof than a cry.",
-      "Ivan Karamazov puts the objection as hard as it can be put: no future harmony is worth the torture of one innocent child, and he returns the ticket. Lewis wrote The Problem of Pain, then lost his wife and found his arguments never touched the wound. But the outrage borrows. Atoms do not have oughts. To call a child's suffering evil is to stand on a moral floor a Godless universe cannot pour. Every worldview has to carry the problem. The secular one only moves it to a universe where suffering means nothing.",
-      "Out of the whirlwind God answers Job with questions. He never gives the explanation; he gives himself. And at the center of the faith is a God who entered the suffering instead of explaining it from a distance. The child in the ward is still in the ward. The people who met him in their worst hour don't come back saying they understand. They come back saying they are not alone in it.",
+      "Suffering does not disprove God, but it is the strongest reason people give for not believing, and it deserves an argument, not a slogan. The claim that evil makes God impossible has largely been given up, even by atheist philosophers. The claim that evil makes God unlikely is serious and still argued, and its key step, that suffering we can see no reason for probably has none, is weaker than it looks. Neither argument is answered by an explanation of your suffering, and I don't have one. What Christianity offers is something else: a God who entered suffering, and a promise about how it ends.",
+    ],
+    sections: [
+      {
+        heading: "The objection at full strength",
+        body: [
+          "The argument is old. It's usually credited to Epicurus, but it survives because a Christian teacher, Lactantius, quoted it early in the fourth century in order to answer it: \"if He is both willing and able, which alone is suitable to God, from what source then are evils? or why does He not remove them?\" Fourteen centuries later David Hume had a character in his Dialogues remark that \"Epicurus's old questions are yet unanswered.\"",
+          "Modern philosophers gave it two forms. In 1955 J. L. Mackie argued in the journal Mind that the three claims \"God is omnipotent,\" \"God is wholly good\" and \"evil exists\" cannot all be held together. In 1979 William Rowe made a more modest and more dangerous case. He asked his readers to imagine a fawn caught in a forest fire started by lightning, horribly burned, lying in terrible agony for several days before it dies. Darwin had felt the same weight in an 1860 letter to the botanist Asa Gray, unable to persuade himself that a good and all-powerful God would have designed wasps that feed inside the living bodies of caterpillars. And Dostoevsky, a believer himself, gave the protest its human face. Ivan Karamazov tells his brother about children tortured by adults and says no final harmony is worth it: \"It's not God that I don't accept, Alyosha, only I most respectfully return Him the ticket.\"",
+          "I grant what's true in all this, and it's a lot. The suffering is real, much of it looks pointless from where we stand, and some of the answers Christians reach for first are worse than silence. Telling a grieving mother that everything happens for a reason isn't theology. It's the mistake of Job's friends, and God rebuked them for it: \"you have not spoken of me what is right, as my servant Job has\" (Job 42:7).",
+        ],
+      },
+      {
+        heading: "Two arguments, laid out",
+        body: [
+          "It helps to separate the two forms, because they succeed or fail in different places.",
+          {
+            kind: "The logical argument (after Mackie, 1955)",
+            premises: [
+              "If God exists, he is all-powerful and wholly good.",
+              "A wholly good being eliminates every evil it can.",
+              "An all-powerful being can eliminate every evil.",
+              "Evil exists.",
+            ],
+            conclusion: "God does not exist.",
+          },
+          "The weight sits on the second premise. Alvin Plantinga answered it in God, Freedom, and Evil (1974): a good being might permit an evil if it is the price of a good it could not have any other way, and a world of creatures free to love, and so free to refuse, may be such a good. Plantinga didn't need to show this is God's actual reason, only that it's possible, because a contradiction has to be impossible. Most philosophers on both sides now think he succeeded. Mackie himself, in The Miracle of Theism (1982), allowed that the problem of evil does not, after all, show the central doctrines of theism to be logically inconsistent, and Rowe wrote that he didn't think anyone had succeeded in establishing so strong a claim. One honest note: Plantinga's answer assumes a view of freedom that many Christians in the Reformed tradition don't hold. They reject the logical argument on other grounds, that God may permit an evil for a greater good we cannot see.",
+          {
+            kind: "The evidential argument (Rowe, 1979, in my words, close to his)",
+            premises: [
+              "There probably is intense suffering, like the fawn's, that an all-powerful, all-knowing being could have prevented without losing some greater good or allowing some evil as bad or worse.",
+              "A wholly good, all-knowing being would prevent any intense suffering it could, unless that would cost a greater good or allow an evil as bad or worse.",
+            ],
+            conclusion: "Probably there is no all-powerful, all-knowing, wholly good being.",
+          },
+          "Rowe himself called the argument valid, and it is. Everything turns on the first premise, and on the word \"probably.\" His reason for it is that we look at the fawn and can't think of any good its suffering serves. The step is from \"I can see no reason\" to \"there is probably no reason.\"",
+        ],
+      },
+      {
+        heading: "Where the evidential argument is weakest",
+        body: [
+          "Whether that step holds depends on whether we should expect to see the reason if there were one. The philosopher Stephen Wykstra pressed this point in 1984, and it has shaped the debate since. Put it with an example of my own. If I look into my garage and see no car, I can be confident there's no car. If I look and see no flea, I can't, because I wouldn't expect to see a flea even if one were there. If God exists, the distance between his mind and ours is far greater than the distance between my eyes and a flea. The reasons of a being who sees the whole of history are not the kind of thing we should expect to spot from inside one afternoon of it.",
+          "The Bible tells exactly that kind of story. In Job the reader is shown a reason for Job's suffering in the first two chapters, a scene in the heavenly court, and Job is never told it. When God finally speaks, he gives Job no explanation at all, only questions about the foundations of the earth, the lion hunting its prey and the young ravens crying for food. Job shows, inside Scripture, that a person can suffer for a reason that exists and is never told to him.",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "A skeptic has a good reply to this, and I want to put it fairly. If we can't judge whether God has reasons for the fawn, how can we judge anything about God? Haven't you made his goodness impossible to test? And if any horror might serve a hidden good, why should I stop a child from being hurt? That reply has real force, and I don't think it's fully answered. But two things can be said. First, the ignorance claimed here is narrow. It isn't that we know nothing about right and wrong. It's that we don't know every good an infinite mind might be weighing. Knowing that God has purposes has never licensed Christians to stand back. Jesus came to the grave of his friend Lazarus already intending to raise him, and still, \"Jesus wept\" (John 11:35). Second, Christians don't read God's goodness off the balance sheet of the world at all. They learn it from a particular history: the cross and the empty tomb. If that history is true, it's the evidence that counts most, and it has its own page.",
+          "Christians, me included, often make one more move here, and it needs correcting. We say the skeptic's outrage borrows a moral standard a godless universe can't supply. As an answer to the argument, that fails. The argument is internal: it asks whether the believer's own God and the believer's own idea of goodness can stand together with this world, and the skeptic doesn't need to believe in objective good to ask it. What the point does show is this. If the argument succeeds and there is no God, the suffering is still there. It has only lost the name evil. The child's pain becomes a fact about matter in motion, and the protest that started the argument has nowhere left to stand. Every view of the world has to carry suffering. The question is which one can carry the protest too.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this explains your suffering, or anyone's. At best it shows that God and evil are not contradictory, and that the case from pointless suffering is less certain than it feels. That's a long way short of comfort. C. S. Lewis wrote The Problem of Pain in 1940, and after his wife died in 1960 he published A Grief Observed under a made-up name. What he dreaded, he wrote, was not \"So there's no God after all,\" but \"So this is what God's really like.\" The philosopher Nicholas Wolterstorff, who knew these arguments better than I do, wrote Lament for a Son after his son died in a climbing accident, and he offered no theodicy at all. I find that honest. The arguments belong in the seminar room. They don't belong at the hospital bed.",
+          "What Christianity offers there isn't an explanation but an event. The church confesses that God didn't stay outside the suffering. The Son became a man with a body that could be hurt, and he was tortured and killed. Standing with Mary as she wept for her brother, \"he was deeply moved in his spirit and greatly troubled\" (John 11:33). On the cross he prayed the first line of Psalm 22: \"My God, my God, why have you forsaken me?\" (Matthew 27:46). If he was raised, then suffering is real evil and it won't win. The Bible's last picture is of God himself: \"He will wipe away every tear from their eyes, and death shall be no more\" (Revelation 21:4). That doesn't tell a mother why. It tells her who has the last word, and that he has carried the wound himself.",
+          "If you're reading this in the middle of it, you don't need an argument tonight. You need someone to sit with you, and Find Help has people you can call; in the US you can call or text 988 at any hour. I can't tell you why, and I'd be wary of anyone who says he can. Job never found out. But he was allowed to ask, and at the end he said, \"I had heard of you by the hearing of the ear, but now my eye sees you\" (Job 42:5). The hands that will wipe away every tear still carry the marks of the nails.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "J. L. Mackie", title: "Evil and Omnipotence", in: "Mind", year: "1955" },
+      { author: "William L. Rowe", title: "The Problem of Evil and Some Varieties of Atheism", in: "American Philosophical Quarterly", year: "1979" },
+      { author: "Alvin Plantinga", title: "God, Freedom, and Evil", year: "1974" },
+      { author: "Daniel Howard-Snyder, ed.", title: "The Evidential Argument from Evil", year: "1996", note: "Both sides, by the philosophers who made the arguments." },
+      { author: "Eleonore Stump", title: "Wandering in Darkness", year: "2010" },
+      { author: "Fyodor Dostoevsky", title: "The Brothers Karamazov", year: "1880" },
+      { author: "C. S. Lewis", title: "A Grief Observed", year: "1961" },
+      { author: "Nicholas Wolterstorff", title: "Lament for a Son", year: "1987" },
+      { author: "Bart D. Ehrman", title: "God's Problem", year: "2008", note: "The best popular case against, by a scholar who left the faith over suffering." },
     ],
     essaySlug: "if-god-is-good-why-suffering",
     essayTitle: "If God Is Good, Why Is There So Much Suffering?",
@@ -231,9 +405,90 @@ export const ANSWERS: Answer[] = [
     askedAs: "is there a god is god real proof evidence for god",
     question: "Does God actually exist?",
     paragraphs: [
-      "God exists, and I say that as a man who spent most of his life certain no one was there. I don't say it because someone won an argument. No proof marches a living person across that line, and anyone selling one has never watched it work. What I found was smaller and harder to escape: the atheism I held could be stated but not inhabited, and it kept running up debts it refused to pay.",
-      "The other side has a real case. Schellenberg built a rigorous case out of the silence alone, that a perfectly loving God would not leave the honest seeker to find only absence, and the silence is real. It isn't weak. But look at what my own account had to spend. Leibniz's question doesn't go away: why is there something rather than nothing. The fine-tuning of the physical constants sits so narrow that to dodge a set-up cosmos the naturalist posits an infinity of universes he can never observe, faith in a lab coat. And C. S. Lewis pressed where it cost most: without God, my sense that a tortured child is really wrong, wrong if every person on earth applauded it, is only chemistry in a primate brain. I could say that sentence. I could not live it.",
-      "None of this is a proof. Blaise Pascal saw that God gives enough light for those who desire to see and enough darkness for those who do not, evidence calibrated for a heart that is looking. Paul told Rome that God's \"invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse\" (Romans 1:20). The evidence was never my main problem. I had grown practiced at not seeing what I didn't want to owe. The unbelief wasn't too rational to keep. It was too expensive, and I had been paying all along.",
+      "God exists. I believe that, and I think the evidence makes believing it reasonable, not just comforting. I say it as a man who spent years sure no one was there. Nothing below forces anyone to agree, and I won't pretend it does. But three lines of reasoning, each open to inspection, point the same way: that anything exists at all, that the universe is fit for life, and that some things are really wrong. A fourth, the resurrection, is a question of history and has its own page. You can weigh all of it and still say no. What you can't honestly say is that there's nothing to weigh.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with the other side, because it's stronger than most believers admit. David Hume's Dialogues Concerning Natural Religion, published in 1779 after his death, took apart the argument that the world looks designed. The likeness between a universe and a machine is weak, he argued; we have watched machines being made but never a universe, and even if the world had a maker, nothing in it tells us there is only one, or that he is good. When Darwin published On the Origin of Species in 1859, the most popular design argument of the day, William Paley's watch in Natural Theology (1802), lost most of its force for living things. The gaps where God used to stand kept closing. I concede all of that. A God brought in to fill a hole in our science should be expected to shrink, and he has.",
+          "Bertrand Russell gave the deepest objection its plainest form. Debating the Jesuit philosopher and historian Frederick Copleston on BBC radio in 1948, he was pressed on why the universe exists at all, and he answered, \"I should say that the universe is just there, and that's all.\" Richard Dawkins added a second reply in The God Delusion (2006): a designer able to make a universe would have to be at least as improbable as the universe, so God explains nothing and you are left asking who designed the designer. Then there is the silence. J. L. Schellenberg argued in Divine Hiddenness and Human Reason (1993) that a perfectly loving God would not leave a sincere, open-minded person unable to believe in him, and such people plainly exist. Add suffering, which has its own page, and you have a serious case. A thoughtful person can rest in it, and many do.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "None of what follows is a proof in the mathematician's sense, and that isn't a dodge. Almost nothing that matters is proved that way: not that other minds exist, not that the past was real, not that a historian has the cause of a war right. What I can offer is a cumulative case. Some of its parts are deductive, where if the premises are true the conclusion has to follow, and the only question is whether each premise is more believable than its denial. Others are inferences to the best explanation, where we ask which account makes the evidence least surprising. I'll lay out the three I think strongest, and for each one I'll say which premise carries the weight and where an honest person can get off.",
+        ],
+      },
+      {
+        heading: "First: why is there anything at all?",
+        body: [
+          "In 1714, in a short work called the Principles of Nature and Grace, Gottfried Leibniz set down what he took to be the first question we have a right to ask: why is there something rather than nothing? The argument built on that question is called the argument from contingency. I lean on it more than on the better-known argument that the universe had a beginning, because it doesn't need one. Thomas Aquinas, who gave the church its classic arguments for God, held that reason alone cannot show the world began in time; he believed it began because Scripture says so. This argument works even if the universe never had a first moment.",
+          {
+            kind: "A deductive argument from contingency",
+            premises: [
+              "Everything that exists has an explanation of its existence, either in the necessity of its own nature or in something outside it.",
+              "The universe, all of space, time, matter and energy, does not exist by the necessity of its own nature. It could have been different, or not been at all.",
+            ],
+            conclusion: "The universe has its explanation in something outside it that exists by necessity and is not made of space, time or matter. That isn't yet the God of the Bible, but it is a large part of what every believer in one God means by the word.",
+          },
+          "The weight sits on the first premise, and Russell saw it. His answer was that the demand stops at the whole: each thing in the world may need explaining, but the world itself is just there. I think a reasonable person can accept the premise anyway, for a plain reason. We never accept \"just there\" anywhere else. The philosopher Richard Taylor asked his readers, in Metaphysics (1963), to imagine finding a large translucent ball in the woods. No one would think it simply exists for no reason, and making the ball the size of the universe doesn't make the question go away. It makes it bigger. Science itself runs on the conviction that things have explanations. Every account of reality has to stop somewhere. The atheist stops at a universe that happens to exist when it need not have. The theist stops at a being that could not fail to exist. I think the second is the better place to stop, but this is the step where an honest person can disagree.",
+          "A related argument, the kalam, revived by William Lane Craig in 1979, adds that the universe began to exist. In 2003 the physicists Arvind Borde, Alan Guth and Alexander Vilenkin showed that any universe which has, on average, been expanding cannot be infinite in the past, though physicists still argue over whether quantum effects open a way around it. If the universe did begin, the contingency argument only gets stronger. It just doesn't depend on that.",
+        ],
+      },
+      {
+        heading: "Second: a universe fit for life",
+        body: [
+          "The second line is newer, and it comes from physics, not theology. Over the last century physicists have found that several numbers in the laws of nature, such as the strength of gravity and the energy of empty space, sit within narrow ranges that allow stars, chemistry and life, and that modest changes in many of them would leave a universe with nothing much in it. The sharpest case is the energy of empty space. Steven Weinberg, a Nobel laureate and an unbeliever, wrote in 1989 that the plainest calculation from physics puts it about 120 orders of magnitude, a one followed by 120 zeros, above what observation allows, so something has to cancel it to an astonishing precision. Martin Rees, the Astronomer Royal, who holds no religious belief, wrote a book on the subject, Just Six Numbers (1999). Fred Hoyle, who was no Christian either, wrote after his own work on how stars make carbon that a common-sense reading of the facts suggests a superintellect had monkeyed with physics. Neither man drew a believer's conclusion. Both saw the fact that needs explaining.",
+          {
+            kind: "An inference to the best explanation",
+            premises: [
+              "The values in the laws of nature that allow for life are a very small part of the range they could have had.",
+              "If there is a God who means for there to be living, choosing creatures, a universe that allows for life is not surprising.",
+              "If this is the only universe and its values fell out by chance, a universe that allows for life is very surprising.",
+            ],
+            conclusion: "The fitness of the universe for life is evidence for God over chance. It doesn't settle the question. It shifts the weight.",
+          },
+          "The third premise carries the weight, and there are two serious replies to it. The first is necessity: perhaps a deeper theory will show the numbers could not have been otherwise. Perhaps, though that would move the fine-tuning into the deeper theory without removing it. The second is the multiverse: if there are vast numbers of universes with different values, some will allow life, and we could only find ourselves in one of those. That is real physics, not a dodge, and Rees takes it seriously. But no other universe has been observed, and the philosopher Robin Collins has argued that any machinery proposed for making universes would need its own finely set laws to produce life-permitting ones at all, so the question moves up a level. The astrophysicists Geraint Lewis and Luke Barnes lay out the evidence and both explanations fairly in A Fortunate Universe (2016).",
+          "As for Dawkins's question about the designer, an explanation doesn't have to be explained before it counts. An archaeologist who finds arrowheads can conclude that someone made them without knowing where the makers came from. And the God of the creeds isn't a very complicated machine inside the universe. He is the necessary being the first argument arrived at, which is why the two arguments belong together.",
+        ],
+      },
+      {
+        heading: "Third: goodness that binds us",
+        body: [
+          "The third line starts from something almost everyone believes and almost no one can live without. Torturing a child for fun is wrong, and it would still be wrong if every person on earth applauded it. That is what I mean by an objective moral fact: one that holds whatever anyone thinks.",
+          {
+            kind: "A deductive moral argument",
+            premises: [
+              "If there is no God, there are no objective moral duties: duties that bind us whatever we or our society think.",
+              "There are objective moral duties.",
+            ],
+            conclusion: "There is a God, a source of goodness that is not our invention.",
+          },
+          "Most people grant the second premise, so the weight falls on the first, and here the best unbelieving philosophers divide, which is the telling part. J. L. Mackie, an Oxford philosopher and an atheist, argued in Ethics: Inventing Right and Wrong (1977) that objective values would be strange things, unlike anything else in the universe, and he gave them up. In The Miracle of Theism, published in 1982 after his death, he allowed that if such values did exist, they would be very unlikely to have arisen in the ordinary course of events without a god to create them. Erik Wielenberg, also an atheist, takes the other road and holds that the basic moral facts are simply necessary and need no foundation. Then Sharon Street's question presses on him: how did creatures shaped by natural selection, which rewards survival and not truth, come to know such facts at all? Wielenberg has an answer, and it's a serious one. But notice the shape of the choice. Either morality is invented and our sense of an absolute demand is an illusion, or moral facts stand unexplained and we were lucky to find them, or goodness has a source who made us able to know it.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "Even if all three arguments succeed, they bring you to a necessary, powerful source of the world, one that seems to intend life and is the ground of goodness. That's a long way from atheism. It isn't yet Christianity. Nothing here shows that God is three persons, or that he became a man, or that he forgives. For Christians those claims rest on a particular event, and whether it happened is a historical question, not a philosophical one: whether Jesus of Nazareth was raised from the dead. That case has its own page, and I think it is the strongest of all. Paul made the same move in Athens. He started on the philosophers' own ground, with \"the God who made the world and everything in it\" (Acts 17:24), who \"is actually not far from each one of us\" (Acts 17:27), and then went straight to the resurrection (Acts 17:31).",
+          "Schellenberg's silence isn't answered by any of this, and I won't pretend it is. The best I can offer is what Blaise Pascal wrote in the notes we call the Pensées: that God has given enough light for those who want to see, and enough darkness for those who don't. A skeptic can fairly reply that this is convenient for the believer. I think it fits the way every serious question in a life works. The evidence is real, it doesn't force anyone, and what we want shapes what we let ourselves see.",
+          "I came to faith from atheism, so I don't say this from outside. Paul writes that God's \"invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made\" (Romans 1:20). That can sound like an insult. I read it as a description of a habit any of us can have, the habit of not looking. If you weigh all of this and still don't believe, you haven't been foolish. But you'll have to choose where your explanations stop, as everyone does, and the universe will still be there, asking why.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "G. W. Leibniz", title: "Principles of Nature and Grace, Based on Reason", year: "1714" },
+      { author: "Richard Taylor", title: "Metaphysics", year: "1963" },
+      { author: "Alexander R. Pruss", title: "The Principle of Sufficient Reason: A Reassessment", year: "2006" },
+      { author: "Martin Rees", title: "Just Six Numbers", year: "1999" },
+      { author: "Geraint F. Lewis and Luke A. Barnes", title: "A Fortunate Universe: Life in a Finely Tuned Cosmos", year: "2016" },
+      { author: "Richard Swinburne", title: "The Existence of God", year: "2nd ed., 2004" },
+      { author: "Erik J. Wielenberg", title: "Robust Ethics", year: "2014", note: "An atheist's case for moral facts without God." },
+      { author: "J. L. Schellenberg", title: "Divine Hiddenness and Human Reason", year: "1993" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982", note: "The best book against: an atheist weighing every argument with care." },
+      { author: "Graham Oppy", title: "Arguing about Gods", year: "2006", note: "The strongest recent case that no argument for God succeeds." },
     ],
     essaySlug: "does-god-actually-exist",
     essayTitle: "Does God Actually Exist?",
