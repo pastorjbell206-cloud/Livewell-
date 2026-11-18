@@ -95,40 +95,34 @@ jobs:
       # Prerender too, so Lighthouse measures the HTML Vercel actually ships
       # (build:vercel runs prerender; the static home hero lives there).
       - run: pnpm run sitemap && pnpm run build && pnpm run prerender
+      # Serve the build the way Vercel does: vercel.json's redirects, then each
+      # address's own prerendered file, then the app shell. `serve -s` answered
+      # every address with the home page's HTML, so a chapter or an essay was
+      # never measured as itself; that is how a Study Bible chapter sat at 43
+      # for performance, with a layout shift of 0.6, while this job read 100
+      # (docs/work/audit-2026-11/technical.md, T13).
       - name: Serve built site
-        run: npx serve -s dist/public -l 4173 &
+        run: node scripts/serve-like-vercel.mjs --port 4173 &
       # Three runs, judged on the median: a single run on a shared runner swings
       # by more than the thresholds' margin (the same commit has scored 54 and
       # 91), so one slow machine could turn the job red with no code change.
       # Each run gets one retry: headless Chrome on the runner sometimes
       # crashes the tab (LighthouseError: TARGET_CRASHED) before scoring.
-      - name: Lighthouse (home, three runs)
-        run: |
-          for i in 1 2 3; do
-            for attempt in 1 2; do
-              npx --yes lighthouse http://localhost:4173/ \
-                --chrome-flags="--headless --no-sandbox" \
-                --only-categories=performance,accessibility,best-practices,seo \
-                --output=json --output-path=./lh-$i.json --quiet && break
-              echo "run $i, attempt $attempt: Lighthouse did not finish; retrying once"
-            done
-            node -e "const r=require('./lh-$i.json').categories; console.log('run $i: ' + Object.keys(r).map(k => k + ' ' + Math.round(r[k].score*100)).join(', '))"
-          done
-      - name: Lighthouse thresholds on the median of three (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
-        run: |
-          node -e "
-            const runs = [1, 2, 3].map((i) => require('./lh-' + i + '.json').categories);
-            const median = (k) => runs.map((r) => Math.round((r[k]?.score ?? 0) * 100)).sort((a, b) => a - b)[1];
-            const min = { performance: 90, accessibility: 90, 'best-practices': 95, seo: 95 };
-            let bad = 0;
-            for (const k in min) {
-              const s = median(k);
-              const ok = s >= min[k];
-              console.log((ok ? 'ok  ' : 'FAIL') + ' ' + k.padEnd(15) + s + ' (min ' + min[k] + ')');
-              if (!ok) bad++;
-            }
-            if (bad) { console.error(bad + ' Lighthouse category(ies) below threshold'); process.exit(1); }
-          "
+      # scripts/lighthouse-median.mjs holds both rules for every page below.
+      - name: Lighthouse (home, three runs; docs/WORLD-CLASS-SITE-PROMPT.md thresholds, asserted on the median)
+        run: node scripts/lighthouse-median.mjs http://localhost:4173/ home --min performance=90,accessibility=90,best-practices=95,seo=95 --max-cls 0.1
+      # The two page types a reader most often lands on from a search or a
+      # shared link. Each is a lazy chunk behind its prerendered text, so the
+      # first thing asserted is that nothing jumps while it loads (CLS), then
+      # accessibility and SEO. The performance floor sits under the home
+      # page's because Lighthouse's simulated phone counts the page's own
+      # code and data against it; raise it as those pages get lighter.
+      - name: Lighthouse (a Study Bible chapter, three runs)
+        if: always()
+        run: node scripts/lighthouse-median.mjs http://localhost:4173/study/bible/john/3 chapter --min performance=70,accessibility=95,seo=95 --max-cls 0.1
+      - name: Lighthouse (an essay, three runs)
+        if: always()
+        run: node scripts/lighthouse-median.mjs http://localhost:4173/writing/what-post-christian-means essay --min performance=70,accessibility=95,seo=95 --max-cls 0.1
       - name: Axe (home)
         run: |
           # axe exits 1 on real accessibility violations and 2 on environment

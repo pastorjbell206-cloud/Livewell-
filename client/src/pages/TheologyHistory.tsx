@@ -136,6 +136,10 @@ export default function TheologyHistory() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
+          {/* On a first load the prerendered list of essays stays on screen
+              until the essays and the timeline have arrived
+              (lib/prerender-hold.ts), so neither pushes the other down. */}
+          {(eras.length === 0 || essays.length === 0) && <span hidden data-lw-loading />}
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Church history
           </div>

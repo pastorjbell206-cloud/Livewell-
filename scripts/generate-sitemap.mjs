@@ -135,6 +135,9 @@ const STATIC_PAGES = [
   { url: "/life/assessment", priority: "0.8", changefreq: "monthly" },
   { url: "/family", priority: "0.75", changefreq: "monthly" },
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
+  // Tonight's devotion: the address a parent opens each night. It forwards to
+  // the day's devotion in the browser, and answers with its own page and head.
+  { url: "/family/tonight", priority: "0.75", changefreq: "daily" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },

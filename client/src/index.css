@@ -273,16 +273,19 @@ img{display:block;max-width:100%}
 /* A page's own text, written into the static shell by
    scripts/prerender-heads.mjs. It is the first thing on screen on a chapter,
    an essay or a guide, in the site's type and column, and main.tsx keeps it
-   there until the real page is ready (lib/prerender-hold.ts). */
-.prerender-content{max-width:calc(var(--w-prose) + 2 * var(--s-3));margin:0 auto;padding:var(--s-5) var(--s-3) var(--s-7);font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);overflow-wrap:break-word}
-.prerender-content h1{font-family:var(--F);font-weight:400;font-size:clamp(2.1rem,6vw,3.25rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 var(--s-2)}
+   there until the real page is ready (lib/prerender-hold.ts). The heading and
+   the paragraphs are set no smaller than the real page sets them, so the
+   browser's largest-paint mark stays with this first paint and does not move
+   to the swap. */
+.prerender-content{max-width:calc(var(--w-prose) + 2 * var(--s-4));margin:0 auto;padding:var(--s-5) var(--s-4) var(--s-7);font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);overflow-wrap:break-word}
+.prerender-content h1{font-family:var(--F);font-weight:400;font-size:clamp(2.3rem,5.4vw,3.8rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 var(--s-2)}
 .prerender-content h2{font-family:var(--F);font-weight:400;font-size:1.75rem;line-height:1.2;margin:var(--s-5) 0 var(--s-2)}
 .prerender-content h3,.prerender-content h4,.prerender-content h5,.prerender-content h6{font-family:var(--F);font-weight:500;font-size:1.35rem;line-height:1.25;margin:var(--s-4) 0 var(--s-1)}
 .prerender-content p,.prerender-content ul,.prerender-content ol,.prerender-content dl{margin:0 0 1.1em}
 .prerender-content ul,.prerender-content ol{padding-left:1.3em}
 .prerender-content li{margin-bottom:.45em}
 .prerender-content li>p{margin:0;color:var(--ink-muted);font-size:15px}
-.prerender-content blockquote{margin:var(--s-3) 0;padding-left:var(--s-2);border-left:2px solid var(--mustard);font-family:var(--F);font-size:1.3rem;line-height:1.45}
+.prerender-content blockquote{margin:var(--s-3) 0;padding-left:var(--s-2);border-left:2px solid var(--mustard)}
 .prerender-content a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
 .prerender-content dt{font-weight:600}
 .prerender-content dd{margin:0 0 .9em}
@@ -949,7 +952,6 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
   .site-nav{padding:0 16px;height:60px}
   .lw-shell-bar{height:60px}
   .lw-main{min-height:calc(100vh - 60px)}
-  .prerender-content{font-size:16px;padding-left:var(--s-2);padding-right:var(--s-2)}
   .hero-h{font-size:32px}
   .hero-ctas{flex-direction:column;align-items:flex-start}
   .grid-4{grid-template-columns:1fr}
