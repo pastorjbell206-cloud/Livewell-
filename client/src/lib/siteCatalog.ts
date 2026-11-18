@@ -120,7 +120,12 @@ export const DOORS: Door[] = [
       { id: "bible.guides", name: "Guides to reading it", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" } },
       { id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" } },
       { id: "bible.background", name: "Bible background", line: "The world the Bible was written in: its places, peoples and customs.", href: "/resources/context", icon: "Map", count: { n: 41, of: "guides" } },
-      { id: "bible.year", name: "The Bible in a year", line: "A daily plan through the whole story in 2027.", href: "/study/bible/guides/whole-story-2027", icon: "CalendarDays" },
+      {
+        id: "bible.plans", name: "Reading plans", line: "Every plan for reading the Bible, by length.", href: "/study/plans", icon: "CalendarDays",
+        inside: [
+          { id: "bible.year", name: "The Bible in a year", line: "A daily plan through the whole story in 2027.", href: "/study/bible/guides/whole-story-2027", icon: "CalendarDays" },
+        ],
+      },
     ],
   },
   {
