@@ -84,9 +84,9 @@ function answers() {
   return ANSWERS.map((a) => ({
     title: str(a.question),
     blurb: clip(a.paragraphs?.[0]),
-    // The essay's title carries the plain name of the subject ("trinity",
-    // "inerrancy") when the question itself does not use the word.
-    keywords: str(a.essayTitle),
+    // The essay's title and address carry the plain name of the subject
+    // ("trinity", "inerrancy") when the question itself does not use the word.
+    keywords: `${str(a.essayTitle)} ${str(a.essaySlug).replace(/-/g, " ")}`.trim(),
     href: `/answers#${a.slug}`,
   }));
 }
