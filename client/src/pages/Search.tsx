@@ -214,8 +214,11 @@ export default function SearchPage() {
       <InnerHead path="/search" title="Search LiveWell" plate="lens" />
 
       {/* FIRST: the search box. */}
-      <section className="home-sec home-sec--dark lw-band-tight" aria-label="Search">
+      <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="search-box-title">
         <div className="home-wrap">
+          <h2 id="search-box-title" className="sr-only">
+            Search the site
+          </h2>
           <div className="lw-find" style={{ maxWidth: "720px" }}>
             <div className="lw-find__field">
               <SearchIcon size={20} strokeWidth={1.75} aria-hidden="true" />

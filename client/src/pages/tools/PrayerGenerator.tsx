@@ -273,9 +273,9 @@ export default function PrayerGenerator() {
           }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "14px" }}>
               <Sun size={16} style={{ color: "var(--gold)" }} />
-              <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "var(--gold)", fontFamily: "var(--U)", textTransform: "uppercase" }}>
+              <h2 style={{ margin: 0, fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "var(--mustard-text)", fontFamily: "var(--U)", textTransform: "uppercase" }}>
                 Prayer of the Day
-              </span>
+              </h2>
             </div>
             <div style={{ fontSize: "12px", fontWeight: 700, color: "var(--ink3)", fontFamily: "var(--U)", marginBottom: "12px", letterSpacing: "0.08em" }}>
               {dailyPrayer.type.toUpperCase()}
@@ -338,7 +338,7 @@ export default function PrayerGenerator() {
 
           {prayer && (
             <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "12px", padding: "40px 32px", borderTop: "4px solid var(--gold)" }}>
-              <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
+              <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
                 {selected?.toUpperCase()}
               </div>
 
