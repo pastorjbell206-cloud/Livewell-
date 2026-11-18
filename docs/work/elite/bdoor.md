@@ -132,8 +132,43 @@ Irenaeus's quotation of 16:19, because editions number it differently.
 
 ## What was run (second run)
 
-Listed in the commit history and below as they passed; see the section
-"Gates watched" at the end of this file.
+Each was watched to the end, one heavy command at a time, after merging the
+latest `claude/todo-implementation-hhp4bm`.
+
+- `pnpm check`: passed (again after the map fix).
+- All 35 commands of the CI content-gates step: passed, including the search
+  index, passage index and Bible text drift checks (no index needed
+  rebuilding: the plain notes feed none of them) and
+  `validate-bible-notes.mjs`.
+- `pnpm test`: 1,648 passed, 1 failed under load in `hq.test.tsx` (a lazy
+  timeline not found in time; a file this work did not touch). Rerun alone:
+  18 of 18 passed. The Study Bible tests (98) were rerun after the map fix
+  and passed.
+- ESLint (`--max-warnings 0`) on every changed client file: clean.
+- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender`,
+  `pnpm run audit:canonicals`: passed (0 canonical failures).
+- Looked at `/study/bible/mark` and `/study/bible/mark/1` at 390x844 and
+  1440x900, day and night (`/home/user/elite-shots/bdoor/`). No sideways
+  scroll at either width. The map's names ran off its right edge and over
+  each other (Caesarea Philippi over Tyre, Bethany over the Dead Sea); the
+  frame was widened and the names moved, and it was looked at again.
+- Lighthouse, the chapter command from ci.yml, three runs, median, on the
+  same machine one after the other: `/study/bible/mark/1` performance 90,
+  accessibility 100, SEO 100, CLS 0.000; `/study/bible/john/3` performance
+  89, accessibility 100, CLS 0.000. Mark 1 does not score lower. Mark's book
+  page: performance 93, accessibility 100, CLS 0.000.
+
+## What was not verified
+
+- The disk filled during the run (other builders share it), so the final
+  Lighthouse and screenshots ran on a build whose prerendered pages were
+  trimmed to the three pages measured. The full `pnpm run prerender` had
+  passed before the map fix; it was not rerun after it, since the map is not
+  part of any prerendered page.
+- The full `pnpm test` was not rerun after the map fix; the Study Bible
+  tests and the typecheck were.
+- Exact wording of Papias, Irenaeus and Clement could not be read in a
+  checked translation here; the site paraphrases them.
 
 ## What waits for you
 
