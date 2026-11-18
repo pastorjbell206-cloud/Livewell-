@@ -60,3 +60,29 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Christopher Ash, Zeal Without Burnout; Resilient Ministry | Known | Kept |
 | Case studies told as real | No source | Reframed as "Suppose..." |
 | Every 988 line | Help lines | Kept word for word |
+
+## Marriage
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp "a pastor with five sons" / "pastor raising five sons" (summary, primer, script, two FAQs, invite caption) | Credential use | Removed everywhere |
+| FAQ "Why does the study keep implicating the writer" | Rulebook | Rewritten as a plain question about looking at ourselves |
+| Headship (second-order question) | Old guide argued against dropping "headship" and kept it, defined by the cross | Both readings now stated at their strongest (egalitarian case from Eph 5:21, Gal 3:28, kephale as "source"); the study's landing kept as the old guide had it; marked as a question faithful churches divide on |
+| "Three verses on the wife and nearly nine on the husband" | Scripture: Eph 5:22-24 and 5:25-33 | "About three ... about nine" |
+| Eph 5:22 borrows its verb from 5:21 | Known (Greek text) | Added |
+| Hauerwas, "we always marry the wrong person" | Known (Christian Century essay, 1978); short phrase | Kept as quotation |
+| Taylor on the modern self | Known | Kept as description |
+| Gottman's four predictors; contempt the most corrosive | Known | Kept |
+| "Research consistently finds money disputes among the strongest predictors of divorce" (unnamed) | Known: Dew, Britt and Huston, Family Relations, 2012 | Named and narrowed |
+| Peterson "a long obedience in the same direction" | Known: borrowed from Nietzsche | Kept, with the source noted |
+| 1215 "Fourth Lateran Council formalizes marriage as one of the sacraments" | Overstated | Restated: Lateran IV required banns and regulated marriage |
+| 1522 Luther "marries Katharina von Bora" | Known: The Estate of Marriage 1522; marriage 1525 | Corrected |
+| "1948" companionate/soulmate ideal | No event in 1948 | Date changed to "1800s to 1900s" |
+| No-fault divorce, California 1969 | Known | Kept |
+| Keller 2011 | Known | Kept; Kathy Keller added as co-author in timeline |
+| Augustine, On the Good of Marriage "circa AD 400" | Known (about 401) | Kept |
+| Bibliography "When Anger Hurts Your Relationship" by "Counseling and care literature" | Placeholder author for a category | Cut |
+| "Leader to confirm" on Thomas, Mason, Cloud and Townsend, Luther, Gary Thomas reading (5) | Known titles and subjects | Removed; notes describe only the book's subject |
+| "This platform's economic study" (goingDeeper) | Rulebook | Cut |
+| Case studies told as real | No source | Reframed as "Suppose..." |
+| Every hotline line (1-800-799-7233, START to 88788, 911) | Help lines | Kept word for word |
