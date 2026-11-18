@@ -105,12 +105,12 @@ describe("a seeded bad page fails, with its reason", () => {
 
   it("a stand-in that is not live, a redirect, an address that goes nowhere, an Honest Answer that does not exist", () => {
     const out = problemsAfter("faith-politics-and-the-flag", (p) => {
-      p.essayStandIn.href = "/writing/what-render-unto-caesar-actually-means";
+      p.essayStandIn.href = "/writing/when-god-bless-america-replaces-thy-kingdom-come";
       p.witness.href = "/church-history";
       p.use.study.href = "/studyguides/no-such-study";
       p.care[0].href = "/help/no-such-need";
     });
-    expect(out).toMatch(/essayStandIn: \/writing\/what-render-unto-caesar-actually-means is an essay that is not public/);
+    expect(out).toMatch(/essayStandIn: \/writing\/when-god-bless-america-replaces-thy-kingdom-come is an essay that is not public/);
     expect(out).toMatch(/witness: \/church-history only works through a redirect/);
     expect(out).toMatch(/use\.study: \/studyguides\/no-such-study goes nowhere/);
     const rows = rowProblems([{ askedAs: "Q?", href: "/answers#no-such-answer", kind: "answer", line: "A line." }], ctx).problems.join("\n");
