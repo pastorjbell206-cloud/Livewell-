@@ -204,3 +204,30 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Plug: "James Bell's book The Captive Church" (summary, promo) | Not on the three-book shelf (bookShelf.ts) | Dropped |
 | Biography: atheism (summary, primer, FAQ) | Credential | Removed |
 | Scripture quotations | ESV, from memory; no ESV in the repository | ESV throughout |
+
+## The Church
+
+| Claim | How checked | Result |
+|---|---|---|
+| Bonhoeffer: "He who loves his dream of community more than the Christian community itself becomes a destroyer of the latter, even though his personal intentions may be ever so honest and earnest and sacrificial." | Web search: Doberstein translation of Life Together, reproduced by Plough and others | Kept, quoted |
+| Bonhoeffer: "The sooner this shock of disillusionment comes to an individual and to a community the better for both." | Same search: Doberstein, pp. 26-27 | Kept, quoted |
+| Bonhoeffer: community "not an ideal we realize" but "a reality created by God in Christ" | Old guide paraphrased it | Kept as paraphrase, no quotation marks |
+| Finkenwalde; Life Together "written out of" the seminary "the Gestapo would shut down within a couple of years" | Known: seminary 1935 to 1937, closed by the Gestapo in 1937; book written 1938, published 1939 | Corrected |
+| Newbigin: "the only hermeneutic of the gospel is a congregation of men and women who believe it and live by it" (old: "the only effective hermeneutic") | Web search: The Gospel in a Pluralist Society (1989), p. 227 | Quoted without "effective" |
+| Newbigin "nearly forty years" in India; "the most challenging missionary frontier of our time" | Known: about 1936 to 1974; the phrase is a common summary, not a verified quotation | Dates as "from the 1930s to the 1970s"; phrase not quoted |
+| Fact-value split | Known: Foolishness to the Greeks (1986), Gospel in a Pluralist Society | Book added to bibliography |
+| "Wherever the Word of God is purely preached and heard, and the sacraments administered according to Christ's institution, there ... a church of God exists" (unattributed) | Known: Calvin, Institutes 4.1.9 | Attributed to Calvin as paraphrase |
+| Augsburg Confession 1530, the marks | Known: Article VII | Paraphrased |
+| Luther 1539 marks | Known: On the Councils and the Church | Kept |
+| Cyprian "circa 250", God as Father, church as mother | Known: On the Unity of the Church, about 251 | Dated; paraphrase |
+| Augustine and the Donatists "circa 400"; wheat and weeds | Known: anti-Donatist writings about 400 to 411; Matthew 13:24-30 | Dated; parable referenced |
+| "A hospital for sinners, not a museum for saints" | A saying of uncertain origin | Called "an old saying", unattributed |
+| Sinai "circa 1446 BC" | Debated | "Date debated" |
+| Matthew 16:18 "the first use of the word church in the Gospels" | Known: church appears in Matthew 16:18 and 18:17 only | "One of only two Gospel passages" |
+| Ephesians "circa AD 62"; 1 Peter "circa AD 64"; 1 Corinthians "circa AD 55" | Loose; authorship debated for two | Ranges given with "debated" |
+| Deconstruction "circa 2015" | Loose | "2010s" |
+| Bibliography: "Life in the Wilderness" by "Various, on the desert and monastic tradition" | Not a book | Cut |
+| Bibliography dates: Keller 2012; McKnight and Barringer 2020; DeGroat 2020; Allberry 2016; Peterson 1987; Colson with Vaughn 1992 | Known | Dated; "Leader to confirm" removed |
+| Case-study names Marta, Dean, Renee, Paul | Invented people | Unnamed "Suppose" scenarios |
+| Help lines (abuse, sexual-assault topics) | sensitive-pages.json | Untouched; reporting sentence kept verbatim |
+| Scripture quotations | ESV, from memory | ESV throughout |
