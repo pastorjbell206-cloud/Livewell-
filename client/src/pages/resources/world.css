@@ -1,0 +1,97 @@
+/*
+ * A world's portrait (/resources/context/world/:id, ContextWorld.tsx).
+ * The parts are set in the reading type in the reading column; the rest is
+ * built on Home's sections (pages/home/home.css) and the art kit. Tokens only.
+ */
+
+/* The plate at the top: larger than an inner page's mark, a band on a phone. */
+.wd-head.pg-head--inner.pg-head--art .pg-head__inner{grid-template-columns:minmax(0,1fr) minmax(0,400px);column-gap:var(--s-5);align-items:center}
+.wd-head .pg-head__art .lw-frame__in{aspect-ratio:4 / 3}
+.wd-meta{font-family:var(--U);font-weight:500;font-size:14px;letter-spacing:.02em;color:var(--ink-muted);margin:var(--s-2) 0 0}
+.wd-head .pg-head__actions .btn svg{margin-left:6px;vertical-align:-3px}
+
+.wd-sec{padding-top:var(--s-6);padding-bottom:var(--s-6)}
+[id^="wd-"],.wd-part{scroll-margin-top:84px}
+
+.wd-intro{max-width:var(--w-read);margin:0 0 var(--s-4)}
+.wd-intro p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-2)}
+
+/* The contents. */
+.wd-toc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-5);border-top:1.5px solid var(--ink)}
+.wd-toc a{display:grid;grid-template-columns:48px minmax(0,1fr) 18px;gap:14px;align-items:center;min-height:72px;padding:12px 0;border-bottom:1px solid var(--borderdk);color:var(--ink);text-decoration:none}
+.wd-toc__icon{display:grid;place-items:center;width:48px;height:48px;border:1.5px solid var(--art-ink);background:var(--art-paper);color:var(--art-ink)}
+.wd-toc__words{display:flex;flex-direction:column;gap:2px;min-width:0}
+.wd-toc__n{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mustard-text)}
+.wd-toc__t{font-family:var(--F);font-size:22px;line-height:1.15}
+.wd-toc__l{font-family:var(--U);font-size:14px;line-height:1.45;color:var(--ink-muted)}
+.wd-toc__go{color:var(--ink-muted);transition:transform .2s var(--ease)}
+.wd-toc a:hover .wd-toc__t{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.wd-toc a:hover .wd-toc__go{transform:translateX(3px)}
+
+/* A part. */
+.wd-part{background:var(--bone);color:var(--ink);padding:var(--s-6) var(--gutter)}
+.wd-part--warm{background:var(--bone-warm)}
+.wd-col{max-width:var(--w-read);margin:0 auto}
+.wd-part__n{display:flex;align-items:center;gap:8px;font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 var(--s-1)}
+.wd-part__t{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin:0 0 var(--s-2)}
+.wd-part__l{font-family:var(--U);font-size:17px;line-height:1.5;color:var(--ink-muted);margin:0 0 var(--s-4);padding-bottom:var(--s-3);border-bottom:1px solid var(--border)}
+.wd-body p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 1.1em}
+
+/* The passages a part opens. */
+.wd-read{margin:var(--s-5) 0 0;padding:var(--s-4) clamp(16px,3vw,28px);background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm)}
+.wd-read__h{display:flex;align-items:center;gap:10px;font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 var(--s-3)}
+.wd-read ul{list-style:none;margin:0;padding:0}
+.wd-read__item + .wd-read__item{margin-top:var(--s-4);padding-top:var(--s-4);border-top:1px solid var(--border)}
+.wd-read blockquote{margin:0;padding:0 0 0 16px;border-left:2px solid var(--art-olive)}
+.wd-read blockquote p{font-family:var(--font-reading);font-style:italic;font-size:1.0625rem;line-height:1.6;color:var(--ink);margin:0}
+.wd-read blockquote footer{margin-top:4px}
+.wd-read blockquote footer a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--U);font-weight:600;font-size:15px;color:var(--mustard-text);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wd-read__note{font-family:var(--font-reading);font-size:1.0625rem;line-height:1.6;color:var(--ink);margin:var(--s-1) 0 0}
+
+/* After a part: the next one, or back to the contents. */
+.wd-turn{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-top:var(--s-5)}
+.wd-turn a{display:flex;align-items:center;min-height:48px;color:var(--ink);text-decoration:none;border:1.5px solid var(--ink);border-radius:var(--radius-sm)}
+.wd-turn__next{flex:1 1 260px;flex-direction:column;align-items:flex-start!important;justify-content:center;gap:2px;padding:10px 16px}
+.wd-turn__next span{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
+.wd-turn__next b{font-family:var(--F);font-weight:400;font-size:21px;line-height:1.2}
+.wd-turn__up{gap:6px;padding:0 16px;font-family:var(--U);font-weight:500;font-size:15px;border-color:var(--borderdk)!important}
+.wd-turn a:hover b,.wd-turn__up:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.16em}
+
+/* The guides, on charcoal. */
+.wd-guides{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-5);border-top:1.5px solid var(--charcoal-fg)}
+.wd-guides a{display:flex;flex-direction:column;gap:4px;min-height:56px;padding:14px 0;border-bottom:1px solid var(--charcoal-line);color:var(--charcoal-fg);text-decoration:none}
+.wd-guides__t{font-family:var(--F);font-size:21px;line-height:1.2}
+.wd-guides__b{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--charcoal-fg-muted)}
+.wd-guides a:hover .wd-guides__t{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.16em}
+.wd-guides__none{font-family:var(--U);color:var(--charcoal-fg-muted)}
+.wd-guides__none a{color:var(--charcoal-fg)}
+
+/* Sources. */
+.wd-src__h{font-family:var(--F);font-weight:500;font-size:var(--fs-h3,1.5rem);color:var(--ink);margin:var(--s-4) 0 var(--s-2)}
+.wd-src{margin:0;padding:0 0 0 1.1em}
+.wd-src li{font-family:var(--font-reading);font-size:1.0625rem;line-height:1.55;color:var(--ink);margin:0 0 .6em}
+.wd-src li b{font-weight:600}
+.wd-src__note{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:var(--s-4) 0 0}
+
+/* The bar at the foot of the screen while reading the parts. */
+.wd-bar{position:fixed;left:50%;bottom:16px;z-index:40;width:min(560px,calc(100% - 32px));transform:translate(-50%,24px);opacity:0;pointer-events:none;transition:opacity .2s var(--ease),transform .2s var(--ease)}
+.wd-bar.is-on{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+.wd-bar a{display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 8px 6px 16px;background:var(--charcoal);color:var(--charcoal-fg);border-radius:999px;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.wd-bar__n{flex:none;font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mustard)}
+.wd-bar__t{flex:1;min-width:0;font-family:var(--F);font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wd-bar__c{flex:none;display:grid;place-items:center;min-height:36px;padding:0 14px;border:1px solid var(--charcoal-fg-muted);border-radius:999px;font-family:var(--U);font-weight:500;font-size:14px}
+
+@media (max-width:760px){
+  .wd-head.pg-head--inner.pg-head--art .pg-head__inner{display:flex;flex-direction:column-reverse;align-items:stretch}
+  .wd-head .pg-head__art{margin:0 calc(var(--gutter) * -1) var(--s-3);width:auto}
+  .wd-head .pg-head__art .lw-frame{border-width:0 0 1.5px;padding:0}
+  .wd-head .pg-head__art .lw-frame__in{border:0;aspect-ratio:390 / 190}
+}
+@media (max-width:900px){
+  .wd-toc,.wd-guides{grid-template-columns:minmax(0,1fr)}
+  .wd-toc__t{font-size:20px}
+  .wd-part{padding-top:var(--s-5);padding-bottom:var(--s-5)}
+  .wd-bar__n{display:none}
+}
+@media (prefers-reduced-motion:reduce){.wd-bar,.wd-toc__go{transition:none}}
+@media print{.wd-bar,.wd-turn{display:none}}
