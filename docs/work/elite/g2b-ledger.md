@@ -155,3 +155,29 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Proverbs 6:8 ant; 1 Timothy 5:8 provide for household | Scripture | Added with references to the planning objection the old guide already made |
 | Romans 8:15 and Galatians 4:6 | ESV ends with an exclamation inside the quotation | Quoted as short excerpts that stop before it |
 | Help box | Rendered by the page from client/src/data/sensitive-pages.json (prayer: abuse); none in the guide text | Untouched; session 4 now says safety comes first and forgiveness is not trust or reconciliation, as the old guide's going-deeper section did |
+
+## Gratitude
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp (atheism, no father, five sons) in summary, primer, script, FAQ | Credential use | Removed everywhere; no biography in this guide |
+| "Bell says / Bell draws on" throughout | Narrator calling him "Bell" | Removed |
+| Chesterton, Orthodoxy (1908): "The test of all happiness is gratitude; and I felt grateful, though I hardly knew to whom." | Known (chapter "The Ethics of Elfland") | Kept as quotation, wording given in full |
+| Chesterton saying grace "before I dip the pen in the ink" | Searched (1 search): widely quoted, but no primary source found; quotation sites disagree whether it is from his notebooks | Kept as paraphrase, marked "widely credited... original source is uncertain"; no longer tied to Orthodoxy |
+| Bonhoeffer, prison: "only with gratitude that life becomes rich"; gratitude "changes the pangs of memory into a tranquil joy" | Known in substance (letters of 1943); wording varies by translation, and the old bibliography itself said to confirm before quoting | Both kept as paraphrase with attribution, dated 1943; "hanged" kept (executed April 1945) |
+| Augustine "circa AD 400... will curved in on itself" | The "curved in on itself" phrase is Luther's (lectures on Romans, 1515 to 1516), building on Augustine | Timeline entry made Luther's; Augustine kept for the restless heart |
+| "En pasin" in 1 Thessalonians 5:18 | The Greek is "en panti" | Corrected |
+| Early church calling the meal eucharistia "circa AD 150" | Known: Justin Martyr, First Apology 66; the Didache earlier | Justin named and quoted from the standard English translation ("is called among us"); Didache added |
+| Paul to Thessalonians and Philippians "circa AD 55" | Known: 1 Thessalonians about 50, Philippians about 60 to 62 | "About AD 50 to 62" |
+| Fall of Jerusalem "circa 587 BC" | Known | "587 or 586 BC" (as the pilot) |
+| Voskamp, One Thousand Gifts, 2011; charis/eucharisteo/chara | Known | Kept |
+| Gratitude research "consistently finds" (unnamed) | Known: Emmons and McCullough, 2003 | Named and dated |
+| Hedonic adaptation | Known concept | Kept, unattributed as a general term |
+| Examen (unattributed) | Known: Ignatius of Loyola, Spiritual Exercises | Attributed |
+| Bibliography: "The Meaning of Marriage and other pastoral works" (Keller, "leader to select"); "The Message of Thanksgiving... representative works" (placeholder) | Not real single works for this purpose | Both cut |
+| Bibliography: "The Psalms and the biblical practice of lament" (Brueggemann) | Not a title | Made The Message of the Psalms (1984) |
+| Michael Card, A Sacred Sorrow; Bonhoeffer, Life Together (1939); Smith, You Are What You Love (2016) | Known | Kept; "Leader to confirm" removed (6 in all) |
+| Case study: "the God who did not take her husband from her" | A theological claim the old guide did not argue | Cut |
+| Job 42:7, Psalm 13:5-6, Lamentations 3:2, 7, 16, Luke 17:15-18, Daniel 6:10, 1 John 1:5 | Scripture (ESV) | Quoted with references |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help box | Page renders it from sensitive-pages.json (gratitude: general help block); guide text keeps "know where real help is" in primer, script and case study | Kept |
