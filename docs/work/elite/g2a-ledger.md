@@ -514,3 +514,30 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" (6: Tripp, Tripp, Fitzpatrick and Thompson, Crouch, Cloud and Townsend, Luther) | Titles and authors known; the guide attributes no specific claim to them | Notes removed; entries describe each book in general terms |
 | Scripture: Deuteronomy 6:5, 6:6-7, 6:20-21; Psalm 127:3-4, 23:4, 78:4, 119:37; 1 Samuel 1:27-28, 3:13, 16:7; Proverbs 4:23, 13:24, 22:6, 22:15, 29:15; Luke 2:52, 11:13, 15:12, 15:20; Mark 6:31, 9:24, 10:14; Matthew 6:22-23; John 6:44; Acts 17:11; Romans 8:15, 10:17, 12:2; Ephesians 6:4; Colossians 3:2, 3:21; Philippians 4:8; Hebrews 12:6, 12:11; Genesis 2:24; 2 Timothy 1:5; 3 John 4 | ESV, from memory | Quoted with references |
 | Case studies | Told as real people in the group | Framed as "Suppose", ending in questions for the group |
+
+### providence
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (26); atheism as credential (summary, s1 summary, primer, FAQ 2, script); "I am a Christian pastor"; pulpit line "the wall I could not climb for a long time" | Brief: biography once, only where it does work; no invented recollection | Atheism kept once (s1 teaching); the rest cut; "pastor" title dropped; pulpit recollection cut |
+| Help sentences (5: fresh-grief FAQ question and answer, script close, leader FAQ line, week 8 cadence) | Script against the old file | Word for word |
+| Bonhoeffer, "only the suffering God can help" | Web search (Letters and Papers from Prison; several sources give "The Bible directs man to God's powerlessness and suffering; only the suffering God can help") | Quoted; the surrounding thought paraphrased |
+| Bonhoeffer, "the God who is with us is the God who forsakes us" | Same search; not found in results | Not quoted; idea paraphrased in the teaching |
+| Bonhoeffer arrested and executed | Arrested April 1943; hanged at Flossenbürg 9 April 1945 | "Arrested in 1943", "hanged at Flossenbürg... April 1945" |
+| Dostoevsky, The Brothers Karamazov (1880), Ivan returns his ticket | Known (Book 5, chapter 4, "Rebellion") | Paraphrase, no quotation marks; bibliography points to the chapter |
+| Epicurus framing | Known: attributed by later writers (Lactantius); authenticity debated | "Later writers attributed a version of it to Epicurus" |
+| Hume; logical and evidential forms; Plantinga, God, Freedom, and Evil (1974) | Known; Hume's Dialogues published 1779 | Kept, dated |
+| Augustine, evil as privation of good | Known (Confessions 7, Enchiridion) | Kept |
+| Reformed "ordains whatsoever comes to pass... not the author of sin" | Westminster Confession 3.1 (1646) | Named as the source |
+| Moltmann, The Crucified God | Known (German 1972, English 1974) | Dated |
+| Hart, The Doors of the Sea (2005), written after the 2004 tsunami | Known | Kept in s2 going deeper and bibliography |
+| "Religion is an opiate" | Marx (1843-44) | Attributed to Marx without quotation marks |
+| "The moral arc of the universe bends toward justice" (unmarked) | King, after Theodore Parker; carried without attribution | Cut; replaced with plain statement |
+| "The first Christians died insisting they had witnessed" | Overstated; martyrdom of several apostles is early tradition | "kept proclaiming... at great cost, and, by early tradition, death" |
+| Paul "by reliable tradition executed in Rome" | Early tradition (1 Clement, Eusebius) | "early tradition says" |
+| Luke 22:44 | Absent from some early manuscripts (ESV note) | Note added; Mark 14:33-34 cited |
+| Romans 8:28 read as "God works in all things" | ESV: "all things work together for good" | ESV wording quoted; point unchanged |
+| Lewis timeline "1955... publishes nothing" | The Problem of Pain 1940; A Grief Observed 1961 | Entry redated |
+| Joseph about 1800 BC; Job undated; Psalms about 1000 BC; Romans about AD 57; Revelation about AD 95 | Traditional or approximate | Marked |
+| "Leader to confirm" (4: Dostoevsky, Yancey, Keller, Wolterstorff) | Titles known; no specific claim attributed to them except Dostoevsky, which is paraphrased | Notes removed |
+| Scripture: Psalm 13:1-2, 22:1; Habakkuk 1:2-3; Job 1:8, 1:21, 2:9, 2:13, 3:11, 13:15, 38:1-4, 38:12, 38:31, 42:5, 42:7, 42:11; Lamentations 3:17-18, 3:32-33; Jeremiah 12:1; Genesis 18:25, 50:20; Romans 8:18, 8:22-23, 8:28; Acts 2:23; Isaiah 25:8, 53:3-4, 55:8-9; Deuteronomy 29:29; Matthew 27:46; Luke 22:44; Hebrews 2:18, 4:15; Philippians 2:6-8; John 9:2-3, 11:35, 20:27; 2 Corinthians 11:24-25; 1 Corinthians 15:54-55; 1 Peter 1:3; Revelation 21:3-5 | ESV, from memory | Quoted with references |
