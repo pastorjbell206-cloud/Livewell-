@@ -140,3 +140,28 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Desert Sayings, Earley (2019), Comer (2019), Turkle (2015), Taylor (2007), Postman (1985), Benedict, Haidt, Smith | Known | Kept; four "Leader to confirm" notes removed |
 | FAQ claim that "the writer came at this not as an insider" | Implies biography | Cut |
 | Help lines | Old guide had none | A short line added to the primer: take danger seriously, get real help that day, not medical advice |
+
+## baptism-and-communion
+
+| Claim | How checked | Result |
+|---|---|---|
+| "He came to faith from atheism" (summary and skeptic FAQ) | Confirmed biography | Kept once, in the skeptic FAQ where it does work; cut from the summary |
+| Narrator "Bell" and "the writer" lines; FAQ "Why does the writer keep implicating himself" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| Where he lands: believer's baptism; closest to Calvin on the Supper | Stated in the old guide | Kept, with the objection he names (covenant continuity) |
+| Augustine, sacrament as "visible word"; source given as On Christian Doctrine | Web search (New Advent, Tractates on John 80.3) | Phrase kept as "a kind of visible word"; bibliography corrected to Tractates on the Gospel of John |
+| Athanasius, "he became man so that we might be made divine" | Known (On the Incarnation 54) | Kept, without quotation marks |
+| Irenaeus about 180 against the Gnostics, the Eucharist as proof | Known (Against Heresies 4.18, 5.2) | Kept, work named |
+| Zurich rebaptisms 1525 | Known (21 January 1525) | Kept |
+| Marburg 1529, fourteen of fifteen articles; Luther's chalk | Known; the chalk is a traditional account | Kept, chalk marked "by the traditional account" |
+| Fourth Lateran 1215; Trent 1551; Calvin's Institutes 1536 | Known | Kept |
+| Cyprian's council on the eighth day, early 250s | Known (Letter 64) | Kept |
+| Didache "circa AD 100" | Date debated | "Late first or early second century" |
+| Justin Martyr's First Apology about 150 | Known | Kept |
+| Ferguson on the evidence for infant baptism | Known (2009) | Kept, book and year named |
+| 1 Peter 3:21 "answer of a good conscience" | Not the ESV wording | ESV: "an appeal to God for a good conscience" |
+| John 6:63 "the flesh is of no avail" | RSV wording | ESV: "the flesh is no help at all" |
+| Corinth: rich arrived early, poor after work; dining room and courtyard | Scholarly reconstruction, not in the text | Kept, marked "it seems" and "many scholars think"; Fee named as drawing on studies of Roman houses |
+| 1 Corinthians 12:13 | ESV has em-dashes | Quoted only the dash-free clause; rest paraphrased |
+| Vander Zee (2004), Letham (2001), Ferguson (2009), Wright ed. Three Views (2009), Smith (2009), Fee (1987), N. T. Wright, Calvin, Justin, Didache | Known | Kept; four "Leader to confirm" notes removed |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
