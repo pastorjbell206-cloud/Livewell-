@@ -104,3 +104,28 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Luther, The Freedom of a Christian (1520, date added); Keller, Smith, Ortlund, Fukuyama, Ferguson | Known | Kept; "Leader to confirm" removed (7) |
 | FAQ "Why does the study keep putting the writer ... inside the problem" ("the method is the mercy") | Rulebook | Rewritten as a plain question about the leader |
 | Session 5 "lose your life" and abuse | Care | Leader primer and discussion note now ask the leader to make a private way to talk and help anyone being harmed find real help |
+
+## Heaven and hell
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp ("James Bell came to faith out of atheism", "raised without a father") in summary, primer, script, three FAQs, session teachings, pulpit announcement | Credential use | Removed everywhere |
+| Contested doctrine (final punishment) | Old guide held eternal conscious punishment and conditionalism open, judged universalism to overreach | Kept exactly that landing; added "you can land on either and remain my brother or sister" |
+| Lewis, "the door of hell locked from the inside" attributed to The Great Divorce | Known: the line is in The Problem of Pain (1940) | Corrected attribution |
+| The Great Divorce "1946" | Known: published 1945 | Corrected |
+| Lewis Great Divorce preface "keep our cake and eat it" | Not checkable as stated | Cut |
+| John Stott "near the end of his life" leaned toward conditionalism | Known: Essentials (1988, with David Edwards); Stott died 2011 | Corrected to "in a published dialogue in 1988"; book given its UK title with US title noted |
+| Fudge, The Fire That Consumes 1982 | Known | Kept; "Leader to confirm" removed |
+| Hell Under Fire, "Robert A. Peterson and others" | Known: edited by Christopher W. Morgan and Robert A. Peterson (2004) | Editors named |
+| Tolkien, history a "long defeat" with "samples or glimpses of final victory" | Searched: Letter 195 to Amy Ronald, 15 December 1956 | Quoted in short phrases, dated |
+| Tolkien, "On Fairy-Stories", eucatastrophe, 1947 | Known | Kept |
+| Lewis, The Weight of Glory: "the scent of a flower we have not found, the echo of a tune we have not heard, news from a country we have never yet visited" | Known (1941 sermon) | Quoted with source |
+| Eugene Peterson: communion of saints "not poetry but plumbing" | Not found; attribution doubtful | Attribution cut; idea kept unattributed |
+| "Your dead mother ... outranks the angels" | Speculative | Softened to 1 Corinthians 6:3 |
+| Genesis "circa 1400 BC"; Isaiah "circa 700 BC"; Daniel "circa 200 BC" | Not checkable; Daniel's date is disputed | "Date unknown"; "700s BC and after"; "Before the first century" |
+| Origen "circa 248" | Known: his restoration teaching is in On First Principles (early 200s) | "Early 200s" |
+| Augustine, City of God "circa 420" | Known: written 413 to 426 | Corrected |
+| Wright, Surprised by Hope 2008; "life after life after death" | Known | Kept |
+| Packer, Knowing God listed as a defense of eternal punishment | Known: a book on God's character, not a treatise on hell | Note rewritten to say what the book is |
+| "Leader to confirm" (5) | Known titles | Removed |
+| Grief and despair | Care | Leader primer and grief FAQ now say to stay with anyone whose grief has become despair and help them get real help |
