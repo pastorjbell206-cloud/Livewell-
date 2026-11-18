@@ -159,6 +159,7 @@ const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Speaking = lazy(() => import("./pages/Speaking"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Connect = lazy(() => import("./pages/Connect"));
 const StudyBible = lazy(() => import("./pages/StudyBible"));
 const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
 const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
@@ -275,7 +276,6 @@ const ToDoctrinesRedirect = redirectTo("/study/bible/doctrines");
 const ToAnswersRedirect = redirectTo("/answers");
 const ToSubscribeRedirect = redirectTo("/subscribe");
 const ToSpeakingRedirect = redirectTo("/speaking");
-const ToAboutRedirect = redirectTo("/about");
 const ToLamentRedirect = redirectTo("/studyguides/lament");
 // The no-decision cleanup (U06, 2026-10-26): the pre-elevation family and
 // marriage hubs, and the six crisis landings that duplicated a Find Help page.
@@ -285,6 +285,7 @@ const ToHelpGriefRedirect = redirectTo("/help/grief");
 const ToHelpDoubtRedirect = redirectTo("/help/doubt");
 const ToHelpParentingRedirect = redirectTo("/help/parenting");
 const ToHelpDeconstructingRedirect = redirectTo("/help/deconstructing");
+const ToAboutRedirect = redirectTo("/about");
 const ToHelpChurchHurtRedirect = redirectTo("/help/church-hurt");
 // James, 2026-11-17: the Pastors Connection Network stays outside this site,
 // so the old pastors' addresses land on this site's own pages, and the
@@ -603,7 +604,7 @@ function Router() {
         <Route path="/tools/quotes" component={QuoteLibrary} />
         <Route path="/tools/glossary" component={ToolsGlossary} />
         <Route path="/work-with-james" component={ToSpeakingRedirect} />
-        <Route path="/connect" component={ToAboutRedirect} />
+        <Route path="/connect" component={Connect} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />

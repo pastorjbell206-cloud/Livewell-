@@ -132,3 +132,41 @@ export function RelatedEssays({ post }: { post: PostLike }) {
     </section>
   );
 }
+
+/**
+ * NextEssay: the one essay offered at the end of an essay (the first of
+ * pickRelated: same section first, then the shelf's "Start with these").
+ * One link, so the ending asks a reader for one thing and then gets out of
+ * the way.
+ */
+export function NextEssay({ post }: { post: PostLike }) {
+  const next = pickRelated(post)[0];
+  if (!next) return null;
+  return (
+    <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
+      <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
+        <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>
+          Read next
+        </div>
+        <Link
+          href={`/writing/${next.slug}`}
+          className="next-essay"
+          style={{ display: "block", textDecoration: "none", color: "var(--ink)", backgroundImage: "none" }}
+        >
+          <span
+            className="next-essay__title"
+            style={{ display: "block", fontFamily: "var(--F)", fontSize: "clamp(26px, 3.4vw, 34px)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.01em" }}
+          >
+            {next.title}
+          </span>
+          {next.blurb && (
+            <span style={{ display: "block", marginTop: "8px", fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "60ch" }}>
+              {next.blurb}
+            </span>
+          )}
+        </Link>
+        <style>{".next-essay:hover .next-essay__title,.next-essay:focus-visible .next-essay__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}"}</style>
+      </div>
+    </section>
+  );
+}

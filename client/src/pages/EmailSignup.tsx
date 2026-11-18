@@ -17,15 +17,17 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
+import { channelUrl } from "@/lib/channels";
 
 export default function EmailSignup() {
+  const substack = channelUrl("substack");
   return (
     <Layout>
       <SEOMeta
         title="Subscribe"
-        description="Get James Bell's new essays by email through his Substack newsletter. Every essay on this site is also free to read without subscribing."
+        description="Get James Bell's new essays by email through his Substack. Leave your email here and confirm on Substack, or read there first and decide later."
         url="https://www.livewellbyjamesbell.co/subscribe"
-        keywords="subscribe, newsletter, theology essays, James Bell"
+        keywords="subscribe, Substack, newsletter, theology essays, James Bell"
       />
 
       {/* ── HERO ── */}
@@ -34,23 +36,33 @@ export default function EmailSignup() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 28 }}>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
             <span style={{ fontFamily: "var(--U)", fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase" as const, color: "var(--mustard)" }}>
-              The newsletter
+              Substack
             </span>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
           </div>
 
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
-            New essays,
+            New essays by email,
             <br />
-            sent to your inbox.
+            through Substack.
           </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "rgba(255,255,255,.65)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
-            Theology that meets the weight of marriage, money,
-            parenting, and doubt. The newsletter goes out through Substack. Enter
-            your email below and a Substack tab opens where you confirm it. After
-            that, new essays come to your inbox when they are published, and you
-            can leave the moment it stops being worth your time.
+          <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "var(--charcoal-fg-muted)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
+            The newsletter is James&rsquo;s Substack. Leave your email below and you will finish the
+            sign-up there, where the essays are sent from. Nothing else comes with it, and you can
+            leave the moment it stops being worth your time.
           </p>
+          {substack && (
+            <p style={{ margin: "20px 0 0", fontFamily: "var(--U)", fontSize: "15px" }}>
+              <a
+                href={substack}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", color: "var(--charcoal-fg)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", backgroundImage: "none" }}
+              >
+                Read on Substack first
+              </a>
+            </p>
+          )}
         </div>
       </section>
 
@@ -58,8 +70,8 @@ export default function EmailSignup() {
       <section style={{ background: "var(--bone)", padding: "72px 24px" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
           <SegmentedSignup
-            title="Subscribe"
-            description="Skeptic, Christian, pastor, or just exploring. Your answer tells us who is reading. Everyone gets the same newsletter."
+            title="Subscribe on Substack"
+            description="Pick the line closest to where you stand. It tells James who is reading, and everyone gets the same essays."
           />
         </div>
       </section>

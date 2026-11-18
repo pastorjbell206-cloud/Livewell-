@@ -17,6 +17,8 @@ import STATIC_LIBRARY from "./static-library.generated.js";
 // (client/src/lib/shelf.ts reads the same file). Only the RSS feed consults it
 // here; the listings are filtered on the client and in the build scripts.
 import SHELF_DATA from "../client/src/lib/shelf.json" with { type: "json" };
+// The committed index of essay files (client/public/essays), for the feed.
+import { ESSAY_OVERRIDES } from "../client/src/lib/essayOverrides.generated.js";
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -2947,9 +2949,11 @@ function escapeXml(s: string): string {
 // The feed syndicates only what the essay shelf makes public: the live shelf
 // essays, and posts not on the shelf that went out at or after the shelf's
 // cutoff (publishedAt, else createdAt; the rule in client/src/lib/shelf.ts).
-// Retired essays stay out. A pending shelf essay stays out even once its
-// rewrite exists: the rewrite lives in client/public/essays/, not in the row
-// this feed reads, so syndicating the row would send the old text.
+// Retired essays stay out. An essay with a rewrite in client/public/essays/
+// (a shelf essay, live or pending; the file is what makes a pending one
+// public) is listed from the committed index of those files, with the file's
+// title, excerpt and date. Its database row is never sent, because the row
+// holds the old text.
 const SHELF_FILE: { latestCutoff: string; essays: { slug: string; status: string }[] } = SHELF_DATA;
 const RSS_LIVE_SLUGS: string[] = SHELF_FILE.essays.filter((e) => e.status === "live").map((e) => e.slug);
 const RSS_SHELF_SLUGS = new Set(SHELF_FILE.essays.map((e) => e.slug));
@@ -2962,37 +2966,74 @@ function rssShelfPublic(row: RssRow): boolean {
   return Number.isFinite(when) && when >= RSS_LATEST_CUTOFF.getTime();
 }
 
+type RssItem = { slug: string; title: string; excerpt: string; date: Date; body: string | null };
+type RssPostRow = RssRow & { title?: string | null; excerpt?: string | null; body?: string | null; updatedAt?: Date | string | null };
+
+/**
+ * The feed's items, newest first: every essay file on the shelf, then the
+ * database rows the shelf makes public, less any row a file replaces. A file
+ * item has no body (null): the feed sends its excerpt and the link.
+ */
+export function rssItems(
+  rows: RssPostRow[],
+  overrides: { slug: string; title: string; excerpt: string; updated: string }[] = ESSAY_OVERRIDES,
+  limit = 50,
+): RssItem[] {
+  const files = overrides.filter((o) => RSS_SHELF_SLUGS.has(o.slug));
+  const fromFiles = new Set(files.map((o) => o.slug));
+  const items: RssItem[] = [
+    ...files.map((o) => ({ slug: o.slug, title: o.title, excerpt: o.excerpt, date: new Date(o.updated), body: null })),
+    ...rows
+      .filter((p) => !fromFiles.has(p.slug) && rssShelfPublic(p))
+      .map((p) => ({
+        slug: p.slug,
+        title: String(p.title ?? ""),
+        excerpt: p.excerpt || String(p.body || "").slice(0, 280),
+        date: new Date(p.publishedAt || p.createdAt || p.updatedAt || Date.now()),
+        body: p.body || "",
+      })),
+  ];
+  const time = (d: Date) => (Number.isFinite(d.getTime()) ? d.getTime() : 0);
+  return items.sort((x, y) => time(y.date) - time(x.date) || x.slug.localeCompare(y.slug)).slice(0, limit);
+}
+
 async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
   const SITE_URL = "https://www.livewellbyjamesbell.co";
   const SITE_NAME = "LiveWell by James Bell";
   const DESC = "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
   try {
-    const rows: any[] = await withConn(async (c) => {
-      const liveIn = RSS_LIVE_SLUGS.length ? `slug IN (${RSS_LIVE_SLUGS.map(() => "?").join(", ")})` : "FALSE";
-      const [posts]: any = await c.query(
-        `SELECT slug, title, excerpt, body, publishedAt, createdAt, updatedAt
-           FROM posts
-          WHERE published = true
-            AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
-          ORDER BY COALESCE(publishedAt, createdAt) DESC, updatedAt DESC
-          LIMIT 50`,
-        [...RSS_LIVE_SLUGS, RSS_LATEST_CUTOFF]
-      );
-      return (Array.isArray(posts) ? posts : []).filter(rssShelfPublic);
-    });
+    // The essay files need no database, so a database failure still leaves a
+    // feed of them instead of an error in every reader app.
+    let rows: any[] = [];
+    try {
+      rows = await withConn(async (c) => {
+        const liveIn = RSS_LIVE_SLUGS.length ? `slug IN (${RSS_LIVE_SLUGS.map(() => "?").join(", ")})` : "FALSE";
+        const [posts]: any = await c.query(
+          `SELECT slug, title, excerpt, body, publishedAt, createdAt, updatedAt
+             FROM posts
+            WHERE published = true
+              AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
+            ORDER BY COALESCE(publishedAt, createdAt) DESC, updatedAt DESC
+            LIMIT 50`,
+          [...RSS_LIVE_SLUGS, RSS_LATEST_CUTOFF]
+        );
+        return Array.isArray(posts) ? posts : [];
+      });
+    } catch (dbErr: any) {
+      console.error("[rss] posts query failed; serving the essay files only:", dbErr?.message || dbErr);
+    }
     const buildDate = new Date().toUTCString();
-    const items = rows
+    const items = rssItems(rows)
       .map((p) => {
         const url = `${SITE_URL}/writing/${p.slug}`;
-        const pubDate = new Date(p.publishedAt || p.createdAt || p.updatedAt || Date.now()).toUTCString();
-        const excerpt = p.excerpt || (p.body || "").slice(0, 280);
+        const pubDate = (Number.isFinite(p.date.getTime()) ? p.date : new Date()).toUTCString();
+        const content = p.body === null ? "" : `\n      <content:encoded><![CDATA[${p.body}]]></content:encoded>`;
         return `    <item>
       <title>${escapeXml(p.title)}</title>
       <link>${escapeXml(url)}</link>
       <guid isPermaLink="true">${escapeXml(url)}</guid>
       <pubDate>${pubDate}</pubDate>
-      <description>${escapeXml(excerpt)}</description>
-      <content:encoded><![CDATA[${p.body || ""}]]></content:encoded>
+      <description>${escapeXml(p.excerpt)}</description>${content}
       <dc:creator>James Bell</dc:creator>
     </item>`;
       })

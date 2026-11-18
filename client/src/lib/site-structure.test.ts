@@ -92,7 +92,6 @@ const FOLDED: Record<string, string> = {
   "/doubt": "/answers",
   "/substack": "/subscribe",
   "/work-with-james": "/speaking",
-  "/connect": "/about",
   // The no-decision cleanup (U06): the pre-elevation family and marriage hubs,
   // and the six crisis landings that duplicated a Find Help page.
   "/for-families": "/family",
@@ -237,6 +236,12 @@ describe("App.tsx", () => {
     expect(ROUTE_COMPONENT.get("/contact")).toBe("Contact");
   });
 
+  it("routes /connect to its own page, in the About menu and the footer (James, 2026-11-17)", () => {
+    expect(ROUTE_COMPONENT.get("/connect")).toBe("Connect");
+    const about = SITE_NAV_GROUPS.find((g) => g.title === "About")!;
+    expect(about.links.find((l) => l.href === "/connect")?.primary).toBe(true);
+  });
+
   it("keeps the route table above the smoke test's floor", () => {
     expect(ROUTES.length).toBeGreaterThan(200);
   });
@@ -269,6 +274,8 @@ describe("crawl surfaces", () => {
     const bad = urls.filter((u) => {
       const file = path.join(ROOT, "client/public", u);
       if (fs.existsSync(file) && fs.statSync(file).isFile()) return false;
+      // The essay feed is answered by the API through a rewrite in vercel.json, not by a page.
+      if (u === "/rss.xml") return !JSON.parse(read("vercel.json")).rewrites.some((r: { source: string }) => r.source === "/rss.xml");
       return Boolean(redirectFor(u)) || !ROUTES.some((r) => sourceRegex(r).test(u));
     });
     expect(bad).toEqual([]);

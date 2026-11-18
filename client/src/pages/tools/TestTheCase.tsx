@@ -173,7 +173,7 @@ export default function TestTheCase() {
                   Read the Doubt and Faith essays
                 </Link>
                 <div style={{ marginTop: "28px" }}>
-                  <NewsletterSignup variant="inline" source="test-the-case" audienceType="skeptic" title="One honest essay a week." description="For the questions that do not fit on a web page. No conversion bait, no altar call." />
+                  <NewsletterSignup variant="inline" source="test-the-case" audienceType="skeptic" title="The essays by email, through Substack" description="For the questions that do not fit on a web page. Leave your email here and finish on Substack. No altar call comes with it." />
                 </div>
               </div>
             </div>

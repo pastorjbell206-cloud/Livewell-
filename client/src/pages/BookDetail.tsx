@@ -252,7 +252,7 @@ export default function BookDetail() {
             <NewsletterSignup
               variant="inline"
               title="If this book is your kind of reading"
-              description="New essays in the same vein, sent by email through Substack when they are published. No spam, ever."
+              description="New essays in the same vein, by email through Substack. Leave your email here and finish there."
               source={`book-${book.slug ?? "detail"}`}
             />
           </div>

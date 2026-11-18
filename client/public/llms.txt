@@ -122,6 +122,10 @@ doors: Study, Topics, Family, Essays, and About (with the books).
 - Speaking (preaching, conferences, retreats, and pulpit supply; coaching and
   consulting): https://www.livewellbyjamesbell.co/speaking
 - Contact: https://www.livewellbyjamesbell.co/contact
+- Find James (his Substack, his Facebook, the newest essays and their RSS
+  feed, contact, speaking, and his books on one page):
+  https://www.livewellbyjamesbell.co/connect
+- RSS feed of the essays: https://www.livewellbyjamesbell.co/rss.xml
 - The newsletter: https://www.livewellbyjamesbell.co/subscribe
 - ENDS (equipping pastors in remote regions): https://endsinitiative.org
 

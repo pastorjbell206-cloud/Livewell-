@@ -113,6 +113,7 @@ const STATIC_PAGES = [
   { url: "/about", priority: "0.7", changefreq: "monthly" },
   { url: "/speaking", priority: "0.6", changefreq: "monthly" },
   { url: "/contact", priority: "0.5", changefreq: "monthly" },
+  { url: "/connect", priority: "0.6", changefreq: "monthly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // (The /writing?pillar=, ?track= and ?series= listing variants are gone:

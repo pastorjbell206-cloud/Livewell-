@@ -24,8 +24,8 @@ export interface Channel {
 export const CHANNELS: Channel[] = [
   {
     id: "substack",
-    label: "The newsletter",
-    blurb: "New essays in your inbox, plus thinking that never makes it to the site.",
+    label: "Substack",
+    blurb: "New essays by email. Subscribe there, or read before you decide.",
     url: "https://substack.com/@jamesbell333289",
     live: true,
   },
@@ -60,6 +60,43 @@ export const CHANNELS: Channel[] = [
 /** The channels with a real URL, in display order. */
 export function liveChannels(): Channel[] {
   return CHANNELS.filter((c) => c.live && c.url.trim().length > 0);
+}
+
+/** The site's own feed of essays, for reader apps (api/index.ts rssLiveWell). */
+export const RSS_PATH = "/rss.xml";
+
+export interface FollowLink {
+  id: string;
+  label: string;
+  href: string;
+  /** false: a path on this site, opened in place. */
+  external: boolean;
+}
+
+/**
+ * The "Follow James" row (components/FollowRow.tsx), in order: Substack,
+ * Facebook, the podcast, RSS. A channel joins the row only with a real https
+ * address, so the podcast stays out until its https address is confirmed
+ * (James gave it as http). Links only: nothing from Facebook or Substack is
+ * imported or embedded on this site.
+ */
+export function followLinks(): FollowLink[] {
+  const live = liveChannels();
+  const pick = (id: string, label: string): FollowLink[] => {
+    const c = live.find((x) => x.id === id);
+    return c && c.url.startsWith("https://") ? [{ id, label, href: c.url, external: true }] : [];
+  };
+  return [
+    ...pick("substack", "Substack"),
+    ...pick("facebook", "Facebook"),
+    ...pick("podcast", "Podcast"),
+    { id: "rss", label: "RSS", href: RSS_PATH, external: false },
+  ];
+}
+
+/** One channel's address, or null when it is not live. */
+export function channelUrl(id: string): string | null {
+  return liveChannels().find((c) => c.id === id)?.url ?? null;
 }
 
 /** Canonical external profiles, for the Person schema's sameAs. */

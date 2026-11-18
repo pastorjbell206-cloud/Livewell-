@@ -65,6 +65,8 @@ const STATIC_PAGES = [
     title: "About James Bell",
     description: "Who James Bell is and why he writes: his story in his own words, the church he pastors, and how to reach him.",
     type: "profile",
+    // Its own share card, so a link to About unfurls as About (lazy: ogImageUrl is declared below).
+    get image() { return ogImageUrl("About James Bell", "LiveWell"); },
     schemas: [personSchema()],
   },
   {
@@ -72,12 +74,14 @@ const STATIC_PAGES = [
     title: "Essays by James Bell",
     description: "A short shelf of essays by James Bell on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
     type: "website",
+    get image() { return ogImageUrl("Essays by James Bell", "LiveWell"); },
   },
   {
     path: "/books",
     title: "Books by James Bell",
     description: "The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99.",
     type: "website",
+    get image() { return ogImageUrl("Books by James Bell", "LiveWell"); },
   },
   {
     path: "/tools",

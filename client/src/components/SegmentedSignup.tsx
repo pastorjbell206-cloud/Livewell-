@@ -50,8 +50,8 @@ interface SegmentedSignupProps {
 }
 
 export function SegmentedSignup({
-  title = "Subscribe — and choose what you'll get",
-  description = "Tell us who is reading. Everyone gets the same newsletter.",
+  title = "Subscribe on Substack",
+  description = "New essays by email. Pick the line closest to where you stand. It tells James who is reading, and everyone gets the same essays.",
   variant = "card",
   source,
 }: SegmentedSignupProps) {

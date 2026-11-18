@@ -116,7 +116,7 @@ describe("the nav map", () => {
   });
 
   it("puts Books under About, beside Speaking and Contact, with the three titles in the footer", () => {
-    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/contact"]);
+    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/contact", "/connect"]);
     const about = group("About").links.map((l) => l.href);
     for (const b of BOOK_SHELF) expect(about, b.href).toContain(b.href);
   });

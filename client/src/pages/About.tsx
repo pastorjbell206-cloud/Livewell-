@@ -20,7 +20,8 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Figure } from "@/components/Figure";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
-import { SITE_URL } from "@/lib/site";
+import { SITE_STATS } from "@/config/siteStats";
+import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { SAME_AS, liveChannels } from "@/lib/channels";
 import { HOME_WHY, PORTRAIT_URL } from "@/lib/positioning";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
@@ -34,13 +35,12 @@ const STORY_ESSAY = "the-atheist-in-the-pulpit";
 const REACH: HubLink[] = [
   { label: "Speaking", href: "/speaking", note: "Conferences, retreats, revivals, and pulpit supply, with a form to ask about a date." },
   { label: "Contact", href: "/contact", note: "A direct line to James, for anything else." },
-  { label: "The newsletter", href: "/subscribe", note: "New essays in your inbox, plus thinking that never makes it to the site." },
+  { label: "Subscribe on Substack", href: "/subscribe", note: "New essays by email. The sign-up starts here and finishes on Substack." },
+  { label: "Find James", href: "/connect", note: "Substack, Facebook, the newest essays, and the ways to write to him, on one page." },
 ];
 
 /** The channels in lib/channels.ts that live at their own address. */
-const ELSEWHERE: HubLink[] = liveChannels()
-  .filter((c) => c.id !== "substack")
-  .map((c) => ({ label: c.label, href: c.url, note: c.blurb, external: true }));
+const ELSEWHERE: HubLink[] = liveChannels().map((c) => ({ label: c.label, href: c.url, note: c.blurb, external: true }));
 
 function Band({
   tone,
@@ -79,6 +79,7 @@ export default function About() {
       <SEOMeta
         title="About James Bell"
         description="Who James Bell is and why he writes: his story in his own words, the church he pastors, and how to reach him."
+        image={ogImageUrl("About James Bell", "LiveWell")}
         type="website"
         structuredData={{
           "@context": "https://schema.org",
@@ -138,7 +139,7 @@ export default function About() {
             <p className="about-hero__links" style={{ margin: 0 }}>
               <Link href="/speaking">Invite James to speak</Link>
               <Link href="/contact">Write to James</Link>
-              <Link href="/subscribe">Get the newsletter</Link>
+              <Link href="/subscribe">Subscribe on Substack</Link>
             </p>
           </div>
         </div>
@@ -214,7 +215,7 @@ export default function About() {
       <section style={{ background: "var(--bone-warm)", padding: `var(--s-2) ${gutter}` }}>
         <div style={wrap}>
           <HubGroup id="reach" title="Reach James" links={REACH}>
-            Ask him to speak, write to him directly, or get the newsletter.
+            Ask him to speak, write to him, or get his essays by email through Substack.
           </HubGroup>
           <HubGroup id="elsewhere" title="Everywhere James is" links={ELSEWHERE}>
             The essays and books live here. ENDS, the podcast, and the daily notes live elsewhere.
