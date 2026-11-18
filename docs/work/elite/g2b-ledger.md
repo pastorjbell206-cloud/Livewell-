@@ -327,3 +327,30 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Scripture quoted: Genesis 18:1-8, 19:3, Exodus 22:21, Leviticus 19:33-34, Deuteronomy 10:18-19, Judges 19:15, Job 31:32, Isaiah 58:6-7, Matthew 8:11, 25:35-40, Mark 2:17, Luke 5:29-30, 7:34 (phrase only, the verse has exclamation points), 14:12-14, 14:21-23, 15:1-2, 19:5-7, 24:28-31, John 8:11, Acts 2:46, 4:32-34, 16:15, Romans 5:10, 12:9-13, 15:7, 1 Timothy 3:2, 3:15, Hebrews 13:2, 1 Peter 4:9, 3 John 5-8, Revelation 3:20 | ESV from memory | Quoted with references; Luke 10:33 not quoted ("as he journeyed" trips the gate), described instead; Genesis 18:6 not quoted ("Quick!") |
 | Quotations of people | None in the old guide | None kept, none added |
 | Help box | Not on the sensitive list; no help lines in the old guide ("police" was only "policed") | Nothing to keep |
+
+## Knowing God
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamps: atheism (summary, leader primer, FAQ x3, session 1 objection, session 3 teaching) and fatherlessness (leader primer, FAQ x2, session 3 objection and teaching) | Credential use | Kept once, in session 3 teaching ("I was raised without a father"), where the argument about the word Father needs it; removed everywhere else, atheism entirely. FAQ "Why does the study keep putting the writer... inside" kept, its biography and "the method is the mercy" removed |
+| "Bell takes the strong form / Bell grants / Bell says" throughout | Narrator calling him "Bell" | Removed; teaching in first person; questions rebuilt on the passages |
+| Augustine: "if you think you have understood it, what you have understood is not God", placed with On the Trinity | Known: Sermon 117 ("si comprehendis, non est Deus"), not On the Trinity | Kept as paraphrase, attributed to "one of his sermons" |
+| "Formal language hammered out at Nicaea in 325 and refined at Chalcedon in 451" for the Trinity | Chalcedon settled the person of Christ; the Trinitarian refinement was Constantinople 381 | Made Nicaea 325 and Constantinople 381 for the Trinity; Chalcedon kept for Christ (session 4, timeline, glossary) |
+| Calvin "opened his Institutes, published in 1536, with the claim that there is no true knowledge of God that does not produce reverence and love" | The 1536 edition opens on knowledge of God and ourselves; the piety line is 1559 Institutes 1.2.1 ("reverence joined with love of God") | Restated with the 1559 edition and the section; timeline made "1536 to 1559" |
+| Barth Church Dogmatics "1934" | First volume (I/1) 1932 | Corrected to 1932 |
+| Timeline Shema "circa 1446 BC" | Exodus date debated | "Date debated" |
+| Timeline John and Hebrews "circa AD 90" | Hebrews usually dated earlier than John | "Late first century", with that noted |
+| Timeline Athanasius On the Incarnation "circa 328" | Date debated (about 318 to 335) | "Early fourth century", date marked debated |
+| Timeline Augustine "circa 400" for Confessions and On the Trinity | Confessions about 397 to 400; On the Trinity about 400 to 420 | "About 397 to 420" |
+| Packer, Knowing God 1973; adoption "the highest privilege the gospel offers" | Known (chapter "Sons of God") | Kept as paraphrase, no quotation marks |
+| Arius "there was when he was not"; Nicaea "begotten, not made", homoousios | Known (Arian slogan; creed text) | Kept, slogan and creed text quoted as such |
+| Constantinople 381, "the Lord and giver of life" | Creed text | Kept |
+| Chalcedon 451, one person in two natures | Known | Kept |
+| Taylor, the buffered self | Known (A Secular Age, 2007) | Kept |
+| Prodigal: running was undignified in that culture; asking for the inheritance early | A common interpretive reading, not a stated fact of the text | "Many commentators point out" a man of standing didn't run; "wished his father dead" reading dropped, the plain act described |
+| John 14:16 "another Helper" said to mean "another of the same kind" | Word study often overpressed | Made "one who would be to them what Jesus had been" |
+| "Every faithful Jew and every angel refuses worship" | Overbroad | Narrowed to "faithful people and angels in Scripture," with Acts 10:25-26 and Revelation 22:8-9 |
+| Bibliography "Leader to confirm" (3) and "before attributing them to Bell"; "Offered as a diagnostic/confirming voice" | Rulebook language | Removed; notes describe the books only; Barth's start date added |
+| Scripture quoted: Deuteronomy 6:4, Psalm 68:5, Jeremiah 9:23-24, Hosea 6:6, Matthew 7:11, 7:22-23, 28:19, Mark 1:41, 10:14, Luke 15:18-20, John 1:1, 1:14, 1:18, 8:11, 8:58, 10:30, 14:8-9, 14:16-17, 17:3, 17:5, 17:20-26, Romans 5:5, 8:15 (to "we cry", the rest described, the verse has exclamation points), 8:26, 1 Corinthians 8:1-3, 12:11, 2 Corinthians 13:14, Galatians 4:6 (phrase), 4:9, Ephesians 4:30, Philippians 3:8, Colossians 1:15, 2:9, Hebrews 1:1-3, 1 John 3:1, 4:8, Revelation 21:4 | ESV from memory | Quoted with references; Matthew 7:11 quoted without its closing exclamation point (ends a sentence of ours with a period); Galatians 4:6 and Romans 8:15 "Abba! Father!" described rather than quoted |
+| Quotations of people | Old guide quoted no one directly beyond creed text and the Arian slogan | Paraphrased: Augustine (sermon, restless heart), Calvin 1.2.1, Packer on adoption, Athanasius. Kept: creed phrases. Cut: none. Added: none |
+| Session 3 (fatherhood) | Not on the sensitive list; no help lines in the old guide | No help line to keep; added in plain words a pointer to a leader, pastor or counselor in the practice, leader primer and FAQ, no number invented |
