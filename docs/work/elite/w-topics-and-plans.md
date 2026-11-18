@@ -73,7 +73,7 @@ The audit counted 131 "honest" in the plans; my count of 139 covers the topic pa
 
 ## Not fully read
 
-The audit's findings were each reread in their paragraph after the edit. The sweep was done by pattern across all 29 plans and the 3 topic pages, with every hit read in its sentence. I read sixteen plans paragraph by paragraph (skeptic, deconstruction, purpose, doubt, suffering, addiction, anger, anxiety, caregiving, church-hurt, decisions, divorce, empty, and the three topic pages). The other thirteen plans (fatherless, fear-of-the-future, forgiveness, grief, infertility, job-loss, loneliness, marriage, money, new-believer, parenting, pornography, prayer, reading-the-bible, whole-life, work-burnout) were edited from the pattern lists only. A slogan closing a paragraph cannot be found by grep, so some may remain there.
+The audit's findings were each reread in their paragraph after the edit. The sweep was done by pattern across all 29 plans and the 3 topic pages, with every hit read in its sentence. I read thirteen plans and the three topic pages paragraph by paragraph (skeptic, deconstruction, purpose, doubt, suffering, addiction, anger, anxiety, caregiving, church-hurt, decisions, divorce, empty, and the three topic pages). The other sixteen plans (fatherless, fear-of-the-future, forgiveness, grief, infertility, job-loss, loneliness, marriage, money, new-believer, parenting, pornography, prayer, reading-the-bible, whole-life, work-burnout) were edited from the pattern lists only. A slogan closing a paragraph cannot be found by grep, so some may remain there.
 
 ## Waiting for James
 
