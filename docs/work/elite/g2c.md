@@ -94,3 +94,26 @@ Stopped at a clean guide boundary after the-beatitudes, to leave room for the ga
 
 - **the-captive-church** (done): words 25,335 to 17,438; teaching 6,108 to 4,539. "Bell" 0 to 0 in the counting script's sense (the old guide named "Bell" as narrator throughout; now none); "honest" 39 to 0; "Leader to confirm" 4 to 0; contractions 168 to 501. Quotations kept: Barmen's first article, now in the standard English wording (checked by search); "by this sign conquer" (well known). Bonhoeffer's "cheap grace" kept as his term; the coat-and-root image was not his, so it is gone. No quotation added. Corrected: the memory verse for Matthew 4:10 was NIV, now ESV like the rest; Mark 12:16 quoted as ESV "likeness" with the Greek word explained; Bonhoeffer was not at Barmen (he belonged to the Confessing Church that came from it); Nero's persecution was the fire, not the incense test; timeline reordered (Ambrose 390 had sat after 426) and Polycarp, Nicaea and 380 added from what the teaching already says. Cut: the plug for James's The Captive Church (not on the three-book shelf); two placeholder bibliography entries; the FAQ about the writer's method (folded into the primer). The summary no longer promises a session on cultural captivity that the guide never had. Biography: none; "came to faith from atheism" was used three times as a credential and is out.
 - **the-church** (done): words 25,447 to 17,641; teaching 6,159 to 4,449. "Bell" as narrator removed; "honest" 49 to 5; "Leader to confirm" 6 to 0; contractions 35 to 486. Help: the guide carries the abuse and sexual-assault topics in sensitive-pages.json, which are untouched; the sentence "Abuse by a church leader should be reported to the authorities." is kept word for word wherever it stood (session 5 question, objection, teaching, FAQ) and added to the primer and session 5 summary; session 3's wound question and case study and session 5's practice now point the leader to the printed help information; the leader primer names Find Help. Quotations kept, each checked by search: Bonhoeffer's "dream of community" sentence and "the sooner this shock of disillusionment comes" (Doberstein); Newbigin's "the only hermeneutic of the gospel" (1989). Calvin's marks and the Augsburg Confession are now attributed paraphrase (the old guide quoted Calvin unattributed). Corrected: Life Together was written in 1938 after the Gestapo closed Finkenwalde in 1937 (the old guide said it was written there and the seminary was shut later); timeline dates loosened where debated; Newbigin's Foolishness to the Greeks added for the fact-value split the guide already taught. Cut: one placeholder bibliography entry ("Life in the Wilderness" by "Various"); the FAQ about the writer's method; four invented names in case studies (now "Suppose"). The elder case study now says caring for him never comes before protecting anyone he harmed. Biography: "I'm a pastor" kept as self-implication; no other fact.
+
+### What I ran (fourth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean ("blessed" only as a verb). Every exclamation point is inside quoted Scripture.
+- `pnpm check`: passed. All 35 content-gate commands from ci.yml (including validate-content-integrity): passed. `pnpm test`: 143 files passed, 1 failed under load (fes.test.tsx, the catechism page), which passed when run alone (4 of 4). Nothing in it touches study guides.
+- Web searches: 1 for the-captive-church (Barmen), 2 for the-church (Bonhoeffer, Newbigin).
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-church, to leave room for the gates and the push. Next in order: **the-creeds**, then the-image-of-god (abuse help topic in sensitive-pages.json), the-lords-prayer, the-parables, the-psalms, the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
+
+### Not done or not verified (fourth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Calvin's marks and the Augsburg Confession were paraphrased from memory of the texts, not checked against a copy.
+
+### What only James can supply (fourth run)
+
+- The Captive Church: the old guide called itself "drawn from James Bell's book The Captive Church". That book is not on the three-book shelf, so the plug is gone. If the book is real and should be named, or if he wants the guide pointed at When God Bless America Replaces Thy Kingdom Come (which is on the shelf), that is his call. No memory of his own was added; the first-person confessions (wanting the shortcut, excusing his own side) are kept in plain form from the old guide.
+- The Church: the guide says "I'm a pastor" and "I've failed the church in my own ways" and "I've felt the pull toward the door ... over ordinary disappointment", all carried from the old guide's self-implication. Whether those sentences are true of him as he would put them is his to confirm or rewrite.
