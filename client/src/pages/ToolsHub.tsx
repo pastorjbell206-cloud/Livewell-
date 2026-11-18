@@ -10,21 +10,21 @@ import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 export const TOOLS = [
   {
     title: "Test the Case for Christianity",
-    description: "The case for the resurrection, worked one move at a time. At every step you can push back with the objection you actually hold and get the honest answer, including what it does not prove. Argued with, not preached at. No altar call.",
+    description: "The case for the resurrection, worked one move at a time. At every step you can push back with the objection you hold and see the answer, including what the argument does not prove. Nobody asks you for a decision at the end.",
     href: "/tools/test-the-case",
     icon: Shield,
     color: "var(--mustard)",
   },
   {
     title: "What Shapes the Way You Read the Bible? A Self-Check",
-    description: "Thirteen honest choices. Five lenses that do a reader's thinking before the reader does: the flag, the cause, the highlighter, the rearview, the marketplace. It ends not in a score but in a name for the lens it found and the reading that takes it apart.",
+    description: "Thirteen choices that show which of five lenses does your thinking before you do: the flag, the cause, the highlighter, the rearview, the marketplace. There's no score at the end. You get the name of the lens it found and the reading that takes it apart.",
     href: "/tools/which-lens",
     icon: Search,
     color: "var(--mustard)",
   },
   {
     title: "Book-by-Book Bible Study: 20 Books in Depth",
-    description: "Seminary-level depth in kitchen-table language. 20 books of the Bible with 6 layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
+    description: "Twenty books of the Bible in plain language, each with six layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
     href: "/tools/deep-bible",
     icon: Search,
     color: "var(--ink)",
@@ -38,21 +38,21 @@ export const TOOLS = [
   },
   {
     title: "Where Are You With God? A Self-Check",
-    description: "Eight honest questions across four areas: where you are with God right now, without the church answer. Ends with a reading of your season and where to start.",
+    description: "Eight questions across four areas about where you are with God right now, without the church answer. It ends with a reading of your season and where to start.",
     href: "/diagnostic",
     icon: Search,
     color: "var(--ink)",
   },
     {
     title: "The Whole-Life Assessment",
-    description: "Thirty honest statements across the inner life, the body, relationships, work and money, and the world. Maps where life is flourishing and hands you a rule of life for the season. Scored on this device; nothing is sent.",
+    description: "Thirty statements across the inner life, the body, relationships, work and money, and the world. It maps where life is flourishing and gives you a rule of life for the season. It's scored on this device, and nothing is sent.",
     href: "/life/assessment",
     icon: Heart,
     color: "var(--goldlt)",
   },
     {
     title: "Proverbs and Ecclesiastes: A Guide to Biblical Wisdom",
-    description: "The front door to Scripture's wisdom for the place no rule reaches: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs.",
+    description: "Where to start with Scripture's wisdom for the situations no rule covers: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs.",
     href: "/wisdom",
     icon: BookMarked,
     color: "var(--goldlt)",
@@ -66,21 +66,21 @@ export const TOOLS = [
   },
   {
     title: "Build a Weekly Rhythm of Prayer and Rest (a Rule of Life)",
-    description: "A rule of life is not a performance contract. It is a trellis. Choose sustainable practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can actually keep on an ordinary week. Your rule stays on this device.",
+    description: "A rule of life is a trellis, something to grow along. Choose practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can keep on an ordinary week. Your rule stays on this device.",
     href: "/tools/rule-of-life",
     icon: Target,
     color: "var(--goldlt)",
   },
   {
     title: "What the Bible Says About Money, Anger, Work and More",
-    description: "A topical guide to Scripture for the arenas of ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart.",
+    description: "A topical guide to Scripture for ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart.",
     href: "/tools/bible-on",
     icon: BookOpen,
     color: "var(--ink)",
   },
   {
     title: "Proverbs in 31 Days",
-    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day a theme, a verse or two worth knowing by heart, and a reflection that runs the chapter into a real decision. A daily reminder can go in your own calendar.",
+    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day has a theme, a verse or two worth knowing by heart, and a reflection that ties the chapter to a decision you might face. A daily reminder can go in your own calendar.",
     href: "/tools/proverbs-31",
     icon: BookMarked,
     color: "var(--goldlt)",
@@ -136,7 +136,7 @@ export const TOOLS = [
   },
   {
     title: "Prayers for When You Have No Words",
-    description: "Words for when you do not have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
+    description: "Words for when you don't have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
     href: "/tools/prayer-generator",
     icon: Heart,
     color: "var(--ink)",
@@ -157,14 +157,14 @@ export const TOOLS = [
   },
   {
     title: "Marriage Health Self-Check",
-    description: "Not a quiz. Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find.",
+    description: "Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find.",
     href: "/tools/marriage-assessment",
     icon: HeartHandshake,
     color: "var(--goldlt)",
   },
   {
     title: "Financial Health Self-Check",
-    description: "Twelve questions across generosity, contentment, stewardship, and family provision — and what your answers say about who you believe owns what you have.",
+    description: "Twelve questions across generosity, contentment, stewardship, and family provision, and what your answers say about who you believe owns what you have.",
     href: "/tools/financial-health",
     icon: DollarSign,
     color: "var(--ink2)",
@@ -178,7 +178,7 @@ export const TOOLS = [
   },
   {
     title: "Parenting Bible Verses",
-    description: "Scripture for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent.",
+    description: "Scripture for fear, anger, identity, obedience, screens, and doubt, each with a short note for the parent.",
     href: "/tools/parenting-verses",
     icon: Baby,
     color: "var(--ink)",
@@ -192,7 +192,7 @@ export const TOOLS = [
   },
   {
     title: "Spiritual Gifts Self-Check",
-    description: "Thirty-two statements about what you've actually done, across eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. It ranks no gift above another, and it sets out both views on the miraculous gifts without taking a side.",
+    description: "Thirty-two statements about what you've done, across eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. It ranks no gift above another, and it sets out both views on the miraculous gifts without taking a side.",
     href: "/tools/spiritual-gifts",
     icon: Users,
     color: "var(--ink)",
@@ -220,42 +220,42 @@ export const TOOLS = [
   },
     {
     title: "Misused Bible Verses: What They Actually Mean",
-    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath. The deepest verse tool on the site.",
+    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath.",
     href: "/tools/bible-says",
     icon: BookOpen,
     color: "var(--ink)",
   },
   {
     title: "Quotes From the Essays and Books",
-    description: "Four hundred lines and counting from the essays and books, filed by conviction, comfort, challenge, history, and wisdom — each tied to the piece it came from. Copy one, share one, follow one home.",
+    description: "Four hundred lines and counting from the essays and books, filed by conviction, comfort, challenge, history, and wisdom. Each is tied to the piece it came from, so you can copy it, share it, or go read the whole thing.",
     href: "/tools/quotes",
     icon: MessageCircle,
     color: "var(--ink2)",
   },
   {
     title: "Theology Glossary",
-    description: "The working vocabulary of serious faith — justification, atonement, sanctification and the rest — defined plainly, searchable, without the seminary fee.",
+    description: "The words the church uses (justification, atonement, sanctification and the rest), defined plainly and searchable.",
     href: "/tools/glossary",
     icon: BookMarked,
     color: "var(--ink)",
   },
   {
     title: "Do You Hold Both Sides to the Same Standard? A Self-Check",
-    description: "A searching self-examination of whether you defend truth selectively — one standard for your own side, another for your opponents. A mirror, not a weapon, and explicitly not for scoring anyone else.",
+    description: "A self-examination of whether you defend truth selectively, with one standard for your own side and another for your opponents. It's meant for looking at yourself, so please don't use it to score anyone else.",
     href: "/disruption/consistency",
     icon: Shield,
     color: "var(--ink)",
   },
   {
     title: "How Close Is Each Party to the Bible?",
-    description: "How close is each party to the Bible, theme by theme? An honest tally that lands where the evidence puts it, not where either side would like. The real test is whether you can name where your own side falls short.",
+    description: "How close is each party to the Bible, theme by theme? A tally that lands where the evidence puts it, whichever side that disappoints. The test is whether you can name where your own side falls short.",
     href: "/nation/scorecard",
     icon: Target,
     color: "var(--ink2)",
   },
   {
     title: "What Would a Biblical Government Look Like?",
-    description: "The Year of Jubilee, gleaning, the warning against kings — what Scripture's own economic principles might look like as policy, and why both parties would hate the result.",
+    description: "The Year of Jubilee, gleaning, the warning against kings: what Scripture's own economic principles might look like as policy, and why both parties would hate the result.",
     href: "/nation/policy",
     icon: Church,
     color: "var(--ink)",
@@ -354,9 +354,9 @@ export default function ToolsHub() {
           <h1 style={{ fontSize: "var(--fs-h1)", fontWeight: 400, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
             Free tools for Bible study, prayer, and family life
           </h1>
-          <p className="page-standfirst" style={{ marginInline: "auto" }}>Tools for the life you are actually living.</p>
+          <p className="page-standfirst" style={{ marginInline: "auto" }}>Tools you can use this week.</p>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", fontFamily: "var(--B)", margin: "0 0 var(--s-4)" }}>
-            Built for marriages, for households, for anyone who takes the faith seriously enough to practice it on a Tuesday. Every one is free and works on your phone, and the journals and planners keep what you write on your own device.
+            Built for marriages, households, and anyone who wants to practice the faith in an ordinary week. Every one is free and works on your phone, and the journals and planners keep what you write on your own device.
           </p>
           <label htmlFor="tool-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", marginBottom: "8px", textAlign: "left" }}>
             Find a tool

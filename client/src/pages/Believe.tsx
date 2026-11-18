@@ -48,7 +48,7 @@ export default function Believe() {
       {/* HERO */}
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="Believe — cover" width={1600} height={2560}
+          <img src={COVER} alt="Cover of Believe" width={1600} height={2560}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
             <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Ebook Available Now</div>
@@ -78,9 +78,9 @@ export default function Believe() {
             He came to faith from atheism. He did not arrive by feeling his way there.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ margin: "0 0 1.2em" }}>Believe is for the reader whose questions have outgrown the answers they were handed in church — and for the skeptic who suspects Christianity cannot survive an honest cross-examination. James Bell takes the hardest questions one at a time: why there is something rather than nothing, whether the Bible can be trusted, who Jesus thought he was, whether the resurrection happened, why a good God allows suffering, and how anyone could speak of hell.</p>
-            <p style={{ margin: "0 0 1.2em" }}>He does not flinch and he does not flatter. Every objection gets its strongest form before it gets an answer. The atheists are quoted at their most formidable, not their most convenient. This is apologetics written from inside the doubt, by a man who once stood outside the faith and walked away — until the evidence walked after him.</p>
-            <p style={{ margin: 0, fontWeight: 600 }}>It is not a book that asks you to stop thinking. It is a book that asks you to keep going.</p>
+            <p style={{ margin: "0 0 1.2em" }}>Believe is for the reader whose questions have outgrown the answers they were handed in church, and for the skeptic who suspects Christianity can't survive an honest cross-examination. James Bell takes the hardest questions one at a time: why there is something rather than nothing, whether the Bible can be trusted, who Jesus thought he was, whether the resurrection happened, why a good God allows suffering, and how anyone could speak of hell.</p>
+            <p style={{ margin: "0 0 1.2em" }}>Every objection is stated the way the people who hold it would state it, and the atheists are quoted at their strongest. The book was written by a man who was an atheist before he was a Christian and still remembers how the objections sound from that side.</p>
+            <p style={{ margin: 0, fontWeight: 600 }}>It doesn't ask you to stop thinking. It asks you to keep going.</p>
           </div>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function Believe() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            $8.99 for the complete ebook: an EPUB for your e-reader and a PDF for everything else, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StripeBuyButton paymentLink={PAYMENT_LINK} />

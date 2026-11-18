@@ -65,13 +65,13 @@ export const PORTRAIT_URL =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663366638960/KoRED62UaUJB6FH9jFpuEG/IMG_4533_137f3486.jpeg";
 
 export const NEWSLETTER_PITCH_PASTORAL = {
-  title: "The Pastor's Letter — Tuesday morning",
+  title: "The Pastor's Letter, Tuesday mornings",
   description:
-    "Written for pastors carrying the weight. One essay, one sermon-prep idea, one resource. From inside the room where the work actually happens.",
+    "For pastors. Each letter has an essay, a sermon-prep idea, and a resource, written by a pastor in the middle of the same work.",
 };
 
 export const NEWSLETTER_PITCH_SKEPTIC = {
-  title: "The Skeptic's Track — start here",
+  title: "The Skeptic's Track: start here",
   description:
-    "Seven essays sent over four weeks. The ones I'd hand a skeptical friend first. No conversion bait. Real questions, real arguments.",
+    "Seven essays sent over four weeks, the ones I'd hand a skeptical friend first. Nobody will push you for a decision.",
 };

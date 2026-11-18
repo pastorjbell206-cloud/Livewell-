@@ -175,12 +175,12 @@ export default function Study() {
               {
                 label: "The injustice timeline",
                 href: "/justice/timeline",
-                note: "An honest reckoning with the injustices of history, those done in the name of Christ among them. No one's hands are clean.",
+                note: "A reckoning with the injustices of history, those done in the name of Christ among them.",
               },
               {
                 label: "Christians who fought injustice",
                 href: "/justice/witnesses",
-                note: "The people who did justice at real cost, from the abolitionists to the rescuers of the trafficked, honest about their flaws.",
+                note: "The people who did justice at real cost, from the abolitionists to the rescuers of the trafficked, with their flaws left in.",
               },
               {
                 label: "Christians who told the church the truth",
@@ -189,7 +189,7 @@ export default function Study() {
               },
             ]}
           >
-            You did not start the faith. You were handed it. Every passage you study was read by Christians
+            You didn't start the faith. You were handed it. Every passage you study was read by Christians
             before you, argued over in councils, and carried through the church's worst hours.
           </HubGroup>
         </div>
