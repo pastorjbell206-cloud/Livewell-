@@ -72,7 +72,7 @@ export default function PlansIndex() {
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-            <Link href="/tools" style={{ color: "inherit" }}>Tools</Link> · Eight-week plans
+            <span><Link href="/tools" style={{ color: "inherit" }}>Tools</Link> · Eight-week plans</span>
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.6vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "20ch" }}>
             Eight-week plans for a hard season

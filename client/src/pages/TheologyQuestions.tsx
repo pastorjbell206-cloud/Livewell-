@@ -81,7 +81,7 @@ export default function TheologyQuestions() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · More questions, answered short
+            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · More questions, answered short</span>
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             The questions you actually came with.
