@@ -18,24 +18,18 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { PageHead } from "@/components/editorial/PageHead";
 import Plate from "@/components/art/Plate";
 import PlateFrame from "@/components/art/PlateFrame";
-import { DOORS, HELP_ENTRY, LIBRARY_ENTRY, START_LINK, nameForHref, type CatalogEntry, type Door, type Room } from "@/lib/siteCatalog";
+import { DOORS, HELP_ENTRY, LIBRARY_ENTRY, START_LINK, type CatalogEntry, type Door, type Room } from "@/lib/siteCatalog";
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
-import { TOOL_GROUPS } from "@/lib/toolsList";
+import { FAMILY_GROUP, FAMILY_TOOLS, TOOL_GROUPS } from "@/lib/toolsList";
 import { liveSections, sectionHref } from "@/lib/shelf";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { followHash } from "@/lib/followHash";
 import "./explore.css";
 
-/** A tool's first sentence: the one line its tile shows. */
-const firstSentence = (text: string) => {
-  const m = text.match(/^.*?[.?!](?=\s|$)/);
-  return (m ? m[0] : text).trim();
-};
-
-/** The tools, each once, in the tools page's groups, under the catalogue's name where it has one. */
-const TOOL_SHELVES = TOOL_GROUPS.map((g) => ({
-  title: g.title,
-  tools: g.tools.map((t) => ({ href: t.href, name: nameForHref(t.href) ?? t.title, line: firstSentence(t.description), Icon: t.icon })),
+/** The tools, each once, in the tools page's groups and then the family's, under their one name (lib/toolsList.ts). */
+const TOOL_SHELVES = [...TOOL_GROUPS, { ...FAMILY_GROUP, tools: FAMILY_TOOLS }].map((g) => ({
+  title: g.name,
+  tools: g.tools.map((t) => ({ href: t.href, name: t.name, line: t.job, Icon: t.icon })),
 }));
 
 const countText = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : null);

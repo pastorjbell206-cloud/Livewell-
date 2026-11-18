@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toolName } from "@/lib/toolsList";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef, type CSSProperties } from "react";
 import { Link } from "wouter";
@@ -377,7 +378,7 @@ const CATEGORIES: Category[] = [
           "If you're safe with each other, work through the one argument that keeps coming back using the conflict guide, a step at a time.",
         ],
         links: [
-          { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+          { label: toolName("conflict-guide"), href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
           { label: "How to Actually Forgive Your Spouse", href: "/how-tos/marriage-how-to-actually-forgive" },
           { label: "How Do You Handle Conflict and Truly Reconcile?", href: "/life/conflict-and-reconciliation" },
         ],
@@ -428,7 +429,7 @@ const OVERALL_BANDS: Record<"strong" | "growing" | "attention" | "strain", Overa
       "A score is a snapshot. A path is what changes things: eight weeks toward each other, one small practice at a time.",
     next: [
       { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
-      { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+      { label: toolName("conflict-guide"), href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
       { label: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
     ],
   },
@@ -442,7 +443,7 @@ const OVERALL_BANDS: Record<"strong" | "growing" | "attention" | "strain", Overa
     next: [
       { label: "My marriage is falling apart", href: "/help/marriage", note: "Safety first, then real help, including how to find a counselor" },
       { label: "How to Know When to Get Help", href: "/how-tos/marriage-how-to-know-when-to-get-help" },
-      { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+      { label: toolName("conflict-guide"), href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
     ],
   },
   strain: {

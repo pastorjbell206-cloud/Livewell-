@@ -121,8 +121,10 @@ describe("the counts", () => {
       "questions.wisdom": json("client/public/wisdom/topics.json").topics.length,
       "family.catechism": json("client/public/family/index.json").catechism.length,
       "family.plans": json("client/public/family-reading-plans.json").length,
-      "tools.study": TOOL_GROUPS.find((g) => g.title === "Scripture and theology")!.tools.length,
-      "tools.hard-day": TOOL_GROUPS.find((g) => g.title === "Help for a decision or a hard day")!.tools.length,
+      "tools.study": TOOL_GROUPS.find((g) => g.id === "study")!.tools.length,
+      "tools.questions": TOOL_GROUPS.find((g) => g.id === "hard-questions")!.tools.length,
+      "tools.checks": TOOL_GROUPS.find((g) => g.id === "check-yourself")!.tools.length,
+      "tools.practise": TOOL_GROUPS.find((g) => g.id === "pray-and-practise")!.tools.length,
       "tools.plans": json("client/public/plans/plans-index.json").plans.length,
       "tools.groups": json("client/public/studyguides/index.json").guides.length,
       "about.books": BOOK_SHELF.length,
@@ -131,12 +133,12 @@ describe("the counts", () => {
     expect(Object.fromEntries(counts)).toEqual(truth);
   });
 
-  it("point a Tools room at a group the tools page shows", () => {
-    const slug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-    const anchors = new Set(TOOL_GROUPS.map((g) => slug(g.title)));
-    for (const r of DOORS.find((d) => d.id === "tools")!.rooms) {
+  it("point a Tools room at a group the tools page shows, under the group's own name", () => {
+    const anchors = new Set(TOOL_GROUPS.map((g) => g.id));
+    for (const r of DOORS.find((d) => d.id === "tools")!.rooms.flatMap((r) => [r, ...(r.inside ?? [])])) {
       const hash = r.href.split("#")[1];
       if (hash) expect(anchors.has(hash), r.href).toBe(true);
+      if (hash) expect(r.name, r.href).toBe(TOOL_GROUPS.find((g) => g.id === hash)!.name);
     }
   });
 

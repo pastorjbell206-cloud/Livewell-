@@ -21,6 +21,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import road from "@/lib/startRoad.json";
+import { toolByHref } from "@/lib/toolsList";
 
 export interface StartStep {
   title: string;
@@ -39,7 +40,8 @@ export interface StartNext {
 }
 
 /** Where the road goes on. */
-export const START_NEXT: StartNext[] = road.next;
+/** A step that opens a tool is named by the tool's one name (lib/toolsList.ts). */
+export const START_NEXT: StartNext[] = road.next.map((n) => ({ ...n, link: toolByHref(n.href)?.name ?? n.link }));
 
 const gutter = "clamp(16px, 4vw, var(--s-4))";
 

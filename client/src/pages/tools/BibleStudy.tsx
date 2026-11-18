@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import { BookOpen, ArrowLeft, ChevronRight } from "lucide-react";
 
+import FoldedNote from "@/components/FoldedNote";
 interface BookData {
   name: string;
   testament: "OT" | "NT";
@@ -315,6 +316,7 @@ export default function BibleStudy() {
           offers: { "@type": "Offer", price: "0" },
         }}
       />
+      <FoldedNote id="bible-study" />
 
       {/* Hero */}
       <section

@@ -233,9 +233,14 @@ export const DOORS: Door[] = [
     plate: "compass",
     page: { id: "tools", name: "Tools and resources", line: "Every tool on LiveWell, free, and each one works on a phone.", href: "/tools", icon: "Compass" },
     rooms: [
-      { id: "tools.study", name: "Scripture and theology", line: "Tools for studying the Bible and what it teaches.", href: "/tools#scripture-and-theology", icon: "BookMarked", count: { n: 12, of: "tools" } },
-      { id: "tools.hard-day", name: "Help for a decision or a hard day", line: "Prayer, worry, conflict, and wisdom for the day you are in.", href: "/tools#help-for-a-decision-or-a-hard-day", icon: "HeartHandshake", count: { n: 9, of: "tools" } },
-      { id: "tools.checks", name: "Self-checks", line: "Short, honest checks on faith, marriage and daily life.", href: "/assessments", icon: "ClipboardCheck" },
+      {
+        id: "tools.study", name: "Study", line: "Read, search and understand the Bible.", href: "/tools#study", icon: "BookMarked", count: { n: 7, of: "tools" },
+        inside: [
+          { id: "tools.questions", name: "Tools for hard questions", line: "Argue the case, compare the views, test how you read.", href: "/tools#hard-questions", icon: "Scale", count: { n: 7, of: "tools" } },
+        ],
+      },
+      { id: "tools.checks", name: "Check yourself", line: "Short, honest self-checks. None of them grades you.", href: "/tools#check-yourself", icon: "ClipboardCheck", count: { n: 7, of: "tools" } },
+      { id: "tools.practise", name: "Pray and practise", line: "Prayer, rest, worry and the week you are in.", href: "/tools#pray-and-practise", icon: "HeartHandshake", count: { n: 7, of: "tools" } },
       { id: "tools.plans", name: "Eight-week plans", line: "A plan for a hard season, one week at a time.", href: "/plans", icon: "Milestone", count: { n: 29, of: "plans" } },
       {
         id: "tools.groups", name: "Small group study guides", line: "Bible studies for a group, a class, or on your own.", href: "/studyguides", icon: "Users", count: { n: 68, of: "guides" },

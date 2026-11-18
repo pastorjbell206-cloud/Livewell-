@@ -7,6 +7,7 @@ import { copyToClipboard } from "@/lib/clipboard";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 
+import FoldedNote from "@/components/FoldedNote";
 const VERSES: Record<string, { ref: string; text: string }[]> = {
   Anxiety: [
     { ref: "Philippians 4:6-7", text: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." },
@@ -222,6 +223,7 @@ export default function VerseFinder() {
           offers: { "@type": "Offer", price: "0" },
         }}
       />
+      <FoldedNote id="verse-finder" />
 
       <section style={{ background: "var(--charcoal)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
         <div className="wrap" style={{ maxWidth: "700px" }}>

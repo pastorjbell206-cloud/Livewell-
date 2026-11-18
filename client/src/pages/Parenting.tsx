@@ -14,6 +14,7 @@ import { subjectById } from "@/lib/subjects";
 import { getReadEssays } from "@/lib/readProgress";
 import { filterPublicPosts } from "@/lib/shelf";
 
+import { toolName } from "@/lib/toolsList";
 export default function Parenting() {
   const [readSlugs] = useState<Set<string>>(() => getReadEssays());
 
@@ -166,7 +167,7 @@ export default function Parenting() {
               label="Tools for parents"
               items={[
                 { href: "/tools/family-devotions", title: "Family devotion builder", desc: "Pick your kids' ages and a theme; get a complete 15-minute devotion." },
-                { href: "/tools/parenting-guide", title: "Parenting stage guide", desc: "What your child needs at each age, and one practice to start this week." },
+                { href: "/tools/parenting-guide", title: toolName("parenting-guide"), desc: "What your child needs at each age, and one practice to start this week." },
                 { href: "/tools/parenting-verses", title: "Scripture for parents", desc: "Verses for the real moments — fear, anger, screens, doubt, and the day you blow it." },
                 { href: "/family/catechism", title: "Family catechism", desc: "Questions and answers a household can actually carry." },
               ].map((t) => ({ href: t.href, title: t.title, dek: t.desc }))}

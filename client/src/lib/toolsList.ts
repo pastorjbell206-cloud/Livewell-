@@ -1,271 +1,563 @@
 /**
- * Every tool on the site, and the groups the /tools page shows them in.
- * Moved out of pages/ToolsHub.tsx unchanged (2026-11-18), so the tools page,
- * search and the Everything page (/explore) read one list, and a later unit
- * can regroup it in one place.
+ * Every tool and self-check on LiveWell, once, under one name.
+ *
+ * This is the single source for a tool's name. The tools page (/tools), the
+ * self-checks page (/assessments), My Library, site search and the search
+ * index builder, the Everything page (/explore), the family page, the start
+ * quiz, and every "what next" line that names a tool read the name from here
+ * (toolName, toolByHref). toolsList.test.ts fails when a page shows a tool's
+ * address under any other name.
+ *
+ * Each entry: an id; the plain name; the job, in one sentence a person would
+ * say; about how long it takes; what it keeps on this device ("Nothing" when
+ * it keeps nothing); its group; a lucide icon; its address; and, where it was
+ * folded into another tool that does the same job, `replacedBy`, the id of
+ * that tool. A folded tool stays live at its own address (tool addresses are
+ * never redirected) but is listed nowhere; its page carries one line naming
+ * the tool that replaced it (components/FoldedNote.tsx).
+ *
+ * Groups (James's map of 2026-11-18, docs/work/elite/PROJECT-PROMPT.md, and
+ * TOOLS-PLAN unit 6): Study, Tools for hard questions, Check yourself, Pray
+ * and practise on /tools; the family tools on /family, with one line on
+ * /tools pointing there; "elsewhere" for a tool whose home is another door
+ * (the Bible door lists it), so search and My Library still know its name.
+ *
+ * Keep each field on its own line, as below: scripts/build-search-index.mjs,
+ * scripts/site-audit-manifest.mjs and lib/site-structure.test.ts read this
+ * file as text.
  */
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church, PenLine, CalendarDays } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import {
+  Baby,
+  BookA,
+  BookMarked,
+  BookOpen,
+  Brain,
+  CalendarDays,
+  Columns2,
+  Compass,
+  Gift,
+  Glasses,
+  HandHeart,
+  Heart,
+  HeartHandshake,
+  Landmark,
+  Lightbulb,
+  ListChecks,
+  MessageCircle,
+  MessagesSquare,
+  NotebookPen,
+  PenLine,
+  Quote,
+  Scale,
+  ScrollText,
+  Search,
+  Shield,
+  Signpost,
+  Sprout,
+  Sun,
+  Target,
+  Users,
+  Vote,
+  Wallet,
+} from "lucide-react";
 
-export const TOOLS = [
+export type ToolGroupId = "study" | "hard-questions" | "check-yourself" | "pray-and-practise" | "family" | "elsewhere";
+
+export interface Tool {
+  id: string;
+  /** The one name, the same everywhere the tool is listed. */
+  name: string;
+  /** The job, in one sentence a person would say. */
+  job: string;
+  /** About how long it takes. */
+  time: string;
+  /** What it keeps on this device, or "Nothing". */
+  keeps: string;
+  group: ToolGroupId;
+  icon: LucideIcon;
+  href: string;
+  /** Folded: the id of the tool that does the same job and is listed in its place. */
+  replacedBy?: string;
+}
+
+export const TOOL_LIST: Tool[] = [
+  /* ── Study ─────────────────────────────────────────────────────── */
   {
-    title: "Test the Case for Christianity",
-    description: "The case for the resurrection, worked one move at a time. At every step you can push back with the objection you hold and see the answer, including what the argument does not prove. Nobody asks you for a decision at the end.",
-    href: "/tools/test-the-case",
-    icon: Shield,
-    color: "var(--mustard)",
+    id: "study-bible",
+    name: "Read the Study Bible",
+    job: "I want to read a book of the Bible with notes beside the text.",
+    time: "At your own pace",
+    keeps: "Chapters you mark read",
+    group: "study",
+    icon: BookOpen,
+    href: "/study/bible",
   },
   {
-    title: "What Shapes the Way You Read the Bible? A Self-Check",
-    description: "Thirteen choices that show which of five lenses does your thinking before you do: the flag, the cause, the highlighter, the rearview, the marketplace. There's no score at the end. You get the name of the lens it found and the reading that takes it apart.",
-    href: "/tools/which-lens",
+    id: "bible-search",
+    name: "Search the Bible",
+    job: "I want to find every verse with a word or phrase in it.",
+    time: "1 minute",
+    keeps: "Nothing",
+    group: "study",
     icon: Search,
-    color: "var(--mustard)",
+    href: "/study/bible/search",
   },
   {
-    title: "Book-by-Book Bible Study: 20 Books in Depth",
-    description: "Twenty books of the Bible in plain language, each with six layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
-    href: "/tools/deep-bible",
-    icon: Search,
-    color: "var(--ink)",
-  },
-  {
-    title: "Theology Quiz",
-    description: "Ten questions across doctrine, church history, and the biblical storyline. About four minutes. Find out where your foundations are solid and where the gaps are.",
-    href: "/tools/theology-quiz",
-    icon: Brain,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Where Are You With God? A Self-Check",
-    description: "Eight questions across four areas about where you are with God right now, without the church answer. It ends with a reading of your season and where to start.",
-    href: "/diagnostic",
-    icon: Search,
-    color: "var(--ink)",
-  },
-    {
-    title: "The Whole-Life Assessment",
-    description: "Thirty statements across the inner life, the body, relationships, work and money, and the world. It maps where life is flourishing and gives you a rule of life for the season. It's scored on this device, and nothing is sent.",
-    href: "/life/assessment",
-    icon: Heart,
-    color: "var(--goldlt)",
-  },
-    {
-    title: "Proverbs and Ecclesiastes: A Guide to Biblical Wisdom",
-    description: "Where to start with Scripture's wisdom for the situations no rule covers: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs.",
-    href: "/wisdom",
-    icon: BookMarked,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "What Does the Bible Say About What I Am Facing?",
-    description: "Type in what you are struggling with, and find what the Bible says about it: the verses, the cultural world they were written in, how the church has understood them across history, and the practical application to your life now.",
+    id: "wisdom-finder",
+    name: "What Does the Bible Say About What I Am Facing?",
+    job: "I want to know what the Bible says about what I am dealing with.",
+    time: "5 minutes",
+    keeps: "Verses you save",
+    group: "study",
+    icon: Lightbulb,
     href: "/tools/wisdom-finder",
-    icon: Search,
-    color: "var(--ink2)",
   },
   {
-    title: "Build a Weekly Rhythm of Prayer and Rest (a Rule of Life)",
-    description: "A rule of life is a trellis, something to grow along. Choose practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can keep on an ordinary week. Your rule stays on this device.",
-    href: "/tools/rule-of-life",
-    icon: Target,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "What the Bible Says About Money, Anger, Work and More",
-    description: "A topical guide to Scripture for ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart.",
-    href: "/tools/bible-on",
-    icon: BookOpen,
-    color: "var(--ink)",
-  },
-  {
-    title: "Proverbs in 31 Days",
-    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day has a theme, a verse or two worth knowing by heart, and a reflection that ties the chapter to a decision you might face. A daily reminder can go in your own calendar.",
-    href: "/tools/proverbs-31",
-    icon: BookMarked,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Bible Background: The World the Bible Was Written In",
-    description: "Background guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics.",
-    href: "/resources/context",
-    icon: BookOpen,
-    color: "var(--ink)",
-  },
-  {
-    title: "Read Any Bible Verse in Context",
-    description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. The passage is the World English Bible.",
-    href: "/theology/passage",
-    icon: BookMarked,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Bible Verse Finder",
-    description: "Search Scripture by what you are carrying: anxiety, grief, courage, marriage, and more. Each search returns the passages themselves, with the reference, so you can read them in context, copy them, and keep the ones you need.",
-    href: "/tools/verse-finder",
-    icon: BookOpen,
-    color: "var(--ink2)",
-  },
-  {
-    title: "The Worry Journal",
-    description: "Five minutes before bed: name the worry, write the one thing that is yours to do tomorrow, hand the rest to God, and later see how your worries turned out. Private to your browser, with a printable version.",
-    href: "/tools/worry-journal",
-    icon: PenLine,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "The Parent and Teen Conversation",
-    description: "A parent and a teenager each answer twelve short statements about home on their own, swap codes, and see where they see things differently, with questions to ask each other there. Nothing is stored or sent.",
-    href: "/tools/parent-teen-conversation",
-    icon: MessageCircle,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "The Prayer Planner",
-    description: "Write down the people and needs you mean to pray for, give each a day, and each day see that day's names. Mark answered prayers and keep a dated record of them. Private to your browser.",
-    href: "/tools/prayer-planner",
-    icon: CalendarDays,
-    color: "var(--ink)",
-  },
-  {
-    title: "A Plan for When You Feel Alone",
-    description: "For when you feel alone: name up to five people, choose one small step toward each this week, keep one place where the same faces gather, and check off what happened. Private to your browser.",
-    href: "/tools/connection-planner",
-    icon: HeartHandshake,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Prayers for When You Have No Words",
-    description: "Words for when you don't have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
-    href: "/tools/prayer-generator",
-    icon: Heart,
-    color: "var(--ink)",
-  },
-  {
-    title: "Family Devotion Builder",
-    description: "Build a fifteen-minute family devotion for tonight. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
-    href: "/tools/family-devotions",
-    icon: Users,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "How to Study a Book of the Bible: 12 Books",
-    description: "Study any book of the Bible with theological depth. Key themes, study questions, and reading strategies for 12 essential books.",
-    href: "/tools/bible-study",
-    icon: Search,
-    color: "var(--ink)",
-  },
-  {
-    title: "Marriage Health Self-Check",
-    description: "Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find.",
-    href: "/tools/marriage-assessment",
-    icon: HeartHandshake,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Financial Health Self-Check",
-    description: "Twelve questions across generosity, contentment, stewardship, and family provision, and what your answers say about who you believe owns what you have.",
-    href: "/tools/financial-health",
-    icon: DollarSign,
-    color: "var(--ink2)",
-  },
-  {
-    title: "Parenting Stage Guide",
-    description: "Age-specific guidance from toddlers to young adults. What your child needs, how to talk about God, common mistakes, and one practice to start this week.",
-    href: "/tools/parenting-guide",
-    icon: Baby,
-    color: "var(--ink)",
-  },
-  {
-    title: "Parenting Bible Verses",
-    description: "Scripture for fear, anger, identity, obedience, screens, and doubt, each with a short note for the parent.",
-    href: "/tools/parenting-verses",
-    icon: Baby,
-    color: "var(--ink)",
-  },
-  {
-    title: "Emotional Health Self-Check",
-    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest, and where Scripture meets each one.",
-    href: "/tools/emotional-health",
-    icon: Brain,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Spiritual Gifts Self-Check",
-    description: "Thirty-two statements about what you've done, across eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. It ranks no gift above another, and it sets out both views on the miraculous gifts without taking a side.",
-    href: "/tools/spiritual-gifts",
-    icon: Users,
-    color: "var(--ink)",
-  },
-    {
-    title: "Memorize Scripture: 40 Key Verses",
-    description: "Memorize 40 key verses across 8 categories. First-letter mode, fill-in-the-blank, and full recall practice with progress tracking.",
-    href: "/tools/scripture-memory",
-    icon: BookMarked,
-    color: "var(--ink)",
-  },
-  {
-    title: "Conflict Resolution Guide",
-    description: "A 5-step guided process for 8 common conflict types. Name what happened, name what you feel, agree on one next step.",
-    href: "/tools/conflict-guide",
-    icon: MessageCircle,
-    color: "var(--goldlt)",
-  },
-    {
-    title: "A Quick Check on Eight Areas of Life",
-    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. It names what is strong and what is slipping.",
-    href: "/tools/life-audit",
-    icon: Target,
-    color: "var(--goldlt)",
-  },
-    {
-    title: "Misused Bible Verses: What They Actually Mean",
-    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath.",
+    id: "bible-says",
+    name: "Misused Bible Verses: What They Actually Mean",
+    job: "I want to know what that verse everyone quotes really means.",
+    time: "10 minutes",
+    keeps: "Nothing",
+    group: "study",
+    icon: ScrollText,
     href: "/tools/bible-says",
-    icon: BookOpen,
-    color: "var(--ink)",
   },
   {
-    title: "Quotes From the Essays and Books",
-    description: "Four hundred lines and counting from the essays and books, filed by conviction, comfort, challenge, history, and wisdom. Each is tied to the piece it came from, so you can copy it, share it, or go read the whole thing.",
-    href: "/tools/quotes",
-    icon: MessageCircle,
-    color: "var(--ink2)",
-  },
-  {
-    title: "Theology Glossary",
-    description: "The words the church uses (justification, atonement, sanctification and the rest), defined plainly and searchable.",
-    href: "/tools/glossary",
+    id: "scripture-memory",
+    name: "Memorize Scripture: 40 Key Verses",
+    job: "I want to learn a verse by heart.",
+    time: "10 minutes a day",
+    keeps: "Verses you have learned",
+    group: "study",
     icon: BookMarked,
-    color: "var(--ink)",
+    href: "/tools/scripture-memory",
   },
   {
-    title: "Do You Hold Both Sides to the Same Standard? A Self-Check",
-    description: "A self-examination of whether you defend truth selectively, with one standard for your own side and another for your opponents. It's meant for looking at yourself, so please don't use it to score anyone else.",
-    href: "/disruption/consistency",
+    id: "theology-glossary",
+    name: "Theology glossary",
+    job: "I want to know what a church word like atonement means.",
+    time: "1 minute",
+    keeps: "Nothing",
+    group: "study",
+    icon: BookA,
+    href: "/theology/glossary",
+  },
+  {
+    id: "quotes",
+    name: "Quotes From the Essays and Books",
+    job: "I want a line from James's writing to keep or share.",
+    time: "5 minutes",
+    keeps: "Quotes you save",
+    group: "study",
+    icon: Quote,
+    href: "/tools/quotes",
+  },
+
+  /* ── Tools for hard questions ──────────────────────────────────── */
+  {
+    id: "test-the-case",
+    name: "Test the Case for Christianity",
+    job: "I want to argue about whether the resurrection happened.",
+    time: "15 minutes a case",
+    keeps: "Where you stopped",
+    group: "hard-questions",
     icon: Shield,
-    color: "var(--ink)",
+    href: "/tools/test-the-case",
   },
   {
-    title: "How Close Is Each Party to the Bible?",
-    description: "How close is each party to the Bible, theme by theme? A tally that lands where the evidence puts it, whichever side that disappoints. The test is whether you can name where your own side falls short.",
+    id: "which-lens",
+    name: "What Shapes the Way You Read the Bible? A Self-Check",
+    job: "I want to see what is bending the way I read the Bible.",
+    time: "5 minutes",
+    keeps: "Your answers",
+    group: "hard-questions",
+    icon: Glasses,
+    href: "/tools/which-lens",
+  },
+  {
+    id: "consistency",
+    name: "Do You Hold Both Sides to the Same Standard? A Self-Check",
+    job: "I want to know if I am fair to the side I disagree with.",
+    time: "10 minutes",
+    keeps: "Nothing",
+    group: "hard-questions",
+    icon: Scale,
+    href: "/disruption/consistency",
+  },
+  {
+    id: "compare-views",
+    name: "Where Christians differ",
+    job: "I want to see the views Christians hold, side by side.",
+    time: "10 minutes",
+    keeps: "Nothing",
+    group: "hard-questions",
+    icon: Columns2,
+    href: "/theology/compare",
+  },
+  {
+    id: "which-view",
+    name: "Which view do I lean toward?",
+    job: "I want to know which side of a debate I lean toward.",
+    time: "3 minutes a quiz",
+    keeps: "Your answers",
+    group: "hard-questions",
+    icon: Signpost,
+    href: "/theology/which-view",
+  },
+  {
+    id: "party-scorecard",
+    name: "How Close Is Each Party to the Bible?",
+    job: "I want to see how the parties measure up to Scripture.",
+    time: "15 minutes",
+    keeps: "Nothing",
+    group: "hard-questions",
+    icon: Vote,
     href: "/nation/scorecard",
-    icon: Target,
-    color: "var(--ink2)",
   },
   {
-    title: "What Would a Biblical Government Look Like?",
-    description: "The Year of Jubilee, gleaning, the warning against kings: what Scripture's own economic principles might look like as policy, and why both parties would hate the result.",
+    id: "biblical-government",
+    name: "What Would a Biblical Government Look Like?",
+    job: "I want to see what the Bible's own economics would look like as law.",
+    time: "15 minutes",
+    keeps: "Nothing",
+    group: "hard-questions",
+    icon: Landmark,
     href: "/nation/policy",
-    icon: Church,
-    color: "var(--ink)",
+  },
+
+  /* ── Check yourself ────────────────────────────────────────────── */
+  {
+    id: "diagnostic",
+    name: "Where Are You With God? A Self-Check",
+    job: "I want an honest read on where I am with God.",
+    time: "5 minutes",
+    keeps: "Your past results",
+    group: "check-yourself",
+    icon: Compass,
+    href: "/diagnostic",
+  },
+  {
+    id: "whole-life",
+    name: "The Whole-Life Assessment",
+    job: "I want to check my whole life once a year and get a rhythm to keep.",
+    time: "15 minutes",
+    keeps: "Your answers and past results",
+    group: "check-yourself",
+    icon: Target,
+    href: "/life/assessment",
+  },
+  {
+    id: "marriage",
+    name: "Marriage Health Self-Check",
+    job: "I want to know where our marriage honestly stands.",
+    time: "10 minutes",
+    keeps: "Your answers and past results",
+    group: "check-yourself",
+    icon: HeartHandshake,
+    href: "/tools/marriage-assessment",
+  },
+  {
+    id: "emotional-health",
+    name: "Emotional Health Self-Check",
+    job: "I feel off and want to know where to start.",
+    time: "10 minutes",
+    keeps: "Your answers and past results",
+    group: "check-yourself",
+    icon: Brain,
+    href: "/tools/emotional-health",
+  },
+  {
+    id: "financial-health",
+    name: "Financial Health Self-Check",
+    job: "I want to know what my money habits say about my heart.",
+    time: "8 minutes",
+    keeps: "Your answers and past results",
+    group: "check-yourself",
+    icon: Wallet,
+    href: "/tools/financial-health",
+  },
+  {
+    id: "spiritual-gifts",
+    name: "Spiritual Gifts Self-Check",
+    job: "I want to know what I have to give my church.",
+    time: "10 minutes",
+    keeps: "Your answers and past results",
+    group: "check-yourself",
+    icon: Gift,
+    href: "/tools/spiritual-gifts",
+  },
+  {
+    id: "theology-quiz",
+    name: "Theology Quiz",
+    job: "I want ten quick questions on what I believe.",
+    time: "4 minutes",
+    keeps: "Nothing",
+    group: "check-yourself",
+    icon: ListChecks,
+    href: "/tools/theology-quiz",
+  },
+
+  /* ── Pray and practise ─────────────────────────────────────────── */
+  {
+    id: "prayer-generator",
+    name: "Prayers for When You Have No Words",
+    job: "I want words to pray right now.",
+    time: "2 minutes",
+    keeps: "Prayers you save",
+    group: "pray-and-practise",
+    icon: Heart,
+    href: "/tools/prayer-generator",
+  },
+  {
+    id: "prayer-planner",
+    name: "The Prayer Planner",
+    job: "I want to keep a prayer list and see today's names.",
+    time: "5 minutes",
+    keeps: "Your prayer list",
+    group: "pray-and-practise",
+    icon: CalendarDays,
+    href: "/tools/prayer-planner",
+  },
+  {
+    id: "worry-journal",
+    name: "The Worry Journal",
+    job: "I want to put tonight's worries down before bed.",
+    time: "5 minutes",
+    keeps: "Your entries",
+    group: "pray-and-practise",
+    icon: PenLine,
+    href: "/tools/worry-journal",
+  },
+  {
+    id: "connection-planner",
+    name: "A Plan for When You Feel Alone",
+    job: "I feel alone and want one small step toward people this week.",
+    time: "10 minutes",
+    keeps: "Your plan",
+    group: "pray-and-practise",
+    icon: HandHeart,
+    href: "/tools/connection-planner",
+  },
+  {
+    id: "rule-of-life",
+    name: "Build a Weekly Rhythm of Prayer and Rest (a Rule of Life)",
+    job: "I want a weekly rhythm of prayer and rest I can keep.",
+    time: "15 minutes",
+    keeps: "Your rule",
+    group: "pray-and-practise",
+    icon: Sun,
+    href: "/tools/rule-of-life",
+  },
+  {
+    id: "proverbs-31",
+    name: "Proverbs in 31 Days",
+    job: "I want today's chapter of Proverbs.",
+    time: "10 minutes a day",
+    keeps: "Nothing",
+    group: "pray-and-practise",
+    icon: Sprout,
+    href: "/tools/proverbs-31",
+  },
+  {
+    id: "conflict-guide",
+    name: "Work Through a Fight in Five Steps",
+    job: "We just had a fight and need to talk it through.",
+    time: "20 minutes",
+    keeps: "Where you stopped",
+    group: "pray-and-practise",
+    icon: MessageCircle,
+    href: "/tools/conflict-guide",
+  },
+
+  /* ── For families (listed on /family) ──────────────────────────── */
+  {
+    id: "family-devotions",
+    name: "Family Devotion Builder",
+    job: "I want a devotion written for my kids' age tonight.",
+    time: "15 minutes",
+    keeps: "Your series",
+    group: "family",
+    icon: Users,
+    href: "/tools/family-devotions",
+  },
+  {
+    id: "parent-teen",
+    name: "The Parent and Teen Conversation",
+    job: "I want my teenager and me to see where we differ, and talk.",
+    time: "5 minutes each",
+    keeps: "Your answers, in this tab only",
+    group: "family",
+    icon: MessagesSquare,
+    href: "/tools/parent-teen-conversation",
+  },
+  {
+    id: "parenting-guide",
+    name: "What Your Child Needs at Each Age",
+    job: "I want to know what my child needs at this age.",
+    time: "10 minutes",
+    keeps: "Nothing",
+    group: "family",
+    icon: Baby,
+    href: "/tools/parenting-guide",
+  },
+
+  /* ── Listed by another door ────────────────────────────────────── */
+  {
+    id: "passage",
+    name: "Read any verse in context",
+    job: "I want to see this verse with what surrounds it.",
+    time: "2 minutes",
+    keeps: "Nothing",
+    group: "elsewhere",
+    icon: BookOpen,
+    href: "/theology/passage",
+  },
+  {
+    id: "bible-background",
+    name: "Bible background",
+    job: "I want to know what the world was like when this was written.",
+    time: "At your own pace",
+    keeps: "Nothing",
+    group: "elsewhere",
+    icon: Landmark,
+    href: "/resources/context",
+  },
+
+  /* ── Folded: live at their own address, listed nowhere ─────────── */
+  {
+    id: "bible-on",
+    name: "What the Bible Says About Money, Anger, Work and More",
+    job: "I want to know what the Bible says about money, anger or work.",
+    time: "5 minutes",
+    keeps: "Nothing",
+    group: "study",
+    icon: BookOpen,
+    href: "/tools/bible-on",
+    replacedBy: "wisdom-finder",
+  },
+  {
+    id: "verse-finder",
+    name: "Bible Verse Finder",
+    job: "I want verses for what I am carrying.",
+    time: "5 minutes",
+    keeps: "Verses you save",
+    group: "study",
+    icon: BookOpen,
+    href: "/tools/verse-finder",
+    replacedBy: "wisdom-finder",
+  },
+  {
+    id: "parenting-verses",
+    name: "Parenting Bible Verses",
+    job: "I want Scripture for a hard moment with my child.",
+    time: "5 minutes",
+    keeps: "Nothing",
+    group: "study",
+    icon: Baby,
+    href: "/tools/parenting-verses",
+    replacedBy: "wisdom-finder",
+  },
+  {
+    id: "deep-bible",
+    name: "Book-by-Book Bible Study: 20 Books in Depth",
+    job: "I want to study a passage in depth.",
+    time: "30 minutes",
+    keeps: "Your notes and marks",
+    group: "study",
+    icon: Search,
+    href: "/tools/deep-bible",
+    replacedBy: "study-bible",
+  },
+  {
+    id: "bible-study",
+    name: "How to Study a Book of the Bible: 12 Books",
+    job: "I want to know how to read a book of the Bible.",
+    time: "10 minutes",
+    keeps: "Nothing",
+    group: "study",
+    icon: NotebookPen,
+    href: "/tools/bible-study",
+    replacedBy: "study-bible",
+  },
+  {
+    id: "life-audit",
+    name: "A Quick Check on Eight Areas of Life",
+    job: "I want a quick check on every area of my life.",
+    time: "10 minutes",
+    keeps: "Your answers and past results",
+    group: "check-yourself",
+    icon: Target,
+    href: "/tools/life-audit",
+    replacedBy: "whole-life",
+  },
+  {
+    id: "tools-glossary",
+    name: "Theological Vocabulary: 100 Terms Explained",
+    job: "I want to know what a church word means.",
+    time: "1 minute",
+    keeps: "Nothing",
+    group: "study",
+    icon: BookA,
+    href: "/tools/glossary",
+    replacedBy: "theology-glossary",
   },
 ];
 
-/** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
-export const TOOL_GROUPS = [
-  { title: "Self-checks", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
-  { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
-  { title: "Help for a decision or a hard day", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/connection-planner","/tools/prayer-generator"].includes(t.href)) },
-  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parent-teen-conversation","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
-  { title: "Faith and politics", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
+/** The groups shown on /tools, in order. The id is the group's address: /tools#<id>. */
+export const TOOL_GROUP_INFO: { id: ToolGroupId; name: string; line: string; icon: LucideIcon }[] = [
+  { id: "study", name: "Study", line: "Read, search and understand the Bible.", icon: BookOpen },
+  { id: "hard-questions", name: "Tools for hard questions", line: "Argue the case, compare the views, test how you read.", icon: Scale },
+  { id: "check-yourself", name: "Check yourself", line: "Short, honest self-checks. None of them grades you.", icon: ListChecks },
+  { id: "pray-and-practise", name: "Pray and practise", line: "Prayer, rest, worry and the week you are in.", icon: Heart },
 ];
+
+/** The family tools, listed on /family, and found by the find box on /tools. */
+export const FAMILY_GROUP = { id: "family" as const, name: "For families", line: "Tools for parents, kids and teens.", icon: Users };
+
+/** Every tool that is listed: everything not folded into another. */
+export const TOOLS: Tool[] = TOOL_LIST.filter((t) => !t.replacedBy);
+
+/** The tools in each /tools group, in order. */
+export const TOOL_GROUPS = TOOL_GROUP_INFO.map((g) => ({ ...g, tools: TOOLS.filter((t) => t.group === g.id) }));
+
+/** The family tools. */
+export const FAMILY_TOOLS: Tool[] = TOOLS.filter((t) => t.group === "family");
+
+/** Old /tools hashes, from before the regrouping of 2026-11-18, and the part each now opens. */
+export const OLD_GROUP_HASHES: Record<string, string> = {
+  "scripture-and-theology": "study",
+  "help-for-a-decision-or-a-hard-day": "pray-and-practise",
+  "self-checks": "check-yourself",
+  "faith-and-politics": "hard-questions",
+  "family-marriage-and-the-household": "families",
+};
+
+export function toolById(id: string): Tool {
+  const t = TOOL_LIST.find((x) => x.id === id);
+  if (!t) throw new Error(`No tool with id ${id}`);
+  return t;
+}
+
+/** The tool at an address (query and hash ignored), folded or not. */
+export function toolByHref(href: string): Tool | undefined {
+  const base = href.split("#")[0].split("?")[0];
+  return TOOL_LIST.find((t) => t.href === base);
+}
+
+/** A tool's one name, by id. */
+export function toolName(id: string): string {
+  return toolById(id).name;
+}
+
+/** The tool listed in place of a folded one (itself when it is not folded). */
+export function survivorOf(tool: Tool): Tool {
+  let t = tool;
+  for (let i = 0; t.replacedBy && i < 5; i++) t = toolById(t.replacedBy);
+  return t;
+}
+
+/** The folded tools a survivor took in. */
+export function foldedInto(id: string): Tool[] {
+  return TOOL_LIST.filter((t) => t.replacedBy === id);
+}

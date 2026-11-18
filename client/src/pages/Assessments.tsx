@@ -1,145 +1,36 @@
 /**
- * Assessments (/assessments) — one front door for every instrument on the
- * site. The tools existed but were scattered across five sections with five
- * entrances; a person who wants an honest measure of where they are should
- * not need a map to find the mirror. Grouped by the question a person is
- * actually asking, each with plain "take this one if" guidance. Routing only —
- * every instrument keeps its own page and logic.
+ * Self-checks (/assessments). The address stays live, and what it shows is
+ * the tools page's "Check yourself" group (TOOLS-PLAN unit 6: the self-checks
+ * are listed once, on /tools#check-yourself). Every tile reads its name, job,
+ * time and what it keeps from lib/toolsList.ts, so a self-check has the same
+ * name here as everywhere else. Routing only: every self-check keeps its own
+ * page and logic.
  */
+import { Link } from "wouter";
+import { ListChecks, Wrench } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { Link } from "wouter";
-import { CardGrid } from "@/components/editorial/CardGrid";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import ToolTile from "@/components/art/ToolTile";
+import { TOOL_GROUPS } from "@/lib/toolsList";
+import { followHash } from "@/lib/followHash";
+import "./home/home.css";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+const CHECKS = TOOL_GROUPS.find((g) => g.id === "check-yourself")!;
 
-interface Instrument {
-  title: string;
-  takeIf: string;
-  gives: string;
-  href: string;
-}
-
-interface Group {
-  eyebrow: string;
-  heading: string;
-  blurb: string;
-  items: Instrument[];
-}
-
-const GROUPS: Group[] = [
-  {
-    eyebrow: "Start here",
-    heading: "Where are you, actually?",
-    blurb:
-      "Not where you say you are on Sunday. Where you are. These take an honest reading of the whole picture: one quick, one thorough, one to hand you a starting place.",
-    items: [
-      {
-        title: "Where Are You With God? A Self-Check",
-        takeIf: "you want the honest check-in: where you are with God right now, without the church answer.",
-        gives: "A straight reading of your season, and where to go from it.",
-        href: "/diagnostic",
-      },
-      {
-        title: "The Whole-Life Assessment",
-        takeIf: "you are willing to look at all of it: the inner life, the body, the home, work and money, the world.",
-        gives: "A map of where your life is flourishing and where it has gone quiet, plus a rule of life for this season.",
-        href: "/life/assessment",
-      },
-      {
-        title: "Start Here",
-        takeIf: "you are new to the site and want it to hand you a starting place.",
-        gives: "Two minutes of honest questions, then a track that fits where you actually are.",
-        href: "/start/quiz",
-      },
-    ],
-  },
-  {
-    eyebrow: "For what you are carrying",
-    heading: "The weight you brought with you.",
-    blurb:
-      "Instruments for the specific thing that is heavy right now. Each one ends with an honest reading of where you stand and a place to start reading.",
-    items: [
-      {
-        title: "The Marriage Health Self-Check",
-        takeIf: "the marriage is drifting, tense, or quiet, and you want an honest read instead of tips.",
-        gives: "Where the covenant actually stands, and what to read next.",
-        href: "/tools/marriage-assessment",
-      },
-      {
-        title: "The Emotional Health Self-Check",
-        takeIf: "you are running on empty, or something inside feels off and you cannot name it.",
-        gives: "A read on self-awareness, boundaries, grief, forgiveness, and rest, with practical steps.",
-        href: "/tools/emotional-health",
-      },
-      {
-        title: "The Financial Health Check",
-        takeIf: "money is a weight, a worry, or a quiet rival for your heart.",
-        gives: "Where you stand on generosity, contentment, stewardship, and provision, with Scripture-grounded steps.",
-        href: "/tools/financial-health",
-      },
-      {
-        title: "The Life Audit",
-        takeIf: "the life you are living and the life you say you want have quietly diverged.",
-        gives: "A structured look at the gap, without shame.",
-        href: "/tools/life-audit",
-      },
-      {
-        title: "The Spiritual Gifts Self-Check",
-        takeIf: "you are not sure where you fit in your church, or whether you have anything to give it.",
-        gives: "Where your service already shows across eight gifts Scripture names, none ranked above another.",
-        href: "/tools/spiritual-gifts",
-      },
-    ],
-  },
-  {
-    eyebrow: "For what you believe",
-    heading: "The convictions under the surface.",
-    blurb:
-      "What you actually believe, and whether you hold it evenly, is measurable. These take that measure.",
-    items: [
-      {
-        title: "The Theology Quiz",
-        takeIf: "you want to know where you land on the theological map, and why it matters.",
-        gives: "Your place among the traditions, held irenically.",
-        href: "/tools/theology-quiz",
-      },
-      {
-        title: "Which View Am I?",
-        takeIf: "you want to see which position you lean toward on a contested doctrine, and why faithful Christians differ.",
-        gives: "A starting point for understanding yourself, never a verdict.",
-        href: "/theology/which-view",
-      },
-      {
-        title: "Which Lens Has You?",
-        takeIf: "you suspect the flag, the cause, the marketplace, or nostalgia is doing your thinking before you do.",
-        gives: "Thirteen honest choices, five lenses named, then dismantled.",
-        href: "/tools/which-lens",
-      },
-      {
-        title: "The Consistency Check",
-        takeIf: "you suspect you defend truth selectively: one standard for your side, another for theirs.",
-        gives: "Where your standard bends, laid out plainly.",
-        href: "/disruption/consistency",
-      },
-    ],
-  },
-];
-
-// ItemList so the assessments hub is indexed as one collection of instruments,
-// each pointing at its own page.
+// ItemList so the self-checks are indexed as one collection, each pointing at its own page.
 const assessmentsSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Assessments",
-  description:
-    "Honest instruments for self-examination: the spiritual check-in, the whole-life map, marriage, emotional and financial health, the life audit, theology, and consistency.",
+  description: "Honest self-checks: where you are with God, the whole of life, marriage, emotional and financial health, spiritual gifts, and belief.",
   url: "https://www.livewellbyjamesbell.co/assessments",
-  itemListElement: GROUPS.flatMap((g) => g.items).map((item, i) => ({
+  itemListElement: CHECKS.tools.map((t, i) => ({
     "@type": "ListItem",
     position: i + 1,
-    name: item.title,
-    url: `https://www.livewellbyjamesbell.co${item.href}`,
+    name: t.name,
+    url: `https://www.livewellbyjamesbell.co${t.href}`,
   })),
 };
 
@@ -153,61 +44,35 @@ export default function Assessments() {
         structuredData={assessmentsSchema}
       />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Self-checks</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "20ch" }}>
-            Self-checks for your faith, your marriage, and your life
-          </h1>
-          <p className="page-standfirst">An honest measure, before anything else.</p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
-            Every instrument on the site, in one place, sorted by the question you
-            are actually asking. None of them grades you. Each one is a mirror,
-            and whatever it shows, the writing here was built to meet it.
-          </p>
-        </div>
-      </section>
+      <PageHead
+        door="Tools"
+        doorHref="/tools"
+        title="Self-checks"
+        line="Short, honest self-checks. None of them grades you, and what you answer stays on this device."
+        action={
+          <Link href="/tools" className="btn btn--quiet">
+            Every tool
+          </Link>
+        }
+      />
 
-      {/* GROUPS */}
-      {GROUPS.map((g, gi) => (
-        <section key={g.eyebrow} style={{ background: gi % 2 ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-          <div style={wrap}>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>{g.eyebrow}</div>
-            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 38px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", marginBottom: "10px", maxWidth: "26ch" }}>
-              {g.heading}
-            </h2>
-            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" }}>
-              {g.blurb}
-            </p>
-            <CardGrid
-              label={g.heading}
-              items={g.items.map((it) => ({
-                href: it.href,
-                title: it.title,
-                dek: `Take this if ${it.takeIf}`,
-                meta: <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55 }}>{it.gives}</span>,
-                cta: "Take the assessment",
-              }))}
-            />
-          </div>
-        </section>
-      ))}
-
-      {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
-            The mirror is not the point. What you do the day after you look is.
+      <section className="home-sec" aria-labelledby="checks-title">
+        <div className="home-wrap">
+          <SectionHead icon={ListChecks} label={`${CHECKS.tools.length} self-checks`} title="Pick the one for what you are carrying." id="checks-title" />
+          <ul className="lw-tools">
+            {CHECKS.tools.map((t) => (
+              <li key={t.id}>
+                <ToolTile tool={t} />
+              </li>
+            ))}
+          </ul>
+          <p className="lw-newline">
+            <Wrench aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              Want to test how you read the Bible, or how fair you are to the other side? Those are under{" "}
+              <Link href="/tools#hard-questions" onClick={() => followHash("/tools#hard-questions")}>{TOOL_GROUPS.find((g) => g.id === "hard-questions")!.name}</Link>.
+            </span>
           </p>
-          <div style={{ display: "flex", gap: "24px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/answers" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-              The hard questions, answered →
-            </Link>
-            <Link href="/writing" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-              The writing →
-            </Link>
-          </div>
         </div>
       </section>
     </Layout>

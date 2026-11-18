@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import { toolName } from "@/lib/toolsList";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { Link } from "wouter";
@@ -10,6 +11,7 @@ import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
+import FoldedNote from "@/components/FoldedNote";
 /* ── Types ─────────────────────────────────────────────────────── */
 
 interface Question {
@@ -231,7 +233,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "How-to", title: "How to Raise Kids Who Own Their Faith", href: "/how-tos/parenting-how-to-raise-kids-who-own-their-faith" },
-          { kind: "Tool", title: "Parenting Stage Guide", href: "/tools/parenting-guide" },
+          { kind: "Tool", title: toolName("parenting-guide"), href: "/tools/parenting-guide" },
         ],
       },
       mid: {
@@ -245,7 +247,7 @@ const CATEGORIES: Category[] = [
         next: [
           { kind: "How-to", title: "How to Pray With Your Kids at Bedtime", href: "/how-tos/fam-how-to-pray-with-your-kids-at-bedtime" },
           { kind: "How-to", title: "How to Eat Dinner Together Again", href: "/how-tos/fam-how-to-eat-dinner-together-again" },
-          { kind: "Tool", title: "Parenting Stage Guide", href: "/tools/parenting-guide" },
+          { kind: "Tool", title: toolName("parenting-guide"), href: "/tools/parenting-guide" },
         ],
       },
       low: {
@@ -894,6 +896,7 @@ export default function LifeAudit() {
           offers: { "@type": "Offer", price: "0" },
         }}
       />
+      <FoldedNote id="life-audit" />
 
       {/* Hero */}
       <section

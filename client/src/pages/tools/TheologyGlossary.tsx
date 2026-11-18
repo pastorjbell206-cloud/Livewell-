@@ -12,6 +12,7 @@ import { Search, ChevronDown, ChevronUp, BookOpen, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 
+import FoldedNote from "@/components/FoldedNote";
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
 /* ------------------------------------------------------------------ */
@@ -1081,6 +1082,7 @@ export default function TheologyGlossary() {
         url="https://www.livewellbyjamesbell.co/tools/glossary"
         structuredData={structuredData}
       />
+      <FoldedNote id="tools-glossary" />
 
       {/* ============ HERO ============ */}
       <section

@@ -6,6 +6,8 @@ import { Copy, Check, Search } from "lucide-react";
 import { copyToClipboard } from "@/lib/clipboard";
 import ScriptureNote from "@/components/ScriptureNote";
 
+import FoldedNote from "@/components/FoldedNote";
+import NextStep from "@/components/NextStep";
 /**
  * Parenting Bible Verses — a topical lookup of Scripture for the real moments
  * of raising kids, each paired with a short, honest note for the parent.
@@ -161,6 +163,7 @@ export default function ParentingVerses() {
         description="Bible verses for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent."
         url="https://www.livewellbyjamesbell.co/tools/parenting-verses"
       />
+      <FoldedNote id="parenting-verses" />
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>For the home</div>
@@ -231,6 +234,9 @@ export default function ParentingVerses() {
           </div>
         </div>
       </section>
+      <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
+        <NextStep id="parenting-guide" line="What your child needs at their age, and one practice to start this week." />
+      </div>
     </Layout>
   );
 }

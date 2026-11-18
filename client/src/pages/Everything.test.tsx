@@ -49,11 +49,11 @@ describe("/explore", () => {
     }
   });
 
-  it("lists every tool once under Tools", () => {
+  it("lists every tool once under Tools (a tool another door lists is under that door)", () => {
     renderPage();
     const tools = document.getElementById("tools")!;
     const hrefs = Array.from(tools.querySelectorAll(".ex-tool")).map((a) => a.getAttribute("href"));
-    expect([...hrefs].sort()).toEqual(TOOLS.map((t) => t.href).sort());
+    expect([...hrefs].sort()).toEqual(TOOLS.filter((t) => t.group !== "elsewhere").map((t) => t.href).sort());
   });
 
   it("links only to real routes", () => {
