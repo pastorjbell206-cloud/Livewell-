@@ -177,3 +177,30 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Biography: atheism and no father (summary, primer, script, teaching) | Credential | Atheism kept once, session 1 teaching; "raised without a father" removed |
 | "Blessed" outside Scripture | CLAUDE.md forbids it as an adjective | Used only in Scripture, in titles, or in quotation marks as the word under discussion |
 | Scripture quotations | ESV, from memory | Unchanged translation |
+
+## The Captive Church
+
+| Claim | How checked | Result |
+|---|---|---|
+| Barmen, first article: "the one Word of God whom we have to hear..." | Web search: standard English (Cochrane; Modern Reformation text) reads "as he is attested for us in Holy Scripture, is the one Word of God which we have to hear and which we have to trust and obey in life and in death" | Quoted in that wording; the rejection paraphrased; drafted largely by Barth |
+| "By this sign conquer" (312) | Known: Eusebius, Life of Constantine 1.28 | Kept as Constantine's reported words |
+| Bonhoeffer "cheap grace ... wear like a coat instead of grow like a root" | The term is his (Discipleship, 1937); the coat-and-root image is not a line I can find in him | Term kept; image cut; his idea paraphrased without quotation marks |
+| Bonhoeffer "was among them" at Barmen | Known: he was not at the synod (he was in London); he belonged to the Confessing Church | Reworded |
+| Bonhoeffer hanged "weeks before the war ended" | Known: Flossenbürg, 9 April 1945 | Dated |
+| Pliny to Trajan about 112; incense to the emperor's image | Known: Letters 10.96: incense and wine to the emperor's image, cursing Christ; executed for obstinacy | Stated as such |
+| "Under Nero ... begin to die for refusing the pinch of incense" (64) | Known: Tacitus, Annals 15.44: Christians blamed for the fire | Corrected |
+| "Caesar is lord" as Rome's creed | Known: Martyrdom of Polycarp 8.2, officials urge him to say "Lord Caesar" and offer incense, about 155 | Grounded in Polycarp, paraphrased; no quotation added |
+| Edict of Milan 313; established religion "within a lifetime" | Known: Constantine and Licinius; Theodosius 380 | 380 named |
+| Ambrose and Theodosius, 390 | Known: penance after Thessalonica | Kept; timeline order fixed |
+| City of God "circa 426" | Known: written 413 to 426 | Dated |
+| Denarius image and inscription | Known: Tiberius's denarius, "son of the divine Augustus"; Mark 12:16 eikon; LXX Genesis 1:26-27 eikon | Kept; ESV says "likeness", explained |
+| Matthew 4:10 memory verse "Away from me, Satan ... serve him only" | NIV wording in an ESV guide | ESV: "Be gone, Satan! ... him only shall you serve" |
+| Philippians 3:20 "people who held a prized Roman citizenship" | Philippi was a Roman colony; not every reader was a citizen | "A Roman colony proud of its status" |
+| Cavanaugh, The Myth of Religious Violence | Known: 2009 | Dated; "Leader to confirm" removed |
+| Whitehead and Perry, Taking America Back for God | Known: 2020 | Dated; "Leader to confirm" removed |
+| Hauerwas and Willimon, Resident Aliens; Newbigin; Smith; Taylor | Known: 1989; 1989; 2009; 2007 | Dated |
+| "The Benedict Option ... by various" | Known: Rod Dreher, 2017 | Author named |
+| "Render to Caesar: The treason of the early creed ... by various" | Not a book | Cut |
+| Plug: "James Bell's book The Captive Church" (summary, promo) | Not on the three-book shelf (bookShelf.ts) | Dropped |
+| Biography: atheism (summary, primer, FAQ) | Credential | Removed |
+| Scripture quotations | ESV, from memory; no ESV in the repository | ESV throughout |
