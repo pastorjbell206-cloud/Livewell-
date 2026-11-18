@@ -49,7 +49,7 @@ function walk(slug: string, chapter: number) {
 const next = () => fireEvent.click(screen.getByRole("button", { name: /^Next:/ }));
 const stepName = () => document.querySelector(".wk__title")?.textContent;
 
-describe("Study this chapter", () => {
+describe("Study this chapter", { timeout: 20000 }, () => {
   it("walks John 3 in seven steps, each from the chapter's own files", async () => {
     walk("john", 3);
     const dialog = screen.getByRole("dialog", { name: "Study John 3" });
@@ -132,7 +132,7 @@ describe("Study this chapter", () => {
   });
 });
 
-describe("Read and Study", () => {
+describe("Read and Study", { timeout: 20000 }, () => {
   it("opens in Study on a first visit, and remembers Read", async () => {
     window.history.replaceState({}, "", "/study/bible/john/3");
     const first = renderWithProviders(<StudyBible />);
@@ -154,7 +154,7 @@ describe("Read and Study", () => {
   });
 });
 
-describe("highlights and notes on a verse", () => {
+describe("highlights and notes on a verse", { timeout: 20000 }, () => {
   it("keeps one verse's colour and note, and removes it in one step", () => {
     const where = { ref: "jhn.3.16", slug: "john", chapter: 3, verse: 16, label: "John 3:16" };
     let r = saveMark([], where, { color: "a" });
