@@ -45,3 +45,74 @@
 | Biography (atheism, no father, five sons, "Bell is a pastor") in summary and primer; facilitator script "My own day off bleeds away into work. I am terrible at this." | Credential, and a pastor's confession scripted for a volunteer | Removed; script line made general |
 | Old summary "Both are lies, and the leader must not let either win the room" | Rulebook | Cut |
 | Sabbath day debate | Second-order question | Both views stated; left open as the old guide did |
+
+## Sermon on the Mount
+
+| Claim | How checked | Result |
+|---|---|---|
+| Bonhoeffer, "When Christ calls a man, he bids him come and die" | Known (The Cost of Discipleship, Fuller translation, chapter on discipleship and the cross) | Kept as a quotation; old claim that he "wrote it about this very sermon" corrected to "wrote about this sermon" generally |
+| Bonhoeffer, "only he who believes is obedient, and only he who is obedient believes" (old: "only the obedient believe, and only believers obey") | Searched: attested in The Cost of Discipleship; wording varies by translation | Quoted in the Fuller wording |
+| Bonhoeffer on cheap grace: "the preaching of forgiveness without requiring repentance"; "grace without discipleship, grace without the cross, grace without Jesus Christ, living and incarnate"; costly grace as the treasure in the field | Known (opening chapter) | Quoted short phrases only |
+| "Bonhoeffer said the deeper law is grace because it refuses to let us hide"; "Jesus claims the whole person, Bonhoeffer said"; Bonhoeffer on each beatitude as a renunciation | Not found in a source I could check | Attribution removed; the first kept as the writer's own reading, the others cut or reduced to a general paraphrase (the Beatitudes as a portrait of disciples who left everything) |
+| Leader primer: the regime "hanged him for belonging to Christ" | He was hanged at Flossenbürg on 9 April 1945 for his part in the resistance | Reworded to the fact |
+| Bonhoeffer joined the conspiracy against Hitler | Known | Kept |
+| Cost of Discipleship 1937 | Known | Kept |
+| Augustine's commentary "circa 420" | Known: De sermone Domini in monte, about 393 to 394 | Corrected to about 394; title fixed to Our Lord's Sermon on the Mount |
+| Luther on the sermon, 1530 | Weekly sermons on Matthew 5 to 7, 1530 to 1532, published 1532 | Dated 1530 to 1532 |
+| Anabaptists 1525 | Known; Schleitheim Confession 1527 on oaths and the sword | Kept, Schleitheim added as the specific source |
+| Lloyd-Jones 1959 | Two volumes, 1959 and 1960 | Corrected |
+| Stott 1978, Willard 1998, Wright Matthew for Everyone (2002), Ortlund (2020), McKnight (2011), Packer (1973), Confessions (about 397 to 400) | Known | Kept, dated; "Leader to confirm" removed |
+| Carson, "Studies on the love of God and the wrath of God" | Not a real title | Replaced with his The Difficult Doctrine of the Love of God (2000) |
+| Thomas a Kempis | Known | Kept, accent restored |
+| Moses "circa 1400 BC"; Matthew "circa AD 80"; James "AD 50 to 60"; "circa 250" nonviolence | Disputed or loose dates | "Date debated"; "Most date it AD 70 to 90"; "Before AD 62"; "Second and third centuries" |
+| Proverbs 6:6-8 (ant), 1 Timothy 5:8, Romans 13:4, Exodus 21:24, Matthew 23:23 (mint, dill, cumin) | Scripture | Added as the references behind claims the old guide made without them |
+| Memory verses Matthew 5:16, 5:44, 7:7 | ESV wording | Restored ("In the same way,"; "Love"; semicolons) |
+| Session 3 on enemies and abuse | sensitive-pages.json lists this guide with the abuse topic | No help lines were in the JSON (the page and PDF add them); leader notes now point to the help information in session 3, and the practice says the prayer never requires contact |
+
+## Singleness
+
+| Claim | How checked | Result |
+|---|---|---|
+| Paul uses the same word (charisma) for singleness as for gifts of the Spirit (1 Corinthians 7:7) | Known (Greek text) | Kept |
+| "Roughly a third of the Psalms are laments" | Common scholarly count (individual and communal laments, about a third to two-fifths) | Kept as "around a third, by most counts" |
+| Timeline "circa 700 BC" for Isaiah 54 and 56 | Many scholars place these chapters in or after the exile | "700s to 500s BC", with the dating dispute named |
+| "circa AD 400, figures like Jerome and Augustine" exalt celibacy | Known: Jerome, Against Jovinian (393); Augustine, On the Good of Marriage (about 401), written partly against that overcorrection | Reworded with the two works and dates; Augustine placed as a defender of marriage |
+| 1522, Luther recovers marriage | Known: The Estate of Marriage (1522) | Kept, work named |
+| "2000s" research on a loneliness epidemic | Known: Putnam, Bowling Alone (2000); U.S. Surgeon General advisory on loneliness and isolation (2023) | Named both |
+| "2017" renewed pastoral writing on singleness (no title) | Vague | Replaced with dated titles: Danylak (2010), Allberry (2019), Treweek (2023, searched: IVP Academic, May 2023) |
+| Bibliography: Coles (2017), Keller (2011), Rah (2015), Danylak (2010), Allberry (2019) | Known | Kept, dated; "Leader to confirm" removed |
+| Bibliography: "Why Does He Do That? and the wider counseling literature on isolation" | Why Does He Do That? is Lundy Bancroft's book on abusive men, unrelated to loneliness; the entry was a placeholder category | Cut |
+| Bibliography: "The Body and the Church, in the theology of the body tradition" by "Writers in the theology of the body tradition" | Not a real title or author | Cut |
+| Biography: "Bell is a pastor with five sons" (summary, primer, teaching, FAQ x2) | Confirmed fact used as a credential | Removed; "I'm a pastor" kept once where the self-implication needs it. No claim that he is married |
+| Sexual revolution "by many honest secular accounts" produced loneliness and commodification | Unattributed claim | Cut from going deeper |
+| Memory verses 1 Corinthians 7:7, Psalm 62:8, 1 Corinthians 6:20, Ephesians 2:19, John 15:5 | ESV wording | Unchanged (already ESV) |
+
+## Skeptic
+
+| Claim | How checked | Result |
+|---|---|---|
+| Lewis, Mere Christianity: "let us not come with any patronising nonsense about His being a great human teacher. He has not left that open to us. He did not intend to." | Known (Book 2, chapter 3) | Quoted; the rest of the trilemma paraphrased |
+| Lewis built the opening of Mere Christianity on the moral argument; Mere Christianity from wartime BBC talks, book 1952 (old timeline "1942 to 1952") | Known: talks began 1941 | Timeline "1941 to 1952" |
+| Surprised by Joy | Known (1955) | Dated |
+| Draper (1874), White (1896) | Known | Kept |
+| Lindberg's work on medieval science; Numbers (ed.), Galileo Goes to Jail (2009) | Known | Kept |
+| Kepler, Boyle and Newton saw their work as studying God's creation | Known | Kept |
+| Tacitus, Christ "suffered the extreme penalty" under Pilate | Known (Annals 15.44, Church and Brodribb translation) | Added as the non-Christian witness to the crucifixion; timeline entry "About 116" |
+| Socrates, unexamined life (old "circa 400 BC") | Known (Plato, Apology 38a; trial 399 BC) | "399 BC", attributed to Plato's account |
+| Aquinas, Summa 1265 to 1274; Hume 1748; Darwin 1859; James 1896 | Known | Kept |
+| Hume's Dialogues Concerning Natural Religion | Known (published 1779, after his death) | Named for the design critique |
+| Clifford, "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence" (1877) | Known | Quoted |
+| "Augustine's faith seeking understanding" | The phrase is Anselm's (fides quaerens intellectum), drawing on Augustine | Corrected to Anselm |
+| Fine-tuning "circa 1960s onward" | Discussion grew from the 1950s; Brandon Carter named the anthropic principle in 1973 | "1950s to 1970s", Carter named |
+| Plantinga 1967 to 2000 | Known: God and Other Minds (1967), Warranted Christian Belief (2000) | Titles added |
+| Wright "1996 to 2003" | Known: series from 1992 to 2003 | "1992 to 2003" |
+| Habermas/Licona and Bauckham "2003 to 2017" | Known: 2004, 2006, 2010 | "2004 to 2010" |
+| Paul's creed "circa AD 53"; Gospels "circa AD 70 to 100" | Common scholarly dating with ranges | "Mid-50s"; "About AD 65 to 100, on most scholars' dating" |
+| Bibliography: "Misquoting Jesus and How Jesus Became God" as one title | Two books | Kept How Jesus Became God (2014) |
+| Bibliography: Sayers, Letters to a Diminished Church | Known: posthumous essay collection (2004) | Kept; "Leader to confirm" removed |
+| Keller (2008), Plantinga (2000), Wright (2003), Bauckham (2006), Habermas and Licona (2004) | Known | Dated |
+| Mark ends at 16:8 in the earliest manuscripts | Known | Stated |
+| James did not believe before the resurrection | Scripture: John 7:5; appearance 1 Corinthians 15:7 | References added |
+| Case studies with named people (Marcus, Dana, Tope, Priya, Helen) | Invented people presented as if real | Rewritten as "Suppose..." without names |
+| Biography: came to faith from atheism (summary, primer, FAQ x3, script, promo x2, teaching) | Confirmed fact used repeatedly as a credential | Kept once, in session 1's teaching, where it lets him state the atheist view as his own former view |
+| Memory verse Matthew 16:15 | ESV | Inner quotation marks restored |
