@@ -347,3 +347,15 @@ His words: "I want you to make this a 10 out of 10 on every score... a place whe
 - **Tie in all he does** (LiveWell, Substack, Facebook, the ENDS Initiative) as one thing. Spoken aloud; the transcript said "the Ant initiative", read as ENDS and awaiting his confirmation.
 - **Liberty to write and rewrite** articles and subheadings to the standard of the best essays (given earlier the same day). His read on the preview before anything goes public still holds.
 - **The ten held essays join PR #541** so they are on a preview for his read and no longer exist on one machine only. He had been asked twice which pull request they should join and asked instead for everything to be finished and shown.
+
+## James's decisions, 2026-11-18 (after the redesign went live)
+
+- "I want you to make this go live." PR #540 merged; live on www.livewellbyjamesbell.co.
+- Do the seven recommendations in order: the other fifty-nine study guides; a main passage for Honest Answers and history lessons; essays for the two empty sections; illustrations carried further; phone testing; contact messages emailed; /connect in his profiles (his to do).
+- "Built for a phone", and "a way for people to download this onto their computer or download on their phones".
+- The "Ant initiative" is the ENDS Initiative, endsinitiative.org: "make sure people see that". Facts read from that site are in /home/user/briefs/ends-facts.md (ENDS: Ends of the Earth Initiative; James is Founder; giving there is not open).
+- "I've been a pastor for 16 years." (The ENDS site says eleven years in church revitalization; not a conflict, not restated here.)
+- Ebooks: everything free to download. The seven whose files name the Pastors Connection Network are held back until he sends corrected files.
+- The twenty essays in PR #541: "Yes, publish them."
+- The podcast has no address yet: removed from Find James for now.
+- Not yet answered: the pilot's six study guide questions (defaults taken: no added memory, no biography, help lines word for word, keep each guide's translation, open questions stay open, off-shelf book plugs dropped); the church's web address; contact email needs a mail sender.
