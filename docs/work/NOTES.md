@@ -359,3 +359,4 @@ His words: "I want you to make this a 10 out of 10 on every score... a place whe
 - The twenty essays in PR #541: "Yes, publish them."
 - The podcast has no address yet: removed from Find James for now.
 - Not yet answered: the pilot's six study guide questions (defaults taken: no added memory, no biography, help lines word for word, keep each guide's translation, open questions stay open, off-shelf book plugs dropped); the church's web address; contact email needs a mail sender.
+- Asked whether the 16 older ebooks he had taken off the shelf "to rewrite in my own hand" should come back as free downloads: "Keep them off for now." Free ebooks are the nine current books and the three church-leader booklets.
