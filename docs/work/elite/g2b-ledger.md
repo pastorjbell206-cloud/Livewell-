@@ -237,3 +237,36 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Scripture quoted: Matthew 6:19-24, 25:35, Mark 10:22, 12:40-44, 13:2, Luke 12:15, 12:16-21 (described), 14:12-14, 19:8, 21:1, Acts 2:46, 18:3, 20:35, Romans 12:13, 15:26, 2 Corinthians 8:2-3, 8:9, 8:12, 9:6-8, Philippians 4:11-13, 4:19, 1 Timothy 5:8, 6:5-10, 6:17, Hebrews 13:2, 13:5, 1 Peter 4:9, 1 John 3:16-17, Ecclesiastes 5:10, Proverbs 6:6, 30:8-9, 1 Chronicles 29:14, Deuteronomy 10:18, 15:7-8, James 1:27 | ESV from memory | Quoted or cited with references; Luke 12:20 ("Fool!") described, not quoted |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help box | Generosity is not on the sensitive list; no help lines in the old guide | Nothing to keep |
+
+## Habits and formation
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp (atheism, "pastor and a father of five sons", "your sons") in summary, s1 teaching, FAQ | Credential use | Removed everywhere; no biography in this guide |
+| "Bell says / Bell takes the strong case" throughout; FAQ "Why does the writer keep implicating himself" | Narrator calling him "Bell" | Removed; teaching in first person; FAQ answered in first person |
+| Willard, "Grace is not opposed to effort, it is opposed to earning. Earning is an attitude. Effort is action." | Web search: attributed to The Great Omission (2006), pp. 61 to 62 in secondary citations; also said in talks | First sentence kept as a quotation with the book named; the rest given as paraphrase; The Great Omission added to the bibliography as the source |
+| Willard, "gospel of sin management" | Known: The Divine Conspiracy (1998), chapter 2 | Kept as description, book named, no quotation marks |
+| Willard, disciplines of abstinence and engagement (lists) | Known: The Spirit of the Disciplines (1988), chapter 9 | Kept |
+| Foster, inward / outward / corporate disciplines (lists); 1978 | Known | Kept |
+| Smith, You Are What You Love (2016), Desiring the Kingdom (2009); mall as cathedral; "mind on a stick" | Known; Smith's phrase is "brains on a stick" | Mall reading placed in Desiring the Kingdom; "brains on a stick" given as his description, no quotation marks |
+| Augustine, restless heart (Confessions 1.1); virtue as the order of love (City of God 15.22) | Known | Kept as paraphrase, no quotation marks; Confessions dated about 397 to 400 |
+| Aristotle, just by doing just acts | Known: Nicomachean Ethics book II | Kept as paraphrase; dated "fourth century BC" |
+| Lewis, every choice turns the central part of you into something different ("Leader to confirm the specific passage") | Known: Mere Christianity, book 3, chapter 4 | Kept as paraphrase with the chapter named; "Leader to confirm" removed |
+| Timeline "1522" for the Reformation | No event fits; Luther's Freedom of a Christian (1520) carries the faith-and-works point | Made 1520, Luther and the work named; tree image attributed to it |
+| Timeline "circa AD 60" for Paul | 1 Corinthians and Romans are 50s; 1 Timothy 60s | "AD 50s to 60s" |
+| Timeline "circa AD 540" Benedict; "circa 1200s" medieval | Rule's date is approximate | "Sixth century"; "Middle Ages" |
+| Timeline order (1988 before 1985) | Out of order | Reordered |
+| Timeline 2016 "wider recovery ... works like Warren" | Liturgy of the Ordinary, 2016, known | Made a plain entry for Warren's book |
+| Benedict, the strong have something to strive for and the weak are not driven away | Known: Rule, chapter 64 (on the abbot) | Kept as paraphrase, chapter described |
+| Regula "closer still, it meant something like a trellis"; "same root gives us the word for a ruler" | Regula means a straight rod, rule or standard; the trellis is a later devotional picture, not the word's meaning | Word meaning stated as rod or standard; trellis given as "many Christians picture it" |
+| Postman 1985 | Known | Kept |
+| Haidt, smartphone and adolescent anxiety | Known argument (The Anxious Generation, 2024); disputed by some researchers | Kept as his argument, with the dispute named |
+| "Careful observers ... have documented measurable shifts" | Stated as settled fact | Softened to "have argued", with "some findings are debated" |
+| Pascal, diversion, sitting quietly in a room | Known: Pensées | Kept as paraphrase |
+| Taylor, social imaginary; immanent frame | Known | Kept |
+| "The saints of the deepest spontaneous freedom were almost always the most deeply ruled" | Unsupported generalization | Narrowed to people the reader has known, "very often" |
+| Bibliography "Leader to confirm" (3: Willard Renovation, Lewis, Warren) and Comer "confirm specific claims" | Known titles; notes now describe the books only | Removed; Comer dated 2019; Warren dated 2016 |
+| Quote card "Grace is not opposed to effort..." unattributed | Willard's line | Attributed to Willard |
+| Scripture quoted: Proverbs 4:23, Matthew 6:5, 6:21, 6:24, 7:24, Deuteronomy 6:5, Luke 6:40, 6:45, 16:10, Romans 12:1-2, Philippians 2:12-13, 3:19, 4:8, Psalm 1:2-3, 37:4, 90:12, 115:8, Isaiah 29:13, Exodus 20:3-4, Colossians 1:29, 3:2, 1 John 2:16 (phrase only, the verse has dashes), 1 Corinthians 9:25, 9:27, 15:10, Hebrews 5:14, 12:11, 1 Timothy 4:7-8, Mark 1:35, Titus 2:11-12, 2 Peter 1:5, Ephesians 2:8-10, Galatians 6:9, Daniel 6:10, Acts 2:42 | ESV from memory | Quoted with references; Psalm 1:1 ("Blessed") not quoted |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help box | Not on the sensitive list; no help lines in the old guide ("988" was only the year 1988) | Nothing to keep |
