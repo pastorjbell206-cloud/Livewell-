@@ -188,7 +188,12 @@ books). One page lists everything the site holds.
   https://www.livewellbyjamesbell.co/connect
 - RSS feed of the essays: https://www.livewellbyjamesbell.co/rss.xml
 - The newsletter: https://www.livewellbyjamesbell.co/subscribe
-- ENDS (equipping pastors in remote regions): https://endsinitiative.org
+- ENDS, the Ends of the Earth Initiative (James founded it; it trains local
+  shepherds, sends them out, and helps the churches they plant do the same):
+  https://endsinitiative.org
+- LiveWell on your phone or computer (how to open the site from an icon; the
+  same site, free, nothing from an app store):
+  https://www.livewellbyjamesbell.co/app
 
 ## How to cite
 

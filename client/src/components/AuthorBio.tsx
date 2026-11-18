@@ -15,7 +15,7 @@ interface AuthorBioProps {
 }
 
 const JAMES_BELL_BIO =
-  "James Bell pastors a church in Fenton, Michigan, and writes. He was an atheist before he was a Christian, and he was raised without a father. He and Susanna have five sons. He founded ENDS, which equips pastors in remote regions around the world, and he hosts the Following the Way podcast.";
+  "James Bell pastors a church in Fenton, Michigan, and writes. He was an atheist before he was a Christian, and he was raised without a father. He and Susanna have five sons. He founded ENDS, which equips pastors in remote regions around the world.";
 
 /** The same photograph Home and /about use; one constant, so it moves once. */
 const JAMES_BELL_IMAGE = PORTRAIT_URL;

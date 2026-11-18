@@ -18,7 +18,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { PageHead } from "@/components/editorial/PageHead";
 import Plate from "@/components/art/Plate";
 import PlateFrame from "@/components/art/PlateFrame";
-import { DOORS, HELP_ENTRY, LIBRARY_ENTRY, START_LINK, type CatalogEntry, type Door, type Room } from "@/lib/siteCatalog";
+import { APP_ENTRY, DOORS, HELP_ENTRY, LIBRARY_ENTRY, START_LINK, type CatalogEntry, type Door, type Room } from "@/lib/siteCatalog";
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { FAMILY_GROUP, FAMILY_TOOLS, TOOL_GROUPS } from "@/lib/toolsList";
 import { liveSections, sectionHref } from "@/lib/shelf";
@@ -198,6 +198,7 @@ export default function Everything() {
   const HelpIcon = ICONS[HELP_ENTRY.icon];
   const StartIcon = ICONS[START_LINK.icon];
   const LibraryIcon = ICONS[LIBRARY_ENTRY.icon];
+  const AppIcon = ICONS[APP_ENTRY.icon];
 
   return (
     <Layout>
@@ -258,6 +259,9 @@ export default function Everything() {
             </Link>
             <Link href={LIBRARY_ENTRY.href} className="ex-jump__door">
               <LibraryIcon size={16} strokeWidth={ICON_STROKE} aria-hidden /> {LIBRARY_ENTRY.name}
+            </Link>
+            <Link href={APP_ENTRY.href} className="ex-jump__door">
+              <AppIcon size={16} strokeWidth={ICON_STROKE} aria-hidden /> {APP_ENTRY.name}
             </Link>
           </nav>
         )}

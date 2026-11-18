@@ -63,7 +63,8 @@ export type IconName =
   | "BookmarkCheck"
   | "LayoutGrid"
   | "FileText"
-  | "Globe";
+  | "Globe"
+  | "Smartphone";
 
 export interface CatalogCount {
   n: number;
@@ -295,10 +296,9 @@ export const DOORS: Door[] = [
       },
       { id: "about.speaking", name: "Speaking", line: "Ask James to speak or preach.", href: "/speaking", icon: "Mic" },
       {
-        id: "about.connect", name: "Find James", line: "His Substack, Facebook, podcast and other work, in one place.", href: "/connect", icon: "Signpost",
+        id: "about.connect", name: "Find James", line: "His Substack, Facebook and other work, in one place.", href: "/connect", icon: "Signpost",
         inside: [
-          { id: "about.podcast", name: "Following the Way (podcast)", line: "The podcast, on its own site.", href: "http://followingthewaypodcast.com/", icon: "Mic", external: true },
-          { id: "about.ends", name: "ENDS (training pastors in remote regions)", line: "The ENDS Initiative, on its own site.", href: "https://endsinitiative.org", icon: "Globe", external: true },
+          { id: "about.ends", name: "ENDS (Ends of the Earth Initiative)", line: "James founded it. It trains local shepherds and sends them out.", href: "https://endsinitiative.org", icon: "Globe", external: true },
         ],
       },
       { id: "about.contact", name: "Contact", line: "Write to James.", href: "/contact", icon: "Mail" },
@@ -318,6 +318,9 @@ export const LIBRARY_ENTRY: CatalogEntry = { id: "library", name: "My Library", 
 
 /** The one page of everything. */
 export const EVERYTHING_ENTRY: CatalogEntry = { id: "everything", name: "Everything on LiveWell", line: "Every door, room and tool on one page.", href: "/explore", icon: "LayoutGrid" };
+
+/** LiveWell on a phone or computer, opened from an icon (/app). */
+export const APP_ENTRY: CatalogEntry = { id: "app", name: "LiveWell on your phone", line: "Put LiveWell on your phone or computer, opened from an icon.", href: "/app", icon: "Smartphone" };
 
 /** Shortcuts under the search box, each under its catalogue name. */
 export const SEARCH_SHORTCUT_IDS = ["bible.read", "history", "questions", "family.tonight", "tools", "essays", "everything", "help"] as const;
@@ -339,7 +342,7 @@ export function allEntries(): (CatalogEntry & { door: DoorId | null; room: strin
       for (const i of r.inside ?? []) out.push({ ...i, door: d.id, room: r.id });
     }
   }
-  for (const u of [START_LINK, HELP_ENTRY, LIBRARY_ENTRY, EVERYTHING_ENTRY]) out.push({ ...u, door: null, room: null });
+  for (const u of [START_LINK, HELP_ENTRY, LIBRARY_ENTRY, EVERYTHING_ENTRY, APP_ENTRY]) out.push({ ...u, door: null, room: null });
   return out;
 }
 
