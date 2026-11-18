@@ -209,7 +209,7 @@ export default function Downloads() {
       <InnerHead path="/downloads" title="Downloads" line="Every printable, in one place" plate="jars">
         <p className="pg-head__lede">
           {fileCount > 0
-            ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
+            ? `${EBOOK_COUNT} ebooks and ${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
             : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
         </p>
       </InnerHead>

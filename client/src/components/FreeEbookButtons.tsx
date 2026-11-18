@@ -16,12 +16,12 @@ export function FreeEbookButtons({
   title: string;
   pdf: string;
   epub?: string;
-  /** What it sits on: the page, a charcoal band (dark in both themes), or an --ink band (flips with the theme). */
-  band?: "page" | "charcoal" | "ink";
+  /** What it sits on: the page, or a charcoal band (dark in both themes). */
+  band?: "page" | "charcoal";
   /** "sm" for cards in a list. */
   size?: "md" | "sm";
 }) {
-  const tone = band === "charcoal" ? " btn--on-dark" : band === "ink" ? " btn--inverse" : "";
+  const tone = band === "charcoal" ? " btn--on-dark" : "";
   const sm = size === "sm" ? " btn--sm" : "";
   const main = `btn${tone}${sm}`;
   const quiet = `btn btn--quiet${tone}${sm}`;

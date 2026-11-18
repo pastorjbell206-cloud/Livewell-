@@ -1278,11 +1278,6 @@ h1, h2, h3 { text-wrap: balance; }
 .btn--quiet.btn--on-dark{background:transparent;color:var(--charcoal-fg);border:1px solid color-mix(in srgb,var(--charcoal-fg) 45%,transparent)}
 .btn--quiet.btn--on-dark:hover{background:transparent;border-color:var(--charcoal-fg)}
 .btn--sm{min-height:44px;padding:0 16px;font-size:14px}
-/* On an --ink band (the book pages' hero), which flips with the theme: the ink button turned over. */
-.btn--inverse{background:var(--bone);color:var(--ink);border-color:var(--bone);border-bottom-color:var(--mustard)}
-.btn--inverse:hover{background:color-mix(in srgb,var(--bone) 88%,var(--ink))}
-.btn--quiet.btn--inverse{background:transparent;color:var(--bone);border:1px solid color-mix(in srgb,var(--bone) 45%,transparent)}
-.btn--quiet.btn--inverse:hover{background:transparent;border-color:var(--bone)}
 /* Free ebooks (James, 2026-11-18): the two download buttons, and the cards on /downloads. */
 .ebook-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .ebook-actions .btn{gap:8px}
