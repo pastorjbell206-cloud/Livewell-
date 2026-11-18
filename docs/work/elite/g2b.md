@@ -131,6 +131,20 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - Manhood: biography kept once, in session 5 teaching, in the words the old guide gave it (raised without a father, five sons, the wound stops here); removed from the promo kit, FAQ, primer and facilitator script, and atheism removed entirely. James may want the five sons line in session 2 instead, or nowhere.
 - Mishpat: the old guide was "drawn from James Bell's book Mishpat". That book is not on the shelf, so the guide no longer names it. If James wants the book credited, it returns to the shelf first.
 
+## What I ran, and what passed (seventh run, after new-believer)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words, em-dashes and exclamation points searched literally in both guides: no forbidden words ("blessed" only inside quoted ESV Acts 20:35; the name Richard Foster). No exclamation points: the ESV verses that carry them (Matthew 6:23b, Luke 12:20 "Fool!", Luke 18:13, Mark 9:24) are described, not quoted.
+- Every command in the CI content-gates step (35): passed.
+- pnpm check: passed.
+- pnpm test: 144 files passed, 7 skipped, 0 failed (1,642 tests).
+- Web searches: none. Neither guide quoted a person; dates were corrected from known sources (see the ledger).
+- Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
+- Money: the old guide was "the small-group companion to James Bell's book Where Your Treasure Is". That book is not on the three-book shelf, so the guide no longer names it. The hand-written blurb in client/src/lib/studyguides-index.ts still ends "Companion to the book." and its card title is "Where Your Treasure Is"; I left that file alone (outside a guide rewrite). Biography kept once, in session 1 teaching, in the old guide's sense (five sons, provision shading into accumulation); removed from the primer.
+- Money: added, in plain words, that a leader help someone who needs practical debt or budget help find a trusted person outside the group (primer, FAQ 12). No number or service is named.
+- New believer: atheism kept once, in session 3 teaching on prayer ("I came to faith from atheism, certain there was no one to talk to"), the old guide's own sentence; removed from the summary, primer, facilitator script, two FAQs and all three promo texts.
+- The next guide is parenting-formation (about 27,500 words, the largest in the share). This run stopped at a clean guide boundary rather than start it.
+
 ## What I did not do or verify
 
 - The five guides listed above as not started.
