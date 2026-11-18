@@ -287,3 +287,28 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" on Watson, Keller (two), Comer, Alcorn | Known titles | Notes removed; titles kept, no claims attributed beyond the title |
 | Case studies told as real | No source | Framed as "Suppose" |
 | Help lines | Old guide had none (no 988, no abuse lines) | None added; the "real need" path (benevolence fund, counselor, private contact) kept in the primer, FAQ and script |
+
+## deconstruction
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" lines ("Bell takes the strong form", "Bell grants", "Bell does not stand outside this"); promo "from James Bell" | Rulebook and narrator talk | First person kept for his teaching ("I'm a pastor, and pastors like me did the bundling"); narrator and promo byline cut |
+| Case studies told as real ("A woman ... came to a pastor", "A college student emailed a pastor", "A man had grown up", "Two people came out of the same church split", "a man who had said almost nothing") | No source | All five framed as "Suppose" |
+| Help lines (trauma informed counselor; report abuse by a church leader to the authorities; if a child may be at risk, report it to the police) | Script against the old file | All seven sentences kept word for word, in the same places (session 3 practice and teaching, primer, FAQ, closing script) |
+| 1 Thessalonians 5:21 memory verse "Test everything, and hold fast to what is good" | ESV reads "but test everything; hold fast what is good" | ESV wording |
+| Psalm 34:18 memory verse "The Lord" | ESV "The LORD" | Corrected |
+| Matthew 23:27 "dead men's bones" | ESV "dead people's bones" | Corrected |
+| Mustard seed: "When the disciples asked for more of it ... move mountains"; mustard seed "becomes a tree the birds nest in" | "Increase our faith" is Luke 17:5-6 (mulberry tree); mountains is Matthew 17:20 after the failed exorcism; birds nesting is the parable in Matthew 13:31-32 | The three passages now named separately |
+| Jesus praised John "in the very next breath" | Matthew 11:7, as the messengers left | Kept, phrased as "as John's messengers are leaving" |
+| James 1:6-8 | Context is asking for wisdom in prayer | Response now says so |
+| Hebrews 12:27 | ESV verse contains a dash | Quoted only its last clause |
+| Timeline: Job "circa 600 BC" placed before Isaiah "circa 700 BC" | Job's date unknown | "Date unknown" |
+| Luther "nails his theses" | Nailing is disputed | "Luther's Ninety-five Theses begin the Reformation" |
+| Calvin "circa 1555" visible and true church | Institutes final Latin edition 1559 (Augustine taught the distinction earlier) | Dated 1559; going deeper credits Augustine and the Reformers |
+| Kierkegaard "1849 ... leap of faith" | The phrase isn't his in that form; 1849 is The Sickness unto Death | Restated as his 1854 to 1855 attack on Christendom |
+| C. S. Lewis "1942 ... publishes work" | Mere Christianity is 1952, from 1941 to 1944 radio talks | Dated 1952 |
+| Bibliography "Scott McKnight" | Scot McKnight | Corrected |
+| "Surprised by Doubt ... Joshua McNall and Jack McNall" | Web search: Joshua D. Chatraw and Jack Carson, Brazos 2023 | Corrected in bibliography and further reading |
+| "Leader to confirm" on Keller, Tov, Enns, Lewis, Chatraw and Carson | Known titles; no claims attributed beyond the title | Notes removed; "attributing to Bell" phrasing cut |
+| Glossary "Steelman" | Method talk | Cut |
+| Old quotations of people | None carried beyond Scripture | None added |
