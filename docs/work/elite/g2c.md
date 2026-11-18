@@ -35,3 +35,7 @@ I stopped at a clean guide boundary after two guides because I ran short of work
 - Scripture was quoted from memory of the ESV; there is no ESV in the repository to check against.
 - PDFs were not rebuilt (`pnpm pdfs`); the downloads still carry the old wording.
 - No 1440-wide screenshots.
+
+## Second run (sermon-on-the-mount, singleness, skeptic)
+
+- **sermon-on-the-mount** (done): words 27,195 to 17,906; teaching 6,861 to 4,163. "Bell" 32 to 0; "honest" 44 to 0; "Leader to confirm" 4 to 0; contractions 79 to 548. Quotations kept: Bonhoeffer's "come and die", "only he who believes is obedient...", and two short phrases on cheap grace. Attributions to Bonhoeffer I could not find were removed. Facts corrected: Augustine's commentary (about 394, not 420), Lloyd-Jones (1959 to 1960), Luther (1530 to 1532), a non-existent Carson title replaced, Bonhoeffer hanged for resistance (not "for belonging to Christ"). Session 3 now tells the leader to keep the guide's help information within reach. Biography: none.
