@@ -133,3 +133,14 @@ Stopped at a clean guide boundary after the-church, to leave room for the gates 
 
 - The Creeds: "I came to faith from atheism, so I know how the word creed can sound from outside" is used once, in session 1. Whether he wants to say more is his call.
 - The Image of God: atheism used once, in session 1, beside the reduction. The old summary named his fatherlessness and five sons as credentials; both are gone. "That includes me" in session 5 keeps the old guide's self-implication; nothing else of his was added.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,640 tests).
+
+### Not done or not verified (fifth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-image-of-god, to leave room for the gates and the push. Next in order: **the-lords-prayer**, then the-parables, the-psalms, the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
