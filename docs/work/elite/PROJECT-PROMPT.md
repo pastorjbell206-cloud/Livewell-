@@ -67,3 +67,15 @@ Each wave ends with three things: a link to look at, a half-page of what changed
 3. Which of his two voice descriptions governs: the saved Substack profile or the voice statement kept with the site.
 4. His Facebook and Substack posts, if he wants them shown on the site and not only linked.
 5. A yes or no on each preview.
+
+## James's word on the first preview, 2026-11-18 (this overrides anything above it)
+
+> "I don't like how the homepage is designed. It doesn't look professional. It just looks like a lot of words. There's no icons, no pictures, no imagery. There's no interactive things you can click on to see visuals... the design of this seems very just wordy and text-based. I really want you to make the design elite and world-class. I want you to expand the writings. I want you to expand the tools and make them exhaustive and organized. I want you to have liberty to even create the subheaders. I want you to write the articles and rewrite the articles and make them elite and world-class if they need to, if they don't fit."
+
+What this changes:
+
+- **The site must be visual, not a wall of text.** Every main page leads with something to look at and something to touch: drawn illustrations, icons, diagrams, artwork, and interactive visuals (the church history timeline, the 66 books, a book at a glance, maps). Words come after, and fewer of them. A page that is only headings and paragraphs on a plain background has failed, however good the type.
+- **Imagery is original or public domain.** Illustrations and icons are drawn for the site in one consistent hand. Old artwork, maps and manuscripts may be used only when plainly in the public domain, with the source recorded. No stock photographs, and nothing taken from another site.
+- **Home is rebuilt first,** then the main doors (Study, Church history, Hard questions, Family, Essays, Tools), so the whole site looks like one designed thing.
+- **Tools are to be exhaustive and organized:** every job a studying person, a parent or a new Christian would want, each in its place, none doubled.
+- **Liberty to write.** Subheadings may be written. Articles that do not fit may be rewritten, and new ones written, to the standard of the best essays on the site. The rules that do not bend still hold: nothing invented, his voice, his read of the writing on the preview before it goes public.
