@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import LoadFailed from "@/components/LoadFailed";
 import { RefText } from "@/components/VerseRef";
 import { fetchJson } from "@/lib/fetch-json";
@@ -70,19 +71,9 @@ export default function FamilyReadingPlans() {
         url="https://www.livewellbyjamesbell.co/family/reading-plans"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Reading plans
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Read the Bible together.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
-            A passage a day and a short prompt to talk about it. Walk the life of Jesus, the great Old Testament story, the Psalms, or a starter plan if your family is beginning or beginning again. Start one today and this page will open on today's reading each time you come back.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/family/reading-plans" title="Family reading plans" line="Read the Bible together." plate="sundial">
+        <p className="pg-head__lede">A passage a day and a short prompt to talk about it. Walk the life of Jesus, the great Old Testament story, the Psalms, or a starter plan if your family is beginning or beginning again. Start one today and this page will open on today's reading each time you come back.</p>
+      </InnerHead>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto", display: "flex", flexDirection: "column", gap: "16px" }}>

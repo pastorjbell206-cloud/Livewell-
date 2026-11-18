@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta, getFAQPageSchema } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Prose } from "@/lib/prose";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 import { StatementBand } from "@/components/EditorialBlocks";
@@ -78,20 +79,9 @@ export default function TheologyQuestions() {
         structuredData={faqSchema}
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · More questions, answered short</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            The questions you actually came with.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            Nobody starts by searching for a doctrine. They start with a question that keeps them up at night. Here are the real ones, answered plainly and without flinching, each one opening a door to the fuller study behind it. The plain-language versions live at{" "}
-            <Link href="/answers" style={{ color: "var(--bone)", borderBottom: "1px solid var(--mustard)", textDecoration: "none" }}>questions people ask</Link>.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/theology/questions" title="More questions, answered short" line="The questions you actually came with." plate="lantern">
+        <p className="pg-head__lede">Nobody starts by searching for a doctrine. They start with a question that keeps them up at night. Here are the real ones, answered plainly and without flinching, each one opening a door to the fuller study behind it. The plain-language versions live at <Link href="/answers" >questions people ask</Link>.</p>
+      </InnerHead>
 
       <StatementBand tone="light" eyebrow="Before you begin" width="32ch">
         A question held honestly has never been the enemy of faith.

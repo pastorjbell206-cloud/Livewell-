@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface Term { term: string; pronunciation: string; short: string; definition: string; seeAlso: string[]; doctrine: string; }
@@ -60,17 +61,14 @@ export default function TheologyGlossary() {
         url="https://www.livewellbyjamesbell.co/theology/glossary"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <InnerHead path="/theology/glossary" title="Theology glossary" line="Every word, explained plainly." plate="book">
+        <p className="pg-head__lede">
+          Theology has a vocabulary, and nobody is born knowing it. Here is every term in this section, defined the way a good pastor would explain it across a table. Search for one, or read straight through.
+        </p>
+      </InnerHead>
+
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · Theology glossary</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Every word, explained plainly.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch", marginBottom: "22px" }}>
-            Theology has a vocabulary, and nobody is born knowing it. Here is every term in this section, defined the way a good pastor would explain it across a table. Search for one, or read straight through.
-          </p>
           <div style={{ position: "relative", maxWidth: "440px" }}>
             <Search size={18} aria-hidden style={{ position: "absolute", left: "14px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} />
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search terms…" aria-label="Search glossary"
