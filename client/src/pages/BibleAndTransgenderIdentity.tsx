@@ -93,7 +93,6 @@ export default function BibleAndTransgenderIdentity() {
         related={[
           { href: "/books/bible-and-homosexuality", title: "What Does the Bible Really Say About Homosexuality?" },
           { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
-          { href: "/books/raising-believers", title: "Raising Believers" },
         ]}
       />
     </Layout>

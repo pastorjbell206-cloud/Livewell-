@@ -158,7 +158,6 @@ const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
 const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
-const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Speaking = lazy(() => import("./pages/Speaking"));
 const Contact = lazy(() => import("./pages/Contact"));
 const StudyBible = lazy(() => import("./pages/StudyBible"));
@@ -188,9 +187,6 @@ const OrthodoxVsCatholic = lazy(() => import("./pages/comparisons/OrthodoxVsCath
 const LiturgicalVsContemporary = lazy(() => import("./pages/comparisons/LiturgicalVsContemporary"));
 const ReadingPathDetail = lazy(() =>
   import("./pages/ReadingPathDetail").then((m) => ({ default: m.ReadingPathDetail }))
-);
-const AuthorProfile = lazy(() =>
-  import("./pages/AuthorProfile").then((m) => ({ default: m.AuthorProfile }))
 );
 
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
@@ -306,6 +302,9 @@ const ToHelpDoubtRedirect = redirectTo("/help/doubt");
 const ToHelpParentingRedirect = redirectTo("/help/parenting");
 const ToHelpDeconstructingRedirect = redirectTo("/help/deconstructing");
 const ToHelpChurchHurtRedirect = redirectTo("/help/church-hurt");
+// The unlinked streak page folds into My Library, which shows the same
+// progress; the leftover author page folds into About (2026-11-17).
+const ToMyLibraryRedirect = redirectTo("/my-library");
 
 function PageFallback() {
   return (
@@ -509,7 +508,7 @@ function Router() {
         <Route path="/pathways" component={ToWritingRedirect} />
         <Route path="/pathways/:slug" component={TopicPathway} />
         <Route path="/subscribe" component={EmailSignup} />
-        <Route path="/authors/:slug" component={AuthorProfile} />
+        <Route path="/authors/:slug" component={ToAboutRedirect} />
         <Route path="/article-collections" component={ToWritingRedirect} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
@@ -653,7 +652,7 @@ function Router() {
         <Route path="/faq/what-is-religious-trauma" component={FAQWhatIsReligiousTrauma} />
         <Route path="/faq/why-do-young-people-leave-church" component={FAQWhyDoYoungPeopleLeaveChurch} />
         <Route path="/faq/can-science-and-faith-coexist" component={FAQCanScienceAndFaithCoexist} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/dashboard" component={ToMyLibraryRedirect} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
         <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>

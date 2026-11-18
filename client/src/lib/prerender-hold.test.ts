@@ -66,7 +66,7 @@ describe("holdPrerenderedPage", () => {
   it("lets go after the longest wait when the page never gets its content", () => {
     vi.useFakeTimers();
     const root = setPage(true);
-    holdPrerenderedPage({ path: "/writing/an-essay", maxWaitMs: 6000 });
+    holdPrerenderedPage({ path: "/studyguides/lament", maxWaitMs: 6000 });
     mount(root, "<main><p>This essay did not load.</p></main>");
     vi.advanceTimersByTime(5999);
     expect(document.getElementById(HELD_ID)).not.toBeNull();

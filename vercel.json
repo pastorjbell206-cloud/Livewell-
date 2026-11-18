@@ -1248,6 +1248,16 @@
       "source": "/church-hurt",
       "destination": "/help/church-hurt",
       "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/my-library",
+      "permanent": true
+    },
+    {
+      "source": "/authors/:slug",
+      "destination": "/about",
+      "permanent": true
     }
   ],
   "rewrites": [

@@ -132,7 +132,6 @@ export default function DeconstructionOfFaith() {
         related={[
           { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
           { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
-          { href: "/books/raising-believers", title: "Raising Believers" },
         ]}
       />
     </Layout>
