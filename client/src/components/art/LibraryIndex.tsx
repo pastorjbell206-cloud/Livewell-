@@ -149,7 +149,8 @@ export default function LibraryIndex({
                   <button key={g.id} type="button" className="lw-chip" aria-pressed={g.id === active} onClick={() => choose(g.id)}>
                     {Icon && <Icon size={18} strokeWidth={1.75} aria-hidden="true" />}
                     {g.name}
-                    {items && <span className="lw-chip__n">{count}</span>}
+                    {/* The count is spoken, not shown: a number arriving with the list would widen the chip and move the page. */}
+                    {items && <span className="sr-only">, {count}</span>}
                   </button>
                 );
               })}
