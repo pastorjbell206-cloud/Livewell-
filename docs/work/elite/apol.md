@@ -171,3 +171,64 @@ For each: keep the slug, the question and its links; write a one-paragraph short
 3. The age of the universe and evolution: the God answer assumes nothing either way (it uses fine-tuning and contingency, which hold on any view). The suffering answer mentions millions of years only through Rowe's and Darwin's examples and does not take a side. Should either state your own position, or keep leaving it open as "How should a Christian read Genesis 1?" does?
 4. The biography line "I say it as a man who spent years sure no one was there", and "For years I said I followed the evidence. What I actually did was refuse the first premise of every argument before I heard the rest." The second describes how your atheism worked from the inside. It is drawn from the old answer's own words ("I had grown practiced at not seeing what I didn't want to owe") but is new phrasing; keep it only if it is true of you.
 5. COMMON.md says no Honest Answer's wording changes; this brief asked for three to be rewritten. Nothing else was changed. If you want the old three paragraphs back for any of them, they are in git at a1f568ef.
+
+## 8. Second run (2026-11-18): faith and science, the resurrection, hell
+
+James read the pilot and said "publish it all". This run rebuilt the next three answers in the audit's order (4, 5 and 6 of the ten), by exactly the pilot's pattern: a one-paragraph short answer, the objection at full strength, what kind of case it is, the argument set out in numbered steps with the step that carries the weight named, the evidence, the strongest reply, what it does not prove, and a sources list with the best book against. Same slugs, questions, addresses, essay links and book links. Every claim is in `apol-ledger.md` under "Second run". No position is taken on the age of the earth or evolution. No new sentence about James's life: the only biographical line in the three is one the old resurrection answer already carried, kept in its own words.
+
+### Do I have to choose between faith and science?
+
+The argument in three sentences. The "war" between science and faith is a nineteenth-century story (Draper 1874, White 1896) that historians, unbelievers among them, have taken apart; the record runs from Augustine's warning against Christians talking nonsense about nature to Maxwell's Psalm on the Cavendish doors and Lemaître's expanding universe. The strong objection, that science keeps shrinking God by explaining what he was used for (Coyne's case), rests on the premise that God is one cause inside nature, which Christians from Aquinas to Bonhoeffer deny, and the same denial forbids Christians to argue from gaps. The success of science (Einstein's "comprehensibility", Wigner's "unreasonable effectiveness") fits belief in a rational Creator at least as well as unbelief, while the age of the earth and evolution are left open among the three views Christians hold.
+
+Before: "No. The war between faith and science is not a finding of science. It is a story with a traceable birth date..." After (the skeptic's argument, set out): "1. If God exists, he is one of the causes inside nature, the kind of cause science looks for, needed wherever natural causes run out. 2. Science keeps finding natural causes where people once saw God... So: The room for God keeps shrinking." Then: "The second premise is true, and Christians should say so gladly. The weight sits on the first, and I think it's false."
+
+Words: 223 before; 2,241 after (2,427 with headings and sources). The old answer's closing sentence about the house and whether anyone lives there is kept. Two old claims were dropped because they could not be confirmed: Polkinghorne "helped establish the existence of quarks" and Kepler's "thinking God's thoughts after him". The Laplace anecdote was searched and left out (no primary source).
+
+Sources: Coyne, *Faith versus Fact* (2015, the best book against); Numbers, ed., *Galileo Goes to Jail* (2009); Plantinga, *Where the Conflict Really Lies* (2011); Collins, *The Language of God* (2006); Wigner (1960); Einstein, "Physics and Reality" (1936); Augustine, *The Literal Meaning of Genesis* (trans. Taylor, 1982); Bonhoeffer, *Letters and Papers from Prison*.
+
+### Did the resurrection actually happen?
+
+The argument in three sentences. Four facts are granted by nearly every historian of the period, skeptics included: the crucifixion under Pilate (Tacitus), the early conviction of many that they had seen Jesus alive (the creed of 1 Corinthians 15:3-7, dated by most scholars, Lüdemann among them, to within a few years), the conversions of the persecutor Paul and the skeptic James, and the preaching in Jerusalem within weeks. Fraud, survival and the wrong tomb fail, and the serious rival, bereavement visions, strains at Paul, at James and at the word the witnesses chose, since "resurrection" meant the raising of all God's people at the end, not a vision of the dead. Hume's objection is a judgment made before the evidence about whether God can act, which history cannot settle, so the argument moves a person from dismissing to weighing and claims no more.
+
+Before: "The rivals are not stupid. Hallucinations are private events. They do not happen to five hundred at once..." (an overclaim the essay's ledger had already dropped). After: "The vision theory is the serious rival, and it deserves its due. Dale Allison, a New Testament scholar who is himself a Christian, has collected reports of the dead appearing to the living, some of them to more than one person at once... But the theory strains at three points."
+
+Words: 222 before; 2,233 after (2,391 with headings and sources). Almost every fact is from the public essay and its three-pass ledger.
+
+Sources: Wright, *The Resurrection of the Son of God* (2003); Licona (2010); Allison, *The Resurrection of Jesus* (2021); Sanders, *The Historical Figure of Jesus* (1993); Bird, Evans and others, *How God Became Jesus* (2014); Hume, "Of Miracles" (1748); Lüdemann, *The Resurrection of Jesus* (1994); Ehrman, *How Jesus Became God* (2014, the best popular case against).
+
+### Is hell forever, or does it end?
+
+The argument in three sentences. The skeptic's real question is not how long but how a good God could do this at all (Russell 1927, Mill 1865), and it can be set out as an argument from proportion: just punishment fits the wrong, human wrongs are finite, endless torment is infinite. Final judgment itself follows from God's goodness, because a God indifferent to the murder of the innocent would be indifferent to the innocent (Volf, writing out of the Balkan wars; Abraham's "Shall not the Judge of all the earth do what is just?"). The three views Christians hold each answer the proportion argument by denying a different step (Aquinas and Lewis the second, Fudge and Stott the third, the hope of restoration its finality), each has texts it struggles with, and the page leaves the choice among them open, as the old answer did.
+
+Before: the old answer described three views and never met the moral objection. After: "Here is the moral objection laid out, so we can see where each Christian view parts company with it. 1. A just punishment is proportioned to the wrong done. 2. Every human wrong is finite. 3. Hell, as eternal conscious punishment, is infinite punishment. So: Eternal conscious punishment would be unjust..."
+
+Words: 274 before; 1,733 after (1,853 with headings and sources). The old answer's first three sentences, its account of the three views and its whole closing paragraph are kept in its own words.
+
+Sources: Russell, *Why I Am Not a Christian* (1927, the classic short case against); Kvanvig, *The Problem of Hell* (1993); Lewis, *The Problem of Pain* (1940) and *The Great Divorce* (1945); Fudge, *The Fire That Consumes* (1982); Edwards and Stott, *Essentials* (1988); Talbott, *The Inescapable Love of God* (1999); Volf, *Exclusion and Embrace* (1996).
+
+### What I ran, and what passed
+
+- Search index and passage index rebuilt (20 chapter files changed).
+- `pnpm check`: pass. All 35 content-gate commands in `ci.yml`: pass. `pnpm test`: 144 files passed, 7 skipped; 1,642 tests passed, 73 skipped. ESLint on the changed files: clean. `hq.test.tsx` now names the seven argued answers.
+- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender`, `pnpm run audit:canonicals`: pass.
+- Screenshots at 390 x 844 and 1440 x 900, day and night, each page's first screen, first argument box and sources, in `/home/user/elite-shots/apol/` (`do-i-have-to-choose-between-faith-and-science-*`, `did-the-resurrection-actually-happen-*`, `is-hell-forever-or-does-it-end-*`). No horizontal overflow.
+- Lighthouse (three runs, median, `serve-like-vercel.mjs`): all three pages accessibility 100, CLS 0.000, best practices 96, SEO 100, performance 85. An unchanged short answer in the same session: 90. The pilot measured 83 to 84 against 87, so the gap is no worse. LCP 4.4 s against 3.7 s; TTI 4.4 s against 3.8 s.
+
+Performance note for the lead (not built): the gap is all in time to interactive and LCP on the longer page, not in first paint (FCP 0.9 s on both). A cheap thing to try is `content-visibility: auto` with a `contain-intrinsic-size` on the answer's later parts (every `.qa` section after the first), so the browser skips laying out text below the fold until it is scrolled to; or prerender only the short answer and the contents list inside the hold and let the parts mount after.
+
+### Not verified
+
+- A real phone, Safari, or a screen reader.
+- Volf's sentence: two sources give it in the form quoted, others vary; recheck against the book. Mill's full sentence was not found; only "to hell I will go" is quoted. Bonhoeffer's letter is dated by sources to 25 or 29 May 1944; the answer says May 1944.
+- Collins and Bonhoeffer entries rest on standard bibliography, not a search in this run.
+- The three have not been read by James.
+
+### Waits for James
+
+1. Hell: the page leaves the three views open, as the old answer did. If you hold one of them and want the page to say so (the Scholarship Standard asks the author to name where he lands on a second-order question), tell us which.
+2. Science: no position on the age of the earth or evolution, by your rule. The page points to "How should a Christian read Genesis 1?".
+3. The resurrection keeps the old line "that's where I lived for years". It is your old sentence; nothing new was added about your life.
+
+### Next in the ranking
+
+Item 7 is the `/faq/does-god-exist` page (rewrite to match the argued God answer, or fold it into links to it). The next Honest Answer is item 8, "Why does God allow earthquakes, cancer, and animal suffering?", then item 9, "What if Christianity is wrong?".
