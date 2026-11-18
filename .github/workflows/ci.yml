@@ -90,7 +90,8 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # Node 22 so npx can run the pinned Lighthouse 13 (it needs Node 22.19 or later). On Node 20 npx fell back to Lighthouse 12, whose simulation scores the same page differently from the version used on a developer machine.
+          node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # Prerender too, so Lighthouse measures the HTML Vercel actually ships
