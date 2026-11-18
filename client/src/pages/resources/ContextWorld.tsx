@@ -143,7 +143,7 @@ export default function ContextWorld() {
               <SectionHead icon={ListOrdered} label="Contents" title="Read it in order, or jump to a part." id="wd-contents-title" />
               <div className="wd-start">
                 <div className="wd-intro">
-                  <h3 className="wd-intro__h">Before you start</h3>
+                  <p className="wd-intro__h">Before you start</p>
                   {data.intro.map((p, i) => <p key={i}>{p}</p>)}
                 </div>
                 <ol className="wd-toc">
