@@ -11,6 +11,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { BOOK_SHELF } from "@/lib/bookShelf";
 
@@ -26,41 +27,13 @@ export default function Books() {
         url={`${SITE_URL}/books`}
       />
 
-      {/* HERO — dark room */}
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(var(--s-5), 8vw, var(--s-7)) var(--gutter) clamp(var(--s-4), 6vw, var(--s-6))" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-            The Books
-          </div>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(34px, 5.4vw, 60px)",
-              fontWeight: 400,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-              maxWidth: "20ch",
-              marginBottom: "18px",
-            }}
-          >
-            Books by James Bell
-          </h1>
-          <p className="page-standfirst">I wrote all three of these myself.</p>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "17px",
-              lineHeight: 1.7,
-              color: "rgba(245,240,230,0.78)",
-              maxWidth: "62ch",
-            }}
-          >
-            I write about the church and the country, about reading the Bible without
-            flattering ourselves, and about whether any of this holds up under honest
-            questions. Each one is an ebook for $8.99.
-          </p>
-        </div>
-      </section>
+      <PageHead door="About" doorHref="/about" title="Books by James Bell" line="I wrote all three of these myself." plate="books">
+        <p className="pg-head__lede">
+          I write about the church and the country, about reading the Bible without
+          flattering ourselves, and about whether any of this holds up under honest
+          questions. Each one is an ebook for $8.99.
+        </p>
+      </PageHead>
 
       {/* THE THREE — one full-width row each, alternating cream */}
       {BOOKS.map((b, i) => (

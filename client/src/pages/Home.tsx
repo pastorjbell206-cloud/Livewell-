@@ -1,13 +1,14 @@
 /**
  * Home: the front door, drawn as a gallery.
  *
- * The first screen is Plate I (the road), James's headline, and Find (one
- * field: a passage or a question), with tonight's family devotion under it.
- * On a phone the plate runs edge to edge above the headline. Then the ten
- * doors as picture cards, and the things a visitor can touch: the 66 books on
- * one shelf, a hard question asked straight, tonight at the table, and two
- * thousand years of church history on one line. Then the latest writing and
- * the books, and the ways to find James, with Find Help beside them. No
+ * The first screen is Plate I (the road), James's headline, the one sentence
+ * that says what the site is for, and Find (one field: a passage or a
+ * question), with tonight's family devotion under it. On a phone the plate
+ * runs edge to edge above the headline. Then the ten doors as picture
+ * cards, and the things a visitor can touch: the 66 books on one shelf, a
+ * hard question asked straight, tonight at the table, and two thousand
+ * years of church history on one line. Then the latest writing and the
+ * books, and the ways to find James, with Find Help beside them. No
  * photograph of James here (his standing note); /about has it.
  *
  * Everything in the first screen is committed data (positioning.ts, the
@@ -34,7 +35,7 @@ import Plate, { type PlateName } from "@/components/art/Plate";
 import DoorCard from "@/components/art/DoorCard";
 import { useNear } from "@/components/art/useNear";
 import { BOOK_SHELF } from "@/lib/bookShelf";
-import { HOME_HEADLINE, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
+import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
 import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import HomeFind from "./home/HomeFind";
 import HomeLatest from "./home/HomeLatest";
@@ -182,6 +183,8 @@ export default function Home() {
               <Link href={HOME_LINKED_HREF}>{HOME_LINKED_WORD}</Link>
               {headAfter}
             </h1>
+            {/* What the site is for, in James's own sentence (the end of HOME_WHY). */}
+            <p className="home-hero__line">{HOME_LINE}</p>
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />

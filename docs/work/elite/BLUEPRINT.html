@@ -1,0 +1,313 @@
+<title>LiveWell Blueprint</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: a printed report in LiveWell's own room. One reading column, a quiet contents rail on wide screens, mustard only as punctuation. */
+:root{
+  --bg:#F5F0E6; --bg2:#EDE8DC; --card:#FFFFFF; --ink:#14110C; --muted:#5A5448;
+  --rule:#D9D1BF; --accent:#D4A017; --accent-ink:#7A5A06; --track:#E2DACA;
+  --display:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"JetBrains Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1A1A1A; --bg2:#222120; --card:#262523; --ink:#F5F0E6; --muted:#B5AD9C;
+  --rule:#3A3733; --accent:#D4A017; --accent-ink:#E2B93F; --track:#34312D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A1A1A; --bg2:#222120; --card:#262523; --ink:#F5F0E6; --muted:#B5AD9C;
+  --rule:#3A3733; --accent:#D4A017; --accent-ink:#E2B93F; --track:#34312D; color-scheme:dark}
+
+body{background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--body);-webkit-text-size-adjust:100%}
+.wrap{max-width:1180px;margin:0 auto;padding-block:48px 96px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code{font:400 .86em var(--mono);background:var(--bg2);padding:.1em .35em;overflow-wrap:anywhere}
+strong{font-weight:600}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4.4vw,2.7rem);line-height:1.1;letter-spacing:-.01em;margin-bottom:20px}
+h3{font-size:1.5rem;font-weight:500;line-height:1.2;margin:36px 0 10px}
+h2 .n{font:500 .75rem/1 var(--body);letter-spacing:.18em;color:var(--accent-ink);display:block;margin-bottom:12px}
+h2 .n::before{content:"Part "}
+p,ul,ol{margin:0 0 16px}
+main p,main li,.intro p,.verdict-t p{max-width:68ch}
+ul,ol{padding-left:1.3em}
+li{margin-bottom:6px}
+.eyebrow{font:500 .75rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:20px}
+
+.top{border-bottom:1px solid var(--rule);padding-bottom:32px;margin-bottom:40px}
+.verdict{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:40px;margin:36px 0 28px;align-items:start}
+.score{display:grid;grid-template-columns:auto 1fr;column-gap:14px;row-gap:6px;align-items:baseline;border-top:2px solid var(--accent);padding-top:14px}
+.score .big{font:400 4.4rem/0.9 var(--display);font-variant-numeric:lining-nums}
+.score .big.g{color:var(--accent-ink)}
+.score .of{font-size:.84rem;line-height:1.35;color:var(--muted)}
+.verdict-t p{font-size:1.06rem}
+.intro{color:var(--muted)}
+
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+main{min-width:0}
+section{padding-bottom:48px;margin-bottom:48px;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
+.toc summary{font:500 .75rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);cursor:pointer;padding:10px 0}
+.toc ol{list-style:none;padding:0;margin:8px 0 0}
+.toc li{margin:0}
+.toc a{display:flex;gap:10px;padding:7px 0;text-decoration:none;font-size:.9rem;line-height:1.35;border-top:1px solid var(--rule)}
+.toc a:hover{color:var(--accent-ink)}
+.toc .n{color:var(--muted);font-variant-numeric:tabular-nums;min-width:1.4em}
+@media (min-width:1000px){
+  .cols{grid-template-columns:230px minmax(0,1fr);gap:56px}
+  .toc{position:sticky;top:calc(16px + env(safe-area-inset-top,0px));align-self:start;max-height:calc(100vh - 32px);overflow:auto}
+  .toc summary{pointer-events:none;list-style:none}
+  .toc summary::-webkit-details-marker{display:none}
+}
+@media (max-width:700px){.verdict{grid-template-columns:minmax(0,1fr);gap:24px}}
+
+/* tables */
+.tw{overflow-x:auto;margin:0 0 20px;border:1px solid var(--rule);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;line-height:1.5}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--rule);min-width:9em}
+th{font:500 .72rem/1.3 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg2)}
+tr:last-child td{border-bottom:0}
+
+/* folds */
+.fold{border-top:1px solid var(--rule)}
+.fold:last-of-type{border-bottom:1px solid var(--rule)}
+.fold>summary{cursor:pointer;padding:14px 0;font:500 1.3rem/1.25 var(--display)}
+.fold.small>summary{font:500 .92rem/1.3 var(--body)}
+.fold-b{padding:4px 0 16px}
+.fold-b h3{font-size:1.2rem}
+
+/* scorecard */
+.legend{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:.84rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i,.sc-bar i{display:block;height:12px;background:var(--track)}
+.legend i{width:22px}
+.legend i.on,.sc-bar i.on{background:var(--ink)}
+.legend i.gain,.sc-bar i.gain{background:var(--accent)}
+.sc{list-style:none;padding:0;margin:0 0 8px}
+.sc-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(120px,240px) 108px;column-gap:20px;row-gap:4px;align-items:center;
+  padding:16px 0;border-top:1px solid var(--rule);margin:0}
+.sc-name{font:500 1.25rem/1.2 var(--display);min-width:0}
+.sc-bar{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+.sc-num{font-variant-numeric:tabular-nums;font-size:.95rem;white-space:nowrap;text-align:right}
+.sc-num b{font-weight:600}
+.sc-num b.g{color:var(--accent-ink)}
+.sc-num .arrow{color:var(--muted);font-size:.78rem;margin:0 6px}
+.sc-num .arrow.same{margin-right:0}
+.sc-why{grid-column:1/-1;margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
+@media (max-width:640px){
+  .sc-row{grid-template-columns:minmax(0,1fr) auto}
+  .sc-name{grid-column:1/-1}
+}
+.end{color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+:root{--on-accent:#14110C}
+.legend i.k{width:22px;height:12px;background:var(--track)}
+.legend i.k.done{background:var(--ink)}
+.legend i.k.now{background:var(--accent)}
+blockquote.say{font:400 clamp(1.4rem,3.4vw,1.9rem)/1.3 var(--display);border-left:2px solid var(--accent);padding-left:18px;margin:16px 0 22px;max-width:30em;text-wrap:balance}
+.doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:8px 0 24px;padding:0;list-style:none}
+.door{background:var(--card);border:1px solid var(--rule);padding:18px 18px 12px;margin:0;min-width:0}
+.door h3{margin:0 0 4px;font-size:1.5rem}
+.door .what{color:var(--muted);font-size:.9rem;line-height:1.45;margin:0 0 10px}
+.door ol{margin:0;padding-left:1.25em;font-size:.92rem;line-height:1.5}
+.door li{margin-bottom:4px;max-width:none}
+.pill{display:inline-block;font:500 .68rem/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border:1px solid var(--rule);color:var(--muted);vertical-align:middle;margin-left:6px;white-space:nowrap}
+.pill.now{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.roads{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px 16px;padding:0;list-style:none;margin:12px 0 20px}
+.road{border-top:2px solid var(--accent);padding:12px 0 0;margin:0;min-width:0;max-width:none}
+.road b{display:block;font:500 1.25rem/1.2 var(--display);margin-bottom:6px}
+.road span{color:var(--muted);font-size:.92rem;line-height:1.5;display:block}
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;padding:0;list-style:none;margin:12px 0 20px}
+.hub li{border:1px solid var(--rule);padding:12px 14px;margin:0;background:var(--card);min-width:0;max-width:none}
+.hub li.home{background:var(--ink);border-color:var(--ink);grid-column:1/-1}
+.hub b{display:block;font:500 1.2rem/1.2 var(--display);margin-bottom:2px}
+.hub span{font-size:.88rem;line-height:1.45;color:var(--muted);display:block}
+.hub li.home b,.hub li.home span{color:var(--bg)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:8px 0 20px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:4px 12px;padding:14px 0;border-top:1px solid var(--rule);margin:0;max-width:none}
+.steps li::before{content:counter(s);font:400 1.7rem/1 var(--display);color:var(--accent-ink)}
+.steps li>div{max-width:66ch}
+</style>
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">For James Bell · 18 November 2026</p>
+  <h1>Everything I would do</h1>
+  <div class="intro" style="margin-top:28px">
+    <p>You asked for the whole plan: how to make LiveWell easy to find your way around, easy to study with, easy to disciple with, designed like the home page you just approved, and the one home for everything you do. This is it, in the order I would build it. Two pieces are being built as you read this.</p>
+    <p class="legend"><span><i class="k done"></i> Done and on the preview</span><span><i class="k now"></i> Being built now</span><span><i class="k"></i> Next</span></p>
+  </div>
+</header>
+<div class="cols">
+<nav class="toc" aria-label="Contents"><details id="tocd" open><summary>Contents</summary><ol>
+  <li><a href="#p1"><span class="n">1</span>What LiveWell is for</a></li>
+  <li><a href="#p2"><span class="n">2</span>The map: seven doors</a></li>
+  <li><a href="#p3"><span class="n">3</span>Start where you are</a></li>
+  <li><a href="#p4"><span class="n">4</span>What each door becomes</a></li>
+  <li><a href="#p5"><span class="n">5</span>Easier to disciple someone</a></li>
+  <li><a href="#p6"><span class="n">6</span>One home for all you do</a></li>
+  <li><a href="#p7"><span class="n">7</span>The writing</a></li>
+  <li><a href="#p8"><span class="n">8</span>The order of work</a></li>
+  <li><a href="#p9"><span class="n">9</span>What I need from you</a></li>
+</ol></details></nav>
+<main>
+
+<section id="p1"><h2><span class="n">1</span>What LiveWell is for</h2>
+  <p>You said you want the site to be known for one thing: how to study and understand the Bible. So the site says that, in one sentence, on the first screen:</p>
+  <blockquote class="say">A free place to study the Bible, understand its world and the church's story, and work through hard questions.</blockquote>
+  <p>That sentence is going under your headline on the home page now. Change the words and I will change the page.</p>
+  <p>It is built for five people. Most of them are in their twenties to forties, and most will arrive on a phone.</p>
+  <ul>
+    <li><strong>The skeptic</strong>, who has one hard question and expects to be handled.</li>
+    <li><strong>The new believer</strong>, who does not know where to start.</li>
+    <li><strong>The person who has taken their faith apart</strong>, and is not sure what is left.</li>
+    <li><strong>The believer who wants depth</strong>, and is tired of thin answers.</li>
+    <li><strong>The parent at the table</strong>, with ten minutes and tired children.</li>
+  </ul>
+  <p>Every page is judged by whether those five get what they came for without being told how the site works.</p>
+</section>
+
+<section id="p2"><h2><span class="n">2</span>The map: seven doors</h2>
+  <p>You said things get buried under long menus, and that it is hard to know what is on the site. You were right. The Study menu had nine links. Topics and About each ran to eleven, counting the footer. Tools sat fifth in the Topics list. The stock-take counted forty-five live pages with no link to them at all.</p>
+  <p>The new map has seven doors, named in single plain words. A stranger who only reads the top of the page already knows what the site holds. <span class="pill now">Being built now</span></p>
+  <ul class="doors">
+    <li class="door"><h3>Bible</h3><p class="what">Read it, search it, learn to study it.</p><ol><li>Read the Study Bible: all 66 books, notes on all 1,189 chapters</li><li>Search the Bible for a word</li><li>How to study the Bible</li><li>The Bible's story</li><li>Bible background: 41 guides to its world</li><li>Reading plans</li></ol></li>
+    <li class="door"><h3>History</h3><p class="what">The church's story, from the apostles to today.</p><ol><li>The course: 14 lessons in order</li><li>The timeline</li><li>People</li><li>Creeds and confessions</li><li>Christian traditions</li></ol></li>
+    <li class="door"><h3>Questions</h3><p class="what">Hard questions, answered straight.</p><ol><li>Hard questions, by topic</li><li>Honest Answers</li><li>For skeptics</li><li>What Christians believe: 62 studies</li><li>Where Christians differ: 31 debates, side by side</li><li>Everyday life</li></ol></li>
+    <li class="door"><h3>Family</h3><p class="what">The table, tonight.</p><ol><li>Tonight's devotion</li><li>All devotions: a year of them</li><li>The catechism: 76 questions</li><li>Reading plans</li></ol></li>
+    <li class="door"><h3>Tools</h3><p class="what">Everything you can use, each listed once.</p><ol><li>Study</li><li>Pray and practise</li><li>Check yourself</li><li>Plans for a hard season: 29</li><li>For groups and churches: 68 study guides</li><li>Downloads</li></ol></li>
+    <li class="door"><h3>Essays</h3><p class="what">Your writing, on one shelf.</p><ol><li>The shelf, by section</li></ol></li>
+    <li class="door"><h3>About</h3><p class="what">You, and every way to reach you.</p><ol><li>About James</li><li>Books</li><li>Speaking</li><li>Find James</li><li>Contact</li><li>Subscribe</li></ol></li>
+  </ul>
+  <p>Beside the doors on every page: <strong>Find Help</strong>, <strong>Search</strong> and <strong>Subscribe</strong>.</p>
+  <h3>Four rules that keep it tidy</h3>
+  <ul>
+    <li><strong>Six or fewer.</strong> No menu ever lists more than six things. Everything else is one tap inside the room that holds it.</li>
+    <li><strong>One name.</strong> A tool or page is called the same thing in the menu, on its own page, in search and in My Library. Today one tool goes by three names.</li>
+    <li><strong>Tools have their own door</strong>, and are grouped by the job a person would name.</li>
+    <li><strong>One page shows everything.</strong> "Everything on LiveWell" lays out the whole site as pictures and tiles, with a box to narrow it as you type. It is one tap from every page. <span class="pill now">Being built now</span></li>
+  </ul>
+  <p>Old addresses keep working. Nothing is deleted.</p>
+</section>
+
+<section id="p3"><h2><span class="n">3</span>Start where you are</h2>
+  <p>The five people in Part 1 should not have to work out which door is theirs. Under the search box on the home page, five short choices. Each opens a short road made of pages the site already has, and remembers which step you are on.</p>
+  <ul class="roads">
+    <li class="road"><b>I'm skeptical</b><span>Test the case for the resurrection one step at a time. Then the Honest Answers. You can leave unconvinced at any point.</span></li>
+    <li class="road"><b>I'm new to this</b><span>Read one Gospel. Learn to pray. Find a church. Eight weeks, one step at a time.</span></li>
+    <li class="road"><b>I've stepped back from faith</b><span>What to tear down and what to keep. What the church got wrong. The questions nobody would answer.</span></li>
+    <li class="road"><b>I want to go deeper</b><span>Learn to study a chapter yourself. Then the church's story, and what Christians believe and why.</span></li>
+    <li class="road"><b>I'm leading a family</b><span>Tonight's devotion in three taps. Then the catechism, a question a week.</span></li>
+  </ul>
+</section>
+
+<section id="p4"><h2><span class="n">4</span>What each door becomes</h2>
+  <p>Every door gets the look of the new home page: a drawn plate at the top, picture cards, few words, and something to touch. One hand draws everything, so the site looks like one made thing.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Page</th><th>What you see</th><th>What you can touch</th><th>Where it stands</th></tr></thead>
+    <tbody>
+    <tr><td><strong>Home</strong></td><td>The road plate, your headline, the purpose sentence, ten picture doors.</td><td>The shelf of 66 books, the question box, tonight at the table, the church history strip.</td><td>Done. The purpose sentence is being added now.</td></tr>
+    <tr><td><strong>Bible</strong></td><td>The shelf by section. Each book with a drawing of where it sits, how long it is, and its outline.</td><td>Tap a verse and the library opens: notes, the Greek or Hebrew word, cross-references you read in place, and what else the site has on that verse. Highlights and notes kept on your own phone.</td><td>The door's page is being built now. The rest is next.</td></tr>
+    <tr><td><strong>A Bible chapter</strong></td><td>Two views: <em>Read</em>, with nothing in the way, and <em>Study</em>, with the notes beside the text.</td><td>"Study this chapter": seven short steps that teach the method on the chapter in front of you. Read it. What do you notice? Who wrote it and why? The key words. Where else Scripture says this. The hard question. What it asks of you.</td><td>Next. This is the piece that makes the site known for how to study the Bible.</td></tr>
+    <tr><td><strong>History</strong></td><td>Twenty centuries on one line, drawn to scale.</td><td>Move along the line with a thumb: who was alive, what was decided, the source in the writer's own words, the lesson to read.</td><td>Next. A first strip is on the home page now.</td></tr>
+    <tr><td><strong>Questions</strong></td><td>Questions as picture cards, grouped by what people ask.</td><td>One box: type a hard question, get one best answer. Then argue it, see where Christians differ, or read the passage. Each answer gets a page of its own, where today all of them sit on one page of eleven thousand words.</td><td>Next.</td></tr>
+    <tr><td><strong>Family</strong></td><td>Tonight's devotion as a picture card. The week at a glance.</td><td>A devotion chosen for the night you are having. The catechism said aloud, question and answer.</td><td>Next.</td></tr>
+    <tr><td><strong>Tools</strong></td><td>Icon tiles in groups. Each tile says the job in one sentence, how long it takes, and what it keeps.</td><td>A box to find a tool by what you want to do.</td><td>Next. The tools page has 36 tiles today. About two dozen are left once the doubles fold together.</td></tr>
+    <tr><td><strong>Essays</strong></td><td>A shelf with a drawn mark for each section, dates, and one essay to start with.</td><td>An essay page with two controls at the top. Twelve surround an essay today.</td><td>Next.</td></tr>
+    <tr><td><strong>Every other page</strong></td><td>One shared page top: which door you are in, a plain title, one line, a small drawing.</td><td></td><td>Being built now on eight pages.</td></tr>
+    </tbody>
+  </table></div>
+  <p>A tool that is folded into another stays live at its old address with one line pointing to its replacement. It is simply listed once.</p>
+</section>
+
+<section id="p5"><h2><span class="n">5</span>Easier to disciple someone</h2>
+  <p>The site has plenty to read. What it lacks is a way to walk through it with another person. Six pieces fix that.</p>
+  <ol class="steps">
+    <li><div><b>A road that remembers your place.</b> The road for a new Christian exists as six steps. It will remember which step you are on, on your own phone, with no account.</div></li>
+    <li><div><b>A first course for two people.</b> One Gospel in seven sittings: a passage, a few questions, a prayer. Made for a kitchen table or a coffee shop.</div></li>
+    <li><div><b>A course you can share by a link.</b> Pick a start date and send the link. Both of you see this week's reading first.</div></li>
+    <li><div><b>A weekly rhythm on one printed page.</b> What to read, what to pray, what to ask each other.</div></li>
+    <li><div><b>Group guides with nothing in the way.</b> The 68 study guides already have a leader's guide and a handout. The handout asks for an email first today. That comes off.</div></li>
+    <li><div><b>"Go deeper" on every page.</b> A Bible chapter will show the doctrine study, the history lesson, the hard question and the family devotion that touch the same passage. Today 719 of the 1,189 chapters show nothing beside them. This is one index joining the libraries together.</div></li>
+  </ol>
+  <p>None of these keep score. No streaks, no badges, no "you are 47 days behind". A parent who misses Tuesday meets "Pick up where you left off."</p>
+</section>
+
+<section id="p6"><h2><span class="n">6</span>One home for all you do</h2>
+  <p>You said you want LiveWell, Substack, Facebook and the ENDS Initiative to feel like one thing, and that you do not know how. Here is a way to hold it in your head. One home, and several roads leading to it.</p>
+  <ul class="hub">
+    <li class="home"><b>LiveWell</b><span>The home and the library. Everything lives here, free, and stays here.</span></li>
+    <li><b>Substack</b><span>The letter. New writing arrives in the inbox and points back to the library.</span></li>
+    <li><b>Facebook</b><span>The front porch. Short notes, each pointing to one thing on the site.</span></li>
+    <li><b>Following the Way</b><span>The podcast.</span></li>
+    <li><b>ENDS Initiative</b><span>The mission work: training pastors in remote regions.</span></li>
+    <li><b>Books and speaking</b><span>Three books on the shelf, and how to invite you.</span></li>
+  </ul>
+  <h3>What I would build</h3>
+  <ul>
+    <li><strong>One page that holds all of it.</strong> "Find James" becomes the single link you can put anywhere: every channel as a picture tile, with one line saying what it is.</li>
+    <li><strong>Your newest Substack pieces listed on the site</strong>, by title, each linking to Substack. They are linked, not copied in.</li>
+    <li><strong>Share to Facebook, done well.</strong> A share button on every essay, and picture cards for a verse or a quotation, with the site's name on them, made to be posted.</li>
+    <li><strong>The same two lines everywhere:</strong> "Read James on Substack" and "Follow James on Facebook", at the foot of every page and the end of every essay.</li>
+  </ul>
+  <h3>What only you can do, in about ten minutes</h3>
+  <ul>
+    <li>Put the one link in your Facebook profile, on your Substack "About" page, and in the podcast notes.</li>
+    <li>When you post on Facebook, link one thing on the site. One post, one page.</li>
+  </ul>
+  <h3>Three limits you should know</h3>
+  <ul>
+    <li><strong>Facebook does not let a website pull posts from a personal profile.</strong> Your posts stay as links unless you paste me the ones you want featured.</li>
+    <li><strong>I cannot open Substack or Facebook from where I work</strong>, so I have not seen your pages, and the Substack list will need checking once it is live.</li>
+    <li><strong>Your message was spoken, and it came through as "the Ant initiative".</strong> I have read that as the ENDS Initiative. Tell me if I have that wrong.</li>
+  </ul>
+</section>
+
+<section id="p7"><h2><span class="n">7</span>The writing</h2>
+  <p>You gave me liberty to rewrite what does not fit. Here is where the writing stands, and what I would do.</p>
+  <div class="tw"><table>
+    <thead><tr><th>What</th><th>Where it stands</th><th>What I would do</th></tr></thead>
+    <tbody>
+    <tr><td>The 25 rewritten essays</td><td>Read like a person. Twenty are on the essays preview for your read, including the ten I had been holding.</td><td>Add a few real memories of yours. Only you can supply them.</td></tr>
+    <tr><td>Help lines</td><td>Added to the eight study guides that lacked them.</td><td>Done.</td></tr>
+    <tr><td>Honest Answers, church history, family devotions, Find Help, main pages</td><td>The machine habits a second reader agreed on are fixed.</td><td>Read a sample on the preview.</td></tr>
+    <tr><td>Study guides</td><td>Six are good. Sixty-two came from one template and need rewriting, not patching.</td><td>Rewrite three first, for your read. Then the rest in batches, the ones for people in crisis first.</td></tr>
+    <tr><td>Study Bible notes</td><td>Sound, but templated in places. Only a sample was fixed.</td><td>Fix the patterns across the whole library, most-read chapters first.</td></tr>
+    <tr><td>Essays still to write</td><td>Twenty-five more are planned on the shelf and not written. Two sections, The American Church and Ordinary Faithfulness, are empty.</td><td>Write them to the standard of the 25, with the same fact checks, the empty sections first.</td></tr>
+    <tr><td>Twelve older live essays</td><td>Stored only in the site's database, which I cannot reach.</td><td>Not audited. They need exporting first.</td></tr>
+    </tbody>
+  </table></div>
+  <p>The rules do not change: nothing invented, your voice, and you read a sample before anything goes public.</p>
+</section>
+
+<section id="p8"><h2><span class="n">8</span>The order of work</h2>
+  <ol class="steps">
+    <li><div><b>The frame.</b> Seven doors, short menus, the Everything page. One shared page top, the Bible door rebuilt as the model, the purpose sentence on the home page. <span class="pill now">Being built now</span></div></li>
+    <li><div><b>The doors.</b> Tools, in groups and listed once. The Bible pages. History with its timeline. Questions with the ask box and a page for each answer.</div></li>
+    <li><div><b>The pieces people will remember.</b> Study a chapter in seven steps. Family, with the catechism said aloud. Essays. Start where you are. Find James, as the one home for all you do.</div></li>
+    <li><div><b>Joining it up.</b> "Go deeper" on every page. Then fresh reviewers go through the whole site on a phone, and the nine-part audit is run again for scores.</div></li>
+    <li><div><b>The writing</b>, alongside: three study guides for your read, then the rest.</div></li>
+  </ol>
+  <p>Each step lands on the same preview link and I tell you when it does. The building is running on a second model until 24 November, because the first one's usage limit ran out. The home page you approved was built on the second.</p>
+</section>
+
+<section id="p9"><h2><span class="n">9</span>What I need from you</h2>
+  <p>Nothing here stops the building. Each answer makes one piece better.</p>
+  <ol>
+    <li><strong>ENDS.</strong> Did you mean the ENDS Initiative? If so, two or three sentences on what it is, in your words, so it gets a proper place on the site.</li>
+    <li><strong>The purpose sentence</strong> in Part 1. Yes, or your wording.</li>
+    <li><strong>The podcast's web address</strong> beginning with https, and your church's web address.</li>
+    <li><strong>What the site may say about you.</strong> One set of facts (years, number of books), or state none.</li>
+    <li><strong>Mark or John first</strong> for a new Christian. The Start page says John. Your eight-week plan says Mark.</li>
+    <li><strong>Which description of your voice governs:</strong> your saved Substack profile, or the voice statement kept with the site. They disagree on slogans and short paragraphs.</li>
+    <li><strong>The seven booklets</strong> that name the Pastors Connection Network inside the file. Corrected files, or leave them off.</li>
+  </ol>
+</section>
+
+</main>
+</div>
+</div>
+<script>
+(function(){var d=document.getElementById('tocd');if(d&&window.matchMedia('(max-width: 999px)').matches)d.open=false;
+if(d)d.addEventListener('click',function(e){if(e.target.closest('a')&&window.matchMedia('(max-width: 999px)').matches)d.open=false})})();
+</script>

@@ -6,6 +6,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import CrisisNote from "@/components/CrisisNote";
 import FollowRow from "@/components/FollowRow";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
@@ -24,25 +25,13 @@ export default function Contact() {
         url="https://www.livewellbyjamesbell.co/contact"
       />
 
-      <section aria-labelledby="contact-title" style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter}` }}>
+      <PageHead door="About" doorHref="/about" title="Write to James" titleId="contact-title" line="A message sent here is saved for James to read." plate="letter" />
+
+      <section aria-labelledby="contact-title" style={{ background: "var(--bone)", padding: `var(--s-4) ${gutter} var(--s-6)` }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }} className="contact-grid">
           <div style={{ maxWidth: "44ch" }}>
-            <h1
-              id="contact-title"
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "var(--fs-h1)",
-                fontWeight: 400,
-                lineHeight: 1.04,
-                letterSpacing: "-0.02em",
-                color: "var(--ink)",
-                margin: "0 0 var(--s-3)",
-              }}
-            >
-              Write to James
-            </h1>
             <FollowRow style={{ margin: "0 0 var(--s-3)", paddingBottom: "var(--s-2)", borderBottom: "1px solid var(--border)" }} />
-            <p style={p}>A message sent here is saved for James to read. If it cannot wait, write to the address below.</p>
+            <p style={p}>If it cannot wait, write to the address below.</p>
             <p style={p}>
               Email{" "}
               <a href={`mailto:${CONTACT_EMAIL}`} style={link}>

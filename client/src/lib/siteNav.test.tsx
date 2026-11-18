@@ -290,6 +290,8 @@ describe("the home page", () => {
     expect(isRoute(HOME_LINKED_HREF)).toBe(true);
     // The sentence under the headline is still the last sentence of James's paragraph (it opens /about's quote).
     expect(HOME_WHY.endsWith(HOME_LINE)).toBe(true);
+    // ...and it stands under the headline, saying what the site is for.
+    expect(document.querySelector(".home-hero__line")?.textContent).toBe(HOME_LINE);
     // The hero's picture is the drawn plate, never a photograph.
     expect(document.querySelector(".home-hero img")).toBeNull();
     expect(document.querySelector(".home-hero svg.lw-plate")).not.toBeNull();
@@ -311,11 +313,11 @@ describe("the home page", () => {
 
   it("mirrors the hero strings in the prerendered HTML", () => {
     const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
-    for (const name of ["HOME_HEADLINE", "HOME_LINKED_WORD", "HOME_LINKED_HREF"]) {
+    for (const name of ["HOME_HEADLINE", "HOME_LINE", "HOME_LINKED_WORD", "HOME_LINKED_HREF"]) {
       expect(src, name).toContain(`positioningString("${name}")`);
     }
     expect(src).toContain('class="lw-frame-fig home-hero__art"');
-    for (const cls of ["home-hero", "home-hero__title", "home-find", "home-find__input", "lw-frame__in"]) {
+    for (const cls of ["home-hero", "home-hero__title", "home-hero__line", "home-find", "home-find__input", "lw-frame__in"]) {
       expect(src, cls).toContain(`class="${cls}"`);
     }
     // No photograph of James on the front page, in either copy.
@@ -325,21 +327,20 @@ describe("the home page", () => {
 });
 
 describe("the hubs", () => {
-  it("/study leads with the Study Bible and links only to real routes", () => {
+  it("/study is the Bible door: its page top, the shelf first, six rooms or fewer, then further in", () => {
     renderWithProviders(<Study />);
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Study the Bible");
     const h2s = screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
-    expect(h2s.slice(0, 4)).toEqual([
-      "The Study Bible",
-      "Church history",
-      "Bible background",
-      "Small group study guides",
-    ]);
+    expect(h2s).toEqual(["Pick a book to open.", "Where to study.", "Go deeper."]);
+    // The rooms are picture cards, no more than six (PROJECT-PROMPT, the map).
+    const rooms = document.querySelectorAll(".lw-rooms > li");
+    expect(rooms.length).toBeGreaterThan(0);
+    expect(rooms.length).toBeLessThanOrEqual(6);
     const hrefs = Array.from(document.querySelectorAll("main a[href^='/']")).map((a) => a.getAttribute("href")!);
     expect(hrefs.filter((h) => !isRoute(h))).toEqual([]);
-    for (const h of ["/study/bible", "/study/bible/story", "/study/bible/doctrines", "/study/bible/guides", "/theology/history", "/resources/creeds", "/resources/context", "/studyguides", "/tools"]) {
+    for (const h of ["/study/bible", "/study/bible/search", "/study/bible/story", "/study/bible/doctrines", "/study/bible/guides", "/theology/history", "/resources/creeds", "/resources/context", "/studyguides", "/tools", "/start"]) {
       expect(hrefs, h).toContain(h);
     }
-    expect(screen.getByText(/still being written/)).toBeTruthy();
   });
 
   it("/resources holds four short groups and reaches every tool through /tools", () => {

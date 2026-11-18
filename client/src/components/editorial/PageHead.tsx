@@ -1,17 +1,12 @@
 /**
- * PageHead: the compact head for every page except Home and About, which keep
- * the full charcoal hero. A short eyebrow (where the reader is), the page's
- * one H1, one line on what the page is for, and, where the page has one, the
- * thing to do first. Left-aligned on the cream page, with a hairline under it,
- * so the page's own content starts on the first screen of a phone instead of
- * after a screen of prose on charcoal.
- *
- * Actions are the page's own links or buttons; give them `pg-action` (or
- * `pg-action pg-action--quiet` for a second one) for the shared look. Pass
- * `titleRef` when the page moves focus to its heading (the heading then takes
- * focus without joining the tab order). Styles live in index.css (.pg-*).
+ * PageHead, under its first name. The one page top is now the art kit's
+ * (components/art/PageHead.tsx, two sizes, with a plate); this keeps the
+ * older props (eyebrow, lede, actions) working for the pages that already
+ * use it, and draws the inner size with no picture. New pages import the
+ * kit's PageHead directly.
  */
-import type { CSSProperties, ReactNode, Ref } from "react";
+import type { ReactNode, Ref } from "react";
+import KitPageHead from "@/components/art/PageHead";
 
 export function PageHead({
   eyebrow,
@@ -32,16 +27,5 @@ export function PageHead({
   /** Width of the head's column, to match the page below (default var(--w-default)). */
   width?: string;
 }) {
-  return (
-    <div className="pg-head">
-      <div className="pg-head__inner" style={width ? ({ "--pg-w": width } as CSSProperties) : undefined}>
-        {eyebrow && <p className="eyebrow pg-head__eyebrow">{eyebrow}</p>}
-        <h1 id={titleId} ref={titleRef} tabIndex={titleRef ? -1 : undefined} className="pg-head__title">
-          {title}
-        </h1>
-        {lede && <p className="pg-head__lede">{lede}</p>}
-        {actions && <div className="pg-head__actions">{actions}</div>}
-      </div>
-    </div>
-  );
+  return <KitPageHead door={eyebrow} title={title} line={lede} action={actions} titleId={titleId} titleRef={titleRef} width={width} />;
 }
