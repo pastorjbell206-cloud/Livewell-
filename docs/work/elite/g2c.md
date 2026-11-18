@@ -23,3 +23,15 @@ I stopped at a clean guide boundary after two guides because I ran short of work
 
 ## What I ran
 
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures.
+- Literal forbidden-language search (validate-grow-voice) and em-dash search on both guides: clean. The only exclamation point is inside Psalm 46:10.
+- `pnpm check`: passed. All 35 commands of the CI content-gates step: passed. `pnpm test`: 143 files passed, 7 skipped (1,635 tests). `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (2,994 pages), `pnpm run audit:canonicals`: passed.
+- Looked at session 1 of both guides at 390x844, day and night: teaching renders as paragraphs, no sideways scroll. Screenshots in /home/user/elite-shots/g2c/.
+
+## What I did not do or verify
+
+- Seventeen guides in this share are not rewritten (above).
+- Lighthouse was not run on these two pages. The pilot found accessibility 99 on every guide page, caused by heading order in the page component, not the text.
+- Scripture was quoted from memory of the ESV; there is no ESV in the repository to check against.
+- PDFs were not rebuilt (`pnpm pdfs`); the downloads still carry the old wording.
+- No 1440-wide screenshots.
