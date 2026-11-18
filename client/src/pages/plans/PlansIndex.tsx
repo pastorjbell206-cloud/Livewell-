@@ -64,7 +64,7 @@ export default function PlansIndex() {
   return (
     <Layout>
       <SEOMeta
-        title="Care Plans: Eight Weeks, One Step at a Time"
+        title="8-Week Plans for Anxiety, Grief, Marriage, Doubt"
         description="Guided eight-week plans for anxiety, grief, marriage, doubt, new faith, and more. One practice, one reading, one tool, and one honest question each week."
         url="https://www.livewellbyjamesbell.co/plans"
       />
@@ -72,11 +72,12 @@ export default function PlansIndex() {
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-            <Link href="/help" style={{ color: "inherit" }}>Find help</Link> · Care plans
+            <Link href="/help" style={{ color: "inherit" }}>Find help</Link> · Eight-week plans
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.6vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "20ch" }}>
-            Eight weeks, one step at a time.
+            Eight-week plans for a hard season
           </h1>
+          <p className="page-standfirst">Eight weeks, one step at a time.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg)", maxWidth: "60ch", margin: 0 }}>
             Each plan is a slow walk through one weight: one focus a week, one small daily practice, one thing to read, one tool, and one honest question. A missed week is not failure. You pick it back up. Your progress stays in this browser.
           </p>

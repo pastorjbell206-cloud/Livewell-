@@ -39,7 +39,7 @@ export default function CreedsLibrary() {
   return (
     <Layout>
       <SEOMeta
-        title="Creeds, Confessions, and Classics — Full Texts with Plain Notes"
+        title="The Creeds and Confessions, With Plain Notes"
         description="The Apostles' and Nicene Creeds, Chalcedon, the Reformation confessions, and the early classics: full public-domain texts with plain-language notes."
         url="https://www.livewellbyjamesbell.co/resources/creeds"
       />
@@ -48,8 +48,9 @@ export default function CreedsLibrary() {
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources · The church's memory</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            A church without memory repeats old errors
+            The creeds and confessions of the church
           </h1>
+          <p className="page-standfirst">A church without memory repeats old errors.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch", marginBottom: "12px" }}>
             Every generation thinks its questions are new. Most of them are not. The creeds and confessions are the church's answers, written in the middle of arguments that nearly tore her apart, paid for at councils and sometimes at stakes.
           </p>

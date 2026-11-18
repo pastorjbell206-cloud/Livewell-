@@ -42,8 +42,9 @@ export default function Books() {
               marginBottom: "18px",
             }}
           >
-            Three books. Every word mine.
+            Books by James Bell
           </h1>
+          <p className="page-standfirst">Three books. Every word mine.</p>
           <p
             style={{
               fontFamily: "var(--B)",

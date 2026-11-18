@@ -106,8 +106,8 @@ export default function Wisdom() {
   return (
     <Layout>
       <SEOMeta
-        title="Wisdom for All of Life — Proverbs, Ecclesiastes, and the Skill of Living"
-        description="A guide to Proverbs, Ecclesiastes, and Job, a topical map of Scripture for money, work, words, anger, and marriage, and a chapter of Proverbs for each day of the month."
+        title="Bible Wisdom for Money, Work, Anger, Marriage"
+        description="A guide to Proverbs, Ecclesiastes, and Job, a map of Scripture on money, work, words, anger, and marriage, and a chapter of Proverbs for each day."
         url="https://www.livewellbyjamesbell.co/wisdom"
       />
 

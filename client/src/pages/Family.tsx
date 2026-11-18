@@ -75,7 +75,7 @@ function ThisWeek({ index }: { index: FamilyIndex | null }) {
         )}
       </div>
       <div>
-        <h2 className="tb-section__title">The season</h2>
+        <h2 className="tb-section__title">Devotions for this season</h2>
         {sets.length > 0 && (
           <ul className="tb-sets">
             {sets.map((w) => (
@@ -103,8 +103,8 @@ export default function Family() {
   return (
     <Layout>
       <SEOMeta
-        title="Family Discipleship — Devotions, Apologetics, and Parenting"
-        description="Everything a family needs to grow in faith together: devotions you can do with your kids, teen apologetics on why we believe, parenting Scripture, and marriage."
+        title="Family Devotions and Discipling Your Kids"
+        description="For a family growing in faith together: devotions to do with your kids, a catechism, reading plans, help for teenagers' questions, and marriage."
         url="https://www.livewellbyjamesbell.co/family"
       />
 
@@ -148,7 +148,7 @@ export default function Family() {
               The Family Catechism
             </div>
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "12px" }}>
-              Seventy-six questions, one a week, in the New City Catechism tradition. An answer for the grown-ups and one for the little ones, a verse, a short reflection, and a prayer. The oldest way a family has ever learned the faith.
+              Seventy-six questions, one a week, learned by question and answer, said out loud together. An answer for the grown-ups and one for the little ones, a verse, a short reflection, and a prayer. The oldest way a family has ever learned the faith.
             </p>
             <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
               Start the catechism <ArrowRight size={14} />
@@ -178,7 +178,7 @@ export default function Family() {
         </div>
       </section>
 
-      <StatementBand tone="dark" eyebrow="The oldest classroom">
+      <StatementBand tone="dark">
         The faith is handed down on purpose, at the table, or it is not handed down at all.
       </StatementBand>
 
@@ -245,7 +245,7 @@ export default function Family() {
             label="Marriage guides and tools"
             items={[
               { href: "/help/marriage", title: "When a marriage is in trouble", dek: "For the marriage that has gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help." },
-              { href: "/tools/marriage-assessment", title: "Marriage health assessment", dek: "A 15-question diagnostic across communication, trust, conflict, and shared vision." },
+              { href: "/tools/marriage-assessment", title: "Marriage Health Self-Check", dek: "Fifteen questions across communication, trust, conflict, and shared vision." },
               { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
               { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
             ].filter((item) => isPublicEssayHref(item.href))}

@@ -93,8 +93,8 @@ export default function Resources() {
   return (
     <Layout>
       <SEOMeta
-        title="Resources — Downloads, Tools, and Help"
-        description="Free downloads and PDFs, the Hard Issues booklets, the tools, help for a hard season with eight-week care plans, and resources for families."
+        title="Free Christian Resources: Downloads, Tools, Help"
+        description="Free downloads and PDFs, booklets for church leaders, the tools, help for a hard season with eight-week plans, and resources for families."
         url="https://www.livewellbyjamesbell.co/resources"
       />
       <HubStyles />
@@ -235,7 +235,7 @@ export default function Resources() {
             title="For families"
             links={[
               {
-                label: "The family room",
+                label: "For families",
                 href: "/family",
                 note: "Devotions to do with your kids, the family catechism, reading plans, and tools for parenting and marriage.",
               },

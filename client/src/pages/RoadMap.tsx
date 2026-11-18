@@ -118,7 +118,7 @@ export default function RoadMap() {
   return (
     <Layout>
       <SEOMeta
-        title="The Roadmap"
+        title="Books in Progress"
         description="The books James Bell has on the shelf today and the ones he plans to write next, on one page."
         url="https://www.livewellbyjamesbell.co/roadmap"
         noindex
@@ -147,8 +147,9 @@ export default function RoadMap() {
               maxWidth: "22ch",
             }}
           >
-            What's been written. What's coming.
+            Books in progress
           </h1>
+          <p className="page-standfirst">What's been written. What's coming.</p>
           <p
             style={{
               fontFamily: "var(--B)",

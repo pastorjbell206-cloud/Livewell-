@@ -232,7 +232,7 @@ export default function BibleOnTopic() {
   return (
     <Layout>
       <SEOMeta
-        title="What the Bible Says About — A Topical Scripture Guide for Life"
+        title="What the Bible Says About Money, Anger, Work"
         description="What Scripture actually says about money, the tongue, anger, anxiety, work, marriage, suffering, and more. A topical guide with the heart of each passage."
         url="https://www.livewellbyjamesbell.co/tools/bible-on"
       />

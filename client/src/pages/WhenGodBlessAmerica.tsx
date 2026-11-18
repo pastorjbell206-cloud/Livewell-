@@ -62,7 +62,7 @@ export default function WhenGodBlessAmerica() {
   return (
     <Layout>
       <SEOMeta
-        title="When God Bless America Replaces Thy Kingdom Come — by James Bell"
+        title="When God Bless America Replaces Thy Kingdom Come"
         description="A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/when-god-bless-america`}

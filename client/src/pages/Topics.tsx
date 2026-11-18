@@ -42,8 +42,8 @@ export default function Topics() {
   return (
     <Layout>
       <SEOMeta
-        title="Topics: The Hard Questions of Faith in Post-Christian America"
-        description="Christian nationalism, raising children in a secular age, living after Christendom, doubt, suffering, and more. Each question opens the one page on the site that answers it best."
+        title="Hard Questions About Faith, by Topic"
+        description="Christian nationalism, raising children in a secular age, doubt, suffering, and more. Each question opens the one page on the site that answers it best."
         url="https://www.livewellbyjamesbell.co/topics"
       />
       <PageHead

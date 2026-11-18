@@ -97,8 +97,8 @@ export default function TheologySearch() {
   return (
     <Layout>
       <SEOMeta
-        title="Search the Theological Depth Section"
-        description="One search across every doctrine, passage, glossary term, creed, figure, tradition, and hard question in the Theological Depth section."
+        title="Search the Doctrines, Creeds, and Glossary"
+        description="One search across every doctrine, passage, glossary term, creed, figure, tradition, and hard question in the doctrine studies."
         url="https://www.livewellbyjamesbell.co/theology/search"
       />
 
@@ -108,7 +108,7 @@ export default function TheologySearch() {
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Search
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Search everything.
+            Search the doctrines, creeds, and glossary
           </h1>
           <div style={{ position: "relative", maxWidth: "560px" }}>
             <Search size={20} aria-hidden style={{ position: "absolute", left: "16px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} />

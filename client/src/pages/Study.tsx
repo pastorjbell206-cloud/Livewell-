@@ -32,7 +32,7 @@ const STUDY_BIBLE: HubLink[] = [
     note: "The whole Bible as one story, from creation to new creation, with the history behind each act and every chapter placed where it happened.",
   },
   {
-    label: "Read the whole story in 2027",
+    label: "Read the Bible in a year (2027)",
     href: "/study/bible/guides/whole-story-2027",
     note: "The same story a day at a time: every chapter of the Bible in a year, with your place kept on this device and a reminder in your calendar.",
   },
@@ -67,8 +67,8 @@ export default function Study() {
   return (
     <Layout>
       <SEOMeta
-        title="Study the Bible — LiveWell by James Bell"
-        description="Learn the whole Bible: the Study Bible with notes on all 1,189 chapters, the story in eleven acts, doctrine studies and reading guides, then the church's history, its creeds, and the world the Bible was written in."
+        title="Study the Bible and Church History"
+        description="Study the whole Bible with notes on every chapter, then the church's history, its creeds, and the world the Bible was written in. Free."
         url="https://www.livewellbyjamesbell.co/study"
       />
       <HubStyles />
@@ -166,12 +166,12 @@ export default function Study() {
                 note: "An honest reckoning with the injustices of history, those done in the name of Christ among them. No one's hands are clean.",
               },
               {
-                label: "The witnesses",
+                label: "Christians who fought injustice",
                 href: "/justice/witnesses",
                 note: "The people who did justice at real cost, from the abolitionists to the rescuers of the trafficked, honest about their flaws.",
               },
               {
-                label: "The witnesses who would not be captured",
+                label: "Christians who told the church the truth",
                 href: "/disruption/witnesses",
                 note: "The people who told the church and the powers costly truth and refused to be captured by either.",
               },
@@ -188,10 +188,10 @@ export default function Study() {
         <div style={wrap}>
           <HubGroup
             id="context"
-            title="Reading the Bible in its context"
+            title="Bible background"
             links={[
               {
-                label: "Reading Scripture in context",
+                label: "The world the Bible was written in",
                 href: "/resources/context",
                 note: "The Ancient Near East, Second Temple Judaism, the Greco-Roman world, honor and shame, and how to read the Bible apart from American political assumptions.",
               },
@@ -223,7 +223,7 @@ export default function Study() {
         <div style={wrap}>
           <HubGroup
             id="groups"
-            title="Study with a group"
+            title="Small group study guides"
             links={[
               {
                 label: "Study guides for groups",

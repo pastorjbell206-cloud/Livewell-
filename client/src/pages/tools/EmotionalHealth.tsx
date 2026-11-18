@@ -641,7 +641,7 @@ export default function EmotionalHealth() {
   return (
     <Layout>
       <SEOMeta
-        title="Emotional Health Self-Check: An Honest Look at Your Inner Life"
+        title="Emotional Health Self-Check (15 Questions)"
         description="A 15-question self-check on emotional and spiritual health: self-awareness, boundaries, grief, forgiveness, and rest. Not a diagnosis. Honest results, practical steps."
         keywords="emotional health assessment, emotional health self-check, spiritual health check, self-awareness, boundaries, grief, forgiveness, sabbath rest, Christian mental health"
         structuredData={{

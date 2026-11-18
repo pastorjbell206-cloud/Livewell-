@@ -135,8 +135,8 @@ export default function FamilyDevotions() {
   return (
     <Layout>
       <SEOMeta
-        title="Family Devotions: Weekly, Thanksgiving, Advent, and Holy Week"
-        description="Seventy-two weekly family devotions, more than a year of them, plus daily devotionals for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
+        title="Family Devotions for Every Week of the Year"
+        description="Seventy-two weekly family devotions, plus daily ones for Thanksgiving week, Advent, and Holy Week, each with a passage, a question, and a prayer."
         url="https://www.livewellbyjamesbell.co/family/devotions"
       />
 

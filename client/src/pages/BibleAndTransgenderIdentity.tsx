@@ -30,7 +30,7 @@ export default function BibleAndTransgenderIdentity() {
   return (
     <Layout>
       <SEOMeta
-        title="What Does the Bible Say About Transgender Identity? — by James C. Bell"
+        title="What Does the Bible Say About Transgender Identity?"
         description="Gender, the body, and the church's Christ-centered response — a pastoral reading where clarity and compassion occupy the same room."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/bible-and-transgender-identity`}

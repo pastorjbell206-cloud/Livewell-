@@ -78,7 +78,7 @@ export default function About() {
     <Layout>
       <SEOMeta
         title="About James Bell"
-        description="James Bell pastors a church in Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons. His story, in his own words."
+        description="Who James Bell is and why he writes: his story in his own words, the church he pastors, and how to reach him."
         type="website"
         structuredData={{
           "@context": "https://schema.org",

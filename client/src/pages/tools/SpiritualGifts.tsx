@@ -1064,7 +1064,7 @@ export default function SpiritualGifts() {
   return (
     <Layout>
       <SEOMeta
-        title="Spiritual Gifts Self-Check: Eight Gifts Scripture Names"
+        title="Spiritual Gifts Self-Check: Eight Gifts"
         description="An original self-check on eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. Not a test. Answers stay on your device."
         keywords="spiritual gifts self-check, spiritual gifts test, spiritual gifts inventory, gifts of the Spirit, Romans 12, 1 Corinthians 12, Ephesians 4, 1 Peter 4, serving in the church"
         url="https://www.livewellbyjamesbell.co/tools/spiritual-gifts"

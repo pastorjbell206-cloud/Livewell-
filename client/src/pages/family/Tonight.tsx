@@ -28,7 +28,7 @@ export default function Tonight() {
   return (
     <Layout>
       <SEOMeta
-        title="Tonight at the Table: A Family Devotion"
+        title="Tonight's Family Devotion"
         description="Tonight's family devotion: a passage to read, one idea to talk about, questions for the table, and a prayer, in about ten minutes."
         url="https://www.livewellbyjamesbell.co/family/tonight"
       />
@@ -38,7 +38,7 @@ export default function Tonight() {
             Family
           </Link>
         }
-        title="Tonight at the table"
+        title="Tonight's family devotion"
         lede={tonight ? "Opening tonight's devotion." : "No devotion is set for this date yet. Choose one from the library."}
         actions={
           <Link href="/family/devotions" className="pg-action pg-action--quiet">

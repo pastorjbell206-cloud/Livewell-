@@ -51,8 +51,8 @@ export default function StudyBibleStory() {
     <Layout>
       {!actParams && (
         <SEOMeta
-          title="The Story of the Bible, From Creation to New Creation"
-          description="The whole Bible as one story in eleven acts, with the history behind each act and every chapter placed where it happened. Start here if you have never read the Bible."
+          title="The Story of the Bible in Eleven Parts"
+          description="The whole Bible as one story in eleven parts, with the history behind each and every chapter placed where it happened. Start here if you are new."
           url="https://www.livewellbyjamesbell.co/study/bible/story"
         />
       )}
@@ -154,7 +154,7 @@ function ActPage({ data, actId, progress, toggle, saveFailed }: { data: Data; ac
   return (
     <>
       <SEOMeta
-        title={`${line?.title ?? act.id}: ${line?.act ?? "The Story of the Bible"}`}
+        title={line?.act ? `${line.title ?? act.id}: ${line.act.replace(/^Act /, "Part ")} of the Bible's Story` : `${line?.title ?? act.id}: The Story of the Bible`}
         description={line?.turning ?? act.watch.slice(0, 160)}
         url={`https://www.livewellbyjamesbell.co/study/bible/story/${act.id}`}
       />

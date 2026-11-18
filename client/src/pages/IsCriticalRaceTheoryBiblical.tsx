@@ -29,7 +29,7 @@ export default function IsCriticalRaceTheoryBiblical() {
   return (
     <Layout>
       <SEOMeta
-        title="Is Critical Race Theory Biblical? — by James C. Bell"
+        title="Is Critical Race Theory Biblical?"
         description="Race, justice, and what the church actually owes the world — a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/critical-race-theory-biblical`}

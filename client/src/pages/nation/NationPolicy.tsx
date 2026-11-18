@@ -30,14 +30,15 @@ export default function NationPolicy() {
 
   return (
     <Layout>
-      <SEOMeta title="The Biblical Policy Explorer — What Would It Actually Look Like?" description="If biblical law shaped policy in America, from Jubilee to the gleaning laws to the warning against kings, what would it look like? It leaves both parties out." url="https://www.livewellbyjamesbell.co/nation/policy" />
+      <SEOMeta title="What Would a Biblical Government Look Like?" description="If biblical law shaped policy in America, from Jubilee to the gleaning laws to the warning against kings, what would it look like? Neither party fits." url="https://www.livewellbyjamesbell.co/nation/policy" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/nation" style={{ color: "inherit" }}>Christ and the Nation</Link> · The policy explorer
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>If we actually had a biblical government.</h1>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>What would a biblical government look like?</h1>
+          <p className="page-standfirst">If we actually had a biblical government.</p>
           {data && <div style={{ maxWidth: "64ch" }}>{data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>)}</div>}
         </div>
       </section>

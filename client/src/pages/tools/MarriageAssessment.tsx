@@ -671,7 +671,7 @@ export default function MarriageAssessment() {
   return (
     <Layout>
       <SEOMeta
-        title="Marriage Health Self-Check: A Private Look at Your Marriage"
+        title="Marriage Self-Check (15 Questions, Private)"
         description="Fifteen statements across communication, intimacy, trust, shared vision, and conflict. A private self-check for reflection, with honest next steps and safety first."
         keywords="marriage self-check, marriage assessment, marriage health, how healthy is my marriage, Christian marriage help, marriage counseling"
         structuredData={{

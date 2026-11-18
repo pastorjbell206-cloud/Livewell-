@@ -45,8 +45,8 @@ export default function StudyBibleDoctrines() {
     <Layout>
       {!params && (
         <SEOMeta
-          title="The Doctrines of the Bible, Traced Verse by Verse"
-          description="What the whole Bible teaches about God, creation, sin, Christ, salvation, the Spirit, the church, and the last things: each doctrine studied through both testaments and the church's history, with every verse that teaches it."
+          title="What the Bible Teaches: 62 Doctrine Studies"
+          description="What the whole Bible teaches about God, creation, sin, Christ, salvation, the Spirit, the church, and the last things, with the verses that teach it."
           url="https://www.livewellbyjamesbell.co/study/bible/doctrines"
         />
       )}

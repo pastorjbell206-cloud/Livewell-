@@ -218,7 +218,7 @@ export default function WhichLens() {
   return (
     <Layout>
       <SEOMeta
-        title="Which Lens Has You? — A Diagnostic"
+        title="What Shapes How You Read the Bible? A Self-Check"
         description="Thirteen honest choices. Five lenses that do your thinking before you do — the flag, the cause, the highlighter, the rearview, the marketplace. Named, then dismantled."
         url="https://www.livewellbyjamesbell.co/tools/which-lens"
       />
@@ -228,8 +228,9 @@ export default function WhichLens() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.2rem" }}>A diagnostic</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>
-            Which lens has you?
+            What shapes how you read the Bible?
           </h1>
+          <p className="page-standfirst">Which lens has you?</p>
           <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
             Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay in this browser tab and are seen by no one.
           </p>

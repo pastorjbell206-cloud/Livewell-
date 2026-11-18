@@ -127,7 +127,7 @@ export default function ParentTeenConversation() {
   return (
     <Layout>
       <SEOMeta
-        title="The Parent and Teen Conversation: See Home From Both Sides"
+        title="A Parent and Teen Conversation Guide"
         description="A parent and a teenager each answer twelve short statements on their own, compare, and get a guided conversation where they see home differently. Private to your device."
         url="https://www.livewellbyjamesbell.co/tools/parent-teen-conversation"
       />

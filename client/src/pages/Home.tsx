@@ -145,7 +145,7 @@ export default function Home() {
   return (
     <Layout>
       <SEOMeta
-        title="LiveWell by James Bell"
+        title="Study the Bible, Church History, Family Devotions | LiveWell"
         description={META_DESCRIPTION}
         url="https://www.livewellbyjamesbell.co"
         type="website"

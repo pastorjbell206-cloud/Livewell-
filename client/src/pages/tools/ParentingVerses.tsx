@@ -157,7 +157,7 @@ export default function ParentingVerses() {
   return (
     <Layout>
       <SEOMeta
-        title="Parenting Bible Verses — Scripture for Raising Kids"
+        title="Bible Verses for Parents"
         description="Bible verses for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent."
         url="https://www.livewellbyjamesbell.co/tools/parenting-verses"
       />

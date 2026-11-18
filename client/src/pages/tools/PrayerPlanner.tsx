@@ -121,7 +121,7 @@ export default function PrayerPlanner() {
   return (
     <Layout>
       <SEOMeta
-        title="The Prayer Planner: Your People, Through the Week"
+        title="A Weekly Prayer List You Can Keep"
         description="A private prayer list: give each person or concern a day, see today's names, and keep a dated record of answered prayer. Stays in your browser."
         url="https://www.livewellbyjamesbell.co/tools/prayer-planner"
       />

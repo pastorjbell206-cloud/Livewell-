@@ -127,7 +127,7 @@ export default function Help() {
   return (
     <Layout>
       <SEOMeta
-        title="Find Help for What You Are Facing"
+        title="Find Help: Anxiety, Grief, Doubt, Marriage"
         description="Anxious, grieving, doubting, lonely, a marriage in trouble? Say it in your own words. Honest help, Scripture in context, and real people to call."
         url="https://www.livewellbyjamesbell.co/help"
       />

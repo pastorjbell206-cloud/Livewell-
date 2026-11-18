@@ -31,6 +31,8 @@ const REPO_ROOT = path.resolve(__dirname, "..");
 const DIST_DIR = path.join(REPO_ROOT, "dist/public");
 const SITE_URL = "https://www.livewellbyjamesbell.co";
 const SITE_NAME = "LiveWell by James Bell";
+// The short ending every search title carries (SEOMeta.tsx has the same).
+const TITLE_SUFFIX = "LiveWell";
 const AUTHOR_NAME = "James Bell";
 // Search-engine ownership verification. Set these in the Vercel build env
 // (VITE_ prefix so they travel with the rest of the build config). Each is the
@@ -43,13 +45,16 @@ const BING_VERIFICATION =
 // Branded default card rendered by the dynamic OG Edge function (api/og.tsx).
 // There is no static og-default.png in the repo; this endpoint always renders.
 const OG_DEFAULT = ogImageUrl("LiveWell by James Bell", "Theology for everyday life");
+// Search titles that differ from a page's own headline (the question or the
+// essay title stays as the H1). The pages read the same file.
+const SEARCH_TITLES = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, "client/src/lib/searchTitles.json"), "utf8"));
 const FALLBACK_DESC =
-  "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
+  "Study the Bible, church history, family devotions, and honest answers to hard questions, by James Bell.";
 
 const STATIC_PAGES = [
   {
     path: "",
-    title: "LiveWell by James Bell — Theology That Carries the Weight of Everyday Life",
+    title: "Study the Bible, Church History, Family Devotions | LiveWell",
     // The same description the home page's SEOMeta declares.
     description: positioningString("META_DESCRIPTION") || FALLBACK_DESC,
     type: "website",
@@ -58,7 +63,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "James Bell pastors a church in Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons. His story, in his own words.",
+    description: "Who James Bell is and why he writes: his story in his own words, the church he pastors, and how to reach him.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -70,31 +75,31 @@ const STATIC_PAGES = [
   },
   {
     path: "/books",
-    title: "Books — by James Bell",
-    description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99.",
+    title: "Books by James Bell",
+    description: "The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99.",
     type: "website",
   },
   {
     path: "/tools",
-    title: "Tools for Pastors and Readers",
-    description: "Practical tools for serious readers: assessments, study guides, the wisdom library, verse finder, prayer generator, and more.",
+    title: "Free Bible Study, Prayer, and Family Tools",
+    description: "Free tools for Bible study, prayer, marriage, and family life: a verse finder, written prayers, a family devotion builder, and self-checks.",
     type: "website",
   },
   {
     path: "/skeptic-track",
-    title: "The Skeptic's Track — Start here",
+    title: "For Skeptics: Start Here",
     description: "Seven essays in argument order. Written for skeptics first by a pastor who came to faith from atheism. No conversion bait.",
     type: "website",
   },
   {
     path: "/nation",
-    title: "Christ and the Nation",
-    description: "Was America a Christian nation? How close is each party to the Bible? What a biblical government would actually mean.",
+    title: "The Bible and American Politics",
+    description: "Was America founded as a Christian nation? How close is each party to the Bible? What would a biblical government mean? An even-handed look.",
     type: "website",
   },
   {
     path: "/diagnostic",
-    title: "Where Are You With God Right Now? An Honest Self-Check",
+    title: "Where Are You With God? A Short Self-Check",
     description: "Eight questions in four areas, for reflection, not a test: how you treat people, handle doubt, work and rest, and pray. Your answers stay on your device.",
     type: "website",
   },
@@ -104,20 +109,20 @@ const STATIC_PAGES = [
   // copy here mirrors each page's actual title/subtitle content.
   {
     path: "/disruption/consistency",
-    title: "The Consistency Check — Prophetic Disruption",
-    description: "A searching self-examination of whether you defend truth selectively, one standard for your side and another for your opponents. A mirror, not a weapon.",
+    title: "Do You Hold Your Own Side to the Same Standard?",
+    description: "A self-check on whether you defend truth selectively, with one standard for your side and another for your opponents. A mirror, not a weapon.",
     type: "website",
   },
   {
     path: "/justice/witnesses",
-    title: "The Witnesses — Prophetic Justice",
-    description: "The people who told the church costly truth, or did justice at real cost, across history. Hopeful, concrete, and honest about their flaws.",
+    title: "Christians Who Fought Injustice, and What It Cost",
+    description: "The people who did justice at real cost, across the church's history. Hopeful, concrete, and honest about their flaws.",
     type: "website",
   },
   {
     path: "/disruption/witnesses",
-    title: "The Witnesses — Prophetic Disruption",
-    description: "The people who told the church costly truth, or did justice at real cost, across history. Hopeful, concrete, and honest about their flaws.",
+    title: "Christians Who Told the Church the Truth",
+    description: "The people who told the church a costly truth, across its history. Hopeful, concrete, and honest about their flaws.",
     type: "website",
   },
   {
@@ -572,11 +577,24 @@ function escapeJson(s) {
   return JSON.stringify(s).replace(/</g, "\\u003c");
 }
 
+// A search description of about 155 characters: a longer one is cut back to
+// its last whole sentence that fits, or to a whole word with an ellipsis.
+// Mirrors capDescription in client/src/components/SEOMeta.tsx.
+function capDescription(text, max = 155) {
+  const t = String(text ?? "").replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const head = t.slice(0, max + 1);
+  const end = Math.max(head.lastIndexOf(". "), head.lastIndexOf("? "));
+  if (end >= 60) return t.slice(0, end + 1);
+  return `${t.slice(0, max - 1).replace(/\s+\S*$/, "").replace(/[,;:]$/, "")}\u2026`;
+}
+
 // Build the head block for one route. Returns string of <meta>/<link>/<script>.
-function buildHead({ title, description, url, image, type, publishedDate, modifiedDate, schemas = [], noindex = false }) {
+function buildHead({ title, description: rawDescription, url, image, type, publishedDate, modifiedDate, schemas = [], noindex = false }) {
   // Brand-once, mirroring SEOMeta.tsx.
   const fullTitle =
-    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${SITE_NAME}`;
+    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${TITLE_SUFFIX}`;
+  const description = capDescription(rawDescription);
   const lines = [
     `<title>${escapeHtml(fullTitle)}</title>`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
@@ -732,6 +750,8 @@ function prerenderStudyBible(template) {
   const section = (h, body) => (body ? `<section><h2>${escapeHtml(h)}</h2>\n${body}</section>` : "");
   const root = { name: "The Study Bible", path: "/study/bible" };
   const trim = (t, n = 158) => { const x = String(t ?? "").replace(/\s+/g, " ").trim(); return x.length > n ? `${x.slice(0, n - 1).replace(/\s+\S*$/, "")}…` : x; };
+  // "Psalm 23", not "Psalms 23": one psalm takes the singular.
+  const chName = (bk) => (bk.slug === "psalms" ? "Psalm" : bk.name);
   const titleOf = (slug, c) => index.titles?.[slug]?.[c - 1] ?? null;
   let n = 0;
   const emit = (routePath, title, description, crumbs, body, type = "website") => {
@@ -744,7 +764,7 @@ function prerenderStudyBible(template) {
   for (const b of books) {
     const intro = read(`notes/${b.slug}/intro.json`);
     const chapters = Array.from({ length: b.chapters }, (_, i) => i + 1)
-      .map((c) => `<li><a href="/study/bible/${b.slug}/${c}">${escapeHtml(`${b.name} ${c}`)}${titleOf(b.slug, c) ? `: ${escapeHtml(titleOf(b.slug, c))}` : ""}</a></li>`)
+      .map((c) => `<li><a href="/study/bible/${b.slug}/${c}">${escapeHtml(`${chName(b)} ${c}`)}${titleOf(b.slug, c) ? `: ${escapeHtml(titleOf(b.slug, c))}` : ""}</a></li>`)
       .join("\n");
     const bookBody = [
       `<h1>${escapeHtml(b.name)}</h1>`,
@@ -779,9 +799,9 @@ function prerenderStudyBible(template) {
       const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<li value="${v.v}">${escapeHtml(v.t)}</li>`).join("\n");
       const lang = b.testament === "OT" ? "Hebrew" : "Greek";
       const body = [
-        `<h1>${escapeHtml(`${b.name} ${c}`)}${note ? `: ${escapeHtml(note.title)}` : ""}</h1>`,
+        `<h1>${escapeHtml(`${chName(b)} ${c}`)}${note ? `: ${escapeHtml(note.title)}` : ""}</h1>`,
         note ? `<p>${escapeHtml(note.summary)}</p>` : "",
-        verses ? section(`${b.name} ${c} (Berean Standard Bible)`, `<ol>\n${verses}\n</ol>`) : "",
+        verses ? section(`${chName(b)} ${c} (Berean Standard Bible)`, `<ol>\n${verses}\n</ol>`) : "",
         note ? section("Where we are in the story", para(note.story)) : "",
         note ? section("The historical setting", para(note.historical)) : "",
         note ? section("The world behind the text", para(note.cultural)) : "",
@@ -789,7 +809,7 @@ function prerenderStudyBible(template) {
         note ? section("What it teaches", note.doctrines.map((d) => `<p><a href="/study/bible/doctrines/${escapeHtml(d.id)}">${escapeHtml(doctrines.find((x) => x.id === d.id)?.name ?? d.id)}</a>. ${escapeHtml(d.note)}</p>`).join("\n")) : "",
         note ? section(`Key ${lang} words`, note.words.map((w) => `<p>${escapeHtml(w.note)}</p>`).join("\n")) : "",
         vnotes.length ? section("Verse by verse", vnotes.map((e) => [
-          `<h3>${escapeHtml(`${b.name} ${c}:${e.v}`)}</h3>`,
+          `<h3>${escapeHtml(`${chName(b)} ${c}:${e.v}`)}</h3>`,
           para(e.context),
           e.grammar ? `<h4>The ${lang}</h4>\n${para(e.grammar)}` : "",
           e.history ? `<h4>Background</h4>\n${para(e.history)}` : "",
@@ -803,13 +823,13 @@ function prerenderStudyBible(template) {
         ...(note?.hard == null ? [] : Array.isArray(note.hard) ? note.hard : [note.hard]).map((h) => section("A hard question", `<p><em>${escapeHtml(h.q)}</em></p>\n${para(h.a)}`)),
         note?.teach ? section("For teaching and preaching", `<p><strong>${escapeHtml(note.teach.big)}</strong></p>\n<ol>${note.teach.outline.map((o) => `<li>${escapeHtml(`${c}:${o.v} ${o.t}`)}</li>`).join("")}</ol>\n${para(note.teach.pitfalls)}${note.teach.pastoral ? `\n${para(note.teach.pastoral)}` : ""}`) : "",
         note ? section("Questions for study or a group", `<ol>${(Array.isArray(note.questions) ? note.questions : [...note.questions.observe, ...note.questions.interpret, ...note.questions.apply]).map((q) => `<li>${escapeHtml(q)}</li>`).join("")}</ol>`) : "",
-        `<nav><a href="/study/bible/${b.slug}">${escapeHtml(b.name)}</a>${c > 1 ? ` · <a href="/study/bible/${b.slug}/${c - 1}">${escapeHtml(`${b.name} ${c - 1}`)}</a>` : ""}${c < b.chapters ? ` · <a href="/study/bible/${b.slug}/${c + 1}">${escapeHtml(`${b.name} ${c + 1}`)}</a>` : ""}</nav>`,
+        `<nav><a href="/study/bible/${b.slug}">${escapeHtml(b.name)}</a>${c > 1 ? ` · <a href="/study/bible/${b.slug}/${c - 1}">${escapeHtml(`${chName(b)} ${c - 1}`)}</a>` : ""}${c < b.chapters ? ` · <a href="/study/bible/${b.slug}/${c + 1}">${escapeHtml(`${chName(b)} ${c + 1}`)}</a>` : ""}</nav>`,
       ].join("\n");
       emit(
         `/study/bible/${b.slug}/${c}`,
-        note ? `${b.name} ${c} Study Notes \u2013 ${note.title}` : `${b.name} ${c} Study Notes, Hebrew and Greek`,
-        note ? trim(note.summary) : `${b.name} ${c} with study notes, cross-references, and the ${lang} beneath every word.`,
-        [root, { name: b.name, path: `/study/bible/${b.slug}` }, { name: `${b.name} ${c}`, path: `/study/bible/${b.slug}/${c}` }],
+        note ? `${chName(b)} ${c} Study Notes \u2013 ${note.title}` : `${chName(b)} ${c} Study Notes, Hebrew and Greek`,
+        note ? trim(note.summary) : `${chName(b)} ${c} with study notes, cross-references, and the ${lang} beneath every word.`,
+        [root, { name: b.name, path: `/study/bible/${b.slug}` }, { name: `${chName(b)} ${c}`, path: `/study/bible/${b.slug}/${c}` }],
         body,
         "article"
       );
@@ -820,10 +840,10 @@ function prerenderStudyBible(template) {
   for (const act of story?.acts ?? []) {
     const line = storyline.find((l) => l.id === act.id) ?? {};
     const links = act.path.flatMap((r) => Array.from({ length: r.to - r.from + 1 }, (_, k) => r.from + k).map((c) =>
-      `<li><a href="/study/bible/${r.book}/${c}">${escapeHtml(`${bookName(r.book)} ${c}`)}${titleOf(r.book, c) ? `: ${escapeHtml(titleOf(r.book, c))}` : ""}</a></li>`)).join("\n");
+      `<li><a href="/study/bible/${r.book}/${c}">${escapeHtml(`${chName({ slug: r.book, name: bookName(r.book) })} ${c}`)}${titleOf(r.book, c) ? `: ${escapeHtml(titleOf(r.book, c))}` : ""}</a></li>`)).join("\n");
     emit(
       `/study/bible/story/${act.id}`,
-      `${line.title ?? act.id}: ${line.act ?? "The Story of the Bible"}`,
+      line.act ? `${line.title ?? act.id}: ${line.act.replace(/^Act /, "Part ")} of the Bible's Story` : `${line.title ?? act.id}: The Story of the Bible`,
       trim(line.turning ?? act.watch),
       [root, { name: "The Story of the Bible", path: "/study/bible/story" }, { name: line.title ?? act.id, path: `/study/bible/story/${act.id}` }],
       [`<h1>${escapeHtml(line.title ?? act.id)}</h1>`, `<p>${escapeHtml(act.dates)}</p>`, section("What happens", para(line.summary)), section("The world behind it", para(act.world)), section("What to watch for", para(act.watch)), section("Read it, chapter by chapter", `<ol>\n${links}\n</ol>`)].join("\n")
@@ -843,7 +863,7 @@ function prerenderStudyBible(template) {
       section("Misunderstandings the church has rejected", para(st.errors)),
       section("Why it matters", para(st.life)),
     ].join("\n") : "";
-    const links = keys.map((k) => { const [slug, c] = k.split("/"); return `<li><a href="/study/bible/${slug}/${c}">${escapeHtml(`${bookName(slug)} ${c}`)}${titleOf(slug, +c) ? `: ${escapeHtml(titleOf(slug, +c))}` : ""}</a></li>`; }).join("\n");
+    const links = keys.map((k) => { const [slug, c] = k.split("/"); return `<li><a href="/study/bible/${slug}/${c}">${escapeHtml(`${chName({ slug, name: bookName(slug) })} ${c}`)}${titleOf(slug, +c) ? `: ${escapeHtml(titleOf(slug, +c))}` : ""}</a></li>`; }).join("\n");
     emit(
       `/study/bible/doctrines/${d.id}`,
       `${d.name}: What the Bible Teaches`,
@@ -969,7 +989,7 @@ async function main() {
       page.image ||
       (page.path.startsWith("/nation/") ? ogImageUrl(page.title, "Christ and the Nation") : undefined);
     const head = buildHead({
-      title: page.title,
+      title: SEARCH_TITLES[page.path] || page.title,
       description: page.description,
       url,
       image,
@@ -995,7 +1015,7 @@ async function main() {
     // The four families the sitemap already lists but the prerender didn't
     // (audit 02 #4): study-guide toolkits, Table studies, the How-To library,
     // and the read-online books.
-    { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "blurb", contentDir: "client/public/studyguides" },
+    { file: "client/public/studyguides/index.json", key: "guides", route: "/studyguides/", ogPrefix: "studyguides", desc: "eyebrow", contentDir: "client/public/studyguides" },
     { file: "client/public/howtos/index.json", key: "articles", route: "/how-tos/", ogPrefix: "howtos", desc: "excerpt", contentDir: "client/public/howtos/a" },
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
     // The contested-doctrine pages (/theology/doctrine/:slug) — manifest
@@ -1009,7 +1029,7 @@ async function main() {
     // The 208 wisdom topics (/wisdom/:id). Manifest keys by id/label; the
     // framing is the description, and the title matches the page's own
     // "{label} — What the Bible Says" so scrapers see the same head.
-    { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleTemplate: "{title} — What the Bible Says" },
+    { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleFn: (t) => (/^(When|Why)\b/.test(t) ? `${t}: What the Bible Says` : `What the Bible Says About ${t}`) },
     // The 13 guided reading pathways (/pathways/:slug) and the 4 formation
     // guides (/leadership/guides/:slug). Both are param routes, so the route
     // table extractor skips them by design and only a manifest pass reaches
@@ -1060,7 +1080,7 @@ async function main() {
       const slug = e.slug || (src.slugField ? e[src.slugField] : undefined);
       const rawTitle = (src.preferTitleField && e[src.titleField]) || e.title || (src.titleField ? e[src.titleField] : undefined);
       if (!slug || !rawTitle) continue;
-      const title = src.titleTemplate ? src.titleTemplate.replace(/\{title\}/g, rawTitle) : rawTitle;
+      const title = src.titleFn ? src.titleFn(rawTitle) : src.titleTemplate ? src.titleTemplate.replace(/\{title\}/g, rawTitle) : rawTitle;
       const url = `${SITE_URL}${src.route}${slug}`;
       const ogRel = `client/public/og/${src.ogPrefix}-${slug}.png`;
       const image = fs.existsSync(path.join(REPO_ROOT, ogRel))
@@ -1084,7 +1104,7 @@ async function main() {
       // Books get a subtitle-enriched <title> (matching the client SEOMeta) and
       // a Book JSON-LD carrying every chapter as a hasPart node, so search can
       // deep-link the exact chapter that answers a reader's question.
-      const headTitle = src.type === "book" && e.subtitle ? `${title} — ${e.subtitle}` : title;
+      const headTitle = SEARCH_TITLES[`${src.route}${slug}`] || (src.type === "book" && e.subtitle ? `${title} — ${e.subtitle}` : title);
       // BreadcrumbList (Home › Section › Title) on every library page.
       const section = SECTION_BY_ROUTE[src.route];
       const crumbs = [{ name: "Home", path: "" }];

@@ -116,8 +116,8 @@ export default function FamilyCatechism() {
   return (
     <Layout>
       <SEOMeta
-        title="The Family Catechism — 76 Questions to Learn Together"
-        description="A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
+        title="Family Catechism: 76 Questions and Answers"
+        description="Seventy-six short questions and answers that teach the faith. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
         url="https://www.livewellbyjamesbell.co/family/catechism"
       />
 
@@ -129,6 +129,7 @@ export default function FamilyCatechism() {
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>
             The Family Catechism
           </h1>
+          <p className="page-standfirst">Short questions and answers that teach the faith.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
             Seventy-six questions, taken one a week. A family learns the faith the way it has always been learned, by question and answer, said out loud together until it lives in them. Each one has an answer for the grown-ups and a shorter one for the little ones, a verse, a short word for the parent, and a prayer.
           </p>

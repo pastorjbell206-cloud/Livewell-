@@ -50,7 +50,7 @@ export default function TheologyMethodology() {
   return (
     <Layout>
       <SEOMeta
-        title="How to Use This Section — Theological Depth"
+        title="How to Use the Doctrine Studies"
         description="Before the doctrines, the ground rules: the first, second, and third order triage framework, the author's interpretive lens, and how to disagree well."
         url="https://www.livewellbyjamesbell.co/theology/how-to-use"
       />
@@ -61,7 +61,7 @@ export default function TheologyMethodology() {
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Start here
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            {m?.title ?? "How to Use This Section"}
+            How to use the doctrine studies
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "64ch" }}>
             {m?.subtitle ?? "Before the doctrines, the ground rules."}

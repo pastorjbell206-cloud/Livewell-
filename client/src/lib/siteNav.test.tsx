@@ -83,7 +83,8 @@ describe("the nav map", () => {
       }
       expect(soleHeaderLink(g), g.title).toBeNull();
       expect(headerLinks(g)[0].href, g.title).toBe(leads[g.title]);
-      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(7);
+      // Eight in Study since "Compare the views" joined it (audit 2026-11).
+      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(8);
     }
   });
 
@@ -110,7 +111,7 @@ describe("the nav map", () => {
 
   it("puts the year's plan through the whole story at the foot of the Study menu", () => {
     const plan = headerLinks(group("Study")).at(-1);
-    expect(plan).toEqual({ label: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", primary: true });
+    expect(plan).toEqual({ label: "Read the Bible in a year (2027)", href: "/study/bible/guides/whole-story-2027", primary: true });
     expect(isRoute(plan!.href)).toBe(true);
   });
 
@@ -133,7 +134,7 @@ describe("the nav map", () => {
     expect(byLabel.get("Contact")?.href).toBe("/contact");
     // James, 2026-11-17: the Pastors Connection Network stays outside this site.
     expect(SITE_NAV_GROUPS.flatMap((g) => g.links).some((l) => /pastorsconnection/i.test(l.href + l.label.replace(/\s/g, "")))).toBe(false);
-    expect(byLabel.get("ENDS")?.external).toBe(true);
+    expect(byLabel.get("ENDS (training pastors in remote regions)")?.external).toBe(true);
   });
 });
 
@@ -175,7 +176,7 @@ describe("the header and footer", () => {
     // By keyboard (no hover), Enter on the door toggles it as before.
     const family = screen.getByRole("button", { name: /^Family$/ });
     fireEvent.click(family);
-    expect(within(screen.getByRole("menu")).getByRole("link", { name: "Tonight at the table" })).toBeTruthy();
+    expect(within(screen.getByRole("menu")).getByRole("link", { name: "Tonight's family devotion" })).toBeTruthy();
     fireEvent.click(family);
     expect(screen.queryByRole("menu")).toBeNull();
   });
@@ -216,13 +217,13 @@ describe("the header and footer", () => {
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
     fireEvent.click(screen.getByRole("button", { name: "Show Topics links" }));
     const panel = document.getElementById("mobile-nav-panel")!;
-    expect(within(panel).getByRole("link", { name: "Start here: every topic" })).toBeTruthy();
+    expect(within(panel).getByRole("link", { name: "Hard questions, by topic" })).toBeTruthy();
     const family = screen.getByRole("button", { name: "Show Family links" });
     fireEvent.mouseDown(family);
-    expect(within(panel).getByRole("link", { name: "Start here: every topic" })).toBeTruthy();
+    expect(within(panel).getByRole("link", { name: "Hard questions, by topic" })).toBeTruthy();
     fireEvent.click(family);
-    expect(within(panel).getByRole("link", { name: "Tonight at the table" }).getAttribute("href")).toBe("/family/tonight");
-    expect(within(panel).queryByRole("link", { name: "Start here: every topic" })).toBeNull();
+    expect(within(panel).getByRole("link", { name: "Tonight's family devotion" }).getAttribute("href")).toBe("/family/tonight");
+    expect(within(panel).queryByRole("link", { name: "Hard questions, by topic" })).toBeNull();
   });
 
   it("mirrors every group in the footer and keeps Find Help and My Library in it", () => {
@@ -314,8 +315,8 @@ describe("the hubs", () => {
     expect(h2s.slice(0, 4)).toEqual([
       "The Study Bible",
       "Church history",
-      "Reading the Bible in its context",
-      "Study with a group",
+      "Bible background",
+      "Small group study guides",
     ]);
     const hrefs = Array.from(document.querySelectorAll("main a[href^='/']")).map((a) => a.getAttribute("href")!);
     expect(hrefs.filter((h) => !isRoute(h))).toEqual([]);

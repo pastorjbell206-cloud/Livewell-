@@ -50,8 +50,8 @@ export default function StudyBibleYear() {
   return (
     <Layout>
       <SEOMeta
-        title="Read the Whole Story of the Bible in 2027"
-        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, a guide to their world where one belongs, your place kept on this device, and a reminder in your calendar."
+        title="Read the Bible in a Year: The 2027 Plan"
+        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with your place kept on this device."
         url="https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027"
       />
       <PageHead
@@ -60,7 +60,7 @@ export default function StudyBibleYear() {
             The Study Bible
           </Link>
         }
-        title="Read the whole story in 2027"
+        title="Read the Bible in a year: the 2027 plan"
         lede="Every chapter of the Bible in a year, in the order the story happened. Ten to fifteen minutes a day."
         width="var(--w-prose)"
       />

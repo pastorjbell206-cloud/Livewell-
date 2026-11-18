@@ -116,7 +116,7 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
   const planDays = readPlanDays();
   if (planDays.size) {
     const next = readerPlace(planDays);
-    rows.push({ href: PLAN_PATH, title: "Read the whole story in 2027", kind: "Reading plan", detail: next ? `Day ${next} is next` : "Every day read", when: "" });
+    rows.push({ href: PLAN_PATH, title: "Read the Bible in a year (2027)", kind: "Reading plan", detail: next ? `Day ${next} is next` : "Every day read", when: "" });
   }
 
   return rows.sort((a, b) => b.when.localeCompare(a.when));

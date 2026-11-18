@@ -372,7 +372,7 @@ export default function ParentingGuide() {
   return (
     <Layout>
       <SEOMeta
-        title="Parenting Stage Guide -- Age-Specific Theological Parenting Guidance"
+        title="Christian Parenting by Age: Toddlers to Teens"
         description="Practical, theologically grounded parenting guidance for every stage. What your child needs, how to talk about God, common mistakes, and one practice to start."
         keywords="Christian parenting, parenting guide, faith and parenting, theological parenting, parenting toddlers, parenting teens, raising kids in faith"
         structuredData={{

@@ -397,7 +397,7 @@ export default function QuoteLibrary() {
   return (
     <Layout>
       <SEOMeta
-        title="Words Worth Sharing | LiveWell by James Bell"
+        title="Quotes From James Bell's Essays and Books"
         description="Pull quotes mined verbatim from James Bell's essays, books, and study guides — searchable, saveable, and linked back to the work each line came from."
         url="/tools/quotes"
       />
@@ -444,8 +444,9 @@ export default function QuoteLibrary() {
               color: "var(--bone)",
             }}
           >
-            Words Worth Sharing
+            Quotes from the essays and books
           </h1>
+          <p className="page-standfirst" style={{ marginInline: "auto" }}>Words worth sharing.</p>
           <p
             style={{
               fontFamily: "var(--U)",

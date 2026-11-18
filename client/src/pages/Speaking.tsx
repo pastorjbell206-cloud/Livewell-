@@ -39,7 +39,7 @@ export default function Speaking() {
   return (
     <Layout>
       <SEOMeta
-        title="Speaking — James Bell"
+        title="Invite James Bell to Speak or Preach"
         description="Invite James Bell to preach or speak: conferences, retreats, revivals, and pulpit supply. Pastoral coaching and church consulting too, with a form that reaches him directly."
         url="https://www.livewellbyjamesbell.co/speaking"
         structuredData={{

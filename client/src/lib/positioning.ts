@@ -25,7 +25,7 @@ export const PRIMARY_SUBHEAD_SHORT =
   "For believers trying to follow Jesus in a culture that no longer shares Christian assumptions. Essays on theology, culture, family, and the American church, helping readers reconstruct a deeper historical faith and learn to live well in post-Christian America.";
 
 export const META_DESCRIPTION =
-  "Learning to follow Jesus and live well in post-Christian America. A Study Bible with notes on every chapter, the church's long history, essays, and books by James Bell.";
+  "Learn to follow Jesus in post-Christian America: a free Study Bible with notes on every chapter, church history, family devotions, and honest answers.";
 
 /*
  * The home page hero. James chose the two paragraphs below on 2026-10-14

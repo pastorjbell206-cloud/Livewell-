@@ -123,8 +123,8 @@ export default function TheologyHistory() {
   return (
     <Layout>
       <SEOMeta
-        title="Church History — The Story You Belong To"
-        description="A walkable narrative of the church across two thousand years: the timeline by era, the councils, the heresies it rejected, and the people who carried the faith."
+        title="Church History, From the Apostles to Today"
+        description="The church across two thousand years: the timeline by era, the councils, the heresies it rejected, and the people who carried the faith."
         url="https://www.livewellbyjamesbell.co/theology/history"
       />
 
@@ -135,8 +135,9 @@ export default function TheologyHistory() {
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Church history
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            The story you were born into.
+            Church history, from the apostles to today
           </h1>
+          <p className="page-standfirst">The story you were born into.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
             You did not start the faith. You walked into a story already two thousand years long, carried by martyrs and scholars and ordinary believers who handed it down at great cost. Here is the sweep of it: the eras, the councils that fixed the creeds you confess, the errors the church had to reject, and the people worth meeting.
           </p>

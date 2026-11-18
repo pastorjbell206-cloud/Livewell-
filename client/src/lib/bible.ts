@@ -123,6 +123,10 @@ export function parseRef(ref: string, books: BibleBook[]): { slug: string; chapt
   return { slug: book.slug, chapter, verse, label: `${book.name} ${chapter}:${verse}${m[4] ? `–${m[4]}` : ""}` };
 }
 
+/** The book's name before a chapter number: "Psalm 23", not "Psalms 23". */
+export const chapterBookName = (book: { slug: string; name: string }) =>
+  book.slug === "psalms" ? "Psalm" : book.name;
+
 export const chapterHref = (slug: string, chapter: number, verse?: number) =>
   `/study/bible/${slug}/${chapter}${verse ? `#v${verse}` : ""}`;
 

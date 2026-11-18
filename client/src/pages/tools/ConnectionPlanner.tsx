@@ -211,7 +211,7 @@ const PRINT_CSS = `
   @media print{
     nav, footer, .skip-link, .cp-screen{display:none !important}
     .cp-print{display:block !important;font-family:var(--B);font-size:11pt;line-height:1.55}
-    .cp-print h1{font-family:var(--F);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
+    .cp-print .cp-title{font-family:var(--F);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
     .cp-print h2{font-family:var(--F);font-weight:500;font-size:14pt;margin:14pt 0 4pt;page-break-after:avoid}
     .cp-print p{margin:0 0 6pt;max-width:none}
     .cp-print .cp-meta{font-size:9.5pt;margin-bottom:8pt}
@@ -311,7 +311,7 @@ export default function ConnectionPlanner() {
   return (
     <Layout>
       <SEOMeta
-        title="The Connection Planner: Small Steps When You Feel Alone"
+        title="A Weekly Plan for When You Feel Lonely"
         description="A private weekly planner for loneliness: name a few people, choose one small step toward each, keep one place to belong, and see how the week went."
         url="https://www.livewellbyjamesbell.co/tools/connection-planner"
       />
@@ -326,8 +326,9 @@ export default function ConnectionPlanner() {
               <Link href="/help/loneliness" style={{ color: "inherit" }}>Find help: loneliness</Link> · A companion tool
             </div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px" }}>
-              The Connection Planner
+              A plan for when you feel alone
             </h1>
+            <p className="page-standfirst">The Connection Planner.</p>
             <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, margin: "0 0 12px", maxWidth: "60ch" }}>
               Loneliness rarely gives way to one big connection. It yields to small steps toward the same few people, taken again and again. Name up to five people, choose one small step toward each for this week, and keep one place where the same faces gather every week. As the week goes, check off what happened, then start the next one.
             </p>
@@ -540,7 +541,7 @@ export default function ConnectionPlanner() {
       </div>
 
       <div className="cp-print" aria-hidden="true">
-        <h1>The Connection Planner</h1>
+        <p className="cp-title">The Connection Planner</p>
         <p className="cp-meta">Week of {dateLabel(state.weekOf)}. One small step toward each person; a step counts when you take it, whatever the answer.</p>
         <h2>This week</h2>
         {Array.from({ length: MAX_PEOPLE }, (_, i) => state.people[i]).map((p, i) =>

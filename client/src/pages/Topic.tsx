@@ -34,6 +34,7 @@ import { fetchJson } from "@/lib/fetch-json";
 import { isEssayOverride, overrideMeta, overrideUrl, sectionHref, sectionBySlug } from "@/lib/shelf";
 import { devotionHref, tableHref } from "@/lib/familyTable";
 import { trackTopicLeadOpen } from "@/lib/telemetry";
+import SEARCH_TITLES from "@/lib/searchTitles.json";
 import {
   TOPICS_INDEX_URL,
   essaySlug,
@@ -137,7 +138,7 @@ function TopicView({ topic }: { topic: TopicData }) {
 
   return (
     <Layout>
-      <SEOMeta title={topic.title} description={topic.description} url={`${SITE}${topicHref(topic.slug)}`} type="article" />
+      <SEOMeta title={(SEARCH_TITLES as Record<string, string>)[topicHref(topic.slug)] ?? topic.title} description={topic.description} url={`${SITE}${topicHref(topic.slug)}`} type="article" />
       <div className="tp-page">
         <PageHead
           eyebrow={

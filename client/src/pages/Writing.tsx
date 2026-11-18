@@ -220,7 +220,7 @@ export default function Writing() {
   return (
     <Layout>
       <SEOMeta
-        title={filtering ? `${heading}: Essays` : "Essays"}
+        title={filtering ? `${heading}: Essays` : "Essays by James Bell"}
         description={
           filtering
             ? intro

@@ -143,7 +143,7 @@ export default function Downloads() {
   return (
     <Layout>
       <SEOMeta
-        title="Free Downloads: Study Guides, Curriculum, and Printable PDFs"
+        title="Free Printable Bible Study Guides and PDFs"
         description="Every printable in one place, free: study guides, Find Help guides and worksheets, plan booklets, Bible reading plans, workbooks, and Scripture cards."
         url="https://www.livewellbyjamesbell.co/downloads"
       />

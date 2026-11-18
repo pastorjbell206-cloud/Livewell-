@@ -301,7 +301,7 @@ export default function BibleStudy() {
   return (
     <Layout>
       <SEOMeta
-        title="Bible Study Guide -- Study Any Book with Theological Depth"
+        title="Bible Book Study Guides: 12 Key Books"
         description="Study 12 essential books of the Bible with theological depth: key themes, study questions, reading strategies, and companion essays. For serious readers."
         keywords="Bible study guide, Genesis study, Psalms study, Romans study, Gospel of John, Bible reading plan, theological Bible study"
         structuredData={{
@@ -347,10 +347,7 @@ export default function BibleStudy() {
               marginBottom: "16px",
             }}
           >
-            Bible Study{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Guide
-            </em>
+            How to study a book of the Bible
           </h1>
           <p
             style={{

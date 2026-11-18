@@ -120,7 +120,7 @@ export default function WorryJournal() {
   return (
     <Layout>
       <SEOMeta
-        title="The Worry Journal: Five Minutes Before Bed"
+        title="A Bedtime Worry Journal (Five Minutes)"
         description="A private evening journal for worry: name it, sort what is yours to do from what is not, pray, and later see how your worries turned out."
         url="https://www.livewellbyjamesbell.co/tools/worry-journal"
       />

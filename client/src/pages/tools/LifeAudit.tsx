@@ -880,7 +880,7 @@ export default function LifeAudit() {
   return (
     <Layout>
       <SEOMeta
-        title="Life Audit: A Self-Check Across Eight Areas of Life"
+        title="Life Self-Check: Eight Areas, 24 Questions"
         description="Twenty-four questions across eight areas of life: faith, marriage, parenting, health, money, emotions, work, and friendship. A self-check for reflection, not a diagnosis, with honest results and next steps."
         keywords="life audit, life self-check, life assessment, spiritual health, marriage, parenting, physical health, financial health, emotional health, vocation, community, Christian life"
         structuredData={{
@@ -927,10 +927,7 @@ export default function LifeAudit() {
               letterSpacing: "-0.02em",
             }}
           >
-            Life{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Audit
-            </em>
+            A quick check on eight areas of life
           </h1>
           <p
             style={{

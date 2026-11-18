@@ -262,9 +262,10 @@ export default function Dashboard() {
   return (
     <Layout>
       <SEOMeta
-        title="Your Formation — LiveWell by James Bell"
-        description="Track your reading, tools, and growth across LiveWell. A personal dashboard for your theological formation."
-        keywords="dashboard, formation tracker, reading progress, theology"
+        title="Your Reading and Progress"
+        description="What you have read and used on LiveWell, kept in one place."
+        keywords="dashboard, reading progress, theology"
+        noindex
       />
 
       {/* ── SECTION 1: Hero ── */}
@@ -275,7 +276,7 @@ export default function Dashboard() {
         }}
       >
         <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <div style={{ ...eyebrow, color: "var(--mustard)" }}>YOUR FORMATION</div>
+          <div style={{ ...eyebrow, color: "var(--mustard)" }}>YOUR READING AND PROGRESS</div>
           <h1
             style={{
               fontFamily: "var(--F)",

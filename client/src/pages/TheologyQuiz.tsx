@@ -165,7 +165,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
   return (
     <>
       <SEOMeta
-        title="Theological Position Quiz"
+        title="What Do You Believe? A 10-Question Quiz"
         description="A free quiz: ten questions about what you actually believe, about four minutes, and then the essays that meet you where your answers say you are."
         keywords="theology quiz, faith assessment, James Bell, theological position"
         url={`${SITE_URL}/quiz`}

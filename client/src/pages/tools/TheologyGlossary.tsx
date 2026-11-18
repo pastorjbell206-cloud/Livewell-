@@ -1076,7 +1076,7 @@ export default function TheologyGlossary() {
   return (
     <Layout>
       <SEOMeta
-        title="Theological Vocabulary Glossary — 100 Essential Terms"
+        title="Theological Vocabulary: 100 Terms Explained"
         description="100 essential theological terms explained at three levels of depth. Search by term, filter by category, and expand any entry from a one-liner to a full explanation with historical roots and pastoral significance."
         url="https://www.livewellbyjamesbell.co/tools/glossary"
         structuredData={structuredData}

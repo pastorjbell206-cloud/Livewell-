@@ -147,7 +147,7 @@ export default function Assessments() {
   return (
     <Layout>
       <SEOMeta
-        title="Assessments — Where Are You, Actually?"
+        title="Self-Checks for Faith, Marriage, and Daily Life"
         description="Every self-check on the site in one place: faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you."
         url="https://www.livewellbyjamesbell.co/assessments"
         structuredData={assessmentsSchema}
@@ -156,10 +156,11 @@ export default function Assessments() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Assessments</div>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Self-checks</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "20ch" }}>
-            An honest measure, before anything else.
+            Self-checks for your faith, your marriage, and your life
           </h1>
+          <p className="page-standfirst">An honest measure, before anything else.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
             Every instrument on the site, in one place, sorted by the question you
             are actually asking. None of them grades you. Each one is a mirror,

@@ -311,7 +311,7 @@ export default function ScriptureMemory() {
   return (
     <Layout>
       <SEOMeta
-        title="Scripture Memory System -- Memorize Bible Verses"
+        title="Memorize Bible Verses: 40 Verses, Step by Step"
         description="Memorize 40 Bible verses across 8 categories with first-letter hints, fill-in-the-blank, and full recall. Track your progress."
         keywords="scripture memory, Bible memorization, memorize Bible verses, scripture memory system, Bible memory techniques"
         structuredData={{
@@ -357,10 +357,7 @@ export default function ScriptureMemory() {
               marginBottom: "16px",
             }}
           >
-            Scripture Memory{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              System
-            </em>
+            Memorize Scripture: 40 key verses
           </h1>
           <p
             style={{
