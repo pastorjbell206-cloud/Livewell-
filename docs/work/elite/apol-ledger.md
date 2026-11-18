@@ -96,3 +96,39 @@ All but the lines marked "search" come from the public essay "Can You Trust the 
 - Mackie's "positively irrational" (found only in a secondary summary): not used.
 - Wykstra's journal and volume: not listed among the sources.
 - Michael Kruger's *Canon Revisited* (2011 or 2012 by different records): not listed.
+
+# Second run (2026-11-18): faith and science, the resurrection, hell
+
+Same method as above. "Search" is a WebSearch run in this second run (12 at most per answer). "Repo" means the wording is already quoted on the site in a study guide or answer.
+
+## Do I have to choose between faith and science?
+
+12 searches.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Draper, *History of the Conflict between Religion and Science* (1874); White, *A History of the Warfare of Science with Theology in Christendom* (1896) | Old answer gave both dates; White's title and year confirmed by search (reviews of *Galileo Goes to Jail*); Draper's title and year standard bibliography | Verified (Draper on standard bibliography) |
+| Darwin, *On the Origin of Species*, 1859 | Standard; already in the God answer's ledger | Verified |
+| Laplace and Napoleon, "no need of that hypothesis" | Search: no primary source; the anecdote is likely embroidered | Cut. Not used. |
+| Coyne, *Faith versus Fact: Why Science and Religion Are Incompatible* (Viking, 2015): not a strict logical inconsistency; incompatibility of method; religion decides by faith, scripture and authority | Search: Kirkus and Publishers Weekly summaries, Coyne's own book page, an excerpt of his essay | Verified, paraphrased |
+| Galileo, 1633, the Roman Inquisition, "vehemently suspect of heresy", house arrest until his death | Search: Wikipedia "Galileo affair", BYU overview | Verified, the three words quoted |
+| Numbers, ed., *Galileo Goes to Jail and Other Myths about Science and Religion* (Harvard University Press, 2009); "the greatest myth in the history of science and religion"; a reviewer called him a religious agnostic | Search: UW History page, Harvard UP excerpt, reviews | Verified, quoted; "described by one reviewer" says where the agnostic label comes from |
+| Historians moved away from the war story since about the 1970s ("the last fifty years") | Search: review summary, "until about the 1970s, the dominant narrative ... science at war with religion" | Verified |
+| Galileo quoted Augustine in 1615 (Letter to the Grand Duchess Christina); Augustine, *The Literal Meaning of Genesis* 1.19.39, "a disgraceful and dangerous thing" (Taylor translation, Ancient Christian Writers 41, 1982) | Search: inters.pusc.it (Taylor translation), Thomistic Institute | Verified; only the five words quoted. "Early in the fifth century" is the standard dating of the work. |
+| Cavendish Laboratory, Maxwell, Psalm 111:2 in Latin on the oak doors "by Maxwell's wish" | Search: Faraday Institute page citing Pippard's history; Clerk Maxwell Foundation | Verified. Psalm 111:2 ESV wording: repo (skeptic study guide). The lab opened in 1874 under Maxwell: standard. |
+| Lemaître, priest, 1927 expanding universe, two years before Hubble's paper; 1931 "primeval atom" | Search: Wikipedia "History of the Big Bang theory", BBVA OpenMind | Verified |
+| Hoyle, "this 'big bang' idea", BBC, 1949 | Search: same | Verified, then cut for length |
+| Polkinghorne: professor of mathematical physics at Cambridge 1968 to 1979, resigned, ordained 1982 | Search: Wikipedia, Britannica, Faraday Institute | Verified. The old answer's "helped establish the existence of quarks" was not confirmed and is not used. |
+| Collins led the Human Genome Project; *The Language of God* (2006) about his coming to faith | Old answer; standard | Not searched (budget); standard fact |
+| Aquinas: God works through secondary causes, not in competition with them | Standard Thomist teaching (*Summa Theologiae* I q.105 a.5) | Stated as his teaching; the novel analogy is the writer's own, set apart from Aquinas |
+| Colossians 1:17 ESV, "is before all things, and in him all things hold together" | Repo (the-undivided-life study guide quotes 1:16-17) | Verified |
+| Bonhoeffer, letter from Tegel prison, May 1944 (sources give 25 or 29 May): "We are to find God in what we know, not in what we don't know" | Search: Bible Hub history page, Zygon article | Verified, quoted; month given, not the day |
+| Coulson popularized "God of the gaps" about a decade later (*Science and Christian Belief*, 1955) | Search: Zygon article ("preempts by a decade ... Coulson [1955]") | Verified |
+| 1 Corinthians 15:17 "your faith is futile and you are still in your sins" | Essay ledger (did-the-resurrection-happen) | Verified |
+| Einstein, "Physics and Reality" (*Journal of the Franklin Institute*, 1936): "One may say 'the eternal mystery of the world is its comprehensibility.'" and "The fact that it is comprehensible is a miracle." | Search: arXiv paper on the essay, AMACAD reprint, Einstein PDF | Verified, quoted. Einstein's disbelief in a personal God is standard. |
+| Wigner, 1960, "a wonderful gift which we neither understand nor deserve" | Search: Vatican Observatory reprint, Reasonable Faith, Physics Today 2006 | Verified, quoted |
+| Plantinga, *Where the Conflict Really Lies* (Oxford, 2011): "superficial conflict but deep concord" with theistic religion; "superficial concord but deep conflict" with naturalism (p. ix) | Search: Craig's review, SuperSummary, Themelios review | Verified, the two phrases quoted |
+| Psalm 19:1 ESV; Proverbs 25:2 ESV | Repo (believe and skeptic study guides) | Verified |
+| Three Christian views on the age of the earth and evolution | Described without taking a side, as the Genesis 1 answer does | No position stated |
+| "science hands you a magnificent description of the house ... whether anyone lives there" | The old answer's own sentence, kept | James's words |
+| Sources list | Coyne, Numbers, Plantinga, Wigner, Einstein, Augustine (Taylor 1982): search. Collins 2006 and Bonhoeffer's letters (1943 to 1945): standard bibliography | Verified, two on standard bibliography |

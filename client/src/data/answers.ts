@@ -276,9 +276,91 @@ export const ANSWERS: Answer[] = [
     slug: "do-i-have-to-choose-between-faith-and-science",
     question: "Do I have to choose between faith and science?",
     paragraphs: [
-      "No. The war between faith and science is not a finding of science. It is a story with a traceable birth date, assembled in the late nineteenth century by John William Draper (1874) and Andrew Dickson White (1896), and their books were polemics, not history. Science grew up in the cradle of belief. The medieval church funded astronomy. Newton wrote more on theology than on physics. Kepler described his astronomy as thinking God's thoughts after him.",
-      "The friction is real. The fight over Darwin was real, and parts of the church handled it badly. But the working scientists the war story says cannot exist are not rare. Francis Collins led the Human Genome Project and describes, in The Language of God (2006), coming to faith by following his reasoning past the edge of what science is built to answer. John Polkinghorne helped establish the existence of quarks, then was ordained an Anglican priest. Water boils because the molecules are agitated; the kettle is on because someone wanted tea. The answers don't compete.",
-      "Science does not prove God, and the Christians who say it does have not understood either. What remains is the older question the laboratory cannot settle: whether the world is authored or accidental. Science hands you a magnificent description of the house, but it can't tell you whether anyone lives there.",
+      "No. The long war between faith and science is a story told in the nineteenth century, and historians of science, believers and unbelievers alike, have taken it apart. But the war isn't the strong objection. The strong one is quieter: science keeps explaining what God was once used to explain, so maybe God is only the name for what we haven't figured out yet. I think that mistakes what Christians have meant by God, and I think the plain fact that science works at all points the other way. Christians still disagree about the age of the earth and about evolution, and this page leaves those questions open. What it argues is narrower. The laboratory and the creed aren't rivals.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with the weak form of the objection, so it can be set aside. In 1874 John William Draper published a History of the Conflict between Religion and Science, and in 1896 Andrew Dickson White followed with A History of the Warfare of Science with Theology in Christendom. Between them they gave the modern world its picture of two armies, one marching toward the light and the other holding it back. It's the version most people meet, and it's mostly wrong.",
+          "The strong form doesn't need a war. It goes like this. For most of history people explained thunder, plague, the paths of the planets and the fitness of living things by pointing to God or the gods. One by one those explanations were replaced by natural ones, and the replacements worked. When Darwin published On the Origin of Species in 1859, he gave a natural account of the most impressive example of all, the way living things fit their lives. Out of that success came the working rule of every laboratory: look for natural causes, and never write \"God did it\" in the results. The rule has worked so well that a fair-minded person can ask whether God is anything more than a placeholder for what we don't know.",
+          "The biologist Jerry Coyne gives the sharpest version in Faith versus Fact (2015). He's careful to say he isn't claiming a strict logical contradiction. His charge is about method. Science has ways of testing a claim and finding out that it's wrong. Religion, he argues, holds its claims by faith, scripture and authority, and has no way to find out that it's wrong. On that account the two aren't partners. One of them is a way of knowing and the other isn't.",
+          "I concede a lot of this. The church has sometimes fought science and lost, and deserved to. In 1633 the Roman Inquisition found Galileo \"vehemently suspect of heresy\" for holding that the earth moves around the sun, and he spent the rest of his life under house arrest. Christians have often put God in the gaps of what we know, and every time science filled a gap, God looked smaller. A God who is only an explanation for what we don't yet understand should be expected to shrink. He has.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "There are two questions here. The first is historical, whether faith and science have actually been at war, and it can be checked against the record. The second is philosophical, whether the success of science makes belief in God less reasonable. That one I'll lay out in steps, the skeptic's argument and then my own, and I'll say which step carries the weight in each. None of this proves that God exists; that case has its own page, \"Does God actually exist?\" The aim here is smaller: to show that nobody has to pick a side.",
+        ],
+      },
+      {
+        heading: "The war is a story, not a finding",
+        body: [
+          "Historians of science have spent the last fifty years taking Draper and White apart, and not because they were defending the church. In 2009 the historian Ronald Numbers, described by one reviewer as a religious agnostic, edited a book for Harvard University Press called Galileo Goes to Jail and Other Myths about Science and Religion. In it he calls the idea of constant conflict \"the greatest myth in the history of science and religion.\"",
+          "Galileo himself is a good example. He was a believer, and in 1615 he defended his work by quoting Augustine, who had written early in the fifth century, in The Literal Meaning of Genesis, that for an unbeliever to hear a Christian talking nonsense about the natural world was \"a disgraceful and dangerous thing.\" The church that condemned Galileo had forgotten one of its own best teachers.",
+          "The record keeps breaking the war story. When the Cavendish Laboratory opened at Cambridge in the 1870s under James Clerk Maxwell, the physicist who unified electricity and magnetism, its oak doors carried a verse from the Psalms in Latin, by his wish: \"Great are the works of the LORD, studied by all who delight in them\" (Psalm 111:2). In 1927 Georges Lemaître, a Belgian physicist and a Catholic priest, argued that the universe is expanding, two years before Edwin Hubble's famous paper, and in 1931 he proposed that it began from what he called a primeval atom. In our own time John Polkinghorne left a Cambridge chair in mathematical physics to be ordained an Anglican priest in 1982, and Francis Collins, who led the Human Genome Project, wrote The Language of God (2006) about how he came to faith.",
+          "None of that proves Christianity is true. Plenty of great scientists have been unbelievers. What it shows is that the war isn't a finding of science. It's a story about science, and a poor one.",
+        ],
+      },
+      {
+        heading: "The argument from the shrinking God",
+        body: [
+          "The strong objection survives all of that history. Here it is, as fairly as I can state it.",
+          {
+            kind: "The skeptic's argument, set out as a deductive argument",
+            premises: [
+              "If God exists, he is one of the causes inside nature, the kind of cause science looks for, needed wherever natural causes run out.",
+              "Science keeps finding natural causes where people once saw God, and has every reason to expect to keep finding them.",
+            ],
+            conclusion: "The room for God keeps shrinking, and a reasonable person should expect it to reach nothing.",
+          },
+          "The second premise is true, and Christians should say so gladly. The weight sits on the first, and I think it's false. That isn't a move invented to escape the argument. It's what the church has taught for a very long time. Thomas Aquinas taught in the thirteenth century that God works through the causes he made, not in competition with them. An author is the cause of every line in a novel without being one of its characters. Scripture puts it more simply. Christ \"is before all things, and in him all things hold together\" (Colossians 1:17). On that view God isn't found where the explanations stop. He's the reason there are explanations at all.",
+          "Dietrich Bonhoeffer saw the danger from a prison cell. In a letter of May 1944 he warned against using God as a stopgap for the unfinished parts of our knowledge, and wrote, \"We are to find God in what we know, not in what we don't know.\" About a decade later the physicist Charles Coulson made popular the name we still use for the mistake, the God of the gaps. Water boils because the molecules are agitated. The kettle is on because someone wanted tea. Both answers are true, and they don't compete.",
+          "This cuts both ways, and I want to be honest about it. If God isn't found in the gaps, Christians can't argue for him from the gaps either. A believer who says \"science can't explain this, so God did it\" is making the skeptic's mistake in reverse. The fine-tuning argument on the God page isn't that kind of argument. It doesn't say physics can't explain something. It asks why physics is the way it is.",
+          "Coyne's charge about method needs its own answer. He's right that a faith which can never be wrong isn't knowledge. But the center of Christianity isn't a claim held out of the reach of evidence. It's a claim about something that happened in a particular city in a particular decade, and the earliest Christian writer staked everything on it. If Christ has not been raised, Paul wrote, \"your faith is futile and you are still in your sins\" (1 Corinthians 15:17). That's a faith that can be wrong. The rule of the laboratory, look for natural causes, is a good rule for the laboratory. It can't tell you whether anything ever happened that natural causes don't explain. That's a question for history, and the resurrection has its own page.",
+        ],
+      },
+      {
+        heading: "Why science works at all",
+        body: [
+          "Now turn the question around and ask why science works in the first place. In 1936 Albert Einstein, who didn't believe in a personal God, wrote in an essay called \"Physics and Reality\": \"One may say 'the eternal mystery of the world is its comprehensibility.'\" His next sentence reads, \"The fact that it is comprehensible is a miracle.\" In 1960 the physicist Eugene Wigner wrote about how strangely well mathematics, worked out on paper, describes the physical world, and he ended by calling it \"a wonderful gift which we neither understand nor deserve.\" Neither man was arguing for God. Both saw something that needs explaining.",
+          {
+            kind: "An inference to the best explanation",
+            premises: [
+              "Science depends on two things it can't supply for itself: a world ordered by laws simple enough to be found, often in mathematics, and minds able to find them.",
+              "If the world was made by a rational God who made human beings able to know it, both are what we would expect.",
+              "If the world and our minds came from unguided processes alone, the order is simply a brute fact, and our ability to grasp it far beyond anything survival required is at least surprising.",
+            ],
+            conclusion: "The success of science fits belief in God at least as well as it fits unbelief, and I think better. It doesn't settle the question. It turns the objection around.",
+          },
+          "The third premise carries the weight, and the best reply to it is a serious one. Evolution, the skeptic says, would favor minds that track the world truly, because minds that get the world wrong get eaten, and a general intelligence built for hunting and planning can be turned to physics. I think that explains part of it. It explains less of the rest: why the deepest laws are written in mathematics, some of it worked out for its own beauty long before anyone knew it described anything, and why minds shaped to find food can follow the universe down to quantum fields. The philosopher Alvin Plantinga pressed this point in Where the Conflict Really Lies (2011). He argued that there is \"superficial conflict but deep concord\" between science and belief in God, and \"superficial concord but deep conflict\" between science and naturalism, the view that nature is all there is. His argument has drawn strong replies, and I wouldn't rest everything on its strongest form. But the direction of it seems right to me. Psalm 19 said it long before anyone built a laboratory: \"The heavens declare the glory of God, and the sky above proclaims his handiwork\" (Psalm 19:1).",
+        ],
+      },
+      {
+        heading: "Where Christians disagree",
+        body: [
+          "Some of the sharpest arguments over science aren't between believers and unbelievers. They're among Christians, and they're about the age of the earth and about evolution. Some Christians read the days of Genesis 1 as ordinary days and hold that the earth is thousands of years old. Some accept the long ages of the earth and the universe and hold that God acted directly at points in the history of life. Some hold that God made living things, human beings included, through the process of evolution, and that this is how he did what Genesis says he did. Each is held by believers who take Scripture seriously, and each has hard questions to answer. I won't settle that here, and nothing on this page depends on how it's settled. The page \"How should a Christian read Genesis 1?\" lays out the readings with more care. What I'd ask of all three, and of myself, is Augustine's discipline: know what the evidence says before you speak to it.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply to everything above goes like this. Fine, God isn't in the gaps. But then he makes no difference you could ever detect, and a God who makes no detectable difference is as good as no God. My answer is that Christians don't claim God makes no difference. We claim he makes a difference to the whole, that there is an ordered world at all and minds that can know it, and that he made one particular difference in history, on a Sunday morning outside Jerusalem, that can be weighed like any other event. If the arguments for the first fail and the evidence for the second falls apart, Christianity fails with them. Paul said as much himself.",
+          "Here is what this page doesn't prove. It doesn't prove that God exists. It doesn't settle the age of the earth or the history of life. It doesn't excuse the times the church got the world wrong. It only clears away a false choice. You can trust the method that mapped the human genome and still ask the question that method was never built to answer.",
+          "\"It is the glory of God to conceal things, but the glory of kings is to search things out\" (Proverbs 25:2). Science is that searching, and Christians have every reason to love it. But science hands you a magnificent description of the house. It can't tell you whether anyone lives there. That question doesn't go away when the lab closes for the night.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Jerry A. Coyne", title: "Faith versus Fact: Why Science and Religion Are Incompatible", year: "2015", note: "The best book against: a biologist's case that the two cannot be reconciled." },
+      { author: "Ronald L. Numbers, ed.", title: "Galileo Goes to Jail and Other Myths about Science and Religion", year: "2009", note: "Historians on the war story, one myth at a time." },
+      { author: "Alvin Plantinga", title: "Where the Conflict Really Lies: Science, Religion, and Naturalism", year: "2011" },
+      { author: "Francis S. Collins", title: "The Language of God", year: "2006" },
+      { author: "Eugene P. Wigner", title: "The Unreasonable Effectiveness of Mathematics in the Natural Sciences", in: "Communications on Pure and Applied Mathematics", year: "1960" },
+      { author: "Albert Einstein", title: "Physics and Reality", in: "Journal of the Franklin Institute", year: "1936" },
+      { author: "Augustine", title: "The Literal Meaning of Genesis", year: "early 5th century; trans. John Hammond Taylor, 1982" },
+      { author: "Dietrich Bonhoeffer", title: "Letters and Papers from Prison", year: "letters of 1943 to 1945" },
     ],
     essaySlug: "faith-and-science",
     essayTitle: "Do You Have to Choose Between Faith and Science?",
