@@ -27,9 +27,9 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 I took the crisis-facing guides first, as the writing plan recommends: the ones that carry the 988 line or the help box (client/src/data/sensitive-pages.json), then the rest.
 
-Done, committed and pushed (7): mental-health, pastoral-health, marriage, identity, heaven-and-hell (first run); prayer, gratitude (second run, brief guides3.md).
+Done, committed and pushed (9): mental-health, pastoral-health, marriage, identity, heaven-and-hell (first run); prayer, gratitude (second run); fruit-of-the-spirit, generosity (third run, brief guides3.md).
 
-Not started (13): fruit-of-the-spirit, generosity, habits-and-formation, holy-spirit, hospitality, knowing-god, manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The second run was assigned prayer, gratitude, fruit-of-the-spirit, generosity and habits-and-formation, and stopped at a clean guide boundary after gratitude because the working context was nearly used up. The next guide is fruit-of-the-spirit (still on the sensitive list), then generosity and habits-and-formation.
+Not started (11): habits-and-formation, holy-spirit, hospitality, knowing-god, manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The third run was assigned fruit-of-the-spirit, generosity and habits-and-formation, and stopped at a clean guide boundary after generosity because the working context was running low. The next guide is habits-and-formation.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, theme, sessions, session titles, key passages, timing, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted from the ESV (the text these guides already used) with references; case studies reframed as "Suppose"; rulebook words ("steelman", "verdict" as a method word, "inside the indictment", "the method is the mercy"), biography stamps, "Bell" and "Leader to confirm" removed; every help line kept word for word (checked by script against the old file). The claim-by-claim record is docs/work/elite/g2b-ledger.md.
 
@@ -44,8 +44,10 @@ Each guide was rewritten whole by the pilot's method: same slug, title, theme, s
 | heaven-and-hell | 22,390 / 17,991 | 30 / 0 | 39 / 9 | 7 / 0 | Kept: Tolkien's "long defeat" and "samples or glimpses of final victory" (1956 letter, searched); Lewis, The Weight of Glory, "the scent of a flower we have not found..." Paraphrased: none. Cut: a Lewis preface paraphrase; a "plumbing" line attributed to Peterson | "Locked on the inside" is from The Problem of Pain, not The Great Divorce; The Great Divorce 1945; Stott's leaning in 1988, not "near the end of his life"; City of God 413 to 426; Origen "early 200s"; Hell Under Fire editors named; Isaiah and Daniel dates no longer asserted |
 | prayer | 22,243 / 17,537 | 22 / 0 | 48 / 13 | 4 / 0 | Kept: Augustine's restless heart (as description); Bonhoeffer's "cheap grace" (two words). Paraphrased: Bonhoeffer's deadly-enemy line. Cut: a "Keller used to say" saying | Luther's barber guide 1535; Calvin 1536 to 1559; Westminster 1647 (Watson dropped); Augustine's disordered love moved off the Confessions; manna date made debated; Psalm 130:3-4 restored to ESV; Peterson's Answering God untangled from Working the Angles |
 | gratitude | 24,711 / 17,653 | 28 / 0 | 48 / 12 | 6 / 0 | Kept: Chesterton, "The test of all happiness is gratitude; and I felt grateful, though I hardly knew to whom" (Orthodoxy, 1908). Paraphrased: Bonhoeffer's two prison lines (marked); Chesterton's grace before the pen (source uncertain, marked). Cut: none | "en pasin" corrected to "en panti"; "curved in on itself" moved from Augustine to Luther; Justin Martyr and the Didache named for the early Eucharist; Emmons and McCullough (2003) named; two placeholder bibliography entries cut |
+| fruit-of-the-spirit | 24,347 / 19,454 | 31 / 0 | 37 / 15 | 3 / 0 | Kept: Chalmers's title phrase "the expulsive power of a new affection". Paraphrased: Owen on killing sin (no quotation marks, as before). Cut: none | Luther's tree image dated 1520 (Freedom of a Christian), not 1517; Chalmers's "1819" cut (searched, unconfirmed); Psalm 1 undated; Galatians date marked debated; war-horse word history no longer asserted; Gottman claim narrowed; ego depletion flagged as contested; Keller marriage book cut from the bibliography |
+| generosity | 24,713 / 19,626 | 27 / 0 | 35 / 21 | 3 / 0 | Kept: none. Paraphrased: Basil on hoarded bread; Lewis's "pinch" test; Julian on Christian care of the poor (new attribution of a claim the old guide made unattributed). Cut: none | Mammon is Aramaic, not Greek; Luther named for 1520; plague care attributed to Dionysius of Alexandria; Basil dated about 370; Law and Psalm-era dates loosened; money-and-happiness research named and qualified; Ambrose and Basil bibliography entries made real titles |
 
-Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude).
+Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude); 1 in the third (the year of Chalmers's sermon, for fruit-of-the-spirit; not found, so the year was cut).
 
 ## Choices on contested matters
 
@@ -74,9 +76,18 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - pnpm test: 140 files passed, 3 failed, 7 skipped. The three were family pages (advent-ready, family-pages, fes), not touched here. Rerun together, two passed; fes.test.tsx then passed 4 of 4 alone. Timing under load, as in the first run.
 - Not run this time (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at prayer or gratitude in a browser.
 
+## What I ran, and what passed (third run, after generosity)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words and em-dashes searched literally in both guides: the only hits are "blessed" inside quoted ESV Scripture (Luke 14:14, Acts 20:35), "verdict" in its plain sense (Jesus's verdict on the widow), and Charles Taylor's named concept "the age of authenticity" (the gate allows it as a named concept).
+- Every command in the CI content-gates step (35): passed.
+- pnpm check: passed.
+- pnpm test: 143 files passed, 1 failed, 7 skipped. The one was client/src/pages/fes.test.tsx (the family catechism page, not touched here); run alone it passed 4 of 4. Timing under load, as before.
+- Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
+
 ## What I did not do or verify
 
-- The fifteen guides listed above.
+- The eleven guides listed above as not started.
 - The ESV wording was checked from memory; there is no ESV text in the repository.
 - Lighthouse was not run for these pages (only the guide text changed; the pilot measured the same page component at CLS 0 and accessibility 99, the one miss being heading order in the page component).
 - The downloadable PDFs still carry the old wording until pnpm pdfs is rerun.

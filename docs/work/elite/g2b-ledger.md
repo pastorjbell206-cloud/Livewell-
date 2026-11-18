@@ -181,3 +181,59 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Job 42:7, Psalm 13:5-6, Lamentations 3:2, 7, 16, Luke 17:15-18, Daniel 6:10, 1 John 1:5 | Scripture (ESV) | Quoted with references |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help box | Page renders it from sensitive-pages.json (gratitude: general help block); guide text keeps "know where real help is" in primer, script and case study | Kept |
+
+## Fruit of the Spirit
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp (atheism) in summary, primer, script, FAQ, promo | Credential use | Removed everywhere; no biography in this guide |
+| "Bell says / Bell takes the strong case" throughout | Narrator calling him "Bell" | Removed; first person in teaching |
+| Psalm 1 "circa 1000 BC" | Date of Psalm 1 unknown | "Date unknown" |
+| Isaiah's vineyard "circa 700 BC" | Known: Isaiah's ministry in the later eighth century BC | "Eighth century BC" |
+| Galatians "circa AD 49" | Known: date debated (about 48 to 55) | Given as a range, marked debated |
+| Augustine "circa AD 400", virtue as ordered loves | Known: Confessions about 397 to 400; "rightly ordered love" as a definition of virtue is City of God 15.22 | Range "about AD 400 to 426", both works named; given as description, not quotation |
+| Luther "1517", works flow from faith as fruit from a tree | Known: the tree image is The Freedom of a Christian (1520) | Dated 1520 and the work named |
+| Owen 1656, "always killing sin or it will be killing him" | Known: Of the Mortification of Sin in Believers, 1656 | Kept as paraphrase (no quotation marks), title given in full |
+| Edwards 1746 | Known | Kept, full title |
+| Chalmers "1819" | Searched (1 search): no source gave the year; Chalmers lived 1780 to 1847 | Year cut; "early nineteenth century" with his dates. Title phrase kept as quotation (it is the sermon's title) |
+| Cullmann 1946, decisive battle and end of fighting | Known: Christ and Time (Christus und die Zeit, 1946) | Kept; Vos dropped (his role not checked) |
+| prautes as "a war horse broken and trained" | Popular sermon claim; not verified from a source | No longer asserted as word history; offered as "a picture often used for it" |
+| Charles Taylor, character as self-construction | Known in substance: The Ethics of Authenticity / "age of authenticity" | Restated as Taylor's "age of authenticity" |
+| Tertullian and Cyprian on patience | Known: both wrote treatises on patience | Kept |
+| Gottman: daily failures predict breakdown "more reliably than betrayals" | Overstated; known finding is contempt as a strong predictor of divorce | Narrowed to contempt as a strong predictor |
+| Baumeister, ego depletion | Known; large replications since about 2016 cast doubt on it | Kept with that caution |
+| Aristotle, continent vs temperate person | Known: Nicomachean Ethics book VII | Kept, work named |
+| Bibliography: Keller, The Meaning of Marriage ("named not for its marriage material", "leader to draw on selectively") | Not a source for this study | Cut |
+| "Leader to confirm" (3) | Ortlund, Packer, Luther entries; known titles, notes describe the books only | Removed |
+| Romans 7:19 as the believer's war | Contested reading | Note now says the reading is debated |
+| 2 Timothy 2:13 | ESV has an em-dash mid-verse | Quoted only to the dash |
+| Scripture quoted: Galatians 5, John 15, Psalm 1:3, Matthew 7:17, Philippians 1:6, 4:4, 4:11, Romans 2:4, 5:1, 5:5, 8:23, 13:14, 2 Corinthians 1:22, 6:10, Exodus 34:6, Lamentations 3:22-23, Matthew 11:29, 26:53, Titus 2:11-12, 2 Peter 1:5, 3:9, Luke 6:35, Ephesians 4:32, Colossians 3:12, Isaiah 26:3, Nehemiah 8:10 | ESV from memory | Quoted with references |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help box | Page renders it from sensitive-pages.json (fruit-of-the-spirit: general help block); guide keeps "real help" and the doctor line in primer, FAQ, script, session 2 | Kept |
+
+## Generosity
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp (atheism, no father, five sons) in summary, primer, script, FAQ | Credential use | Removed everywhere; no biography in this guide |
+| "Bell says / Bell takes the strong case" throughout | Narrator calling him "Bell" | Removed; first person in teaching |
+| The Law "circa 1400 BC" | Date of the exodus and the Law is debated | "Date debated" |
+| David's temple offering "circa 970 BC" | Known: end of David's reign, tenth century BC | "Tenth century BC"; 1 Chronicles 29:14 quoted |
+| Prophets "circa 700 BC" | Known: Amos, Isaiah, Micah, eighth century BC | "Eighth century BC", Amos and Isaiah named |
+| Widow AD 29, Sermon AD 30, Acts 2 AD 33 | Exact years not knowable | "About AD 30", "About AD 30 to 33" |
+| 2 Corinthians "circa AD 56" | Known: about 55 to 56 | "About AD 55 to 56" |
+| Christians nursing the sick in a plague "circa AD 250", pagans fleeing | Known: the plague of the 250s to 260s; Dionysius of Alexandria's letter (in Eusebius) describes it | Dated "about 250 to 270", attributed to Dionysius |
+| Basil's complex "circa AD 360"; hoarded bread belongs to the hungry | Known: the Basileias about 369 to 372; the bread line is from his sermons on wealth | "About AD 370"; kept as paraphrase, no quotation marks |
+| "1520 The Reformers" | Known: Luther, The Freedom of a Christian, 1520 | Luther and the work named |
+| Lewis, Mere Christianity (1952), giving should "pinch or hamper" | Known (book 3, chapter 3) | Kept as paraphrase |
+| "The Greek word Jesus used, mammon" | Mammon is an Aramaic word kept in the Greek Gospels | Corrected |
+| Early Christians known even to critics for care of strangers | Known: Emperor Julian's letter (about 362) complaining that the Christians supported the pagans' poor too | Attributed to Julian, as paraphrase; Stark's growth thesis marked as an argument to weigh |
+| Monastic rule receiving guests as Christ | Known: Rule of Saint Benedict, chapter 53, sixth century | Named |
+| Money and happiness research "repeatedly found" little gain past needs | Contested: Kahneman and Deaton (2010) plateau; Killingsworth, Kahneman and Mellers (2023) complicated it | Both named; claim narrowed to adaptation |
+| Widows' social position in first-century Judea | General knowledge, softened to "often had no independent support" | Kept, softened |
+| Bibliography: "On the Duties of the Clergy and selected sermons on wealth" by "Ambrose of Milan and the church fathers" | Not one work; the surplus-owed-to-the-poor sermon is De Nabuthe | Made "On Naboth", Ambrose of Milan |
+| Bibliography: "Basil the Great, sermons to the rich" | Known sermons: "I Will Tear Down My Barns" and "To the Rich" | Titles named |
+| "Leader to confirm" (3: Alcorn x2, Pohl, Foster) | Known titles; notes describe the books only | Removed |
+| Scripture quoted: Matthew 6:19-24, 25:35, Mark 10:22, 12:40-44, 13:2, Luke 12:15, 12:16-21 (described), 14:12-14, 19:8, 21:1, Acts 2:46, 18:3, 20:35, Romans 12:13, 15:26, 2 Corinthians 8:2-3, 8:9, 8:12, 9:6-8, Philippians 4:11-13, 4:19, 1 Timothy 5:8, 6:5-10, 6:17, Hebrews 13:2, 13:5, 1 Peter 4:9, 1 John 3:16-17, Ecclesiastes 5:10, Proverbs 6:6, 30:8-9, 1 Chronicles 29:14, Deuteronomy 10:18, 15:7-8, James 1:27 | ESV from memory | Quoted or cited with references; Luke 12:20 ("Fool!") described, not quoted |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help box | Generosity is not on the sensitive list; no help lines in the old guide | Nothing to keep |
