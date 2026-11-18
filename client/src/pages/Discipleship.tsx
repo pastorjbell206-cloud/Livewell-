@@ -43,7 +43,7 @@ const STAGES: Stage[] = [
         id: "begin-quiz",
         title: "Take the Find Your Path quiz",
         desc: "Three minutes of honest questions that point you to the part of this site written for where you actually are.",
-        href: "/start",
+        href: "/start/quiz",
         type: "Tool",
       },
       {

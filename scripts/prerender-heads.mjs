@@ -513,6 +513,14 @@ const HUB_LISTINGS = {
     { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
+  // The road on /start, step by step, then where it goes on.
+  "/start": { label: "New to faith, or coming back", cap: 20, load: () => {
+    const d = readJsonSafe("client/src/lib/startRoad.json") || {};
+    return [
+      ...(d.steps || []).map((x) => ({ title: x.title, href: x.href, blurb: x.line })),
+      ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
+    ];
+  } },
   // Every question on /topics, opening the page it opens today.
   "/topics": { label: "Topics", cap: 40, load: () => {
     const d = readJsonSafe("client/public/topics/index.json");
@@ -672,9 +680,8 @@ const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
  * throttled mobile connection put LCP near four seconds against a 90-score
  * budget. Painting it from the HTML, inside the existing static shell, moves
  * the largest paint to the first paint. main.tsx waits for that paint to be
- * recorded before React replaces it (lib/static-hero.ts), and the portrait is
- * fetchpriority="low" in both copies so the photograph never competes with
- * the CSS, fonts, and text for the first paint (U08).
+ * recorded before React replaces it (lib/static-hero.ts). The hero is the
+ * headline and one sentence, with no photograph.
  */
 function positioningString(name) {
   const src = fs.readFileSync(
@@ -690,26 +697,20 @@ function positioningString(name) {
 function homeHeroHtml() {
   const esc = (s) =>
     s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  const headline = positioningString("HOME_HEADLINE");
-  const why = positioningString("HOME_WHY");
-  const who = positioningString("HOME_WHO");
-  const portrait = positioningString("PORTRAIT_URL");
-  if (!headline || !why || !who) return "";
+  // A dash keeps to the word before it, as in Home.tsx.
+  const headline = positioningString("HOME_HEADLINE").replace(/ \u2014/g, "\u00A0\u2014");
+  const line = positioningString("HOME_LINE");
+  const word = positioningString("HOME_LINKED_WORD");
+  const href = positioningString("HOME_LINKED_HREF");
+  if (!headline || !line) return "";
+  // "post-Christian" in the headline opens the page that explains it, as in Home.tsx.
+  const [before, after] = word && href && headline.includes(word) ? headline.split(word) : [headline, null];
+  const title = after === null ? esc(headline) : `${esc(before)}<a href="${esc(href)}">${esc(word)}</a>${esc(after)}`;
   return `
         <section class="home-hero">
           <div class="home-hero__inner">
-            <div class="home-hero__byline">
-              ${portrait ? `<img class="home-hero__portrait" src="${esc(portrait)}" alt="James Bell" width="168" height="210" decoding="async" fetchpriority="low">` : ""}
-              <div>
-                <p class="home-hero__name">James Bell</p>
-                <a href="/about" class="home-hero__about">About James</a>
-              </div>
-            </div>
-            <div>
-              <h1 class="home-hero__title">${esc(headline)}</h1>
-              <p class="home-hero__text">${esc(why)}</p>
-              <p class="home-hero__text">${esc(who)}</p>
-            </div>
+            <h1 class="home-hero__title">${title}</h1>
+            <p class="home-hero__text">${esc(line)}</p>
           </div>
         </section>`;
 }

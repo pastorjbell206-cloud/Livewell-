@@ -14,6 +14,8 @@ import path from "node:path";
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import Home from "../Home";
 import { homeTonight } from "./HomeTonight";
+import { LATEST_COUNT, committedLatest, latestFrom, longDate } from "./HomeLatest";
+import { LATEST_CUTOFF, SHELF_ESSAYS, isPublicEssay } from "@/lib/shelf";
 
 /** Noon on a calendar day in the reader's own time zone. */
 function setToday(y: number, m: number, d: number) {
@@ -140,12 +142,62 @@ describe("Home's tonight line", () => {
 });
 
 describe("Home's doors", () => {
-  it("include Topics and Family", () => {
+  it("open everything James named, led by the line for someone new", () => {
     setToday(2026, 10, 27);
     renderHome();
     const doors = screen.getByRole("heading", { name: "Where to begin" }).nextElementSibling as HTMLElement;
-    expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(["/study/bible", "/topics", "/writing", "/family", "/books"]);
+    expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([
+      "/start",
+      "/study/bible",
+      "/theology/history",
+      "/topics",
+      "/family",
+      "/writing",
+      "/books",
+    ]);
+    expect(within(doors).getByRole("link", { name: /^New here\? Start here/ }).getAttribute("href")).toBe("/start");
+    expect(within(doors).getByRole("link", { name: /^Church history/ }).getAttribute("href")).toBe("/theology/history");
     expect(within(doors).getByRole("link", { name: /^Hard questions/ }).getAttribute("href")).toBe("/topics");
+    expect(screen.getByRole("link", { name: "The study guides come with a leader's guide" }).getAttribute("href")).toBe("/studyguides");
+  });
+});
+
+describe("Home's latest writing", () => {
+  const DAY = 86_400_000;
+  const at = (iso: string) => Date.parse(iso);
+
+  it("lists public essays only, newest first, each with its date", () => {
+    const live = SHELF_ESSAYS.filter((e) => isPublicEssay(e.slug)).slice(0, 2);
+    expect(live).toHaveLength(2);
+    const retired = { slug: "an-essay-off-the-shelf", title: "Off the shelf", publishedAt: "2026-01-05T00:00:00.000Z" };
+    const fresh = { slug: "a-post-from-the-admin", title: "A new post", publishedAt: new Date(LATEST_CUTOFF + 40 * DAY).toISOString() };
+    const rows = [
+      { slug: live[0].slug, title: live[0].title, publishedAt: "2025-03-02T00:00:00.000Z" },
+      retired,
+      { slug: live[1].slug, title: live[1].title, publishedAt: null, createdAt: "2025-06-09T00:00:00.000Z" },
+      fresh,
+    ];
+    const latest = latestFrom(rows);
+    expect(latest[0]).toEqual({ slug: fresh.slug, title: fresh.title, time: at(fresh.publishedAt) });
+    expect(latest.map((e) => e.slug)).not.toContain(retired.slug);
+    expect(latest.length).toBeLessThanOrEqual(LATEST_COUNT);
+    expect(latest.map((e) => e.time)).toEqual([...latest.map((e) => e.time)].sort((a, b) => b - a));
+    // An essay the database dated keeps that date (createdAt when it was never stamped published).
+    const second = latest.find((e) => e.slug === live[1].slug);
+    if (second) expect(second.time).toBe(at("2025-06-09T00:00:00.000Z"));
+    expect(longDate(at("2026-10-27T00:00:00.000Z"))).toBe("October 27, 2026");
+  });
+
+  it("shows the rewritten essays with their dates when the listing never answers", async () => {
+    renderHome();
+    const committed = committedLatest();
+    expect(committed.length).toBeGreaterThan(0);
+    for (const e of committed) expect(isPublicEssay(e.slug), e.slug).toBe(true);
+    const row = await screen.findByTestId("home-latest");
+    expect(within(row).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(committed.map((e) => `/writing/${e.slug}`));
+    expect(within(row).getAllByText(/^[A-Z][a-z]+ \d{1,2}, \d{4}$/)).toHaveLength(committed.length);
+    expect(screen.getByRole("heading", { name: "Latest writing" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Start with these" })).toBeTruthy();
   });
 });
 

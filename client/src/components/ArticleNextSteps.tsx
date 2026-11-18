@@ -91,7 +91,7 @@ const TOOL_MAP: Record<string, ToolRec> = {
     name: "Start Here",
     description:
       "Not sure where to begin? This diagnostic finds the right entry point for you.",
-    href: "/start",
+    href: "/start/quiz",
   },
   "bible-on-topic": {
     name: "What Does the Bible Say?",

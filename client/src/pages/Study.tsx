@@ -102,6 +102,18 @@ export default function Study() {
               where it sits in the one story that runs from Genesis to Revelation. Underneath every English word
               are the Hebrew and Greek it translates.
             </p>
+            {/* One line for a beginner (audit 2026-11, item 11). */}
+            <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 var(--s-4)", maxWidth: "46ch" }}>
+              Where should I start? If you've never read the Bible, begin with{" "}
+              <Link href="/study/bible/john" style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+                the Gospel of John
+              </Link>
+              , and{" "}
+              <Link href="/start" style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
+                here is the road after that
+              </Link>
+              .
+            </p>
             <Link
               href="/study/bible"
               style={{

@@ -1,17 +1,21 @@
 /**
- * Home: one calm page.
+ * Home: the front door.
  *
- * Who James is and why the site exists, in his own words from /about; then
- * Find (one field: a passage or a question) and tonight's family devotion
- * with "Continue" beside it (pages/home/, U18); five doors (the Study Bible,
- * the hard questions (/topics, U25), the essays, family devotions, the
- * books); three essays from the shelf to
- * start with; the books; one newsletter form; and a quiet way to help for a
- * reader in a hard season. Everything here is committed data (positioning.ts,
- * shelf.json, bookShelf.ts, the family year map), so the page paints in full
- * without waiting on the API, and it imports nothing heavy: Find's search and
- * reference parser load when its field is focused, and the tonight line loads
- * just after first paint (below).
+ * A phone's first screen holds James's headline and one sentence on what the
+ * site is for, then Find (one field: a passage or a question), tonight's
+ * family devotion with "Continue" beside it (pages/home/, U18), and the
+ * doors: a line for someone new, then the Study Bible, church history, the
+ * hard questions (/topics), family devotions, the essays and the books. Below
+ * that: the latest writing with dates beside three essays to start with, the
+ * books, one newsletter form, and a quiet way to help for a reader in a hard
+ * season. No photograph of James here (his standing note); /about has it.
+ *
+ * Everything in the first screen is committed data (positioning.ts, the
+ * family year map), so the page paints without waiting on the API, and it
+ * imports nothing heavy: Find's search and reference parser load when its
+ * field is focused, and the tonight line loads just after first paint
+ * (below). The latest-writing row starts from the committed essay index and
+ * takes its dates from the listing when that answers (pages/home/HomeLatest).
  *
  * The hero's markup and classes (index.css, .home-hero*) are mirrored by the
  * static hero scripts/prerender-heads.mjs writes into "/", so the first paint
@@ -27,13 +31,14 @@ import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/S
 import { BOOK_SHELF } from "@/lib/bookShelf";
 import {
   HOME_HEADLINE,
-  HOME_WHO,
-  HOME_WHY,
+  HOME_LINE,
+  HOME_LINKED_HREF,
+  HOME_LINKED_WORD,
   META_DESCRIPTION,
-  PORTRAIT_URL,
 } from "@/lib/positioning";
 import { START_WITH, cleanExcerpt, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import HomeFind from "./home/HomeFind";
+import HomeLatest from "./home/HomeLatest";
 
 /*
  * The tonight line (pages/home/HomeTonight) reads the family year map with
@@ -77,6 +82,14 @@ function Tonight() {
   return <HomeTonight />;
 }
 
+/** The line for someone new, above the doors. */
+const START = {
+  lead: "New here?",
+  title: "Start here",
+  href: "/start",
+  note: "One road for someone new to the faith or coming back to it: what to read first, and what to do after that.",
+};
+
 /** The doors, in the order the site is built around. */
 const DOORS = [
   {
@@ -85,14 +98,14 @@ const DOORS = [
     note: "An introduction to every book, notes on all 1,189 chapters, and the one story that runs from Genesis to Revelation.",
   },
   {
+    title: "Church history",
+    href: "/theology/history",
+    note: "The church's long history from Pentecost to today: the councils, the people, and the arguments that settled what Christians confess.",
+  },
+  {
     title: "Hard questions",
     href: "/topics",
     note: "Christian nationalism, raising children in a secular age, living after Christendom, doubt, suffering, and more. Each question opens the one page on the site that answers it best.",
-  },
-  {
-    title: "Read the essays",
-    href: "/writing",
-    note: "A short shelf on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
   },
   {
     title: "Family devotions",
@@ -100,7 +113,12 @@ const DOORS = [
     note: "A devotion for tonight's table, about ten minutes long: a passage, one idea to talk about, questions, and a prayer. There is one for every week of the year.",
   },
   {
-    title: "The books",
+    title: "Essays",
+    href: "/writing",
+    note: "A short shelf on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
+  },
+  {
+    title: "Books",
     href: "/books",
     note: "The books James wrote himself. The opening of each is free to read.",
   },
@@ -142,6 +160,9 @@ const quietLink = {
 
 export default function Home() {
   const essays = startEssays();
+  // "post-Christian" in the headline opens the page that explains it.
+  // A dash keeps to the word before it, so no line of the headline opens on one.
+  const [headBefore, headAfter = ""] = HOME_HEADLINE.replace(/ \u2014/g, "\u00A0\u2014").split(HOME_LINKED_WORD);
 
   return (
     <Layout>
@@ -153,36 +174,20 @@ export default function Home() {
         structuredData={[getOrganizationSchema(), getWebSiteSchema()]}
       />
 
-      {/* WHO AND WHY. Mirrored by the static hero in prerender-heads.mjs. */}
+      {/* THE HEADLINE AND ONE SENTENCE. Mirrored by the static hero in prerender-heads.mjs. */}
       <section className="home-hero">
         <div className="home-hero__inner">
-          <div className="home-hero__byline">
-            <img
-              className="home-hero__portrait"
-              src={PORTRAIT_URL}
-              alt="James Bell"
-              width={168}
-              height={210}
-              decoding="async"
-              fetchPriority="low"
-            />
-            <div>
-              <p className="home-hero__name">James Bell</p>
-              <Link href="/about" className="home-hero__about">
-                About James
-              </Link>
-            </div>
-          </div>
-          <div>
-            <h1 className="home-hero__title">{HOME_HEADLINE}</h1>
-            <p className="home-hero__text">{HOME_WHY}</p>
-            <p className="home-hero__text">{HOME_WHO}</p>
-          </div>
+          <h1 className="home-hero__title">
+            {headBefore}
+            <Link href={HOME_LINKED_HREF}>{HOME_LINKED_WORD}</Link>
+            {headAfter}
+          </h1>
+          <p className="home-hero__text">{HOME_LINE}</p>
         </div>
       </section>
 
-      {/* FIND AND TONIGHT, then THE DOORS: set like a book's contents page. */}
-      <section style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
+      {/* FIND AND TONIGHT, then THE DOORS. */}
+      <section className="home-first">
         <div style={wrap}>
           <HomeFind />
           {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
@@ -190,7 +195,15 @@ export default function Home() {
           <h2 id="home-doors-title" className="sr-only">
             Where to begin
           </h2>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+          <ul className="home-doors">
+            <li className="home-door home-door--start">
+              <Link href={START.href} className="home-door__link">
+                <span className="home-door__title">
+                  {START.lead} <span className="home-door__go">{START.title}</span>
+                </span>
+                <span className="home-door__note">{START.note}</span>
+              </Link>
+            </li>
             {DOORS.map((door) => (
               <li key={door.href} className="home-door">
                 <Link href={door.href} className="home-door__link">
@@ -200,40 +213,52 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          {/* Not another door: one quiet line to the things people use. */}
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-4) 0 0" }}>
+          {/* Not more doors: two quiet lines to the things people use. */}
+          <p className="home-also">
             Also here, all free:{" "}
             <Link href="/resources" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>
               tools, eight-week plans, and printables
+            </Link>
+            . Leading a class or a small group?{" "}
+            <Link href="/studyguides" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>
+              The study guides come with a leader's guide
             </Link>
             .
           </p>
         </div>
       </section>
 
-      {/* START WITH THESE: three essays from the shelf, chosen by hand. */}
-      {essays.length > 0 && (
-        <section style={{ background: "var(--bone-warm)", padding: `var(--s-6) ${gutter}` }}>
-          <div style={wrap}>
+      {/* THE ESSAYS: the latest with dates, and three chosen by hand to start with. */}
+      <section style={{ background: "var(--bone-warm)", padding: `var(--s-6) ${gutter}` }}>
+        <div style={wrap} className="home-writing">
+          <div>
             <div className="home-row-head">
-              <h2 style={{ ...sectionTitle, color: "var(--ink)" }}>Start with these</h2>
+              <h2 style={{ ...sectionTitle, color: "var(--ink)" }}>Latest writing</h2>
               <Link href="/writing" style={{ ...quietLink, color: "var(--ink)" }}>
                 All the essays
               </Link>
             </div>
-            <ul className="home-essays">
-              {essays.map((e) => (
-                <li key={e.slug}>
-                  <Link href={`/writing/${e.slug}`} className="home-essay">
-                    <span className="home-essay__title">{e.title}</span>
-                    {e.line && <span className="home-essay__line">{e.line}</span>}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <HomeLatest />
           </div>
-        </section>
-      )}
+          {essays.length > 0 && (
+            <div>
+              <div className="home-row-head">
+                <h2 style={{ ...sectionTitle, color: "var(--ink)" }}>Start with these</h2>
+              </div>
+              <ul className="home-essays">
+                {essays.map((e) => (
+                  <li key={e.slug}>
+                    <Link href={`/writing/${e.slug}`} className="home-essay">
+                      <span className="home-essay__title">{e.title}</span>
+                      {e.line && <span className="home-essay__line">{e.line}</span>}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </section>
 
       {/* THE BOOKS */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: `var(--s-6) ${gutter}` }}>
@@ -304,30 +329,54 @@ export default function Home() {
   );
 }
 
-/* Below-the-fold layout for the doors, the essays, and the books. The hero's
-   styles live in index.css because the prerendered HTML needs them too. */
+/* Layout for the doors, the essays, and the books. The hero's styles live in
+   index.css because the prerendered HTML needs them too. On a phone the doors
+   are names only, two to a row, so all of them reach the first screen; from
+   761px each carries its line. */
 const HOME_CSS = `
+.home-first{background:var(--bone);padding:var(--s-5) clamp(16px,4vw,var(--s-4)) var(--s-6)}
+.home-doors{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--s-5);border-bottom:1px solid var(--border)}
 .home-door{border-top:1px solid var(--border)}
-.home-door:last-child{border-bottom:1px solid var(--border)}
-.home-door__link{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:var(--s-2) var(--s-5);align-items:baseline;padding:var(--s-3) 0;text-decoration:none;color:var(--ink)}
-.home-door__title{font-family:var(--F);font-weight:400;font-size:clamp(32px,4.6vw,56px);line-height:1.05;letter-spacing:-0.02em;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:0.14em;transition:text-decoration-color var(--dur) var(--ease)}
+.home-door--start{grid-column:1/-1}
+.home-door__link{display:block;height:100%;padding:var(--s-3) 0 var(--s-4);text-decoration:none;color:var(--ink)}
+.home-door__title{display:block;font-family:var(--F);font-weight:400;font-size:clamp(30px,3vw,40px);line-height:1.08;letter-spacing:-0.02em;margin-bottom:10px;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:0.14em;transition:text-decoration-color var(--dur) var(--ease)}
 .home-door__link:hover .home-door__title,.home-door__link:focus-visible .home-door__title{text-decoration-color:var(--mustard)}
-.home-door__note{font-family:var(--B);font-size:16px;line-height:1.65;color:var(--ink-muted);max-width:46ch}
-.home-row-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:var(--s-4)}
-.home-essays{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-4)}
-.home-essay{display:block;border-top:1px solid var(--borderdk);padding-top:var(--s-2);text-decoration:none;color:var(--ink)}
-.home-essay__title{display:block;font-family:var(--F);font-weight:500;font-size:24px;line-height:1.2;letter-spacing:-0.005em;margin-bottom:8px}
+.home-door__note{display:block;font-family:var(--B);font-size:15px;line-height:1.6;color:var(--ink-muted);max-width:40ch}
+.home-door--start .home-door__link{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px var(--s-4);padding:var(--s-3) 0}
+.home-door--start .home-door__title{font-size:clamp(24px,2.2vw,28px);margin:0;text-decoration:none}
+.home-door--start .home-door__note{max-width:none}
+.home-door__go{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}
+.home-door--start .home-door__link:hover .home-door__go,.home-door--start .home-door__link:focus-visible .home-door__go{text-decoration-thickness:2px}
+.home-also{font-family:var(--B);font-size:16px;line-height:1.9;color:var(--ink-muted);margin:var(--s-4) 0 0}
+.home-row-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:var(--s-3)}
+.home-writing{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:var(--s-5) var(--s-6);align-items:start}
+.home-latest{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--borderdk)}
+.home-latest__link{display:grid;grid-template-columns:11.5em minmax(0,1fr);gap:4px var(--s-3);align-items:baseline;min-height:56px;padding:14px 0;border-top:1px solid var(--borderdk);text-decoration:none;color:var(--ink)}
+.home-latest__date{font-family:var(--U);font-size:13px;font-weight:500;letter-spacing:0.02em;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.home-latest__title{font-family:var(--F);font-weight:500;font-size:23px;line-height:1.2;letter-spacing:-0.005em}
+.home-latest__link:hover .home-latest__title,.home-latest__link:focus-visible .home-latest__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}
+.home-essays{list-style:none;margin:0;padding:0;display:grid;gap:var(--s-3)}
+.home-essay{display:block;border-top:1px solid var(--borderdk);padding-top:14px;text-decoration:none;color:var(--ink)}
+.home-essay__title{display:block;font-family:var(--F);font-weight:500;font-size:23px;line-height:1.2;letter-spacing:-0.005em;margin-bottom:6px}
 .home-essay:hover .home-essay__title,.home-essay:focus-visible .home-essay__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}
-.home-essay__line{display:block;font-family:var(--B);font-size:15px;line-height:1.65;color:var(--ink-muted)}
+.home-essay__line{display:block;font-family:var(--B);font-size:15px;line-height:1.6;color:var(--ink-muted)}
 .home-books{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-4)}
 .home-book{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--charcoal-fg)}
 .home-book__cover{width:150px;height:auto;border-radius:var(--radius-sm);margin-bottom:var(--s-1)}
 .home-book__title{font-family:var(--F);font-weight:500;font-size:22px;line-height:1.2;max-width:24ch}
 .home-book:hover .home-book__title,.home-book:focus-visible .home-book__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}
 .home-book__sub{font-family:var(--B);font-size:14px;line-height:1.55;color:var(--charcoal-fg-muted);max-width:34ch}
+@media (max-width:900px){
+  .home-writing{grid-template-columns:minmax(0,1fr)}
+}
 @media (max-width:760px){
-  .home-door__link{grid-template-columns:minmax(0,1fr);gap:6px}
-  .home-essays,.home-books{grid-template-columns:minmax(0,1fr)}
+  .home-first{padding-top:var(--s-3);padding-bottom:var(--s-5)}
+  .home-doors{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-2)}
+  .home-door__link,.home-door--start .home-door__link{display:flex;align-items:center;min-height:48px;padding:0}
+  .home-door__title,.home-door--start .home-door__title{font-size:23px;margin:0}
+  .home-door__note{display:none}
+  .home-latest__link{grid-template-columns:minmax(0,1fr)}
+  .home-books{grid-template-columns:minmax(0,1fr)}
   .home-book{display:grid;grid-template-columns:88px minmax(0,1fr);column-gap:var(--s-2);align-items:start}
   .home-book__cover{width:88px;grid-row:span 2;margin:0}
 }

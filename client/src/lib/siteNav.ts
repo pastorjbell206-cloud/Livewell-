@@ -63,6 +63,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
     links: [
       { label: "Study overview", href: "/study", primary: true },
       { label: "The Study Bible", href: "/study/bible", primary: true },
+      { label: "New to faith? Start here", href: "/start", primary: true },
       { label: "Church history", href: "/theology/history", primary: true },
       { label: "Creeds and confessions", href: "/resources/creeds", primary: true },
       { label: "Bible background", href: "/resources/context", primary: true },
@@ -83,6 +84,7 @@ export const SITE_NAV_GROUPS: SiteNavGroup[] = [
       { label: "Eight-week plans for hard seasons", href: "/plans", primary: true },
       { label: "Self-checks", href: "/assessments", primary: true },
       { label: "All tools", href: "/tools", primary: true },
+      { label: "New to faith? Start here", href: "/start", primary: true },
       { label: "Find help in a hard season", href: "/help" },
       { label: "How-to guides", href: "/how-tos" },
       { label: "Downloads and PDFs", href: "/downloads" },

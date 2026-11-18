@@ -1065,6 +1065,11 @@
       "permanent": true
     },
     {
+      "source": "/pathways/discipleship",
+      "destination": "/start",
+      "permanent": true
+    },
+    {
       "source": "/pillars",
       "destination": "/writing",
       "permanent": true

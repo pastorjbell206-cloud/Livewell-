@@ -180,7 +180,7 @@ export default function Dashboard() {
         title: "Start Here Diagnostic",
         description:
           "Not sure where to begin? This diagnostic helps you find the right starting point based on what you are carrying.",
-        href: "/start",
+        href: "/start/quiz",
       });
     }
 

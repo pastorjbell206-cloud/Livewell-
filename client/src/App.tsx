@@ -167,6 +167,7 @@ const StudyBibleGuides = lazy(() => import("./pages/StudyBibleGuides"));
 const StudyBibleYear = lazy(() => import("./pages/StudyBibleYear"));
 const Answers = lazy(() => import("./pages/Answers"));
 const Topics = lazy(() => import("./pages/Topics"));
+const Start = lazy(() => import("./pages/Start"));
 const Topic = lazy(() => import("./pages/Topic"));
 const Assessments = lazy(() => import("./pages/Assessments"));
 const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
@@ -427,7 +428,9 @@ function Router() {
         <Route path="/help/:slug">{(p) => <CarePage key={p.slug} />}</Route>
         <Route path="/plans" component={PlansIndex} />
         <Route path="/plans/:slug">{(p) => <CarePlan key={p.slug} />}</Route>
-        <Route path="/start" component={StartHereQuiz} />
+        {/* /start is the road for someone new (pages/Start.tsx); the Find Your Path quiz moved one step in. */}
+        <Route path="/start" component={Start} />
+        <Route path="/start/quiz" component={StartHereQuiz} />
         <Route path="/start-here" component={ToStartRedirect} />
         {/* Retired sections: 301'd in vercel.json, mirrored here for in-app links */}
         <Route path="/leadership/*?" component={ToResourcesRedirect} />
@@ -494,6 +497,8 @@ function Router() {
         <Route path="/reading-paths" component={ToWritingRedirect} />
         <Route path="/reading-paths/:slug" component={ReadingPathDetail} />
         <Route path="/pathways" component={ToWritingRedirect} />
+        {/* The discipleship pathway dead-ended on retired essays; /start is the road now (vercel.json 301). */}
+        <Route path="/pathways/discipleship" component={ToStartRedirect} />
         <Route path="/pathways/:slug" component={TopicPathway} />
         <Route path="/subscribe" component={EmailSignup} />
         <Route path="/authors/:slug" component={ToAboutRedirect} />
