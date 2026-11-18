@@ -323,9 +323,71 @@ export const ANSWERS: Answer[] = [
     slug: "what-if-christianity-is-wrong",
     question: "What if Christianity is wrong?",
     paragraphs: [
-      "If Christianity is wrong, everything falls. Paul says that if Christ has not been raised the faith is futile and the dead are simply dead. But the question is not the cost-free clarity it feels like at two in the morning. To say the universe is meaningless, that love is chemistry, that justice is a preference, is to hold claims as large as any creed. Everyone is believing something they cannot prove.",
-      "Scripture builds on a doubter. Thomas demands evidence, and the risen Christ invites his hand into the wound; the father in Mark 9 prays \"I believe; help my unbelief\", and Jesus heals the boy anyway. Terrified men who had run died rather than recant what they claimed to see, and people do not die for a story they know they invented. Even the morality you can't stop believing, the worth of the weak, is on Holland's account borrowed Christian capital.",
-      "No position escapes the wager. The skeptic bets his one life on the tomb staying shut; you bet yours on it opening. Both bets are total, and thoughtful people on both sides know it. The question might end a version of your faith, the sheltered one that was always going to break. Let it. You may find you can't get the stone to stay in front of the tomb.",
+      "If Christianity is wrong, everything falls. Paul said so himself: if Christ has not been raised, the faith is futile and the dead are simply dead. That's worth taking seriously, and I won't soften it. But the question cuts both ways. Not believing is also a way of living with the question, and it can be wrong too. Nobody gets to stand outside and wait for proof. So the fair question isn't whether you could be wrong. It's which risk you take with your eyes open, and whether the evidence gives you any reason to take this one. I think it does, and the faith tells you exactly where to check.",
+    ],
+    sections: [
+      {
+        heading: "The question at full strength",
+        body: [
+          "Start with the case for the other side, because it's strong. In 1877 the mathematician W. K. Clifford published an essay called \"The Ethics of Belief\" in the Contemporary Review. He told the story of a shipowner who quiets his own doubts about an old ship and sends it to sea full of emigrants. Clifford said the man is guilty whether the ship sinks or not, because he believed what he wanted, not what the evidence allowed. Then he stated a rule: \"It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence.\" If the evidence for Christianity is thin, Clifford says, believing it anyway is a moral failure, however much comfort it brings.",
+          "John Loftus, a former minister who became an atheist, added a second test in The Outsider Test for Faith (2013). Most people hold the religion of the place and family they were born into. A Christian looks at Hindu or Muslim belief with a skeptic's eye and finds it wanting. Loftus asks him to turn the same eye on his own faith, as an outsider would. That is a fair demand, and it hurts, because it's true that most of us didn't choose our first beliefs after weighing the options.",
+          "And there's the answer Christians often reach for first, Pascal's wager, which deserves the criticism it gets. In the Pensées, published in 1670 after his death, Blaise Pascal urged the undecided to bet on God: \"If you gain, you gain all; if you lose, you lose nothing.\" J. L. Mackie, in The Miracle of Theism (1982), pressed two objections in his own words. There are more than two options on the table, since every religion can offer the same bet. And working yourself into a belief because it pays is a kind of self-deception. I grant both. If the only reason to be a Christian were that it's a safe bet, Clifford would be right to call it a failure of honesty.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "\"What if Christianity is wrong?\" sounds like one question, but it's two. One is about evidence: is it true? The other is about decision: what should a person do while the evidence is still being weighed, which for most of us is the whole of life? The first is answered by history and argument, and other pages on this site take it up. This page is about the second, and about how it connects to the first. It isn't a proof. It's an argument about what honesty requires when a question can't be avoided and can't be settled beyond doubt.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          "In 1896 the American philosopher William James answered Clifford in a lecture called \"The Will to Believe\". He didn't say evidence doesn't matter. He said that some choices are what he called genuine options: live (both answers are real possibilities to you), forced (there's no third way of avoiding the choice), and momentous (the stakes are large and the chance won't come again). For choices of that kind, and only those, he wrote: \"Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds.\" Here is the argument as I would put it.",
+          {
+            kind: "An argument about deciding under uncertainty (after William James, 1896, in my words)",
+            premises: [
+              "Whether Christianity is true is, for many people, a live, forced and momentous question: refusing to decide means living as if it is false.",
+              "The evidence on the question is real but does not compel a conclusion either way. Thoughtful people who have weighed it come down on both sides.",
+              "Where a question is forced and momentous and the evidence doesn't settle it, a person may rightly decide with more than the evidence alone, so long as he keeps looking at the evidence.",
+            ],
+            conclusion: "Neither belief nor unbelief is the safe default. Both are commitments made under risk, and the honest question is not \"could I be wrong?\" but \"which risk am I taking, and on what grounds?\"",
+          },
+          "The weight sits on the third premise, and Clifford would deny it. But look at the first. The agnostic says he isn't betting, only withholding. James's point is that in a forced option, withholding has the same result as saying no. You can suspend judgment about a distant galaxy and lose nothing. You can't suspend judgment about whether to pray, whether to forgive as one who has been forgiven, or what you will tell your children death is, without in fact living one answer. So I'd put it this way: Clifford's rule works for shipowners and scientists, where you can wait for more evidence before you act. It doesn't work where waiting is itself the act.",
+        ],
+      },
+      {
+        heading: "Where Christianity could be shown wrong",
+        body: [
+          "Here is the part that separates this from Pascal. Christianity doesn't present itself as a safe bet. Pascal said that if you believe and turn out to be wrong, you lose nothing: \"You will be faithful, honest, humble, grateful, generous, a sincere friend, truthful.\" Paul says almost the opposite. \"If in Christ we have hope in this life only, we are of all people most to be pitied\" (1 Corinthians 15:19). He stakes everything on one event: \"And if Christ has not been raised, then our preaching is in vain and your faith is in vain\" (1 Corinthians 15:14). Few faiths name the fact that would sink them. This one does, and it's a public fact about a particular man in a particular city, not a private feeling.",
+          "So the decision James describes isn't made in the dark. The evidence that bears on it is historical, and it can be weighed by an outsider, which is exactly what Loftus asks for. Within a few years of the crucifixion, the men who had run away were saying they had seen him alive, and some of them were killed for it. Acts records that Herod \"killed James the brother of John with the sword\" (Acts 12:2). The Jewish historian Josephus, writing in the 90s, tells of the stoning of \"the brother of Jesus, who was called Christ, whose name was James\" around 62 (Antiquities 20.200). A letter from the church in Rome late in the first century, which we call 1 Clement, says that Peter and Paul died as martyrs. The evidence for how most of the other apostles died is later and less certain, and I won't lean on it.",
+          "This doesn't prove they were right. People die for false beliefs all the time. What it shows is that they weren't lying: men don't die for a story they know they made up. That narrows the options to the ones the resurrection page weighs, that they were mistaken in some way, or that they saw what they said. Scripture doesn't hide that the first witnesses doubted. Thomas refused to believe until he could touch the wounds, and the risen Christ said to him, \"Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe\" (John 20:27). A faith that wanted to be shielded from evidence wouldn't tell that story about its own apostle.",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "The best reply a skeptic can make is that James's argument proves too much. If your passions may decide any forced and momentous question the evidence leaves open, then a Muslim, a Mormon and a Hindu may each decide for his own faith on the same grounds, and James has given everyone permission to believe what he already wanted to. That's the many-gods objection to Pascal in a new coat, and it has real force. I don't think it's fully answered.",
+          "Two things can be said. First, James never claimed his argument picks the right faith. It only shows that believing isn't a failure of honesty when a question is genuinely open and you can't avoid it. Which faith, if any, is true goes back to evidence, and that's where the outsider test belongs. I accept the test. The Christian claim is unusually open to it, because it rests on what happened in Jerusalem in the spring of about 30 or 33, not on a private revelation no one else can check. Second, the outsider test applies to unbelief too. A secular person raised in a secular family, who finds religion strange because everyone around him does, also holds the beliefs of his time and place. The historian Tom Holland argues in Dominion (2019) that many of the convictions a secular Westerner takes as plain common sense, that the weak and the poor have worth, came into the West through Christianity. If he's right, then the outsider test asks unbelief a hard question as well: whether the values it lives by can stand once the faith they grew from is gone.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this shows that Christianity is true. It shows that believing it isn't the reckless bet Clifford describes, and that not believing isn't the neutral ground it feels like at two in the morning. To say the universe has no meaning, that love is chemistry, that justice is a preference, is to hold claims as large as any creed. Everyone is living by something he cannot prove. The skeptic bets his one life on the tomb staying shut, and the Christian bets his on it opening. Both bets are total, and thoughtful people on both sides know it.",
+          "If Christianity is wrong, Paul is right that we are to be pitied, and I won't pretend there's a consolation prize. But the question doesn't have to frighten anyone who is willing to look. The father in Mark 9 brought his son to Jesus with half a faith and said so: \"I believe; help my unbelief!\" (Mark 9:24). Jesus healed the boy anyway. Honest doubt has a place at that table.",
+          "The question might end a version of your faith, the sheltered one that was always going to break. Let it. Then go and look at the tomb, the way Thomas did. You may find you can't get the stone to stay in front of it.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Blaise Pascal", title: "Pensées", year: "1670" },
+      { author: "W. K. Clifford", title: "The Ethics of Belief", in: "Contemporary Review", year: "1877", note: "The classic case that believing without sufficient evidence is wrong." },
+      { author: "William James", title: "The Will to Believe", year: "1896" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982", note: "Its chapter on belief without reason answers Pascal and James." },
+      { author: "N. T. Wright", title: "The Resurrection of the Son of God", year: "2003" },
+      { author: "John W. Loftus", title: "The Outsider Test for Faith: How to Know Which Religion Is True", year: "2013", note: "The strongest case against: the test this answer accepts." },
+      { author: "Tom Holland", title: "Dominion: How the Christian Revolution Remade the World", year: "2019" },
     ],
     essaySlug: "what-if-we-are-wrong",
     essayTitle: "What If Christianity Is Wrong?",
@@ -928,9 +990,77 @@ export const ANSWERS: Answer[] = [
     slug: "why-does-god-allow-natural-disasters",
     question: "Why does God allow earthquakes, cancer, and animal suffering?",
     paragraphs: [
-      "This is the harder half of the problem of evil, and most answers never reach it. Free will can be offered as an account of the torturer. It says nothing about the tsunami, the child's leukemia, or the millions of years of predation and parasitism that ran long before any human could sin. The philosopher William Rowe put the sharpest form of it in 1979: a fawn burned in a forest fire, dying in agony over days, with no human to witness or learn from it. That suffering looks simply pointless, and I won't pretend otherwise.",
-      "What can be said is smaller than a solution. A world stable enough for embodied creatures to act, build, and love at all may be a world running on fixed laws, and the same physics that lets bone grow lets it break. Scripture refuses to call the present arrangement the intended one: the creation \"was subjected to futility\" and groans together in the pains of childbirth until now (Romans 8:20-22). And when Job demanded an explanation, God answered with his own presence and the wild otherness of creation rather than a theodicy.",
-      "None of that answers the fawn, and I'd distrust any answer that claims to. The Christian claim is not that the suffering makes sense now. It is that it is neither the last word nor the intended word, and that God did not stay outside it explaining. He entered it. If you are in the middle of this, you don't need my argument. You need someone to sit with you, and that is the church's actual job.",
+      "This is the harder half of the problem of evil, and most answers never reach it. Free will can be offered as an account of the torturer. It says nothing about the tsunami, the child's leukemia, or the fawn that burns in a forest fire far from anyone. I can't explain any one of them, and I'd distrust anyone who said he could. What I can offer is an argument about the argument. The skeptic's case rests on a claim about what a good God would make, and that claim is much harder to know than it looks. Christians have three serious things to say about it, and each has a cost. And the Christian hope was never that this makes sense now. It is that suffering isn't the last word, and that God didn't stay outside it.",
+    ],
+    sections: [
+      {
+        heading: "The objection at full strength",
+        body: [
+          "Start with the other side, because it has the facts. On the morning of November 1, 1755, All Saints' Day, an earthquake struck Lisbon while many of its churches were full for Mass. A tsunami surged up the Tagus into the lower city, and fires burned for days. Voltaire wrote a poem asking what crime had been committed by the children who lay crushed and bleeding on their mothers' breasts. Nobody chose it. That is what philosophers mean by natural evil: suffering that comes from the way the world works, not from anyone's will.",
+          "David Hume saw where this leads. In his Dialogues Concerning Natural Religion, published in 1779, the skeptic Philo looks over the whole of nature, its predators and plagues, and says it shows a blind Nature \"pouring forth from her lap, without discernment or parental care, her maimed and abortive children.\" Darwin felt the same weight with more evidence in hand. In a letter of May 22, 1860, to the botanist Asa Gray, he wrote: \"I cannot persuade myself that a beneficent and omnipotent God would have designedly created the Ichneumonidae with the express intention of their feeding within the living bodies of Caterpillars, or that a cat should play with mice.\" The Ichneumonidae are wasps that lay their eggs inside living caterpillars, and the young eat their host from within.",
+          "In 1979 William Rowe gave the problem its best-known picture. In some distant forest, lightning starts a fire, and a fawn is trapped in it, horribly burned, lying in terrible agony for several days before it dies. So far as we can see, Rowe said, its suffering serves no purpose at all. Ten years later Paul Draper sharpened the case in the journal Noûs, in an article called \"Pain and Pleasure: An Evidential Problem for Theists\" (1989). He didn't argue that suffering makes God impossible. He compared two hypotheses. On one, God made the world. On the other, which he called the hypothesis of indifference, nothing behind nature cares either way about the creatures in it. Draper argued that the pain and pleasure we actually find, bound tightly to survival and handed out with no regard to anyone's goodness, is just what the second would lead you to expect, and a surprise on the first.",
+          "I grant what's true in this, and it's a great deal. Free will doesn't reach the fawn. If the earth is as old as most geologists hold, predators and parasites were at work for ages before there were people to sin. Christians differ about that history, but on any view the wasp and the caterpillar are here now. And some of what Christians say in reply is worse than silence. In 1756 the Jesuit Gabriel Malagrida published a pamphlet blaming the Lisbon earthquake on the city's sins. Jesus refused that reading of a disaster in his own day. Of the eighteen killed when the tower in Siloam fell, he asked, \"do you think that they were worse offenders than all the others who lived in Jerusalem? No, I tell you\" (Luke 13:4-5).",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "Draper's argument isn't a proof that God doesn't exist, and he never said it was. It's an argument from evidence: a fact counts toward whichever account makes it less surprising. That's a fair way to argue, and I'll answer in the same coin. So the question isn't whether a Christian can explain each wasp. Nobody can. The question is whether the suffering in nature is really more surprising if God exists than if he doesn't, once everything Christians mean by God is in the picture. What follows is what philosophers call a defense, not a theodicy. It doesn't claim to know God's reasons. It asks whether a good God could have reasons of this kind, and so whether the evidence points as hard as it seems to.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          "Here is the skeptic's case in its simplest form.",
+          {
+            kind: "An argument from evidence (after Draper, 1989, in my words)",
+            premises: [
+              "In nature, pain and pleasure are tied closely to survival, and they fall on creatures with no regard to their goodness, including creatures that can do no wrong.",
+              "That pattern is just what we would expect if nothing behind nature cares about the creatures in it.",
+              "That pattern is much less to be expected if the world was made by a God who is all-powerful and wholly good.",
+            ],
+            conclusion: "The suffering in nature is strong evidence for indifference over God. Unless something else outweighs it, a reasonable person should lean toward unbelief.",
+          },
+          "The first premise is true. The second is close enough to true. The weight sits on the third, because it's a claim about what a perfectly good and all-powerful God would make, and to know that you'd need to know what goods such a world has to make room for and what they cost. Scripture doesn't hide the wildness the third premise points to. \"The young lions roar for their prey, seeking their food from God\" (Psalm 104:21). When God finally answers Job, he asks, \"Who provides for the raven its prey?\" (Job 38:41). He claims the predators as his own, and he gives Job no explanation. So the Christian can't say that nature looks tame. The question is whether a good God might make a world this wild, and Christians have given three serious answers.",
+        ],
+      },
+      {
+        heading: "Three answers, and what each costs",
+        body: [
+          "The first is about laws. C. S. Lewis argued in The Problem of Pain (1940) that creatures who can meet, act and depend on one another need a nature with fixed laws, and fixed laws don't bend to spare whoever is in the way. The water that carries a boat can drown a child. Richard Swinburne pressed this further in Providence and the Problem of Evil (1998). Creatures can only be responsible for one another if they can learn what harms and what helps, and they learn it by watching how the world works. Geology adds a point neither man needed. The moving plates that cause earthquakes also, on the case Peter Ward and Donald Brownlee make in Rare Earth (2000), drive the cycle of carbon through rock and air that keeps the planet's temperature fit for complex life. The cost is plain: God could, it seems, step in each time. But a world where fire never burns the wrong creature isn't a world with laws, and the creatures in it couldn't learn, plan or keep one another safe.",
+          "The second goes deeper, and it belongs to Christians who accept the long history of life that most scientists describe. Christopher Southgate argues in The Groaning of Creation (2008) that a world which makes its creatures through long processes, not all at once, may be the only way, or the best way, to bring about creaturely selves at all: beings with their own skill and hunger, the speed of the leopard and the eye of the hawk. The same processes that make the hawk make its prey suffer. Southgate doesn't stop there. He holds that God suffers with every creature and won't leave its victims without redemption, and, following the theologian Jay McDaniel, he is willing to speak of a pelican heaven for the chick pushed from the nest. The cost: nobody can show it's the only way. A skeptic can say an all-powerful God could have done it without the wasps, and I can't prove otherwise. Neither can he prove that God could.",
+          "The third is the oldest, and it's Paul's. \"For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to corruption\" (Romans 8:20-21). Scripture refuses to call the present order the intended one. Christians read that in more than one way, and I won't choose among them here. Many hold that animal death came into the world through human sin, and most of them hold that the earth is young. Many others hold that the earth is very old and read the futility as the condition of a creation made good but not yet finished. In his chapter on animal pain, Lewis suggested another reading: that some mighty created power may have been at work for ill on the material world before man appeared. The creeds don't settle it, and faithful churches divide over it. The cost of all three readings is that none can be checked from here. What they share is the claim that matters for the argument: the fawn's death isn't what God calls good, and it isn't the end of the story.",
+          "I'll leave one answer aside. Some have argued that animals feel pain without the inner awareness that makes it suffering. Michael Murray gives views of that kind their most careful hearing in Nature Red in Tooth and Claw (2008). I don't find them believable. The fawn's pain looks real, and Jesus didn't tell us to doubt it. Of the sparrows sold two for a penny, he said, \"not one of them will fall to the ground apart from your Father\" (Matthew 10:29).",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "The best reply a skeptic can make goes like this. Every one of these answers comes down to saying a good God might have reasons we can't see. But if you can always say that, no evidence can ever count against God, and a belief no evidence can touch isn't worth much. That reply has real force, and I don't think it's fully answered. Two things can be said.",
+          "First, I'm not claiming nothing could count against the Christian faith. It can be tested at a point that has nothing to do with wasps: whether Jesus of Nazareth was raised from the dead. That question has its own page, and if the answer is no, Paul says plainly that \"your faith is futile and you are still in your sins\" (1 Corinthians 15:17). Few faiths name the evidence that would sink them. This one does.",
+          "Second, the skeptic's hypothesis carries a cost of its own. If nothing behind nature cares, the fawn's agony is a fact about nerves and fire, and the protest that started the argument, that it shouldn't be so, is only a feeling we happen to have. That doesn't refute Draper; his argument needs no moral view from me. But it does mean the choice isn't between a world with suffering and a world without it. Both views have to carry the suffering. Indifference explains the pain well. It can't call it wrong, and it can't promise it will end.",
+          "The Christian hope does both, and it's older than Darwin. John Wesley's sermon on Romans 8, \"The General Deliverance\", from the early 1780s, argued that the animals will share in the restoration of all things. Scripture doesn't say whether the fawn itself will be raised, and I won't say more than it does. But Isaiah's picture is of a creation where predation ends: \"They shall not hurt or destroy in all my holy mountain\" (Isaiah 11:9).",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this explains the fawn, and I'd distrust any answer that claims to. At most it shows that the suffering in nature counts less decisively against God than Draper's third premise says, because none of us is placed to know what a good God's world would have to cost. That's a modest result. It leaves the wasp in the caterpillar and the child in the cancer ward exactly where they were. It doesn't make Christianity true. It only clears room for asking whether it is.",
+          "The Christian claim is not that the suffering makes sense now. It is that it is neither the last word nor the intended word, and that God did not stay outside it explaining. He entered it. The Son of God took a body that could be hurt, and on the cross he prayed the first line of Psalm 22: \"My God, my God, why have you forsaken me?\" (Matthew 27:46). If he was raised, then the world in which fawns burn is not the world God means to keep.",
+          "If you are in the middle of this, you don't need my argument. You need someone to sit with you, and that is the church's actual job. Find Help has people you can call, today if you need them. Job never learned why. He was allowed to ask, and in the end he said, \"I had heard of you by the hearing of the ear, but now my eye sees you\" (Job 42:5).",
+        ],
+      },
+    ],
+    sources: [
+      { author: "David Hume", title: "Dialogues Concerning Natural Religion", year: "1779" },
+      { author: "Charles Darwin", title: "Letter to Asa Gray, 22 May 1860", in: "The Life and Letters of Charles Darwin, vol. 2 (1887)", year: "1860" },
+      { author: "C. S. Lewis", title: "The Problem of Pain", year: "1940" },
+      { author: "William L. Rowe", title: "The Problem of Evil and Some Varieties of Atheism", in: "American Philosophical Quarterly", year: "1979" },
+      { author: "Paul Draper", title: "Pain and Pleasure: An Evidential Problem for Theists", in: "Noûs", year: "1989", note: "The strongest case against: the argument this answer meets." },
+      { author: "Richard Swinburne", title: "Providence and the Problem of Evil", year: "1998" },
+      { author: "Peter D. Ward and Donald Brownlee", title: "Rare Earth: Why Complex Life Is Uncommon in the Universe", year: "2000" },
+      { author: "Christopher Southgate", title: "The Groaning of Creation: God, Evolution, and the Problem of Evil", year: "2008" },
+      { author: "Michael J. Murray", title: "Nature Red in Tooth and Claw: Theism and the Problem of Animal Suffering", year: "2008" },
     ],
     essaySlug: "natural-evil-and-animal-suffering",
     essayTitle: "The Suffering God Never Ordered",

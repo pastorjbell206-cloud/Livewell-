@@ -232,3 +232,64 @@ Performance note for the lead (not built): the gap is all in time to interactive
 ### Next in the ranking
 
 Item 7 is the `/faq/does-god-exist` page (rewrite to match the argued God answer, or fold it into links to it). The next Honest Answer is item 8, "Why does God allow earthquakes, cancer, and animal suffering?", then item 9, "What if Christianity is wrong?".
+
+## 5. The third run: natural evil, "What if Christianity is wrong?", and /faq/does-god-exist
+
+Date: 2026-11-18. The run before this one was cut off by a machine restart with the natural-evil answer drafted and uncommitted. That draft was checked line by line, five sentences were corrected (below), and it was committed; the other two pieces were done from scratch. Same pattern as the pilot. No sentence about James's life is added anywhere; neither answer uses his biography. No position is taken on the age of the earth or on evolution.
+
+### Why does God allow earthquakes, cancer, and animal suffering?
+
+The argument in three sentences. The skeptic's strongest case is Draper's (1989): the pain and pleasure in nature, tied to survival and blind to goodness, are just what you'd expect if nothing behind nature cares, and a surprise if God made it, and the weight sits on the claim about what a good God would make. Christians have three serious answers, each with a cost: a world with stable laws that creatures can learn (Lewis 1940, Swinburne 1998, with the geology of Rare Earth), a creation that makes selves through long processes (Southgate 2008), and Paul's creation "subjected to futility" read in more than one way (the young-earth reading, the old-earth reading, and Lewis's fallen created power, all left open). The strongest reply, that "God may have reasons" makes theism untestable, is met by naming where the faith can be tested (1 Corinthians 15:17) and by noting that indifference explains the pain but cannot call it wrong or promise its end; none of this explains the fawn.
+
+Before: "What can be said is smaller than a solution. A world stable enough for embodied creatures to act, build, and love at all may be a world running on fixed laws, and the same physics that lets bone grow lets it break."
+
+After: "The first is about laws. C. S. Lewis argued in The Problem of Pain (1940) that creatures who can meet, act and depend on one another need a nature with fixed laws, and fixed laws don't bend to spare whoever is in the way. ... The cost is plain: God could, it seems, step in each time. But a world where fire never burns the wrong creature isn't a world with laws, and the creatures in it couldn't learn, plan or keep one another safe."
+
+Words: 265 before; 2,198 after (with headings and the laid-out argument). The old closing ("None of that answers the fawn ... He entered it. If you are in the middle of this, you don't need my argument...") is kept in its own words.
+
+Corrected from the uncommitted draft before it was committed: Rowe's fawn no longer says "No person sees it, learns from it or is tested by it" (the suffering essay's ledger cut that sentence as not Rowe's; it now gives his scenario and "so far as we can see"); Darwin's letter is quoted from *Life and Letters* ("beneficent and omnipotent", "Caterpillars"); Southgate's "pelican heaven" is credited to Jay McDaniel, as Southgate does, instead of an unverified chapter title; Murray no longer "grants that few will find it believable" (not seen); Wesley's sermon is "from the early 1780s" (sources give 1781 and 1782).
+
+Sources: Hume, *Dialogues* (1779); Darwin to Asa Gray, 22 May 1860; Lewis, *The Problem of Pain* (1940); Rowe (1979); Draper, "Pain and Pleasure" (*Noûs*, 1989, the strongest case against); Swinburne, *Providence and the Problem of Evil* (1998); Ward and Brownlee, *Rare Earth* (2000); Southgate, *The Groaning of Creation* (2008); Murray, *Nature Red in Tooth and Claw* (2008).
+
+### What if Christianity is wrong?
+
+The argument in three sentences. The question at full strength is Clifford's (1877: "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence") and Loftus's outsider test (2013), and Pascal's wager deserves Mackie's two objections (many options; self-deception). William James (1896) showed that for a live, forced and momentous question, refusing to decide means living one answer, so neither belief nor unbelief is a safe default and the honest question is which risk to take and on what grounds. Unlike Pascal, Paul refuses the safe-bet comfort ("of all people most to be pitied") and stakes the faith on one public event an outsider can examine; the strongest reply (James licenses every faith) is granted in part and answered by sending the choice of faith back to evidence, and by turning the outsider test on unbelief too (Holland's Dominion).
+
+Before: "No position escapes the wager. The skeptic bets his one life on the tomb staying shut; you bet yours on it opening."
+
+After: "The agnostic says he isn't betting, only withholding. James's point is that in a forced option, withholding has the same result as saying no. ... Clifford's rule works for shipowners and scientists, where you can wait for more evidence before you act. It doesn't work where waiting is itself the act."
+
+Words: 221 before; 1,782 after. The old answer's main sentences (Paul's "everything falls", Thomas, Mark 9:24, "people do not die for a story they know they invented", the two bets, "Let it", the stone) are kept, some in its own words. Its claim that the disciples "died rather than recant" is narrowed to what the resurrection essay's ledger supports (James son of Zebedee, James the brother of Jesus, Peter and Paul; the rest later and less certain).
+
+Sources: Pascal, *Pensées* (1670); Clifford, "The Ethics of Belief" (1877); James, "The Will to Believe" (1896); Mackie, *The Miracle of Theism* (1982); Wright, *The Resurrection of the Son of God* (2003); Loftus, *The Outsider Test for Faith* (2013, the strongest case against); Holland, *Dominion* (2019).
+
+### /faq/does-god-exist
+
+How the /faq pages are built: each page file (`client/src/pages/faq/*.tsx`) holds its eight questions and answers as plain strings, rendered by `components/FaqPage.tsx` as an open-and-close list (plain text, no links inside answers), with one "Go deeper" link and three related links; the same strings feed the page's FAQPage structured data. Nothing else (prerender, search index) reads them.
+
+What changed: the eight questions are kept word for word, and so are the address, the SEOMeta title, description and keywords, and the three structured-data blocks (the FAQPage block now carries the new answer text, as it did the old). Each answer now argues or points: the arguments for God are given as the God answer gives them, with the premise that carries the weight in each and where an honest person can get off; the arguments against are given at full strength with a one-line reply each; suffering states the logical and evidential forms with Plantinga and Rowe; science drops the unchecked "51% of scientists" (Pew 2009) line and the founders list, and keeps only names in the science answer's ledger (Draper, White, Lemaître, Polkinghorne, Collins); "not sure" drops the unverified Tillich claim and corrects Psalm 13:1 to the ESV's "O LORD". Each answer names the Honest Answer that argues it in full. The "Go deeper" link went to /answers with "Read the full article"; it now goes to /answers/does-god-actually-exist ("Read the argued answer"). The standfirst "answered by a pastor who spent years asking it himself -- from the other side" became "answered by a pastor who came to faith from atheism" (his confirmed fact, no invented detail). Words in the answers: 2,120 before, 1,983 after. No "--" left.
+
+### What I ran, and what passed
+
+- Merged the latest `origin/claude/todo-implementation-hhp4bm` before the gates. Search index and passage index rebuilt (12 chapter files).
+- `pnpm check`: pass. All 35 content-gate commands in `ci.yml`: pass. `pnpm test`: 144 files passed, 7 skipped; 1,642 tests passed, 73 skipped. ESLint on the changed source files: clean. `hq.test.tsx` names the nine argued answers.
+- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender`, `pnpm run audit:canonicals`: pass.
+- Screenshots at 390 x 844 and 1440 x 900, day and night, in `/home/user/elite-shots/apol/` (`natural-evil-*`, `what-if-wrong-*` with `-argument` and `-sources`; `faq-does-god-exist-*` with `-open` and `-more`). No horizontal overflow.
+- Lighthouse (three runs, median, `serve-like-vercel.mjs`): both answers accessibility 100, CLS 0.000, best practices 96, SEO 100, performance 83 (LCP 4.6 s); /faq/does-god-exist 93 (accessibility 100, CLS 0.000); an unchanged short answer in the same session 87. Same gap as the pilot; no worse. The cheap performance ideas from the last run were not tried, as asked.
+
+### Not verified
+
+- A real phone, Safari, or a screen reader.
+- Diderot's 1746 answer to Pascal ("an imam could reason just as well") could not be found in a search, so it is not used; the many-options objection is given in Mackie's name.
+- Ward and Brownlee's plate-tectonics thermostat rests on secondary accounts of the book (Ward's interview and pages citing chapter 9), not the book's own text.
+- Collins's *The Language of God* (2006) on the faq page rests on the science answer's ledger, which marks it standard bibliography.
+- None of the three has been read by James.
+
+### Waits for James
+
+1. Natural evil: the page sets out three readings of Romans 8:20 (young earth, old earth, a fallen created power) and chooses none, by your rule. If you want it to say where you land, tell us.
+2. Neither answer uses your biography. If you want one sentence of your own on either (you came to faith from atheism), say where.
+
+### Next in the ranking
+
+Item 10: `/faq/is-the-bible-historically-accurate` and `/faq/can-science-and-faith-coexist`, brought into line with the argued Bible and science answers the same way as /faq/does-god-exist.
