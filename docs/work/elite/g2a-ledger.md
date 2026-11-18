@@ -541,3 +541,23 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Joseph about 1800 BC; Job undated; Psalms about 1000 BC; Romans about AD 57; Revelation about AD 95 | Traditional or approximate | Marked |
 | "Leader to confirm" (4: Dostoevsky, Yancey, Keller, Wolterstorff) | Titles known; no specific claim attributed to them except Dostoevsky, which is paraphrased | Notes removed |
 | Scripture: Psalm 13:1-2, 22:1; Habakkuk 1:2-3; Job 1:8, 1:21, 2:9, 2:13, 3:11, 13:15, 38:1-4, 38:12, 38:31, 42:5, 42:7, 42:11; Lamentations 3:17-18, 3:32-33; Jeremiah 12:1; Genesis 18:25, 50:20; Romans 8:18, 8:22-23, 8:28; Acts 2:23; Isaiah 25:8, 53:3-4, 55:8-9; Deuteronomy 29:29; Matthew 27:46; Luke 22:44; Hebrews 2:18, 4:15; Philippians 2:6-8; John 9:2-3, 11:35, 20:27; 2 Corinthians 11:24-25; 1 Corinthians 15:54-55; 1 Peter 1:3; Revelation 21:3-5 | ESV, from memory | Quoted with references |
+
+### raising-believers
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (30); five sons (summary, s1 teaching, s5 teaching, FAQ 11, script, pulpit); "raised without a father" (primer); "a father who cannot save his own children" | Brief: each fact once where it does work; no added feeling | Five sons kept once (s1 teaching, with the old script's "can't save a single one of them"); fatherless cut; the rest cut |
+| Book plug, "drawn from James Bell's book Raising Believers" (summary, bulletin, pulpit, invite) | client/src/lib/bookShelf.ts: not on the shelf | Plugs cut; guide title unchanged |
+| Help lines | Searched the old file for counselor, crisis, abuse, danger, police: none | Script's grief sentence kept word for word |
+| Sticky Faith (2011), Powell and Clark: room to voice doubt in warm relationships went with lasting faith | Known (Fuller Youth Institute, College Transition Project) | Kept as reported, with the caveat that research promises nothing |
+| "The thing one writer called a Christianity emptied of the gospel" | Unattributed quotation | Cut |
+| Bushnell, Christian Nurture, "1830s" | Discourses on Christian Nurture 1847; Christian Nurture 1861 | Dated 1847 (and 1861) |
+| Luther's catechisms "circa 1520s"; Westminster Shorter Catechism 1647; Susanna Wesley "circa 1700s" | Known: 1529; 1647; early 1700s | Dated |
+| Augustine and Monica "circa 400" | Confessions about 397 to 400 | "Late 390s AD" |
+| Taylor, A Secular Age (2007), "conditions of belief" | Known | Named in s4 going deeper (old: "a generation of thinkers") |
+| James K. A. Smith, You Are What You Love (2016) | Known; already in the old bibliography | Named in s2 going deeper |
+| Shema, Hannah, Ephesians, 2 Timothy dates | Traditional or approximate | Marked |
+| "Leader to confirm" (6: Powell and Clark, Tripp, Fitzpatrick and Thompson, Farley, Keller, Earley) | Titles and authors known; no specific claim attributed except Sticky Faith's general finding | Notes removed; "Disappearance of Childhood... Various, leader to select" placeholder cut |
+| Romans 8:38-39 "the love that holds the believer holds their wandering child too" | Overreach; Paul speaks of those in Christ | Note reworded |
+| Covenant promise to children of believers | Second-order; read differently by different traditions | Both readings named, left open |
+| Scripture: Deuteronomy 6:4-7, 6:20-21, 7:9; Genesis 25:27-28, 25:34; 1 Samuel 1:27-28, 8:1-3; 2 Samuel 18:33; Proverbs 22:6; John 1:12-13; Psalm 13:1-2, 78:4-7, 145:4; Exodus 12:26-27; 2 Timothy 1:5, 1:12, 3:14-15; Job 38:1-3; Matthew 11:2-6, 13:20-21; Mark 9:24; 1 Peter 3:15; Ephesians 2:8-9, 6:1-4; Colossians 2:6-7; Jeremiah 17:7-8; Luke 15:13, 15:17, 15:20; Romans 8:38-39; Philippians 1:6; Isaiah 1:2, 49:15-16; Acts 2:39 | ESV, from memory | Quoted with references |
