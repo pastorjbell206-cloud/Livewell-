@@ -189,3 +189,46 @@ Same method as above. "Search" is a WebSearch run in this second run (12 at most
 | Revelation 14:11, the smoke of torment rising forever | ESV | Paraphrased, not quoted |
 | Jesus' warnings among the sternest in the New Testament, many aimed at the religious (e.g. Matthew 23:33) | Reading of the Gospels | Stated as "many", not as a count |
 | Sources: Russell 1927; Kvanvig 1993; Lewis 1940 and 1945; Fudge 1982; Edwards and Stott 1988; Talbott 1999; Volf 1996 | Search for each except Volf's year (standard) | Verified |
+
+## Why does God allow earthquakes, cancer, and animal suffering? (third run)
+
+"Essay ledger" here is `docs/work/essays/ledgers/why-does-god-allow-suffering.md`. Searches this answer: 10. Local texts: Hume (GITenberg #4583) and *Life and Letters of Charles Darwin*, vol. II (GITenberg #2088), fetched from GitHub and grepped.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Lisbon, 1 November 1755, All Saints' Day; churches full for Mass; tsunami up the Tagus into the lower city; fires for days | Essay ledger (tsunami, fires); search (Wikipedia, Earth Magazine, EBSCO: churches crowded with worshippers at morning Mass) | Verified |
+| Voltaire's poem: what crime had the children crushed and bleeding on their mothers' breasts committed | Essay ledger (McCabe translation) | Verified, paraphrased |
+| Hume, *Dialogues* (1779), Philo, Part XI: "pouring forth from her lap, without discernment or parental care, her maimed and abortive children" | GITenberg #4583, line 2893 to 2894 (the sentence ends there with an exclamation in Hume; the quotation stops inside it) | Verified, quoted |
+| Darwin to Asa Gray, Down, 22 May 1860: "I cannot persuade myself that a beneficent and omnipotent God would have designedly created the Ichneumonidae with the express intention of their feeding within the living bodies of Caterpillars, or that a cat should play with mice." | GITenberg #2088, lines 3808 to 3812; search (Darwin Correspondence Project DCP-LETT-2814) | Verified, quoted |
+| Rowe 1979, the fawn in a lightning-started fire in some distant forest, horribly burned, several days of agony; "so far as we can see" pointless | Essay ledger | Verified; the draft's "No person sees it, learns from it or is tested by it" removed |
+| Draper, "Pain and Pleasure: An Evidential Problem for Theists", *Noûs* 23 (1989), 331-350; evidential, not logical; the hypothesis of indifference; pain and pleasure tied to survival | Search (Wikipedia, CCEL Plantinga, Secular Frontier series) | Verified; Draper's argument set out "in my words" |
+| Malagrida's 1756 pamphlet blamed the city's sins | Essay ledger | Verified |
+| Luke 13:4-5; Psalm 104:21; Job 38:41; Romans 8:20-21; Matthew 10:29; 1 Corinthians 15:17; Isaiah 11:9; Matthew 27:46; Job 42:5 | ESV | Verified, quoted |
+| Lewis, *The Problem of Pain* (1940): a shared world needs fixed laws | Essay ledger | Verified, paraphrased |
+| Lewis, same, chapter 9: "some mighty created power had already been at work for ill on the material universe" before man | Search (Goodreads note with the passage; chapter 9 is "Animal Pain") | Verified, given as paraphrase |
+| Swinburne, *Providence and the Problem of Evil* (Oxford, 1998): responsibility needs knowledge of what harms and helps, learned from how the world works | Standard bibliography; the argument is his well-known one from knowledge of natural processes | Verified on standard bibliography, paraphrased |
+| Ward and Brownlee, *Rare Earth* (2000): plate tectonics drives the carbon cycle that keeps temperatures fit for complex life | Search (Ward's Big Think interview; HyperPhysics page citing the book, ch. 9) | Verified from secondary accounts, paraphrased |
+| Southgate, *The Groaning of Creation* (Westminster John Knox, 2008): the "only way" argument; God suffers with creatures; redemption of victims; "pelican heaven", after Jay McDaniel | Search (Zygon articles; library record) | Verified; McDaniel credited; no chapter title claimed |
+| Murray, *Nature Red in Tooth and Claw* (Oxford, 2008): neo-Cartesian views given a careful hearing | Search (Wikipedia, NDPR review by Engel, 2009) | Verified; the draft's "grants that few will find it believable" removed |
+| Wesley, "The General Deliverance" (Sermon 60), on Romans 8: the animals share in the restoration | Search (CCEL, Wesley Corpus 1781, EPM 1781, Pedlar 1782) | Verified; dated "the early 1780s" |
+
+## What if Christianity is wrong? (third run)
+
+Searches this answer: 8. Local text: Pascal, *Pensées*, Trotter translation (GITenberg #18269), fetched and grepped.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Clifford, "The Ethics of Belief", *Contemporary Review*, 1877; the shipowner, guilty whether or not the ship sinks; "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence." | Search (SEP, Wikipedia, gwern copy of the 1877 text) | Verified, quoted |
+| Loftus, a former minister turned atheist; *The Outsider Test for Faith* (Prometheus, 2013) | Search (Wikipedia, publisher, New Books Network) | Verified, paraphrased |
+| Pascal, *Pensées*, published 1670 after his death (1662): "If you gain, you gain all; if you lose, you lose nothing." and "You will be faithful, honest, humble, grateful, generous, a sincere friend, truthful." | GITenberg #18269, lines 3766 to 3767 and 3831 to 3833; search for 1670 | Verified, quoted |
+| Mackie, *The Miracle of Theism* (1982), "Belief without Reason": Pascal's wager fails because there are more than two options, and cultivating belief for gain is self-deception; a section on James | Search (table of contents; Feser on p. 202) | Verified, given as paraphrase "in his own words" |
+| James, "The Will to Believe" (1896), to the philosophical clubs of Yale and Brown; live, forced, momentous; "Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds" | Search (Wikipedia, PBS, Princeton course text) | Verified, quoted |
+| 1 Corinthians 15:14, 15:19; John 20:27; Mark 9:24; Acts 12:2 | ESV (Acts 12:2: resurrection essay ledger) | Verified, quoted |
+| Josephus, *Antiquities* 20.200, written in the 90s: "the brother of Jesus, who was called Christ, whose name was James", stoned around 62 | Essay ledger (did-the-resurrection-happen, Perseus Whiston) | Verified, quoted |
+| 1 Clement, late first century, on Peter and Paul's martyrdom; evidence for the other apostles later and less certain | Essay ledger | Verified |
+| Holland, *Dominion* (2019): the worth of the weak and the poor came into the West through Christianity | Search (New Statesman, Gospel Coalition, Spiked reviews) | Verified, paraphrased |
+| Diderot's imam reply to Pascal (1746) | Search did not find the text | Not used |
+
+## /faq/does-god-exist (third run)
+
+No new search. Every claim of fact in the new answers is in this ledger already: the God answer's lines (Leibniz, Russell 1948, Weinberg, Rees, Hoyle, Mackie, Hume 1779, Darwin 1859, Paley 1802, Dawkins 2006, Schellenberg 1993, Pascal's light and darkness, Swinburne, Oppy), the suffering answer's (Mackie 1955, Plantinga 1974 and its reception, Rowe 1979, Ehrman 2008), the science answer's (Draper 1874, White 1896, Lemaître 1927 and 1931, Polkinghorne, Collins), and the resurrection answer's (1 Corinthians 15:17). Scripture (John 20:27, Mark 9:24, Psalm 13:1) is ESV. Removed as unchecked: Pew 2009 "51% of scientists"; the founders list (Copernicus to Mendel); Faraday and Maxwell; Wiseman at NASA; Tillich on doubt; Robert Adams; the argument from consciousness as a claim that materialism has not resolved it.
