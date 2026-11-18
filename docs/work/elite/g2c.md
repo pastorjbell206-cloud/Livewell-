@@ -199,3 +199,28 @@ Stopped at a clean guide boundary after the-parables, to leave room for the gate
 - Cut: the FAQ about the writer bringing himself in (12 to 11); "Leader to confirm" and "Leader to weigh" notes; the biography as credential (summary, primer, facilitator script, FAQ 3, three promo pieces).
 - Help: no help topic for this guide in sensitive-pages.json. Added: session 2's case study (a woman hurt by a harsh church) and session 5's (a grieving widower) point to a pastor or counselor and Find Help; the primer names Find Help and the two tender sessions; the deeper notes say being sinned against is not the same as sinning.
 - Biography: "I came to faith from atheism, so I've held this view myself" once, session 1 teaching, beside the materialist account. The old guide said "I once held it myself" in the same place; nothing beyond that was added.
+
+### What I ran (seventh run)
+
+- `node scripts/validate-studyguides.mjs` after the repair and after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Help lines in the-psalms checked by script, word for word, against the old file; sensitive-pages.json and crisis data untouched.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" as an adjective appears only inside quoted Scripture. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-psalms (Calvin's preface), 0 for the-story-of-the-bible.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,642 tests).
+
+### What only James can supply (seventh run)
+
+- The Parables: no longer names his atheism at all after the repair; if he wants his own memory of that objection there, it has to come from him.
+- The Psalms: "I came to faith from atheism and had to learn to pray from scratch" in session 1. The old promo kit said this of him; whether he'd say it this way is his to confirm.
+- The Story of the Bible: "I came to faith from atheism, so I've held this view myself" (the materialist account) in session 1, carried from the old "I once held it myself."
+
+### Not done or not verified (seventh run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Bonhoeffer's and Lewis's arguments paraphrased from memory of the books, not checked against copies.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-story-of-the-bible. Next in order: **the-undivided-life**, then witness, womanhood, work-and-vocation.
