@@ -366,3 +366,32 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" on Williams, McLaren, Ortlund (3) | Titles and authors known; Williams's notes on names and places in the Gospels known | Notes removed; McLaren marked "a voice to understand, not an endorsement" |
 | Help lines | Old guide carried none (no 988, hotline, police or counselor sentence; checked by script) | None removed. Added, as care for the abuse discussion in session 4: believe the person, talk privately, and where someone is in danger help them reach police, child protective services or an advocate outside the church |
 | Timeline | Old guide had none | None added |
+
+## economic-justice
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" (44); "the writer of this study is a pastor in Michigan" | Narrator talk; no location given by James | First person for his teaching; Michigan line cut |
+| "I have five sons" (session 1) and "conditions I would not accept for my sons" (session 2); "a man raising five sons" (primer) | Confirmed fact; use at most once | Kept once, session 2 teaching (the shirt line, where it does work); the other two cut |
+| Jubilee "debts dissolve" (summary, teaching, glossary, timeline, devotionals) | Leviticus 25 returns land and frees Israelites in debt service; the debt release is Deuteronomy 15's seventh year | Corrected everywhere; Deuteronomy 15:1-2 named for the debt release |
+| Amos 2:6 as "a courtroom verdict bought with silver" | One reading; others read debt slavery | Both readings stated |
+| Keller: "tsedaqah without mishpat is to be privately pious and publicly complicit" | Not verified as his wording | Attribution removed; the point stated in the study's own words; Generous Justice kept in bibliography |
+| Keller (Counterfeit Gods) as source of "we aim every hard saying one bracket up" | Not verified | Attribution removed in discussion, case study, devotional and bibliography note |
+| Wright: gleaning makes provision an entitlement, not generosity | Not verified as his claim | Stated in the study's own words from Leviticus 19:9-10; Wright kept in bibliography with a general note |
+| Niebuhr, Moral Man and Immoral Society (1932): private benevolence and justice | Known book and argument | Paraphrase, "argued", no quotation |
+| Needle's Eye gate "no evidence before the Middle Ages" | Late and unsupported | "No evidence such a gate ever existed"; called one of the latest softer readings |
+| "Rich young ruler" | Composite of Mark (a man), Matthew (young), Luke (ruler) | Composite named in the teaching |
+| Zacchaeus "keeps half his goods" | Luke 19:8, gives half to the poor | "Gives half his goods to the poor, keeps the rest" |
+| Chrysostom, sermons on the rich man and Lazarus; exile | Known | Paraphrase; exile tied to his later Constantinople preaching |
+| Basiliad "circa 365" | Begun about 369 | circa 369 |
+| Amos "circa 750 BC" | Usually dated about 760 BC (Amos 1:1, "two years before the earthquake") | circa 760 BC |
+| Acts 4 "circa AD 34" | Early 30s | "early 30s AD"; Acts 4:34 quoted |
+| Wesley "1760 preaches The Use of Money" | Preached from 1744; printed 1760 | Restated |
+| Sider 1973 | First published 1977 | 1977 |
+| Social Gospel "circa 1900" | Rauschenbusch, Christianity and the Social Crisis, 1907 | 1907, book named |
+| Jubilee "circa 1446 BC" | Traditional dating, debated | Kept, marked traditional |
+| Mandeville 1714, Private Vices, Public Benefits; Calvin 1545 letter on usury; Third Lateran 1179; Rerum Novarum 1891; Keller 2010 | Known | Kept |
+| 1 Timothy 6:6-10, 17-19; Matthew 6:24; 2 Corinthians 8:9; Amos 2:6-7, 5:24, 8:5; Isaiah 1:17, 5:8, 58:6-7, 61:1-2; Leviticus 19:9-10, 25:9-23; Deuteronomy 15:1-2; Exodus 3:7-8, 16:18; Mark 10:17-27; Luke 4:18-21, 9:58, 12:15, 19:9; Revelation 3:17; Ezekiel 34:4; Micah 6:8; Matthew 6:12 | ESV, from memory | Paraphrased verses replaced with ESV wording |
+| "Leader to confirm" (4: Myers, Blomberg, Sider, DeYoung and Gilbert) | Titles and authors known | Notes removed; Myers marked "suggestive rather than settled" |
+| caritas narrowing to almsgiving | Broadly known word history | Kept, "in common English" |
+| Help lines | Old guide carried none (checked by script) | None added |
