@@ -731,8 +731,12 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   past buyer of a held book still downloads it after the Stripe check.
 - **Outside the site (James, 2026-11-17)**: the Pastors Connection Network
   has no link, ask, or redirect here; `site-structure.test.ts` fails on a
-  path redirect that leaves the site. No title, years in ministry, or book
-  count is stated until James gives one set.
+  path redirect that leaves the site. No title or book count is stated
+  until James gives one set; on 2026-11-18 he gave one fact, that he has
+  been a pastor for 16 years, said once on /about and once on /connect.
+- **The podcast is off the site (James, 2026-11-18)**: Following the Way has
+  no address yet, so it is in no channel list, card, menu or link until it
+  has one (his own sentence on /about naming it stays, unlinked).
 - **Design parts (2026-11-17)**: page titles use `--fs-h1` (only Home and
   About use `--fs-display`), section titles `--fs-h2`, section side padding
   `var(--gutter)`; one button family (`.btn` / `.pg-action`, `--quiet`,

@@ -1,0 +1,40 @@
+/* /app, "Get LiveWell on your phone or computer" (pages/AppInstall.tsx).
+ * Bands from Home (.home-sec); the device tabs, steps and facts here.
+ * Tokens only. */
+.ai-install{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.ai-install .btn{gap:10px}
+.ai-install__status{margin:0;font-family:var(--U);font-size:16px;line-height:1.5;color:var(--ink)}
+.ai-install__status:empty{display:none}
+
+/* The device tabs. */
+.ai-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 var(--s-4)}
+.ai-tab{min-height:48px;padding:0 18px;border:1.5px solid var(--borderdk);border-radius:var(--radius-sm);background:var(--bone);font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer}
+.ai-tab:hover{border-color:var(--ink)}
+.ai-tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--bone);box-shadow:inset 0 -2px 0 var(--mustard)}
+.ai-tab:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+.ai-panel{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:var(--s-4) var(--s-5);align-items:start}
+.ai-panel:focus-visible{outline:2px solid var(--ink);outline-offset:6px}
+.ai-steps{list-style:none;margin:0;padding:0;counter-reset:none}
+.ai-step{display:flex;align-items:flex-start;gap:16px;padding:14px 0;border-top:1px solid var(--borderdk);font-family:var(--U);font-size:17px;line-height:1.5;color:var(--ink)}
+.ai-step:first-child{border-top:0;padding-top:0}
+.ai-step__n{flex:none;display:grid;place-items:center;width:36px;height:36px;border:1.5px solid var(--art-ink);background:var(--art-paper);font-family:var(--F);font-size:22px;line-height:1;color:var(--art-ink)}
+.ai-note{margin:var(--s-3) 0 0;font-family:var(--U);font-size:15px;line-height:1.55;color:var(--ink-muted)}
+
+/* What it is. */
+.ai-facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--s-5)}
+.ai-fact{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-top:1px solid var(--borderdk)}
+.ai-fact__icon{flex:none;display:grid;place-items:center;width:48px;height:48px;border:1.5px solid var(--art-ink);background:var(--art-paper);color:var(--art-ink)}
+.ai-fact__name{display:block;font-family:var(--F);font-size:22px;line-height:1.2;color:var(--ink)}
+.ai-fact__line{display:block;margin-top:2px;font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink-muted)}
+.ai-more{max-width:68ch;margin:var(--s-4) 0 0;font-family:var(--U);font-size:16px;line-height:1.6;color:var(--ink)}
+.ai-more + .ai-more{margin-top:var(--s-2)}
+.ai-more a{color:var(--ink);font-weight:500;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.2em}
+
+@media (max-width:760px){
+  .ai-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ai-tab{padding:0 10px}
+  .ai-panel{grid-template-columns:minmax(0,1fr)}
+  .ai-panel__art{max-width:260px}
+  .ai-facts{grid-template-columns:minmax(0,1fr)}
+}

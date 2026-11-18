@@ -1,0 +1,16 @@
+/* The app bar (AppBar.tsx): LiveWell opened from its icon, on a phone.
+ * Tokens only. Hidden from 761px up, where the header holds everything. */
+.lw-appbar{display:none}
+@media (max-width:760px){
+  html.lw-standalone{--lw-appbar-h:calc(60px + env(safe-area-inset-bottom))}
+  html.lw-standalone body{padding-bottom:var(--lw-appbar-h)}
+  .lw-appbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:190;background:var(--bone);border-top:1px solid var(--border);padding:0 max(4px,env(safe-area-inset-right)) env(safe-area-inset-bottom) max(4px,env(safe-area-inset-left))}
+  .lw-appbar__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+  .lw-appbar__item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:60px;padding:6px 2px;font-family:var(--U);font-size:12px;font-weight:500;line-height:1.1;color:var(--ink-muted);text-decoration:none;text-align:center}
+  .lw-appbar__item[aria-current="page"]{color:var(--ink)}
+  .lw-appbar__item[aria-current="page"] svg{color:var(--mustard-text)}
+  /* The bar holds Search, and the menu holds Subscribe: the header keeps
+     room for Back, the name, Find Help and the menu. */
+  html.lw-standalone .sn-search--phone,html.lw-standalone .sn-subscribe--phone{display:none}
+  .lw-appbar__item:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
+}
