@@ -26,7 +26,7 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 ## Where this share stands
 
 Done, committed and pushed: 1 to 14 (after-christendom through deep-roots).
-Not started: 15 to 20 (doubt through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the next run should start at contentment, then deconstruction.
+Not started: 15 to 20 (doubt through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the fourth did contentment, deconstruction and deep-roots. The next run should start at doubt, then economic-justice.
 
 Third run notes: christian-nationalism and church-and-empire each carry 25 short devotionals (five per session); these were rewritten too, keeping each day's title and passage, as the pastoral-health pilot did. Neither guide nor character-before-competence had help lines.
 
@@ -72,9 +72,11 @@ Second run (attention, baptism-and-communion, believe): validate-studyguides aft
 
 Third run (character-before-competence, christian-nationalism, church-and-empire): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed (run after guide 2 and again after guide 3); pnpm check passed; pnpm test 144 files passed, 7 skipped, 1639 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 4 (Willard and Ortberg on hurry; Peterson's shopkeepers; Niebuhr's "demonic" line, not found; Whitehead and Perry on religiosity).
 
+Fourth run (contentment, deconstruction, deep-roots): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed after the last guide; pnpm check passed; pnpm test 144 files passed, 7 skipped, 1640 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 2 (Burroughs's definition of contentment, found; the authors of Surprised by Doubt, Chatraw and Carson). Deconstruction keeps all seven of its abuse and reporting sentences word for word, checked by script. Contentment and deep-roots had no help lines. Every case study in deconstruction was told as a real pastor's story; all five are now framed as "Suppose".
+
 ## What I did not do or verify
 
-- Guides 12 to 20 are not rewritten.
+- Guides 15 to 20 (doubt through friendship) are not rewritten.
 - ESV wording was quoted from memory; there is no ESV in the repository to check against.
 - Book dates and titles marked "Known" in the ledger were not searched.
 - PDFs were not rebuilt (another unit owns pnpm pdfs).
