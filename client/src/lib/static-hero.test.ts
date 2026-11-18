@@ -147,6 +147,29 @@ describe("mountAfterStaticHero", () => {
     expect(mount).toHaveBeenCalledTimes(1);
     expect(instances[0].disconnected).toBe(true);
   });
+
+  it("waits up to 2.5 s by default: a slow machine reports the hero's paint late", () => {
+    renderShell();
+    const mount = vi.fn();
+    mountAfterStaticHero(mount, { path: "/", Observer: fakeObserver().Observer });
+    vi.advanceTimersByTime(2499);
+    expect(mount).not.toHaveBeenCalled();
+    vi.advanceTimersByTime(1);
+    expect(mount).toHaveBeenCalledTimes(1);
+  });
+
+  it("mounts at once on a tap or a key, then never again", () => {
+    renderShell();
+    const { Observer, instances } = fakeObserver();
+    const mount = vi.fn();
+    mountAfterStaticHero(mount, { path: "/", Observer });
+    document.querySelector(".home-hero__text")!.dispatchEvent(new Event("pointerdown", { bubbles: true }));
+    expect(mount).toHaveBeenCalledTimes(1);
+    expect(instances[0].disconnected).toBe(true);
+    document.dispatchEvent(new KeyboardEvent("keydown", { bubbles: true }));
+    vi.advanceTimersByTime(3000);
+    expect(mount).toHaveBeenCalledTimes(1);
+  });
 });
 
 describe("the static hero the gate watches", () => {
