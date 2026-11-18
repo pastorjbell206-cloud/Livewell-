@@ -14,8 +14,9 @@ seeking to live well. The work refuses to separate intellectual depth from
 lived experience.
 
 The site exists to help people live well in post-Christian America and to
-understand the long history of the Christian faith. It is organized as five
-doors: Study, Topics, Family, Essays, and About (with the books).
+understand the long history of the Christian faith. It is organized as seven
+doors: Bible, History, Questions, Family, Tools, Essays, and About (with the
+books). One page lists everything the site holds.
 
 ## Start here
 
@@ -24,6 +25,8 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   the Study Bible, learning to pray, finding a church, the eight-week plan for
   a new Christian, the catechism, and a study to go through with someone):
   https://www.livewellbyjamesbell.co/start
+- Everything on LiveWell (every door, room and tool on one page, with a box
+  to find one): https://www.livewellbyjamesbell.co/explore
 
 ## Study
 

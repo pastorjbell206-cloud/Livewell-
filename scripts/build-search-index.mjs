@@ -110,6 +110,7 @@ const MAIN_PAGES = [
   { title: "Creeds and confessions", href: "/resources/creeds", blurb: "The creeds and confessions of the church, with where each came from.", keywords: "apostles creed nicene creed confession of faith" },
   { title: "The Bible in its context", href: "/resources/context", blurb: "Guides to the world each part of the Bible was written in.", keywords: "background culture history context guides" },
   { title: "Study guides for groups", href: "/studyguides", blurb: "Bible studies to work through with a group, a class, or on your own.", keywords: "small group bible study sunday school class discussion" },
+  { title: "Everything on LiveWell", href: "/explore", blurb: "Every door, room and tool on LiveWell, on one page.", keywords: "everything site map all pages index directory list what is on this site" },
   { title: "New to faith? Start here", href: "/start", blurb: "Where to begin if you are new to the faith or coming back to it.", keywords: "start here new christian beginner begin discipleship first steps coming back where to start" },
   { title: "Topics: the hard questions", href: "/topics", blurb: "The hard questions of faith, each with the answers, plans and tools that go with it.", keywords: "topics questions subjects issues" },
   { title: "Honest Answers", href: "/answers", blurb: "Short, direct answers to the questions people ask about the Christian faith.", keywords: "questions answers faq doubt objections apologetics" },

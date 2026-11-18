@@ -195,7 +195,7 @@ export default function Home() {
       {/* THE TEN DOORS */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
         <div className="home-wrap">
-          <SectionHead id="home-doors-title" eyebrow="Ten doors" title="Where to begin." />
+          <SectionHead id="home-doors-title" eyebrow="Ten doors" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
           <ul className="home-doors">
             {DOORS.map((d, i) => (
               <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>

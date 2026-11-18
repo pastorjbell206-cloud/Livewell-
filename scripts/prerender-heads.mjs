@@ -532,6 +532,8 @@ const HUB_LISTINGS = {
     };
     return ((d && d.rows) || []).map((r) => ({ title: r.askedAs, href: opens(r), blurb: r.line || "" }));
   } },
+  // Every door, room and page of the site catalogue, in its words (/explore).
+  "/explore": { label: "Everything on LiveWell", cap: 200, load: () => catalogEntries().filter((e) => e.href.startsWith("/")) },
   "/studyguides": { label: "Study guides", cap: 80, load: () => {
     const d = readJsonSafe("client/public/studyguides/index.json");
     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
@@ -592,10 +594,15 @@ async function loadAnswers() {
   return answersCache;
 }
 
-/** The family links of the site menu (client/src/lib/siteNav.ts), in its words. */
+/** The family pages of the site catalogue (client/src/lib/siteCatalog.ts), in its words. */
 function familyNavLinks() {
-  const src = fs.readFileSync(path.join(REPO_ROOT, "client/src/lib/siteNav.ts"), "utf8");
-  return [...src.matchAll(/\{ label: "([^"]+)", href: "(\/family[^"]*)"/g)].map((m) => ({ title: m[1], href: m[2], blurb: "" }));
+  return catalogEntries().filter((e) => e.href.startsWith("/family"));
+}
+
+/** Every entry of the site catalogue, read as text: one line each, id, name, line, href. */
+function catalogEntries() {
+  const src = fs.readFileSync(path.join(REPO_ROOT, "client/src/lib/siteCatalog.ts"), "utf8");
+  return [...src.matchAll(/name: "([^"]+)", line: "([^"]*)", href: "([^"]+)"/g)].map((m) => ({ title: m[1], href: m[3], blurb: m[2] }));
 }
 
 /** Weekly devotions and the daily sets, by the id the family index gives them. */

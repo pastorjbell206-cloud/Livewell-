@@ -146,7 +146,10 @@ describe("Home's doors", () => {
     setToday(2026, 10, 27);
     renderHome();
     const doors = screen.getByRole("region", { name: "Where to begin." });
+    // The section head offers the whole site first, then come the ten cards.
+    expect(within(doors).getByRole("link", { name: "See everything on LiveWell" }).getAttribute("href")).toBe("/explore");
     expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([
+      "/explore",
       "/study/bible",
       "/theology/history",
       "/topics",

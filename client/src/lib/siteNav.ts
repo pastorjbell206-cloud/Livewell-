@@ -1,34 +1,24 @@
 /**
- * The site's grouped navigation: one source of truth for the header and the
- * footer.
+ * The site's grouped navigation, derived from the catalogue (lib/siteCatalog.ts).
  *
- * LiveWell is a simple site James keeps adding to: helping people live well in
- * post-Christian America and understand the long history of the faith. The
- * header carries the five doors James chose on 2026-10-26, named for what a
- * reader came to do: Study (the Study Bible, church history, reading
- * Scripture in its world), Topics (the hard questions, with the answers,
- * plans, self-checks, and tools), Family (the household at the table),
- * Essays, and About (the man behind it, with his books, speaking, and
- * contact). Find Help, search, and Subscribe sit beside them on every page.
- * The old Resources door folded into Topics and Family; /resources stays live
- * as the one page of everything to use, at the foot of the Topics menu and in
- * the footer.
+ * James chose seven doors on 2026-11-18 in place of the five of 2026-10-26:
+ * Bible, History, Questions, Family, Tools, Essays, About, with Find Help,
+ * search and Subscribe beside them on every page. Each door lists six rooms
+ * or fewer. The catalogue holds the names, lines, icons and addresses; this
+ * module keeps the older group shape for the code that reads it.
  *
- * Two surfaces, one map: `primary: true` puts a link in the header; the footer
- * shows every link in the group. A group with exactly one primary link renders
- * in the header as a plain link, not a one-item menu. Nothing is deleted: every
- * destination that left the header is still a live route, reachable from the
- * hub that now holds it (/study, /topics, /family, /resources, /tools).
- *
- * The map is committed and static, so the header paints in full before any
- * API call answers (the first-paint contract in CLAUDE.md).
+ * A group's first link is the door's own page; the rest are its rooms. Every
+ * link is a header link (`primary`). A group with one link (Essays) renders
+ * in the header as that plain link, not a one-item menu.
  */
+import { DOORS, EVERYTHING_ENTRY, HELP_ENTRY, LIBRARY_ENTRY, SEARCH_SHORTCUT_IDS, entryById } from "./siteCatalog";
+
 export interface SiteNavLink {
   label: string;
   href: string;
   /** true → render as a plain <a> (external / mailto), not a wouter <Link>. */
   external?: boolean;
-  /** true → show in the header. The footer shows every link in the group. */
+  /** true → show in the header. */
   primary?: boolean;
 }
 
@@ -49,94 +39,21 @@ export function soleHeaderLink(group: SiteNavGroup): SiteNavLink | null {
 }
 
 /** Crisis care, one click from every page (header utility and footer). */
-export const HELP_LINK: SiteNavLink = { label: "Find Help", href: "/help" };
+export const HELP_LINK: SiteNavLink = { label: HELP_ENTRY.name, href: HELP_ENTRY.href };
 
 /** What this reader saved and started, kept on this device (phone menu and footer). */
-export const LIBRARY_LINK: SiteNavLink = { label: "My Library", href: "/my-library" };
+export const LIBRARY_LINK: SiteNavLink = { label: LIBRARY_ENTRY.name, href: LIBRARY_ENTRY.href };
 
-export const SITE_NAV_GROUPS: SiteNavGroup[] = [
-  {
-    // The anchor of the site: the whole Bible, the church's long memory, and
-    // how to read Scripture in the world it was written in, with the year's
-    // plan through the whole story (U28) at the foot.
-    title: "Study",
-    links: [
-      { label: "Study overview", href: "/study", primary: true },
-      { label: "The Study Bible", href: "/study/bible", primary: true },
-      { label: "New to faith? Start here", href: "/start", primary: true },
-      { label: "Church history", href: "/theology/history", primary: true },
-      { label: "Creeds and confessions", href: "/resources/creeds", primary: true },
-      { label: "Bible background", href: "/resources/context", primary: true },
-      { label: "Small group study guides", href: "/studyguides", primary: true },
-      { label: "Compare the views", href: "/theology/compare", primary: true },
-      { label: "Read the Bible in a year (2027)", href: "/study/bible/guides/whole-story-2027", primary: true },
-    ],
-  },
-  {
-    // The hard questions of life in post-Christian America, in the words
-    // people bring them, and what to use on them: the topics index (/topics),
-    // the honest answers, the care plans, the self-checks, and the tools. Most
-    // of the old Resources door folded in here; /resources stays at the foot.
-    title: "Topics",
-    links: [
-      { label: "Hard questions, by topic", href: "/topics", primary: true },
-      { label: "Honest answers to hard questions", href: "/answers", primary: true },
-      { label: "Eight-week plans for hard seasons", href: "/plans", primary: true },
-      { label: "Self-checks", href: "/assessments", primary: true },
-      { label: "All tools", href: "/tools", primary: true },
-      { label: "New to faith? Start here", href: "/start", primary: true },
-      { label: "Find help in a hard season", href: "/help" },
-      { label: "How-to guides", href: "/how-tos" },
-      { label: "Downloads and PDFs", href: "/downloads" },
-      { label: "Booklets for elders and church leaders", href: "/resources/hard-issues-series" },
-      { label: "All resources, on one page", href: "/resources", primary: true },
-    ],
-  },
-  {
-    // The household: tonight's devotion, the year of them, the catechism, and
-    // the reading plans, from the /family hub.
-    title: "Family",
-    links: [
-      { label: "Family overview", href: "/family", primary: true },
-      { label: "Tonight's family devotion", href: "/family/tonight", primary: true },
-      { label: "All family devotions", href: "/family/devotions", primary: true },
-      { label: "The family catechism: questions and answers for kids", href: "/family/catechism", primary: true },
-      { label: "Family Bible reading plans", href: "/family/reading-plans", primary: true },
-    ],
-  },
-  {
-    // A short shelf James has read and signed.
-    title: "Essays",
-    links: [{ label: "Essays", href: "/writing", primary: true }],
-  },
-  {
-    // The person is the ministry: who James is, his books (the three titles
-    // on the /books shelf), how to reach him, and the work that lives at its
-    // own address.
-    title: "About",
-    links: [
-      { label: "About James", href: "/about", primary: true },
-      { label: "Books", href: "/books", primary: true },
-      { label: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america" },
-      { label: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror" },
-      { label: "Believe", href: "/books/believe" },
-      { label: "Speaking", href: "/speaking", primary: true },
-      { label: "Contact", href: "/contact", primary: true },
-      { label: "Find James: Substack, Facebook, and more", href: "/connect", primary: true },
-      { label: "Subscribe on Substack", href: "/subscribe" },
-      { label: "Following the Way (podcast)", href: "http://followingthewaypodcast.com/", external: true },
-      { label: "ENDS (training pastors in remote regions)", href: "https://endsinitiative.org", external: true },
-    ],
-  },
-];
+/** The one page of everything (phone menu, footer, search shortcuts). */
+export const EVERYTHING_LINK: SiteNavLink = { label: EVERYTHING_ENTRY.name, href: EVERYTHING_ENTRY.href };
+
+export const SITE_NAV_GROUPS: SiteNavGroup[] = DOORS.map((d) => ({
+  title: d.name,
+  links: [d.page, ...d.rooms].map((e) => ({ label: e.name, href: e.href, primary: true })),
+}));
 
 /** Shortcuts under the search box: where most searches were headed anyway. */
-export const SEARCH_SHORTCUTS: SiteNavLink[] = [
-  { label: "The Study Bible", href: "/study/bible" },
-  { label: "Church history", href: "/theology/history" },
-  { label: "Topics", href: "/topics" },
-  { label: "Tonight's family devotion", href: "/family/tonight" },
-  { label: "Essays", href: "/writing" },
-  { label: "Books", href: "/books" },
-  { label: "Find help", href: "/help" },
-];
+export const SEARCH_SHORTCUTS: SiteNavLink[] = SEARCH_SHORTCUT_IDS.map((id) => {
+  const e = entryById(id)!;
+  return { label: e.name, href: e.href };
+});

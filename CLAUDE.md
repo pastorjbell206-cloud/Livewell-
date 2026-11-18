@@ -683,33 +683,30 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
   static routes, the JSON-library manifests, and database content. `llms.txt`
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
-- **IA (simplified site, approved by James on 2026-10-12; doors chosen by
-  James on 2026-10-26; implemented)**: a
+- **IA (simplified site, approved by James on 2026-10-12; seven doors
+  chosen by James on 2026-11-18; implemented)**: a
   simple site he keeps adding to, for living well in post-Christian America
-  and understanding the church's long history. The header has five doors from
-  the committed map in `client/src/lib/siteNav.ts`: Study, Topics, Family,
-  Essays, About. James chose these on 2026-10-26 in place of the 2026-10-12
-  doors (Study, Essays, Books, Resources, About). They sit beside Find Help,
-  search, and Subscribe; the footer mirrors every group, with Find Help and
-  My Library in its bottom bar. Study (/study) leads with the Study Bible,
-  then church history (/theology/history), the creeds, the context guides,
-  and group study guides. Topics (/topics) is the index of hard questions,
-  with the Honest Answers, the eight-week plans, the self-checks, and the
-  tools. Family (/family) holds tonight's devotion, the year of devotions,
-  the catechism, and the reading plans. Essays (/writing) is the curated shelf
-  in `client/src/lib/shelf.json` (see Strategic Reminders). About is the
-  person: /about, Books (the three titles in `bookShelf.ts`), /speaking,
-  /contact, /connect ("Find James": Substack, Facebook, the newest essays,
-  and the ways to write to him; a live page again by James's word on
-  2026-11-17), /subscribe, and the outbound home of ENDS. /start is the road
-  for a new or returning Christian (`client/src/lib/startRoad.json`), in the
-  Study and Topics menus and first among Home's doors; the Find Your Path
-  quiz is at /start/quiz. Home's hero is the headline and one sentence, and
-  its doors are Start here, Study the Bible, Church history, Hard questions,
-  Family devotions, Essays, Books. Resources folded into the Topics and Family menus;
-  /resources stays live as the one page of everything to use (downloads,
-  tools, Find Help, families), at the foot of the Topics menu and in the
-  footer. Folded hubs
+  and understanding the church's long history. On 2026-11-18 James replaced
+  the five doors of 2026-10-26 (Study, Topics, Family, Essays, About) with
+  seven, read from one committed catalogue, `client/src/lib/siteCatalog.ts`
+  (`siteNav.ts` derives from it): Bible (/study), History
+  (/theology/history), Questions (/topics), Family (/family), Tools (/tools),
+  Essays (/writing, a plain link), About (/about). They sit beside Find Help,
+  search, and Subscribe. **Six or fewer:** a door's panel lists at most six
+  rooms (icon, name, one line), then "Everything in <door>" and "New here?
+  Start here" (/start, the road for a new or returning Christian in
+  `client/src/lib/startRoad.json`; its quiz is /start/quiz); a room is
+  listed only when its page exists, and a page has one name everywhere.
+  About holds Books (the three titles in `bookShelf.ts`), Speaking, Find
+  James (/connect, live by James's word on 2026-11-17), Contact and
+  Subscribe. The header, the phone sheet, the footer, the
+  search shortcuts and /explore ("Everything on LiveWell", the whole site on
+  one page, once a redirect to /writing) all read the catalogue; the tools
+  list is `client/src/lib/toolsList.ts`. Essays is the curated shelf in
+  `client/src/lib/shelf.json` (see Strategic Reminders). The footer shows the
+  seven doors, then My Library, Everything on LiveWell, Downloads and the
+  legal line, with Find Help in its bottom bar. `docs/work/elite/map.md` is
+  the map as built. Folded hubs
   (the reading hubs, the subject hubs, the /theology pages the Study Bible
   replaces, /faq, /doubt, /substack, /work-with-james, /membership, /dashboard,
   /authors/:slug, the old pastors' addresses) are one-hop

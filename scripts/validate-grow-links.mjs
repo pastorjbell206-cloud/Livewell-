@@ -35,6 +35,7 @@ const FILES = [
   "client/src/pages/Help.tsx",
   "client/src/pages/Assessments.tsx",
   "client/src/pages/ToolsHub.tsx",
+  "client/src/lib/toolsList.ts",
   "client/src/pages/StartHereQuiz.tsx",
   "client/src/pages/StartHereDiagnostic.tsx",
   "client/src/pages/Diagnostic.tsx",

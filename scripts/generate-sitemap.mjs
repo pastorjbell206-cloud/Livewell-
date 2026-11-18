@@ -145,6 +145,7 @@ const STATIC_PAGES = [
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
   { url: "/start", priority: "0.9", changefreq: "monthly" },
+  { url: "/explore", priority: "0.8", changefreq: "monthly" },
   { url: "/start/quiz", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/theology-quiz", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/verse-finder", priority: "0.6", changefreq: "monthly" },
