@@ -18,6 +18,9 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import SectionHead from "@/components/art/SectionHead";
+import { Signpost } from "lucide-react";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
@@ -136,21 +139,26 @@ export default function Help() {
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-4) var(--gutter) var(--s-6)", color: "var(--charcoal-fg)" }}>
+      {/* The crisis lines first, unchanged, with nothing above them. */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-3) var(--gutter)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, margin: "0 0 var(--s-4)", padding: "10px 14px", border: "1px solid var(--charcoal-soft)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", maxWidth: "70ch" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, margin: 0, padding: "10px 14px", border: "1px solid var(--charcoal-soft)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", maxWidth: "70ch" }}>
             In danger or thinking about ending your life? Call or text <a href="tel:988" style={{ color: "inherit", fontWeight: 700 }}>988</a>, text{" "}
             <a href="sms:741741?&body=HOME" style={{ color: "inherit", fontWeight: 700 }}>HOME to 741741</a>, or call <a href="tel:911" style={{ color: "inherit", fontWeight: 700 }}>911</a>.{" "}
             <a href="#help-now" style={{ color: "var(--mustard)", fontWeight: 600 }}>More lines below</a>
           </p>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>Find help</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "18ch" }}>
-            What are you facing?
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg)", maxWidth: "60ch", margin: "0 0 var(--s-4)" }}>
-            Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.
-          </p>
+        </div>
+      </section>
 
+      <InnerHead path="/help" title="Find Help" line="What are you facing?" plate="lantern">
+        <p className="pg-head__lede">
+          Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.
+        </p>
+      </InnerHead>
+
+      {/* FIRST: say it in your own words. */}
+      <section className="home-sec--dark" style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--charcoal-fg)" }}>
+        <div style={wrap}>
           <form
             role="search"
             onSubmit={(e) => { e.preventDefault(); if (results[0]) go(results[0]); }}
@@ -226,10 +234,7 @@ export default function Help() {
 
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-7)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Where are you?</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", margin: "0 0 var(--s-3)", maxWidth: "24ch" }}>
-            Start from where you actually are.
-          </h2>
+          <SectionHead icon={Signpost} label="Where are you?" title="Start from where you actually are." id="help-where-title" />
           <div role="group" aria-label="Where are you?" style={{ display: "flex", flexWrap: "wrap", gap: "8px", margin: "0 0 var(--s-3)" }}>
             {READER_STATES.filter((s) => s.id !== "crisis").map((s) => {
               const on = s.id === state;
@@ -239,7 +244,7 @@ export default function Help() {
                   type="button"
                   aria-pressed={on}
                   onClick={() => setState(s.id)}
-                  style={{ minHeight: "44px", padding: "10px 16px", borderRadius: "var(--radius-pill)", border: `1px solid ${on ? "var(--charcoal)" : "var(--border)"}`, background: on ? "var(--charcoal)" : "var(--card)", color: on ? "var(--charcoal-fg)" : "var(--ink)", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, cursor: "pointer" }}
+                  className="lw-chip"
                 >
                   {s.label}
                 </button>
