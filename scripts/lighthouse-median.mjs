@@ -82,6 +82,13 @@ for (let i = 1; i <= 3; i++) {
     .map((it) => it.node?.selector || it.node?.snippet || (it.phase ? `${it.phase} ${Math.round(it.timing ?? 0)}ms` : ""))
     .filter(Boolean)
     .join(" | ");
+  const m = report.audits.metrics?.details?.items?.[0] ?? {};
+  const lcpAudits = Object.keys(report.audits).filter((k) => /lcp|largest/.test(k));
+  const brief = (v) => JSON.stringify(v ?? null).slice(0, 700);
+  console.log(
+    `${name} run ${i} observed: FCP ${m.observedFirstContentfulPaint} ms, LCP ${m.observedLargestContentfulPaint} ms, load ${m.observedLoad} ms, DCL ${m.observedDomContentLoaded} ms; lighthouse ${report.lighthouseVersion}; ${report.environment?.hostUserAgent ?? ""}`
+  );
+  for (const k of lcpAudits) console.log(`${name} run ${i} ${k}: ${brief(report.audits[k].details?.items ?? report.audits[k].displayValue)}`);
   console.log(
     `${name} run ${i} detail: FCP ${num("first-contentful-paint")} ms, SI ${num("speed-index")} ms, TBT ${num("total-blocking-time")} ms, TTI ${num("interactive")} ms, benchmark ${Math.round(report.environment?.benchmarkIndex ?? -1)}, LCP element: ${lcpEl || "not reported"}`
   );
