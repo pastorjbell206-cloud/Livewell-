@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { Check } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import type { SectionConfig } from "@/lib/prophetic";
 
 import NextStep from "@/components/NextStep";
@@ -38,20 +39,9 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
     <Layout>
       <SEOMeta title="Do You Hold Your Own Side to the Same Standard?" description="A self-check on whether you defend truth selectively, with one standard for your side and another for your opponents. A mirror, not a weapon." url={`https://www.livewellbyjamesbell.co${config.base}/consistency`} />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href={SECTION_HREF} style={{ color: "inherit" }}>{config.label}</Link> · The consistency check
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>Do you hold your own side to the same standard?</h1>
-          <p className="page-standfirst">One standard, or two?</p>
-          {data && (
-            <div style={{ maxWidth: "64ch" }}>
-              {data.intro.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", marginBottom: "12px" }}>{p}</p>)}
-            </div>
-          )}
-        </div>
-      </section>
+      <InnerHead path={`${config.base}/consistency`} title="Do you hold your own side to the same standard?" line="One standard, or two?" plate="arch">
+        {data && data.intro.split("\n\n").map((p, i) => <p key={i} className="pg-head__lede">{p}</p>)}
+      </InnerHead>
 
       {!data && <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}><p style={{ ...wrap, fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center" }} role="status">Loading…</p></section>}
 

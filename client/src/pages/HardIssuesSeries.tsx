@@ -11,6 +11,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { SITE_URL } from "@/lib/site";
 import { Download } from "lucide-react";
 import { BOOKLETS, HELD_BOOKLETS, type Booklet } from "@/data/booklets";
@@ -136,42 +137,16 @@ export default function HardIssuesSeries() {
         structuredData={hardIssuesSchema}
       />
 
-      {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div style={{ ...eyebrow, color: "var(--mustard)" }}>Free for Church Leaders</div>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(34px, 5.2vw, 56px)",
-              fontWeight: 400,
-              lineHeight: 1.05,
-              letterSpacing: "-0.02em",
-              margin: "16px 0 18px",
-              maxWidth: "20ch",
-            }}
-          >
-            Free booklets for elders and church leaders
-          </h1>
-          <p className="page-standfirst">The Hard Issues Series.</p>
-          <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 28px", maxWidth: "52ch" }}>
-            Booklets for the men who carry the weight of leading a church.
-          </p>
-          <div style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,.82)", maxWidth: "62ch" }}>
-            <p style={{ margin: "0 0 1.2em" }}>
-              Most of the damage in a church's leadership is done long before the crisis, in the quiet years when nobody decided how deacons are chosen, who makes which decision, or how a hard change gets brought to the people. These booklets are about that work: choosing deacons, building a structure that serves the church, and making a major change without losing people along the way.
-            </p>
-            <p style={{ margin: 0 }}>
-              Every one of these is free, as a PDF and as an EPUB. Nothing here asks you for an email address or a gift.
-            </p>
-            {HELD_BOOKLETS.length > 0 && (
-              <p style={{ margin: "1.2em 0 0" }}>
-                The booklets on eldership and two on leading change are off this page for now while their files are corrected.
-              </p>
-            )}
-          </div>
-        </div>
-      </section>
+      <InnerHead path="/resources/hard-issues-series" title="Free booklets for elders and church leaders" line="The Hard Issues Series." plate="books">
+        <p className="pg-head__lede">Booklets for the men who carry the weight of leading a church.</p>
+        <p className="pg-head__lede">
+          Most of the damage in a church's leadership is done long before the crisis, in the quiet years when nobody decided how deacons are chosen, who makes which decision, or how a hard change gets brought to the people. These booklets are about that work: choosing deacons, building a structure that serves the church, and making a major change without losing people along the way.
+        </p>
+        <p className="pg-head__lede">Every one of these is free, as a PDF and as an EPUB. Nothing here asks you for an email address or a gift.</p>
+        {HELD_BOOKLETS.length > 0 && (
+          <p className="pg-head__lede">The booklets on eldership and two on leading change are off this page for now while their files are corrected.</p>
+        )}
+      </InnerHead>
 
       {/* THE BOOKLETS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

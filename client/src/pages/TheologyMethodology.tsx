@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { TriageBadge } from "@/components/TriageBadge";
 import type { Triage } from "@/lib/theology";
 import { Prose } from "@/lib/prose";
@@ -55,19 +56,7 @@ export default function TheologyMethodology() {
         url="https://www.livewellbyjamesbell.co/theology/how-to-use"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · How to use the doctrine studies</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            How to use the doctrine studies
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "64ch" }}>
-            {m?.subtitle ?? "Before the doctrines, the ground rules."}
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/theology/how-to-use" title="How to use the doctrine studies" line={<>{m?.subtitle ?? "Before the doctrines, the ground rules."}</>} plate="lantern" />
 
       {!m && (
         <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>

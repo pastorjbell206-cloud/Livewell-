@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import { Search, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
 interface Result { type: string; title: string; subtitle: string; href: string; }
@@ -102,14 +103,10 @@ export default function TheologySearch() {
         url="https://www.livewellbyjamesbell.co/theology/search"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <InnerHead path="/theology/search" title="Search the doctrines, creeds, and glossary" plate="lens" />
+
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · Search</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Search the doctrines, creeds, and glossary
-          </h1>
           <div style={{ position: "relative", maxWidth: "560px" }}>
             <Search size={20} aria-hidden style={{ position: "absolute", left: "16px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} />
             <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder="A word, a doctrine, a question, or a reference like John 3" aria-label="Search the section"

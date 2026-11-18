@@ -5,10 +5,10 @@
  * major confessions. Data: /theology/theology-creeds.json.
  */
 import { useEffect, useState } from "react";
-import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 
 interface Creed { name: string; era: string; note: string; text: string; }
 interface Confession { name: string; tradition: string; year: string; summary: string; }
@@ -35,19 +35,9 @@ export default function TheologyCreeds() {
         url="https://www.livewellbyjamesbell.co/theology/creeds"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/theology/history" style={{ color: "inherit" }}>History</Link> · The creeds in brief</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            The faith, in its own words.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            When you say a creed, you are speaking words the church has said for more than a thousand years, in prison cells and cathedrals and quiet kitchens. Here they are in full, with the great confessions that later traditions wrote to say more.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/theology/creeds" title="The creeds in brief" line="The faith, in its own words." plate="basilica">
+        <p className="pg-head__lede">When you say a creed, you are speaking words the church has said for more than a thousand years, in prison cells and cathedrals and quiet kitchens. Here they are in full, with the great confessions that later traditions wrote to say more.</p>
+      </InnerHead>
 
       {/* CREEDS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-4)" }}>
