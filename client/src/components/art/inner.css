@@ -80,6 +80,6 @@
 .pg-head__crisis{color:var(--ink)}
 .pg-head__crisis a{display:inline-block;min-height:24px;font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .lw-index__meta{font-family:var(--U);font-size:13px;line-height:1.4;color:var(--ink-muted)}
-.lw-index__line{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.lw-index__line{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .lw-none{max-width:62ch;font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink)}
 .lw-none a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
