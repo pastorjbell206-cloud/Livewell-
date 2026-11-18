@@ -133,7 +133,7 @@ const MAIN_PAGES = [
   { title: "Books", href: "/books", blurb: "The books of James Bell.", keywords: "books author james bell book" },
   { title: "About James", href: "/about", blurb: "Who James Bell is, and why he writes.", keywords: "about james bell author bio who is" },
   { title: "Contact", href: "/contact", blurb: "Write to James.", keywords: "contact email message reach get in touch james bell" },
-  { title: "Find James", href: "/connect", blurb: "His Substack, his Facebook, the newest essays, and the ways to write to him, on one page.", keywords: "connect follow social media facebook substack posts rss feed find james bell" },
+  { title: "Find James", href: "/connect", blurb: "Everything James does, in one place: his Substack, Facebook, the Following the Way podcast, ENDS, his books, speaking, and how to write to him.", keywords: "connect follow social media facebook substack podcast following the way ends initiative books speaking contact find james bell" },
   { title: "Subscribe", href: "/subscribe", blurb: "New writing by email.", keywords: "subscribe newsletter email sign up substack" },
   { title: "Speaking", href: "/speaking", blurb: "Invite James to speak.", keywords: "speaking speaker invite preach event conference james bell" },
   { title: "My Library", href: "/my-library", blurb: "What you have saved and started, kept on this device.", keywords: "saved bookmarks my library progress continue" },
@@ -151,9 +151,22 @@ export function toolNames() {
   return names;
 }
 
+/**
+ * Every door's, room's and page's one name, by address, read as text from
+ * client/src/lib/siteCatalog.ts (each entry on one line: id, name, line,
+ * href). A main page is indexed under the name the menus give it.
+ */
+export function catalogNames() {
+  const src = fs.readFileSync(path.join(ROOT, "client/src/lib/siteCatalog.ts"), "utf8");
+  const names = new Map();
+  for (const m of src.matchAll(/\{\s*id: "[^"]+", name: "([^"]+)", line: "[^"]*", href: "([^"]+)"/g)) if (!names.has(m[2])) names.set(m[2], m[1]);
+  return names;
+}
+
 function mainPages() {
-  const names = toolNames();
-  return MAIN_PAGES.map((p) => ({ ...p, title: names.get(p.href) ?? p.title }));
+  const catalog = catalogNames();
+  const tools = toolNames();
+  return MAIN_PAGES.map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
 }
 
 /** The Study Bible beyond its chapters: each book's introduction, the reading guides, the acts of the story. */

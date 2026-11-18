@@ -25,7 +25,7 @@ import "./bible.css";
 const WAYS = [
   { name: "The Bible's story", line: "One story in eleven parts", href: "/study/bible/story", icon: Milestone },
   { name: "What it teaches", line: "Each doctrine, chapter by chapter", href: "/study/bible/doctrines", icon: BookMarked },
-  { name: "Guides to reading it", line: "How to read each kind of book", href: "/study/bible/guides", icon: Compass },
+  { name: "Guides to reading the Bible", line: "How to read each kind of book", href: "/study/bible/guides", icon: Compass },
   { name: "Search the Bible", line: "Any word or phrase", href: "/study/bible/search", icon: Search },
   { name: "Reading plans", line: "Every plan, by length", href: "/study/plans", icon: CalendarDays },
   { name: "Bible background", line: "The world it was written in", href: "/resources/context", icon: Landmark },

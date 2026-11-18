@@ -118,7 +118,7 @@ export const DOORS: Door[] = [
       },
       { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
       {
-        id: "bible.guides", name: "Guides to reading it", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" },
+        id: "bible.guides", name: "Guides to reading the Bible", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" },
         inside: [
           { id: "bible.how-to-study", name: "How to study the Bible", line: "Seven steps for studying a passage, in order.", href: "/study/how-to-study", icon: "Search" },
         ],
