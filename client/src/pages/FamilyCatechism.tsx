@@ -229,7 +229,7 @@ export default function FamilyCatechism() {
             <LoadFailed what="The catechism" onRetry={() => setNonce((n) => n + 1)} backHref="/family" backLabel="Back to Family" />
           )}
           {!loaded && !failed && (
-            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the catechism…</p>
+            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the catechism…<span hidden data-lw-loading /></p>
           )}
           {entries.length > 0 && (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-4)" }}>
