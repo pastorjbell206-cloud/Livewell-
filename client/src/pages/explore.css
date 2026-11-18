@@ -1,0 +1,78 @@
+/*
+ * /explore, "Everything on LiveWell" (pages/Everything.tsx). Tokens only.
+ */
+.ex-wrap{box-sizing:border-box;max-width:calc(var(--w-default) + 2 * var(--gutter));margin:0 auto;padding:0 var(--gutter)}
+
+/* ---- The find box ---- */
+.ex-find{width:100%;max-width:560px}
+.ex-find__label{display:block;margin-bottom:8px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
+.ex-find__field{display:flex;align-items:center;gap:10px;min-height:52px;padding:0 14px;background:var(--card);border:1px solid var(--border);border-bottom:2px solid var(--ink);border-radius:var(--radius-sm);color:var(--ink-muted)}
+.ex-find__field:focus-within{border-bottom-color:var(--mustard)}
+.ex-find__field input{flex:1;min-width:0;min-height:48px;border:0;background:transparent;font-family:var(--B);font-size:17px;color:var(--ink);outline:none}
+.ex-find__field:has(input:focus-visible){outline:2px solid var(--ink);outline-offset:2px}
+
+.ex-top{padding-top:var(--s-3);padding-bottom:var(--s-4)}
+.ex-status{margin:0;font-family:var(--U);font-size:14px;color:var(--ink-muted);min-height:1px}
+.ex-none{margin:var(--s-2) 0 0;font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink)}
+.ex-none a{color:var(--mustard-text);font-weight:600}
+
+/* ---- The jump row ---- */
+.ex-jump{display:flex;flex-wrap:wrap;gap:8px}
+.ex-jump a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid var(--border);border-radius:var(--radius-pill);background:var(--card);color:var(--ink);text-decoration:none;font-family:var(--U);font-size:14px;font-weight:600}
+.ex-jump a:hover,.ex-jump a:focus-visible{border-color:var(--mustard)}
+.ex-jump a svg{color:var(--ink-muted)}
+.ex-jump .ex-jump__lead{border-left:3px solid var(--mustard)}
+.ex-jump .ex-jump__lead svg,.ex-jump .ex-jump__help,.ex-jump .ex-jump__help svg{color:var(--mustard-text)}
+
+/* ---- A door ---- */
+.ex-door{background:var(--bone);padding:var(--s-6) 0;scroll-margin-top:72px;border-top:1px solid var(--border)}
+.ex-door--warm{background:var(--bone-warm)}
+.ex-door__grid{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:var(--s-5);align-items:start}
+.ex-door__head{position:sticky;top:96px}
+.ex-door__art{margin:var(--s-3) 0 0}
+.ex-door__art .lw-frame__in{aspect-ratio:4/3}
+.ex-door__title{margin:10px 0 8px;font-size:var(--fs-h2);line-height:1.1}
+.ex-door__line{margin:0 0 12px;font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink-muted)}
+.ex-door__open{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
+
+/* ---- Room tiles ---- */
+.ex-tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:14px}
+.ex-tile{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
+.ex-tile:hover,.ex-tile:focus-within{border-color:var(--mustard)}
+.ex-tile__main{display:flex;gap:14px;padding:16px 16px 14px;color:var(--ink);text-decoration:none;flex:1}
+.ex-tile__icon{display:inline-flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;border:1px solid var(--border);border-radius:var(--radius-pill);color:var(--ink);background:var(--bone)}
+.ex-tile:hover .ex-tile__icon,.ex-tile__main:focus-visible .ex-tile__icon{color:var(--mustard-text);border-color:var(--mustard)}
+.ex-tile__text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ex-tile__name{font-family:var(--U);font-size:16px;font-weight:600;line-height:1.3}
+.ex-tile__line{font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted)}
+.ex-tile__count{align-self:flex-start;margin-top:4px;font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);border-bottom:1px solid var(--mustard)}
+.ex-inside{list-style:none;margin:0;padding:6px 16px 10px 74px;border-top:1px solid var(--border)}
+.ex-inside__link{display:flex;align-items:center;min-height:40px;padding:4px 0;font-family:var(--U);font-size:14px;line-height:1.35;color:var(--ink);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.ex-inside__link:hover,.ex-inside__link:focus-visible{text-decoration-color:var(--mustard)}
+
+/* ---- Every tool ---- */
+.ex-tools{margin-top:var(--s-5)}
+.ex-tools__title{margin:0 0 var(--s-3);font-size:var(--fs-h3)}
+.ex-tools__group{margin-bottom:var(--s-4)}
+.ex-tools__group-name{margin:0 0 8px;font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text)}
+.ex-tools__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:8px}
+.ex-tool{display:flex;gap:12px;align-items:flex-start;min-height:44px;height:100%;box-sizing:border-box;padding:10px 12px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--ink);text-decoration:none}
+.ex-tool:hover,.ex-tool:focus-visible{border-color:var(--mustard)}
+.ex-tool svg{flex:none;margin-top:2px;color:var(--ink-muted)}
+.ex-tool__name{display:block;font-family:var(--U);font-size:14px;font-weight:600;line-height:1.35}
+.ex-tool__line{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px;font-family:var(--U);font-size:13px;line-height:1.45;color:var(--ink-muted)}
+
+@media(max-width:860px){
+  .ex-door{padding:var(--s-5) 0}
+  .ex-door__grid{grid-template-columns:1fr;gap:var(--s-3)}
+  .ex-door__head{position:static;display:grid;grid-template-columns:1fr 112px;gap:16px;align-items:center}
+  .ex-door__art{margin:0}
+  .ex-door__art .lw-frame__in{aspect-ratio:1/1}
+  .ex-door__title{margin:4px 0 4px}
+  .ex-door__line{font-size:15px;margin-bottom:4px}
+}
+@media(max-width:480px){
+  .ex-door__head{grid-template-columns:1fr 84px;gap:12px}
+  .ex-inside{padding-left:16px}
+}
+.ex-find__field input:focus-visible{outline:none;box-shadow:none}

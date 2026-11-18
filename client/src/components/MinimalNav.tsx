@@ -1,25 +1,37 @@
 /**
- * Primary navigation: Study, Topics, Family, Essays, About, with one source
- * of truth in lib/siteNav.ts so the header and footer never drift. A group
- * with several header links opens as a menu; a group with one renders as that
- * plain link. Utility actions (Find Help, search, Subscribe) sit to the right.
- * The map is static (no API round trip), so the header paints in full on
- * first render.
+ * The header: seven doors from the site catalogue (lib/siteCatalog.ts), with
+ * Find Help, search and Subscribe beside them. Each door but Essays opens a
+ * compact panel of six rooms or fewer (an icon, the plain name, one line) and
+ * a foot with "Everything in <door>" and "New here? Start here". On a phone
+ * the menu button opens a full-screen sheet of the same doors.
+ *
+ * Keyboard: Tab moves through the bar; Enter or Space opens a door; Left and
+ * Right move between doors; Down opens a door's panel at its first room; Up
+ * and Down move inside a panel; Escape closes it and returns to the door.
+ *
+ * The map is committed and static (no API round trip), so the header paints
+ * in full on first render.
  */
 import { Link, useLocation } from "wouter";
-import { useEffect, useRef, useState } from "react";
-import { BookmarkCheck, ChevronDown, Menu, Search, X } from "lucide-react";
+import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import { ChevronDown, Menu, Search, X } from "lucide-react";
 
 import {
-  HELP_LINK,
-  LIBRARY_LINK,
-  SEARCH_SHORTCUTS,
-  SITE_NAV_GROUPS,
-  headerLinks,
-  soleHeaderLink,
-  type SiteNavLink,
-} from "@/lib/siteNav";
+  DOORS,
+  EVERYTHING_ENTRY,
+  HELP_ENTRY,
+  LIBRARY_ENTRY,
+  START_LINK,
+  doorForPath,
+  type CatalogEntry,
+  type Door,
+  type DoorId,
+} from "@/lib/siteCatalog";
+import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
+import { SEARCH_SHORTCUTS } from "@/lib/siteNav";
+import { followHash } from "@/lib/followHash";
 import type { PassageMatch } from "@/lib/siteSearch";
+import "./site-nav.css";
 
 /**
  * Search, with the reference parser behind it. Both load the first time the
@@ -28,38 +40,48 @@ import type { PassageMatch } from "@/lib/siteSearch";
  */
 const loadFind = () => import("@/lib/siteSearch");
 
-/** Header and mobile menus show only groups that carry primary links. */
-const HEADER_GROUPS = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0);
-
-/** A grouped link renders as an external anchor or an internal wouter Link. */
-function NavItemLink({
-  link,
+/** A catalogue entry as a link: outbound in a new tab, in-app through wouter. */
+function EntryLink({
+  entry,
+  className,
   onNavigate,
-  style,
+  children,
 }: {
-  link: SiteNavLink;
+  entry: CatalogEntry;
+  className?: string;
   onNavigate: () => void;
-  style: React.CSSProperties;
+  children: React.ReactNode;
 }) {
-  if (link.external) {
+  if (entry.external) {
     return (
-      <a
-        href={link.href}
-        target={link.href.startsWith("mailto:") ? undefined : "_blank"}
-        rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-        onClick={onNavigate}
-        style={style}
-      >
-        {link.label}
+      <a href={entry.href} target="_blank" rel="noopener noreferrer" className={className} onClick={onNavigate}>
+        {children}
       </a>
     );
   }
   return (
-    <Link href={link.href} onClick={onNavigate} style={style}>
-      {link.label}
+    <Link
+      href={entry.href}
+      className={className}
+      onClick={() => {
+        onNavigate();
+        followHash(entry.href);
+      }}
+    >
+      {children}
     </Link>
   );
 }
+
+/** The panel lines up under its door; the last doors open leftward so they stay on screen. */
+const panelSide = (i: number) => (i >= 4 ? "sn-panel--end" : "sn-panel--start");
+
+/** Door controls in the bar, in order (the buttons and the Essays link). */
+const doorControls = (root: HTMLElement | null) =>
+  Array.from(root?.querySelectorAll<HTMLElement>("[data-door-control]") ?? []);
+
+/** The links inside an open panel, in order. */
+const panelLinks = (panel: HTMLElement | null) => Array.from(panel?.querySelectorAll<HTMLElement>("a") ?? []);
 
 export default function MinimalNav() {
   const [location, navigate] = useLocation();
@@ -68,32 +90,18 @@ export default function MinimalNav() {
   const [searchQuery, setSearchQuery] = useState("");
   // Reads a typed reference once the parser has loaded; null until then.
   const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-  // The phone menu. A tap inside it is not "outside": with four doors that
-  // open, closing one group on mousedown shifts the panel, and the click
-  // that should open the next group lands on whatever moved under it.
-  const mobilePanelRef = useRef<HTMLDivElement>(null);
-  // The door a mouse opened by hovering. The click that usually follows
-  // (About was a plain link until 2026-10-26) keeps that menu open instead
-  // of folding it.
-  const hoverOpened = useRef<string | null>(null);
+  // The door whose panel is open in the bar.
+  const [openDoor, setOpenDoor] = useState<DoorId | null>(null);
+  // The door opened inside the phone sheet.
+  const [sheetDoor, setSheetDoor] = useState<DoorId | null>(null);
+  const doorsRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const sheetRef = useRef<HTMLDivElement>(null);
+  // The door a mouse opened by hovering. The click that usually follows keeps
+  // that panel open instead of folding it.
+  const hoverOpened = useRef<DoorId | null>(null);
 
-  const isActive = (href: string) =>
-    location === href || location.startsWith(href + "/");
-
-  // The door that holds the page in view, by its longest matching header
-  // link, so /resources/creeds reads as Study and not Topics.
-  let currentDoor = "";
-  let currentLen = 0;
-  for (const g of HEADER_GROUPS) {
-    for (const l of headerLinks(g)) {
-      if (!l.external && isActive(l.href) && l.href.length > currentLen) {
-        currentDoor = g.title;
-        currentLen = l.href.length;
-      }
-    }
-  }
+  const currentDoor = doorForPath(location);
 
   const prepareSearch = () => {
     if (readPassage) return;
@@ -114,46 +122,95 @@ export default function MinimalNav() {
   };
   const typedPassage = readPassage && searchQuery.trim() ? readPassage(searchQuery) : null;
 
+  // A click anywhere outside the bar's doors folds an open panel.
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (mobilePanelRef.current?.contains(e.target as Node)) return;
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setOpenDropdown(null);
-      }
+      if (doorsRef.current && !doorsRef.current.contains(e.target as Node)) setOpenDoor(null);
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Mobile menu hygiene: close on any route change. Adjusted during render
-  // (the documented "state from previous renders" pattern) instead of an
-  // effect, so the closed menu paints in the same pass as the new route.
+  // Close everything on any route change. Adjusted during render (the
+  // documented "state from previous renders" pattern) instead of an effect, so
+  // the closed menu paints in the same pass as the new route.
   const [prevLocation, setPrevLocation] = useState(location);
   if (prevLocation !== location) {
     setPrevLocation(location);
     setMobileOpen(false);
     setSearchOpen(false);
+    setOpenDoor(null);
   }
 
+  // Escape closes whatever is open and puts focus back where it came from.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setMobileOpen(false);
-        setSearchOpen(false);
-        setOpenDropdown(null);
-      }
+      if (e.key !== "Escape") return;
+      if (openDoor) document.getElementById(`sn-door-${openDoor}`)?.focus();
+      if (mobileOpen) menuButtonRef.current?.focus();
+      setMobileOpen(false);
+      setSearchOpen(false);
+      setOpenDoor(null);
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, []);
+  }, [openDoor, mobileOpen]);
 
   useEffect(() => {
-    if (mobileOpen) {
-      const prev = document.body.style.overflow;
-      document.body.style.overflow = "hidden";
-      return () => { document.body.style.overflow = prev; };
-    }
+    if (!mobileOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    // The sheet opens on its first row, so a keyboard user starts inside it.
+    sheetRef.current?.querySelector<HTMLElement>("a,button")?.focus();
+    return () => {
+      document.body.style.overflow = prev;
+    };
   }, [mobileOpen]);
+
+  /** Move focus among the door controls by an offset, wrapping at the ends. */
+  const moveDoor = (from: HTMLElement, by: number) => {
+    const list = doorControls(doorsRef.current);
+    const i = list.indexOf(from);
+    if (i < 0) return;
+    list[(i + by + list.length) % list.length]?.focus();
+  };
+
+  const onDoorKey = (door: Door) => (e: ReactKeyboardEvent<HTMLElement>) => {
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+      e.preventDefault();
+      if (openDoor) setOpenDoor(null);
+      moveDoor(e.currentTarget, e.key === "ArrowRight" ? 1 : -1);
+    } else if (e.key === "ArrowDown" && door.rooms.length) {
+      e.preventDefault();
+      setOpenDoor(door.id);
+      // The panel renders on the next pass; then its first room takes focus.
+      window.requestAnimationFrame(() => panelLinks(document.getElementById(`sn-panel-${door.id}`))[0]?.focus());
+    } else if (e.key === "ArrowUp" && openDoor === door.id) {
+      e.preventDefault();
+      setOpenDoor(null);
+    }
+  };
+
+  const onPanelKey = (door: Door) => (e: ReactKeyboardEvent<HTMLElement>) => {
+    const links = panelLinks(document.getElementById(`sn-panel-${door.id}`));
+    const i = links.indexOf(e.target as HTMLElement);
+    if (i < 0) return;
+    let next: number | null = null;
+    if (e.key === "ArrowDown") next = (i + 1) % links.length;
+    else if (e.key === "ArrowUp") next = i === 0 ? -1 : i - 1;
+    else if (e.key === "Home") next = 0;
+    else if (e.key === "End") next = links.length - 1;
+    if (next === null) return;
+    e.preventDefault();
+    if (next === -1) document.getElementById(`sn-door-${door.id}`)?.focus();
+    else links[next]?.focus();
+  };
+
+  const closeAll = () => {
+    setOpenDoor(null);
+    setMobileOpen(false);
+    setSheetDoor(null);
+  };
 
   return (
     <>
@@ -296,6 +353,7 @@ export default function MinimalNav() {
       {/* Main Nav */}
       <nav
         className="site-nav"
+        aria-label="Main"
         style={{
           position: "sticky",
           top: 0,
@@ -357,482 +415,238 @@ export default function MinimalNav() {
             </div>
           </Link>
 
-          <div
-            ref={dropdownRef}
-            style={{ display: "flex", gap: "2px", alignItems: "center" }}
-            className="desktop-nav"
-          >
-            {HEADER_GROUPS.map(group => {
-              const sole = soleHeaderLink(group);
-              if (sole) {
+          <div ref={doorsRef} className="desktop-nav sn-doors">
+            {DOORS.map((door, i) => {
+              if (!door.rooms.length) {
                 return (
                   <Link
-                    key={group.title}
-                    href={sole.href}
-                    aria-current={isActive(sole.href) ? "page" : undefined}
-                    style={{
-                      color: isActive(sole.href) ? "var(--mustard-text)" : "var(--ink)",
-                      fontFamily: "var(--U)",
-                      fontSize: "13px",
-                      fontWeight: 500,
-                      padding: "8px 12px",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      minHeight: "44px",
-                      whiteSpace: "nowrap",
-                      textDecoration: "none",
-                    }}
+                    key={door.id}
+                    href={door.page.href}
+                    data-door-control=""
+                    className="sn-door-link"
+                    aria-current={location === door.page.href ? "page" : undefined}
+                    onKeyDown={onDoorKey(door)}
                   >
-                    {group.title}
+                    {door.name}
                   </Link>
                 );
               }
+              const open = openDoor === door.id;
               return (
-              <div key={group.title} style={{ display: "contents" }}>
-              <div
-                style={{ position: "relative" }}
-                onMouseLeave={() => {
-                  hoverOpened.current = null;
-                  if (openDropdown === group.title) setOpenDropdown(null);
-                }}
-              >
-                <button
-                  onClick={() => {
-                    if (hoverOpened.current === group.title) {
-                      hoverOpened.current = null;
-                      setOpenDropdown(group.title);
-                      return;
-                    }
-                    setOpenDropdown(openDropdown === group.title ? null : group.title);
-                  }}
+                <div
+                  key={door.id}
+                  className="sn-door"
                   onMouseEnter={() => {
-                    if (openDropdown !== group.title) hoverOpened.current = group.title;
-                    setOpenDropdown(group.title);
+                    if (!open) hoverOpened.current = door.id;
+                    setOpenDoor(door.id);
                   }}
-                  aria-haspopup="menu"
-                  aria-expanded={openDropdown === group.title}
-                  aria-current={currentDoor === group.title ? "true" : undefined}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "4px",
-                    color:
-                      openDropdown === group.title || currentDoor === group.title
-                        ? "var(--mustard-text)"
-                        : "var(--ink)",
-                    fontFamily: "var(--U)",
-                    fontSize: "13px",
-                    padding: "8px 12px",
-                    minHeight: "44px",
-                    borderRadius: "var(--radius-sm)",
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    transition: "color 0.2s",
-                    fontWeight: 500,
-                    whiteSpace: "nowrap",
+                  onMouseLeave={() => {
+                    hoverOpened.current = null;
+                    if (open) setOpenDoor(null);
+                  }}
+                  onBlur={(e) => {
+                    if (open && !e.currentTarget.contains(e.relatedTarget as Node | null)) setOpenDoor(null);
                   }}
                 >
-                  {group.title}
-                  <ChevronDown
-                    size={14}
-                    style={{
-                      opacity: 0.6,
-                      transform:
-                        openDropdown === group.title ? "rotate(180deg)" : "none",
-                      transition: "transform 0.2s",
-                    }}
-                  />
-                </button>
-                {openDropdown === group.title && (
-                  <div
-                    role="menu"
-                    style={{
-                      position: "absolute",
-                      top: "100%",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      background: "var(--card)",
-                      border: "1px solid var(--border)",
-                      borderTop: "2px solid var(--mustard)",
-                      borderRadius: "var(--radius-sm)",
-                      padding: "8px",
-                      minWidth: "260px",
-                      maxHeight: "min(70vh, 560px)",
-                      overflowY: "auto",
-                      boxShadow: "var(--shadow-modal)",
-                      marginTop: "4px",
-                      zIndex: 300,
+                  <button
+                    type="button"
+                    id={`sn-door-${door.id}`}
+                    data-door-control=""
+                    className={`sn-door-btn${currentDoor === door.id ? " is-current" : ""}`}
+                    aria-expanded={open}
+                    aria-controls={`sn-panel-${door.id}`}
+                    aria-current={currentDoor === door.id ? "true" : undefined}
+                    onKeyDown={onDoorKey(door)}
+                    onClick={() => {
+                      if (hoverOpened.current === door.id) {
+                        hoverOpened.current = null;
+                        setOpenDoor(door.id);
+                        return;
+                      }
+                      setOpenDoor(open ? null : door.id);
                     }}
                   >
-                    {headerLinks(group).map(item => (
-                      <div
-                        key={item.href + item.label}
-                        role="menuitem"
-                        style={{
-                          borderRadius: "var(--radius-sm)",
-                          transition: "background 0.15s",
-                        }}
-                        onMouseEnter={e => (e.currentTarget.style.background = "var(--bone-warm)")}
-                        onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
-                      >
-                        <NavItemLink
-                          link={item}
-                          onNavigate={() => setOpenDropdown(null)}
-                          style={{
-                            textDecoration: "none",
-                            display: "block",
-                            padding: "10px 14px",
-                            fontFamily: "var(--U)",
-                            fontSize: "13px",
-                            fontWeight: 600,
-                            color: "var(--ink)",
-                          }}
-                        />
+                    {door.name}
+                    <ChevronDown className="sn-chev" size={14} strokeWidth={ICON_STROKE} aria-hidden />
+                  </button>
+                  {open && (
+                    <div
+                      id={`sn-panel-${door.id}`}
+                      className={`sn-panel ${panelSide(i)}`}
+                      role="region"
+                      aria-label={door.name}
+                      onKeyDown={onPanelKey(door)}
+                    >
+                      <ul className="sn-rooms">
+                        {door.rooms.map((room) => {
+                          const Icon = ICONS[room.icon];
+                          return (
+                            <li key={room.id}>
+                              <EntryLink entry={room} className="sn-room" onNavigate={closeAll}>
+                                <Icon size={20} strokeWidth={ICON_STROKE} aria-hidden />
+                                <span>
+                                  <span className="sn-room__name">{room.name}</span>
+                                  <span className="sn-room__line">{room.line}</span>
+                                </span>
+                              </EntryLink>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                      <div className="sn-foot">
+                        <Link href={door.page.href} onClick={closeAll}>
+                          Everything in {door.name}
+                        </Link>
+                        <Link href={START_LINK.href} onClick={closeAll}>
+                          {START_LINK.name}
+                        </Link>
                       </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-              </div>
+                    </div>
+                  )}
+                </div>
               );
             })}
 
-            <Link
-              href={HELP_LINK.href}
-              style={{
-                color: "var(--mustard-text)",
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                fontWeight: 600,
-                padding: "8px 12px",
-                display: "inline-flex",
-                alignItems: "center",
-                minHeight: "44px",
-                whiteSpace: "nowrap",
-              }}
-            >
-              {HELP_LINK.label}
+            <Link href={HELP_ENTRY.href} className="sn-util">
+              {HELP_ENTRY.name}
             </Link>
 
             <button
               type="button"
+              className="sn-search"
               onClick={() => setSearchOpen(true)}
               aria-label="Search, or look up a passage"
               title="Search"
-              style={{
-                background: "none",
-                border: "none",
-                color: "var(--ink)",
-                cursor: "pointer",
-                padding: "8px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minWidth: "44px",
-                minHeight: "44px",
-                marginLeft: "4px",
-                borderRadius: "var(--radius-sm)",
-                transition: "color 0.2s, background 0.2s",
-              }}
             >
-              <Search size={18} aria-hidden />
+              <Search size={18} strokeWidth={ICON_STROKE} aria-hidden />
             </button>
 
-            <Link href="/subscribe" style={{ textDecoration: "none" }}>
-              <button
-                type="button"
-                style={{
-                  background: "var(--ink)",
-                  color: "var(--bone)",
-                  border: "none",
-                  borderBottom: "2px solid var(--mustard)",
-                  padding: "9px 20px",
-                  fontFamily: "var(--U)",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  borderRadius: "var(--radius-sm)",
-                  cursor: "pointer",
-                  marginLeft: "8px",
-                }}
-              >
-                Subscribe
-              </button>
+            <Link href="/subscribe" className="sn-subscribe">
+              Subscribe
             </Link>
           </div>
 
-          {/* Mobile: Find Help stays one tap away, beside search. */}
-          <div
-            style={{ display: "flex", gap: "4px", alignItems: "center" }}
-            className="mobile-nav"
-          >
-            <Link
-              href={HELP_LINK.href}
-              style={{
-                color: "var(--mustard-text)",
-                fontFamily: "var(--U)",
-                fontSize: "14px",
-                fontWeight: 600,
-                padding: "0 8px",
-                minHeight: "44px",
-                display: "inline-flex",
-                alignItems: "center",
-                whiteSpace: "nowrap",
-                textDecoration: "none",
-              }}
-            >
-              {HELP_LINK.label}
+          {/* Phone: Find Help stays one tap away, beside search and the menu. */}
+          <div style={{ display: "flex", gap: "4px", alignItems: "center" }} className="mobile-nav">
+            <Link href={HELP_ENTRY.href} className="sn-util" style={{ padding: "0 8px" }}>
+              {HELP_ENTRY.name}
             </Link>
-            <button
-              type="button"
-              onClick={() => setSearchOpen(true)}
-              aria-label="Search"
-              style={{
-                background: "none",
-                border: "none",
-                color: "var(--ink)",
-                cursor: "pointer",
-                padding: "11px",
-                minWidth: "44px",
-                minHeight: "44px",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Search size={20} aria-hidden />
+            <button type="button" className="sn-search" onClick={() => setSearchOpen(true)} aria-label="Search">
+              <Search size={20} strokeWidth={ICON_STROKE} aria-hidden />
             </button>
             {/* Subscribe sits beside the menu button on a phone, so the
                 Substack signup is one tap from any page. */}
-            <Link
-              href="/subscribe"
-              className="mobile-subscribe"
-              style={{
-                background: "var(--ink)",
-                color: "var(--bone)",
-                borderBottom: "2px solid var(--mustard)",
-                borderRadius: "var(--radius-sm)",
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                fontWeight: 600,
-                padding: "0 12px",
-                minHeight: "44px",
-                display: "inline-flex",
-                alignItems: "center",
-                whiteSpace: "nowrap",
-                textDecoration: "none",
-              }}
-            >
+            <Link href="/subscribe" className="sn-subscribe" style={{ margin: 0, padding: "0 12px", fontSize: "13px" }}>
               Subscribe
             </Link>
             <button
+              ref={menuButtonRef}
               type="button"
+              className="sn-search"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               aria-controls="mobile-nav-panel"
-              style={{
-                background: "none",
-                border: "none",
-                color: "var(--ink)",
-                cursor: "pointer",
-                padding: "11px",
-                minWidth: "44px",
-                minHeight: "44px",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
             >
-              {mobileOpen ? <X size={22} aria-hidden /> : <Menu size={22} aria-hidden />}
+              {mobileOpen ? <X size={22} strokeWidth={ICON_STROKE} aria-hidden /> : <Menu size={22} strokeWidth={ICON_STROKE} aria-hidden />}
             </button>
           </div>
         </div>
 
         {mobileOpen && (
-          <div
-            id="mobile-nav-panel"
-            ref={mobilePanelRef}
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              right: 0,
-              maxHeight: "calc(100vh - 64px)",
-              boxSizing: "border-box",
-              background: "var(--card)",
-              borderTop: "1px solid var(--border)",
-              boxShadow: "var(--shadow-modal)",
-              padding: "8px 20px calc(24px + env(safe-area-inset-bottom))",
-              overflowY: "auto",
-              WebkitOverflowScrolling: "touch",
-              zIndex: 400,
-            }}
-          >
-            <Link
-              href={HELP_LINK.href}
-              onClick={() => setMobileOpen(false)}
-              style={{
-                display: "block",
-                padding: "12px 0",
-                fontFamily: "var(--U)",
-                fontSize: "15px",
-                fontWeight: 700,
-                color: "var(--mustard-text)",
-                borderBottom: "1px solid var(--border)",
-              }}
-            >
-              Find Help for What You Are Facing
-            </Link>
-            {HEADER_GROUPS.map(group => {
-              const sole = soleHeaderLink(group);
-              if (sole) {
-                return (
-                  <Link
-                    key={group.title}
-                    href={sole.href}
-                    onClick={() => setMobileOpen(false)}
-                    aria-current={isActive(sole.href) ? "page" : undefined}
-                    style={{
-                      display: "block",
-                      fontFamily: "var(--U)",
-                      color: "var(--ink)",
-                      fontSize: "14px",
-                      fontWeight: 600,
-                      padding: "12px 0",
-                      borderBottom: "1px solid var(--border)",
-                      textDecoration: "none",
-                    }}
-                  >
-                    {group.title}
-                  </Link>
-                );
-              }
-              return (
-              <div key={group.title}>
-                {/* The whole row is the toggle: four of the five doors open
-                    here, and a tap on the name should do what the chevron does. */}
-                <button
-                  type="button"
-                  aria-label={`Show ${group.title} links`}
-                  aria-expanded={openDropdown === group.title}
-                  onClick={() =>
-                    setOpenDropdown(openDropdown === group.title ? null : group.title)
+          <div id="mobile-nav-panel" ref={sheetRef} className="sn-sheet" role="dialog" aria-label="Menu" aria-modal="false">
+            <div className="sn-sheet-in">
+              <Link href={START_LINK.href} className="sn-start" onClick={closeAll}>
+                {(() => {
+                  const Icon = ICONS[START_LINK.icon];
+                  return <Icon size={24} strokeWidth={ICON_STROKE} aria-hidden style={{ color: "var(--mustard-text)", flex: "none" }} />;
+                })()}
+                <span>
+                  <span className="sn-start__name">{START_LINK.name}</span>
+                  <span className="sn-start__line">{START_LINK.line}</span>
+                </span>
+              </Link>
+
+              <ul className="sn-sheet-doors">
+                {DOORS.map((door) => {
+                  const DoorIcon = ICONS[door.icon];
+                  const current = currentDoor === door.id ? " is-current" : "";
+                  if (!door.rooms.length) {
+                    return (
+                      <li key={door.id}>
+                        <Link href={door.page.href} className={`sn-sheet-door${current}`} onClick={closeAll}>
+                          <DoorIcon className="sn-door-icon" size={24} strokeWidth={ICON_STROKE} aria-hidden />
+                          {door.name}
+                        </Link>
+                      </li>
+                    );
                   }
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    width: "100%",
-                    minHeight: "44px",
-                    background: "none",
-                    border: "none",
-                    borderBottom: "1px solid var(--border)",
-                    cursor: "pointer",
-                    padding: "12px 4px 12px 0",
-                    fontFamily: "var(--U)",
-                    color: "var(--ink)",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    lineHeight: "inherit",
-                    textAlign: "left",
-                  }}
-                >
-                  <span>{group.title}</span>
-                  <ChevronDown
-                    size={18}
-                    aria-hidden
-                    style={{
-                      transform:
-                        openDropdown === group.title ? "rotate(180deg)" : "none",
-                      transition: "transform 0.2s",
-                    }}
-                  />
-                </button>
-                {openDropdown === group.title && (
-                  <div style={{ paddingLeft: "16px", paddingBottom: "8px" }}>
-                    {headerLinks(group).map(item => (
-                      <div
-                        key={item.href + item.label}
-                        style={{ borderBottom: "1px solid var(--border)" }}
+                  const open = sheetDoor === door.id;
+                  return (
+                    <li key={door.id}>
+                      {/* The whole row is the toggle, not only the chevron. */}
+                      <button
+                        type="button"
+                        className={`sn-sheet-door${current}`}
+                        aria-expanded={open}
+                        aria-controls={`sn-sheet-${door.id}`}
+                        onClick={() => setSheetDoor(open ? null : door.id)}
                       >
-                        <NavItemLink
-                          link={item}
-                          onNavigate={() => {
-                            setMobileOpen(false);
-                            setOpenDropdown(null);
-                          }}
-                          style={{
-                            textDecoration: "none",
-                            display: "block",
-                            fontFamily: "var(--U)",
-                            color: "var(--ink)",
-                            fontSize: "14px",
-                            fontWeight: 500,
-                            padding: "10px 0",
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-              );
-            })}
-            <div style={{ display: "flex", gap: "12px", marginTop: "16px" }}>
-              {/* What this reader saved and started, kept on this device (/my-library). */}
-              <Link
-                href={LIBRARY_LINK.href}
-                onClick={() => setMobileOpen(false)}
-                style={{
-                  flex: 1,
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "8px",
-                  textDecoration: "none",
-                  border: "1px solid var(--ink)",
-                  color: "var(--ink)",
-                  padding: "13px 16px",
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  borderRadius: "var(--radius-sm)",
-                }}
-              >
-                <BookmarkCheck size={16} aria-hidden /> {LIBRARY_LINK.label}
-              </Link>
-              <Link
-                href="/subscribe"
-                onClick={() => setMobileOpen(false)}
-                style={{
-                  flex: 1,
-                  textDecoration: "none",
-                  textAlign: "center",
-                  background: "var(--ink)",
-                  color: "var(--bone)",
-                  borderBottom: "2px solid var(--mustard)",
-                  padding: "14px 24px",
-                  fontFamily: "var(--U)",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  borderRadius: "var(--radius-sm)",
-                }}
-              >
-                Subscribe
-              </Link>
+                        <DoorIcon className="sn-door-icon" size={24} strokeWidth={ICON_STROKE} aria-hidden />
+                        {door.name}
+                        <ChevronDown className="sn-chev" size={20} strokeWidth={ICON_STROKE} aria-hidden />
+                      </button>
+                      {open && (
+                        <ul id={`sn-sheet-${door.id}`} className="sn-sheet-rooms">
+                          {door.rooms.map((room) => {
+                            const Icon = ICONS[room.icon];
+                            return (
+                              <li key={room.id}>
+                                <EntryLink entry={room} className="sn-sheet-room" onNavigate={closeAll}>
+                                  <Icon size={18} strokeWidth={ICON_STROKE} aria-hidden />
+                                  {room.name}
+                                </EntryLink>
+                              </li>
+                            );
+                          })}
+                          <li>
+                            <Link href={door.page.href} className="sn-sheet-room sn-sheet-room--all" onClick={closeAll}>
+                              Everything in {door.name}
+                            </Link>
+                          </li>
+                        </ul>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+
+              <ul className="sn-sheet-more">
+                {[HELP_ENTRY, LIBRARY_ENTRY, EVERYTHING_ENTRY].map((entry) => {
+                  const Icon = ICONS[entry.icon];
+                  return (
+                    <li key={entry.id}>
+                      <Link
+                        href={entry.href}
+                        className={`sn-sheet-row${entry.id === "help" ? " sn-sheet-row--help" : ""}`}
+                        onClick={closeAll}
+                      >
+                        <Icon size={20} strokeWidth={ICON_STROKE} aria-hidden />
+                        {entry.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+                <li>
+                  <Link href="/subscribe" className="sn-sheet-row sn-sheet-row--subscribe" onClick={closeAll}>
+                    Subscribe
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         )}
       </nav>
-
-      <style>{
-        // The five-door header needs ~800px (logo 106 + links 638 + gutters,
-        // measured at 861 and 1280 with Study, Topics, Family, Essays, and
-        // About); the hamburger takes over at 860 to leave air.
-        "@media (max-width: 860px) { .desktop-nav { display: none !important; } .mobile-nav { display: flex !important; } }" +
-        "@media (min-width: 861px) { .mobile-nav { display: none !important; } .desktop-nav { display: flex !important; } }"
-      }</style>
     </>
   );
 }

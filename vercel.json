@@ -1035,11 +1035,6 @@
       "permanent": true
     },
     {
-      "source": "/explore",
-      "destination": "/writing",
-      "permanent": true
-    },
-    {
       "source": "/library",
       "destination": "/writing",
       "permanent": true

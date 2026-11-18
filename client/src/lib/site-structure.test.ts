@@ -15,6 +15,7 @@ import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import { SITE_NAV_GROUPS, HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS } from "./siteNav";
+import { DOORS, allEntries } from "./siteCatalog";
 import { SHELF_ESSAYS, isPublicEssay } from "./shelf";
 
 const ROOT = path.resolve(__dirname, "../../..");
@@ -56,7 +57,6 @@ const ROUTES = Array.from(APP.matchAll(/<Route\s+path="([^"]+)"/g), (m) => m[1])
 
 /** The pages folded in this pass, and where each one now lives. */
 const FOLDED: Record<string, string> = {
-  "/explore": "/writing",
   "/library": "/writing",
   "/article-collections": "/writing",
   "/reading-paths": "/writing",
@@ -162,7 +162,7 @@ const KEPT = [
 ];
 
 /** Every tool listed in the /tools registry. */
-const TOOL_HREFS = Array.from(read("client/src/pages/ToolsHub.tsx").matchAll(/^\s+href: "([^"]+)",$/gm), (m) => m[1]);
+const TOOL_HREFS = Array.from(read("client/src/lib/toolsList.ts").matchAll(/^\s+href: "([^"]+)",$/gm), (m) => m[1]);
 
 describe("vercel.json redirects", () => {
   it("runs the apex-host rule first", () => {
@@ -309,15 +309,22 @@ describe("crawl surfaces", () => {
     expect(hits).toEqual([]);
   });
 
-  it("the nav links nothing that only redirects", () => {
-    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS].filter((l) => l.href.startsWith("/"));
+  it("the nav and the catalogue link nothing that only redirects", () => {
+    const links = [
+      ...SITE_NAV_GROUPS.flatMap((g) => g.links),
+      HELP_LINK,
+      LIBRARY_LINK,
+      ...SEARCH_SHORTCUTS,
+      ...allEntries().map((e) => ({ label: e.name, href: e.href })),
+    ].filter((l) => l.href.startsWith("/"));
     expect(links.filter((l) => redirectFor(l.href)).map((l) => l.href)).toEqual([]);
   });
 
-  it("never redirects a door James chose on 2026-10-26, or the page Resources folded from", () => {
-    // Study, Topics, Family, Essays, About, and /resources, which stays live
-    // as the one page of everything to use after its door folded.
-    const doors = ["/study", "/topics", "/family", "/writing", "/about", "/books", "/resources"];
-    expect(doors.filter((u) => redirectFor(u))).toEqual([]);
+  it("never redirects a door's page James chose on 2026-11-18, the Everything page, or /resources", () => {
+    // The seven doors' own pages, /explore (once a redirect to /writing, now
+    // the one page of everything), /books, and /resources.
+    const pages = [...DOORS.map((d) => d.page.href), "/explore", "/books", "/resources"];
+    expect(pages).toEqual(["/study", "/theology/history", "/topics", "/family", "/tools", "/writing", "/about", "/explore", "/books", "/resources"]);
+    expect(pages.filter((u) => redirectFor(u))).toEqual([]);
   });
 });

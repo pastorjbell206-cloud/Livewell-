@@ -1,0 +1,63 @@
+/*
+ * The header (MinimalNav.tsx): seven doors, each opening a compact panel of
+ * six rooms or fewer, and on a phone a full-screen sheet. Tokens only.
+ */
+
+/* ---- The bar ---- */
+.sn-doors{display:flex;align-items:center;gap:2px}
+.sn-door{position:relative}
+.sn-door-btn,.sn-door-link{display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:8px 10px;border:0;background:none;border-radius:var(--radius-sm);font-family:var(--U);font-size:14px;font-weight:500;line-height:1;color:var(--ink);white-space:nowrap;text-decoration:none;cursor:pointer;transition:color .2s}
+.sn-door-btn:hover,.sn-door-link:hover,.sn-door-btn[aria-expanded="true"],.sn-door-btn.is-current,.sn-door-link[aria-current="page"]{color:var(--mustard-text)}
+.sn-door-btn .sn-chev{opacity:.6;transition:transform .2s}
+.sn-door-btn[aria-expanded="true"] .sn-chev{transform:rotate(180deg)}
+.sn-door-btn.is-current::after,.sn-door-link[aria-current="page"]::after{content:"";position:absolute;left:10px;right:10px;bottom:6px;height:2px;background:var(--mustard)}
+.sn-door-btn,.sn-door-link{position:relative}
+.sn-util{display:inline-flex;align-items:center;min-height:44px;padding:8px 10px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);white-space:nowrap;text-decoration:none}
+.sn-search{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:2px;border:0;background:none;color:var(--ink);cursor:pointer;border-radius:var(--radius-sm)}
+.sn-subscribe{display:inline-flex;align-items:center;min-height:44px;margin-left:6px;padding:0 18px;background:var(--ink);color:var(--bone);border-bottom:2px solid var(--mustard);border-radius:var(--radius-sm);font-family:var(--U);font-size:14px;font-weight:600;white-space:nowrap;text-decoration:none}
+
+/* ---- A door's panel ---- */
+.sn-panel{position:absolute;top:calc(100% + 6px);z-index:300;width:384px;padding:8px;background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm);box-shadow:var(--shadow-modal)}
+.sn-panel--start{left:0}
+.sn-panel--end{right:0}
+/* The gap between the door and its panel still counts as hovering the door. */
+.sn-panel::before{content:"";position:absolute;left:0;right:0;top:-10px;height:10px}
+.sn-rooms{list-style:none;margin:0;padding:0}
+.sn-room{display:flex;align-items:flex-start;gap:12px;min-height:44px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--ink);text-decoration:none}
+.sn-room:hover,.sn-room:focus-visible{background:var(--bone-warm)}
+.sn-room svg{flex:none;margin-top:1px;color:var(--ink-muted)}
+.sn-room:hover svg,.sn-room:focus-visible svg{color:var(--mustard-text)}
+.sn-room__name{display:block;font-family:var(--U);font-size:14px;font-weight:600;line-height:1.3}
+.sn-room__line{display:block;margin-top:2px;font-family:var(--U);font-size:13px;line-height:1.4;color:var(--ink-muted)}
+.sn-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;margin-top:6px;padding:4px 12px 0;border-top:1px solid var(--border)}
+.sn-foot a{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink-muted);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.sn-foot a:hover,.sn-foot a:focus-visible{color:var(--ink);text-decoration-color:var(--mustard)}
+
+/* ---- The phone sheet ---- */
+.sn-sheet{position:absolute;top:100%;left:0;right:0;height:calc(100dvh - 70px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;box-sizing:border-box;padding:12px 16px calc(32px + env(safe-area-inset-bottom));background:var(--bone);border-top:1px solid var(--border);z-index:400}
+@media(max-width:480px){.sn-sheet{height:calc(100dvh - 60px)}}
+.sn-sheet-in{max-width:560px;margin:0 auto}
+.sn-start{display:flex;align-items:center;gap:14px;min-height:56px;padding:12px 14px;margin-bottom:12px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm);color:var(--ink);text-decoration:none}
+.sn-start__name{display:block;font-family:var(--U);font-size:16px;font-weight:600}
+.sn-start__line{display:block;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin-top:2px}
+.sn-sheet-doors{list-style:none;margin:0;padding:0;border-top:1px solid var(--border)}
+.sn-sheet-doors>li{border-bottom:1px solid var(--border)}
+.sn-sheet-door{display:flex;align-items:center;gap:14px;width:100%;min-height:60px;padding:8px 4px;border:0;background:none;color:var(--ink);text-align:left;text-decoration:none;cursor:pointer;font-family:var(--F);font-size:24px;font-weight:400;line-height:1.1}
+.sn-sheet-door svg.sn-door-icon{flex:none;color:var(--ink-muted)}
+.sn-sheet-door[aria-expanded="true"] svg.sn-door-icon,.sn-sheet-door.is-current svg.sn-door-icon{color:var(--mustard-text)}
+.sn-sheet-door .sn-chev{margin-left:auto;opacity:.6;transition:transform .2s}
+.sn-sheet-door[aria-expanded="true"] .sn-chev{transform:rotate(180deg)}
+.sn-sheet-rooms{list-style:none;margin:0;padding:0 0 10px 38px}
+.sn-sheet-room{display:flex;align-items:center;gap:12px;min-height:48px;padding:6px 4px;color:var(--ink);text-decoration:none;font-family:var(--U);font-size:15px;font-weight:500}
+.sn-sheet-room svg{flex:none;color:var(--ink-muted)}
+.sn-sheet-room--all{font-weight:600;color:var(--mustard-text)}
+.sn-sheet-more{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.sn-sheet-row{display:flex;align-items:center;gap:12px;min-height:52px;padding:8px 14px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card);color:var(--ink);text-decoration:none;font-family:var(--U);font-size:15px;font-weight:600}
+.sn-sheet-row svg{flex:none;color:var(--ink-muted)}
+.sn-sheet-row--help{color:var(--mustard-text)}
+.sn-sheet-row--help svg{color:var(--mustard-text)}
+.sn-sheet-row--subscribe{justify-content:center;background:var(--ink);color:var(--bone);border-color:var(--ink);border-bottom:2px solid var(--mustard)}
+
+/* ---- Which set shows: the doors from 1024px, the menu button below ---- */
+@media(max-width:1023px){.desktop-nav{display:none!important}.mobile-nav{display:flex!important}}
+@media(min-width:1024px){.mobile-nav{display:none!important}.desktop-nav{display:flex!important}}

@@ -1,18 +1,21 @@
 /**
- * The simplified site's front matter: the committed nav map (header and
- * footer), the home page, the two hubs, and every place that points a reader
- * at a book. These hold the shape James approved: the five header doors he
- * chose on 2026-10-26 (Study, Topics, Family, Essays, About), Find Help one
- * click away everywhere, links only to routes that exist, and book links only
- * to titles on the /books shelf.
+ * The site's front matter: the header and footer drawn from the site
+ * catalogue, the home page, the two hubs, and every place that points a
+ * reader at a book. These hold the shape James approved on 2026-11-18: seven
+ * doors (Bible, History, Questions, Family, Tools, Essays, About), six rooms
+ * or fewer behind each, Find Help one click away everywhere, links only to
+ * routes that exist, and book links only to titles on the /books shelf. The
+ * catalogue's own rules (counts, one name per address) are in
+ * siteCatalog.test.ts.
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { fireEvent, screen, within } from "@testing-library/react";
+import { act, fireEvent, screen, within } from "@testing-library/react";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
+import { DOORS, EVERYTHING_ENTRY, START_LINK } from "./siteCatalog";
 import { BOOK_SHELF, isShelfBookHref } from "./bookShelf";
 import { START_WITH, SHELF_ESSAYS, isPublicEssay } from "./shelf";
 import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, HOME_WHY } from "./positioning";
@@ -46,21 +49,8 @@ function isRoute(href: string): boolean {
 
 const internal = (href: string) => href.startsWith("/");
 
-/** The 2026-10-12 Resources group, every link of which now lives elsewhere. */
-const FORMER_RESOURCES = [
-  "/resources",
-  "/my-library",
-  "/downloads",
-  "/resources/hard-issues-series",
-  "/tools",
-  "/assessments",
-  "/how-tos",
-  "/help",
-  "/plans",
-  "/family",
-];
-
 const group = (title: string) => SITE_NAV_GROUPS.find((g) => g.title === title)!;
+const MENU_DOORS = DOORS.filter((d) => d.rooms.length).map((d) => d.name);
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -68,14 +58,12 @@ afterEach(() => {
 });
 
 describe("the nav map", () => {
-  it("has the five header doors James chose, in order", () => {
-    const header = SITE_NAV_GROUPS.filter((g) => headerLinks(g).length > 0).map((g) => g.title);
-    expect(header).toEqual(["Study", "Topics", "Family", "Essays", "About"]);
-    expect(SITE_NAV_GROUPS.map((g) => g.title)).toEqual(header);
+  it("has the seven doors James chose on 2026-11-18, in order", () => {
+    expect(SITE_NAV_GROUPS.map((g) => g.title)).toEqual(["Bible", "History", "Questions", "Family", "Tools", "Essays", "About"]);
   });
 
-  it("opens Study, Topics, Family, and About as menus, each led by its own page, and Essays as a plain link", () => {
-    const leads: Record<string, string> = { Study: "/study", Topics: "/topics", Family: "/family", About: "/about" };
+  it("opens every door but Essays as a panel led by its own page, with six rooms or fewer", () => {
+    const leads: Record<string, string> = { Bible: "/study", History: "/theology/history", Questions: "/topics", Family: "/family", Tools: "/tools", About: "/about" };
     for (const g of SITE_NAV_GROUPS) {
       if (g.title === "Essays") {
         expect(soleHeaderLink(g)?.href).toBe("/writing");
@@ -83,162 +71,177 @@ describe("the nav map", () => {
       }
       expect(soleHeaderLink(g), g.title).toBeNull();
       expect(headerLinks(g)[0].href, g.title).toBe(leads[g.title]);
-      // Nine in Study since "Compare the views" and "New to faith? Start here"
-      // both joined it (audit 2026-11, items 11 and 14).
-      expect(headerLinks(g).length, g.title).toBeLessThanOrEqual(9);
+      expect(headerLinks(g).length - 1, g.title).toBeLessThanOrEqual(6);
     }
   });
 
   it("points every internal link at a route that exists", () => {
     const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, LIBRARY_LINK, ...SEARCH_SHORTCUTS];
-    const dead = links
-      .filter((l) => internal(l.href) && !isRoute(l.href))
-      .map((l) => l.href);
+    const dead = links.filter((l) => internal(l.href) && !isRoute(l.href)).map((l) => l.href);
     expect(dead).toEqual([]);
   });
 
-  it("folds Resources into Topics and Family, and keeps /resources at the foot of the Topics menu", () => {
-    const hrefs = new Set([...SITE_NAV_GROUPS.flatMap((g) => g.links.map((l) => l.href)), LIBRARY_LINK.href]);
-    expect(FORMER_RESOURCES.filter((h) => !hrefs.has(h))).toEqual([]);
-    expect(headerLinks(group("Topics")).at(-1)?.href).toBe("/resources");
-    expect(group("Topics").links.at(-1)?.href).toBe("/resources");
-    for (const h of ["/answers", "/plans", "/assessments", "/tools"]) {
-      expect(headerLinks(group("Topics")).map((l) => l.href), h).toContain(h);
-    }
-    for (const h of ["/family/tonight", "/family/devotions", "/family/catechism", "/family/reading-plans"]) {
-      expect(headerLinks(group("Family")).map((l) => l.href), h).toContain(h);
-    }
+  it("offers Everything on LiveWell and Find Help among the search shortcuts", () => {
+    const hrefs = SEARCH_SHORTCUTS.map((l) => l.href);
+    expect(hrefs).toContain("/explore");
+    expect(hrefs).toContain("/help");
+    expect(SEARCH_SHORTCUTS.length).toBeLessThanOrEqual(8);
   });
 
-  it("puts the year's plan through the whole story at the foot of the Study menu", () => {
-    const plan = headerLinks(group("Study")).at(-1);
-    expect(plan).toEqual({ label: "Read the Bible in a year (2027)", href: "/study/bible/guides/whole-story-2027", primary: true });
-    expect(isRoute(plan!.href)).toBe(true);
-  });
-
-  it("puts Books under About, beside Speaking and Contact, with the three titles in the footer", () => {
-    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/contact", "/connect"]);
-    const about = group("About").links.map((l) => l.href);
-    for (const b of BOOK_SHELF) expect(about, b.href).toContain(b.href);
-  });
-
-  it("marks outbound and mailto links external, and nothing else", () => {
-    for (const l of SITE_NAV_GROUPS.flatMap((g) => g.links)) {
-      expect(Boolean(l.external), l.href).toBe(!internal(l.href));
-    }
-  });
-
-  it("keeps Speaking, Contact, and ENDS under About, and no link to the pastors' network", () => {
-    const about = SITE_NAV_GROUPS.find((g) => g.title === "About")!.links;
-    const byLabel = new Map(about.map((l) => [l.label, l] as const));
-    expect(byLabel.get("Speaking")?.href).toBe("/speaking");
-    expect(byLabel.get("Contact")?.href).toBe("/contact");
+  it("keeps Books, Speaking, Find James, Contact and Subscribe under About, and no link to the pastors' network", () => {
+    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/connect", "/contact", "/subscribe"]);
     // James, 2026-11-17: the Pastors Connection Network stays outside this site.
     expect(SITE_NAV_GROUPS.flatMap((g) => g.links).some((l) => /pastorsconnection/i.test(l.href + l.label.replace(/\s/g, "")))).toBe(false);
-    expect(byLabel.get("ENDS (training pastors in remote regions)")?.external).toBe(true);
   });
 });
 
-describe("the header and footer", () => {
-  it("renders Find Help, search, and Subscribe beside the five doors", () => {
+describe("the header", () => {
+  it("renders Find Help, search, and Subscribe beside the seven doors", () => {
     renderWithProviders(<MinimalNav />);
     expect(screen.getAllByRole("link", { name: "Find Help" })[0].getAttribute("href")).toBe("/help");
     expect(screen.getAllByRole("button", { name: /search/i }).length).toBeGreaterThan(0);
     expect(screen.getAllByRole("link", { name: "Subscribe" })[0].getAttribute("href")).toBe("/subscribe");
-    for (const name of ["Study", "Topics", "Family", "About"]) {
-      expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-haspopup"), name).toBe("menu");
+    for (const name of MENU_DOORS) {
+      expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-expanded"), name).toBe("false");
     }
     expect(screen.getByRole("link", { name: "Essays" }).getAttribute("href")).toBe("/writing");
-    for (const name of ["Books", "Resources"]) expect(screen.queryByRole("link", { name }), name).toBeNull();
   });
 
-  it("opens each door's menu on its own links", () => {
+  it("opens each door's panel on its rooms, then Everything in the door and Start here", () => {
     renderWithProviders(<MinimalNav />);
-    for (const title of ["Study", "Topics", "Family", "About"]) {
-      fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
-      const menu = screen.getByRole("menu");
-      const shown = within(menu).getAllByRole("link").map((a) => a.getAttribute("href"));
-      expect(shown, title).toEqual(headerLinks(group(title)).map((l) => l.href));
-      fireEvent.click(screen.getByRole("button", { name: new RegExp(`^${title}$`) }));
+    for (const door of DOORS.filter((d) => d.rooms.length)) {
+      const button = screen.getByRole("button", { name: new RegExp(`^${door.name}$`) });
+      fireEvent.click(button);
+      expect(button.getAttribute("aria-expanded")).toBe("true");
+      const panel = document.getElementById(`sn-panel-${door.id}`)!;
+      const shown = within(panel).getAllByRole("link").map((a) => a.getAttribute("href"));
+      expect(shown, door.name).toEqual([...door.rooms.map((r) => r.href), door.page.href, START_LINK.href]);
+      expect(within(panel).getByRole("link", { name: `Everything in ${door.name}` })).toBeTruthy();
+      expect(within(panel).getByRole("link", { name: "New here? Start here" })).toBeTruthy();
+      // Every room shows its icon, its name and its one line.
+      for (const r of door.rooms) {
+        const a = within(panel).getByRole("link", { name: new RegExp(r.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
+        expect(a.textContent).toContain(r.line);
+        expect(a.querySelector("svg")).not.toBeNull();
+      }
+      fireEvent.click(button);
+      expect(document.getElementById(`sn-panel-${door.id}`)).toBeNull();
     }
   });
 
-  it("keeps a door's menu open when a mouse hovers and then clicks it", () => {
-    // About was a plain link until 2026-10-26. The click a mouse makes after
-    // hovering must not fold the menu the hover just opened.
+  it("keeps a door's panel open when a mouse hovers and then clicks it", () => {
     renderWithProviders(<MinimalNav />);
     const about = screen.getByRole("button", { name: /^About$/ });
-    fireEvent.mouseEnter(about);
-    expect(within(screen.getByRole("menu")).getByRole("link", { name: "About James" })).toBeTruthy();
+    fireEvent.mouseEnter(about.parentElement!);
+    expect(document.getElementById("sn-panel-about")).not.toBeNull();
     fireEvent.click(about);
-    expect(within(screen.getByRole("menu")).getByRole("link", { name: "About James" })).toBeTruthy();
+    expect(document.getElementById("sn-panel-about")).not.toBeNull();
     fireEvent.click(about);
-    expect(screen.queryByRole("menu")).toBeNull();
-    // By keyboard (no hover), Enter on the door toggles it as before.
-    const family = screen.getByRole("button", { name: /^Family$/ });
-    fireEvent.click(family);
-    expect(within(screen.getByRole("menu")).getByRole("link", { name: "Tonight's family devotion" })).toBeTruthy();
-    fireEvent.click(family);
-    expect(screen.queryByRole("menu")).toBeNull();
+    expect(document.getElementById("sn-panel-about")).toBeNull();
+  });
+
+  it("works by keyboard: arrows between doors, Down into a panel, Up and Down inside, Escape back", () => {
+    vi.spyOn(window, "requestAnimationFrame").mockImplementation((cb) => {
+      cb(0);
+      return 0;
+    });
+    renderWithProviders(<MinimalNav />);
+    const bible = screen.getByRole("button", { name: /^Bible$/ });
+    bible.focus();
+    fireEvent.keyDown(bible, { key: "ArrowRight" });
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^History$/ }));
+    fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
+    fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
+    // Left from Bible wraps to the last door.
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^About$/ }));
+    bible.focus();
+    act(() => {
+      fireEvent.keyDown(bible, { key: "ArrowDown" });
+    });
+    const panel = document.getElementById("sn-panel-bible")!;
+    expect(panel).not.toBeNull();
+    const links = within(panel).getAllByRole("link");
+    // The panel renders after the key; focus its first room as the next frame would.
+    links[0].focus();
+    fireEvent.keyDown(links[0], { key: "ArrowDown" });
+    expect(document.activeElement).toBe(links[1]);
+    fireEvent.keyDown(links[1], { key: "End" });
+    expect(document.activeElement).toBe(links[links.length - 1]);
+    fireEvent.keyDown(document.activeElement!, { key: "Escape" });
+    expect(document.getElementById("sn-panel-bible")).toBeNull();
+    expect(document.activeElement).toBe(bible);
+    vi.restoreAllMocks();
   });
 
   it("marks the door that holds the page in view", () => {
     const cases = [
       ["/books/believe", "About"],
       ["/family/tonight", "Family"],
-      ["/resources/creeds", "Study"],
-      ["/resources", "Topics"],
+      ["/resources/creeds", "History"],
+      ["/study/bible/john/3", "Bible"],
+      ["/answers", "Questions"],
+      ["/plans", "Tools"],
       ["/writing", ""],
     ] as const;
     for (const [path, door] of cases) {
       window.history.pushState({}, "", path);
       const { unmount } = renderWithProviders(<MinimalNav />);
-      for (const name of ["Study", "Topics", "Family", "About"]) {
+      for (const name of MENU_DOORS) {
         const current = screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-current");
         expect(current, `${path}: ${name}`).toBe(name === door ? "true" : null);
       }
       unmount();
     }
   });
+});
 
-  it("on a phone, a door's whole row is its toggle, not only the chevron", () => {
+describe("the phone sheet", () => {
+  it("leads with Start here, lists the seven doors, then Find Help, My Library, Everything and Subscribe", () => {
     renderWithProviders(<MinimalNav />);
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
-    const row = screen.getByRole("button", { name: "Show About links" });
-    expect(row.textContent).toBe("About");
-    fireEvent.click(row);
-    const panel = document.getElementById("mobile-nav-panel")!;
-    expect(within(panel).getByRole("link", { name: "About James" }).getAttribute("href")).toBe("/about");
+    const sheet = document.getElementById("mobile-nav-panel")!;
+    const first = within(sheet).getAllByRole("link")[0];
+    expect(first.getAttribute("href")).toBe("/start");
+    const doorNames = Array.from(sheet.querySelectorAll(".sn-sheet-door")).map((el) => el.textContent);
+    expect(doorNames).toEqual(DOORS.map((d) => d.name));
+    for (const [name, href] of [["Find Help", "/help"], ["My Library", "/my-library"], [EVERYTHING_ENTRY.name, "/explore"], ["Subscribe", "/subscribe"]]) {
+      expect(within(sheet).getByRole("link", { name }).getAttribute("href"), name).toBe(href);
+    }
   });
 
-  it("on a phone, a tap on the next door's toggle does not first fold the open one", () => {
-    // Folding on mousedown shifts the panel, so the click lands on whatever
-    // moved under the finger and the next door never opens.
+  it("opens a door to its rooms with the whole row, and a tap on the next door does not first fold the open one", () => {
     renderWithProviders(<MinimalNav />);
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
-    fireEvent.click(screen.getByRole("button", { name: "Show Topics links" }));
-    const panel = document.getElementById("mobile-nav-panel")!;
-    expect(within(panel).getByRole("link", { name: "Hard questions, by topic" })).toBeTruthy();
-    const family = screen.getByRole("button", { name: "Show Family links" });
+    const sheet = document.getElementById("mobile-nav-panel")!;
+    const questions = within(sheet).getByRole("button", { name: "Questions" });
+    fireEvent.click(questions);
+    expect(within(sheet).getByRole("link", { name: "Honest Answers" }).getAttribute("href")).toBe("/answers");
+    expect(within(sheet).getByRole("link", { name: "Everything in Questions" }).getAttribute("href")).toBe("/topics");
+    const family = within(sheet).getByRole("button", { name: "Family" });
     fireEvent.mouseDown(family);
-    expect(within(panel).getByRole("link", { name: "Hard questions, by topic" })).toBeTruthy();
+    expect(within(sheet).getByRole("link", { name: "Honest Answers" })).toBeTruthy();
     fireEvent.click(family);
-    expect(within(panel).getByRole("link", { name: "Tonight's family devotion" }).getAttribute("href")).toBe("/family/tonight");
-    expect(within(panel).queryByRole("link", { name: "Hard questions, by topic" })).toBeNull();
+    expect(within(sheet).getByRole("link", { name: "Tonight's devotion" }).getAttribute("href")).toBe("/family/tonight");
+    expect(within(sheet).queryByRole("link", { name: "Honest Answers" })).toBeNull();
   });
+});
 
-  it("mirrors every group in the footer and keeps Find Help and My Library in it", () => {
+describe("the footer", () => {
+  it("shows the seven doors with each door's page and rooms, then My Library, Everything and the legal line", () => {
     renderWithProviders(<Footer />);
     const footer = screen.getByRole("contentinfo");
-    for (const g of SITE_NAV_GROUPS) {
-      expect(within(footer).getByRole("heading", { name: g.title })).toBeTruthy();
-      for (const l of g.links) {
-        const found = within(footer).getAllByRole("link", { name: l.label });
-        expect(found.some((a) => a.getAttribute("href") === l.href), l.label).toBe(true);
+    for (const door of DOORS) {
+      expect(within(footer).getByRole("heading", { name: door.name })).toBeTruthy();
+      for (const e of [door.page, ...door.rooms]) {
+        const found = within(footer).getAllByRole("link", { name: e.name });
+        expect(found.some((a) => a.getAttribute("href") === e.href), e.name).toBe(true);
       }
     }
-    expect(within(footer).getByRole("link", { name: "Find Help" }).getAttribute("href")).toBe("/help");
-    expect(within(footer).getByRole("link", { name: "My Library" }).getAttribute("href")).toBe("/my-library");
+    for (const [name, href] of [["Find Help", "/help"], ["My Library", "/my-library"], ["Everything on LiveWell", "/explore"], ["Downloads", "/downloads"], ["Privacy", "/privacy"], ["Terms", "/terms"], ["Accessibility", "/accessibility"]]) {
+      const found = within(footer).getAllByRole("link", { name });
+      expect(found.some((a) => a.getAttribute("href") === href), name).toBe(true);
+    }
+    expect(footer.querySelector(".follow-row")).not.toBeNull();
   });
 });
 

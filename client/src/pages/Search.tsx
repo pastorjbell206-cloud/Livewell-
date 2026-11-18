@@ -20,7 +20,7 @@ import {
   type SearchEntry,
 } from "@/lib/siteSearch";
 import { CrisisBlock } from "@/components/CrisisBlock";
-import { TOOLS } from "@/pages/ToolsHub";
+import { TOOLS } from "@/lib/toolsList";
 
 // The verses that hold the words typed ("born again"). The Bible's words are
 // a large download, so the code and the text both wait for a query.

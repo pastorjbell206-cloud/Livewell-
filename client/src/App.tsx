@@ -102,6 +102,7 @@ const Privacy = lazy(() => import("./pages/Privacy"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Terms = lazy(() => import("./pages/Terms"));
 const ToolsHub = lazy(() => import("./pages/ToolsHub"));
+const Everything = lazy(() => import("./pages/Everything"));
 const Study = lazy(() => import("./pages/Study"));
 const VerseFinder = lazy(() => import("./pages/tools/VerseFinder"));
 const PrayerGenerator = lazy(() => import("./pages/tools/PrayerGenerator"));
@@ -264,7 +265,7 @@ function redirectTo(to: string) {
     const [, navigate] = useLocation();
     useEffect(() => {
       // Carry the visitor's query along when the target has none of its own
-      // (an old /explore?q=… link searches the essays at /writing?q=…).
+      // (an old /library?q=… link searches the essays at /writing?q=…).
       navigate(to.includes("?") ? to : to + window.location.search, { replace: true });
     }, [navigate]);
     return null;
@@ -573,7 +574,7 @@ function Router() {
         <Route path="/quiz" component={TheologyQuiz} />
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/roadmap" component={RoadMap} />
-        <Route path="/explore" component={ToWritingRedirect} />
+        <Route path="/explore" component={Everything} />
         <Route path="/library" component={ToWritingRedirect} />
         <Route path="/diagnostic" component={Diagnostic} />
         <Route path="/study/bible/story/:act" component={StudyBibleStory} />
