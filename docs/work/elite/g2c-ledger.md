@@ -259,3 +259,26 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Biography: atheism (summary, primer, FAQ, facilitator script, bulletin, pulpit) | Used as credential | Kept once, session 1 teaching ("I came to faith from atheism, so I know how the word creed can sound from outside"); rest removed; FAQ about the writer's atheism cut (12 to 11) |
 | "Bell says" in four discussion questions | Narrator naming James | Removed |
 | Scripture quotations | ESV, from memory; no ESV in the repository | ESV throughout |
+
+## The Image of God
+
+| Claim | How checked | Result |
+|---|---|---|
+| C. S. Lewis, "The Weight of Glory": "There are no ordinary people. You have never talked to a mere mortal." and "Next to the Blessed Sacrament itself, your neighbour is the holiest object presented to your senses." | Web search: the sermon of 8 June 1941, collected 1949; several reproductions agree | Quoted exactly with source and date |
+| Calvin: image "not annihilated" but "a frightful deformity" | Known: Institutes 1.15.4 (1559) | Kept as paraphrase with the phrase unquoted |
+| "Calvin's distinction" between broad and narrow image | The terms belong to later Reformed theology | Attributed to "Reformed theologians after Calvin" (teaching, glossary, timeline) |
+| Timeline "1536" for Calvin's frightful deformity | The wording is from the final edition | "1536 to 1559" |
+| Middleton, The Liberating Image, "the liberating image" | Known: 2005 | Kept; dated |
+| Egypt and Mesopotamia: only the king is the god's image | Known in outline from Middleton; "only" overstates | "Could be called"; "largely of the king" |
+| Tselem used of statues of gods | Known (e.g. 2 Kings 11:18) | Kept |
+| Augustine (memory, understanding, will); Aquinas (intellect) | Known: On the Trinity about 400 to 420; Summa I q.93 about 1266 to 1268 | Dated |
+| Bonhoeffer, Creation and Fall: Berlin lectures 1932 to 1933, image as relation and "freedom for" | Known | Kept as paraphrase; "regime that would murder him builds its doctrine of lives unworthy of life" in 1933 softened to "as the regime that would later execute him comes to power" |
+| Barth, Church Dogmatics III/1, 1945, relational image | Known | Kept |
+| Martin Luther King Jr. grounding civil rights in the image of God | Known in outline | Paraphrase, no quotation |
+| Bibliography: "In the Beginning... Creation and the Priestly History" by Claus Westermann, "offered as a category" | Not a title I can find; the note called it a category | Cut |
+| Bibliography dates: Kilner 2015; Metaxas 2010 (criticized by historians, now said); Hamilton 1990; Middleton 2005 | Known | Dated; three "Leader to confirm" removed |
+| Psalm 8 "circa 1000 BC"; Paul "circa AD 60" | Traditional; Paul's letters span the 50s and early 60s | "About 1000 BC (traditional)"; "the 50s and early 60s AD" |
+| Biography: atheism (summary, primer, FAQ, facilitator script); "raised without a father", "five sons" (summary) | Credentials | Atheism kept once, session 1 teaching, where it does the work of knowing the reduction from inside; the rest removed; FAQ about the writer's self-implication cut (12 to 11) |
+| "Bell says" (about 20 places) | Narrator naming James | Removed |
+| Help: abuse topic in sensitive-pages.json | Untouched; guide text has no help lines of its own | Session 3 and 5 questions, case study and objection now point to the help information printed with the guide; primer names Find Help |
+| Scripture quotations | ESV, from memory | ESV throughout; John 4:6 in the-creeds paraphrased to avoid "journey" |
