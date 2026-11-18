@@ -29,7 +29,9 @@ I took the crisis-facing guides first, as the writing plan recommends: the ones 
 
 Done, committed and pushed (11, before the fifth run): mental-health, pastoral-health, marriage, identity, heaven-and-hell (first run); prayer, gratitude (second run); fruit-of-the-spirit, generosity (third run, brief guides3.md); habits-and-formation, holy-spirit (fourth run, brief guides3.md).
 
-Not started (9): hospitality, knowing-god, manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The fourth run was assigned habits-and-formation and holy-spirit, with hospitality if room remained; it stopped at a clean guide boundary after holy-spirit and its gates, to leave hospitality whole for a fresh run. The next guide is hospitality.
+Fifth run (brief guides3.md): hospitality and knowing-god done, committed and pushed (13 in all).
+
+Not started (7): manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The fourth run was assigned habits-and-formation and holy-spirit, with hospitality if room remained; it stopped at a clean guide boundary after holy-spirit and its gates, to leave hospitality whole for a fresh run. The fifth run was assigned hospitality and knowing-god, with manhood if room remained; it stopped at a clean guide boundary after knowing-god and the full gates, leaving manhood whole for a fresh run. The next guide is manhood.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, theme, sessions, session titles, key passages, timing, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted from the ESV (the text these guides already used) with references; case studies reframed as "Suppose"; rulebook words ("steelman", "verdict" as a method word, "inside the indictment", "the method is the mercy"), biography stamps, "Bell" and "Leader to confirm" removed; every help line kept word for word (checked by script against the old file). The claim-by-claim record is docs/work/elite/g2b-ledger.md.
 
@@ -51,7 +53,7 @@ Each guide was rewritten whole by the pilot's method: same slug, title, theme, s
 | hospitality | 22,652 / 19,326 | 24 / 0 | 21 / 3 | 3 / 0 | Kept: none (the old guide quoted no one). Paraphrased: Nouwen on free space; Mauss on the gift; Benedict, Rule 53. Cut: none | "No buildings for three hundred years" softened; "six words" count removed; Judges 19 note corrected; Levi's tax collectors no longer said to work for Rome; timeline dates loosened and reordered; Basil about 370; Keller marriage book cut from the bibliography |
 | knowing-god | 26,701 / 20,212 | 20 / 0 | 44 / 8 | 3 / 0 | Kept: none (only creed text and the Arian slogan). Paraphrased: Augustine's "if you understand it, it isn't God" (now attributed to a sermon, not On the Trinity); Calvin, Institutes 1.2.1; Packer on adoption. Cut: none | Trinitarian refinement moved from Chalcedon to Constantinople 381; Calvin's line moved to the 1559 edition; Barth 1932, not 1934; Shema, Hebrews and Athanasius dates loosened; prodigal cultural claims marked as commentators' reading; biography kept once (fatherlessness, session 3), atheism removed |
 
-Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude); 1 in the third (the year of Chalmers's sermon, for fruit-of-the-spirit; not found, so the year was cut); in the fourth, 1 for habits-and-formation (Willard's grace-and-earning line).
+Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude); 1 in the third (the year of Chalmers's sermon, for fruit-of-the-spirit; not found, so the year was cut); in the fourth, 1 for habits-and-formation (Willard's grace-and-earning line); in the fifth, none (hospitality and knowing-god quoted no one that needed a search; dates and attributions were corrected from known sources and loosened where unsure).
 
 ## Choices on contested matters
 
@@ -98,9 +100,19 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - pnpm test: 144 files passed, 7 skipped, 0 failed.
 - Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
 
+## What I ran, and what passed (fifth run, after knowing-god)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words, em-dashes and exclamation points searched literally in both guides: the only hits are "blessed" inside quoted ESV Scripture (Luke 14:14). No exclamation points.
+- Every command in the CI content-gates step (35): passed.
+- pnpm check: passed.
+- pnpm test: 144 files passed, 7 skipped, 0 failed (1,640 tests).
+- Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
+- Knowing God, session 3 (the word Father): no help line existed to keep. I added, in plain words and with no number, a pointer to a group leader, pastor or counselor in the practice, the leader primer and the FAQ. James may want the 988 line or the help box there; that is his call.
+
 ## What I did not do or verify
 
-- The nine guides listed above as not started.
+- The seven guides listed above as not started.
 - The ESV wording was checked from memory; there is no ESV text in the repository.
 - Lighthouse was not run for these pages (only the guide text changed; the pilot measured the same page component at CLS 0 and accessibility 99, the one miss being heading order in the page component).
 - The downloadable PDFs still carry the old wording until pnpm pdfs is rerun.
