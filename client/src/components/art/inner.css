@@ -83,3 +83,15 @@
 .lw-index__line{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .lw-none{max-width:62ch;font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink)}
 .lw-none a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+
+/* The arenas of /wisdom: an icon card with its name, and the deep guide as a quiet link under it. */
+.lw-arenas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 var(--s-4)}
+.lw-arenas>li{display:flex;flex-direction:column;border-top:1px solid var(--charcoal-line);padding:12px 0 10px}
+.lw-arena{display:flex;align-items:center;gap:14px;min-height:52px;color:var(--charcoal-fg);text-decoration:none}
+.lw-arena .lw-tile__icon{border-color:var(--charcoal-fg);background:transparent;color:var(--charcoal-fg)}
+.lw-arena__name{font-family:var(--F);font-size:21px;line-height:1.18}
+.lw-arena:hover .lw-arena__name,.lw-arena:focus-visible .lw-arena__name{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.lw-arena__guide{display:inline-flex;align-items:center;min-height:44px;margin-left:62px;font-family:var(--U);font-size:14px;font-weight:500;color:var(--charcoal-fg-muted);text-decoration:underline;text-decoration-color:var(--charcoal-line);text-underline-offset:.2em}
+.lw-arena__guide:hover{color:var(--charcoal-fg);text-decoration-color:var(--mustard)}
+@media (max-width:1100px){.lw-arenas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.lw-arenas{grid-template-columns:minmax(0,1fr)}}
