@@ -234,6 +234,7 @@ const STATIC_PAGES = [
   { url: "/tools/test-the-case", priority: "0.8", changefreq: "monthly" },
   { url: "/downloads", priority: "0.75", changefreq: "weekly" },
   { url: "/study/bible", priority: "0.9", changefreq: "monthly" },
+  { url: "/study/plans", priority: "0.8", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },

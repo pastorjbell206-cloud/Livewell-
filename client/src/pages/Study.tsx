@@ -53,7 +53,7 @@ const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] =
   { title: "Guides to reading it", note: "How to read each kind of book", href: "/study/bible/guides", plate: "compass" },
   { title: "The Bible's story", note: "One story in eleven parts", href: "/study/bible/story", plate: "tree" },
   { title: "Bible background", note: "The world it was written in", href: "/resources/context", plate: "jar" },
-  { title: "The Bible in a year", note: "A plan that keeps your place", href: "/study/bible/guides/whole-story-2027", plate: "sundial" },
+  { title: "Reading plans", note: "Every plan, by length", href: "/study/plans", plate: "sundial" },
 ];
 
 /** One step further in. */
