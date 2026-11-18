@@ -25,8 +25,8 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 ## Where this share stands
 
-Done, committed and pushed: 1 to 5 (after-christendom, aging-and-legacy, alone-in-a-crowded-church, anger, anxiety).
-Not started: 6 to 20 (attention through friendship). No file for them was touched. The run stopped at a clean guide boundary because the working context was nearly used up; the next run should start at attention.
+Done, committed and pushed: 1 to 8 (after-christendom, aging-and-legacy, alone-in-a-crowded-church, anger, anxiety, attention, baptism-and-communion, believe).
+Not started: 9 to 20 (character-before-competence through friendship). The second run (brief guides3.md, five guides assigned) stopped after three at a clean guide boundary to leave room for the gates and the push; the next run should start at character-before-competence, then christian-nationalism.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, sessions, session titles, passages, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted (ESV, the translation these guides already used) with references; case studies reframed as "Suppose"; rulebook words, biography stamps, "Bell" and "Leader to confirm" removed; off-shelf book plugs dropped; help lines kept word for word. The claim-by-claim record is docs/work/elite/g2a-ledger.md.
 
@@ -39,12 +39,17 @@ Each guide was rewritten whole by the pilot's method: same slug, title, sessions
 | alone-in-a-crowded-church | 22,254 / 13,802 | 34 / 0 | 37 / 5 | 6 / 0 | Kept: Augustine's restless heart (short, well known). Paraphrased: Bonhoeffer's "wish dream" argument | Mark 14:34 wording corrected; Colson's book title corrected; two placeholder bibliography entries cut; Surgeon General's 2023 advisory named as the source for the smoking comparison |
 | anger | 26,165 / 15,349 | 27 / 0 | 51 / 7 | 5 / 0 | Paraphrased: Aristotle on rightly ordered anger. Cut: none other carried | Matthew 18:22 is "seventy-seven times" in the ESV; Ephesians early 60s (not AD 55); Jonah and Sinai dates; "rigged exchange rates" (not in the text) cut; Keller bibliography entry cut (unconfirmed) |
 | anxiety | 20,290 / 13,753 | 28 / 0 | 34 / 5 | 5 / 0 | Kept: Augustine's restless heart. Paraphrased: none. Cut: none | Burroughs's Rare Jewel 1648 (not 1656); Kierkegaard's Concept of Anxiety 1844 replaces his death date; Welch's fear-of-man book title corrected; Luke 22:44 now carries its manuscript note and the argument rests on Mark 14:33-34 |
+| attention | 26,873 / 17,710 | 21 / 0 | 34 / 1 | 4 / 0 | Paraphrased: Weil on attention and prayer; Augustine's restless heart named, not quoted. Cut: none | Wilson 2014 shock study corrected (6 to 15 minutes; one experiment); 1 Kings 19:12 to the ESV wording; Sinai and Psalms dates; smartphone dates |
+| baptism-and-communion | 24,935 / 17,795 | 27 / 0 | 56 / 5 | 4 / 0 | Kept: Augustine's "a kind of visible word" (searched). Paraphrased: Athanasius. Cut: none | Augustine source corrected to Tractates on John 80; 1 Peter 3:21 and John 6:63 to ESV wording; Didache date; Corinthian reconstruction marked as reconstruction |
+| believe | 22,388 / 15,897 | 34 / 0 | 103 / 13 | 6 / 0 | Kept: Bonhoeffer's "come and die" (English translation); Twain's schoolboy line. Paraphrased: Lewis's trilemma and "reluctant convert". Cut: none | Minimal facts and apostles' deaths stated accurately; Psalm 19:1 and 1 Corinthians 15:3-4 to ESV; atheism used once, fatherless line cut |
 
 Help lines: aging-and-legacy and anxiety each keep their three 988 sentences unchanged and in place; anger keeps its domestic-violence and "never return to harm" sentences unchanged. Checked by script against the old files.
 
+Converter fix (2026-11-18, second run): the YAML-to-JSON step had wrapped some quoted values (timeline years, quote cards) in literal single quotes in five earlier guides; stripped in a separate commit, and the converter fixed.
+
 Contractions rose from about 70 to 110 per guide to about 410 to 520. Forbidden-word search (CLAUDE.md list plus the rulebook words) is clean except for a session title James's guide already carried ("Anger Is a Signal, Not a Verdict") and one book title (Brauns, Unpacking Forgiveness). No em-dashes; no exclamation points outside quoted Scripture.
 
-Web searches used: 1 of 40 (Sacks, "On Creative Minorities", 2013).
+Web searches used: 1 in the first run (Sacks, "On Creative Minorities", 2013); 2 in the second (Wilson et al., Science 2014, for attention; Augustine, Tractates on John 80.3, for baptism-and-communion).
 
 ## What I ran, and what passed
 
@@ -57,9 +62,11 @@ Web searches used: 1 of 40 (Sacks, "On Creative Minorities", 2013).
 - ESLint: no code files changed, so not run. Lighthouse: not run (only JSON content changed; the pilot measured the page).
 - Merged origin (g2c's guides) once; rebuilt the study guide index with its builder.
 
+Second run (attention, baptism-and-communion, believe): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed, each run on its own; pnpm check passed; pnpm test 142 files passed, 7 skipped, one client test (fes.test.tsx, the family catechism) timed out under load and passed when rerun alone. pnpm build, Lighthouse and screenshots not run, per the brief (the lead runs them on the whole branch).
+
 ## What I did not do or verify
 
-- Guides 6 to 20 are not rewritten.
+- Guides 9 to 20 are not rewritten.
 - ESV wording was quoted from memory; there is no ESV in the repository to check against.
 - Book dates and titles marked "Known" in the ledger were not searched.
 - PDFs were not rebuilt (another unit owns pnpm pdfs).
@@ -68,4 +75,5 @@ Web searches used: 1 of 40 (Sacks, "On Creative Minorities", 2013).
 
 1. The five-sons sentence. Old aging-and-legacy session 5 ended with a first-person wish about his sons standing at his grave. I cut it under the "no added memory" default. If it is his, it could go back as the one biographical line in that guide.
 2. The pilot's six questions still stand, especially translation (these guides are ESV) and whether any of his biography belongs anywhere.
-3. Three guides here were tied to books of his not on the shelf (After Christendom, Alone in a Crowded Church, Consider the Birds). The plugs are gone; tell me if any of those books should be offered to readers.
+3. Believe is drawn from his book Believe, which is on the shelf, so that mention stays (in his voice). The believe guide had used both his atheism and his fatherlessness several times; I kept the atheism once, where session 1's argument turns on it, and cut the fatherless line. If he wants it back, its old place was session 1, beside the remark that "Father" is not an easy word for everyone.
+4. Three guides here were tied to books of his not on the shelf (After Christendom, Alone in a Crowded Church, Consider the Birds). The plugs are gone; tell me if any of those books should be offered to readers.

@@ -118,3 +118,73 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Matthew 11:29 the only place Jesus describes his own heart | Widely observed (Ortlund) | Kept as "the one time in the Gospels" |
 | FAQ "Why does the study keep implicating the writer" | About method | Cut |
 | Help lines (988) | Word for word | Three sentences unchanged in the primer, FAQ and closing script |
+
+## attention
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell does not write this from a mountain" and other narrator lines | Rulebook | Removed; the writer's inclusion is now in his own first person |
+| People choose a mild shock over fifteen minutes alone (Wilson et al., Science, 2014) | Web search (ScienceDaily; Harvard DASH record) | Kept, corrected: 6 to 15 minutes alone; shocks chosen in one experiment (12 of 18 men, 6 of 24 women). Teaching and timeline now say so |
+| Socrates on writing and memory | Known (Plato, Phaedrus) | Kept, source named |
+| Haidt, The Anxious Generation, 2024; early-2010s rise, heaviest among girls | Known | Kept; the dispute among researchers is stated in the teaching, objection and FAQ |
+| Simone Weil: attention at its highest is prayer; attention to a sufferer is rare, nearly a miracle | Known in substance (Gravity and Grace; "Reflections on the Right Use of School Studies", 1942, in Waiting for God) | Kept as paraphrase only, no quotation marks |
+| Augustine, restless heart; Confessions "circa 400" | Known | Kept; dated about 397 to 400 |
+| Smith, You Are What You Love, 2016 | Known | Kept, argument stated as his |
+| Hagah: to murmur, mutter; growl of a lion | Known (Isaiah 31:4) | Kept, verse named |
+| Lectio divina in four movements | Known | Kept, unattributed |
+| Sinai "circa 1446 BC"; Psalms "circa 1000 BC" | Disputed / Psalms span centuries | "Date debated"; "Over many centuries" |
+| "2008: first smartphones with full app ecosystems" | Known (iPhone 2007, App Store 2008, front camera 2010) | "2007 to 2012" with the pieces named |
+| "Four hundred years of slavery" | Exodus 12:40 says 430 years in Egypt | "Generations of slavery" |
+| 1 Kings 19:12 "still small voice" | That is the KJV; the ESV reads "the sound of a low whisper" | Corrected to the ESV |
+| Trellis image "from contemporary writers" | Unattributed | Kept as an image; no source claimed |
+| Desert Sayings, Earley (2019), Comer (2019), Turkle (2015), Taylor (2007), Postman (1985), Benedict, Haidt, Smith | Known | Kept; four "Leader to confirm" notes removed |
+| FAQ claim that "the writer came at this not as an insider" | Implies biography | Cut |
+| Help lines | Old guide had none | A short line added to the primer: take danger seriously, get real help that day, not medical advice |
+
+## baptism-and-communion
+
+| Claim | How checked | Result |
+|---|---|---|
+| "He came to faith from atheism" (summary and skeptic FAQ) | Confirmed biography | Kept once, in the skeptic FAQ where it does work; cut from the summary |
+| Narrator "Bell" and "the writer" lines; FAQ "Why does the writer keep implicating himself" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| Where he lands: believer's baptism; closest to Calvin on the Supper | Stated in the old guide | Kept, with the objection he names (covenant continuity) |
+| Augustine, sacrament as "visible word"; source given as On Christian Doctrine | Web search (New Advent, Tractates on John 80.3) | Phrase kept as "a kind of visible word"; bibliography corrected to Tractates on the Gospel of John |
+| Athanasius, "he became man so that we might be made divine" | Known (On the Incarnation 54) | Kept, without quotation marks |
+| Irenaeus about 180 against the Gnostics, the Eucharist as proof | Known (Against Heresies 4.18, 5.2) | Kept, work named |
+| Zurich rebaptisms 1525 | Known (21 January 1525) | Kept |
+| Marburg 1529, fourteen of fifteen articles; Luther's chalk | Known; the chalk is a traditional account | Kept, chalk marked "by the traditional account" |
+| Fourth Lateran 1215; Trent 1551; Calvin's Institutes 1536 | Known | Kept |
+| Cyprian's council on the eighth day, early 250s | Known (Letter 64) | Kept |
+| Didache "circa AD 100" | Date debated | "Late first or early second century" |
+| Justin Martyr's First Apology about 150 | Known | Kept |
+| Ferguson on the evidence for infant baptism | Known (2009) | Kept, book and year named |
+| 1 Peter 3:21 "answer of a good conscience" | Not the ESV wording | ESV: "an appeal to God for a good conscience" |
+| John 6:63 "the flesh is of no avail" | RSV wording | ESV: "the flesh is no help at all" |
+| Corinth: rich arrived early, poor after work; dining room and courtyard | Scholarly reconstruction, not in the text | Kept, marked "it seems" and "many scholars think"; Fee named as drawing on studies of Roman houses |
+| 1 Corinthians 12:13 | ESV has em-dashes | Quoted only the dash-free clause; rest paraphrased |
+| Vander Zee (2004), Letham (2001), Ferguson (2009), Wright ed. Three Views (2009), Smith (2009), Fee (1987), N. T. Wright, Calvin, Justin, Didache | Known | Kept; four "Leader to confirm" notes removed |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
+
+## believe
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Believe" | Believe is on the three-book shelf (client/src/lib/bookShelf.ts) | Kept, now in his voice ("my book Believe") in the summary; promo says "the book Believe" |
+| He came to faith from atheism (used five times); raised without a father (used three times) | Confirmed biography; brief allows one use | Atheism kept once, in session 1's teaching where the argument turns on it. Fatherless line cut; the pastoral point that "Father" is not an easy word for everyone kept without biography |
+| Narrator "Bell" lines; FAQ "Why does the study keep implicating the writer" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| Lewis, "poached egg ... Devil of Hell" (Mere Christianity) | Known; the original sentence carries em-dashes | Paraphrased with the book named; "liar, lunatic, or Lord" kept as the usual summary |
+| Lewis, "most reluctant convert in all England"; "kicking and struggling" | Known (Surprised by Joy) | Paraphrased, book named |
+| Bonhoeffer, "When Christ calls a man, he bids him come and die" | Known (English translation of Nachfolge, 1937); executed April 1945 | Kept, marked as the English translation's line |
+| Twain, faith is "believing what you know ain't so" | Known (Following the Equator, a schoolboy's definition) | Kept, source named |
+| Aquinas's five "ways"; Anselm, faith seeking understanding; Hume; Plantinga | Known | Kept |
+| "Historians agree" the tomb was found empty (minimal facts) | Overstated: Habermas's minimal-facts list does not include the empty tomb | Corrected: "many, though not all, also accept that the tomb was found empty"; Habermas named |
+| Apostles "flogged and crucified and beheaded, one after another" | Overstated: Scripture records James killed (Acts 12:2) and the apostles beaten (Acts 5:40); Peter and Paul's deaths rest on early tradition | Restated from Acts plus "early Christian tradition holds" |
+| A stone "that took several men to move"; "professional executioners did not make mistakes" | Not in the text | Cut / softened |
+| Creed of 1 Corinthians 15 "dated by scholars to within a few years" | Common scholarly view, not unanimous | "Many scholars" |
+| Morison began trying to disprove the resurrection | His own account in the book | "By his own account" |
+| Psalm 19:1 "the sky proclaims the work of his hands" | Not the ESV | ESV: "the sky above proclaims his handiwork" |
+| Memory verse 1 Corinthians 15:3-4 "and he was buried, and he was raised" | Not the ESV | ESV wording restored |
+| Wright (2003), Bauckham (2006), Keller (2008, 2016), Strobel (1998, 2000), Chesterton (1908), Morison (1930), Ortlund (2020) | Known | Kept; six "Leader to confirm" notes removed |
+| Named case studies (Daniel, Renata, Marcus, Theo, Priya) told as real | No source | Names removed; reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
