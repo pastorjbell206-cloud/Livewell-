@@ -1884,3 +1884,83 @@ html{-webkit-tap-highlight-color:transparent}
 .essay-end__share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;padding:12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card)}
 .essay-end__share[hidden]{display:none}
 .essay-end__share>a,.essay-end__share>button,.essay-end__share>div>button{color:var(--ink) !important;border-color:var(--border) !important}
+/* ─── THE STUDY BIBLE DESK (docs/work/elite/desk.md) ─────────────────────
+ * Read and Study on a chapter (.sb-viewbar, .sb-switch, .sb-text--read), the
+ * reader's highlights and notes (.sb-marks, .sb-swatch, .sb-mynotes, the
+ * --mark-* tints), the verse panel's fixed tabs (.sb-tabs), the guided study
+ * "Study this chapter" (.wk), and /study/how-to-study (.hts). Tokens only. */
+:root{--mark-a:#F2E2A4;--mark-b:#DCE3C9;--mark-c:#D2E0E7;--mark-line:#B8B09C}
+html.dark{--mark-a:#4A3C0E;--mark-b:#343B26;--mark-c:#22333C;--mark-line:#6A6252}
+
+.sb-viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
+.sb-switch{display:inline-flex;padding:3px;border:1px solid var(--borderdk);border-radius:999px;background:var(--card)}
+.sb-switch button{min-height:40px;min-width:76px;padding:0 18px;border:0;border-radius:999px;background:transparent;color:var(--ink);font-family:var(--U);font-size:14px;font-weight:600;cursor:pointer}
+.sb-switch button[aria-pressed="true"]{background:var(--ink);color:var(--bone)}
+.sb-walkbtn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 18px;border:1px solid var(--ink);border-bottom:2px solid var(--mustard);border-radius:var(--radius-sm);background:var(--ink);color:var(--bone);font-family:var(--U);font-size:14.5px;font-weight:500;cursor:pointer}
+.sb-walkbtn:hover{background:var(--charcoal-deep)}
+.sb-aa{display:inline-flex;align-items:center;justify-content:center;min-width:46px;min-height:46px;border:1px solid var(--borderdk);border-radius:999px;background:var(--card);color:var(--ink);font-family:var(--F);font-size:21px;line-height:1;cursor:pointer}
+.sb-aa[aria-expanded="true"]{border-color:var(--ink)}
+.sb-sizerow{margin-top:8px}
+.sb-hint{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0 0;padding:0 0 0 12px;border-left:2px solid var(--mustard);font-family:var(--U);font-size:13.5px;line-height:1.5;color:var(--ink-muted)}
+.sb-hint button:not(.sb-hint__x){border:0;padding:0;background:none;color:var(--ink);font:inherit;font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px;cursor:pointer;min-height:24px}
+.sb-hint__x{flex:none;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;background:none;color:var(--ink-muted);cursor:pointer}
+@media (max-width:420px){.sb-walkbtn{padding:0 14px}.sb-switch button{min-width:64px;padding:0 14px}}
+
+.sb-text--read{max-width:var(--w-read);font-family:var(--font-reading);line-height:1.85;color:var(--ink);text-wrap:pretty}
+.sb-verse--read{cursor:auto;scroll-margin-top:100px}
+.sb-text--read.sb-text--poetry .sb-verse{padding-left:0}
+.sb-text--read.sb-text--poetry .sb-verse{margin-bottom:.8em}
+
+.sb-verse[data-mark="a"]{background:var(--mark-a)}
+.sb-verse[data-mark="b"]{background:var(--mark-b)}
+.sb-verse[data-mark="c"]{background:var(--mark-c)}
+.sb-verse[data-mark][data-active]{box-shadow:0 0 0 2px var(--mustard)}
+.sb-pen{display:inline-block;margin-left:2px;vertical-align:middle}
+
+.sb-marks{min-height:44px;margin:10px 0 0}
+.sb-marks__row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.sb-marks__colors{display:inline-flex;gap:2px;margin-right:4px}
+.sb-swatch{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;border-radius:999px;background:none;cursor:pointer;padding:0}
+.sb-swatch span{display:block;width:26px;height:26px;border-radius:999px;border:1.5px solid var(--mark-line)}
+.sb-swatch[data-color="a"] span{background:var(--mark-a)}
+.sb-swatch[data-color="b"] span{background:var(--mark-b)}
+.sb-swatch[data-color="c"] span{background:var(--mark-c)}
+.sb-swatch[aria-pressed="true"] span{border:2px solid var(--ink);box-shadow:0 0 0 2px var(--card),0 0 0 3.5px var(--ink)}
+.sb-marks__btn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border:1px solid var(--border);border-radius:999px;background:var(--card);color:var(--ink);font-family:var(--U);font-size:13px;font-weight:600;cursor:pointer}
+.sb-marks__btn--quiet{border-color:transparent;color:var(--ink-muted);padding:0 8px}
+.sb-marks__btn--ink{background:var(--ink);color:var(--bone);border-color:var(--ink)}
+.sb-marks__edit{margin-top:8px;display:grid;gap:8px}
+.sb-marks__label{font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink)}
+.sb-marks__area{width:100%;min-height:84px;padding:10px 12px;border:1px solid var(--borderdk);border-radius:var(--radius-sm);background:var(--card);color:var(--ink);font-family:var(--font-reading);font-size:16px;line-height:1.55;resize:vertical}
+.sb-marks__note{margin:8px 0 0;padding:8px 12px;border-left:2px solid var(--mark-line);font-family:var(--font-reading);font-size:15.5px;line-height:1.55;color:var(--ink);white-space:pre-wrap}
+.sb-marks__kept{margin:0;font-family:var(--U);font-size:12.5px;line-height:1.5;color:var(--ink-muted)}
+.sb-marks__kept a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
+.sb-marks__alert{margin:8px 0 0;font-family:var(--U);font-size:13px;line-height:1.5;color:var(--alert)}
+
+.sb-tabs{display:flex;gap:2px;margin:var(--s-3) calc(var(--s-3) * -1) 0;padding:0 var(--s-3);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+.sb-tabs::-webkit-scrollbar{display:none}
+.sb-tabs [role="tab"]{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 10px;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;background:none;color:var(--ink);font-family:var(--U);font-size:13.5px;font-weight:600;cursor:pointer;white-space:nowrap}
+.sb-tabs [role="tab"][aria-selected="true"]{border-bottom-color:var(--ink)}
+.sb-tabs [role="tab"][data-empty]{color:var(--ink-muted);font-weight:500}
+.sb-tabs__n{font-size:11.5px;font-weight:600;color:var(--ink-muted)}
+.sb-tabpanel{padding-top:12px}
+aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * -1);padding:0 var(--s-4)}
+.sb-panel .sb-tabs{margin-left:calc(var(--s-3) * -1);margin-right:calc(var(--s-3) * -1);padding:0 var(--s-3)}
+
+.sb-mynotes{margin:var(--s-4) 0 0;max-width:68ch;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card)}
+.sb-mynotes summary{display:flex;align-items:center;gap:10px;min-height:52px;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--F);font-size:1.3rem;color:var(--ink)}
+.sb-mynotes summary::-webkit-details-marker{display:none}
+.sb-mynotes summary svg{color:var(--ink-muted)}
+.sb-mynotes__n{margin-left:auto;font-family:var(--U);font-size:12px;font-weight:600;color:var(--ink-muted)}
+.sb-mynotes ul{list-style:none;margin:0;padding:0 16px}
+.sb-mynotes li{display:flex;align-items:center;gap:10px;border-top:1px solid var(--border)}
+.sb-mynotes__sw{flex:none;width:14px;height:14px;border-radius:999px;border:1.5px solid var(--mark-line)}
+.sb-mynotes__sw[data-color="a"]{background:var(--mark-a)}
+.sb-mynotes__sw[data-color="b"]{background:var(--mark-b)}
+.sb-mynotes__sw[data-color="c"]{background:var(--mark-c)}
+.sb-mynotes__open{flex:1;min-width:0;display:grid;gap:2px;min-height:52px;padding:8px 0;border:0;background:none;text-align:left;cursor:pointer;color:var(--ink)}
+.sb-mynotes__ref{font-family:var(--U);font-size:13px;font-weight:600}
+.sb-mynotes__text{font-family:var(--font-reading);font-size:15px;line-height:1.5;color:var(--ink-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sb-mynotes__rm{flex:none;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;background:none;color:var(--ink-muted);cursor:pointer}
+.sb-mynotes__rm:hover{color:var(--alert)}
+.sb-mynotes>.sb-marks__kept{padding:10px 16px 14px;border-top:1px solid var(--border)}

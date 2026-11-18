@@ -21,6 +21,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import { Figure } from "@/components/Figure";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
+import WorksRow from "@/components/WorksRow";
 import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { SAME_AS, liveChannels } from "@/lib/channels";
 import { HOME_WHY, PORTRAIT_URL } from "@/lib/positioning";
@@ -36,7 +37,7 @@ const REACH: HubLink[] = [
   { label: "Speaking", href: "/speaking", note: "Conferences, retreats, revivals, and pulpit supply, with a form to ask about a date." },
   { label: "Contact", href: "/contact", note: "A direct line to James, for anything else." },
   { label: "Subscribe on Substack", href: "/subscribe", note: "New essays by email. The sign-up starts here and finishes on Substack." },
-  { label: "Find James", href: "/connect", note: "Substack, Facebook, the newest essays, and the ways to write to him, on one page." },
+  { label: "Find James", href: "/connect", note: "Everything James does, on one page: Substack, Facebook, the podcast, ENDS, books, speaking, and contact." },
 ];
 
 /** The channels in lib/channels.ts that live at their own address. */
@@ -119,6 +120,13 @@ export default function About() {
         </p>
         <p className="about-why">{HOME_WHY}</p>
       </PageHead>
+
+      {/* EVERYTHING HE DOES: the same list /connect draws as cards, as one row. */}
+      <section className="about-works" style={{ background: "var(--bone)", padding: `0 ${gutter} var(--s-5)` }}>
+        <div style={wrap}>
+          <WorksRow id="about-works" />
+        </div>
+      </section>
 
       {/*
         MY STORY IN MY OWN WORDS. The place for James's story, atheism to

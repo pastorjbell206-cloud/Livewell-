@@ -8,6 +8,7 @@
  * writes, and nothing leaves the device.
  */
 import { isArrayOf, readStoredJSON } from "@/lib/storage";
+import { readMarks, readWalks } from "@/lib/bible-desk";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
 import { PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
 import { toolById } from "@/lib/toolsList";
@@ -163,6 +164,31 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
   // The Study Bible (lib/bible-notes, key livewell-progress-bible).
   const chapters = readStoredJSON("livewell-progress-bible", isArrayOf(isString), []);
   if (chapters.length) rows.push({ ...tool("study-bible"), kind: "Study", detail: `${plural(chapters.length, "chapter")} marked read`, when: "" });
+
+  // The Study Bible desk (lib/bible-desk): each chapter the reader studied with
+  // "Study this chapter", and each chapter holding their own highlights and
+  // notes, under the chapter's name.
+  const byChapter = new Map<string, { label: string; href: string; step?: number; wrote: boolean; marks: number; notes: number; when: string }>();
+  for (const [key, w] of Object.entries(readWalks())) {
+    const [slug, ch] = key.split("/");
+    byChapter.set(key, { label: w.label, href: `/study/bible/${slug}/${ch}?study=walk`, step: w.step, wrote: !!(w.notice?.trim() || w.respond?.trim()), marks: 0, notes: 0, when: w.updated });
+  }
+  for (const m of readMarks()) {
+    const key = `${m.slug}/${m.chapter}`;
+    const row = byChapter.get(key) ?? { label: m.label.replace(/:\d+$/, ""), href: `/study/bible/${m.slug}/${m.chapter}`, wrote: false, marks: 0, notes: 0, when: "" };
+    if (m.color) row.marks++;
+    if (m.note) row.notes++;
+    if (m.updated > row.when) row.when = m.updated;
+    byChapter.set(key, row);
+  }
+  for (const r of Array.from(byChapter.values())) {
+    const parts = [
+      r.step !== undefined ? (r.wrote ? `Your study notes, step ${r.step + 1} of 7` : `Studied to step ${r.step + 1} of 7`) : "",
+      r.marks ? plural(r.marks, "highlight") : "",
+      r.notes ? plural(r.notes, "note on a verse", "notes on verses") : "",
+    ].filter(Boolean);
+    rows.push({ href: r.href, title: r.label, kind: "Bible study", detail: parts.join(", "), when: r.when });
+  }
 
   // Read the whole story in 2027 (lib/storyPlan): the reader's place, never a count behind.
   const planDays = readPlanDays();

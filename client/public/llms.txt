@@ -40,6 +40,9 @@ books). One page lists everything the site holds.
 - Search the Bible (type a word or a phrase and see every verse that holds
   it, in the Berean Standard Bible):
   https://www.livewellbyjamesbell.co/study/bible/search
+- How to study the Bible (seven steps that work on any chapter, and a guided
+  study that walks a reader through them on one chapter, one screen at a
+  time): https://www.livewellbyjamesbell.co/study/how-to-study
 - Read the Bible in a year: the 2027 plan (a daily reading plan: all 1,189 chapters in
   365 days, in the order the story happened, each day linked to its chapters
   and, where one belongs, to a context guide):

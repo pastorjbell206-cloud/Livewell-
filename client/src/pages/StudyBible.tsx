@@ -13,10 +13,10 @@
  * layer (introductions, notes, the story path) follows docs/BIBLE-NOTES-SPEC.md.
  * The story and doctrine pages live in StudyBibleStory and StudyBibleDoctrines.
  */
-import { lazy, Suspense, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
-import { Link, useRoute } from "wouter";
+import { lazy, Suspense, useEffect, useId, useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { Link, useRoute, useSearch } from "wouter";
 import { useLocationProperty } from "wouter/use-browser-location";
-import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, X } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, NotebookPen, PencilLine, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -33,6 +33,7 @@ import {
   chapterBookName,
   fetchBooks,
   fetchChapter,
+  fetchChapterText,
   fetchMorph,
   grammarRows,
   isPoetry,
@@ -46,6 +47,7 @@ import {
   verseCopyText,
   type BibleBook,
   type BibleChapter,
+  type BibleTextChapter,
   type BibleVerse,
   type BibleWord,
   type LexEntry,
@@ -68,6 +70,27 @@ import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pa
 import { VerseEntry } from "@/pages/study-bible/VerseNotes";
 import { GoToPassage } from "@/pages/study-bible/GoToPassage";
 import { SCRIPTURE_BOOKS } from "@/lib/scripture-ref";
+import { TextSize, useTextSize } from "@/components/TextSize";
+import {
+  chapterMarks,
+  markRef,
+  readMarks,
+  readView,
+  removeMark,
+  saveMark,
+  writeLastChapter,
+  writeView,
+  type ChapterView,
+  type Mark,
+  type MarkColor,
+} from "@/lib/bible-desk";
+
+// Loaded only when used: the guided study, the highlight and note controls,
+// the list of the reader's own notes, and the cross-references read in place.
+const ChapterWalk = lazy(() => import("@/pages/study-bible/ChapterWalk"));
+const VerseMarks = lazy(() => import("@/pages/study-bible/VerseMarks"));
+const ChapterMarksList = lazy(() => import("@/pages/study-bible/VerseMarks").then((m) => ({ default: m.ChapterMarksList })));
+const CrossRefList = lazy(() => import("@/pages/study-bible/CrossRefs"));
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -187,30 +210,73 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   // inside an effect.
   const key = `${book.slug}/${chapter}`;
   const [loaded, setLoaded] = useState<{ key: string; data: BibleChapter } | null>(null);
+  const [textOnly, setTextOnly] = useState<{ key: string; data: BibleTextChapter } | null>(null);
   const [failedKey, setFailedKey] = useState<string | null>(null);
   const [nonce, setNonce] = useState(0);
   const [mode, setMode] = useState<Mode>(() => readStoredJSON<Mode>(MODE_KEY, (x): x is Mode => x === "reading" || x === "interlinear", "reading"));
+  // Read (the text alone) or Study (the text with its notes), kept on this
+  // device. A first visit opens in Study, with one line saying Read exists.
+  const [view, setView] = useState<ChapterView>(() => readView() ?? "study");
+  const [chosen, setChosen] = useState(() => readView() !== null);
+  const [viewSaveFailed, setViewSaveFailed] = useState(false);
+  const [sizeOpen, setSizeOpen] = useState(false);
+  const textSize = useTextSize();
   const [picked, setPicked] = useState<{ key: string; hash: string; sel: Selection } | null>(null);
   const [tall, setTall] = useState(false);
+  const [tab, setTab] = useState<PanelTab>("notes");
+  // Highlights and notes, read from this device with the page.
+  const [marks, setMarks] = useState<Mark[]>(() => readMarks());
+  const [marksFailed, setMarksFailed] = useState(false);
+  // The guided study ("Study this chapter"), open for one chapter at a time.
+  // ?study=walk in the address opens it (the How to study page links so).
+  const search = useSearch();
+  const [walkKey, setWalkKey] = useState<string | null>(null);
+  const [seenSearch, setSeenSearch] = useState<string | null>(null);
+  if (seenSearch !== `${key}?${search}`) {
+    setSeenSearch(`${key}?${search}`);
+    if (new URLSearchParams(search).get("study") === "walk") setWalkKey(key);
+  }
+  const walking = walkKey === key;
   const wide = useWide();
   const lang = book.testament === "OT" ? "H" : "G";
   const valid = chapter >= 1 && chapter <= book.chapters;
+  // Read needs only the chapter's words (about 4 KB for John 3); Study and the
+  // guided study need the full file with the Hebrew or Greek and the
+  // cross-references (about 42 KB).
+  const full = view === "study" || walking;
   const { data: note } = useLoad<ChapterNote>(valid ? `note-${book.slug}/${chapter}` : null, () => fetchNote(book.slug, chapter));
   const place = useStoryPlace(book.slug, chapter);
   const { data: index } = useLoad("notes-index", fetchNotesIndex);
   const hasVerseNotes = valid && (index?.withVerses ?? []).includes(key);
   const { data: verseNotes } = useLoad<VerseNote[]>(hasVerseNotes ? `verse-notes-${key}` : null, () => fetchVerseNotes(book.slug, chapter));
   const data = loaded?.key === key ? loaded.data : null;
+  const readData: BibleTextChapter | null = data ?? (textOnly?.key === key ? textOnly.data : null);
   const failed = failedKey === key;
+  const mine = useMemo(() => chapterMarks(marks, book.slug, chapter), [marks, book.slug, chapter]);
 
   useEffect(() => {
-    if (!valid) return;
+    if (!valid || !full) return;
     let stale = false;
     fetchChapter(book.slug, chapter)
       .then((d) => { if (!stale) setLoaded({ key: `${book.slug}/${chapter}`, data: d }); })
       .catch(() => { if (!stale) setFailedKey(`${book.slug}/${chapter}`); });
     return () => { stale = true; };
-  }, [book.slug, chapter, nonce, valid]);
+  }, [book.slug, chapter, nonce, valid, full]);
+
+  useEffect(() => {
+    if (!valid || full) return;
+    let stale = false;
+    fetchChapterText(book.slug, chapter)
+      .then((d) => { if (!stale) setTextOnly({ key: `${book.slug}/${chapter}`, data: d }); })
+      .catch(() => { if (!stale) setFailedKey(`${book.slug}/${chapter}`); });
+    return () => { stale = true; };
+  }, [book.slug, chapter, nonce, valid, full]);
+
+  // The chapter last opened, so "How to study the Bible" can offer to try the
+  // method on it.
+  useEffect(() => {
+    if (valid) writeLastChapter({ slug: book.slug, chapter, label: `${chapterBookName(book)} ${chapter}` });
+  }, [book, chapter, valid]);
 
   // The verses that have a note of their own, so the text can mark them.
   const noted = useMemo(() => {
@@ -224,16 +290,23 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   // the chapter already on screen, and that changes nothing but the hash.
   const hash = useLocationProperty(() => window.location.hash, () => "");
   const hashVerse = useMemo(() => {
-    if (!data) return null;
+    if (!data || view === "read") return null;
     const m = hash.match(/^#v(\d+)$/);
     return m ? data.verses.find((x) => x.v === +m[1]) ?? null : null;
-  }, [data, hash]);
-  const sel: Selection = picked?.key === key && picked.hash === hash ? picked.sel : hashVerse ? { kind: "verse", verse: hashVerse } : null;
+  }, [data, hash, view]);
+  const sel: Selection = view === "read" ? null : picked?.key === key && picked.hash === hash ? picked.sel : hashVerse ? { kind: "verse", verse: hashVerse } : null;
   const setSel = (s: Selection) => setPicked({ key, hash, sel: s });
 
   useEffect(() => {
     if (hashVerse) requestAnimationFrame(() => showVerse(hashVerse.v, true));
   }, [hashVerse]);
+
+  // In Read a #v16 link still lands on its verse; it only opens nothing.
+  useEffect(() => {
+    if (view !== "read" || !readData) return;
+    const m = window.location.hash.match(/^#v(\d+)$/);
+    if (m) requestAnimationFrame(() => document.getElementById(`v${m[1]}`)?.scrollIntoView?.({ block: "start" }));
+  }, [view, readData, hash]);
 
   // A verse chosen by a tap, by the panel's arrows, or from the outline stays
   // readable above the panel.
@@ -251,6 +324,28 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const changeMode = (m: Mode) => {
     setMode(m);
     writeStoredJSON(MODE_KEY, m);
+  };
+  const changeView = (v: ChapterView) => {
+    setView(v);
+    setChosen(true);
+    setViewSaveFailed(!writeView(v));
+  };
+  const saveVerseMark = (v: BibleVerse) => (change: { color?: MarkColor; note?: string }) => {
+    const r = saveMark(marks, { ref: markRef(book.code, chapter, v.v), slug: book.slug, chapter, verse: v.v, label: `${chapterBookName(book)} ${chapter}:${v.v}` }, change);
+    setMarks(r.marks);
+    setMarksFailed(!r.saved);
+    return r.saved;
+  };
+  const dropMark = (ref: string) => {
+    const r = removeMark(marks, ref);
+    setMarks(r.marks);
+    setMarksFailed(!r.saved);
+  };
+  const closeWalk = () => {
+    setWalkKey(null);
+    if (new URLSearchParams(window.location.search).get("study") === "walk") {
+      window.history.replaceState(window.history.state, "", window.location.pathname + window.location.hash);
+    }
   };
 
   const bookIdx = books.findIndex((b) => b.code === book.code);
@@ -283,6 +378,8 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
       onClose={() => setSel(null)}
       onStep={step} hasPrev={at > 0} hasNext={at >= 0 && at < data.verses.length - 1}
       tall={wide ? undefined : tall} onTall={() => setTall((t) => !t)}
+      tab={tab} onTab={setTab}
+      mark={mine.get(sel.verse.v)} onMark={saveVerseMark(sel.verse)} marksFailed={marksFailed}
     />
   ) : null;
   // "Go to" a verse of this same chapter: select it and bring it on screen.
@@ -295,17 +392,26 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   };
   const onWord = (v: BibleVerse, i: number) => setSel({ kind: "word", verse: v, index: i });
   const original = lang === "H" ? "Hebrew" : "Greek";
+  const reading = view === "read";
+  // Read is one centred column for the words alone; Study keeps the wide desk.
+  const frame = reading ? { maxWidth: "var(--w-read)", margin: "0 auto" } : wrap;
+  // On a first load the prerendered chapter stays on screen until the page
+  // below has what it shows above the fold (lib/prerender-hold.ts).
+  const waiting = reading
+    ? !readData && !failed
+    : (!data && !failed) || note === undefined || place === undefined || index === undefined || (hasVerseNotes && verseNotes === undefined);
+  const myMarks = Array.from(mine.values());
 
   return (
     <>
       <SEOMeta
-        title={note ? `${chapterBookName(book)} ${chapter} Study Notes \u2013 ${note.title}` : `${chapterBookName(book)} ${chapter} Study Notes, Hebrew and Greek`}
+        title={note ? `${chapterBookName(book)} ${chapter} Study Notes – ${note.title}` : `${chapterBookName(book)} ${chapter} Study Notes, Hebrew and Greek`}
         description={note?.summary ?? `${chapterBookName(book)} ${chapter} with study notes, cross-references, and the ${original} beneath every word.`}
         url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}/${chapter}`}
         type="article"
       />
       <section style={{ background: "var(--bone)", padding: "var(--s-3) var(--gutter) var(--s-2)", borderBottom: "1px solid var(--border)" }}>
-        <div style={wrap}>
+        <div style={frame}>
           <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "14px" }}>
             <div style={{ minWidth: 0 }}>
               <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "4px" }}>
@@ -322,55 +428,96 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
           </div>
           <p style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0 12px", margin: "4px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink-muted)" }}>
             <span style={{ color: "var(--ink)", fontWeight: 600 }}>{BIBLE_TRANSLATION}</span>
-            <span>
-              Also in{" "}
-              {OTHER_TRANSLATIONS.map((t) => (
-                <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "13px 6px", margin: "-13px -1px" }}>{t.name}</a>
-              ))}
-            </span>
+            {!reading && (
+              <span>
+                Also in{" "}
+                {OTHER_TRANSLATIONS.map((t) => (
+                  <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "13px 6px", margin: "-13px -1px" }}>{t.name}</a>
+                ))}
+              </span>
+            )}
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", gap: "10px", marginTop: "8px" }}>
-            <div role="group" aria-label="How to show the text" style={{ display: "inline-flex", flex: "0 0 auto", border: "1px solid var(--border)", borderRadius: "999px", overflow: "hidden" }}>
-              {(["reading", "interlinear"] as Mode[]).map((m) => (
-                <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)} style={{ minHeight: "44px", padding: "0 16px", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, background: mode === m ? "var(--ink)" : "var(--card)", color: mode === m ? "var(--bone)" : "var(--ink)" }}>
-                  {m === "reading" ? "Reading" : original}
-                </button>
-              ))}
+          <div className="sb-viewbar">
+            <div role="group" aria-label="How to show this chapter" className="sb-switch">
+              <button type="button" aria-pressed={reading} onClick={() => changeView("read")}>Read</button>
+              <button type="button" aria-pressed={!reading} onClick={() => changeView("study")}>Study</button>
             </div>
-            <div style={{ flex: "1 1 240px", minWidth: 0 }}>
-              <GoToPassage here={chapterHref(book.slug, chapter)} onVerse={goToVerse} />
-            </div>
+            {reading ? (
+              <button type="button" className="sb-aa" aria-expanded={sizeOpen} aria-label="Text size" onClick={() => setSizeOpen((o) => !o)}>
+                <span aria-hidden>Aa</span>
+              </button>
+            ) : (
+              <button type="button" className="sb-walkbtn" onClick={() => setWalkKey(key)}>
+                <NotebookPen size={18} strokeWidth={1.75} aria-hidden /> Study this chapter
+              </button>
+            )}
           </div>
+          {reading && sizeOpen && (
+            <div className="sb-sizerow">
+              <TextSize size={textSize.size} onChange={textSize.setSize} saveFailed={textSize.saveFailed} />
+            </div>
+          )}
+          {!reading && !chosen && (
+            <p className="sb-hint">
+              <span>New here? <button type="button" onClick={() => changeView("read")}>Read</button> shows the words alone, with nothing in the way.</span>
+              <button type="button" className="sb-hint__x" aria-label="Keep the Study view and hide this line" onClick={() => changeView("study")}><X size={16} strokeWidth={1.75} aria-hidden /></button>
+            </p>
+          )}
+          {viewSaveFailed && <p role="alert" className="sb-marks__alert">Couldn't save to this browser — your work here will not survive a reload.</p>}
+          {!reading && (
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", gap: "10px", marginTop: "8px" }}>
+              <div role="group" aria-label="How to show the text" style={{ display: "inline-flex", flex: "0 0 auto", border: "1px solid var(--border)", borderRadius: "999px", overflow: "hidden" }}>
+                {(["reading", "interlinear"] as Mode[]).map((m) => (
+                  <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)} style={{ minHeight: "44px", padding: "0 16px", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, background: mode === m ? "var(--ink)" : "var(--card)", color: mode === m ? "var(--bone)" : "var(--ink)" }}>
+                    {m === "reading" ? "English" : original}
+                  </button>
+                ))}
+              </div>
+              <div style={{ flex: "1 1 240px", minWidth: 0 }}>
+                <GoToPassage here={chapterHref(book.slug, chapter)} onVerse={goToVerse} />
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-3) var(--gutter) var(--s-6)" }}>
-        <div style={{ ...wrap, display: "flex", gap: "var(--s-5)", alignItems: "flex-start" }}>
+      <section style={{ background: "var(--bone)", padding: reading ? "var(--s-4) var(--gutter) var(--s-6)" : "var(--s-3) var(--gutter) var(--s-6)" }}>
+        <div style={{ ...frame, display: "flex", gap: "var(--s-5)", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
             {/* On a first load the prerendered chapter stays on screen until the
                 heading, the text and the summary above it have all arrived
                 (lib/prerender-hold.ts), so none of them pushes the others down.
                 The verses' own notes are waited for too: each one puts a dot
                 beside its verse number, and a dot that came late widened the
-                number and rewrapped the lines after it. */}
-            {valid && ((!data && !failed) || note === undefined || place === undefined || index === undefined || (hasVerseNotes && verseNotes === undefined)) && <span hidden data-lw-loading />}
-            <ChapterHead note={note} place={place} />
-            {failed && !data ? (
+                number and rewrapped the lines after it. Read waits for the
+                words alone. */}
+            {waiting && <span hidden data-lw-loading />}
+            {!reading && <ChapterHead note={note} place={place} />}
+            {failed && !(reading ? readData : data) ? (
               <LoadFailed what={`${book.name} ${chapter}`} onRetry={() => { setFailedKey(null); setNonce((n) => n + 1); }} backHref={`/study/bible/${book.slug}`} backLabel={`All of ${book.name}`} />
+            ) : reading ? (
+              readData ? <ReadText data={readData} poetry={isPoetry(book.slug, chapter)} scale={textSize.scale} label={`${chapterBookName(book)} ${chapter}`} /> : <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
             ) : !data ? (
               <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
             ) : mode === "reading" ? (
-              <ReadingText data={data} sel={sel} onVerse={onVerse} noted={noted} poetry={isPoetry(book.slug, chapter)} />
+              <ReadingText data={data} sel={sel} onVerse={onVerse} noted={noted} marks={mine} poetry={isPoetry(book.slug, chapter)} scale={textSize.scale} />
             ) : (
               <Interlinear data={data} lang={lang} sel={sel} onVerse={onVerse} onWord={onWord} noted={noted} />
             )}
-            {data && (
+            {(reading ? readData : data) && (
               <>
-                <p style={{ marginTop: "var(--s-4)", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "68ch" }}>
-                  Tap any verse to study it{mode === "interlinear" ? ", or any word to study the word" : `. Switch to ${original} to see every word beneath the English`}.
-                  {noted.size > 0 ? " A dot beside a verse number means that verse has notes of its own." : ""}
-                  {mode === "interlinear" ? ` A gray word in a meaning is one the ${original} has and English leaves out, or one English has to add.` : ""}
-                </p>
+                {!reading && (
+                  <p style={{ marginTop: "var(--s-4)", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "68ch" }}>
+                    Tap any verse to study it, highlight it, or write a note on it{mode === "interlinear" ? ", or any word to study the word" : `. Switch to ${original} to see every word beneath the English`}.
+                    {noted.size > 0 ? " A dot beside a verse number means that verse has notes of its own." : ""}
+                    {mode === "interlinear" ? ` A gray word in a meaning is one the ${original} has and English leaves out, or one English has to add.` : ""}
+                  </p>
+                )}
+                {!reading && myMarks.length > 0 && (
+                  <Suspense fallback={<span hidden data-lw-loading />}>
+                    <ChapterMarksList marks={myMarks} onOpen={(n) => { const v = data?.verses.find((x) => x.v === n); if (v) { onVerse(v); requestAnimationFrame(() => showVerse(n, true)); } }} onRemove={dropMark} />
+                  </Suspense>
+                )}
                 <nav aria-label="The chapter before and the chapter after" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "10px", marginTop: "var(--s-3)", maxWidth: "68ch" }}>
                   {prev ? (
                     <Link href={chapterHref(prev.slug, prev.ch)} style={{ ...quietLink, display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", textDecoration: "none" }}>
@@ -385,9 +532,9 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
                 </nav>
               </>
             )}
-            {note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} verseNotes={verseNotes ?? null} onWord={onWord} onVerse={onVerse} />}
+            {!reading && note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} verseNotes={verseNotes ?? null} onWord={onWord} onVerse={onVerse} />}
           </div>
-          {wide && (
+          {wide && !reading && (
             <aside aria-label="Study panel" style={{ flex: "0 0 380px", position: "sticky", top: "88px", maxHeight: "calc(100vh - 110px)", overflowY: "auto", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
               {panel ?? (note ? <OutlinePanel note={note} data={data} onVerse={onVerse} /> : <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>Tap a verse or a word, and its study opens here.</p>)}
             </aside>
@@ -401,6 +548,12 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
         <aside aria-label="Study panel" className="sb-panel" data-tall={tall || undefined} style={{ position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 60, overflowY: "auto", overscrollBehavior: "contain", background: "var(--card)", borderTop: "2px solid var(--mustard)", boxShadow: "var(--shadow-modal)", padding: "12px var(--s-3) var(--s-3)" }}>
           {panel}
         </aside>
+      )}
+
+      {walking && data && note !== undefined && (
+        <Suspense fallback={null}>
+          <ChapterWalk books={books} book={book} chapter={chapter} data={data} note={note} next={next ? { slug: next.slug, chapter: next.ch } : null} onClose={closeWalk} />
+        </Suspense>
       )}
     </>
   );
@@ -431,11 +584,12 @@ const verseNumStyle = (active: boolean): CSSProperties => ({
   minHeight: "24px",
 });
 
-/** The verse number: the button a keyboard or a screen reader uses, with a dot when the verse has notes. */
-function VerseNum({ v, active, noted, onVerse }: { v: BibleVerse; active: boolean; noted: boolean; onVerse: (v: BibleVerse) => void }) {
+/** The verse number: the button a keyboard or a screen reader uses, with a dot when the verse has notes and a pen when the reader wrote one. */
+function VerseNum({ v, active, noted, mine, onVerse }: { v: BibleVerse; active: boolean; noted: boolean; mine?: Mark; onVerse: (v: BibleVerse) => void }) {
+  const yours = mine ? (mine.note ? ", with your note" : ", which you highlighted") : "";
   return (
-    <button type="button" className="sb-num" aria-label={`Study verse ${v.v}${noted ? ", which has notes" : ""}`} onClick={(e) => { e.stopPropagation(); onVerse(v); }} style={verseNumStyle(active)}>
-      {v.v}{noted && <span className="sb-dot" aria-hidden />}
+    <button type="button" className="sb-num" aria-label={`Study verse ${v.v}${noted ? ", which has notes" : ""}${yours}`} onClick={(e) => { e.stopPropagation(); onVerse(v); }} style={verseNumStyle(active)}>
+      {v.v}{noted && <span className="sb-dot" aria-hidden />}{mine?.note && <PencilLine className="sb-pen" size={11} strokeWidth={1.75} aria-hidden />}
     </button>
   );
 }
@@ -446,15 +600,16 @@ const tapVerse = (v: BibleVerse, onVerse: (v: BibleVerse) => void) => () => {
   onVerse(v);
 };
 
-function ReadingText({ data, sel, onVerse, noted, poetry }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void; noted: Set<number>; poetry: boolean }) {
+function ReadingText({ data, sel, onVerse, noted, marks, poetry, scale }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void; noted: Set<number>; marks: Map<number, Mark>; poetry: boolean; scale: number }) {
   return (
-    <div className={poetry ? "sb-text sb-text--poetry" : "sb-text"} style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: "calc(var(--fs-read) * 1.05)", lineHeight: 1.75, color: "var(--ink)" }}>
+    <div className={poetry ? "sb-text sb-text--poetry" : "sb-text"} style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: `calc(var(--fs-read) * ${1.05 * scale})`, lineHeight: 1.75, color: "var(--ink)" }}>
       {data.verses.map((v) => {
         const active = sel?.verse.v === v.v;
+        const mine = marks.get(v.v);
         return (
           // The number inside is the control a keyboard reaches; the tap on the words is the same act, made easier to hit.
-          <span key={v.v} id={`v${v.v}`} className="sb-verse" data-active={active || undefined} onClick={tapVerse(v, onVerse)}>
-            <VerseNum v={v} active={active} noted={noted.has(v.v)} onVerse={onVerse} />
+          <span key={v.v} id={`v${v.v}`} className="sb-verse" data-active={active || undefined} data-mark={mine?.color} onClick={tapVerse(v, onVerse)}>
+            <VerseNum v={v} active={active} noted={noted.has(v.v)} mine={mine} onVerse={onVerse} />
             {!v.t ? (
               <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontStyle: "italic", color: "var(--ink-muted)" }}>[Not in the earliest manuscripts]</span>
             ) : poetry ? (
@@ -463,6 +618,25 @@ function ReadingText({ data, sel, onVerse, noted, poetry }: { data: BibleChapter
           </span>
         );
       })}
+    </div>
+  );
+}
+
+/**
+ * The Read view: the words alone, in the reading face, larger, with no verse
+ * numbers, no note dots, no marks and nothing to tap. Each verse keeps its
+ * #v anchor, so a link to a verse still lands on it.
+ */
+function ReadText({ data, poetry, scale, label }: { data: BibleTextChapter; poetry: boolean; scale: number; label: string }) {
+  return (
+    <div className={poetry ? "sb-text sb-text--read sb-text--poetry" : "sb-text sb-text--read"} style={{ fontSize: `calc(var(--fs-read) * ${1.15 * scale})` }} aria-label={`${label}, ${BIBLE_TRANSLATION}`} role="region">
+      {data.verses.map((v) =>
+        v.t ? (
+          <span key={v.v} id={`v${v.v}`} className="sb-verse sb-verse--read">
+            {poetry ? poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>) : v.t}{" "}
+          </span>
+        ) : null
+      )}
     </div>
   );
 }
@@ -511,6 +685,16 @@ const panelH = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, lett
 const quietLink: CSSProperties = { color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px", backgroundImage: "none" };
 const roundBtn: CSSProperties = { display: "inline-flex", alignItems: "center", justifyContent: "center", width: "44px", height: "44px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)" };
 const pillBtn: CSSProperties = { display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600 };
+const emptyLine: CSSProperties = { margin: "4px 0 0", fontFamily: "var(--U)", fontSize: "13.5px", lineHeight: 1.6, color: "var(--ink-muted)" };
+
+/** The verse panel's tabs: the same four on every verse, in this order, each there even when it has nothing. */
+type PanelTab = "notes" | "words" | "xrefs" | "translations";
+const PANEL_TABS: { id: PanelTab; name: string }[] = [
+  { id: "notes", name: "Notes" },
+  { id: "words", name: "Words" },
+  { id: "xrefs", name: "Cross-references" },
+  { id: "translations", name: "Translations" },
+];
 
 interface PanelProps {
   books: BibleBook[];
@@ -528,6 +712,13 @@ interface PanelProps {
   /** On a phone: whether the panel is at its taller height. Undefined beside the text, where it has no height to change. */
   tall?: boolean;
   onTall: () => void;
+  /** The tab open, kept as the reader steps from verse to verse. */
+  tab: PanelTab;
+  onTab: (t: PanelTab) => void;
+  /** The reader's own highlight and note on this verse. */
+  mark: Mark | undefined;
+  onMark: (change: { color?: MarkColor; note?: string }) => boolean;
+  marksFailed: boolean;
 }
 
 function StudyPanel(props: PanelProps) {
@@ -654,10 +845,11 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
 
 type Copied = { what: "verse" | "link"; ok: boolean; at: string } | null;
 
-function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNotes }: { books: BibleBook[]; book: BibleBook; chapter: number; verse: BibleVerse; lang: "H" | "G"; setSel: (s: Selection) => void; data: BibleChapter; verseNotes: VerseNote[] | null }) {
+function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNotes, tab, onTab, mark, onMark, marksFailed }: PanelProps & { verse: BibleVerse }) {
   const [related, setRelated] = useState<CatalogueItem[] | null>(null);
   const { data: doctrines } = useLoad<Doctrine[]>("doctrines", fetchDoctrines);
   const entry = verseNotes ? noteForVerse(verseNotes, verse.v) : null;
+  const tabsId = useId();
   useEffect(() => {
     let stale = false;
     fetchCatalogue()
@@ -668,7 +860,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
 
   const script = lang === "H" ? HEB : GRK;
   const refLabel = `${chapterBookName(book)} ${chapter}:${verse.v}`;
-  const xrefs = useMemo(() => (verse.x ?? []).map((r) => parseRef(r, books)).filter(Boolean) as NonNullable<ReturnType<typeof parseRef>>[], [verse.x, books]);
+  const xrefs = useMemo(() => (verse.x ?? []).filter((r) => parseRef(r, books) !== null), [verse.x, books]);
 
   // What was copied belongs to the verse it was copied from; another verse starts clean.
   const at = `${book.slug}/${chapter}/${verse.v}`;
@@ -679,6 +871,18 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
     void copyToClipboard(text).then((ok) => setCopied({ what, ok, at }));
   };
   const copyLabel = (what: "verse" | "link", idle: string) => (copied?.what === what ? (copied.ok ? "Copied" : "Couldn’t copy") : idle);
+
+  const counts: Record<PanelTab, number> = { notes: entry ? 1 : 0, words: verse.w.length, xrefs: xrefs.length, translations: OTHER_TRANSLATIONS.length };
+  // Arrow keys move along the tabs, as a tab list does.
+  const onKeys = (e: React.KeyboardEvent) => {
+    const i = PANEL_TABS.findIndex((t) => t.id === tab);
+    const to = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? PANEL_TABS.length - 1 : null;
+    if (to === null) return;
+    e.preventDefault();
+    const t = PANEL_TABS[(to + PANEL_TABS.length) % PANEL_TABS.length];
+    onTab(t.id);
+    document.getElementById(`${tabsId}-${t.id}`)?.focus();
+  };
 
   return (
     <div>
@@ -692,74 +896,102 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
         {copied && !copied.ok ? (copied.what === "verse" ? "This browser would not copy it. Select the verse above and copy it by hand." : "This browser would not copy it. The link is the address of this page with the verse number on the end.") : ""}
       </p>
 
-      {entry && (
-        <>
-          <div style={panelH}>Study notes{entry.v.includes("-") ? ` on ${chapter}:${entry.v.replace("-", "–")}` : ""}</div>
-          <VerseEntry entry={entry} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
-        </>
-      )}
+      {/* Highlights and notes: their own small chunk, loaded when a verse is first opened. */}
+      <Suspense fallback={<div className="sb-marks sb-marks--wait" />}>
+        <VerseMarks label={refLabel} mark={mark} onSave={onMark} saveFailed={marksFailed} />
+      </Suspense>
 
-      {verse.w.length > 0 && (
-        <>
-          <div style={panelH}>Word by word</div>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-            {verse.w.map((w, i) => (
-              <li key={i}>
-                <button type="button" onClick={() => setSel({ kind: "word", verse, index: i })} style={{ display: "flex", width: "100%", gap: "10px", alignItems: "baseline", justifyContent: "space-between", minHeight: "44px", padding: "4px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: "pointer", textAlign: "left" }}>
-                  <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, direction: lang === "H" ? "rtl" : "ltr", fontSize: "18px", color: "var(--ink)" }}>{w[0]}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", flex: 1, textAlign: "right" }}><Gloss text={w[2]} /></span>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      {xrefs.length > 0 && (
-        <>
-          <div style={panelH}>Cross-references</div>
-          <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9 }}>
-            {xrefs.map((p, i) => (
-              <span key={`${p.label}${i}`}>
-                <Link href={chapterHref(p.slug, p.chapter, p.verse)} style={quietLink}>{p.label}</Link>
-                {i < xrefs.length - 1 ? " · " : ""}
-              </span>
-            ))}
-          </p>
-        </>
-      )}
-
-      {related && related.length > 0 && (
-        <>
-          <div style={panelH}>On LiveWell</div>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "8px" }}>
-            {related.map((it) => (
-              <li key={`${it.kind}|${it.href}|${it.title}`}>
-                <Link href={it.href} style={{ ...quietLink, textDecoration: "none", display: "block" }}>
-                  <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "10.5px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{it.kind}</span>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "17px", color: "var(--ink)" }}>{it.title}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      <div style={panelH}>Go deeper</div>
-      <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9 }}>
-        <Link href={`/theology/passage?ref=${encodeURIComponent(refLabel)}`} style={quietLink}>This passage in context</Link>
-        {" · "}
-        <Link href={`/search?q=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>Search the site for {book.name} {chapter}</Link>
-      </p>
-      <p style={{ margin: "4px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
-        This verse in{" "}
-        {OTHER_TRANSLATIONS.map((t, i) => (
-          <span key={t.code}>
-            <a href={translationHref(book.name, chapter, t.code, verse.v)} target="_blank" rel="noopener noreferrer" style={quietLink}>{t.name}</a>
-            {i < OTHER_TRANSLATIONS.length - 1 ? " · " : ""}
-          </span>
+      <div role="tablist" aria-label={`Study ${refLabel}`} className="sb-tabs" onKeyDown={onKeys}>
+        {PANEL_TABS.map((t) => (
+          <button
+            key={t.id}
+            type="button"
+            role="tab"
+            id={`${tabsId}-${t.id}`}
+            aria-selected={tab === t.id}
+            aria-controls={`${tabsId}-panel`}
+            tabIndex={tab === t.id ? 0 : -1}
+            data-empty={counts[t.id] === 0 || undefined}
+            onClick={() => onTab(t.id)}
+          >
+            {t.name}
+            {(t.id === "words" || t.id === "xrefs") && counts[t.id] > 0 && <span className="sb-tabs__n">{counts[t.id]}</span>}
+            {counts[t.id] === 0 && <span className="sr-only"> (nothing here)</span>}
+          </button>
         ))}
-      </p>
+      </div>
+
+      <div role="tabpanel" id={`${tabsId}-panel`} aria-labelledby={`${tabsId}-${tab}`} className="sb-tabpanel">
+        {tab === "notes" && (
+          <>
+            {entry ? (
+              <>
+                {entry.v.includes("-") && <div style={{ ...panelH, marginTop: 0 }}>Notes on {chapter}:{entry.v.replace("-", "–")}</div>}
+                <VerseEntry entry={entry} doctrines={doctrines} data={data} lang={lang} onWord={(v, i) => setSel({ kind: "word", verse: v, index: i })} />
+              </>
+            ) : (
+              <p style={emptyLine}>There are no notes on this verse by itself. The notes on the whole chapter are below the text.</p>
+            )}
+            {related && related.length > 0 && (
+              <>
+                <div style={panelH}>On LiveWell</div>
+                <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "8px" }}>
+                  {related.map((it) => (
+                    <li key={`${it.kind}|${it.href}|${it.title}`}>
+                      <Link href={it.href} style={{ ...quietLink, textDecoration: "none", display: "block" }}>
+                        <span style={{ display: "block", fontFamily: "var(--U)", fontSize: "10.5px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--mustard-text)" }}>{it.kind}</span>
+                        <span style={{ fontFamily: "var(--F)", fontSize: "17px", color: "var(--ink)" }}>{it.title}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <div style={panelH}>Go deeper</div>
+            <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9 }}>
+              <Link href={`/theology/passage?ref=${encodeURIComponent(refLabel)}`} style={quietLink}>This passage in context</Link>
+              {" · "}
+              <Link href={`/search?q=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>Search the site for {book.name} {chapter}</Link>
+            </p>
+          </>
+        )}
+
+        {tab === "words" && (
+          verse.w.length > 0 ? (
+            <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
+              {verse.w.map((w, i) => (
+                <li key={i}>
+                  <button type="button" onClick={() => setSel({ kind: "word", verse, index: i })} style={{ display: "flex", width: "100%", gap: "10px", alignItems: "baseline", justifyContent: "space-between", minHeight: "44px", padding: "4px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: "pointer", textAlign: "left" }}>
+                    <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, direction: lang === "H" ? "rtl" : "ltr", fontSize: "18px", color: "var(--ink)" }}>{w[0]}</span>
+                    <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", flex: 1, textAlign: "right" }}><Gloss text={w[2]} /></span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p style={emptyLine}>No {lang === "H" ? "Hebrew" : "Greek"} words are listed under this verse. Hebrew and English Bibles number some verses differently, so its words may sit under the verse beside it.</p>
+          )
+        )}
+
+        {tab === "xrefs" && (
+          <Suspense fallback={<p role="status" style={emptyLine}>Opening the cross-references…</p>}>
+            <CrossRefList refs={xrefs} books={books} />
+          </Suspense>
+        )}
+
+        {tab === "translations" && (
+          <>
+            <p style={emptyLine}>{refLabel} in other translations, on Bible Gateway (another site):</p>
+            <ul style={{ listStyle: "none", margin: "10px 0 0", padding: 0, display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              {OTHER_TRANSLATIONS.map((t) => (
+                <li key={t.code}>
+                  <a href={translationHref(book.name, chapter, t.code, verse.v)} target="_blank" rel="noopener noreferrer" aria-label={`${refLabel} in the ${t.name}, on another site`} style={{ ...pillBtn, textDecoration: "none" }}>{t.name}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
     </div>
   );
 }

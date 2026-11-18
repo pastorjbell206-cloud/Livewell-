@@ -85,6 +85,14 @@ const STATIC_PAGES = [
     get image() { return ogImageUrl("Books by James Bell", "LiveWell"); },
   },
   {
+    path: "/connect",
+    title: "Find James Bell: Substack, Facebook, Essays, and Contact",
+    description: "Everything James Bell does, on one page: LiveWell, his Substack, his Facebook, the Following the Way podcast, ENDS, his books, speaking, and contact.",
+    type: "website",
+    // Its own share card: the address James puts in his Facebook and Substack profiles.
+    get image() { return ogImageUrl("Find James Bell", "LiveWell"); },
+  },
+  {
     path: "/tools",
     title: "Free Bible Study, Prayer, and Family Tools",
     description: "Free tools for Bible study, prayer, marriage, and family life: a verse finder, written prayers, a family devotion builder, and self-checks.",
@@ -771,6 +779,21 @@ const PAGE_BODIES = {
         `<h1>Honest answers to hard questions</h1>`,
         ...groups,
         rest.length ? sec("More questions", `<ul>\n${rest.map(row).join("\n")}\n</ul>`) : "",
+      ]),
+    };
+  },
+  // How to study the Bible: the seven steps, word for word from the one
+  // source the page and the guided study read (client/src/lib/study-method.ts).
+  "/study/how-to-study": async () => {
+    const { STUDY_STEPS = [], KEPT_HERE = "" } = await loadTs("client/src/lib/study-method.ts");
+    if (!STUDY_STEPS.length) return null;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>How to study the Bible</h1>`,
+        `<p class="pre-subtitle">Seven steps that work on any chapter. Learn them here, then try them on a real one.</p>`,
+        sec("Seven steps, in order", `<ol>\n${STUDY_STEPS.map((s) => `<li><strong>${escapeHtml(s.title)}.</strong> ${escapeHtml(s.what)}</li>`).join("\n")}\n</ol>\n<p>${escapeHtml(KEPT_HERE)}</p>`),
+        `<p><a href="/study/bible/john/3?study=walk">Try it on John 3</a></p>`,
       ]),
     };
   },
