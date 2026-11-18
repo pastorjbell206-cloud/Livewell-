@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
@@ -22,6 +22,10 @@ import {
 } from "@/lib/siteSearch";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { TOOLS } from "@/pages/ToolsHub";
+
+// The verses that hold the words typed ("born again"). The Bible's words are
+// a large download, so the code and the text both wait for a query.
+const BibleMatchesPreview = lazy(() => import("@/pages/study-bible/BibleSearchResults"));
 
 // --- Library manifest search (static JSON content libraries) ---
 // The source registry lives in @/lib/catalog so search and the unified
@@ -99,6 +103,15 @@ export default function SearchPage() {
     return () => { live = false; };
   }, []);
   const passage = useMemo(() => (parser && query.trim() ? passageFor(query, parser) : null), [parser, query]);
+
+  // The Bible is searched once the typing has paused, so a half-typed word
+  // does not start the download.
+  const [settledQuery, setSettledQuery] = useState("");
+  useEffect(() => {
+    const t = setTimeout(() => setSettledQuery(query.trim()), 500);
+    return () => clearTimeout(t);
+  }, [query]);
+  const bibleQuery = settledQuery.length >= 3 && settledQuery === query.trim() && parser && !passage ? settledQuery : "";
 
   const libraryMatches = useMemo(() => {
     if (query.trim().length === 0) return [];
@@ -307,6 +320,14 @@ export default function SearchPage() {
                     </p>
                   </Link>
                 </div>
+              )}
+              {/* The verses that hold these words, ahead of pages about them. A
+                  reader who typed their own danger gets the help above, and no
+                  list of verses that happen to share its words. */}
+              {bibleQuery && crisisTopics.length === 0 && (
+                <Suspense fallback={null}>
+                  <BibleMatchesPreview query={bibleQuery} />
+                </Suspense>
               )}
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (

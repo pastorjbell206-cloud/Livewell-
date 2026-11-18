@@ -1,11 +1,14 @@
 /**
  * The Study Bible's notes on one chapter, in layers: a heading and summary
- * above the text, then (below it) where the chapter sits in the story, its
- * history and culture, how it is built, the doctrines it teaches, its key
- * Hebrew or Greek words, how it points to Christ, a hard question, questions
- * for reflection, LiveWell's writing on it, and the next step in the story.
+ * above the text, with links to the chapter's hard question and its study
+ * questions; directly after the text, that hard question and those questions
+ * in the open, where a reader who has just finished the chapter meets them;
+ * then the notes in drawers: where the chapter sits in the story, its history
+ * and culture, how it is built, the doctrines it teaches, its key Hebrew or
+ * Greek words, how it points to Christ, LiveWell's writing on it, and the
+ * next step in the story.
  */
-import { useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -22,14 +25,13 @@ import {
   setRead,
   spreadKinds,
   storyPlace,
-  translationHref,
   verseRange,
   type ChapterNote,
   type Doctrine,
   type VerseNote,
 } from "@/lib/bible-notes";
 import { buildIndex, fetchCatalogue, search, type CatalogueItem } from "@/lib/catalogue";
-import { Prose, RelatedList, card, kicker, quietLink, useLoad } from "@/pages/study-bible/shared";
+import { Gloss, Prose, RelatedList, card, kicker, quietLink, useLoad } from "@/pages/study-bible/shared";
 import { VerseByVerse } from "@/pages/study-bible/VerseNotes";
 
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -58,19 +60,41 @@ export function useStoryPlace(slug: string, chapter: number): Place | null | und
 
 /** Above the text: the chapter's heading, summary, and place in the story. */
 export function ChapterHead({ note, place }: { note: ChapterNote | null | undefined; place: Place | null | undefined }) {
+  // On a phone the summary shows its first three lines (index.css,
+  // .sb-summary), so the chapter's first verse is on the first screen; the
+  // rest is one tap away, and the tap is offered only when something is cut.
+  const summary = useRef<HTMLParagraphElement>(null);
+  const [whole, setWhole] = useState(false);
+  const [cut, setCut] = useState(false);
+  const text = note?.summary;
+  useEffect(() => {
+    const el = summary.current;
+    if (el && !whole) setCut(el.scrollHeight > el.clientHeight + 2);
+  }, [text, whole]);
   if (!note) return null;
+  const hard = hardQuestions(note).length;
+  const jump: CSSProperties = { ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "36px", fontFamily: "var(--U)", fontSize: "13.5px" };
   return (
-    <div style={{ maxWidth: "68ch", marginBottom: "var(--s-5)" }}>
+    <div style={{ maxWidth: "68ch", marginBottom: "var(--s-3)" }}>
       {place?.act && (
-        <p style={{ margin: "0 0 8px" }}>
+        <p style={{ margin: "0 0 6px" }}>
           <Link href={`/study/bible/story/${place.act.id}`} style={{ ...kicker, textDecoration: "none", backgroundImage: "none" }}>
-            {place.act.label} of the story · {place.act.title}
+            {place.act.label} · {place.act.title}
           </Link>
         </p>
       )}
-      <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 1.9rem)", fontWeight: 400, lineHeight: 1.2, color: "var(--ink)", margin: "0 0 10px", textWrap: "balance" }}>{note.title}</h2>
-      <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 0 10px" }}>{note.summary}</p>
-      <a href="#notes" style={{ ...quietLink, fontFamily: "var(--U)", fontSize: "13.5px" }}>Read the study notes on this chapter</a>
+      <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 1.9rem)", fontWeight: 400, lineHeight: 1.2, color: "var(--ink)", margin: "0 0 8px", textWrap: "balance" }}>{note.title}</h2>
+      <p ref={summary} className="sb-summary" data-whole={whole || undefined} style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.65, color: "var(--ink-muted)", margin: "0 0 4px" }}>{note.summary}</p>
+      <p style={{ display: "flex", flexWrap: "wrap", gap: "0 18px", margin: 0 }}>
+        {(cut || whole) && (
+          <button type="button" aria-expanded={whole} onClick={() => setWhole((w) => !w)} style={{ ...jump, border: "none", padding: 0, background: "none", cursor: "pointer", fontWeight: 600 }}>
+            {whole ? "Shorter summary" : "Whole summary"}
+          </button>
+        )}
+        {hard > 0 && <a href="#hard-question" style={jump}>{hard > 1 ? `${hard} hard questions` : "A hard question"}</a>}
+        <a href="#questions" style={jump}>Study questions</a>
+        <a href="#notes" style={jump}>Study notes</a>
+      </p>
     </div>
   );
 }
@@ -95,7 +119,7 @@ export function OutlinePanel({ note, data, onVerse }: { note: ChapterNote; data:
         })}
       </ol>
       <p style={{ margin: "var(--s-4) 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)" }}>
-        Choose a verse number or a word in the text to study it here. <a href="#notes" style={quietLink}>The full notes</a> are below the text.
+        Tap a verse or a word in the text to study it here. <a href="#notes" style={quietLink}>The full notes</a> are below the text.
       </p>
     </div>
   );
@@ -107,6 +131,48 @@ function Section({ title, open = false, children, id }: { title: string; open?: 
       <summary style={{ cursor: "pointer", minHeight: "48px", display: "flex", alignItems: "center", fontFamily: "var(--F)", fontSize: "1.35rem", color: "var(--ink)" }}>{title}</summary>
       <div style={{ padding: "4px 0 var(--s-4)" }}>{children}</div>
     </details>
+  );
+}
+
+/**
+ * Directly after the text: the chapter's hard question with an answer one tap
+ * away, and its study questions in the open. They used to be the last two of
+ * fifteen closed drawers, where few readers found them.
+ */
+function ChapterQuestions({ note }: { note: ChapterNote }) {
+  const hard = hardQuestions(note);
+  const grouped = !Array.isArray(note.questions);
+  const question: CSSProperties = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)" };
+  return (
+    <section aria-label="Questions on this chapter" style={{ marginTop: "var(--s-5)", maxWidth: "72ch", display: "grid", gap: "var(--s-3)" }}>
+      {hard.map((h, i) => (
+        <div key={i} id={i === 0 ? "hard-question" : undefined} style={{ ...card, borderLeft: "2px solid var(--mustard)", padding: "var(--s-3) var(--s-3) 6px", scrollMarginTop: "90px" }}>
+          <div role="heading" aria-level={2} style={{ ...kicker, margin: "0 0 8px" }}>{hard.length > 1 ? `A hard question (${i + 1} of ${hard.length})` : "A hard question"}</div>
+          <p style={{ maxWidth: "62ch", fontFamily: "var(--F)", fontSize: "1.3rem", fontStyle: "italic", lineHeight: 1.35, color: "var(--ink)", margin: "0 0 6px" }}>{h.q}</p>
+          <details className="sb-section">
+            <summary style={{ cursor: "pointer", minHeight: "48px", display: "flex", alignItems: "center", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)" }}>Read an answer</summary>
+            <div style={{ padding: "4px 0 var(--s-2)" }}><Prose text={h.a} /></div>
+          </details>
+        </div>
+      ))}
+      <div id="questions" style={{ ...card, padding: "var(--s-3)", scrollMarginTop: "90px" }}>
+        <div role="heading" aria-level={2} style={{ ...kicker, margin: "0 0 10px" }}>{grouped ? "Questions for study or a group" : "For reflection or a group"}</div>
+        {Array.isArray(note.questions) ? (
+          <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "10px" }}>
+            {note.questions.map((q, i) => <li key={i} style={question}>{q}</li>)}
+          </ol>
+        ) : (
+          ([["observe", "What does it say?"], ["interpret", "What does it mean?"], ["apply", "What difference does it make?"]] as const).map(([k, h], n, all) => (
+            <div key={k} style={{ marginBottom: n < all.length - 1 ? "14px" : 0 }}>
+              <h3 style={{ fontFamily: "var(--F)", fontSize: "1.15rem", fontWeight: 500, color: "var(--ink)", margin: "0 0 6px" }}>{h}</h3>
+              <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "8px" }}>
+                {(note.questions as Record<string, string[]>)[k].map((q, i) => <li key={i} style={question}>{q}</li>)}
+              </ol>
+            </div>
+          ))
+        )}
+      </div>
+    </section>
   );
 }
 
@@ -163,7 +229,9 @@ export function ChapterNotesBody(props: {
   const bookName = (slug: string) => books.find((b) => b.slug === slug)?.name ?? slug;
 
   return (
-    <section id="notes" aria-label={`Study notes on ${book.name} ${chapter}`} style={{ scrollMarginTop: "80px", marginTop: "var(--s-6)", maxWidth: "72ch" }}>
+    <>
+    <ChapterQuestions note={note} />
+    <section id="notes" aria-label={`Study notes on ${book.name} ${chapter}`} style={{ scrollMarginTop: "80px", marginTop: "var(--s-5)", maxWidth: "72ch" }}>
       <div style={{ ...kicker, marginBottom: "8px" }}>Study notes</div>
       <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.7rem, 3.4vw, 2.2rem)", fontWeight: 400, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 var(--s-4)" }}>{book.name} {chapter}: {note.title}</h2>
 
@@ -193,7 +261,7 @@ export function ChapterNotesBody(props: {
           })}
         </ol>
       </Section>
-      <Section title="What it teaches">
+      <Section title="What it teaches" open>
         <div style={{ display: "grid", gap: "12px" }}>
           {note.doctrines.map((d) => {
             const def = doctrines?.find((x) => x.id === d.id);
@@ -214,7 +282,7 @@ export function ChapterNotesBody(props: {
               <div key={w.s} style={{ ...card, padding: "14px var(--s-4)" }}>
                 <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "10px" }}>
                   {at && <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, fontSize: "24px", color: "var(--ink)" }}>{at.w[0]}</span>}
-                  {at && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}><i>{at.w[1]}</i> · “{at.w[2]}” · {chapter}:{at.verse.v}</span>}
+                  {at && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}><i>{at.w[1]}</i> · “<Gloss text={at.w[2]} />” · {chapter}:{at.verse.v}</span>}
                 </div>
                 <p style={{ margin: "6px 0 8px", fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.65, color: "var(--ink)" }}>{w.note}</p>
                 {at && (
@@ -245,12 +313,6 @@ export function ChapterNotesBody(props: {
           <Prose text={note.text} />
         </Section>
       )}
-      {hardQuestions(note).map((h, i, all) => (
-        <Section key={i} title={all.length > 1 ? `A hard question (${i + 1} of ${all.length})` : "A hard question"}>
-          <p style={{ maxWidth: "68ch", fontFamily: "var(--F)", fontSize: "1.2rem", fontStyle: "italic", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 10px" }}>{h.q}</p>
-          <Prose text={h.a} />
-        </Section>
-      ))}
       {note.teach && (
         <Section title="For teaching and preaching">
           <p style={{ maxWidth: "68ch", fontFamily: "var(--F)", fontSize: "1.25rem", lineHeight: 1.4, color: "var(--ink)", margin: "0 0 12px" }}>{note.teach.big}</p>
@@ -272,23 +334,6 @@ export function ChapterNotesBody(props: {
           )}
         </Section>
       )}
-      <Section title={Array.isArray(note.questions) ? "For reflection or a group" : "Questions for study or a group"}>
-        {Array.isArray(note.questions) ? (
-          <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "10px" }}>
-            {note.questions.map((q, i) => <li key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)" }}>{q}</li>)}
-          </ol>
-        ) : (
-          ([["observe", "What does it say?"], ["interpret", "What does it mean?"], ["apply", "What difference does it make?"]] as const).map(([k, h]) => (
-            <div key={k} style={{ marginBottom: "12px" }}>
-              <div style={{ ...kicker, margin: "4px 0 6px" }}>{h}</div>
-              <ol style={{ margin: 0, paddingLeft: "1.3em", display: "grid", gap: "8px" }}>
-                {(note.questions as Record<string, string[]>)[k].map((q, i) => <li key={i} style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)" }}>{q}</li>)}
-              </ol>
-            </div>
-          ))
-        )}
-      </Section>
-
       {(hasGuide || (related && related.length > 0)) && (
         <div style={{ borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)", marginTop: "4px" }}>
           <h3 style={{ fontFamily: "var(--F)", fontSize: "1.35rem", fontWeight: 400, margin: "0 0 12px" }}>Go deeper on LiveWell</h3>
@@ -302,16 +347,6 @@ export function ChapterNotesBody(props: {
           {related && related.length > 0 && <RelatedList items={related} />}
         </div>
       )}
-
-      <div style={{ borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)", marginTop: "var(--s-4)", fontFamily: "var(--U)", fontSize: "13.5px", lineHeight: 1.8, color: "var(--ink-muted)" }}>
-        Read {book.name} {chapter} in other translations:{" "}
-        {["ESV", "NIV", "NASB1995", "CSB", "KJV"].map((v, i) => (
-          <span key={v}>
-            <a href={translationHref(book.name, chapter, v)} target="_blank" rel="noopener noreferrer" style={quietLink}>{v === "NASB1995" ? "NASB" : v}</a>
-            {i < 4 ? " · " : ""}
-          </span>
-        ))}
-      </div>
 
       <div style={{ ...card, marginTop: "var(--s-5)", padding: "var(--s-4)", display: "grid", gap: "12px" }}>
         <button type="button" aria-pressed={read} onClick={toggleRead} style={{ justifySelf: "start", display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "44px", padding: "0 18px", borderRadius: "999px", border: "1px solid var(--ink)", background: read ? "var(--ink)" : "transparent", color: read ? "var(--bone)" : "var(--ink)", cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
@@ -339,5 +374,6 @@ export function ChapterNotesBody(props: {
         )}
       </div>
     </section>
+    </>
   );
 }

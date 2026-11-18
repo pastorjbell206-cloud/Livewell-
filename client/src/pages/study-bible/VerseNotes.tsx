@@ -8,7 +8,7 @@
 import { useMemo, useState, type CSSProperties } from "react";
 import { Link } from "wouter";
 
-import type { BibleBook, BibleChapter, BibleVerse, BibleWord } from "@/lib/bible";
+import { plainGloss, type BibleBook, type BibleChapter, type BibleVerse, type BibleWord } from "@/lib/bible";
 import { paragraphs, verseRange, type Doctrine, type VerseNote } from "@/lib/bible-notes";
 import { refHref } from "@/lib/scripture-ref";
 import { kicker, quietLink } from "@/pages/study-bible/shared";
@@ -72,7 +72,7 @@ export function VerseEntry(props: {
                   type="button"
                   disabled={!onWord}
                   onClick={() => onWord?.(c.verse, c.index)}
-                  aria-label={`${c.w[1]}, ${c.w[2]}: open the word study`}
+                  aria-label={`${c.w[1]}, ${plainGloss(c.w[2])}: open the word study`}
                   style={{ display: "inline-flex", alignItems: "baseline", gap: "6px", minHeight: "36px", padding: "4px 10px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: onWord ? "pointer" : "default", color: "var(--ink)" }}
                 >
                   <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, fontSize: "17px" }}>{c.w[0]}</span>

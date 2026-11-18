@@ -989,6 +989,22 @@ footer{background:var(--charcoal);color:var(--bone);padding:60px 0 40px}
 .sb-section > summary::-webkit-details-marker { display: none; }
 .sb-section > summary::after { content: "+"; margin-left: auto; padding-left: 16px; font-family: var(--U); font-size: 22px; font-weight: 400; color: var(--mustard-text); }
 .sb-section[open] > summary::after { content: "\2212"; }
+/* The Study Bible's text. A tap anywhere on a verse opens its study; the
+   number inside stays the control a keyboard reaches. Poetry is set a verse
+   to a block and a clause to a line, the later lines of a verse indented. */
+.sb-verse { cursor: pointer; border-radius: 3px; scroll-margin-top: 100px; }
+.sb-verse[data-active] { background: var(--bone-warm); }
+@media (hover: hover) { .sb-verse:hover { background: var(--bone-warm); } }
+.sb-dot { display: inline-block; width: 5px; height: 5px; margin-left: 3px; border-radius: 50%; background: currentColor; vertical-align: middle; }
+.sb-text--poetry .sb-verse { display: block; position: relative; padding-left: 2.2em; margin: 0 0 0.55em; line-height: 1.7; }
+.sb-text--poetry .sb-num { position: absolute; left: 0; top: 0.35em; }
+.sb-text--poetry .sb-line { display: block; padding-left: 1.2em; text-indent: -1.2em; }
+.sb-text--poetry .sb-line + .sb-line { padding-left: 2.6em; }
+/* On a phone the chapter summary keeps to three lines until asked for, so verse 1 is on the first screen. */
+@media (max-width: 999px) { .sb-summary:not([data-whole]) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; } }
+/* The phone study panel: about two fifths of the screen, so the verse stays in view above it. */
+.sb-panel { max-height: 42vh; max-height: 42dvh; }
+.sb-panel[data-tall] { max-height: 82vh; max-height: 82dvh; }
 
 @media print {
   .nav-wrap, .sticky-nav, .announce, footer, .no-print { display: none !important; }

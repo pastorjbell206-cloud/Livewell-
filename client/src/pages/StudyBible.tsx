@@ -16,14 +16,17 @@
 import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import { useLocationProperty } from "wouter/use-browser-location";
-import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
+import { copyToClipboard } from "@/lib/clipboard";
+import { SITE_URL } from "@/lib/site";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { fetchCatalogue, type CatalogueItem } from "@/lib/catalogue";
 import {
+  BIBLE_TRANSLATION,
   chapterHref,
   editionSplit,
   expandGrammar,
@@ -31,10 +34,17 @@ import {
   fetchBooks,
   fetchChapter,
   fetchMorph,
+  grammarRows,
+  isPoetry,
   langOf,
   lookupLex,
+  occurrenceLine,
+  outlineTarget,
   parseRef,
+  plainGloss,
+  poetryLines,
   safeDefinition,
+  verseCopyText,
   type BibleBook,
   type BibleChapter,
   type BibleVerse,
@@ -52,14 +62,16 @@ import {
   flattenStory,
   itemsForPassage,
   noteForVerse,
+  OTHER_TRANSLATIONS,
   readProgress,
   spreadKinds,
+  translationHref,
   type BookIntro,
   type ChapterNote,
   type Doctrine,
   type VerseNote,
 } from "@/lib/bible-notes";
-import { Band, Credits, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
+import { Band, Credits, Gloss, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
 import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
 import { VerseEntry } from "@/pages/study-bible/VerseNotes";
 import { GoToPassage } from "@/pages/study-bible/GoToPassage";
@@ -274,10 +286,11 @@ function BookPage({ book }: { book: BibleBook }) {
             <H2>How it is built</H2>
             <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
               {intro.structure.map((s) => {
-                const first = parseInt(s.range, 10);
+                // A one-chapter book counts its outline in verses: "3-4" in Jude is Jude 3 to 4, not chapter 3.
+                const at = outlineTarget(s.range, book.chapters);
                 return (
                   <li key={s.range} style={{ ...card, padding: "14px var(--s-4)" }}>
-                    <Link href={chapterHref(book.slug, first)} style={{ ...quietLink, textDecoration: "none", display: "block" }}>
+                    <Link href={chapterHref(book.slug, at.chapter, at.verse)} style={{ ...quietLink, textDecoration: "none", display: "block" }}>
                       <span style={kicker}>{book.name} {s.range.replace(/-/g, "–")}</span>
                       <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.3rem", margin: "4px 0" }}>{s.title}</span>
                     </Link>
@@ -414,7 +427,9 @@ function BookPage({ book }: { book: BibleBook }) {
 
 // ── the reader ───────────────────────────────────────────────────────────────
 
-function useWide(minWidth = 1000) {
+const WIDE = 1000;
+
+function useWide(minWidth = WIDE) {
   const [wide, setWide] = useState(false);
   useEffect(() => {
     if (typeof window === "undefined" || !window.matchMedia) return;
@@ -427,6 +442,23 @@ function useWide(minWidth = 1000) {
   return wide;
 }
 
+/**
+ * Brings a verse where it can be read. On a phone the study panel covers the
+ * lower part of the screen, so the verse goes to the top of what is left; on
+ * a wide screen it goes to the middle. A verse already in clear view stays
+ * where it is unless `always` says to move it.
+ */
+function showVerse(n: number, always = false) {
+  if (typeof window === "undefined") return;
+  const el = document.getElementById(`v${n}`);
+  if (!el || typeof el.scrollIntoView !== "function") return;
+  const phone = !window.matchMedia?.(`(min-width: ${WIDE}px)`).matches;
+  const r = el.getBoundingClientRect();
+  const floor = phone ? window.innerHeight * 0.56 : window.innerHeight;
+  if (!always && r.top >= 90 && r.bottom <= floor) return;
+  el.scrollIntoView({ block: phone ? "start" : "center" });
+}
+
 function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook; chapter: number }) {
   // Each loaded chapter and each selection carries the chapter it belongs to,
   // so moving to another chapter shows nothing stale without resetting state
@@ -437,6 +469,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const [nonce, setNonce] = useState(0);
   const [mode, setMode] = useState<Mode>(() => readStoredJSON<Mode>(MODE_KEY, (x): x is Mode => x === "reading" || x === "interlinear", "reading"));
   const [picked, setPicked] = useState<{ key: string; hash: string; sel: Selection } | null>(null);
+  const [tall, setTall] = useState(false);
   const wide = useWide();
   const lang = book.testament === "OT" ? "H" : "G";
   const valid = chapter >= 1 && chapter <= book.chapters;
@@ -457,6 +490,13 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
     return () => { stale = true; };
   }, [book.slug, chapter, nonce, valid]);
 
+  // The verses that have a note of their own, so the text can mark them.
+  const noted = useMemo(() => {
+    const set = new Set<number>();
+    if (data && verseNotes) for (const v of data.verses) if (noteForVerse(verseNotes, v.v)) set.add(v.v);
+    return set;
+  }, [data, verseNotes]);
+
   // A #v16 link opens that verse until the reader picks something else. The
   // hash is followed as it changes: the header's search can open a verse of
   // the chapter already on screen, and that changes nothing but the hash.
@@ -470,8 +510,15 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const setSel = (s: Selection) => setPicked({ key, hash, sel: s });
 
   useEffect(() => {
-    if (hashVerse) requestAnimationFrame(() => document.getElementById(`v${hashVerse.v}`)?.scrollIntoView({ block: "center" }));
+    if (hashVerse) requestAnimationFrame(() => showVerse(hashVerse.v, true));
   }, [hashVerse]);
+
+  // A verse chosen by a tap, by the panel's arrows, or from the outline stays
+  // readable above the panel.
+  const selVerse = sel?.verse.v ?? null;
+  useEffect(() => {
+    if (selVerse !== null) requestAnimationFrame(() => showVerse(selVerse));
+  }, [selVerse, key]);
 
   // A #notes link (from a doctrine page) lands on the notes once they exist.
   useEffect(() => {
@@ -487,66 +534,95 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
   const bookIdx = books.findIndex((b) => b.code === book.code);
   const prev = chapter > 1 ? { slug: book.slug, ch: chapter - 1 } : bookIdx > 0 ? { slug: books[bookIdx - 1].slug, ch: books[bookIdx - 1].chapters } : null;
   const next = chapter < book.chapters ? { slug: book.slug, ch: chapter + 1 } : bookIdx < books.length - 1 ? { slug: books[bookIdx + 1].slug, ch: 1 } : null;
+  const nameOf = (slug: string) => books.find((b) => b.slug === slug)?.name ?? slug;
 
   if (!valid) {
     return (
       <div style={{ ...wrap, padding: "var(--s-6) var(--gutter)" }}>
-        <p style={{ fontFamily: "var(--B)" }}>{book.name} has {book.chapters} chapter{book.chapters === 1 ? "" : "s"}.</p>
-        <Link href={`/study/bible/${book.slug}`} style={{ color: "var(--ink)", fontWeight: 600 }}>Choose a chapter</Link>
+        <SEOMeta title={`${book.name}: Choose a Chapter`} description={`${book.name} in the Study Bible.`} noindex />
+        <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 12px" }}>{book.name}</h1>
+        <p style={{ fontFamily: "var(--B)" }}>{book.name} has {book.chapters} chapter{book.chapters === 1 ? "" : "s"}, and this address asks for one it does not have.</p>
+        <Link href={book.chapters === 1 ? chapterHref(book.slug, 1) : `/study/bible/${book.slug}`} style={{ color: "var(--ink)", fontWeight: 600 }}>{book.chapters === 1 ? `Read ${book.name}` : "Choose a chapter"}</Link>
       </div>
     );
   }
 
-  const panel = sel && data ? <StudyPanel books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} data={data} verseNotes={verseNotes ?? null} onClose={() => setSel(null)} /> : null;
   const onVerse = (v: BibleVerse) => setSel({ kind: "verse", verse: v });
+  // The panel's arrows: the verse before or after the one open.
+  const step = (by: -1 | 1) => {
+    if (!data || !sel) return;
+    const v = data.verses[data.verses.findIndex((x) => x.v === sel.verse.v) + by];
+    if (v) onVerse(v);
+  };
+  const at = data && sel ? data.verses.findIndex((x) => x.v === sel.verse.v) : -1;
+  const panel = sel && data ? (
+    <StudyPanel
+      books={books} book={book} chapter={chapter} sel={sel} setSel={setSel} lang={lang} data={data} verseNotes={verseNotes ?? null}
+      onClose={() => setSel(null)}
+      onStep={step} hasPrev={at > 0} hasNext={at >= 0 && at < data.verses.length - 1}
+      tall={wide ? undefined : tall} onTall={() => setTall((t) => !t)}
+    />
+  ) : null;
   // "Go to" a verse of this same chapter: select it and bring it on screen.
   const goToVerse = (n: number) => {
     const v = data?.verses.find((x) => x.v === n);
     if (!v) return false;
     onVerse(v);
-    requestAnimationFrame(() => document.getElementById(`v${n}`)?.scrollIntoView({ block: "center" }));
+    requestAnimationFrame(() => showVerse(n, true));
     return true;
   };
   const onWord = (v: BibleVerse, i: number) => setSel({ kind: "word", verse: v, index: i });
+  const original = lang === "H" ? "Hebrew" : "Greek";
 
   return (
     <>
       <SEOMeta
         title={note ? `${chapterBookName(book)} ${chapter} Study Notes \u2013 ${note.title}` : `${chapterBookName(book)} ${chapter} Study Notes, Hebrew and Greek`}
-        description={note?.summary ?? `${chapterBookName(book)} ${chapter} with study notes, cross-references, and the ${lang === "H" ? "Hebrew" : "Greek"} beneath every word.`}
+        description={note?.summary ?? `${chapterBookName(book)} ${chapter} with study notes, cross-references, and the ${original} beneath every word.`}
         url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}/${chapter}`}
         type="article"
       />
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-3)", borderBottom: "1px solid var(--border)" }}>
-        <div style={{ ...wrap, display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "14px" }}>
-          <div>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>
-              <Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link>
+      <section style={{ background: "var(--bone)", padding: "var(--s-3) var(--gutter) var(--s-2)", borderBottom: "1px solid var(--border)" }}>
+        <div style={wrap}>
+          <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: "14px" }}>
+            <div style={{ minWidth: 0 }}>
+              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "4px" }}>
+                <Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link>
+              </div>
+              <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: 0 }}>
+                <Link href={`/study/bible/${book.slug}`} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{chapterBookName(book)}</Link> {chapter}
+              </h1>
             </div>
-            <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: 0 }}>
-              <Link href={`/study/bible/${book.slug}`} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{chapterBookName(book)}</Link> {chapter}
-            </h1>
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "10px" }}>
-            <div role="group" aria-label="How to show the text" style={{ display: "inline-flex", border: "1px solid var(--border)", borderRadius: "999px", overflow: "hidden" }}>
-              {(["reading", "interlinear"] as Mode[]).map((m) => (
-                <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)} style={{ minHeight: "40px", padding: "0 16px", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, background: mode === m ? "var(--ink)" : "var(--card)", color: mode === m ? "var(--bone)" : "var(--ink)" }}>
-                  {m === "reading" ? "Reading" : book.testament === "OT" ? "Hebrew" : "Greek"}
-                </button>
-              ))}
-            </div>
-            <nav aria-label="Chapters" style={{ display: "inline-flex", gap: "6px" }}>
+            <nav aria-label="Chapters" style={{ display: "inline-flex", flex: "0 0 auto", gap: "6px" }}>
               {prev ? <NavBtn href={chapterHref(prev.slug, prev.ch)} label="Previous chapter"><ChevronLeft size={18} /></NavBtn> : null}
               {next ? <NavBtn href={chapterHref(next.slug, next.ch)} label="Next chapter"><ChevronRight size={18} /></NavBtn> : null}
             </nav>
           </div>
-        </div>
-        <div style={{ ...wrap, marginTop: "14px" }}>
-          <GoToPassage here={chapterHref(book.slug, chapter)} onVerse={goToVerse} />
+          <p style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "0 12px", margin: "4px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink-muted)" }}>
+            <span style={{ color: "var(--ink)", fontWeight: 600 }}>{BIBLE_TRANSLATION}</span>
+            <span>
+              Also in{" "}
+              {OTHER_TRANSLATIONS.map((t) => (
+                <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "5px 5px" }}>{t.name}</a>
+              ))}
+            </span>
+          </p>
+          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", gap: "10px", marginTop: "8px" }}>
+            <div role="group" aria-label="How to show the text" style={{ display: "inline-flex", flex: "0 0 auto", border: "1px solid var(--border)", borderRadius: "999px", overflow: "hidden" }}>
+              {(["reading", "interlinear"] as Mode[]).map((m) => (
+                <button key={m} type="button" aria-pressed={mode === m} onClick={() => changeMode(m)} style={{ minHeight: "44px", padding: "0 16px", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, background: mode === m ? "var(--ink)" : "var(--card)", color: mode === m ? "var(--bone)" : "var(--ink)" }}>
+                  {m === "reading" ? "Reading" : original}
+                </button>
+              ))}
+            </div>
+            <div style={{ flex: "1 1 240px", minWidth: 0 }}>
+              <GoToPassage here={chapterHref(book.slug, chapter)} onVerse={goToVerse} />
+            </div>
+          </div>
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-6)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-3) var(--gutter) var(--s-6)" }}>
         <div style={{ ...wrap, display: "flex", gap: "var(--s-5)", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
             {/* On a first load the prerendered chapter stays on screen until the
@@ -559,27 +635,45 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
             ) : !data ? (
               <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
             ) : mode === "reading" ? (
-              <ReadingText data={data} sel={sel} onVerse={onVerse} />
+              <ReadingText data={data} sel={sel} onVerse={onVerse} noted={noted} poetry={isPoetry(book.slug, chapter)} />
             ) : (
-              <Interlinear data={data} lang={lang} sel={sel} onVerse={onVerse} onWord={onWord} />
+              <Interlinear data={data} lang={lang} sel={sel} onVerse={onVerse} onWord={onWord} noted={noted} />
             )}
             {data && (
-              <p style={{ marginTop: "var(--s-5)", fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", maxWidth: "68ch" }}>
-                Tap a verse number to study the verse{mode === "interlinear" ? ", or any word to study the word" : `. Switch to ${lang === "H" ? "Hebrew" : "Greek"} to see every word beneath the English`}.
-              </p>
+              <>
+                <p style={{ marginTop: "var(--s-4)", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "68ch" }}>
+                  Tap any verse to study it{mode === "interlinear" ? ", or any word to study the word" : `. Switch to ${original} to see every word beneath the English`}.
+                  {noted.size > 0 ? " A dot beside a verse number means that verse has notes of its own." : ""}
+                  {mode === "interlinear" ? ` A gray word in a meaning is one the ${original} has and English leaves out, or one English has to add.` : ""}
+                </p>
+                <nav aria-label="The chapter before and the chapter after" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "10px", marginTop: "var(--s-3)", maxWidth: "68ch" }}>
+                  {prev ? (
+                    <Link href={chapterHref(prev.slug, prev.ch)} style={{ ...quietLink, display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", textDecoration: "none" }}>
+                      <ChevronLeft size={16} aria-hidden /> {nameOf(prev.slug)} {prev.ch}
+                    </Link>
+                  ) : <span />}
+                  {next && (
+                    <Link href={chapterHref(next.slug, next.ch)} style={{ ...quietLink, display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+                      {nameOf(next.slug)} {next.ch} <ChevronRight size={16} aria-hidden />
+                    </Link>
+                  )}
+                </nav>
+              </>
             )}
             {note && <ChapterNotesBody books={books} book={book} chapter={chapter} note={note} data={data} place={place} verseNotes={verseNotes ?? null} onWord={onWord} onVerse={onVerse} />}
           </div>
           {wide && (
             <aside aria-label="Study panel" style={{ flex: "0 0 380px", position: "sticky", top: "88px", maxHeight: "calc(100vh - 110px)", overflowY: "auto", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
-              {panel ?? (note ? <OutlinePanel note={note} data={data} onVerse={onVerse} /> : <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>Choose a verse number or a word, and its study opens here.</p>)}
+              {panel ?? (note ? <OutlinePanel note={note} data={data} onVerse={onVerse} /> : <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>Tap a verse or a word, and its study opens here.</p>)}
             </aside>
           )}
         </div>
       </section>
 
       {!wide && panel && (
-        <aside aria-label="Study panel" style={{ position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 60, maxHeight: "72vh", overflowY: "auto", background: "var(--card)", borderTop: "2px solid var(--mustard)", boxShadow: "0 -8px 30px rgba(0,0,0,0.18)", padding: "var(--s-4)" }}>
+        // About two fifths of the screen (index.css, .sb-panel), so the verse
+        // being studied stays readable above it; "taller" is one tap away.
+        <aside aria-label="Study panel" className="sb-panel" data-tall={tall || undefined} style={{ position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 60, overflowY: "auto", overscrollBehavior: "contain", background: "var(--card)", borderTop: "2px solid var(--mustard)", boxShadow: "var(--shadow-modal)", padding: "12px var(--s-3) var(--s-3)" }}>
           {panel}
         </aside>
       )}
@@ -589,7 +683,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
 
 function NavBtn({ href, label, children }: { href: string; label: string; children: ReactNode }) {
   return (
-    <Link href={href} aria-label={label} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", backgroundImage: "none" }}>
+    <Link href={href} aria-label={label} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "44px", height: "44px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", backgroundImage: "none" }}>
       {children}
     </Link>
   );
@@ -612,50 +706,76 @@ const verseNumStyle = (active: boolean): CSSProperties => ({
   minHeight: "24px",
 });
 
-function ReadingText({ data, sel, onVerse }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void }) {
+/** The verse number: the button a keyboard or a screen reader uses, with a dot when the verse has notes. */
+function VerseNum({ v, active, noted, onVerse }: { v: BibleVerse; active: boolean; noted: boolean; onVerse: (v: BibleVerse) => void }) {
   return (
-    <div style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: "calc(var(--fs-read) * 1.05)", lineHeight: 1.75, color: "var(--ink)" }}>
-      {data.verses.map((v) => (
-        <span key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", background: sel?.verse.v === v.v ? "var(--bone-warm)" : "transparent" }}>
-          <button type="button" aria-label={`Study verse ${v.v}`} onClick={() => onVerse(v)} style={verseNumStyle(sel?.verse.v === v.v)}>{v.v}</button>
-          {v.t || <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontStyle: "italic", color: "var(--ink-muted)" }}>[Not in the earliest manuscripts]</span>}{" "}
-        </span>
-      ))}
+    <button type="button" className="sb-num" aria-label={`Study verse ${v.v}${noted ? ", which has notes" : ""}`} onClick={(e) => { e.stopPropagation(); onVerse(v); }} style={verseNumStyle(active)}>
+      {v.v}{noted && <span className="sb-dot" aria-hidden />}
+    </button>
+  );
+}
+
+/** A tap anywhere on a verse opens it, unless the reader is selecting its words to copy. */
+const tapVerse = (v: BibleVerse, onVerse: (v: BibleVerse) => void) => () => {
+  if (typeof window !== "undefined" && window.getSelection?.()?.toString()) return;
+  onVerse(v);
+};
+
+function ReadingText({ data, sel, onVerse, noted, poetry }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void; noted: Set<number>; poetry: boolean }) {
+  return (
+    <div className={poetry ? "sb-text sb-text--poetry" : "sb-text"} style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: "calc(var(--fs-read) * 1.05)", lineHeight: 1.75, color: "var(--ink)" }}>
+      {data.verses.map((v) => {
+        const active = sel?.verse.v === v.v;
+        return (
+          // The number inside is the control a keyboard reaches; the tap on the words is the same act, made easier to hit.
+          <span key={v.v} id={`v${v.v}`} className="sb-verse" data-active={active || undefined} onClick={tapVerse(v, onVerse)}>
+            <VerseNum v={v} active={active} noted={noted.has(v.v)} onVerse={onVerse} />
+            {!v.t ? (
+              <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontStyle: "italic", color: "var(--ink-muted)" }}>[Not in the earliest manuscripts]</span>
+            ) : poetry ? (
+              poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>)
+            ) : v.t}{" "}
+          </span>
+        );
+      })}
     </div>
   );
 }
 
-function Interlinear({ data, lang, sel, onVerse, onWord }: { data: BibleChapter; lang: "H" | "G"; sel: Selection; onVerse: (v: BibleVerse) => void; onWord: (v: BibleVerse, i: number) => void }) {
+function Interlinear({ data, lang, sel, onVerse, onWord, noted }: { data: BibleChapter; lang: "H" | "G"; sel: Selection; onVerse: (v: BibleVerse) => void; onWord: (v: BibleVerse, i: number) => void; noted: Set<number> }) {
   const script = lang === "H" ? HEB : GRK;
   return (
     <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "var(--s-4)" }}>
-      {data.verses.map((v) => (
-        <li key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
-          <p style={{ margin: "0 0 10px", fontFamily: "var(--font-reading)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)", maxWidth: "68ch" }}>
-            <button type="button" aria-label={`Study verse ${v.v}`} onClick={() => onVerse(v)} style={verseNumStyle(sel?.verse.v === v.v && sel.kind === "verse")}>{v.v}</button>
-            {v.t || <span style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>{LATER_NOTE}</span>}
-          </p>
-          {v.w.length === 0 ? (
-            <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>
-              Hebrew and English Bibles number this passage differently; the {lang === "H" ? "Hebrew" : "Greek"} for this verse sits under a neighboring verse number.
+      {data.verses.map((v) => {
+        const active = sel?.verse.v === v.v && sel.kind === "verse";
+        return (
+          <li key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
+            <p className="sb-verse" data-active={active || undefined} onClick={tapVerse(v, onVerse)} style={{ margin: "0 0 10px", fontFamily: "var(--font-reading)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)", maxWidth: "68ch" }}>
+              <VerseNum v={v} active={active} noted={noted.has(v.v)} onVerse={onVerse} />
+              {v.t || <span style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>{LATER_NOTE}</span>}
             </p>
-          ) : (
-            <div dir={lang === "H" ? "rtl" : "ltr"} lang={lang === "H" ? "he" : "grc"} style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-              {v.w.map((w, i) => {
-                const active = sel?.kind === "word" && sel.verse.v === v.v && sel.index === i;
-                return (
-                  <button key={i} type="button" onClick={() => onWord(v, i)} aria-label={`${w[0]}, ${w[2] || "word"}: study this word`} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", gap: "2px", padding: "6px 8px", minWidth: "44px", background: active ? "var(--bone-warm)" : "var(--card)", border: active ? "1px solid var(--mustard)" : "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer", position: "relative" }}>
-                    <span style={{ ...script, fontSize: lang === "H" ? "22px" : "19px", lineHeight: 1.3, color: "var(--ink)" }}>{w[0]}</span>
-                    <span dir="ltr" style={{ fontFamily: "var(--U)", fontSize: "11px", fontStyle: "italic", color: "var(--ink-muted)" }}>{w[1]}</span>
-                    <span dir="ltr" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink)" }}>{w[2]}</span>
-                    {w[5] && <span aria-label="differs between Greek editions" title="Differs between Greek editions" style={{ position: "absolute", top: "4px", right: "4px", width: "6px", height: "6px", borderRadius: "50%", background: "var(--mustard)" }} />}
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </li>
-      ))}
+            {v.w.length === 0 ? (
+              <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>
+                Hebrew and English Bibles number this passage differently; the {lang === "H" ? "Hebrew" : "Greek"} for this verse sits under a neighboring verse number.
+              </p>
+            ) : (
+              <div dir={lang === "H" ? "rtl" : "ltr"} lang={lang === "H" ? "he" : "grc"} style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                {v.w.map((w, i) => {
+                  const on = sel?.kind === "word" && sel.verse.v === v.v && sel.index === i;
+                  return (
+                    <button key={i} type="button" onClick={() => onWord(v, i)} aria-label={`${w[0]}, ${plainGloss(w[2]) || "word"}: study this word`} style={{ display: "inline-flex", flexDirection: "column", alignItems: "center", gap: "2px", padding: "6px 8px", minWidth: "44px", background: on ? "var(--bone-warm)" : "var(--card)", border: on ? "1px solid var(--mustard)" : "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer", position: "relative" }}>
+                      <span style={{ ...script, fontSize: lang === "H" ? "22px" : "19px", lineHeight: 1.3, color: "var(--ink)" }}>{w[0]}</span>
+                      <span dir="ltr" style={{ fontFamily: "var(--U)", fontSize: "11px", fontStyle: "italic", color: "var(--ink-muted)" }}>{w[1]}</span>
+                      <span dir="ltr" lang="en" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink)" }}><Gloss text={w[2]} /></span>
+                      {w[5] && <span aria-label="differs between Greek editions" title="Differs between Greek editions" style={{ position: "absolute", top: "4px", right: "4px", width: "6px", height: "6px", borderRadius: "50%", background: "var(--mustard)" }} />}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </li>
+        );
+      })}
     </ol>
   );
 }
@@ -664,21 +784,49 @@ function Interlinear({ data, lang, sel, onVerse, onWord }: { data: BibleChapter;
 
 const panelH = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.16em", textTransform: "uppercase" as const, color: "var(--mustard-text)", margin: "var(--s-4) 0 8px" };
 const quietLink: CSSProperties = { color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px", backgroundImage: "none" };
+const roundBtn: CSSProperties = { display: "inline-flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)" };
+const pillBtn: CSSProperties = { display: "inline-flex", alignItems: "center", minHeight: "40px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600 };
 
-function StudyPanel(props: { books: BibleBook[]; book: BibleBook; chapter: number; sel: NonNullable<Selection>; setSel: (s: Selection) => void; lang: "H" | "G"; data: BibleChapter; verseNotes: VerseNote[] | null; onClose: () => void }) {
-  const { sel, onClose } = props;
+interface PanelProps {
+  books: BibleBook[];
+  book: BibleBook;
+  chapter: number;
+  sel: NonNullable<Selection>;
+  setSel: (s: Selection) => void;
+  lang: "H" | "G";
+  data: BibleChapter;
+  verseNotes: VerseNote[] | null;
+  onClose: () => void;
+  onStep: (by: -1 | 1) => void;
+  hasPrev: boolean;
+  hasNext: boolean;
+  /** On a phone: whether the panel is at its taller height. Undefined beside the text, where it has no height to change. */
+  tall?: boolean;
+  onTall: () => void;
+}
+
+function StudyPanel(props: PanelProps) {
+  const { sel, onClose, onStep, hasPrev, hasNext, tall, onTall } = props;
   return (
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
-        <div className="eyebrow" style={{ color: "var(--mustard-text)" }}>{props.book.name} {props.chapter}:{sel.verse.v}</div>
-        <button type="button" onClick={onClose} aria-label="Close the study panel" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "36px", height: "36px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)" }}>
-          <X size={16} />
-        </button>
+        <div className="eyebrow" style={{ color: "var(--mustard-text)", minWidth: 0 }}>{props.book.name} {props.chapter}:{sel.verse.v}</div>
+        <div style={{ display: "inline-flex", flex: "0 0 auto", gap: "6px" }}>
+          <button type="button" onClick={() => onStep(-1)} disabled={!hasPrev} aria-label="The verse before" style={{ ...roundBtn, opacity: hasPrev ? 1 : 0.4, cursor: hasPrev ? "pointer" : "default" }}><ChevronLeft size={16} /></button>
+          <button type="button" onClick={() => onStep(1)} disabled={!hasNext} aria-label="The next verse" style={{ ...roundBtn, opacity: hasNext ? 1 : 0.4, cursor: hasNext ? "pointer" : "default" }}><ChevronRight size={16} /></button>
+          {tall !== undefined && (
+            <button type="button" onClick={onTall} aria-pressed={tall} aria-label="Make the study panel taller" style={roundBtn}>{tall ? <ChevronDown size={16} /> : <ChevronUp size={16} />}</button>
+          )}
+          <button type="button" onClick={onClose} aria-label="Close the study panel" style={roundBtn}><X size={16} /></button>
+        </div>
       </div>
       {sel.kind === "word" ? <WordStudy {...props} word={sel.verse.w[sel.index]} /> : <VerseStudy {...props} verse={sel.verse} />}
     </div>
   );
 }
+
+/** A dictionary entry long enough to bury the short meaning above it is folded; a short one is shown as it is. */
+const LONG_ENTRY = 320;
 
 function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lang: "H" | "G"; word: BibleWord; sel: NonNullable<Selection>; setSel: (s: Selection) => void }) {
   const [lexFor, setLexFor] = useState<{ strong: string; r: { key: string; entry: LexEntry } | null } | null>(null);
@@ -695,29 +843,31 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
 
   const lex = lexFor?.strong === strong ? lexFor.r : undefined;
   const script = wlang === "H" ? HEB : GRK;
-  const parsing = morph ? expandGrammar(wlang, grammar, morph) : [];
+  const parsing = morph ? expandGrammar(wlang, grammar, morph).map(grammarRows).filter((rows) => rows.length > 0) : [];
   const variant = editionSplit(editions);
+  const definition = lex ? safeDefinition(lex.entry.d) : "";
+  const entryStyle: CSSProperties = { fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink)" };
 
   return (
     <div>
       <p style={{ ...script, fontSize: "34px", lineHeight: 1.3, color: "var(--ink)", margin: "10px 0 0", textAlign: wlang === "H" ? "right" : "left" }} lang={wlang === "H" ? "he" : "grc"}>{word[0]}</p>
-      <p style={{ margin: "2px 0 0", fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}><i>{word[1]}</i> · “{gloss}”</p>
+      <p style={{ margin: "2px 0 0", fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}><i>{word[1]}</i> · “<span style={{ color: "var(--ink)" }}><Gloss text={gloss} /></span>”</p>
 
       <div style={panelH}>Grammar</div>
       {parsing.length ? (
         <div style={{ display: "grid", gap: "10px" }}>
-          {parsing.map((p, i) => (
+          {parsing.map((rows, i) => (
             <dl key={i} style={{ margin: 0, display: "grid", gridTemplateColumns: "auto 1fr", gap: "2px 12px", fontFamily: "var(--U)", fontSize: "13.5px", lineHeight: 1.5 }}>
-              {p.split(";").map((pair) => pair.split("=")).filter((kv) => kv.length === 2).map(([k, v]) => (
-                <div key={k} style={{ display: "contents" }}>
-                  <dt style={{ color: "var(--ink-muted)" }}>{k.trim()}</dt>
-                  <dd style={{ margin: 0, color: "var(--ink)" }}>{v.trim()}</dd>
+              {rows.map((row) => (
+                <div key={row.k} style={{ display: "contents" }}>
+                  <dt style={{ color: "var(--ink-muted)" }}>{row.k}</dt>
+                  <dd style={{ margin: 0, color: "var(--ink)" }}>{row.v}{row.hence && <span style={{ color: "var(--ink-muted)" }}> ({row.hence})</span>}</dd>
                 </div>
               ))}
             </dl>
           ))}
         </div>
-      ) : <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{grammar || "—"}</p>}
+      ) : <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{grammar || "No grammar is recorded for this word."}</p>}
 
       <div style={panelH}>Dictionary</div>
       {lex === undefined ? (
@@ -732,11 +882,18 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
           <p style={{ margin: "0 0 8px", fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)" }}>
             {lex.key}{lex.entry.rel ? ` · ${lex.entry.rel}` : ""}
           </p>
-          <div style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink)" }} dangerouslySetInnerHTML={{ __html: safeDefinition(lex.entry.d) }} />
+          {definition.replace(/<[^>]*>/g, "").length > LONG_ENTRY ? (
+            <details className="sb-section" style={{ borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
+              <summary style={{ cursor: "pointer", minHeight: "44px", display: "flex", alignItems: "center", fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--ink)" }}>The full dictionary entry</summary>
+              <div style={{ ...entryStyle, padding: "0 0 12px" }} dangerouslySetInnerHTML={{ __html: definition }} />
+            </details>
+          ) : (
+            <div style={entryStyle} dangerouslySetInnerHTML={{ __html: definition }} />
+          )}
 
           <div style={panelH}>Where else it appears</div>
           <p style={{ margin: "0 0 8px", fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)" }}>
-            {lex.entry.n.toLocaleString()} time{lex.entry.n === 1 ? "" : "s"} in the {wlang === "H" ? "Hebrew Old Testament" : "Greek New Testament"}{lex.entry.r.length < lex.entry.n ? `; the first ${lex.entry.r.length} are listed` : ""}.
+            {occurrenceLine(lex.entry.n, lex.entry.r.length, wlang)}
           </p>
           <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9 }}>
             {lex.entry.r.map((r, i) => {
@@ -762,13 +919,15 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
       )}
 
       <p style={{ margin: "var(--s-4) 0 0", fontFamily: "var(--U)", fontSize: "13px" }}>
-        <button type="button" onClick={() => setSel({ kind: "verse", verse: sel.verse })} style={{ ...quietLink, border: "none", padding: 0, cursor: "pointer", background: "none", fontFamily: "inherit", fontSize: "inherit" }}>
+        <button type="button" onClick={() => setSel({ kind: "verse", verse: sel.verse })} style={{ ...quietLink, border: "none", padding: 0, minHeight: "40px", cursor: "pointer", background: "none", fontFamily: "inherit", fontSize: "inherit" }}>
           Study the whole verse
         </button>
       </p>
     </div>
   );
 }
+
+type Copied = { what: "verse" | "link"; ok: boolean; at: string } | null;
 
 function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNotes }: { books: BibleBook[]; book: BibleBook; chapter: number; verse: BibleVerse; lang: "H" | "G"; setSel: (s: Selection) => void; data: BibleChapter; verseNotes: VerseNote[] | null }) {
   const [related, setRelated] = useState<CatalogueItem[] | null>(null);
@@ -786,9 +945,27 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
   const refLabel = `${chapterBookName(book)} ${chapter}:${verse.v}`;
   const xrefs = useMemo(() => (verse.x ?? []).map((r) => parseRef(r, books)).filter(Boolean) as NonNullable<ReturnType<typeof parseRef>>[], [verse.x, books]);
 
+  // What was copied belongs to the verse it was copied from; another verse starts clean.
+  const at = `${book.slug}/${chapter}/${verse.v}`;
+  const [copiedState, setCopied] = useState<Copied>(null);
+  const copied = copiedState?.at === at ? copiedState : null;
+  const copy = (what: "verse" | "link") => {
+    const text = what === "verse" ? verseCopyText(verse.t, book.name, chapter, verse.v) : `${SITE_URL}${chapterHref(book.slug, chapter, verse.v)}`;
+    void copyToClipboard(text).then((ok) => setCopied({ what, ok, at }));
+  };
+  const copyLabel = (what: "verse" | "link", idle: string) => (copied?.what === what ? (copied.ok ? "Copied" : "Couldn’t copy") : idle);
+
   return (
     <div>
       <p style={{ margin: "10px 0 0", fontFamily: "var(--font-reading)", fontSize: "18px", lineHeight: 1.6, color: "var(--ink)" }}>{verse.t || <i style={{ color: "var(--ink-muted)" }}>{LATER_NOTE}</i>}</p>
+
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", margin: "10px 0 0" }}>
+        {verse.t && <button type="button" onClick={() => copy("verse")} style={pillBtn}>{copyLabel("verse", "Copy verse")}</button>}
+        <button type="button" onClick={() => copy("link")} style={pillBtn}>{copyLabel("link", "Copy link")}</button>
+      </div>
+      <p role="status" style={{ margin: copied && !copied.ok ? "8px 0 0" : 0, fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.5, color: "var(--ink-muted)" }}>
+        {copied && !copied.ok ? (copied.what === "verse" ? "This browser would not copy it. Select the verse above and copy it by hand." : "This browser would not copy it. The link is the address of this page with the verse number on the end.") : ""}
+      </p>
 
       {entry && (
         <>
@@ -805,7 +982,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
               <li key={i}>
                 <button type="button" onClick={() => setSel({ kind: "word", verse, index: i })} style={{ display: "flex", width: "100%", gap: "10px", alignItems: "baseline", justifyContent: "space-between", minHeight: "36px", padding: "4px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: "pointer", textAlign: "left" }}>
                   <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, direction: lang === "H" ? "rtl" : "ltr", fontSize: "18px", color: "var(--ink)" }}>{w[0]}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", flex: 1, textAlign: "right" }}>{w[2]}</span>
+                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", flex: 1, textAlign: "right" }}><Gloss text={w[2]} /></span>
                 </button>
               </li>
             ))}
@@ -848,6 +1025,15 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
         <Link href={`/theology/passage?ref=${encodeURIComponent(refLabel)}`} style={quietLink}>This passage in context</Link>
         {" · "}
         <Link href={`/search?q=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>Search the site for {book.name} {chapter}</Link>
+      </p>
+      <p style={{ margin: "4px 0 0", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.9, color: "var(--ink-muted)" }}>
+        This verse in{" "}
+        {OTHER_TRANSLATIONS.map((t, i) => (
+          <span key={t.code}>
+            <a href={translationHref(book.name, chapter, t.code, verse.v)} target="_blank" rel="noopener noreferrer" style={quietLink}>{t.name}</a>
+            {i < OTHER_TRANSLATIONS.length - 1 ? " · " : ""}
+          </span>
+        ))}
       </p>
     </div>
   );

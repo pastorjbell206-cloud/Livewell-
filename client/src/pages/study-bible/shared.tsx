@@ -6,6 +6,7 @@
 import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 
+import { glossParts } from "@/lib/bible";
 import { paragraphs } from "@/lib/bible-notes";
 import type { CatalogueItem } from "@/lib/catalogue";
 
@@ -44,6 +45,21 @@ export function Prose({ text, size = 17 }: { text: string | undefined; size?: nu
       {paragraphs(text).map((p, i) => (
         <p key={i} style={{ ...prose, fontFamily: "var(--font-reading)", fontSize: `${size + 1}px`, lineHeight: 1.65, color: "var(--ink)", margin: "0 0 14px" }}>{p}</p>
       ))}
+    </>
+  );
+}
+
+/**
+ * A word-by-word meaning. The source's marks ("<the>", "[was]") are not
+ * printed: a word the original has and English leaves out, or one English has
+ * to add, is set in gray italic instead.
+ */
+export function Gloss({ text }: { text: string }) {
+  return (
+    <>
+      {glossParts(text).map((p, i) =>
+        p.supplied ? <span key={i} style={{ color: "var(--ink-muted)", fontStyle: "italic" }}>{p.text}</span> : <span key={i}>{p.text}</span>
+      )}
     </>
   );
 }
