@@ -41,3 +41,23 @@ I stopped at a clean guide boundary after two guides because I ran short of work
 - **sermon-on-the-mount** (done): words 27,195 to 17,906; teaching 6,861 to 4,163. "Bell" 32 to 0; "honest" 44 to 0; "Leader to confirm" 4 to 0; contractions 79 to 548. Quotations kept: Bonhoeffer's "come and die", "only he who believes is obedient...", and two short phrases on cheap grace. Attributions to Bonhoeffer I could not find were removed. Facts corrected: Augustine's commentary (about 394, not 420), Lloyd-Jones (1959 to 1960), Luther (1530 to 1532), a non-existent Carson title replaced, Bonhoeffer hanged for resistance (not "for belonging to Christ"). Session 3 now tells the leader to keep the guide's help information within reach. Biography: none.
 - **singleness** (done): words 24,715 to 15,321; teaching 4,489 to 3,310. "Bell" 29 to 0; "honest" 61 to 5; "Leader to confirm" 3 to 0; contractions 83 to 437. No person quoted but Scripture. Cut: two bibliography entries that were placeholders (one named an unrelated book on abusive men). Dates made concrete: Jerome (393), Augustine (about 401), Luther (1522), Putnam (2000), Surgeon General (2023), and the recent books. Biography: "a pastor with five sons" removed as a credential; "I'm a pastor" kept once, in the self-implication. The guide never says James is married.
 - **skeptic** (done): words 24,517 to 15,850; teaching 6,354 to 3,832. "Bell" 22 to 0; "honest" 100 to 4; "Leader to confirm" 2 to 0; contractions 41 to 490. Quotations kept or added from known sources: Lewis's "patronising nonsense" sentences, Clifford's rule, Tacitus on Pilate. Corrected: "faith seeking understanding" is Anselm's, not Augustine's; several timeline dates (Socrates 399 BC, Lewis's talks from 1941, Wright from 1992, Habermas and Licona 2004 to 2010); a run-together Ehrman title. Five named case-study people were invented, so the cases are now plain "Suppose..." scenarios. Biography: "came to faith from atheism" used once, in session 1's teaching.
+
+### What I ran (second run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt with `build-studyguides-index.mjs` after each.
+- Literal search of each guide for every forbidden word and phrase and for em-dashes: clean ("blessed" appears only in Scripture or as a verb). Every exclamation point is inside quoted Scripture.
+- `pnpm check`: passed. All 35 content-gate commands from ci.yml: passed. `pnpm test`: 140 files passed, 3 failed under machine load (load average about 19 on 4 CPUs): StudyBible.hash, fes (catechism) and hq timed out. hq passed on the first rerun; the other two passed when run alone. None touches study guides.
+- Web searches: 2 (Bonhoeffer's obedience line; Treweek's publication year).
+
+### Not done or not verified
+
+- No pnpm build, Lighthouse or screenshots in this run (the lead runs those on the whole branch).
+- Scripture quoted from memory of the ESV, which the guides use; there is no ESV in the repository to check against.
+- PDFs not rebuilt (`pnpm pdfs`); the downloads still carry the old wording.
+- The sixteen guides after skeptic in this share (spiritual-warfare to work-and-vocation) are still untouched.
+
+### What only James can supply
+
+- Sermon on the Mount: nothing of his own was added; any memory of his own struggle with an enemy, money or anger would be his to give.
+- Singleness: the guide says only "I'm a pastor" and never states whether he is married. If he wants to say how he stands toward single people in his own church, that is his sentence to write.
+- Skeptic: "I came to faith from atheism" is used once, in session 1. Whether he wants a line of his own about what the atheist view felt like from inside is his call.
