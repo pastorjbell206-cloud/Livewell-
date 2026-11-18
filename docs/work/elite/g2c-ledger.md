@@ -466,3 +466,22 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Biography: "father of five sons" (summary, FAQ 9, facilitator open, invite caption) | Credential | All cut |
 | Help lines | Old file has none (script: no number, hotline or Find Help); no sensitive-pages topic | Find Help path added in primer; none removed |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Work and Vocation
+
+| Claim | How checked | Result |
+|---|---|---|
+| Luther: "God milks the cow through the milkmaid" (quote card, teaching, FAQ, prayer) | Searched: traced to Wingren's Luther on Vocation and Veith; no primary Luther text found | Quotation cut; Luther's 1520 To the Christian Nobility (shoemaker, smith, farmer) given; milkmaid named as his interpreters' summary |
+| Sayers, Why Work?, 1942, the carpenter and good tables | Known: address of 1942; the church exhorts the carpenter not to be drunk and to come to church, when it should tell him the first demand of his religion is good tables | Paraphrase, dated |
+| DeKoster, Work, "1962" | Known: Work: The Meaning of Your Life, 1982 | Corrected to 1982 |
+| Ecclesiastes "circa 950 BC" | Date debated | "Date debated" |
+| Benedictine "work and prayer" motto, circa 400 | Augustine, On the Work of Monks (about 400); Benedict's Rule (6th century) sets hours for work; the motto is later | Entry rewritten |
+| Calvin "1560s" | Institutes 1559, 3.10.6 (calling as a post) | 1559 |
+| Bezalel the first person filled with the Spirit | Exodus 31:3 is the first named person "filled with the Spirit of God"; Exodus 28:3 speaks of a spirit of skill | "Names as" |
+| 2 Peter 3:10 "burned up" | ESV: "will be exposed" | Noted in the objection |
+| 1 Corinthians 3 "wood, hay and stubble" | ESV "wood, hay, straw" | Corrected |
+| Jesus "a carpenter," "worker worthy of wages" | Mark 6:3; Luke 10:7 ESV "the laborer deserves his wages" | Cited |
+| Keller, Every Good Endeavor 2012; Counterfeit Gods 2009; Guinness, The Call 1998; Wright, Surprised by Hope 2008; Veith, God at Work 2002; Comer, Garden City 2015; Garber, Visions of Vocation 2014; Horton, Ordinary 2014 | Known, real books | "Leader to confirm" removed; dated |
+| "The man with the collar" | Imagery, not a fact about James; a Baptist pastor | "The man in the pulpit" |
+| Help lines | Old file has none (script); no sensitive-pages topic | Find Help path added; none removed |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
