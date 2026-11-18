@@ -149,9 +149,12 @@ describe("/theology/history/people", () => {
   it("lists every person A to Z and by age, and lands on one opened", async () => {
     renderAt("/theology/history/people#person-augustine-of-hippo");
     const list = await screen.findByRole("list", { name: "People, A to Z" });
-    expect(within(list).getAllByRole("heading", { level: 3 })).toHaveLength(FIGURES.length);
+    // The people arrive after the list mounts, so wait for them.
+    await waitFor(() =>
+      expect(within(list).getAllByRole("heading", { level: 3 })).toHaveLength(FIGURES.length),
+    );
     const card = document.getElementById("person-augustine-of-hippo")!;
-    expect(within(card).getByText(/Why they matter/)).toBeTruthy();
+    await waitFor(() => expect(within(card).getByText(/Why they matter/)).toBeTruthy());
     fireEvent.click(screen.getByRole("button", { name: "By age" }));
     expect(screen.getByRole("heading", { level: 3, name: /The Reformation/ })).toBeTruthy();
     expect(document.querySelectorAll(".hp-card")).toHaveLength(FIGURES.length);
