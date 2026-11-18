@@ -28,3 +28,25 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Case studies told as real events | No source | Reframed as "Suppose" |
 | FAQ "Why does the study keep implicating the writer" | About method, not the subject | Cut |
 | "Jeremiah and the wider Old Testament exile narratives", author "Various, Scripture" | Filler bibliography entry | Cut |
+
+## aging-and-legacy
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography as credential (summary, primer, FAQ, script, promo: atheism, fatherless, five sons) | Credential use | Removed everywhere |
+| Session 5 teaching: "I have five sons ... I do not want them to say goodbye to me" | A first-person wish of James's I cannot confirm he wrote | Cut; listed for James to supply if he wants it |
+| Psalm 90 by Moses, "the oldest prayer in the Psalter" | Heading says "A Prayer of Moses"; "oldest" is a tradition, not a fact | Reworded to the heading; Moses timeline dated "Date debated" (was circa 1400 BC) |
+| Wisdom books "circa 950 BC" | Dating disputed | Changed to "Israel's wisdom books" |
+| Resurrection "seen alive by hundreds, many of whom died insisting on it" | 1 Corinthians 15:6 says "most of whom are still alive" | Replaced with the verse |
+| Creed in 1 Corinthians 15 dated within a few years of the events | Known (mainstream scholarly view) | Kept as "many scholars" |
+| Epicurus, death is nothing to us | Known (Letter to Menoeceus); wording varies | Marked paraphrased |
+| "We spend more to look young than most of human history spent to stay alive" | Not checkable | Cut |
+| Research on how faith passes between generations | No study named in the old guide | Kept as a general finding, stated modestly |
+| Hebrews 12:1 "cloud" is "the word for a crowd in a stadium" | Overstated (the race picture comes from the context) | Reworded |
+| Apostles' Creed received form, circa AD 700 | Known | "Early 700s" |
+| Ars moriendi about 1415; Jeremy Taylor, Holy Dying, 1651 | Known | Kept |
+| Gawande, Being Mortal 2014; Kalanithi diagnosed at 36, died 2015 at 37, book 2016 | Known | Kept |
+| Keller On Death (2020); Wright Surprised by Hope (2008); Lewis A Grief Observed (1961); Wolterstorff Lament for a Son (1987) | Known | Kept, dated; "Leader to confirm" removed |
+| Bibliography "1 Corinthians 15 and 2 Timothy 4", author "the apostle Paul" | Filler (Scripture, already the spine) | Cut from bibliography; kept in further reading |
+| Case studies told as real ("A woman in your group...") | No source | Reframed as "Suppose" |
+| Help lines (988) | Word for word | Three sentences kept unchanged, same places (primer, FAQ, opening script) |
