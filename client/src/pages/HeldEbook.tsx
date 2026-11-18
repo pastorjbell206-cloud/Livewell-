@@ -11,7 +11,10 @@ import { Link, useLocation } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
-import { HELD_EBOOKS } from "@/data/ebooks";
+import SectionHead from "@/components/art/SectionHead";
+import { EbookCard } from "@/components/FreeEbookButtons";
+import { BookMarked } from "lucide-react";
+import { FREE_EBOOKS, HELD_EBOOKS } from "@/data/ebooks";
 
 export default function HeldEbook() {
   const [path] = useLocation();
@@ -43,6 +46,19 @@ export default function HeldEbook() {
           If you bought this one before, your download page still works.
         </p>
       </PageHead>
+
+      <section className="home-sec home-sec--warm" aria-labelledby="held-free-title">
+        <div className="home-wrap">
+          <SectionHead icon={BookMarked} label="Free to download" title="James's own books" id="held-free-title" />
+          <ul className="ebook-shelf">
+            {FREE_EBOOKS.filter((b) => b.group === "james").map((b) => (
+              <li key={b.slug}>
+                <EbookCard book={b} headingLevel={3} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </Layout>
   );
 }

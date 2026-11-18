@@ -26,7 +26,7 @@ import SectionHead from "@/components/art/SectionHead";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 import { SendButton } from "@/components/TakeItWithYou";
-import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { EbookCard } from "@/components/FreeEbookButtons";
 import { EBOOK_GROUPS, FREE_EBOOKS, type Ebook } from "@/data/ebooks";
 import { BOOKLETS } from "@/data/booklets";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
@@ -229,16 +229,7 @@ export default function Downloads() {
               <ul className="ebook-shelf">
                 {shelf.books.map((b) => (
                   <li key={b.slug}>
-                    <article className="ebook-card" aria-labelledby={`eb-${b.slug}`}>
-                      <img className="ebook-card__cover" src={b.cover} alt="" width={96} height={144} loading="lazy" decoding="async" />
-                      <div>
-                        <h4 className="ebook-card__title" id={`eb-${b.slug}`}>
-                          {b.page ? <Link href={b.page}>{b.title}</Link> : b.title}
-                        </h4>
-                        <p className="ebook-card__line">{b.line}</p>
-                        <FreeEbookButtons title={b.title} pdf={b.pdf} epub={b.epub} size="sm" />
-                      </div>
-                    </article>
+                    <EbookCard book={b} />
                   </li>
                 ))}
               </ul>

@@ -5,6 +5,8 @@
  * email asked for, no checkout. One button family (`.btn`).
  */
 import { Download } from "lucide-react";
+import { Link } from "wouter";
+import type { Ebook } from "@/data/ebooks";
 
 export function FreeEbookButtons({
   title,
@@ -38,5 +40,22 @@ export function FreeEbookButtons({
         </a>
       )}
     </div>
+  );
+}
+
+/** One free ebook as a card: cover, title (linked to its page when it has one), its line, the buttons. */
+export function EbookCard({ book, headingLevel = 4 }: { book: Ebook; headingLevel?: 3 | 4 }) {
+  const H = headingLevel === 3 ? "h3" : "h4";
+  return (
+    <article className="ebook-card" aria-labelledby={`eb-${book.slug}`}>
+      <img className="ebook-card__cover" src={book.cover} alt="" width={96} height={144} loading="lazy" decoding="async" />
+      <div>
+        <H className="ebook-card__title" id={`eb-${book.slug}`}>
+          {book.page ? <Link href={book.page}>{book.title}</Link> : book.title}
+        </H>
+        <p className="ebook-card__line">{book.line}</p>
+        <FreeEbookButtons title={book.title} pdf={book.pdf} epub={book.epub} size="sm" />
+      </div>
+    </article>
   );
 }
