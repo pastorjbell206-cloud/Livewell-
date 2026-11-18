@@ -177,3 +177,57 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Biography: atheism and no father (summary, primer, script, teaching) | Credential | Atheism kept once, session 1 teaching; "raised without a father" removed |
 | "Blessed" outside Scripture | CLAUDE.md forbids it as an adjective | Used only in Scripture, in titles, or in quotation marks as the word under discussion |
 | Scripture quotations | ESV, from memory | Unchanged translation |
+
+## The Captive Church
+
+| Claim | How checked | Result |
+|---|---|---|
+| Barmen, first article: "the one Word of God whom we have to hear..." | Web search: standard English (Cochrane; Modern Reformation text) reads "as he is attested for us in Holy Scripture, is the one Word of God which we have to hear and which we have to trust and obey in life and in death" | Quoted in that wording; the rejection paraphrased; drafted largely by Barth |
+| "By this sign conquer" (312) | Known: Eusebius, Life of Constantine 1.28 | Kept as Constantine's reported words |
+| Bonhoeffer "cheap grace ... wear like a coat instead of grow like a root" | The term is his (Discipleship, 1937); the coat-and-root image is not a line I can find in him | Term kept; image cut; his idea paraphrased without quotation marks |
+| Bonhoeffer "was among them" at Barmen | Known: he was not at the synod (he was in London); he belonged to the Confessing Church | Reworded |
+| Bonhoeffer hanged "weeks before the war ended" | Known: Flossenbürg, 9 April 1945 | Dated |
+| Pliny to Trajan about 112; incense to the emperor's image | Known: Letters 10.96: incense and wine to the emperor's image, cursing Christ; executed for obstinacy | Stated as such |
+| "Under Nero ... begin to die for refusing the pinch of incense" (64) | Known: Tacitus, Annals 15.44: Christians blamed for the fire | Corrected |
+| "Caesar is lord" as Rome's creed | Known: Martyrdom of Polycarp 8.2, officials urge him to say "Lord Caesar" and offer incense, about 155 | Grounded in Polycarp, paraphrased; no quotation added |
+| Edict of Milan 313; established religion "within a lifetime" | Known: Constantine and Licinius; Theodosius 380 | 380 named |
+| Ambrose and Theodosius, 390 | Known: penance after Thessalonica | Kept; timeline order fixed |
+| City of God "circa 426" | Known: written 413 to 426 | Dated |
+| Denarius image and inscription | Known: Tiberius's denarius, "son of the divine Augustus"; Mark 12:16 eikon; LXX Genesis 1:26-27 eikon | Kept; ESV says "likeness", explained |
+| Matthew 4:10 memory verse "Away from me, Satan ... serve him only" | NIV wording in an ESV guide | ESV: "Be gone, Satan! ... him only shall you serve" |
+| Philippians 3:20 "people who held a prized Roman citizenship" | Philippi was a Roman colony; not every reader was a citizen | "A Roman colony proud of its status" |
+| Cavanaugh, The Myth of Religious Violence | Known: 2009 | Dated; "Leader to confirm" removed |
+| Whitehead and Perry, Taking America Back for God | Known: 2020 | Dated; "Leader to confirm" removed |
+| Hauerwas and Willimon, Resident Aliens; Newbigin; Smith; Taylor | Known: 1989; 1989; 2009; 2007 | Dated |
+| "The Benedict Option ... by various" | Known: Rod Dreher, 2017 | Author named |
+| "Render to Caesar: The treason of the early creed ... by various" | Not a book | Cut |
+| Plug: "James Bell's book The Captive Church" (summary, promo) | Not on the three-book shelf (bookShelf.ts) | Dropped |
+| Biography: atheism (summary, primer, FAQ) | Credential | Removed |
+| Scripture quotations | ESV, from memory; no ESV in the repository | ESV throughout |
+
+## The Church
+
+| Claim | How checked | Result |
+|---|---|---|
+| Bonhoeffer: "He who loves his dream of community more than the Christian community itself becomes a destroyer of the latter, even though his personal intentions may be ever so honest and earnest and sacrificial." | Web search: Doberstein translation of Life Together, reproduced by Plough and others | Kept, quoted |
+| Bonhoeffer: "The sooner this shock of disillusionment comes to an individual and to a community the better for both." | Same search: Doberstein, pp. 26-27 | Kept, quoted |
+| Bonhoeffer: community "not an ideal we realize" but "a reality created by God in Christ" | Old guide paraphrased it | Kept as paraphrase, no quotation marks |
+| Finkenwalde; Life Together "written out of" the seminary "the Gestapo would shut down within a couple of years" | Known: seminary 1935 to 1937, closed by the Gestapo in 1937; book written 1938, published 1939 | Corrected |
+| Newbigin: "the only hermeneutic of the gospel is a congregation of men and women who believe it and live by it" (old: "the only effective hermeneutic") | Web search: The Gospel in a Pluralist Society (1989), p. 227 | Quoted without "effective" |
+| Newbigin "nearly forty years" in India; "the most challenging missionary frontier of our time" | Known: about 1936 to 1974; the phrase is a common summary, not a verified quotation | Dates as "from the 1930s to the 1970s"; phrase not quoted |
+| Fact-value split | Known: Foolishness to the Greeks (1986), Gospel in a Pluralist Society | Book added to bibliography |
+| "Wherever the Word of God is purely preached and heard, and the sacraments administered according to Christ's institution, there ... a church of God exists" (unattributed) | Known: Calvin, Institutes 4.1.9 | Attributed to Calvin as paraphrase |
+| Augsburg Confession 1530, the marks | Known: Article VII | Paraphrased |
+| Luther 1539 marks | Known: On the Councils and the Church | Kept |
+| Cyprian "circa 250", God as Father, church as mother | Known: On the Unity of the Church, about 251 | Dated; paraphrase |
+| Augustine and the Donatists "circa 400"; wheat and weeds | Known: anti-Donatist writings about 400 to 411; Matthew 13:24-30 | Dated; parable referenced |
+| "A hospital for sinners, not a museum for saints" | A saying of uncertain origin | Called "an old saying", unattributed |
+| Sinai "circa 1446 BC" | Debated | "Date debated" |
+| Matthew 16:18 "the first use of the word church in the Gospels" | Known: church appears in Matthew 16:18 and 18:17 only | "One of only two Gospel passages" |
+| Ephesians "circa AD 62"; 1 Peter "circa AD 64"; 1 Corinthians "circa AD 55" | Loose; authorship debated for two | Ranges given with "debated" |
+| Deconstruction "circa 2015" | Loose | "2010s" |
+| Bibliography: "Life in the Wilderness" by "Various, on the desert and monastic tradition" | Not a book | Cut |
+| Bibliography dates: Keller 2012; McKnight and Barringer 2020; DeGroat 2020; Allberry 2016; Peterson 1987; Colson with Vaughn 1992 | Known | Dated; "Leader to confirm" removed |
+| Case-study names Marta, Dean, Renee, Paul | Invented people | Unnamed "Suppose" scenarios |
+| Help lines (abuse, sexual-assault topics) | sensitive-pages.json | Untouched; reporting sentence kept verbatim |
+| Scripture quotations | ESV, from memory | ESV throughout |

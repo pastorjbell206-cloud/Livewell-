@@ -10,8 +10,9 @@
  * each with its file size once the deploy has built it.
  *
  * Every ebook is free (James, 2026-11-18), so the page opens on them: his
- * books, the hard-question books, the booklets for church leaders and the
- * older ebooks, each with its cover and a "Download free" button. That list
+ * books, the hard-question books and the booklets for church leaders, each
+ * with its cover and a "Download free" button. (The older ebooks stay off the
+ * site for now: James, 2026-11-18, "Keep them off for now".) That list
  * is data/ebooks.ts and data/booklets.ts, read directly so it paints at once;
  * the catalogue's Book and Booklet rows are left out below so nothing shows
  * twice.
@@ -92,11 +93,11 @@ const KIND_ICON: Record<string, LucideIcon> = {
   ebooks: BookMarked,
 };
 
-/** The free ebooks, shelf by shelf; the church leaders' booklets go third. */
+/** The free ebooks, shelf by shelf; the church leaders' booklets go last. */
 const EBOOK_SHELVES: { id: string; label: string; books: Ebook[] }[] = (() => {
   const shelves = EBOOK_GROUPS.map((g) => ({ id: `ebooks-${g.id}`, label: g.label, books: FREE_EBOOKS.filter((b) => b.group === g.id) }));
   const booklets: Ebook[] = BOOKLETS.map((b) => ({
-    group: "older",
+    group: "leaders",
     slug: b.slug,
     title: b.title,
     line: b.subtitle,
@@ -105,7 +106,7 @@ const EBOOK_SHELVES: { id: string; label: string; books: Ebook[] }[] = (() => {
     epub: b.epub,
     page: "/resources/hard-issues-series",
   }));
-  shelves.splice(2, 0, { id: "ebooks-leaders", label: "For church leaders", books: booklets });
+  shelves.push({ id: "ebooks-leaders", label: "For church leaders", books: booklets });
   return shelves;
 })();
 const EBOOK_COUNT = EBOOK_SHELVES.reduce((n, s) => n + s.books.length, 0);

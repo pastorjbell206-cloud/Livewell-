@@ -3083,23 +3083,20 @@ ${items}
 // ---------------------------------------------------------------------------
 // LiveWell-series ebooks: Stripe Checkout + gated PDF delivery.
 //
-// Every ebook is free (James, 2026-11-18). No page sells one any more; this
-// code stays, unused by any page, as the membership code does. Sixteen of
-// these books are now static files under the served ebook folder (`href`),
-// listed on /downloads. The other seven name the Pastors Connection Network
-// and are held until James sends corrected files: they live in
-// content/held-downloads/ (`file`, referenced via new URL(..., import.meta.url)
-// and bundled by vercel.json's includeFiles), are never served as static
-// files, and reach only a past buyer through /api/download with a Stripe
-// session that is actually paid.
+// No ebook is sold now (James, 2026-11-18); this code stays, unused by any
+// page, as the membership code does. None of these 23 books is on the site:
+// seven name the Pastors Connection Network and wait for James's corrected
+// files, and the sixteen older ones are off for now ("Keep them off for now",
+// 2026-11-18). Their PDFs live in content/held-downloads/ (referenced via
+// new URL(..., import.meta.url) and bundled by vercel.json's includeFiles),
+// are never served as static files, and reach only a past buyer through
+// /api/download with a Stripe session that is actually paid.
 // ---------------------------------------------------------------------------
 interface EbookConfig {
   title: string;
   priceEnv: string;
-  /** A held book's file (content/held-downloads/), for past buyers only. */
-  file?: URL;
-  /** A free book's static file. */
-  href?: string;
+  /** The held file (content/held-downloads/), for past buyers only. */
+  file: URL;
   filename: string;
 }
 
@@ -3125,49 +3122,49 @@ const EBOOKS: Record<string, EbookConfig> = {
   "covenant": {
     title: "Covenant",
     priceEnv: "STRIPE_PRICE_COVENANT",
-    href: "/ebook/covenant/covenant.pdf",
+    file: new URL("../content/held-downloads/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
   "babylon": {
     title: "Babylon",
     priceEnv: "STRIPE_PRICE_BABYLON",
-    href: "/ebook/babylon/babylon.pdf",
+    file: new URL("../content/held-downloads/babylon.pdf", import.meta.url),
     filename: "Babylon.pdf",
   },
   "how-to-read-the-bible": {
     title: "How to Read the Bible",
     priceEnv: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
-    href: "/ebook/how-to-read-the-bible/how-to-read-the-bible.pdf",
+    file: new URL("../content/held-downloads/how-to-read-the-bible.pdf", import.meta.url),
     filename: "How-to-Read-the-Bible.pdf",
   },
   "be-true-to-yourself": {
     title: "Be True to Yourself",
     priceEnv: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
-    href: "/ebook/be-true-to-yourself/be-true-to-yourself.pdf",
+    file: new URL("../content/held-downloads/be-true-to-yourself.pdf", import.meta.url),
     filename: "Be-True-to-Yourself.pdf",
   },
   "what-belongs-to-the-poor": {
     title: "What Belongs to the Poor",
     priceEnv: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
-    href: "/ebook/what-belongs-to-the-poor/what-belongs-to-the-poor.pdf",
+    file: new URL("../content/held-downloads/what-belongs-to-the-poor.pdf", import.meta.url),
     filename: "What-Belongs-to-the-Poor.pdf",
   },
   "rule-of-life": {
     title: "Rule of Life",
     priceEnv: "STRIPE_PRICE_RULE_OF_LIFE",
-    href: "/ebook/rule-of-life/rule-of-life.pdf",
+    file: new URL("../content/held-downloads/rule-of-life.pdf", import.meta.url),
     filename: "Rule-of-Life.pdf",
   },
   "why-not-what": {
     title: "Why Not What",
     priceEnv: "STRIPE_PRICE_WHY_NOT_WHAT",
-    href: "/ebook/why-not-what/why-not-what.pdf",
+    file: new URL("../content/held-downloads/why-not-what.pdf", import.meta.url),
     filename: "Why-Not-What.pdf",
   },
   "sermon-on-the-mount-as-politics": {
     title: "The Sermon on the Mount as Politics",
     priceEnv: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
-    href: "/ebook/sermon-on-the-mount-as-politics/sermon-on-the-mount-as-politics.pdf",
+    file: new URL("../content/held-downloads/sermon-on-the-mount-as-politics.pdf", import.meta.url),
     filename: "The-Sermon-on-the-Mount-as-Politics.pdf",
   },
   "prophetic-justice-101": {
@@ -3191,37 +3188,37 @@ const EBOOKS: Record<string, EbookConfig> = {
   "healwell": {
     title: "HealWell",
     priceEnv: "STRIPE_PRICE_HEALWELL",
-    href: "/ebook/healwell/healwell.pdf",
+    file: new URL("../content/held-downloads/healwell.pdf", import.meta.url),
     filename: "HealWell.pdf",
   },
   "born-again-from-atheism": {
     title: "Born Again From Atheism",
     priceEnv: "STRIPE_PRICE_BORN_AGAIN_FROM_ATHEISM",
-    href: "/ebook/born-again-from-atheism/born-again-from-atheism.pdf",
+    file: new URL("../content/held-downloads/born-again-from-atheism.pdf", import.meta.url),
     filename: "Born-Again-from-Atheism.pdf",
   },
   "the-god-who-is-not-nice": {
     title: "The God Who Is Not Nice",
     priceEnv: "STRIPE_PRICE_THE_GOD_WHO_IS_NOT_NICE",
-    href: "/ebook/the-god-who-is-not-nice/the-god-who-is-not-nice.pdf",
+    file: new URL("../content/held-downloads/the-god-who-is-not-nice.pdf", import.meta.url),
     filename: "The-God-Who-Is-Not-Nice.pdf",
   },
   "faith-after-deconstruction": {
     title: "Faith After Deconstruction",
     priceEnv: "STRIPE_PRICE_FAITH_AFTER_DECONSTRUCTION",
-    href: "/ebook/faith-after-deconstruction/faith-after-deconstruction.pdf",
+    file: new URL("../content/held-downloads/faith-after-deconstruction.pdf", import.meta.url),
     filename: "Faith-after-Deconstruction.pdf",
   },
   "ordinary-holiness": {
     title: "Ordinary Holiness",
     priceEnv: "STRIPE_PRICE_ORDINARY_HOLINESS",
-    href: "/ebook/ordinary-holiness/ordinary-holiness.pdf",
+    file: new URL("../content/held-downloads/ordinary-holiness.pdf", import.meta.url),
     filename: "Ordinary-Holiness.pdf",
   },
   "the-scandal-of-the-cross": {
     title: "The Scandal of the Cross",
     priceEnv: "STRIPE_PRICE_THE_SCANDAL_OF_THE_CROSS",
-    href: "/ebook/the-scandal-of-the-cross/the-scandal-of-the-cross.pdf",
+    file: new URL("../content/held-downloads/the-scandal-of-the-cross.pdf", import.meta.url),
     filename: "The-Scandal-of-the-Cross.pdf",
   },
   "heaven-is-not-your-reward": {
@@ -3233,13 +3230,13 @@ const EBOOKS: Record<string, EbookConfig> = {
   "prayer-in-the-dark": {
     title: "Prayer in the Dark",
     priceEnv: "STRIPE_PRICE_PRAYER_IN_THE_DARK",
-    href: "/ebook/prayer-in-the-dark/prayer-in-the-dark.pdf",
+    file: new URL("../content/held-downloads/prayer-in-the-dark.pdf", import.meta.url),
     filename: "Prayer-in-the-Dark.pdf",
   },
   "the-body-you-left": {
     title: "The Body You Left",
     priceEnv: "STRIPE_PRICE_THE_BODY_YOU_LEFT",
-    href: "/ebook/the-body-you-left/the-body-you-left.pdf",
+    file: new URL("../content/held-downloads/the-body-you-left.pdf", import.meta.url),
     filename: "The-Body-You-Left.pdf",
   },
 };
@@ -3275,9 +3272,8 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const slug = String(body?.slug || "");
     const book = EBOOKS[slug];
     if (!book) return json(res, 400, { error: "Unknown book." });
-    // Nothing is sold as an ebook now (2026-11-18): a free book points at its
-    // file, and a held book is not on sale while it is revised.
-    if (book.href) return json(res, 410, { error: "This ebook is free now.", href: book.href });
+    // Nothing is sold as an ebook now (2026-11-18): every one of these books
+    // is held off the site.
     if (book.file) return json(res, 503, { error: "This book is not on sale." });
     const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
@@ -3316,11 +3312,6 @@ async function ebookDownload(req: VercelRequest, res: VercelResponse) {
       return json(res, 200, { ok: true, paid, slug, title: book?.title || null });
     }
     if (!paid) return json(res, 402, { error: "payment not completed" });
-    // A book that is free now: send the buyer to its static file.
-    if (!book!.file) {
-      res.setHeader("Location", book!.href || "/downloads");
-      return res.status(302).end();
-    }
     const data = readFileSync(book!.file);
     res.setHeader("Content-Type", "application/pdf");
     res.setHeader("Content-Disposition", `attachment; filename="${book!.filename}"`);
