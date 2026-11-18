@@ -18,6 +18,7 @@ import GatedDownload from "@/components/GatedDownload";
 import PageEndNav from "@/components/PageEndNav";
 import { isPublicEssay } from "@/lib/shelf";
 import { TakeItWithYou } from "@/components/TakeItWithYou";
+import { refHref } from "@/lib/scripture-ref";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -70,6 +71,17 @@ const body = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.8, color:
  * it groups sentences into paragraphs of ~3 so the page reads like a document,
  * not a wall.
  */
+/** The way from a session's key Scripture into the Study Bible: its chapter, at its first verse. */
+function StudyBibleLine({ reference }: { reference: string }) {
+  const href = refHref(reference);
+  if (!href) return null;
+  return (
+    <Link href={href} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", marginBottom: "4px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>
+      Read it in the Study Bible
+    </Link>
+  );
+}
+
 function toParagraphs(text: string): string[] {
   const explicit = text.split(/\n\n+/).map((s) => s.trim()).filter(Boolean);
   if (explicit.length > 1) return explicit;
@@ -175,6 +187,7 @@ export default function StudyGuide() {
                   <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "14px 18px", borderRadius: "0 var(--radius-sm) var(--radius-sm) 0" }}>
                     <p style={{ ...body, fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, marginBottom: "4px" }}>{s.keyScripture.ref}</p>
                     <p style={{ ...body, color: "var(--ink-muted)", fontSize: "15px" }}>{s.keyScripture.why}</p>
+                    <StudyBibleLine reference={s.keyScripture.ref} />
                   </div>
                   {s.scriptureStudy && s.scriptureStudy.length > 0 && (
                     <>
@@ -219,7 +232,8 @@ export default function StudyGuide() {
                   <h3 style={h3}>{s.title}</h3>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.summary}</p>
                   <div style={lbl}>Key Scripture</div>
-                  <p style={{ ...body, marginBottom: "12px" }}>{s.keyScripture.ref}</p>
+                  <p style={{ ...body, marginBottom: "4px" }}>{s.keyScripture.ref}</p>
+                  <StudyBibleLine reference={s.keyScripture.ref} />
                   {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse.text} <span style={{ color: "var(--ink-muted)" }}>— {s.memoryVerse.ref}</span></p></>)}
                   <div style={lbl}>Reflect</div>
                   {s.reflection.map((r, i) => <p key={i} style={{ ...body, marginBottom: "6px" }}>{i + 1}. {r}</p>)}
