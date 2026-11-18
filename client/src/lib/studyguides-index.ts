@@ -23,7 +23,7 @@ export const STUDY_GUIDES: StudyGuideEntry[] = [
     title: "Consider the Birds",
     eyebrow: "Anxiety and the peace of Christ",
     blurb:
-      "What Scripture says about anxiety, and the peace Christ gives instead. Honest about the kind that needs a doctor; pastoral about the kind that needs the Father. Companion to the book.",
+      "What Scripture says about anxiety, and the peace Christ gives instead. Honest about the kind that needs a doctor; pastoral about the kind that needs the Father.",
     audience: "Small groups, adult Sunday school, and individuals",
     sessionsLabel: "5 sessions (run as 5, 8, or 4 weeks)",
   },
@@ -32,7 +32,7 @@ export const STUDY_GUIDES: StudyGuideEntry[] = [
     title: "Where Your Treasure Is",
     eyebrow: "Money and the heart",
     blurb:
-      "Greed, contentment, debt, and generosity — what the heart does with treasure, and the freedom Christ offers the worried and the wealthy alike. Companion to the book.",
+      "Greed, contentment, debt, and generosity — what the heart does with treasure, and the freedom Christ offers the worried and the wealthy alike.",
     audience: "Small groups, adult Sunday school, and individuals",
     sessionsLabel: "5 sessions (run as 5, 8, or 4 weeks)",
   },
