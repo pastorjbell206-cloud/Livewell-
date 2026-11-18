@@ -172,3 +172,55 @@ Stopped at a clean guide boundary after the-image-of-god, to leave room for the 
 ### Where this run stopped
 
 Stopped at a clean guide boundary after the-parables, to leave room for the gates and the push. Next in order: **the-psalms** (abuse and sexual-assault help topics in sensitive-pages.json), then the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
+
+## Seventh run (repair to the-parables; the-psalms, the-story-of-the-bible)
+
+### Repair: the-parables
+
+- Session 1 read "I came to faith from atheism, and I remember thinking something like that" (that a God who hides truth in riddles is unfair). The remembered thought was inferred, not something James said. It now reads "That's an objection a thoughtful skeptic raises, and I want to honor it." The guide now carries no biography at all.
+- Searched the whole guide for "I remember", "remember", "I used to", "when I was", "I once", "I've seen", "years ago", "I grew up", "I felt", "I recall" against the version before commit 33350915. No other recollection, feeling or habit of his was added; the other matches are group instructions, Scripture, or sentences the old guide carried.
+
+### the-psalms (done)
+
+- Words 23,878 to 19,323; teaching 4,402 to 3,973. "Bell" 23 to 0; "honest" 88 to 11 (the title keeps "Honest Prayer"); "Leader to confirm" 6 to 0; contractions 82 to 572.
+- Quotations of people: Calvin's "An Anatomy of all the Parts of the Soul" now quoted exactly from the Calvin Translation Society preface (checked by search); his mirror sentence kept as paraphrase. Athanasius, Lewis and Bonhoeffer kept as paraphrase with attribution. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout (the old guide ran verses into its prose unmarked).
+- Corrected: the Athanasius bibliography entry (titled "Reflections on the Psalms as the Prayer Book of Christ" with the letter as its author) is now Letter to Marcellinus by Athanasius; timeline no longer says the Songs of Ascent "develop" around 950 BC or that the Psalter reached its final shape in 515 BC; Septuagint dated third to second century BC; Augustine's Expositions dated about 392 to 422; "a thousand miles" to "hundreds of miles"; children dying in the fall of Jerusalem tied to Lamentations 2:11; Brueggemann's remark that a church without lament forces a choice between honesty and faith is no longer put in his mouth.
+- Cut: the placeholder bibliography entry "A Sacrifice of Praise" by "counseling and pastoral literature on lament" (12 to 11 entries); six "Leader to confirm" notes; the biography as credential (summary, primer, facilitator script, FAQ, three promo pieces, session 5 teaching).
+- Help: sensitive-pages.json untouched (topics abuse and sexual-assault). Every help sentence in the old guide (session 3 case study's path to a counselor and the validate-the-rage lines, the primer's disclosure paragraph, the facilitator's private-availability and open-door lines, the cadence care notes) checked by script as present word for word in both files. Added: session 3 case study and practice, FAQ 2 and the primer point to the help information printed with the guide; the primer names Find Help. Session 3 deeper now says forgiving never requires staying within reach of harm.
+- Biography: "I came to faith from atheism and had to learn to pray from scratch" once, session 1 teaching. The old guide's promo said he "came to faith from atheism and had to learn to pray from scratch"; nothing beyond that was added. Three sentences I first drafted that gave him a feeling or memory ("I've felt that pull as a pastor", "I've seen it in people", "I've done some of that burying myself") were removed before commit.
+
+### the-story-of-the-bible (done)
+
+- Words 25,833 to 20,502; teaching 5,393 to 4,612. "Bell" 29 to 0; "honest" 68 to 6; "Leader to confirm" and "Leader to weigh" 6 to 0; contractions 67 to 544.
+- Quotations of people: none carried in quotation marks except Scripture. Lewis's trilemma, Taylor's buffered self, Rieff's triumph of the therapeutic, Solzhenitsyn's line through every heart, Wittgenstein's "that it is", Stott and Wright kept as paraphrase with attribution and dates. "Opiate of the masses" now "the opium of the people," Marx's phrase, unquoted. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout; Isaiah 53:6 quoted around the ESV's own dash.
+- Corrected: "four thousand years" from Abraham to Christ (it is about two thousand) everywhere; Genesis 1 says "good" six times and then "very good", not "seven times good, and then very good"; Solzhenitsyn wrote after the camps, not "from inside" them; "Son, your sins are forgiven" (ESV) for "My son"; 1 Corinthians 15:19 quoted in place of the invented "pitiable fraud"; the claim that historians "across the spectrum" grant the empty tomb now says that point is more disputed; Wright's five acts given as he lists them (the fifth is the church) and Bartholomew and Goheen's drama noted as six acts; Simply Christian's four echoes named correctly; Exodus and Abraham dates marked as debated or traditional; Revelation dated "about AD 95 (a common dating)"; prophets dated Amos to Malachi.
+- Cut: the FAQ about the writer bringing himself in (12 to 11); "Leader to confirm" and "Leader to weigh" notes; the biography as credential (summary, primer, facilitator script, FAQ 3, three promo pieces).
+- Help: no help topic for this guide in sensitive-pages.json. Added: session 2's case study (a woman hurt by a harsh church) and session 5's (a grieving widower) point to a pastor or counselor and Find Help; the primer names Find Help and the two tender sessions; the deeper notes say being sinned against is not the same as sinning.
+- Biography: "I came to faith from atheism, so I've held this view myself" once, session 1 teaching, beside the materialist account. The old guide said "I once held it myself" in the same place; nothing beyond that was added.
+
+### What I ran (seventh run)
+
+- `node scripts/validate-studyguides.mjs` after the repair and after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Help lines in the-psalms checked by script, word for word, against the old file; sensitive-pages.json and crisis data untouched.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" as an adjective appears only inside quoted Scripture. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-psalms (Calvin's preface), 0 for the-story-of-the-bible.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,642 tests).
+
+### What only James can supply (seventh run)
+
+- The Parables: no longer names his atheism at all after the repair; if he wants his own memory of that objection there, it has to come from him.
+- The Psalms: "I came to faith from atheism and had to learn to pray from scratch" in session 1. The old promo kit said this of him; whether he'd say it this way is his to confirm.
+- The Story of the Bible: "I came to faith from atheism, so I've held this view myself" (the materialist account) in session 1, carried from the old "I once held it myself."
+
+### Not done or not verified (seventh run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Bonhoeffer's and Lewis's arguments paraphrased from memory of the books, not checked against copies.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-story-of-the-bible. Next in order: **the-undivided-life**, then witness, womanhood, work-and-vocation.
