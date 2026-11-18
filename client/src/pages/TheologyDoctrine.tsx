@@ -85,7 +85,7 @@ export default function TheologyDoctrine() {
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Doctrine
+            <Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · Doctrine
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             {doc.title}

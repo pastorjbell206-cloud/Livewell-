@@ -110,7 +110,7 @@ interface Door {
 
 /** The first five doors: the large one, then four beside it. */
 const DOORS: Door[] = [
-  { title: "Study the Bible", href: "/study/bible", plate: "book", note: "Notes on every chapter" },
+  { title: "Read the Study Bible", href: "/study/bible", plate: "book", note: "Notes on every chapter" },
   { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
   { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
   { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
