@@ -6,7 +6,7 @@
   "functions": {
     "api/index.ts": {
       "maxDuration": 60,
-      "includeFiles": "api/{_ebooks,_data}/**"
+      "includeFiles": "{api/_data,content/held-downloads}/**"
     }
   },
   "headers": [
@@ -806,7 +806,132 @@
     },
     {
       "source": "/books/raising-believers",
-      "destination": "/books",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/when-god-bless-america/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/believe/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/deconstruction-of-faith/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/raising-believers/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-monster-in-the-mirror/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-reliability-of-scripture/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/bible-and-homosexuality/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/bible-and-transgender-identity/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/critical-race-theory-biblical/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/babylon/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/born-again-from-atheism/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/faith-after-deconstruction/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-read-the-bible/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/why-not-what/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/the-god-who-is-not-nice/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/the-scandal-of-the-cross/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/prayer-in-the-dark/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/be-true-to-yourself/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/rule-of-life/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/ordinary-holiness/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/covenant/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/healwell/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/the-body-you-left/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/sermon-on-the-mount-as-politics/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/what-belongs-to-the-poor/thank-you",
+      "destination": "/downloads",
       "permanent": true
     },
     {
@@ -895,118 +1020,83 @@
       "permanent": true
     },
     {
-      "source": "/consider-the-birds",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/where-your-treasure-is",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/alone-in-a-crowded-church",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
       "source": "/covenant",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/babylon",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/how-to-read-the-bible",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/be-true-to-yourself",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/what-belongs-to-the-poor",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/rule-of-life",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/why-not-what",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/sermon-on-the-mount-as-politics",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/prophetic-justice-101",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/marriage-in-ministry",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/the-loneliness-of-the-pastor",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/healwell",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/born-again-from-atheism",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/the-god-who-is-not-nice",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/faith-after-deconstruction",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/ordinary-holiness",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/the-scandal-of-the-cross",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/heaven-is-not-your-reward",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/prayer-in-the-dark",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/the-body-you-left",
-      "destination": "/books",
+      "destination": "/downloads",
       "permanent": true
     },
     {
