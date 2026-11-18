@@ -469,3 +469,25 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Nickel Mines 2006; Amish Grace (Kraybill, Nolt, Weaver-Zercher) | Known | Kept |
 | "Leader to confirm" (5: Keller, Kendall, Brauns, Kraybill, Jenco, Stott) | Titles and authors known | Notes removed; Kendall and Brauns presented as the two sides of the session 3 debate |
 | Other Scripture: Ephesians 4:32, Psalm 51:4, Genesis 50:20, Jeremiah 31:34, Romans 12:18-19, 3:26, 13:4, 5:8, 8:1, Luke 17:3, 7:47, 3:8, Acts 7:60, Matthew 5:44, 18:21-35, Proverbs 22:3, Psalm 85:10, 13:1, 103:12, 2 Samuel 12:13-14, Job 42:7, Revelation 21:4, 1 John 1:9 | ESV, from memory | Quoted with references |
+
+## friendship
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography: atheism and "raised without a father" (summary, primer, script, FAQ); invite caption "by a man who knows the loneliness of needing no one" | Brief: no invented feeling; biography only where it does work | All cut; the leader's own "I'm inside this too" kept in the script |
+| Care lines (primer and FAQ on isolation shading into something darker; "If anyone is in crisis..."; the script's offer to talk privately; "my door is open") | Script against the old file | Word for word |
+| Lewis, The Four Loves (1960): friendship least natural, ancients ranked it highest, modern world ignores it | Known | Paraphrase |
+| Aristotle, Nicomachean Ethics books 8-9; Cicero, Laelius (44 BC) | Known | Kept; "Leader to confirm" removed |
+| Surgeon General 2023 "public health crisis" | Advisory titled Our Epidemic of Loneliness and Isolation; compares the risk to smoking | Named by title |
+| Augustine, Confessions 4: hometown a torment, "a great question to myself", half his soul, soul poured on the sand | Known (4.4.9, 4.6.11, 4.8.13) | Paraphrase |
+| Aelred, Spiritual Friendship: "God is friendship" | He raises it and grants Scripture doesn't say it | Stated with his hedge |
+| Bonhoeffer, Life Together: alone with one's sin, utterly alone | Known | Paraphrase |
+| "Moralistic therapeutic deism" credited to "some observers" | Christian Smith and Melinda Lundquist Denton, Soul Searching (2005) | Smith named |
+| Keller, The Meaning of Marriage, on the romantic ideal | Not verified | Entry and attribution cut |
+| Wesley Hill, Spiritual Friendship (2015); Murthy, Together (2020); Putnam, Bowling Alone (2000) | Known | Kept; "Leader to confirm" removed |
+| 2 Samuel 1:26 | Contested; some read it as romantic | Both readings named; the study's reading (covenant friendship) kept as the old guide had it |
+| David and Jonathan "circa 1010 BC" | Traditional | "Late eleventh century BC (traditional dating)" |
+| Saul's motive | 1 Samuel 20:31 | Quoted |
+| James 2:23 | ESV has an em-dash | Quoted in two parts |
+| Genesis 2:18, Ecclesiastes 4:9-12, Proverbs 18:24, 27:5-10, 27:17, 28:23, 1 Samuel 18:1-4, 19:1-2, 20:16-17, 20:42, 23:16, 2 Samuel 1:26, John 1:3, 11:35, 15:12-15, Exodus 33:11, Luke 7:34, Galatians 6:1-2, Ephesians 4:15, Hebrews 10:24-25, Romans 12:15, 1 Thessalonians 2:8, 3 John 14 | ESV, from memory | Quoted with references |
+| Every case study | Told as a real person in the group | Framed as "Suppose", ending in questions for the leader |
