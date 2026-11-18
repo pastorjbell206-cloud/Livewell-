@@ -323,9 +323,71 @@ export const ANSWERS: Answer[] = [
     slug: "what-if-christianity-is-wrong",
     question: "What if Christianity is wrong?",
     paragraphs: [
-      "If Christianity is wrong, everything falls. Paul says that if Christ has not been raised the faith is futile and the dead are simply dead. But the question is not the cost-free clarity it feels like at two in the morning. To say the universe is meaningless, that love is chemistry, that justice is a preference, is to hold claims as large as any creed. Everyone is believing something they cannot prove.",
-      "Scripture builds on a doubter. Thomas demands evidence, and the risen Christ invites his hand into the wound; the father in Mark 9 prays \"I believe; help my unbelief\", and Jesus heals the boy anyway. Terrified men who had run died rather than recant what they claimed to see, and people do not die for a story they know they invented. Even the morality you can't stop believing, the worth of the weak, is on Holland's account borrowed Christian capital.",
-      "No position escapes the wager. The skeptic bets his one life on the tomb staying shut; you bet yours on it opening. Both bets are total, and thoughtful people on both sides know it. The question might end a version of your faith, the sheltered one that was always going to break. Let it. You may find you can't get the stone to stay in front of the tomb.",
+      "If Christianity is wrong, everything falls. Paul said so himself: if Christ has not been raised, the faith is futile and the dead are simply dead. That's worth taking seriously, and I won't soften it. But the question cuts both ways. Not believing is also a way of living with the question, and it can be wrong too. Nobody gets to stand outside and wait for proof. So the fair question isn't whether you could be wrong. It's which risk you take with your eyes open, and whether the evidence gives you any reason to take this one. I think it does, and the faith tells you exactly where to check.",
+    ],
+    sections: [
+      {
+        heading: "The question at full strength",
+        body: [
+          "Start with the case for the other side, because it's strong. In 1877 the mathematician W. K. Clifford published an essay called \"The Ethics of Belief\" in the Contemporary Review. He told the story of a shipowner who quiets his own doubts about an old ship and sends it to sea full of emigrants. Clifford said the man is guilty whether the ship sinks or not, because he believed what he wanted, not what the evidence allowed. Then he stated a rule: \"It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence.\" If the evidence for Christianity is thin, Clifford says, believing it anyway is a moral failure, however much comfort it brings.",
+          "John Loftus, a former minister who became an atheist, added a second test in The Outsider Test for Faith (2013). Most people hold the religion of the place and family they were born into. A Christian looks at Hindu or Muslim belief with a skeptic's eye and finds it wanting. Loftus asks him to turn the same eye on his own faith, as an outsider would. That is a fair demand, and it hurts, because it's true that most of us didn't choose our first beliefs after weighing the options.",
+          "And there's the answer Christians often reach for first, Pascal's wager, which deserves the criticism it gets. In the Pensées, published in 1670 after his death, Blaise Pascal urged the undecided to bet on God: \"If you gain, you gain all; if you lose, you lose nothing.\" J. L. Mackie, in The Miracle of Theism (1982), pressed two objections in his own words. There are more than two options on the table, since every religion can offer the same bet. And working yourself into a belief because it pays is a kind of self-deception. I grant both. If the only reason to be a Christian were that it's a safe bet, Clifford would be right to call it a failure of honesty.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "\"What if Christianity is wrong?\" sounds like one question, but it's two. One is about evidence: is it true? The other is about decision: what should a person do while the evidence is still being weighed, which for most of us is the whole of life? The first is answered by history and argument, and other pages on this site take it up. This page is about the second, and about how it connects to the first. It isn't a proof. It's an argument about what honesty requires when a question can't be avoided and can't be settled beyond doubt.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          "In 1896 the American philosopher William James answered Clifford in a lecture called \"The Will to Believe\". He didn't say evidence doesn't matter. He said that some choices are what he called genuine options: live (both answers are real possibilities to you), forced (there's no third way of avoiding the choice), and momentous (the stakes are large and the chance won't come again). For choices of that kind, and only those, he wrote: \"Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds.\" Here is the argument as I would put it.",
+          {
+            kind: "An argument about deciding under uncertainty (after William James, 1896, in my words)",
+            premises: [
+              "Whether Christianity is true is, for many people, a live, forced and momentous question: refusing to decide means living as if it is false.",
+              "The evidence on the question is real but does not compel a conclusion either way. Thoughtful people who have weighed it come down on both sides.",
+              "Where a question is forced and momentous and the evidence doesn't settle it, a person may rightly decide with more than the evidence alone, so long as he keeps looking at the evidence.",
+            ],
+            conclusion: "Neither belief nor unbelief is the safe default. Both are commitments made under risk, and the honest question is not \"could I be wrong?\" but \"which risk am I taking, and on what grounds?\"",
+          },
+          "The weight sits on the third premise, and Clifford would deny it. But look at the first. The agnostic says he isn't betting, only withholding. James's point is that in a forced option, withholding has the same result as saying no. You can suspend judgment about a distant galaxy and lose nothing. You can't suspend judgment about whether to pray, whether to forgive as one who has been forgiven, or what you will tell your children death is, without in fact living one answer. So I'd put it this way: Clifford's rule works for shipowners and scientists, where you can wait for more evidence before you act. It doesn't work where waiting is itself the act.",
+        ],
+      },
+      {
+        heading: "Where Christianity could be shown wrong",
+        body: [
+          "Here is the part that separates this from Pascal. Christianity doesn't present itself as a safe bet. Pascal said that if you believe and turn out to be wrong, you lose nothing: \"You will be faithful, honest, humble, grateful, generous, a sincere friend, truthful.\" Paul says almost the opposite. \"If in Christ we have hope in this life only, we are of all people most to be pitied\" (1 Corinthians 15:19). He stakes everything on one event: \"And if Christ has not been raised, then our preaching is in vain and your faith is in vain\" (1 Corinthians 15:14). Few faiths name the fact that would sink them. This one does, and it's a public fact about a particular man in a particular city, not a private feeling.",
+          "So the decision James describes isn't made in the dark. The evidence that bears on it is historical, and it can be weighed by an outsider, which is exactly what Loftus asks for. Within a few years of the crucifixion, the men who had run away were saying they had seen him alive, and some of them were killed for it. Acts records that Herod \"killed James the brother of John with the sword\" (Acts 12:2). The Jewish historian Josephus, writing in the 90s, tells of the stoning of \"the brother of Jesus, who was called Christ, whose name was James\" around 62 (Antiquities 20.200). A letter from the church in Rome late in the first century, which we call 1 Clement, says that Peter and Paul died as martyrs. The evidence for how most of the other apostles died is later and less certain, and I won't lean on it.",
+          "This doesn't prove they were right. People die for false beliefs all the time. What it shows is that they weren't lying: men don't die for a story they know they made up. That narrows the options to the ones the resurrection page weighs, that they were mistaken in some way, or that they saw what they said. Scripture doesn't hide that the first witnesses doubted. Thomas refused to believe until he could touch the wounds, and the risen Christ said to him, \"Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe\" (John 20:27). A faith that wanted to be shielded from evidence wouldn't tell that story about its own apostle.",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "The best reply a skeptic can make is that James's argument proves too much. If your passions may decide any forced and momentous question the evidence leaves open, then a Muslim, a Mormon and a Hindu may each decide for his own faith on the same grounds, and James has given everyone permission to believe what he already wanted to. That's the many-gods objection to Pascal in a new coat, and it has real force. I don't think it's fully answered.",
+          "Two things can be said. First, James never claimed his argument picks the right faith. It only shows that believing isn't a failure of honesty when a question is genuinely open and you can't avoid it. Which faith, if any, is true goes back to evidence, and that's where the outsider test belongs. I accept the test. The Christian claim is unusually open to it, because it rests on what happened in Jerusalem in the spring of about 30 or 33, not on a private revelation no one else can check. Second, the outsider test applies to unbelief too. A secular person raised in a secular family, who finds religion strange because everyone around him does, also holds the beliefs of his time and place. The historian Tom Holland argues in Dominion (2019) that many of the convictions a secular Westerner takes as plain common sense, that the weak and the poor have worth, came into the West through Christianity. If he's right, then the outsider test asks unbelief a hard question as well: whether the values it lives by can stand once the faith they grew from is gone.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this shows that Christianity is true. It shows that believing it isn't the reckless bet Clifford describes, and that not believing isn't the neutral ground it feels like at two in the morning. To say the universe has no meaning, that love is chemistry, that justice is a preference, is to hold claims as large as any creed. Everyone is living by something he cannot prove. The skeptic bets his one life on the tomb staying shut, and the Christian bets his on it opening. Both bets are total, and thoughtful people on both sides know it.",
+          "If Christianity is wrong, Paul is right that we are to be pitied, and I won't pretend there's a consolation prize. But the question doesn't have to frighten anyone who is willing to look. The father in Mark 9 brought his son to Jesus with half a faith and said so: \"I believe; help my unbelief!\" (Mark 9:24). Jesus healed the boy anyway. Honest doubt has a place at that table.",
+          "The question might end a version of your faith, the sheltered one that was always going to break. Let it. Then go and look at the tomb, the way Thomas did. You may find you can't get the stone to stay in front of it.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Blaise Pascal", title: "Pensées", year: "1670" },
+      { author: "W. K. Clifford", title: "The Ethics of Belief", in: "Contemporary Review", year: "1877", note: "The classic case that believing without sufficient evidence is wrong." },
+      { author: "William James", title: "The Will to Believe", year: "1896" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982", note: "Its chapter on belief without reason answers Pascal and James." },
+      { author: "N. T. Wright", title: "The Resurrection of the Son of God", year: "2003" },
+      { author: "John W. Loftus", title: "The Outsider Test for Faith: How to Know Which Religion Is True", year: "2013", note: "The strongest case against: the test this answer accepts." },
+      { author: "Tom Holland", title: "Dominion: How the Christian Revolution Remade the World", year: "2019" },
     ],
     essaySlug: "what-if-we-are-wrong",
     essayTitle: "What If Christianity Is Wrong?",
