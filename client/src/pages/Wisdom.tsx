@@ -13,7 +13,6 @@ import SectionHead from "@/components/art/SectionHead";
 import DoorCard from "@/components/art/DoorCard";
 import IconTile from "@/components/art/IconTile";
 import { BookOpenText, Briefcase, CalendarDays, CloudRain, Compass, Flame, HandHeart, Handshake, HeartHandshake, Hourglass, Lightbulb, MessageCircle, Scale, Shield, Sprout, Sun, Users, Wallet, type LucideIcon } from "lucide-react";
-import "@/pages/home/home.css";
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import ScriptureNote from "@/components/ScriptureNote";

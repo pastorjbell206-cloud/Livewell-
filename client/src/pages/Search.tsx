@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 import { LoadFailed } from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import InnerHead from "@/components/art/InnerHead";
-import "@/pages/home/home.css";
 import { Link } from "wouter";
 import { Search as SearchIcon } from "lucide-react";
 

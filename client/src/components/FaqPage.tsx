@@ -10,7 +10,6 @@ import { Link } from "wouter";
 import { ArrowRight, BookOpenText, MessageCircleQuestion, Plus } from "lucide-react";
 import InnerHead from "@/components/art/InnerHead";
 import SectionHead from "@/components/art/SectionHead";
-import "@/pages/home/home.css";
 
 export interface FaqItem {
   question: string;

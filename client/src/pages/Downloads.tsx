@@ -17,7 +17,6 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import InnerHead from "@/components/art/InnerHead";
 import SectionHead from "@/components/art/SectionHead";
-import "@/pages/home/home.css";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 import { SendButton } from "@/components/TakeItWithYou";
@@ -155,7 +154,18 @@ export default function Downloads() {
   const matchCount = visible.reduce((n, s) => n + s.rows.length, 0);
 
   const fileCount = shelves.reduce((n, s) => n + s.rows.reduce((m, r) => m + (r.files?.length ?? 0), 0), 0);
-  const jump = [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])];
+  // Before the list arrives the shelves are named from SHELVES (counts follow),
+  // so the cards hold their place and nothing below them moves.
+  const jump: { id: string; label: string; n: number | null }[] = catalogue
+    ? [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])]
+    : failed
+      ? []
+      : [
+          ...Object.keys(SHELVES)
+            .sort((a, b) => kindRank(a) - kindRank(b))
+            .map((k) => ({ id: idFor(k), label: SHELVES[k].label, n: null })),
+          { id: "books", label: "The books", n: null },
+        ];
 
   return (
     <Layout>
@@ -196,7 +206,7 @@ export default function Downloads() {
       {jump.length > 1 && !words.length && (
         <nav aria-labelledby="dl-shelves-title" className="home-sec home-sec--warm">
           <div className="home-wrap">
-            <SectionHead icon={Library} label={`${jump.length} shelves`} title="Pick a shelf." id="dl-shelves-title" />
+            <SectionHead icon={Library} label={catalogue ? `${jump.length} shelves` : "The shelves"} title="Pick a shelf." id="dl-shelves-title" />
             <ul className="lw-index">
               {jump.map((j) => {
                 const Icon = KIND_ICON[j.id] ?? FileText;
@@ -208,7 +218,7 @@ export default function Downloads() {
                       </span>
                       <span className="lw-index__text">
                         <span className="lw-index__name">{j.label}</span>
-                        <span className="lw-index__meta">{j.n} {j.n === 1 ? "item" : "items"}</span>
+                        <span className="lw-index__meta">{j.n === null ? "\u00a0" : `${j.n} ${j.n === 1 ? "item" : "items"}`}</span>
                       </span>
                     </a>
                   </li>

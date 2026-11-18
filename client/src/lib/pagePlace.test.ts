@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { placeFor } from "./pagePlace";
+import { placeFor, TOOL_GROUPS_BY_HREF } from "./pagePlace";
 import { DOORS } from "./siteCatalog";
-import { TOOLS } from "./toolsList";
+import { TOOLS, TOOL_LIST } from "./toolsList";
 
 describe("placeFor: the label over an inner page's title", () => {
   it("names the door alone for a room's own page", () => {
@@ -21,6 +21,10 @@ describe("placeFor: the label over an inner page's title", () => {
     expect(placeFor("/tools/prayer-generator")).toEqual({ door: { name: "Tools", href: "/tools" }, room: { name: "Pray and practise", href: "/tools#pray-and-practise" } });
     expect(placeFor("/tools/test-the-case")?.room?.name).toBe("Tools for hard questions");
     expect(placeFor("/tools/parenting-guide")).toEqual({ door: { name: "Family", href: "/family" } });
+  });
+
+  it("keeps the same group for every tool as the tools list", () => {
+    expect(TOOL_GROUPS_BY_HREF).toEqual(Object.fromEntries(TOOL_LIST.map((t) => [t.href, t.group])));
   });
 
   it("uses only names the catalogue uses", () => {

@@ -10,7 +10,6 @@
 import { Link } from "wouter";
 import PageHead, { type PageHeadProps } from "./PageHead";
 import { placeFor, type PagePlace } from "@/lib/pagePlace";
-import "./inner.css";
 
 export function PlaceLabel({ place }: { place: PagePlace }) {
   return (

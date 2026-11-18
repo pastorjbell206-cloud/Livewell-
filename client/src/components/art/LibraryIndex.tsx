@@ -17,8 +17,6 @@ import { Search } from "lucide-react";
 import SectionHead from "./SectionHead";
 import LoadFailed from "@/components/LoadFailed";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
-import "@/pages/home/home.css";
-import "./inner.css";
 
 export interface LibItem {
   href: string;
