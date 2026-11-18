@@ -13,7 +13,17 @@
  * So on "/", where the static hero is the real page, wait for an LCP entry
  * inside it. It is usually already buffered by the time the bundle runs;
  * otherwise it comes a frame or two later; never wait longer than
- * `maxWaitMs`. Every other path mounts at once: vercel.json serves the home
+ * `maxWaitMs`. A tap, a key or a scroll mounts at once, so nobody waits on a
+ * field that is not live yet (Chrome stops reporting LCP after input anyway).
+ *
+ * Why the wait is 2.5 seconds and not 300 ms: on a slow machine Chrome paints
+ * the hero early but reports the paint late, up to a second after it. On
+ * GitHub's runner the 300 ms cap ran out first, React replaced the hero,
+ * and Lighthouse counted React's copy, so LCP took in the whole bundle and
+ * every lazy chunk (3.4 s, performance 89; docs/work/elite/homelcp.md). The
+ * page a visitor sees is the same either way; only the live copy comes later.
+ *
+ * Every other path mounts at once: vercel.json serves the home
  * HTML (hero included) for any path without its own prerendered file, and
  * there the hero must not be held on screen. A browser without LCP, and a tab
  * that is not visible (which reports no LCP), mount at once too.
@@ -33,7 +43,7 @@ export function mountAfterStaticHero(mount: () => void, options: StaticHeroOptio
   const path = options.path ?? doc.location?.pathname ?? "";
   const Observer =
     options.Observer ?? (typeof PerformanceObserver === "undefined" ? undefined : PerformanceObserver);
-  const maxWaitMs = options.maxWaitMs ?? 300;
+  const maxWaitMs = options.maxWaitMs ?? 2500;
 
   const hero = doc.querySelector(STATIC_HERO_SELECTOR);
   const lcpSupported = Observer?.supportedEntryTypes?.includes("largest-contentful-paint") ?? false;
@@ -45,13 +55,16 @@ export function mountAfterStaticHero(mount: () => void, options: StaticHeroOptio
   let done = false;
   let observer: PerformanceObserver | null = null;
   let timer: ReturnType<typeof setTimeout> | null = null;
+  const INPUT = ["pointerdown", "keydown", "wheel", "touchstart", "scroll"] as const;
   const go = () => {
     if (done) return;
     done = true;
     observer?.disconnect();
     if (timer !== null) clearTimeout(timer);
+    for (const type of INPUT) doc.removeEventListener(type, go, true);
     mount();
   };
+  for (const type of INPUT) doc.addEventListener(type, go, { capture: true, passive: true });
 
   try {
     observer = new Observer((list) => {
