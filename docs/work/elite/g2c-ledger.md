@@ -116,3 +116,17 @@
 | Case studies with named people (Marcus, Dana, Tope, Priya, Helen) | Invented people presented as if real | Rewritten as "Suppose..." without names |
 | Biography: came to faith from atheism (summary, primer, FAQ x3, script, promo x2, teaching) | Confirmed fact used repeatedly as a credential | Kept once, in session 1's teaching, where it lets him state the atheist view as his own former view |
 | Memory verse Matthew 16:15 | ESV | Inner quotation marks restored |
+
+## Repair (third run): quotations in skeptic and sermon-on-the-mount checked by search
+
+The second run added three quotations to skeptic that the old guide did not carry, and marked several of them and the Bonhoeffer lines "Known". Each was searched on 2026-11-18. Rule from here on: no quotation is added that the old guide did not carry.
+
+| Quotation | Search | Result |
+|---|---|---|
+| Lewis, Mere Christianity (Book 2, chapter 3, "The Shocking Alternative"): "let us not come with any patronising nonsense about His being a great human teacher. He has not left that open to us. He did not intend to." | Searched: wording reproduced by Catholic Exchange (citing the 1996 Touchstone edition, p. 56) and The Spectator archive | Wording confirmed; kept |
+| Clifford, "The Ethics of Belief" (Contemporary Review, 1877): "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence." | Searched: an exact-phrase search for "To sum up: it is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence" returns the essay's transcriptions and Wikipedia's "Clifford's principle"; the Stanford Encyclopedia paraphrases it with "on" | Original wording ("upon") confirmed; kept |
+| Tacitus, Annals 15.44: Christ "suffered the extreme penalty" under Pontius Pilate | Searched: Church and Brodribb translation (1877) reads "suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus" | Wording confirmed; kept |
+| Bonhoeffer: "When Christ calls a man, he bids him come and die." | Searched: quoted in this wording from The Cost of Discipleship (Fuller translation) by several sources; the chapter could not be confirmed from the results | Kept; no chapter is named in the guide |
+| Bonhoeffer: cheap grace is "grace without discipleship, grace without the cross, grace without Jesus Christ, living and incarnate" | Searched: wording attested (Wikipedia, "Cheap grace", and others), opening chapter "Costly Grace" | Kept |
+| Bonhoeffer: cheap grace is "the preaching of forgiveness without requiring repentance" | Searched: not confirmed by the results | Turned into marked paraphrase in session 5's going deeper ("in his account, ... forgiveness preached with no call to repent") |
+| Bonhoeffer: "only he who believes is obedient, and only he who is obedient believes" | Searched in the second run (attested, Fuller wording) | Kept |
