@@ -182,7 +182,7 @@ Stopped at a clean guide boundary after the-parables, to leave room for the gate
 
 ### the-psalms (done)
 
-- Words 23,878 to 19,323; teaching 4,402 to 3,973. "Bell" 13 to 0; "honest" 88 to 11 (the title keeps "Honest Prayer"); "Leader to confirm" 6 to 0; contractions 82 to 572.
+- Words 23,878 to 19,323; teaching 4,402 to 3,973. "Bell" 23 to 0; "honest" 88 to 11 (the title keeps "Honest Prayer"); "Leader to confirm" 6 to 0; contractions 82 to 572.
 - Quotations of people: Calvin's "An Anatomy of all the Parts of the Soul" now quoted exactly from the Calvin Translation Society preface (checked by search); his mirror sentence kept as paraphrase. Athanasius, Lewis and Bonhoeffer kept as paraphrase with attribution. No quotation added.
 - Scripture: ESV as before, now quoted with references throughout (the old guide ran verses into its prose unmarked).
 - Corrected: the Athanasius bibliography entry (titled "Reflections on the Psalms as the Prayer Book of Christ" with the letter as its author) is now Letter to Marcellinus by Athanasius; timeline no longer says the Songs of Ascent "develop" around 950 BC or that the Psalter reached its final shape in 515 BC; Septuagint dated third to second century BC; Augustine's Expositions dated about 392 to 422; "a thousand miles" to "hundreds of miles"; children dying in the fall of Jerusalem tied to Lamentations 2:11; Brueggemann's remark that a church without lament forces a choice between honesty and faith is no longer put in his mouth.
