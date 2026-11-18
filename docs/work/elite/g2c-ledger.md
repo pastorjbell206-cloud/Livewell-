@@ -338,3 +338,33 @@ The second run added three quotations to skeptic that the old guide did not carr
 |---|---|---|
 | "I came to faith from atheism, and I remember thinking something like that" (session 1) | Old guide (before 33350915) carried no such memory; it was inferred | Rewritten as a skeptic's objection; no memory claimed; atheism no longer named in this guide |
 | Other recollections ("I remember", "I used to", "when I was", "I've seen", "years ago" and similar) | Searched the new guide against the old | None added; other matches are instructions, Scripture, or old wording |
+
+## The Psalms
+
+| Claim | How checked | Result |
+|---|---|---|
+| Calvin: the Psalter "An Anatomy of all the Parts of the Soul" | Web search: CCEL, Calvin Translation Society preface to the Commentary on the Psalms | Quoted exactly; mirror sentence paraphrased |
+| Calvin's commentary, 1557 | Known (Latin edition 1557) | Kept |
+| Athanasius, Letter to Marcellinus: in the Psalms you find your own words | Known in substance | Paraphrase; dated "fourth century" (no exact year) |
+| Luther's 1528 preface: the Psalter "a little Bible" | Known | Kept as paraphrase |
+| Augustine, Expositions of the Psalms, "circa AD 400" | Known: composed about 392 to 422 | Dated 392 to 422 |
+| Bonhoeffer, Psalms: The Prayer Book of the Bible, 1940; Christ prays the Psalms; vengeance psalms hand judgment to God | Known | Paraphrase; "underground seminary" now "trained pastors for the Confessing Church" |
+| Lewis, Reflections on the Psalms, 1958: shocked by the curses; praise completes enjoyment | Known | Paraphrase; "devilish" not repeated |
+| Brueggemann, The Message of the Psalms, 1984: orientation, disorientation, new orientation; Psalm 13 disorientation; Psalm 23 new orientation | Known | Kept |
+| Brueggemann: a church without lament forces a choice between honesty and faith | Not confirmed as his wording | Kept as the guide's own sentence, unattributed |
+| Laments about a third of the Psalter, the largest type | Common scholarly count | "By most reckonings around a third" |
+| A survey finds lament nearly absent from church songs | No survey named or checked | Made general ("carry very little lament"); Rah's book named as pressing the gap |
+| Psalm 88's last Hebrew word is "darkness" | Known (mahshak) | Kept |
+| Roughly half the Psalter bears David's name | 73 psalms in the Hebrew titles | Stated as seventy-three |
+| Songs of Ascent "develop" about 950 BC | Dating uncertain | Reworded: temple pilgrimages from Solomon on; dating of each song uncertain |
+| Psalter given final five-book shape about 515 BC | Editing ran over a longer period | "After 538 BC ... over time" |
+| Septuagint Psalms about 200 BC | Third to second century BC | Loosened |
+| Babylon marched survivors "a thousand miles"; "slaughtered children in the streets" | Distance varies by route; Lamentations 2:11 | "Hundreds of miles"; children fainting in the streets, Lamentations 2:11 |
+| Monastic weekly cycle of all 150 psalms | Known: Rule of Benedict | "In many monasteries" |
+| Bibliography "Reflections on the Psalms as the Prayer Book of Christ" by "the Letter to Marcellinus, Athanasius" | Garbled entry | Now Letter to Marcellinus, Athanasius of Alexandria |
+| Bibliography "A Sacrifice of Praise" by "counseling and pastoral literature on lament" | Placeholder | Cut |
+| Brueggemann, Praying the Psalms; Taylor, Open and Unafraid; Rah, Prophetic Lament (2015); Wright, The Case for the Psalms (2013) | Known | Kept; "Leader to confirm" removed |
+| Gratitude research | General finding | Kept general, no study named |
+| Biography (atheism, fatherless, five sons) as credentials in 9 places | Credentials | Atheism once, session 1, with "learn to pray from scratch" (old promo's own words) |
+| Help lines | Script compared each help sentence in old and new | All present word for word; sensitive-pages.json untouched |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
