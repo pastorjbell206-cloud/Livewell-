@@ -395,3 +395,30 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" (4: Myers, Blomberg, Sider, DeYoung and Gilbert) | Titles and authors known | Notes removed; Myers marked "suggestive rather than settled" |
 | caritas narrowing to almsgiving | Broadly known word history | Kept, "in common English" |
 | Help lines | Old guide carried none (checked by script) | None added |
+
+## end-times
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" (11); "Bell came to faith from atheism" in summary, script, FAQ and two objections | Brief: biography once, only where it does work | Atheism kept once, session 5 teaching, where he answers the skeptic's "wishful thinking" charge; all other uses cut |
+| Revelation 1:1 "signifies its message" | ESV reads "made it known"; "signified" is the older (KJV) rendering of the Greek | Both given; the claim no longer rests on the ESV wording |
+| Revelation 20:6 memory verse | ESV ends "Blessed and holy ... !" and "for a thousand years" | Restored to full ESV |
+| Jesus "ate broiled fish on the shore" | Luke 24:42-43 is in a room in Jerusalem; the shore meal (John 21) does not say he ate | "Ate broiled fish in front of his friends (Luke 24:39-43)" |
+| Romans 8:21 "bondage to decay" | ESV "bondage to corruption" | Corrected; Revelation 1:1-3, 5:6, 13:18, 20:1-6, 21:1-5, 22:1-5; Daniel 2:44, 7:17, 9:24; Mark 13:32; Acts 1:7; 2 Peter 3:8-9; Matthew 6:10, 12:28-29, 13:31-33, 24:29-41; Luke 17:20-21, 24:39-43; John 5:28-29, 16:33; 1 Thessalonians 4:13-18; 2 Thessalonians 2:1-3; 1 Corinthians 15:20-26, 42-44, 52; Hebrews 6:5; Colossians 3:3-4; Philippians 1:23, 3:20-21; Isaiah 11:9 to ESV wording, from memory |
+| Revelation's readers asked to "drop a pinch of incense on the imperial altar" | Incense test is attested later (Pliny, about 112); Revelation's setting is earlier | Restated as rising pressure to honor Caesar in cities proud of their imperial temples |
+| Miller "gathered tens of thousands", "sold farms", "a Baptist preacher" | Commonly reported; numbers estimated | "Many thousands"; selling property "by many accounts"; Baptist preacher kept |
+| Daniel dating "circa 167 BC" | Critical dating; traditional dating earlier | Kept with both datings noted |
+| Revelation "circa AD 95" | Majority date; some argue for the 60s | Kept, earlier date noted |
+| Chiliasm "circa 250" | The named chiliasts are second-century (Papias, Justin Martyr, Irenaeus) | "Second century", names given |
+| Montanus "circa 156" | Dates range from about 156 to 172 | circa 170 |
+| City of God "circa 420" | Written 413-426; Book 20 on the millennium | 413-426, Book 20 named |
+| Ladd "1952 publishes work" | Crucial Questions about the Kingdom of God (1952); The Presence of the Future (1974) | Both named, 1952-1974 |
+| Ladd, The Last Things: Resurrection, Judgment, Glory | Subtitle is An Eschatology for Laymen | Corrected |
+| Boettner "The Millennium: A Postmillennial Study, and broader writing on eschatology" | The book is The Millennium | Title corrected |
+| Paul's word for "meet" as a civic welcome to an arriving ruler | Widely argued by commentators | Stated as how the word was often used; no scholar quoted |
+| Wright "the question is not how we get to heaven but how heaven comes here" | His recurring theme in Surprised by Hope | Kept as paraphrase, "as Wright likes to put it", no quotation marks |
+| Nicene Creed "will come again in glory to judge the living and the dead" | Known (ELLC text) | Quoted; Apostles' Creed "the resurrection of the body" quoted |
+| "Leader to confirm" (4: Ladd twice, Riddlebarger, Boettner) | Titles and authors known | Notes removed |
+| "I will tell you where I lean, if a member asks me privately" | His sentence in the old guide | Kept; no position stated (he doesn't name one) |
+| FAQ "the medical, I mean the historical" question | Garbled | Rewritten as "Is the study grounded in scholarship" |
+| Help lines | Old guide carried none (checked by script) | None added |
