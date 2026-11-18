@@ -67,3 +67,25 @@ I stopped at a clean guide boundary after two guides because I ran short of work
 - **Repair**: the quotations the second run added to skeptic (Lewis, Clifford, Tacitus) and the Bonhoeffer lines kept in sermon-on-the-mount were each searched. All were confirmed except Bonhoeffer's "the preaching of forgiveness without requiring repentance", which is now marked paraphrase. Details in the ledger. From here on no quotation is added that the old guide did not carry.
 - **spiritual-warfare** (done): words 23,674 to 17,468; teaching 4,413 to 3,902. "Bell" 22 to 0; "honest" 23 to 2; "Leader to confirm" 2 to 0; contractions 99 to 447. Quotations kept: Lewis's two errors (verified, now quoted exactly); Luther's "one little word" corrected to Hedge's wording. Corrected: Arnold is not a third-wave writer; the war image is Cullmann's, not Vos's; City of God dated 413 to 426; timeline reordered and loose dates fixed. Cut: two placeholder bibliography entries. FAQ 11 to 9 (the two about the writer's own method folded into the primer). Biography: once, session 1 teaching.
 - **the-beatitudes** (done): words 22,841 to 15,124; teaching 4,239 to 3,701. "Bell" 27 to 0 (the stats script's two hits are "Bellah"); "honest" 61 to 9; "Leader to confirm" 3 to 0; contractions 45 to 432. No new quotations; Augustine, Luther, Tertullian kept as attributed paraphrase. Corrected: Bonhoeffer's death, Tertullian's line and its later form, Taylor's idea, the war-horse etymology softened. Cut: four placeholder bibliography entries; FAQ 12 to 11 (the one about the writer's method). "Blessed" now appears only in Scripture, titles or quotation marks. Biography: atheism once, session 1.
+
+### What I ran (third run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase and for em-dashes: clean. Every exclamation point is inside quoted Scripture.
+- `pnpm check`: passed. All 35 content-gate commands from ci.yml: passed. `pnpm test`: 143 files passed, 7 skipped (1,635 tests).
+- Web searches: 6 for the repair (Lewis, Clifford twice, Tacitus, Bonhoeffer twice), 2 for spiritual-warfare (Screwtape preface, Mighty Fortress), 0 for the-beatitudes. Two page fetches failed because their hosts are outside this session's network.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-beatitudes, to leave room for the gates. Next in order: **the-captive-church**, then the-church (which carries the abuse and sexual-assault help topics in sensitive-pages.json; keep its help lines word for word), the-creeds, and on to work-and-vocation.
+
+### Not done or not verified (third run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV.
+- PDFs not rebuilt (`pnpm pdfs`).
+
+### What only James can supply (third run)
+
+- Spiritual warfare: "I came to faith from atheism" is used once, in session 1, where he says he once held the closed-world view. The old guide had him confessing that he has blamed the enemy for his own appetite and fought for a victory already won; those first-person lines are kept in plain form. Any story of his own is his to add.
+- The Beatitudes: atheism used once, in session 1 ("if the Beatitudes were a résumé, mine was blank"). "Raised without a father" was removed. Nothing else of his was added.
