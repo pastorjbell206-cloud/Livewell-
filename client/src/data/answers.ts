@@ -85,9 +85,82 @@ export const ANSWERS: Answer[] = [
     askedAs: "did jesus rise rose risen raised from the dead come back to life easter empty tomb",
     question: "Did the resurrection actually happen?",
     paragraphs: [
-      "The resurrection is the best historical explanation of facts that nearly all serious scholars, skeptical ones included, already grant. It isn't a proof, but it is the best explanation. Jesus was executed by crucifixion. His followers were convinced they had seen him alive and died for the claim. The proclamation began in Jerusalem, where a body could have ended it. The creed in 1 Corinthians 15:3–8 dates to within years of the cross. Legends need time, and here there is almost none.",
-      "The rivals are not stupid. Hallucinations are private events. They do not happen to five hundred at once or to a persecutor like Paul, and they leave the body in the tomb. Liars do not die for what they know they fabricated. Each alternative rescues one corner and leaves the rest exposed. Hume's deeper objection rules the miracle out before weighing anything. He assumes the answer and calls it rigor.",
-      "You can weigh it all and still conclude it did not happen. That is a respectable place to stand. Reaching that conclusion without doing the work isn't, and that's where I lived for years. The tomb sat in a city that wanted the movement dead and had only to produce a body. They never did. The matter was supposed to be closed on a Friday. It would not stay closed.",
+      "I think it did, and I think the case is stronger than most people have been told. It isn't a proof. History can't prove a miracle, and I won't pretend it can. But there is a short list of facts that nearly every historian of the period accepts, skeptics included: Jesus was crucified, his followers were soon convinced they had seen him alive, a persecutor and a doubting brother came to believe the same, and the preaching began in the city where he was buried. The question is what best explains them. Each natural explanation covers part of the evidence and strains at the rest. Whether you can accept the one that covers all of it depends on whether you have already decided that God can't act, and that is the question worth facing honestly.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "David Hume gave the objection its classic form in his essay \"Of Miracles\" in 1748. \"A wise man, therefore, proportions his belief to the evidence,\" he wrote. Our experience that the dead stay dead is as uniform as experience gets, so when someone reports that a dead man rose, it is always more likely that the witness was deceived or deceiving than that the laws of nature gave way. Hume didn't need to examine the evidence for Easter to reject it. He thought the question was settled before the evidence was called.",
+          "Modern historians put it more carefully. Bart Ehrman, a New Testament scholar at the University of North Carolina and an agnostic, grants that some of Jesus' followers came to believe soon after the crucifixion that God had raised him. What he doesn't accept is that the belief was true, and he argues that historians, working as historians, can't conclude that a miracle happened at all. He suggests that some of the disciples had visions of Jesus, the kind of experience grieving people have. That isn't a cheap suggestion. In 1971 a doctor in Wales named W. Dewi Rees published a study in the British Medical Journal of 293 widowed men and women, and almost half of them reported experiences of their dead spouse, some for years afterward. The disciples were bereaved, frightened and ashamed. Why wouldn't some of them see him?",
+          "Then there are the documents. The Gospels were written decades after the events, most critical scholars date Mark around 70, and the four Easter accounts differ in their details. Ehrman has also pressed the strongest objection to the empty tomb. Rome normally left the crucified on their crosses or dumped the bodies, because denying a decent burial was part of the punishment, and he finds it hard to see why Pilate would have made an exception for Jesus. If Jesus was never laid in a known tomb, the stories of an empty one are later legend.",
+          "I grant what is true in all of this. Legends do grow. Grief does produce visions. A claim that a dead man rose should face a higher bar than a claim that he died. If the case for the resurrection can't survive those points, it doesn't deserve to be believed.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "This is a historical argument, and historical arguments don't work like proofs. They work by inference to the best explanation. You start with the facts the evidence establishes, not with any belief that the Bible is inspired, and you ask which account explains the most of them with the least strain. Two cautions belong at the start. History deals in probabilities, so the argument can't force anyone to believe. And the answer you reach depends partly on what you think is possible before you begin. I'll come back to that, because it is where the real disagreement lives.",
+        ],
+      },
+      {
+        heading: "What nearly every historian grants",
+        body: [
+          "First, Jesus was crucified under Pontius Pilate, around the year 30 or 33. Early in the second century the Roman historian Tacitus, who despised Christians, recorded that \"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus.\"",
+          "Second, his followers became convinced they had seen him alive, and the evidence for that is very early. Writing to the church at Corinth in the mid-50s, Paul reminded them of what he had \"delivered\" to them, a summary he had himself \"received\": \"that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures, and that he appeared to Cephas, then to the twelve. Then he appeared to more than five hundred brothers at one time, most of whom are still alive, though some have fallen asleep. Then he appeared to James, then to all the apostles\" (1 Corinthians 15:3-7). Delivered and received are the words for handing on a tradition you didn't compose. Paul tells the Galatians that about three years after his conversion he spent fifteen days in Jerusalem with Cephas and saw James, the Lord's brother (Galatians 1:18-19), two of the names on that list. Most scholars, including many with no stake in Christianity, think the summary took shape within a few years of the events. Gerd Lüdemann, a German New Testament scholar who did not believe Jesus rose, dated it to about two years after the crucifixion. E. P. Sanders, no apologist, wrote: \"That Jesus' followers (and later Paul) had resurrection experiences is, in my judgement, a fact. What the reality was that gave rise to the experiences I do not know.\"",
+          "Third, two people who had every reason not to believe came to believe. Paul says he \"persecuted the church of God violently and tried to destroy it\" (Galatians 1:13). James was one of the brothers of whom John writes, \"For not even his brothers believed in him\" (John 7:5). James went on to lead the church in Jerusalem until he was stoned there around 62.",
+          "Fourth, the preaching began in Jerusalem, within weeks, in the city where Jesus had been executed and buried, where the claim was easiest to refute.",
+          "The empty tomb is more disputed, and I'll say so plainly. Against Ehrman's objection, Craig Evans and others answer that Judea in peacetime wasn't the rest of the empire. The law of Moses required that a hanged man's body \"shall not remain all night on the tree, but you shall bury him the same day\" (Deuteronomy 21:23), and Josephus, the Jewish historian of the first century, wrote that his people took down even the crucified and buried them before sunset. In 1968 builders in Jerusalem broke into a family tomb holding the bones of a young man named Yehohanan, an iron nail still driven through his heel. Ehrman replies that one case proves very little, and the argument goes on. But some details push hard against invention. Mark says the man who buried Jesus was \"a respected member of the council\" (Mark 15:43), the same council that handed him over. All four Gospels put women first at the tomb, when Josephus could summarize the law as \"let not the testimony of women be admitted.\" And as far as our sources show, the earliest opponents didn't say the body was still in the grave. Matthew answers a story that the disciples stole it (Matthew 28:13-15). They argued about how the tomb became empty.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "A historical argument: inference to the best explanation",
+            premises: [
+              "Jesus died by crucifixion under Pontius Pilate.",
+              "Soon afterward individuals and groups, including the persecutor Paul and the skeptical brother James, became convinced that they had seen him alive.",
+              "They proclaimed his resurrection within weeks in Jerusalem, where his burial place was known, and their earliest opponents disputed how the tomb was empty, not whether.",
+              "They chose the word resurrection, which to Jews of the day meant the bodily raising of God's people at the end of history, not the vision of a dead man or his spirit's rescue.",
+            ],
+            conclusion: "Of the explanations on offer, that God raised Jesus from the dead explains all four facts best, unless it has been ruled out before the evidence is weighed.",
+          },
+          "The third premise is the most contested, because it depends on the burial. The conclusion also depends on something the evidence can't supply, and I'll name it below. First, the rivals.",
+        ],
+      },
+      {
+        heading: "The other explanations",
+        body: [
+          "The theory that the disciples hid the body and lied has few defenders among scholars now, for a plain reason: they paid for the claim. James the brother of John was killed with the sword (Acts 12:2), James the brother of Jesus was stoned, and a letter from the church in Rome late in the first century says that Peter and Paul suffered martyrdom. People die for false beliefs all the time, but these men were in a position to know whether they had taken the body themselves. Sanders, for one, set fraud aside as no serious explanation. The idea that Jesus survived the cross was answered by the skeptic David Friedrich Strauss in the nineteenth century: a half-dead man in need of bandages and nursing could never have persuaded anyone that he had conquered death.",
+          "The vision theory is the serious rival, and it deserves its due. Dale Allison, a New Testament scholar who is himself a Christian, has collected reports of the dead appearing to the living, some of them to more than one person at once, and he warns believers against claiming such visions are always private. But the theory strains at three points. Bereavement visions come to mourners, and Paul wasn't mourning Jesus; he was hunting his followers. James didn't believe in his brother while he lived. And the witnesses chose the wrong word for a vision. The ancient world had a full vocabulary for seeing the dead. When Peter, freed from prison, knocked at the door, the church said, \"It is his angel!\" (Acts 12:15). When the risen Jesus stood among them, the disciples \"were startled and frightened and thought they saw a spirit\" (Luke 24:37). The historian N. T. Wright argued in The Resurrection of the Son of God that resurrection meant something else entirely: the bodily raising of all God's people at the end. Nobody expected one man to be raised ahead of everyone while the world went on.",
+          "Another movement shows the normal logic. In 132 Simon bar Kosiba led a revolt against Rome, and Rabbi Akiva hailed him as the messiah. When he died in 135, the sages took his death as proof that he was not. A messiah killed by the pagans had failed. Jesus' followers shared that logic, and they had a natural successor in James. Nobody called James the messiah. They said God had raised Jesus. Wright's conclusion is that only the empty tomb and the appearances together explain it. A missing body alone looks like a robbery. Sightings alone, with the body still in its grave, would have been taken for visions.",
+        ],
+      },
+      {
+        heading: "The strongest reply",
+        body: [
+          "The strongest reply is Hume's, and it was never about the evidence. He imagined every historian of England agreeing that Queen Elizabeth died on the first of January 1600, was seen by her physicians and the whole court before and after her death, and after a month in the grave appeared again, took back the throne and governed for three years. Even then, he wrote, he \"should not have the least inclination to believe so miraculous an event.\" That is candid of him. It shows that in a case like this no testimony could move him, because the conclusion was fixed by a judgment, made in advance, about what kind of world this is.",
+          "Part of that is right. The dead do stay dead, and the disciples knew it as well as Hume did, which is why they didn't believe the women. But the claim was never that a corpse revived by some natural process. Peter told the crowd in Jerusalem, \"God raised him up, loosing the pangs of death, because it was not possible for him to be held by it\" (Acts 2:24). As a natural event the resurrection is about as unlikely as anything can be. Whether it is unlikely as an act of God depends on whether there is a God, and that is a question history can't settle. It has its own page, \"Does God actually exist?\" If there is no God, some natural explanation must be true, however strained. If there is, the explanation that fits the evidence is no longer ruled out in advance.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "History can't prove the resurrection. Its tools are built to tell us what usually happens, and this is by definition what doesn't. What it can do is more modest. It won't carry anyone to faith, but it can move a person from dismissing the claim to weighing it. Matthew admits that when the eleven saw the risen Jesus on a mountain in Galilee, \"they worshiped him, but some doubted\" (Matthew 28:17). The Gospels didn't hide that doubt, and I don't need to either.",
+          "You can weigh it all and still conclude it did not happen. That is a respectable place to stand. Reaching that conclusion without doing the work isn't, and that's where I lived for years. Paul didn't soften what follows if the body stayed in the grave: \"your faith is futile and you are still in your sins\" (1 Corinthians 15:17). The tomb sat in a city that wanted the movement dead and had only to produce a body. They never did. The matter was supposed to be closed on a Friday. It would not stay closed.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "N. T. Wright", title: "The Resurrection of the Son of God", year: "2003" },
+      { author: "Michael R. Licona", title: "The Resurrection of Jesus: A New Historiographical Approach", year: "2010" },
+      { author: "Dale C. Allison Jr.", title: "The Resurrection of Jesus: Apologetics, Polemics, History", year: "2021", note: "A Christian scholar who grants the skeptic more than most." },
+      { author: "E. P. Sanders", title: "The Historical Figure of Jesus", year: "1993" },
+      { author: "Michael F. Bird, Craig A. Evans and others", title: "How God Became Jesus", year: "2014" },
+      { author: "David Hume", title: "Of Miracles", in: "Philosophical Essays concerning Human Understanding, later titled An Enquiry Concerning Human Understanding", year: "1748" },
+      { author: "Gerd Lüdemann", title: "The Resurrection of Jesus: History, Experience, Theology", year: "1994", note: "A scholar who did not believe Jesus rose, arguing for visions." },
+      { author: "Bart D. Ehrman", title: "How Jesus Became God", year: "2014", note: "The best popular case against." },
     ],
     essaySlug: "did-the-resurrection-happen",
     essayTitle: "Did the Resurrection Actually Happen?",
@@ -250,9 +323,71 @@ export const ANSWERS: Answer[] = [
     slug: "what-if-christianity-is-wrong",
     question: "What if Christianity is wrong?",
     paragraphs: [
-      "If Christianity is wrong, everything falls. Paul says that if Christ has not been raised the faith is futile and the dead are simply dead. But the question is not the cost-free clarity it feels like at two in the morning. To say the universe is meaningless, that love is chemistry, that justice is a preference, is to hold claims as large as any creed. Everyone is believing something they cannot prove.",
-      "Scripture builds on a doubter. Thomas demands evidence, and the risen Christ invites his hand into the wound; the father in Mark 9 prays \"I believe; help my unbelief\", and Jesus heals the boy anyway. Terrified men who had run died rather than recant what they claimed to see, and people do not die for a story they know they invented. Even the morality you can't stop believing, the worth of the weak, is on Holland's account borrowed Christian capital.",
-      "No position escapes the wager. The skeptic bets his one life on the tomb staying shut; you bet yours on it opening. Both bets are total, and thoughtful people on both sides know it. The question might end a version of your faith, the sheltered one that was always going to break. Let it. You may find you can't get the stone to stay in front of the tomb.",
+      "If Christianity is wrong, everything falls. Paul said so himself: if Christ has not been raised, the faith is futile and the dead are simply dead. That's worth taking seriously, and I won't soften it. But the question cuts both ways. Not believing is also a way of living with the question, and it can be wrong too. Nobody gets to stand outside and wait for proof. So the fair question isn't whether you could be wrong. It's which risk you take with your eyes open, and whether the evidence gives you any reason to take this one. I think it does, and the faith tells you exactly where to check.",
+    ],
+    sections: [
+      {
+        heading: "The question at full strength",
+        body: [
+          "Start with the case for the other side, because it's strong. In 1877 the mathematician W. K. Clifford published an essay called \"The Ethics of Belief\" in the Contemporary Review. He told the story of a shipowner who quiets his own doubts about an old ship and sends it to sea full of emigrants. Clifford said the man is guilty whether the ship sinks or not, because he believed what he wanted, not what the evidence allowed. Then he stated a rule: \"It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence.\" If the evidence for Christianity is thin, Clifford says, believing it anyway is a moral failure, however much comfort it brings.",
+          "John Loftus, a former minister who became an atheist, added a second test in The Outsider Test for Faith (2013). Most people hold the religion of the place and family they were born into. A Christian looks at Hindu or Muslim belief with a skeptic's eye and finds it wanting. Loftus asks him to turn the same eye on his own faith, as an outsider would. That is a fair demand, and it hurts, because it's true that most of us didn't choose our first beliefs after weighing the options.",
+          "And there's the answer Christians often reach for first, Pascal's wager, which deserves the criticism it gets. In the Pensées, published in 1670 after his death, Blaise Pascal urged the undecided to bet on God: \"If you gain, you gain all; if you lose, you lose nothing.\" J. L. Mackie, in The Miracle of Theism (1982), pressed two objections in his own words. There are more than two options on the table, since every religion can offer the same bet. And working yourself into a belief because it pays is a kind of self-deception. I grant both. If the only reason to be a Christian were that it's a safe bet, Clifford would be right to call it a failure of honesty.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "\"What if Christianity is wrong?\" sounds like one question, but it's two. One is about evidence: is it true? The other is about decision: what should a person do while the evidence is still being weighed, which for most of us is the whole of life? The first is answered by history and argument, and other pages on this site take it up. This page is about the second, and about how it connects to the first. It isn't a proof. It's an argument about what honesty requires when a question can't be avoided and can't be settled beyond doubt.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          "In 1896 the American philosopher William James answered Clifford in a lecture called \"The Will to Believe\". He didn't say evidence doesn't matter. He said that some choices are what he called genuine options: live (both answers are real possibilities to you), forced (there's no third way of avoiding the choice), and momentous (the stakes are large and the chance won't come again). For choices of that kind, and only those, he wrote: \"Our passional nature not only lawfully may, but must, decide an option between propositions, whenever it is a genuine option that cannot by its nature be decided on intellectual grounds.\" Here is the argument as I would put it.",
+          {
+            kind: "An argument about deciding under uncertainty (after William James, 1896, in my words)",
+            premises: [
+              "Whether Christianity is true is, for many people, a live, forced and momentous question: refusing to decide means living as if it is false.",
+              "The evidence on the question is real but does not compel a conclusion either way. Thoughtful people who have weighed it come down on both sides.",
+              "Where a question is forced and momentous and the evidence doesn't settle it, a person may rightly decide with more than the evidence alone, so long as he keeps looking at the evidence.",
+            ],
+            conclusion: "Neither belief nor unbelief is the safe default. Both are commitments made under risk, and the honest question is not \"could I be wrong?\" but \"which risk am I taking, and on what grounds?\"",
+          },
+          "The weight sits on the third premise, and Clifford would deny it. But look at the first. The agnostic says he isn't betting, only withholding. James's point is that in a forced option, withholding has the same result as saying no. You can suspend judgment about a distant galaxy and lose nothing. You can't suspend judgment about whether to pray, whether to forgive as one who has been forgiven, or what you will tell your children death is, without in fact living one answer. So I'd put it this way: Clifford's rule works for shipowners and scientists, where you can wait for more evidence before you act. It doesn't work where waiting is itself the act.",
+        ],
+      },
+      {
+        heading: "Where Christianity could be shown wrong",
+        body: [
+          "Here is the part that separates this from Pascal. Christianity doesn't present itself as a safe bet. Pascal said that if you believe and turn out to be wrong, you lose nothing: \"You will be faithful, honest, humble, grateful, generous, a sincere friend, truthful.\" Paul says almost the opposite. \"If in Christ we have hope in this life only, we are of all people most to be pitied\" (1 Corinthians 15:19). He stakes everything on one event: \"And if Christ has not been raised, then our preaching is in vain and your faith is in vain\" (1 Corinthians 15:14). Few faiths name the fact that would sink them. This one does, and it's a public fact about a particular man in a particular city, not a private feeling.",
+          "So the decision James describes isn't made in the dark. The evidence that bears on it is historical, and it can be weighed by an outsider, which is exactly what Loftus asks for. Within a few years of the crucifixion, the men who had run away were saying they had seen him alive, and some of them were killed for it. Acts records that Herod \"killed James the brother of John with the sword\" (Acts 12:2). The Jewish historian Josephus, writing in the 90s, tells of the stoning of \"the brother of Jesus, who was called Christ, whose name was James\" around 62 (Antiquities 20.200). A letter from the church in Rome late in the first century, which we call 1 Clement, says that Peter and Paul died as martyrs. The evidence for how most of the other apostles died is later and less certain, and I won't lean on it.",
+          "This doesn't prove they were right. People die for false beliefs all the time. What it shows is that they weren't lying: men don't die for a story they know they made up. That narrows the options to the ones the resurrection page weighs, that they were mistaken in some way, or that they saw what they said. Scripture doesn't hide that the first witnesses doubted. Thomas refused to believe until he could touch the wounds, and the risen Christ said to him, \"Put your finger here, and see my hands; and put out your hand, and place it in my side. Do not disbelieve, but believe\" (John 20:27). A faith that wanted to be shielded from evidence wouldn't tell that story about its own apostle.",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "The best reply a skeptic can make is that James's argument proves too much. If your passions may decide any forced and momentous question the evidence leaves open, then a Muslim, a Mormon and a Hindu may each decide for his own faith on the same grounds, and James has given everyone permission to believe what he already wanted to. That's the many-gods objection to Pascal in a new coat, and it has real force. I don't think it's fully answered.",
+          "Two things can be said. First, James never claimed his argument picks the right faith. It only shows that believing isn't a failure of honesty when a question is genuinely open and you can't avoid it. Which faith, if any, is true goes back to evidence, and that's where the outsider test belongs. I accept the test. The Christian claim is unusually open to it, because it rests on what happened in Jerusalem in the spring of about 30 or 33, not on a private revelation no one else can check. Second, the outsider test applies to unbelief too. A secular person raised in a secular family, who finds religion strange because everyone around him does, also holds the beliefs of his time and place. The historian Tom Holland argues in Dominion (2019) that many of the convictions a secular Westerner takes as plain common sense, that the weak and the poor have worth, came into the West through Christianity. If he's right, then the outsider test asks unbelief a hard question as well: whether the values it lives by can stand once the faith they grew from is gone.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this shows that Christianity is true. It shows that believing it isn't the reckless bet Clifford describes, and that not believing isn't the neutral ground it feels like at two in the morning. To say the universe has no meaning, that love is chemistry, that justice is a preference, is to hold claims as large as any creed. Everyone is living by something he cannot prove. The skeptic bets his one life on the tomb staying shut, and the Christian bets his on it opening. Both bets are total, and thoughtful people on both sides know it.",
+          "If Christianity is wrong, Paul is right that we are to be pitied, and I won't pretend there's a consolation prize. But the question doesn't have to frighten anyone who is willing to look. The father in Mark 9 brought his son to Jesus with half a faith and said so: \"I believe; help my unbelief!\" (Mark 9:24). Jesus healed the boy anyway. Honest doubt has a place at that table.",
+          "The question might end a version of your faith, the sheltered one that was always going to break. Let it. Then go and look at the tomb, the way Thomas did. You may find you can't get the stone to stay in front of it.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Blaise Pascal", title: "Pensées", year: "1670" },
+      { author: "W. K. Clifford", title: "The Ethics of Belief", in: "Contemporary Review", year: "1877", note: "The classic case that believing without sufficient evidence is wrong." },
+      { author: "William James", title: "The Will to Believe", year: "1896" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982", note: "Its chapter on belief without reason answers Pascal and James." },
+      { author: "N. T. Wright", title: "The Resurrection of the Son of God", year: "2003" },
+      { author: "John W. Loftus", title: "The Outsider Test for Faith: How to Know Which Religion Is True", year: "2013", note: "The strongest case against: the test this answer accepts." },
+      { author: "Tom Holland", title: "Dominion: How the Christian Revolution Remade the World", year: "2019" },
     ],
     essaySlug: "what-if-we-are-wrong",
     essayTitle: "What If Christianity Is Wrong?",
@@ -276,9 +411,91 @@ export const ANSWERS: Answer[] = [
     slug: "do-i-have-to-choose-between-faith-and-science",
     question: "Do I have to choose between faith and science?",
     paragraphs: [
-      "No. The war between faith and science is not a finding of science. It is a story with a traceable birth date, assembled in the late nineteenth century by John William Draper (1874) and Andrew Dickson White (1896), and their books were polemics, not history. Science grew up in the cradle of belief. The medieval church funded astronomy. Newton wrote more on theology than on physics. Kepler described his astronomy as thinking God's thoughts after him.",
-      "The friction is real. The fight over Darwin was real, and parts of the church handled it badly. But the working scientists the war story says cannot exist are not rare. Francis Collins led the Human Genome Project and describes, in The Language of God (2006), coming to faith by following his reasoning past the edge of what science is built to answer. John Polkinghorne helped establish the existence of quarks, then was ordained an Anglican priest. Water boils because the molecules are agitated; the kettle is on because someone wanted tea. The answers don't compete.",
-      "Science does not prove God, and the Christians who say it does have not understood either. What remains is the older question the laboratory cannot settle: whether the world is authored or accidental. Science hands you a magnificent description of the house, but it can't tell you whether anyone lives there.",
+      "No. The long war between faith and science is a story told in the nineteenth century, and historians of science, believers and unbelievers alike, have taken it apart. But the war isn't the strong objection. The strong one is quieter: science keeps explaining what God was once used to explain, so maybe God is only the name for what we haven't figured out yet. I think that mistakes what Christians have meant by God, and I think the plain fact that science works at all points the other way. Christians still disagree about the age of the earth and about evolution, and this page leaves those questions open. What it argues is narrower. The laboratory and the creed aren't rivals.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with the weak form of the objection, so it can be set aside. In 1874 John William Draper published a History of the Conflict between Religion and Science, and in 1896 Andrew Dickson White followed with A History of the Warfare of Science with Theology in Christendom. Between them they gave the modern world its picture of two armies, one marching toward the light and the other holding it back. It's the version most people meet, and it's mostly wrong.",
+          "The strong form doesn't need a war. It goes like this. For most of history people explained thunder, plague, the paths of the planets and the fitness of living things by pointing to God or the gods. One by one those explanations were replaced by natural ones, and the replacements worked. When Darwin published On the Origin of Species in 1859, he gave a natural account of the most impressive example of all, the way living things fit their lives. Out of that success came the working rule of every laboratory: look for natural causes, and never write \"God did it\" in the results. The rule has worked so well that a fair-minded person can ask whether God is anything more than a placeholder for what we don't know.",
+          "The biologist Jerry Coyne gives the sharpest version in Faith versus Fact (2015). He's careful to say he isn't claiming a strict logical contradiction. His charge is about method. Science has ways of testing a claim and finding out that it's wrong. Religion, he argues, holds its claims by faith, scripture and authority, and has no way to find out that it's wrong. On that account the two aren't partners. One of them is a way of knowing and the other isn't.",
+          "I concede a lot of this. The church has sometimes fought science and lost, and deserved to. In 1633 the Roman Inquisition found Galileo \"vehemently suspect of heresy\" for holding that the earth moves around the sun, and he spent the rest of his life under house arrest. Christians have often put God in the gaps of what we know, and every time science filled a gap, God looked smaller. A God who is only an explanation for what we don't yet understand should be expected to shrink. He has.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "There are two questions here. The first is historical, whether faith and science have actually been at war, and it can be checked against the record. The second is philosophical, whether the success of science makes belief in God less reasonable. That one I'll lay out in steps, the skeptic's argument and then my own, and I'll say which step carries the weight in each. None of this proves that God exists; that case has its own page, \"Does God actually exist?\" The aim here is smaller: to show that nobody has to pick a side.",
+        ],
+      },
+      {
+        heading: "The war is a story, not a finding",
+        body: [
+          "Historians of science have spent the last fifty years taking Draper and White apart, and not because they were defending the church. In 2009 the historian Ronald Numbers, described by one reviewer as a religious agnostic, edited a book for Harvard University Press called Galileo Goes to Jail and Other Myths about Science and Religion. In it he calls the idea of constant conflict \"the greatest myth in the history of science and religion.\"",
+          "Galileo himself is a good example. He was a believer, and in 1615 he defended his work by quoting Augustine, who had written early in the fifth century, in The Literal Meaning of Genesis, that for an unbeliever to hear a Christian talking nonsense about the natural world was \"a disgraceful and dangerous thing.\" The church that condemned Galileo had forgotten one of its own best teachers.",
+          "The record keeps breaking the war story. When the Cavendish Laboratory opened at Cambridge in the 1870s under James Clerk Maxwell, the physicist who unified electricity and magnetism, its oak doors carried a verse from the Psalms in Latin, by his wish: \"Great are the works of the LORD, studied by all who delight in them\" (Psalm 111:2). In 1927 Georges Lemaître, a Belgian physicist and a Catholic priest, argued that the universe is expanding, two years before Edwin Hubble's famous paper, and in 1931 he proposed that it began from what he called a primeval atom. In our own time John Polkinghorne left a Cambridge chair in mathematical physics to be ordained an Anglican priest in 1982, and Francis Collins, who led the Human Genome Project, wrote The Language of God (2006) about how he came to faith.",
+          "None of that proves Christianity is true. Plenty of great scientists have been unbelievers. What it shows is that the war isn't a finding of science. It's a story about science, and a poor one.",
+        ],
+      },
+      {
+        heading: "The argument from the shrinking God",
+        body: [
+          "The strong objection survives all of that history. Here it is, as fairly as I can state it.",
+          {
+            kind: "The skeptic's argument, set out as a deductive argument",
+            premises: [
+              "If God exists, he is one of the causes inside nature, the kind of cause science looks for, needed wherever natural causes run out.",
+              "Science keeps finding natural causes where people once saw God, and has every reason to expect to keep finding them.",
+            ],
+            conclusion: "The room for God keeps shrinking, and a reasonable person should expect it to reach nothing.",
+          },
+          "The second premise is true, and Christians should say so gladly. The weight sits on the first, and I think it's false. That isn't a move invented to escape the argument. It's what the church has taught for a very long time. Thomas Aquinas taught in the thirteenth century that God works through the causes he made, not in competition with them. An author is the cause of every line in a novel without being one of its characters. Scripture puts it more simply. Christ \"is before all things, and in him all things hold together\" (Colossians 1:17). On that view God isn't found where the explanations stop. He's the reason there are explanations at all.",
+          "Dietrich Bonhoeffer saw the danger from a prison cell. In a letter of May 1944 he warned against using God as a stopgap for the unfinished parts of our knowledge, and wrote, \"We are to find God in what we know, not in what we don't know.\" About a decade later the physicist Charles Coulson made popular the name we still use for the mistake, the God of the gaps. Water boils because the molecules are agitated. The kettle is on because someone wanted tea. Both answers are true, and they don't compete.",
+          "This cuts both ways, and I want to be honest about it. If God isn't found in the gaps, Christians can't argue for him from the gaps either. A believer who says \"science can't explain this, so God did it\" is making the skeptic's mistake in reverse. The fine-tuning argument on the God page isn't that kind of argument. It doesn't say physics can't explain something. It asks why physics is the way it is.",
+          "Coyne's charge about method needs its own answer. He's right that a faith which can never be wrong isn't knowledge. But the center of Christianity isn't a claim held out of the reach of evidence. It's a claim about something that happened in a particular city in a particular decade, and the earliest Christian writer staked everything on it. If Christ has not been raised, Paul wrote, \"your faith is futile and you are still in your sins\" (1 Corinthians 15:17). That's a faith that can be wrong. The rule of the laboratory, look for natural causes, is a good rule for the laboratory. It can't tell you whether anything ever happened that natural causes don't explain. That's a question for history, and the resurrection has its own page.",
+        ],
+      },
+      {
+        heading: "Why science works at all",
+        body: [
+          "Now turn the question around and ask why science works in the first place. In 1936 Albert Einstein, who didn't believe in a personal God, wrote in an essay called \"Physics and Reality\": \"One may say 'the eternal mystery of the world is its comprehensibility.'\" His next sentence reads, \"The fact that it is comprehensible is a miracle.\" In 1960 the physicist Eugene Wigner wrote about how strangely well mathematics, worked out on paper, describes the physical world, and he ended by calling it \"a wonderful gift which we neither understand nor deserve.\" Neither man was arguing for God. Both saw something that needs explaining.",
+          {
+            kind: "An inference to the best explanation",
+            premises: [
+              "Science depends on two things it can't supply for itself: a world ordered by laws simple enough to be found, often in mathematics, and minds able to find them.",
+              "If the world was made by a rational God who made human beings able to know it, both are what we would expect.",
+              "If the world and our minds came from unguided processes alone, the order is simply a brute fact, and our ability to grasp it far beyond anything survival required is at least surprising.",
+            ],
+            conclusion: "The success of science fits belief in God at least as well as it fits unbelief, and I think better. It doesn't settle the question. It turns the objection around.",
+          },
+          "The third premise carries the weight, and the best reply to it is a serious one. Evolution, the skeptic says, would favor minds that track the world truly, because minds that get the world wrong get eaten, and a general intelligence built for hunting and planning can be turned to physics. I think that explains part of it. It explains less of the rest: why the deepest laws are written in mathematics, some of it worked out for its own beauty long before anyone knew it described anything, and why minds shaped to find food can follow the universe down to quantum fields. The philosopher Alvin Plantinga pressed this point in Where the Conflict Really Lies (2011). He argued that there is \"superficial conflict but deep concord\" between science and belief in God, and \"superficial concord but deep conflict\" between science and naturalism, the view that nature is all there is. His argument has drawn strong replies, and I wouldn't rest everything on its strongest form. But the direction of it seems right to me. Psalm 19 said it long before anyone built a laboratory: \"The heavens declare the glory of God, and the sky above proclaims his handiwork\" (Psalm 19:1).",
+        ],
+      },
+      {
+        heading: "Where Christians disagree",
+        body: [
+          "Some of the sharpest arguments over science aren't between believers and unbelievers. They're among Christians, and they're about the age of the earth and about evolution. Some Christians read the days of Genesis 1 as ordinary days and hold that the earth is thousands of years old. Some accept the long ages of the earth and the universe and hold that God acted directly at points in the history of life. Some hold that God made living things, human beings included, through the process of evolution, and that this is how he did what Genesis says he did. Each is held by believers who take Scripture seriously, and each has hard questions to answer. I won't settle that here, and nothing on this page depends on how it's settled. The page \"How should a Christian read Genesis 1?\" lays out the readings with more care. What I'd ask of all three, and of myself, is Augustine's discipline: know what the evidence says before you speak to it.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply to everything above goes like this. Fine, God isn't in the gaps. But then he makes no difference you could ever detect, and a God who makes no detectable difference is as good as no God. My answer is that Christians don't claim God makes no difference. We claim he makes a difference to the whole, that there is an ordered world at all and minds that can know it, and that he made one particular difference in history, on a Sunday morning outside Jerusalem, that can be weighed like any other event. If the arguments for the first fail and the evidence for the second falls apart, Christianity fails with them. Paul said as much himself.",
+          "Here is what this page doesn't prove. It doesn't prove that God exists. It doesn't settle the age of the earth or the history of life. It doesn't excuse the times the church got the world wrong. It only clears away a false choice. You can trust the method that mapped the human genome and still ask the question that method was never built to answer.",
+          "\"It is the glory of God to conceal things, but the glory of kings is to search things out\" (Proverbs 25:2). Science is that searching, and Christians have every reason to love it. But science hands you a magnificent description of the house. It can't tell you whether anyone lives there. That question doesn't go away when the lab closes for the night.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Jerry A. Coyne", title: "Faith versus Fact: Why Science and Religion Are Incompatible", year: "2015", note: "The best book against: a biologist's case that the two cannot be reconciled." },
+      { author: "Ronald L. Numbers, ed.", title: "Galileo Goes to Jail and Other Myths about Science and Religion", year: "2009", note: "Historians on the war story, one myth at a time." },
+      { author: "Alvin Plantinga", title: "Where the Conflict Really Lies: Science, Religion, and Naturalism", year: "2011" },
+      { author: "Francis S. Collins", title: "The Language of God", year: "2006" },
+      { author: "Eugene P. Wigner", title: "The Unreasonable Effectiveness of Mathematics in the Natural Sciences", in: "Communications on Pure and Applied Mathematics", year: "1960" },
+      { author: "Albert Einstein", title: "Physics and Reality", in: "Journal of the Franklin Institute", year: "1936" },
+      { author: "Augustine", title: "The Literal Meaning of Genesis", year: "early 5th century; trans. John Hammond Taylor, 1982" },
+      { author: "Dietrich Bonhoeffer", title: "Letters and Papers from Prison", year: "letters of 1943 to 1945" },
     ],
     essaySlug: "faith-and-science",
     essayTitle: "Do You Have to Choose Between Faith and Science?",
@@ -652,9 +869,82 @@ export const ANSWERS: Answer[] = [
     askedAs: "eternal punishment annihilation what is hell",
     question: "Is hell forever, or does it end?",
     paragraphs: [
-      "The reality of judgment and of being finally separated from God is what the church has always taught, and it is close to the center of the faith. The exact nature and duration of hell is a different matter, and Bible-loving Christians have genuinely disagreed about it. I'm not going to fake a consensus that doesn't exist.",
-      "Three views have been held by serious believers. The traditional and majority view is eternal conscious separation and suffering, resting on texts like \"these will go away into eternal punishment, but the righteous into eternal life\" (Matthew 25:46). Conditional immortality, or annihilationism, holds that the finally impenitent are not kept alive forever in torment but at last perish, resting on Jesus warning of the one who can \"destroy both soul and body in hell\" (Matthew 10:28) and on the wages of sin being death (Romans 6:23). John Stott expressed sympathy for this reading, and Edward Fudge argued it at length. A minority hope of final restoration has appeared in church history, in Gregory of Nyssa among others, though the church has generally not affirmed universal salvation and the New Testament's warnings are severe and real.",
-      "Both cheap versions are wrong. The preacher who relishes the fire has not understood the God he claims to serve, and the sentimentalist who empties the warnings has not read the pages he is quoting. What the tradition guards is narrower and more sober than either: that a person can finally, really refuse God, and that the refusal is not nothing. Christians disagree about what hell is like and how long it lasts. They don't disagree that a person can choose it.",
+      "The reality of judgment and of being finally separated from God is what the church has always taught, and it is close to the center of the faith. The exact nature and duration of hell is a different matter, and Bible-loving Christians have genuinely disagreed about it. I'm not going to fake a consensus that doesn't exist. But the skeptic's real question isn't how long. It's how a good God could do this at all, and that question deserves an argument, not a shrug. I think a world with no final judgment would be worse, not kinder, especially for the people who suffered most in it. And I think each of the three views Christians hold is an honest attempt to answer the moral objection, by denying a different step in it.",
+    ],
+    sections: [
+      {
+        heading: "The objection at full strength",
+        body: [
+          "Bertrand Russell made the charge plainly in a lecture in London in 1927, published as Why I Am Not a Christian. Jesus, he pointed out, believed in hell, and Russell counted that against his moral character: \"I do not myself feel that any person who is really profoundly humane can believe in everlasting punishment.\" He went further and called the doctrine of hell-fire a doctrine of cruelty, one that had put cruelty into the world. Sixty years earlier John Stuart Mill had made the same point from the other side. In his Examination of Sir William Hamilton's Philosophy (1865) he refused to call any being good whose goodness was not the kind we mean when we call a person good, and he added that if such a being could send him to hell for refusing, \"to hell I will go.\"",
+          "Put as an argument, the objection is about proportion. A just punishment fits the wrong. A human life is short, and even its worst wrongs are finite. Endless conscious suffering is infinite. So a God who punished that way would not be just, and a God who isn't just isn't good. Not all who press this are unbelievers. The Christian philosopher Thomas Talbott argued that hell, understood as endless and final, is a problem of evil that Christians have to answer among themselves.",
+          "I grant what is true in this, and it's a lot. The church has sometimes preached hell with a relish that looks nothing like the God who wept over Jerusalem. It has used the fear of hell to control people, and it has spoken about the fate of others with a confidence Scripture doesn't give. Russell was right that a doctrine can make people cruel. Any answer has to take that seriously before it says anything else.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "Two different questions sit inside this one, and they don't carry the same weight. The first is whether there will be a final judgment at all, in which a person can be finally separated from God. The Nicene Creed confesses that Christ \"shall come again, with glory, to judge both the quick and the dead,\" the living and the dead, and that belongs near the center of the faith. The second is what that separation is like and whether it lasts forever, and on that faithful Christians have disagreed for a very long time. I'll argue for the first. On the second I'll set out the moral objection as a chain of steps and show how each Christian view answers it by denying a different step. The argument doesn't decide among them, and I won't pretend it does.",
+        ],
+      },
+      {
+        heading: "Why there must be a judgment",
+        body: [
+          "Start with the people the objection tends to forget. Miroslav Volf is a Croatian-born theologian whose book Exclusion and Embrace (1996) grew out of trying to make sense of the war that tore apart the former Yugoslavia. He argued that a God who refused to judge would not be kind. He would be complicit. And he wrote a line that should stop anyone who has lived a comfortable life: \"It takes the quiet of a suburban home for the birth of the thesis that human nonviolence corresponds to God's refusal to judge.\"",
+          {
+            kind: "A deductive argument for final judgment",
+            premises: [
+              "Some wrongs are real and grave: the murder of the innocent, the abuse of a child, the slaughter of a people.",
+              "A good God can't treat such wrongs as if they didn't matter, because that would be to treat their victims as if they didn't matter.",
+              "Many such wrongs are never set right in this life. The guilty die comfortable, and the victims die unheard.",
+            ],
+            conclusion: "If God is good, there will be a final reckoning. Judgment isn't a stain on God's goodness. It is one of the things his goodness requires.",
+          },
+          "The weight sits on the second premise. A skeptic can reply that a good God would simply heal the victims and leave the rest alone. But healing that never names the wrong isn't love. It's indifference with a smile. Abraham, pleading for Sodom, asked the question this whole page depends on: \"Shall not the Judge of all the earth do what is just?\" (Genesis 18:25). Notice that he asked it as an appeal, not an accusation. He trusted that God's justice would be better than his own, not worse.",
+        ],
+      },
+      {
+        heading: "The argument about proportion, and three answers",
+        body: [
+          "Now the hard part. Here is the moral objection laid out, so we can see where each Christian view parts company with it.",
+          {
+            kind: "The skeptic's argument from proportion",
+            premises: [
+              "A just punishment is proportioned to the wrong done.",
+              "Every human wrong is finite.",
+              "Hell, as eternal conscious punishment, is infinite punishment.",
+            ],
+            conclusion: "Eternal conscious punishment would be unjust, so a just God would not inflict it.",
+          },
+          "The traditional view, held by most of the church through most of its history, rests on texts like \"these will go away into eternal punishment, but the righteous into eternal life\" (Matthew 25:46). It answers by denying the second premise. Thomas Aquinas argued that sin has two sides: a turning toward some lesser good, which is finite, and a turning away from God, who is the infinite good, and that the loss of God which follows is lasting because of that second side. C. S. Lewis gave a more human version. Sin isn't a single act in the past, finished and paid for. It's a direction a person keeps choosing. In The Problem of Pain (1940) he wrote that \"the doors of hell are locked on the inside.\" On that view hell doesn't punish a finite past forever. It is the place of a refusal that never ends.",
+          "Conditional immortality, or annihilationism, denies the third premise. It holds that the finally impenitent are not kept alive forever in torment but at last perish, resting on Jesus warning of the one who can \"destroy both soul and body in hell\" (Matthew 10:28) and on the wages of sin being death (Romans 6:23). The punishment is eternal in its result, not in endless suffering. Edward Fudge argued it at length in The Fire That Consumes (1982), and John Stott, one of the most respected evangelical leaders of the last century, said in a published dialogue in 1988 that he held it, tentatively.",
+          "A minority hope of final restoration denies that the separation is final at all. It has appeared in church history, in Gregory of Nyssa among others, and Talbott argues for it today. But the church has generally not affirmed universal salvation, and the New Testament's warnings are severe and real. Any view that empties them has stopped reading the pages it quotes.",
+          "Each of these is an attempt to keep both God's justice and his love, and each has texts it struggles with. The traditional view has to explain why God, who \"desires all people to be saved\" (1 Timothy 2:4), keeps the lost in being forever. Conditional immortality has to explain why Jesus set \"eternal punishment\" beside \"eternal life\" in a single sentence, and why Revelation speaks of torment whose smoke rises forever (Revelation 14:11). The hope of restoration has to explain the warnings that speak of no way back. Christians who love Scripture hold all three, though not equally, and each of them is answering the moral objection rather than ignoring it. I'm not going to settle that here.",
+        ],
+      },
+      {
+        heading: "The strongest reply",
+        body: [
+          "The strongest reply is Mill's, sharpened. Fine, the skeptic says, judge the murderer. But your tradition sends ordinary decent people to hell for failing to believe the right things, and a God who does that is the one I won't call good. If that were the Christian teaching, I'd agree with him. It isn't. Scripture says the dead are judged \"according to what they had done\" (Revelation 20:12), by a God who says, \"I have no pleasure in the death of the wicked\" (Ezekiel 33:11). What about those who never heard has its own page, and it leaves open what the Bible leaves open.",
+          "Christianity's deeper answer isn't a theory of punishment. It's the cross. The Christian claim is that God doesn't stand outside judgment sending others into it. He enters it himself, and bears it, \"so that he might be just and the justifier of the one who has faith in Jesus\" (Romans 3:26). Whatever hell is, it isn't what God wants for anyone. It is what remains when someone finally refuses what God has given at that cost. Lewis put it in a sentence in The Great Divorce (1945): \"There are only two kinds of people in the end: those who say to God, 'Thy will be done,' and those to whom God says, in the end, 'Thy will be done.'\"",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this proves that hell exists. The case for final judgment rests on two things a skeptic may deny: that God is real and that he is good. The argument shows that if he is both, judgment isn't a contradiction of his goodness. It doesn't settle what hell is like or how long it lasts, and it doesn't tell anyone who will be there. Jesus' own warnings are among the sternest in the New Testament, and many of them were aimed at the religious. That alone should keep anyone from preaching hell at someone else.",
+          "Both cheap versions are wrong. The preacher who relishes the fire has not understood the God he claims to serve, and the sentimentalist who empties the warnings has not read the pages he is quoting. What the tradition guards is narrower and more sober than either: that a person can finally, really refuse God, and that the refusal is not nothing. Christians disagree about what hell is like and how long it lasts. They don't disagree that a person can choose it.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Bertrand Russell", title: "Why I Am Not a Christian", year: "1927", note: "The classic short case against." },
+      { author: "Jonathan L. Kvanvig", title: "The Problem of Hell", year: "1993" },
+      { author: "C. S. Lewis", title: "The Problem of Pain", year: "1940" },
+      { author: "C. S. Lewis", title: "The Great Divorce", year: "1945" },
+      { author: "Edward William Fudge", title: "The Fire That Consumes", year: "1982" },
+      { author: "David L. Edwards and John Stott", title: "Essentials: A Liberal-Evangelical Dialogue", year: "1988" },
+      { author: "Thomas Talbott", title: "The Inescapable Love of God", year: "1999", note: "A Christian philosopher's case for universal salvation." },
+      { author: "Miroslav Volf", title: "Exclusion and Embrace", year: "1996" },
     ],
     essaySlug: "is-hell-eternal",
     essayTitle: "Is Hell Forever, or Does It End?",
@@ -700,9 +990,77 @@ export const ANSWERS: Answer[] = [
     slug: "why-does-god-allow-natural-disasters",
     question: "Why does God allow earthquakes, cancer, and animal suffering?",
     paragraphs: [
-      "This is the harder half of the problem of evil, and most answers never reach it. Free will can be offered as an account of the torturer. It says nothing about the tsunami, the child's leukemia, or the millions of years of predation and parasitism that ran long before any human could sin. The philosopher William Rowe put the sharpest form of it in 1979: a fawn burned in a forest fire, dying in agony over days, with no human to witness or learn from it. That suffering looks simply pointless, and I won't pretend otherwise.",
-      "What can be said is smaller than a solution. A world stable enough for embodied creatures to act, build, and love at all may be a world running on fixed laws, and the same physics that lets bone grow lets it break. Scripture refuses to call the present arrangement the intended one: the creation \"was subjected to futility\" and groans together in the pains of childbirth until now (Romans 8:20-22). And when Job demanded an explanation, God answered with his own presence and the wild otherness of creation rather than a theodicy.",
-      "None of that answers the fawn, and I'd distrust any answer that claims to. The Christian claim is not that the suffering makes sense now. It is that it is neither the last word nor the intended word, and that God did not stay outside it explaining. He entered it. If you are in the middle of this, you don't need my argument. You need someone to sit with you, and that is the church's actual job.",
+      "This is the harder half of the problem of evil, and most answers never reach it. Free will can be offered as an account of the torturer. It says nothing about the tsunami, the child's leukemia, or the fawn that burns in a forest fire far from anyone. I can't explain any one of them, and I'd distrust anyone who said he could. What I can offer is an argument about the argument. The skeptic's case rests on a claim about what a good God would make, and that claim is much harder to know than it looks. Christians have three serious things to say about it, and each has a cost. And the Christian hope was never that this makes sense now. It is that suffering isn't the last word, and that God didn't stay outside it.",
+    ],
+    sections: [
+      {
+        heading: "The objection at full strength",
+        body: [
+          "Start with the other side, because it has the facts. On the morning of November 1, 1755, All Saints' Day, an earthquake struck Lisbon while many of its churches were full for Mass. A tsunami surged up the Tagus into the lower city, and fires burned for days. Voltaire wrote a poem asking what crime had been committed by the children who lay crushed and bleeding on their mothers' breasts. Nobody chose it. That is what philosophers mean by natural evil: suffering that comes from the way the world works, not from anyone's will.",
+          "David Hume saw where this leads. In his Dialogues Concerning Natural Religion, published in 1779, the skeptic Philo looks over the whole of nature, its predators and plagues, and says it shows a blind Nature \"pouring forth from her lap, without discernment or parental care, her maimed and abortive children.\" Darwin felt the same weight with more evidence in hand. In a letter of May 22, 1860, to the botanist Asa Gray, he wrote: \"I cannot persuade myself that a beneficent and omnipotent God would have designedly created the Ichneumonidae with the express intention of their feeding within the living bodies of Caterpillars, or that a cat should play with mice.\" The Ichneumonidae are wasps that lay their eggs inside living caterpillars, and the young eat their host from within.",
+          "In 1979 William Rowe gave the problem its best-known picture. In some distant forest, lightning starts a fire, and a fawn is trapped in it, horribly burned, lying in terrible agony for several days before it dies. So far as we can see, Rowe said, its suffering serves no purpose at all. Ten years later Paul Draper sharpened the case in the journal Noûs, in an article called \"Pain and Pleasure: An Evidential Problem for Theists\" (1989). He didn't argue that suffering makes God impossible. He compared two hypotheses. On one, God made the world. On the other, which he called the hypothesis of indifference, nothing behind nature cares either way about the creatures in it. Draper argued that the pain and pleasure we actually find, bound tightly to survival and handed out with no regard to anyone's goodness, is just what the second would lead you to expect, and a surprise on the first.",
+          "I grant what's true in this, and it's a great deal. Free will doesn't reach the fawn. If the earth is as old as most geologists hold, predators and parasites were at work for ages before there were people to sin. Christians differ about that history, but on any view the wasp and the caterpillar are here now. And some of what Christians say in reply is worse than silence. In 1756 the Jesuit Gabriel Malagrida published a pamphlet blaming the Lisbon earthquake on the city's sins. Jesus refused that reading of a disaster in his own day. Of the eighteen killed when the tower in Siloam fell, he asked, \"do you think that they were worse offenders than all the others who lived in Jerusalem? No, I tell you\" (Luke 13:4-5).",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "Draper's argument isn't a proof that God doesn't exist, and he never said it was. It's an argument from evidence: a fact counts toward whichever account makes it less surprising. That's a fair way to argue, and I'll answer in the same coin. So the question isn't whether a Christian can explain each wasp. Nobody can. The question is whether the suffering in nature is really more surprising if God exists than if he doesn't, once everything Christians mean by God is in the picture. What follows is what philosophers call a defense, not a theodicy. It doesn't claim to know God's reasons. It asks whether a good God could have reasons of this kind, and so whether the evidence points as hard as it seems to.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          "Here is the skeptic's case in its simplest form.",
+          {
+            kind: "An argument from evidence (after Draper, 1989, in my words)",
+            premises: [
+              "In nature, pain and pleasure are tied closely to survival, and they fall on creatures with no regard to their goodness, including creatures that can do no wrong.",
+              "That pattern is just what we would expect if nothing behind nature cares about the creatures in it.",
+              "That pattern is much less to be expected if the world was made by a God who is all-powerful and wholly good.",
+            ],
+            conclusion: "The suffering in nature is strong evidence for indifference over God. Unless something else outweighs it, a reasonable person should lean toward unbelief.",
+          },
+          "The first premise is true. The second is close enough to true. The weight sits on the third, because it's a claim about what a perfectly good and all-powerful God would make, and to know that you'd need to know what goods such a world has to make room for and what they cost. Scripture doesn't hide the wildness the third premise points to. \"The young lions roar for their prey, seeking their food from God\" (Psalm 104:21). When God finally answers Job, he asks, \"Who provides for the raven its prey?\" (Job 38:41). He claims the predators as his own, and he gives Job no explanation. So the Christian can't say that nature looks tame. The question is whether a good God might make a world this wild, and Christians have given three serious answers.",
+        ],
+      },
+      {
+        heading: "Three answers, and what each costs",
+        body: [
+          "The first is about laws. C. S. Lewis argued in The Problem of Pain (1940) that creatures who can meet, act and depend on one another need a nature with fixed laws, and fixed laws don't bend to spare whoever is in the way. The water that carries a boat can drown a child. Richard Swinburne pressed this further in Providence and the Problem of Evil (1998). Creatures can only be responsible for one another if they can learn what harms and what helps, and they learn it by watching how the world works. Geology adds a point neither man needed. The moving plates that cause earthquakes also, on the case Peter Ward and Donald Brownlee make in Rare Earth (2000), drive the cycle of carbon through rock and air that keeps the planet's temperature fit for complex life. The cost is plain: God could, it seems, step in each time. But a world where fire never burns the wrong creature isn't a world with laws, and the creatures in it couldn't learn, plan or keep one another safe.",
+          "The second goes deeper, and it belongs to Christians who accept the long history of life that most scientists describe. Christopher Southgate argues in The Groaning of Creation (2008) that a world which makes its creatures through long processes, not all at once, may be the only way, or the best way, to bring about creaturely selves at all: beings with their own skill and hunger, the speed of the leopard and the eye of the hawk. The same processes that make the hawk make its prey suffer. Southgate doesn't stop there. He holds that God suffers with every creature and won't leave its victims without redemption, and, following the theologian Jay McDaniel, he is willing to speak of a pelican heaven for the chick pushed from the nest. The cost: nobody can show it's the only way. A skeptic can say an all-powerful God could have done it without the wasps, and I can't prove otherwise. Neither can he prove that God could.",
+          "The third is the oldest, and it's Paul's. \"For the creation was subjected to futility, not willingly, but because of him who subjected it, in hope that the creation itself will be set free from its bondage to corruption\" (Romans 8:20-21). Scripture refuses to call the present order the intended one. Christians read that in more than one way, and I won't choose among them here. Many hold that animal death came into the world through human sin, and most of them hold that the earth is young. Many others hold that the earth is very old and read the futility as the condition of a creation made good but not yet finished. In his chapter on animal pain, Lewis suggested another reading: that some mighty created power may have been at work for ill on the material world before man appeared. The creeds don't settle it, and faithful churches divide over it. The cost of all three readings is that none can be checked from here. What they share is the claim that matters for the argument: the fawn's death isn't what God calls good, and it isn't the end of the story.",
+          "I'll leave one answer aside. Some have argued that animals feel pain without the inner awareness that makes it suffering. Michael Murray gives views of that kind their most careful hearing in Nature Red in Tooth and Claw (2008). I don't find them believable. The fawn's pain looks real, and Jesus didn't tell us to doubt it. Of the sparrows sold two for a penny, he said, \"not one of them will fall to the ground apart from your Father\" (Matthew 10:29).",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "The best reply a skeptic can make goes like this. Every one of these answers comes down to saying a good God might have reasons we can't see. But if you can always say that, no evidence can ever count against God, and a belief no evidence can touch isn't worth much. That reply has real force, and I don't think it's fully answered. Two things can be said.",
+          "First, I'm not claiming nothing could count against the Christian faith. It can be tested at a point that has nothing to do with wasps: whether Jesus of Nazareth was raised from the dead. That question has its own page, and if the answer is no, Paul says plainly that \"your faith is futile and you are still in your sins\" (1 Corinthians 15:17). Few faiths name the evidence that would sink them. This one does.",
+          "Second, the skeptic's hypothesis carries a cost of its own. If nothing behind nature cares, the fawn's agony is a fact about nerves and fire, and the protest that started the argument, that it shouldn't be so, is only a feeling we happen to have. That doesn't refute Draper; his argument needs no moral view from me. But it does mean the choice isn't between a world with suffering and a world without it. Both views have to carry the suffering. Indifference explains the pain well. It can't call it wrong, and it can't promise it will end.",
+          "The Christian hope does both, and it's older than Darwin. John Wesley's sermon on Romans 8, \"The General Deliverance\", from the early 1780s, argued that the animals will share in the restoration of all things. Scripture doesn't say whether the fawn itself will be raised, and I won't say more than it does. But Isaiah's picture is of a creation where predation ends: \"They shall not hurt or destroy in all my holy mountain\" (Isaiah 11:9).",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this explains the fawn, and I'd distrust any answer that claims to. At most it shows that the suffering in nature counts less decisively against God than Draper's third premise says, because none of us is placed to know what a good God's world would have to cost. That's a modest result. It leaves the wasp in the caterpillar and the child in the cancer ward exactly where they were. It doesn't make Christianity true. It only clears room for asking whether it is.",
+          "The Christian claim is not that the suffering makes sense now. It is that it is neither the last word nor the intended word, and that God did not stay outside it explaining. He entered it. The Son of God took a body that could be hurt, and on the cross he prayed the first line of Psalm 22: \"My God, my God, why have you forsaken me?\" (Matthew 27:46). If he was raised, then the world in which fawns burn is not the world God means to keep.",
+          "If you are in the middle of this, you don't need my argument. You need someone to sit with you, and that is the church's actual job. Find Help has people you can call, today if you need them. Job never learned why. He was allowed to ask, and in the end he said, \"I had heard of you by the hearing of the ear, but now my eye sees you\" (Job 42:5).",
+        ],
+      },
+    ],
+    sources: [
+      { author: "David Hume", title: "Dialogues Concerning Natural Religion", year: "1779" },
+      { author: "Charles Darwin", title: "Letter to Asa Gray, 22 May 1860", in: "The Life and Letters of Charles Darwin, vol. 2 (1887)", year: "1860" },
+      { author: "C. S. Lewis", title: "The Problem of Pain", year: "1940" },
+      { author: "William L. Rowe", title: "The Problem of Evil and Some Varieties of Atheism", in: "American Philosophical Quarterly", year: "1979" },
+      { author: "Paul Draper", title: "Pain and Pleasure: An Evidential Problem for Theists", in: "Noûs", year: "1989", note: "The strongest case against: the argument this answer meets." },
+      { author: "Richard Swinburne", title: "Providence and the Problem of Evil", year: "1998" },
+      { author: "Peter D. Ward and Donald Brownlee", title: "Rare Earth: Why Complex Life Is Uncommon in the Universe", year: "2000" },
+      { author: "Christopher Southgate", title: "The Groaning of Creation: God, Evolution, and the Problem of Evil", year: "2008" },
+      { author: "Michael J. Murray", title: "Nature Red in Tooth and Claw: Theism and the Problem of Animal Suffering", year: "2008" },
     ],
     essaySlug: "natural-evil-and-animal-suffering",
     essayTitle: "The Suffering God Never Ordered",

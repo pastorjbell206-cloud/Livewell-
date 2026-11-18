@@ -229,9 +229,18 @@ describe("/answers and /answers/:slug", () => {
     expect(screen.getByText("The Miracle of Theism").tagName).toBe("CITE");
   });
 
-  it("keeps the argued form to the pilot of three, each with checked sources", () => {
+  it("keeps the argued form to the answers rebuilt so far, each with checked sources", () => {
     const argued = ANSWERS.filter((a) => a.sections);
-    expect(argued.map((a) => a.slug).sort()).toEqual(["does-god-actually-exist", "if-god-is-good-why-suffering", "why-would-anyone-trust-the-bible"]);
+    expect(argued.map((a) => a.slug).sort()).toEqual([
+      "did-the-resurrection-actually-happen",
+      "do-i-have-to-choose-between-faith-and-science",
+      "does-god-actually-exist",
+      "if-god-is-good-why-suffering",
+      "is-hell-forever-or-does-it-end",
+      "what-if-christianity-is-wrong",
+      "why-does-god-allow-natural-disasters",
+      "why-would-anyone-trust-the-bible",
+    ]);
     for (const a of argued) {
       expect(a.paragraphs.length).toBeGreaterThan(0);
       expect(a.sources!.length).toBeGreaterThanOrEqual(5);
