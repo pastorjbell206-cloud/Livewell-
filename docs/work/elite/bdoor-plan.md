@@ -154,7 +154,7 @@ readers start and where the site already has the deepest notes to draw on:
 | Step | Pieces | New plain words | Built from data already here |
 |---|---|---|---|
 | Mark book page | 1 | about 4,500 | the outline band, chapter links, further reading |
-| Mark 1 to 3 (pilot) | 3 chapters, 29 passages | about 9,000 | the outline, the deep notes as source |
+| Mark 1 to 3 (pilot) | 3 chapters, 19 passages | about 7,000 (as built) | the outline, the deep notes as source |
 | Rest of Mark | 13 chapters | about 35,000 | the same |
 | Each other Gospel | 1 page + 21 to 28 chapters | 60,000 to 80,000 | the same |
 | Genesis | 1 page + 50 chapters | about 120,000 | the same |
@@ -191,7 +191,7 @@ their space held so nothing moves.
 
 1. The order of books (above), or another.
 2. How long a book introduction and a chapter's plain layer should be. The
-   pilot uses about 4,500 words for Mark's book page and about 3,000 for each
+   pilot uses about 4,300 words for Mark's book page and 1,800 to 3,000 for each
    chapter.
 3. Whether the site states a view on a contested matter (who wrote a book,
    when, the order of the Gospels, the ending of Mark). The pilot states each
