@@ -232,3 +232,78 @@ Searches this answer: 8. Local text: Pascal, *Pensées*, Trotter translation (GI
 ## /faq/does-god-exist (third run)
 
 No new search. Every claim of fact in the new answers is in this ledger already: the God answer's lines (Leibniz, Russell 1948, Weinberg, Rees, Hoyle, Mackie, Hume 1779, Darwin 1859, Paley 1802, Dawkins 2006, Schellenberg 1993, Pascal's light and darkness, Swinburne, Oppy), the suffering answer's (Mackie 1955, Plantinga 1974 and its reception, Rowe 1979, Ehrman 2008), the science answer's (Draper 1874, White 1896, Lemaître 1927 and 1931, Polkinghorne, Collins), and the resurrection answer's (1 Corinthians 15:17). Scripture (John 20:27, Mark 9:24, Psalm 13:1) is ESV. Removed as unchecked: Pew 2009 "51% of scientists"; the founders list (Copernicus to Mendel); Faraday and Maxwell; Wiseman at NASA; Tillich on doubt; Robert Adams; the argument from consciousness as a claim that materialism has not resolved it.
+
+# Fourth run (2026-11-18): /faq/is-the-bible-historically-accurate, /faq/can-science-and-faith-coexist, "Was Jesus just a good teacher?"
+
+## /faq/is-the-bible-historically-accurate
+
+No new search. The answers were drafted by the run before this one (cut off by a restart) and checked line by line against the ledgers: this file's Bible section, `docs/work/essays/ledgers/why-trust-the-bible.md`, `who-decided-what-books-are-in-the-bible.md`, `the-historical-jesus.md`, `did-god-command-genocide.md` and `why-didnt-the-bible-ban-slavery.md`.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Virtually all scholars of antiquity accept Jesus existed; baptism and crucifixion nearly universal agreement; Ehrman, agnostic, *Did Jesus Exist?* (2012) against the mythicists | the-historical-jesus ledger, searches 8, 9, 34 | Verified |
+| Tacitus "Christus ... Pontius Pilatus"; Josephus, the 90s, "the brother of Jesus, the so-called Christ, James by name" | This ledger (Bible section) | Verified, quoted |
+| Merneptah, around 1208 BC, earliest known mention of Israel | did-god-command-genocide ledger, correction 15 | Verified, "around" kept |
+| Tel Dan 1993 "House of David"; Pilate stone 1961; Gallio at Delphi AD 51 to 52, Acts 18:12; Qumran from 1947; Isaiah scroll about a thousand years older | This ledger | Verified |
+| Exodus and conquest argued over hard, by believing scholars too (Jericho, Ai) | why-trust-the-bible ledger (Hoffmeier exchange, JETS 2007) | Verified |
+| Younger: Joshua's victory reports in the stock style of Egyptian, Hittite and Assyrian campaign reports | did-god-command-genocide ledger, correction 17 | Verified |
+| Four Easter accounts as stated (Matthew 28:1-2; Mark 16:5; Luke 24:4; John 20:11-12) | why-trust-the-bible ledger (ESV copy) | Verified. The draft's "John tells it through Mary Magdalene" was corrected to "two angels in white, seen by Mary Magdalene" to match John 20:12. |
+| Mark 2:26 Abiathar, 1 Samuel 21 Ahimelech; Ehrman's account of the verse; no explanation everyone accepts | This ledger | Verified |
+| Augustine c. 400, agreement of the Gospels; Josephus on women's testimony (paraphrase); Chicago Statement 1978, quoted | This ledger | Verified |
+| Mark around 70 (most critical scholars); conservative scholars earlier; 1 Thessalonians around 50 among the earliest Christian writings | This ledger; the-historical-jesus ledger, search 11 | Verified. The draft's "49 to 51 ... widely agreed to be the earliest" narrowed to "around 50 ... among the earliest". |
+| Luke 1:2-3 quoted; Burridge 1992 | This ledger | Verified |
+| Nicaea made no list; 2 Peter 3:16; Irenaeus c. 180, quoted (Against Heresies 3.11.8); Muratorian "the third book of the Gospel", traditional late second century, a minority fourth; Athanasius 367; Hippo 393, Carthage 397; the three tests | who-decided ledger, items 69, 108-117, 122 | Verified |
+| Ehrman, *Lost Christianities* (2003); Thomas full text at Nag Hammadi 1945, most scholars second century | who-decided ledger, items 126, 130, 135 | Verified |
+| 5,000+ manuscripts; about 400,000 variants against about 138,000 words; Ehrman's "more variations" line; end of Mark, John 8; 1 John 5:7, Erasmus 1516 and 1522; Ehrman's appendix quoting Metzger's view | This ledger; why-trust-the-bible ledger | Verified, quoted |
+| Leningrad Codex 1008; Jeremiah in more than one form | why-trust-the-bible ledger | Verified |
+| Rylands scrap (P52) in Manchester; Sinaiticus fourth century; P75 and Vaticanus about 85 percent by a 1961 estimate; Tacitus Annals 1-6 in one medieval manuscript | why-trust-the-bible ledger | Verified |
+| Slavery's defenders argued from the Bible and explained away Exodus 21:16 | why-didnt-the-bible-ban-slavery ledger | Verified |
+| Augustine, "a disgraceful and dangerous thing"; John 5:39 | This ledger (science section; Bible section) | Verified |
+
+Removed from the old page as unchecked or overstated: the Pool of Siloam (2004) and Pool of Bethesda claims, Hezekiah's tunnel dates, the Cyrus Cylinder line, "consistently confirmed", "not contradicted by a century of excavation".
+
+## /faq/can-science-and-faith-coexist
+
+7 searches. Everything else from this ledger's science, God and resurrection sections.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Draper 1874, White 1896; Numbers 2009, quoted; Galileo 1633, quoted; Galileo 1615 and Augustine, quoted | This ledger (science) | Verified |
+| Maxwell, Cavendish, Psalm 111:2; Lemaître 1927 and 1931; Hubble two years later; Hoyle, BBC 1949, "this 'big bang' idea"; Polkinghorne 1982; Collins 2006 | This ledger (science) | Verified (Collins on standard bibliography) |
+| Einstein 1936 and Wigner 1960, quoted; Einstein did not believe in a personal God | This ledger (science) | Verified |
+| Hume 1748, "A wise man, therefore, proportions his belief to the evidence"; deceived or deceiving | This ledger (resurrection) | Verified, quoted |
+| 1 Corinthians 15:17; Aquinas on secondary causes; Bonhoeffer May 1944, quoted; Plantinga 2011, quoted | This ledger (science) | Verified |
+| Leibniz 1714 and the contingency argument's three lines | This ledger (God) | Verified |
+| Earth about 4.54 billion years (meteorites, oldest earth and moon material); universe about 13.8 billion (CMB, Planck) | Search: Space.com, earthdate.org, Astronomy | Verified, given as the mainstream estimate |
+| Ussher, archbishop of Armagh, 1650, 4004 BC from genealogies and reigns; printed in the margins of King James Bibles | Search: Linda Hall Library, NCSE, UW, Ohio State | Verified ("many" King James Bibles; sources say editions after 1701) |
+| Augustine, *The Literal Meaning of Genesis*: days not measured by the sun; all things made at once | Search: Henry Center, Villanova, Zygon summaries | Verified, paraphrased |
+| Gould, "Nonoverlapping Magisteria", *Natural History*, 1997; Dawkins's criticism that religions make factual claims | Search: Wikipedia summary, Charleston course page, PhilArchive record | Verified, the phrase quoted |
+| Penzias and Wilson, Bell Labs, New Jersey, detected 1964, published 1965 | Search: Wikipedia, Nokia Bell Labs history | Verified |
+| Mendel, Augustinian friar, abbot in Brno; Faraday an elder of the Sandemanians | Search: Britannica, Wikipedia, DNA Learning Center | Verified |
+| The line credited to Heisenberg ("the first gulp from the glass ...") | Search: no source in his published work; Hirsch and his children doubted it; Wikiquote lists it as misattributed | Named as misattributed; not quoted as his |
+| Three Christian views on the age of the earth and evolution; intelligent design | Described without taking a side, as the Genesis 1 answer does | No position stated |
+
+Removed from the old page as unchecked: the Pew 2009 "51%" figure; Ecklund 2016; Kepler's "thinking God's thoughts after him"; Planck's quoted sentence; the Heisenberg line as his; the founders list (Copernicus to Kelvin); Ard Louis, Jennifer Wiseman; the Pontifical Academy "1603"; the Jesuit observatories and universities lines; Humani Generis; Hawking's no-boundary model; Einstein's doubt about expansion; "the evidence for common descent is overwhelming" (a position on evolution).
+
+## Was Jesus just a good teacher?
+
+9 searches. Scripture from the ESV as already quoted in the site's study guides (repo) or in an essay ledger.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Jefferson to Adams, October 1813: "as easily distinguishable as diamonds in a dunghill" | Search: University of Missouri transcription of the 12-13 October 1813 letter; Encyclopedia Virginia and Monticello list the 12 October letter | Verified, quoted |
+| *The Life and Morals of Jesus of Nazareth*, about 1820, leaves out miracles and divine claims, ends at the burial | Search: Britannica (about 1819), Wikipedia, textandcanon.org | Verified ("around 1820"; source list says "c. 1820") |
+| Ehrman, *How Jesus Became God* (2014): Jesus did not call himself God; divinity after the resurrection belief; early exaltation of a lesser kind; the resurrection belief as the hinge | Search: TGC review, CRI article, Ehrman blog summaries | Verified, paraphrased |
+| John most critical scholars treat as latest and most shaped by reflection | Standard; consistent with this ledger's Gospel dating (Ehrman: John toward the end of the century) | Verified as a description of critical opinion |
+| Schweitzer, 1906, English *The Quest of the Historical Jesus* 1910; an apocalyptic prophet mistaken about the end | Search: Tabor, Gutenberg edition, Churchman article | Verified, paraphrased |
+| Lewis, *Mere Christianity* (1952): "A man who was merely a man and said the sort of things Jesus said would not be a great moral teacher." | Search: HillFaith excerpt and other copies agree on this sentence; neighbouring sentences vary between copies, so only this one is quoted and the rest paraphrased. Year: why-does-god-feel-far-away ledger | Verified, quoted |
+| Mark 2:5-7, Mark 2:28, Matthew 5 "You have heard that it was said ... But I say to you", Mark 14:62 (first clause), Mark 8:29, 1 Corinthians 8:6, Philippians 2:10 "every knee should bow" | Repo (studyguides, ESV) | Verified |
+| 1 Corinthians 16:22, Marana tha, "Our Lord, come", Aramaic, addressed to Jesus, pointing to the earliest churches | Search: Bird, Theology of Work, Wikipedia; given as an inference ("points back") | Verified |
+| Philippians 2:10 uses the words of Isaiah 45:23 | Search (same) | Verified; Isaiah not quoted |
+| Bauckham, *Jesus and the God of Israel* (2008), reads 1 Corinthians 8:6 as placing Jesus within the Shema; others disagree | Search: secondary accounts of chapter 6 and critics | Verified, paraphrased, the dispute named |
+| Hurtado, *Lord Jesus Christ* (2003), *One God, One Lord* (1988): early, among Jewish followers, not by pagan influence, no parallel, within exclusive monotheism; against the older slow-development account | Search: Denver Journal, Themelios review, Bible and Interpretation | Verified, paraphrased |
+| Paul writing in the 50s; Galatians 1:18, fifteen days with Cephas | This ledger; did-the-resurrection-happen ledger | Verified |
+| Bird, Evans and others, *How God Became Jesus* (2014) | This ledger (resurrection sources) | Verified |
+| Old answer's sentences kept: "Lewis's point holds: no merely wise teacher talks that way."; "The trilemma's largest hole is legend. Maybe a later church put the high claims in a humble rabbi's mouth, and for a long time that was the scholarly default."; "But legend needs time, and the time has been taken away."; "Devotion that high, that fast, among those people does not behave like a legend" (one contraction); "frauds do not die for the con when recanting would save them"; "I held the comfortable view ... first." | James's old answer | Kept |
+
+Not used: Lewis's "poached egg" and "Devil of Hell" wording (copies differ; paraphrased as "a lunatic or something worse"); Ehrman's *Jesus: Apocalyptic Prophet* (not searched); Bousset by name and date.

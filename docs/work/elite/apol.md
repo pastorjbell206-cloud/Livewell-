@@ -293,3 +293,53 @@ What changed: the eight questions are kept word for word, and so are the address
 ### Next in the ranking
 
 Item 10: `/faq/is-the-bible-historically-accurate` and `/faq/can-science-and-faith-coexist`, brought into line with the argued Bible and science answers the same way as /faq/does-god-exist.
+
+## 6. The fourth run: the two /faq pages, and "Was Jesus just a good teacher?"
+
+Date: 2026-11-18. The run before this one was cut off by a machine restart with the Bible /faq page drafted and uncommitted. That draft was checked line by line against the ledgers, two sentences were corrected (below), and it was committed; the other two pieces were done from scratch. No sentence about James's life is added anywhere. No position is taken on the age of the earth or on evolution. Every claim is in `apol-ledger.md` under "Fourth run".
+
+### /faq/is-the-bible-historically-accurate
+
+The eight questions are kept word for word, and so are the address, the SEOMeta title, description and keywords, and the three structured-data blocks (the FAQPage block carries the new answer text, as it did the old). Each answer now argues or points, with the facts of the argued Bible answer and the trust-the-Bible and canon essays: what historians agree on (and the two halves of the honest summary), what archaeology can and can't check (Pilate's stone, Gallio, Merneptah, Tel Dan, Qumran; the exodus and conquest argued over; Younger on Joshua's style), the differences in the Easter accounts and Mark 2:26 named plainly, the dating of the Gospels and Burridge, the canon recognized rather than voted, the manuscripts and the marked uncertain places, the oldest copies and the Tacitus comparison, and how to read honestly. Each names the Honest Answer that argues it in full where one exists. The "Go deeper" link now goes to /answers/why-would-anyone-trust-the-bible ("Read the argued answer"). Words in the answers: 1,915 before, 2,317 after. Removed as unchecked or overstated: the Pool of Siloam and Bethesda lines, Hezekiah's tunnel dates, the Cyrus Cylinder, "consistently confirmed".
+
+Corrected in the uncommitted draft: John's Easter account now has "two angels in white, seen by Mary Magdalene" (John 20:12; the draft said only "tells it through Mary Magdalene"); 1 Thessalonians is "usually dated around 50 ... among the earliest Christian writings" (the draft said "49 to 51 ... widely agreed to be the earliest").
+
+### /faq/can-science-and-faith-coexist
+
+Same rules. Questions, address, title, description, keywords and structured data kept. The war story is answered with Draper, White, Numbers and Galileo; evolution and the age of the earth set out as the three views Christians hold, each with the hard question it has to answer, and left open; the scientists questions give only names that can be checked (Faraday, Mendel, Maxwell, Lemaître, Polkinghorne, Collins), say plainly that many great scientists have not believed, and name the line usually credited to Heisenberg as misattributed; miracles meets Hume and points to the miracles and resurrection answers; the Big Bang gives Lemaître, Hoyle and Penzias and Wilson, and sets out the contingency argument from the God answer in three lines rather than leaning on a beginning; reconciling meets Gould's "non-overlapping magisteria" fairly, then gives Aquinas, Bonhoeffer and Plantinga. The "Go deeper" link now goes to /answers/do-i-have-to-choose-between-faith-and-science. Words: 2,044 before, 2,450 after. Removed as unchecked: the Pew "51%" and Ecklund figures, Kepler's and Planck's quoted lines, the Heisenberg line as his, the founders list, the Pontifical Academy date, Humani Generis, Hawking's model, and the old page's sentence that the evidence for common descent is overwhelming (a position on evolution).
+
+### Was Jesus just a good teacher?
+
+The next Honest Answer in the ranking (item 8 of section 6: the answers that already argued, to be given laid-out steps and sources). Rebuilt in full by the pattern.
+
+The argument in three sentences. The good-teacher view at its strongest is Jefferson's scissors (1813 and about 1820), sharpened by Ehrman (the high claims are John's, and the divinity came after Easter) and by Schweitzer (a sane prophet mistaken about the end); Lewis's trilemma is granted to be too quick, and John is set aside. In the earliest sources Jesus forgives sins, is lord of the Sabbath, sets "But I say to you" beside Sinai and answers the high priest "I am", and within about twenty-five years Jewish monotheists were praying to him in Aramaic (Marana tha), setting him inside the Shema (1 Corinthians 8:6) and applying Isaiah 45:23 to him, which Hurtado argued was an explosion, not a slow legend. That leaves a liar, a mistaken prophet or a man who was right; the mistaken prophet is the serious option, but it is no longer the good-teacher view, and the choice between it and the creed turns on the resurrection, which has its own page.
+
+Before: "The trilemma's largest hole is legend. Maybe a later church put the high claims in a humble rabbi's mouth... Hurtado traces divine worship of Jesus to the first years after his death..." After (the speed of worship, set out): "1. Within about twenty-five years of Jesus's death, and in prayers older than that, communities of his followers, Jewish believers among them, prayed to him, sang of him and set him inside their confession of the one God. 2. The Jews of that time held that worship belongs to the one God alone, and would not give it to anyone else. 3. A change that large, that early, among those people needs a cause at the start, not a slow drift over generations. So: The high view of Jesus didn't grow up late."
+
+Words: 238 before; 2,053 after (with headings and the laid-out argument, before the sources). The old answer's own sentences are kept where they stand, including "I held the comfortable view, and it was a place to file him more than a conclusion. It let me honor a man without obeying him." (his old sentence; nothing new about his life).
+
+Sources: Lewis, *Mere Christianity* (1952); Schweitzer, *The Quest of the Historical Jesus* (1906; English 1910); Hurtado, *One God, One Lord* (1988) and *Lord Jesus Christ* (2003); Bauckham, *Jesus and the God of Israel* (2008); Ehrman, *How Jesus Became God* (2014, the best book against); Bird, Evans and others, *How God Became Jesus* (2014); Jefferson, *The Life and Morals of Jesus of Nazareth* (c. 1820).
+
+### What I ran, and what passed
+
+- Merged the latest `origin/claude/todo-implementation-hhp4bm` before starting. Search index and passage index rebuilt (8 chapter files: 1 Corinthians 8 and 16, Galatians 1, Isaiah 45, Mark 8 and 14, Matthew 5, Philippians 2).
+- `pnpm check`: pass. All 35 content-gate commands in `ci.yml`: pass. `pnpm test`: 145 files passed, 7 skipped; 1,649 tests passed, 73 skipped. ESLint on the changed source files: clean. `hq.test.tsx` names the ten argued answers.
+- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (35 Honest Answer pages), `pnpm run audit:canonicals` (0 failures): pass.
+- Screenshots at 390 x 844 and 1440 x 900, day and night, in `/home/user/elite-shots/apol/` (`faq-bible-*` and `faq-science-*` with `-open`; `good-teacher-*` with `-argument` and `-sources`). No horizontal overflow.
+- Lighthouse (three runs, median, `serve-like-vercel.mjs`): the good-teacher answer accessibility 100, CLS 0.000, best practices 96, SEO 100, performance 83 (LCP 4.5 s); an unchanged short answer in the same session 87 (LCP 4.1 s); /faq/can-science-and-faith-coexist 93, accessibility 100, CLS 0.000. The same gap as the pilot; no worse. The cheap ideas from the second run (`content-visibility: auto` on later parts, or prerendering only the short answer and contents) still stand and were not built.
+
+### Not verified
+
+- A real phone, Safari, or a screen reader.
+- Lewis's full passage: copies online differ in the sentences around the one quoted, so only that sentence is quoted. Jefferson's letter was read in a university transcription, not on Founders Online.
+- The Hurtado, Bauckham and Ehrman summaries rest on reviews and secondary accounts, not the books; each is paraphrased, not quoted.
+- None of the three has been read by James.
+
+### Waits for James
+
+1. The good-teacher answer keeps your old sentence "I held the comfortable view..." and adds nothing about your life. Keep it only if it is still true as written.
+2. The science /faq page states the scientific estimates for the age of the earth and universe as "the mainstream scientific estimate" and sets out the three Christian views without choosing. If you want it to say where you land, tell us.
+
+### Next in the ranking
+
+The ten in the audit ranking are done. Next by section 6: item 8's remaining answers, "Is Jesus really the only way to God?", "Are miracles believable?" and "Is faith just wishful thinking?" (they already argue; give them laid-out steps and sources), then item 9.
