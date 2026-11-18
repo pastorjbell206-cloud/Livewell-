@@ -11,7 +11,6 @@ import { ArrowRight, BookOpenText, MessageCircleQuestion, Plus } from "lucide-re
 import InnerHead from "@/components/art/InnerHead";
 import SectionHead from "@/components/art/SectionHead";
 import "@/pages/home/home.css";
-import "@/components/art/inner.css";
 
 export interface FaqItem {
   question: string;
