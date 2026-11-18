@@ -100,6 +100,13 @@
           <span style="font-family:var(--F,Georgia,serif);font-size:20px;color:var(--ink,#14110C)">LiveWell</span>
           <span style="font-family:var(--U,sans-serif);font-size:9px;letter-spacing:.18em;color:var(--ink-muted,#5A5448);margin-left:10px">BY JAMES BELL</span>
         </div>
+        <!-- For a browser that blocks or cannot run the site's code: say so
+             under the masthead, where it is seen, and say what still works. -->
+        <noscript>
+          <p style="max-width:744px;margin:0 auto;padding:24px 32px 0;font-family:var(--B,sans-serif);font-size:15px;line-height:1.6;color:var(--ink-muted,#5A5448)">
+            This site needs JavaScript for its menus, search and tools, and your browser has it turned off. Essays, Bible chapters and guides still show their text without it. Turn JavaScript on to use the rest.
+          </p>
+        </noscript>
         <!-- prerender:home-hero — scripts/prerender-heads.mjs replaces this
              marker with the static home hero (headline and the two short
              paragraphs from client/src/lib/positioning.ts, styled by the
@@ -109,13 +116,6 @@
              stripped. -->
       </div>
     </div>
-    <!-- For a browser that blocks or cannot run the site's code: say so, and
-         point at what still works without it. -->
-    <noscript>
-      <p style="max-width:680px;margin:0 auto;padding:24px 20px;font-family:var(--B,sans-serif);font-size:16px;line-height:1.6;color:var(--ink,#14110C);background:var(--bone,#F5F0E6)">
-        This site needs JavaScript for its menus, search and tools, and your browser has it turned off. Essays, Bible chapters and guides still show their text without it. Turn JavaScript on to use the rest.
-      </p>
-    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
