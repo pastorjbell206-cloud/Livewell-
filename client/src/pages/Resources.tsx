@@ -175,22 +175,22 @@ export default function Resources() {
               {
                 label: "Scripture Memory",
                 href: "/tools/scripture-memory",
-                note: "Forty key verses, practiced the way memory actually works.",
+                note: "Forty key verses, practiced the way memory works.",
               },
               {
                 label: "Test the Case",
                 href: "/tools/test-the-case",
-                note: "The case for the resurrection, one move at a time, with room to push back with the objection you actually hold.",
+                note: "The case for the resurrection, one move at a time, with room to push back with your own objection.",
               },
               {
                 label: "Which Lens Has You?",
                 href: "/tools/which-lens",
-                note: "Thirteen honest choices that show which lens is doing your reading of Scripture before you do.",
+                note: "Thirteen choices that show which lens is reading Scripture for you.",
               },
               {
                 label: "The self-checks",
                 href: "/assessments",
-                note: "Honest questions about faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you.",
+                note: "Questions about faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you.",
               },
               {
                 label: "Every tool",
@@ -199,7 +199,7 @@ export default function Resources() {
               },
             ]}
           >
-            Built to be used on a Tuesday, not admired on a Sunday.
+            Things to use during the week.
           </HubGroup>
 
           <HubGroup
@@ -214,11 +214,11 @@ export default function Resources() {
               {
                 label: "Every eight-week plan",
                 href: "/plans",
-                note: "One practice, one reading, one tool, and one honest question each week, for grief, doubt, money, anger, caregiving, a marriage under strain, and more. Each prints as a booklet.",
+                note: "One practice, one reading, one tool, and one question each week, for grief, doubt, money, anger, caregiving, a marriage under strain, and more. Each prints as a booklet.",
               },
             ]}
           >
-            Eight-week plans walk with you through one season at a time. A few of them:
+            Each eight-week plan takes one hard season at a time. A few of them:
             <ul style={{ listStyle: "none", margin: "12px 0 0", padding: 0, display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {CARE_PLANS.map((p) => (
                 <li key={p.href}>
@@ -256,7 +256,7 @@ export default function Resources() {
               },
             ]}
           >
-            For the table where most faith is actually handed on.
+            For your own table.
           </HubGroup>
 
           <div style={{ marginTop: "var(--s-4)", maxWidth: "640px" }}>

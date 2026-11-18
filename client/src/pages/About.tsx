@@ -171,25 +171,25 @@ export default function About() {
 
       <Band tone="warm" title="The heart behind it" id="about-heart">
         <p>
-          LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. For the pastor who is quietly running on empty. For the husband and wife still keeping a promise they are no longer sure they understand. For the skeptic who keeps reading the words of a faith they have not decided to trust.
+          LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. It's for the pastor who is quietly running on empty, for the husband and wife still keeping a promise they're no longer sure they understand, and for the skeptic who keeps reading the words of a faith they haven't decided to trust.
         </p>
         <p>
-          America is not the churched country it used to be, and I do not spend much energy grieving that. The old assumptions are gone. Nobody owes Christianity a hearing anymore, which means the faith has to be commended the old way — argued honestly, lived visibly, offered without pressure. That is the world my sons are inheriting, and the world my church opens its doors into every Sunday, and I would rather meet it plainly than pretend it is 1955.
+          America isn't the churched country it used to be, and I don't spend much energy grieving that. The old assumptions are gone. Nobody owes Christianity a hearing anymore, which means the faith has to be commended the old way. It has to be argued, lived where people can see it, and offered without pressure. That's the world my sons are inheriting, and the world my church opens its doors into every Sunday, and I'd rather meet it plainly than pretend it's 1955.
         </p>
         <p>
-          What I want is simple to say and long to do. I want the historic faith — the creed, the cross, the resurrection, the kingdom — held out in ordinary language to people who have every cultural permission to ignore it. Not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture is anxious about this year, but the older thing underneath: what the church has confessed for two thousand years, put back in the same room as a Tuesday afternoon. I want the skeptic to find the argument honest even if they walk away. I want the tired Christian to find something sturdier than the last twenty years of American church life. And I am trying, unevenly, to be the kind of man who can commend it because it is visibly holding him up — not because it is his product.
+          What I want is simple to say. I want the historic faith (the creed, the cross, the resurrection, the kingdom) held out in ordinary language to people who have every cultural permission to ignore it. I don't mean a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture is anxious about this year. I mean the older thing underneath, what the church has confessed for two thousand years, put back in the same room as a Tuesday afternoon. I want the skeptic to find the argument honest even if they walk away. I want the tired Christian to find something sturdier than the last twenty years of American church life. And I'm trying, unevenly, to be the kind of man who can commend it because it's visibly holding him up, not because it's his product.
         </p>
       </Band>
 
       <Band tone="dark" title="The church and the ends of the earth" id="about-church">
         <p>
-          I pastor First Baptist Church of Fenton, Michigan. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Years in that room will take the abstraction out of almost anyone.
+          I pastor First Baptist Church of Fenton, Michigan, and that's the room where everything here gets tested. These essays weren't written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Years in that room will take the abstraction out of almost anyone.
         </p>
         <p>
-          I also founded ENDS, which equips pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
+          I also founded ENDS, which equips pastors in remote regions around the world. The aim isn't to send Americans to do their work for them or to hand them a translated version of our assumptions. It's to put training in the hands of the men already there, who know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
         </p>
         <p>
-          The rest of it is writing. Books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+          The rest of it is writing. There are books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. There are the essays here, the <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It's all one project, really. I'm trying to put theology back in contact with ordinary life.{" "}
           <Link href="/books">The books are here</Link>.
         </p>
       </Band>
@@ -206,7 +206,7 @@ export default function About() {
           </div>
         ))}
         <p>
-          LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
+          LiveWell isn't therapy and it isn't Christian self-help. It won't hand you something to think so you can stop thinking. It's closer to a writing desk, where a pastor with years of mistakes behind him and five sons in front of him tries to think out loud about what it means to follow Jesus in a country that has mostly forgotten what his kingdom was about.
         </p>
       </Band>
 
@@ -218,7 +218,7 @@ export default function About() {
           </HubGroup>
           <HubGroup id="elsewhere" title="Everywhere James is" links={ELSEWHERE}>
             The essays and books live here. ENDS, the podcast, and the daily notes live elsewhere.
-            Same voice, different rooms.
+            It's the same person in each place.
           </HubGroup>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default function About() {
       <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter}` }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2vw, 24px)", lineHeight: 1.55, color: "var(--charcoal-fg)", margin: "0 0 var(--s-4)" }}>
-            You may still be deciding whether to trust the voice. That is the right instinct, and you should keep it. The writing will either carry weight for you or it will not, and I would rather you find that out for yourself than be talked into it. Begin where you actually are.
+            You may still be deciding whether to trust me. That's the right instinct, and you should keep it. The writing will either hold up for you or it won't, and I'd rather you find that out for yourself than be talked into it.
           </p>
           <Link href="/writing" className="about-more about-more--dark">
             Read the essays
