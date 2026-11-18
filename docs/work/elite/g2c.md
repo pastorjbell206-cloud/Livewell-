@@ -314,6 +314,7 @@ Stopped at a clean guide boundary after witness, to leave room for the gates and
 - `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
 - Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean (one "showing up" in womanhood caught and changed). "Blessed" appears only as a verb or inside quoted Scripture; every exclamation point is inside quoted Scripture.
 - Web searches: 1 for womanhood (Junia, Chrysostom, Aegidius), 1 for work-and-vocation (Luther's milkmaid).
+- Gates, after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed, each exit code checked; `pnpm test`: 144 files passed, 7 skipped (1,642 tests passed, 73 skipped).
 
 ### Not done or not verified (ninth run)
 
