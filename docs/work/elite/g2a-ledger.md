@@ -72,3 +72,28 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Murthy, Together (2020); Butterfield, The Gospel Comes with a House Key (2018); Earley, Made for People; Block, Community (2008) | Known | Kept; "Leader to confirm" removed |
 | FAQ "Why does the study keep implicating the writer" | About method | Cut |
 | Case studies told as real | No source | Reframed as "Suppose" |
+
+## anger
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography as credential (summary, primer, FAQ, script, promo) | Credential use | Removed everywhere |
+| Opening story of someone who prayed to stop being angry | Told as a pattern, not a named person | Kept as a general pattern |
+| "The single most quoted self-description in the Bible" (Exodus 34:6) | Overstated as a statistic | Reworded: the words recur through the Old Testament (Numbers 14:18, Psalm 103:8, Joel 2:13, Jonah 4:2, Nahum 1:3), each cited |
+| Erek appayim, "long of nostrils" | Known (Hebrew idiom) | Kept |
+| Temple: pilgrims fleeced by "rigged exchange rates" | Not in the text; a common inference | Cut; kept to the texts' own words ("house of trade," "den of robbers") |
+| Matthew 18:22 "seventy times seven" | ESV reads "seventy-seven times" (footnote: seventy times seven) | Corrected to the ESV |
+| Sinai "circa 1446 BC" | Disputed | "Date debated" |
+| Jonah "circa 760 BC" | Jonah son of Amittai served under Jeroboam II (2 Kings 14:25) | "8th century BC" |
+| Ephesians "circa AD 55" | Usually dated to Paul's imprisonment, early 60s | Corrected |
+| Evagrius and Gregory the Great on anger and wrath | Known | Kept, dated (late 300s; about 590) |
+| Augustine on disordered love and the passions | Known (City of God, Book 14) | Kept; bibliography entry changed from Confessions to The City of God, which holds the argument |
+| Aristotle on being angry at the right things, rightly | Known (Nicomachean Ethics) | Kept, marked paraphrased |
+| Edwards, 1741, on wrath and patience | Known ("Sinners in the Hands of an Angry God") | Kept, sermon named |
+| Kübler-Ross 1969, anger as a stage | Known (stages observed in dying patients) | Kept, context added |
+| Research: venting strengthens anger; grudges harm the holder | General findings, no study named in the old guide | Kept as general, stated modestly |
+| Keller, The Meaning of Marriage, for forgiveness as absorbing a debt | Not confirmed that this book carries that argument | Cut |
+| Bibliography entries "Jonah" and "Exodus" | Filler | Cut |
+| Powlison (2016), Chapman, Brauns (2008), Allender, Allender and Longman (1994), Bancroft (2002), Ingram and Johnson | Known | Kept; "Leader to confirm" removed. Brauns's title contains "Unpacking", a forbidden word, kept only because it is the book's title |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help sentences (domestic violence hotline, private way to reach the leader, forgiveness never requires returning to harm) | Word for word | Kept unchanged in the primer, FAQ and opening script |
