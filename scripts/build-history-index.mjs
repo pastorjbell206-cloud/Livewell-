@@ -64,7 +64,9 @@ const firstYear = (e) => {
   const m = String(e.dateRange).match(/\d{2,4}/);
   return m ? Number(m[0]) : 9999;
 };
-essays.sort((a, b) => rank(a) - rank(b) || firstYear(a) - firstYear(b) || a.title.localeCompare(b.title));
+// A tie on the first year falls to the slug, which does not change when a
+// title is reworded, so renaming an essay cannot renumber the course.
+essays.sort((a, b) => rank(a) - rank(b) || firstYear(a) - firstYear(b) || a.slug.localeCompare(b.slug));
 
 // The course and what hangs beside it. An era's span comes from the timeline
 // file, the same one the hub reads, so the two cannot disagree.

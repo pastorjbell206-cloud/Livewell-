@@ -20,7 +20,7 @@ import { BOOK_SHELF } from "@/lib/bookShelf";
 import { RSS_PATH, channelUrl, liveChannels } from "@/lib/channels";
 import { newestEssays } from "@/lib/newestEssays";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 function Band({
@@ -71,7 +71,7 @@ export default function Connect() {
             id="connect-title"
             style={{
               fontFamily: "var(--F)",
-              fontSize: "clamp(40px, 5.4vw, 64px)",
+              fontSize: "var(--fs-h1)",
               fontWeight: 400,
               lineHeight: 1.04,
               letterSpacing: "-0.02em",

@@ -87,7 +87,7 @@ export default function StudyBibleSearch() {
         </form>
       </Hero>
 
-      <section style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)", minHeight: "40vh" }}>
+      <section style={{ background: "var(--bone)", padding: "0 var(--gutter) var(--s-6)", minHeight: "40vh" }}>
         <div style={wrap}>
           {passage && (
             <Link href={passage.href} style={{ ...card, display: "block", padding: "14px var(--s-4)", margin: "0 0 var(--s-4)", borderLeft: "2px solid var(--mustard)", textDecoration: "none", backgroundImage: "none", color: "var(--ink)" }}>
@@ -159,7 +159,7 @@ export default function StudyBibleSearch() {
               )}
               {hits.length > shown && (
                 <p style={{ margin: "var(--s-4) 0 0" }}>
-                  <button type="button" onClick={() => setShown((n) => n + PAGE)} style={{ minHeight: "46px", padding: "0 22px", borderRadius: "999px", border: "1px solid var(--ink)", background: "transparent", color: "var(--ink)", cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
+                  <button type="button" className="btn btn--quiet" onClick={() => setShown((n) => n + PAGE)}>
                     Show {Math.min(PAGE, hits.length - shown)} more of {hits.length.toLocaleString("en-US")}
                   </button>
                 </p>

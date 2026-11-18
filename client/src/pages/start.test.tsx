@@ -49,7 +49,7 @@ describe("/start", () => {
     expect(catechism.every((q: { answer?: string; kidsAnswer?: string }) => q.answer && q.kidsAnswer)).toBe(true);
     // The plans and the study, by the names the steps use.
     expect(json("client/public/plans/prayer.json").title).toBe("Eight Weeks of Learning to Pray");
-    expect(json("client/public/plans/new-believer.json").title).toBe("Eight Weeks of Beginnings");
+    expect(json("client/public/plans/new-believer.json").title).toBe("Eight Weeks for a New Christian");
     const guide = json("client/public/studyguides/new-believer.json");
     expect(guide.sessions).toHaveLength(5);
     expect(guide.leaderPrimer).toBeTruthy();

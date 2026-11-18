@@ -36,22 +36,22 @@
       "sources": 2
     },
     {
-      "slug": "the-great-councils",
-      "title": "Nicaea to Chalcedon: The Councils That Wrote the Creeds",
-      "blurb": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
-      "era": "The Age of the Councils",
-      "dateRange": "AD 325-451",
-      "course": 5,
-      "sources": 3
-    },
-    {
       "slug": "the-fathers-at-work",
       "title": "The Church Fathers: The Teachers Who Carried the Faith Between the Councils",
       "blurb": "The councils wrote the creeds, but the doctrine was carried between the meetings, in exiles, letters, famine relief, and one long fight over grace. The people who did the work.",
       "era": "The Age of the Councils",
       "dateRange": "AD 325-430",
-      "course": 6,
+      "course": 5,
       "sources": 1
+    },
+    {
+      "slug": "the-great-councils",
+      "title": "Nicaea to Chalcedon: The Councils That Wrote the Creeds",
+      "blurb": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
+      "era": "The Age of the Councils",
+      "dateRange": "AD 325-451",
+      "course": 6,
+      "sources": 3
     },
     {
       "slug": "the-church-that-outlived-rome",

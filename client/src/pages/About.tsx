@@ -20,7 +20,6 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Figure } from "@/components/Figure";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
-import { SITE_STATS } from "@/config/siteStats";
 import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { SAME_AS, liveChannels } from "@/lib/channels";
 import { HOME_WHY, PORTRAIT_URL } from "@/lib/positioning";
