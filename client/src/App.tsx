@@ -292,6 +292,8 @@ const ToHelpDoubtRedirect = redirectTo("/help/doubt");
 const ToHelpParentingRedirect = redirectTo("/help/parenting");
 const ToHelpDeconstructingRedirect = redirectTo("/help/deconstructing");
 const ToAboutRedirect = redirectTo("/about");
+// James, 2026-11-18: one short address for his bios, landing on "Find James".
+const ToConnectRedirect = redirectTo("/connect");
 const ToHelpChurchHurtRedirect = redirectTo("/help/church-hurt");
 // James, 2026-11-17: the Pastors Connection Network stays outside this site,
 // so the old pastors' addresses land on this site's own pages, and the
@@ -621,6 +623,7 @@ function Router() {
         <Route path="/tools/glossary" component={ToolsGlossary} />
         <Route path="/work-with-james" component={ToSpeakingRedirect} />
         <Route path="/connect" component={Connect} />
+        <Route path="/james" component={ToConnectRedirect} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
         <Route path="/terms" component={Terms} />

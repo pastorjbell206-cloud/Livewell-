@@ -19,6 +19,8 @@ import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
 import { listPublishedInput, pickListing } from "./posts-listing";
+import { createSubstackCache } from "@shared/substackLatest";
+
 import {
   // Files
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
@@ -37,6 +39,9 @@ import {
   createNotification, listNotifications, getBannerNotifications,
   createAdminNotification, listAdminNotifications, markAdminNotificationAsRead,
 } from "./db";
+
+// The newest Substack titles for /connect: one fetch an hour at most, [] on any failure.
+const substackLatest = createSubstackCache();
 
 export const appRouter = router({
   system: systemRouter,
@@ -541,6 +546,12 @@ export const appRouter = router({
       }),
 
     listAll: adminProcedure.query(async () => listNotifications(false)),
+  }),
+
+  // ─── Substack: the newest titles, linked out (shared/substackLatest.ts) ──
+  // Read-only and public. Mirrored in api/index.ts ("substack.latest").
+  substack: router({
+    latest: publicProcedure.query(() => substackLatest()),
   }),
 
   // ─── Admin Notifications ─────────────────────────────────────────

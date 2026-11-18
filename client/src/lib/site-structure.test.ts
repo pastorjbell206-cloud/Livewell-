@@ -92,6 +92,8 @@ const FOLDED: Record<string, string> = {
   "/doubt": "/answers",
   "/substack": "/subscribe",
   "/work-with-james": "/speaking",
+  // James, 2026-11-18: the short address for his bios.
+  "/james": "/connect",
   // The no-decision cleanup (U06): the pre-elevation family and marriage hubs,
   // and the six crisis landings that duplicated a Find Help page.
   "/for-families": "/family",

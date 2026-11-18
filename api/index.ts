@@ -19,6 +19,9 @@ import STATIC_LIBRARY from "./static-library.generated.js";
 import SHELF_DATA from "../client/src/lib/shelf.json" with { type: "json" };
 // The committed index of essay files (client/public/essays), for the feed.
 import { ESSAY_OVERRIDES } from "../client/src/lib/essayOverrides.generated.js";
+// The newest Substack titles (substack.latest): titles, dates and links only,
+// [] on any failure. Pure and dependency-free; the dev router uses the same file.
+import { createSubstackCache } from "../shared/substackLatest.js";
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -1634,6 +1637,9 @@ const MUTATION_PROCS = new Set<string>([
   "files.upload", "files.updateDescription", "files.delete",
 ]);
 
+// substack.latest: one feed fetch an hour per warm instance (shared/substackLatest.ts).
+const substackLatest = createSubstackCache();
+
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
     if (MUTATION_PROCS.has(proc) && req.method !== "POST") {
@@ -1682,6 +1688,14 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         ].join("; ");
         res.setHeader("Set-Cookie", logoutCookie);
         return trpcOk(res, { ok: true });
+      }
+      case "substack.latest": {
+        // Titles, dates and substack.com links only; [] on any failure.
+        const items = await substackLatest();
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("Cache-Control", items.length ? "public, s-maxage=3600, stale-while-revalidate=600" : "public, s-maxage=300");
+        res.status(200).send(JSON.stringify([{ result: { data: superjson.serialize(items) } }]));
+        return;
       }
       case "posts.listPublished": {
         const data = pickListing(await trpcListPosts(), input);
@@ -2744,6 +2758,9 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         await withConn(async (c) => { await c.execute("DELETE FROM comments WHERE id = ?", [input?.id ?? input]); });
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "substack.latest":
+      // Titles, dates and substack.com links only; [] on any failure.
+      return { result: { data: superjson.serialize(await substackLatest()) } };
     case "feedSync.getStatus":
       return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://jamesbell333289.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
     case "feedSync.syncAll":

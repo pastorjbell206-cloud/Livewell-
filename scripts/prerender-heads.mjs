@@ -85,6 +85,14 @@ const STATIC_PAGES = [
     get image() { return ogImageUrl("Books by James Bell", "LiveWell"); },
   },
   {
+    path: "/connect",
+    title: "Find James Bell: Substack, Facebook, Podcast, and Books",
+    description: "Everything James Bell does, on one page: LiveWell, his Substack, his Facebook, the Following the Way podcast, ENDS, his books, speaking, and contact.",
+    type: "website",
+    // Its own share card: the address James puts in his Facebook and Substack profiles.
+    get image() { return ogImageUrl("Find James Bell", "LiveWell"); },
+  },
+  {
     path: "/tools",
     title: "Free Bible Study, Prayer, and Family Tools",
     description: "Free tools for Bible study, prayer, marriage, and family life: a verse finder, written prayers, a family devotion builder, and self-checks.",

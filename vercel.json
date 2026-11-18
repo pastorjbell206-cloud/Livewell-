@@ -1255,6 +1255,11 @@
       "permanent": true
     },
     {
+      "source": "/james",
+      "destination": "/connect",
+      "permanent": true
+    },
+    {
       "source": "/parenting",
       "destination": "/family",
       "permanent": true
