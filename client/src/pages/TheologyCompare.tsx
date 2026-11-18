@@ -5,11 +5,15 @@
  * easy to scan. Reads the same doctrine JSON the doctrine pages use, so it
  * needs no content of its own.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
+import InnerHead from "@/components/art/InnerHead";
+import SectionHead from "@/components/art/SectionHead";
+import { LibCard } from "@/components/art/LibraryIndex";
+import { Scale } from "lucide-react";
 import { DOCTRINE_INDEX, type Doctrine } from "@/lib/theology";
 
 const wrap = { maxWidth: "var(--w-wide)", margin: "0 auto" } as const;
@@ -37,6 +41,15 @@ export default function TheologyCompare() {
 
   const col = `minmax(220px, 1fr)`;
 
+  /** The rows of the table, by the label each row carries. */
+  const rows: { label: string; cell: (p: Doctrine["positions"][number]) => string; style: CSSProperties }[] = [
+    { label: "In one line", cell: (p) => p.inOneLine, style: { fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", fontWeight: 500 } },
+    { label: "The case, in brief", cell: (p) => p.bestCase.split("\n\n")[0], style: { fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)" } },
+    { label: "Voices", cell: (p) => p.advocates.join(", "), style: { fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)" } },
+    { label: "Key texts", cell: (p) => p.keyTexts.join(" · "), style: { fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.7, color: "var(--ink-muted)" } },
+  ];
+  const label: CSSProperties = { background: "var(--bone-warm)", padding: "14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" };
+
   return (
     <Layout>
       <SEOMeta
@@ -45,89 +58,92 @@ export default function TheologyCompare() {
         url="https://www.livewellbyjamesbell.co/theology/compare"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · Where Christians differ</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Compare Christian views, side by side
-          </h1>
-          <p className="page-standfirst">See the positions side by side.</p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch", marginBottom: "20px" }}>
+      <InnerHead path="/theology/compare" title="Where Christians differ" line="Compare Christian views, side by side" plate="arch">
+        <p className="pg-head__lede">See the positions side by side.</p>
+      </InnerHead>
+
+      {/* FIRST: pick a doctrine. */}
+      <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="tc-pick-title">
+        <div className="home-wrap">
+          <SectionHead dark icon={Scale} label={`${ready.length} doctrines`} title="Pick a doctrine." id="tc-pick-title" />
+          <p className="lw-group__line" style={{ color: "var(--charcoal-fg-muted)" }}>
             Pick a doctrine and lay its views in a row. The same fair treatment as the full doctrine pages, arranged so you can scan the differences at a glance.
           </p>
-          <select value={slug} onChange={(e) => setSlug(e.target.value)} aria-label="Choose a doctrine"
-            style={{ fontFamily: "var(--B)", fontSize: "16px", padding: "12px 16px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)", minWidth: "min(440px, 100%)", maxWidth: "100%" }}>
+          <label htmlFor="tc-doctrine" className="lw-find__label">
+            Choose a doctrine
+          </label>
+          <select
+            id="tc-doctrine"
+            value={slug}
+            onChange={(e) => setSlug(e.target.value)}
+            style={{ fontFamily: "var(--B)", fontSize: "17px", minHeight: "52px", padding: "12px 16px", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", borderBottom: "2px solid var(--mustard)", background: "var(--charcoal-fg)", color: "var(--charcoal)", width: "min(560px, 100%)" }}
+          >
             {ready.map((d) => <option key={d.slug} value={d.slug}>{d.title}</option>)}
           </select>
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
+      <section className="home-sec" style={{ paddingLeft: "var(--gutter)", paddingRight: "var(--gutter)" }}>
         <div style={wrap}>
           {!doc && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {doc && (
             <>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px", marginBottom: "var(--s-4)" }}>
                 <TriageBadge triage={doc.triage} withShort />
-                <Link href={`/theology/doctrine/${doc.slug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", marginLeft: "auto" }}>Read the full doctrine →</Link>
+                <Link href={`/theology/doctrine/${doc.slug}`} className="btn--text" style={{ marginLeft: "auto" }}>Read the full doctrine →</Link>
               </div>
 
-              <p className="scroll-hint" style={{ fontFamily: "var(--U)", fontSize: "12px", color: "var(--ink-muted)", marginBottom: "8px" }}>
-                Swipe sideways to see every column.
-              </p>
-              <div style={{ overflowX: "auto", paddingBottom: "8px", WebkitOverflowScrolling: "touch" }}>
-                <div style={{ display: "grid", gridTemplateColumns: `140px repeat(${doc.positions.length}, ${col})`, gap: "1px", background: "var(--border)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", minWidth: `${140 + doc.positions.length * 240}px` }}>
-                  {/* Header row */}
-                  <div style={{ background: "var(--charcoal)" }} />
-                  {doc.positions.map((p) => (
-                    <div key={p.name} style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "14px", fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, borderTop: "3px solid var(--mustard)" }}>{p.name}</div>
-                  ))}
-
-                  {/* In one line */}
-                  <div style={{ background: "var(--bone-warm)", padding: "14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" }}>In one line</div>
-                  {doc.positions.map((p) => (
-                    <div key={p.name} style={{ background: "var(--card)", padding: "14px", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", fontWeight: 500 }}>{p.inOneLine}</div>
-                  ))}
-
-                  {/* The case */}
-                  <div style={{ background: "var(--bone-warm)", padding: "14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" }}>The case, in brief</div>
-                  {doc.positions.map((p) => (
-                    <div key={p.name} style={{ background: "var(--card)", padding: "14px", fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.65, color: "var(--ink-muted)" }}>{p.bestCase.split("\n\n")[0]}</div>
-                  ))}
-
-                  {/* Advocates */}
-                  <div style={{ background: "var(--bone-warm)", padding: "14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" }}>Voices</div>
-                  {doc.positions.map((p) => (
-                    <div key={p.name} style={{ background: "var(--card)", padding: "14px", fontFamily: "var(--B)", fontSize: "13px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{p.advocates.join(", ")}</div>
-                  ))}
-
-                  {/* Key texts */}
-                  <div style={{ background: "var(--bone-warm)", padding: "14px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--mustard-text)" }}>Key texts</div>
-                  {doc.positions.map((p) => (
-                    <div key={p.name} style={{ background: "var(--card)", padding: "14px", fontFamily: "var(--U)", fontSize: "13px", lineHeight: 1.7, color: "var(--ink-muted)" }}>{p.keyTexts.join(" · ")}</div>
+              {/* A laptop: one table, the views in columns. */}
+              <div className="tc-table" style={{ overflowX: "auto", paddingBottom: "8px", WebkitOverflowScrolling: "touch" }}>
+                <div role="table" aria-label={`${doc.title}: the views side by side`} style={{ display: "grid", gridTemplateColumns: `140px repeat(${doc.positions.length}, ${col})`, gap: "1px", background: "var(--border)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", minWidth: `${140 + doc.positions.length * 240}px` }}>
+                  <div role="row" style={{ display: "contents" }}>
+                    <div role="columnheader" style={{ ...label, background: "var(--charcoal)", color: "var(--mustard)", borderTop: "3px solid var(--mustard)" }}>View</div>
+                    {doc.positions.map((p) => (
+                      <div role="columnheader" key={p.name} style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "14px", fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, borderTop: "3px solid var(--mustard)" }}>{p.name}</div>
+                    ))}
+                  </div>
+                  {rows.map((r) => (
+                    <div role="row" key={r.label} style={{ display: "contents" }}>
+                      <div role="rowheader" style={label}>{r.label}</div>
+                      {doc.positions.map((p) => (
+                        <div role="cell" key={p.name} style={{ background: "var(--card)", padding: "14px", ...r.style }}>{r.cell(p)}</div>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </div>
+
+              {/* A phone: each view as its own card, so no column stands empty. */}
+              <ul className="tc-cards">
+                {doc.positions.map((p) => (
+                  <li key={p.name} className="tc-card">
+                    <h2 className="tc-card__name">{p.name}</h2>
+                    <dl>
+                      {rows.map((r) => (
+                        <div key={r.label}>
+                          <dt>{r.label}</dt>
+                          <dd style={r.style}>{r.cell(p)}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </li>
+                ))}
+              </ul>
               <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", fontStyle: "italic", marginTop: "12px" }}>The case shown is the opening of each position's own statement. Read the full doctrine for the whole argument, the biblical evidence, and where the author lands.</p>
             </>
           )}
         </div>
       </section>
 
-      {/* The six written comparisons — prose treatments of the pairings
-          readers search for by name. This page linked none of them before. */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.015em", color: "var(--ink)", marginBottom: "8px" }}>
-            The worked comparisons.
-          </h2>
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "20px" }}>
+      {/* The six written comparisons, prose treatments of the pairings readers search for by name. */}
+      <section className="home-sec home-sec--warm" aria-labelledby="tc-worked-title">
+        <div className="home-wrap">
+          <SectionHead icon={Scale} label="Six pairings" title="The worked comparisons." id="tc-worked-title" />
+          <p className="lw-group__line">
             Six pairings written out in full — history, worship, doctrine, and
             what each tradition would say about the other, stated fairly.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "12px" }}>
+          <ul className="lw-index">
             {[
               { href: "/compare/catholic-vs-protestant", label: "Catholic vs. Protestant" },
               { href: "/compare/calvinism-vs-arminianism", label: "Calvinism vs. Arminianism" },
@@ -136,11 +152,11 @@ export default function TheologyCompare() {
               { href: "/compare/orthodox-vs-catholic", label: "Orthodox vs. Catholic" },
               { href: "/compare/liturgical-vs-contemporary", label: "Liturgical vs. Contemporary worship" },
             ].map((c) => (
-              <Link key={c.href} href={c.href} style={{ display: "block", background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "14px 16px", fontFamily: "var(--U)", fontSize: "14.5px", fontWeight: 500, color: "var(--ink)", textDecoration: "none" }}>
-                {c.label} →
-              </Link>
+              <li key={c.href}>
+                <LibCard item={{ href: c.href, title: c.label }} icon={Scale} />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
     </Layout>
