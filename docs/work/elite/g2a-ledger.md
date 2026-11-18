@@ -118,3 +118,25 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Matthew 11:29 the only place Jesus describes his own heart | Widely observed (Ortlund) | Kept as "the one time in the Gospels" |
 | FAQ "Why does the study keep implicating the writer" | About method | Cut |
 | Help lines (988) | Word for word | Three sentences unchanged in the primer, FAQ and closing script |
+
+## attention
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell does not write this from a mountain" and other narrator lines | Rulebook | Removed; the writer's inclusion is now in his own first person |
+| People choose a mild shock over fifteen minutes alone (Wilson et al., Science, 2014) | Web search (ScienceDaily; Harvard DASH record) | Kept, corrected: 6 to 15 minutes alone; shocks chosen in one experiment (12 of 18 men, 6 of 24 women). Teaching and timeline now say so |
+| Socrates on writing and memory | Known (Plato, Phaedrus) | Kept, source named |
+| Haidt, The Anxious Generation, 2024; early-2010s rise, heaviest among girls | Known | Kept; the dispute among researchers is stated in the teaching, objection and FAQ |
+| Simone Weil: attention at its highest is prayer; attention to a sufferer is rare, nearly a miracle | Known in substance (Gravity and Grace; "Reflections on the Right Use of School Studies", 1942, in Waiting for God) | Kept as paraphrase only, no quotation marks |
+| Augustine, restless heart; Confessions "circa 400" | Known | Kept; dated about 397 to 400 |
+| Smith, You Are What You Love, 2016 | Known | Kept, argument stated as his |
+| Hagah: to murmur, mutter; growl of a lion | Known (Isaiah 31:4) | Kept, verse named |
+| Lectio divina in four movements | Known | Kept, unattributed |
+| Sinai "circa 1446 BC"; Psalms "circa 1000 BC" | Disputed / Psalms span centuries | "Date debated"; "Over many centuries" |
+| "2008: first smartphones with full app ecosystems" | Known (iPhone 2007, App Store 2008, front camera 2010) | "2007 to 2012" with the pieces named |
+| "Four hundred years of slavery" | Exodus 12:40 says 430 years in Egypt | "Generations of slavery" |
+| 1 Kings 19:12 "still small voice" | That is the KJV; the ESV reads "the sound of a low whisper" | Corrected to the ESV |
+| Trellis image "from contemporary writers" | Unattributed | Kept as an image; no source claimed |
+| Desert Sayings, Earley (2019), Comer (2019), Turkle (2015), Taylor (2007), Postman (1985), Benedict, Haidt, Smith | Known | Kept; four "Leader to confirm" notes removed |
+| FAQ claim that "the writer came at this not as an insider" | Implies biography | Cut |
+| Help lines | Old guide had none | A short line added to the primer: take danger seriously, get real help that day, not medical advice |
