@@ -31,8 +31,24 @@ const PropheticJustice101ThankYou = lazy(() => import("./pages/books/PropheticJu
 const MarriageInMinistryThankYou = lazy(() => import("./pages/books/MarriageInMinistryThankYou"));
 const TheLonelinessOfThePastorThankYou = lazy(() => import("./pages/books/TheLonelinessOfThePastorThankYou"));
 const HeavenIsNotYourRewardThankYou = lazy(() => import("./pages/books/HeavenIsNotYourRewardThankYou"));
+const BabylonThankYou = lazy(() => import("./pages/books/BabylonThankYou"));
+const BornAgainFromAtheismThankYou = lazy(() => import("./pages/books/BornAgainFromAtheismThankYou"));
+const FaithAfterDeconstructionThankYou = lazy(() => import("./pages/books/FaithAfterDeconstructionThankYou"));
+const HowToReadTheBibleThankYou = lazy(() => import("./pages/books/HowToReadTheBibleThankYou"));
+const WhyNotWhatThankYou = lazy(() => import("./pages/books/WhyNotWhatThankYou"));
+const TheGodWhoIsNotNiceThankYou = lazy(() => import("./pages/books/TheGodWhoIsNotNiceThankYou"));
+const TheScandalOfTheCrossThankYou = lazy(() => import("./pages/books/TheScandalOfTheCrossThankYou"));
+const PrayerInTheDarkThankYou = lazy(() => import("./pages/books/PrayerInTheDarkThankYou"));
+const BeTrueToYourselfThankYou = lazy(() => import("./pages/books/BeTrueToYourselfThankYou"));
+const RuleOfLifeThankYou = lazy(() => import("./pages/books/RuleOfLifeThankYou"));
+const OrdinaryHolinessThankYou = lazy(() => import("./pages/books/OrdinaryHolinessThankYou"));
+const CovenantThankYou = lazy(() => import("./pages/books/CovenantThankYou"));
+const HealWellThankYou = lazy(() => import("./pages/books/HealWellThankYou"));
+const TheBodyYouLeftThankYou = lazy(() => import("./pages/books/TheBodyYouLeftThankYou"));
+const SermonOnTheMountAsPoliticsThankYou = lazy(() => import("./pages/books/SermonOnTheMountAsPoliticsThankYou"));
+const WhatBelongsToThePoorThankYou = lazy(() => import("./pages/books/WhatBelongsToThePoorThankYou"));
 const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
-// An ebook held back until James sends a corrected file (2026-11-18).
+// An ebook held back (2026-11-18): seven wait for corrected files, sixteen older ones are off for now.
 const HeldEbook = lazy(() => import("./pages/HeldEbook"));
 const Believe = lazy(() => import("./pages/Believe"));
 const DeconstructionOfFaith = lazy(() => import("./pages/DeconstructionOfFaith"));
@@ -444,26 +460,26 @@ function Router() {
         <Route path="/consider-the-birds" component={HeldEbook} />
         <Route path="/where-your-treasure-is" component={HeldEbook} />
         <Route path="/alone-in-a-crowded-church" component={HeldEbook} />
-        <Route path="/covenant" component={ToDownloadsRedirect} />
-        <Route path="/babylon" component={ToDownloadsRedirect} />
-        <Route path="/how-to-read-the-bible" component={ToDownloadsRedirect} />
-        <Route path="/be-true-to-yourself" component={ToDownloadsRedirect} />
-        <Route path="/what-belongs-to-the-poor" component={ToDownloadsRedirect} />
-        <Route path="/rule-of-life" component={ToDownloadsRedirect} />
-        <Route path="/why-not-what" component={ToDownloadsRedirect} />
-        <Route path="/sermon-on-the-mount-as-politics" component={ToDownloadsRedirect} />
+        <Route path="/covenant" component={HeldEbook} />
+        <Route path="/babylon" component={HeldEbook} />
+        <Route path="/how-to-read-the-bible" component={HeldEbook} />
+        <Route path="/be-true-to-yourself" component={HeldEbook} />
+        <Route path="/what-belongs-to-the-poor" component={HeldEbook} />
+        <Route path="/rule-of-life" component={HeldEbook} />
+        <Route path="/why-not-what" component={HeldEbook} />
+        <Route path="/sermon-on-the-mount-as-politics" component={HeldEbook} />
         <Route path="/prophetic-justice-101" component={HeldEbook} />
         <Route path="/marriage-in-ministry" component={HeldEbook} />
         <Route path="/the-loneliness-of-the-pastor" component={HeldEbook} />
-        <Route path="/healwell" component={ToDownloadsRedirect} />
-        <Route path="/born-again-from-atheism" component={ToDownloadsRedirect} />
-        <Route path="/the-god-who-is-not-nice" component={ToDownloadsRedirect} />
-        <Route path="/faith-after-deconstruction" component={ToDownloadsRedirect} />
-        <Route path="/ordinary-holiness" component={ToDownloadsRedirect} />
-        <Route path="/the-scandal-of-the-cross" component={ToDownloadsRedirect} />
+        <Route path="/healwell" component={HeldEbook} />
+        <Route path="/born-again-from-atheism" component={HeldEbook} />
+        <Route path="/the-god-who-is-not-nice" component={HeldEbook} />
+        <Route path="/faith-after-deconstruction" component={HeldEbook} />
+        <Route path="/ordinary-holiness" component={HeldEbook} />
+        <Route path="/the-scandal-of-the-cross" component={HeldEbook} />
         <Route path="/heaven-is-not-your-reward" component={HeldEbook} />
-        <Route path="/prayer-in-the-dark" component={ToDownloadsRedirect} />
-        <Route path="/the-body-you-left" component={ToDownloadsRedirect} />
+        <Route path="/prayer-in-the-dark" component={HeldEbook} />
+        <Route path="/the-body-you-left" component={HeldEbook} />
         <Route path="/for-families" component={ToFamilyRedirect} />
         <Route path="/pillars" component={ToWritingRedirect} />
         <Route path="/living-well" component={ToWritingRedirect} />
@@ -522,31 +538,31 @@ function Router() {
         <Route path="/books/critical-race-theory-biblical/thank-you" component={ToDownloadsRedirect} />
         <Route path="/books/critical-race-theory-biblical" component={IsCriticalRaceTheoryBiblical} />
         <Route path="/books/:slug" component={BookDetail} />
-        {/* Old thank-you pages. Free books land on /downloads; the seven held books keep their paid download for past buyers. */}
+        {/* Old thank-you pages. The twenty-three held ebooks keep their paid download for past buyers. */}
         <Route path="/consider-the-birds/thank-you" component={ConsiderTheBirdsThankYou} />
         <Route path="/where-your-treasure-is/thank-you" component={WhereYourTreasureIsThankYou} />
         <Route path="/alone-in-a-crowded-church/thank-you" component={AloneInACrowdedChurchThankYou} />
-        <Route path="/covenant/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/babylon/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/how-to-read-the-bible/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/be-true-to-yourself/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/what-belongs-to-the-poor/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/rule-of-life/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/why-not-what/thank-you" component={ToDownloadsRedirect} />
+        <Route path="/covenant/thank-you" component={CovenantThankYou} />
+        <Route path="/babylon/thank-you" component={BabylonThankYou} />
+        <Route path="/how-to-read-the-bible/thank-you" component={HowToReadTheBibleThankYou} />
+        <Route path="/be-true-to-yourself/thank-you" component={BeTrueToYourselfThankYou} />
+        <Route path="/what-belongs-to-the-poor/thank-you" component={WhatBelongsToThePoorThankYou} />
+        <Route path="/rule-of-life/thank-you" component={RuleOfLifeThankYou} />
+        <Route path="/why-not-what/thank-you" component={WhyNotWhatThankYou} />
         <Route path="/sermon-series" component={ToStudyRedirect} />
-        <Route path="/sermon-on-the-mount-as-politics/thank-you" component={ToDownloadsRedirect} />
+        <Route path="/sermon-on-the-mount-as-politics/thank-you" component={SermonOnTheMountAsPoliticsThankYou} />
         <Route path="/prophetic-justice-101/thank-you" component={PropheticJustice101ThankYou} />
         <Route path="/marriage-in-ministry/thank-you" component={MarriageInMinistryThankYou} />
         <Route path="/the-loneliness-of-the-pastor/thank-you" component={TheLonelinessOfThePastorThankYou} />
-        <Route path="/healwell/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/born-again-from-atheism/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/the-god-who-is-not-nice/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/faith-after-deconstruction/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/ordinary-holiness/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/the-scandal-of-the-cross/thank-you" component={ToDownloadsRedirect} />
+        <Route path="/healwell/thank-you" component={HealWellThankYou} />
+        <Route path="/born-again-from-atheism/thank-you" component={BornAgainFromAtheismThankYou} />
+        <Route path="/the-god-who-is-not-nice/thank-you" component={TheGodWhoIsNotNiceThankYou} />
+        <Route path="/faith-after-deconstruction/thank-you" component={FaithAfterDeconstructionThankYou} />
+        <Route path="/ordinary-holiness/thank-you" component={OrdinaryHolinessThankYou} />
+        <Route path="/the-scandal-of-the-cross/thank-you" component={TheScandalOfTheCrossThankYou} />
         <Route path="/heaven-is-not-your-reward/thank-you" component={HeavenIsNotYourRewardThankYou} />
-        <Route path="/prayer-in-the-dark/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/the-body-you-left/thank-you" component={ToDownloadsRedirect} />
+        <Route path="/prayer-in-the-dark/thank-you" component={PrayerInTheDarkThankYou} />
+        <Route path="/the-body-you-left/thank-you" component={TheBodyYouLeftThankYou} />
         <Route path="/substack" component={ToSubscribeRedirect} />
         <Route path="/about" component={About} />
         <Route path="/speaking" component={Speaking} />
