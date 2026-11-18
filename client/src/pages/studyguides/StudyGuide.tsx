@@ -61,7 +61,7 @@ const ALL_TABS = ["Leader", "Participant", "Devotional", "Facilitator", "Referen
 type Tab = typeof ALL_TABS[number];
 
 const card = { background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-5) var(--s-4)", marginBottom: "var(--s-4)", boxShadow: "0 1px 3px rgba(20,17,12,0.05)" } as const;
-const h3 = { fontFamily: "var(--F)", fontSize: "clamp(23px, 3vw, 29px)", fontWeight: 400, letterSpacing: "-0.015em", lineHeight: 1.2, color: "var(--ink)", marginBottom: "14px" } as const;
+const sessionTitle = { fontFamily: "var(--F)", fontSize: "clamp(23px, 3vw, 29px)", fontWeight: 400, letterSpacing: "-0.015em", lineHeight: 1.2, color: "var(--ink)", marginBottom: "14px" } as const;
 const lbl = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "10px" };
 const body = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.8, color: "var(--ink)" } as const;
 
@@ -174,7 +174,7 @@ export default function StudyGuide() {
               {tab === "Leader" && data.sessions.map((s) => (
                 <div key={s.n} style={card}>
                   <div style={lbl}>Session {s.n} · {s.timing.map((t) => `${t.segment} ${t.minutes}m`).join(" · ")}</div>
-                  <h3 style={h3}>{s.title}</h3>
+                  <h2 style={sessionTitle}>{s.title}</h2>
                   <p style={{ ...body, fontStyle: "italic", marginBottom: "12px" }}>Aim: {s.aim}</p>
                   {s.essaySlug && isPublicEssay(s.essaySlug) && <Link href={`/writing/${s.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)" }}>Read the essay for this session →</Link>}
                   {s.teaching && (<><div style={{ ...lbl, marginTop: "16px" }}>Teaching notes</div>{para(s.teaching)}</>)}
@@ -223,7 +223,7 @@ export default function StudyGuide() {
               {tab === "Participant" && data.sessions.map((s) => (
                 <div key={s.n} style={card}>
                   <div style={lbl}>Session {s.n}</div>
-                  <h3 style={h3}>{s.title}</h3>
+                  <h2 style={sessionTitle}>{s.title}</h2>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.summary}</p>
                   <div style={lbl}>Key Scripture</div>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.keyScripture.ref}</p>
@@ -238,7 +238,7 @@ export default function StudyGuide() {
               {tab === "Devotional" && data.sessions.map((s) => (
                 <div key={s.n} style={card}>
                   <div style={lbl}>Session {s.n} · the week between</div>
-                  <h3 style={h3}>{s.title}</h3>
+                  <h2 style={sessionTitle}>{s.title}</h2>
                   {(s.devotional ?? []).map((d) => (
                     <div key={d.day} style={{ marginBottom: "16px", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px" }}>
                       <div style={lbl}>Day {d.day} · {d.passage}</div>
