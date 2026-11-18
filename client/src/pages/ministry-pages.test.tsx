@@ -46,7 +46,7 @@ describe("/about", () => {
     expect(screen.queryByText(/Read the long version/)).toBeNull();
   });
 
-  it("links Speaking, Contact, the newsletter, PCN, and ENDS", () => {
+  it("links Speaking, Contact, the newsletter, and ENDS, and not the pastors' network", () => {
     stubContact(new Response("{}"));
     renderWithProviders(<About />);
     const reach = within(screen.getByRole("region", { name: "Reach James" }));
@@ -54,7 +54,7 @@ describe("/about", () => {
     expect(reach.getByRole("link", { name: /^Contact/ }).getAttribute("href")).toBe("/contact");
     expect(reach.getByRole("link", { name: /^The newsletter/ }).getAttribute("href")).toBe("/subscribe");
     const elsewhere = within(screen.getByRole("region", { name: "Everywhere James is" }));
-    expect(elsewhere.getByRole("link", { name: /^Pastors Connection Network/ }).getAttribute("href")).toBe("https://pastorsconnectionnetwork.com");
+    expect(elsewhere.queryByRole("link", { name: /Pastors Connection Network/ })).toBeNull();
     expect(elsewhere.getByRole("link", { name: /^ENDS/ }).getAttribute("href")).toBe("https://endsinitiative.org");
   });
 });

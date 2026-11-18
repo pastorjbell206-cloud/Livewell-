@@ -20,8 +20,8 @@ export default function Books() {
   return (
     <Layout>
       <SEOMeta
-        title="Books by James Bell — Three Titles, Written by Hand"
-        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free, then get the ebook for $8.99."
+        title="Books by James Bell"
+        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99."
         url={`${SITE_URL}/books`}
       />
 
@@ -55,8 +55,8 @@ export default function Books() {
           >
             I write about the church and the country, about reading the Bible without
             flattering ourselves, and about whether any of this holds up under honest
-            questions. The opening of each book is free to read. The rest costs $8.99,
-            which is less than the coffee you would read it over.
+            questions. Each one is an ebook for $8.99, which is less than the coffee you
+            would read it over.
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function Books() {
                   textDecoration: "none",
                 }}
               >
-                Read the opening free →
+                See what is in the book →
               </Link>
             </div>
           </div>
@@ -162,12 +162,6 @@ export default function Books() {
               style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
             >
               Read the essays
-            </Link>
-            <Link
-              href="/roadmap"
-              style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "rgba(245,240,230,0.75)", textDecoration: "none", borderBottom: "1px solid rgba(245,240,230,0.3)", paddingBottom: "2px" }}
-            >
-              What's being written
             </Link>
           </div>
         </div>

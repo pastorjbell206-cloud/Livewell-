@@ -7,13 +7,12 @@
  * the church and the networks, how the writing works, and how to reach him.
  * It also absorbs /connect, so the outside channels live here now.
  *
- * Facts still awaiting James's confirmation (years at FBC Fenton, his title
- * and church status, the book count) keep their existing wording exactly as
- * it was; do not edit them here until he confirms one set of numbers
- * (client/src/config/siteStats.ts, this page, scripts/prerender-heads.mjs,
- * components/AuthorBio.tsx). Speaking.tsx and the old WorkWithJames.tsx
- * carried a "fifteen years in one pulpit" line; it is left off /speaking
- * until he confirms which figure is right.
+ * Standing rule (docs/work/NOTES.md): this page states no title, no number
+ * of years in ministry, and no book count until James gives one set of
+ * facts. Those numbers were taken out of his paragraphs on 2026-11-17 and
+ * nothing else in them was reworded. The Pastors Connection Network is kept
+ * off this site at his word of the same day, so the paragraph about it and
+ * its link are gone; git history holds his words if he wants them back.
  */
 import type { ReactNode } from "react";
 import { Link } from "wouter";
@@ -21,7 +20,6 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Figure } from "@/components/Figure";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
-import { SITE_STATS } from "@/config/siteStats";
 import { SITE_URL } from "@/lib/site";
 import { SAME_AS, liveChannels } from "@/lib/channels";
 import { HOME_WHY, PORTRAIT_URL } from "@/lib/positioning";
@@ -39,18 +37,10 @@ const REACH: HubLink[] = [
   { label: "The newsletter", href: "/subscribe", note: "New essays in your inbox, plus thinking that never makes it to the site." },
 ];
 
-/** The work that lives at its own address, then the channels in lib/channels.ts. */
-const ELSEWHERE: HubLink[] = [
-  {
-    label: "Pastors Connection Network",
-    href: "https://pastorsconnectionnetwork.com",
-    note: "The Pastors Connection Network exists because the loneliest job in the building is the one standing up front. It lives at its own address now.",
-    external: true,
-  },
-  ...liveChannels()
-    .filter((c) => c.id !== "substack")
-    .map((c) => ({ label: c.label, href: c.url, note: c.blurb, external: true })),
-];
+/** The channels in lib/channels.ts that live at their own address. */
+const ELSEWHERE: HubLink[] = liveChannels()
+  .filter((c) => c.id !== "substack")
+  .map((c) => ({ label: c.label, href: c.url, note: c.blurb, external: true }));
 
 function Band({
   tone,
@@ -87,16 +77,16 @@ export default function About() {
   return (
     <Layout>
       <SEOMeta
-        title="About James Bell — Pastor, Author, Writer"
-        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books on theology, church history, justice, and ordinary life.`}
+        title="About James Bell"
+        description="James Bell pastors a church in Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons. His story, in his own words."
         type="website"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Person",
           name: "James Bell",
           url: `${SITE_URL}/about`,
-          jobTitle: "Lead Pastor, Author, Founder",
-          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author of ${SITE_STATS.bookCountWord} books, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips pastors in remote regions around the world.`,
+          jobTitle: "Pastor and writer",
+          description: "James Bell pastors First Baptist Church of Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons.",
           worksFor: {
             "@type": "Organization",
             name: "First Baptist Church of Fenton",
@@ -127,11 +117,10 @@ export default function About() {
               James Bell
             </h1>
             <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", margin: "0 0 var(--s-4)" }}>
-              Lead Pastor, First Baptist Church of Fenton<br />
-              Founder, Pastors Connection Network<br />
+              Pastor, First Baptist Church of Fenton, Michigan<br />
               Founder, ENDS, equipping pastors in remote regions<br />
               Host, Following the Way<br />
-              Author of {SITE_STATS.bookCount} books
+              Writer
             </p>
             <p
               style={{
@@ -192,18 +181,15 @@ export default function About() {
         </p>
       </Band>
 
-      <Band tone="dark" title="The church, the network, and the ends of the earth" id="about-church">
+      <Band tone="dark" title="The church and the ends of the earth" id="about-church">
         <p>
-          I have pastored First Baptist Church of Fenton, Michigan for twelve years. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Twelve years in that room will take the abstraction out of almost anyone.
-        </p>
-        <p>
-          I started the Pastors Connection Network for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. PCN now connects nearly eighteen thousand pastors to each other and to resources built by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
+          I pastor First Baptist Church of Fenton, Michigan. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Years in that room will take the abstraction out of almost anyone.
         </p>
         <p>
           I also founded ENDS, which equips pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
         </p>
         <p>
-          The rest of it is writing. {SITE_STATS.bookCount} books so far, on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+          The rest of it is writing. Books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
           <Link href="/books">The books are here</Link>.
         </p>
       </Band>
@@ -220,7 +206,7 @@ export default function About() {
           </div>
         ))}
         <p>
-          LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistryWord} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
+          LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
         </p>
       </Band>
 
@@ -231,8 +217,8 @@ export default function About() {
             Ask him to speak, write to him directly, or get the newsletter.
           </HubGroup>
           <HubGroup id="elsewhere" title="Everywhere James is" links={ELSEWHERE}>
-            The essays and books live here. The pastors&rsquo; network, ENDS, the podcast, and the daily
-            notes live elsewhere. Same voice, different rooms.
+            The essays and books live here. ENDS, the podcast, and the daily notes live elsewhere.
+            Same voice, different rooms.
           </HubGroup>
         </div>
       </section>

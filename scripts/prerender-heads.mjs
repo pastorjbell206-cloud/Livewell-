@@ -58,7 +58,7 @@ const STATIC_PAGES = [
   {
     path: "/about",
     title: "About James Bell",
-    description: "James Bell has pastored First Baptist Church of Fenton, Michigan for twelve years. He founded the Pastors Connection Network and ENDS, hosts the Following the Way podcast, and has written twenty-one books.",
+    description: "James Bell pastors a church in Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons. His story, in his own words.",
     type: "profile",
     schemas: [personSchema()],
   },
@@ -71,7 +71,7 @@ const STATIC_PAGES = [
   {
     path: "/books",
     title: "Books — by James Bell",
-    description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free.",
+    description: "The books James Bell wrote by hand: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99.",
     type: "website",
   },
   {
@@ -84,18 +84,6 @@ const STATIC_PAGES = [
     path: "/skeptic-track",
     title: "The Skeptic's Track — Start here",
     description: "Seven essays in argument order. Written for skeptics first by a pastor who came to faith from atheism. No conversion bait.",
-    type: "website",
-  },
-  {
-    path: "/roadmap",
-    title: "The Roadmap — 48 books",
-    description: "What James Bell has shipped, what's in development, and the planned roadmap of the next ten years.",
-    type: "website",
-  },
-  {
-    path: "/membership",
-    title: "Membership — LiveWell by James Bell",
-    description: "Full access to the essays, member-only writing, curated reading paths, and the deeper room where theology meets the weight of real life.",
     type: "website",
   },
   {
@@ -209,17 +197,19 @@ function ogImageUrl(title, pillar) {
   return `${SITE_URL}/api/og?${params.toString()}`;
 }
 
+/** The slugs on the /books shelf (client/src/lib/bookShelf.ts). */
+const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "the-monster-in-the-mirror", "believe"]);
+
 function personSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
     name: AUTHOR_NAME,
     url: SITE_URL,
-    jobTitle: "Lead Pastor, Author, Founder",
+    jobTitle: "Pastor and writer",
     description:
-      "Lead Pastor at First Baptist Church of Fenton, author of twenty-one books, and founder of the Pastors Connection Network.",
+      "James Bell pastors First Baptist Church of Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons.",
     sameAs: [
-      "https://pastorsconnectionnetwork.com",
       "https://substack.com/@jamesbell333289",
       "https://www.facebook.com/james.bell.609252",
     ],
@@ -236,7 +226,6 @@ function orgSchema() {
     founder: { "@type": "Person", name: AUTHOR_NAME, url: `${SITE_URL}/about` },
     sameAs: [
       "https://www.facebook.com/james.bell.609252",
-      "https://pastorsconnectionnetwork.com",
       "https://substack.com/@jamesbell333289",
     ],
   };
@@ -1195,7 +1184,7 @@ async function main() {
     if (routePath === "/404" || written.has(normalized)) continue;
     const rel = importMap[comp];
     if (!rel) {
-      // A redirect route (ToToolsRedirect, PastorsMovedRedirect, …) has no
+      // A redirect route (ToToolsRedirect, ToStudyRedirect, …) has no
       // page of its own and needs no head; it is not an uncovered page.
       if (/Redirect$/.test(comp)) continue;
       // Report rather than skip in silence. A component the import scanner
@@ -1218,7 +1207,12 @@ async function main() {
       continue;
     }
     const tag = tagMatch[1];
-    if (/\bnoindex\b/.test(tag)) continue;
+    // A page that says noindex (the off-shelf book pages, /roadmap) gets its
+    // own head with noindex in it, so the static file says what the page says
+    // instead of serving the shell's "index, follow".
+    // A conditional noindex={...} cannot be resolved here; skip it as before.
+    if (/\bnoindex=\{/.test(tag)) continue;
+    const pageNoindex = /\bnoindex\b/.test(tag);
     // A literal attribute, or a template literal whose ${refs} all resolve to
     // same-file `const NAME = "..."` strings (the ebook-funnel pattern).
     const resolveAttr = (name) => {
@@ -1249,6 +1243,7 @@ async function main() {
       url,
       image: ogImageUrl(title),
       type: "website",
+      noindex: pageNoindex,
     });
     writeRoute(template, { path: routePath }, head, hubListingHtml(routePath));
     written.add(routePath);
@@ -1344,6 +1339,8 @@ async function main() {
           url,
           image,
           type: "book",
+          // Only the three books on the /books shelf are offered to crawlers.
+          noindex: !SHELF_BOOK_SLUGS.has(book.slug),
           schemas: [
             bookSchema(book, url, image),
             breadcrumbSchema([

@@ -126,12 +126,13 @@ describe("the nav map", () => {
     }
   });
 
-  it("keeps Speaking, Contact, PCN, and ENDS under About", () => {
+  it("keeps Speaking, Contact, and ENDS under About, and no link to the pastors' network", () => {
     const about = SITE_NAV_GROUPS.find((g) => g.title === "About")!.links;
     const byLabel = new Map(about.map((l) => [l.label, l] as const));
     expect(byLabel.get("Speaking")?.href).toBe("/speaking");
     expect(byLabel.get("Contact")?.href).toBe("/contact");
-    expect(byLabel.get("Pastors Connection Network")?.external).toBe(true);
+    // James, 2026-11-17: the Pastors Connection Network stays outside this site.
+    expect(SITE_NAV_GROUPS.flatMap((g) => g.links).some((l) => /pastorsconnection/i.test(l.href + l.label.replace(/\s/g, "")))).toBe(false);
     expect(byLabel.get("ENDS")?.external).toBe(true);
   });
 });

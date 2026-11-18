@@ -44,7 +44,7 @@ export const HOME_WHY =
 
 /** Who is writing. */
 export const HOME_WHO =
-  "I'm James Bell, a pastor, Susanna's husband, and dad to five sons. I was raised without a father and came to faith as an adult, after years as an atheist, so I know the objections from the inside. I founded the Pastors Connection Network, and I write for anyone who wants a faith deep enough to handle real questions.";
+  "I'm James Bell, a pastor, Susanna's husband, and dad to five sons. I was raised without a father and came to faith as an adult, after years as an atheist, so I know the objections from the inside. I write for anyone who wants a faith deep enough to handle real questions.";
 
 /** James's portrait, the same photograph /about and the author card use. */
 export const PORTRAIT_URL =

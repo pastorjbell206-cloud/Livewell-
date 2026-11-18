@@ -240,7 +240,7 @@ export default function Home() {
           <div className="home-row-head">
             <h2 style={{ ...sectionTitle, color: "var(--charcoal-fg)" }}>The books</h2>
             <Link href="/books" style={{ ...quietLink, color: "var(--charcoal-fg)" }}>
-              Read the opening of each, free
+              See all three
             </Link>
           </div>
           <ul className="home-books">

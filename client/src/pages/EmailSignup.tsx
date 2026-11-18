@@ -6,8 +6,12 @@
  * calling anything ("Backend not wired yet"). No sender exists in the stack,
  * so the sequences could not be delivered and the reader's choice went
  * nowhere. Until real transactional email ships (roadmap LT-4), this page
- * offers the two things that are real: the weekly essay list (recorded via
- * SegmentedSignup, completed on Substack) and the self-paced reading paths.
+ * offers the two things that are real: the newsletter (recorded via
+ * SegmentedSignup, completed on Substack) and the essays on the site.
+ *
+ * The page promises only what happens (2026-11-17): no pace ("one essay a
+ * week") and no matched first essay, because nothing in the code sends
+ * either. Everyone who confirms on Substack gets the same newsletter.
  */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
@@ -19,7 +23,7 @@ export default function EmailSignup() {
     <Layout>
       <SEOMeta
         title="Subscribe — LiveWell by James Bell"
-        description="One serious essay a week, chosen for where you actually are — skeptic, doubter, pastor, or seeker. Plus self-paced reading paths through the whole library."
+        description="Get James Bell's new essays by email through his Substack newsletter. Every essay on this site is also free to read without subscribing."
         url="https://www.livewellbyjamesbell.co/subscribe"
         keywords="subscribe, newsletter, theology essays, reading paths, James Bell"
       />
@@ -30,23 +34,22 @@ export default function EmailSignup() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 28 }}>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
             <span style={{ fontFamily: "var(--U)", fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase" as const, color: "var(--mustard)" }}>
-              The Weekly Essay
+              The newsletter
             </span>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
           </div>
 
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
-            One serious essay
+            New essays,
             <br />
-            a week. Written slow,
-            <br />
-            sent <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>once</em>.
+            sent to your inbox.
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "rgba(255,255,255,.65)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
             Theology that meets the weight of marriage, money,
-            parenting, and doubt. Tell us who you are and the first essay you get
-            will match it. Nothing else comes with it, and you can leave the
-            moment it stops being worth your time.
+            parenting, and doubt. The newsletter goes out through Substack. Enter
+            your email below and a Substack tab opens where you confirm it. After
+            that, new essays come to your inbox when they are published, and you
+            can leave the moment it stops being worth your time.
           </p>
         </div>
       </section>
@@ -55,8 +58,8 @@ export default function EmailSignup() {
       <section style={{ background: "var(--bone)", padding: "72px 24px" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
           <SegmentedSignup
-            title="Subscribe — and tell us where you're standing"
-            description="Skeptic, doubter, pastor, or seeker. One essay a week either way; the first one is chosen for you."
+            title="Subscribe, and tell us where you're standing"
+            description="Skeptic, Christian, pastor, or just exploring. Your answer tells us who is reading. Everyone gets the same newsletter."
           />
         </div>
       </section>

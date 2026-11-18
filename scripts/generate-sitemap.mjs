@@ -108,14 +108,12 @@ const STATIC_PAGES = [
   { url: "/books", priority: "0.9", changefreq: "weekly" },
   // LiveWell series ebooks (code-only product pages, not DB-backed).
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
-  { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
   { url: "/diagnostic", priority: "0.8", changefreq: "monthly" },
   { url: "/study", priority: "0.9", changefreq: "monthly" },
   { url: "/about", priority: "0.7", changefreq: "monthly" },
   { url: "/speaking", priority: "0.6", changefreq: "monthly" },
   { url: "/contact", priority: "0.5", changefreq: "monthly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
-  { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // (The /writing?pillar=, ?track= and ?series= listing variants are gone:
   // /writing is now the essay shelf, and those views canonicalize to it.)
@@ -169,14 +167,10 @@ const STATIC_PAGES = [
   { url: "/compare/evangelical-vs-mainline", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/liturgical-vs-contemporary", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/orthodox-vs-catholic", priority: "0.8", changefreq: "monthly" },
-  // Ebook product pages previously missing
+  // The three books on the /books shelf (client/src/lib/bookShelf.ts). The
+  // off-shelf book pages stay reachable but are noindex and not listed.
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/bible-and-homosexuality", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/bible-and-transgender-identity", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/critical-race-theory-biblical", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/deconstruction-of-faith", priority: "0.8", changefreq: "monthly" },
   { url: "/books/the-monster-in-the-mirror", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/the-reliability-of-scripture", priority: "0.8", changefreq: "monthly" },
   { url: "/books/when-god-bless-america", priority: "0.8", changefreq: "monthly" },
   // Justice / Disruption / Nation hubs
   { url: "/disruption/consistency", priority: "0.7", changefreq: "monthly" },
@@ -339,6 +333,8 @@ function urlEntry(loc, lastmod, changefreq, priority) {
   return entry;
 }
 
+const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "the-monster-in-the-mirror", "believe"]);
+
 function buildXml(staticPages, articles, books, readingPaths) {
   // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and
   // the studyguides manifest). First occurrence wins, so the curated static
@@ -372,6 +368,8 @@ function buildXml(staticPages, articles, books, readingPaths) {
     xml += urlEntry(`${BASE_URL}/writing/${a.slug}`, lastmod, "monthly", "0.8");
   }
   for (const b of books) {
+    // Database books that are not on the /books shelf are noindex pages.
+    if (!SHELF_BOOK_SLUGS.has(b.slug)) continue;
     const lastmod = new Date(b.updatedAt).toISOString().split("T")[0];
     if (!advertisable(`/books/${b.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/books/${b.slug}`, lastmod, "monthly", "0.7");

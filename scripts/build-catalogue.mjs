@@ -231,7 +231,7 @@ function essayItems(dbRows, staticRows) {
 // ── books and booklets ─────────────────────────────────────────────────────
 
 /**
- * The eight book pages routed in App.tsx. Titles and summaries are the pages'
+ * The three books on the /books shelf (client/src/lib/bookShelf.ts). Titles and summaries are the pages'
  * own SEOMeta strings (the " — by James Bell" suffix dropped). The ebook files
  * behind them are sold, so no file is listed here.
  */
@@ -239,11 +239,6 @@ export const BOOKS = [
   ["when-god-bless-america", "When God Bless America Replaces Thy Kingdom Come", "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary."],
   ["the-monster-in-the-mirror", "The Monster in the Mirror", "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots."],
   ["believe", "Believe: The Rational Case for Christian Faith", "Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."],
-  ["deconstruction-of-faith", "The Deconstruction of Faith", "An honest reckoning with why people are leaving the church, what the church owes them, and where faith goes from here. Not a defense and not a surrender."],
-  ["the-reliability-of-scripture", "The Reliability of Scripture", "Why we can trust the Bible we have — the manuscripts, the canon, the archaeology, and the difference between what inerrancy claims and what its critics attack."],
-  ["bible-and-homosexuality", "What Does the Bible Really Say About Homosexuality?", "Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love."],
-  ["bible-and-transgender-identity", "What Does the Bible Say About Transgender Identity?", "Gender, the body, and the church's Christ-centered response — a pastoral reading where clarity and compassion occupy the same room."],
-  ["critical-race-theory-biblical", "Is Critical Race Theory Biblical?", "Race, justice, and what the church actually owes the world — a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal."],
 ];
 
 function bookItems() {

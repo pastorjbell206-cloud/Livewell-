@@ -426,12 +426,12 @@
     },
     {
       "source": "/writing/five-biggest-mistakes-new-pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/stopped-competing-church-across-town",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -441,22 +441,22 @@
     },
     {
       "source": "/writing/okay-to-see-counselor",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
       "source": "/writing/anxiety-perfectionism-pastor-breaking-cycle",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
       "source": "/writing/not-your-churchs-attendance-numbers",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/five-sermon-habits-shrinking-faith",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -466,37 +466,37 @@
     },
     {
       "source": "/writing/metrics-tell-church-healthy",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/when-fire-someone-with-integrity",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/staff-culture-no-burnout",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/healthy-pastor-referral-network",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/three-small-churches-coplanted",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/before-launch-ministry-ask-other-church",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/white-churches-wrong-about-diversity",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -511,7 +511,7 @@
     },
     {
       "source": "/writing/national-pastors-redefining-missionary",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -531,27 +531,27 @@
     },
     {
       "source": "/writing/delegation-is-not-weakness",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/vision-without-community-fantasy",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/pastors-authority-relational",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/conflict-is-not-failure",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/building-leadership-team",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -561,22 +561,22 @@
     },
     {
       "source": "/writing/courage-to-be-different",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/collaboration-across-denominations",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-response-to-culture",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/interior-life-of-pastor",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
@@ -666,7 +666,7 @@
     },
     {
       "source": "/writing/sabbatical-why-church-should-require",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
@@ -681,22 +681,22 @@
     },
     {
       "source": "/writing/revitalize-or-replant",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/give-feedback-changes-behavior",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/young-adults-coming-back-church",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/scandals-teaching-accountability",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -706,17 +706,17 @@
     },
     {
       "source": "/writing/church-split-surviving-learning-forward",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/city-wide-church-together",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/unreached-people-groups-closest-to-you",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -776,7 +776,7 @@
     },
     {
       "source": "/resources-for-pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
@@ -816,47 +816,47 @@
     },
     {
       "source": "/leadership",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/leadership/:path*",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/for-leaders",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/for-pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/sermon-series",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/pastoral-burnout",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
       "source": "/the-pastoral-angle",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/pastors-resource-wall",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
@@ -1202,6 +1202,21 @@
     {
       "source": "/substack",
       "destination": "/subscribe",
+      "permanent": true
+    },
+    {
+      "source": "/membership",
+      "destination": "/subscribe",
+      "permanent": true
+    },
+    {
+      "source": "/membership/:path*",
+      "destination": "/subscribe",
+      "permanent": true
+    },
+    {
+      "source": "/authors/:slug",
+      "destination": "/about",
       "permanent": true
     },
     {

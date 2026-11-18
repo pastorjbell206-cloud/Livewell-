@@ -10,6 +10,7 @@
 import { Link } from "wouter";
 
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { BOOK_SHELF } from "@/lib/bookShelf";
 
 export interface RelatedBookLink {
   href: string;
@@ -18,13 +19,16 @@ export interface RelatedBookLink {
 
 export function BookNextSteps({
   slug,
-  related,
 }: {
   /** The book's route slug; recorded as `book-<slug>` on the subscriber row. */
   slug: string;
-  /** Two or three thematically adjacent book pages. */
-  related: RelatedBookLink[];
+  /**
+   * Kept for the call sites. The list shown is the /books shelf less this
+   * book, so no book page can point a reader at a title that left the shelf.
+   */
+  related?: RelatedBookLink[];
 }) {
+  const shelf: RelatedBookLink[] = BOOK_SHELF.filter((b) => b.slug !== slug).map((b) => ({ href: b.href, title: b.title }));
   return (
     <>
       {/* NEWSLETTER — same pitch as BookDetail so the copy stays one variant */}
@@ -33,7 +37,7 @@ export function BookNextSteps({
           <NewsletterSignup
             variant="inline"
             title="If this book is your kind of reading"
-            description="One serious essay a week in the same vein — theology that meets the weight of everyday life. No spam, ever."
+            description="New essays in the same vein, sent by email through Substack when they are published. No spam, ever."
             source={`book-${slug}`}
           />
         </div>
@@ -46,7 +50,7 @@ export function BookNextSteps({
             More from James Bell
           </h2>
           <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-            {related.map(book => (
+            {shelf.map(book => (
               <li key={book.href} style={{ padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
                 <Link
                   href={book.href}

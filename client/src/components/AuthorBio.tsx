@@ -5,7 +5,6 @@
  * no "journey," no therapy-speak. Self-implicating, weighted, unhurried.
  */
 import { Link } from "wouter";
-import { SITE_STATS } from "@/config/siteStats";
 import { PORTRAIT_URL } from "@/lib/positioning";
 
 interface AuthorBioProps {
@@ -16,7 +15,7 @@ interface AuthorBioProps {
 }
 
 const JAMES_BELL_BIO =
-  `James Bell has pastored First Baptist Church of Fenton, Michigan, for twelve years. He founded the Pastors Connection Network, now close to eighteen thousand pastors, and ENDS, which equips pastors in remote regions around the world. He was an atheist before he was a Christian. He and Susanna have five sons. He hosts the Following the Way podcast and has written ${SITE_STATS.bookCountWord} books.`;
+  "James Bell pastors a church in Fenton, Michigan, and writes. He was an atheist before he was a Christian, and he was raised without a father. He and Susanna have five sons. He founded ENDS, which equips pastors in remote regions around the world, and he hosts the Following the Way podcast.";
 
 /** The same photograph Home and /about use; one constant, so it moves once. */
 const JAMES_BELL_IMAGE = PORTRAIT_URL;
