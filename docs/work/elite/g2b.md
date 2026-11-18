@@ -33,7 +33,9 @@ Fifth run (brief guides3.md): hospitality and knowing-god done, committed and pu
 
 Sixth run (brief guides3.md): manhood and mishpat done, committed and pushed (15 in all).
 
-Not started (5): money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The sixth run was assigned manhood and mishpat, with money if room remained; it stopped at a clean guide boundary after mishpat and the full gates, leaving money whole for a fresh run. The next guide is money.
+Seventh run (brief guides3.md): money and new-believer done, committed and pushed (17 in all).
+
+Not started (3): parenting-formation, providence, raising-believers. No file for them was touched.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, theme, sessions, session titles, key passages, timing, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted from the ESV (the text these guides already used) with references; case studies reframed as "Suppose"; rulebook words ("steelman", "verdict" as a method word, "inside the indictment", "the method is the mercy"), biography stamps, "Bell" and "Leader to confirm" removed; every help line kept word for word (checked by script against the old file). The claim-by-claim record is docs/work/elite/g2b-ledger.md.
 
@@ -56,6 +58,8 @@ Each guide was rewritten whole by the pilot's method: same slug, title, theme, s
 | knowing-god | 26,701 / 20,212 | 20 / 0 | 44 / 8 | 3 / 0 | Kept: none (only creed text and the Arian slogan). Paraphrased: Augustine's "if you understand it, it isn't God" (now attributed to a sermon, not On the Trinity); Calvin, Institutes 1.2.1; Packer on adoption. Cut: none | Trinitarian refinement moved from Chalcedon to Constantinople 381; Calvin's line moved to the 1559 edition; Barth 1932, not 1934; Shema, Hebrews and Athanasius dates loosened; prodigal cultural claims marked as commentators' reading; biography kept once (fatherlessness, session 3), atheism removed |
 | manhood | 24,548 / 21,778 | 32 / 0 | 66 / 7 | 3 / 0 | Kept: none (the old guide quoted no one; Taylor's term "buffered self" kept). Paraphrased: Pearcey, Junger, Farrell and Gray as arguments, books named. Cut: none | Mark 10 argument moved off "the last nights" to the road (Luke 22:24 for the supper); "five words" count cut; Malachi as last book qualified (Christian order) and dated fifth century; 1 Corinthians mid-50s, not AD 60; Augustine's father restated, Luther's "curved in" removed; friendship collapse given its source (Survey Center on American Life, 2021, searched); "the poor fleeced" replaced by Mark 11:17; biography kept once (session 5), atheism removed |
 | mishpat | 26,227 / 23,286 | 31 / 0 | 35 / 3 | 7 / 0 | Kept: none. Paraphrased: King's white moderate and his segregated-hour line, Wolterstorff, Brueggemann, Gutierrez, the Talmud's count. Cut: the Bonhoeffer "silence in the face of evil" saying (searched: not in his works) | Plug for James's Mishpat book dropped (not on the shelf); Micah 6:8 and Ephesians 6:12 restored to ESV; Jubilee no longer said to cancel debts; Needle's Eye gate marked unattested; Wilberforce, Bonhoeffer, Berkhof and Wink dated correctly; James "eight centuries" after Amos, not a thousand; reconciliation word study and lament share softened; divine pronouns lowercased as in the ESV |
+| money | 17,758 / 17,029 | 18 / 0 | 19 / 0 | 7 / 0 | Kept: none (the old guide quoted no one). Paraphrased: Ellul on money as a power. Cut: none | Book plug dropped (Where Your Treasure Is is not on the shelf); Matthew 6:8 and 6:32 separated; "without a paragraph break" cut; ESV "pearl of great value"; Foster's title corrected; Comer and Chrysostom notes corrected; "Economic Justice study" named Money, Work and the Poor; biography kept once (five sons, session 1 teaching), removed from the primer |
+| new-believer | 21,255 / 19,530 | 40 / 0 | 61 / 1 | 7 / 0 | Kept: none. Paraphrased: Cyprian on God as Father and the church as mother (work and year added). Cut: none | Pilgrim's Progress 1678, not 1677; Lewis's talks 1941 to 1944 and Mere Christianity 1952; Peterson's book 1980; Augustine and Cyprian dated; Gospel-era dates loosened; Luke 18:13 "seven-word" count cut; two claims that the study points to site tools cut (no such tools); memory verses restored to ESV; atheism kept once (session 3 teaching), removed from the summary, primer, script, two FAQs and the promo kit |
 
 Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude); 1 in the third (the year of Chalmers's sermon, for fruit-of-the-spirit; not found, so the year was cut); in the fourth, 1 for habits-and-formation (Willard's grace-and-earning line); in the fifth, none (hospitality and knowing-god quoted no one that needed a search; dates and attributions were corrected from known sources and loosened where unsure).
 
@@ -126,6 +130,20 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
 - Manhood: biography kept once, in session 5 teaching, in the words the old guide gave it (raised without a father, five sons, the wound stops here); removed from the promo kit, FAQ, primer and facilitator script, and atheism removed entirely. James may want the five sons line in session 2 instead, or nowhere.
 - Mishpat: the old guide was "drawn from James Bell's book Mishpat". That book is not on the shelf, so the guide no longer names it. If James wants the book credited, it returns to the shelf first.
+
+## What I ran, and what passed (seventh run, after new-believer)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words, em-dashes and exclamation points searched literally in both guides: no forbidden words ("blessed" only inside quoted ESV Acts 20:35; the name Richard Foster). No exclamation points: the ESV verses that carry them (Matthew 6:23b, Luke 12:20 "Fool!", Luke 18:13, Mark 9:24) are described, not quoted.
+- Every command in the CI content-gates step (35): passed.
+- pnpm check: passed.
+- pnpm test: 144 files passed, 7 skipped, 0 failed (1,642 tests).
+- Web searches: none. Neither guide quoted a person; dates were corrected from known sources (see the ledger).
+- Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
+- Money: the old guide was "the small-group companion to James Bell's book Where Your Treasure Is". That book is not on the three-book shelf, so the guide no longer names it. The hand-written blurb in client/src/lib/studyguides-index.ts still ends "Companion to the book." and its card title is "Where Your Treasure Is"; I left that file alone (outside a guide rewrite). Biography kept once, in session 1 teaching, in the old guide's sense (five sons, provision shading into accumulation); removed from the primer.
+- Money: added, in plain words, that a leader help someone who needs practical debt or budget help find a trusted person outside the group (primer, FAQ 12). No number or service is named.
+- New believer: atheism kept once, in session 3 teaching on prayer ("I came to faith from atheism, certain there was no one to talk to"), the old guide's own sentence; removed from the summary, primer, facilitator script, two FAQs and all three promo texts.
+- The next guide is parenting-formation (about 27,500 words, the largest in the share). This run stopped at a clean guide boundary rather than start it.
 
 ## What I did not do or verify
 

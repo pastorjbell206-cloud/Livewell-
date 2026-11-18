@@ -417,3 +417,59 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Scripture quoted: Genesis 1:27, Exodus 22:21-24, 23:3, 23:9, Leviticus 19:15, Deuteronomy 10:18-19, 24:17-18, Ruth 4:1, Psalm 13:1-2, 89:14, 113:7, 146:7-9, Proverbs 19:17, 23:10, Isaiah 1:11-17, 5:8, 10:1-2, 58:3-8, Jeremiah 6:14, 22:16, Daniel 9:5, Amos 2:6, 5:21-24, 7:13-15, Micah 6:7-8, Matthew 6:24, 25:40, 27:24, Mark 10:21-22, 10:25, 10:27, Luke 1:51-53, 4:18-21, 10:31-32, 19:8, 22:19, John 13:14, 2 Corinthians 5:18, Galatians 3:28, Ephesians 2:14-16, 6:12, James 4:17, 5:4, 1 Peter 2:24, Revelation 7:9 | ESV from memory | Quoted with references; divine pronouns lowercased as in the ESV; no exclamation points |
 | Quotations of people | Old guide: Bonhoeffer (misattributed, cut); King, Wolterstorff, Brueggemann, Gutierrez as paraphrase | Kept as paraphrase. Added: none |
 | Help box | Not on the sensitive list; no help lines in the old guide (the help script only matched Ephesians 6:12) | Nothing to keep |
+
+## Money
+
+| Claim | How checked | Result |
+|---|---|---|
+| "The small-group companion to James Bell's book Where Your Treasure Is" (summary, bulletin, pulpit announcement) | Not one of the three shelf titles (client/src/lib/bookShelf.ts) | Plug dropped everywhere. client/src/lib/studyguides-index.ts still says "Companion to the book" in the money blurb; that hand-written file was left alone (see notes) |
+| "He is a father of five sons, and he knows how easily provision shades into accumulation" (leader primer) | Confirmed biography, stated in the old guide | Kept once, in session 1 teaching, in first person and in the old guide's sense; removed from the primer |
+| "Bell builds / Bell takes / Bell says" throughout; FAQ "writes from inside the indictment" | Narrator calling him "Bell"; rulebook language | Removed; teaching in first person; FAQ 11 rewritten as a plain question about why the study turns questions on the group |
+| "The Economic Justice study" (FAQ 3) | That guide's real title is Money, Work and the Poor (economic-justice.json) | Named by its title |
+| "Your Father knows what you need before you ask" attributed to the birds-and-lilies passage | Scripture: that wording is Matthew 6:8; 6:32 reads "your heavenly Father knows that you need them all" | Each quoted at its own verse |
+| "Then, without a paragraph break, therefore I tell you" | Printed Bibles, the ESV included, break between 6:24 and 6:25 | Phrase cut; the "therefore" argument kept |
+| "Pearl of great price" | ESV reads "one pearl of great value" (Matthew 13:46) | ESV wording |
+| Bad eye "the word for a greedy, grasping eye" | Known: ophthalmos poneros; the Hebrew "evil eye" idiom means grudging or stingy (Proverbs 23:6, 28:22) | Kept, as an idiom |
+| "Learned the secret" (Philippians 4:12) carries initiation | Known (memyemai, used of initiation) | Kept, softened to "was used of being initiated into something" |
+| Mammon is Aramaic | Known | Kept |
+| Jesus "had a treasurer" (objection) | John 12:6, 13:29: the disciples kept a moneybag | Made "His disciples kept a common purse" |
+| Matthew 6:23b, Luke 12:20 "Fool!" | ESV has exclamation points | Not quoted; described ("God calls him a fool") |
+| Bibliography: Keller 2009, Alcorn 2001, Blomberg 1999, Comer 2019, Foster 1981 (title is Freedom of Simplicity, no "The"), Anderson 2009, Bonhoeffer 1937 | Known | Years added; Foster's title corrected; five "Leader to confirm" notes removed |
+| Comer "names the anxious, acquisitive restlessness of the modern heart" | Overstates the book's subject (hurry) | Restated as a book on the hurried life |
+| Chrysostom "cited in sessions 1 and 3" | The sessions never cite him | Note made "background"; sermons described as on the rich man and Lazarus (Known) |
+| Ellul, Money and Power: money as a power we serve | Known | Kept as paraphrase |
+| Scripture quoted: Proverbs 6:6-8 (described), Matthew 6:8, 6:19-33, 8:20, 13:44-46, Luke 12:13-21, 12:33-34, Ecclesiastes 2:18-19, Philippians 4:6-7, 4:11-13, 1 Timothy 6:6-10, Hebrews 13:5, Psalm 23:1, Romans 8:32, 2 Corinthians 8:2-4, 8:9, 8:12, 9:6-8, 9:11, Acts 20:35 | ESV from memory | Quoted with references; old guide's unmarked quotations now in quotation marks; divine pronouns lowercased as in the ESV; no exclamation points |
+| Quotations of people | Old guide quoted no one | Added: none |
+| Help box | Not on the sensitive list; no help lines in the old guide | Nothing to keep. Added, in plain words and with no number or referral, that a leader help someone who needs practical debt or budget help find a trusted person outside the group (primer, FAQ 12) |
+
+## New believer
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell came to faith from atheism" (summary, primer, script, FAQ 7 and 9, bulletin, pulpit, invite caption, s2 and s3 objections) | Confirmed biography used as a credential and as the study's "method" | Kept once, in session 3 teaching, in the old guide's words ("I came to faith from atheism, certain there was no one to talk to"); removed everywhere else. FAQ 9 ("Why does the study keep bringing up that the writer was an atheist?") rewritten as a plain question about why the study explains every church word |
+| "Bell will not pretend he has arrived" (s5) | Stated in the old guide, in his first person | Kept, first person |
+| s4 objection: "this study even points you to a tool for thinking clearly about a congregation's health" | No such tool in client/src/lib/toolsList.ts | Cut |
+| FAQ 2: "the study even points you to a plain step-by-step way to read and a tool for looking up any passage" | The sessions point to no such thing | Cut |
+| Luke 18:13 "a seven-word prayer" | ESV "God, be merciful to me, a sinner!" is six words and ends in an exclamation point | Count cut; described, not quoted |
+| Mark 9:24 "I believe, help my unbelief" | ESV "I believe; help my unbelief!" (exclamation point) | Described, not quoted |
+| 2 Corinthians 5:17 memory verse "The old has passed away. Behold, the new has come." | ESV (2016) "The old has passed away; behold, the new has come." | ESV punctuation |
+| Hebrews 10:24-25 memory verse stopped mid-verse | ESV continues "and all the more as you see the Day drawing near" | Completed |
+| Ephesians 2:8-9 "Even the faith that responded was a gift" | What "this" refers to is debated | Made "Salvation is called a gift from start to finish" |
+| Church: "the called-out ones" | Etymology of ekklesia; the word in use meant an assembly | "An assembly or gathering" |
+| John 3:3 "born again, born from above" | Known: anothen can mean either | Kept, marked as the Greek word's range |
+| Timeline: calling of disciples "circa AD 27", Nicodemus "AD 30", Lord's Prayer "AD 31", Pentecost "AD 33" | Spurious precision; dates debated | "About AD 28 to 30", "During Jesus' ministry" (x2), "About AD 30 to 33" |
+| Timeline: Paul's letters "AD 50-62"; 1 Peter "circa AD 64" | Known (1 Thessalonians about 49 to 51; 1 Peter early 60s) | "About AD 48 to 62"; "Early 60s AD" |
+| Timeline: Cyprian "circa 250", no God as Father without the church as mother | Known: On the Unity of the Church, 251 | Dated about 251, work named, kept as paraphrase |
+| Timeline: Augustine "a dramatic late convert", Confessions "circa 400" | Known: converted 386 at about 31; Confessions about 397 to 400 | "Came to faith in his early thirties"; "About 397 to 400" |
+| Timeline: The Pilgrim's Progress "1677" | Known: published 1678 | Corrected to 1678 |
+| Timeline: Lewis "1947 ... has by now published Mere Christianity's earliest broadcasts" | Known: BBC talks 1941 to 1944, Mere Christianity 1952 | "1941 to 1944", book dated 1952 |
+| Timeline: Peterson "1978 begins the pastoral writing that will become A Long Obedience" | Known: the book was published 1980 | "1980, publishes" |
+| Timeline: Ortlund 2020 | Known | Kept |
+| Bibliography: Stott 1958, Packer 1973, Keller 2008 and 2014, Foster 1978, Lewis 1952, Peterson 1980, Bunyan 1678 | Known | Years added; five "Leader to confirm" notes, "Not cited by Bell directly", "Offered as a balancing voice" removed |
+| Manuscript evidence: "more manuscripts and earlier than almost any other ancient writing" | Known (of the New Testament) | Kept, narrowed to the New Testament |
+| "The old line" that a perfect church would stop being perfect when you joined | Unattributed saying in the old guide | Kept, unattributed, as before |
+| Cadence: "a next step into baptism or membership" | Church membership, not the site's (no membership on the site) | Made "baptism or joining a church" to avoid confusion |
+| Teaching in one block per session | Each session's teaching was a single paragraph of about 1,000 words | Rewritten as seven to eight paragraphs |
+| Scripture quoted: John 3:3, 3:8, 5:39-40, 13:34-35, 2 Corinthians 5:17, Ephesians 2:8, 1 John 1:8-9, 5:13, Philippians 1:6, 2:12-13, 1 Peter 1:23, 2:9, 2 Timothy 3:16-17, Hebrews 4:12, 10:24-25, 12:1-2, Psalm 62:8, 119:105, Luke 9:23, 11:1, 24:27, Acts 2:42, 17:11, James 1:22, Matthew 6:7-9, Romans 2:4, 8:26, 1 Corinthians 12:12, 12:21, Galatians 5:22-23, 6:2, Ephesians 4:16, Mark 1:17 | ESV from memory | Quoted with references; no exclamation points |
+| Quotations of people | Old guide quoted no one (Cyprian as paraphrase) | Added: none |
+| Help box | Not on the sensitive list; no help lines in the old guide | Nothing to keep |
