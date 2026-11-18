@@ -491,3 +491,26 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | James 2:23 | ESV has an em-dash | Quoted in two parts |
 | Genesis 2:18, Ecclesiastes 4:9-12, Proverbs 18:24, 27:5-10, 27:17, 28:23, 1 Samuel 18:1-4, 19:1-2, 20:16-17, 20:42, 23:16, 2 Samuel 1:26, John 1:3, 11:35, 15:12-15, Exodus 33:11, Luke 7:34, Galatians 6:1-2, Ephesians 4:15, Hebrews 10:24-25, Romans 12:15, 1 Thessalonians 2:8, 3 John 14 | ESV, from memory | Quoted with references |
 | Every case study | Told as a real person in the group | Framed as "Suppose", ending in questions for the leader |
+
+## Helping with g2b's share
+
+### parenting-formation
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (31); atheism, fatherless and five sons as credential (summary, primer, FAQ 0, 4, 9, 10, script, three promo texts) | Brief: each fact at most once, only where it does work; no invented memory or feeling | Each kept once in first person (s1 five sons, s2 fatherless, s3 atheism); every other use cut; FAQ 10 ("I didn't have a good father") now answers without his biography |
+| Help and safety sentences (17) | Script against the old file (help_parenting-formation.txt) | All word for word, same places |
+| "Spare the rod and spoil the child" | Not a verse; Proverbs 13:24 is the nearest | Said so in the session 2 objection |
+| Keller, The Prodigal God (2008): "prodigal" means recklessly extravagant; the father is the prodigal one | Known | Paraphrase |
+| National Study of Youth and Religion (Christian Smith): parents' lived faith the strongest influence; "moralistic therapeutic deism" | Known; the phrase is Smith and Denton, Soul Searching (2005) | Named with the book |
+| Baumrind, authoritative style, 1960s (1966 paper) | Known | Kept |
+| Harsh physical punishment goes with worse behavior over time | Known (meta-analyses of spanking research); no study named in the old guide | Kept as a general finding, no study named |
+| Haidt, The Anxious Generation (2024) | Known; causation is disputed by other researchers | Haidt named as a social psychologist; the dispute noted |
+| "Technoference" | A researchers' term for parental device interruption (McDaniel and others) | Kept as "a word researchers use"; no study named |
+| Locke 1693; Rousseau, Emile 1762; Luther, Small Catechism 1529 | Known | Kept |
+| Augustine's Confessions "circa AD 400"; Monica | Written about 397 to 400 | "Late 390s AD" |
+| Shema "circa 1400 BC"; Hannah "circa 1100 BC"; Proverbs "circa 950 BC"; Ephesians and Colossians "circa AD 60" | Traditional or approximate | Marked traditional; Proverbs "from Solomon's reign, with later additions"; "early 60s AD" |
+| Luke 15:12 request as near a wish for the father's death; the father's running as undignified | A common reading of the culture, not stated in the text | "Many students of that culture read..." |
+| "Leader to confirm" (6: Tripp, Tripp, Fitzpatrick and Thompson, Crouch, Cloud and Townsend, Luther) | Titles and authors known; the guide attributes no specific claim to them | Notes removed; entries describe each book in general terms |
+| Scripture: Deuteronomy 6:5, 6:6-7, 6:20-21; Psalm 127:3-4, 23:4, 78:4, 119:37; 1 Samuel 1:27-28, 3:13, 16:7; Proverbs 4:23, 13:24, 22:6, 22:15, 29:15; Luke 2:52, 11:13, 15:12, 15:20; Mark 6:31, 9:24, 10:14; Matthew 6:22-23; John 6:44; Acts 17:11; Romans 8:15, 10:17, 12:2; Ephesians 6:4; Colossians 3:2, 3:21; Philippians 4:8; Hebrews 12:6, 12:11; Genesis 2:24; 2 Timothy 1:5; 3 John 4 | ESV, from memory | Quoted with references |
+| Case studies | Told as real people in the group | Framed as "Suppose", ending in questions for the group |
