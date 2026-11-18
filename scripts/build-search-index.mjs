@@ -104,6 +104,7 @@ const MAIN_PAGES = [
   { title: "What the Bible teaches", href: "/study/bible/doctrines", blurb: "The main teachings of the faith, each followed through the chapters that teach it.", keywords: "doctrine doctrines theology beliefs" },
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
   { title: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", blurb: "A plan for reading through the Bible's story in a year.", keywords: "reading plan bible in a year daily" },
+  { title: "Bible reading plans", href: "/study/plans", blurb: "Every reading plan in one place, by length and by who is reading.", keywords: "reading plan reading plans bible in a year new testament psalms daily family devotional schedule" },
   { title: "Church history", href: "/theology/history", blurb: "The story of the church from the apostles to now: its eras, its people, its councils, and the false teachings it answered.", keywords: "history of the church christian history timeline early church fathers reformation councils" },
   { title: "Compare the views", href: "/theology/compare", blurb: "The doctrines Christians debate, with each view set side by side.", keywords: "doctrine comparison debated views positions denominations differences" },
   { title: "Theology glossary", href: "/theology/glossary", blurb: "The words theology uses, each defined plainly.", keywords: "dictionary terms definitions meaning words" },
@@ -116,8 +117,8 @@ const MAIN_PAGES = [
   { title: "Honest Answers", href: "/answers", blurb: "Short, direct answers to the questions people ask about the Christian faith.", keywords: "questions answers faq doubt objections apologetics" },
   { title: "What the Bible says", href: "/wisdom", blurb: "What Scripture says about the things people face, one subject to a page.", keywords: "bible verses about topics what does the bible say" },
   { title: "Eight-week plans", href: "/plans", blurb: "Plans that take one need a week at a time for eight weeks.", keywords: "plan plans weekly 8 week" },
-  { title: "Self-checks", href: "/assessments", blurb: "Every self-check on the site in one place.", keywords: "assessment assessments quiz test inventory" },
-  { title: "Tools", href: "/tools", blurb: "Every tool on the site, in one list.", keywords: "tools planners builders generators" },
+  { title: "Self-checks", href: "/assessments", blurb: "Every self-check on the site in one place.", keywords: "assessment assessments quiz test inventory self-checks self checks" },
+  { title: "Tools and resources", href: "/tools", blurb: "Every tool on the site, in one list.", keywords: "tools planners builders generators" },
   { title: "How-to guides", href: "/how-tos", blurb: "Step-by-step guides for the practices of the Christian life.", keywords: "how to guide guides practical steps" },
   { title: "Downloads and PDFs", href: "/downloads", blurb: "Everything on the site that can be printed or saved.", keywords: "download pdf print printable booklet" },
   { title: "All resources", href: "/resources", blurb: "Everything to use, on one page.", keywords: "resources library everything" },
@@ -137,8 +138,21 @@ const MAIN_PAGES = [
   { title: "My Library", href: "/my-library", blurb: "What you have saved and started, kept on this device.", keywords: "saved bookmarks my library progress continue" },
 ];
 
+/**
+ * Every tool's one name, by address, read as text from client/src/lib/toolsList.ts
+ * (each entry keeps id, name, ... href on their own lines). A main page that
+ * is a tool is indexed under the tool's name, so search and the tools page agree.
+ */
+export function toolNames() {
+  const src = fs.readFileSync(path.join(ROOT, "client/src/lib/toolsList.ts"), "utf8");
+  const names = new Map();
+  for (const m of src.matchAll(/\{\s*id: "[^"]+",\s*name: "([^"]+)",[\s\S]*?href: "([^"]+)",/g)) names.set(m[2], m[1]);
+  return names;
+}
+
 function mainPages() {
-  return MAIN_PAGES.map((p) => ({ ...p }));
+  const names = toolNames();
+  return MAIN_PAGES.map((p) => ({ ...p, title: names.get(p.href) ?? p.title }));
 }
 
 /** The Study Bible beyond its chapters: each book's introduction, the reading guides, the acts of the story. */

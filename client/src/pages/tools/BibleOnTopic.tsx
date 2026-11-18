@@ -14,6 +14,7 @@ import { Link } from "wouter";
 import { Copy, Check } from "lucide-react";
 import { copyToClipboard } from "@/lib/clipboard";
 
+import FoldedNote from "@/components/FoldedNote";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 interface Verse {
@@ -236,6 +237,7 @@ export default function BibleOnTopic() {
         description="What Scripture actually says about money, the tongue, anger, anxiety, work, marriage, suffering, and more. A topical guide with the heart of each passage."
         url="https://www.livewellbyjamesbell.co/tools/bible-on"
       />
+      <FoldedNote id="bible-on" />
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>

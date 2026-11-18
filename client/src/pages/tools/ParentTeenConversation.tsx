@@ -10,15 +10,21 @@
  * where the two of them see home differently, and opens a few questions to ask
  * each other there. It is a way into a conversation, not a test of anyone.
  *
- * Nothing is stored or sent anywhere. A teenager who is not safe at home is
- * told plainly where to go instead.
+ * Nothing is sent anywhere. So that a reload does not lose the answers, they
+ * are kept in this browser tab only (sessionStorage, key
+ * livewell-progress-parent-teen, the house pattern for a one-sitting flow):
+ * a parent and a teen often share a device, so nothing outlives the tab, and
+ * "Start over" clears it. A teenager who is not safe at home is told plainly
+ * where to go instead.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { copyToClipboard } from "@/lib/clipboard";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { toolName } from "@/lib/toolsList";
 
 export type Side = "parent" | "teen";
 
@@ -96,15 +102,37 @@ export function decodePT(code: string): { side: Side; scores: number[] } | null 
   return { side: m[1] === "P" ? "parent" : "teen", scores };
 }
 
+/** Where the reader is, kept for this tab only. */
+const PROGRESS_KEY = "livewell-progress-parent-teen";
+interface Saved { side: Side | null; answers: Record<string, number>; done: boolean }
+const EMPTY: Saved = { side: null, answers: {}, done: false };
+const isSaved = (x: unknown): x is Saved => {
+  if (!x || typeof x !== "object") return false;
+  const v = x as Record<string, unknown>;
+  return (
+    (v.side === null || v.side === "parent" || v.side === "teen") &&
+    typeof v.done === "boolean" &&
+    !!v.answers && typeof v.answers === "object" && !Array.isArray(v.answers) &&
+    Object.entries(v.answers as Record<string, unknown>).every(([k, n]) => ITEMS.some((i) => i.id === k) && typeof n === "number" && n >= 1 && n <= 5)
+  );
+};
+function readSaved(): Saved {
+  if (typeof window === "undefined") return EMPTY;
+  const s = readStoredJSON(PROGRESS_KEY, isSaved, EMPTY, window.sessionStorage);
+  // A finished state needs every answer; anything less reopens the questions.
+  return { ...s, done: s.done && !!s.side && ITEMS.every((i) => s.answers[i.id]) };
+}
+
 const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
 const p = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink)", margin: "0 0 12px" } as const;
 const btn = { minHeight: "44px", padding: "10px 20px", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer", background: "var(--charcoal)", color: "var(--charcoal-fg)", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600 } as const;
 const quiet = { ...btn, background: "transparent", color: "var(--ink)", border: "1px solid var(--border)" } as const;
 
 export default function ParentTeenConversation() {
-  const [side, setSide] = useState<Side | null>(null);
-  const [answers, setAnswers] = useState<Record<string, number>>({});
-  const [done, setDone] = useState(false);
+  const [restored] = useState(readSaved);
+  const [side, setSide] = useState<Side | null>(restored.side);
+  const [answers, setAnswers] = useState<Record<string, number>>(restored.answers);
+  const [done, setDone] = useState(restored.done);
   const [theirs, setTheirs] = useState("");
   const [other, setOther] = useState<{ side: Side; scores: number[] } | null>(null);
   const [bad, setBad] = useState("");
@@ -122,7 +150,16 @@ export default function ParentTeenConversation() {
     setBad("");
     setOther(d);
   };
-  const reset = () => { setSide(null); setAnswers({}); setDone(false); setTheirs(""); setOther(null); setBad(""); };
+  const reset = () => {
+    removeStoredJSON(PROGRESS_KEY, window.sessionStorage);
+    setSide(null); setAnswers({}); setDone(false); setTheirs(""); setOther(null); setBad("");
+  };
+
+  // Keep the place for this tab, so a reload lands where the reader was.
+  useEffect(() => {
+    if (!side && Object.keys(answers).length === 0) return;
+    writeStoredJSON(PROGRESS_KEY, { side, answers, done }, window.sessionStorage);
+  }, [side, answers, done]);
 
   return (
     <Layout>
@@ -144,7 +181,7 @@ export default function ParentTeenConversation() {
             A parent and a teenager each answer twelve short statements about home, on their own and without looking at each other's. Then you swap codes and see where you see things the same and where you don't, with a few questions to ask each other in the places that matter. About five minutes each.
           </p>
           <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch", opacity: 0.85 }}>
-            It isn't a test, and there are no right answers. Nothing is stored or sent anywhere.
+            It isn't a test, and there are no right answers. Nothing is sent anywhere. Your answers stay in this browser tab, so a reload keeps your place, and they are gone when you close it.
           </p>
         </div>
       </section>
@@ -216,6 +253,7 @@ export default function ParentTeenConversation() {
                   {copy === "copied" ? "Copied" : copy === "failed" ? "Couldn't copy; write it down" : "Copy my code"}
                 </button>
                 <button type="button" style={quiet} onClick={() => setDone(false)}>Change my answers</button>
+                <button type="button" style={quiet} onClick={reset}>Start over</button>
               </div>
               <label htmlFor="pt-code" style={{ display: "block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", margin: "0 0 6px" }}>
                 The code from {otherName}
@@ -278,8 +316,8 @@ export default function ParentTeenConversation() {
                     ))}
                   <p style={{ ...p, color: "var(--ink-muted)", fontSize: "14.5px" }}>
                     For more on the teenage years, read{" "}
-                    <Link href="/help/parenting" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Parenting is harder than anyone said</Link>, and for the rest of the family, the{" "}
-                    <Link href="/tools/parenting-guide" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Parenting Stage Guide</Link>.
+                    <Link href="/help/parenting" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Parenting is harder than anyone said</Link>, and for every age, read{" "}
+                    <Link href="/tools/parenting-guide" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>{toolName("parenting-guide")}</Link>.
                   </p>
                 </div>
               )}

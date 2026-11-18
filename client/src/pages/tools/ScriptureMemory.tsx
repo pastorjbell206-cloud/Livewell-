@@ -1,11 +1,12 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 import ScriptureNote from "@/components/ScriptureNote";
 
+import NextStep from "@/components/NextStep";
 /* ── Types ─────────────────────────────────────────────────────── */
 
 interface Verse {
@@ -1049,6 +1050,9 @@ export default function ScriptureMemory() {
           )}
         </div>
       </section>
+      <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
+        <NextStep id="study-bible" line="Read each verse in its own chapter, with notes beside the text." />
+      </div>
     </Layout>
   );
 }

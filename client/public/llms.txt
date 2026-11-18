@@ -44,6 +44,10 @@ books). One page lists everything the site holds.
   365 days, in the order the story happened, each day linked to its chapters
   and, where one belongs, to a context guide):
   https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027
+- Bible reading plans (every reading plan on the site in one place: the 2027
+  year plan, charts to print for the Psalms, Matthew, Mark in Lent, the New
+  Testament and the whole Bible, Proverbs in 31 days, and the family plans):
+  https://www.livewellbyjamesbell.co/study/plans
 - Church history (the councils, the figures, the heresies, and the arc from
   Pentecost to today): https://www.livewellbyjamesbell.co/theology/history
 - People of church history (A to Z and by age, each with years, place, and

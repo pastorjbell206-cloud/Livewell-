@@ -1,8 +1,8 @@
 /**
  * /study/bible — the Study Bible (docs/STUDY-BIBLE-PROMPT.md, Phase 1).
  *
- *   /study/bible                     the front door: the story, the books, the doctrines
- *   /study/bible/:book               the book: its introduction and every chapter
+ *   /study/bible                     the front door: Go to, the 66 books (study-bible/BibleFront)
+ *   /study/bible/:book               the book at a glance, then its introduction (study-bible/BookFront)
  *   /study/bible/:book/:chapter      the reader: Berean Standard Bible text, a
  *                                    word-by-word Hebrew or Greek interlinear,
  *                                    a study panel for any verse or word, and
@@ -13,10 +13,10 @@
  * layer (introductions, notes, the story path) follows docs/BIBLE-NOTES-SPEC.md.
  * The story and doctrine pages live in StudyBibleStory and StudyBibleDoctrines.
  */
-import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { lazy, Suspense, useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import { useLocationProperty } from "wouter/use-browser-location";
-import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, X } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, X } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -39,7 +39,6 @@ import {
   langOf,
   lookupLex,
   occurrenceLine,
-  outlineTarget,
   parseRef,
   plainGloss,
   poetryLines,
@@ -53,33 +52,35 @@ import {
 } from "@/lib/bible";
 import {
   fetchDoctrines,
-  fetchIntro,
   fetchNote,
   fetchNotesIndex,
-  fetchStory,
-  fetchStoryline,
   fetchVerseNotes,
-  flattenStory,
   itemsForPassage,
   noteForVerse,
   OTHER_TRANSLATIONS,
-  readProgress,
-  spreadKinds,
   translationHref,
-  type BookIntro,
   type ChapterNote,
   type Doctrine,
   type VerseNote,
 } from "@/lib/bible-notes";
-import { Band, Credits, Gloss, H2, H3, Pill, Prose, RelatedList, card, kicker, useLoad } from "@/pages/study-bible/shared";
+import { Credits, Gloss, useLoad } from "@/pages/study-bible/shared";
 import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
 import { VerseEntry } from "@/pages/study-bible/VerseNotes";
 import { GoToPassage } from "@/pages/study-bible/GoToPassage";
+import { SCRIPTURE_BOOKS } from "@/lib/scripture-ref";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
 const GRK: CSSProperties = { fontFamily: '"SBL Greek", "Gentium Plus", "Times New Roman", serif' };
 const MODE_KEY = "livewell-studybible-mode";
+
+// The front page and a book's page are their own chunks, so a chapter (the
+// page most readers land on) does not carry their code or styles. Until one
+// arrives, a screen-tall box holds the footer below the fold.
+const BibleFront = lazy(() => import("@/pages/study-bible/BibleFront"));
+const BookFront = lazy(() => import("@/pages/study-bible/BookFront"));
+const hold = <div style={{ minHeight: "100vh" }} />;
+const FRONT_BOOKS: BibleBook[] = [...SCRIPTURE_BOOKS];
 
 const LATER_NOTE = "The earliest Greek manuscripts do not include this verse, and the Berean Standard Bible leaves it out. Later manuscripts, and translations such as the King James Version, include it.";
 
@@ -116,7 +117,14 @@ export default function StudyBible() {
           url="https://www.livewellbyjamesbell.co/study/bible"
         />
       )}
-      {failed && !books ? (
+      {!slug ? (
+        // The front page draws at once from the committed table of books
+        // (lib/scripture-ref, the same as /bible/books.json), so it never
+        // shows a loading line first and then moves.
+        <Suspense fallback={hold}>
+          <BibleFront books={books ?? FRONT_BOOKS} />
+        </Suspense>
+      ) : failed && !books ? (
         <div style={{ padding: "var(--s-6) var(--gutter)" }}>
           <LoadFailed what="The Study Bible" onRetry={retry} backHref="/study" backLabel="Back to Study" />
         </div>
@@ -130,298 +138,12 @@ export default function StudyBible() {
       ) : book && Number.isFinite(chapterNum) ? (
         <Reader books={books} book={book} chapter={chapterNum} />
       ) : book ? (
-        <BookPage book={book} />
-      ) : (
-        <BookIndex books={books} />
-      )}
+        <Suspense fallback={<>{hold}<span hidden data-lw-loading /></>}>
+          <BookFront books={books} book={book} />
+        </Suspense>
+      ) : null}
       <Credits />
     </Layout>
-  );
-}
-
-// ── the front door ───────────────────────────────────────────────────────────
-
-/** The traditional sections of the Protestant canon, by position in books.json. */
-const SECTIONS: { label: string; from: number; to: number }[] = [
-  { label: "The Law", from: 0, to: 4 },
-  { label: "History", from: 5, to: 16 },
-  { label: "Poetry and Wisdom", from: 17, to: 21 },
-  { label: "The Prophets", from: 22, to: 38 },
-  { label: "The Gospels and Acts", from: 39, to: 43 },
-  { label: "The Letters", from: 44, to: 64 },
-  { label: "Revelation", from: 65, to: 65 },
-];
-
-function BookIndex({ books }: { books: BibleBook[] }) {
-  const { data: index } = useLoad("notes-index", fetchNotesIndex);
-  const { data: next } = useLoad("story-next", () =>
-    fetchStory().then((story) => {
-      const progress = readProgress();
-      if (!progress.size) return null;
-      return flattenStory(story).find((s) => !progress.has(`${s.slug}/${s.chapter}`)) ?? null;
-    })
-  );
-  const nameOf = (slug: string) => books.find((b) => b.slug === slug)?.name ?? slug;
-  const doors: { href: string; kicker: string; title: string; body: string }[] = [
-    { href: "/study/bible/story", kicker: "Start here", title: "The Story of the Bible", body: "The whole Bible as one story in eleven acts, from creation to new creation, with the history behind each act and every chapter placed where it happened, as closely as the text allows." },
-    { href: "#books", kicker: "Book by book", title: "The Sixty-Six Books", body: "An introduction to every book (who wrote it, when, why, and how it is built), then study notes on each of its chapters." },
-    { href: "/study/bible/doctrines", kicker: "What it teaches", title: "The Doctrines", body: "God, creation, sin, covenant, Christ, salvation, the Spirit, the church, and the last things, each traced through every chapter that teaches it." },
-    { href: "/study/bible/guides", kicker: "New to the Bible?", title: "Guides and Tools", body: "What the Bible is, how the books were chosen, how the text reached us, how to read each kind of writing, and tables of the ancient world's money, measures, calendar, and kings." },
-  ];
-  return (
-    <>
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
-            <Link href="/study" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>Study</Link>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 16px", textWrap: "balance" }}>The Study Bible</h1>
-          <p className="page-standfirst">Learn the whole Bible.</p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "1.12rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", margin: 0 }}>
-            Whether you have never opened it or have read it for years. Every chapter comes with notes on its history, its culture, how it is built, what it teaches, and where it sits in the one story that runs from Genesis to Revelation. Underneath every English word are the Hebrew and Greek it translates.
-          </p>
-          <div style={{ marginTop: "var(--s-4)" }}>
-            <GoToPassage />
-          </div>
-          {next && (
-            <p style={{ margin: "var(--s-4) 0 0" }}>
-              <Link href={`${chapterHref(next.slug, next.chapter)}?path=story`} style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "46px", padding: "0 20px", background: "var(--ink)", color: "var(--bone)", borderRadius: "999px", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
-                Continue the story: {nameOf(next.slug)} {next.chapter} <ArrowRight size={16} aria-hidden />
-              </Link>
-            </p>
-          )}
-        </div>
-      </section>
-      <section style={{ background: "var(--bone)", padding: "0 var(--gutter) var(--s-6)" }}>
-        <ul style={{ ...wrap, listStyle: "none", padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "14px" }}>
-          {doors.map((d) => (
-            <li key={d.href}>
-              <Link href={d.href} style={{ ...card, display: "grid", gap: "8px", height: "100%", padding: "var(--s-4)", textDecoration: "none", backgroundImage: "none", color: "var(--ink)" }}>
-                <span style={kicker}>{d.kicker}</span>
-                <span style={{ fontFamily: "var(--F)", fontSize: "1.65rem", lineHeight: 1.1 }}>{d.title}</span>
-                <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>{d.body}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section id="books" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter)", scrollMarginTop: "70px" }}>
-        <div style={{ ...wrap, display: "grid", gap: "var(--s-5)" }}>
-          <H2>The Sixty-Six Books</H2>
-          {SECTIONS.map((sec) => (
-            <div key={sec.label}>
-              <H3>{sec.label}</H3>
-              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))", gap: "8px" }}>
-                {books.slice(sec.from, sec.to + 1).map((b) => (
-                  <li key={b.code}>
-                    <Link href={`/study/bible/${b.slug}`} style={{ ...card, display: "grid", gap: "4px", height: "100%", padding: "10px 14px", color: "var(--ink)", textDecoration: "none", backgroundImage: "none" }}>
-                      <span style={{ display: "flex", justifyContent: "space-between", gap: "8px", fontFamily: "var(--U)", fontSize: "14.5px", fontWeight: 600 }}>
-                        <span>{b.name}</span>
-                        <span style={{ color: "var(--ink-muted)", fontSize: "12px", fontWeight: 400 }}>{b.chapters} ch.</span>
-                      </span>
-                      {index?.taglines[b.slug] && <span style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.45, color: "var(--ink-muted)" }}>{index.taglines[b.slug]}</span>}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-    </>
-  );
-}
-
-// ── a book ───────────────────────────────────────────────────────────────────
-
-function BookPage({ book }: { book: BibleBook }) {
-  const { data: intro } = useLoad<BookIntro>(`intro-${book.slug}`, () => fetchIntro(book.slug));
-  const { data: index } = useLoad("notes-index", fetchNotesIndex);
-  const { data: act } = useLoad(`act-${book.slug}`, () =>
-    Promise.all([fetchStory(), fetchStoryline()]).then(([story, line]) => {
-      const a = story.acts.find((x) => x.path.some((r) => r.book === book.slug));
-      const l = a && line.find((x) => x.id === a.id);
-      return l ? { id: l.id, label: l.act, title: l.title } : null;
-    })
-  );
-  const { data: related } = useLoad(`book-related-${book.slug}`, () =>
-    fetchCatalogue().then((c) => spreadKinds(itemsForPassage(c.items, book.slug), 8))
-  );
-  const { data: doctrines } = useLoad("doctrines", fetchDoctrines);
-  const titles = index?.titles[book.slug] ?? [];
-  const testament = book.testament === "OT" ? "The Old Testament" : "The New Testament";
-
-  return (
-    <>
-      {intro ? (
-        <SEOMeta title={`${book.name}: Introduction, Outline, and Study Notes`} description={intro.tagline} url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}`} />
-      ) : (
-        <SEOMeta title={`${book.name}: Study Notes, Hebrew and Greek`} description={`Every chapter of ${book.name} with study notes and the original language beneath every word.`} url={`https://www.livewellbyjamesbell.co/study/bible/${book.slug}`} />
-      )}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
-            <span><Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link> · {testament}</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 14px" }}>{book.name}</h1>
-          {/* Held on a first load until the introduction and the story line
-              above the chapter list have arrived (lib/prerender-hold.ts). */}
-          {(intro === undefined || act === undefined || index === undefined) && <span hidden data-lw-loading />}
-          {intro && <p style={{ fontFamily: "var(--B)", fontSize: "1.15rem", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 14px" }}>{intro.tagline}</p>}
-          <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", display: "flex", flexWrap: "wrap", gap: "6px 14px" }}>
-            <span>{book.chapters} chapter{book.chapters === 1 ? "" : "s"}</span>
-            {act && <span>In the story: <Link href={`/study/bible/story/${act.id}`} style={quietLink}>{act.label}, {act.title}</Link></span>}
-            <a href="#chapters" style={quietLink}>Go to the chapters</a>
-          </p>
-        </div>
-      </section>
-
-      {intro && (
-        <>
-          <Band>
-            <H2>What this book is</H2>
-            <Prose text={intro.overview} />
-          </Band>
-          <Band tone="warm">
-            <H2>How it is built</H2>
-            <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
-              {intro.structure.map((s) => {
-                // A one-chapter book counts its outline in verses: "3-4" in Jude is Jude 3 to 4, not chapter 3.
-                const at = outlineTarget(s.range, book.chapters);
-                return (
-                  <li key={s.range} style={{ ...card, padding: "14px var(--s-4)" }}>
-                    <Link href={chapterHref(book.slug, at.chapter, at.verse)} style={{ ...quietLink, textDecoration: "none", display: "block" }}>
-                      <span style={kicker}>{book.name} {s.range.replace(/-/g, "–")}</span>
-                      <span style={{ display: "block", fontFamily: "var(--F)", fontSize: "1.3rem", margin: "4px 0" }}>{s.title}</span>
-                    </Link>
-                    <span style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)" }}>{s.summary}</span>
-                  </li>
-                );
-              })}
-            </ol>
-          </Band>
-        </>
-      )}
-
-      <section id="chapters" style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter)", scrollMarginTop: "70px" }}>
-        <div style={wrap}>
-          <H2>The chapters</H2>
-          <ol aria-label={`Chapters of ${book.name}`} style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: titles.some(Boolean) ? "repeat(auto-fill, minmax(250px, 1fr))" : "repeat(auto-fill, minmax(56px, 1fr))", gap: "8px" }}>
-            {Array.from({ length: book.chapters }, (_, i) => i + 1).map((n) => {
-              const title = titles[n - 1];
-              return (
-                <li key={n}>
-                  <Link href={chapterHref(book.slug, n)} aria-label={`${book.name} chapter ${n}${title ? `: ${title}` : ""}`} style={{ ...card, display: "flex", alignItems: "center", gap: "12px", minHeight: "48px", height: "100%", padding: title ? "8px 12px" : 0, justifyContent: title ? "flex-start" : "center", color: "var(--ink)", textDecoration: "none", backgroundImage: "none" }}>
-                    <span style={{ flex: "0 0 auto", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, minWidth: title ? "28px" : undefined, textAlign: "center" }}>{n}</span>
-                    {title && <span style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.4 }}>{title}</span>}
-                  </Link>
-                </li>
-              );
-            })}
-          </ol>
-        </div>
-      </section>
-
-      {intro && (
-        <>
-          <Band tone="warm">
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "var(--s-5)" }}>
-              <div><H3>Who wrote it</H3><Prose text={intro.author} size={16} /></div>
-              <div><H3>When</H3><Prose text={intro.date} size={16} /></div>
-              <div><H3>The world it was written in</H3><Prose text={intro.setting} size={16} /></div>
-              <div><H3>Why it was written</H3><Prose text={intro.purpose} size={16} /></div>
-            </div>
-          </Band>
-          <Band>
-            <H2>Where it sits in the story</H2>
-            <Prose text={intro.story} />
-            <div style={{ height: "var(--s-4)" }} />
-            <H2>{book.testament === "OT" ? "How it points to Christ" : "What it shows of Christ"}</H2>
-            <Prose text={intro.christ} />
-          </Band>
-          <Band tone="warm">
-            <H2>Themes to follow</H2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "14px" }}>
-              {intro.themes.map((t) => (
-                <div key={t.title} style={{ ...card, padding: "var(--s-4)" }}>
-                  <H3>{t.title}</H3>
-                  <p style={{ margin: 0, fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.65, color: "var(--ink)" }}>{t.body}</p>
-                </div>
-              ))}
-            </div>
-          </Band>
-          <Band>
-            <H2>Chapters to start with</H2>
-            <ul style={{ listStyle: "none", margin: "0 0 var(--s-5)", padding: 0, display: "grid", gap: "10px", maxWidth: "72ch" }}>
-              {intro.keyChapters.map((k) => (
-                <li key={k.ch} style={{ display: "flex", gap: "14px", alignItems: "baseline" }}>
-                  <Link href={chapterHref(book.slug, k.ch)} style={{ ...quietLink, flex: "0 0 auto", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>{book.name} {k.ch}</Link>
-                  <span style={{ fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.6, color: "var(--ink)" }}>{k.why}</span>
-                </li>
-              ))}
-            </ul>
-            <H2>How to read it well</H2>
-            <Prose text={intro.reading} />
-            {intro.doctrines.length > 0 && (
-              <>
-                <div style={{ ...kicker, margin: "var(--s-4) 0 10px" }}>Doctrines it teaches</div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                  {intro.doctrines.map((d) => <Pill key={d} href={`/study/bible/doctrines/${d}`}>{doctrines?.find((x) => x.id === d)?.name ?? d}</Pill>)}
-                </div>
-              </>
-            )}
-          </Band>
-          {(intro.text || intro.reception) && (
-            <Band tone="warm">
-              {intro.text && (
-                <>
-                  <H2>The text of {book.name}</H2>
-                  <Prose text={intro.text} />
-                </>
-              )}
-              {intro.reception && (
-                <>
-                  {intro.text && <div style={{ height: "var(--s-4)" }} />}
-                  <H2>How {book.name} has been read</H2>
-                  <Prose text={intro.reception} />
-                </>
-              )}
-            </Band>
-          )}
-          {intro.furtherReading && intro.furtherReading.length > 0 && (
-            <Band tone={intro.text || intro.reception ? "bone" : "warm"}>
-              <H2>Further reading</H2>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--s-4)" }}>
-                {([["first", "To start with"], ["pastor", "For the pastor's shelf"], ["scholar", "For deeper study"]] as const).map(([tier, label]) => {
-                  const list = intro.furtherReading!.filter((r) => r.tier === tier);
-                  if (list.length === 0) return null;
-                  return (
-                    <div key={tier}>
-                      <div style={{ ...kicker, marginBottom: "8px" }}>{label}</div>
-                      <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "10px" }}>
-                        {list.map((r) => (
-                          <li key={`${r.author}|${r.title}`} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55, color: "var(--ink)" }}>
-                            {r.author}, <i>{r.title}</i>{r.series ? ` (${r.series}${r.year ? `, ${r.year}` : ""})` : r.year ? ` (${r.year})` : ""}.{" "}
-                            <span style={{ color: "var(--ink-muted)" }}>{r.note}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  );
-                })}
-              </div>
-            </Band>
-          )}
-        </>
-      )}
-
-      {related && related.length > 0 && (
-        <Band tone={!intro ? "bone" : intro.furtherReading?.length ? (intro.text || intro.reception ? "warm" : "bone") : intro.text || intro.reception ? "bone" : "warm"}>
-          <H2>{book.name} on LiveWell</H2>
-          <RelatedList items={related} />
-        </Band>
-      )}
-    </>
   );
 }
 

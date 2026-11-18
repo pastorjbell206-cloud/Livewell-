@@ -30,6 +30,7 @@ import Plate from "@/components/art/Plate";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { scrollBehavior } from "@/lib/motion";
 import road from "@/lib/startRoad.json";
+import { toolByHref } from "@/lib/toolsList";
 import {
   ROADS,
   nextStep,
@@ -55,8 +56,8 @@ export interface StartNext {
   href: string;
 }
 
-/** Where the road for someone new goes on. */
-export const START_NEXT: StartNext[] = road.next;
+/** Where the road for someone new goes on. A step that opens a tool is named by the tool's one name (lib/toolsList.ts). */
+export const START_NEXT: StartNext[] = road.next.map((n) => ({ ...n, link: toolByHref(n.href)?.name ?? n.link }));
 
 function hashRoad(): Road | null {
   if (typeof window === "undefined") return null;

@@ -53,6 +53,7 @@ import IconTile from "@/components/art/IconTile";
 import PlateFrame from "@/components/art/PlateFrame";
 import Plate, { type PlateName } from "@/components/art/Plate";
 import { isPublicEssayHref } from "@/lib/shelf";
+import { toolName } from "@/lib/toolsList";
 import TonightCard from "./family/TonightCard";
 import TonightChooser from "./family/TonightChooser";
 import TableLooksDifferent from "./family/TableLooksDifferent";
@@ -112,10 +113,10 @@ const HOW_TO: { title: string; icon: LucideIcon; links: { href: string; label: s
 /** The teen years: the pieces written for them (audit 2026-11, F7). */
 const TEENS = [
   { href: "/family/devotions", name: "Older questions on every devotion", line: "Choose Older at the Ask step", icon: MessagesSquare },
-  { href: "/tools/parent-teen-conversation", name: "The Parent and Teen Conversation", line: "Answer apart, then talk", icon: UsersRound },
+  { href: "/tools/parent-teen-conversation", name: toolName("parent-teen"), line: "Answer apart, then talk", icon: UsersRound },
   { href: "/how-tos/fam-how-to-disciple-teenagers-at-home", name: "How to disciple teenagers at home", line: "A guide for parents", icon: Compass },
   { href: "/how-tos/parenting-how-to-stay-close-to-a-pulling-away-teenager", name: "Stay close to a teen pulling away", line: "A guide for parents", icon: HeartHandshake },
-  { href: "/tools/family-devotions", name: "Devotions written for teens", line: "In the devotion builder", icon: BookHeart },
+  { href: "/tools/family-devotions", name: toolName("family-devotions"), line: "Pick Teens (12-18) and a theme", icon: BookHeart },
   ...(SKEPTIC_TRACK_LIVE ? [{ href: "/skeptic-track", name: "Start here if you're a skeptic", line: "Seven essays, in order", icon: Lightbulb }] : []),
   { href: "/answers", name: "On doubt and hard questions", line: "Read them together", icon: Lightbulb },
 ];
@@ -126,9 +127,9 @@ const MORE: { title: string; icon: LucideIcon; links: { href: string; label: str
     title: "Parenting",
     icon: Baby,
     links: [
-      { href: "/tools/parenting-verses", label: "Parenting Bible verses" },
+      { href: "/wisdom/parenting-struggles", label: "What the Bible says about parenting" },
       { href: "/help/parenting", label: "When parenting is hard" },
-      { href: "/tools/parenting-guide", label: "Parenting stage guide" },
+      { href: "/tools/parenting-guide", label: toolName("parenting-guide") },
       { href: "/writing/what-fatherhood-requires", label: "What fatherhood requires" },
       { href: "/life/raising-children-in-grace", label: "Raising children in grace" },
       { href: "/life/the-home-and-the-family", label: "The home and the family" },
@@ -139,7 +140,7 @@ const MORE: { title: string; icon: LucideIcon; links: { href: string; label: str
     icon: HeartHandshake,
     links: [
       { href: "/help/marriage", label: "When a marriage is in trouble" },
-      { href: "/tools/marriage-assessment", label: "Marriage Health Self-Check" },
+      { href: "/tools/marriage-assessment", label: toolName("marriage") },
       { href: "/writing/covenant-vs-contract-what-marriage-is", label: "Covenant vs. contract" },
       { href: "/life/marriage-the-long-covenant", label: "Marriage: the long covenant" },
     ].filter((l) => isPublicEssayHref(l.href)),
@@ -148,11 +149,11 @@ const MORE: { title: string; icon: LucideIcon; links: { href: string; label: str
     title: "Tools for the home",
     icon: Wrench,
     links: [
-      { href: "/tools/verse-finder", label: "Bible verse finder" },
-      { href: "/tools/family-devotions", label: "Family devotion builder" },
-      { href: "/tools/bible-study", label: "Bible study guide" },
-      { href: "/tools/prayer-generator", label: "Prayer generator" },
-      { href: "/tools/rule-of-life", label: "Rule of life builder" },
+      { href: "/tools/wisdom-finder", label: toolName("wisdom-finder") },
+      { href: "/tools/family-devotions", label: toolName("family-devotions") },
+      { href: "/tools/prayer-generator", label: toolName("prayer-generator") },
+      { href: "/tools/rule-of-life", label: toolName("rule-of-life") },
+      { href: "/tools", label: "Every tool" },
     ],
   },
 ];

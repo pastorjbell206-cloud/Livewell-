@@ -21,6 +21,7 @@ import { HubGroup, HubStyles } from "@/components/HubGroup";
 import { AddToHomeScreen } from "@/components/AddToHomeScreen";
 import { useLibrary } from "@/lib/library";
 import { collectProgress } from "@/lib/myProgress";
+import { toolName } from "@/lib/toolsList";
 import { trpc } from "@/lib/trpc";
 
 const gutter = "var(--gutter)";
@@ -142,34 +143,34 @@ export default function Resources() {
             title="Tools"
             links={[
               {
-                label: "Rule of Life Builder",
+                label: toolName("rule-of-life"),
                 href: "/tools/rule-of-life",
                 note: "Choose practices across prayer, Scripture, rest, community, and the body, and settle on a pattern you can keep on an ordinary week.",
               },
               {
-                label: "Scripture Memory",
+                label: toolName("scripture-memory"),
                 href: "/tools/scripture-memory",
                 note: "Forty key verses, practiced the way memory works.",
               },
               {
-                label: "Test the Case",
+                label: toolName("test-the-case"),
                 href: "/tools/test-the-case",
                 note: "The case for the resurrection, one move at a time, with room to push back with your own objection.",
               },
               {
-                label: "Which Lens Has You?",
+                label: toolName("which-lens"),
                 href: "/tools/which-lens",
                 note: "Thirteen choices that show which lens is reading Scripture for you.",
               },
               {
-                label: "The self-checks",
+                label: "Check yourself",
                 href: "/assessments",
                 note: "Questions about faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you.",
               },
               {
                 label: "Every tool",
                 href: "/tools",
-                note: "The full set, from the Bible study companion and the glossary to the assessments and planners.",
+                note: "Every tool on LiveWell, in four groups, each listed once.",
               },
             ]}
           >
@@ -224,7 +225,7 @@ export default function Resources() {
                 note: "Seventy-six questions and answers, for adults and for children, one at a time.",
               },
               {
-                label: "Family Devotion Builder",
+                label: toolName("family-devotions"),
                 href: "/tools/family-devotions",
                 note: "A fifteen-minute devotion for tonight, built for your kids' ages.",
               },

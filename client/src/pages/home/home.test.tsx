@@ -119,7 +119,7 @@ describe("Home's tonight line", () => {
     setToday(2026, 10, 27);
     window.localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers: { 0: 4 }, step: 2, savedAt: "2026-10-26T20:00:00.000Z" }));
     renderHome();
-    expect(await screen.findByRole("link", { name: "Continue the Life Audit" })).toHaveAttribute("href", "/tools/life-audit");
+    expect(await screen.findByRole("link", { name: "Continue a Quick Check on Eight Areas of Life" })).toHaveAttribute("href", "/tools/life-audit");
   });
 
   it("shows nothing at all when there is nothing to show", async () => {

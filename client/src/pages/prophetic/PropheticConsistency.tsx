@@ -12,6 +12,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import type { SectionConfig } from "@/lib/prophetic";
 
+import NextStep from "@/components/NextStep";
 interface Test { id: string; prompt: string; tell: string; }
 interface Data { intro: string; note: string; tests: Test[]; closing: string; }
 
@@ -93,6 +94,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
               <div style={{ marginTop: "var(--s-4)" }}>
                 <Link href={SECTION_HREF} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read the essays on faith and power →</Link>
               </div>
+              <NextStep dark id="which-lens" line="Thirteen choices that show what is bending the way you read the Bible." />
             </div>
           </section>
         </>
