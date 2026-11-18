@@ -265,3 +265,84 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Matthew 13:31 memory verse "which a man took" | ESV reads "that a man took" | ESV wording |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help lines | Old guide had none | None added |
+
+## contentment
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" lines; summary and FAQ giving his biography (atheism, fatherless, five sons) as the reason to trust the study; invite caption "with five sons watching" | Credential use; decision 2 | Cut; first person kept for his teaching |
+| Augustine, "you have made us for yourself, and our heart is restless until it rests in you" (Confessions 1.1) | Known; kept in earlier guides | Kept, short and attributed |
+| Burroughs's definition, "sweet, inward, quiet, gracious frame of spirit, which freely submits to and delights in God's wise and fatherly disposal in every condition" | Web search (Blue Letter Bible, Monergism editions) | Verified; quoted once in session 3, and in the glossary |
+| Burroughs, contentment "by subtraction, not addition" | Search did not find the wording | Kept as paraphrase, attributed, no quotation marks |
+| Burroughs, the discontented compare upward; "a little in the hand of a contented man is a great deal" | Not verified | First kept as paraphrase; second cut |
+| Burroughs, Rare Jewel 1648; Watson, Art of Divine Contentment 1653 | Known | Kept; Watson "Leader to confirm" removed |
+| Girard on imitative desire; Taylor on the modern self; Brueggemann, Sabbath as Resistance | Known | Kept as paraphrase |
+| "The social researcher and others have documented ..." (envy and social media) | Vague, no source | Narrowed to "researchers have begun to study" |
+| Money and happiness "flattens sharply once basic security is reached" | Contested (the plateau question is still argued) | Stated as an argument still going on; the treadmill pattern kept |
+| Ecclesiastes "circa 950 BC"; "three thousand years before the shopping mall"; Ecclesiastes 3:11 "a thousand years" before Augustine | Date debated | Timeline date now "Date debated"; the year claims cut |
+| Job "lost everything, and God's answer was his own presence, not a refilled barn" | Job 42 restores his goods | Restated: God answered from the whirlwind with himself, not an explanation |
+| Psalm 63:1, James 4:1-2, 1 Timothy 6:9-10, 6:17, Matthew 6:26-34, Exodus 16 | ESV (from memory) | Quoted in ESV wording; Psalm 63:1 and James 4:1-2 had dropped words, restored |
+| Luke 12:15 and Hebrews 13:5 were in the Scripture index but never used in the sessions | Index | Luke 12:15 now in session 1 teaching; Hebrews 13:5 in session 4 teaching and session 5 going deeper |
+| Placeholder bibliography entry "Discipline and Desire in the pastoral counseling tradition" | Not a real title | Cut |
+| "Leader to confirm" on Watson, Keller (two), Comer, Alcorn | Known titles | Notes removed; titles kept, no claims attributed beyond the title |
+| Case studies told as real | No source | Framed as "Suppose" |
+| Help lines | Old guide had none (no 988, no abuse lines) | None added; the "real need" path (benevolence fund, counselor, private contact) kept in the primer, FAQ and script |
+
+## deconstruction
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" lines ("Bell takes the strong form", "Bell grants", "Bell does not stand outside this"); promo "from James Bell" | Rulebook and narrator talk | First person kept for his teaching ("I'm a pastor, and pastors like me did the bundling"); narrator and promo byline cut |
+| Case studies told as real ("A woman ... came to a pastor", "A college student emailed a pastor", "A man had grown up", "Two people came out of the same church split", "a man who had said almost nothing") | No source | All five framed as "Suppose" |
+| Help lines (trauma informed counselor; report abuse by a church leader to the authorities; if a child may be at risk, report it to the police) | Script against the old file | All seven sentences kept word for word, in the same places (session 3 practice and teaching, primer, FAQ, closing script) |
+| 1 Thessalonians 5:21 memory verse "Test everything, and hold fast to what is good" | ESV reads "but test everything; hold fast what is good" | ESV wording |
+| Psalm 34:18 memory verse "The Lord" | ESV "The LORD" | Corrected |
+| Matthew 23:27 "dead men's bones" | ESV "dead people's bones" | Corrected |
+| Mustard seed: "When the disciples asked for more of it ... move mountains"; mustard seed "becomes a tree the birds nest in" | "Increase our faith" is Luke 17:5-6 (mulberry tree); mountains is Matthew 17:20 after the failed exorcism; birds nesting is the parable in Matthew 13:31-32 | The three passages now named separately |
+| Jesus praised John "in the very next breath" | Matthew 11:7, as the messengers left | Kept, phrased as "as John's messengers are leaving" |
+| James 1:6-8 | Context is asking for wisdom in prayer | Response now says so |
+| Hebrews 12:27 | ESV verse contains a dash | Quoted only its last clause |
+| Timeline: Job "circa 600 BC" placed before Isaiah "circa 700 BC" | Job's date unknown | "Date unknown" |
+| Luther "nails his theses" | Nailing is disputed | "Luther's Ninety-five Theses begin the Reformation" |
+| Calvin "circa 1555" visible and true church | Institutes final Latin edition 1559 (Augustine taught the distinction earlier) | Dated 1559; going deeper credits Augustine and the Reformers |
+| Kierkegaard "1849 ... leap of faith" | The phrase isn't his in that form; 1849 is The Sickness unto Death | Restated as his 1854 to 1855 attack on Christendom |
+| C. S. Lewis "1942 ... publishes work" | Mere Christianity is 1952, from 1941 to 1944 radio talks | Dated 1952 |
+| Bibliography "Scott McKnight" | Scot McKnight | Corrected |
+| "Surprised by Doubt ... Joshua McNall and Jack McNall" | Web search: Joshua D. Chatraw and Jack Carson, Brazos 2023 | Corrected in bibliography and further reading |
+| "Leader to confirm" on Keller, Tov, Enns, Lewis, Chatraw and Carson | Known titles; no claims attributed beyond the title | Notes removed; "attributing to Bell" phrasing cut |
+| Glossary "Steelman" | Method talk | Cut |
+| Old quotations of people | None carried beyond Scripture | None added |
+
+## deep-roots
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Deep Roots" (summary, bulletin, pulpit, invite caption) | Not on the three-book shelf (bookShelf.ts) | Plug dropped; guide title unchanged |
+| Narrator "Bell" lines; "He writes from inside the room where people fall apart" | Narrator talk | First person kept for his teaching |
+| Atheism in the leader primer ("The writer of these essays came to Christian doctrine from atheism") | Confirmed biography | Kept once, first person, where it explains why the study translates terms |
+| 1 Corinthians 15:3-4 memory verse "according to the Scriptures" | ESV "in accordance with the Scriptures" | Corrected; 15:14 and 15:17 to ESV wording |
+| 2 Timothy 3:16 "useful" | ESV "profitable" | Corrected |
+| Isaiah 55:11, 2 Corinthians 5:17 memory verses | ESV punctuation | Semicolons restored |
+| Romans 1:17 "from faith to faith" | ESV "from faith for faith" | Corrected |
+| Priene inscription, about 9 BC, Augustus's birthday as good news | Known | Kept; Wright named as one who points to it, no quotation |
+| Augustine's lover, beloved and love (On the Trinity) | Known | Paraphrase |
+| Bavinck: a solitary God would need the world to love | His argument that God is complete in himself; wording not verified | Paraphrase, softened |
+| Athanasius exiled five times; Nicaea 325; Constantinople 381; Chalcedon 451 and its four negatives; Hippo 393 and Carthage 397 | Known | Kept |
+| "Incurvatus in se" given as Augustine's phrase | The phrase is Luther's (Lectures on Romans), building on Augustine | Credited to Luther; glossary entry renamed "Curved in on itself" |
+| Solzhenitsyn on the line through every heart | Known (Gulag Archipelago); not searched | Paraphrase, no quotation marks |
+| "The men who designed the death camps had doctorates" | Overstated | "Several of the officials at Wannsee in 1942 held doctorates" |
+| Prodigal son "telling his father he wished him dead"; the running patriarch | Interpretation | Marked as how many commentators read it |
+| Capon on the parables; McGrath "locates the breakthrough precisely there" | Decorative | Capon cut from the teaching; McGrath line cut (book kept in bibliography) |
+| Bonhoeffer's cheap grace; Gregory of Nazianzus, what was not assumed was not healed | Known; no source text in the repo | Paraphrase, no quotation marks |
+| Luther's "gate to paradise" | His 1545 preface | Paraphrase |
+| Barth, the Judge judged in our place | Church Dogmatics IV/1 | Paraphrase |
+| "The men who first secured those words had been blinded in one eye" (one holy catholic and apostolic church) | Those words are from 381; the blinded bishop story is told of Nicaea (325) | Restated: some bishops at Nicaea bore marks of persecution, one said to have lost an eye |
+| Luther "nailed his protest to a door" | Disputed | "Luther's Ninety-five Theses in Wittenberg in 1517" |
+| Session 2 "fundamentalist and village atheist are twins" | Unfair to careful inerrantists | Narrowed to a popular assumption; the 1978 Chicago Statement's allowance for round numbers, topical order and free quotation stated; inerrant/infallible left open as a matter faithful Christians weigh differently |
+| "Older confessions spoke of infallible before inerrant" (as unfailing in purpose) | Westminster (1646) calls Scripture's truth infallible; the "purpose" reading is one view | Stated as one view among faithful views |
+| Mark 1:15 "first word ... is kingdom" | His first words are "The time is fulfilled" | "His first preaching is about the kingdom" |
+| Ladd "the phrase belongs to Ladd" | He made it familiar | "A phrase Ladd made familiar" |
+| Chesterton, democracy of the dead (Orthodoxy) | Known | Paraphrase, no quotation marks |
+| "Leader to confirm" on Wright, Hatch, Reeves, Trueman | Known titles | Notes removed; "as Bell's own argument" phrasing cut |
+| Timeline | Old guide had none | None added |
+| Help lines | Old guide had none | None added |
