@@ -184,7 +184,7 @@ export default function Family() {
         url="https://www.livewellbyjamesbell.co/family"
       />
 
-      <PageHead eyebrow="Family" title="Disciple your whole family, in one place." lede="Devotions you can actually do with your kids." />
+      <PageHead eyebrow="Family" title="Disciple your whole family, in one place." lede="Devotions you can do with your kids tonight." />
 
       {/* TONIGHT */}
       <section style={{ background: "var(--bone)", padding: "var(--s-4) 16px var(--s-5)" }}>
@@ -278,7 +278,7 @@ export default function Family() {
       </section>
 
       <StatementBand tone="dark">
-        The faith is handed down on purpose, at the table, or it is not handed down at all.
+        The faith gets handed down on purpose, usually at a table, by the people a child lives with.
       </StatementBand>
 
       {/* READING PLANS */}
@@ -325,15 +325,15 @@ export default function Family() {
       {/* PARENTING */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="Raising them in the faith" title="Parenting" intro="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
+          <SectionHead eyebrow="Raising them in the faith" title="Parenting" intro="Most of parenting happens where nobody sees it. Here is Scripture for the hard moments, plus writing and tools for the long work of raising children." />
           <CardGrid
             label="Parenting guides and tools"
             items={[
-              { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." },
+              { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt, each with a short note for the parent." },
               { href: "/help/parenting", title: "When parenting is hard", dek: "For worn-out parents of little ones, of a teen who has gone quiet, or of a grown child who has left the faith." },
               { href: "/tools/parenting-guide", title: "Parenting stage guide", dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
               { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
-              { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." },
+              { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You can't save your children, and you were never meant to." },
               { href: "/life/the-home-and-the-family", title: "The home and the family", dek: "The household as a school of grace: the table, family worship, and the open door." },
             ].filter((item) => isPublicEssayHref(item.href))}
           />
@@ -343,14 +343,14 @@ export default function Family() {
       {/* MARRIAGE */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="The center of the home" title="Marriage" intro="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
+          <SectionHead eyebrow="The center of the home" title="Marriage" intro="Your family stands on your marriage. Here is writing to read and a self-check to take." />
           <CardGrid
             min={440}
             label="Marriage guides and tools"
             items={[
               { href: "/help/marriage", title: "When a marriage is in trouble", dek: "For the marriage that has gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help." },
               { href: "/tools/marriage-assessment", title: "Marriage Health Self-Check", dek: "Fifteen questions across communication, trust, conflict, and shared vision." },
-              { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
+              { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage is, and why the difference holds it together." },
               { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
             ].filter((item) => isPublicEssayHref(item.href))}
           />
@@ -365,11 +365,11 @@ export default function Family() {
           <CardGrid
             label="Tools for the home"
             items={[
-              { href: "/tools/verse-finder", title: "Bible verse finder", dek: "Find Scripture for any season — anxiety, grief, hope, courage — and share it." },
+              { href: "/tools/verse-finder", title: "Bible verse finder", dek: "Find Scripture for anxiety, grief, hope, or courage, and share it." },
               { href: "/tools/family-devotions", title: "Family devotion builder", dek: "Build a 15-minute devotion by your kids' ages and a theme." },
               { href: "/tools/bible-study", title: "Bible study guide", dek: "Study any book of the Bible with themes, questions, and reading strategies." },
               { href: "/tools/prayer-generator", title: "Prayer generator", dek: "Guided prayers for morning, evening, strength, guidance, and gratitude." },
-              { href: "/tools/rule-of-life", title: "Rule of life builder", dek: "Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." },
+              { href: "/tools/rule-of-life", title: "Rule of life builder", dek: "Build a rhythm of prayer, Scripture, rest, community, and mission that you can keep." },
             ]}
           />
         </div>
