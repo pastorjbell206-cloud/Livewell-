@@ -61,6 +61,15 @@ describe("/about", () => {
     expect(elsewhere.queryByRole("link", { name: /Pastors Connection Network/ })).toBeNull();
     expect(elsewhere.getByRole("link", { name: /^ENDS/ }).getAttribute("href")).toBe("https://endsinitiative.org");
   });
+
+  it("puts one row of everything James does under his words, ending at /connect", () => {
+    stubContact(new Response("{}"));
+    renderWithProviders(<About />);
+    const row = within(screen.getByRole("navigation", { name: "Where else to find James" }));
+    expect(row.getByRole("link", { name: /^Substack/ }).getAttribute("rel")).toContain("noopener");
+    expect(row.getByRole("link", { name: /^Books/ }).getAttribute("href")).toBe("/books");
+    expect(row.getByRole("link", { name: "Everything James does, on one page" }).getAttribute("href")).toBe("/connect");
+  });
 });
 
 describe("/speaking", () => {

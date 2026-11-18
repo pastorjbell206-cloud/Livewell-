@@ -1,68 +1,76 @@
 /**
- * /connect: "Find James". The one page that gathers every way to read him
- * and reach him: Substack, Facebook, the newest essays here and their feed,
- * the contact form (with the way to real help beside it), speaking, the three
- * books, and the work that lives at its own address.
+ * /connect: "Find James". The one page that holds everything James does, so
+ * he can link it from anywhere (James, 2026-11-18: "tie in all that I do...
+ * into kind of one thing"). The short address /james lands here.
  *
- * James asked for this page back on 2026-11-17; it had been folded into
- * /about on 2026-10-12. Everything outside this site is a link. Nothing from
- * Facebook or Substack is imported or embedded, and a channel appears only
- * with a real address (lib/channels.ts). The church is named without a link
- * because the repo holds no verified web address for it.
+ * In order (the model James was shown, BLUEPRINT.html "One home for all you
+ * do"):
+ * 1. The page top, with a plate.
+ * 2. LiveWell itself, the wide first card: the home and the library.
+ * 3. His work at its own address: Substack (the letter), Facebook (the front
+ *    porch), the Following the Way podcast, and ENDS. One line each, one
+ *    button that opens it.
+ * 4. The newest on Substack: titles and dates, each a link out
+ *    (components/SubstackLatest.tsx). Never the posts themselves.
+ * 5. Books, speaking and contact, as cards.
+ * 6. This page's own address, with a Copy button.
+ *
+ * Every address and label comes from lib/works.ts, which reads
+ * lib/channels.ts. Nothing from Facebook or Substack is fetched into the
+ * browser or embedded. The church has no verified web address, so it has no
+ * card.
  */
+import { useState } from "react";
 import { Link } from "wouter";
+import { BookOpen, Compass, Newspaper } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
-import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
-import CrisisNote from "@/components/CrisisNote";
-import { NewsletterSignup } from "@/components/NewsletterSignup";
-import { BOOK_SHELF } from "@/lib/bookShelf";
-import { RSS_PATH, channelUrl, liveChannels } from "@/lib/channels";
-import { newestEssays } from "@/lib/newestEssays";
+import SectionHead from "@/components/art/SectionHead";
+import WorkCard from "@/components/art/WorkCard";
+import SubstackLatest from "@/components/SubstackLatest";
+import { copyToClipboard } from "@/lib/clipboard";
+import { ogImageUrl } from "@/lib/site";
+import { HOME_WORKS, LIVEWELL_WORK, elsewhereWorks } from "@/lib/works";
+import "./connect.css";
 
-const gutter = "var(--gutter)";
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+/** What a reader sees; the apex address forwards to the www one. */
+const SHORT_ADDRESS = "livewellbyjamesbell.co/connect";
+/** What the Copy button puts on the clipboard. */
+const FULL_ADDRESS = "https://www.livewellbyjamesbell.co/connect";
 
-function Band({
-  id,
-  title,
-  tone = "bone",
-  children,
-}: {
-  id: string;
-  title: string;
-  tone?: "bone" | "warm";
-  children: React.ReactNode;
-}) {
+function CopyAddress() {
+  const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
   return (
-    <section
-      id={id}
-      aria-labelledby={`${id}-title`}
-      className="cn-section"
-      style={{ background: tone === "warm" ? "var(--bone-warm)" : "var(--bone)", padding: `var(--s-5) ${gutter}` }}
-    >
-      <div style={wrap} className="cn-band">
-        <h2 id={`${id}-title`} className="cn-h2">
-          {title}
-        </h2>
-        <div>{children}</div>
-      </div>
-    </section>
+    <p className="cn-address">
+      <span>
+        This page's address is <strong className="cn-address__url">{SHORT_ADDRESS}</strong>
+      </span>
+      <button
+        type="button"
+        className="btn btn--quiet cn-address__btn"
+        onClick={async () => setState((await copyToClipboard(FULL_ADDRESS)) ? "copied" : "failed")}
+      >
+        {state === "copied" ? "Copied" : "Copy"}
+        <span className="sr-only"> this page's address</span>
+      </button>
+      <span role="status" className="cn-address__status">
+        {state === "failed" && "Could not copy. Select the address and copy it."}
+        {state === "copied" && <span className="sr-only">Copied</span>}
+      </span>
+    </p>
   );
 }
 
 export default function Connect() {
-  const substack = channelUrl("substack");
-  const facebook = channelUrl("facebook");
-  const newest = newestEssays(3);
-  const elsewhere = liveChannels().filter((c) => c.id !== "substack" && c.id !== "facebook");
+  const elsewhere = elsewhereWorks();
 
   return (
     <Layout>
       <SEOMeta
         title="Find James Bell: Substack, Facebook, Essays, and Contact"
-        description="Every way to read James Bell and reach him, on one page: his Substack, his Facebook, the newest essays and their RSS feed, a contact form, speaking, and his three books."
+        description="Everything James Bell does, on one page: LiveWell, his Substack, his Facebook, the Following the Way podcast, ENDS, his books, speaking, and contact."
+        image={ogImageUrl("Find James Bell", "LiveWell")}
         url="https://www.livewellbyjamesbell.co/connect"
       />
 
@@ -71,180 +79,65 @@ export default function Connect() {
         doorHref="/about"
         title="Find James"
         titleId="connect-title"
-        line="Read him, write to him, or invite him to speak."
-        plate="letter"
-      >
-        <p className="cn-jump">
-          <a href="#read">Read him</a>
-          <a href="#write">Write to him</a>
-          <a href="#invite">Invite him to speak</a>
-          <a href="#books">His books</a>
-        </p>
-      </PageHead>
+        line="Everything James does, in one place."
+        plate="tree"
+      />
 
-      {/* READ HIM: Substack, Facebook, the essays here. */}
-      <Band id="read" title="Read him" tone="warm">
-        <ul className="cn-rows">
-          {substack && (
-            <li className="cn-row">
-              <h3 className="cn-h3">Substack</h3>
-              <p className="cn-p">
-                New essays by email. Leave your address here and finish on Substack, or read there first and decide
-                later.
-              </p>
-              <NewsletterSignup variant="minimal" source="connect" />
-              <p className="cn-actions">
-                <a href={substack} target="_blank" rel="noopener noreferrer" className="cn-link">
-                  Read on Substack
-                </a>
-              </p>
-            </li>
-          )}
-          {facebook && (
-            <li className="cn-row">
-              <h3 className="cn-h3">Facebook</h3>
-              <p className="cn-p">Short pastoral notes, most days.</p>
-              <p className="cn-actions">
-                <a href={facebook} target="_blank" rel="noopener noreferrer" className="cn-link">
-                  Follow on Facebook
-                </a>
-              </p>
-            </li>
-          )}
-          <li className="cn-row">
-            <h3 className="cn-h3">Essays on this site</h3>
-            {newest.length > 0 && (
-              <>
-                <p className="cn-p">The newest on the shelf:</p>
-                <ul className="cn-essays">
-                  {newest.map((e) => (
-                    <li key={e.slug}>
-                      <Link href={`/writing/${e.slug}`} className="cn-essay">
-                        {e.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <p className="cn-actions">
-              <Link href="/writing" className="cn-link">
-                All essays
-              </Link>
-              <a href={RSS_PATH} className="cn-link">
-                RSS feed
-              </a>
-            </p>
-          </li>
-        </ul>
-      </Band>
-
-      {/* WRITE TO HIM: the address, the form, and the way to real help. */}
-      <Band id="write" title="Write to him">
-        <div className="cn-write">
-          <div>
-            <p className="cn-p">
-              A message sent here is saved for James to read. You can also email{" "}
-              <a href={`mailto:${CONTACT_EMAIL}`} className="cn-link cn-link--inline">
-                {CONTACT_EMAIL}
-              </a>
-              . He is in Fenton, Michigan.
-            </p>
-            <CrisisNote style={{ marginTop: "var(--s-3)", paddingTop: "var(--s-3)", borderTop: "1px solid var(--border)" }} />
-          </div>
-          <ContactForm idPrefix="connect" />
+      {/* LIVEWELL: the home and the library. */}
+      <section className="cn-sec cn-sec--first" aria-label="LiveWell, the home and the library">
+        <div className="cn-wrap">
+          <WorkCard work={LIVEWELL_WORK} label="The home and the library" lead headingLevel={2}>
+            <Link href="/start" className="btn btn--quiet lw-work__btn">
+              New here? Start here
+            </Link>
+          </WorkCard>
         </div>
-      </Band>
+      </section>
 
-      {/* INVITE HIM */}
-      <Band id="invite" title="Invite him to speak" tone="warm">
-        <p className="cn-p">
-          James preaches and speaks at conferences, retreats, and churches. The speaking page has a form for asking
-          about a date.
-        </p>
-        <p className="cn-actions">
-          <Link href="/speaking" className="cn-link">
-            Ask James to speak
-          </Link>
-          <Link href="/about" className="cn-link">
-            Who James is
-          </Link>
-        </p>
-      </Band>
+      {/* HIS WORK AT ITS OWN ADDRESS */}
+      {elsewhere.length > 0 && (
+        <section className="cn-sec cn-sec--warm" aria-labelledby="cn-elsewhere-title">
+          <div className="cn-wrap">
+            <SectionHead icon={Compass} label="Elsewhere" title="Where else James is." id="cn-elsewhere-title" />
+            <ul className="lw-works lw-works--four">
+              {elsewhere.map((w) => (
+                <li key={w.id}>
+                  <WorkCard work={w} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
-      {/* HIS BOOKS: the three on the shelf (lib/bookShelf.ts). */}
-      <Band id="books" title="His books">
-        <ul className="cn-books">
-          {BOOK_SHELF.map((b) => (
-            <li key={b.slug}>
-              <Link href={b.href} className="cn-book">
-                <img src={b.thumb} alt="" width={150} height={240} loading="lazy" decoding="async" className="cn-book__cover" />
-                <span className="cn-book__title">{b.title}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <p className="cn-actions">
-          <Link href="/books" className="cn-link">
-            All three books
-          </Link>
-        </p>
-      </Band>
+      {/* THE NEWEST ON SUBSTACK, linked out. */}
+      <section className="cn-sec cn-sec--dark" aria-labelledby="cn-substack-title">
+        <div className="cn-wrap">
+          <SectionHead dark icon={Newspaper} label="Substack" title="New on Substack." id="cn-substack-title" />
+          <SubstackLatest tone="dark" />
+        </div>
+      </section>
 
-      {/* ELSEWHERE: the church, named without a link, then the channels with
-          a real address that are not already above. */}
-      <Band id="elsewhere" title="Elsewhere" tone="warm">
-        <p className="cn-p">James pastors First Baptist Church of Fenton, Michigan.</p>
-        {elsewhere.length > 0 && (
-          <ul className="cn-rows cn-rows--ruled">
-            {elsewhere.map((c) => (
-              <li key={c.id} className="cn-row">
-                <h3 className="cn-h3">{c.label}</h3>
-                <p className="cn-p">{c.blurb}</p>
-                <p className="cn-actions">
-                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="cn-link">
-                    Visit {c.label}
-                  </a>
-                </p>
+      {/* BOOKS, SPEAKING, CONTACT */}
+      <section className="cn-sec" aria-labelledby="cn-here-title">
+        <div className="cn-wrap">
+          <SectionHead icon={BookOpen} label="Here on LiveWell" title="Books, speaking, and contact." id="cn-here-title" />
+          <ul className="lw-works lw-works--three">
+            {HOME_WORKS.map((w) => (
+              <li key={w.id}>
+                <WorkCard work={w} />
               </li>
             ))}
           </ul>
-        )}
-      </Band>
+        </div>
+      </section>
 
-      <style>{CONNECT_CSS}</style>
+      {/* THIS PAGE'S ADDRESS */}
+      <section className="cn-sec cn-sec--warm cn-sec--foot" aria-label="This page's address">
+        <div className="cn-wrap">
+          <CopyAddress />
+        </div>
+      </section>
     </Layout>
   );
 }
-
-const CONNECT_CSS = `
-.cn-jump{display:flex;flex-wrap:wrap;column-gap:24px;margin:var(--s-2) 0 0;font-family:var(--U);font-size:15px}
-.cn-jump a,.cn-link{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);font-weight:500;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:4px;background-image:none}
-.cn-link--inline{display:inline;min-height:0;overflow-wrap:anywhere}
-.cn-section{scroll-margin-top:84px}
-.cn-band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.4fr);gap:var(--s-3) var(--s-5);align-items:start}
-.cn-h2{font-family:var(--F);font-weight:400;font-size:clamp(28px,3.2vw,38px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink);margin:0}
-.cn-h3{font-family:var(--F);font-weight:500;font-size:24px;line-height:1.2;color:var(--ink);margin:0 0 6px}
-.cn-p{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink-muted);max-width:60ch;margin:0 0 var(--s-2)}
-.cn-rows{list-style:none;margin:0;padding:0}
-.cn-row{border-top:1px solid var(--border);padding:var(--s-3) 0}
-.cn-row:first-child{border-top:none;padding-top:0}
-.cn-rows--ruled .cn-row:first-child{border-top:1px solid var(--border);padding-top:var(--s-3)}
-.cn-row:last-child{padding-bottom:0}
-.cn-actions{display:flex;flex-wrap:wrap;column-gap:24px;margin:6px 0 0;font-family:var(--U);font-size:15px}
-.cn-essays{list-style:none;margin:0 0 var(--s-1);padding:0}
-.cn-essay{display:flex;align-items:center;min-height:44px;padding:4px 0;font-family:var(--F);font-size:21px;line-height:1.25;color:var(--ink);text-decoration:none;background-image:none}
-.cn-essay:hover,.cn-essay:focus-visible{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:4px}
-.cn-write{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:var(--s-4) var(--s-5);align-items:start}
-.cn-books{list-style:none;margin:0 0 var(--s-2);padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-3)}
-.cn-book{display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);background-image:none}
-.cn-book__cover{width:130px;height:auto;border-radius:var(--radius-sm)}
-.cn-book__title{font-family:var(--F);font-weight:500;font-size:20px;line-height:1.2;max-width:22ch}
-.cn-book:hover .cn-book__title,.cn-book:focus-visible .cn-book__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:4px}
-@media (max-width:860px){
-  .cn-band,.cn-write{grid-template-columns:minmax(0,1fr)}
-  .cn-books{gap:var(--s-2)}
-  .cn-book__cover{width:100%;max-width:130px}
-  .cn-book__title{font-size:17px}
-}
-`;

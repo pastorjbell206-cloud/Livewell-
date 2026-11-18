@@ -24,6 +24,7 @@ const PAGES: [route: string, file: string][] = [
   ["", "client/src/pages/Home.tsx"],
   ["/about", "client/src/pages/About.tsx"],
   ["/books", "client/src/pages/Books.tsx"],
+  ["/connect", "client/src/pages/Connect.tsx"],
   ["/tools", "client/src/pages/ToolsHub.tsx"],
   ["/nation", "client/src/pages/nation/NationHub.tsx"],
   ["/writing", "client/src/pages/Writing.tsx"],
