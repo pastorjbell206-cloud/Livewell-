@@ -13,6 +13,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
 import CrisisNote from "@/components/CrisisNote";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
@@ -65,34 +66,21 @@ export default function Connect() {
         url="https://www.livewellbyjamesbell.co/connect"
       />
 
-      <section aria-labelledby="connect-title" style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter} var(--s-4)` }}>
-        <div style={wrap}>
-          <h1
-            id="connect-title"
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "var(--fs-h1)",
-              fontWeight: 400,
-              lineHeight: 1.04,
-              letterSpacing: "-0.02em",
-              color: "var(--ink)",
-              margin: "0 0 var(--s-2)",
-            }}
-          >
-            Find James
-          </h1>
-          <p className="cn-lede">
-            The essays and the books live on this site. New essays also go out by email through Substack, and James
-            writes short notes on Facebook. This page gathers all of it, along with the ways to write to him.
-          </p>
-          <p className="cn-jump">
-            <a href="#read">Read him</a>
-            <a href="#write">Write to him</a>
-            <a href="#invite">Invite him to speak</a>
-            <a href="#books">His books</a>
-          </p>
-        </div>
-      </section>
+      <PageHead
+        door="About"
+        doorHref="/about"
+        title="Find James"
+        titleId="connect-title"
+        line="Read him, write to him, or invite him to speak."
+        plate="letter"
+      >
+        <p className="cn-jump">
+          <a href="#read">Read him</a>
+          <a href="#write">Write to him</a>
+          <a href="#invite">Invite him to speak</a>
+          <a href="#books">His books</a>
+        </p>
+      </PageHead>
 
       {/* READ HIM: Substack, Facebook, the essays here. */}
       <Band id="read" title="Read him" tone="warm">
@@ -230,8 +218,7 @@ export default function Connect() {
 }
 
 const CONNECT_CSS = `
-.cn-lede{font-family:var(--B);font-size:clamp(17px,1.4vw,19px);line-height:1.7;color:var(--ink-muted);max-width:62ch;margin:0 0 var(--s-2)}
-.cn-jump{display:flex;flex-wrap:wrap;column-gap:24px;margin:0;font-family:var(--U);font-size:15px}
+.cn-jump{display:flex;flex-wrap:wrap;column-gap:24px;margin:var(--s-2) 0 0;font-family:var(--U);font-size:15px}
 .cn-jump a,.cn-link{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);font-weight:500;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:4px;background-image:none}
 .cn-link--inline{display:inline;min-height:0;overflow-wrap:anywhere}
 .cn-section{scroll-margin-top:84px}

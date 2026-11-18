@@ -18,6 +18,7 @@ import type { ReactNode } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import { Figure } from "@/components/Figure";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
 import { SITE_URL, ogImageUrl } from "@/lib/site";
@@ -97,52 +98,27 @@ export default function About() {
       <HubStyles />
 
       {/* WHO HE IS: the portrait, the name, and why the work exists. */}
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter}` }}>
-        <div style={wrap} className="about-hero">
-          <div className="about-hero__portrait">
-            <Figure src={PORTRAIT_URL} alt="James Bell" aspect="4 / 5" priority />
-          </div>
-          <div>
-            <h1
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "var(--fs-display)",
-                fontWeight: 400,
-                lineHeight: 1.02,
-                letterSpacing: "-0.02em",
-                color: "var(--charcoal-fg)",
-                margin: "0 0 14px",
-              }}
-            >
-              James Bell
-            </h1>
-            <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", margin: "0 0 var(--s-4)" }}>
-              Pastor, First Baptist Church of Fenton, Michigan<br />
-              Founder, ENDS, equipping pastors in remote regions<br />
-              Host, Following the Way<br />
-              Writer
-            </p>
-            <p
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(22px, 2.3vw, 29px)",
-                fontWeight: 400,
-                lineHeight: 1.4,
-                color: "var(--charcoal-fg)",
-                margin: "0 0 var(--s-4)",
-                maxWidth: "36ch",
-              }}
-            >
-              {HOME_WHY}
-            </p>
-            <p className="about-hero__links" style={{ margin: 0 }}>
-              <Link href="/speaking">Invite James to speak</Link>
-              <Link href="/contact">Write to James</Link>
-              <Link href="/subscribe">Subscribe on Substack</Link>
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHead
+        door="About"
+        title="James Bell"
+        className="about-head"
+        art={<Figure src={PORTRAIT_URL} alt="James Bell" aspect="4 / 5" priority rounded={false} bordered={false} />}
+        action={
+          <p className="about-hero__links">
+            <Link href="/speaking">Invite James to speak</Link>
+            <Link href="/contact">Write to James</Link>
+            <Link href="/subscribe">Subscribe on Substack</Link>
+          </p>
+        }
+      >
+        <p className="about-roles">
+          Pastor, First Baptist Church of Fenton, Michigan<br />
+          Founder, ENDS, equipping pastors in remote regions<br />
+          Host, Following the Way<br />
+          Writer
+        </p>
+        <p className="about-why">{HOME_WHY}</p>
+      </PageHead>
 
       {/*
         MY STORY IN MY OWN WORDS. The place for James's story, atheism to
@@ -241,9 +217,11 @@ export default function About() {
 }
 
 const ABOUT_CSS = `
-.about-hero{display:grid;grid-template-columns:220px minmax(0,1fr);gap:var(--s-5);align-items:start}
-.about-hero__links{display:flex;flex-wrap:wrap;gap:0 28px;font-family:var(--U);font-size:15px}
-.about-hero__links a{display:inline-flex;align-items:center;min-height:44px;color:var(--charcoal-fg);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:5px;background-image:none}
+.about-hero__links{display:flex;flex-wrap:wrap;gap:0 28px;margin:0;font-family:var(--U);font-size:15px}
+.about-hero__links a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:5px;background-image:none}
+.about-roles{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:14px 0 0}
+.about-why{font-family:var(--F);font-size:clamp(21px,2vw,26px);font-weight:400;line-height:1.4;color:var(--ink);max-width:40ch;margin:var(--s-3) 0 0}
+.about-head .pg-head__art .lw-frame__in{aspect-ratio:4 / 5}
 .about-band__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.9fr);gap:var(--s-3) var(--s-5);align-items:start}
 .about-band__title{font-family:var(--F);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink);margin:0;max-width:14ch}
 .about-band--dark .about-band__title{color:var(--charcoal-fg)}
@@ -257,8 +235,6 @@ const ABOUT_CSS = `
 .about-more,.about-prose a.about-more{font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
 .about-more--dark{color:var(--charcoal-fg)}
 @media (max-width:760px){
-  .about-hero{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
-  .about-hero__portrait{width:132px}
   .about-band__grid{grid-template-columns:minmax(0,1fr)}
 }
 `;

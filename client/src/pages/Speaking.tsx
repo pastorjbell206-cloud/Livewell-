@@ -14,6 +14,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
 
 const gutter = "var(--gutter)";
@@ -50,31 +51,23 @@ export default function Speaking() {
         }}
       />
 
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter} var(--s-5)` }}>
-        <div style={wrap}>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(40px, 5.6vw, 68px)",
-              fontWeight: 400,
-              lineHeight: 1.04,
-              letterSpacing: "-0.02em",
-              color: "var(--charcoal-fg)",
-              margin: "0 0 18px",
-            }}
-          >
-            Speaking and preaching
-          </h1>
-          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(21px, 2.2vw, 27px)", lineHeight: 1.45, color: "var(--charcoal-fg)", maxWidth: "40ch", margin: "0 0 var(--s-3)" }}>
-            Conferences, retreats, revivals, and pulpit supply. Serious theology, preached plainly.
-          </p>
-          <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "15px" }}>
-            <Link href="/about" style={{ color: "var(--charcoal-fg-muted)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+      <PageHead
+        door="About"
+        doorHref="/about"
+        title="Speaking and preaching"
+        line="Conferences, retreats, revivals, and pulpit supply. Serious theology, preached plainly."
+        plate="lectern"
+        action={
+          <>
+            <a href="#speaking-ask" className="btn">
+              Ask James to speak
+            </a>
+            <Link href="/about" className="btn btn--quiet">
               Who James is
             </Link>
-          </p>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       <section aria-labelledby="speaking-ask" style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter}` }}>
         <div style={wrap} className="speak-grid">
@@ -137,6 +130,7 @@ export default function Speaking() {
 
 const SPEAKING_CSS = `
 .speak-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:var(--s-4) var(--s-5);align-items:start}
+#speaking-ask{scroll-margin-top:96px}
 .speak-h2{font-family:var(--F);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
 .speak-h3{font-family:var(--F);font-weight:500;font-size:24px;line-height:1.2;color:var(--ink);margin:0 0 6px}
 .speak-p{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink-muted);margin:0 0 var(--s-2)}

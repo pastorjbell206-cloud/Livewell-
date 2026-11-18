@@ -16,6 +16,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { channelUrl } from "@/lib/channels";
 
@@ -30,41 +31,21 @@ export default function EmailSignup() {
         keywords="subscribe, Substack, newsletter, theology essays, James Bell"
       />
 
-      {/* ── HERO ── */}
-      <section style={{ background: "var(--charcoal)", padding: "96px var(--gutter) 72px" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 28 }}>
-            <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
-            <span style={{ fontFamily: "var(--U)", fontSize: "0.6875rem", fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase" as const, color: "var(--mustard)" }}>
-              Substack
-            </span>
-            <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
-          </div>
-
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
-            New essays by email,
-            <br />
-            through Substack.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "clamp(16px, 2vw, 18px)", color: "var(--charcoal-fg-muted)", maxWidth: 560, margin: "0 auto", lineHeight: 1.75 }}>
-            The newsletter is James&rsquo;s Substack. Leave your email below and you will finish the
-            sign-up there, where the essays are sent from. Nothing else comes with it, and you can
-            leave the moment it stops being worth your time.
-          </p>
-          {substack && (
-            <p style={{ margin: "20px 0 0", fontFamily: "var(--U)", fontSize: "15px" }}>
-              <a
-                href={substack}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", color: "var(--charcoal-fg)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px", backgroundImage: "none" }}
-              >
-                Read on Substack first
-              </a>
-            </p>
-          )}
-        </div>
-      </section>
+      <PageHead
+        door="About"
+        doorHref="/about"
+        title="New essays by email, through Substack"
+        line="Leave your email below and finish the sign-up on Substack. You can leave at any time."
+        plate="quill"
+        width="var(--w-content)"
+        action={
+          substack && (
+            <a href={substack} target="_blank" rel="noopener noreferrer" className="btn btn--quiet">
+              Read on Substack first
+            </a>
+          )
+        }
+      />
 
       {/* ── THE ONE REAL FORM ── */}
       <section style={{ background: "var(--bone)", padding: "72px var(--gutter)" }}>

@@ -905,6 +905,8 @@ function homeHeroHtml() {
   const headline = positioningString("HOME_HEADLINE").replace(/ \u2014/g, "\u00A0\u2014");
   const word = positioningString("HOME_LINKED_WORD");
   const href = positioningString("HOME_LINKED_HREF");
+  // The one sentence under the headline: what the site is for, as in Home.tsx.
+  const line = positioningString("HOME_LINE");
   if (!headline) return "";
   // "post-Christian" in the headline opens the page that explains it, as in Home.tsx.
   const [before, after] = word && href && headline.includes(word) ? headline.split(word) : [headline, null];
@@ -916,7 +918,8 @@ function homeHeroHtml() {
         <section class="home-hero">
           <div class="home-hero__inner">
             <div class="home-hero__words">
-              <h1 class="home-hero__title">${title}</h1>
+              <h1 class="home-hero__title">${title}</h1>${line ? `
+              <p class="home-hero__line">${esc(line)}</p>` : ""}
               <form role="search" class="home-find" action="/search" method="get" aria-label="${label}">
                 <div class="home-find__row">
                   <input class="home-find__input" type="search" name="q" autocomplete="off" placeholder="John 3:16, or your question" aria-label="${label}">

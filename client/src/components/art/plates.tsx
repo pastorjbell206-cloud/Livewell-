@@ -22,6 +22,117 @@ export const PLATES: Record<PlateName, Drawing> = {
   tomb: { w: 400, h: 300, label: "A rock tomb standing open at sunrise, the stone rolled to one side.", draw: (h) => (<><path fill={h.hs} d="M0,0H400V120H0Z" /><path className="pl-paper" d="M244,96a78,78 0 1,0 156,0a78,78 0 1,0 -156,0Z" /><path className="pl-l" d="M356.0,96.0L394.0,96.0M355.3,103.1L374.8,107.2M353.1,109.8L387.8,125.3M349.5,116.0L365.7,127.7M344.8,121.3L370.2,149.5M339.0,125.4L349.0,142.8M332.5,128.3L344.2,164.5M325.6,129.8L327.6,149.7M318.4,129.8L314.5,167.6M311.5,128.3L305.3,147.4M305.0,125.4L286.0,158.4M299.2,121.3L285.9,136.1M294.5,116.0L263.8,138.3M290.9,109.8L272.7,118.0M288.7,103.1L251.6,111.0M288.0,96.0L268.0,96.0M288.7,88.9L251.6,81.0M290.9,82.2L272.7,74.0M294.5,76.0L263.8,53.7M299.2,70.7L285.9,55.9M305.0,66.6L286.0,33.6M311.5,63.7L305.3,44.6M318.4,62.2L314.5,24.4M325.6,62.2L327.6,42.3M332.5,63.7L344.2,27.5M339.0,66.6L349.0,49.2M344.8,70.7L370.2,42.5M349.5,76.0L365.7,64.3M353.1,82.2L387.8,66.7M355.3,88.9L374.8,84.8" /><path className="pl-m" d="M296,96a26,26 0 1,0 52,0a26,26 0 1,0 -52,0Z" /><path className="pl-l" d="M296,96a26,26 0 1,0 52,0a26,26 0 1,0 -52,0Z" /><path className="pl-o" d="M0,300V120L40,84L110,70L170,40L240,62L286,110L330,150L400,170V300Z" /><path className="pl-b" d="M0,300V120L40,84L110,70L170,40L240,62L286,110L330,150L400,170V300Z" transform="translate(4,3)" /><path fill={h.h1} d="M170,40L240,62L286,110L330,150L400,170V300H250Z" /><path className="pl-l" d="M0,300V120L40,84L110,70L170,40L240,62L286,110L330,150L400,170V300Z" /><path className="pl-l" d="M40,84L70,130L50,190M110,70L130,120M240,62L230,104" /><path className="pl-k" d="M104,262V180a48,48 0 0 1 96,0V262Z" /><path className="pl-o" d="M206,214a50,50 0 1,0 100,0a50,50 0 1,0 -100,0Z" /><path fill={h.h2} d="M256,164a50,50 0 0 1 0,100a70,70 0 0 0 0,-100Z" /><path className="pl-l" d="M206,214a50,50 0 1,0 100,0a50,50 0 1,0 -100,0Z" /><path className="pl-o" d="M0,262H400V300H0Z" /><path fill={h.hh} d="M0,272H400V300H0Z" /><path className="pl-o" d="M120,262h64l8,38h-80Z" /></>) },
   table: { w: 400, h: 300, label: "A supper table set with bread, a cup, a candle and an open book.", draw: (h) => (<><path fill={h.h1} d="M0,0H400V300H0Z" /><path className="pl-o" d="M150,20H250V118H150Z" /><path className="pl-b" d="M150,20H250V118H150Z" transform="translate(4,3)" /><path fill={h.hs} d="M150,20H250V118H150Z" /><path className="pl-l" d="M150,20H250V118H150Z" /><path className="pl-l" d="M200,20V118M150,69H250" /><path className="pl-o" d="M44,110h56v150h-56Z" /><path className="pl-l" d="M44,136h56M44,162h56M44,188h56" /><path className="pl-o" d="M300,110h56v150h-56Z" /><path className="pl-l" d="M300,136h56M300,162h56M300,188h56" /><path className="pl-o" d="M20,196H380V214H20Z" /><path className="pl-c" d="M20,196H380V214H20Z" transform="translate(4,3)" /><path className="pl-l" d="M20,196H380V214H20Z" /><path className="pl-o" d="M34,214H366V236H34Z" /><path fill={h.hh} d="M34,214H366V236H34Z" /><path className="pl-l" d="M34,214H366V236H34Z" /><path className="pl-k" d="M44,236h16v64h-16ZM340,236h16v64h-16Z" /><path className="pl-o" d="M70,196C70,160 150,160 150,196Z" /><path className="pl-c" d="M70,196C70,160 150,160 150,196Z" transform="translate(4,3)" /><path className="pl-l" d="M70,196C70,160 150,160 150,196Z" /><path className="pl-l" d="M90,178l10,10M106,172l10,12M122,174l10,10" /><path className="pl-o" d="M176,196V168h28v28Z" /><path className="pl-c" d="M176,196V168h28v28Z" transform="translate(4,3)" /><path className="pl-l" d="M176,196V168h28v28Z" /><path className="pl-l" d="M204,174h8a6,6 0 0 1 0,14h-8" /><path className="pl-o" d="M236,196V140h14v56Z" /><path className="pl-k" d="M226,190h34v6h-34Z" /><path className="pl-m" d="M243,136c-9,-10 -3,-22 0,-32c5,10 9,22 0,32Z" /><path className="pl-l" d="M243,136c-9,-10 -3,-22 0,-32c5,10 9,22 0,32Z" /><path className="pl-f" d="M265.0,118.0L281.0,118.0M262.8,127.5L270.0,131.0M256.7,135.2L266.7,147.7M247.9,139.4L249.7,147.2M238.1,139.4L234.5,155.0M229.3,135.2L224.3,141.5M223.2,127.5L208.8,134.5M221.0,118.0L213.0,118.0M223.2,108.5L208.8,101.5M229.3,100.8L224.3,94.5M238.1,96.6L234.5,81.0M247.9,96.6L249.7,88.8M256.7,100.8L266.7,88.3M262.8,108.5L270.0,105.0" /><path className="pl-o" d="M280,196c10,-10 30,-10 38,-2c8,-8 28,-8 38,2Z" /><path className="pl-l" d="M318,194v-8" /></>) },
   arch: { w: 400, h: 300, label: "A Roman triumphal arch with the sun low in its opening.", draw: (h) => (<><path fill={h.hs} d="M0,0H400V240H0Z" /><path className="pl-o" d="M0,240H400V300H0Z" /><path fill={h.hh} d="M0,254H400V300H0Z" /><path className="pl-o" d="M70,240V70H330V240H256V150a56,56 0 0 0 -112,0V240Z" /><path className="pl-c" d="M70,240V70H330V240H256V150a56,56 0 0 0 -112,0V240Z" transform="translate(4,3)" /><path fill={h.h2} d="M256,70H330V240H256Z" /><path className="pl-l" d="M70,240V70H330V240H256V150a56,56 0 0 0 -112,0V240Z" /><path className="pl-o" d="M58,48H342V70H58Z" /><path className="pl-c" d="M58,48H342V70H58Z" transform="translate(4,3)" /><path className="pl-l" d="M58,48H342V70H58Z" /><path className="pl-o" d="M84,22H316V48H84Z" /><path className="pl-c" d="M84,22H316V48H84Z" transform="translate(4,3)" /><path className="pl-l" d="M84,22H316V48H84Z" /><path className="pl-l" d="M70,104H144M256,104H330M92,104V240M122,104V240M278,104V240M308,104V240" /><path className="pl-f" d="M110,32H290M110,39H250" /><path className="pl-paper" d="M170,196a30,30 0 1,0 60,0a30,30 0 1,0 -60,0Z" /><path className="pl-f" d="M214.0,196.0L230.0,196.0M212.9,201.4L220.3,204.4M209.9,205.9L221.2,217.2M205.4,208.9L208.4,216.3M200.0,210.0L200.0,226.0M194.6,208.9L191.6,216.3M190.1,205.9L178.8,217.2M187.1,201.4L179.7,204.4M186.0,196.0L170.0,196.0M187.1,190.6L179.7,187.6M190.1,186.1L178.8,174.8M194.6,183.1L191.6,175.7M200.0,182.0L200.0,166.0M205.4,183.1L208.4,175.7M209.9,186.1L221.2,174.8M212.9,190.6L220.3,187.6" /><path className="pl-m" d="M190,196a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" /><path className="pl-l" d="M190,196a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" /><path className="pl-o" d="M150,240l20,60h60l20,-60Z" /></>) },
+  /* Drawn by hand for the page heads (kit-pagehead, 2026-11-18), in the same vocabulary. */
+  lens: {
+    w: 400,
+    h: 300,
+    label: "A reading glass held over an unrolled scroll, its words drawn large in the lens.",
+    draw: (h) => (
+      <>
+        <path fill={h.hs} d="M0,0H400V200H0Z" />
+        <path className="pl-o" d="M0,200H400V300H0Z" />
+        <path fill={h.hh} d="M0,256H400V300H0Z" />
+        <path className="pl-o" d="M70,186H330V248H70Z" />
+        <path className="pl-f" d="M90,200H312M90,212H300M90,224H314M90,236H286" />
+        <path className="pl-l" d="M70,186H330V248H70Z" />
+        <path className="pl-o" d="M50,176H74V258H50Z" />
+        <path className="pl-g" d="M50,176H74V258H50Z" transform="translate(4,3)" />
+        <path fill={h.h2} d="M63,176H74V258H63Z" />
+        <path className="pl-l" d="M50,176H74V258H50Z" />
+        <path className="pl-o" d="M326,176H350V258H326Z" />
+        <path className="pl-g" d="M326,176H350V258H326Z" transform="translate(4,3)" />
+        <path fill={h.h2} d="M339,176H350V258H339Z" />
+        <path className="pl-l" d="M326,176H350V258H326Z" />
+        <path className="pl-o" d="M235,157L291,101L301,111L245,167Z" />
+        <path className="pl-c" d="M235,157L291,101L301,111L245,167Z" transform="translate(4,3)" />
+        <path fill={h.h2} d="M240,162L296,106L301,111L245,167Z" />
+        <path className="pl-l" d="M235,157L291,101L301,111L245,167Z" />
+        <path className="pl-o" d="M130,206a66,66 0 1,0 132,0a66,66 0 1,0 -132,0Z" />
+        <path className="pl-b" d="M130,206a66,66 0 1,0 132,0a66,66 0 1,0 -132,0Z" transform="translate(4,3)" />
+        <path className="pl-paper" d="M140,206a56,56 0 1,0 112,0a56,56 0 1,0 -112,0Z" />
+        <path className="pl-l" d="M172,186H236M152,204H240M156,222H236M162,240H230" />
+        <path className="pl-m" d="M158,186C160,170 170,160 186,156C174,164 166,174 164,188Z" />
+        <path className="pl-l" d="M158,186C160,170 170,160 186,156C174,164 166,174 164,188Z" />
+        <path className="pl-l" d="M140,206a56,56 0 1,0 112,0a56,56 0 1,0 -112,0Z" />
+        <path className="pl-l" d="M130,206a66,66 0 1,0 132,0a66,66 0 1,0 -132,0Z" />
+      </>
+    ),
+  },
+  sundial: {
+    w: 400,
+    h: 300,
+    label: "A stone sundial in a garden, the sun high and the gnomon's shadow on the dial.",
+    draw: (h) => (
+      <>
+        <path fill={h.hs} d="M0,0H400V276H0Z" />
+        <path className="pl-o" d="M0,276H400V300H0Z" />
+        <path fill={h.hh} d="M0,276H400V300H0Z" />
+        <path className="pl-paper" d="M48,72a32,32 0 1,0 64,0a32,32 0 1,0 -64,0Z" />
+        <path className="pl-m" d="M56,72a24,24 0 1,0 48,0a24,24 0 1,0 -48,0Z" />
+        <path className="pl-l" d="M56,72a24,24 0 1,0 48,0a24,24 0 1,0 -48,0Z" />
+        <path className="pl-l" d="M112,72H126M102.6,94.6L112.5,104.5M80,104V118M57.4,94.6L47.5,104.5M48,72H34M57.4,49.4L47.5,39.5M80,40V26M102.6,49.4L112.5,39.5" />
+        <path className="pl-o" d="M330,276C316,240 318,190 330,150C342,190 344,240 330,276Z" />
+        <path className="pl-g" d="M330,276C316,240 318,190 330,150C342,190 344,240 330,276Z" transform="translate(4,3)" />
+        <path fill={h.h2} d="M330,276C338,240 340,190 330,150C342,190 344,240 330,276Z" />
+        <path className="pl-l" d="M330,276C316,240 318,190 330,150C342,190 344,240 330,276Z" />
+        <path className="pl-o" d="M362,276C352,250 354,214 362,186C370,214 372,250 362,276Z" />
+        <path className="pl-g" d="M362,276C352,250 354,214 362,186C370,214 372,250 362,276Z" transform="translate(4,3)" />
+        <path className="pl-l" d="M362,276C352,250 354,214 362,186C370,214 372,250 362,276Z" />
+        <path className="pl-o" d="M178,188H222L216,262H184Z" />
+        <path className="pl-c" d="M178,188H222L216,262H184Z" transform="translate(4,3)" />
+        <path fill={h.h2} d="M200,188H222L216,262H200Z" />
+        <path className="pl-l" d="M178,188H222L216,262H184Z" />
+        <path className="pl-o" d="M160,262H240V276H160Z" />
+        <path className="pl-c" d="M160,262H240V276H160Z" transform="translate(4,3)" />
+        <path className="pl-l" d="M160,262H240V276H160Z" />
+        <path className="pl-o" d="M164,178H236V190H164Z" />
+        <path className="pl-l" d="M164,178H236V190H164Z" />
+        <path className="pl-o" d="M110,164a90,24 0 1,0 180,0a90,24 0 1,0 -180,0Z" />
+        <path className="pl-b" d="M110,164a90,24 0 1,0 180,0a90,24 0 1,0 -180,0Z" transform="translate(4,3)" />
+        <path className="pl-paper" d="M110,164a90,24 0 1,0 180,0a90,24 0 1,0 -180,0Z" />
+        <path fill={h.h3} d="M200,164L134,158L138,168Z" />
+        <path className="pl-f" d="M128,170L136,168M150,178L156,175M176,184L179,180M200,186V182M224,184L221,180M250,178L244,175M272,170L264,168" />
+        <path className="pl-l" d="M110,164a90,24 0 1,0 180,0a90,24 0 1,0 -180,0Z" />
+        <path className="pl-k" d="M198,164L198,118L252,160Z" />
+      </>
+    ),
+  },
+  lectern: {
+    w: 400,
+    h: 300,
+    label: "A lectern with an open book under an arched window, a candle lit beside it.",
+    draw: (h) => (
+      <>
+        <path fill={h.hs} d="M0,0H400V276H0Z" />
+        <path className="pl-o" d="M0,276H400V300H0Z" />
+        <path fill={h.hh} d="M0,276H400V300H0Z" />
+        <path className="pl-o" d="M40,150V76a42,42 0 0 1 84,0V150Z" />
+        <path className="pl-b" d="M40,150V76a42,42 0 0 1 84,0V150Z" transform="translate(4,3)" />
+        <path className="pl-l" d="M40,150V76a42,42 0 0 1 84,0V150Z M82,34V150M40,96H124" />
+        <path className="pl-o" d="M190,180H210V262H190Z" />
+        <path className="pl-c" d="M190,180H210V262H190Z" transform="translate(4,3)" />
+        <path fill={h.h2} d="M200,180H210V262H200Z" />
+        <path className="pl-l" d="M190,180H210V262H190Z" />
+        <path className="pl-o" d="M156,262H244V276H156Z" />
+        <path className="pl-c" d="M156,262H244V276H156Z" transform="translate(4,3)" />
+        <path className="pl-l" d="M156,262H244V276H156Z" />
+        <path className="pl-o" d="M118,158H282L264,186H136Z" />
+        <path className="pl-c" d="M118,158H282L264,186H136Z" transform="translate(4,3)" />
+        <path fill={h.h1} d="M136,172H273L264,186H136Z" />
+        <path className="pl-l" d="M118,158H282L264,186H136Z" />
+        <path className="pl-o" d="M136,156C156,142 182,140 200,150C218,140 244,142 264,156Z" />
+        <path className="pl-f" d="M148,150C162,144 178,143 192,148M210,148C224,143 240,144 252,150" />
+        <path className="pl-l" d="M136,156C156,142 182,140 200,150C218,140 244,142 264,156ZM200,150V156" />
+        <path className="pl-o" d="M306,200H318V276H306Z" />
+        <path fill={h.h2} d="M312,200H318V276H312Z" />
+        <path className="pl-l" d="M306,200H318V276H306Z" />
+        <path className="pl-o" d="M296,276H328V268H296Z" />
+        <path className="pl-m" d="M312,196C304,186 308,176 312,164C316,176 320,186 312,196Z" />
+        <path className="pl-l" d="M312,196C304,186 308,176 312,164C316,176 320,186 312,196Z" />
+        <path className="pl-l" d="M292,176H282M296,160L288,152M312,154V142M328,160L336,152M332,176H342" />
+      </>
+    ),
+  },
 };
 
 export default function PlateArt({ name, decorative = false }: { name: PlateName; decorative?: boolean }) {

@@ -19,7 +19,7 @@ import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { PageHead } from "@/components/editorial/PageHead";
+import PageHead from "@/components/art/PageHead";
 import road from "@/lib/startRoad.json";
 
 export interface StartStep {
@@ -53,9 +53,10 @@ export default function Start() {
       />
 
       <PageHead
-        eyebrow="Start here"
+        door="Start here"
         title="New to faith, or coming back"
-        lede="Six steps, in order, and every one of them is a page that's already here. Take them at your own pace."
+        line="Six steps, in order. Take them at your own pace."
+        plate="tree"
         width="var(--w-content)"
       />
 

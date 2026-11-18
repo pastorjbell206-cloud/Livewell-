@@ -16,6 +16,7 @@ import { Link } from "wouter";
 import { BookmarkCheck, Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import { HubGroup, HubStyles } from "@/components/HubGroup";
 import { AddToHomeScreen } from "@/components/AddToHomeScreen";
 import { useLibrary } from "@/lib/library";
@@ -43,22 +44,6 @@ const CARE_PLANS = [
   { label: "The new believer", href: "/plans/new-believer" },
   { label: "One undivided life", href: "/plans/whole-life" },
 ];
-
-/** A button-sized link on the charcoal hero. */
-const heroAction = {
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "8px",
-  minHeight: "44px",
-  padding: "10px 16px",
-  border: "1px solid var(--charcoal-line)",
-  borderRadius: "var(--radius-sm)",
-  color: "var(--charcoal-fg)",
-  fontFamily: "var(--U)",
-  fontSize: "14px",
-  fontWeight: 600,
-  textDecoration: "none",
-} as const;
 
 /** A plan by name, big enough to tap. */
 const planPill = {
@@ -99,36 +84,25 @@ export default function Resources() {
       />
       <HubStyles />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter} var(--s-5)` }}>
-        <div style={wrap}>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "var(--fs-h1)",
-              fontWeight: 400,
-              lineHeight: 1.04,
-              letterSpacing: "-0.02em",
-              color: "var(--charcoal-fg)",
-              margin: "0 0 18px",
-            }}
-          >
-            Resources
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "60ch", margin: 0 }}>
-            Downloads, tools, help for a hard season, and things for the household. Everything here is free.
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "var(--s-4)" }}>
-            <Link href="/my-library" style={heroAction}>
-              <BookmarkCheck size={16} aria-hidden /> My Library
-              {mine && <span style={{ fontWeight: 400, color: "var(--charcoal-fg-muted)" }}>{mine}</span>}
+      <PageHead
+        door="Tools"
+        doorHref="/tools"
+        title="Resources"
+        line="Downloads, tools, help for a hard season, and things for home. All free."
+        plate="compass"
+        action={
+          <>
+            <Link href="/my-library" className="btn btn--quiet res-action">
+              <BookmarkCheck size={18} strokeWidth={1.75} aria-hidden /> My Library
+              {mine && <span className="res-action__mine">{mine}</span>}
             </Link>
-            <Link href="/search" style={heroAction}>
-              <Search size={16} aria-hidden /> Search everything
+            <Link href="/search" className="btn btn--quiet res-action">
+              <Search size={18} strokeWidth={1.75} aria-hidden /> Search everything
             </Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
+      <style>{`.res-action{gap:8px}.res-action__mine{font-weight:400;color:var(--ink-muted)}`}</style>
 
       <section style={{ background: "var(--bone)", padding: `var(--s-3) ${gutter} var(--s-6)` }}>
         <div style={wrap}>

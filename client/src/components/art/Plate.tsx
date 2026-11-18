@@ -21,7 +21,10 @@ export type PlateName =
   | "jars"
   | "tomb"
   | "table"
-  | "arch";
+  | "arch"
+  | "lens"
+  | "sundial"
+  | "lectern";
 
 const PlateArt = lazy(() => import("./plates"));
 
