@@ -49,18 +49,32 @@ const HistoryTimeline = lazy(() => import("@/components/history/HistoryTimeline"
 type Ref = "councils" | "heresies";
 const PEOPLE = "/theology/history/people";
 
+/**
+ * The places a link may name by its hash (the site catalogue's rooms use
+ * them): two sections of this page, the two lists opened in place, and the
+ * people, who have their own page now.
+ */
+const HASHES: Record<string, "section" | "ref" | "people"> = {
+  course: "section",
+  timeline: "section",
+  councils: "ref",
+  heresies: "ref",
+  people: "people",
+};
+
 /** What the address asks for. */
 function fromHash(): { section?: "course" | "timeline"; ref?: Ref; target?: string; people?: string } | null {
   if (typeof window === "undefined") return null;
   const id = decodeURIComponent(window.location.hash.slice(1));
   if (!id) return null;
-  if (id === "people") return { people: "" };
   const kind = kindOfAnchor(id);
   if (kind === "person") return { people: id };
   if (kind === "council") return { ref: "councils", target: id };
   if (kind === "heresy") return { ref: "heresies", target: id };
-  if (id === "councils" || id === "heresies") return { ref: id, target: id };
-  if (id === "timeline" || id === "course") return { section: id };
+  const place = HASHES[id];
+  if (place === "people") return { people: "" };
+  if (place === "ref") return { ref: id as Ref, target: id };
+  if (place === "section") return { section: id as "course" | "timeline" };
   return null;
 }
 

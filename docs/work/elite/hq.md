@@ -88,6 +88,10 @@ Route checklist: `App.tsx` (people before `/theology/history/:slug`, `/answers/:
 - Lighthouse (`scripts/lighthouse-median.mjs`, three runs, median, served by `serve-like-vercel.mjs`): `/theology/history` performance 96, accessibility 100, CLS 0.000; `/topics` 91, 100, 0.000; `/answers/did-the-resurrection-actually-happen` 88, 100, 0.000 (the first run found a heading-order miss on the answer page; fixed with a hidden H2 and rerun).
 - Screenshots at 390 x 844 and 1440 x 900, day and night, first screen and full page, in `/home/user/elite-shots/hq/`: the history door with the line moved through three ages (`history-*-touched.png`), a lesson, the people page, the questions door with a question typed (`topics-*-touched.png`), the answers index, two answer pages, /skeptics. Read and fixed: the "2000" and "today" marks sat on each other at the end of the ruler; four history rooms left one orphan card under three; /skeptics listed twenty questions (now the nine "Is it true?"); too much space under the people and answers heads.
 
+## After the merge
+
+The push met the map unit's commits (`siteCatalog.ts`, /explore). One conflict in `scripts/prerender-heads.mjs` (my history-door body beside their catalogue reader) was resolved by keeping both. Their `siteCatalog.test.ts` checks that the history page answers each hash a room names; the page now names them in one map (`HASHES` in `TheologyHistory.tsx`). After the merge: `pnpm check` pass, all 34 content gates pass, `pnpm test` 130 files passed, 7 skipped (1,470 tests passed, 73 skipped), build, sitemap, prerender and the canonical audit pass. The screenshots and Lighthouse runs were taken before the merge; the merge changed none of these pages' code except that hash map.
+
 ## Not verified
 
 - A real phone, Safari, or a screen reader. Sliding a finger along the line was checked by its code and by clicks and keys in Chromium only.
@@ -104,9 +108,14 @@ Route checklist: `App.tsx` (people before `/theology/history/:slug`, `/answers/:
 
 ## Menu rooms that should now point to the new pages
 
-For the unit that owns `siteNav.ts`, the footer and /explore (I did not touch them):
+For the unit that owns `siteNav.ts`, `siteCatalog.ts`, the footer and /explore (I did not touch them). The catalogue merged in from `elite/map` today has:
 
-- History door, "People": `/theology/history/people` (today it would be `/theology/history#people`, which forwards there).
+- `history.people` at `/theology/history#people`: works (forwards to the people page), but should be `/theology/history/people`.
+- `questions.skeptics` at `/skeptic-track`: should be `/skeptics`, the new page for the person who does not believe (`/skeptic-track` is still noindex while its essays are pending).
+
+And:
+
+- History door, "People": `/theology/history/people`.
 - History door, "The timeline": `/theology/history#timeline`.
 - Questions door, "For skeptics": `/skeptics`.
 - Questions door, "Honest Answers": `/answers` (the index; each answer is now one tap in).
