@@ -417,3 +417,27 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Scripture quoted: Genesis 1:27, Exodus 22:21-24, 23:3, 23:9, Leviticus 19:15, Deuteronomy 10:18-19, 24:17-18, Ruth 4:1, Psalm 13:1-2, 89:14, 113:7, 146:7-9, Proverbs 19:17, 23:10, Isaiah 1:11-17, 5:8, 10:1-2, 58:3-8, Jeremiah 6:14, 22:16, Daniel 9:5, Amos 2:6, 5:21-24, 7:13-15, Micah 6:7-8, Matthew 6:24, 25:40, 27:24, Mark 10:21-22, 10:25, 10:27, Luke 1:51-53, 4:18-21, 10:31-32, 19:8, 22:19, John 13:14, 2 Corinthians 5:18, Galatians 3:28, Ephesians 2:14-16, 6:12, James 4:17, 5:4, 1 Peter 2:24, Revelation 7:9 | ESV from memory | Quoted with references; divine pronouns lowercased as in the ESV; no exclamation points |
 | Quotations of people | Old guide: Bonhoeffer (misattributed, cut); King, Wolterstorff, Brueggemann, Gutierrez as paraphrase | Kept as paraphrase. Added: none |
 | Help box | Not on the sensitive list; no help lines in the old guide (the help script only matched Ephesians 6:12) | Nothing to keep |
+
+## Money
+
+| Claim | How checked | Result |
+|---|---|---|
+| "The small-group companion to James Bell's book Where Your Treasure Is" (summary, bulletin, pulpit announcement) | Not one of the three shelf titles (client/src/lib/bookShelf.ts) | Plug dropped everywhere. client/src/lib/studyguides-index.ts still says "Companion to the book" in the money blurb; that hand-written file was left alone (see notes) |
+| "He is a father of five sons, and he knows how easily provision shades into accumulation" (leader primer) | Confirmed biography, stated in the old guide | Kept once, in session 1 teaching, in first person and in the old guide's sense; removed from the primer |
+| "Bell builds / Bell takes / Bell says" throughout; FAQ "writes from inside the indictment" | Narrator calling him "Bell"; rulebook language | Removed; teaching in first person; FAQ 11 rewritten as a plain question about why the study turns questions on the group |
+| "The Economic Justice study" (FAQ 3) | That guide's real title is Money, Work and the Poor (economic-justice.json) | Named by its title |
+| "Your Father knows what you need before you ask" attributed to the birds-and-lilies passage | Scripture: that wording is Matthew 6:8; 6:32 reads "your heavenly Father knows that you need them all" | Each quoted at its own verse |
+| "Then, without a paragraph break, therefore I tell you" | Printed Bibles, the ESV included, break between 6:24 and 6:25 | Phrase cut; the "therefore" argument kept |
+| "Pearl of great price" | ESV reads "one pearl of great value" (Matthew 13:46) | ESV wording |
+| Bad eye "the word for a greedy, grasping eye" | Known: ophthalmos poneros; the Hebrew "evil eye" idiom means grudging or stingy (Proverbs 23:6, 28:22) | Kept, as an idiom |
+| "Learned the secret" (Philippians 4:12) carries initiation | Known (memyemai, used of initiation) | Kept, softened to "was used of being initiated into something" |
+| Mammon is Aramaic | Known | Kept |
+| Jesus "had a treasurer" (objection) | John 12:6, 13:29: the disciples kept a moneybag | Made "His disciples kept a common purse" |
+| Matthew 6:23b, Luke 12:20 "Fool!" | ESV has exclamation points | Not quoted; described ("God calls him a fool") |
+| Bibliography: Keller 2009, Alcorn 2001, Blomberg 1999, Comer 2019, Foster 1981 (title is Freedom of Simplicity, no "The"), Anderson 2009, Bonhoeffer 1937 | Known | Years added; Foster's title corrected; five "Leader to confirm" notes removed |
+| Comer "names the anxious, acquisitive restlessness of the modern heart" | Overstates the book's subject (hurry) | Restated as a book on the hurried life |
+| Chrysostom "cited in sessions 1 and 3" | The sessions never cite him | Note made "background"; sermons described as on the rich man and Lazarus (Known) |
+| Ellul, Money and Power: money as a power we serve | Known | Kept as paraphrase |
+| Scripture quoted: Proverbs 6:6-8 (described), Matthew 6:8, 6:19-33, 8:20, 13:44-46, Luke 12:13-21, 12:33-34, Ecclesiastes 2:18-19, Philippians 4:6-7, 4:11-13, 1 Timothy 6:6-10, Hebrews 13:5, Psalm 23:1, Romans 8:32, 2 Corinthians 8:2-4, 8:9, 8:12, 9:6-8, 9:11, Acts 20:35 | ESV from memory | Quoted with references; old guide's unmarked quotations now in quotation marks; divine pronouns lowercased as in the ESV; no exclamation points |
+| Quotations of people | Old guide quoted no one | Added: none |
+| Help box | Not on the sensitive list; no help lines in the old guide | Nothing to keep. Added, in plain words and with no number or referral, that a leader help someone who needs practical debt or budget help find a trusted person outside the group (primer, FAQ 12) |
