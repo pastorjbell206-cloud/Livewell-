@@ -68,3 +68,21 @@
 | Proverbs 6:6-8 (ant), 1 Timothy 5:8, Romans 13:4, Exodus 21:24, Matthew 23:23 (mint, dill, cumin) | Scripture | Added as the references behind claims the old guide made without them |
 | Memory verses Matthew 5:16, 5:44, 7:7 | ESV wording | Restored ("In the same way,"; "Love"; semicolons) |
 | Session 3 on enemies and abuse | sensitive-pages.json lists this guide with the abuse topic | No help lines were in the JSON (the page and PDF add them); leader notes now point to the help information in session 3, and the practice says the prayer never requires contact |
+
+## Singleness
+
+| Claim | How checked | Result |
+|---|---|---|
+| Paul uses the same word (charisma) for singleness as for gifts of the Spirit (1 Corinthians 7:7) | Known (Greek text) | Kept |
+| "Roughly a third of the Psalms are laments" | Common scholarly count (individual and communal laments, about a third to two-fifths) | Kept as "around a third, by most counts" |
+| Timeline "circa 700 BC" for Isaiah 54 and 56 | Many scholars place these chapters in or after the exile | "700s to 500s BC", with the dating dispute named |
+| "circa AD 400, figures like Jerome and Augustine" exalt celibacy | Known: Jerome, Against Jovinian (393); Augustine, On the Good of Marriage (about 401), written partly against that overcorrection | Reworded with the two works and dates; Augustine placed as a defender of marriage |
+| 1522, Luther recovers marriage | Known: The Estate of Marriage (1522) | Kept, work named |
+| "2000s" research on a loneliness epidemic | Known: Putnam, Bowling Alone (2000); U.S. Surgeon General advisory on loneliness and isolation (2023) | Named both |
+| "2017" renewed pastoral writing on singleness (no title) | Vague | Replaced with dated titles: Danylak (2010), Allberry (2019), Treweek (2023, searched: IVP Academic, May 2023) |
+| Bibliography: Coles (2017), Keller (2011), Rah (2015), Danylak (2010), Allberry (2019) | Known | Kept, dated; "Leader to confirm" removed |
+| Bibliography: "Why Does He Do That? and the wider counseling literature on isolation" | Why Does He Do That? is Lundy Bancroft's book on abusive men, unrelated to loneliness; the entry was a placeholder category | Cut |
+| Bibliography: "The Body and the Church, in the theology of the body tradition" by "Writers in the theology of the body tradition" | Not a real title or author | Cut |
+| Biography: "Bell is a pastor with five sons" (summary, primer, teaching, FAQ x2) | Confirmed fact used as a credential | Removed; "I'm a pastor" kept once where the self-implication needs it. No claim that he is married |
+| Sexual revolution "by many honest secular accounts" produced loneliness and commodification | Unattributed claim | Cut from going deeper |
+| Memory verses 1 Corinthians 7:7, Psalm 62:8, 1 Corinthians 6:20, Ephesians 2:19, John 15:5 | ESV wording | Unchanged (already ESV) |
