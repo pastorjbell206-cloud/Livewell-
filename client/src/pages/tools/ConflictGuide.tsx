@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { useEffect, useState } from "react";
@@ -880,59 +881,7 @@ export default function ConflictGuide() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--bone)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Work Through a Fight{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              in Five Steps
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Five steps. One conflict at a time. Not a formula for avoiding hard
-            conversations -- a framework for having them without destroying
-            what you are trying to protect.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/conflict-guide" title="Work Through a Fight in Five Steps" line="Five steps. One conflict at a time. Not a formula for avoiding hard conversations -- a framework for having them without destroying what you are trying to protect." plate="sundial" />
 
       {/* Conflict Type Selection */}
       {!selectedType && (

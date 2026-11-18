@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { toolName } from "@/lib/toolsList";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef, type CSSProperties } from "react";
@@ -687,61 +688,7 @@ export default function MarriageAssessment() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Marriage Health{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Self-Check
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Fifteen statements across five areas of marriage, about five
-            minutes. This is a self-check for reflection, not a test or a
-            diagnosis, and your answers stay on this device unless you choose
-            to leave a copy with us at the end. Answer for yourself, as things
-            are now rather than as you wish they were.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/marriage-assessment" title="Marriage Health Self-Check" line="Fifteen statements across five areas of marriage, about five minutes. This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device unless you choose to leave a copy with us at the end. Answer for yourself, as things are now rather than as you wish they were." plate="compass" />
 
       {/* Progress Bar */}
       {!showResults && (

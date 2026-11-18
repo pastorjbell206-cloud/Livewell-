@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { SITE_URL } from "@/lib/site";
 import { useState, useMemo, useCallback } from "react";
 import { Link } from "wouter";
@@ -412,70 +413,10 @@ export default function QuoteLibrary() {
         }
       `}</style>
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--bone)",
-          padding: "5rem 1.5rem 4rem",
-          textAlign: "center",
-        }}
-      >
-        <div style={wrap}>
-          <span
-            style={{
-              fontFamily: "var(--U)",
-              fontWeight: 500,
-              fontSize: "0.75rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.18em",
-              color: "var(--mustard)",
-              display: "block",
-              marginBottom: "1rem",
-            }}
-          >
-            LiveWell Library
-          </span>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontWeight: 400,
-              fontSize: "clamp(2rem, 5vw, 3.5rem)",
-              letterSpacing: "-0.02em",
-              lineHeight: 1.15,
-              margin: "0 0 1.25rem",
-              color: "var(--bone)",
-            }}
-          >
-            Quotes from the essays and books
-          </h1>
-          <p className="page-standfirst" style={{ marginInline: "auto" }}>Words worth sharing.</p>
-          <p
-            style={{
-              fontFamily: "var(--U)",
-              fontSize: "1.05rem",
-              lineHeight: 1.7,
-              color: "var(--ink-muted)",
-              maxWidth: "52ch",
-              margin: "0 auto",
-            }}
-          >
-            The lines that stop you mid-scroll, taken word for word from the
-            essays, books, and study guides — each one linked to the longer
-            argument it came from.
-          </p>
-          <p
-            style={{
-              fontFamily: "var(--U)",
-              fontSize: "0.85rem",
-              color: "var(--ink-muted)",
-              marginTop: "1.5rem",
-            }}
-          >
-            {SOCIAL_QUOTES.length} quotes from {SOURCE_COUNT} works
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/quotes" title="Quotes from the essays and books" line="Words worth sharing." plate="quill">
+        <p className="pg-head__lede">The lines that stop you mid-scroll, taken word for word from the essays, books, and study guides — each one linked to the longer argument it came from.</p>
+        <p className="pg-head__lede">{SOCIAL_QUOTES.length} quotes from {SOURCE_COUNT} works</p>
+      </InnerHead>
 
       {/* A quote for today */}
       <section

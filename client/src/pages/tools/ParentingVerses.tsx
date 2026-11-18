@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import { Copy, Check, Search } from "lucide-react";
@@ -164,17 +165,7 @@ export default function ParentingVerses() {
         url="https://www.livewellbyjamesbell.co/tools/parenting-verses"
       />
       <FoldedNote id="parenting-verses" />
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>For the home</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>
-            Parenting Bible Verses
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
-            Scripture for the moments parenting actually hands you. Pick a topic, read the verses together, and let the short note give you a way in.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/parenting-verses" title="Parenting Bible Verses" line="Scripture for the moments parenting actually hands you. Pick a topic, read the verses together, and let the short note give you a way in." plate="book" />
 
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>

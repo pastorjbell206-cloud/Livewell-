@@ -16,6 +16,7 @@ import { RotateCcw } from "lucide-react";
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { fetchJson } from "@/lib/fetch-json";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
@@ -120,19 +121,7 @@ export default function TheologyDiagnostic() {
         url="https://www.livewellbyjamesbell.co/theology/which-view"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/tools#hard-questions" style={{ color: "inherit" }}>Tools</Link> · {toolName("which-view")}
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Where do you lean, and why?
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch" }}>
-            Answer a few honest questions and see which view you currently lean toward. This is a mirror, not a verdict. The point is not to box you in but to help you see where you stand, so you can read the full doctrine with open eyes.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/theology/which-view" title="Where do you lean, and why?" line="Answer a few honest questions and see which view you currently lean toward. This is a mirror, not a verdict. The point is not to box you in but to help you see where you stand, so you can read the full doctrine with open eyes." plate="lantern" />
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>

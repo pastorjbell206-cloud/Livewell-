@@ -20,6 +20,7 @@ import { Link } from "wouter";
 import { ChevronDown, Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { fetchJson } from "@/lib/fetch-json";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 
@@ -243,19 +244,14 @@ export default function PassageContext() {
       />
 
       {/* HERO + INPUT */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/study" style={{ color: "inherit" }}>Bible</Link> · Read any verse in context</span>
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            Read any Bible verse in context
-          </h1>
-          <p className="page-standfirst">Never read a verse alone again.</p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch", marginBottom: "24px" }}>
-            A verse pulled out of its context can be made to say almost anything. Enter any reference and this tool puts it back where it belongs: inside its paragraph, its book, its author's purpose, and the wider witness of Scripture. It will not tell you what a contested passage means. It will teach you the questions to ask.
-          </p>
+      <InnerHead path="/theology/passage" title="Read any Bible verse in context" line="Never read a verse alone again." plate="book">
+        <p className="pg-head__lede">
+          A verse pulled out of its context can be made to say almost anything. Enter any reference and this tool puts it back where it belongs: inside its paragraph, its book, its author's purpose, and the wider witness of Scripture. It will not tell you what a contested passage means. It will teach you the questions to ask.
+        </p>
+      </InnerHead>
 
+      <section className="home-sec--dark" style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--charcoal-fg)" }}>
+        <div style={wrap}>
           <form onSubmit={onSubmit} style={{ display: "flex", flexWrap: "wrap", gap: "10px", maxWidth: "560px" }}>
             <input
               value={input}
@@ -264,7 +260,7 @@ export default function PassageContext() {
               aria-label="Bible reference"
               style={{ flex: "1 1 280px", fontFamily: "var(--B)", fontSize: "16px", padding: "12px 16px", borderRadius: "var(--radius-sm)", border: "1px solid rgba(245,240,230,0.3)", background: "var(--bone)", color: "var(--ink)" }}
             />
-            <button type="submit" style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, padding: "12px 22px", borderRadius: "var(--radius-sm)", border: "none", background: "var(--mustard)", color: "var(--charcoal)", cursor: "pointer" }}>
+            <button type="submit" className="btn btn--on-dark" style={{ gap: "8px" }}>
               <Search size={16} aria-hidden /> Read in context
             </button>
           </form>
@@ -291,8 +287,7 @@ export default function PassageContext() {
           <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", alignItems: "center", marginTop: "14px" }}>
             <span style={{ fontFamily: "var(--U)", fontSize: "12px", color: "rgba(245,240,230,0.6)" }}>Worked in depth:</span>
             {["Jeremiah 29:11", "Philippians 4:13", "Micah 6:8"].map((r) => (
-              <button key={r} type="button" onClick={() => { setInput(r); resolve(parseReference(r, books), r); }}
-                style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, padding: "6px 14px", borderRadius: "999px", border: "1px solid var(--mustard)", background: "rgba(212,160,23,0.14)", color: "var(--mustard)", cursor: "pointer" }}>
+              <button key={r} type="button" className="lw-chip" onClick={() => { setInput(r); resolve(parseReference(r, books), r); }}>
                 {r}
               </button>
             ))}

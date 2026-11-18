@@ -14,6 +14,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useEffect, useRef, useState } from "react";
 import { Users, Copy, Check, RotateCcw, BookOpen, MessageCircle, Hand, HeartHandshake } from "lucide-react";
 import { Link } from "wouter";
@@ -967,20 +968,7 @@ export default function FamilyDevotionBuilder() {
         `}</style>
       )}
 
-      {/* HERO */}
-      <section className="fdb-screen" style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.2em", color: "var(--mustard)", marginBottom: "16px", textTransform: "uppercase" }}>
-            Free Tool
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", marginBottom: "16px" }}>
-            Family Devotion <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Builder</em>
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "56ch", margin: "0 auto" }}>
-            Pick your kids' ages and a theme. Get a complete 15-minute devotion with Scripture, teaching, three questions, an activity, and a prayer. Made for the table or the couch.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/family-devotions" className="fdb-screen" title="Family Devotion Builder" line="Pick your kids' ages and a theme. Get a complete 15-minute devotion with Scripture, teaching, three questions, an activity, and a prayer. Made for the table or the couch." plate="house" />
 
       {/* BUILDER */}
       <section className="fdb-screen" style={{ background: "var(--bone)", padding: "48px 32px 80px" }}>

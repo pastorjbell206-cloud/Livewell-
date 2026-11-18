@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Link } from "wouter";
 import { useState, useCallback } from "react";
 import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
@@ -328,51 +329,17 @@ export default function ScriptureMemory() {
       />
 
       {/* Hero */}
+      <InnerHead path="/tools/scripture-memory" title="Memorize Scripture: 40 key verses" line="Forty verses across eight categories, with four ways to work each one into memory. The aim is Scripture you can reach for at three in the morning without a phone in your hand." plate="book" />
+
       <section
         style={{
           background: "var(--charcoal)",
           color: "var(--bone)",
-          padding: "80px 32px 60px",
+          padding: "var(--s-4) var(--gutter)",
           textAlign: "center",
         }}
       >
         <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-            }}
-          >
-            Memorize Scripture: 40 key verses
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--U)",
-            }}
-          >
-            Forty verses across eight categories, with four ways to work each
-            one into memory. The aim is Scripture you can reach for at three in
-            the morning without a phone in your hand.
-          </p>
-
           {/* Progress bar */}
           <div
             style={{

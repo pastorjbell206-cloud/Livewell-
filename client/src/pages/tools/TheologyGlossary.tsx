@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import { Search, ChevronDown, ChevronUp, BookOpen, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 
 import FoldedNote from "@/components/FoldedNote";
 /* ------------------------------------------------------------------ */
@@ -1085,61 +1086,16 @@ export default function TheologyGlossary() {
       <FoldedNote id="tools-glossary" />
 
       {/* ============ HERO ============ */}
+      <InnerHead path="/tools/glossary" title="Theological Vocabulary Glossary" line="One hundred terms the church has used for two thousand years to name what it believes, how it reads, and why it worships. Each defined at three levels: a sentence, a paragraph, and a statement of why it matters. Search, filter, or read straight through." plate="book" />
+
       <section
         style={{
           background: "var(--charcoal)",
-          padding: "var(--s-7) 0 var(--s-6)",
+          padding: "var(--s-5) 0",
           color: "var(--bone)",
         }}
       >
         <div style={wrap}>
-          <p
-            style={{
-              fontFamily: "var(--U)",
-              fontSize: "0.75rem",
-              fontWeight: 500,
-              textTransform: "uppercase",
-              letterSpacing: "0.18em",
-              color: "var(--mustard)",
-              marginBottom: "16px",
-            }}
-          >
-            <Link href="/tools" style={{ color: "inherit", textDecoration: "none" }}>
-              Tools
-            </Link>{" "}
-            &middot; Reference
-          </p>
-
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(32px, 5vw, 56px)",
-              fontWeight: 400,
-              lineHeight: 1.05,
-              letterSpacing: "-0.02em",
-              marginBottom: "16px",
-              maxWidth: "22ch",
-            }}
-          >
-            Theological Vocabulary Glossary
-          </h1>
-
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "18px",
-              lineHeight: 1.7,
-              color: "rgba(245,240,230,0.78)",
-              maxWidth: "62ch",
-              marginBottom: "28px",
-            }}
-          >
-            One hundred terms the church has used for two thousand years to name
-            what it believes, how it reads, and why it worships. Each defined at
-            three levels: a sentence, a paragraph, and a statement of why it
-            matters. Search, filter, or read straight through.
-          </p>
-
           {/* Search */}
           <div style={{ position: "relative", maxWidth: "480px", marginBottom: "16px" }}>
             <Search

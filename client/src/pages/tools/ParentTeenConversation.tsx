@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { copyToClipboard } from "@/lib/clipboard";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
@@ -169,22 +170,9 @@ export default function ParentTeenConversation() {
         url="https://www.livewellbyjamesbell.co/tools/parent-teen-conversation"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-            <Link href="/help/parenting" style={{ color: "inherit" }}>Find help: parenting</Link> · A conversation tool
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 54px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px" }}>
-            The Parent and Teen Conversation
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, margin: "0 0 12px", maxWidth: "60ch" }}>
-            A parent and a teenager each answer twelve short statements about home, on their own and without looking at each other's. Then you swap codes and see where you see things the same and where you don't, with a few questions to ask each other in the places that matter. About five minutes each.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch", opacity: 0.85 }}>
-            It isn't a test, and there are no right answers. Nothing is sent anywhere. Your answers stay in this browser tab, so a reload keeps your place, and they are gone when you close it.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/parent-teen-conversation" title="The Parent and Teen Conversation" line="A parent and a teenager each answer twelve short statements about home, on their own and without looking at each other's. Then you swap codes and see where you see things the same and where you don't, with a few questions to ask each other in the places that matter. About five minutes each." plate="house">
+        <p className="pg-head__lede">It isn't a test, and there are no right answers. Nothing is sent anywhere. Your answers stay in this browser tab, so a reload keeps your place, and they are gone when you close it.</p>
+      </InnerHead>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
         <div style={wrap}>

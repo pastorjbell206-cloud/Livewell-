@@ -26,6 +26,7 @@ import { Link } from "wouter";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { SegmentedSignup } from "@/components/SegmentedSignup";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { SafetyCheck } from "@/components/SafetyCheck";
@@ -596,48 +597,7 @@ export default function Diagnostic() {
         url="https://www.livewellbyjamesbell.co/diagnostic"
       />
 
-      {/* HERO */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          padding: "var(--s-7) var(--s-4) var(--s-5)",
-          color: "var(--charcoal-fg)",
-        }}
-      >
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "20px", color: "var(--mustard)" }}>
-            A self-check
-          </div>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(36px, 5vw, 52px)",
-              fontWeight: 400,
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-              marginBottom: "16px",
-              maxWidth: "22ch",
-            }}
-          >
-            Where are you with God right now?
-          </h1>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "16px",
-              lineHeight: 1.7,
-              color: "rgba(245,240,230,0.7)",
-              maxWidth: "60ch",
-            }}
-          >
-            This is a self-check for honest reflection, not a test or a diagnosis,
-            and your answers stay on this device. Eight questions about how you
-            love, think, work, rest, and pray take about three minutes. At the end
-            you'll get a plain reading of your answers and a few specific places
-            to go next.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/diagnostic" title="Where are you with God right now?" line="This is a self-check for honest reflection, not a test or a diagnosis, and your answers stay on this device. Eight questions about how you love, think, work, rest, and pray take about three minutes. At the end you'll get a plain reading of your answers and a few specific places to go next." plate="compass" />
 
       {/* QUIZ OR RESULTS */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

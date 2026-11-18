@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import LoadFailed from "@/components/LoadFailed";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
@@ -173,21 +174,9 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
       />
       <MinimalNav />
 
-      {/* Hero */}
-      <section style={{ background: "var(--ink)", padding: "60px 20px 40px", textAlign: "center" }}>
-        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "12px", textTransform: "uppercase" }}>FREE ASSESSMENT</div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "16px" }}>
-            Where Do You Stand Theologically?
-          </h1>
-          <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: "0 0 12px" }}>
-            Answer plainly. At the end: the essays that meet you where your answers say you are.
-          </p>
-          <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
-            Ten questions. About four minutes. No grade.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/theology-quiz" title="Where Do You Stand Theologically?" line="Answer plainly. At the end: the essays that meet you where your answers say you are." plate="compass">
+        <p className="pg-head__lede">Ten questions. About four minutes. No grade.</p>
+      </InnerHead>
 
       {/* Quiz Body */}
       <section style={{ background: "var(--paper)", padding: "60px 20px", minHeight: "60vh" }}>

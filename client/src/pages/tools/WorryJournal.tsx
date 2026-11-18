@@ -17,6 +17,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { ToolActions } from "@/components/ToolActions";
 import { RemindMe } from "@/components/RemindMe";
 import ScriptureNote from "@/components/ScriptureNote";
@@ -125,32 +126,18 @@ export default function WorryJournal() {
         url="https://www.livewellbyjamesbell.co/tools/worry-journal"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-            <Link href="/help/anxiety" style={{ color: "inherit" }}>Find help: anxiety</Link> · A companion tool
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px" }}>
-            The Worry Journal
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, margin: "0 0 12px", maxWidth: "60ch" }}>
-            Five minutes before bed. Name what you are worried about, sort the one thing that is yours to do tomorrow from what is not yours to carry, and hand the rest to God in a sentence of prayer. After a few days, each worry will ask how it turned out.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch", opacity: 0.85 }}>
-            Everything you write stays in this browser and is never sent anywhere. This is a journal, not treatment: if worry has taken over your days or your sleep for weeks, see a doctor or a licensed counselor.
-          </p>
-          <RemindMe
-            title="The Worry Journal"
-            details="Five minutes before bed: name what you're worried about, sort the one thing that is yours to do tomorrow, and hand the rest to God."
-            href="/tools/worry-journal"
-            freq="DAILY"
-            count={30}
-            schedule="every day for thirty days"
-            defaultTime="evening"
-            onDark
-          />
-        </div>
-      </section>
+      <InnerHead path="/tools/worry-journal" title="The Worry Journal" line="Five minutes before bed. Name what you are worried about, sort the one thing that is yours to do tomorrow from what is not yours to carry, and hand the rest to God in a sentence of prayer. After a few days, each worry will ask how it turned out." plate="sundial">
+        <p className="pg-head__lede">Everything you write stays in this browser and is never sent anywhere. This is a journal, not treatment: if worry has taken over your days or your sleep for weeks, see a doctor or a licensed counselor.</p>
+        <RemindMe
+          title="The Worry Journal"
+          details="Five minutes before bed: name what you're worried about, sort the one thing that is yours to do tomorrow, and hand the rest to God."
+          href="/tools/worry-journal"
+          freq="DAILY"
+          count={30}
+          schedule="every day for thirty days"
+          defaultTime="evening"
+        />
+      </InnerHead>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }} aria-labelledby="tonight">
         <div style={wrap}>

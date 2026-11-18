@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { ToolActions } from "@/components/ToolActions";
@@ -601,74 +602,9 @@ export default function FinancialHealth() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Financial Health{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Self-Check
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Twelve statements about four parts of your financial life:
-            generosity, contentment, stewardship, and providing for your
-            household. It takes a few minutes. It isn't a budget calculator. It
-            asks whether your money reflects what you say you believe.
-          </p>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "12px auto 0",
-            }}
-          >
-            This is a self-check for reflection, not a test or a diagnosis, and
-            your answers stay on this device. It isn't financial advice either;
-            for decisions about debt, investments, or taxes, talk with someone
-            qualified who knows your situation.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/financial-health" title="Financial Health Self-Check" line="Twelve statements about four parts of your financial life: generosity, contentment, stewardship, and providing for your household. It takes a few minutes. It isn't a budget calculator. It asks whether your money reflects what you say you believe." plate="compass">
+        <p className="pg-head__lede">This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device. It isn't financial advice either; for decisions about debt, investments, or taxes, talk with someone qualified who knows your situation.</p>
+      </InnerHead>
 
       {/* Progress Bar */}
       {!showResults && (

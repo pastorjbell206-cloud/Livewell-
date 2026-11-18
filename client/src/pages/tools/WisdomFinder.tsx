@@ -16,6 +16,7 @@
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import {
@@ -457,15 +458,14 @@ export default function WisdomFinder() {
         url="https://www.livewellbyjamesbell.co/tools/wisdom-finder"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <InnerHead path="/tools/wisdom-finder" title="What does the Bible say about what I am facing?" plate="book">
+        <p className="pg-head__lede">
+          Tell us what you are struggling with, in your own words. We will find what the Bible says about it: the verses, the world they were written in, how the church has understood them across the centuries, and what they mean for your life now.
+        </p>
+      </InnerHead>
+
+      <section className="home-sec--dark" style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Wisdom · Finder</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            What does the Bible say about what I am facing?
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "22px" }}>
-            Tell us what you are struggling with, in your own words. We will find what the Bible says about it: the verses, the world they were written in, how the church has understood them across the centuries, and what they mean for your life now.
-          </p>
           <form
             onSubmit={(e) => { e.preventDefault(); run(query); }}
             style={{ display: "flex", gap: "10px", flexWrap: "wrap", maxWidth: "640px" }}
@@ -478,7 +478,7 @@ export default function WisdomFinder() {
               aria-label="Describe what you are struggling with"
               style={{ flex: "1 1 320px", padding: "14px 16px", fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", background: "var(--card)", border: "none", outline: "none" }}
             />
-            <button type="submit" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 22px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px" }}>
+            <button type="submit" className="btn btn--on-dark" style={{ gap: "8px" }}>
               <Search size={16} /> Find wisdom
             </button>
           </form>

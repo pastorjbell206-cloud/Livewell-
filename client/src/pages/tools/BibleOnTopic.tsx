@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { useState } from "react";
 import { Link } from "wouter";
@@ -239,17 +240,7 @@ export default function BibleOnTopic() {
       />
       <FoldedNote id="bible-on" />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>A tool · Integrated Life</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            What the Bible says about
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Most of life is lived in the place no single command reaches. Pick an arena of life below and see what Scripture actually says: the passages worth knowing by heart, each reduced to its center line, so you can open your own Bible and read them in full.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/bible-on" title="What the Bible says about" line="Most of life is lived in the place no single command reaches. Pick an arena of life below and see what Scripture actually says: the passages worth knowing by heart, each reduced to its center line, so you can open your own Bible and read them in full." plate="book" />
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={wrap}>

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { useProgress } from "@/hooks/useProgress";
 import { ARGUMENT_CASES, caseBySlug, type ArgumentCase } from "@/data/argumentCases";
@@ -119,18 +120,7 @@ export default function TestTheCase() {
         url="https://www.livewellbyjamesbell.co/tools/test-the-case"
       />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--gutter) var(--s-6)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Test the Case</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            {active.title}
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            {active.intro}
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/test-the-case" title={active.title} line={<>{active.intro}</>} plate="lantern" />
 
       {/* CASE PICKER */}
       <section style={{ background: "var(--bone-warm)", padding: "var(--s-4)" }}>

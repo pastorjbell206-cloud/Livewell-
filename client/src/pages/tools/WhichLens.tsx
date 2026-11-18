@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { toolName } from "@/lib/toolsList";
@@ -233,18 +234,9 @@ export default function WhichLens() {
       />
 
       {/* HEADER */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.2rem" }}>A diagnostic</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>
-            What shapes how you read the Bible?
-          </h1>
-          <p className="page-standfirst">Which lens has you?</p>
-          <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
-            Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay on this device, so you can stop and come back, and are seen by no one.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/which-lens" title="What shapes how you read the Bible?" line="Which lens has you?" plate="lantern">
+        <p className="pg-head__lede">Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay on this device, so you can stop and come back, and are seen by no one.</p>
+      </InnerHead>
 
       {/* BODY */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)", minHeight: "40vh" }}>

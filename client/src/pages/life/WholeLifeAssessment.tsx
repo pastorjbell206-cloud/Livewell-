@@ -18,6 +18,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
@@ -475,7 +476,6 @@ function chartableRuns(history: RunEntry[]): RunEntry[] {
 /* ------------------------------------------------------------------ */
 
 const wrap = { maxWidth: "740px", margin: "0 auto" } as const;
-const heroWrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 const bodyText = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" } as const;
 const mutedText = { fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" } as const;
@@ -1005,20 +1005,7 @@ export default function WholeLifeAssessment() {
         }
       `}</style>
 
-      {/* Hero */}
-      <section className="wla-screen" style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={heroWrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/life" style={{ color: "inherit" }}>Integrated Life</Link> · The annual life check-up
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            The Whole-Life Assessment
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
-            Where is your life flourishing, and where has it quietly come apart? Thirty statements, once a year. One honest map.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/life/assessment" className="wla-screen" title="The Whole-Life Assessment" line="Where is your life flourishing, and where has it quietly come apart? Thirty statements, once a year. One honest map." plate="compass" />
 
       {/* ------------------------------ Intro ------------------------------ */}
       {screen === -1 && (

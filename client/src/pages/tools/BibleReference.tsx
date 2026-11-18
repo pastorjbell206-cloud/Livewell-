@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { useState } from "react";
@@ -1356,58 +1357,7 @@ export default function BibleReference() {
       />
 
       {/* ── Hero ── */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 600,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              color: "var(--mustard)",
-              fontFamily: "var(--sans)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE REFERENCE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(30px, 5vw, 52px)",
-              fontWeight: 400,
-              fontFamily: "var(--display)",
-              lineHeight: 1.12,
-              marginBottom: "20px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            What the Bible{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em>{" "}
-            Says About…
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--sans)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Not proof-texts. Not devotional platitudes. The full biblical data on
-            15 life topics, with context, common misuses, interpretive range, and
-            what the passages actually teach.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/bible-says" title="What the Bible Actually Says About\u2026" line="Not proof-texts. Not devotional platitudes. The full biblical data on 15 life topics, with context, common misuses, interpretive range, and what the passages actually teach." plate="book" />
 
       {/* ── Content ── */}
       <section
