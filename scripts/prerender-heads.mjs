@@ -490,6 +490,7 @@ const SECTION_BY_ROUTE = {
   "/help/": { name: "Find Help", path: "/help" },
   "/family/devotions/": { name: "Family Devotions", path: "/family/devotions" },
   "/topics/": { name: "Topics", path: "/topics" },
+  "/answers/": { name: "Honest Answers", path: "/answers" },
 };
 
 // ---------------------------------------------------------------------------
@@ -550,11 +551,6 @@ const HUB_LISTINGS = {
   // with its date and chapters, linked to the day's first chapter.
   // The family hub and tonight's forwarding page: the family pages of the
   // menu, then every devotion by name.
-  // The church history essays, in their order, by title and line.
-  "/theology/history": { label: "Church history", cap: 60, load: () => {
-    const d = readJsonSafe("client/public/history/essays-index.json");
-    return ((d && d.essays) || []).map((e) => ({ title: e.title, href: `/theology/history/${e.slug}`, blurb: e.blurb || "" }));
-  } },
   "/family": { label: "For families", cap: 160, load: () => [...familyNavLinks(), ...familyDevotionLinks()] },
   "/family/tonight": { label: "For families", cap: 160, load: () => [...familyNavLinks(), ...familyDevotionLinks()] },
   "/family/devotions": { label: "Family devotions", cap: 160, load: () => familyDevotionLinks() },
@@ -592,6 +588,54 @@ async function loadAnswers() {
     answersCache = [];
   }
   return answersCache;
+}
+
+/** A TypeScript data module bundled once and read (answers, argument cases, question groups). */
+const tsCache = new Map();
+async function loadTs(rel) {
+  if (tsCache.has(rel)) return tsCache.get(rel);
+  let mod = {};
+  try {
+    const out = buildSync({ entryPoints: [path.join(REPO_ROOT, rel)], bundle: true, format: "esm", write: false, logLevel: "silent" });
+    mod = await import(`data:text/javascript;base64,${Buffer.from(out.outputFiles[0].text).toString("base64")}`);
+  } catch { /* leave empty */ }
+  tsCache.set(rel, mod);
+  return mod;
+}
+
+/** The church's ages, the course and the longer essays, as the history door lists them. */
+function historyDoorBody(title) {
+  const t = readJsonSafe("client/public/theology/church-history-timeline.json");
+  const idx = readJsonSafe("client/public/history/essays-index.json");
+  const eras = (t && t.eras) || [];
+  const essays = (idx && idx.essays) || [];
+  if (!eras.length || !essays.length) return null;
+  const course = essays.filter((e) => typeof e.course === "number").sort((a, b) => a.course - b.course);
+  const deeper = essays.filter((e) => typeof e.course !== "number");
+  const link = (e, label) => `<li><a href="/theology/history/${escapeHtml(e.slug)}">${escapeHtml(label)}</a> ${escapeHtml(e.dateRange || "")}</li>`;
+  const ages = eras.map((era) => {
+    const lessons = course.filter((e) => e.era === era.name).map((e) => link(e, `Lesson ${e.course}: ${e.title}`)).join("\n");
+    return `<li><h3>${escapeHtml(era.name)}</h3><p>${escapeHtml(era.range)}</p>${lessons ? `<ul>\n${lessons}\n</ul>` : ""}</li>`;
+  }).join("\n");
+  return {
+    html: article([
+      `<p class="pre-eyebrow">History</p>`,
+      `<h1>Church history</h1>`,
+      `<p class="pre-subtitle">Two thousand years, from the apostles to today.</p>`,
+      sec("The timeline", `<ol aria-label="The seven ages of the church">\n${ages}\n</ol>`),
+      sec("The course", `<ol>\n${course.map((e) => link(e, e.title)).join("\n")}\n</ol>`),
+      sec("Go deeper", `<ul>\n${deeper.map((e) => link(e, e.title)).join("\n")}\n</ul>`),
+      sec("Ways in", [
+        `<ul>`,
+        `<li><a href="/theology/history/people">People of church history</a></li>`,
+        `<li><a href="/resources/creeds">Creeds and confessions</a></li>`,
+        `<li><a href="/theology/traditions">Christian traditions</a></li>`,
+        `<li><a href="/theology/history#councils">The councils</a></li>`,
+        `<li><a href="/theology/history#heresies">The heresies</a></li>`,
+        `</ul>`,
+      ].join("\n")),
+    ]),
+  };
 }
 
 /** The family pages of the site catalogue (client/src/lib/siteCatalog.ts), in its words. */
@@ -693,28 +737,63 @@ function doctrineBody(e) {
 }
 
 const PAGE_BODIES = {
-  // Every answer in full, with the FAQPage data the page builds at runtime.
+  // The index of the Honest Answers: every question, grouped as the page
+  // groups them, each linking to its own page. Each row carries the answer's
+  // slug as its id, so an old /answers#<slug> link still lands on it with
+  // scripts off.
   "/answers": async (title) => {
     const answers = await loadAnswers();
     if (!answers.length) return null;
-    const shelf = loadEssayShelf(REPO_ROOT);
-    const blocks = answers.map((a) => [
-      `<section id="${escapeHtml(a.slug)}"><h2>${escapeHtml(a.question)}</h2>`,
-      (a.paragraphs ?? []).map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
-      a.essaySlug && shelf.isPublic(a.essaySlug) ? `<p><a href="/writing/${escapeHtml(a.essaySlug)}">${escapeHtml(a.essayTitle ?? "")}</a></p>` : "",
-      `</section>`,
-    ].filter(Boolean).join("\n"));
+    const { QUESTION_GROUPS = [] } = await loadTs("client/src/data/questionGroups.ts");
+    const bySlug = new Map(answers.map((a) => [a.slug, a]));
+    const row = (a) => `<li id="${escapeHtml(a.slug)}"><a href="/answers/${escapeHtml(a.slug)}">${escapeHtml(a.question)}</a></li>`;
+    const listed = new Set();
+    const groups = QUESTION_GROUPS.map((g) => {
+      const items = g.answers.map((s) => bySlug.get(s)).filter(Boolean);
+      items.forEach((a) => listed.add(a.slug));
+      return items.length ? sec(g.name, `<ul>\n${items.map(row).join("\n")}\n</ul>`) : "";
+    });
+    const rest = answers.filter((a) => !listed.has(a.slug));
     return {
-      html: article([`<h1>${escapeHtml(title)}</h1>`, ...blocks]),
-      schemas: [{
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: answers.map((a) => ({
-          "@type": "Question",
-          name: a.question,
-          acceptedAnswer: { "@type": "Answer", text: (a.paragraphs ?? []).join(" ") },
-        })),
-      }],
+      html: article([
+        `<h1>Honest answers to hard questions</h1>`,
+        ...groups,
+        rest.length ? sec("More questions", `<ul>\n${rest.map(row).join("\n")}\n</ul>`) : "",
+      ]),
+    };
+  },
+  // The history door: the ages, the course, the longer essays, the rooms.
+  "/theology/history": async (title) => historyDoorBody(title),
+  // Every person, A to Z, with years, role and place, under their own anchor.
+  "/theology/history/people": async () => {
+    const d = readJsonSafe("client/public/theology/church-history-figures.json");
+    const figures = ((d && d.figures) || []).slice().sort((a, b) => a.name.replace(/^The\s+/i, "").localeCompare(b.name.replace(/^The\s+/i, "")));
+    if (!figures.length) return null;
+    const id = (n) => `person-${n.toLowerCase().replace(/,.*$/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/theology/history">History</a></p>`,
+        `<h1>People of church history</h1>`,
+        `<ul>\n${figures.map((f) => `<li id="${escapeHtml(id(f.name))}"><h2>${escapeHtml(f.name)}</h2><p>${escapeHtml(f.dates)}. ${escapeHtml(f.role)}${f.place ? `, ${escapeHtml(f.place)}` : ""}.</p><p>${escapeHtml(f.summary)}</p><p><strong>Why they matter.</strong> ${escapeHtml(f.whyTheyMatter)}</p></li>`).join("\n")}\n</ul>`,
+      ]),
+    };
+  },
+  // For skeptics: Test the Case, the first questions, the eight-week plan.
+  "/skeptics": async () => {
+    const answers = await loadAnswers();
+    const { ARGUMENT_CASES = [] } = await loadTs("client/src/data/argumentCases.ts");
+    const { QUESTION_GROUPS = [] } = await loadTs("client/src/data/questionGroups.ts");
+    const first = QUESTION_GROUPS.filter((g) => g.id === "true").flatMap((g) => g.answers)
+      .map((s) => answers.find((a) => a.slug === s)).filter(Boolean);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/topics">Questions</a></p>`,
+        `<h1>For skeptics</h1>`,
+        `<p class="pre-subtitle">Weigh the case at your own pace. Push back anywhere.</p>`,
+        sec("Test the Case", `<ul>\n${ARGUMENT_CASES.map((c) => `<li><a href="/tools/test-the-case?case=${escapeHtml(c.slug)}">${escapeHtml(c.title)}</a></li>`).join("\n")}\n</ul>`),
+        sec("The first questions", `<ul>\n${first.map((a) => `<li><a href="/answers/${escapeHtml(a.slug)}">${escapeHtml(a.question)}</a></li>`).join("\n")}\n</ul>`),
+        sec("Take longer", `<ul>\n<li><a href="/plans/skeptic">Eight Weeks for the Curious Skeptic</a></li>\n<li><a href="/topics">Hard questions</a></li>\n</ul>`),
+      ]),
     };
   },
   // Every catechism question with its answers and its verse.
@@ -1460,6 +1539,45 @@ async function main() {
     }
   }
   console.log(`[prerender] injected crawlable body content into ${withBody} library pages`);
+
+  // A page per Honest Answer (/answers/:slug). The head is built from the
+  // answer itself: the question is the title (as the page's SEOMeta has it),
+  // the first paragraph, cut to a whole sentence, the description. The body
+  // is the answer word for word, the essay while it is public, the book, and
+  // the previous and next question.
+  {
+    const answers = await loadAnswers();
+    const shelf = loadEssayShelf(REPO_ROOT);
+    answers.forEach((a, i) => {
+      const route = `/answers/${a.slug}`;
+      const url = `${SITE_URL}${route}`;
+      const head = buildHead({
+        title: a.question,
+        description: (a.paragraphs ?? [])[0] || a.question,
+        url,
+        image: ogImageUrl(a.question),
+        type: "article",
+        schemas: [breadcrumbSchema([{ name: "Home", path: "" }, SECTION_BY_ROUTE["/answers/"], { name: a.question, path: route }])],
+      });
+      const prev = answers[i - 1];
+      const next = answers[i + 1];
+      const body = article([
+        `<p class="pre-eyebrow"><a href="/answers">Honest answers</a></p>`,
+        `<h1>${escapeHtml(a.question)}</h1>`,
+        (a.paragraphs ?? []).map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
+        a.essaySlug && shelf.isPublic(a.essaySlug) ? `<p><a href="/writing/${escapeHtml(a.essaySlug)}">The full essay: ${escapeHtml(a.essayTitle ?? "")}</a></p>` : "",
+        a.bookHref && a.bookTitle ? `<p><a href="${escapeHtml(a.bookHref)}">The book behind it: ${escapeHtml(a.bookTitle)}</a></p>` : "",
+        `<nav aria-label="Previous and next question"><ul>`,
+        prev ? `<li><a href="/answers/${escapeHtml(prev.slug)}">Previous: ${escapeHtml(prev.question)}</a></li>` : "",
+        next ? `<li><a href="/answers/${escapeHtml(next.slug)}">Next: ${escapeHtml(next.question)}</a></li>` : "",
+        `<li><a href="/answers">All the questions</a></li>`,
+        `</ul></nav>`,
+      ]);
+      writeRoute(template, { path: route }, head, body);
+      wrote++;
+    });
+    console.log(`[prerender] wrote ${answers.length} Honest Answer pages`);
+  }
 
   const studyBible = prerenderStudyBible(template);
   wrote += studyBible;

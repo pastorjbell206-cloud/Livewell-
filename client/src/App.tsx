@@ -122,6 +122,7 @@ const TheologyDoctrine = lazy(() => import("./pages/TheologyDoctrine"));
 const PassageContext = lazy(() => import("./pages/tools/PassageContext"));
 const TheologyHistory = lazy(() => import("./pages/TheologyHistory"));
 const HistoryEssay = lazy(() => import("./pages/history/HistoryEssay"));
+const HistoryPeople = lazy(() => import("./pages/history/HistoryPeople"));
 const TheologyCompare = lazy(() => import("./pages/TheologyCompare"));
 const TheologyGlossary = lazy(() => import("./pages/TheologyGlossary"));
 const TheologyCreeds = lazy(() => import("./pages/TheologyCreeds"));
@@ -167,6 +168,8 @@ const StudyBibleGuides = lazy(() => import("./pages/StudyBibleGuides"));
 const StudyBibleYear = lazy(() => import("./pages/StudyBibleYear"));
 const StudyBibleSearch = lazy(() => import("./pages/StudyBibleSearch"));
 const Answers = lazy(() => import("./pages/Answers"));
+const AnswerPage = lazy(() => import("./pages/AnswerPage"));
+const Skeptics = lazy(() => import("./pages/Skeptics"));
 const Topics = lazy(() => import("./pages/Topics"));
 const Start = lazy(() => import("./pages/Start"));
 const Topic = lazy(() => import("./pages/Topic"));
@@ -381,6 +384,7 @@ function Router() {
         <Route path="/family/reading-plans" component={FamilyReadingPlans} />
         <Route path="/family" component={Family} />
         <Route path="/theology/passage" component={PassageContext} />
+        <Route path="/theology/history/people" component={HistoryPeople} />
         <Route path="/theology/history/:slug" component={HistoryEssay} />
         <Route path="/theology/history" component={TheologyHistory} />
         <Route path="/framework" component={ToWritingRedirect} />
@@ -626,7 +630,9 @@ function Router() {
         <Route path="/deconstruction" component={ToHelpDeconstructingRedirect} />
         <Route path="/church-history" component={ToChurchHistoryRedirect} />
         <Route path="/historic-faith" component={ToStudyRedirect} />
+        <Route path="/answers/:slug" component={AnswerPage} />
         <Route path="/answers" component={Answers} />
+        <Route path="/skeptics" component={Skeptics} />
         <Route path="/topics/:slug" component={Topic} />
         <Route path="/topics" component={Topics} />
         <Route path="/assessments" component={Assessments} />

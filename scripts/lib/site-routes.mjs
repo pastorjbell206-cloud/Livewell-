@@ -45,6 +45,13 @@ function groupGuideSlugs() {
   return new Set([...read(p).matchAll(/\bslug:\s*["']([a-z0-9-]+)["']/g)].map((m) => m[1]));
 }
 
+/** The Honest Answers' slugs, read from client/src/data/answers.ts. */
+function answerSlugs() {
+  const p = "client/src/data/answers.ts";
+  if (!existsSync(join(ROOT, p))) return new Set();
+  return new Set([...read(p).matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]));
+}
+
 function bibleBooks() {
   const books = json("client/public/bible/books.json") || [];
   return new Map(books.map((b) => [b.slug, b.chapters]));
@@ -73,6 +80,7 @@ function paramSources() {
     "/help/:slug": slugsFrom(needs),
     "/family/devotions/:id": slugsFrom(json("client/public/family/index.json")?.devotions, "id"),
     "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
+    "/answers/:slug": answerSlugs(),
     "/study/bible/:book": new Set(books.keys()),
   };
 }
