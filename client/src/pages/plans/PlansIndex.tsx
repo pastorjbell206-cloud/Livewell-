@@ -15,19 +15,19 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { EditorialIndex } from "@/components/editorial/EditorialIndex";
-import { LoadFailed } from "@/components/LoadFailed";
+import InnerHead from "@/components/art/InnerHead";
+import LibraryIndex from "@/components/art/LibraryIndex";
+import SectionHead from "@/components/art/SectionHead";
+import { Milestone, Printer } from "lucide-react";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { fetchJson } from "@/lib/fetch-json";
 import { readStoredJSON } from "@/lib/storage";
-import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { RemindMe } from "@/components/RemindMe";
 import READING from "@/data/bible-reading-plans.json";
 
 /** A printed plan's file link, big enough to tap. */
 const fileButton = { display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--bone)", color: "var(--mustard-text)", textDecoration: "none" } as const;
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** `need` is the care page's title, in the reader's words (scripts/build-plans-index.mjs). */
 interface PlanEntry { slug: string; title: string; blurb: string; need?: string; needSlug?: string }
@@ -42,16 +42,26 @@ function progressFor(slug: string): number | null {
   return p ? Object.values(p.done).filter(Boolean).length : null;
 }
 
-function planMatches(p: PlanEntry, q: string): boolean {
-  return hasWordStarts(`${p.need ?? ""} ${p.title} ${p.blurb}`, queryWords(q));
-}
 
 export default function PlansIndex() {
   const [plans, setPlans] = useState<PlanEntry[] | null>(null);
   const [failed, setFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
-  const [query, setQuery] = useState("");
-  const shown = useMemo(() => (plans && query.trim() ? plans.filter((p) => planMatches(p, query)) : plans), [plans, query]);
+  const libItems = useMemo(
+    () =>
+      plans?.map((p) => {
+        const weeks = progressFor(p.slug);
+        return {
+          href: `/plans/${p.slug}`,
+          // The reader's words first; the plan's own name under it.
+          title: p.need ?? p.title,
+          line: p.need ? p.title : p.blurb,
+          keywords: p.blurb,
+          meta: weeks === null ? undefined : weeks === 0 ? "Started" : `${weeks} of 8 weeks done`,
+        };
+      }) ?? null,
+    [plans],
+  );
 
   useEffect(() => {
     let live = true;
@@ -69,73 +79,40 @@ export default function PlansIndex() {
         url="https://www.livewellbyjamesbell.co/plans"
       />
 
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-            <span><Link href="/tools" style={{ color: "inherit" }}>Tools</Link> · Eight-week plans</span>
+      <InnerHead path="/plans" title="Eight-week plans" line="Eight-week plans for a hard season" plate="lantern">
+        <p className="pg-head__lede">Eight weeks, one step at a time.</p>
+      </InnerHead>
+
+      {/* FIRST: find the plan for what you are carrying. */}
+      <LibraryIndex
+        id="plans"
+        items={plans && !failed ? libItems : null}
+        failed={failed ? { what: "The care plans", onRetry: () => setNonce((n) => n + 1), backHref: "/help", backLabel: "Find help" } : null}
+        icon={Milestone}
+        noun={["plan", "plans"]}
+        findLabel="Find a plan"
+        placeholder="Try: worry, grief, marriage, doubt"
+        bandTitle="What are you carrying?"
+        none={<p>No plan matches. <Link href="/help">Find Help</Link> starts from your own words.</p>}
+      />
+
+      <section className="home-sec home-sec--warm" aria-labelledby="plans-how-title">
+        <div className="home-wrap">
+          <SectionHead icon={Milestone} label="How a plan works" title="One weight, eight weeks." id="plans-how-title" />
+          <div className="lw-prose-band__body">
+            <p>
+              Each plan is a slow walk through one weight: one focus a week, one small daily practice, one thing to read, one tool, and one honest question. A missed week is not failure. You pick it back up. Your progress stays in this browser.
+            </p>
+            <p>
+              Not sure which fits? <Link href="/help">Find help for what you are facing</Link> starts from your own words.
+            </p>
           </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.6vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "20ch" }}>
-            Eight-week plans for a hard season
-          </h1>
-          <p className="page-standfirst">Eight weeks, one step at a time.</p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg)", maxWidth: "60ch", margin: 0 }}>
-            Each plan is a slow walk through one weight: one focus a week, one small daily practice, one thing to read, one tool, and one honest question. A missed week is not failure. You pick it back up. Your progress stays in this browser.
-          </p>
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={wrap}>
-          {failed && <LoadFailed what="The care plans" onRetry={() => setNonce((n) => n + 1)} backHref="/help" backLabel="Find help" />}
-          {!plans && !failed && <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the plans…</p>}
-          {plans && (
-            <>
-              <label htmlFor="plan-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", marginBottom: "8px" }}>
-                Find a plan
-              </label>
-              <input
-                id="plan-find"
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Try: worry, grief, marriage, doubt"
-                autoComplete="off"
-                style={{ width: "100%", maxWidth: "520px", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--border)", background: "var(--card)", color: "var(--ink)", marginBottom: "var(--s-4)" }}
-              />
-              {/* Always on the page, so a screen reader hears each new count. */}
-              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: query.trim() ? "0 0 var(--s-3)" : 0 }}>
-                {query.trim() ? (shown?.length ? `${shown.length} ${shown.length === 1 ? "plan matches" : "plans match"}` : "No plan matches. Find Help below starts from your own words.") : ""}
-              </p>
-              <EditorialIndex
-                columns={2}
-                headingAs="h2"
-                label="Care plans"
-                items={(shown ?? []).map((p) => {
-                  const weeks = progressFor(p.slug);
-                  return {
-                    href: `/plans/${p.slug}`,
-                    // The reader's words first; the plan's own name under it.
-                    title: p.need ?? p.title,
-                    dek: p.need ? p.title : p.blurb,
-                    kicker: "Eight-week plan",
-                    meta: weeks === null ? undefined : <span>{weeks === 0 ? "Started" : `${weeks} of 8 weeks done`}</span>,
-                  };
-                })}
-              />
-            </>
-          )}
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginTop: "var(--s-5)" }}>
-            Not sure which fits? <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find help for what you are facing</Link> starts from your own words.
-          </p>
-        </div>
-      </section>
-
-      <section aria-labelledby="reading-plans" style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>To print</div>
-          <h2 id="reading-plans" style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 10px" }}>
-            Bible reading plans
-          </h2>
+      <section aria-labelledby="reading-plans" className="home-sec">
+        <div className="home-wrap">
+          <SectionHead icon={Printer} label="To print" title="Bible reading plans" id="reading-plans" />
           <p style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 var(--s-4)" }}>
             Plans to print and keep in your Bible: a month in the Psalms, a Gospel in a month, Mark through the forty days of Lent, the New Testament in ninety days, and the whole Bible in a year. Each day is balanced by length, so no single day ambushes you, and a missed day is simply picked up.
           </p>
