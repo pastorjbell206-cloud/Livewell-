@@ -132,3 +132,37 @@ Same method as above. "Search" is a WebSearch run in this second run (12 at most
 | Three Christian views on the age of the earth and evolution | Described without taking a side, as the Genesis 1 answer does | No position stated |
 | "science hands you a magnificent description of the house ... whether anyone lives there" | The old answer's own sentence, kept | James's words |
 | Sources list | Coyne, Numbers, Plantinga, Wigner, Einstein, Augustine (Taylor 1982): search. Collins 2006 and Bonhoeffer's letters (1943 to 1945): standard bibliography | Verified, two on standard bibliography |
+
+## Did the resurrection actually happen?
+
+5 searches. Nearly every fact comes from the public essay "Did the Resurrection Actually Happen?" and its ledger (`docs/work/essays/ledgers/did-the-resurrection-happen.md`, three closing passes and a final read), reused in its wording or a plain paraphrase.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Hume, "Of Miracles", 1748; "A wise man, therefore, proportions his belief to the evidence."; deceived or deceiving | Essay ledger (Hume text §87, §91; year from EB1911) | Verified, quoted |
+| Queen Elizabeth, 1 January 1600, seen before and after her death, a month in the grave, three years; "should not have the least inclination to believe so miraculous an event" | Essay ledger (§99, correction 10) | Verified, quoted. The draft's "seen dead" was corrected to the essay's verified wording before commit. |
+| Ehrman at UNC, agnostic; grants some followers came to believe soon after that God raised Jesus; historians as historians cannot conclude a miracle; visions | Essay ledger (corrections 16, 24, 32; NPR 2014); apol ledger (agnostic). Search this run: NPR 2014 interview, Publishers Weekly on visions | Verified, paraphrased (no quotation marks: this run's search did not find the exact sentence) |
+| Rees, BMJ 1971, 293 widowed people, almost half, some for years | Essay ledger (correction 20) | Verified |
+| Most critical scholars date Mark around 70; the four Easter accounts differ | apol ledger (Bible answer) | Verified |
+| Ehrman's burial objection (crosses, dumped, decent burial, Pilate's exception) | Essay ledger (corrections 17, 29) | Verified, paraphrased |
+| Crucified around 30 or 33 | Essay ledger (correction 27) | Verified |
+| Tacitus, *Annals* 15.44, early second century: "Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus." | the-historical-jesus ledger (Perseus, Church and Brodribb, word for word) | Verified, quoted |
+| 1 Corinthians 15:3-7, mid-50s; delivered and received; Galatians 1:18-19; Galatians 1:13; John 7:5 | Essay ledger (ESV copy and second-pass search) | Verified |
+| Most scholars think the summary took shape within a few years | Essay ledger (correction 31; Pickup, *JETS* 2013) | Verified |
+| Lüdemann, who did not believe Jesus rose, dated the formula to about two years after the crucifixion | Essay ledger (pp. 171-72, secondary); search this run: William Lane Craig's critique reports Lüdemann's "just two years after the crucifixion" | Verified, paraphrased. The longer wording ("not later than three years") was not confirmed and is not used. |
+| Sanders: "That Jesus' followers (and later Paul) had resurrection experiences is, in my judgement, a fact. What the reality was that gave rise to the experiences I do not know." | Essay ledger (first sentence); search this run: review of *The Historical Figure of Jesus* (Allen Lane/Penguin, 1993) quoting both sentences, spelled "judgement" | Verified, quoted |
+| Sanders: "I do not regard deliberate fraud as a worthwhile explanation" | Essay ledger had it only "as quoted on an apologetics page"; this run's search did not find the sentence; a review says he dismissed outright fraud as implausible | Paraphrased only ("set fraud aside as no serious explanation") |
+| James led the Jerusalem church, stoned around 62 | Essay ledger | Verified |
+| Preaching in Jerusalem within weeks | Essay ledger (Pentecost) | Verified |
+| Evans: Judea in peacetime; Deuteronomy 21:23 quoted; Josephus, *Jewish War* 4.317, burial before sunset; Yehohanan, 1968; Ehrman's reply that one case proves little | Essay ledger | Verified |
+| Mark 15:43 "a respected member of the council"; Josephus, *Antiquities* 4.219, "let not the testimony of women be admitted" | Essay ledger (Perseus Whiston) | Verified, quoted |
+| Matthew 28:13-15, the theft story | Essay ledger | Verified |
+| Acts 12:2; Josephus on James's stoning; 1 Clement on Peter and Paul, late first century | Essay ledger | Verified |
+| Strauss on the swoon theory | Essay ledger | Verified, paraphrased |
+| Allison collects reports of the dead appearing, some to groups; warns against claiming visions are always private; a Christian | Essay ledger | Verified, paraphrased |
+| Acts 12:15 "It is his angel!"; Luke 24:37 "were startled and frightened and thought they saw a spirit" | Essay ledger (ESV) | Verified, quoted (the exclamation is inside quoted Scripture) |
+| Wright, *The Resurrection of the Son of God* (Fortress, 2003): what resurrection meant; the tomb and appearances together | Essay ledger | Verified, paraphrased |
+| Bar Kosiba 132, Akiva, died 135; the sages took his death as proof he was not the messiah (Maimonides, *Mishneh Torah*, Kings 11:3) | Essay ledger | Verified, paraphrased |
+| Acts 2:24; Matthew 28:17; 1 Corinthians 15:17 | Essay ledger (ESV) | Verified |
+| "You can weigh it all ... where I lived for years." "The tomb sat in a city ... It would not stay closed." | The old answer's own sentences, kept word for word | James's words; the one biographical line, already his |
+| Sources: Wright 2003; Licona, *The Resurrection of Jesus: A New Historiographical Approach* (IVP Academic/Apollos, 2010); Allison, *The Resurrection of Jesus: Apologetics, Polemics, History* (T&T Clark, 2021); Sanders 1993; Bird, Evans and others, *How God Became Jesus* (2014); Hume 1748; Lüdemann, *The Resurrection of Jesus: History, Experience, Theology* (Fortress, 1994); Ehrman, *How Jesus Became God* (2014) | Search this run: Licona, Allison, Lüdemann, Sanders, Ehrman. Essay ledger: Wright, Evans's book, Hume | Verified |

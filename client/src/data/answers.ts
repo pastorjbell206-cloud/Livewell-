@@ -85,9 +85,82 @@ export const ANSWERS: Answer[] = [
     askedAs: "did jesus rise rose risen raised from the dead come back to life easter empty tomb",
     question: "Did the resurrection actually happen?",
     paragraphs: [
-      "The resurrection is the best historical explanation of facts that nearly all serious scholars, skeptical ones included, already grant. It isn't a proof, but it is the best explanation. Jesus was executed by crucifixion. His followers were convinced they had seen him alive and died for the claim. The proclamation began in Jerusalem, where a body could have ended it. The creed in 1 Corinthians 15:3–8 dates to within years of the cross. Legends need time, and here there is almost none.",
-      "The rivals are not stupid. Hallucinations are private events. They do not happen to five hundred at once or to a persecutor like Paul, and they leave the body in the tomb. Liars do not die for what they know they fabricated. Each alternative rescues one corner and leaves the rest exposed. Hume's deeper objection rules the miracle out before weighing anything. He assumes the answer and calls it rigor.",
-      "You can weigh it all and still conclude it did not happen. That is a respectable place to stand. Reaching that conclusion without doing the work isn't, and that's where I lived for years. The tomb sat in a city that wanted the movement dead and had only to produce a body. They never did. The matter was supposed to be closed on a Friday. It would not stay closed.",
+      "I think it did, and I think the case is stronger than most people have been told. It isn't a proof. History can't prove a miracle, and I won't pretend it can. But there is a short list of facts that nearly every historian of the period accepts, skeptics included: Jesus was crucified, his followers were soon convinced they had seen him alive, a persecutor and a doubting brother came to believe the same, and the preaching began in the city where he was buried. The question is what best explains them. Each natural explanation covers part of the evidence and strains at the rest. Whether you can accept the one that covers all of it depends on whether you have already decided that God can't act, and that is the question worth facing honestly.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "David Hume gave the objection its classic form in his essay \"Of Miracles\" in 1748. \"A wise man, therefore, proportions his belief to the evidence,\" he wrote. Our experience that the dead stay dead is as uniform as experience gets, so when someone reports that a dead man rose, it is always more likely that the witness was deceived or deceiving than that the laws of nature gave way. Hume didn't need to examine the evidence for Easter to reject it. He thought the question was settled before the evidence was called.",
+          "Modern historians put it more carefully. Bart Ehrman, a New Testament scholar at the University of North Carolina and an agnostic, grants that some of Jesus' followers came to believe soon after the crucifixion that God had raised him. What he doesn't accept is that the belief was true, and he argues that historians, working as historians, can't conclude that a miracle happened at all. He suggests that some of the disciples had visions of Jesus, the kind of experience grieving people have. That isn't a cheap suggestion. In 1971 a doctor in Wales named W. Dewi Rees published a study in the British Medical Journal of 293 widowed men and women, and almost half of them reported experiences of their dead spouse, some for years afterward. The disciples were bereaved, frightened and ashamed. Why wouldn't some of them see him?",
+          "Then there are the documents. The Gospels were written decades after the events, most critical scholars date Mark around 70, and the four Easter accounts differ in their details. Ehrman has also pressed the strongest objection to the empty tomb. Rome normally left the crucified on their crosses or dumped the bodies, because denying a decent burial was part of the punishment, and he finds it hard to see why Pilate would have made an exception for Jesus. If Jesus was never laid in a known tomb, the stories of an empty one are later legend.",
+          "I grant what is true in all of this. Legends do grow. Grief does produce visions. A claim that a dead man rose should face a higher bar than a claim that he died. If the case for the resurrection can't survive those points, it doesn't deserve to be believed.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "This is a historical argument, and historical arguments don't work like proofs. They work by inference to the best explanation. You start with the facts the evidence establishes, not with any belief that the Bible is inspired, and you ask which account explains the most of them with the least strain. Two cautions belong at the start. History deals in probabilities, so the argument can't force anyone to believe. And the answer you reach depends partly on what you think is possible before you begin. I'll come back to that, because it is where the real disagreement lives.",
+        ],
+      },
+      {
+        heading: "What nearly every historian grants",
+        body: [
+          "First, Jesus was crucified under Pontius Pilate, around the year 30 or 33. Early in the second century the Roman historian Tacitus, who despised Christians, recorded that \"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus.\"",
+          "Second, his followers became convinced they had seen him alive, and the evidence for that is very early. Writing to the church at Corinth in the mid-50s, Paul reminded them of what he had \"delivered\" to them, a summary he had himself \"received\": \"that Christ died for our sins in accordance with the Scriptures, that he was buried, that he was raised on the third day in accordance with the Scriptures, and that he appeared to Cephas, then to the twelve. Then he appeared to more than five hundred brothers at one time, most of whom are still alive, though some have fallen asleep. Then he appeared to James, then to all the apostles\" (1 Corinthians 15:3-7). Delivered and received are the words for handing on a tradition you didn't compose. Paul tells the Galatians that about three years after his conversion he spent fifteen days in Jerusalem with Cephas and saw James, the Lord's brother (Galatians 1:18-19), two of the names on that list. Most scholars, including many with no stake in Christianity, think the summary took shape within a few years of the events. Gerd Lüdemann, a German New Testament scholar who did not believe Jesus rose, dated it to about two years after the crucifixion. E. P. Sanders, no apologist, wrote: \"That Jesus' followers (and later Paul) had resurrection experiences is, in my judgement, a fact. What the reality was that gave rise to the experiences I do not know.\"",
+          "Third, two people who had every reason not to believe came to believe. Paul says he \"persecuted the church of God violently and tried to destroy it\" (Galatians 1:13). James was one of the brothers of whom John writes, \"For not even his brothers believed in him\" (John 7:5). James went on to lead the church in Jerusalem until he was stoned there around 62.",
+          "Fourth, the preaching began in Jerusalem, within weeks, in the city where Jesus had been executed and buried, where the claim was easiest to refute.",
+          "The empty tomb is more disputed, and I'll say so plainly. Against Ehrman's objection, Craig Evans and others answer that Judea in peacetime wasn't the rest of the empire. The law of Moses required that a hanged man's body \"shall not remain all night on the tree, but you shall bury him the same day\" (Deuteronomy 21:23), and Josephus, the Jewish historian of the first century, wrote that his people took down even the crucified and buried them before sunset. In 1968 builders in Jerusalem broke into a family tomb holding the bones of a young man named Yehohanan, an iron nail still driven through his heel. Ehrman replies that one case proves very little, and the argument goes on. But some details push hard against invention. Mark says the man who buried Jesus was \"a respected member of the council\" (Mark 15:43), the same council that handed him over. All four Gospels put women first at the tomb, when Josephus could summarize the law as \"let not the testimony of women be admitted.\" And as far as our sources show, the earliest opponents didn't say the body was still in the grave. Matthew answers a story that the disciples stole it (Matthew 28:13-15). They argued about how the tomb became empty.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "A historical argument: inference to the best explanation",
+            premises: [
+              "Jesus died by crucifixion under Pontius Pilate.",
+              "Soon afterward individuals and groups, including the persecutor Paul and the skeptical brother James, became convinced that they had seen him alive.",
+              "They proclaimed his resurrection within weeks in Jerusalem, where his burial place was known, and their earliest opponents disputed how the tomb was empty, not whether.",
+              "They chose the word resurrection, which to Jews of the day meant the bodily raising of God's people at the end of history, not the vision of a dead man or his spirit's rescue.",
+            ],
+            conclusion: "Of the explanations on offer, that God raised Jesus from the dead explains all four facts best, unless it has been ruled out before the evidence is weighed.",
+          },
+          "The third premise is the most contested, because it depends on the burial. The conclusion also depends on something the evidence can't supply, and I'll name it below. First, the rivals.",
+        ],
+      },
+      {
+        heading: "The other explanations",
+        body: [
+          "The theory that the disciples hid the body and lied has few defenders among scholars now, for a plain reason: they paid for the claim. James the brother of John was killed with the sword (Acts 12:2), James the brother of Jesus was stoned, and a letter from the church in Rome late in the first century says that Peter and Paul suffered martyrdom. People die for false beliefs all the time, but these men were in a position to know whether they had taken the body themselves. Sanders, for one, set fraud aside as no serious explanation. The idea that Jesus survived the cross was answered by the skeptic David Friedrich Strauss in the nineteenth century: a half-dead man in need of bandages and nursing could never have persuaded anyone that he had conquered death.",
+          "The vision theory is the serious rival, and it deserves its due. Dale Allison, a New Testament scholar who is himself a Christian, has collected reports of the dead appearing to the living, some of them to more than one person at once, and he warns believers against claiming such visions are always private. But the theory strains at three points. Bereavement visions come to mourners, and Paul wasn't mourning Jesus; he was hunting his followers. James didn't believe in his brother while he lived. And the witnesses chose the wrong word for a vision. The ancient world had a full vocabulary for seeing the dead. When Peter, freed from prison, knocked at the door, the church said, \"It is his angel!\" (Acts 12:15). When the risen Jesus stood among them, the disciples \"were startled and frightened and thought they saw a spirit\" (Luke 24:37). The historian N. T. Wright argued in The Resurrection of the Son of God that resurrection meant something else entirely: the bodily raising of all God's people at the end. Nobody expected one man to be raised ahead of everyone while the world went on.",
+          "Another movement shows the normal logic. In 132 Simon bar Kosiba led a revolt against Rome, and Rabbi Akiva hailed him as the messiah. When he died in 135, the sages took his death as proof that he was not. A messiah killed by the pagans had failed. Jesus' followers shared that logic, and they had a natural successor in James. Nobody called James the messiah. They said God had raised Jesus. Wright's conclusion is that only the empty tomb and the appearances together explain it. A missing body alone looks like a robbery. Sightings alone, with the body still in its grave, would have been taken for visions.",
+        ],
+      },
+      {
+        heading: "The strongest reply",
+        body: [
+          "The strongest reply is Hume's, and it was never about the evidence. He imagined every historian of England agreeing that Queen Elizabeth died on the first of January 1600, was seen by her physicians and the whole court before and after her death, and after a month in the grave appeared again, took back the throne and governed for three years. Even then, he wrote, he \"should not have the least inclination to believe so miraculous an event.\" That is candid of him. It shows that in a case like this no testimony could move him, because the conclusion was fixed by a judgment, made in advance, about what kind of world this is.",
+          "Part of that is right. The dead do stay dead, and the disciples knew it as well as Hume did, which is why they didn't believe the women. But the claim was never that a corpse revived by some natural process. Peter told the crowd in Jerusalem, \"God raised him up, loosing the pangs of death, because it was not possible for him to be held by it\" (Acts 2:24). As a natural event the resurrection is about as unlikely as anything can be. Whether it is unlikely as an act of God depends on whether there is a God, and that is a question history can't settle. It has its own page, \"Does God actually exist?\" If there is no God, some natural explanation must be true, however strained. If there is, the explanation that fits the evidence is no longer ruled out in advance.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "History can't prove the resurrection. Its tools are built to tell us what usually happens, and this is by definition what doesn't. What it can do is more modest. It won't carry anyone to faith, but it can move a person from dismissing the claim to weighing it. Matthew admits that when the eleven saw the risen Jesus on a mountain in Galilee, \"they worshiped him, but some doubted\" (Matthew 28:17). The Gospels didn't hide that doubt, and I don't need to either.",
+          "You can weigh it all and still conclude it did not happen. That is a respectable place to stand. Reaching that conclusion without doing the work isn't, and that's where I lived for years. Paul didn't soften what follows if the body stayed in the grave: \"your faith is futile and you are still in your sins\" (1 Corinthians 15:17). The tomb sat in a city that wanted the movement dead and had only to produce a body. They never did. The matter was supposed to be closed on a Friday. It would not stay closed.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "N. T. Wright", title: "The Resurrection of the Son of God", year: "2003" },
+      { author: "Michael R. Licona", title: "The Resurrection of Jesus: A New Historiographical Approach", year: "2010" },
+      { author: "Dale C. Allison Jr.", title: "The Resurrection of Jesus: Apologetics, Polemics, History", year: "2021", note: "A Christian scholar who grants the skeptic more than most." },
+      { author: "E. P. Sanders", title: "The Historical Figure of Jesus", year: "1993" },
+      { author: "Michael F. Bird, Craig A. Evans and others", title: "How God Became Jesus", year: "2014" },
+      { author: "David Hume", title: "Of Miracles", in: "Philosophical Essays concerning Human Understanding, later titled An Enquiry Concerning Human Understanding", year: "1748" },
+      { author: "Gerd Lüdemann", title: "The Resurrection of Jesus: History, Experience, Theology", year: "1994", note: "A scholar who did not believe Jesus rose, arguing for visions." },
+      { author: "Bart D. Ehrman", title: "How Jesus Became God", year: "2014", note: "The best popular case against." },
     ],
     essaySlug: "did-the-resurrection-happen",
     essayTitle: "Did the Resurrection Actually Happen?",
