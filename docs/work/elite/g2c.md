@@ -160,3 +160,15 @@ Stopped at a clean guide boundary after the-image-of-god, to leave room for the 
 
 - The Lord's Prayer: "I was raised without a father, and I know what that word can do" is used once, in session 1, where the word Father is the subject. The old guide used atheism, fatherlessness and five sons together as credentials four times; those are gone. "I have" and "I do" confessions (wandering mind, lying awake over tomorrow) carry the old guide's self-implication in plain form; whether they're true of him as he'd say them is his to confirm.
 - The Parables: "I came to faith from atheism, and I remember thinking something like that" (that a God who hides truth in riddles is unfair) is used once, in session 1. The remembered thought is an inference from the old guide's framing, not something he has told us; he may want to keep, change or cut it.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,640 tests).
+
+### Not done or not verified (sixth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Heidelberg Q&A 126 and Calvin's means-and-end answer paraphrased from memory of the texts, not checked against a copy.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-parables, to leave room for the gates and the push. Next in order: **the-psalms** (abuse and sexual-assault help topics in sensitive-pages.json), then the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
