@@ -522,6 +522,18 @@ const HUB_LISTINGS = {
       ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
     ];
   } },
+  // Every reading plan on /study/plans, opening the plan itself.
+  "/study/plans": { label: "Bible reading plans", cap: 20, load: () => {
+    const d = readJsonSafe("client/src/data/bible-reading-plans.json") || {};
+    const fam = readJsonSafe("client/public/family-reading-plans.json") || [];
+    return [
+      { title: "The Bible in a year, 2027", href: "/study/bible/guides/whole-story-2027", blurb: "365 days, every chapter in the order the story happened." },
+      ...(d.plans || []).map((p) => ({ title: p.title, href: `/downloads/reading-plans/${p.id}-letter.pdf`, blurb: `${p.days} days. A chart to print.` })),
+      { title: "Proverbs in 31 Days", href: "/tools/proverbs-31", blurb: "31 days, a chapter a day." },
+      { title: "The Bible's story", href: "/study/bible/story", blurb: "The whole Bible as one story in eleven parts, at your own pace." },
+      ...(Array.isArray(fam) ? fam : []).map((p) => ({ title: p.title, href: "/family/reading-plans", blurb: `${p.days.length} days. For the family: ${String(p.audience).toLowerCase()}.` })),
+    ];
+  } },
   // Every question on /topics, opening the page it opens today.
   "/topics": { label: "Topics", cap: 40, load: () => {
     const d = readJsonSafe("client/public/topics/index.json");
