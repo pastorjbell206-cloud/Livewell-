@@ -117,3 +117,30 @@ Stopped at a clean guide boundary after the-church, to leave room for the gates 
 
 - The Captive Church: the old guide called itself "drawn from James Bell's book The Captive Church". That book is not on the three-book shelf, so the plug is gone. If the book is real and should be named, or if he wants the guide pointed at When God Bless America Replaces Thy Kingdom Come (which is on the shelf), that is his call. No memory of his own was added; the first-person confessions (wanting the shortcut, excusing his own side) are kept in plain form from the old guide.
 - The Church: the guide says "I'm a pastor" and "I've failed the church in my own ways" and "I've felt the pull toward the door ... over ordinary disappointment", all carried from the old guide's self-implication. Whether those sentences are true of him as he would put them is his to confirm or rewrite.
+
+## Fifth run (the-creeds, the-image-of-god)
+
+- **the-creeds** (done): words 22,992 to 19,556; teaching 3,866 to 3,568. "Bell" 6 to 0; "honest" 37 to 5; "Leader to confirm" 3 to 0; contractions 65 to 476. Quotations: Gregory of Nazianzus's "that which He has not assumed He has not healed" now quoted exactly from Letter 101 (checked by search); the Arian slogan and the creed texts kept. No quotation added. Corrected: Athanasius's portrait image (the old guide had it backward); timeline order (Marcion, 144, had sat after the second-century creed) and loose dates; "seventeen centuries" to "more than sixteen"; 1 Timothy 3:16 now includes "we confess". Cut: the FAQ about the writer's atheism; four "Bell says" questions reworded; three "Leader to confirm" notes replaced by dates. Help: none needed (no help topic for this guide). Biography: "came to faith from atheism" once, session 1 teaching, where it speaks to how the word creed sounds from outside; five other uses as credential removed.
+- **the-image-of-god** (done): words 25,979 to 19,884; teaching 5,210 to 4,082. "Bell" 24 to 0; "honest" 32 to 3; "Leader to confirm" 3 to 0; contractions 84 to 467. Quotations: Lewis's two lines from "The Weight of Glory" now quoted exactly and dated (checked by search); Calvin kept as paraphrase. No quotation added. Corrected: the broad and narrow image is later Reformed language, not Calvin's own; Calvin, Augustine, Aquinas, Bonhoeffer and Paul dated; "only the king" softened. Cut: a placeholder Westermann entry; the FAQ about the writer's method; "raised without a father" and "five sons" as credentials. Help: the abuse help topic in sensitive-pages.json is untouched; sessions 3 and 5 now point the leader to the printed help information and the primer names Find Help. Biography: atheism once, session 1 teaching.
+
+### What I ran (fifth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" appears only in Titus 2:13 and inside Lewis's quoted sentence. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-creeds (Gregory), 1 for the-image-of-god (Lewis).
+
+### What only James can supply (fifth run)
+
+- The Creeds: "I came to faith from atheism, so I know how the word creed can sound from outside" is used once, in session 1. Whether he wants to say more is his call.
+- The Image of God: atheism used once, in session 1, beside the reduction. The old summary named his fatherlessness and five sons as credentials; both are gone. "That includes me" in session 5 keeps the old guide's self-implication; nothing else of his was added.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,640 tests).
+
+### Not done or not verified (fifth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-image-of-god, to leave room for the gates and the push. Next in order: **the-lords-prayer**, then the-parables, the-psalms, the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
