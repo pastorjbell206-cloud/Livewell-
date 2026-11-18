@@ -1,7 +1,6 @@
-import { Link } from "wouter";
-import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import FaqPage from "@/components/FaqPage";
 
 const FAQ_ITEMS = [
   {
@@ -77,7 +76,6 @@ const breadcrumbSchema = {
 };
 
 export default function IsBibleHistoricallyAccurate() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
     <Layout>
@@ -87,72 +85,14 @@ export default function IsBibleHistoricallyAccurate() {
         keywords="is the Bible historically accurate, Bible archaeology, Bible contradictions, who wrote the Bible, Bible manuscripts, Bible canon, Bible reliability"
         structuredData={[faqSchema, webPageSchema, breadcrumbSchema]}
       />
-
-      <section style={{ background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px 64px", textAlign: "center" }}>
-        <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>PEOPLE ALSO ASK</p>
-        <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-          Is the Bible historically accurate?
-        </h1>
-        <p style={{ fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "560px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 }}>
-          The evidence is stronger than skeptics admit and more complex than fundamentalists want, and neither side is well served by pretending otherwise.
-        </p>
-      </section>
-
-      <section style={{ background: "var(--bone)", padding: "80px 24px" }}>
-        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>8 QUESTIONS ANSWERED</p>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {FAQ_ITEMS.map((item, i) => (
-              <div key={i} style={{ borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} aria-expanded={openFaq === i} style={{ width: "100%", textAlign: "left", padding: "20px 0", display: "flex", justifyContent: "space-between", alignItems: "center", background: "none", border: "none", cursor: "pointer" }}>
-                  <h2 style={{ fontFamily: "var(--F)", fontSize: "20px", fontWeight: 400, color: "var(--ink)", margin: 0 }}>{item.question}</h2>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "18px", color: "var(--ink-muted)", flexShrink: 0, marginLeft: "16px", transition: "transform 200ms var(--ease)", transform: openFaq === i ? "rotate(45deg)" : "none" }}>+</span>
-                </button>
-                {openFaq === i && (
-                  <div style={{ paddingBottom: "24px" }}>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", lineHeight: 1.75, maxWidth: "64ch" }}>{item.answer}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section style={{ background: "var(--charcoal)", padding: "80px 24px" }}>
-        <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard)", marginBottom: "24px" }}>GO DEEPER</p>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" }}>Read the full essay</h2>
-          <p style={{ fontFamily: "var(--U)", fontSize: "15px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "48ch", marginLeft: "auto", marginRight: "auto" }}>
-            The full article traces the manuscript evidence, the archaeological record, and the scholarly consensus with the rigor these questions deserve.
-          </p>
-          <Link href="/answers" style={{ textDecoration: "none" }}>
-            <span style={{ display: "inline-block", background: "var(--bone)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.06em", padding: "15px 32px", borderRadius: "2px", borderBottom: "2px solid var(--mustard)" }}>
-              Read the full article
-            </span>
-          </Link>
-        </div>
-      </section>
-
-      <section style={{ background: "var(--bone-warm)", padding: "64px 24px" }}>
-        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--mustard-text)", marginBottom: "24px" }}>RELATED QUESTIONS</p>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            {[
-              { label: "Does God exist?", href: "/faq/does-god-exist" },
-              { label: "Can science and faith coexist?", href: "/faq/can-science-and-faith-coexist" },
-              { label: "What is deconstruction?", href: "/faq/what-is-deconstruction" },
-            ].map((link) => (
-              <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
-                <div style={{ padding: "16px 0", borderBottom: "1px solid rgba(0,0,0,0.08)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 400, color: "var(--ink)" }}>{link.label}</span>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--mustard-text)" }}>Read</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FaqPage
+        path="/faq/is-the-bible-historically-accurate"
+        title="Is the Bible historically accurate?"
+        line="The evidence is stronger than skeptics admit and more complex than fundamentalists want, and neither side is well served by pretending otherwise."
+        items={FAQ_ITEMS}
+        more={{ title: "Read the full essay", text: "The full article traces the manuscript evidence, the archaeological record, and the scholarly consensus with the rigor these questions deserve.", href: "/answers", label: "Read the full article" }}
+        related={[{ label: "Does God exist?", href: "/faq/does-god-exist" }, { label: "Can science and faith coexist?", href: "/faq/can-science-and-faith-coexist" }, { label: "What is deconstruction?", href: "/faq/what-is-deconstruction" }]}
+      />
     </Layout>
   );
 }
