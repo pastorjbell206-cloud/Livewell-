@@ -41,8 +41,11 @@ Each guide was rewritten whole by the pilot's method: same slug, title, sessions
 | anxiety | 20,290 / 13,753 | 28 / 0 | 34 / 5 | 5 / 0 | Kept: Augustine's restless heart. Paraphrased: none. Cut: none | Burroughs's Rare Jewel 1648 (not 1656); Kierkegaard's Concept of Anxiety 1844 replaces his death date; Welch's fear-of-man book title corrected; Luke 22:44 now carries its manuscript note and the argument rests on Mark 14:33-34 |
 | attention | 26,873 / 17,710 | 21 / 0 | 34 / 1 | 4 / 0 | Paraphrased: Weil on attention and prayer; Augustine's restless heart named, not quoted. Cut: none | Wilson 2014 shock study corrected (6 to 15 minutes; one experiment); 1 Kings 19:12 to the ESV wording; Sinai and Psalms dates; smartphone dates |
 | baptism-and-communion | 24,935 / 17,795 | 27 / 0 | 56 / 5 | 4 / 0 | Kept: Augustine's "a kind of visible word" (searched). Paraphrased: Athanasius. Cut: none | Augustine source corrected to Tractates on John 80; 1 Peter 3:21 and John 6:63 to ESV wording; Didache date; Corinthian reconstruction marked as reconstruction |
+| believe | 22,388 / 15,897 | 34 / 0 | 103 / 13 | 6 / 0 | Kept: Bonhoeffer's "come and die" (English translation); Twain's schoolboy line. Paraphrased: Lewis's trilemma and "reluctant convert". Cut: none | Minimal facts and apostles' deaths stated accurately; Psalm 19:1 and 1 Corinthians 15:3-4 to ESV; atheism used once, fatherless line cut |
 
 Help lines: aging-and-legacy and anxiety each keep their three 988 sentences unchanged and in place; anger keeps its domestic-violence and "never return to harm" sentences unchanged. Checked by script against the old files.
+
+Converter fix (2026-11-18, second run): the YAML-to-JSON step had wrapped some quoted values (timeline years, quote cards) in literal single quotes in five earlier guides; stripped in a separate commit, and the converter fixed.
 
 Contractions rose from about 70 to 110 per guide to about 410 to 520. Forbidden-word search (CLAUDE.md list plus the rulebook words) is clean except for a session title James's guide already carried ("Anger Is a Signal, Not a Verdict") and one book title (Brauns, Unpacking Forgiveness). No em-dashes; no exclamation points outside quoted Scripture.
 

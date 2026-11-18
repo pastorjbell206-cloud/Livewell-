@@ -165,3 +165,26 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Vander Zee (2004), Letham (2001), Ferguson (2009), Wright ed. Three Views (2009), Smith (2009), Fee (1987), N. T. Wright, Calvin, Justin, Didache | Known | Kept; four "Leader to confirm" notes removed |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help lines | Old guide had none | None added |
+
+## believe
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Believe" | Believe is on the three-book shelf (client/src/lib/bookShelf.ts) | Kept, now in his voice ("my book Believe") in the summary; promo says "the book Believe" |
+| He came to faith from atheism (used five times); raised without a father (used three times) | Confirmed biography; brief allows one use | Atheism kept once, in session 1's teaching where the argument turns on it. Fatherless line cut; the pastoral point that "Father" is not an easy word for everyone kept without biography |
+| Narrator "Bell" lines; FAQ "Why does the study keep implicating the writer" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| Lewis, "poached egg ... Devil of Hell" (Mere Christianity) | Known; the original sentence carries em-dashes | Paraphrased with the book named; "liar, lunatic, or Lord" kept as the usual summary |
+| Lewis, "most reluctant convert in all England"; "kicking and struggling" | Known (Surprised by Joy) | Paraphrased, book named |
+| Bonhoeffer, "When Christ calls a man, he bids him come and die" | Known (English translation of Nachfolge, 1937); executed April 1945 | Kept, marked as the English translation's line |
+| Twain, faith is "believing what you know ain't so" | Known (Following the Equator, a schoolboy's definition) | Kept, source named |
+| Aquinas's five "ways"; Anselm, faith seeking understanding; Hume; Plantinga | Known | Kept |
+| "Historians agree" the tomb was found empty (minimal facts) | Overstated: Habermas's minimal-facts list does not include the empty tomb | Corrected: "many, though not all, also accept that the tomb was found empty"; Habermas named |
+| Apostles "flogged and crucified and beheaded, one after another" | Overstated: Scripture records James killed (Acts 12:2) and the apostles beaten (Acts 5:40); Peter and Paul's deaths rest on early tradition | Restated from Acts plus "early Christian tradition holds" |
+| A stone "that took several men to move"; "professional executioners did not make mistakes" | Not in the text | Cut / softened |
+| Creed of 1 Corinthians 15 "dated by scholars to within a few years" | Common scholarly view, not unanimous | "Many scholars" |
+| Morison began trying to disprove the resurrection | His own account in the book | "By his own account" |
+| Psalm 19:1 "the sky proclaims the work of his hands" | Not the ESV | ESV: "the sky above proclaims his handiwork" |
+| Memory verse 1 Corinthians 15:3-4 "and he was buried, and he was raised" | Not the ESV | ESV wording restored |
+| Wright (2003), Bauckham (2006), Keller (2008, 2016), Strobel (1998, 2000), Chesterton (1908), Morison (1930), Ortlund (2020) | Known | Kept; six "Leader to confirm" notes removed |
+| Named case studies (Daniel, Renata, Marcus, Theo, Priya) told as real | No source | Names removed; reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
