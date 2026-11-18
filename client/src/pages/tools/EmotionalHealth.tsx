@@ -368,7 +368,7 @@ const AREA_GUIDES: Record<string, AreaGuide> = {
         ],
         next: [
           { kind: "Find help", title: "I can't forgive them", href: "/help/cant-forgive" },
-          { kind: "Care plan", title: "Eight Weeks Toward Setting Down the Debt", href: "/plans/forgiveness" },
+          { kind: "Care plan", title: "Eight Weeks Toward Forgiving Someone", href: "/plans/forgiveness" },
         ],
       },
     },
@@ -515,7 +515,7 @@ function getOverallInterpretation(totalScore: number): OverallBand {
       seekHelp: true,
       next: {
         lead: "For a season like this, there's an eight-week plan that starts where God started with Elijah, with bread and sleep, then moves to telling one person, letting a doctor look, and praying in the dark. Walking it alongside a counselor is wisdom, not weakness.",
-        cta: "Eight Weeks of Small Mercies",
+        cta: "Eight Weeks for When You Feel Empty",
         href: "/plans/empty",
       },
     };
@@ -536,7 +536,7 @@ function getOverallInterpretation(totalScore: number): OverallBand {
     },
     later: {
       lead: "Later, when you're ready for something slower, there's an eight-week plan for this season:",
-      title: "Eight Weeks of Small Mercies",
+      title: "Eight Weeks for When You Feel Empty",
       href: "/plans/empty",
     },
   };

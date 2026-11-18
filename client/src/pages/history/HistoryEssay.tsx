@@ -15,6 +15,8 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 interface Section { id: string; kicker?: string; title: string; body: string }
 interface Essay {
   slug: string; title: string; subtitle: string; era: string; dateRange: string;
+  /** The essay's first title, kept under the plain one. */
+  standfirst?: string;
   sections: Section[]; keyFigures?: { name: string; note: string }[]; sources?: { title: string; author: string }[];
 }
 
@@ -41,7 +43,7 @@ export default function HistoryEssay() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Church History`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/theology/history/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/theology/history" style={{ color: "inherit" }}>Church History</Link>
@@ -54,6 +56,7 @@ export default function HistoryEssay() {
               <Link href="/theology/history" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Church History library</Link>.
             </p>
           )}
+          {data?.standfirst && <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "clamp(20px, 2.6vw, 26px)", lineHeight: 1.25, color: "var(--charcoal-fg)", margin: "0 0 14px" }}>{data.standfirst}</p>}
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
         </div>
       </section>
@@ -69,7 +72,7 @@ export default function HistoryEssay() {
       ))}
 
       {data && (data.keyFigures?.length || data.sources?.length) ? (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--bone)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
           <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--s-5)" }}>
             {data.keyFigures?.length ? (
               <div>

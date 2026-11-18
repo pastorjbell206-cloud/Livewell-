@@ -316,7 +316,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "How-to", title: "How to Handle Money as a Couple", href: "/how-tos/wm-how-to-handle-money-as-a-couple" },
-          { kind: "Care plan", title: "Eight Weeks Toward Each Other", href: "/plans/marriage" },
+          { kind: "Care plan", title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage" },
           { kind: "Wisdom", title: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
         ],
       },

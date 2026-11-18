@@ -200,7 +200,7 @@ describe("/writing/:slug off the shelf", () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
     renderEssay("/writing/what-render-unto-caesar-actually-means");
 
-    expect(screen.getByRole("heading", { level: 1, name: "What Render Unto Caesar Actually Means" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "What Did Jesus Mean by \"Render Unto Caesar\"?" })).toBeInTheDocument();
     expect(screen.getByText(/James is revising this essay/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Read the essays" })).toHaveAttribute("href", "/writing");
     expect(screen.getByRole("link", { name: /Go to Faith and Power/ })).toHaveAttribute("href", "/writing?section=faith-and-power");

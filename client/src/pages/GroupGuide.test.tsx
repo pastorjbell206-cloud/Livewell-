@@ -76,7 +76,7 @@ describe("/group-guide/:slug", () => {
 
     expect(screen.getByRole("link", { name: "Read the essay" })).toHaveAttribute("href", "/writing/how-christianity-became-an-empire");
     expect(screen.getByText(/Read the essay first/)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "The Anabaptist Option" })).toHaveAttribute("href", "/writing/the-anabaptist-option");
+    expect(screen.getByRole("link", { name: "Who Were the Anabaptists, and Why Do They Still Matter?" })).toHaveAttribute("href", "/writing/the-anabaptist-option");
     // The other suggestion is still off the shelf.
     expect(document.querySelector('a[href="/writing/the-death-of-christendom"]')).toBeNull();
   });

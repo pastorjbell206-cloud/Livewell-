@@ -2,7 +2,7 @@
   "essays": [
     {
       "slug": "the-apostolic-age",
-      "title": "The Apostolic and Sub-Apostolic Age",
+      "title": "The First Christians: From Pentecost to the Generation After the Apostles",
       "blurb": "From Pentecost to the generation after the apostles. How a scattered, persecuted movement stayed one body across distance, and what held it together before the New Testament was gathered.",
       "era": "The Apostolic Age",
       "dateRange": "c. AD 30-150"
@@ -16,31 +16,31 @@
     },
     {
       "slug": "the-desert-and-the-rule",
-      "title": "The Desert and the Rule",
+      "title": "The First Monks: Why Christians Went to the Desert",
       "blurb": "Antony walked out of a village church and into the desert, and monasticism was born. How the church kept a full-price faith on offer once believing became easy, and what Benedict built from it.",
       "era": "The Age of the Councils",
       "dateRange": "c. AD 270-547"
     },
     {
       "slug": "the-constantinian-turn",
-      "title": "The Constantinian Turn",
+      "title": "When Rome Became Christian: Constantine and What It Cost",
       "blurb": "A cross in the sky in 312, and the church woke up favored. What it gained, what it traded, and why the question it raised has never closed.",
       "era": "The Age of the Councils",
       "dateRange": "AD 312-430"
     },
     {
-      "slug": "the-fathers-at-work",
-      "title": "The Fathers at Work",
-      "blurb": "The councils wrote the creeds, but the doctrine was carried between the meetings, in exiles, letters, famine relief, and one long fight over grace. The people who did the work.",
-      "era": "The Age of the Councils",
-      "dateRange": "AD 325-430"
-    },
-    {
       "slug": "the-great-councils",
-      "title": "The Great Councils",
+      "title": "Nicaea to Chalcedon: The Councils That Wrote the Creeds",
       "blurb": "Nicaea, Constantinople, Ephesus, Chalcedon. The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story.",
       "era": "The Age of the Councils",
       "dateRange": "AD 325-451"
+    },
+    {
+      "slug": "the-fathers-at-work",
+      "title": "The Church Fathers: The Teachers Who Carried the Faith Between the Councils",
+      "blurb": "The councils wrote the creeds, but the doctrine was carried between the meetings, in exiles, letters, famine relief, and one long fight over grace. The people who did the work.",
+      "era": "The Age of the Councils",
+      "dateRange": "AD 325-430"
     },
     {
       "slug": "the-church-that-outlived-rome",
@@ -51,14 +51,14 @@
     },
     {
       "slug": "the-east-west-schism",
-      "title": "The East and West Divide",
+      "title": "Why the Catholic and Orthodox Churches Split in 1054",
       "blurb": "The slow drift between Greek East and Latin West. Language, authority, the disputed clause in the creed, and the events of 1054. Told fairly to both sides.",
       "era": "The Early Medieval Church",
       "dateRange": "to AD 1054"
     },
     {
       "slug": "the-medieval-west",
-      "title": "The Medieval West",
+      "title": "The Church in the Middle Ages",
       "blurb": "From the reforming monks to the eve of Wittenberg. Papal power at its height, the cathedrals and the universities, the crusades and the inquisition, and the long refusal of reform that made Luther possible.",
       "era": "The High Medieval Church",
       "dateRange": "AD 1054-1517"
@@ -79,7 +79,7 @@
     },
     {
       "slug": "the-awakenings",
-      "title": "The Awakenings and the Birth of Evangelicalism",
+      "title": "The Great Awakening and Where Evangelicals Came From",
       "blurb": "Pietism, Edwards, Whitefield, and the Wesleys. How revival remade the faith of the English-speaking world, with the ledger of the revivalists and slavery kept open and honest.",
       "era": "The Modern and Global Church",
       "dateRange": "c. AD 1730-1791"
@@ -93,7 +93,7 @@
     },
     {
       "slug": "the-global-church",
-      "title": "The Modern Church and the Global Shift",
+      "title": "The Church Since 1900: How Christianity Moved South and East",
       "blurb": "The fundamentalist and modernist split, the churches under the dictators, Barmen and Bonhoeffer, the fire from Azusa Street, and the great reversal that moved the faith's center south.",
       "era": "The Modern and Global Church",
       "dateRange": "AD 1900 to today"
@@ -114,7 +114,7 @@
     },
     {
       "slug": "the-long-middle",
-      "title": "The Long Middle",
+      "title": "Nine Hundred Years: The Church from Rome's Fall to the Reformation",
       "blurb": "Nine hundred years between the empire's collapse and the Reformation's spark. Neither a dark age nor a golden one — the centuries when the church held everything, and nearly lost itself.",
       "era": "Medieval",
       "dateRange": "AD 590–1517"
@@ -128,28 +128,28 @@
     },
     {
       "slug": "awakenings-and-enlightenment",
-      "title": "Awakenings and Enlightenment",
+      "title": "Revival and Reason: The Church from 1648 to 1800",
       "blurb": "From the exhaustion of Westphalia to the first religious free market. Pietism's answer to cold orthodoxy, the Enlightenment's rival account, Edwards and Whitefield and Wesley, and the forging of the tools America would later mistake for the move of God.",
       "era": "Modern",
       "dateRange": "AD 1648-1800"
     },
     {
       "slug": "the-american-experiment",
-      "title": "The American Experiment",
+      "title": "How Christianity Became American, 1800 to 1950",
       "blurb": "From Cane Ridge to the fundamentalist and modernist rupture. How the American church learned to engineer revival, married the market and the flag, and split rather than release the enslaved, and the church that kept the faith through all of it.",
       "era": "Modern",
       "dateRange": "AD 1800-1950"
     },
     {
       "slug": "the-attractional-era",
-      "title": "The Attractional Era",
+      "title": "The Megachurch Years, 1950 to 2010",
       "blurb": "From a tent in Los Angeles to the megachurch's high noon. How American Christianity learned to produce a crowd, what the production did to the message, and the honest audit that ended the era's confidence.",
       "era": "Modern",
       "dateRange": "AD 1950-2010"
     },
     {
       "slug": "after-christendom-era",
-      "title": "After Christendom",
+      "title": "The Church After Christian America, 2010 to Today",
       "blurb": "The era the reader is standing in. The dechurching, the deconstruction, the reckonings, and the end of the church's home-field advantage in the West, written from inside, with the ending unwritten.",
       "era": "Modern",
       "dateRange": "AD 2010-present"

@@ -50,7 +50,7 @@ const STARTING_POINTS = [
     },
     instead: {
       href: "/studyguides/deep-roots",
-      title: "Deep Roots: A Bible Study for Faith Beyond Slogans",
+      title: "Deep Roots: A Bible Study on the Basics of the Faith",
       blurb: "A five-session study on the doctrines we recite without using, the church we forgot we owe, and the single story Scripture has been telling all along.",
     },
   },

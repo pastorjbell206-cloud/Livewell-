@@ -178,7 +178,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "Self-check", title: "Marriage Health Self-Check", href: "/tools/marriage-assessment" },
-          { kind: "Care plan", title: "Eight Weeks Toward Each Other", href: "/plans/marriage" },
+          { kind: "Care plan", title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage" },
           { kind: "How-to", title: "How to Repair After a Blowup", href: "/how-tos/marriage-how-to-repair-after-blowup" },
         ],
       },
