@@ -140,7 +140,7 @@ every quoted verse against the Study Bible's text.
   `validate-worlds`, `validate-no-emdash`, `validate-links`,
   `validate-design` and the search-index and passage-index drift checks:
   all passed.
-- `pnpm test`: 145 files passed, 7 skipped; 1,644 tests passed, 73 skipped.
+- `pnpm test`: 146 files passed, 7 skipped; 1,651 tests passed, 73 skipped (after the second merge; the gates and `pnpm check` were rerun then too).
   The world page test and the route smoke test passed again after the last
   edits.
 - ESLint on every changed source file: clean.
