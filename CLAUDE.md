@@ -489,14 +489,14 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (34
+On every PR, five blocking steps: `pnpm check` → the content-gates step (35
 commands: 25 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
 workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
 bible-notes; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
-index, Bible text, Bible word search and the 2027 story plan) → `pnpm test` →
+index, passage index, Bible text, Bible word search and the 2027 story plan) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.
@@ -754,3 +754,26 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   against Vercel previews, not local runs.
 - **PDFs**: `scripts/build-pdfs.mjs` (pdfkit) renders context guides and
   sermon series to `client/public/downloads/`; rerun after content changes.
+- **The art kit and one page top (2026-11-18)**: pages are built from
+  `client/src/components/art/` (one engraved hand; README says how a door's
+  page is built). Every page top is `PageHead` (`size="door"` or `"inner"`);
+  `components/editorial/PageHead.tsx` is a thin wrapper over it.
+- **A page for each Honest Answer (2026-11-18)**: `/answers/<slug>` (35
+  pages, each prerendered with its own head); `/answers#<slug>` opens the
+  answer's page. No answer's wording changes with its page.
+- **How to study, and the guided chapter study (2026-11-18)**:
+  `/study/how-to-study` and the seven-step walk on a chapter (`?study=walk`,
+  `ChapterWalk.tsx`) share one method, `lib/study-method.ts`. The walk shows
+  only the chapter's own files and keeps its place in `livewell-study-walk-v1`.
+- **/skeptics (2026-11-18)**: "For skeptics", the Questions door's room for
+  the skeptic: the Test the Case cases, the "Is it true?" answers, and longer
+  reading. `/skeptic-track` is a separate page and stays.
+- **/james (2026-11-18)**: a permanent one-hop redirect to /connect (Find
+  James), in `vercel.json` with a `redirectTo` stub in `App.tsx`.
+- **The passage index (2026-11-18)**: `scripts/build-passage-index.mjs`
+  writes one file per chapter under `client/public/index/chapters/`, read by
+  "Go deeper" on a chapter and by the walk's last step. Rerun it after a
+  library's references change; CI drift-checks it.
+- **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
+  the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
+  local run measure alike.
