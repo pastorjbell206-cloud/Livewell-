@@ -105,3 +105,14 @@
 .tc-card dt{margin:0 0 4px;font-family:var(--U);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mustard-text)}
 .tc-card dd{margin:0}
 @media (max-width:760px){.tc-table{display:none}.tc-cards{display:block}}
+
+/* On a phone the small plate sits beside the label and the title only; the
+   line and anything under it take the full width, so a long line is not
+   squeezed into a narrow column beside the picture. */
+@media (max-width:760px){
+  .lw-inner.pg-head--art .pg-head__inner{grid-template-columns:minmax(0,1fr) 84px;column-gap:var(--s-2)}
+  .lw-inner.pg-head--art .pg-head__words{display:contents}
+  .lw-inner.pg-head--art .pg-head__inner>*,.lw-inner.pg-head--art .pg-head__words>*{grid-column:1 / -1}
+  .lw-inner.pg-head--art .pg-head__eyebrow,.lw-inner.pg-head--art .pg-head__title{grid-column:1}
+  .lw-inner.pg-head--art .pg-head__art{grid-column:2;grid-row:1 / span 2;align-self:start;margin-top:0}
+}

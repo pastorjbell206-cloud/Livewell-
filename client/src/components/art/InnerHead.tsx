@@ -26,7 +26,7 @@ export function PlaceLabel({ place }: { place: PagePlace }) {
   );
 }
 
-export default function InnerHead({ path, place, ...rest }: Omit<PageHeadProps, "door" | "doorHref" | "size"> & { path: string; place?: PagePlace }) {
+export default function InnerHead({ path, place, className, ...rest }: Omit<PageHeadProps, "door" | "doorHref" | "size"> & { path: string; place?: PagePlace }) {
   const where = place ?? placeFor(path);
-  return <PageHead {...rest} size="inner" door={where ? <PlaceLabel place={where} /> : undefined} />;
+  return <PageHead {...rest} size="inner" className={`lw-inner${className ? ` ${className}` : ""}`} door={where ? <PlaceLabel place={where} /> : undefined} />;
 }
