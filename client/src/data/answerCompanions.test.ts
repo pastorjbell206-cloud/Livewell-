@@ -6,7 +6,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { ANSWERS } from "./answers";
-import { ANSWER_VIEWS, companionsFor } from "./answerCompanions";
+import { ANSWER_CARE, ANSWER_VIEWS, companionsFor } from "./answerCompanions";
 import { caseBySlug } from "./argumentCases";
 import { DOCTRINE_INDEX } from "@/lib/theology";
 import { findAnswers } from "@/lib/findAnswers";
@@ -19,6 +19,17 @@ describe("answer companions", () => {
       expect(ANSWERS.some((a) => a.slug === slug), slug).toBe(true);
       if (v.compare) expect(DOCTRINE_INDEX.some((d) => d.slug === v.compare && d.ready), v.compare).toBe(true);
       if (v.whichView) expect(quizzes.some((q) => q.slug === v.whichView), v.whichView).toBe(true);
+    }
+  });
+
+  it("points the answers on fear, despair and harm to a real Find Help page, by its own title", () => {
+    for (const [slug, care] of Object.entries(ANSWER_CARE)) {
+      const answer = ANSWERS.find((a) => a.slug === slug);
+      expect(answer, slug).toBeTruthy();
+      const page = JSON.parse(readFileSync(resolve(__dirname, `../../public/needs/${care.slug}.json`), "utf8"));
+      expect(page.page, care.slug).toBe(true);
+      expect(page.title, care.slug).toBe(care.label);
+      expect(companionsFor(answer!).map((c) => c.href)).toContain(`/help/${care.slug}`);
     }
   });
 

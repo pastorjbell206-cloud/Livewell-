@@ -9,6 +9,8 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import { Markdown } from "@/components/Markdown";
+import { CrisisBlock } from "@/components/CrisisBlock";
+import { SENSITIVE_HOWTOS } from "@/lib/needs";
 
 const wrap = { maxWidth: "720px", margin: "0 auto" } as const;
 
@@ -75,6 +77,8 @@ export default function HowToArticle() {
               <div className="prose" style={{ fontFamily: "var(--font-reading)", fontSize: "var(--fs-read)", lineHeight: "var(--lh-read)", color: "var(--ink)" }}>
                 <Markdown>{article.body.replace(/^\s*#{1,6}\s+.*\r?\n+/, "")}</Markdown>
               </div>
+              {/* Guides on heavy subjects end with the way to reach a person now (data/sensitive-pages.json). */}
+              {SENSITIVE_HOWTOS[article.slug] && <CrisisBlock variant="compact" topics={["suicide", ...SENSITIVE_HOWTOS[article.slug]]} />}
 
               <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid rgba(20,17,12,0.1)", paddingTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
                 <Link href={`/how-tos?topic=${article.topic}`} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>More on {TOPIC_LABEL[article.topic] || article.topic}</Link>

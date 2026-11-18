@@ -3,8 +3,10 @@
  * pin that everyday phrasing finds the right need and that nothing matches on
  * filler words alone. (Scripture links are scripture-ref.test.ts.)
  */
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { describe, it, expect } from "vitest";
-import { NEED_RESULT_CAP, searchNeeds, type NeedEntry } from "./needs";
+import { NEED_RESULT_CAP, SENSITIVE_HOWTOS, searchNeeds, type NeedEntry } from "./needs";
 
 const need = (slug: string, title: string, askedAs: string[], rank: number): NeedEntry => ({
   slug, title, summary: title, askedAs, states: ["carrying"], sensitivity: "ordinary", page: true, rank,
@@ -41,5 +43,14 @@ describe("searchNeeds", () => {
   it("matches nothing on filler words or a single letter", () => {
     expect(searchNeeds("i", NEEDS)).toEqual([]);
     expect(searchNeeds("what does the bible say", NEEDS)).toEqual([]);
+  });
+});
+
+describe("how-to guides that carry the help block", () => {
+  it("names only how-to guides that exist", () => {
+    const index = JSON.parse(readFileSync(resolve(__dirname, "../../public/howtos/index.json"), "utf8"));
+    const slugs = new Set((index.articles as { slug: string }[]).map((a) => a.slug));
+    expect(Object.keys(SENSITIVE_HOWTOS).length).toBeGreaterThan(0);
+    for (const slug of Object.keys(SENSITIVE_HOWTOS)) expect(slugs.has(slug), slug).toBe(true);
   });
 });
