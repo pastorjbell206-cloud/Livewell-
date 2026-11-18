@@ -1,0 +1,27 @@
+/* Bible reading plans (/study/plans, BiblePlans.tsx). Tokens only. */
+.bp-sec{padding-top:var(--s-6)}
+.bp-filters{display:grid;gap:10px;margin-bottom:var(--s-4)}
+.bp-row{display:flex;flex-wrap:wrap;gap:8px}
+.bp-none{font-family:var(--U);font-size:16px;color:var(--ink-muted)}
+.bp-none button{min-height:44px;margin-left:8px;padding:0 14px;border:1.5px solid var(--ink);border-radius:var(--radius-sm);background:none;color:var(--ink);font:inherit;cursor:pointer}
+.bp-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-4)}
+.bp-card{display:flex;flex-direction:column;padding:var(--s-3);background:var(--card);border:1.5px solid var(--art-ink);box-shadow:5px 5px 0 var(--art-ink)}
+.bp-art{display:flex;align-items:center;height:96px;margin-bottom:var(--s-2);padding:12px;background:var(--art-paper);border:.75px solid var(--art-ink);overflow:hidden}
+.bp-days{display:block;height:100%;width:auto;max-width:100%}
+.bp-cell{stroke:var(--art-ink);stroke-width:.6}
+.bp-tone--clay{fill:var(--art-clay)}.bp-tone--olive{fill:var(--art-olive)}.bp-tone--blue{fill:var(--art-blue)}
+.bp-light{fill:var(--mustard)}
+.bp-len{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0;font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
+.bp-started{padding:2px 8px;border:1px solid var(--art-ink);letter-spacing:.06em;text-transform:none;font-size:12px;color:var(--ink)}
+.bp-title{font-family:var(--F)!important;font-weight:400;font-size:clamp(1.4rem,1.2rem + .6vw,1.75rem);line-height:1.1;letter-spacing:-.01em;color:var(--ink);margin:8px 0 6px;text-wrap:balance}
+.bp-for{flex:1;font-family:var(--U);font-size:15px;line-height:1.45;color:var(--ink-muted);margin:0 0 var(--s-3)}
+.bp-do{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.bp-go{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;background:var(--ink);color:var(--bone);border-bottom:3px solid var(--mustard);border-radius:var(--radius-sm);font-family:var(--U);font-weight:500;font-size:15px;text-decoration:none}
+.bp-alt{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1.5px solid var(--borderdk);border-radius:var(--radius-sm);font-family:var(--U);font-weight:500;font-size:14px;color:var(--ink);text-decoration:none}
+@media (max-width:1000px){.bp-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .bp-cards{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
+  .bp-card{box-shadow:3px 3px 0 var(--art-ink)}
+  .bp-row{flex-wrap:nowrap;overflow-x:auto;margin:0 calc(var(--gutter) * -1);padding:0 var(--gutter) 4px}
+  .bp-row .home-chip{white-space:nowrap}
+}

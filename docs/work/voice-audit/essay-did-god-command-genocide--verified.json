@@ -1,0 +1,45 @@
+{
+  "piece": "did-god-command-genocide",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: the essay is clean and reads like a person thinking. Literal search finds no forbidden word, no em-dash, no exclamation point outside quoted Scripture, no connective filler, no hedge, no title, years, book count or denomination, and the one biographical line ('I have five sons') does moral work. Three of the seven findings survive, all small: the helpline-sounding sentence, the coy reference to Copan and Flannagan's book, and a misplaced 'ourselves' in the closing question. The other four were 'consider' items whose replacements added a claim, cut the essay's one candid first-person line, blurred a pronoun, or removed a natural return to the title. Nothing new was found on the second pass.",
+  "keep": [
+    {
+      "quote": "If these chapters have shaken your own faith and it's weighing on you, you don't have to carry that by yourself.",
+      "tell": "Stock counseling line",
+      "why": "The paragraph has been stating the skeptic's reasoning in plain third person, and this sentence switches into the wording every helpline page uses ('weighing on you', 'you don't have to carry that by yourself'). The ledger shows it was written by a fixer in the final read (item 27), not by James. The path to help stays, with the link sentence after it unchanged; the new wording stays in the same paragraph, so nothing is restructured.",
+      "replacement": "If these chapters have shaken your own faith, talk it through with someone.",
+      "severity": "should"
+    },
+    {
+      "quote": "Paul Copan and Matthew Flannagan made that reading of Joshua central to a book under nearly the same title as this essay.",
+      "tell": "Circumlocution where a plain name belongs",
+      "why": "A person names the book. Talking around the title makes the reader guess what it is called, and the essay names Boyd's and Underhill's books outright a few paragraphs away. The title is verified in the ledger (Baker Publishing Group's page); no year or subtitle is added, and 'central to', the wording the final read settled on (item 21), is kept.",
+      "replacement": "Paul Copan and Matthew Flannagan made that reading of Joshua central to their book *Did God Really Command Genocide?*",
+      "severity": "should"
+    },
+    {
+      "quote": "whom we have quietly cast as Canaanites ourselves",
+      "tell": "Misplaced 'ourselves' in the closing question",
+      "why": "Not a machine tell, a stumble: on first read 'cast as Canaanites ourselves' says we are the ones cast as Canaanites. This is the sentence that turns the mirror, and it should not need a second read. Same words, one moved.",
+      "replacement": "whom we ourselves have quietly cast as Canaanites",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"Believers on the right and on the left both know how to do it.\" Dropped: the proposed replacement adds a new claim ('each side spots it faster in the other') that the essay does not make. The sentence is plain and short; only a real example from James would improve it (see for_james).",
+    "\"These are arguments among people who confess the same creeds ... I won't pretend the question is settled.\" Dropped: this is the one place the essay speaks as 'I' about the argument itself, and the governing standard allows turns like 'I have to be careful here.' Cutting it flattens a human moment for a small gain in economy.",
+    "\"The name Jesus is the Greek form of Joshua. The Greek translation of the Old Testament spells Joshua's name exactly as the Gospels spell the name of Jesus.\" Dropped: the two sentences state two different facts (the name's origin; the Septuagint's spelling), and the replacement's 'as the Gospels spell his' leaves 'his' unclear.",
+    "\"So did God command genocide? The Bible says he commanded Israel to destroy the peoples of Canaan\" Dropped: coming back to the title question once, at the end, is what a speaker does, and the paragraph is three sentences that land on Underhill. It answers; it does not recap.",
+    "First reader's instruction to set the help line as its own paragraph. Not applied: that restructures the paragraph. The wording change is kept in place."
+  ],
+  "added": [],
+  "for_james": [
+    "The essay implicates 'we' but never 'I'. In the paragraph that says lifelong churchgoers have never heard a sermon on 1 Samuel 15:3, one true line from you (have you preached that verse, or avoided it?) would make the essay only yours. Nobody wrote one, because it would be inventing your history.",
+    "\"Believers on the right and on the left both know how to do it\" names no case. If you have a real example from each side, a clause apiece would beat the general line. If the evidence is not symmetrical in your judgment, say so; your voice standard warns against symmetry the evidence doesn't support.",
+    "\"Anything we say about these verses should be something we could say aloud with a parent listening\" is close to Irving Greenberg's well-known rule about statements made in the presence of burning children. If that is where the thought came from, consider crediting him. His exact wording has not been verified, so no change is proposed.",
+    "Naming Copan and Flannagan's book adds its title to the essay. The title is verified in the claims ledger (Baker's page); the year and subtitle are not, so neither is given.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree here, and the governing standard was followed: the profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a screenshot line, and a 'Monday morning' block of three questions and a practice. This essay runs longer, in developed paragraphs with no application list, which is what VOICE-JAMES-BELL.md asks for. It was not pushed toward the profile.",
+    "The withheld sentence linking the Doctrine of Discovery essay is still out, per the ledger. Restore it word for word when that essay is public."
+  ]
+}

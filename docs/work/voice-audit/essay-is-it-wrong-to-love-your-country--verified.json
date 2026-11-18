@@ -1,0 +1,29 @@
+{
+  "piece": "is-it-wrong-to-love-your-country",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "verdict": "Second read confirms the first reader's literal checks: no em-dash, no forbidden word, every exclamation point inside quoted Scripture (Nehemiah 2:3, Psalm 137:5, Psalm 137:9), biography limited to the five sons, right and left criticized with the same instrument and the asymmetry stated. Of six findings, one survives. The other five either sit at a true hinge, do real work in the argument, or offered a replacement that was not clearly better than the original. Nothing was missed on the second pass that I would stake the essay on.",
+  "keep": [
+    {
+      "quote": "Love comes first, and the improvement follows. That is how Nehemiah loved a city in ruins.",
+      "tell": "Paragraph restates a quotation as a slogan (aphoristic two-beat gloss)",
+      "why": "Chesterton's own sentence, quoted immediately before (\"She was great because they had loved her\"), has just said exactly this. The gloss repeats it in a tidy balanced form, and the paragraph already has its landing in the Nehemiah line.",
+      "replacement": "That is how Nehemiah loved a city in ruins.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"Scripture keeps that verse, and it isn't there as a model. It is there because it is true to the human heart.\" Dropped: this is the hardest verse in the essay and a true hinge, the one place the plain 'not this, that' earns its keep. The proposed replacement changed almost nothing.",
+    "\"The worshiper believes it nearly is. The despiser never quite forgives the country for being only a country, a mixed and mortal thing.\" Dropped: the appositive is slightly literary, but it says what 'only a country' means (good and evil together, and not eternal), which the Revelation 21 argument depends on. Cutting it flattens a sentence doing work. Unsure, so left alone.",
+    "\"Contempt feels like moral seriousness. More often than its owners suspect, it is pride, and underneath the pride is ingratitude.\" Dropped: a 'consider' finding. The line is a diagnosis with content, and it leads into the next paragraph instead of closing the section.",
+    "\"What he did next sets the pattern for a Christian love of country: ...\" Dropped: a 'consider' finding. It is the plain signposting the brief lists among his habits, the colon introduces a Scripture quotation, and 'He writes,' would remove the claim the section is built on.",
+    "\"The Christian question is whether Scripture sorts it the same way, and I don't think it does.\" Dropped: it sounds like a man talking, and the next paragraph commits (\"The short answer is yes\"). Removing it makes the sentence less human."
+  ],
+  "added": [],
+  "for_james": [
+    "The five-sons paragraph is the most human moment in the piece and stays general (songs, stories, gratitude). One real detail only you have would lift it. None has been invented.",
+    "\"Perhaps you served, or your father did\" addresses the reader and claims nothing about you. Confirm you are comfortable with it.",
+    "\"She died that August.\" closes the Weil paragraph as a bare fact. It is accurate (ledger: August 1943). It reads a little like a dramatic kicker; your call whether it stays.",
+    "The first reader noted that the saved Substack profile (shorter length, word study, closing questions) and docs/VOICE-JAMES-BELL.md disagree and judged by the voice file. I did not open the Substack profile myself on this pass; I judged against VOICE-JAMES-BELL.md, BRIEF.md and CLAUDE.md."
+  ]
+}

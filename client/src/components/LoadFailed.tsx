@@ -20,6 +20,7 @@ export function LoadFailed({
   return (
     <div
       role="alert"
+      data-lw-failed
       style={{
         maxWidth: "480px",
         margin: "0 auto",

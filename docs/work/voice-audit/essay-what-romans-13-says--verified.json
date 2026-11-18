@@ -1,0 +1,42 @@
+{
+ "piece": "what-romans-13-says",
+ "human_score": 8.5,
+ "voice_score": 8,
+ "verdict": "Second read confirms the first reader's overall judgment: the essay is clean. Zero em-dashes, zero Forbidden Language hits, the one exclamation point is inside Daniel 6:21, headings are plain, antithesis runs about one per section, both readings are stated so the reader cannot tell where the writer lands, and the political examples fire both ways. Three small edits are worth making; four of the seven findings were preferences on sentences that are already working and are dropped.",
+ "keep": [
+  {
+   "quote": "[The love of country that Scripture assumes](/writing/what-christian-nationalism-is-and-is-not) knows the difference between honoring a government and belonging to it.",
+   "tell": "Aphoristic paragraph closer with a personified abstraction, added after the paragraph has already landed",
+   "why": "The paragraph ends honestly on 'Few of us can say we've never done it.' This line follows it to carry a link, and 'love ... knows the difference between X and Y' is a balanced epigram with an abstraction as its subject. The first reader's replacement keeps the link and the claim and loses the personification.",
+   "replacement": "[The love of country that Scripture assumes](/writing/what-christian-nationalism-is-and-is-not) can honor a government without belonging to it.",
+   "severity": "should"
+  },
+  {
+   "quote": "In the last section of the *Institutes* he appealed to Peter's words to the council in Jerusalem.",
+   "tell": "Vague framing sentence; a source cited without its point",
+   "why": "The paragraph stops on a citation and never says which words, so the reader does not learn why Calvin matters to the resistance case until Acts 5:29 is quoted two sections later. The ledger verifies that Institutes 4.20.32 cites Acts 5:29, and the essay already quotes that verse, so the added clause is a paraphrase of a fact already in the piece.",
+   "replacement": "In the last section of the *Institutes* he appealed to Peter's words to the council in Jerusalem, that we must obey God rather than men.",
+   "severity": "should"
+  },
+  {
+   "quote": "is disobedience to Scripture even when our policy disagreements are right.",
+   "tell": "Essay phrasing where speech would be plainer",
+   "why": "A disagreement is not right; a person is. Nobody says 'our policy disagreements are right' across a table, and this is the sentence where the essay presses hardest on the reader, so it should sound said.",
+   "replacement": "is disobedience to Scripture even when we're right about the policy.",
+   "severity": "should"
+  }
+ ],
+ "dropped": [
+  "\"And then he sets the whole thing in time.\" Dropped: a consider-level preference. The sentence is plain enough, it is the only such turn in the section, and the proposed 'Then he tells them what time it is' is a slightly different claim about Paul's text.",
+  "\"That fact cuts in both directions.\" Dropped: the sentence is not empty, because the next two sections pay it off (the obedience case leans on 'He wrote that under Nero', the resistance case on Mayhew's point that Paul was not describing Nero's character). Shortening the idiom would not address the first reader's own complaint.",
+  "\"First, honor, including honor for officials we did not vote for.\" Dropped: an unnumbered 'First' followed by 'Taxes are owed too' and 'So are our prayers' is how a person talks through a list, not a machine tell, and the replacement keeps the same implied ordering.",
+  "\"The phrase is close to the one Luther's Small Catechism uses ...\" Dropped: the replacement adds an interpretive claim ('which made thanking God for Hitler sound like ordinary piety') that is not in the ledger. The detail already does its work by position, between the Ansbach thanksgiving and the Night of the Long Knives."
+ ],
+ "added": [],
+ "added_note": "Second full read found nothing the first reader missed. The closing stack of one-line paragraphs matches the brief's approved ending shape and was left alone, as was the verdict line 'A reading of Romans 13 that changes when the party in office changes isn't really a reading of Romans 13.'",
+ "for_james": [
+  "The essay is fair and accurate but even-tempered throughout. If there was a real moment when you quoted Romans 13 for your side, or went quiet when it was quoted against your side, one or two plain sentences of that in the 'Romans 13 for Citizens Who Vote' section would make it unmistakably yours. Only you can supply it; nothing was invented.",
+  "'In an election season' (opening) and 'Whoever takes office in January' (ending) will date the essay after January 2027. Decide whether to keep them or make them timeless then.",
+  "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on shape (the profile asks for 1,500 to 2,500 words, 2-to-4-sentence paragraphs, a screenshot line, a real person's story and three Monday-morning questions). VOICE-JAMES-BELL.md governs, so the essay was not pushed toward the profile."
+ ]
+}

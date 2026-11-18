@@ -1,0 +1,39 @@
+{
+  "piece": "was-america-founded-as-a-christian-nation",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "verdict": "Second read confirms the first: clean. Literal search finds no Forbidden Language, no em-dash, one exclamation point inside Psalm 33:12. Three small edits kept, five 'consider' findings dropped as over-editing, nothing added. The kept replacements change no fact, name, date, quotation or reference in the ledger; the third replacement differs from the first reader's so that 'It says less' keeps a clear subject.",
+  "keep": [
+    {
+      "quote": "What does the Bible itself call a holy nation? The verse most often quoted",
+      "tell": "Question that repeats the heading directly above it; fourth self-answered question in the piece",
+      "replacement": "The verse most often quoted",
+      "severity": "should"
+    },
+    {
+      "quote": "has the Constitution to explain, and the Treaty of Tripoli, and the Baptists in Danbury, the Christians whose letter Jefferson answered with the wall.",
+      "tell": "Patched appositive: the sentence stops to re-identify the Baptists as 'the Christians', which reads as a correction bolted on rather than speech",
+      "replacement": "has the Constitution to explain, and the Treaty of Tripoli, and the Baptists in Danbury, whose letter Jefferson answered with the wall.",
+      "severity": "should"
+    },
+    {
+      "quote": "the feeling is worth examining. It says less about the founders than about where we have been looking for our security.",
+      "tell": "Counseling-register abstraction in the last paragraph, where he should sound most spoken; no contraction where speech has one",
+      "replacement": "it's worth asking why. The feeling says less about the founders than about where we've been looking for our security.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"largely by Christians who believed the gospel needed no help from the tax collector.\" Dropped: the clause gives the reason the Christians did it and 'tax collector' points back at Henry's assessment bill; cutting to 'largely by Christians.' flattens a sentence doing real work.",
+    "\"Who took these arrangements apart? Mostly not skeptics.\" Dropped: the clipped answer is how a person says it; the replacement is longer and no more human.",
+    "\"Their conclusion was blunt.\" Dropped: a four-word plain setup, not a performed turn; removing it runs the title sentence straight into the paraphrase.",
+    "\"A deeply Protestant people built a national government\" Dropped: an ordinary phrase, and 'overwhelmingly Protestant' without the body's 'in culture' shifts the claim from depth to headcount, against the essay's own 17 percent figure.",
+    "\"And they produced the Separate Baptists. Their leader, Shubal Stearns,\" Dropped: 'Their' reads to the nearest noun without trouble, and the replacement makes one overlong sentence."
+  ],
+  "added": [],
+  "for_james": [
+    "The saved Substack profile and docs/VOICE-JAMES-BELL.md disagree (profile: 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a screenshot line, a Greek or Hebrew word, three Monday-morning questions, and the .com domain). This essay follows VOICE-JAMES-BELL.md, which governs. Nothing was rewritten toward the profile.",
+    "Two places would only get more human with something real from you; nothing should be invented. 'You may have heard the episode told in church as proof of a praying Convention' and 'Preachers, and I'm one of them': if you have told the prayer story that way, or used a founder quotation that turned out false, one plain sentence saying so would be the strongest line in the essay. Otherwise leave both.",
+    "Open ledger items remain yours: Beecher's Autobiography may read 'upon' (the essay quotes only words every source shares), and Article 11's spellings should be copied from a printed text when one can be opened."
+  ]
+}

@@ -1,0 +1,179 @@
+{
+ "slug": "why-does-god-allow-suffering",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/why-does-god-allow-suffering.json (title, the excerpt as standfirst, and the Markdown body). I read it against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched that list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it by 5-word overlap with the other landed essays in /home/user/livewell-land/client/public/essays/, especially why-does-god-feel-far-away, which landed in the same commit and covers the same Job, Lewis and lament ground. I also compared it with the /help/grief page it links to. Every quoted string below occurs exactly once in the body. Applied together on a scratch copy, the fixes leave no em-dash, no exclamation point and no forbidden word, and bring the prose to about 3,540 words. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "The Oldest Form of the Argument, last paragraph, third sentence: \"I came to faith as an adult, out of atheism, and I have never thought the people who press this question are only being clever.\"",
+   "problem": "The biography is confirmed, but this clause has become a shelf stamp. did-the-resurrection-happen (\"I came to faith as an adult, out of atheism, so I don't assume ...\") and why-does-god-feel-far-away (\"I came to faith as an adult, out of atheism, so I don't think that answer is stupid\") carry the identical clause. Both are Doubt essays landed in the same commit as this one. The /help/grief page this essay links to says \"I came to faith from atheism\" too. A reader who goes from one Doubt essay to the next meets James's single biographical sentence three times. In the same template each time (I was an atheist, so I respect the skeptic), it starts to read as a credential. The paragraph keeps its posture without it.",
+   "fix": "Replace with: \"I have never thought the people who press this question are only being clever.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Classic Answers Can Explain, last paragraph, second and third sentences: \"After his wife, Joy Davidman, died of cancer in July 1960, he published a short record of his grief, *A Grief Observed*, under the made-up name N. W. Clerk. He wrote that \"the real danger is of coming to believe such dreadful things about Him.\" The conclusion he dreaded was not\"",
+   "problem": "This is a cross-shelf repeat in the same section. why-does-god-feel-far-away opens on this scene with the same frame (\"After his wife, Joy Davidman, died of cancer in 1960\") and makes \"The real danger is of coming to believe such dreadful things about Him\" its controlling quotation. Read back to back, the two essays share their Lewis paragraph. This essay needs only the second quotation (\"So this is what God's really like\"), which the other essay does not use. Dropping the shared line and rewording the frame removes the seam and keeps the point.",
+   "fix": "Replace with: \"His wife, Joy Davidman, died of cancer in July 1960, and afterward he published a short record of his grief, *A Grief Observed*, under the made-up name N. W. Clerk. The conclusion he dreaded, he wrote, was not\" (the sentence then continues unchanged: \"So there's no God after all,\" but \"So this is what God's really like.\")",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, third short paragraph: \"Lisbon heard that it had been judged, and it heard that all was well. Neither one was the gospel.\"",
+   "problem": "A recap bookend that closes on a Neither pair, which is two of the named tells at the most exposed spot in the essay. It restates the opening rather than leaving weight. It is also imprecise. Malagrida told Lisbon it was judged, but \"all is well\" was the optimists' maxim that Voltaire attacked, and nobody told it to Lisbon. Without this paragraph the stack runs from the mirror (\"so are you\" and the Job's-friends question) straight to the line that lands on Christ, which is the shape the brief asks for.",
+   "fix": "Delete the paragraph (both sentences). The ending then runs from \"... the way Job's friends did before they started explaining?\" straight to \"The hands that will wipe away every tear still carry the marks of the nails.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Cross and the Resurrection, paragraph 1, last two sentences: \"He didn't give Mary an explanation. He wept with her, and then he called her brother out of the grave.\"",
+   "problem": "The section stacks \"Not X. Y.\" turns: the opening line (\"God didn't stay outside the suffering\"), this one, \"On the cross Jesus didn't explain ... He took\", \"The resurrection doesn't tell us ... It tells us\", and \"The tears aren't dismissed. God wipes\". That is five in three paragraphs, the antithesis tic that VOICE-JAMES-BELL.md puts on its avoid list. The verdict worth keeping is the resurrection line. Here the act carries the point without the negation.",
+   "fix": "Replace with: \"He wept with her, and then he called her brother out of the grave.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Cross and the Resurrection, paragraph 2, first three sentences: \"On the cross Jesus didn't explain the problem of evil. He took the worst of it into himself. The innocent suffered while the guilty went free, God seemed to have gone silent, and he prayed the psalm of the abandoned.\"",
+   "problem": "This is another \"didn't X. Y.\" in the same stack (see the previous finding), followed by a tidy three-beat clause list. The third beat repeats the Lament section (\"Dying, he prayed the first line of Psalm 22\"), so it is padding. A true pair carries it.",
+   "fix": "Replace with: \"On the cross Jesus took evil at its worst into himself. The innocent suffered while the guilty went free, and God seemed to have gone silent.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Cross and the Resurrection, paragraph 3, last two sentences: \"The tears aren't dismissed. God wipes them away himself, which means he has seen every one.\"",
+   "problem": "This is the last \"Not X. Y.\" in the section stack. It also stamps the wipe-away image three times in a row: the Revelation 21:4 quotation, this sentence, and the final line (\"The hands that will wipe away every tear\"). That blunts the final line. The pastoral point, that he has seen every one, is the part to keep, and the sentence before it already says he does this \"with his own hands\".",
+   "fix": "Replace with: \"He has seen every one of those tears.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Oldest Form of the Argument, paragraph 5: \"In *The Brothers Karamazov*, published in 1880, Dostoevsky gave\"; and Jesus and the Question of Blame, paragraph 3: \"In *When Bad Things Happen to Good People*, published in 1981, Kushner concluded\"",
+   "problem": "The scholar-parade formula the judges caught: \"In *Title*, published in YEAR, X ...\" appears three times (also \"C. S. Lewis argued in *The Problem of Pain*, published in 1940,\"). The year matters only for Lewis, because the essay sets 1940 against his grief in 1960. Dostoevsky's 1880 does no work. Kushner's 1981 stacks on top of Aaron's death in 1977 in the sentence before. Keep Lewis's year and drop the other two.",
+   "fix": "Replace \"In *The Brothers Karamazov*, published in 1880, Dostoevsky gave\" with \"In *The Brothers Karamazov*, Dostoevsky gave\". Replace \"In *When Bad Things Happen to Good People*, published in 1981, Kushner concluded\" with \"In *When Bad Things Happen to Good People*, Kushner concluded\".",
+   "severity": "should"
+  },
+  {
+   "where": "Natural Evil and Animal Suffering, paragraph 3, third sentence: \"Many others accept the scientific dating of the earth,\"",
+   "problem": "This is a second-order question, so each side has to be stated the way its defenders would put it. Here the old-earth side \"accepts the scientific dating\", which implies the young-earth side rejects science. Young-earth Christians would not sign that description of themselves, and a pastor in a young-earth church would hear the essay taking a side before it says \"The creeds don't settle it.\" Describe the view by what it holds, as the young-earth view is described.",
+   "fix": "Replace with: \"Many others hold that the earth is very old,\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Psalms of Lament, last paragraph, last sentence: \"[Find Help](/help) lists other places to start.\"",
+   "problem": "The crisis path is right and must stay, but this sentence is a shelf stamp. doubt-after-church-abuse and why-does-god-feel-far-away say \"[Find Help](/help) page lists other places to start\", and excavation-not-demolition says \"[Find Help](/help) lists places to start\". At the one point where a grieving reader should feel addressed, it reads like a template. Saying what the reader will find there is more useful: /help puts 988, 741741 and 911 at the top and has a grief page (\"Someone I love has died\"). The paragraph also lacks the brief's plain line that this is not counseling, which the other crisis-facing essays carry.",
+   "fix": "Replace with: \"This essay can't counsel you, but [Find Help](/help) has other lines you can call and a page for grief.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Classic Answers Can Explain, last paragraph, last sentence: \"The arguments of 1940 weren't false, but they answered a different question from the one his grief was asking.\"",
+   "problem": "A second verdict line in one section, and a \"not X, but Y\" closer. The paragraph before it already ends on the section's verdict (\"The theories work at the level of the whole world, and people suffer one at a time.\"). It also repeats almost word for word the verdict on the /help/grief page this essay links to (\"The earlier book was true enough, and it could not reach him there.\"). Ending the paragraph on Lewis's own words lets the reader draw the line.",
+   "fix": "Delete the sentence. The paragraph then ends: \"... but \"So this is what God's really like.\"\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Psalms of Lament, last paragraph, fourth sentence: \"If the darkness has grown to the point where you wonder whether there's any reason to go on, reach out today: in the US, you can call or text 988 to reach the Suicide and Crisis Lifeline.\"",
+   "problem": "This splices the shelf's other crisis lines: excavation-not-demolition's \"you wonder whether there is any reason to keep going ... In the US, you can call or text 988 to reach the Suicide and Crisis Lifeline\" and doubt-after-church-abuse's \"to the point where you\". It also says \"reach\" twice in one sentence and opens on a literary image (\"the darkness has grown\"). The brief's own wording for the 988 line is plainer.",
+   "fix": "Replace with: \"If you have started to wonder whether you want to go on living, reach out today: in the US, call or text 988 for the Suicide and Crisis Lifeline.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Psalms of Lament, last paragraph, first sentence: \"If you're reading this in the middle of your own grief,\"",
+   "problem": "Echoes the crisis turn in did-the-resurrection-happen (\"If you are reading this in the middle of a fresh loss\"), the Doubt essay this one links to.",
+   "fix": "Replace with: \"If you're grieving as you read this,\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Oldest Form of the Argument, paragraph 3, last sentence: \"His argument was that God cannot make creatures truly free and also guarantee what they will choose.\"",
+   "problem": "Two sections later the essay calls the classic answers \"true as far as they go\". That quietly endorses Plantinga's libertarian premise, and the same premise is the second-order question the essay later leaves open (\"The Reformed tradition holds that God ordains whatever comes to pass, including the evil acts of free creatures\"; \"Baptists ... have had churches on both sides\"). A Reformed reader, or a Particular Baptist pastor, will notice the essay taking a side before it claims not to. One clause marks the premise as contested where it first appears.",
+   "fix": "Replace with: \"His argument was that God cannot make creatures truly free and also guarantee what they will choose, a view of freedom many Christians in the Reformed tradition reject.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Job's Friends Got Wrong, last paragraph, first sentence: \"That matters for our question.\"",
+   "problem": "An announced turn of the \"Two details deserve more attention\" kind: it tells the reader that something matters instead of showing why. The next sentence does the work.",
+   "fix": "Delete the sentence. The paragraph then begins: \"Job shows, inside Scripture, that a person can suffer for a reason that exists and is never told to him.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Oldest Form of the Argument, paragraph 2, last sentence: \"It's a real answer, though it doesn't reach very far into a hospital room.\"",
+   "problem": "A small literary image (an answer reaching into a room) where a plain phrase serves. It is also the start of a reach/far motif stamped through the first two sections: \"doesn't reach very far\", \"true as far as they go\", \"look at how far they go\", \"out of their reach\". Keep the plain concession.",
+   "fix": "Replace with: \"It's a real answer, though it isn't much help in a hospital room.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Classic Answers Can Explain, paragraph 4, second sentence: \"But look at how far they go.\"",
+   "problem": "Wordplay on the line before it (\"true as far as they go\") and an imperative announced turn. The next sentence turns the argument without it.",
+   "fix": "Delete the sentence. The paragraph then reads: \"... before he decides the church has nothing to say. They explain why a world with some suffering in it might be better than a world with none.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Jesus and the Question of Blame, paragraph 2, fourth sentence: \"Softer churches preach a God whose main concern is our happiness,\"",
+   "problem": "The paragraph criticizes three ways the church repeats Job's friends, and two are named by what they teach (\"Some preachers ... read hurricanes and pandemics as God's judgment\", \"The prosperity preacher\"). The third gets an evaluative label (\"Softer\"), which a mainline reader will hear as a sneer aimed at one direction. The verdict that follows (\"that God doesn't survive the first diagnosis\") is already sharp enough. Use the same instrument for all three.",
+   "fix": "Replace with: \"Other churches preach a God whose main concern is our happiness,\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Job's Friends Got Wrong, paragraph 3, second sentence: \"The men who defended God with a formula are rebuked.\"",
+   "problem": "Echoes why-does-god-feel-far-away, which makes the same Job 42:7 point in nearly the same words (\"the friends who defended God with a tidy explanation had not\"). \"Spoke for God\" also ties to the verse just quoted (\"you have not spoken of me what is right\").",
+   "fix": "Replace with: \"The men who spoke for God with a formula are rebuked.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Psalms of Lament, paragraph 1, fifth sentence: \"and Israel kept it in the book it sang.\"",
+   "problem": "The same observation, in the same image, as why-does-god-feel-far-away on the same verse (\"There is no resolution and no turn to praise, and Israel read that ending and kept it in the book anyway\"). The superscription calls Psalm 88 a song, so the plain verb works.",
+   "fix": "Replace with: \"and Israel still sang it.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Psalms of Lament, paragraph 4, second sentence: \"It looks like a meal left on the porch, a name said out loud a year later when everyone else has stopped saying it, and Psalm 13 prayed with someone who can't pray anything else.\"",
+   "problem": "A tidy concrete triplet, and its first item is the stock casserole image. The second and third items are specific and tie back to the argument (the long year after, Psalm 13), so a true pair is stronger.",
+   "fix": "Replace with: \"It looks like a name said out loud a year later when everyone else has stopped saying it, or Psalm 13 prayed with someone who can't pray anything else.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Natural Evil and Animal Suffering, paragraph 3, last sentence: \"Both readings refuse to call the present order final, and they share the same hope.\"",
+   "problem": "A \"Both\" closer that repeats the template of the previous section's contested paragraph (\"Both sides confess ...\"), so the two second-order passages end the same way. The shared hope arrives in the next paragraph through Isaiah, which is the better place for it.",
+   "fix": "Delete the sentence. The paragraph then ends: \"The creeds don't settle it, and faithful churches divide over it.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Natural Evil and Animal Suffering, paragraph 2, last sentence: \"Paul doesn't place God outside the groaning, looking in.\"",
+   "problem": "A third negative-then-image closer in this section, after \"The Bible doesn't look at earthquakes and parasites ... It calls\". It uses up early the picture that opens the Cross section (\"God didn't stay outside the suffering\"), where it does its real work. Romans 8:26 (\"groanings too deep for words\") is a stronger end for the paragraph.",
+   "fix": "Delete the sentence. The paragraph then ends on \"... with groanings too deep for words\" (Romans 8:26).",
+   "severity": "consider"
+  },
+  {
+   "where": "The Oldest Form of the Argument, last paragraph, first two sentences: \"The objection doesn't rest on a misunderstanding. It's built out of things\"",
+   "problem": "Two \"Not X. Y.\" turns in one paragraph (this one and \"Most of them aren't arguing at all. They're standing ...\"). The second is the more humane one and should stay. The first loses nothing as a plain statement.",
+   "fix": "Replace with: \"The objection is built out of things\" (the sentence continues unchanged: \"anyone can see, and many of the answers Christians reach for first never touch it.\")",
+   "severity": "consider"
+  },
+  {
+   "where": "The Cross and the Resurrection, paragraph 2: \"[Whether that happened](/writing/did-the-resurrection-happen) is the question everything in this essay finally hangs on.\"",
+   "problem": "A vague framing sentence that points at the essay itself (\"everything in this essay\"). It is also the second \"finally\" in two paragraphs (\"The Christian answer finally rests on\"). The claim is right, and the skeptic deserves to hear plainly that the answer depends on a fact he can check. Say what hangs on it.",
+   "fix": "Replace with: \"Everything a Christian can say about suffering hangs on [whether that happened](/writing/did-the-resurrection-happen).\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Psalms of Lament, paragraph 1, second sentence: \"Dozens of psalms are complaints addressed straight to God.\"",
+   "problem": "The essay links only one site essay (did-the-resurrection-happen), below the brief's two to four. why-does-god-feel-far-away is in link-targets.json, is landed, and works through these same laments (Psalms 13, 88 and 22) at length. A link here gives the reader somewhere to go. It also turns the overlap between the two essays into a deliberate path instead of a seam. The added claim is safe: many laments complain of God's distance (Psalm 10:1, \"Why, O LORD, do you stand far away?\"; Psalm 13:1; Psalm 22:1).",
+   "fix": "Replace with: \"Dozens of psalms are complaints addressed straight to God, many from people who felt [he had gone far away](/writing/why-does-god-feel-far-away).\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic). Zero for all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community). Zero for all 6 therapy-speak items (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and for the signposting phrases (here is what I mean, let me explain). None of the proposed replacements adds one.",
+  "Em-dash: no U+2014 anywhere. The three en-dashes are verse ranges (Luke 13:4–5, John 9:2–3, Romans 8:20–22).",
+  "Exclamation points: none anywhere.",
+  "Semicolons: five are inside quotations (Lactantius three times, Luke 13:5, Psalm 88:18). One is in his own prose (\"in whatever words you have; the psalms give you permission\"), which is within \"rare\".",
+  "The brief's stamps: none of the seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\" (only inside the Romans 8:18 Closing Text), \"none of this\" (\"none of it\" in the free-will list is ordinary prose), \"the record\", \"I don't exempt myself\"). The shelf-level repeats that do appear are flagged above: the atheism clause, the Lewis frame and quotation, the Find Help line, the 988 splice, the Job 42:7 and Psalm 88 phrasing, and the resurrection essay's grief turn.",
+  "Rulebook leakage: zero uses of steelman, verdict, indictment or self-implication. Zero uses of \"honest\" or \"fair\". Concessions are made, not announced: \"It's a real answer\", \"Dostoevsky was a believer, and he gave this argument its full strength\", \"The objection ... is built out of things anyone can see\", \"That doesn't answer Rowe\", \"Voltaire was right that 'all is well' is false\", \"millions of readers found relief\".",
+  "Announced turns: the transitions are plain and in his signposting habit (\"So the argument changed shape\", \"Then there are the children\", \"That leaves the sentence people hear at funerals\", \"Others take the opposite way out\"). The two that announce instead of argue (\"That matters for our question\", \"But look at how far they go\") are flagged above.",
+  "Biography: only confirmed facts. Besides the atheism clause flagged above, \"Baptists, my own tradition\" locates him in a Baptist church without implying Southern Baptist membership and without taking a side on the question. \"Better than I do\" and \"I can't tell you why\" are plain and self-effacing. There is no title, no years in ministry, no book count, no invented scene, no credential and no brand tie-in.",
+  "Standfirst (excerpt): one plain declarative sentence of two clauses joined by \"and\". It is not a balanced antithesis.",
+  "Title and headings: the title uses plain search words. All eight headings are plain and descriptive (The Oldest Form of the Argument; What the Classic Answers Can Explain; What Job's Friends Got Wrong; Jesus and the Question of Blame; Is God in Control?; Natural Evil and Animal Suffering; The Psalms of Lament; The Cross and the Resurrection).",
+  "Political criticism: no partisan politics. The Job's-friends paragraph fires in more than one direction with the same instrument: judgment preaching after hurricanes and pandemics, prosperity teaching, therapeutic religion, and then Kushner's limited God, each answered from Job and from Jesus at Siloam. \"Most of us who have stood with a grieving family have felt their pull\" and \"we teach him that grief belongs somewhere else\" put the writer and the church inside it. The only uneven label (\"Softer\") is flagged above.",
+  "Second-order questions are left open, not asserted. On sovereignty and freedom, the Reformed view (with the Westminster Confession's \"neither is God the author of sin\") and the Wesleyan and Arminian view are each given their reason, Baptists are placed on both sides, and James's position is not stated. On the age of the earth and animal death, both readings are given with their texts and \"The creeds don't settle it\". The two small tilts (\"accept the scientific dating\", and the libertarian premise behind \"true as far as they go\") are flagged above. The landed JSON has no needs_james field, so wherever the program tracks it, this essay should carry needs_james true for these two questions.",
+  "First-order matters are confessed plainly and not argued as if they were up for a vote: the incarnation (\"the eternal Son of God became a man, with a body that could be hurt\"), the cross, the bodily resurrection (\"On the third day the tomb was empty\"), and the new creation (Revelation 21:4, Isaiah 11:9).",
+  "Crisis path: present in the Lament section. It gives permission to pray without resolving anything, points to a friend or pastor who will sit with the reader, gives the 988 line, and links Find Help. The reader is not diagnosed, despair is not validated, and grief is honored before any correction. Abuse is not in view, so no reporting line is needed. The fixes above address only shelf repetition and the missing not-counseling line.",
+  "Ending: with the Lisbon lines removed, the ending is a short stack of plain lines. He can't say why. Job never found out, but he was allowed to ask, \"and so are you\". Then comes a question that presses the reader to do what Job's friends did in their first seven days. The question is a real exhortation, not engagement bait. The last line lands on Christ in the declarative way the pilots close (compare \"Jesus wept over Jerusalem, and that same week He died outside its walls ...\"). The Closing Texts use the *\"Quote.\"* (Reference) format. Psalm 13:1 repeats the body quotation, but here it acts out the permission the ending has just given, so I left it.",
+  "Scripture works inside the argument, not as decoration. Job is the controlling text (2:13, 4:7, 22, 38 and 39, 42:5, 42:7), and it sets up Luke 13, John 9, Genesis 50:20, Acts 2:23, Romans 8 (verses 18 to 35, carried across three sections), James 1:13, Psalms 13, 22 and 88, Romans 12:15, John 11 and Revelation 21:4. The ESV wording matched where I compared it from memory. Verification belongs to the integrity lens. The integrity lens may also want to look at the Lewis sentence \"Try to remove every possibility of suffering ... you have removed life itself\", an unquoted paraphrase that sits very close to Lewis's own sentence.",
+  "Scholar parade: apart from the year formula flagged above, each named witness does work. Malagrida, Voltaire and Rousseau give the three Lisbon answers that the ending and the Job section call back. Lactantius preserves the argument and gives the first answer. Hume bridges to the modern form in one sentence. Plantinga answers the logical problem. Rowe's fawn returns in three sections. Darwin's wasps come back as \"parasites\". Dostoevsky puts the children at the center. Lewis, Irenaeus and Augustine are the classic answers. Kushner is the opposite exit. Wolterstorff shows lament from inside the philosophy. Years appear where chronology is the point (1755, 1756, 1979, 1860, 1940, 1960, 1977, 1983).",
+  "Register numbers: 43 prose paragraphs averaging 85 words, and 203 sentences with a mean of 18.1 words, 22 percent of them 8 words or fewer. All are on the pilots' targets. There are no fragment stacks. Contractions are natural. The prose runs about 3,670 words now and about 3,540 after the fixes (checked by applying all 25 to a scratch copy, where each quoted string occurs exactly once and the fixes do not collide).",
+  "Skeptic read: the concessions are real and come early. The strongest form of the argument survived because a Christian copied it out. Lactantius's answer isn't much help in a hospital room. The classic answers work at the level of the world, not of this child. Job is never told why. \"That doesn't answer Rowe.\" Voltaire was right. \"I can't tell you why God allowed what happened to you.\" The only place a skeptic would push is where the essay seems to be settling a question it later calls open (Plantinga's premise), and that is flagged. A thoughtful unbeliever can finish thinking that believing this is not stupid.",
+  "Pastor read: a pastor can hand this to a congregation. It corrects judgment preaching, the prosperity gospel and therapeutic comfort without contempt, and it implicates \"most of us who have stood with a grieving family\". It turns theology into an ordinary Tuesday (sit on the ground, say the name a year later, pray Psalm 13 with someone). It keeps a path to help visible. The only things that would make a pastor hesitate are the label \"Softer churches\" and the young-earth wording, both flagged.",
+  "Links: one essay link (/writing/did-the-resurrection-happen, in link-targets.json and landed) plus /help. A second link, to why-does-god-feel-far-away, is suggested above."
+ ]
+}

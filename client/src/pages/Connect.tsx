@@ -1,58 +1,141 @@
 /**
- * /connect — everywhere James is, on one page.
+ * /connect: "Find James". The one page that holds everything James does, so
+ * he can link it from anywhere (James, 2026-11-18: "tie in all that I do...
+ * into kind of one thing"). The short address /james lands here.
  *
- * The "Follow the writing" block from the front page, given a room of its own:
- * the Library, the books, the tools, the downloads, working with James, and
- * every outside channel (lib/channels.ts), then the newsletter and a way to
- * write to him. Nothing here is invented: channels render only with a real
- * URL, and speaking requests go through the existing Work with James form.
+ * In order (the model James was shown, BLUEPRINT.html "One home for all you
+ * do"):
+ * 1. The page top, with a plate.
+ * 2. LiveWell itself, the wide first card: the home and the library.
+ * 3. His work at its own address: Substack (the letter), Facebook (the front
+ *    porch), the Following the Way podcast, and ENDS. One line each, one
+ *    button that opens it.
+ * 4. The newest on Substack: titles and dates, each a link out
+ *    (components/SubstackLatest.tsx). Never the posts themselves.
+ * 5. Books, speaking and contact, as cards.
+ * 6. This page's own address, with a Copy button.
+ *
+ * Every address and label comes from lib/works.ts, which reads
+ * lib/channels.ts. Nothing from Facebook or Substack is fetched into the
+ * browser or embedded. The church has no verified web address, so it has no
+ * card.
  */
+import { useState } from "react";
 import { Link } from "wouter";
+import { BookOpen, Compass, Newspaper } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import FollowJames from "@/components/FollowJames";
-import { NewsletterSignup } from "@/components/NewsletterSignup";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import WorkCard from "@/components/art/WorkCard";
+import SubstackLatest from "@/components/SubstackLatest";
+import { copyToClipboard } from "@/lib/clipboard";
+import { ogImageUrl } from "@/lib/site";
+import { HOME_WORKS, LIVEWELL_WORK, elsewhereWorks } from "@/lib/works";
+import "./connect.css";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+/** What a reader sees; the apex address forwards to the www one. */
+const SHORT_ADDRESS = "livewellbyjamesbell.co/connect";
+/** What the Copy button puts on the clipboard. */
+const FULL_ADDRESS = "https://www.livewellbyjamesbell.co/connect";
+
+function CopyAddress() {
+  const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
+  return (
+    <p className="cn-address">
+      <span>
+        This page's address is <strong className="cn-address__url">{SHORT_ADDRESS}</strong>
+      </span>
+      <button
+        type="button"
+        className="btn btn--quiet cn-address__btn"
+        onClick={async () => setState((await copyToClipboard(FULL_ADDRESS)) ? "copied" : "failed")}
+      >
+        {state === "copied" ? "Copied" : "Copy"}
+        <span className="sr-only"> this page's address</span>
+      </button>
+      <span role="status" className="cn-address__status">
+        {state === "failed" && "Could not copy. Select the address and copy it."}
+        {state === "copied" && <span className="sr-only">Copied</span>}
+      </span>
+    </p>
+  );
+}
 
 export default function Connect() {
+  const elsewhere = elsewhereWorks();
+
   return (
     <Layout>
       <SEOMeta
-        title="Connect: Everywhere James Bell Writes and Speaks"
-        description="Everywhere to find James Bell: the Library of essays and books, the newsletter, the Following the Way podcast, Facebook, speaking and pastoral coaching, and a direct line to write to him."
+        title="Find James Bell: Substack, Facebook, Essays, and Contact"
+        description="Everything James Bell does, on one page: LiveWell, his Substack, his Facebook, the Following the Way podcast, ENDS, his books, speaking, and contact."
+        image={ogImageUrl("Find James Bell", "LiveWell")}
         url="https://www.livewellbyjamesbell.co/connect"
       />
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "14px" }}>Connect</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.08, color: "var(--ink)", marginBottom: "14px" }}>
-            Everywhere James is
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "1.05rem", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", margin: 0 }}>
-            The essays and books live here. The newsletter, the podcast, and the daily notes live elsewhere. Same voice, different rooms.
-          </p>
+      <PageHead
+        door="About"
+        doorHref="/about"
+        title="Find James"
+        titleId="connect-title"
+        line="Everything James does, in one place."
+        plate="tree"
+      />
+
+      {/* LIVEWELL: the home and the library. */}
+      <section className="cn-sec cn-sec--first" aria-label="LiveWell, the home and the library">
+        <div className="cn-wrap">
+          <WorkCard work={LIVEWELL_WORK} label="The home and the library" lead headingLevel={2}>
+            <Link href="/start" className="btn btn--quiet lw-work__btn">
+              New here? Start here
+            </Link>
+          </WorkCard>
         </div>
       </section>
 
-      <FollowJames heading="Every room, in one place" />
-
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(320px, 100%), 1fr))", gap: "var(--s-5)", alignItems: "start" }}>
-          <NewsletterSignup variant="inline" source="connect" />
-          <div>
-            <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)", margin: "0 0 10px" }}>
-              Speaking, coaching, and a direct line
-            </h2>
-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-              For preaching, retreats, pastoral coaching, or church consulting, the Work with James page has the details and a form that reaches him directly.
-            </p>
-            <p style={{ margin: 0, display: "flex", flexWrap: "wrap", gap: "12px 20px", fontFamily: "var(--U)", fontSize: "14px" }}>
-              <Link href="/work-with-james" style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>Work with James</Link>
-              <a href="mailto:Pastorjbell206@gmail.com" style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>Email James</a>
-            </p>
+      {/* HIS WORK AT ITS OWN ADDRESS */}
+      {elsewhere.length > 0 && (
+        <section className="cn-sec cn-sec--warm" aria-labelledby="cn-elsewhere-title">
+          <div className="cn-wrap">
+            <SectionHead icon={Compass} label="Elsewhere" title="Where else James is." id="cn-elsewhere-title" />
+            <ul className="lw-works lw-works--four">
+              {elsewhere.map((w) => (
+                <li key={w.id}>
+                  <WorkCard work={w} />
+                </li>
+              ))}
+            </ul>
           </div>
+        </section>
+      )}
+
+      {/* THE NEWEST ON SUBSTACK, linked out. */}
+      <section className="cn-sec cn-sec--dark" aria-labelledby="cn-substack-title">
+        <div className="cn-wrap">
+          <SectionHead dark icon={Newspaper} label="Substack" title="New on Substack." id="cn-substack-title" />
+          <SubstackLatest tone="dark" />
+        </div>
+      </section>
+
+      {/* BOOKS, SPEAKING, CONTACT */}
+      <section className="cn-sec" aria-labelledby="cn-here-title">
+        <div className="cn-wrap">
+          <SectionHead icon={BookOpen} label="Here on LiveWell" title="Books, speaking, and contact." id="cn-here-title" />
+          <ul className="lw-works lw-works--three">
+            {HOME_WORKS.map((w) => (
+              <li key={w.id}>
+                <WorkCard work={w} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* THIS PAGE'S ADDRESS */}
+      <section className="cn-sec cn-sec--warm cn-sec--foot" aria-label="This page's address">
+        <div className="cn-wrap">
+          <CopyAddress />
         </div>
       </section>
     </Layout>

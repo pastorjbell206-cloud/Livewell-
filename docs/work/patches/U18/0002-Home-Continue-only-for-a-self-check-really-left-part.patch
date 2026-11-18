@@ -1,0 +1,137 @@
+From f3f723323b8e089a37d70a38b5948782b25f9cba Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 18:04:09 +0000
+Subject: [PATCH 2/2] Home: Continue only for a self-check really left
+ part-way; 44 px tonight links (U18 review)
+
+- continueHere: a self-check whose saved answers are the ones its last
+  result was taken from is finished, however recently they were saved.
+  Seeing the results again, or "Change my answers" and changing nothing,
+  saved the answers after the result without a new run, so Home kept
+  offering "Continue" for a finished check. Compare the answers'
+  fingerprint (SelfCheckHistory's answersKey, with the Life Audit's
+  set-aside areas) as well as the dates. Tested, and checked in Chromium
+  through the Emotional Health self-check.
+- The tonight and Continue links measured 40 px tall; their padding now
+  gives 46 px, with a little more room between the two rows.
+- A stale comment ("Not a fourth door") now that Home has four doors.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/index.css              |  4 ++--
+ client/src/lib/myProgress.test.ts | 17 +++++++++++++++++
+ client/src/lib/myProgress.ts      | 27 ++++++++++++++++++++-------
+ client/src/pages/Home.tsx         |  2 +-
+ 4 files changed, 40 insertions(+), 10 deletions(-)
+
+diff --git a/client/src/index.css b/client/src/index.css
+index 1a65ee6d..21449f17 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -460,10 +460,10 @@ img{display:block;max-width:100%}
+ .home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
+ .home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
+ .home-tonight{margin:0 0 var(--s-4)}
+-.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px var(--s-4)}
++.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px var(--s-4)}
+ .home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
+ .home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
+-.home-tonight__link{padding:10px 0}
++.home-tonight__link{padding:13px 0}
+ 
+ /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
+  * Collections read as an index, not a wall of boxes: type carries the
+diff --git a/client/src/lib/myProgress.test.ts b/client/src/lib/myProgress.test.ts
+index 6bced44d..5db19cd5 100644
+--- a/client/src/lib/myProgress.test.ts
++++ b/client/src/lib/myProgress.test.ts
+@@ -57,6 +57,23 @@ describe("continueHere", () => {
+     expect(continueHere()?.href).toBe("/tools/life-audit");
+   });
+ 
++  it("does not offer a finished self-check whose same answers were saved again", () => {
++    // Seeing the results again, or "Change my answers" and changing nothing,
++    // saves the answers later than the result, and SelfCheckHistory records no new run.
++    const answers = { 0: 3, 1: 5 };
++    localStorage.setItem("livewell-history-emotional-health", JSON.stringify([{ date: "2026-10-20T12:00:00.000Z", total: 0.5, areas: {}, key: JSON.stringify(answers) }]));
++    localStorage.setItem("livewell-progress-emotional-health", draft("2026-10-25T08:00:00.000Z", answers));
++    expect(continueHere()).toBeNull();
++    // The Life Audit's fingerprint carries the areas set aside.
++    const setAside = ["work"];
++    localStorage.setItem("livewell-history-life-audit", JSON.stringify([{ date: "2026-10-20T12:00:00.000Z", total: 0.5, areas: {}, key: JSON.stringify({ answers, setAside }) }]));
++    localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers, step: 0, savedAt: "2026-10-25T08:00:00.000Z", setAside }));
++    expect(continueHere()).toBeNull();
++    // One answer changed: part-way again.
++    localStorage.setItem("livewell-progress-life-audit", JSON.stringify({ answers: { ...answers, 1: 2 }, step: 0, savedAt: "2026-10-25T09:00:00.000Z", setAside }));
++    expect(continueHere()?.href).toBe("/tools/life-audit");
++  });
++
+   it("ignores a self-check with no answers yet, and values it cannot trust", () => {
+     localStorage.setItem("livewell-progress-marriage-assessment", draft("2026-10-20T12:00:00.000Z", {}));
+     localStorage.setItem("livewell-progress-emotional-health", "{oops");
+diff --git a/client/src/lib/myProgress.ts b/client/src/lib/myProgress.ts
+index bee32aea..e9c20ea2 100644
+--- a/client/src/lib/myProgress.ts
++++ b/client/src/lib/myProgress.ts
+@@ -135,15 +135,27 @@ export interface ContinueItem {
+   when: string;
+ }
+ 
+-const isDraft = (x: unknown): x is { answers: Record<string, unknown>; savedAt: string } =>
+-  isObject(x) && typeof x.savedAt === "string" && isObject(x.answers);
++type Draft = { answers: Record<string, unknown>; savedAt: string; setAside?: unknown };
++const isDraft = (x: unknown): x is Draft => isObject(x) && typeof x.savedAt === "string" && isObject(x.answers);
++const isKeyedRuns = isArrayOf((x): x is { date: string; key?: unknown } => isObject(x) && typeof x.date === "string");
++
++/**
++ * The answers' fingerprint as SelfCheckHistory records it (each page's
++ * `answersKey`): the answers alone, or with the Life Audit's set-aside areas.
++ */
++const draftKey = (d: Draft) =>
++  Array.isArray(d.setAside) && d.setAside.length ? JSON.stringify({ answers: d.answers, setAside: d.setAside }) : JSON.stringify(d.answers);
+ 
+ /**
+  * The one thing on this device to continue, for Home: an eight-week plan not
+  * yet walked through, or a self-check left part-way (answers saved after its
+- * last finished result, or never finished). The most recent wins; null when
+- * there is nothing. Essays are not offered, because the site remembers only
+- * the essays a reader finished (lib/readProgress), never one begun.
++ * last finished result, or never finished). A self-check whose saved answers
++ * are the ones its last result was taken from is finished, however recently
++ * they were saved: opening the results again, or "Change my answers" and
++ * changing nothing, saves them again without a new result. The most recent
++ * wins; null when there is nothing. Essays are not offered, because the site
++ * remembers only the essays a reader finished (lib/readProgress), never one
++ * begun.
+  */
+ export function continueHere(): ContinueItem | null {
+   if (typeof window === "undefined") return null;
+@@ -159,8 +171,9 @@ export function continueHere(): ContinueItem | null {
+   for (const [id, key] of Object.entries(SELF_CHECK_DRAFTS)) {
+     const draft = readStoredJSON(key, isDraft, null);
+     if (!draft || Object.keys(draft.answers).length === 0) continue;
+-    const runs = readStoredJSON(`livewell-history-${id}`, isRuns, []);
+-    const finished = runs.length > 0 && runs[runs.length - 1].date >= draft.savedAt;
++    const runs = readStoredJSON(`livewell-history-${id}`, isKeyedRuns, []);
++    const last = runs[runs.length - 1];
++    const finished = !!last && (last.date >= draft.savedAt || last.key === draftKey(draft));
+     if (!finished) items.push({ href: SELF_CHECKS[id].href, label: `the ${SELF_CHECKS[id].title}`, when: draft.savedAt });
+   }
+ 
+diff --git a/client/src/pages/Home.tsx b/client/src/pages/Home.tsx
+index 3b490f4f..e94238bd 100644
+--- a/client/src/pages/Home.tsx
++++ b/client/src/pages/Home.tsx
+@@ -150,7 +150,7 @@ export default function Home() {
+               </li>
+             ))}
+           </ul>
+-          {/* Not a fourth door: one quiet line to the things people use. */}
++          {/* Not another door: one quiet line to the things people use. */}
+           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-4) 0 0" }}>
+             Also here, all free:{" "}
+             <Link href="/resources" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>
+-- 
+2.43.0
+

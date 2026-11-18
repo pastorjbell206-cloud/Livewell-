@@ -12,8 +12,12 @@ const buttonStyle: React.CSSProperties = {
   fontSize: "15px",
   padding: "15px 30px",
   borderRadius: "var(--radius-sm)",
-  background: "var(--mustard)",
-  color: "var(--ink)",
+  // Mustard is an accent, not a fill: a light button with the mustard rule,
+  // which reads on the cream page and on a charcoal band alike.
+  background: "var(--charcoal-fg)",
+  color: "var(--charcoal)",
+  border: "1px solid var(--charcoal)",
+  borderBottom: "2px solid var(--mustard)",
   textDecoration: "none",
 };
 

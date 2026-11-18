@@ -1,0 +1,497 @@
+From e461b79821fd9192af7e54cba4977664e31b906b Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 18:20:40 +0000
+Subject: [PATCH 2/2] Read the whole story in 2027: keep a late reader's place,
+ let any month close (U28 review)
+
+- The reader's place is the day after the furthest day marked read, not the
+  first gap: a reader who joins on day 40 and reads on is no longer sent back
+  to day 1 (on the page and in My Library).
+- The month the day sits in can be closed; it opens again only when the day
+  changes.
+- One psalm reads "Psalm 51" in the day's list and the month spans, as the
+  day's label does, and a psalm's title no longer repeats its reference.
+- Context-guide links are 44 px targets.
+- "Act Six begins here" rather than "begins today" on a day that may not be
+  today; the description and llms.txt say a guide comes where one belongs,
+  not on every day.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .../public/bible/guides/whole-story-2027.json | 54 +++++++++----------
+ client/public/llms.txt                        |  2 +-
+ client/src/index.css                          |  3 +-
+ client/src/lib/myProgress.test.ts             |  4 +-
+ client/src/lib/myProgress.ts                  |  4 +-
+ client/src/lib/storyPlan.test.ts              | 30 +++++++++--
+ client/src/lib/storyPlan.ts                   | 22 ++++++--
+ client/src/pages/StudyBibleYear.test.tsx      | 34 ++++++++++++
+ client/src/pages/StudyBibleYear.tsx           | 26 +++++----
+ scripts/lib/story-plan.mjs                    | 13 ++++-
+ 10 files changed, 140 insertions(+), 52 deletions(-)
+
+diff --git a/client/public/bible/guides/whole-story-2027.json b/client/public/bible/guides/whole-story-2027.json
+index 3ecad3b2..f327e917 100644
+--- a/client/public/bible/guides/whole-story-2027.json
++++ b/client/public/bible/guides/whole-story-2027.json
+@@ -378,7 +378,7 @@
+     {"act":"exodus","label":"Deuteronomy 25–27","read":[["deuteronomy",25,27]],"titles":["Limits on Punishment, a Brother's Duty, and Honest Weights","Firstfruits, the Poor's Tithe, and a Covenant Declared","Stones on Mount Ebal and Twelve Curses"],"guides":[]},
+     {"act":"exodus","label":"Deuteronomy 28","read":[["deuteronomy",28,28]],"titles":["Blessings for Obedience, Curses for Rebellion"],"guides":[]},
+     {"act":"exodus","label":"Deuteronomy 29–31","read":[["deuteronomy",29,31]],"titles":["The Covenant in Moab and the Secret Things","Choose Life: Return, Restoration, and the Near Word","Joshua Commissioned and the Law Handed Over"],"guides":[]},
+-    {"act":"exodus","label":"Deuteronomy 32–34; Psalm 90","read":[["deuteronomy",32,34],["psalms",90,90]],"titles":["The Song of Moses: The Rock and His Wayward People","Moses Blesses the Tribes of Israel","The Death of Moses on Mount Nebo","Psalm 90: Teach Us to Number Our Days"],"guides":[]},
++    {"act":"exodus","label":"Deuteronomy 32–34; Psalm 90","read":[["deuteronomy",32,34],["psalms",90,90]],"titles":["The Song of Moses: The Rock and His Wayward People","Moses Blesses the Tribes of Israel","The Death of Moses on Mount Nebo","Teach Us to Number Our Days"],"guides":[]},
+     {"act":"land-judges","label":"Joshua 1–3","read":[["joshua",1,3]],"titles":["Be Strong and Courageous: Joshua Takes Command","Rahab Hides the Spies in Jericho","The Ark Leads Israel Across the Jordan"],"guides":[]},
+     {"act":"land-judges","label":"Joshua 4–6","read":[["joshua",4,6]],"titles":["Twelve Stones from the Jordan","Circumcision, Passover, and the Commander of the LORD's Army","The Walls of Jericho Fall"],"guides":[]},
+     {"act":"land-judges","label":"Joshua 7–8","read":[["joshua",7,8]],"titles":["Achan's Sin and the Defeat at Ai","Ai Taken and the Covenant Renewed at Mount Ebal"],"guides":[]},
+@@ -404,16 +404,16 @@
+     {"act":"kingdom","label":"1 Samuel 13–14","read":[["1-samuel",13,14]],"titles":["Saul at Gilgal: The Offering That Cost a Kingdom","Jonathan's Faith and Saul's Rash Oath"],"guides":[]},
+     {"act":"kingdom","label":"1 Samuel 15–16","read":[["1-samuel",15,16]],"titles":["Obedience Is Better Than Sacrifice: Saul Rejected","The LORD Looks on the Heart: David Anointed"],"guides":[]},
+     {"act":"kingdom","label":"1 Samuel 17–18","read":[["1-samuel",17,18]],"titles":["David and Goliath: The Battle Is the LORD's","Loved by Jonathan, Feared by Saul"],"guides":[]},
+-    {"act":"kingdom","label":"1 Samuel 19; Psalm 59; 1 Samuel 20","read":[["1-samuel",19,19],["psalms",59,59],["1-samuel",20,20]],"titles":["David Escapes: Jonathan, Michal, and the Spirit at Ramah","Psalm 59: Dogs at Evening, Praise in the Morning","The New Moon Feast and the Arrows in the Field"],"guides":[]},
+-    {"act":"kingdom","label":"1 Samuel 21; Psalm 56; Psalm 34; 1 Samuel 22; Psalm 52","read":[["1-samuel",21,21],["psalms",56,56],["psalms",34,34],["1-samuel",22,22],["psalms",52,52]],"titles":["Holy Bread at Nob and Feigned Madness at Gath","Psalm 56: When I Am Afraid, I Trust in You","Psalm 34: Taste and See That the LORD Is Good","The Cave of Adullam and the Massacre at Nob","Psalm 52: The Boaster and the Olive Tree"],"guides":[]},
+-    {"act":"kingdom","label":"1 Samuel 23; Psalm 54; 1 Samuel 24; Psalm 57; Psalm 142","read":[["1-samuel",23,23],["psalms",54,54],["1-samuel",24,24],["psalms",57,57],["psalms",142,142]],"titles":["Keilah Saved, Ziph Betrays, Jonathan Strengthens","Psalm 54: Save Me by Your Name","In the Cave at En-gedi: David Spares Saul","Psalm 57: In the Shadow of Your Wings","Psalm 142: A Prayer from the Cave"],"guides":[]},
++    {"act":"kingdom","label":"1 Samuel 19; Psalm 59; 1 Samuel 20","read":[["1-samuel",19,19],["psalms",59,59],["1-samuel",20,20]],"titles":["David Escapes: Jonathan, Michal, and the Spirit at Ramah","Dogs at Evening, Praise in the Morning","The New Moon Feast and the Arrows in the Field"],"guides":[]},
++    {"act":"kingdom","label":"1 Samuel 21; Psalm 56; Psalm 34; 1 Samuel 22; Psalm 52","read":[["1-samuel",21,21],["psalms",56,56],["psalms",34,34],["1-samuel",22,22],["psalms",52,52]],"titles":["Holy Bread at Nob and Feigned Madness at Gath","When I Am Afraid, I Trust in You","Taste and See That the LORD Is Good","The Cave of Adullam and the Massacre at Nob","The Boaster and the Olive Tree"],"guides":[]},
++    {"act":"kingdom","label":"1 Samuel 23; Psalm 54; 1 Samuel 24; Psalm 57; Psalm 142","read":[["1-samuel",23,23],["psalms",54,54],["1-samuel",24,24],["psalms",57,57],["psalms",142,142]],"titles":["Keilah Saved, Ziph Betrays, Jonathan Strengthens","Save Me by Your Name","In the Cave at En-gedi: David Spares Saul","In the Shadow of Your Wings","A Prayer from the Cave"],"guides":[]},
+     {"act":"kingdom","label":"1 Samuel 25–26","read":[["1-samuel",25,26]],"titles":["Nabal, Abigail, and the Blood David Did Not Shed","The Spear and the Water Jug"],"guides":[]},
+     {"act":"kingdom","label":"1 Samuel 27–30","read":[["1-samuel",27,30]],"titles":["David Among the Philistines","Saul and the Medium of Endor","Sent Home from the Battle","Ziklag Burned and Everything Recovered"],"guides":[]},
+     {"act":"kingdom","label":"1 Samuel 31; 2 Samuel 1–2","read":[["1-samuel",31,31],["2-samuel",1,2]],"titles":["The Death of Saul on Mount Gilboa","How the Mighty Have Fallen: David's Lament","Two Kings and a Battle at the Pool of Gibeon"],"guides":[]},
+     {"act":"kingdom","label":"2 Samuel 3–5","read":[["2-samuel",3,5]],"titles":["Abner Changes Sides and Is Murdered","The Murder of Ish-bosheth","King Over All Israel: Jerusalem Taken"],"guides":[]},
+     {"act":"kingdom","label":"2 Samuel 6–8","read":[["2-samuel",6,8]],"titles":["The Ark Comes to Jerusalem","A House for David: God's Covenant Promise","David's Wars and David's Government"],"guides":["messianic-expectation"]},
+-    {"act":"kingdom","label":"Psalm 60; 2 Samuel 9–11","read":[["psalms",60,60],["2-samuel",9,11]],"titles":["Psalm 60: Have You Rejected Us, O God?","Kindness to Mephibosheth","An Insult Answered: War with Ammon and Aram","David, Bathsheba, and Uriah"],"guides":[]},
+-    {"act":"kingdom","label":"2 Samuel 12; Psalm 51; 2 Samuel 13","read":[["2-samuel",12,12],["psalms",51,51],["2-samuel",13,13]],"titles":["You Are That Man: Nathan Confronts David","Psalm 51: Create in Me a Clean Heart","Amnon, Tamar, and Absalom's Revenge"],"guides":[]},
++    {"act":"kingdom","label":"Psalm 60; 2 Samuel 9–11","read":[["psalms",60,60],["2-samuel",9,11]],"titles":["Have You Rejected Us, O God?","Kindness to Mephibosheth","An Insult Answered: War with Ammon and Aram","David, Bathsheba, and Uriah"],"guides":[]},
++    {"act":"kingdom","label":"2 Samuel 12; Psalm 51; 2 Samuel 13","read":[["2-samuel",12,12],["psalms",51,51],["2-samuel",13,13]],"titles":["You Are That Man: Nathan Confronts David","Create in Me a Clean Heart","Amnon, Tamar, and Absalom's Revenge"],"guides":[]},
+     {"act":"kingdom","label":"2 Samuel 14–15","read":[["2-samuel",14,15]],"titles":["The Wise Woman of Tekoa and Absalom's Return","Absalom Steals Israel's Heart, and David Flees"],"guides":[]},
+     {"act":"kingdom","label":"Psalm 3; 2 Samuel 16–17","read":[["psalms",3,3],["2-samuel",16,17]],"titles":["A Shield Around Me: David Flees from Absalom","Ziba's Gifts, Shimei's Curses, and Ahithophel's Counsel","Counsel Defeated: Hushai, Ahithophel, and David's Escape"],"guides":[]},
+     {"act":"kingdom","label":"2 Samuel 18–19","read":[["2-samuel",18,19]],"titles":["The Death of Absalom: O My Son","The King Returns: Mercy, Rewards, and a Divided People"],"guides":[]},
+@@ -432,22 +432,22 @@
+     {"act":"kingdom","label":"1 Chronicles 28–29; Psalms 1–2; Psalm 4","read":[["1-chronicles",28,29],["psalms",1,2],["psalms",4,4]],"titles":["David's Charge and the Plan for the Temple","Willing Gifts, David's Prayer, and Solomon Enthroned","The Two Ways: The Tree and the Chaff","The LORD's Anointed King on Zion","Sleep in Peace: An Evening Prayer of Trust"],"guides":[]},
+     {"act":"kingdom","label":"Psalms 5–14","read":[["psalms",5,14]],"titles":["A Morning Prayer at the Door of God's House","How Long, O LORD? A Prayer From the Sickbed","The Righteous Judge: A Plea of the Falsely Accused","What Is Man? God's Majesty and Human Dignity","The LORD Sits Enthroned: Thanks for Justice Done","Why Do You Stand Far Off? The Arrogance of the Wicked","Flee Like a Bird? Refuge When Foundations Shake","Flattering Lips and Flawless Words","How Long, O LORD? From Forsakenness to Song","The Fool Says There Is No God"],"guides":[]},
+     {"act":"kingdom","label":"Psalms 15–17; Psalms 19–24","read":[["psalms",15,17],["psalms",19,24]],"titles":["Who May Dwell on Your Holy Mountain?","You Are My Portion: The Path of Life","Keep Me as the Apple of Your Eye","The Heavens Declare, the Law Revives","Some Trust in Chariots: A Prayer for the King","The King Rejoices in Your Strength","My God, My God, Why Have You Forsaken Me?","The LORD Is My Shepherd","Lift Up Your Heads, O Gates: The King of Glory"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 25–32","read":[["psalms",25,32]],"titles":["To You, O LORD, I Lift Up My Soul","Vindicate Me, O LORD: I Love Your House","The LORD Is My Light and My Salvation","To You I Call, O My Rock","The Voice of the LORD in the Storm","Psalm 30: Mourning Turned to Dancing","Psalm 31: Into Your Hands","Psalm 32: The Happiness of the Forgiven"],"guides":[]},
+-    {"act":"kingdom","label":"Psalm 33; Psalms 35–38","read":[["psalms",33,33],["psalms",35,38]],"titles":["Psalm 33: A New Song to the Creator and King","Psalm 35: Contend with My Opponents, O LORD","Psalm 36: The Fountain of Life","Psalm 37: Do Not Fret; the Meek Will Inherit the Land","Psalm 38: A Sick Man's Confession"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 39–45","read":[["psalms",39,45]],"titles":["Psalm 39: A Breath and a Sojourner","Psalm 40: A New Song and a Willing Heart","Psalm 41: Betrayed by a Friend; Book I Closes","Psalm 42: As the Deer Pants for Water","Psalm 43: Send Out Your Light and Your Truth","Psalm 44: Wake Up, O Lord","Psalm 45: A Song for the King's Wedding"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 46–50; Psalm 53; Psalm 55; Psalm 58","read":[["psalms",46,50],["psalms",53,53],["psalms",55,55],["psalms",58,58]],"titles":["Psalm 46: God Is Our Refuge and Strength","Psalm 47: God Is King of All the Earth","Psalm 48: Great Is the LORD in the City of Our God","Psalm 49: Wealth Cannot Ransom a Life","Psalm 50: God Summons His People to Court","Psalm 53: The Fool Says There Is No God","Psalm 55: Betrayed by a Friend","Psalm 58: There Is Surely a God Who Judges"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 61–68","read":[["psalms",61,68]],"titles":["Psalm 61: Lead Me to the Rock Higher Than I","Psalm 62: My Soul Finds Rest in God Alone","Psalm 63: My Soul Thirsts for You","Psalm 64: Arrows of the Tongue, Arrows of God","Psalm 65: You Crown the Year with Your Bounty","Psalm 66: Come and See What God Has Done","Psalm 67: Let All the Peoples Praise You","Psalm 68: God Arises and Marches in Triumph"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 69–73; Psalm 75","read":[["psalms",69,73],["psalms",75,75]],"titles":["Psalm 69: Waters Up to the Neck","Psalm 70: Hurry, O LORD, to Help Me","Psalm 71: Do Not Forsake Me When I Am Old","Psalm 72: Endow the King with Your Justice","Psalm 73: Envying the Wicked, Finding God","Psalm 75: God Brings One Down and Exalts Another"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 76–78; Psalm 80","read":[["psalms",76,78],["psalms",80,80]],"titles":["Psalm 76: God Known in Judah, Feared by Kings","Psalm 77: Remembering God's Wonders in the Night","Psalm 78: Tell the Next Generation","Psalm 80: Restore Us, O God"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 81–88; Psalm 91","read":[["psalms",81,88],["psalms",91,91]],"titles":["Psalm 81: If Only My People Would Listen","Psalm 82: God Judges the Judges","Psalm 83: When the Nations Conspire","Psalm 84: How Lovely Is Your Dwelling Place","Psalm 85: Revive Us Again","Psalm 86: Give Me an Undivided Heart","Psalm 87: Born in Zion","Psalm 88: Darkness Is My Closest Companion","Psalm 91: In the Shadow of the Almighty"],"guides":["temple-and-synagogue","psalm-91-in-context"]},
+-    {"act":"kingdom","label":"Psalms 92–101","read":[["psalms",92,101]],"titles":["Psalm 92: A Song for the Sabbath","Psalm 93: The LORD Reigns Above the Floods","Psalm 94: The Judge of the Earth Will Not Forsake His People","Psalm 95: Come, Worship, and Do Not Harden Your Hearts","Psalm 96: A New Song for All the Earth","Psalm 97: The LORD Reigns in Cloud and Fire","Psalm 98: Victory, Music, and the Coming Judge","Psalm 99: The Holy King Enthroned on the Cherubim","Psalm 100: Enter His Gates with Thanksgiving","Psalm 101: A King's Vow of Integrity"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 102–105","read":[["psalms",102,105]],"titles":["Psalm 102: A Fading Life and an Unchanging God","Psalm 103: Bless the LORD, O My Soul","Psalm 104: The Creator Who Feeds Every Creature","Psalm 105: He Remembers His Covenant Forever"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 106–109","read":[["psalms",106,109]],"titles":["Psalm 106: We Have Sinned Like Our Fathers","Psalm 107: Let the Redeemed of the LORD Say So","Psalm 108: An Old Song Sung Again","Psalm 109: A Prayer Against the Accuser"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 110–118","read":[["psalms",110,118]],"titles":["Psalm 110: The King Who Is Also a Priest","Psalm 111: Great Are the Works of the LORD","Psalm 112: The Person Who Fears the LORD","Psalm 113: The High God Who Stoops Low","Psalm 114: When Israel Came Out of Egypt","Psalm 115: Not to Us, but to Your Name","Psalm 116: I Love the LORD, for He Has Heard","Psalm 117: All Nations, Praise the LORD","Psalm 118: The Stone the Builders Rejected"],"guides":[]},
+-    {"act":"kingdom","label":"Psalm 119","read":[["psalms",119,119]],"titles":["Psalm 119: A Love Song for God's Word"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 120–125; Psalms 127–136","read":[["psalms",120,125],["psalms",127,136]],"titles":["Psalm 120: A Song of Ascents Far from Home","Psalm 121: The LORD Who Keeps You","Psalm 122: Pray for the Peace of Jerusalem","Psalm 123: Eyes on the Hand of the Master","Psalm 124: If the LORD Had Not Been on Our Side","Psalm 125: Like Mount Zion, Never Shaken","Psalm 127: Unless the LORD Builds the House","Psalm 128: The Table of Those Who Fear the LORD","Psalm 129: Plowed Over, but Not Overcome","Psalm 130: Out of the Depths","Psalm 131: Like a Weaned Child","Psalm 132: David's Oath and the LORD's Oath","Psalm 133: How Good and Pleasant When Brothers Dwell Together","Psalm 134: A Blessing for the Night Watch","Psalm 135: Praise the God Who Acts, Not the Idols Who Can't","Psalm 136: His Loving Devotion Endures Forever"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 138–141; Psalms 143–146; Psalm 148","read":[["psalms",138,141],["psalms",143,146],["psalms",148,148]],"titles":["Psalm 138: Thanks Before the Gods","Psalm 139: Searched and Known","Psalm 140: Rescue from Men of Violence","Psalm 141: Let My Prayer Rise Like Incense","Psalm 143: No One Alive Is Righteous Before You","Psalm 144: What Is Man, That You Regard Him?","Psalm 145: Your Kingdom Is an Everlasting Kingdom","Psalm 146: Put Not Your Trust in Princes","Psalm 148: Heaven and Earth, Praise the LORD"],"guides":[]},
+-    {"act":"kingdom","label":"Psalms 149–150; 1 Kings 3–5","read":[["psalms",149,150],["1-kings",3,5]],"titles":["Psalm 149: A New Song and a Two-Edged Sword","Psalm 150: Let Everything That Has Breath Praise the LORD","Solomon Asks for Wisdom","Solomon's Officials, Prosperity, and Fame","Preparing to Build the House of the LORD"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 25–32","read":[["psalms",25,32]],"titles":["To You, O LORD, I Lift Up My Soul","Vindicate Me, O LORD: I Love Your House","The LORD Is My Light and My Salvation","To You I Call, O My Rock","The Voice of the LORD in the Storm","Mourning Turned to Dancing","Into Your Hands","The Happiness of the Forgiven"],"guides":[]},
++    {"act":"kingdom","label":"Psalm 33; Psalms 35–38","read":[["psalms",33,33],["psalms",35,38]],"titles":["A New Song to the Creator and King","Contend with My Opponents, O LORD","The Fountain of Life","Do Not Fret; the Meek Will Inherit the Land","A Sick Man's Confession"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 39–45","read":[["psalms",39,45]],"titles":["A Breath and a Sojourner","A New Song and a Willing Heart","Betrayed by a Friend; Book I Closes","As the Deer Pants for Water","Send Out Your Light and Your Truth","Wake Up, O Lord","A Song for the King's Wedding"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 46–50; Psalm 53; Psalm 55; Psalm 58","read":[["psalms",46,50],["psalms",53,53],["psalms",55,55],["psalms",58,58]],"titles":["God Is Our Refuge and Strength","God Is King of All the Earth","Great Is the LORD in the City of Our God","Wealth Cannot Ransom a Life","God Summons His People to Court","The Fool Says There Is No God","Betrayed by a Friend","There Is Surely a God Who Judges"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 61–68","read":[["psalms",61,68]],"titles":["Lead Me to the Rock Higher Than I","My Soul Finds Rest in God Alone","My Soul Thirsts for You","Arrows of the Tongue, Arrows of God","You Crown the Year with Your Bounty","Come and See What God Has Done","Let All the Peoples Praise You","God Arises and Marches in Triumph"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 69–73; Psalm 75","read":[["psalms",69,73],["psalms",75,75]],"titles":["Waters Up to the Neck","Hurry, O LORD, to Help Me","Do Not Forsake Me When I Am Old","Endow the King with Your Justice","Envying the Wicked, Finding God","God Brings One Down and Exalts Another"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 76–78; Psalm 80","read":[["psalms",76,78],["psalms",80,80]],"titles":["God Known in Judah, Feared by Kings","Remembering God's Wonders in the Night","Tell the Next Generation","Restore Us, O God"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 81–88; Psalm 91","read":[["psalms",81,88],["psalms",91,91]],"titles":["If Only My People Would Listen","God Judges the Judges","When the Nations Conspire","How Lovely Is Your Dwelling Place","Revive Us Again","Give Me an Undivided Heart","Born in Zion","Darkness Is My Closest Companion","In the Shadow of the Almighty"],"guides":["temple-and-synagogue","psalm-91-in-context"]},
++    {"act":"kingdom","label":"Psalms 92–101","read":[["psalms",92,101]],"titles":["A Song for the Sabbath","The LORD Reigns Above the Floods","The Judge of the Earth Will Not Forsake His People","Come, Worship, and Do Not Harden Your Hearts","A New Song for All the Earth","The LORD Reigns in Cloud and Fire","Victory, Music, and the Coming Judge","The Holy King Enthroned on the Cherubim","Enter His Gates with Thanksgiving","A King's Vow of Integrity"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 102–105","read":[["psalms",102,105]],"titles":["A Fading Life and an Unchanging God","Bless the LORD, O My Soul","The Creator Who Feeds Every Creature","He Remembers His Covenant Forever"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 106–109","read":[["psalms",106,109]],"titles":["We Have Sinned Like Our Fathers","Let the Redeemed of the LORD Say So","An Old Song Sung Again","A Prayer Against the Accuser"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 110–118","read":[["psalms",110,118]],"titles":["The King Who Is Also a Priest","Great Are the Works of the LORD","The Person Who Fears the LORD","The High God Who Stoops Low","When Israel Came Out of Egypt","Not to Us, but to Your Name","I Love the LORD, for He Has Heard","All Nations, Praise the LORD","The Stone the Builders Rejected"],"guides":[]},
++    {"act":"kingdom","label":"Psalm 119","read":[["psalms",119,119]],"titles":["A Love Song for God's Word"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 120–125; Psalms 127–136","read":[["psalms",120,125],["psalms",127,136]],"titles":["A Song of Ascents Far from Home","The LORD Who Keeps You","Pray for the Peace of Jerusalem","Eyes on the Hand of the Master","If the LORD Had Not Been on Our Side","Like Mount Zion, Never Shaken","Unless the LORD Builds the House","The Table of Those Who Fear the LORD","Plowed Over, but Not Overcome","Out of the Depths","Like a Weaned Child","David's Oath and the LORD's Oath","How Good and Pleasant When Brothers Dwell Together","A Blessing for the Night Watch","Praise the God Who Acts, Not the Idols Who Can't","His Loving Devotion Endures Forever"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 138–141; Psalms 143–146; Psalm 148","read":[["psalms",138,141],["psalms",143,146],["psalms",148,148]],"titles":["Thanks Before the Gods","Searched and Known","Rescue from Men of Violence","Let My Prayer Rise Like Incense","No One Alive Is Righteous Before You","What Is Man, That You Regard Him?","Your Kingdom Is an Everlasting Kingdom","Put Not Your Trust in Princes","Heaven and Earth, Praise the LORD"],"guides":[]},
++    {"act":"kingdom","label":"Psalms 149–150; 1 Kings 3–5","read":[["psalms",149,150],["1-kings",3,5]],"titles":["A New Song and a Two-Edged Sword","Let Everything That Has Breath Praise the LORD","Solomon Asks for Wisdom","Solomon's Officials, Prosperity, and Fame","Preparing to Build the House of the LORD"],"guides":[]},
+     {"act":"kingdom","label":"1 Kings 6–7","read":[["1-kings",6,7]],"titles":["Solomon Builds the Temple","Solomon's Palace and the Temple's Bronze and Gold"],"guides":[]},
+     {"act":"kingdom","label":"1 Kings 8","read":[["1-kings",8,8]],"titles":["The Ark, the Glory, and Solomon's Prayer"],"guides":[]},
+     {"act":"kingdom","label":"1 Kings 9–10","read":[["1-kings",9,10]],"titles":["God's Second Warning and Solomon's Building Works","The Queen of Sheba and the Splendor of Solomon"],"guides":[]},
+@@ -545,10 +545,10 @@
+     {"act":"prophets-exile","label":"Jeremiah 31–32","read":[["jeremiah",31,32]],"titles":["Rachel's Tears and the New Covenant","Buying a Field in a Doomed Land"],"guides":[]},
+     {"act":"prophets-exile","label":"Jeremiah 33; Jeremiah 39; 2 Kings 25","read":[["jeremiah",33,33],["jeremiah",39,39],["2-kings",25,25]],"titles":["Healing for the City and a Covenant as Sure as Day","Jerusalem Falls","Jerusalem Falls and a Captive King Is Lifted Up"],"guides":[]},
+     {"act":"prophets-exile","label":"2 Chronicles 36; Lamentations 1–2","read":[["2-chronicles",36,36],["lamentations",1,2]],"titles":["The Fall of Jerusalem and the Decree of Cyrus","How Lonely Lies the City","The Lord Has Become Like an Enemy"],"guides":[]},
+-    {"act":"prophets-exile","label":"Lamentations 3–5; Psalm 74","read":[["lamentations",3,5],["psalms",74,74]],"titles":["Great Is Your Faithfulness","How the Gold Has Grown Dim","Remember, O LORD, What Has Happened to Us","Psalm 74: The Sanctuary in Ruins"],"guides":[]},
+-    {"act":"prophets-exile","label":"Psalm 79; Psalm 89; Jeremiah 40–41","read":[["psalms",79,79],["psalms",89,89],["jeremiah",40,41]],"titles":["Psalm 79: Jerusalem in Rubble","Psalm 89: Where Is Your Loving Devotion of Old?","Freed at Ramah; Gedaliah Governs at Mizpah","The Murder of Gedaliah"],"guides":[]},
++    {"act":"prophets-exile","label":"Lamentations 3–5; Psalm 74","read":[["lamentations",3,5],["psalms",74,74]],"titles":["Great Is Your Faithfulness","How the Gold Has Grown Dim","Remember, O LORD, What Has Happened to Us","The Sanctuary in Ruins"],"guides":[]},
++    {"act":"prophets-exile","label":"Psalm 79; Psalm 89; Jeremiah 40–41","read":[["psalms",79,79],["psalms",89,89],["jeremiah",40,41]],"titles":["Jerusalem in Rubble","Where Is Your Loving Devotion of Old?","Freed at Ramah; Gedaliah Governs at Mizpah","The Murder of Gedaliah"],"guides":[]},
+     {"act":"prophets-exile","label":"Jeremiah 42–44","read":[["jeremiah",42,44]],"titles":["Ask for God's Word, Then Refuse It","Into Egypt, Taking Jeremiah with Them","The Queen of Heaven in Egypt"],"guides":[]},
+-    {"act":"prophets-exile","label":"Jeremiah 52; Obadiah; Psalm 137; Ezekiel 25","read":[["jeremiah",52,52],["obadiah",1,1],["psalms",137,137],["ezekiel",25,25]],"titles":["Jerusalem Falls, and a King Is Released","Edom's Pride and the Day of the LORD","Psalm 137: By the Rivers of Babylon","Judgment on Judah's Neighbors"],"guides":[]},
++    {"act":"prophets-exile","label":"Jeremiah 52; Obadiah; Psalm 137; Ezekiel 25","read":[["jeremiah",52,52],["obadiah",1,1],["psalms",137,137],["ezekiel",25,25]],"titles":["Jerusalem Falls, and a King Is Released","Edom's Pride and the Day of the LORD","By the Rivers of Babylon","Judgment on Judah's Neighbors"],"guides":[]},
+     {"act":"prophets-exile","label":"Ezekiel 26–28","read":[["ezekiel",26,28]],"titles":["Tyre, the Rock in the Sea, Will Fall","A Lament for the Proud Ship Tyre","The King of Tyre Who Said, I Am a God"],"guides":[]},
+     {"act":"prophets-exile","label":"Ezekiel 29–31","read":[["ezekiel",29,31]],"titles":["Pharaoh, the Monster of the Nile","The Day of Egypt and Pharaoh's Broken Arms","The Great Cedar Cut Down: A Warning to Pharaoh"],"guides":[]},
+     {"act":"prophets-exile","label":"Ezekiel 32–33","read":[["ezekiel",32,33]],"titles":["A Lament for Pharaoh and the Nations in the Pit","The Watchman and the News That the City Has Fallen"],"guides":[]},
+@@ -568,7 +568,7 @@
+     {"act":"prophets-exile","label":"Daniel 6–7","read":[["daniel",6,7]],"titles":["Daniel in the Den of Lions","Four Beasts, the Ancient of Days, and the Son of Man"],"guides":[]},
+     {"act":"prophets-exile","label":"Daniel 8–10","read":[["daniel",8,10]],"titles":["The Ram, the Goat, and the Little Horn","Daniel's Prayer and the Seventy Weeks","The Man in Linen and the War Behind History"],"guides":[]},
+     {"act":"prophets-exile","label":"Daniel 11–12","read":[["daniel",11,12]],"titles":["Kings of the North and South","Resurrection at the Time of the End"],"guides":[]},
+-    {"act":"return-silence","label":"Ezra 1–2; Psalm 126; Ezra 3–4","read":[["ezra",1,2],["psalms",126,126],["ezra",3,4]],"titles":["Cyrus's Decree: The Exiles May Go Home","The Roll of Those Who Came Home","Psalm 126: Those Who Sow in Tears","The Altar Rebuilt and the Foundation Laid","Opposition: The Work Is Stopped"],"guides":[]},
++    {"act":"return-silence","label":"Ezra 1–2; Psalm 126; Ezra 3–4","read":[["ezra",1,2],["psalms",126,126],["ezra",3,4]],"titles":["Cyrus's Decree: The Exiles May Go Home","The Roll of Those Who Came Home","Those Who Sow in Tears","The Altar Rebuilt and the Foundation Laid","Opposition: The Work Is Stopped"],"guides":[]},
+     {"act":"return-silence","label":"Isaiah 56–59","read":[["isaiah",56,59]],"titles":["A House of Prayer for All Nations","The High and Holy One Dwells with the Lowly","The Fast God Chooses","The Redeemer Will Come to Zion"],"guides":[]},
+     {"act":"return-silence","label":"Isaiah 60–64","read":[["isaiah",60,64]],"titles":["Arise, Shine: The Nations Come to Zion's Light","The Spirit of the Lord Is on Me: Good News to the Poor","A New Name for Zion: My Delight Is in Her","The Warrior from Edom and a Prayer for Mercy","If Only You Would Rend the Heavens"],"guides":[]},
+     {"act":"return-silence","label":"Isaiah 65–66; Ezra 5","read":[["isaiah",65,66],["ezra",5,5]],"titles":["Here I Am: New Heavens and a New Earth","Heaven My Throne: Zion's Children and the Gathering of Nations","The Prophets Speak and the Work Resumes"],"guides":[]},
+@@ -583,7 +583,7 @@
+     {"act":"return-silence","label":"Nehemiah 3–5","read":[["nehemiah",3,5]],"titles":["The Builders of the Wall","Building with One Hand, Holding a Weapon with the Other","Brothers Selling Brothers: Nehemiah Confronts Debt and Greed"],"guides":[]},
+     {"act":"return-silence","label":"Nehemiah 6–8","read":[["nehemiah",6,8]],"titles":["Traps, Rumors, and a Wall Finished in Fifty-Two Days","Guarding the City and Remembering Who Came Home","The Law Read Aloud and the Joy of the Lord"],"guides":[]},
+     {"act":"return-silence","label":"Nehemiah 9–10","read":[["nehemiah",9,10]],"titles":["A People Confesses: God's Faithfulness and Israel's Failure","Signing the Pledge: A Covenant to Keep God's Law"],"guides":[]},
+-    {"act":"return-silence","label":"Nehemiah 11–12; Psalm 147","read":[["nehemiah",11,12],["psalms",147,147]],"titles":["Filling the Holy City: One in Ten Moves to Jerusalem","Two Choirs on the Wall: The Dedication of Jerusalem","Psalm 147: The God of the Stars Heals the Brokenhearted"],"guides":[]},
++    {"act":"return-silence","label":"Nehemiah 11–12; Psalm 147","read":[["nehemiah",11,12],["psalms",147,147]],"titles":["Filling the Holy City: One in Ten Moves to Jerusalem","Two Choirs on the Wall: The Dedication of Jerusalem","The God of the Stars Heals the Brokenhearted"],"guides":[]},
+     {"act":"return-silence","label":"Nehemiah 13; Joel 1–2","read":[["nehemiah",13,13],["joel",1,2]],"titles":["Broken Promises and Nehemiah's Last Reforms","The Locusts Have Eaten Everything","Rend Your Hearts: The Day, the Return, and the Spirit"],"guides":[]},
+     {"act":"return-silence","label":"Joel 3; Malachi 1–4","read":[["joel",3,3],["malachi",1,4]],"titles":["The Valley of Decision and a Fountain from Zion","I Have Loved You: Contempt at the Altar","Broken Faith: The Priests, and the Wife of Your Youth","The Messenger, the Refiner, and the Scroll of Remembrance","The Sun of Righteousness and the Coming of Elijah"],"guides":["between-the-testaments"]},
+     {"act":"christ","label":"Matthew 1–4","read":[["matthew",1,4]],"titles":["The Genealogy and Birth of Jesus the Messiah","The Magi, King Herod, and the Flight to Egypt","John the Baptist and the Baptism of Jesus","Tested in the Wilderness, Light in Galilee"],"guides":[]},
+diff --git a/client/public/llms.txt b/client/public/llms.txt
+index 36bdf0f4..8c3304bf 100644
+--- a/client/public/llms.txt
++++ b/client/public/llms.txt
+@@ -28,7 +28,7 @@ doors: Study, Essays, Books, Resources, and About.
+   https://www.livewellbyjamesbell.co/study/bible
+ - Read the whole story in 2027 (a daily reading plan: all 1,189 chapters in
+   365 days, in the order the story happened, each day linked to its chapters
+-  and to the context guide that belongs to it):
++  and, where one belongs, to a context guide):
+   https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027
+ - Church history (the councils, the figures, the heresies, and the arc from
+   Pentecost to today): https://www.livewellbyjamesbell.co/theology/history
+diff --git a/client/src/index.css b/client/src/index.css
+index f0aeee3b..dd14f6a2 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -640,7 +640,8 @@ img{display:block;max-width:100%}
+ .sy-chapter:hover .sy-chapter__ref{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+ .sy-label{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-2) 0 6px}
+ .sy-guides ul{list-style:none;margin:0;padding:0}
+-.sy-guides li{font-family:var(--U);font-size:15px;line-height:1.5;padding:6px 0}
++.sy-guides li{font-family:var(--U);font-size:15px;line-height:1.5}
++.sy-guides a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
+ .sy-day__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
+ .sy-step{display:flex;justify-content:space-between;gap:12px;margin-top:var(--s-3);padding-top:var(--s-2);border-top:1px solid var(--border)}
+ .sy-step__btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);background:transparent;border:none;cursor:pointer}
+diff --git a/client/src/lib/myProgress.test.ts b/client/src/lib/myProgress.test.ts
+index fbc0710e..3246ce22 100644
+--- a/client/src/lib/myProgress.test.ts
++++ b/client/src/lib/myProgress.test.ts
+@@ -25,8 +25,8 @@ describe("collectProgress", () => {
+   });
+ 
+   it("lists the 2027 reading plan by the reader's place", () => {
+-    localStorage.setItem("livewell-progress-story-2027", JSON.stringify([1, 2, 4]));
+-    expect(collectProgress()).toEqual([expect.objectContaining({ href: "/study/bible/guides/whole-story-2027", kind: "Reading plan", detail: "Day 3 is next" })]);
++    localStorage.setItem("livewell-progress-story-2027", JSON.stringify([40, 41, 42]));
++    expect(collectProgress()).toEqual([expect.objectContaining({ href: "/study/bible/guides/whole-story-2027", kind: "Reading plan", detail: "Day 43 is next" })]);
+   });
+ 
+   it("skips corrupt or unfamiliar values", () => {
+diff --git a/client/src/lib/myProgress.ts b/client/src/lib/myProgress.ts
+index 091c3627..bfad73a5 100644
+--- a/client/src/lib/myProgress.ts
++++ b/client/src/lib/myProgress.ts
+@@ -9,7 +9,7 @@
+  */
+ import { isArrayOf, readStoredJSON } from "@/lib/storage";
+ import { isPublicEssay, shelfEntry } from "@/lib/shelf";
+-import { PLAN_PATH, nextUnreadDay, readPlanDays } from "@/lib/storyPlan";
++import { PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
+ 
+ export interface ProgressRow {
+   href: string;
+@@ -115,7 +115,7 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
+   // Read the whole story in 2027 (lib/storyPlan): the reader's place, never a count behind.
+   const planDays = readPlanDays();
+   if (planDays.size) {
+-    const next = nextUnreadDay(planDays);
++    const next = readerPlace(planDays);
+     rows.push({ href: PLAN_PATH, title: "Read the whole story in 2027", kind: "Reading plan", detail: next ? `Day ${next} is next` : "Every day read", when: "" });
+   }
+ 
+diff --git a/client/src/lib/storyPlan.test.ts b/client/src/lib/storyPlan.test.ts
+index 684a2a48..10376164 100644
+--- a/client/src/lib/storyPlan.test.ts
++++ b/client/src/lib/storyPlan.test.ts
+@@ -8,19 +8,20 @@ import { afterEach, describe, expect, it } from "vitest";
+ import fs from "node:fs";
+ import path from "node:path";
+ 
+-import { planProblems } from "../../../scripts/lib/story-plan.mjs";
++import { chapterTitle, planProblems } from "../../../scripts/lib/story-plan.mjs";
+ import {
+   PLAN_DAYS,
+   PLAN_PROGRESS_KEY,
++  chapterName,
+   chaptersOf,
+   dateForDay,
+   dayFromQuery,
+   longDate,
+-  nextUnreadDay,
+   openingDay,
+   planDayFor,
+   planMonths,
+   readPlanDays,
++  readerPlace,
+   setPlanDay,
+   type StoryPlan,
+ } from "./storyPlan";
+@@ -56,6 +57,14 @@ describe("the committed plan", () => {
+     expect(PLAN.chapters).toBe(1189);
+   });
+ 
++  it("lists a psalm's title without repeating the reference it sits under", () => {
++    expect(chapterTitle("Psalm 51: Create in Me a Clean Heart", "psalms", 51)).toBe("Create in Me a Clean Heart");
++    expect(chapterTitle("Psalm 51", "psalms", 51)).toBe("Psalm 51");
++    expect(chapterTitle("Hannah's Prayer and Samuel's Birth", "1-samuel", 1)).toBe("Hannah's Prayer and Samuel's Birth");
++    const repeats = PLAN.days.flatMap((d) => chaptersOf(d)).filter((c) => c.slug === "psalms" && c.title.startsWith(`Psalm ${c.chapter}:`));
++    expect(repeats).toEqual([]);
++  });
++
+   it("starts in Genesis, ends in Revelation, and opens each act on a day of its own", () => {
+     expect(PLAN.days[0].read[0]).toEqual(["genesis", 1, 2]);
+     expect(PLAN.days[PLAN_DAYS - 1].read.at(-1)).toEqual(["revelation", 20, 22]);
+@@ -84,6 +93,11 @@ describe("days and dates", () => {
+     expect(planDayFor(new Date(2028, 0, 1))).toBe(366);
+   });
+ 
++  it("names one psalm as the day's label does", () => {
++    expect(chapterName(PLAN.books, "psalms", 51)).toBe("Psalm 51");
++    expect(chapterName(PLAN.books, "2-samuel", 12)).toBe("2 Samuel 12");
++  });
++
+   it("dates a day in the reader's calendar", () => {
+     expect(dateForDay(1).toDateString()).toBe(new Date(2027, 0, 1).toDateString());
+     expect(dateForDay(60).toDateString()).toBe(new Date(2027, 2, 1).toDateString());
+@@ -123,14 +137,20 @@ describe("the reader's place", () => {
+     expect(readPlanDays().size).toBe(0);
+   });
+ 
+-  it("names the first day not yet read, and nothing once all are", () => {
+-    expect(nextUnreadDay(new Set([1, 2, 4]))).toBe(3);
+-    expect(nextUnreadDay(new Set(Array.from({ length: PLAN_DAYS }, (_, i) => i + 1)))).toBeNull();
++  it("puts the reader after the furthest day read, never back at a gap", () => {
++    expect(readerPlace(new Set([1, 2, 3]))).toBe(4);
++    expect(readerPlace(new Set([1, 2, 4]))).toBe(5);
++    // Joined the plan on day 40 and read on: the place is day 43, not day 1.
++    expect(readerPlace(new Set([40, 41, 42]))).toBe(43);
++    // The last day read with some left: the first of those.
++    expect(readerPlace(new Set([1, 2, 365]))).toBe(3);
++    expect(readerPlace(new Set(Array.from({ length: PLAN_DAYS }, (_, i) => i + 1)))).toBeNull();
+   });
+ 
+   it("opens on the address, then the reader's place, then today, then day 1", () => {
+     expect(openingDay(90, new Set([1]), 40)).toBe(90);
+     expect(openingDay(null, new Set([1, 2]), 40)).toBe(3);
++    expect(openingDay(null, new Set([40]), 45)).toBe(41);
+     expect(openingDay(null, new Set(), 40)).toBe(40);
+     expect(openingDay(null, new Set(), -65)).toBe(1);
+     expect(openingDay(null, new Set(), 366)).toBe(1);
+diff --git a/client/src/lib/storyPlan.ts b/client/src/lib/storyPlan.ts
+index 047ff8f0..44d2ef0c 100644
+--- a/client/src/lib/storyPlan.ts
++++ b/client/src/lib/storyPlan.ts
+@@ -92,6 +92,11 @@ export function dayFromQuery(search: string): number | null {
+   return n >= 1 && n <= PLAN_DAYS ? n : null;
+ }
+ 
++/** "Genesis 3", "Psalm 51" (one psalm, as the day's label prints it). */
++export function chapterName(books: Record<string, string>, slug: string, chapter: number): string {
++  return `${slug === "psalms" ? "Psalm" : (books[slug] ?? slug)} ${chapter}`;
++}
++
+ /** Each chapter of a day: { slug, chapter, title }. */
+ export function chaptersOf(day: PlanDay): { slug: string; chapter: number; title: string }[] {
+   const out: { slug: string; chapter: number; title: string }[] = [];
+@@ -128,8 +133,19 @@ export function setPlanDay(day: number, read: boolean): boolean {
+   return writeStoredJSON(PLAN_PROGRESS_KEY, Array.from(s).sort((a, b) => a - b));
+ }
+ 
+-/** The reader's place: the first day not yet marked read, or null when every day is. */
+-export function nextUnreadDay(done: Set<number>): number | null {
++/**
++ * The reader's place: the day after the furthest day marked read, so a reader
++ * who joins on day 40, or skips a week, is not sent back to the first gap.
++ * When the last day is read but some are not, the first of those; null when
++ * every day is read.
++ */
++export function readerPlace(done: Set<number>): number | null {
++  if (done.size >= PLAN_DAYS) return null;
++  let furthest = 0;
++  done.forEach((d) => {
++    if (d > furthest) furthest = d;
++  });
++  if (furthest < PLAN_DAYS) return furthest + 1;
+   for (let d = 1; d <= PLAN_DAYS; d++) if (!done.has(d)) return d;
+   return null;
+ }
+@@ -140,7 +156,7 @@ export function nextUnreadDay(done: Set<number>): number | null {
+  */
+ export function openingDay(query: number | null, done: Set<number>, today: number): number {
+   if (query) return query;
+-  if (done.size) return nextUnreadDay(done) ?? PLAN_DAYS;
++  if (done.size) return readerPlace(done) ?? PLAN_DAYS;
+   if (today >= 1 && today <= PLAN_DAYS) return today;
+   return 1;
+ }
+diff --git a/client/src/pages/StudyBibleYear.test.tsx b/client/src/pages/StudyBibleYear.test.tsx
+index 1f86cb80..52669413 100644
+--- a/client/src/pages/StudyBibleYear.test.tsx
++++ b/client/src/pages/StudyBibleYear.test.tsx
+@@ -139,4 +139,38 @@ describe("Read the whole story in 2027", () => {
+     expect(await dayCard(PLAN.days[39].label)).toBeInTheDocument();
+   });
+ 
++  it("keeps the place of a reader who joined late after the furthest day read, not at day 1", async () => {
++    at(new Date(2027, 1, 12, 7)); // day 43
++    window.localStorage.setItem(PLAN_PROGRESS_KEY, JSON.stringify([40, 41, 42]));
++    serve();
++    renderAt(PLAN_PATH);
++    const card = await dayCard(PLAN.days[42].label);
++    expect(card.querySelector(".sy-day__when")?.textContent).toBe("Day 43 of 365 · Friday, February 12");
++    expect(within(card).queryByText("Your place on this device:", { exact: false })).toBeNull();
++    expect(card.textContent).not.toMatch(/day 1\b/);
++  });
++
++  it("lets the reader close the month the day sits in", async () => {
++    at(new Date(2026, 9, 27, 9));
++    serve();
++    renderAt(PLAN_PATH);
++    await dayCard(PLAN.days[0].label);
++    const year = screen.getByRole("region", { name: "The year, day by day" });
++    const january = within(year).getByText("January").closest("details")!;
++    expect(within(year).getAllByRole("listitem")).toHaveLength(31);
++    january.open = false;
++    fireEvent(january, new Event("toggle"));
++    expect(within(year).queryAllByRole("listitem")).toHaveLength(0);
++    expect(january.open).toBe(false);
++  });
++
++  it("names a single psalm as the day's label does", async () => {
++    const n = PLAN.days.findIndex((d) => d.read.some(([slug, a, b]) => slug === "psalms" && a === 51 && b === 51)) + 1;
++    at(new Date(2026, 9, 27, 9));
++    serve();
++    renderAt(`${PLAN_PATH}?day=${n}`);
++    const card = await dayCard(PLAN.days[n - 1].label);
++    expect(within(card).getByRole("link", { name: /^Psalm 51/ })).toHaveAttribute("href", "/study/bible/psalms/51?path=story");
++  });
++
+ });
+diff --git a/client/src/pages/StudyBibleYear.tsx b/client/src/pages/StudyBibleYear.tsx
+index e0419cfe..5d98cb35 100644
+--- a/client/src/pages/StudyBibleYear.tsx
++++ b/client/src/pages/StudyBibleYear.tsx
+@@ -28,16 +28,17 @@ import { chapterHref } from "@/lib/bible";
+ import {
+   PLAN_DAYS,
+   PLAN_PATH,
++  chapterName,
+   chaptersOf,
+   dayFromQuery,
+   dateForDay,
+   fetchStoryPlan,
+   longDate,
+-  nextUnreadDay,
+   openingDay,
+   planDayFor,
+   planMonths,
+   readPlanDays,
++  readerPlace,
+   setPlanDay,
+   shortDate,
+   type StoryPlan,
+@@ -50,7 +51,7 @@ export default function StudyBibleYear() {
+     <Layout>
+       <SEOMeta
+         title="Read the Whole Story of the Bible in 2027"
+-        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, the guide to their world, your place kept on this device, and a reminder on your phone."
++        description="A daily Bible reading plan for 2027: all 1,189 chapters in a year, in the order the story happened, with each day's chapters, a guide to their world where one belongs, your place kept on this device, and a reminder on your phone."
+         url="https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027"
+       />
+       <PageHead
+@@ -119,9 +120,8 @@ function Plan({ plan }: { plan: StoryPlan }) {
+   const guides = d.guides
+     .map(slug => plan.guides.find(g => g.slug === slug))
+     .filter((g): g is { slug: string; title: string } => !!g);
+-  const place = nextUnreadDay(done);
++  const place = readerPlace(done);
+   const read = done.has(day);
+-  const name = (slug: string) => plan.books[slug] ?? slug;
+   const inYear = today >= 1 && today <= PLAN_DAYS;
+   const reminder =
+     today < 1
+@@ -156,7 +156,7 @@ function Plan({ plan }: { plan: StoryPlan }) {
+           {act &&
+             (actBegins ? (
+               <p className="sy-day__act">
+-                {act.act} begins today:{" "}
++                {act.act} begins here:{" "}
+                 <Link href={`/study/bible/story/${act.id}`} className="sy-link">
+                   {act.title}
+                 </Link>
+@@ -177,7 +177,7 @@ function Plan({ plan }: { plan: StoryPlan }) {
+                   className="sy-chapter"
+                 >
+                   <span className="sy-chapter__ref">
+-                    {name(c.slug)} {c.chapter}
++                    {chapterName(plan.books, c.slug, c.chapter)}
+                   </span>
+                   {c.title && (
+                     <span className="sy-chapter__title">{c.title}</span>
+@@ -353,20 +353,26 @@ function Year({
+ }) {
+   const first = (n: number) => {
+     const [slug, from] = plan.days[n - 1].read[0];
+-    return `${plan.books[slug] ?? slug} ${from}`;
++    return chapterName(plan.books, slug, from);
+   };
+   const last = (n: number) => {
+     const runs = plan.days[n - 1].read;
+     const [slug, , to] = runs[runs.length - 1];
+-    return `${plan.books[slug] ?? slug} ${to}`;
++    return chapterName(plan.books, slug, to);
+   };
+   // Only an open month renders its days, so the page holds a month of rows, not a year of them.
+   const months = planMonths();
+   const monthOf = (n: number) =>
+     months.find(m => n >= m.first && n <= m.last)?.name ?? "";
+   const [open, setOpen] = useState(() => new Set([monthOf(day)]));
+-  const current = monthOf(day);
+-  if (!open.has(current)) setOpen(new Set(open).add(current));
++  // When the day changes (a step, a pick, today's day), open its month so its
++  // row shows; the reader can still close any month, this one included.
++  const [shownDay, setShownDay] = useState(day);
++  if (shownDay !== day) {
++    setShownDay(day);
++    const current = monthOf(day);
++    if (!open.has(current)) setOpen(new Set(open).add(current));
++  }
+   const toggle = (name: string, isOpen: boolean) => {
+     if (open.has(name) === isOpen) return;
+     const next = new Set(open);
+diff --git a/scripts/lib/story-plan.mjs b/scripts/lib/story-plan.mjs
+index e85cfe5f..80f9cfe1 100644
+--- a/scripts/lib/story-plan.mjs
++++ b/scripts/lib/story-plan.mjs
+@@ -115,6 +115,17 @@ export function labelOf(runs, book) {
+     .join("; ");
+ }
+ 
++/**
++ * A chapter's title as the day lists it, under its reference: most psalm
++ * titles repeat the reference ("Psalm 51: Create in Me a Clean Heart"), so the
++ * repeat is dropped.
++ */
++export function chapterTitle(title, slug, chapter) {
++  if (slug !== "psalms") return title;
++  const bare = title.replace(new RegExp(`^Psalm ${chapter}:\\s*`), "");
++  return bare || title;
++}
++
+ function wordCount(slug, chapter) {
+   const shard = readJson(`client/public/bible/text/${slug}/${chapter}.json`);
+   let n = 0;
+@@ -153,7 +164,7 @@ export function buildPlan() {
+       act: own[0].act,
+       label: labelOf(runs, book),
+       read: runs,
+-      titles: own.map((s) => index.titles?.[s.slug]?.[s.chapter - 1] ?? ""),
++      titles: own.map((s) => chapterTitle(index.titles?.[s.slug]?.[s.chapter - 1] ?? "", s.slug, s.chapter)),
+       guides: [],
+     });
+   }
+-- 
+2.43.0
+

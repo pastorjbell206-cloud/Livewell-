@@ -147,10 +147,33 @@ describe("mountAfterStaticHero", () => {
     expect(mount).toHaveBeenCalledTimes(1);
     expect(instances[0].disconnected).toBe(true);
   });
+
+  it("waits up to 2.5 s by default: a slow machine reports the hero's paint late", () => {
+    renderShell();
+    const mount = vi.fn();
+    mountAfterStaticHero(mount, { path: "/", Observer: fakeObserver().Observer });
+    vi.advanceTimersByTime(2499);
+    expect(mount).not.toHaveBeenCalled();
+    vi.advanceTimersByTime(1);
+    expect(mount).toHaveBeenCalledTimes(1);
+  });
+
+  it("mounts at once on a tap or a key, then never again", () => {
+    renderShell();
+    const { Observer, instances } = fakeObserver();
+    const mount = vi.fn();
+    mountAfterStaticHero(mount, { path: "/", Observer });
+    document.querySelector(".home-hero__text")!.dispatchEvent(new Event("pointerdown", { bubbles: true }));
+    expect(mount).toHaveBeenCalledTimes(1);
+    expect(instances[0].disconnected).toBe(true);
+    document.dispatchEvent(new KeyboardEvent("keydown", { bubbles: true }));
+    vi.advanceTimersByTime(3000);
+    expect(mount).toHaveBeenCalledTimes(1);
+  });
 });
 
 describe("the static hero the gate watches", () => {
-  it("is still where the selector looks, with the portrait low priority in both copies", () => {
+  it("is still where the selector looks, and carries no image to compete for the largest paint", () => {
     // The marker prerender-heads.mjs replaces sits inside #lw-shell...
     const html = read("client/index.html");
     const shell = html.indexOf('<div id="lw-shell"');
@@ -164,10 +187,11 @@ describe("the static hero the gate watches", () => {
     expect(STATIC_HERO_SELECTOR).toBe("#lw-shell .home-hero");
     expect(prerender).toContain('<section class="home-hero">');
 
-    // A high-priority portrait is charged to LCP; keep both copies low.
-    expect(prerender).toMatch(/<img class="home-hero__portrait"[^>]*fetchpriority="low"/);
-    expect(read("client/src/pages/Home.tsx")).toMatch(
-      /className="home-hero__portrait"[\s\S]{0,200}?fetchPriority="low"/
-    );
+    // The hero is text only (no photograph of James on the front page), so
+    // the largest paint is the headline or the sentence under it.
+    const hero = prerender.slice(prerender.indexOf("function homeHeroHtml"), prerender.indexOf("function writeRoute"));
+    expect(hero).not.toContain("<img");
+    const home = read("client/src/pages/Home.tsx");
+    expect(home.slice(home.indexOf('<section className="home-hero">'), home.indexOf("</section>"))).not.toContain("<img");
   });
 });

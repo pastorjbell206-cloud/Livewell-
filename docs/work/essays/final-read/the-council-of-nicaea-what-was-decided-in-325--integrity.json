@@ -1,0 +1,70 @@
+{
+  "slug": "the-council-of-nicaea-what-was-decided-in-325",
+  "lens": "integrity (facts, quotations, Scripture, ledger agreement)",
+  "audited_text": "/home/user/livewell-land/client/public/essays/the-council-of-nicaea-what-was-decided-in-325.json (body identical to /home/user/livewell-land/docs/work/essays/the-council-of-nicaea-what-was-decided-in-325.md minus title and standfirst)",
+  "ledger": "/home/user/livewell-land/docs/work/essays/ledgers/the-council-of-nicaea-what-was-decided-in-325.md",
+  "web_searches_used": 6,
+  "findings": [
+    {
+      "severity": "should",
+      "where": "How the Bishops Chose Their Words, banquet paragraph: \"Theodoret says Constantine pressed his lips to the wounds of bishops whose eyes had been torn out for the faith.\" (ledger line 113)",
+      "problem": "(c) The paraphrase overstates the source. Theodoret HE 1.10 (NPNF, WDB thd1, read in full on this pass): \"Observing that some among them had had the right eye torn out, and learning that this mutilation had been undergone for the sake of religion, he placed his lips upon the wounds.\" The source says one eye (the right). The essay's plural \"eyes\" reads as bishops who were blinded. The ledger line repeats the essay's wording and hides the \"right eye\" in its own quotation.",
+      "fix": "Replace with: \"Theodoret says Constantine pressed his lips to the wounds of bishops who had lost an eye for the faith.\" Update ledger line 113 to match. This fits the essay's later line, \"Some of the men who answered him had lost an eye or the use of their hands.\""
+    },
+    {
+      "severity": "consider",
+      "where": "Opening, third paragraph: \"Constantine's first instinct, that this was a quarrel over words, sounds a good deal more like most American Christians than anything the bishops said.\"",
+      "problem": "(a) The ledger has no line for this sentence. \"Most American Christians\" is an unsupported quantifier presented as fact. The brief lists overclaims as a tell.",
+      "fix": "Change \"most American Christians\" to \"many American Christians\". Add a ledger line marking it General (no figure claimed)."
+    },
+    {
+      "severity": "consider",
+      "where": "What Nicaea Asks of Christians Today: \"Constantine thought the bishops were quarreling over a word.\" (also the opening's \"a quarrel over words\")",
+      "problem": "(a) The ledger has no line attributing this view to Constantine. The source supports the plural only. VC 2.71 (WDB vc2): \"on the ground of some trifling and foolish verbal difference\". When he wrote, no single word was at issue, and at Nicaea Constantine himself pressed homoousios (ledger line 90). The singular \"a word\" therefore misstates his view.",
+      "fix": "Change to: \"Constantine thought the bishops were quarreling over words.\" Add a ledger line for both sentences citing VC 2.71, \"some trifling and foolish verbal difference\" (with 2.68 \"truly insignificant\" and 2.71 \"truly idle question\")."
+    },
+    {
+      "severity": "consider",
+      "where": "What Arius Was Trying to Protect: \"(The ESV, translating the Hebrew, says \\\"possessed\\\" in Proverbs 8:22.)\" (ledger line 36)",
+      "problem": "(e) The sentence is accurate about the ESV, but the contrast with the Greek \"created\" implies the Hebrew means \"possessed\". The BSB in the repo, translating the same Hebrew (client/public/bible/ch/proverbs/8.json), reads \"The LORD created me as His first course\". Search results show the NRSV also says \"created\", the ESV footnote offers \"fathered\", and the Hebrew qanah is disputed. A skeptic who checks another translation will feel handled.",
+      "fix": "Replace with: \"(The Hebrew verb is less clear-cut, and the ESV says \\\"possessed\\\" in Proverbs 8:22.)\" No new citation is needed."
+    },
+    {
+      "severity": "consider",
+      "where": "What Arius Was Trying to Protect: \"Many more Americans hold a looser one without thinking about doctrine at all. Jesus was the best man who ever lived, and that is as far as they will go.\" (ledger line 40, marked General)",
+      "problem": "(b) The ledger line rests on general knowledge while the essay states the claim as fact. A source now supports it. Search on 2026-10-28: the Ligonier/Lifeway State of Theology 2022 white paper (research.lifeway.com) reports 53% of U.S. adults agree \"Jesus was a great teacher, but he was not God\". Tabletalk reports 43% of evangelicals. Baptist Press and Christianity Today coverage appeared in the same results.",
+      "fix": "No essay change. Upgrade ledger line 40 from General to Verified in substance, citing the Ligonier State of Theology 2022 figure (53% of U.S. adults). Do not add the number to the essay unless a later pass opens the white paper itself."
+    },
+    {
+      "severity": "consider",
+      "where": "Ledger gaps for two sentences: \"Many in the hall had been tortured for Christ.\" and \"called the faith many had absorbed from their parents and churches moralistic therapeutic deism\"",
+      "problem": "(a) Neither clause has its own ledger line. Both are supported. Theodoret HE 1.7 (WDB thd1): \"many, like the holy apostle, bore in their bodies the marks of the Lord Jesus Christ\". On Smith and Denton, search results (America magazine, religion-online.org, lifeandleadership.com summary) report that teens mostly believe what their parents believe, and quote the book on MTD \"colonizing many historical religious traditions\".",
+      "fix": "No essay change. Add the two lines to the ledger: the Theodoret passage, and \"absorbed from their parents and churches\" as Verified in substance (Smith and Denton, Soul Searching, 2005, via the reviews named)."
+    },
+    {
+      "severity": "consider",
+      "where": "Ending: \"The bishops gave John's answer in the language of their own century. The Word was God, and the Word became flesh.\"",
+      "problem": "(e) This uses ESV words from John 1:1 and 1:14 without quotation marks or reference. It works as an allusion: John 1:1 is quoted with its reference earlier, and John 1:14 is quoted in full in the Closing Texts just below.",
+      "fix": "No change required. If a reference is wanted, add \"(John 1:1, 14)\" after \"flesh\"."
+    },
+    {
+      "severity": "consider",
+      "where": "/home/user/Livewell-/docs/work/essays/the-council-of-nicaea-what-was-decided-in-325.md, lines 7 and 45",
+      "problem": "(c) The Livewell- working copy still has the pre-closing-pass wording: \"the first of the church's great councils\" and the softened translation line. The published JSON and the livewell-land markdown carry the restored wording that ledger lines 10 and 92 verify. A fixer editing the Livewell- copy would undo the restorations.",
+      "fix": "Edit from the livewell-land copy, or sync the Livewell- copy to it before making the changes above."
+    }
+  ],
+  "clean_checks": [
+    "Every non-Scripture quotation (about 45 strings) rechecked with a new case- and punctuation-sensitive script against the WDB NPNF/ANF texts in the scratchpad; the ledger's own script lowercases and strips quote marks. All exact, including capitals (\"the Council looked like\", \"Giver-of-Life\"). The two expected editorial insertions are \"True Power t and Image of the Father\" (stray footnote letter) and the Greek glosses in the anathema; both match once those are removed.",
+    "Creed block compared with Percival's text (nicenecreed) after removing the transliterated Greek glosses: exact, including [from heaven] and [we believe]. The anathema clause is also exact.",
+    "Speaker and context read for: Constantine's letter (VC 2.68, 2.71); Socrates 1.5 on Arius (\"said he\" in the source, \"he said\" outside the quotation marks); Alexander's \"nearly a hundred\"; Arius to Eusebius (\"my fellow-Lucianist\", \"perfect God\", \"We are persecuted\"); Arius to Alexander (De Synodis 16, including \"one in essence\" listed with Manichaeus); De Decretis 13 (Proverbs 8, \"Eusebius and his fellows\"), 19 to 21; Ar 2.24 and 2.70; Incarnation 54; VC 3.8, 3.15, 3.19; Theodoret 1.6, 1.10; Socrates 1.8 (homoousios insertion); Jerome's Chronicle and Against the Luciferians 19; Sozomen 7.4 and 7.5 (forty years; the little house; the 380 law); Philostorgius 1.9, 1.10, 2.2, 2.7.",
+    "London Baptist Confession 2.3 (lbc.json, Year 1677): \"of one substance, power, and Eternity\" and \"the foundation of all our Communion with God, and comfortable dependance on him\" are exact, original spelling kept.",
+    "Scripture: all 18 quotations matched word for word against the local ESV copy (nic/esv/json/ESV.json): Deut 6:4, 1 Cor 8:6, Isa 45:23, John 1:1, John 20:28 (twice), Isa 42:8, Rom 1:25, John 14:28, Col 1:15, Heb 1:3, 2 Pet 1:4, John 14:9, Col 2:9 (twice), Matt 16:15, John 1:14; Prov 8:22 \"possessed\" also confirmed. Each reference was checked for sense against the BSB chapter files, including Gen 14:14 (318 trained men; Lot named at 14:12) and Phil 2:10-11.",
+    "Numbers and dates agree with the ledger and the sources: late 324; around 318; Socrates about a century later (c. 439); May 20; more than 250; 318; nearly a hundred; two refusers (Secundus, Theonas); three months; three years; twenty canons; 328; 335 Tyre; 336; 337; 359 Ariminum; Jerome some twenty years later (c. 379); five exiles; forty years; 380; 381; 1900; 1677; 2014; within about twenty-five years.",
+    "Restorations (g): none outstanding. Both 'Original wording, for restoring' items are already restored in the published text. This pass's goarch.org search confirmed 'The Importance of the Council of Nicaea (325 AD)' calls Nicaea the largest gathering of Christian leaders up to that point. The 1900 printing rests on the closing pass's catalogue records (Marsh's Library, Internet Archive). Corrections 3 to 5 follow the sources and appear in the essay as the ledger states.",
+    "Living persons: the Bart Ehrman sentence fairly states his How Jesus Became God (2014) thesis (search: exaltation then incarnation christologies; the earliest views later deemed heretical) and his move from evangelical faith to agnosticism. Smith and Denton are summarized fairly (tenets as corrected in Correction 5). James's 'I pastor a Baptist church' is allowed by NOTES.md, with no Southern Baptist implication.",
+    "Mechanical: no em-dash. The only en-dash is Philippians 2:10–11. Exclamation points appear only inside John 20:28. No CLAUDE.md forbidden word or phrase, and no steelman, verdict, indictment, honest, fair, 'the record', 'none of this' or 'Consider'.",
+    "Links: the three /writing slugs are in link-targets.json and in client/src/lib/shelf.json.",
+    "The ledger's one open item (recheck the ESV wording with James's API key) still stands. Against the local ESV copy every verse matches, so nothing in the essay depends on it."
+  ]
+}

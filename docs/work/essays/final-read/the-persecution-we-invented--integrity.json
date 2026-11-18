@@ -1,0 +1,112 @@
+{
+  "slug": "the-persecution-we-invented",
+  "lens": "integrity: every checkable claim (quotation, number, date, name, title, attribution) traced to its ledger line; Scripture against ESV and BSB sense; living persons; restorations",
+  "source_read": {
+    "essay": "/home/user/livewell-land/client/public/essays/the-persecution-we-invented.json (body identical to docs/work/essays/the-persecution-we-invented.md below the title and standfirst)",
+    "ledger": "/home/user/livewell-land/docs/work/essays/ledgers/the-persecution-we-invented.md"
+  },
+  "findings": [
+    {
+      "where": "Why the Word Is So Tempting, paragraph 3, sentence 1: \"The sociologists Bradley Campbell and Jason Manning have written about what happens when that instinct comes loose from its source.\"",
+      "problem": "(a)/(f) This attributes a view to two living scholars that no ledger line supports. The sentence says they wrote about the Christian-taught regard for victims (Holland's thesis, the paragraph before) coming loose from Christianity. Ledger line 119 verifies only their thesis about victimhood culture. Two searches this run found nothing tracing their account to Christianity, and the publisher's description says the conflicts they describe are not religious-versus-secular. The link between Holland and Campbell-Manning is the essay's own reading, but the sentence presents it as theirs.",
+      "fix": "Replace the sentence with: \"The sociologists Bradley Campbell and Jason Manning describe what looks like that instinct come loose from its source.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Why the Word Is So Tempting, paragraph 3, sentence 2: \"Their book *The Rise of Victimhood Culture* argues that a newer moral culture grants the highest moral standing to victims, which gives people a reason to publicize the offenses against them.\"",
+      "problem": "(c) The word \"highest\" is not shown by any source. Ledger line 119 cites Wikipedia, Palgrave and catalogs for the incentive to publicize grievances, but none of its quoted wording says \"highest\". Two searches this run summarize the authors as saying that publicizing an offense lowers the offender's moral status and \"raises the moral status of the victims\". That is a gain in status, not the top rank.",
+      "fix": "Replace with: \"Their book *The Rise of Victimhood Culture* argues that in a newer moral culture being a victim raises a person's moral standing, which gives people a reason to publicize the offenses against them.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Who Has Been Persecuted in America, Saul paragraph, last sentence: \"The persecutors in Scripture are rarely cynics, and most of them are sure they are right.\"",
+      "problem": "(a) This claim has no ledger line, and the text cuts against it. In the site's BSB text, Herod seizes Peter because killing James pleased the people (Acts 12:3). The slave-girl's owners act when their profit is gone (Acts 16:19). Demetrius defends his trade (Acts 19:24-27). The chief priests hand Jesus over out of envy (Mark 15:10). Pilate acts to satisfy the crowd (Mark 15:15). Jealousy drives Acts 5:17, 13:45 and 17:5. A reader who knows Acts will catch the overclaim.",
+      "fix": "Replace with: \"Some of the fiercest persecutors in Scripture were sure they were right.\"",
+      "severity": "should"
+    },
+    {
+      "where": "What the New Testament Means by the Word, paragraph 3: \"\"Rejoice and be glad,\" Jesus said (Matthew 5:12), and a few verses later, \"Love your enemies and pray for those who persecute you\" (5:44).\"",
+      "problem": "(c)/(e) Matthew 5:44 comes 32 verses after 5:12, so \"a few verses later\" is wrong. The ledger (line 75) checks the wording of both quotations, which is exact ESV, but not this position claim.",
+      "fix": "Change \"and a few verses later,\" to \"and later in the same sermon,\".",
+      "severity": "should"
+    },
+    {
+      "where": "Who Has Been Persecuted in America, Saul paragraph, sentence 2: \"The most famous persecutor in the Bible was a devout man defending God.\"",
+      "problem": "(a) This is a small overstatement with no ledger line. Pharaoh or Herod could fairly claim the title \"most famous persecutor in the Bible\". The claim is true of the persecutors of the church.",
+      "fix": "Replace with: \"The New Testament's most famous persecutor was a devout man defending God.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "The Cases Christians Point To, paragraph 2: \"The memo leaked a few weeks later.\"",
+      "problem": "(c) Ledger lines 60-61 date the memo January 23, 2023 and the leak February 8, 2023. That is sixteen days, which is closer to two weeks than to a few weeks.",
+      "fix": "Replace with: \"The memo leaked about two weeks later.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "The Cases Christians Point To, paragraph 1: \"The mayor said the problem was judgment and insubordination: Cochran had not gotten the required permission to publish, and the book had compromised his ability to lead gay employees.\"",
+      "problem": "(f) The sentence correctly attributes the reasons to the mayor. But the permission point is contested, and the essay gives only the city's side about a living man. Ledger line 57 records that Cochran says he had permission from the ethics office. A search this run (WABE, ADF and others) reports that Cochran said the director of Atlanta's Ethics Office gave him permission, while the city's investigation found he did not seek approval.",
+      "fix": "Replace with: \"The mayor said the problem was judgment and insubordination: Cochran had not gotten the required permission to publish (Cochran said the head of the city's ethics office had given it), and the book had compromised his ability to lead gay employees.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "The Cases Christians Point To, paragraph 1: \"a devotional book for men that taught the traditional Christian view of sex and marriage\"",
+      "problem": "(f) This is still open as a Note for James in ledger line 56. The essay describes the book the way its defenders do. A search this run (Baptist Press, Christian Post, Rough Draft Atlanta) reports a passage, on page 82 according to Rough Draft, that defined uncleanness as including homosexuality, lesbianism, pederasty and bestiality. Outlets differ on the exact punctuation. The essay's wording is accurate, but it is the milder half of the story, and the skeptic reader may notice that the city's side is softened.",
+      "fix": "James's call; no change is required. If he wants the city's side stated more fully, add after the sentence, as paraphrase with no quotation marks: \"Critics pointed to a passage that listed homosexuality, along with pederasty and bestiality, among forms of sexual uncleanness.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening, paragraph 4: \"In 2024 the Pew Research Center found that 48 percent of American adults felt at least some conflict between their religious beliefs and mainstream culture, up from 42 percent in 2020.\"",
+      "problem": "The sentence is accurate as written (ledger line 48; reconfirmed this run). A newer figure exists: Pew's report of October 20, 2025 (survey February 3-9, 2025) puts the share at 58 percent, 10 points above 2024 and 16 above 2020. The ledger's Note for James already flags this. No integrity fault.",
+      "fix": "Optional, James's call. Append: \", and by early 2025 the share had reached 58 percent\" before the final period.",
+      "severity": "consider"
+    },
+    {
+      "where": "Ledger line 118 (no essay change)",
+      "problem": "(c), ledger only. The line quotes the interpretive sentence as \"A culture formed that way listens ...\", but the essay now reads \"A culture formed that way takes it seriously when someone says he has been wronged.\" The ledger is stale; the essay makes no new factual claim here.",
+      "fix": "No essay change. Update ledger line 118 to quote the current sentence.",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Published JSON body is byte-identical to docs/work/essays/the-persecution-we-invented.md below the title and standfirst; the ledger describes the text that will ship.",
+    "All 34 quotation-mark spans enumerated; the count matches the ledger's closing-run figure of 34.",
+    "Scripture wording (independent script against the local ESV 2011 copy, lguenth/mdbible fd66568): every quotation exact, including Matthew 5:10, 5:11, 5:12, 5:44 (twice); Luke 6:22 with its exclamation point; Hebrews 10:33, 10:34, 12:28 and 13:3 (twice); 1 Peter 2:23, 4:14-15 and 4:16; Romans 12:14; Acts 9:4, 9:16, 22:25, 25:11 and 26:9; Philippians 3:6; John 6:66, 6:67, 6:68, 15:19 and 16:2; 1 Corinthians 4:12-13 and 12:26; 2 Timothy 3:12. Truncations at ESV commas (John 6:68, 2 Timothy 3:12, Matthew 5:44, Hebrews 12:28) and the dialogue comma after Acts 26:9 change no wording.",
+    "Scripture sense against the BSB in client/public/bible/ch/: every reference sits on the verse that says what the essay says, including Hebrews 10:32 (early days), 1 Peter 1:1, 2:12 and 4:4 (Asia Minor, slander), 1 Peter 2:21-24 (the cross), Acts 22:24-25 (stretched out for flogging), Acts 25:2-3, 7 and 9 (Festus and Jerusalem), Acts 26:1 (Agrippa), Philippians 3:4-7, John 6:60 (the hard saying), Hebrews 12:26-27 (the shaking) and Acts 9:3, 9:15.",
+    "Every reference travels with its quotation, and the ESV is the translation throughout.",
+    "No em-dash; four en-dashes, all in verse ranges; one exclamation point, inside verbatim Luke 6:22.",
+    "Wang Yi: December 9, 2018 detention with about a hundred members; declaration about two months earlier with the 48-hour instruction, left with his church (corrected from elders); December 30, 2019 nine-year sentence and charges; the paraphrase of his declaration (not political, no intent to change institutions or laws), without quotation marks; still imprisoned in Chengdu (ledger lines 40-42, 131-132).",
+    "Masterpiece Cakeshop: June 4, 2018, 7-2, reversal; the quotation \"some elements of a clear and impermissible hostility\" is verbatim from the opinion and matches Correction 1. Six months before December 9 is correct.",
+    "PRRI 2017, 57 percent and 44 percent: reconfirmed this run (Christian Post, WPR, ChurchLeaders, FFRF).",
+    "Pew 2024, 48 percent up from 42 percent in 2020: reconfirmed this run (Lifeway; Pew's October 2025 report).",
+    "Executive Order 14202, February 6, 2025, Task Force to Eradicate Anti-Christian Bias, chaired by the attorney general, with work continuing through 2027 (ledger line 49).",
+    "Kelvin Cochran: fired January 2015; federal judge found some policies unconstitutional; $1.2 million in October 2018 (ledger lines 55-59).",
+    "FBI Richmond memo: January 2023; \"radical-traditionalist\" is the memo's term; Latin Mass source development; withdrawn as not meeting FBI standards; Wray's \"aghast\" is verbatim and matches Correction 4 (ledger lines 60-62).",
+    "Birmingham, Sunday, September 15, 1963: Klan bomb, the four names and ages, first conviction in 1977 (ledger lines 85-86).",
+    "Ursuline convent, August 11, 1834; Philadelphia, May 1844, St. Michael's and St. Augustine's, the Bible quarrel (ledger lines 88-89).",
+    "Gobitis, June 3, 1940, 8-1; Kennebunk, June 9, 1940, reconfirmed this run (Historical Society of Pennsylvania), so \"less than a week later\" holds; Richwood, June 29, 1940, castor oil; Barnette on Flag Day, June 14, 1943; Jackson's fixed-star sentence verbatim with no comma after \"opinion\" (ledger lines 91-98).",
+    "ACLU count \"about fifteen hundred Witnesses in forty-four states that year\" matches the generalized wording in Correction 2.",
+    "Epstein and Posner: every case with an opinion on the religion clauses from 1953 to the 2020 term; over 83 percent for the Roberts Court against about half before; mainstream Christian winners against earlier minority-faith winners. Reconfirmed this run (search summary of the published dataset; the 81 percent figure was an earlier draft through the 2019 term). \"Legal scholars\" holds.",
+    "Tom Holland, *Dominion*: opens on crucifixion; Rome crucified slaves and rebels; his thesis is stated in general form without quotation marks (ledger lines 117-118).",
+    "Christian Smith, *American Evangelicalism: Embattled and Thriving* (1998): \"because of, not in spite of\" is a paraphrase without quotation marks and matches the review quoting Smith (ledger line 121).",
+    "Open Doors WWL 2026: January 2026; October 1, 2024 to September 30, 2025; more than 388 million; 4,849 killed; 3,490 in Nigeria. Reconfirmed this run (opendoors.nl, AsiaNews, Baptist Press, NCRegister/CNA, Washington Times). The dispute over causes in Nigeria is stated (ledger lines 127-130).",
+    "The meddler gloss for 1 Peter 4:15 (ledger line 73) and the Jehovah's Witnesses' Christology as first-order (ledger line 99) are stated plainly.",
+    "Biography: only \"mine among them\" (his church), within the facts NOTES.md confirms; no title, years in ministry or book count.",
+    "Links: /writing/the-early-church-under-rome, /writing/what-post-christian-means and /writing/the-progressive-blind-spot, as the ledger records.",
+    "No ledger line is still marked unverified, open, textbook-only or memory-only where the essay states a fact. The two items under Still open (the ESV API recheck owed shelf-wide; the unseen 1941 ACLU pamphlet) affect only restoration, not the published text.",
+    "Restorations (g): none proposed. ACLU original (\"1,488 attacks ... more than three hundred communities between May and October\"): a search this run again found only Wikipedia for that wording, while the Watchtower history, Davis and others count people, so it is not restored. Wang Yi \"elders\": no source names them. FBI director \"did not reflect the FBI's standards\": no transcript shows it. Masterpiece \"clear and impermissible hostility\": the ledger says do not restore, and the opinion confirms \"some elements of\"."
+  ],
+  "searches": {
+    "used": 14,
+    "notes": [
+      "Campbell and Manning, two searches: no source ties victimhood culture to Christianity; the publisher says the conflicts are not religious-versus-secular; summaries say publicizing grievances 'raises the moral status of the victims'.",
+      "Open Doors 2026: 388 million, 4,849 and 3,490 confirmed.",
+      "ACLU 1941 pamphlet: not reachable; only Wikipedia gives '1,488 attacks ... over 300 communities ... May and October 1940'.",
+      "Pew: 48 percent in 2024, up from 42 percent in 2020, confirmed; 58 percent in the October 20, 2025 report.",
+      "Epstein and Posner, three searches: abstract 'over 83% ... about 50%'; dataset is every case with an opinion on the religion clauses, 1953 to the 2020 term.",
+      "Cochran, two searches: he said the director of Atlanta's Ethics Office gave permission, and the city disputes it; the uncleanness passage is reported by Baptist Press, Christian Post and Rough Draft, with wording varying slightly.",
+      "Kennebunk: June 9, 1940 (Historical Society of Pennsylvania).",
+      "PRRI 2017: 57 and 44 confirmed.",
+      "Direct page fetches were blocked by the sandbox (epstein.usc.edu, en.wikipedia.org); all web evidence is search-tool summaries."
+    ]
+  }
+}

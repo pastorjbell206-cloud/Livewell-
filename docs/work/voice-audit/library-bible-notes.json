@@ -1,0 +1,962 @@
+{
+ "piece": "bible-notes",
+ "human_score": 6,
+ "voice_score": 5,
+ "scope": {
+  "library": "/home/user/Livewell-/client/public/bible/notes",
+  "words": {
+   "introductions": 151312,
+   "chapter_notes": 2228019,
+   "verse_notes": 1122894
+  },
+  "read": [
+   "genesis/intro.json (full)",
+   "psalms/intro.json (full)",
+   "isaiah/intro.json (full)",
+   "romans/intro.json (full)",
+   "hebrews/intro.json (full)",
+   "revelation/intro.json (full)",
+   "mark/intro.json (full except further-reading bibliographic fields)",
+   "john/intro.json (full except further-reading bibliographic fields)",
+   "genesis/1.json (full)",
+   "psalms/23.json (full)",
+   "romans/8.json (full)",
+   "hebrews/11.json (full)",
+   "revelation/21.json (full)",
+   "isaiah/53.json (full)",
+   "mark/1.json (full)",
+   "john/1.json (title, summary, first paragraph of story, literary, christ, hard answers; all doctrine notes, teach.big, pitfalls, pastoral, apply questions)",
+   "john/3.json (same sections as john/1.json)",
+   "john/verses/3.json (verses 8 and 16)",
+   "spot extracts from about 60 other files surfaced by search"
+  ],
+  "searched": "every string in all 1,255 chapter and intro files and 1,189 verse files, by regular expression"
+ },
+ "patterns": [
+  {
+   "id": "P1",
+   "name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "evidence": "About 1,820 tight 'not X but Y' constructions and about 2,700 sentences that end ', not Y.' across the notes. Mean density is 3.5 per 1,000 words in the 1,075 older-format chapter notes against 2.4 in the 114 rebuilt ones. Psalm 23 has 11 in 1,255 words; 1 Thessalonians 2 has 17 in 1,429. Heaviest in doctrines.N.note, words.N.note, christ, and the verse-level theology notes. Fix rule: keep one antithesis per chapter note where Scripture itself makes the contrast (Mark 10:45, Romans 8:15); elsewhere state the positive half and drop the invented foil."
+  },
+  {
+   "id": "P2",
+   "name": "Hard-question answers open by grading the objection, then announce the reply",
+   "evidence": "First sentences across the hard.a fields: 'The difficulty is real.' 13 times, 'The objection is strong.' 8, 'The objection is old and serious.' 7, 'The objection is plain.' 4, 'The objection is ancient and serious.' 3; 151 answers in 104 files open with 'The objection'. Second paragraphs open 'Responses begin with the...' 15 times, 'Responses take several forms.' 6, plus 'come from several directions', 'The responses are several', and so on. Fix rule: delete the stamp sentence; the paragraph already begins well at the next one."
+  },
+  {
+   "id": "P3",
+   "name": "Rulebook leakage: the note describes its own fairness",
+   "evidence": "The editorial rule (state the other side at full strength first) is written into the prose. BRIEF.md names this exact tell. Found by search: 'deserves to be stated in full / at full strength / fairly / carefully', 'deserves to be heard first', ', fairly,'. Fix rule: delete the announcement, keep the fair statement that follows."
+  },
+  {
+   "id": "P4",
+   "name": "Pastoral notes open with one stamp",
+   "evidence": "Of 107 teach.pastoral notes, 20 open 'This chapter presses on', 13 'This chapter will press', 10 'This chapter speaks to', 3 'This chapter presses hard'. Fix rule: start with the people, not with 'This chapter'."
+  },
+  {
+   "id": "P5",
+   "name": "Pitfalls notes open with one stamp",
+   "evidence": "Of 107 teach.pitfalls notes, 33 open 'Several misreadings recur.' and 10 'Several misreadings are common.' Fix rule: delete the counting sentence and fold 'common' into the first item."
+  },
+  {
+   "id": "P6",
+   "name": "Book introductions share two template sentences",
+   "evidence": "'[Book] matters because' stands in the overview of 33 of 66 introductions. 'Two (common) misreadings are worth avoiding / are common' stands in the reading section of 19. Read two introductions back to back and the mold shows."
+  },
+  {
+   "id": "P7",
+   "name": "Superlative throat-clearing openers",
+   "evidence": "'Few books ...', 'No Old Testament passage ... more', 'Few chapters in the Bible say more', 'No Gospel says more': at least a dozen section openers. Fix rule: delete and begin with the evidence."
+  },
+  {
+   "id": "P8",
+   "name": "Reflection questions cut from three stems",
+   "evidence": "4,250 reflection questions. 237 end on 'What would it mean / look like / change', 105 on 'How does that change', 177 on 'What does it ...'. Lower priority than the prose, but it is the part of the page a small group reads aloud."
+  },
+  {
+   "id": "P9",
+   "name": "Aphoristic closers that restate the paragraph as a slogan",
+   "evidence": "576 doctrine and theme notes end on a sentence of 11 words or fewer; a large share are maxims. Fix rule: when the closer says again what the sentence before it said, delete it."
+  },
+  {
+   "id": "P10",
+   "name": "Stock phrases stamped through the library",
+   "evidence": "'holds together / hold both together' about 320 times in 265 files (a minority are literal, as in 'held together by the word groan'); 'the last word / final word' 58 times; 'the heart of' 145; 'pulls back the curtain' twice in one introduction."
+  },
+  {
+   "id": "P12",
+   "name": "Vague intensifiers standing in for a description",
+   "evidence": "'striking / strikingly' 278 times; 'rich', 'powerful', 'deeply', 'profound', 'remarkable' about 1,300 together (some literal: rich man, powerful king)."
+  },
+  {
+   "id": "C",
+   "name": "Crisis-facing passages without a path to help",
+   "evidence": "Most of the dark chapters do carry one (Job 3, Psalm 88, 1 Kings 19, 1 Samuel 31, Jeremiah 20, Matthew 27, Lamentations intro, 2 Samuel 13). These do not."
+  }
+ ],
+ "findings": [
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "doctrines.1.note",
+   "quote": "The psalm shows trust not as the absence of danger but as confidence in God's presence within it. Its heart is the simple confession, You are with me.",
+   "tell": "'not X but Y' antithesis as default gait, plus stock 'its heart is'",
+   "why": "One of 11 antitheses in a 1,255-word note. The denial ('absence of danger') answers nobody; a person would just say what the psalm does.",
+   "replacement": "Trust in this psalm is confidence that God is present in the danger. Its central confession is You are with me.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "doctrines.2.note",
+   "quote": "The shepherd's care is not sentiment but faithfulness to his own name.",
+   "tell": "'not X but Y' aphoristic closer",
+   "why": "Third doctrine note in a row to close on a balanced antithesis; reads as a generated cadence.",
+   "replacement": "The shepherd cares for the sheep because he is faithful to his own name.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "doctrines.0.note",
+   "quote": "His care reaches through dark valleys, not only around them.",
+   "tell": "'X, not Y' two-beat closer",
+   "why": "Epigram shape; the plain statement is stronger.",
+   "replacement": "His care goes with the sheep through the dark valley.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "words.1.note",
+   "quote": "The psalmist fears no evil there, not because it isn't dark but because God is with him.",
+   "tell": "'not because X but because Y'",
+   "why": "Fourth antithesis on the same idea in one note.",
+   "replacement": "It is dark, and the psalmist fears no evil there because God is with him.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "story",
+   "quote": "It is the best-known psalm in the Bible, yet it is not naive; its peace is found in the valley and in the presence of enemies, not in their absence.",
+   "tell": "double antithesis in one sentence",
+   "why": "'not naive' and 'not in their absence' stack two denials; the second half restates the first as a slogan.",
+   "replacement": "It is the best-known psalm in the Bible, and it isn't naive. The psalmist finds peace in the valley and with his enemies still present.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "cultural",
+   "quote": "Green pastures and quiet waters were not a lazy meadow but places a shepherd had to find and lead his flock toward",
+   "tell": "'not X but Y' with an invented foil",
+   "why": "Nobody proposed 'a lazy meadow'; the foil exists only to set up the antithesis.",
+   "replacement": "Green pastures and quiet waters were places a shepherd had to find and lead his flock toward",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/hebrews/11.json",
+   "key": "doctrines.0.note",
+   "quote": "It is not a leap in the dark but confidence in the character of the God who promised:",
+   "tell": "'not X but Y' with a stock foil",
+   "why": "'Leap in the dark' is a cliché foil; the same note pattern recurs in words.1.note ('not wishful thinking but').",
+   "replacement": "It is confidence in the character of the God who promised:",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/hebrews/11.json",
+   "key": "words.1.note",
+   "quote": "It is not wishful thinking but a settled conviction grounded in God's word.",
+   "tell": "'not X but Y' repeated in the same chapter",
+   "why": "Second time this chapter defines faith by denying a straw alternative.",
+   "replacement": "It is a settled conviction grounded in God's word.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/21.json",
+   "key": "words.3.note",
+   "quote": "The reason is not that worship has ended but that God's presence now fills everything;",
+   "tell": "'not that X but that Y'",
+   "why": "No reader thought worship had ended; the denial is filler.",
+   "replacement": "The reason is that God's presence now fills everything;",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/21.json",
+   "key": "doctrines.1.note",
+   "quote": "The promise is not that suffering was unreal but that it will be ended and answered.",
+   "tell": "'not X but Y' closer",
+   "why": "Balanced closer; say both halves plainly.",
+   "replacement": "Suffering was real, and the promise is that it will be ended and answered.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/malachi/4.json",
+   "key": "doctrines.1.note",
+   "quote": "Hope here is not optimism but confidence in a promise.",
+   "tell": "pillow-ready antithesis closer",
+   "why": "Could be embroidered; restates the sentence before it as a slogan.",
+   "replacement": "Hope here is confidence in a promise.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/1-thessalonians/2.json",
+   "key": "doctrines.0.note",
+   "quote": "God speaks through human messengers, and his word is active, not merely informative.",
+   "tell": "'X, not merely Y' closer",
+   "why": "Most antithesis-dense chapter note in the library (17 in 1,429 words).",
+   "replacement": "God speaks through human messengers, and his word is active.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/1-thessalonians/2.json",
+   "key": "doctrines.1.note",
+   "quote": "Leadership in the church is modeled on parents' care, gentle and demanding, not on the self-promotion of public speakers.",
+   "tell": "'X, not Y' closer",
+   "why": "Same note already used 'not only the gospel but their own lives'; two antitheses in two sentences.",
+   "replacement": "Leadership in the church is modeled on parents' care, gentle and demanding, and Paul sets it against the self-promotion of public speakers.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/46.json",
+   "key": "doctrines.0.note",
+   "quote": "Providence here is personal care, not a distant system.",
+   "tell": "'X, not Y' two-beat closer",
+   "why": "Abstract foil ('a distant system') after a concrete quotation; the slogan weakens the verse.",
+   "replacement": "Providence here means God carrying his people himself.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/ezekiel/34.json",
+   "key": "doctrines.3.note",
+   "quote": "Oppression by the powerful is a covenant matter, not a private one.",
+   "tell": "'X, not Y' closer",
+   "why": "Eighth antithesis in this chapter note; 'not only ... but' appears four times in it.",
+   "replacement": "God treats oppression by the powerful as a breach of the covenant.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/3.json",
+   "key": "hard.0.a",
+   "quote": "The objection is strong. Verse 16 speaks",
+   "tell": "self-certifying verdict on the objection, used as a stamp",
+   "why": "'The objection is strong/old and serious/plain' or 'The difficulty is real' opens at least 35 hard-question answers; 151 open with 'The objection'. A reader meets the same sentence chapter after chapter.",
+   "replacement": "Verse 16 speaks",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/1.json",
+   "key": "hard.1.a",
+   "quote": "The objection is strong. In John 1 the Baptist",
+   "tell": "same stamp",
+   "why": "Identical opener to John 3, 7, 9, 13, Matthew 17, Luke 9, 2 Samuel 7.",
+   "replacement": "In John 1 the Baptist",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/53.json",
+   "key": "hard.1.a",
+   "quote": "The moral objection is ancient and serious. The prophets themselves insist",
+   "tell": "same stamp",
+   "why": "Announces fairness instead of doing it; the paragraph that follows already proves the objection is serious.",
+   "replacement": "The prophets themselves insist",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/genesis/1.json",
+   "key": "hard.1.a",
+   "quote": "The case for dependence is serious. Both Genesis 1",
+   "tell": "same stamp",
+   "why": "Paired with 'The responses are also serious.' two paragraphs later: a visible template.",
+   "replacement": "Both Genesis 1",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/genesis/1.json",
+   "key": "hard.1.a",
+   "quote": "The responses are also serious. Alexander Heidel",
+   "tell": "symmetrical stamp",
+   "why": "Mirror of the first paragraph's opener; perfect symmetry reads as generated.",
+   "replacement": "Alexander Heidel",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/1.json",
+   "key": "hard.0.a",
+   "quote": "Responses have taken several forms. James D. G. Dunn",
+   "tell": "announced turn",
+   "why": "'Responses begin with / take several forms / come from several directions' opens the second paragraph of 50-plus answers.",
+   "replacement": "James D. G. Dunn",
+   "severity": "should"
+  },
+  {
+   "pattern": "P2",
+   "pattern_name": "Hard-question answers open by grading the objection, then announce the reply",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/1.json",
+   "key": "hard.1.a",
+   "quote": "Responses come from several directions. Many note",
+   "tell": "announced turn",
+   "why": "Same signpost as hard.0.a in the same chapter.",
+   "replacement": "Many note",
+   "severity": "should"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/18.json",
+   "key": "hard.0.a",
+   "quote": "The objection deserves to be stated in full. John uses",
+   "tell": "rulebook leakage (the method described in the prose)",
+   "why": "Near-verbatim the tell BRIEF.md lists ('it deserves to be stated the way he would state it').",
+   "replacement": "John uses",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/8.json",
+   "key": "hard.1.a",
+   "quote": "The objection deserves to be stated at full strength. John's Gospel uses",
+   "tell": "rulebook leakage",
+   "why": "Same sentence as John 18 on the same topic; announces the steelman instead of making it.",
+   "replacement": "John's Gospel uses",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/53.json",
+   "key": "hard.0.a",
+   "quote": "The Ethiopian's question in Acts 8:34 is still the first question, and the strongest non-Christian answer deserves to be heard first.",
+   "tell": "rulebook leakage",
+   "why": "States the editorial rule (strongest opposing view first) inside the note.",
+   "replacement": "The Ethiopian's question in Acts 8:34 is still the first question.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/13.json",
+   "key": "hard.a",
+   "quote": "The main readings deserve to be stated fairly. Many interpreters",
+   "tell": "rulebook leakage; 'fairly' as self-certification",
+   "why": "The fairness is in the survey that follows; claiming it first is the tell.",
+   "replacement": "Many interpreters",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/genesis/13.json",
+   "key": "hard.a",
+   "quote": "This question has divided Christians and has large consequences, so the main positions deserve to be stated carefully.",
+   "tell": "rulebook leakage",
+   "why": "Method talk. Keep the fact, drop the announcement.",
+   "replacement": "This question has divided Christians and has large consequences.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/53.json",
+   "key": "hard.0.a",
+   "quote": "Jewish readers also point out, fairly, that",
+   "tell": "'fairly' as self-certifying adverb",
+   "why": "The writer grading the point instead of reporting it.",
+   "replacement": "Jewish readers also point out that",
+   "severity": "should"
+  },
+  {
+   "pattern": "P4",
+   "pattern_name": "Pastoral notes open with one stamp",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/1.json",
+   "key": "teach.pastoral",
+   "quote": "This chapter presses on people who live with chronic illness, disability, or a condition that separates them from others, and on those who carry shame about their bodies.",
+   "tell": "section-opener stamp",
+   "why": "'This chapter presses on / will press / speaks to' opens 46 of 107 pastoral notes; in sequence through a Gospel it is audible by the third chapter.",
+   "replacement": "People who live with chronic illness, disability, or a condition that separates them from others will hear this chapter closely, and so will those who carry shame about their bodies.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P4",
+   "pattern_name": "Pastoral notes open with one stamp",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/15.json",
+   "key": "teach.pastoral",
+   "quote": "This chapter presses on people who feel abandoned by God, and on those who have suffered injustice or public shame.",
+   "tell": "section-opener stamp",
+   "why": "Same opener as Mark 1, 10, 13.",
+   "replacement": "Some in the room feel abandoned by God, and some have suffered injustice or public shame.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P4",
+   "pattern_name": "Pastoral notes open with one stamp",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/10.json",
+   "key": "teach.pastoral",
+   "quote": "This chapter presses on the divorced, the remarried, children of divorce, and people in hard or dangerous marriages.",
+   "tell": "section-opener stamp",
+   "why": "Same opener again.",
+   "replacement": "The divorced, the remarried, children of divorce, and people in hard or dangerous marriages will all be listening.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P5",
+   "pattern_name": "Pitfalls notes open with one stamp",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/3.json",
+   "key": "teach.pitfalls",
+   "quote": "Several misreadings recur. The first turns",
+   "tell": "section-opener stamp",
+   "why": "'Several misreadings recur.' opens 33 pitfalls notes and 'Several misreadings are common.' 10 more, out of 107.",
+   "replacement": "The first common misreading turns",
+   "severity": "should"
+  },
+  {
+   "pattern": "P5",
+   "pattern_name": "Pitfalls notes open with one stamp",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/1.json",
+   "key": "teach.pitfalls",
+   "quote": "Several misreadings are common. The first treats",
+   "tell": "section-opener stamp",
+   "why": "Same stamp.",
+   "replacement": "The first common misreading treats",
+   "severity": "should"
+  },
+  {
+   "pattern": "P5",
+   "pattern_name": "Pitfalls notes open with one stamp",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/53.json",
+   "key": "teach.pitfalls",
+   "quote": "Three misuses are common. The first reduces",
+   "tell": "section-opener stamp plus announced count",
+   "why": "Counting the points before making them is outline language.",
+   "replacement": "The first common misuse reduces",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/mark/intro.json",
+   "key": "overview",
+   "quote": "Mark matters because most scholars judge it the earliest written Gospel, and because it refuses to separate who Jesus is from what he suffered.",
+   "tell": "template sentence '[Book] matters because'",
+   "why": "Opens the third overview paragraph in 33 of 66 book introductions.",
+   "replacement": "Most scholars judge Mark the earliest written Gospel, and it refuses to separate who Jesus is from what he suffered.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/intro.json",
+   "key": "overview",
+   "quote": "The book matters because it teaches people how to pray.",
+   "tell": "template sentence",
+   "why": "Same slot, same words as the other introductions.",
+   "replacement": "The book teaches people how to pray.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/intro.json",
+   "key": "overview",
+   "quote": "Isaiah matters because it holds together what people tend to pull apart:",
+   "tell": "template sentence plus stock 'holds together'",
+   "why": "Two library stamps in one clause.",
+   "replacement": "Isaiah keeps in one book what people tend to pull apart:",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/intro.json",
+   "key": "overview",
+   "quote": "The book matters because it says most plainly what the other Gospels also claim:",
+   "tell": "template sentence",
+   "why": "Same slot again.",
+   "replacement": "It says most plainly what the other Gospels also claim:",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/intro.json",
+   "key": "reading",
+   "quote": "Two common misreadings are worth avoiding. The first is to treat",
+   "tell": "template sentence",
+   "why": "'Two (common) misreadings are worth avoiding / are common' sits in the reading section of 19 introductions.",
+   "replacement": "One common misreading is to treat",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/romans/intro.json",
+   "key": "reading",
+   "quote": "Two common misreadings are worth avoiding. The first treats Romans",
+   "tell": "template sentence",
+   "why": "Same stamp.",
+   "replacement": "One common misreading treats Romans",
+   "severity": "should"
+  },
+  {
+   "pattern": "P6",
+   "pattern_name": "Book introductions share two template sentences",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/intro.json",
+   "key": "reading",
+   "quote": "Two common misreadings are worth avoiding: treating the book",
+   "tell": "template sentence",
+   "why": "Same stamp.",
+   "replacement": "The book is commonly misread in two ways: treating the book",
+   "severity": "should"
+  },
+  {
+   "pattern": "P7",
+   "pattern_name": "Superlative throat-clearing openers",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/1.json",
+   "key": "christ",
+   "quote": "Few chapters in the Bible say more about who Jesus is. He existed before creation",
+   "tell": "superlative throat-clearing opener",
+   "why": "'Few/No [book, chapter, passage] ... more' opens a section at least a dozen times (Isaiah 53, Psalm 22, Hebrews, Isaiah, John, Zechariah, James, 1 Thessalonians intros). It says nothing the paragraph does not.",
+   "replacement": "Jesus existed before creation",
+   "severity": "should"
+  },
+  {
+   "pattern": "P7",
+   "pattern_name": "Superlative throat-clearing openers",
+   "file": "/home/user/Livewell-/client/public/bible/notes/hebrews/intro.json",
+   "key": "overview",
+   "quote": "Few books so thoroughly connect the Old Testament to Christ, and few speak so directly to people who are tired of believing.",
+   "tell": "symmetrical 'few ... and few' closer",
+   "why": "Balanced pair as a paragraph closer.",
+   "replacement": "It connects the Old Testament to Christ from start to finish, and it speaks to people who are tired of believing.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P7",
+   "pattern_name": "Superlative throat-clearing openers",
+   "file": "/home/user/Livewell-/client/public/bible/notes/romans/intro.json",
+   "key": "overview",
+   "quote": "Few books have shaped Christian history as much. Romans stands behind",
+   "tell": "superlative opener",
+   "why": "The next sentence carries the evidence; this one only announces it.",
+   "replacement": "Romans stands behind",
+   "severity": "should"
+  },
+  {
+   "pattern": "P8",
+   "pattern_name": "Reflection questions cut from three stems",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "questions.2",
+   "quote": "What would it mean to receive God's care while your troubles are still in the room?",
+   "tell": "question template 'What would it mean to'",
+   "why": "237 reflection questions end 'What would it mean/look like/change' and 105 'How does that change'; small-group curriculum boilerplate.",
+   "replacement": "Which of your troubles is still in the room, and can you receive God's care before it leaves?",
+   "severity": "consider"
+  },
+  {
+   "pattern": "P8",
+   "pattern_name": "Reflection questions cut from three stems",
+   "file": "/home/user/Livewell-/client/public/bible/notes/romans/8.json",
+   "key": "questions.1",
+   "quote": "What would change if you let yourself groan honestly before God?",
+   "tell": "question template; 'honestly'",
+   "why": "Template stem plus self-certifying 'honestly'.",
+   "replacement": "What have you kept from God because it sounded too much like complaining?",
+   "severity": "consider"
+  },
+  {
+   "pattern": "P8",
+   "pattern_name": "Reflection questions cut from three stems",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/21.json",
+   "key": "questions.0",
+   "quote": "How does that change the way you think about heaven and about this world?",
+   "tell": "question template 'How does that change the way you'",
+   "why": "Stock stem.",
+   "replacement": "Where does that leave the way you've pictured heaven, and this world?",
+   "severity": "consider"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/147.json",
+   "key": "doctrines.1.note",
+   "quote": "yet he stoops to heal the brokenhearted and sustain the humble. His power is never cold, and his care is never weak.",
+   "tell": "aphoristic closer, perfect symmetry",
+   "why": "Greeting-card parallelism; restates the paragraph as a slogan.",
+   "replacement": "yet he stoops to heal the brokenhearted and sustain the humble.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/1-chronicles/26.json",
+   "key": "doctrines.1.note",
+   "quote": "now has a large family serving at the temple's doors. Faithfulness in one moment bears fruit across generations.",
+   "tell": "moralizing aphorism as closer",
+   "why": "The story already made the point; the maxim could run on any church's page.",
+   "replacement": "now has a large family serving at the temple's doors.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/ephesians/intro.json",
+   "key": "themes.0.body",
+   "quote": "Yet grace is not idle: believers are God's workmanship, created in Christ Jesus to do good works that God prepared in advance (2:10). Grace both saves and sets to work.",
+   "tell": "colon-reveal plus slogan restatement",
+   "why": "The closer repeats the sentence before it in six words.",
+   "replacement": "Yet believers are God's workmanship, created in Christ Jesus to do good works that God prepared in advance (2:10).",
+   "severity": "should"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/deuteronomy/7.json",
+   "key": "doctrines.2.note",
+   "quote": "God loved them because he loved them. Grace has no cause outside God.",
+   "tell": "slogan closer after the real line",
+   "why": "'God loved them because he loved them' is the earned line; the abstraction after it deflates it.",
+   "replacement": "God loved them because he loved them.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/hebrews/11.json",
+   "key": "doctrines.3.note",
+   "quote": "Faith begins with understanding that the universe was formed at God's command (verse 3). The visible world rests on the word of an invisible God.",
+   "tell": "visible/invisible epigram",
+   "why": "Chiastic flourish restating the verse.",
+   "replacement": "Faith begins with understanding that the universe was formed at God's command (verse 3).",
+   "severity": "should"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/jonah/4.json",
+   "key": "hard.a",
+   "quote": "Both readings agree that God's compassion is the last word, and that the question it raises is not answered by argument but by the reader's own heart.",
+   "tell": "stock 'the last word' plus 'not by X but by Y' plus sentimental abstraction",
+   "why": "Three tells in one closing sentence; 'the reader's own heart' is devotional filler.",
+   "replacement": "On both readings the book closes with God's compassion and leaves the reader to answer his question.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/genesis/1.json",
+   "key": "hard.1.a",
+   "quote": "On any view, borrowing a picture is not the same as borrowing a theology, and the theology of Genesis 1 has no ancient parallel.",
+   "tell": "epigram closer and overclaim ('On any view')",
+   "why": "The scholars just cited as holding dependence would not grant 'on any view'; the balanced epigram is doing the persuading.",
+   "replacement": "Borrowing a picture is not the same as borrowing a theology, and no neighboring text has one God creating without a battle, a rival, or a need for human labor.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/intro.json",
+   "key": "tagline",
+   "quote": "A prophetic vision given to John on Patmos that pulls back the curtain on history, showing the slain and risen Lamb on the throne and the renewal of all things.",
+   "tell": "cliché image, repeated",
+   "why": "'Pulls back the curtain' appears again in keyChapters of the same file.",
+   "replacement": "A prophetic vision given to John on Patmos, showing the slain and risen Lamb on the throne behind history and the renewal of all things.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/intro.json",
+   "key": "keyChapters.3.why",
+   "quote": "pulls back the curtain on the spiritual conflict behind history",
+   "tell": "cliché image, second use in one file",
+   "why": "Stock phrase.",
+   "replacement": "shows the spiritual conflict behind history",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/intro.json",
+   "key": "themes.4.body",
+   "quote": "Revelation does not flinch from judgment on evil, but judgment is never the last word.",
+   "tell": "stock phrase 'the last word'",
+   "why": "'The last/final word' as a closer 58 times across the notes (Isaiah, Psalms, Esther, Nahum, Jonah...).",
+   "replacement": "Revelation does not flinch from judgment on evil, but it does not end there.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/intro.json",
+   "key": "themes.2.body",
+   "quote": "God's judgment in Isaiah is real and severe, but it is not the last word.",
+   "tell": "stock phrase 'the last word'",
+   "why": "Same sentence as the Revelation introduction with the book name changed.",
+   "replacement": "God's judgment in Isaiah is real and severe, and it is not where the book ends.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/romans/intro.json",
+   "key": "themes.4.body",
+   "quote": "that will reach the whole groaning creation. Romans holds present suffering and future glory together.",
+   "tell": "stock 'holds ... together' closer",
+   "why": "'Holds together' 300-plus times; here also a slogan closer.",
+   "replacement": "that will reach the whole groaning creation.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/romans/intro.json",
+   "key": "reading",
+   "quote": "The letter holds both together.",
+   "tell": "stock 'holds both together'",
+   "why": "Third 'holds together' in this introduction.",
+   "replacement": "Paul means both.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P12",
+   "pattern_name": "Vague intensifiers standing in for a description",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "christ",
+   "quote": "What it adds is striking: the shepherd who walks with his sheep through the valley of the shadow of death is the one who went into death for them.",
+   "tell": "colon-then-reveal with vague intensifier",
+   "why": "Tells the reader to be struck before saying the thing. 'Striking(ly)' appears 278 times in the notes.",
+   "replacement": "What it adds is that the shepherd who walks with his sheep through the valley of the shadow of death is the one who went into death for them.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P12",
+   "pattern_name": "Vague intensifiers standing in for a description",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/intro.json",
+   "key": "setting",
+   "quote": "shows striking parallels in style and imagery",
+   "tell": "vague intensifier",
+   "why": "'Striking' in place of a description.",
+   "replacement": "shows close parallels in style and imagery",
+   "severity": "consider"
+  },
+  {
+   "pattern": "P12",
+   "pattern_name": "Vague intensifiers standing in for a description",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/intro.json",
+   "key": "overview",
+   "quote": "Its vocabulary is small (light, life, truth, love, world, believe, abide, glory) and its thought is inexhaustible.",
+   "tell": "balanced pair ending on an abstraction",
+   "why": "'Inexhaustible' is praise without content.",
+   "replacement": "Its vocabulary is small (light, life, truth, love, world, believe, abide, glory), and no one has reached the bottom of its thought.",
+   "severity": "consider"
+  },
+  {
+   "pattern": "C",
+   "pattern_name": "Crisis-facing passages without a path to help",
+   "file": "/home/user/Livewell-/client/public/bible/notes/judges/16.json",
+   "key": "hard.a",
+   "quote": "The chapter holds together Samson's failure, God's patience, and God's victory over Dagon.",
+   "tell": "crisis-facing passage with no path to help; stock 'holds together'",
+   "why": "The answer discusses whether Samson's death was suicide and ends with no word for a reader in danger, though Job 3, Psalm 88, 1 Samuel 31 and Lamentations carry one.",
+   "replacement": "The chapter shows Samson's failure, God's patience, and God's victory over Dagon. Anyone thinking of ending their own life should seek help from a trusted person, a pastor, or a crisis line; in the United States, call or text 988.",
+   "severity": "must"
+  },
+  {
+   "pattern": "C",
+   "pattern_name": "Crisis-facing passages without a path to help",
+   "file": "/home/user/Livewell-/client/public/bible/notes/numbers/11.json",
+   "key": "questions.1",
+   "quote": "What burden are you carrying alone that should be shared?",
+   "tell": "crisis-facing passage with no path to help",
+   "why": "The question names Moses 'even asking to die' and invites the reader to identify with it, with no help line.",
+   "replacement": "What burden are you carrying alone that should be shared? If your own exhaustion has reached the point of wanting to die, tell someone you trust today; in the United States, call or text 988.",
+   "severity": "must"
+  }
+ ],
+ "ten_worst": [
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/jonah/4.json",
+   "key": "hard.a",
+   "quote": "Both readings agree that God's compassion is the last word, and that the question it raises is not answered by argument but by the reader's own heart.",
+   "tell": "stock 'the last word' plus 'not by X but by Y' plus sentimental abstraction",
+   "why": "Three tells in one closing sentence; 'the reader's own heart' is devotional filler.",
+   "replacement": "On both readings the book closes with God's compassion and leaves the reader to answer his question.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/147.json",
+   "key": "doctrines.1.note",
+   "quote": "yet he stoops to heal the brokenhearted and sustain the humble. His power is never cold, and his care is never weak.",
+   "tell": "aphoristic closer, perfect symmetry",
+   "why": "Greeting-card parallelism; restates the paragraph as a slogan.",
+   "replacement": "yet he stoops to heal the brokenhearted and sustain the humble.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/isaiah/53.json",
+   "key": "hard.0.a",
+   "quote": "The Ethiopian's question in Acts 8:34 is still the first question, and the strongest non-Christian answer deserves to be heard first.",
+   "tell": "rulebook leakage",
+   "why": "States the editorial rule (strongest opposing view first) inside the note.",
+   "replacement": "The Ethiopian's question in Acts 8:34 is still the first question.",
+   "severity": "must"
+  },
+  {
+   "pattern": "P3",
+   "pattern_name": "Rulebook leakage: the note describes its own fairness",
+   "file": "/home/user/Livewell-/client/public/bible/notes/john/8.json",
+   "key": "hard.1.a",
+   "quote": "The objection deserves to be stated at full strength. John's Gospel uses",
+   "tell": "rulebook leakage",
+   "why": "Same sentence as John 18 on the same topic; announces the steelman instead of making it.",
+   "replacement": "John's Gospel uses",
+   "severity": "must"
+  },
+  {
+   "pattern": "P12",
+   "pattern_name": "Vague intensifiers standing in for a description",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "christ",
+   "quote": "What it adds is striking: the shepherd who walks with his sheep through the valley of the shadow of death is the one who went into death for them.",
+   "tell": "colon-then-reveal with vague intensifier",
+   "why": "Tells the reader to be struck before saying the thing. 'Striking(ly)' appears 278 times in the notes.",
+   "replacement": "What it adds is that the shepherd who walks with his sheep through the valley of the shadow of death is the one who went into death for them.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P1",
+   "pattern_name": "Antithesis as the default gait ('not X but Y', 'X, not Y.', 'not only X but Y')",
+   "file": "/home/user/Livewell-/client/public/bible/notes/psalms/23.json",
+   "key": "doctrines.1.note",
+   "quote": "The psalm shows trust not as the absence of danger but as confidence in God's presence within it. Its heart is the simple confession, You are with me.",
+   "tell": "'not X but Y' antithesis as default gait, plus stock 'its heart is'",
+   "why": "One of 11 antitheses in a 1,255-word note. The denial ('absence of danger') answers nobody; a person would just say what the psalm does.",
+   "replacement": "Trust in this psalm is confidence that God is present in the danger. Its central confession is You are with me.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P7",
+   "pattern_name": "Superlative throat-clearing openers",
+   "file": "/home/user/Livewell-/client/public/bible/notes/hebrews/intro.json",
+   "key": "overview",
+   "quote": "Few books so thoroughly connect the Old Testament to Christ, and few speak so directly to people who are tired of believing.",
+   "tell": "symmetrical 'few ... and few' closer",
+   "why": "Balanced pair as a paragraph closer.",
+   "replacement": "It connects the Old Testament to Christ from start to finish, and it speaks to people who are tired of believing.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/ephesians/intro.json",
+   "key": "themes.0.body",
+   "quote": "Yet grace is not idle: believers are God's workmanship, created in Christ Jesus to do good works that God prepared in advance (2:10). Grace both saves and sets to work.",
+   "tell": "colon-reveal plus slogan restatement",
+   "why": "The closer repeats the sentence before it in six words.",
+   "replacement": "Yet believers are God's workmanship, created in Christ Jesus to do good works that God prepared in advance (2:10).",
+   "severity": "should"
+  },
+  {
+   "pattern": "P9",
+   "pattern_name": "Aphoristic closers that restate the paragraph as a slogan",
+   "file": "/home/user/Livewell-/client/public/bible/notes/genesis/1.json",
+   "key": "hard.1.a",
+   "quote": "On any view, borrowing a picture is not the same as borrowing a theology, and the theology of Genesis 1 has no ancient parallel.",
+   "tell": "epigram closer and overclaim ('On any view')",
+   "why": "The scholars just cited as holding dependence would not grant 'on any view'; the balanced epigram is doing the persuading.",
+   "replacement": "Borrowing a picture is not the same as borrowing a theology, and no neighboring text has one God creating without a battle, a rival, or a need for human labor.",
+   "severity": "should"
+  },
+  {
+   "pattern": "P10",
+   "pattern_name": "Stock phrases stamped through the library",
+   "file": "/home/user/Livewell-/client/public/bible/notes/revelation/intro.json",
+   "key": "tagline",
+   "quote": "A prophetic vision given to John on Patmos that pulls back the curtain on history, showing the slain and risen Lamb on the throne and the renewal of all things.",
+   "tell": "cliché image, repeated",
+   "why": "'Pulls back the curtain' appears again in keyChapters of the same file.",
+   "replacement": "A prophetic vision given to John on Patmos, showing the slain and risen Lamb on the throne behind history and the renewal of all things.",
+   "severity": "should"
+  }
+ ],
+ "most_machine": [
+  "psalms/23.json",
+  "1-thessalonians/2.json",
+  "proverbs/6.json",
+  "ezekiel/34.json",
+  "acts/5.json",
+  "psalms/149.json",
+  "hebrews/11.json",
+  "revelation/21.json",
+  "books by antithesis density: Philippians, 1 Thessalonians, 1 John, Ephesians, Titus"
+ ],
+ "most_his": [
+  "genesis/1.json",
+  "isaiah/53.json",
+  "mark/1.json",
+  "john/3.json (teach.pastoral)",
+  "mark/intro.json",
+  "books with the lowest antithesis density: Nahum, Haggai, Luke, Esther, Mark, James, Matthew, John"
+ ],
+ "strengths": [
+  "Fair before sharp: contested readings (the Servant's identity, the days of Genesis 1, baptism in John 3, the millennium) are given in the form their defenders would sign, and second-order questions are left open by name.",
+  "The rebuilt chapters are specific to the date and the artifact: the Tell Fekheriye statue, the Giv'at ha-Mivtar heel bone, the Priene inscription, P137. Scholars are named with the idea they contributed, not as decoration.",
+  "Pastoral notes in the rebuilt chapters are the most human writing in the library (Genesis 1 on infertility, Isaiah 53 on abuse and verse 7, John 3 on people who cannot name a conversion date).",
+  "Clean mechanics: no em-dash or exclamation point outside quotations in 3.5 million words; contractions used lightly and naturally.",
+  "Earned plain verdicts do exist and should be kept: 'It is what God is getting back.' (Genesis 1), 'The shock of the song is that they were right that God was involved and wrong about why.' (Isaiah 53), 'God loved them because he loved them.' (Deuteronomy 7)."
+ ],
+ "for_james": [
+  "Your Substack profile and docs/VOICE-JAMES-BELL.md disagree: the profile asks for 2 to 4 sentence paragraphs, one screenshot line per piece, stacked landing lines and three numbered applications; the voice standard asks for developed paragraphs and one earned verdict, and puts stacked lines and slogans on the avoid list. I judged the notes by the voice standard and did not push anything toward the profile.",
+  "The Study Bible notes quote the Berean Standard Bible (capitalized pronouns; 'the BSB' is named 574 times), while CLAUDE.md says ESV by default. I changed nothing. If that is a licensing choice, CLAUDE.md should say so; if not, it is a large job.",
+  "There are two libraries here. 114 chapter notes (all of Matthew, Mark, Luke and John, plus parts of Genesis, Exodus, Leviticus, Deuteronomy, 2 Samuel, Psalms, Isaiah, Jeremiah and Daniel) were rebuilt deep and read like a careful person wrote them. The other 1,075 are shorter and carry most of the machine cadence. Decide whether to finish the rebuild or run a find-and-fix pass on the older tier.",
+  "Nothing in these notes could only have come from you, and that may be right for a study Bible: no first person, no biography, no title or years in ministry anywhere. If you want your own voice in it, the pastoral notes and the reflection questions are the place, and they need what you would actually say to your people about that chapter. I can't invent that.",
+  "Choose one sentence for readers in danger and use it everywhere a chapter touches a wish to die. The notes currently use four wordings, and Judges 16, Numbers 11 and Jonah 4 have none.",
+  "I found no political criticism firing in one direction, no exclamation point or em-dash outside a quotation, and no Forbidden Language beyond 'landscapes' (literal, Song of Solomon 6) and 'authenticity' used of manuscripts.",
+  "I read 17 files in full or in large part out of 1,255, and searched the rest by pattern. The counts are corpus-wide; the judgments about tone rest on the sample."
+ ],
+ "verdict": "Accurate, fair and well sourced, and in the 114 rebuilt chapters it reads like a careful human; the 1,075 older chapters and the section templates give it away as machine-made, and nothing in it is distinctively James."
+}

@@ -18,6 +18,9 @@ import { leadMagnetsRouter } from "./routers/lead-magnets";
 import { recommendationRouter } from "./recommendation-router";
 import { analyticsRouter } from "./analytics-router";
 import { emailRouter } from "./email-router";
+import { listPublishedInput, pickListing } from "./posts-listing";
+import { createSubstackCache } from "@shared/substackLatest";
+
 import {
   // Files
   createFileRecord, listUserFiles, getFileById, deleteFileRecord, updateFileDescription,
@@ -36,6 +39,9 @@ import {
   createNotification, listNotifications, getBannerNotifications,
   createAdminNotification, listAdminNotifications, markAdminNotificationAsRead,
 } from "./db";
+
+// The newest Substack titles for /connect: one fetch an hour at most, [] on any failure.
+const substackLatest = createSubstackCache();
 
 export const appRouter = router({
   system: systemRouter,
@@ -108,8 +114,15 @@ export const appRouter = router({
 
   // ─── Posts (Writing) ─────────────────────────────────────────────
   posts: router({
-    /** Public: list published posts (FULL — includes body; use sparingly) */
-    listPublished: publicProcedure.query(async () => listPosts(true)),
+    /**
+     * Public: list published posts (FULL — includes body; use sparingly).
+     * Optional input { slugs, since } narrows it to the rows named by slug or
+     * dated at or after `since` (/writing asks for its shelf this way). The
+     * production function applies the same rule (api/index.ts pickListing).
+     */
+    listPublished: publicProcedure
+      .input(listPublishedInput)
+      .query(async ({ input }) => pickListing(await listPosts(true), input)),
 
     /** Public: slim list for the /writing index — no body */
     listForIndex: publicProcedure.query(async () => listPostsForIndex()),
@@ -533,6 +546,12 @@ export const appRouter = router({
       }),
 
     listAll: adminProcedure.query(async () => listNotifications(false)),
+  }),
+
+  // ─── Substack: the newest titles, linked out (shared/substackLatest.ts) ──
+  // Read-only and public. Mirrored in api/index.ts ("substack.latest").
+  substack: router({
+    latest: publicProcedure.query(() => substackLatest()),
   }),
 
   // ─── Admin Notifications ─────────────────────────────────────────

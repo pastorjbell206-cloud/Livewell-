@@ -1,0 +1,99 @@
+{
+  "slug": "the-rise-of-the-nones",
+  "lens": "integrity: facts, quotations, Scripture and ledger agreement (read-only audit of client/public/essays/the-rise-of-the-nones.json against docs/work/essays/ledgers/the-rise-of-the-nones.md, 2026-10-28; 13 web searches run, all through the search tool's summaries, no primary page opened)",
+  "findings": [
+    {
+      "where": "What the People Who Left Say, paragraph 3, first sentence: \"The broadest recent study is *The Great Dechurching*, a 2023 book by Jim Davis and Michael Graham built on surveys by Burge and his fellow political scientist Paul Djupe.\"",
+      "problem": "(a) No ledger line covers the superlative \"broadest recent study\". It is not true as stated: Pew's 2023 survey in the same section had 11,201 adults, and Pew's 2023-24 religion survey is far larger. The only support seen this run is RNS (Sept. 7, 2023), which reports the authors' own view that this is what they think is the largest study ever made of people who stopped going to church (two phases, 1,043 and 4,099 respondents). That is the authors' claim, not an independent finding.",
+      "fix": "Replace with: \"One of the largest recent studies of people who stopped going to church is *The Great Dechurching*, a 2023 book by Jim Davis and Michael Graham built on surveys by Burge and his fellow political scientist Paul Djupe.\" Add a ledger line: RNS review (Sept. 7, 2023), as summarized: the authors describe it as what they think is the largest study of people who stopped going to church; phase one 1,043 Americans, phase two 4,099 dechurched.",
+      "severity": "should"
+    },
+    {
+      "where": "Politics and the Mainline, paragraph 2: \"A 2001 study by Hout, Andrew Greeley and Melissa Wilde found that for Americans born between 1903 and 1973, about three-quarters of the mainline decline came from birth rates.\"",
+      "problem": "(c) The ledger quotes the abstract: higher fertility and earlier childbearing \"explains 76% of the observed trend for cohorts born between 1903 and 1973\". The searches this run show what that trend is: the restructuring of Protestantism, with Protestants less likely to be mainline and more likely to be conservative than before. The same abstract treats \"mainline decline\" separately. It says fewer conversions from conservative to mainline churches prolonged that decline, and a recent rise in apostasy added a few points to it. So \"three-quarters of the mainline decline\" credits birth rates with more than the paper does.",
+      "fix": "Replace the clause with: \"about three-quarters of the shift from mainline to conservative churches came from birth rates.\" The next sentence (\"Women in the conservative denominations had more children, and had them earlier.\") stays. Update ledger line 112 to match.",
+      "severity": "should"
+    },
+    {
+      "where": "Politics and the Mainline, paragraph 2: \"In 1972 Dean Kelley, in a study commissioned by the National Council of Churches, published *Why Conservative Churches Are Growing*.\"",
+      "problem": "(b/c) Secondhand authority. Every source in ledger line 110 for \"commissioned by the National Council of Churches\" traces to one sentence in Albert Mohler's 2011 column (\"Commissioned by the National Council of Churches, researcher Dean M. Kelley set out...\") and its reprints (Christian Post, Aquila Report, ChurchLeaders). Three searches this run, two of them extended, found no primary or independent statement that the NCC commissioned the book: not the prefaces, not the publisher, not the NCC. What is well attested is that Kelley was on the NCC staff for many years, directing its civil and religious liberty work (Wikipedia, Hartford-related and other results). The essay's point, that the critique came from inside the mainline's own council, survives on that firmer fact.",
+      "fix": "Replace with: \"In 1972 Dean Kelley, a longtime staff member of the National Council of Churches, published *Why Conservative Churches Are Growing*.\" Revise ledger line 110: NCC staff (director for civil and religious liberty) per Wikipedia and the search results; the commission claim was dropped because it rests only on Mohler's 2011 column.",
+      "severity": "should"
+    },
+    {
+      "where": "How the Nones Grew, last paragraph: \"Political identity, they concluded, was shaping religious identity, rather than the other way around.\"",
+      "problem": "(c) The essay drops the authors' hedge. Ledger line 102, and the 2014 abstract as summarized this run, say the causal direction \"likely runs from political identity as a liberal or conservative to religious identity\". The essay presents a probable finding by living scholars as a settled conclusion.",
+      "fix": "Replace with: \"Political identity, they concluded, was most likely shaping religious identity, rather than the other way around.\"",
+      "severity": "should"
+    },
+    {
+      "where": "What a Church Can Actually Do, paragraph 2: \"...while survivors who came forward met resistance and even hostility from some committee members.\"",
+      "problem": "(c/f) Ledger line 175 and the AP coverage seen this run quote the Guidepost report: survivors were met \"with resistance, stonewalling, and even outright hostility from some within the EC\". \"Some within the EC\" covers staff and senior leaders; the report says a few senior EC leaders, with outside counsel, largely controlled the response. \"Committee members\" narrows the charge to the elected members of the Executive Committee, who are identifiable living people. The essay should not name a narrower group than the report did.",
+      "fix": "Replace the clause with: \"while survivors who came forward met resistance and even hostility from some within the Executive Committee.\"",
+      "severity": "should"
+    },
+    {
+      "where": "When People Walked Away From Jesus, paragraph 4, first sentence: \"Paul had a different kind of departure in view when he wrote to the church in Rome about his own people.\"",
+      "problem": "(e, sense of the text) Romans 2:17-24 (ESV copy and BSB read this run) is not about anyone departing. It describes a Jew who teaches the law and breaks it, so that the Gentiles, outsiders who never belonged, blaspheme God's name. The paragraph's own last sentence gets the sense right (\"insiders whose conduct taught outsiders to despise the God they claimed to serve\"). The opening sentence, though, credits Paul with having departures \"in view\", which reads the essay's application back into the text.",
+      "fix": "Replace with: \"Paul named a different danger when he wrote to the church in Rome about his own people.\" The rest of the paragraph stays.",
+      "severity": "should"
+    },
+    {
+      "where": "The Faith We Handed Down, paragraph 3: \"Most said their beliefs were similar to their parents', and the strongest influence on their faith was their parents.\"",
+      "problem": "(c) Ledger line 142's figure covers a subgroup: \"three-fourths of the religious teens said their beliefs were somewhat or very similar to their parents' beliefs\" (Christian Post on the NSYR). The search this run confirmed that the figure covers only religious teens. The essay's \"Most\" refers back to teenagers in general. The second clause (parents the greatest influence) is supported for teens generally (Publishers Weekly) and stays.",
+      "fix": "Replace with: \"About three-quarters of the religious teenagers said their beliefs were similar to their parents', and the strongest influence on their faith was their parents.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Politics and the Mainline, paragraph 2: \"Demographers later complicated his story.\"",
+      "problem": "(a) No ledger line. Hout, Greeley and Wilde published in the American Journal of Sociology and are described throughout the ledger and results as sociologists. The paper is a demographic analysis, but calling its authors \"demographers\" is a label nothing seen supports for all three.",
+      "fix": "Replace with: \"Sociologists later complicated his story.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "How the Nones Grew, paragraph 3: \"Through those same years the religious right had become the public face of American Christianity, and Hout and Fischer argued...\"",
+      "problem": "(a) The first clause is a historical characterization with no ledger line of its own. Ledger line 101 covers only Hout and Fischer's reading of the increase as a statement against the Religious Right. It is a fair general claim and needs no figure, but it should be logged.",
+      "fix": "No essay change. Add a ledger line: \"Through those same years the religious right had become the public face of American Christianity.\" Interpretation (general characterization, the context Hout and Fischer 2002 give for their backlash reading; see line 101).",
+      "severity": "consider"
+    },
+    {
+      "where": "The Faith We Handed Down, Luther paragraph: \"Ordinary people knew almost nothing of Christian teaching, and many pastors were unfit to teach it.\"",
+      "problem": "(c) Ledger line 144 records the translations of the preface: the common people, especially in the villages, \"know nothing at all of Christian doctrine\". The essay softens Luther's claim to \"almost nothing\" while reporting what he found. As paraphrase it is not wrong, but it is weaker than what he said, and it drops his \"especially in the villages\".",
+      "fix": "Optionally replace with: \"Ordinary people, especially in the villages, knew nothing at all of Christian teaching, he wrote, and many pastors were unfit to teach it.\" (No quotation marks; paraphrase.)",
+      "severity": "consider"
+    },
+    {
+      "where": "The Faith We Handed Down, Bengtson paragraph: \"In *Families and Faith* he reported...\"",
+      "problem": "(g) Restoration candidate. Ledger line 147 records that the voice pass of 2026-10-28 cut the book's year (2013), and the run saw it confirmed (Oxford University Press listing; Christian Century interview, Dec. 2013). It is graded consider, not should, because the cut was a deliberate voice choice under the brief's rule to give a year only when it matters, not an integrity generalization. Restoring it lengthens a run of dated titles the voice pass thinned on purpose.",
+      "fix": "Only if wanted: \"In *Families and Faith* (2013) he reported that faith passed most strongly...\". Otherwise leave as is.",
+      "severity": "consider"
+    },
+    {
+      "where": "Ledger line 149 (Bengtson said he didn't know why a father's warmth mattered so much)",
+      "problem": "(c, ledger only) The ledger attributes the summary directly to the Christian Century interview. The search this run shows the wording seen actually comes from The Mennonite's report (reprinted on Anabaptist World) of Amy Frykholm's interview in the Dec. 25, 2013 Christian Century; the interview itself was not opened. The essay's unquoted paraphrase is supported.",
+      "fix": "No essay change. Amend ledger line 149: \"as reported by The Mennonite (Anabaptist World reprint) of Amy Frykholm's Christian Century interview, Dec. 25, 2013; the interview itself not opened.\"",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Published JSON body is identical to docs/work/essays/the-rise-of-the-nones.md apart from the title and standfirst lines (diffed by script).",
+    "All 19 Scripture quotation instances (John 6:26, 6:60, 6:66, 6:67, 6:68-69; Romans 2:19, 21, 24; Hebrews 10:24, 10:25; 1 John 2:19; Ezekiel 34:2, 34:4, 34:5, 34:11, 34:21; John 10:11; Luke 15:4) plus the three Closing Texts match the local ESV 2011 copy (scratchpad src/mdbible json/ESV.json) word for word after normalizing case and punctuation; each string appears verbatim in the essay; every one carries its reference.",
+    "Every reference matches the sense of the verse in the BSB at client/public/bible/ch/: John 6:22-26 (crowd crosses to Capernaum the next day), 6:51-59 (bread from heaven, flesh and blood, synagogue at Capernaum), 6:60-69; 1 John 2:19 with 2:22 (those who deny Jesus is the Christ) and 2:26 (those trying to deceive, which supports \"teachers\"); Ezekiel 1:1-3 (among the exiles in the land of the Chaldeans), 34:2, 4-5, 11, 18-21 (fat sheep trample and shove the weak); Hebrews 10:24-25; Luke 15:4 (framed as Jesus' question, as the verse is). Romans 2 is the one sense issue, logged above.",
+    "\"Lord GOD\" in Ezekiel 34:11 follows the ESV convention (closing run saw an esv.org title with GOD in capitals).",
+    "The one exclamation point sits inside Ezekiel 34:2; no em-dashes; three en-dashes, all in verse ranges; no forbidden-list word found by script.",
+    "Links /writing/what-post-christian-means, /writing/the-conservative-blind-spot and /writing/the-progressive-blind-spot are in link-targets.json; /help is allowed by the brief.",
+    "Mount Vernon opening (July 21, 2024; about 170, about 50, fewer than 20; vote to close as of August 1; Burge a political scientist; The Nones, 2021; column nearly a year later saying he still wasn't over it) matches ledger lines 72-79 and the closing run.",
+    "Vernon 1968 JSSR article, negative definition, \"religious independents\" not catching on; GSS 1972 about 5 percent; single digits twenty years later; Hout and Fischer 2002 doubling from 7 to 14 percent; GSS 2018 near a quarter (23.7); Pew 2023-24 nearly three in ten and leveled off; unchurched believers; increase among moderates and liberals; Putnam and Campbell, American Grace, 2010: all match ledger lines 88-103.",
+    "Pew 2007 to 2023-24: mainline 18 to 11 percent, evangelical 26 to 23 percent, matches the closing run's Pew executive summary quote.",
+    "Pew nones report: more than 3,300 nones, summer 2023; 63/17/20 (weighted); 60, 47, 30 percent, about four in ten, 12 percent. Reconfirmed by search this run (Pew 'Why are nones nonreligious?').",
+    "Pew civic life: 39 vs 51 percent turnout in 2022 from official state records, gaps concentrated among \"nothing in particular\", atheists and agnostics similar to the affiliated. Reconfirmed by search this run.",
+    "Lifeway 2019: 66 percent; 34, 32, 29, 25 (\"a quarter\") and 24 (\"about as many\") percent, matches ledger line 125 and the closing run.",
+    "Great Dechurching: 2023, Davis and Graham, Burge and Djupe (both political scientists); definition monthly to less than yearly; some 40 million over twenty-five years; casualties citing abuse and hypocrisy; most left casually; about half of dechurched evangelicals at least somewhat willing to return; new friends and invitation. All match the ledger (the 'broadest' superlative is logged above).",
+    "Bowling Alone 2000; Soul Searching 2005 from the NSYR and its five-belief paraphrase (unquoted, attributed, \"In their account it runs roughly like this\"); Luther's visitation 1528-29 and the household design of the Small Catechism; Bengtson's study begun 1970, more than 350 families and 3,500 people, warmth and fatherly closeness, church attendance and devotions not enough by themselves (Bengtson's 'doesn't know' answer reconfirmed via The Mennonite this run).",
+    "Boston Globe 2002; May 2022 Guidepost report, two former Executive Committee officials keeping a private list (Boto and Oldham, unnamed in the essay). The essay implies nothing about James's affiliation.",
+    "Biography: raised without a father, raising five sons, a pastor. All on the confirmed list; no title, years, book count or denomination stated.",
+    "Living persons (Burge, Hout, Fischer, Putnam, Campbell, Wilde, Smith, Denton, Davis, Graham, Djupe): every statement about them is attributed to their published work and is fair, apart from the 2014 hedge and the SBC wording logged above.",
+    "No ledger line remains unverified, open or resting on memory. The ledger's restorations ('at least somewhat') are already in the text; the writer's other originals (Vernon at Utah, 'later researchers', the institution-first gloss, 'two parts') were rightly left out, since the sources seen contradict or fail to support them.",
+    "Second-order caution: the sex-and-marriage sentence is conditional and takes no side; the ledger flags it for James's read (needs_james)."
+  ]
+}

@@ -20,7 +20,9 @@ import {
   placeOf,
   readFamilyProgress,
   recordDevotionDone,
+  saveFamilyBand,
   tonightOn,
+  tonightTitle,
   weekOfYear,
   whenSaid,
   withDone,
@@ -38,7 +40,8 @@ afterEach(() => {
 describe("the committed family index", () => {
   it("passes the page's own shape guard", () => {
     expect(isFamilyIndex(INDEX)).toBe(true);
-    expect(INDEX.weekly).toBe(INDEX.devotions.filter((r) => r.kind === "weekly").length);
+    // `weekly` counts the Foundations set; a live strand beside it is counted in `strands`.
+    expect(INDEX.weekly).toBe(INDEX.devotions.filter((r) => r.kind === "weekly" && (r.strand ?? "foundations") === "foundations").length);
   });
 });
 
@@ -85,6 +88,22 @@ describe("tonightOn", () => {
     expect(missing).toEqual([]);
   });
 
+  it("has tonight's title from the year map, the same as the index's, on every night", () => {
+    const titles = new Map(INDEX.devotions.map((r) => [r.id, r.title]));
+    const wrong: string[] = [];
+    const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
+    const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
+    while (day <= last) {
+      const iso = day.toISOString().slice(0, 10);
+      const t = tonightOn(iso);
+      if (t && tonightTitle(t) !== titles.get(t.id)) wrong.push(`${iso}: ${t.id} is "${tonightTitle(t)}"`);
+      day.setUTCDate(day.getUTCDate() + 1);
+    }
+    expect(wrong).toEqual([]);
+    expect(tonightTitle({ id: "advent-6", set: "advent", day: 6 })).toBe("A Child Is Given");
+    expect(tonightTitle({ id: "no-such-devotion" })).toBeNull();
+  });
+
   it("is null off the map and for a date that cannot exist", () => {
     expect(tonightOn("2040-01-01")).toBeNull();
     expect(tonightOn("2027-02-30")).toBeNull();
@@ -109,6 +128,18 @@ describe("placeOf", () => {
     const advent6 = INDEX.devotions.find((r) => r.id === "advent-6")!;
     expect(placeOf(first, INDEX)).toEqual({ current: 1, total: INDEX.weekly });
     expect(placeOf(advent6, INDEX)).toEqual({ unit: "Day", current: 6, total: INDEX.sets.advent.days });
+  });
+
+  it("counts a weekly devotion within its own strand (U21)", () => {
+    const first = INDEX.devotions.find((r) => r.id === "identity")!;
+    expect(first.strand).toBe("foundations");
+    // Replace the committed world strand, if its flag is live, with a made-up count.
+    const withWorld: FamilyIndex = {
+      ...INDEX,
+      strands: [...(INDEX.strands ?? []).filter((s) => s.key !== "world"), { key: "world", label: "The world we live in", count: 12 }],
+    };
+    expect(placeOf({ ...first, strand: "world", n: 3 }, withWorld)).toEqual({ current: 3, total: 12 });
+    expect(placeOf(first, { ...INDEX, strands: undefined })).toEqual({ current: 1, total: INDEX.weekly });
   });
 });
 
@@ -157,6 +188,15 @@ describe("what this device remembers", () => {
     expect(recordDevotionDone("identity", "2026-11-03")).toMatchObject({ ok: true, already: true });
     expect(recordDevotionDone("identity", "2026-11-04").already).toBe(false);
     expect(readFamilyProgress().done).toHaveLength(2);
+  });
+
+  it("keeps the band a family chose beside its dates (U21)", () => {
+    recordDevotionDone("identity", "2026-11-03");
+    expect(saveFamilyBand("older")).toMatchObject({ ok: true, progress: { band: "older" } });
+    expect(readFamilyProgress()).toEqual({ v: 1, start: "2026-11-03", band: "older", done: [{ id: "identity", date: "2026-11-03" }] });
+    // Marking another night done keeps the band.
+    recordDevotionDone("faith", "2026-11-10");
+    expect(readFamilyProgress().band).toBe("older");
   });
 
   it("ignores a value of the wrong shape", () => {

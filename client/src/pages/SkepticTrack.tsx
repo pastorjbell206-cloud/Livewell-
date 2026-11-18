@@ -44,7 +44,7 @@ export default function SkepticTrack() {
     <Layout>
       {/* Kept out of search until every stop is on the public shelf. */}
       <SEOMeta
-        title="The Skeptic's Track — Start here"
+        title="For Skeptics: Start Here"
         description="Seven essays in argument order. Written for skeptics first by a pastor who came to faith from atheism. No conversion bait."
         url={trackUrl}
         type="website"
@@ -196,11 +196,11 @@ export default function SkepticTrack() {
       </section>
       {/* LEAD MAGNET — email-gated reading path */}
       <PillarLeadMagnet
-        kicker="Free Reading Path"
-        title="The Skeptic's Reading Path"
+        kicker="Free reading list"
+        title="The Skeptic's Reading List"
         blurb="Four studies, in the order I'd hand them to the version of me that was an atheist — the questions worth asking, the resurrection, the whole story, the ancient creed underneath it. A short PDF, no conversion bait."
         slug="skeptic"
-        downloadLabel="Get the reading path (PDF)"
+        downloadLabel="Download the reading list (PDF)"
         source="reading-path-skeptic"
       />
 

@@ -1,0 +1,192 @@
+{
+ "slug": "did-the-resurrection-happen",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/did-the-resurrection-happen.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it, by 5-word overlap, with the other landed essays in /home/user/livewell-land/client/public/essays/ to find lines repeated across the shelf (why-trust-the-bible, the-historical-jesus, can-you-be-good-without-god, excavation-not-demolition). Every quoted string below occurs exactly once in the body. Applied together on a scratch copy, the fixes leave no em-dash and bring the prose to about 3,800 words. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "What the Church Has Done With Easter, paragraph 2, fourth sentence: \"That is easier to preach, and it is very close to the position Paul was answering in Corinth.\"",
+   "problem": "The criticism fires in both directions, but with two different instruments. The mainline side is charged with a motive (\"easier to preach\"), while the evangelical and Baptist side in the next paragraph is charged only with a doctrinal error and no motive. Borg and the pulpits that followed him held the view from conviction, and a mainline pastor deciding whether to hand this to people will hear a cheap shot and stop trusting the mirror the next paragraph holds up to his own side. The fix states the reading the way its defenders would, then lets Paul judge it.",
+   "fix": "Replace with: \"That reading was offered as a way to keep Easter for people who could no longer believe in an empty tomb, and it is very close to the position Paul was answering in Corinth.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Has Done With Easter, paragraph 2, last sentence: \"Celsus, who rejected the claim outright, at least understood that it was about a body.\"",
+   "problem": "This is a jab at Borg, and it gets him wrong. \"At least understood\" implies that Borg did not know the traditional claim was bodily. He knew it perfectly well and reinterpreted it. A progressive reader, or anyone who has read Borg, will catch the caricature. The point the sentence needs (the claim was always about a body, and even its pagan opponent knew it) survives without the sneer.",
+   "fix": "Replace with: \"Celsus, who rejected the claim outright, never doubted that it was about a body.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, second short paragraph: \"If he isn't, the question was never only whether the evidence is good enough for a historian. It's what you will do in a world where death has already been undone once.\"",
+   "problem": "This repeats a closing move used across the shelf, and it falls in the most exposed spot. why-trust-the-bible (landed beside it in the Doubt section) ends: \"It isn't only whether the book was copied well, though it was. It's whether the one it bears witness to is alive.\" the-historical-jesus ends: \"his question was never a historian's question.\" A reader who follows the link from the-historical-jesus meets the same \"not only X. It's Y\" frame twice. The image underneath it (death already undone once) is the real weight and should stay.",
+   "fix": "Replace with: \"If he isn't, all of us are living in a world where death has already been undone once.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, third short paragraph: \"None of us, believer or skeptic, should settle that by what we assumed before we looked.\"",
+   "problem": "This line turns the ending into a recap. It restates the Hume section's closing sentence almost word for word (\"You can't settle it by assuming the answer\"). Its \"that\" also has no clear antecedent after the line before it: it can't mean \"what you will do\", and the reader has to reach back to the resurrection itself. It holds the ending up between the mirror and Mary at the tomb. With the fix above, \"all of us\" already carries the believer-and-skeptic inclusion.",
+   "fix": "Delete the paragraph. The ending then runs from \"If he isn't, all of us are living in a world where death has already been undone once.\" straight to \"Mary Magdalene came to the tomb that morning ...\"",
+   "severity": "should"
+  },
+  {
+   "where": "Can a Historian Say a Miracle Happened?, paragraph 4, first sentence: \"I was an atheist before I was a Christian, so I don't assume that a skeptic reading this is simply being stubborn.\"",
+   "problem": "The biography is confirmed and used plainly, once, to explain a posture rather than to claim authority, so the use itself is fine. The trouble is that the opening clause is word for word the sentence in can-you-be-good-without-god (\"I was an atheist before I was a Christian, so the person on the other side of this question is someone I used to be\"). Two Doubt essays on the same shelf share James's one biographical sentence, and that turns it into a stamp.",
+   "fix": "Replace with: \"I came to faith as an adult, out of atheism, so I don't assume that a skeptic reading this is simply being stubborn.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Has Done With Easter, paragraph 5, last sentence: \"[Find Help](/help) is a place to start.\"",
+   "problem": "The crisis path is right and should stay, but the sentence is word for word the one in why-trust-the-bible (\"[Find Help](/help) is a place to start.\"), which sits beside this essay in the Doubt section. It is a shelf stamp in the one place where the reader should feel addressed and not templated. Saying what the reader will find there is also more useful to someone grieving. /help leads to /help/grief, \"Someone I love has died\", whose own summary is \"For the days after a death\".",
+   "fix": "Replace with: \"[Find Help](/help) has a page for the days after a death.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Was the Tomb Empty?, paragraph 5, last two sentences: \"The church's earliest opponents didn't say the body was still in the tomb. They argued about how it got out.\"",
+   "problem": "A skeptic will push back here. Both witnesses to what the opponents said, Matthew and Justin, are Christians reporting their opponents, and the essay has just conceded that \"Many scholars doubt Matthew's guard story.\" Stated flat, the conclusion claims more than the sources can bear. Qualifying it keeps the point and the section's verdict line.",
+   "fix": "Replace the first sentence with: \"As far as our sources show, the church's earliest opponents didn't say the body was still in the tomb.\" Keep \"They argued about how it got out.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Other Explanations, paragraph 3: \"The idea that the women went to the wrong tomb runs into Joseph of Arimathea, who knew where he had laid the body,\"",
+   "problem": "This is internally inconsistent, and a skeptic will see it. Two sections earlier the essay laid out Ehrman's case that Jesus may never have been laid in a known tomb and left it open (\"the argument goes on\"). Here Joseph's burial is treated as settled in order to dismiss the wrong-tomb theory. The argument still works as a conditional, and saying so is what keeps the earlier concession honest.",
+   "fix": "Replace with: \"The idea that the women went to the wrong tomb runs into Joseph of Arimathea, who, if Mark's account of the burial holds, knew where he had laid the body,\"",
+   "severity": "should"
+  },
+  {
+   "where": "Could They Have Seen Visions?, paragraph 3: \"The list in 1 Corinthians includes groups, and the Gospels describe the risen Jesus eating, being touched, and talking at length.\"",
+   "problem": "Two sentences earlier the essay concedes, through Allison, that some reports of the dead appearing came \"to more than one person at once.\" It then uses group appearances as a strain on the vision theory. A skeptic will notice that the essay is spending a point it has already given away. Keep the concession and press only the part it does not cover.",
+   "fix": "Replace with: \"Allison's cases include groups too, but the Gospels describe the risen Jesus eating, being touched, and talking at length.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What the Church Has Done With Easter, paragraph 3, last two sentences: \"... while expecting something disembodied for itself has kept the argument and misplaced the hope. It leaves Easter with Jesus, as something that happened to him once and changes little for the rest of us.\"",
+   "problem": "Two verdicts are stacked at the end of one paragraph, and the first is a two-beat epigram (\"kept the argument and misplaced the hope\") of the kind the judges flag. The second is plainer and stronger, so keep it and fold it into the sentence.",
+   "fix": "Replace \"has kept the argument and misplaced the hope. It leaves Easter with Jesus,\" with \"leaves Easter with Jesus,\". The sentence then reads: \"A church that insists on a bodily resurrection for Jesus while expecting something disembodied for itself leaves Easter with Jesus, as something that happened to him once and changes little for the rest of us.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What Almost Every Historian Grants, paragraph 3, first sentence: \"Bart Ehrman, one of the most widely read skeptical New Testament scholars in America, grants\"",
+   "problem": "A credential appositive that has become a shelf stamp. the-historical-jesus introduces him as \"an agnostic and one of the best-known New Testament scholars in America\", and why-trust-the-bible says \"He became one of the best-known New Testament scholars in the country\". All three Doubt essays introduce Ehrman with the same ranking. Here only \"skeptical\" does any work, because the point is that a skeptic grants the belief.",
+   "fix": "Replace with: \"Bart Ehrman, a skeptical New Testament scholar, grants\"",
+   "severity": "should"
+  },
+  {
+   "where": "What \"Resurrection\" Meant, paragraph 2, second sentence: \"N.T. Wright, a historian who also served as an Anglican bishop, spent some eight hundred pages in *The Resurrection of the Son of God* tracing what the word meant to Jews, pagans and Christians of the period.\"",
+   "problem": "The page count is a credential. It advertises the scholarship instead of using it. It is also a cross-shelf echo: excavation-not-demolition introduces the same book the same way (\"N. T. Wright devoted a very long book, *The Resurrection of the Son of God*, to arguing ...\"). The idea (what the word meant to Jews, pagans and Christians) is what does the work.",
+   "fix": "Replace \"spent some eight hundred pages in *The Resurrection of the Son of God* tracing what the word meant\" with \"traced in *The Resurrection of the Son of God* what the word meant\".",
+   "severity": "should"
+  },
+  {
+   "where": "Opening, paragraph 2, fifth sentence: \"Christianity has never been able to do that with Easter, and Paul closed that door himself.\"",
+   "problem": "An overclaim that the essay later contradicts. The last section shows much of mainline Protestantism doing exactly this (\"treated the empty-tomb stories as parables\"). A skeptic who reaches that section will remember \"never been able\". The essay's actual claim is that doing it turns the faith into something else, which is Paul's point.",
+   "fix": "Replace with: \"Christianity can't do that with Easter without becoming something else, and Paul closed that door himself.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening, paragraph 2, last sentence: \"The question in the title is the one everything else in the faith hangs on.\"",
+   "problem": "A vague framing sentence that points at the essay's own title. It restates what the paragraph has just shown and closes the paragraph on a formula.",
+   "fix": "Delete the sentence. The paragraph then ends: \"... and Paul closed that door himself.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening, paragraph 3, second sentence: \"They were believers in Corinth who had decided there is no resurrection of the dead, and that ought to\"",
+   "problem": "This repeats the first paragraph (\"a group that had decided the dead are not raised\") two paragraphs later. The new thing in the sentence is that they were believers.",
+   "fix": "Replace with: \"They were believers in Corinth, and that ought to\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Paul Handed On, paragraph 3, last sentence: \"It even adds a detail no legend needs, that most of the five hundred were still alive, which is how you write when you expect people to check.\"",
+   "problem": "A skeptic will push on \"expect people to check\". The five hundred are unnamed, and no reader in Corinth could easily find them. The next paragraph makes the defensible version of the point (\"while the people it named were still alive to be asked\"), so the clause is both an overclaim and a repeat.",
+   "fix": "Replace with: \"It even adds a detail no legend needs, that most of the five hundred were still alive.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Was the Tomb Empty?, paragraph 2: \"In one bone box lay the remains of a young man named Yehohanan\"",
+   "problem": "An inverted, literary syntax where he would write a plain sentence.",
+   "fix": "Replace with: \"One bone box held the remains of a young man named Yehohanan\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Was the Tomb Empty?, paragraph 5, first two sentences: \"Mary was the first person in the story to suggest the body had been taken. The authorities were the second.\"",
+   "problem": "A tidy ordinal two-beat. It is also shaky: in Matthew's own story the chief priests raise the theft before Easter (Matthew 27:64), so \"the second\" invites a correction. And it is part of a motif stamped through the piece. Mary reading the empty tomb as a robbery appears in this section three times (the John 20:15 quotation, here, and \"It made Mary think of grave robbers\"), again in the Resurrection section, and then at the ending, which needs it fresh.",
+   "fix": "Replace both sentences with: \"Mary wasn't the only one to think the body had been taken.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What \"Resurrection\" Meant, paragraph 4: \"On its own, a missing body looks like a robbery, which is how Mary first read it.\"",
+   "problem": "The same Mary-and-the-robbery motif, a fourth time (see the previous finding). The ending (\"She thought the gardener had moved the body. Then he said her name.\") lands harder if the reader has not been handed the image again here.",
+   "fix": "Replace with: \"On its own, a missing body looks like a robbery.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Could They Have Seen Visions?, paragraph 3, second sentence: \"Still, the theory strains at the edges of the evidence.\"",
+   "problem": "\"Strain\" is the essay's stock word for a theory in trouble: here, \"however strained\" in the Hume section, and \"strains at the rest\" in the summary paragraph. \"At the edges of the evidence\" is a small image where a plain phrase serves. Keep the word for the summary paragraph, where it does its work.",
+   "fix": "Replace with: \"Still, the theory has trouble with the rest of the evidence.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Can a Historian Say a Miracle Happened?, paragraph 3, last sentence: \"You can't settle it by assuming the answer and calling the result skepticism.\"",
+   "problem": "An epigram aimed at \"you\", the skeptic he writes toward, in the paragraph just before he says he doesn't assume the skeptic is stubborn. \"Calling the result skepticism\" scores a point where the argument has already made it. With the ending's restatement deleted (see above), this is the one place the point is made, so keep it plain.",
+   "fix": "Replace with: \"It can't be settled by assuming the answer.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Can a Historian Say a Miracle Happened?, paragraph 5, second sentence: \"but it can move a person from contempt to consideration, which is a real distance.\"",
+   "problem": "An alliterative pair. \"Contempt\" also gives the skeptic reader an attitude that the previous paragraph has just said it won't assume.",
+   "fix": "Replace \"from contempt to consideration, which is a real distance.\" with \"from dismissing the claim to weighing it, which is a real distance.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Church Has Done With Easter, paragraph 4, second sentence: \"If the dead are not raised, he admitted,\"",
+   "problem": "Paul is not conceding anything at 1 Corinthians 15:32. He is drawing out the consequence of the Corinthian position. \"Admitted\" misstates what he is doing.",
+   "fix": "Replace with: \"If the dead are not raised, he wrote,\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Church Has Done With Easter, paragraph 4, last sentence: \"That covers the care given to a dying parent, the forgiveness that cost you something, the faithfulness in a marriage nobody applauds, and the years of raising children who may never thank you.\"",
+   "problem": "A four-part list with a matching cadence, which is the most generated-sounding sentence in the closing movement. The ordinary-Tuesday turn is right, but a true pair carries it better. The two items about bodily care also set up the next paragraph (\"what we do in them and for them matters\").",
+   "fix": "Replace with: \"That covers the care given to a dying parent and the years of raising children who may never thank you.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Closing Texts, first line: *\"But in fact Christ has been raised from the dead, the firstfruits of those who have fallen asleep.\"* (1 Corinthians 15:20)",
+   "problem": "The same verse is already quoted verbatim in the body (\"Paul reached for a farmer's word: ...\"). Repeating it in the Closing Texts makes the block feel padded. The other two lines are enough (two or three is the format), and John 11:25 answers the Martha quotation in the body.",
+   "fix": "Delete the first Closing Texts line. Keep Luke 24:5–6 and John 11:25.",
+   "severity": "consider"
+  },
+  {
+   "where": "Was the Tomb Empty?, paragraph 4, second sentence: \"In the oldest manuscripts we have, Mark's Gospel ends\"",
+   "problem": "The essay links only one site essay (the-historical-jesus). why-trust-the-bible, in link-targets.json, on the shelf and landed, explains that \"some of the earliest manuscripts stop at 16:8\". A link here gives the reader who wonders about Mark's ending somewhere to go, and it brings the essay to two essay links.",
+   "fix": "Replace with: \"In the [oldest manuscripts](/writing/why-trust-the-bible) we have, Mark's Gospel ends\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Whole essay: length",
+   "problem": "The prose (headings, the block quotation and Closing Texts excluded) runs about 3,890 words, slightly above the brief's usual 2,500 to 3,800.",
+   "fix": "No separate cut is needed. The deletions and trims above bring the prose to about 3,800 words (I checked by applying them to a scratch copy).",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), all 6 therapy-speak items (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and the signposting phrases (here is what I mean, let me explain).",
+  "Em-dash: no U+2014 anywhere. The three en-dashes are verse ranges (1 Corinthians 15:3–8, Galatians 1:18–19, Luke 24:5–6).",
+  "Exclamation points: one, inside the verbatim quotation of Acts 12:15 (\"It is his angel!\").",
+  "Semicolons: none.",
+  "The brief's stamps: none of the seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\" (\"consideration\" only), \"none of this\", \"the record\", \"I don't exempt myself\"). The shelf-level repeats that do appear (the atheist sentence, the Find Help sentence, the Ehrman credential, the Wright page count, the closing frame) are flagged above.",
+  "Rulebook leakage: zero uses of steelman, verdict, indictment or self-implication, and zero uses of \"honest\" or \"fair\". Concessions are made rather than announced: \"He had a point, and modern research strengthens it\", \"He's right to warn them\", \"Some of that is simply true\", \"That is candid of him\", \"That's a reasonable line to draw\".",
+  "Announced turns: none of the judges' kind. The signposting is plain and in his habit (\"Before weighing explanations, it helps to be clear about what needs explaining\", \"So the question is narrower than it first looks\"). The one meta framing sentence (\"The question in the title ...\") is flagged above.",
+  "Biography: two touches, both confirmed and plain. Came to faith from atheism (its wording is flagged only for duplicating another essay). \"Baptist churches like the one I pastor\" puts his own church inside the critique, which is self-implication and not a credential. No title, years in ministry, book count, Southern Baptist reference, invented scene or brand tie-in.",
+  "Standfirst (excerpt): one plain declarative sentence, two clauses joined by \"and\", not a balanced antithesis.",
+  "Title and headings: the title uses plain search words. All eight headings are plain and descriptive (What Paul Handed On; What Almost Every Historian Grants; Was the Tomb Empty?; Could They Have Seen Visions?; What \"Resurrection\" Meant; The Other Explanations; Can a Historian Say a Miracle Happened?; What the Church Has Done With Easter).",
+  "\"Not X. Y.\" constructions: at most one per section (the opponents line in the tomb section, \"Paul wasn't mourning Jesus\" in the visions section, \"Nobody called James the messiah\" in the Resurrection section), each at a real hinge.",
+  "Triplets: the one remaining three-part list (\"Jesus had been vindicated, his spirit was with God, and he would rise with the righteous on the last day\") names three real alternatives Jews of the day had, and the \"that ... that ... and that\" sentence is the essay's distilled thesis. Neither is padding. The four-part list is flagged above.",
+  "Second-order questions are not settled. The resurrection of the body is first-order and is confessed through the Apostles' and Nicene Creeds. The intermediate state is not denied, only the \"body left behind for good\" hope. Mark's ending is stated as a manuscript fact. The burial is left open (\"the argument goes on\"). Matthew's guard story is qualified (\"Many scholars doubt\"). Jesus' brothers are called \"brother\" as the sources do.",
+  "Criticism of left and right: mainline Protestantism and Borg on one side, evangelical and Baptist churches (his own included) on the other, both measured against the same Pauline and creedal standard. The only imbalances are the motive charge and the Celsus jab, both flagged above. No partisan politics.",
+  "Skeptic read: the concessions are real and come early. History cannot prove the resurrection. A historian can establish only that people were convinced. Ehrman's burial objection is stated in its strongest form. Rees's bereavement study and Allison's concession strengthen the vision theory. Martyrdom shows sincerity and not truth. The legends about the apostles' deaths are disowned. Hume's principle is called sound. The places a checking skeptic would push back are flagged above (opponents, Joseph, groups, \"expect people to check\", \"never been able\", \"contempt\").",
+  "Pastor read: it can be handed to a congregation. It corrects Christians who overclaim without contempt, puts the pastor's own church inside the critique, honors grief before argument (\"the argument can wait\"), and keeps Matthew 28:17's \"but some doubted\" as permission to doubt inside the faith.",
+  "Crisis path: grief is addressed once, plainly, with a [Find Help](/help) link, and the reader is not diagnosed. Self-harm and abuse are not in view, so no 988 or reporting line is needed (the /help page itself carries 988 at the top).",
+  "Ending: after the fixes above it is a short stack of plain lines that turns the mirror on \"all of us\" and lands on the risen Christ (John 20:15–16 told plainly: \"Then he said her name.\"). That line is narrative, not a clever kicker. Closing Texts are in the *\"Quote.\"* (Reference) format, one per line.",
+  "Scripture is used inside the argument and never as decoration: 1 Corinthians 15 is the controlling text from first paragraph to last, and it works alongside Galatians 1, John 7:5, Deuteronomy 21:23, Daniel 12:2, John 11:24, Acts 12:15 and 17:32, and 1 Thessalonians 4:13. The ESV wording matched where I compared it from memory. Verification belongs to the integrity lens.",
+  "Scholar parade: aside from the two credential appositives flagged above (Ehrman, Wright), each named witness does work. Tacitus fixes the execution. Evans and Josephus answer the burial objection. Celsus and Origen supply the oldest objections. Justin reports the theft charge. Rees and Allison strengthen the rival theory. Akiva and Maimonides show messianic logic. Strauss answers the swoon theory, Hume the miracle question, and Borg is the mainline case. Years appear where chronology is the point (1748, 1968, 1971, 132 and 135, around 62).",
+  "Links: one essay link (/writing/the-historical-jesus, in link-targets.json, on the shelf and landed) plus /help. A second link is suggested above.",
+  "Register numbers: 42 body paragraphs averaging 93 words. 217 sentences with a mean of 18.1 words, 18 percent of them 8 words or fewer, on the developed side of the quarter target. No fragment stacks. Contractions are light and natural."
+ ]
+}

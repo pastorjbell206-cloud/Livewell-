@@ -1,0 +1,88 @@
+{
+ "slug": "did-god-command-genocide",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/did-god-command-genocide.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography; James's 2026-10-28 instruction to publish with the three readings open) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation, and compared it by 6-word overlap with the other landed essays and the drafts. Every quoted string below occurs exactly once in the body. The piece is strong; the findings are small, and none restructures it. Scripture wording and fact verification belong to the integrity lens (the one new verse proposed, Matthew 15:26, should be confirmed against the ESV there).",
+ "findings": [
+  {
+   "where": "Opening, paragraph 3 (the objection), last two sentences: \"If that reasoning has hold of you and has become more than an argument, you don't have to work it out alone. [Find Help](/help) has real people you can call.\"",
+   "problem": "The help line is aimed at the wrong reader and lands in the wrong key. \"That reasoning\" is the skeptic's moral argument, which the paragraph has just honored as conscience taken seriously. Offering it a phone number in the next breath treats the objection as a symptom, and the skeptic, the reader the essay is written toward, feels handled at the exact moment he was being met. The person who may need help is the believer whose faith these chapters have shaken, so the line should speak to him. It also repeats the frame of the crisis line in why-trust-the-bible (\"not only with an argument, you don't have to sort them out alone\"), which this essay links to, so a reader who follows the link meets the same sentence twice. The fix keeps the path to help and the link.",
+   "fix": "Replace \"If that reasoning has hold of you and has become more than an argument, you don't have to work it out alone. [Find Help](/help) has real people you can call.\" with: \"If these chapters have shaken your own faith and it's weighing on you, you don't have to carry that by yourself. [Find Help](/help) has real people you can call.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Jesus and the Canaanite Woman, paragraph 3, second sentence: \"Jesus answers at first that he \"was sent only to the lost sheep of the house of Israel\" (Matthew 15:24), and she keeps asking.\"",
+   "problem": "The essay quotes her reply about the dogs (15:27) but leaves out the line she is answering, Jesus' own word about the children's bread and the dogs (15:26). Two sections earlier it faulted children's Bibles for leaving out the verse after the walls fall. A skeptic who knows Matthew 15 will see the essay doing the same thing to the hardest verse in its own climactic story, and her answer makes no sense without it. Putting the verse back costs one clause and makes the woman's faith, and Jesus' answer to it, weigh what it should. (ESV wording to be confirmed by the integrity lens; the local Study Bible text is BSB.)",
+   "fix": "Replace \"Jesus answers at first that he \"was sent only to the lost sheep of the house of Israel\" (Matthew 15:24), and she keeps asking.\" with: \"Jesus answers at first that he \"was sent only to the lost sheep of the house of Israel\" (Matthew 15:24), and when she kneels and keeps asking, he says, \"It is not right to take the children's bread and throw it to the dogs\" (Matthew 15:26).\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, first and second short paragraphs: \"No reading makes them painless. The church shouldn't want one that does.\" followed by the one-line paragraph \"What no reading allows is what Underhill did.\": \"No reading makes them painless. The church shouldn't want one that does. [paragraph break] What no reading allows is what Underhill did.\"",
+   "problem": "The ending recaps before it turns. It re-asks the title question and restates what the opening (\"The plain answer is that the Bible says God commanded it\"), the three-readings section and the five-sons paragraph (\"as if they were easy\") already said, then stacks an aphoristic two-beat closer (\"No reading makes them painless. The church shouldn't want one that does.\") on top of a one-line kicker paragraph that repeats \"no reading\". That is three closing lines before the mirror turn even begins, and it blunts the two lines that carry the weight (whom we have cast as Canaanites; the cross). Keep the plain answer for the reader who searched the question, cut the epigram, and join the Underhill line to the answer as its last sentence (the paragraph break goes away).",
+   "fix": "Replace the two sentences, the paragraph break and the one-line paragraph (exact old text: \"No reading makes them painless. The church shouldn't want one that does.\\n\\nWhat no reading allows is what Underhill did.\") with: \"What no reading allows is what Underhill did.\" The paragraph then reads: \"So did God command genocide? The Bible says he commanded Israel to destroy the peoples of Canaan, and Christians who love the Bible read those commands in more than one way. What no reading allows is what Underhill did.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, third short paragraph, first sentence: \"Before we ask whether God was just to the Canaanites, we should ask whom we have quietly cast as Canaanites ourselves.\"",
+   "problem": "\"Before we ask\" sets the skeptic's question aside at the moment the essay should leave it standing. After 3,800 words on whether God was just, telling the reader to look at himself first reads as a pivot away from the question (a tu quoque), and it is the one place in the piece where a skeptic would feel the argument was being turned on him to end it. The mirror turn is right; it should come beside his question, not in front of it.",
+   "fix": "Replace \"Before we ask whether God was just to the Canaanites, we should ask whom we have quietly cast as Canaanites ourselves.\" with: \"While we ask whether God was just to the Canaanites, we should also ask whom we have quietly cast as Canaanites ourselves.\"",
+   "severity": "should"
+  },
+  {
+   "where": "How Christians Have Answered, last paragraph, last sentence: \"And they agree on the point that matters most for how Christians live: no one may take these chapters as a pattern for anything we do.\"",
+   "problem": "Overclaim. The New Testament itself holds up these chapters as patterns: Jericho's walls and Rahab's faith in Hebrews 11:30 to 31, Rahab's works in James 2:25. A pastor or a well-read skeptic will catch it. What no reading allows is taking the commands as a pattern, which is what the next section argues. The sentence also stamps \"matters\" a second time right after \"What the three readings share matters more than where they part,\" and \"the point that matters most\" announces its own importance.",
+   "fix": "Replace \"And they agree on the point that matters most for how Christians live: no one may take these chapters as a pattern for anything we do.\" with: \"And they agree on what this means for how Christians live: no one may take these commands as a pattern for anything we do.\"",
+   "severity": "should"
+  },
+  {
+   "where": "How Ancient War Reports Talk, paragraph 2, fourth sentence: \"Nobody needs a law against marrying people who are all dead.\"",
+   "problem": "A debater's quip about the dead, in a paragraph about the killing of children. The essay set its own standard two sections earlier (\"something we could say aloud with a parent listening\"), and this line fails it; the skeptic hears a gotcha, and a pastor reading it aloud to a grieving parent would wince. The argument is sound and survives in plain words.",
+   "fix": "Replace \"Nobody needs a law against marrying people who are all dead.\" with: \"A law against marrying them assumes they will still be there.\"",
+   "severity": "should"
+  },
+  {
+   "where": "How Ancient War Reports Talk, paragraph 4, first two sentences: \"The philosopher Nicholas Wolterstorff, reading Joshua closely, concluded that the book itself signals that its totals were never meant as body counts. Paul Copan and Matthew Flannagan built a whole book on that reading, under nearly the same title as this essay.\"",
+   "problem": "A small scholar parade: three consecutive \"[role] [Name] [verb]\" sentences (Younger compared, Wolterstorff concluded, Copan and Flannagan built) for one idea. Wolterstorff's sentence adds no idea the essay has not already shown from the text itself (Joshua 11:23 against 13:1, Judges 3:5, Deuteronomy 7:2 to 3); remove the name and nothing is lost, which is the Scholarship Standard's test for decoration. Copan and Flannagan stay because the next sentence gives their argument and the title echo credits them.",
+   "fix": "Replace \"The philosopher Nicholas Wolterstorff, reading Joshua closely, concluded that the book itself signals that its totals were never meant as body counts. Paul Copan and Matthew Flannagan built a whole book on that reading, under nearly the same title as this essay.\" with: \"Paul Copan and Matthew Flannagan built a whole book on this reading, under nearly the same title as this essay.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What the Commands Say, paragraph 5 (five sons), last sentence: \"That means we can't pretend the verses aren't there, and we can't talk about them as if they were easy.\"",
+   "problem": "A parallel \"we can't ... and we can't\" pair closing the paragraph, the Both/Neither construction the judges flagged. One plain sentence does the same work.",
+   "fix": "Replace \"That means we can't pretend the verses aren't there, and we can't talk about them as if they were easy.\" with: \"That means facing the verses, without talking about them as if they were easy.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What These Chapters Have Been Used For, paragraph 2, fourth and fifth sentences: \"More than once his followers reached for violence on his behalf. He refused it every time.\"",
+   "problem": "A two-beat closer (\"More than once ... every time\") stacked directly before the section's real verdict line (\"has to walk past Jesus to get there\"), so the paragraph ends twice. \"Every time\" on two examples also reaches further than the evidence given.",
+   "fix": "Replace \"More than once his followers reached for violence on his behalf. He refused it every time.\" with: \"Each time his followers reached for violence on his behalf, he refused it.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "How Christians Have Answered, paragraph 7, first words: \"A third group, argued most fully by\"",
+   "problem": "Grammar slip: a group of people is not \"argued.\" The paragraph before says \"Some keep the traditional reading\" and \"Others accept\"; it is the third reading that Boyd argues.",
+   "fix": "Replace \"A third group, argued most fully by\" with: \"A third reading, argued most fully by\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community) and all 6 therapy-speak items (hold space, your truth, do the work, your feelings are valid, lean into, showing up).",
+  "Em-dash: no U+2014 anywhere. The three en-dashes are verse ranges (Deuteronomy 20:16–18, Joshua 7:24–25, Deuteronomy 7:2–3).",
+  "Exclamation points: four, all inside verbatim ESV Scripture (two in Genesis 18:25 in the body, Matthew 15:28 in the body and again in the closing texts).",
+  "Brief stamps: none of \"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\". No \"honest\" or \"fair\" used as a self-certifying adjective.",
+  "Rulebook leakage: none. No steelman, verdict, indictment or self-implication vocabulary; the objection (paragraph 3) and the three readings are stated in their defenders' terms without announcing that this is being done.",
+  "Announced turns: none. \"I'll come back to why\" (paragraph 2) is the plain signposting the brief allows, and it is paid off at \"That is where Underhill went wrong.\"",
+  "Headings: six, all plain and descriptive (What the Commands Say; What the Text Says the War Was For; How Ancient War Reports Talk; How Christians Have Answered; What These Chapters Have Been Used For; Jesus and the Canaanite Woman). Title is in the plain words people search.",
+  "Standfirst (excerpt): one plain declarative sentence, not a balanced antithesis.",
+  "Biography: one line only, \"I have five sons\" (confirmed), used as the reason he will not treat \"child and infant\" as a puzzle and immediately widened to every Christian, not as a credential. No title, years in ministry, book count, church name or Southern Baptist reference.",
+  "Contested second-order question: the three readings (traditional, ancient-war idiom, Boyd's cruciform reading) are each given in their defenders' terms with the critics' answer and the defenders' reply; the paragraph names it as a division among people who confess the same creeds and says \"I won't pretend the question is settled.\" No position is asserted for James, which matches his 2026-10-28 instruction to publish with the three readings left open.",
+  "First-order matter confessed plainly: Marcion rejected, the God of Joshua confessed as the Father of Jesus through the creed.",
+  "Political criticism fires in both directions with the same instrument: \"Believers on the right and on the left both know how to do it,\" followed by \"Most of us\" and \"while we're making it.\" The Underhill critique is historical, not partisan.",
+  "Crisis path: [Find Help](/help) is linked in the opening section. No self-harm or personal abuse is in view, so no 988 line or reporting line is required (see the first finding on how the help line is addressed).",
+  "Self-implication is done, not announced: \"We don't read them,\" \"That silence is a small Marcionism,\" \"whom we have quietly cast as Canaanites ourselves.\"",
+  "Scripture works inside the argument throughout (Abraham's question is opened in the first section and answered at the cross); closing texts use the shelf format *\"Quote.\"* (Reference), and repeating body verses there is the approved pilots' practice too.",
+  "Links: two essay links, both in link-targets.json (/writing/why-trust-the-bible, /writing/why-didnt-the-bible-ban-slavery), plus /help.",
+  "Scholar names: no \"In *Title* (YEAR), X argued\" formula; years appear only where they do work (1637, 1944, 1948, about 1208 BC, about 840 BC). The history-of-interpretation names (Marcion, Tertullian, Faustus, Augustine, Aquinas, Origen, Boyd) each carry a distinct position. One small run in the ancient-war section is flagged as consider.",
+  "Triplets: none forced; the three readings are three because the debate has three.",
+  "Cross-shelf repetition: a 6-word overlap check against every landed essay and every draft in docs/work/essays found only link text and a common date phrase (\"in the middle of the second century\"), apart from the help-line echo flagged in the first finding.",
+  "Measures: mean paragraph about 93 words, mean sentence about 18.6 words, about 21 percent of sentences at 8 words or fewer; body about 3,890 words, about 3,865 with the fixes applied. The fixes, applied together on a scratch copy, leave no em-dash, no forbidden word and no exclamation outside Scripture."
+ ]
+}

@@ -34,7 +34,7 @@ export default function TheMonsterInTheMirror() {
       {/* HERO */}
       <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="The Monster in the Mirror — cover" width={1600} height={2560}
+          <img src={COVER} alt="Cover of The Monster in the Mirror" width={1600} height={2560}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
             <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Ebook Available Now</div>
@@ -64,8 +64,8 @@ export default function TheMonsterInTheMirror() {
             The slaveholder was not a monster. That is the point.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ margin: "0 0 1.2em" }}>The slaveholder kept a Bible on his desk. The German Christian sang in church. The Pharisee knew the Law by heart. Each one read Scripture sincerely, wrapped a cultural conviction in chapter and verse, and called the result obedience. James Bell takes the long history of the church getting the Bible wrong and turns it back on the reader: the question is not whether earlier generations were blind, but where ours is.</p>
-            <p style={{ margin: "0 0 1.2em" }}>This is a book about reading Scripture against yourself — testing the conclusions you already hold instead of arming them, and learning to tell the difference between what the text says and what your community has decided it must say.</p>
+            <p style={{ margin: "0 0 1.2em" }}>The slaveholder kept a Bible on his desk. The German Christian sang in church. The Pharisee knew the Law by heart. Each one read Scripture sincerely, wrapped a cultural conviction in chapter and verse, and called the result obedience. James Bell takes the long history of the church getting the Bible wrong and turns it back on the reader, who has to ask where our own generation is blind.</p>
+            <p style={{ margin: "0 0 1.2em" }}>This is a book about reading Scripture against yourself. That means testing the conclusions you already hold instead of arming them, and learning to tell the difference between what the text says and what your community has decided it must say.</p>
             <p style={{ margin: 0, fontWeight: 600 }}>The monster in the mirror is not the past. It is the face looking back.</p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function TheMonsterInTheMirror() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            $8.99 for the complete ebook: an EPUB for your e-reader and a PDF for everything else, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StripeBuyButton paymentLink={PAYMENT_LINK} />

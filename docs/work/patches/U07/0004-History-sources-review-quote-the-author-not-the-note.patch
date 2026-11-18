@@ -1,0 +1,450 @@
+From a448388bc5696ad0db86159a3f72d5ae203b8e8b Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 18:55:17 +0000
+Subject: [PATCH 4/4] History sources review: quote the author, not the notes;
+ bound omissions (U07)
+
+- An excerpt is matched against the author's text unless its card says it
+  quotes a note ("inNote": true). Before, "The blood of Christians is the
+  seed of the Church." passed as Tertullian's Apology because a bracketed
+  editor's note gives it; the text itself says "the blood of Christians is
+  seed". Pliny's letter, in McGiffert's note to Eusebius 3.33, now carries
+  inNote.
+- Each piece of an excerpt with omissions must begin within 2,000
+  characters of the one before, and every occurrence of a piece is tried.
+  Before, "the Christian emperors ... are to be worshipped" passed against
+  City of God 5 from pieces 112,000 characters apart.
+- .prettierignore keeps `pnpm format` off the stored texts, whose sha256 the
+  gate checks, and off the generated provenance list.
+- PROVENANCE.md states both rules and that editors' headings and summaries
+  sit in the author's text; SURVEY.md corrects the Loeb Julian dates and no
+  longer says every printed work is long out of copyright.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .prettierignore                            |   3 +
+ scripts/data/history-sources/PROVENANCE.md |  24 ++++-
+ scripts/data/history-sources/SURVEY.md     |   8 +-
+ scripts/lib/history-sources.mjs            | 110 +++++++++++++++------
+ scripts/verify-sources.mjs                 |   4 +-
+ server/history-sources.test.ts             |  60 +++++++++--
+ 6 files changed, 163 insertions(+), 46 deletions(-)
+
+diff --git a/.prettierignore b/.prettierignore
+index 591fee00..02a5ccc2 100644
+--- a/.prettierignore
++++ b/.prettierignore
+@@ -12,6 +12,9 @@ build/
+ coverage/
+ # Written by scripts; CI compares them byte for byte with a fresh build.
+ client/src/lib/*.generated.ts
++# Stored byte for byte as fetched (verify-sources.mjs checks each sha256);
++# PROVENANCE.md's list is generated from manifest.json.
++scripts/data/history-sources/
+ 
+ # Package files
+ package-lock.json
+diff --git a/scripts/data/history-sources/PROVENANCE.md b/scripts/data/history-sources/PROVENANCE.md
+index 1aa24f98..72c84549 100644
+--- a/scripts/data/history-sources/PROVENANCE.md
++++ b/scripts/data/history-sources/PROVENANCE.md
+@@ -48,9 +48,21 @@ the public domain.
+   quotation-mark style, dash style and spacing are ignored; every word and
+   every other mark must match. Footnote numbers are not part of the text.
+ - An omission is marked with an ellipsis ("...", "…" or "[...]"); the pieces
+-  either side are each found, in order, in one passage. A note is searched on
+-  its own, never joined to the body. Each piece must be at least eight
+-  characters.
++  either side are each found, in order, in one passage, and each begins no
++  more than 2,000 characters (about 350 words) after the end of the one
++  before. A longer omission makes two excerpts. Each piece must be at least
++  eight characters.
++- An excerpt is looked for in the author's text. The notes are the editors'
++  and translators' words, so a card that quotes a note says so with
++  `"inNote": true` and is matched against the notes alone; each note is
++  searched on its own, never joined to the body. Pliny's letter, translated in
++  full in McGiffert's note to Eusebius 3.33, is quoted this way. (A bracketed
++  editor's note in the stored *Apology* reads "The blood of Christians is the
++  seed of the Church"; Tertullian's text, in chapter 50, reads "the blood of
++  Christians is seed". Only the second can go on a card as Tertullian's.)
++- The author's text as stored still includes the editors' chapter headings and
++  the italic summaries at the head of some letters. The gate cannot tell them
++  apart from the author's words; a writer must not quote them as the author's.
+ - No editorial insertions inside an excerpt. Put a clarification outside it.
+ - A stored text is never edited to make a quotation pass. Fix the quotation.
+ 
+@@ -60,8 +72,10 @@ the public domain.
+ `client/public/history/sources/` and `client/public/history/sessions/`. In
+ them, any object with an `"excerpt"` key, and every source card (an object
+ with `"type": "source"`), is checked against the stored text named by its
+-`"corpus"` key, or by the nearest enclosing object's `"corpus"`. Scripture
+-blocks (`"type": "scripture"`) are left to the quotation gate (U27). A source
++`"corpus"` key, or by the nearest enclosing object's `"corpus"`, and against
++the notes rather than the author's text when it carries its own
++`"inNote": true`. Scripture blocks (`"type": "scripture"`) are left to the
++quotation gate (U27). A source
+ card with no stored text fails: where a source could not be reached, the session
+ tells it in the narrative and says so, rather than carrying a card no gate can
+ check (master plan 7.2). Sources still in copyright are quoted briefly in the
+diff --git a/scripts/data/history-sources/SURVEY.md b/scripts/data/history-sources/SURVEY.md
+index 40079c78..1d5e0135 100644
+--- a/scripts/data/history-sources/SURVEY.md
++++ b/scripts/data/history-sources/SURVEY.md
+@@ -33,8 +33,10 @@ the first 3 KB) was fetched on 2026-10-27 and its title read:
+ No commit id could be read for TCP or PG repositories (GitHub's API was
+ refused), so a text from them is pinned by its sha256 when it is stored.
+ 
+-The printed works are all long out of copyright. Project Gutenberg clears each
+-text as public domain in the United States. The TCP index marks the
++Most of the printed works are long out of copyright; a few translations are
++twentieth-century (the 1947 Rule of Benedict, Smith's Small Catechism), and
++those rows say so. Project Gutenberg clears each text as public domain in the
++United States. The TCP index marks the
+ transcriptions it released freely as "Free"; for those it marks "Restricted"
+ (its second phase), confirm the TCP's current terms before storing one.
+ 
+@@ -123,7 +125,7 @@ copyright.
+ | Aristides, *Apology* 15 (how Christians live) | Reachable | WDB `Aristides the Philosopher/The Apology/Translation from the Syriac_1891.html` | *Texts and Studies* vol. 1 (Cambridge, 1891), edited by J. Armitage Robinson, as its prefatory matter says | Confirm the translator there before use |
+ | Dionysius of Alexandria on the plague (Eusebius 7.22) | Stored | `eusebius-church-history-7` | NPNF, McGiffert | |
+ | Cyprian, *On the Mortality*; Minucius Felix, *Octavius* | Reachable | WDB `Cyprian/Treatise 7. On the Mortality.html`; `Marcus Minucius Felix/The Octavius of Minucius Felix.html` | ANF vols. 5 and 4 | Ordinary life, the plague |
+-| Julian, letter to Arsacius (on Christian care for the poor) | Not reachable | Wilmer Cave Wright's Loeb translation (1913): PG's volumes 1 and 2 (#48664, #48768) never mention Arsacius, and the volume with the letters is not in the mirror list; Perseus lists no Julian texts | | Tell it in the narrative |
++| Julian, letter to Arsacius (on Christian care for the poor) | Not reachable | Wilmer Cave Wright's Loeb translation (three volumes, 1913 to 1923; the letters are in the third): PG's volumes 1 and 2 (#48664, #48768) never mention Arsacius, and the volume with the letters is not in the mirror list; Perseus lists no Julian texts | | Tell it in the narrative |
+ | Eusebius on the long peace (8.1) | Stored | `eusebius-church-history-8` | NPNF, McGiffert | |
+ 
+ ## Part II. The Church Given Power (313 to 600)
+diff --git a/scripts/lib/history-sources.mjs b/scripts/lib/history-sources.mjs
+index d8bf1eb1..83e77d05 100644
+--- a/scripts/lib/history-sources.mjs
++++ b/scripts/lib/history-sources.mjs
+@@ -18,8 +18,14 @@
+  * case, curly and straight quotation marks, dash forms, and runs of white
+  * space are ignored; every word and every other mark must match. An ellipsis
+  * ("...", "…", or "[...]") marks an omission: the pieces either side must each
+- * be found, in order, within one passage. Footnote numbers are not part of the
+- * text, and a note is searched on its own, never joined to the body.
++ * be found, in order, within one passage, each no more than MAX_GAP characters
++ * after the one before. Footnote numbers are not part of the text, and a note
++ * is searched on its own, never joined to the body.
++ *
++ * The notes are the editors' and translators' words, not the author's, so an
++ * excerpt is looked for in the author's text unless its card says it quotes a
++ * note ("inNote": true; Pliny's letter, translated in full in McGiffert's note
++ * to Eusebius 3.33, is the case the course needs).
+  *
+  * Plain node, no dependencies: CI runs it on main without a build.
+  */
+@@ -42,6 +48,12 @@ const GENERATED_END = "<!-- end of generated list -->";
+ 
+ /** Shortest piece of an excerpt (between omissions) worth checking. */
+ export const MIN_PIECE = 8;
++/**
++ * Longest stretch of the text, in normalized characters (about 350 words), one
++ * omission may pass over. Without it, pieces from opposite ends of a book
++ * could be joined into a sentence its author never wrote.
++ */
++export const MAX_GAP = 2000;
+ 
+ /* ------------------------------------------------------------------ text */
+ 
+@@ -85,10 +97,11 @@ function fragmentToText(html) {
+ }
+ 
+ /**
+- * A Writings-Database page as plain passages: the body first, then each note
+- * on its own. Handles the repository's standard fragment (footnote references
+- * in <sup>, notes in <section class="notes">) and the older pages mirrored from
+- * Word documents (endnote anchors to #_edn, notes in mso-element:endnote divs).
++ * A Writings-Database page as plain passages: the body first (passage 0), then
++ * each note on its own. Handles the repository's standard fragment (footnote
++ * references in <sup>, notes in <section class="notes">) and the older pages
++ * mirrored from Word documents (endnote anchors to #_edn, notes in
++ * mso-element:endnote divs).
+  */
+ export function wdbHtmlToPassages(html) {
+   let s = html
+@@ -110,10 +123,11 @@ export function wdbHtmlToPassages(html) {
+       .replace(/<a\b[^>]*href=["']?#(?:fn|r|_edn|_ftn)[^>]*>[\s\S]*?<\/a>/gi, "");
+   const body = fragmentToText(dropRefs(s));
+   const notePassages = notes.map((n) => fragmentToText(dropRefs(n))).filter(Boolean);
+-  return [body, ...notePassages].filter(Boolean);
++  // The body is always passage 0, even if empty, so the notes are always 1 onward.
++  return [body, ...notePassages];
+ }
+ 
+-/** A plain text file (a Project Gutenberg text, say) is one passage. */
++/** A plain text file (a Project Gutenberg text, say) is one passage, the body, with no notes. */
+ export function plainTextToPassages(text) {
+   return [text.replace(/\r\n?/g, "\n")];
+ }
+@@ -150,32 +164,66 @@ export function excerptPieces(excerpt) {
+ const NORMALIZED = new WeakMap();
+ 
+ /**
+- * Look for an excerpt in a text's passages. Returns { ok: true, passage } or
+- * { ok: false, reason, agreesTo } where agreesTo is the longest opening of the
+- * first missing piece that the text does contain (to show a writer where the
+- * quotation departs from the source).
++ * Whether the pieces sit in one normalized passage in order, each starting no
++ * more than maxGap characters after the end of the one before. Every
++ * occurrence of each piece is tried (the first is not always the one that
++ * fits), and a position already ruled out is not tried twice.
+  */
+-export function findExcerpt(passages, excerpt) {
++function piecesInOrder(hay, pieces, maxGap) {
++  const failed = new Set();
++  const place = (k, from, limit) => {
++    if (k === pieces.length) return true;
++    for (let at = hay.indexOf(pieces[k], from); at >= 0 && at <= limit; at = hay.indexOf(pieces[k], at + 1)) {
++      const end = at + pieces[k].length;
++      const key = `${k}:${end}`;
++      if (failed.has(key)) continue;
++      if (place(k + 1, end, end + maxGap)) return true;
++      failed.add(key);
++    }
++    return false;
++  };
++  return place(0, 0, Infinity);
++}
++
++/**
++ * Look for an excerpt in a text's passages: in the author's text (passage 0)
++ * or, with { inNote: true }, in the notes (passages 1 onward). Returns
++ * { ok: true, passage } or { ok: false, reason, agreesTo } where agreesTo is
++ * the longest opening of the first missing piece that the text does contain
++ * (to show a writer where the quotation departs from the source).
++ */
++export function findExcerpt(passages, excerpt, { inNote = false } = {}) {
+   const pieces = excerptPieces(excerpt);
+   if (!pieces.length) return { ok: false, reason: "the excerpt is empty" };
+   const short = pieces.find((p) => p.length < MIN_PIECE);
+   if (short !== undefined) {
+     return { ok: false, reason: `"${short}" is too short to check on its own; quote more around each omission` };
+   }
+-  let hay = NORMALIZED.get(passages);
+-  if (!hay) {
+-    hay = passages.map(normalizeForMatch);
+-    NORMALIZED.set(passages, hay);
++  let all = NORMALIZED.get(passages);
++  if (!all) {
++    all = passages.map(normalizeForMatch);
++    NORMALIZED.set(passages, all);
+   }
+-  for (let i = 0; i < hay.length; i++) {
+-    let from = 0;
+-    let all = true;
+-    for (const piece of pieces) {
+-      const at = hay[i].indexOf(piece, from);
+-      if (at < 0) { all = false; break; }
+-      from = at + piece.length;
+-    }
+-    if (all) return { ok: true, passage: i };
++  const indexes = (notes) => all.map((_, i) => i).filter((i) => (i > 0) === notes);
++  const within = indexes(inNote);
++  const found = within.find((i) => piecesInOrder(all[i], pieces, MAX_GAP));
++  if (found !== undefined) return { ok: true, passage: found };
++
++  if (indexes(!inNote).some((i) => piecesInOrder(all[i], pieces, MAX_GAP))) {
++    const reason = inNote
++      ? `is in the author's text, not in a note; drop "inNote"`
++      : `is only in the editors' or translators' notes, not in the author's text; a card that quotes a note says so with "inNote": true`;
++    return { ok: false, reason, agreesTo: "" };
++  }
++
++  const hay = within.map((i) => all[i]);
++  if (!hay.length) return { ok: false, reason: "is not in the stored text, which has no notes", agreesTo: "" };
++  if (pieces.length > 1 && hay.some((h) => piecesInOrder(h, pieces, Infinity))) {
++    return {
++      ok: false,
++      reason: `has pieces that are in the text in this order, but more than ${MAX_GAP} characters apart; an omission that long makes two excerpts, not one`,
++      agreesTo: "",
++    };
+   }
+   const missing = pieces.find((p) => !hay.some((h) => h.includes(p))) ?? pieces[0];
+   const words = missing.split(" ");
+@@ -331,8 +379,9 @@ function jsonFiles(dir) {
+  * source card (an object with type "source"). Each is checked against the
+  * stored text named by its own "corpus" key or, failing that, the nearest
+  * enclosing object's, so a sources file can name its text once above a list
+- * of excerpts. Scripture blocks (type "scripture") are the quotation gate's
+- * (U27), not this one's.
++ * of excerpts. An excerpt quoting a note rather than the author says so with
++ * its own "inNote": true. Scripture blocks (type "scripture") are the quotation
++ * gate's (U27), not this one's.
+  */
+ export function collectExcerpts(value) {
+   const found = [];
+@@ -341,7 +390,7 @@ export function collectExcerpts(value) {
+     if (!v || typeof v !== "object") return;
+     const here = Object.hasOwn(v, "corpus") ? v.corpus : corpus;
+     const isCard = v.type === "source" || (Object.hasOwn(v, "excerpt") && v.type !== "scripture");
+-    if (isCard) found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt });
++    if (isCard) found.push({ path: p || "(top)", corpus: here, excerpt: v.excerpt, inNote: v.inNote });
+     for (const [k, x] of Object.entries(v)) walk(x, p ? `${p}.${k}` : k, here);
+   };
+   walk(value, "", undefined);
+@@ -379,10 +428,11 @@ export function excerptProblems(texts, root = ROOT, files = null) {
+       const t = byId.get(x.corpus);
+       if (!t) { problems.push(`${where}: "${x.corpus}" is not a stored text in ${CORPUS_DIR}/${MANIFEST_FILE}`); continue; }
+       if (!nonEmpty(x.excerpt)) { problems.push(`${where}: "excerpt" is missing or empty`); continue; }
++      if (x.inNote !== undefined && typeof x.inNote !== "boolean") { problems.push(`${where}: "inNote" must be true or false`); continue; }
+       const passages = passagesOf(t);
+       if (!passages) { problems.push(`${where}: the stored text "${t.id}" cannot be read`); continue; }
+       checked++;
+-      const r = findExcerpt(passages, x.excerpt);
++      const r = findExcerpt(passages, x.excerpt, { inNote: x.inNote === true });
+       if (!r.ok) {
+         const agree = r.agreesTo ? ` The text agrees as far as "…${r.agreesTo.slice(-60)}" and then differs.` : "";
+         problems.push(`${where}: excerpt ${r.reason} (${t.id}).${agree}`);
+diff --git a/scripts/verify-sources.mjs b/scripts/verify-sources.mjs
+index b4233fe2..037a14d1 100644
+--- a/scripts/verify-sources.mjs
++++ b/scripts/verify-sources.mjs
+@@ -16,7 +16,9 @@
+  *   excerpts    every excerpt in client/public/history/sources/ and
+  *               client/public/history/sessions/ (the registry and the session
+  *               pages, U30 and U32) is a normalized substring of the stored
+- *               text it names, and every source card names one.
++ *               text it names (of the author's words, or of the notes when
++ *               the card says "inNote": true), and every source card names
++ *               one.
+  *
+  * The rules for matching are in scripts/lib/history-sources.mjs. A stored text
+  * is never edited to make a quotation pass: fix the quotation.
+diff --git a/server/history-sources.test.ts b/server/history-sources.test.ts
+index d2a3d387..66766ca7 100644
+--- a/server/history-sources.test.ts
++++ b/server/history-sources.test.ts
+@@ -1,7 +1,8 @@
+ /**
+  * The history sources gate (scripts/verify-sources.mjs, unit U07): it passes
+  * on the stored texts as committed, finds real excerpts in them, and fails a
+- * seeded altered excerpt, a card with no stored text, a stored text edited
++ * seeded altered excerpt, an editor's note quoted as the author, pieces joined
++ * across a long omission, a card with no stored text, a stored text edited
+  * after it was fetched, and a manifest that has lost a provenance field.
+  */
+ import { describe, it, expect, beforeAll, afterAll } from "vitest";
+@@ -11,6 +12,7 @@ import os from "node:os";
+ import path from "node:path";
+ import {
+   CORPUS_DIR,
++  MAX_GAP,
+   collectExcerpts,
+   excerptPieces,
+   findExcerpt,
+@@ -79,7 +81,8 @@ describe("the committed corpus", () => {
+   });
+ 
+   it("finds real excerpts, across footnote markers, notes, and marked omissions", () => {
+-    expect(findExcerpt(read("eusebius-church-history-3"), PLINY).ok).toBe(true);
++    // Pliny's letter is in McGiffert's note, so its card says it quotes a note.
++    expect(findExcerpt(read("eusebius-church-history-3"), PLINY, { inNote: true }).ok).toBe(true);
+     expect(findExcerpt(read("martyrdom-of-polycarp"), "Eighty and six years have I served Him").ok).toBe(true);
+     expect(findExcerpt(read("tertullian-apology"), "the blood of Christians is seed").ok).toBe(true);
+     // An endnote anchor sits after "Macarius" in this Word-exported page.
+@@ -90,7 +93,7 @@ describe("the committed corpus", () => {
+   });
+ 
+   it("fails an altered excerpt and says how far it agrees", () => {
+-    const r = findExcerpt(read("eusebius-church-history-3"), PLINY_ALTERED);
++    const r = findExcerpt(read("eusebius-church-history-3"), PLINY_ALTERED, { inNote: true });
+     expect(r.ok).toBe(false);
+     expect(r.agreesTo).toBe("it is my custom, my lord, to refer to");
+   });
+@@ -104,6 +107,27 @@ describe("the committed corpus", () => {
+     expect(swapped.ok).toBe(false);
+     expect(swapped.reason).toMatch(/not in this order/);
+   });
++
++  it("does not take an editor's note for the author's words", () => {
++    const t = read("tertullian-apology");
++    // Tertullian's text (chapter 50) against the popular form a bracketed note gives.
++    expect(findExcerpt(t, "the blood of Christians is seed").ok).toBe(true);
++    const misquote = findExcerpt(t, "The blood of Christians is the seed of the Church.");
++    expect(misquote.ok).toBe(false);
++    expect(misquote.reason).toMatch(/only in the editors' or translators' notes/);
++    expect(findExcerpt(t, "the blood of Christians is seed", { inNote: true }).reason).toMatch(/drop "inNote"/);
++    expect(findExcerpt(read("eusebius-church-history-3"), PLINY).reason).toMatch(/"inNote": true/);
++  });
++
++  it("will not join pieces from far apart in a book into one sentence", () => {
++    // Both pieces are in City of God 5, about 112,000 characters apart.
++    const r = findExcerpt(read("augustine-city-of-god-5"), "the Christian emperors ... are to be worshipped");
++    expect(r.ok).toBe(false);
++    expect(r.reason).toMatch(new RegExp(`more than ${MAX_GAP} characters apart`));
++    // A whole chapter (Diognetus 5, about 2,000 characters) can still be quoted with its middle left out.
++    const d = read("epistle-to-diognetus");
++    expect(findExcerpt(d, "For the Christians are distinguished from other men ... They are evil spoken of, and yet are justified").ok).toBe(true);
++  });
+ });
+ 
+ describe("the matching rules", () => {
+@@ -130,8 +154,16 @@ describe("the matching rules", () => {
+     const passages = wdbHtmlToPassages(html);
+     expect(passages).toHaveLength(3);
+     expect(findExcerpt(passages, "First words run on here").ok).toBe(true);
+-    expect(findExcerpt(passages, "A note that says one thing.").ok).toBe(true);
+-    expect(findExcerpt(passages, "says one thing. Another note").ok).toBe(false);
++    expect(findExcerpt(passages, "First words run on here", { inNote: true }).ok).toBe(false);
++    expect(findExcerpt(passages, "A note that says one thing.", { inNote: true }).ok).toBe(true);
++    expect(findExcerpt(passages, "A note that says one thing.").ok).toBe(false);
++    expect(findExcerpt(passages, "says one thing. Another note", { inNote: true }).ok).toBe(false);
++  });
++
++  it("finds pieces in order even when the first place a piece appears is not the one that fits", () => {
++    const filler = "and so on. ".repeat(300);
++    const text = [`the first piece sits here, ${filler} the first piece sits here again, then the second piece close by.`];
++    expect(findExcerpt(text, "the first piece sits here ... the second piece close by").ok).toBe(true);
+   });
+ 
+   it("finds excerpts in sources files and session blocks, naming the text once or per card", () => {
+@@ -145,6 +177,7 @@ describe("the matching rules", () => {
+       ["b", "y"],
+       ["a", undefined],
+     ]);
++    expect(collectExcerpts({ type: "source", corpus: "c", excerpt: "v", inNote: true })[0].inNote).toBe(true);
+   });
+ });
+ 
+@@ -153,7 +186,7 @@ describe("seeded files", () => {
+     const root = fixture("good", {
+       "client/public/history/sessions/test-session.json": session([
+         { type: "prose", text: "Pliny wrote to Trajan." },
+-        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY },
++        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY, inNote: true },
+       ]),
+       "client/public/history/sources/polycarp.json": {
+         id: "polycarp",
+@@ -170,7 +203,7 @@ describe("seeded files", () => {
+   it("fails a seeded altered excerpt, naming the file, the card and the text", () => {
+     const root = fixture("altered", {
+       "client/public/history/sessions/test-session.json": session([
+-        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY_ALTERED },
++        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY_ALTERED, inNote: true },
+       ]),
+     });
+     const r = verify("--root", root);
+@@ -180,6 +213,19 @@ describe("seeded files", () => {
+     expect(r.stderr).toContain("to refer to");
+   });
+ 
++  it("fails a card that quotes a note as the author, and an inNote that is not true or false", () => {
++    const root = fixture("note-as-author", {
++      "client/public/history/sessions/test-session.json": session([
++        { type: "source", corpus: "tertullian-apology", excerpt: "The blood of Christians is the seed of the Church." },
++        { type: "source", corpus: "eusebius-church-history-3", excerpt: PLINY, inNote: "yes" },
++      ]),
++    });
++    const r = verify("--root", root);
++    expect(r.status).toBe(1);
++    expect(r.stderr).toMatch(/blocks\[0\]: excerpt is only in the editors' or translators' notes/);
++    expect(r.stderr).toMatch(/blocks\[1\]: "inNote" must be true or false/);
++  });
++
+   it("fails a source card with no stored text, and one that names a text not stored", () => {
+     const root = fixture("no-corpus", {
+       "client/public/history/sessions/test-session.json": session([
+-- 
+2.43.0
+

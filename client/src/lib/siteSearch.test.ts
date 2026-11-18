@@ -195,7 +195,7 @@ describe("the whole site, as a reader searches it", () => {
 
   it("finds a wisdom topic, an Honest Answer, a devotion, and a catechism question by their own words", () => {
     expect(top("wayward child")).toBe("/wisdom/wayward-child");
-    expect(top("did the resurrection actually happen")).toBe("/answers#did-the-resurrection-actually-happen");
+    expect(top("did the resurrection actually happen")).toBe("/answers/did-the-resurrection-actually-happen");
     expect(rankEntries(entries, "made on purpose").some((e) => e.sourceLabel === "Family Devotions")).toBe(true);
     expect(rankEntries(entries, "who made you").some((e) => e.sourceLabel === "Family Catechism")).toBe(true);
   });

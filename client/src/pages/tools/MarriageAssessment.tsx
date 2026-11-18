@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import { toolName } from "@/lib/toolsList";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef, type CSSProperties } from "react";
 import { Link } from "wouter";
@@ -377,7 +379,7 @@ const CATEGORIES: Category[] = [
           "If you're safe with each other, work through the one argument that keeps coming back using the conflict guide, a step at a time.",
         ],
         links: [
-          { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+          { label: toolName("conflict-guide"), href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
           { label: "How to Actually Forgive Your Spouse", href: "/how-tos/marriage-how-to-actually-forgive" },
           { label: "How Do You Handle Conflict and Truly Reconcile?", href: "/life/conflict-and-reconciliation" },
         ],
@@ -428,7 +430,7 @@ const OVERALL_BANDS: Record<"strong" | "growing" | "attention" | "strain", Overa
       "A score is a snapshot. A path is what changes things: eight weeks toward each other, one small practice at a time.",
     next: [
       { label: "How to Have a Weekly Marriage Check-In", href: "/how-tos/marriage-how-to-weekly-check-in" },
-      { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+      { label: toolName("conflict-guide"), href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
       { label: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
     ],
   },
@@ -442,7 +444,7 @@ const OVERALL_BANDS: Record<"strong" | "growing" | "attention" | "strain", Overa
     next: [
       { label: "My marriage is falling apart", href: "/help/marriage", note: "Safety first, then real help, including how to find a counselor" },
       { label: "How to Know When to Get Help", href: "/how-tos/marriage-how-to-know-when-to-get-help" },
-      { label: "Conflict Resolution Guide", href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
+      { label: toolName("conflict-guide"), href: "/tools/conflict-guide", note: "For couples who are safe with each other" },
     ],
   },
   strain: {
@@ -671,7 +673,7 @@ export default function MarriageAssessment() {
   return (
     <Layout>
       <SEOMeta
-        title="Marriage Health Self-Check: A Private Look at Your Marriage"
+        title="Marriage Self-Check (15 Questions, Private)"
         description="Fifteen statements across communication, intimacy, trust, shared vision, and conflict. A private self-check for reflection, with honest next steps and safety first."
         keywords="marriage self-check, marriage assessment, marriage health, how healthy is my marriage, Christian marriage help, marriage counseling"
         structuredData={{
@@ -686,61 +688,7 @@ export default function MarriageAssessment() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Marriage Health{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Self-Check
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Fifteen statements across five areas of marriage, about five
-            minutes. This is a self-check for reflection, not a test or a
-            diagnosis, and your answers stay on this device unless you choose
-            to leave a copy with us at the end. Answer for yourself, as things
-            are now rather than as you wish they were.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/marriage-assessment" title="Marriage Health Self-Check" line="Fifteen statements across five areas of marriage, about five minutes. This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device unless you choose to leave a copy with us at the end. Answer for yourself, as things are now rather than as you wish they were." plate="compass" />
 
       {/* Progress Bar */}
       {!showResults && (

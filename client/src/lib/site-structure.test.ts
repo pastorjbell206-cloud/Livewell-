@@ -14,7 +14,8 @@
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { SITE_NAV_GROUPS, HELP_LINK, SEARCH_SHORTCUTS } from "./siteNav";
+import { SITE_NAV_GROUPS, HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS } from "./siteNav";
+import { DOORS, allEntries } from "./siteCatalog";
 import { SHELF_ESSAYS, isPublicEssay } from "./shelf";
 
 const ROOT = path.resolve(__dirname, "../../..");
@@ -56,7 +57,6 @@ const ROUTES = Array.from(APP.matchAll(/<Route\s+path="([^"]+)"/g), (m) => m[1])
 
 /** The pages folded in this pass, and where each one now lives. */
 const FOLDED: Record<string, string> = {
-  "/explore": "/writing",
   "/library": "/writing",
   "/article-collections": "/writing",
   "/reading-paths": "/writing",
@@ -92,7 +92,8 @@ const FOLDED: Record<string, string> = {
   "/doubt": "/answers",
   "/substack": "/subscribe",
   "/work-with-james": "/speaking",
-  "/connect": "/about",
+  // James, 2026-11-18: the short address for his bios.
+  "/james": "/connect",
   // The no-decision cleanup (U06): the pre-elevation family and marriage hubs,
   // and the six crisis landings that duplicated a Find Help page.
   "/for-families": "/family",
@@ -104,6 +105,18 @@ const FOLDED: Record<string, string> = {
   "/parenting-help": "/help/parenting",
   "/deconstruction": "/help/deconstructing",
   "/church-hurt": "/help/church-hurt",
+  // James, 2026-11-17: no membership; the author page folds into About; and
+  // the old pastors' addresses stay on this site (the Pastors Connection
+  // Network is kept outside it).
+  "/membership": "/subscribe",
+  "/authors/:slug": "/about",
+  "/pastoral-burnout": "/help/pastors",
+  "/sermon-series": "/study",
+  "/pastors": "/resources",
+  "/for-pastors": "/resources",
+  "/for-leaders": "/resources",
+  "/the-pastoral-angle": "/resources",
+  "/pastors-resource-wall": "/resources",
 };
 
 /** Kept routes: James asked for these to stay, or other kept pages depend on them. */
@@ -116,6 +129,7 @@ const KEPT = [
   "/study/bible/story",
   "/study/bible/doctrines",
   "/study/bible/guides",
+  "/study/bible/guides/whole-story-2027",
   "/theology/history",
   "/theology/history/the-reformation",
   "/theology/glossary",
@@ -150,7 +164,7 @@ const KEPT = [
 ];
 
 /** Every tool listed in the /tools registry. */
-const TOOL_HREFS = Array.from(read("client/src/pages/ToolsHub.tsx").matchAll(/^\s+href: "([^"]+)",$/gm), (m) => m[1]);
+const TOOL_HREFS = Array.from(read("client/src/lib/toolsList.ts").matchAll(/^\s+href: "([^"]+)",$/gm), (m) => m[1]);
 
 describe("vercel.json redirects", () => {
   it("runs the apex-host rule first", () => {
@@ -166,6 +180,12 @@ describe("vercel.json redirects", () => {
       expect(rule!.destination, source).toBe(destination);
       expect(rule!.permanent, source).toBe(true);
     }
+  });
+
+  it("keeps every path redirect on this site", () => {
+    // No old address sends a visitor to another site (James, 2026-11-17).
+    const offSite = PATH_RULES.filter((r) => !r.destination.startsWith("/")).map((r) => `${r.source} -> ${r.destination}`);
+    expect(offSite).toEqual([]);
   });
 
   it("never lands on another redirect", () => {
@@ -218,6 +238,12 @@ describe("App.tsx", () => {
     expect(ROUTE_COMPONENT.get("/contact")).toBe("Contact");
   });
 
+  it("routes /connect to its own page, in the About menu and the footer (James, 2026-11-17)", () => {
+    expect(ROUTE_COMPONENT.get("/connect")).toBe("Connect");
+    const about = SITE_NAV_GROUPS.find((g) => g.title === "About")!;
+    expect(about.links.find((l) => l.href === "/connect")?.primary).toBe(true);
+  });
+
   it("keeps the route table above the smoke test's floor", () => {
     expect(ROUTES.length).toBeGreaterThan(200);
   });
@@ -250,6 +276,8 @@ describe("crawl surfaces", () => {
     const bad = urls.filter((u) => {
       const file = path.join(ROOT, "client/public", u);
       if (fs.existsSync(file) && fs.statSync(file).isFile()) return false;
+      // The essay feed is answered by the API through a rewrite in vercel.json, not by a page.
+      if (u === "/rss.xml") return !JSON.parse(read("vercel.json")).rewrites.some((r: { source: string }) => r.source === "/rss.xml");
       return Boolean(redirectFor(u)) || !ROUTES.some((r) => sourceRegex(r).test(u));
     });
     expect(bad).toEqual([]);
@@ -283,8 +311,22 @@ describe("crawl surfaces", () => {
     expect(hits).toEqual([]);
   });
 
-  it("the nav links nothing that only redirects", () => {
-    const links = [...SITE_NAV_GROUPS.flatMap((g) => g.links), HELP_LINK, ...SEARCH_SHORTCUTS].filter((l) => l.href.startsWith("/"));
+  it("the nav and the catalogue link nothing that only redirects", () => {
+    const links = [
+      ...SITE_NAV_GROUPS.flatMap((g) => g.links),
+      HELP_LINK,
+      LIBRARY_LINK,
+      ...SEARCH_SHORTCUTS,
+      ...allEntries().map((e) => ({ label: e.name, href: e.href })),
+    ].filter((l) => l.href.startsWith("/"));
     expect(links.filter((l) => redirectFor(l.href)).map((l) => l.href)).toEqual([]);
+  });
+
+  it("never redirects a door's page James chose on 2026-11-18, the Everything page, or /resources", () => {
+    // The seven doors' own pages, /explore (once a redirect to /writing, now
+    // the one page of everything), /books, and /resources.
+    const pages = [...DOORS.map((d) => d.page.href), "/explore", "/books", "/resources"];
+    expect(pages).toEqual(["/study", "/theology/history", "/topics", "/family", "/tools", "/writing", "/about", "/explore", "/books", "/resources"]);
+    expect(pages.filter((u) => redirectFor(u))).toEqual([]);
   });
 });

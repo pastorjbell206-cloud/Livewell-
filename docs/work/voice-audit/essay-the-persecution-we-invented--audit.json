@@ -1,0 +1,95 @@
+{
+  "piece": "the-persecution-we-invented",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "This reads as a person thinking, and it is close to James's mature register: a slow, cumulative argument, a real concession before the turn, Scripture doing the diagnosis, the meddler turned on \"us,\" and an ending that passes through Acts 9 instead of recapping. Literal checks are clean: no Forbidden Language word or phrase, no em-dash, the only exclamation point is inside Luke 6:22, no title, years, book count or denomination, and the only biography is \"mine among them.\" Political criticism names the right as the main teller of the story and then names the left's version without pretending the two are equal. What is left is small and sentence-level: two colon-reveal sentences, one slogan closer that repeats the line before it, one bookended paragraph, a worn \"X is real\" concession, and a few echoes. None touches a fact, a quotation or the argument. What keeps voice_score from higher is that the essay could have been written by a very good pastor-scholar who is not James; nothing in it is something only he saw or did, and that cannot be fixed without him.",
+  "findings": [
+    {
+      "quote": "The New Testament's concern lies elsewhere: what we call the loss, and how we speak of the people who caused it.",
+      "tell": "Colon-then-reveal sentence; literary phrasing where a spoken one belongs",
+      "why": "\"Lies elsewhere:\" followed by a two-part reveal is an essayist's staging move, and it closes the paragraph that has just used Paul and the two court cases plainly. A pastor talking across a table would say what the New Testament cares about, without the drumroll.",
+      "replacement": "What the New Testament cares about is what we call the loss, and how we speak of the people who caused it.",
+      "severity": "should"
+    },
+    {
+      "quote": "It was an arrangement, and it has ended.",
+      "tell": "Aphoristic two-beat paragraph closer that restates the sentence before it",
+      "why": "The previous sentence already says \"how that arrangement ended.\" This line repeats both words as a slogan and adds nothing; it is the kind of tidy closer the brief lists under AI tells.",
+      "replacement": "(Cut the sentence. The paragraph ends on \"belongs to another essay.\")",
+      "severity": "should"
+    },
+    {
+      "quote": "Jesus was never anxious about losing a crowd.",
+      "tell": "Symmetrical bookend: the paragraph opens and closes on the same slogan",
+      "why": "The paragraph begins with this line and ends with \"But Jesus never promised to keep the crowd.\" Two matched one-liners framing one paragraph reads as constructed. The opener also asserts Jesus's inner state before John 6 has shown anything. Let the text do the work and keep the closer, which is earned.",
+      "replacement": "(Cut the sentence. The paragraph opens: \"When His teaching became hard, John says, ...\")",
+      "severity": "should"
+    },
+    {
+      "quote": "Something has still been taken from American Christians, and the grief over it is real.",
+      "tell": "Reassurance formula repeated (\"X is real\")",
+      "why": "The essay certifies things as real six times (\"something real,\" \"Those are real losses,\" \"the real thing,\" \"the grief over it is real,\" \"is a real loss,\" \"real persecution\"). Twice it is doing work (the hinge sentence on privilege, and \"real persecution\" at the end). Here it is the stock concession phrase a reader has learned to hear as machine-made.",
+      "replacement": "Something has still been taken from American Christians, and people are right to grieve it.",
+      "severity": "should"
+    },
+    {
+      "quote": "In a good many American churches, both men's stories would be filed under the same word: persecution.",
+      "tell": "Colon-then-reveal as a one-line paragraph",
+      "why": "The juxtaposition of Wang Yi and Jack Phillips is strong enough that it does not need a staged reveal. \"Filed under the same word: persecution\" is the hook-shaped version; the plain version lands harder and sounds like a man saying it.",
+      "replacement": "In a good many American churches, both men's stories would be called persecution.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The size of the cost, then, can't be what decides whether a loss is persecution.",
+      "tell": "Essay connective (medial \"then\") used twice",
+      "why": "The medial \"then\" appears here and again in \"In the New Testament, then, persecution sends...\" It is a written-argument tic. One of the two should sound spoken; this is the easier one.",
+      "replacement": "So the size of the cost can't be what decides whether a loss is persecution.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The Witnesses were attacked as disloyal, by neighbors who questioned their patriotism, in a country that thought of itself as Christian, while war spread across Europe.",
+      "tell": "Stacked comma phrases with a redundant pair",
+      "why": "Four trailing phrases in a row give the sentence a cadenced, assembled feel, and \"attacked as disloyal\" and \"neighbors who questioned their patriotism\" say the same thing twice.",
+      "replacement": "The Witnesses were attacked as disloyal by their own neighbors, in a country that thought of itself as Christian, while war spread across Europe.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The sociologist Christian Smith saw another side of it in 1998.",
+      "tell": "Scholar-introduction formula repeated",
+      "why": "Four sources enter the same way: \"The legal scholars Lee Epstein and Eric Posner,\" \"The historian Tom Holland,\" \"The sociologists Bradley Campbell and Jason Manning,\" \"The sociologist Christian Smith.\" Three of them fall in consecutive paragraphs. Each source earns its place (the idea is named every time), so this is a pattern of entry, not a parade; varying one breaks it.",
+      "replacement": "Christian Smith, a sociologist, saw another side of it in 1998.",
+      "severity": "consider"
+    },
+    {
+      "quote": "That is why the prisoners in Chengdu and the grieving villages of Nigeria are not strangers to us. They are His body, and so are we.",
+      "tell": "Second \"not X. Y.\" in the same paragraph",
+      "why": "The paragraph has just used the construction at its true hinge (\"He did not ask why Saul was persecuting the church. He asked...\"). A second negation-then-correction two sentences later turns a hinge into a gait, and nobody had said they were strangers.",
+      "replacement": "That is why the prisoners in Chengdu and the grieving villages of Nigeria belong to us. They are His body, and so are we.",
+      "severity": "consider"
+    },
+    {
+      "quote": "and the officials on the other side of the case would be in our prayers by name",
+      "tell": "Repeated phrase",
+      "why": "\"By name\" already carried the same idea one section earlier (\"praying for imprisoned pastors by name\"). The echo is small, but it is the sort of reuse that makes two paragraphs sound produced by one template.",
+      "replacement": "and we would pray for the officials on the other side of the case",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening pair (Wang Yi, then Jack Phillips) is concrete, dated and unshowy, and the essay returns to Wang Yi and to Saul at the end, so the frame carries weight instead of decorating.",
+    "The concession is real. Cochran, the Richmond memo, and Jesus setting the line at insult and exclusion (Matthew 5:11, Luke 6:22, Hebrews 10:33-34) are given their full force before any turn; a reader on the other side would feel understood.",
+    "The meddler in 1 Peter 4:15 is the controlling image and the essay stays with it long enough to do work: it comes back as \"the meddler's question\" and \"Peter's question\" three sections later.",
+    "\"We like the feeling of being besieged more than we admit ... Most of us know from the inside how quickly it starts doing our thinking for us\" implicates the writer by doing it, not by announcing it. It is the most human paragraph in the piece.",
+    "The one-line verdict \"American Christians have stood where Saul stood more often than we like to remember\" is earned by Charlestown, Philadelphia and the Witnesses, and it is the only verdict line in its section.",
+    "Sources are named with their idea every time (Epstein and Posner's finding on who wins, Holland's thesis, victimhood culture, Smith's embattled-and-thriving), and the Open Doors figures are qualified in plain words instead of being used as a club.",
+    "Contractions and plain words appear where speech would have them (\"They don't.\" \"Paul didn't.\" \"it isn't what we usually do\"), and the headings are plain and descriptive.",
+    "The ending leaves weight: Acts 9:4 and 9:16, then what we are actually asked to do, then Christ. No recap, no altar call."
+  ],
+  "for_james": [
+    "The one thing no editor can add: a moment of your own. The paragraph beginning \"We like the feeling of being besieged more than we admit\" is where a single plain sentence from your memory would make this unmistakably yours (a time you used the word persecution, or wanted to, from the pulpit or in a fundraising or prayer letter). Only add it if it happened; nothing has been invented, and the essay stands without it.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on this piece, and the audit followed VOICE-JAMES-BELL.md as it governs. The profile asks for 1,500 to 2,500 words, paragraphs of two to four sentences, a load-bearing Greek or Hebrew word, a personal story, a line built to be screenshotted, three Monday-morning questions with one practice, and no exclamation marks at all. This essay is longer, uses developed paragraphs, has no Greek, no three-question block, and keeps the exclamation point that belongs to Luke 6:22 in the ESV. No finding rewrites toward the profile.",
+    "If you want the profile's depth layer here, the natural place is the meddler: the word in 1 Peter 4:15 is a rare Greek compound usually transliterated allotriepiskopos, roughly an overseer of what belongs to someone else. The essay already glosses it accurately in plain English, so this is optional, and it should be checked against a lexicon before it goes in.",
+    "The \"Why do we reach for the word so quickly? Part of the answer is that it works.\" opener is left alone as a deliberate turn, but note that the next paragraph goes to Rome and Holland before it shows how the word works. If it reads to you as a hook that makes the reader wait, the fix is yours to choose.",
+    "The ledger still holds two notes for you that are about content, not voice, and no replacement here touches either: the Cochran book is described more mildly than several outlets describe it, and Pew published a newer figure (58 percent, October 2025) than the 2024 figure the essay uses accurately."
+  ]
+}

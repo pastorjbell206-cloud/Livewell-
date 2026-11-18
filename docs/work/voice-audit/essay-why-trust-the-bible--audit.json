@@ -1,0 +1,72 @@
+{
+  "piece": "why-trust-the-bible",
+  "human_score": 8.5,
+  "voice_score": 7.5,
+  "verdict": "Clean on every mechanical check (0 em-dashes, 0 exclamation points, 0 forbidden words, no stamps, no biography, no title or credentials, crisis passage carries Find Help and the reporting line). Reads as a person arguing patiently; the Ehrman opening, the Comma Johanneum section and the close are strong. What a careful reader could still hear: a concession formula repeated until it sounds like a rule being followed, a second antithesis inside one short section, three link sentences on one template, one stock apologetics line, and a run of 'That ...' sentence openers. The larger gap is voice, not machine-ness: the essay could be written by any very good apologist. Only a real memory from James would close that.",
+  "findings": [
+    {
+      "quote": "The scrolls also showed that a few books, Jeremiah among them, circulated in more than one form before the text settled, and scholars are still working out what that means. That complication is real. But someone reading Isaiah 53",
+      "tell": "Repeated concession stamp / self-certifying sentence",
+      "why": "By this point the essay has already said 'He is also right about a good deal', 'That is true', 'he's right to', 'There is a gap, and nobody should pretend there isn't', and later 'the differences are real' and 'Some questions are genuinely hard'. The concession was just made in the sentence before; announcing that it is real is the method showing through.",
+      "replacement": "The scrolls also showed that a few books, Jeremiah among them, circulated in more than one form before the text settled, and scholars are still working out what that means. But someone reading Isaiah 53",
+      "severity": "should"
+    },
+    {
+      "quote": "Those questions deserve more than a paragraph. One of them gets a full essay in [Why Didn't the Bible Just Ban Slavery?](/writing/why-didnt-the-bible-ban-slavery)",
+      "tell": "Essay talking about itself; link template repeated",
+      "why": "Third sentence of the type 'X needs its own essay, and you'll find it in', 'gets a full essay in', 'That is the argument of'. 'Deserve more than a paragraph' is the prose describing its own layout. A pastor at a table would just say he can't do it here.",
+      "replacement": "I can't answer those in a paragraph, and I won't try. I take up one of them in [Why Didn't the Bible Just Ban Slavery?](/writing/why-didnt-the-bible-ban-slavery)",
+      "severity": "should"
+    },
+    {
+      "quote": "Some distrust of the Bible was earned, though not by the book. It was earned by people who quoted it to defend what they wanted, or used it as a club.",
+      "tell": "Second 'not X. It was Y' antithesis in one movement",
+      "why": "Two paragraphs earlier the section opens on its true hinge ('isn't that its words were changed. It's that they weren't'), and the essay closes on another ('It isn't only whether... It's whether'). This middle one is the spare; three of the same shape is a gait, and the governing standard puts repeated antithesis on the avoid list once its work is done.",
+      "replacement": "Some distrust of the Bible was earned by people who quoted it to defend what they wanted, or used it as a club. The book didn't earn it.",
+      "severity": "should"
+    },
+    {
+      "quote": "Several people describing the same confusing morning will each remember it a little differently, and investigators grow suspicious when witnesses agree too neatly.",
+      "tell": "Stock apologetics line; generic Christian content",
+      "why": "The colluding-witnesses point appears in nearly every popular defence of the Gospels, in close to these words. It is checked in the ledger and true, but it is the one sentence a skeptic has heard before and will hear as a talking point.",
+      "replacement": "Several people describing the same confusing morning will each remember it a little differently. Four accounts that matched in every detail would look more like one account copied three times.",
+      "severity": "consider"
+    },
+    {
+      "quote": "A church can defend the reliability of the Bible loudly and read it very little. It can also quote it constantly while almost never letting it correct anything.",
+      "tell": "Symmetrical sentence pair",
+      "why": "Two balanced 'does X loudly / does Y little' sentences back to back, each built adverb against adverb. The standard warns against perfect parallelism. Joining them breaks the mirror without losing either charge.",
+      "replacement": "A church can defend the reliability of the Bible loudly and read it very little, or quote it all the time and almost never let it correct anything.",
+      "severity": "consider"
+    },
+    {
+      "quote": "That is a better question. The Bible asks it too.",
+      "tell": "'That ...' sentence opener run past its work",
+      "why": "Eight sentences open on 'That' as a pointer ('That is true', 'That is a man who', 'That gives historians', 'That choice makes sense', 'That doesn't make', 'That complication is real', 'That is a better question', 'That is the argument of'). No single one is wrong; together they are an audible tic. This one and the 'complication' one are the easiest to lose.",
+      "replacement": "It's a better question, and the Bible asks it too.",
+      "severity": "consider"
+    },
+    {
+      "quote": "What the evidence does establish is narrower, and it still matters.",
+      "tell": "Vague framing sentence",
+      "why": "'It still matters' asserts weight before the next sentence shows it. The following sentence ('These books are set among real rulers, offices and places...') does the work on its own.",
+      "replacement": "What the evidence does establish is narrower.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Opens on a specific person, verse and one-line margin comment, and tells the reader something most apologetics hides: Ehrman's faith ended over suffering, and he is right about a good deal.",
+    "Concessions are real and concrete: P52's disputed date, the Jeremiah text forms, Mark 2:26 left unsolved, archaeology that 'doesn't prove the Bible', the exodus debate.",
+    "The Comma Johanneum section argues against the church's own interest, which is the move a skeptic trusts.",
+    "'We taught them that, usually without meaning to. The Bible never did.' and 'Many of us have done a smaller version of the same thing' implicate the church by doing it, not announcing it.",
+    "The inerrancy paragraph states both confessions as their holders would and leaves the question open.",
+    "'But you'll be arguing with the book and not with a rumor about it' and the last two lines land on Christ without a recap or an altar call.",
+    "Headings are plain questions; sentence and paragraph lengths vary; contractions sound spoken; no scholar is named as decoration."
+  ],
+  "for_james": [
+    "The essay is accurate and human, but nothing in it could only be yours. You came to faith from atheism, and this is the one topic where that matters most. A real, short memory would lift it: what you believed about the Bible before you believed, or what happened the first time you read a Gospel straight through. An earlier draft had a first-person story of your unbelief; it was removed because nobody could verify it. If you supply two or three true sentences, the natural place is just before 'If you're a skeptic, I'd ask one thing of you.' Nothing should be invented on your behalf.",
+    "The inerrancy paragraph deliberately does not say where you land (Chicago Statement wording versus 'fully trustworthy in everything it sets out to teach'). If you want your own position stated, that is yours to add.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree in several places: the profile asks for 2 to 4 sentence paragraphs, a 1,500 to 2,500 word ceiling, a Greek or Hebrew word in every piece, a 'screenshot line', three Monday-morning questions with one practice, paid-subscriber depth, and the .com domain. The essay follows VOICE-JAMES-BELL.md (developed paragraphs, one earned verdict, no application box), and I judged it by that. The profile's paid-content note also conflicts with your decision to have no membership fee; the profile may need updating.",
+    "A link sentence to 'Who Decided What Books Are in the Bible?' is being held out of the canon section until that essay is public (ledger correction 41)."
+  ]
+}

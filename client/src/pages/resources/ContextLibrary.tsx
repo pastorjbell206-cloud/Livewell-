@@ -1,153 +1,145 @@
 /**
- * Reading Scripture in Context (/resources/context). The platform's signature
- * library: guides to the Ancient Near Eastern, Second Temple Jewish, and
- * Greco-Roman worlds of the Bible, the honor-shame frameworks of its cultures,
- * and how to read the text apart from American political assumptions.
- * Driven by a manifest at client/public/context/guides-index.json, generated
- * from the guide JSON files by scripts/build-context-index.mjs.
+ * Bible background (/resources/context): guides to the world the Bible was
+ * written in. Driven by the manifest at client/public/context/guides-index.json,
+ * generated from the guide JSON files by scripts/build-context-index.mjs.
+ *
+ * The page leads with its seven groups as picture cards (each jumps to its
+ * group), then a find box, then each group's guides as a short list of titles.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
-import { Search } from "lucide-react";
+import { ArrowRight, Compass, Landmark, Map as MapIcon, MessageCircleQuestion, Quote, Scroll, Search, UtensilsCrossed, Vote, Columns3, type LucideIcon } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { GeneratedCover, coverThemeFor } from "@/components/GeneratedCover";
+import { LoadFailed } from "@/components/LoadFailed";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import Plate, { type PlateName } from "@/components/art/Plate";
+import PlateFrame from "@/components/art/PlateFrame";
+import { fetchJson } from "@/lib/fetch-json";
+import "../home/home.css";
+import "./libraries.css";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+interface Entry { slug: string; title: string; blurb: string; group: string }
+const isIndex = (x: unknown): x is { guides: Entry[] } => !!x && Array.isArray((x as { guides?: unknown }).guides);
 
-interface Entry { slug: string; title: string; blurb: string; group: string; }
-
-const GROUP_ORDER = [
-  "Reading Past Our Politics",
-  "Ancient Near East",
-  "Second Temple Judaism",
-  "The Greco-Roman World",
-  "Honor, Shame, and Culture",
+/** The groups in the manifest, in the order of the Bible's own story, with a plain name, a plate and an icon. */
+const GROUPS: { group: string; id: string; name: string; plate: PlateName; icon: LucideIcon }[] = [
+  { group: "Ancient Near East", id: "old-testament-world", name: "The Old Testament's world", plate: "jar", icon: Landmark },
+  { group: "Second Temple Judaism", id: "jesus-jewish-world", name: "Jewish life in Jesus's day", plate: "lantern", icon: Scroll },
+  { group: "The Greco-Roman World", id: "roman-world", name: "The Roman world", plate: "arch", icon: Columns3 },
+  { group: "Honor, Shame, and Culture", id: "honor-and-shame", name: "Honor, shame and culture", plate: "table", icon: UtensilsCrossed },
+  { group: "The Verses Everyone Quotes", id: "verses-everyone-quotes", name: "Verses everyone quotes", plate: "quill", icon: Quote },
+  { group: "The Hard Questions", id: "hard-questions", name: "The hard questions", plate: "lens", icon: MessageCircleQuestion },
+  { group: "Reading Past Our Politics", id: "past-our-politics", name: "Reading past our politics", plate: "compass", icon: Vote },
 ];
+const known = new Set(GROUPS.map((g) => g.group));
+const slugOf = (g: string) => g.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 export default function ContextLibrary() {
-  const [items, setItems] = useState<Entry[]>([]);
+  const [items, setItems] = useState<Entry[] | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [nonce, setNonce] = useState(0);
   const [q, setQ] = useState("");
-  const [group, setGroup] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/context/guides-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d && setItems(d.guides || []))
-      .catch(() => {});
-  }, []);
+    let live = true;
+    fetchJson("/context/guides-index.json", isIndex)
+      .then((d) => { if (live) { setItems(d.guides); setFailed(false); } })
+      .catch(() => { if (live) setFailed(true); });
+    return () => { live = false; };
+  }, [nonce]);
 
+  // The known groups first, in story order; any group added later still shows, after them.
   const groups = useMemo(() => {
-    const present = new Set(items.map((i) => i.group));
-    return GROUP_ORDER.filter((g) => present.has(g)).concat(
-      Array.from(present).filter((g) => !GROUP_ORDER.includes(g)).sort()
-    );
+    const present = new Set((items ?? []).map((i) => i.group));
+    const extra = Array.from(present).filter((g) => !known.has(g)).sort().map((g) => ({ group: g, id: slugOf(g), name: g, plate: "book" as PlateName, icon: MapIcon }));
+    return GROUPS.filter((g) => present.has(g.group)).concat(extra);
   }, [items]);
 
-  const filtered = useMemo(() => {
-    const needle = q.trim().toLowerCase();
-    return items.filter((i) => {
-      if (group && i.group !== group) return false;
-      if (!needle) return true;
-      return (i.title + " " + i.blurb + " " + i.group).toLowerCase().includes(needle);
-    });
-  }, [items, q, group]);
-
-  const grouped = useMemo(() => {
-    const m = new Map<string, Entry[]>();
-    for (const g of groups) m.set(g, []);
-    for (const i of filtered) m.get(i.group)?.push(i);
-    return Array.from(m.entries()).filter(([, v]) => v.length > 0);
-  }, [filtered, groups]);
+  const needle = q.trim().toLowerCase();
+  const matches = (i: Entry) => !needle || `${i.title} ${i.blurb} ${i.group}`.toLowerCase().includes(needle);
+  const shown = groups.map((g) => ({ ...g, entries: (items ?? []).filter((i) => i.group === g.group && matches(i)) })).filter((g) => g.entries.length > 0);
 
   return (
     <Layout>
       <SEOMeta
-        title="Reading Scripture in Context — Biblical Background Guides"
-        description="Guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics. Free."
+        title="Bible Background: The World Behind the Bible"
+        description="Free guides to the world the Bible was written in: the Old Testament's neighbors, Jewish life in Jesus's day, the Roman world, and honor and shame."
         url="https://www.livewellbyjamesbell.co/resources/context"
       />
+      {items === null && !failed && <span hidden data-lw-loading />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources · The signature library</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 58px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            Reading Scripture in Context
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch", marginBottom: "12px" }}>
-            The Bible was not written in English, in America, or in this century. It was written by Middle Eastern authors, to people living under empires they did not control, in cultures built on honor, kinship, and covenant. Most of what we misread, we misread because we never noticed the distance.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch" }}>
-            These guides close that distance. Not to make you superior to other readers. To put you under the text as it actually stands, before our politics got to it. Every guide is sourced to real scholarship you can check.
-          </p>
-        </div>
-      </section>
+      <PageHead
+        door="Bible"
+        doorHref="/study"
+        title="The world the Bible was written in"
+        line="The Bible was not written in English, in America, or in this century."
+        plate="jar"
+      />
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-4)" }}>
-        <div style={wrap}>
-          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
-            <div style={{ position: "relative", flex: "1 1 260px", maxWidth: "420px" }}>
-              <Search size={16} style={{ position: "absolute", left: "12px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)" }} />
-              <input
-                value={q}
-                onChange={(e) => setQ(e.target.value)}
-                placeholder="Search the guides"
-                aria-label="Search the context guides"
-                style={{ width: "100%", padding: "10px 12px 10px 36px", fontFamily: "var(--U)", fontSize: "14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.15)", borderRadius: "2px", color: "var(--ink)", outline: "none" }}
-              />
-            </div>
-            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-              <button onClick={() => setGroup(null)} aria-pressed={group === null} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === null ? "var(--charcoal)" : "transparent", color: group === null ? "var(--bone)" : "var(--ink)" }}>
-                All
-              </button>
-              {groups.map((g) => (
-                <button key={g} onClick={() => setGroup(group === g ? null : g)} aria-pressed={group === g} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, padding: "7px 12px", borderRadius: "2px", cursor: "pointer", border: "1px solid rgba(20,17,12,0.18)", background: group === g ? "var(--charcoal)" : "transparent", color: group === g ? "var(--bone)" : "var(--ink)" }}>
-                  {g}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          {items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p>
-          ) : grouped.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Nothing matches that search.</p>
+      <section className="home-sec lib-sec" aria-labelledby="ctx-worlds-title">
+        <div className="home-wrap">
+          <SectionHead icon={Compass} label={items ? `${groups.length} groups · ${items.length} guides` : "The guides"} title="Choose a world." id="ctx-worlds-title" />
+          {failed ? (
+            <LoadFailed what="The background guides" onRetry={() => setNonce((n) => n + 1)} backHref="/study" backLabel="Back to Study the Bible" />
           ) : (
-            grouped.map(([g, entries]) => (
-              <div key={g} style={{ marginBottom: "var(--s-5)" }}>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>{g}</h2>
-                <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "var(--s-3)" }}>
-                  {entries.map((e) => (
-                    <Link key={e.slug} href={`/resources/context/${e.slug}`} style={{ display: "flex", gap: "14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none" }}>
-                      <div style={{ width: "78px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}><GeneratedCover title={e.title} {...coverThemeFor(`${e.title} ${e.group}`)} style={{ width: "100%", height: "100%" }} /></div>
-                      <div style={{ padding: "var(--s-3) var(--s-3) var(--s-3) 0" }}>
-                        <div style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
-                        <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))
+            <ul className="lw-rooms lib-worlds">
+              {(items ? groups : GROUPS).map((g) => (
+                <li key={g.id}>
+                  <a href={`#${g.id}`} className="lw-door">
+                    <PlateFrame>
+                      <Plate name={g.plate} decorative />
+                    </PlateFrame>
+                    <span className="lw-door__text">
+                      <span className="lw-door__t">{g.name}</span>
+                      <span className="lw-door__f">{items ? `${items.filter((i) => i.group === g.group).length} guides` : " "}</span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           )}
         </div>
       </section>
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <p style={{ fontFamily: "var(--F)", fontSize: "17px", fontStyle: "italic", lineHeight: 1.6, color: "rgba(245,240,230,0.85)", maxWidth: "56ch", marginBottom: "16px" }}>
-            Context is not a weapon for winning arguments. It is a posture for losing them, to the text.
-          </p>
-          <Link href="/resources" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-            ← All resources
-          </Link>
-        </div>
-      </section>
+      {items && (
+        <section className="home-sec home-sec--warm lib-sec" aria-label="Every guide">
+          <div className="home-wrap">
+            <div className="lib-find">
+              <Search aria-hidden="true" size={18} strokeWidth={1.75} />
+              <label htmlFor="ctx-find" className="sr-only">Find a guide</label>
+              <input id="ctx-find" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Find a guide" autoComplete="off" />
+            </div>
+            <p className="sr-only" role="status">{needle ? `${shown.reduce((n, g) => n + g.entries.length, 0)} guides match` : ""}</p>
+            {shown.length === 0 ? (
+              <p className="lib-none">Nothing matches that. Try a book, a word or a place.</p>
+            ) : (
+              shown.map((g) => {
+                const Icon = g.icon;
+                return (
+                  <div key={g.id} id={g.id} className="lib-group">
+                    <h2 className="lib-group__h">
+                      <span className="lib-group__icon" aria-hidden="true"><Icon size={22} strokeWidth={1.75} /></span>
+                      {g.name}
+                    </h2>
+                    <ul className="lib-list">
+                      {g.entries.map((e) => (
+                        <li key={e.slug}>
+                          <Link href={`/resources/context/${e.slug}`}>
+                            <span>{e.title}</span>
+                            <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })
+            )}
+          </div>
+        </section>
+      )}
     </Layout>
   );
 }

@@ -1,0 +1,27 @@
+{
+  "essay": "councils-and-creeds",
+  "cards": [
+    {
+      "type": "source",
+      "section": "a-priest-named-arius",
+      "about": "The saying of Arius that the council refused.",
+      "author": "The Council of Nicaea",
+      "work": "The creed of 325",
+      "reference": "the closing condemnation",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "corpus": "nicaea-325-creed",
+      "excerpt": "And whosoever shall say that there was a time when the Son of God was not"
+    },
+    {
+      "type": "source",
+      "section": "a-priest-named-arius",
+      "about": "The words the council settled on.",
+      "author": "The Council of Nicaea",
+      "work": "The creed of 325",
+      "reference": "the creed",
+      "translation": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "corpus": "nicaea-325-creed",
+      "excerpt": "God of God, Light of Light, very God of very God, begotten ... not made, being of one substance ... with the Father."
+    }
+  ]
+}

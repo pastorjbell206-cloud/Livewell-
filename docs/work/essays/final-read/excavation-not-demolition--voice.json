@@ -1,0 +1,128 @@
+{
+  "slug": "excavation-not-demolition",
+  "lens": "Voice: last reader before publication. Read-only. Checked for forbidden language, stamps, AI tells, the integrity and biography rules, and the register, reading as the skeptic and as a pastor deciding whether to hand it to a congregation. Text checked: /home/user/livewell-land/client/public/essays/excavation-not-demolition.json (title, excerpt, body), read against docs/work/essays/BRIEF.md, docs/VOICE-JAMES-BELL.md, docs/work/NOTES.md (biography) and CLAUDE.md's Forbidden Language list. The other landed essays in /home/user/livewell-land/client/public/essays/ and the drafts in docs/work/essays/ were searched for repeated lines.",
+  "findings": [
+    {
+      "where": "Where It Usually Starts, third paragraph (\"Another common starting point...\"), last sentence",
+      "problem": "Rulebook leakage. \"and pretending otherwise would be a dodge\" announces that the essay is refusing false symmetry. It's the same self-certifying move as the banned stamp \"This is not both-sidesism\". The sentence already does the work by saying where the fusion has mostly run, so the extra clause only tells the reader the writer is being even-handed, and a skeptic hears him grading himself.",
+      "fix": "Replace \"it has run mostly to the right, and pretending otherwise would be a dodge.\" with \"it has run mostly to the right.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Why Some Christians Are Worried, last paragraph, first sentence",
+      "problem": "Biography used as a credential. \"I came to faith as an adult, from atheism, and I don't think the questions are the danger\" makes his conversion the warrant for the judgment. The fact is confirmed, but the brief allows it only plainly and never as standing to speak. It is also becoming a stamp across the shelf. Three other landed essays use the same fact the same way: did-the-resurrection-happen (\"I was an atheist before I was a Christian, so I don't assume...\"), can-you-be-good-without-god (\"I was an atheist before I was a Christian, so the person on the other side...\") and what-christian-nationalism-is-and-is-not (\"I came to faith out of atheism.\"). The rest of the paragraph (Celsus, Origen, the church still confessing) carries the point without it.",
+      "fix": "Replace \"I came to faith as an adult, from atheism, and I don't think the questions are the danger.\" with \"I don't think the questions are the danger.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Augustine Took His Faith Apart Too, first sentence",
+      "problem": "Overclaim. \"went through all of this\" points back to abuse scandals, faith fused with a party, purity culture and prosperity promises. Augustine went through none of those. What the section actually shows is that he rejected his mother's faith and came back. A skeptic who knows the Confessions will catch the stretch at the exact point where the essay offers him as its model.",
+      "fix": "Replace \"One of the church's greatest teachers went through all of this.\" with \"One of the church's greatest teachers went through something like this.\"",
+      "severity": "should"
+    },
+    {
+      "where": "What Deserves to Come Down, last paragraph (Hanamel's field), last sentence",
+      "problem": "Aphoristic closer. Without this line the paragraph would end on Scripture's own promise (Jeremiah 32:15). The kicker restates the image as an epigram in a modern idiom. It is also the third verdict line in this section, after \"They are agreeing with its first commandment.\" and \"The man tearing down Judah's religion was the one God had sent.\", and one per section is plenty.",
+      "fix": "Cut \" A man who had spent decades tearing things down bought land in a war zone.\" so that the paragraph ends: The reason was a promise: \"Houses and fields and vineyards shall again be bought in this land\" (Jeremiah 32:15).",
+      "severity": "should"
+    },
+    {
+      "where": "How People Rebuild, prodigal son paragraph (\"Jesus told a story about a son...\"), last two sentences",
+      "problem": "A two-beat \"Not X. Y.\" kicker built on a fresh literary image. It repeats the paragraph's own opening (\"a son who came home before he had everything worked out\") and makes the same point as the Mark 9 ending (\"did not make him finish believing first\"), so one motif gets stamped three times. \"He never reached the part about being a servant.\" is already a plain, strong close.",
+      "fix": "Cut \" The father wasn't waiting at the end of a finished argument. He was watching the road.\" so that the paragraph ends: He never reached the part about being a servant.",
+      "severity": "should"
+    },
+    {
+      "where": "Where Deconstruction Can Lead, final one-line paragraph before the Closing Texts",
+      "problem": "A clever \"because\" kicker, and a small overclaim a skeptic will press. The prayer is in the Bible because Mark told the story. Also, Jesus answered the plea for the boy, while this line reads as if he answered \"help my unbelief\". The line before it already turns to the reader and lands on Christ, which is what the brief asks of the last lines.",
+      "fix": "Cut the paragraph \"That prayer is in the Bible because he answered it.\" so that the essay ends on \"Bring him what you have, the belief and the unbelief together.\" before the Closing Texts.",
+      "severity": "consider"
+    },
+    {
+      "where": "Where Deconstruction Can Lead, Mark 9 paragraph, last two sentences",
+      "problem": "\"Jesus did not make him finish believing first. He healed the boy.\" nearly duplicates the queued doubt-section draft docs/work/essays/why-does-god-feel-far-away.md (\"Jesus did not send him away to sort out his feelings first. He healed his son.\"): same verse, same two-beat, same section of the shelf. Whichever essay ships second will repeat the other. It is also one more \"Not X. Y.\" in an essay that already uses the move in most sections.",
+      "fix": "Replace \"Jesus did not make him finish believing first. He healed the boy.\" with \"Jesus healed the boy without waiting for him to finish believing.\" (Or change the far-away draft before it lands, and leave this line as it is.)",
+      "severity": "consider"
+    },
+    {
+      "where": "Closing Texts, third line",
+      "problem": "Mark 9:24 is quoted in the body three lines above, so the reader meets \"I believe; help my unbelief!\" twice within a few lines, and the echo is weaker the second time. The brief allows two Closing Texts.",
+      "fix": "Delete the line *\"I believe; help my unbelief!\"* (Mark 9:24) from the Closing Texts block. Leave the 1 Thessalonians 5:21 and Isaiah 42:3 lines.",
+      "severity": "consider"
+    },
+    {
+      "where": "Where It Usually Starts, last paragraph (\"Often she is the teenager...\"), second and third sentences",
+      "problem": "Repeated antithesis. This section already clears ground twice (\"Deconstruction rarely begins with philosophy. It usually begins with something that happened.\" and \"is usually not drifting at all\"), and this is the third time in one movement. CLAUDE.md allows one per movement. \"Usually\" also appears seven times in the essay, and this hedge is one of them.",
+      "fix": "Replace \"People like that are not usually rebels. They are grieving something they took seriously.\" with \"People like that are grieving something they took seriously.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Where Deconstruction Can Lead, first paragraph, third sentence",
+      "problem": "This echoes an approved pilot. why-didnt-the-bible-ban-slavery has \"Every congregation, mine included, has passages it quotes and passages it skips\" followed by a question about our preaching. This paragraph makes the same move in the same words (\"Every congregation...\" then \"Which of our sermons...? Which of mine would?\"). The brief says not to reuse a sentence from a pilot.",
+      "fix": "Replace \"Every congregation has taught some things with more confidence than Scripture does.\" with \"We have all taught some things with more confidence than Scripture does.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Heading of the fifth section",
+      "problem": "This is the only heading that makes a claim, and the closing \"Too\" makes it a little clever rather than plain. It also covers half the section, because the last paragraph is about Luther. The other seven headings are plain descriptions.",
+      "fix": "Replace \"## Augustine Took His Faith Apart Too\" with \"## Augustine and Luther\"",
+      "severity": "consider"
+    },
+    {
+      "where": "How People Rebuild, third paragraph (James K. A. Smith), third sentence",
+      "problem": "A tidy triplet: three gerund phrases, each with a qualifier added, in perfect parallel (\"praying when..., or reading a Gospel while..., or sitting in a back row with...\"). It's the shape the judges flagged as generated. The content is good; the symmetry is the problem.",
+      "fix": "Replace \"Rebuilding, then, might mean praying when it feels like no one is listening, or reading a Gospel while arguing with it, or sitting in a back row with your arms folded.\" with \"Rebuilding, then, might mean praying when it feels like no one is listening, or reading a Gospel while arguing with it. It might also mean sitting in a back row with your arms folded.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Where It Usually Starts, fifth paragraph (\"Indifferent people rarely bother...\")",
+      "problem": "Scholar parade in a single sentence: four names, a title and a year. The year doesn't do any work here (the brief says to give the year only when it matters). The other source mentions in the essay are fine.",
+      "fix": "Replace \"wrote *The Great Dechurching* (2023) about\" with \"wrote *The Great Dechurching* about\"",
+      "severity": "consider"
+    },
+    {
+      "where": "If You Are Hurting, first paragraph, third sentence",
+      "problem": "A literary image in the one passage where plain words matter most. \"the darkness has grown\" can read as a euphemism to someone in real danger. The plain version still names the thing without diagnosing the reader.",
+      "fix": "Replace \"If the darkness has grown to the point where you wonder whether there is any reason to keep going,\" with \"If it has gone so far that you wonder whether there is any reason to keep going,\"",
+      "severity": "consider"
+    },
+    {
+      "where": "How People Rebuild, second paragraph (\"Rebuilding usually starts with sorting\"), last sentence",
+      "problem": "\"owe\" puts a debt on a reader the same sentence describes as hurt by a church. Both the abuse survivor and the skeptic will feel pressed, and the platform rule is no manufactured urgency. Inviting keeps the challenge without making a demand.",
+      "fix": "Replace \"and still owe the resurrection a hearing of its own.\" with \"and still give the resurrection a hearing of its own.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Augustine Took His Faith Apart Too, first paragraph, last sentence",
+      "problem": "The essay's own distinction is between people who drift (\"They drift.\") and people who deconstruct (\"usually not drifting at all\"). Saying Augustine \"drifted\" blurs that distinction at the moment the essay offers him as its example of serious deconstruction.",
+      "fix": "Replace \"Augustine drifted toward the skeptics,\" with \"Augustine turned toward the skeptics,\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Why Some Christians Are Worried, last paragraph (Celsus)",
+      "problem": "This essay links to did-the-resurrection-happen, which quotes the same Celsus line verbatim as \"A half-frantic woman, as you state\" (the ANF wording). A reader who follows the link will see two wordings of one line and may suspect one was invented. The Celsus-and-Origen example also appears in the pilot the-early-church-under-rome. That repeat is acceptable here because it serves a different point, but the wording should match the sister essay.",
+      "fix": "Replace \"rested on the word of a half-crazed woman\" with \"rested on the word of a half-frantic woman\"",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Forbidden Language, searched literally in the title, excerpt and body: none of the 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), none of the 8 phrases (including \"blessed\", \"gospel-centered\" and \"authentic community\"), none of the 6 therapy-speak phrases, and neither signposting phrase (\"here is what I mean\", \"let me explain\") appears.",
+    "Stamps: none of the seven appear. \"Consider\" occurs only as the verb in \"no longer considered himself a Christian\". There is no \"the record\", \"none of this\", \"Those of us who preach\", \"pastors like me\", \"both-sidesism\" or \"I don't exempt myself\". \"Pastors can tell you\" is third-person and is not the \"pastors like me\" stamp.",
+    "Rulebook vocabulary: steelman, verdict, indictment and self-implication do not appear. \"Honest\" and \"fair\" are each used zero times. \"Deserves\" (three times) only names the section's subject (\"What deserves to come down\"). It does not leak a rule. The fair statement of Arius (\"a reverent position, meant to protect the oneness of God\"), of the worried Christians (Hebrews 3:12, Luke 8:13) and of Alisa Childers is done without being announced.",
+    "Em-dashes: zero U+2014 characters. The four en-dashes are all in verse ranges (Jeremiah 26:8–11, 1 Corinthians 15:3–5, Romans 13:13–14, 1 Thessalonians 5:20–21).",
+    "Exclamation points: two, both inside verbatim Mark 9:24 (in the body and in the Closing Texts). Semicolons appear only inside quoted Scripture.",
+    "Biography: the only biographical fact is the confirmed one, coming to faith from atheism (its use is flagged above). Nothing states his title, years in ministry or book count. Nothing implies Southern Baptist membership. The SBC appears only as the subject of the 2022 Guidepost report. \"Which of mine would?\" implies he preaches, which is confirmed (he is a pastor). There are no invented scenes, conversations or congregants.",
+    "Standfirst (excerpt): one plain declarative sentence (\"Much of what people tear down when they deconstruct was never the Christian faith, and the work is learning to tell the difference.\"). It is not a balanced antithesis.",
+    "Headings: seven of the eight are plain and descriptive (Where It Usually Starts; What Deserves to Come Down; Why Some Christians Are Worried; What the Creeds Confess; How People Rebuild; If You Are Hurting; Where Deconstruction Can Lead). Only the Augustine heading is flagged.",
+    "Contested second-order questions: baptism, the millennium, whether women may serve as pastors, and how to read Genesis 1 are named as questions faithful churches divide on and are left open. James's position is not asserted. The Reformation is framed as Luther's own understanding (\"He understood himself to be digging back...\"), and its cost is named (\"wars came after it\").",
+    "First-order matters are confessed plainly: the incarnation, the crucifixion under Pilate, the bodily resurrection as \"a claim about something that happened\", the return and judgment, Nicaea's homoousios and Chalcedon's two natures.",
+    "Political criticism cuts both ways with one instrument. On the right: party fusion and the national god. On the left: churches that make political convictions the measure of faith, and Childers on progressive Christianity emptying the words. Then a rightward rebuild into \"a harder political Christianity\", and the test \"left or right\". The asymmetry claim comes with its reason. Only the \"dodge\" clause is flagged. The abuse examples span Catholic (Boston, 2002), evangelical parachurch (Zacharias, 2021) and Southern Baptist (Guidepost, 2022), so no one tradition is singled out.",
+    "Crisis care: If You Are Hurting names the cost without diagnosing the reader, says in the US to call or text 988 for the Suicide and Crisis Lifeline, links [Find Help](/help), says \"An essay is not counseling\", and says abuse by a pastor or church leader should be reported to the police or other civil authorities. It validates the loneliness, not the despair.",
+    "Ending: it doesn't recap. It turns the mirror on the church and on James (\"Which of our sermons... Which of mine would?\"), then on the reader (two roads that \"look the same\" for a while), and it lands on Christ in Mark 9. The Closing Texts use the *\"Quote.\"* (Reference) format.",
+    "Register measured on the body: 43 prose paragraphs averaging 84 words; 207 sentences with a mean of 17.5 words, 20 percent at 8 words or fewer; about 3,740 words. All of these are within or near the brief's targets. Contractions are light. There is no brand tie-in (no \"living well\" line).",
+    "Scripture is used as diagnosis, read in context, and none of it is tacked on: Jeremiah 1:10, 7:4, 26 and 32 carry the argument for tearing down and then building; 1 Thessalonians 5:20-21 comes with the note \"The setting is narrower than ours\"; Isaiah 42:3 is identified as the promise Matthew applies to Jesus. Every quotation is ESV wording with its reference beside it.",
+    "Sources each carry an idea rather than decorating a sentence: Smith and Denton (moralistic therapeutic deism), Davis and Graham (dechurching as drift rather than deconstruction), Childers (progressive redefinition), N. T. Wright (resurrection as the best explanation), James K. A. Smith (habit trains love), Abba Moses. The \"In *Title* (YEAR), X argued\" template appears once, and only that year is flagged.",
+    "No sentence or image from the five pilots is reused, except the \"Every congregation\" move and the Celsus wording flagged above. Lines unique to this essay (\"first commandment\", \"tell you no\", \"We built it that way\", Hanamel's field, Monica and Ambrose) appear nowhere else on the shelf or in the drafts.",
+    "The intro's run of three questions (\"Where does deconstruction usually start? What deserves to come down? And what is underneath when it does?\") is plain signposting, which the brief names as one of his habits. It is not flagged."
+  ]
+}

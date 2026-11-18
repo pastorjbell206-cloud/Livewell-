@@ -25,7 +25,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import PDFDocument from "pdfkit";
+import qrcode from "qrcode-generator";
 import { readingText } from "./bsb.mjs";
+import { devotionsIn } from "./family-devotion-file.mjs";
 
 const INK = "#14110C";
 const MUTED = "#5A5448";
@@ -1079,8 +1081,29 @@ export async function memoryCardsPdf(cards, size) {
 /**
  * Family table cards: the site's weekly family devotions
  * (client/public/family-devotions*.json), two cards to a page, each with the
- * passage in full from the BSB, the big idea, the questions, and the prayer.
+ * passage in full from the BSB, the big idea, the questions (side by side for
+ * younger and older children where a devotion has both; U21), the prayer, and
+ * a QR code that opens the card's own page, /family/devotions/<id>. The ids
+ * are frozen (scripts/validate-family.mjs), so a printed code keeps working.
  */
+export const cardUrl = (id) => `https://www.${SITE}/family/devotions/${id}`;
+/** The code's printed size, in points (about 21 mm, above the usual 2 cm floor); never scaled, so a phone can read it. */
+const QR_SIZE = 60;
+
+/** A QR code for `text`, drawn as squares at (x, y), `size` points wide. Decoration: the address is printed on the card too. */
+function qrCode(doc, text, x, y, size) {
+  const qr = qrcode(0, "M");
+  qr.addData(text);
+  qr.make();
+  const n = qr.getModuleCount();
+  const cell = size / (n + 2); // a quiet edge of one module on each side
+  artifact(doc, () => {
+    doc.save();
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c)) doc.rect(x + (c + 1) * cell, y + (r + 1) * cell, cell, cell);
+    doc.fill(INK).restore();
+  });
+}
+
 export async function familyCardsPdf(devotions, size) {
   const doc = newDoc(size, "Family table cards", 0);
   const root = doc.struct("Document");
@@ -1098,11 +1121,13 @@ export async function familyCardsPdf(devotions, size) {
   tag(doc, root, "P", () => doc.font("Times-Italic").fontSize(13).fillColor(MUTED).text(`${devotions.length} cards for the dinner table, the car, or bedtime`, left, doc.y, { width, align: "center" }));
   doc.moveDown(2);
   tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(11.5).fillColor(INK).text(
-    "Cut the cards apart and keep them in a jar or a box on the table. One card a night, or one a week. Read the passage aloud, say the big idea in your own words, ask a question and let the answers take as long as they take, then pray the prayer, or one of your own. Five minutes is enough. A missed night is not a failure; pick up the next card tomorrow.",
+    "Cut the cards apart and keep them in a jar or a box on the table. One card a night, or one a week. Read the passage aloud, say the big idea in your own words, ask the questions that fit the children at your table, and let the answers take as long as they take. Then pray the prayer, or one of your own. Five minutes is enough. A missed night is not a failure; pick up the next card tomorrow.",
     left, doc.y, { width, lineGap: 3 }));
   doc.moveDown(0.8);
+  const banded = devotions.filter((d) => !Array.isArray(d.questions)).length;
+  const bands = banded === 0 ? "" : `${banded === devotions.length ? "Each card asks" : "Most cards ask"} two sets of questions: the first for younger children, about 4 to 10, and the second for older children, about 11 to 17. A mixed table can use both. `;
   tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(11.5).fillColor(INK).text(
-    `Each card's full devotion, with a reflection and something to do together, is on ${SITE}/family/devotions.`,
+    `${bands}The code on each card opens its full devotion, with a reflection and something to do together, at ${SITE}/family/devotions.`,
     left, doc.y, { width, lineGap: 3 }));
   doc.moveDown(0.8);
   tag(doc, root, "P", () => doc.font("Times-Italic").fontSize(9).fillColor(MUTED).text(BSB_NOTICE, left, doc.y, { width }));
@@ -1110,35 +1135,55 @@ export async function familyCardsPdf(devotions, size) {
   const ch = H / 2;
   const pad = 42;
   const w = W - pad * 2;
+  const gap = 18;
+  /** Lay out one card from `top`, and draw it unless `dry`. Returns its height. */
   const draw = (d, top, scale, dry) => {
     const s = (n) => n * scale;
-    const parts = [
-      ["Times-Roman", 9, d.theme.toUpperCase(), MUSTARD, 2, 5],
-      ["Times-Bold", 19, d.title, INK, 0, 8],
-      ["Times-Roman", 12.5, d.passageText, INK, 0, 3],
-      ["Times-Bold", 10, `${d.passage} (BSB)`, MUSTARD, 0, 10],
-      ["Times-Italic", 12.5, d.bigIdea, INK, 0, 10],
-      ["Times-Bold", 9, "TALK ABOUT IT", MUTED, 1.5, 3],
-      ...d.questions.slice(0, 3).map((q) => ["Times-Roman", 12, q, INK, 0, 4]),
-      ["Times-Bold", 9, "PRAY", MUTED, 1.5, 3],
-      ["Times-Italic", 12, d.prayer, INK, 0, 0],
-    ];
     let y = top;
-    for (const [font, size, text, color, spacing, after] of parts) {
+    const put = (font, size, text, color, spacing, after, x = pad, wide = w, type = "P") => {
       doc.font(font).fontSize(s(size));
-      const h = doc.heightOfString(text, { width: w, lineGap: 1.5, characterSpacing: spacing });
-      if (!dry) tag(doc, root, text === d.title ? "H2" : "P", () => doc.fillColor(color).text(text, pad, y, { width: w, lineGap: 1.5, characterSpacing: spacing }));
+      const h = doc.heightOfString(text, { width: wide, lineGap: 1.5, characterSpacing: spacing });
+      if (!dry) tag(doc, root, type, () => doc.fillColor(color).text(text, x, y, { width: wide, lineGap: 1.5, characterSpacing: spacing }));
       y += h + s(after);
-    }
+      return h + s(after);
+    };
+    put("Times-Roman", 9, d.theme.toUpperCase(), MUSTARD, 2, 5);
+    put("Times-Bold", 19, d.title, INK, 0, 8, pad, w, "H2");
+    put("Times-Roman", 12.5, d.passageText, INK, 0, 3);
+    put("Times-Bold", 10, `${d.passage} (BSB)`, MUSTARD, 0, 10);
+    put("Times-Italic", 12.5, d.bigIdea, INK, 0, 10);
+    // The questions: one list for the whole table, or the two age bands side by side.
+    const q = d.questions;
+    const lists = Array.isArray(q) ? [["TALK ABOUT IT", q.slice(0, 3)]] : [["FOR YOUNGER CHILDREN", q.younger], ["FOR OLDER CHILDREN", q.older]];
+    const colW = lists.length === 1 ? w : (w - gap) / 2;
+    const startY = y;
+    let tallest = 0;
+    lists.forEach(([label, list], i) => {
+      y = startY;
+      const x = pad + i * (colW + gap);
+      let h = put("Times-Bold", 9, label, MUTED, 1.5, 3, x, colW);
+      for (const item of list) h += put("Times-Roman", lists.length === 1 ? 12 : 11, item, INK, 0, 4, x, colW);
+      tallest = Math.max(tallest, h);
+    });
+    y = startY + tallest + s(6);
+    // The prayer, with the card's code beside it.
+    const prayTop = y;
+    const prayW = w - QR_SIZE - 14;
+    put("Times-Bold", 9, "PRAY", MUTED, 1.5, 3, pad, prayW);
+    put("Times-Italic", 12, d.prayer, INK, 0, 0, pad, prayW);
+    if (!dry) qrCode(doc, cardUrl(d.id), pad + w - QR_SIZE, prayTop, QR_SIZE);
+    y = Math.max(y, prayTop + QR_SIZE);
     return y - top;
   };
+  const room = ch - pad - 46;
   devotions.forEach((d, i) => {
     if (i % 2 === 0) doc.addPage();
     const row = i % 2;
     let scale = 1;
-    while (scale > 0.7 && draw(d, 0, scale, true) > ch - pad - 46) scale -= 0.04;
+    while (scale > 0.7 && draw(d, 0, scale, true) > room) scale -= 0.02;
+    if (draw(d, 0, scale, true) > room) throw new Error(`family table card "${d.id}" does not fit on half a page at ${size}; shorten it`);
     draw(d, row * ch + pad - 6, scale, false);
-    tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(7).fillColor(MUTED).text(`LiveWell by James Bell · ${SITE}/family/devotions`, pad, row * ch + ch - 26, { width: w, lineBreak: false }));
+    tag(doc, root, "P", () => doc.font("Times-Roman").fontSize(7).fillColor(MUTED).text(`LiveWell by James Bell · ${SITE}/family/devotions/${d.id}`, pad, row * ch + ch - 26, { width: w, lineBreak: false }));
     if (row === 0) rule(doc, 18, W - 18, ch, MUTED, 0.5, { len: 4, space: 4 });
   });
   root.end();
@@ -1159,7 +1204,7 @@ export async function buildSectionPrintables(root) {
     })
     .filter(Boolean);
   const devotions = ["family-devotions.json", "family-devotions-2.json"]
-    .flatMap((f) => JSON.parse(fs.readFileSync(path.join(root, "client/public", f), "utf8")));
+    .flatMap((f) => devotionsIn(JSON.parse(fs.readFileSync(path.join(root, "client/public", f), "utf8"))).devotions);
   const written = [];
   for (const [name, size] of Object.entries(SIZES)) {
     for (const [file, make] of [

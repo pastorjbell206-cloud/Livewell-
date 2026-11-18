@@ -2,6 +2,8 @@ import { Link } from "wouter";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import { S } from "./compareStyles";
 import { SITE_URL } from "@/lib/site";
 import { isPublicEssayHref } from "@/lib/shelf";
 
@@ -104,21 +106,6 @@ const webPageSchema = {
 
 /* ── styles ───────────────────────────────────────────────────────── */
 
-const S = {
-  hero: { background: "var(--charcoal)", padding: "clamp(80px,12vw,160px) 24px", textAlign: "center" as const },
-  eyebrow: { fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: "24px" },
-  h1: { fontFamily: "var(--F)", fontSize: "clamp(32px,5vw,60px)", fontWeight: 400, color: "var(--charcoal-fg)", maxWidth: "780px", margin: "0 auto", lineHeight: 1.15, letterSpacing: "-0.02em" },
-  heroSub: { fontFamily: "var(--U)", fontSize: "16px", color: "rgba(255,255,255,0.6)", marginTop: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto", lineHeight: 1.7 },
-  sectionBone: { background: "var(--bone)", padding: "80px 24px" },
-  sectionWarm: { background: "var(--bone-warm)", padding: "80px 24px" },
-  sectionDark: { background: "var(--charcoal)", padding: "80px 24px" },
-  wrap: { maxWidth: "880px", margin: "0 auto" },
-  wrapNarrow: { maxWidth: "720px", margin: "0 auto" },
-  h2: { fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--ink)", marginBottom: "16px" },
-  h2White: { fontFamily: "var(--F)", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: "var(--charcoal-fg)", marginBottom: "16px" },
-  bodyText: { fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", lineHeight: 1.7, marginBottom: "32px", maxWidth: "64ch" },
-  bodyTextWhite: { fontFamily: "var(--U)", fontSize: "14px", color: "rgba(255,255,255,0.6)", lineHeight: 1.7, marginBottom: "32px" },
-};
 
 /* ── component ────────────────────────────────────────────────────── */
 
@@ -134,14 +121,7 @@ export default function CatholicVsProtestant() {
         structuredData={[faqSchema, webPageSchema]}
       />
 
-      {/* Hero */}
-      <section style={S.hero}>
-        <p style={{ ...S.eyebrow, color: "var(--mustard)" }}>COMPARISON</p>
-        <h1 style={S.h1}>Catholic vs. Protestant</h1>
-        <p style={S.heroSub}>
-          The division that split Western Christianity in 1517 and never healed. The differences are real, and no honest account pretends otherwise. The shared ground still runs deeper than most people on either side admit.
-        </p>
-      </section>
+      <InnerHead path="/compare/catholic-vs-protestant" title="Catholic vs. Protestant" line="The division that split Western Christianity in 1517 and never healed. The differences are real, and no honest account pretends otherwise. The shared ground still runs deeper than most people on either side admit." plate="arch" />
 
       {/* Comparison Table */}
       <section style={S.sectionBone}>
@@ -271,9 +251,7 @@ export default function CatholicVsProtestant() {
         <div style={{ maxWidth: "560px", margin: "0 auto", textAlign: "center" }}>
           <h2 style={S.h2White}>After Christendom</h2>
           <p style={S.bodyTextWhite}>Essays on what happens to the church when a culture built on Christianity starts to move past it, and what faithfulness looks like on the other side.</p>
-          <Link href="/writing?section=after-christendom" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--bone)", color: "var(--ink)", border: "none", padding: "14px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "2px", cursor: "pointer", borderBottom: "2px solid var(--mustard)" }}>Read the essays</button>
-          </Link>
+          <Link href="/writing?section=after-christendom" className="btn btn--on-dark">Read the essays</Link>
         </div>
       </section>
     </Layout>

@@ -1,0 +1,70 @@
+{
+  "piece": "can-you-be-good-without-god",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean, and close to the mature register. A literal search finds zero forbidden words, zero em-dashes, zero exclamation points, no connective filler, no hedges of his own, no title, years, book count or denomination, and no one-directional politics. The argument is fair before it is sharp, the sources each do work, and Romans 2 turns the piece on the church. What remains is small: a closing line that labels itself with the brief's own phrase, one restated sentence in the Rich Young Man section, a second 'isn't X / it is Y' inside one movement, two announced turns in the Romans 2 section, and one reflex triplet. The gap to a 10 on voice is not a wording problem: the essay has one sentence of James in it, and only a real memory from him could add more.",
+  "findings": [
+    {
+      "quote": "The hope of the gospel is that the only one who is good came looking for people who were not.",
+      "tell": "Rulebook leakage / labelled closer",
+      "why": "The brief tells writers to land on 'the hope of the gospel', and the last line uses that exact phrase as its own caption. The sentence underneath is the best line in the essay; announcing it as 'the hope of the gospel' makes it sound like a template slot being filled.",
+      "replacement": "The only one who is good came looking for people who were not.",
+      "severity": "should"
+    },
+    {
+      "quote": "Jesus didn't despise the man's goodness. He told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him.",
+      "tell": "Paragraph opening that restates the previous paragraph (not X. Y. used after its work is done)",
+      "why": "The paragraph before already said 'By any ordinary measure he was a good man. Jesus did not dispute it,' and then quoted Mark 10:21. Opening the next paragraph with 'Jesus didn't despise the man's goodness' says the same thing a third time, in a near-identical 'Jesus did not / Jesus didn't' frame. A person telling the story would just go on.",
+      "replacement": "Then he told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him.",
+      "severity": "should"
+    },
+    {
+      "quote": "That isn't a proof, and Christians shouldn't sell it as one. It is a question about which account makes better sense of what all of us already know.",
+      "tell": "Second 'not X / it is Y' antithesis in one movement",
+      "why": "The same section has already spent its antithesis at the true hinge ('goodness is not a rule God might have written differently, and it is not a law above him that he obeys. It is what God is.'). Repeating the frame two paragraphs later reads as gait, and 'It is a question about which account' is vaguer than the concession before it.",
+      "replacement": "That isn't a proof, and Christians shouldn't sell it as one. But it does make better sense of what all of us already know.",
+      "severity": "consider"
+    },
+    {
+      "quote": "It's a real objection, and the answer is that every account stops somewhere, as Wielenberg himself argues.",
+      "tell": "Self-certifying concession plus announced answer",
+      "why": "'It's a real objection' is fine once as a spoken concession, but 'and the answer is that' announces the reply in the manner the brief lists under rulebook leakage. Splitting the sentence keeps the concession and drops the announcement.",
+      "replacement": "It's a real objection. But every account stops somewhere, as Wielenberg himself argues.",
+      "severity": "consider"
+    },
+    {
+      "quote": "He presses until it hurts:",
+      "tell": "Announced turn / narrated effect",
+      "why": "It tells the reader how to feel about the verse before quoting it, and it sits one sentence away from 'Then Paul turns on him' and one before 'Then he turns Scripture on his own people', so the section narrates Paul's moves three times in a row.",
+      "replacement": "He keeps pressing:",
+      "severity": "consider"
+    },
+    {
+      "quote": "Paul's argument arrives where it was heading from the start:",
+      "tell": "Announced turn",
+      "why": "A stage direction about the argument's shape, of the kind the brief flags ('There is one more lesson'). The plain statement of where the verse sits does the same job.",
+      "replacement": "Paul's conclusion comes in the next chapter:",
+      "severity": "consider"
+    },
+    {
+      "quote": "a Christian who is cruel, dishonest or contemptuous of unbelievers",
+      "tell": "Reflex triplet",
+      "why": "The essay runs on threes ('kinder, more truthful and more generous', 'a slave, an unwanted newborn or a foreigner', 'protected their young, punished cheats and kept faith', 'outrage at cruelty, guilt at betrayal, the sense that a promise binds'). Most are real lists. Here the paragraph is about how Christians treat the skeptic, and 'dishonest' is the filler middle term.",
+      "replacement": "a Christian who is cruel or contemptuous of unbelievers",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The Eliot opening is a specific scene with a date, a place and a verbatim quotation, and the essay returns to it at Nietzsche and again at the end, so the frame is earned.",
+    "The strongest unbelievers are quoted against the easy Christian answer: Wielenberg, Mackie and Street are each named with the idea, not the title, and Wielenberg's reply to Street is acknowledged.",
+    "Self-implication is done, not announced: 'Christians have often answered the first question badly', 'We rarely stop to notice that Polycarp's crowd made the same mistake about him', 'We have often had a sound account of morality without the life to match it.'",
+    "'which is coherent and very hard to live', 'Even atheists did it', and 'the way you might report that you don't like olives' are spoken sentences no template produces.",
+    "Romans 2 is read in context and turned on the religious reader, which is exactly the Nathan move the voice standard describes.",
+    "Paragraph lengths vary from 39 to 142 words and contractions are mixed with full forms the way speech mixes them."
+  ],
+  "for_james": [
+    "The only place you appear is one sentence: 'I was an atheist before I was a Christian, so the person on the other side of this question is someone I used to be.' It is used well and not as a credential. If you remember what you actually thought, as an atheist, when a Christian told you that you couldn't be good without God (or a person who was plainly good and believed nothing), one or two true sentences there would make this essay unmistakably yours. I have not invented any.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree, and I followed the voice document. The profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a Hebrew or Greek word, a screenshot line, and 'three specific questions, one concrete practice' at the end; this essay is about 3,700 words in developed paragraphs with no application box, which is what the voice document asks for. The profile also still speaks of paid subscriber content and the .com address, which no longer match your plans.",
+    "The two Nietzsche sentences are in Walter Kaufmann's translation, which is in copyright and was confirmed by search matches, not from the book. If you own The Portable Nietzsche, check pages 515 to 516; otherwise the ledger holds the public-domain Ludovici wording."
+  ]
+}

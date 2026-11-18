@@ -11,6 +11,7 @@
  * VerseRef loads only when a page passes `verseRefs`; until it arrives the
  * paragraphs read as plain prose.
  */
+import { smartQuotes } from "@/lib/smartQuotes";
 import { lazy, Suspense } from "react";
 import { Markdown } from "@/components/Markdown";
 import type { VerseRefMode } from "@/components/VerseRef";
@@ -55,7 +56,7 @@ export function Prose({
   verseRefs?: VerseRefMode;
 }) {
   const paragraphs = markdown ? [] : toParagraphs(text);
-  const plain = paragraphs.map((p, i) => <p key={i}>{p}</p>);
+  const plain = paragraphs.map((p, i) => <p key={i}>{smartQuotes(p)}</p>);
   return (
     <div className={`article-body prose-section ${className}`.trim()}>
       {markdown ? (

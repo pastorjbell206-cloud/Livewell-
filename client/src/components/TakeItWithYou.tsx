@@ -178,7 +178,7 @@ export function SendButton({ title, href, summary, label = "Send" }: { title: st
   };
   return (
     <>
-      <button ref={triggerRef} type="button" onClick={send} aria-expanded={open} aria-controls={open ? panelId : undefined} aria-label={`Send ${title} to my phone`} style={{ ...takeButton, minWidth: "44px", padding: "8px 12px", fontSize: "13px" }}>
+      <button ref={triggerRef} type="button" onClick={send} aria-expanded={open} aria-controls={open ? panelId : undefined} aria-label={label === "Send" ? `Send ${title} to my phone` : undefined} style={{ ...takeButton, minWidth: "44px", padding: "8px 12px", fontSize: "13px" }}>
         <Smartphone size={15} aria-hidden /> {label}
       </button>
       {open && (

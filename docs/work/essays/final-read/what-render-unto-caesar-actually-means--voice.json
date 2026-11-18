@@ -1,0 +1,126 @@
+{
+ "slug": "what-render-unto-caesar-actually-means",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/what-render-unto-caesar-actually-means.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it, by 6-word overlap, with every other landed essay in /home/user/livewell-land/client/public/essays/ and every draft in /home/user/Livewell-/docs/work/essays/ to find lines repeated across the shelf. Every quoted string below occurs exactly once in the body. I applied all the fixes together on a scratch copy: each applies cleanly, the result has no em-dash, three essay links (what-romans-13-says, the-early-church-under-rome, when-the-church-married-empire) and about 3,710 words. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "Ending, first two short paragraphs: \"So pay the tax. Give the officials their due, including the ones you voted against.\" followed by \"Then ask what else you've been handing over: your fear, your hope, your loyalty, your sense of who your people are.\"",
+   "problem": "The ending opens with a recap in the imperative. \"So pay the tax\" restates the What Caesar Is Owed section, and \"including the ones you voted against\" repeats that section's \"a government he didn't vote for\". With the lines after it, the stack becomes six commands in a row (pay, give, ask, give, look, treat). That is the clean application turn CLAUDE.md forbids and the sermon-outline language VOICE-JAMES-BELL.md avoids. It also echoes the close of the linked sibling essay what-romans-13-says (\"Whoever takes office in January will be owed our taxes, our respect and our prayers\"). The brief asks for plain lines that turn the mirror on the reader, with \"we\" before \"you\". A real question in the first person plural does that and leaves the weight. The rest of the stack (\"Whose image is on you?\", the neighbor, the King of the Jews) is right and should stay.",
+   "fix": "Replace both paragraphs with one paragraph: \"The tax is the easy part. What else have we been handing over: our fear, our hope, our loyalty, our sense of who our people are?\"",
+   "severity": "should"
+  },
+  {
+   "where": "Where the Church Drew the Line, paragraph 5 (the one-sentence paragraph): \"We see the line between Caesar's things and God's things clearly when Caesar reaches across it, and lose sight of it when [the church has its own hand on Caesar's power](/writing/when-the-church-married-empire).\"",
+   "problem": "This is a balanced two-clause antithesis set alone as a paragraph, and it works as a kicker after the section's real verdict, the Ambrose sentence that closes paragraph 4. It also draws the Callinicum lesson a second time, and the next section draws it a third time (\"Nor does it license the opposite move, the one Ambrose made at Callinicum, where the church borrows Caesar's power to get its way\"). It starts the essay's most repeated move, too: it is the first of three \"easy to see it in others\" turns in the last third (this one, the Amos paragraph, and \"It's easy to read that line and judge them\"). Repeated that often, the mirror becomes a stamped motif. If the paragraph goes, Ambrose's own contradiction stands as the verdict and the next section carries the lesson it already states. The link is worth keeping, so move it to that sentence.",
+   "fix": "Delete this paragraph. Then, in Is This the Separation of Church and State?, paragraph 2, replace \"where the church borrows Caesar's power to get its way\" with \"where [the church borrows Caesar's power](/writing/when-the-church-married-empire) to get its way\".",
+   "severity": "should"
+  },
+  {
+   "where": "When a Party Asks for What Belongs to God, paragraph 5, third sentence: \"Each side can describe the other's blind spot, [conservative](/writing/the-conservative-blind-spot) or [progressive](/writing/the-progressive-blind-spot), better than its own.\"",
+   "problem": "The essay links five site essays (what-romans-13-says, the-early-church-under-rome, when-the-church-married-empire, the-conservative-blind-spot, the-progressive-blind-spot), and the brief allows two to four. This link pair is also a shelf stamp: the-rise-of-the-nones uses the same bare \"[conservative](...) and [progressive](...)\" pair, and the-children-rome-threw-away and what-a-christian-owes-the-city link the same two chapters side by side. The inserted pair also breaks the sentence's grammar. The paragraph's prose already holds right and left to one test, so the links add nothing to the argument's balance. With the previous finding applied, the essay keeps three links.",
+   "fix": "Replace with: \"Each side can describe the other's blind spot better than its own.\"",
+   "severity": "should"
+  },
+  {
+   "where": "When a Party Asks for What Belongs to God, paragraph 2, third and fourth sentences: \"The devil didn't ask him to do anything cruel with the kingdoms. He offered them whole, for the price of worship.\"",
+   "problem": "This section uses the \"Not X. Y.\" ground-clear four times in six paragraphs: \"No American official asks ... The government asks\", this one, \"the offer seldom comes as a state church. It comes through a political party\", and \"Amaziah wasn't an unbeliever. He kept ...\". CLAUDE.md allows one per movement, and VOICE-JAMES-BELL.md lists repeated \"not this but that\" among the things to avoid. Keep the first, which is the hinge into America, and the Amaziah one, which is the fair word about him. Here the point survives as a positive statement, because \"the only price\" already implies that nothing cruel was asked.",
+   "fix": "Replace with: \"The devil offered him the kingdoms whole, and the only price was worship.\"",
+   "severity": "should"
+  },
+  {
+   "where": "When a Party Asks for What Belongs to God, paragraph 4, first two sentences: \"In America the offer seldom comes as a state church. It comes through a political party, and a party asks\"",
+   "problem": "This is the third \"Not X. Y.\" in the section (see the previous finding). No one in the essay suggested a state church, so ruling it out does no work here.",
+   "fix": "Replace with: \"In America the offer usually comes through a political party, and a party asks\"",
+   "severity": "should"
+  },
+  {
+   "where": "When a Party Asks for What Belongs to God, paragraph 6, fifth sentence: \"A congregation can drift into that arrangement without ever deciding to, and it is always easier to spot in someone else's church.\"",
+   "problem": "The second clause says the same thing as the next sentence (\"I notice it faster in churches across the political aisle than in the church I serve, which usually tells me where I ought to look\"), which says it better because it is in the first person and costs him something. Saying it twice in a row repeats the essay's stamped mirror motif (see the finding on Where the Church Drew the Line, paragraph 5), and \"always\" overclaims.",
+   "fix": "Replace with: \"A congregation can drift into that arrangement without ever deciding to.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Inscription Over the Cross, paragraph 3, last two sentences: \"Rome meant it as a sneer. The church has read it ever since as the plain truth.\"",
+   "problem": "This is the brief's aphoristic two-beat closer, a balanced antithesis (sneer and truth) at the end of a paragraph. The section already has its verdict (\"ended by choosing Caesar out loud\") and its mirror (\"Most of us say it more quietly\"), and the next paragraph makes the truth claim properly, through Colossians 1:15. The first beat can stay. The second is the epigram.",
+   "fix": "Replace with: \"Rome meant it as a sneer.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What Caesar Is Owed, paragraph 3, last sentence: \"Taxes paid honestly, laws kept and officials given their due are part of obeying Christ, not exceptions to it.\"",
+   "problem": "A tidy triplet ends in an antithesis tail (\"part of X, not exceptions to it\"), which is the brief's aphoristic paragraph-end closer. Together with the three-part list two sentences earlier (\"occupied their land, stationed its soldiers in their holy city, and would crucify him\"), it puts two triplets in one paragraph. The plain claim is all the paragraph needs.",
+   "fix": "Replace with: \"Paying taxes and keeping the law are part of obeying Christ.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What Caesar Is Owed, paragraph 1, sixth sentence: \"But Luke rules it out.\"",
+   "problem": "This overclaims. Luke's narrative shows how Luke understood the saying (he treats the charge at Pilate as false), but a skeptic will point out that it cannot settle what the crowd heard or what Jesus intended. The essay's own evidence supports the smaller claim, and the next sentences already make that case.",
+   "fix": "Replace with: \"But Luke didn't read it that way.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Where the Church Drew the Line, paragraph 2, second sentence: \"The emperor could have their coins and their good conduct, but not an oath that treated him as more than a man.\"",
+   "problem": "This restates the sentence before it (\"They paid the tax and refused the oath\") in an \"X and Y, but not Z\" antithesis. That puts three verdict beats in a 45-word paragraph, and the section has two more verdict lines after it. The first sentence and the \"at worship\" line already say it.",
+   "fix": "Replace \"They paid the tax and refused the oath. The emperor could have their coins and their good conduct, but not an oath that treated him as more than a man. That is where\" with \"They paid the tax and refused the oath. That is where\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Where the Church Drew the Line, paragraph 4, last sentence: \"The bishop who had told one court that God's house was not Caesar's used his standing with another emperor to spare Christians from repairing what they had destroyed.\"",
+   "problem": "The verdict is right, but it keeps the reader's attention on the bishop's inconsistency, and the people who were harmed drop out of sight. VOICE-JAMES-BELL.md asks that victims stay visible when the church's failures are named. A Jewish reader, or a skeptic who knows the story, will notice that \"what they had destroyed\" was a synagogue. The fix names it without adding heat.",
+   "fix": "Replace \"used his standing with another emperor to spare Christians from repairing what they had destroyed.\" with \"used his standing with another emperor to undo the order that would have rebuilt the synagogue Christians had burned.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Is This the Separation of Church and State?, paragraph 1, third sentence: \"Ambrose reached for it when an emperor's court demanded one of his churches, and Christians who have argued since then that no government may compel belief have reached for it too.\"",
+   "problem": "It follows \"beyond Caesar's reach\" directly, so \"reach\" appears three times in two sentences. The echo reads like a pun no one intended. The plain verb is also the accurate one, since the previous section shows that Ambrose quoted the saying.",
+   "fix": "Replace with: \"Ambrose quoted it when an emperor's court demanded one of his churches, and Christians who have argued since then that no government may compel belief have quoted it too.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Is This the Separation of Church and State?, paragraph 2, third sentence: \"And every person standing in a courtroom, a hospital, a legislature or a border station bears the image of God.\"",
+   "problem": "The only politically pointed place on the list is the border station, and a conservative pastor deciding whether to hand this out will read it as aimed at his side. The essay is even-handed elsewhere, and the shelf already holds the church's historic conviction about the child in the womb (the-children-rome-threw-away). Naming both applies the image-of-God claim to the right and the left with the same instrument. The sentence names no policy either way.",
+   "fix": "Replace with: \"And every person standing in a courtroom, a hospital, a legislature or a border station bears the image of God, and so does every child not yet born.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "When a Party Asks for What Belongs to God, paragraph 1, second sentence: \"The government asks for taxes and obedience to the law, and those we owe.\"",
+   "problem": "Without a qualifier, this reads as settling a question the linked what-romans-13-says leaves open (when resistance is warranted). It also sits oddly beside the Scillitans and Ambrose, whom this essay honors for refusing. A pastor whose people remember Birmingham will stop here. The limit every side accepts (Acts 5:29) keeps the sentence true without taking a side.",
+   "fix": "Replace with: \"The government asks for taxes and obedience to the law, and short of anything God forbids, those we owe.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## The Coin in Their Hands\"",
+   "problem": "The heading is mildly literary: it builds the section's argument (that the questioners were holding Caesar's coin) into an image. The approved pilots' headings name things plainly (\"The Martyrs of Lyon\", \"Pliny's Letter to Trajan\").",
+   "fix": "Replace with: \"## The Coin and Jesus' Answer\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## When a Party Asks for What Belongs to God\"",
+   "problem": "This is a formula heading that reuses the essay's own phrase as a thesis, rather than a plain description of what the section covers (the third temptation, Dostoevsky, Margolis on party and church, right and left, Amos at Bethel).",
+   "fix": "Replace with: \"## Party Loyalty and the Church\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), all 6 therapy phrases (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and the signposting phrases (here is what I mean, let me explain).",
+  "Em-dash: no U+2014 anywhere. The three en-dashes are verse ranges (Mark 12:13–17, Genesis 1:26–27, Matthew 4:8–9).",
+  "Exclamation points: one, inside the verbatim quotation of Matthew 4:10 (\"Be gone, Satan!\").",
+  "Semicolons: none in his own prose. All six are inside quotations (KJV Matthew 22:21, Genesis 1:27, Tertullian, the Scillitan acts).",
+  "The brief's stamps: none of the seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\").",
+  "Rulebook leakage: zero uses of steelman, verdict, indictment or self-implication. \"Fair\" never appears. \"Honest\" appears once, as a plain adverb (\"Taxes paid honestly\"), not to certify the essay, and the fix above removes it anyway. Concessions are made, not announced: \"That reading isn't foolish, and part of it is true\", \"It's a clever reading, and it takes seriously how much the answer keeps back from Caesar\", \"it's possible to hang too much on one word\", \"so he had his own reasons to blame the rebels\".",
+  "Announced turns: none of the judges' kind. The signposting is plain and in his habit (\"The first thing the answer does is tell people to pay the tax\", \"The weight of the sentence falls on its second half\", which the next section argues, \"After Constantine the problem changed shape\").",
+  "Biography: one touch, \"the church I serve\". It is confirmed (he is a pastor) and used to implicate himself, not as a credential. No title, years in ministry, book count, Southern Baptist reference, invented scene or brand tie-in. The atheism, father and sons facts are not used, which is right for this subject.",
+  "Standfirst (excerpt): one plain declarative sentence that sets the scene (temple, last week, men who wanted him dead, a Roman tax). It is not a balanced antithesis.",
+  "Title: plain search words (\"What Did Jesus Mean by 'Render Unto Caesar'?\"). Headings: seven of nine are plain and descriptive (The Question in the Temple; The Roman Tax and Judas the Galilean; What Caesar Is Owed; What Belongs to God; Where the Church Drew the Line; Is This the Separation of Church and State?; The Inscription Over the Cross). The two flagged above are mild.",
+  "Scholar parade: none. Josephus carries the history of the census, Judas and Pilate's standards, and the essay notes his bias. Justin and Tertullian are dated because the chronology matters and are cited to the work. The Scillitan acts and Ambrose are primary witnesses. Dostoevsky and Margolis each advance the diagnosis. No \"In *Title* (YEAR), X argued\" pattern.",
+  "Criticism of right and left: both are described in the same paragraph and held to one stated test (\"When your side does what you condemned in the other side, do you say so?\"). Dostoevsky's anti-Roman aim is turned on \"any church\". Ambrose, the hero of one story, is the culprit of the next. The only one-directional cue is the border-station list item, flagged above as consider.",
+  "Contested second-order questions: none asserted as James's position. The coded-refusal reading is exegesis, not doctrine, and is stated before it is answered. \"They were right to\" refers to Christians who say no government may compel belief, a conviction now held across the traditions. The unqualified civil-obedience sentence is flagged above as consider.",
+  "First-order matters are confessed plainly: \"God raised him on the third day\", Christ as \"the image of the invisible God\", and the sinless obedience of Christ.",
+  "Crisis path: the piece is not crisis-facing. Grief, self-harm and abuse are not in view, so no /help link, 988 line or reporting line is needed.",
+  "Scripture works inside the argument and never as decoration. Mark 12 is the controlling text. Genesis 1 (eikon), Romans 13:7 (apodote), Psalm 24:1, Matthew 4, John 6:15, Amos 7:13, John 19:15, Mark 15:26 (epigraphe) and 2 Corinthians 3:18 each move the argument. The KJV is named once, where the familiar wording is the point. Closing Texts are in the *\"Quote.\"* (Reference) format, one per line. The ESV wording matched where I compared it from memory. Verification belongs to the integrity lens.",
+  "Links: every /writing slug is in link-targets.json's shelf list, and the two pending ones (what-romans-13-says, the-early-church-under-rome) are landed in client/public/essays. The count (five) is flagged above.",
+  "Register numbers: 42 body paragraphs averaging 88 words. 206 sentences with a mean of 17.9 words, 22 percent of them 8 words or fewer. 3,807 words before fixes, about 3,710 after. No fragment stacks outside the ending. Contractions are light and natural.",
+  "Shelf overlap (6-word shingles against every landed essay and work draft): beyond verse quotations and link text, only the factual phrase \"to the emperor Antoninus Pius in the 150s\" (also in can-you-be-good-without-god), which is harmless. The blind-spot link pair is flagged above. \"Those belong to God\" faintly echoes what-romans-13-says' close (\"Those belong to the One ...\"). It is acceptable once the ending fix removes the bigger echo.",
+  "Validator: node scripts/validate-essays.mjs in /home/user/livewell-land reports \"Essays: clean (25 files)\".",
+  "Skeptic read: the concessions are real and come early. The common reading is \"not foolish\". Josephus's bias is named. The denarius is qualified (\"We can't know which denarius it was\"). The eikon argument is held loosely (\"it's possible to hang too much on one word\"). The church's own hero is shown using imperial power against a synagogue. Dostoevsky's charge is turned on every church. Nothing presses for a decision, and the Pharisees and Herodians are described without contempt (\"every word of it was true\").",
+  "Pastor read: it can be handed to a congregation. It tells Christians to pay their taxes without flattering the state, it holds both political tribes to one test, it implicates the writer's own church, and the Nathan move after John 19:15 (\"Most of us say it more quietly, and we seldom hear ourselves\") keeps the chief priests from becoming a safe target. It lands on the crucified and risen King, not on a political program."
+ ]
+}

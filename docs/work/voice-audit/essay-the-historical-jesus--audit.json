@@ -1,0 +1,49 @@
+{
+  "piece": "the-historical-jesus",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Clean. Reads as a person working through evidence with a skeptic across the table. Literal checks: 0 em-dashes, one exclamation point (inside Mark 8:33), 0 forbidden words, published body identical to the draft. Four small findings, none structural: one stock overclaim, one closing line that recaps, two sentence-level reads.",
+  "findings": [
+    {
+      "quote": "among Jewish, Christian and secular scholars who agree on little else",
+      "tell": "Stock phrase / overclaim",
+      "why": "\"Who agree on little else\" is a ready-made flourish, and the paragraph just before it lists a dozen things these same scholars agree on (Sanders's list plus what 'most historians would add'). A skeptic notices the contradiction. The ledger verifies only that the consensus holds among Jewish, Christian and secular scholars.",
+      "replacement": "among Jewish, Christian and secular scholars alike",
+      "severity": "should"
+    },
+    {
+      "quote": "The Jesus of the sources was crucified under a governor whose name the church still recites.",
+      "tell": "Closing that recaps; kicker line",
+      "why": "Three paragraphs earlier the essay already made this point in full (the Apostles' Creed, 'suffered under Pontius Pilate'). As a one-line paragraph in the ending it restates that section as a slogan, and it sits between the line that turns the mirror and the line that confesses the resurrection, slowing both. Cutting it leaves 'he' in the next line pointing clearly at Jesus. Replacement is empty on purpose: delete the one-line paragraph.",
+      "replacement": "",
+      "severity": "should"
+    },
+    {
+      "quote": "That last question turns up more than you might expect.",
+      "tell": "Vague framing sentence",
+      "why": "A question doesn't 'turn up'; the awkward material does. The sentence gestures at the point instead of saying it, and 'more than you might expect' echoes the excerpt's 'more about him than most people expect.'",
+      "replacement": "The Gospels hold more of that awkward material than you might expect.",
+      "severity": "consider"
+    },
+    {
+      "quote": "He reshaped Jesus into the Christ he had in mind in the same conversation in which he confessed him.",
+      "tell": "Fails the read-aloud test (not an AI tell)",
+      "why": "\"in mind in the same conversation in which\" stacks three 'in' phrases; the ear trips right where the paragraph should land. Same words, reordered.",
+      "replacement": "In the same conversation in which he confessed him, he reshaped Jesus into the Christ he had in mind.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Opens with a dated, placed event (Berlin, January 31, 1910) rather than a hook, and concedes the skeptic's real ground first: what is missing, and the two bad arguments Christians have used.",
+    "Sources do work, not decoration: Josephus's other Jesus shows how thin a peasant prophet's trail is; Celsus shows ancient enemies never denied he lived; Schweitzer's charge sets up the turn on us.",
+    "Criticism fires both ways with the same instrument (the Jesus who votes like the congregation, the gentle progressive Jesus), and the writer is inside it ('Some of us have said', 'Most of us hold on to the sayings that suit us').",
+    "One earned verdict line rather than several: 'When the Jesus we describe agrees with us about nearly everything, we've usually stopped reading him.'",
+    "Contractions and plain words throughout; headings plain; paragraph lengths vary (60 to 150 words) with short lines only at the end; no biography used as a credential, no title, years or book count.",
+    "Ends honestly for a skeptic: says what history cannot settle, confesses the resurrection in one first-person clause, and leaves the question open."
+  ],
+  "for_james": [
+    "This is the essay where your own history matters most, and it has none of it. If, as an atheist, you ever believed or half-believed that Jesus was a myth, one plain sentence saying so (near 'Anyone who spends much time online has met the claim') would make the piece unmistakably yours. Only you can supply it; nothing has been invented.",
+    "Profile disagreement, noted once: the saved Substack profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a Greek or Hebrew word, a 'human cost' story, three Monday-morning questions and a screenshot line. This essay follows VOICE-JAMES-BELL.md instead (developed paragraphs, about 3,400 words, no application list), which governs. No change made toward the profile.",
+    "The Barna paragraph gives 92 and 87 percent without saying what you take from them. If you want it sharper, say in your own words what the gap means to you; the survey doesn't tell us whether the rest said no or weren't sure, so nothing was added."
+  ]
+}

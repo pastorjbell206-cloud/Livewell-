@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Heart, Copy, Check, RefreshCw, Share2, Sun, Play, Pause, RotateCcw } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
@@ -236,7 +237,7 @@ export default function PrayerGenerator() {
   return (
     <Layout>
       <SEOMeta
-        title="Prayer Generator — Guided Prayers for Every Occasion"
+        title="Written Prayers for Morning, Evening, Hard Days"
         description="Guided prayers for morning, evening, strength, guidance, gratitude, suffering, and pastoral ministry, each one honest enough to pray in your own words."
         keywords="prayer generator, morning prayer, evening prayer, prayer for strength, guided prayer, Christian prayer"
         structuredData={{
@@ -250,30 +251,15 @@ export default function PrayerGenerator() {
         }}
       />
 
-      <section style={{ background: "var(--charcoal)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>FREE TOOL</div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
-            Prayer <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Generator</em>
-          </h1>
-          <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
-            Select a prayer type and receive a guided prayer you can personalize and make your own.
-          </p>
-          {favorites.length > 0 && (
-            <Link
-              href="/tools/saved"
-              style={{
-                display: "inline-block", marginTop: "16px",
-                fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)",
-                color: "var(--gold)", textDecoration: "underline",
-                textUnderlineOffset: "3px",
-              }}
-            >
+      <InnerHead path="/tools/prayer-generator" title="Prayers for when you have no words" line="Select a prayer type and receive a guided prayer you can personalize and make your own." plate="sundial">
+        {favorites.length > 0 && (
+          <p className="pg-head__lede">
+            <Link href="/tools/saved" className="btn--text">
               Saved Prayers ({favorites.length})
             </Link>
-          )}
-        </div>
-      </section>
+          </p>
+        )}
+      </InnerHead>
 
       {/* Prayer of the Day */}
       <section style={{ padding: "36px 32px 0", background: "var(--paper)" }}>
@@ -287,9 +273,9 @@ export default function PrayerGenerator() {
           }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "14px" }}>
               <Sun size={16} style={{ color: "var(--gold)" }} />
-              <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "var(--gold)", fontFamily: "var(--U)", textTransform: "uppercase" }}>
+              <h2 style={{ margin: 0, fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", color: "var(--mustard-text)", fontFamily: "var(--U)", textTransform: "uppercase" }}>
                 Prayer of the Day
-              </span>
+              </h2>
             </div>
             <div style={{ fontSize: "12px", fontWeight: 700, color: "var(--ink3)", fontFamily: "var(--U)", marginBottom: "12px", letterSpacing: "0.08em" }}>
               {dailyPrayer.type.toUpperCase()}
@@ -352,7 +338,7 @@ export default function PrayerGenerator() {
 
           {prayer && (
             <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "12px", padding: "40px 32px", borderTop: "4px solid var(--gold)" }}>
-              <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
+              <div style={{ fontSize: "13px", fontWeight: 700, color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "20px", letterSpacing: "0.1em" }}>
                 {selected?.toUpperCase()}
               </div>
 

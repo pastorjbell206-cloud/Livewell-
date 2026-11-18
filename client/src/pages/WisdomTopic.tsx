@@ -111,7 +111,9 @@ export default function WisdomTopic() {
     return <Layout><div style={{ minHeight: "60vh" }} /></Layout>;
   }
 
-  const title = `${topic.label} — What the Bible Says`;
+  // "What the Bible Says About Anxiety and Worry"; a label that is already a
+  // clause ("When You Are Afraid") keeps its own order. The prerender matches.
+  const title = /^(When|Why)\b/.test(topic.label) ? `${topic.label}: What the Bible Says` : `What the Bible Says About ${topic.label}`;
   const description = topic.framing.length > 155 ? topic.framing.slice(0, 152).trimEnd() + "…" : topic.framing;
   const canonical = `https://www.livewellbyjamesbell.co/wisdom/${topic.id}`;
 

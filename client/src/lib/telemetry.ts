@@ -25,6 +25,8 @@
  *   - "group_guide_view"           — a discussion guide was opened.
  *   - "family_devotion_complete"   — a family marked a devotion done
  *                                    ("We did this tonight").
+ *   - "topic_lead_open"            — a reader opened a topic page's lead
+ *                                    (its essay, or the stand-in it shows).
  */
 import { track as vercelTrack } from "@vercel/analytics";
 
@@ -92,6 +94,16 @@ export function trackGroupGuideView(slug: string): void {
  */
 export function trackFamilyDevotionComplete(id: string, mode: "table" | "page"): void {
   track("family_devotion_complete", { id, mode });
+}
+
+/**
+ * A reader opened the lead on a topic page (/topics/:slug): the essay to read
+ * first, or the stand-in the page shows until that essay is public. The topic
+ * slug, the lead's path, and whether it was the stand-in; nothing about the
+ * reader. Event: "topic_lead_open".
+ */
+export function trackTopicLeadOpen(topic: string, lead: string, standIn: boolean): void {
+  track("topic_lead_open", { topic, lead, stand_in: standIn });
 }
 
 /** A returning reader was seen (a count only — no identity, no PII). */

@@ -1,0 +1,17 @@
+/* /connect, "Find James" (pages/Connect.tsx). The cards and the Substack
+ * list carry their own styles (components/hub.css). Sections alternate
+ * cream, warm cream, charcoal, cream, warm cream. Tokens only. */
+.cn-sec{background:var(--bone);color:var(--ink);padding:var(--s-6) var(--gutter)}
+.cn-sec--first{padding-top:var(--s-4)}
+.cn-sec--warm{background:var(--bone-warm)}
+.cn-sec--dark{background:var(--charcoal);color:var(--charcoal-fg)}
+.cn-sec--foot{padding-top:var(--s-4);padding-bottom:var(--s-4)}
+.cn-wrap{max-width:var(--w-default);margin:0 auto}
+.cn-address{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin:0;font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink-muted)}
+.cn-address__url{font-weight:500;color:var(--ink);overflow-wrap:anywhere}
+.cn-address__btn{min-height:44px;padding:0 18px}
+.cn-address__status{flex-basis:100%;min-height:0;color:var(--ink)}
+@media (max-width:640px){
+  .cn-sec{padding-top:var(--s-5);padding-bottom:var(--s-5)}
+  .cn-sec--first{padding-top:var(--s-3)}
+}

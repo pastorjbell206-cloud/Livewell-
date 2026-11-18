@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { chapterHref, editionSplit, expandGrammar, parseRef, safeDefinition, type BibleBook } from "./bible";
+import { chapterHref, editionSplit, expandGrammar, glossParts, grammarRows, isPoetry, occurrenceLine, outlineTarget, parseRef, plainGloss, poetryLines, safeDefinition, verseCopyText, type BibleBook } from "./bible";
 
 const BOOKS: BibleBook[] = [
   { code: "Gen", slug: "genesis", name: "Genesis", testament: "OT", chapters: 50 },
@@ -32,5 +32,63 @@ describe("study bible helpers", () => {
       out: ["Tyndale House", "Tregelles", "Textus Receptus", "Byzantine"],
     });
     expect(editionSplit(undefined)).toBeNull();
+  });
+
+  it("reads a Hebrew verb's grammar as rows, the brackets kept with their own row", () => {
+    const qal = "Function=Verb; Stem=Qal (hence Action=Simple; Voice=Active); Form=Perfect (hence Tense=Past/present; Mood=Indicative); Person=Third; Gender=Masculine; Number=Singular";
+    expect(grammarRows(qal)).toEqual([
+      { k: "Function", v: "Verb" },
+      { k: "Stem", v: "Qal", hence: "action: simple; voice: active" },
+      { k: "Form", v: "Perfect", hence: "tense: past/present; mood: indicative" },
+      { k: "Person", v: "Third" },
+      { k: "Gender", v: "Masculine" },
+      { k: "Number", v: "Singular" },
+    ]);
+    expect(grammarRows("Function=Conjunction; Form=Consecutive;")).toEqual([{ k: "Function", v: "Conjunction" }, { k: "Form", v: "Consecutive" }]);
+    expect(grammarRows("Function=Particle; Form=Definite article (Hebrew)")[1]).toEqual({ k: "Form", v: "Definite article (Hebrew)" });
+    expect(grammarRows("Function=Adjective; Case=Accusative")).toEqual([{ k: "Function", v: "Adjective" }, { k: "Case", v: "Accusative" }]);
+    for (const row of grammarRows(qal)) expect(`${row.v}${row.hence ?? ""}`).not.toMatch(/[()]/);
+  });
+
+  it("takes the source's marks out of a meaning and flags what they held", () => {
+    expect(glossParts("<the>")).toEqual([{ text: "the", supplied: true }]);
+    expect(glossParts("and <obj.>")).toEqual([{ text: "and ", supplied: false }, { text: "obj.", supplied: true }]);
+    expect(glossParts("[was] over")).toEqual([{ text: "was", supplied: true }, { text: " over", supplied: false }]);
+    expect(glossParts("[is [the] one] who")).toEqual([{ text: "is the one", supplied: true }, { text: " who", supplied: false }]);
+    expect(glossParts("created")).toEqual([{ text: "created", supplied: false }]);
+    expect(plainGloss("heaven<s>")).toBe("heavens");
+    expect(plainGloss("[the] deep")).toBe("the deep");
+  });
+
+  it("says how often a word appears without calling a complete list cut short", () => {
+    expect(occurrenceLine(53, 45, "H")).toBe("53 times in 45 verses of the Hebrew Old Testament.");
+    expect(occurrenceLine(1, 1, "G")).toBe("Once in the Greek New Testament.");
+    expect(occurrenceLine(3, 1, "G")).toBe("3 times in one verse of the Greek New Testament.");
+    expect(occurrenceLine(60, 60, "H")).toBe("60 times in 60 verses of the Hebrew Old Testament.");
+    expect(occurrenceLine(2600, 60, "H")).toBe("2,600 times in the Hebrew Old Testament. The first 60 verses are listed.");
+  });
+
+  it("sets poetry in lines at the translation's own punctuation", () => {
+    expect(isPoetry("psalms", 23)).toBe(true);
+    expect(isPoetry("job", 1)).toBe(false);
+    expect(isPoetry("job", 3)).toBe(true);
+    expect(isPoetry("job", 42)).toBe(false);
+    expect(isPoetry("john", 3)).toBe(false);
+    expect(poetryLines("A Psalm of David. The LORD is my shepherd; I shall not want.")).toEqual(["A Psalm of David.", "The LORD is my shepherd;", "I shall not want."]);
+    expect(poetryLines("Many say of me, “God will not deliver him.” Selah")).toEqual(["Many say of me, “God will not deliver him.”", "Selah"]);
+    // Every word survives, in order.
+    const v = "You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows.";
+    expect(poetryLines(v).join(" ")).toBe(v);
+  });
+
+  it("opens an outline range at the right place, verses in a one-chapter book", () => {
+    expect(outlineTarget("3-4", 1)).toEqual({ chapter: 1, verse: 3 });
+    expect(outlineTarget("1:10-14", 1)).toEqual({ chapter: 1, verse: 10 });
+    expect(outlineTarget("5-7", 28)).toEqual({ chapter: 5 });
+    expect(outlineTarget("12", 50)).toEqual({ chapter: 12 });
+  });
+
+  it("copies a verse with its reference and the translation's name", () => {
+    expect(verseCopyText("Jesus wept.", "John", 11, 35)).toBe("Jesus wept.\nJohn 11:35, Berean Standard Bible");
   });
 });

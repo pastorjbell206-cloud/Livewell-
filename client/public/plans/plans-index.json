@@ -3,7 +3,7 @@
     {
       "slug": "anxiety",
       "title": "Eight Weeks Toward a Quieter Mind",
-      "blurb": "An eight-week plan from James Bell for the mind that won't stop worrying: small daily practices, honest readings, and prayer for the nights when fear will not lift.",
+      "blurb": "An eight-week plan from James Bell for the mind that won't stop worrying: small daily practices, one thing to read each week, and prayer for the nights when fear will not lift.",
       "need": "I can't stop worrying",
       "needSlug": "anxiety"
     },
@@ -44,7 +44,7 @@
     },
     {
       "slug": "empty",
-      "title": "Eight Weeks of Small Mercies",
+      "title": "Eight Weeks for When You Feel Empty",
       "blurb": "An eight week plan from James Bell for when you feel empty and don't know why. Bread and sleep, one person who knows, a doctor, the Psalms that pray in the dark, and mercy one morning at a time.",
       "need": "I feel empty, and I don't know why",
       "needSlug": "empty"
@@ -58,8 +58,8 @@
     },
     {
       "slug": "marriage",
-      "title": "Eight Weeks Toward Each Other",
-      "blurb": "An eight week plan from James Bell for a marriage gone cold, loud, or broken by betrayal. Safety first, honest about what we ask marriage to carry, and slow to rebuild trust.",
+      "title": "Eight Weeks Toward a Stronger Marriage",
+      "blurb": "An eight week plan from James Bell for a marriage gone cold, loud, or broken by betrayal. Safety comes first, then what we ask marriage to carry and the slow rebuilding of trust.",
       "need": "My marriage is falling apart",
       "needSlug": "marriage"
     },
@@ -79,8 +79,8 @@
     },
     {
       "slug": "forgiveness",
-      "title": "Eight Weeks Toward Setting Down the Debt",
-      "blurb": "An eight week plan from James Bell for the wrong you cannot forgive, whether it was done to you or by you. Honest about the wound, clear that safety comes first, and never in a hurry.",
+      "title": "Eight Weeks Toward Forgiving Someone",
+      "blurb": "An eight week plan from James Bell for the wrong you cannot forgive, whether it was done to you or by you. It starts with safety and the real size of the wound, and it doesn't hurry.",
       "need": "I can't forgive them",
       "needSlug": "cant-forgive"
     },
@@ -107,14 +107,14 @@
     },
     {
       "slug": "pornography",
-      "title": "Eight Weeks Out of Hiding",
+      "title": "Eight Weeks Toward Freedom from Porn",
       "blurb": "An eight week plan from James Bell for the one who can't stop looking at porn. Telling one person, your hardest hour, honest accountability, the body as a gift, and grace for the day you fall.",
       "need": "I can't stop looking at porn",
       "needSlug": "pornography"
     },
     {
       "slug": "money",
-      "title": "Eight Weeks Toward Enough",
+      "title": "Eight Weeks Toward Peace About Money",
       "blurb": "An eight week plan from James Bell for when money is a weight on you. Facing the numbers without shame, worry and daily bread, debt, a budget, an honest talk at home, and a life money doesn't rule.",
       "need": "Money is a weight on me",
       "needSlug": "money"
@@ -122,13 +122,13 @@
     {
       "slug": "caregiving",
       "title": "Eight Weeks of Not Carrying It Alone",
-      "blurb": "An eight week plan from James Bell for the one caring for an aging parent or a sick spouse. Honest about the guilt and the grief, practical about help and rest, and clear that no one can carry this alone.",
+      "blurb": "An eight week plan from James Bell for the one caring for an aging parent or a sick spouse. It takes up the guilt and the grief, how to ask for help and get rest, and why no one can carry this alone.",
       "need": "Caring for my parent is wearing me out",
       "needSlug": "caregiving"
     },
     {
       "slug": "work-burnout",
-      "title": "Eight Weeks of Learning to Stop",
+      "title": "Eight Weeks for When Work Has Burned You Out",
       "blurb": "An eight week plan from James Bell for when work has taken more than it should. Sleep, a workday that ends, worth you don't have to earn, a day of rest, an honest look at the job, and a rhythm you can keep.",
       "need": "I'm burned out at work",
       "needSlug": "work-burnout"
@@ -142,14 +142,14 @@
     },
     {
       "slug": "addiction",
-      "title": "Eight Weeks on the Long Road Back",
+      "title": "Eight Weeks Toward Recovery from Addiction",
       "blurb": "An eight week plan from James Bell for the one who can't stop drinking or using. Stopping safely with a doctor, one person who knows, the hardest hour, shame brought into the light, and a life to live toward.",
       "need": "I can't stop drinking or using",
       "needSlug": "addiction"
     },
     {
       "slug": "skeptic",
-      "title": "Eight Weeks of Reading Like an Adult",
+      "title": "Eight Weeks for the Curious Skeptic",
       "blurb": "An eight week reading plan from James Bell for the curious nonbeliever. The Bible read as literature and history, the hard objections on the table, and no tricks anywhere in it.",
       "need": "Can I trust the Bible?",
       "needSlug": "trust-the-bible"
@@ -163,7 +163,7 @@
     },
     {
       "slug": "infertility",
-      "title": "Eight Weeks in the Waiting",
+      "title": "Eight Weeks for a Couple Facing Infertility",
       "blurb": "An eight week plan from James Bell for husbands and wives who can't have children, and anyone who longed to be a parent. Hannah's prayer, the hard days, the losses no one saw, and a hope that tells the truth.",
       "need": "We can't have children",
       "needSlug": "infertility"
@@ -191,7 +191,7 @@
     },
     {
       "slug": "new-believer",
-      "title": "Eight Weeks of Beginnings",
+      "title": "Eight Weeks for a New Christian",
       "blurb": "An eight week plan from James Bell for the brand new Christian. What just happened, reading Mark, the prayer Jesus taught, a church and baptism, and the doubts that come, in plain words.",
       "need": "I'm a new Christian. What do I do now?",
       "needSlug": "new-believer"

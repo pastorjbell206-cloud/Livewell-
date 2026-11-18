@@ -11,7 +11,8 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { SITE_URL } from "@/lib/site";
+import PageHead from "@/components/art/PageHead";
+import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { BOOK_SHELF } from "@/lib/bookShelf";
 
 const BOOKS = BOOK_SHELF;
@@ -20,46 +21,19 @@ export default function Books() {
   return (
     <Layout>
       <SEOMeta
-        title="Books by James Bell — Three Titles, Written by Hand"
-        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Read the opening of each free, then get the ebook for $8.99."
+        title="Books by James Bell"
+        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99."
+        image={ogImageUrl("Books by James Bell", "LiveWell")}
         url={`${SITE_URL}/books`}
       />
 
-      {/* HERO — dark room */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-            The Books
-          </div>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(34px, 5.4vw, 60px)",
-              fontWeight: 400,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-              maxWidth: "20ch",
-              marginBottom: "18px",
-            }}
-          >
-            Three books. Every word mine.
-          </h1>
-          <p
-            style={{
-              fontFamily: "var(--B)",
-              fontSize: "17px",
-              lineHeight: 1.7,
-              color: "rgba(245,240,230,0.78)",
-              maxWidth: "62ch",
-            }}
-          >
-            I write about the church and the country, about reading the Bible without
-            flattering ourselves, and about whether any of this holds up under honest
-            questions. The opening of each book is free to read. The rest costs $8.99,
-            which is less than the coffee you would read it over.
-          </p>
-        </div>
-      </section>
+      <PageHead door="About" doorHref="/about" title="Books by James Bell" line="I wrote all three of these myself." plate="books">
+        <p className="pg-head__lede">
+          I write about the church and the country, about reading the Bible without
+          flattering ourselves, and about whether any of this holds up under honest
+          questions. Each one is an ebook for $8.99.
+        </p>
+      </PageHead>
 
       {/* THE THREE — one full-width row each, alternating cream */}
       {BOOKS.map((b, i) => (
@@ -67,7 +41,7 @@ export default function Books() {
           key={b.slug}
           style={{
             background: i % 2 === 0 ? "var(--bone)" : "var(--bone-warm)",
-            padding: "var(--s-6) var(--s-4)",
+            padding: "var(--s-6) var(--gutter)",
           }}
         >
           <div
@@ -85,7 +59,7 @@ export default function Books() {
                 loading={i === 0 ? "eager" : "lazy"}
                 decoding="async"
                 src={b.cover}
-                alt={`${b.title} — cover`}
+                alt={`Cover of ${b.title}`}
                 width={1600}
                 height={2560}
                 style={{
@@ -131,7 +105,7 @@ export default function Books() {
                   textDecoration: "none",
                 }}
               >
-                Read the opening free →
+                See what is in the book →
               </Link>
             </div>
           </div>
@@ -139,7 +113,7 @@ export default function Books() {
       ))}
 
       {/* WHERE THE REST WENT — honest, brief, prose */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <h2
             style={{
@@ -162,12 +136,6 @@ export default function Books() {
               style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
             >
               Read the essays
-            </Link>
-            <Link
-              href="/roadmap"
-              style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "rgba(245,240,230,0.75)", textDecoration: "none", borderBottom: "1px solid rgba(245,240,230,0.3)", paddingBottom: "2px" }}
-            >
-              What's being written
             </Link>
           </div>
         </div>

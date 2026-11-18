@@ -1,0 +1,71 @@
+{
+  "piece": "the-children-rome-threw-away",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Clean. Read start to finish as a skeptic, this sounds like a person who has done the reading and is grieved by it, not a machine. No em-dashes, no exclamation points outside Ezekiel 16:6, no forbidden-language hits except the unavoidable term 'foster care', no announced turns, no fragment stacks, no scholar parade (each historian carries a named idea), criticism that lands on both political sides and on Protestants as well as Catholics, and a crisis section with 988, Find Help and the not-advice line. What is left is small: two places where the prose refers to itself as 'this essay' instead of James speaking, one stock intensifier, one passive scholarly sentence, one essay-voice transition, and a run of three negations in the most pastoral paragraph. Sentences run slightly long against the brief's target (about 16 percent at 8 words or fewer against a target of about a quarter; mean about 19), which is audible only in the institutional-history section and suits it. The voice score is 8 rather than 10 only because the piece has no first-person memory in it; that can only come from James.",
+  "findings": [
+    {
+      "quote": "This essay won't settle that argument. It is after the care for mothers and children that both sides of it are tempted to leave undone.",
+      "tell": "Essay voice where a person should be; the prose describing its own scope",
+      "why": "The essay becomes the grammatical subject ('This essay won't', 'It is after'), which is how a generated piece sets its own limits. Two paragraphs earlier James says 'I don't know how to read these histories'; here he vanishes at the exact point a reader wants to know who is declining to settle the abortion-law question. 'It is after the care' is also awkward to say aloud.",
+      "replacement": "I'm not going to settle that argument here. What I'm after is the care for mothers and children that both sides of it are tempted to leave undone.",
+      "severity": "should"
+    },
+    {
+      "quote": "That's why the Christian difference is worth studying.",
+      "tell": "Mild signpost; the essay justifying itself",
+      "why": "'Worth studying' is a lecturer's phrase and tells the reader the next section is coming instead of letting the previous sentence (few of us could be sure we would not have written the same) carry him there. It is the one transition in the piece that sounds assembled.",
+      "replacement": "That's what makes the Christian refusal hard to explain away.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Americans are deeply divided over what the law should say, and Christians are divided too.",
+      "tell": "Vague intensifier in a stock phrase",
+      "why": "'Deeply divided' is newsroom boilerplate and the only vague intensifier in the essay. The sentence is stronger and plainer without it.",
+      "replacement": "Americans are divided over what the law should say, and Christians are divided too.",
+      "severity": "consider"
+    },
+    {
+      "quote": "What can be said with confidence is narrower than the sermon illustration and still remarkable.",
+      "tell": "Impersonal passive; a professor's summary sentence",
+      "why": "After four paragraphs of historians disagreeing, the turn back to solid ground is the hinge of the section, and it is delivered in the agentless passive of a literature review. James would say who can say it.",
+      "replacement": "What we can say with confidence is narrower than the sermon illustration and still remarkable.",
+      "severity": "consider"
+    },
+    {
+      "quote": "you are not a monster, and you are not beyond the reach of God. Grief over what happened is not a sign that God is finished with you. Often it is where he begins.",
+      "tell": "Negation run ending in a 'not X. Y.' two-beat",
+      "why": "Three 'not' clauses in a row followed by the turn give the most tender paragraph in the essay a slightly constructed cadence. The first two negations are doing real pastoral work (the first deliberately echoes 'Hilarion isn't a monster'); the third can be loosened with a contraction so the closing line arrives as speech rather than as a formula.",
+      "replacement": "you are not a monster, and you are not beyond the reach of God. Grief over what happened doesn't mean God is finished with you. Often it is where he begins.",
+      "severity": "consider"
+    },
+    {
+      "quote": "This essay can't give medical or counseling advice, and it isn't meant to take the place of the people who can.",
+      "tell": "Essay voice in a crisis passage",
+      "why": "Second 'This essay' as subject, and it falls in the paragraph addressed to a reader near despair, right after 'please tell someone today'. The disclaimer has to stay; it reads warmer and more human in the first person. If this line is a fixed site-wide wording, leave it.",
+      "replacement": "I can't give medical or counseling advice here, and nothing I've written is meant to take the place of the people who can.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening is a real document read closely (Hilarion's letter, P.Oxy. 744) and the first judgment is a concession: 'Hilarion isn't a monster, and that is what makes the letter hard to read.'",
+    "The strongest account of the Roman family comes before any criticism, and the writer goes inside it: 'Few of us in Hilarion's place ... could be sure we would not have written the same sentence.'",
+    "It corrects the church's own favorite story ('Here the story usually told in churches runs ahead of the evidence') and says plainly that rescue came later and that Christians abandoned children too. A skeptic cannot accuse it of dishonesty.",
+    "'It would be easy for a Protestant to read that and feel safely distant' followed by Bethany Home turns the mirror without announcing it.",
+    "'I don't know how to read these histories without seeing Hilarion's letter in them. Hilarion decided for Alis ... The homes decided for the mothers.' That is a person thinking, and it is the essay's real thesis.",
+    "Scripture does the diagnosis: Ezekiel 16 is stayed with long enough to work, and it returns at the end as the gospel rather than a decorative closer.",
+    "'He did not say to hold the right opinion about them' is the one earned verdict line after James 1:27; the essay does not attempt five more.",
+    "Political criticism runs in both directions with the same sentence shape and the same grief, then concedes that plenty of Christians do better than either picture.",
+    "The crisis section meets grief and guilt separately, does not diagnose, keeps forgiveness tied to the cross, and keeps 988 and Find Help in view.",
+    "Plain headings, varied paragraph lengths (54 to 141 words), no em-dashes, and both exclamation points inside Ezekiel 16:6 with the reference beside them."
+  ],
+  "for_james": [
+    "The essay contains no memory of yours. It quotes 'Father of the fatherless' (Psalm 68:5) twice and closes on 'For my father and my mother have forsaken me, but the LORD will take me in' (Psalm 27:10), and you were raised without a father. Whether one plain sentence of your own belongs near Psalm 68 or in the closing is yours alone to decide and to write; nothing was invented and nothing should be. That one true sentence is the difference between an 8 and a 10 on voice here.",
+    "Likewise the congregational paragraph (the pregnant teenager and her youth leader, foster families, the baby shower) is general. If you have a real instance you are free to tell without exposing anyone, it would do more than any edit. If not, it stands as written.",
+    "'Foster care' and 'foster parents' appear five times. 'Foster' is on the Forbidden Language list as a verb; here it is the ordinary name of the thing and has no honest substitute, so it was not flagged.",
+    "The paragraph on Harris, Engels and Stark is the one stretch that reads like a literature review. Engels in particular is named only so Harris can answer him. Every claim in it is ledger-checked, so no cut is proposed, but if you want the section shorter, that sentence is the candidate.",
+    "'Jesus' warning covers that kind of harm' applies Matthew 18:6 (causing a little one to sin) to shaming an unmarried mother. That is an interpretive step you should be comfortable owning; the wording was left alone.",
+    "One disagreement with your saved Substack profile, noted once: the profile asks for 2-to-4-sentence paragraphs, a 1,500-to-2,500-word ceiling, a 'Monday Morning' block of three questions and one practice, a Greek or Hebrew word, and a screenshot line. This essay has developed paragraphs, runs about 3,700 words, and ends in a short stack of plain lines instead of an application block. VOICE-JAMES-BELL.md governs and prefers exactly that, so nothing was rewritten toward the profile.",
+    "The ledger still lists two items open from the fact checks (the writer's original wording of the Hilarion quotation and the cut 'sister' clause). The published text for both is verified; no replacement above touches them."
+  ]
+}

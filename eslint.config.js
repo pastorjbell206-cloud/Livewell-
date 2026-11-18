@@ -13,6 +13,7 @@ export default [
       "scripts/**",
       "patches/**",
       "content/**",
+      "docs/work/**",
       "drizzle/migrations/**",
     ],
   },

@@ -1,0 +1,73 @@
+{
+  "piece": "doubt-after-church-abuse",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "verdict": "Clean. Read start to finish as a skeptic, it sounds like a pastor talking to one hurt person: plain words, developed paragraphs of varied length (15 to 133 words), Scripture carrying the argument, the skeptic granted a real point, the writer inside the Eli charge. Literal searches found no Forbidden Language, no em-dash, no hedge or filler connective, and the only two exclamation points are inside quoted Scripture (Psalm 105:15, Mark 14:65). Crisis lines (police/CPS, 988, Find Help twice, not-advice) are present. Biography stays inside the confirmed facts. What is left is small: two 'It is not X. It is Y.' pairs past the one each movement can carry, two colon-then-reveal closers, one unexplained 'reason for hope', one vague framing sentence, and a few uncontracted verbs in direct address. Six findings, none 'must'. The gap between this and a 10 on voice is not wording: nothing here could only have been written by James, and only he can supply that.",
+  "findings": [
+    {
+      "quote": "The Boston and Southern Baptist reports were not about a few verses misread. They were about institutions that made silence easy.",
+      "tell": "\"It is not X. It is Y.\" antithesis used as a habit",
+      "why": "This section already has 'are not cynics' and 'from the body and not from one man', and the essay opens with the same two-sentence shape ('is not proof that your faith was weak. It is what this kind of harm does'). Here it closes a paragraph as a balanced pair, which is the pattern a careful reader hears as generated.",
+      "replacement": "The Boston and Southern Baptist reports describe institutions that made silence easy, and that goes a long way past a few verses misread.",
+      "severity": "should"
+    },
+    {
+      "quote": "The person who reports abuse to the police is not taking revenge. She is handing the matter to the authority Paul says God appointed for it.",
+      "tell": "\"It is not X. It is Y.\" antithesis, third or fourth in the movement",
+      "why": "The forgiveness section leans on negation throughout ('not something the victim supplies', 'It does not mean', 'it is not reconciliation', 'It is never restoration', 'are not trivial cases'). Each is doing real work, but this pair is the one that reads as a formula, and it can be said in one sentence without losing anything.",
+      "replacement": "So the person who reports abuse to the police has left vengeance alone, as Paul says to, and handed the matter to the authority he says God appointed for it.",
+      "severity": "should"
+    },
+    {
+      "quote": "That is hard to hear when it was a community that failed you, and it is also a reason for hope.",
+      "tell": "Generic hope attached without a concrete case; vague abstraction",
+      "why": "The sentence asserts hope and does not say why. A reader who was failed by a community will hear it as the reassurance reflex the rest of the essay refuses. VOICE-JAMES-BELL.md: never attach generic hope to an unresolved diagnosis.",
+      "replacement": "That is hard to hear when it was a community that failed you. It also means you don't have to do this alone.",
+      "severity": "should"
+    },
+    {
+      "quote": "Either reading is true to what abuse at the altar does: it teaches people to recoil from God.",
+      "tell": "Colon-then-reveal paragraph closer",
+      "why": "The colon stages the point as a reveal. The same move closes the Baptist-independence paragraph. One would pass; two start to sound like a device.",
+      "replacement": "On either reading, abuse at the altar teaches people to recoil from God.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The report showed what that conviction turns into when protecting the institution comes first: a reason for no one to be responsible.",
+      "tell": "Colon-then-reveal epigram closing a short paragraph",
+      "why": "A 39-word paragraph that exists to deliver a kicker after a colon. The judgment is right and is his; the staging is what reads as written-for-effect.",
+      "replacement": "The report showed that when protecting the institution comes first, that conviction turns into a reason for no one to be responsible.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Some of the accused were defenders of the faith itself.",
+      "tell": "Vague framing sentence; plural claim with one case behind it",
+      "why": "'Some' promises several and the paragraph gives one man, Ravi Zacharias, who was not among the Southern Baptist accused the previous paragraphs describe. It reads as a transition written to bridge sections, not as a thought.",
+      "replacement": "The accused have included a defender of the faith itself.",
+      "severity": "consider"
+    },
+    {
+      "quote": "you may have found that the damage did not stay where he put it ... others still believe but cannot pray without hearing his voice ... I would only ask you not to let the man who hurt you decide who God is.",
+      "tell": "No contraction where speech would have one, in direct address",
+      "why": "The essay contracts elsewhere ('didn't he stop it', 'can't pray', 'I won't rush you'), so these three read stiff beside them, in the places where he is speaking most directly to the reader. Leave the emphatic ones alone ('was not your fault', 'They were not equals', 'It does not mean').",
+      "replacement": "you may have found that the damage didn't stay where he put it ... others still believe but can't pray without hearing his voice ... I'd only ask you not to let the man who hurt you decide who God is.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening meets the reader in specifics (a sermon borrowing his phrase, a song in the car) and lets the four night questions run as real questions, not rhetoric.",
+    "Safety, reporting, 988 and Find Help come in the third paragraph, before any argument, and plainly.",
+    "Scripture is the diagnosis: Shiloh, Psalm 105, David and Saul, and Ezekiel 34 are each read in context and each changes the argument. 'The man who hurt you had to preach past all of it' is a line a person wrote.",
+    "The skeptic's objection is given real force and conceded in part ('He is right that churches built cultures that taught people to defer').",
+    "The bystanders are described sympathetically before Eli is laid over them, and James puts himself there without ceremony: 'I lead one, and I feel that pull too. It usually feels like prudence.'",
+    "Sources are witnesses, not a parade: Herman, Johnson and VanVonderen, Augustine and Bullinger each carry one idea the argument needs.",
+    "The ending leaves weight on the church ('There is still time to do what he would not') and lands on Ezekiel 34, with no recap."
+  ],
+  "for_james": [
+    "The one thing that would move this from 'a careful pastor wrote this' to 'only James wrote this' is something from your own life: a moment when you felt the pull to handle something quietly, or what it was like to come into the church as an outsider and learn to trust a pastor. I have not written one and will not invent one. If you have a true sentence or two, the paragraph beginning 'Anyone who leads a church knows the pull' is where it belongs.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree in a few places, and I judged by the voice document as instructed: the profile asks for 2-to-4-sentence paragraphs, a screenshot line, a Greek or Hebrew word, 'three specific questions, one concrete practice' and 1,500 to 2,500 words; the voice document asks for developed paragraphs, one earned thesis line and no application box. This essay follows the voice document (about 4,070 words, no question list). The essay brief also says 'contractions light' while the voice document prefers contractions; the finding on contractions follows the voice document.",
+    "Two questions the earlier passes left for you are still yours: whether forgiveness must wait for repentance (the essay leaves it open), and whether 'A leader found guilty does not return to ministry' and 'It is never restoration to the position he abused' state your position as firmly as you want.",
+    "'These steps are not complicated, only costly' was kept by an earlier reader on purpose. I agree it earns its place, but it is the most quotable-sounding line in the piece; cut 'not complicated, only' if it sounds unlike you aloud.",
+    "The Herman quotation, the Helvetic 'wolves' quotation and the Johnson and VanVonderen paraphrase were checked against reproductions, not the printed books. If you own them, a glance at the page would close that. None of my replacements touches a quotation, number, date or name."
+  ]
+}

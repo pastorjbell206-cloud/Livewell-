@@ -16,9 +16,9 @@ import { GUIDE_TOPICS, SENSITIVE_GUIDES } from "@/lib/needs";
 import { SEOMeta } from "@/components/SEOMeta";
 import GatedDownload from "@/components/GatedDownload";
 import PageEndNav from "@/components/PageEndNav";
-import { DONATE_HREF, DONATE_BLURB } from "@/lib/donate";
 import { isPublicEssay } from "@/lib/shelf";
 import { TakeItWithYou } from "@/components/TakeItWithYou";
+import { refHref } from "@/lib/scripture-ref";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -71,6 +71,17 @@ const body = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.8, color:
  * it groups sentences into paragraphs of ~3 so the page reads like a document,
  * not a wall.
  */
+/** The way from a session's key Scripture into the Study Bible: its chapter, at its first verse. */
+function StudyBibleLine({ reference }: { reference: string }) {
+  const href = refHref(reference);
+  if (!href) return null;
+  return (
+    <Link href={href} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", marginBottom: "4px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>
+      Read it in the Study Bible
+    </Link>
+  );
+}
+
 function toParagraphs(text: string): string[] {
   const explicit = text.split(/\n\n+/).map((s) => s.trim()).filter(Boolean);
   if (explicit.length > 1) return explicit;
@@ -116,11 +127,11 @@ export default function StudyGuide() {
 
   return (
     <Layout>
-      {data && <SEOMeta title={`${data.title} — Leader's Toolkit`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/studyguides/${slug}`} />}
+      {data && <SEOMeta title={data.title} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/studyguides/${slug}`} />}
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study Guide · Leader's Toolkit</div>
+          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Study guide for groups</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That guide is not here yet." : "Loading the guide…")}</h1>
           {missing && (
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
@@ -135,12 +146,6 @@ export default function StudyGuide() {
                 <GatedDownload href={`/downloads/studyguides/${slug}-leader.pdf`} label="Leader's Guide (PDF)" source={source} />
                 <GatedDownload href={`/downloads/studyguides/${slug}-participant.pdf`} label="Participant Handout (PDF)" source={source} />
               </div>
-              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "rgba(245,240,230,0.7)", maxWidth: "56ch", marginTop: "16px" }}>
-                {DONATE_BLURB}{" "}
-                <a href={DONATE_HREF} style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px", fontWeight: 600 }}>
-                  Give a gift →
-                </a>
-              </p>
             </>
           )}
         </div>
@@ -182,6 +187,7 @@ export default function StudyGuide() {
                   <div style={{ background: "var(--bone-warm)", borderLeft: "3px solid var(--mustard)", padding: "14px 18px", borderRadius: "0 var(--radius-sm) var(--radius-sm) 0" }}>
                     <p style={{ ...body, fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, marginBottom: "4px" }}>{s.keyScripture.ref}</p>
                     <p style={{ ...body, color: "var(--ink-muted)", fontSize: "15px" }}>{s.keyScripture.why}</p>
+                    <StudyBibleLine reference={s.keyScripture.ref} />
                   </div>
                   {s.scriptureStudy && s.scriptureStudy.length > 0 && (
                     <>
@@ -226,7 +232,8 @@ export default function StudyGuide() {
                   <h3 style={h3}>{s.title}</h3>
                   <p style={{ ...body, marginBottom: "12px" }}>{s.summary}</p>
                   <div style={lbl}>Key Scripture</div>
-                  <p style={{ ...body, marginBottom: "12px" }}>{s.keyScripture.ref}</p>
+                  <p style={{ ...body, marginBottom: "4px" }}>{s.keyScripture.ref}</p>
+                  <StudyBibleLine reference={s.keyScripture.ref} />
                   {s.memoryVerse && (<><div style={lbl}>Memory verse</div><p style={{ ...body, fontFamily: "var(--F)", fontSize: "17px", marginBottom: "12px" }}>{s.memoryVerse.text} <span style={{ color: "var(--ink-muted)" }}>— {s.memoryVerse.ref}</span></p></>)}
                   <div style={lbl}>Reflect</div>
                   {s.reflection.map((r, i) => <p key={i} style={{ ...body, marginBottom: "6px" }}>{i + 1}. {r}</p>)}

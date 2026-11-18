@@ -1,0 +1,532 @@
+{
+  "about": "Public-domain texts the church history course quotes from, stored byte for byte as fetched. See PROVENANCE.md. Checked by scripts/verify-sources.mjs.",
+  "texts": [
+    {
+      "id": "martyrdom-of-polycarp",
+      "file": "texts/martyrdom-of-polycarp.html",
+      "format": "wdb-html",
+      "author": "The church at Smyrna",
+      "work": "The Martyrdom of Polycarp",
+      "sections": "the whole letter, with the translators' notes",
+      "translator": "Alexander Roberts and James Donaldson",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter headings (\"Chapter I.-Subject of Which We Write.\") and notes (one compares Wake's rendering) are those of the Ante-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Polycarp of Smyrna/Martyrdom of Polycarp.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Polycarp%20of%20Smyrna/Martyrdom%20of%20Polycarp.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "8bc7ba36a75a8c2f760131eee0ea9947216c72c8fc9266a52c42c2d61c4fd245",
+      "bytes": 31033
+    },
+    {
+      "id": "passion-of-perpetua",
+      "file": "texts/passion-of-perpetua.html",
+      "format": "wdb-html",
+      "author": "Perpetua and an unnamed editor",
+      "work": "The Passion of the Holy Martyrs Perpetua and Felicitas",
+      "sections": "the whole text, with notes",
+      "translator": "R. E. Wallis",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its \"Argument\" chapter headings and the American editor's bracketed notes (one cites \"the Edinburgh series (translation)\") are those of the Ante-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 3 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Passion of Saints Perpetua and Felicity/The Passion of the Holy Martyrs Perpetua and Felicitas.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Passion%20of%20Saints%20Perpetua%20and%20Felicity/The%20Passion%20of%20the%20Holy%20Martyrs%20Perpetua%20and%20Felicitas.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "b8a29e801c365cd1cfe0890d92aef0ec9549748835d3b7168088e7215bc195c0",
+      "bytes": 40029
+    },
+    {
+      "id": "eusebius-church-history-3",
+      "file": "texts/eusebius-church-history-3.html",
+      "format": "wdb-html",
+      "author": "Eusebius of Caesarea",
+      "work": "Church History",
+      "sections": "Book 3, with the translator's notes",
+      "translator": "Arthur Cushman McGiffert",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. The notes are McGiffert's (they cite the Ante-Nicene Fathers by volume and page, and the note to 3.33 translates Pliny's letter in full), as printed in the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 1 (1890)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Eusebius of Caesarea/THE CHURCH HISTORY OF EUSEBIUS/Book 3.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Eusebius%20of%20Caesarea/THE%20CHURCH%20HISTORY%20OF%20EUSEBIUS/Book%203.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "c0f9856a4e96a4d7dd99912729dbec6f79b4e27621040ab4d4a186e99decb3b2",
+      "bytes": 303724,
+      "holds": [
+        "Pliny the Younger, Letters 10.96 and Trajan's reply 10.97, translated in full in McGiffert's note to 3.33",
+        "Tertullian on Pliny's letter (3.33)"
+      ]
+    },
+    {
+      "id": "eusebius-church-history-5",
+      "file": "texts/eusebius-church-history-5.html",
+      "format": "wdb-html",
+      "author": "Eusebius of Caesarea",
+      "work": "Church History",
+      "sections": "Book 5, with the translator's notes",
+      "translator": "Arthur Cushman McGiffert",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. The notes are McGiffert's (they cite the Ante-Nicene Fathers by volume and page, and the note to 3.33 translates Pliny's letter in full), as printed in the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 1 (1890)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Eusebius of Caesarea/THE CHURCH HISTORY OF EUSEBIUS/Book 5.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Eusebius%20of%20Caesarea/THE%20CHURCH%20HISTORY%20OF%20EUSEBIUS/Book%205.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "6b96ab56d0184a6d36d0dc78a3a57a70845ea0e957b98f4532381aa9b9002af8",
+      "bytes": 305775,
+      "holds": [
+        "the letter of the churches of Vienne and Lyon on the persecution of 177 (5.1-5.3)"
+      ]
+    },
+    {
+      "id": "eusebius-church-history-6",
+      "file": "texts/eusebius-church-history-6.html",
+      "format": "wdb-html",
+      "author": "Eusebius of Caesarea",
+      "work": "Church History",
+      "sections": "Book 6, with the translator's notes",
+      "translator": "Arthur Cushman McGiffert",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. The notes are McGiffert's (they cite the Ante-Nicene Fathers by volume and page, and the note to 3.33 translates Pliny's letter in full), as printed in the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 1 (1890)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Eusebius of Caesarea/THE CHURCH HISTORY OF EUSEBIUS/Book 6.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Eusebius%20of%20Caesarea/THE%20CHURCH%20HISTORY%20OF%20EUSEBIUS/Book%206.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "9dcdc7b6261722f638a3321696cf67643536b7e630867d2ce5936cfb65105e67",
+      "bytes": 307256,
+      "holds": [
+        "the persecution under Decius (6.39), and Dionysius of Alexandria on it (6.40-6.42)",
+        "Cornelius of Rome's count of the Roman clergy and the widows (6.43)"
+      ]
+    },
+    {
+      "id": "eusebius-church-history-7",
+      "file": "texts/eusebius-church-history-7.html",
+      "format": "wdb-html",
+      "author": "Eusebius of Caesarea",
+      "work": "Church History",
+      "sections": "Book 7, with the translator's notes",
+      "translator": "Arthur Cushman McGiffert",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. The notes are McGiffert's (they cite the Ante-Nicene Fathers by volume and page, and the note to 3.33 translates Pliny's letter in full), as printed in the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 1 (1890)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Eusebius of Caesarea/THE CHURCH HISTORY OF EUSEBIUS/Book 7.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Eusebius%20of%20Caesarea/THE%20CHURCH%20HISTORY%20OF%20EUSEBIUS/Book%207.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "c498ccec10b899c5c5f89039fd3ceed53e7832a67075ed41d8046477f0023509",
+      "bytes": 231879,
+      "holds": [
+        "Dionysius of Alexandria on the plague (7.22)"
+      ]
+    },
+    {
+      "id": "eusebius-church-history-8",
+      "file": "texts/eusebius-church-history-8.html",
+      "format": "wdb-html",
+      "author": "Eusebius of Caesarea",
+      "work": "Church History",
+      "sections": "Book 8, with the translator's notes",
+      "translator": "Arthur Cushman McGiffert",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. The notes are McGiffert's (they cite the Ante-Nicene Fathers by volume and page, and the note to 3.33 translates Pliny's letter in full), as printed in the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 1 (1890)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Eusebius of Caesarea/THE CHURCH HISTORY OF EUSEBIUS/Book 8.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Eusebius%20of%20Caesarea/THE%20CHURCH%20HISTORY%20OF%20EUSEBIUS/Book%208.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "6ba642dd67552c06458a4d881f1726cf2ee6c9c47279023e53331e2e80c0dc3b",
+      "bytes": 225548,
+      "holds": [
+        "Eusebius on the long peace before the Great Persecution and the laxity it bred (8.1)"
+      ]
+    },
+    {
+      "id": "epistle-to-diognetus",
+      "file": "texts/epistle-to-diognetus.html",
+      "format": "wdb-html",
+      "author": "Unknown",
+      "work": "The Epistle to Diognetus",
+      "sections": "the whole letter",
+      "translator": "Alexander Roberts and James Donaldson",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter headings are the Ante-Nicene Fathers headings, and its notes link to the CCEL edition of that series, volume 1 (\"ANF-01\"). Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Epistle to Diognetus/The Epistle to Diognetus.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Epistle%20to%20Diognetus/The%20Epistle%20to%20Diognetus.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "c764e1cd1b9f66dddcb05ee608bffb26d5c549a0ce323c533c94919ef404694d",
+      "bytes": 36110,
+      "holds": [
+        "the Christians in the world: 'every foreign land is to them as their native country' (chapter 5)"
+      ]
+    },
+    {
+      "id": "justin-first-apology",
+      "file": "texts/justin-first-apology.html",
+      "format": "wdb-html",
+      "author": "Justin Martyr",
+      "work": "The First Apology",
+      "sections": "the whole work, with notes",
+      "translator": "Marcus Dods",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter headings (\"Chapter I.-Address.\") and the American editor's bracketed notes are those of the Ante-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Justin Martyr/The First Apology.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Justin%20Martyr/The%20First%20Apology.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "fd8866e03adb84203e916bc84408dd850a03814a42ceada46c763f0239598ec2",
+      "bytes": 152585,
+      "holds": [
+        "Sunday worship and the 'memoirs of the apostles' (chapters 65-67)",
+        "against exposing infants (chapters 27 and 29)"
+      ]
+    },
+    {
+      "id": "irenaeus-against-heresies-3",
+      "file": "texts/irenaeus-against-heresies-3.html",
+      "format": "wdb-html",
+      "author": "Irenaeus of Lyon",
+      "work": "Against Heresies",
+      "sections": "Book 3, with notes",
+      "translator": "Alexander Roberts and W. H. Rambaut",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter headings and notes are those of the Ante-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 1 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Irenaeus/Irenaeus Against Heresies Book 3.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Irenaeus/Irenaeus%20Against%20Heresies%20Book%203.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "8a727890592f0510542eb4a71122a7ac48ffb51e6ce78f1bf18cb37e06d0c579",
+      "bytes": 303264,
+      "holds": [
+        "the four Gospels and no more (3.11.8)",
+        "the apostolic tradition in the churches (3.1-3.4)"
+      ]
+    },
+    {
+      "id": "tertullian-apology",
+      "file": "texts/tertullian-apology.html",
+      "format": "wdb-html",
+      "author": "Tertullian",
+      "work": "The Apology",
+      "sections": "the whole work, with notes",
+      "translator": "S. Thelwall",
+      "translatorNamedInFile": true,
+      "identification": "The file opens \"[Translated by the Rev. S. Thelwall, Late Scholar of Christ's College, Cantab.]\", the Ante-Nicene Fathers label. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 3 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Tertullian/The Apology.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Tertullian/The%20Apology.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "b5d555b7d0da9e00bcbbb1aeb6f57ad6ae6180f50392dfba67858013b7958e78",
+      "bytes": 206815,
+      "holds": [
+        "the common fund and the care of the poor (chapter 39)",
+        "prayer for the emperors (chapters 30 and 39)",
+        "Christians in the common life of the empire (chapter 42)",
+        "the blood of Christians as seed (chapter 50)"
+      ]
+    },
+    {
+      "id": "origen-against-celsus-3",
+      "file": "texts/origen-against-celsus-3.html",
+      "format": "wdb-html",
+      "author": "Origen",
+      "work": "Against Celsus",
+      "sections": "Book 3, with notes",
+      "translator": "Frederick Crombie",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter headings and the translator's notes on readings (\"which we have adopted in the translation\") are those of the Ante-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 4 (1885)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Origen of Alexandria/Against Celsus/Book 3.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Origen%20of%20Alexandria/Against%20Celsus/Book%203.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "0f1aa51bb74a4e9496b495275aa45bc11ca2c748060e250b13076470c816233c",
+      "bytes": 195430,
+      "holds": [
+        "the martyrs as men 'who can be easily numbered' (3.8)"
+      ]
+    },
+    {
+      "id": "cyprian-on-the-lapsed",
+      "file": "texts/cyprian-on-the-lapsed.html",
+      "format": "wdb-html",
+      "author": "Cyprian of Carthage",
+      "work": "On the Lapsed (Treatise 3)",
+      "sections": "the whole treatise",
+      "translator": "Ernest Wallis",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its \"Argument\" heading and numbering are those of the Ante-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Ante-Nicene Fathers, vol. 5 (1886)",
+      "publicDomain": "Printed in the American edition of the Ante-Nicene Fathers (1885-1887), which revised the Ante-Nicene Christian Library (Edinburgh, 1867-1872). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Cyprian/Treatise 3. On the Lapsed.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Cyprian/Treatise%203.%20On%20the%20Lapsed.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "9f6f7a9b086392f3b291ee3c4f4e89488585d4b01564506d4bc199f609624b88",
+      "bytes": 64485
+    },
+    {
+      "id": "nicaea-325-creed",
+      "file": "texts/nicaea-325-creed.html",
+      "format": "wdb-html",
+      "author": "The Council of Nicaea (325)",
+      "work": "The Nicene Creed (the creed of 325, with its anathemas)",
+      "sections": "the creed with the editor's notes",
+      "translator": "Henry R. Percival (editor)",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its introductory note (\"Found in the Acts of the Ecumenical Councils of Ephesus and Chalcedon, in the Epistle of Eusebius of Caesarea...\") and transliterated Greek glosses are those of the Seven Ecumenical Councils volume of the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Council of Nicaea of 325/The Nicene Creed.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Council%20of%20Nicaea%20of%20325/The%20Nicene%20Creed.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "deeb0d703d962ec4e775ff34d836f4508491ec7c318c94aaae288cf939e0e535",
+      "bytes": 3196
+    },
+    {
+      "id": "nicaea-325-synodal-letter",
+      "file": "texts/nicaea-325-synodal-letter.html",
+      "format": "wdb-html",
+      "author": "The Council of Nicaea (325)",
+      "work": "The Synodal Letter to the church of Alexandria",
+      "sections": "the whole letter",
+      "translator": "Henry R. Percival (editor)",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its source note (\"Found in Gelasius, Historia Concilii Nicaeni... Socr., H. E.... Theodor., H. E....\") is that of the Seven Ecumenical Councils volume of the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 14 (1900)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Council of Nicaea of 325/The Synodal Letter.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Council%20of%20Nicaea%20of%20325/The%20Synodal%20Letter.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "61df19fabdf5c14621df5024d79325f8f1701cf0b6f4080f0227866cca3bbb28",
+      "bytes": 6150
+    },
+    {
+      "id": "athanasius-de-decretis",
+      "file": "texts/athanasius-de-decretis.html",
+      "format": "wdb-html",
+      "author": "Athanasius of Alexandria",
+      "work": "Defence of the Nicene Definition (De Decretis)",
+      "sections": "the whole work, with notes and appendices",
+      "translator": "Not named in the file; the Nicene and Post-Nicene Fathers translation edited by Archibald Robertson",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter summaries and notes are those of the Athanasius volume of the Nicene and Post-Nicene Fathers; which hand in that volume translated this treatise was not confirmed. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 4 (1892)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Athanasius of Alexandria/De Decretis or Defence of the Nicene Definition.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Athanasius%20of%20Alexandria/De%20Decretis%20or%20Defence%20of%20the%20Nicene%20Definition.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "1ca04e24a5a2a889641a3863edbc1a45f3ecdd82a0ead1f4782bf27971556f3c",
+      "bytes": 140886
+    },
+    {
+      "id": "athanasius-on-the-incarnation",
+      "file": "texts/athanasius-on-the-incarnation.html",
+      "format": "wdb-html",
+      "author": "Athanasius of Alexandria",
+      "work": "On the Incarnation of the Word",
+      "sections": "the whole work, with notes",
+      "translator": "Archibald Robertson",
+      "translatorNamedInFile": false,
+      "identification": "The file is a 2004 copy of the CCEL page for this volume (its own comment reads \"Mirrored from www.ccel.org/fathers2/NPNF2-04/Npnf2-04-16.htm\", and its title \"Nicene and Post-Nicene Fathers, Series II, Vol. IV\"); a translator's note reads \"In the next clause I formerly translated...\", Robertson revising his own earlier translation. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 4 (1892)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Athanasius of Alexandria/On the Incarnation of the Word.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Athanasius%20of%20Alexandria/On%20the%20Incarnation%20of%20the%20Word.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "8239dac327f438f2010eb2e7dd49bd7f1a0a7f65f8ce4616165454faeed1959e",
+      "bytes": 264950
+    },
+    {
+      "id": "ambrose-letter-40",
+      "file": "texts/ambrose-letter-40.html",
+      "format": "wdb-html",
+      "author": "Ambrose of Milan",
+      "work": "Letter 40, to the Emperor Theodosius, on the synagogue at Callinicum",
+      "sections": "the whole letter, with notes",
+      "translator": "H. de Romestin",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. It is one of the selected letters with an italic summary and numbered sections, the form of the Nicene and Post-Nicene Fathers selection; the same repository also holds the complete Library of the Fathers translation (Oxford, 1881) under \"Letters 31-40\", which is a different text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 10 (1896)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Ambrose of Milan/Letters/Letter 40.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Ambrose%20of%20Milan/Letters/Letter%2040.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "5a1cb832f8543d85fbe87a1ff7d5edfa4e6247d0fef9cca07900f0264a477392",
+      "bytes": 29304
+    },
+    {
+      "id": "ambrose-letter-41",
+      "file": "texts/ambrose-letter-41.html",
+      "format": "wdb-html",
+      "author": "Ambrose of Milan",
+      "work": "Letter 41, to his sister Marcellina, on Callinicum",
+      "sections": "the whole letter, with notes",
+      "translator": "H. de Romestin",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. It has the italic summary and numbered sections of the Nicene and Post-Nicene Fathers selection (see ambrose-letter-40). Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 10 (1896)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Ambrose of Milan/Letters/Letter 41.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Ambrose%20of%20Milan/Letters/Letter%2041.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "0cc8da3ec267453a8c6d3a6676fbf1279317d9c8d4e1ebee137d08001fc015c0",
+      "bytes": 28400
+    },
+    {
+      "id": "ambrose-letter-51",
+      "file": "texts/ambrose-letter-51.html",
+      "format": "wdb-html",
+      "author": "Ambrose of Milan",
+      "work": "Letter 51, to the Emperor Theodosius, after the massacre at Thessalonica",
+      "sections": "the whole letter, with notes",
+      "translator": "H. de Romestin",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. It has the italic summary (\"Addressed to the Emperor Theodosius after the massacre at Thessalonica...\") and numbered sections of the Nicene and Post-Nicene Fathers selection (see ambrose-letter-40). Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 10 (1896)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Ambrose of Milan/Letters/Letter 51.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Ambrose%20of%20Milan/Letters/Letter%2051.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "fc537ad2395fb32eb24406b6ad24bacea21dd015f14d024fc5456e64aaef596b",
+      "bytes": 15251
+    },
+    {
+      "id": "theodoret-church-history-5",
+      "file": "texts/theodoret-church-history-5.html",
+      "format": "wdb-html",
+      "author": "Theodoret of Cyrus",
+      "work": "Ecclesiastical History",
+      "sections": "Book 5, with the translator's notes",
+      "translator": "Blomfield Jackson",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its chapter headings and the translator's notes (\"which I have followed\") are those of the Nicene and Post-Nicene Fathers text. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, Second Series, vol. 3 (1892)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Theodoret of Cyrus/The Ecclesiastical History of Theodoret/Book 5.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Theodoret%20of%20Cyrus/The%20Ecclesiastical%20History%20of%20Theodoret/Book%205.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "92b0796875a65b933caabc8aafb4eaedfd3ee3eb24751b322832bbd82f9f7ea6",
+      "bytes": 154026,
+      "holds": [
+        "the massacre at Thessalonica and Ambrose's refusal of Theodosius (5.17-5.18)"
+      ]
+    },
+    {
+      "id": "augustine-city-of-god-5",
+      "file": "texts/augustine-city-of-god-5.html",
+      "format": "wdb-html",
+      "author": "Augustine of Hippo",
+      "work": "The City of God",
+      "sections": "Book 5",
+      "translator": "Marcus Dods",
+      "translatorNamedInFile": false,
+      "identification": "The file names no translator. Its book \"Argument\" (\"Augustin first discusses the doctrine of fate...\") and chapter headings are those of the Dods translation as printed in the Nicene and Post-Nicene Fathers. Not checked against a scan of the printed volume: no scan library (CCEL, the Internet Archive, HathiTrust) could be reached from the sandbox.",
+      "edition": "Nicene and Post-Nicene Fathers, First Series, vol. 2 (1887)",
+      "publicDomain": "Printed in the Nicene and Post-Nicene Fathers (New York, 1886-1900). Published before 1931, so in the public domain in the United States; the source repository also states that every work in it is in the public domain.",
+      "origin": {
+        "repository": "https://github.com/HistoricalChristianFaith/Writings-Database",
+        "commit": "328918aa7054fbcb2a8068e96b326a94a97345a2",
+        "path": "Augustine of Hippo/The City of God/Book 5.html",
+        "url": "https://raw.githubusercontent.com/HistoricalChristianFaith/Writings-Database/328918aa7054fbcb2a8068e96b326a94a97345a2/Augustine%20of%20Hippo/The%20City%20of%20God/Book%205.html",
+        "fetched": "2026-10-27"
+      },
+      "sha256": "896cc23cdef9a3baab717a4d89a1fe77a452ed270ce6e0bc2e0e5f7b0c6ab562",
+      "bytes": 121932,
+      "holds": [
+        "Theodosius's public penance after Thessalonica (5.26)"
+      ]
+    }
+  ]
+}

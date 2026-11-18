@@ -1,0 +1,87 @@
+{
+ "slug": "why-trust-the-bible",
+ "lens": "Fact and integrity audit of /home/user/livewell-land/client/public/essays/why-trust-the-bible.json (published 2026-10-28) against its claims ledger /home/user/livewell-land/docs/work/essays/ledgers/why-trust-the-bible.md, the BSB chapter files in client/public/bible/ch/, the 2011 ESV copy in the session scratchpad (lguenth/mdbible, commit fd66568), and the integrity rules in /home/user/Livewell-/docs/work/essays/BRIEF.md. Read-only. 9 of 30 web searches run on 2026-10-28 (search-engine summaries only, no page opened). The published text differs from docs/work/essays/why-trust-the-bible.md only by dropping the Who Decided link sentence.",
+ "findings": [
+  {
+   "where": "Do We Have What They Wrote?, third paragraph: \"Most of those thousands, though, are medieval, and the earliest centuries, when the text was most open to change, are the ones we see least clearly. Ehrman presses that point, and he's right to.\"",
+   "problem": "(a) and (f). The attribution of this argument to Ehrman, a living person, has no ledger line. It is supported: this run's searches saw the CCW 2006 review quoting Misquoting Jesus p. 5 (\"What we have are copies of these writings, made years later—in most cases, many years later\"), a BiblicalTraining.org lesson quoting his \"copies of the copies of the copies of the originals\" line, and the Reformation21 review summarizing his argument that the copyists of the first three centuries were not professionals. The attribution is fair, but it rests on nothing in the ledger.",
+   "fix": "Essay text stands. Add a ledger line under Do We Have What They Wrote?: \"Ehrman presses that the earliest centuries are the ones we see least clearly. Verified. Search (2026-10-28 final read): CCW review (2006) quotes Misquoting Jesus p. 5, 'What we have are copies of these writings, made years later—in most cases, many years later' (verbatim, em-dash in the source); BiblicalTraining.org quotes his 'copies of the copies of the copies of the originals' line; Reformation21's review summarizes his argument that the scribes of the first three centuries were not professional copyists.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Do We Have What They Wrote?, third paragraph: \"Most of those thousands, though, are medieval\"",
+   "problem": "(a) A checkable proportion with no ledger line. It is true: this run's search saw Daniel Wallace's 2013 CSNTM tally (128 papyri, 322 majuscules, 2,926 minuscules, 2,462 lectionaries, 5,838 in all) and a Logos overview dating minuscules from AD 835 on, majuscules to the fourth to eighth centuries and lectionaries mostly to the eighth to sixteenth. Minuscules and lectionaries alone are over 90 percent of the total.",
+   "fix": "Essay text stands. Add a ledger line: \"Most of the Greek manuscripts are medieval. Verified. Search (2026-10-28 final read): Wallace/CSNTM 2013, 2,926 minuscules and 2,462 lectionaries of 5,838; Logos, minuscules from AD 835 on, lectionaries mostly eighth to sixteenth century.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening section, fifth paragraph: \"No original manuscript of any book of the Bible survives. Every copy we have was made by hand from earlier copies, by scribes who got tired and made mistakes. Some of them changed words on purpose.\"",
+   "problem": "(a) No ledger line for the opening factual claim. It is uncontested (no autograph of any biblical book survives), and Ehrman's own p. 5 sentence quoted in the CCW review says the same for the New Testament; the intentional-change sentence is covered by the Orthodox Corruption line.",
+   "fix": "Essay text stands. Add a ledger line: \"No original manuscript of any biblical book survives; every copy is a hand copy. Uncontested; Misquoting Jesus p. 5 as quoted in the CCW review (2006): 'we don't actually have the original writings of the New Testament.' Intentional changes: see the Orthodox Corruption line.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Did It Happen?, after the Luke 1:1-4 block quotation: \"He also dates his story the way ancient historians did, by naming who ruled.\"",
+   "problem": "(a) A claim about ancient historiographical practice with no ledger line. It is true: this run's search saw Thucydides 2.2.1 (Perseids/Loeb, Crawley) dating the war's start by the priestess Chrysis at Argos, the ephor Aenesias at Sparta and the archon Pythodorus at Athens.",
+   "fix": "Essay text stands. Add a ledger line: \"Ancient historians dated events by naming who held office. Verified. Search (2026-10-28 final read): Thucydides 2.2.1 dates the start of the war by Chrysis, priestess at Argos in her forty-eighth year, Aenesias, ephor at Sparta, and Pythodorus, archon at Athens.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Do We Have What They Wrote?, Comma Johanneum: \"Most modern translations, made by scholars who confess the Trinity, have taken it out again.\"",
+   "problem": "(c) The ledger verifies the translators' confession only for the ESV and NIV committees (\"verified for the two largest\"), but the appositive extends it to most modern translations as a class. The point the sentence needs is narrower: translations made by Trinitarian scholars removed it too.",
+   "fix": "Most modern translations have taken it out again, including those made by scholars who confess the Trinity.",
+   "severity": "consider"
+  },
+  {
+   "where": "Did It Happen?: \"John the Baptist began preaching in the fifteenth year of Tiberius, when Pontius Pilate governed Judea and Annas and Caiaphas held the high priesthood (Luke 3:1–2).\"",
+   "problem": "(e) The reference covers the dating clauses but not the preaching. Luke 3:2 says the word of God came to John; the preaching is in 3:3 (ESV \"proclaiming a baptism of repentance\"; BSB 3:3 \"preaching a baptism of repentance\").",
+   "fix": "Change the reference to (Luke 3:1–3). Update the ledger line to \"Luke 3:1-3\".",
+   "severity": "consider"
+  },
+  {
+   "where": "Did It Happen?: \"Writing to the Corinthians in the mid-50s, Paul passes on a summary he says he himself received. Christ died for our sins, was buried, was raised on the third day, and appeared to Peter and then to the Twelve.\"",
+   "problem": "(e) A close paraphrase of Scripture with no reference beside it, while the next two quotations carry theirs. Not quoted, so not a verbatim breach; the ledger already confirms 1 Corinthians 15:3-5 (ESV copy and BSB agree; the text has Cephas, which the paraphrase renders as Peter).",
+   "fix": "Christ died for our sins, was buried, was raised on the third day, and appeared to Peter and then to the Twelve (1 Corinthians 15:3–5).",
+   "severity": "consider"
+  },
+  {
+   "where": "Closing Texts: *\"These are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name.\"* (John 20:31)",
+   "problem": "(d)/(e) The ESV verse begins \"but these are written\"; the essay drops \"but\" and capitalizes \"These\" inside quotation marks. The ledger records the change, so there is no ledger mismatch, but BRIEF.md requires Scripture verbatim. Every other word matches the ESV copy.",
+   "fix": "*\"But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name.\"* (John 20:31)",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening, second paragraph: \"Ehrman built a long and careful argument that Mark didn't mean what he seemed to say.\"",
+   "problem": "(c) The ledger line matched this paraphrase to Ehrman's own account as a \"long and complicated argument\" (search 2026-10-27). \"Careful\" credits the argument with a soundness Ehrman's telling does not give it; his account presents it as strained, which is why Story's one line undid it.",
+   "fix": "Ehrman built a long and complicated argument that Mark didn't mean what he seemed to say.",
+   "severity": "consider"
+  },
+  {
+   "where": "What Trust Looks Like: \"The two on the road to Emmaus had known the Scriptures all their lives.\"",
+   "problem": "(c) The ledger keeps this as an inference that \"the text supports but does not state\" (Luke 24:18-19, 24:25; Acts 15:21), but the essay states it as fact.",
+   "fix": "The two on the road to Emmaus would have heard the Scriptures read all their lives.",
+   "severity": "consider"
+  },
+  {
+   "where": "Ledger, Who Chose the Books?: \"Link to /writing/who-decided-what-books-are-in-the-bible. Link list: present.\"",
+   "problem": "(c) The ledger is stale. The published JSON dropped the sentence \"The longer story is in [Who Decided What Books Are in the Bible?](/writing/who-decided-what-books-are-in-the-bible)\" that the .md still carries; that slug is not on client/src/lib/shelf.json, so the cut is right. It is not a factual claim.",
+   "fix": "No essay change. Replace the ledger line with: \"Link to /writing/who-decided-what-books-are-in-the-bible removed at landing (2026-10-28): the slug is not on shelf.json.\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Every Scripture quotation matches the 2011 ESV copy word for word (script comparison): Mark 2:26, Luke 1:1-4, 2 Peter 3:16 (both phrases), 1 Corinthians 15:6 and 15:17, Matthew 28:1 \"the other Mary\", Mark 12:26 \"in the passage about\", John 10:35, John 5:39-40, Luke 24:27, Luke 24:32, Isaiah 40:8, and John 20:31 from \"these\" on. The ledger's second and third runs matched the current ESV by search, John 5:40 included. Lowercased opening words inside the essay's own sentences (2 Peter 3:16, Luke 24:27) are fine.",
+  "Every Scripture reference matches its verse's sense in the BSB: Mark 2:26; 1 Samuel 21:1, 6 (Ahimelech) and 22:20 (Abiathar his son); 2 Peter 3:15-16; Acts 18:12 (Gallio); Matthew 28:1-2, Mark 16:1, 5, 8, Luke 24:4, 10, John 20:1, 11-12 (Easter accounts); Mark 12:26; John 10:34-35 with Psalm 82:6; John 5:39-40; Luke 24:13, 27, 32; Isaiah 40:8; John 20:31; Psalm 58:6 and 3:7 (teeth); BSB 1 John 5:7 omits the Comma.",
+  "KJV 1 John 5:7 quotation: ledger matched word for word (KJV copy and search).",
+  "The four Ehrman quotations the ledger restored (corrections 23, 24, 26, 32) appear in the essay exactly as the ledger records them: Story's \"Maybe Mark just made a mistake.\" (this run's search again saw Monergism quoting Misquoting Jesus pp. 8-9 with Story's \"one-line comment at the end\"); \"Once I made that admission,\" ... \"the floodgates opened.\"; \"there are more variations among our manuscripts than there are words in the New Testament.\" (pp. 89-90, lowercased inside the sentence); and \"essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament.\"",
+  "Chicago Statement Article XIII quotation matches the ledger's Creeds.json text; 1978 date correct.",
+  "Ehrman biography: Princeton Theological Seminary, Moody, Wheaton, Misquoting Jesus 2005 surprise bestseller, The Orthodox Corruption of Scripture, agnostic, Metzger his doctoral teacher; all have verified ledger lines. \"Told that story more than once\" matches correction 25.",
+  "Living person (f): every sentence about Ehrman is fair. \"He has said plainly that what finally ended his faith was suffering\" is confirmed by this run's search of the NPR excerpt of God's Problem (\"Ultimately, it was the reason I lost my faith\"). \"Many of his readers ... closed his book convinced the Bible couldn't be trusted\" has more support than the ledger records: this run's search saw Ehrman's own 2020 blog post \"Misquoting Misquoting Jesus,\" in which he says he is amazed and dismayed at how widely the book is misunderstood (worth adding to that ledger line). \"Ehrman agrees with more of this than his readers sometimes realize\" rests on the verified Metzger quotation.",
+  "Numbers and dates with verified ledger lines that match the essay: more than five thousand Greek manuscripts; thousands more in Latin, Syriac and Coptic; P52 credit-card size, Manchester, second century with later dates argued; larger papyri late second and third centuries; Codex Sinaiticus fourth century; Erasmus 1516 and 1522; Leningrad Codex 1008; Qumran from 1947, hundreds of scrolls; Isaiah scroll second century BC, about a thousand years older; Nicaea 325; Irenaeus around 180; Athanasius 367, twenty-seven books; Pilate stone 1961, Caesarea, theater, prefect of Judea; Delphi, Gallio AD 51 to 52; Tel Dan 1993, ninth-century BC Aramaic, \"House of David\" (quotation marks restored, correction 31); 1 Corinthians mid-50s; Tatian second half of the second century, Assyrian; Theodoret fifth century, bishop of Cyrrhus, more than two hundred copies; Augustine around 400; Mark the shortest Gospel.",
+  "Tacitus: \"a single medieval manuscript, copied many centuries after Tacitus wrote\" matches corrections 15, 17 and 22. Restoration (g) of \"copied in the ninth century\" / \"some seven hundred years\" is NOT proposed: this run's search saw the same split (Woodman's Cambridge sigla, saec. ix; historyofinformation.com reporting the Laurenziana's 2019 estimate of 1000-1100).",
+  "Restorations (g): none outstanding. The ledger's \"Original wording, restored\" section lists four quotations, all already in the essay; the five generalized figures (corrections 27 to 31) are already restored. The writer's unverified items (Metzger's \"99.5 percent\", Homer counts, \"more than 700 languages\", Bauckham, Luke's titles, a first-person unbelief story) stay out, correctly.",
+  "No ledger line is still marked unverified, not checked, open or resting on memory where the essay states the claim (b); the ledger's open-items list is empty, and the judgment lines (\"best-known\", \"knew these passages well\") are marked as characterizations.",
+  "Linked titles match their targets: Did the Resurrection Actually Happen? (/writing/did-the-resurrection-happen), Why Didn't the Bible Just Ban Slavery? (/writing/why-didnt-the-bible-ban-slavery), The Bible Assumes You Will Be Wrong (live on shelf.json), plus /help and /study/bible.",
+  "No biography of James, no contested second-order position asserted (inerrancy is reported as what many evangelical churches confess; Mark 2:26 left open); Find Help link present in the Hard Passages section."
+ ]
+}

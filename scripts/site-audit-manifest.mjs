@@ -8,8 +8,8 @@
  * still pending. Units:
  *
  *   route    every concrete (non-parameterised) route in client/src/App.tsx
- *   tool     every tool registered in client/src/pages/ToolsHub.tsx
- *   nav      every header/footer link in client/src/lib/siteNav.ts
+ *   tool     every tool registered in client/src/lib/toolsList.ts
+ *   nav      every door, room and page in client/src/lib/siteCatalog.ts
  *   library  the church-history JSON files + the history essay index
  *   reading  the essay reading experience, as one unit
  *
@@ -38,14 +38,14 @@ function routes() {
 }
 
 function tools() {
-  const src = readFileSync(join(ROOT, "client", "src", "pages", "ToolsHub.tsx"), "utf8");
+  const src = readFileSync(join(ROOT, "client", "src", "lib", "toolsList.ts"), "utf8");
   return [...new Set([...src.matchAll(/href:\s*"(\/tools\/[^"]+)"/g)].map((m) => m[1]))].sort();
 }
 
 function navLinks() {
-  const src = readFileSync(join(ROOT, "client", "src", "lib", "siteNav.ts"), "utf8");
+  const src = readFileSync(join(ROOT, "client", "src", "lib", "siteCatalog.ts"), "utf8");
   const out = [];
-  for (const m of src.matchAll(/\{\s*label:\s*"([^"]+)",\s*href:\s*"([^"]+)"/g)) out.push({ label: m[1], href: m[2] });
+  for (const m of src.matchAll(/name: "([^"]+)", line: "[^"]*", href: "([^"]+)"/g)) out.push({ label: m[1], href: m[2] });
   return out;
 }
 

@@ -1,0 +1,45 @@
+{
+ "piece": "the-persecution-we-invented",
+ "human_score": 9,
+ "voice_score": 8,
+ "verdict": "Second read agrees with the first that this essay is close to the mature register and reads as a person thinking. Literal search is clean: no Forbidden Language word or phrase, no em-dash, one exclamation point and it is inside Luke 6:22, no connective filler, no hedge, no title, years, book count or denomination, and the only biography is \"mine among them.\" The right is named as the main teller of the story and the left's version is named without false symmetry. It is not a crisis-facing piece. Three of the ten findings survive, all sentence-level and none touching a fact, quotation, number or reference in the ledger. The other seven were dropped because the line was doing real work at a hinge, or the replacement cut a sourced detail or the essay's own key term. Nothing new was found on the second pass.",
+ "keep": [
+  {
+   "quote": "The New Testament's concern lies elsewhere: what we call the loss, and how we speak of the people who caused it.",
+   "tell": "Colon-then-reveal sentence with a literary phrase where a spoken one belongs",
+   "why": "The paragraph has just talked plainly (\"Paul didn't.\" \"they had every right to.\") and then closes on \"concern lies elsewhere:\" with a staged two-part reveal. It is the one sentence in the section that sounds written for an essay and not said across a table. The replacement keeps both halves of the claim word for word.",
+   "replacement": "What the New Testament cares about is what we call the loss, and how we speak of the people who caused it.",
+   "severity": "should"
+  },
+  {
+   "quote": "Something has still been taken from American Christians, and the grief over it is real.",
+   "tell": "Stock reassurance formula (\"X is real\") repeated across the piece",
+   "why": "A literal count finds \"real\" six times: \"seeing something real,\" \"Those are real losses,\" \"the real thing,\" \"the grief over it is real,\" \"is a real loss,\" \"real persecution.\" The others carry the argument (the privilege hinge needs its \"real loss\"). This one is the validating phrase readers now hear as machine-made, and it sits two short paragraphs above \"The loss of a privilege is a real loss.\" Changing this one breaks the pattern and leaves the hinge alone.",
+   "replacement": "Something has still been taken from American Christians, and they are right to grieve it.",
+   "severity": "should"
+  },
+  {
+   "quote": "The sociologist Christian Smith saw another side of it in 1998.",
+   "tell": "Scholar-introduction formula opening two paragraphs in a row",
+   "why": "The paragraph before opens \"The sociologists Bradley Campbell and Jason Manning describe,\" and the one before that has \"The historian Tom Holland begins\"; \"The legal scholars Lee Epstein and Eric Posner\" comes earlier. Each source earns its place, so this is not a parade, but two consecutive paragraphs starting on the same title-then-name frame is audible. Varying this one entry is enough. Name, field and year are unchanged.",
+   "replacement": "Christian Smith, a sociologist, saw another side of it in 1998.",
+   "severity": "should"
+  }
+ ],
+ "dropped": [
+  "\"It was an arrangement, and it has ended.\" Dropped. It does echo the sentence before, but \"it was an arrangement\" is the claim the next two paragraphs rest on (a privilege, not a right), and cutting it would end the paragraph on a cross-reference to another essay. The ledger shows it was already trimmed once from \"What matters here is that it was an arrangement.\" One short verdict here is his voice.",
+  "\"Jesus was never anxious about losing a crowd.\" Dropped. It is the topic sentence that tells the reader why John 6 is coming, and cutting it leaves \"His\" with no antecedent and an abrupt jump from the paragraph on deference. The closing line makes a different claim (what He promised, not what He feared). One framed paragraph in 3,500 words is a choice, not a tic.",
+  "\"In a good many American churches, both men's stories would be filed under the same word: persecution.\" Dropped (consider). \"The word\" is the essay's subject and comes back all the way through (\"What does the word do in us?\", \"Why do we reach for the word so quickly?\", \"borrow their word\"). The replacement removes it from the sentence that introduces it.",
+  "\"The size of the cost, then, can't be what decides whether a loss is persecution.\" Dropped (consider). A medial \"then\" used twice in 3,500 words is ordinary spoken reasoning, not a tell.",
+  "\"The Witnesses were attacked as disloyal, by neighbors who questioned their patriotism, in a country that thought of itself as Christian, while war spread across Europe.\" Dropped (consider). Each phrase is a separate fact with its own ledger line (the Legion \"questioned their patriotism\"), and the piling up is the point: it sets up the reader to recognize the accusers. The replacement would cut a sourced detail.",
+  "\"That is why the prisoners in Chengdu and the grieving villages of Nigeria are not strangers to us. They are His body, and so are we.\" Dropped (consider). This is the landing of the Acts 9 paragraph, and \"belong to us\" is a weaker and slightly possessive substitute. Not worth touching the ending for.",
+  "\"and the officials on the other side of the case would be in our prayers by name\" Dropped (consider). The echo of \"by name\" is deliberate: we pray for the prisoners by name and for the officials by name. The parallel is the argument of Matthew 5:44 applied."
+ ],
+ "added": [],
+ "for_james": [
+  "The one thing no editor can add is a moment of your own. The paragraph beginning \"We like the feeling of being besieged more than we admit\" is where one plain sentence from memory would make this unmistakably yours (a time you used the word persecution, or wanted to). Only if it happened; nothing has been invented and the essay stands without it.",
+  "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on this piece, and VOICE-JAMES-BELL.md was followed because it governs. The profile asks for 1,500 to 2,500 words, paragraphs of two to four sentences, a Greek or Hebrew word, a personal story, a screenshot line, three Monday-morning questions with one practice, and no exclamation marks at all. This essay is about 3,500 words in developed paragraphs, has no Greek and no question block, and keeps the exclamation point that belongs to Luke 6:22 in the ESV. Nothing was rewritten toward the profile.",
+  "\"Why do we reach for the word so quickly? Part of the answer is that it works.\" was left alone. The next paragraph goes to Rome and Holland before it shows how the word works, so the reader waits a paragraph for the payoff. If that bothers you when you read it aloud, the fix is yours to choose.",
+  "Two content notes from the ledger are still yours to decide and no edit here touches them: the Cochran book is described more mildly than several outlets describe it, and Pew published a newer figure (58 percent, October 2025) than the 2024 figure the essay uses accurately."
+ ]
+}

@@ -3,7 +3,7 @@ import fs from "fs";
 const titleMap = {
   soteriology: "How Are We Saved?", christology: "Who Is Jesus?", "last-things": "How Does It End?",
   church: "What Is the Church?", "holy-spirit": "The Holy Spirit and His Gifts", "god-and-trinity": "Who Is God? The Trinity",
-  sin: "Sin and the Fall", anthropology: "What Is a Human Being?", "covenant-frameworks": "How the Whole Story Fits",
+  sin: "Sin and the Fall", anthropology: "What Is a Human Being?", "covenant-frameworks": "How Does the Whole Bible Fit Together?",
   scripture: "What Is the Bible, and Can We Trust It?", creation: "Creation and Providence",
 };
 const noteMap = {

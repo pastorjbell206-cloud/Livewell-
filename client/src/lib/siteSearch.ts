@@ -7,9 +7,11 @@
  * focused (loadPassageParser), never on first paint.
  *
  * Everything else is ranked over the static libraries, Find Help, the plans,
- * the tools, the rewritten essays, and public/search-index.json (wisdom
- * topics, Honest Answers, family devotions and the catechism, Christ and the
- * Nation; scripts/build-search-index.mjs). A plain question loses its small
+ * the tools, the rewritten essays, and public/search-index.json (the main
+ * pages by their plain names, wisdom topics, Honest Answers, family devotions
+ * and the catechism, the Study Bible's introductions and guides, the doctrine
+ * studies, the people and councils of church history, Christ and the Nation;
+ * scripts/build-search-index.mjs). A plain question loses its small
  * words first ("how to talk to my kids about God" is talk, kids, God), and
  * every word left must appear somewhere (title, summary, facet, or the
  * everyday phrasings a care page lists in askedAs), so "worry journal" finds
@@ -110,7 +112,8 @@ function forms(w: string): readonly string[] {
   return FAMILY.get(w) ?? (s === w ? [w] : [w, s]);
 }
 
-const PRIORITY: Record<string, number> = { "Find Help": 3, Tools: 2, "Honest Answers": 2, "Eight-Week Plans": 1 };
+// "Main Pages" are the hubs (scripts/build-search-index.mjs): on a tie a section comes before the entries inside it.
+const PRIORITY: Record<string, number> = { "Main Pages": 4, "Find Help": 3, Tools: 2, "Honest Answers": 2, "Eight-Week Plans": 1 };
 
 export function scoreEntry(item: Searchable, q: string): number {
   const words = searchWords(q);
@@ -126,7 +129,11 @@ export function scoreEntry(item: Searchable, q: string): number {
   const whole = (w: string) => forms(w).some((f) => title.includes(` ${f} `) || title.includes(` ${f}s `));
   if (!words.every((w) => has(all, w))) return 0;
   let score = 10;
-  if (title.includes(` ${phrase}`)) score += 100;
+  // A title that is exactly what was typed ("church history", "the study
+  // bible") is the page the reader asked for by name: it leads everything
+  // that merely contains the phrase.
+  if (title === ` ${phrase} ` || title === ` the ${phrase} `) score += 160;
+  else if (title.includes(` ${phrase}`)) score += 100;
   else if (words.every((w) => has(title, w))) score += 50;
   if (keywords.includes(` ${phrase}`)) score += 40;
   else if (words.every((w) => has(keywords, w))) score += 20;

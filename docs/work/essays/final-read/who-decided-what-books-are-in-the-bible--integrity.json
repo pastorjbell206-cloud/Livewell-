@@ -1,0 +1,97 @@
+{
+  "slug": "who-decided-what-books-are-in-the-bible",
+  "lens": "integrity",
+  "findings": [
+    {
+      "where": "The Case for Lost Christianities, paragraph 1, sentence 2: \"Bart Ehrman, a New Testament scholar at the University of North Carolina at Chapel Hill, made it in *Lost Christianities*.\"",
+      "problem": "(f) A present-tense claim about a living person that is no longer true. Ehrman retired from UNC in 2025. Searched this run: his own biography at bartehrman.com calls him \"James A. Gray Distinguished Professor Emeritus of Religious Studies at the University of North Carolina at Chapel Hill, where he taught from 1988 until his retirement in 2025\"; The Assembly and Indy Week covered his last lecture at the end of 2025. Ledger line 125 relied on Wikipedia and an older ehrmanblog About page, both written before he retired.",
+      "fix": "Replace with: \"Bart Ehrman, a New Testament scholar who taught for many years at the University of North Carolina at Chapel Hill, made it in his 2003 book *Lost Christianities*.\" (This also applies the restoration below.) Update ledger line 125: emeritus since 2025, per bartehrman.com biography.",
+      "severity": "must"
+    },
+    {
+      "where": "The Case for Lost Christianities, paragraph 3: \"That was more than a hundred years before an emperor took any interest, and no central office imposed them.\"",
+      "problem": "(c) The ledger and the essay do not match. Ledger line 134 measures only from about 200 to Constantine in 312. But an emperor did take an interest in these books before that: Diocletian's first edict of February 303 ordered Christian Scriptures surrendered and burned (searched this run: OrthodoxWiki \"Diocletian\", History Today, CCEL Schaff). \"Any interest\" is therefore false as written. It is also only just over a hundred years from 200.",
+      "fix": "Replace with: \"That was more than a hundred years before Constantine took any interest, and no central office imposed them.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Opening, paragraph 3: \"He wasn't telling the churches what to read. He was reminding them of what they had been reading for generations.\"",
+      "problem": "(a) and (c) An overclaim with no ledger line. Ledger lines 15 and 16 cover only Athanasius's own words, \"handed down\" and \"by way of remembrance\". Yet the letter does rule. Section 6 says \"Let no man add to these\". Section 7 puts the Shepherd and the Teaching outside the canon, though the essay itself later says the Shepherd \"has been publicly read in churches\". The essay's own later sections show James, Jude, 2 Peter, 2 and 3 John and Revelation still disputed into the fourth century, including at Alexandria (Dionysius). Searched this run: Brakke, \"Canon Formation and Social Conflict in Fourth-Century Egypt\" (HTR 87, 1994), as summarized, reads the letter against rival Egyptian teachers who practiced open-canon reading. \"For generations\" states Athanasius's framing as fact.",
+      "fix": "Replace both sentences with: \"He presented the list as a reminder of what the churches had received, not as a new ruling.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Scriptures Jesus Read, paragraph 2: \"Most scholars think they are the books of the Hebrew Bible, counted in a different way.\"",
+      "problem": "(c) \"Most\" is not supported. The sources in ledger line 43 reconcile Josephus's 22 with the Hebrew 24 (Ruth with Judges, Lamentations with Jeremiah), but none states a majority. Searched this run: Wikipedia (\"Development of the Old Testament canon\") and bibleinterp.arizona.edu (\"We cannot know\") present the pairing as a common explanation with real uncertainty about Josephus's list. The essay already dropped \"most scholars\" on the Laodicea letter for the same lack of support.",
+      "fix": "Replace with: \"Many scholars think they are the books of the Hebrew Bible, counted in a different way.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Books That Were Argued Over, last paragraph: \"That phrase \"in our times\" is the main reason most scholars date the list to the late second century, probably in or near Rome. A minority, most fully Geoffrey Hahneman in 1992, argue that it comes from the fourth century in the East.\"",
+      "problem": "(c) \"Most scholars\" and \"A minority\" rest on ledger line 115. That line cites the 1885 ANF note and C. E. Hill's review, which treats the early date as the position Hahneman attacks; neither gives a count. Searched this run: Wikipedia (\"Muratorian fragment\") calls the late-second-century date traditional and says the fourth-century date is not the consensus. A University of Pennsylvania colloquium notice describes the field as roughly half on each side. Schnabel's JETS 57 (2014) survey was found, but only its abstract was visible.",
+      "fix": "Replace with: \"That phrase \"in our times\" is the main reason the list has traditionally been dated to the late second century, probably in or near Rome. Others, most fully Geoffrey Hahneman in 1992, argue that it comes from the fourth century in the East.\" Keep \"The question is still open.\"",
+      "severity": "should"
+    },
+    {
+      "where": "The Case for Lost Christianities, paragraph 1: \"made it in *Lost Christianities*.\"",
+      "problem": "(g) Restoration. The writer's text gave the year. The voice pass dropped it for rhythm, not accuracy (ledger line 126 and the closing-run Restorations note). The closing run confirmed 2003 from bartehrman.com and the Library of Congress record. This run's search also confirmed it: the WorldCat record (OCLC 52335003) and the SDSU catalog give New York, Oxford University Press, 2003. Placing the year before the title avoids the \"Title (YEAR)\" pattern BRIEF.md warns against.",
+      "fix": "Replace with: \"made it in his 2003 book *Lost Christianities*.\" (Already folded into the must fix above. Apply once.)",
+      "severity": "should"
+    },
+    {
+      "where": "How the Churches Judged, last paragraph: \"When they gathered their rulings into one code in 419, they sent the list to Boniface, the bishop of Rome, and to other bishops \"that they may confirm this canon, ...\" The list they sent was the New Testament their churches had already been reading.\"",
+      "problem": "(c) The essay goes slightly beyond the source. African Code Canon 24 (library, carth.txt, read this run) says \"Let this be sent to our brother and fellow bishop, Boniface, and to the other bishops of those parts\". That is a directive. The canon itself does not record that the list was sent.",
+      "fix": "Replace with: \"When they gathered their rulings into one code in 419, they asked that the list be sent to Boniface, the bishop of Rome, and to other bishops \"that they may confirm this canon, for these are the things which we have received from our fathers to be read in church.\" The list was the New Testament their churches had already been reading.\" Leave the quotation unchanged.",
+      "severity": "consider"
+    },
+    {
+      "where": "The Books Catholics and Orthodox Keep, last paragraph: \"Athanasius and Jerome drew the line in one place, Augustine and the African councils in another.\"",
+      "problem": "(a) and (c) No ledger line, and the sentence is imprecise. Jerome's Helmeted Preface (library, jer-npnf-ot.txt, read this run) counts Esther among his twenty-two (\"the ninth is Esther\"). Athanasius left Esther out and counted Baruch and the letter with Jeremiah (ledger lines 17 and 19). The essay itself says Athanasius's Old Testament \"matches neither the Protestant nor the Catholic one.\" What the two men share is that they kept the deuterocanonical books outside the canon.",
+      "fix": "Replace with: \"Athanasius and Jerome kept these books outside the canon, Augustine and the African councils inside it.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening, paragraph 4: \"placing it with Wisdom, Sirach, Judith, Tobit, the Didache and the Shepherd of Hermas\"",
+      "problem": "(c) Inconsistent hedging. Athanasius wrote \"that which is called the Teaching of the Apostles\" (Letter 39 section 7, read this run). Later the essay says Eusebius's \"Teachings of the Apostles\" is \"probably\" the Didache. The same identification is stated flatly here and hedged there. Ledger line 17 rests on Wikipedia, as summarized. This run's search found no source settling the identification for Athanasius.",
+      "fix": "Replace with: \"placing it with Wisdom, Sirach, Judith, Tobit, the Teaching of the Apostles and the Shepherd of Hermas\". The later Eusebius sentence already explains \"probably the little church manual now called the Didache\".",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening, paragraph 4, last sentence: \"The real history is slower and untidier than most people have heard, and a good deal less sinister.\"",
+      "problem": "(c) The voice pass changed \"Most people who think they know\" to \"Many people\" because no count supports \"most\" (ledger, Voice pass). The same unsupported \"most people\" survives here.",
+      "fix": "Replace with: \"The real history is slower and untidier than many people have heard, and a good deal less sinister.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "The Case for Lost Christianities, paragraph 2: \"and some came back by accident, like the Gospel of Thomas, found in a buried collection near Nag Hammadi in Egypt in 1945.\"",
+      "problem": "(c) The sentence is slightly incomplete as history. Searched this run (Wikipedia \"Papyrus Oxyrhynchus 654\", University of Toronto Greek-fragments page, biblicaltraining.org): Greek fragments of Thomas were found at Oxyrhynchus in 1897 and 1903 (one source says 1904). They were identified as Thomas only after the complete Coptic text turned up at Nag Hammadi in 1945. Ledger line 130 is correct for the complete text.",
+      "fix": "Replace with: \"and some came back by accident, like the full text of the Gospel of Thomas, found in a buried collection near Nag Hammadi in Egypt in 1945.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "The Case for Lost Christianities, paragraph 1: \"On this reading, the rule of faith is the winners' theology under a reverent name, so of course the books that passed agreed with it.\"",
+      "problem": "(a) and (f) No ledger line covers this inference from a living scholar's argument. Searched this run: a review of *Lost Christianities* (acampbell.uk), as summarized, says that in Ehrman's account the leading proto-orthodox criterion was whether a text's theology was correct, with authenticity and antiquity inferred from that. No source seen ties the phrase \"rule of faith\" to Ehrman himself. \"On this reading\" marks the sentence as the essay's inference, so it is fair as written.",
+      "fix": "No change to the essay. Add a ledger line recording the acampbell.uk review summary as support for the inference.",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Published JSON body is sentence-for-sentence identical to docs/work/essays/who-decided-what-books-are-in-the-bible.md. The only changes since the first verified draft (commit 2c6aa655) are closing-run corrections 4 to 7 in the ledger (Podcasts, Protestant Old Testament, around the year 100, In the 150s).",
+    "Quotations (d): reran the verifier's qv.py against the published JSON body and the library extracts. All 54 quoted strings were found: 53 exact, and one (\"the third book of the Gospel\") differs only in the source's sentence-initial capital, which is acceptable mid-sentence.",
+    "Read directly this run: Jerome's Judith preface (Jacobs) matches \"since the Nicene Council is considered to have counted this book among the number of sacred Scriptures\"; Tertullian Prescription 37 reads \"Indeed, Marcion, by what right do you hew my wood?\", of which the essay quotes a verbatim subset; the Muratorian \"very recently in our times\" has no comma in the ANF text; Canon 24's quotation matches; Athanasius Letter 39 sections 2, 3, 6 and 7 match.",
+    "Scripture (e): Luke 24:44, Romans 3:2, Hebrews 11:35, 1 Thessalonians 5:27, Colossians 4:16, 1 Corinthians 15:3-4, 1 Thessalonians 2:13 (twice) and John 10:27 are in ESV form, each with its reference, and qv.py matched them to the ESV copy. Checked the sense of every reference against the BSB shards in client/public/bible/ch/; all match, including Luke 24:27, 36-37 and 45 for \"evening of the resurrection\", \"frightened\" and \"opened\".",
+    "No exclamation point anywhere. The ledger's mechanical scan (no em-dash, forbidden words or stamps) was not rerun this time; nothing in the published text differs from what it scanned.",
+    "Opening facts (ledger lines 1-19) all have ledger lines: Easter letters, nearly forty years, five exiles (EB1911), 367, twenty-two OT books, the 27-book list, \"earliest list ... exactly\" (Brakke 2010 abstract), Nicaea attendance, Esther outside the canon.",
+    "Nicaea section (lines 20-35): Da Vinci Code 2003 and Teabing's claim, a few hundred bishops, Arius, Easter, twenty canons with none on Scripture, Jerome early fifth century, Judith outside the Protestant OT, Life of Constantine 4.36 details, about three centuries.",
+    "Deuterocanon section (lines 45-61): Septuagint, Augustine, Hippo 393 and Carthage 397, Trent 8 April 1546, Orthodox additions, Jerome's Prologue paraphrase, Luther 1534, KJV 1611, Baptist confession 1677/1689 quote. This run's search also confirmed that the great codices hold these books in differing combinations: Sinaiticus has Tobit, Judith, 1 and 4 Maccabees, Wisdom and Sirach; Vaticanus has Wisdom, Sirach, Esther, Judith, Tobit and Baruch but no Maccabees; Alexandrinus adds 3 and 4 Maccabees.",
+    "Worship and Marcion sections (lines 62-85): Justin's 150s and his teaching in Rome, Irenaeus after 177, the four zones and winds, Gospel of Truth, Marcion around 140 and 144, ten letters, Harnack about a century ago, Tertullian around 200.",
+    "Argued-over books (lines 86-116): Eusebius 3.25 groups, Hebrews and Revelation disputes, Cyril around 350, Dionysius of Corinth around 170, 1 Clement, Sinaiticus with Barnabas and Hermas, Muratori, 1740, seventh or eighth century, the fragment's contents, Hahneman 1992.",
+    "Judging and Lost Christianities (lines 117-137): Augustine's catholic-churches test, rule of faith at baptism, Serapion and Rhossus, Hippo with Augustine present, Bauer 1934, Nag Hammadi 1945, Eusebius on 2 Peter, Gospels first century and Thomas second, Paul's letters from the 50s.",
+    "Closing (lines 138-144): Article VI quotation; Vatican I 1870 given as paraphrase without quotation marks; the soft \"many American churches\" observation carries no figure.",
+    "Links: all four are allowed. /writing/the-early-church-under-rome covers Lyon 177; /writing/how-the-bible-gets-translated-by is live and the link text matches its shelf title; /writing/why-trust-the-bible exists with the title \"Can You Trust the Bible?\" and discusses Ehrman's work on manuscript copying (*Misquoting Jesus*); /study/bible is allowed by BRIEF.md.",
+    "Living persons (f): Dan Brown's novel is described accurately, matching the Teabing line quoted in ledger 21. Hahneman's view is fairly stated. Ehrman's argument is summarized fairly and conceded where it is strong. The one problem is his UNC title, listed as a finding.",
+    "The second-order Apocrypha question is stated from both sides and left open, and 2 Peter's authorship is left open, as James decided on 2026-10-28.",
+    "Restoration candidates not proposed, because no source a run saw confirms the original wording: \"In what survives of his letter\", \"Around 400\", \"Most scholars think that letter from Laodicea is lost\", \"Documentaries\", \"Judith isn't even in Protestant Bibles\", \"Writing in Rome in the 90s\", \"Around 150, in Rome\" and \"Most people\".",
+    "Web searches used this run: 14 of 30. Ehrman retirement (2), Diocletian edict, Ehrman's canon criteria (2), Josephus's twenty-two, the codices' contents, Lost Christianities 2003, Didache identification in Athanasius (no result on the question), Muratorian dating, Oxyrhynchus Thomas, Brakke 1994. No website was opened directly; results are the search tool's summaries."
+  ]
+}

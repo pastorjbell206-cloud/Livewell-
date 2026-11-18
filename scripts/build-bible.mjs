@@ -21,6 +21,9 @@
  *
  * Then run scripts/build-bible-text.mjs: it writes the text-only shards
  * (bible/text/) the verse sheet reads, and CI fails until it has.
+ * Then scripts/build-bible-search.mjs: it writes the files the Bible word
+ * search reads (bible/search/), and CI fails until it has. (This script
+ * clears client/public/bible first, so both must follow it.)
  *
  * Word tuple in a chapter file: [original, transliteration, gloss, strong, grammar, editions?]
  * (editions only on Greek words that differ between the major editions).

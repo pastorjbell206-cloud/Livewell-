@@ -9,7 +9,7 @@ export const AUTHOR_NAME = "James Bell";
 // register — every page that carries a bio renders this constant, so the
 // same man appears on every surface.
 export const AUTHOR_BIO =
-  "James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.";
+  "James Bell is a pastor and a writer. He came to faith from atheism, and he writes for the reader whose faith has outgrown the answers they were given.";
 
 // Substack — the newsletter channel (CLAUDE.md §Strategic Reminders).
 // The codebase previously carried three handles (`jamesbell333289`,

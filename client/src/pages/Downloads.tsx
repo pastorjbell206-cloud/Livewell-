@@ -12,21 +12,22 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
-import { FileText } from "lucide-react";
+import { BookMarked, CalendarDays, FileText, House, Layers, Library, LifeBuoy, Map as MapIcon, Milestone, NotebookPen, PenLine, Search, Users, type LucideIcon } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import SectionHead from "@/components/art/SectionHead";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 import { SendButton } from "@/components/TakeItWithYou";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** Section copy for each kind that carries files; wording from the pages that own them. */
 const SHELVES: Record<string, { label: string; blurb: string }> = {
   Booklet: {
     label: "The Hard Issues booklets",
-    blurb: "Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Each as a PDF and an EPUB.",
+    blurb: "Free booklets for elders and church leaders on governing the local church. Each as a PDF and an EPUB.",
   },
   "Study guide": {
     label: "Study guides and curriculum",
@@ -64,6 +65,21 @@ const SHELVES: Record<string, { label: string; blurb: string }> = {
     label: "Reading Scripture in context",
     blurb: "The historical and cultural background a passage assumes you already know. One printable per guide.",
   },
+};
+
+/** An icon for each shelf, by its id. */
+const KIND_ICON: Record<string, LucideIcon> = {
+  booklet: BookMarked,
+  "study-guide": Users,
+  "care-page": LifeBuoy,
+  "care-plan": Milestone,
+  worksheet: PenLine,
+  workbook: NotebookPen,
+  "card-set": Layers,
+  "reading-plan": CalendarDays,
+  family: House,
+  "context-guide": MapIcon,
+  books: Library,
 };
 
 const idFor = (kind: string) => kind.toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -138,69 +154,83 @@ export default function Downloads() {
   const matchCount = visible.reduce((n, s) => n + s.rows.length, 0);
 
   const fileCount = shelves.reduce((n, s) => n + s.rows.reduce((m, r) => m + (r.files?.length ?? 0), 0), 0);
-  const jump = [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])];
+  // Before the list arrives the shelves are named from SHELVES (counts follow),
+  // so the cards hold their place and nothing below them moves.
+  const jump: { id: string; label: string; n: number | null }[] = catalogue
+    ? [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])]
+    : failed
+      ? []
+      : [
+          ...Object.keys(SHELVES)
+            .sort((a, b) => kindRank(a) - kindRank(b))
+            .map((k) => ({ id: idFor(k), label: SHELVES[k].label, n: null })),
+          { id: "books", label: "The books", n: null },
+        ];
 
   return (
     <Layout>
       <SEOMeta
-        title="Free Downloads: Study Guides, Curriculum, and Printable PDFs"
+        title="Free Printable Bible Study Guides and PDFs"
         description="Every printable in one place, free: study guides, Find Help guides and worksheets, plan booklets, Bible reading plans, workbooks, and Scripture cards."
         url="https://www.livewellbyjamesbell.co/downloads"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "14px", color: "var(--mustard)" }}>Downloads</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 56px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Every printable, in one place
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>
-            {fileCount > 0
-              ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
-              : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
-          </p>
-          <label htmlFor="dl-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", margin: "var(--s-4) 0 8px" }}>
-            Find a printable
-          </label>
-          <input
-            id="dl-find"
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Try: grief, marriage, Romans"
-            autoComplete="off"
-            style={{ width: "100%", maxWidth: "560px", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--charcoal-fg)", color: "var(--charcoal)" }}
-          />
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--charcoal-fg-muted)", margin: "12px 0 0", maxWidth: "62ch" }}>
+      <InnerHead path="/downloads" title="Downloads" line="Every printable, in one place" plate="jars">
+        <p className="pg-head__lede">
+          {fileCount > 0
+            ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
+            : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
+        </p>
+      </InnerHead>
+
+      {/* FIRST: find a printable. */}
+      <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="dl-find-title">
+        <div className="home-wrap">
+          <SectionHead dark icon={Search} label="Free, nothing gated" title="What do you want to print?" id="dl-find-title" />
+          <div className="lw-find" role="search">
+            <label htmlFor="dl-find" className="lw-find__label">
+              Find a printable
+            </label>
+            <div className="lw-find__field">
+              <Search size={20} strokeWidth={1.75} aria-hidden="true" />
+              <input id="dl-find" type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Try: grief, marriage, Romans" autoComplete="off" />
+            </div>
+          </div>
+          <p className="lw-find__status">
             Tap a file to open it; your phone's viewer can save or print it. In the US, choose Letter; most other countries use A4.
           </p>
         </div>
       </section>
 
+      {/* The shelves, as cards, before the long lists. */}
       {jump.length > 1 && !words.length && (
-        <nav aria-label="Jump to a section" style={{ background: "var(--bone-warm)", padding: "var(--s-4)", borderBottom: "1px solid var(--border)" }}>
-          <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "10px" }}>
-            {jump.map((j) => (
-              <a
-                key={j.id}
-                href={`#${j.id}`}
-                style={{
-                  fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600,
-                  letterSpacing: "0.08em", textTransform: "uppercase",
-                  color: "var(--ink)", textDecoration: "none",
-                  border: "1px solid var(--border)", borderRadius: "999px",
-                  padding: "8px 16px", background: "var(--card)",
-                }}
-              >
-                {j.label} <span style={{ color: "var(--ink-muted)" }}>{j.n}</span>
-              </a>
-            ))}
+        <nav aria-labelledby="dl-shelves-title" className="home-sec home-sec--warm">
+          <div className="home-wrap">
+            <SectionHead icon={Library} label={catalogue ? `${jump.length} shelves` : "The shelves"} title="Pick a shelf." id="dl-shelves-title" />
+            <ul className="lw-index">
+              {jump.map((j) => {
+                const Icon = KIND_ICON[j.id] ?? FileText;
+                return (
+                  <li key={j.id}>
+                    <a href={`#${j.id}`} className="lw-index__card">
+                      <span className="lw-tile__icon" aria-hidden="true">
+                        <Icon size={22} strokeWidth={1.75} />
+                      </span>
+                      <span className="lw-index__text">
+                        <span className="lw-index__name">{j.label}</span>
+                        <span className="lw-index__meta">{j.n === null ? "\u00a0" : `${j.n} ${j.n === 1 ? "item" : "items"}`}</span>
+                      </span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </nav>
       )}
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
-        <div style={wrap} id="downloads-top">
+      <section className="home-sec">
+        <div className="home-wrap" id="downloads-top">
           {/* Always on the page, so a screen reader hears each new count. */}
           <p role="status" style={{ fontFamily: "var(--U)", fontSize: "15px", color: "var(--ink-muted)", margin: words.length > 0 && catalogue ? "0 0 var(--s-4)" : 0 }}>
             {words.length > 0 && catalogue
@@ -223,9 +253,7 @@ export default function Downloads() {
 
           {visible.map((s) => (
             <div key={s.id} id={s.id} style={{ marginBottom: "var(--s-7)", scrollMarginTop: "80px" }}>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "8px" }}>
-                {s.label}
-              </h2>
+              <SectionHead icon={KIND_ICON[s.id] ?? FileText} label={`${s.rows.length} ${s.rows.length === 1 ? "item" : "items"}`} title={s.label} id={`${s.id}-title`} />
               {s.blurb && (
                 <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
                   {s.blurb}
@@ -288,9 +316,7 @@ export default function Downloads() {
 
           {books.length > 0 && (
             <div id="books" style={{ scrollMarginTop: "80px" }}>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.15, marginBottom: "8px" }}>
-                The books
-              </h2>
+              <SectionHead icon={Library} label={`${books.length} ${books.length === 1 ? "book" : "books"}`} title="The books" id="books-title" />
               <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
                 The books James Bell wrote himself are for purchase, not download.
               </p>

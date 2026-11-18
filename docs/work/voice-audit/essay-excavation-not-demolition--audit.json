@@ -1,0 +1,87 @@
+{
+  "piece": "excavation-not-demolition",
+  "human_score": 8.5,
+  "voice_score": 7.5,
+  "verdict": "Clean on mechanics and close to the mature register: 0 em-dashes, the only exclamation point is inside Mark 9:24, no forbidden word, no rulebook leakage, plain headings, fair to both sides, a real path to help. What a careful reader still hears is small: a stack of 'In [date]' sentence openers, the two-sentence 'not X / it is Y' frame used four times, two epigram closers back to back, and a Luther paragraph hung on a vague echo. The larger gap is voice, not machine-sound: the essay now has no first-person presence beyond one 'mine', so it could be a very good essay by any careful pastor. Only James can close that.",
+  "findings": [
+    {
+      "quote": "In January 2002 the Boston Globe began reporting how the Archdiocese of Boston had moved priests accused of abusing children from parish to parish. In February 2021 an investigation commissioned by the ministry of Ravi Zacharias",
+      "tell": "Every sentence the same shape (three 'In [month year]' openers in a row, counting 'In May 2022' at the head of the next paragraph)",
+      "why": "Three dated openers in sequence, after 'In late July 2019' and 'In 2018' in the first paragraph, read like a compiled timeline rather than a man recalling what happened. Moving one date inside its sentence breaks the drumbeat without touching a fact.",
+      "replacement": "The Boston Globe began reporting in January 2002 how the Archdiocese of Boston had moved priests accused of abusing children from parish to parish. In February 2021 an investigation commissioned by the ministry of Ravi Zacharias",
+      "severity": "should"
+    },
+    {
+      "quote": "That is not a man offering a helpful way of seeing the world. It is a claim about something that happened, and it can be weighed the way other claims about the past are weighed.",
+      "tell": "'It is not X. It is Y.' antithesis used as a habit",
+      "why": "The same two-sentence frame has already carried 'People like that are not usually rebels. They are grieving...' and 'they are not attacking Christianity. They are agreeing with its first commandment.', and returns in 'he didn't invent a faith of his own. He came to the same faith...'. The first-commandment line is the true hinge and should keep the move; here the contrast with a merely helpful faith was already made in the moralistic therapeutic deism section, so the denial is doing no new work.",
+      "replacement": "Paul is making a claim about something that happened, and it can be weighed the way other claims about the past are weighed.",
+      "severity": "should"
+    },
+    {
+      "quote": "A faith rebuilt to agree with you about everything is just another idol.",
+      "tell": "Aphoristic paragraph closer, doubled",
+      "why": "This paragraph ends on an epigram and the very next one ends on a second epigram making the same point ('whether anything in it can still tell you no'). The second is the earned line; two in a row sounds like a search for the quotable sentence. Tying this one back to the false gods already named makes it a step in the argument instead of a slogan.",
+      "replacement": "And a faith rebuilt until it agrees with you about everything has become one more of those gods.",
+      "severity": "should"
+    },
+    {
+      "quote": "More than a thousand years later the whole Western church went through something like it. Martin Luther's Ninety-five Theses of 1517 took aim at a specific thing",
+      "tell": "Vague framing sentence and repeated stamp ('went through something like this' opens the section; 'went through something like it' opens this paragraph)",
+      "why": "The echo is audible, and the claim is loose: the Reformation was not 'something like' one man's years of doubt. The paragraph's real point comes in its last sentence, so the bridge only needs to be plain.",
+      "replacement": "More than a thousand years later Martin Luther did some tearing down of his own. His Ninety-five Theses of 1517 took aim at a specific thing",
+      "severity": "should"
+    },
+    {
+      "quote": "Where does deconstruction usually start? What deserves to come down? And what is underneath when it does?",
+      "tell": "Stacked questions used as an announced outline",
+      "why": "The three questions map one to one onto the next headings, so they read as a table of contents in question form rather than questions he is actually asking. His runs of questions elsewhere (the closing 'Which of our sermons... Which of mine would?') are real ones. The paragraph is whole without them and the headings do the same work.",
+      "replacement": "(Cut the three questions; end the paragraph at \"and many are still somewhere in between.\")",
+      "severity": "consider"
+    },
+    {
+      "quote": "The desert monks of Egypt kept a saying, attributed to Abba Moses, that told a brother to go and sit in his cell, because his cell would teach him everything.",
+      "tell": "Source as decoration (second authority in one paragraph, left unexplained)",
+      "why": "James K. A. Smith has already done the work and the three practices ('sitting in a back row with your arms folded') land it. The monk's saying then arrives with no sentence saying what it has to do with a doubter, so it reads as ornament at the paragraph's end. Either let it say why it's there or end on the back row.",
+      "replacement": "The desert monks of Egypt kept a saying, attributed to Abba Moses, that told a brother to go and sit in his cell, because his cell would teach him everything. Staying put was the lesson.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Jesus healed the boy without waiting for him to finish believing.",
+      "tell": "Ambiguous reference in the line that carries the ending",
+      "why": "Not an AI tell, but 'him' reads first as the boy, and the sentence only works if it is the father. A reader who stumbles here loses the last turn of the essay.",
+      "replacement": "Jesus healed the boy without waiting for the father to finish believing.",
+      "severity": "should"
+    },
+    {
+      "quote": "The setting is narrower than ours, but the shape carries over.",
+      "tell": "Abstract word where a plain one belongs",
+      "why": "'The shape' is essay-speak; he would name the thing that carries over.",
+      "replacement": "The setting is narrower than ours, but the instruction carries over.",
+      "severity": "consider"
+    },
+    {
+      "quote": "and that loneliness is real",
+      "tell": "Stock validating phrase (near therapy-speak)",
+      "why": "'X is real' is the reflex line of every care page. In the one passage written to a person in trouble, the plainest wording is the warmest.",
+      "replacement": "and that is a lonely thing to carry",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening refuses to finish Harris's story for him: 'I don't know how Harris's story ends. Nobody does, and it isn't ours to finish for him.' That is a person talking, and it is fair to a living man.",
+    "Concrete, unpolished details no template produces: 'a verse and a look that meant the conversation was over', 'a way of leaving that sounds like thinking', 'the slow ones', 'sitting in a back row with your arms folded'.",
+    "The self-implication is done, not announced: 'We built it that way.' and 'Which of our sermons would survive the questions our children will eventually ask? Which of mine would?'",
+    "Political criticism uses one instrument on both sides and still refuses false symmetry ('it has run mostly to the right'), then turns the same test on progressive and hard-right rebuilds alike.",
+    "Scripture carries the argument (Jeremiah's six verbs, the field at Anathoth, the prodigal who never reaches the servant line) instead of decorating it; every source named does work (drifters versus deconstructors; the creed of moralistic therapeutic deism).",
+    "The crisis section is plain and complete: 988, Find Help, report abuse to civil authorities, 'set the theology aside for tonight and reach for a person'.",
+    "The ending leaves weight: 'For a while the two look the same.' and 'Bring him what you have, the belief and the unbelief together.' No recap."
+  ],
+  "for_james": [
+    "This essay now carries no personal presence at all (the 'I came to faith as an adult, from atheism' clause was cut as a credential). On this subject, more than any other, a reader would expect you in the room. One real sentence from you, placed at 'I don't think the questions are the danger', would do more than any edit: what an objection you once held as an atheist looked like from the inside, or what it was to take the faith apart from the outside in. Only you can supply it; nothing was invented.",
+    "'Pastors can tell you about people who found serious objections to the faith in the same season they found a reason to want out of it.' reads generic. If you have watched this, saying so in the first person and without identifying anyone ('I have sat with...') would be stronger. Left as is because it is your memory to give.",
+    "Your saved Substack profile and VOICE-JAMES-BELL.md disagree on several points; the essay follows VOICE-JAMES-BELL.md and I did not rewrite toward the profile. The profile asks for 1,500 to 2,500 words (this is about 3,700), paragraphs of 2 to 4 sentences, a Greek or Hebrew word doing work, three 'Monday morning' questions with one concrete practice, a screenshot line, and your own story in every piece. The mature register asks for developed paragraphs, one earned verdict, and no application box. If you want any of the profile's items back (a short list of questions at the end, for instance), say so.",
+    "The Jeremiah section ends on the bare promise of 32:15 because an earlier reader cut the kicker. It works, but a skeptic may miss why buying a field in a besieged city matters. One plain sentence from you would fix it if you want it; I did not add one.",
+    "The Nicaea link is still withheld until that essay is public (ledger, final read change 13)."
+  ]
+}

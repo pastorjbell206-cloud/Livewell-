@@ -16,13 +16,15 @@ import { Link } from "wouter";
 import { BookmarkCheck, Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import { HubGroup, HubStyles } from "@/components/HubGroup";
 import { AddToHomeScreen } from "@/components/AddToHomeScreen";
 import { useLibrary } from "@/lib/library";
 import { collectProgress } from "@/lib/myProgress";
+import { toolName } from "@/lib/toolsList";
 import { trpc } from "@/lib/trpc";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 const FORMAT_LABELS: Record<string, string> = {
@@ -43,22 +45,6 @@ const CARE_PLANS = [
   { label: "The new believer", href: "/plans/new-believer" },
   { label: "One undivided life", href: "/plans/whole-life" },
 ];
-
-/** A button-sized link on the charcoal hero. */
-const heroAction = {
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "8px",
-  minHeight: "44px",
-  padding: "10px 16px",
-  border: "1px solid var(--charcoal-line)",
-  borderRadius: "var(--radius-sm)",
-  color: "var(--charcoal-fg)",
-  fontFamily: "var(--U)",
-  fontSize: "14px",
-  fontWeight: 600,
-  textDecoration: "none",
-} as const;
 
 /** A plan by name, big enough to tap. */
 const planPill = {
@@ -93,42 +79,31 @@ export default function Resources() {
   return (
     <Layout>
       <SEOMeta
-        title="Resources — Downloads, Tools, and Help"
-        description="Free downloads and PDFs, the Hard Issues booklets, the tools, help for a hard season with eight-week care plans, and resources for families."
+        title="Free Christian Resources: Downloads, Tools, Help"
+        description="Free downloads and PDFs, booklets for church leaders, the tools, help for a hard season with eight-week plans, and resources for families."
         url="https://www.livewellbyjamesbell.co/resources"
       />
       <HubStyles />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter} var(--s-5)` }}>
-        <div style={wrap}>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(38px, 5.4vw, 64px)",
-              fontWeight: 400,
-              lineHeight: 1.04,
-              letterSpacing: "-0.02em",
-              color: "var(--charcoal-fg)",
-              margin: "0 0 18px",
-            }}
-          >
-            Resources
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "60ch", margin: 0 }}>
-            Downloads, tools, help for a hard season, and things for the household. Everything here is free.
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "var(--s-4)" }}>
-            <Link href="/my-library" style={heroAction}>
-              <BookmarkCheck size={16} aria-hidden /> My Library
-              {mine && <span style={{ fontWeight: 400, color: "var(--charcoal-fg-muted)" }}>{mine}</span>}
+      <PageHead
+        door="Tools"
+        doorHref="/tools"
+        title="Resources"
+        line="Downloads, tools, help for a hard season, and things for home. All free."
+        plate="compass"
+        action={
+          <>
+            <Link href="/my-library" className="btn btn--quiet res-action">
+              <BookmarkCheck size={18} strokeWidth={1.75} aria-hidden /> My Library
+              {mine && <span className="res-action__mine">{mine}</span>}
             </Link>
-            <Link href="/search" style={heroAction}>
-              <Search size={16} aria-hidden /> Search everything
+            <Link href="/search" className="btn btn--quiet res-action">
+              <Search size={18} strokeWidth={1.75} aria-hidden /> Search everything
             </Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
+      <style>{`.res-action{gap:8px}.res-action__mine{font-weight:400;color:var(--ink-muted)}`}</style>
 
       <section style={{ background: "var(--bone)", padding: `var(--s-3) ${gutter} var(--s-6)` }}>
         <div style={wrap}>
@@ -168,38 +143,38 @@ export default function Resources() {
             title="Tools"
             links={[
               {
-                label: "Rule of Life Builder",
+                label: toolName("rule-of-life"),
                 href: "/tools/rule-of-life",
                 note: "Choose practices across prayer, Scripture, rest, community, and the body, and settle on a pattern you can keep on an ordinary week.",
               },
               {
-                label: "Scripture Memory",
+                label: toolName("scripture-memory"),
                 href: "/tools/scripture-memory",
-                note: "Forty key verses, practiced the way memory actually works.",
+                note: "Forty key verses, practiced the way memory works.",
               },
               {
-                label: "Test the Case",
+                label: toolName("test-the-case"),
                 href: "/tools/test-the-case",
-                note: "The case for the resurrection, one move at a time, with room to push back with the objection you actually hold.",
+                note: "The case for the resurrection, one move at a time, with room to push back with your own objection.",
               },
               {
-                label: "Which Lens Has You?",
+                label: toolName("which-lens"),
                 href: "/tools/which-lens",
-                note: "Thirteen honest choices that show which lens is doing your reading of Scripture before you do.",
+                note: "Thirteen choices that show which lens is reading Scripture for you.",
               },
               {
-                label: "The self-checks",
+                label: "Check yourself",
                 href: "/assessments",
-                note: "Honest questions about faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you.",
+                note: "Questions about faith, the whole of life, marriage, emotional and financial health, and belief. None of them grades you.",
               },
               {
                 label: "Every tool",
                 href: "/tools",
-                note: "The full set, from the Bible study companion and the glossary to the assessments and planners.",
+                note: "Every tool on LiveWell, in four groups, each listed once.",
               },
             ]}
           >
-            Built to be used on a Tuesday, not admired on a Sunday.
+            Things to use during the week.
           </HubGroup>
 
           <HubGroup
@@ -214,11 +189,11 @@ export default function Resources() {
               {
                 label: "Every eight-week plan",
                 href: "/plans",
-                note: "One practice, one reading, one tool, and one honest question each week, for grief, doubt, money, anger, caregiving, a marriage under strain, and more. Each prints as a booklet.",
+                note: "One practice, one reading, one tool, and one question each week, for grief, doubt, money, anger, caregiving, a marriage under strain, and more. Each prints as a booklet.",
               },
             ]}
           >
-            Eight-week plans walk with you through one season at a time. A few of them:
+            Each eight-week plan takes one hard season at a time. A few of them:
             <ul style={{ listStyle: "none", margin: "12px 0 0", padding: 0, display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {CARE_PLANS.map((p) => (
                 <li key={p.href}>
@@ -235,7 +210,7 @@ export default function Resources() {
             title="For families"
             links={[
               {
-                label: "The family room",
+                label: "For families",
                 href: "/family",
                 note: "Devotions to do with your kids, the family catechism, reading plans, and tools for parenting and marriage.",
               },
@@ -250,13 +225,13 @@ export default function Resources() {
                 note: "Seventy-six questions and answers, for adults and for children, one at a time.",
               },
               {
-                label: "Family Devotion Builder",
+                label: toolName("family-devotions"),
                 href: "/tools/family-devotions",
                 note: "A fifteen-minute devotion for tonight, built for your kids' ages.",
               },
             ]}
           >
-            For the table where most faith is actually handed on.
+            For your own table.
           </HubGroup>
 
           <div style={{ marginTop: "var(--s-4)", maxWidth: "640px" }}>

@@ -8,7 +8,9 @@
  * rendered: essay bodies stored as HTML (the post-Christian series) go
  * through lib/htmlToMarkdown.ts first.
  * Typography comes from the surrounding scope (.article-body, .book-prose,
- * .prose), never from this component.
+ * .prose), never from this component. Typewriter quotation marks are set as
+ * curly ones on the way to the screen (lib/smartQuotes.ts); the source text is
+ * never changed, and code is left as typed.
  *
  * `verseRefs` turns the Scripture references in the text into VerseRef
  * ("sheet" opens the verse over the page; "link" goes to the Study Bible).
@@ -21,6 +23,7 @@ import { lazy, Suspense } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { VerseRefMode } from "@/components/VerseRef";
+import { remarkSmartQuotes } from "@/lib/smartQuotes";
 
 const MarkdownVerseRefs = lazy(() => import("@/components/MarkdownVerseRefs"));
 
@@ -36,7 +39,7 @@ export function Markdown({
   verseRefs?: VerseRefMode;
 }) {
   const plain = (
-    <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+    <ReactMarkdown remarkPlugins={[remarkGfm, remarkSmartQuotes]} components={components}>
       {children}
     </ReactMarkdown>
   );

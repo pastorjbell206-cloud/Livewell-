@@ -53,11 +53,17 @@ jobs:
           node scripts/build-family-index.mjs --check
           node scripts/validate-grow-voice.mjs
           node scripts/validate-verse-guides.mjs
+          node scripts/build-topics-index.mjs --check
+          node scripts/validate-topics.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs
           pnpm exec tsx scripts/build-search-index.mjs --check
+          pnpm exec tsx scripts/build-passage-index.mjs --check
           node scripts/validate-bible.mjs
           node scripts/build-bible-text.mjs --check
+          node scripts/build-bible-search.mjs --check
+          node scripts/build-story-plan.mjs --check
           node scripts/validate-bible-notes.mjs
+          node scripts/verify-sources.mjs
 
       - name: Test
         run: pnpm test
@@ -85,35 +91,41 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # Node 22 so npx can run the pinned Lighthouse 13 (it needs Node 22.19 or later). On Node 20 npx fell back to Lighthouse 12, whose simulation scores the same page differently from the version used on a developer machine.
+          node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # Prerender too, so Lighthouse measures the HTML Vercel actually ships
       # (build:vercel runs prerender; the static home hero lives there).
       - run: pnpm run sitemap && pnpm run build && pnpm run prerender
+      # Serve the build the way Vercel does: vercel.json's redirects, then each
+      # address's own prerendered file, then the app shell. `serve -s` answered
+      # every address with the home page's HTML, so a chapter or an essay was
+      # never measured as itself; that is how a Study Bible chapter sat at 43
+      # for performance, with a layout shift of 0.6, while this job read 100
+      # (docs/work/audit-2026-11/technical.md, T13).
       - name: Serve built site
-        run: npx serve -s dist/public -l 4173 &
-      - name: Lighthouse (home)
-        run: |
-          npx --yes lighthouse http://localhost:4173/ \
-            --chrome-flags="--headless --no-sandbox" \
-            --only-categories=performance,accessibility,best-practices,seo \
-            --output=json --output-path=./lh.json --quiet
-          node -e "const r=require('./lh.json').categories; for (const k in r) console.log(k, Math.round(r[k].score*100))"
-      - name: Lighthouse thresholds (docs/WORLD-CLASS-SITE-PROMPT.md — asserted, not printed)
-        run: |
-          node -e "
-            const r = require('./lh.json').categories;
-            const min = { performance: 90, accessibility: 90, 'best-practices': 95, seo: 95 };
-            let bad = 0;
-            for (const k in min) {
-              const s = Math.round((r[k]?.score ?? 0) * 100);
-              const ok = s >= min[k];
-              console.log((ok ? 'ok  ' : 'FAIL') + ' ' + k.padEnd(15) + s + ' (min ' + min[k] + ')');
-              if (!ok) bad++;
-            }
-            if (bad) { console.error(bad + ' Lighthouse category(ies) below threshold'); process.exit(1); }
-          "
+        run: node scripts/serve-like-vercel.mjs --port 4173 &
+      # Three runs, judged on the median: a single run on a shared runner swings
+      # by more than the thresholds' margin (the same commit has scored 54 and
+      # 91), so one slow machine could turn the job red with no code change.
+      # Each run gets one retry: headless Chrome on the runner sometimes
+      # crashes the tab (LighthouseError: TARGET_CRASHED) before scoring.
+      # scripts/lighthouse-median.mjs holds both rules for every page below.
+      - name: Lighthouse (home, three runs; docs/WORLD-CLASS-SITE-PROMPT.md thresholds, asserted on the median)
+        run: node scripts/lighthouse-median.mjs http://localhost:4173/ home --min performance=90,accessibility=90,best-practices=95,seo=95 --max-cls 0.1
+      # The two page types a reader most often lands on from a search or a
+      # shared link. Each is a lazy chunk behind its prerendered text, so the
+      # first thing asserted is that nothing jumps while it loads (CLS), then
+      # accessibility and SEO. The performance floor sits under the home
+      # page's because Lighthouse's simulated phone counts the page's own
+      # code and data against it; raise it as those pages get lighter.
+      - name: Lighthouse (a Study Bible chapter, three runs)
+        if: always()
+        run: node scripts/lighthouse-median.mjs http://localhost:4173/study/bible/john/3 chapter --min performance=70,accessibility=95,seo=95 --max-cls 0.1
+      - name: Lighthouse (an essay, three runs)
+        if: always()
+        run: node scripts/lighthouse-median.mjs http://localhost:4173/writing/what-post-christian-means essay --min performance=70,accessibility=95,seo=95 --max-cls 0.1
       - name: Axe (home)
         run: |
           # axe exits 1 on real accessibility violations and 2 on environment
@@ -129,13 +141,13 @@ jobs:
           # rendered in time. It exercises the shared Layout, nav, footer, and a
           # hero h1 — the design system's a11y. Full-route a11y is covered by
           # axe/Lighthouse against live Vercel previews, per docs/ARCHITECTURE.
-          # On "/" React mounts up to 300 ms after the bundle runs, once the
-          # static hero's paint is recorded (client/src/lib/static-hero.ts), so
+          # On "/" React mounts once the static hero's paint is recorded, up
+          # to 2.5 s after the bundle runs (client/src/lib/static-hero.ts), so
           # "load" can come first; audited then, the static shell (no <main>)
           # fails landmark-one-main and region. --load-delay waits for the app.
           sleep 3
           set +e
-          npx --yes @axe-core/cli http://localhost:4173/ --load-delay 1000 --exit
+          npx --yes @axe-core/cli http://localhost:4173/ --load-delay 3000 --exit
           code=$?
           if [ "$code" = "2" ]; then
             echo "::warning::axe skipped — Chrome/ChromeDriver version mismatch (environment, not a content failure)"

@@ -1,0 +1,39 @@
+{
+  "piece": "the-children-rome-threw-away",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: this is a clean essay in the mature register. Literal search finds no em-dash, no exclamation point outside Ezekiel 16:6, no forbidden word except the proper term 'foster care', no connective filler, no hedge, no title, years, book count or denomination. Criticism lands on both political sides and on Protestants as well as Catholics, and the crisis section carries 988, Find Help and the not-advice line. Two of six findings survive, both one-line changes. Four were dropped because the original was plain rather than machine-made or the replacement changed a claim. Nothing new was found on the second pass. The voice score stays at 8 only because the piece has no first-person memory in it, which only James can supply.",
+  "keep": [
+    {
+      "quote": "This essay won't settle that argument. It is after the care for mothers and children that both sides of it are tempted to leave undone.",
+      "tell": "Essay voice where a person should be; the prose naming its own scope",
+      "why": "The essay becomes the grammatical subject twice ('This essay won't', 'It is after'), two paragraphs after he has said 'I don't know how to read these histories'. He disappears at the one point a reader most wants to know who is declining to rule on the law, and 'It is after the care' is hard to say aloud. The replacement still leaves the question open and states no position.",
+      "replacement": "I won't settle that argument here. What I'm after is the care for mothers and children that both sides of it are tempted to leave undone.",
+      "severity": "should"
+    },
+    {
+      "quote": "Americans are deeply divided over what the law should say, and Christians are divided too.",
+      "tell": "Vague intensifier in a stock phrase",
+      "why": "'Deeply divided' is newsroom boilerplate and the only stock intensifier in the essay; the second half of the same sentence already says 'divided' plainly. Cutting one word loses nothing and no fact changes.",
+      "replacement": "Americans are divided over what the law should say, and Christians are divided too.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"That's why the Christian difference is worth studying.\" Dropped: plain signposting is one of his named habits, and the proposed replacement ('hard to explain away') adds an apologetic claim the essay doesn't make. The next sentence does the real work either way.",
+    "\"What can be said with confidence is narrower than the sermon illustration and still remarkable.\" Dropped: the impersonal form is ordinary careful speech after four paragraphs of disputed numbers, and no reader would hear a machine in it. 'What we can say' is harmless if James prefers it, but I would not stake the essay on it.",
+    "\"you are not a monster, and you are not beyond the reach of God. Grief over what happened is not a sign that God is finished with you. Often it is where he begins.\" Dropped: the negations each answer a specific thing the reader fears, the first echoes 'Hilarion isn't a monster' on purpose, and the short turn is the one earned line in the section. Swapping 'is not a sign that' for 'doesn't mean' changes nothing a reader would feel; leave the most pastoral paragraph alone.",
+    "\"This essay can't give medical or counseling advice, and it isn't meant to take the place of the people who can.\" Dropped: the same 'This essay can't ...' wording closes the crisis sections of at least two other shelf essays, so it is a house line, not a slip. Changing it here alone would make this essay the odd one. Raised in for_james instead."
+  ],
+  "added": [],
+  "for_james": [
+    "The essay has no memory of yours in it. It quotes 'Father of the fatherless' (Psalm 68:5) twice and ends on Psalm 27:10, and you were raised without a father. Whether one plain sentence of your own belongs there is yours to decide and to write; nothing was invented. That is what separates an 8 from a 10 on voice here.",
+    "The congregational paragraph (the pregnant teenager and her youth leader, foster families, the baby shower) is general. A real instance you are free to tell without exposing anyone would do more than any edit.",
+    "'This essay can't give medical or counseling advice' is worded nearly the same way in three crisis-facing essays. If you would rather say it in the first person ('I can't give medical or counseling advice here'), change it across the shelf in one pass, not in this essay alone.",
+    "'Jesus' warning covers that kind of harm' applies Matthew 18:6 to shaming an unmarried mother. That is an interpretive step you should be comfortable owning; the wording was left alone.",
+    "The Harris, Engels and Stark paragraph is the one stretch that reads like a literature review. Every claim is ledger-checked, so no cut is proposed; if you want the section shorter, the Engels sentence is the candidate.",
+    "'Foster care' and 'foster parents' appear five times. 'Foster' is on the Forbidden Language list as a verb; here it is the ordinary name of the thing, so it was not flagged.",
+    "One disagreement with the saved Substack profile, noted once: it asks for 2-to-4-sentence paragraphs, a 2,500-word ceiling, a Greek or Hebrew word, a screenshot line and a 'Monday Morning' block of three questions and one practice. This essay uses developed paragraphs, runs longer, and ends in a short stack of plain lines. VOICE-JAMES-BELL.md governs and prefers that, so nothing was rewritten toward the profile.",
+    "The ledger still lists two items open (the writer's first wording of the Hilarion quotation and the cut 'sister' clause). Neither is in the published text, and neither kept edit touches them."
+  ]
+}

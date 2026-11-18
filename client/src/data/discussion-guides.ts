@@ -89,7 +89,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-anabaptist-option": {
     slug: "the-anabaptist-option",
-    articleTitle: "The Anabaptist Option",
+    articleTitle: "Who Were the Anabaptists, and Why Do They Still Matter?",
     personalReflection: [
       "The Anabaptists insisted that faith must be chosen, not inherited. If you were stripped of every assumption you inherited about Christianity, what would you choose to keep — and what would you release?",
       "Michael Sattler drafted the Schleitheim Confession and was executed three months later. What convictions do you hold that you would be willing to suffer for? What does the gap between your answer and your daily life reveal?",
@@ -227,7 +227,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-death-of-christendom": {
     slug: "the-death-of-christendom",
-    articleTitle: "The Death of Christendom",
+    articleTitle: "What Happens When a Country Stops Being Christian?",
     personalReflection: [
       "Christendom fused faith with cultural power for sixteen centuries. Where do you still assume that Christianity should be the cultural default — and what would change if you released that assumption?",
       "The article suggests the end of Christendom may be closer to the faith Jesus described than Christendom ever was. Does that possibility feel liberating or threatening to you? Why?",
@@ -465,7 +465,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-rise-of-the-nones": {
     slug: "the-rise-of-the-nones",
-    articleTitle: "The Rise of the Nones",
+    articleTitle: "Why Are People Leaving the Church?",
     personalReflection: [
       "The article says most 'nones' are not atheists — many believe in God, many pray. They have rejected the institution, not the divine. What does this distinction demand of you?",
       "Ryan Burge says many nones are 'your neighbors who believe in God, pray occasionally, and simply don't see the point of going to church.' If someone in your life said this to you, how would you respond — honestly, not defensively?",
@@ -488,7 +488,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "exvangelical-when-leaving-isnt-losing-faith": {
     slug: "exvangelical-when-leaving-isnt-losing-faith",
-    articleTitle: "Exvangelical: When Leaving Isn't Losing Faith",
+    articleTitle: "Leaving Evangelicalism Without Leaving Jesus",
     personalReflection: [
       "The article says many exvangelicals remain Christians — they have left evangelicalism, not Christianity. Have you ever confused your tradition with the faith itself?",
       "Leaving evangelicalism is described as losing 'friends, family relationships, community, certainty, and a coherent narrative about who you are.' Have you ever experienced or witnessed this kind of loss? How was it handled?",
@@ -791,7 +791,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-historical-jesus": {
     slug: "the-historical-jesus",
-    articleTitle: "What Happened to the Historical Jesus",
+    articleTitle: "Was Jesus Real? What Historians Actually Know",
     personalReflection: [
       "Schweitzer demonstrated that each generation's 'historical Jesus' looked suspiciously like a mirror of its own values. What version of Jesus do you carry — and how much of it is Jesus, and how much is you?",
       "The facts that virtually all historians agree on — baptism, Galilean ministry, parables, association with the marginalized, crucifixion — paint a picture that challenges both liberal and conservative portraits. Which of these agreed-upon facts most challenges your current understanding?",
@@ -860,7 +860,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-problem-with-certainty": {
     slug: "the-problem-with-certainty",
-    articleTitle: "The Problem with Certainty",
+    articleTitle: "Is It Wrong to Be Unsure?",
     personalReflection: [
       "The article argues that the demand for certainty is a modern distortion, not a biblical virtue. Abraham left without a map, Moses argued with the bush, Thomas demanded to see the wounds. Where have you confused certainty with faith?",
       "Fundamentalism and aggressive atheism both demand certainty — one demands certainty of belief, the other certainty of unbelief. Where do you fall on that spectrum, and is there a more honest position?",
@@ -1048,7 +1048,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "christianity-after-christendom": {
     slug: "christianity-after-christendom",
-    articleTitle: "Christianity After Christendom",
+    articleTitle: "How Do Christians Live in a Country That Has Moved On?",
     personalReflection: [
       "The article describes four marks of post-Christendom faith: voluntariness, costliness, communality, and prophetic witness. Which of these is most developed in your own faith — and which is most absent?",
       "The pre-Constantinian church was costly: certain professions were incompatible with baptism, social networks were severed, careers were abandoned. What has your faith cost you — really?",
@@ -1071,7 +1071,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-spirituality-of-doubt": {
     slug: "the-spirituality-of-doubt",
-    articleTitle: "The Spirituality of Doubt",
+    articleTitle: "Can Doubt Be Part of Faith?",
     personalReflection: [
       "Mother Teresa lived in spiritual darkness for nearly fifty years — praying without feeling, serving without consolation. Does knowing this comfort you or disturb you? What does her perseverance reveal about the nature of faith?",
       "Thomas demanded to see the wounds and Jesus did not rebuke him for it. What would you need to see, feel, or know in order to trust? And is asking for it a failure of faith — or an act of it?",
@@ -1681,7 +1681,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "natural-evil-and-animal-suffering": {
     slug: "natural-evil-and-animal-suffering",
-    articleTitle: "The Suffering God Never Ordered",
+    articleTitle: "Does God Cause Our Suffering?",
     personalReflection: [
       "Free will explains the torturer. It explains nothing about the earthquake or the childhood cancer. Which kind of suffering has actually shaken your faith?",
       "The essay refuses to hand a grieving person a tidy theodicy. Has anyone ever handed you one? What did it do?",
@@ -1826,7 +1826,7 @@ export const DISCUSSION_GUIDES: Record<string, DiscussionGuide> = {
 
   "the-cost-of-following": {
     slug: "the-cost-of-following",
-    articleTitle: "What Following This Actually Costs",
+    articleTitle: "What Does It Cost to Follow Jesus?",
     personalReflection: [
       "Jesus told people to count the cost before building. Have you ever actually done that arithmetic about your own faith, or did you inherit it and never price it?",
       "The essay says what changes is not your weekend but your money, your final say over your own life, and your right to define yourself. Which of those three do you most quietly still hold back?",

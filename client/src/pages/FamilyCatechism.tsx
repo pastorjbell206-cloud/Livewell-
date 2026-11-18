@@ -1,22 +1,28 @@
 /**
  * Family Catechism (/family/catechism) — a New City Catechism-style set of 76
- * questions a family learns and discusses together, one per week. The "this
- * week" pick walks every question in turn and starts again
- * (lib/familyCatechism.ts), so questions 53 to 76 get their weeks too. Each
+ * questions a family learns and discusses together. A family has its own
+ * place, from question 1, kept on this device (audit 2026-11, F4); a household
+ * learning with a church can follow the calendar's weekly pick instead, which
+ * walks every question in turn and starts again (lib/familyCatechism.ts). Each
  * question opens to an adult answer, a child's version, the Scripture, a short
  * commentary, and a prayer. Data: /family-catechism.json.
  */
 import { useEffect, useMemo, useState } from "react";
 import { useProgress } from "@/hooks/useProgress";
 import { Link } from "wouter";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Mic } from "lucide-react";
 import Layout from "@/components/Layout";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import CatechismPractice from "./family/CatechismPractice";
+import "./home/home.css";
 import { SEOMeta } from "@/components/SEOMeta";
 import ScriptureNote from "@/components/ScriptureNote";
 import { VerseRef } from "@/components/VerseRef";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
-import { catechismWeekIndex } from "@/lib/familyCatechism";
+import { SAVE_FAILED } from "@/components/TakeItWithYou";
+import { catechismWeekIndex, familyQuestionIndex, nextPlace, readCatechismPlace, saveCatechismPlace, type CatechismPlace } from "@/lib/familyCatechism";
 
 interface Entry {
   number: number;
@@ -34,17 +40,23 @@ function isEntries(x: unknown): x is Entry[] {
   return Array.isArray(x) && x.every((e) => typeof e?.number === "number" && typeof e?.question === "string" && typeof e?.part === "string");
 }
 
-function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned }: {
+const quiet = { fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", background: "none", border: "1px solid var(--borderdk)", borderRadius: "var(--radius-sm)", minHeight: "44px", padding: "0 16px", cursor: "pointer" } as const;
+
+function QuestionCard({ e, highlight, anchor, open, setOpen, learned, onToggleLearned, onStartHere }: {
   e: Entry;
   highlight?: boolean;
+  /** The list's card carries the question's address (#q14), so a link can open it. */
+  anchor?: boolean;
   open: number | null;
   setOpen: (n: number | null) => void;
   learned?: boolean;
   onToggleLearned?: () => void;
+  /** Make this the family's question (its own place in the catechism). */
+  onStartHere?: () => void;
 }) {
   const isOpen = open === e.number;
   return (
-    <div style={{ background: "var(--card)", border: `1px solid ${highlight ? "var(--mustard)" : "var(--border)"}`, borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
+    <div id={anchor ? `q${e.number}` : undefined} style={{ background: "var(--card)", border: `1px solid ${highlight ? "var(--mustard)" : "var(--border)"}`, borderRadius: "var(--radius-sm)", overflow: "hidden", scrollMarginTop: "90px" }}>
       <button type="button" onClick={() => setOpen(isOpen ? null : e.number)} aria-expanded={isOpen}
         style={{ width: "100%", display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>
         <span style={{ display: "flex", gap: "12px" }}>
@@ -75,10 +87,23 @@ function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned }:
               {learned ? "✓ Learned" : "Mark learned"}
             </button>
           )}
+          {onStartHere && (
+            <button type="button" onClick={onStartHere}
+              style={{ marginTop: "18px", marginLeft: onToggleLearned ? "10px" : 0, fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink-muted)", background: "none", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "8px 14px", cursor: "pointer" }}>
+              Make this our question
+            </button>
+          )}
         </div>
       )}
     </div>
   );
+}
+
+/** The question a #q14 address names, or null. */
+function hashQuestion(): number | null {
+  if (typeof window === "undefined") return null;
+  const m = window.location.hash.match(/^#q(\d+)$/);
+  return m ? Number(m[1]) : null;
 }
 
 export default function FamilyCatechism() {
@@ -89,7 +114,8 @@ export default function FamilyCatechism() {
   const [failedAt, setFailedAt] = useState<number | null>(null);
   const [nonce, setNonce] = useState(0);
   const failed = failedAt === nonce;
-  const [open, setOpen] = useState<number | null>(null);
+  // A link to one question (#q14, from "Go deeper" on a Bible chapter) opens it.
+  const [open, setOpen] = useState<number | null>(() => hashQuestion());
   const { isDone, toggle, count, reset, persisted } = useProgress("lw-family-catechism-v1");
 
   useEffect(() => {
@@ -99,6 +125,12 @@ export default function FamilyCatechism() {
       .catch(() => { if (live) setFailedAt(nonce); });
     return () => { live = false; };
   }, [nonce]);
+
+  // Once the questions are on the page, the one the link named is brought into view.
+  useEffect(() => {
+    const n = hashQuestion();
+    if (loaded && n !== null) requestAnimationFrame(() => document.getElementById(`q${n}`)?.scrollIntoView?.({ block: "start" }));
+  }, [loaded]);
 
   const entries = useMemo(() => loaded ?? [], [loaded]);
   const parts = useMemo(() => {
@@ -111,36 +143,97 @@ export default function FamilyCatechism() {
     return order.map((p) => ({ part: p, items: map.get(p)! }));
   }, [entries]);
 
-  const ofTheWeek = entries.length > 0 ? entries[catechismWeekIndex(new Date(), entries.length)] : undefined;
+  // A family's own place (audit 2026-11, F4): question 1 until it moves, kept
+  // on this device. A household learning with a church can follow the
+  // calendar's weekly question instead.
+  const [place, setPlace] = useState<CatechismPlace>(() => readCatechismPlace());
+  const [placeKept, setPlaceKept] = useState(true);
+  const move = (next: CatechismPlace) => {
+    setPlace(next);
+    setPlaceKept(saveCatechismPlace(next));
+  };
+  const calendar = entries.length > 0 ? entries[catechismWeekIndex(new Date(), entries.length)] : undefined;
+  const ours = entries.length > 0 ? entries[familyQuestionIndex(place, entries.length)] : undefined;
+  const own = place.follow === "own";
+  const learnAndGoOn = () => {
+    if (!ours) return;
+    if (!isDone(String(ours.number))) toggle(String(ours.number));
+    move(nextPlace({ ...place, at: ours.number }, entries.length));
+    setOpen(null);
+  };
 
   return (
     <Layout>
       <SEOMeta
-        title="The Family Catechism — 76 Questions to Learn Together"
-        description="A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
+        title="Family Catechism: 76 Questions and Answers"
+        description="Seventy-six short questions and answers that teach the faith. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."
         url="https://www.livewellbyjamesbell.co/family/catechism"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/family" style={{ color: "inherit" }}>Family</Link> · Catechism
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>
-            The Family Catechism
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>
-            Seventy-six questions, taken one a week. A family learns the faith the way it has always been learned, by question and answer, said out loud together until it lives in them. Each one has an answer for the grown-ups and a shorter one for the little ones, a verse, a short word for the parent, and a prayer.
-          </p>
-        </div>
-      </section>
+      <PageHead
+        door="Family"
+        doorHref="/family"
+        title="The Family Catechism"
+        line="Short questions and answers that teach the faith."
+        plate="quill"
+      >
+        <p className="cp-howto">
+          <Link href="/how-tos/fam-how-to-use-a-family-catechism">New to this? How to use a family catechism</Link>
+        </p>
+      </PageHead>
 
-      {/* QUESTION OF THE WEEK */}
-      {ofTheWeek && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
+      {/* SAY IT ALOUD: one question on a card that turns to its answer. */}
+      {entries.length > 0 && ours && (
+        <section className="home-sec home-sec--dark cp-sec" aria-labelledby="cp-title">
+          <div className="home-wrap">
+            <SectionHead dark icon={Mic} label="Say it aloud" title="One question at a time." id="cp-title" />
+            <CatechismPractice entries={entries} startAt={ours.number} />
+          </div>
+        </section>
+      )}
+
+      {/* THE FAMILY'S OWN PLACE, OR THE CALENDAR'S QUESTION */}
+      {ours && (
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }} aria-label={own ? "Your family's place in the catechism" : "This week's question"}>
           <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>This week — Question {ofTheWeek.number}</div>
-            <QuestionCard e={ofTheWeek} highlight open={open} setOpen={setOpen} learned={isDone(String(ofTheWeek.number))} onToggleLearned={() => toggle(String(ofTheWeek.number))} />
+            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
+              {own ? `Your family's place: Question ${ours.number} of ${entries.length}` : `This week: Question ${ours.number}`}
+            </div>
+            <QuestionCard e={ours} highlight open={open} setOpen={setOpen} learned={isDone(String(ours.number))} onToggleLearned={() => toggle(String(ours.number))} />
+            {own ? (
+              <>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "var(--s-3)" }}>
+                  <button type="button" className="pg-action" onClick={learnAndGoOn}>
+                    {ours.number >= entries.length ? "We learned it. Back to question 1" : "We learned it. Next question"}
+                  </button>
+                  {ours.number > 1 && (
+                    <button type="button" style={quiet} onClick={() => move({ ...place, at: ours.number - 1 })}>
+                      Go back one
+                    </button>
+                  )}
+                </div>
+                <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-3) 0 0", maxWidth: "62ch" }} aria-live="polite">
+                  {placeKept ? "This device remembers which question your family is on. Stay on one as long as it takes." : SAVE_FAILED}
+                  {calendar && (
+                    <>
+                      {" "}
+                      If you're learning these with a church or a group, you can{" "}
+                      <button type="button" onClick={() => move({ ...place, follow: "calendar" })} style={{ font: "inherit", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", padding: "10px 0", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "0.2em" }}>
+                        follow the calendar's question instead
+                      </button>
+                      {" "}(this week it's question {calendar.number}).
+                    </>
+                  )}
+                </p>
+              </>
+            ) : (
+              <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-3) 0 0", maxWidth: "62ch" }} aria-live="polite">
+                {placeKept ? "You're following the calendar, one question a week, the same for every household." : SAVE_FAILED}{" "}
+                <button type="button" onClick={() => move({ ...place, follow: "own" })} style={{ font: "inherit", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", padding: "10px 0", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "0.2em" }}>
+                  {place.at > 1 ? `Go back to your own place, question ${place.at}` : "Start at question 1 and go at your own pace"}
+                </button>
+              </p>
+            )}
           </div>
         </section>
       )}
@@ -152,7 +245,7 @@ export default function FamilyCatechism() {
             <LoadFailed what="The catechism" onRetry={() => setNonce((n) => n + 1)} backHref="/family" backLabel="Back to Family" />
           )}
           {!loaded && !failed && (
-            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the catechism…</p>
+            <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the catechism…<span hidden data-lw-loading /></p>
           )}
           {entries.length > 0 && (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px", marginBottom: "var(--s-4)" }}>
@@ -172,7 +265,7 @@ export default function FamilyCatechism() {
             <div key={part} style={{ marginBottom: "var(--s-5)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{part}</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                {items.map((e) => <QuestionCard key={e.number} e={e} open={open} setOpen={setOpen} learned={isDone(String(e.number))} onToggleLearned={() => toggle(String(e.number))} />)}
+                {items.map((e) => <QuestionCard key={e.number} e={e} anchor open={open} setOpen={setOpen} learned={isDone(String(e.number))} onToggleLearned={() => toggle(String(e.number))} onStartHere={own && ours?.number === e.number ? undefined : () => { move({ v: 1, follow: "own", at: e.number }); window.scrollTo({ top: 0 }); }} />)}
               </div>
             </div>
           ))}

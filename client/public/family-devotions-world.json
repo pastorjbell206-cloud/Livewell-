@@ -1,0 +1,82 @@
+{
+  "about": "The world we live in (MASTER-PLAN 5.4): family devotions on what a Christian child now meets. Each devotion has the weekly shape, with questions for younger and older children. A devotion on politics carries politics: true and two sides, read aloud in turn, which scripts/validate-politics.mjs holds to the same word band. While live is false the site shows none of them: no row in the family index, no page, no sitemap entry, no week on the year map, no place in the library. James reads them first. To publish, set live to true and follow the steps at the top of scripts/lib/family-devotion-file.mjs.",
+  "live": false,
+  "devotions": [
+    {
+      "id": "grown-ups-voted-differently",
+      "title": "When the Grown-Ups Voted Differently",
+      "theme": "After the vote",
+      "passage": "Matthew 10:2-4",
+      "passageText": "These are the names of the twelve apostles: first Simon, called Peter, and his brother Andrew; James son of Zebedee, and his brother John; Philip and Bartholomew; Thomas and Matthew the tax collector; James son of Alphaeus, and Thaddaeus; Simon the Zealot, and Judas Iscariot, who betrayed Jesus.",
+      "bigIdea": "People who love Jesus can vote differently and still belong to each other, because they belong to Him first.",
+      "reflection": "Read the list slowly, because two of the names should surprise you. Matthew had been a tax collector. He collected money for the rulers of the land, and many people looked down on tax collectors for it. Simon was called the Zealot, a name for someone on fire with zeal for God. In those days that zeal sometimes meant wanting the Romans gone, though we don't know exactly what Simon believed. Still, it's hard to picture these two agreeing about much at dinner.\n\nJesus called them both. He didn't ask them to settle their arguments first. He asked them to follow Him, and following Him put them side by side.\n\nAfter an election you may find out that some of the grown-ups you love voted one way and some voted another. That can feel like a crack running through the family. It doesn't have to become one.",
+      "politics": true,
+      "sides": [
+        {
+          "label": "If you are glad about how it went",
+          "text": "Be glad without gloating. Someone you love may be sad tonight, and their sadness is real. The people who won can't save anyone; only Jesus can do that. So be gentle with the ones who are hurting, and pray for the winners, because they will need it."
+        },
+        {
+          "label": "If you are sad about how it went",
+          "text": "Be sad without despair. Someone you love may be glad tonight, and that doesn't make them your enemy. The people who won can't take Jesus off His throne. So be gentle with the ones who are happy, and pray for the winners, because God asks us to."
+        }
+      ],
+      "questions": {
+        "younger": [
+          "Matthew and Simon probably didn't agree about a lot of things. Why do you think Jesus wanted both of them?",
+          "Who is someone you love who thinks differently from you about something?",
+          "What could you say to someone in our family who feels sad this week?"
+        ],
+        "older": [
+          "What do you think it was like for Matthew and Simon to eat, walk, and pray together every day?",
+          "What is the difference between disagreeing with someone and looking down on them?",
+          "Is there anyone you have stopped listening to because of how they vote? What would it take to listen again?"
+        ]
+      },
+      "activity": "Write the names of two people your family loves who see politics differently, from each other or from you. Pray for both by name tonight, and this week do one kind thing for one of them: a call, a note, or a visit.",
+      "prayer": "Jesus, You called Matthew and Simon to follow You together. Keep our family together when we disagree. Make us glad without gloating and sad without despair, and help us love the people who voted differently from us. Amen.",
+      "grownups": {
+        "line": "If the election left a strain between you and someone you love, start here.",
+        "href": "/help/politics"
+      }
+    },
+    {
+      "id": "praying-for-leaders",
+      "title": "Praying for Leaders We Did Not Choose",
+      "theme": "After the vote",
+      "passage": "1 Timothy 2:1-4",
+      "passageText": "First of all, then, I urge that petitions, prayers, intercessions, and thanksgiving be offered for everyone— for kings and all those in authority—so that we may lead tranquil and quiet lives in all godliness and dignity. This is good and pleasing in the sight of God our Savior, who wants everyone to be saved and to come to the knowledge of the truth.",
+      "bigIdea": "God asks us to pray for the people in charge, the ones we chose and the ones we didn't, because He wants them to know Him too.",
+      "reflection": "Paul wrote these words to Timothy, whom he had left in the city of Ephesus to care for the church there. In those days the man over everyone was the emperor of Rome. No one in Timothy's church had chosen him. He didn't worship Jesus, and the officials under him could make life hard for Christians. Paul himself had been beaten and jailed by some of them.\n\nEven so, Paul tells the church to pray for kings and everyone in authority, and to do it first of all. He asks for thanksgiving too, which is harder. And he gives the reason: God wants everyone to be saved, and everyone includes the people at the top.\n\nPraying for someone changes the way you talk about them. It's hard to mock someone at breakfast when you prayed for them by name the night before.",
+      "politics": true,
+      "sides": [
+        {
+          "label": "If the people you voted for won",
+          "text": "Thank God, and keep praying for them. Pray that they tell the truth, keep their word, and remember the people who didn't vote for them. Don't ask them to be your savior. They are people, and sometimes they will let you down."
+        },
+        {
+          "label": "If the people you voted for lost",
+          "text": "Pray for the ones who won, by name. Pray for their families, and ask God to give them wisdom when they decide things. You can disagree with a leader and still pray for them. Paul asked the first Christians to pray for an emperor nobody chose."
+        }
+      ],
+      "questions": {
+        "younger": [
+          "Who are some of the people in charge of our town, our state, and our country?",
+          "Is it easier to pray for someone you like or someone you don't? Why?",
+          "What is one good thing we could ask God to do for a leader this week?"
+        ],
+        "older": [
+          "Paul asks for thanksgiving for kings, not only requests. What could you honestly thank God for about a leader you didn't want?",
+          "How might praying for a leader by name change the way you talk about them?",
+          "Paul says God wants everyone to be saved. What would it look like to want that for a leader you disagree with?"
+        ]
+      },
+      "activity": "Write down the names of three people in charge: one in your town, one in your state, and one in the country. Make sure at least one is someone your family didn't vote for. Keep the list where you eat, and pray for one name each night this week.",
+      "prayer": "Father, we pray for the people in charge of our town, our state, and our country, the ones we chose and the ones we didn't. Give them wisdom and honesty, and help them know You. Keep us from hating anyone You love. Amen.",
+      "grownups": {
+        "line": "If it is hard to pray for someone you voted against, start here.",
+        "href": "/help/politics"
+      }
+    }
+  ]
+}

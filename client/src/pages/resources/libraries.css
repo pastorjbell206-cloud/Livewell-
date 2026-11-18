@@ -1,0 +1,71 @@
+/*
+ * Bible background (/resources/context) and the creeds (/resources/creeds).
+ * Built on Home's sections and controls (pages/home/home.css) and the art
+ * kit. Colours are tokens only.
+ */
+.lib-sec{padding-top:var(--s-6);padding-bottom:var(--s-6)}
+.lib-worlds{min-height:420px}
+.lib-worlds .lw-door__f{min-height:1.45em}
+
+.lib-find{display:flex;align-items:center;gap:10px;max-width:460px;padding:0 14px;margin-bottom:var(--s-4);border:1.5px solid var(--ink);background:var(--card);border-radius:var(--radius-sm);color:var(--ink-muted)}
+.lib-find svg{flex:none}
+.lib-find input{flex:1;min-width:0;height:48px;border:0;background:transparent;font-family:var(--U);font-size:16px;color:var(--ink)}
+.lib-find input::placeholder{color:var(--ink-muted);opacity:1}
+.lib-find input:focus-visible{outline-offset:4px}
+.lib-none{font-family:var(--U);font-size:16px;color:var(--ink-muted)}
+
+.lib-group{margin-top:var(--s-5);scroll-margin-top:90px}
+.lib-group:first-of-type{margin-top:0}
+.lib-group__h{display:flex;align-items:center;gap:14px;font-family:var(--F);font-weight:400;font-size:var(--fs-h3,1.75rem);line-height:1.1;color:var(--ink);margin:0 0 var(--s-2)}
+.lib-group__icon{flex:none;display:grid;place-items:center;width:48px;height:48px;border:1.5px solid var(--art-ink);background:var(--art-paper);color:var(--art-ink)}
+.lib-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-5);border-top:1.5px solid var(--ink)}
+.lib-list a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:10px 0;border-bottom:1px solid var(--borderdk);font-family:var(--F);font-size:21px;line-height:1.2;color:var(--ink);text-decoration:none}
+.lib-list a svg{flex:none;color:var(--ink-muted);transition:transform .2s var(--ease)}
+.lib-list a:hover span{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.lib-list a:hover svg{transform:translateX(3px)}
+
+/* The creeds on one line of years. */
+.cr-tone--clay{background:var(--art-clay)}.cr-tone--blue{background:var(--art-blue)}.cr-tone--olive{background:var(--art-olive)}.cr-tone--paper{background:var(--art-paper)}
+.cr-line{min-height:260px}
+.cr-axis{position:relative;height:150px;margin:0 22px;border-bottom:2px solid var(--charcoal-fg)}
+.cr-tick{position:absolute;bottom:-34px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px}
+.cr-tick i{display:block;width:2px;height:10px;background:var(--charcoal-fg)}
+.cr-tick b{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.08em;color:var(--charcoal-fg-muted);white-space:nowrap}
+.cr-mark{position:absolute;bottom:0;width:16px;height:calc(40px + var(--lift,0px));transform:translateX(-50%);border:1.5px solid var(--charcoal-fg);border-bottom:0;transition:opacity .2s var(--ease),transform .2s var(--ease)}
+.cr-mark::after{content:"";position:absolute;left:50%;top:-7px;width:8px;height:8px;transform:translateX(-50%);border-radius:50%;background:var(--charcoal-fg)}
+.cr-mark.is-dim{opacity:.18}
+.cr-mark.is-picked{transform:translateX(-50%) translateY(-8px)}
+.cr-mark.is-picked::after{background:var(--mustard);width:12px;height:12px;top:-10px}
+.cr-groups{display:flex;flex-wrap:wrap;gap:8px;margin-top:52px}
+.cr-dot{display:block;width:12px;height:12px;border:1px solid var(--charcoal-fg-muted)}
+.cr-n{opacity:.7;margin-left:2px}
+.cr-picked{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;min-height:2.6em;margin:var(--s-3) 0 0;font-family:var(--F);font-size:24px;line-height:1.2;color:var(--charcoal-fg)}
+.cr-picked b{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mustard)}
+.cr-picked span{color:var(--charcoal-fg)}
+.cr-picked > span:only-child{font-family:var(--U);font-size:15px;color:var(--charcoal-fg-muted)}
+
+.cr-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-5);border-top:1.5px solid var(--ink)}
+.cr-card{display:grid;grid-template-columns:150px minmax(0,1fr) 18px;gap:14px;align-items:center;min-height:60px;padding:10px 0;border-bottom:1px solid var(--borderdk);color:var(--ink);text-decoration:none}
+.cr-card__date{font-family:var(--U);font-weight:500;font-size:12.5px;letter-spacing:.08em;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+.cr-card__t{font-family:var(--F);font-size:21px;line-height:1.2}
+.cr-card svg{color:var(--ink-muted)}
+.cr-card:hover .cr-card__t,.cr-card.is-picked .cr-card__t{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+
+@media (max-width:900px){
+  .lib-sec{padding-top:var(--s-5);padding-bottom:var(--s-5)}
+  .lib-worlds{min-height:0}
+  .lib-list,.cr-cards{grid-template-columns:minmax(0,1fr)}
+  .lib-list a{font-size:19px;min-height:52px}
+  .cr-axis{margin:0 18px;height:120px}
+  .cr-mark{width:10px;height:calc(28px + var(--lift,0px) * .7)}
+  .cr-tick b{font-size:11px}
+  .cr-tick:nth-child(2),.cr-tick:nth-child(4){display:none}
+  .cr-groups{flex-wrap:nowrap;overflow-x:auto;margin:48px calc(var(--gutter) * -1) 0;padding:0 var(--gutter) 4px}
+  .cr-groups .home-chip{white-space:nowrap}
+  .cr-picked{font-size:20px}
+  .cr-card{grid-template-columns:minmax(0,1fr) 18px;gap:2px 12px}
+  .cr-card__date{grid-column:1}
+  .cr-card__t{grid-column:1;font-size:19px}
+  .cr-card svg{grid-column:2;grid-row:1 / span 2}
+}
+@media (prefers-reduced-motion:reduce){.cr-mark,.lib-list a svg{transition:none}}

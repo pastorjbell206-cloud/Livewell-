@@ -22,10 +22,23 @@
  *     below hands those weeks to it.
  *   - The rotation counts from ROTATION_EPOCH, not from the first week the
  *     map lists, so extending the map never reshuffles it.
+ *   - Each devotion a week names, and each day of each daily set, carries its
+ *     title (FAMILY_TITLES, FAMILY_SET_TITLES), so Home can say tonight's
+ *     devotion by name without fetching the family index.
  *   - A hand override (client/public/family-year-overrides.json) pins one
  *     devotion, from any family-devotions*.json file, to one week the rotation
  *     would serve (never a week a daily set serves). A pinned week does not use
  *     up a rotation slot: the devotion it displaced moves to the next week.
+ *     Before ROTATION_EPOCH, where the rotation counts backward, a pinned week
+ *     keeps its slot instead, so a pin there never moves an earlier week.
+ *     A pin naming a devotion in a strand file that is not live yet
+ *     (./family-devotion-file.mjs) waits: the week keeps the rotation, with a
+ *     note, until the strand goes live and the map is regenerated. From
+ *     ROTATION_EPOCH on, a waiting week already gives up its slot as the pin
+ *     will (it serves the next week's devotion, one repeat while it waits), so
+ *     going live changes that week and no other, before the epoch or after. A pin for a
+ *     week before the map begins has done its work: a note, not a problem, so
+ *     moving FIRST_YEAR on never fails on an old pin.
  *
  * Regenerating with the same inputs writes the same file (CI checks this), and
  * CI fails once fewer than twelve months remain in the map: raise LAST_YEAR
@@ -49,6 +62,7 @@ import {
   thanksgivingUS,
   weekSeason,
 } from "./church-year.mjs";
+import { devotionsIn } from "./family-devotion-file.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const MODULE = "client/src/lib/familyYear.generated.ts";
@@ -108,17 +122,29 @@ export function loadInputs(root = ROOT) {
     readJSON(root, rel).map((d) => ({ id: d?.id, file: rel })),
   );
   const devotionIds = new Set();
+  const hiddenIds = new Set();
+  const titles = {};
   for (const name of fs.readdirSync(path.join(root, "client/public")).sort()) {
     if (!DEVOTION_FILE_RE.test(name)) continue;
-    const list = readJSON(root, `client/public/${name}`);
-    if (Array.isArray(list)) for (const d of list) if (typeof d?.id === "string") devotionIds.add(d.id);
+    // A plain list, or a strand file held back until it is live (U11): a
+    // hidden devotion's title is read too, so the map can name it the day it
+    // goes live.
+    const { live, devotions } = devotionsIn(readJSON(root, `client/public/${name}`));
+    for (const d of devotions) {
+      if (typeof d?.id !== "string") continue;
+      (live ? devotionIds : hiddenIds).add(d.id);
+      if (!(d.id in titles)) titles[d.id] = d.title;
+    }
   }
   const seasonal = readJSON(root, SEASONAL_FILE);
   const sets = Object.fromEntries(
     Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.length : -1]),
   );
+  const setTitles = Object.fromEntries(
+    Object.entries(seasonal).map(([key, list]) => [key, Array.isArray(list) ? list.map((d) => d?.title) : []]),
+  );
   const overrides = fs.existsSync(path.join(root, OVERRIDES_FILE)) ? readJSON(root, OVERRIDES_FILE) : { weeks: [] };
-  return { foundations, devotionIds, sets, overrides };
+  return { foundations, devotionIds, hiddenIds, sets, overrides, titles, setTitles };
 }
 
 /** The ordered rotation: Foundations ids, a repeated id kept at its first place. */
@@ -137,13 +163,19 @@ export function rotationOf(foundations) {
   return { ids, repeated };
 }
 
-/** Problems with the overrides file, and the valid pins by week. */
-export function readOverrides(overrides, devotionIds, from, through) {
+/**
+ * Problems with the overrides file, the valid pins by week, the weeks whose
+ * pin waits for a hidden devotion to go live, and notes (a waiting pin, a pin
+ * before the map begins).
+ */
+export function readOverrides(overrides, devotionIds, from, through, hiddenIds = new Set()) {
   const problems = [];
+  const notes = [];
+  const waiting = new Set();
   const pins = new Map();
   const where = OVERRIDES_FILE;
   if (!overrides || typeof overrides !== "object" || !Array.isArray(overrides.weeks)) {
-    return { problems: [`${where}: expected { "weeks": [ ... ] }`], pins };
+    return { problems: [`${where}: expected { "weeks": [ ... ] }`], pins, waiting, notes };
   }
   overrides.weeks.forEach((o, i) => {
     const at = `${where} weeks[${i}]`;
@@ -151,15 +183,21 @@ export function readOverrides(overrides, devotionIds, from, through) {
     const extra = Object.keys(o).filter((k) => !["week", "devotion", "note"].includes(k));
     if (extra.length) problems.push(`${at}: unknown field(s) ${extra.join(", ")}`);
     if (o.note !== undefined && typeof o.note !== "string") problems.push(`${at}: note must be a string`);
+    const hidden = typeof o.devotion === "string" && hiddenIds.has(o.devotion);
     const known = typeof o.devotion === "string" && devotionIds.has(o.devotion);
-    if (!known) problems.push(`${at}: devotion "${o.devotion}" is not an id in any client/public/family-devotions*.json file`);
+    if (!known && !hidden) problems.push(`${at}: devotion "${o.devotion}" is not an id in any client/public/family-devotions*.json file`);
     if (!isISODate(o.week)) return problems.push(`${at}: week "${o.week}" is not a YYYY-MM-DD date`);
     if (dayOfWeek(o.week) !== 0) return problems.push(`${at}: week ${o.week} is not a Sunday (a week is named by its Sunday)`);
-    if (o.week < from || o.week > through) return problems.push(`${at}: week ${o.week} is outside the map (${from} to ${through})`);
-    if (pins.has(o.week)) return problems.push(`${at}: week ${o.week} is pinned twice`);
+    if (o.week > through) return problems.push(`${at}: week ${o.week} is outside the map (${from} to ${through})`);
+    if (o.week < from) return notes.push(`${at}: week ${o.week} is before the map begins (${from}); the pin has done its work and can be removed`);
+    if (pins.has(o.week) || waiting.has(o.week)) return problems.push(`${at}: week ${o.week} is pinned twice`);
     if (known) pins.set(o.week, o.devotion);
+    else if (hidden) {
+      waiting.add(o.week);
+      notes.push(`week ${o.week} is pinned to "${o.devotion}", which is hidden until its strand file goes live; the rotation serves that week for now`);
+    }
   });
-  return { problems, pins };
+  return { problems, pins, waiting, notes };
 }
 
 /**
@@ -187,7 +225,7 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
     }
   }
 
-  const { problems: pinProblems, pins } = readOverrides(inputs.overrides, inputs.devotionIds, from, through);
+  const { problems: pinProblems, pins, waiting, notes: pinNotes } = readOverrides(inputs.overrides, inputs.devotionIds, from, through, inputs.hiddenIds);
   problems.push(...pinProblems);
 
   const seasons = [];
@@ -207,7 +245,7 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
     const season = weekSeason(s);
     const set = served.get(season);
     const pinned = pins.get(s);
-    if (pinned && set) {
+    if ((pinned || waiting.has(s)) && set) {
       problems.push(`${OVERRIDES_FILE}: week ${s} is served by the daily "${set}" set in ${SEASONAL_FILE}; pin only a week the rotation serves`);
     }
     all.push({ start: s, season, set, pinned, rotates: !set && !pinned });
@@ -215,8 +253,17 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
   const found = all.findIndex((w) => w.start >= epoch);
   const atEpoch = found === -1 ? all.length : found;
   const slot = new Map();
-  for (let i = atEpoch, n = 0; i < all.length; i++) if (all[i].rotates) slot.set(i, n++);
-  for (let i = atEpoch - 1, n = -1; i >= 0; i--) if (all[i].rotates) slot.set(i, n--);
+  // A waiting pin's week takes no slot of its own (it shows the next week's
+  // devotion), so the strand going live, which pins it, moves no later week.
+  for (let i = atEpoch, n = 0; i < all.length; i++) if (all[i].rotates) slot.set(i, waiting.has(all[i].start) ? n : n++);
+  // Before the epoch the rotation counts backward, so a pin there that gave up
+  // its slot would move every week before it, weeks a family may be in the
+  // middle of or already have done. There a pin keeps its week's slot: setting
+  // it (or a strand going live under it) changes that week and no other.
+  for (let i = atEpoch - 1, n = -1; i >= 0; i--) {
+    if (all[i].rotates) slot.set(i, n--);
+    else if (all[i].pinned) n--;
+  }
 
   const weeks = [];
   all.forEach((w, i) => {
@@ -230,7 +277,29 @@ export function buildYearMap(inputs, { first = FIRST_YEAR, last = LAST_YEAR, epo
     weeks.push(row);
   });
 
-  return { map: { from, through, seasons, sets, weeks, rotation }, problems, notes: repeated };
+  // Titles, so a page can name tonight's devotion from the map alone. Only
+  // checked when the inputs carry them (tests may build from ids alone).
+  const titles = {};
+  const setTitles = {};
+  const hasTitle = (t) => typeof t === "string" && t.trim() !== "";
+  if (inputs.titles) {
+    for (const id of [...new Set(weeks.map((w) => w.devotion).filter(Boolean))].sort()) {
+      if (hasTitle(inputs.titles[id])) titles[id] = inputs.titles[id];
+      else problems.push(`devotion "${id}" is on the year map but has no title in any client/public/family-devotions*.json file`);
+    }
+  }
+  if (inputs.setTitles) {
+    for (const key of Object.keys(SETS)) {
+      if (served.get(SETS[key].season) !== key) continue;
+      const list = inputs.setTitles[key] ?? [];
+      list.forEach((t, i) => {
+        if (!hasTitle(t)) problems.push(`${SEASONAL_FILE}: set "${key}" day ${i + 1} has no title`);
+      });
+      setTitles[key] = list;
+    }
+  }
+
+  return { map: { from, through, seasons, sets, weeks, rotation, titles, setTitles }, problems, notes: [...repeated, ...pinNotes] };
 }
 
 /** A reason the map is too short, or null: it must reach at least a year past today. */
@@ -306,6 +375,12 @@ export function renderYearModule(map) {
     "",
     "/** Every week on the map, consecutive, in order. */",
     `export const FAMILY_WEEKS: FamilyWeek[] = [\n${map.weeks.map(row).join("\n")}\n];`,
+    "",
+    "/** The title of every devotion a week above names, by id. */",
+    `export const FAMILY_TITLES: Record<string, string> = {\n${Object.entries(map.titles ?? {}).map(([id, t]) => `  ${JSON.stringify(id)}: ${JSON.stringify(t)},`).join("\n")}\n};`,
+    "",
+    "/** The title of each day of each daily set, day 1 first. */",
+    `export const FAMILY_SET_TITLES: Partial<Record<FamilySetKey, string[]>> = {\n${Object.entries(map.setTitles ?? {}).map(([key, list]) => `  ${key}: ${JSON.stringify(list)},`).join("\n")}\n};`,
     "",
   ].join("\n");
 }

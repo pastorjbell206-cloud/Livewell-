@@ -7,27 +7,27 @@
  * the church and the networks, how the writing works, and how to reach him.
  * It also absorbs /connect, so the outside channels live here now.
  *
- * Facts still awaiting James's confirmation (years at FBC Fenton, his title
- * and church status, the book count) keep their existing wording exactly as
- * it was; do not edit them here until he confirms one set of numbers
- * (client/src/config/siteStats.ts, this page, scripts/prerender-heads.mjs,
- * components/AuthorBio.tsx). Speaking.tsx and the old WorkWithJames.tsx
- * carried a "fifteen years in one pulpit" line; it is left off /speaking
- * until he confirms which figure is right.
+ * Standing rule (docs/work/NOTES.md): this page states no title, no number
+ * of years in ministry, and no book count until James gives one set of
+ * facts. Those numbers were taken out of his paragraphs on 2026-11-17 and
+ * nothing else in them was reworded. The Pastors Connection Network is kept
+ * off this site at his word of the same day, so the paragraph about it and
+ * its link are gone; git history holds his words if he wants them back.
  */
 import type { ReactNode } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import { Figure } from "@/components/Figure";
 import { HubGroup, HubStyles, type HubLink } from "@/components/HubGroup";
-import { SITE_STATS } from "@/config/siteStats";
-import { SITE_URL } from "@/lib/site";
+import WorksRow from "@/components/WorksRow";
+import { SITE_URL, ogImageUrl } from "@/lib/site";
 import { SAME_AS, liveChannels } from "@/lib/channels";
 import { HOME_WHY, PORTRAIT_URL } from "@/lib/positioning";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** The long form of James's story, once it is on the essay shelf. */
@@ -36,21 +36,12 @@ const STORY_ESSAY = "the-atheist-in-the-pulpit";
 const REACH: HubLink[] = [
   { label: "Speaking", href: "/speaking", note: "Conferences, retreats, revivals, and pulpit supply, with a form to ask about a date." },
   { label: "Contact", href: "/contact", note: "A direct line to James, for anything else." },
-  { label: "The newsletter", href: "/subscribe", note: "New essays in your inbox, plus thinking that never makes it to the site." },
+  { label: "Subscribe on Substack", href: "/subscribe", note: "New essays by email. The sign-up starts here and finishes on Substack." },
+  { label: "Find James", href: "/connect", note: "Everything James does, on one page: Substack, Facebook, the podcast, ENDS, books, speaking, and contact." },
 ];
 
-/** The work that lives at its own address, then the channels in lib/channels.ts. */
-const ELSEWHERE: HubLink[] = [
-  {
-    label: "Pastors Connection Network",
-    href: "https://pastorsconnectionnetwork.com",
-    note: "The Pastors Connection Network exists because the loneliest job in the building is the one standing up front. It lives at its own address now.",
-    external: true,
-  },
-  ...liveChannels()
-    .filter((c) => c.id !== "substack")
-    .map((c) => ({ label: c.label, href: c.url, note: c.blurb, external: true })),
-];
+/** The channels in lib/channels.ts that live at their own address. */
+const ELSEWHERE: HubLink[] = liveChannels().map((c) => ({ label: c.label, href: c.url, note: c.blurb, external: true }));
 
 function Band({
   tone,
@@ -87,16 +78,17 @@ export default function About() {
   return (
     <Layout>
       <SEOMeta
-        title="About James Bell — Pastor, Author, Writer"
-        description={`Pastor, author, and founder. Twelve years at First Baptist Church of Fenton, the Pastors Connection Network, and ENDS, equipping pastors in remote regions. ${SITE_STATS.bookCount} books on theology, church history, justice, and ordinary life.`}
+        title="About James Bell"
+        description="Who James Bell is and why he writes: his story in his own words, the church he pastors, and how to reach him."
+        image={ogImageUrl("About James Bell", "LiveWell")}
         type="website"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Person",
           name: "James Bell",
           url: `${SITE_URL}/about`,
-          jobTitle: "Lead Pastor, Author, Founder",
-          description: `Lead Pastor at First Baptist Church of Fenton for twelve years, author of ${SITE_STATS.bookCountWord} books, founder of the Pastors Connection Network (nearly 18,000 pastors) and of ENDS, which equips pastors in remote regions around the world.`,
+          jobTitle: "Pastor and writer",
+          description: "James Bell pastors First Baptist Church of Fenton, Michigan, and writes. He came to faith from atheism, was raised without a father, and has five sons.",
           worksFor: {
             "@type": "Organization",
             name: "First Baptist Church of Fenton",
@@ -107,51 +99,32 @@ export default function About() {
       <HubStyles />
 
       {/* WHO HE IS: the portrait, the name, and why the work exists. */}
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter}` }}>
-        <div style={wrap} className="about-hero">
-          <div className="about-hero__portrait">
-            <Figure src={PORTRAIT_URL} alt="James Bell" aspect="4 / 5" priority />
-          </div>
-          <div>
-            <h1
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(44px, 6vw, 76px)",
-                fontWeight: 400,
-                lineHeight: 1.02,
-                letterSpacing: "-0.02em",
-                color: "var(--charcoal-fg)",
-                margin: "0 0 14px",
-              }}
-            >
-              James Bell
-            </h1>
-            <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", margin: "0 0 var(--s-4)" }}>
-              Lead Pastor, First Baptist Church of Fenton<br />
-              Founder, Pastors Connection Network<br />
-              Founder, ENDS, equipping pastors in remote regions<br />
-              Host, Following the Way<br />
-              Author of {SITE_STATS.bookCount} books
-            </p>
-            <p
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(22px, 2.3vw, 29px)",
-                fontWeight: 400,
-                lineHeight: 1.4,
-                color: "var(--charcoal-fg)",
-                margin: "0 0 var(--s-4)",
-                maxWidth: "36ch",
-              }}
-            >
-              {HOME_WHY}
-            </p>
-            <p className="about-hero__links" style={{ margin: 0 }}>
-              <Link href="/speaking">Invite James to speak</Link>
-              <Link href="/contact">Write to James</Link>
-              <Link href="/subscribe">Get the newsletter</Link>
-            </p>
-          </div>
+      <PageHead
+        door="About"
+        title="James Bell"
+        className="about-head"
+        art={<Figure src={PORTRAIT_URL} alt="James Bell" aspect="4 / 5" priority rounded={false} bordered={false} />}
+        action={
+          <p className="about-hero__links">
+            <Link href="/speaking">Invite James to speak</Link>
+            <Link href="/contact">Write to James</Link>
+            <Link href="/subscribe">Subscribe on Substack</Link>
+          </p>
+        }
+      >
+        <p className="about-roles">
+          Pastor, First Baptist Church of Fenton, Michigan<br />
+          Founder, ENDS, equipping pastors in remote regions<br />
+          Host, Following the Way<br />
+          Writer
+        </p>
+        <p className="about-why">{HOME_WHY}</p>
+      </PageHead>
+
+      {/* EVERYTHING HE DOES: the same list /connect draws as cards, as one row. */}
+      <section className="about-works" style={{ background: "var(--bone)", padding: `0 ${gutter} var(--s-5)` }}>
+        <div style={wrap}>
+          <WorksRow id="about-works" />
         </div>
       </section>
 
@@ -182,28 +155,25 @@ export default function About() {
 
       <Band tone="warm" title="The heart behind it" id="about-heart">
         <p>
-          LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. For the pastor who is quietly running on empty. For the husband and wife still keeping a promise they are no longer sure they understand. For the skeptic who keeps reading the words of a faith they have not decided to trust.
+          LiveWell is for the person whose faith has grown larger than the answers they were handed as a child. It's for the pastor who is quietly running on empty, for the husband and wife still keeping a promise they're no longer sure they understand, and for the skeptic who keeps reading the words of a faith they haven't decided to trust.
         </p>
         <p>
-          America is not the churched country it used to be, and I do not spend much energy grieving that. The old assumptions are gone. Nobody owes Christianity a hearing anymore, which means the faith has to be commended the old way — argued honestly, lived visibly, offered without pressure. That is the world my sons are inheriting, and the world my church opens its doors into every Sunday, and I would rather meet it plainly than pretend it is 1955.
+          America isn't the churched country it used to be, and I don't spend much energy grieving that. The old assumptions are gone. Nobody owes Christianity a hearing anymore, which means the faith has to be commended the old way. It has to be argued, lived where people can see it, and offered without pressure. That's the world my sons are inheriting, and the world my church opens its doors into every Sunday, and I'd rather meet it plainly than pretend it's 1955.
         </p>
         <p>
-          What I want is simple to say and long to do. I want the historic faith — the creed, the cross, the resurrection, the kingdom — held out in ordinary language to people who have every cultural permission to ignore it. Not a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture is anxious about this year, but the older thing underneath: what the church has confessed for two thousand years, put back in the same room as a Tuesday afternoon. I want the skeptic to find the argument honest even if they walk away. I want the tired Christian to find something sturdier than the last twenty years of American church life. And I am trying, unevenly, to be the kind of man who can commend it because it is visibly holding him up — not because it is his product.
+          What I want is simple to say. I want the historic faith (the creed, the cross, the resurrection, the kingdom) held out in ordinary language to people who have every cultural permission to ignore it. I don't mean a Christianity bent to fit American politics, or the self-help shelf, or whatever the culture is anxious about this year. I mean the older thing underneath, what the church has confessed for two thousand years, put back in the same room as a Tuesday afternoon. I want the skeptic to find the argument honest even if they walk away. I want the tired Christian to find something sturdier than the last twenty years of American church life. And I'm trying, unevenly, to be the kind of man who can commend it because it's visibly holding him up, not because it's his product.
         </p>
       </Band>
 
-      <Band tone="dark" title="The church, the network, and the ends of the earth" id="about-church">
+      <Band tone="dark" title="The church and the ends of the earth" id="about-church">
         <p>
-          I have pastored First Baptist Church of Fenton, Michigan for twelve years. I put that first not as a line on a resume but because it is the room where everything here gets tested. These essays were not written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Twelve years in that room will take the abstraction out of almost anyone.
+          I pastor First Baptist Church of Fenton, Michigan, and that's the room where everything here gets tested. These essays weren't written in a quiet study with the commentaries open and the whole afternoon free. They were written around hospital visits and budget meetings, after funerals, in the days on either side of the counseling appointments where what a person believes about God either holds or it comes apart. Years in that room will take the abstraction out of almost anyone.
         </p>
         <p>
-          I started the Pastors Connection Network for a fairly simple reason. Pastors are some of the least cared-for people in the church. They hand out grace all week and rarely get handed any back. They carry things people have told them that they can never repeat to anyone. PCN now connects nearly eighteen thousand pastors to each other and to resources built by someone who knows that particular weight from the inside, because when the man up front quietly comes apart on a Saturday night, a whole congregation feels it on Sunday morning.
+          I also founded ENDS, which equips pastors in remote regions around the world. The aim isn't to send Americans to do their work for them or to hand them a translated version of our assumptions. It's to put training in the hands of the men already there, who know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
         </p>
         <p>
-          I also founded ENDS, which equips pastors in remote regions around the world. Not to send Americans to do their work for them, and not to hand them a translated version of our assumptions. To put real training in the hands of the men already there, who already know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
-        </p>
-        <p>
-          The rest of it is writing. {SITE_STATS.bookCount} books so far, on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. The essays here. The <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It is really all one project: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+          The rest of it is writing. There are books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. There are the essays here, the <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It's all one project, really: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
           <Link href="/books">The books are here</Link>.
         </p>
       </Band>
@@ -220,7 +190,7 @@ export default function About() {
           </div>
         ))}
         <p>
-          LiveWell is not therapy, and it is not Christian self-help. It is not a place that hands you something to think so you can stop thinking. It is closer to a writing desk — where a pastor with {SITE_STATS.yearsInMinistryWord} years of mistakes behind him and five sons in front of him tries to think honestly, out loud, about what it actually means to follow Jesus in a country that has mostly forgotten what his kingdom was ever about.
+          LiveWell isn't therapy and it isn't Christian self-help. It won't hand you something to think so you can stop thinking. It's closer to a writing desk, where a pastor with years of mistakes behind him and five sons in front of him tries to think out loud about what it means to follow Jesus in a country that has mostly forgotten what his kingdom was about.
         </p>
       </Band>
 
@@ -228,11 +198,11 @@ export default function About() {
       <section style={{ background: "var(--bone-warm)", padding: `var(--s-2) ${gutter}` }}>
         <div style={wrap}>
           <HubGroup id="reach" title="Reach James" links={REACH}>
-            Ask him to speak, write to him directly, or get the newsletter.
+            Ask him to speak, write to him, or get his essays by email through Substack.
           </HubGroup>
           <HubGroup id="elsewhere" title="Everywhere James is" links={ELSEWHERE}>
-            The essays and books live here. The pastors&rsquo; network, ENDS, the podcast, and the daily
-            notes live elsewhere. Same voice, different rooms.
+            The essays and books live here. ENDS, the podcast, and the daily notes live elsewhere.
+            It's the same person in each place.
           </HubGroup>
         </div>
       </section>
@@ -241,7 +211,7 @@ export default function About() {
       <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter}` }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2vw, 24px)", lineHeight: 1.55, color: "var(--charcoal-fg)", margin: "0 0 var(--s-4)" }}>
-            You may still be deciding whether to trust the voice. That is the right instinct, and you should keep it. The writing will either carry weight for you or it will not, and I would rather you find that out for yourself than be talked into it. Begin where you actually are.
+            You may still be deciding whether to trust me. That's the right instinct, and you should keep it. The writing will either hold up for you or it won't, and I'd rather you find that out for yourself than be talked into it.
           </p>
           <Link href="/writing" className="about-more about-more--dark">
             Read the essays
@@ -255,9 +225,11 @@ export default function About() {
 }
 
 const ABOUT_CSS = `
-.about-hero{display:grid;grid-template-columns:220px minmax(0,1fr);gap:var(--s-5);align-items:start}
-.about-hero__links{display:flex;flex-wrap:wrap;gap:12px 28px;font-family:var(--U);font-size:15px}
-.about-hero__links a{color:var(--charcoal-fg);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
+.about-hero__links{display:flex;flex-wrap:wrap;gap:0 28px;margin:0;font-family:var(--U);font-size:15px}
+.about-hero__links a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:5px;background-image:none}
+.about-roles{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:14px 0 0}
+.about-why{font-family:var(--F);font-size:clamp(21px,2vw,26px);font-weight:400;line-height:1.4;color:var(--ink);max-width:40ch;margin:var(--s-3) 0 0}
+.about-head .pg-head__art .lw-frame__in{aspect-ratio:4 / 5}
 .about-band__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.9fr);gap:var(--s-3) var(--s-5);align-items:start}
 .about-band__title{font-family:var(--F);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink);margin:0;max-width:14ch}
 .about-band--dark .about-band__title{color:var(--charcoal-fg)}
@@ -271,8 +243,6 @@ const ABOUT_CSS = `
 .about-more,.about-prose a.about-more{font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
 .about-more--dark{color:var(--charcoal-fg)}
 @media (max-width:760px){
-  .about-hero{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
-  .about-hero__portrait{width:132px}
   .about-band__grid{grid-template-columns:minmax(0,1fr)}
 }
 `;
