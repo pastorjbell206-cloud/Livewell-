@@ -1,41 +1,18 @@
 /**
- * When God Bless America — dedicated ebook product + purchase page.
- *
- * Self-contained (not DB-backed) so it deploys with the code and can't be
- * knocked out by a content seed. The Buy button points at the Stripe Payment
- * Link; Stripe redirects to /books/when-god-bless-america/thank-you on success,
- * where the EPUB and PDF download links live.
+ * When God Bless America: the book's own page, with its free download (James,
+ * 2026-11-18: every ebook is free). The PDF and EPUB are static files under
+ * /ebook/when-god-bless-america/, listed in data/ebooks.ts. The old Stripe link and its
+ * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
-import { createElement, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
+import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { freeEbook } from "@/data/ebooks";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
-import { STRIPE_PUBLISHABLE_KEY } from "@/lib/stripe";
 
 const COVER = "/books/when-god-bless-america.jpg";
-
-/** Stripe's hosted Buy Button web component — this book predates the Payment
- *  Link pattern the sibling pages use (components/StripeBuyButton), and the
- *  embedded button is what its Stripe product is wired to. Loads the script
- *  once, then renders the <stripe-buy-button> custom element (created via
- *  createElement so it needs no JSX intrinsic-element declaration). The
- *  publishable key is public by design and lives in lib/stripe. */
-function StripeBuyButton() {
-  useEffect(() => {
-    if (!document.getElementById("stripe-buy-button-js")) {
-      const s = document.createElement("script");
-      s.id = "stripe-buy-button-js";
-      s.async = true;
-      s.src = "https://js.stripe.com/v3/buy-button.js";
-      document.head.appendChild(s);
-    }
-  }, []);
-  return createElement("stripe-buy-button", {
-    "buy-button-id": "buy_btn_1ThiwSG7Y8x20otNSD1wDhtI",
-    "publishable-key": STRIPE_PUBLISHABLE_KEY,
-  });
-}
+const EBOOK = freeEbook("when-god-bless-america")!;
 
 const CHAPTERS: [string, string][] = [
   ["Introduction", "Not Persecuted—Seduced"],
@@ -70,7 +47,7 @@ export default function WhenGodBlessAmerica() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
           <img
             src={COVER}
@@ -79,7 +56,7 @@ export default function WhenGodBlessAmerica() {
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Ebook Available Now</div>
+            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Free Ebook</div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               When God Bless America Replaces Thy Kingdom Come
             </h1>
@@ -90,9 +67,9 @@ export default function WhenGodBlessAmerica() {
               James Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <StripeBuyButton />
+              <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                EPUB + PDF · instant download · secure checkout by Stripe
+                Free · EPUB and PDF · no email asked
               </span>
             </div>
           </div>
@@ -140,16 +117,16 @@ export default function WhenGodBlessAmerica() {
       </section>
 
       {/* BUY + BIO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>
             Read it now
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook: an EPUB for your e-reader and a PDF for everything else, delivered the moment you check out.
+            Free to download: an EPUB for your e-reader and a PDF for everything else.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <StripeBuyButton />
+            <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
             {AUTHOR_BIO}

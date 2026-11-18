@@ -27,9 +27,9 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 I took the crisis-facing guides first, as the writing plan recommends: the ones that carry the 988 line or the help box (client/src/data/sensitive-pages.json), then the rest.
 
-Done, committed and pushed (5): mental-health, pastoral-health, marriage, identity, heaven-and-hell.
+Done, committed and pushed (7): mental-health, pastoral-health, marriage, identity, heaven-and-hell (first run); prayer, gratitude (second run, brief guides3.md).
 
-Not started (15): fruit-of-the-spirit, generosity, gratitude, habits-and-formation, holy-spirit, hospitality, knowing-god, manhood, mishpat, money, new-believer, parenting-formation, prayer, providence, raising-believers. No file for them was touched. The run stopped at a clean guide boundary because the working context was nearly used up. The next run should start with the sensitive ones still waiting: prayer, gratitude, fruit-of-the-spirit; then the rest alphabetically.
+Not started (13): fruit-of-the-spirit, generosity, habits-and-formation, holy-spirit, hospitality, knowing-god, manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The second run was assigned prayer, gratitude, fruit-of-the-spirit, generosity and habits-and-formation, and stopped at a clean guide boundary after gratitude because the working context was nearly used up. The next guide is fruit-of-the-spirit (still on the sensitive list), then generosity and habits-and-formation.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, theme, sessions, session titles, key passages, timing, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted from the ESV (the text these guides already used) with references; case studies reframed as "Suppose"; rulebook words ("steelman", "verdict" as a method word, "inside the indictment", "the method is the mercy"), biography stamps, "Bell" and "Leader to confirm" removed; every help line kept word for word (checked by script against the old file). The claim-by-claim record is docs/work/elite/g2b-ledger.md.
 
@@ -42,8 +42,10 @@ Each guide was rewritten whole by the pilot's method: same slug, title, theme, s
 | marriage | 22,521 / 19,084 | 28 / 0 | 54 / 12 | 5 / 0 | Kept: Hauerwas, "we always marry the wrong person." Paraphrased: none. Cut: none | Luther married in 1525 (the old guide implied 1522); Lateran IV restated (banns and regulation, not "formalizing the sacrament"); "1948" soulmate date removed; money-and-divorce research named (Dew and colleagues, 2012); a placeholder-author bibliography entry cut |
 | identity | 25,873 / 18,608 | 27 / 0 | 45 / 6 | 7 / 0 | Kept: Augustine's restless heart. Paraphrased: Calvin, Institutes 3.1.1 (marked). Cut: none | Genesis "1446 BC" made "Date unknown"; Calvin dated to the 1559 edition; "heart curved in on itself" attributed to Luther; "fourteen words" cut; social-media claim attributed (Haidt and others) |
 | heaven-and-hell | 22,390 / 17,991 | 30 / 0 | 39 / 9 | 7 / 0 | Kept: Tolkien's "long defeat" and "samples or glimpses of final victory" (1956 letter, searched); Lewis, The Weight of Glory, "the scent of a flower we have not found..." Paraphrased: none. Cut: a Lewis preface paraphrase; a "plumbing" line attributed to Peterson | "Locked on the inside" is from The Problem of Pain, not The Great Divorce; The Great Divorce 1945; Stott's leaning in 1988, not "near the end of his life"; City of God 413 to 426; Origen "early 200s"; Hell Under Fire editors named; Isaiah and Daniel dates no longer asserted |
+| prayer | 22,243 / 17,537 | 22 / 0 | 48 / 13 | 4 / 0 | Kept: Augustine's restless heart (as description); Bonhoeffer's "cheap grace" (two words). Paraphrased: Bonhoeffer's deadly-enemy line. Cut: a "Keller used to say" saying | Luther's barber guide 1535; Calvin 1536 to 1559; Westminster 1647 (Watson dropped); Augustine's disordered love moved off the Confessions; manna date made debated; Psalm 130:3-4 restored to ESV; Peterson's Answering God untangled from Working the Angles |
+| gratitude | 24,711 / 17,653 | 28 / 0 | 48 / 12 | 6 / 0 | Kept: Chesterton, "The test of all happiness is gratitude; and I felt grateful, though I hardly knew to whom" (Orthodoxy, 1908). Paraphrased: Bonhoeffer's two prison lines (marked); Chesterton's grace before the pen (source uncertain, marked). Cut: none | "en pasin" corrected to "en panti"; "curved in on itself" moved from Augustine to Luther; Justin Martyr and the Didache named for the early Eucharist; Emmons and McCullough (2003) named; two placeholder bibliography entries cut |
 
-Web searches used: 3 of 40.
+Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude).
 
 ## Choices on contested matters
 
@@ -62,6 +64,15 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - pnpm test: 142 files passed, 1 failed, 7 skipped. The one failure was client/src/pages/fes.test.tsx (the family catechism page, not touched here); run alone it passed 4 of 4, so it was a timing failure under load.
 - pnpm build, pnpm run sitemap, pnpm run prerender, pnpm run audit:canonicals: passed.
 - Browser: heaven-and-hell at 390x844 day and night and 1440x900; no sideways scroll, teaching renders as separate paragraphs. Screenshots in /home/user/elite-shots/g2b/.
+
+## What I ran, and what passed (second run, after gratitude)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words and em-dashes searched literally in each rewritten guide: the only hits are inside quoted ESV Scripture ("blessed be the name of the LORD"; the exclamation points of Psalm 100:4).
+- Every command in the CI content-gates step: passed.
+- pnpm check: passed.
+- pnpm test: 140 files passed, 3 failed, 7 skipped. The three were family pages (advent-ready, family-pages, fes), not touched here. Rerun together, two passed; fes.test.tsx then passed 4 of 4 alone. Timing under load, as in the first run.
+- Not run this time (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at prayer or gratitude in a browser.
 
 ## What I did not do or verify
 
