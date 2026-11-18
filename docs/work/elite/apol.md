@@ -153,7 +153,7 @@ Sources: J. L. Mackie, "Evil and Omnipotence" (*Mind*, 1955); William Rowe, "The
 
 For each: keep the slug, the question and its links; write a one-paragraph short answer; state the objection in its best defenders' words; lay out the argument with the premise that carries the weight named; bring the evidence from the verified essays first; meet the strongest reply; say what it does not prove; list five to ten real sources with the best book against; check every line in a ledger.
 
-1. Did the resurrection actually happen? (the essay and its ledger already hold the evidence: the creed and its dating, Ehrman and Lüdemann's concessions, Hume's Queen Elizabeth)
+1. Did the resurrection actually happen? (the essay and its ledger already hold the evidence: the creed and its dating, the burial debate with Ehrman, Hume's Queen Elizabeth)
 2. Do I have to choose between faith and science? (meet the strong form: Laplace, methodological naturalism, the God of the gaps)
 3. Is hell forever, or does it end? (meet the moral objection; keep the three views open as now)
 4. Why does God allow earthquakes, cancer, and animal suffering? (natural law and the fall-of-creation readings; Rowe's fawn in full)
