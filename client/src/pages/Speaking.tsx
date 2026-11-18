@@ -23,11 +23,11 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const ALONGSIDE = [
   {
     title: "Pastoral coaching",
-    desc: "One-on-one with a pastor who is still doing the work. Burnout, a church in conflict, an elder board that has stopped trusting you, the doubts you cannot say from the pulpit.",
+    desc: "One-on-one time with a pastor who is still doing the work, for burnout, a church in conflict, an elder board that has stopped trusting you, or the doubts you can't say from the pulpit.",
   },
   {
     title: "Church consulting",
-    desc: "For a church that has stalled, or is quietly dying and has not said so. An honest reading of where it actually is, what has to change, and how to change it without losing the people you are there to serve. A network of pastors who have been through the same.",
+    desc: "For a church that has stalled, or is quietly dying and hasn't said so. You get a plain reading of where the church is, what has to change, and how to change it without losing the people you are there to serve. A network of pastors who have been through the same.",
   },
   {
     title: "Writing and ghostwriting",
@@ -66,7 +66,7 @@ export default function Speaking() {
             Speaking and preaching
           </h1>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(21px, 2.2vw, 27px)", lineHeight: 1.45, color: "var(--charcoal-fg)", maxWidth: "40ch", margin: "0 0 var(--s-3)" }}>
-            Conferences, retreats, revivals, and pulpit supply. Serious theology, preached like it matters on a Tuesday.
+            Conferences, retreats, revivals, and pulpit supply. Serious theology, preached plainly.
           </p>
           <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "15px" }}>
             <Link href="/about" style={{ color: "var(--charcoal-fg-muted)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
