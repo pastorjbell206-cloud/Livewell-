@@ -363,7 +363,7 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 ## Strategic Reminders
 
 - The Pastors Connection Network stays outside this site (James, 2026-11-17): no link to it, no ask to support it, no redirect that leaves for it. Pastors are still readers here (`/help/pastors`).
-- No membership fee (James, 2026-11-17). Everything is free; the three shelf books are sold as ebooks.
+- No membership fee (James, 2026-11-17). Everything is free, the ebooks too (James, 2026-11-18: "give away for free for people to download"): every ebook, the three shelf books included, is a plain download listed in `client/src/data/ebooks.ts` and shown on `/downloads`; the seven whose files name the Pastors Connection Network wait in `content/held-downloads/` for his corrected files. The sixteen older titles he took down to rewrite in his own hand stay there too, off the site and unlisted (James, 2026-11-18: "Keep them off for now").
 - The homepage is strong; inner pages need the same design system applied.
 - Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel, and is called Substack by name. Both are linked from `/connect`, never imported or embedded; the one list of outside channels is `client/src/lib/channels.ts`.
 - Contact forms save to `contact_messages` for James to read; nothing is emailed until a mail sender exists.
@@ -724,7 +724,11 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   No giving or Support page until James names who receives gifts.
 - **Payments**: no membership (James, 2026-11-17). /membership redirects to
   /subscribe; the Stripe membership procedures and settings remain in the
-  code, unused by any page. No giving link anywhere.
+  code, unused by any page. No giving link anywhere. **Ebooks free (James,
+  2026-11-18: "Everything free"; the seven naming the network "Hold them
+  back")**: no ebook is sold; a free book's old thank-you address 301s to
+  /downloads, the Stripe ebook code stays unused (checkout refuses), and a
+  past buyer of a held book still downloads it after the Stripe check.
 - **Outside the site (James, 2026-11-17)**: the Pastors Connection Network
   has no link, ask, or redirect here; `site-structure.test.ts` fails on a
   path redirect that leaves the site. No title or book count is stated

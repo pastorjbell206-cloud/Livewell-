@@ -7,8 +7,15 @@
  * leader's guide and participant handout for every study, a printable for
  * every Reading Scripture in Context guide, the Find Help printables, the
  * plan booklets, Bible reading plans, worksheets, workbooks, and card sets,
- * each with its file size once the deploy has built it. The books themselves
- * are sold, so they appear last as links to their pages, never as files.
+ * each with its file size once the deploy has built it.
+ *
+ * Every ebook is free (James, 2026-11-18), so the page opens on them: his
+ * books, the hard-question books and the booklets for church leaders, each
+ * with its cover and a "Download free" button. (The older ebooks stay off the
+ * site for now: James, 2026-11-18, "Keep them off for now".) That list
+ * is data/ebooks.ts and data/booklets.ts, read directly so it paints at once;
+ * the catalogue's Book and Booklet rows are left out below so nothing shows
+ * twice.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -20,6 +27,9 @@ import SectionHead from "@/components/art/SectionHead";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchCatalogue, formatBytes, kindRank, type Catalogue, type CatalogueFile, type CatalogueItem } from "@/lib/catalogue";
 import { SendButton } from "@/components/TakeItWithYou";
+import { EbookCard } from "@/components/FreeEbookButtons";
+import { EBOOK_GROUPS, FREE_EBOOKS, type Ebook } from "@/data/ebooks";
+import { BOOKLETS } from "@/data/booklets";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 
 
@@ -80,7 +90,29 @@ const KIND_ICON: Record<string, LucideIcon> = {
   family: House,
   "context-guide": MapIcon,
   books: Library,
+  ebooks: BookMarked,
 };
+
+/** The free ebooks, shelf by shelf; the church leaders' booklets go last. */
+const EBOOK_SHELVES: { id: string; label: string; books: Ebook[] }[] = (() => {
+  const shelves = EBOOK_GROUPS.map((g) => ({ id: `ebooks-${g.id}`, label: g.label, books: FREE_EBOOKS.filter((b) => b.group === g.id) }));
+  const booklets: Ebook[] = BOOKLETS.map((b) => ({
+    group: "leaders",
+    slug: b.slug,
+    title: b.title,
+    line: b.subtitle,
+    cover: `/books/${b.slug}.webp`,
+    pdf: b.pdf,
+    epub: b.epub,
+    page: "/resources/hard-issues-series",
+  }));
+  shelves.push({ id: "ebooks-leaders", label: "For church leaders", books: booklets });
+  return shelves;
+})();
+const EBOOK_COUNT = EBOOK_SHELVES.reduce((n, s) => n + s.books.length, 0);
+
+/** Shown on this page as ebooks, so left out of the catalogue's shelves. */
+const SHOWN_AS_EBOOKS = new Set(["Book", "Booklet", "Ebook"]);
 
 const idFor = (kind: string) => kind.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
@@ -116,15 +148,14 @@ export default function Downloads() {
     return () => { stale = true; };
   }, [nonce]);
 
-  const { shelves, books } = useMemo(() => {
+  const shelves = useMemo(() => {
     const byKind = new Map<string, CatalogueItem[]>();
-    const books: CatalogueItem[] = [];
     for (const it of catalogue?.items ?? []) {
-      if (it.kind === "Book") books.push(it);
+      if (SHOWN_AS_EBOOKS.has(it.kind)) continue;
       if (!it.files?.length) continue;
       byKind.set(it.kind, [...(byKind.get(it.kind) ?? []), it]);
     }
-    const shelves = Array.from(byKind.entries())
+    return Array.from(byKind.entries())
       .sort((a, b) => kindRank(a[0]) - kindRank(b[0]))
       .map(([kind, rows]) => ({
         id: idFor(kind),
@@ -132,7 +163,6 @@ export default function Downloads() {
         blurb: SHELVES[kind]?.blurb ?? "",
         rows: [...rows].sort((a, b) => a.title.localeCompare(b.title)),
       }));
-    return { shelves, books };
   }, [catalogue]);
 
   // Find a printable: every word of the query in the item, its shelf, or its file names.
@@ -156,15 +186,17 @@ export default function Downloads() {
   const fileCount = shelves.reduce((n, s) => n + s.rows.reduce((m, r) => m + (r.files?.length ?? 0), 0), 0);
   // Before the list arrives the shelves are named from SHELVES (counts follow),
   // so the cards hold their place and nothing below them moves.
+  const ebooksCard = { id: "ebooks", label: "Free ebooks", n: EBOOK_COUNT as number | null };
   const jump: { id: string; label: string; n: number | null }[] = catalogue
-    ? [...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length })), ...(books.length ? [{ id: "books", label: "The books", n: books.length }] : [])]
+    ? [ebooksCard, ...shelves.map((s) => ({ id: s.id, label: s.label, n: s.rows.length }))]
     : failed
-      ? []
+      ? [ebooksCard]
       : [
+          ebooksCard,
           ...Object.keys(SHELVES)
+            .filter((k) => !SHOWN_AS_EBOOKS.has(k))
             .sort((a, b) => kindRank(a) - kindRank(b))
             .map((k) => ({ id: idFor(k), label: SHELVES[k].label, n: null })),
-          { id: "books", label: "The books", n: null },
         ];
 
   return (
@@ -178,12 +210,36 @@ export default function Downloads() {
       <InnerHead path="/downloads" title="Downloads" line="Every printable, in one place" plate="jars">
         <p className="pg-head__lede">
           {fileCount > 0
-            ? `${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
+            ? `${EBOOK_COUNT} ebooks and ${fileCount} files, free, nothing gated. Print them, hand them out, teach from them.`
             : "Study guides, Find Help printables, plan booklets, and more. Free, and nothing is gated."}
         </p>
       </InnerHead>
 
-      {/* FIRST: find a printable. */}
+      {/* FIRST: every ebook, free (James, 2026-11-18). */}
+      <section id="ebooks" className="home-sec home-sec--warm" aria-labelledby="dl-ebooks-title" style={{ scrollMarginTop: "80px" }}>
+        <div className="home-wrap">
+          <SectionHead icon={BookMarked} label={`${EBOOK_COUNT} ebooks, all free`} title="Free ebooks" id="dl-ebooks-title" />
+          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "60ch", margin: "0 0 var(--s-4)" }}>
+            Every ebook on the site is free to download. No email, no checkout. The PDF reads anywhere; the EPUB is for e-readers.
+          </p>
+          {EBOOK_SHELVES.map((shelf) => (
+            <div key={shelf.id} id={shelf.id} style={{ marginBottom: "var(--s-5)", scrollMarginTop: "80px" }}>
+              <h3 className="eyebrow" style={{ color: "var(--mustard-text)", margin: "0 0 12px" }}>
+                {shelf.label} <span style={{ color: "var(--ink-muted)" }}>· {shelf.books.length}</span>
+              </h3>
+              <ul className="ebook-shelf">
+                {shelf.books.map((b) => (
+                  <li key={b.slug}>
+                    <EbookCard book={b} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* THEN: find a printable. */}
       <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="dl-find-title">
         <div className="home-wrap">
           <SectionHead dark icon={Search} label="Free, nothing gated" title="What do you want to print?" id="dl-find-title" />
@@ -314,23 +370,6 @@ export default function Downloads() {
             </div>
           ))}
 
-          {books.length > 0 && (
-            <div id="books" style={{ scrollMarginTop: "80px" }}>
-              <SectionHead icon={Library} label={`${books.length} ${books.length === 1 ? "book" : "books"}`} title="The books" id="books-title" />
-              <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "var(--s-5)" }}>
-                The books James Bell wrote himself are for purchase, not download.
-              </p>
-              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(340px, 100%), 1fr))", gap: "12px" }}>
-                {books.map((b) => (
-                  <li key={b.href}>
-                    <Link href={b.href} style={{ display: "block", height: "100%", boxSizing: "border-box", background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "16px 18px", textDecoration: "none" }}>
-                      <div style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)", lineHeight: 1.25 }}>{b.title}</div>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </div>
       </section>
     </Layout>

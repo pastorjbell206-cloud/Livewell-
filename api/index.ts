@@ -3083,15 +3083,19 @@ ${items}
 // ---------------------------------------------------------------------------
 // LiveWell-series ebooks: Stripe Checkout + gated PDF delivery.
 //
-// The PDFs live in api/_ebooks/ (referenced via new URL(..., import.meta.url) so
-// Vercel's file tracer bundles them into the function) and are NEVER served as
-// static assets — the only way to fetch one is through /api/download with a
-// Stripe session that is actually paid. Price IDs come from env so flipping
-// test -> live keys needs no code change.
+// No ebook is sold now (James, 2026-11-18); this code stays, unused by any
+// page, as the membership code does. None of these 23 books is on the site:
+// seven name the Pastors Connection Network and wait for James's corrected
+// files, and the sixteen older ones are off for now ("Keep them off for now",
+// 2026-11-18). Their PDFs live in content/held-downloads/ (referenced via
+// new URL(..., import.meta.url) and bundled by vercel.json's includeFiles),
+// are never served as static files, and reach only a past buyer through
+// /api/download with a Stripe session that is actually paid.
 // ---------------------------------------------------------------------------
 interface EbookConfig {
   title: string;
   priceEnv: string;
+  /** The held file (content/held-downloads/), for past buyers only. */
   file: URL;
   filename: string;
 }
@@ -3100,139 +3104,139 @@ const EBOOKS: Record<string, EbookConfig> = {
   "consider-the-birds": {
     title: "Consider the Birds",
     priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
-    file: new URL("./_ebooks/consider-the-birds.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/consider-the-birds.pdf", import.meta.url),
     filename: "Consider-the-Birds.pdf",
   },
   "where-your-treasure-is": {
     title: "Where Your Treasure Is",
     priceEnv: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
-    file: new URL("./_ebooks/where-your-treasure-is.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/where-your-treasure-is.pdf", import.meta.url),
     filename: "Where-Your-Treasure-Is.pdf",
   },
   "alone-in-a-crowded-church": {
     title: "Alone in a Crowded Church",
     priceEnv: "STRIPE_PRICE_ALONE_IN_A_CROWDED_CHURCH",
-    file: new URL("./_ebooks/alone-in-a-crowded-church.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/alone-in-a-crowded-church.pdf", import.meta.url),
     filename: "Alone-in-a-Crowded-Church.pdf",
   },
   "covenant": {
     title: "Covenant",
     priceEnv: "STRIPE_PRICE_COVENANT",
-    file: new URL("./_ebooks/covenant.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
   "babylon": {
     title: "Babylon",
     priceEnv: "STRIPE_PRICE_BABYLON",
-    file: new URL("./_ebooks/babylon.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/babylon.pdf", import.meta.url),
     filename: "Babylon.pdf",
   },
   "how-to-read-the-bible": {
     title: "How to Read the Bible",
     priceEnv: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
-    file: new URL("./_ebooks/how-to-read-the-bible.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/how-to-read-the-bible.pdf", import.meta.url),
     filename: "How-to-Read-the-Bible.pdf",
   },
   "be-true-to-yourself": {
     title: "Be True to Yourself",
     priceEnv: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
-    file: new URL("./_ebooks/be-true-to-yourself.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/be-true-to-yourself.pdf", import.meta.url),
     filename: "Be-True-to-Yourself.pdf",
   },
   "what-belongs-to-the-poor": {
     title: "What Belongs to the Poor",
     priceEnv: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
-    file: new URL("./_ebooks/what-belongs-to-the-poor.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/what-belongs-to-the-poor.pdf", import.meta.url),
     filename: "What-Belongs-to-the-Poor.pdf",
   },
   "rule-of-life": {
     title: "Rule of Life",
     priceEnv: "STRIPE_PRICE_RULE_OF_LIFE",
-    file: new URL("./_ebooks/rule-of-life.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/rule-of-life.pdf", import.meta.url),
     filename: "Rule-of-Life.pdf",
   },
   "why-not-what": {
     title: "Why Not What",
     priceEnv: "STRIPE_PRICE_WHY_NOT_WHAT",
-    file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/why-not-what.pdf", import.meta.url),
     filename: "Why-Not-What.pdf",
   },
   "sermon-on-the-mount-as-politics": {
     title: "The Sermon on the Mount as Politics",
     priceEnv: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
-    file: new URL("./_ebooks/sermon-on-the-mount-as-politics.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/sermon-on-the-mount-as-politics.pdf", import.meta.url),
     filename: "The-Sermon-on-the-Mount-as-Politics.pdf",
   },
   "prophetic-justice-101": {
     title: "Prophetic Justice 101",
     priceEnv: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
-    file: new URL("./_ebooks/prophetic-justice-101.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/prophetic-justice-101.pdf", import.meta.url),
     filename: "Prophetic-Justice-101.pdf",
   },
   "marriage-in-ministry": {
     title: "Marriage in Ministry",
     priceEnv: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
-    file: new URL("./_ebooks/marriage-in-ministry.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/marriage-in-ministry.pdf", import.meta.url),
     filename: "Marriage-in-Ministry.pdf",
   },
   "the-loneliness-of-the-pastor": {
     title: "The Loneliness of the Pastor",
     priceEnv: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
-    file: new URL("./_ebooks/the-loneliness-of-the-pastor.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-loneliness-of-the-pastor.pdf", import.meta.url),
     filename: "The-Loneliness-of-the-Pastor.pdf",
   },
   "healwell": {
     title: "HealWell",
     priceEnv: "STRIPE_PRICE_HEALWELL",
-    file: new URL("./_ebooks/healwell.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/healwell.pdf", import.meta.url),
     filename: "HealWell.pdf",
   },
   "born-again-from-atheism": {
     title: "Born Again From Atheism",
     priceEnv: "STRIPE_PRICE_BORN_AGAIN_FROM_ATHEISM",
-    file: new URL("./_ebooks/born-again-from-atheism.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/born-again-from-atheism.pdf", import.meta.url),
     filename: "Born-Again-from-Atheism.pdf",
   },
   "the-god-who-is-not-nice": {
     title: "The God Who Is Not Nice",
     priceEnv: "STRIPE_PRICE_THE_GOD_WHO_IS_NOT_NICE",
-    file: new URL("./_ebooks/the-god-who-is-not-nice.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-god-who-is-not-nice.pdf", import.meta.url),
     filename: "The-God-Who-Is-Not-Nice.pdf",
   },
   "faith-after-deconstruction": {
     title: "Faith After Deconstruction",
     priceEnv: "STRIPE_PRICE_FAITH_AFTER_DECONSTRUCTION",
-    file: new URL("./_ebooks/faith-after-deconstruction.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/faith-after-deconstruction.pdf", import.meta.url),
     filename: "Faith-after-Deconstruction.pdf",
   },
   "ordinary-holiness": {
     title: "Ordinary Holiness",
     priceEnv: "STRIPE_PRICE_ORDINARY_HOLINESS",
-    file: new URL("./_ebooks/ordinary-holiness.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/ordinary-holiness.pdf", import.meta.url),
     filename: "Ordinary-Holiness.pdf",
   },
   "the-scandal-of-the-cross": {
     title: "The Scandal of the Cross",
     priceEnv: "STRIPE_PRICE_THE_SCANDAL_OF_THE_CROSS",
-    file: new URL("./_ebooks/the-scandal-of-the-cross.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-scandal-of-the-cross.pdf", import.meta.url),
     filename: "The-Scandal-of-the-Cross.pdf",
   },
   "heaven-is-not-your-reward": {
     title: "Heaven Is Not Your Reward",
     priceEnv: "STRIPE_PRICE_HEAVEN_IS_NOT_YOUR_REWARD",
-    file: new URL("./_ebooks/heaven-is-not-your-reward.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/heaven-is-not-your-reward.pdf", import.meta.url),
     filename: "Heaven-Is-Not-Your-Reward.pdf",
   },
   "prayer-in-the-dark": {
     title: "Prayer in the Dark",
     priceEnv: "STRIPE_PRICE_PRAYER_IN_THE_DARK",
-    file: new URL("./_ebooks/prayer-in-the-dark.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/prayer-in-the-dark.pdf", import.meta.url),
     filename: "Prayer-in-the-Dark.pdf",
   },
   "the-body-you-left": {
     title: "The Body You Left",
     priceEnv: "STRIPE_PRICE_THE_BODY_YOU_LEFT",
-    file: new URL("./_ebooks/the-body-you-left.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-body-you-left.pdf", import.meta.url),
     filename: "The-Body-You-Left.pdf",
   },
 };
@@ -3268,6 +3272,9 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const slug = String(body?.slug || "");
     const book = EBOOKS[slug];
     if (!book) return json(res, 400, { error: "Unknown book." });
+    // Nothing is sold as an ebook now (2026-11-18): every one of these books
+    // is held off the site.
+    if (book.file) return json(res, 503, { error: "This book is not on sale." });
     const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);

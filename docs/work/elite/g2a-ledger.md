@@ -118,3 +118,150 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Matthew 11:29 the only place Jesus describes his own heart | Widely observed (Ortlund) | Kept as "the one time in the Gospels" |
 | FAQ "Why does the study keep implicating the writer" | About method | Cut |
 | Help lines (988) | Word for word | Three sentences unchanged in the primer, FAQ and closing script |
+
+## attention
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell does not write this from a mountain" and other narrator lines | Rulebook | Removed; the writer's inclusion is now in his own first person |
+| People choose a mild shock over fifteen minutes alone (Wilson et al., Science, 2014) | Web search (ScienceDaily; Harvard DASH record) | Kept, corrected: 6 to 15 minutes alone; shocks chosen in one experiment (12 of 18 men, 6 of 24 women). Teaching and timeline now say so |
+| Socrates on writing and memory | Known (Plato, Phaedrus) | Kept, source named |
+| Haidt, The Anxious Generation, 2024; early-2010s rise, heaviest among girls | Known | Kept; the dispute among researchers is stated in the teaching, objection and FAQ |
+| Simone Weil: attention at its highest is prayer; attention to a sufferer is rare, nearly a miracle | Known in substance (Gravity and Grace; "Reflections on the Right Use of School Studies", 1942, in Waiting for God) | Kept as paraphrase only, no quotation marks |
+| Augustine, restless heart; Confessions "circa 400" | Known | Kept; dated about 397 to 400 |
+| Smith, You Are What You Love, 2016 | Known | Kept, argument stated as his |
+| Hagah: to murmur, mutter; growl of a lion | Known (Isaiah 31:4) | Kept, verse named |
+| Lectio divina in four movements | Known | Kept, unattributed |
+| Sinai "circa 1446 BC"; Psalms "circa 1000 BC" | Disputed / Psalms span centuries | "Date debated"; "Over many centuries" |
+| "2008: first smartphones with full app ecosystems" | Known (iPhone 2007, App Store 2008, front camera 2010) | "2007 to 2012" with the pieces named |
+| "Four hundred years of slavery" | Exodus 12:40 says 430 years in Egypt | "Generations of slavery" |
+| 1 Kings 19:12 "still small voice" | That is the KJV; the ESV reads "the sound of a low whisper" | Corrected to the ESV |
+| Trellis image "from contemporary writers" | Unattributed | Kept as an image; no source claimed |
+| Desert Sayings, Earley (2019), Comer (2019), Turkle (2015), Taylor (2007), Postman (1985), Benedict, Haidt, Smith | Known | Kept; four "Leader to confirm" notes removed |
+| FAQ claim that "the writer came at this not as an insider" | Implies biography | Cut |
+| Help lines | Old guide had none | A short line added to the primer: take danger seriously, get real help that day, not medical advice |
+
+## baptism-and-communion
+
+| Claim | How checked | Result |
+|---|---|---|
+| "He came to faith from atheism" (summary and skeptic FAQ) | Confirmed biography | Kept once, in the skeptic FAQ where it does work; cut from the summary |
+| Narrator "Bell" and "the writer" lines; FAQ "Why does the writer keep implicating himself" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| Where he lands: believer's baptism; closest to Calvin on the Supper | Stated in the old guide | Kept, with the objection he names (covenant continuity) |
+| Augustine, sacrament as "visible word"; source given as On Christian Doctrine | Web search (New Advent, Tractates on John 80.3) | Phrase kept as "a kind of visible word"; bibliography corrected to Tractates on the Gospel of John |
+| Athanasius, "he became man so that we might be made divine" | Known (On the Incarnation 54) | Kept, without quotation marks |
+| Irenaeus about 180 against the Gnostics, the Eucharist as proof | Known (Against Heresies 4.18, 5.2) | Kept, work named |
+| Zurich rebaptisms 1525 | Known (21 January 1525) | Kept |
+| Marburg 1529, fourteen of fifteen articles; Luther's chalk | Known; the chalk is a traditional account | Kept, chalk marked "by the traditional account" |
+| Fourth Lateran 1215; Trent 1551; Calvin's Institutes 1536 | Known | Kept |
+| Cyprian's council on the eighth day, early 250s | Known (Letter 64) | Kept |
+| Didache "circa AD 100" | Date debated | "Late first or early second century" |
+| Justin Martyr's First Apology about 150 | Known | Kept |
+| Ferguson on the evidence for infant baptism | Known (2009) | Kept, book and year named |
+| 1 Peter 3:21 "answer of a good conscience" | Not the ESV wording | ESV: "an appeal to God for a good conscience" |
+| John 6:63 "the flesh is of no avail" | RSV wording | ESV: "the flesh is no help at all" |
+| Corinth: rich arrived early, poor after work; dining room and courtyard | Scholarly reconstruction, not in the text | Kept, marked "it seems" and "many scholars think"; Fee named as drawing on studies of Roman houses |
+| 1 Corinthians 12:13 | ESV has em-dashes | Quoted only the dash-free clause; rest paraphrased |
+| Vander Zee (2004), Letham (2001), Ferguson (2009), Wright ed. Three Views (2009), Smith (2009), Fee (1987), N. T. Wright, Calvin, Justin, Didache | Known | Kept; four "Leader to confirm" notes removed |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
+
+## believe
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Believe" | Believe is on the three-book shelf (client/src/lib/bookShelf.ts) | Kept, now in his voice ("my book Believe") in the summary; promo says "the book Believe" |
+| He came to faith from atheism (used five times); raised without a father (used three times) | Confirmed biography; brief allows one use | Atheism kept once, in session 1's teaching where the argument turns on it. Fatherless line cut; the pastoral point that "Father" is not an easy word for everyone kept without biography |
+| Narrator "Bell" lines; FAQ "Why does the study keep implicating the writer" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| Lewis, "poached egg ... Devil of Hell" (Mere Christianity) | Known; the original sentence carries em-dashes | Paraphrased with the book named; "liar, lunatic, or Lord" kept as the usual summary |
+| Lewis, "most reluctant convert in all England"; "kicking and struggling" | Known (Surprised by Joy) | Paraphrased, book named |
+| Bonhoeffer, "When Christ calls a man, he bids him come and die" | Known (English translation of Nachfolge, 1937); executed April 1945 | Kept, marked as the English translation's line |
+| Twain, faith is "believing what you know ain't so" | Known (Following the Equator, a schoolboy's definition) | Kept, source named |
+| Aquinas's five "ways"; Anselm, faith seeking understanding; Hume; Plantinga | Known | Kept |
+| "Historians agree" the tomb was found empty (minimal facts) | Overstated: Habermas's minimal-facts list does not include the empty tomb | Corrected: "many, though not all, also accept that the tomb was found empty"; Habermas named |
+| Apostles "flogged and crucified and beheaded, one after another" | Overstated: Scripture records James killed (Acts 12:2) and the apostles beaten (Acts 5:40); Peter and Paul's deaths rest on early tradition | Restated from Acts plus "early Christian tradition holds" |
+| A stone "that took several men to move"; "professional executioners did not make mistakes" | Not in the text | Cut / softened |
+| Creed of 1 Corinthians 15 "dated by scholars to within a few years" | Common scholarly view, not unanimous | "Many scholars" |
+| Morison began trying to disprove the resurrection | His own account in the book | "By his own account" |
+| Psalm 19:1 "the sky proclaims the work of his hands" | Not the ESV | ESV: "the sky above proclaims his handiwork" |
+| Memory verse 1 Corinthians 15:3-4 "and he was buried, and he was raised" | Not the ESV | ESV wording restored |
+| Wright (2003), Bauckham (2006), Keller (2008, 2016), Strobel (1998, 2000), Chesterton (1908), Morison (1930), Ortlund (2020) | Known | Kept; six "Leader to confirm" notes removed |
+| Named case studies (Daniel, Renata, Marcus, Theo, Priya) told as real | No source | Names removed; reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
+
+## character-before-competence
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Character Before Competence" (summary, promo) | Not on the three-book shelf (client/src/lib/bookShelf.ts) | Plug dropped; the study title stays as the guide's own name |
+| Narrator "Bell" lines; FAQ "Why does the study keep implicating the writer" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| "Of everything God lists, exactly one item is a skill" | Overstated: Titus 1:9 restates the teaching gift, and some read hospitality or household management as skills | Now "the one item that is plainly a skill is able to teach"; Titus 1:9 noted |
+| Willard, "we have made gifting essential and transformation optional" | Not a verified Willard sentence | Paraphrased as his broader argument that the church has treated becoming like Christ as optional; "the most important thing about a person..." line cut (unverified) |
+| Willard told a friend to "ruthlessly eliminate hurry" | Searched: John Ortberg's account of a phone call with Willard (The Life You've Always Wanted) | Kept as paraphrase, Ortberg named as the friend; timeline no longer dates it to the 2000s |
+| Peterson called the congregation "a religious business" and the pastor "its chief executive" | Searched: Working the Angles (Eerdmans, 1987) says American pastors have become a company of shopkeepers whose shops are churches | Corrected to his actual image, as paraphrase (no new quotation); timeline entry now 1987, the vague "2010s influence" entry cut |
+| "The research on leaders leaving tells one story"; "research on pastoral burnout" | No study named | Research claims cut; the point kept as an argument |
+| Bad doctrine "takes down fewer leaders in a generation than these three in a year"; abuse of power "wrecked as many churches as the other two combined" | Unverifiable quantities | Softened: "far fewer"; "as surely as the other two" |
+| Desert Fathers, "stay in your cell and your cell will teach you everything" | Known (Sayings of the Desert Fathers, Abba Moses 6) | Kept as paraphrase, Abba Moses named |
+| Antony about 270; Gregory's Pastoral Rule about 590; Greenleaf's "The Servant as Leader" 1970 | Known | Kept |
+| Benedict's Rule "circa 540" | Usually dated about 530 | Changed to about 530 |
+| "1559 Calvin and the Reformed tradition recover plural eldership" | 1559 is the last Latin Institutes; the Geneva elders come from the Ecclesiastical Ordinances of 1541 | Corrected to 1541 |
+| Sabbath the longest of the Ten Commandments | Known (in both Exodus 20 and Deuteronomy 5) | Kept |
+| Acts 20:28 "Guard yourselves" | Not the ESV | ESV: "Pay careful attention to yourselves" |
+| 1 Timothy 3:4 "keeping his children submissive with all dignity" | Word order not the ESV | ESV: "with all dignity keeping his children submissive" |
+| Deuteronomy 5:15 memory verse shortened | Omitted words | Full ESV verse restored |
+| "Not domineering" set inside the 1 Timothy 3 list | It is 1 Peter 5:3 | Session 5 now quotes 1 Timothy 3 and Titus 1 only; 1 Peter 5:3 cited separately in session 4 |
+| Bibliography: Willard 1988 and 2002, Peterson 1987, Buchanan 2006, Greenleaf 1977, Nouwen 1981, Scazzero 2015, DeGroat 2020, Strauch, Edwards, Gregory, Desert Fathers | Known | Kept; Nouwen's later reissue subtitle dropped; seven "Leader to confirm" notes removed |
+| Help lines | Old guide had none | None added |
+
+## christian-nationalism
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography used as credential ("He came to faith from atheism, and he writes from inside the indictment"); leader primer "a Michigan pastor"; FAQ on why the study implicates the writer | Credential, location and method talk | Cut; first person kept in the summary ("I'm not writing from outside this temptation") |
+| "Five essays by James Bell" | His essays (essaySlug kept per session) | Kept as "five of my essays" |
+| Whitehead and Perry "coined" the term; definition with covenant and capturing the state | They did not coin it; their definition is a cultural framework that idealizes and advocates a fusion of Christianity with American civic life | Now "describe" it, with their framework definition paraphrased; the extra clauses dropped |
+| Strongest Christian nationalism "among people who do not attend church much" | Searched: their finding (Taking America Back for God, 2020) is that Christian nationalism does not track religious practice and on several outcomes pulls the opposite way; critics dispute their measure of religion | Restated to their actual finding, with the critics noted |
+| Niebuhr: love of country becomes "demonic" when it claims "unconditioned loyalty," attributed to The Irony of American History | Searched: wording not found; the nearest is Moral Man and Immoral Society (1932), on patriotism turning individual unselfishness into national egoism and the nation's claim on unqualified devotion | Paraphrased and re-sourced to Moral Man and Immoral Society; "demonic" dropped as a Niebuhr attribution; Irony kept in the bibliography for its own theme |
+| Pledge 1892 (Bellamy); "under God" 1954; motto 1956 | Known | Kept |
+| Constitution "naming no God" | Overstated (it is dated "in the Year of our Lord") | Now "establishing no church"; First Amendment 1791 kept |
+| Westphalia "ruler's religion is the land's" | That principle was set at Augsburg in 1555; Westphalia confirmed it with changes | Corrected |
+| Edict of Milan 313; Thessalonica 380; City of God about 426; Scopes 1925; Bellah 1967; Moral Majority 1979; Reagan over Carter 1980; Whitehead and Perry 2020 | Known | Kept |
+| SBC 1971 resolution "notably moderate" | Known: supported legislation allowing abortion for rape, incest, fetal deformity, and damage to the mother's health | Stated concretely |
+| Balmer's segregation thesis; Politico essay; Bob Jones; Weyrich's later account | Known (Politico, 2014) | Kept, still presented as contested; "Leader to confirm" removed |
+| Noll's America's God shows the colonists had no unified Christian nation in mind and founders ranged from Calvinists to deists | That argument is chiefly Noll, Hatch and Marsden, The Search for Christian America; America's God treats providentialism | Now "Historians, Mark Noll among them"; America's God cited for providentialism only |
+| "Bell urges reading the footnotes" of Du Mez | Claim about James | Cut |
+| "One who actually had them to give" (the kingdoms) | Theological overstatement | Now "the devil claims these kingdoms have been handed over to him (Luke 4:6)" |
+| Palm Sunday "the same crowd" screamed for his blood | Not stated in the Gospels | "A crowd in the same city" |
+| Colossians 2:15 "triumphing over them in the cross" | ESV text reads "in him" (margin "in it") | ESV text used |
+| 1 Kings 8:11 memory verse "And the priests could not stand" | ESV begins "so that the priests" | ESV wording restored |
+| 2 Kings 16:14 Ahaz moves the altar | Checked against the text: the bronze altar moved to the north side | Kept, quoted |
+| Hauerwas, After Christendom? (1991); Resident Aliens (1989) social-strategy line; Noll's Scandal (1994) opening line | Known | Kept in the bibliography notes as before, unquoted |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
+
+## church-and-empire
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" lines; summary "He writes from inside the indictment"; leader primer "a pastor in Michigan"; FAQ on why the study implicates the writer | Rulebook, location and method talk | First person kept in the summary; location and method FAQ cut |
+| "Five essays by James Bell" | His essays (essaySlug kept per session) | Kept as "five of my essays" |
+| "I have five sons inheriting a thinner world" (session 2 teaching and objection) | Confirmed biography | Kept once, in the session 2 teaching where the grief turns on it; cut from the objection |
+| Mark 12:16 "Whose image" | ESV reads "likeness" | ESV wording used; the eikon point kept and explained (same Greek word as the Greek Old Testament's Genesis 1:27) |
+| Denarius of Tiberius, "son of the divine Augustus" | Known | Kept |
+| "That they can produce one inside the temple precincts already convicts them" | Interpretive overstatement | Softened to "it says something that ... they have one to hand" |
+| Tertullian, "Render the coin to Caesar and yourself to God, for if all things are Caesar's, what will be left for God" | Known (On Idolatry 15) | Kept as paraphrase, work named |
+| Tertullian, "see how they love one another"; "the blood of the martyrs is the seed" | Known (Apology 39 and 50) | Kept as paraphrase, attributed; the scriptureStudy entry "Tertullian, on the blood of the martyrs" replaced by Revelation 12:11 with the paraphrase in the note |
+| Pliny about 112, three questions, incense before the emperor's image, cursing Christ | Known (Letters 10.96) | Kept, stated as in the letter |
+| Nero 64; Lyon 177 (Eusebius); Decius 250 certificates; Diocletian 303; Milan 313; Thessalonica 380; City of God about 426 after 410; Barmen 1934 (largely Barth); Bellah 1967; Resident Aliens 1989; Newbigin returned 1974 | Known | Kept; Barmen "Leader to confirm" removed |
+| Luther's two-kingdoms teaching dated 1521 | His treatise on temporal authority is 1523 | Corrected to 1523 |
+| Westphalia "ruler's religion is the land's" | Augsburg 1555 principle | Corrected as in christian-nationalism |
+| Kierkegaard "called it the great illusion" (Practice in Christianity) | The "illusion" language is chiefly from his late writings and The Point of View; Practice in Christianity treats the offense | Paraphrased as his last years' attack on Christendom; bibliography note adjusted |
+| Newbigin found "a pagan culture with Christian memories" | Wording not verified | Paraphrased: found Britain a mission field |
+| Stark: growth through plagues "the simple math ... did the rest" | Known, but his account is wider (networks, fertility, no infant exposure) | Stated with the wider account; marked as one sociologist's argument to weigh |
+| "That decayed doctrine helped a church stay quiet" | Historians' reading, not settled | "Many historians believe" |
+| "Bell also cites ..." / "Bell also draws on ..." in bibliography notes | About the writer | Cut |
+| Ethics, Barmen, Leithart "Leader to confirm" | Known (Ethics, posthumous, with the "thinking in two spheres" section; Barmen articles 1 and 2; Leithart 2010) | Notes removed |
+| 1 Peter 2:9 "chosen people" | ESV reads "chosen race" | ESV wording |
+| Matthew 13:31 memory verse "which a man took" | ESV reads "that a man took" | ESV wording |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |

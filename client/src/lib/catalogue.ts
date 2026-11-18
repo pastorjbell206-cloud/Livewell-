@@ -68,6 +68,7 @@ export function fetchCatalogue(): Promise<Catalogue> {
 export const KIND_ORDER = [
   "Essay",
   "Book",
+  "Ebook",
   "Booklet",
   "Study guide",
   "Answer",
