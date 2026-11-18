@@ -73,6 +73,18 @@ for (let i = 1; i <= 3; i++) {
   console.log(
     `${name} run ${i}: performance ${run.performance}, accessibility ${run.accessibility}, best-practices ${run["best-practices"]}, seo ${run.seo}, CLS ${run.cls.toFixed(3)}, LCP ${(run.lcp / 1000).toFixed(1)} s`
   );
+  // Why the score is what it is: the metrics behind it, the machine's speed,
+  // and which element was counted as the largest paint. A local machine and
+  // the CI runner can disagree on all three, so print them where they ran.
+  const num = (id) => Math.round(report.audits[id]?.numericValue ?? -1);
+  const lcpEl = (report.audits["largest-contentful-paint-element"]?.details?.items ?? [])
+    .flatMap((t) => t.items ?? [])
+    .map((it) => it.node?.selector || it.node?.snippet || (it.phase ? `${it.phase} ${Math.round(it.timing ?? 0)}ms` : ""))
+    .filter(Boolean)
+    .join(" | ");
+  console.log(
+    `${name} run ${i} detail: FCP ${num("first-contentful-paint")} ms, SI ${num("speed-index")} ms, TBT ${num("total-blocking-time")} ms, TTI ${num("interactive")} ms, benchmark ${Math.round(report.environment?.benchmarkIndex ?? -1)}, LCP element: ${lcpEl || "not reported"}`
+  );
 }
 
 const mid = (k) => median(runs.map((r) => r[k]));
