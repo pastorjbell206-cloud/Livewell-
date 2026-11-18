@@ -188,3 +188,27 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Wright (2003), Bauckham (2006), Keller (2008, 2016), Strobel (1998, 2000), Chesterton (1908), Morison (1930), Ortlund (2020) | Known | Kept; six "Leader to confirm" notes removed |
 | Named case studies (Daniel, Renata, Marcus, Theo, Priya) told as real | No source | Names removed; reframed as "Suppose" |
 | Help lines | Old guide had none | None added |
+
+## character-before-competence
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Character Before Competence" (summary, promo) | Not on the three-book shelf (client/src/lib/bookShelf.ts) | Plug dropped; the study title stays as the guide's own name |
+| Narrator "Bell" lines; FAQ "Why does the study keep implicating the writer" | Rulebook / about method | Rewritten in the first person; method FAQ cut |
+| "Of everything God lists, exactly one item is a skill" | Overstated: Titus 1:9 restates the teaching gift, and some read hospitality or household management as skills | Now "the one item that is plainly a skill is able to teach"; Titus 1:9 noted |
+| Willard, "we have made gifting essential and transformation optional" | Not a verified Willard sentence | Paraphrased as his broader argument that the church has treated becoming like Christ as optional; "the most important thing about a person..." line cut (unverified) |
+| Willard told a friend to "ruthlessly eliminate hurry" | Searched: John Ortberg's account of a phone call with Willard (The Life You've Always Wanted) | Kept as paraphrase, Ortberg named as the friend; timeline no longer dates it to the 2000s |
+| Peterson called the congregation "a religious business" and the pastor "its chief executive" | Searched: Working the Angles (Eerdmans, 1987) says American pastors have become a company of shopkeepers whose shops are churches | Corrected to his actual image, as paraphrase (no new quotation); timeline entry now 1987, the vague "2010s influence" entry cut |
+| "The research on leaders leaving tells one story"; "research on pastoral burnout" | No study named | Research claims cut; the point kept as an argument |
+| Bad doctrine "takes down fewer leaders in a generation than these three in a year"; abuse of power "wrecked as many churches as the other two combined" | Unverifiable quantities | Softened: "far fewer"; "as surely as the other two" |
+| Desert Fathers, "stay in your cell and your cell will teach you everything" | Known (Sayings of the Desert Fathers, Abba Moses 6) | Kept as paraphrase, Abba Moses named |
+| Antony about 270; Gregory's Pastoral Rule about 590; Greenleaf's "The Servant as Leader" 1970 | Known | Kept |
+| Benedict's Rule "circa 540" | Usually dated about 530 | Changed to about 530 |
+| "1559 Calvin and the Reformed tradition recover plural eldership" | 1559 is the last Latin Institutes; the Geneva elders come from the Ecclesiastical Ordinances of 1541 | Corrected to 1541 |
+| Sabbath the longest of the Ten Commandments | Known (in both Exodus 20 and Deuteronomy 5) | Kept |
+| Acts 20:28 "Guard yourselves" | Not the ESV | ESV: "Pay careful attention to yourselves" |
+| 1 Timothy 3:4 "keeping his children submissive with all dignity" | Word order not the ESV | ESV: "with all dignity keeping his children submissive" |
+| Deuteronomy 5:15 memory verse shortened | Omitted words | Full ESV verse restored |
+| "Not domineering" set inside the 1 Timothy 3 list | It is 1 Peter 5:3 | Session 5 now quotes 1 Timothy 3 and Titus 1 only; 1 Peter 5:3 cited separately in session 4 |
+| Bibliography: Willard 1988 and 2002, Peterson 1987, Buchanan 2006, Greenleaf 1977, Nouwen 1981, Scazzero 2015, DeGroat 2020, Strauch, Edwards, Gregory, Desert Fathers | Known | Kept; Nouwen's later reissue subtitle dropped; seven "Leader to confirm" notes removed |
+| Help lines | Old guide had none | None added |
