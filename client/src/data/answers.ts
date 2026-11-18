@@ -398,9 +398,77 @@ export const ANSWERS: Answer[] = [
     slug: "was-jesus-just-a-good-teacher",
     question: "Was Jesus just a good teacher?",
     paragraphs: [
-      "No. The great-teacher view is the one position the historical Jesus makes almost impossible to hold, because the teaching you admire and the claims you want to discard come from the same mouth. He told a paralytic \"your sins are forgiven\" (Mark 2:5–7), and the scribes asked who can forgive sins but God alone. He said \"before Abraham was, I am\" (John 8:58), and they picked up stones. Lewis's point holds: no merely wise teacher talks that way.",
-      "The trilemma's largest hole is legend. Maybe a later church put the high claims in a humble rabbi's mouth, and for a long time that was the scholarly default. But legend needs time, and the time has been taken away. Hurtado traces divine worship of Jesus to the first years after his death, among Jewish monotheists who would die before bowing to an idol. Devotion that high, that fast, among those people does not behave like a legend.",
-      "The remaining options carry costs the admirer never counts. The Sermon on the Mount is not the work of a disordered mind, and frauds do not die for the con when recanting would save them. I held the comfortable view, and it was a place to file him more than a conclusion. It let me honor a man without obeying him. The one reply he has made unavailable is the one most people reach for first.",
+      "No. He was a good teacher, and the best of what he taught has been admired by people who believed nothing else about him. But \"just a good teacher\" is the one view the earliest evidence makes hard to hold, because the teaching you admire and the claims you want to discard come from the same mouth, in the oldest sources we have, and his first followers, Jews who would die before bowing to an idol, were praying to him within a few years of his death. That leaves harder options than the comfortable one. Either he was right about who he was, or he was wrong about the thing he cared about most. Christians believe the first. What follows sets out why, and what the argument can't do.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The good-teacher view has a distinguished history, and it deserves to be stated well. Thomas Jefferson admired Jesus as a moral teacher and doubted nearly everything else the Gospels said about him. In a letter to John Adams in October 1813 he described cutting the sayings he thought genuine out of the printed Gospels and arranging them, and said Jesus's own words were \"as easily distinguishable as diamonds in a dunghill.\" The book he finished around 1820, The Life and Morals of Jesus of Nazareth, leaves out the miracles and the claims to be divine, and ends at the tomb, with no resurrection. Plenty of thoughtful people still hold Jefferson's Jesus: a wise Jewish teacher whose followers later made him into a god.",
+          "Modern scholarship gives that view a sharper edge. The boldest claims, such as \"before Abraham was, I am\" (John 8:58), come from John, the Gospel most critical scholars treat as the latest and the most shaped by later reflection. Bart Ehrman, an agnostic New Testament scholar, argues in How Jesus Became God (2014) that Jesus did not call himself God, and that his followers came to call him divine only after they came to believe he had been raised. On that account the high claims are the church talking, not Jesus.",
+          "There is an older and harder form still. In 1906 Albert Schweitzer published the book known in English as The Quest of the Historical Jesus. He argued that the Jesus of history was neither a gentle moralist nor the Christ of the creeds, but a prophet who expected the world to end soon and was wrong. That is a serious picture, and it is not a lunatic or a liar. It is a sane, sincere man mistaken about the end of history.",
+          "I concede two things. First, C. S. Lewis's famous argument, that Jesus must be a liar, a lunatic or the Lord, is often used too quickly, as if legend and honest mistake were not options. They are, and they have to be met. Second, an argument that rests on the sayings in John alone will not persuade anyone who doubts John. So I won't rest it there.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "This is a historical argument, an inference to the best explanation. It doesn't prove that Jesus is God. It asks what best explains the evidence a historian would use, the earliest Gospel, Mark, the sayings that Matthew and Luke share, and Paul's letters, which are older than any of the Gospels. The question is narrower than it looks: whether \"a good teacher, and no more\" fits that evidence. I think it fits worse than any of the alternatives.",
+        ],
+      },
+      {
+        heading: "What the earliest sources have him say",
+        body: [
+          "Leave John aside and read Mark, the Gospel most scholars date earliest. Early in it Jesus tells a paralyzed man, \"Son, your sins are forgiven.\" The scribes hear it the way it was meant: \"Why does this man speak like that? He is blaspheming! Who can forgive sins but God alone?\" (Mark 2:5-7). A teacher can tell you God forgives. He can't forgive what was done against someone else, unless he is the one every sin is finally against. In the same chapter he calls himself \"lord even of the Sabbath\" (Mark 2:28), the day God himself gave.",
+          "The teaching people admire most has the same voice. In the Sermon on the Mount he quotes the law given at Sinai and sets his own word beside it: \"You have heard that it was said ... But I say to you\" (Matthew 5). The prophets said, \"Thus says the LORD.\" He said, \"I say.\" And at his trial in Mark, when the high priest asks whether he is the Christ, the Son of the Blessed, he answers, \"I am, and you will see the Son of Man seated at the right hand of Power\" (Mark 14:62), and they condemn him for blasphemy.",
+          "Scholars argue over which of these sayings go back to Jesus in exactly these words, and that argument is fair. But the argument doesn't need every saying. It needs the pattern, and the pattern runs through every layer of the sources, not just the latest. Lewis's point holds: no merely wise teacher talks that way. Take away the claims and you have to take away the teaching that carries them, and what is left is not Jefferson's teacher. It's a shape cut out of the Gospels with scissors.",
+        ],
+      },
+      {
+        heading: "The legend objection, and the speed of worship",
+        body: [
+          "The trilemma's largest hole is legend. Maybe a later church put the high claims in a humble rabbi's mouth, and for a long time that was the scholarly default: devotion to Jesus as divine grew slowly, the story went, as the faith moved out into the pagan world and borrowed its habits of worshiping lords and heroes. But legend needs time, and the time has been taken away. Here is the argument, step by step.",
+          {
+            kind: "A historical argument, an inference to the best explanation",
+            premises: [
+              "Within about twenty-five years of Jesus's death, and in prayers older than that, communities of his followers, Jewish believers among them, prayed to him, sang of him and set him inside their confession of the one God.",
+              "The Jews of that time held that worship belongs to the one God alone, and would not give it to anyone else.",
+              "A change that large, that early, among those people needs a cause at the start, not a slow drift over generations.",
+            ],
+            conclusion: "The high view of Jesus didn't grow up late. It began with his first followers, and the likeliest causes are what Jesus himself claimed and what they believed happened after his death.",
+          },
+          "The first step carries the weight, and the evidence for it is in Paul, writing in the 50s. At the end of a letter to Greek-speaking Christians in Corinth he leaves an Aramaic prayer untranslated, Marana tha, \"Our Lord, come\" (1 Corinthians 16:22). A prayer in Aramaic, the language of Jesus's first followers in Judea, used without explanation in a Greek city, points back to the earliest churches, and it is addressed to Jesus. In the same letter Paul takes the confession every Jew said daily, that the LORD is one, and writes, \"yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist\" (1 Corinthians 8:6). The New Testament scholar Richard Bauckham argues, in Jesus and the God of Israel (2008), that Paul has placed Jesus inside the one God's own confession. Some scholars read the verse differently, and that debate is real. In Philippians 2 Paul goes further, taking words that in Isaiah 45:23 the God of Israel speaks of himself alone and saying that at the name of Jesus \"every knee should bow\" (Philippians 2:10).",
+          "The historian who did most to establish all this is Larry Hurtado. In Lord Jesus Christ (2003), building on One God, One Lord (1988), he argued that devotion to Jesus as divine began very early among his Jewish followers, not late or by pagan influence, that it had no real parallel in the religion of the time, and that it happened inside a faith that refused to worship anyone but God. Devotion that high, that fast, among those people doesn't behave like a legend.",
+          "The second step is common knowledge about the period, and the third is where a skeptic can push. Ehrman's reply is the strongest. He agrees that Christians exalted Jesus very early, but holds that what they first believed was that God had raised a man to a high place, a lesser kind of divinity than the creeds later confessed. That is a real reading, and I won't pretend Paul wrote the language of Nicaea. But the words Paul reaches for are the words Israel kept for the one God, the Shema and Isaiah's words about every knee bowing to God alone, and he uses them of Jesus without apology, writing to churches that already prayed to him. Whatever happened, it happened at the beginning.",
+        ],
+      },
+      {
+        heading: "The options that remain",
+        body: [
+          "Now Lewis's argument can be stated fairly. In Mere Christianity (1952) he wrote, \"A man who was merely a man and said the sort of things Jesus said would not be a great moral teacher.\" He would be, Lewis went on, either a lunatic or something worse. Put with the honest options added, it runs like this. If Jesus made the claims the earliest sources give him, then he was lying, or he was sincerely mistaken, or he was right.",
+          "Lying is hard to believe of the man who taught the Sermon on the Mount, and frauds do not die for the con when recanting would save them. Mistake is the serious option, and Schweitzer's prophet is its best form. But notice what it gives up. It is no longer the good-teacher view. It grants that Jesus said what the sources say, and holds that he was wrong about the thing he cared about most, his own place in what God was doing. That might be true. It isn't the comfortable middle position people reach for. It's a verdict that he was a great man fundamentally deceived about himself.",
+          "Which leaves the question where Ehrman himself puts the hinge: what his followers came to believe happened after his death. If Jesus was raised, the claims were vindicated. If he wasn't, the mistaken prophet is the best account left. That is a question of history, and \"Did the resurrection actually happen?\" weighs it in full.",
+          "I held the comfortable view, and it was a place to file him more than a conclusion. It let me honor a man without obeying him. The one reply he has made unavailable is the one most people reach for first.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply to everything above goes like this. You've assumed the Gospels report Jesus well enough to know what he claimed, but they were written by believers decades later, and believers shape what they remember. That is fair, and it's why the argument leans on Paul, whose letters are earlier than the Gospels and whose prayers and confessions were older than the letters. A skeptic can still say that even Paul's churches had twenty years or more to get Jesus wrong. That is a short time, though, for Jewish monotheists to begin praying to a dead rabbi, and it is shorter still if, as Paul says, he went up to Jerusalem and stayed fifteen days with Peter, whom he calls Cephas (Galatians 1:18).",
+          "Here is what the argument doesn't prove. It doesn't prove Jesus is God. It doesn't settle which sayings go back to him word for word. It doesn't answer the mistaken-prophet view, which only the evidence about Easter can answer. What it shows is narrower and, I think, hard to escape. The good teacher who claimed nothing for himself is the least likely Jesus the evidence allows. The real choice is between a man who was wrong about himself and a man who was right.",
+          "He put the question to his own followers on a road near Caesarea Philippi, after they had told him what other people said. \"But who do you say that I am?\" (Mark 8:29). Two thousand years haven't made it a smaller question, and nobody else can answer it for you.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "C. S. Lewis", title: "Mere Christianity", year: "1952" },
+      { author: "Albert Schweitzer", title: "The Quest of the Historical Jesus", year: "1906; English translation 1910", note: "The case for a sincere prophet who was mistaken about the end." },
+      { author: "Larry W. Hurtado", title: "One God, One Lord: Early Christian Devotion and Ancient Jewish Monotheism", year: "1988" },
+      { author: "Larry W. Hurtado", title: "Lord Jesus Christ: Devotion to Jesus in Earliest Christianity", year: "2003" },
+      { author: "Richard Bauckham", title: "Jesus and the God of Israel", year: "2008" },
+      { author: "Bart D. Ehrman", title: "How Jesus Became God: The Exaltation of a Jewish Preacher from Galilee", year: "2014", note: "The best book against: Jesus did not claim to be God; his followers came to call him divine after Easter." },
+      { author: "Michael F. Bird, Craig A. Evans, and others", title: "How God Became Jesus", year: "2014", note: "A reply to Ehrman." },
+      { author: "Thomas Jefferson", title: "The Life and Morals of Jesus of Nazareth", year: "c. 1820", note: "The good-teacher view made with scissors." },
     ],
     essaySlug: "was-jesus-just-a-good-teacher",
     essayTitle: "Was Jesus Really Just a Good Teacher?",

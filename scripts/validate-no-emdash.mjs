@@ -37,6 +37,7 @@ const DIRS = [
   "client/public/howtos",
   "client/public/creeds",
   "client/public/studyguides",
+  "client/public/context/worlds",
   "scripts/articles", // upstream source for the how-to store
 ];
 const FILES = ["client/src/data/content-data.json", "client/public/llms-full.txt", "content/static-library.generated.json"];

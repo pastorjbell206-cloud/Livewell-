@@ -1,0 +1,10 @@
+/* A chapter in plain words (PlainPassages.tsx). Loaded with its chunk. */
+.pp-hold{min-height:600px}
+.pp-jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 var(--s-4)}
+.pp-jump a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1.5px solid var(--art-ink);background:var(--card);font-family:var(--U);font-size:13.5px;font-weight:600;color:var(--ink);text-decoration:none}
+.pp-jump a:hover,.pp-jump a:focus-visible{box-shadow:3px 3px 0 var(--art-clay)}
+.pp-passage{padding:var(--s-4) 0 var(--s-2);border-top:1.5px solid var(--art-ink);scroll-margin-top:90px}
+.pp-passage h3{margin:0 0 var(--s-3);font-family:var(--F);font-size:clamp(1.35rem,2.6vw,1.6rem);font-weight:500;line-height:1.25;color:var(--ink)}
+.pp-ref{display:inline-flex;align-items:center;min-height:44px;margin-right:6px;font-family:var(--U);font-size:14px;font-weight:600;vertical-align:middle;color:var(--mustard-text);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
+.pp-part{margin:0 0 6px}
+.pp-part h4{display:flex;align-items:center;gap:8px;margin:0 0 6px;font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}

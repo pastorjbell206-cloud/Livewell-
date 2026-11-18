@@ -300,6 +300,16 @@ function nation() {
     .map((n) => ({ title: str(n.title), blurb: clip(n.subtitle), href: `/nation/${n.slug}` }));
 }
 
+/** The world portraits (/resources/context/world/:id), from the index build-context-index.mjs writes. */
+function worlds() {
+  return (readJson("context/worlds-index.json").worlds ?? []).map((w) => ({
+    title: str(w.title),
+    blurb: clip(w.blurb),
+    href: `/resources/context/world/${w.id}`,
+    keywords: "what was it like daily life world of jesus first century background culture",
+  }));
+}
+
 /** The index, sources in the order a tie between them should fall. */
 export function buildSearchIndex() {
   const drop = (e) => Object.fromEntries(Object.entries(e).filter(([, v]) => v !== ""));
@@ -309,7 +319,7 @@ export function buildSearchIndex() {
   const source = (label, indexHref, entries) => ({ label, indexHref, entries: entries.filter((e) => e.title).filter(once).map(drop) });
   return {
     sources: [
-      source("Main Pages", "/", mainPages()),
+      source("Main Pages", "/", [...mainPages(), ...worlds()]),
       source("Honest Answers", "/answers", answers()),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),

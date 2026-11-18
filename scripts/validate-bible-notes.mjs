@@ -128,6 +128,7 @@ function checkIntro(b, where) {
       for (const t of ["first", "pastor", "scholar"]) if (!fr.some((r) => r.tier === t)) fail(where, `furtherReading needs a ${t} title`);
     }
   }
+  if (d.teaching != null) checkTeaching(b, d.teaching, `${where}.teaching`);
   if (!Array.isArray(d.keyChapters) || d.keyChapters.length < 1) fail(where, "at least one key chapter");
   else for (const k of d.keyChapters) {
     if (!(k.ch >= 1 && k.ch <= b.chapters)) fail(where, `key chapter ${k.ch} out of range`);
@@ -326,7 +327,66 @@ function checkStudy(id, where) {
   else for (const [i, q] of d.questions.entries()) prose(`${where}.questions[${i}]`, q, 25, 400);
 }
 
-let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0;
+/**
+ * Optional: a book's teaching introduction (intro.json `teaching`), plain
+ * words in headed parts with lists for the hard passages, key words, a
+ * timeline and a map. Held to the same prose rules as every note.
+ */
+function checkTeaching(b, t, where) {
+  if (!Array.isArray(t.parts) || t.parts.length < 4) return fail(where, "at least four parts");
+  const ids = new Set();
+  for (const [i, p] of t.parts.entries()) {
+    if (!/^[a-z][a-z-]*$/.test(p.id ?? "") || ids.has(p.id)) fail(`${where}.parts[${i}]`, `bad or repeated id "${p.id}"`);
+    ids.add(p.id);
+    if (typeof p.h !== "string" || p.h.length < 3) fail(`${where}.parts[${i}]`, "missing heading");
+    prose(`${where}.parts[${i}].body`, p.body, 300, 6000);
+  }
+  for (const [i, h] of (t.hard ?? []).entries()) {
+    if (!(h.ch >= 1 && h.ch <= b.chapters) || !chapterData.get(`${b.slug}/${h.ch}`)?.verses.some((v) => v.v === h.v)) fail(`${where}.hard[${i}]`, `no verse ${h.ch}:${h.v}`);
+    prose(`${where}.hard[${i}].line`, h.line, 20, 300);
+  }
+  for (const [i, w] of (t.words ?? []).entries()) {
+    if (typeof w.word !== "string" || !w.word) fail(`${where}.words[${i}]`, "missing word");
+    prose(`${where}.words[${i}].line`, w.line, 20, 300);
+  }
+  for (const [i, x] of (t.timeline ?? []).entries()) {
+    if (!["world", "story", "book"].includes(x.kind)) fail(`${where}.timeline[${i}]`, "kind must be world, story or book");
+    if (typeof x.when !== "string" || !x.when) fail(`${where}.timeline[${i}]`, "missing when");
+    prose(`${where}.timeline[${i}].what`, x.what, 20, 400);
+  }
+  for (const [i, m] of (t.map ?? []).entries()) {
+    if (!(m.lat > 29 && m.lat < 38 && m.lon > 30 && m.lon < 40)) fail(`${where}.map[${i}]`, "a place outside the Bible lands");
+    if (!Array.isArray(m.refs) || m.refs.length < 1) fail(`${where}.map[${i}]`, "at least one reference");
+    prose(`${where}.map[${i}].line`, m.line, 20, 300);
+  }
+}
+
+/**
+ * Optional: a chapter in plain words, passage by passage
+ * (notes/<slug>/plain/<n>.json). The passages run from verse 1 to the last
+ * verse in order, and the chapter note says it has one ("plain": true).
+ */
+function checkPlain(b, c, where) {
+  const d = json(`notes/${b.slug}/plain/${c}.json`);
+  const data = chapterData.get(`${b.slug}/${c}`);
+  const last = data.verses[data.verses.length - 1].v;
+  if (!Array.isArray(d.passages) || d.passages.length < 1) return fail(where, "passages missing");
+  let next = 1;
+  for (const [i, p] of d.passages.entries()) {
+    const m = String(p.v ?? "").match(/^(\d+)(?:-(\d+))?$/);
+    if (!m || +m[1] !== next || +(m[2] ?? m[1]) < +m[1]) { fail(`${where}.passages[${i}]`, `range "${p.v}" out of order (expected to start at ${next})`); return; }
+    next = +(m[2] ?? m[1]) + 1;
+    if (typeof p.t !== "string" || p.t.length < 3) fail(`${where}.passages[${i}]`, "missing title");
+    prose(`${where}.passages[${i}].happening`, p.happening, 150, 3000);
+    prose(`${where}.passages[${i}].hearers`, p.hearers, 150, 4000);
+    if (p.ot != null) prose(`${where}.passages[${i}].ot`, p.ot, 100, 3000);
+    if (p.hard != null) prose(`${where}.passages[${i}].hard`, p.hard, 100, 3000);
+    prose(`${where}.passages[${i}].asks`, p.asks, 80, 1500);
+  }
+  if (next !== last + 1) fail(where, `passages end at ${next - 1}, chapter ends at ${last}`);
+}
+
+let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0, plains = 0;
 for (const b of books) {
   if (partial && !only.includes(b.slug)) continue;
   const introPath = path.join(DIR, "notes", b.slug, "intro.json");
@@ -337,6 +397,10 @@ for (const b of books) {
     const p = path.join(DIR, "notes", b.slug, `${c}.json`);
     if (!fs.existsSync(p)) { if (!partial) fail(`${b.slug}/${c}`, "missing"); continue; }
     try { checkChapter(b, c, `${b.slug}/${c}`); notes++; } catch (e) { fail(`${b.slug}/${c}`, e.message); }
+    const pp = path.join(DIR, "notes", b.slug, "plain", `${c}.json`);
+    const flagged = json(`notes/${b.slug}/${c}.json`).plain === true;
+    if (fs.existsSync(pp) !== flagged) fail(`${b.slug}/${c}`, flagged ? "says plain: true but has no plain file" : "has a plain file but its note does not say plain: true");
+    if (fs.existsSync(pp)) { try { checkPlain(b, c, `${b.slug}/plain/${c}`); plains++; } catch (e) { fail(`${b.slug}/plain/${c}`, e.message); } }
     const vp = path.join(DIR, "notes", b.slug, "verses", `${c}.json`);
     if (!fs.existsSync(vp)) { versesMissing++; if (!partial && VERSES_COMPLETE) fail(`${b.slug}/verses/${c}`, "missing"); continue; }
     try { checkVerses(b, c, `${b.slug}/verses/${c}`); verseFiles++; } catch (e) { fail(`${b.slug}/verses/${c}`, e.message); }
@@ -412,4 +476,4 @@ if (errors.length) {
   for (const e of errors.slice(0, 200)) console.error("  " + e);
   process.exit(1);
 }
-console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies, ${guides} guides${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);
+console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies, ${guides} guides${plains ? `, ${plains} chapters in plain words` : ""}${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);
