@@ -16,7 +16,7 @@ Unit brief: /start's five roads (with chips on Home), the Family door, the catec
 
 **Essay page (`ArticleDetail.tsx`).** The title block and reading text are untouched. The top has "Listen" and one "Aa" size control. The end has one row: Save, Share (which opens Share on Facebook, Copy link, Cite this, Send to my phone, Send to...), Print. After that come one next essay and one Substack box.
 
-**Seams in `siteCatalog.ts`.** "For skeptics" goes to /skeptics. History's people goes to /theology/history/people. The Bible door's sixth room is now "Reading plans" (/study/plans), with the 2027 year plan inside it, named as on /study. "Guides to reading it" matches /study. "How to study the Bible" was not added because /study/how-to-study does not exist on origin yet. Home's question picker, the search shortcuts and the topics rows point at /answers/SLUG.
+**Seams in `siteCatalog.ts`.** "For skeptics" goes to /skeptics. History's people goes to /theology/history/people. The Bible door's sixth room is now "Reading plans" (/study/plans), with the 2027 year plan inside it, named as on /study. "Guides to reading it" matches /study. "How to study the Bible" (/study/how-to-study, which arrived from the desk unit in the last merge) sits inside "Guides to reading it", because the Bible door already has its six rooms. Home's question picker, the search shortcuts and the topics rows point at /answers/SLUG.
 
 **Catechism layout shift.** The page showed itself before the questions loaded, so the static text jumped (CLS 0.36). The loading line now carries `data-lw-loading`, so the held prerendered text stays until the questions arrive. CLS is now 0.004.
 
@@ -36,7 +36,7 @@ Unit brief: /start's five roads (with chips on Home), the Family door, the catec
 
 - `pnpm check`: passed.
 - All 34 commands of the content-gates step in ci.yml: passed.
-- `pnpm test`: 136 files passed, 7 skipped; 1585 tests passed, 73 skipped.
+- `pnpm test`: 139 files passed, 7 skipped; 1617 tests passed, 73 skipped (after the last merge with origin).
 - ESLint (`--max-warnings 0`) on every changed .ts/.tsx file: clean.
 - `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (no failures), `pnpm run audit:canonicals`: passed.
 - Lighthouse median of three (`scripts/lighthouse-median.mjs`):
@@ -55,7 +55,6 @@ Unit brief: /start's five roads (with chips on Home), the Family door, the catec
 ## What was not done or not verified
 
 - **Essay performance is 82, below the brief's 85.** The quality job's floor is 70. The tech unit measured 82 before this unit. The essay's chunk grew by 0.3 kB gzipped. The LCP of 4.2 s is the Lighthouse simulation effect described in `docs/work/elite/tech.md`. Not fixed.
-- "How to study the Bible" in the catalogue waits for the desk unit's /study/how-to-study.
 - "Read it to me" was checked only for whether it shows. No speech was heard in headless Chromium.
 - The essay page was checked against the static essay. The database essays need the API.
 
