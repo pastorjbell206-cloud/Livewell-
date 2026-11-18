@@ -155,3 +155,25 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Biography: came to faith from atheism (summary, session 1 objection and teaching, primer, FAQ, script, promo x2) | Confirmed fact used as a credential | Kept once, in session 1's teaching, where it lets him state the closed-world view as his own former view |
 | Luke 4:5-7 quoted as "To you I will give all this authority, if you will worship me" | Spliced verse | Quoted in ESV order with an ellipsis |
 | Scripture quotations | ESV, from memory; no ESV in the repository | Unchanged translation |
+
+## The Beatitudes
+
+| Claim | How checked | Result |
+|---|---|---|
+| Quotations of persons the old guide carried | Augustine's restless heart, Luther's first thesis, Tertullian's "blood ... seed", Kierkegaard's title: all were paraphrases or titles in the old guide | Kept as paraphrase or title, attributed and dated; no quotation marks added |
+| Augustine, restless heart (Confessions 1.1); Confessions "circa 397" | Known | "About 397 to 400" |
+| Augustine's Sermon on the Mount commentary "circa 394" | Known | Kept; title given as Our Lord's Sermon on the Mount |
+| Luther's first thesis, 1517 | Known | Paraphrased |
+| Tertullian "circa AD 197", "the blood of Christians is seed" | Known: Apology 50, about 197; the "seed of the church" form is the later popular version | Both forms stated as such |
+| Bonhoeffer "a man the Nazi state would later kill for exactly that following" | Known: hanged 9 April 1945 for his part in the resistance | Reworded to the fact |
+| Lloyd-Jones 1959 to 1960; Stott (1978); Willard (1998); Pennington (2017); Ortlund (2020); Kierkegaard, Purity of Heart (1847) | Known | Dated; "Leader to confirm" removed |
+| "Sociologists and critics" on expressive individualism | Known: the term is from Bellah and others, Habits of the Heart (1985) | Named and added to the bibliography |
+| Taylor's "buffered and self-defining" self "cut off from any order of meaning" | Loose: the buffered self is about closure to spiritual forces | Reworded to Taylor's A Secular Age (2007) picture of a self sealed off from a larger order, without the term |
+| praus "used of an animal that had been broken, specifically a war horse" | The war-horse detail is a sermon commonplace I could not tie to a source | Reduced to "could be used of a tamed animal as well as a gentle person" |
+| Teacher sat to teach | Scripture: Luke 4:20 | Reference added |
+| Isaiah 61 "circa 700 BC" | Dating of Isaiah 56 to 66 is debated | "Date debated" |
+| Matthew "circa AD 60-90" | Loose | "Most date it AD 70 to 90" |
+| Bibliography placeholders: "Commentaries and expository works on Matthew 5" by "Pastoral and expository literature"; "Accounts of the global persecuted church"; "The Gospel of Matthew" by "the evangelist Matthew"; "The Psalms" by "the psalmists" | Categories, not books | Cut |
+| Biography: atheism and no father (summary, primer, script, teaching) | Credential | Atheism kept once, session 1 teaching; "raised without a father" removed |
+| "Blessed" outside Scripture | CLAUDE.md forbids it as an adjective | Used only in Scripture, in titles, or in quotation marks as the word under discussion |
+| Scripture quotations | ESV, from memory | Unchanged translation |
