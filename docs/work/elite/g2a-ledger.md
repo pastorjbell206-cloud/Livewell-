@@ -312,3 +312,37 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" on Keller, Tov, Enns, Lewis, Chatraw and Carson | Known titles; no claims attributed beyond the title | Notes removed; "attributing to Bell" phrasing cut |
 | Glossary "Steelman" | Method talk | Cut |
 | Old quotations of people | None carried beyond Scripture | None added |
+
+## deep-roots
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Deep Roots" (summary, bulletin, pulpit, invite caption) | Not on the three-book shelf (bookShelf.ts) | Plug dropped; guide title unchanged |
+| Narrator "Bell" lines; "He writes from inside the room where people fall apart" | Narrator talk | First person kept for his teaching |
+| Atheism in the leader primer ("The writer of these essays came to Christian doctrine from atheism") | Confirmed biography | Kept once, first person, where it explains why the study translates terms |
+| 1 Corinthians 15:3-4 memory verse "according to the Scriptures" | ESV "in accordance with the Scriptures" | Corrected; 15:14 and 15:17 to ESV wording |
+| 2 Timothy 3:16 "useful" | ESV "profitable" | Corrected |
+| Isaiah 55:11, 2 Corinthians 5:17 memory verses | ESV punctuation | Semicolons restored |
+| Romans 1:17 "from faith to faith" | ESV "from faith for faith" | Corrected |
+| Priene inscription, about 9 BC, Augustus's birthday as good news | Known | Kept; Wright named as one who points to it, no quotation |
+| Augustine's lover, beloved and love (On the Trinity) | Known | Paraphrase |
+| Bavinck: a solitary God would need the world to love | His argument that God is complete in himself; wording not verified | Paraphrase, softened |
+| Athanasius exiled five times; Nicaea 325; Constantinople 381; Chalcedon 451 and its four negatives; Hippo 393 and Carthage 397 | Known | Kept |
+| "Incurvatus in se" given as Augustine's phrase | The phrase is Luther's (Lectures on Romans), building on Augustine | Credited to Luther; glossary entry renamed "Curved in on itself" |
+| Solzhenitsyn on the line through every heart | Known (Gulag Archipelago); not searched | Paraphrase, no quotation marks |
+| "The men who designed the death camps had doctorates" | Overstated | "Several of the officials at Wannsee in 1942 held doctorates" |
+| Prodigal son "telling his father he wished him dead"; the running patriarch | Interpretation | Marked as how many commentators read it |
+| Capon on the parables; McGrath "locates the breakthrough precisely there" | Decorative | Capon cut from the teaching; McGrath line cut (book kept in bibliography) |
+| Bonhoeffer's cheap grace; Gregory of Nazianzus, what was not assumed was not healed | Known; no source text in the repo | Paraphrase, no quotation marks |
+| Luther's "gate to paradise" | His 1545 preface | Paraphrase |
+| Barth, the Judge judged in our place | Church Dogmatics IV/1 | Paraphrase |
+| "The men who first secured those words had been blinded in one eye" (one holy catholic and apostolic church) | Those words are from 381; the blinded bishop story is told of Nicaea (325) | Restated: some bishops at Nicaea bore marks of persecution, one said to have lost an eye |
+| Luther "nailed his protest to a door" | Disputed | "Luther's Ninety-five Theses in Wittenberg in 1517" |
+| Session 2 "fundamentalist and village atheist are twins" | Unfair to careful inerrantists | Narrowed to a popular assumption; the 1978 Chicago Statement's allowance for round numbers, topical order and free quotation stated; inerrant/infallible left open as a matter faithful Christians weigh differently |
+| "Older confessions spoke of infallible before inerrant" (as unfailing in purpose) | Westminster (1646) calls Scripture's truth infallible; the "purpose" reading is one view | Stated as one view among faithful views |
+| Mark 1:15 "first word ... is kingdom" | His first words are "The time is fulfilled" | "His first preaching is about the kingdom" |
+| Ladd "the phrase belongs to Ladd" | He made it familiar | "A phrase Ladd made familiar" |
+| Chesterton, democracy of the dead (Orthodoxy) | Known | Paraphrase, no quotation marks |
+| "Leader to confirm" on Wright, Hatch, Reeves, Trueman | Known titles | Notes removed; "as Bell's own argument" phrasing cut |
+| Timeline | Old guide had none | None added |
+| Help lines | Old guide had none | None added |

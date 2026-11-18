@@ -25,8 +25,8 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 ## Where this share stands
 
-Done, committed and pushed: 1 to 11 (after-christendom through church-and-empire).
-Not started: 12 to 20 (contentment through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the next run should start at contentment, then deconstruction.
+Done, committed and pushed: 1 to 14 (after-christendom through deep-roots).
+Not started: 15 to 20 (doubt through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the next run should start at contentment, then deconstruction.
 
 Third run notes: christian-nationalism and church-and-empire each carry 25 short devotionals (five per session); these were rewritten too, keeping each day's title and passage, as the pastoral-health pilot did. Neither guide nor character-before-competence had help lines.
 
@@ -47,6 +47,7 @@ Third run notes: christian-nationalism and church-and-empire each carry 25 short
 | church-and-empire | 26,257 / 19,496 (25 devotionals included) | 42 / 0 | 28 / 2 | 3 / 0 | Kept as paraphrase: Tertullian (On Idolatry; Apology), Pliny, Barmen. Paraphrased: Newbigin, Kierkegaard. Cut: none | Mark 12:16 "likeness", 1 Peter 2:9 and Matthew 13:31 to ESV; Luther 1523 (not 1521); Augsburg 1555 behind Westphalia; Stark's account widened; five-sons line kept once, in session 2 |
 | contentment | 24,408 / 19,020 | 26 / 0 | 32 / 0 | 3 / 0 | Kept: Augustine's restless heart; Burroughs's definition (searched). Paraphrased: Burroughs on subtraction and on upward comparison, Girard, Taylor, Brueggemann. Cut: Burroughs "a little in the hand" line | Job's restoration acknowledged; Ecclesiastes date marked debated; Psalm 63:1 and James 4:1-2 to ESV; money-and-happiness plateau stated as argued; placeholder bibliography entry cut; biography-as-credential cut |
 | deconstruction | 24,270 / 19,403 | 42 / 0 | 140 / 12 | 4 / 0 | None carried; none added | 1 Thessalonians 5:21, Psalm 34:18, Matthew 23:27 to ESV; mustard-seed passages separated (Luke 17, Matthew 17, Matthew 13); Job, Calvin, Kierkegaard, Lewis and Luther dates fixed; Surprised by Doubt authors corrected (searched); McKnight spelling; five case studies framed as "Suppose" |
+| deep-roots | 25,215 / 20,152 | 40 / 0 | 40 / 9 | 2 / 0 | Paraphrased: Solzhenitsyn, Bonhoeffer, Gregory of Nazianzus, Chesterton, Augustine, Bavinck, Barth, Luther. Cut: Capon and McGrath lines from the teaching | Off-shelf Deep Roots plug dropped; incurvatus in se credited to Luther; 1 Corinthians 15:3-4, 2 Timothy 3:16, Romans 1:17 to ESV; Nicaea eye story placed correctly; Wannsee claim narrowed; inerrancy section made fair to both sides |
 
 Help lines: aging-and-legacy and anxiety each keep their three 988 sentences unchanged and in place; anger keeps its domestic-violence and "never return to harm" sentences unchanged. Checked by script against the old files.
 
@@ -79,6 +80,9 @@ Third run (character-before-competence, christian-nationalism, church-and-empire
 - PDFs were not rebuilt (another unit owns pnpm pdfs).
 
 ## What only James can supply
+
+7. Deep Roots: the guide was drawn from his book Deep Roots, which isn't on the three-book shelf, so the plugs are gone (the guide's own title stays). Tell me if the book should be offered.
+8. Contentment and deconstruction each gave his biography as a credential in the summary and FAQ; I cut it. Deep Roots keeps his atheism once, in the leader's primer, where it explains why the study translates terms.
 
 5. Character Before Competence was built on his book of that name, which is not on the three-book shelf, so the plug is gone. Tell me if that book should be offered.
 6. In church-and-empire I kept his five-sons sentence once (session 2, the grief over a thinner world). If he'd rather it go, it is one sentence.
