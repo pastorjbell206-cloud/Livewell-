@@ -331,3 +331,69 @@ The second run added three quotations to skeptic that the old guide did not carr
 | A hundred denarii | About a hundred days' wages | Stated |
 | Biography: atheism (summary, primer, two FAQs) | Credentials | Kept once, session 1 teaching; FAQ about the writer cut (12 to 11) |
 | Scripture | ESV, from memory | ESV with references throughout |
+
+## The Parables (repair, seventh run)
+
+| Claim | How checked | Result |
+|---|---|---|
+| "I came to faith from atheism, and I remember thinking something like that" (session 1) | Old guide (before 33350915) carried no such memory; it was inferred | Rewritten as a skeptic's objection; no memory claimed; atheism no longer named in this guide |
+| Other recollections ("I remember", "I used to", "when I was", "I've seen", "years ago" and similar) | Searched the new guide against the old | None added; other matches are instructions, Scripture, or old wording |
+
+## The Psalms
+
+| Claim | How checked | Result |
+|---|---|---|
+| Calvin: the Psalter "An Anatomy of all the Parts of the Soul" | Web search: CCEL, Calvin Translation Society preface to the Commentary on the Psalms | Quoted exactly; mirror sentence paraphrased |
+| Calvin's commentary, 1557 | Known (Latin edition 1557) | Kept |
+| Athanasius, Letter to Marcellinus: in the Psalms you find your own words | Known in substance | Paraphrase; dated "fourth century" (no exact year) |
+| Luther's 1528 preface: the Psalter "a little Bible" | Known | Kept as paraphrase |
+| Augustine, Expositions of the Psalms, "circa AD 400" | Known: composed about 392 to 422 | Dated 392 to 422 |
+| Bonhoeffer, Psalms: The Prayer Book of the Bible, 1940; Christ prays the Psalms; vengeance psalms hand judgment to God | Known | Paraphrase; "underground seminary" now "trained pastors for the Confessing Church" |
+| Lewis, Reflections on the Psalms, 1958: shocked by the curses; praise completes enjoyment | Known | Paraphrase; "devilish" not repeated |
+| Brueggemann, The Message of the Psalms, 1984: orientation, disorientation, new orientation; Psalm 13 disorientation; Psalm 23 new orientation | Known | Kept |
+| Brueggemann: a church without lament forces a choice between honesty and faith | Not confirmed as his wording | Kept as the guide's own sentence, unattributed |
+| Laments about a third of the Psalter, the largest type | Common scholarly count | "By most reckonings around a third" |
+| A survey finds lament nearly absent from church songs | No survey named or checked | Made general ("carry very little lament"); Rah's book named as pressing the gap |
+| Psalm 88's last Hebrew word is "darkness" | Known (mahshak) | Kept |
+| Roughly half the Psalter bears David's name | 73 psalms in the Hebrew titles | Stated as seventy-three |
+| Songs of Ascent "develop" about 950 BC | Dating uncertain | Reworded: temple pilgrimages from Solomon on; dating of each song uncertain |
+| Psalter given final five-book shape about 515 BC | Editing ran over a longer period | "After 538 BC ... over time" |
+| Septuagint Psalms about 200 BC | Third to second century BC | Loosened |
+| Babylon marched survivors "a thousand miles"; "slaughtered children in the streets" | Distance varies by route; Lamentations 2:11 | "Hundreds of miles"; children fainting in the streets, Lamentations 2:11 |
+| Monastic weekly cycle of all 150 psalms | Known: Rule of Benedict | "In many monasteries" |
+| Bibliography "Reflections on the Psalms as the Prayer Book of Christ" by "the Letter to Marcellinus, Athanasius" | Garbled entry | Now Letter to Marcellinus, Athanasius of Alexandria |
+| Bibliography "A Sacrifice of Praise" by "counseling and pastoral literature on lament" | Placeholder | Cut |
+| Brueggemann, Praying the Psalms; Taylor, Open and Unafraid; Rah, Prophetic Lament (2015); Wright, The Case for the Psalms (2013) | Known | Kept; "Leader to confirm" removed |
+| Gratitude research | General finding | Kept general, no study named |
+| Biography (atheism, fatherless, five sons) as credentials in 9 places | Credentials | Atheism once, session 1, with "learn to pray from scratch" (old promo's own words) |
+| Help lines | Script compared each help sentence in old and new | All present word for word; sensitive-pages.json untouched |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Story of the Bible
+
+| Claim | How checked | Result |
+|---|---|---|
+| Genesis 1: "seven times good, and then very good" | Counted: good six times (1:4, 10, 12, 18, 21, 25), very good once (1:31) | Corrected |
+| "Four thousand years" from Abraham to Jesus; promise "four thousand years old" | Abraham about 2000 BC | "About two thousand years"; all instances fixed |
+| Abraham about 2000 BC; Exodus about 1400 BC | Traditional or debated | Marked "traditional dating"; Exodus "fifteenth or thirteenth century BC (dating debated)" |
+| Prophets 750 to 500 BC; silence 430 BC on | Amos about 760 to Malachi about 430 | "About 760 to 430 BC" |
+| Revelation about AD 95 | Common dating, not certain | "A common dating" |
+| N. T. Wright five acts, The New Testament and the People of God | Known: 1992; acts creation, fall, Israel, Jesus, church | Stated as he gives them; study's fifth session named as the ending |
+| Wright, Simply Christian: echoes of justice, beauty, relationship | Known: four echoes, justice, spirituality, relationships, beauty | Corrected; dated 2006 |
+| Wright, Surprised by Hope | Known: 2008 | Kept |
+| Bartholomew and Goheen, The Drama of Scripture | Known: 2004, six acts | Six acts noted |
+| Roberts 2002; Goldsworthy 1991; Keller 2008; Stott 1986; Strobel 1998; Lewis, Mere Christianity 1952 | Known | Dated; "Leader to confirm" removed |
+| Lewis trilemma (liar, lunatic, Lord; poached egg) | Known: Mere Christianity, book 2 ch. 3 | Paraphrase, attributed |
+| Charles Taylor, enchanted world and buffered self | Known: A Secular Age, 2007 | Paraphrase |
+| Wittgenstein: the mystery is that the world is | Known: Tractatus 6.44, 1921 | Paraphrase, dated |
+| Rieff, the triumph of the therapeutic | Known: 1966 | Kept, dated |
+| Solzhenitsyn: line between good and evil through every heart; "wrote from inside the camps" | Known: The Gulag Archipelago, written after his eight years in the camps, published 1973 | Paraphrase; "from inside" corrected |
+| Marx, "opiate of the masses" | Known as "the opium of the people," 1843-44 | Phrase corrected, unquoted |
+| 1 Corinthians 15:3 creed dated within a few years | Widely held, including by some skeptical scholars | "Many scholars, including some who don't believe it" |
+| Historians "across the spectrum" grant the empty tomb | Overstated | Empty tomb marked as more disputed than crucifixion and appearances |
+| Witnesses "many of whom died rather than recant" | Rests on later tradition | "Several suffered for it" |
+| "Pitiable fraud" (Paul) | Not Paul's words | 1 Corinthians 15:19 quoted in ESV |
+| Mark 2:5 "My son" | ESV reads "Son" | Corrected |
+| Marcion cut the Old Testament | Known: second century | Kept, dated |
+| Biography: atheism as credential (summary, primer, facilitator, FAQ 3, FAQ 10, three promo pieces) | Credentials | Kept once, session 1 teaching, where the old guide said "I once held it myself"; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |

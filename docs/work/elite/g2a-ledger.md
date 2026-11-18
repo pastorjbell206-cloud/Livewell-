@@ -346,3 +346,79 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" on Wright, Hatch, Reeves, Trueman | Known titles | Notes removed; "as Bell's own argument" phrasing cut |
 | Timeline | Old guide had none | None added |
 | Help lines | Old guide had none | None added |
+
+## doubt
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography as credential (summary, primer, FAQ, script, bulletin; atheism and fatherlessness) | Brief: once, only where it does work | Atheism kept once, session 1 teaching, where it explains why the doubt/deconstruction line must not become a weapon; fatherless line and all other uses cut |
+| Narrator "Bell" (31) | Narrator talk | Gone; his teaching in first person |
+| Mark 9:22-24, John 20:25-29, Jude 22, Psalm 13:1-2, Habakkuk 1:2, 2:1, 2:4, 3:17-18, Matthew 11:3-6, 23:13, 23:27-28, 18:6, 27:46, 2 Peter 3:9, Isaiah 53:5, 2 Corinthians 5:21, Job 38:1-4, 42:3, 42:5, 42:7, Luke 18:14, Acts 17:11, Galatians 3:28 | ESV, from memory (no ESV in repo) | Paraphrased verses replaced with ESV wording; Habakkuk 3:17-18 memory verse restored in full (flock line had been dropped); Mark 9:24 memory verse was a paraphrase, now ESV |
+| Luke 1:1-4 "having investigated everything carefully" | Not ESV wording | ESV "having followed all things closely" (Luke 1:3-4) |
+| Matthew 11 note "Jesus does not revoke John's calling" | Text | Restated: Jesus praises John to the crowd (Matthew 11:7-11) |
+| Job "argues for thirty chapters" / "thirty-seven chapters" | Speeches run chapters 3-31, Elihu 32-37 | "through most of his book" |
+| Women's testimony "not admitted in court" | Overstated; restricted, not universally barred | "a woman's word counted for little in court" |
+| New Testament manuscripts "better attested than any other ancient text by an enormous margin" | Known, widely stated | Kept as "far more manuscripts, and far earlier ones, than any other work of ancient literature" |
+| Lewis, The Problem of Pain, doors of hell "locked on the inside" | Web search (1): sentence is in the hell chapter of The Problem of Pain (1940) | Paraphrase with attribution, no quotation marks |
+| Augustine's "restless heart" (bibliography note) | Known | Dropped from the note; book kept |
+| Kepler, Newton, Faraday, Maxwell as believers | Known | Kept, "were believers" (not "overwhelmingly") |
+| "He said it harder than Hitchens ever did" | Name used as decoration | "harder than any of the famous atheists have" |
+| "Leader to confirm" on Williams, McLaren, Ortlund (3) | Titles and authors known; Williams's notes on names and places in the Gospels known | Notes removed; McLaren marked "a voice to understand, not an endorsement" |
+| Help lines | Old guide carried none (no 988, hotline, police or counselor sentence; checked by script) | None removed. Added, as care for the abuse discussion in session 4: believe the person, talk privately, and where someone is in danger help them reach police, child protective services or an advocate outside the church |
+| Timeline | Old guide had none | None added |
+
+## economic-justice
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" (44); "the writer of this study is a pastor in Michigan" | Narrator talk; no location given by James | First person for his teaching; Michigan line cut |
+| "I have five sons" (session 1) and "conditions I would not accept for my sons" (session 2); "a man raising five sons" (primer) | Confirmed fact; use at most once | Kept once, session 2 teaching (the shirt line, where it does work); the other two cut |
+| Jubilee "debts dissolve" (summary, teaching, glossary, timeline, devotionals) | Leviticus 25 returns land and frees Israelites in debt service; the debt release is Deuteronomy 15's seventh year | Corrected everywhere; Deuteronomy 15:1-2 named for the debt release |
+| Amos 2:6 as "a courtroom verdict bought with silver" | One reading; others read debt slavery | Both readings stated |
+| Keller: "tsedaqah without mishpat is to be privately pious and publicly complicit" | Not verified as his wording | Attribution removed; the point stated in the study's own words; Generous Justice kept in bibliography |
+| Keller (Counterfeit Gods) as source of "we aim every hard saying one bracket up" | Not verified | Attribution removed in discussion, case study, devotional and bibliography note |
+| Wright: gleaning makes provision an entitlement, not generosity | Not verified as his claim | Stated in the study's own words from Leviticus 19:9-10; Wright kept in bibliography with a general note |
+| Niebuhr, Moral Man and Immoral Society (1932): private benevolence and justice | Known book and argument | Paraphrase, "argued", no quotation |
+| Needle's Eye gate "no evidence before the Middle Ages" | Late and unsupported | "No evidence such a gate ever existed"; called one of the latest softer readings |
+| "Rich young ruler" | Composite of Mark (a man), Matthew (young), Luke (ruler) | Composite named in the teaching |
+| Zacchaeus "keeps half his goods" | Luke 19:8, gives half to the poor | "Gives half his goods to the poor, keeps the rest" |
+| Chrysostom, sermons on the rich man and Lazarus; exile | Known | Paraphrase; exile tied to his later Constantinople preaching |
+| Basiliad "circa 365" | Begun about 369 | circa 369 |
+| Amos "circa 750 BC" | Usually dated about 760 BC (Amos 1:1, "two years before the earthquake") | circa 760 BC |
+| Acts 4 "circa AD 34" | Early 30s | "early 30s AD"; Acts 4:34 quoted |
+| Wesley "1760 preaches The Use of Money" | Preached from 1744; printed 1760 | Restated |
+| Sider 1973 | First published 1977 | 1977 |
+| Social Gospel "circa 1900" | Rauschenbusch, Christianity and the Social Crisis, 1907 | 1907, book named |
+| Jubilee "circa 1446 BC" | Traditional dating, debated | Kept, marked traditional |
+| Mandeville 1714, Private Vices, Public Benefits; Calvin 1545 letter on usury; Third Lateran 1179; Rerum Novarum 1891; Keller 2010 | Known | Kept |
+| 1 Timothy 6:6-10, 17-19; Matthew 6:24; 2 Corinthians 8:9; Amos 2:6-7, 5:24, 8:5; Isaiah 1:17, 5:8, 58:6-7, 61:1-2; Leviticus 19:9-10, 25:9-23; Deuteronomy 15:1-2; Exodus 3:7-8, 16:18; Mark 10:17-27; Luke 4:18-21, 9:58, 12:15, 19:9; Revelation 3:17; Ezekiel 34:4; Micah 6:8; Matthew 6:12 | ESV, from memory | Paraphrased verses replaced with ESV wording |
+| "Leader to confirm" (4: Myers, Blomberg, Sider, DeYoung and Gilbert) | Titles and authors known | Notes removed; Myers marked "suggestive rather than settled" |
+| caritas narrowing to almsgiving | Broadly known word history | Kept, "in common English" |
+| Help lines | Old guide carried none (checked by script) | None added |
+
+## end-times
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" (11); "Bell came to faith from atheism" in summary, script, FAQ and two objections | Brief: biography once, only where it does work | Atheism kept once, session 5 teaching, where he answers the skeptic's "wishful thinking" charge; all other uses cut |
+| Revelation 1:1 "signifies its message" | ESV reads "made it known"; "signified" is the older (KJV) rendering of the Greek | Both given; the claim no longer rests on the ESV wording |
+| Revelation 20:6 memory verse | ESV ends "Blessed and holy ... !" and "for a thousand years" | Restored to full ESV |
+| Jesus "ate broiled fish on the shore" | Luke 24:42-43 is in a room in Jerusalem; the shore meal (John 21) does not say he ate | "Ate broiled fish in front of his friends (Luke 24:39-43)" |
+| Romans 8:21 "bondage to decay" | ESV "bondage to corruption" | Corrected; Revelation 1:1-3, 5:6, 13:18, 20:1-6, 21:1-5, 22:1-5; Daniel 2:44, 7:17, 9:24; Mark 13:32; Acts 1:7; 2 Peter 3:8-9; Matthew 6:10, 12:28-29, 13:31-33, 24:29-41; Luke 17:20-21, 24:39-43; John 5:28-29, 16:33; 1 Thessalonians 4:13-18; 2 Thessalonians 2:1-3; 1 Corinthians 15:20-26, 42-44, 52; Hebrews 6:5; Colossians 3:3-4; Philippians 1:23, 3:20-21; Isaiah 11:9 to ESV wording, from memory |
+| Revelation's readers asked to "drop a pinch of incense on the imperial altar" | Incense test is attested later (Pliny, about 112); Revelation's setting is earlier | Restated as rising pressure to honor Caesar in cities proud of their imperial temples |
+| Miller "gathered tens of thousands", "sold farms", "a Baptist preacher" | Commonly reported; numbers estimated | "Many thousands"; selling property "by many accounts"; Baptist preacher kept |
+| Daniel dating "circa 167 BC" | Critical dating; traditional dating earlier | Kept with both datings noted |
+| Revelation "circa AD 95" | Majority date; some argue for the 60s | Kept, earlier date noted |
+| Chiliasm "circa 250" | The named chiliasts are second-century (Papias, Justin Martyr, Irenaeus) | "Second century", names given |
+| Montanus "circa 156" | Dates range from about 156 to 172 | circa 170 |
+| City of God "circa 420" | Written 413-426; Book 20 on the millennium | 413-426, Book 20 named |
+| Ladd "1952 publishes work" | Crucial Questions about the Kingdom of God (1952); The Presence of the Future (1974) | Both named, 1952-1974 |
+| Ladd, The Last Things: Resurrection, Judgment, Glory | Subtitle is An Eschatology for Laymen | Corrected |
+| Boettner "The Millennium: A Postmillennial Study, and broader writing on eschatology" | The book is The Millennium | Title corrected |
+| Paul's word for "meet" as a civic welcome to an arriving ruler | Widely argued by commentators | Stated as how the word was often used; no scholar quoted |
+| Wright "the question is not how we get to heaven but how heaven comes here" | His recurring theme in Surprised by Hope | Kept as paraphrase, "as Wright likes to put it", no quotation marks |
+| Nicene Creed "will come again in glory to judge the living and the dead" | Known (ELLC text) | Quoted; Apostles' Creed "the resurrection of the body" quoted |
+| "Leader to confirm" (4: Ladd twice, Riddlebarger, Boettner) | Titles and authors known | Notes removed |
+| "I will tell you where I lean, if a member asks me privately" | His sentence in the old guide | Kept; no position stated (he doesn't name one) |
+| FAQ "the medical, I mean the historical" question | Garbled | Rewritten as "Is the study grounded in scholarship" |
+| Help lines | Old guide carried none (checked by script) | None added |
