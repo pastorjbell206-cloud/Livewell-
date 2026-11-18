@@ -1210,6 +1210,8 @@ function prerenderStudyBible(template) {
       intro ? section("What this book is", para(intro.overview)) : "",
       intro ? section("How it is built", `<ol>${intro.structure.map((x) => `<li><strong>${escapeHtml(`${b.name} ${x.range}: ${x.title}`)}</strong>. ${escapeHtml(x.summary)}</li>`).join("\n")}</ol>`) : "",
       section("The chapters", `<ol>\n${chapters}\n</ol>`),
+      // A book with a teaching introduction (Mark first) shows it, in plain words, before the fuller notes.
+      ...(intro?.teaching?.parts ?? []).map((t) => section(t.h, para(t.body))),
       intro ? section("Who wrote it", para(intro.author)) : "",
       intro ? section("When", para(intro.date)) : "",
       intro ? section("The world it was written in", para(intro.setting)) : "",
