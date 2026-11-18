@@ -117,3 +117,58 @@ Stopped at a clean guide boundary after the-church, to leave room for the gates 
 
 - The Captive Church: the old guide called itself "drawn from James Bell's book The Captive Church". That book is not on the three-book shelf, so the plug is gone. If the book is real and should be named, or if he wants the guide pointed at When God Bless America Replaces Thy Kingdom Come (which is on the shelf), that is his call. No memory of his own was added; the first-person confessions (wanting the shortcut, excusing his own side) are kept in plain form from the old guide.
 - The Church: the guide says "I'm a pastor" and "I've failed the church in my own ways" and "I've felt the pull toward the door ... over ordinary disappointment", all carried from the old guide's self-implication. Whether those sentences are true of him as he would put them is his to confirm or rewrite.
+
+## Fifth run (the-creeds, the-image-of-god)
+
+- **the-creeds** (done): words 22,992 to 19,556; teaching 3,866 to 3,568. "Bell" 6 to 0; "honest" 37 to 5; "Leader to confirm" 3 to 0; contractions 65 to 476. Quotations: Gregory of Nazianzus's "that which He has not assumed He has not healed" now quoted exactly from Letter 101 (checked by search); the Arian slogan and the creed texts kept. No quotation added. Corrected: Athanasius's portrait image (the old guide had it backward); timeline order (Marcion, 144, had sat after the second-century creed) and loose dates; "seventeen centuries" to "more than sixteen"; 1 Timothy 3:16 now includes "we confess". Cut: the FAQ about the writer's atheism; four "Bell says" questions reworded; three "Leader to confirm" notes replaced by dates. Help: none needed (no help topic for this guide). Biography: "came to faith from atheism" once, session 1 teaching, where it speaks to how the word creed sounds from outside; five other uses as credential removed.
+- **the-image-of-god** (done): words 25,979 to 19,884; teaching 5,210 to 4,082. "Bell" 24 to 0; "honest" 32 to 3; "Leader to confirm" 3 to 0; contractions 84 to 467. Quotations: Lewis's two lines from "The Weight of Glory" now quoted exactly and dated (checked by search); Calvin kept as paraphrase. No quotation added. Corrected: the broad and narrow image is later Reformed language, not Calvin's own; Calvin, Augustine, Aquinas, Bonhoeffer and Paul dated; "only the king" softened. Cut: a placeholder Westermann entry; the FAQ about the writer's method; "raised without a father" and "five sons" as credentials. Help: the abuse help topic in sensitive-pages.json is untouched; sessions 3 and 5 now point the leader to the printed help information and the primer names Find Help. Biography: atheism once, session 1 teaching.
+
+### What I ran (fifth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" appears only in Titus 2:13 and inside Lewis's quoted sentence. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-creeds (Gregory), 1 for the-image-of-god (Lewis).
+
+### What only James can supply (fifth run)
+
+- The Creeds: "I came to faith from atheism, so I know how the word creed can sound from outside" is used once, in session 1. Whether he wants to say more is his call.
+- The Image of God: atheism used once, in session 1, beside the reduction. The old summary named his fatherlessness and five sons as credentials; both are gone. "That includes me" in session 5 keeps the old guide's self-implication; nothing else of his was added.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,640 tests).
+
+### Not done or not verified (fifth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-image-of-god, to leave room for the gates and the push. Next in order: **the-lords-prayer**, then the-parables, the-psalms, the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
+
+## Sixth run (the-lords-prayer, the-parables)
+
+- **the-lords-prayer** (done): words 24,807 to 20,029; teaching 4,957 to 4,368. "Bell" 23 to 0; "honest" 64 to 1; "Leader to confirm" 2 to 0; contractions 117 to 616. Quotations of people: none carried in quotation marks; "God helps those who help themselves" kept as a proverb, now attributed to Aesop and Franklin. No quotation added. Scripture now quoted in ESV with references (the old guide ran the verses into its prose unmarked). Corrected: the 2019 change was Pope Francis approving a new Italian wording for the Mass, "do not abandon us to temptation" (checked by search); Origen's On Prayer dated about 233, not 253; the Didache's doxology is the short form "for yours is the power and the glory forever"; a hundred denarii is a few months' wages, not a few days'; Barr's essay titled and dated. Cut: Karl Barth's lectures on prayer (the claim attributed to him could not be checked from here); the FAQ about the writer's method (12 to 11); two "Leader to confirm" notes. Help: the abuse topic in sensitive-pages.json is untouched; sessions 1, 2 and 4 (objections, practice, case studies, a discussion note), FAQ 4, the facilitator script and the primer now point to the help information printed with the guide, and the primer names Find Help. Biography: "I was raised without a father" once, session 1 teaching, where the word Father does its work; the atheism and five sons credentials (summary, primer, FAQ, script) removed.
+- **the-parables** (done): words 24,947 to 19,092; teaching 5,216 to 4,232. "Bell" 21 to 0; "honest" 28 to 0; "Leader to confirm" 2 to 0; contractions 102 to 498. Quotations of people: C. H. Dodd's definition of a parable, now quoted exactly with source and date (checked by search). No quotation added. Scripture now quoted in ESV with references; Luke 10:33 quoted with an ellipsis to avoid "journeyed". Corrected: timeline order (Nathan, about 1000 BC, had sat after Isaiah, 740 BC); Jülicher dated 1886 to 1899, not 1888; Bailey's honor-shame claims marked as his reading; the leaven-as-corruption point is no longer attributed to Snodgrass, and the claim that Snodgrass says Jesus spoke of judgment "more than almost anyone" is no longer his; "half-breed" removed; Zechariah 4:10 is a statement, not a question. Cut: a placeholder bibliography entry ("The Meaning of the Parables" by "pastoral and expository literature"); the FAQ about the writer's method (12 to 11); Bailey's untransliterated village-ceremony term; two "Leader to confirm" notes. Help: no help topic for this guide in sensitive-pages.json; session 5's practice and case study now separate letting go of a debt from going back within reach of harm, and the primer, case study and FAQ point to Find Help. Biography: "I came to faith from atheism" once, session 1 teaching, beside the objection that hiding truth in riddles is unfair; the other uses (summary, primer, two FAQs) removed.
+
+### What I ran (sixth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" appears only inside quoted Scripture (Matthew 13:16) or as a verb. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-lords-prayer (the 2019 Italian wording), 1 for the-parables (Dodd).
+
+### What only James can supply (sixth run)
+
+- The Lord's Prayer: "I was raised without a father, and I know what that word can do" is used once, in session 1, where the word Father is the subject. The old guide used atheism, fatherlessness and five sons together as credentials four times; those are gone. "I have" and "I do" confessions (wandering mind, lying awake over tomorrow) carry the old guide's self-implication in plain form; whether they're true of him as he'd say them is his to confirm.
+- The Parables: "I came to faith from atheism, and I remember thinking something like that" (that a God who hides truth in riddles is unfair) is used once, in session 1. The remembered thought is an inference from the old guide's framing, not something he has told us; he may want to keep, change or cut it.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,640 tests).
+
+### Not done or not verified (sixth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Heidelberg Q&A 126 and Calvin's means-and-end answer paraphrased from memory of the texts, not checked against a copy.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-parables, to leave room for the gates and the push. Next in order: **the-psalms** (abuse and sexual-assault help topics in sensitive-pages.json), then the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.

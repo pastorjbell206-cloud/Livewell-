@@ -231,3 +231,103 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Case-study names Marta, Dean, Renee, Paul | Invented people | Unnamed "Suppose" scenarios |
 | Help lines (abuse, sexual-assault topics) | sensitive-pages.json | Untouched; reporting sentence kept verbatim |
 | Scripture quotations | ESV, from memory | ESV throughout |
+
+## The Creeds
+
+| Claim | How checked | Result |
+|---|---|---|
+| Gregory of Nazianzus: "that which is not assumed is not healed" (old guide, attributed loosely) | Web search: Letter 101 to Cledonius (about 382), NPNF wording "that which He has not assumed He has not healed" | Quoted exactly, attributed, dated |
+| Arian slogan "there was once when he was not" | Known: condemned in the anathemas of Nicaea 325 | Kept as the slogan of his followers |
+| "Arius set it to music, and dockworkers sang it" | Known only as later report (Thalia, Philostorgius); detail of dockworkers not checkable | Softened to "put his teaching into popular verse" |
+| Athanasius deacon at Nicaea, bishop 328, five exiles | Known | Kept |
+| Nicaea 325 about 300 bishops; Constantinople 381 under Theodosius; Ephesus 431; Chalcedon 451 under Marcian, Leo's letter, more than 500 bishops | Known | Kept |
+| Homoousios viewed with suspicion at an earlier council | Known: Antioch 268, against Paul of Samosata | Kept, unnamed |
+| Homoiousios "preferred by a compromise party" | Known: homoiousians, later 350s | "A later middle party" |
+| Athanasius, On the Incarnation: "like sending a painting to repair the painter" | Known: his image is a spoiled portrait whose subject must sit again so it can be redrawn on the same wood (ch. 14) | Corrected to his own image, as paraphrase |
+| Apostles' Creed from the Old Roman Creed, "2nd century" | Known: Kelly, Early Christian Creeds; in use by late 2nd to 3rd century | Dated "late 2nd to 3rd century" |
+| Marcion "circa 144" | Known: traditional date of his break with Rome | Kept; timeline order fixed (it had sat after "2nd century") |
+| "Descended into hell" enters the Western text around 400 | Known: Rufinus's Aquileian creed | Kept; both readings stated, left open |
+| Twelve-apostles legend "medieval" | Known: told by about 400 (Rufinus), elaborated later | "Came centuries later" |
+| Chalcedon's four adverbs | Known: the Definition; common English rendering | Kept, "usually translated" |
+| Oriental Orthodox divide partly verbal | Known: modern scholarship and the joint dialogues of 1989-1990 | "Many scholars and church dialogues" |
+| Nicene Creed wording (Spirit "the Lord, the giver of life ... worshiped and glorified"; "of one substance with the Father") | Known: standard English texts | Kept as creed text |
+| Bibliography: Kelly 1950 and 1958; Ayres 2004; L. T. Johnson 2003; Reeves 2012; Grillmeier 1965/1975; Rusch 1980; Smith 2016; Pelikan 2003 | Known | Dated; "Leader to confirm" removed (3) |
+| Reeves, Smith, Pelikan, Ayres views | Old guide paraphrased them | Kept as paraphrase, no quotation marks |
+| "Seventeen centuries" | Nicaea 325 to now is about 1,700 years; Constantinople 381 about 1,645 | "More than sixteen centuries" or "the centuries" |
+| 1 Timothy 3:16 quoted without "we confess" | ESV includes it | Restored |
+| James 2:19 (added in case study) | ESV has a dash and exclamation | Paraphrased with reference, not quoted |
+| Biography: atheism (summary, primer, FAQ, facilitator script, bulletin, pulpit) | Used as credential | Kept once, session 1 teaching ("I came to faith from atheism, so I know how the word creed can sound from outside"); rest removed; FAQ about the writer's atheism cut (12 to 11) |
+| "Bell says" in four discussion questions | Narrator naming James | Removed |
+| Scripture quotations | ESV, from memory; no ESV in the repository | ESV throughout |
+
+## The Image of God
+
+| Claim | How checked | Result |
+|---|---|---|
+| C. S. Lewis, "The Weight of Glory": "There are no ordinary people. You have never talked to a mere mortal." and "Next to the Blessed Sacrament itself, your neighbour is the holiest object presented to your senses." | Web search: the sermon of 8 June 1941, collected 1949; several reproductions agree | Quoted exactly with source and date |
+| Calvin: image "not annihilated" but "a frightful deformity" | Known: Institutes 1.15.4 (1559) | Kept as paraphrase with the phrase unquoted |
+| "Calvin's distinction" between broad and narrow image | The terms belong to later Reformed theology | Attributed to "Reformed theologians after Calvin" (teaching, glossary, timeline) |
+| Timeline "1536" for Calvin's frightful deformity | The wording is from the final edition | "1536 to 1559" |
+| Middleton, The Liberating Image, "the liberating image" | Known: 2005 | Kept; dated |
+| Egypt and Mesopotamia: only the king is the god's image | Known in outline from Middleton; "only" overstates | "Could be called"; "largely of the king" |
+| Tselem used of statues of gods | Known (e.g. 2 Kings 11:18) | Kept |
+| Augustine (memory, understanding, will); Aquinas (intellect) | Known: On the Trinity about 400 to 420; Summa I q.93 about 1266 to 1268 | Dated |
+| Bonhoeffer, Creation and Fall: Berlin lectures 1932 to 1933, image as relation and "freedom for" | Known | Kept as paraphrase; "regime that would murder him builds its doctrine of lives unworthy of life" in 1933 softened to "as the regime that would later execute him comes to power" |
+| Barth, Church Dogmatics III/1, 1945, relational image | Known | Kept |
+| Martin Luther King Jr. grounding civil rights in the image of God | Known in outline | Paraphrase, no quotation |
+| Bibliography: "In the Beginning... Creation and the Priestly History" by Claus Westermann, "offered as a category" | Not a title I can find; the note called it a category | Cut |
+| Bibliography dates: Kilner 2015; Metaxas 2010 (criticized by historians, now said); Hamilton 1990; Middleton 2005 | Known | Dated; three "Leader to confirm" removed |
+| Psalm 8 "circa 1000 BC"; Paul "circa AD 60" | Traditional; Paul's letters span the 50s and early 60s | "About 1000 BC (traditional)"; "the 50s and early 60s AD" |
+| Biography: atheism (summary, primer, FAQ, facilitator script); "raised without a father", "five sons" (summary) | Credentials | Atheism kept once, session 1 teaching, where it does the work of knowing the reduction from inside; the rest removed; FAQ about the writer's self-implication cut (12 to 11) |
+| "Bell says" (about 20 places) | Narrator naming James | Removed |
+| Help: abuse topic in sensitive-pages.json | Untouched; guide text has no help lines of its own | Session 3 and 5 questions, case study and objection now point to the help information printed with the guide; primer names Find Help |
+| Scripture quotations | ESV, from memory | ESV throughout; John 4:6 in the-creeds paraphrased to avoid "journey" |
+
+## The Lord's Prayer
+
+| Claim | How checked | Result |
+|---|---|---|
+| Pope Francis 2019 change to "lead us not into temptation" | Web search: Avvenire and CNA reports, June 2019; Italian missal "non abbandonarci alla tentazione" | Kept, made exact: Italian wording for the Mass only |
+| Jeremias: no Jewish prayer before Jesus addressed God as Abba | Known: The Prayers of Jesus (English 1967) | Paraphrase, attributed |
+| James Barr, "Abba Isn't 'Daddy'", JTS 1988 | Known | Paraphrase; bibliography title and date set |
+| Tertullian: the prayer a summary of the whole gospel | Known: On Prayer 1, about 200 | Paraphrase |
+| Cyprian on calling God Father and the plural petitions | Known: On the Lord's Prayer, about 252 | Paraphrase |
+| Origen: epiousios found in no other Greek writer, coined by the evangelists | Known: On Prayer 27 | Kept; date corrected from 253 to about 233 |
+| New believers not taught the prayer until baptism | The prayer was handed over to candidates as they came to baptism (fourth century) | Softened to "taught to new believers as they came to baptism", fourth century |
+| Didache: pray three times a day; doxology | Known: Didache 8, short form without "kingdom" | Kept, short form stated |
+| Augustine to Proba | Known: Letter 130, about 412 | Kept |
+| Luther, A Simple Way to Pray, 1535, for Peter the barber | Known | Kept |
+| Calvin, Institutes 3.20, means and end | Known | Paraphrase |
+| Karl Barth on prayer (claim about wills ordered, not erased) | Could not check from here | Cut |
+| Christian Smith, moralistic therapeutic deism; Taylor | Known: Soul Searching 2005; A Secular Age 2007 | Paraphrase; Taylor's idea named (immanent frame) |
+| Heidelberg Catechism on the fifth petition | Known: Q&A 126, 1563 | Paraphrase |
+| Arendt, Eichmann in Jerusalem, "banality of evil" | Known: 1963, trial 1961 | Kept as her phrase, unquoted |
+| "God helps those who help themselves" from Aesop by way of Franklin | Known: Aesop's fable; Poor Richard 1736 | Kept as proverb with attribution |
+| Hedonic treadmill research | General finding | Kept general, no study named |
+| Forgiveness research | General finding | "A good deal of research suggests", no study named |
+| A hundred denarii as "a few days' wages" | A denarius was a day's wage | Corrected to "a few months' wages" |
+| Biography: atheism, fatherless, five sons as credentials (summary, primer, FAQ, script) | Credentials | "Raised without a father" kept once, session 1 teaching; rest removed; FAQ about the writer cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Parables
+
+| Claim | How checked | Result |
+|---|---|---|
+| C. H. Dodd's definition of a parable | Web search: several sources quote it from The Parables of the Kingdom (1935) | Quoted exactly with source and date (objection 2, session 1); glossary quotes a phrase |
+| Dodd, realized eschatology | Known | Kept |
+| Jeremias, The Parables of Jesus, 1947, already and not yet | Known in outline | Kept, softened to "often read as" |
+| Jülicher, one main point, "1888" | Die Gleichnisreden Jesu, 1886 (vol. 1) and 1899 (vol. 2) | Dated 1886 to 1899 |
+| Augustine's allegory of the Samaritan, about 400 | Known: Questions on the Gospels 2.19 | Kept |
+| Bailey: inheritance request like wishing the father dead; patriarch doesn't run; father shields son from village | Known as Bailey's argument (The Cross and the Prodigal 1973; Poet and Peasant 1976; Through Peasant Eyes 1980; Jesus Through Middle Eastern Eyes 2008) | Attributed to Bailey as his reading; note that not every scholar accepts every detail; untransliterated ceremony term cut |
+| Snodgrass on leaven as corruption; on Jesus speaking of judgment "more than almost anyone" | Could not confirm these are his | Leaven point made general (Matthew 16:6), unattributed; judgment claim no longer his |
+| Snodgrass, Stories with Intent, 2008 | Known | Kept |
+| Keller, The Prodigal God, 2008 | Known | Kept; "Leader to confirm" removed |
+| Blomberg, Interpreting the Parables | Known: 1990, 2nd ed. 2012 | Dated; "Leader to confirm" removed |
+| Charles Taylor, the buffered self | Known: A Secular Age, 2007 | Kept, named as his term |
+| Jericho road about seventeen miles | Known | "About seventeen miles" |
+| Jew-Samaritan enmity from 722 BC, Gerizim | Known | Kept; John 4:9 added from Scripture; "half-breed" removed |
+| Timeline: Isaiah 740 BC listed before Nathan 1000 BC | Order wrong | Reordered; dates loosened ("about") |
+| Bibliography "The Meaning of the Parables" by "Pastoral and expository literature" | Placeholder, not a book | Cut |
+| A hundred denarii | About a hundred days' wages | Stated |
+| Biography: atheism (summary, primer, two FAQs) | Credentials | Kept once, session 1 teaching; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory | ESV with references throughout |
