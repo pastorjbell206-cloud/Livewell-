@@ -68,6 +68,7 @@ export default function GuidePath({ slug }: { slug: string }) {
       <SEOMeta
         title={path ? `${path.title}: Study Guides in Order` : "A Reading Path of Study Guides"}
         description={path ? path.subtitle : "Study guides in the order to take them, each one free to use alone or with a group."}
+        url={`https://www.livewellbyjamesbell.co/reading-paths/${slug}`}
       />
       {failed ? (
         <section style={{ padding: "var(--s-6) var(--gutter)" }}>
@@ -88,7 +89,10 @@ export default function GuidePath({ slug }: { slug: string }) {
                   {para}
                 </p>
               ))}
-              <ol style={{ listStyle: "none", padding: 0, margin: "var(--s-4) 0" }}>
+              <h2 className="eyebrow" style={{ margin: "var(--s-4) 0 var(--s-2)" }}>
+                The studies, in order
+              </h2>
+              <ol style={{ listStyle: "none", padding: 0, margin: "0 0 var(--s-4)" }}>
                 {path.stops.map((s) => (
                   <li key={s.n} style={{ borderTop: "1px solid var(--border)" }}>
                     <Link href={stopHref(s.url)} className="gp-stop" style={{ display: "flex", gap: "var(--s-2)", padding: "var(--s-3) 0", textDecoration: "none", color: "inherit", minHeight: 44 }}>
