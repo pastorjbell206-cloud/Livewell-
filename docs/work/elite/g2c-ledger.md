@@ -423,3 +423,23 @@ The second run added three quotations to skeptic that the old guide did not carr
 | "The Undivided Life" as a book by James | Not on bookShelf.ts | Plug dropped |
 | Biography: atheism (summary, primer, FAQ 10); "raised without a father" (session 5) | Credentials | All cut |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Witness
+
+| Claim | How checked | Result |
+|---|---|---|
+| Tertullian, "see how they love one another," circa 197 | Searched: Apology 39; Christian History Institute and Bibliothek der Kirchenväter give "See," they say, "how they love one another" (Latin "Vide, inquiunt, ut invicem se diligant") | Quoted in that wording, dated about 197 |
+| Christians nursing the sick in a plague "circa 165" | Known: the evidence is for the plague of about 250 to 270 (Dionysius of Alexandria, in Eusebius, Church History 7.22); Julian's letter to Arsacius, 362, on Christians feeding pagan poor | Timeline and teaching moved to the third-century plague; Julian added as the hostile observer the old guide alluded to |
+| Finney, revival "not a miracle" but right use of means, "circa 1830s" | Known: Lectures on Revivals of Religion, 1835 | Paraphrase, dated 1835 |
+| Bonhoeffer and the Confessing Church, 1934 | Known: Barmen Declaration, May 1934; Bonhoeffer in London 1933 to 1935, not a signatory | Entry names Barmen and says he served the Confessing Church |
+| Newbigin, congregation as hermeneutic of the gospel, 1989; India decades | Known: The Gospel in a Pluralist Society, 1989; India 1936 to 1974; returned to Britain | Paraphrase, unquoted; "nearly forty years" |
+| Augustine, Confessions "around 400" | Known: about 397 to 400 | Dated |
+| Stark, The Rise of Christianity | Known: 1996; plague-care argument, numbers are his estimates | "Leader to confirm" replaced with "present them as his" |
+| Lewis, Surprised by Joy; Bonhoeffer, The Cost of Discipleship; Koukl, Tactics; Pippert, Out of the Saltshaker; Taylor, A Secular Age; Keller, The Reason for God; Kreider, The Patient Ferment | Known: 1955; 1937; 2009; 1979; 2007; 2008; 2016 | Kept, dated where given; "Leader to confirm" removed |
+| Paul died for the faith (objection, session 5) | Rests on later tradition | Cut; beatings and shipwreck kept (2 Corinthians 11:24-27) |
+| John 9:25 "One thing I know" | ESV "One thing I do know" | Corrected throughout |
+| Mark 9:24 "three words long" | Not so in English or Greek | Dropped; ESV punctuation used |
+| Deuteronomy 10:19 | ESV "Love the sojourner, therefore, for you were sojourners in the land of Egypt" | Quoted as ESV |
+| "I write books" (session 1) | Stamp | Cut |
+| Biography: atheism (summary, primer, sessions 1, 2, 4, FAQ 7, FAQ 10) | Credential | Kept once, session 2 teaching |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
