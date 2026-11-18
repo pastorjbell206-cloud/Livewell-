@@ -152,7 +152,14 @@ export const KIND_LABEL: Record<string, string> = {
   page: "",
 };
 
-export const kindLabel = (href: string) => KIND_LABEL[kindOf(href)] ?? "";
+/**
+ * Find Help pages that are a guide to read, not care for a hard season: "Can
+ * I trust the Bible?" and "Can I trust the church?" are questions, and the
+ * label "Find Help" over them read as crisis care. They are labelled "Guide".
+ */
+export const READING_GUIDES = new Set(["/help/trust-the-bible", "/help/church-hurt"]);
+
+export const kindLabel = (href: string) => (READING_GUIDES.has(href) ? "Guide" : KIND_LABEL[kindOf(href)] ?? "");
 
 /** Where a row goes now: its essay once public, else its stand-in. */
 export function rowTarget(row: TopicsIndexRow): string {

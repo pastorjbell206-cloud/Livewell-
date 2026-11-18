@@ -44,7 +44,9 @@ export function entryId(kind: EntryKind, name: string): string {
   return `${kind}-${slug}`;
 }
 
-export const entryHref = (kind: EntryKind, name: string) => `${HISTORY_HUB}#${entryId(kind, name)}`;
+/** Where an entry lives: the people on their own page, the councils and heresies on the hub. */
+export const entryHref = (kind: EntryKind, name: string) =>
+  `${HISTORY_HUB}${kind === "person" ? "/people" : ""}#${entryId(kind, name)}`;
 
 /** Which tab an anchor belongs to, or null when it is not an entry anchor. */
 export function kindOfAnchor(id: string): EntryKind | null {

@@ -43,6 +43,8 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   https://www.livewellbyjamesbell.co/study/bible/guides/whole-story-2027
 - Church history (the councils, the figures, the heresies, and the arc from
   Pentecost to today): https://www.livewellbyjamesbell.co/theology/history
+- People of church history (A to Z and by age, each with years, place, and
+  why they matter): https://www.livewellbyjamesbell.co/theology/history/people
 - Creeds and confessions (full texts with plain-language notes):
   https://www.livewellbyjamesbell.co/resources/creeds
 - Reading Scripture in Context (background guides: Ancient Near East, Second
@@ -76,6 +78,44 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   https://www.livewellbyjamesbell.co/topics/raising-children-in-a-secular-age
 - Honest answers to hard questions (short answers, with the essay or book that
   goes further where one is on the site): https://www.livewellbyjamesbell.co/answers
+  Each answer has its own page:
+  - Did the resurrection actually happen? https://www.livewellbyjamesbell.co/answers/did-the-resurrection-actually-happen
+  - Why would anyone trust the Bible? https://www.livewellbyjamesbell.co/answers/why-would-anyone-trust-the-bible
+  - If God is good, why is there so much suffering? https://www.livewellbyjamesbell.co/answers/if-god-is-good-why-suffering
+  - What if Christianity is wrong? https://www.livewellbyjamesbell.co/answers/what-if-christianity-is-wrong
+  - Was Jesus just a good teacher? https://www.livewellbyjamesbell.co/answers/was-jesus-just-a-good-teacher
+  - Do I have to choose between faith and science? https://www.livewellbyjamesbell.co/answers/do-i-have-to-choose-between-faith-and-science
+  - Is it okay to be angry at God? https://www.livewellbyjamesbell.co/answers/is-it-okay-to-be-angry-at-god
+  - Can you be a Christian without going to church? https://www.livewellbyjamesbell.co/answers/can-you-be-a-christian-without-church
+  - What if I'm done with church but not with Jesus? https://www.livewellbyjamesbell.co/answers/done-with-church-but-not-jesus
+  - What happens after you deconstruct your faith? https://www.livewellbyjamesbell.co/answers/what-happens-after-deconstruction
+  - How can God be three and one? https://www.livewellbyjamesbell.co/answers/how-can-god-be-three-and-one
+  - Should a Christian follow a political party? https://www.livewellbyjamesbell.co/answers/should-a-christian-follow-a-political-party
+  - What does the Bible actually say about money? https://www.livewellbyjamesbell.co/answers/what-does-the-bible-say-about-money
+  - What does the Bible say about anxiety? https://www.livewellbyjamesbell.co/answers/what-does-the-bible-say-about-anxiety
+  - What do I do when my teenager says they don't believe? https://www.livewellbyjamesbell.co/answers/when-your-teenager-says-they-dont-believe
+  - Is Jesus really the only way to God? https://www.livewellbyjamesbell.co/answers/is-jesus-the-only-way
+  - Does God actually exist? https://www.livewellbyjamesbell.co/answers/does-god-actually-exist
+  - What about those who never heard of Jesus? https://www.livewellbyjamesbell.co/answers/what-about-those-who-never-heard
+  - Can you be good without God? https://www.livewellbyjamesbell.co/answers/can-you-be-good-without-god
+  - Is believing anything on faith irrational? https://www.livewellbyjamesbell.co/answers/is-faith-irrational
+  - Are miracles believable? https://www.livewellbyjamesbell.co/answers/are-miracles-believable
+  - Did God command genocide in the Old Testament? https://www.livewellbyjamesbell.co/answers/did-god-command-genocide
+  - Why didn't the Bible just ban slavery? https://www.livewellbyjamesbell.co/answers/why-didnt-the-bible-just-ban-slavery
+  - Is faith just wishful thinking? https://www.livewellbyjamesbell.co/answers/is-faith-just-wishful-thinking
+  - What did the New Atheists get right? https://www.livewellbyjamesbell.co/answers/what-did-the-new-atheists-get-right
+  - Can a life mean anything without God? https://www.livewellbyjamesbell.co/answers/can-life-mean-anything-without-god
+  - What do Christianity and Islam actually dispute? https://www.livewellbyjamesbell.co/answers/christianity-and-islam-differences
+  - Can you lose your salvation? https://www.livewellbyjamesbell.co/answers/can-you-lose-your-salvation
+  - Is my anxiety a spiritual failure? https://www.livewellbyjamesbell.co/answers/is-anxiety-a-spiritual-failure
+  - Is hell forever, or does it end? https://www.livewellbyjamesbell.co/answers/is-hell-forever-or-does-it-end
+  - Does God choose us, or do we choose him? https://www.livewellbyjamesbell.co/answers/does-god-choose-us-or-do-we-choose-him
+  - How should a Christian read Genesis 1? https://www.livewellbyjamesbell.co/answers/how-should-a-christian-read-genesis-1
+  - What does the Bible say about divorce and remarriage? https://www.livewellbyjamesbell.co/answers/what-does-the-bible-say-about-divorce-and-remarriage
+  - Why does God allow earthquakes, cancer, and animal suffering? https://www.livewellbyjamesbell.co/answers/why-does-god-allow-natural-disasters
+  - What makes us human in the age of AI? https://www.livewellbyjamesbell.co/answers/what-makes-us-human-in-the-age-of-ai
+- For skeptics (Test the Case, the first questions, and the eight-week plan
+  for the curious skeptic): https://www.livewellbyjamesbell.co/skeptics
 - Resources (the hub): https://www.livewellbyjamesbell.co/resources
 - Downloads and PDFs (every printable, free: study-guide leader guides and
   participant handouts, Find Help guides and worksheets, eight-week plan
