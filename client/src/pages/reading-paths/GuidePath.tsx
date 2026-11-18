@@ -50,7 +50,6 @@ export default function GuidePath({ slug }: { slug: string }) {
 
   useEffect(() => {
     let stale = false;
-    setFailed(false);
     fetchJson("/reading-paths/index.json", isFile)
       .then((f) => {
         if (stale) return;
@@ -72,7 +71,10 @@ export default function GuidePath({ slug }: { slug: string }) {
       />
       {failed ? (
         <section style={{ padding: "var(--s-6) var(--gutter)" }}>
-          <LoadFailed what="This reading path" onRetry={() => setNonce((n) => n + 1)} backHref="/studyguides" backLabel="All study guides" />
+          <LoadFailed what="This reading path" onRetry={() => {
+              setFailed(false);
+              setNonce((n) => n + 1);
+            }} backHref="/studyguides" backLabel="All study guides" />
         </section>
       ) : !path ? (
         <div style={{ minHeight: "60vh" }} data-lw-loading aria-busy="true" />
