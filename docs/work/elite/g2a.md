@@ -25,8 +25,8 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 ## Where this share stands
 
-Done, committed and pushed: 1 to 11 (after-christendom through church-and-empire).
-Not started: 12 to 20 (contentment through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the next run should start at contentment, then deconstruction.
+Done, committed and pushed: 1 to 17 (after-christendom through end-times).
+Not started: 18 to 20 (fatherhood, forgiveness, friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the fourth did contentment, deconstruction and deep-roots. The fifth run did doubt, economic-justice and end-times. The next run should start at fatherhood.
 
 Third run notes: christian-nationalism and church-and-empire each carry 25 short devotionals (five per session); these were rewritten too, keeping each day's title and passage, as the pastoral-health pilot did. Neither guide nor character-before-competence had help lines.
 
@@ -45,6 +45,12 @@ Third run notes: christian-nationalism and church-and-empire each carry 25 short
 | character-before-competence | 25,008 / 17,074 | 42 / 0 | 37 / 3 | 7 / 0 | Paraphrased: Willard (hurry, via Ortberg, searched); Peterson's shopkeepers (searched); Abba Moses's cell. Cut: Willard "who they are becoming" line (unverified) | One skill on the lists restated with Titus 1:9; Calvin's elders 1541 (not 1559); Benedict about 530; Acts 20:28, 1 Timothy 3:4 and Deuteronomy 5:15 to ESV; research and ratio claims cut; off-shelf book plug dropped |
 | christian-nationalism | 23,308 / 20,235 (25 devotionals included) | 46 / 0 | 47 / 1 | 1 / 0 | Paraphrased and re-sourced: Niebuhr (searched; "demonic" line not found, now Moral Man and Immoral Society). Kept as paraphrase: Newbigin, Augustine, Hauerwas and Willimon, Noll. Cut: none | Whitehead and Perry's definition and church-attendance finding corrected (searched); Augsburg 1555 behind Westphalia; Constitution claim narrowed; Colossians 2:15 and 1 Kings 8:11 to ESV; biography credential, "Michigan pastor" and method FAQ cut |
 | church-and-empire | 26,257 / 19,496 (25 devotionals included) | 42 / 0 | 28 / 2 | 3 / 0 | Kept as paraphrase: Tertullian (On Idolatry; Apology), Pliny, Barmen. Paraphrased: Newbigin, Kierkegaard. Cut: none | Mark 12:16 "likeness", 1 Peter 2:9 and Matthew 13:31 to ESV; Luther 1523 (not 1521); Augsburg 1555 behind Westphalia; Stark's account widened; five-sons line kept once, in session 2 |
+| contentment | 24,408 / 19,020 | 26 / 0 | 32 / 0 | 3 / 0 | Kept: Augustine's restless heart; Burroughs's definition (searched). Paraphrased: Burroughs on subtraction and on upward comparison, Girard, Taylor, Brueggemann. Cut: Burroughs "a little in the hand" line | Job's restoration acknowledged; Ecclesiastes date marked debated; Psalm 63:1 and James 4:1-2 to ESV; money-and-happiness plateau stated as argued; placeholder bibliography entry cut; biography-as-credential cut |
+| deconstruction | 24,270 / 19,403 | 42 / 0 | 140 / 12 | 4 / 0 | None carried; none added | 1 Thessalonians 5:21, Psalm 34:18, Matthew 23:27 to ESV; mustard-seed passages separated (Luke 17, Matthew 17, Matthew 13); Job, Calvin, Kierkegaard, Lewis and Luther dates fixed; Surprised by Doubt authors corrected (searched); McKnight spelling; five case studies framed as "Suppose" |
+| deep-roots | 25,215 / 20,152 | 40 / 0 | 40 / 9 | 2 / 0 | Paraphrased: Solzhenitsyn, Bonhoeffer, Gregory of Nazianzus, Chesterton, Augustine, Bavinck, Barth, Luther. Cut: Capon and McGrath lines from the teaching | Off-shelf Deep Roots plug dropped; incurvatus in se credited to Luther; 1 Corinthians 15:3-4, 2 Timothy 3:16, Romans 1:17 to ESV; Nicaea eye story placed correctly; Wannsee claim narrowed; inerrancy section made fair to both sides |
+| doubt | 19,211 / 17,554 | 31 / 0 | 101 / 2 | 3 / 0 | Paraphrased: Lewis on hell's doors (searched). Cut: Augustine's restless heart line from a note; Hitchens name | Habakkuk 3:17-18 and Mark 9:24 memory verses to full ESV; Luke 1:3-4 to ESV; women's testimony and Job chapter counts narrowed; biography kept once (atheism, session 1); abuse-care sentences added in session 4 and the primer |
+| economic-justice | 26,791 / 23,290 (25 devotionals included) | 44 / 0 | 28 / 0 | 4 / 0 | Paraphrased: Niebuhr, Chrysostom, Basil, Ellul, Brueggemann, Taylor, Anderson, Myers. Cut: Keller and Wright attributions that could not be verified | Jubilee no longer said to cancel debts (that is Deuteronomy 15); Amos 2:6 read two ways; Needle's Eye claim narrowed; rich young ruler shown as a composite; Basiliad, Amos, Wesley, Sider and Social Gospel dates fixed; five-sons line kept once (session 2) |
+| end-times | 23,598 / 19,961 | 11 / 0 | 25 / 1 | 4 / 0 | Paraphrased: Wright on heaven coming down. Quoted: the Nicene and Apostles' Creeds. Cut: none | Revelation 1:1 "signifies" given as the older rendering; Revelation 20:6 and Romans 8:21 to ESV; broiled fish placed in Luke 24; incense test, chiliasm, Montanus, City of God and Ladd dates fixed; Ladd and Boettner titles corrected; atheism kept once (session 5) |
 
 Help lines: aging-and-legacy and anxiety each keep their three 988 sentences unchanged and in place; anger keeps its domestic-violence and "never return to harm" sentences unchanged. Checked by script against the old files.
 
@@ -69,14 +75,25 @@ Second run (attention, baptism-and-communion, believe): validate-studyguides aft
 
 Third run (character-before-competence, christian-nationalism, church-and-empire): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed (run after guide 2 and again after guide 3); pnpm check passed; pnpm test 144 files passed, 7 skipped, 1639 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 4 (Willard and Ortberg on hurry; Peterson's shopkeepers; Niebuhr's "demonic" line, not found; Whitehead and Perry on religiosity).
 
+Fourth run (contentment, deconstruction, deep-roots): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed after the last guide; pnpm check passed; pnpm test 144 files passed, 7 skipped, 1640 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 2 (Burroughs's definition of contentment, found; the authors of Surprised by Doubt, Chatraw and Carson). Deconstruction keeps all seven of its abuse and reporting sentences word for word, checked by script. Contentment and deep-roots had no help lines. Every case study in deconstruction was told as a real pastor's story; all five are now framed as "Suppose".
+
+
+Fifth run (doubt, economic-justice, end-times): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed after the last guide; pnpm check passed; pnpm test 144 files passed, 7 skipped, 1640 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 1 (Lewis, The Problem of Pain, the doors of hell locked on the inside; found). Doubt is crisis-facing but its old file carried no help lines (no 988, hotline, counselor or police sentence; checked by script), so none could be lost; its path to help is the Find Help block the page renders, which this work didn't touch. Because session 4 discusses abuse by church leaders, I added a few plain sentences (session 4 teaching and discussion note, the primer, one FAQ): believe the person, talk privately, and where someone is in danger help them reach police, child protective services, or an advocate outside the church. Economic-justice's 25 devotionals were rewritten, keeping each day's title and passage.
 ## What I did not do or verify
 
-- Guides 12 to 20 are not rewritten.
+- Guides 18 to 20 (fatherhood, forgiveness, friendship) are not rewritten.
 - ESV wording was quoted from memory; there is no ESV in the repository to check against.
 - Book dates and titles marked "Known" in the ledger were not searched.
 - PDFs were not rebuilt (another unit owns pnpm pdfs).
 
 ## What only James can supply
+
+9. Doubt: I added sentences about responding to abuse (believe, talk privately, police or child protective services or an outside advocate). If he wants different wording, or a named help line, it's in session 4 and the leader primer.
+10. Economic-justice: the five-sons line is kept once (session 2, the shirt made by hands he'll never meet). Keller and Wright are no longer credited with two lines I couldn't verify; if he has the page references, the attributions can return.
+11. End-times: the old guide says he'll tell people privately where he leans on the millennium. I kept that sentence and stated no position. If he wants his view named, it belongs in session 2 with the objection he can't fully answer.
+
+7. Deep Roots: the guide was drawn from his book Deep Roots, which isn't on the three-book shelf, so the plugs are gone (the guide's own title stays). Tell me if the book should be offered.
+8. Contentment and deconstruction each gave his biography as a credential in the summary and FAQ; I cut it. Deep Roots keeps his atheism once, in the leader's primer, where it explains why the study translates terms.
 
 5. Character Before Competence was built on his book of that name, which is not on the three-book shelf, so the plug is gone. Tell me if that book should be offered.
 6. In church-and-empire I kept his five-sons sentence once (session 2, the grief over a thinner world). If he'd rather it go, it is one sentence.

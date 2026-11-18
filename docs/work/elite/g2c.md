@@ -144,3 +144,134 @@ Stopped at a clean guide boundary after the-church, to leave room for the gates 
 ### Where this run stopped
 
 Stopped at a clean guide boundary after the-image-of-god, to leave room for the gates and the push. Next in order: **the-lords-prayer**, then the-parables, the-psalms, the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
+
+## Sixth run (the-lords-prayer, the-parables)
+
+- **the-lords-prayer** (done): words 24,807 to 20,029; teaching 4,957 to 4,368. "Bell" 23 to 0; "honest" 64 to 1; "Leader to confirm" 2 to 0; contractions 117 to 616. Quotations of people: none carried in quotation marks; "God helps those who help themselves" kept as a proverb, now attributed to Aesop and Franklin. No quotation added. Scripture now quoted in ESV with references (the old guide ran the verses into its prose unmarked). Corrected: the 2019 change was Pope Francis approving a new Italian wording for the Mass, "do not abandon us to temptation" (checked by search); Origen's On Prayer dated about 233, not 253; the Didache's doxology is the short form "for yours is the power and the glory forever"; a hundred denarii is a few months' wages, not a few days'; Barr's essay titled and dated. Cut: Karl Barth's lectures on prayer (the claim attributed to him could not be checked from here); the FAQ about the writer's method (12 to 11); two "Leader to confirm" notes. Help: the abuse topic in sensitive-pages.json is untouched; sessions 1, 2 and 4 (objections, practice, case studies, a discussion note), FAQ 4, the facilitator script and the primer now point to the help information printed with the guide, and the primer names Find Help. Biography: "I was raised without a father" once, session 1 teaching, where the word Father does its work; the atheism and five sons credentials (summary, primer, FAQ, script) removed.
+- **the-parables** (done): words 24,947 to 19,092; teaching 5,216 to 4,232. "Bell" 21 to 0; "honest" 28 to 0; "Leader to confirm" 2 to 0; contractions 102 to 498. Quotations of people: C. H. Dodd's definition of a parable, now quoted exactly with source and date (checked by search). No quotation added. Scripture now quoted in ESV with references; Luke 10:33 quoted with an ellipsis to avoid "journeyed". Corrected: timeline order (Nathan, about 1000 BC, had sat after Isaiah, 740 BC); Jülicher dated 1886 to 1899, not 1888; Bailey's honor-shame claims marked as his reading; the leaven-as-corruption point is no longer attributed to Snodgrass, and the claim that Snodgrass says Jesus spoke of judgment "more than almost anyone" is no longer his; "half-breed" removed; Zechariah 4:10 is a statement, not a question. Cut: a placeholder bibliography entry ("The Meaning of the Parables" by "pastoral and expository literature"); the FAQ about the writer's method (12 to 11); Bailey's untransliterated village-ceremony term; two "Leader to confirm" notes. Help: no help topic for this guide in sensitive-pages.json; session 5's practice and case study now separate letting go of a debt from going back within reach of harm, and the primer, case study and FAQ point to Find Help. Biography: "I came to faith from atheism" once, session 1 teaching, beside the objection that hiding truth in riddles is unfair; the other uses (summary, primer, two FAQs) removed.
+
+### What I ran (sixth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" appears only inside quoted Scripture (Matthew 13:16) or as a verb. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-lords-prayer (the 2019 Italian wording), 1 for the-parables (Dodd).
+
+### What only James can supply (sixth run)
+
+- The Lord's Prayer: "I was raised without a father, and I know what that word can do" is used once, in session 1, where the word Father is the subject. The old guide used atheism, fatherlessness and five sons together as credentials four times; those are gone. "I have" and "I do" confessions (wandering mind, lying awake over tomorrow) carry the old guide's self-implication in plain form; whether they're true of him as he'd say them is his to confirm.
+- The Parables: "I came to faith from atheism, and I remember thinking something like that" (that a God who hides truth in riddles is unfair) is used once, in session 1. The remembered thought is an inference from the old guide's framing, not something he has told us; he may want to keep, change or cut it.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,640 tests).
+
+### Not done or not verified (sixth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Heidelberg Q&A 126 and Calvin's means-and-end answer paraphrased from memory of the texts, not checked against a copy.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-parables, to leave room for the gates and the push. Next in order: **the-psalms** (abuse and sexual-assault help topics in sensitive-pages.json), then the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
+
+## Seventh run (repair to the-parables; the-psalms, the-story-of-the-bible)
+
+### Repair: the-parables
+
+- Session 1 read "I came to faith from atheism, and I remember thinking something like that" (that a God who hides truth in riddles is unfair). The remembered thought was inferred, not something James said. It now reads "That's an objection a thoughtful skeptic raises, and I want to honor it." The guide now carries no biography at all.
+- Searched the whole guide for "I remember", "remember", "I used to", "when I was", "I once", "I've seen", "years ago", "I grew up", "I felt", "I recall" against the version before commit 33350915. No other recollection, feeling or habit of his was added; the other matches are group instructions, Scripture, or sentences the old guide carried.
+
+### the-psalms (done)
+
+- Words 23,878 to 19,323; teaching 4,402 to 3,973. "Bell" 23 to 0; "honest" 88 to 11 (the title keeps "Honest Prayer"); "Leader to confirm" 6 to 0; contractions 82 to 572.
+- Quotations of people: Calvin's "An Anatomy of all the Parts of the Soul" now quoted exactly from the Calvin Translation Society preface (checked by search); his mirror sentence kept as paraphrase. Athanasius, Lewis and Bonhoeffer kept as paraphrase with attribution. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout (the old guide ran verses into its prose unmarked).
+- Corrected: the Athanasius bibliography entry (titled "Reflections on the Psalms as the Prayer Book of Christ" with the letter as its author) is now Letter to Marcellinus by Athanasius; timeline no longer says the Songs of Ascent "develop" around 950 BC or that the Psalter reached its final shape in 515 BC; Septuagint dated third to second century BC; Augustine's Expositions dated about 392 to 422; "a thousand miles" to "hundreds of miles"; children dying in the fall of Jerusalem tied to Lamentations 2:11; Brueggemann's remark that a church without lament forces a choice between honesty and faith is no longer put in his mouth.
+- Cut: the placeholder bibliography entry "A Sacrifice of Praise" by "counseling and pastoral literature on lament" (12 to 11 entries); six "Leader to confirm" notes; the biography as credential (summary, primer, facilitator script, FAQ, three promo pieces, session 5 teaching).
+- Help: sensitive-pages.json untouched (topics abuse and sexual-assault). Every help sentence in the old guide (session 3 case study's path to a counselor and the validate-the-rage lines, the primer's disclosure paragraph, the facilitator's private-availability and open-door lines, the cadence care notes) checked by script as present word for word in both files. Added: session 3 case study and practice, FAQ 2 and the primer point to the help information printed with the guide; the primer names Find Help. Session 3 deeper now says forgiving never requires staying within reach of harm.
+- Biography: "I came to faith from atheism and had to learn to pray from scratch" once, session 1 teaching. The old guide's promo said he "came to faith from atheism and had to learn to pray from scratch"; nothing beyond that was added. Three sentences I first drafted that gave him a feeling or memory ("I've felt that pull as a pastor", "I've seen it in people", "I've done some of that burying myself") were removed before commit.
+
+### the-story-of-the-bible (done)
+
+- Words 25,833 to 20,502; teaching 5,393 to 4,612. "Bell" 29 to 0; "honest" 68 to 6; "Leader to confirm" and "Leader to weigh" 6 to 0; contractions 67 to 544.
+- Quotations of people: none carried in quotation marks except Scripture. Lewis's trilemma, Taylor's buffered self, Rieff's triumph of the therapeutic, Solzhenitsyn's line through every heart, Wittgenstein's "that it is", Stott and Wright kept as paraphrase with attribution and dates. "Opiate of the masses" now "the opium of the people," Marx's phrase, unquoted. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout; Isaiah 53:6 quoted around the ESV's own dash.
+- Corrected: "four thousand years" from Abraham to Christ (it is about two thousand) everywhere; Genesis 1 says "good" six times and then "very good", not "seven times good, and then very good"; Solzhenitsyn wrote after the camps, not "from inside" them; "Son, your sins are forgiven" (ESV) for "My son"; 1 Corinthians 15:19 quoted in place of the invented "pitiable fraud"; the claim that historians "across the spectrum" grant the empty tomb now says that point is more disputed; Wright's five acts given as he lists them (the fifth is the church) and Bartholomew and Goheen's drama noted as six acts; Simply Christian's four echoes named correctly; Exodus and Abraham dates marked as debated or traditional; Revelation dated "about AD 95 (a common dating)"; prophets dated Amos to Malachi.
+- Cut: the FAQ about the writer bringing himself in (12 to 11); "Leader to confirm" and "Leader to weigh" notes; the biography as credential (summary, primer, facilitator script, FAQ 3, three promo pieces).
+- Help: no help topic for this guide in sensitive-pages.json. Added: session 2's case study (a woman hurt by a harsh church) and session 5's (a grieving widower) point to a pastor or counselor and Find Help; the primer names Find Help and the two tender sessions; the deeper notes say being sinned against is not the same as sinning.
+- Biography: "I came to faith from atheism, so I've held this view myself" once, session 1 teaching, beside the materialist account. The old guide said "I once held it myself" in the same place; nothing beyond that was added.
+
+### What I ran (seventh run)
+
+- `node scripts/validate-studyguides.mjs` after the repair and after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Help lines in the-psalms checked by script, word for word, against the old file; sensitive-pages.json and crisis data untouched.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" as an adjective appears only inside quoted Scripture. Every exclamation point is inside quoted Scripture.
+- Web searches: 1 for the-psalms (Calvin's preface), 0 for the-story-of-the-bible.
+- Gates, run after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed; `pnpm test`: 144 files passed, 7 skipped (1,642 tests).
+
+### What only James can supply (seventh run)
+
+- The Parables: no longer names his atheism at all after the repair; if he wants his own memory of that objection there, it has to come from him.
+- The Psalms: "I came to faith from atheism and had to learn to pray from scratch" in session 1. The old promo kit said this of him; whether he'd say it this way is his to confirm.
+- The Story of the Bible: "I came to faith from atheism, so I've held this view myself" (the materialist account) in session 1, carried from the old "I once held it myself."
+
+### Not done or not verified (seventh run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Bonhoeffer's and Lewis's arguments paraphrased from memory of the books, not checked against copies.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after the-story-of-the-bible. Next in order: **the-undivided-life**, then witness, womanhood, work-and-vocation.
+
+## Eighth run (the-undivided-life, witness)
+
+### the-undivided-life (done)
+
+- Words 24,844 to 22,853; teaching 6,693 to 6,130. "Bell" 54 to 0 (the remaining matches are "Bellah"); "honest" 38 to 11; "Leader to confirm" 4 to 0; contractions 37 to 642. Every teaching now runs in paragraphs (it was one block per session).
+- Quotations of people: none carried in quotation marks except Scripture. Kuyper's "square inch" (1880) kept as paraphrase, without the quoted "Mine"; Bellah, Taylor, Smith, Heschel ("palace in time"), Brueggemann ("anxiety system"), Keller (contract and covenant) and Plantinga (shalom as universal flourishing, wholeness and delight; sin as its vandalism) kept as paraphrase with attribution and dates. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout. Corrected: Romans 12:1 "reasonable worship" (KJV) to the ESV's "spiritual worship," with a note that the word can be rendered "rational"; 1 Corinthians 13 "keeps no record of wrongs" (NIV) to the ESV's "not irritable or resentful," with the Greek sense of counting wrongs explained; Malachi 2:14 "wife of your covenant" to "your wife by covenant"; Jeremiah 29:11 "plans for wholeness" to the ESV's "plans for welfare," with the Hebrew shalom named.
+- Corrected: the timeline put Hosea at about 1000 BC with David (Hosea is about 750 BC; now its own entry, 13 to 14 entries); Luther's 1520 "milkmaid" (a popular attribution) now his cobbler, smith and farmer in To the Christian Nobility; Ephesians and Philippians dated about AD 60 to 62; the Exodus date marked traditional and debated; Bellah's finding stated as the book puts it (individualism as Americans' "first language"); Keller's contract and covenant distinction credited to The Meaning of Marriage, not Every Good Endeavor; FAQ 1 and FAQ 4 claimed the leader primer said things it didn't, so the primer now says them (a study that leaves people more ashamed has failed; covenant never requires staying in danger).
+- Cut: the plug for "James Bell's book The Undivided Life" (not on the three-book shelf) from the summary and all three promo pieces; four "Leader to confirm" notes and "Not cited by Bell directly"; the biography as credential ("came to faith from atheism" in the summary, primer and FAQ 10; "I was raised without a father" in session 5's teaching). The guide now carries no biography. FAQ 10 ("Why does the study keep implicating the writer") is now "Why does the study ask the leader to go first?" (count kept at 12).
+- Help: no help topic for this guide in sensitive-pages.json. Added: the leader primer's paragraph on a dangerous marriage (don't counsel staying; talk privately; a pastor, a counselor, Find Help) and on not shaming financial hardship; FAQ 4 points a person in danger to their leader or a pastor and Find Help; session 3's practice, discussion note and prayer, session 4's note that some exhaustion is necessity not pride, session 5's note on hardship, and the facilitator's close inviting anyone carrying something heavier to talk afterward.
+- First person: only what the old guide stated of him ("I've lived in the boxes," "I've flinched," "I won't tell you I've arrived," "I'd counsel anyone," "I say it about myself before I say it about you," "a man still arguing with his own heart"). Nothing added.
+
+### What only James can supply (eighth run)
+
+- The Undivided Life: the old guide said the study was "drawn from James Bell's book The Undivided Life." That book isn't on the shelf, so the plug is gone. If the book exists and he wants it named, that's his call.
+- The Undivided Life: the old session 5 said "I was raised without a father, and I have lived in the boxes." It did no work there, so it's cut. If he wants his fatherlessness tied to the idea of producing one's own worth (session 4), that sentence has to come from him.
+
+### witness (done)
+
+- Words 25,536 to 21,804; teaching 7,225 to 5,811. "Bell" 22 to 0; "honest" 124 to 8; "Leader to confirm" 5 to 0; "steelman" 2 to 0; contractions 82 to 679. Every teaching now runs in paragraphs.
+- Quotations of people: Tertullian's "See," they say, "how they love one another" (Apology 39) now quoted as the Christian History Institute and Bibliothek der Kirchenväter render it (checked by search; the old timeline carried it unquoted). Finney (1835), Newbigin (the congregation as the hermeneutic of the gospel), Augustine, Lewis and Bonhoeffer kept as paraphrase with attribution. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout. Corrected: John 9:25 "One thing I know" to the ESV's "One thing I do know" everywhere (teaching, FAQ, glossary, quote card); Deuteronomy 10:19 quoted as the ESV has it ("sojourner"); "I believe, help my unbelief" given the ESV punctuation, and the claim that it is "three words long" dropped.
+- Corrected: the timeline's plague of "circa 165" (the Antonine plague, where Christian nursing is not documented) is now the plague of about 250 to 270, with Dionysius of Alexandria's account and Julian's complaint of 362, which is the evidence the old guide's "documented even by hostile observers" was reaching for; Finney dated to his 1835 Lectures; 1934 entry now names the Barmen Declaration and says Bonhoeffer served the Confessing Church (he did not sign at Barmen); Corinthians about AD 54, 1 Peter about 62 to 64, Pentecost about 30 to 33, Confessions 397 to 400; Paul's death "for the faith" dropped from the objection (it rests on tradition), beatings and shipwreck kept with 2 Corinthians 11; FAQ 0 claimed the leader primer said a study that leaves people more ashamed has failed, so the primer now says it.
+- Cut: five "Leader to confirm" notes (Stark's figures now "estimates, present them as his"); "I write books" (stamp); the biography as credential (summary, primer, session 1 teaching, objection responses in sessions 1, 2 and 4, FAQ 7 and FAQ 10).
+- Help: no help topic for this guide in sensitive-pages.json. Added: the primer's paragraph on people wounded by churches that pressured or controlled them (listen, follow up privately, a pastor or counselor, Find Help); session 3's discussion note not to rush such a person toward reconciliation; FAQ 11 and the facilitator's close keep the invitation to talk privately.
+- Biography: "I came to faith from atheism" once, session 2 teaching, where the skeptic's distrust is heard "from the inside." The old guide said "I take it from the inside, because I was the skeptic" in the same place. Session 4's old self-implication ("a story like his, atheist to believer... invites performance") now addresses everyone whose story fits the dramatic arc; it no longer says anything of James.
+- First person otherwise only what the old guide stated ("it has tempted me" of the argument-winner, "this session indicts me as much as anyone," "I've come to believe" some dread is wisdom).
+
+### What only James can supply (witness)
+
+- Session 2: "I came to faith from atheism" beside the skeptic's distrust. If he wants a memory of being treated as a target himself, it has to come from him; the guide claims none.
+- Session 4 used to point to his own atheist-to-believer story as a temptation to perform. That's now general. Whether he wants to say it of himself is his call.
+
+### What I ran (eighth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" appears only as a verb or inside quoted Scripture; every exclamation point is inside quoted Scripture.
+- Web searches: 0 for the-undivided-life, 1 for witness (Tertullian).
+- Gates, after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed, each exit code checked; `pnpm test`: 144 files passed, 7 skipped (1,642 tests).
+
+### Not done or not verified (eighth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Kuyper, Heschel, Brueggemann, Keller, Plantinga, Bellah, Finney and Newbigin paraphrased from memory of the books, not checked against copies.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after witness, to leave room for the gates and the push. Next in order: **womanhood**, then work-and-vocation.

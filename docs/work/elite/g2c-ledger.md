@@ -282,3 +282,164 @@ The second run added three quotations to skeptic that the old guide did not carr
 | "Bell says" (about 20 places) | Narrator naming James | Removed |
 | Help: abuse topic in sensitive-pages.json | Untouched; guide text has no help lines of its own | Session 3 and 5 questions, case study and objection now point to the help information printed with the guide; primer names Find Help |
 | Scripture quotations | ESV, from memory | ESV throughout; John 4:6 in the-creeds paraphrased to avoid "journey" |
+
+## The Lord's Prayer
+
+| Claim | How checked | Result |
+|---|---|---|
+| Pope Francis 2019 change to "lead us not into temptation" | Web search: Avvenire and CNA reports, June 2019; Italian missal "non abbandonarci alla tentazione" | Kept, made exact: Italian wording for the Mass only |
+| Jeremias: no Jewish prayer before Jesus addressed God as Abba | Known: The Prayers of Jesus (English 1967) | Paraphrase, attributed |
+| James Barr, "Abba Isn't 'Daddy'", JTS 1988 | Known | Paraphrase; bibliography title and date set |
+| Tertullian: the prayer a summary of the whole gospel | Known: On Prayer 1, about 200 | Paraphrase |
+| Cyprian on calling God Father and the plural petitions | Known: On the Lord's Prayer, about 252 | Paraphrase |
+| Origen: epiousios found in no other Greek writer, coined by the evangelists | Known: On Prayer 27 | Kept; date corrected from 253 to about 233 |
+| New believers not taught the prayer until baptism | The prayer was handed over to candidates as they came to baptism (fourth century) | Softened to "taught to new believers as they came to baptism", fourth century |
+| Didache: pray three times a day; doxology | Known: Didache 8, short form without "kingdom" | Kept, short form stated |
+| Augustine to Proba | Known: Letter 130, about 412 | Kept |
+| Luther, A Simple Way to Pray, 1535, for Peter the barber | Known | Kept |
+| Calvin, Institutes 3.20, means and end | Known | Paraphrase |
+| Karl Barth on prayer (claim about wills ordered, not erased) | Could not check from here | Cut |
+| Christian Smith, moralistic therapeutic deism; Taylor | Known: Soul Searching 2005; A Secular Age 2007 | Paraphrase; Taylor's idea named (immanent frame) |
+| Heidelberg Catechism on the fifth petition | Known: Q&A 126, 1563 | Paraphrase |
+| Arendt, Eichmann in Jerusalem, "banality of evil" | Known: 1963, trial 1961 | Kept as her phrase, unquoted |
+| "God helps those who help themselves" from Aesop by way of Franklin | Known: Aesop's fable; Poor Richard 1736 | Kept as proverb with attribution |
+| Hedonic treadmill research | General finding | Kept general, no study named |
+| Forgiveness research | General finding | "A good deal of research suggests", no study named |
+| A hundred denarii as "a few days' wages" | A denarius was a day's wage | Corrected to "a few months' wages" |
+| Biography: atheism, fatherless, five sons as credentials (summary, primer, FAQ, script) | Credentials | "Raised without a father" kept once, session 1 teaching; rest removed; FAQ about the writer cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Parables
+
+| Claim | How checked | Result |
+|---|---|---|
+| C. H. Dodd's definition of a parable | Web search: several sources quote it from The Parables of the Kingdom (1935) | Quoted exactly with source and date (objection 2, session 1); glossary quotes a phrase |
+| Dodd, realized eschatology | Known | Kept |
+| Jeremias, The Parables of Jesus, 1947, already and not yet | Known in outline | Kept, softened to "often read as" |
+| Jülicher, one main point, "1888" | Die Gleichnisreden Jesu, 1886 (vol. 1) and 1899 (vol. 2) | Dated 1886 to 1899 |
+| Augustine's allegory of the Samaritan, about 400 | Known: Questions on the Gospels 2.19 | Kept |
+| Bailey: inheritance request like wishing the father dead; patriarch doesn't run; father shields son from village | Known as Bailey's argument (The Cross and the Prodigal 1973; Poet and Peasant 1976; Through Peasant Eyes 1980; Jesus Through Middle Eastern Eyes 2008) | Attributed to Bailey as his reading; note that not every scholar accepts every detail; untransliterated ceremony term cut |
+| Snodgrass on leaven as corruption; on Jesus speaking of judgment "more than almost anyone" | Could not confirm these are his | Leaven point made general (Matthew 16:6), unattributed; judgment claim no longer his |
+| Snodgrass, Stories with Intent, 2008 | Known | Kept |
+| Keller, The Prodigal God, 2008 | Known | Kept; "Leader to confirm" removed |
+| Blomberg, Interpreting the Parables | Known: 1990, 2nd ed. 2012 | Dated; "Leader to confirm" removed |
+| Charles Taylor, the buffered self | Known: A Secular Age, 2007 | Kept, named as his term |
+| Jericho road about seventeen miles | Known | "About seventeen miles" |
+| Jew-Samaritan enmity from 722 BC, Gerizim | Known | Kept; John 4:9 added from Scripture; "half-breed" removed |
+| Timeline: Isaiah 740 BC listed before Nathan 1000 BC | Order wrong | Reordered; dates loosened ("about") |
+| Bibliography "The Meaning of the Parables" by "Pastoral and expository literature" | Placeholder, not a book | Cut |
+| A hundred denarii | About a hundred days' wages | Stated |
+| Biography: atheism (summary, primer, two FAQs) | Credentials | Kept once, session 1 teaching; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory | ESV with references throughout |
+
+## The Parables (repair, seventh run)
+
+| Claim | How checked | Result |
+|---|---|---|
+| "I came to faith from atheism, and I remember thinking something like that" (session 1) | Old guide (before 33350915) carried no such memory; it was inferred | Rewritten as a skeptic's objection; no memory claimed; atheism no longer named in this guide |
+| Other recollections ("I remember", "I used to", "when I was", "I've seen", "years ago" and similar) | Searched the new guide against the old | None added; other matches are instructions, Scripture, or old wording |
+
+## The Psalms
+
+| Claim | How checked | Result |
+|---|---|---|
+| Calvin: the Psalter "An Anatomy of all the Parts of the Soul" | Web search: CCEL, Calvin Translation Society preface to the Commentary on the Psalms | Quoted exactly; mirror sentence paraphrased |
+| Calvin's commentary, 1557 | Known (Latin edition 1557) | Kept |
+| Athanasius, Letter to Marcellinus: in the Psalms you find your own words | Known in substance | Paraphrase; dated "fourth century" (no exact year) |
+| Luther's 1528 preface: the Psalter "a little Bible" | Known | Kept as paraphrase |
+| Augustine, Expositions of the Psalms, "circa AD 400" | Known: composed about 392 to 422 | Dated 392 to 422 |
+| Bonhoeffer, Psalms: The Prayer Book of the Bible, 1940; Christ prays the Psalms; vengeance psalms hand judgment to God | Known | Paraphrase; "underground seminary" now "trained pastors for the Confessing Church" |
+| Lewis, Reflections on the Psalms, 1958: shocked by the curses; praise completes enjoyment | Known | Paraphrase; "devilish" not repeated |
+| Brueggemann, The Message of the Psalms, 1984: orientation, disorientation, new orientation; Psalm 13 disorientation; Psalm 23 new orientation | Known | Kept |
+| Brueggemann: a church without lament forces a choice between honesty and faith | Not confirmed as his wording | Kept as the guide's own sentence, unattributed |
+| Laments about a third of the Psalter, the largest type | Common scholarly count | "By most reckonings around a third" |
+| A survey finds lament nearly absent from church songs | No survey named or checked | Made general ("carry very little lament"); Rah's book named as pressing the gap |
+| Psalm 88's last Hebrew word is "darkness" | Known (mahshak) | Kept |
+| Roughly half the Psalter bears David's name | 73 psalms in the Hebrew titles | Stated as seventy-three |
+| Songs of Ascent "develop" about 950 BC | Dating uncertain | Reworded: temple pilgrimages from Solomon on; dating of each song uncertain |
+| Psalter given final five-book shape about 515 BC | Editing ran over a longer period | "After 538 BC ... over time" |
+| Septuagint Psalms about 200 BC | Third to second century BC | Loosened |
+| Babylon marched survivors "a thousand miles"; "slaughtered children in the streets" | Distance varies by route; Lamentations 2:11 | "Hundreds of miles"; children fainting in the streets, Lamentations 2:11 |
+| Monastic weekly cycle of all 150 psalms | Known: Rule of Benedict | "In many monasteries" |
+| Bibliography "Reflections on the Psalms as the Prayer Book of Christ" by "the Letter to Marcellinus, Athanasius" | Garbled entry | Now Letter to Marcellinus, Athanasius of Alexandria |
+| Bibliography "A Sacrifice of Praise" by "counseling and pastoral literature on lament" | Placeholder | Cut |
+| Brueggemann, Praying the Psalms; Taylor, Open and Unafraid; Rah, Prophetic Lament (2015); Wright, The Case for the Psalms (2013) | Known | Kept; "Leader to confirm" removed |
+| Gratitude research | General finding | Kept general, no study named |
+| Biography (atheism, fatherless, five sons) as credentials in 9 places | Credentials | Atheism once, session 1, with "learn to pray from scratch" (old promo's own words) |
+| Help lines | Script compared each help sentence in old and new | All present word for word; sensitive-pages.json untouched |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Story of the Bible
+
+| Claim | How checked | Result |
+|---|---|---|
+| Genesis 1: "seven times good, and then very good" | Counted: good six times (1:4, 10, 12, 18, 21, 25), very good once (1:31) | Corrected |
+| "Four thousand years" from Abraham to Jesus; promise "four thousand years old" | Abraham about 2000 BC | "About two thousand years"; all instances fixed |
+| Abraham about 2000 BC; Exodus about 1400 BC | Traditional or debated | Marked "traditional dating"; Exodus "fifteenth or thirteenth century BC (dating debated)" |
+| Prophets 750 to 500 BC; silence 430 BC on | Amos about 760 to Malachi about 430 | "About 760 to 430 BC" |
+| Revelation about AD 95 | Common dating, not certain | "A common dating" |
+| N. T. Wright five acts, The New Testament and the People of God | Known: 1992; acts creation, fall, Israel, Jesus, church | Stated as he gives them; study's fifth session named as the ending |
+| Wright, Simply Christian: echoes of justice, beauty, relationship | Known: four echoes, justice, spirituality, relationships, beauty | Corrected; dated 2006 |
+| Wright, Surprised by Hope | Known: 2008 | Kept |
+| Bartholomew and Goheen, The Drama of Scripture | Known: 2004, six acts | Six acts noted |
+| Roberts 2002; Goldsworthy 1991; Keller 2008; Stott 1986; Strobel 1998; Lewis, Mere Christianity 1952 | Known | Dated; "Leader to confirm" removed |
+| Lewis trilemma (liar, lunatic, Lord; poached egg) | Known: Mere Christianity, book 2 ch. 3 | Paraphrase, attributed |
+| Charles Taylor, enchanted world and buffered self | Known: A Secular Age, 2007 | Paraphrase |
+| Wittgenstein: the mystery is that the world is | Known: Tractatus 6.44, 1921 | Paraphrase, dated |
+| Rieff, the triumph of the therapeutic | Known: 1966 | Kept, dated |
+| Solzhenitsyn: line between good and evil through every heart; "wrote from inside the camps" | Known: The Gulag Archipelago, written after his eight years in the camps, published 1973 | Paraphrase; "from inside" corrected |
+| Marx, "opiate of the masses" | Known as "the opium of the people," 1843-44 | Phrase corrected, unquoted |
+| 1 Corinthians 15:3 creed dated within a few years | Widely held, including by some skeptical scholars | "Many scholars, including some who don't believe it" |
+| Historians "across the spectrum" grant the empty tomb | Overstated | Empty tomb marked as more disputed than crucifixion and appearances |
+| Witnesses "many of whom died rather than recant" | Rests on later tradition | "Several suffered for it" |
+| "Pitiable fraud" (Paul) | Not Paul's words | 1 Corinthians 15:19 quoted in ESV |
+| Mark 2:5 "My son" | ESV reads "Son" | Corrected |
+| Marcion cut the Old Testament | Known: second century | Kept, dated |
+| Biography: atheism as credential (summary, primer, facilitator, FAQ 3, FAQ 10, three promo pieces) | Credentials | Kept once, session 1 teaching, where the old guide said "I once held it myself"; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Undivided Life
+
+| Claim | How checked | Result |
+|---|---|---|
+| Kuyper, "not one square inch... Mine," 1880 | Known: inaugural address at the Free University of Amsterdam, 20 October 1880; prime minister 1901 to 1905 | Kept as paraphrase, dated; quoted "Mine" dropped |
+| Bellah, Habits of the Heart, 1985: no shared language for the good of the whole | Known: the book's "first language" of individualism and the weaker "second languages" | Restated as the book puts it |
+| Taylor, A Secular Age, 2007: porous and buffered self | Known | Paraphrase, dated |
+| Smith, Desiring the Kingdom 2009; You Are What You Love 2016 | Known | Kept, dated |
+| Heschel, The Sabbath, 1951: "palace in time" | Known | Paraphrase, dated |
+| Brueggemann, Sabbath as Resistance, 2014: "anxiety system" | Known | Paraphrase, dated |
+| Keller, contract and covenant | Known: The Meaning of Marriage, 2011 | Credited there, not to Every Good Endeavor (2012) |
+| Plantinga, Not the Way It's Supposed to Be, 1995: shalom as universal flourishing, wholeness and delight; sin as vandalism of shalom | Known | Paraphrase, unquoted |
+| Alcorn, The Treasure Principle 2001; Money, Possessions, and Eternity; Comer, The Ruthless Elimination of Hurry 2019 | Known | Kept; "Leader to confirm" and "Not cited by Bell directly" removed |
+| Luther, 1520, "the milkmaid and the magistrate and the monk" | Known: the milkmaid line is a popular attribution; To the Christian Nobility (1520) names the cobbler, smith and peasant | Replaced with what the 1520 text says |
+| Augustine, restless heart, "circa 400" | Known: Confessions 1.1, written about 397 to 400 | Dated 397 to 400 |
+| Hosea placed about 1000 BC with David | Hosea prophesied about 750 BC | Separate entry |
+| Ephesians "circa AD 62" | Prison letters, about AD 60 to 62 | Range given |
+| Early Christians died rather than call Caesar lord | Known: Martyrdom of Polycarp 8 to 10 | Kept, Polycarp named |
+| Romans 12:1 "reasonable worship" | ESV reads "spiritual worship" (footnote: rational) | ESV quoted, rendering noted |
+| 1 Corinthians 13:5 "keeps no record of wrongs" | NIV wording; ESV "not irritable or resentful" | ESV quoted, Greek sense explained |
+| Malachi 2:14 "wife of your covenant" | ESV "your wife by covenant" | Corrected |
+| Jeremiah 29:11 "plans for wholeness" | ESV "plans for welfare"; Hebrew shalom | Corrected |
+| "The Undivided Life" as a book by James | Not on bookShelf.ts | Plug dropped |
+| Biography: atheism (summary, primer, FAQ 10); "raised without a father" (session 5) | Credentials | All cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Witness
+
+| Claim | How checked | Result |
+|---|---|---|
+| Tertullian, "see how they love one another," circa 197 | Searched: Apology 39; Christian History Institute and Bibliothek der Kirchenväter give "See," they say, "how they love one another" (Latin "Vide, inquiunt, ut invicem se diligant") | Quoted in that wording, dated about 197 |
+| Christians nursing the sick in a plague "circa 165" | Known: the evidence is for the plague of about 250 to 270 (Dionysius of Alexandria, in Eusebius, Church History 7.22); Julian's letter to Arsacius, 362, on Christians feeding pagan poor | Timeline and teaching moved to the third-century plague; Julian added as the hostile observer the old guide alluded to |
+| Finney, revival "not a miracle" but right use of means, "circa 1830s" | Known: Lectures on Revivals of Religion, 1835 | Paraphrase, dated 1835 |
+| Bonhoeffer and the Confessing Church, 1934 | Known: Barmen Declaration, May 1934; Bonhoeffer in London 1933 to 1935, not a signatory | Entry names Barmen and says he served the Confessing Church |
+| Newbigin, congregation as hermeneutic of the gospel, 1989; India decades | Known: The Gospel in a Pluralist Society, 1989; India 1936 to 1974; returned to Britain | Paraphrase, unquoted; "nearly forty years" |
+| Augustine, Confessions "around 400" | Known: about 397 to 400 | Dated |
+| Stark, The Rise of Christianity | Known: 1996; plague-care argument, numbers are his estimates | "Leader to confirm" replaced with "present them as his" |
+| Lewis, Surprised by Joy; Bonhoeffer, The Cost of Discipleship; Koukl, Tactics; Pippert, Out of the Saltshaker; Taylor, A Secular Age; Keller, The Reason for God; Kreider, The Patient Ferment | Known: 1955; 1937; 2009; 1979; 2007; 2008; 2016 | Kept, dated where given; "Leader to confirm" removed |
+| Paul died for the faith (objection, session 5) | Rests on later tradition | Cut; beatings and shipwreck kept (2 Corinthians 11:24-27) |
+| John 9:25 "One thing I know" | ESV "One thing I do know" | Corrected throughout |
+| Mark 9:24 "three words long" | Not so in English or Greek | Dropped; ESV punctuation used |
+| Deuteronomy 10:19 | ESV "Love the sojourner, therefore, for you were sojourners in the land of Egypt" | Quoted as ESV |
+| "I write books" (session 1) | Stamp | Cut |
+| Biography: atheism (summary, primer, sessions 1, 2, 4, FAQ 7, FAQ 10) | Credential | Kept once, session 2 teaching |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |

@@ -59,7 +59,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { ANSWERS } from "../../client/src/data/answers.ts";
+import { ANSWERS, answerText } from "../../client/src/data/answers.ts";
 import { findScriptureRefs } from "../../client/src/lib/scripture-find.ts";
 import { parseScriptureRef, formatRef } from "../../client/src/lib/scripture-ref.ts";
 import { loadEssayShelf, loadShelfData } from "./shelf.mjs";
@@ -125,7 +125,7 @@ function answers() {
     kind: "question",
     title: a.question,
     href: `/answers/${a.slug}`,
-    at: a.paragraphs.flatMap((p) => findScriptureRefs(p).flatMap((f) => chaptersOf(f.ref))),
+    at: answerText(a).flatMap((p) => findScriptureRefs(p).flatMap((f) => chaptersOf(f.ref))),
   }));
 }
 
