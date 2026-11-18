@@ -231,3 +231,31 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Case-study names Marta, Dean, Renee, Paul | Invented people | Unnamed "Suppose" scenarios |
 | Help lines (abuse, sexual-assault topics) | sensitive-pages.json | Untouched; reporting sentence kept verbatim |
 | Scripture quotations | ESV, from memory | ESV throughout |
+
+## The Creeds
+
+| Claim | How checked | Result |
+|---|---|---|
+| Gregory of Nazianzus: "that which is not assumed is not healed" (old guide, attributed loosely) | Web search: Letter 101 to Cledonius (about 382), NPNF wording "that which He has not assumed He has not healed" | Quoted exactly, attributed, dated |
+| Arian slogan "there was once when he was not" | Known: condemned in the anathemas of Nicaea 325 | Kept as the slogan of his followers |
+| "Arius set it to music, and dockworkers sang it" | Known only as later report (Thalia, Philostorgius); detail of dockworkers not checkable | Softened to "put his teaching into popular verse" |
+| Athanasius deacon at Nicaea, bishop 328, five exiles | Known | Kept |
+| Nicaea 325 about 300 bishops; Constantinople 381 under Theodosius; Ephesus 431; Chalcedon 451 under Marcian, Leo's letter, more than 500 bishops | Known | Kept |
+| Homoousios viewed with suspicion at an earlier council | Known: Antioch 268, against Paul of Samosata | Kept, unnamed |
+| Homoiousios "preferred by a compromise party" | Known: homoiousians, later 350s | "A later middle party" |
+| Athanasius, On the Incarnation: "like sending a painting to repair the painter" | Known: his image is a spoiled portrait whose subject must sit again so it can be redrawn on the same wood (ch. 14) | Corrected to his own image, as paraphrase |
+| Apostles' Creed from the Old Roman Creed, "2nd century" | Known: Kelly, Early Christian Creeds; in use by late 2nd to 3rd century | Dated "late 2nd to 3rd century" |
+| Marcion "circa 144" | Known: traditional date of his break with Rome | Kept; timeline order fixed (it had sat after "2nd century") |
+| "Descended into hell" enters the Western text around 400 | Known: Rufinus's Aquileian creed | Kept; both readings stated, left open |
+| Twelve-apostles legend "medieval" | Known: told by about 400 (Rufinus), elaborated later | "Came centuries later" |
+| Chalcedon's four adverbs | Known: the Definition; common English rendering | Kept, "usually translated" |
+| Oriental Orthodox divide partly verbal | Known: modern scholarship and the joint dialogues of 1989-1990 | "Many scholars and church dialogues" |
+| Nicene Creed wording (Spirit "the Lord, the giver of life ... worshiped and glorified"; "of one substance with the Father") | Known: standard English texts | Kept as creed text |
+| Bibliography: Kelly 1950 and 1958; Ayres 2004; L. T. Johnson 2003; Reeves 2012; Grillmeier 1965/1975; Rusch 1980; Smith 2016; Pelikan 2003 | Known | Dated; "Leader to confirm" removed (3) |
+| Reeves, Smith, Pelikan, Ayres views | Old guide paraphrased them | Kept as paraphrase, no quotation marks |
+| "Seventeen centuries" | Nicaea 325 to now is about 1,700 years; Constantinople 381 about 1,645 | "More than sixteen centuries" or "the centuries" |
+| 1 Timothy 3:16 quoted without "we confess" | ESV includes it | Restored |
+| James 2:19 (added in case study) | ESV has a dash and exclamation | Paraphrased with reference, not quoted |
+| Biography: atheism (summary, primer, FAQ, facilitator script, bulletin, pulpit) | Used as credential | Kept once, session 1 teaching ("I came to faith from atheism, so I know how the word creed can sound from outside"); rest removed; FAQ about the writer's atheism cut (12 to 11) |
+| "Bell says" in four discussion questions | Narrator naming James | Removed |
+| Scripture quotations | ESV, from memory; no ESV in the repository | ESV throughout |
