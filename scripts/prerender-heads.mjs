@@ -762,6 +762,21 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // How to study the Bible: the seven steps, word for word from the one
+  // source the page and the guided study read (client/src/lib/study-method.ts).
+  "/study/how-to-study": async () => {
+    const { STUDY_STEPS = [], KEPT_HERE = "" } = await loadTs("client/src/lib/study-method.ts");
+    if (!STUDY_STEPS.length) return null;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>How to study the Bible</h1>`,
+        `<p class="pre-subtitle">Seven steps that work on any chapter. Learn them here, then try them on a real one.</p>`,
+        sec("Seven steps, in order", `<ol>\n${STUDY_STEPS.map((s) => `<li><strong>${escapeHtml(s.title)}.</strong> ${escapeHtml(s.what)}</li>`).join("\n")}\n</ol>\n<p>${escapeHtml(KEPT_HERE)}</p>`),
+        `<p><a href="/study/bible/john/3?study=walk">Try it on John 3</a></p>`,
+      ]),
+    };
+  },
   // The history door: the ages, the course, the longer essays, the rooms.
   "/theology/history": async (title) => historyDoorBody(title),
   // Every person, A to Z, with years, role and place, under their own anchor.
