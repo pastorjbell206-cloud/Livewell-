@@ -16,6 +16,10 @@
 .sn-search{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:2px;border:0;background:none;color:var(--ink);cursor:pointer;border-radius:var(--radius-sm)}
 .sn-subscribe{display:inline-flex;align-items:center;min-height:44px;margin-left:6px;padding:0 18px;background:var(--ink);color:var(--bone);border-bottom:2px solid var(--mustard);border-radius:var(--radius-sm);font-family:var(--U);font-size:14px;font-weight:600;white-space:nowrap;text-decoration:none}
 
+/* Back, beside the logo, only when opened from the icon (AppBack.tsx). */
+.sn-back{display:inline-flex;align-items:center;gap:2px;min-height:44px;min-width:44px;padding:0 10px 0 2px;margin-left:-6px;border:0;background:none;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer;border-radius:var(--radius-sm)}
+.sn-back:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
 /* ---- A door's panel ---- */
 .sn-panel{position:absolute;top:calc(100% + 6px);z-index:300;width:384px;padding:8px;background:var(--card);border:1px solid var(--border);border-top:2px solid var(--mustard);border-radius:var(--radius-sm);box-shadow:var(--shadow-modal)}
 .sn-panel--start{left:0}
@@ -61,3 +65,7 @@
 /* ---- Which set shows: the doors from 1024px, the menu button below ---- */
 @media(max-width:1023px){.desktop-nav{display:none!important}.mobile-nav{display:flex!important}}
 @media(min-width:1024px){.mobile-nav{display:none!important}.desktop-nav{display:flex!important}}
+
+/* A 360px phone: the name, Find Help, search, Subscribe and the menu do not
+ * fit on one line, so Subscribe waits in the menu (the phone pass, 2026-11-18). */
+@media (max-width:379px){.sn-subscribe--phone{display:none}}
