@@ -50,3 +50,25 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Bibliography "1 Corinthians 15 and 2 Timothy 4", author "the apostle Paul" | Filler (Scripture, already the spine) | Cut from bibliography; kept in further reading |
 | Case studies told as real ("A woman in your group...") | No source | Reframed as "Suppose" |
 | Help lines (988) | Word for word | Three sentences kept unchanged, same places (primer, FAQ, opening script) |
+
+## alone-in-a-crowded-church
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Alone in a Crowded Church" (summary, promo) | Not on the three-book shelf | Plug dropped |
+| "Bell does not stand outside this indictment" and similar | Rulebook and credential | Removed |
+| Mark 14:32-34 quoted as "remain here and watch with me" | ESV: Mark 14:34 "Remain here and watch" ("with me" is Matthew 26:38) | Corrected to Mark's wording |
+| Acts 5:4, Ananias's property his own | Scripture | Now quoted |
+| Bonhoeffer, Life Together, 1938, underground seminary; English 1954; "wish dream" | Known | Kept; his argument marked paraphrased |
+| Aelred, Spiritual Friendship, about 1160 | Known | Kept |
+| Augustine, restless heart; grief for a friend (Confessions Book 4) | Known | Kept; "restless until it rests in you" as a short, well-known phrase |
+| Aristotle's three kinds of friendship (old guide: "the philosophers") | Known (Nicomachean Ethics VIII) | Named |
+| Putnam, Bowling Alone, 2000 | Known | Kept; "Leader to confirm" removed |
+| Loneliness "damages the body as severely as long-term smoking"; "2023 public health voices" | Known: U.S. Surgeon General's advisory "Our Epidemic of Loneliness and Isolation" (2023) compares the mortality risk to smoking up to 15 cigarettes a day | Stated with its source; the vague "circa 2010s" timeline item cut |
+| Keller, "The Meaning of Marriage, and broader writing on community" | Vague pointer, no claim tied to it | Cut |
+| "The Lost Art of Dwelling Together ... Various contemporary pastoral writers" | No such book identified; a placeholder | Cut |
+| Colson, "The Body: A Study of the Local Church" | Known: the book is The Body: Being Light in Darkness (1992), with Ellen Santilli Vaughn | Title corrected |
+| Bonhoeffer Works volume 5 entry | Duplicate of Life Together | Cut |
+| Murthy, Together (2020); Butterfield, The Gospel Comes with a House Key (2018); Earley, Made for People; Block, Community (2008) | Known | Kept; "Leader to confirm" removed |
+| FAQ "Why does the study keep implicating the writer" | About method | Cut |
+| Case studies told as real | No source | Reframed as "Suppose" |
