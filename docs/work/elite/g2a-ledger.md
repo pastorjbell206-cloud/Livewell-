@@ -448,3 +448,24 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" (2: Cost of Discipleship, Keller's Prayer) and "Bell" (2) | Cheap grace is Bonhoeffer's, known; Keller see above | Notes removed |
 | Abraham lied twice; Jacob twenty years; Monica lived to see Augustine's return | Genesis 12, 20; Genesis 31:38, 41; Confessions 9 | Kept |
 | Every case study | Told as an actual man in the group | Framed as "Suppose" |
+
+## forgiveness
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (28); "He was raised without a father" (summary, primer, FAQ) | Brief: biography at most once, only where it does work | Cut everywhere; it did no work here |
+| Help and safety lines (14 sentences: report to the police, no obligation to restore access, the locked door, the abused woman's home, the call to seek help in the close, the leader's notes on abuse) | Script against the old file | All word for word, same count; added that forgiveness never asks anyone back within reach of harm (s3, s5, FAQ, primer) and a primer line on present danger |
+| Lewis, "Real forgiveness means looking steadily at the sin..." | Web search: not confirmed word for word; the essay is "On Forgiveness", written for a parish magazine about 1947 and published after his death (in later editions of The Weight of Glory) | Paraphrase with attribution; Mere Christianity entry replaced by The Weight of Glory; timeline 1957 corrected |
+| Bonhoeffer on cheap grace | Web search: "grace without discipleship, grace without the cross, grace without Jesus Christ, living and incarnate" and the list (baptism without church discipline, communion without confession) confirmed | That phrase quoted as "the English translation"; the rest paraphrased |
+| Bonhoeffer "died on a Nazi gallows in April 1945" for resisting a regime "the German church" blessed | Executed at Flossenbürg, April 1945; Confessing Church resisted | "much of the German church" |
+| Volf, Exclusion and Embrace (1996), remembering truthfully, forgetting at the end | Known | Paraphrase kept |
+| Peterson's phrase from Nietzsche; 1980 | Known | Kept |
+| Micah 6:8 "love mercy" | ESV "love kindness" (hesed) | Corrected throughout, hesed explained |
+| Colossians 3:13, Matthew 18:33, Lamentations 3:22-23 memory verses | ESV, from memory | Corrected |
+| Matthew 18:34-35 ("the jailers are not God's vengeance") | Verse 35 says the Father will do the same | Warning quoted and faced; readings stated |
+| Talent and denarius values | A talent about 6,000 denarii, about twenty years' wages | Stated |
+| Luke 23:34 | Absent from some early manuscripts (ESV note) | Note added |
+| Timeline: Joseph circa 1700 BC; psalms circa 1000 BC; Lamentations circa 590 BC; Stephen circa AD 34 | Traditional or approximate | "traditional dating"; "from about 1000 BC"; "after 587 BC"; "early 30s AD" |
+| Nickel Mines 2006; Amish Grace (Kraybill, Nolt, Weaver-Zercher) | Known | Kept |
+| "Leader to confirm" (5: Keller, Kendall, Brauns, Kraybill, Jenco, Stott) | Titles and authors known | Notes removed; Kendall and Brauns presented as the two sides of the session 3 debate |
+| Other Scripture: Ephesians 4:32, Psalm 51:4, Genesis 50:20, Jeremiah 31:34, Romans 12:18-19, 3:26, 13:4, 5:8, 8:1, Luke 17:3, 7:47, 3:8, Acts 7:60, Matthew 5:44, 18:21-35, Proverbs 22:3, Psalm 85:10, 13:1, 103:12, 2 Samuel 12:13-14, Job 42:7, Revelation 21:4, 1 John 1:9 | ESV, from memory | Quoted with references |
