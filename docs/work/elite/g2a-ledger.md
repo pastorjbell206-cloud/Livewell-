@@ -265,3 +265,25 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Matthew 13:31 memory verse "which a man took" | ESV reads "that a man took" | ESV wording |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help lines | Old guide had none | None added |
+
+## contentment
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" lines; summary and FAQ giving his biography (atheism, fatherless, five sons) as the reason to trust the study; invite caption "with five sons watching" | Credential use; decision 2 | Cut; first person kept for his teaching |
+| Augustine, "you have made us for yourself, and our heart is restless until it rests in you" (Confessions 1.1) | Known; kept in earlier guides | Kept, short and attributed |
+| Burroughs's definition, "sweet, inward, quiet, gracious frame of spirit, which freely submits to and delights in God's wise and fatherly disposal in every condition" | Web search (Blue Letter Bible, Monergism editions) | Verified; quoted once in session 3, and in the glossary |
+| Burroughs, contentment "by subtraction, not addition" | Search did not find the wording | Kept as paraphrase, attributed, no quotation marks |
+| Burroughs, the discontented compare upward; "a little in the hand of a contented man is a great deal" | Not verified | First kept as paraphrase; second cut |
+| Burroughs, Rare Jewel 1648; Watson, Art of Divine Contentment 1653 | Known | Kept; Watson "Leader to confirm" removed |
+| Girard on imitative desire; Taylor on the modern self; Brueggemann, Sabbath as Resistance | Known | Kept as paraphrase |
+| "The social researcher and others have documented ..." (envy and social media) | Vague, no source | Narrowed to "researchers have begun to study" |
+| Money and happiness "flattens sharply once basic security is reached" | Contested (the plateau question is still argued) | Stated as an argument still going on; the treadmill pattern kept |
+| Ecclesiastes "circa 950 BC"; "three thousand years before the shopping mall"; Ecclesiastes 3:11 "a thousand years" before Augustine | Date debated | Timeline date now "Date debated"; the year claims cut |
+| Job "lost everything, and God's answer was his own presence, not a refilled barn" | Job 42 restores his goods | Restated: God answered from the whirlwind with himself, not an explanation |
+| Psalm 63:1, James 4:1-2, 1 Timothy 6:9-10, 6:17, Matthew 6:26-34, Exodus 16 | ESV (from memory) | Quoted in ESV wording; Psalm 63:1 and James 4:1-2 had dropped words, restored |
+| Luke 12:15 and Hebrews 13:5 were in the Scripture index but never used in the sessions | Index | Luke 12:15 now in session 1 teaching; Hebrews 13:5 in session 4 teaching and session 5 going deeper |
+| Placeholder bibliography entry "Discipline and Desire in the pastoral counseling tradition" | Not a real title | Cut |
+| "Leader to confirm" on Watson, Keller (two), Comer, Alcorn | Known titles | Notes removed; titles kept, no claims attributed beyond the title |
+| Case studies told as real | No source | Framed as "Suppose" |
+| Help lines | Old guide had none (no 988, no abuse lines) | None added; the "real need" path (benevolence fund, counselor, private contact) kept in the primer, FAQ and script |
