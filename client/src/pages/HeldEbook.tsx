@@ -1,8 +1,10 @@
 /**
- * The old address of an ebook that is held back (James, 2026-11-18): every
- * ebook is free except the seven whose files name the Pastors Connection
- * Network, which wait for his corrected files. The page says so plainly and
- * sends the reader on to the free ebooks. Not in the sitemap; noindex.
+ * The old address of an ebook that is held back (James, 2026-11-18). Every
+ * ebook on the site is free; held off it are the seven whose files name the
+ * Pastors Connection Network, which wait for his corrected files, and the
+ * sixteen older titles he is rewriting ("Keep them off for now"). The page
+ * says so plainly and sends the reader on to the free ebooks. Not in the
+ * sitemap; noindex.
  *
  * A past buyer's own download still works at /<slug>/thank-you (the paid
  * check in api/index.ts reads content/held-downloads/).
