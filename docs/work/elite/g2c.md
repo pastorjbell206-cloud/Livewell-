@@ -257,3 +257,21 @@ Stopped at a clean guide boundary after the-story-of-the-bible. Next in order: *
 
 - Session 2: "I came to faith from atheism" beside the skeptic's distrust. If he wants a memory of being treated as a target himself, it has to come from him; the guide claims none.
 - Session 4 used to point to his own atheist-to-believer story as a temptation to perform. That's now general. Whether he wants to say it of himself is his call.
+
+### What I ran (eighth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean. "Blessed" appears only as a verb or inside quoted Scripture; every exclamation point is inside quoted Scripture.
+- Web searches: 0 for the-undivided-life, 1 for witness (Tertullian).
+- Gates, after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed, each exit code checked; `pnpm test`: 144 files passed, 7 skipped (1,642 tests).
+
+### Not done or not verified (eighth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Kuyper, Heschel, Brueggemann, Keller, Plantinga, Bellah, Finney and Newbigin paraphrased from memory of the books, not checked against copies.
+
+### Where this run stopped
+
+Stopped at a clean guide boundary after witness, to leave room for the gates and the push. Next in order: **womanhood**, then work-and-vocation.
