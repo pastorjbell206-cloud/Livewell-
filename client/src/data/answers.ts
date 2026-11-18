@@ -4,7 +4,8 @@
  * the essay that carries the full argument, laddering short answer → essay →
  * book (where a book on the shelf takes the question up). The paragraphs are compressions of their source essays: no claim,
  * citation, or verse appears here that is not in the essay. Edit the answer
- * by editing its essay first; this layer only surfaces it.
+ * by editing its essay first; this layer only surfaces it. The exception is
+ * an argued answer (`sections`, below), which carries its own checked claims.
  */
 export interface Answer {
   /** URL anchor + FAQ identity: the question in kebab form. */
@@ -28,6 +29,54 @@ export interface Answer {
    * they are never shown.
    */
   askedAs?: string;
+  /**
+   * The argued form (James, 2026-11-18: "more logical, more academic... but
+   * also someone that would convince a non-believer"). When present, the
+   * `paragraphs` above are the short answer, and these parts follow it on the
+   * answer's page: the objection at full strength, the argument laid out, the
+   * evidence, the best reply and what the argument does not prove. Unlike the
+   * three-paragraph answers, an argued answer may carry claims beyond its
+   * essay; each is checked in docs/work/elite/apol-ledger.md.
+   */
+  sections?: AnswerSection[];
+  /** "Sources and further reading", shown under the sections. Every entry real and checked. */
+  sources?: AnswerSource[];
+}
+
+/** An argument set out so a reader can check each step. */
+export interface AnswerSteps {
+  /** What kind of argument it is, in plain words. */
+  kind: string;
+  premises: string[];
+  conclusion: string;
+}
+
+/** One part of an argued answer: a heading, then paragraphs, with an argument laid out where one belongs. */
+export interface AnswerSection {
+  heading: string;
+  body: (string | AnswerSteps)[];
+}
+
+export interface AnswerSource {
+  author: string;
+  /** A book's title, or an article's title when `in` names the journal. */
+  title: string;
+  in?: string;
+  year: string;
+  /** One short line on why it is listed. */
+  note?: string;
+}
+
+/** Every sentence of an answer, short answer and argued parts alike (for the indexes that scan the text). */
+export function answerText(a: Answer): string[] {
+  const out = [...a.paragraphs];
+  for (const s of a.sections ?? []) {
+    for (const b of s.body) {
+      if (typeof b === "string") out.push(b);
+      else out.push(...b.premises, b.conclusion);
+    }
+  }
+  return out;
 }
 
 export const ANSWERS: Answer[] = [
@@ -231,9 +280,90 @@ export const ANSWERS: Answer[] = [
     askedAs: "is there a god is god real proof evidence for god",
     question: "Does God actually exist?",
     paragraphs: [
-      "God exists, and I say that as a man who spent most of his life certain no one was there. I don't say it because someone won an argument. No proof marches a living person across that line, and anyone selling one has never watched it work. What I found was smaller and harder to escape: the atheism I held could be stated but not inhabited, and it kept running up debts it refused to pay.",
-      "The other side has a real case. Schellenberg built a rigorous case out of the silence alone, that a perfectly loving God would not leave the honest seeker to find only absence, and the silence is real. It isn't weak. But look at what my own account had to spend. Leibniz's question doesn't go away: why is there something rather than nothing. The fine-tuning of the physical constants sits so narrow that to dodge a set-up cosmos the naturalist posits an infinity of universes he can never observe, faith in a lab coat. And C. S. Lewis pressed where it cost most: without God, my sense that a tortured child is really wrong, wrong if every person on earth applauded it, is only chemistry in a primate brain. I could say that sentence. I could not live it.",
-      "None of this is a proof. Blaise Pascal saw that God gives enough light for those who desire to see and enough darkness for those who do not, evidence calibrated for a heart that is looking. Paul told Rome that God's \"invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made. So they are without excuse\" (Romans 1:20). The evidence was never my main problem. I had grown practiced at not seeing what I didn't want to owe. The unbelief wasn't too rational to keep. It was too expensive, and I had been paying all along.",
+      "God exists. I believe that, and I think the evidence makes believing it reasonable, not just comforting. I say it as a man who spent years sure no one was there. Nothing below forces anyone to agree, and I won't pretend it does. But three lines of reasoning, each open to inspection, point the same way: that anything exists at all, that the universe is fit for life, and that some things are really wrong. A fourth, the resurrection, is a question of history and has its own page. You can weigh all of it and still say no. What you can't honestly say is that there's nothing to weigh.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with the other side, because it's stronger than most believers admit. David Hume's Dialogues Concerning Natural Religion, published in 1779 after his death, took apart the argument that the world looks designed. The likeness between a universe and a machine is weak, he argued; we have watched machines being made but never a universe, and even if the world had a maker, nothing in it tells us there is only one, or that he is good. When Darwin published On the Origin of Species in 1859, the most popular design argument of the day, William Paley's watch in Natural Theology (1802), lost most of its force for living things. The gaps where God used to stand kept closing. I concede all of that. A God brought in to fill a hole in our science should be expected to shrink, and he has.",
+          "Bertrand Russell gave the deepest objection its plainest form. Debating the Jesuit philosopher and historian Frederick Copleston on BBC radio in 1948, he was pressed on why the universe exists at all, and he answered, \"I should say that the universe is just there, and that's all.\" Richard Dawkins added a second reply in The God Delusion (2006): a designer able to make a universe would have to be at least as improbable as the universe, so God explains nothing and you are left asking who designed the designer. Then there is the silence. J. L. Schellenberg argued in Divine Hiddenness and Human Reason (1993) that a perfectly loving God would not leave a sincere, open-minded person unable to believe in him, and such people plainly exist. Add suffering, which has its own page, and you have a serious case. A thoughtful person can rest in it, and many do.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "None of what follows is a proof in the mathematician's sense, and that isn't a dodge. Almost nothing that matters is proved that way: not that other minds exist, not that the past was real, not that a historian has the cause of a war right. What I can offer is a cumulative case. Some of its parts are deductive, where if the premises are true the conclusion has to follow, and the only question is whether each premise is more believable than its denial. Others are inferences to the best explanation, where we ask which account makes the evidence least surprising. I'll lay out the three I think strongest, and for each one I'll say which premise carries the weight and where an honest person can get off.",
+        ],
+      },
+      {
+        heading: "First: why is there anything at all?",
+        body: [
+          "In 1714, in a short work called the Principles of Nature and Grace, Gottfried Leibniz set down what he took to be the first question we have a right to ask: why is there something rather than nothing? The argument built on that question is called the argument from contingency. I lean on it more than on the better-known argument that the universe had a beginning, because it doesn't need one. Thomas Aquinas, who gave the church its classic arguments for God, held that reason alone cannot show the world began in time; he believed it began because Scripture says so. This argument works even if the universe never had a first moment.",
+          {
+            kind: "A deductive argument from contingency",
+            premises: [
+              "Everything that exists has an explanation of its existence, either in the necessity of its own nature or in something outside it.",
+              "The universe, all of space, time, matter and energy, does not exist by the necessity of its own nature. It could have been different, or not been at all.",
+            ],
+            conclusion: "The universe has its explanation in something outside it that exists by necessity and is not made of space, time or matter. That isn't yet the God of the Bible, but it is a large part of what every believer in one God means by the word.",
+          },
+          "The weight sits on the first premise, and Russell saw it. His answer was that the demand stops at the whole: each thing in the world may need explaining, but the world itself is just there. I think a reasonable person can accept the premise anyway, for a plain reason. We never accept \"just there\" anywhere else. The philosopher Richard Taylor asked his readers, in Metaphysics (1963), to imagine finding a large translucent ball in the woods. No one would think it simply exists for no reason, and making the ball the size of the universe doesn't make the question go away. It makes it bigger. Science itself runs on the conviction that things have explanations. Every account of reality has to stop somewhere. The atheist stops at a universe that happens to exist when it need not have. The theist stops at a being that could not fail to exist. I think the second is the better place to stop, but this is the step where an honest person can disagree.",
+          "A related argument, the kalam, revived by William Lane Craig in 1979, adds that the universe began to exist. In 2003 the physicists Arvind Borde, Alan Guth and Alexander Vilenkin showed that any universe which has, on average, been expanding cannot be infinite in the past, though physicists still argue over whether quantum effects open a way around it. If the universe did begin, the contingency argument only gets stronger. It just doesn't depend on that.",
+        ],
+      },
+      {
+        heading: "Second: a universe fit for life",
+        body: [
+          "The second line is newer, and it comes from physics, not theology. Over the last century physicists have found that several numbers in the laws of nature, such as the strength of gravity and the energy of empty space, sit within narrow ranges that allow stars, chemistry and life, and that modest changes in many of them would leave a universe with nothing much in it. The sharpest case is the energy of empty space. Steven Weinberg, a Nobel laureate and an unbeliever, wrote in 1989 that the plainest calculation from physics puts it about 120 orders of magnitude, a one followed by 120 zeros, above what observation allows, so something has to cancel it to an astonishing precision. Martin Rees, the Astronomer Royal, who holds no religious belief, wrote a book on the subject, Just Six Numbers (1999). Fred Hoyle, who was no Christian either, wrote after his own work on how stars make carbon that a common-sense reading of the facts suggests a superintellect had monkeyed with physics. Neither man drew a believer's conclusion. Both saw the fact that needs explaining.",
+          {
+            kind: "An inference to the best explanation",
+            premises: [
+              "The values in the laws of nature that allow for life are a very small part of the range they could have had.",
+              "If there is a God who means for there to be living, choosing creatures, a universe that allows for life is not surprising.",
+              "If this is the only universe and its values fell out by chance, a universe that allows for life is very surprising.",
+            ],
+            conclusion: "The fitness of the universe for life is evidence for God over chance. It doesn't settle the question. It shifts the weight.",
+          },
+          "The third premise carries the weight, and there are two serious replies to it. The first is necessity: perhaps a deeper theory will show the numbers could not have been otherwise. Perhaps, though that would move the fine-tuning into the deeper theory without removing it. The second is the multiverse: if there are vast numbers of universes with different values, some will allow life, and we could only find ourselves in one of those. That is real physics, not a dodge, and Rees takes it seriously. But no other universe has been observed, and the philosopher Robin Collins has argued that any machinery proposed for making universes would need its own finely set laws to produce life-permitting ones at all, so the question moves up a level. The astrophysicists Geraint Lewis and Luke Barnes lay out the evidence and both explanations fairly in A Fortunate Universe (2016).",
+          "As for Dawkins's question about the designer, an explanation doesn't have to be explained before it counts. An archaeologist who finds arrowheads can conclude that someone made them without knowing where the makers came from. And the God of the creeds isn't a very complicated machine inside the universe. He is the necessary being the first argument arrived at, which is why the two arguments belong together.",
+        ],
+      },
+      {
+        heading: "Third: goodness that binds us",
+        body: [
+          "The third line starts from something almost everyone believes and almost no one can live without. Torturing a child for fun is wrong, and it would still be wrong if every person on earth applauded it. That is what I mean by an objective moral fact: one that holds whatever anyone thinks.",
+          {
+            kind: "A deductive moral argument",
+            premises: [
+              "If there is no God, there are no objective moral duties: duties that bind us whatever we or our society think.",
+              "There are objective moral duties.",
+            ],
+            conclusion: "There is a God, a source of goodness that is not our invention.",
+          },
+          "Most people grant the second premise, so the weight falls on the first, and here the best unbelieving philosophers divide, which is the telling part. J. L. Mackie, an Oxford philosopher and an atheist, argued in Ethics: Inventing Right and Wrong (1977) that objective values would be strange things, unlike anything else in the universe, and he gave them up. In The Miracle of Theism, published in 1982 after his death, he allowed that if such values did exist, they would be very unlikely to have arisen in the ordinary course of events without a god to create them. Erik Wielenberg, also an atheist, takes the other road and holds that the basic moral facts are simply necessary and need no foundation. Then Sharon Street's question presses on him: how did creatures shaped by natural selection, which rewards survival and not truth, come to know such facts at all? Wielenberg has an answer, and it's a serious one. But notice the shape of the choice. Either morality is invented and our sense of an absolute demand is an illusion, or moral facts stand unexplained and we were lucky to find them, or goodness has a source who made us able to know it.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "Even if all three arguments succeed, they bring you to a necessary, powerful source of the world, one that seems to intend life and is the ground of goodness. That's a long way from atheism. It isn't yet Christianity. Nothing here shows that God is three persons, or that he became a man, or that he forgives. For Christians those claims rest on a particular event, and whether it happened is a historical question, not a philosophical one: whether Jesus of Nazareth was raised from the dead. That case has its own page, and I think it is the strongest of all. Paul made the same move in Athens. He started on the philosophers' own ground, with \"the God who made the world and everything in it\" (Acts 17:24), who \"is actually not far from each one of us\" (Acts 17:27), and then went straight to the resurrection (Acts 17:31).",
+          "Schellenberg's silence isn't answered by any of this, and I won't pretend it is. The best I can offer is what Blaise Pascal wrote in the notes we call the Pensées: that God has given enough light for those who want to see, and enough darkness for those who don't. A skeptic can fairly reply that this is convenient for the believer. I think it fits the way every serious question in a life works. The evidence is real, it doesn't force anyone, and what we want shapes what we let ourselves see.",
+          "For years I said I followed the evidence. What I actually did was refuse the first premise of every argument before I heard the rest. Paul writes that God's \"invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made\" (Romans 1:20). I used to hear that as an insult. Now I read it as a description of my own habit of not looking. If you weigh all of this and still don't believe, you haven't been foolish. But you'll have to choose where your explanations stop, as everyone does, and the universe will still be there, asking why.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "G. W. Leibniz", title: "Principles of Nature and Grace, Based on Reason", year: "1714" },
+      { author: "Richard Taylor", title: "Metaphysics", year: "1963" },
+      { author: "Alexander R. Pruss", title: "The Principle of Sufficient Reason: A Reassessment", year: "2006" },
+      { author: "Martin Rees", title: "Just Six Numbers", year: "1999" },
+      { author: "Geraint F. Lewis and Luke A. Barnes", title: "A Fortunate Universe: Life in a Finely Tuned Cosmos", year: "2016" },
+      { author: "Richard Swinburne", title: "The Existence of God", year: "2nd ed., 2004" },
+      { author: "Erik J. Wielenberg", title: "Robust Ethics", year: "2014", note: "An atheist's case for moral facts without God." },
+      { author: "J. L. Schellenberg", title: "Divine Hiddenness and Human Reason", year: "1993" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982", note: "The best book against: an atheist weighing every argument with care." },
+      { author: "Graham Oppy", title: "Arguing about Gods", year: "2006", note: "The strongest recent case that no argument for God succeeds." },
     ],
     essaySlug: "does-god-actually-exist",
     essayTitle: "Does God Actually Exist?",
