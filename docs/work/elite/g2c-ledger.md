@@ -308,3 +308,26 @@ The second run added three quotations to skeptic that the old guide did not carr
 | A hundred denarii as "a few days' wages" | A denarius was a day's wage | Corrected to "a few months' wages" |
 | Biography: atheism, fatherless, five sons as credentials (summary, primer, FAQ, script) | Credentials | "Raised without a father" kept once, session 1 teaching; rest removed; FAQ about the writer cut |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Parables
+
+| Claim | How checked | Result |
+|---|---|---|
+| C. H. Dodd's definition of a parable | Web search: several sources quote it from The Parables of the Kingdom (1935) | Quoted exactly with source and date (objection 2, session 1); glossary quotes a phrase |
+| Dodd, realized eschatology | Known | Kept |
+| Jeremias, The Parables of Jesus, 1947, already and not yet | Known in outline | Kept, softened to "often read as" |
+| Jülicher, one main point, "1888" | Die Gleichnisreden Jesu, 1886 (vol. 1) and 1899 (vol. 2) | Dated 1886 to 1899 |
+| Augustine's allegory of the Samaritan, about 400 | Known: Questions on the Gospels 2.19 | Kept |
+| Bailey: inheritance request like wishing the father dead; patriarch doesn't run; father shields son from village | Known as Bailey's argument (The Cross and the Prodigal 1973; Poet and Peasant 1976; Through Peasant Eyes 1980; Jesus Through Middle Eastern Eyes 2008) | Attributed to Bailey as his reading; note that not every scholar accepts every detail; untransliterated ceremony term cut |
+| Snodgrass on leaven as corruption; on Jesus speaking of judgment "more than almost anyone" | Could not confirm these are his | Leaven point made general (Matthew 16:6), unattributed; judgment claim no longer his |
+| Snodgrass, Stories with Intent, 2008 | Known | Kept |
+| Keller, The Prodigal God, 2008 | Known | Kept; "Leader to confirm" removed |
+| Blomberg, Interpreting the Parables | Known: 1990, 2nd ed. 2012 | Dated; "Leader to confirm" removed |
+| Charles Taylor, the buffered self | Known: A Secular Age, 2007 | Kept, named as his term |
+| Jericho road about seventeen miles | Known | "About seventeen miles" |
+| Jew-Samaritan enmity from 722 BC, Gerizim | Known | Kept; John 4:9 added from Scripture; "half-breed" removed |
+| Timeline: Isaiah 740 BC listed before Nathan 1000 BC | Order wrong | Reordered; dates loosened ("about") |
+| Bibliography "The Meaning of the Parables" by "Pastoral and expository literature" | Placeholder, not a book | Cut |
+| A hundred denarii | About a hundred days' wages | Stated |
+| Biography: atheism (summary, primer, two FAQs) | Credentials | Kept once, session 1 teaching; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory | ESV with references throughout |
