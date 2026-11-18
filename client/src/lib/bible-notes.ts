@@ -33,6 +33,28 @@ export interface BookIntro {
   text?: string;
   reception?: string;
   furtherReading?: { tier: "first" | "pastor" | "scholar"; author: string; title: string; series?: string; year?: number; note: string }[];
+  /** Optional: a plain-language teaching introduction with its own pictures (Mark first; docs/work/elite/bdoor-plan.md). */
+  teaching?: BookTeaching;
+}
+
+/** A book's teaching introduction: headed parts, then lists and the data for its timeline and map. */
+export interface BookTeaching {
+  parts: { id: string; h: string; body: string }[];
+  hard: { ch: number; v: number; ref: string; line: string }[];
+  words: { word: string; line: string }[];
+  timeline: { when: string; what: string; kind: "world" | "story" | "book" }[];
+  map: { id: string; name: string; lat: number; lon: number; refs: string[]; line: string }[];
+}
+
+/** One passage of a chapter in plain words (notes/<slug>/plain/<n>.json). */
+export interface PlainPassage {
+  v: string;
+  t: string;
+  happening: string;
+  hearers: string;
+  ot?: string;
+  hard?: string;
+  asks: string;
 }
 
 export interface ChapterNote {
@@ -53,6 +75,8 @@ export interface ChapterNote {
   interpretation?: string;
   text?: string;
   teach?: { big: string; outline: { v: string; t: string }[]; pitfalls: string; pastoral?: string };
+  /** True when the chapter has a passage-by-passage note in plain words (notes/<slug>/plain/<n>.json). */
+  plain?: boolean;
 }
 
 export interface HardQuestion {
@@ -178,6 +202,8 @@ function cached<T>(url: string, guard: (x: unknown) => x is T): Promise<T> {
 
 export const fetchIntro = (slug: string) => cached(`/bible/notes/${slug}/intro.json`, isIntro);
 export const fetchNote = (slug: string, chapter: number) => cached(`/bible/notes/${slug}/${chapter}.json`, isNote);
+const isPlain = (x: unknown): x is { passages: PlainPassage[] } => obj(x) && Array.isArray(x.passages);
+export const fetchPlain = (slug: string, chapter: number) => cached(`/bible/notes/${slug}/plain/${chapter}.json`, isPlain).then((d) => d.passages);
 export const fetchStory = () => cached("/bible/story.json", isStory);
 export const fetchStoryline = () => cached("/theology/biblical-theology-storyline.json", isStoryline).then((s) => s.acts);
 export const fetchDoctrines = () => cached("/bible/doctrines.json", isDoctrines).then((d) => d.doctrines);

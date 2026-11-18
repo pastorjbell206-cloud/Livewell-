@@ -25,6 +25,7 @@ import {
 } from "@/lib/bible-notes";
 import { Band, H2, H3, Pill, Prose, RelatedList, kicker, useLoad } from "./shared";
 import BookGlance from "./BookGlance";
+import BookTeaching from "./BookTeaching";
 import { fetchBookMeta } from "./bookFacts";
 import "../home/home.css";
 import "./bible.css";
@@ -58,7 +59,8 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
   const { data: doctrines } = useLoad("doctrines", fetchDoctrines);
   const titles = index?.titles[book.slug] ?? [];
   const testament = book.testament === "OT" ? "The Old Testament" : "The New Testament";
-  const hasMore = !!(intro && (intro.text || intro.reception || intro.furtherReading?.length));
+  const teaching = intro?.teaching;
+  const hasMore = !!(intro && (teaching || intro.text || intro.reception || intro.furtherReading?.length));
 
   return (
     <>
@@ -82,7 +84,9 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
         </p>
       </PageHead>
 
-      <BookGlance books={books} book={book} intro={intro ?? null} meta={meta ?? null} />
+      <div id="glance" className="bk-anchor">
+        <BookGlance books={books} book={book} intro={intro ?? null} meta={meta ?? null} />
+      </div>
 
       <section id="chapters" className="bk-chapters" aria-labelledby="bk-chapters-title">
         <div className="home-wrap">
@@ -104,53 +108,59 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
         </div>
       </section>
 
+      {intro && teaching && <BookTeaching book={book} teaching={teaching} />}
+
       {intro && (
         <>
-          <Band tone="warm">
-            <H2>What this book is</H2>
-            <Prose text={intro.overview} />
-          </Band>
-          <Band>
-            <div className="bk-grid">
-              <div id="who" className="bk-anchor">
-                <H3>Who wrote it</H3>
-                <Prose text={intro.author} size={16} />
+          {!teaching && (
+            <>
+            <Band tone="warm">
+              <H2>What this book is</H2>
+              <Prose text={intro.overview} />
+            </Band>
+            <Band>
+              <div className="bk-grid">
+                <div id="who" className="bk-anchor">
+                  <H3>Who wrote it</H3>
+                  <Prose text={intro.author} size={16} />
+                </div>
+                <div id="when" className="bk-anchor">
+                  <H3>When</H3>
+                  <Prose text={intro.date} size={16} />
+                </div>
+                <div>
+                  <H3>The world it was written in</H3>
+                  <Prose text={intro.setting} size={16} />
+                </div>
+                <div>
+                  <H3>Why it was written</H3>
+                  <Prose text={intro.purpose} size={16} />
+                </div>
               </div>
-              <div id="when" className="bk-anchor">
-                <H3>When</H3>
-                <Prose text={intro.date} size={16} />
-              </div>
-              <div>
-                <H3>The world it was written in</H3>
-                <Prose text={intro.setting} size={16} />
-              </div>
-              <div>
-                <H3>Why it was written</H3>
-                <Prose text={intro.purpose} size={16} />
-              </div>
-            </div>
-          </Band>
-          <Band tone="warm">
-            <H2>Where it sits in the story</H2>
-            <Prose text={intro.story} />
-            <div style={{ height: "var(--s-4)" }} />
-            <H2>{book.testament === "OT" ? "How it points to Christ" : "What it shows of Christ"}</H2>
-            <Prose text={intro.christ} />
-          </Band>
-          <Band>
-            <H2>Themes to follow</H2>
-            <ul className="bk-themes">
-              {intro.themes.map((t, i) => (
-                <li key={t.title}>
-                  <span className="bk-themes__n" aria-hidden="true">
-                    {i + 1}
-                  </span>
-                  <H3>{t.title}</H3>
-                  <p>{t.body}</p>
-                </li>
-              ))}
-            </ul>
-          </Band>
+            </Band>
+            <Band tone="warm">
+              <H2>Where it sits in the story</H2>
+              <Prose text={intro.story} />
+              <div style={{ height: "var(--s-4)" }} />
+              <H2>{book.testament === "OT" ? "How it points to Christ" : "What it shows of Christ"}</H2>
+              <Prose text={intro.christ} />
+            </Band>
+            <Band>
+              <H2>Themes to follow</H2>
+              <ul className="bk-themes">
+                {intro.themes.map((t, i) => (
+                  <li key={t.title}>
+                    <span className="bk-themes__n" aria-hidden="true">
+                      {i + 1}
+                    </span>
+                    <H3>{t.title}</H3>
+                    <p>{t.body}</p>
+                  </li>
+                ))}
+              </ul>
+            </Band>
+            </>
+          )}
           <Band tone="warm">
             <H2>Chapters to start with</H2>
             <ul className="bk-keys">
@@ -163,8 +173,12 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
                 </li>
               ))}
             </ul>
-            <H2>How to read it well</H2>
-            <Prose text={intro.reading} />
+            {!teaching && (
+              <>
+                <H2>How to read it well</H2>
+                <Prose text={intro.reading} />
+              </>
+            )}
             {intro.doctrines.length > 0 && (
               <>
                 <div style={{ ...kicker, margin: "var(--s-4) 0 10px" }}>Doctrines it teaches</div>
@@ -182,6 +196,33 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
             <Band>
               <H2>Going further</H2>
               <div className="bk-mores">
+                {teaching && (
+                  <More title={`The fuller introduction to ${book.name}`}>
+                    {(
+                      [
+                        ["What this book is", intro.overview],
+                        ["Who wrote it", intro.author],
+                        ["When", intro.date],
+                        ["The world it was written in", intro.setting],
+                        ["Why it was written", intro.purpose],
+                        ["Where it sits in the story", intro.story],
+                        [book.testament === "OT" ? "How it points to Christ" : "What it shows of Christ", intro.christ],
+                        ["How to read it well", intro.reading],
+                      ] as const
+                    ).map(([h, text]) => (
+                      <div key={h}>
+                        <H3>{h}</H3>
+                        <Prose text={text} size={16} />
+                      </div>
+                    ))}
+                    <H3>Themes to follow</H3>
+                    {intro.themes.map((t) => (
+                      <p key={t.title} className="bk-more__theme">
+                        <strong>{t.title}.</strong> {t.body}
+                      </p>
+                    ))}
+                  </More>
+                )}
                 {intro.text && (
                   <More title={`The text of ${book.name}`}>
                     <Prose text={intro.text} />
