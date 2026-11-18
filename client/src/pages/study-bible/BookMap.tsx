@@ -18,13 +18,14 @@ import type { BookTeaching } from "@/lib/bible-notes";
 
 type Place = BookTeaching["map"][number];
 
-// The frame: longitude 34.70 to 35.95 east, latitude 31.60 to 33.68 north.
-const LON0 = 34.7;
+// The frame: longitude 34.45 to 36.30 east, latitude 31.60 to 33.68 north.
+// The margins east and west leave room for the names beside the marks.
+const LON0 = 34.45;
 const LAT0 = 33.68;
 const K = 2; // drawing units per kilometre
 const KM_LON = 94; // kilometres per degree of longitude near 32.5 degrees north
 const KM_LAT = 111;
-const W = Math.round((35.95 - LON0) * KM_LON * K);
+const W = Math.round((36.3 - LON0) * KM_LON * K);
 const H = Math.round((LAT0 - 31.6) * KM_LAT * K);
 const x = (lon: number) => +((lon - LON0) * KM_LON * K).toFixed(1);
 const y = (lat: number) => +((LAT0 - lat) * KM_LAT * K).toFixed(1);
@@ -47,7 +48,7 @@ const COAST: [number, number][] = [
   [31.85, 34.68],
   [31.6, 34.56],
 ];
-const SEA: [number, number][] = [[33.68, 34.5], ...COAST, [31.6, 34.5]];
+const SEA: [number, number][] = [[33.68, 34.3], ...COAST, [31.6, 34.3]];
 const GALILEE: [number, number][] = [
   [32.89, 35.6],
   [32.87, 35.64],
@@ -87,13 +88,13 @@ const LABEL: Record<
   bethsaida: { dx: 9, dy: -8, anchor: "start" },
   gerasenes: { dx: 10, dy: 12, anchor: "start" },
   jordan: { dx: 10, dy: 4, anchor: "start" },
-  bethany: { dx: 10, dy: 14, anchor: "start" },
+  bethany: { dx: -2, dy: 19, anchor: "end" },
   jerusalem: { dx: -10, dy: 5, anchor: "end" },
   jericho: { dx: -10, dy: -4, anchor: "end" },
   tyre: { dx: 10, dy: 4, anchor: "start" },
   sidon: { dx: 10, dy: 4, anchor: "start" },
   nazareth: { dx: -10, dy: 5, anchor: "end" },
-  caesarea: { dx: -10, dy: -6, anchor: "end" },
+  caesarea: { dx: 0, dy: -12, anchor: "middle" },
   decapolis: { dx: 10, dy: 4, anchor: "start" },
 };
 
@@ -179,17 +180,29 @@ export default function BookMap({
           {/* Regions, in small capitals. */}
           {(
             [
-              ["GALILEE", 32.9, 35.3],
+              ["GALILEE", 33.0, 35.22],
               ["SAMARIA", 32.28, 35.22],
-              ["JUDEA", 31.68, 35.05],
-              ["BEYOND THE JORDAN", 31.98, 35.72],
-              ["THE GREAT SEA", 32.45, 34.74],
+              ["JUDEA", 31.63, 35.0],
             ] as const
           ).map(([t, la, lo]) => (
             <text key={t} x={x(lo)} y={y(la)} className="bk-map__region">
               {t}
             </text>
           ))}
+          <text x={x(35.62)} y={y(32.15)} className="bk-map__region">
+            <tspan x={x(35.62)}>BEYOND</tspan>
+            <tspan x={x(35.62)} dy="13">
+              THE JORDAN
+            </tspan>
+          </text>
+          <text
+            x={x(34.6)}
+            y={y(32.25)}
+            className="bk-map__region"
+            transform={`rotate(-90 ${x(34.6)} ${y(32.25)})`}
+          >
+            THE GREAT SEA
+          </text>
           {places.map(p => {
             const on = p.id === place?.id;
             const isRegion = p.id === "decapolis" || p.id === "gerasenes";
@@ -242,7 +255,10 @@ export default function BookMap({
                   textAnchor={l.anchor}
                   className="bk-map__name"
                 >
-                  {p.name.replace("Region of the ", "")}
+                  {p.name.replace(/^(Region of the|The) /, "").replace(
+                    / River$/,
+                    ""
+                  )}
                 </text>
               </g>
             );
